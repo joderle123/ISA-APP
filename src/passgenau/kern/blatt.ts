@@ -355,7 +355,8 @@ export function kernBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   return {
     teile: [
       ...(leiste ? [{ ref: BLATT_SYSTEM.stundenleiste, h: BLATT_SYSTEM.stundenleiste }] : []),
-      { ref: BLATT_SYSTEM.kernblatt, h: BLATT_SYSTEM.kernblatt, t: `Fragen zu „${textVon(o.kern, 'de').titel}“` },
+      // in der Liste „Auf dem Blatt“: das Blatt zur Übung, nicht „Fragen zu …“ (Rückmeldung 10.10.: klang nach Allerwelts-Fragebogen)
+      { ref: BLATT_SYSTEM.kernblatt, h: BLATT_SYSTEM.kernblatt, t: `Blatt zur Übung: ${eigen ? eigen.de : textVon(o.kern, 'de').titel}` },
       ...(notfall ? [{ ref: BLATT_SYSTEM.notfall, h: BLATT_SYSTEM.notfall }] : []),
     ],
     titel: t,

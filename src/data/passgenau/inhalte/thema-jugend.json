@@ -1,0 +1,3236 @@
+[
+  {
+    "id": "th:gefuehle-erkennen-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Gesicht ohne Worte",
+    "text": "Die Fachkraft zeigt nur mit dem Gesicht ein Gefühl, das man in der Schule oder im Bus sehen kann (zum Beispiel genervt, überrascht, erleichtert). Der oder die Jugendliche rät, welches Gefühl es sein könnte, und zeigt danach selbst eines für die Fachkraft. Zwei bis drei Runden, jede Antwort ist nur eine Vermutung.",
+    "sagen": [
+      "Heute geht es ums Erkennen von Gefühlen – bei anderen und bei uns selbst. Dazu gleich ein kleiner Start ohne Worte.",
+      "Ich fange an. Was könnte ich gerade zeigen?",
+      "Jetzt du – oder sag Pass, dann zeige ich noch eins."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche kein Gesicht zeigen, rät er oder sie nur, und die Fachkraft zeigt alle Gefühle. Ist Raten gerade zu viel, darf auch einfach nur zugeschaut werden.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Un visage sans mots",
+      "text": "L’adulte montre seulement avec son visage une émotion que l’on peut voir à l’école ou dans le bus (par exemple agacé, surpris, soulagé). Le ou la jeune devine de quelle émotion il pourrait s’agir, puis en montre une à son tour à l’adulte. Deux à trois tours ; chaque réponse n’est qu’une supposition.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la façon de reconnaître les émotions, chez les autres et chez soi. Pour commencer, un petit jeu sans mots.",
+        "Je commence. Qu’est-ce que je pourrais être en train de montrer ?",
+        "À toi maintenant – ou dis « Passe », et j’en montre une autre."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas montrer de visage, il ou elle devine seulement et l’adulte montre toutes les émotions. Si deviner est trop pour le moment, il ou elle peut simplement regarder."
+    }
+  },
+  {
+    "id": "th:gefuehle-erkennen-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Stimmung im Gang erkennen",
+    "text": "Die Fachkraft geht durch den Raum und zeigt allein mit Gang und Haltung eine Stimmung, ohne Worte und ohne Grimassen (zum Beispiel gestresst, stolz, nervös, gelangweilt). Der oder die Jugendliche beschreibt, was er oder sie sieht (Tempo, Schultern, Blick), und nennt eine Vermutung. Danach tauschen die beiden die Rollen, wer nicht gehen mag, sagt Pass. Vier bis fünf Stimmungen reichen.",
+    "sagen": [
+      "Heute geht es ums Erkennen von Gefühlen – bei anderen und bei uns selbst. Dazu gleich eine kleine Bewegung.",
+      "Haltung und Gang verraten oft viel. Woran siehst du es – Tempo, Schultern, Blick?",
+      "Das ist nur eine Vermutung – danach sage ich dir, was ich gemeint habe."
+    ],
+    "wennEsKippt": "Im Sitzen zeigen beide die Stimmung nur mit Schultern, Händen und Kopfhaltung und raten daran. Will der oder die Jugendliche nicht selbst zeigen, schaut er oder sie nur zu und rät.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Reconnaître l’humeur à la démarche",
+      "text": "L’adulte traverse la pièce et montre une humeur seulement par sa démarche et sa posture, sans mots et sans grimaces (par exemple stressé, fier, nerveux, ennuyé). Le ou la jeune décrit ce qu’il ou elle voit (rythme, épaules, regard) et propose une supposition. Ensuite, on échange les rôles ; qui ne veut pas marcher dit « Passe ». Quatre à cinq humeurs suffisent.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la façon de reconnaître les émotions, chez les autres et chez soi. Pour cela, un petit exercice en mouvement.",
+        "La posture et la démarche en disent souvent long. À quoi le vois-tu : rythme, épaules, regard ?",
+        "Ce n’est qu’une supposition – ensuite, je te dis ce que je voulais montrer."
+      ],
+      "wennEsKippt": "Assis : on montre l’humeur seulement avec les épaules, les mains et la tête, et on devine à partir de cela. Si le ou la jeune ne veut pas montrer, il ou elle regarde et devine seulement."
+    }
+  },
+  {
+    "id": "th:gefuehle-erkennen-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Woran merke ich es?",
+    "text": "Die Fachkraft legt vier Zettel hin: Gesicht, Stimme, Haltung, Chat-Nachricht. Der oder die Jugendliche wählt den Zettel, an dem er oder sie am ehesten merkt, wie es jemand anderem geht, und erzählt eine Situation ohne Namen (Schule, Bus, Training, Chat). Die Fachkraft nennt ihr eigenes Beispiel zu einem anderen Zettel. Pass ist erlaubt.",
+    "sagen": [
+      "Heute geht es ums Erkennen von Gefühlen. Zum Schluss ein Blick auf den Alltag: Woran merkt man, wie es jemandem geht?",
+      "Welcher Zettel passt am ehesten? Erzähl ohne Namen.",
+      "Bei mir ist es oft die Stimme. Und bei dir?"
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen keine Situation ein, wählt er oder sie nur den Zettel und sagt, warum. Die Fachkraft kann ein erfundenes Beispiel beschreiben (zwei Leute im Bus), und der oder die Jugendliche ergänzt, woran man es sieht.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "karten"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "À quoi le remarque-t-on ?",
+      "text": "L’adulte pose quatre papiers : visage, voix, posture, message dans le chat. Le ou la jeune choisit celui par lequel il ou elle remarque le plus facilement comment va quelqu’un d’autre, et raconte une situation sans donner de nom (école, bus, entraînement, chat). L’adulte donne son propre exemple pour un autre papier. Dire « Passe » est permis.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la façon de reconnaître les émotions. Pour finir, regardons le quotidien : à quoi remarque-t-on comment va quelqu’un ?",
+        "Quel papier convient le mieux ? Raconte sans donner de nom.",
+        "Pour moi, c’est souvent la voix. Et pour toi ?"
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de situation, il ou elle choisit seulement le papier et dit pourquoi. L’adulte peut décrire une situation inventée (deux personnes dans le bus), et le ou la jeune complète : à quoi le voit-on ?"
+    }
+  },
+  {
+    "id": "th:gefuehle-erkennen-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Genaueres Gefühlswort",
+    "text": "Beide suchen ein Gefühlswort, das genauer ist als „gut“ oder „schlecht“ (zum Beispiel ruhig, genervt, neugierig, erleichtert, müde), und beziehen es auf diese Stunde. Die Fachkraft nennt ihr Wort zuerst, danach der oder die Jugendliche – oder Pass. Dann Tschüss.",
+    "sagen": [
+      "Zum Schluss noch ein Wort zum Thema Gefühle erkennen: nicht „gut“ oder „schlecht“, sondern etwas Genaueres.",
+      "Ich fange an: Bei mir war es heute eher …",
+      "Und bei dir? Oder sag Pass."
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen kein Wort ein, nennt die Fachkraft drei zur Auswahl, oder er oder sie zeigt mit dem Daumen nach oben, zur Seite oder nach unten. Auch Pass ist ein gültiger Schluss.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Un mot plus précis",
+      "text": "Chacun cherche un mot d’émotion plus précis que « bien » ou « mal » (par exemple calme, agacé, curieux, soulagé, fatigué) et le rapporte à cette séance. L’adulte donne son mot en premier, puis le ou la jeune donne le sien – ou dit « Passe ». Ensuite, au revoir.",
+      "sagen": [
+        "Pour finir, un mot sur le thème des émotions : pas « bien » ou « mal », mais quelque chose de plus précis.",
+        "Je commence : aujourd’hui, j’étais plutôt …",
+        "Et toi ? Ou dis « Passe »."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de mot, l’adulte en propose trois au choix, ou le ou la jeune montre le pouce vers le haut, sur le côté ou vers le bas. « Passe » est aussi une fin valable."
+    }
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Statt „passt schon“",
+    "text": "Die Fachkraft fragt: „Wie geht es dir gerade?“ Beide antworten nicht mit „gut“ oder „passt schon“, sondern mit dem Satzanfang „Gerade bin ich eher …“ und einem Wort ihrer Wahl (zum Beispiel müde, gespannt, ruhig, genervt). Die Fachkraft beginnt; statt eines Gefühlswortes darf es auch ein Wetter sein, und Pass ist erlaubt.",
+    "sagen": [
+      "Heute geht es darum, Gefühle in Worte zu fassen. Dazu ein kleiner Start mit nur einem Wort.",
+      "Ich fange an: Gerade bin ich eher …",
+      "Und du? Ein Wort oder ein Wetter reicht – oder Pass."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nichts über sich sagen, beschreibt er oder sie das Wetter in einem Wort, und die Fachkraft sagt ihres. Auch Pass ist in Ordnung; die Stunde beginnt dann einfach.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Plus que « ça va »",
+      "text": "L’adulte demande : « Comment tu vas en ce moment ? » Chacun répond non pas par « bien » ou « ça va », mais en commençant par « En ce moment, je suis plutôt … » avec un mot de son choix (par exemple fatigué, impatient, calme, agacé). L’adulte commence ; à la place d’un mot d’émotion, ce peut aussi être une météo, et « Passe » est permis.",
+      "sagen": [
+        "Aujourd’hui, on cherche des mots pour dire ce qu’on ressent. Pour commencer, un seul mot suffit.",
+        "Je commence : en ce moment, je suis plutôt …",
+        "Et toi ? Un mot ou une météo suffit – ou « Passe »."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut rien dire de soi, il ou elle décrit la météo en un mot et l’adulte donne la sienne. « Passe » est aussi très bien ; la séance commence alors simplement."
+    }
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Gefühle auf der Linie",
+    "text": "Die Fachkraft klebt eine Linie von etwa zwei Metern auf den Boden: links „kaum“, rechts „sehr stark“. Sie nennt eine Alltagssituation (zum Beispiel: Bus verpasst, Lob im Unterricht, Nachricht bleibt ungelesen), und beide stellen sich an den Punkt der Linie, der zeigt, wie stark so ein Gefühl meistens wäre, und sagen ein Wort dazu. Fünf bis sechs Situationen; die Fachkraft geht jedes Mal mit.",
+    "sagen": [
+      "Heute geht es ums Ausdrücken von Gefühlen: Wie stark ist es, und wie nenne ich es? Das üben wir gleich im Gehen.",
+      "Stell dich dahin, wo es ungefähr passt – kein Punkt ist falsch.",
+      "Welches Wort passt dazu? Oder sag Pass."
+    ],
+    "wennEsKippt": "Im Sitzen zeigt man die Stärke mit der Hand über dem Tisch: ganz unten für „kaum“, ganz oben für „sehr stark“. Passt eine Situation nicht, nennt der oder die Jugendliche selbst eine, oder sie wird übersprungen.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "gespraech"
+    ],
+    "material": [
+      "klebeband"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Les émotions sur la ligne",
+      "text": "L’adulte colle sur le sol une ligne d’environ deux mètres : à gauche « à peine », à droite « très fort ». Il nomme une situation du quotidien (par exemple : rater le bus, recevoir un compliment en classe, un message qui reste sans réponse), et chacun se place au point de la ligne qui montre l’intensité habituelle d’une telle émotion, puis dit un mot. Cinq à six situations ; l’adulte participe à chaque fois.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la façon de dire ce qu’on ressent : à quel point, et avec quel mot ? On le teste en marchant.",
+        "Place-toi là où cela correspond à peu près – aucun point n’est faux.",
+        "Quel mot irait avec ? Ou dis « Passe »."
+      ],
+      "wennEsKippt": "Assis : on montre l’intensité avec la main au-dessus de la table, tout en bas pour « à peine », tout en haut pour « très fort ». Si une situation ne convient pas, le ou la jeune en propose une, ou on la saute."
+    }
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Dasselbe Gefühl, drei Sätze",
+    "text": "Der oder die Jugendliche denkt an eine kleine Situation, in der ein Gefühl nicht ausgesprochen wurde, oder erfindet eine. Auf einem Zettel steht derselbe Inhalt in drei Fassungen: als Chat-Nachricht, als Satz zu einem Freund oder einer Freundin und als Satz zu einem Erwachsenen. Danach sagt er oder sie, welche Fassung am leichtesten fiel und welche am meisten gesagt hat. Die Fachkraft schreibt zu einem eigenen Beispiel ebenfalls drei Fassungen.",
+    "sagen": [
+      "Heute geht es ums Ausdrücken von Gefühlen. Ein und dasselbe Gefühl lässt sich auf mehrere Arten sagen – das probieren wir aus.",
+      "Welche Fassung fiel dir am leichtesten?",
+      "Welche hätte am meisten gesagt? Es gibt keine falsche."
+    ],
+    "wennEsKippt": "Fällt keine Situation ein, wählt die Fachkraft eine neutrale (eine Verabredung wird kurzfristig abgesagt), und der oder die Jugendliche schreibt dazu. Reicht die Zeit nicht, genügen zwei Fassungen.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "schreiben",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Même émotion, trois phrases",
+      "text": "Le ou la jeune pense à une petite situation où une émotion n’a pas été exprimée, ou en invente une. Sur une feuille, le même contenu est écrit en trois versions : comme message dans le chat, comme phrase adressée à un ami ou une amie, et comme phrase adressée à un adulte. Ensuite, il ou elle dit quelle version a été la plus facile et laquelle en disait le plus. L’adulte écrit aussi trois versions pour un exemple à lui.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la façon de dire ce qu’on ressent. Une même émotion peut se dire de plusieurs façons – on l’essaie.",
+        "Quelle version a été la plus facile pour toi ?",
+        "Laquelle en aurait dit le plus ? Aucune n’est fausse."
+      ],
+      "wennEsKippt": "Si aucune situation ne vient, l’adulte en choisit une neutre (un rendez-vous annulé au dernier moment) et le ou la jeune écrit dessus. Si le temps manque, deux versions suffisent."
+    }
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Ein Ich-Satz zum Schluss",
+    "text": "Beide sagen zum Abschied einen Satz, der mit „Ich“ beginnt und ein Gefühl benennt (zum Beispiel: „Ich bin erleichtert, dass es heute ruhig war“ oder „Ich bin neugierig, wie die Woche wird“). Die Fachkraft beginnt. Pass ist erlaubt, dann reicht ein Nicken.",
+    "sagen": [
+      "Zum Schluss ein Satz, der mit „Ich“ anfängt und ein Gefühl nennt – das passt zum Thema Gefühle ausdrücken.",
+      "Ich fange an: „Ich bin …“",
+      "Und du? Oder Pass, dann reicht ein Nicken."
+    ],
+    "wennEsKippt": "Fällt kein Satz ein, wählt der oder die Jugendliche aus drei Satzanfängen: „Ich bin froh, dass …“, „Ich bin müde, weil …“, „Ich bin gespannt, ob …“. Ein Nicken zum Abschied genügt auch.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Une phrase en « je » pour finir",
+      "text": "En se quittant, chacun dit une phrase à la première personne qui nomme une émotion (par exemple : « Ça me soulage que ce soit resté calme aujourd’hui » ou « J’ai hâte de voir comment sera la semaine »). L’adulte commence. « Passe » est permis, alors un signe de tête suffit.",
+      "sagen": [
+        "Pour finir, une phrase à la première personne qui nomme une émotion – cela va avec le thème : dire ce qu’on ressent.",
+        "Je commence : « Je me sens … »",
+        "Et toi ? Ou « Passe » ; alors un signe de tête suffit."
+      ],
+      "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit parmi trois débuts : « Ça me fait plaisir que … », « Je manque d’énergie parce que … », « Je me demande si … ». Un signe de tête en partant suffit aussi."
+    }
+  },
+  {
+    "id": "th:selbstregulation-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Akku-Stand und ein Schritt",
+    "text": "Beide nennen eine Zahl von 0 bis 100 für ihren Akku-Stand gerade. Dann sucht jeder einen winzigen Schritt, der den Wert ein wenig verändern könnte (Wasser trinken, Schultern lockern, kurz zum Fenster schauen), und macht ihn gleich. Die Fachkraft beginnt und macht ihren Schritt vor.",
+    "sagen": [
+      "Heute geht es darum, sich selbst zu regulieren: merken, wie es mir geht, und etwas Kleines dafür tun. Dazu ein Mini-Start.",
+      "Mein Akku steht gerade bei … Prozent. Wie hoch ist deiner?",
+      "Welcher kleine Schritt würde ein wenig helfen? Den machen wir jetzt."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche keine Zahl nennen, denkt er oder sie sie nur und macht den kleinen Schritt trotzdem mit. Fällt kein Schritt ein, macht die Fachkraft ihren vor, und beide machen ihn gemeinsam.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "sinne"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Niveau de batterie et un petit pas",
+      "text": "Chacun donne un chiffre de 0 à 100 pour son niveau de batterie en ce moment. Puis chacun cherche un tout petit pas qui pourrait faire un peu bouger ce chiffre (boire de l’eau, détendre les épaules, regarder un instant par la fenêtre) et le fait tout de suite. L’adulte commence et montre son pas en premier.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à l’autorégulation : remarquer comment on va et faire une petite chose pour soi. Pour commencer, un mini-exercice.",
+        "Ma batterie est à … pour cent en ce moment. Et la tienne ?",
+        "Quel petit pas t’aiderait un peu ? On le fait maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas dire de chiffre, il ou elle le pense seulement et fait quand même le petit pas. Si aucun pas ne vient, l’adulte montre le sien et on le fait ensemble."
+    }
+  },
+  {
+    "id": "th:selbstregulation-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Tempo-Regler im Raum",
+    "text": "Beide gehen nebeneinander durch den Raum, und der oder die Jugendliche ist der Regler: Er oder sie sagt eine Zahl von 1 (Zeitlupe) bis 5 (zügig), und beide passen ihr Tempo an. Nach einigen Wechseln geht es in Stufen von 5 auf 1 herunter. Bei 1 bleiben beide stehen, atmen einmal lang aus und spüren nach, wie es sich jetzt anfühlt.",
+    "sagen": [
+      "Heute geht es um Selbstregulation: schneller und langsamer werden können. Das probieren wir mit dem Gehen.",
+      "Du bist der Regler. Sag eine Zahl von 1 bis 5.",
+      "Jetzt von 5 langsam auf 1 herunter – und am Ende einmal lang ausatmen."
+    ],
+    "wennEsKippt": "Im Sitzen geben die Zahlen das Tempo an, mit dem beide leise mit den Fingerspitzen auf den Tisch tippen; bei 1 liegen die Hände still. Mag der oder die Jugendliche den Regler nicht sein, sagt die Fachkraft die Zahlen.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "atmen"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le variateur de rythme dans la pièce",
+      "text": "Tous deux marchent côte à côte dans la pièce, et le ou la jeune est le variateur : il ou elle dit un chiffre de 1 (ralenti) à 5 (rapide), et chacun adapte son rythme. Après quelques changements, on redescend par paliers de 5 à 1. À 1, on s’arrête, on expire lentement une fois et on sent comment c’est maintenant.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à l’autorégulation : pouvoir aller plus vite et plus lentement. On l’essaie en marchant.",
+        "C’est toi qui règles. Dis un chiffre de 1 à 5.",
+        "Maintenant, on redescend de 5 à 1 – et à la fin, une longue expiration."
+      ],
+      "wennEsKippt": "Assis : les chiffres donnent le rythme auquel on tapote doucement la table du bout des doigts ; à 1, les mains restent immobiles. Si le ou la jeune ne veut pas régler, l’adulte annonce les chiffres."
+    }
+  },
+  {
+    "id": "th:selbstregulation-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Mein Weg runterzukommen",
+    "text": "Die Fachkraft legt fünf Zettel hin: tief atmen, bewegen, Musik hören, mit jemandem reden, kurz allein sein. Der oder die Jugendliche sortiert sie in „hilft mir oft“, „manchmal“ und „eher nicht“ und erzählt zu einem Zettel, wann das schon einmal gepasst hat, zum Beispiel vor etwas Wichtigem in der Schule oder nach Ärger im Chat. Die Fachkraft sortiert ihre eigenen Zettel mit.",
+    "sagen": [
+      "Heute geht es um Selbstregulation: Was hilft mir, wenn es zu viel wird? Dazu sortieren wir gleich fünf Möglichkeiten.",
+      "Wo legst du diesen Zettel hin? Es gibt kein Richtig oder Falsch.",
+      "Wann hat dir das schon einmal geholfen? Pass ist erlaubt."
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen kein Beispiel ein, wird nur sortiert, und die Fachkraft erzählt ein eigenes. Ist Sortieren zu viel, wählt er oder sie einen einzigen Zettel, der am ehesten passt.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "karten",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Mon chemin pour me calmer",
+      "text": "L’adulte pose cinq papiers : respirer profondément, bouger, écouter de la musique, parler à quelqu’un, rester seul un moment. Le ou la jeune les trie en « m’aide souvent », « parfois » et « plutôt pas », et raconte pour un papier une fois où cela a aidé, par exemple avant quelque chose d’important à l’école ou après une dispute dans le chat. L’adulte trie aussi ses propres papiers.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à l’autorégulation : qu’est-ce qui m’aide quand c’est trop ? Pour cela, on trie cinq possibilités.",
+        "Où mets-tu ce papier ? Il n’y a ni bonne ni mauvaise réponse.",
+        "Quand cela t’a-t-il aidé la dernière fois ? Tu peux dire « Passe »."
+      ],
+      "wennEsKippt": "Si le ou la jeune n’a pas d’exemple, on trie seulement et l’adulte en raconte un à lui. Si trier est trop, il ou elle choisit un seul papier, celui qui convient le mieux."
+    }
+  },
+  {
+    "id": "th:selbstregulation-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Eine Stufe tiefer",
+    "text": "Beide schätzen für sich still, wie angespannt sie gerade sind (1 bis 10), und sagen die Zahl nicht. Dann lassen sie die Schultern sinken, atmen einmal lang aus und schätzen neu. Wer mag, sagt, ob die Zahl kleiner geworden ist; dann Tschüss.",
+    "sagen": [
+      "Zum Schluss etwas für die Selbstregulation: Spannung bemerken und eine Stufe herunterholen.",
+      "Schätz still eine Zahl von 1 bis 10. Du musst sie nicht sagen.",
+      "Schultern sinken lassen, einmal lang ausatmen – und noch einmal schätzen."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht mitmachen, atmet die Fachkraft einmal lang aus und sagt Tschüss. Wer sich dabei unwohl fühlt, lässt nur die Schultern sinken.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "atmen"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Un cran plus bas",
+      "text": "Chacun évalue en silence son niveau de tension en ce moment (de 1 à 10), sans dire le chiffre. Puis on laisse retomber les épaules, on expire lentement une fois et on évalue à nouveau. Qui veut dit si le chiffre a baissé ; ensuite, au revoir.",
+      "sagen": [
+        "Pour finir, quelque chose pour l’autorégulation : remarquer la tension et la faire descendre d’un cran.",
+        "Évalue en silence un chiffre de 1 à 10. Tu n’as pas besoin de le dire.",
+        "Laisse tomber les épaules, expire lentement une fois – et évalue encore."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas participer, l’adulte expire lentement une fois et dit au revoir. Si quelqu’un est mal à l’aise, il suffit de laisser retomber les épaules."
+    }
+  },
+  {
+    "id": "th:impulskontrolle-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Drei Sekunden Pause",
+    "text": "Die Fachkraft stellt eine leichte Frage (zum Beispiel: „Welche Jahreszeit magst du am liebsten?“). Beide zählen still bis drei, bevor sie antworten; die Fachkraft macht die Pause vor und hält sie selbst ein. Nach zwei Fragen stellt der oder die Jugendliche die Fragen.",
+    "sagen": [
+      "Heute geht es um Impulskontrolle: erst einen Moment warten, dann reagieren. Das üben wir gleich ganz klein.",
+      "Eine Frage – aber wir zählen vor der Antwort still bis drei.",
+      "Jetzt darfst du eine Frage stellen. Wir warten wieder bis drei."
+    ],
+    "wennEsKippt": "Fällt das Warten schwer, reichen zwei Sekunden, oder beide zeigen die Pause mit einem Finger, der langsam hochgeht. Fällt dem oder der Jugendlichen keine Frage ein, stellt die Fachkraft weiter Fragen.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Trois secondes de pause",
+      "text": "L’adulte pose une question facile (par exemple : « Quelle saison préfères-tu ? »). Chacun compte en silence jusqu’à trois avant de répondre ; l’adulte montre la pause et la tient lui-même. Après deux questions, c’est le ou la jeune qui pose les questions.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse au contrôle des impulsions : attendre un instant, puis réagir. On l’essaie tout de suite, en tout petit.",
+        "Une question – mais on compte en silence jusqu’à trois avant de répondre.",
+        "À toi de poser une question. On attend de nouveau jusqu’à trois."
+      ],
+      "wennEsKippt": "Si attendre est difficile, deux secondes suffisent, ou on montre la pause avec un doigt qui monte lentement. Si le ou la jeune ne trouve pas de question, l’adulte continue à en poser."
+    }
+  },
+  {
+    "id": "th:impulskontrolle-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Stopp-Signal und Fake",
+    "text": "Beide gehen nebeneinander durch den Raum. Hebt die Fachkraft die flache Hand, bleiben beide sofort stehen; zeigt sie nur den Daumen, gehen beide weiter, auch wenn der Impuls zum Stehenbleiben da ist. Nach zwei bis drei Minuten übernimmt der oder die Jugendliche die Signale, und die Fachkraft versucht, nicht auf das falsche Signal hereinzufallen.",
+    "sagen": [
+      "Heute geht es um Impulskontrolle: erst bremsen, dann handeln. Das üben wir gleich mit dem Gehen.",
+      "Flache Hand heißt stehen bleiben, Daumen heißt weitergehen.",
+      "Jetzt gibst du die Signale – und ich versuche, nicht auf den Fake hereinzufallen."
+    ],
+    "wennEsKippt": "Im Sitzen tippen beide leise mit den Fingerspitzen auf den Tisch; bei der flachen Hand liegen die Hände sofort still, beim Daumen geht es weiter. Ist es zu schwer, gibt es nur das Stopp-Signal ohne Fake.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Signal d’arrêt et fausse piste",
+      "text": "Tous deux marchent côte à côte dans la pièce. Quand l’adulte lève la main à plat, les deux s’arrêtent tout de suite ; si l’adulte montre seulement le pouce, les deux continuent, même si l’envie de s’arrêter est là. Après deux à trois minutes, le ou la jeune donne les signaux, et l’adulte essaie de ne pas se laisser piéger par le faux signal.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse au contrôle des impulsions : freiner d’abord, agir ensuite. On l’essaie en marchant.",
+        "Main à plat : on s’arrête. Pouce : on continue.",
+        "Maintenant, c’est toi qui donnes les signaux – et j’essaie de ne pas tomber dans le piège."
+      ],
+      "wennEsKippt": "Assis : les deux tapotent doucement la table du bout des doigts ; main à plat, les mains s’arrêtent aussitôt, pouce, on continue. Si c’est trop difficile, on garde seulement le signal d’arrêt, sans faux signal."
+    }
+  },
+  {
+    "id": "th:impulskontrolle-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Die Sekunde dazwischen",
+    "text": "Der oder die Jugendliche denkt an einen Moment aus dieser Woche, in dem schnell etwas passieren wollte (etwas sagen, abschicken, loslaufen, kaufen), oder erfindet einen. Auf einem Blatt zeichnen beide eine Linie mit drei Punkten: Impuls, Pause, Handlung. Der oder die Jugendliche markiert, wo eine Pause war oder hätte sein können, und sagt, was in dieser Pause geholfen hätte. Die Fachkraft bringt ein eigenes Beispiel mit.",
+    "sagen": [
+      "Heute geht es um Impulskontrolle: Zwischen Impuls und Handlung liegt eine Sekunde, die man nutzen kann. Die schauen wir uns an.",
+      "Wo war oder wäre die Pause? Ein erfundenes Beispiel ist erlaubt.",
+      "Was hätte in dieser Sekunde geholfen?"
+    ],
+    "wennEsKippt": "Fällt kein Moment ein, nimmt die Fachkraft ein Beispiel aus dem Bus oder der Pause (eine Nachricht, die man sofort abschicken will), und beide füllen die Linie gemeinsam. Mehr als ein Stichwort pro Punkt ist nicht nötig.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "schreiben",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La seconde entre les deux",
+      "text": "Le ou la jeune pense à un moment de cette semaine où quelque chose voulait se passer très vite (dire quelque chose, envoyer un message, courir, acheter), ou en invente un. Sur une feuille, on dessine une ligne avec trois points : impulsion, pause, action. Le ou la jeune marque où il y a eu ou aurait pu y avoir une pause, et dit ce qui aurait aidé pendant cette pause. L’adulte apporte un exemple à lui.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse au contrôle des impulsions : entre l’impulsion et l’action, il y a une seconde qu’on peut utiliser. On la regarde de près.",
+        "Où y a-t-il eu, ou y aurait-il, une pause ? Un exemple inventé est permis.",
+        "Qu’est-ce qui aurait aidé pendant cette seconde ?"
+      ],
+      "wennEsKippt": "Si aucun moment ne vient, l’adulte prend un exemple du bus ou de la récréation (un message qu’on veut envoyer tout de suite), et on remplit la ligne ensemble. Un mot-clé par point suffit."
+    }
+  },
+  {
+    "id": "th:impulskontrolle-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Erst warten, dann Tschüss",
+    "text": "Beide legen eine Hand flach auf den Tisch und warten zehn Sekunden still, bevor jemand zusammenpackt oder aufsteht. Die Fachkraft schaut auf die Uhr und hält die Pause als Erste ein. Erst nach den zehn Sekunden kommt das Tschüss.",
+    "sagen": [
+      "Zum Schluss eine kleine Übung zur Impulskontrolle: nicht sofort aufspringen, sondern erst zehn Sekunden warten.",
+      "Hand auf den Tisch – wir warten still.",
+      "Geschafft. Danke dir – tschüss."
+    ],
+    "wennEsKippt": "Fällt das Stillsitzen schwer, reichen fünf Sekunden, oder beide stehen auf und warten im Stehen. Mag der oder die Jugendliche nicht, sagt die Fachkraft einfach Tschüss.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel"
+    ],
+    "material": [
+      "uhr"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "D’abord attendre, puis au revoir",
+      "text": "Tous deux posent une main à plat sur la table et attendent dix secondes en silence avant que quelqu’un range ses affaires ou se lève. L’adulte surveille l’heure et tient la pause en premier. Ce n’est qu’après les dix secondes que vient l’au revoir.",
+      "sagen": [
+        "Pour finir, un petit exercice de contrôle des impulsions : ne pas se lever tout de suite, mais attendre d’abord dix secondes.",
+        "Main sur la table – on attend en silence.",
+        "C’est fait. Merci à toi – au revoir."
+      ],
+      "wennEsKippt": "Si rester immobile est difficile, cinq secondes suffisent, ou on attend debout. Si le ou la jeune ne veut pas, l’adulte dit simplement au revoir."
+    }
+  },
+  {
+    "id": "th:aufmerksamkeit-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Was ist anders?",
+    "text": "Der oder die Jugendliche schaut zehn Sekunden auf den Tisch und schließt dann die Augen oder dreht sich weg. Die Fachkraft verändert eine Kleinigkeit (ein Stift liegt woanders, ein Gegenstand fehlt), und der oder die Jugendliche findet sie. Zwei bis drei Runden, danach tauschen die beiden.",
+    "sagen": [
+      "Heute geht es um Aufmerksamkeit: genau hinschauen und bei der Sache bleiben. Dazu ein kurzer Start.",
+      "Schau zehn Sekunden hin, dann Augen zu. Ich ändere eine Kleinigkeit.",
+      "Was ist anders? Danach darfst du mich testen."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche die Augen nicht schließen, dreht er oder sie sich nur um. Wird es zu leicht, werden zwei Dinge verändert; wird es zu schwer, nur eine große Sache.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "sinne"
+    ],
+    "material": [
+      "stifte",
+      "alltagsdinge"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Qu’est-ce qui a changé ?",
+      "text": "Le ou la jeune regarde la table pendant dix secondes, puis ferme les yeux ou se détourne. L’adulte modifie un petit détail (un stylo est ailleurs, un objet manque), et le ou la jeune le retrouve. Deux à trois tours, puis on échange les rôles.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à l’attention : regarder de près et rester concentré sur ce qu’on fait. Pour commencer, un court jeu.",
+        "Regarde pendant dix secondes, puis ferme les yeux. Je change un petit détail.",
+        "Qu’est-ce qui a changé ? Ensuite, tu peux me tester aussi."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas fermer les yeux, il ou elle se détourne seulement. Si c’est trop facile, on change deux choses ; si c’est trop difficile, une seule grande chose."
+    }
+  },
+  {
+    "id": "th:aufmerksamkeit-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Linie gehen mit Fokus",
+    "text": "Die Fachkraft klebt eine drei Meter lange Linie auf den Boden. Beide gehen nacheinander langsam darauf entlang, Ferse an Zehe, mit einem Buch flach auf der Hand und dem Blick auf dem Buch; wer abkommt, beginnt ruhig neu. Danach wird es schwerer: zusätzlich rückwärts oder mit stillem Zählen in Dreierschritten.",
+    "sagen": [
+      "Heute geht es um Aufmerksamkeit: bei einer Sache bleiben. Das üben wir gleich im Gehen auf einer Linie.",
+      "Der Blick bleibt auf dem Buch. Abkommen ist normal, einfach neu anfangen.",
+      "Jetzt zusätzlich in Dreierschritten zählen – nur im Kopf."
+    ],
+    "wennEsKippt": "Im Sitzen fährt man mit dem Finger langsam die Tischkante entlang, ohne den Blick zu lösen, und zählt dabei still in Dreierschritten. Ist das Buch zu schwer, reicht ein Heft oder ein leerer Becher auf der Hand.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung"
+    ],
+    "material": [
+      "klebeband",
+      "buecher",
+      "heft",
+      "becher"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Marcher sur une ligne, concentré",
+      "text": "L’adulte colle sur le sol une ligne de trois mètres. L’un après l’autre, ils la suivent lentement, talon contre pointe, avec un livre à plat sur la main et le regard sur le livre ; si on dévie, on recommence calmement. Ensuite, on rend l’exercice plus difficile : en plus, à reculons ou en comptant en silence de trois en trois.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à l’attention : rester sur une seule chose. On l’exerce tout de suite en marchant sur une ligne.",
+        "Le regard reste sur le livre. Dévier est normal, on recommence simplement.",
+        "Maintenant, compte en plus de trois en trois – seulement dans ta tête."
+      ],
+      "wennEsKippt": "Assis : on suit lentement le bord de la table du doigt, sans détacher le regard, en comptant de trois en trois dans sa tête. Si le livre est trop lourd, un cahier ou un gobelet vide sur la main suffit."
+    }
+  },
+  {
+    "id": "th:aufmerksamkeit-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Meine Aufmerksamkeitskurve",
+    "text": "Der oder die Jugendliche zeichnet auf ein Blatt eine Kurve für eine typische Schulstunde: oben heißt voll dabei, unten heißt in Gedanken weg. An zwei Stellen schreibt er oder sie ein Stichwort dazu, was in dem Moment los war (Handy, Hunger, Gedanken, Lärm). Die Fachkraft zeichnet ihre Kurve für einen Arbeitsvormittag und zeigt sie zuerst.",
+    "sagen": [
+      "Heute geht es um Aufmerksamkeit: Wann bin ich gut dabei, und wann gleite ich ab? Das zeichnen wir gleich auf.",
+      "Zeichne eine Stunde als Kurve: oben dabei, unten weg.",
+      "Was war an der tiefsten Stelle los? Pass ist erlaubt."
+    ],
+    "wennEsKippt": "Fällt das Zeichnen schwer, zeigt der oder die Jugendliche mit der Hand in der Luft, wie die Stunde verläuft, und nennt nur zwei Stichworte. Oder er oder sie erzählt, was am meisten ablenkt.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "malen",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Ma courbe d’attention",
+      "text": "Le ou la jeune dessine sur une feuille une courbe pour un cours typique : en haut, cela veut dire pleinement présent, en bas, parti dans ses pensées. À deux endroits, il ou elle note un mot-clé sur ce qui se passait à ce moment-là (téléphone, faim, pensées, bruit). L’adulte dessine sa courbe pour une matinée de travail et la montre en premier.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à l’attention : quand suis-je bien présent, et quand est-ce que je décroche ? On le dessine tout de suite.",
+        "Dessine un cours sous forme de courbe : en haut présent, en bas absent.",
+        "Que se passait-il au point le plus bas ? Tu peux dire « Passe »."
+      ],
+      "wennEsKippt": "Si dessiner est difficile, le ou la jeune montre avec la main en l’air comment le cours se déroule et ne donne que deux mots-clés. Sinon, il ou elle raconte ce qui distrait le plus."
+    }
+  },
+  {
+    "id": "th:aufmerksamkeit-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Ein Detail bemerkt",
+    "text": "Beide schauen noch einmal im Raum herum und nennen je ein Detail, das ihnen heute aufgefallen ist (ein Geräusch, eine Farbe, ein Satz aus der Stunde). Die Fachkraft beginnt; das Detail darf winzig sein. Dann Tschüss.",
+    "sagen": [
+      "Zum Schluss ein Blick auf die Aufmerksamkeit: Was ist mir heute aufgefallen, ohne dass ich danach gesucht habe?",
+      "Ich fange an: Mir ist … aufgefallen.",
+      "Und bei dir? Auch etwas Kleines zählt."
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen nichts ein, zeigt er oder sie mit dem Finger auf etwas im Raum, das er oder sie gerade sieht. Pass ist erlaubt.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "sinne",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Un détail remarqué",
+      "text": "Tous deux regardent encore une fois autour d’eux et nomment chacun un détail qu’ils ont remarqué aujourd’hui (un bruit, une couleur, une phrase de la séance). L’adulte commence ; le détail peut être minuscule. Ensuite, au revoir.",
+      "sagen": [
+        "Pour finir, un regard sur l’attention : qu’est-ce que j’ai remarqué aujourd’hui sans l’avoir cherché ?",
+        "Je commence : j’ai remarqué …",
+        "Et toi ? Une petite chose compte aussi."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, il ou elle montre du doigt quelque chose qu’il ou elle voit dans la pièce en ce moment. « Passe » est permis."
+    }
+  },
+  {
+    "id": "th:ausdauer-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Trotzdem geschafft",
+    "text": "Beide nennen eine Kleinigkeit, die sie in letzter Zeit zu Ende gebracht haben, obwohl die Lust fehlte (Vokabeln, Training, eine Aufgabe in der Schule, ein langer Weg). Die Fachkraft beginnt mit einem Beispiel, das ruhig winzig sein darf. Pass ist erlaubt, dann nennt die Fachkraft noch ein zweites.",
+    "sagen": [
+      "Heute geht es ums Dranbleiben und Durchhalten. Dazu ein kleiner Start mit einem Rückblick.",
+      "Ich fange an: Ich habe zuletzt … trotzdem zu Ende gebracht.",
+      "Und bei dir? Es darf klein sein – oder Pass."
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen nichts ein, nennt die Fachkraft zwei Beispiele aus dem Alltag Jugendlicher (Training, Hausaufgabe, Vokabeln), und er oder sie wählt eines, das passt. Auch ein Nicken zählt.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Fait quand même",
+      "text": "Chacun nomme une petite chose terminée ces derniers temps alors que l’envie manquait (vocabulaire, entraînement, un exercice à l’école, un long trajet). L’adulte commence par un exemple, qui peut être minuscule. « Passe » est permis, alors l’adulte en nomme un deuxième.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la persévérance : tenir bon et aller jusqu’au bout. Pour commencer, un petit retour en arrière.",
+        "Je commence : dernièrement, j’ai quand même terminé …",
+        "Et toi ? Cela peut être petit – ou « Passe »."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte propose deux exemples de la vie des jeunes (entraînement, devoirs, vocabulaire) et il ou elle choisit celui qui convient. Un signe de tête compte aussi."
+    }
+  },
+  {
+    "id": "th:ausdauer-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Gehen in Etappen",
+    "text": "Die Fachkraft legt vier Zettel als Etappenpunkte im Raum aus. Beide gehen die Strecke dreimal in ruhigem Tempo ab; an jedem Punkt sagt der oder die Jugendliche „weiter“ oder „zehn Sekunden Pause“, und die Fachkraft folgt. Es geht nicht um Tempo, sondern darum, dass beide alle Etappen schaffen und sich die Kraft einteilen.",
+    "sagen": [
+      "Heute geht es ums Dranbleiben. Eine lange Strecke schafft man in Etappen – das probieren wir jetzt im Gehen.",
+      "An jedem Punkt entscheidest du: weiter oder zehn Sekunden Pause.",
+      "Pausen gehören dazu. Wichtig ist, dass wir ankommen."
+    ],
+    "wennEsKippt": "Im Sitzen liegen die vier Zettel auf dem Tisch, und ein Finger wandert von Zettel zu Zettel (drei Runden), mit kurzer Pause an jedem Punkt. Wird die Strecke zu lang, reichen zwei Runden.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung"
+    ],
+    "material": [
+      "papier"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Marcher par étapes",
+      "text": "L’adulte pose quatre papiers dans la pièce comme points d’étape. Tous deux parcourent le trajet trois fois à un rythme calme ; à chaque point, le ou la jeune dit « on continue » ou « dix secondes de pause », et l’adulte suit. Il ne s’agit pas d’aller vite, mais de réussir toutes les étapes en répartissant ses forces.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la persévérance. Un long trajet se fait par étapes – on l’essaie maintenant en marchant.",
+        "À chaque point, tu décides : on continue ou dix secondes de pause.",
+        "Les pauses font partie du chemin. L’important, c’est d’arriver."
+      ],
+      "wennEsKippt": "Assis : les quatre papiers sont sur la table et un doigt passe de papier en papier (trois tours), avec une courte pause à chaque point. Si le trajet est trop long, deux tours suffisent."
+    }
+  },
+  {
+    "id": "th:ausdauer-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Was hilft mir dranzubleiben?",
+    "text": "Die Fachkraft legt vier Zettel hin: kleine Etappen, feste Pausen, Belohnung danach, nicht allein arbeiten. Der oder die Jugendliche sucht den Zettel aus, der beim Dranbleiben (Hausaufgaben, Training, Üben) am meisten hilft, und erzählt, wann das schon einmal funktioniert hat. Die Fachkraft nennt, was ihr selbst hilft, und bleibt dabei ehrlich.",
+    "sagen": [
+      "Heute geht es ums Dranbleiben und Durchhalten. Jetzt schauen wir, was dabei hilft.",
+      "Welcher Zettel hilft dir am meisten?",
+      "Wann hat das schon einmal funktioniert? Oder was würdest du gern einmal ausprobieren?"
+    ],
+    "wennEsKippt": "Passt keiner der Zettel, schreibt der oder die Jugendliche einen eigenen dazu. Fällt kein Beispiel ein, reicht es, den Zettel zu wählen und kurz zu sagen, warum.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "karten",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Qu’est-ce qui m’aide à tenir bon ?",
+      "text": "L’adulte pose quatre papiers : petites étapes, pauses régulières, récompense après, ne pas travailler seul. Le ou la jeune choisit celui qui l’aide le plus à tenir bon (devoirs, entraînement, exercices) et raconte une fois où cela a marché. L’adulte dit ce qui l’aide lui-même, en restant honnête.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la persévérance. Regardons maintenant ce qui aide à tenir bon.",
+        "Quel papier t’aide le plus ?",
+        "Quand cela a-t-il marché la dernière fois ? Ou que voudrais-tu essayer un jour ?"
+      ],
+      "wennEsKippt": "Si aucun papier ne convient, le ou la jeune en écrit un lui-même. S’il ou elle n’a pas d’exemple, il suffit de choisir le papier et de dire brièvement pourquoi."
+    }
+  },
+  {
+    "id": "th:ausdauer-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Haken für heute",
+    "text": "Beide malen auf einen Zettel einen Haken und schreiben ein Stichwort dazu, was heute zu Ende gebracht wurde, auch wenn es klein war (zum Beispiel: gekommen, angefangen, drangeblieben). Die Fachkraft liest ihren Haken vor; der oder die Jugendliche darf seinen vorlesen oder für sich behalten. Dann Tschüss.",
+    "sagen": [
+      "Zum Schluss ein Haken fürs Dranbleiben: Was habe ich heute zu Ende gebracht?",
+      "Bei mir ist es …",
+      "Du entscheidest, ob du deinen vorliest."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nichts schreiben, nennt er oder sie den Haken mündlich oder denkt ihn nur. Die Fachkraft sagt dann ihren Haken und Tschüss.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "schreiben"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Une coche pour aujourd’hui",
+      "text": "Chacun dessine une coche sur un papier et note un mot-clé sur ce qui a été mené à terme aujourd’hui, même si c’était petit (par exemple : venu, commencé, tenu bon). L’adulte lit sa coche à voix haute ; le ou la jeune peut lire la sienne ou la garder pour lui ou elle. Ensuite, au revoir.",
+      "sagen": [
+        "Pour finir, une coche pour la persévérance : qu’ai-je terminé aujourd’hui ?",
+        "Pour moi, c’est …",
+        "Tu n’as pas à lire la tienne à voix haute. Tu décides."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut rien écrire, il ou elle dit sa coche à voix haute ou la pense seulement. L’adulte dit alors la sienne et au revoir."
+    }
+  },
+  {
+    "id": "th:kooperation-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Satz im Wechsel",
+    "text": "Beide bauen gemeinsam einen Satz, indem sie abwechselnd je ein Wort sagen; die Fachkraft beginnt mit „Heute …“. Der Satz darf ernst oder witzig werden, am Ende soll er nur einen Sinn ergeben, und beide müssen zustimmen. Zwei Sätze reichen.",
+    "sagen": [
+      "Heute geht es um Zusammenarbeit. Als Start bauen wir einen Satz, an dem wir beide beteiligt sind – ein Wort jeder.",
+      "Ich beginne mit „Heute“. Dein Wort?",
+      "Gut. Wie könnte der Satz enden? Wir sollten beide zufrieden sein."
+    ],
+    "wennEsKippt": "Gerät der Satz ins Stocken, darf jede Person einmal „Neustart“ sagen. Ist Wort für Wort zu schwer, sagt jeder einen halben Satz.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Une phrase à tour de rôle",
+      "text": "Tous deux construisent ensemble une phrase en disant chacun un mot à tour de rôle ; l’adulte commence par « Aujourd’hui … ». La phrase peut devenir sérieuse ou drôle, elle doit seulement avoir un sens à la fin, et les deux doivent être d’accord. Deux phrases suffisent.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la coopération. Pour commencer, on construit une phrase à deux – un mot chacun.",
+        "Je commence par « Aujourd’hui ». Ton mot ?",
+        "Bien. Comment la phrase pourrait-elle se terminer ? Il faut que les deux soient satisfaits."
+      ],
+      "wennEsKippt": "Si la phrase se bloque, chacun peut dire une fois « on recommence ». Si mot par mot est trop difficile, chacun dit une demi-phrase."
+    }
+  },
+  {
+    "id": "th:kooperation-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Ball auf dem Tuch",
+    "text": "Beide halten ein Tuch an zwei Enden und legen einen Ball in die Mitte. Gemeinsam tragen sie den Ball um zwei Stühle herum und zurück, ohne dass er herunterfällt; jeder darf „langsamer“ oder „stopp“ sagen. Danach tauschen sie die Seiten und gehen die Strecke noch einmal in die andere Richtung.",
+    "sagen": [
+      "Heute geht es um Zusammenarbeit. Dazu jetzt eine kleine Bewegung, bei der wir beide aufeinander achten müssen.",
+      "Der Ball kommt nur ans Ziel, wenn wir beide achtgeben. Jeder darf „langsamer“ oder „stopp“ sagen.",
+      "Was hat uns geholfen?"
+    ],
+    "wennEsKippt": "Im Sitzen halten beide das Tuch über dem Tisch und lassen den Ball langsam im Kreis laufen, ohne dass er herunterfällt. Fällt der Ball oft, wird ein größerer Ball oder ein zusammengeknülltes Papier genommen.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [
+      "tuch",
+      "ball",
+      "stuhl"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La balle sur le tissu",
+      "text": "Tous deux tiennent un tissu par deux coins et posent une balle au milieu. Ensemble, ils portent la balle autour de deux chaises et reviennent, sans qu’elle tombe ; chacun peut dire « plus lentement » ou « stop ». Ensuite, ils changent de côté et refont le parcours dans l’autre sens.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la coopération. Pour cela, un petit exercice en mouvement où nous devons faire attention l’un à l’autre.",
+        "La balle n’arrive au but que si nous faisons attention tous les deux. Chacun peut dire « plus lentement » ou « stop ».",
+        "Qu’est-ce qui nous a aidés ?"
+      ],
+      "wennEsKippt": "Assis : tous deux tiennent le tissu au-dessus de la table et font rouler la balle lentement en cercle, sans qu’elle tombe. Si la balle tombe souvent, on prend une balle plus grande ou une boule de papier."
+    }
+  },
+  {
+    "id": "th:kooperation-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Meine Rolle im Team",
+    "text": "Die Fachkraft legt fünf Zettel hin: Ideen geben, Aufgaben ordnen, anpacken, vermitteln, antreiben. Der oder die Jugendliche wählt den Zettel, der in Teams (Schule, Sport, Musik, Spiel) meistens zu ihm oder ihr passt, und eine Rolle, die er oder sie einmal ausprobieren würde. Dazu erzählt er oder sie kurz, wie das war oder sein könnte. Die Fachkraft wählt ebenfalls zwei Zettel.",
+    "sagen": [
+      "Heute geht es um Zusammenarbeit. Jetzt schauen wir, welche Rolle man im Team gern übernimmt.",
+      "Welcher Zettel passt meistens zu dir? Keine Rolle ist besser als die andere.",
+      "Und welche würdest du gern einmal ausprobieren?"
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen keine Teamsituation ein, nimmt die Fachkraft eine erfundene (ein Plakat für die Schule gestalten), und er oder sie wählt dafür eine Rolle. Ein einziger Zettel genügt auch.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "karten",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Mon rôle dans l’équipe",
+      "text": "L’adulte pose cinq papiers : donner des idées, organiser les tâches, se mettre au travail, faire le lien, motiver. Le ou la jeune choisit celui qui lui correspond le plus souvent dans une équipe (école, sport, musique, jeu) et un rôle qu’il ou elle aimerait essayer. Il ou elle raconte brièvement comment c’était ou comment cela pourrait être. L’adulte choisit aussi deux papiers.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la coopération. Regardons maintenant quel rôle on aime prendre dans une équipe.",
+        "Quel papier te correspond le plus souvent ? Aucun rôle n’est meilleur qu’un autre.",
+        "Et lequel aimerais-tu essayer un jour ?"
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de situation d’équipe, l’adulte en propose une inventée (créer une affiche pour l’école) et il ou elle choisit un rôle pour celle-ci. Un seul papier suffit aussi."
+    }
+  },
+  {
+    "id": "th:kooperation-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Danke fürs Mitmachen",
+    "text": "Beide sagen einander einen Satz, der mit „Geholfen hat mir heute, dass du …“ beginnt (zum Beispiel: eine Idee genannt, abgewartet, nachgefragt). Die Fachkraft beginnt und bleibt bei einer konkreten Beobachtung statt bei einem Urteil. Pass ist erlaubt.",
+    "sagen": [
+      "Zum Schluss ein Dank zum Thema Zusammenarbeit: Was hat der andere heute beigetragen?",
+      "Geholfen hat mir heute, dass du …",
+      "Und bei dir? Oder Pass, dann sage ich noch einen."
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen nichts ein, sagt er oder sie nur „Danke fürs Mitmachen“. Die Fachkraft nennt dann noch eine zweite konkrete Beobachtung.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Merci d’avoir participé",
+      "text": "Chacun dit à l’autre une phrase qui commence par « Ce qui m’a aidé aujourd’hui, c’est que tu … » (par exemple : tu as proposé une idée, tu as attendu, tu as posé une question). L’adulte commence et s’en tient à une observation concrète plutôt qu’à un jugement. « Passe » est permis.",
+      "sagen": [
+        "Pour finir, un merci sur le thème de la coopération : qu’est-ce que l’autre a apporté aujourd’hui ?",
+        "Ce qui m’a aidé aujourd’hui, c’est que tu …",
+        "Et pour toi ? Ou « Passe », alors j’en dis une autre."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, il ou elle dit seulement « Merci d’avoir participé ». L’adulte ajoute alors une deuxième observation concrète."
+    }
+  },
+  {
+    "id": "th:konflikte-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Was ich von hier sehe",
+    "text": "Die Fachkraft und der oder die Jugendliche sitzen sich gegenüber, zwischen ihnen steht ein Gegenstand mit zwei verschiedenen Seiten (ein Becher mit Muster oder ein aufgeschlagenes Buch). Jeder beschreibt in einem Satz, was er oder sie von seinem Platz aus sieht. Danach tauschen sie die Plätze und prüfen, ob die Beschreibung des anderen gestimmt hat.",
+    "sagen": [
+      "Heute geht es um Konflikte. Als Start: zwei Plätze, zwei Blickwinkel auf denselben Gegenstand.",
+      "Was siehst du von deinem Platz aus? Ich sage dir meine Sicht.",
+      "Beides stimmt – obwohl wir etwas anderes sehen."
+    ],
+    "wennEsKippt": "Sitzen beide nebeneinander, steht der Gegenstand schräg zwischen ihnen, und die Beschreibungen unterscheiden sich trotzdem. Mag der oder die Jugendliche den Platz nicht tauschen, reicht es, den Gegenstand zu drehen.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "sinne",
+      "gespraech"
+    ],
+    "material": [
+      "becher",
+      "buecher"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Ce que je vois d’ici",
+      "text": "L’adulte et le ou la jeune sont assis face à face, entre eux se trouve un objet qui a deux côtés différents (un gobelet à motif ou un livre ouvert). Chacun décrit en une phrase ce qu’il ou elle voit de sa place. Ensuite, ils échangent leurs places et vérifient si la description de l’autre était juste.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse aux conflits. Pour commencer : deux places, deux points de vue sur le même objet.",
+        "Que vois-tu de ta place ? Je te dis ce que je vois de la mienne.",
+        "Les deux descriptions sont justes – même si nous voyons autre chose."
+      ],
+      "wennEsKippt": "S’ils sont assis côte à côte, l’objet se place en biais entre eux et les descriptions diffèrent quand même. Si le ou la jeune ne veut pas changer de place, il suffit de tourner l’objet."
+    }
+  },
+  {
+    "id": "th:konflikte-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Aneinander vorbeikommen",
+    "text": "Mit Klebeband wird ein Gang von etwa eineinhalb Metern Breite und fünf Metern Länge markiert. Beide starten an den entgegengesetzten Enden und gehen aufeinander zu; sie probieren drei Arten aus, aneinander vorbeizukommen: beide gehen einfach weiter, einer wartet ab, oder eine kurze Absprache mit Blick oder Wort („du zuerst“). Danach sagt jeder, welche Art sich am angenehmsten angefühlt hat; beide halten dabei immer Abstand.",
+    "sagen": [
+      "Heute geht es um Konflikte: Zwei Leute wollen gleichzeitig durch dieselbe Stelle. Wie kommen wir aneinander vorbei?",
+      "Erst gehen wir einfach weiter, dann wartet einer, dann sprechen wir kurz ab.",
+      "Welche Art fühlte sich am besten an?"
+    ],
+    "wennEsKippt": "Im Sitzen bewegen beide je einen Stift auf einem schmalen Papierstreifen aufeinander zu und probieren die drei Arten aus. Mag der oder die Jugendliche keine Absprache sagen, reicht ein Blick oder eine Handbewegung.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "gespraech"
+    ],
+    "material": [
+      "klebeband",
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Se croiser dans un couloir étroit",
+      "text": "Avec du ruban adhésif, on marque un couloir d’environ un mètre cinquante de large et cinq mètres de long. Tous deux partent des extrémités opposées et marchent l’un vers l’autre ; ils essaient trois façons de se croiser : on continue simplement, l’un attend, ou une courte entente par le regard ou par un mot (« toi d’abord »). Ensuite, chacun dit quelle façon était la plus agréable ; tous deux gardent toujours leurs distances.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse aux conflits : deux personnes veulent passer au même endroit en même temps. Comment se croiser ?",
+        "D’abord, on continue simplement, puis l’un attend, puis on s’entend brièvement.",
+        "Quelle façon était la plus agréable ?"
+      ],
+      "wennEsKippt": "Assis : chacun déplace un stylo sur une bande de papier étroite, l’un vers l’autre, et on essaie les trois façons. Si le ou la jeune ne veut pas parler, un regard ou un geste de la main suffit."
+    }
+  },
+  {
+    "id": "th:konflikte-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Du-Satz, Ich-Satz",
+    "text": "Der oder die Jugendliche schreibt auf einen Zettel einen Satz, wie er in einem Streit im Chat, in der Pause oder im Training fallen könnte („Du hörst nie zu!“); er darf erfunden sein. Auf einen zweiten Zettel kommt dasselbe als Ich-Satz („Mich stört, wenn über mich hinweg entschieden wird“). Die Fachkraft macht ein eigenes Beispiel, dann lesen beide ihre Sätze leise vor und vergleichen, was beim Hören anders klingt.",
+    "sagen": [
+      "Heute geht es um Konflikte. Oft entscheidet ein einziger Satz, ob ein Streit größer oder kleiner wird.",
+      "Schreib einen Du-Satz, wie er im Streit fallen könnte. Er darf erfunden sein.",
+      "Jetzt derselbe Inhalt als Ich-Satz. Was klingt anders?"
+    ],
+    "wennEsKippt": "Fällt kein Satz ein, gibt die Fachkraft einen vor („Das war ja wieder typisch von dir“), und der oder die Jugendliche formuliert ihn um. Auch gemeinsames Umformulieren ist erlaubt.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "schreiben",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Phrase en « tu », phrase en « je »",
+      "text": "Le ou la jeune écrit sur un papier une phrase telle qu’elle pourrait être dite lors d’une dispute dans le chat, à la récréation ou à l’entraînement (« Tu n’écoutes jamais ! ») ; elle peut être inventée. Sur un deuxième papier, il ou elle écrit la même chose en phrase avec « je » (« Ça me gêne quand on décide sans moi »). L’adulte fait aussi un exemple, puis les deux lisent leurs phrases à voix basse et comparent ce qui sonne différemment à l’écoute.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse aux conflits. Souvent, une seule phrase décide si une dispute grandit ou diminue.",
+        "Écris une phrase en « tu » comme on pourrait en dire dans une dispute. Elle peut être inventée.",
+        "Maintenant, la même chose avec « je ». Qu’est-ce qui sonne différemment ?"
+      ],
+      "wennEsKippt": "Si aucune phrase ne vient, l’adulte en donne une (« C’est bien typique de toi ») et le ou la jeune la reformule. On peut aussi reformuler ensemble."
+    }
+  },
+  {
+    "id": "th:konflikte-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Satz zum Entschärfen",
+    "text": "Beide sagen oder schreiben einen kurzen Satz, mit dem man einen Streit entschärfen könnte (zum Beispiel: „Lass uns kurz Pause machen und dann weiterreden.“). Der Zettel darf mitgenommen werden oder bleibt bei der Fachkraft. Die Fachkraft nennt ihren Satz zuerst.",
+    "sagen": [
+      "Zum Schluss ein Satz zum Thema Konflikte: Welcher Satz würde einen Streit ruhiger machen?",
+      "Mein Satz wäre: …",
+      "Und deiner? Du darfst ihn aufschreiben und mitnehmen."
+    ],
+    "wennEsKippt": "Fällt kein Satz ein, wählt der oder die Jugendliche einen von drei Vorschlägen der Fachkraft und ändert ihn nach Wunsch. Auch Pass ist in Ordnung.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "schreiben",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Une phrase pour apaiser",
+      "text": "Chacun dit ou écrit une courte phrase qui pourrait apaiser une dispute (par exemple : « Faisons une petite pause et reparlons-en après. »). Le papier peut être emporté ou rester chez l’adulte. L’adulte donne sa phrase en premier.",
+      "sagen": [
+        "Pour finir, une phrase sur le thème des conflits : quelle phrase rendrait une dispute plus calme ?",
+        "Ma phrase serait : …",
+        "Et la tienne ? Tu peux l’écrire et l’emporter."
+      ],
+      "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit l’une des trois propositions de l’adulte et la change comme il ou elle veut. « Passe » est aussi très bien."
+    }
+  },
+  {
+    "id": "th:kommunikation-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Ein Satz, zwei Arten",
+    "text": "Die Fachkraft stellt dieselbe Frage zweimal: „Wie war der Weg hierher?“ Zuerst antworten beide in genau drei Wörtern, danach in einem ganzen Satz mit einer Einzelheit. Dann sagt jeder, bei welcher Antwort er oder sie mehr vom anderen erfahren hat.",
+    "sagen": [
+      "Heute geht es ums Reden und Zuhören – dazu gleich ein kleiner Start.",
+      "Erst in drei Wörtern, dann in einem ganzen Satz: Wie war der Weg hierher?",
+      "Welche Antwort hat dir mehr verraten?"
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht über den Weg sprechen, nimmt die Fachkraft eine andere Frage (das Wetter heute oder die Lieblingsjahreszeit). Auch ein Nicken statt einer Antwort ist in Ordnung.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Une phrase, deux façons",
+      "text": "L’adulte pose deux fois la même question : « Comment s’est passé le trajet jusqu’ici ? » D’abord, tous deux répondent en exactement trois mots, puis par une phrase complète avec un détail. Ensuite, chacun dit avec quelle réponse il ou elle en a appris le plus sur l’autre.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à parler et à écouter – pour commencer, un petit jeu.",
+        "D’abord en trois mots, puis en une phrase complète : comment s’est passé le trajet ?",
+        "Quelle réponse t’en a dit le plus ?"
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas parler du trajet, l’adulte choisit une autre question (la météo d’aujourd’hui ou la saison préférée). Un signe de tête à la place d’une réponse est aussi accepté."
+    }
+  },
+  {
+    "id": "th:kommunikation-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Geh-Gespräch im Wechsel",
+    "text": "Beide gehen langsam durch den Raum und sprechen über ein leichtes Thema, zum Beispiel ein Hobby, ein Spiel oder eine Sportart. Wer spricht, geht weiter; wer zuhört, bleibt stehen und nickt, und nach jedem Satz wechseln die Rollen. Nach fünf Wechseln sagt jeder, woran er oder sie gemerkt hat, dass der andere zuhört.",
+    "sagen": [
+      "Heute geht es ums Reden und Zuhören. Wir üben das jetzt mit dem Körper: Wer redet, geht – wer zuhört, bleibt stehen.",
+      "Ein Satz, dann wechseln wir. Thema: ein Hobby, ein Spiel oder eine Sportart.",
+      "Woran hast du gemerkt, dass ich zuhöre?"
+    ],
+    "wennEsKippt": "Im Sitzen spricht, wer den Stift in der Hand hält, und gibt ihn nach jedem Satz weiter; wer zuhört, legt die Hände still auf den Tisch. Fällt ein Thema schwer, wählt die Fachkraft eines.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "gespraech"
+    ],
+    "material": [
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Marcher et parler à tour de rôle",
+      "text": "Tous deux marchent lentement dans la pièce et parlent d’un sujet léger, par exemple un loisir, un jeu ou un sport. Celui ou celle qui parle continue à marcher ; celui ou celle qui écoute reste immobile et hoche la tête, et après chaque phrase on échange les rôles. Après cinq échanges, chacun dit à quoi il ou elle a remarqué que l’autre écoutait.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à parler et à écouter. On l’exerce avec le corps : qui parle marche, qui écoute reste immobile.",
+        "Une phrase, puis on change. Sujet : un loisir, un jeu ou un sport.",
+        "À quoi as-tu remarqué que j’écoutais ?"
+      ],
+      "wennEsKippt": "Assis : celui ou celle qui tient le stylo parle et le passe après chaque phrase ; qui écoute pose les mains tranquillement sur la table. Si un sujet est difficile, l’adulte en choisit un."
+    }
+  },
+  {
+    "id": "th:kommunikation-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Was machte das Gespräch leichter?",
+    "text": "Die Fachkraft legt drei Zettel hin: Blickkontakt, Fragen stellen, ausreden lassen. Der oder die Jugendliche wählt den Zettel, der heute (oder in einem Gespräch dieser Woche) geholfen hat, und erzählt kurz, woran er oder sie es gemerkt hat. Die Fachkraft wählt auch einen Zettel und begründet ihn.",
+    "sagen": [
+      "Heute geht es ums Reden und Zuhören. Jetzt ein Blick darauf, was Gespräche leichter macht.",
+      "Welcher Zettel hat heute geholfen?",
+      "Woran hast du es gemerkt? Ein kurzes Beispiel reicht."
+    ],
+    "wennEsKippt": "Passt keiner der Zettel, schreibt der oder die Jugendliche einen eigenen dazu. Fällt nichts ein, wählt er oder sie einfach den Zettel, den er oder sie in Gesprächen am meisten schätzt.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "karten",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Qu’est-ce qui a facilité l’échange ?",
+      "text": "L’adulte pose trois papiers : contact visuel, poser des questions, laisser finir. Le ou la jeune choisit celui qui a aidé aujourd’hui (ou lors d’une conversation cette semaine) et raconte brièvement à quoi il ou elle l’a remarqué. L’adulte choisit aussi un papier et explique son choix.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à parler et à écouter. Regardons maintenant ce qui rend un échange plus facile.",
+        "Quel papier a aidé aujourd’hui ?",
+        "À quoi l’as-tu remarqué ? Un petit exemple suffit."
+      ],
+      "wennEsKippt": "Si aucun papier ne convient, le ou la jeune en écrit un lui-même. S’il ou elle ne trouve rien, il ou elle choisit simplement le papier qu’il ou elle apprécie le plus dans les conversations."
+    }
+  },
+  {
+    "id": "th:kommunikation-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Mein Satz für morgen",
+    "text": "Beide schreiben einen Satzanfang auf einen Zettel, mit dem sie morgen in ein Gespräch einsteigen könnten (zum Beispiel: „Wie war dein Wochenende?“ oder „Darf ich dich was fragen?“). Die Fachkraft liest ihren Satzanfang vor; der oder die Jugendliche darf vorlesen oder für sich behalten. Der Zettel kann mitgenommen werden.",
+    "sagen": [
+      "Zum Schluss ein Satz zum Thema Reden und Zuhören: Wie könnte ich morgen ein Gespräch beginnen?",
+      "Mein Satzanfang ist: …",
+      "Du entscheidest, ob du deinen vorliest."
+    ],
+    "wennEsKippt": "Fällt kein Satz ein, wählt der oder die Jugendliche aus zwei Satzanfängen der Fachkraft und ändert ihn so, dass er passt. Pass ist in Ordnung.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "schreiben"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Ma phrase pour demain",
+      "text": "Chacun écrit sur un papier un début de phrase avec lequel il ou elle pourrait entamer une conversation demain (par exemple : « Comment s’est passé ton week-end ? » ou « Je peux te poser une question ? »). L’adulte lit son début de phrase ; le ou la jeune peut le lire ou le garder pour lui ou elle. Le papier peut être emporté.",
+      "sagen": [
+        "Pour finir, une phrase sur le thème de parler et d’écouter : comment pourrais-je commencer une conversation demain ?",
+        "Mon début de phrase est : …",
+        "Tu décides si tu lis le tien à voix haute."
+      ],
+      "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit entre deux débuts proposés par l’adulte et le change pour qu’il lui convienne. « Passe » est aussi très bien."
+    }
+  },
+  {
+    "id": "th:selbstbild-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Eine kleine Stärke nennen",
+    "text": "Beide nennen etwas Kleines, das sie gut können oder gern machen, in der Schule, im Sport, im Chat oder in der Freizeit (zum Beispiel: Wege finden, Vokabeln erklären, Musik zusammenstellen). Die Fachkraft beginnt und bleibt dabei ehrlich statt bescheiden. Pass ist erlaubt, dann nennt die Fachkraft noch eine zweite.",
+    "sagen": [
+      "Heute geht es um das Bild von sich selbst. Als Start: eine kleine Stärke, ausgesprochen.",
+      "Ich fange an: Ich kann ganz gut …",
+      "Und bei dir? Es darf klein sein."
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen nichts ein, nennt die Fachkraft zwei Beispiele für kleine Stärken (zuhören, Wege finden), und er oder sie wählt eines oder sagt Nein. Pass ist in Ordnung.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Nommer une petite force",
+      "text": "Chacun nomme quelque chose de petit que l’on sait bien faire ou que l’on aime faire, à l’école, dans le sport, dans le chat ou pendant les loisirs (par exemple : trouver son chemin, expliquer du vocabulaire, composer une playlist). L’adulte commence et reste honnête plutôt que modeste. « Passe » est permis, alors l’adulte en nomme une deuxième.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à l’image de soi. Pour commencer : nommer une petite force.",
+        "Je commence : je sais assez bien …",
+        "Et toi ? Cela peut être petit."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte propose deux exemples de petites forces (écouter, trouver son chemin) et il ou elle en choisit un ou dit non. « Passe » est aussi très bien."
+    }
+  },
+  {
+    "id": "th:selbstbild-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Drei Arten zu gehen",
+    "text": "Beide gehen mehrmals durch den Raum, jedes Mal anders: erst mit hängenden Schultern und Blick nach unten, dann ganz neutral, dann aufrecht mit ruhigem Blick. Nach jeder Runde sagt jeder in einem Satz, was sich beim Gehen verändert hat (Tempo, Gefühl, Blick). Zum Schluss sucht jeder den Gang, der sich nach „ich selbst“ anfühlt.",
+    "sagen": [
+      "Heute geht es um das Bild von sich selbst. Haltung und Gefühl hängen zusammen – das probieren wir jetzt aus.",
+      "Erst hängende Schultern, dann neutral, dann aufrecht. Was ändert sich?",
+      "Welcher Gang fühlt sich nach dir an?"
+    ],
+    "wennEsKippt": "Im Sitzen probieren beide drei Sitzhaltungen aus (eingesunken, neutral, aufrecht) und beantworten dieselben Fragen. Mag der oder die Jugendliche nicht zeigen, schaut er oder sie zu, und die Fachkraft zeigt alle Varianten.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Trois façons de marcher",
+      "text": "Tous deux traversent plusieurs fois la pièce, chaque fois autrement : d’abord les épaules tombantes et le regard vers le bas, puis de façon neutre, puis le dos droit et le regard calme. Après chaque tour, chacun dit en une phrase ce qui a changé en marchant (rythme, ressenti, regard). À la fin, chacun cherche la démarche qui lui ressemble.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à l’image de soi. La posture et ce qu’on ressent sont liés – on l’essaie maintenant.",
+        "D’abord les épaules tombantes, puis neutre, puis le dos droit. Qu’est-ce qui change ?",
+        "Quelle démarche te ressemble ?"
+      ],
+      "wennEsKippt": "Assis : tous deux essaient trois postures (affaissé, neutre, droit) et répondent aux mêmes questions. Si le ou la jeune ne veut pas montrer, il ou elle regarde, et l’adulte montre toutes les variantes."
+    }
+  },
+  {
+    "id": "th:selbstbild-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Ich bin jemand, der …",
+    "text": "Der oder die Jugendliche ergänzt auf einem Zettel dreimal den Satzanfang „Ich bin jemand, der …“ mit etwas aus Schule, Freundeskreis oder Freizeit. Er oder sie sucht einen Satz aus, den er oder sie vorlesen möchte; die anderen bleiben privat. Die Fachkraft schreibt ebenfalls drei Sätze und liest auch nur einen vor.",
+    "sagen": [
+      "Heute geht es um das Bild von sich selbst. Jetzt ein Blick darauf, wie ich mich selbst beschreibe.",
+      "Ergänze dreimal: „Ich bin jemand, der …“ – Schule, Freunde, Freizeit.",
+      "Lies nur vor, was du vorlesen willst. Pass ist erlaubt."
+    ],
+    "wennEsKippt": "Fällt das Ergänzen schwer, gibt die Fachkraft Beispiele wie „… der gern Neues ausprobiert“ oder „… der erst zuhört“, und der oder die Jugendliche wählt oder ändert. Ein einziger Satz genügt.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 1,
+    "reiz": 0,
+    "format": [
+      "schreiben",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 2,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Je suis quelqu’un qui …",
+      "text": "Le ou la jeune complète trois fois sur un papier le début de phrase « Je suis quelqu’un qui … » avec quelque chose lié à l’école, aux amis ou aux loisirs. Il ou elle choisit une phrase qu’il ou elle veut lire à voix haute ; les autres restent privées. L’adulte écrit aussi trois phrases et n’en lit qu’une.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à l’image de soi. Regardons maintenant comment je me décris moi-même.",
+        "Complète trois fois : « Je suis quelqu’un qui … » – école, amis, loisirs.",
+        "Lis seulement ce que tu veux lire. « Passe » est permis."
+      ],
+      "wennEsKippt": "Si compléter est difficile, l’adulte donne des exemples comme « … qui aime essayer des choses nouvelles » ou « … qui écoute d’abord », et le ou la jeune choisit ou modifie. Une seule phrase suffit."
+    }
+  },
+  {
+    "id": "th:selbstbild-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Heute an mir bemerkt",
+    "text": "Beide beenden den Satz „Heute habe ich an mir bemerkt, dass ich …“ (zum Beispiel: nachfragen kann, ruhig bleiben kann, Humor habe). Die Fachkraft beginnt. Pass ist erlaubt, dann nennt die Fachkraft einen zweiten Satz.",
+    "sagen": [
+      "Zum Schluss ein Satz über das Bild von sich selbst: etwas, das ich heute an mir bemerkt habe.",
+      "Heute habe ich an mir bemerkt, dass ich …",
+      "Und bei dir? Es darf klein sein – oder Pass."
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen nichts ein, wählt er oder sie aus drei Vorschlägen der Fachkraft („… dass ich dranbleiben kann“, „… dass ich nachfrage“, „… dass ich Humor habe“). Auch ein Nicken zum Abschied ist in Ordnung.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Remarqué sur moi aujourd’hui",
+      "text": "Chacun termine la phrase « Aujourd’hui, j’ai remarqué que je … » (par exemple : sais poser des questions, sais rester calme, ai de l’humour). L’adulte commence. « Passe » est permis, alors l’adulte dit une deuxième phrase.",
+      "sagen": [
+        "Pour finir, une phrase sur l’image de soi : quelque chose que j’ai remarqué sur moi aujourd’hui.",
+        "Aujourd’hui, j’ai remarqué que je …",
+        "Et toi ? Cela peut être petit – ou « Passe »."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, il ou elle choisit parmi trois propositions de l’adulte (« … que je sais tenir bon », « … que je pose des questions », « … que j’ai de l’humour »). Un signe de tête en partant est aussi très bien."
+    }
+  },
+  {
+    "id": "th:lernstrategien-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Fünf Wörter merken",
+    "text": "Die Fachkraft liest fünf Wörter vor (zum Beispiel Bus, Mütze, Gitarre, Regen, Pizza). Beide haben 20 Sekunden, um sie sich mit einem eigenen Trick zu merken, etwa mit einer kurzen Geschichte oder Bildern im Kopf, und sagen sie dann aus dem Gedächtnis auf. Danach erzählt jeder kurz, welchen Trick er oder sie genutzt hat; die Zahl der richtigen Wörter ist egal.",
+    "sagen": [
+      "Heute geht es um Lernstrategien: Wie merke ich mir etwas am besten? Dazu ein kurzer Test.",
+      "Fünf Wörter, 20 Sekunden – such dir einen eigenen Trick.",
+      "Welchen Trick hast du genutzt? Die Zahl der Treffer ist nicht wichtig."
+    ],
+    "wennEsKippt": "Fällt das Merken schwer, reichen drei Wörter, oder die Fachkraft liest die Wörter ein zweites Mal vor. Mag der oder die Jugendliche nicht aufsagen, erzählt er oder sie nur den Trick.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Retenir cinq mots",
+      "text": "L’adulte lit cinq mots (par exemple bus, bonnet, guitare, pluie, pizza). Chacun a 20 secondes pour les retenir avec une astuce à soi, par exemple une courte histoire ou des images dans la tête, puis les redit de mémoire. Ensuite, chacun raconte brièvement quelle astuce il ou elle a utilisée ; le nombre de mots justes n’a pas d’importance.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse aux stratégies d’apprentissage : comment retenir au mieux ? Pour commencer, un court test.",
+        "Cinq mots, 20 secondes – trouve ta propre astuce.",
+        "Quelle astuce as-tu utilisée ? Le nombre de bons mots n’a pas d’importance."
+      ],
+      "wennEsKippt": "Si retenir est difficile, trois mots suffisent, ou l’adulte lit les mots une deuxième fois. Si le ou la jeune ne veut pas réciter, il ou elle raconte seulement l’astuce."
+    }
+  },
+  {
+    "id": "th:lernstrategien-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Merkweg durch den Raum",
+    "text": "Die Fachkraft nennt fünf Begriffe, die der oder die Jugendliche aus einem Schulfach wählt (oder fünf beliebige). Gemeinsam „legen“ beide jeden Begriff an einen festen Ort im Raum (Tür, Fenster, Stuhl, Tisch, Lampe) und verbinden ihn mit einem kurzen Bild. Dann gehen beide die Route ab und sagen an jeder Station den Begriff, erst vorwärts, dann rückwärts.",
+    "sagen": [
+      "Heute geht es um Lernstrategien. Eine davon: Dinge an Orten merken. Das probieren wir jetzt im Gehen.",
+      "Dieser Begriff kommt an die Tür. Welches Bild verbindet ihn damit?",
+      "Jetzt gehen wir die Route ab und sagen alle fünf auf."
+    ],
+    "wennEsKippt": "Im Sitzen dienen fünf Dinge auf dem Tisch (Stift, Becher, Heft …) als Stationen, und ein Finger wandert von Ding zu Ding. Sind fünf Begriffe zu viel, genügen drei.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Parcours de mémoire",
+      "text": "L’adulte nomme cinq notions, que le ou la jeune choisit dans une matière scolaire (ou cinq mots au hasard). Ensemble, ils « posent » chaque notion à un endroit fixe de la pièce (porte, fenêtre, chaise, table, lampe) et la relient à une courte image. Puis ils parcourent le chemin et disent la notion à chaque station, d’abord à l’endroit, puis à l’envers.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse aux stratégies d’apprentissage. L’une d’elles : retenir en associant à des lieux. On l’essaie en marchant.",
+        "Cette notion va à la porte. Quelle image peut la relier à cet endroit ?",
+        "Maintenant, on parcourt le chemin et on dit les cinq notions."
+      ],
+      "wennEsKippt": "Assis : cinq objets sur la table (stylo, gobelet, cahier …) servent de stations, et un doigt passe d’un objet à l’autre. Si cinq notions, c’est trop, trois suffisent."
+    }
+  },
+  {
+    "id": "th:lernstrategien-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Meine Lernwege",
+    "text": "Die Fachkraft legt Zettel mit fünf Lernmethoden hin: aufschreiben, mit eigenen Worten erklären, Skizze oder Mindmap, sich abfragen lassen, mit Farben markieren. Der oder die Jugendliche sortiert sie in zwei Stapel, „nutze ich schon“ und „würde ich ausprobieren“, und erzählt zu einer Methode, wann sie zuletzt geholfen hat. Die Fachkraft sortiert ebenfalls und nennt eine Methode, die sie selbst zum Lernen nutzt.",
+    "sagen": [
+      "Heute geht es um Lernstrategien. Jetzt schauen wir, welche Methoden du schon nutzt und welche dich reizen würden.",
+      "In welchen Stapel kommt dieser Zettel?",
+      "Wann hat dir diese Methode zuletzt geholfen?"
+    ],
+    "wennEsKippt": "Ist Sortieren zu viel, wählt der oder die Jugendliche nur einen Zettel, der am ehesten passt. Fällt kein Beispiel ein, erzählt die Fachkraft eines von sich.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "karten",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Mes façons d’apprendre",
+      "text": "L’adulte pose des papiers avec cinq méthodes d’apprentissage : écrire, expliquer avec ses propres mots, faire un schéma ou une carte mentale, se faire interroger, surligner en couleurs. Le ou la jeune les trie en deux piles, « je le fais déjà » et « je voudrais essayer », et raconte pour une méthode quand elle l’a aidé la dernière fois. L’adulte trie aussi et nomme une méthode qu’il ou elle utilise pour apprendre.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse aux stratégies d’apprentissage. Voyons quelles méthodes tu utilises déjà et lesquelles te tenteraient.",
+        "Dans quelle pile va ce papier ?",
+        "Quand cette méthode t’a-t-elle aidé la dernière fois ?"
+      ],
+      "wennEsKippt": "Si trier est trop, le ou la jeune choisit seulement un papier, celui qui convient le mieux. S’il ou elle n’a pas d’exemple, l’adulte en raconte un à lui."
+    }
+  },
+  {
+    "id": "th:lernstrategien-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Eine Methode ausprobieren",
+    "text": "Der oder die Jugendliche wählt eine Lernmethode, die er oder sie diese Woche einmal ausprobieren möchte (zum Beispiel mit eigenen Worten erklären, Skizze, sich selbst abfragen), und schreibt ein Stichwort auf einen Zettel. Die Fachkraft nennt ihre eigene Methode für ihre Arbeit. Der Zettel darf mitgenommen werden.",
+    "sagen": [
+      "Zum Schluss etwas zu Lernstrategien: Welche Methode probierst du diese Woche einmal aus?",
+      "Ich probiere diese Woche … aus.",
+      "Und du? Ein Stichwort auf dem Zettel genügt."
+    ],
+    "wennEsKippt": "Fällt keine Methode ein, wählt der oder die Jugendliche eine aus zwei Vorschlägen der Fachkraft. Mag er oder sie nichts aufschreiben, wird die Methode nur genannt.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "schreiben",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Essayer une méthode",
+      "text": "Le ou la jeune choisit une méthode d’apprentissage qu’il ou elle voudrait essayer une fois cette semaine (par exemple expliquer avec ses propres mots, faire un schéma, s’auto-interroger) et note un mot-clé sur un papier. L’adulte nomme sa propre méthode pour son travail. Le papier peut être emporté.",
+      "sagen": [
+        "Pour finir, quelque chose sur les stratégies d’apprentissage : quelle méthode vas-tu essayer cette semaine ?",
+        "Cette semaine, je vais essayer …",
+        "Et toi ? Un mot-clé sur le papier suffit."
+      ],
+      "wennEsKippt": "Si aucune méthode ne vient, le ou la jeune en choisit une parmi deux propositions de l’adulte. S’il ou elle ne veut rien écrire, on nomme seulement la méthode."
+    }
+  },
+  {
+    "id": "th:alltag-ankommen-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Was steht diese Woche an?",
+    "text": "Beide nennen einen Termin oder eine Aufgabe in dieser Woche (Test, Training, Abgabe, Treffen mit Freunden) und sagen, woran sie dafür denken müssen. Die Fachkraft beginnt mit ihrem Beispiel. Ein Stichwort reicht, Pass ist erlaubt.",
+    "sagen": [
+      "Heute geht es um den Alltag und darum, ihn selbst im Griff zu haben. Als Start ein Blick auf diese Woche.",
+      "Bei mir steht an: … Daran muss ich denken: …",
+      "Und bei dir? Ein Stichwort reicht."
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen nichts ein, nennt die Fachkraft zwei Beispiele (Test, Training), und er oder sie wählt eines, das ungefähr passt. Auch ein Nein ist in Ordnung.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Qu’est-ce qui t’attend cette semaine ?",
+      "text": "Chacun nomme un rendez-vous ou une tâche de cette semaine (contrôle, entraînement, travail à rendre, rencontre entre amis) et dit à quoi il faut penser pour cela. L’adulte commence avec son exemple. Un mot-clé suffit, « Passe » est permis.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse au quotidien et à la façon de s’y organiser seul. Pour commencer, un regard sur cette semaine.",
+        "Pour moi, il y a … Je dois penser à …",
+        "Et pour toi ? Un mot-clé suffit."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte donne deux exemples (contrôle, entraînement) et il ou elle choisit celui qui convient à peu près. Un non est aussi très bien."
+    }
+  },
+  {
+    "id": "th:alltag-bewegung-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Rucksack-Parcours für morgen",
+    "text": "Die Fachkraft legt Heft, Buch, Lineal, Stifte und Uhr an verschiedenen Stellen im Raum aus und stellt einen Korb als „Rucksack“ hin. Der oder die Jugendliche bekommt einen erfundenen Stundenplan für morgen (zum Beispiel Mathe, Kunst, Deutsch) und holt in einem Gang genau die Dinge, die man dafür braucht. Danach macht die Fachkraft dasselbe mit einem anderen Plan, und beide prüfen kurz, ob etwas fehlt.",
+    "sagen": [
+      "Heute geht es um Alltag und Selbstständigkeit: vorausdenken und gut vorbereitet losgehen. Das üben wir mit einem Rucksack-Parcours.",
+      "Dein Plan für morgen: Mathe, Kunst, Deutsch. Was gehört in den Rucksack?",
+      "Jetzt ich mit einem anderen Plan – prüf, ob ich etwas vergessen habe."
+    ],
+    "wennEsKippt": "Im Sitzen liegen die Dinge in Reichweite auf dem Tisch und werden in den Korb sortiert. Ist der Plan zu lang, genügen zwei Fächer.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [
+      "heft",
+      "buecher",
+      "lineal",
+      "stifte",
+      "uhr",
+      "korb"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Parcours du cartable pour demain",
+      "text": "L’adulte dépose un cahier, un livre, une règle, des stylos et une montre à différents endroits de la pièce et place un panier comme « sac à dos ». Le ou la jeune reçoit un emploi du temps inventé pour demain (par exemple maths, arts plastiques, français) et rapporte en un seul trajet exactement ce dont on a besoin. Ensuite, l’adulte fait de même avec un autre emploi du temps, et ils vérifient brièvement s’il manque quelque chose.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse au quotidien et à l’autonomie : prévoir et partir bien préparé. On l’exerce avec un parcours du cartable.",
+        "Ton emploi du temps de demain : maths, arts plastiques, français. Qu’est-ce qui va dans le sac ?",
+        "Maintenant moi, avec un autre emploi du temps – vérifie si j’ai oublié quelque chose."
+      ],
+      "wennEsKippt": "Assis : les objets sont à portée de main sur la table et on les range dans le panier. Si l’emploi du temps est trop long, deux matières suffisent."
+    }
+  },
+  {
+    "id": "th:alltag-reflexion-jugend",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Das mache ich schon allein",
+    "text": "Die Fachkraft schreibt fünf Alltagsaufgaben auf Zettel: den Weg finden, die Tasche packen, Termine merken, Hausaufgaben einteilen, bei Unklarheit nachfragen. Der oder die Jugendliche legt jeden Zettel in einen von drei Bereichen: „klappt allein“, „klappt mit Hilfe“, „möchte ich lernen“. Zu einem Zettel erzählt er oder sie, wie es klappt; die Fachkraft sortiert ihre eigenen Zettel ebenfalls.",
+    "sagen": [
+      "Heute geht es um Alltag und Selbstständigkeit. Jetzt sortieren wir, was schon allein klappt.",
+      "Wohin kommt dieser Zettel? Jede Antwort ist okay.",
+      "Erzähl zu einem Zettel, wie es bei dir läuft. Pass ist erlaubt."
+    ],
+    "wennEsKippt": "Ist Sortieren zu viel, wählt der oder die Jugendliche nur den Zettel, bei dem es schon gut läuft, und sagt dazu einen Satz. Passt eine Aufgabe nicht, wird sie weggelassen.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "karten",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Ce qui marche déjà sans aide",
+      "text": "L’adulte écrit cinq tâches du quotidien sur des papiers : trouver son chemin, préparer son sac, retenir les rendez-vous, répartir les devoirs, demander quand quelque chose n’est pas clair. Le ou la jeune place chaque papier dans l’une de trois zones : « marche seul », « marche avec aide », « je voudrais apprendre ». Pour un papier, il ou elle raconte comment cela se passe ; l’adulte trie aussi ses propres papiers.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse au quotidien et à l’autonomie. Trions maintenant ce qui marche déjà sans aide.",
+        "Où va ce papier ? Toutes les réponses sont bonnes.",
+        "Raconte comment cela se passe pour l’un d’eux. Tu peux dire « Passe »."
+      ],
+      "wennEsKippt": "Si trier est trop, le ou la jeune choisit seulement le papier pour lequel cela se passe déjà bien et dit une phrase. Si une tâche ne convient pas, on la laisse de côté."
+    }
+  },
+  {
+    "id": "th:alltag-abschluss-jugend",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Der nächste Handgriff",
+    "text": "Beide sagen in einem Satz, was sie als Nächstes nach dieser Stunde tun, und machen gleich den ersten Handgriff dafür (Jacke holen, Bus-Zeit prüfen, Tasche zumachen). Die Fachkraft beginnt und macht ihren Handgriff vor. Dann Tschüss.",
+    "sagen": [
+      "Zum Schluss etwas für den Alltag: der Übergang von hier zu dem, was danach kommt. Was ist dein nächster Schritt?",
+      "Ich mache gleich … und fange damit jetzt an.",
+      "Und du? Den ersten Handgriff machst du gleich jetzt."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nichts über danach sagen, nennt er oder sie nur den Handgriff (Jacke, Tasche) und macht ihn. Die Fachkraft macht ihren vor, ohne nachzufragen.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "bewegung"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le prochain geste",
+      "text": "Chacun dit en une phrase ce qu’il fait ensuite après cette séance et accomplit tout de suite le premier geste pour cela (prendre sa veste, vérifier l’heure du bus, fermer son sac). L’adulte commence et montre son geste. Ensuite, au revoir.",
+      "sagen": [
+        "Pour finir, quelque chose pour le quotidien : la transition d’ici vers ce qui vient après. Quel est ton prochain pas ?",
+        "Tout de suite, je … et je commence par là.",
+        "Et toi ? Le premier geste, tu le fais maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut rien dire sur la suite, il ou elle nomme seulement le geste (veste, sac) et le fait. L’adulte montre le sien, sans poser de questions."
+    }
+  }
+]

@@ -397,7 +397,8 @@ await pruefung('Vorlieben (11.5): 10 Rückmeldungen kippen ein knappes Ranking, 
   const c0 = kontext(k, p, a, leer())
   // knappes Paar mit verschiedenem Hauptformat – unter den Spielen, sonst unter Bewegung und Ruhe (welche Rolle eines hat,
   // hängt vom Katalog ab)
-  const listeVon = (rolle: Rolle) => (k.nachRolle.get(rolle) ?? []).filter((e) => !e.id.startsWith('pg:') && pruefe(e, c0, {}) === null).map((e) => bewerte(e, c0, { phase: 'ueben' })).sort((x, y) => rang(x, y, 'sim'))
+  // ohne Themen-Rahmen (th:): die kommen nur zum Thema der Stunde und tragen dafür einen festen Vorrang
+  const listeVon = (rolle: Rolle) => (k.nachRolle.get(rolle) ?? []).filter((e) => !e.id.startsWith('pg:') && !(e.typ === 'schritt' && e.nurZumThema) && pruefe(e, c0, {}) === null).map((e) => bewerte(e, c0, { phase: 'ueben' })).sort((x, y) => rang(x, y, 'sim'))
   let paar: [ReturnType<typeof listeVon>[number], ReturnType<typeof listeVon>[number]] | null = null
   let liste: ReturnType<typeof listeVon> = []
   for (const rolle of ['spiel', 'bewegung', 'regulation'] as Rolle[]) {

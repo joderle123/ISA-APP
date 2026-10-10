@@ -149,7 +149,9 @@ regel(15, 'sprache.fr ohne französischen Text', 'fehler', [
         if (!k.eintraege.has(id)) f.push(`${id}: ergänzter Schritt nicht im Katalog`)
         continue
       }
-      if (!/^(fb|r|pa|j|ki):[a-z0-9-]+$/.test(id)) f.push(`${d}: Id „${id}“`)
+      if (!/^(fb|r|pa|j|ki|th):[a-z0-9-]+$/.test(id)) f.push(`${d}: Id „${id}“`)
+      // Themen-Rahmen (th:): genau eine Kompetenz, nur zum Thema, ohne Förderziel
+      if (id.startsWith('th:') && (!(x.nurZumThema === true) || !Array.isArray(x.kompetenz) || (x.kompetenz as unknown[]).length !== 1 || x.ohneZiel !== true)) f.push(`${id}: Themen-Rahmen braucht nurZumThema, ohneZiel und genau eine Kompetenz`)
       if (!x.titel || !x.text || !Array.isArray(x.rolle) || !(x.rolle as unknown[]).length) f.push(`${id}: titel/text/rolle fehlt`)
       const a = x.alter as { von: number; bis: number } | undefined
       if (!a || a.von > a.bis || a.von < 3) f.push(`${id}: Altersband`)

@@ -73,6 +73,17 @@ export interface Kontext {
 
 const PRIO = [1, 0.8, 0.6, 0.5, 0.4]
 
+/** „kompetenz:Kommunikation“, „kompetenz:Gefühle erkennen“, „kompetenz:Ausdauer/Arbeitsverhalten“ (Anzeigenamen der Oberfläche,
+ *  auch in gespeicherten Plänen) → „kompetenz:kommunikation“ usw. Ohne das passte kein Kern zum gewählten Schwerpunkt (Titel
+ *  „Einzelstunde: undefined“, Kern zu einem anderen Feld – Rückmeldung einer Fachkraft 10.10.). */
+export function kompetenzCode(code: string): string {
+  if (!code.startsWith('kompetenz:')) return code
+  const roh = code.slice(10)
+  if (Object.keys(KOMPETENZ_NAME).includes(roh)) return code
+  const n = roh.toLowerCase().split('/')[0].trim().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/\s+/g, '-')
+  return Object.keys(KOMPETENZ_NAME).includes(n) ? `kompetenz:${n}` : code
+}
+
 export function kontext(k: Katalog, p: Profil, a: Auftrag, v: Vorlieben, verlauf?: { plaene: Plan[] }): Kontext {
   const alter = p.alterJahre
   const ausAlter = stufeAusAlter(alter)
@@ -84,12 +95,12 @@ export function kontext(k: Katalog, p: Profil, a: Auftrag, v: Vorlieben, verlauf
   const datum = (a.datum || new Date().toISOString()).slice(0, 10)
   // Ziele in Reihenfolge des Auftrags; 'kompetenz:<feld>' bei dünnen Daten (T-M5)
   const codes = a.ziele.length ? a.ziele : a.weg === 'leicht' ? [] : p.ziele.slice().sort((x, y) => x.prio - y.prio).map((z) => z.code)
-  const ziele: ZielKontext[] = codes.slice(0, 5).map((code, i) => {
+  const ziele: ZielKontext[] = codes.slice(0, 5).map(kompetenzCode).map((code, i) => {
     const pz = p.ziele.find((z) => z.code === code)
     const feld = code.startsWith('kompetenz:') ? (code.slice(10) as Kompetenz) : null
     return { code, prio: PRIO[i] ?? 0.4, quelle: pz?.quelle, seit: pz?.seit, ich: pz?.ich, feld: feld ?? (istEldib(code) ? kompetenzVonCode(code) : null) }
   })
-  for (const t of a.thema ?? []) if (t.startsWith('kompetenz:') && !ziele.some((z) => z.code === t)) ziele.push({ code: t, prio: ziele.length ? 0.6 : 1, feld: t.slice(10) as Kompetenz })
+  for (const t of (a.thema ?? []).map(kompetenzCode)) if (t.startsWith('kompetenz:') && !ziele.some((z) => z.code === t)) ziele.push({ code: t, prio: ziele.length ? 0.6 : 1, feld: t.slice(10) as Kompetenz })
   const themen = new Map<string, { w: number; art?: string; datum?: string; gewaehlt?: boolean }>()
   for (const t of p.themen) {
     const tage = tageZwischen(t.datum, datum)
@@ -218,10 +229,12 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   if (tm.size) {
     const einzeln = c.a.sozialform === 'einzeln' || !c.a.sozialform
     const eigen = e.id.startsWith('pg:')
+    // Themen-Rahmen (th:) sind fürs Einzelsetting geschrieben – „chacun“ (die Fachkraft und das Kind) ist dort keine Gruppe
+    const einzelText = eigen || e.id.startsWith('th:')
     const kinderschutz = (c.p.achtung ?? []).includes('kinderschutz')
-    if (einzeln && !eigen && (tm.has('gruppe') || tm.has('ihr'))) return 'Gruppe'
+    if (einzeln && !einzelText && (tm.has('gruppe') || tm.has('ihr'))) return 'Gruppe'
     // Spielschule-Schritte sprechen fast alle von „den Kindern“ – dort nur nachrangig (gewicht), sonst ausgeschlossen
-    if (einzeln && !eigen && tm.has('kinderPlural') && !(e.typ === 'schritt' && e.quelle.art === 'spielschule')) return 'Gruppe'
+    if (einzeln && !einzelText && tm.has('kinderPlural') && !(e.typ === 'schritt' && e.quelle.art === 'spielschule')) return 'Gruppe'
     if (tm.has('jugend') && c.alter < 12) return 'für Jugendliche'
     if (tm.has('aelter') && c.alter < 13) return 'für Ältere'
     // belastende Sätze („Ich bin dumm“, „Keiner mag mich“) nicht in Krisenlage

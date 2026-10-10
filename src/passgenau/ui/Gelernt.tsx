@@ -11,7 +11,7 @@ type Ebene = 'kind' | 'ich' | 'team'
 
 /** Systembausteine tragen im Kern einen Schlüssel; hier steht ein lesbarer Name */
 const SYSTEM_NAME: Record<string, string> = {
-  'pg:kernblatt': 'Fragen zum Kernbaustein (Blatt)',
+  'pg:kernblatt': 'Blatt zur Übung',
   'pg:stundenleiste': 'Stundenleiste (Blatt)',
   'pg:notfall': 'Hilfe-Zeile (Blatt)',
 }
