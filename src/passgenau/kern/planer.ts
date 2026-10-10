@@ -571,8 +571,10 @@ function uebertragenSchritt(c: Kontext, min: number, quellen: { ref: string; nr:
             de: 'Dann gemeinsam einen kleinen Plan machen: Woran merke ich, dass der Moment da ist? Was mache ich dann? Wer kann mir helfen? Die Fachkraft schreibt mit, wenn das Kind möchte.',
             fr: 'Puis faire ensemble un petit plan : à quoi je remarque que le moment est là ? Qu’est-ce que je fais alors ? Qui peut m’aider ? L’adulte écrit si l’enfant le souhaite.',
           }
-      ueber.text = `${zwei ? 'Die Übungen' : 'Die Übung'} ${herkunft('de')} ${zwei ? 'kommen' : 'kommt'} heute in den Alltag. Die Fachkraft erinnert kurz an ${und(tun('de'), 'de')}${art === 'durchspielen' ? ' und macht es einmal gemeinsam mit dem Kind vor' : ''}. Dann überlegen beide, wo das Kind es in den nächsten Tagen brauchen könnte – im Unterricht, in der Pause, beim Sport: Die Fachkraft nennt zwei, drei Beispiele, das Kind wählt eins${vorsichtig ? ' (zuerst ein erfundenes)' : ' (echt oder erfunden)'}. ${mitte.de} Zum Schluss ein kleiner Versuch bis zum nächsten Mal – ohne Bewertung.`
-      ueber['fr.text'] = `${zwei ? 'Les activités' : 'L’activité'} ${herkunft('fr')} ${zwei ? 'passent' : 'passe'} aujourd’hui dans le quotidien. L’adulte rappelle brièvement ${und(tun('fr'), 'fr')}${art === 'durchspielen' ? ' et le refait une fois avec l’enfant' : ''}. Ensuite, on cherche ensemble où l’enfant pourrait en avoir besoin les prochains jours – en classe, à la récré, au sport : l’adulte donne deux ou trois exemples, l’enfant en choisit un${vorsichtig ? ' (d’abord un exemple inventé)' : ' (vrai ou inventé)'}. ${mitte.fr} Pour finir, un petit essai d’ici la prochaine fois – sans évaluation.`
+      // wenig Zeit: ohne Vormachen (Blind-Bewertung 10: „sechs Schritte in 8 Minuten“)
+      const vormachen = art === 'durchspielen' && min >= 12
+      ueber.text = `${zwei ? 'Die Übungen' : 'Die Übung'} ${herkunft('de')} ${zwei ? 'kommen' : 'kommt'} heute in den Alltag. Die Fachkraft erinnert kurz an ${und(tun('de'), 'de')}${vormachen ? ' und macht es einmal gemeinsam mit dem Kind vor' : ''}. Dann nennt sie zwei Beispiele, wo das Kind es in den nächsten Tagen brauchen könnte – im Unterricht, in der Pause, beim Sport –, und das Kind wählt eins${vorsichtig ? ' (zuerst ein erfundenes)' : ' (echt oder erfunden)'}. ${mitte.de} Zum Schluss ein kleiner Versuch bis zum nächsten Mal – ohne Bewertung.`
+      ueber['fr.text'] = `${zwei ? 'Les activités' : 'L’activité'} ${herkunft('fr')} ${zwei ? 'passent' : 'passe'} aujourd’hui dans le quotidien. L’adulte rappelle brièvement ${und(tun('fr'), 'fr')}${vormachen ? ' et le refait une fois avec l’enfant' : ''}. Puis il donne deux exemples où l’enfant pourrait en avoir besoin les prochains jours – en classe, à la récré, au sport –, et l’enfant en choisit un${vorsichtig ? ' (d’abord un exemple inventé)' : ' (vrai ou inventé)'}. ${mitte.fr} Pour finir, un petit essai d’ici la prochaine fois – sans évaluation.`
       ueber.wennEsKippt = figur
         ? 'Fällt dem Kind nichts ein, zeigt die Fachkraft die Bilder auf dem Blatt (Unterricht, Pause, Sport) und das Kind tippt auf eins. Mag es nicht spielen, spielt die Fachkraft mit der Figur vor und das Kind zeigt nur, was es dann tun würde.'
         : 'Fällt keine Situation ein, schlägt die Fachkraft zwei erfundene vor. Ist das zu viel, genügt ein Satz: Wo probiere ich es aus?'
@@ -1302,7 +1304,10 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
   if (c.weg === 'schnell' && sitzungen.length === 1) {
     const ke = sitzungen[0].schritte.find((x) => x.rolle === 'kern')
     const e = ke ? c.k.eintraege.get(ke.ref) : undefined
-    const code = e?.eldib.find((x) => x.gewicht === 1)?.code ?? e?.eldib[0]?.code
+    // … und wenn der Kern ein Ziel des Kindes übt, das Feld dieses Ziels (Blind-Bewertung 10: „Autorégulation“ über einer Stunde
+    // zum Ziel „Progrès“)
+    const zielCode = e?.eldib.find((x) => c.ziele.some((z) => z.code === x.code))?.code
+    const code = zielCode ?? e?.eldib.find((x) => x.gewicht === 1)?.code ?? e?.eldib[0]?.code
     const f = code ? kompetenzAusCode(code) : undefined
     const name = f ? KOMPETENZ_NAME[f]?.[c.sprache === 'fr' ? 'fr' : 'de'] : undefined
     if (name) titel = titel.replace(/^(Einzelstunde|Gruppenstunde): .*$/, `$1: ${name}`).replace(/^(Séance individuelle|Séance en groupe) : .*$/, `$1 : ${name}`)
