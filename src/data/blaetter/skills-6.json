@@ -794,6 +794,130 @@
         "achtung": "Deutet jemand Übergriffe, Gewalt oder Missbrauch an: ruhig zuhören, nicht ausfragen, keine Geheimhaltung versprechen. Bei Gefährdung sofort nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt je Person, Stifte, Grenz-Karten zum Nachschauen"
       }
+    },
+    "fr": {
+      "titel": "Mes limites",
+      "untertitel": "Où se trouvent mes limites et comment je remarque que c’est trop",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "Cette feuille t’appartient. Personne n’a besoin de la lire."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui est une limite pour toi ? Écris un exemple pour chaque sorte.",
+          "hinweis": "Les cartes des limites t’aident. Tes propres exemples sont encore mieux."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Physique",
+            "Émotionnelle",
+            "Numérique"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Quelqu’un s’assoit sur mon sac à dos dans le bus.",
+            "Quelqu’un rit quand je parle de mon chien.",
+            "Quelqu’un poste une photo de moi sans demander."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi remarques-tu qu’une limite est atteinte ? Écris ce que tu ressens, penses ou fais.",
+          "hinweis": "Pense au check-in et à ta carte des émotions : où dans le corps une émotion se manifeste-t-elle en premier ?"
+        },
+        {
+          "art": "ampel",
+          "linien": 2,
+          "stufen": [
+            {
+              "titel": "Stop – limite dépassée",
+              "text": "par exemple : le cœur s’emballe, je veux juste partir ou j’élève la voix"
+            },
+            {
+              "titel": "Attention – ça devient trop",
+              "text": "par exemple : le ventre se serre, je souris à contrecœur"
+            },
+            {
+              "titel": "Ça va – je me sens bien",
+              "text": "par exemple : épaules détendues, je ris et je reste volontiers"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Quand mon feu passe au jaune, je peux …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après l’exercice « Deux lignes » : qui peut s’approcher de toi, et jusqu’où ? Écris des noms ou des groupes dans les cercles.",
+          "hinweis": "Les distances sont des repères d’après le chercheur Edward T. Hall. Tes cercles ont le droit de changer."
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "public : plus de 3,6 m",
+            "social : 1,2 à 3,6 m",
+            "personnel : 45 cm à 1,2 m",
+            "tout près : moins de 45 cm"
+          ],
+          "mitte": "Moi"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "J’ai besoin de plus de distance quand …",
+            "La proximité me convient quand …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Les limites sont différentes – et toutes comptent.",
+          "text": "Même une personne très proche de toi doit respecter ton non. Et celui ou celle qui entend « Stop » s’arrête – en ligne comme dans la vraie vie."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu n’as pas à régler ça sans soutien.",
+          "text": "Si quelqu’un dépasse tes limites encore et encore, ou s’il t’est arrivé quelque chose qui te semble faux : ce n’est pas ta faute. Parle à une personne de confiance, par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes notent leurs propres limites physiques, émotionnelles et numériques, décrivent leurs signaux corporels en trois niveaux et indiquent qui peut s’approcher d’eux et jusqu’où.",
+        "ablauf": [
+          "Séance 22, après le tri des cartes des limites (7 min) : page 1 individuellement. Question : « À quoi remarquez-vous que c’est trop pour vous – avant même de dire quoi que ce soit ? »",
+          "L’adulte circule et aide avec des questions, pas avec des réponses. La feuille n’est pas ramassée.",
+          "Après l’exercice « Deux lignes » (3 min) : page 2 avec les cercles de proximité et les débuts de phrases. Les cercles restent privés.",
+          "Pour finir, lire l’encadré d’aide à voix haute et nommer les personnes de contact dans la maison."
+        ],
+        "hintergrund": "Pour poser des limites, il faut d’abord les percevoir. Les émotions s’accompagnent de sensations corporelles typiques (Nummenmaa et al., 2014) – poitrine serrée, creux dans le ventre, épaules tendues. Ces signaux annoncent souvent plus tôt que la raison que c’est trop ; le feu les classe en trois niveaux, en lien avec l’échelle de tension. Les cercles de proximité reposent sur les zones de distance de Hall (1966) : intime jusqu’à environ 45 cm, personnelle jusqu’à environ 1,2 m, sociale jusqu’à environ 3,6 m, au-delà publique. Les valeurs varient selon la culture, la relation et l’humeur – il n’y a pas de bonne distance, seulement celle qui convient à la personne.",
+        "quellen": [
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les tâches 2 et 3 ; dans les cercles, des initiales ou des symboles suffisent.",
+          "schwerer": "Pour chaque niveau du feu, noter ce que l’on pourrait faire ou dire à ce moment-là."
+        },
+        "impulse": [
+          "À quoi remarquez-vous chez les autres que quelque chose est trop proche ?",
+          "Votre distance avec vos amis est-elle toujours la même – ou dépend-elle du jour ?"
+        ],
+        "tipps": [
+          "Ne pas ramasser les cercles et ne pas les faire lire à voix haute.",
+          "Relier le feu au plan des feux de la séance 15 : au rouge, les skills d’urgence aident, ainsi qu’une personne vers qui aller."
+        ],
+        "achtung": "Si quelqu’un évoque des agressions, de la violence ou des abus : écouter calmement, ne pas interroger, ne promettre aucun secret. En cas de mise en danger, agir immédiatement selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Une feuille par personne, crayons, cartes des limites pour consulter"
+      }
     }
   },
   {

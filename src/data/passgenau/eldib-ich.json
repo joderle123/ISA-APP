@@ -1,0 +1,876 @@
+{
+  "V-1": {
+    "de": "Ich schaue die Fachkraft an, wenn sie mich berührt.",
+    "fr": "Je regarde l’adulte quand il me touche.",
+    "allg": { "de": "Ich zeige, dass ich etwas wahrnehme, das ich sehe, höre oder spüre.", "fr": "Je montre que je remarque ce que je vois, entends ou ressens." },
+    "frIch": ["Je regarde l’adulte quand il me touche."]
+  },
+  "V-2": {
+    "de": "Ich schaue mir Bilder an, die die Fachkraft mir zeigt.",
+    "fr": "Je regarde les images que l’adulte me montre.",
+    "allg": { "de": "Ich wende mich dem zu, was ich sehe, höre oder spüre.", "fr": "Je me tourne vers ce que je vois, entends ou ressens." },
+    "frIch": ["Je regarde les images que l’adulte me montre."]
+  },
+  "V-3": {
+    "fr": "Je regarde ce qu’on me montre.",
+    "allg": { "de": "Ich bleibe eine Weile bei dem, was ich sehe oder höre.", "fr": "Je prête attention un moment à ce que je vois ou entends." },
+    "frIch": ["Je regarde ce qu’on me montre.", "J’écoute quand l’adulte dit quelque chose."]
+  },
+  "V-4": {
+    "de": "Wenn die Fachkraft mir die Hand reicht, nehme ich sie.",
+    "fr": "Je prends la main que l’adulte me tend.",
+    "allg": { "de": "Ich reagiere von mir aus mit einer Bewegung auf das, was um mich geschieht.", "fr": "Je réagis de moi-même par un geste à ce qui se passe autour de moi." },
+    "frIch": ["Je prends la main que l’adulte me tend."]
+  },
+  "V-5": {
+    "fr": "Je construis une tour quand on me donne des cubes.",
+    "allg": { "de": "Ich handle passend, wenn sich etwas verändert oder jemand mich anspricht.", "fr": "J’agis de façon adaptée quand la situation change ou quand on me parle." },
+    "frIch": ["Je construis une tour quand on me donne des cubes.", "Je renvoie le ballon quand l’adulte me le lance."]
+  },
+  "V-6": {
+    "fr": "J’accroche ma veste au crochet le matin.",
+    "allg": { "de": "Ich übe aktiv, Dinge des Alltags selbst zu erledigen.", "fr": "Je m’exerce activement à faire moi-même les gestes du quotidien." },
+    "frIch": ["J’accroche ma veste au crochet le matin.", "Je mets ma veste quand la sonnerie retentit."]
+  },
+  "V-7": {
+    "de": "Ich räume die Bücher in das Regal, wenn die Fachkraft das sagt.",
+    "fr": "Je range les livres sur l’étagère quand l’adulte me le dit.",
+    "allg": { "de": "Ich nutze von mir aus verschiedene Gegenstände und Materialien.", "fr": "J’utilise de moi-même différents objets et matériaux." },
+    "frIch": ["Je range les livres sur l’étagère quand l’adulte me le dit.", "Je mets mon matériel scolaire à la bonne place."]
+  },
+  "V-8": {
+    "de": "Wenn die Fachkraft sagt, dass wir in die Pause gehen, räume ich mein Pult.",
+    "fr": "Je range mon bureau quand l’adulte annonce la récréation.",
+    "allg": { "de": "Ich erkenne bekannte Abläufe wieder.", "fr": "Je reconnais les routines que je connais." },
+    "frIch": ["Je range mon bureau quand l’adulte annonce la récréation."]
+  },
+  "V-9": {
+    "fr": "J’utilise le ballon de foot sur le terrain pendant la récréation.",
+    "allg": { "de": "Ich gehe mit Spielen und Material sachgerecht um.", "fr": "J’utilise les jeux et le matériel de façon appropriée." },
+    "frIch": ["J’utilise le ballon de foot sur le terrain pendant la récréation.", "Je range mon jeu sur l’étagère après le temps de jeu."]
+  },
+  "V-10": {
+    "de": "Ich warte, bis die Fachkraft mich mit meinem Namen ruft.",
+    "fr": "J’attends que l’adulte m’appelle par mon prénom.",
+    "allg": { "de": "Ich warte selbstständig, ohne körperliche Hilfe.", "fr": "J’attends par moi-même, sans aide physique." },
+    "frIch": ["J’attends que l’adulte m’appelle par mon prénom.", "Je lève la main et j’attends que ce soit mon tour."]
+  },
+  "V-11": {
+    "fr": "Je reste à ma place pendant l’exercice de maths.",
+    "allg": { "de": "Ich mache bei Aktivitäten mit, die im Sitzen stattfinden.", "fr": "Je participe aux activités qui se font en position assise." },
+    "frIch": ["Je reste à ma place pendant l’exercice de maths.", "Je reste à ma place pendant les phases de travail."]
+  },
+  "V-12": {
+    "fr": "Je participe au cours de sport.",
+    "allg": { "de": "Ich mache bei Bewegungsaktivitäten mit.", "fr": "Je participe aux activités physiques." },
+    "frIch": ["Je participe au cours de sport.", "Je participe à la pause de mouvement."]
+  },
+  "V-13": {
+    "fr": "Je m’installe dans le cercle du matin quand la journée commence.",
+    "allg": { "de": "Ich mache von mir aus bei Aktivitäten mit.", "fr": "Je participe de moi-même aux activités." },
+    "frIch": ["Je m’installe dans le cercle du matin quand la journée commence.", "Je lève la main en classe."]
+  },
+  "V-14": {
+    "fr": "J’accepte les compliments des autres et je garde mon calme.",
+    "allg": { "de": "Ich nehme Lob und Erfolge an und bleibe dabei angemessen.", "fr": "J’accepte les compliments et mes réussites en gardant mon calme." },
+    "frIch": ["J’accepte les compliments des autres et je garde mon calme.", "Je me réjouis quand on me félicite et je me comporte de façon raisonnable."]
+  },
+  "V-15": {
+    "fr": "Je fais par moi-même une tâche que j’ai comprise.",
+    "allg": { "de": "Ich bringe kurze Aufgaben selbstständig zu Ende.", "fr": "Je mène à terme de courtes tâches par moi-même." },
+    "frIch": ["Je fais par moi-même une tâche que j’ai comprise.", "Je termine une tâche que j’ai commencée."]
+  },
+  "V-16": {
+    "fr": "Je dis quelles sont nos règles de classe et nos objectifs.",
+    "allg": { "de": "Ich weiß, welches Verhalten von mir erwartet wird.", "fr": "Je sais quel comportement on attend de moi." },
+    "frIch": ["Je dis quelles sont nos règles de classe et nos objectifs.", "Je connais les règles qui font que tout le monde se sent bien."]
+  },
+  "V-17": {
+    "fr": "Je dis pourquoi je dois me comporter avec gentillesse et dans le calme.",
+    "allg": { "de": "Ich kann erklären, warum bestimmte Verhaltensregeln wichtig sind.", "fr": "Je peux expliquer pourquoi certaines règles de comportement sont importantes." },
+    "frIch": ["Je dis pourquoi je dois me comporter avec gentillesse et dans le calme.", "J’explique pourquoi nous avons des objectifs de classe."]
+  },
+  "V-18": {
+    "fr": "Je dis comment je pourrais me comporter autrement, de façon adaptée.",
+    "allg": { "de": "Ich kann beschreiben, wie ich mich anders verhalten könnte.", "fr": "Je peux décrire comment je pourrais me comporter autrement." },
+    "frIch": ["Je dis comment je pourrais me comporter autrement, de façon adaptée.", "Je réfléchis à la façon dont je peux me comporter plus paisiblement."]
+  },
+  "V-19": {
+    "fr": "J’accepte la décision du groupe.",
+    "allg": { "de": "Ich gehe angemessen mit Entscheidungen und Wahlen der Gruppe um.", "fr": "Je réagis de façon appropriée aux décisions et aux votes du groupe." },
+    "frIch": ["J’accepte la décision du groupe.", "Quand on me confie la direction du groupe, j’assume cette responsabilité."]
+  },
+  "V-20": {
+    "fr": "Je reste calme quand d’autres enfants se disputent.",
+    "allg": { "de": "Ich entscheide mich für angemessenes Verhalten, auch in schwierigen Momenten.", "fr": "Je choisis un comportement approprié, même dans les moments difficiles." },
+    "frIch": ["Je reste calme quand d’autres enfants se disputent.", "Même quand d’autres se comportent mal, je garde mon bon comportement."]
+  },
+  "V-21": {
+    "fr": "Je garde le contrôle de mon comportement pendant les activités de groupe.",
+    "allg": { "de": "Ich behalte in Gruppenaktivitäten die Kontrolle über mich.", "fr": "Je garde le contrôle de moi-même pendant les activités de groupe." },
+    "frIch": ["Je garde le contrôle de mon comportement pendant les activités de groupe.", "Je reste calme pendant les changements d’activité."]
+  },
+  "V-22": {
+    "fr": "Je remarque quand je fais des progrès.",
+    "allg": { "de": "Ich erkenne, wie ich mich in meinem Verhalten weiterentwickelt habe.", "fr": "Je remarque les progrès que j’ai faits dans mon comportement." },
+    "frIch": ["Je remarque quand je fais des progrès.", "Je peux décrire ce que je ne savais pas encore faire avant."]
+  },
+  "V-23": {
+    "fr": "Je reste calme quand le programme change.",
+    "allg": { "de": "Ich bleibe flexibel, wenn sich etwas ändert.", "fr": "Je reste flexible quand quelque chose change." },
+    "frIch": ["Je reste calme quand le programme change.", "Je m’adapte quand les choses ne se passent pas comme prévu."]
+  },
+  "V-24": {
+    "fr": "J’essaie de nouvelles activités et je reste calme.",
+    "allg": { "de": "Ich lasse mich auf neue Erfahrungen ein und bleibe dabei ruhig.", "fr": "Je m’ouvre à de nouvelles expériences en gardant mon calme." },
+    "frIch": ["J’essaie de nouvelles activités et je reste calme.", "Face à de nouvelles expériences, je garde le contrôle de moi-même."]
+  },
+  "V-25": {
+    "fr": "J’utilise les nouvelles façons de réagir dont nous avons parlé.",
+    "allg": { "de": "Ich wende neue, passende Verhaltensweisen an.", "fr": "J’applique de nouvelles façons de me comporter qui conviennent." },
+    "frIch": ["J’utilise les nouvelles façons de réagir dont nous avons parlé.", "Dans les situations difficiles, j’utilise les stratégies apprises."]
+  },
+  "V-26": {
+    "fr": "Je reste calme quand quelqu’un me provoque.",
+    "allg": { "de": "Ich reagiere ruhig und kontrolliert, wenn mich jemand provoziert.", "fr": "Je réagis calmement quand quelqu’un me provoque." },
+    "frIch": ["Je reste calme quand quelqu’un me provoque.", "Je garde mon calme face aux provocations."]
+  },
+  "V-27": {
+    "fr": "J’assume la responsabilité de mon comportement.",
+    "allg": { "de": "Ich übernehme Verantwortung für mein Verhalten.", "fr": "J’assume la responsabilité de mon comportement." },
+    "frIch": ["J’assume la responsabilité de mon comportement.", "J’accepte les conséquences de mon comportement."]
+  },
+  "V-28": {
+    "fr": "Je fais des propositions constructives quand il y a un problème.",
+    "allg": { "de": "Ich mache konstruktive Vorschläge, um Probleme zu lösen.", "fr": "Je fais des propositions constructives pour résoudre les problèmes." },
+    "frIch": ["Je fais des propositions constructives quand il y a un problème.", "J’aide à résoudre les conflits."]
+  },
+  "V-29": {
+    "fr": "Je prends de bonnes habitudes qui m’aideront dans ma vie professionnelle.",
+    "allg": { "de": "Ich entwickle neue Gewohnheiten, die mir helfen.", "fr": "Je développe de nouvelles habitudes qui m’aident." },
+    "frIch": ["Je prends de bonnes habitudes qui m’aideront dans ma vie professionnelle."]
+  },
+  "V-30": {
+    "fr": "Je cherche un rôle positif dans le groupe.",
+    "allg": { "de": "Ich suche mir eine positive Rolle in der Gruppe.", "fr": "Je cherche un rôle positif dans le groupe." },
+    "frIch": ["Je cherche un rôle positif dans le groupe.", "Je contribue de façon positive au groupe."]
+  },
+  "V-31": {
+    "fr": "Je comprends et j’accepte les règles et les lois.",
+    "allg": { "de": "Ich verstehe, warum es Regeln und Gesetze gibt.", "fr": "Je comprends pourquoi il y a des règles et des lois." },
+    "frIch": ["Je comprends et j’accepte les règles et les lois.", "Je respecte les règles à l’école et dans l’espace public."]
+  },
+  "V-32": {
+    "fr": "Je soutiens les règles qui rendent la vie en commun plus agréable.",
+    "allg": { "de": "Ich unterstütze Regeln, die Selbstverantwortung fördern.", "fr": "Je soutiens les règles qui favorisent la responsabilité personnelle." },
+    "frIch": ["Je soutiens les règles qui rendent la vie en commun plus agréable.", "J’assume la responsabilité de moi-même."]
+  },
+  "V-33": {
+    "fr": "Je résous mes problèmes en y réfléchissant.",
+    "allg": { "de": "Ich löse Probleme, indem ich sie durchdenke und analysiere.", "fr": "Je résous les problèmes en les analysant." },
+    "frIch": ["Je résous mes problèmes en y réfléchissant.", "J’analyse les situations et je trouve mes propres solutions."]
+  },
+  "K-1": {
+    "fr": "Je fais différents sons.",
+    "allg": { "de": "Ich bilde Laute, um mich auszudrücken.", "fr": "Je produis des sons pour m’exprimer." },
+    "frIch": ["Je fais différents sons."]
+  },
+  "K-2": {
+    "fr": "Je regarde la personne qui parle.",
+    "allg": { "de": "Ich wende mich Menschen zu, die zu mir sprechen.", "fr": "Je me tourne vers les personnes qui me parlent." },
+    "frIch": ["Je regarde la personne qui parle."]
+  },
+  "K-3": {
+    "fr": "Je réagis quand quelqu’un me dit quelque chose.",
+    "allg": { "de": "Ich reagiere, wenn jemand etwas zu mir sagt.", "fr": "Je réagis quand quelqu’un me dit quelque chose." },
+    "frIch": ["Je réagis quand quelqu’un me dit quelque chose."]
+  },
+  "K-4": {
+    "fr": "Je réponds quand on me pose une question.",
+    "allg": { "de": "Ich antworte mit Lauten oder Worten, wenn ich etwas gefragt werde.", "fr": "Je réponds par des sons ou des mots quand on me pose une question." },
+    "frIch": ["Je réponds quand on me pose une question."]
+  },
+  "K-5": {
+    "de": "Wenn die Fachkraft mir etwas zeigt, antworte ich.",
+    "fr": "Je réponds quand l’adulte me montre quelque chose.",
+    "allg": { "de": "Ich benutze von mir aus Wörter.", "fr": "J’utilise des mots de moi-même." },
+    "frIch": ["Je réponds quand l’adulte me montre quelque chose."]
+  },
+  "K-6": {
+    "de": "Ich spreche mit der Fachkraft, wenn ich etwas möchte.",
+    "fr": "Je parle à l’adulte quand je veux quelque chose.",
+    "allg": { "de": "Ich spreche mit Erwachsenen, wenn ich etwas möchte.", "fr": "Je parle aux adultes quand je veux quelque chose." },
+    "frIch": ["Je parle à l’adulte quand je veux quelque chose."]
+  },
+  "K-7": {
+    "fr": "Je parle à un autre enfant quand je veux quelque chose.",
+    "allg": { "de": "Ich spreche mit Gleichaltrigen, wenn ich etwas möchte.", "fr": "Je parle aux jeunes de mon âge quand je veux quelque chose." },
+    "frIch": ["Je parle à un autre enfant quand je veux quelque chose."]
+  },
+  "K-8": {
+    "fr": "Je fais une phrase entière quand je veux dire quelque chose.",
+    "allg": { "de": "Ich verbinde Wörter zu sinnvollen Sätzen.", "fr": "Je relie des mots pour faire des phrases qui ont du sens." },
+    "frIch": ["Je fais une phrase entière quand je veux dire quelque chose."]
+  },
+  "K-9": {
+    "fr": "Je réponds de façon que tout le monde me comprenne.",
+    "allg": { "de": "Ich beantworte Fragen so, dass es zur Frage passt.", "fr": "Je réponds aux questions de façon pertinente." },
+    "frIch": ["Je réponds de façon que tout le monde me comprenne."]
+  },
+  "K-10": {
+    "fr": "J’écoute pour apprendre de nouveaux mots.",
+    "allg": { "de": "Ich verstehe viele Wörter und lerne neue dazu.", "fr": "Je comprends beaucoup de mots et j’en apprends de nouveaux." },
+    "frIch": ["J’écoute pour apprendre de nouveaux mots."]
+  },
+  "K-11": {
+    "fr": "Je parle gentiment quand je veux quelque chose.",
+    "allg": { "de": "Ich drücke mich in passenden Wortfolgen und Sätzen aus.", "fr": "Je m’exprime avec des suites de mots qui conviennent." },
+    "frIch": ["Je parle gentiment quand je veux quelque chose."]
+  },
+  "K-12": {
+    "de": "Wenn ich Hilfe benötige, spreche ich die Fachkraft an.",
+    "fr": "Je m’adresse à l’adulte quand j’ai besoin d’aide.",
+    "allg": { "de": "Ich tausche mich mit Erwachsenen aus.", "fr": "J’échange des informations avec les adultes." },
+    "frIch": ["Je m’adresse à l’adulte quand j’ai besoin d’aide."]
+  },
+  "K-13": {
+    "fr": "Je dis ce que je sais bien faire et ce que les autres savent bien faire.",
+    "allg": { "de": "Ich beschreibe Merkmale von mir und von anderen.", "fr": "Je décris des caractéristiques de moi-même et des autres." },
+    "frIch": ["Je dis ce que je sais bien faire et ce que les autres savent bien faire."]
+  },
+  "K-14": {
+    "fr": "Je raconte quelque chose aux enfants de ma classe.",
+    "allg": { "de": "Ich tausche mich mit Gleichaltrigen aus.", "fr": "J’échange des informations avec des jeunes de mon âge." },
+    "frIch": ["Je raconte quelque chose aux enfants de ma classe."]
+  },
+  "K-15": {
+    "fr": "Je raconte ce que j’ai vécu.",
+    "allg": { "de": "Ich erzähle von meinen eigenen Erfahrungen.", "fr": "Je parle de mes propres expériences." },
+    "frIch": ["Je raconte ce que j’ai vécu."]
+  },
+  "K-16": {
+    "fr": "Je dis ce qui me dérange, sans blesser, quand je suis en colère.",
+    "allg": { "de": "Ich zeige meine Gefühle auf eine Art, die zur Situation passt.", "fr": "Je montre mes émotions d’une façon qui convient à la situation." },
+    "frIch": ["Je dis ce qui me dérange, sans blesser, quand je suis en colère."]
+  },
+  "K-17": {
+    "fr": "Je participe aux discussions de la classe de manière appropriée.",
+    "allg": { "de": "Ich beteilige mich an Gesprächen in der Gruppe.", "fr": "Je participe aux discussions de groupe." },
+    "frIch": ["Je participe aux discussions de la classe de manière appropriée."]
+  },
+  "K-18": {
+    "fr": "Je ressens de la fierté pour le travail que j’ai fait.",
+    "allg": { "de": "Ich bin stolz auf das, was ich geschafft habe.", "fr": "Je ressens de la fierté pour ce que j’ai accompli." },
+    "frIch": ["Je ressens de la fierté pour le travail que j’ai fait."]
+  },
+  "K-19": {
+    "fr": "Je décris mes forces et ce que je peux encore améliorer.",
+    "allg": { "de": "Ich beschreibe meine Eigenschaften.", "fr": "Je décris mes qualités et mes traits de caractère." },
+    "frIch": ["Je décris mes forces et ce que je peux encore améliorer."]
+  },
+  "K-20": {
+    "fr": "Je décris les autres sans les blesser.",
+    "allg": { "de": "Ich beschreibe andere Menschen respektvoll.", "fr": "Je décris les autres avec respect." },
+    "frIch": ["Je décris les autres sans les blesser."]
+  },
+  "K-21": {
+    "fr": "Je reconnais et je décris les sentiments des autres.",
+    "allg": { "de": "Ich erkenne die Gefühle anderer.", "fr": "Je reconnais les sentiments des autres." },
+    "frIch": ["Je reconnais et je décris les sentiments des autres."]
+  },
+  "K-22": {
+    "fr": "Je ressens de la fierté pour ce que notre groupe a réussi.",
+    "allg": { "de": "Ich bin stolz auf das, was wir als Gruppe geschafft haben.", "fr": "Je ressens de la fierté pour ce que nous avons réussi en groupe." },
+    "frIch": ["Je ressens de la fierté pour ce que notre groupe a réussi."]
+  },
+  "K-23": {
+    "fr": "J’exprime mes sentiments par l’art, la musique ou la danse.",
+    "allg": { "de": "Ich drücke meine Gefühle kreativ aus.", "fr": "J’exprime mes sentiments de façon créative." },
+    "frIch": ["J’exprime mes sentiments par l’art, la musique ou la danse."]
+  },
+  "K-24": {
+    "fr": "Je remarque mes propres progrès.",
+    "allg": { "de": "Ich erkenne meine Fortschritte.", "fr": "Je remarque mes progrès." },
+    "frIch": ["Je remarque mes propres progrès."]
+  },
+  "K-25": {
+    "fr": "J’explique comment mon comportement influence les autres.",
+    "allg": { "de": "Ich erkläre, wie mein Verhalten andere beeinflusst.", "fr": "J’explique comment mon comportement influence les autres." },
+    "frIch": ["J’explique comment mon comportement influence les autres."]
+  },
+  "K-26": {
+    "fr": "J’exprime mes sentiments avec les mots qui conviennent.",
+    "allg": { "de": "Ich drücke meine eigenen Gefühle aus.", "fr": "J’exprime mes propres sentiments." },
+    "frIch": ["J’exprime mes sentiments avec les mots qui conviennent."]
+  },
+  "K-27": {
+    "fr": "Je parle gentiment pour créer de bonnes relations.",
+    "allg": { "de": "Ich knüpfe positive Beziehungen.", "fr": "Je noue des relations positives." },
+    "frIch": ["Je parle gentiment pour créer de bonnes relations."]
+  },
+  "K-28": {
+    "fr": "Je félicite les autres pour ce qu’ils ont bien fait.",
+    "allg": { "de": "Ich lobe und unterstütze andere.", "fr": "Je félicite et je soutiens les autres." },
+    "frIch": ["Je félicite les autres pour ce qu’ils ont bien fait."]
+  },
+  "K-29": {
+    "fr": "Je décris le lien entre mes sentiments et mon comportement.",
+    "allg": { "de": "Ich beschreibe, was Ursache und was Wirkung ist.", "fr": "Je décris les liens de cause à effet." },
+    "frIch": ["Je décris le lien entre mes sentiments et mon comportement."]
+  },
+  "K-30": {
+    "fr": "Je m’exprime avec des phrases élaborées.",
+    "allg": { "de": "Ich drücke auch komplexe Gedanken in Worten aus.", "fr": "J’exprime aussi des idées complexes avec des mots." },
+    "frIch": ["Je m’exprime avec des phrases élaborées."]
+  },
+  "K-31": {
+    "fr": "J’essaie d’apaiser la situation quand on me provoque.",
+    "allg": { "de": "Ich wähle Worte, die versöhnen und beruhigen.", "fr": "Je choisis des mots qui réconcilient et apaisent." },
+    "frIch": ["J’essaie d’apaiser la situation quand on me provoque."]
+  },
+  "K-32": {
+    "fr": "Je reconnais la valeur de ce que les autres apportent.",
+    "allg": { "de": "Ich erkenne an, was andere beitragen.", "fr": "Je reconnais ce que les autres apportent." },
+    "frIch": ["Je reconnais la valeur de ce que les autres apportent."]
+  },
+  "K-33": {
+    "fr": "Je comprends que les gens ont des raisons différentes d’agir.",
+    "allg": { "de": "Ich beschreibe, aus welchen Gründen Menschen etwas tun.", "fr": "Je décris les raisons pour lesquelles les gens agissent." },
+    "frIch": ["Je comprends que les gens ont des raisons différentes d’agir."]
+  },
+  "K-34": {
+    "fr": "Je décris ce qui compte pour moi dans la vie.",
+    "allg": { "de": "Ich beschreibe, was mir wichtig ist.", "fr": "Je décris ce qui compte pour moi." },
+    "frIch": ["Je décris ce qui compte pour moi dans la vie."]
+  },
+  "K-35": {
+    "fr": "Je prends soin de mes relations en communiquant bien.",
+    "allg": { "de": "Ich pflege meine positiven Beziehungen.", "fr": "Je prends soin de mes relations positives." },
+    "frIch": ["Je prends soin de mes relations en communiquant bien."]
+  },
+  "SOZ-1": {
+    "de": "Wenn die Fachkraft mich berührt, drehe ich mich um.",
+    "fr": "Je me retourne quand l’adulte me touche.",
+    "allg": { "de": "Ich bemerke, wenn andere in meiner Nähe sind.", "fr": "Je remarque quand d’autres personnes sont près de moi." },
+    "frIch": ["Je me retourne quand l’adulte me touche."]
+  },
+  "SOZ-2": {
+    "de": "Wenn die Fachkraft mir sagt, dass ich zuschauen soll, tue ich das.",
+    "fr": "Je regarde quand l’adulte me demande de regarder.",
+    "allg": { "de": "Ich richte meine Aufmerksamkeit auf andere.", "fr": "Je porte mon attention sur les autres." },
+    "frIch": ["Je regarde quand l’adulte me demande de regarder."]
+  },
+  "SOZ-3": {
+    "de": "Wenn die Fachkraft mich mit Namen ruft, schaue ich hin.",
+    "fr": "Je regarde quand l’adulte m’appelle par mon prénom.",
+    "allg": { "de": "Ich reagiere, wenn jemand meinen Namen sagt.", "fr": "Je réagis quand quelqu’un dit mon prénom." },
+    "frIch": ["Je regarde quand l’adulte m’appelle par mon prénom."]
+  },
+  "SOZ-4": {
+    "fr": "Je joue par moi-même quand il le faut.",
+    "allg": { "de": "Ich beschäftige mich allein mit etwas, das mir Spaß macht.", "fr": "Je m’occupe par moi-même avec quelque chose qui me plaît." },
+    "frIch": ["Je joue par moi-même quand il le faut."]
+  },
+  "SOZ-5": {
+    "fr": "Je montre l’objet du doigt quand je veux quelque chose.",
+    "allg": { "de": "Ich nehme ohne Worte Kontakt auf, zum Beispiel mit Gesten.", "fr": "J’entre en contact sans mots, par exemple avec des gestes." },
+    "frIch": ["Je montre l’objet du doigt quand je veux quelque chose."]
+  },
+  "SOZ-6": {
+    "de": "Wenn die Fachkraft mich ruft, gehe ich zu ihr.",
+    "fr": "Je vais vers l’adulte quand il m’appelle.",
+    "allg": { "de": "Ich komme, wenn mich jemand ruft.", "fr": "Je viens quand quelqu’un m’appelle." },
+    "frIch": ["Je vais vers l’adulte quand il m’appelle."]
+  },
+  "SOZ-7": {
+    "de": "Wenn die Fachkraft mich um etwas bittet, erledige ich es.",
+    "fr": "Je fais ce que l’adulte me demande.",
+    "allg": { "de": "Ich verstehe, was von mir verlangt wird, und handle danach.", "fr": "Je comprends ce qu’on me demande et j’agis en conséquence." },
+    "frIch": ["Je fais ce que l’adulte me demande."]
+  },
+  "SOZ-8": {
+    "de": "Ich spreche mit der Fachkraft, wenn ich etwas möchte.",
+    "fr": "Je parle à l’adulte quand je veux quelque chose.",
+    "allg": { "de": "Ich spreche mit Erwachsenen, wenn ich etwas möchte.", "fr": "Je parle aux adultes quand je veux quelque chose." },
+    "frIch": ["Je parle à l’adulte quand je veux quelque chose."]
+  },
+  "SOZ-9": {
+    "fr": "Je parle de moi en utilisant « je », « mon » et « moi ».",
+    "allg": { "de": "Ich weiß, wer ich bin, und kann von mir erzählen.", "fr": "Je sais qui je suis et je peux parler de moi." },
+    "frIch": ["Je parle de moi en utilisant « je », « mon » et « moi »."]
+  },
+  "SOZ-10": {
+    "fr": "Je joue à côté des autres enfants.",
+    "allg": { "de": "Ich beschäftige mich neben anderen mit meiner eigenen Sache.", "fr": "Je m’occupe de mon activité à côté des autres." },
+    "frIch": ["Je joue à côté des autres enfants."]
+  },
+  "SOZ-11": {
+    "fr": "Je parle à un autre enfant quand je veux quelque chose.",
+    "allg": { "de": "Ich spreche mit Gleichaltrigen, wenn ich etwas möchte.", "fr": "Je parle aux jeunes de mon âge quand je veux quelque chose." },
+    "frIch": ["Je parle à un autre enfant quand je veux quelque chose."]
+  },
+  "SOZ-12": {
+    "de": "Wenn der Unterricht beginnt, begrüße ich die Lehrerin oder den Lehrer.",
+    "fr": "Je salue l’adulte quand le cours commence.",
+    "allg": { "de": "Ich suche von mir aus Kontakt zu Erwachsenen.", "fr": "Je cherche de moi-même le contact avec les adultes." },
+    "frIch": ["Je salue l’adulte quand le cours commence."]
+  },
+  "SOZ-13": {
+    "fr": "J’invente moi-même un jeu.",
+    "allg": { "de": "Ich lasse meine Fantasie spielen und denke mir etwas aus.", "fr": "Je laisse jouer mon imagination et j’invente quelque chose." },
+    "frIch": ["J’invente moi-même un jeu."]
+  },
+  "SOZ-14": {
+    "fr": "J’attends mon tour.",
+    "allg": { "de": "Ich warte, bis ich an der Reihe bin.", "fr": "J’attends mon tour." },
+    "frIch": ["J’attends mon tour."]
+  },
+  "SOZ-15": {
+    "de": "Ich gehe freundlich auf meine Mitschülerinnen und Mitschüler zu.",
+    "fr": "Je vais vers mes camarades avec gentillesse.",
+    "allg": { "de": "Ich nehme von mir aus Kontakt zu anderen auf.", "fr": "Je prends contact de moi-même avec les autres." },
+    "frIch": ["Je vais vers mes camarades avec gentillesse."]
+  },
+  "SOZ-16": {
+    "fr": "Je partage avec les autres enfants.",
+    "allg": { "de": "Ich teile mit anderen.", "fr": "Je partage avec les autres." },
+    "frIch": ["Je partage avec les autres enfants."]
+  },
+  "SOZ-17": {
+    "fr": "Je joue en paix avec les autres enfants.",
+    "allg": { "de": "Ich mache bei gemeinsamen Spielen und Aktivitäten mit.", "fr": "Je participe aux jeux et aux activités en commun." },
+    "frIch": ["Je joue en paix avec les autres enfants."]
+  },
+  "SOZ-18": {
+    "fr": "Je travaille avec un autre enfant pendant les travaux à deux.",
+    "allg": { "de": "Ich arbeite mit anderen zusammen.", "fr": "Je coopère avec les autres." },
+    "frIch": ["Je travaille avec un autre enfant pendant les travaux à deux."]
+  },
+  "SOZ-19": {
+    "fr": "Je partage et je joue à tour de rôle avec les autres enfants.",
+    "allg": { "de": "Ich wechsle mich mit anderen ab und teile.", "fr": "Je fais à tour de rôle avec les autres et je partage." },
+    "frIch": ["Je partage et je joue à tour de rôle avec les autres enfants."]
+  },
+  "SOZ-20": {
+    "fr": "Je fais comme les autres quand ils se comportent bien.",
+    "allg": { "de": "Ich übernehme gutes Verhalten von anderen.", "fr": "Je reprends les bons comportements des autres." },
+    "frIch": ["Je fais comme les autres quand ils se comportent bien."]
+  },
+  "SOZ-21": {
+    "fr": "Je dis si je trouve quelque chose juste ou faux.",
+    "allg": { "de": "Ich beurteile soziale Situationen und sage, was ich davon halte.", "fr": "J’évalue des situations sociales et je dis ce que j’en pense." },
+    "frIch": ["Je dis si je trouve quelque chose juste ou faux."]
+  },
+  "SOZ-22": {
+    "fr": "Je montre ou j’explique aux autres comment on fait quelque chose.",
+    "allg": { "de": "Ich leite Aktivitäten in der Gruppe an.", "fr": "Je guide des activités dans le groupe." },
+    "frIch": ["Je montre ou j’explique aux autres comment on fait quelque chose."]
+  },
+  "SOZ-23": {
+    "de": "Ich akzeptiere Vorschläge meiner Mitschülerinnen und Mitschüler.",
+    "fr": "J’accepte les propositions de mes camarades.",
+    "allg": { "de": "Ich akzeptiere Vorschläge anderer.", "fr": "J’accepte les propositions des autres." },
+    "frIch": ["J’accepte les propositions de mes camarades."]
+  },
+  "SOZ-24": {
+    "fr": "Je raconte dans le bon ordre ce qui s’est passé.",
+    "allg": { "de": "Ich beschreibe, was ich erlebt habe.", "fr": "Je décris ce que j’ai vécu." },
+    "frIch": ["Je raconte dans le bon ordre ce qui s’est passé."]
+  },
+  "SOZ-25": {
+    "fr": "Je vais vers un enfant que j’aime bien.",
+    "allg": { "de": "Ich suche den Kontakt zu Menschen, die ich besonders mag.", "fr": "Je cherche le contact avec les personnes que j’aime particulièrement." },
+    "frIch": ["Je vais vers un enfant que j’aime bien."]
+  },
+  "SOZ-26": {
+    "fr": "Je demande de l’aide à d’autres enfants.",
+    "allg": { "de": "Ich bitte Gleichaltrige um Hilfe.", "fr": "Je demande de l’aide à des jeunes de mon âge." },
+    "frIch": ["Je demande de l’aide à d’autres enfants."]
+  },
+  "SOZ-27": {
+    "fr": "Je rappelle gentiment les règles du groupe aux autres.",
+    "allg": { "de": "Ich helfe mit, dass die Regeln in der Gruppe eingehalten werden.", "fr": "J’aide à faire respecter les règles du groupe." },
+    "frIch": ["Je rappelle gentiment les règles du groupe aux autres."]
+  },
+  "SOZ-28": {
+    "fr": "Je prends exemple sur de bons modèles.",
+    "allg": { "de": "Ich orientiere mich an positiven Vorbildern.", "fr": "Je prends exemple sur de bons modèles." },
+    "frIch": ["Je prends exemple sur de bons modèles."]
+  },
+  "SOZ-29": {
+    "fr": "Je raconte ce que nous avons vécu en groupe.",
+    "allg": { "de": "Ich beschreibe, was wir in der Gruppe erlebt haben.", "fr": "Je décris ce que nous avons vécu en groupe." },
+    "frIch": ["Je raconte ce que nous avons vécu en groupe."]
+  },
+  "SOZ-30": {
+    "fr": "Je propose des activités au groupe.",
+    "allg": { "de": "Ich schlage der Gruppe Aktivitäten vor.", "fr": "Je propose des activités au groupe." },
+    "frIch": ["Je propose des activités au groupe."]
+  },
+  "SOZ-31": {
+    "fr": "Je vois les différences entre mon comportement et celui des autres.",
+    "allg": { "de": "Ich erkenne, dass Menschen verschieden sind.", "fr": "Je reconnais que les gens sont différents." },
+    "frIch": ["Je vois les différences entre mon comportement et celui des autres."]
+  },
+  "SOZ-32": {
+    "fr": "J’écoute les autres et je respecte leur avis.",
+    "allg": { "de": "Ich respektiere die Meinung anderer.", "fr": "Je respecte l’avis des autres." },
+    "frIch": ["J’écoute les autres et je respecte leur avis."]
+  },
+  "SOZ-33": {
+    "fr": "Je m’intéresse à ce que les autres pensent de moi.",
+    "allg": { "de": "Ich interessiere mich für die Meinung anderer.", "fr": "Je m’intéresse à l’avis des autres." },
+    "frIch": ["Je m’intéresse à ce que les autres pensent de moi."]
+  },
+  "SOZ-34": {
+    "fr": "Je fais des propositions constructives quand il y a un problème.",
+    "allg": { "de": "Ich mache konstruktive Vorschläge.", "fr": "Je fais des propositions constructives." },
+    "frIch": ["Je fais des propositions constructives quand il y a un problème."]
+  },
+  "SOZ-35": {
+    "fr": "Je sais distinguer ce qui est juste de ce qui est faux.",
+    "allg": { "de": "Ich erkenne, dass Menschen unterschiedliche Werte haben.", "fr": "Je reconnais que les gens ont des valeurs différentes." },
+    "frIch": ["Je sais distinguer ce qui est juste de ce qui est faux."]
+  },
+  "SOZ-36": {
+    "fr": "J’apprends de ce que je vis avec les autres.",
+    "allg": { "de": "Ich ziehe Schlüsse aus dem, was ich mit anderen erlebe.", "fr": "Je tire des conclusions de ce que je vis avec les autres." },
+    "frIch": ["J’apprends de ce que je vis avec les autres."]
+  },
+  "SOZ-37": {
+    "fr": "Je comprends ce que ressentent les autres.",
+    "allg": { "de": "Ich verstehe, wie sich andere fühlen.", "fr": "Je comprends ce que ressentent les autres." },
+    "frIch": ["Je comprends ce que ressentent les autres."]
+  },
+  "SOZ-38": {
+    "fr": "Je peux prendre différents rôles dans un groupe.",
+    "allg": { "de": "Ich kann in einer Gruppe verschiedene Rollen einnehmen.", "fr": "Je peux prendre différents rôles dans un groupe." },
+    "frIch": ["Je peux prendre différents rôles dans un groupe."]
+  },
+  "SOZ-39": {
+    "fr": "Je décide selon mes propres valeurs.",
+    "allg": { "de": "Ich entscheide nach meinen eigenen Werten.", "fr": "Je décide selon mes propres valeurs." },
+    "frIch": ["Je décide selon mes propres valeurs."]
+  },
+  "SOZ-40": {
+    "fr": "Je me connais bien, avec mes forces et mes limites.",
+    "allg": { "de": "Ich schätze mich selbst realistisch ein.", "fr": "Je m’évalue de façon réaliste." },
+    "frIch": ["Je me connais bien, avec mes forces et mes limites."]
+  },
+  "SOZ-41": {
+    "fr": "Je construis des amitiés qui durent.",
+    "allg": { "de": "Ich baue dauerhafte Beziehungen auf.", "fr": "Je construis des relations durables." },
+    "frIch": ["Je construis des amitiés qui durent."]
+  },
+  "KOG-1": {
+    "fr": "Je me tourne vers ce qui m’intéresse.",
+    "allg": { "de": "Ich reagiere auf das, was ich sehe, höre oder spüre.", "fr": "Je réagis à ce que je vois, entends ou ressens." },
+    "frIch": ["Je me tourne vers ce qui m’intéresse."]
+  },
+  "KOG-2": {
+    "fr": "Je prête attention à une chose pendant un moment.",
+    "allg": { "de": "Ich bleibe kurz bei einer Sache aufmerksam.", "fr": "Je prête attention à une chose pendant un court moment." },
+    "frIch": ["Je prête attention à une chose pendant un moment."]
+  },
+  "KOG-3": {
+    "fr": "Je reconnais les personnes et les choses que je connais.",
+    "allg": { "de": "Ich erkenne Menschen und Dinge wieder.", "fr": "Je reconnais des personnes et des choses." },
+    "frIch": ["Je reconnais les personnes et les choses que je connais."]
+  },
+  "KOG-4": {
+    "fr": "Je réagis aux consignes par des actions.",
+    "allg": { "de": "Ich reagiere passend auf Anweisungen mit mehreren Schritten.", "fr": "Je réagis de façon adaptée à des consignes en plusieurs étapes." },
+    "frIch": ["Je réagis aux consignes par des actions."]
+  },
+  "KOG-5": {
+    "fr": "Je refais des gestes simples.",
+    "allg": { "de": "Ich mache einfache Handlungen nach.", "fr": "Je reproduis des gestes simples." },
+    "frIch": ["Je refais des gestes simples."]
+  },
+  "KOG-6": {
+    "fr": "Je fais des mouvements simples avec mon corps.",
+    "allg": { "de": "Ich beherrsche grundlegende Bewegungen.", "fr": "Je maîtrise les mouvements de base." },
+    "frIch": ["Je fais des mouvements simples avec mon corps."]
+  },
+  "KOG-7": {
+    "fr": "Je comprends le nom des choses que je connais.",
+    "allg": { "de": "Ich verstehe die Namen von Dingen.", "fr": "Je comprends le nom des choses." },
+    "frIch": ["Je comprends le nom des choses que je connais."]
+  },
+  "KOG-8": {
+    "fr": "Je réponds aux questions avec des mots.",
+    "allg": { "de": "Ich antworte mit Lauten oder Worten auf Fragen.", "fr": "Je réponds par des sons ou des mots aux questions." },
+    "frIch": ["Je réponds aux questions avec des mots."]
+  },
+  "KOG-9": {
+    "fr": "J’utilise des mots spontanément.",
+    "allg": { "de": "Ich benutze von mir aus Wörter.", "fr": "J’utilise des mots de moi-même." },
+    "frIch": ["J’utilise des mots spontanément."]
+  },
+  "KOG-10": {
+    "fr": "Je reconnais les formes et je les associe.",
+    "allg": { "de": "Ich erkenne Formen.", "fr": "Je reconnais des formes." },
+    "frIch": ["Je reconnais les formes et je les associe."]
+  },
+  "KOG-11": {
+    "fr": "Je montre les parties de mon corps et je les nomme.",
+    "allg": { "de": "Ich kenne meine Körperteile und kann sie benennen.", "fr": "Je connais les parties de mon corps et je sais les nommer." },
+    "frIch": ["Je montre les parties de mon corps et je les nomme."]
+  },
+  "KOG-12": {
+    "fr": "Je trouve des détails dans les images.",
+    "allg": { "de": "Ich erkenne Einzelheiten auf Bildern.", "fr": "Je repère des détails dans les images." },
+    "frIch": ["Je trouve des détails dans les images."]
+  },
+  "KOG-13": {
+    "fr": "Je trie les choses selon leurs propriétés.",
+    "allg": { "de": "Ich sortiere Dinge nach Merkmalen.", "fr": "Je trie les choses selon leurs caractéristiques." },
+    "frIch": ["Je trie les choses selon leurs propriétés."]
+  },
+  "KOG-14": {
+    "fr": "Je nomme des images avec les bons mots.",
+    "allg": { "de": "Ich benenne, was ich auf Bildern sehe.", "fr": "Je nomme ce que je vois sur les images." },
+    "frIch": ["Je nomme des images avec les bons mots."]
+  },
+  "KOG-15": {
+    "fr": "Je sais à quoi servent les choses.",
+    "allg": { "de": "Ich weiß, wofür man Dinge benutzt.", "fr": "Je sais à quoi servent les choses." },
+    "frIch": ["Je sais à quoi servent les choses."]
+  },
+  "KOG-16": {
+    "fr": "Je bouge mon corps de façon adaptée à mon âge.",
+    "allg": { "de": "Ich bewege mich sicher bei Alltagsbewegungen wie Rennen oder Treppensteigen.", "fr": "Je bouge avec assurance, par exemple en courant ou dans les escaliers." },
+    "frIch": ["Je bouge mon corps de façon adaptée à mon âge."]
+  },
+  "KOG-17": {
+    "fr": "Je trouve des images identiques.",
+    "allg": { "de": "Ich finde gleiche Dinge und ordne sie zu.", "fr": "Je trouve des choses identiques et je les associe." },
+    "frIch": ["Je trouve des images identiques."]
+  },
+  "KOG-18": {
+    "fr": "Je fais de petits mouvements précis avec mes mains.",
+    "allg": { "de": "Ich führe kleine, genaue Bewegungen mit den Fingern aus.", "fr": "Je fais de petits mouvements précis avec mes doigts." },
+    "frIch": ["Je fais de petits mouvements précis avec mes mains."]
+  },
+  "KOG-19": {
+    "fr": "Je trouve ce qui est différent.",
+    "allg": { "de": "Ich erkenne, was anders ist.", "fr": "Je repère ce qui est différent." },
+    "frIch": ["Je trouve ce qui est différent."]
+  },
+  "KOG-20": {
+    "de": "Ich kenne Gegenteile wie groß und klein.",
+    "fr": "Je connais des contraires comme grand et petit.",
+    "allg": { "de": "Ich verstehe Gegenteile.", "fr": "Je comprends les contraires." },
+    "frIch": ["Je connais des contraires comme grand et petit."]
+  },
+  "KOG-21": {
+    "fr": "Je range les choses par groupes.",
+    "allg": { "de": "Ich ordne Dinge in Gruppen.", "fr": "Je range les choses par groupes." },
+    "frIch": ["Je range les choses par groupes."]
+  },
+  "KOG-22": {
+    "fr": "Je compte jusqu’à 4.",
+    "allg": { "de": "Ich zähle kleine Mengen bis 4.", "fr": "Je compte de petites quantités jusqu’à 4." },
+    "frIch": ["Je compte jusqu’à 4."]
+  },
+  "KOG-23": {
+    "fr": "Je connais les couleurs et les formes.",
+    "allg": { "de": "Ich erkenne und benenne Farben und Formen.", "fr": "Je reconnais et je nomme les couleurs et les formes." },
+    "frIch": ["Je connais les couleurs et les formes."]
+  },
+  "KOG-24": {
+    "fr": "Je peux passer d’une tâche à une autre.",
+    "allg": { "de": "Ich kann von einer Aufgabe zur nächsten wechseln.", "fr": "Je peux passer d’une tâche à une autre." },
+    "frIch": ["Je peux passer d’une tâche à une autre."]
+  },
+  "KOG-25": {
+    "fr": "Je compte jusqu’à 10.",
+    "allg": { "de": "Ich zähle bis 10.", "fr": "Je compte jusqu’à 10." },
+    "frIch": ["Je compte jusqu’à 10."]
+  },
+  "KOG-26": {
+    "fr": "Je coordonne bien mes yeux et mes mains.",
+    "allg": { "de": "Ich koordiniere Augen und Hände gut.", "fr": "Je coordonne bien mes yeux et mes mains." },
+    "frIch": ["Je coordonne bien mes yeux et mes mains."]
+  },
+  "KOG-27": {
+    "fr": "Je distingue les chiffres des lettres.",
+    "allg": { "de": "Ich unterscheide Zahlen von Buchstaben.", "fr": "Je distingue les chiffres des lettres." },
+    "frIch": ["Je distingue les chiffres des lettres."]
+  },
+  "KOG-28": {
+    "fr": "Je bouge mon corps avec aisance, comme les enfants de cinq ans.",
+    "allg": { "de": "Ich bewege meinen Körper geschickt und koordiniert.", "fr": "Je bouge mon corps avec adresse et coordination." },
+    "frIch": ["Je bouge mon corps avec aisance, comme les enfants de cinq ans."]
+  },
+  "KOG-29": {
+    "fr": "Je vois d’un coup d’œil de petites quantités.",
+    "allg": { "de": "Ich erkenne kleine Mengen auf einen Blick.", "fr": "Je reconnais de petites quantités d’un coup d’œil." },
+    "frIch": ["Je vois d’un coup d’œil de petites quantités."]
+  },
+  "KOG-30": {
+    "fr": "Je connais des chansons et des comptines par cœur.",
+    "allg": { "de": "Ich gebe auswendig Gelerntes wieder.", "fr": "Je restitue ce que j’ai appris par cœur." },
+    "frIch": ["Je connais des chansons et des comptines par cœur."]
+  },
+  "KOG-31": {
+    "fr": "Je mets des images dans le bon ordre.",
+    "allg": { "de": "Ich bringe Bilder in die richtige Reihenfolge.", "fr": "Je mets des images dans le bon ordre." },
+    "frIch": ["Je mets des images dans le bon ordre."]
+  },
+  "KOG-32": {
+    "fr": "Je fais des gestes précis avec mes mains.",
+    "allg": { "de": "Ich arbeite mit meinen Händen genau und gezielt.", "fr": "Je travaille de mes mains avec précision." },
+    "frIch": ["Je fais des gestes précis avec mes mains."]
+  },
+  "KOG-33": {
+    "fr": "Je sais bien bouger mon corps.",
+    "allg": { "de": "Ich bewege mich sicher und koordiniert.", "fr": "Je bouge avec assurance et coordination." },
+    "frIch": ["Je sais bien bouger mon corps."]
+  },
+  "KOG-34": {
+    "fr": "Je lis des mots simples.",
+    "allg": { "de": "Ich lese einfache, häufige Wörter.", "fr": "Je lis des mots simples et fréquents." },
+    "frIch": ["Je lis des mots simples."]
+  },
+  "KOG-35": {
+    "fr": "J’écris les nombres de 1 à 10.",
+    "allg": { "de": "Ich erkenne und schreibe Zahlen bis 10.", "fr": "Je reconnais et j’écris les nombres jusqu’à 10." },
+    "frIch": ["J’écris les nombres de 1 à 10."]
+  },
+  "KOG-36": {
+    "fr": "J’écris des mots simples.",
+    "allg": { "de": "Ich schreibe einfache, häufige Wörter.", "fr": "J’écris des mots simples et fréquents." },
+    "frIch": ["J’écris des mots simples."]
+  },
+  "KOG-37": {
+    "fr": "Je comprends les histoires que j’entends.",
+    "allg": { "de": "Ich verstehe Geschichten, die ich höre.", "fr": "Je comprends les histoires que j’entends." },
+    "frIch": ["Je comprends les histoires que j’entends."]
+  },
+  "KOG-38": {
+    "fr": "J’explique pourquoi quelqu’un fait quelque chose.",
+    "allg": { "de": "Ich erkläre, warum andere sich so verhalten.", "fr": "J’explique pourquoi les autres se comportent ainsi." },
+    "frIch": ["J’explique pourquoi quelqu’un fait quelque chose."]
+  },
+  "KOG-39": {
+    "fr": "Je comprends ce que je lis.",
+    "allg": { "de": "Ich verstehe, was ich lese.", "fr": "Je comprends ce que je lis." },
+    "frIch": ["Je comprends ce que je lis."]
+  },
+  "KOG-40": {
+    "fr": "Je fais des additions et des soustractions jusqu’à 9.",
+    "allg": { "de": "Ich rechne Plus und Minus im Zahlenraum bis 9.", "fr": "Je fais des additions et des soustractions jusqu’à 9." },
+    "frIch": ["Je fais des additions et des soustractions jusqu’à 9."]
+  },
+  "KOG-41": {
+    "fr": "Je remarque quand quelque chose ne va pas.",
+    "allg": { "de": "Ich bemerke, wenn etwas nicht stimmig ist.", "fr": "Je remarque quand quelque chose n’est pas cohérent." },
+    "frIch": ["Je remarque quand quelque chose ne va pas."]
+  },
+  "KOG-42": {
+    "fr": "J’écris mes réponses en phrases complètes.",
+    "allg": { "de": "Ich schreibe Antworten in ganzen Sätzen.", "fr": "J’écris mes réponses en phrases complètes." },
+    "frIch": ["J’écris mes réponses en phrases complètes."]
+  },
+  "KOG-43": {
+    "fr": "Je participe aux jeux de sport et de mouvement.",
+    "allg": { "de": "Ich mache bei Sport- und Bewegungsspielen mit.", "fr": "Je participe aux jeux de sport et de mouvement." },
+    "frIch": ["Je participe aux jeux de sport et de mouvement."]
+  },
+  "KOG-44": {
+    "fr": "J’écris mes propres phrases.",
+    "allg": { "de": "Ich schreibe eigene Sätze.", "fr": "J’écris mes propres phrases." },
+    "frIch": ["J’écris mes propres phrases."]
+  },
+  "KOG-45": {
+    "fr": "Je calcule avec le temps et l’argent.",
+    "allg": { "de": "Ich rechne mit Zeit und Geld.", "fr": "Je calcule avec le temps et l’argent." },
+    "frIch": ["Je calcule avec le temps et l’argent."]
+  },
+  "KOG-46": {
+    "fr": "Je comprends les unités de mesure.",
+    "allg": { "de": "Ich verstehe Maßeinheiten.", "fr": "Je comprends les unités de mesure." },
+    "frIch": ["Je comprends les unités de mesure."]
+  },
+  "KOG-47": {
+    "fr": "Je lis des histoires et je les raconte avec mes mots.",
+    "allg": { "de": "Ich lese Texte und gebe sie mit eigenen Worten wieder.", "fr": "Je lis des textes et je les raconte avec mes mots." },
+    "frIch": ["Je lis des histoires et je les raconte avec mes mots."]
+  },
+  "KOG-48": {
+    "fr": "Je calcule avec de plus grands nombres.",
+    "allg": { "de": "Ich rechne mit größeren Zahlen.", "fr": "Je calcule avec de plus grands nombres." },
+    "frIch": ["Je calcule avec de plus grands nombres."]
+  },
+  "KOG-49": {
+    "fr": "J’écris pour me faire comprendre.",
+    "allg": { "de": "Ich schreibe, um mich mitzuteilen.", "fr": "J’écris pour me faire comprendre." },
+    "frIch": ["J’écris pour me faire comprendre."]
+  },
+  "KOG-50": {
+    "fr": "Je calcule des multiplications et des divisions jusqu’à 100.",
+    "allg": { "de": "Ich rechne Mal und Geteilt im Zahlenraum bis 100.", "fr": "Je fais des multiplications et des divisions jusqu’à 100." },
+    "frIch": ["Je calcule des multiplications et des divisions jusqu’à 100."]
+  },
+  "KOG-51": {
+    "fr": "Je lis avec plaisir pour apprendre des choses nouvelles.",
+    "allg": { "de": "Ich lese, um Neues zu lernen.", "fr": "Je lis pour apprendre des choses nouvelles." },
+    "frIch": ["Je lis avec plaisir pour apprendre des choses nouvelles."]
+  },
+  "KOG-52": {
+    "fr": "Je calcule avec de l’argent jusqu’à 10 euros.",
+    "allg": { "de": "Ich rechne mit Geldbeträgen bis 10 Euro.", "fr": "Je calcule avec des sommes d’argent jusqu’à 10 euros." },
+    "frIch": ["Je calcule avec de l’argent jusqu’à 10 euros."]
+  },
+  "KOG-53": {
+    "fr": "Je comprends les personnages des histoires.",
+    "allg": { "de": "Ich verstehe Figuren aus Geschichten.", "fr": "Je comprends les personnages des histoires." },
+    "frIch": ["Je comprends les personnages des histoires."]
+  },
+  "KOG-54": {
+    "fr": "J’écris en respectant la grammaire.",
+    "allg": { "de": "Ich verwende die Grammatik richtig.", "fr": "J’utilise correctement la grammaire." },
+    "frIch": ["J’écris en respectant la grammaire."]
+  },
+  "KOG-55": {
+    "fr": "Je reconnais des valeurs différentes.",
+    "allg": { "de": "Ich erkenne, dass es verschiedene Werte gibt.", "fr": "Je reconnais qu’il existe différentes valeurs." },
+    "frIch": ["Je reconnais des valeurs différentes."]
+  },
+  "KOG-56": {
+    "fr": "Je résous des problèmes avec des unités de mesure.",
+    "allg": { "de": "Ich löse logische Probleme.", "fr": "Je résous des problèmes logiques." },
+    "frIch": ["Je résous des problèmes avec des unités de mesure."]
+  },
+  "KOG-57": {
+    "fr": "Je m’intéresse à l’actualité.",
+    "allg": { "de": "Ich interessiere mich für aktuelle Themen.", "fr": "Je m’intéresse à l’actualité." },
+    "frIch": ["Je m’intéresse à l’actualité."]
+  },
+  "KOG-58": {
+    "fr": "Je fais la différence entre les faits et les opinions.",
+    "allg": { "de": "Ich unterscheide Fakten von Meinungen.", "fr": "Je fais la différence entre les faits et les opinions." },
+    "frIch": ["Je fais la différence entre les faits et les opinions."]
+  },
+  "KOG-59": {
+    "fr": "Je reconnais les comportements qui se contredisent.",
+    "allg": { "de": "Ich erkenne, wenn sich jemand widersprüchlich verhält.", "fr": "Je repère les comportements contradictoires." },
+    "frIch": ["Je reconnais les comportements qui se contredisent."]
+  },
+  "KOG-60": {
+    "fr": "Je résous des problèmes de maths difficiles à partir d’un texte.",
+    "allg": { "de": "Ich löse schwierige Textaufgaben.", "fr": "Je résous des problèmes de maths difficiles à partir d’un texte." },
+    "frIch": ["Je résous des problèmes de maths difficiles à partir d’un texte."]
+  },
+  "KOG-61": {
+    "fr": "Je résous des problèmes en réfléchissant.",
+    "allg": { "de": "Ich löse Probleme, indem ich sie analysiere.", "fr": "Je résous les problèmes en les analysant." },
+    "frIch": ["Je résous des problèmes en réfléchissant."]
+  },
+  "KOG-62": {
+    "fr": "J’utilise mes connaissances dans la vie de tous les jours.",
+    "allg": { "de": "Ich nutze mein Wissen im Alltag.", "fr": "J’utilise mes connaissances dans la vie de tous les jours." },
+    "frIch": ["J’utilise mes connaissances dans la vie de tous les jours."]
+  }
+}

@@ -557,6 +557,146 @@
         "achtung": "Karten nicht als gesund oder ungesund bewerten. Wer sich zurückzieht oder abwertend über sich spricht, später unter vier Augen ansprechen; bei Hinweisen auf gestörtes Essverhalten die zuständige Leitung (Responsable) informieren.",
         "material": "Karten je Team, zwei Stoffbeutel, Flipchart"
       }
+    },
+    "fr": {
+      "titel": "Le sac de pause",
+      "untertitel": "Des cartes pour le relais : qu’est-ce qui vous aide à tenir toute une longue journée ?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Préparez en équipe un sac de cinq cartes au maximum, qui vous aide à tenir dans la situation que l’adulte annonce.",
+          "hinweis": "À la présentation, vous dessinez à quoi ressemblerait votre courbe d’énergie avec ce sac.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment se déroule le relais",
+          "punkte": [
+            "Les cartes sont posées face cachée à l’autre bout. Dans chaque équipe, une seule personne court à la fois.",
+            "Retourne une carte : tu la prends, ou tu la remets face cachée et tu reviens les mains vides. Ensuite, la personne suivante part.",
+            "Retenez où se trouve chaque carte et dites-le à votre équipe. Aucune carte n’est interdite."
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 100,
+          "karten": [
+            {
+              "titel": "Bouteille d’eau",
+              "text": "0,5 litre, à remplir",
+              "bild": "icon:bottle"
+            },
+            {
+              "titel": "Boisson énergisante",
+              "text": "500 ml, env. 160 mg de caféine",
+              "bild": "icon:bolt"
+            },
+            {
+              "titel": "Cola",
+              "text": "330 ml, env. 30 mg de caféine",
+              "bild": "icon:cup"
+            },
+            {
+              "titel": "Chocolat",
+              "text": "chaud ou froid",
+              "bild": "icon:coffee"
+            },
+            {
+              "titel": "Petit pain au fromage",
+              "text": "de la boulangerie ou de la maison",
+              "bild": "icon:bread"
+            },
+            {
+              "titel": "Pomme",
+              "text": "ou un autre fruit",
+              "bild": "icon:apple"
+            },
+            {
+              "titel": "Bâtonnets de légumes",
+              "text": "carotte, concombre, poivron",
+              "bild": "icon:carrot"
+            },
+            {
+              "titel": "Salade de pâtes",
+              "text": "en boîte, avec des légumes",
+              "bild": "icon:leaf"
+            },
+            {
+              "titel": "Biscuits",
+              "text": "un paquet",
+              "bild": "icon:cookie"
+            },
+            {
+              "titel": "Chips",
+              "text": "un petit sachet",
+              "bild": "icon:paper-bag"
+            },
+            {
+              "titel": "Muffin",
+              "text": "de la boulangerie",
+              "bild": "icon:cake"
+            },
+            {
+              "titel": "Part de pizza",
+              "text": "de la boulangerie",
+              "bild": "icon:pizza"
+            },
+            {
+              "titel": "Cantine",
+              "text": "menu chaud du jour",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "Soupe",
+              "text": "dans un thermos",
+              "bild": "icon:soup"
+            },
+            {
+              "titel": "Glace",
+              "text": "au kiosque",
+              "bild": "icon:ice-cream"
+            },
+            {
+              "titel": "Rien",
+              "text": "manger seulement à la maison",
+              "bild": "icon:backpack"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Dans un relais, les équipes composent un sac de pause pour une situation donnée et justifient leurs choix à l’aide de leur courbe d’énergie.",
+        "ablauf": [
+          "Avant : imprimer les cartes de chaque équipe sur du papier de couleur et les découper ; placer les cartes à 10 à 15 m de distance.",
+          "Annoncer la situation (1 min), par exemple : journée de cours jusqu’à 16 h, puis entraînement ou stage.",
+          "Relais (4 min) : cartes face cachée ; retourner, prendre ou remettre ; cinq cartes au maximum.",
+          "Présentation (6 min) : chaque équipe dessine sa courbe d’énergie attendue et justifie son choix.",
+          "Deuxième manche (8 min) avec une nouvelle situation, par exemple un examen à la première heure ; une carte peut être échangée."
+        ],
+        "hintergrund": "Le relais associe mouvement et décisions. Il n’y a ni carte interdite ni point pour les sacs « sains » : laisser le choix aux jeunes et leur demander leurs raisons renforce leur motivation (Deci & Ryan, 2000) ; la leçon de morale suscite plutôt de la résistance (Miller & Rollnick, 2013). Repères pour l’échange : l’eau, le pain, les fruits, les légumes, la salade, la soupe et le repas de la cantine tiennent plus longtemps ; les sucreries et les chips donnent un bref coup de fouet ; la boisson énergisante et le cola contiennent de la caféine, qui tient éveillé encore des heures plus tard.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Assis : les cartes sont posées face visible sur la table, l’équipe choisit ensemble.",
+          "schwerer": "Condition supplémentaire par équipe, par exemple une journée végétarienne ou sans argent sur soi."
+        },
+        "impulse": [
+          "Où se situe le creux dans votre courbe – et quelle carte le rattrape ?",
+          "Qu’est-ce qui relève du plaisir, qu’est-ce qui relève de l’énergie – et les deux ont-ils leur place dans le sac ?"
+        ],
+        "tipps": [
+          "Les chips et les biscuits sont expressément autorisés ; la question est seulement : à quoi servent-ils ?",
+          "Avec deux jeunes seulement, chaque personne prépare son propre sac ; l’adulte joue aussi."
+        ],
+        "achtung": "Ne pas qualifier les cartes de saines ou de malsaines. Si quelqu’un se met en retrait ou parle de lui-même de façon dévalorisante, lui parler plus tard en tête à tête ; en cas d’indices d’un comportement alimentaire perturbé, informer la direction compétente (responsable).",
+        "material": "Cartes pour chaque équipe, deux sacs en tissu, paperboard"
+      }
     }
   },
   {
@@ -952,6 +1092,142 @@
         ],
         "achtung": "Der Rückblick kann an Schweres erinnern; kein Feld muss gefüllt werden. Collagen hängen nur mit Einverständnis. Deutet jemand Belastendes an: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
         "material": "A3-Papier, Zeitschriften, Scheren, Kleber, Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Mon année en images",
+      "untertitel": "Six images pour une année de cours Skills – dessinées, collées ou sous forme de symbole",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Règles pour tes images",
+          "punkte": [
+            "Pas de photos où l’on reconnaît des personnes – toi non plus. Tu peux tout dessiner.",
+            "Rien de tout cela ne va sur Internet, pas même une photo de ton collage.",
+            "Bien adaptés : dessins, symboles, mots, morceaux de magazines, photos d’affiches et de lieux du cours."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Commence par une esquisse : quelle image va dans quelle case ?",
+          "hinweis": "Une image peut être un symbole, une petite scène ou un mot en grandes lettres. Ensuite, tu reportes les cases sur une feuille A3."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Comment j’ai commencé l’année",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Un moment difficile",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ]
+        },
+        {
+          "art": "abstand",
+          "hoehe": 4
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Un skill qui m’a été utile",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Quelque chose que j’ai réussi",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ]
+        },
+        {
+          "art": "abstand",
+          "hoehe": 4
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Le groupe et moi",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ce que j’emporte avec moi",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Donne un titre à ton année – comme pour un film ou un album."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon titre : …",
+            "L’image qui compte le plus pour moi, et pourquoi : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu montres.",
+          "text": "Une case peut rester vide ou recevoir un volet. À la galerie, seul est accroché ce que tu veux montrer."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes mettent en images leur année de cours en six images et lui donnent un titre. L’esquisse est le plan du collage en A3 et suffit à elle seule si le temps manque.",
+        "ablauf": [
+          "Avant : préparer une table de matériel avec magazines, papier de couleur, images-symboles et petits tirages de l’année.",
+          "Lire les règles (2 min) et les expliquer : photos de personnes seulement avec accord, jamais sur Internet.",
+          "Esquisse (5 min) : individuellement et en silence ; le passeport Skills et la boussole sont à côté.",
+          "Collage (12 min) : reporter les six cases sur une feuille A3 – dessiner, coller, écrire.",
+          "Titre et image préférée (3 min), puis galerie silencieuse."
+        ],
+        "hintergrund": "Les images et les symboles aident à exprimer des expériences pour lesquelles les mots manquent ou sont trop grands. Les approches narratives utilisent le dessin pour que les jeunes puissent raconter leur vie sans se définir par leurs problèmes ; les forces et les espoirs ont la même place que ce qui est difficile (Ncube, 2006). Les six cases donnent un cadre et orientent le regard vers la façon dont on a fait face : voir ce que l’on a réussi renforce le sentiment d’efficacité personnelle (Bandura, 1977). Les règles sur les photos protègent la vie privée de tout le monde.",
+        "quellen": [
+          "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Choisir seulement trois cases ; préparer des images-symboles à découper.",
+          "schwerer": "Construire le collage comme une frise chronologique de septembre à juillet."
+        },
+        "impulse": [
+          "Quelle image montrerais-tu à quelqu’un qui te connaît depuis aujourd’hui seulement ?",
+          "Qu’est-ce qu’on voit sur ton collage que l’on ne voit pas chez toi ?"
+        ],
+        "tipps": [
+          "Pour les tirages d’affiches de l’année, couvrir d’abord les visages et les noms.",
+          "Celui ou celle qui n’aime pas dessiner prend des mots en grandes lettres ou des symboles du tas."
+        ],
+        "achtung": "Le retour sur l’année peut rappeler des moments difficiles ; aucune case n’est obligatoire. Les collages ne sont accrochés qu’avec l’accord de la personne. Si quelqu’un évoque quelque chose de pesant : entretien individuel, informer la direction compétente (responsable).",
+        "material": "Papier A3, magazines, ciseaux, colle, crayons"
       }
     }
   },

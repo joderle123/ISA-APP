@@ -1573,6 +1573,167 @@
         "achtung": "Keine Argumente zu Herkunft, Religion, Körper oder Familie üben. Abwertungen von Gruppen sofort stoppen, die Person danach allein ansprechen.",
         "material": "Blatt für jede Person"
       }
+    },
+    "fr": {
+      "titel": "Mon argument",
+      "untertitel": "Affirmation, raison, exemple – et comment répondre avec fair-play quand quelqu’un te contredit",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Un argument a trois parties. S’il en manque une, il est facile à balayer."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Affirmation",
+              "text": "Qu’en penses-tu ? L’école devrait commencer à 9 h."
+            },
+            {
+              "titel": "Raison",
+              "text": "Pourquoi ? Les jeunes ont sommeil plus tard le soir et ont besoin de dormir plus le matin."
+            },
+            {
+              "titel": "Exemple ou preuve",
+              "text": "À quoi le voit-on ? On recommande 8 à 10 heures de sommeil – avec une rentrée à 8 h, beaucoup n’y arrivent pas."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Solide ou faible ? Coche. Pour les faibles, réfléchis : qu’est-ce qui manque ?"
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "solide",
+            "faible"
+          ],
+          "items": [
+            "Les devoirs devraient être supprimés, parce que ça énerve.",
+            "Les téléphones devraient être autorisés pendant la pause, parce que tout le monde pense ça.",
+            "Chaque classe devrait avoir son propre budget, parce qu’elle apprend ainsi à planifier – par exemple pour la sortie de classe.",
+            "Les animaux n’ont pas leur place au zoo, parce que les zoos, c’est nul.",
+            "La bibliothèque devrait rester ouverte plus longtemps avant les examens, parce que beaucoup n’ont pas de coin calme pour étudier chez eux – douze personnes l’ont dit au conseil de classe.",
+            "Qui est contre la semaine de quatre jours n’y connaît rien."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Trois faiblesses typiques",
+          "punkte": [
+            "Seulement un ressenti : « … parce que ça énerve. » Le ressenti est réel, mais ce n’est pas encore une raison pour les autres.",
+            "Seulement la majorité : « … parce que tout le monde pense ça. » Beaucoup de gens peuvent aussi se tromper.",
+            "Attaque contre la personne : « Qui pense ça n’y connaît rien. » Cela touche la personne, pas le sujet."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Répare un argument faible : garde l’affirmation et ajoute une raison et un exemple."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Faible",
+            "Rendu solide"
+          ],
+          "breiten": [
+            1.7,
+            3.3
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Les devoirs devraient être supprimés, parce que ça énerve.",
+            "Les devoirs devraient se faire à l’école, parce que quelqu’un peut aider – à la maison, beaucoup restent bloqués sur le même exercice."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Réponds avec fair-play : reformule d’abord le contre-argument, puis contredis-le."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Contre",
+              "text": "Si l’école ne commence qu’à 9 h, elle finit aussi plus tard. Il ne reste alors plus de temps l’après-midi pour l’entraînement et le club."
+            },
+            {
+              "wer": "Pour"
+            }
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Débuts de phrases pour répondre avec fair-play",
+          "items": [
+            "Tu veux dire que …",
+            "Si je te comprends bien …",
+            "Je suis d’accord avec toi, mais …",
+            "Je vois ça autrement, parce que …",
+            "Comment le sais-tu ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Préparation du débat : le tirage au sort a décidé du sujet et du camp."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Notre sujet et notre camp : …",
+            "Notre argument le plus solide : … parce que … par exemple …",
+            "Voici ce que dira l’autre camp : …",
+            "Notre réponse : Vous voulez donc dire que … Mais …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après le débat : sors de ton rôle et fais le point avec fair-play."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "L’argument le plus solide de l’autre camp était : …",
+            "La prochaine fois, je ferai autrement : …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes construisent des arguments à partir d’une affirmation, d’une raison et d’un exemple, repèrent et réparent les arguments faibles et s’exercent à reformuler un contre-argument avant d’y répondre.",
+        "ablauf": [
+          "Tableau (5 min) : l’exemple en trois parties ; améliorer ensemble un argument faible.",
+          "Tâches 1 et 2 à deux (8 min). Corrigé 1 : sont solides les nos 3 et 5 ; faibles : les nos 1 et 4 (seulement un ressenti), 2 (seulement la majorité), 6 (attaque contre la personne).",
+          "Tâche 3 (5 min) : deux binômes lisent leur réponse à voix haute.",
+          "Tâche 4 pendant le temps de préparation du mini-débat, tâche 5 dans la partie « skill » qui suit."
+        ],
+        "hintergrund": "Le schéma affirmation – raison – exemple rend visible ce qui manque à une opinion. Les faiblesses typiques sont le ressenti sans raison, le renvoi à la majorité et l’attaque contre la personne plutôt que contre le sujet ; Fisher et Ury (1981) y opposent la formule : être ferme sur le fond et doux avec la personne. La règle de la reformulation – restituer d’abord l’autre camp, puis contredire – a été proposée par Rogers et Roethlisberger (1952) ; elle correspond à l’écoute active (Gordon, 1972) : en reformulant, on vérifie sa compréhension et on désamorce le conflit. L’exemple s’appuie sur un constat établi : pour les adolescents, on recommande 8 à 10 heures de sommeil (Paruthi et al., 2016).",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786."
+        ],
+        "differenzierung": {
+          "leichter": "Pour la tâche 3, la première phrase suffit : « Tu veux dire que … »",
+          "schwerer": "Pour son propre argument, formuler et réfuter le contre-argument le plus fort."
+        },
+        "impulse": [
+          "Quel argument vous a convaincus aujourd’hui ?",
+          "Pourquoi une attaque contre la personne paraît-elle souvent forte ?"
+        ],
+        "tipps": [
+          "Signe de la main : un, deux, trois doigts pour les trois parties.",
+          "Conserver la feuille pour un tournoi de débat."
+        ],
+        "achtung": "Ne pas s’exercer sur des arguments touchant l’origine, la religion, le corps ou la famille. Arrêter tout de suite toute dévalorisation de groupes, puis parler ensuite à la personne en tête à tête.",
+        "material": "Une feuille par personne"
+      }
     }
   },
   {
@@ -1831,6 +1992,231 @@
         ],
         "achtung": "Keine Themen zu Herkunft, Religion, Geschlecht, Körper oder Familie, keine Debatten über Gruppenmitglieder. Wird es persönlich, sofort unterbrechen.",
         "material": "Karten, Schere, Malerkrepp, Timer, Klingel"
+      }
+    },
+    "fr": {
+      "titel": "Le mini-débat",
+      "untertitel": "Déroulement, règles, cartes de sujets et fiche du jury pour un échange équitable",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Voici comment se déroule une manche, environ dix minutes :"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Ouverture",
+              "text": "Pour, puis contre : 1 minute chacun pour l’argument le plus fort."
+            },
+            {
+              "titel": "Échange",
+              "text": "4 minutes libres – d’abord reformuler, ensuite contredire."
+            },
+            {
+              "titel": "Conclusions",
+              "text": "30 secondes chacun : pourquoi notre camp convainc."
+            },
+            {
+              "titel": "Public",
+              "text": "Après chaque argument fort, faites un pas vers le camp qui vous convainc."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Nos règles – ferme sur le fond, fair-play envers les personnes",
+          "punkte": [
+            "Nous attaquons des arguments, jamais des personnes, leur origine, leur religion ou leur apparence.",
+            "Personne n’interrompt la personne qui parle. Le temps de parole est le même pour tout le monde.",
+            "Avant de contredire, on reformule ce que l’autre camp a dit.",
+            "Pas de moqueries, pas de soupirs ni de yeux au ciel, pas de phrases assassines.",
+            "Qui a besoin d’une pause en a une – le débat attend."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Notre propre règle : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Les phrases assassines étouffent toute discussion. Choisis-en deux et dis la même chose avec fair-play."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Phrases assassines",
+          "items": [
+            "C’est n’importe quoi.",
+            "Tu n’y connais rien.",
+            "On a toujours fait comme ça.",
+            "Typique de vous …",
+            "Va demander à quelqu’un qui s’y connaît.",
+            "C’est ridicule."
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Phrase assassine",
+            "Dit avec fair-play"
+          ],
+          "breiten": [
+            1.7,
+            3.3
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "C’est n’importe quoi.",
+            "Je vois ça autrement, et voici pourquoi : …"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cartes de sujets et de tirage : découpe-les. Chaque équipe tire un sujet et un camp.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 78,
+          "karten": [
+            {
+              "titel": "Sujet 1",
+              "text": "L’école devrait commencer à 9 h."
+            },
+            {
+              "titel": "Sujet 2",
+              "text": "Les devoirs devraient être supprimés."
+            },
+            {
+              "titel": "Sujet 3",
+              "text": "Les téléphones devraient être autorisés pendant la pause."
+            },
+            {
+              "titel": "Sujet 4",
+              "text": "Chaque classe devrait avoir son propre budget."
+            },
+            {
+              "titel": "Sujet 5",
+              "text": "Des vacances d’été plus courtes, mais plus de vacances dans l’année."
+            },
+            {
+              "titel": "Sujet 6",
+              "text": "L’e-sport devrait compter comme sport à l’école."
+            },
+            {
+              "titel": "Sujet 7",
+              "text": "Les animaux n’ont pas leur place au zoo."
+            },
+            {
+              "titel": "Sujet 8",
+              "text": "Chaque école a besoin d’une salle réservée aux jeunes."
+            },
+            {
+              "titel": "Pour",
+              "text": "Vous êtes pour."
+            },
+            {
+              "titel": "Pour",
+              "text": "Vous êtes pour."
+            },
+            {
+              "titel": "Contre",
+              "text": "Vous êtes contre."
+            },
+            {
+              "titel": "Contre",
+              "text": "Vous êtes contre."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fiche du jury : pendant le débat, sois attentif à ces points."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "text",
+              "text": "Équipe pour"
+            },
+            {
+              "art": "satzanfaenge",
+              "linien": 1,
+              "items": [
+                "Argument le plus fort : …",
+                "Moment le plus fair-play : …",
+                "Règle enfreinte ? Laquelle : …"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "text",
+              "text": "Équipe contre"
+            },
+            {
+              "art": "satzanfaenge",
+              "linien": 1,
+              "items": [
+                "Argument le plus fort : …",
+                "Moment le plus fair-play : …",
+                "Règle enfreinte ? Laquelle : …"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Cet argument m’a fait bouger : …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Le groupe mène un mini-débat selon un déroulement fixe, avec des camps tirés au sort et des règles claires ; le public observe avec la fiche du jury et vote avec les pieds.",
+        "ablauf": [
+          "Avant : découper les cartes, retirer les sujets qui touchent des conflits présents dans le groupe. Au sol : pour à gauche, contre à droite, public au milieu.",
+          "Règles (5 min) : les lire, en ajouter une propre au groupe ; tâche 1 à deux.",
+          "Tirage et préparation (5 min) avec la feuille « Mon argument ».",
+          "Débat (environ 8 min) selon le déroulement ci-dessus, puis lecture de la fiche du jury ; deuxième manche en inversant les rôles."
+        ],
+        "hintergrund": "Des temps de parole fixes, des positions tirées au sort et un jury donnent une structure au débat. Le camp tiré au sort soulage : personne n’a à défendre son opinion privée, et défendre une position qui n’est pas la sienne exerce le changement de perspective – un objectif central de l’éducation aux droits humains (Council of Europe, 2012). La règle de la reformulation – restituer d’abord, contredire ensuite – remonte à Rogers et Roethlisberger (1952) et correspond à l’écoute active (Gordon, 1972) ; elle ralentit l’échange et évite que chacun parle sans écouter l’autre. La règle la plus importante est de séparer le sujet de la personne (Fisher & Ury, 1981). Le public mobile montre que les arguments agissent et que l’on a le droit de changer d’avis.",
+        "quellen": [
+          "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement l’ouverture et les conclusions ; l’adulte pose des questions intermédiaires.",
+          "schwerer": "Après deux minutes, changement de camp : les équipes continuent d’argumenter pour l’autre camp."
+        },
+        "impulse": [
+          "Quel argument a fait bouger le public ?",
+          "Comment était-ce de défendre un camp qui n’est pas le sien ?"
+        ],
+        "tipps": [
+          "Une sonnette pour les entorses aux règles évite les rappels à l’ordre.",
+          "La feuille convient aussi pour un tournoi de débat."
+        ],
+        "achtung": "Pas de sujets sur l’origine, la religion, le genre, le corps ou la famille, pas de débat sur des membres du groupe. Si cela devient personnel, interrompre aussitôt.",
+        "material": "Cartes, ciseaux, ruban de masquage, minuteur, sonnette"
       }
     }
   },

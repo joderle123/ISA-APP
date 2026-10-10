@@ -135,7 +135,7 @@ export function Stundenleiste({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 's
             <View style={{ flex: 1, alignItems: 'center' }}>
               {s.bild && c.m.layout !== 'jugend' ? <Plakette c={c} id={s.bild} d={d} /> : <Kaestchen c={c} groesse={c.m.kaestchen} />}
               <Text style={{ fontFamily: c.m.schrift, fontSize: c.m.klein * 0.92, lineHeight: 1.2, color: NEUTRAL.text, marginTop: 3, textAlign: 'center' }}>{ty(c, s.text)}</Text>
-              {s.min ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.8, color: NEUTRAL.leise, marginTop: 1 }}>{`${s.min} ${tx.min}`}</Text> : null}
+              {s.min ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: Math.max(8, c.m.klein * 0.85), color: NEUTRAL.leise, marginTop: 1 }}>{`${s.min} ${tx.min}`}</Text> : null}
             </View>
             {i < teile.length - 1 ? <Text style={{ fontFamily: SCHRIFT.titel, fontSize: 9, color: c.p.mittel, marginHorizontal: 1 }}>›</Text> : null}
           </View>

@@ -1222,6 +1222,8 @@ if (cache.stilHash && cache.stilHash !== STIL) {
   console.log('Gestaltung geändert (stil.ts/BLATT-STIL.md) – Höhen werden neu gemessen.')
   cache.hoehen = {}
   delete cache.seite
+  // die neuen Höhen gelten für die neue Gestaltung (sonst meldet das Prüfskript sie weiter als veraltet)
+  cache.stilHash = STIL
 }
 cache.stilHash ??= STIL
 const speichereCache = () => {

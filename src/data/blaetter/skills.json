@@ -139,6 +139,114 @@
         "achtung": "Wird deutlich, dass jemand Gewalt oder Bedrohung erlebt, nicht in der Gruppe nachfragen: Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und bei Gefährdung sofort nach dem internen Schutzkonzept handeln.",
         "material": "Blatt in A3, Stifte, Klebeband zum Aufhängen"
       }
+    },
+    "fr": {
+      "titel": "Notre contrat de groupe",
+      "untertitel": "Ce dont nous avons besoin pour pouvoir parler ouvertement ici",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les règles ne fonctionnent que si tout le monde les soutient – c’est pourquoi vous les fixez vous-mêmes."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Commencez par rassembler vos idées : de quoi avez-vous besoin pour pouvoir être honnêtes ici ? Et qu’est-ce qui ne doit surtout pas arriver ?",
+          "symbole": [
+            "gruppe",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Ce dont nous avons besoin",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ce qui ne doit pas arriver ici",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mettez-vous d’accord sur trois à cinq règles. Notez pourquoi elles comptent pour vous.",
+          "hinweis": "Formuler de façon positive aide : « Nous laissons les autres finir de parler » plutôt que « Ne pas couper la parole »."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "Notre règle",
+            "Pourquoi elle compte pour nous"
+          ],
+          "breiten": [
+            0.45,
+            2.6,
+            2
+          ],
+          "zeilen": 5,
+          "nummern": 1,
+          "beispiel": [
+            "p. ex.",
+            "Nous rions ensemble, pas les uns des autres.",
+            "Pour que personne ne se sente humilié."
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Que faisons-nous quand quelqu’un enfreint une règle ?",
+          "linien": 1
+        },
+        {
+          "art": "vertrag",
+          "titel": "Nous nous y tenons",
+          "text": "Nous avons établi ces règles ensemble et nous nous les rappelons calmement. Ce qui est raconté ici reste ici – sauf si quelqu’un est en danger : alors la personne qui anime le groupe cherche de l’aide et dit avant ce qu’elle fait. Le ___, nous vérifierons si les règles conviennent encore.",
+          "unterschriften": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Animation"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Au début du cours, le groupe formule ses propres règles, les justifie et s’y engage. Les limites de la confidentialité sont discutées ouvertement.",
+        "ablauf": [
+          "Impulsion (3 min) : « De quoi avez-vous besoin pour vous sentir bien ici et pouvoir être honnêtes ? » Faire noter les réponses dans les deux cadres.",
+          "Recueillir (7 min) : regrouper ce qui se ressemble. Prendre au sérieux les réponses pour rire et demander ce qui se cache derrière.",
+          "Formuler (7 min) : écrire trois à cinq règles avec leur justification dans le tableau. Compléter les règles essentielles qui manquent : confidentialité, on a le droit de passer son tour, rire avec et non de l’autre, téléphones rangés, règle des pauses.",
+          "Contrat (3 min) : lire à voix haute la phrase sur la confidentialité et répondre honnêtement aux questions. Tout le monde signe, y compris la personne qui anime le groupe ; accrocher le contrat bien en vue."
+        ],
+        "hintergrund": "Les règles élaborées en commun sont plus souvent respectées que les règles imposées, car elles prennent au sérieux le besoin de participation et d’appartenance (Deci & Ryan, 2000). Pour des groupes de jeunes en situation difficile, un cadre clair et prévisible est en même temps une condition de protection : ce n’est que lorsque le groupe est sûr que les sujets personnels peuvent y avoir leur place. Les programmes qui développent les compétences socio-émotionnelles sont particulièrement efficaces lorsque les objectifs et les règles sont énoncés ouvertement (Durlak et al., 2011).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "L’adulte apporte huit cartes de règles déjà formulées ; le groupe choisit et ajoute oralement la justification.",
+          "schwerer": "Le groupe fixe en plus comment il parle des entorses aux règles – par exemple avec une carte que chaque personne peut lever une fois par séance."
+        },
+        "impulse": [
+          "Quelle règle est la plus importante pour vous – et pourquoi justement celle-là ?",
+          "Que doit faire l’adulte qui anime quand le ton monte vraiment, ici ?"
+        ],
+        "tipps": [
+          "Revoir brièvement le contrat à la troisième et à la dixième séance : tout est-il encore d’actualité ?",
+          "En cas d’entorse, montrer le contrat plutôt que gronder – les règles viennent du groupe."
+        ],
+        "achtung": "S’il apparaît que quelqu’un subit de la violence ou des menaces, ne pas poser de questions dans le groupe : proposer un entretien individuel, informer la direction compétente (responsable) et, en cas de mise en danger, agir immédiatement selon le concept de protection interne.",
+        "material": "Feuille A3, crayons, ruban adhésif pour accrocher"
+      }
     }
   },
   {
@@ -360,6 +468,82 @@
           "Einen eigenen Stempel für die Gruppe gestalten lassen; das stärkt das Wir-Gefühl."
         ],
         "material": "Pass auf festem Papier (A4, doppelseitig), Stempel oder Sticker, Box für die Pässe"
+      }
+    },
+    "fr": {
+      "titel": "Mon passeport Skills",
+      "untertitel": "Une phrase par séance – à la fin de l’année, tu as toute ton année entre les mains.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "À la fin de chaque séance, écris une phrase : qu’est-ce que j’emporte aujourd’hui ?",
+          "hinweis": "Par exemple : « Avec le 5-4-3-2-1, je me calme. » Les séances joker aussi ont une ligne."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "Ce que j’emporte",
+            "Tampon"
+          ],
+          "breiten": [
+            0.45,
+            4,
+            0.85
+          ],
+          "zeilen": 19,
+          "nummern": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "Ce que j’emporte",
+            "Tampon"
+          ],
+          "breiten": [
+            0.45,
+            4,
+            0.85
+          ],
+          "zeilen": 20,
+          "nummern": 20
+        },
+        {
+          "art": "frage",
+          "text": "À la fin de l’année : quel skill t’a le plus aidé – et quand ?",
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Après chaque séance, les jeunes notent en une phrase ce qu’ils emportent. Ainsi, ce qui a été appris devient visible et, en fin d’année, un bilan personnel se constitue.",
+        "ablauf": [
+          "Séance 1 : distribuer les passeports, faire inscrire le nom et expliquer qu’ils restent dans la salle (boîte ou classeur).",
+          "Ensuite, à la fin de chaque séance (3–5 min) : écrire la phrase, donner un tampon ou un autocollant. Si rien ne vient, on peut tirer une phrase du skill de la séance.",
+          "Ne pas corriger les inscriptions et ne les lire que si la personne le propose.",
+          "Dernière séance de l’année de cours : feuilleter ensemble les passeports et répondre à la question finale.",
+          "39 lignes suffisent pour chaque année de cours : l’année 1 compte 30 séances et jusqu’à 9 jokers, les années 2 et 3 comptent chacune 35 séances et 4 jokers. Les séances joker ont aussi une ligne."
+        ],
+        "hintergrund": "Quand on formule soi-même, à la fin d’une séance, ce que l’on a appris, on retravaille le contenu une seconde fois et on le retrouve plus facilement par la suite. L’entraînement aux skills de la thérapie comportementale dialectique pour adolescents utilise un outil semblable avec la fiche de suivi quotidien (diary card) : les skills sont notés pour rester présents au quotidien (Rathus & Miller, 2015). Le tampon est volontairement un petit rituel – il reconnaît la participation, pas la qualité de la phrase.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Débuts de phrases au tableau : « Aujourd’hui, j’ai remarqué que … », « Un skill que je veux essayer … ».",
+          "schwerer": "Noter en plus quand le skill pourrait convenir la semaine suivante."
+        },
+        "impulse": [
+          "Qu’est-ce qui vous a surpris aujourd’hui ?",
+          "Quelle phrase aimeriez-vous vous relire à vous-mêmes dans un mois ?"
+        ],
+        "tipps": [
+          "Imprimer le passeport sur du papier plus solide ou le ranger dans une pochette transparente – il doit tenir un an.",
+          "Faire créer au groupe son propre tampon ; cela renforce le sentiment d’appartenance."
+        ],
+        "material": "Passeport sur papier solide (A4, recto verso), tampon ou autocollants, boîte pour les passeports"
       }
     }
   },

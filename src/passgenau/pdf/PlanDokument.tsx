@@ -41,11 +41,11 @@ function schrittHoehe(x: DruckSchritt, d: DruckSitzung, m: PlanMasse): number {
   let h = m.titel * 1.25 + 2
   if (x.wahl?.length) h += m.basis * m.lh + x.wahl.reduce((n, w) => n + 2 + zeilen(`${w.titel} (${w.min} ${tx.min})`, 9, SPALTE - 14) * 9 * 1.25 + (w.kurz ? zeilen(w.kurz, m.klein, SPALTE - 14) * m.klein * m.lh : 0), 0) + 3
   h += zeilen(x.text, m.basis, SPALTE) * m.basis * m.lh
-  if (x.sagen.length) h += 3 + x.sagen.slice(0, 3).reduce((n, s, i) => n + zeilen(`${i ? '' : tx.sagen + ': '}„${s}“`, m.sagen, SPALTE - 8) * m.sagen * 1.4, 0)
-  if (x.wennEsKippt) h += 3 + zeilen(`${tx.kippt}: ${x.wennEsKippt}`, m.kippt, SPALTE) * m.kippt * 1.4
-  if (x.achtung) h += 4 + 10 + zeilen(`${tx.beachten}: ${x.achtung}`, m.achtung, SPALTE - 12.5) * m.achtung * 1.38
+  if (x.sagen.length) h += 3 + x.sagen.slice(0, 3).reduce((n, s, i) => n + zeilen(`${i ? '' : tx.sagen + tx.dp + ' '}„${s}“`, m.sagen, SPALTE - 8) * m.sagen * 1.4, 0)
+  if (x.wennEsKippt) h += 3 + zeilen(`${tx.kippt}${tx.dp} ${x.wennEsKippt}`, m.kippt, SPALTE) * m.kippt * 1.4
+  if (x.achtung) h += 4 + 10 + zeilen(`${tx.beachten}${tx.dp} ${x.achtung}`, m.achtung, SPALTE - 12.5) * m.achtung * 1.38
   if (x.hinweis) h += 3 + zeilen(x.hinweis, m.klein, SPALTE) * m.klein * 1.25
-  if (x.blatt && d.blattTeile.length) h += 4 + d.blattTeile.reduce((n, b) => n + zeilen(`1. ${b.titel}  (${b.quelle})${b.tipp ? `  ${tx.leichter}: ${b.tipp}` : ''}`, m.achtung, SPALTE) * m.achtung * 1.38, 0)
+  if (x.blatt && d.blattTeile.length) h += 4 + d.blattTeile.reduce((n, b) => n + zeilen(`• ${b.titel}  (${b.quelle})${b.tipp ? `  ${tx.leichter}${tx.dp} ${b.tipp}` : ''}`, m.achtung, SPALTE) * m.achtung * 1.38, 0)
   h += 3 + 7.2 * 1.25
   if (d.warum && x.warum.length) h += 1.5 + zeilen(`${tx.warum}: ${x.warum.join(' · ')}`, 7.4, SPALTE) * 7.4 * 1.25
   return Math.max(h, 36) + 2 * m.pad + 0.6
@@ -101,7 +101,7 @@ const T: Record<Sprache, Record<string, string>> = {
   de: {
     reiter: 'Passgenau', fuer: 'für', ziele: 'Ziele', ablauf: 'Ablauf', min: 'Min.', sagen: 'Sagen', kippt: 'Wenn es kippt', warum: 'Warum',
     material: 'Material', vorbereitung: 'Vorbereitung', notiz: 'Notiz nach der Stunde', datum: 'Datum', vertraulich: 'vertraulich – nicht fürs Kind',
-    beachten: 'Beachten', eltern: 'Vorher: Eltern informiert (Hausregel)?', blatt: 'Das Blatt', leichter: 'leichter', wahl: 'Das Kind wählt',
+    beachten: 'Beachten', eltern: 'Vorher: Eltern informiert (Hausregel)?', blatt: 'Das Blatt', leichter: 'leichter', wahl: 'Zur Wahl', dp: ':',
     hinweise: 'Hinweise', neu: 'neu ausprobiert', deckblatt: 'Folge', sitzung: 'Sitzung', phase: 'Phase', kern: 'Kern', alleMaterial: 'Material für die ganze Folge',
     ergebnis: 'Ergebnis', geklappt: 'hat geklappt', teils: 'teils', nicht: 'hat nicht geklappt', quelle: 'Quelle', ankreuzen: 'nach der Stunde ankreuzen',
     beruhigt: 'hat sich beruhigt', dabei: 'war dabei', nurDa: 'wollte nur da sein', abgebrochen: 'abgebrochen',
@@ -109,10 +109,10 @@ const T: Record<Sprache, Record<string, string>> = {
   fr: {
     reiter: 'Passgenau', fuer: 'pour', ziele: 'Objectifs', ablauf: 'Déroulement', min: 'min', sagen: 'Dire', kippt: 'Si ça bascule', warum: 'Pourquoi',
     material: 'Matériel', vorbereitung: 'Préparation', notiz: 'Note après la séance', datum: 'Date', vertraulich: 'confidentiel – pas pour l’enfant',
-    beachten: 'Attention', eltern: 'Avant : parents informés (règle de la maison) ?', blatt: 'La fiche', leichter: 'plus simple', wahl: 'L’enfant choisit',
+    beachten: 'Attention', eltern: 'Avant : parents informés (règle de la maison) ?', blatt: 'La fiche', leichter: 'plus simple', wahl: 'Au choix', dp: '\u202f:',
     hinweise: 'Remarques', neu: 'nouvel essai', deckblatt: 'Série', sitzung: 'Séance', phase: 'Phase', kern: 'Cœur', alleMaterial: 'Matériel pour toute la série',
     ergebnis: 'Résultat', geklappt: 'réussi', teils: 'en partie', nicht: 'pas réussi', quelle: 'Source', ankreuzen: 'à cocher après la séance',
-    beruhigt: 's’est calmé·e', dabei: 'était présent·e', nurDa: 'voulait juste être là', abgebrochen: 'interrompu',
+    beruhigt: 'retour au calme', dabei: 'a participé', nurDa: 'voulait juste être là', abgebrochen: 'interrompu',
   },
 }
 
@@ -170,22 +170,23 @@ function LText({ children, farbe, klein, fett, kursiv, m = PLAN_NORMAL }: { chil
   return <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: klein ? m.klein : m.basis, fontWeight: fett ? 600 : 400, lineHeight: m.lh, color: farbe ?? NEUTRAL.text, ...(kursiv ? { fontStyle: 'normal' } : {}) }}>{children}</Text>
 }
 
-function SchrittZeile({ x, i, d, m }: { x: DruckSchritt; i: number; d: DruckSitzung; m: PlanMasse }) {
+/** `vorAus`: Platz, den die nächste Zeile braucht – der vorletzte Schritt geht mit auf die neue Seite, statt den Abschluss
+ *  allein auf Seite 2 zu lassen (Blind-Bewertung 8: „Planblatt-Seite 2 enthält nur den Abschluss“). */
+function SchrittZeile({ x, i, d, m, vorAus = 0 }: { x: DruckSchritt; i: number; d: DruckSitzung; m: PlanMasse; vorAus?: number }) {
   const tx = T[d.sprache]
   const sp = d.sprache
   const absaetze = x.text.split('\n').filter(Boolean)
   return (
-    <View id={`pg-teil:${d.nr}:schritt:${i}`} wrap={false} style={{ flexDirection: 'row', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingVertical: m.pad }}>
+    <View id={`pg-teil:${d.nr}:schritt:${i}`} wrap={false} minPresenceAhead={vorAus} style={{ flexDirection: 'row', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingVertical: m.pad }}>
       <View style={{ width: 62, paddingRight: 6 }}>
         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 13, color: P.tief }}>{`${x.min}`}<Text style={{ fontSize: 7.4, fontFamily: SCHRIFT.jugend, fontWeight: 400, color: NEUTRAL.leise }}>{` ${tx.min}`}</Text></Text>
         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, letterSpacing: 0.6, color: NEUTRAL.leise, marginTop: 2 }}>{x.rolle.toUpperCase()}</Text>
-        {x.erkundung ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.6, color: P.tief, marginTop: 2 }}>{tx.neu}</Text> : null}
       </View>
       <View style={{ flex: 1 }}>
         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: m.titel, color: NEUTRAL.text, marginBottom: 2 }}>{ty(x.titel, sp)}</Text>
         {x.wahl?.length ? (
           <View style={{ marginBottom: 3 }}>
-            <LText fett m={m}>{`${tx.wahl}:`}</LText>
+            <LText fett m={m}>{`${tx.wahl}${tx.dp}`}</LText>
             {x.wahl.map((w, k) => (
               <View key={k} style={{ marginTop: 2 }}>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -204,7 +205,7 @@ function SchrittZeile({ x, i, d, m }: { x: DruckSchritt; i: number; d: DruckSitz
           <View style={{ marginTop: 3, borderLeftWidth: 2, borderLeftColor: P.mittel, paddingLeft: 6 }}>
             {x.sagen.slice(0, 3).map((s, k) => (
               <Text key={k} style={{ fontFamily: SCHRIFT.jugend, fontSize: m.sagen, lineHeight: 1.4, color: NEUTRAL.text }}>
-                <Text style={{ fontWeight: 600, color: P.tief }}>{k === 0 ? `${tx.sagen}: ` : ''}</Text>
+                <Text style={{ fontWeight: 600, color: P.tief }}>{k === 0 ? `${tx.sagen}${tx.dp} ` : ''}</Text>
                 {ty(sp === 'fr' ? `« ${s} »` : `„${s}“`, sp)}
               </Text>
             ))}
@@ -212,14 +213,14 @@ function SchrittZeile({ x, i, d, m }: { x: DruckSchritt; i: number; d: DruckSitz
         ) : null}
         {x.wennEsKippt ? (
           <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: m.kippt, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 3 }}>
-            <Text style={{ fontWeight: 600 }}>{`${tx.kippt}: `}</Text>
+            <Text style={{ fontWeight: 600 }}>{`${tx.kippt}${tx.dp} `}</Text>
             {ty(x.wennEsKippt, sp)}
           </Text>
         ) : null}
         {x.achtung ? (
           <View style={{ borderLeftWidth: 2.5, borderLeftColor: '#B4533A', backgroundColor: '#FBF1EC', borderRadius: 4, padding: 5, marginTop: 4 }}>
             <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: m.achtung, lineHeight: 1.38, color: NEUTRAL.text }}>
-              <Text style={{ fontWeight: 600, color: '#8A3A24' }}>{`${tx.beachten}: `}</Text>
+              <Text style={{ fontWeight: 600, color: '#8A3A24' }}>{`${tx.beachten}${tx.dp} `}</Text>
               {ty(x.achtung, sp)}
             </Text>
           </View>
@@ -229,9 +230,9 @@ function SchrittZeile({ x, i, d, m }: { x: DruckSchritt; i: number; d: DruckSitz
           <View style={{ marginTop: 4 }}>
             {d.blattTeile.map((b, k) => (
               <Text key={k} style={{ fontFamily: SCHRIFT.jugend, fontSize: m.achtung, lineHeight: 1.38, color: NEUTRAL.text }}>
-                {`${k + 1}. ${ty(b.titel, sp)}`}
+                {`• ${ty(b.titel, sp)}`}
                 <Text style={{ color: NEUTRAL.leise }}>{`  (${b.quelle})`}</Text>
-                {b.tipp ? <Text style={{ color: NEUTRAL.leise }}>{`  ${tx.leichter}: ${ty(b.tipp, sp)}`}</Text> : null}
+                {b.tipp ? <Text style={{ color: NEUTRAL.leise }}>{`  ${tx.leichter}${tx.dp} ${ty(b.tipp, sp)}`}</Text> : null}
               </Text>
             ))}
           </View>
@@ -332,7 +333,7 @@ export function PlanSeite({ d }: { d: DruckSitzung }) {
       </View>
       <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text, marginBottom: 2 }}>{tx.ablauf}</Text>
       {d.schritte.map((x, i) => (
-        <SchrittZeile key={i} x={x} i={i} d={d} m={m} />
+        <SchrittZeile key={i} x={x} i={i} d={d} m={m} vorAus={i === d.schritte.length - 2 ? schrittHoehe(d.schritte[i + 1], d, m) : 0} />
       ))}
       <Fuss sprache={sp} spielschule={spielschule} />
     </Page>
@@ -374,9 +375,9 @@ function Deckblatt({ f }: { f: DruckFolge }) {
         <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: NEUTRAL.leise, letterSpacing: 0.3, marginLeft: 8 }}>{`${tx.deckblatt} · ${f.sitzungen.length} ${sp === 'fr' ? 'séances' : 'Sitzungen'}`}</Text>
       </View>
       <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 24, color: NEUTRAL.text, letterSpacing: -0.3, marginBottom: 6 }}>{ty(f.titel, sp)}</Text>
-      {f.sitzungen[0]?.ziele.length ? (
+      {f.ziele.length ? (
         <View style={{ marginBottom: 14 }}>
-          {f.sitzungen[0].ziele.map((z) => (
+          {f.ziele.map((z) => (
             <LText key={z.code}>{ty(`${z.code}  ${z.text}`, sp)}</LText>
           ))}
         </View>

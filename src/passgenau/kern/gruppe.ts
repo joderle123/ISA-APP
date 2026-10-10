@@ -96,7 +96,7 @@ export function mitgliedProfil(p: Profil, m: GruppenMitglied): Profil {
 
 const ROLLEN: Record<Sprache, string[]> = {
   de: ['Zeit im Blick', 'Material', 'Sprecher/in', 'Mutmacher/in', 'Fragen-Profi', 'Ordnung'],
-  fr: ['gardien·ne du temps', 'matériel', 'porte-parole', 'encourageur·se', 'pro des questions', 'rangement'],
+  fr: ['garde du temps', 'matériel', 'porte-parole', 'qui encourage', 'pro des questions', 'rangement'],
 }
 
 /** Rollen der Sitzung: jedes Kind eine Rolle, jede Sitzung eine Stelle weiter (Vornamen nur auf dem Planblatt). */

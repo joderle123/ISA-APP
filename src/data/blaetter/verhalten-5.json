@@ -1,0 +1,758 @@
+[
+  {
+    "id": "warte-strategien",
+    "bereich": "verhalten",
+    "thema": "impulse",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "V-10",
+      "SOZ-14",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Warten",
+      "Melden",
+      "Impulskontrolle",
+      "Wenn-dann-Plan",
+      "Strategien",
+      "Ungeduld"
+    ],
+    "bild": "icon:hourglass",
+    "verwandt": [
+      "mein-warte-thermometer",
+      "warten-bis-ich-aufgerufen-werde"
+    ],
+    "de": {
+      "titel": "Warte-Strategien",
+      "untertitel": "Du hast dich gemeldet und musst warten. Was kannst du in der Zwischenzeit tun?",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Die Hand ist oben",
+          "bild": "figur:mia:aufgeregt:melden",
+          "text": "Jil weiß die Antwort sofort und meldet sich. Die Lehrerin ruft zuerst Pol auf, dann Aylin. Jils Hand wird schwer. Im Bauch kribbelt es, und die Antwort will heraus. Beinahe ruft Jil sie einfach in die Klasse."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, dass du ungeduldig wirst? Kreuze an.",
+          "hinweis": "Jil spürt ein Kribbeln im Bauch. Und du?",
+          "symbole": [
+            "nachdenken",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Mein Bein wippt.",
+            "Ich möchte hineinrufen.",
+            "Mein Bauch kribbelt.",
+            "Ich seufze oder stöhne.",
+            "Ich schaue ständig auf die Uhr.",
+            "Ich vergesse, was ich sagen wollte."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das hilft beim Warten. Wähle drei Strategien, die du ausprobieren willst.",
+          "hinweis": "Teste sie in Ruhe. Nicht jede passt zu jedem Menschen.",
+          "symbole": [
+            "lesen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:wind",
+              "text": "tief ausatmen"
+            },
+            {
+              "bild": "icon:footsteps",
+              "text": "Füße spüren"
+            },
+            {
+              "bild": "icon:brain",
+              "text": "Antwort im Kopf üben"
+            },
+            {
+              "bild": "icon:pencil",
+              "text": "Stichwort notieren"
+            },
+            {
+              "bild": "icon:abacus",
+              "text": "leise zählen"
+            },
+            {
+              "bild": "icon:ear",
+              "text": "anderen zuhören"
+            },
+            {
+              "bild": "icon:message-circle",
+              "text": "„Gleich bin ich dran.“"
+            },
+            {
+              "bild": "icon:hand-grab",
+              "text": "Hände ruhig halten"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Teste zwei Strategien. Trag ein, was passiert.",
+          "hinweis": "Melde dich bei einer Frage und warte etwa eine Minute.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Meine Strategie",
+            "Wartezeit",
+            "Hat sie geholfen? (0–10)"
+          ],
+          "breiten": [
+            2.2,
+            1.2,
+            1.6
+          ],
+          "beispiel": [
+            "tief ausatmen",
+            "1 Min.",
+            "6"
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan: Schreibe Wenn-dann-Sätze für eine Wartesituation.",
+          "hinweis": "Denk an Schule, Familie oder Freizeit – oder erfinde ein Beispiel.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich mich gemeldet habe und noch nicht dran bin,",
+              "dann": "atme ich zweimal tief aus und übe meine Antwort im Kopf."
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Nach einer Woche: Wie gut klappt das Warten jetzt?",
+          "von": "noch nicht gut",
+          "bis": "sehr gut",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder kennen mehrere Strategien, mit denen sie die Wartezeit nach dem Melden überbrücken, probieren sie aus und formulieren einen Wenn-dann-Plan für eine typische Wartesituation.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte lesen. „Was spürt Jil? Was passiert, wenn sie hineinruft?“ Körpersignale ankreuzen; Ungeduld ist normal.",
+          "Aufgabe 2 (10 Min.): Die acht Strategien vorstellen, zwei oder drei gleich vormachen (ausatmen, Antwort im Kopf üben). Jedes Kind wählt drei.",
+          "Aufgabe 3 (10 Min.): Mini-Test: Die Kinder melden sich bei einer Frage und warten etwa eine Minute (Sanduhr) mit einer Strategie. Danach eintragen.",
+          "Aufgabe 4 (10 Min.): Wenn-dann-Plan für eine Situation aus Schule, Familie oder Freizeit schreiben und vorlesen. Eine Woche anwenden, dann nachfragen."
+        ],
+        "hintergrund": "Kinder halten Wartezeiten besser aus, wenn sie ihre Aufmerksamkeit bewusst auf etwas anderes richten, statt nur den Impuls zu unterdrücken (Mischel, 2014). Selbstinstruktionen wie „Gleich bin ich dran“ helfen auch impulsiven Kindern (Meichenbaum & Goodman, 1971). Wenn-dann-Pläne (Implementation Intentions) koppeln eine Strategie an eine feste Situation und erleichtern es, sie im richtigen Moment einzusetzen (Gollwitzer, 1999). Das Blatt verbindet Aufmerksamkeitslenkung, Selbstinstruktion und Wenn-dann-Plan.",
+        "quellen": [
+          "Mischel, W. (2014). The Marshmallow Test. New York: Little, Brown.",
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Strategien als Bildkarten, nur zwei wählen; erst 30 Sekunden warten.",
+          "schwerer": "Eine eigene Strategie erfinden und die Wartezeit schrittweise verlängern."
+        },
+        "impulse": [
+          "Wann fällt dir das Warten am schwersten?",
+          "Was geht in dir vor, wenn du nicht drankommst?",
+          "Was würde dir helfen, wenn die Lehrperson dich nicht gleich sieht?"
+        ],
+        "tipps": [
+          "Gruppe: Ein Zeichen für „Ich habe dich gesehen“ vereinbaren (Nicken): Wer sich gesehen weiß, wartet leichter.",
+          "Einzelstunde: Die Situation mit der Fachkraft als Lehrperson durchspielen; das Kind kommt bewusst erst nach kurzer Wartezeit dran."
+        ],
+        "achtung": "Bleibt Warten trotz Übung über Wochen in vielen Situationen sehr schwer, im Förderteam besprechen und eine Abklärung anregen. Keine Diagnose stellen.",
+        "material": "Sanduhr oder Timer; Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "Des astuces pour patienter",
+      "untertitel": "Tu as levé la main et tu dois attendre. Que peux-tu faire en attendant ?",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "La main levée",
+          "bild": "figur:mia:aufgeregt:melden",
+          "text": "Jil connaît tout de suite la réponse et lève la main. L’enseignante interroge d’abord Pol, puis Aylin. La main de Jil devient lourde. Dans son ventre, ça fourmille, et la réponse veut sortir. Jil est à deux doigts de la crier devant toute la classe."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment remarques-tu que tu perds patience ? Coche.",
+          "hinweis": "Jil sent des fourmis dans le ventre. Et toi ?",
+          "symbole": [
+            "nachdenken",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Ma jambe s’agite.",
+            "J’ai envie de crier la réponse.",
+            "Mon ventre fourmille.",
+            "Je soupire ou je râle.",
+            "Je regarde l’heure sans arrêt.",
+            "J’oublie ce que je voulais dire."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Voici des astuces pour attendre. Choisis-en trois à essayer.",
+          "hinweis": "Teste-les au calme. Toutes ne conviennent pas à tout le monde.",
+          "symbole": [
+            "lesen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:wind",
+              "text": "souffler longuement"
+            },
+            {
+              "bild": "icon:footsteps",
+              "text": "sentir mes pieds"
+            },
+            {
+              "bild": "icon:brain",
+              "text": "répéter ma réponse"
+            },
+            {
+              "bild": "icon:pencil",
+              "text": "noter un mot-clé"
+            },
+            {
+              "bild": "icon:abacus",
+              "text": "compter doucement"
+            },
+            {
+              "bild": "icon:ear",
+              "text": "écouter les autres"
+            },
+            {
+              "bild": "icon:message-circle",
+              "text": "« Bientôt mon tour. »"
+            },
+            {
+              "bild": "icon:hand-grab",
+              "text": "mains calmes"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Teste deux astuces. Note ce qui se passe.",
+          "hinweis": "Lève la main quand on pose une question et attends environ une minute.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mon astuce",
+            "Temps d’attente",
+            "Ça a aidé ? (0–10)"
+          ],
+          "breiten": [
+            2.2,
+            1.2,
+            1.6
+          ],
+          "beispiel": [
+            "souffler longuement",
+            "1 min",
+            "6"
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan : écris des phrases « si …, alors … » pour une situation d’attente.",
+          "hinweis": "Pense à l’école, à la maison ou aux loisirs – ou invente un exemple.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si j’ai levé la main et que ce n’est pas encore mon tour,",
+              "dann": "je souffle deux fois longuement et je répète ma réponse dans ma tête."
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Après une semaine : comment se passe l’attente maintenant ?",
+          "von": "pas encore bien",
+          "bis": "très bien",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants connaissent plusieurs astuces pour combler l’attente après avoir levé la main, les essaient et écrivent un plan « si … alors … » pour une situation d’attente typique.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. « Que ressent Jil ? Que se passe-t-il si elle crie la réponse ? » Cocher les signes du corps ; l’impatience est normale.",
+          "Exercice 2 (10 min) : présenter les huit astuces, en faire deux ou trois dans la salle (souffler, répéter la réponse dans sa tête). Chacun en choisit trois.",
+          "Exercice 3 (10 min) : mini-test : les enfants lèvent la main pour une question et attendent environ une minute (sablier) avec une astuce. Puis noter.",
+          "Exercice 4 (10 min) : écrire un plan « si … alors … » pour une situation à l’école, en famille ou pendant les loisirs, le lire à voix haute. L’appliquer une semaine, puis en reparler."
+        ],
+        "hintergrund": "Les enfants supportent mieux l’attente quand ils dirigent volontairement leur attention vers autre chose, au lieu de seulement réprimer l’impulsion (Mischel, 2014). Les auto-instructions comme « bientôt mon tour » aident aussi les enfants impulsifs (Meichenbaum & Goodman, 1971). Les plans « si … alors … » (implementation intentions) relient une astuce à une situation précise et facilitent son emploi au bon moment (Gollwitzer, 1999). La fiche réunit orientation de l’attention, auto-instruction et plan « si … alors … ».",
+        "quellen": [
+          "Mischel, W. (2014). The Marshmallow Test. New York: Little, Brown.",
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Astuces en cartes images, n’en choisir que deux ; commencer par 30 secondes d’attente.",
+          "schwerer": "Inventer sa propre astuce et allonger peu à peu l’attente."
+        },
+        "impulse": [
+          "Quand l’attente est-elle le plus difficile pour toi ?",
+          "Que se passe-t-il en toi quand ce n’est pas ton tour ?",
+          "Qu’est-ce qui t’aiderait si l’enseignant ne te voit pas tout de suite ?"
+        ],
+        "tipps": [
+          "En groupe : convenir d’un signe « Je t’ai vu » (un hochement de tête) : se savoir vu rend l’attente plus facile.",
+          "En séance individuelle : jouer la situation, l’adulte dans le rôle de l’enseignant ; l’enfant passe volontairement après un petit moment."
+        ],
+        "achtung": "Si l’attente reste très difficile pendant des semaines dans de nombreuses situations, en parler à l’équipe de soutien et suggérer un bilan. Ne pas poser de diagnostic.",
+        "material": "Sablier ou minuteur ; crayons de couleur"
+      }
+    }
+  },
+  {
+    "id": "mein-warte-thermometer",
+    "bereich": "verhalten",
+    "thema": "selbstbeobachtung",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "V-10",
+      "K-19",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Warten",
+      "Selbstbeobachtung",
+      "Thermometer",
+      "Situationen",
+      "Strategie",
+      "Selbsteinschätzung"
+    ],
+    "bild": "icon:temperature",
+    "verwandt": [
+      "warte-strategien",
+      "wut-thermometer"
+    ],
+    "de": {
+      "titel": "Mein Warte-Thermometer",
+      "untertitel": "Warten fällt nicht überall gleich schwer. Finde heraus, wo es bei dir heiß wird.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Gut zu wissen",
+          "text": "Warten fällt allen Menschen manchmal schwer. Du kannst herausfinden, wo es bei dir besonders heiß wird – und dort üben."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies die vier Stufen. Wo bist du beim Warten meistens?",
+          "symbole": [
+            "lesen",
+            "zeigen"
+          ]
+        },
+        {
+          "art": "thermometer",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Kühl: Ich kann gut warten.",
+              "text": "Ich beschäftige mich oder höre zu."
+            },
+            {
+              "titel": "Warm: Ich werde unruhig.",
+              "text": "Ich schaue oft auf die Uhr und seufze."
+            },
+            {
+              "titel": "Heiß: Es fällt mir schwer.",
+              "text": "Ich zappele und möchte dazwischenreden."
+            },
+            {
+              "titel": "Kochend: Ich halte es nicht aus.",
+              "text": "Ich rufe hinein oder gehe einfach los."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie heiß wird es dir in diesen Situationen? Kreuze eine Stufe an.",
+          "hinweis": "Lass eine Zeile frei, wenn sie nicht passt oder zu privat ist.",
+          "symbole": [
+            "nachdenken",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "kühl",
+            "warm",
+            "heiß",
+            "kochend"
+          ],
+          "items": [
+            "Schule: Ich melde mich, komme aber nicht dran.",
+            "Schule: Ich stehe in der Kantine in der Schlange.",
+            "Schule: Ich warte, bis die Lehrperson Zeit hat.",
+            "Zu Hause: Ich warte auf das Essen.",
+            "Zu Hause: Jemand spricht, ich möchte erzählen.",
+            "Freizeit: Ein Kind ist beim Spiel lange dran.",
+            "Unterwegs: Ich warte auf den Bus oder im Auto.",
+            "Unterwegs: Ich warte beim Arzt oder im Laden."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähle deine heißeste Situation. Schreibe dazu auf:",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am schwersten fällt mir das Warten, wenn …",
+            "Das merke ich in meinem Körper: …"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie heiß wird es dort ungefähr?",
+          "von": "kühl",
+          "bis": "kochend",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hilft dir dort? Wähle eine Strategie oder schreibe eine eigene.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "tief ausatmen",
+            "Füße am Boden spüren",
+            "Antwort im Kopf üben",
+            "Stichwort notieren",
+            "leise zählen",
+            "mir sagen: „Gleich bin ich dran.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Teste deine Strategie eine Woche lang. Trage ein, wie heiß es war.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wann?",
+            "Situation",
+            "Meine Strategie",
+            "Wie heiß? (0–10)"
+          ],
+          "breiten": [
+            1.3,
+            2,
+            2,
+            1.3
+          ],
+          "beispiel": [
+            "Mo, 12:30",
+            "Kantine, Schlange",
+            "tief ausatmen",
+            "6"
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "skala",
+          "frage": "Nach einer Woche: Wie heiß wird es in deiner Situation jetzt?",
+          "von": "kühl",
+          "bis": "kochend",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das habe ich gemerkt: …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder schätzen ein, wo ihnen Warten leicht und wo es schwer fällt, benennen Körpersignale, wählen für ihre schwierigste Situation eine Strategie und prüfen eine Woche lang, ob sie hilft.",
+        "ablauf": [
+          "Einstieg (5 Min.): Thermometer vorstellen, Beispiel der Lehrperson: „In der Kantine in der Schlange – wie warm wird es mir?“ Kinder zeigen die Höhe mit der Hand.",
+          "Aufgabe 1–2 (12 Min.): Stufen lesen, acht Situationen einschätzen; leere Zeilen sind erlaubt. In der Gruppe ohne Namen vergleichen: „Wo wird es vielen heiß?“",
+          "Aufgabe 3–4 (15 Min.): Die heißeste Situation wählen, Körpersignale beschreiben, auf der Skala einschätzen und eine Strategie wählen (auch aus „Warte-Strategien“).",
+          "Aufgabe 5 (5 Min. + 1 Woche): Tabelle erklären; eine Woche lang bei jeder Anwendung eintragen. Nächste Stunde mit der ersten Einschätzung vergleichen."
+        ],
+        "hintergrund": "Wer weiß, wo und wie stark ihm das Warten schwerfällt, kann gezielt üben; Selbstbeobachtung ist der erste Schritt im Selbstmanagement (Kanfer et al., 2012). Ein Thermometer macht innere Zustände sichtbar und vergleichbar; solche Skalen sind in der kognitiven Verhaltenstherapie mit Kindern üblich (Kendall & Hedtke, 2006). Geübt wird zuerst in leichteren, dann in schwereren Situationen. Welche Strategien infrage kommen, zeigt die Forschung zum Belohnungsaufschub (Mischel, 2014).",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Mischel, W. (2014). The Marshmallow Test. New York: Little, Brown."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Situationen einschätzen (Schule, Familie, Freizeit); Stufen mit Farben markieren.",
+          "schwerer": "Für die zweitheißeste Situation einen Wenn-dann-Plan schreiben."
+        },
+        "impulse": [
+          "Was ändert sich in deinem Körper, wenn es heiß wird?",
+          "Woran merken andere, dass es dir schwerfällt?",
+          "Was hat dir bisher beim Warten geholfen?"
+        ],
+        "tipps": [
+          "Gruppe: Thermometer als Plakat; Kinder hängen anonym eine Klammer an die passende Stufe und sehen, dass es vielen ähnlich geht.",
+          "Einzelstunde: Die Fachkraft nennt zuerst ein eigenes Beispiel und fragt nach konkreten Momenten: „Gestern in der Kantine: wie warm?“"
+        ],
+        "achtung": "Ist Warten fast überall mit starker Anspannung, Wut oder Tränen verbunden, mit Eltern und Förderteam sprechen und Abklärung anregen. Keine Diagnose stellen.",
+        "material": "Buntstifte; optional Sanduhr"
+      }
+    },
+    "fr": {
+      "titel": "Mon thermomètre de l’attente",
+      "untertitel": "Attendre n’est pas aussi difficile partout. Découvre où ça chauffe pour toi.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Bon à savoir",
+          "text": "Attendre est parfois difficile pour tout le monde. Tu peux découvrir où ça chauffe particulièrement pour toi – et t’y exercer."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis les quatre niveaux. Où te situes-tu le plus souvent quand tu attends ?",
+          "symbole": [
+            "lesen",
+            "zeigen"
+          ]
+        },
+        {
+          "art": "thermometer",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Frais : j’attends sans problème.",
+              "text": "Je m’occupe ou j’écoute."
+            },
+            {
+              "titel": "Tiède : je deviens agité.",
+              "text": "Je regarde souvent l’heure et je soupire."
+            },
+            {
+              "titel": "Chaud : c’est difficile.",
+              "text": "Je gigote et j’ai envie de couper la parole."
+            },
+            {
+              "titel": "Brûlant : je n’en peux plus.",
+              "text": "Je crie ou je m’en vais."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quelle température ça monte ? Coche un niveau par situation.",
+          "hinweis": "Laisse une ligne vide si elle ne te correspond pas ou si elle est trop privée.",
+          "symbole": [
+            "nachdenken",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "frais",
+            "tiède",
+            "chaud",
+            "brûlant"
+          ],
+          "items": [
+            "École : je lève la main sans être interrogé.",
+            "École : je fais la queue à la cantine.",
+            "École : j’attends que l’enseignant ait du temps.",
+            "Maison : j’attends le repas.",
+            "Maison : quelqu’un parle, je veux raconter.",
+            "Loisirs : un autre enfant joue longtemps.",
+            "En route : j’attends le bus ou en voiture.",
+            "En route : j’attends chez le médecin."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis ta situation la plus chaude. Complète :",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Attendre est le plus dur pour moi quand …",
+            "Je le remarque dans mon corps : …"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "À quelle température ça monte à peu près ?",
+          "von": "frais",
+          "bis": "brûlant",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui t’aide ? Choisis une astuce ou écris la tienne.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "souffler longuement",
+            "sentir mes pieds au sol",
+            "répéter ma réponse dans ma tête",
+            "noter un mot-clé",
+            "compter doucement",
+            "me dire : « Bientôt mon tour. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Teste ton astuce pendant une semaine. Note la température.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quand ?",
+            "Situation",
+            "Mon astuce",
+            "Température (0–10)"
+          ],
+          "breiten": [
+            1.3,
+            2,
+            2,
+            1.3
+          ],
+          "beispiel": [
+            "lun., 12 h 30",
+            "cantine, la queue",
+            "souffler longuement",
+            "6"
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "skala",
+          "frage": "Après une semaine : quelle température maintenant dans ta situation ?",
+          "von": "frais",
+          "bis": "brûlant",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Voilà ce que j’ai remarqué : …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants évaluent où attendre est facile ou difficile, décrivent les signes du corps, choisissent une astuce pour leur situation la plus difficile et vérifient pendant une semaine si elle aide.",
+        "ablauf": [
+          "Entrée en matière (5 min) : présenter le thermomètre ; l’adulte donne un exemple : « À la cantine, dans la queue : quelle température ? » Les enfants montrent la hauteur avec la main.",
+          "Exercices 1–2 (12 min) : lire les niveaux, évaluer huit situations ; les lignes vides sont permises. En groupe, comparer sans noms : « Dans quelles situations ça monte haut pour beaucoup ? »",
+          "Exercices 3–4 (15 min) : choisir la situation la plus chaude, décrire les signes du corps, l’évaluer sur l’échelle et choisir une astuce (aussi dans « Des astuces pour patienter »).",
+          "Exercice 5 (5 min + 1 semaine) : expliquer le tableau ; noter chaque essai pendant une semaine. À la séance suivante, comparer avec la première évaluation."
+        ],
+        "hintergrund": "Celui qui sait où et à quel point l’attente lui est difficile peut s’exercer de façon ciblée ; l’auto-observation est la première étape de l’autogestion (Kanfer et al., 2012). Un thermomètre rend visibles et comparables des états intérieurs ; ces échelles sont courantes dans la thérapie cognitivo-comportementale avec les enfants (Kendall & Hedtke, 2006). On s’exerce d’abord dans les situations faciles, puis dans les plus difficiles. Les astuces possibles viennent de la recherche sur le délai de gratification (Mischel, 2014).",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Mischel, W. (2014). The Marshmallow Test. New York: Little, Brown."
+        ],
+        "differenzierung": {
+          "leichter": "Trois situations seulement (école, famille, loisirs) ; niveaux marqués par des couleurs.",
+          "schwerer": "Écrire un plan « si … alors … » pour la deuxième situation la plus chaude."
+        },
+        "impulse": [
+          "Qu’est-ce qui change dans ton corps quand ça chauffe ?",
+          "À quoi les autres voient-ils que c’est difficile pour toi ?",
+          "Qu’est-ce qui t’a aidé jusqu’ici pour attendre ?"
+        ],
+        "tipps": [
+          "En groupe : thermomètre en affiche ; les enfants accrochent une pince, sans nom, au bon niveau et voient que beaucoup vivent la même chose.",
+          "En séance individuelle : l’adulte donne d’abord un exemple personnel et interroge sur des moments précis : « Hier à la cantine ? »"
+        ],
+        "achtung": "Si l’attente s’accompagne presque partout de forte tension, de colère ou de larmes, en parler avec les parents et l’équipe de soutien et suggérer un bilan. Ne pas poser de diagnostic.",
+        "material": "Crayons de couleur ; en option, un sablier"
+      }
+    }
+  }
+]

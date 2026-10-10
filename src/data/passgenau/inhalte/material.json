@@ -21,7 +21,7 @@
  },
  "glas": {
   "de": "Glas",
-  "fr": "verre"
+  "fr": "verre ou bocal"
  },
  "heft": {
   "de": "kleines Heft",
@@ -32,7 +32,7 @@
   "fr": "coussins"
  },
  "klebeband": {
-  "de": "Klebeband",
+  "de": "Kreppband",
   "fr": "ruban adhésif"
  },
  "kleber": {
@@ -40,8 +40,8 @@
   "fr": "colle"
  },
  "korb": {
-  "de": "Papierkorb oder Eimer",
-  "fr": "corbeille ou seau"
+  "de": "Korb oder Eimer",
+  "fr": "panier ou seau"
  },
  "lampe": {
   "de": "kühle Tischlampe",
@@ -88,8 +88,8 @@
   "fr": "chaise"
  },
  "tuch": {
-  "de": "Tuch",
-  "fr": "foulard"
+  "de": "Tücher",
+  "fr": "foulards"
  },
  "uhr": {
   "de": "Uhr oder Timer",
@@ -106,5 +106,33 @@
  "zeitung": {
   "de": "Zeitung",
   "fr": "journal"
+ },
+ "karopapier": {
+  "de": "Karopapier",
+  "fr": "papier quadrillé"
+ },
+ "buntstifte": {
+  "de": "Buntstifte",
+  "fr": "crayons de couleur"
+ },
+ "karten": {
+  "de": "Karteikarten",
+  "fr": "fiches cartonnées"
+ },
+ "knete": {
+  "de": "Knete",
+  "fr": "pâte à modeler"
+ },
+ "handpuppe": {
+  "de": "Handpuppe",
+  "fr": "marionnette"
+ },
+ "bausteine": {
+  "de": "Bauklötze",
+  "fr": "cubes"
+ },
+ "sanduhr": {
+  "de": "Sanduhr oder Timer",
+  "fr": "sablier ou minuteur"
  }
 }

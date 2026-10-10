@@ -2,6 +2,7 @@
 // (src/data/passgenau/inhalte/*.json), indiziert nach Rolle. Einmal geladen, danach aus dem Speicher.
 import type { Baustein, NummeriertesBlatt, Sprache } from '../../blatt/typen'
 import { ELDIB_FR } from '../../blatt/eldib-fr'
+import ELDIB_ICH from '../../data/passgenau/eldib-ich.json'
 import type { Einheit as KursEinheit } from '../../kurs/typen'
 import type { Material } from '../../types/material'
 import type { KatalogEintrag, MikroBaustein, Rolle, Sozialform, Stufe, Stundenschritt, Wahlkarte } from '../typen'
@@ -73,7 +74,16 @@ const QUELLE_NAME: Record<Stundenschritt['quelle']['art'], Record<Sprache, strin
   crew: { de: 'CREW', fr: 'CREW' },
   freude: { de: 'Freude & Beziehung', fr: 'Plaisir et relation' },
   ritual: { de: 'Ritual', fr: 'Rituel' },
-  praxis: { de: 'Passgenau', fr: 'Passgenau' },
+  // eine Kategorie statt des App-Namens (Blind-Bewertung 10: „Baustein-Label ‚Passgenau‘ statt einer Kategorie“)
+  praxis: { de: 'Übung', fr: 'Exercice' },
+}
+/** Eigene Schritte des Plans (Übertragen, Rückblick, Einstieg …) mit ihrer Rolle als Kategorie */
+const PG_NAME: Record<string, { de: string; fr: string }> = {
+  'pg:uebertragen': { de: 'Übertragen', fr: 'Transfert' },
+  'pg:folge-transfer': { de: 'Rückblick', fr: 'Bilan' },
+  'pg:rueckblick': { de: 'Rückblick', fr: 'Bilan' },
+  'pg:einstieg': { de: 'Einstieg', fr: 'Introduction' },
+  'pg:blatt': { de: 'Blatt', fr: 'Fiche' },
 }
 
 type Texte = Pick<Stundenschritt, 'quelle' | 'titel' | 'text' | 'sagen' | 'wennEsKippt' | 'tipp' | 'fr' | 'achtung' | 'vorbereitung' | 'elternbrief'>
@@ -94,6 +104,9 @@ function satzMit(text: string | undefined, wort: RegExp): string | undefined {
 function stelle(m: { id: string; stelle?: number }): number {
   return m.stelle ?? Number(/(\d+)$/.exec(m.id)?.[1] ?? 0)
 }
+
+/** Luxemburgisch geschriebene Material-Titel (der Text ist deutsch). */
+export const LB_TITEL_RE = /ë|\b(De|Den|D['’]|mat|een|vun|sech|mäi|Mäi|meng|Meng|net|Net|fir|zesumme|wat|Wat|ech|wéi|gëtt|Kanner|ons|ass|loossen|ofginn|eppes|keng|dat|elo|och|nees|maachen|kucken|hunn|ginn|Gefill|Gefiller)\b/
 
 /** Texte eines Stundenschritts aus seiner Quelle (null: Quelle fehlt – Eintrag fällt weg). */
 function texteAusQuelle(m: { id: string; stelle?: number }, q: Quellen, idx: Indizes): Texte | null {
@@ -133,10 +146,15 @@ function texteAusQuelle(m: { id: string; stelle?: number }, q: Quellen, idx: Ind
     const roh = /^(einstieg|hauptteil(\s*\d+)?|abschluss|vertiefung|teil\s*\d+|phase\s*\d+)\s*:\s*(.+)$/i.exec(ohneMin)?.[3] ?? ohneMin
     const nachStrich = roh.includes(' – ') ? roh.split(' – ').slice(1).join(' – ') : roh.includes(' - ') ? roh.split(' - ').slice(1).join(' - ') : roh
     // „Spielen“, „Durchführung 2“, „Hauptteil“: allein sagt das nichts – dann der Titel des Materials
-    const allgemein = /^(einstieg|spielen|durchführung|üben( und vertiefen)?|übung(sphase)?|hauptteil|hauptphase|arbeitsphase|erarbeitung|aktivität|vertiefung|vertiefen|anwendung|praxis|phase|einheit|stunde|input|gestalten|auswertung|abschluss|reflexion|transfer|teil)(\s*\d+)?\s*(\(.*\))?$/i.test(nachStrich.trim())
-    const titel = !nachStrich || allgemein ? mat.title : nachStrich
+    // Blind-Bewertung 8: „Ritual“, „Reise“, „Bauen“ als Titel des Kerns und als Echo im Einstieg sagen nichts
+    const allgemein = /^(einstieg|spielen|durchführung|üben( und vertiefen)?|übung(sphase)?|hauptteil|hauptphase|arbeitsphase|erarbeitung|aktivität|vertiefung|vertiefen|anwendung|praxis|phase|einheit|stunde|input|gestalten|auswertung|abschluss|reflexion|transfer|teil|ritual|reise|bauen|basteln|malen|spiel|lied|geschichte|lösen|planen|probieren|ausprobieren|besprechen|nachdenken|sammeln|teilen|vorstellen|präsentieren|üben|runde|aufgabe|auftrag|start|warm-?up|aufwärmen)(\s*\d+)?\s*(\(.*\))?$/i.test(nachStrich.trim())
+    // luxemburgischer Titel über deutschem Text (102 von 600 Materialien): nicht als Titel oder Quelle drucken
+    // (Blind-Bewertung 8: „Suergesteng: ofginn a lass loossen“ im deutschen Plan)
+    const lb = LB_TITEL_RE.test(mat.title)
+    // … dann das erste (deutsche) Schlagwort des Materials („Fantasiereise“ statt „Führen Sie ruhig und langsam: …“)
+    const titel = !nachStrich || allgemein ? (lb ? (mat.tags?.[0]?.trim() || kurz(a.text.split(SATZ_GRENZE)[0] ?? nachStrich, 50)) : mat.title) : nachStrich
     return {
-      quelle: { art: 'material', titel: mat.title },
+      quelle: { art: 'material', titel: lb ? '' : mat.title },
       titel, text: a.text,
       achtung: mat.remark, vorbereitung: mat.materialsNeeded,
     }
@@ -325,7 +343,9 @@ export function baueKatalog(q: Quellen, bDatei: BausteineDatei, sDatei: Schritte
   for (const roh of inhalte.schritte) {
     const da = eintraege.get(roh.id!)
     if (da && da.typ === 'schritt') {
-      add({ ...da, ...roh, typ: 'schritt', id: da.id, h: da.h } as KatalogEintrag)
+      // Ergänzung mit französischem Text (inhalte/fr-*.json): dann gibt es den Schritt auch auf Französisch
+      const sprache = roh.fr ? { ...da.sprache, fr: true } : da.sprache
+      add({ ...da, ...roh, typ: 'schritt', id: da.id, h: da.h, sprache } as KatalogEintrag)
       continue
     }
     const s = inhaltSchritt(roh as Partial<Stundenschritt> & { id: string })
@@ -419,7 +439,9 @@ export function staemme(t: string): Set<string> {
  *  („fünfmal kopieren“) weg. */
 function vorbereitungFuer(e: Stundenschritt): string | undefined {
   if (!e.vorbereitung) return undefined
-  const einheit = e.id.startsWith('k:') || e.id.startsWith('f:')
+  // auch Material: dessen Vorbereitung gilt für alle Teile (Blind-Bewertung 8: „Kühlpacks, Riechstreifen, Elternzettel“ für
+  // Bausteine, die es in der Stunde nicht gibt)
+  const einheit = e.id.startsWith('k:') || e.id.startsWith('f:') || e.id.startsWith('m:')
   const bezug = staemme(`${e.titel} ${e.text} ${(e.sagen ?? []).join(' ')} ${e.einzelvariante?.text ?? ''}`)
   const teile = e.vorbereitung
     .split(/\s+·\s+/)
@@ -436,6 +458,10 @@ function vorbereitungFuer(e: Stundenschritt): string | undefined {
     })
     // Reste wie „ruhiger Moment“ (aus „Keine; ruhiger Moment“) sagen nichts
     .filter((x) => x.split(/\s+/).length >= 3)
+    // abgeschnittene Reste („in den vereinbarten Gefühlsfarben), Bildkarten …“, Blind-Bewertung 8, A11): Klammern müssen
+    // aufgehen, und ein Teil beginnt nicht mitten im Satz
+    .filter((x) => (x.match(/\(/g) ?? []).length === (x.match(/\)/g) ?? []).length && !/^[a-zäöüéèàç]/.test(x))
+    .map((x) => x.replace(/[;,:]\s*$/, ''))
     .filter((x) => !einheit || [...staemme(x)].some((w) => bezug.has(w)))
   return teile.length ? teile.join(' · ') : undefined
 }
@@ -484,11 +510,23 @@ const ART_NAME: Record<string, string> = {
   rueckblick: 'Rückblick', glaeser: 'Gläser', netz: 'Netz', kurve: 'Kurve', tageskreis: 'Tageskreis', farbkalender: 'Farbkalender', wortspeicher: 'Wortspeicher',
   schneiden_kleben: 'Schneiden & Kleben', memory: 'Memory', labyrinth: 'Labyrinth', laufweg: 'Würfelspiel', minibuch: 'Mini-Buch',
   punkte_verbinden: 'Punkte verbinden', klappbild: 'Klappbild', faedelkarte: 'Fädelkarte', bastelbogen: 'Bastelbogen', suchbild: 'Suchbild',
-  anziehpuppe: 'Anziehpuppe', forscherblatt: 'Forscherblatt', spalten: 'Zwei Spalten',
+  anziehpuppe: 'Anziehpuppe', forscherblatt: 'Forscherblatt', spalten: 'Zwei Spalten', diagramm: 'Diagramm', strichliste: 'Strichliste',
+}
+/** französisch (Blind-Bewertung 8: „Rückblick“ deutsch im französischen Plan, „diagramm:“ klein als Aufgabentitel) */
+const ART_NAME_FR: Record<string, string> = {
+  geschichte: 'Histoire', info: 'Info', text: 'Texte', ankreuzen: 'À cocher', bilder: 'Images', tabelle: 'Tableau', satzanfaenge: 'Débuts de phrases',
+  linien: 'Lignes', frage: 'Question', feld: 'Cadre', wennDann: 'Plan si-alors', dialog: 'Dialogue', vertrag: 'Accord', einschaetzung: 'Évaluation',
+  skala: 'Échelle', zuordnen: 'Relier', gefuehle: 'Visages des émotions', gefuehlsrad: 'Roue des émotions', ampel: 'Feu tricolore', thermometer: 'Thermomètre',
+  vulkan: 'Volcan', eisberg: 'Iceberg', koerper: 'Silhouette', batterie: 'Batterie', waage: 'Balance', leiter: 'Échelle à barreaux', zielscheibe: 'Cible',
+  hand: 'Main', mindmap: 'Carte mentale', schritte: 'Étapes', plan: 'Plan', tagesplan: 'Programme du jour', atmen: 'Respiration', comic: 'BD', karten: 'Cartes',
+  rueckblick: 'Retour', glaeser: 'Bocaux', netz: 'Toile', kurve: 'Courbe', tageskreis: 'Cercle de la journée', farbkalender: 'Calendrier des couleurs', wortspeicher: 'Banque de mots',
+  schneiden_kleben: 'Découper et coller', memory: 'Memory', labyrinth: 'Labyrinthe', laufweg: 'Jeu de dé', minibuch: 'Mini-livre',
+  punkte_verbinden: 'Relier les points', klappbild: 'Image à rabat', faedelkarte: 'Carte à enfiler', bastelbogen: 'Bricolage', suchbild: 'Image à chercher',
+  anziehpuppe: 'Poupée à habiller', forscherblatt: 'Fiche d’exploration', spalten: 'Deux colonnes', diagramm: 'Diagramme', strichliste: 'Bâtons',
 }
 
-export function artName(art: string): string {
-  return ART_NAME[art] ?? art
+export function artName(art: string, sprache: Sprache = 'de'): string {
+  return (sprache === 'fr' ? ART_NAME_FR[art] : ART_NAME[art]) ?? ART_NAME[art] ?? art
 }
 
 /** Kurzfassung ohne Schnitt mitten im Satz, wo es geht: ganze Sätze bis n, sonst bis zum letzten Komma, sonst Wortgrenze. */
@@ -514,8 +552,8 @@ export function quelleText(e: KatalogEintrag, sprache: Sprache = 'de'): string {
     const titel = b ? (sprache === 'fr' && b.fr ? b.fr.titel : b.de.titel) : e.quelle.blatt
     return `${e.quelle.nr} · ${titel}`
   }
-  const name = QUELLE_NAME[e.quelle.art]?.[sprache] ?? e.quelle.art
-  if (e.quelle.art === 'freude' || e.quelle.art === 'ritual' || e.quelle.art === 'praxis') return name
+  const name = PG_NAME[e.id]?.[sprache] ?? QUELLE_NAME[e.quelle.art]?.[sprache] ?? e.quelle.art
+  if (e.quelle.art === 'freude' || e.quelle.art === 'ritual' || e.quelle.art === 'praxis' || !e.quelle.titel) return name
   return `${name} · ${e.quelle.titel}`
 }
 
@@ -533,8 +571,11 @@ export function bausteinInhalt(k: Katalog, b: MikroBaustein, sprache: Sprache): 
 /** Textmerkmale (einzel.ts) des gedruckten Texts eines Eintrags, DE und FR zusammen; Schritte: Titel, Text (bei Einzelvariante
  *  deren Text), Sagen; Bausteine: aller Text des Pakets. */
 export function merkmaleVon(k: Katalog, e: KatalogEintrag): Set<string> {
+  // je Textmodus getrennt: in der Gruppe gilt der Text der Quelle, einzeln die Einzelvariante (Testlauf 11: nach einer
+  // Gruppenfolge galten in derselben Sitzung alle Einzelstunden-Texte als Gruppentexte – andere Kerne für spätere Kinder)
   const cache = intern(k).merkmale
-  let m = cache.get(e.id)
+  const schluessel = `${gruppenText ? 'g' : 'e'}|${e.id}`
+  let m = cache.get(schluessel)
   if (m) return m
   const teile: string[] = []
   for (const sp of ['de', 'fr'] as const) {
@@ -548,7 +589,7 @@ export function merkmaleVon(k: Katalog, e: KatalogEintrag): Set<string> {
     }
   }
   m = textMerkmale(teile.join('\n'))
-  cache.set(e.id, m)
+  cache.set(schluessel, m)
   return m
 }
 
@@ -571,9 +612,20 @@ export function istGruppenText(): boolean {
 }
 
 /** In der Gruppenstunde spricht der Text von jedem Kind (bleibt Einzahl: „Jedes Kind malt …“, „Chaque enfant dessine …“) */
-function fuerJedesKind(t: string): string {
+function fuerJedesKind(t: string, einKind = false): string {
   if (!gruppenText) return t
-  return t
+  // Bedingungen und „Wenn es kippt“ meinen ein einzelnes Kind (Blind-Bewertung 10: „Si chaque enfant ne choisit rien“)
+  const ein = t
+    .replace(/\b(Wenn|wenn|Falls|falls|Sobald|sobald|Mag|mag|Will|will|Kann|kann|Braucht|braucht) das Kind\b/g, '$1 ein Kind')
+    .replace(/\b(Si|si|Quand|quand) l['’]enfant\b/g, '$1 un enfant')
+    .replace(/\b([Ll]orsqu|[Qq]u)e l['’]enfant\b/g, '$1’un enfant')
+  if (einKind)
+    return ein
+      .replace(/\b([Dd])as Kind\b/g, (_m, d: string) => (d === 'D' ? 'Ein Kind' : 'ein Kind'))
+      .replace(/\b([Dd])e l['’]enfant\b/g, (_m, d: string) => `${d}’un enfant`)
+      .replace(/\b([Ll]orsqu|[Qq]u|[Pp]uisqu)e l['’]enfant\b/g, '$1’un enfant')
+      .replace(/\b([Ll])['’]enfant\b/g, (_m, l: string) => (l === 'L' ? 'Un enfant' : 'un enfant'))
+  return ein
     .replace(/\b([Dd])as Kind\b/g, (_m, d: string) => (d === 'D' ? 'Jedes Kind' : 'jedes Kind'))
     .replace(/\b([Dd])em Kind\b/g, (_m, d: string) => (d === 'D' ? 'Jedem Kind' : 'jedem Kind'))
     .replace(/\b([Dd])es Kindes\b/g, (_m, d: string) => (d === 'D' ? 'Jedes Kindes' : 'jedes Kindes'))
@@ -588,7 +640,7 @@ export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; t
     // in der Einzelstunde leitet die Fachkraft (nicht „die Lehrkraft“, nicht „l’enseignante“); mit Einzelvariante ohne
     // „(Paare)“ im Titel (Blind-Bewertung 9.10.)
     const titel = !gruppenText && (e.einzelvariante || fr?.einzelvariante) ? t.titel.replace(PAAR_TITEL_RE, '') : t.titel
-    return { titel: alsFachkraft(titel), text: fuerJedesKind(alsFachkraft(ev?.text ?? t.text)), sagen: (ev?.sagen ?? t.sagen)?.map(alsFachkraft), wennEsKippt: t.wennEsKippt && fuerJedesKind(alsFachkraft(t.wennEsKippt)), quelle: quelleText(e, sprache) }
+    return { titel: alsFachkraft(titel), text: fuerJedesKind(alsFachkraft(ev?.text ?? t.text)), sagen: (ev?.sagen ?? t.sagen)?.map(alsFachkraft), wennEsKippt: t.wennEsKippt && fuerJedesKind(alsFachkraft(t.wennEsKippt), true), quelle: quelleText(e, sprache) }
   }
   const liste = aktuell ? bausteinInhalt(aktuell, e, sprache) : []
   const aufgaben = liste.filter((x): x is Extract<Baustein, { art: 'aufgabe' }> => x.art === 'aufgabe').map((x) => x.text)
@@ -597,29 +649,53 @@ export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; t
     if (!b) return ''
     if ('titel' in b && typeof b.titel === 'string' && b.titel) return b.titel
     if (b.art === 'frage') return b.text
-    return artName(b.art)
+    return artName(b.art, sprache)
   }
-  const titel = aufgaben[0] ? kurz(aufgaben[0], 80) : `${artName(haupt?.art ?? '')}${titelVon(haupt) && titelVon(haupt) !== artName(haupt?.art ?? '') ? ': ' + titelVon(haupt) : ''}`
+  const titel = aufgaben[0] ? kurz(aufgaben[0], 80) : `${artName(haupt?.art ?? '', sprache)}${titelVon(haupt) && titelVon(haupt) !== artName(haupt?.art ?? '', sprache) ? ': ' + titelVon(haupt) : ''}`
   const inhalt = texte(liste.filter((x) => x.art !== 'aufgabe'))
     .map((t) => t.text)
     .filter(Boolean)
-  return { titel, text: kurz([...aufgaben.slice(1), ...inhalt].join(' · ') || artName(haupt?.art ?? ''), 220), quelle: quelleText(e, sprache) }
+  return { titel, text: kurz([...aufgaben.slice(1), ...inhalt].join(' · ') || artName(haupt?.art ?? '', sprache), 220), quelle: quelleText(e, sprache) }
 }
 
-export function ichSatz(k: Katalog, code: string): string | undefined {
-  return intern(k).eldib.items[code]?.ich[0]
+/** Ich-Sätze aus eldib-ich.json: `fr` (erster Bank-Satz), `de` (ohne „die/der Lehrer:in“), `frIch` (jeder Bank-Satz
+ *  übersetzt) und `allg` (altersneutral aus der Beschreibung – der erste Bank-Satz ist oft ein Beispiel für Kleine) */
+const ICH = ELDIB_ICH as Record<string, { de?: string; fr?: string; frIch?: string[]; allg?: { de?: string; fr?: string } }>
+/** ab diesem Alter der altersneutrale Satz statt des Beispiels (V-13: „Ich setze mich in den Morgenkreis“) */
+const ALLG_AB = 10
+
+export function ichSatz(k: Katalog, code: string, alter?: number): string | undefined {
+  if (alter !== undefined && alter >= ALLG_AB && ICH[code]?.allg?.de) return ICH[code].allg!.de
+  return ICH[code]?.de ?? intern(k).eldib.items[code]?.ich[0]
 }
 
 export function eldibKurz(k: Katalog, code: string, sprache: Sprache = 'de'): string {
   return (sprache === 'fr' ? ELDIB_FR[code] : undefined) ?? intern(k).eldib.items[code]?.k ?? code
 }
 
-/** Ich-Satz eines Ziels in der Sprache des Blatts: der des Profils, sonst der erste der ELDiB-Bank. Auf Französisch nur ein
- *  französischer Satz (die Bank hat keine) – sonst keiner, und die Ziel-Zeile entfällt. */
-export function zielSatz(k: Katalog, p: { ziele: { code: string; ich: string }[] }, code: string, sprache: Sprache): string | undefined {
+/** Ich-Satz eines Ziels in der Sprache des Blatts: der des Profils, sonst der erste der ELDiB-Bank. Auf Französisch der
+ *  des Profils, wenn er französisch ist, sonst der aus eldib-ich.json (Testlauf 10: « Objectifs : Terminer » ohne Satz). */
+export function zielSatz(k: Katalog, p: { ziele: { code: string; ich: string }[]; alterJahre?: number }, code: string, sprache: Sprache): string | undefined {
   const eigen = p.ziele.find((z) => z.code === code)?.ich?.trim()
-  if (sprache === 'fr') return eigen && /^(je|j['’]|moi)\b/i.test(eigen) ? eigen : undefined
-  return eigen || ichSatz(k, code)
+  if (sprache === 'fr') {
+    if (eigen && /^(je\b|j['’]|moi\b)/i.test(eigen)) return eigen
+    // deutscher Satz des Profils: ist es ein Satz der Bank, dessen Übersetzung; sonst der altersneutrale
+    const i = eigen ? (intern(k).eldib.items[code]?.ich ?? []).findIndex((x) => x.trim() === eigen) : -1
+    if (i >= 0 && ICH[code]?.frIch?.[i]) return ICH[code].frIch![i]
+    if (eigen || (p.alterJahre ?? 0) >= ALLG_AB) return ICH[code]?.allg?.fr ?? ICH[code]?.fr
+    return ICH[code]?.fr
+  }
+  // ohne Gender-Formen (Blind-Bewertung 10: „Ich warte, bis die/der Lehrer:in mich … ruft“ aus dem Profil)
+  if (eigen && /:in\b|\/|\*/.test(eigen)) {
+    const bank = intern(k).eldib.items[code]?.ich ?? []
+    if (bank[0]?.trim() === eigen && ICH[code]?.de) return ICH[code].de
+    return eigen
+      .replace(/\b(die|der)\/(der|die) (\w+):in\b/g, 'die Lehrkraft')
+      .replace(/\b(den|die)\/(die|den) (\w+):in\b/g, 'die Lehrkraft')
+      .replace(/\b(dem|der)\/(der|dem) (\w+):in\b/g, 'der Lehrkraft')
+      .replace(/\b(sie|er)\/(er|sie)\b/g, 'sie')
+  }
+  return eigen || ichSatz(k, code, p.alterJahre)
 }
 
 export function eldibStufe(k: Katalog, code: string): number {

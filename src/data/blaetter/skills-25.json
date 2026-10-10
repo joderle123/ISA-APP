@@ -1577,6 +1577,210 @@
         "material": "Themenkarten, Lose, Stoppuhr, Glocke"
       }
     },
+    "fr": {
+      "titel": "Tournoi de débat",
+      "untertitel": "Convaincre, rester correct – et savoir quoi faire quand le jury décide contre toi.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Comment se déroule un débat",
+          "punkte": [
+            "Ligne d’opinion avant : le public se place.",
+            "Ouverture : pour 1 minute, puis contre 1 minute.",
+            "Échange : 3 minutes, chaque intervention dure 30 secondes au maximum – qui contredit reformule d’abord.",
+            "Conclusion : contre 30 secondes, puis pour 30 secondes.",
+            "Ligne d’opinion après, puis le jury décide."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Avant le tournoi : ton plan anti-frustration pour le moment où vous perdez. Coche ce qui t’aide.",
+          "hinweis": "On prépare un plan pour la colère tant qu’on est encore calme.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "expirer longuement deux fois",
+            "lever les épaules puis les relâcher",
+            "boire de l’eau",
+            "sortir un instant en prévenant",
+            "serrer la main de l’autre équipe",
+            "demander un conseil"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si le jury décide contre nous et que je sens la colère monter,",
+              "dann": "j’expire longuement deux fois, je serre la main et je demande un conseil plus tard."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Préparation : construisez trois arguments pour votre camp.",
+          "hinweis": "Affirmation, raison, exemple. Sans exemple, ce n’est qu’une opinion.",
+          "symbole": [
+            "partner",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Notre sujet : …",
+            "Notre camp (pour ou contre) : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Affirmation",
+            "Raison",
+            "Exemple"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Les pauses servent à se reposer.",
+            "Avec de la musique ou un message à des amis, beaucoup décrochent plus vite.",
+            "Qui écoute de la musique pendant la pause est souvent plus calme en cours ensuite."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "L’argument le plus fort de l’autre camp : …",
+            "Notre réponse : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jury : quel camp a été le meilleur ? Cochez pour chaque point et décidez à la majorité.",
+          "hinweis": "Évaluez les arguments, pas les personnes – et pas votre propre opinion sur le sujet.",
+          "symbole": [
+            "ankreuzen",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Débat n° …  ·  Sujet : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Pour",
+            "égal",
+            "Contre"
+          ],
+          "items": [
+            "Connaissances : qui maîtrisait son sujet ?",
+            "Force de conviction : qui avait les meilleures raisons et les meilleurs exemples ?",
+            "Réponse à l’autre camp : qui a répondu aux contre-arguments ?",
+            "Présentation : qui a parlé clairement et de façon compréhensible ?",
+            "Fair-play : qui est resté sur le sujet et a laissé les autres finir ?"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "A gagné : …",
+            "La ligne d’opinion a bougé – en direction de : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Retour : pour chaque camp, un compliment et un conseil.",
+          "symbole": [
+            "sprechen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Camp",
+            "Compliment : c’était fort, la façon dont …",
+            "Conseil : la prochaine fois …"
+          ],
+          "zeilen": 2,
+          "breiten": [
+            0.8,
+            2.3,
+            2.3
+          ],
+          "beispiel": [
+            "Pour",
+            "… vous avez apporté l’exemple du bus.",
+            "… répondre directement à l’argument sur le bruit."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après le tournoi : quelle était l’intensité de ta frustration – et qu’est-ce qui t’a aidé ?"
+        },
+        {
+          "art": "skala",
+          "von": "aucune frustration",
+          "bis": "énorme frustration",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui m’a aidé : …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes préparent une position tirée au sort avec affirmation, raison et exemple, évaluent en tant que jury selon des critères, donnent un retour avec compliment et conseil et décident à l’avance comment réagir à une défaite.",
+        "ablauf": [
+          "Avant : vérifier les sujets, écrire au tableau le plan du tournoi selon la taille du groupe, copier la page 2 une fois par débat.",
+          "Input (10 min) : expliquer le déroulement à l’aide de l’encadré ; tâche 1 individuelle – le plan anti-frustration se fait avant le tournoi.",
+          "Préparation (20 min) : tirer les camps au sort, tâche 2 en équipe, répéter l’ouverture une fois à voix basse.",
+          "Tournoi (30 min) : environ dix minutes par débat avec ligne d’opinion ; le jury utilise les tâches 3 et 4.",
+          "Ensuite (5 min) : remise des prix, puis tâche 5 et mise en pratique du plan anti-frustration."
+        ],
+        "hintergrund": "Débattre exerce à justifier une opinion, à écouter et à répondre aux contre-arguments – des bases de la participation démocratique, telles que le Conseil de l’Europe les décrit pour l’éducation aux droits humains (Council of Europe, 2012). Les retours sont efficaces lorsqu’ils disent concrètement ce qui a réussi et ce qui peut être amélioré ensuite (Hattie & Timperley, 2007). Celui ou celle qui comprend une défaite comme une indication de ce qui reste à apprendre, plutôt que comme un jugement sur sa personne, persévère plus facilement (Dweck, 2006) ; un plan « si … alors » écrit à l’avance aide face à la colère (Gollwitzer, 1999).",
+        "quellen": [
+          "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Préparer un seul argument avec raison et exemple ; comme jury, n’évaluer d’abord que trois points.",
+          "schwerer": "Prononcer la conclusion sans notes et y reprendre deux arguments de l’autre camp."
+        },
+        "impulse": [
+          "Quel argument de l’autre camp vous a convaincus ?",
+          "Qu’est-ce qui est le plus difficile : défendre une opinion qui n’est pas la sienne – ou perdre ?"
+        ],
+        "tipps": [
+          "Décerner un prix du fair-play et un prix de la meilleure question – ainsi, l’équipe gagnante n’est pas la seule à être reconnue.",
+          "Des sujets légers pour la finale réduisent la pression."
+        ],
+        "achtung": "Choisir des sujets sans lien avec la situation de vie de certaines personnes. Arrêter immédiatement les attaques personnelles, poser des limites claires aux propos méprisants. Faire un suivi après une défaite.",
+        "material": "Cartes de sujets, papiers pour le tirage au sort, chronomètre, cloche"
+      }
+    },
     "verwandt": [
       "skills-mein-argument",
       "skills-debatte"

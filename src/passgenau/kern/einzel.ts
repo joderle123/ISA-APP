@@ -18,9 +18,13 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
       String.raw`\b\w+-Gruppe\b|\bGruppenmitglied\w*|\bunserer Klasse\b|\bStaffel\w*|\bdevant les autres\b|\bconcours de cris\b|\bvote\b|\bAbstimmung\b|\bGruppentisch\w*|\bFreiwillige[n]?\b|\bBanknachbar\w*|\bLehrperson\w*|\bKlassen-\w+|\bKugellager\b|\bStammgruppe\w*|\bpro Team\b|\bLerngruppe\w*|\bExpertengruppe\w*|\bvolontaires?\b|\bvoisin(e)? de table\b`,
       // „Alle stehen hinter ihrem Stuhl“, „eine freiwillige Person“, „Die Kinder …“, „tous les enfants“
       String.raw`\balle (stehen|sitzen|gehen|laufen|machen|bewegen|setzen|legen|zeigen|rufen|schreiben|malen|bekommen|ziehen)\b|\bfreiwillige Person\b|\bdie Kinder (sitzen|stehen|gehen|bilden|bekommen|ziehen|tauschen|stellen)\b|\btous les enfants\b|\btout le monde\b`,
+      // Blind-Bewertung 10: „Zu zweit (die Leitung mit der dritten Person) stehen sich alle gegenüber“
+      String.raw`\bdritten? Person\b|\bstehen sich alle\b|\btroisième personne\b`,
     ].join('|'),
     'i',
   ),
+  // Blind-Bewertung 8: „Die Kinder halten den Stein …“, „für C3 dürfen die Kinder begründen“ in einer Einzelstunde
+  kinderPlural: /\b[Dd]ie Kinder [a-zäöü]{3,}|\b(dürfen|sollen|können|müssen|werden|bekommen|malen|machen|zeigen) die Kinder\b|\b[Ll]es enfants [a-zéèêà]{3,}|\b(peuvent|doivent) les enfants\b/,
   // Anrede einer Gruppe
   ihr: /\b(euch|eure[nmrs]?)\b|\b(kennt|wisst|habt|seid|könnt|wollt|findet|seht|hört|denkt|meint|glaubt|erinnert|braucht|mögt) ihr\b|\b[Ii]hr (seid|habt|könnt|dürft|macht|sucht|geht|bekommt|werdet|sollt|wollt|dürft)\b|\b(Setzt|Stellt|Schaut|Nehmt|Macht|Sucht|Geht|Schreibt|Malt|Überlegt|Erzählt) (euch|ihr)\b|\bvous (allez|êtes|avez|pouvez)\b/,
   // für Jugendliche geschrieben
@@ -28,7 +32,7 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   film: /\b(Film|Filme[ns]?|Filmausschnitt|Kurzfilm|Clip|Video|YouTube|Doku|Dokumentation|Trailer)\b|\b(film|extrait vidéo|vidéo|clip)\b/,
   draussen: /\b(Ausflug|Exkursion|Elterneinverständnis|Wiese|Wald|Park|Spaziergang|draußen|im Freien|Schulhof|Pausenhof|Naturtag|Spielplatz)\b|\b(sortie|en plein air|dehors|forêt|cour de récréation)\b/,
   kueche: /\b(Küche|kochen|kocht|backen|backt|Backofen|Teig|Rezept)\b|\b(cuisine|cuisiner|four|recette|pâte)\b/,
-  gaeste: /\b(Gäste|Gast|Betriebsbesuch|Besuch(er)?|Bühne|Publikum|Aufführung|filmen|aufnehmen mit dem Handy)\b|\b(invités?|spectateurs|public|scène)\b/,
+  gaeste: /\b(Gäste|Gast|Betriebsbesuch|Besuch(er)?|Bühne|Publikum|Aufführung|filmen|aufnehmen mit dem Handy)\b|\b(invités?|spectateurs|le public|devant un public|sur (la )?scène)\b/,
   // Verweis auf ein Arbeitsblatt der Quelle, das in Passgenau nicht gedruckt wird
   blattverweis: /\b(Aufgabe|Seite|Teil|Schritt|Station|Kapitel) \d\b|\b(Missionen?|Laufzettel|Fallkarten?|Fallakten?|Bodenradar|Forscher-Blatt|Akku-Blatt|Energie-Linie|Skills-Buch|Sinneskiste)\b|\b(Arbeitsblatt|Arbeitsblattes|Schülerblatt|Kopiervorlage|Vorlage|Koffer-Arbeitsblatt|Rückenwind-Blatt|Detektivblatt|Etappen-Karte|Ziel-Kompass|Motivations-Motor|Belohnungs-Baum|Tank-Tabelle)\b|\b(exercice|page|partie) \d\b|\bfiche (de travail|élève)\b/,
   // setzt eine frühere Stunde der Quelle voraus (dritte Blind-Bewertung: „Retour, mission“, „Kam dein Moment?“, Ferien-
@@ -51,7 +55,7 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   // Vorsicht koerper
   koerper: /\b(eigenen? Hand|Hand (nach|um)zeichnen|Umriss (deiner|der) Hand|ta propre main|contour de (ta|la) main|Aussehen|Körperbild|Strand\w*|Bikini|Badeanzug|Gewicht|Figur|dick|dünn|Spiegel\w*|Diät|Kalorien|Körper-Chip|mein Körper verändert)\b|\b(apparence|poids|maillot|plage|régime|miroir)\b/,
   // belastende Sätze (nur mit Hilfe-Zeile; bei offener Krise nie)
-  belastend: /\b(hilft (mir )?(sowieso )?keiner|alles egal|hoffnungslos|wertlos|niemand mag mich|keiner mag mich|ich hasse mich|nicht mehr leben|sinnlos|am liebsten weg|ich bin (so )?dumm|ich kann nichts|ich bin nichts wert|ich werde nie|ich bin hässlich|ich bin ein Versager|ich schaffe (das|es) nie|alle sind gegen mich)\b|\b(personne ne m['’]aide|je m['’]en fiche de tout|sans espoir|je ne vaux rien)\b/i,
+  belastend: /\b(hilft (mir )?(sowieso )?keiner|alles egal|hoffnungslos|wertlos|niemand mag mich|keiner mag mich|ich hasse mich|nicht mehr leben|sinnlos|am liebsten weg|ich bin (so )?dumm|ich kann nichts|ich bin nichts wert|ich werde nie|ich bin hässlich|ich bin ein Versager|ich schaffe (das|es) nie|schaffe ich nie|alle sind gegen mich|alle sind besser als ich|keiner will mit mir|niemand will mit mir|ich mache (immer )?alles falsch)\b|\b(personne ne m['’]aide|je m['’]en fiche de tout|sans espoir|je ne vaux rien|je n['’]y arriverai jamais|tout le monde est meilleur que moi|personne ne veut jouer avec moi|je fais tout de travers)\b/i,
   // heikel ohne Freischaltung (T-M1 – auch ohne Beschriftung „sensibel“)
   heikel: /\b(Körpergrenze\w*|Körper-Grenze\w*|zu nah|Nähe und Distanz|Grenzen spüren|Körperabstand|Grenzverletzung\w*|Übergriff\w*|Garten-Übung|Selbstverletzung|selbstverletz\w*|Suizid\w*|ritzen|sexuell\w*|Missbrauch|Gewalt zu Hause)\b|\b(automutilation|suicide|abus|agression sexuelle)\b/i,
   // Themen für Ältere (A10): Dating, Party, Alkohol, Drogen
@@ -67,7 +71,25 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   leistung: /\b(Timer läuft|Le minuteur tourne|le minuteur tourne|gegenseitig abfragen|abfragen lassen|Abfrage\w*|Kurztest|Probetest|Probeklausur|Lücken markieren|se tester|s['’]interroger|interrogation|test blanc)\b/i,
   // kindliche Elemente (bei Jugendlichen ausgeschlossen)
   kindlich: /\b(Sticker|Stempel|Smiley\w*|Kuscheltier\w*|Handpuppe\w*|Wachsmal\w*|Löffel-Parcours|Flamingo\w*|Zauberstab|Zauberwort\w*|Ausmalbild\w*|Gummibärchen|autocollants?|peluches?|marionnettes?|craies grasses|flamant\w*|baguette magique|gestrichelten Linien nach|Spure\w* \w+ nach|nachspuren|repasse\w* les pointillés)\b/i,
-  gefuehlfrage: /\b(fühle ich mich|Wie bereit fühlst du dich|wo bist du (jetzt|gerade)|Wie fühlst du dich|Wie geht es dir|Was macht dich (traurig|wütend|Angst)|ich bin traurig, weil|Ich fühle mich|Daumen (hoch|runter|hoch oder runter)|wie (traurig|wütend) bist du|Gefühl(e)? (benennen|zeigen|abfragen|erzählen)|Welches Tier bist du|Wie ist das Wetter bei dir|wie es (dir|dem Kind) (heute )?geht|wie (es|er|sie) sich (heute )?fühlt|innen heute anfühlt|eigenen Gefühl\w*|persönlichen Beispiel\w*)\b|\b(Comment te sens-tu|Comment ça va|pouce en (haut|bas)|Je me sens|Quel animal es-tu)\b/i,
+  gefuehlfrage: /\b(fühle ich mich|Wie bereit fühlst du dich|wo bist du (jetzt|gerade)|Wie fühlst du dich|Wie geht es dir|Was macht dich (traurig|wütend|Angst)|ich bin traurig, weil|Ich fühle mich|Daumen (hoch|runter|hoch oder runter)|wie (traurig|wütend) bist du|Gefühl(e)? (benennen|zeigen|abfragen|erzählen)|Welches Tier bist du|Wie ist das Wetter bei dir|wie es (dir|dem Kind) (heute )?geht|wie (es|er|sie) sich (heute |gerade |jetzt )?fühlt|wie du dich (heute |gerade |jetzt |dann )?fühl\w*|Wann bist du (so|froh|traurig|wütend|ängstlich)|die (Karte|Farbe), die gerade (am besten )?passt|wie es mir damit geht|innen heute anfühlt|eigenen Gefühl\w*|persönlichen Beispiel\w*|was (war|ist) (eigentlich |wirklich )?los in dir|was in dir (vor)?geht)\b|\b(Comment te sens-tu|Comment ça va|comment (il|elle) se sent en ce moment|comment tu te sen\w*|qui convient le mieux en ce moment|ce que ça me fait|pouce en (haut|bas)|Je me sens|Quel animal es-tu|qu['’]est-ce qui se passait (vraiment )?en toi|ce qui se passe en toi)\b/i,
+  // sich selbst einschätzen oder bewerten (Skala, Punkte, Fragebogen) – in Krisenlage nicht (Blind-Bewertung 8, A12/A7)
+  selbstbewertung: /\b(auf einer Skala|Skalen? von [01]|von [01] bis (5|10)|[01] bis 10|einen Punkt (mehr|gewonnen)|Punkt gewonnen|Fragebogen|was (dir )?(noch )?schwer fällt)\b|\b(sur une échelle|échelles? de [01]|de [01] à (5|10)|gagné un point|questionnaire|ce qui est (encore )?difficile)\b/i,
+  // Prüfungen als Anlass (Blind-Bewertung 9: „Atem-Blatt ‚vor dem Prüfungsraum‘ ohne Prüfungsthema im Profil“)
+  pruefung: /\b(Prüfung\w*|Prüfungsraum|Klassenarbeit|Test schreib\w*|examens?|salle d['’]examen|contrôle écrit)\b/i,
+  // Atem anhalten (Blind-Bewertung 9: „Quadratatmung mit ‚Retenir – 4‘ bei Tagesform ängstlich und Vorsicht trauma“)
+  atemAnhalten: /\b((Luft|Atem) (an)?halten|halten\s*[–-]\s*\d|Atem anhalten|retenir( (le|son) souffle)?\s*[–-]?\s*\d?|bloquer (la|sa) respiration)\b/i,
+  // Leistung messen (Blind-Bewertung 9, A12: „Minuteur, Strichzählung und Rundenvergleich an echter Schularbeit bei
+  // Stimmung 2“) – nicht in Krisenlage
+  leistungsmessung: /\b(Strich(e)? (in|an|am|auf) (den|dem) (Blatt)?[Rr]and|Strichzahlen|Striche zählen|zählt die Striche|Runde \d und \d vergleich\w*|beide Runden vergleich\w*|un trait dans la marge|combien de traits|compter les traits|comparer les deux (séries|tours|manches)|zählt die Treffer|Treffer laut mit|Schaffen wir (gemeinsam )?\d+|compte ses paniers|compter les paniers|arrive ensemble à \d+)\b/i,
+  // Genauigkeit als Leistung (Blind-Bewertung 10: „Redessine la figure exactement … compte les carreaux“, „genau an der Linie
+  // ausschneiden“ an einem leichten Tag) – nicht im Weg „leicht“
+  genauigkeit: /\b(exakt\w*|ganz genau (ab|nach)\w*|genau an der Linie|genau nachzeichnen|Kästchen zählen|zähle die Kästchen|exactement|précisément|compte les carreaux|compter les carreaux|bien sur la ligne)\b/i,
+  // Raten als Abfrage (Blind-Bewertung 10: „Énigme du jour – Raten hat Abfragecharakter, ‚si l’enfant s’énerve‘“)
+  raetsel: /\b(Rätsel\w*|errät\w*|erraten|énigme\w*|devinette\w*|deviner|devine)\b/i,
+  // Wettbewerb und Zeitdruck im Text (Blind-Bewertung 8: „findet zuerst“, „Rekord gegen die Uhr“, „Runde verloren“)
+  wettlauf: /\b(wer zuerst|findet zuerst|als Erste[rs]? fertig|Rekord\w*|gegen die Uhr|so viele wie möglich|Runde verloren|hat verloren|wer gewinnt|qui trouve en premier|le premier qui|record|contre la montre|le plus possible|a perdu la manche)\b/i,
+  // Diagnosen als Beispiel im Text (Blind-Bewertung 8: „im Autismus-Spektrum“ ohne Anlass im Planblatt)
+  diagnose: /\b(Autismus\w*|autistisch\w*|ADHS|AD\(H\)S|Asperger\w*|Legasthenie|Dyskalkulie|autisme|autiste|TDAH|dyslexie|dyscalculie)\b/i,
   // Wut ausleben (A4, Ergänzung zu KATHARSIS_RE): stampfen, reißen, schlagen, schreien MIT Wut
   wutausleben: /\b(Wut|wütend|Ärger|Zorn)\b[^.!?]{0,80}\b(stampf\w*|zerreiß\w*|reiß\w*|zerknüll\w*|schlag\w*|box\w*|tret\w*|schrei\w*|werf\w*)|\b(stampf\w*|zerreiß\w*|reiß\w*|zerknüll\w*|box\w*|tret\w*|schrei\w*)\b[^.!?]{0,60}\b(Wut|wütend|Ärger|Zorn)\b/i,
 }

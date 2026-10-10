@@ -79,3 +79,29 @@ export const SATZ_GRENZE = /(?<!(?:^|[\s(„«])(?:[A-Za-zäöüÄÖÜ]|ca|bzw|v
 export const SATZ_GRENZE_GROSS = /(?<!(?:^|[\s(„«])(?:[A-Za-zäöüÄÖÜ]|ca|bzw|vgl|ggf|usw|etc|evtl|inkl|Nr|Min|max|min|bspw|ex|cf|env|Mme|ev|resp)\.)(?<=[.!?])\s+(?=[A-ZÄÖÜ„«(])/
 /** Wie SATZ_GRENZE, trennt zusätzlich nach „;“ (Listen in der Vorbereitung). */
 export const SATZ_GRENZE_SEMI = /(?<!(?:^|[\s(„«])(?:[A-Za-zäöüÄÖÜ]|ca|bzw|vgl|ggf|usw|etc|evtl|inkl|Nr|Min|max|min|bspw|ex|cf|env|Mme|ev|resp)\.)(?<=[.;!?])\s+/
+
+/** Figuren in Übungen tragen manchmal den Vornamen des Kindes („Mia ist ärgerlich“, Blatt „Mia und die Spielregel“) – das
+ *  Kind fühlt sich gemeint (Blind-Bewertung 9). Der Name wird durch einen anderen ersetzt, der im Text noch nicht vorkommt. */
+const ERSATZ_NAMEN = ['Nora', 'Lio', 'Jana', 'Ben', 'Lina', 'Timo', 'Ella', 'Max', 'Sara', 'Leo']
+/** Figuren der Übungen – heißen anders, wenn sie dem Vornamen ähneln (Blind-Bewertung 10: „Tom“ auf dem Blatt für Tomás) */
+const FIGUREN = ['Tom', 'Mia', 'Noah', 'Lea', 'Sami', 'Amira', 'Ben', 'Lina', 'Leo', 'Nora', 'Emma', 'Paul', 'Luca', 'Yara', 'Ali', 'Max', 'Sara', 'Elif', 'Jonas', 'Finn', 'Timo', 'Ella', 'Lio', 'Jana', 'Mila', 'Nico', 'Luis', 'Anna', 'Tim', 'Lukas']
+const ohneAkzent = (t: string) => t.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase()
+function aehnlich(a: string, b: string): boolean {
+  const x = ohneAkzent(a)
+  const y = ohneAkzent(b)
+  // … auch kurze Namen mit gleichem Anfang (Blind-Bewertung 11: „Noah“ neben dem Kind „Noé“)
+  return x === y || (Math.min(x.length, y.length) >= 3 && (x.startsWith(y) || y.startsWith(x) || x.slice(0, 3) === y.slice(0, 3))) || (Math.min(x.length, y.length) <= 4 && x.slice(0, 2) === y.slice(0, 2))
+}
+const wortRe = (w: string) => new RegExp(`(?<!\\p{L})${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?!\\p{L})`, 'gu')
+export function ohneEigenenNamen<T>(x: T, vorname: string | null | undefined): T {
+  const n = (vorname ?? '').trim()
+  if (n.length < 2 || x == null) return x
+  let s = JSON.stringify(x)
+  const namen = [n, ...FIGUREN.filter((f) => f !== n && aehnlich(f, n))].filter((w) => wortRe(w).test(s))
+  if (!namen.length) return x
+  for (const w of namen) {
+    const ersatz = ERSATZ_NAMEN.find((e) => !aehnlich(e, n) && !s.includes(e)) ?? 'Nora'
+    s = s.replace(wortRe(w), ersatz)
+  }
+  return JSON.parse(s) as T
+}

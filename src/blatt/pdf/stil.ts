@@ -289,10 +289,12 @@ export function dauerText(dauer: string, sprache: Sprache): string {
     [/\bzweimal täglich\b/g, 'deux fois par jour'], [/\btäglich\b/g, 'chaque jour'], [/\bwöchentlich\b/g, 'chaque semaine'],
     [/\bpro Woche\b/g, 'par semaine'], [/\beine Woche\b/g, 'une semaine'], [/\b1–2 Wochen\b/g, '1 à 2 semaines'],
     [/\b(\d+) Wochen\b/g, '$1 semaines'], [/\b1 Woche\b/g, '1 semaine'], [/\bWoche\b/g, 'semaine'],
-    [/\bje Eintrag\b/g, 'par entrée'], [/\bnach Bedarf\b/g, 'selon les besoins'], [/\bnach der Beruhigung\b/g, 'après le retour au calme'],
+    [/\bje Eintrag\b/g, 'par entrée'], [/\bje Einheit\b/g, 'par séance'], [/\bje Sitzung\b/g, 'par séance'], [/\bje Spiel\b/g, 'par jeu'], [/\bverteilt auf zwei Termine\b/g, 'en deux fois'],
+    [/\bverteilt über die Einheit\b/g, 'réparties sur la séance'], [/\bdanach eine Woche\b/g, 'puis une semaine'], [/\b(\d+) Termine zu\b/g, '$1 séances de'],
+    [/\b(\d+) Tage\b/g, '$1 jours'], [/\b1 Tag\b/g, '1 jour'], [/\bje\b/g, 'chaque fois'], [/\bnach Bedarf\b/g, 'selon les besoins'], [/\bnach der Beruhigung\b/g, 'après le retour au calme'],
     [/\bVorbereitung\b/g, 'Préparation'], [/\bGespräch\b/g, 'entretien'], [/\bEinführung\b/g, 'Introduction'], [/\bPlanung\b/g, 'Planification'],
     [/\bAuswertung\b/g, 'bilan'], [/Übungszeit/g, 'temps d’entraînement'], [/\bTagebuch\b/g, 'de journal'], [/\bBeobachtung\b/g, 'd’observation'],
-    [/\bPlan\b/g, 'de plan'], [/\bdann\b/g, 'puis'], [/;/g, ' ;'],
+    [/\bPlan\b/g, 'de plan'], [/\bdanach\b/g, 'ensuite'], [/\bdann\b/g, 'puis'], [/;/g, ' ;'],
   ]
   return typo(W.reduce((s, [re, neu]) => s.replace(re, neu), dauer), 'fr')
 }

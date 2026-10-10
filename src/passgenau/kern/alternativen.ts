@@ -66,7 +66,10 @@ export function alternativen(k: Katalog, p: Profil, plan: Plan, ort: Ort, v: Vor
   if (!x || x.ref === 'pg:blatt') return []
   const cur = k.eintraege.get(x.ref)
   const ritual = x.rolle === 'ankommen' || x.rolle === 'abschluss'
-  const gesperrt = ritual ? new Set([x.ref]) : folge
+  // Rituale dürfen sich über die Folge wiederholen – aber nie, was in derselben Sitzung oder als Kern, Spiel … schon steht
+  const gesperrt = ritual
+    ? new Set([x.ref, ...s.schritte.map((y) => y.ref), ...plan.sitzungen.flatMap((y) => y.schritte.filter((z) => z.rolle !== 'ankommen' && z.rolle !== 'abschluss').map((z) => z.ref))])
+    : folge
   const vorher = new Set(plan.sitzungen.filter((y) => y.nr < s.nr).flatMap((y) => y.schritte.map((z) => z.ref)))
   const salz = `${c.seed}|${plan.id}|${s.nr}|alt|${ort.schritt}`
   let liste: Bewertet[]

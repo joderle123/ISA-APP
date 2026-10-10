@@ -89,7 +89,7 @@ const PRAXIS = [
     inhalt: { weg: 'gruendlich', n: 2, dauer: 30, sitzungen: [
       sitzung('verstehen', [{ ref: 'r:wetterbericht', h: '6bf63f9f', rolle: 'ankommen', min: 4 }, { ref: 'm:alles-eine-frage-der-perspektive:0', h: '1458d604', rolle: 'einstieg', min: 5 }, { ref: 'm:die-schatztruhe-der-ruhe:1', h: '817f066c', rolle: 'kern', min: 9 }, { ref: 'pg:blatt', h: 'pgblatt1', rolle: 'uebung', min: 8 }, { ref: 'r:staerken-stein', h: '2323a34d', rolle: 'abschluss', min: 4 }],
         { titel: 'Mein Stopp-Plan', bausteine: [{ ref: 'b:wutvulkan:1', h: '1af6f69d', ueber: { '1.items.1': 'Stopp. Ich zähle bis drei.' }, ueberHerkunft: { '1.items.1': 'eigen' } }, { ref: 'b:wutvulkan:2', h: 'e6a9d578' }, { ref: 'b:ruhig-werden-drei-uebungen:0', h: '3aa22f38' }] }),
-      sitzung('ueben', [{ ref: 'r:wetterbericht', h: '6bf63f9f', rolle: 'ankommen', min: 4 }, { ref: 'fb:wandschieben', h: '13609089', rolle: 'bewegung', min: 5 }, { ref: 'm:die-schatztruhe-der-ruhe:2', h: 'eafeefb1', rolle: 'kern', min: 12 }, { ref: 'pg:blatt', h: 'pgblatt1', rolle: 'uebung', min: 5 }, { ref: 'r:staerken-stein', h: '2323a34d', rolle: 'abschluss', min: 4 }],
+      sitzung('ueben', [{ ref: 'r:wetterbericht', h: '6bf63f9f', rolle: 'ankommen', min: 4 }, { ref: 'pg:wand-schieben', h: 'pgwand01', rolle: 'bewegung', min: 5 }, { ref: 'm:die-schatztruhe-der-ruhe:2', h: 'eafeefb1', rolle: 'kern', min: 12 }, { ref: 'pg:blatt', h: 'pgblatt1', rolle: 'uebung', min: 5 }, { ref: 'r:staerken-stein', h: '2323a34d', rolle: 'abschluss', min: 4 }],
         { titel: 'Mein Stopp-Plan', bausteine: [{ ref: 'b:wutvulkan:3', h: 'ad830e23' }, { ref: 'b:ruhig-werden-drei-uebungen:1', h: '75ee5290' }] }),
     ] },
   },
@@ -298,11 +298,14 @@ async function main() {
       await ueberlauf(tb, 'Ergebnis')
       await foto(tb, '06-ergebnis')
       // Sitzung mit „Vorher klären“: Beachten, Vorbereitung, Druckmaterial je Schritt
-      await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).first().click()
-      pruefe(await tb.getByText(/Vorbereitung:/).first().isVisible(), 'Hinweis „Vorbereitung“')
-      // Druckmaterial je Schritt (T-M12) gibt es nur, wenn ein Schritt der Folge Bildkarten o. Ä. mitbringt
-      const druckt = await tb.getByText(/druckt mit:/).count()
-      console.log(`  (Sitzung mit „Vorher klären“: ${druckt ? 'mit' : 'ohne'} Druckmaterial)`)
+      // (hängt am Inhalt: kuratierte Kinder-Übungen brauchen oft keine Vorbereitung – dann nur melden)
+      if (await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).count()) {
+        await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).first().click()
+        pruefe(await tb.getByText(/Vorbereitung:/).first().isVisible(), 'Hinweis „Vorbereitung“')
+        // Druckmaterial je Schritt (T-M12) gibt es nur, wenn ein Schritt der Folge Bildkarten o. Ä. mitbringt
+        const druckt = await tb.getByText(/druckt mit:/).count()
+        console.log(`  (Sitzung mit „Vorher klären“: ${druckt ? 'mit' : 'ohne'} Druckmaterial)`)
+      } else console.log('  (Mia: keine Sitzung mit „Vorher klären“ in dieser Folge)')
       await tb.locator('.pg-fs').first().click()
 
       // 5. Ersetzen im Ablauf
@@ -330,7 +333,10 @@ async function main() {
       await tb.locator('.pg-schritt').nth(2).locator('button[aria-label^="Daumen hoch"]').click()
 
       // 7. Blatt-Teil ersetzen (Liste)
-      const bl0 = tb.locator('.pg-bliste li').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).first()
+      // feste Teile (Stundenleiste, Hilfe-Zeile, Blatt zur Übung „Fragen zu …“) haben keine Alternativen
+      const bl0 = tb.locator('.pg-bliste li').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile|Fragen zu/ }).first()
+      if (!(await bl0.count())) console.log('  (Blatt zur Übung – Ersetzen eines Toolbox-Teils hier nicht prüfbar)')
+      else {
       const bl0t = await bl0.locator('.bt').innerText()
       await bl0.locator('.haupt').click()
       await dlg(tb).waitFor()
@@ -343,6 +349,7 @@ async function main() {
       } else {
         await dlg(tb).getByRole('button', { name: 'Behalten' }).click()
         pruefe(false, 'keine Alternative für Blatt-Teil')
+      }
       }
 
       // 8. Vorschau: Plan und Blatt, Antippen ersetzt
@@ -391,7 +398,7 @@ async function main() {
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
       pruefe((await tb.locator('.pg-ed-liste .pg-er').count()) === vorher + 1, 'Baustein eingefügt')
       // Text ändern im Comic-Baustein (oder im ersten mit Feldern)
-      const teileListe = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ })
+      const teileListe = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile|Fragen zu/ }).filter({ has: tb.locator('button[aria-label^="Text ändern"]') })
       const comic = teileListe.filter({ hasText: 'Comic' }).first()
       const mitText = (await comic.count()) ? comic : teileListe.first()
       await mitText.locator('button[aria-label^="Text ändern"]').last().click()
@@ -451,9 +458,31 @@ async function main() {
       pruefe(await tb.getByRole('heading', { name: /Sitzung 3 von 6/ }).isVisible(), 'Weiter mit Sitzung 3 von 6')
       await tb.locator('.pg-ekopf').getByRole('button', { name: 'Baukasten' }).click()
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
-      const er = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).first()
-      await er.locator('button[aria-label^="Text ändern"]').last().click()
-      await er.locator('.felder input, .felder textarea').last().fill('Zu Frau Weber.')
+      // den ersten Blatt-Teil, dessen „Text ändern“ wirklich Felder öffnet (Kinder-Kernblätter haben auch Teile ohne Text)
+      const kandidaten3 = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).filter({ has: tb.locator('button[aria-label^="Text ändern"]') })
+      let geaendert3 = false
+      const versuche3 = async () => {
+        for (let j = 0; j < (await kandidaten3.count()) && !geaendert3; j++) {
+          const er = kandidaten3.nth(j)
+          await er.locator('button[aria-label^="Text ändern"]').last().click()
+          const f3 = er.locator('.felder input, .felder textarea').last()
+          if (await f3.waitFor({ timeout: 3000 }).then(() => true, () => false)) {
+            await f3.fill('Zu Frau Weber.')
+            geaendert3 = true
+          }
+        }
+      }
+      await versuche3()
+      // das eigene Blatt der Übung hat keine freien Textfelder: einen Baustein einfügen und den bearbeiten
+      if (!geaendert3) {
+        if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Bausteine' }).click()
+        const plus3 = tb.locator('.pg-sk button[aria-label^="Einfügen"]').first()
+        if (!(await plus3.count())) await tb.locator('.pg-ed-spalte .pg-chip', { hasText: 'alle Arten' }).click()
+        await plus3.click()
+        if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
+        await versuche3()
+      }
+      pruefe(geaendert3, 'Sitzung 3: ein Blatt-Teil mit änderbarem Text')
       await tb.getByRole('button', { name: 'Fertig' }).click()
       await tb.getByRole('button', { name: 'Stunde gehalten' }).click()
       await dlg(tb).getByRole('button', { name: 'Hat geklappt' }).click()
@@ -561,8 +590,12 @@ async function main() {
       await tb.locator('.pg-schritt').first().waitFor()
       pruefe(await tb.getByText(/heikles Thema offen/).isVisible(), 'Banner bei heiklem Thema')
       await foto(tb, '18-ilyas-ergebnis')
-      await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).first().click()
-      pruefe(await tb.getByText(/Beachten:/).first().isVisible(), 'Hinweis „Beachten“ aus der Quelle (Sitzung mit „Vorher klären“)')
+      // „Vorher klären“ hängt am Inhalt (Hinweis „Beachten“ einer Quelle) – nur prüfen, wenn die Folge eine solche Sitzung hat
+      const vk = tb.locator('.pg-fs', { hasText: 'Vorher klären' })
+      if (await vk.count()) {
+        await vk.first().click()
+        pruefe(await tb.getByText(/Beachten:/).first().isVisible(), 'Hinweis „Beachten“ aus der Quelle (Sitzung mit „Vorher klären“)')
+      } else console.log('  (Ilyas: keine Sitzung mit „Vorher klären“ in dieser Folge)')
       // Elternbriefe hängen meist an heiklen Themen – die plant Passgenau nur nach ausdrücklicher Freischaltung
       console.log(`  (Ilyas: ${(await tb.getByText(/Eltern informiert/).count()) ? 'mit' : 'ohne'} Hinweis „Elternbrief“ in der Folge)`)
       await tb.close()

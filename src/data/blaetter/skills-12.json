@@ -567,6 +567,174 @@
         "achtung": "Die Ampel ist für Alltagskonflikte gedacht. Bei Bedrohung, Erpressung oder Gewalt geht Sicherheit vor: weggehen, Hilfe holen und die zuständige Leitung (Responsable) informieren.",
         "material": "Drei Kreise aus Tonpapier in Rot, Gelb und Grün"
       }
+    },
+    "fr": {
+      "titel": "Le feu tricolore",
+      "untertitel": "D’abord se calmer, puis réfléchir, puis agir – dans cet ordre précis.",
+      "bausteine": [
+        {
+          "art": "ampel",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Rouge : stop et on se calme",
+              "text": "Pas touche, bouche fermée, un pas en arrière, téléphone rangé. Un skill, jusqu’à ce que ton chiffre passe sous 70."
+            },
+            {
+              "titel": "Orange : réfléchir",
+              "text": "Qu’est-ce qui se passe ? Qu’est-ce que je veux vraiment ? Quelles possibilités j’ai – et que se passe-t-il ensuite ?"
+            },
+            {
+              "titel": "Vert : agir",
+              "text": "Tester la meilleure possibilité. Ensuite, vérifier : est-ce que ça a marché ? Sinon, retour à l’orange."
+            }
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Le téléphone",
+          "bild": "figur:jana:wuetend",
+          "text": "À la récré, Mathis prend le téléphone des mains d’Aylin, lit un message à voix haute et le tient en l’air quand elle essaie de le reprendre. Quelques personnes rient. Le visage d’Aylin devient brûlant, ses mains tremblent, son chiffre est à 80. Elle aurait envie de lui arracher le téléphone et de frapper."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Orange : trouve au moins trois autres possibilités pour Aylin et évalue les conséquences.",
+          "hinweis": "Même les mauvaises idées ont leur place dans le tableau – les conséquences montrent ce qu’elles valent."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Possibilité",
+            "Que se passe-t-il tout de suite ?",
+            "Que se passe-t-il demain ?",
+            "Ça me fait avancer ?"
+          ],
+          "breiten": [
+            1.7,
+            1.6,
+            1.6,
+            0.95
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Arracher le téléphone et frapper",
+            "Le téléphone tombe peut-être, la surveillance arrive.",
+            "Ennuis avec l’école, tout le monde raconte qu’Aylin a pété les plombs.",
+            "non"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vert : quelle possibilité choisirais-tu ? Écris la première phrase qu’Aylin dit."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je ferais …, parce que …",
+            "La première phrase d’Aylin : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand ça remonte",
+          "text": "Si, à l’orange ou au vert, tu sens que ton chiffre remonte, retourne au rouge. Ce n’est pas un échec – c’est comme ça que fonctionne le feu."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Des idées pour ton feu",
+          "punkte": [
+            "Rouge : double soupir, mains ouvertes, un pas en arrière, compter jusqu’à dix, sortir un instant.",
+            "Orange : qu’est-ce que je veux vraiment ? Que se passera-t-il demain ? Que conseillerais-je à une amie ?",
+            "Vert : « J’ai besoin d’un moment. » – « Rends-le-moi, s’il te plaît. » – « On règle ça après le cours. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton feu tricolore personnel : remplis-le pour toi.",
+          "hinweis": "Ton premier signal d’alerte figure sur la feuille « Mes déclencheurs et signaux d’alerte »."
+        },
+        {
+          "art": "ampel",
+          "linien": 2,
+          "stufen": [
+            {
+              "titel": "Mon rouge",
+              "text": "Voici comment je le remarque – et ce skill me calme :"
+            },
+            {
+              "titel": "Mon orange",
+              "text": "Cette question m’aide le plus à réfléchir :"
+            },
+            {
+              "titel": "Mon vert",
+              "text": "Avec cette phrase, je peux bien commencer :"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Semaine du feu : coche quand tu as réussi une couleur. Chaque couleur compte."
+        },
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "Rouge : j’ai stoppé à temps.",
+            "Orange : j’ai d’abord réfléchi.",
+            "Vert : j’ai essayé quelque chose d’intelligent."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Ton feu t’appartient. Si tu veux, prends-le en photo pour l’avoir sur ton téléphone."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent les trois couleurs du feu tricolore, évaluent possibilités et conséquences et définissent leur propre feu.",
+        "ablauf": [
+          "Entrée en matière (15 min) : trois cercles au sol, parcourir une situation du rouge au vert, puis démonstration en pensant à voix haute.",
+          "Exercice 1 à deux (10 min) : « Qu’est-ce qu’Aylin veut vraiment ? » Exercice 2 individuellement (5 min).",
+          "Exercice 3 après le skill du rouge, à la fin de la séance (5 min). Ne pas ramasser.",
+          "L’exercice 4 est la mission de la semaine ; à la séance suivante, ne nommer que la couleur la plus difficile."
+        ],
+        "hintergrund": "Le feu vient de programmes de résolution sociale de problèmes : le rouge signifie s’arrêter et se calmer, l’orange nommer le problème et le but, collecter des solutions et anticiper les conséquences, le vert essayer le meilleur plan (Goleman, 1995). Peser les possibilités et leurs conséquences est le cœur de l’approche de Shure (1992). Se calmer passe en premier, parce que, chez les adolescents, les impulsions s’imposent particulièrement facilement sous l’excitation et devant les pairs (Steinberg, 2014).",
+        "quellen": [
+          "Goleman, D. (1995). Emotional Intelligence. New York: Bantam.",
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt."
+        ],
+        "differenzierung": {
+          "leichter": "Deux possibilités suffisent ; l’adulte en donne une bonne et une mauvaise.",
+          "schwerer": "Noter aussi les conséquences pour Mathis et pour les personnes qui regardent."
+        },
+        "impulse": [
+          "Quelle couleur est la plus difficile pour vous ?",
+          "À quoi remarquez-vous qu’il faut retourner au rouge ?"
+        ],
+        "tipps": [
+          "Laisser les trois cercles en place et les montrer lors de vrais conflits.",
+          "Avec l’entraînement, l’orange se réduit à quelques secondes."
+        ],
+        "achtung": "Le feu est prévu pour les conflits du quotidien. En cas de menace, de chantage ou de violence, la sécurité passe en premier : s’éloigner, chercher de l’aide et informer la direction compétente (responsable).",
+        "material": "Trois cercles en papier cartonné rouge, orange et vert"
+      }
     }
   },
   {
@@ -979,6 +1147,169 @@
         "achtung": "Wiedergutmachung ersetzt keinen Schutz: Bei Mobbing, Gewalt oder Machtgefälle nach dem internen Schutzkonzept handeln. Klärungsgespräche zu echten Vorfällen nur begleitet und freiwillig.",
         "material": "Blatt für jede Person"
       }
+    },
+    "fr": {
+      "titel": "Réparer",
+      "untertitel": "Après un éclat de colère, tout n’est pas perdu. Qui assume peut remettre beaucoup de choses en ordre.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "L’affiche",
+          "bild": "figur:ben:besorgt",
+          "text": "Diogo a récupéré une mauvaise note en maths. À l’heure suivante, il travaille avec Léa sur une affiche. Léa dit : « Tu peux au moins écrire proprement ? » Diogo explose. Il lui crie dessus et déchire l’affiche en deux – deux heures de travail, et toute la classe regarde. Le soir, il pense : je suis vraiment le pire."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Acte ou personne ?",
+          "text": "« J’ai fait quelque chose de mal » peut se réparer. « Je suis nul », non – cette phrase pousse plutôt à se cacher ou à se remettre en colère."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Réécris la phrase de Diogo du soir pour qu’elle juge son acte et non lui en tant que personne."
+        },
+        {
+          "art": "linien",
+          "anzahl": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vraies excuses ou prétexte ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "sincère",
+            "prétexte"
+          ],
+          "items": [
+            "« Désolé, mais c’est toi qui as commencé. »",
+            "« Je suis désolé si ça te fait mal. »",
+            "« J’ai déchiré ton affiche. Ce n’était pas OK. »",
+            "« J’avais juste une mauvaise journée, quoi. »",
+            "« Tu as travaillé deux heures dessus, et tout le monde regardait. »",
+            "« Je t’en fais une nouvelle – si tu veux, avec toi. »"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "De bonnes excuses ont quatre parties",
+          "punkte": [
+            "Dire ce que j’ai fait – sans « mais » et sans « si ».",
+            "Reconnaître ce que ça a provoqué chez l’autre.",
+            "Proposer une réparation qui correspond au dégât et demander ce dont la personne a besoin.",
+            "Dire ce que je ferai autrement la prochaine fois.",
+            "Et : l’autre personne décide elle-même si et quand elle pardonne."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Les questions de la réparation : réponds-y pour Diogo ou pour Léa.",
+          "hinweis": "On pose ce genre de questions aussi dans les écoles, lors des entretiens pour clarifier une situation."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Pour Diogo",
+              "punkte": [
+                "Que s’est-il passé ?",
+                "Qu’as-tu pensé à ce moment-là ?",
+                "Qu’en penses-tu aujourd’hui ?",
+                "Qui est concerné – et comment ?",
+                "Que dois-tu faire pour que ça s’arrange ?"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Pour Léa",
+              "punkte": [
+                "Qu’as-tu pensé quand c’est arrivé ?",
+                "Qu’est-ce que ça t’a fait ?",
+                "Qu’est-ce qui a été le plus dur pour toi ?",
+                "Que doit-il se passer pour que ça s’arrange pour toi ?"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prévois une réparation – pour Diogo ou pour une situation à toi.",
+          "hinweis": "Une situation à toi reste sur ta feuille."
+        },
+        {
+          "art": "schritte",
+          "stil": "liste",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Qu’ai-je fait ?",
+              "text": "Concrètement et sans prétexte."
+            },
+            {
+              "titel": "Qui est concerné – et de quoi la personne a-t-elle besoin ?",
+              "text": "Si tu ne sais pas : demande."
+            },
+            {
+              "titel": "Qu’est-ce que je propose – et pour quand ?",
+              "text": "Est-ce que ça correspond au dégât ? Ce qui s’est passé devant tout le monde demande souvent une clarification devant tout le monde – si la personne le souhaite."
+            },
+            {
+              "titel": "Que ferai-je autrement la prochaine fois ?",
+              "text": "Par exemple : quelle couleur du feu tricolore est-ce que je m’entraîne ?"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Si tu veux du soutien pour réparer une vraie situation, adresse-toi à la personne qui anime après la séance."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent l’acte de la personne, reconnaissent les quatre parties de bonnes excuses, répondent aux questions de la réparation et planifient une réparation adaptée.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. « Qu’est-ce qui empêche Diogo de réparer ? »",
+          "Exercices 1 et 2 (10 min), puis fixer l’encadré à retenir au tableau.",
+          "Exercice 3 en deux moitiés (8 min) : l’adulte lit les questions, les deux côtés répondent à tour de rôle.",
+          "Exercice 4 individuellement (7 min) : pour Diogo ou une situation personnelle. Ne pas ramasser."
+        ],
+        "hintergrund": "Les approches restauratives comprennent le comportement inadéquat comme un dommage causé à des personnes et à des relations ; elles demandent ce dont les personnes concernées ont besoin et qui doit réparer quoi (Zehr, 2002). Les questions suivent les questions restauratives pour les deux côtés, telles que les décrit Wachtel (2016) : elles regardent vers l’avant plutôt que vers la faute et la punition. Un sentiment de culpabilité lié à l’acte va plutôt de pair avec l’empathie et la réparation, la honte portant sur toute la personne plutôt avec le repli, la défense et une nouvelle colère (Tangney & Dearing, 2002).",
+        "quellen": [
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices.",
+          "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les exercices 2 et 4 ; écrire les quatre parties au tableau.",
+          "schwerer": "Travailler en complément la fiche de la Toolbox « Assumer ses actes »."
+        },
+        "impulse": [
+          "Pourquoi est-il si difficile de présenter de vraies excuses ?",
+          "Que faire quand elles ne sont pas acceptées ?"
+        ],
+        "tipps": [
+          "Les quatre parties tiennent au dos d’une petite carte de skills.",
+          "Des excuses sincères de la part de l’adulte ont plus d’effet que n’importe quelle explication."
+        ],
+        "achtung": "La réparation ne remplace pas la protection : en cas de harcèlement, de violence ou de rapport de pouvoir, agir selon la procédure de protection interne. Les entretiens de clarification sur de vrais incidents : seulement accompagnés et volontaires.",
+        "material": "Une feuille pour chaque personne"
+      }
     }
   },
   {
@@ -1179,6 +1510,171 @@
         ],
         "achtung": "Niemanden wegen Herkunft, Religion, Sprache, Aussehen oder Identität als Beispiel nehmen. Abwertende Sprüche ruhig stoppen; eigene Erfahrungen nicht vertiefen, sondern ein Gespräch anbieten.",
         "material": "Blatt für jede Person"
+      }
+    },
+    "fr": {
+      "titel": "Des cases dans la tête",
+      "untertitel": "Le cerveau classe pour aller vite. Ce qui compte, c’est de rouvrir la case ensuite.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Nous classons tout le temps : les jeunes, les profs, les fans de foot, les gamers. Ça fait gagner du temps. Ça devient difficile quand on ne voit plus une personne qu’à travers sa case – et qu’on la traite en conséquence."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Catégorie",
+              "text": "classer selon une caractéristique"
+            },
+            {
+              "titel": "Stéréotype",
+              "text": "tous ceux de la case seraient pareils"
+            },
+            {
+              "titel": "Préjugé",
+              "text": "stéréotype plus dévalorisation"
+            },
+            {
+              "titel": "Discrimination",
+              "text": "quelqu’un est désavantagé"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dans quelle case va la phrase ? Relie."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Phrase",
+            "Case"
+          ],
+          "links": [
+            "« Dans notre classe, il y a 18 jeunes. »",
+            "« Les jeunes sont toujours collés à leur téléphone. »",
+            "« Les jeunes sont irrespectueux, je ne veux rien avoir à faire avec eux. »",
+            "« Les jeunes n’ont le droit d’entrer dans le magasin qu’à deux. »"
+          ],
+          "rechts": [
+            "Préjugé",
+            "Discrimination",
+            "Catégorie",
+            "Stéréotype"
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "La réputation",
+          "bild": "figur:ben:enttaeuscht:verschraenkt",
+          "text": "Rafael (14 ans) s’est bagarré une fois avec un camarade il y a un an. Depuis, on l’appelle « la brute ». Quand un téléphone disparaît dans le vestiaire, tout le monde regarde d’abord vers lui. En travail de groupe, personne n’écoute quand il a une idée, et la nouvelle de la classe est mise en garde contre lui avant même de le connaître. Maintenant, Rafael dit : « Alors tant pis, je suis comme ça. »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce que la case fait à Rafael – et qu’est-ce qu’elle fait aux autres ?"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Ce que ça fait à Rafael",
+              "hoehe": 4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ce que ça fait aux autres",
+              "hoehe": 4
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Le test des cases",
+          "punkte": [
+            "D’où je le sais – est-ce que je connais la personne ou seulement la case ?",
+            "Est-ce vrai pour tous dans ce groupe ? Est-ce que je connais des contre-exemples ?",
+            "Est-ce que je le dirais aussi si la personne était juste à côté ?"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Quand la rencontre ouvre les cases",
+          "text": "Le contact réduit particulièrement bien les préjugés quand quatre choses se rejoignent : un but commun, l’égalité de statut, la coopération plutôt que la compétition et le soutien d’adultes ou de règles."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cette rencontre fait-elle plutôt tomber les cases ? Évalue."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "plutôt oui",
+            "plutôt non"
+          ],
+          "items": [
+            "Deux classes sont dans le même bus pour une sortie, mais ne se parlent pas.",
+            "Dans une équipe mixte, vous montez un projet et chaque personne a une tâche importante.",
+            "Au tournoi de handball, vous jouez les uns contre les autres, et la coupe est en jeu.",
+            "À la Maison des Jeunes, vous cuisinez ensemble et l’éducatrice veille à ce que tout le monde s’exprime.",
+            "Une personne n’a le droit que de regarder pendant le travail de groupe, parce que les autres sont « plus rapides »."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rien que pour toi : connais-tu les cases des deux côtés ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Dans cette case, on me range parfois : …",
+            "Cette case, je la remarque parfois chez moi-même : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "L’exercice 4 reste sur ta feuille. Personne n’a besoin de le lire à voix haute."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent catégorie, stéréotype, préjugé et discrimination, voient ce que fait une case et connaissent le test des cases et les conditions d’un contact utile.",
+        "ablauf": [
+          "Entrée en matière (5 min) : expliquer la chaîne avec des préjugés sur les jeunes, puis exercice 1 seul.",
+          "Exercice 2 à deux (8 min) : « Que fait Rafael parce que tout le monde le voit ainsi ? » Puis le test des cases.",
+          "Exercice 3 après le jeu des groupes éclairs (5 min) : les quatre conditions, puis évaluer.",
+          "Exercice 4 seul, volontaire (3 min), sans lecture à voix haute."
+        ],
+        "hintergrund": "Allport (1954) a montré que les préjugés reposent sur un processus de pensée normal : on forme des catégories pour ordonner vite le monde. Le problème commence quand s’y ajoutent une image rigide de tous les membres, puis une dévalorisation, puis des actes. Même une répartition sans signification en deux groupes suffisait pour que des élèves de 14 et 15 ans favorisent leur groupe (Tajfel et al., 1971) – le jeu des groupes éclairs permet de le vivre. Qui est sans cesse rangé dans la même case finit souvent par agir comme on l’attend de lui. Selon l’hypothèse du contact d’Allport, la rencontre réduit les préjugés – confirmé par une méta-analyse de plus de 500 études, surtout dans les quatre conditions de la feuille (Pettigrew & Tropp, 2006).",
+        "quellen": [
+          "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+          "Tajfel, H., Billig, M. G., Bundy, R. P. & Flament, C. (1971). Social categorization and intergroup behaviour. European Journal of Social Psychology, 1(2), 149–178.",
+          "Pettigrew, T. F. & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. Journal of Personality and Social Psychology, 90(5), 751–783."
+        ],
+        "differenzierung": {
+          "leichter": "La chaîne avec un exemple du groupe ; exercice 3 à l’oral.",
+          "schwerer": "Exercice 3 : noter quelle condition manque et comment la créer."
+        },
+        "impulse": [
+          "Quelles idées toutes faites sur les jeunes sont justes – et pour qui ne le sont-elles pas ?",
+          "Quand la coopération a-t-elle ouvert une case chez vous ?"
+        ],
+        "tipps": [
+          "Commencer par les préjugés sur les jeunes : tout le monde est rangé dans la même case.",
+          "Laisser le test des cases affiché en poster."
+        ],
+        "achtung": "Ne prendre personne en exemple à cause de l’origine, de la religion, de la langue, de l’apparence ou de l’identité. Arrêter calmement les remarques dévalorisantes ; proposer un entretien plutôt qu’approfondir.",
+        "material": "Une feuille pour chaque personne"
       }
     }
   },
@@ -1553,6 +2049,160 @@
         ],
         "achtung": "Niemanden nach eigenen Erfahrungen fragen, als Beispiel nehmen oder outen. Bei Bedrohung oder Gewalt nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren; akut 113 oder 112.",
         "material": "Plakat mit den Anlaufstellen"
+      }
+    },
+    "fr": {
+      "titel": "Stop à la discrimination",
+      "untertitel": "Reconnaître, réagir, chercher de l’aide – pour les autres et pour toi.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Comment reconnaître la discrimination",
+          "punkte": [
+            "Désavantage : quelqu’un est désavantagé, exclu ou rabaissé.",
+            "Critère : la raison est l’origine, la couleur de peau, l’apparence, la religion, un handicap, le genre, l’orientation sexuelle ou l’âge.",
+            "Aucune raison valable : il n’y a pas de justification équitable.",
+            "Ce qui compte, c’est ce que ça provoque chez la personne – pas seulement l’intention."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Discrimination ou non ? Coche.",
+          "hinweis": "Pour « pas sûr », ça vaut la peine de regarder de plus près."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "oui",
+            "non",
+            "pas sûr"
+          ],
+          "items": [
+            "Amira obtient un stage par téléphone. Avec un foulard, le poste est « malheureusement déjà pris ».",
+            "À cause de ses difficultés de lecture, Elias a plus de temps pendant les contrôles.",
+            "Sous chaque post de Luca, on écrit « pédé » comme insulte, et beaucoup de gens likent.",
+            "La classe prévoit une sortie et dit à Samuel, qui est en fauteuil roulant : « Pour toi, c’est trop compliqué. »",
+            "Tiago entend de la part d’un prof : « Avec ton origine, je n’attends pas grand-chose du test d’allemand. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "L’escalier de la dévalorisation : sur quelle marche se situe l’exemple ? Coche.",
+          "hinweis": "Ça commence presque toujours en bas. Qui s’oppose déjà à la marche 1 arrête l’escalier très tôt."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Vannes et blagues",
+              "text": "soi-disant pour rire"
+            },
+            {
+              "titel": "Éviter, exclure",
+              "text": "ne pas inviter, s’asseoir ailleurs"
+            },
+            {
+              "titel": "Désavantager",
+              "text": "moins de chances"
+            },
+            {
+              "titel": "Menacer, attaquer",
+              "text": "menaces et violence"
+            }
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "items": [
+            "Quelqu’un poste des blagues sur une religion.",
+            "À cause de son appareil auditif, personne ne s’assoit à côté de Yusuf.",
+            "Ana n’a pas d’apprentissage à cause de son prénom.",
+            "Quelqu’un est menacé à cause de sa couleur de peau."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand tu en es témoin",
+          "punkte": [
+            "Ne pas participer : ne pas rire, ne pas filmer, ne rien transférer.",
+            "Détourner l’attention : s’adresser à la personne – « Viens, on s’assoit devant. »",
+            "Chercher de l’aide : chauffeur de bus, surveillance, prof. Ce n’est pas de la cafterie.",
+            "Contredire : « Ce n’est pas OK. » – seulement si c’est sans danger pour toi.",
+            "Être là ensuite : « Ça va ? Ce n’était pas correct. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand ça te touche toi-même : qu’est-ce qui te correspond ? Coche et complète."
+        },
+        {
+          "art": "ankreuzen",
+          "frei": 1,
+          "items": [
+            "Je dis « Stop » ou je pars, si c’est sans danger.",
+            "Je cherche quelqu’un qui me soutient.",
+            "J’écris ce qui s’est passé, quand et où. En ligne, je fais des captures d’écran.",
+            "J’en parle à une personne de confiance, au SePAS ou au Kanner- a Jugendtelefon.",
+            "Je me dis : ça en dit long sur les autres, pas sur moi."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan : que fais-tu la prochaine fois que tu es témoin d’une situation comme celle-là ?"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si, dans le bus, quelqu’un est insulté à cause de son origine,",
+              "dann": "je ne ris pas, je m’assois à côté de la personne et je préviens le chauffeur."
+            }
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent la discrimination à trois critères, classent des exemples sur l’escalier de la dévalorisation et connaissent des façons de réagir et de chercher de l’aide.",
+        "ablauf": [
+          "Exercice 1 après la ligne de positionnement (5 min) : discuter les cas limites – égal n’est pas toujours juste.",
+          "Exercice 2 après l’input sur l’escalier (5 min) : « Pourquoi vaut-il la peine de réagir en bas ? »",
+          "Encadré-conseil et exercice 3 après le théâtre-forum (8 min) : quelles façons avons-nous essayées ?",
+          "Exercice 4 et encadré d’aide (5 min) : inscrire une personne de confiance, montrer les services où trouver de l’aide."
+        ],
+        "hintergrund": "La discrimination signifie que des personnes sont désavantagées, exclues ou rabaissées en raison d’un critère ; la Convention des Nations Unies relative aux droits de l’enfant en protège expressément chaque enfant (Nations Unies, 1989). Allport (1954) a décrit comment les préjugés peuvent s’intensifier, des propos dévalorisants à la violence, en passant par l’évitement et le désavantage. L’exclusion blesse le sentiment d’appartenance, l’estime de soi et le sentiment de contrôle (Williams, 2007). Les témoins n’interviennent souvent pas parce que la responsabilité se dilue (Latané & Darley, 1970) – des voies concrètes et sûres abaissent cet obstacle.",
+        "quellen": [
+          "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen.",
+          "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+          "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452.",
+          "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 1 avec trois situations ; clarifier les critères à partir d’un exemple.",
+          "schwerer": "Écrire un plan pour toute la classe : que peuvent faire dix témoins ?"
+        },
+        "impulse": [
+          "Comment savez-vous si un traitement inégal est équitable ?",
+          "Qu’est-ce qui vous aide à contredire dès la marche 1 ?"
+        ],
+        "tipps": [
+          "Clarifier d’avance les services d’aide de l’école.",
+          "N’effleurer la haine en ligne que brièvement – elle est le thème de la séance 25."
+        ],
+        "achtung": "Ne demander à personne ses expériences personnelles, ne prendre personne comme exemple et ne forcer personne à se dévoiler. En cas de menace ou de violence, suivre la procédure de protection et informer la direction compétente (responsable) ; en urgence 113 ou 112.",
+        "material": "Affiche avec les services d’aide"
       }
     }
   }

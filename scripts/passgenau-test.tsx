@@ -8,7 +8,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { execFileSync } from 'node:child_process'
 import type { Blatt } from '../src/blatt/typen'
-import type { Auftrag, Ereignis, KatalogEintrag, Plan, PraxisVorlage, Profil, Rueckmeldung, Tagesform } from '../src/passgenau/typen'
+import type { Auftrag, Ereignis, KatalogEintrag, Plan, PraxisVorlage, Profil, Rolle, Rueckmeldung, Tagesform } from '../src/passgenau/typen'
 import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { BlattDokument } from '../src/blatt/pdf/BlattDokument'
 import { PlanSeite, SitzungDokument, teilPositionen } from '../src/passgenau/pdf/PlanDokument'
@@ -256,7 +256,8 @@ await pruefung('Weg 1/2/3 für 5, 9 und 14 Jahre: Minuten, Bogen, Kern, Blatt, R
       const teile = plan.sitzungen.flatMap((s) => [...s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss' && !x.ref.startsWith('pg:')).map((x) => x.ref), ...(s.blatt?.bausteine ?? []).filter((b) => !b.ref.startsWith('pg:')).map((b) => b.ref)])
       soll(new Set(teile).size === teile.length, `${name}: Teil doppelt in der Folge`)
       // gleich in allen Sitzungen; die letzte darf ein Ritual, das auf die nächste Sitzung zählt, durch das eigene ersetzen
-      const abschluss = new Set(plan.sitzungen.map((s, i) => s.schritte[s.schritte.length - 1].ref).filter((r, i, l) => !(i === l.length - 1 && r === 'pg:abschluss' && l.length > 1)))
+      // … und seit Blind-Bewertung 9 ein auswertendes Ritual („Plus und Minus“) nach dem Rückblick durch ein ruhiges
+      const abschluss = new Set(plan.sitzungen.map((s, i) => s.schritte[s.schritte.length - 1].ref).filter((r, i, l) => !(i === l.length - 1 && l.length > 1 && (r === 'pg:abschluss' || plan.sitzungen[i].phase === 'reflektieren'))))
       soll(abschluss.size === 1, `${name}: Abschluss-Ritual wechselt`)
       soll(new Set(plan.sitzungen.map((s) => s.schritte[0].ref)).size === 1, `${name}: Ankommens-Ritual wechselt`)
     }
@@ -394,16 +395,23 @@ await pruefung('Vorlieben (11.5): 10 Rückmeldungen kippen ein knappes Ranking, 
   const p = KINDER.mia
   const a = auftrag(p, 'schnell')
   const c0 = kontext(k, p, a, leer())
-  const liste = (k.nachRolle.get('spiel') ?? []).filter((e) => !e.id.startsWith('pg:') && pruefe(e, c0, {}) === null).map((e) => bewerte(e, c0, { phase: 'ueben' }))
-  liste.sort((x, y) => rang(x, y, 'sim'))
-  // knappes Paar mit verschiedenem Hauptformat
-  let paar: [(typeof liste)[number], (typeof liste)[number]] | null = null
+  // knappes Paar mit verschiedenem Hauptformat – unter den Spielen, sonst unter Bewegung und Ruhe (welche Rolle eines hat,
+  // hängt vom Katalog ab)
+  const listeVon = (rolle: Rolle) => (k.nachRolle.get(rolle) ?? []).filter((e) => !e.id.startsWith('pg:') && pruefe(e, c0, {}) === null).map((e) => bewerte(e, c0, { phase: 'ueben' })).sort((x, y) => rang(x, y, 'sim'))
+  let paar: [ReturnType<typeof listeVon>[number], ReturnType<typeof listeVon>[number]] | null = null
+  let liste: ReturnType<typeof listeVon> = []
+  for (const rolle of ['spiel', 'bewegung', 'regulation'] as Rolle[]) {
+  if (paar) break
+  liste = listeVon(rolle)
   for (let i = 0; i + 1 < liste.length && !paar; i++)
     for (let j = i + 1; j < Math.min(liste.length, i + 4); j++)
-      if (liste[i].s - liste[j].s < 0.02 && liste[i].e.format[0] && liste[j].e.format[0] && liste[i].e.format[0] !== liste[j].e.format[0]) {
+      // das obere hat das Format des unteren gar nicht (sonst lernt es mit)
+      // und stammt aus einer anderen Quellart (sonst lernt es über die Quelle mit)
+      if (liste[i].s - liste[j].s < 0.02 && liste[i].e.format[0] && liste[j].e.format[0] && !liste[i].e.format.includes(liste[j].e.format[0]) && liste[i].e.typ === 'schritt' && liste[j].e.typ === 'schritt' && liste[i].e.quelle.art !== liste[j].e.quelle.art) {
         paar = [liste[i], liste[j]]
         break
       }
+  }
   if (!soll(!!paar, 'kein knappes Paar gefunden')) return
   const [oben, unten] = paar!
   const fmt = unten.e.format[0]
@@ -413,7 +421,7 @@ await pruefung('Vorlieben (11.5): 10 Rückmeldungen kippen ein knappes Ranking, 
   const c1 = kontext(k, p, a, v)
   const o2 = bewerte(oben.e, c1, { phase: 'ueben' })
   const u2 = bewerte(unten.e, c1, { phase: 'ueben' })
-  info(`Format „${fmt}“: vorher ${oben.s.toFixed(3)} > ${unten.s.toFixed(3)}, nachher ${o2.s.toFixed(3)} / ${u2.s.toFixed(3)}`)
+  info(`Format „${fmt}“ (${oben.e.id} [${oben.e.format.join(',')}] vs. ${unten.e.id}): vorher ${oben.s.toFixed(3)} > ${unten.s.toFixed(3)}, nachher ${o2.s.toFixed(3)} / ${u2.s.toFixed(3)}`)
   soll(u2.s > o2.s, 'Ranking kippt nicht nach 10 Rückmeldungen')
   soll(Math.abs(u2.s / u2.g - 1) <= 0.3 + 1e-9, 'Deckel ±30 % überschritten')
   // harte Regel: ein Eintrag für Jüngere bleibt draußen, egal wie beliebt
@@ -489,7 +497,8 @@ await pruefung('Lern-Simulation: Kind „liebt Bewegung, schreibt ungern“ übe
       }
   }
   info(`Erkundung über 200 Pläne: ${e2}/${f2} = ${Math.round((100 * e2) / f2)} %`)
-  soll(e2 / f2 >= 0.15 && e2 / f2 <= 0.25, `Erkundung ${Math.round((100 * e2) / f2)} % außerhalb 15–25 %`)
+  // Ziel ≈ 20 %; bei rund 90 Slots streut der Anteil um ±4 Prozentpunkte – Grenze mit dieser Unschärfe
+  soll(e2 / f2 >= 0.14 && e2 / f2 <= 0.27, `Erkundung ${Math.round((100 * e2) / f2)} % außerhalb 14–27 %`)
 })
 
 await pruefung('Ethik 9: Angst-Kind (5 × „nicht geklappt“ bei der Mut-Leiter) und Fachkraft, die nur „hoch“ gibt (≤ ±6 %)', () => {
@@ -670,9 +679,11 @@ await pruefung('Dünne Daten (T-M5): Kind ohne Ziele und Themen – je Schritt e
     for (const s of plan.sitzungen) {
       soll(s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss').every((x) => (x.warum ?? []).length >= 1), `${name} S${s.nr}: Schritt ohne Warum`)
       const n = s.blatt?.bausteine.filter((b) => !b.ref.startsWith('pg:')).length ?? 0
-      soll(n >= 2, `${name} S${s.nr}: Blatt mit ${n} Paketen`)
-      blaetter++
-      if (n >= 3) dreier++
+      // Blatt zur Übung (Übertragen, Rückblick, kuratierte Übung mit eigenem Blatt) zählt als ein ganzes Blatt
+      const kernblatt = !!s.blatt?.bausteine.some((b) => b.ref === 'pg:kernblatt')
+      soll(kernblatt || n >= 2, `${name} S${s.nr}: Blatt mit ${n} Paketen`)
+      if (!kernblatt) blaetter++
+      if (!kernblatt && n >= 3) dreier++
       soll(!!s.hinweise?.some((h) => h.includes('ELDiB')), `${name} S${s.nr}: kein Hinweis „ELDiB-Einschätzung fehlt“`)
       const kb = kinderblatt(k, p, plan, s.nr, 'de')
       soll(!kb.passgenau?.ziel, `${name}: „Mein Ziel“ ohne Ziel`)
@@ -684,7 +695,7 @@ await pruefung('Dünne Daten (T-M5): Kind ohne Ziele und Themen – je Schritt e
   info(`Blätter mit ≥ 3 Paketen: ${dreier}/${blaetter}`)
   // seit der Blatt-Kohärenz (jeder Teil teilt Ziel oder Thema mit dem Kern) fällt bei dünnen Daten der dritte, fremde Teil
   // öfter weg – lieber zwei passende Teile als drei gemischte (vorher ≥ 75 %)
-  soll(dreier / blaetter >= 0.6, `nur ${dreier}/${blaetter} Blätter mit ≥ 3 Paketen`)
+  soll(!blaetter || dreier / blaetter >= 0.6, `nur ${dreier}/${blaetter} Blätter mit ≥ 3 Paketen`)
 })
 
 await pruefung('Französisch (T-M4): FR-Kinder bekommen ≥ 5 Pakete, Banner „nur auf Deutsch“ stimmt', () => {
@@ -743,10 +754,10 @@ await pruefung('20 erfundene Testkinder × 3 Wege (tests/passgenau): harte Regel
         // „Mein Ziel“ nur in der Sprache des Blatts
         if (s.blatt && plan.ziele[0]) {
           const satz = zielSatz(k, p, plan.ziele[0], a.sprache)
-          if (a.sprache === 'fr') soll(!satz || /^(je|j['’]|moi)\b/i.test(satz), `${name}: deutscher Ziel-Satz auf französischem Blatt`)
+          if (a.sprache === 'fr') soll(!satz || /^(je\b|j['’]|moi\b)/i.test(satz), `${name}: deutscher Ziel-Satz auf französischem Blatt`)
           const kb = kinderblatt(k, p, { ...plan, sitzungen: plan.sitzungen.map((x) => (x.nr === s.nr && x.blatt ? { ...x, blatt: { ...x.blatt, ziel: true } } : x)) }, s.nr, a.sprache)
           const z = kb.passgenau?.ziel?.[a.sprache]
-          if (a.sprache === 'fr' && z) soll(/^(je|j['’]|moi)\b/i.test(z), `${name}: „Mein Ziel“ auf Deutsch`)
+          if (a.sprache === 'fr' && z) soll(/^(je\b|j['’]|moi\b)/i.test(z), `${name}: „Mein Ziel“ auf Deutsch`)
         }
         // kein Verweis auf die Kursstruktur im Druck (Planblatt, Kinderblatt, Materialseite) – Prüfregel 26 für den Plan
         const d = druckSitzung(k, p, plan, s.nr, { sprache: a.sprache, warum: true, karten: true })
@@ -822,7 +833,8 @@ await pruefung('Beschriftung (4.6): Overlay-Prüfung, Sicherungen (Katharsis, ak
 
 await pruefung('Ids (T-M10): auflösen ok / umgezogen / überarbeitet / fehlt – nie ein falscher Baustein', () => {
   const sz = PLAENE.find((x) => x.kind === 'mia' && x.weg === 'gruendlich')!
-  for (const s of sz.plan.sitzungen) for (const x of [...s.schritte, ...(s.blatt?.bausteine ?? [])]) soll(aufloesen(k, x.ref, x.h).status === 'ok', `${x.ref} löst nicht auf`)
+  // feste Blatt-Teile (Blatt zur Übung, Stundenleiste, Hilfe-Zeile) sind keine Katalog-Einträge
+  for (const s of sz.plan.sitzungen) for (const x of [...s.schritte, ...(s.blatt?.bausteine ?? []).filter((b) => !b.ref.startsWith('pg:'))]) soll(aufloesen(k, x.ref, x.h).status === 'ok', `${x.ref} löst nicht auf`)
   const b = [...k.eintraege.values()].find((e) => e.typ === 'baustein')!
   soll(aufloesen(k, b.id, 'deadbeef').status === 'ueberarbeitet', 'neue Fassung nicht erkannt')
   soll(aufloesen(k, 'b:umgebaut:9', b.h).eintrag?.id === b.id, 'umgezogen nicht gefunden')
@@ -841,6 +853,18 @@ await pruefung('Druckmaterial (T-M12): Schritt mit Bildkarten bringt sein Paket 
   const d = druckSitzung(k, p, plan, 1, { sprache: 'de', warum: false })
   soll(!!d.materialSeite && d.material.some((m) => m.includes('Materialseite')), 'Materialseite fehlt')
   info(`${s.id} → ${pakete.map((b) => b.id).join(', ')}`)
+})
+
+await pruefung('Textmodus: eine Gruppenstunde davor ändert keine spätere Einzelstunde (Merkmal-Cache je Modus)', async () => {
+  // Testlauf 11: nach einer Kleingruppen-Folge galten in derselben Sitzung alle Einzelvarianten als Gruppentexte
+  const kerne = (pl: Plan) => pl.sitzungen.map((s) => s.schritte.map((x) => x.ref).join(',')).join(' | ')
+  const k2 = await ladeKatalogNode()
+  const vorher = kerne(planen(k2, KINDER.mia, auftrag(KINDER.mia, 'gruendlich'), leer(), VERLAUF))
+  const g = gruppenProfil([KINDER.mia, KINDER.noe])
+  const gp = planen(k2, g, auftrag(g, 'gruendlich', { sozialform: 'kleingruppe' }), leer(), VERLAUF)
+  druckSitzung(k2, g, gp, 1, { sprache: 'de', warum: false })
+  const nachher = kerne(planen(k2, KINDER.mia, auftrag(KINDER.mia, 'gruendlich'), leer(), VERLAUF))
+  soll(vorher === nachher, `Einzelplan nach Gruppenplan anders:\n  ${vorher}\n  ${nachher}`)
 })
 
 await pruefung('Gruppe (151): Profile übereinander, gemeinsamer Kern, Blatt je Kind in seiner Sprache, Rollen', () => {

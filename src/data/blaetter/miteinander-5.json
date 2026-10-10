@@ -1,0 +1,1228 @@
+[
+  {
+    "id": "zwei-kinder-zwei-meinungen",
+    "bereich": "miteinander",
+    "thema": "empathie",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "SOZ-32",
+      "SOZ-31",
+      "K-14"
+    ],
+    "schlagworte": [
+      "Meinung",
+      "Verschiedenheit",
+      "Respekt",
+      "Perspektivwechsel",
+      "Satzstarter"
+    ],
+    "bild": "icon:messages",
+    "verwandt": [
+      "ich-hoere-zu",
+      "wie-fuehlt-sich-das-an"
+    ],
+    "de": {
+      "titel": "Zwei Kinder, zwei Meinungen",
+      "untertitel": "Nicht alle mögen dasselbe. Das ist in Ordnung.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schau die Bilder an. Was sagen Mila und Tiago?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:mia:froh",
+                "figur:noah:froh"
+              ],
+              "requisit": "icon:ice-cream",
+              "text": "Ich mag Eis.",
+              "sprecher": 0,
+              "untertitel": "Mila mag Eis."
+            },
+            {
+              "figuren": [
+                "figur:mia:froh",
+                "figur:noah:froh"
+              ],
+              "requisit": "icon:cake",
+              "text": "Ich mag lieber Torte.",
+              "sprecher": 1,
+              "untertitel": "Tiago mag Torte."
+            },
+            {
+              "figuren": [
+                "figur:mia:froh",
+                "figur:noah:ruhig"
+              ],
+              "text": "Du magst Torte. Ich mag Eis.",
+              "sprecher": 0,
+              "untertitel": "Mila sagt es freundlich."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer hat recht? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "Mila",
+            "Tiago",
+            "beide"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und du? Kreise ein. Frag dann ein Kind und schreib auf.",
+          "symbole": [
+            "einkreisen",
+            "partner",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "modus": "einkreisen",
+          "spalten": 2,
+          "bilder": [
+            {
+              "bild": "icon:apple",
+              "text": "Apfel"
+            },
+            {
+              "bild": "icon:banana",
+              "text": "Banane"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "Fußball"
+            },
+            {
+              "bild": "icon:puzzle",
+              "text": "Puzzle"
+            },
+            {
+              "bild": "icon:cat",
+              "text": "Katze"
+            },
+            {
+              "bild": "icon:dog",
+              "text": "Hund"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Du magst …, ich mag …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jemand mag etwas anderes. Kreuze die netten Sätze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Okay, du magst das.",
+            "Das ist doch doof.",
+            "Warum magst du das?",
+            "So etwas mag keiner."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erleben, dass man Verschiedenes mögen darf, ohne dass jemand unrecht hat. Sie üben den Satz „Du magst …, ich mag …“ und erkennen abwertende Antworten.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Lehrperson nennt etwas, das sie mag (Oliven), und fragt: „Wer noch? Wer nicht?“ Daumen hoch oder runter, beides ist willkommen.",
+          "Aufgabe 1–2 (8 Min.): Den Comic mit verteilten Rollen sprechen, abstimmen: „Wer hat recht?“ Beim Geschmack gibt es kein Richtig oder Falsch, bei Regeln schon.",
+          "Aufgabe 3 (10 Min.): Bildpaare einkreisen, ein anderes Kind fragen, den Satz laut sagen und aufschreiben. Rollen tauschen.",
+          "Aufgabe 4 (5 Min.): Die netten Sätze ankreuzen. Abwertende Sätze umformulieren: Aus „Das ist doof“ wird „Ich mag das nicht so.“"
+        ],
+        "hintergrund": "Mit sechs bis acht Jahren verstehen Kinder zunehmend, dass andere eigene Wünsche und Vorlieben haben (Denham, 1998). Eine abweichende Meinung hören sie aber oft als „du liegst falsch“. Das Blatt trennt deshalb Geschmack von Regeln und übt einen Satz, der beschreibt statt zu bewerten: erst sagen, was die andere Person mag, dann, was man selbst mag (vgl. Rosenberg, 2001). Förderprogramme beginnen mit solchen Übungen zu Perspektivwechsel und Empathie (Cierpka, 2005).",
+        "quellen": [
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder."
+        ],
+        "differenzierung": {
+          "leichter": "Bildpaare mündlich bearbeiten, den Satz als Satzstreifen vorgeben.",
+          "schwerer": "Zusätzlich fragen: „Warum magst du das?“ und die Antwort aufschreiben."
+        },
+        "impulse": [
+          "Worüber seid ihr oft verschiedener Meinung?",
+          "Wie fühlt es sich an, wenn jemand sagt: „Das ist doof“?",
+          "Was kannst du sagen, wenn du etwas anders siehst?"
+        ],
+        "tipps": [
+          "Gruppe: Paare bewusst mischen. Im Vergleich merken Kinder, wie verschieden alle sind.",
+          "Einzelstunde: Die Fachkraft wählt bewusst etwas anderes als das Kind und antwortet mit „Du magst …, ich mag …“."
+        ],
+        "achtung": "Abwertende Meinungen (über Herkunft, Sprache, Aussehen) sind keine Geschmackssache: klar benennen. Trifft es immer dasselbe Kind, die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "Deux enfants, deux avis",
+      "untertitel": "Tout le monde n’aime pas la même chose. Et ce n’est pas grave.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Regarde les images. Que disent Mila et Tiago ?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:mia:froh",
+                "figur:noah:froh"
+              ],
+              "requisit": "icon:ice-cream",
+              "text": "J’aime la glace.",
+              "sprecher": 0,
+              "untertitel": "Mila aime la glace."
+            },
+            {
+              "figuren": [
+                "figur:mia:froh",
+                "figur:noah:froh"
+              ],
+              "requisit": "icon:cake",
+              "text": "Moi, je préfère le gâteau.",
+              "sprecher": 1,
+              "untertitel": "Tiago aime le gâteau."
+            },
+            {
+              "figuren": [
+                "figur:mia:froh",
+                "figur:noah:ruhig"
+              ],
+              "text": "Toi, le gâteau. Moi, la glace.",
+              "sprecher": 0,
+              "untertitel": "Mila le dit gentiment."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui a raison ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "Mila",
+            "Tiago",
+            "les deux"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et toi ? Entoure ton choix. Demande à un enfant et écris.",
+          "symbole": [
+            "einkreisen",
+            "partner",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "modus": "einkreisen",
+          "spalten": 2,
+          "bilder": [
+            {
+              "bild": "icon:apple",
+              "text": "la pomme"
+            },
+            {
+              "bild": "icon:banana",
+              "text": "la banane"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "le foot"
+            },
+            {
+              "bild": "icon:puzzle",
+              "text": "le puzzle"
+            },
+            {
+              "bild": "icon:cat",
+              "text": "le chat"
+            },
+            {
+              "bild": "icon:dog",
+              "text": "le chien"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Toi, tu aimes …, moi, j’aime …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelqu’un aime autre chose. Coche les phrases gentilles.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "D’accord, toi, tu aimes ça.",
+            "C’est nul, ça.",
+            "Pourquoi tu aimes ça ?",
+            "Personne n’aime ça."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants vivent qu’on peut aimer des choses différentes sans que personne ait tort. Ils s’exercent à dire « Toi, tu aimes …, moi, j’aime … » et repèrent les réponses qui rabaissent.",
+        "ablauf": [
+          "Entrée en matière (5 min) : l’adulte cite quelque chose qu’il aime (les olives) et demande : « Qui d’autre ? Qui n’aime pas ça ? » Pouce en haut ou en bas, les deux sont les bienvenus.",
+          "Exercices 1–2 (8 min) : jouer la bande dessinée à plusieurs voix, voter : « Qui a raison ? » Pour les goûts, il n’y a ni vrai ni faux ; pour une règle, si.",
+          "Exercice 3 (10 min) : entourer les paires d’images, interroger un autre enfant, dire la phrase à voix haute et l’écrire. Changer de rôle.",
+          "Exercice 4 (5 min) : cocher les phrases gentilles. Reformuler les phrases blessantes : « C’est nul » devient « Moi, je n’aime pas trop ça. »"
+        ],
+        "hintergrund": "Entre six et huit ans, les enfants comprennent de mieux en mieux que les autres ont leurs propres envies et préférences (Denham, 1998). Un avis différent sonne pourtant souvent comme « tu as tort ». La fiche distingue donc les goûts des règles et entraîne une phrase qui décrit au lieu de juger : dire d’abord ce que l’autre aime, puis ce qu’on aime soi-même (cf. Rosenberg, 2001). Les programmes de soutien socio-émotionnel commencent par ces exercices de changement de point de vue et d’empathie (Cierpka, 2005).",
+        "quellen": [
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder."
+        ],
+        "differenzierung": {
+          "leichter": "Paires d’images à l’oral ; la phrase donnée sur une bande à lire.",
+          "schwerer": "Demander en plus « Pourquoi aimes-tu ça ? » et écrire la réponse."
+        },
+        "impulse": [
+          "Sur quoi n’êtes-vous souvent pas d’accord ?",
+          "Que ressent-on quand quelqu’un dit « C’est nul » ?",
+          "Que peux-tu dire quand tu vois les choses autrement ?"
+        ],
+        "tipps": [
+          "En groupe : mélanger volontairement les paires ; en comparant, les enfants voient combien chacun est différent.",
+          "En séance individuelle : l’adulte choisit exprès autre chose que l’enfant et répond « Toi, tu aimes …, moi, j’aime … » : le modèle d’abord."
+        ],
+        "achtung": "Les avis qui rabaissent (origine, langue, apparence) ne sont pas une question de goût : le dire clairement. Si cela touche toujours le même enfant, informer la direction compétente (responsable).",
+        "material": "Crayons de couleur"
+      }
+    }
+  },
+  {
+    "id": "ich-hoere-zu",
+    "bereich": "miteinander",
+    "thema": "sprechen",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "SOZ-32",
+      "K-17",
+      "SOZ-19"
+    ],
+    "schlagworte": [
+      "Zuhören",
+      "ausreden lassen",
+      "nachfragen",
+      "aktives Zuhören",
+      "Respekt"
+    ],
+    "bild": "icon:ear",
+    "verwandt": [
+      "zwei-kinder-zwei-meinungen",
+      "ich-bin-dran-du-bist-dran"
+    ],
+    "de": {
+      "titel": "Ich höre zu",
+      "untertitel": "Drei Zeichen zeigen: Ich höre dir zu.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schau die Bilder an. Was macht Pol?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:mia:froh",
+                "figur:tom:ruhig"
+              ],
+              "text": "Ich finde den Winter schön.",
+              "sprecher": 0,
+              "untertitel": "Mila sagt ihre Meinung."
+            },
+            {
+              "figuren": [
+                "figur:mia:traurig",
+                "figur:tom:neutral"
+              ],
+              "text": "Nein. Der Sommer ist viel besser.",
+              "sprecher": 1,
+              "untertitel": "Pol redet dazwischen."
+            },
+            {
+              "figuren": [
+                "figur:mia:froh",
+                "figur:tom:ruhig"
+              ],
+              "text": "Warum findest du den Winter schön?",
+              "sprecher": 1,
+              "untertitel": "Pol hört zu und fragt nach."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkt Mila, dass jemand zuhört? Kreuze drei Zeichen an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Ich schaue weg.",
+            "Ich schaue dich an.",
+            "Ich rufe dazwischen.",
+            "Ich frage nach.",
+            "Ich lasse dich ausreden.",
+            "Ich rede mit jemand anderem."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übt zu zweit. Ein Kind erzählt, das andere hört zu.",
+          "hinweis": "Thema: Mein Lieblingstier. Dann kreist ihr ein, was geklappt hat.",
+          "symbole": [
+            "partner",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:eye",
+              "text": "anschauen"
+            },
+            {
+              "bild": "icon:hourglass",
+              "text": "ausreden lassen"
+            },
+            {
+              "bild": "icon:question-mark",
+              "text": "nachfragen"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sag, was du gehört hast.",
+          "hinweis": "Dann tauscht ihr die Rollen.",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Du magst …, weil …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, woran man gutes Zuhören sieht, üben drei Zuhör-Zeichen (anschauen, ausreden lassen, nachfragen) und sagen in einem Satz, was sie gehört haben.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Lehrperson erzählt etwas und schaut dabei weg. „Wie war das für mich?“ Dann noch einmal mit voller Aufmerksamkeit.",
+          "Aufgabe 1–2 (10 Min.): Den Comic mit verteilten Rollen sprechen. Die drei Zeichen ankreuzen und mit Gesten verbinden: Auge, Hand vor dem Mund, Finger an der Wange.",
+          "Aufgabe 3 (8 Min.): Zu zweit: Ein Kind erzählt eine Minute von seinem Lieblingstier, das andere hört zu. Einkreisen, was geklappt hat; Rollen tauschen.",
+          "Aufgabe 4 (5 Min.): Wiedergeben mit „Du magst …, weil …“. Das erzählende Kind antwortet: „Genau“ oder „Fast. Ich meinte …“."
+        ],
+        "hintergrund": "Aktives Zuhören besteht aus wenigen sichtbaren Handlungen: zuwenden, nicht unterbrechen, nachfragen und wiedergeben, was man verstanden hat (Rogers & Roethlisberger, 1952; Gordon, 1972). Für Grundschulkinder werden sie als konkrete Zeichen mit Gesten eingeführt, denn „gut zuhören“ ist zu abstrakt. Wer die Meinung des anderen mit eigenen Worten wiedergibt, zeigt Respekt, ohne zuzustimmen. Programme zur Gewaltprävention üben Zuhören früh, weil Empathie und Konfliktlösung darauf aufbauen (Cierpka, 2005).",
+        "quellen": [
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Zeichen üben; Aufgabe 4 mündlich mit Satzanfang.",
+          "schwerer": "Ein drittes Kind beobachtet und kreist ein, was es sieht."
+        },
+        "impulse": [
+          "Woran merkst du, dass dir jemand zuhört?",
+          "Was hilft dir, nicht dazwischenzurufen?",
+          "Wann fällt dir das Zuhören leicht?"
+        ],
+        "tipps": [
+          "Gruppe: Die drei Zeichen als Plakat aufhängen und im Alltag benennen: „Ich sehe, du lässt Mila ausreden.“",
+          "Einzelstunde: Die Fachkraft lässt beim Erzählen mit Absicht ein Zeichen weg; das Kind benennt, was fehlte. Dann hört sie ihm ganz zu."
+        ],
+        "achtung": "Kinder, die oft dazwischenrufen, brauchen kleine Schritte und Ermutigung statt Kritik. Reagiert ein Kind kaum auf Ansprache, an Hörprobleme denken.",
+        "material": "Buntstifte; optional Sanduhr"
+      }
+    },
+    "fr": {
+      "titel": "J’écoute",
+      "untertitel": "Trois signes montrent à l’autre : je t’écoute.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Regarde les images. Que fait Pol ?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:mia:froh",
+                "figur:tom:ruhig"
+              ],
+              "text": "J’aime bien l’hiver.",
+              "sprecher": 0,
+              "untertitel": "Mila dit ce qu’elle pense."
+            },
+            {
+              "figuren": [
+                "figur:mia:traurig",
+                "figur:tom:neutral"
+              ],
+              "text": "Non. L’été, c’est bien mieux.",
+              "sprecher": 1,
+              "untertitel": "Pol lui coupe la parole."
+            },
+            {
+              "figuren": [
+                "figur:mia:froh",
+                "figur:tom:ruhig"
+              ],
+              "text": "Pourquoi tu aimes l’hiver ?",
+              "sprecher": 1,
+              "untertitel": "Pol écoute et pose une question."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi Mila voit-elle qu’on l’écoute ? Coche trois signes.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Je regarde ailleurs.",
+            "Je te regarde.",
+            "Je coupe la parole.",
+            "Je pose une question.",
+            "Je te laisse finir.",
+            "Je parle à quelqu’un d’autre."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entraînez-vous à deux. L’un raconte, l’autre écoute.",
+          "hinweis": "Thème : mon animal préféré. Ensuite, entourez ce qui a marché.",
+          "symbole": [
+            "partner",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:eye",
+              "text": "regarder"
+            },
+            {
+              "bild": "icon:hourglass",
+              "text": "laisser finir"
+            },
+            {
+              "bild": "icon:question-mark",
+              "text": "poser une question"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dis ce que tu as entendu.",
+          "hinweis": "Ensuite, changez de rôle.",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Tu aimes …, parce que …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent à quoi l’on voit qu’on écoute bien, s’exercent à trois signes (regarder, laisser finir, poser une question) et disent en une phrase ce qu’ils ont entendu.",
+        "ablauf": [
+          "Entrée en matière (5 min) : l’adulte raconte quelque chose en regardant ailleurs. « Comment était-ce pour moi ? » Puis il recommence avec toute son attention.",
+          "Exercices 1–2 (10 min) : jouer la bande dessinée à plusieurs voix, cocher les trois signes et les associer à des gestes : œil, main devant la bouche, doigt sur la joue.",
+          "Exercice 3 (8 min) : à deux, un enfant parle une minute de son animal préféré, l’autre écoute. Entourer ce qui a marché ; changer de rôle.",
+          "Exercice 4 (5 min) : reformuler avec « Tu aimes …, parce que … ». L’enfant répond : « Exact » ou « Presque. Je voulais dire … »."
+        ],
+        "hintergrund": "L’écoute active se compose de quelques gestes visibles : se tourner vers l’autre, ne pas l’interrompre, poser des questions et reformuler ce qu’on a compris (Rogers & Roethlisberger, 1952 ; Gordon, 1972). À l’école primaire, on les introduit comme des signes concrets avec des gestes, car « bien écouter » est trop abstrait. Reformuler l’avis de l’autre lui montre du respect sans être d’accord. Les programmes de prévention de la violence travaillent l’écoute tôt, car l’empathie et la résolution de conflits en dépendent (Cierpka, 2005).",
+        "quellen": [
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder."
+        ],
+        "differenzierung": {
+          "leichter": "Deux signes seulement ; exercice 4 à l’oral avec le début de phrase.",
+          "schwerer": "Un troisième enfant observe et entoure les signes qu’il voit."
+        },
+        "impulse": [
+          "À quoi remarques-tu que quelqu’un t’écoute ?",
+          "Qu’est-ce qui t’aide à ne pas couper la parole ?",
+          "Quand est-ce facile pour toi d’écouter ?"
+        ],
+        "tipps": [
+          "En groupe : afficher les trois signes et les nommer au quotidien : « Je vois que tu laisses Mila finir. »",
+          "En séance individuelle : l’adulte omet exprès un signe en racontant ; l’enfant dit ce qui manquait. Puis l’adulte l’écoute jusqu’au bout."
+        ],
+        "achtung": "Un enfant qui coupe souvent la parole a besoin de petites étapes et d’encouragements, pas de critiques. S’il réagit à peine quand on lui parle, penser à l’audition.",
+        "material": "Crayons de couleur ; en option, un sablier"
+      }
+    }
+  },
+  {
+    "id": "loesungs-ideen",
+    "bereich": "miteinander",
+    "thema": "konflikte",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "V-28",
+      "SOZ-34",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Lösungsvorschläge",
+      "Problemlösen",
+      "fair",
+      "Alternativen",
+      "Folgen bedenken"
+    ],
+    "bild": "icon:bulb",
+    "verwandt": [
+      "wir-finden-eine-loesung",
+      "streit-was-nun"
+    ],
+    "de": {
+      "titel": "Lösungs-Ideen",
+      "untertitel": "Bei einem Problem gibt es oft mehrere Lösungen. Welche ist fair für beide?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Das ist das Problem. Schau die Bilder an.",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:lea:aufgeregt",
+                "figur:sami:aufgeregt"
+              ],
+              "requisit": "icon:scooter",
+              "text": "Ich will Roller fahren.",
+              "sprecher": 0,
+              "untertitel": "Léa und Yusuf sehen den Roller."
+            },
+            {
+              "figuren": [
+                "figur:lea:wuetend",
+                "figur:sami:wuetend"
+              ],
+              "requisit": "icon:scooter",
+              "text": "Ich auch. Ich war zuerst da.",
+              "sprecher": 1,
+              "untertitel": "Beide wollen ihn. Beide ärgern sich."
+            },
+            {
+              "figuren": [
+                "figur:lea:ruhig",
+                "figur:sami:ruhig"
+              ],
+              "requisit": "icon:bulb",
+              "blase": "denken",
+              "text": "Was können wir tun?",
+              "sprecher": 0,
+              "untertitel": "Sie halten an und denken nach."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ist die Idee fair für beide? Kreuze an.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "fair",
+            "nicht fair"
+          ],
+          "items": [
+            "Léa nimmt den Roller einfach.",
+            "Sie fahren abwechselnd.",
+            "Sie würfeln, wer zuerst fährt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zwei Kinder, ein Stift. Male oder schreibe eine faire Idee.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Meine Idee:",
+          "hoehe": 2.5,
+          "zeichnen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und du? Ein Problem mit einem Kind – echt oder erfunden.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das Problem: …",
+            "Eine faire Idee: …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder prüfen Lösungsideen mit der Frage „Ist das fair für beide?“, finden eigene Ideen und übertragen das auf ein Problem aus ihrem Alltag.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Zwei Kinder wollen dasselbe. Was kann man tun?“ Ideen sammeln, ohne zu bewerten.",
+          "Aufgabe 1–2 (10 Min.): Comic nacherzählen. Jede Idee mit Daumen hoch oder runter prüfen, dann ankreuzen: „Ist es sicher? Ist es fair? Wie geht es beiden damit?“",
+          "Aufgabe 3 (5 Min.): Zum neuen Problem eine eigene Idee malen oder schreiben, vorstellen und gemeinsam prüfen.",
+          "Aufgabe 4 (7 Min.): Ein eigenes oder erfundenes Problem mit einer fairen Idee notieren. Niemand muss etwas Privates vorlesen."
+        ],
+        "hintergrund": "Soziale Problemlösefähigkeit lässt sich schon in der Grundschule üben: mehrere Lösungen finden statt nur der ersten und deren Folgen bedenken (Shure, 1992). Das Dinosaurier-Programm lässt jede Idee mit drei Fragen prüfen: Ist sie sicher? Ist sie fair? Wie fühlen sich alle damit? (Webster-Stratton & Reid, 2003). Faustlos arbeitet ähnlich: Problem benennen, Lösungen sammeln, bewerten, ausprobieren (Cierpka, 2005).",
+        "quellen": [
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.",
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder."
+        ],
+        "differenzierung": {
+          "leichter": "Ideen vorlesen und mit dem Daumen zeigen lassen; das Problem mit Figuren nachspielen.",
+          "schwerer": "Drei Ideen sammeln, die fairste wählen und begründen."
+        },
+        "impulse": [
+          "Was passiert, wenn Léa den Roller einfach nimmt?",
+          "Woran merkst du, dass eine Idee fair ist?",
+          "Was tust du, wenn die erste Idee nicht klappt?"
+        ],
+        "tipps": [
+          "Gruppe: Die drei Prüffragen (sicher, fair, alle einverstanden) aufhängen und im nächsten Streit anwenden.",
+          "Einzelstunde: Das Problem mit Figuren nachstellen und jede Idee ausprobieren. So spürt das Kind den Unterschied zwischen fair und nicht fair."
+        ],
+        "achtung": "Kennt ein Kind nur Gewalt oder Rückzug oder zieht es immer den Kürzeren, genauer hinschauen (Mobbing?). Nicht im Plenum vertiefen; die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional ein Roller oder Spielzeug"
+      }
+    },
+    "fr": {
+      "titel": "Idées de solutions",
+      "untertitel": "Un problème a souvent plusieurs solutions. Laquelle est juste ?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Voici le problème. Regarde les images.",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:lea:aufgeregt",
+                "figur:sami:aufgeregt"
+              ],
+              "requisit": "icon:scooter",
+              "text": "Je veux la trottinette.",
+              "sprecher": 0,
+              "untertitel": "Léa et Yusuf voient la trottinette."
+            },
+            {
+              "figuren": [
+                "figur:lea:wuetend",
+                "figur:sami:wuetend"
+              ],
+              "requisit": "icon:scooter",
+              "text": "Moi aussi. J’étais là avant.",
+              "sprecher": 1,
+              "untertitel": "Ils la veulent. Ils sont fâchés."
+            },
+            {
+              "figuren": [
+                "figur:lea:ruhig",
+                "figur:sami:ruhig"
+              ],
+              "requisit": "icon:bulb",
+              "blase": "denken",
+              "text": "Que faire ?",
+              "sprecher": 0,
+              "untertitel": "Ils s’arrêtent et réfléchissent."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "L’idée est-elle juste pour les deux ? Coche.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "juste",
+            "pas juste"
+          ],
+          "items": [
+            "Léa prend la trottinette sans demander.",
+            "Ils roulent chacun son tour.",
+            "Ils jouent aux dés : le gagnant roule en premier."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deux enfants, un crayon. Dessine ou écris une idée juste.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mon idée :",
+          "hoehe": 2.5,
+          "zeichnen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et toi ? Un problème avec un enfant, vrai ou inventé.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Le problème : …",
+            "Une idée juste : …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants testent des idées avec la question « Est-ce juste pour les deux ? », trouvent leurs propres idées et les transposent à un problème de leur quotidien.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Deux enfants veulent la même chose. Que faire ? » Recueillir des idées sans les juger.",
+          "Exercices 1–2 (10 min) : raconter la bande dessinée. Tester chaque idée, pouce en haut ou en bas, puis cocher : « Est-ce sûr ? Est-ce juste ? Comment vont les deux ? »",
+          "Exercice 3 (5 min) : dessiner ou écrire une idée pour le nouveau problème, la présenter et la tester ensemble.",
+          "Exercice 4 (7 min) : noter un problème vécu ou inventé et une idée juste. Personne n’a à lire du privé à voix haute."
+        ],
+        "hintergrund": "La résolution sociale de problèmes peut s’exercer dès l’école primaire : chercher plusieurs solutions au lieu de s’en tenir à la première, et en envisager les conséquences (Shure, 1992). Le programme Dina Dinosaur fait tester chaque idée par trois questions : est-elle sûre ? juste ? comment chacun se sent-il avec elle ? (Webster-Stratton & Reid, 2003). Faustlos procède de même : nommer le problème, rassembler des solutions, les évaluer, les essayer (Cierpka, 2005).",
+        "quellen": [
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.",
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder."
+        ],
+        "differenzierung": {
+          "leichter": "Lire les idées à voix haute, faire montrer le pouce ; rejouer le problème avec des figurines.",
+          "schwerer": "Trouver trois idées, choisir la plus juste et justifier."
+        },
+        "impulse": [
+          "Que se passe-t-il si Léa prend simplement la trottinette ?",
+          "À quoi vois-tu qu’une idée est juste ?",
+          "Que faire quand la première idée ne marche pas ?"
+        ],
+        "tipps": [
+          "En groupe : afficher les trois questions (sûr, juste, tout le monde d’accord) et les utiliser à la prochaine dispute.",
+          "En séance individuelle : rejouer le problème avec des figurines et essayer chaque idée : l’enfant sent la différence entre juste et pas juste."
+        ],
+        "achtung": "Si un enfant ne connaît que la violence ou le repli, ou perd toujours, regarder de plus près (harcèlement ?). Ne pas approfondir en plénière ; informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; en option, une trottinette ou un jouet"
+      }
+    }
+  },
+  {
+    "id": "wir-finden-eine-loesung",
+    "bereich": "miteinander",
+    "thema": "zusammenarbeit",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "V-28",
+      "SOZ-23",
+      "SOZ-19"
+    ],
+    "schlagworte": [
+      "Lösungsweg",
+      "Problemlösen",
+      "Idee",
+      "ausprobieren",
+      "Vorschlag"
+    ],
+    "bild": "icon:route",
+    "verwandt": [
+      "loesungs-ideen",
+      "streit-was-nun"
+    ],
+    "de": {
+      "titel": "Wir finden eine Lösung",
+      "untertitel": "Drei Schritte helfen: Problem, Idee, ausprobieren.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schau die drei Bilder an. Was ist die Idee?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:mia:traurig",
+                "figur:noah:traurig"
+              ],
+              "requisit": "icon:cube",
+              "text": "Der Turm fällt immer um.",
+              "sprecher": 0,
+              "untertitel": "1. Das Problem"
+            },
+            {
+              "figuren": [
+                "figur:mia:ruhig",
+                "figur:noah:froh"
+              ],
+              "requisit": "icon:bulb",
+              "text": "Ich habe eine Idee.",
+              "sprecher": 1,
+              "untertitel": "2. Eine Idee: unten breiter bauen"
+            },
+            {
+              "figuren": [
+                "figur:mia:stolz:jubeln",
+                "figur:noah:stolz:jubeln"
+              ],
+              "requisit": "icon:cube",
+              "text": "Jetzt steht er.",
+              "sprecher": 0,
+              "untertitel": "3. Wir probieren es."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jetzt du. Male ein Problem, eine Idee und den Versuch.",
+          "hinweis": "Es darf ein erfundenes Problem sein.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "leer": true,
+              "blase": "keine",
+              "untertitel": "1. Das Problem"
+            },
+            {
+              "leer": true,
+              "blase": "keine",
+              "untertitel": "2. Eine Idee"
+            },
+            {
+              "leer": true,
+              "blase": "keine",
+              "untertitel": "3. Wir probieren es."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Hat die Idee geklappt? Kreuze an.",
+          "hinweis": "Wenn nicht: Ihr probiert die nächste Idee.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "ja",
+            "ein bisschen",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen einen einfachen Weg für Probleme – Problem erkennen, Idee haben, ausprobieren – und sagen „Ich habe eine Idee“, bevor sie streiten oder aufgeben.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein echtes kleines Problem zeigen (eine Schere für zwei Kinder, ein Turm, der umfällt). „Was könnten wir tun?“",
+          "Aufgabe 1 (8 Min.): Die drei Bilder lesen; Gesten dazu: Finger an die Stirn (Problem), Hand wie eine Lampe (Idee), Daumen hoch (ausprobieren).",
+          "Aufgabe 2 (10 Min.): Jedes Kind malt ein eigenes oder erfundenes Problem in drei Bildern. Wer nicht malen mag, erzählt die Schritte.",
+          "Aufgabe 3 (5 Min.): Hat es geklappt? Wenn nicht, die nächste Idee probieren statt aufzugeben. Zum Schluss die Bilder zeigen; die anderen raten die Idee."
+        ],
+        "hintergrund": "Problemlöseprogramme für junge Kinder teilen ein Problem in wenige feste Schritte: benennen, Ideen sammeln, eine auswählen und ausprobieren, prüfen, ob sie geklappt hat – wenn nicht, die nächste versuchen (Webster-Stratton & Reid, 2003; Shure, 1992). Die Schritte verhindern, dass Kinder in aufgeregter Lage bei der ersten Reaktion bleiben. Der letzte Schritt gehört bewusst dazu: Eine Idee darf scheitern. Der Satz „Ich habe eine Idee“ gibt zudem eine fertige Formulierung für Vorschläge.",
+        "quellen": [
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.",
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press."
+        ],
+        "differenzierung": {
+          "leichter": "Die drei Bilder mit Figuren oder Bausteinen nachspielen statt malen.",
+          "schwerer": "Zwei Ideen malen, entscheiden, welche besser passt, und warum."
+        },
+        "impulse": [
+          "Was ist der erste Schritt, wenn etwas nicht klappt?",
+          "Was kannst du sagen, damit andere deine Idee annehmen?",
+          "Was machst du, wenn die Idee nicht geklappt hat?"
+        ],
+        "tipps": [
+          "Gruppe: „Ich habe eine Idee“ als Klassenzeichen vereinbaren; bei Problemen zuerst diesen Satz sagen lassen.",
+          "Einzelstunde: Ein echtes Problem schaffen (nur ein Stift, ein Turm) und die drei Schritte wirklich gehen; das Ergebnis gemeinsam ansehen."
+        ],
+        "achtung": "Enden Probleme oft in Wut, Weinen oder Rückzug, im Förderteam besprechen. Hinweise auf Gewalt oder Gefährdung: nicht allein lassen, nach internem Ablauf die Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional Bausteine oder Figuren"
+      }
+    },
+    "fr": {
+      "titel": "On trouve une solution",
+      "untertitel": "Trois étapes aident : le problème, une idée, l’essai.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Regarde les trois images. Quelle est l’idée ?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:mia:traurig",
+                "figur:noah:traurig"
+              ],
+              "requisit": "icon:cube",
+              "text": "La tour tombe tout le temps.",
+              "sprecher": 0,
+              "untertitel": "1. Le problème"
+            },
+            {
+              "figuren": [
+                "figur:mia:ruhig",
+                "figur:noah:froh"
+              ],
+              "requisit": "icon:bulb",
+              "text": "J’ai une idée.",
+              "sprecher": 1,
+              "untertitel": "2. Une idée : base plus large"
+            },
+            {
+              "figuren": [
+                "figur:mia:stolz:jubeln",
+                "figur:noah:stolz:jubeln"
+              ],
+              "requisit": "icon:cube",
+              "text": "Maintenant, elle tient.",
+              "sprecher": 0,
+              "untertitel": "3. On essaie."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À toi. Dessine un problème, une idée et l’essai.",
+          "hinweis": "Le problème peut être inventé.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "leer": true,
+              "blase": "keine",
+              "untertitel": "1. Le problème"
+            },
+            {
+              "leer": true,
+              "blase": "keine",
+              "untertitel": "2. Une idée"
+            },
+            {
+              "leer": true,
+              "blase": "keine",
+              "untertitel": "3. On essaie."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "L’idée a-t-elle marché ? Coche.",
+          "hinweis": "Sinon, vous essayez l’idée suivante.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "oui",
+            "un peu",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent un chemin simple face aux problèmes – repérer le problème, avoir une idée, l’essayer – et disent « J’ai une idée » avant de se disputer ou d’abandonner.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer un vrai petit problème (une paire de ciseaux pour deux, une tour qui tombe). « Que pourrions-nous faire ? »",
+          "Exercice 1 (8 min) : lire les trois images ; gestes : doigt sur le front (problème), main comme une lampe (idée), pouce en haut (essayer).",
+          "Exercice 2 (10 min) : chaque enfant dessine un problème vécu ou inventé en trois images. Celui qui ne dessine pas raconte les étapes.",
+          "Exercice 3 (5 min) : ça a marché ? Sinon, essayer l’idée suivante au lieu d’abandonner. À la fin, montrer les dessins ; les autres devinent l’idée."
+        ],
+        "hintergrund": "Les programmes de résolution de problèmes pour jeunes enfants découpent un problème en quelques étapes fixes : le nommer, rassembler des idées, en choisir une et l’essayer, vérifier qu’elle a marché – sinon, essayer la suivante (Webster-Stratton & Reid, 2003 ; Shure, 1992). Ces étapes évitent que l’enfant agité reste sur sa première réaction. La dernière étape est voulue : une idée peut échouer. La phrase « J’ai une idée » offre en outre une formule toute prête pour proposer.",
+        "quellen": [
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.",
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press."
+        ],
+        "differenzierung": {
+          "leichter": "Rejouer les trois images avec des figurines ou des cubes au lieu de dessiner.",
+          "schwerer": "Dessiner deux idées, décider laquelle convient mieux, et pourquoi."
+        },
+        "impulse": [
+          "Quelle est la première étape quand quelque chose ne marche pas ?",
+          "Que peux-tu dire pour que les autres acceptent ton idée ?",
+          "Que fais-tu quand l’idée n’a pas marché ?"
+        ],
+        "tipps": [
+          "En groupe : convenir de « J’ai une idée » comme signe de classe ; en cas de problème, la faire dire d’abord.",
+          "En séance individuelle : créer un vrai problème (un seul crayon, une tour), parcourir les trois étapes et regarder ensemble le résultat."
+        ],
+        "achtung": "Si les problèmes finissent souvent en colère, pleurs ou repli, en parler dans l’équipe de soutien. Indices de violence ou de mise en danger : ne pas laisser l’enfant seul, informer la direction (responsable) selon la procédure interne.",
+        "material": "Crayons de couleur ; en option, des cubes ou figurines"
+      }
+    }
+  }
+]

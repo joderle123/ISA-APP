@@ -294,6 +294,115 @@
         "achtung": "Gelände vorher prüfen (Wasser, Straßen, Abhänge), Erste-Hilfe-Tasche mitnehmen, Allergien kennen (Wespen, Pollen). Nach Aufenthalten im hohen Gras auf Zecken hinweisen. Fotografiert werden Dinge, keine Gesichter.",
         "material": "Blatt auf Klemmbrett, Stift, Handy der Leitung für Fotos, Pfeife; bei Regen Materialkiste"
       }
+    },
+    "fr": {
+      "titel": "Défis nature",
+      "untertitel": "Ensemble plutôt que les uns contre les autres : ce qui compte, c’est que tout le monde participe – pas le nombre de défis réussis.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Règles du jeu",
+          "punkte": [
+            "Restez à portée de vue et de voix. Au signal de rassemblement, tout le monde revient tout de suite au point de rendez-vous.",
+            "Les plantes restent entières – ne prenez que ce qui est déjà par terre.",
+            "Répartissez-vous, mais décidez ensemble.",
+            "S’il pleut, vous jouez à l’intérieur : au lieu de matériaux naturels, vous prenez ce qu’il y a dans la salle ou dans la caisse de matériel, et dix sortes de papier au lieu de feuilles."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vous avez 20 minutes. Relevez autant de défis que possible.",
+          "hinweis": "Cochez « réussi » – et « tous ensemble » seulement si chaque personne a vraiment contribué.",
+          "symbole": [
+            "gruppe",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "réussi",
+            "tous ensemble"
+          ],
+          "items": [
+            "Trouvez trois surfaces très différentes – douce, rugueuse, lisse.",
+            "Créez une œuvre avec ce que vous trouvez – chaque personne y ajoute quelque chose.",
+            "Trouvez quelque chose de chaque couleur de l’arc-en-ciel.",
+            "Construisez une tour de cinq pierres qui tient dix secondes.",
+            "Ramassez dix feuilles différentes – seulement celles qui sont par terre.",
+            "Photographiez quelque chose de tout petit en très grand.",
+            "Trouvez un bruit que vous n’aviez encore jamais écouté vraiment.",
+            "Restez tous ensemble complètement silencieux pendant une minute.",
+            "Trouvez quelque chose de plus vieux que vous tous réunis.",
+            "Inventez un défi pour l’adulte du groupe – et regardez-le s’y prendre."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Donnez un nom à votre œuvre. L’adulte la photographie."
+        },
+        {
+          "art": "feld",
+          "label": "Notre œuvre s’appelle",
+          "hoehe": 1.6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui a aidé votre équipe – et qu’est-ce qui a été difficile ?",
+          "symbole": [
+            "gruppe",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Ce qui nous a aidés",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ce qui a été difficile",
+              "hoehe": 3
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Dehors, le groupe résout des tâches ensemble et vit qu’en équipe, on réussit davantage. La colonne « tous ensemble » déplace le regard du résultat vers la coopération.",
+        "ablauf": [
+          "Avant : parcourir le terrain, fixer limites et point de rendez-vous, convenir d’un signal de rassemblement.",
+          "Départ (3 min) : lire l’encadré « Règles du jeu », remettre la feuille sur un porte-bloc, annoncer 20 minutes.",
+          "Défis (20 min) : l’adulte reste en retrait, prend les photos et observe comment les décisions se prennent. Après dix minutes, attirer l’attention sur la colonne « tous ensemble ».",
+          "Clôture (7 min) : regarder, nommer et photographier l’œuvre, puis tâche 3 – elle nourrit le bilan de fin de séance.",
+          "S’il pleut : mêmes tâches à l’intérieur, avec une caisse de matériel (gobelets, papier, pinces à linge, laine, bouchons)."
+        ],
+        "hintergrund": "Les tâches qui ne se résolvent qu’ensemble renforcent la cohésion : chaque personne est nécessaire. Selon Tuckman (1965), un groupe ne forme ses normes et ses rôles qu’en agissant ensemble, frictions comprises ; d’où la question : qu’est-ce qui a aidé, qu’est-ce qui a gêné ? Être dehors soulage l’attention dirigée (Kaplan, 1995) – un bon cadre pour des jeunes qui tiennent mal assis. La colonne « tous ensemble » rend la participation visible sans exposer personne : on compte si le groupe inclut tout le monde, pas qui fait le plus.",
+        "quellen": [
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182."
+        ],
+        "differenzierung": {
+          "leichter": "Choisir cinq défis, réduire le temps à 15 minutes ; l’adulte lit les tâches à voix haute.",
+          "schwerer": "Avant chaque défi, une autre personne coordonne ; à la fin, chacun dit comment c’était de diriger."
+        },
+        "impulse": [
+          "Qui a eu une idée que vous avez mise en œuvre ?",
+          "Pour quel défi étiez-vous tous ensemble – et à quoi cela tenait-il ?"
+        ],
+        "tipps": [
+          "Montrer les photos à la séance suivante : elles rappellent un moment vécu ensemble et renforcent le sentiment d’appartenance.",
+          "Relever sérieusement le défi lancé à l’adulte – c’est ce qui réjouit le plus les jeunes."
+        ],
+        "achtung": "Repérer le terrain avant (eau, routes, pentes), emporter la trousse de premiers secours, connaître les allergies (guêpes, pollen). Après les hautes herbes, penser aux tiques. On photographie des objets, pas des visages.",
+        "material": "Feuille sur porte-bloc, crayon, téléphone de l’adulte (photos), sifflet ; s’il pleut : caisse de matériel"
+      }
     }
   },
   {

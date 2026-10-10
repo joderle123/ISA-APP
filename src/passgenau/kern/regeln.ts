@@ -194,6 +194,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   // Alter und Gestaltung – nie gelockert
   if (stufenAbstand(c.stufe, e.stufen) >= 2) return 'Stufe'
   if (c.alter < e.alter.von - 1 || c.alter > e.alter.bis + 1) return 'Alter'
+  // was nur bis 11 Jahre gedacht ist, nie für Jugendliche (Blind-Bewertung 7: Rätsel, Wetterbericht, Schatzkarte mit 12)
+  if (c.alter >= 12 && e.alter.bis <= 11) return 'Alter'
   if (c.alter >= 10 && e.stufen.every((s) => s === 'C1' || s === 'C2')) return 'für Jüngere'
   // Nachfahren, Punkte verbinden, Fädeln, Anziehpuppe: Vorschul-Formate, nicht ab 10 (A10: „Linien nachfahren“ mit 12)
   if (c.alter >= 10 && e.typ === 'baustein' && e.art.some((a) => a === 'laufweg' || a === 'punkte_verbinden' || a === 'faedelkarte' || a === 'anziehpuppe' || a === 'klappbild')) return 'für Jüngere'
@@ -218,6 +220,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     const eigen = e.id.startsWith('pg:')
     const kinderschutz = (c.p.achtung ?? []).includes('kinderschutz')
     if (einzeln && !eigen && (tm.has('gruppe') || tm.has('ihr'))) return 'Gruppe'
+    // Spielschule-Schritte sprechen fast alle von „den Kindern“ – dort nur nachrangig (gewicht), sonst ausgeschlossen
+    if (einzeln && !eigen && tm.has('kinderPlural') && !(e.typ === 'schritt' && e.quelle.art === 'spielschule')) return 'Gruppe'
     if (tm.has('jugend') && c.alter < 12) return 'für Jugendliche'
     if (tm.has('aelter') && c.alter < 13) return 'für Ältere'
     // belastende Sätze („Ich bin dumm“, „Keiner mag mich“) nicht in Krisenlage
@@ -247,7 +251,19 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     // … und Wachsmalkreiden, Löffel-Parcours, Flamingo-Statue, Kuscheltier wirken bei Jugendlichen kindlich
     if (!eigen && tm.has('kindlich') && c.alter >= 12) return 'kindlich'
     if (tm.has('sorgen') && krisenlage(c)) return 'Gefühle abfragen'
+    // Blind-Bewertung 8 (A12, A7): Mobbing-Geschichten, Selbsteinschätzung auf Skalen und Fragebögen nicht in Krisenlage;
+    // Wettbewerb und Zeitdruck nicht bei Wut, Angst, schwerem Tag oder Reizempfindlichkeit („Tast-Rallye“, „Rekord“)
+    if (tm.has('mobbing') && krisenlage(c)) return 'belastend'
+    if (tm.has('selbstbewertung') && krisenlage(c)) return 'Selbsteinschätzung in Krisenlage'
+    if (tm.has('pruefung') && !c.themen.has('pruefungsangst') && !(c.p.themen ?? []).some((t) => /pruef/.test(t.key))) return 'Prüfung ohne Anlass'
+    if (tm.has('atemAnhalten') && (c.vorsicht.has('trauma') || krisenlage(c) || c.tagesformen.some((t) => t === 'aengstlich' || t === 'aufgewuehlt'))) return 'Atem anhalten'
+    if (tm.has('leistungsmessung') && (krisenlage(c) || c.heute.stimmung <= 2 || c.themen.has('pruefungsangst') || c.tagesformen.some((t) => t === 'aengstlich' || t === 'traurig'))) return 'Leistung messen'
+    if (tm.has('raetsel') && c.weg === 'leicht' && c.tagesformen.some((t) => t === 'aengstlich' || t === 'rueckzug' || t === 'wuetend' || t === 'aufgewuehlt')) return 'Rätsel'
+    if (tm.has('genauigkeit') && (c.weg === 'leicht' || c.tagesformen.some((t) => t === 'aengstlich' || t === 'rueckzug' || t === 'will-nicht'))) return 'Genauigkeit'
+    if (tm.has('wettlauf') && (c.vorsicht.has('reiz') || c.heute.stimmung <= 2 || c.themen.has('wut') || c.themen.has('angst') || c.tagesformen.some((t) => t === 'wuetend' || t === 'aufgewuehlt' || t === 'aengstlich'))) return 'Wettbewerb'
   }
+  // Krisenlage: keine Einschätz-Gläser (Schlafen, Freunde, „Trost & Kuscheln“; Blind-Bewertung 8)
+  if (krisenlage(c) && e.typ === 'baustein' && e.art.includes('glaeser')) return 'Gefühle abfragen'
   // Krisenlage: auf dem Blatt keine Skala, kein Check-in, kein Rückblick zu Gefühl oder Stimmung (A12)
   if (krisenlage(c) && e.typ === 'baustein' && e.art.some((a) => a === 'skala' || a === 'checkin' || a === 'rueckblick' || a === 'thermometer') && (e.kompetenz.some((x) => x.startsWith('gefuehle')) || e.thema.some((t) => t === 'gefuehle' || t === 'traurig' || t === 'angst' || t === 'wut'))) return 'Gefühle abfragen'
   // Krisenlage: kein Wut-Material, wenn Wut beim Kind gar kein Thema ist (Wutvulkan bei Trauer)
@@ -293,6 +309,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   // Blatt des Kindes in einer Sprache (Testlauf 9.10., A6): auf einem französischen Blatt kein Teil mit deutschem Text –
   // Schritte für die Fachkraft dürfen deutsch sein (Hinweis „nur auf Deutsch“)
   if (o.blatt && e.typ === 'baustein' && c.sprache === 'fr' && !e.sprache.fr && e.textfelder.length) return 'nur auf Deutsch'
+  // Weg 3 für Jugendliche (Blind-Bewertung 7: „Verbinde mit dem Lineal A–B …“ – Übungscharakter und unterfordernd): keine
+  // Präzisions- und Geometrieaufgaben auf der Mitmach-Seite
+  if (e.typ === 'baustein' && c.alter >= 12 && c.weg === 'leicht' && (e.art.includes('geo') || /\bLineal\b|\brègle\b/.test(e.textfelder.join(' ')))) return 'Übungscharakter'
   // Zugang (P4): Lesemenge ≤ Kind (vorlesbar: + 1), Schreibmenge ≤ Kind
   if (e.typ === 'baustein') {
     const lesen = c.p.zugang.lesen + (intern(c.k).vorlesbar.has(e.id) ? 1 : 0)
@@ -436,7 +455,10 @@ function tagesformWert(e: KatalogEintrag, c: Kontext): number {
     const eigen = e.typ === 'schritt' ? (e.tagesform ?? []) : []
     if (tf.some((t) => eigen.includes(t))) w = 1
     else if (tf.some((t) => e.format.some((f) => TAGESFORM_FORMATE[t]?.includes(f)))) w = 0.8
-    if (tf.some((t) => t === 'aufgedreht' || t === 'wuetend' || t === 'aufgewuehlt') && e.energie === 3) w = Math.min(1, w + 0.2)
+    // aufgedreht: Bewegung hilft; wütend oder aufgewühlt: schnelle Fitness steigert die Erregung (Blind-Bewertung 8:
+    // „Hampelmann bei aufgewühlt/wütend“) – dort lieber schwer und ruhig (drücken, tragen, atmen)
+    if (tf.some((t) => t === 'aufgedreht') && e.energie === 3) w = Math.min(1, w + 0.2)
+    if (tf.some((t) => t === 'wuetend' || t === 'aufgewuehlt') && e.energie === 3) w -= 0.3
     if (tf.some((t) => t === 'muede' || t === 'traurig' || t === 'rueckzug') && e.energie === 3) w -= 0.3
     return Math.max(0, w)
   }
@@ -527,6 +549,25 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
     }
     else if (/^(k|f|m|c):/.test(e.id)) g *= e.einzelvariante ? 0.5 : 0.35
   }
+  // Kinder (Blind-Bewertung 8: 6–11 J. nur 47–67 % brauchbar – Gruppenreste, Verweise auf Fehlendes, Blatt ohne Bezug): die
+  // Einzelübungen für Kinder (ki:, inhalte/kinder.json, mit eigenem Blatt) zuerst; Bruchstücke aus Kurs, Förderfach,
+  // Material und CREW nur, wenn nichts anderes passt (Spielschule für die Kleinsten etwas weniger stark)
+  if (c.alter < 12 && e.typ === 'schritt') {
+    if (e.id.startsWith('ki:')) {
+      // Blind-Bewertung 9: „Wut-Thermometer in einer Angst-Folge“, „Drei Mini-Aufgaben üben V-24 nicht“ – der Vorrang gilt
+      // nur, wenn die Übung ein Ziel oder ein Thema des Kindes trifft; sonst ist sie eine Übung unter vielen
+      const trifft = e.eldib.some((x) => c.ziele.some((z) => z.code === x.code)) || e.thema.some((t) => c.themen.has(t))
+      g *= trifft || !c.ziele.length ? 2.2 : 0.9
+      if (e.thema[0] && BESONDERE_THEMEN.has(e.thema[0]) && !c.themen.has(e.thema[0])) g *= 0.25
+      // am oberen Altersrand zu kindlich (Blind-Bewertung 9: „Turm aus vier Bausteinen für eine Elfjährige“)
+      if (c.alter > e.alter.bis) g *= 0.4
+    } else if (/^(k|f|m|c):/.test(e.id) && e.rolle.includes('kern')) g *= e.einzelvariante ? 0.6 : 0.45
+    else if (e.id.startsWith('s:') && e.rolle.includes('kern')) g *= 0.8
+  }
+  // Material mit luxemburgischem Titel (Text deutsch): Titel und Quelle fehlen im Plan – nur, wenn wenig anderes passt
+  if (e.typ === 'schritt' && e.id.startsWith('m:') && !e.quelle.titel) g *= 0.5
+  // Spielschule „Die Kinder klatschen …“ in der Einzelstunde: nur, wenn wenig anderes passt
+  if (e.typ === 'schritt' && (c.a.sozialform ?? 'einzeln') === 'einzeln' && merkmaleVon(c.k, e).has('kinderPlural')) g *= 0.5
   // Einzelstunde: Schritte, die nur für Gruppen beschrieben sind (ohne Einzelvariante), zählen weniger – die Beschriftung
   // nennt 1290 solcher Schritte „einzeltauglich“; im Zweifel gewinnt, was für ein Kind geschrieben ist (Testlauf 9.10.)
   if ((c.a.sozialform === 'einzeln' || !c.a.sozialform) && e.typ === 'schritt' && !e.einzelvariante && !e.sozialform.some((x) => x === 'einzeln' || x === 'zu-zweit')) g *= 0.8

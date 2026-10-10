@@ -193,6 +193,48 @@
         ],
         "material": "Luftballon zum Zeigen, Buntstifte"
       }
+    },
+    "fr": {
+      "titel": "Respirer comme un ballon",
+      "anleitung": "Faire d’abord l’exercice soi-même. L’enfant pose une main sur son ventre. En inspirant, le ventre devient rond comme un ballon ; en expirant, il redevient petit. Ensuite, l’enfant colorie le ballon.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Regarde et fais comme moi.", "symbole": ["zeigen", "zuhoeren"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:lea:ruhig"], "blase": "keine", "untertitel": "Main sur le ventre." },
+            { "figuren": ["figur:lea:ueberrascht:jubeln"], "blase": "keine", "untertitel": "J’inspire : le ballon devient grand." },
+            { "figuren": ["figur:lea:ruhig"], "blase": "keine", "untertitel": "J’expire : le ballon devient petit." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Colorie ton ballon.", "symbole": ["malen"] },
+        { "art": "bilder", "modus": "anmalen", "spalten": 2, "bilder": [{ "bild": "motiv:ballon", "text": "grand" }, { "bild": "motiv:ballon", "text": "petit" }] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent une respiration abdominale simple qui leur permet de se calmer après une excitation, une dispute ou de l’agitation.",
+        "ablauf": [
+          "Montrer un vrai ballon de baudruche : le gonfler lentement, puis laisser l’air sortir lentement.",
+          "Les enfants posent une main sur le ventre et sentent comment il bouge quand ils respirent.",
+          "Ensemble, « respirer comme un ballon » cinq fois lentement : inspirer par le nez, expirer par la bouche. L’adulte compte calmement avec eux.",
+          "Les enfants colorient le ballon. Celui qui le souhaite montre avec les mains la taille de son ballon quand il inspire.",
+          "Installer l’exercice comme rituel : par exemple après la récré ou avant le cercle, pour qu’il soit disponible dans les moments difficiles."
+        ],
+        "hintergrund": "Respirer lentement en allongeant l’expiration réduit l’excitation du corps et aide les enfants à retrouver le calme. Les jeunes enfants arrivent à peine à appliquer des consignes abstraites comme « calme-toi » ; une image tirée de leur monde (le ballon) et la main sur le ventre rendent l’exercice concret. La répétition dans les moments calmes est décisive : seul ce qui a été exercé auparavant est disponible dans l’agitation. Dans beaucoup de programmes de développement socio-émotionnel, les exercices de respiration comptent donc parmi les premiers éléments.",
+        "quellen": [
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.",
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte."
+        ],
+        "differenzierung": {
+          "leichter": "S’exercer allongé et poser un doudou sur le ventre : il monte et descend comme un ascenseur quand on respire.",
+          "schwerer": "Compter jusqu’à trois en inspirant, jusqu’à quatre en expirant."
+        },
+        "tipps": [
+          "Ne pas pousser à respirer un enfant très agité – lui offrir d’abord sécurité et proximité, répéter l’exercice plus tard.",
+          "Accrocher la suite d’images comme carte dans le coin calme."
+        ],
+        "material": "Ballon de baudruche à montrer, crayons de couleur"
+      }
     }
   },
   {
@@ -260,6 +302,66 @@
         ],
         "achtung": "Wenn ein Kind beim Malen von belastenden Erlebnissen erzählt: ruhig zuhören, nicht nachbohren und die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte, Schere, festes Papier für die Karten; optional ein Handspiegel"
+      }
+    },
+    "fr": {
+      "titel": "Les visages des émotions",
+      "anleitung": "Regarder ensemble les visages : « Montre-moi qui est triste. » Ensuite, l’enfant nomme lui-même les émotions et les imite. Copier les cartes sur du papier épais et jouer au memory.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Montre le visage. Fais la même tête.", "symbole": ["zeigen", "sprechen"] },
+        { "art": "gefuehle", "gefuehle": ["froh", "traurig", "wuetend", "aengstlich"], "spalten": 4, "woerter": ["content", "triste", "en colère", "j’ai peur"] },
+        { "art": "aufgabe", "text": "Quand es-tu content ? Quand es-tu triste ? Dessine.", "symbole": ["malen"] },
+        {
+          "art": "spalten",
+          "links": [{ "art": "feld", "label": "Là, je suis content.", "hoehe": 2.75, "zeichnen": true }],
+          "rechts": [{ "art": "feld", "label": "Là, je suis triste.", "hoehe": 2.75, "zeichnen": true }]
+        },
+        { "art": "aufgabe", "text": "Découpe les cartes. Joue au memory.", "symbole": ["schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 108,
+          "karten": [
+            { "bild": "gesicht:froh", "titel": "content" },
+            { "bild": "gesicht:traurig", "titel": "triste" },
+            { "bild": "gesicht:wuetend", "titel": "en colère" },
+            { "bild": "gesicht:aengstlich", "titel": "j’ai peur" },
+            { "bild": "gesicht:wuetend", "titel": "en colère" },
+            { "bild": "gesicht:froh", "titel": "content" },
+            { "bild": "gesicht:aengstlich", "titel": "j’ai peur" },
+            { "bild": "gesicht:traurig", "titel": "triste" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent la joie, la tristesse, la colère et la peur aux yeux, aux sourcils et à la bouche. Ils montrent ces émotions quand on leur demande, les nomment et les relient à leurs propres expériences.",
+        "ablauf": [
+          "Au cercle (5 min) : l’adulte fait un visage content, triste, en colère, apeuré. Demander : « Comment je me sens ? À quoi le vois-tu ? »",
+          "Tâche 1 : faire montrer (« Montre-moi : qui est en colère ? »), puis nommer. Repérer les détails : larmes, dents serrées, yeux grands ouverts.",
+          "Imiter tous les visages, de préférence devant un miroir à main.",
+          "Tâche 2 : chaque enfant dessine une situation ; écrire ses mots à côté du dessin.",
+          "Tâche 3 : découper les cartes (avec l’aide des adultes), jouer au memory à deux ou trois. Qui trouve une paire dit le mot et imite le visage."
+        ],
+        "hintergrund": "Reconnaître une émotion sur un visage et la nommer fait partie des premiers éléments de la compétence émotionnelle. À l’âge préscolaire, la joie est reconnue en premier, puis la tristesse et la colère ; la peur reste longtemps confondue avec d’autres émotions (Denham, 1998). Les enfants qui savent reconnaître et nommer les émotions les expriment plus volontiers avec des mots et jouent mieux avec les autres (Petermann & Wiedebusch, 2016). Le vocabulaire des émotions se développe surtout dans la conversation, quand les adultes nomment les émotions au quotidien. Le memory répète les quatre mots en jouant.",
+        "quellen": [
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer avec deux émotions (content, triste). Memory à découvert : l’enfant cherche les paires.",
+          "schwerer": "Raconter pour chaque paire : « J’étais en colère quand … » Ajouter d’autres émotions (surpris, fatigué)."
+        },
+        "impulse": [
+          "À quoi vois-tu que quelqu’un est triste ?",
+          "Qu’est-ce qui te rend content – et qu’est-ce qui te met en colère ?",
+          "Qu’est-ce qui t’aide quand tu as peur ?"
+        ],
+        "tipps": [
+          "Nommer les émotions en passant : « Tu rayonnes – tu es content ? » Les enfants apprennent les mots là où ils en ont besoin.",
+          "Réutiliser les cartes : un enfant en tire une et mime l’émotion, les autres devinent."
+        ],
+        "achtung": "Si un enfant parle, en dessinant, d’expériences difficiles : écouter calmement, ne pas insister et informer la direction compétente (responsable).",
+        "material": "Crayons de couleur, ciseaux, papier épais pour les cartes ; en option un miroir à main"
       }
     }
   },
@@ -927,6 +1029,67 @@
         "achtung": "Zeigt ein Kind über mehrere Tage nur Regen oder Gewitter oder erzählt es von Belastungen zu Hause: im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte; für das Ritual vergrößerte Wetterbilder und Wäscheklammern mit Namen"
       }
+    },
+    "fr": {
+      "titel": "Ma météo du jour",
+      "anleitung": "Regarder ensemble les images météo : qu’est-ce qu’on ressent quand il y a du soleil ? Et quand il y a de l’orage ? L’enfant montre ou entoure sa météo et raconte, s’il en a envie. Ensuite, il choisit ce qui lui fait du bien aujourd’hui.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Quelle est ta météo aujourd’hui ? Entoure.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            { "bild": "icon:sun", "text": "soleil" },
+            { "bild": "icon:cloud", "text": "nuages" },
+            { "bild": "icon:cloud-rain", "text": "pluie" },
+            { "bild": "icon:cloud-storm", "text": "orage" },
+            { "bild": "icon:wind", "text": "vent" },
+            { "bild": "icon:rainbow", "text": "arc-en-ciel" }
+          ]
+        },
+        { "art": "aufgabe", "text": "De quoi as-tu besoin aujourd’hui ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:heart", "text": "un câlin" },
+            { "bild": "icon:message-circle", "text": "raconter" },
+            { "bild": "icon:pillow", "text": "me reposer" },
+            { "bild": "icon:run", "text": "me défouler" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants montrent leur humeur avec une image météo et disent ce qui leur fait du bien en ce moment. Avec ce rituel quotidien, ils vivent que les émotions changent.",
+        "ablauf": [
+          "Entrée en matière en cercle : montrer les images météo. Demander : « Qu’est-ce qu’on ressent quand le soleil brille ? Et quand il y a de l’orage ? » Imiter la météo avec le corps (soleil : bras grands ouverts, pluie : tambouriner avec les doigts, orage : taper des pieds, vent : se balancer d’un côté à l’autre).",
+          "Tâche 1 : chaque enfant montre ou entoure sa météo. Celui qui le souhaite raconte pourquoi. Ne pas insister.",
+          "Tâche 2 : chercher ensemble ce qui aide par quel temps. L’enfant entoure ce dont il a besoin aujourd’hui ; l’adulte y répond autant que possible.",
+          "Installer le rituel : accrocher les images météo en grand. Le matin, chaque enfant accroche une pince portant son prénom sur sa météo. À midi, demander : « Ta météo a-t-elle changé ? »"
+        ],
+        "hintergrund": "Les jeunes enfants ont du mal à mettre des mots sur leurs états intérieurs. Des images de leur monde – soleil, pluie, orage – font le pont : elles sont concrètes, sans jugement et permettent de montrer aussi des émotions difficiles sans avoir à les nommer précisément. Les aides visuelles soutiennent surtout les enfants qui maîtrisent peu la langue ou ont des difficultés de communication (Hodgdon, 1995). La réponse des adultes est décisive : percevoir les émotions, les nommer et les prendre au sérieux sans les minimiser aide les enfants à les comprendre et à les réguler (Gottman, 1997). L’image météo porte aussi un message important : après la pluie et l’orage, un autre temps revient.",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Gottman, J. (1997). Raising an Emotionally Intelligent Child. New York: Simon & Schuster."
+        ],
+        "differenzierung": {
+          "leichter": "Proposer seulement trois images météo (soleil, pluie, orage). L’enfant montre au lieu d’entourer.",
+          "schwerer": "Autoriser deux météos à la fois (« soleil avec nuages ») et faire raconter ce qui a changé la météo."
+        },
+        "impulse": [
+          "Qu’a fait ta météo aujourd’hui ?",
+          "Qu’est-ce qui pourrait changer la pluie en soleil ?",
+          "Quelle météo avait ton ami ou ton amie ce matin ?"
+        ],
+        "tipps": [
+          "Toutes les météos sont permises. Aucun enfant ne doit « améliorer » sa météo.",
+          "L’adulte nomme aussi sa propre météo : les enfants voient ainsi que les adultes ont aussi des jours de pluie."
+        ],
+        "achtung": "Si un enfant montre plusieurs jours de suite seulement de la pluie ou de l’orage, ou parle de difficultés à la maison : lui poser la question en entretien individuel et informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; pour le rituel, images météo agrandies et pinces à linge portant les prénoms"
+      }
     }
   },
   {
@@ -1512,6 +1675,58 @@
         "achtung": "Wird ein Kind sehr häufig und heftig wütend oder verletzt es sich oder andere: das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt sofort nach dem internen Ablauf handeln.",
         "material": "Buntstifte; ein Kissen und ein Luftballon zum Ausprobieren"
       }
+    },
+    "fr": {
+      "titel": "Quand je suis en colère",
+      "anleitung": "D’abord parler de la colère : comment se ressent-elle dans le corps ? Puis essayer chaque idée ensemble. L’enfant entoure une ou deux images et dessine ce qui l’aide le mieux.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide quand tu es en colère ? Entoure.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            { "bild": "icon:pillow", "text": "serrer un coussin" },
+            { "bild": "icon:shoe", "text": "taper des pieds" },
+            { "bild": "motiv:ballon", "text": "respirer fort" },
+            { "bild": "motiv:stopp", "text": "dire « Stop »" },
+            { "bild": "icon:armchair", "text": "coin calme" },
+            { "bild": "figur:lehrerin:ruhig", "text": "appeler un adulte" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Dessine-toi : voilà ce que je fais quand je suis en colère.", "symbole": ["malen"] },
+        { "art": "feld", "hoehe": 4.2, "zeichnen": true }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent six façons de gérer la colère sans se faire mal ni faire mal aux autres. Ils les essaient et choisissent une stratégie qui leur convient.",
+        "ablauf": [
+          "Au cercle (5 min) : « Quand as-tu été vraiment en colère ? Comment ton corps le sentait-il ? » Dire clairement : la colère est permise, taper et casser non.",
+          "Essayer chaque idée ensemble : serrer un coussin puis relâcher, taper trois fois des pieds, respirer comme un ballon, dire « Stop » fort, aller au coin calme, appeler un adulte.",
+          "Tâche 1 : l’enfant entoure une ou deux images qui l’ont le plus aidé.",
+          "Tâche 2 : l’enfant se dessine avec sa stratégie. L’adulte écrit ce que l’enfant raconte.",
+          "Accrocher le dessin au coin calme ou à la place de l’enfant ; exercer la stratégie régulièrement dans les moments calmes."
+        ],
+        "hintergrund": "Les jeunes enfants vivent la colère avec tout le corps ; sous le coup de l’émotion, les mots et la réflexion sont peu disponibles. Siegel et Bryson (2011) recommandent donc de rester proche, de laisser l’enfant se calmer, aussi par le mouvement, et de parler ensuite seulement de ce qui s’est passé. Se tendre et se relâcher, taper des pieds ou respirer lentement font retomber l’excitation. Des programmes comme « Dina Dinosaur » exercent ces stratégies avec des images, des marionnettes et beaucoup de répétitions, et améliorent la maîtrise de soi et la compétence sociale (Webster-Stratton & Reid, 2003). Ce qui compte, c’est de s’entraîner dans les moments calmes : seules les stratégies exercées sont disponibles dans la colère.",
+        "quellen": [
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Proposer trois images (coussin, respirer, appeler un adulte) ; l’enfant montre au lieu d’entourer.",
+          "schwerer": "Parler d’un ordre : « Que fais-tu d’abord, puis ? » Dessiner deux images."
+        },
+        "impulse": [
+          "À quoi remarques-tu que la colère arrive ?",
+          "Qu’est-ce qui t’aide à redevenir calme ?",
+          "Qui peux-tu appeler quand tu es en colère ?"
+        ],
+        "tipps": [
+          "Coussin : presser, pas frapper. Se tendre et se relâcher calme ; frapper entretient l’agitation.",
+          "Le coin calme n’est jamais une punition : l’enfant y va librement et revient quand il est prêt."
+        ],
+        "achtung": "Si un enfant est très souvent et violemment en colère, ou se blesse ou blesse les autres : parler avec les parents et informer la direction compétente (responsable). En cas d’indices de violence, agir tout de suite selon la procédure interne.",
+        "material": "Crayons de couleur ; un coussin et un ballon de baudruche pour essayer"
+      }
     }
   },
   {
@@ -1946,6 +2161,68 @@
         ],
         "achtung": "Schränken Ängste den Alltag eines Kindes stark ein (z. B. kann es sich über Wochen morgens nicht lösen): das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte; optional Sticker für den Mut-Plan"
+      }
+    },
+    "fr": {
+      "titel": "Je peux avoir du courage",
+      "anleitung": "Regarder ensemble les images : pour quoi faut-il du courage ? L’enfant entoure ce qui est difficile pour lui et choisit ce qui l’aide. Puis fixer ensemble un petit pas de courage pour la semaine.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Pour quoi as-tu besoin de courage ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "figur:lea:traurig:winken", "text": "dire au revoir" },
+            { "bild": "icon:friends", "text": "demander à jouer" },
+            { "bild": "icon:users-group", "text": "parler dans le cercle" },
+            { "bild": "icon:moon-stars", "text": "dormir dans le noir" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "motiv:ballon", "text": "respirer fort" },
+            { "bild": "icon:heart-handshake", "text": "tenir une main" },
+            { "bild": "icon:message-circle", "text": "« J’y arrive. »" },
+            { "bild": "icon:stairs-up", "text": "commencer petit" }
+          ]
+        },
+        { "art": "aufgabe", "text": "As-tu eu du courage ? Colorie une étoile.", "symbole": ["malen"] },
+        { "art": "plan", "ziel": "", "zeilen": ["J’ai osé."], "symbol": "stern" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent des situations qui demandent du courage, découvrent des aides simples et vivent, avec un petit pas de courage, que la peur diminue quand on essaie.",
+        "ablauf": [
+          "Entrée en matière en cercle : « Qu’est-ce que le courage ? Faut-il ne pas avoir peur ? » Clarifier : celui qui fait quelque chose alors qu’il a peur est courageux.",
+          "Tâche 1 : parler des images. Chaque enfant entoure ce qui est difficile pour lui. Toutes les réponses sont justes.",
+          "Tâche 2 : essayer les aides au courage : respirer comme un ballon, tenir la main d’une personne de confiance, dire la phrase de courage « J’y arrive » à voix haute et à voix basse.",
+          "Tâche 3 : fixer avec chaque enfant un petit pas de courage et l’écrire sur la ligne, par exemple « Je dis une phrase dans le cercle. »",
+          "Pendant la semaine, valoriser chaque essai par une étoile, même si ça n’a pas tout à fait marché : « Tu avais peur et tu as essayé quand même. »"
+        ],
+        "hintergrund": "Les peurs font partie du développement normal : la séparation, le noir ou de nouveaux enfants sont un vrai défi pour beaucoup d’enfants d’âge préscolaire. Rapee et ses collègues (2008) conseillent de prendre la peur au sérieux, mais de ne pas encourager l’évitement : celui qui évite toujours une situation ne vit jamais qu’elle peut être surmontée. Des petits pas bien réalisables, des encouragements et de la reconnaissance pour chaque essai sont utiles. De telles réussites renforcent, selon Bandura (1977), le sentiment d’efficacité personnelle – la conviction « je peux le faire » –, qui donne à son tour du courage pour le pas suivant.",
+        "quellen": [
+          "Rapee, R. M., Wignall, A., Spence, S. H., Cobham, V. & Lyneham, H. (2008). Helping Your Anxious Child (2nd ed.). Oakland: New Harbinger.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les tâches 1 et 2 ; s’exercer d’abord au pas de courage avec une personne de référence.",
+          "schwerer": "Planifier deux pas de courage : un facile et un un peu plus difficile."
+        },
+        "impulse": [
+          "Quand as-tu déjà eu du courage ?",
+          "Que te dis-tu quand tu as peur ?",
+          "Qui t’aide à avoir du courage ?"
+        ],
+        "tipps": [
+          "Choisir le pas de courage si petit qu’il réussit à coup sûr. Mieux vaut souvent un petit pas qu’une fois un pas trop grand.",
+          "Ne jamais exposer ni forcer un enfant : le courage grandit par la liberté de choix et la réussite, pas par la pression."
+        ],
+        "achtung": "Si des peurs limitent fortement le quotidien d’un enfant (par exemple, il n’arrive pas à se séparer le matin pendant des semaines) : chercher le dialogue avec les parents et informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; en option des autocollants pour le plan de courage"
       }
     }
   },

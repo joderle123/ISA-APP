@@ -5,10 +5,11 @@ import type { Baustein, Blatt } from '../../blatt/typen'
 import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
 import { bausteinInhalt, eldibKurz, intern, istGruppenText, merkmaleVon, quelleText, setzeTextModus, staemme, textVon, zielSatz, type Katalog } from './katalog'
 import { textMerkmale } from './einzel'
-import { kinderblatt } from './blatt'
+import { kinderblatt, quellenDerUebertragung } from './blatt'
 import { gruppenRollen, mitgliedProfil } from './gruppe'
 import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME } from './vokabular'
-import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter } from './hilfen'
+import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter, ohneEigenenNamen } from './hilfen'
+import { BLATT_SYSTEM } from './system'
 
 export interface DruckSchritt {
   min: number
@@ -60,6 +61,8 @@ export interface DruckFolge {
   titel: string
   sitzungen: DruckSitzung[]
   bogen: { nr: number; phase: string; kern: string }[]
+  /** alle Ziele, die eine Sitzung der Folge übt (Blind-Bewertung 9: „das Titelblatt nennt nur ein Ziel“) */
+  ziele: { code: string; text: string }[]
   material: string[]
   datei: string
   sprache: Sprache
@@ -76,7 +79,9 @@ function kurzLabel(t: string, n = 38): string {
 }
 
 /** Hinweise des Planers, die eine Handlung in der Oberfläche anbieten oder nur die Planung erklären – auf Papier sinnlos */
-const NUR_OBERFLAECHE = /Leichte Stunde zeigen\.$|Mitmach-Seite auf Wunsch\.$|ohne Blatt geplant|nur auf Deutsch\.$|im Baukasten suchen\.$|Im Ergebnis anpassen\.$/
+// (Blind-Bewertung 8: „noch kein ELDiB-Ziel – ELDiB-Einschätzung fehlt“ ist Fachjargon ohne Nutzen für die Stunde, „Fiche
+// élargie“ und „Gruppenaktivität – so mit einem Kind machen“ ohne Anleitung verunsichern nur)
+const NUR_OBERFLAECHE = /Leichte Stunde zeigen\.$|Mitmach-Seite auf Wunsch\.$|ohne Blatt geplant|nur auf Deutsch\.$|im Baukasten suchen\.$|Im Ergebnis anpassen\.$|ELDiB-Einschätzung fehlt\.$|^Blatt gelockert|^Gruppenaktivität – so mit einem Kind machen$/
 
 /** Name der Phase; bei Jugendlichen ohne „Feiern“ (Blind-Bewertung 5: angekündigt, aber nie gefeiert). */
 function phasenName(phase: string, sp: Sprache, alter: number): string {
@@ -96,6 +101,8 @@ function hinweisFr(h: string): string {
   if (h === NUR_DEUTSCH) return 'Existe seulement en allemand : pour cet objectif, il n’y a pas encore d’activité en français qui convienne. À dire avec ses propres mots.'
   if (h === 'Gruppenaktivität – so mit einem Kind machen') return 'Activité de groupe – à faire ainsi avec un seul enfant'
   if ((m = /^schon vor (\d+) Tagen gemacht – wieder vorgeschlagen, weil sonst wenig passt$/.exec(h))) return `déjà fait il y a ${m[1]} jours – reproposé parce que peu d’autres choses conviennent`
+  if (h === 'Letzte Sitzung: heute gemeinsam ansehen, was über die Folge gesammelt wurde.') return 'Dernière séance : regarder ensemble ce qui a été rassemblé pendant la série.'
+  if ((m = /^Nicht in dieser Folge: (.+) – dafür eine eigene Folge planen( oder 6 und mehr Sitzungen wählen)?\.$/.exec(h))) return `Pas dans cette série : ${m[1]} – prévoir une série à part${m[2] ? ' ou choisir 6 séances ou plus' : ''}.`
   return h
 }
 
@@ -165,21 +172,26 @@ const MATERIAL_STANDARD: Record<string, { de: string; fr: string }> = {
 const MATERIAL_IM_TEXT: [RegExp, string | { de: string; fr: string }][] = [
   [/Handpuppe|Fingerpuppe|marionnette/i, 'handpuppe'],
   [/Würfel|\bdé\b/i, 'wuerfel'],
-  [/\bBall\b|Bälle|\bballe\b/i, 'ball'],
-  [/Tücher|Tuch\b|foulard/i, 'tuecher'],
+  [/(?<!\p{L})(Ball|Bälle|balle)(?!\p{L})/iu, 'ball'],
+  [/(?<!\p{L})(Tücher|Tuch)(?!\p{L})|foulard/iu, 'tuecher'],
   [/Knete|pâte à modeler/i, 'knete'],
   [/Klangschale|bol chantant/i, 'klangschale'],
   [/Sanduhr|Timer|sablier|minuteur/i, 'sanduhr'],
-  [/Spiegel|miroir/i, 'spiegel'],
+  [/(?<!\p{L})(Spiegel|miroir)(?!\p{L})/iu, 'spiegel'],
+  [/etwas zu trinken|Getränk|à boire|boisson/i, { de: 'etwas zu trinken', fr: 'de quoi boire' }],
+  [/Knetball|balle anti-stress|balle à malaxer/i, { de: 'Knetball', fr: 'balle anti-stress' }],
+  [/\bLineal\b|\bune règle pour tracer\b/i, { de: 'Lineal', fr: 'règle' }],
   [/Bauklötze|Bausteine aus Holz|cubes/i, 'bausteine'],
   [/Wetterkarte|carte météo/i, { de: 'Wetterkarte (Sonne, Wolke, Regen, Gewitter)', fr: 'carte météo (soleil, nuage, pluie, orage)' }],
   [/Sticker|Aufkleber|autocollant/i, { de: 'Sticker', fr: 'autocollants' }],
-  [/Decke\b|couverture/i, { de: 'Decke', fr: 'couverture' }],
+  [/(?<!\p{L})Decke(?!\p{L})|couverture/iu, { de: 'Decke', fr: 'couverture' }],
   [/Kreppband|Klebeband|ruban adhésif/i, { de: 'Kreppband', fr: 'ruban adhésif' }],
-  [/Schachtel|Karton\b|boîte/i, { de: 'Schachtel', fr: 'boîte' }],
+  [/Schachtel|(?<!\p{L})Karton(?!\p{L})|(?<!\p{L})boîte(?!\p{L})/iu, { de: 'Schachtel', fr: 'boîte' }],
   [/Stofftier|peluche/i, { de: 'Stofftier', fr: 'peluche' }],
-  [/Glas\b|Gläser|bocal/i, { de: 'Glas', fr: 'bocal' }],
-  [/Steine?\b|pierres?\b/i, { de: 'kleine Steine', fr: 'petites pierres' }],
+  [/(?<!\p{L})(Glas|Gläser|bocal)(?!\p{L})/iu, { de: 'Glas', fr: 'bocal' }],
+  // nicht „Bausteine“, „Meilensteine“, „Fußball“ (Blind-Bewertung 9: „kleine Steine“ bei 3-Jährigen, nie gebraucht)
+  // … und nicht „Dran-Stein“, „Stärken-Stein“ (Wortteil nach Bindestrich), nicht „Pierre“ als Name
+  [/(?<![\p{L}-])(Steine?|pierres)(?![\p{L}-])|(?<![\p{L}-])(une|la|des|les|petites?) pierres?(?![\p{L}-])/u, { de: 'kleine Steine', fr: 'petites pierres' }],
   [/Seifenblasen|bulles de savon/i, { de: 'Seifenblasen', fr: 'bulles de savon' }],
   [/Luftballon|ballon de baudruche/i, { de: 'Luftballon', fr: 'ballon de baudruche' }],
   [/Strohhalm|paille/i, { de: 'Strohhalme', fr: 'pailles' }],
@@ -190,9 +202,46 @@ function materialName(k: Katalog, m: string, sprache: Sprache): string {
   return intern(k).materialName[m]?.[sprache] ?? MATERIAL_STANDARD[m]?.[sprache] ?? m
 }
 
-function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boolean, blattTitel?: string): DruckSchritt {
+/** Name der Rolle auf dem Planblatt: eine Atem-, Dehn- oder Bewegungsübung im Spiel-Slot heißt nicht „Spiel“, bei
+ *  Jugendlichen heißt das freie Angebot „Aktivität“ (Blind-Bewertung 7: „Box-Atmung als SPIEL“, „Jouer“ bei 15 Jahren) */
+function rolleName(x: PlanSchritt, e: KatalogEintrag | undefined, sprache: Sprache, jugend: boolean): string {
+  if (x.rolle === 'spiel' && e) {
+    if (e.format.includes('bewegung') && !e.format.includes('spiel')) return ROLLE_NAME.bewegung[sprache]
+    if (e.format.some((f) => f === 'atmen' || f === 'achtsamkeit') || (e.typ === 'schritt' && e.rolle.includes('regulation') && !e.rolle.includes('spiel'))) return ROLLE_NAME.regulation[sprache]
+    if (jugend) return sprache === 'fr' ? 'Activité' : 'Aktivität'
+  }
+  return ROLLE_NAME[x.rolle]?.[sprache] ?? x.rolle
+}
+
+/** „Der oder die Jugendliche“, „er oder sie“ → Name (Planblatt für eine Person). „Die Person“ / « la personne » nicht:
+ *  in den Inhalten meint es inzwischen fast nur andere oder erfundene Personen („Die Fachkraft spielt die Person“). */
+function mitName(t: string, name: string, sp: Sprache): string {
+  if (sp === 'fr') {
+    const de = /^[aeiouyéèêàâîôûh]/i.test(name) ? `d’${name}` : `de ${name}`
+    return t
+      .replace(/\bdu ou de la jeune\b/g, de)
+      .replace(/\bau ou à la jeune\b/g, `à ${name}`)
+      .replace(/\b([Ss])['’]il ou elle\b/g, (_m, s: string) => `${s}i ${name}`)
+      .replace(/\b[Ll]e ou la jeune\b/g, name)
+      .replace(/\b[Ii]l ou elle\b/g, name)
+  }
+  return t
+    .replace(/\b[Dd](er oder die|en oder die) Jugendliche\b/g, name)
+    .replace(/\b[Dd]em oder der Jugendlichen\b/g, name)
+    .replace(/\b[Ee]r oder sie\b/g, name)
+    .replace(/\b[Ii]hm oder ihr\b/g, name)
+}
+
+/** Sätze mit einer Diagnose als Beispiel weglassen (Blind-Bewertung 8: „im Autismus-Spektrum“ ohne Anlass im Planblatt). */
+function ohneDiagnose(t: string | undefined): string | undefined {
+  if (!t || !textMerkmale(t).has('diagnose')) return t
+  const rest = t.split(/(?<=[.!?])\s+/).filter((x) => !textMerkmale(x).has('diagnose')).join(' ').trim()
+  return rest || undefined
+}
+
+function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boolean, blattTitel?: string, jugend = false): DruckSchritt {
   const e = k.eintraege.get(x.ref)
-  const rolle = ROLLE_NAME[x.rolle]?.[sprache] ?? x.rolle
+  const rolle = rolleName(x, e, sprache, jugend)
   if (!e) return { min: x.min, rolle, titel: x.t ?? x.ref, text: sprache === 'fr' ? 'Plus dans le catalogue – à remplacer.' : 'Nicht mehr im Katalog – bitte ersetzen.', sagen: [], quelle: '', warum: [] }
   const t = textVon(e, sprache)
   const ueberText = (sprache === 'fr' ? x.ueber?.['fr.text'] : undefined) ?? x.ueber?.text
@@ -200,21 +249,31 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     min: x.min,
     rolle,
     titel: x.ref === 'pg:blatt' ? `${sprache === 'fr' ? 'Fiche' : 'Blatt'}: ${blattTitel ?? ''}` : ((sprache === 'fr' ? x.ueber?.['fr.titel'] : undefined) ?? x.ueber?.titel ?? t.titel),
-    text: ueberText ?? t.text,
-    sagen: t.sagen ?? [],
-    wennEsKippt: t.wennEsKippt,
+    text: ohneDiagnose(ueberText ?? t.text) ?? '',
+    sagen: (sprache === 'fr' ? x.ueber?.['fr.sagen'] : undefined) ?? x.ueber?.sagen ? [((sprache === 'fr' ? x.ueber?.['fr.sagen'] : undefined) ?? x.ueber!.sagen)!] : (t.sagen ?? []),
+    wennEsKippt: ohneDiagnose((sprache === 'fr' ? x.ueber?.['fr.wennEsKippt'] : undefined) ?? x.ueber?.wennEsKippt ?? t.wennEsKippt),
     quelle: x.ref.startsWith('pg:') ? '' : t.quelle,
     warum: warum ? (x.warum ?? []).map(warumOhneDatum) : [],
     // Nebenschritte (Ankommen, Bewegung, Spiel, Ruhe, Abschluss) tragen den Hinweis ihrer Einheit nur, wenn er sie betrifft
-    achtung: kuerzen(achtungFuer(e, `${t.titel} ${t.text} ${(t.sagen ?? []).join(' ')}`, x.rolle === 'kern' || x.rolle === 'einstieg' || x.rolle === 'reflexion' || x.rolle === 'transfer', sprache), 320),
-    hinweis: x.hinweis && sprache === 'fr' ? hinweisFr(x.hinweis) : x.hinweis,
+    achtung: ohneDiagnose(kuerzen(achtungFuer(e, `${t.titel} ${t.text} ${(t.sagen ?? []).join(' ')}`, x.rolle === 'kern' || x.rolle === 'einstieg' || x.rolle === 'reflexion' || x.rolle === 'transfer', sprache), 320)),
+    hinweis: !x.hinweis || NUR_OBERFLAECHE.test(x.hinweis) ? undefined : sprache === 'fr' ? hinweisFr(x.hinweis) : x.hinweis,
     blatt: x.ref === 'pg:blatt',
     erkundung: x.erkundung,
   }
   // Blind-Bewertung 9.10.: Optionen ohne Anleitung („Carte au trésor“ – und dann?) – jede Option mit einem Satz
+  // Blind-Bewertung 8: die Beschreibung der ersten Option stand unter den anderen – jede Option trägt ihren Satz selbst,
+  // der Schritt heißt neutral „Zur Wahl“
+  if (x.wahl?.length) {
+    d.titel = sprache === 'fr' ? 'Une activité au choix' : 'Eine Aktivität zur Wahl'
+    d.text = ''
+    // Sagen und „Wenn es kippt“ gelten für die Wahl, nicht nur für die erste Option (Blind-Bewertung 9: „nur die erste
+    // Option hat Sagen- und Wenn-es-kippt-Zeilen“)
+    d.sagen = [sprache === 'fr' ? 'Aujourd’hui, tu choisis. Qu’est-ce qui te fait envie ?' : 'Heute wählst du. Worauf hast du Lust?']
+    d.wennEsKippt = sprache === 'fr' ? 'Si le choix est difficile, l’adulte en propose une ; « simplement être là » est toujours permis.' : 'Fällt die Wahl schwer, schlägt die Fachkraft eine vor; „einfach da sein“ ist immer erlaubt.'
+  }
   if (x.wahl?.length)
     d.wahl = [
-      { titel: t.titel, min: x.min },
+      { titel: t.titel, min: x.min, ...(kuerzen(textVon(e, sprache).text.replace(/\n+/g, ' '), 170) ? { kurz: kuerzen(textVon(e, sprache).text.replace(/\n+/g, ' '), 170)! } : {}) },
       ...x.wahl.map((w) => {
         const we = k.eintraege.get(w.ref)
         const titel = (w.ref === 'pg:blatt' ? (sprache === 'fr' ? 'Page à colorier / à jouer' : w.t) : we ? textVon(we, sprache).titel : w.t) ?? w.ref
@@ -225,12 +284,33 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
   return d
 }
 
+/** Ziel-Codes, die der Kern einer Sitzung übt (Übertragen: die der übertragenen Übung; Rückblick: alle der Folge). */
+function geuebteZiele(k: Katalog, plan: Plan, s: Plan['sitzungen'][number]): Set<string> | null {
+  const kern = s.schritte.find((x) => x.rolle === 'kern')
+  if (!kern) return null
+  const codesVon = (e: KatalogEintrag | undefined) => (e ? e.eldib.map((x) => x.code) : [])
+  if (kern.ref === 'pg:folge-transfer')
+    return new Set(plan.sitzungen.flatMap((y) => y.schritte.filter((z) => z.rolle === 'kern' && !z.ref.startsWith('pg:')).flatMap((z) => codesVon(k.eintraege.get(z.ref)))))
+  const es = kern.ref === 'pg:uebertragen' ? quellenDerUebertragung(k, plan, kern) : [k.eintraege.get(kern.ref)].filter((x): x is KatalogEintrag => !!x)
+  return es.length ? new Set(es.flatMap(codesVon)) : null
+}
+
 /** Druckdaten einer Sitzung. */
 export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt: { sprache: Sprache; warum: boolean; karten?: boolean }): DruckSitzung {
   const s = plan.sitzungen.find((x) => x.nr === nr)!
   const sp = opt.sprache
   setzeTextModus((plan.auftrag?.sozialform ?? 'einzeln') !== 'einzeln')
-  const schritte = s.schritte.map((x) => druckSchritt(k, x, sp, opt.warum, s.blatt?.titel))
+  // Figuren mit dem Vornamen des Kindes heißen anders (Blind-Bewertung 9: „Mia ist ärgerlich“ für Mia) – vor mitName
+  const schritte = s.schritte.map((x) => ohneEigenenNamen(druckSchritt(k, x, sp, opt.warum, s.blatt?.titel, p.alterJahre >= 12), p.gruppe?.length ? null : p.vorname))
+  // mit Namen (Blind-Bewertung 8: „‚der oder die Jugendliche‘ statt Elif“, „‚le ou la jeune / il ou elle‘ für einen
+  // namentlich bekannten Jungen“, „la personne“ bei einem Elfjährigen) – nur für eine Person, nicht in der Gruppe
+  const name = !p.gruppe?.length ? (p.anrede ?? p.vorname ?? '').trim() : ''
+  if (name) for (const d of schritte) {
+    d.text = mitName(d.text, name, sp)
+    if (d.wennEsKippt) d.wennEsKippt = mitName(d.wennEsKippt, name, sp)
+    if (d.achtung) d.achtung = mitName(d.achtung, name, sp)
+    if (d.hinweis) d.hinweis = mitName(d.hinweis, name, sp)
+  }
   // Material: aus allen Schritten und Blatt-Teilen; Ritual-Material nur in Sitzung 1 einer Folge
   const mat = new Set<string>()
   const vorbereitung = new Set<string>()
@@ -240,13 +320,35 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     if (!e) continue
     if ((x.rolle === 'ankommen' || x.rolle === 'abschluss') && nr > 1 && plan.n > 1) continue
     for (const m of e.material) mat.add(materialName(k, m, sp))
-    // was der Text nennt, kommt dazu (Ritual-Material einer Folge nur in Sitzung 1, wie oben)
-    // eigener Text des Plans (Rückblick für Jugendliche ohne Sticker) statt des Katalogtexts
-    const tx = e.typ === 'schritt' ? `${e.titel} ${x.ueber?.text ?? e.einzelvariante?.text ?? e.text}` : ''
+    // was der Text nennt, kommt dazu (Ritual-Material einer Folge nur in Sitzung 1, wie oben); nur der Text, nicht der Titel
+    // („Miroir d’improvisation“ braucht keinen Spiegel), und nicht bei Übertragen/Rückblick – dort stehen nur die Titel
+    // anderer Übungen („Übertragen: Der Würfel schlägt vor“ braucht keinen Würfel; Blind-Bewertung 7)
+    const tx = e.typ === 'schritt' && x.ref !== 'pg:uebertragen' && x.ref !== 'pg:folge-transfer' ? (x.ueber?.text ?? e.einzelvariante?.text ?? e.text) : ''
     for (const [re, wer] of MATERIAL_IM_TEXT) if (re.test(tx)) mat.add(typeof wer === 'string' ? materialName(k, wer, sp) : wer[sp])
+    // Übertragen und Rückblick bringen ihr Material selbst mit (Blind-Bewertung 9: „Figur und Bilder stehen nicht im Material“,
+    // „der Rückblick lässt Übungen wiederholen, deren Material fehlt“, „Feier ohne Sticker“)
+    // ab 10 ohne Figur (Blind-Bewertung 10: „Spiel mit Stofftier/Figur kindlich“ bei 11 Jahren)
+    if (x.ref === 'pg:uebertragen' && p.alterJahre < 10) mat.add(sp === 'fr' ? 'une petite figurine ou une peluche' : 'eine kleine Figur oder ein Stofftier')
+    if (x.ref === 'pg:folge-transfer') {
+      if (p.alterJahre < 12) {
+        // das Material der früheren Kerne beim Namen (Blind-Bewertung 10: „Material der gewählten Übung“ als Platzhalter)
+        const frueher = plan.sitzungen.filter((y) => y.nr < nr).flatMap((y) => y.schritte.filter((z) => z.rolle === 'kern' && !z.ref.startsWith('pg:')).map((z) => k.eintraege.get(z.ref)))
+        const zeug = [...new Set(frueher.flatMap((y) => (y ? y.material.map((m) => materialName(k, m, sp)) : [])))].filter((m) => !/^(Stifte|crayons|Papier|papier)$/.test(m)).slice(0, 6)
+        if (zeug.length) mat.add(sp === 'fr' ? `pour refaire une activité, au choix : ${zeug.join(', ')}` : `zum Wiederholen, je nach Wahl: ${zeug.join(', ')}`)
+        mat.add(sp === 'fr' ? 'autocollants ou étoiles, une petite carte' : 'Sticker oder Sterne, eine kleine Karte')
+      } else mat.add(sp === 'fr' ? 'petits papiers pour les titres (ou les fiches de la série)' : 'Zettel für die Titel (oder die Blätter der Folge)')
+    }
+    // Optionen einer Wahl bringen ihr Material mit („Einfach da sein“: Getränk, Knetball, Tuch)
+    for (const w of x.wahl ?? []) {
+      const we = k.eintraege.get(w.ref)
+      if (!we || we.typ !== 'schritt') continue
+      for (const m of we.material) mat.add(materialName(k, m, sp))
+      for (const [re, wer] of MATERIAL_IM_TEXT) if (re.test(we.text)) mat.add(typeof wer === 'string' ? materialName(k, wer, sp) : wer[sp])
+    }
     if (e.typ === 'schritt' && !e.id.startsWith('s:')) {
       // Förderfach auf Französisch: die französische Vorbereitung der Einheit (deutsche nur, wo es keine Fassung gibt)
-      const v = sp === 'fr' && e.fr && e.id.startsWith('f:') ? e.fr.vorbereitung : e.vorbereitung
+      // … und ebenso jede übersetzte Übung (Jugend, Kinder, fr-kern; R9: „fr.vorbereitung wird nicht gelesen“)
+      const v = sp === 'fr' && e.fr?.vorbereitung ? e.fr.vorbereitung : e.vorbereitung
       if (v) vorbereitung.add(kuerzen(v, 200)!)
     }
     // Elternbrief der Einheit nur, wenn er diesen Schritt betrifft – und nie bei offenem Kinderschutz-Thema
@@ -259,12 +361,39 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     const e = k.eintraege.get(b.ref)
     if (e) for (const m of e.material) mat.add(materialName(k, m, sp))
   }
+  // was die Blatt-Teile verlangen („Verbinde mit dem Lineal“)
+  for (const b of s.blatt?.bausteine ?? []) {
+    const e = k.eintraege.get(b.ref)
+    if (e && e.typ === 'baustein') {
+      const t = textVon(e, sp)
+      for (const [re, wer] of MATERIAL_IM_TEXT) if (re.test(`${t.titel} ${t.text}`)) mat.add(typeof wer === 'string' ? materialName(k, wer, sp) : wer[sp])
+    }
+  }
   if (s.blatt) mat.add(sp === 'fr' ? 'la fiche (imprimée)' : 'das Blatt (gedruckt)')
   // wer ein Blatt ausfüllt, braucht einen Stift (Blind-Bewertung 6: „Stifte fehlen in der Materialliste“)
   if (s.blatt) mat.add(materialName(k, 'stifte', sp))
+  // aufräumen (Blind-Bewertung 7: „Minuteur steht doppelt“, „Stuhl ohne erkennbaren Zweck“): ein Zeitmesser, nichts, was
+  // in jedem Raum steht
+  {
+    const zeit = /minuteur|Timer|Sanduhr|sablier|\bUhr\b|montre|chrono/i
+    let schonZeit = false
+    for (const m of [...mat]) {
+      if (/^(Stuhl|Stühle|Tisch|chaise|chaises|table)$/i.test(m.trim())) mat.delete(m)
+      else if (zeit.test(m)) {
+        if (schonZeit) mat.delete(m)
+        schonZeit = true
+      }
+    }
+  }
   const matSeite = materialSeite(k, p, plan, nr, sp)
+  // C1/C2: höchstens eine Seite fürs Kind (A11) – gibt es ein Blatt, keine zusätzliche Kartenseite (die Stundenleiste
+  // steht oben auf dem Blatt, die Wahl im Planblatt)
+  const kartenSeite = opt.karten && !(s.blatt && ['C1', 'C2'].includes(stufeAusAlter(p.alterJahre))) ? karten(k, p, plan, nr, sp) : null
+  // die Karten stehen im Material und sagen, wann sie dran sind (Blind-Bewertung 8: „Karten-Seite im Ablauf nicht erwähnt“)
+  if (kartenSeite) mat.add(sp === 'fr' ? 'les cartes de la séance (imprimées) – montrer la frise au début' : 'die Karten zur Stunde (gedruckt) – die Stundenleiste zu Beginn zeigen')
   if (matSeite) mat.add(sp === 'fr' ? 'la page de matériel (imprimée, à découper)' : 'die Materialseite (gedruckt, ausschneiden)')
   const tippSchon = new Set<string>()
+  const imBlatt = new Set((s.blatt?.bausteine ?? []).map((b) => b.ref))
   const blattTeile = (s.blatt?.bausteine ?? [])
     .filter((b) => !b.ref.startsWith('pg:'))
     .map((b) => {
@@ -277,13 +406,24 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       const qTitel = quelle ? ((sp === 'fr' && quelle.fr) || quelle.de).titel : quelleText(e, sp)
       // der Tipp „leichter“ gilt für das ganze Quellblatt: nur einmal je Blatt
       // … und nicht, wenn er auf Teile des Quellblatts zeigt, die hier fehlen („Aufgabe 3“, „Memory“, „Bildkarten“)
-      const tipp = leichter && p.alterJahre < 12 && !KURSVERWEIS_RE.test(leichter) && !textMerkmale(leichter).has('blattverweis') && !/\b(Aufgabe|Karte|Karten|Memory|Bildkarten|Seite)\b/.test(leichter) && !tippSchon.has(e.quelle.blatt) ? kuerzen(leichter, 160) : undefined
+      // … und nur, wenn das ganze Quellblatt dabei ist (Blind-Bewertung 8: „Aufgaben 3 bis 5 mündlich“, „Exercices 1 et 2“,
+      // „Trost-Satz“ – der Tipp sprach von Teilen, die hier fehlen)
+      const ganz = (intern(k).bausteineVonBlatt.get(e.quelle.blatt) ?? []).every((x) => imBlatt.has(x.id))
+      const tipp = leichter && ganz && p.alterJahre < 12 && !KURSVERWEIS_RE.test(leichter) && !textMerkmale(leichter).has('blattverweis') && !/\b(Aufgabe\w*|Karte|Karten|Memory|Bildkarten|Seite|exercices?|cartes?|page)\b/i.test(leichter) && !tippSchon.has(e.quelle.blatt) ? kuerzen(leichter.replace(/\bdie Lehrperson\b/g, 'die Fachkraft').replace(/\bLehrperson\b/g, 'Fachkraft'), 160) : undefined
       if (tipp) tippSchon.add(e.quelle.blatt)
-      return { titel: textVon(e, sp).titel, quelle: sp === 'fr' ? `de la fiche « ${qTitel} »` : `aus dem Blatt „${qTitel}“`, tipp }
+      // … mit dem Hinweis, dass der Teil schon auf dem Blatt steht (Blind-Bewertung 10: „verweist auf ein Blatt, das nicht zur Stunde
+      // gehört“)
+      return { titel: textVon(e, sp).titel, quelle: sp === 'fr' ? `extrait de la fiche Toolbox « ${qTitel} », déjà sur la fiche` : `Teil aus dem Toolbox-Blatt „${qTitel}“, schon auf dem Blatt`, tipp }
     })
-  const ziele = plan.ziele.map((code) => {
+  // Jugend-Folge (Blind-Bewertung 7: „K-34 steht im Kopf, wird in der Sitzung aber nicht bearbeitet“): nur die Ziele, die der
+  // Kern dieser Sitzung übt
+  const geuebt = p.alterJahre >= 6 && plan.n > 1 ? geuebteZiele(k, plan, s) : null
+  const codes = geuebt ? plan.ziele.filter((c) => geuebt.has(c)) : plan.ziele
+  const ziele = (codes.length ? codes : plan.ziele.slice(0, 1)).map((code) => {
     const satz = zielSatz(k, p, code, sp)
-    return { code, text: `${eldibKurz(k, code, sp)}${satz ? ` – ${satz}` : ''}` }
+    // „Gefühle - ich – Ich drücke …“ las sich wie ein Druckrest: mit Satz nur der erste Teil des Kurznamens
+    const kurzName = eldibKurz(k, code, sp)
+    return { code, text: satz ? `${kurzName.split(' - ')[0]} – ${satz}` : kurzName }
   })
   const phase = phasenName(s.phase, sp, p.alterJahre)
   const zeile =
@@ -295,7 +435,13 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   const rollen = gruppenRollen(p, nr, sp)
   if (rollen) hinweise.unshift(rollen)
   if (p.vorsicht.includes('heikel') || (p.achtung ?? []).length)
-    hinweise.unshift(sp === 'fr' ? 'Un thème sensible est ouvert pour cet enfant. Passgenau ne remplace pas une évaluation – voir le dossier.' : 'Zu diesem Kind ist ein heikles Thema offen. Passgenau ersetzt keine Abklärung – Hinweise im Dossier.')
+    hinweise.unshift(
+      p.alterJahre >= 12
+        // ohne Verweis auf eine Unterlage außerhalb der Stunde (Blind-Bewertung 9: „‚voir le dossier‘ verweist auf etwas,
+        // das nicht beiliegt“) – was zu tun ist, steht im Satz
+        ? sp === 'fr' ? 'Un thème sensible est ouvert. Passgenau ne remplace pas une évaluation : en cas de signes de détresse, suivre ce qui a été convenu en équipe.' : 'Ein heikles Thema ist offen. Passgenau ersetzt keine Abklärung: Bei Anzeichen von Belastung gilt, was im Team vereinbart ist.'
+        : sp === 'fr' ? 'Un thème sensible est ouvert pour cet enfant. Passgenau ne remplace pas une évaluation : en cas de signes de détresse, suivre ce qui a été convenu en équipe.' : 'Zu diesem Kind ist ein heikles Thema offen. Passgenau ersetzt keine Abklärung: Bei Anzeichen von Belastung gilt, was im Team vereinbart ist.',
+    )
   return {
     titel: plan.titel,
     zeile,
@@ -313,7 +459,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       : {}),
     // C1/C2: höchstens eine Seite fürs Kind (A11) – gibt es ein Blatt, keine zusätzliche Kartenseite (die Stundenleiste
     // steht oben auf dem Blatt, die Wahl im Planblatt)
-    karten: opt.karten && !(s.blatt && ['C1', 'C2'].includes(stufeAusAlter(p.alterJahre))) ? karten(k, p, plan, nr, sp) : null,
+    karten: kartenSeite,
     materialSeite: matSeite,
     sprache: sp,
     warum: opt.warum,
@@ -394,38 +540,55 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
     regulation: { de: 'Ruhe', fr: 'Calme', bild: 'icon:leaf' }, reflexion: { de: 'Zurückschauen', fr: 'Revenir', bild: 'icon:eye' },
     abschluss: { de: 'Tschüss', fr: 'Au revoir', bild: 'icon:door-exit' }, transfer: { de: 'Mitnehmen', fr: 'Emporter', bild: 'icon:star' },
   }
-  const leiste = s.schritte.slice(0, 7).map((x) => ({ text: WORT[x.rolle][sprache], bild: WORT[x.rolle].bild, min: x.min }))
-  if (leiste.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: leiste })
-  const ritual = k.eintraege.get(s.schritte.find((x) => x.rolle === 'ankommen')?.ref ?? '')
-  const anspruch = ritual?.anspruch ?? 1
-  // ist das Ankommens-Ritual selbst schon ein Check-in (Gefühlstiere, Wetter, Zahl), keine zweite Karte dafür
-  const ritualText = ritual ? textVon(ritual, 'de').titel + ' ' + textVon(ritual, 'de').text : ''
-  const selbstCheckin = /(gefühl|wie geht|stimmung|wetter|heute zu (ihm|ihr|dir) passt|zahl von|skala|daumen)/i.test(ritualText)
-  // in Krisenlage keine Gefühle abfragen (A12): Stimmung ≤ 2, Weg 3 mit belastender Tagesform, Vorsicht Trauma/Trauer
-  const krise = (plan.auftrag?.heute?.stimmung ?? 4) <= 2 || p.vorsicht.includes('trauma') || p.vorsicht.includes('trauer') ||
-    (plan.weg === 'leicht' && (plan.auftrag?.tagesformen ?? []).some((t) => ['traurig', 'aengstlich', 'rueckzug', 'aufgewuehlt', 'wuetend'].includes(t)))
-  if (anspruch >= 1 && !selbstCheckin && !krise) bausteine.push({ art: 'checkin', modus: jugend ? 'zahl' : alter <= 7 ? 'gesichter' : 'wetter' })
+  // Jugendliche (Blind-Bewertung 7: „Spielen/Tschüss und ein Herz wirken für 14–17 Jahre jung“; „die Leiste sagt Spielen, auch
+  // wenn ‚Einfach da sein‘ gewählt wird“): neutrale Wörter, die Wahl heißt Wahl
+  const wort = (x: (typeof s.schritte)[number]) =>
+    x.wahl?.length ? { de: 'Wählen', fr: 'Choisir', bild: 'icon:arrow-fork' }
+    : jugend && x.rolle === 'spiel' ? { de: 'Aktivität', fr: 'Activité', bild: 'icon:sparkles' }
+    : jugend && x.rolle === 'abschluss' ? { de: 'Schluss', fr: 'Fin', bild: 'icon:door-exit' }
+    : x.ref === 'pg:folge-transfer' ? WORT.reflexion
+    : x.ref === 'pg:uebertragen' ? WORT.transfer
+    : WORT[x.rolle]
+  const leiste = s.schritte.filter((x) => x.min > 0).slice(0, 7).map((x) => ({ text: wort(x)[sprache], bild: wort(x).bild, min: x.min }))
+  // nicht doppelt: steht die Leiste schon auf dem Blatt des Kindes, fehlt sie hier (Blind-Bewertung 10: „doppelte Stundenleiste“)
+  const leisteAufBlatt = (s.blatt?.bausteine ?? []).some((b) => b.ref === BLATT_SYSTEM.stundenleiste)
+  if (leiste.length >= 2 && !leisteAufBlatt) bausteine.push({ art: 'stundenleiste', schritte: leiste })
+  // keine zweite Befindlichkeits-Abfrage auf der Karte (Blind-Bewertung 8: „Skala 0–10 ohne Ankerwerte, im Ablauf nicht
+  // erwähnt“, „Wetter-Karte, die Stunde nutzt den Akku“): das Ankommens-Ritual fragt schon, wie es geht
   const wahl = s.schritte.find((x) => x.wahl?.length)
   if (wahl) {
     const optionen = [wahl, ...(wahl.wahl ?? [])].slice(0, 3).map((w) => {
       const e = k.eintraege.get(w.ref)
       const t = w.ref === 'pg:blatt' ? (sprache === 'fr' ? 'Page à colorier' : 'Mitmach-Seite') : e ? textVon(e, sprache).titel : (('t' in w && w.t) || w.ref)
       const f = e?.format[0]
-      const bild = w.ref === 'pg:blatt' ? 'icon:pencil' : f === 'bewegung' ? 'icon:run' : f === 'malen' ? 'icon:palette' : f === 'musik' ? 'icon:music' : f === 'spiel' ? 'icon:dice-5' : f === 'basteln' ? 'icon:puzzle' : f === 'sinne' || f === 'atmen' ? 'icon:leaf' : 'icon:armchair'
+      // unterscheidbar für Kinder, die nicht lesen (Blind-Bewertung 10: „zwei Optionen mit demselben Blatt-Symbol“)
+      const bild = w.ref === 'pg:blatt' ? 'icon:pencil' : w.ref === 'pg:da-sein' ? 'icon:armchair'
+        : /\b(Ball|Tor|balle|ballon|but)\b/i.test(t) ? 'icon:ball-football'
+        : /\b(hör\w*|Geräusch\w*|Klang|Klänge|bruit\w*|écout\w*|son)\b/i.test(t) ? 'icon:ear'
+        : f === 'bewegung' ? 'icon:run' : f === 'malen' ? 'icon:palette' : f === 'musik' ? 'icon:music' : f === 'spiel' ? 'icon:dice-5' : f === 'basteln' ? 'icon:puzzle' : f === 'geschichte' ? 'icon:cloud' : f === 'sinne' || f === 'atmen' ? 'icon:leaf' : 'icon:armchair'
       return { text: kurzLabel(t), bild, min: w.min }
     })
-    const karte = wahl.wahlkarte ? intern(k).wahlkarten.find((w) => w.id === wahl.wahlkarte) : undefined
-    bausteine.push({ art: 'wahlkarte', frage: karte?.kopf[sprache], optionen })
+    // „Heute möchte ich zuerst …“ deutete eine Reihenfolge an – gewählt wird eines (Blind-Bewertung 7)
+    bausteine.push({ art: 'wahlkarte', frage: sprache === 'fr' ? 'Aujourd’hui, je choisis :' : 'Heute wähle ich:', optionen })
+    // freier Platz statt zwei leerer Drittel (Blind-Bewertung 9: „Blatt zu zwei Dritteln leer, nichts zum Mitmachen“) –
+    // ohne Auftrag, ohne Bewertung
+    bausteine.push(
+      { art: 'aufgabe', text: jugend ? (sprache === 'fr' ? 'Place libre : noter, griffonner – ou laisser vide.' : 'Freier Platz: notieren, kritzeln – oder leer lassen.') : sprache === 'fr' ? 'Ici, tu peux dessiner ce que tu veux.' : 'Hier darfst du malen, was du magst.' },
+      { art: 'feld', hoehe: 8, zeichnen: true },
+    )
   }
   // keine Wochenziel-Karte mehr (Blind-Bewertung 9.10., A9): der Ich-Satz des Förderziels gehört nicht aufs Papier des Kindes
-  if (bausteine.length < 2) return null
+  // nur die Stundenleiste: lohnt eine eigene Seite nur, wenn sie dem Kind hilft (Struktur, Bildplan)
+  const hilftLeiste = (p.hilft ?? []).some((h) => h === 'stundenleiste' || h === 'bildplan') || p.zugang.struktur === 'hoch'
+  if (bausteine.length < 2 && !(hilftLeiste && bausteine.length === 1 && !s.blatt)) return null
   const kb = s.blatt ? kinderblatt(k, p, plan, nr, sprache) : null
   const titel = sprache === 'fr' ? 'Cartes pour la séance' : 'Karten zur Stunde'
   // keine Anweisung für Erwachsene auf dem Papier des Kindes (A3) – „ausschneiden“ steht im Planblatt
   const inhalt = { titel, bausteine, lehrer: { ziel: '', ablauf: [], hintergrund: '' } }
   return {
     id: `pg-karten-${hash8(plan.id + nr)}`,
-    bereich: kb?.bereich ?? 'gefuehle',
+    // ohne Blatt: Jugendliche nicht unter dem Herz der Gefühle, sondern neutral
+    bereich: kb?.bereich ?? (jugend ? 'selbstreflexion' : 'gefuehle'),
     thema: kb?.thema ?? 'erkennen',
     stufen: kb?.stufen ?? [p.stufen[0] ?? 'C3'],
     layout: kb?.layout ?? (jugend ? 'jugend' : p.layout),
@@ -448,8 +611,11 @@ export function druckFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache: Sp
     bogen: plan.sitzungen.map((s) => {
       const kern = s.schritte.find((x) => x.rolle === 'kern')
       const e = kern ? k.eintraege.get(kern.ref) : undefined
-      return { nr: s.nr, phase: phasenName(s.phase, opt.sprache, p.alterJahre), kern: e ? textVon(e, opt.sprache).titel : (kern?.t ?? '') }
+      // Übertragen und Rückblick mit ihrem eigenen Titel („Übertragen: Rot klatscht …“), nicht dem Katalog-Titel
+      const eigen = kern?.ueber ? (opt.sprache === 'fr' ? kern.ueber['fr.titel'] : undefined) ?? kern.ueber.titel : undefined
+      return { nr: s.nr, phase: phasenName(s.phase, opt.sprache, p.alterJahre), kern: eigen ?? (e ? textVon(e, opt.sprache).titel : (kern?.t ?? '')) }
     }),
+    ziele: [...new Map(sitzungen.flatMap((s) => s.ziele).map((z) => [z.code, z])).values()],
     material,
     datei: `Passgenau-Folge${opt.sprache === 'fr' ? '_FR' : ''}.pdf`,
     sprache: opt.sprache,

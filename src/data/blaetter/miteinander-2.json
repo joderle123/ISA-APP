@@ -1701,6 +1701,79 @@
         ],
         "material": "Schere, Buntstifte, ein Ball; optional eine Sanduhr"
       }
+    },
+    "fr": {
+      "titel": "C’est mon tour, c’est ton tour",
+      "anleitung": "Regarder les images ensemble et les rejouer avec un ballon : un enfant a son tour, l’autre attend, puis on échange. Découper les cartes et les lever pendant le jeu.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Regarde : d’abord Mia, ensuite Noah.", "symbole": ["zeigen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:mia:froh:jubeln", "figur:noah:ruhig"], "blase": "keine", "untertitel": "C’est à Mia. Noah attend." },
+            { "figuren": ["figur:mia:froh:geben", "figur:noah:froh"], "requisit": "icon:ball-football", "blase": "keine", "untertitel": "Mia : « C’est ton tour. »" },
+            {
+              "figuren": ["figur:mia:ruhig", "figur:noah:froh:jubeln"],
+              "requisit": "icon:ball-football",
+              "blase": "keine",
+              "untertitel": "C’est à Noah. Mia attend."
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce que tu aimes partager ? Colorie.", "symbole": ["malen"] },
+        {
+          "art": "bilder",
+          "modus": "anmalen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:ball-football", "text": "ballon" },
+            { "bild": "icon:book", "text": "livre" },
+            { "bild": "icon:car", "text": "voiture" },
+            { "bild": "icon:puzzle", "text": "puzzle" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Découpe les cartes.", "symbole": ["schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 112,
+          "karten": [
+            { "bild": "figur:lea:froh:melden", "titel": "C’est mon tour." },
+            { "bild": "figur:lea:froh:zeigen", "titel": "C’est ton tour." },
+            { "bild": "icon:hourglass", "titel": "J’attends." }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants s’exercent avec des images et des cartes à prendre leur tour, à attendre et à partager, et vivent que chaque enfant a de nouveau son tour.",
+        "ablauf": [
+          "Entrée en matière (5 min) : passer un ballon en cercle. Celui qui a le ballon peut parler – les autres attendent.",
+          "Regarder la suite d’images. Demander : « À qui le tour ? Que fait Noah pendant qu’il attend ? »",
+          "Rejouer la scène à deux avec un vrai ballon en disant « C’est ton tour ».",
+          "Tâche 2 : colorier les jouets. Demander : « Qu’est-ce que tu aimes partager ? Qu’est-ce qui est difficile à partager ? »",
+          "Découper les cartes (les adultes aident) et les utiliser au prochain temps de jeu : celui dont c’est le tour lève « C’est mon tour »."
+        ],
+        "hintergrund": "Prendre son tour, attendre et partager font partie des premières compétences d’amitié à l’âge préscolaire. Elles demandent de repousser brièvement un désir – ce qui reste difficile pour les enfants de trois à cinq ans et réussit mieux avec des signaux clairs et beaucoup de pratique en jouant. Le programme « Dina Dinosaur » exerce ces compétences dans de courtes séquences de jeu, avec démonstration, mise en scène et félicitations (Webster-Stratton & Reid, 2003). Les cartes-images rendent l’alternance visible : les aides visuelles aident justement les plus jeunes et les enfants ayant des difficultés de langue à comprendre les déroulements et à s’y tenir (Hodgdon, 1995).",
+        "quellen": [
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Travailler avec deux cartes seulement (« C’est mon tour », « C’est ton tour ») et garder l’attente très courte.",
+          "schwerer": "Alterner à trois et fixer soi-même l’ordre."
+        },
+        "impulse": [
+          "Qu’est-ce que ça fait d’attendre ?",
+          "Que peux-tu faire pendant que tu attends ?",
+          "Qu’aimes-tu partager – et qu’est-ce que tu préfères garder ?"
+        ],
+        "tipps": [
+          "Utiliser un sablier : les enfants voient ainsi quand on change.",
+          "Féliciter tout de suite et concrètement quand l’attente a réussi : « Tu as attendu que Noah ait fini. »"
+        ],
+        "material": "Ciseaux, crayons de couleur, un ballon ; en option un sablier"
+      }
     }
   },
   {
@@ -2467,6 +2540,76 @@
         ],
         "achtung": "Zeigt ein Kind große Angst oder erzählt es, dass ihm jemand wehtut: ernst nehmen, nicht vor der Gruppe nachfragen, allein zuhören und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt sofort nach dem internen Ablauf handeln.",
         "material": "Optional Fotos der Erwachsenen aus Spielschule und Maison Relais"
+      }
+    },
+    "fr": {
+      "titel": "Qui m’aide ?",
+      "anleitung": "Regarder la suite d’images ensemble et la rejouer. Ensuite, l’enfant montre qui l’aide et quand il va chercher de l’aide. Dire plusieurs fois ensemble la phrase « Tu peux m’aider, s’il te plaît ? ».",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Regarde : voilà comment Noah va chercher de l’aide.", "symbole": ["zeigen", "zuhoeren"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:noah:traurig"], "requisit": "icon:bandage", "blase": "keine", "untertitel": "Noah est tombé." },
+            { "figuren": ["figur:noah:traurig", "figur:lehrerin:ruhig"], "blase": "keine", "untertitel": "« Tu peux m’aider, s’il te plaît ? »" },
+            { "figuren": ["figur:noah:froh", "figur:lehrerin:froh"], "requisit": "icon:bandage", "blase": "keine", "untertitel": "La maîtresse l’aide." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Qui t’aide ? Montre ou entoure.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "figur:lehrerin:froh:winken", "text": "maîtresse" },
+            { "bild": "figur:lehrer:froh", "text": "éducateur" },
+            { "bild": "icon:home", "text": "famille" },
+            { "bild": "figur:amira:froh", "text": "amie" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Quand cherches-tu de l’aide ? Montre et raconte.", "symbole": ["zeigen", "sprechen"] },
+        {
+          "art": "bilder",
+          "modus": "nur",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:bandage", "text": "ça fait mal" },
+            { "bild": "figur:sami:aengstlich", "text": "peur" },
+            { "bild": "figur:tom:traurig", "text": "triste" },
+            { "bild": "figur:mia:wuetend:verschraenkt", "text": "dispute" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent des adultes qui les aident, reconnaissent des situations où chercher de l’aide et s’exercent à une phrase simple pour demander de l’aide.",
+        "ablauf": [
+          "Début (5 min) : regarder la suite d’images. Demander : « Que s’est-il passé pour Noah ? Que fait-il ensuite ? »",
+          "Rejouer : un enfant est Noah, l’adulte aide. Tous disent la phrase « Tu peux m’aider, s’il te plaît ? »",
+          "Tâche 2 : nommer les images. Chaque enfant montre qui l’aide ; citer les prénoms des adultes de l’école.",
+          "Tâche 3 : pour chaque image, demander « Que fais-tu quand … ? » ; répondre avec la phrase exercée.",
+          "Fin : montrer ensemble où trouver un adulte pendant la récré."
+        ],
+        "hintergrund": "Demander de l’aide est une capacité importante pour les jeunes enfants – et une question de relation. La recherche sur la résilience montre que des relations fiables avec des adultes bienveillants comptent parmi les plus forts facteurs de protection (Masten, 2014). Dans l’étude de Kauai, beaucoup d’enfants qui grandissaient dans des conditions difficiles ont trouvé un appui auprès de personnes de référence hors de la famille, enseignants ou voisins par exemple (Werner & Smith, 1992). Pour demander de l’aide, les enfants doivent savoir qui est disponible et avoir une phrase simple à portée de main. Rejouer la scène la rend disponible aussi dans les moments d’émotion.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press."
+        ],
+        "differenzierung": {
+          "leichter": "Travailler avec des photos des adultes de l’école et de la Maison Relais.",
+          "schwerer": "Raconter ou dessiner une situation où l’enfant a déjà cherché de l’aide."
+        },
+        "impulse": [
+          "Qui peux-tu demander ici, à l’école ?",
+          "Que fais-tu quand la maîtresse est occupée ?",
+          "Qui as-tu déjà aidé ?"
+        ],
+        "tipps": [
+          "Répondre gentiment à chaque demande, même petite : les enfants apprennent que demander vaut la peine.",
+          "Associer la phrase à un geste (lever la main) : cela aide les enfants qui parlent peu le français."
+        ],
+        "achtung": "Si un enfant montre une grande peur ou dit que quelqu’un lui fait mal : le prendre au sérieux, ne pas l’interroger devant le groupe, l’écouter seul et informer la direction compétente (responsable). En cas d’indices de violence, agir tout de suite selon la procédure interne.",
+        "material": "En option : photos des adultes de l’école et de la Maison Relais"
       }
     }
   },
