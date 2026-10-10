@@ -67,6 +67,60 @@
         "achtung": "Wenn ein Kind häufig haut oder beißt, sich auch mit Hilfe kaum bremsen kann oder auf das Wort „Stopp“ sehr ängstlich reagiert: genau beobachten, mit den Eltern sprechen und die zuständige Leitung (Responsable) informieren.",
         "material": "Rote Buntstifte oder Wachsmalstifte, Schere, Holzstäbchen, Kleber; Musik für den Stopp-Tanz"
       }
+    },
+    "fr": {
+      "titel": "Ma main Stop",
+      "anleitung": "Raconter ensemble l’histoire en images, image par image. Puis tout le monde s’exerce : lever la main et dire « Stop » d’une voix ferme. Un adulte aide à dessiner le contour de la main ; l’enfant la colorie en rouge.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Regarde bien. Que se passe-t-il ?", "symbole": ["zuhoeren", "zeigen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": ["figur:sami:wuetend", "figur:tom:froh:jubeln"],
+              "requisit": "icon:ball-football",
+              "blase": "keine",
+              "untertitel": "Sam prend le ballon de Yusuf."
+            },
+            { "figuren": ["figur:sami:wuetend:stopp"], "text": "Stop !", "untertitel": "Yusuf ne tape pas. Il dit : Stop." },
+            { "figuren": ["figur:tom:verlegen:geben", "figur:sami:froh"], "requisit": "icon:ball-football", "blase": "keine", "untertitel": "Sam rend le ballon." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Lève la main. Dis fort : « Stop ».", "symbole": ["zeigen", "sprechen"] },
+        { "art": "aufgabe", "text": "Dessine le contour de ta main. Colorie-la en rouge.", "symbole": ["malen"] },
+        { "art": "feld", "label": "Ma main Stop", "zeichnen": true, "hoehe": 7 }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent un signal fixe (la main levée et le mot « Stop »), l’utilisent au lieu de taper ou de prendre, et s’arrêtent quand un autre enfant dit « Stop ».",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer un panneau Stop. Demander : « Où l’avez-vous déjà vu ? Que fait une voiture à cet endroit ? »",
+          "Histoire en images (5 min) : les enfants racontent image par image. Demander : « Que fait Yusuf au lieu de taper ? Que fait Sam quand il entend « Stop » ? »",
+          "S’exercer à « Stop » (5 min) : tout le monde lève la main et dit « Stop » – d’abord doucement, puis d’une voix ferme. Regarder l’autre en face.",
+          "Fabriquer la main Stop (10 min) : dessiner le contour de la main, la colorier en rouge, la découper et la coller sur un bâtonnet en bois.",
+          "Danse « Stop » : la musique joue, tout le monde bouge. Quand un enfant lève sa main Stop, tout le monde se fige. Recommencer avec d’autres enfants."
+        ],
+        "hintergrund": "Savoir se freiner – ne pas taper, ne rien prendre, s’arrêter quand un autre enfant dit « Stop » – repose sur le contrôle inhibiteur. Il fait partie des fonctions exécutives, se développe particulièrement fort à l’âge préscolaire et peut être exercé en jouant (Diamond, 2013). Les jeunes enfants dirigent encore beaucoup leur action grâce à des signes extérieurs et en parlant à voix haute. Un signal fixe – main levée et un mot court – remplace les coups ou les cris par un geste simple. Les programmes de prévention de la violence à l’école maternelle exercent de tels signaux dans les deux sens : dire Stop et respecter Stop (Cierpka, 2005).",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder."
+        ],
+        "differenzierung": {
+          "leichter": "Dessiner ensemble le contour de la main. S’exercer d’abord à « Stop » avec une marionnette.",
+          "schwerer": "Jouer des scènes à deux : un enfant prend un jouet, l’autre montre la main Stop. Puis échanger les rôles."
+        },
+        "impulse": [
+          "Quand as-tu déjà dit « Stop » ?",
+          "Que fais-tu quand un autre enfant te dit « Stop » ?",
+          "Que peux-tu faire si l’autre enfant n’arrête pas ?"
+        ],
+        "tipps": [
+          "Convenir de la règle « Stop » pour tout le groupe : celui qui entend « Stop » s’arrête tout de suite. Si ça ne marche pas, l’enfant appelle un adulte.",
+          "Exercer le signal d’abord en jouant, pas seulement en pleine dispute."
+        ],
+        "achtung": "Si un enfant tape ou mord souvent, a du mal à se freiner même avec de l’aide ou réagit avec beaucoup de peur au mot « Stop » : observer attentivement, parler avec les parents et informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ou crayons gras rouges, ciseaux, bâtonnets en bois, colle ; musique pour la danse « Stop »"
+      }
     }
   },
   {
@@ -846,6 +900,58 @@
         ],
         "achtung": "Wenn ein Kind Regeln dauerhaft nicht umsetzen kann, genau hinschauen: Versteht es die Sprache? Braucht es mehr Bewegung oder Begleitung? Bei Sorge mit den Eltern sprechen und die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Schere, Buntstifte; optional Locher und Schlüsselring"
+      }
+    },
+    "fr": {
+      "titel": "Nos règles en images",
+      "anleitung": "Introduire chaque règle séparément : montrer l’image, dire la règle, la mimer ensemble. Ensuite, l’enfant découpe les cartes. En bas, un adulte note la règle de la semaine ; chaque jour où ça a marché, l’enfant colorie une étoile.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Mime chaque règle. Puis découpe les cartes.", "symbole": ["zeigen", "schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 172,
+          "karten": [
+            { "titel": "Parler doucement", "text": "Je parle doucement.", "bild": "icon:feather" },
+            { "titel": "Mes mains", "text": "Mes mains restent avec moi.", "bild": "figur:amira:ruhig:verschraenkt" },
+            { "titel": "Écouter", "text": "J’écoute.", "bild": "icon:ear" },
+            { "titel": "Chacun son tour", "text": "On fait chacun son tour.", "bild": "figur:lea:froh:geben" },
+            { "titel": "Ranger", "text": "Je range.", "bild": "icon:basket" },
+            { "titel": "Demander de l’aide", "text": "J’appelle un adulte.", "bild": "figur:tom:neutral:melden" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Voilà la règle que je m’exerce à respecter. Colorie une étoile chaque jour.", "symbole": ["malen"] },
+        { "art": "plan", "ziel": "", "zeilen": ["Aujourd’hui, ça a marché."], "symbol": "stern" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent six règles de groupe en images, montrent chaque règle avec leur corps et s’exercent à une règle pendant une semaine.",
+        "ablauf": [
+          "Entrée en matière (5 min) : demander : « De quoi avons-nous besoin pour que tout le monde se sente bien dans notre groupe ? » Reprendre les réponses des enfants.",
+          "Introduire les règles (10 min) : montrer chaque carte, dire la règle et la mimer ensemble – par exemple chuchoter « doucement comme une plume » ou poser les mains sur le ventre.",
+          "Découper les cartes (10 min) en proposant de l’aide. Enfiler les cartes de l’enfant sur un anneau ; un deuxième jeu va au mur comme affiche des règles.",
+          "Choisir la règle de la semaine : chaque enfant en choisit une. En fin de journée, colorier ensemble une étoile si ça a marché.",
+          "Au quotidien, au lieu d’un rappel à l’ordre, montrer la carte et nommer brièvement la règle : « Mes mains restent avec moi. »"
+        ],
+        "hintergrund": "Les jeunes enfants comprennent mieux les règles quand ils voient ce qu’on attend d’eux. Les cartes-images rendent les attentes visibles durablement : contrairement à une phrase prononcée, elles sont encore là quand l’enfant regarde de nouveau (Hodgdon, 1995). Les règles formulées de façon positive décrivent le comportement souhaité (« Je parle doucement ») au lieu d’une interdiction (« Ne crie pas ») : l’enfant sait ainsi ce qu’il peut faire. Les programmes pour jeunes enfants associent des règles claires à des félicitations fréquentes et concrètes dès qu’un enfant respecte la règle (Webster-Stratton & Reid, 2003).",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer avec deux ou trois règles et les consolider pendant plusieurs semaines.",
+          "schwerer": "L’enfant explique pour chaque règle pourquoi elle aide le groupe, ou dessine sa propre carte de règle."
+        },
+        "impulse": [
+          "Quelle règle est facile pour toi, laquelle est difficile ?",
+          "À quoi ressemble une voix douce ?",
+          "À qui peux-tu demander de l’aide ?"
+        ],
+        "tipps": [
+          "Peu de règles valent mieux que beaucoup : plus de cinq ou six dépassent les jeunes enfants.",
+          "Féliciter concrètement le respect de la règle : « Tu as attendu jusqu’à ton tour. »"
+        ],
+        "achtung": "Si un enfant n’arrive durablement pas à appliquer les règles, regarder de près : comprend-il la langue ? A-t-il besoin de plus de mouvement ou d’accompagnement ? En cas d’inquiétude, parler avec les parents et impliquer la direction compétente (responsable).",
+        "material": "Ciseaux, crayons de couleur ; en option une perforatrice et un anneau porte-clés"
       }
     }
   },

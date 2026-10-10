@@ -65,6 +65,57 @@
         "achtung": "Wenn ein Kind oft allein bleibt, ausgelacht oder ausgeschlossen wird: in den nächsten Tagen gezielt beobachten, im Team besprechen und bei Bedarf die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte; optional eine Handpuppe und Spielzeug zum Nachspielen"
       }
+    },
+    "fr": {
+      "titel": "Que font les amis ?",
+      "anleitung": "Regarder les images ensemble : que se passe-t-il ici ? Comment se sent l’enfant ? L’enfant entoure où les enfants sont gentils entre eux. Ensuite, il se dessine avec un enfant avec qui il aime jouer.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Que font les amis ? Entoure.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:lea:froh:geben", "figur:sami:froh"], "requisit": "icon:apple", "blase": "keine", "untertitel": "partager" },
+            { "figuren": ["figur:noah:froh:zeigen", "figur:amira:traurig"], "blase": "keine", "untertitel": "se moquer" },
+            { "figuren": ["figur:tom:froh:jubeln", "figur:mia:froh"], "requisit": "icon:ball-football", "blase": "keine", "untertitel": "jouer ensemble" },
+            { "figuren": ["figur:mia:besorgt:geben", "figur:noah:traurig"], "blase": "keine", "untertitel": "consoler" },
+            { "figuren": ["figur:sami:wuetend:verschraenkt", "figur:lea:traurig"], "blase": "keine", "untertitel": "ne pas laisser jouer" },
+            { "figuren": ["figur:amira:froh:geben", "figur:tom:froh"], "requisit": "icon:backpack", "blase": "keine", "untertitel": "aider" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Dessine-toi avec un enfant avec qui tu aimes jouer.", "symbole": ["malen"] },
+        { "art": "feld", "zeichnen": true, "hoehe": 2.6 }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent sur des images des comportements gentils et pas gentils, disent comment les enfants se sentent et racontent ce qu’ils aiment faire avec d’autres enfants.",
+        "ablauf": [
+          "Entrée en matière en cercle (3 min) : une marionnette dit : « J’aimerais tant avoir un ami. Que puis-je faire ? » Recueillir les idées des enfants.",
+          "Parler des images une par une (5 min) : « Que se passe-t-il ici ? Comment se sent l’enfant ? » Les enfants montrent avec le pouce si c’est gentil.",
+          "Les enfants entourent les images gentilles. Pour les autres : « Que pourrait faire l’enfant à la place ? »",
+          "Rejouer une scène avec de vrais jouets (5 min) : partager, consoler ou aider à s’habiller.",
+          "Tâche 2 : les enfants se dessinent avec un autre enfant. Pendant qu’ils dessinent, poser des questions et écrire une phrase de l’enfant sur la feuille."
+        ],
+        "hintergrund": "À l’âge préscolaire, les premières amitiés naissent surtout dans le jeu commun. Les enfants qui partagent, prennent leur tour, aident et consolent sont plus facilement acceptés par les autres. La base en est la compétence émotionnelle : reconnaître les émotions chez soi et chez les autres et y réagir de façon adaptée (Denham, 1998). Des programmes pour jeunes enfants exercent donc ces compétences d’amitié de façon ciblée – avec des images, des marionnettes et de courts jeux de rôle – et renforcent ainsi la vie commune dans le groupe (Webster-Stratton & Reid, 2003). La répétition au quotidien est décisive : quand un comportement gentil est remarqué et nommé, les enfants le montrent plus souvent.",
+        "quellen": [
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Ne parler que des quatre images gentilles et les rejouer. L’enfant montre les images au lieu d’entourer.",
+          "schwerer": "Pour les deux images pas gentilles, raconter : que pourrait dire ou faire l’enfant pour que tout s’arrange ?"
+        },
+        "impulse": [
+          "Qu’as-tu fait aujourd’hui avec un autre enfant ?",
+          "À quoi remarques-tu qu’un enfant est triste ?",
+          "Que peux-tu faire quand un enfant joue seul ?"
+        ],
+        "tipps": [
+          "Nommer les moments gentils au quotidien : « Tu as partagé avec Tiago. Regarde, il est content. »",
+          "Utiliser les images agrandies comme cartes de discussion pour le cercle."
+        ],
+        "achtung": "Si un enfant reste souvent seul, est moqué ou exclu : l’observer de façon ciblée les jours suivants, en parler en équipe et, si nécessaire, informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; en option une marionnette et des jouets pour rejouer"
+      }
     }
   },
   {
@@ -2003,6 +2054,67 @@
         ],
         "achtung": "Erzählt ein Kind von belastenden Berührungen, Geheimnissen oder Gewalt: ruhig zuhören, nicht ausfragen, nichts versprechen. Bei Hinweisen auf Gefährdung sofort nach dem internen Ablauf handeln, das Kind nicht allein lassen und die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte; optional Musik"
+      }
+    },
+    "fr": {
+      "titel": "Stop, je ne veux pas !",
+      "anleitung": "Montrer le geste « Stop » et l’exercer ensemble : bien se tenir debout, lever la main, dire fort « Stop, je ne veux pas ». Insister : on a le droit de dire non. En parler à un adulte, c’est juste – ce n’est pas rapporter.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Quand dis-tu Stop ? Entoure.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:tom:froh", "figur:lea:verlegen"], "blase": "keine", "untertitel": "Chatouiller – mais l’enfant ne veut pas." },
+            { "figuren": ["figur:sami:wuetend", "figur:amira:aengstlich"], "blase": "keine", "untertitel": "Un enfant tape." },
+            { "figuren": ["figur:noah:froh", "figur:mia:froh"], "requisit": "icon:ball-football", "blase": "keine", "untertitel": "Les deux aiment jouer ensemble." }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Voilà comment faire : dire Stop, s’éloigner, en parler. Fais comme moi.",
+          "hinweis": "Dans la troisième image, tu dessines à qui tu en parles.",
+          "symbole": ["zeigen", "sprechen", "malen"]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:lea:neutral:stopp"], "text": "Stop. Je ne veux pas.", "sprecher": 0, "untertitel": "1  Dire Stop." },
+            { "figuren": ["figur:lea:neutral"], "requisit": "icon:walk", "blase": "keine", "untertitel": "2  S’éloigner." },
+            { "leer": true, "untertitel": "3  En parler. À qui ? Dessine." }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants apprennent qu’ils ont le droit de dire non, s’exercent au geste « Stop » avec une voix claire et savent qu’ils peuvent chercher de l’aide auprès d’adultes.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer le geste « Stop », tout le monde le fait – une fois doucement, une fois fort. Qu’est-ce qui est le plus efficace ?",
+          "Tâche 1 (5 min) : « Comment se sent l’enfant ? Où le sent-il ? » Les enfants entourent où ils diraient Stop.",
+          "Tâche 2 (5 min) : montrer les trois étapes et les rejouer.",
+          "Les enfants dessinent un adulte à qui ils raconteraient quelque chose ; écrire son prénom à côté.",
+          "Répéter le geste de façon ludique dans les semaines suivantes, par exemple avec la danse « Stop »."
+        ],
+        "hintergrund": "La prévention avec de jeunes enfants renforce trois choses : le sentiment d’avoir le droit de décider de son propre corps, prendre au sérieux les sentiments désagréables comme signal d’alarme et aller chercher de l’aide – sans détails qui font peur. La confiance dans un nouveau comportement naît le plus souvent en essayant soi-même avec succès ; c’est pourquoi le geste « Stop » est exercé plusieurs fois en jouant (Bandura, 1977). Des relations fiables avec des adultes comptent parmi les plus importants facteurs de protection dans le développement (Masten, 2014) : chaque enfant devrait pouvoir nommer une personne à qui il se confierait.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Exercer seulement le geste « Stop ». Au lieu de dessiner, l’enfant nomme une personne.",
+          "schwerer": "Jeu de rôle : que faire si l’autre enfant n’arrête pas ? Dire Stop plus fort, s’éloigner, en parler."
+        },
+        "impulse": [
+          "Comment ton ventre se sent-il quand quelque chose ne te plaît pas ?",
+          "A-t-on aussi le droit de dire Stop aux adultes ?",
+          "À qui peux-tu tout raconter ?"
+        ],
+        "tipps": [
+          "La règle « Stop » vaut aussi pour les adultes, par exemple pour chatouiller ou jouer à se bagarrer.",
+          "Encourager à en parler plutôt que traiter cela de rapporter : « C’est bien de me l’avoir dit. »"
+        ],
+        "achtung": "Si un enfant raconte des contacts pénibles, des secrets ou de la violence : écouter calmement, ne pas faire parler, ne rien promettre. En cas d’indices de mise en danger, agir immédiatement selon la procédure interne, ne pas laisser l’enfant seul et informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; en option de la musique"
       }
     }
   },

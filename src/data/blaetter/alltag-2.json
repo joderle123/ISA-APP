@@ -82,6 +82,91 @@
         "achtung": "Persönliches nicht im Plenum vertiefen, sondern im Einzelgespräch aufgreifen und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Grenzverletzungen oder ungewollte Berührungen: sofort nach dem internen Ablauf handeln, das Kind nicht allein lassen.",
         "material": "Schachtel als Fragen-Box, kleine Zettel"
       }
+    },
+    "fr": {
+      "titel": "Mon corps change",
+      "untertitel": "Entre 8 et 14 ans environ, la puberté commence. Elle arrive pour tout le monde – mais chaque corps a son propre rythme.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce qui se passe à la puberté",
+          "text": "Le corps devient peu à peu celui d’un adulte. Les hormones, des messagers du corps, donnent le signal de départ. On grandit plus vite, la peau et la voix changent, des poils poussent à de nouveaux endroits. Les émotions aussi peuvent devenir plus fortes et changer plus vite."
+        },
+        { "art": "aufgabe", "text": "C’est vrai ou c’est faux ? Coche.", "hinweis": "Ensuite, vous discutez des réponses ensemble.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["vrai", "faux"],
+          "items": [
+            "Tous les enfants entrent dans la puberté au même âge.",
+            "Chez certains, la puberté commence à 8 ans, chez d’autres à 14 ans.",
+            "On a des boutons parce qu’on ne se lave pas assez.",
+            "À la puberté, on transpire plus. Se laver tous les jours aide.",
+            "Les blagues sur le corps des autres sont sans danger.",
+            "On a le droit de poser des questions sur la puberté – même gênantes."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Dans le vestiaire",
+          "text": "Nora a grandi de dix centimètres en un an. Maintenant, elle est la plus grande de la classe. Dans le vestiaire, Kim lance : « Hé, la géante, il fait quel temps là-haut ? » Tout le monde rit, Nora aussi. Mais dans son ventre, ça se serre. Mathis est juste à côté. Il est l’un des plus petits et pense : « Quand est-ce que je vais enfin grandir ? »",
+          "bild": "figur:jana:verlegen"
+        },
+        { "art": "aufgabe", "text": "Nora rit avec les autres. Que ressent-elle sans doute à l’intérieur ? Entoure.", "symbole": ["nachdenken", "einkreisen"] },
+        {
+          "art": "gefuehle",
+          "gefuehle": ["froh", "verlegen", "traurig", "wuetend", "stolz", "besorgt"],
+          "modus": "einkreisen",
+          "spalten": 6,
+          "woerter": ["contente", "gênée", "triste", "en colère", "fière", "inquiète"]
+        },
+        { "art": "aufgabe", "text": "Que pourrait dire Nora à Kim ? Et que dirais-tu à Mathis ?", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Nora pourrait dire à Kim : …", "À Mathis, je dirais : …"], "linien": 2 },
+        {
+          "art": "aufgabe",
+          "text": "Tes questions, tu n’as pas à les garder pour toi. À qui peux-tu les poser ?",
+          "hinweis": "Écris seulement ce que tu veux. Tu n’as à montrer cette feuille à personne.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "hand", "finger": ["À la maison", "À l’école", "Médecin", "Quelqu’un d’autre", "Anonymement au téléphone : Kanner- a Jugendtelefon 116 111"] },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Pour commencer",
+          "punkte": ["« Tu as un moment ? J’aimerais te poser une question. »", "« C’est un peu gênant pour moi, mais … »", "« Est-ce normal que … ? »"]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants savent que la puberté arrive pour tout le monde, mais à des moments différents. Ils nomment les émotions qui y sont liées, s’exercent à répondre à des remarques dévalorisantes et connaissent des personnes à qui poser leurs questions.",
+        "ablauf": [
+          "Préparation : installer une boîte à questions pour des petits papiers anonymes ; informer les parents du thème à l’avance.",
+          "Entrée en matière (5 min) : convenir de règles – personne n’est obligé de raconter quelque chose de personnel, personne n’est moqué, toutes les questions sont permises.",
+          "Tâche 1 en travail individuel, puis correction en commun (10 min). Solution : 1, 3 et 5 sont faux ; 2, 4 et 6 sont vrais.",
+          "Lire l’histoire, tâches 2 et 3 (15 min). Questions : « Pourquoi Nora rit-elle avec les autres ? » « Est-ce encore pour rire ? » Essayer des réponses pour Nora en jeu de rôle.",
+          "Tâche 4 en travail individuel ; la main n’est pas ramassée.",
+          "À la séance suivante, répondre aux questions de la boîte de façon factuelle et sans citer de noms ; transmettre ce qui reste ouvert à la Médecine scolaire."
+        ],
+        "hintergrund": "La puberté commence aujourd’hui plus tôt qu’il y a quelques générations, et son début varie de plusieurs années d’un enfant à l’autre (Steinberg, 2014). Un enfant nettement en avance ou en retard sur la classe se sent souvent particulièrement observé. En même temps, le regard des pairs prend du poids – les remarques dévalorisantes sur le corps blessent particulièrement à cet âge. Des informations factuelles apaisent les inquiétudes, un ton respectueux protège de la honte. Savoir nommer des émotions comme l’incertitude ou la honte aide à les confier et à aller chercher de l’aide (Brackett, 2019).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Lire la tâche 1 ensemble et répondre avec le pouce en haut ou en bas. À la tâche 3, formuler seulement une phrase pour Nora.",
+          "schwerer": "Formuler des règles de respect pour le vestiaire et les proposer au conseil de classe."
+        },
+        "impulse": [
+          "À quoi remarque-t-on qu’une remarque est encore pour rire ou déjà blessante ?",
+          "Qu’attends-tu de ta classe quand tu changes ?"
+        ],
+        "tipps": [
+          "Employer des mots factuels, rester serein en cas de fous rires – la gêne fait partie du sujet.",
+          "En petits groupes, certains enfants posent leurs questions plus librement."
+        ],
+        "achtung": "Ne pas approfondir les situations personnelles en plénière, mais les reprendre en entretien individuel et informer la direction compétente (responsable). En cas d’indices de violation des limites ou de contacts non voulus : agir immédiatement selon la procédure interne, ne pas laisser l’enfant seul.",
+        "material": "Boîte pour la boîte à questions, petits papiers"
+      }
     }
   },
   {
@@ -361,6 +446,62 @@
         ],
         "achtung": "Wenn ein Kind sagt, es könne gar nichts, oder sich stark abwertet: nicht widersprechen, sondern im Alltag kleine Erfolge sichtbar machen. Hält die Entmutigung an, mit den Eltern sprechen und die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte; optional Jacke, Korb und Pinsel zum Zeigen"
+      }
+    },
+    "fr": {
+      "titel": "Ça, je sais déjà le faire",
+      "anleitung": "Nommer ensemble les images. L’enfant entoure ce qu’il sait déjà faire, puis dessine à gauche quelque chose qu’il fait bien et à droite quelque chose qu’il apprend en ce moment. Dire ce qu’il a réussi : « Tu as fermé ta veste tout seul. »",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Que sais-tu déjà faire ? Entoure.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            { "bild": "icon:shirt", "text": "m’habiller" },
+            { "bild": "icon:droplet", "text": "me laver les mains" },
+            { "bild": "icon:basket", "text": "ranger" },
+            { "bild": "icon:tools-kitchen-2", "text": "mettre la table" },
+            { "bild": "icon:palette", "text": "dessiner" },
+            { "bild": "icon:heart", "text": "consoler" }
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [{ "art": "aufgabe", "text": "Ça, je sais déjà faire.", "symbole": ["malen"] }, { "art": "feld", "zeichnen": true, "hoehe": 4.5 }],
+          "rechts": [{ "art": "aufgabe", "text": "Ça, j’apprends en ce moment.", "symbole": ["malen"] }, { "art": "feld", "zeichnen": true, "hoehe": 4.5 }]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants se rappellent ce qu’ils savent déjà faire seuls, le montrent aux autres et font l’expérience suivante : ce que je m’exerce à faire en ce moment, je le saurai bientôt.",
+        "ablauf": [
+          "Entrée en matière en cercle (5 min) : l’adulte raconte ce qu’il a dû s’exercer longtemps à faire quand il était enfant, par exemple faire un nœud.",
+          "Nommer les images ensemble. Chaque enfant entoure ce qu’il sait déjà faire. Demander : « Comment tu fais ? Montre-moi. »",
+          "Tour du « je sais faire » : chaque enfant montre une chose – fermer sa veste, construire une tour, chanter une chanson.",
+          "Tâches 2 et 3 : les enfants dessinent. Si l’enfant le souhaite, l’adulte écrit une phrase qu’il lui dicte.",
+          "Accrocher les dessins ou les mettre dans le portfolio. Quelques semaines plus tard, regarder : que sait faire l’enfant maintenant de ce qui était dans le dessin de droite ?"
+        ],
+        "hintergrund": "Avoir réussi quelque chose soi-même est la plus forte source du sentiment d’efficacité personnelle – la confiance de pouvoir aussi venir à bout de choses nouvelles (Bandura, 1977). Les jeunes enfants le vivent surtout au quotidien : en s’habillant, en rangeant ou en aidant. Un retour qui décrit l’action, par exemple « Tu as rangé tous les crayons dans le pot », est plus efficace qu’un compliment général (Hattie & Timperley, 2007). Le mot « encore » aide à voir ce qui ne marche pas encore comme une étape d’apprentissage plutôt que comme un manque (Dweck, 2006).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Montrer de vrais objets plutôt que des images (veste, panier, pinceau). L’enfant montre seulement et dessine librement.",
+          "schwerer": "L’enfant raconte comment il a appris quelque chose et qui l’a aidé."
+        },
+        "impulse": [
+          "Qu’est-ce que tu sais déjà faire sans aide ?",
+          "Qu’est-ce qui était difficile au début ?",
+          "Qui as-tu déjà aidé aujourd’hui ?"
+        ],
+        "tipps": [
+          "Féliciter en décrivant : dire ce que l’enfant a fait plutôt qu’un simple « bravo ».",
+          "Aux enfants qui entourent peu de choses, rappeler des moments du quotidien : « Aujourd’hui, tu as enfilé tes chaussons tout seul. »"
+        ],
+        "achtung": "Si un enfant dit qu’il ne sait rien faire ou se dévalorise fortement : ne pas le contredire, mais rendre visibles de petites réussites au quotidien. Si le découragement persiste, parler avec les parents et informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; en option veste, panier et pinceau à montrer"
       }
     }
   },

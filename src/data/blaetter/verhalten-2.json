@@ -1259,6 +1259,70 @@
         "achtung": "Lässt sich ein Kind kaum beruhigen oder weicht es mit den Karten allem aus: mit den Eltern sprechen und die Leitung (Responsable) einbeziehen.",
         "material": "Buntstifte, Schere, Laminierfolie"
       }
+    },
+    "fr": {
+      "titel": "J’ai besoin d’une pause",
+      "anleitung": "Lire l’histoire en images. L’enfant colorie les cartes. Ensuite, découper, plastifier et s’exercer : l’enfant montre une carte, l’adulte réagit tout de suite.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Regarde : Tom montre une carte.", "symbole": ["zuhoeren", "zeigen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:tom:wuetend:haende-gesicht"], "blase": "keine", "untertitel": "Il y a trop de bruit. Tom veut crier." },
+            {
+              "figuren": ["figur:tom:neutral:zeigen", "figur:lehrerin:ruhig"],
+              "requisit": "icon:armchair",
+              "blase": "keine",
+              "untertitel": "Tom montre la carte Pause à la maîtresse."
+            },
+            { "figuren": ["figur:tom:ruhig"], "requisit": "icon:pillow", "blase": "keine", "untertitel": "Tom se repose. Ensuite, il rejoue." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Colorie les cartes. Découpe-les.", "symbole": ["malen", "schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 190,
+          "karten": [
+            { "titel": "Pause", "text": "J’ai besoin d’une pause.", "bild": "icon:armchair" },
+            { "titel": "Aide", "text": "Aide-moi, s’il te plaît.", "bild": "icon:heart-handshake" },
+            { "titel": "Toilettes", "text": "Je dois aller aux toilettes.", "bild": "icon:toilet-paper" },
+            { "titel": "Boire", "text": "J’ai soif.", "bild": "motiv:wasserglas" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent quatre cartes-images avec lesquelles ils peuvent montrer un besoin – pause, aide, toilettes, boire – au lieu de crier, de s’enfuir ou de pleurer.",
+        "ablauf": [
+          "Lire l’histoire en images et la rejouer. Demander : « Que fait Tom quand c’est trop pour lui ? »",
+          "Présenter chaque carte séparément et agir tout de suite en conséquence : si un enfant montre la carte « Boire », il reçoit de l’eau.",
+          "Les enfants colorient les cartes. Ensuite, les découper, les plastifier et les garder à portée de main (bande velcro ou anneau porte-clés).",
+          "S’exercer en jouant (5 min) : l’adulte décrit une situation (« Tu as soif. »), l’enfant montre la carte qui convient.",
+          "Au quotidien, tenir compte tout de suite de chaque carte montrée et le dire : « Tu m’as montré la carte. Maintenant, tu fais une pause. »"
+        ],
+        "hintergrund": "Crier, s’enfuir ou pleurer sont souvent, chez les jeunes enfants, un message : « J’ai besoin de quelque chose. » Celui qui a encore peu de mots, ou n’en trouve pas sous le stress, peut montrer une image. Les images restent visibles alors que la parole disparaît aussitôt ; les aides visuelles soutiennent donc la compréhension et l’expression (Hodgdon, 1995). Une communication structurée et appuyée sur des images a aussi fait ses preuves auprès d’enfants autistes (Mesibov, Shea & Schopler, 2004). La réaction fiable des adultes est décisive : si montrer une carte mène plus vite au but que crier, l’enfant utilise la carte de plus en plus souvent (Kazdin, 2008).",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer.",
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer avec une seule carte (le plus souvent « Pause » ou « Boire »), n’introduire la suivante qu’après quelques jours.",
+          "schwerer": "L’enfant montre la carte et dit la phrase : « J’ai besoin d’une pause. »"
+        },
+        "impulse": [
+          "Que fais-tu quand tout est trop bruyant ?",
+          "À qui peux-tu montrer la carte ?",
+          "De quelle carte as-tu le plus besoin ?"
+        ],
+        "tipps": [
+          "Tenir compte de chaque carte montrée. Si ce n’est pas possible tout de suite : « Tu as soif. Après la chanson, on boit. »",
+          "Associer la carte « Pause » à un lieu fixe, par exemple le coin calme."
+        ],
+        "achtung": "Si un enfant se calme à peine ou évite tout avec les cartes : parler avec les parents et impliquer la direction (responsable).",
+        "material": "Crayons de couleur, ciseaux, film de plastification"
+      }
     }
   },
   {

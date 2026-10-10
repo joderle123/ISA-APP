@@ -629,6 +629,68 @@
         "achtung": "Beruhigt sich ein Kind auch dort nicht oder nutzt es die Ecke sehr häufig, um Anforderungen zu entgehen: genau beobachten, mit den Eltern sprechen und die zuständige Leitung (Responsable) einbeziehen. Ein sehr aufgebrachtes Kind nicht allein lassen.",
         "material": "Buntstifte; Materialien der Ruhe-Ecke (Kissen, Bücher, Sanduhr, Kopfhörer)"
       }
+    },
+    "fr": {
+      "titel": "Dans le coin calme",
+      "anleitung": "Regarder ensemble le coin calme. L’enfant montre et entoure ce qui l’y aide. Montrer les trois étapes du retour et les exercer en jeu de rôle.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide dans le coin calme ? Entoure.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:pillow", "text": "serrer un coussin" },
+            { "bild": "motiv:ballon", "text": "respirer en ballon" },
+            { "bild": "icon:book", "text": "regarder un livre" },
+            { "bild": "icon:headphones", "text": "écouter de la musique" },
+            { "bild": "icon:hourglass", "text": "sablier" },
+            { "bild": "icon:palette", "text": "dessiner" },
+            { "bild": "motiv:wasserglas", "text": "boire de l’eau" },
+            { "bild": "icon:hand-grab", "text": "pétrir la pâte" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Voilà comment je reviens.", "symbole": ["zeigen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:lea:ruhig"], "requisit": "icon:hourglass", "blase": "keine", "untertitel": "1. Je suis de nouveau calme." },
+            { "figuren": ["figur:lea:ruhig", "figur:lehrerin:froh"], "text": "Je suis prête.", "sprecher": 0, "untertitel": "2. Je préviens." },
+            { "figuren": ["figur:lea:froh", "figur:sami:froh"], "requisit": "icon:puzzle", "blase": "keine", "untertitel": "3. Je rejoue avec les autres." }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants connaissent le coin calme comme un lieu sûr, choisissent ce qui les aide à se calmer et apprennent un déroulement fixe pour retourner dans le groupe.",
+        "ablauf": [
+          "Visiter le coin calme avec le groupe (5 min) : montrer chaque objet et l’essayer brièvement.",
+          "Tâche 1 (5 min) : chaque enfant montre et entoure ce qui l’aide. Demander : « Qu’est-ce que tu aimes le plus faire là-bas ? »",
+          "Tâche 2 (5 min) : raconter les trois images et les exercer en jeu de rôle : se calmer – prévenir – rejouer.",
+          "Accrocher la feuille dans le coin calme ou la mettre dans le dossier de l’enfant.",
+          "Les semaines suivantes, demander brièvement après chaque passage : « Qu’est-ce qui t’a aidé ? »"
+        ],
+        "hintergrund": "Les jeunes enfants peuvent à peine réguler seuls leurs émotions fortes ; ils ont besoin pour cela de la proximité et du soutien d’adultes. Ce n’est que lorsqu’un enfant se sent de nouveau en sécurité et en lien qu’il peut réfléchir et apprendre (Siegel & Bryson, 2011). Un coin calme n’est donc pas un lieu de punition, mais une offre : un endroit fixe et confortable avec quelques aides familières. Les images rendent cette offre compréhensible et prévisible pour les enfants qui ne lisent pas encore (Hodgdon, 1995). Un déroulement clair pour le retour évite que le coin devienne un moyen d’échapper aux exigences.",
+        "quellen": [
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Proposer seulement deux ou trois images. L’enfant montre, l’adulte entoure.",
+          "schwerer": "L’enfant explique à un autre enfant comment fonctionne le coin calme."
+        },
+        "impulse": [
+          "À quoi remarques-tu que tu es de nouveau calme ?",
+          "Qui préviens-tu quand tu peux revenir ?",
+          "Qu’est-ce qu’il devrait encore y avoir dans notre coin calme ?"
+        ],
+        "tipps": [
+          "Ne jamais utiliser le coin calme comme punition, mais le proposer : « Tu veux aller un moment dans le coin calme ? »",
+          "Peu de matériel, toujours au même endroit. Un sablier rend le temps visible."
+        ],
+        "achtung": "Si un enfant ne se calme pas non plus là-bas ou utilise très souvent le coin pour échapper aux exigences : observer attentivement, parler avec les parents et impliquer la direction compétente (responsable). Ne pas laisser seul un enfant très agité.",
+        "material": "Crayons de couleur ; matériel du coin calme (coussins, livres, sablier, casque)"
+      }
     }
   },
   {
@@ -1527,6 +1589,61 @@
         ],
         "achtung": "Traut sich ein Kind kaum etwas zu oder wertet es sich häufig ab: aufmerksam beobachten, mit den Eltern sprechen und bei Bedarf die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "Ma fierté",
+      "anleitung": "Raconter ensemble l’histoire en images : au début c’est difficile, Kim s’exerce, puis ça marche – et il est fier. Ensuite, l’enfant dessine quelque chose qu’il sait déjà faire, montre son dessin et en parle.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Regarde les images. Comment se sent Kim à la fin ?", "symbole": ["zeigen", "sprechen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:tom:besorgt"], "requisit": "icon:bike", "blase": "keine", "untertitel": "1. Faire du vélo, c’est encore difficile." },
+            { "figuren": ["figur:tom:neutral"], "requisit": "icon:bike", "blase": "keine", "untertitel": "2. Kim s’exerce tous les jours." },
+            { "figuren": ["figur:tom:stolz:jubeln"], "requisit": "icon:bike", "blase": "keine", "untertitel": "3. Réussi. Kim est fier." }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que sais-tu déjà faire ? Dessine ta plus belle réussite.",
+          "hinweis": "Montre ton dessin et raconte.",
+          "symbole": ["malen", "zeigen"]
+        },
+        { "art": "feld", "zeichnen": true, "hoehe": 5.5 },
+        { "art": "linien", "anzahl": 1, "label": "Voilà ce que l’enfant raconte (l’adulte écrit) :" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent la fierté comme un sentiment qui suit un effort, montrent ce qu’ils savent déjà faire et en parlent à un adulte.",
+        "ablauf": [
+          "Entrée en matière en cercle (5 min) : raconter l’histoire en images. Demander : « Comment se sent Kim au début ? Et à la fin ? »",
+          "Montrer la fierté (3 min) : tout le monde se lève et montre avec son corps à quoi ressemble la fierté : dos droit, bras en l’air, sourire.",
+          "Tâche 2 (10 min) : l’enfant dessine quelque chose qu’il sait déjà faire. Demander : « Comment as-tu appris ça ? »",
+          "L’adulte écrit ce que raconte l’enfant. Celui qui le souhaite montre son dessin au cercle.",
+          "Accrocher les dessins comme mur « Voilà ce dont nous sommes fiers » et le compléter au fil de l’année."
+        ],
+        "hintergrund": "La fierté naît quand les enfants s’attribuent un succès à eux-mêmes. Dès l’âge préscolaire, ils montrent leur joie de ce qui est réussi et cherchent le retour d’adultes de confiance (Denham, 1998). Les réussites obtenues par soi-même sont la principale source de la conviction de pouvoir agir sur les choses (Bandura, 1977). L’histoire en images montre donc tout le chemin : difficile – exercé – réussi. Les retours qui décrivent l’effort et la démarche renforcent davantage l’envie d’apprendre que des compliments généraux (Dweck, 2006).",
+        "quellen": [
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Jouer l’histoire au lieu de la raconter. L’enfant dessine, l’adulte écrit pour lui.",
+          "schwerer": "L’enfant raconte sa propre histoire en trois étapes : difficile – exercé – réussi."
+        },
+        "impulse": [
+          "Qu’est-ce qui était difficile pour toi au début ?",
+          "Qui t’a aidé à t’exercer ?",
+          "Qu’est-ce que tu aimerais apprendre ensuite ?"
+        ],
+        "tipps": [
+          "Décrire l’action plutôt que féliciter en général : « Tu as persévéré jusqu’à ce que ça marche. »",
+          "Ne pas comparer les enfants : chacun montre ce qu’il sait faire lui-même."
+        ],
+        "achtung": "Si un enfant ne se fait presque pas confiance ou se dévalorise souvent : observer attentivement, parler avec les parents et, si nécessaire, impliquer la direction compétente (responsable).",
+        "material": "Crayons de couleur"
       }
     }
   }

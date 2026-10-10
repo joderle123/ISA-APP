@@ -71,6 +71,69 @@
         "achtung": "Reagiert ein Kind bei Übergängen regelmäßig sehr heftig (lange Wutanfälle, Weglaufen, Selbstverletzung): Situationen notieren und mit Eltern und zuständiger Leitung (Responsable) besprechen.",
         "material": "Buntstifte, Schere, Laminierfolie, Klettpunkte, Karton"
       }
+    },
+    "fr": {
+      "titel": "D’abord – ensuite",
+      "anleitung": "Découper les cartes et le tableau, les plastifier, y coller du velcro. Sur « D’abord » va la tâche, sur « Ensuite » quelque chose que l’enfant aime faire. Dire par exemple : « D’abord se laver les mains, ensuite manger. »",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Colorie les cartes. Découpe-les.",
+          "hinweis": "Sur la carte vide, tu dessines ce que tu préfères faire.",
+          "symbole": ["malen", "schneiden"]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "karten": [
+            { "titel": "ranger", "bild": "icon:basket" },
+            { "titel": "se laver les mains", "bild": "icon:droplet" },
+            { "titel": "s’habiller", "bild": "icon:shirt" },
+            { "titel": "toilettes", "bild": "icon:toilet-paper" },
+            { "titel": "cercle", "bild": "icon:users-group" },
+            { "titel": "manger", "bild": "icon:tools-kitchen-2" },
+            { "titel": "jouer dehors", "bild": "icon:ball-football" },
+            { "titel": "dessiner", "bild": "icon:palette" },
+            { "titel": "regarder un livre", "bild": "icon:book" },
+            { "titel": "musique", "bild": "icon:music" },
+            { "titel": "faire un puzzle", "bild": "icon:puzzle" },
+            {}
+          ]
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce qui vient d’abord ? Et ensuite ? Pose les cartes.", "symbole": ["zeigen", "sprechen"] },
+        { "art": "spalten", "links": [{ "art": "feld", "label": "D’abord", "hoehe": 4 }], "rechts": [{ "art": "feld", "label": "Ensuite", "hoehe": 4 }] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants voient sur un tableau d’images ce qu’il faut faire maintenant et ce qui vient après. Les transitions entre deux activités se passent ainsi avec moins de mots et moins de résistance.",
+        "ablauf": [
+          "Préparation : découvrir avec l’enfant ce qu’il aime tout particulièrement faire – cela va sur « Ensuite ».",
+          "Introduction en cercle (5 min) : montrer le tableau : « D’abord se laver les mains, ensuite manger. » Montrer les cartes en même temps.",
+          "Faire nommer les cartes : « Qu’est-ce que c’est ? Que fais-tu là ? » Un enfant pose lui-même une paire et dit la phrase.",
+          "Au quotidien, avant une transition : montrer le tableau, dire brièvement, ne pas discuter. Une fois la tâche terminée, retirer la carte : « C’est fini. Maintenant, c’est … »",
+          "Toujours tenir la carte « Ensuite » de façon fiable."
+        ],
+        "hintergrund": "Pour les jeunes enfants, des indications de temps comme « bientôt » ou « après le repas » sont difficiles à saisir. Les images restent visibles quand les mots se sont tus depuis longtemps. Les aides visuelles facilitent donc la compréhension des déroulements, surtout lorsque la compréhension de la langue est limitée (Hodgdon, 1995) ; des structures visibles et prévisibles sont aussi un élément central de l’approche TEACCH (Mesibov et al., 2004). L’ordre « d’abord – ensuite » s’appuie sur le principe de Premack : une activité qu’un enfant fait volontiers et souvent renforce une activité moins appréciée lorsqu’elle la suit immédiatement (Premack, 1959). Dans les groupes plurilingues s’ajoute un avantage : les images ne sont liées à aucune langue.",
+        "quellen": [
+          "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer avec de vrais objets (savon, assiette), puis seulement avec des cartes-images.",
+          "schwerer": "Poser trois cartes : « d’abord – ensuite – après ». L’enfant les pose lui-même."
+        },
+        "impulse": [
+          "Qu’est-ce qu’on fait d’abord ?",
+          "Et qu’est-ce qui vient ensuite ?",
+          "Qu’est-ce que tu préfères faire ?"
+        ],
+        "tipps": [
+          "Le tableau annonce, il ne menace pas : éviter « Si tu ne ranges pas, tu ne sors pas ».",
+          "Commencer par de courtes tâches « D’abord ». L’enfant voit vite que le « Ensuite » arrive vraiment."
+        ],
+        "achtung": "Si un enfant réagit régulièrement très fort lors des transitions (longues crises de colère, fuite, auto-agression) : noter les situations et en parler avec les parents et la direction compétente (responsable).",
+        "material": "Crayons de couleur, ciseaux, film de plastification, points de velcro, carton"
+      }
     }
   },
   {
@@ -655,6 +718,63 @@
         ],
         "achtung": "Reagiert ein Kind trotz Bildplan anhaltend stark auf Übergänge oder Abschiede: Beobachtungen festhalten und mit Eltern und zuständiger Leitung (Responsable) besprechen.",
         "material": "Buntstifte, Schere, Laminierfolie, Klett, Kartonstreifen"
+      }
+    },
+    "fr": {
+      "titel": "Ma journée en images",
+      "anleitung": "Faire colorier les cartes, les découper, les plastifier. Les coller avec du velcro sur une bande, dans l’ordre de la journée. Après chaque activité, retirer la carte ensemble.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Colorie les cartes. Découpe-les.", "symbole": ["malen", "schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "karten": [
+            { "titel": "arrivée", "bild": "icon:door-enter" },
+            { "titel": "cercle", "bild": "icon:users-group" },
+            { "titel": "jouer", "bild": "icon:puzzle" },
+            { "titel": "toilettes", "bild": "icon:toilet-paper" },
+            { "titel": "se laver les mains", "bild": "icon:droplet" },
+            { "titel": "manger", "bild": "icon:apple" },
+            { "titel": "dehors", "bild": "icon:trees" },
+            { "titel": "gym", "bild": "icon:run" },
+            { "titel": "dessiner", "bild": "icon:palette" },
+            { "titel": "histoire", "bild": "icon:book" },
+            { "titel": "se reposer", "bild": "icon:pillow" },
+            { "titel": "rentrer", "bild": "icon:home" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce que tu préfères faire à l’école ? Dessine-le.", "symbole": ["malen"] },
+        { "art": "feld", "label": "C’est ce que je préfère faire.", "hoehe": 4, "zeichnen": true }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent sur des images le déroulement de leur journée à l’école. Le programme visible donne de la sécurité et aide à se préparer à ce qui vient.",
+        "ablauf": [
+          "Regarder et nommer les cartes ensemble : « Qu’est-ce qu’on fait là ? » Les enfants colorient les cartes.",
+          "Plastifier les cartes et les coller sur une bande, à hauteur des yeux des enfants, dans l’ordre de la journée.",
+          "Le matin en cercle, « lire » la journée ensemble : « D’abord …, ensuite …, puis … »",
+          "Après chaque activité, un enfant retire la carte et la glisse dans une boîte « Fini ».",
+          "Si quelque chose change (sortie, gym annulée), remplacer la carte à l’avance de façon visible et l’annoncer."
+        ],
+        "hintergrund": "La prévisibilité donne de la sécurité aux jeunes enfants : savoir ce qui vient ensuite évite de devoir toujours demander et facilite les transitions. Les plannings en images rendent le déroulement de la journée visible et restent – contrairement aux annonces orales – disponibles toute la journée (Hodgdon, 1995). Dans l’approche TEACCH, les plannings visuels comptent parmi les aides de structuration centrales ; ils favorisent l’autonomie et réduisent le stress lors des changements (Mesibov et al., 2004). Retirer les cartes terminées montre concrètement où en est la journée. Les changements inattendus passent mieux lorsqu’ils sont annoncés sur le planning.",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer avec trois cartes (arrivée, jouer, rentrer) et en ajouter peu à peu.",
+          "schwerer": "L’enfant pose lui-même le planning le matin et le raconte à un autre enfant."
+        },
+        "impulse": [
+          "Qu’est-ce qu’on fait maintenant ?",
+          "Qu’est-ce qui vient après le repas ?",
+          "Qu’est-ce que tu préfères faire ?"
+        ],
+        "tipps": [
+          "Toujours lire le planning de la même façon : de haut en bas ou de gauche à droite.",
+          "Si la séparation du matin est difficile, montrer la carte « rentrer » : elle montre que la journée a une fin."
+        ],
+        "achtung": "Si un enfant réagit encore très fort aux transitions ou aux séparations malgré le planning en images : noter les observations et en parler avec les parents et la direction compétente (responsable).",
+        "material": "Crayons de couleur, ciseaux, film de plastification, velcro, bandes de carton"
       }
     }
   },

@@ -914,6 +914,172 @@
         "achtung": "Hinweise auf Übergriffe, Druck zu Bildern oder Gewalt in einer Beziehung: nach der Einheit ruhig ansprechen, nichts versprechen, Schutzkonzept anwenden, die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr 112.",
         "material": "Blatt für jede Person, Fragenbox"
       }
+    },
+    "fr": {
+      "titel": "Amoureux – avec respect",
+      "untertitel": "Être amoureux ou amoureuse, c’est normal. Respect veut dire : tout le monde veut ce qui se passe – et un non reste un non.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Luca",
+          "bild": "figur:ben:verlegen",
+          "text": "Depuis trois semaines, Luca prend le long chemin par le deuxième étage, parce que la classe de Nora s’y trouve. Il a réécrit onze fois un message pour elle. Vendredi, il lui demande si elle vient samedi au skatepark. Nora répond gentiment : « Je t’aime bien, mais pas comme ça. Désolée. »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quels sentiments Luca peut-il avoir pendant ces semaines ? Entoure-les – il peut y en avoir beaucoup.",
+          "hinweis": "Il s’agit de Luca, pas de toi. Tu peux glisser tes questions de façon anonyme dans la boîte à questions."
+        },
+        {
+          "art": "gefuehle",
+          "modus": "einkreisen",
+          "spalten": 6,
+          "gefuehle": [
+            "froh",
+            "aufgeregt",
+            "nervoes",
+            "verlegen",
+            "traurig",
+            "enttaeuscht"
+          ],
+          "woerter": [
+            "content",
+            "excité",
+            "nerveux",
+            "gêné",
+            "triste",
+            "déçu"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Chagrin d’amour : qu’est-ce qui aide Luca maintenant – et qu’est-ce qui aggrave les choses ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "aide",
+            "aggrave"
+          ],
+          "items": [
+            "En parler avec un bon ami",
+            "Redemander à Nora tous les jours",
+            "Aller courir ou écouter de la musique à fond",
+            "Regarder son profil pendant des heures",
+            "Écrire ses sentiments sans les envoyer",
+            "Dire du mal de Nora"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Le consentement, ça veut dire",
+          "punkte": [
+            "Tout le monde veut ce qui se passe – librement et sans pression.",
+            "Dans le doute, demander : « Ça te va ? »",
+            "Un non est un non, même sans explication. Hésiter, se taire ou reculer d’un pas ne veut pas dire oui.",
+            "Chaque personne peut changer d’avis à tout moment.",
+            "C’est à chaque personne de dire qui elle aime – ou de ne rien dire."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "OK, d’abord demander ou stop ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "OK",
+            "d’abord demander",
+            "stop"
+          ],
+          "items": [
+            "Noah demande à Lena s’il peut s’asseoir près d’elle à la récré. Elle hoche la tête et se pousse.",
+            "Diogo veut poster dans le chat de classe une vidéo où Mila danse.",
+            "Sofia a dit à Rafael qu’elle ne voulait pas sortir avec lui. Il lui écrit quand même tous les soirs.",
+            "Emma raconte au groupe que Samuel est amoureux d’un garçon de la classe parallèle.",
+            "Elias veut faire un câlin à Zoé pour lui dire au revoir. Jusqu’ici, ils se sont toujours juste fait un signe de la main."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment Luca peut-il répondre au non de Nora – de façon à le respecter et à garder la tête haute ?"
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Nora",
+              "text": "Je t’aime bien, mais pas comme ça. Désolée."
+            },
+            {
+              "wer": "Luca"
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Aide et conseils – aussi de façon anonyme",
+          "eintraege": [
+            {
+              "name": "Urgences : secours et pompiers",
+              "nummer": "112"
+            },
+            {
+              "name": "Police",
+              "nummer": "113"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – aide par téléphone",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "BEE SECURE Helpline (images, chats, internet)",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "SePAS au lycée, médecin scolaire",
+              "nummer": "sur place"
+            },
+            {
+              "name": "Planning Familial (questions sur l’amour, le corps, les relations)",
+              "nummer": "__________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "À partir d’un personnage inventé, les jeunes décrivent l’amour naissant et le chagrin d’amour, appliquent la règle de base du consentement à des situations du quotidien et s’exercent à accepter un non.",
+        "ablauf": [
+          "Avant : lettre aux parents, direction (responsable) informée, règles affichées, boîte à questions prête.",
+          "Lire l’histoire, exercices 1 et 2 individuellement (7 min). Souligner : il s’agit de Luca, pas de vous.",
+          "Après le parcours du feu tricolore : encadré à retenir, exercice 3 (4 min). Corrigé : 1 OK, 2 d’abord demander, 3 stop, 4 stop – personne n’outera les autres, 5 d’abord demander.",
+          "Après « Accepter un non » : exercice 4 (3 min), deux ou trois volontaires lisent. Pour finir, montrer l’encadré d’aide."
+        ],
+        "hintergrund": "Collins (2003) décrit les sentiments amoureux à l’adolescence comme répandus et importants pour le développement : ils s’accompagnent d’émotions fortes et sont un terrain d’entraînement à la proximité et au respect. Le chagrin d’amour est donc à prendre au sérieux. Ici, le consentement s’exerce sur des situations du quotidien – câlin, photo, message, rumeur. Les programmes qui entraînent tôt ces compétences réduisent plus tard la violence dans les relations (Foshee et al., 2004). La fiche ne contient volontairement aucun contenu sexuel : il suit en troisième année du cours.",
+        "quellen": [
+          "Collins, W. A. (2003). More than myth: The developmental significance of romantic relationships during adolescence. Journal of Research on Adolescence, 13(1), 1–24.",
+          "Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624."
+        ],
+        "differenzierung": {
+          "leichter": "Lire l’exercice 3 ensemble et évaluer à main levée.",
+          "schwerer": "Écrire une situation « orange » personnelle – et comment on peut poser la question."
+        },
+        "impulse": [
+          "Pourquoi est-il si difficile d’accepter un non quand on est amoureux ?",
+          "Demander, est-ce peu romantique – ou respectueux ?"
+        ],
+        "tipps": [
+          "Ouvrir la boîte à questions en équipe ; répondre brièvement aux questions sur la sexualité ou orienter vers les services compétents.",
+          "Changer les prénoms si quelqu’un dans le groupe s’appelle ainsi."
+        ],
+        "achtung": "Agression, pression pour des images, violence dans une relation : en parler calmement après la séance, ne rien promettre, suivre la procédure de protection, informer le jour même la direction compétente (responsable) ; danger aigu : 112.",
+        "material": "Fiches, boîte à questions"
+      }
     }
   },
   {
@@ -1071,6 +1237,128 @@
         ],
         "achtung": "Ein Ende kann an andere Verluste erinnern. Bei anhaltender Traurigkeit, Rückzug oder Sätzen wie „Mich würde keiner vermissen“: Gespräch am selben Tag, die zuständige Leitung (Responsable) informieren, nach dem Schutzkonzept handeln.",
         "material": "Blatt für jede Person"
+      }
+    },
+    "fr": {
+      "titel": "Quand une amitié se termine",
+      "untertitel": "Les amitiés changent. Certaines se terminent – et ça peut faire mal. Après, il y a du nouveau.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Nora et Emma",
+          "bild": "figur:jana:traurig",
+          "text": "Nora et Emma étaient inséparables depuis le cycle 2. Au lycée, elles se sont retrouvées dans des classes différentes ; Emma joue maintenant au handball, Nora dessine des mangas. Après une dispute, Emma a raconté à d’autres quelque chose que Nora lui avait confié. Aujourd’hui, elles sont dans le même bus et regardent leur téléphone."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui a changé l’amitié de Nora et d’Emma ? Coche – et ajoute ce qu’il y a d’autre."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "nouvelle classe ou nouvelle école",
+            "nouveaux loisirs ou un club",
+            "de nouveaux amis ou de nouvelles amies",
+            "un déménagement",
+            "une dispute qui n’a pas été réglée",
+            "un secret raconté à d’autres",
+            "on a moins de choses à se dire",
+            "pression ou contrôle"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Le pendule",
+          "text": "Après une séparation, beaucoup de gens oscillent : tantôt la tristesse est grande, tantôt le regard se tourne vers l’avant. Les deux font partie du processus, et les deux aident. Ressentir en même temps tristesse, colère et soulagement, c’est normal."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Se séparer correctement : qu’est-ce qui est correct, qu’est-ce qui ne l’est pas ?"
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "correct",
+            "pas correct",
+            "ça dépend"
+          ],
+          "items": [
+            "Ne plus répondre du jour au lendemain, sans un mot",
+            "Dire : « Je sens qu’on s’est perdus de vue. »",
+            "Répéter les secrets de l’autre personne",
+            "Monter les autres contre elle",
+            "Dire bonjour quand même dans le bus ou à la récré",
+            "Prendre ses distances quand l’amitié te fait du mal, et en parler avec une personne de confiance"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Les nouveaux contacts commencent petit. Entoure l’échelon qui te semble faisable en ce moment."
+        },
+        {
+          "art": "leiter",
+          "stufen": 5,
+          "unten": "petit",
+          "oben": "osé",
+          "beispiele": [
+            "dire bonjour, sourire, faire un signe de tête",
+            "poser une question",
+            "se joindre aux autres à la récré",
+            "faire quelque chose ensemble : projet, club, jeu",
+            "inviter quelqu’un"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton premier pas sous forme de plan « si … alors » – sans noms."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si mercredi, à l’entraînement, je me retrouve à côté de la nouvelle,",
+              "dann": "je lui demande depuis combien de temps elle joue."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Si, après la fin d’une amitié, la solitude ou la tristesse durent longtemps, tu n’es pas la seule personne à le vivre. Parles-en à quelqu’un en qui tu as confiance – par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent pourquoi les amitiés changent et se terminent, distinguent une séparation correcte d’une séparation injuste et planifient un premier pas vers de nouveaux contacts.",
+        "ablauf": [
+          "Après la courbe de l’amitié : lire l’histoire, exercice 1 individuellement (3 min).",
+          "Expliquer le pendule (2 min), puis exercice 2 individuellement (4 min).",
+          "Discuter des points sur lesquels le groupe n’est pas d’accord – par exemple ne plus répondre du jour au lendemain.",
+          "Après le double cercle : exercices 3 et 4 individuellement (7 min)."
+        ],
+        "hintergrund": "Les amitiés à l’adolescence durent souvent moins longtemps qu’on ne le ressent ; changements d’école, nouveaux centres d’intérêt et confiance brisée en terminent beaucoup (Bagwell & Schmidt, 2011). La perte peut provoquer un vrai deuil, souvent mêlé de colère, de culpabilité ou de soulagement. Selon Stroebe et Schut (1999), après une perte, les gens oscillent entre regard en arrière et nouveau départ ; les deux aident à surmonter l’épreuve. De petites étapes planifiées concrètement augmentent la probabilité qu’on aborde réellement de nouvelles personnes (Gollwitzer, 1999).",
+        "quellen": [
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les exercices 2 et 3 ; lire les échelons de l’échelle à voix haute.",
+          "schwerer": "Écrire une phrase d’adieu correcte pour Nora – sans reproche, sans vengeance."
+        },
+        "impulse": [
+          "Une amitié peut-elle se terminer sans que personne soit fautif ?",
+          "Quand est-il juste de mettre fin à une amitié ?"
+        ],
+        "tipps": [
+          "Ne pas ramasser la feuille ; reprendre brièvement l’échelle et le plan la semaine suivante.",
+          "Avoir sous la main des offres de loisirs proches : clubs, maison des jeunes, école de musique."
+        ],
+        "achtung": "Une fin peut rappeler d’autres pertes. En cas de tristesse persistante, de repli ou de phrases comme « Personne ne me regretterait » : entretien le jour même, informer la direction compétente (responsable), agir selon la procédure de protection.",
+        "material": "Une feuille pour chaque personne"
       }
     }
   }

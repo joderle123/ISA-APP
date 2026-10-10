@@ -811,6 +811,75 @@
         ],
         "material": "Stift, Buch, Ball und T-Shirt zum Zeigen; Buntstifte; Bildkarten für Kisten und Regale"
       }
+    },
+    "fr": {
+      "titel": "Chaque chose à sa place",
+      "anleitung": "Nommer ensemble les images. L’enfant relie chaque objet à sa place. Puis parler de « D’abord – ensuite » : « D’abord on range, ensuite … » – l’enfant dessine ce qui vient après.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Où ça va ? Relie.", "symbole": ["zeigen", "verbinden"] },
+        {
+          "art": "bilder",
+          "modus": "nur",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:pencil", "text": "crayons" },
+            { "bild": "icon:book", "text": "livre" },
+            { "bild": "icon:ball-football", "text": "ballon" },
+            { "bild": "icon:shirt", "text": "T-shirt" }
+          ]
+        },
+        { "art": "abstand", "hoehe": 26 },
+        {
+          "art": "bilder",
+          "modus": "nur",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:basket", "text": "panier" },
+            { "bild": "icon:hanger", "text": "portemanteau" },
+            { "bild": "icon:books", "text": "étagère" },
+            { "bild": "icon:bucket", "text": "pot" }
+          ]
+        },
+        { "art": "aufgabe", "text": "D’abord ranger, ensuite … ? Dessine.", "symbole": ["malen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:mia:ruhig:geben"], "requisit": "icon:basket", "blase": "keine", "untertitel": "D’abord : ranger" },
+            { "figuren": ["figur:mia:froh:jubeln"], "blase": "keine", "untertitel": "C’est fini." },
+            { "leer": true, "untertitel": "Ensuite : …" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants associent des objets du quotidien à leur place fixe et découvrent avec « D’abord – ensuite » un déroulement clair pour ranger.",
+        "ablauf": [
+          "Entrée en matière : montrer un crayon, un livre, un ballon et un T-shirt. Demander : « Où habite le crayon chez nous ? » Les enfants apportent les objets à leur place.",
+          "Tâche 1 : nommer les images. Les enfants relient d’abord avec le doigt, puis avec le crayon.",
+          "Tâche 2 : dire « D’abord on range, ensuite … ». Chaque enfant dessine ce qu’il aime faire après.",
+          "Marquer les caisses et les étagères de la salle avec les mêmes images.",
+          "Pour le vrai rangement, toujours annoncer de la même façon : « D’abord ranger, ensuite … » – et tenir le « ensuite » de façon fiable."
+        ],
+        "hintergrund": "Les enfants d’âge préscolaire comprennent le mieux les déroulements grâce aux images et à la répétition régulière. Quand chaque objet a une place repérée, ils peuvent ranger de façon autonome sans que les adultes annoncent chaque étape. Les cartes-images et les plans de déroulement facilitent la compréhension des consignes et réduisent le stress lors des transitions (Hodgdon, 1995 ; Mesibov et al., 2004). « D’abord – ensuite » s’appuie sur un principe d’apprentissage simple : une activité moins appréciée est suivie de façon fiable d’une activité appréciée (Premack, 1959). Il est décisif que le « ensuite » vienne vraiment – sinon l’annonce perd son effet.",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer.",
+          "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer avec deux paires ; associer de vrais objets plutôt que des images.",
+          "schwerer": "L’enfant cherche d’autres objets dans la salle et montre leur place."
+        },
+        "impulse": [
+          "Où habite ton jouet préféré ?",
+          "Qu’aimes-tu faire après avoir rangé ?"
+        ],
+        "tipps": [
+          "Toujours annoncer le rangement avec le même signal, par exemple une courte chanson.",
+          "Donner de petites missions (« Tu ranges les ballons. ») plutôt que « Range tout. »"
+        ],
+        "material": "Crayon, livre, ballon et T-shirt à montrer ; crayons de couleur ; cartes-images pour caisses et étagères"
+      }
     }
   },
   {
