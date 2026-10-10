@@ -1659,7 +1659,7 @@
         {
           "art": "ankreuzen",
           "titel": "Informiert:",
-          "items": ["Eltern", "Leitung (Responsable)", "Klassenlehrperson", "SePAS oder ISA-Team"],
+          "items": ["Eltern", "Leitung (Responsable)", "Klassenlehrperson", "SePAS oder Förderteam"],
           "spalten": 2
         }
       ],
@@ -1724,7 +1724,7 @@
         {
           "art": "ankreuzen",
           "titel": "Informés :",
-          "items": ["Parents", "Direction (responsable)", "Titulaire de classe", "SePAS ou équipe ISA"],
+          "items": ["Parents", "Direction (responsable)", "Titulaire de classe", "SePAS ou équipe de soutien"],
           "spalten": 2
         }
       ],
