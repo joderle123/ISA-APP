@@ -429,7 +429,8 @@
   ],
   "material": [
    "papier",
-   "stifte"
+   "stifte",
+   "karten"
   ],
   "ort": "raum",
   "fr": {
@@ -877,25 +878,6 @@
      ]
     },
     {
-     "art": "dialog",
-     "zeilen": [
-      {
-       "wer": "Später-Stimme",
-       "text": "Erst noch kurz aufs Handy, dann fang ich an."
-      },
-      {
-       "wer": "Anfangen-Stimme"
-      },
-      {
-       "wer": "Später-Stimme",
-       "text": "Aber ich bin grad echt müde."
-      },
-      {
-       "wer": "Anfangen-Stimme"
-      }
-     ]
-    },
-    {
      "art": "satzanfaenge",
      "items": [
       "Meine stärkste Antwort – eine, die ich mir selbst glaube:"
@@ -935,25 +917,6 @@
      ]
     },
     {
-     "art": "dialog",
-     "zeilen": [
-      {
-       "wer": "Voix « plus tard »",
-       "text": "D’abord un petit coup d’œil au portable, après je commence."
-      },
-      {
-       "wer": "Voix « commencer »"
-      },
-      {
-       "wer": "Voix « plus tard »",
-       "text": "Mais là, je n’ai vraiment plus d’énergie."
-      },
-      {
-       "wer": "Voix « commencer »"
-      }
-     ]
-    },
-    {
      "art": "satzanfaenge",
      "items": [
       "Ma réponse la plus forte – une que je crois moi-même :"
@@ -970,11 +933,11 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Zweimal vier Minuten am Stück",
-  "text": "Der oder die Jugendliche nimmt eine echte Schulsache (Vokabeln, Mathe, einen Lesetext). Ein Timer wird auf vier Minuten gestellt. Jedes Mal, wenn die Gedanken abschweifen, wird ein Strich an den Blattrand gemacht und weitergearbeitet, ohne sich zu ärgern. Danach wird angeschaut: Wie viele Striche, und was hat gezogen (Handy, Hunger, ein Gedanke)? Gemeinsam wird eine Bremse für die stärkste Ablenkung gewählt, etwa Handy in die Tasche oder ein Zettel als Gedanken-Parkplatz. Dann folgt eine zweite Runde mit vier Minuten, am Ende werden beide Strichzahlen nebeneinandergelegt.",
+  "text": "Der oder die Jugendliche nimmt eine echte Schulsache, die gerade da ist (Vokabeln, Mathe, einen Lesetext), oder schreibt zehn Wörter sauber ab. Ein Timer wird auf vier Minuten gestellt. Jedes Mal, wenn die Gedanken abschweifen, wird ein Strich an den Blattrand gemacht und weitergearbeitet, ohne sich zu ärgern. Danach wird angeschaut: Wie viele Striche, und was hat gezogen (Handy, Hunger, ein Gedanke)? Gemeinsam wird eine Bremse für die stärkste Ablenkung gewählt, etwa Handy in die Tasche oder ein Zettel als Gedanken-Parkplatz. Dann folgt eine zweite Runde mit vier Minuten; am Ende wird nur erzählt, was diesmal anders war, verglichen wird nichts.",
   "sagen": [
    "Abschweifen ist normal. Es geht nicht um null Striche, sondern ums Zurückkommen.",
    "Was hat dich am meisten weggezogen – und was wäre die kleinste Bremse dagegen?",
-   "Wie war die zweite Runde im Vergleich zur ersten? Nur beobachten, nicht bewerten."
+   "Was war in der zweiten Runde anders? Nur beobachten, nicht bewerten."
   ],
   "wennEsKippt": "Sind vier Minuten zu lang, wird mit zwei begonnen; bei knapper Zeit reicht die erste Runde mit der Bremse. Gibt es keine Schulsache, ein einfaches Bild sorgfältig abzeichnen oder eine Wörterliste sauber abschreiben.",
   "werkzeug": {
@@ -982,7 +945,7 @@
    "fr": "Quatre minutes d’affilée : marquer chaque décrochage d’un trait"
   },
   "uebertragbar": true,
-  "vorbereitung": "Eine kleine Schulaufgabe mitbringen lassen (Vokabeln, Mathe oder ein Lesetext) – oder diese Ersatzaufgabe: zehn Wörter sauber abschreiben.",
+  "vorbereitung": "Eine kleine Schulaufgabe bereithalten (Vokabeln, Mathe oder ein Lesetext) – oder die Ersatzaufgabe nehmen: zehn Wörter sauber abschreiben.",
   "rolle": [
    "kern"
   ],
@@ -1034,14 +997,14 @@
   "ort": "raum",
   "fr": {
    "titel": "Deux fois quatre minutes d’affilée",
-   "text": "Le ou la jeune prend un vrai travail scolaire (vocabulaire, maths, texte à lire). Un minuteur est réglé sur quatre minutes. Chaque fois que l’esprit s’égare, un trait est fait dans la marge et le travail reprend, sans s’énerver. Ensuite, on regarde : combien de traits, et qu’est-ce qui a attiré l’attention (portable, faim, une pensée) ? Ensemble, on choisit un frein contre la distraction la plus forte, par exemple le portable dans le sac ou un papier « parking à pensées ». Puis vient un deuxième tour de quatre minutes ; à la fin, on pose les deux nombres de traits côte à côte.",
+   "text": "Le ou la jeune prend un vrai travail scolaire qui est à portée de main (vocabulaire, maths, texte à lire) ou recopie proprement dix mots. Un minuteur est réglé sur quatre minutes. Chaque fois que l’esprit s’égare, un trait est fait dans la marge et le travail reprend, sans s’énerver. Ensuite, on regarde : combien de traits, et qu’est-ce qui a attiré l’attention (portable, faim, une pensée) ? Ensemble, on choisit un frein contre la distraction la plus forte, par exemple le portable dans le sac ou un papier « parking à pensées ». Puis vient un deuxième tour de quatre minutes ; à la fin, on raconte seulement ce qui était différent cette fois, sans rien comparer.",
    "sagen": [
     "S’égarer, c’est normal. Le but n’est pas zéro trait, mais de revenir.",
     "Qu’est-ce qui t’a le plus tiré ailleurs, et quel serait le plus petit frein contre ça ?",
-    "Comment s’est passé le deuxième tour par rapport au premier ? On observe, on ne juge pas."
+    "Qu’est-ce qui était différent au deuxième tour ? On observe, on ne juge pas."
    ],
    "wennEsKippt": "Si quatre minutes, c’est trop long, on commence par deux ; si le temps est court, le premier tour avec le frein suffit. S’il n’y a pas de travail scolaire, le ou la jeune dessine soigneusement un dessin simple ou recopie proprement une liste de mots.",
-   "vorbereitung": "Demander d’apporter un petit travail scolaire (vocabulaire, maths ou un texte à lire) – ou prendre ce travail de remplacement : recopier proprement dix mots."
+   "vorbereitung": "Un petit travail scolaire à portée de main (vocabulaire, maths ou un texte à lire) – ou recopier proprement dix mots."
   },
   "tagesform": [
    "aufgedreht"
@@ -2978,12 +2941,13 @@
   ],
   "material": [
    "papier",
-   "stifte"
+   "stifte",
+   "karten"
   ],
   "ort": "raum",
   "fr": {
    "titel": "Quel rôle joues-tu ?",
-   "text": "L’adulte écrit huit rôles sur des fiches : le moteur, le clown, le calme, l’organisateur, le critique, le médiateur, le suiveur, l’invisible. Le ou la jeune attribue les fiches à trois endroits où il ou elle est avec d’autres, par exemple le cours, l’entraînement, les amis. Pour chaque rôle choisi, une courte question : qu’est-ce que ce rôle apporte aux autres, et qu’est-ce qu’il te coûte ? Puis le ou la jeune choisit un rôle qu’il ou elle aimerait prendre plus souvent et décrit un comportement concret, par exemple : « À l’entraînement, je montre le vestiaire à un nouveau. »",
+   "text": "L’adulte écrit huit rôles sur des fiches : le moteur, le clown, le calme, l’organisateur, le critique, le médiateur, le suiveur, l’invisible. Le ou la jeune attribue les fiches à trois endroits où il ou elle est avec d’autres, par exemple le cours, l’entraînement, les amis. Pour chaque rôle choisi, une courte question : qu’est-ce que ce rôle apporte aux autres, et qu’est-ce qu’il te coûte ? Puis le ou la jeune choisit un rôle qu’on aimerait prendre plus souvent et décrit un comportement concret, par exemple : « À l’entraînement, je montre le vestiaire à un nouveau. »",
    "sagen": [
     "Là où tu es avec d’autres, tu as souvent un rôle, sans même t’en rendre compte. Aucun rôle n’est seulement bon ou seulement mauvais.",
     "Quel rôle aimerais-tu avoir plus souvent – et qu’est-ce que tu ferais alors concrètement autrement ?",
@@ -3527,7 +3491,7 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Mehr als gut oder schlecht",
-  "text": "Die Fachkraft legt vier Karteikarten mit den Grundwörtern „froh“, „wütend“, „traurig“ und „nervös“ hin. Gemeinsam werden zu jedem Wort drei feinere gesucht, auf Karten notiert und von schwach nach stark gelegt (z. B. genervt – gereizt – sauer – außer sich). Dann liest die Fachkraft eine Szene vor: „Der Test, für den du die halbe Nacht gelernt hast, wird verschoben.“ Der oder die Jugendliche wählt zwei Karten und baut daraus einen Satz: „Ich bin erleichtert, aber auch gereizt, weil …“. Es folgen zwei weitere Szenen (eine Freundin zieht weg; jemand schreibt „Wir müssen reden“), zum Schluss eine eigene oder erfundene.",
+  "text": "Die Fachkraft legt vier Karteikarten mit den Grundwörtern „froh“, „wütend“, „traurig“ und „nervös“ hin. Gemeinsam werden zu jedem Wort drei feinere gesucht, auf Karten notiert und von schwach nach stark gelegt (z. B. genervt – gereizt – sauer – außer sich). Dann liest die Fachkraft eine Szene vor: „Der Test, für den du die halbe Nacht gelernt hast, wird verschoben.“ Der oder die Jugendliche wählt zwei Karten und baut daraus einen Satz: „Ich bin erleichtert, aber auch gereizt, weil …“. Es folgen zwei weitere Szenen (das Training fällt aus; der Bus fährt einem vor der Nase weg), zum Schluss eine eigene oder erfundene.",
   "sagen": [
    "„Gut“ oder „schlecht“ sagt fast nichts – mal sehen, wie viele Abstufungen wir finden.",
    "Welche zwei Karten passen hier gleichzeitig? Oft ist es nicht nur ein Gefühl.",
@@ -3581,13 +3545,13 @@
    "schreiben"
   ],
   "material": [
-   "papier",
+   "karten",
    "stifte"
   ],
   "ort": "raum",
   "fr": {
    "titel": "Plus que bien ou mal",
-   "text": "L’adulte écrit « content », « en colère », « triste » et « stressé » sur quatre fiches. Ensemble, on cherche pour chaque mot trois nuances, notées sur des fiches et rangées de la plus faible à la plus forte (par ex. agacé – irrité – furieux – hors de soi). Puis l’adulte lit une situation : « Le test pour lequel tu as révisé la moitié de la nuit est reporté. » Le ou la jeune choisit deux fiches et construit une phrase : « Je suis soulagé, mais aussi agacé, parce que… ». Suivent deux autres situations (une amie déménage ; quelqu’un écrit « Il faut qu’on parle »), puis une situation personnelle ou inventée.",
+   "text": "L’adulte écrit « content », « en colère », « triste » et « stressé » sur quatre fiches. Ensemble, on cherche pour chaque mot trois nuances, notées sur des fiches et rangées de la plus faible à la plus forte (par ex. agacé – irrité – furieux – hors de soi). Puis l’adulte lit une situation : « Le test pour lequel tu as révisé la moitié de la nuit est reporté. » Le ou la jeune choisit deux fiches et construit une phrase : « Je suis soulagé, mais aussi agacé, parce que… ». Suivent deux autres situations (l’entraînement est annulé ; le bus part juste devant soi), puis une situation personnelle ou inventée.",
    "sagen": [
     "« Bien » ou « mal », ça ne dit presque rien – voyons combien de nuances on trouve.",
     "Quelles deux fiches vont ensemble ici ? Souvent, il n’y a pas qu’un seul sentiment.",
@@ -3615,17 +3579,16 @@
    "de": [
     {
      "art": "text",
-     "text": "Wörter zur Auswahl, von schwach nach stark. Froh: zufrieden, erleichtert, begeistert. Wütend: genervt, gereizt, sauer, außer sich. Traurig: enttäuscht, geknickt, niedergeschlagen. Nervös: angespannt, unruhig, panisch."
+     "text": "Wörter zur Auswahl, von schwach → stark. Froh: zufrieden → erleichtert → begeistert. Wütend: genervt → gereizt → sauer → außer sich. Traurig: enttäuscht → geknickt → niedergeschlagen. Nervös: angespannt → unruhig → panisch."
     },
     {
      "art": "ankreuzen",
-     "titel": "Szene: Eine Freundin zieht weg. Kreuz zwei Wörter an, die zusammen passen.",
+     "titel": "Szene: Das Konzert, auf das du dich lange gefreut hast, wird verschoben. Kreuz zwei Wörter an, die zusammen passen.",
      "items": [
-      "froh für sie",
       "enttäuscht",
+      "gereizt",
       "geknickt",
       "unruhig",
-      "gereizt",
       "erleichtert",
       "etwas anderes"
      ],
@@ -3652,17 +3615,16 @@
    "fr": [
     {
      "art": "text",
-     "text": "Des mots au choix, du plus faible au plus fort. Joie : du contentement, du soulagement, de l’enthousiasme. Colère : de l’agacement, de l’irritation, de la fureur, de la rage. Tristesse : de la déception, de l’abattement, du découragement. Nervosité : de la tension, de l’agitation, de la panique."
+     "text": "Des mots au choix, du plus faible au plus fort. Joie : contentement → soulagement → enthousiasme. Colère : agacement → irritation → fureur → rage. Tristesse : déception → abattement → découragement. Nervosité : tension → agitation → panique."
     },
     {
      "art": "ankreuzen",
-     "titel": "Situation : une amie déménage. Coche deux mots qui vont ensemble.",
+     "titel": "Situation : le concert dont tu t’es longtemps réjoui est reporté. Coche deux mots qui vont ensemble.",
      "items": [
-      "de la joie pour elle",
       "de la déception",
+      "de l’irritation",
       "de l’abattement",
       "de l’agitation",
-      "de l’irritation",
       "du soulagement",
       "autre chose"
      ],
@@ -3976,7 +3938,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Eine zweite, erfundene Nachricht: „Na toll, danke fürs Warten lassen. Zwanzig Minuten an der Haltestelle gestanden, wie immer.“ Schreib sie unten in drei Teilen neu, so, wie die Person sie ruhiger hätte schreiben können."
+     "text": "Eine erfundene Nachricht: „Na toll, danke fürs Warten lassen. Zwanzig Minuten an der Haltestelle gestanden, wie immer.“"
     },
     {
      "art": "ankreuzen",
@@ -3992,25 +3954,25 @@
      "spalten": 3
     },
     {
-     "art": "frage",
-     "text": "Was passiert ist:",
-     "linien": 1
+     "art": "ankreuzen",
+     "titel": "Welche Fassung ist ruhiger und ohne Vorwurf? Kreuz an.",
+     "items": [
+      "„Na toll, wieder mal.“",
+      "„Ich habe zwanzig Minuten gewartet und war genervt. Sag mir bitte vorher Bescheid.“",
+      "„Du bist echt unzuverlässig.“"
+     ],
+     "spalten": 1
     },
     {
      "art": "frage",
-     "text": "Wie es mir damit geht:",
-     "linien": 1
-    },
-    {
-     "art": "frage",
-     "text": "Was ich mir wünsche:",
-     "linien": 1
+     "text": "Schreib die Nachricht ruhiger neu, in drei Teilen: was passiert ist – wie es mir damit geht – was ich mir wünsche.",
+     "linien": 3
     }
    ],
    "fr": [
     {
      "art": "text",
-     "text": "Un deuxième message inventé : « Super, merci de m’avoir fait attendre. Vingt minutes à l’arrêt de bus, comme toujours. » Réécris-le en dessous, en trois parties, comme la personne aurait pu l’écrire plus calmement."
+     "text": "Un message inventé : « Super, merci de m’avoir fait attendre. Vingt minutes à l’arrêt de bus, comme toujours. »"
     },
     {
      "art": "ankreuzen",
@@ -4026,19 +3988,19 @@
      "spalten": 3
     },
     {
-     "art": "frage",
-     "text": "Ce qui s’est passé :",
-     "linien": 1
+     "art": "ankreuzen",
+     "titel": "Quelle version est plus calme, sans reproche ? Coche.",
+     "items": [
+      "« Super, encore une fois. »",
+      "« J’ai attendu vingt minutes et ça m’a agacé. Dis-moi avant, s’il te plaît. »",
+      "« Tu n’es vraiment pas fiable. »"
+     ],
+     "spalten": 1
     },
     {
      "art": "frage",
-     "text": "Ce que ça me fait :",
-     "linien": 1
-    },
-    {
-     "art": "frage",
-     "text": "Ce que je souhaite :",
-     "linien": 1
+     "text": "Réécris le message plus calmement, en trois parties : ce qui s’est passé – ce que ça me fait – ce que je souhaite.",
+     "linien": 3
     }
    ]
   }
@@ -4137,7 +4099,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Zwei erfundene Freunde streiten, weil ein Treffen abgesagt wurde. Du sitzt auf dem dritten Stuhl, seitlich daneben. Weiter unten kommt ein zweiter Streit."
+     "text": "Zwei erfundene Freunde streiten, weil ein Treffen abgesagt wurde. Du sitzt auf dem dritten Stuhl, seitlich daneben."
     },
     {
      "art": "zuordnen",
@@ -4187,7 +4149,7 @@
    "fr": [
     {
      "art": "text",
-     "text": "Deux amis inventés se disputent parce qu’un rendez-vous a été annulé. Tu es sur la troisième chaise, un peu à l’écart. Plus bas, il y a une deuxième dispute."
+     "text": "Deux amis inventés se disputent parce qu’un rendez-vous a été annulé. Tu es sur la troisième chaise, un peu à l’écart."
     },
     {
      "art": "zuordnen",
@@ -4243,7 +4205,7 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Zehn Chips für das, was mir wichtig ist",
-  "text": "Die Fachkraft schreibt in zwei Minuten acht Wertekarten auf Zettel: Freundschaft, Ehrlichkeit, Freiheit, Erfolg, Gerechtigkeit, Sicherheit, Spaß – und eine leere Karte für einen eigenen Wert. Der oder die Jugendliche verteilt zehn Spielkarten als Chips darauf – mehrere auf einen Wert sind erlaubt, manche bleiben leer. Dann zwei Fragen: Woran würde man im Alltag merken, dass der Wert mit den meisten Chips wichtig ist? Und: Wann geraten zwei dieser Werte aneinander (z. B. Ehrlichkeit gegen Freundschaft, wenn ein Freund schummelt)? Zum Schluss darf umverteilt werden.",
+  "text": "Die Fachkraft schreibt in zwei Minuten acht Wertekarten auf Zettel: Freundschaft, Ehrlichkeit, Freiheit, Erfolg, Gerechtigkeit, Zusammenhalt, Spaß – und eine leere Karte für einen eigenen Wert. Der oder die Jugendliche verteilt zehn Spielkarten als Chips darauf – mehrere auf einen Wert sind erlaubt, manche bleiben leer. Dann zwei Fragen: Woran würde man im Alltag merken, dass der Wert mit den meisten Chips wichtig ist? Und: Wann geraten zwei dieser Werte aneinander (z. B. Ehrlichkeit gegen Freundschaft, wenn ein Freund schummelt)? Zum Schluss darf umverteilt werden.",
   "sagen": [
    "Es gibt hier keine richtigen Werte – nur deine Verteilung, und die darf sich ändern.",
    "Woran würde ein Freund merken, dass dir das wichtig ist?",
@@ -4303,7 +4265,7 @@
   "ort": "raum",
   "fr": {
    "titel": "Dix jetons pour ce qui compte",
-   "text": "L’adulte écrit en deux minutes huit cartes de valeurs sur des papiers : amitié, honnêteté, liberté, réussite, justice, sécurité, plaisir – et une carte vide pour une valeur personnelle. Le ou la jeune répartit dix cartes à jouer comme jetons – plusieurs sur une même valeur, c’est permis, certaines restent vides. Puis deux questions : à quoi verrait-on au quotidien que la valeur qui a le plus de jetons compte ? Et quand deux de ces valeurs entrent-elles en conflit (par ex. honnêteté contre amitié, quand un ami triche) ? Pour finir, on peut redistribuer.",
+   "text": "L’adulte écrit en deux minutes huit cartes de valeurs sur des papiers : amitié, honnêteté, liberté, réussite, justice, solidarité, plaisir – et une carte vide pour une valeur personnelle. Le ou la jeune répartit dix cartes à jouer comme jetons – plusieurs sur une même valeur, c’est permis, certaines restent vides. Puis deux questions : à quoi verrait-on au quotidien que la valeur qui a le plus de jetons compte ? Et quand deux de ces valeurs entrent-elles en conflit (par ex. honnêteté contre amitié, quand un ami triche) ? Pour finir, on peut redistribuer.",
    "sagen": [
     "Il n’y a pas de bonnes valeurs ici – seulement ta répartition, et elle a le droit de changer.",
     "À quoi un ami remarquerait-il que c’est important pour toi ?",
@@ -4328,7 +4290,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Die Werte auf den Karten: Freundschaft, Ehrlichkeit, Freiheit, Erfolg, Gerechtigkeit, Sicherheit, Spaß – und ein eigener Wert. Du kannst das Blatt auch für eine erfundene Person ausfüllen, z. B. eine Fußballerin vor einem Vereinswechsel."
+     "text": "Die Werte auf den Karten: Freundschaft, Ehrlichkeit, Freiheit, Erfolg, Gerechtigkeit, Zusammenhalt, Spaß – und ein eigener Wert. Du kannst das Blatt auch für eine erfundene Person ausfüllen, z. B. eine Fußballerin vor einem Vereinswechsel."
     },
     {
      "art": "satzanfaenge",
@@ -4344,10 +4306,10 @@
      "items": [
       "Ehrlichkeit gegen Freundschaft",
       "Spaß gegen Erfolg",
-      "Freiheit gegen Sicherheit",
+      "Freiheit gegen Zusammenhalt",
       "Erfolg gegen Gerechtigkeit",
       "Freundschaft gegen Freiheit",
-      "Sicherheit gegen Spaß",
+      "Zusammenhalt gegen Spaß",
       "etwas anderes"
      ],
      "spalten": 2
@@ -4368,7 +4330,7 @@
    "fr": [
     {
      "art": "text",
-     "text": "Les valeurs sur les cartes : amitié, honnêteté, liberté, réussite, justice, sécurité, plaisir – plus une valeur à toi. Tu peux aussi remplir la feuille pour une personne inventée, par exemple une footballeuse avant un transfert."
+     "text": "Les valeurs sur les cartes : amitié, honnêteté, liberté, réussite, justice, solidarité, plaisir – plus une valeur à toi. Tu peux aussi remplir la feuille pour une personne inventée, par exemple une footballeuse avant un transfert."
     },
     {
      "art": "satzanfaenge",
@@ -4384,10 +4346,10 @@
      "items": [
       "honnêteté contre amitié",
       "plaisir contre réussite",
-      "liberté contre sécurité",
+      "liberté contre solidarité",
       "réussite contre justice",
       "amitié contre liberté",
-      "sécurité contre plaisir",
+      "solidarité contre plaisir",
       "autre chose"
      ],
      "spalten": 2
@@ -4652,7 +4614,7 @@
   "ort": "raum",
   "fr": {
    "titel": "Entrer dans une conversation",
-   "text": "L’adulte joue un moment de pause : il ou elle discute avec un interlocuteur imaginaire, assis sur une chaise vide, du match de handball du week-end. Le ou la jeune arrive et essaie l’une après l’autre trois manières d’entrer dans l’échange : rebondir sur ce qui est dit (« J’ai vu le match aussi, l’égalisation à la fin, c’était fou »), poser une vraie question (« Tu joues toi aussi ? »), apporter quelque chose de soi. Après chaque essai, une courte question : c’était comment ? Puis le sujet change (un nouveau jeu en ligne, la place de stage) et le ou la jeune choisit l’entrée qui lui convient le mieux.",
+   "text": "L’adulte joue un moment de pause et discute avec un interlocuteur imaginaire, assis sur une chaise vide, du match de handball du week-end. Le ou la jeune arrive et essaie l’une après l’autre trois manières d’entrer dans l’échange : rebondir sur ce qui est dit (« J’ai vu le match aussi, l’égalisation à la fin, c’était fou »), poser une vraie question (« Tu joues toi aussi ? »), apporter quelque chose de soi. Après chaque essai, une courte question : c’était comment ? Puis le sujet change (un nouveau jeu en ligne, la place de stage) et le ou la jeune choisit l’entrée qui lui convient le mieux.",
    "sagen": [
     "Personne n’attend la phrase parfaite – une petite relance suffit largement.",
     "Quelle entrée te ressemble le plus ?",
@@ -4843,7 +4805,8 @@
   ],
   "material": [
    "papier",
-   "stifte"
+   "stifte",
+   "karten"
   ],
   "ort": "raum",
   "fr": {
@@ -5365,7 +5328,8 @@
   ],
   "material": [
    "papier",
-   "stifte"
+   "stifte",
+   "karten"
   ],
   "ort": "raum",
   "fr": {
@@ -6067,7 +6031,8 @@
   ],
   "material": [
    "papier",
-   "stifte"
+   "stifte",
+   "karten"
   ],
   "ort": "raum",
   "fr": {
@@ -7286,7 +7251,7 @@
   "ort": "raum",
   "fr": {
    "titel": "La meilleure version de l’autre camp",
-   "text": "Le ou la jeune choisit un sujet sur lequel il ou elle a un avis tranché, ou un sujet de cette liste : voter à 16 ans, interdire le portable au lycée, les réseaux sociaux à partir de 15 ans, supprimer les notes. En haut de la feuille : son avis en une phrase. En dessous, les trois meilleurs arguments du camp opposé – si honnêtes que quelqu’un de ce camp dirait : « oui, c’est exactement pour ça ». L’adulte joue cette personne et dit, pour chaque argument, s’il ou elle le signerait tel quel. Puis on note à côté de chaque argument la valeur qui se cache derrière (sécurité, liberté, justice…). Pour finir : ton avis a-t-il bougé, même un peu, ou est-il maintenant mieux argumenté ?",
+   "text": "Le ou la jeune choisit un sujet sur lequel il ou elle a un avis tranché, ou un sujet de cette liste : voter à 16 ans, interdire le portable au lycée, les réseaux sociaux à partir de 15 ans, supprimer les notes. En haut de la feuille : son avis en une phrase. En dessous, les trois meilleurs arguments du camp opposé – si honnêtes que quelqu’un de ce camp dirait : « oui, c’est exactement pour ça ». L’adulte joue cette personne et dit, pour chaque argument, si cette personne le signerait tel quel. Puis on note à côté de chaque argument la valeur qui se cache derrière (sécurité, liberté, justice…). Pour finir : ton avis a-t-il bougé, même un peu, ou est-il maintenant mieux argumenté ?",
    "sagen": [
     "Imagine que tu es l’avocat ou l’avocate de l’autre camp et que tu veux gagner l’affaire.",
     "Le but, ce n’est pas que tu changes d’avis. Quand on comprend vraiment l’autre côté, on argumente mieux."
@@ -7821,7 +7786,7 @@
   "ort": "raum",
   "fr": {
    "titel": "Juste spectateur ? Repérer le harcèlement en ligne",
-   "text": "L’adulte raconte un cas inventé : dans un grand chat, quelqu’un poste depuis deux semaines des photos de Jana avec des commentaires moqueurs. Beaucoup réagissent avec des émojis rieurs, Jana n’écrit plus rien. Avec trois questions, le ou la jeune vérifie si c’est encore une blague : est-ce que ça se répète ? Est-ce toujours la même personne qui est visée ? Peut-elle se défendre ? Puis on dessine une échelle sur une feuille : en bas les petits pas (ne pas rire, écrire à Jana en privé), en haut les grands (faire des captures d’écran, les montrer à un adulte). On distingue « balancer » et « chercher de l’aide ». Pour finir : à qui le ou la jeune en parlerait-il ou elle, au lycée ou ailleurs ?",
+   "text": "L’adulte raconte un cas inventé : dans un grand chat, quelqu’un poste depuis deux semaines des photos de Jana avec des commentaires moqueurs. Beaucoup réagissent avec des émojis rieurs, Jana n’écrit plus rien. Avec trois questions, le ou la jeune vérifie si c’est encore une blague : est-ce que ça se répète ? Est-ce toujours la même personne qui est visée ? Peut-elle se défendre ? Puis on dessine une échelle sur une feuille : en bas les petits pas (ne pas rire, écrire à Jana en privé), en haut les grands (faire des captures d’écran, les montrer à un adulte). On distingue « balancer » et « chercher de l’aide ». Pour finir : à qui le ou la jeune en parlerait-il, au lycée ou ailleurs ?",
    "sagen": [
     "Je ne te demande pas ce que toi, tu as vécu – on reste avec Jana.",
     "Balancer, c’est vouloir faire punir quelqu’un. Chercher de l’aide, c’est sortir quelqu’un d’une situation."
@@ -8197,7 +8162,7 @@
   "ort": "raum",
   "fr": {
    "titel": "Coach pendant dix minutes",
-   "text": "Le ou la jeune apprend à l’adulte quelque chose qu’il ou elle sait bien faire : un tour de cartes, une astuce avec le ballon, un nœud, une technique de dessin, une tactique dans un jeu. L’adulte joue volontairement quelqu’un qui n’a jamais essayé, fait exactement ce qu’on lui dit et commet les erreurs typiques d’un débutant. Après environ six minutes, on fait le point : qu’est-ce qui a aidé à expliquer (montrer, avancer par petites étapes, vérifier, être patient) ? Qu’est-ce qui était difficile ? Puis le ou la jeune estime sur une échelle de 1 à 10 (1 = je débute, 10 = je le fais les yeux fermés) à quel point il ou elle maîtrise ce truc et justifie le chiffre : à quoi ça se voit ? Que faudrait-il pour arriver à 10 ?",
+   "text": "Le ou la jeune apprend à l’adulte quelque chose qu’on sait bien faire : un tour de cartes, une astuce avec le ballon, un nœud, une technique de dessin, une tactique dans un jeu. L’adulte joue volontairement quelqu’un qui n’a jamais essayé, fait exactement ce qu’on lui dit et commet les erreurs typiques d’un débutant. Après environ six minutes, on fait le point : qu’est-ce qui a aidé à expliquer (montrer, avancer par petites étapes, vérifier, être patient) ? Qu’est-ce qui était difficile ? Puis le ou la jeune estime sur une échelle de 1 à 10 (1 = je débute, 10 = je le fais les yeux fermés) à quel point il ou elle maîtrise ce truc et justifie le chiffre : à quoi ça se voit ? Que faudrait-il pour arriver à 10 ?",
    "sagen": [
     "Aujourd’hui, c’est toi le coach. Moi, je ne sais pas faire – explique-moi pour que j’y arrive vraiment.",
     "Qu’est-ce que tu as fait quand j’ai mal compris – et qu’est-ce qui a marché ?"
@@ -8365,7 +8330,7 @@
   "ort": "raum",
   "fr": {
    "titel": "La carte joueur d’un modèle",
-   "text": "Le ou la jeune choisit une personne qu’il ou elle admire – dans le sport, la musique, sur internet, au club ou dans son entourage. Sur une feuille, il ou elle dessine une carte joueur comme les cartes de foot à collectionner, mais avec quatre valeurs de comportement au lieu de vitesse et tir, par ex. « reste calme sous pression », « assume ses erreurs », « aide les nouveaux », avec une note de 1 à 99. Ensemble, on vérifie : est-ce que j’admire cette personne pour la célébrité et l’argent, ou pour ce qu’elle fait ? Y a-t-il des côtés que je ne veux pas reprendre ? Pour finir, le ou la jeune choisit une valeur et décrit à quoi elle ressemblerait dans sa vie : quand, où, avec qui.",
+   "text": "Le ou la jeune choisit une personne qu’on admire – dans le sport, la musique, sur internet, au club ou dans son entourage. Sur une feuille, il ou elle dessine une carte joueur comme les cartes de foot à collectionner, mais avec quatre valeurs de comportement au lieu de vitesse et tir, par ex. « reste calme sous pression », « assume ses erreurs », « aide les nouveaux », avec une note de 1 à 99. Ensemble, on vérifie : est-ce que j’admire cette personne pour la célébrité et l’argent, ou pour ce qu’elle fait ? Y a-t-il des côtés que je ne veux pas reprendre ? Pour finir, le ou la jeune choisit une valeur et décrit à quoi elle ressemblerait dans sa vie : quand, où, avec qui.",
    "sagen": [
     "Si tu pouvais reprendre une chose de cette personne – pas l’argent, pas la célébrité –, ce serait quoi ?",
     "Même les modèles ont des côtés qu’on n’a pas besoin de copier. Qu’est-ce que tu laisserais de côté ?"
@@ -8861,7 +8826,7 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Lösungsfabrik: erst verstehen, dann vorschlagen",
-  "text": "Fall zum Durchsprechen: Nora und Ben halten zu zweit ein Referat. Nora will früh anfangen, Ben arbeitet lieber am letzten Abend, weil er dreimal pro Woche Training hat. Zwei Tage vorher streiten sie im Chat. Der oder die Jugendliche teilt ein Blatt in drei Spalten (nur Stichworte) und geht den Fall mündlich durch: Was will Nora, was will Ben? Was brauchen beide wirklich (Sicherheit, Zeit, Anerkennung)? Gesucht werden drei Ideen, eine darf verrückt sein. Jede wird mit zwei Fragen geprüft: Kann Nora damit leben? Kann Ben damit leben? Die beste sagt er oder sie laut als Chatnachricht („Wie wär’s, wenn …“). Auf dem Übungsblatt folgt ein zweiter Fall (Lia und Zoe).",
+  "text": "Fall zum Durchsprechen: Nora und Ben halten zu zweit ein Referat. Nora will früh anfangen, Ben arbeitet lieber am letzten Abend, weil er dreimal pro Woche Training hat. Zwei Tage vorher streiten sie im Chat. Der oder die Jugendliche teilt ein Blatt in drei Spalten (nur Stichworte) und geht den Fall mündlich durch: Was will Nora, was will Ben? Was brauchen beide wirklich (Sicherheit, Zeit, Anerkennung)? Gesucht werden drei Ideen, eine darf verrückt sein. Jede wird mit zwei Fragen geprüft: Kann Nora damit leben? Kann Ben damit leben? Die beste sagt er oder sie laut als Chatnachricht („Wie wär’s, wenn …“).",
   "sagen": [
    "Bei Streit prallen oft zwei Positionen aufeinander. Dahinter stecken Bedürfnisse, und die passen öfter zusammen, als man denkt.",
    "Erst mal alles sagen, auch Quatsch – ein Stichwort schreiben wir auf. Aussortiert wird später."
@@ -8925,7 +8890,7 @@
   "ort": "raum",
   "fr": {
    "titel": "L’atelier à solutions : comprendre avant de proposer",
-   "text": "Un cas à parcourir à l’oral : Nora et Ben doivent présenter un exposé à deux. Nora veut commencer tôt, Ben préfère travailler la veille, parce qu’il a entraînement trois fois par semaine. Deux jours avant, ils se disputent dans le chat. Le ou la jeune partage une feuille en trois colonnes (seulement des mots-clés) et parcourt le cas en parlant : que veut Nora, que veut Ben ? De quoi ont-ils vraiment besoin (sécurité, temps, reconnaissance) ? On cherche trois idées, dont une peut être complètement folle. Chaque idée passe deux tests : Nora peut-elle vivre avec ? Ben peut-il vivre avec ? La meilleure est dite à voix haute comme un message de chat (« Et si on… »). Sur la fiche d’exercices suit un deuxième cas (Lia et Zoé).",
+   "text": "Un cas à parcourir à l’oral : Nora et Ben doivent présenter un exposé à deux. Nora veut commencer tôt, Ben préfère travailler la veille, parce qu’il a entraînement trois fois par semaine. Deux jours avant, ils se disputent dans le chat. Le ou la jeune partage une feuille en trois colonnes (seulement des mots-clés) et parcourt le cas en parlant : que veut Nora, que veut Ben ? De quoi ont-ils vraiment besoin (sécurité, temps, reconnaissance) ? On cherche trois idées, dont une peut être complètement folle. Chaque idée passe deux tests : Nora peut-elle vivre avec ? Ben peut-il vivre avec ? La meilleure est dite à voix haute comme un message de chat (« Et si on… »).",
    "sagen": [
     "Dans une dispute, ce sont souvent deux positions qui s’affrontent. Derrière, il y a des besoins, et ils s’accordent plus souvent qu’on ne le croit.",
     "D’abord on dit tout, même les idées bizarres – on note un mot-clé. On trie après."
@@ -8943,8 +8908,8 @@
   "sicher": {},
   "uebungsblatt": {
    "titel": {
-    "de": "Lösungsfabrik: erst verstehen, dann vorschlagen",
-    "fr": "L’atelier à solutions : comprendre avant de proposer"
+    "de": "Lösungsfabrik: Lia und Zoe",
+    "fr": "L’atelier à solutions : Lia et Zoé"
    },
    "de": [
     {
@@ -8976,15 +8941,6 @@
       "Sie reden ein Jahr lang nicht mehr darüber."
      ],
      "spalten": 1
-    },
-    {
-     "art": "tabelle",
-     "spalten": [
-      "Meine Idee (eine darf verrückt sein)",
-      "Kann Lia damit leben?",
-      "Kann Zoe damit leben?"
-     ],
-     "zeilen": 3
     },
     {
      "art": "satzanfaenge",
@@ -9024,15 +8980,6 @@
       "Elles n’en parlent plus pendant un an."
      ],
      "spalten": 1
-    },
-    {
-     "art": "tabelle",
-     "spalten": [
-      "Mon idée (une peut être folle)",
-      "Lia peut vivre avec ?",
-      "Zoé peut vivre avec ?"
-     ],
-     "zeilen": 3
     },
     {
      "art": "satzanfaenge",
@@ -9222,7 +9169,7 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Fakt oder Meinung? Eine echte Zeitung prüfen",
-  "text": "Auf dem Tisch liegt eine aktuelle Zeitung oder Zeitschrift. Der oder die Jugendliche blättert und wählt einen kurzen Artikel oder Kommentar zu einem Thema, das ihn oder sie interessiert (Sport, Klima, Verkehr, Schule, Musik). Die Fachkraft erklärt kurz: Ein Fakt lässt sich überprüfen („Ab Montag fährt der Bus alle 15 Minuten“), eine Meinung ist eine Bewertung („Endlich eine gute Entscheidung“). Dann unterstreicht der oder die Jugendliche Fakten mit gerader Linie und Meinungen mit Wellenlinie. Zweifelsfälle bekommen ein Fragezeichen: Woher weiß die Zeitung das? Zum Schluss: Was bleibt, wenn man nur die Fakten liest – und was denkst du selbst darüber?",
+  "text": "Auf dem Tisch liegt eine aktuelle Zeitung oder Zeitschrift. Der oder die Jugendliche blättert und wählt einen kurzen Artikel oder Kommentar zu einem Thema, das gerade interessant ist (Sport, Klima, Verkehr, Schule, Musik). Die Fachkraft erklärt kurz: Ein Fakt lässt sich überprüfen („Ab Montag fährt der Bus alle 15 Minuten“), eine Meinung ist eine Bewertung („Endlich eine gute Entscheidung“). Dann unterstreicht der oder die Jugendliche Fakten mit gerader Linie und Meinungen mit Wellenlinie. Zweifelsfälle bekommen ein Fragezeichen: Woher weiß die Zeitung das? Zum Schluss: Was bleibt, wenn man nur die Fakten liest – und was denkst du selbst darüber?",
   "sagen": [
    "Einen Fakt kann man nachprüfen, eine Meinung kann man teilen oder nicht. Beides darf in einer Zeitung stehen – man muss es nur auseinanderhalten.",
    "Lies mir mal nur die gerade unterstrichenen Stellen vor: Was bleibt übrig?"
@@ -9233,6 +9180,7 @@
    "fr": "Fait ou opinion ? Se demander : peut-on le vérifier ?"
   },
   "uebertragbar": true,
+  "vorbereitung": "Eine aktuelle Zeitung oder Zeitschrift bereitlegen (sonst reichen Leserbriefe oder eine Werbeanzeige aus einer älteren Ausgabe).",
   "rolle": [
    "kern"
   ],
@@ -9291,7 +9239,8 @@
     "Un fait, on peut le vérifier ; une opinion, on peut la partager ou pas. Les deux ont leur place dans un journal – il faut juste savoir les distinguer.",
     "Lis-moi seulement les passages soulignés d’un trait droit : qu’est-ce qui reste ?"
    ],
-   "wennEsKippt": "Si l’article est trop long, prendre seulement les trois premiers paragraphes. Si les sujets ennuient, prendre une publicité ou le courrier des lecteurs – le mélange y est souvent très visible."
+   "wennEsKippt": "Si l’article est trop long, prendre seulement les trois premiers paragraphes. Si les sujets ennuient, prendre une publicité ou le courrier des lecteurs – le mélange y est souvent très visible.",
+   "vorbereitung": "Préparer un journal ou un magazine récent (sinon le courrier des lecteurs ou une publicité d’un ancien numéro suffit)."
   },
   "tagesform": [
    "muede"
@@ -9351,11 +9300,6 @@
       "Eine Meinung zum selben Thema:"
      ],
      "linien": 1
-    },
-    {
-     "art": "frage",
-     "text": "Dein Thema von oben: Was bleibt übrig, wenn man nur die Fakten nimmt? Und was denkst du selbst darüber?",
-     "linien": 3
     }
    ],
    "fr": [
@@ -9399,11 +9343,6 @@
       "Une opinion sur le même sujet :"
      ],
      "linien": 1
-    },
-    {
-     "art": "frage",
-     "text": "Ton sujet du dessus : que reste-t-il si on ne garde que les faits ? Et toi, qu’en penses-tu ?",
-     "linien": 3
     }
    ]
   }
@@ -9579,7 +9518,7 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Stärken mit Beweis",
-  "text": "Der oder die Jugendliche schreibt drei Stärken auf, aber nur mit Beweis: eine konkrete Situation, in der sie sichtbar waren (z. B. „zuverlässig – ich hab drei Wochen lang den Hund vom Nachbarn ausgeführt“). Dazu kommt eine Baustelle, formuliert als „kann ich noch nicht gut“. Dann schätzt er oder sie: Wie würden zwei Leute, die ihn oder sie kennen, etwa ein Freund und eine Trainerin, diese Stärken auf einer Skala von 1 bis 10 (1 = sieht man kaum, 10 = sieht man sofort) einschätzen? Danach sagt die Fachkraft ehrlich, welche Stärke sie selbst bemerkt hat und woran. Gemeinsam wird geschaut: Wo liegen das eigene Bild und der Blick der anderen nah beieinander, wo auseinander?",
+  "text": "Der oder die Jugendliche schreibt drei Stärken auf, aber nur mit Beweis: eine konkrete Situation, in der sie sichtbar waren (z. B. „zuverlässig – ich hab drei Wochen lang den Hund vom Nachbarn ausgeführt“). Dazu kommt eine Baustelle, formuliert als „kann ich noch nicht gut“. Dann schätzt er oder sie: Wie würden zwei Leute, die einen gut kennen, etwa ein Freund und eine Trainerin, diese Stärken auf einer Skala von 1 bis 10 (1 = sieht man kaum, 10 = sieht man sofort) einschätzen? Danach sagt die Fachkraft ehrlich, welche Stärke sie selbst bemerkt hat und woran. Gemeinsam wird geschaut: Wo liegen das eigene Bild und der Blick der anderen nah beieinander, wo auseinander?",
   "sagen": [
    "Eine Stärke ohne Beweis ist nur eine Behauptung. Wann hast du sie zuletzt gezeigt?",
    "Eine Baustelle ist kein Fehler. Sie heißt nur: Da geht noch was."
@@ -9641,12 +9580,12 @@
   "ort": "raum",
   "fr": {
    "titel": "Des points forts, preuves à l’appui",
-   "text": "Le ou la jeune note trois points forts, mais seulement avec une preuve : une situation concrète où on a pu les voir (par ex. « fiable – j’ai promené le chien du voisin pendant trois semaines »). Il ou elle ajoute un chantier, formulé comme « je ne sais pas encore bien faire ». Puis il ou elle estime : comment deux personnes qui le ou la connaissent, par exemple un ami et une entraîneuse, noteraient ces points forts de 1 à 10 (1 = ça se voit à peine, 10 = ça se voit tout de suite) ? Ensuite, l’adulte dit honnêtement quel point fort il ou elle a remarqué, et à quoi. Ensemble, on regarde : où l’image qu’on a de soi et le regard des autres se rejoignent-ils, où s’écartent-ils ?",
+   "text": "Le ou la jeune note trois points forts, mais seulement avec une preuve : une situation concrète où on a pu les voir (par ex. « fiable – j’ai promené le chien du voisin pendant trois semaines »). Il ou elle ajoute un chantier, formulé comme « je ne sais pas encore bien faire ». Puis il ou elle estime : comment deux personnes qui le connaissent bien, par exemple un ami et une entraîneuse, noteraient ces points forts de 1 à 10 (1 = ça se voit à peine, 10 = ça se voit tout de suite) ? Ensuite, l’adulte dit honnêtement quel point fort a retenu son attention, et à quoi. Ensemble, on regarde : où l’image qu’on a de soi et le regard des autres se rejoignent-ils, où s’écartent-ils ?",
    "sagen": [
     "Un point fort sans preuve, c’est juste une affirmation. Tu l’as montré quand, récemment ?",
     "Un chantier, ce n’est pas un défaut. Ça veut juste dire : il y a encore de la marge."
    ],
-   "wennEsKippt": "Si aucun point fort ne vient, l’adulte en cite trois qu’il ou elle a remarqués, et le ou la jeune cherche la preuve. Si le regard des autres pèse trop, rester sur sa propre image et le retour de l’adulte."
+   "wennEsKippt": "Si aucun point fort ne vient, l’adulte en cite trois qui ont retenu son attention, et le ou la jeune cherche la preuve. Si le regard des autres pèse trop, rester sur sa propre image et le retour de l’adulte."
   },
   "merkmale": {
    "wettbewerb": false,
@@ -9878,11 +9817,11 @@
      "zeilen": [
       {
        "wer": "Ich",
-       "text": "Ich fände es besser, wenn das Training eine Stunde später anfängt, weil –"
+       "text": "Ich fände es besser, wenn das Training eine Stunde später anfängt."
       },
       {
-       "wer": "Kumpel",
-       "text": "Ach was, dann wird es viel zu spät! Wenn ich um acht noch …"
+       "wer": "Kumpel (unterbricht)",
+       "text": "Ach was, dann wird es viel zu spät!"
       },
       {
        "wer": "Ich, freundlich und klar"
@@ -9929,11 +9868,11 @@
      "zeilen": [
       {
        "wer": "Moi",
-       "text": "Je trouverais mieux que l’entraînement commence une heure plus tard, parce que –"
+       "text": "Je trouverais mieux que l’entraînement commence une heure plus tard."
       },
       {
-       "wer": "Un pote",
-       "text": "Mais non, ce serait beaucoup trop tard ! Moi, à huit heures, je …"
+       "wer": "Un pote (coupe la parole)",
+       "text": "Mais non, ce serait beaucoup trop tard !"
       },
       {
        "wer": "Moi, gentiment et clairement"
@@ -10149,7 +10088,7 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Eine Regel, die ich ändern würde",
-  "text": "Der oder die Jugendliche nennt eine Regel aus dem Alltag, die ihn oder sie stört, z. B. „Der Skatepark schließt um 20 Uhr“, „Handys müssen in der Pause weg“, „Der letzte Bus fährt um 22 Uhr“. Gemeinsam wird geklärt: Wer hat die Regel gemacht (Lycée, Gemeinde, Verein, Busunternehmen)? Wozu ist sie da, und wen schützt sie? Wer könnte sie ändern? Dann schreibt der oder die Jugendliche einen kurzen, höflichen Vorschlag an die zuständige Stelle: was stört, warum, und ein konkreter Gegenvorschlag, der auch die Gründe der Regel ernst nimmt. Ob die Nachricht wirklich abgeschickt wird, entscheidet er oder sie selbst.",
+  "text": "Der oder die Jugendliche nennt eine Regel aus dem Alltag, die stört, z. B. „Der Skatepark schließt um 20 Uhr“, „Handys müssen in der Pause weg“, „Der letzte Bus fährt um 22 Uhr“. Gemeinsam wird geklärt: Wer hat die Regel gemacht (Lycée, Gemeinde, Verein, Busunternehmen)? Wozu ist sie da, und wen schützt sie? Wer könnte sie ändern? Dann schreibt der oder die Jugendliche einen kurzen, höflichen Vorschlag an die zuständige Stelle: was stört, warum, und ein konkreter Gegenvorschlag, der auch die Gründe der Regel ernst nimmt. Ob die Nachricht wirklich abgeschickt wird, entscheidet er oder sie selbst.",
   "sagen": [
    "Regeln fallen nicht vom Himmel – jemand hat sie gemacht, und jemand kann sie ändern.",
    "Wer gehört werden will, zeigt am besten, dass er die andere Seite verstanden hat. Was ist der beste Grund für diese Regel?"
@@ -10213,7 +10152,7 @@
   "ort": "raum",
   "fr": {
    "titel": "Une règle que je changerais",
-   "text": "Le ou la jeune cite une règle du quotidien qui le ou la dérange, par ex. « Le skatepark ferme à 20 h », « Le portable doit rester rangé pendant la pause », « Le dernier bus part à 22 h ». Ensemble, on clarifie : qui a fait cette règle (lycée, commune, club, société de bus) ? À quoi sert-elle, qui protège-t-elle ? Qui pourrait la changer ? Ensuite, le ou la jeune écrit une courte proposition polie à la bonne adresse : ce qui dérange, pourquoi, et une contre-proposition concrète qui prend aussi au sérieux les raisons de la règle. C’est lui ou elle qui décide si le message est vraiment envoyé.",
+   "text": "Le ou la jeune cite une règle du quotidien qui l’agace, par ex. « Le skatepark ferme à 20 h », « Le portable doit rester rangé pendant la pause », « Le dernier bus part à 22 h ». Ensemble, on clarifie : qui a fait cette règle (lycée, commune, club, société de bus) ? À quoi sert-elle, qui protège-t-elle ? Qui pourrait la changer ? Ensuite, le ou la jeune écrit une courte proposition polie à la bonne adresse : ce qui dérange, pourquoi, et une contre-proposition concrète qui prend aussi au sérieux les raisons de la règle. C’est le ou la jeune qui décide si le message est vraiment envoyé.",
    "sagen": [
     "Les règles ne tombent pas du ciel – quelqu’un les a faites, et quelqu’un peut les changer.",
     "Pour être écouté, le mieux est de montrer qu’on a compris l’autre côté. Quelle est la meilleure raison d’être de cette règle ?"
@@ -10363,7 +10302,7 @@
   "ort": "raum",
   "fr": {
    "titel": "Un message avec une vraie question",
-   "text": "Pour finir, le ou la jeune réfléchit à une personne avec qui il ou elle aimerait entretenir un peu le contact : un ami dont on n’a plus de nouvelles depuis un moment, ou quelqu’un qu’on vient de rencontrer. D’ici la prochaine rencontre, il ou elle envoie à cette personne un seul message avec une vraie question, par ex. « Ça s’est passé comment, ton match samedi ? » au lieu d’un simple « Ça va ? ». L’adulte aide à formuler la question dès maintenant. La prochaine fois, le ou la jeune peut raconter en deux mots comment c’était – s’il ou elle en a envie.",
+   "text": "Pour finir, le ou la jeune réfléchit à une personne avec qui il ou elle aimerait entretenir un peu le contact : un ami dont on n’a plus de nouvelles depuis un moment, ou quelqu’un qu’on vient de rencontrer. D’ici la prochaine rencontre, il ou elle envoie à cette personne un seul message avec une vraie question, par ex. « Ça s’est passé comment, ton match samedi ? » au lieu d’un simple « Ça va ? ». L’adulte aide à formuler la question dès maintenant. La prochaine fois, le ou la jeune peut raconter en deux mots comment c’était – si on en a envie.",
    "sagen": [
     "Les amitiés vivent de petits messages, pas de grands gestes.",
     "Si personne ne répond, ça ne dit rien sur toi – la personne est peut-être juste occupée."
@@ -10518,7 +10457,7 @@
     "Tu ne demandes pas tes défauts, seulement tes points forts. C’est une question à laquelle la plupart des gens répondent volontiers.",
     "Si la réponse te surprend, c’est encore plus intéressant."
    ],
-   "wennEsKippt": "Si demander est trop gênant, le ou la jeune peut plutôt remarquer pour quoi on le ou la félicite ou on lui demande de l’aide. Si l’occasion ne se présente pas, ce n’est pas grave."
+   "wennEsKippt": "Si demander est trop gênant, le ou la jeune peut plutôt remarquer pour quoi on félicite le ou la jeune ou on lui demande de l’aide. Si l’occasion ne se présente pas, ce n’est pas grave."
   },
   "merkmale": {
    "wettbewerb": false,
@@ -10827,7 +10766,6 @@
       "etwas, das ich nicht vergessen darf",
       "ein Song im Kopf",
       "Pläne für später",
-      "Grübeln über etwas",
       "etwas anderes"
      ],
      "spalten": 2
@@ -10841,8 +10779,7 @@
      "links": [
       "„Ich muss noch zurückschreiben.“",
       "„Was gibt’s heute zu essen?“",
-      "„Morgen früh Training – Sachen packen!“",
-      "„Welcher Song war das noch?“"
+      "„Morgen früh Training – Sachen packen!“"
      ],
      "rechts": [
       "heute noch erledigen",
@@ -10853,8 +10790,7 @@
     {
      "art": "satzanfaenge",
      "items": [
-      "Beim nächsten Lernen liegt mein Parkplatz:",
-      "Ein Gedanke, den ich dort sofort parken würde:"
+      "Ein Gedanke, den ich beim nächsten Lernen sofort parken würde:"
      ],
      "linien": 1
     }
@@ -10869,7 +10805,6 @@
       "quelque chose à ne pas oublier",
       "une chanson dans la tête",
       "des projets pour plus tard",
-      "ruminer quelque chose",
       "autre chose"
      ],
      "spalten": 2
@@ -10883,8 +10818,7 @@
      "links": [
       "« Il faut encore que je réponde. »",
       "« On mange quoi aujourd’hui ? »",
-      "« Entraînement demain matin – préparer mes affaires ! »",
-      "« C’était quoi, cette chanson ? »"
+      "« Entraînement demain matin – préparer mes affaires ! »"
      ],
      "rechts": [
       "à faire aujourd’hui",
@@ -10895,8 +10829,7 @@
     {
      "art": "satzanfaenge",
      "items": [
-      "La prochaine fois que je travaille, mon parking sera :",
-      "Une pensée que j’y garerais tout de suite :"
+      "Une pensée que je garerais tout de suite la prochaine fois que je travaille :"
      ],
      "linien": 1
     }
@@ -11856,7 +11789,8 @@
   ],
   "material": [
    "papier",
-   "stifte"
+   "stifte",
+   "karten"
   ],
   "ort": "raum",
   "fr": {
@@ -12000,13 +11934,13 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Drei Versionen von mir mit 22",
-  "text": "Der oder die Jugendliche teilt ein Blatt in drei Spalten: die sichere, die mutige und die verrückte Version von sich mit 22. In jede Spalte kommen Stichworte: Was mache ich? Wo wohne ich? Wie sieht ein Dienstag aus? Dann sucht er oder sie, was alle drei Spalten gemeinsam haben (z. B. mit den Händen arbeiten, mit Menschen, etwas Eigenes aufbauen) und unterstreicht es. Danach ein Blick auf das, was schon da ist: Welche Stärken habe ich dafür, mit einem Beispiel aus dem Alltag, und was würde ich gern noch dazulernen? Daraus wird ein kleiner nächster Schritt, z. B. jemanden fragen, der so arbeitet, oder einen Schnuppertag anfragen.",
+  "text": "Der oder die Jugendliche teilt ein Blatt in drei Spalten: die sichere, die mutige und die verrückte Version von sich mit 22. In jede Spalte kommen Stichworte: Was mache ich? Mit wem arbeite oder lerne ich? Wie sieht ein Dienstag aus? Dann sucht er oder sie, was alle drei Spalten gemeinsam haben (z. B. mit den Händen arbeiten, mit Menschen, etwas Eigenes aufbauen) und unterstreicht es. Danach ein Blick auf das, was schon da ist: Welche Stärken habe ich dafür, mit einem Beispiel aus dem Alltag, und was würde ich gern noch dazulernen? Daraus wird ein kleiner nächster Schritt, z. B. jemanden fragen, der so arbeitet, oder einen Schnuppertag anfragen.",
   "sagen": [
    "Hier gibt es kein richtig oder falsch – die verrückte Version darf wirklich verrückt sein.",
    "Was taucht in allen drei Spalten auf, auch wenn es jedes Mal anders aussieht?",
    "Welche Stärke hast du dafür schon? Nenn mir eine Situation, in der man sie gesehen hat."
   ],
-  "wennEsKippt": "Fällt zur Zukunft wenig ein, wird nur ein einziger Tag ausgemalt: Wie sähe ein guter Dienstag mit 22 aus? Wird Druck spürbar, sagt die Fachkraft klar, dass Pläne sich ändern dürfen und heute nichts festgelegt wird. Fällt gar nichts ein oder wirkt der oder die Jugendliche mutlos und verzweifelt („Bei mir wird eh nichts“), nicht weiterbohren: Die Übung beenden und das Vorgehen bei offener Krise beachten (Dossier).",
+  "wennEsKippt": "Fällt zur Zukunft wenig ein, wird nur ein einziger Tag ausgemalt: Wie sähe ein guter Dienstag mit 22 aus? Wird Druck spürbar, sagt die Fachkraft klar, dass Pläne sich ändern dürfen und heute nichts festgelegt wird. Fällt gar nichts ein oder wirkt der oder die Jugendliche mutlos und verzweifelt („Bei mir wird eh nichts“), nicht weiterbohren: Die Übung ruhig beenden, bei der Person bleiben und die zuständige Ansprechperson (zum Beispiel den schulpsychologischen Dienst) einbeziehen.",
   "werkzeug": {
    "de": "Drei Zukunftsbilder entwerfen: Was haben alle drei gemeinsam?",
    "fr": "Esquisser trois images d’avenir : qu’ont-elles en commun ?"
@@ -12059,13 +11993,13 @@
   "ort": "raum",
   "fr": {
    "titel": "Trois versions de moi à 22 ans",
-   "text": "Le ou la jeune partage une feuille en trois colonnes : la version sûre, la version audacieuse et la version folle de soi à 22 ans. Dans chaque colonne, des mots-clés : qu’est-ce que je fais ? où est-ce que j’habite ? à quoi ressemble un mardi ? Puis il ou elle cherche ce que les trois colonnes ont en commun (par ex. travailler de ses mains, avec des gens, construire quelque chose à soi) et le souligne. Ensuite, un regard sur ce qui est déjà là : quelles forces ai-je pour ça, avec un exemple du quotidien, et qu’est-ce que j’aimerais encore apprendre ? On en tire un petit pas suivant, par ex. interroger quelqu’un qui fait ce métier ou demander une journée découverte.",
+   "text": "Le ou la jeune partage une feuille en trois colonnes : la version sûre, la version audacieuse et la version folle de soi à 22 ans. Dans chaque colonne, des mots-clés : qu’est-ce que je fais ? avec qui je travaille ou j’apprends ? à quoi ressemble un mardi ? Puis il ou elle cherche ce que les trois colonnes ont en commun (par ex. travailler de ses mains, avec des gens, construire quelque chose à soi) et le souligne. Ensuite, un regard sur ce qui est déjà là : quelles forces ai-je pour ça, avec un exemple du quotidien, et qu’est-ce que j’aimerais encore apprendre ? On en tire un petit pas suivant, par ex. interroger quelqu’un qui fait ce métier ou demander une journée découverte.",
    "sagen": [
     "Ici, pas de bonne ou de mauvaise réponse – la version folle a le droit d’être vraiment folle.",
     "Qu’est-ce qui revient dans les trois colonnes, même sous une autre forme ?",
     "Quelle force as-tu déjà pour ça ? Donne-moi une situation où on l’a vue."
    ],
-   "wennEsKippt": "Si peu de choses viennent pour l’avenir, on imagine une seule journée : à quoi ressemblerait un bon mardi à 22 ans ? Si la pression se fait sentir, l’adulte dit clairement que les projets peuvent changer et que rien n’est fixé aujourd’hui. Si rien ne vient du tout ou si le ou la jeune semble n’avoir plus aucun espoir (« De toute façon, rien ne marchera pour moi »), ne pas insister : arrêter l’exercice et suivre la marche à suivre en cas de crise ouverte (dossier)."
+   "wennEsKippt": "Si peu de choses viennent pour l’avenir, on imagine une seule journée : à quoi ressemblerait un bon mardi à 22 ans ? Si la pression se fait sentir, l’adulte dit clairement que les projets peuvent changer et que rien n’est fixé aujourd’hui. Si rien ne vient du tout ou si le ou la jeune semble n’avoir plus aucun espoir (« De toute façon, rien ne marchera pour moi »), ne pas insister : arrêter l’exercice calmement, rester auprès de la personne et associer la personne de référence (par exemple le service psycho-social de l’école)."
   },
   "tagesform": [
    "will-nicht"
@@ -12087,7 +12021,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Drei Versionen von dir mit 22: die sichere, die mutige, die verrückte. Was mache ich? Wo wohne ich? Wie sieht ein Dienstag aus? Stichworte reichen – und Pläne dürfen sich ändern."
+     "text": "Drei Versionen von dir mit 22: die sichere, die mutige, die verrückte. Was mache ich? Mit wem arbeite oder lerne ich? Wie sieht ein Dienstag aus? Stichworte reichen – und Pläne dürfen sich ändern."
     },
     {
      "art": "ankreuzen",
@@ -12141,7 +12075,7 @@
    "fr": [
     {
      "art": "text",
-     "text": "Trois versions de toi à 22 ans : la sûre, l’audacieuse, la folle. Qu’est-ce que je fais ? Où est-ce que j’habite ? À quoi ressemble un mardi ? Des mots-clés suffisent – et les projets ont le droit de changer."
+     "text": "Trois versions de toi à 22 ans : la sûre, l’audacieuse, la folle. Qu’est-ce que je fais ? Avec qui je travaille ou j’apprends ? À quoi ressemble un mardi ? Des mots-clés suffisent – et les projets ont le droit de changer."
     },
     {
      "art": "ankreuzen",
@@ -12262,13 +12196,13 @@
   "ort": "raum",
   "fr": {
    "titel": "Que sais-je vraiment du métier qui me tente ?",
-   "text": "Le ou la jeune nomme un métier qui l’intéresse (ou un dont on parle souvent, par ex. pilote, électricien, influenceuse). Pendant trois minutes, il ou elle note tout ce qu’il ou elle croit en savoir : formation, salaire, horaires, quotidien. Puis chaque point est marqué : S pour « je le sais », P pour « je le pense », E pour « je l’ai entendu dire ». Pour deux points P ou E, on réfléchit à comment les vérifier : demander à quelqu’un du métier, aller à l’orientation, faire une journée découverte. Pour finir, le ou la jeune formule une question précise et note à qui la poser.",
+   "text": "Le ou la jeune nomme un métier qui l’intéresse (ou un dont on parle souvent, par ex. pilote, électricien, influenceuse). Pendant trois minutes, il ou elle note tout ce qu’on croit en savoir : formation, salaire, horaires, quotidien. Puis chaque point est marqué : S pour « je le sais », P pour « je le pense », E pour « je l’ai entendu dire ». Pour deux points P ou E, on réfléchit à comment les vérifier : demander à quelqu’un du métier, aller à l’orientation, faire une journée découverte. Pour finir, le ou la jeune formule une question précise et note à qui la poser.",
    "sagen": [
     "On entend beaucoup de choses sur les métiers – ce qui m’intéresse, c’est ce que tu sais vraiment.",
     "Tu le sais d’où ? Vu, lu ou juste entendu ?",
     "Quelle question t’aiderait le plus si tu avais la réponse ?"
    ],
-   "wennEsKippt": "Si le ou la jeune n’a pas encore de métier en tête, on en prend un de l’entourage ou du journal : c’est la méthode qui compte, pas une décision. S’il ou elle ne veut demander à personne, on s’arrête à la question écrite."
+   "wennEsKippt": "Si le ou la jeune n’a pas encore de métier en tête, on en prend un de l’entourage ou du journal : c’est la méthode qui compte, pas une décision. Si le ou la jeune ne veut demander à personne, on s’arrête à la question écrite."
   },
   "tagesform": [
    "will-nicht"
@@ -12827,8 +12761,8 @@
    "art": "praxis",
    "titel": "Einzelstunde Jugend"
   },
-  "titel": "Box-Atmung",
-  "text": "Die Fachkraft zeichnet ein Rechteck auf ein Blatt: zwei kurze Seiten (vier Sekunden) und zwei lange (sechs Sekunden). Über die kurze Seite wird eingeatmet, über die lange ausgeatmet; eine Runde ums Rechteck sind zwei Atemzüge. Der oder die Jugendliche fährt mit dem Finger die Seiten nach, die Fachkraft zählt zuerst halblaut und atmet mit. Nach vier Runden zählt der oder die Jugendliche still weiter. Wer sich ruhig fühlt, darf als Variante nach dem Einatmen kurz anhalten (klassische Box-Atmung). Nicht bei Panik: Dann nicht zählen lassen, sondern etwas Greifbares nehmen (5-4-3-2-1).",
+  "titel": "Rechteck-Atmung",
+  "text": "Die Fachkraft zeichnet ein Rechteck auf ein Blatt: zwei kurze Seiten (vier Sekunden) und zwei lange (sechs Sekunden). Über die kurze Seite wird eingeatmet, über die lange ausgeatmet; eine Runde ums Rechteck sind zwei Atemzüge. Der oder die Jugendliche fährt mit dem Finger die Seiten nach, die Fachkraft zählt zuerst halblaut und atmet mit. Nach vier Runden zählt der oder die Jugendliche still weiter. Wer sich ruhig fühlt, darf als Variante ein Quadrat mit vier gleich langen Seiten nehmen (vier Sekunden ein, vier Sekunden aus). Nicht bei Panik: Dann nicht zählen lassen, sondern etwas Greifbares nehmen (5-4-3-2-1).",
   "sagen": [
    "Das kannst du überall machen, ohne dass es jemand merkt – vier Sekunden ein, sechs Sekunden aus.",
    "Kurz ein, lang aus – ich zähl am Anfang mit.",
@@ -12871,8 +12805,8 @@
   ],
   "ort": "raum",
   "fr": {
-   "titel": "La respiration carrée",
-   "text": "L’adulte dessine un rectangle sur une feuille : deux côtés courts (quatre secondes) et deux côtés longs (six secondes). On inspire sur le côté court, on expire sur le côté long ; un tour du rectangle, ce sont deux respirations. Le ou la jeune suit les côtés du doigt ; l’adulte compte d’abord à mi-voix et respire avec. Après quatre tours, le ou la jeune continue en comptant en silence. Qui se sent calme peut en variante retenir un instant l’air après l’inspiration (respiration carrée classique). Pas en cas de panique : dans ce cas, ne pas faire compter, mais s’appuyer sur du concret (5-4-3-2-1).",
+   "titel": "La respiration en rectangle",
+   "text": "L’adulte dessine un rectangle sur une feuille : deux côtés courts (quatre secondes) et deux côtés longs (six secondes). On inspire sur le côté court, on expire sur le côté long ; un tour du rectangle, ce sont deux respirations. Le ou la jeune suit les côtés du doigt ; l’adulte compte d’abord à mi-voix et respire avec. Après quatre tours, le ou la jeune continue en comptant en silence. Qui se sent calme peut en variante prendre un carré aux quatre côtés égaux (quatre secondes pour inspirer, quatre pour expirer). Pas en cas de panique : dans ce cas, ne pas faire compter, mais s’appuyer sur du concret (5-4-3-2-1).",
    "sagen": [
     "Tu peux faire ça partout, sans que personne ne le remarque – quatre secondes pour inspirer, six pour expirer.",
     "Court à l’inspiration, long à l’expiration – je compte avec toi au début.",
@@ -13186,7 +13120,7 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Ein Punkt im Raum",
-  "text": "Der oder die Jugendliche sucht sich einen kleinen Punkt im Raum, z. B. eine Schraube, einen Lichtschalter, einen Fleck an der Wand. Der Handy-Timer läuft eine Minute: Der Blick bleibt ruhig auf dem Punkt, das Ausatmen wird etwas länger als das Einatmen. Wandern Blick oder Gedanken weg, kommen sie einfach zurück, ohne Ärger. Danach 30 Sekunden Weitblick: den Punkt weiter ansehen und gleichzeitig wahrnehmen, was links und rechts am Rand des Blickfelds ist. Die Fachkraft macht mit. Zum Schluss: Wie oft ist der Blick abgehauen? Jede Zahl ist okay.",
+  "text": "Der oder die Jugendliche sucht sich einen kleinen Punkt im Raum, z. B. eine Schraube, einen Lichtschalter, einen Fleck an der Wand. Der Handy-Timer läuft eine Minute: Der Blick bleibt ruhig auf dem Punkt, das Ausatmen wird etwas länger als das Einatmen. Wandern Blick oder Gedanken weg, kommen sie einfach zurück, ohne Ärger. Danach 30 Sekunden Weitblick: den Punkt weiter ansehen und gleichzeitig wahrnehmen, was links und rechts am Rand des Blickfelds ist. Die Fachkraft macht mit. Zum Schluss: Wie war es, den Blick so ruhen zu lassen? Ein Wort genügt.",
   "sagen": [
    "Such dir irgendwas Kleines im Raum aus. Eine Minute nur hinschauen und ruhig ausatmen.",
    "Wenn du abschweifst, ist das normal – einfach zurückkommen.",
@@ -13231,7 +13165,7 @@
   "ort": "raum",
   "fr": {
    "titel": "Un point dans la pièce",
-   "text": "Le ou la jeune choisit un petit point dans la pièce, par ex. une vis, un interrupteur, une tache sur le mur. Le minuteur du portable tourne une minute : le regard reste calmement sur le point, l’expiration un peu plus longue que l’inspiration. Si le regard ou les pensées partent, ils reviennent, tout simplement, sans s’énerver. Ensuite, 30 secondes de vision large : continuer à regarder le point tout en remarquant ce qu’il y a à gauche et à droite, au bord du champ de vision. L’adulte fait avec. Pour finir : combien de fois le regard s’est-il échappé ? Tous les chiffres sont ok.",
+   "text": "Le ou la jeune choisit un petit point dans la pièce, par ex. une vis, un interrupteur, une tache sur le mur. Le minuteur du portable tourne une minute : le regard reste calmement sur le point, l’expiration un peu plus longue que l’inspiration. Si le regard ou les pensées partent, ils reviennent, tout simplement, sans s’énerver. Ensuite, 30 secondes de vision large : continuer à regarder le point tout en remarquant ce qu’il y a à gauche et à droite, au bord du champ de vision. L’adulte fait avec. Pour finir : comment c’était de laisser le regard se poser ainsi ? Un mot suffit.",
    "sagen": [
     "Choisis un petit truc dans la pièce. Une minute, juste regarder et expirer calmement.",
     "Si tu décroches, c’est normal – tu reviens, c’est tout.",
@@ -13594,7 +13528,7 @@
   "ort": "raum",
   "fr": {
    "titel": "J’emporte ou je laisse",
-   "text": "L’adulte partage une feuille en deux : « J’emporte » et « Je laisse ici ». Le ou la jeune note en mots-clés ce qui part avec lui ou elle (une idée, une phrase, un plan) et ce qui peut rester ici (quelque chose qui n’a pas convenu, une pensée qui a eu assez de place aujourd’hui). Au moins un mot, peu importe le côté. L’adulte prend les deux côtés autant au sérieux et ne commente pas ce qui est écrit sous « Je laisse ici ». Cette moitié est détachée et reste dans la pièce ou va à la corbeille, au choix du ou de la jeune ; l’autre part avec lui ou elle.",
+   "text": "L’adulte partage une feuille en deux : « J’emporte » et « Je laisse ici ». Le ou la jeune note en mots-clés ce qu’on emporte (une idée, une phrase, un plan) et ce qui peut rester ici (quelque chose qui n’a pas convenu, une pensée qui a eu assez de place aujourd’hui). Au moins un mot, peu importe le côté. L’adulte prend les deux côtés autant au sérieux et ne commente pas ce qui est écrit sous « Je laisse ici ». Cette moitié est détachée et reste dans la pièce ou va à la corbeille, au choix du ou de la jeune ; on emporte l’autre.",
    "sagen": [
     "Qu’est-ce que tu emportes, et qu’est-ce qui peut rester ici ? Les deux sont ok.",
     "Si quelque chose ne t’a pas plu aujourd’hui, c’est exactement sa place, à droite.",
@@ -13906,7 +13840,7 @@
    "de": [
     {
      "art": "text",
-     "text": "So führst du den Trick vor:\n1  Lege neun Karten offen in drei Spalten.\n2  Die Person nennt ihre Spalte. Sammle ein: Diese Spalte kommt in die Mitte. Zweimal.\n3  Zähle bis fünf. Das ist ihre Karte."
+     "text": "So führst du den Trick vor:\n1  Neun Karten offen in drei Spalten legen.\n2  Die Person nennt ihre Spalte. Diese Spalte kommt beim Einsammeln in die Mitte. Zweimal.\n3  Bis fünf zählen. Das ist ihre Karte."
     },
     {
      "art": "ankreuzen",
@@ -13922,9 +13856,16 @@
      "spalten": 2
     },
     {
-     "art": "frage",
-     "text": "Wo fällt dir Abwarten im Alltag am schwersten? (im Unterricht, im Chat, beim Sport, in der Schlange … oder ein erfundenes Beispiel)",
-     "linien": 1
+     "art": "ankreuzen",
+     "titel": "Wo fällt mir Abwarten am schwersten? Kreuz an.",
+     "items": [
+      "im Unterricht",
+      "im Chat",
+      "beim Sport",
+      "in der Schlange",
+      "etwas anderes"
+     ],
+     "spalten": 2
     },
     {
      "art": "wennDann",
@@ -13936,7 +13877,7 @@
    "fr": [
     {
      "art": "text",
-     "text": "Le tour en trois étapes :\n1  Pose neuf cartes face visible en trois colonnes.\n2  La personne dit sa colonne. Ramasse : cette colonne va au milieu. Deux fois.\n3  Compte jusqu’à cinq. C’est sa carte."
+     "text": "Le tour en trois étapes :\n1  Poser neuf cartes face visible en trois colonnes.\n2  La personne dit sa colonne. En ramassant, cette colonne va au milieu. Deux fois.\n3  Compter jusqu’à cinq. C’est sa carte."
     },
     {
      "art": "ankreuzen",
@@ -13952,9 +13893,16 @@
      "spalten": 2
     },
     {
-     "art": "frage",
-     "text": "Où est-ce que c’est le plus dur d’attendre, au quotidien ? (en cours, dans un chat, au sport, dans une file d’attente… ou un exemple inventé)",
-     "linien": 1
+     "art": "ankreuzen",
+     "titel": "Où est-ce le plus dur d’attendre ? Coche.",
+     "items": [
+      "en cours",
+      "dans le chat",
+      "au sport",
+      "dans une file d’attente",
+      "autre chose"
+     ],
+     "spalten": 2
     },
     {
      "art": "wennDann",
@@ -13972,7 +13920,7 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Erst zu Ende hören",
-  "text": "Die Fachkraft stellt Fragen, bei denen erst das Ende die Antwort verrät: „Nenne eine Stadt in Luxemburg … die mit E anfängt und nicht Esch heißt.“ – „Wie viele Beine hat eine Spinne … wenn man zwei Spinnen zusammenzählt?“ – „Nenne ein Tier … das fliegt und kein Vogel ist.“ – „Sag eine Zahl … die größer als 7 und gerade ist.“ – „Nenne eine Sportart … die man im Wasser macht und die nicht Schwimmen heißt.“ – „Nenne eine Farbe … die nicht rot, blau oder grün ist.“ Geantwortet wird erst, wenn der Stift auf dem Tisch liegt; ab der vierten Frage fällt das Zeichen weg. Dann wird getauscht, und die Fachkraft wartet jede Frage ab. Zum Schluss: Wo hilft es, erst zu Ende zu hören?",
+  "text": "Die Fachkraft stellt Fragen, bei denen erst das Ende die Antwort verrät: „Nenne eine Stadt in Luxemburg … die mit E anfängt und nicht Esch heißt.“ – „Nenne ein Land in Europa … das mit L anfängt und nicht Luxemburg ist.“ – „Nenne ein Tier … das fliegt und kein Vogel ist.“ – „Sag eine Zahl … die größer als 7 und gerade ist.“ – „Nenne eine Sportart … die man im Wasser macht und die nicht Schwimmen heißt.“ – „Nenne ein Schulfach … das mit M anfängt und nichts mit Zahlen zu tun hat.“ Geantwortet wird erst, wenn der Stift auf dem Tisch liegt; ab der vierten Frage fällt das Zeichen weg. Dann wird getauscht, und die Fachkraft wartet jede Frage ab. Zum Schluss: Wo hilft es, erst zu Ende zu hören?",
   "sagen": [
    "Hör jede Frage bis zum Schluss – im Ende steckt der Trick.",
    "Du antwortest, wenn der Stift liegt. Später entscheidest du das ohne Zeichen.",
@@ -14036,7 +13984,7 @@
   "ort": "raum",
   "fr": {
    "titel": "Écouter jusqu’au bout",
-   "text": "L’adulte pose des questions dont la fin change tout : « Cite une ville du Luxembourg… qui commence par E et qui n’est pas Esch. » – « Combien de pattes a une araignée… si on additionne deux araignées ? » – « Cite un animal… qui vole et qui n’est pas un oiseau. » – « Dis un nombre… plus grand que 7 et pair. » – « Cite un sport… qui se pratique dans l’eau et qui n’est pas la natation. » – « Cite une couleur… qui n’est ni rouge, ni bleue, ni verte. » On ne répond que quand le stylo est posé sur la table ; à partir de la quatrième question, plus de signal. Ensuite, on échange les rôles et l’adulte attend. Pour finir : où est-ce utile d’écouter jusqu’au bout ?",
+   "text": "L’adulte pose des questions dont la fin change tout : « Cite une ville du Luxembourg… qui commence par E et qui n’est pas Esch. » – « Cite un pays d’Europe… qui commence par L et qui n’est pas le Luxembourg. » – « Cite un animal… qui vole et qui n’est pas un oiseau. » – « Dis un nombre… plus grand que 7 et pair. » – « Cite un sport… qui se pratique dans l’eau et qui n’est pas la natation. » – « Cite une matière… qui commence par M et qui n’a rien à voir avec les chiffres. » On ne répond que quand le stylo est posé sur la table ; à partir de la quatrième question, plus de signal. Ensuite, on échange les rôles et l’adulte attend. Pour finir : où est-ce utile d’écouter jusqu’au bout ?",
    "sagen": [
     "Écoute chaque question jusqu’au bout – le piège est à la fin.",
     "Tu réponds quand le stylo est posé. Plus tard, tu décides sans signal.",
@@ -14066,9 +14014,9 @@
      "art": "ankreuzen",
      "titel": "Wo hilft es, erst zu Ende zu hören? Mehrere gehen.",
      "items": [
-      "wenn im Unterricht eine Frage kommt",
-      "wenn ein Freund etwas erzählt",
-      "im Training oder Verein, wenn etwas erklärt wird",
+      "im Unterricht",
+      "wenn ein Freund erzählt",
+      "im Training oder Verein",
       "im Chat, bevor ich antworte",
       "bei einer Wegbeschreibung",
       "etwas anderes"
@@ -14079,11 +14027,11 @@
      "art": "ankreuzen",
      "titel": "Was hilft mir, bis zum Ende zu warten? Kreuz an.",
      "items": [
-      "den Stift in der Hand halten",
+      "Stift in der Hand halten",
       "bis drei zählen",
-      "die Frage im Kopf wiederholen",
+      "Frage im Kopf wiederholen",
       "einmal ausatmen",
-      "ein Zeichen für mich selbst",
+      "Zeichen an mich selbst",
       "etwas anderes"
      ],
      "spalten": 2
@@ -14114,11 +14062,11 @@
      "art": "ankreuzen",
      "titel": "Où est-ce utile d’écouter jusqu’au bout ? Plusieurs réponses possibles.",
      "items": [
-      "quand une question tombe en cours",
-      "quand un ami raconte quelque chose",
-      "à l’entraînement ou au club, quand on explique",
+      "en cours",
+      "quand un ami raconte",
+      "à l’entraînement ou au club",
       "dans le chat, avant de répondre",
-      "pour une indication de chemin",
+      "pour un itinéraire",
       "autre chose"
      ],
      "spalten": 2
@@ -14127,11 +14075,11 @@
      "art": "ankreuzen",
      "titel": "Qu’est-ce qui m’aide à attendre la fin ? Coche.",
      "items": [
-      "tenir le stylo dans la main",
+      "tenir le stylo en main",
       "compter jusqu’à trois",
       "répéter la question dans ma tête",
       "expirer une fois",
-      "me donner un signe à moi-même",
+      "un signe à moi-même",
       "autre chose"
      ],
      "spalten": 2
@@ -14415,7 +14363,7 @@
   "ort": "raum",
   "fr": {
    "titel": "Le dé propose",
-   "text": "On écrit les chiffres de 1 à 6 sur une feuille. L’adulte remplit quatre cases avec une action d’environ une minute, par exemple : citer trois chansons qu’on ne zappe jamais ; lancer cinq boulettes de papier dans la corbeille ; dessiner le sandwich parfait ; poser à l’adulte une question à laquelle il ou elle répond honnêtement. Les deux autres cases sont pour le ou la jeune. Puis on lance le dé trois fois ; un joker permet de relancer une fois. L’adulte ne pousse pas, attend que le ou la jeune se lance de sa propre initiative et fait aussi chaque action.",
+   "text": "On écrit les chiffres de 1 à 6 sur une feuille. L’adulte remplit quatre cases avec une action d’environ une minute, par exemple : citer trois chansons qu’on ne zappe jamais ; lancer cinq boulettes de papier dans la corbeille ; dessiner le sandwich parfait ; poser à l’adulte une question qui recevra une réponse honnête. Les deux autres cases sont pour le ou la jeune. Puis on lance le dé trois fois ; un joker permet de relancer une fois. L’adulte ne pousse pas, attend que le ou la jeune se lance de sa propre initiative et fait aussi chaque action.",
    "sagen": [
     "Deux cases sont à toi – écris ce qui te tente.",
     "Le dé ne fait que proposer. C’est toi qui décides si tu prends le joker.",
@@ -14759,12 +14707,13 @@
   "material": [
    "papier",
    "stifte",
-   "schere"
+   "schere",
+   "karten"
   ],
   "ort": "raum",
   "fr": {
    "titel": "Ton domaine, ton quiz",
-   "text": "Le ou la jeune choisit un domaine qu’il ou elle connaît bien : un club de foot, un chanteur ou une chanteuse, le basket, les voitures, la mode, le skate. Ensemble, on en tire huit fiches en papier : la question devant, la réponse derrière, trois faciles, trois moyennes, deux difficiles. L’adulte écrit si on le lui demande, mais ne décide rien et attend que les idées viennent. Ensuite, le ou la jeune interroge l’adulte et explique la bonne réponse en cas d’erreur. L’adulte pose des questions là où il ou elle veut vraiment en savoir plus.",
+   "text": "Le ou la jeune choisit un domaine qu’on connaît bien : un club de foot, un chanteur ou une chanteuse, le basket, les voitures, la mode, le skate. Ensemble, on en tire huit fiches en papier : la question devant, la réponse derrière, trois faciles, trois moyennes, deux difficiles. L’adulte écrit si on le lui demande, mais ne décide rien et attend que les idées viennent. Ensuite, le ou la jeune interroge l’adulte et explique la bonne réponse en cas d’erreur. L’adulte pose des questions là où il y a vraiment quelque chose à apprendre.",
    "sagen": [
     "Ici, c’est toi qui t’y connais, pas moi.",
     "Sur quoi est-ce que tu en sais plus que la plupart des adultes ?",
@@ -16239,7 +16188,7 @@
      "titel": "Was war für mich leichter? Kreuz an.",
      "items": [
       "warten, bis ich dran bin",
-      "mich überhaupt zu trauen",
+      "mich trauen",
       "beides gleich",
       "beides war schwer"
      ],
@@ -16249,11 +16198,11 @@
      "art": "ankreuzen",
      "titel": "Was hilft mir dabei? Mehrere gehen.",
      "items": [
-      "mir selbst ein ruhiges „Gleich“ sagen",
-      "ein Stichwort aufschreiben",
-      "die Hand ruhig oben lassen",
+      "mir „Gleich“ sagen",
+      "Stichwort aufschreiben",
+      "Hand ruhig oben lassen",
       "einmal ausatmen",
-      "mit einer leichten Frage anfangen",
+      "mit leichter Frage anfangen",
       "etwas anderes"
      ],
      "spalten": 2
@@ -16278,7 +16227,7 @@
      "titel": "Qu’est-ce qui était plus facile pour moi ? Coche.",
      "items": [
       "attendre mon tour",
-      "oser lever la main",
+      "oser",
       "les deux pareil",
       "les deux étaient difficiles"
      ],
@@ -16288,9 +16237,9 @@
      "art": "ankreuzen",
      "titel": "Ce qui m’aide – plusieurs réponses possibles :",
      "items": [
-      "me dire à moi-même un calme « Tout de suite »",
+      "me dire « Tout de suite »",
       "noter un mot-clé",
-      "garder la main levée calmement",
+      "garder la main levée",
       "expirer une fois",
       "commencer par une question facile",
       "autre chose"
@@ -16320,11 +16269,11 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Eine Meldung vorbereiten",
-  "text": "Der oder die Jugendliche wählt ein Fach, in dem Melden schwerfällt. Gemeinsam wird genau eine Meldung vorbereitet: eine Frage („Können Sie das Beispiel noch einmal zeigen?“) oder eine kurze Antwort auf etwas, das bald drankommt. Der Satz wird auf eine Karte geschrieben und zweimal laut geübt – einmal leise, einmal in normaler Lautstärke. Dann wird festgelegt, wann: in den ersten zehn Minuten der Stunde. Auf einer Skala von 1 bis 10 (1 = kaum Mut nötig, 10 = sehr viel Mut) sagt der oder die Jugendliche, wie mutig sich das anfühlt; bei über 7 wird die Meldung kleiner gemacht.",
+  "text": "Der oder die Jugendliche wählt ein Fach, in dem eine Meldung gut vorstellbar ist. Gemeinsam wird genau eine Meldung vorbereitet: eine Frage („Können Sie das Beispiel noch einmal zeigen?“) oder eine kurze Antwort auf etwas, das bald drankommt. Die Fachkraft schreibt den Satz auf eine Karte (auf Wunsch schreibt der oder die Jugendliche selbst), und er wird zweimal laut geübt – einmal leise, einmal in normaler Lautstärke. Als Zeitpunkt gelten die ersten zehn Minuten der Stunde. Auf einer Mut-Treppe mit vier Stufen (unten: Hand kurz heben, oben: eine eigene Meinung sagen) zeigt der oder die Jugendliche, wie groß der Schritt ist; liegt er oben, wird die Meldung kleiner gemacht.",
   "sagen": [
    "Nur eine einzige Meldung – nicht mehr. Welches Fach nehmen wir?",
    "Schreib den Satz so auf, wie du ihn wirklich sagen würdest.",
-   "Wie mutig fühlt sich das an, von 1 bis 10 (1 = kaum Mut nötig, 10 = sehr viel Mut)? Wir machen es so klein, dass es geht."
+   "Auf welche Stufe der Mut-Treppe gehört das? Wir machen es so klein, dass es geht."
   ],
   "wennEsKippt": "Ist auch eine Frage zu viel, reicht als Versuch, die Hand kurz zu heben und wieder zu senken, wenn jemand anderes drankommt. Will der oder die Jugendliche kein Fach nennen, wird mit einem erfundenen Fach geübt.",
   "werkzeug": {
@@ -16383,11 +16332,11 @@
   "ort": "raum",
   "fr": {
    "titel": "Préparer une prise de parole",
-   "text": "Le ou la jeune choisit une matière où lever la main est difficile. Ensemble, on prépare exactement une prise de parole : une question (« Vous pouvez remontrer l’exemple ? ») ou une courte réponse à quelque chose qui va bientôt être vu. La phrase est écrite sur une carte et dite deux fois à voix haute – une fois doucement, une fois normalement. Ensuite, on fixe quand : dans les dix premières minutes du cours. Sur une échelle de 1 à 10 (1 = peu de courage, 10 = beaucoup de courage), le ou la jeune dit à quel point cela demande du courage ; au-dessus de 7, on rend la prise de parole plus petite.",
+   "text": "Le ou la jeune choisit une matière où une prise de parole est imaginable. Ensemble, on prépare exactement une prise de parole : une question (« Vous pouvez remontrer l’exemple ? ») ou une courte réponse à quelque chose qui va bientôt être vu. L’adulte écrit la phrase sur une carte (le ou la jeune peut aussi l’écrire), et on la dit deux fois à voix haute – une fois doucement, une fois normalement. Le moment : les dix premières minutes du cours. Sur un escalier du courage à quatre marches (en bas : lever brièvement la main, en haut : donner son avis), le ou la jeune montre la taille du pas ; s’il est en haut, on rend la prise de parole plus petite.",
    "sagen": [
     "Une seule prise de parole – pas plus. Quelle matière on prend ?",
     "Écris la phrase comme tu la dirais vraiment.",
-    "Ça demande combien de courage, de 1 à 10 (1 = peu, 10 = beaucoup) ? On la rend assez petite pour que ça marche."
+    "Sur quelle marche de l’escalier du courage ça se place ? On la rend assez petite pour que ça marche."
    ],
    "wennEsKippt": "Si même une question est de trop, l’essai peut être de lever brièvement la main et de la baisser quand quelqu’un d’autre est appelé. Si le ou la jeune ne veut pas nommer de matière, on s’entraîne avec une matière inventée."
   },
@@ -16411,6 +16360,10 @@
    },
    "de": [
     {
+     "art": "text",
+     "text": "Die Mut-Treppe: Kreis die Stufe ein, die du dir als Erstes zutraust."
+    },
+    {
      "art": "ankreuzen",
      "titel": "Welche Art von Meldung passt für mich als Erstes? Kreuz an.",
      "items": [
@@ -16425,14 +16378,19 @@
     {
      "art": "leiter",
      "stufen": 4,
-     "oben": "Großer Schritt, z. B. eine eigene Meinung sagen",
-     "unten": "Kleinster Schritt, z. B. die Hand kurz heben"
+     "oben": "Großer Schritt",
+     "unten": "Kleinster Schritt",
+     "beispiele": [
+      "Hand kurz heben",
+      "Eine Frage stellen",
+      "Eine Antwort geben",
+      "Eine eigene Meinung sagen"
+     ]
     },
     {
      "art": "satzanfaenge",
      "items": [
-      "Meine Meldung, genau so, wie ich sie sage:",
-      "Fach und Zeitpunkt (in den ersten zehn Minuten):"
+      "Meine Meldung, genau so, wie ich sie sage:"
      ],
      "linien": 1
     },
@@ -16444,6 +16402,10 @@
     }
    ],
    "fr": [
+    {
+     "art": "text",
+     "text": "L’escalier du courage : entoure la marche que tu te sens capable de faire en premier."
+    },
     {
      "art": "ankreuzen",
      "titel": "Quel genre de prise de parole me convient pour commencer ? Coche.",
@@ -16459,14 +16421,19 @@
     {
      "art": "leiter",
      "stufen": 4,
-     "oben": "Grand pas, par ex. donner mon avis",
-     "unten": "Plus petit pas, par ex. lever brièvement la main"
+     "oben": "Grand pas",
+     "unten": "Plus petit pas",
+     "beispiele": [
+      "Lever brièvement la main",
+      "Poser une question",
+      "Donner une réponse",
+      "Donner son avis"
+     ]
     },
     {
      "art": "satzanfaenge",
      "items": [
-      "Ma prise de parole, exactement comme je la dirai :",
-      "Matière et moment (dans les dix premières minutes) :"
+      "Ma prise de parole, exactement comme je la dirai :"
      ],
      "linien": 1
     },
@@ -16848,7 +16815,7 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Zwei Ecken, zwei Dehnungen",
-  "text": "Beide gehen langsam durch den Raum und halten an zwei Stellen, etwa in zwei Ecken, je eine halbe Minute. Erster Halt: beide Arme hoch, strecken wie nach dem Aufwachen. Zweiter Halt: Schultern langsam nach hinten kreisen, den Kopf zur einen und zur anderen Seite neigen. Danach einmal lang ausatmen und hinsetzen.",
+  "text": "Beide gehen in ihrem Tempo – gern im Takt eines Songs im Kopf – durch den Raum und halten an zwei Stellen, etwa in zwei Ecken, je eine halbe Minute. Erster Halt: beide Arme hoch, strecken wie nach dem Aufwachen. Zweiter Halt: Schultern langsam nach hinten kreisen, den Kopf zur einen und zur anderen Seite neigen. Danach einmal lang ausatmen und hinsetzen.",
   "sagen": [
    "Nichts muss wehtun – dehnen, bis es angenehm zieht, nicht weiter.",
    "Du bestimmst, wo wir anhalten.",
@@ -16888,7 +16855,7 @@
   "ort": "raum",
   "fr": {
    "titel": "Deux coins, deux étirements",
-   "text": "L’adulte et le ou la jeune font lentement le tour de la pièce et s’arrêtent à deux endroits, par exemple dans deux coins, une demi-minute à chaque fois. Premier arrêt : les deux bras en l’air, s’étirer comme au réveil. Deuxième arrêt : rouler lentement les épaules vers l’arrière, pencher la tête d’un côté puis de l’autre. Ensuite, expirer longuement une fois et s’asseoir.",
+   "text": "L’adulte et le ou la jeune font le tour de la pièce à leur rythme – volontiers au tempo d’une chanson dans la tête – et s’arrêtent à deux endroits, par exemple dans deux coins, une demi-minute à chaque fois. Premier arrêt : les deux bras en l’air, s’étirer comme au réveil. Deuxième arrêt : rouler lentement les épaules vers l’arrière, pencher la tête d’un côté puis de l’autre. Ensuite, expirer longuement une fois et s’asseoir.",
    "sagen": [
     "Rien ne doit faire mal – on étire jusqu’à ce que ça tire agréablement, pas plus.",
     "C’est toi qui choisis où on s’arrête.",
