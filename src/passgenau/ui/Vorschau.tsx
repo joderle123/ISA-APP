@@ -134,6 +134,7 @@ export function PdfSeiten({ plan, nr, breite, nurBlatt, nurErste, onOrt, markier
   const [erg, setErg] = useState<Gezeichnet | null>(PDF_CACHE.get(key) ?? null)
   const [laedt, setLaedt] = useState(!PDF_CACHE.has(key))
   const [fehler, setFehler] = useState<string | null>(null)
+  const [versuch, setVersuch] = useState(0)
   const lauf = useRef(0)
   useEffect(() => {
     const da = PDF_CACHE.get(key)
@@ -165,7 +166,7 @@ export function PdfSeiten({ plan, nr, breite, nurBlatt, nurErste, onOrt, markier
     }, 400)
     return () => window.clearTimeout(t)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [key])
+  }, [key, versuch])
   const blattSeiten = useMemo(() => new Set((erg?.teile ?? []).filter((t) => t.id.includes(':blatt:')).map((t) => t.seite)), [erg])
   let nummern = (erg?.seiten ?? []).map((_, i) => i + 1)
   if (nurBlatt) nummern = nummern.filter((n) => blattSeiten.has(n))
@@ -206,13 +207,29 @@ export function PdfSeiten({ plan, nr, breite, nurBlatt, nurErste, onOrt, markier
           </div>
         )
       })}
-      {!erg && laedt && <div className="pg-pdfplatz" style={{ aspectRatio: '595 / 842' }} />}
-      {laedt && (
-        <div className="pg-pdflaedt" role="status">
-          <span className="pg-spin" /> {erg ? 'wird aktualisiert …' : 'PDF wird erstellt …'}
+      {!erg && laedt && (
+        <div className="pg-pdfplatz" style={{ aspectRatio: '595 / 842' }}>
+          <span role="status">
+            <span className="pg-spin" /> PDF wird erstellt …
+          </span>
         </div>
       )}
-      {fehler && <div className="pg-pdflaedt">{fehler}</div>}
+      {laedt && erg && (
+        <div className="pg-pdflaedt" role="status">
+          <span className="pg-spin" /> wird aktualisiert …
+        </div>
+      )}
+      {fehler && !laedt && (
+        <div className="pg-hinweisbox gelb" role="alert" title={fehler}>
+          <Ic n="info" />
+          <span>
+            Die Vorschau ist nicht möglich.{' '}
+            <button type="button" className="pg-link" onClick={() => setVersuch((v) => v + 1)}>
+              Erneut versuchen
+            </button>
+          </span>
+        </div>
+      )}
     </div>
   )
 }
@@ -333,7 +350,7 @@ function PlanSeite({ plan, nr, breite, onSchritt }: { plan: Plan; nr: number; br
   const material: string[] = []
   s.schritte.forEach((x) => {
     const e = pg.katalog ? K.eintrag(pg.katalog, x.ref) : undefined
-    if (e?.typ === 'schritt') material.push(...e.material)
+    if (e?.typ === 'schritt') material.push(...e.material.map((m) => (pg.katalog ? K.materialName(pg.katalog, m, p.sprache.blatt) : m)))
   })
   if (s.blatt) material.push(`Blatt „${s.blatt.titel}“, Stifte`)
   const wc = { profil: p, vorname: pg.vorname, plan }
@@ -508,23 +525,27 @@ export function Vorschau() {
             {pdf ? 'Das echte PDF – derselbe Renderer wie jedes Toolbox-Blatt. Tippe im PDF (oder in der Liste der Teile) auf einen Teil, um ihn zu ersetzen.' : 'Skizze: Tippe auf einen Teil – im Plan oder auf dem Blatt –, um ihn zu ersetzen.'}
           </p>
         </div>
-        <div className="pg-btnrow">
-          <Chip an={pg.druck.vorname} onClick={() => pg.setDruck((d) => ({ ...d, vorname: !d.vorname }))}>
-            Vorname einsetzen
-          </Chip>
-          <Chip an={pg.druck.ziel && p.alterJahre < 12} disabled={p.alterJahre >= 12} titel={p.alterJahre >= 12 ? 'bei Jugendlichen nie' : undefined} onClick={() => pg.setDruck((d) => ({ ...d, ziel: !d.ziel }))}>
-            „Mein Ziel“ drucken
-          </Chip>
-          <Chip an={pg.druck.ohneWarum} onClick={() => pg.setDruck((d) => ({ ...d, ohneWarum: !d.ohneWarum }))}>
-            ohne Begründungen
-          </Chip>
+        <div className="pg-btnrow pg-vkopf">
           <button type="button" className="pg-btn" onClick={() => pg.setAnsicht('ergebnis')}>
             <Ic n="zurueck" />
             Zurück
           </button>
+          {/* alle drei Schalter gleich herum: an = steht auf dem Blatt */}
+          <div className="pg-chips pg-aufblatt" role="group" aria-label="Aufs Blatt">
+            <span className="pg-leise pg-klein">Aufs Blatt:</span>
+            <Chip an={pg.druck.vorname} onClick={() => pg.setDruck((d) => ({ ...d, vorname: !d.vorname }))}>
+              Vorname
+            </Chip>
+            <Chip an={pg.druck.ziel && p.alterJahre < 12} disabled={p.alterJahre >= 12} titel={p.alterJahre >= 12 ? 'bei Jugendlichen nie' : undefined} onClick={() => pg.setDruck((d) => ({ ...d, ziel: !d.ziel }))}>
+              „Mein Ziel“
+            </Chip>
+            <Chip an={!pg.druck.ohneWarum} onClick={() => pg.setDruck((d) => ({ ...d, ohneWarum: !d.ohneWarum }))}>
+              Begründungen
+            </Chip>
+          </div>
           <button type="button" className="pg-btn primaer" onClick={() => pg.pdfErzeugen(s.nr)}>
             <Ic n="drucken" />
-            PDF erzeugen
+            PDF drucken
           </button>
         </div>
       </section>

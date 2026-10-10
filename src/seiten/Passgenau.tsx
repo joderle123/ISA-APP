@@ -161,6 +161,10 @@ function MitAuffangen({ children }: { children: ReactNode }) {
 }
 
 export function Passgenau({ aktiv, start }: { aktiv: boolean; start: PassgenauStart | null }) {
+  // Schmaler Bildschirm: „Passgenau“ ist der letzte Hub-Reiter und liegt sonst außerhalb des Bildes
+  useEffect(() => {
+    if (aktiv) document.querySelector('.haupt-reiter [aria-current="page"]')?.scrollIntoView({ inline: 'center', block: 'nearest' })
+  }, [aktiv])
   return (
     <div className={aktiv ? 'pg' : 'hidden'}>
       <PgAnbieter startHash={start} aktiv={aktiv}>

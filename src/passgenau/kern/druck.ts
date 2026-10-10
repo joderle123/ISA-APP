@@ -198,7 +198,7 @@ const MATERIAL_IM_TEXT: [RegExp, string | { de: string; fr: string }][] = [
   [/Wäscheklammer|pince à linge/i, { de: 'Wäscheklammern', fr: 'pinces à linge' }],
 ]
 
-function materialName(k: Katalog, m: string, sprache: Sprache): string {
+export function materialName(k: Katalog, m: string, sprache: Sprache): string {
   return intern(k).materialName[m]?.[sprache] ?? MATERIAL_STANDARD[m]?.[sprache] ?? m
 }
 

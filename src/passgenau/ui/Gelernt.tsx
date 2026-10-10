@@ -9,6 +9,13 @@ import type { FachkraftVorlieben } from './vorlieben'
 
 type Ebene = 'kind' | 'ich' | 'team'
 
+/** Systembausteine tragen im Kern einen Schlüssel; hier steht ein lesbarer Name */
+const SYSTEM_NAME: Record<string, string> = {
+  'pg:kernblatt': 'Fragen zum Kernbaustein (Blatt)',
+  'pg:stundenleiste': 'Stundenleiste (Blatt)',
+  'pg:notfall': 'Hilfe-Zeile (Blatt)',
+}
+
 export function Gelernt() {
   const pg = usePg()
   const v = pg.vorname
@@ -34,7 +41,7 @@ export function Gelernt() {
         <div>
           <div className="pg-eyebrow">Lernende Vorlieben</div>
           <h1>Was Passgenau gelernt hat</h1>
-          <p className="pg-lead">Aus Daumen, Tauschen und Rückmeldungen nach der Stunde. Vorlieben verschieben eine Bewertung um höchstens 30 % – Förderziele bleiben das Wichtigste. Alte Erfahrungen verblassen (Halbwertszeit).</p>
+          <p className="pg-lead">Aus Daumen, Tauschen und Rückmeldungen nach der Stunde. Vorlieben verschieben eine Bewertung um höchstens 30 % – Förderziele bleiben das Wichtigste. Alte Erfahrungen verblassen mit der Zeit.</p>
         </div>
       </section>
       {!pg.schalter.lernen && (
@@ -55,15 +62,16 @@ export function Gelernt() {
           <h2>{ebene === 'kind' ? `Was bei ${v} funktioniert` : ebene === 'ich' ? 'Deine Vorlieben' : 'Im Team beliebt'}</h2>
           <p className="pg-leise pg-klein pg-m0">
             {ebene === 'kind'
-              ? `Gilt für alle, die mit ${v} planen · gespeichert verschlüsselt im Dossier · Halbwertszeit 120 Tage`
+              ? `Gilt für alle, die mit ${v} planen · gespeichert verschlüsselt im Dossier · Erfahrungen verblassen nach etwa vier Monaten`
               : ebene === 'ich'
-                ? 'Gilt für alle deine Kinder · nur in deinem persönlichen Tresor · Halbwertszeit 180 Tage'
+                ? 'Gilt für alle deine Kinder · nur in deinem persönlichen Tresor · Erfahrungen verblassen nach etwa einem halben Jahr'
                 : 'Zähler ohne Namen und ohne Kinder, erst ab 3 Personen sichtbar. Fließt mit 20 % in die Vorlieben.'}
           </p>
           {ebene === 'kind' && !pg.lernenKind && pg.schalter.lernen && <p className="pg-hinweisbox gelb klein">Passgenau lernt bei {v} nicht mit (Schalter in „Das weiß ich schon“).</p>}
           <div className="pg-vliste">
             {zeilen.map((z) => {
-              const [name, ...rest] = z.text.split(': ')
+              const [rohName, ...rest] = z.text.split(': ')
+              const name = SYSTEM_NAME[rohName] ?? rohName
               return (
                 <div key={z.schluessel ?? z.text} className="pg-vbalken">
                   <span className="name">{name}</span>
@@ -98,14 +106,6 @@ export function Gelernt() {
         <div className="pg-card">
           <h2>So rechnet Passgenau</h2>
           <dl className="pg-dl">
-            <dt>Zähler</dt>
-            <dd>je Merkmal „gut“ und „schlecht“ (Bewegung, Comic, lange Schritte, einzelner Baustein …)</dd>
-            <dt>Gewicht</dt>
-            <dd>Kind 50 % · du 30 % · Team 20 %</dd>
-            <dt>Deckel</dt>
-            <dd>± 30 % auf die Bewertung, harte Regeln nie</dd>
-            <dt>Stärkstes Signal</dt>
-            <dd>„hat geklappt“ nach der Stunde (3×), Daumen (1×), Tauschen (0,3×); schwere Tage zählen nie negativ</dd>
             <dt>Erkundung</dt>
             <dd>
               <Seg
@@ -119,13 +119,26 @@ export function Gelernt() {
               />
               <span className="pg-leise pg-klein pg-block">so viel bewusst Neues je Stunde – kein Filter-Tunnel</span>
             </dd>
-            <dt>Gewichte V1</dt>
-            <dd className="pg-klein">
-              {Object.entries(gewichte)
-                .map(([n, w]) => `${n} ${Math.round(w * 100)} %`)
-                .join(' · ')}
-            </dd>
           </dl>
+          <details className="pg-rechnung">
+            <summary>So wird bewertet</summary>
+            <dl className="pg-dl">
+              <dt>Zähler</dt>
+              <dd>je Merkmal „gut“ und „schlecht“ (Bewegung, Comic, lange Schritte, einzelner Baustein …)</dd>
+              <dt>Gewicht</dt>
+              <dd>Kind 50 % · du 30 % · Team 20 %</dd>
+              <dt>Deckel</dt>
+              <dd>± 30 % auf die Bewertung, harte Regeln nie</dd>
+              <dt>Stärkstes Signal</dt>
+              <dd>„hat geklappt“ nach der Stunde (3×), Daumen (1×), Tauschen (0,3×); schwere Tage zählen nie negativ</dd>
+              <dt>Gewichte V1</dt>
+              <dd className="pg-klein">
+                {Object.entries(gewichte)
+                  .map(([n, w]) => `${n} ${Math.round(w * 100)} %`)
+                  .join(' · ')}
+              </dd>
+            </dl>
+          </details>
           <div className="pg-hinweisbox pg-mt">
             <Ic n="info" />
             <span>Was Passgenau nicht weiß: ob eine Methode wirkt und warum eine Stunde gut oder schlecht lief. Es merkt sich nur, was bei {pg.ohneKind ? 'deinen Kindern' : v} gut ankam.</span>

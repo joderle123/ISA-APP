@@ -5,10 +5,10 @@ import type { KatalogEintrag, PlanSchritt } from '../typen'
 import * as K from './kern'
 import { teilenErlaubt, usePg, useProfil, type Ort } from './zustand'
 import { Ic } from './zeichen'
-import { Daumen, FettCodes, HeikelBanner, Pill, RolleBadge, VersionsBanner, Warum } from './Teile'
+import { Daumen, FettCodes, HeikelBanner, Pill, RolleBadge, VersionsBanner, Warum, useGekuerzt } from './Teile'
 import { BlattAnsicht } from './Vorschau'
 import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
-import { PHASE_NAME, TF_NAME, datumKurz, SOZIALFORM_NAME } from './texte'
+import { PHASE_NAME, ROLLE_NAME, TF_NAME, datumKurz, SOZIALFORM_NAME } from './texte'
 import { ergebnisText } from './Start'
 
 function quelleIcon(e?: KatalogEintrag): string {
@@ -19,11 +19,13 @@ function quelleIcon(e?: KatalogEintrag): string {
 
 function Hinweise({ e }: { e?: KatalogEintrag }) {
   const pg = usePg()
+  const p = useProfil()
   const [offen, setOffen] = useState(false)
   if (!e) return null
   const x = e as KatalogEintrag & { achtung?: string; vorbereitung?: string; elternbrief?: string }
   const druck = e.typ === 'schritt' ? e.blatt ?? [] : []
-  const material = e.typ === 'schritt' ? e.material : []
+  // Der Katalog führt Schlüssel („handpuppe“, „wuerfel“); lesbar wie im PDF
+  const material = e.typ === 'schritt' ? e.material.map((m) => (pg.katalog ? K.materialName(pg.katalog, m, p.sprache.blatt) : m)) : []
   if (!x.achtung && !x.vorbereitung && !x.elternbrief && !druck.length && !material.length) return null
   const lang = (x.achtung?.length ?? 0) > 140
   return (
@@ -79,6 +81,10 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
   const titel = tx?.titel ?? s.t ?? 'unbekannter Baustein'
   const wc = { profil: p, vorname: pg.vorname, plan: pg.plan }
   const nurDe = p.sprache.blatt === 'fr' && e && !e.sprache.fr
+  // Der Text zeigt höchstens vier Zeilen (CSS); „Ganzer Text“ erscheint nur, wenn wirklich etwas fehlt
+  const textRef = useRef<HTMLSpanElement>(null)
+  const [textOffen, setTextOffen] = useState(false)
+  const gekuerzt = useGekuerzt(textRef, textOffen, tx?.text ?? '')
   if (!e)
     return (
       <article className="pg-schritt fehlt">
@@ -102,7 +108,7 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
       </article>
     )
   return (
-    <article className={'pg-schritt' + (s.erkundung ? ' erk' : '')}>
+    <article className={'pg-schritt' + (s.erkundung ? ' erk' : '') + (textOffen ? ' offen' : '')}>
       <div className="zeit">
         {s.min}
         <small>Min.</small>
@@ -110,10 +116,13 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
       <button type="button" className="pg-schritt-haupt" onClick={oeffnen} aria-label={`${RolleLabel(s.rolle)}: ${titel}, ${s.min} Minuten – antippen für Alternativen`}>
         <span className="zeile1">
           <RolleBadge rolle={s.rolle} />
-          <span className="pg-quelle">
-            <Ic n={quelleIcon(e)} />
-            {tx?.quelle}
-          </span>
+          {/* Die Quelle nur, wenn sie etwas Neues sagt: nicht noch einmal die Rolle („Einstieg“) und nicht „Ritual“ (steht als Pille daneben) */}
+          {tx?.quelle && tx.quelle !== ROLLE_NAME[s.rolle] && !(ritual && tx.quelle === 'Ritual') && (
+            <span className="pg-quelle">
+              <Ic n={quelleIcon(e)} />
+              {tx.quelle}
+            </span>
+          )}
           {s.erkundung && <Pill art="erk">neu ausprobiert</Pill>}
           {ritual && <Pill>Ritual</Pill>}
           {nurDe && <Pill art="warn">nur DE</Pill>}
@@ -121,7 +130,9 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
           {ueberarbeitet && <Pill art="warn">überarbeitet</Pill>}
         </span>
         <h3>{titel}</h3>
-        <span className="text pg-clamp2">{tx?.text}</span>
+        <span ref={textRef} className="text">
+          {tx?.text}
+        </span>
         {tx?.sagen?.[0] && <span className="sagen">„{tx.sagen[0]}“</span>}
       </button>
       <div className="aktionen">
@@ -131,6 +142,11 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
         </button>
       </div>
       <div className="unten">
+        {(gekuerzt || textOffen) && (
+          <button type="button" className="pg-link pg-textmehr" onClick={() => setTextOffen(!textOffen)} aria-expanded={textOffen}>
+            {textOffen ? 'Weniger Text' : 'Ganzer Text'}
+          </button>
+        )}
         {ueberarbeitet && (
           <div className="pg-hinweisbox gelb klein">
             <Ic n="info" />
@@ -142,7 +158,8 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
             </span>
           </div>
         )}
-        <Warum texte={warumListe(s.warum, wc)} />
+        {/* „Ritual – bleibt in der Folge gleich“ steht je Ritual-Karte gleich da: einmal in der Legende links reicht */}
+        <Warum texte={warumListe(s.warum, wc).filter((t) => !(ritual && /^Ritual – bleibt in der Folge gleich/.test(t)))} />
         {s.hinweis && !(s.warum ?? []).includes(s.hinweis) && <p className="pg-leise pg-klein pg-m0">{s.hinweis}</p>}
         <Hinweise e={e} />
       </div>
@@ -297,29 +314,35 @@ export function Ergebnis() {
             {pg.gespeichert[plan.id] && <Pill art="ok" icon="check">gespeichert {pg.gespeichert[plan.id]}</Pill>}
           </div>
         </div>
-        <div className="pg-btnrow">
-          <button type="button" className="pg-btn" onClick={() => pg.setAnsicht('baukasten')}>
-            <Ic n="stift" />
-            Baukasten
-          </button>
-          <button type="button" className="pg-btn" onClick={() => pg.setAnsicht('vorschau')}>
-            <Ic n="augen" />
-            Vorschau
-          </button>
-          <button type="button" className="pg-btn" onClick={() => pg.pdfErzeugen(s.nr)}>
-            <Ic n="drucken" />
-            PDF
-          </button>
-          {s.status === 'gehalten' ? (
-            <Pill art="ok" icon="check">
-              gehalten{s.rueckmeldung ? ' · ' + ergebnisText(s.rueckmeldung.ergebnis) : ''}
-            </Pill>
-          ) : (
-            <button type="button" className="pg-btn primaer" onClick={() => pg.setDlg({ art: 'nachher', nr: s.nr })}>
-              <Ic n="check" />
-              Stunde gehalten
+        <div className="pg-aktionen">
+          <div className="pg-aktgruppe sek">
+            <button type="button" className="pg-btn" onClick={() => pg.setAnsicht('baukasten')}>
+              <Ic n="stift" />
+              Baukasten
             </button>
-          )}
+            <button type="button" className="pg-btn" onClick={() => pg.setAnsicht('vorschau')}>
+              <Ic n="augen" />
+              Vorschau
+            </button>
+          </div>
+          {/* Vor der Stunde ist Drucken der nächste Schritt: „PDF drucken“ ist der Hauptknopf, „Stunde gehalten“ kommt danach
+              (erst wenn gedruckt wurde, wird er hervorgehoben). Mobil steht diese Gruppe als feste Leiste unten. */}
+          <div className="pg-aktgruppe haupt">
+            <button type="button" className="pg-btn primaer" onClick={() => pg.pdfErzeugen(s.nr)}>
+              <Ic n="drucken" />
+              PDF drucken
+            </button>
+            {s.status === 'gehalten' ? (
+              <Pill art="ok" icon="check">
+                gehalten{s.rueckmeldung ? ' · ' + ergebnisText(s.rueckmeldung.ergebnis) : ''}
+              </Pill>
+            ) : (
+              <button type="button" className={'pg-btn' + (s.gedruckt ? ' primaer' : '')} onClick={() => pg.setDlg({ art: 'nachher', nr: s.nr })}>
+                <Ic n="check" />
+                Stunde gehalten
+              </button>
+            )}
+          </div>
         </div>
       </div>
       <VersionsBanner />
@@ -372,7 +395,7 @@ export function Ergebnis() {
           )}
           <div className="pg-legende">
             <Ic n="info" />
-            <span>Antippen ersetzt · Daumen bewerten</span>
+            <span>Antippen ersetzt · Daumen bewerten{plan.n > 1 ? ' · Rituale bleiben in der Folge gleich' : ''}</span>
           </div>
         </nav>
         <section className="pg-ablauf" aria-label="Ablauf der Sitzung">

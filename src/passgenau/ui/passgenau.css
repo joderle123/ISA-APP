@@ -452,6 +452,23 @@ hr.pg-fein {
   gap: 7px;
   align-items: center;
 }
+/* Gruppen im Formular tragen ihre Beschriftung (aria-label) sichtbar über den Chips – sonst verschwimmen Sitzungen, Dauer,
+   Blatt und Sozialform zu einer Chipwolke */
+.pg-fblock .pg-chips[role='group'][aria-label]::before,
+.pg-mitte .pg-card .pg-chips[role='group'][aria-label]::before {
+  content: attr(aria-label);
+  flex: 0 0 100%;
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+.pg-fblock .pg-chips.pg-mb {
+  margin-bottom: 16px;
+}
+.pg-mitte .pg-card .pg-chips.pg-mt {
+  margin-top: 16px;
+}
 .pg-chip {
   display: inline-flex;
   align-items: center;
@@ -606,7 +623,14 @@ hr.pg-fein {
 }
 button.pg-ph {
   cursor: pointer;
-  min-height: max(28px, calc(var(--pg-tipp) - 8px));
+  min-height: max(28px, var(--pg-tipp));
+}
+@media (pointer: coarse) {
+  /* Fließtext-Links („ändern“, „mehr“, „Ansehen und bestätigen“): Tippfläche größer als die Textzeile */
+  .pg-link {
+    padding: 11px 4px;
+    margin: -11px -4px;
+  }
 }
 .pg-gestrichen {
   text-decoration: line-through;
@@ -1031,6 +1055,7 @@ button.pg-ph {
   padding: 0 2px;
 }
 .pg-regler .ticks button {
+  position: relative;
   border: 0;
   background: none;
   font-size: 11.5px;
@@ -1040,6 +1065,14 @@ button.pg-ph {
   border-radius: 6px;
   cursor: pointer;
   padding: 0;
+}
+@media (pointer: coarse) {
+  /* sichtbar bleibt das Feld 22 px, tippbar sind 44 px (Abstand der sieben Zahlen ≈ 45 px) */
+  .pg-regler .ticks button::after {
+    content: '';
+    position: absolute;
+    inset: -11px -10px;
+  }
 }
 .pg-regler .ticks button.an {
   background: var(--accent-soft);
@@ -1098,8 +1131,21 @@ button.pg-ph {
   margin-bottom: 14px;
 }
 .pg-ekopf h2 {
-  font-size: 22px;
+  font-size: 26px;
   margin: 2px 0 2px;
+}
+/* Aktionen im Kopf: links Baukasten/Vorschau, rechts der Hauptweg (PDF drucken, Stunde gehalten) */
+.pg-aktionen {
+  display: flex;
+  gap: 8px 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.pg-aktgruppe {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .pg-egrid {
   display: grid;
@@ -1265,6 +1311,25 @@ button.pg-ph {
   display: block;
   font-size: 13.5px;
   color: var(--ink-2);
+}
+/* Anleitung höchstens vier Zeilen; „Ganzer Text“ (Ergebnis.tsx) klappt auf. Das Blatt-Teil (.blatt) bleibt vollständig. */
+.pg-schritt:not(.blatt) .text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+.pg-schritt.offen .text {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+.pg-schritt .unten .pg-textmehr {
+  display: block;
+  margin: 0 0 6px;
+  font-size: 12.5px;
 }
 .pg-schritt .sagen {
   display: block;
@@ -1509,6 +1574,17 @@ button.pg-ph {
 }
 .pg-pdfplatz {
   background: var(--surface-2);
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+.pg-pdfplatz .pg-spin {
+  margin-right: 8px;
+}
+.pg-pdfplatz > span {
+  display: inline-flex;
+  align-items: center;
 }
 .pg-pdfseite img {
   display: block;
@@ -1616,6 +1692,11 @@ button.pg-ph {
 .pg-sbar.bad .bahn i {
   background: var(--pg-bad);
 }
+.pg-vkopf .pg-aufblatt {
+  padding: 0 12px;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+}
 .pg-vorschau {
   display: flex;
   gap: 20px;
@@ -1713,6 +1794,24 @@ button.pg-ph {
 }
 .pg-sk .skt b {
   font-size: 13.5px;
+}
+.pg-sk .skt > .pg-pill {
+  /* der ganze Bausteintext steht in dieser Pille: umbrechen und nach drei Zeilen kürzen statt über die Karte zu laufen */
+  display: block;
+  white-space: normal;
+  max-width: 100%;
+  text-align: left;
+  border-radius: 9px;
+  padding: 4px 9px;
+  line-height: 1.35;
+  font-weight: 560;
+}
+.pg-sk .skt > .pg-pill .pg-clamp3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
 }
 .pg-sk .skt small {
   display: block;
@@ -1837,7 +1936,7 @@ button.pg-ph {
   background: transparent;
   border-radius: 8px;
   padding: 2px 10px;
-  min-height: 28px;
+  min-height: max(28px, var(--pg-tipp));
   font-size: 12px;
   color: var(--muted);
   cursor: pointer;
@@ -1906,6 +2005,21 @@ button.pg-ph {
 .pg-vbalken small {
   color: var(--muted);
   text-align: right;
+}
+.pg-rechnung {
+  margin-top: 12px;
+}
+.pg-rechnung summary {
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 650;
+  color: var(--accent);
+  min-height: var(--pg-tipp);
+  display: flex;
+  align-items: center;
+}
+.pg-rechnung .pg-dl {
+  margin-top: 4px;
 }
 
 /* --- Praxis --------------------------------------------------------------- */
@@ -2102,6 +2216,24 @@ dialog.pg-dlg .ic {
   font-size: 13px;
   color: var(--ink-2);
 }
+.pg-alt p.pg-kurz {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+.pg-alt p.pg-kurz.offen {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+.pg-alt .pg-textmehr {
+  display: block;
+  margin-top: 4px;
+  font-size: 12.5px;
+}
 .pg-gross3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2225,7 +2357,8 @@ dialog.pg-dlg .ic {
   pointer-events: none;
 }
 dialog .pg-hinweise {
-  bottom: 84px;
+  /* im Dialog über der Fußleiste (Fußtext und Knöpfe bleiben frei) */
+  bottom: 96px;
 }
 .pg-toast {
   pointer-events: auto;
@@ -2243,6 +2376,9 @@ dialog .pg-hinweise {
 .pg-toast .ic {
   color: #9fe0a8;
 }
+.pg-toast.warn {
+  background: #4a3200;
+}
 .pg-toast.warn .ic {
   color: #ffd27a;
 }
@@ -2254,8 +2390,8 @@ dialog .pg-hinweise {
   border: 0;
   background: none;
   color: rgba(255, 255, 255, 0.8);
-  width: 32px;
-  height: 32px;
+  width: max(32px, var(--pg-tipp));
+  height: max(32px, var(--pg-tipp));
   border-radius: 8px;
   display: grid;
   place-items: center;
@@ -3319,11 +3455,11 @@ dialog .pg-hinweise {
   .pg-leiste {
     padding: 10px 16px 0;
   }
-  .pg-unterreiter button span {
-    display: none;
-  }
-  .pg-unterreiter button[aria-current='page'] span {
-    display: inline;
+  /* Unterreiter behalten ihre Beschriftung (Planen + Vorlieben + Aus der Praxis ≈ 330 px); Hub- und Kind-Chip stehen darunter */
+  .pg-leiste-rechts {
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-between;
   }
   .pg-kindchip small,
   .pg-hubchip span,
@@ -3352,10 +3488,38 @@ dialog .pg-hinweise {
     gap: 10px;
     margin: 14px 0 16px;
   }
+  /* Weg-Karten als Zeilen (≈ 95 px statt 190 px): Symbol, Titel, Dauer, Beschreibung */
   .pg-weg {
-    padding: 16px;
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+    grid-template-areas:
+      'icon titel zeit'
+      'icon text text';
+    column-gap: 12px;
+    row-gap: 2px;
+    align-items: center;
+    padding: 12px 14px;
   }
-  .pg-weg ul {
+  .pg-weg .wicon {
+    grid-area: icon;
+    width: 40px;
+    height: 40px;
+    align-self: start;
+  }
+  .pg-weg h3 {
+    grid-area: titel;
+    font-size: 17px;
+  }
+  .pg-weg .pg-pill.zeit {
+    grid-area: zeit;
+    position: static;
+  }
+  .pg-weg p {
+    grid-area: text;
+    font-size: 13px;
+  }
+  .pg-weg ul,
+  .pg-weg .los {
     display: none;
   }
   .pg-folgeband {
@@ -3470,6 +3634,84 @@ dialog .pg-hinweise {
   }
   .pg-kopf {
     margin-bottom: 12px;
+  }
+  .pg-ekopf h2 {
+    font-size: 22px;
+  }
+  /* Ergebnis: PDF drucken und Stunde gehalten als feste Leiste am unteren Rand */
+  .pg-aktionen {
+    width: 100%;
+  }
+  .pg-aktgruppe.haupt {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    flex-wrap: nowrap;
+    padding: 8px 16px calc(8px + env(safe-area-inset-bottom));
+    background: var(--surface);
+    border-top: 1px solid var(--line);
+    box-shadow: 0 -8px 20px -14px rgba(14, 22, 40, 0.35);
+  }
+  .pg-aktgruppe.haupt .pg-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 48px;
+  }
+  .pg-aktgruppe.haupt .pg-pill {
+    flex: 1 1 0;
+    justify-content: center;
+    min-height: 48px;
+  }
+  /* Formulare: der Hauptknopf („Folge bauen“, „Stunde bauen“, „Weiter“) bleibt unten sichtbar */
+  .pg-main .pg-btn.primaer.gross.breit {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    width: auto;
+    z-index: 30;
+    box-shadow: var(--shadow-3);
+  }
+  /* Hinweisleiste unten am Rand, über der festen Aktionsleiste bzw. dem festen Hauptknopf */
+  .pg:has(.pg-aktgruppe.haupt, .pg-main .pg-btn.primaer.gross.breit) .pg-hinweise {
+    bottom: calc(80px + env(safe-area-inset-bottom));
+  }
+  dialog .pg-hinweise {
+    bottom: 132px;
+  }
+  /* Vorschau: erst die tippbare Liste der Teile, dann die Seiten (seitlich wischbar, damit der Text lesbar bleibt) */
+  .pg-vorschau.mitpdf aside {
+    order: -1;
+  }
+  .pg-vkopf {
+    width: 100%;
+  }
+  .pg-vkopf .pg-aufblatt {
+    order: 3;
+    flex: 1 1 100%;
+    padding: 0;
+    border: 0;
+  }
+  .pg-vkopf .pg-btn.primaer {
+    margin-left: auto;
+  }
+  .pg-vorschau-pdf {
+    overflow-x: auto;
+  }
+  .pg-vorschau-pdf .pg-pdfseiten {
+    min-width: 560px;
+  }
+  /* Baukasten-Suche: jede Filtergruppe eine Zeile zum Wischen statt acht Zeilen Chips */
+  .pg-suchkarte .pg-chips[role='group'] {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+  .pg-suchkarte .pg-chips[role='group'] .pg-chip {
+    flex: none;
   }
   .pg-er .erk-kopf {
     flex-wrap: wrap;
