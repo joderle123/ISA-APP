@@ -56,10 +56,10 @@ kein Hochhalten und Zählen mehr, dafür Erzählzeit, Gespräch und Bewegung.
 - *Ich: Bedürfnisse & Stärken:* Tank-Detektiv ★, Was steckt dahinter?, Kleiner Schritt ★, Je nach Ort, Zwei Brillen ★, Stärke im Einsatz ★, Vergleichs-Falle
 - *Gefühle verstehen:* Gefühls-Funk, Pult-Tausch ★, Frühwarn-Radar ★, Gefühls-Mixer
 - *Anspannung & Skills:* Pegel-Reihe ★, Innen/Außen ★, Undercover-Skill ★, Sinnes-Jagd, Gelb oder Rot?, Skill-Sprechstunde ★, Ampel-Woche, Kipp-Punkt ★, Blackout, Mein Ort
-- *Gedanken & Glaubenssätze:* Gedanken-Weiche ★, Tatsache oder Urteil? ★
+- *Gedanken & Glaubenssätze:* Gedanken-Weiche ★, Woher kommt der Satz?, Tatsache oder Urteil? ★, Satz-Werkstatt, Beweis-Jäger ★, Haltungs-Switch
 - *Kommunikation & Grenzen:* Funkstille – der Chat kippt ★, Hitze-Ecken ★
 - *Konflikt, Druck & Mobbing:* Story-Staffel: Der Streit ★, Deal oder kein Deal ★, Druck-Chat ★
-- *Digital, Gesundheit & Abschluss:* Teilen oder nicht? ★
+- *Digital, Gesundheit & Abschluss:* Trick erkannt ★, Teilen oder nicht? ★, Gerücht-Staffel ★, Red Flag, Akku-Woche ★, Später-Monster, Jahres-Quest (Abschluss des Jahres)
 
 Die übrigen 24 stehen im Katalog (`docs/SPIELEKATALOG.md`) mit Ablauf, ELDiB-Codes und Sicherheitsnotizen und
 erscheinen in der App als „bald“. Für jede Einheit gibt es schon heute ein gebautes Spiel: Fehlt das Katalogspiel
