@@ -1255,7 +1255,7 @@ export function ohneKindProfil(wahl: { alterJahre: number; sprache: Sprache; zie
     layout: layoutAusStufe(stufe),
     sprache: { blatt: wahl.sprache, woerter: [] },
     zugang: { lesen: lesen as 0 | 1 | 2 | 3, schreiben: schreiben as 0 | 1 | 2 | 3, bild: stufe === 'C1' ? 3 : stufe === 'C2' ? 2 : 1, tempo: 'normal', struktur: 'normal', quelle: ['alter'] },
-    ziele: wahl.ziele.map((code, i) => ({ code, ich: (k && ichSatz(k, code)) || '', quelle: 'andere', prio: i + 1 })),
+    ziele: wahl.ziele.map((code, i) => ({ code, ich: (k && ichSatz(k, code, wahl.alterJahre)) || '', quelle: 'andere', prio: i + 1 })),
     erreicht: [],
     themen: [],
     vorsicht: [],

@@ -635,10 +635,14 @@ export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; t
   return { titel, text: kurz([...aufgaben.slice(1), ...inhalt].join(' · ') || artName(haupt?.art ?? '', sprache), 220), quelle: quelleText(e, sprache) }
 }
 
-/** Ich-Sätze aus eldib-ich.json: französisch für alle Codes, deutsch nur, wo die Bank „die/der Lehrer:in“ schreibt */
-const ICH = ELDIB_ICH as Record<string, { de?: string; fr?: string }>
+/** Ich-Sätze aus eldib-ich.json: `fr` (erster Bank-Satz), `de` (ohne „die/der Lehrer:in“), `frIch` (jeder Bank-Satz
+ *  übersetzt) und `allg` (altersneutral aus der Beschreibung – der erste Bank-Satz ist oft ein Beispiel für Kleine) */
+const ICH = ELDIB_ICH as Record<string, { de?: string; fr?: string; frIch?: string[]; allg?: { de?: string; fr?: string } }>
+/** ab diesem Alter der altersneutrale Satz statt des Beispiels (V-13: „Ich setze mich in den Morgenkreis“) */
+const ALLG_AB = 10
 
-export function ichSatz(k: Katalog, code: string): string | undefined {
+export function ichSatz(k: Katalog, code: string, alter?: number): string | undefined {
+  if (alter !== undefined && alter >= ALLG_AB && ICH[code]?.allg?.de) return ICH[code].allg!.de
   return ICH[code]?.de ?? intern(k).eldib.items[code]?.ich[0]
 }
 
@@ -648,10 +652,17 @@ export function eldibKurz(k: Katalog, code: string, sprache: Sprache = 'de'): st
 
 /** Ich-Satz eines Ziels in der Sprache des Blatts: der des Profils, sonst der erste der ELDiB-Bank. Auf Französisch der
  *  des Profils, wenn er französisch ist, sonst der aus eldib-ich.json (Testlauf 10: « Objectifs : Terminer » ohne Satz). */
-export function zielSatz(k: Katalog, p: { ziele: { code: string; ich: string }[] }, code: string, sprache: Sprache): string | undefined {
+export function zielSatz(k: Katalog, p: { ziele: { code: string; ich: string }[]; alterJahre?: number }, code: string, sprache: Sprache): string | undefined {
   const eigen = p.ziele.find((z) => z.code === code)?.ich?.trim()
-  if (sprache === 'fr') return eigen && /^(je\b|j['’]|moi\b)/i.test(eigen) ? eigen : ICH[code]?.fr
-  return eigen || ichSatz(k, code)
+  if (sprache === 'fr') {
+    if (eigen && /^(je\b|j['’]|moi\b)/i.test(eigen)) return eigen
+    // deutscher Satz des Profils: ist es ein Satz der Bank, dessen Übersetzung; sonst der altersneutrale
+    const i = eigen ? (intern(k).eldib.items[code]?.ich ?? []).findIndex((x) => x.trim() === eigen) : -1
+    if (i >= 0 && ICH[code]?.frIch?.[i]) return ICH[code].frIch![i]
+    if (eigen || (p.alterJahre ?? 0) >= ALLG_AB) return ICH[code]?.allg?.fr ?? ICH[code]?.fr
+    return ICH[code]?.fr
+  }
+  return eigen || ichSatz(k, code, p.alterJahre)
 }
 
 export function eldibStufe(k: Katalog, code: string): number {

@@ -208,34 +208,22 @@ function rolleName(x: PlanSchritt, e: KatalogEintrag | undefined, sprache: Sprac
   return ROLLE_NAME[x.rolle]?.[sprache] ?? x.rolle
 }
 
-/** „Der oder die Jugendliche“, „die Person“ → Name (Planblatt für eine Person). „Die Person“ nur, wenn der Satz danach
- *  nicht mit „sie/ihr“ bzw. „elle/prête …“ auf sie zurückgreift – das Geschlecht kennt Passgenau nicht. */
+/** „Der oder die Jugendliche“, „er oder sie“ → Name (Planblatt für eine Person). „Die Person“ / « la personne » nicht:
+ *  in den Inhalten meint es inzwischen fast nur andere oder erfundene Personen („Die Fachkraft spielt die Person“). */
 function mitName(t: string, name: string, sp: Sprache): string {
-  const person = (re: RegExp, bezug: RegExp) => (s: string) =>
-    s
-      .split(/((?<=[.!?:;])\s+)/)
-      .map((satz, i) => (i % 2 ? satz : satz.replace(re, (m, ...a) => (bezug.test(satz.slice((a[a.length - 2] as number) + m.length)) ? m : name))))
-      .join('')
   if (sp === 'fr') {
     const de = /^[aeiouyéèêàâîôûh]/i.test(name) ? `d’${name}` : `de ${name}`
-    return person(
-      /\b[Ll]a personne\b(?! (inventée|imaginaire|qui|dont|suivante|concernée|visée|d['’]en face))/g,
-      /\b(elle|elle-même|prête|assise|seule|contente|gênée|fatiguée|énervée|perdue|bloquée|sûre)\b/,
-    )(
-      t
-        .replace(/\bdu ou de la jeune\b/g, de)
-        .replace(/\bau ou à la jeune\b/g, `à ${name}`)
-        .replace(/\b[Ll]e ou la jeune\b/g, name)
-        .replace(/\b[Ii]l ou elle\b/g, name),
-    )
+    return t
+      .replace(/\bdu ou de la jeune\b/g, de)
+      .replace(/\bau ou à la jeune\b/g, `à ${name}`)
+      .replace(/\b[Ll]e ou la jeune\b/g, name)
+      .replace(/\b[Ii]l ou elle\b/g, name)
   }
-  return person(/\b[Dd]ie Person\b(?!,? (die|der|aus|gegenüber|links|rechts|neben))/g, /\b(sie|ihr|ihre[nmrs]?)\b/)(
-    t
-      .replace(/\b[Dd](er oder die|en oder die) Jugendliche\b/g, name)
-      .replace(/\b[Dd]em oder der Jugendlichen\b/g, name)
-      .replace(/\b[Ee]r oder sie\b/g, name)
-      .replace(/\b[Ii]hm oder ihr\b/g, name),
-  )
+  return t
+    .replace(/\b[Dd](er oder die|en oder die) Jugendliche\b/g, name)
+    .replace(/\b[Dd]em oder der Jugendlichen\b/g, name)
+    .replace(/\b[Ee]r oder sie\b/g, name)
+    .replace(/\b[Ii]hm oder ihr\b/g, name)
 }
 
 /** Sätze mit einer Diagnose als Beispiel weglassen (Blind-Bewertung 8: „im Autismus-Spektrum“ ohne Anlass im Planblatt). */
