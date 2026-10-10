@@ -248,7 +248,7 @@
     },
     "fr": {
       "titel": "Ma boussole de skills",
-      "untertitel": "Onze domaines, une année : à la fin de chaque module, tu notes quel skill t’aide dans ce domaine de ton quotidien.",
+      "untertitel": "Onze domaines, une année : à la fin de chaque thème, tu notes quel skill t’aide dans ce domaine de ton quotidien.",
       "bausteine": [
         {
           "art": "text",
@@ -256,7 +256,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "À la fin de chaque module : quel skill t’aide dans ce domaine – et quand l’utilises-tu ? Note les deux dans la case qui convient.",
+          "text": "À la fin de chaque thème : quel skill t’aide dans ce domaine – et quand l’utilises-tu ? Note les deux dans la case qui convient.",
           "hinweis": "Feuillette pour cela ton Skills-Pass. Un skill peut être un exercice, une phrase que tu te dis ou quelque chose que tu fais."
         },
         {
@@ -417,10 +417,10 @@
         }
       ],
       "lehrer": {
-        "ziel": "À la fin de chaque module, les jeunes notent quel skill les aide dans ce domaine de leur quotidien, et quand. Cela donne un aperçu personnel de toute l’année.",
+        "ziel": "À la fin de chaque thème, les jeunes notent quel skill les aide dans ce domaine de leur quotidien, et quand. Cela donne un aperçu personnel de toute l’année.",
         "ablauf": [
           "Séance 1 (10 min) : distribuer la feuille, montrer les onze domaines et expliquer : la valise de l’année 1 range les skills selon le niveau de tension, la boussole selon les domaines de vie.",
-          "À la fin de chaque module (5 min, avant le Skills-Pass) : feuilleter le Skills-Pass en arrière. Question : « Quel skill t’aide dans ce domaine – et quand ? » Pour qui n’en a pas encore : écrire « encore ouvert ».",
+          "À la fin de chaque thème (5 min, avant le Skills-Pass) : feuilleter le Skills-Pass en arrière. Question : « Quel skill t’aide dans ce domaine – et quand ? » Pour qui n’en a pas encore : écrire « encore ouvert ».",
           "Court tour de table : chaque personne ne dit que le nom de son skill. Noter au tableau les skills identiques – cela montre ce qui porte tout le groupe.",
           "Module 10 : remplir l’exercice 2 et la case « Mon skill le plus important cette année », puis faire un bilan ensemble."
         ],
