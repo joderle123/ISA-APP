@@ -545,8 +545,10 @@ function folgeTransferSchritt(c: Kontext, min: number, kerne: string[], uebertra
     const q = sp === 'fr' ? `« ${t} »` : `„${t}“`
     return w ? `${q} (${w})` : q
   }
-  const de = eintraege.map((x) => nenne(x, 'de')).join(', ') + (uebertragen.length ? ', dazu der Plan für den Alltag' : '')
-  const fr = eintraege.map((x) => nenne(x, 'fr')).join(', ') + (uebertragen.length ? ', et le plan pour le quotidien' : '')
+  // Kinder: nur die Titel (Blind-Bewertung 9: lange Werkzeug-Klammern, „Plan für den Alltag“, den es bei Kindern nicht gab)
+  const nur = (x: KatalogEintrag, sp: 'de' | 'fr') => (c.alter < 12 ? (sp === 'fr' ? `« ${x.typ === 'schritt' && x.fr ? x.fr.titel : textVon(x, 'de').titel} »` : `„${textVon(x, 'de').titel}“`) : nenne(x, sp))
+  const de = eintraege.map((x) => nur(x, 'de')).join(', ') + (uebertragen.length && c.alter >= 12 ? ', dazu der Plan für den Alltag' : '')
+  const fr = eintraege.map((x) => nur(x, 'fr')).join(', ') + (uebertragen.length && c.alter >= 12 ? ', et le plan pour le quotidien' : '')
   // das Blatt der Sitzung hält fest, was bleibt – hier nur reden (Blind-Bewertung 8: „Kern und Blatt fragen dasselbe doppelt“)
   const mitBlatt = c.weg !== 'leicht' && blattModus(c) !== 'ohne'
   if (c.alter < 12)

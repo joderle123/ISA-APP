@@ -782,8 +782,15 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
       ...(lehrerQuelle?.achtung ? { achtung: lehrerQuelle.achtung } : {}),
     },
   }
+  // Jugendliche: kein Herz als Symbol (Blind-Bewertung 9: „Herz-Symbol auf einem Konfliktblatt für 17-Jährige“) –
+  // Übertragen mit Pfeil, Rückblick mit Fahne, sonst eine Sprechblase
+  const kernRef = (s?.schritte ?? []).find((x) => x.rolle === 'kern')?.ref
+  const jugendBild = alter >= 12 && (bereich === 'gefuehle' || bereich === 'selbstreflexion')
+    ? kernRef === 'pg:uebertragen' ? 'icon:arrow-right' : kernRef === 'pg:folge-transfer' ? 'icon:flag' : 'icon:message-circle'
+    : undefined
   const blatt: Blatt = {
     id: `pg-${hash8(plan.id + '|' + nr + '|' + (s?.blatt?.bausteine.map((b) => b.ref + (b.ueber ? JSON.stringify(b.ueber) : '')).join(',') ?? ''))}`,
+    ...(jugendBild ? { bild: jugendBild } : {}),
     bereich,
     thema,
     stufen: [stufe],
