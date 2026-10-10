@@ -397,7 +397,8 @@ await pruefung('Vorlieben (11.5): 10 Rückmeldungen kippen ein knappes Ranking, 
   const c0 = kontext(k, p, a, leer())
   // knappes Paar mit verschiedenem Hauptformat – unter den Spielen, sonst unter Bewegung und Ruhe (welche Rolle eines hat,
   // hängt vom Katalog ab)
-  const listeVon = (rolle: Rolle) => (k.nachRolle.get(rolle) ?? []).filter((e) => !e.id.startsWith('pg:') && pruefe(e, c0, {}) === null).map((e) => bewerte(e, c0, { phase: 'ueben' })).sort((x, y) => rang(x, y, 'sim'))
+  // ohne Themen-Rahmen (th:): die kommen nur zum Thema der Stunde und tragen dafür einen festen Vorrang
+  const listeVon = (rolle: Rolle) => (k.nachRolle.get(rolle) ?? []).filter((e) => !e.id.startsWith('pg:') && !(e.typ === 'schritt' && e.nurZumThema) && pruefe(e, c0, {}) === null).map((e) => bewerte(e, c0, { phase: 'ueben' })).sort((x, y) => rang(x, y, 'sim'))
   let paar: [ReturnType<typeof listeVon>[number], ReturnType<typeof listeVon>[number]] | null = null
   let liste: ReturnType<typeof listeVon> = []
   for (const rolle of ['spiel', 'bewegung', 'regulation'] as Rolle[]) {
@@ -407,7 +408,7 @@ await pruefung('Vorlieben (11.5): 10 Rückmeldungen kippen ein knappes Ranking, 
     for (let j = i + 1; j < Math.min(liste.length, i + 4); j++)
       // das obere hat das Format des unteren gar nicht (sonst lernt es mit)
       // und stammt aus einer anderen Quellart (sonst lernt es über die Quelle mit)
-      if (liste[i].s - liste[j].s < 0.02 && liste[i].e.format[0] && liste[j].e.format[0] && !liste[i].e.format.includes(liste[j].e.format[0]) && liste[i].e.typ === 'schritt' && liste[j].e.typ === 'schritt' && liste[i].e.quelle.art !== liste[j].e.quelle.art) {
+      if (liste[i].s - liste[j].s < 0.02 && liste.filter((b) => b.e.format[0] === liste[j].e.format[0] && b.e.id !== liste[j].e.id && !b.e.format.some((f) => liste[i].e.format.includes(f))).length >= 10 && liste[i].e.format[0] && liste[j].e.format[0] && !liste[i].e.format.includes(liste[j].e.format[0]) && liste[i].e.typ === 'schritt' && liste[j].e.typ === 'schritt' && liste[i].e.quelle.art !== liste[j].e.quelle.art) {
         paar = [liste[i], liste[j]]
         break
       }
@@ -415,7 +416,8 @@ await pruefung('Vorlieben (11.5): 10 Rückmeldungen kippen ein knappes Ranking, 
   if (!soll(!!paar, 'kein knappes Paar gefunden')) return
   const [oben, unten] = paar!
   const fmt = unten.e.format[0]
-  const andere = liste.filter((b) => b.e.format[0] === fmt && b.e.id !== unten.e.id).slice(0, 10)
+  // Rückmeldungen nur zu Bausteinen ohne ein Format des oberen (sonst lernt das obere mit, z. B. „musik, spiel“ gegen „spiel“)
+  const andere = liste.filter((b) => b.e.format[0] === fmt && b.e.id !== unten.e.id && !b.e.format.some((f) => oben.e.format.includes(f))).slice(0, 10)
   let v = leer()
   for (const [i, b] of andere.entries()) v = rueckmelden(v, ereignis(i % 2 ? 'daumen_hoch' : 'geklappt', { t: `2026-10-0${1 + (i % 8)}T10:00`, baustein: b.e.id, grund: i % 2 ? 'passt-gut' : null, tags: { rolle: 'spiel' } }), b.e)
   const c1 = kontext(k, p, a, v)

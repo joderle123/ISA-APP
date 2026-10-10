@@ -1,0 +1,3341 @@
+[
+  {
+    "id": "th:gefuehle-erkennen-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Gesichter raten",
+    "text": "Die Fachkraft macht ein Gesicht, das ein Gefühl zeigt (zum Beispiel froh, müde, überrascht oder ärgerlich), und sagt dabei kein Wort. Das Kind rät, welches Gefühl das sein könnte, und zeigt oder sagt es. Dann macht das Kind ein Gesicht, und die Fachkraft rät; nach drei Gesichtern ist Schluss.",
+    "sagen": [
+      "Heute geht es um Gefühle und darum, wie man sie bei anderen erkennt. Dazu ein kleines Ratespiel.",
+      "Ich mache ein Gesicht ohne Worte. Was könnte das sein?",
+      "Danke, das habe ich erkannt."
+    ],
+    "wennEsKippt": "Mag das Kind sein Gesicht nicht zeigen, rät es nur, und die Fachkraft macht alle Gesichter. Rät das Kind falsch, sagt die Fachkraft einfach, was das Gesicht zeigen sollte, ohne zu bewerten.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Devine le visage",
+      "text": "L’adulte fait un visage qui montre une émotion (par exemple la joie, la fatigue, la surprise ou la colère) sans dire un mot. L’enfant devine de quelle émotion il s’agit et la montre ou la dit. Ensuite, l’enfant fait un visage et l’adulte devine ; après trois visages, c’est fini.",
+      "sagen": [
+        "Aujourd’hui, on parle des émotions et de la façon de les reconnaître chez les autres. On commence par un petit jeu de devinettes.",
+        "Je fais un visage sans parler. Qu’est-ce que ça pourrait être ?",
+        "Merci, j’ai reconnu l’émotion."
+      ],
+      "wennEsKippt": "Si l’enfant ne veut pas montrer son visage, il devine seulement et l’adulte fait tous les visages. Si l’enfant se trompe, l’adulte dit simplement ce que le visage voulait montrer, sans juger.",
+      "kurz": "Montrer une émotion sans mots · l’enfant devine · puis échange"
+    },
+    "kurz": "Gefühl lautlos im Gesicht zeigen · Kind rät · dann tauschen"
+  },
+  {
+    "id": "th:gefuehle-erkennen-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Gefühle gehen",
+    "text": "Die Fachkraft geht ein Stück durch den Raum und zeigt allein durch Tempo und Haltung ein Gefühl, zum Beispiel müde (langsam, hängende Schultern) oder froh (leicht und schwingend). Das Kind rät das Gefühl und sagt, woran es das erkannt hat: am Tempo, an den Armen oder am Gesicht. Dann geht das Kind ein Gefühl vor, und die Fachkraft rät; drei bis vier Runden, alles ohne Geräusch.",
+    "sagen": [
+      "Gefühle erkennt man nicht nur im Gesicht, sondern auch am Gehen. Das probieren wir jetzt aus.",
+      "Welches Gefühl geht da gerade durch den Raum?",
+      "Woran hast du es erkannt?"
+    ],
+    "wennEsKippt": "Im Sitzen: Das Gefühl nur mit Armen, Schultern und Gesicht auf dem Stuhl zeigen. Mag das Kind nicht vorgehen, rät es nur, und die Fachkraft geht alle Gefühle.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La marche des émotions",
+      "text": "L’adulte traverse la pièce en montrant une émotion uniquement par son rythme et sa posture, par exemple la fatigue (lentement, épaules tombantes) ou la joie (léger et dansant). L’enfant devine l’émotion et dit à quoi il l’a reconnue : au rythme, aux bras ou au visage. Ensuite, l’enfant marche une émotion et l’adulte devine ; trois ou quatre tours, sans bruit.",
+      "sagen": [
+        "On reconnaît les émotions pas seulement au visage, mais aussi à la façon de marcher. On va l’essayer.",
+        "Quelle émotion traverse la pièce en ce moment ?",
+        "À quoi l’as-tu reconnue ?"
+      ],
+      "wennEsKippt": "Assis : montrer l’émotion seulement avec les bras, les épaules et le visage sur la chaise. Si l’enfant ne veut pas marcher, il devine seulement et l’adulte joue toutes les émotions.",
+      "kurz": "Marcher une émotion · l’enfant devine et dit à quoi il l’a vu"
+    },
+    "kurz": "Gefühl durch Tempo und Haltung zeigen · Kind rät, woran"
+  },
+  {
+    "id": "th:gefuehle-erkennen-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Stimme, Haltung oder Gesicht?",
+    "text": "Die Fachkraft zeigt dem Kind drei Gefühle auf je einem Weg: eins nur mit der Stimme (ein Satz, Gesicht hinter einem Blatt), eins nur mit der Haltung (stumm, Gesicht hinter dem Blatt) und eins nur mit dem Gesicht (stumm). Das Kind nennt jeweils gleich das Gefühl, das es erkennt, und zeigt am Ende auf Ohr, Schultern oder Auge: Wobei war es am leichtesten? Dann zeigt das Kind ein Gefühl auf seinem besten Weg, und die Fachkraft nennt es.",
+    "sagen": [
+      "Heute ging es darum, Gefühle bei anderen zu erkennen. Ich zeige dir gleich Gefühle auf drei verschiedenen Wegen.",
+      "Welches Gefühl ist das? Und wobei hast du es am leichtesten erkannt: Ohr, Schultern oder Auge?",
+      "Du darfst auch „Pass“ sagen."
+    ],
+    "wennEsKippt": "Findet das Kind das Gefühl nicht, nennt die Fachkraft zwei zur Auswahl, und das Kind zeigt auf eins. Das Kind darf auch „Pass“ sagen.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [
+      "papier"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Voix, posture ou visage ?",
+      "text": "L’adulte tient une feuille devant son visage et montre à l’enfant trois émotions, par un seul moyen à la fois : la voix (une phrase), puis la posture (en silence), puis le visage sans la feuille (en silence). L’enfant nomme tout de suite l’émotion qu’il reconnaît et montre à la fin l’oreille, les épaules ou l’œil : avec quoi était-ce le plus facile ? Puis l’enfant montre une émotion par le moyen qui lui convient le mieux, et l’adulte la nomme.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de reconnaître les émotions des autres. Je vais te montrer des émotions de trois façons différentes.",
+        "Quelle émotion est-ce ? Et avec quoi l’as-tu reconnue le plus facilement : l’oreille, les épaules ou l’œil ?",
+        "Tu peux aussi dire « Je passe »."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas l’émotion, l’adulte en propose deux, et l’enfant montre celle qui convient. L’enfant peut aussi dire « Je passe ».",
+      "kurz": "Émotion par la voix · la posture · le visage · l’enfant choisit"
+    },
+    "kurz": "Gefühl nur per Stimme · Haltung · Gesicht · Kind wählt den besten Weg"
+  },
+  {
+    "id": "th:gefuehle-erkennen-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Tschüss mit Stimme",
+    "text": "Die Fachkraft sagt „Tschüss“ so, dass man ein Gefühl hört, zum Beispiel müde, froh oder überrascht, und das Kind sagt, welches Gefühl es gehört hat. Dann sagt das Kind sein „Tschüss“ mit einem Gefühl seiner Wahl, und die Fachkraft nennt, was sie hört. Zwei Runden genügen.",
+    "sagen": [
+      "Heute ging es darum, Gefühle bei anderen zu erkennen. Zum Schluss hörst du mein Tschüss und sagst, welches Gefühl darin steckt.",
+      "Welches Gefühl hörst du in meinem Tschüss?",
+      "Jetzt bist du dran. Ich höre genau zu."
+    ],
+    "wennEsKippt": "Fällt dem Kind kein Gefühl ein, nennt die Fachkraft drei zur Auswahl, und das Kind sagt sein Tschüss in einem davon. Das Kind darf auch nur zuhören und „Pass“ sagen.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Au revoir avec la voix",
+      "text": "L’adulte dit « au revoir » de façon à faire entendre une émotion, par exemple fatigué, joyeux ou surpris, et l’enfant dit laquelle il a entendue. Puis l’enfant dit son « au revoir » avec une émotion de son choix, et l’adulte dit ce qu’il entend. Deux tours suffisent.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de reconnaître les émotions des autres. Pour finir, tu écoutes mon au revoir et tu dis quelle émotion tu y entends.",
+        "Quelle émotion entends-tu dans mon au revoir ?",
+        "Maintenant, c’est ton tour. J’écoute bien."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas d’émotion, l’adulte en propose trois, et l’enfant dit son au revoir avec l’une d’elles. L’enfant peut aussi seulement écouter et dire « Je passe ».",
+      "kurz": "Au revoir avec une émotion dans la voix · l’enfant la nomme · échanger"
+    },
+    "kurz": "Tschüss mit Gefühl in der Stimme · Kind nennt es · tauschen"
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Farbstrich des Tages",
+    "text": "Auf dem Tisch liegen Papier und Buntstifte. Das Kind wählt die Farbe, die gerade zu ihm passt, und zieht einen Strich oder Punkt auf das Blatt; wenn es mag, sagt es ein Wort dazu. Die Fachkraft macht auch einen Strich und sagt ein Wort, ohne es zu erklären.",
+    "sagen": [
+      "Heute geht es darum, Gefühle zu zeigen und in Worte zu fassen. Wir fangen mit Farben an.",
+      "Welche Farbe passt gerade zu dir? Mach einen Strich.",
+      "Ein Wort dazu ist erlaubt, muss aber nicht sein."
+    ],
+    "wennEsKippt": "Mag das Kind keinen Strich machen, zeigt es nur auf eine Farbe oder sagt „Pass“. Auch die Lieblingsfarbe ist in Ordnung; das Kind muss nichts erklären.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "malen",
+      "gespraech"
+    ],
+    "material": [
+      "buntstifte",
+      "papier"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le trait de couleur",
+      "text": "Sur la table, il y a du papier et des crayons de couleur. L’enfant choisit la couleur qui lui correspond en ce moment et trace un trait ou un point sur la feuille ; s’il en a envie, il dit un mot. L’adulte trace aussi un trait et dit un mot, sans l’expliquer.",
+      "sagen": [
+        "Aujourd’hui, on parle de montrer ses émotions et de trouver les mots pour les dire. On commence avec des couleurs.",
+        "Quelle couleur te correspond en ce moment ? Trace un trait.",
+        "Un mot en plus, c’est possible, mais pas obligatoire."
+      ],
+      "wennEsKippt": "Si l’enfant ne veut pas tracer, il montre seulement une couleur ou dit « passe ». Sa couleur préférée convient aussi ; il n’a rien à expliquer.",
+      "kurz": "Choisir une couleur · tracer un trait · un mot si on veut"
+    },
+    "kurz": "Farbe wählen · Strich aufs Blatt · optional ein Wort dazu"
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Gefühle als Standbild",
+    "text": "Die Fachkraft ruft ein Gefühl (Freude, Müdigkeit, Stolz, Ärger, Mut); beide stellen sich in drei Sekunden als stilles Standbild dazu hin, mit Gesicht, Armen und Haltung. Danach wählt das Kind das nächste Gefühl, und die Fachkraft macht es nach. Zum Schluss zeigt das Kind drei Standbilder hintereinander in Zeitlupe, und die Fachkraft sagt, was sie sieht. Alles bleibt still, auch beim Ärger.",
+    "sagen": [
+      "Gefühle kann man auch ohne Worte zeigen. Wir probieren es mit Gesicht und Haltung.",
+      "Eins, zwei, drei: Stolz! Halt.",
+      "Ich sehe aufrechte Schultern und ein Lächeln."
+    ],
+    "wennEsKippt": "Im Sitzen: Das Standbild mit Gesicht und Armen auf dem Stuhl zeigen. Mag das Kind kein Gefühl zeigen, wählt es nur das Gefühl, und die Fachkraft stellt es dar.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Statues d’émotions",
+      "text": "L’adulte annonce une émotion (la joie, la fatigue, la fierté, la colère, le courage) ; en trois secondes, les deux prennent la pose d’une statue silencieuse avec le visage, les bras et la posture. Ensuite, l’enfant choisit l’émotion suivante et l’adulte l’imite. Pour finir, l’enfant montre trois statues à la suite, au ralenti, et l’adulte dit ce qu’il voit. Tout reste silencieux, même pour la colère.",
+      "sagen": [
+        "On peut montrer une émotion sans mots. On l’essaie avec le visage et la posture.",
+        "Un, deux, trois : la fierté ! Stop.",
+        "Je vois des épaules bien droites et un sourire."
+      ],
+      "wennEsKippt": "Assis : la statue se fait avec le visage et les bras sur la chaise. Si l’enfant ne veut pas montrer d’émotion, il la choisit seulement et l’adulte la joue.",
+      "kurz": "Une émotion · statue en 3 secondes · l’enfant choisit la suivante"
+    },
+    "kurz": "Gefühl rufen · in 3 Sekunden Standbild · Kind wählt das nächste"
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Wetterbericht mit Gefühl",
+    "text": "Die Fachkraft sagt einen Satz ohne Gefühl, zum Beispiel „Morgen regnet es“, und sagt ihn dann noch dreimal vor: froh, müde und grummelig, jeweils mit Stimme und Gesicht. Das Kind wählt zwei der drei Stimmungen und sagt denselben Satz in diesen beiden. Zum Schluss sagt das Kind, welche Stimmung ihm am leichtesten fiel, oder zeigt darauf.",
+    "sagen": [
+      "Heute ging es darum, Gefühle auszudrücken, mit Stimme und Gesicht. Dazu gleich ein Wetterbericht mit Gefühl.",
+      "Sag „Morgen regnet es“ froh, müde oder grummelig. Du darfst auch „Pass“ sagen.",
+      "Welche Stimmung ging dir am leichtesten?"
+    ],
+    "wennEsKippt": "Mag das Kind nicht vorspielen, sagt die Fachkraft den Satz in drei Stimmungen, und das Kind zeigt auf die, die ihm am besten gefällt. „Pass“ ist immer erlaubt.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 1,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "rollenspiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Météo avec émotion",
+      "text": "L’adulte dit une phrase sans émotion, par exemple « Demain, il pleut », puis la répète trois fois : d’un ton joyeux, fatigué et grognon, chaque fois avec la voix et le visage. L’enfant choisit deux tons sur les trois et dit la même phrase sur ces deux tons. À la fin, l’enfant dit quel ton lui a paru le plus facile, ou le montre.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de montrer ses émotions, avec la voix et le visage. On fait maintenant une météo avec émotion.",
+        "Dis « Demain, il pleut » joyeux, fatigué ou grognon. Tu peux aussi dire « Je passe ».",
+        "Quel ton t’a semblé le plus facile ?"
+      ],
+      "wennEsKippt": "Si l’enfant ne veut pas jouer, l’adulte dit la phrase sur trois tons, et l’enfant montre celui qu’il préfère. « Je passe » est toujours permis.",
+      "kurz": "Phrase météo joyeux · fatigué · grognon · choisir la plus facile"
+    },
+    "kurz": "Wettersatz froh · müde · grummelig sagen · leichteste Stimmung wählen"
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Mein Gefühls-Daumen",
+    "text": "Zum Abschied zeigen beide mit dem Daumen, wie sie sich gerade fühlen: nach oben (gut), zur Seite (so lala) oder nach unten (nicht so toll). Wer mag, sagt ein Wort dazu. Die Fachkraft nimmt jeden Daumen mit „Danke“ an, ohne nachzufragen.",
+    "sagen": [
+      "Heute ging es um Gefühle und darum, sie zu zeigen. Zum Schluss zeigen wir es mit dem Daumen.",
+      "Mein Daumen geht zur Seite: so lala. Und deiner?",
+      "Danke. Tschüss bis zum nächsten Mal."
+    ],
+    "wennEsKippt": "Mag das Kind keinen Daumen zeigen, sagt es „Pass“ oder winkt einfach, und die Fachkraft zeigt nur ihren eigenen. Nach dem Warum wird nicht gefragt.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le pouce du jour",
+      "text": "Au moment de se quitter, chacun montre avec le pouce comment il se sent en ce moment : vers le haut (bien), de côté (comme ci, comme ça) ou vers le bas (pas terrible). Celui qui veut ajoute un mot. L’adulte accueille chaque pouce par un « merci », sans poser de questions.",
+      "sagen": [
+        "Aujourd’hui, on a parlé des émotions et de la façon de les montrer. Pour finir, on le montre avec le pouce.",
+        "Mon pouce va de côté : comme ci, comme ça. Et le tien ?",
+        "Merci. Au revoir et à la prochaine."
+      ],
+      "wennEsKippt": "Si l’enfant ne veut pas montrer son pouce, il dit « passe » ou fait simplement un signe de la main, et l’adulte montre seulement le sien. On ne demande pas pourquoi.",
+      "kurz": "Pouce en haut, de côté, en bas · un mot si on veut"
+    },
+    "kurz": "Daumen hoch, seitlich oder runter · optional ein Wort dazu"
+  },
+  {
+    "id": "th:selbstregulation-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Mein Motor heute",
+    "text": "Die Fachkraft zeigt drei Gänge mit der Hand: Schnecke (flache Hand, ganz langsam), Auto (mittel) und Rakete (schnell, nach oben). Jeder zeigt, in welchem Gang sein Motor gerade läuft; die Fachkraft zeigt auch ihren. Danach atmen beide einmal lang aus und schalten einen Gang in Richtung Auto.",
+    "sagen": [
+      "Heute geht es darum, wie man sich selbst ruhiger oder wacher machen kann. Wir schauen erst auf den Motor.",
+      "Schnecke, Auto oder Rakete: In welchem Gang läuft dein Motor?",
+      "Bei mir läuft heute die Rakete. Wir atmen und schalten einen Gang näher ans Auto."
+    ],
+    "wennEsKippt": "Mag das Kind keinen Gang zeigen, zeigt die Fachkraft nur ihren und atmet einmal allein aus. Sagt das Kind „Pass“, atmet es einfach mit.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "atmen"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Mon moteur aujourd’hui",
+      "text": "L’adulte montre trois vitesses avec la main : l’escargot (main à plat, très lentement), la voiture (vitesse moyenne) et la fusée (rapide, vers le haut). Chacun montre à quelle vitesse tourne son moteur en ce moment ; l’adulte montre aussi le sien. Puis les deux expirent longuement une fois et passent une vitesse en direction de la voiture.",
+      "sagen": [
+        "Aujourd’hui, on parle de la façon de devenir plus calme ou plus éveillé. On commence par regarder le moteur.",
+        "Escargot, voiture ou fusée : à quelle vitesse tourne ton moteur ?",
+        "Chez moi, c’est la fusée aujourd’hui. On respire et on passe une vitesse vers la voiture."
+      ],
+      "wennEsKippt": "Si l’enfant ne veut pas montrer de vitesse, l’adulte montre seulement la sienne et expire une fois, seul. Si l’enfant dit « passe », il respire simplement avec l’adulte.",
+      "kurz": "Montrer la vitesse : escargot · voiture · fusée · longue expiration"
+    },
+    "kurz": "Motor-Gang zeigen: Schnecke · Auto · Rakete · lang ausatmen"
+  },
+  {
+    "id": "th:selbstregulation-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Mein Tempo-Regler",
+    "text": "Fachkraft und Kind gehen nebeneinander durch den Raum. Das Kind ist der Regler: Hand oben heißt schnell gehen, Hand in der Mitte normal, Hand ganz unten Zeitlupe. Nach ein paar Wechseln regelt das Kind das Tempo in fünf kleinen Stufen herunter, bis beide in Zeitlupe stehen bleiben und einmal lang ausatmen.",
+    "sagen": [
+      "Man kann sein eigenes Tempo regeln, wie mit einem Regler. Das üben wir jetzt beim Gehen.",
+      "Du bestimmst das Tempo. Ich gehe mit.",
+      "Schnell, ein bisschen langsamer, noch langsamer … und Stopp mit einem langen Ausatmen."
+    ],
+    "wennEsKippt": "Im Sitzen: Zwei Finger „gehen“ auf dem Tisch oder auf dem Knie in dem Tempo, das die Hand zeigt. Mag das Kind den Regler nicht übernehmen, regelt ihn die Fachkraft.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 1,
+    "format": [
+      "bewegung",
+      "atmen"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le bouton de vitesse",
+      "text": "L’adulte et l’enfant marchent côte à côte dans la pièce. L’enfant est le bouton de réglage : main en haut, on marche vite ; main au milieu, normalement ; main tout en bas, au ralenti. Après quelques changements, l’enfant ralentit en cinq petites étapes, jusqu’à ce que les deux s’arrêtent au ralenti et expirent longuement une fois.",
+      "sagen": [
+        "On peut régler sa propre vitesse, comme avec un bouton. On l’essaie en marchant.",
+        "C’est toi qui décides de la vitesse. Je marche avec toi.",
+        "Vite, un peu moins vite, encore moins vite… et stop avec une longue expiration."
+      ],
+      "wennEsKippt": "Assis : deux doigts « marchent » sur la table ou sur le genou à la vitesse que montre la main. Si l’enfant ne veut pas régler la vitesse, c’est l’adulte qui le fait.",
+      "kurz": "L’enfant règle le tempo de la main · on le suit · ralenti final"
+    },
+    "kurz": "Kind zeigt per Hand das Tempo, beide gehen mit · zuletzt Zeitlupe"
+  },
+  {
+    "id": "th:selbstregulation-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Meine Motor-Reise",
+    "text": "Die Fachkraft zeichnet auf ein Blatt eine Linie von „Schnecke“ (links) bis „Rakete“ (rechts) und gibt dem Kind einen Stift. Das Kind macht ein Kreuz dorthin, wo sein Motor am Anfang der Stunde war, und ein zweites, wo er jetzt ist; die Fachkraft macht ihre beiden Kreuze auch. Dann überlegen beide, was dazwischen geholfen haben könnte (Bewegung, Atmen, Pause, Ruhe), ohne zu bewerten.",
+    "sagen": [
+      "Heute ging es darum, sich selbst ruhiger oder wacher zu machen. Wo war dein Motor am Anfang, wo ist er jetzt?",
+      "Schnecke heißt ganz ruhig, Rakete heißt ganz aufgedreht.",
+      "Was hat dazwischen geholfen? Du darfst auch „Pass“ sagen."
+    ],
+    "wennEsKippt": "Weiß das Kind sein erstes Kreuz nicht mehr, macht es nur ein Kreuz für jetzt. Das Gespräch darüber, was geholfen hat, darf entfallen.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "malen",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 2,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le voyage du moteur",
+      "text": "L’adulte trace sur une feuille une ligne allant de « escargot » (à gauche) à « fusée » (à droite) et donne un crayon à l’enfant. L’enfant fait une croix là où était son moteur au début de la séance, et une deuxième croix là où il est maintenant ; l’adulte fait aussi ses deux croix. Puis les deux cherchent ce qui a pu aider entre les croix (bouger, respirer, une pause, le calme), sans juger.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de devenir plus calme ou plus éveillé. Où était ton moteur au début, et où est-il maintenant ?",
+        "Escargot veut dire très calme, fusée veut dire très excité.",
+        "Qu’est-ce qui a aidé entre les deux ? Tu peux aussi dire « passe »."
+      ],
+      "wennEsKippt": "Si l’enfant ne se souvient plus de sa première croix, il fait seulement une croix pour maintenant. On peut aussi laisser tomber la discussion sur ce qui a aidé.",
+      "kurz": "Deux croix sur la ligne : début et maintenant · qu’est-ce qui a aidé ?",
+      "vorbereitung": "Tracer sur une feuille une ligne : « escargot » à gauche, « fusée » à droite"
+    },
+    "kurz": "Zwei Kreuze auf der Linie: Anfang und jetzt · was half dazwischen?",
+    "vorbereitung": "Linie auf ein Blatt zeichnen: links „Schnecke“, rechts „Rakete“"
+  },
+  {
+    "id": "th:selbstregulation-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Licht langsam dimmen",
+    "text": "Beide halten eine Hand wie einen Lichtschalter in die Höhe. Mit einem langen Ausatmen fährt die Hand langsam nach unten, als würde ein Licht ganz sanft gedimmt; das Kind bestimmt, wie langsam. Wenn die Hand unten ist, sagen beide leise „Tschüss“.",
+    "sagen": [
+      "Heute ging es darum, sich selbst zu beruhigen. Zum Schluss dimmen wir das Licht ganz langsam herunter.",
+      "Die Hand geht nach unten, während du ausatmest. Du bestimmst das Tempo.",
+      "Tschüss, bis zum nächsten Mal."
+    ],
+    "wennEsKippt": "Das Dimmen geht auch im Sitzen, mit der Hand auf dem Tisch. Mag das Kind nicht, dimmt nur die Fachkraft, und das Kind winkt.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "atmen"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La lumière qui baisse",
+      "text": "Les deux lèvent une main comme un interrupteur à variateur. En expirant longuement, la main descend lentement, comme si la lumière baissait tout doucement ; l’enfant décide à quelle vitesse. Quand la main est en bas, les deux disent « au revoir » à voix basse.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de se calmer soi-même. Pour finir, on baisse la lumière tout doucement.",
+        "La main descend pendant que tu expires. C’est toi qui décides de la vitesse.",
+        "Au revoir, à la prochaine."
+      ],
+      "wennEsKippt": "On peut baisser la lumière assis, avec la main sur la table. Si l’enfant ne veut pas, seul l’adulte baisse la lumière et l’enfant fait un signe de la main.",
+      "kurz": "La main-interrupteur descend en expirant · l’enfant fixe le rythme"
+    },
+    "kurz": "Hand als Lichtschalter sinkt beim Ausatmen · Kind bestimmt Tempo"
+  },
+  {
+    "id": "th:impulskontrolle-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Klopf-Code zum Start",
+    "text": "Die Fachkraft klopft mit den Fingerspitzen leise auf den Tisch. Einmal klopfen heißt: Das Kind klopft einmal zurück. Zweimal klopfen heißt: Hände flach auf den Tisch und keine Antwort. Nach ein paar Runden klopft das Kind, und die Fachkraft folgt dem Code; zum Schluss sagen beide Hallo.",
+    "sagen": [
+      "Heute geht es darum, kurz zu stoppen, bevor man etwas tut. Dazu ein Klopf-Spiel.",
+      "Einmal klopfen: du klopfst zurück. Zweimal klopfen: Hände flach, nichts tun.",
+      "Jetzt bestimmst du den Code, und ich folge ihm."
+    ],
+    "wennEsKippt": "Klopft das Kind bei zweimal doch zurück, gehört das zum Spiel, und es geht einfach weiter. Fällt es schwer, klopft die Fachkraft langsamer und macht weniger Runden.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le code des petits coups",
+      "text": "L’adulte frappe doucement du bout des doigts sur la table. Un coup signifie : l’enfant frappe un coup en retour. Deux coups signifient : mains à plat sur la table et pas de réponse. Après quelques tours, l’enfant frappe et l’adulte suit le code ; pour finir, les deux se disent bonjour.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à s’arrêter un instant avant d’agir. Voici un petit jeu de coups sur la table.",
+        "Un coup : tu réponds. Deux coups : mains à plat, tu ne fais rien.",
+        "Maintenant, tu décides du code et je le suis."
+      ],
+      "wennEsKippt": "Si l’enfant répond quand même à deux coups, cela fait partie du jeu, et on continue. Si c’est difficile, l’adulte frappe plus lentement et fait moins de tours.",
+      "kurz": "Un coup : répondre · deux coups : mains à plat · bonjour"
+    },
+    "kurz": "Einmal klopfen: antworten · zweimal klopfen: Hände flach · Hallo"
+  },
+  {
+    "id": "th:impulskontrolle-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Wir spielen Ampel",
+    "text": "Beide gehen durch den Raum. Die Fachkraft ruft „Rot, Gelb, Grün“: Bei Rot bleiben beide sofort stehen, bei Gelb gehen sie in Zeitlupe, bei Grün normal. Nach ein paar Runden übernimmt das Kind die Ampel, und die Fachkraft folgt jedem Signal genau.",
+    "sagen": [
+      "Heute geht es darum, rechtzeitig zu stoppen. Dafür spielen wir Ampel.",
+      "Rot heißt stehen, Gelb heißt Zeitlupe, Grün heißt gehen.",
+      "Jetzt bist du die Ampel, und ich folge ganz genau."
+    ],
+    "wennEsKippt": "Im Sitzen: Mit den Füßen am Boden gehen (Grün), langsam gehen (Gelb) und die Füße still halten (Rot). Wird es zu wild, ruft die Fachkraft ruhig „Gelb“ für die ganze Runde.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La marche des feux",
+      "text": "Les deux marchent dans la pièce. L’adulte appelle « rouge, orange, vert » : au rouge, tous les deux s’arrêtent tout de suite ; à l’orange, ils marchent au ralenti ; au vert, normalement. Après quelques tours, l’enfant devient le feu et l’adulte suit chaque signal exactement.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à s’arrêter à temps. On joue au feu de signalisation.",
+        "Rouge, on s’arrête. Orange, on ralentit. Vert, on marche.",
+        "Maintenant, c’est toi le feu, et je suis tes signaux exactement."
+      ],
+      "wennEsKippt": "Assis : marcher avec les pieds au sol (vert), marcher lentement (orange) et garder les pieds immobiles (rouge). Si ça devient trop agité, l’adulte annonce calmement « orange » pour tout le tour.",
+      "kurz": "Marcher · rouge = stop, orange = ralenti, vert = marcher · échanger"
+    },
+    "kurz": "Gehen · Rot = stehen, Gelb = Zeitlupe, Grün = gehen · dann tauschen"
+  },
+  {
+    "id": "th:impulskontrolle-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Drei Warte-Tricks",
+    "text": "Die Fachkraft zeigt drei Warte-Tricks: die Hände unter die Beine klemmen, im Kopf bis drei zählen und einmal langsam durch den Mund ausatmen. Sie stellt dem Kind drei leichte Fragen, zum Beispiel „Was ist dein Lieblingstier?“, und vor der Antwort probiert das Kind einen anderen Trick. Dann zeigt das Kind auf Hände, Kopf oder Mund, welcher Trick ihm am besten lag, und die Fachkraft sagt, welchen Trick sie am liebsten mag.",
+    "sagen": [
+      "Heute ging es darum, kurz zu warten, bevor man etwas sagt oder tut. Wir probieren drei Tricks aus.",
+      "Erst der Trick, dann die Antwort.",
+      "Welcher Trick passt zu dir? Zeig auf Hände, Kopf oder Mund, oder sag „Pass“."
+    ],
+    "wennEsKippt": "Fällt dem Kind keine Antwort ein, reicht ein Wort oder Zeigen. Mag das Kind nicht probieren, probiert die Fachkraft alle drei, und das Kind zeigt nur auf einen.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Trois astuces pour attendre",
+      "text": "L’adulte montre trois astuces pour attendre : glisser les mains sous les jambes, compter jusqu’à trois dans sa tête, expirer lentement par la bouche. Il pose à l’enfant trois questions faciles, par exemple « Quel est ton animal préféré ? », et avant de répondre l’enfant essaie une autre astuce. Ensuite, l’enfant montre les mains, la tête ou la bouche, selon l’astuce qui lui a le mieux convenu, et l’adulte dit laquelle il préfère.",
+      "sagen": [
+        "Aujourd’hui, on a parlé d’attendre un instant avant de dire ou de faire quelque chose. On essaie trois astuces.",
+        "D’abord l’astuce, ensuite la réponse.",
+        "Quelle astuce te convient ? Montre les mains, la tête ou la bouche, ou dis « Je passe »."
+      ],
+      "wennEsKippt": "Si l’enfant n’a pas de réponse, un mot ou un geste suffit. Si l’enfant ne veut pas essayer, l’adulte essaie les trois astuces, et l’enfant en montre simplement une.",
+      "kurz": "3 astuces pour attendre avant de répondre · montrer la meilleure"
+    },
+    "kurz": "3 Warte-Tricks vor der Antwort probieren · besten zeigen"
+  },
+  {
+    "id": "th:impulskontrolle-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Bremsstrich vor der Mauer",
+    "text": "Die Fachkraft malt an den Rand eines Blattes eine dicke Linie als Mauer. Das Kind setzt den Stift weit entfernt an, malt zügig auf die Mauer zu und bremst, bevor der Strich sie berührt. Die Fachkraft bremst auf dem eigenen Blatt mit; danach malt das Kind für sie eine Mauer, und beide sagen „Tschüss“.",
+    "sagen": [
+      "Heute ging es darum, rechtzeitig zu stoppen. Zum Schluss bremst unser Stift vor einer Mauer.",
+      "Schnell losmalen und kurz vor der Mauer anhalten.",
+      "Gebremst! Tschüss!"
+    ],
+    "wennEsKippt": "Berührt der Strich die Mauer, ist das kein Fehler: Das Kind setzt neu an und malt etwas langsamer. Wird es zu leicht, malt das Kind schneller oder wählt eine dünnere Mauer.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "malen"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Freiner devant le mur",
+      "text": "L’adulte dessine au bord d’une feuille une ligne épaisse qui représente un mur. L’enfant pose son crayon loin du mur, trace vite vers lui et freine avant que le trait ne le touche. L’adulte freine aussi sur sa propre feuille ; ensuite l’enfant lui dessine un mur, et les deux disent « au revoir ».",
+      "sagen": [
+        "Aujourd’hui, on a parlé de s’arrêter à temps. Pour finir, notre crayon freine devant un mur.",
+        "Démarre vite et arrête-toi juste avant le mur.",
+        "Bien freiné ! Au revoir !"
+      ],
+      "wennEsKippt": "Si le trait touche le mur, ce n’est pas une erreur : l’enfant recommence un peu plus lentement. Si c’est trop facile, l’enfant trace plus vite ou choisit un mur plus fin.",
+      "kurz": "Mur au bord de la feuille · tracer vite, freiner avant · au revoir"
+    },
+    "kurz": "Mauer an den Blattrand · schnell malen, davor bremsen · Tschüss"
+  },
+  {
+    "id": "th:aufmerksamkeit-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Was ist anders?",
+    "text": "Die Fachkraft legt drei Dinge aus dem Alltag auf den Tisch (zum Beispiel einen Stift, einen Löffel und eine Socke) und lässt das Kind zehn Sekunden genau schauen. Das Kind schließt die Augen, die Fachkraft tauscht oder entfernt ein Ding. Das Kind öffnet die Augen und sagt, was anders ist; danach darf das Kind etwas verändern.",
+    "sagen": [
+      "Heute geht es darum, genau hinzuschauen und hinzuhören. Wir fangen mit einem kleinen Suchspiel an.",
+      "Schau genau: Was liegt da? Zehn Sekunden.",
+      "Augen zu … Augen auf: Was ist anders?"
+    ],
+    "wennEsKippt": "Ist es zu schwer, nimmt die Fachkraft nur zwei Dinge. Hat das Kind keine Lust, stellt die Fachkraft die Dinge einfach vor, und das Kind zeigt, was es sieht.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "sinne"
+    ],
+    "material": [
+      "alltagsdinge"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Qu’est-ce qui a changé ?",
+      "text": "L’adulte pose trois objets du quotidien sur la table (par exemple un crayon, une cuillère et une chaussette) et laisse l’enfant bien regarder pendant dix secondes. L’enfant ferme les yeux, l’adulte échange ou retire un objet. L’enfant ouvre les yeux et dit ce qui a changé ; ensuite, il peut changer quelque chose lui-même.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à bien regarder et à bien écouter. On commence par un petit jeu de recherche.",
+        "Regarde bien : qu’est-ce qu’il y a là ? Dix secondes.",
+        "Yeux fermés… yeux ouverts : qu’est-ce qui a changé ?"
+      ],
+      "wennEsKippt": "Si c’est trop difficile, l’adulte ne prend que deux objets. Si l’enfant n’a pas envie, l’adulte présente simplement les objets et l’enfant montre ce qu’il voit.",
+      "kurz": "Retenir 3 objets 10 s · yeux fermés · un objet est changé"
+    },
+    "kurz": "Drei Dinge 10 Sek. merken · Augen zu · ein Ding wird verändert"
+  },
+  {
+    "id": "th:aufmerksamkeit-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Der Such-Gang",
+    "text": "Beide gehen langsam durch den Raum. Die Fachkraft nennt eine Eigenschaft („etwas Rundes“, „etwas Rotes“, „etwas Weiches“), und beide bleiben stehen und zeigen mit dem Finger auf etwas, das passt, ohne es anzufassen oder zu rennen. Dann sagt jeder, was er gefunden hat; später ruft das Kind die Eigenschaft.",
+    "sagen": [
+      "Heute geht es darum, genau hinzuschauen. Wir gehen auf Entdeckungsreise durch den Raum.",
+      "Zeig mir etwas Rundes. Nur zeigen, nicht anfassen.",
+      "Spannend, das habe ich nicht gesehen."
+    ],
+    "wennEsKippt": "Im Sitzen: Vom Stuhl aus nach der Eigenschaft suchen und mit dem Finger zeigen. Findet das Kind nichts, zeigt die Fachkraft zuerst ihr Ding.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 1,
+    "format": [
+      "bewegung",
+      "sinne"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La marche de recherche",
+      "text": "Les deux marchent lentement dans la pièce. L’adulte donne une caractéristique (« quelque chose de rond », « quelque chose de rouge », « quelque chose de doux ») ; tous les deux s’arrêtent et montrent du doigt quelque chose qui convient, sans y toucher ni courir. Puis chacun dit ce qu’il a trouvé ; plus tard, l’enfant donne la caractéristique.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à bien regarder. On part à la découverte dans la pièce.",
+        "Montre-moi quelque chose de rond. Seulement montrer, pas toucher.",
+        "Intéressant, je n’avais pas vu ça."
+      ],
+      "wennEsKippt": "Assis : chercher la caractéristique depuis la chaise et montrer du doigt. Si l’enfant ne trouve rien, l’adulte montre d’abord son objet.",
+      "kurz": "Nommer une propriété · montrer du doigt sans toucher · échanger"
+    },
+    "kurz": "Eigenschaft nennen · beide zeigen darauf, ohne Anfassen · tauschen"
+  },
+  {
+    "id": "th:aufmerksamkeit-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Scheinwerfer, stopp!",
+    "text": "Die Fachkraft fährt mit einer Lampe langsam über die Dinge auf dem Tisch und im Raum. Das Kind sagt „Stopp“, wenn das Licht bei dem Ding ist, auf das es heute am liebsten geschaut hat; wenn es mag, sagt es ein Wort dazu. Dann führt das Kind das Licht, und die Fachkraft sagt bei einem Ding „Stopp“ und nennt ein Wort dazu.",
+    "sagen": [
+      "Heute ging es um Aufmerksamkeit. Dein Kopf hat einen Scheinwerfer: Wo hat er heute am liebsten hingeleuchtet?",
+      "Ich fahre mit dem Licht langsam über den Tisch. Sag „Stopp“, wenn es dort ist.",
+      "Bei mir hat der Scheinwerfer gern bei den Stiften geleuchtet. Du darfst auch „Pass“ sagen."
+    ],
+    "wennEsKippt": "Ohne Lampe wandert die flache Hand der Fachkraft wie ein Scheinwerfer über den Tisch. Findet das Kind keinen Stopp-Punkt, hält die Fachkraft das Licht auf ein Ding und fragt „Hier?“; „Pass“ ist auch in Ordnung.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "sinne"
+    ],
+    "material": [
+      "lampe"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Projecteur, stop !",
+      "text": "L’adulte promène lentement une lampe sur les objets de la table et de la pièce. L’enfant dit « stop » quand la lumière arrive sur ce qu’il a le plus aimé regarder aujourd’hui ; s’il le veut, il ajoute un mot. Ensuite, l’enfant guide la lumière, et l’adulte dit « stop » sur son objet et ajoute un mot.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de l’attention. Ta tête a un projecteur : où a-t-il préféré éclairer aujourd’hui ?",
+        "Je promène la lumière doucement sur la table. Dis « stop » quand elle est au bon endroit.",
+        "Chez moi, le projecteur a aimé éclairer les crayons. Tu peux aussi dire « Je passe »."
+      ],
+      "wennEsKippt": "Sans lampe, la main à plat de l’adulte glisse comme un projecteur au-dessus de la table. Si l’enfant ne trouve pas d’endroit, l’adulte arrête la lumière sur un objet et demande « Ici ? » ; « Je passe » est aussi permis.",
+      "kurz": "Lampe sur la table · l’enfant dit stop sur son objet préféré"
+    },
+    "kurz": "Lampe wandert über den Tisch · Kind sagt Stopp beim Lieblingsding"
+  },
+  {
+    "id": "th:aufmerksamkeit-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Eine Hör-Minute",
+    "text": "Beide sitzen still und schließen die Augen oder schauen auf den Tisch. Eine halbe Minute lang lauschen sie auf alle Geräusche und halten für jedes verschiedene Geräusch einen Finger hoch. Danach sagt jeder, was er gehört hat.",
+    "sagen": [
+      "Heute ging es darum, genau hinzuhören und hinzuschauen. Zum Schluss lauschen wir eine halbe Minute.",
+      "Für jedes Geräusch hebst du einen Finger.",
+      "Was hast du gehört?"
+    ],
+    "wennEsKippt": "Ist es ganz still, zählt auch das Geräusch vom eigenen Atem oder von der Kleidung. Mag das Kind nicht still sitzen, lauscht es im Stehen oder mit offenen Augen.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "sinne"
+    ],
+    "material": [
+      "uhr"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La minute d’écoute",
+      "text": "Les deux sont assis tranquillement, les yeux fermés ou fixés sur la table. Pendant une demi-minute, ils écoutent tous les bruits et lèvent un doigt pour chaque bruit différent. Ensuite, chacun dit ce qu’il a entendu.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de bien écouter et de bien regarder. Pour finir, on écoute pendant une demi-minute.",
+        "Tu lèves un doigt pour chaque bruit.",
+        "Qu’est-ce que tu as entendu ?"
+      ],
+      "wennEsKippt": "S’il fait très calme, le bruit de la respiration ou des vêtements compte aussi. Si l’enfant ne veut pas rester assis tranquillement, il écoute debout ou les yeux ouverts.",
+      "kurz": "30 s d’écoute · un doigt par bruit · puis dire ce qu’on a entendu"
+    },
+    "kurz": "Halbe Minute lauschen · pro Geräusch ein Finger · dann erzählen"
+  },
+  {
+    "id": "th:ausdauer-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Eine Turm-Minute",
+    "text": "Die Fachkraft dreht eine Sanduhr um. Beide bauen jeder für sich einen Turm aus Bausteinen, bis der Sand durch ist. Kippt ein Turm um, fängt man ruhig neu an; die Fachkraft sagt dann gelassen „Nochmal!“. Verglichen wird nicht: Am Ende zeigt jeder nur seinen eigenen Turm.",
+    "sagen": [
+      "Heute geht es ums Dranbleiben, auch wenn etwas schwierig ist. Wir bauen eine Minute lang.",
+      "Fällt der Turm um, sagen wir „Nochmal!“ und bauen weiter.",
+      "Ich habe gesehen, dass du weitergebaut hast."
+    ],
+    "wennEsKippt": "Wird das Kind ungeduldig, bauen beide gemeinsam an einem Turm. Fallen die Türme zu oft um, kann man flach statt hoch bauen.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "basteln"
+    ],
+    "material": [
+      "bausteine",
+      "sanduhr"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La minute de la tour",
+      "text": "L’adulte retourne un sablier. Chacun construit sa propre tour avec des blocs, jusqu’à ce que le sable soit tombé. Si une tour tombe, on recommence tranquillement ; l’adulte dit alors calmement « Encore une fois ! ». On ne compare pas : à la fin, chacun montre seulement sa propre tour.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à persévérer, même quand c’est difficile. On construit pendant une minute.",
+        "Si la tour tombe, on dit « Encore une fois ! » et on continue.",
+        "J’ai vu que tu as continué à construire."
+      ],
+      "wennEsKippt": "Si l’enfant s’impatiente, les deux construisent ensemble une seule tour. Si les tours tombent trop souvent, on peut construire à plat plutôt qu’en hauteur.",
+      "kurz": "Retourner le sablier · chacun sa tour · si elle tombe : « Encore ! »"
+    },
+    "kurz": "Sanduhr drehen · jeder baut seinen Turm · fällt er: „Nochmal!“"
+  },
+  {
+    "id": "th:ausdauer-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Der Geheimtanz",
+    "text": "Das Kind erfindet vier Bewegungen für einen Geheimtanz, zum Beispiel Hände auf die Knie, Hände auf die Schultern, einmal drehen, Hände hoch. Die Fachkraft lernt ihn vom Kind, und beide tanzen ihn fünfmal hintereinander, immer ein bisschen schneller. Verhaspelt sich jemand, beginnt der Tanz einfach wieder von vorn. Nach der fünften Runde bleiben beide in der Schlusspose stehen.",
+    "sagen": [
+      "Heute ging es ums Dranbleiben. Dazu erfindest du jetzt einen Geheimtanz aus vier Bewegungen.",
+      "Zeig mir die vier Bewegungen. Wir tanzen sie fünfmal, immer ein bisschen schneller.",
+      "Verhaspelt? Nochmal von vorn! Fünf Runden, dann Schlusspose."
+    ],
+    "wennEsKippt": "Im Sitzen tanzen beide den Geheimtanz mit Armen und Oberkörper. Wird er zu schwer, bleibt es bei drei Bewegungen oder drei Runden.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La danse secrète",
+      "text": "L’enfant invente quatre mouvements pour une danse secrète, par exemple les mains sur les genoux, les mains sur les épaules, un tour sur soi-même, les mains en haut. L’adulte l’apprend de l’enfant, et les deux la dansent cinq fois de suite, un peu plus vite à chaque fois. Si quelqu’un se trompe, la danse recommence simplement au début. Après la cinquième fois, les deux restent immobiles dans la pose finale.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de persévérer. Tu inventes maintenant une danse secrète de quatre mouvements.",
+        "Montre-moi les quatre mouvements. On les danse cinq fois, un peu plus vite à chaque fois.",
+        "On s’est trompé ? Encore une fois depuis le début ! Cinq fois, puis la pose finale."
+      ],
+      "wennEsKippt": "Assis, les deux dansent la danse secrète avec les bras et le haut du corps. Si c’est trop difficile, on reste à trois mouvements ou à trois fois.",
+      "kurz": "Inventer une danse secrète de quatre mouvements · cinq fois, plus vite"
+    },
+    "kurz": "Geheimtanz aus vier Bewegungen erfinden · fünfmal, immer schneller"
+  },
+  {
+    "id": "th:ausdauer-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Mein Berg",
+    "text": "Die Fachkraft zeichnet einen Weg mit einem Berg auf ein Blatt. Das Kind macht ein Kreuz an die Stelle des Wegs, an der es heute etwas mühsam fand, und malt (oder sagt), was ihm beim Weitermachen geholfen hat, zum Beispiel „Pause machen“ oder „kleiner Schritt“. Die Fachkraft zeichnet auch ihr Kreuz und ihre Hilfe.",
+    "sagen": [
+      "Heute ging es ums Dranbleiben. Wo war heute ein Berg, und was hat geholfen weiterzumachen?",
+      "Mach ein Kreuz an die Stelle. Du darfst auch „Pass“ sagen.",
+      "Bei mir hat eine kleine Pause geholfen."
+    ],
+    "wennEsKippt": "Findet das Kind keinen Berg, macht es sein Kreuz auf den Gipfel und sagt, was dort gut war. Statt zu zeichnen darf es auch nur zeigen.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "malen",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Ma montagne",
+      "text": "L’adulte dessine un chemin avec une montagne sur une feuille. L’enfant fait une croix à l’endroit du chemin où il a trouvé quelque chose de pénible aujourd’hui, et dessine (ou dit) ce qui l’a aidé à continuer, par exemple « faire une pause » ou « un petit pas ». L’adulte dessine aussi sa croix et son aide.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de persévérer. Où était ta montagne aujourd’hui, et qu’est-ce qui t’a aidé à continuer ?",
+        "Fais une croix à cet endroit. Tu peux aussi dire « passe ».",
+        "Pour moi, une petite pause a aidé."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas de montagne, il fait sa croix au sommet et dit ce qui était bien là-haut. Il peut aussi seulement montrer au lieu de dessiner.",
+      "kurz": "Croix à l’endroit difficile du chemin · qu’est-ce qui a aidé ?",
+      "vorbereitung": "Dessiner sur une feuille un chemin avec une montagne"
+    },
+    "kurz": "Kreuz an die mühsame Stelle des Wegs · was half weiterzumachen?",
+    "vorbereitung": "Weg mit einem Berg auf ein Blatt zeichnen"
+  },
+  {
+    "id": "th:ausdauer-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Der Weg hinaus",
+    "text": "Das Kind fährt mit dem Stift den Weg durch das Labyrinth vom Start bis zum Ausgang. Landet es in einer Sackgasse, sagt die Fachkraft „Nochmal!“, und das Kind geht ein Stück zurück und nimmt einen anderen Weg. Am Ausgang malt das Kind der Fachkraft ein Mini-Labyrinth mit einer Sackgasse, die Fachkraft löst es, und beide sagen „Tschüss“.",
+    "sagen": [
+      "Heute ging es ums Dranbleiben. Zum Schluss kommt ein Labyrinth mit Sackgassen.",
+      "Sackgasse? Nochmal! Geh ein Stück zurück und probier einen anderen Weg.",
+      "Jetzt malst du eins für mich. Geschafft, Tschüss!"
+    ],
+    "wennEsKippt": "Findet das Kind den Weg nicht, tippt die Fachkraft auf die nächste Abzweigung, und das Kind probiert sie aus. Mag es kein Labyrinth zeichnen, malt die Fachkraft schnell ein zweites kleines, und beide fahren es gemeinsam mit dem Finger nach.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "malen",
+      "spiel"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le chemin vers l’arrivée",
+      "text": "L’enfant suit avec le crayon le chemin du labyrinthe, du départ à l’arrivée. S’il arrive dans une impasse, l’adulte dit « Encore une fois ! », et l’enfant revient un peu en arrière et prend un autre chemin. À l’arrivée, l’enfant dessine pour l’adulte un mini-labyrinthe avec une impasse, l’adulte le résout, et les deux disent « au revoir ».",
+      "sagen": [
+        "Aujourd’hui, on a parlé de persévérer. Pour finir, il y a un petit labyrinthe avec des impasses.",
+        "Une impasse ? Encore une fois ! Reviens un peu en arrière et essaie un autre chemin.",
+        "Maintenant, tu en dessines un pour moi. Réussi, au revoir !"
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas le chemin, l’adulte tapote sur le prochain embranchement, et l’enfant l’essaie. Si l’enfant ne veut pas dessiner de labyrinthe, l’adulte en dessine vite un deuxième, petit, et les deux le suivent ensemble du doigt.",
+      "kurz": "Résoudre un labyrinthe · impasse : encore · mini-labyrinthe",
+      "vorbereitung": "Dessiner sur une feuille un petit labyrinthe avec départ, arrivée et deux impasses"
+    },
+    "kurz": "Labyrinth lösen · Sackgasse: nochmal · Mini-Labyrinth zeichnen",
+    "vorbereitung": "Ein kleines Labyrinth mit Start, Ausgang und zwei Sackgassen auf ein Blatt zeichnen"
+  },
+  {
+    "id": "th:kooperation-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Bild im Wechsel",
+    "text": "Auf dem Tisch liegt ein Blatt Papier. Fachkraft und Kind malen abwechselnd je einen Strich oder eine Form (zehn Sekunden), ohne vorher zu sprechen. Nach etwa sechs Zügen sagen beide, was auf dem Bild zu sehen sein könnte, und einigen sich auf einen Titel.",
+    "sagen": [
+      "Heute geht es ums Zusammenarbeiten. Dazu malen wir gleich ein Bild, an dem wir beide arbeiten.",
+      "Ich mache einen Strich, dann bist du dran.",
+      "Wie könnten wir unser Bild nennen?"
+    ],
+    "wennEsKippt": "Mag das Kind nicht malen, legen beide abwechselnd Stifte zu einem gemeinsamen Muster auf den Tisch. Findet man keinen Titel, bleibt das Bild ohne Titel.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "malen",
+      "spiel"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le dessin à tour de rôle",
+      "text": "Une feuille de papier est posée sur la table. L’adulte et l’enfant dessinent chacun à son tour un trait ou une forme (dix secondes), sans parler avant. Après environ six tours, ils disent ensemble ce que le dessin pourrait représenter et se mettent d’accord sur un titre.",
+      "sagen": [
+        "Aujourd’hui, on parle de travailler ensemble. On va dessiner une image sur laquelle on travaille tous les deux.",
+        "Je fais un trait, puis c’est ton tour.",
+        "Comment pourrait-on appeler notre dessin ?"
+      ],
+      "wennEsKippt": "Si l’enfant ne veut pas dessiner, les deux posent à tour de rôle des crayons sur la table pour former un motif commun. Si on ne trouve pas de titre, le dessin reste sans titre.",
+      "kurz": "À tour de rôle un trait ou une forme, en silence · trouver un titre"
+    },
+    "kurz": "Abwechselnd je ein Strich oder eine Form, stumm · dann Titel finden"
+  },
+  {
+    "id": "th:kooperation-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Ball auf dem Tuch",
+    "text": "Fachkraft und Kind halten ein Tuch an zwei Enden und legen einen Ball in die Mitte. Gemeinsam tragen sie den Ball langsam durch den Raum, ohne dass er herunterfällt, bis zu einem Stuhl als Ziel. Das Kind bestimmt Tempo und Weg; fällt der Ball, legen beide ihn gemeinsam zurück aufs Tuch und starten neu.",
+    "sagen": [
+      "Heute geht es ums Zusammenarbeiten. Mit dem Tuch klappt es nur, wenn wir beide aufeinander achten.",
+      "Langsam, wir gehen zusammen. Sag Bescheid, wenn ich zu schnell bin.",
+      "Der Ball ist am Ziel angekommen."
+    ],
+    "wennEsKippt": "Im Sitzen: Beide halten das Tuch über dem Tisch und rollen den Ball hin und her, ohne dass er herunterfällt. Fällt der Ball zu oft, nimmt man einen leichteren oder legt ihn in eine Mulde im Tuch.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [
+      "tuch",
+      "ball",
+      "stuhl"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La balle sur le tissu",
+      "text": "L’adulte et l’enfant tiennent un tissu chacun par une extrémité et posent une balle au milieu. Ensemble, ils portent lentement la balle à travers la pièce sans qu’elle tombe, jusqu’à une chaise qui sert de but. L’enfant décide du rythme et du chemin ; si la balle tombe, les deux la reposent ensemble sur le tissu et recommencent.",
+      "sagen": [
+        "Aujourd’hui, on parle de travailler ensemble. Avec le tissu, ça ne marche que si on fait attention l’un à l’autre.",
+        "Doucement, on avance ensemble. Dis-moi si je vais trop vite.",
+        "La balle est arrivée au but."
+      ],
+      "wennEsKippt": "Assis : les deux tiennent le tissu au-dessus de la table et font rouler la balle d’un côté à l’autre sans qu’elle tombe. Si la balle tombe trop souvent, on prend une balle plus légère ou on la pose dans un creux du tissu.",
+      "kurz": "Tenir le tissu à deux · balle jusqu’à la chaise · l’enfant mène"
+    },
+    "kurz": "Tuch zu zweit halten · Ball bis zum Stuhl tragen · Kind führt"
+  },
+  {
+    "id": "th:kooperation-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Stift zu zweit",
+    "text": "Kind und Fachkraft halten einen Stift waagerecht, mit je einer Fingerspitze an den beiden Enden, heben ihn hoch und tragen ihn fünf Schritte, ohne dass er fällt; fällt er, beginnen sie ruhig von vorn. Danach liegen drei Zettel auf dem Tisch: Auge (hinschauen), Mund (absprechen), Schnecke (langsam sein). Das Kind legt den Stift auf den Zettel, der am meisten geholfen hat, und die Fachkraft zeigt auch auf einen.",
+    "sagen": [
+      "Heute ging es ums Zusammenarbeiten. Jetzt tragen wir zusammen einen Stift: du mit einer Fingerspitze, ich mit einer.",
+      "Wir heben ihn hoch und gehen fünf Schritte. Fällt er, fangen wir ruhig neu an.",
+      "Leg den Stift auf den Zettel, der uns am meisten geholfen hat. Du darfst auch „Pass“ sagen."
+    ],
+    "wennEsKippt": "Gelingt das Tragen nicht, reichen zwei Schritte, oder beide halten den Stift an den Enden mit der ganzen Hand. Mag das Kind keinen Zettel wählen, zeigt die Fachkraft zuerst auf einen, und das Kind nickt oder schüttelt den Kopf.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "karten"
+    ],
+    "material": [
+      "stifte",
+      "papier"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le crayon à deux",
+      "text": "L’enfant et l’adulte tiennent un crayon à l’horizontale, du bout d’un doigt à chaque extrémité, le soulèvent et le portent sur cinq pas sans qu’il tombe ; s’il tombe, ils recommencent calmement. Ensuite, trois feuilles sont posées sur la table : œil (regarder), bouche (se mettre d’accord), escargot (aller doucement). L’enfant pose le crayon sur la feuille qui a le plus aidé, et l’adulte en montre une aussi.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de travailler ensemble. Maintenant, on porte un crayon ensemble : toi du bout d’un doigt, moi aussi.",
+        "On le soulève et on fait cinq pas. S’il tombe, on recommence calmement.",
+        "Pose le crayon sur la feuille qui nous a le plus aidés. Tu peux aussi dire « Je passe »."
+      ],
+      "wennEsKippt": "Si le portage ne marche pas, deux pas suffisent, ou les deux tiennent le crayon aux extrémités avec toute la main. Si l’enfant ne veut pas choisir de feuille, l’adulte en montre d’abord une, et l’enfant fait oui ou non de la tête.",
+      "kurz": "Porter un crayon à deux du bout des doigts · choisir la feuille",
+      "vorbereitung": "Dessiner trois feuilles : œil (regarder) · bouche (se mettre d’accord) · escargot (aller doucement)"
+    },
+    "kurz": "Stift gemeinsam mit Fingerspitzen tragen · Zettel wählen, was half",
+    "vorbereitung": "Drei Zettel zeichnen: Auge (hinschauen) · Mund (absprechen) · Schnecke (langsam sein)"
+  },
+  {
+    "id": "th:kooperation-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Gemeinsames Abschiedswort",
+    "text": "Fachkraft und Kind einigen sich in einer halben Minute auf ein Abschiedswort (zum Beispiel „Tschüss“, „Bis bald“ oder ein erfundenes Wort). Sie zählen leise gemeinsam bis drei und sagen das Wort gleichzeitig. Klappt es nicht gleich, versuchen sie es noch einmal.",
+    "sagen": [
+      "Heute ging es ums Zusammenarbeiten. Auch beim Abschied können wir uns absprechen.",
+      "Welches Wort sagen wir zusammen? Du darfst es aussuchen.",
+      "Eins, zwei, drei …"
+    ],
+    "wennEsKippt": "Findet das Kind kein Wort, schlägt die Fachkraft zwei vor. Sprechen beide nicht genau gleichzeitig, ist das nicht schlimm: Man versucht es einfach zweimal.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Un mot d’au revoir à deux",
+      "text": "L’adulte et l’enfant se mettent d’accord en une demi-minute sur un mot d’au revoir (par exemple « au revoir », « à bientôt » ou un mot inventé). Ils comptent tout bas jusqu’à trois ensemble et disent le mot en même temps. Si ça ne marche pas du premier coup, ils essaient encore une fois.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de travailler ensemble. Même pour dire au revoir, on peut se mettre d’accord.",
+        "Quel mot disons-nous ensemble ? C’est toi qui le choisis.",
+        "Un, deux, trois…"
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas de mot, l’adulte en propose deux. Si les deux ne parlent pas exactement en même temps, ce n’est pas grave : on peut simplement essayer deux fois.",
+      "kurz": "Choisir un mot d’adieu · compter jusqu’à trois · le dire ensemble"
+    },
+    "kurz": "Abschiedswort aushandeln · bis drei zählen · gleichzeitig sagen"
+  },
+  {
+    "id": "th:konflikte-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Sechs oder neun?",
+    "text": "Die Fachkraft legt ein Blatt mit einer großen Zahl zwischen beide, die sich gegenübersitzen: Das Kind sieht eine 6, die Fachkraft sieht eine 9. Beide sagen gleichzeitig, was sie sehen, und staunen, dass beide recht haben. Dann stellt sich das Kind dorthin, wo die Fachkraft sitzt, und schaut noch einmal.",
+    "sagen": [
+      "Heute geht es um Streit und darum, wie man ihn fair löst. Wir fangen damit an, dass man dasselbe verschieden sehen kann.",
+      "Ich sehe eine Neun. Was siehst du?",
+      "Wir haben beide recht, von unserem Platz aus."
+    ],
+    "wennEsKippt": "Hält das Kind seine Zahl für die einzig richtige, lädt die Fachkraft es ein, sich neben sie zu stellen und selbst nachzuschauen. Wollen beide nicht aufstehen, dreht die Fachkraft das Blatt langsam um.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Six ou neuf ?",
+      "text": "L’adulte pose une feuille avec un grand chiffre entre les deux, qui sont face à face : l’enfant voit un 6, l’adulte voit un 9. Les deux disent en même temps ce qu’ils voient et constatent qu’ils ont raison tous les deux. Ensuite, l’enfant va là où l’adulte est assis et regarde encore une fois.",
+      "sagen": [
+        "Aujourd’hui, on parle de dispute et de la façon de la régler de manière juste. On commence par voir qu’on peut regarder la même chose différemment.",
+        "Je vois un neuf. Et toi, que vois-tu ?",
+        "On a raison tous les deux, depuis notre place."
+      ],
+      "wennEsKippt": "Si l’enfant pense que son chiffre est le seul bon, l’adulte l’invite à venir à côté de lui pour vérifier. Si aucun des deux ne veut se lever, l’adulte tourne lentement la feuille.",
+      "kurz": "Chiffre entre les deux · six ou neuf ? · changer de place",
+      "vorbereitung": "Écrire un grand 6 au gros feutre sur une feuille"
+    },
+    "kurz": "Zahl zwischen beiden · Sechs oder Neun? · Platz tauschen",
+    "vorbereitung": "Eine große 6 mit dickem Stift auf ein Blatt schreiben"
+  },
+  {
+    "id": "th:konflikte-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Schmaler Weg",
+    "text": "Zwei Stühle stehen so, dass dazwischen nur ein schmaler Gang bleibt. Fachkraft und Kind gehen von beiden Seiten darauf zu und treffen sich in der Mitte, mit Abstand und ohne Berührung. Beide überlegen kurz und finden jedes Mal eine andere Lösung: Einer wartet, einer geht ein Stück zurück, oder sie lassen sich abwechselnd vor. Nach vier Runden haben sie vier Lösungen gefunden.",
+    "sagen": [
+      "Heute geht es darum, wie man sich bei Streit einigt. Wir üben, wie man einander Platz macht.",
+      "Wir treffen uns in der Mitte. Was machen wir jetzt?",
+      "Das war eine neue Lösung."
+    ],
+    "wennEsKippt": "Im Sitzen: Zwei Finger laufen auf dem Tisch aufeinander zu, zwischen zwei Stiften als Gang, und finden eine Lösung. Wird es dem Kind zu eng, stellt man den Gang breiter.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "rollenspiel"
+    ],
+    "material": [
+      "stuhl",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le passage étroit",
+      "text": "Deux chaises sont placées de façon à ne laisser entre elles qu’un passage étroit. L’adulte et l’enfant s’avancent chacun d’un côté, se rencontrent au milieu, à distance et sans se toucher. Ils réfléchissent un instant et trouvent chaque fois une autre solution : l’un attend, l’un recule un peu, ou ils se laissent passer à tour de rôle. Après quatre tours, ils ont trouvé quatre solutions.",
+      "sagen": [
+        "Aujourd’hui, on parle de la façon de se mettre d’accord quand il y a une dispute. On s’exerce à se faire de la place.",
+        "On se rencontre au milieu. Qu’est-ce qu’on fait maintenant ?",
+        "C’est une nouvelle solution."
+      ],
+      "wennEsKippt": "Assis : deux doigts avancent l’un vers l’autre sur la table, entre deux crayons qui forment le passage, et trouvent une solution. Si c’est trop étroit pour l’enfant, on élargit le passage.",
+      "kurz": "Passage étroit entre chaises · trouver quatre solutions différentes",
+      "vorbereitung": "Placer deux chaises avec un passage étroit entre elles"
+    },
+    "kurz": "Enger Gang zwischen Stühlen · vier verschiedene Lösungen finden",
+    "vorbereitung": "Zwei Stühle so stellen, dass dazwischen nur ein schmaler Gang bleibt"
+  },
+  {
+    "id": "th:konflikte-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Einer teilt, einer wählt",
+    "text": "Die Fachkraft gibt dem Kind ein Stück Knete und sagt: „Teile es so, dass du mit beiden Hälften einverstanden bist. Ich suche mir danach eine Hälfte aus.“ Das Kind teilt, die Fachkraft wählt, und beide schauen, wie fair die Hälften geworden sind. Dann tauschen sie die Rollen. Zum Schluss sagt das Kind, wo ihm dieser Trick helfen könnte, zum Beispiel beim Teilen einer Pizza.",
+    "sagen": [
+      "Heute ging es darum, wie man bei Streit eine faire Lösung findet. Hier ein Trick zum Teilen: Einer teilt, der andere wählt.",
+      "Teile die Knete so, dass beide Hälften für dich gut sind.",
+      "Wo könnte dir dieser Trick helfen? Du darfst auch „Pass“ sagen."
+    ],
+    "wennEsKippt": "Teilt das Kind sehr ungleich, nimmt die Fachkraft das größere Stück, und beide probieren es noch einmal, jetzt fairer. Mag das Kind kein Beispiel nennen, genügt es, die Hälften nebeneinanderzulegen und zu schauen.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [
+      "knete"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "L’un partage, l’autre choisit",
+      "text": "L’adulte donne un morceau de pâte à modeler à l’enfant et dit : « Partage-le de façon à être d’accord avec les deux moitiés. Ensuite, je choisis une moitié. » L’enfant partage, l’adulte choisit, et les deux regardent si les moitiés sont justes. Puis ils échangent les rôles. À la fin, l’enfant dit où cette astuce pourrait l’aider, par exemple pour partager une pizza.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de trouver une solution juste en cas de dispute. Voici une astuce pour partager : l’un partage, l’autre choisit.",
+        "Partage la pâte à modeler de façon que les deux moitiés te conviennent.",
+        "Où cette astuce pourrait-elle t’aider ? Tu peux aussi dire « Je passe »."
+      ],
+      "wennEsKippt": "Si l’enfant partage très inégalement, l’adulte prend le plus gros morceau, et les deux réessaient, plus justement cette fois. Si l’enfant ne veut pas donner d’exemple, il suffit de poser les moitiés côte à côte et de les regarder.",
+      "kurz": "Partager la pâte à modeler, l’autre choisit · échanger · où ça aide ?"
+    },
+    "kurz": "Einer teilt Knete, der andere wählt · Rollen tauschen · wo hilft das?"
+  },
+  {
+    "id": "th:konflikte-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Unser Pausenzeichen",
+    "text": "Das Kind erfindet ein Handzeichen, das „Pause, bitte“ bedeutet, zum Beispiel eine flache Hand wie ein Schild. Zum Test sagt die Fachkraft in übertriebenem Ton: „Und jetzt räumen wir noch zehnmal den ganzen Raum auf!“ Das Kind zeigt sein Zeichen, und die Fachkraft hört sofort auf und sagt „Pause, verstanden“. Dann zeigen beide das Zeichen noch einmal und sagen „Tschüss“.",
+    "sagen": [
+      "Heute ging es um Streit und darum, ruhig zu bleiben. Zum Schluss erfinden wir ein Zeichen, das „Pause, bitte“ heißt.",
+      "Wie sieht dein Pausenzeichen aus? Ich mache es nach.",
+      "Pause, verstanden. Tschüss!"
+    ],
+    "wennEsKippt": "Fällt dem Kind kein Zeichen ein, zeigt die Fachkraft zwei zur Auswahl (flache Hand, gekreuzte Zeigefinger), und das Kind wählt eins. Mag das Kind den Test nicht, zeigt es sein Zeichen nur einmal, und beide sagen Tschüss.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "rollenspiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Notre signe de pause",
+      "text": "L’enfant invente un signe de la main qui veut dire « pause, s’il te plaît », par exemple une main à plat comme un panneau. Pour tester, l’adulte dit sur un ton exagéré : « Et maintenant, on range encore dix fois toute la pièce ! » L’enfant montre son signe, et l’adulte s’arrête aussitôt en disant « Pause, compris ». Puis les deux refont le signe et disent « au revoir ».",
+      "sagen": [
+        "Aujourd’hui, on a parlé de la dispute et de rester calme. Pour finir, on invente un signe qui veut dire « pause, s’il te plaît ».",
+        "À quoi ressemble ton signe de pause ? Je le refais.",
+        "Pause, compris. Au revoir !"
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas de signe, l’adulte en propose deux (main à plat, index croisés), et l’enfant en choisit un. Si l’enfant ne veut pas faire le test, il montre son signe une seule fois, et les deux disent « au revoir ».",
+      "kurz": "Inventer un signe « pause, s’il te plaît » · tester · au revoir"
+    },
+    "kurz": "Handzeichen „Pause, bitte“ erfinden · kurz testen · Tschüss"
+  },
+  {
+    "id": "th:kommunikation-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Ein Wort, ein Satz",
+    "text": "Die Fachkraft stellt eine leichte Wahlfrage, zum Beispiel „Was magst du lieber: Sommer oder Winter?“. Sie beantwortet sie zuerst selbst: erst mit einem einzigen Wort, dann mit einem ganzen Satz mit „weil“. Danach ist das Kind dran.",
+    "sagen": [
+      "Heute geht es ums Reden und Zuhören. Wir fangen mit einem kleinen Spiel mit Wörtern und Sätzen an.",
+      "Sommer oder Winter? Erst ein Wort, dann ein ganzer Satz.",
+      "Der ganze Satz erzählt mir mehr."
+    ],
+    "wennEsKippt": "Fällt dem Kind der zweite Teil schwer, hilft die Fachkraft mit dem Satzanfang „Ich mag …, weil …“. Sagt das Kind „Pass“, darf es eine andere Wahlfrage nehmen.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Un mot, une phrase",
+      "text": "L’adulte pose une question de choix facile, par exemple « Qu’est-ce que tu préfères : l’été ou l’hiver ? ». Il y répond d’abord lui-même : d’abord par un seul mot, puis par une phrase entière avec « parce que ». Ensuite, c’est au tour de l’enfant.",
+      "sagen": [
+        "Aujourd’hui, on parle de parler et d’écouter. On commence par un petit jeu avec des mots et des phrases.",
+        "L’été ou l’hiver ? D’abord un mot, puis une phrase entière.",
+        "La phrase entière m’en dit plus."
+      ],
+      "wennEsKippt": "Si la deuxième partie est difficile pour l’enfant, l’adulte l’aide avec le début de phrase « J’aime…, parce que… ». Si l’enfant dit « passe », il peut prendre une autre question de choix.",
+      "kurz": "Question à choix : un mot, puis une phrase avec « parce que »"
+    },
+    "kurz": "Wahlfrage: erst ein Wort, dann Satz mit „weil“ · dann Kind"
+  },
+  {
+    "id": "th:kommunikation-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Gespräch mit Ball",
+    "text": "Fachkraft und Kind stehen sich in drei Schritten Abstand gegenüber, ein Ball liegt bei der Fachkraft. Wer den Ball hat, sagt einen Satz (zum Beispiel über das Lieblingsessen oder ein Pausenspiel) und rollt ihn dann zum anderen. Wer den Ball nicht hat, hört nur zu und nickt. Nach ein paar Runden stellt, wer den Ball hat, eine Frage zum Gesagten.",
+    "sagen": [
+      "Heute geht es ums Reden und Zuhören. Wer den Ball hat, spricht, der andere hört zu.",
+      "Ich sage einen Satz und rolle dir den Ball zu.",
+      "Erzähl mir mehr dazu. Ich höre zu."
+    ],
+    "wennEsKippt": "Im Sitzen: Der Ball rollt über den Tisch oder geht von Hand zu Hand. Sagt das Kind „Pass“, rollt es den Ball nur zurück, und die Fachkraft erzählt weiter.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "gespraech"
+    ],
+    "material": [
+      "ball"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La conversation avec la balle",
+      "text": "L’adulte et l’enfant se font face à trois pas de distance, avec une balle chez l’adulte. Celui qui a la balle dit une phrase (par exemple sur son plat préféré ou sur un jeu de récréation), puis la fait rouler vers l’autre. Celui qui n’a pas la balle écoute et hoche la tête. Après quelques tours, celui qui a la balle pose une question sur ce qui vient d’être dit.",
+      "sagen": [
+        "Aujourd’hui, on parle de parler et d’écouter. Celui qui a la balle parle, l’autre écoute.",
+        "Je dis une phrase et je te fais rouler la balle.",
+        "Raconte-moi en plus. Je t’écoute."
+      ],
+      "wennEsKippt": "Assis : la balle roule sur la table ou passe de main en main. Si l’enfant dit « passe », il fait seulement rouler la balle en retour et l’adulte continue à raconter.",
+      "kurz": "Qui a la balle parle et la fait rouler · puis une question"
+    },
+    "kurz": "Wer den Ball hat, spricht und rollt ihn weiter · dann Nachfrage"
+  },
+  {
+    "id": "th:kommunikation-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Haben wir uns verstanden?",
+    "text": "Das Kind erzählt in zwei Sätzen, was ihm in der Stunde am besten gefallen hat. Die Fachkraft wiederholt es mit eigenen Worten („Ich habe verstanden: …“), und das Kind sagt „stimmt“ oder „fast, noch dazu …“. Dann tauschen die beiden: Die Fachkraft erzählt, und das Kind sagt in eigenen Worten nach.",
+    "sagen": [
+      "Heute ging es ums Reden und Zuhören. Ich sage dir, was ich verstanden habe, und du sagst mir, ob es stimmt.",
+      "Stimmt das, oder habe ich etwas vergessen?",
+      "Jetzt bin ich dran, und du sagst, was du verstanden hast."
+    ],
+    "wennEsKippt": "Fällt dem Kind nichts ein, beginnt die Fachkraft und erzählt zuerst, damit das Kind nachsprechen kann. „Pass“ ist auch erlaubt.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Est-ce qu’on s’est compris ?",
+      "text": "L’enfant raconte en deux phrases ce qui lui a le plus plu pendant la séance. L’adulte le répète avec ses propres mots (« J’ai compris que… »), et l’enfant dit « c’est ça » ou « presque, il y a encore… ». Ensuite, ils échangent les rôles : l’adulte raconte, et l’enfant redit avec ses propres mots.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de parler et d’écouter. Je te dis ce que j’ai compris, et tu me dis si c’est juste.",
+        "C’est bien ça, ou j’ai oublié quelque chose ?",
+        "Maintenant, c’est mon tour, et tu me dis ce que tu as compris."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte commence et raconte en premier pour que l’enfant puisse répéter. « Passe » est aussi permis.",
+      "kurz": "L’enfant raconte · reformuler · c’est bien ça ? · échanger"
+    },
+    "kurz": "Kind erzählt in 2 Sätzen · mit eigenen Worten wiederholen · tauschen"
+  },
+  {
+    "id": "th:kommunikation-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Das Becher-Telefon",
+    "text": "Beide halten einen Becher wie ein Telefon: den Rand ans Ohr oder vor den Mund. Die Fachkraft flüstert ein Wort in den eigenen Becher, und das Kind sagt zurück, was es gehört hat. Dann flüstert das Kind ein Wort oder einen kurzen Satz, die Fachkraft sagt ihn zurück; zum Schluss flüstern beide „Tschüss“ in den Becher.",
+    "sagen": [
+      "Heute ging es ums Reden und Zuhören. Zum Schluss telefonieren wir mit dem Becher: Einer flüstert, einer hört zu.",
+      "Ich flüstere ein Wort. Sag es mir zurück.",
+      "Jetzt flüsterst du, und ich sage es zurück. Tschüss!"
+    ],
+    "wennEsKippt": "Gibt es nur einen Becher, reichen beide ihn hin und her. Fällt dem Kind kein Wort ein, flüstert es einfach „Tschüss“, oder die Fachkraft schlägt drei Wörter vor.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [
+      "becher"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le téléphone gobelet",
+      "text": "Les deux tiennent un gobelet comme un téléphone : le bord contre l’oreille ou devant la bouche. L’adulte chuchote un mot dans son gobelet, et l’enfant redit ce qu’il a entendu. Puis l’enfant chuchote un mot ou une courte phrase, l’adulte la redit ; pour finir, les deux chuchotent « au revoir » dans le gobelet.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de parler et d’écouter. Pour finir, on téléphone avec le gobelet : l’un chuchote, l’autre écoute.",
+        "Je chuchote un mot. Redis-le-moi.",
+        "Maintenant, tu chuchotes et je le redis. Au revoir !"
+      ],
+      "wennEsKippt": "S’il n’y a qu’un gobelet, les deux se le passent. Si l’enfant ne trouve pas de mot, il chuchote simplement « au revoir », ou l’adulte propose trois mots.",
+      "kurz": "Gobelet-téléphone · chuchoter un mot, le redire · échanger"
+    },
+    "kurz": "Becher als Telefon · Wort flüstern, zurücksagen · tauschen"
+  },
+  {
+    "id": "th:selbstbild-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Das kann ich schon",
+    "text": "Die Fachkraft zeigt ohne Worte etwas, das sie gut kann (zum Beispiel Schuhe zubinden), und das Kind rät, was es ist. Dann zeigt das Kind ohne Worte etwas, das es gut kann, und die Fachkraft rät. Wer nichts findet, nimmt etwas Kleines, zum Beispiel pfeifen oder sich einmal drehen.",
+    "sagen": [
+      "Heute geht es darum, was ich gut kann und was mich ausmacht. Wir fangen mit einem Pantomime-Spiel an.",
+      "Ich zeige dir etwas, das ich kann. Rate mal!",
+      "Ah, jetzt sehe ich es."
+    ],
+    "wennEsKippt": "Fällt dem Kind nichts ein, schlägt die Fachkraft drei kleine Dinge zum Zeigen vor (hüpfen, pfeifen, sich in Zeitlupe drehen). Mag das Kind nicht zeigen, rät es nur oder sagt „Pass“.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Ça, je sais déjà le faire",
+      "text": "L’adulte montre sans un mot quelque chose qu’il sait bien faire (par exemple nouer ses lacets), et l’enfant devine ce que c’est. Puis l’enfant montre sans un mot quelque chose qu’il sait bien faire, et l’adulte devine. Celui qui ne trouve rien prend une petite chose, par exemple siffler ou tourner une fois sur soi-même.",
+      "sagen": [
+        "Aujourd’hui, on parle de ce que je sais bien faire et de ce qui me caractérise. On commence par un jeu de mime.",
+        "Je te montre quelque chose que je sais faire. Devine !",
+        "Ah, maintenant je vois."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose trois petites choses à montrer (sauter, siffler, tourner au ralenti). Si l’enfant ne veut pas montrer, il devine seulement ou dit « passe ».",
+      "kurz": "Mimer quelque chose qu’on sait faire · l’autre devine"
+    },
+    "kurz": "Etwas Gekonntes pantomimisch zeigen · der andere rät"
+  },
+  {
+    "id": "th:selbstbild-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Du zeigst, ich lerne",
+    "text": "Das Kind bringt der Fachkraft eine Bewegung bei, die es gut kann, zum Beispiel hüpfen, sich langsam drehen, auf einem Bein stehen (mit Festhalten am Stuhl) oder balancieren. Es zeigt sie vor und gibt Tipps; die Fachkraft macht sie nach, fragt „Wie genau?“ und macht absichtlich kleine Fehler, die das Kind verbessern darf. Danach zeigt das Kind eine zweite Bewegung, und die Fachkraft bedankt sich für das, was sie gelernt hat.",
+    "sagen": [
+      "Heute geht es darum, was ich gut kann. Du darfst mir etwas beibringen, und ich lerne von dir.",
+      "Zeig mir genau, wie das geht. Worauf muss ich achten?",
+      "Danke, ich habe etwas von dir gelernt."
+    ],
+    "wennEsKippt": "Im Sitzen: Das Kind bringt ein Fingerspiel oder eine Armbewegung bei. Weiß das Kind nicht, was es zeigen soll, wählt es aus zwei Vorschlägen oder sagt „Pass“.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Tu montres, j’apprends",
+      "text": "L’enfant apprend à l’adulte un mouvement qu’il sait bien faire, par exemple sauter, tourner lentement, se tenir sur un pied (en se tenant à une chaise) ou garder l’équilibre. Il le montre et donne des conseils ; l’adulte l’imite, demande « Comment exactement ? » et fait exprès de petites erreurs que l’enfant peut corriger. Ensuite, l’enfant montre un deuxième mouvement et l’adulte le remercie pour ce qu’il a appris.",
+      "sagen": [
+        "Aujourd’hui, on parle de ce que je sais bien faire. Tu peux m’apprendre quelque chose, et moi, j’apprends de toi.",
+        "Montre-moi exactement comment ça marche. À quoi dois-je faire attention ?",
+        "Merci, j’ai appris quelque chose avec toi."
+      ],
+      "wennEsKippt": "Assis : l’enfant apprend un jeu de doigts ou un mouvement de bras. Si l’enfant ne sait pas quoi montrer, il choisit parmi deux propositions ou dit « passe ».",
+      "kurz": "L’enfant enseigne un mouvement · corriger les erreurs voulues"
+    },
+    "kurz": "Kind lehrt eine Bewegung · absichtliche Fehler verbessern"
+  },
+  {
+    "id": "th:selbstbild-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Mein Ich-Karton",
+    "text": "Auf dem Tisch stehen ein Schuhkarton und sechs kleine Dinge, die für etwas stehen: Stift (malen), Ball (Sport), Buch (lesen), Bausteine (bauen), Spielkarten (Spiele), Knete (basteln). Das Kind legt ein oder zwei Dinge in den Karton, die zu etwas passen, das es gut kann oder gern macht, und sagt ein Wort dazu oder zeigt es. Die Fachkraft legt auch ein Ding hinein und sagt ein Wort. Zum Schluss schauen beide in den Karton: Das ist heute drin.",
+    "sagen": [
+      "Heute ging es um dich: was du gut kannst und was zu dir gehört. Wir packen einen Ich-Karton.",
+      "Welches Ding passt zu etwas, das du gut kannst oder gern machst?",
+      "Ich lege das Buch hinein, weil ich gern lese. Du darfst auch „Pass“ sagen."
+    ],
+    "wennEsKippt": "Findet das Kind nichts, nennt die Fachkraft zwei Dinge, die sie heute am Kind beobachtet hat, und das Kind wählt ein passendes Ding oder sagt „Pass“. Es geht nie darum, etwas Besonderes zu können.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [
+      "schuhkarton",
+      "stifte",
+      "ball",
+      "buecher",
+      "bausteine",
+      "spielkarten",
+      "knete"
+    ],
+    "ort": "raum",
+    "anspruch": 2,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Ma boîte à moi",
+      "text": "Sur la table, il y a une boîte à chaussures et six petits objets qui représentent quelque chose : un crayon (dessiner), une balle (sport), un livre (lire), des briques (construire), des cartes (jeux), de la pâte à modeler (modeler). L’enfant met un ou deux objets dans la boîte, qui vont avec ce qu’il sait bien faire ou aime faire, et dit un mot ou le montre. L’adulte y met aussi un objet et dit un mot. À la fin, les deux regardent dans la boîte.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de toi : ce que tu sais bien faire et ce qui te ressemble. On remplit une boîte à toi.",
+        "Quel objet va avec quelque chose que tu sais bien faire ou que tu aimes faire ?",
+        "Je mets le livre, parce que j’aime lire. Tu peux aussi dire « Je passe »."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte cite deux choses qu’il a remarquées chez l’enfant aujourd’hui, et l’enfant choisit un objet qui va avec ou dit « Je passe ». Il ne s’agit jamais de savoir faire quelque chose de spécial.",
+      "kurz": "Mettre dans la boîte un objet qui me ressemble · un mot",
+      "vorbereitung": "Poser une boîte à chaussures et six objets : crayon, balle, livre, briques, cartes à jouer, pâte à modeler"
+    },
+    "kurz": "Ding in den Ich-Karton legen, das zu mir passt · ein Wort dazu",
+    "vorbereitung": "Schuhkarton und sechs Dinge hinstellen: Stift, Ball, Buch, Bausteine, Spielkarten, Knete"
+  },
+  {
+    "id": "th:selbstbild-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Ich bin jemand, der …",
+    "text": "Die Fachkraft nennt vier Wörter zur Auswahl: neugierig, mutig, hilfsbereit, geduldig. Das Kind wählt eins und sagt den Satz „Ich bin jemand, der …“ mit einem Beispiel, oder es erfindet ein eigenes Wort. Die Fachkraft sagt ihren Satz auch, und beide sagen „Tschüss“.",
+    "sagen": [
+      "Heute ging es um dich und das, was du gut kannst. Zum Schluss ein Satz über dich.",
+      "Ich bin jemand, der neugierig ist. Und du?",
+      "Du darfst auch „Pass“ sagen. Tschüss!"
+    ],
+    "wennEsKippt": "Fällt dem Kind kein Beispiel ein, reicht das Wort allein. Möchte das Kind nichts sagen, verabschiedet sich die Fachkraft einfach.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 2,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Je suis quelqu’un de…",
+      "text": "L’adulte propose quatre mots au choix : curieux, courageux, serviable, patient. L’enfant en choisit un et dit la phrase « Je suis quelqu’un de… » avec un exemple, ou invente un mot à lui. L’adulte dit aussi sa phrase, et les deux se disent au revoir.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de toi et de ce que tu sais bien faire. Pour finir, une phrase sur toi.",
+        "Je suis quelqu’un de curieux. Et toi ?",
+        "Tu peux aussi dire « passe ». Au revoir !"
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas d’exemple, le mot seul suffit. Si l’enfant ne veut rien dire, l’adulte dit simplement au revoir.",
+      "kurz": "Choisir un adjectif (curieux, courageux…) · phrase avec exemple"
+    },
+    "kurz": "Eigenschaftswort wählen (neugierig, mutig …) · Satz mit Beispiel"
+  },
+  {
+    "id": "th:lernstrategien-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Vier Wörter merken",
+    "text": "Die Fachkraft nennt vier Wörter (zum Beispiel Apfel, Schuh, Mond, Hund). Das Kind überlegt, wie es sie sich merken könnte, etwa mit einem Bild im Kopf, einer kleinen Geschichte oder durch Wiederholen, und probiert es aus. Dann sagen beide die Wörter auf; die Fachkraft verrät, welchen Trick sie genutzt hat.",
+    "sagen": [
+      "Heute geht es darum, wie man etwas lernt und sich Dinge merkt. Wir fangen mit einem kleinen Merk-Versuch an.",
+      "Ich nenne vier Wörter. Such dir einen Trick zum Merken aus.",
+      "Ich habe mir eine kleine Geschichte ausgedacht."
+    ],
+    "wennEsKippt": "Vergisst das Kind Wörter, ist das nicht schlimm: Man probiert einen anderen Trick, oder die Fachkraft nennt nur drei Wörter. Wichtig ist nicht, wie viele es sind, sondern welcher Trick hilft.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Retenir quatre mots",
+      "text": "L’adulte dit quatre mots (par exemple pomme, chaussure, lune, chien). L’enfant réfléchit à la façon de les retenir, par exemple avec une image dans la tête, une petite histoire ou en les répétant, et l’essaie. Ensuite, les deux redisent les mots ; l’adulte révèle quelle astuce il a utilisée.",
+      "sagen": [
+        "Aujourd’hui, on parle de la façon d’apprendre et de retenir des choses. On commence par un petit essai de mémoire.",
+        "Je dis quatre mots. Choisis une astuce pour les retenir.",
+        "Moi, je me suis inventé une petite histoire."
+      ],
+      "wennEsKippt": "Si l’enfant oublie des mots, ce n’est pas grave : on essaie une autre astuce, ou l’adulte ne dit que trois mots. Ce qui compte, ce n’est pas le nombre de mots, mais l’astuce qui aide.",
+      "kurz": "Quatre mots · l’enfant choisit une astuce de mémoire · les redire"
+    },
+    "kurz": "Vier Wörter nennen · Kind wählt Merk-Trick · aufsagen"
+  },
+  {
+    "id": "th:lernstrategien-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Merk-Reise im Raum",
+    "text": "Die Fachkraft nennt vier Dinge (zum Beispiel Apfel, Mütze, Ball, Löffel) und legt mit dem Kind vier Stationen im Raum fest: Tür, Fenster, Tisch, Stuhl. An jeder Station „legen“ beide ein Ding in Gedanken ab und sagen dazu, was es ist. Dann gehen beide die Reise noch einmal und holen die Dinge in der richtigen Reihenfolge wieder ab.",
+    "sagen": [
+      "Beim Lernen hilft es, sich Dinge an Orten vorzustellen. Das probieren wir mit einer Reise durch den Raum.",
+      "An der Tür lege ich den Apfel ab. Und du?",
+      "Jetzt holen wir alles der Reihe nach wieder ab."
+    ],
+    "wennEsKippt": "Im Sitzen: Der Blick wandert von Ort zu Ort, und das Kind zeigt mit dem Finger. Fallen zu viele Dinge aus, nimmt man nur drei.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Un voyage pour retenir",
+      "text": "L’adulte dit quatre choses (par exemple une pomme, un bonnet, une balle, une cuillère) et fixe avec l’enfant quatre stations dans la pièce : la porte, la fenêtre, la table, la chaise. À chaque station, les deux « déposent » une chose dans leur tête et la nomment. Puis ils refont le voyage et récupèrent les choses dans le bon ordre.",
+      "sagen": [
+        "Pour apprendre, ça aide d’imaginer les choses à des endroits. On l’essaie avec un voyage dans la pièce.",
+        "À la porte, je dépose la pomme. Et toi ?",
+        "Maintenant, on récupère tout dans l’ordre."
+      ],
+      "wennEsKippt": "Assis : le regard passe d’un endroit à l’autre et l’enfant montre du doigt. S’il y a trop de choses oubliées, on n’en prend que trois.",
+      "kurz": "Quatre postes · y poser les objets en pensée, les reprendre"
+    },
+    "kurz": "Vier Stationen im Raum · Dinge in Gedanken ablegen, dann abholen"
+  },
+  {
+    "id": "th:lernstrategien-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Meine Lern-Treppe",
+    "text": "Die Fachkraft zeichnet eine Treppe mit vier Stufen und schreibt dazu: „Zuschauen“, „Fragen“, „Ausprobieren“, „Nochmal anders“. Das Kind macht ein Kreuz auf die Stufe, die ihm heute am meisten geholfen hat. Beide erzählen in einem Satz, wann sie diese Stufe in der Stunde genutzt haben.",
+    "sagen": [
+      "Heute ging es darum, wie man etwas lernen kann. Auf welcher Stufe der Treppe warst du heute oft?",
+      "Mach ein Kreuz auf die Stufe, die dir geholfen hat. „Pass“ ist auch erlaubt.",
+      "Ich habe heute oft nochmal anders probiert."
+    ],
+    "wennEsKippt": "Fällt die Wahl schwer, macht das Kind zwei Kreuze oder zeigt nur auf die Stufe. Die Fachkraft kann zwei Beispiele aus der Stunde nennen.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "malen",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Mon escalier de l’apprentissage",
+      "text": "L’adulte dessine un escalier à quatre marches et écrit dessus : « Regarder », « Demander », « Essayer », « Essayer autrement ». L’enfant fait une croix sur la marche qui l’a le plus aidé aujourd’hui. Les deux racontent en une phrase quand ils ont utilisé cette marche pendant la séance.",
+      "sagen": [
+        "Aujourd’hui, on a parlé de la façon d’apprendre quelque chose. Sur quelle marche de l’escalier étais-tu souvent aujourd’hui ?",
+        "Fais une croix sur la marche qui t’a aidé. « Passe » est aussi permis.",
+        "Aujourd’hui, j’ai souvent essayé autrement."
+      ],
+      "wennEsKippt": "Si le choix est difficile, l’enfant fait deux croix ou montre seulement la marche. L’adulte peut donner deux exemples de la séance.",
+      "kurz": "Croix sur la marche la plus utile · raconter un moment",
+      "vorbereitung": "Dessiner un escalier de 4 marches : observer · demander · essayer · refaire autrement"
+    },
+    "kurz": "Kreuz auf die hilfreichste Stufe · Moment dazu erzählen",
+    "vorbereitung": "Treppe mit 4 Stufen zeichnen: Zuschauen · Fragen · Ausprobieren · Nochmal anders"
+  },
+  {
+    "id": "th:lernstrategien-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Ich erkläre es dir",
+    "text": "Die Fachkraft bittet das Kind: „Zeig mir etwas aus der Stunde, das ich jetzt auch können möchte.“ Das Kind erklärt oder zeigt es mit wenigen Worten oder Handgriffen, und die Fachkraft macht es nach. Dann sagt sie „Danke, jetzt kann ich es“, und beide sagen „Tschüss“.",
+    "sagen": [
+      "Heute ging es darum, wie man etwas lernt. Zum Schluss lerne ich etwas von dir.",
+      "Zeig mir etwas, das du heute ausprobiert hast. Ich mache es nach.",
+      "Danke, jetzt kann ich es. Tschüss!"
+    ],
+    "wennEsKippt": "Fällt dem Kind nichts ein, wählt die Fachkraft zwei Dinge aus der Stunde, und das Kind zeigt eins davon. Mag das Kind nicht erklären, zeigt es nur die Handgriffe ohne Worte.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "C’est moi qui t’explique",
+      "text": "L’adulte demande à l’enfant : « Montre-moi quelque chose de la séance que je voudrais savoir faire maintenant. » L’enfant l’explique ou le montre en quelques mots ou gestes, et l’adulte le refait. Puis l’adulte dit « Merci, maintenant je sais le faire », et les deux disent « au revoir ».",
+      "sagen": [
+        "Aujourd’hui, on a parlé de la façon d’apprendre. Pour finir, j’apprends quelque chose de toi.",
+        "Montre-moi quelque chose que tu as essayé aujourd’hui. Je le refais.",
+        "Merci, maintenant je sais le faire. Au revoir !"
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte choisit deux choses de la séance, et l’enfant en montre une. Si l’enfant ne veut pas expliquer, il montre seulement les gestes, sans mots.",
+      "kurz": "L’enfant apprend quelque chose de la séance à l’adulte · il le refait"
+    },
+    "kurz": "Kind bringt der Fachkraft etwas aus der Stunde bei · sie macht es nach"
+  },
+  {
+    "id": "th:alltag-ankommen-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Plan mit drei Fingern",
+    "text": "Die Fachkraft zeigt an drei Fingern, wie die Stunde abläuft: Anfang (Hallo), Mitte (Arbeiten oder Spielen) und Schluss (Tschüss). Sie zeigt auf die Uhr, wann ungefähr Schluss ist. Das Kind sagt den Plan mit seinen Fingern nach, und beide legen fest, was sie am Ende zusammen aufräumen.",
+    "sagen": [
+      "Heute geht es um den Alltag: wissen, was kommt, und von einem Teil zum nächsten wechseln. Wir fangen mit einem Plan an.",
+      "Anfang, Mitte, Schluss. Das sind drei Finger.",
+      "Am Schluss räumen wir zusammen auf. Das ist unser Plan."
+    ],
+    "wennEsKippt": "Mag das Kind die Finger nicht benutzen, zeigt es die drei Teile mit drei Stiften auf dem Tisch. Fragt das Kind, wann Schluss ist, zeigt die Fachkraft einfach auf die Uhr.",
+    "rolle": [
+      "ankommen"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 2,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "spiel"
+    ],
+    "material": [
+      "uhr",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le plan en trois doigts",
+      "text": "L’adulte montre sur trois doigts comment se déroule la séance : le début (bonjour), le milieu (travailler ou jouer) et la fin (au revoir). Il montre l’horloge pour indiquer à peu près quand la séance se termine. L’enfant redit le plan avec ses doigts, et les deux décident ce qu’ils rangeront ensemble à la fin.",
+      "sagen": [
+        "Aujourd’hui, on parle du quotidien : savoir ce qui vient et passer d’une chose à l’autre. On commence par un plan.",
+        "Début, milieu, fin. Ça fait trois doigts.",
+        "À la fin, on range ensemble. C’est notre plan."
+      ],
+      "wennEsKippt": "Si l’enfant ne veut pas utiliser ses doigts, il montre les trois parties avec trois crayons posés sur la table. Si l’enfant demande quand ça finit, l’adulte montre simplement l’horloge.",
+      "kurz": "Déroulement sur trois doigts : début · milieu · fin · ranger"
+    },
+    "kurz": "Ablauf an drei Fingern: Anfang · Mitte · Schluss · Aufräumen planen"
+  },
+  {
+    "id": "th:alltag-bewegung-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Alltag als Pantomime",
+    "text": "Die Fachkraft zeigt in Zeitlupe und ohne Worte eine Alltagshandlung in kleinen Schritten, zum Beispiel die Jacke anziehen: ein Arm in den Ärmel, der andere Arm, Reißverschluss zu. Das Kind rät, was es ist, und macht die Schritte mit. Dann zeigt das Kind eine Handlung (zum Beispiel Ranzen packen, Schuhe binden oder den Tisch abwischen) in der richtigen Reihenfolge, und die Fachkraft rät und macht mit.",
+    "sagen": [
+      "Heute geht es um Dinge aus dem Alltag und um die richtige Reihenfolge. Das probieren wir als Pantomime.",
+      "Was mache ich da gerade? Erst das, dann das.",
+      "Jetzt zeigst du mir eine Handlung, und ich mache mit."
+    ],
+    "wennEsKippt": "Im Sitzen: Die Handlung nur mit den Händen zeigen. Fällt dem Kind nichts ein, nennt die Fachkraft zwei Handlungen, und das Kind sucht eine aus.",
+    "rolle": [
+      "bewegung"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "rollenspiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Mime du quotidien",
+      "text": "L’adulte montre au ralenti et sans un mot un geste du quotidien en petites étapes, par exemple enfiler sa veste : un bras dans la manche, l’autre bras, fermer la fermeture éclair. L’enfant devine de quoi il s’agit et fait les étapes avec lui. Ensuite, l’enfant montre un geste (par exemple faire son cartable, nouer ses lacets ou essuyer la table) dans le bon ordre, et l’adulte devine et le fait avec lui.",
+      "sagen": [
+        "Aujourd’hui, on parle de ce qui arrive tous les jours et de l’ordre dans lequel on le fait. On l’essaie en mime.",
+        "Qu’est-ce que je fais là ? D’abord ça, puis ça.",
+        "Maintenant, tu me montres un geste, et je le fais avec toi."
+      ],
+      "wennEsKippt": "Assis : montrer le geste seulement avec les mains. Si l’enfant ne trouve rien, l’adulte propose deux gestes et l’enfant en choisit un.",
+      "kurz": "Mimer une action au ralenti · deviner · imiter · échanger"
+    },
+    "kurz": "Handlung in Zeitlupe stumm vorspielen · raten · mitmachen · tauschen"
+  },
+  {
+    "id": "th:alltag-reflexion-kinder",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Erst, dann, zuletzt",
+    "text": "Die Fachkraft nennt einen Übergang aus dem Schulalltag, zum Beispiel von der Pause zurück in die Klasse, und legt drei Zettel hin: „Jacke aufhängen“, „Material rausholen“, „hinsetzen“. Das Kind legt die Zettel in die Reihenfolge, die ihm am besten passt, und sagt, warum. Die Fachkraft zeigt ihre eigene Reihenfolge und sagt, dass es mehrere gute Wege gibt.",
+    "sagen": [
+      "Heute ging es um den Alltag, um Reihenfolgen und Übergänge. Was machst du zuerst, was danach?",
+      "Leg die Zettel in die Reihenfolge, die dir hilft.",
+      "Bei mir ist es anders, und das ist auch in Ordnung."
+    ],
+    "wennEsKippt": "Fällt das Ordnen schwer, legt die Fachkraft einen Zettel vor, und das Kind ergänzt die anderen; „Pass“ ist auch erlaubt. Statt mit Zetteln kann das Kind die Schritte auch mit den Fingern zeigen.",
+    "rolle": [
+      "reflexion"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "karten"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "D’abord, ensuite, enfin",
+      "text": "L’adulte nomme un passage de la vie scolaire, par exemple le retour de la récréation en classe, et pose trois papiers : « Accrocher la veste », « Sortir ses affaires », « S’asseoir ». L’enfant range les papiers dans l’ordre qui lui convient le mieux et dit pourquoi. L’adulte montre son propre ordre et dit qu’il existe plusieurs bons chemins.",
+      "sagen": [
+        "Aujourd’hui, on a parlé du quotidien et de l’ordre des choses. Qu’est-ce que tu fais d’abord, qu’est-ce que tu fais ensuite ?",
+        "Place les papiers dans l’ordre qui t’aide.",
+        "Pour moi, c’est différent, et c’est très bien aussi."
+      ],
+      "wennEsKippt": "Si c’est difficile de les ranger, l’adulte pose un premier papier et l’enfant complète les autres ; « passe » est aussi permis. Au lieu des papiers, l’enfant peut aussi montrer les étapes avec ses doigts.",
+      "kurz": "Mettre trois papiers dans son ordre · justifier · comparer",
+      "vorbereitung": "Écrire 3 papiers : accrocher la veste · sortir le matériel · s’asseoir"
+    },
+    "kurz": "Drei Zettel in eigene Reihenfolge legen · begründen · vergleichen",
+    "vorbereitung": "3 Zettel schreiben: Jacke aufhängen · Material rausholen · hinsetzen"
+  },
+  {
+    "id": "th:alltag-abschluss-kinder",
+    "quelle": {
+      "art": "ritual",
+      "titel": "Themen-Rahmen"
+    },
+    "titel": "Der Aufräum-Roboter",
+    "text": "Die Fachkraft spielt einen Aufräum-Roboter, der nur tut, was das Kind sagt. Das Kind gibt zwei, drei Befehle nacheinander, zum Beispiel „Roboter, erst Papier zusammenlegen, dann Stuhl ranschieben“, und der Roboter führt sie in dieser Reihenfolge aus. Dann tauschen beide die Rollen, und das Kind räumt als Roboter weg, was die Fachkraft ansagt. Ist der Tisch frei, schaltet sich der Roboter mit einem „Klick“ selbst aus, und beide sagen „Tschüss“.",
+    "sagen": [
+      "Heute ging es um den Alltag: Dinge in eine Reihenfolge bringen und aufräumen. Zum Schluss bin ich dein Aufräum-Roboter.",
+      "Sag mir Befehl für Befehl, was ich tun soll.",
+      "Tisch frei, Roboter aus. Tschüss!"
+    ],
+    "wennEsKippt": "Fällt dem Kind kein Befehl ein, zeigt die Fachkraft mit dem Finger auf ein Ding, und das Kind sagt nur, was damit passieren soll. Mag das Kind nicht Roboter sein, bleibt es beim Befehlen, und die Fachkraft räumt allein.",
+    "rolle": [
+      "abschluss"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 1,
+      "typ": 3,
+      "max": 4
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "rollenspiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 0,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le robot rangeur",
+      "text": "L’adulte joue un robot rangeur qui fait seulement ce que l’enfant dit. L’enfant donne deux ou trois ordres l’un après l’autre, par exemple « Robot, d’abord plie le papier, ensuite pousse la chaise », et le robot les exécute dans cet ordre. Puis les deux échangent les rôles, et l’enfant range comme un robot ce que l’adulte annonce. Quand la table est libre, le robot s’éteint tout seul avec un « clic », et les deux disent « au revoir ».",
+      "sagen": [
+        "Aujourd’hui, on a parlé du quotidien : mettre les choses dans l’ordre et ranger. Pour finir, je suis ton robot rangeur.",
+        "Dis-moi, ordre après ordre, ce que je dois faire.",
+        "Table libre, robot éteint. Au revoir !"
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas d’ordre, l’adulte montre une chose du doigt, et l’enfant dit seulement ce qu’il faut en faire. Si l’enfant ne veut pas jouer le robot, il se contente de donner les ordres, et l’adulte range seul.",
+      "kurz": "L’adulte en robot rangeur · l’enfant ordonne · échanger les rôles"
+    },
+    "kurz": "Fachkraft als Aufräum-Roboter · Kind befiehlt · Rollen tauschen"
+  }
+]

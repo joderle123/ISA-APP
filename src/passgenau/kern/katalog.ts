@@ -243,7 +243,8 @@ export function inhaltSchritt(roh: Partial<Stundenschritt> & { id: string }): St
     stufen: roh.stufen ?? stufenAus(alter.von, alter.bis),
     dauer: d,
     sprache: { de: true, fr: !!roh.fr },
-    h: roh.h || hash8(JSON.stringify([roh.titel, roh.text, roh.sagen ?? null, roh.fr ?? null])),
+    // Spickzettel-Zeile und Vorbereitung ändern die Übung nicht – gespeicherte Pläne sollen sie nicht „überarbeitet“ nennen
+    h: roh.h || hash8(JSON.stringify([roh.titel, roh.text, roh.sagen ?? null, roh.fr ? { ...roh.fr, kurz: undefined, vorbereitung: undefined } : null])),
   }
   if (s.ohneZiel === undefined && (art === 'freude' || art === 'ritual')) s.ohneZiel = true
   // Sicherung (E-M16): auch neue Inhalte mit „Wut rauslassen“ o. Ä. fallen heraus
@@ -443,8 +444,9 @@ function vorbereitungFuer(e: Stundenschritt): string | undefined {
   // Bausteine, die es in der Stunde nicht gibt)
   const einheit = e.id.startsWith('k:') || e.id.startsWith('f:') || e.id.startsWith('m:')
   const bezug = staemme(`${e.titel} ${e.text} ${(e.sagen ?? []).join(' ')} ${e.einzelvariante?.text ?? ''}`)
-  const teile = e.vorbereitung
-    .split(/\s+·\s+/)
+  // nur Einheiten sammeln mehrere Vorbereitungen mit „ · “; bei eigenen Bausteinen gliedert „ · “ eine Aufzählung
+  // („3 Zettel beschriften: Blickkontakt · Fragen stellen · ausreden lassen“) und bleibt ganz
+  const teile = (einheit ? e.vorbereitung.split(/\s+·\s+/) : [e.vorbereitung])
     .map((x) => x.replace(/\b(zwei|drei|vier|fünf|sechs|zehn|zwanzig|\d+)(mal| ?×| ?x)\s+/gi, '').trim())
     .flatMap((x) => {
       // Sätze ohne Gruppe, ohne frühere Stunde und ohne Dinge, die eine Einzelstunde nicht hat (Ausflug, Küche, Film,

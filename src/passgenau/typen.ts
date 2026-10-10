@@ -134,9 +134,14 @@ export interface Stundenschritt extends KatalogZusatz {
   kombinierbar?: { nicht_mit?: string[]; gut_nach?: string[] }
   sprache: { de: true; fr: boolean }
   /** Texte auf Französisch, wo vorhanden */
-  fr?: { titel: string; text: string; sagen?: string[]; wennEsKippt?: string; einzelvariante?: { text: string; sagen?: string[] }; achtung?: string; vorbereitung?: string }
+  /** eine Zeile für den Spickzettel („Chat vorlesen · W-Fragen klären · antworten“, ≤ 70 Zeichen) */
+  kurz?: string
+  fr?: { titel: string; text: string; sagen?: string[]; wennEsKippt?: string; einzelvariante?: { text: string; sagen?: string[] }; achtung?: string; vorbereitung?: string; kurz?: string }
   /** „Freude & Beziehung“, Rituale: darf in Weg 3 (ohne Bezug zu Förderzielen) */
   ohneZiel?: boolean
+  /** Themen-Rahmen (Ankommen, Bewegung, Reflexion, Abschluss zu einer Kompetenz): nur in Stunden, deren Kern oder Ziel diese
+   *  Kompetenz hat (Rückmeldung einer Fachkraft 10.10.: „da passt ja nichts zusammen“) */
+  nurZumThema?: boolean
   /** Tagesform-Chips aus Weg 3, zu denen der Schritt besonders passt */
   tagesform?: Tagesform[]
   /** heikel je Schritt (T-M1): nur mit ausdrücklich freigeschaltetem Thema; familie/koerper nach `vorsicht` */

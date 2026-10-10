@@ -333,8 +333,8 @@ async function main() {
       await tb.locator('.pg-schritt').nth(2).locator('button[aria-label^="Daumen hoch"]').click()
 
       // 7. Blatt-Teil ersetzen (Liste)
-      // feste Teile (Stundenleiste, Hilfe-Zeile, Blatt zur Übung „Fragen zu …“) haben keine Alternativen
-      const bl0 = tb.locator('.pg-bliste li').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile|Fragen zu/ }).first()
+      // feste Teile (Stundenleiste, Hilfe-Zeile, Blatt zur Übung) haben keine Alternativen
+      const bl0 = tb.locator('.pg-bliste li').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile|Fragen zu|Blatt zur Übung/ }).first()
       if (!(await bl0.count())) console.log('  (Blatt zur Übung – Ersetzen eines Toolbox-Teils hier nicht prüfbar)')
       else {
       const bl0t = await bl0.locator('.bt').innerText()
@@ -398,7 +398,7 @@ async function main() {
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
       pruefe((await tb.locator('.pg-ed-liste .pg-er').count()) === vorher + 1, 'Baustein eingefügt')
       // Text ändern im Comic-Baustein (oder im ersten mit Feldern)
-      const teileListe = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile|Fragen zu/ }).filter({ has: tb.locator('button[aria-label^="Text ändern"]') })
+      const teileListe = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile|Fragen zu|Blatt zur Übung/ }).filter({ has: tb.locator('button[aria-label^="Text ändern"]') })
       const comic = teileListe.filter({ hasText: 'Comic' }).first()
       const mitText = (await comic.count()) ? comic : teileListe.first()
       await mitText.locator('button[aria-label^="Text ändern"]').last().click()

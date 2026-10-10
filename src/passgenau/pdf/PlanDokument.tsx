@@ -444,10 +444,109 @@ export function PlanSeite({ d }: { d: DruckSitzung }) {
   )
 }
 
+/** „Auf einen Blick“ (Rückmeldung einer Fachkraft 10.10.: „zu viel Text“ – in der Stunde braucht man eine Zeile je Schritt,
+ *  die Beschreibung nur zum Nachlesen): Ziel, erster Satz, Ablauf mit einer Zeile je Schritt, Vorbereitung und Material zum
+ *  Abhaken. Die ausführliche Fassung (Sagen, Wenn es kippt) folgt auf den nächsten Seiten. */
+export function SpickzettelSeite({ d }: { d: DruckSitzung }) {
+  const sp = d.sprache
+  const fr = sp === 'fr'
+  const W = {
+    blick: fr ? 'En un coup d’œil' : 'Auf einen Blick',
+    ziel: fr ? 'But de la séance' : 'Ziel der Stunde',
+    werkzeug: fr ? 'Outil' : 'Werkzeug',
+    start: fr ? 'Pour commencer' : 'So fängst du an',
+    ablauf: fr ? 'Déroulement' : 'Ablauf',
+    vorb: fr ? 'À préparer' : 'Vorbereiten',
+    material: fr ? 'Matériel' : 'Material',
+    nichts: fr ? 'rien à préparer' : 'nichts vorzubereiten',
+    mehr: fr ? 'Phrases à dire et « si ça bascule » : pages suivantes.' : 'Sätze zum Sagen und „Wenn es kippt“: auf den nächsten Seiten.',
+  }
+  const spickSpielschule = d.schritte.some((x) => x.quelle.startsWith('Spielschule') || x.quelle.startsWith('Préscolaire'))
+  const zielText = d.ziele.length ? d.ziele[0].text : d.ziel
+  return (
+    <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
+      <Kopf d={d} />
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8, letterSpacing: 1, color: P.tief, marginTop: -4, marginBottom: 8 }}>{W.blick.toUpperCase()}</Text>
+      {zielText || d.werkzeug ? (
+        <View style={{ backgroundColor: P.zart, borderRadius: 9, paddingHorizontal: 11, paddingVertical: 9, marginBottom: 10 }}>
+          {zielText ? (
+            <>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: P.tief, marginBottom: 2 }}>{W.ziel}</Text>
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 11, fontWeight: 600, lineHeight: 1.35, color: NEUTRAL.text }}>{ty(zielText, sp)}</Text>
+            </>
+          ) : null}
+          {d.werkzeug ? (
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.4, color: NEUTRAL.text, marginTop: zielText ? 5 : 0 }}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, color: P.tief }}>{W.werkzeug}: </Text>
+              {ty(d.werkzeug, sp)}
+            </Text>
+          ) : null}
+        </View>
+      ) : null}
+      {d.einstieg ? (
+        <View style={{ borderLeftWidth: 3, borderLeftColor: P.tief, paddingLeft: 9, marginBottom: 12 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: P.tief, marginBottom: 2 }}>{W.start}</Text>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 10, lineHeight: 1.4, color: NEUTRAL.text }}>{ty(d.einstieg, sp)}</Text>
+        </View>
+      ) : null}
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text, marginBottom: 4 }}>
+        {W.ablauf} · {d.schritte.reduce((n, x) => n + x.min, 0)} {T[sp].min}
+      </Text>
+      <View style={{ borderTopWidth: 0.7, borderTopColor: NEUTRAL.haarlinie, marginBottom: 12 }}>
+        {d.schritte.map((x, i) => (
+          <View key={i} wrap={false} style={{ flexDirection: 'row', paddingVertical: 5, borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie }}>
+            <View style={{ width: 34 }}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 12, color: P.tief }}>{x.min}</Text>
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.6, color: NEUTRAL.leise }}>{T[sp].min}</Text>
+            </View>
+            {/* breit genug für „ENTRÉE EN MATIÈRE“; längere Namen brechen um statt in den Titel zu laufen */}
+            <View style={{ width: 92, paddingTop: 2, paddingRight: 8 }}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, letterSpacing: 0.4, color: NEUTRAL.leise }}>{x.rolle.toUpperCase()}</Text>
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 10, fontWeight: 600, color: NEUTRAL.text }}>{ty(x.titel, sp)}</Text>
+              {x.kurz ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, lineHeight: 1.35, color: '#4A5263', marginTop: 1 }}>{ty(x.kurz, sp)}</Text> : null}
+            </View>
+          </View>
+        ))}
+      </View>
+      <View wrap={false} style={{ flexDirection: 'row' }}>
+        <View style={{ flex: 1.3, paddingRight: 12 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text, marginBottom: 4 }}>{W.vorb}</Text>
+          {d.vorbereitung.length ? (
+            d.vorbereitung.map((v, k) => (
+              <View key={k} style={{ flexDirection: 'row', marginBottom: 3 }}>
+                <View style={{ marginTop: 1.5 }}>
+                  <Kaestchen g={7.5} />
+                </View>
+                <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, lineHeight: 1.35, color: NEUTRAL.text, marginLeft: 5, flex: 1 }}>{ty(v, sp)}</Text>
+              </View>
+            ))
+          ) : (
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, color: NEUTRAL.leise }}>{W.nichts}</Text>
+          )}
+        </View>
+        <View style={{ flex: 1, borderLeftWidth: 0.6, borderLeftColor: NEUTRAL.haarlinie, paddingLeft: 10 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text, marginBottom: 4 }}>{W.material}</Text>
+          {d.material.map((mat, k) => (
+            <View key={k} style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 3 }}>
+              <Kaestchen g={7.5} />
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, color: NEUTRAL.text, marginLeft: 5 }}>{ty(mat, sp)}</Text>
+            </View>
+          ))}
+        </View>
+      </View>
+      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.8, color: NEUTRAL.leise, marginTop: 12 }}>{W.mehr}</Text>
+      <Fuss sprache={sp} spielschule={spickSpielschule} />
+    </Page>
+  )
+}
+
 /** Plan + Blatt des Kindes + Karten einer Sitzung. */
 export function SitzungSeiten({ d }: { d: DruckSitzung }) {
   return (
     <>
+      <SpickzettelSeite d={d} />
       <PlanSeite d={d} />
       {d.kinderblatt ? <BlattSeiten blatt={d.kinderblatt} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
       {(d.weitereBlaetter ?? []).map((x, i) => (

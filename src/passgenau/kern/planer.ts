@@ -30,7 +30,8 @@ export const BOGEN: Record<number, Bogen[]> = {
   8: [W, Vs, U, U, U, T, T, R], 9: [W, Vs, Vs, U, U, U, T, T, R], 10: [W, Vs, Vs, U, U, U, T, T, T, R],
 }
 
-export type SlotRolle = Rolle | 'wahl' | 'pause'
+/** 'vertiefung': eine zweite, andere Übung zum Ziel des Kerns (60 Minuten – statt eine Übung über ihre Dauer zu strecken) */
+export type SlotRolle = Rolle | 'wahl' | 'pause' | 'vertiefung'
 export interface Slot { rolle: SlotRolle; min: number }
 
 /** Die Slot-Tabelle: Minuten je Rolle und Dauer, Weg 1/2 und Weg 3. Summe = Dauer. */
@@ -41,7 +42,9 @@ export const SLOTS: Record<'normal' | 'leicht', Record<number, [SlotRolle, numbe
     20: [['ankommen', 3], ['kern', 10], ['uebung', 4], ['abschluss', 3]],
     30: [['ankommen', 4], ['einstieg', 4], ['kern', 10], ['uebung', 8], ['abschluss', 4]],
     45: [['ankommen', 5], ['einstieg', 5], ['kern', 12], ['bewegung', 5], ['uebung', 13], ['abschluss', 5]],
-    60: [['ankommen', 5], ['einstieg', 5], ['kern', 16], ['bewegung', 8], ['uebung', 16], ['reflexion', 5], ['abschluss', 5]],
+    // 60 Minuten: zwei Übungen zum Ziel statt einer gestreckten (Rückmeldung einer Fachkraft 10.10.: „eine Übung, dazu das Blatt mit
+    // derselben Übung – da passt nichts zusammen“): üben – festhalten (Blatt zur ersten Übung) – bewegen – anwenden – zurückschauen
+    60: [['ankommen', 4], ['einstieg', 4], ['kern', 13], ['uebung', 12], ['bewegung', 6], ['vertiefung', 11], ['reflexion', 5], ['abschluss', 5]],
   },
   leicht: {
     10: [['ankommen', 2], ['wahl', 6], ['abschluss', 2]],
@@ -58,12 +61,13 @@ export const SLOTS_JUGEND: Record<number, [SlotRolle, number][]> = {
   20: [['ankommen', 2], ['kern', 12], ['uebung', 4], ['abschluss', 2]],
   30: [['ankommen', 3], ['einstieg', 3], ['kern', 13], ['uebung', 8], ['abschluss', 3]],
   45: [['ankommen', 4], ['einstieg', 4], ['kern', 18], ['bewegung', 4], ['uebung', 11], ['abschluss', 4]],
-  60: [['ankommen', 4], ['einstieg', 4], ['kern', 22], ['bewegung', 5], ['uebung', 14], ['reflexion', 6], ['abschluss', 5]],
+  60: [['ankommen', 4], ['einstieg', 4], ['kern', 16], ['uebung', 8], ['bewegung', 5], ['vertiefung', 13], ['reflexion', 5], ['abschluss', 5]],
 }
 
 const KANDIDAT_ROLLEN: Record<SlotRolle, Rolle[]> = {
   ankommen: ['ankommen'], einstieg: ['einstieg'], kern: ['kern'], uebung: ['kern', 'spiel'], bewegung: ['bewegung'], spiel: ['spiel', 'bewegung'],
   regulation: ['regulation'], reflexion: ['reflexion'], abschluss: ['abschluss'], transfer: ['transfer'], wahl: ['spiel', 'bewegung', 'regulation'], pause: ['bewegung'],
+  vertiefung: ['kern'],
 }
 
 function vorlage(c: Kontext): Slot[] {
@@ -211,6 +215,19 @@ export interface SlotAuftrag {
   bevorzugt?: Set<string>
   /** Kern einer Jugend-Folge: nur Übungen mit diesem Ziel-Code (gelockert wird erst, wenn es keine gibt) */
   zielCode?: string
+  /** Kompetenzen des Kerns dieser Sitzung (Themen-Rahmen: Bewegung, Reflexion … zum Thema) */
+  themaK?: string[]
+}
+
+/** Kompetenzen, zu denen die Rahmenteile einer Sitzung passen sollen: die des Kerns, die auch ein Ziel trägt – sonst die ersten
+ *  zwei des Kerns; ohne Kern die Felder der Ziele (Kennenlernen ausgenommen). */
+export function themaKompetenzen(c: Kontext, kernK?: string[]): Set<string> {
+  const felder = new Set(c.ziele.filter((z) => z.feld && z.quelle !== 'kennenlernen').map((z) => z.feld as string))
+  if (kernK?.length) {
+    const beide = kernK.filter((k) => felder.has(k))
+    return new Set(beide.length ? beide : kernK.slice(0, 2))
+  }
+  return felder
 }
 
 export interface Wahl {
@@ -265,30 +282,37 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
   const rollen = KANDIDAT_ROLLEN[s.rolle]
   const roh = new Map<string, KatalogEintrag>()
   for (const r of rollen) for (const e of c.k.nachRolle.get(r) ?? []) if (e.typ === 'schritt' && !NIE_KANDIDAT.has(e.id) && !roh.has(e.id)) roh.set(e.id, e)
-  const zielSlot = (s.rolle === 'kern' || s.rolle === 'uebung') && c.weg !== 'leicht' && (c.ziele.length > 0 || c.themen.size > 0)
-  const phaseSlot = (s.rolle === 'kern' || s.rolle === 'einstieg') && s.phase !== 'leicht'
+  const kernArtig = s.rolle === 'kern' || s.rolle === 'vertiefung'
+  const zielSlot = (kernArtig || s.rolle === 'uebung') && c.weg !== 'leicht' && (c.ziele.length > 0 || c.themen.size > 0)
+  const phaseSlot = (kernArtig || s.rolle === 'einstieg') && s.phase !== 'leicht'
+  // Themen-Rahmen (nurZumThema) nur, wenn sein Thema das der Sitzung ist; Rahmenteile zum Thema zählen mehr
+  const themaK = themaKompetenzen(c, s.themaK)
+  const rahmen = s.rolle === 'bewegung' || s.rolle === 'reflexion' || s.rolle === 'spiel' || s.rolle === 'regulation' || s.rolle === 'pause'
   let beste: Wahl[] = []
   for (let locker = 0; locker <= 4; locker++) {
     const out: Wahl[] = []
     for (const e of roh.values()) {
-      if (pruefe(e, c, { locker, gesperrt: s.gesperrt, rolle: s.rolle === 'pause' ? 'bewegung' : (s.rolle as Rolle), vorher: s.vorher }) !== null) continue
+      const zumThema = e.typ === 'schritt' && e.kompetenz.some((k) => themaK.has(k))
+      if (e.typ === 'schritt' && e.nurZumThema && !zumThema) continue
+      if (pruefe(e, c, { locker, gesperrt: s.gesperrt, rolle: s.rolle === 'pause' ? 'bewegung' : s.rolle === 'vertiefung' ? 'kern' : (s.rolle as Rolle), vorher: s.vorher }) !== null) continue
       if (!dauerPasst(e, s.min, locker)) continue
       // der Text nennt selbst eine längere Zeit („30 Minuten Ruhezeit“, „20 Minuten backen“) als der Slot hat
       if (textMinuten(e) > s.min + 5) continue
-      if (s.rolle === 'kern' && s.kernFormate?.length === 2 && s.kernFormate[0] === s.kernFormate[1] && e.format[0] === s.kernFormate[0]) continue
-      if (s.zielCode && s.rolle === 'kern' && !e.eldib.some((x) => x.code === s.zielCode)) continue
+      if (kernArtig && s.kernFormate?.length === 2 && s.kernFormate[0] === s.kernFormate[1] && e.format[0] === s.kernFormate[0]) continue
+      if (s.zielCode && kernArtig && !e.eldib.some((x) => x.code === s.zielCode)) continue
       if (s.rolle === 'bewegung' && c.heute.energie >= 6 && e.energie < 2) continue
       // Phasen aus Material-Einheiten sind Teile längerer Stunden: als kurzes Spiel oder Pause weniger passend
       const malus = (e.id.startsWith('m:') && (s.rolle === 'spiel' || s.rolle === 'bewegung' || s.rolle === 'regulation' || s.rolle === 'wahl') ? 0.08 : 0) +
         // Abwechslung über die Wochen: ein Kern im selben Format wie die Kerne der letzten drei Wochen zählt etwas weniger
-        (s.rolle === 'kern' ? Math.min(0.1, 0.04 * (jungeKernFormate(c).get(e.format[0] ?? '') ?? 0)) : 0)
-      const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: (s.bevorzugt?.has(e.id) ? 1 : 0) - malus })
+        (kernArtig ? Math.min(0.1, 0.04 * (jungeKernFormate(c).get(e.format[0] ?? '') ?? 0)) : 0)
+      const thema = rahmen && zumThema ? (e.typ === 'schritt' && e.nurZumThema ? 0.6 : 0.04) : 0
+      const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: (s.bevorzugt?.has(e.id) ? 1 : 0) - malus + thema })
       // … außer eigene Übungen im Kern (Testlauf 13: Sitzung „üben“ nahm Kurs-Teile, weil die neue Jugend-Übung zum Ziel als
       // „wahrnehmen“ markiert ist)
-      if (phaseSlot && locker < 1 && e.bogen && s.phase !== 'leicht' && b.f.phase < 0.3 && !(s.rolle === 'kern' && kuratiert(c, e.id))) continue
+      if (phaseSlot && locker < 1 && e.bogen && s.phase !== 'leicht' && b.f.phase < 0.3 && !(kernArtig && kuratiert(c, e.id))) continue
       // Kern: genau das Ziel (ELDiB-Code des Ziels, primär oder sekundär) – ein Nachbar-Code im selben Bereich erst bei
       // Lockerung (Blind-Bewertung 9.10.: Kerne einer Folge drifteten zu Chat-Ton, Schulden, Gaming bei Ziel „warten“)
-      if (zielSlot && s.rolle === 'kern' && c.ziele.length) {
+      if (zielSlot && kernArtig && c.ziele.length) {
         if (!(b.f.ziel >= (locker >= 2 ? 0.25 : 0.4) || (locker >= 3 && b.f.thema > 0))) continue
       } else if (zielSlot && !(b.f.ziel >= (locker >= 2 ? 0.15 : 0.25) || b.f.thema > 0)) continue
       out.push({ b, locker, lockerText: locker >= 3 && e.typ === 'schritt' ? lockerGrund(c, e, locker) : undefined })
@@ -376,11 +400,13 @@ function ritualErlaubt(c: Kontext, e: KatalogEintrag, rolle: 'ankommen' | 'absch
   return true
 }
 
-function waehleRitual(c: Kontext, rolle: 'ankommen' | 'abschluss', min: number, salz: string, ausser: Set<string>, ohneFolge = false): Bewertet | null {
+/** themaK: nur Rituale zum Thema (Themen-Rahmen mit einer dieser Kompetenzen); ohne themaK nie ein Themen-Rahmen. */
+function waehleRitual(c: Kontext, rolle: 'ankommen' | 'abschluss', min: number, salz: string, ausser: Set<string>, ohneFolge = false, themaK?: Set<string>): Bewertet | null {
   const gewuenscht = c.p.rituale?.[rolle]
   const liste: Bewertet[] = []
   for (const e of c.k.nachRolle.get(rolle) ?? []) {
     if (ausser.has(e.id) || e.id.startsWith('pg:')) continue
+    if (themaK ? !(e.typ === 'schritt' && e.nurZumThema && e.kompetenz.some((k) => themaK.has(k))) : e.typ === 'schritt' && e.nurZumThema) continue
     if (ohneFolge && folgeRitual(e)) continue
     // Anfang und Schluss einer Material-, Kurs- oder Förderfach-Einheit sprechen von deren Übung (Testlauf 10: Abschluss
     // „Unsere fairste Lösung“ – „seinen Konfliktfall und die gewählte Lösung vorstellen“ nach einem anderen Kern)
@@ -393,7 +419,7 @@ function waehleRitual(c: Kontext, rolle: 'ankommen' | 'abschluss', min: number, 
     liste.push(b)
   }
   liste.sort((a, b) => rang(a, b, salz))
-  if (liste[0]) return liste[0]
+  if (liste[0] || themaK) return liste[0] ?? null
   // Rückfall: stille Passgenau-Rituale
   const id = c.weg === 'leicht' || c.heute.stimmung <= 2 ? `pg:${rolle}-still` : `pg:${rolle}`
   const e = c.k.eintraege.get(id)
@@ -747,6 +773,13 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       }
       if (r && slot.rolle === 'abschluss' && o.phase === 'reflektieren' && ((r.e.anspruch ?? 1) >= 2 || folgeRitual(r.e)))
         r = waehleRitual({ ...c, heute: { ...c.heute, stimmung: Math.min(c.heute.stimmung, 2) } }, 'abschluss', slot.min, `${salz}|letzte`, new Set([r.e.id]), true) ?? r
+      // Einzelstunde: Anfang und Schluss zum Thema des Kerns (Rückmeldung einer Fachkraft 10.10.: „Song im Kopf“ vor einer
+      // Gesprächsübung, „Drei lange Ausatmer“ danach – „da passt ja nichts zusammen“). In einer Folge bleiben Anfang und Schluss
+      // gleich (Struktur) – dort wählt rituale() einmal zum Hauptthema der Folge.
+      if (kern && c.weg === 'schnell') {
+        const t = waehleRitual(c, slot.rolle, slot.min, `${salz}|thema`, new Set(), true, themaKompetenzen(c, kern.kompetenz))
+        if (t) r = t
+      }
       if (r) {
         ergebnis[i] = planSchritt(r, slot.rolle, slot.min, c, { phase: o.phase, nr: o.nr, ritual: true })
         gewaehlt.push({ b: r, slot, i })
@@ -838,10 +871,11 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       kern = c.k.eintraege.get(sch.ref)
       continue
     }
+    if (slot.rolle === 'vertiefung' && (!kern || kern.id.startsWith('pg:') || c.weg === 'leicht')) continue
     // roter Faden: Einstieg und Reflexion aus derselben Einheit wie der Kern bevorzugt
     const kernQuelle = kern ? quelleEinheit(kern.id) : null
     const bevorzugt = new Set(o.bevorzugt ?? [])
-    const auftragK: SlotAuftrag = { rolle: slot.rolle, min: slot.min, phase: o.phase, nr: o.nr, salz: `${salz}|${i}`, gesperrt: benutzt, vorher: o.vorher, formate, vorigerKern: o.kernFormate[o.kernFormate.length - 1], kernFormate: o.kernFormate.slice(-2), fokus: slot.rolle === 'kern' ? undefined : o.fokus, bevorzugt }
+    const auftragK: SlotAuftrag = { rolle: slot.rolle, min: slot.min, phase: o.phase, nr: o.nr, salz: `${salz}|${i}`, gesperrt: benutzt, vorher: o.vorher, formate, vorigerKern: o.kernFormate[o.kernFormate.length - 1], kernFormate: o.kernFormate.slice(-2), fokus: slot.rolle === 'kern' || slot.rolle === 'vertiefung' ? undefined : o.fokus, bevorzugt, themaK: kern?.kompetenz }
     // Jugend-Folge: zuerst nur Übungen mit dem Ziel der Sitzung (Blind-Bewertung 7: das erste Ziel kam in einer Folge nie vor,
     // weil andere Übungen in der Phase besser passten); gibt es keine, wie bisher
     let mitZielCode = slot.rolle === 'kern' && o.kernZiel ? kandidaten(c, { ...auftragK, zielCode: o.kernZiel }).filter((w) => kuratiert(c, w.b.e.id) || w.locker < 3) : []
@@ -909,10 +943,13 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       auswahl = liste.filter((w) => !w.b.e.id.startsWith('m:') || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
       // Blind-Bewertung 9.10.: Einstieg, Kern und Blatt behandelten oft drei Themen. Einstieg und Reflexion nur aus der
       // Einheit des Kerns oder mit demselben Hauptziel und Thema; sonst ein eigener Einstieg, der den Kern ankündigt
-      if (kern) auswahl = auswahl.filter((w) => kernQuelle === quelleEinheit(w.b.e.id) || gleichesThema(w.b.e, kern!))
+      // … eine Reflexion zum Thema des Kerns (Themen-Rahmen) passt immer
+      const kk = kern ? themaKompetenzen(c, kern.kompetenz) : new Set<string>()
+      const rahmenThema = (e: KatalogEintrag) => e.id.startsWith('th:') && e.kompetenz.some((x) => kk.has(x))
+      if (kern) auswahl = auswahl.filter((w) => kernQuelle === quelleEinheit(w.b.e.id) || gleichesThema(w.b.e, kern!) || rahmenThema(w.b.e))
       // Jugendliche: Einstiege aus Kurs und Förderfach setzen Vorwissen voraus („Neues Thema: …“, „Notbremse und Lenkung“ mit
       // Skills und Thermometer-Blatt in Sitzung 1) – nur Einzelübungen für Jugendliche oder der eigene Einstieg
-      if (c.alter >= 12 || (kern && kuratiert(c, kern.id))) auswahl = auswahl.filter((w) => kuratiert(c, w.b.e.id) || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
+      if (c.alter >= 12 || (kern && kuratiert(c, kern.id))) auswahl = auswahl.filter((w) => kuratiert(c, w.b.e.id) || rahmenThema(w.b.e) || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
       // … und für alle: Einstiege aus Kurs, Förderfach und Klassen-Einheiten nur mit dem Kern ihrer Einheit (Blind-Bewertung 10:
       // „Neues Thema: Selbstwert und Körper“ kündigt „später den Körper“ an, „Vom Körper zur Stimme im Kopf“ vor einem Material-Kern)
       auswahl = auswahl.filter((w) => !/^(k|f|c):/.test(w.b.e.id) || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
@@ -958,16 +995,37 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       const eigen = auswahl.filter((w) => !/^(m|k|f|c):/.test(w.b.e.id) || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
       if (eigen.length) auswahl = eigen
     }
+    // zweite Übung (60 Minuten): dasselbe Ziel wie der Kern, aber eine andere Übung – eigene Übungen zuerst, ein anderes Format
+    // und eine spätere Phase (verstehen → üben → übertragen) zählen mehr
+    if (slot.rolle === 'vertiefung' && kern) {
+      const k1 = kern
+      const codes = new Set(k1.eldib.filter((x) => x.gewicht === 1).map((x) => x.code))
+      const kk = themaKompetenzen(c, k1.kompetenz)
+      const BOGEN = ['wahrnehmen', 'verstehen', 'ueben', 'uebertragen', 'reflektieren']
+      const passend = auswahl
+        .filter((w) => w.b.e.id !== k1.id && (w.b.e.eldib.some((x) => codes.has(x.code)) || w.b.e.kompetenz.some((x) => kk.has(x))))
+        .map((w) => {
+          const e = w.b.e
+          const spaeter = e.typ === 'schritt' && k1.typ === 'schritt' && e.bogen && k1.bogen && BOGEN.indexOf(e.bogen) > BOGEN.indexOf(k1.bogen) ? 0.06 : 0
+          const anders = e.format[0] && e.format[0] !== k1.format[0] ? 0.05 : 0
+          // dasselbe Hauptfeld (Kommunikation vor „Konflikte, auch Kommunikation“)
+          const haupt = e.kompetenz[0] && kk.has(e.kompetenz[0]) ? 0.08 : 0
+          return { ...w, b: { ...w.b, s: w.b.s + (kuratiert(c, e.id) ? 0.1 : 0) + spaeter + anders + haupt } }
+        })
+        .sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
+      auswahl = passend
+    }
     const w = auswahl[0]
     if (!w) {
       if (slot.rolle === 'kern') hinweise.push(`Hier fehlt Material: kein passender Kern für ${c.ziele[0]?.code ?? 'dieses Kind'} – im Baukasten suchen.`)
       continue
     }
-    const rolle: Rolle = slot.rolle as Rolle
+    const rolle: Rolle = slot.rolle === 'vertiefung' ? 'kern' : (slot.rolle as Rolle)
     ergebnis[i] = planSchritt(w.b, rolle, slot.min, c, { phase: o.phase, nr: o.nr, lockerText: w.lockerText })
     gewaehlt.push({ b: w.b, slot, i })
     benutzt.add(w.b.e.id)
     w.b.e.format.forEach((f) => formate.add(f))
+    // der Kern bleibt die erste Übung (Blatt, Titel und Ausdruck beziehen sich auf sie)
     if (slot.rolle === 'kern') kern = w.b.e
   }
   // Erkundung (6.6): neben dem Kern, fester Wert aus Seed, Plan und Sitzung
@@ -1046,17 +1104,11 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   }
   const schritte = ergebnis.filter((x): x is PlanSchritt => !!x)
   // Rituale nicht länger als gedacht (Blind-Bewertung 8: „6 Minuten Ankommen für ein Klopfzeichen“): der Rest geht an den Kern
-  {
-    const ks = schritte.find((x) => x.rolle === 'kern')
-    for (const x of schritte) {
-      if (x.rolle !== 'ankommen' && x.rolle !== 'abschluss') continue
-      const e = c.k.eintraege.get(x.ref)
-      const max = e?.typ === 'schritt' ? Math.max(2, e.dauer.max) : x.min
-      if (ks && x.min > max) {
-        ks.min += x.min - max
-        x.min = max
-      }
-    }
+  for (const x of schritte) {
+    if (x.rolle !== 'ankommen' && x.rolle !== 'abschluss') continue
+    const e = c.k.eintraege.get(x.ref)
+    const max = e?.typ === 'schritt' ? Math.max(2, e.dauer.max) : x.min
+    if (x.min > max) x.min = max
   }
   // Kern aus einer Material-Einheit ohne deren Einstieg (kurze Stunde): den Einstieg als Hinweis davor (roter Faden)
   const kernSchritt = schritte.find((x) => x.rolle === 'kern')
@@ -1091,17 +1143,35 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   }
   if (c.weg !== 'leicht' && blattModus(c) === 'ohne' && c.alter <= 5) hinweise.push('Ohne Blatt (bis 5 Jahre Vorgabe) – Mitmach-Seite auf Wunsch.')
   if (c.weg !== 'leicht' && [c.heute.energie, c.heute.konzentration, c.heute.stimmung].filter((x) => x <= 2).length >= 2) hinweise.push('Heute geht nicht viel? Leichte Stunde zeigen.')
-  minutenAusgleichen(schritte, c.a.dauer)
+  minutenAusgleichen(schritte, c.a.dauer, c)
   for (const t of benutzt) o.gesperrt.add(t)
   return { nr: o.nr, phase: o.phase, status: 'geplant', datum: null, schritte, blatt, ...(hinweise.length ? { hinweise: [...new Set(hinweise)] } : {}), rueckmeldung: null }
 }
 
-function minutenAusgleichen(schritte: PlanSchritt[], dauer: number): void {
+/** Summe = Dauer. Übrige Minuten (ein Slot ohne Kandidat, gekürzte Rituale) gehen der Reihe nach an Kern, Blatt, Reflexion,
+ *  Bewegung und Einstieg – jeweils nur bis zur Höchstdauer der Übung (Rückmeldung einer Fachkraft 10.10.: eine Übung für
+ *  15–20 Minuten stand mit 30 Minuten im Plan); erst wenn alle voll sind, bekommt der Kern den Rest. */
+function minutenAusgleichen(schritte: PlanSchritt[], dauer: number, c?: Kontext): void {
   const summe = schritte.reduce((s, x) => s + x.min, 0)
-  const diff = dauer - summe
+  let diff = dauer - summe
   if (!diff) return
-  const ziel = schritte.find((x) => x.rolle === 'kern') ?? schritte.find((x) => x.rolle === 'uebung') ?? schritte.find((x) => x.rolle === 'spiel') ?? [...schritte].filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss').sort((a, b) => b.min - a.min)[0] ?? schritte[0]
-  if (ziel) ziel.min = Math.max(1, ziel.min + diff)
+  const erster = schritte.find((x) => x.rolle === 'kern') ?? schritte.find((x) => x.rolle === 'uebung') ?? schritte.find((x) => x.rolle === 'spiel') ?? [...schritte].filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss').sort((a, b) => b.min - a.min)[0] ?? schritte[0]
+  if (diff > 0 && c) {
+    const grenze = (x: PlanSchritt): number => {
+      const e = c.k.eintraege.get(x.ref)
+      if (e?.typ === 'schritt' && !x.ref.startsWith('pg:')) return Math.max(x.min, e.dauer.max + 1)
+      return x.rolle === 'uebung' ? Math.max(x.min, 16) : x.rolle === 'kern' ? Math.max(x.min, 24) : Math.max(x.min, x.min + 3)
+    }
+    for (const r of ['kern', 'uebung', 'reflexion', 'bewegung', 'spiel', 'regulation', 'einstieg'])
+      for (const x of schritte.filter((y) => y.rolle === r)) {
+        const n = Math.min(diff, grenze(x) - x.min)
+        if (n > 0) {
+          x.min += n
+          diff -= n
+        }
+      }
+  }
+  if (diff && erster) erster.min = Math.max(1, erster.min + diff)
 }
 
 /** Weg 3: ein Slot „Wahl“ mit 2–3 echten Optionen (eine kräftige oder ruhige, eine andere, „einfach da sein“) – P8. */
@@ -1149,7 +1219,8 @@ function wahlSlot(c: Kontext, slot: Slot, o: SitzungsAuftrag, salz: string, benu
 /** Freie Slots für die Erkundung (6.6): Einstieg, Bewegung, Spiel, Ruhe – außer was zur Einheit des Kerns gehört
  *  (roter Faden). Exportiert für die Tests. */
 export function erkundbar(rolle: string, ref: string, kernRef: string | undefined): boolean {
-  return ['einstieg', 'bewegung', 'spiel', 'regulation'].includes(rolle) && !ref.startsWith('pg:') && !(kernRef && quelleEinheit(ref) === quelleEinheit(kernRef))
+  // ein Rahmenteil zum Thema (th:) ist bewusst gewählt – kein freier Platz zum Ausprobieren
+  return ['einstieg', 'bewegung', 'spiel', 'regulation'].includes(rolle) && !ref.startsWith('pg:') && !ref.startsWith('th:') && !(kernRef && quelleEinheit(ref) === quelleEinheit(kernRef))
 }
 
 function erkunde(c: Kontext, o: SitzungsAuftrag, schritte: (PlanSchritt | null)[], gewaehlt: { b: Bewertet; slot: Slot; i: number }[], benutzt: Set<string>, salz: string): void {
@@ -1254,7 +1325,13 @@ export function planId(c: Kontext, variante = 0): string {
 
 function rituale(c: Kontext, salz: string, ausser = new Set<string>()): { ankommen: Bewertet | null; abschluss: Bewertet | null } {
   const ank = SLOTS[c.weg === 'leicht' ? 'leicht' : 'normal'][c.a.dauer]?.[0]?.[1] ?? 4
-  return { ankommen: waehleRitual(c, 'ankommen', ank, salz + '|r-a', ausser), abschluss: waehleRitual(c, 'abschluss', 4, salz + '|r-b', ausser) }
+  // Folge: Anfang und Schluss zum Hauptthema (Feld des ersten Ziels), über alle Sitzungen gleich
+  const haupt = c.weg === 'gruendlich' ? c.ziele.find((z) => z.feld && z.quelle !== 'kennenlernen')?.feld : undefined
+  const thema = haupt ? new Set<string>([haupt]) : undefined
+  return {
+    ankommen: (thema && waehleRitual(c, 'ankommen', ank, salz + '|r-a', ausser, false, thema)) || waehleRitual(c, 'ankommen', ank, salz + '|r-a', ausser),
+    abschluss: (thema && waehleRitual(c, 'abschluss', 4, salz + '|r-b', ausser, false, thema)) || waehleRitual(c, 'abschluss', 4, salz + '|r-b', ausser),
+  }
 }
 
 function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): Plan {
@@ -1324,7 +1401,10 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
     // zum Ziel „Progrès“)
     const zielCode = e?.eldib.find((x) => c.ziele.some((z) => z.code === x.code))?.code
     const code = zielCode ?? e?.eldib.find((x) => x.gewicht === 1)?.code ?? e?.eldib[0]?.code
-    const f = code ? kompetenzAusCode(code) : undefined
+    // … ein gewählter Schwerpunkt („Kommunikation“), den der Kern übt, geht vor (Rückmeldung 10.10.: „Kooperation“ über einer
+    // Stunde zum gewählten Schwerpunkt Kommunikation)
+    const gewaehlt = c.ziele.find((z) => z.code.startsWith('kompetenz:') && z.quelle !== 'kennenlernen')?.feld
+    const f = gewaehlt && !zielCode && e?.kompetenz.includes(gewaehlt) ? gewaehlt : code ? kompetenzAusCode(code) : undefined
     const name = f ? KOMPETENZ_NAME[f]?.[c.sprache === 'fr' ? 'fr' : 'de'] : undefined
     if (name) titel = titel.replace(/^(Einzelstunde|Gruppenstunde): .*$/, `$1: ${name}`).replace(/^(Séance individuelle|Séance en groupe) : .*$/, `$1 : ${name}`)
   }
