@@ -748,10 +748,10 @@ await pruefung('20 erfundene Testkinder × 3 Wege (tests/passgenau): harte Regel
         // „Mein Ziel“ nur in der Sprache des Blatts
         if (s.blatt && plan.ziele[0]) {
           const satz = zielSatz(k, p, plan.ziele[0], a.sprache)
-          if (a.sprache === 'fr') soll(!satz || /^(je|j['’]|moi)\b/i.test(satz), `${name}: deutscher Ziel-Satz auf französischem Blatt`)
+          if (a.sprache === 'fr') soll(!satz || /^(je\b|j['’]|moi\b)/i.test(satz), `${name}: deutscher Ziel-Satz auf französischem Blatt`)
           const kb = kinderblatt(k, p, { ...plan, sitzungen: plan.sitzungen.map((x) => (x.nr === s.nr && x.blatt ? { ...x, blatt: { ...x.blatt, ziel: true } } : x)) }, s.nr, a.sprache)
           const z = kb.passgenau?.ziel?.[a.sprache]
-          if (a.sprache === 'fr' && z) soll(/^(je|j['’]|moi)\b/i.test(z), `${name}: „Mein Ziel“ auf Deutsch`)
+          if (a.sprache === 'fr' && z) soll(/^(je\b|j['’]|moi\b)/i.test(z), `${name}: „Mein Ziel“ auf Deutsch`)
         }
         // kein Verweis auf die Kursstruktur im Druck (Planblatt, Kinderblatt, Materialseite) – Prüfregel 26 für den Plan
         const d = druckSitzung(k, p, plan, s.nr, { sprache: a.sprache, warum: true, karten: true })

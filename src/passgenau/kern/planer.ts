@@ -4,7 +4,7 @@
 // gleiches Kind, gleiche Vorlieben → gleicher Plan (Seed aus Kind, Plan-Id, Sitzung, Variante – kein Datum, kein ref).
 import type { Auftrag, Bogen, Ereignis, KatalogEintrag, Plan, PlanSchritt, Profil, Rolle, Sitzung, Sprache } from '../typen'
 import { hash01, hash8, stufeAusAlter, layoutAusStufe, istEldib } from './hilfen'
-import { aktuellerKatalog, eldibKurz, ichSatz, intern, kurz, merkmaleVon, setzeTextModus, textVon, type Katalog } from './katalog'
+import { aktuellerKatalog, eldibKurz, ichSatz, intern, kurz, merkmaleVon, setzeTextModus, textVon, zielSatz, type Katalog } from './katalog'
 import { bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
 import { baueBlatt, kernBlatt } from './blatt'
 import { BLATT_SYSTEM } from './system'
@@ -1102,7 +1102,7 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
     if (t >= 0) return zweiBoegen && t % 2 === 1 ? zieleE[1] : zieleE[0]
     return undefined
   }
-  const zielWort = (code: string, sp: 'de' | 'fr') => (sp === 'fr' ? undefined : c.ziele.find((z) => z.code === code)?.ich) ?? eldibKurz(c.k, code, sp)
+  const zielWort = (code: string, sp: 'de' | 'fr') => zielSatz(c.k, c.p, code, sp) ?? eldibKurz(c.k, code, sp)
   const uebertragenSchon: string[] = []
   let vorigeUebertragung: 'durchspielen' | 'plan' | undefined
   bogen.forEach((phase, i) => {

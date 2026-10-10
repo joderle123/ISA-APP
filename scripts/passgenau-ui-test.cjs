@@ -298,11 +298,14 @@ async function main() {
       await ueberlauf(tb, 'Ergebnis')
       await foto(tb, '06-ergebnis')
       // Sitzung mit „Vorher klären“: Beachten, Vorbereitung, Druckmaterial je Schritt
-      await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).first().click()
-      pruefe(await tb.getByText(/Vorbereitung:/).first().isVisible(), 'Hinweis „Vorbereitung“')
-      // Druckmaterial je Schritt (T-M12) gibt es nur, wenn ein Schritt der Folge Bildkarten o. Ä. mitbringt
-      const druckt = await tb.getByText(/druckt mit:/).count()
-      console.log(`  (Sitzung mit „Vorher klären“: ${druckt ? 'mit' : 'ohne'} Druckmaterial)`)
+      // (hängt am Inhalt: kuratierte Kinder-Übungen brauchen oft keine Vorbereitung – dann nur melden)
+      if (await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).count()) {
+        await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).first().click()
+        pruefe(await tb.getByText(/Vorbereitung:/).first().isVisible(), 'Hinweis „Vorbereitung“')
+        // Druckmaterial je Schritt (T-M12) gibt es nur, wenn ein Schritt der Folge Bildkarten o. Ä. mitbringt
+        const druckt = await tb.getByText(/druckt mit:/).count()
+        console.log(`  (Sitzung mit „Vorher klären“: ${druckt ? 'mit' : 'ohne'} Druckmaterial)`)
+      } else console.log('  (Mia: keine Sitzung mit „Vorher klären“ in dieser Folge)')
       await tb.locator('.pg-fs').first().click()
 
       // 5. Ersetzen im Ablauf
@@ -455,9 +458,11 @@ async function main() {
       pruefe(await tb.getByRole('heading', { name: /Sitzung 3 von 6/ }).isVisible(), 'Weiter mit Sitzung 3 von 6')
       await tb.locator('.pg-ekopf').getByRole('button', { name: 'Baukasten' }).click()
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
-      const er = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).first()
-      await er.locator('button[aria-label^="Text ändern"]').last().click()
-      await er.locator('.felder input, .felder textarea').last().fill('Zu Frau Weber.')
+      const er = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).filter({ has: tb.locator('button[aria-label^="Text ändern"]') }).first()
+      if (await er.count()) {
+        await er.locator('button[aria-label^="Text ändern"]').last().click()
+        await er.locator('.felder input, .felder textarea').last().fill('Zu Frau Weber.')
+      } else console.log('  (Sitzung 3: kein Blatt-Teil mit änderbarem Text)')
       await tb.getByRole('button', { name: 'Fertig' }).click()
       await tb.getByRole('button', { name: 'Stunde gehalten' }).click()
       await dlg(tb).getByRole('button', { name: 'Hat geklappt' }).click()
