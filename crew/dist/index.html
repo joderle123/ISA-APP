@@ -4319,6 +4319,31 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 .brillen-grid { display: grid; gap: 10px; grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 760px) { .brillen-grid { grid-template-columns: 1fr; } }
 
+/* ---- games/kommunikation/familienfunk.css ---- */
+/* Familien-Funk: Familien-Karte, Vertrauens- und Hitze-Meter, Knall, Deal-Ende */
+.ff-familie { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; padding: clamp(14px, 2vw, 24px); border: var(--bw) solid var(--line); border-radius: calc(var(--radius) + 6px); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.ff-leute { display: flex; align-items: flex-end; gap: 4px; }
+.ff-leute .fig-avatar + .fig-avatar { margin-left: -14px; }
+.ff-wer { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.3em, 1.6vw + 0.7em, 2em); line-height: 1.15; }
+.ff-meters { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; padding: 12px 16px; border: 2px solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.ff-vertrauen .meter-bar > i { background: linear-gradient(90deg, var(--hot), var(--yellow) 45%, var(--good)); }
+.ff-vertrauen[data-level="hot"] .meter-num { color: var(--good); }
+.ff-vertrauen[data-level="cool"] .meter-num { color: var(--hot); }
+.ff-knall { color: var(--hot); }
+.ff-ende { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.ff-ende .ic { color: var(--yellow); flex: none; }
+.ff-ende.deal { background: color-mix(in srgb, var(--good) 20%, var(--panel)); }
+.ff-ende.deal .ic { color: var(--good); }
+.ff-deal { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.2em, 1.3vw + 0.7em, 1.7em); line-height: 1.2; }
+.game-screen[data-game="familienfunk"] .row > .btn.big[id^="ff-"]:not(#ff-rewind) { font-family: var(--font-body); font-weight: 600; font-size: 1.08em; text-transform: none; min-height: 58px; padding: 10px 20px; }
+@media (max-width: 640px) {
+  .ff-familie { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .ff-meters { grid-template-columns: 1fr; }
+}
+.ff-pair { align-items: center; }
+.ff-pair .ff-meters { grid-template-columns: 1fr; }
+.ff-erw .fig-text { font-size: clamp(1.15em, 1.2vw + 0.7em, 1.7em); }
+
 /* ---- games/kommunikation/funkstille.css ---- */
 /* Funkstille: Chat im Handy-Look, Nachrichten-Liste mit Nummern, Prüf-Zeile */
 .funk-chat { display: flex; flex-direction: column; gap: 8px; }
@@ -4347,6 +4372,236 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 .walk-p[data-pos="getarnt"], .he-ecke[data-pos="getarnt"], .he-pill[data-pos="getarnt"] { background: color-mix(in srgb, var(--yellow) 45%, var(--panel)); }
 .he-ecke { text-align: center; }
 @media (max-width: 640px) { .he-satz { grid-template-columns: 1fr; } }
+
+/* ---- games/kommunikation/kommunikation.css ---- */
+/* Thema Kommunikation & Grenzen – gemeinsame Bausteine der Spiele in diesem Ordner:
+   .kg-hint  kompakte Aufgaben-Zeile statt großer Textkarte (damit Antworten auf Entscheidungs-Bildschirmen sichtbar bleiben)
+   .kg-pair  zwei Spalten: links die Szene, rechts die Wahl (iPad quer, Beamer); untereinander auf schmalen Bildschirmen */
+.kg-hint { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; padding: 10px 14px; border: var(--bw) solid var(--line); border-left: 8px solid var(--yellow); border-radius: var(--radius-sm); background: var(--panel); }
+.kg-hint > .ic { color: var(--yellow); }
+.kg-hint-t { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.1em, 0.9vw + 0.75em, 1.45em); line-height: 1.2; text-wrap: balance; }
+.kg-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 16px; align-items: start; }
+.kg-pair > .stack { gap: 12px; }
+@media (max-width: 760px) { .kg-pair { grid-template-columns: 1fr; } }
+
+/* ---- games/kommunikation/naeher-nicht.css ---- */
+/* Näher nicht: Gang am Beamer (Figur wächst beim Näherkommen), Bodenmarken, Figuren-Skala, Stopp-Hilfe */
+.nn-person { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center; padding: 12px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.nn-rolle { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.2em, 1.4vw + 0.7em, 1.8em); line-height: 1.15; }
+.nn-gang { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 14px; border: var(--bw) solid var(--line); border-radius: calc(var(--radius) + 6px); background: linear-gradient(180deg, color-mix(in srgb, var(--panel2) 70%, var(--bg)) 0 62%, color-mix(in srgb, var(--panel) 60%, var(--bg)) 62%); overflow: hidden; }
+.nn-buehne { position: relative; height: clamp(170px, 28vh, 260px); width: 100%; display: flex; align-items: flex-end; justify-content: center; }
+.nn-fig { transform-origin: 50% 100%; transition: transform 900ms cubic-bezier(.3, .8, .3, 1); line-height: 0; }
+.nn-gang[data-mark="5"] .nn-fig { transform: translateY(-18%) scale(.42); }
+.nn-gang[data-mark="4"] .nn-fig { transform: translateY(-12%) scale(.6); }
+.nn-gang[data-mark="3"] .nn-fig { transform: translateY(-6%) scale(.82); }
+.nn-gang[data-mark="2"] .nn-fig { transform: scale(1.08); }
+.nn-gang[data-mark="1"] .nn-fig { transform: scale(1.45); }
+.nn-bubble { position: absolute; top: 6px; left: 50%; transform: translateX(-50%); background: var(--good); color: var(--good-ink); border: 2px solid var(--line); border-radius: 14px; padding: 6px 14px; font-weight: 800; opacity: 0; transition: opacity 200ms; white-space: nowrap; }
+.nn-bubble.on { opacity: 1; }
+.nn-floor { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; width: 100%; max-width: 560px; }
+.nn-mark { display: grid; place-items: center; min-height: 44px; border: 2px solid var(--line); border-radius: 10px; background: var(--bg); font-family: var(--font-display); font-size: 1.3em; color: var(--muted); }
+.nn-mark.now { background: var(--yellow); color: var(--yellow-ink); transform: scale(1.06); }
+.walk-p[data-pos="m1"] { background: color-mix(in srgb, var(--hot) 30%, var(--panel)); }
+.walk-p[data-pos="m2"] { background: color-mix(in srgb, var(--yellow) 30%, var(--panel)); }
+.walk-p[data-pos="m3"] { background: color-mix(in srgb, var(--good) 22%, var(--panel)); }
+.walk-p[data-pos="m4"] { background: color-mix(in srgb, var(--teamA) 28%, var(--panel)); }
+.walk-p[data-pos="m5"] { background: color-mix(in srgb, var(--teamA) 45%, var(--panel)); }
+.game-screen[data-game="naeher-nicht"] .walk-pos { grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); }
+.game-screen[data-game="naeher-nicht"] .walk-p { min-height: 90px; }
+.nn-skala { display: flex; flex-direction: column; gap: 8px; padding: 14px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.nn-skala-bar { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+.nn-skala-m { display: grid; place-items: center; min-height: 36px; border-radius: 8px; background: var(--bg); border: 2px solid var(--line); font-family: var(--font-display); }
+.nn-skala-figs { position: relative; display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; min-height: 90px; }
+.nn-skala-fig { grid-column: var(--pos); display: flex; flex-direction: column; align-items: center; gap: 2px; text-align: center; font-size: .9em; }
+.nn-skala-figs { grid-auto-flow: dense; }
+.nn-stopp-hilfe { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center; padding: 12px 16px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: color-mix(in srgb, var(--teamB) 16%, var(--panel)); }
+.nn-stopp-ic { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 50%; background: var(--teamB); color: var(--teamB-ink); border: 2px solid var(--line); }
+@media (max-width: 640px) {
+  .nn-buehne { height: 170px; }
+  .nn-skala-fig b { font-size: .8em; }
+  .nn-person { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) { .nn-fig { transition: none; } }
+.nn-pair .nn-buehne { height: clamp(170px, 26vh, 240px); }
+.nn-pair > .stack { align-self: center; }
+
+/* ---- games/kommunikation/okayradar.css ---- */
+/* Okay-Radar: Szenen-Karte mit Bild, Radar-Halbkreis mit Nadel, Figuren-Radar, Signale */
+.okr-szene { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; padding: clamp(14px, 2vw, 24px); border: var(--bw) solid var(--line); border-radius: calc(var(--radius) + 6px); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.okr-bild { display: grid; place-items: center; width: clamp(70px, 9vw, 104px); aspect-ratio: 1; border-radius: 50%; background: var(--bg); border: var(--bw) solid var(--line); font-size: clamp(2.2em, 4vw, 3.4em); line-height: 1; font-family: system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; }
+.okr-text { margin: 0; font-family: var(--font-display); font-size: clamp(1.3em, 1.8vw + 0.7em, 2.1em); line-height: 1.15; text-wrap: balance; }
+.okr-frage { display: grid; grid-template-columns: minmax(180px, 280px) 1fr; gap: 16px; align-items: center; }
+.okr-dial { display: flex; flex-direction: column; align-items: center; gap: 4px; width: 100%; max-width: 280px; margin: 0 auto; }
+.okr-dial svg { width: 100%; height: auto; display: block; overflow: visible; }
+.okr-arc { fill: none; stroke-width: 26; stroke: var(--line); }
+.okr-arc.ok { stroke: var(--good); }
+.okr-arc.kommt { stroke: var(--yellow); }
+.okr-arc.nein { stroke: var(--hot); }
+.okr-dial[data-sel=""] .okr-arc { opacity: .55; }
+.okr-dial[data-sel="ok"] .okr-arc:not(.ok), .okr-dial[data-sel="kommt"] .okr-arc:not(.kommt), .okr-dial[data-sel="nein"] .okr-arc:not(.nein) { opacity: .3; }
+.okr-needle { transform-origin: 100px 100px; transition: transform 700ms cubic-bezier(.3, 1.6, .5, 1); }
+.okr-needle line { stroke: var(--text); stroke-width: 7; stroke-linecap: round; }
+.okr-needle circle { fill: var(--text); stroke: var(--line); stroke-width: 3; }
+.okr-dial[data-sel=""] .okr-needle { opacity: .35; }
+.okr-dial-labels { display: grid; grid-template-columns: 1fr 1fr 1fr; width: 100%; text-align: center; font-size: .78em; font-weight: 700; color: var(--muted); gap: 4px; }
+.okr-dial.mini { width: 64px; max-width: 64px; margin: 0; flex: none; }
+.okr-mein { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 16px; align-items: center; padding: 12px 16px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.okr-mein-t { font-family: var(--font-display); font-size: clamp(1.3em, 1.4vw + 0.7em, 1.8em); }
+.okr-figs { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.okr-fig { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); border-left-width: 10px; }
+.okr-fig[data-sel="ok"] { border-left-color: var(--good); }
+.okr-fig[data-sel="kommt"] { border-left-color: var(--yellow); }
+.okr-fig[data-sel="nein"] { border-left-color: var(--hot); }
+.okr-signale { display: flex; flex-direction: column; gap: 8px; padding: 12px 16px; border: 2px dashed var(--line); border-radius: var(--radius); background: var(--panel); }
+.okr-signal { text-transform: none; letter-spacing: 0; font-size: .9em; }
+@media (max-width: 640px) {
+  .okr-frage, .okr-mein { grid-template-columns: 1fr; }
+  .okr-szene { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .okr-szene .row.between { justify-content: center; gap: 8px; }
+}
+
+/* ---- games/kommunikation/stillepost.css ---- */
+/* Stille Post ohne Worte: Botschafts-Karte, Kette, Start/Ziel-Vergleich, Runden-Übersicht */
+.sl-karte { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; padding: clamp(14px, 2vw, 24px); border: var(--bw) solid var(--line); border-radius: calc(var(--radius) + 6px); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); width: 100%; max-width: 520px; margin: 0 auto; }
+.sl-karte.start { border-top: 10px solid var(--teamA); }
+.sl-karte.ziel { border-top: 10px solid var(--teamB); }
+.sl-text { font-size: clamp(1.5em, 2.4vw + 0.8em, 2.6em); line-height: 1.1; text-wrap: balance; }
+.sl-bitte-ic { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%; background: var(--yellow); color: var(--yellow-ink); border: var(--bw) solid var(--line); }
+.sl-karte .sl-bitte-ic { width: clamp(60px, 8vw, 84px); height: clamp(60px, 8vw, 84px); }
+.sl-kette { display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; }
+.sl-glied { display: inline-grid; place-items: center; min-width: 72px; min-height: 52px; padding: 6px 12px; border: var(--bw) solid var(--line); border-radius: 99px; background: var(--panel); font-weight: 800; }
+.sl-glied.start { background: var(--teamA); color: var(--teamA-ink); }
+.sl-glied.ziel { background: var(--teamB); color: var(--teamB-ink); }
+.sl-pfeil-k { color: var(--muted); font-weight: 800; }
+.sl-vergleich { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; }
+.sl-pfeil { font-size: 2.4em; color: var(--yellow); }
+.sl-ergebnis[data-stufe="2"] { background: var(--good); color: var(--good-ink); }
+.sl-ergebnis[data-stufe="1"] { background: var(--yellow); color: var(--yellow-ink); }
+.sl-ergebnis[data-stufe="0"] { background: color-mix(in srgb, var(--hot) 70%, var(--panel)); color: #fff; }
+.sl-runden { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.sl-runde { display: flex; flex-direction: column; gap: 4px; padding: 14px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.sl-runde[data-stufe="2"] { border-left: 10px solid var(--good); }
+.sl-runde[data-stufe="1"] { border-left: 10px solid var(--yellow); }
+.sl-runde[data-stufe="0"] { border-left: 10px solid var(--hot); }
+.sl-beob { border-style: dashed; }
+@media (max-width: 640px) {
+  .sl-vergleich { grid-template-columns: 1fr; }
+  .sl-pfeil { transform: rotate(90deg); justify-self: center; font-size: 1.8em; }
+}
+
+/* ---- games/kommunikation/stoppcheck.css ---- */
+/* Stopp-Check: Wimmelbild (Figur + Sprechblase + fünf Bausteine), Neu-Bauen-Raster, Wirkung, drei Stopps */
+.stc-lage { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--panel); font-weight: 600; }
+.stc-lage > span:nth-child(2) { flex: 1; }
+.stc-bild { display: grid; grid-template-columns: minmax(200px, 1fr) minmax(260px, 1.2fr); gap: 16px; align-items: center; padding: clamp(14px, 2vw, 22px); border: var(--bw) solid var(--line); border-radius: calc(var(--radius) + 6px); background: radial-gradient(circle at 30% 40%, color-mix(in srgb, var(--panel2) 80%, var(--bg)), var(--panel)); box-shadow: 0 var(--lift) 0 var(--line); }
+.stc-mitte { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
+.stc-fig { line-height: 0; transition: transform 300ms; }
+.stc-bild.weg .stc-fig { transform: rotate(-14deg) translateX(-10px); }
+.stc-bild.haengt .stc-fig { transform: translateY(12px) scale(.94); }
+.stc-blase { position: relative; max-width: 30ch; padding: 10px 16px; border: 2px solid var(--line); border-radius: 18px 18px 18px 4px; background: #fff; color: #111; font-family: var(--font-display); font-size: clamp(1.1em, 1vw + 0.8em, 1.5em); line-height: 1.2; }
+.stc-blase.leise { font-size: .9em; font-family: var(--font-body); font-style: italic; color: #777; border-style: dashed; }
+.stc-blase.kichern::after { content: ' 😅'; }
+.stc-hots { display: flex; flex-direction: column; gap: 8px; }
+.stc-hot { appearance: none; font: inherit; color: var(--text); display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; text-align: left; min-height: 56px; padding: 8px 12px; border: var(--bw) solid var(--line); border-radius: var(--radius-sm); background: var(--bg); cursor: pointer; touch-action: manipulation; }
+.stc-hot[disabled] { cursor: default; opacity: 1; }
+.stc-hot-ic { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--panel2); border: 2px solid var(--line); }
+.stc-hot-t { display: flex; flex-direction: column; gap: 2px; min-width: 0; line-height: 1.25; }
+.stc-hot-t b { font-size: .8em; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.stc-hot-mark { width: 30px; height: 30px; border-radius: 50%; border: 2px dashed var(--line); display: grid; place-items: center; font-weight: 900; }
+.stc-hot.found { background: color-mix(in srgb, var(--hot) 35%, var(--bg)); border-color: var(--hot); animation: pop-in 300ms cubic-bezier(.2,1.5,.4,1) both; }
+.stc-hot.found .stc-hot-mark { background: var(--hot); color: #fff; border-style: solid; }
+.stc-hot.found .stc-hot-mark::after { content: '✕'; }
+.stc-hot.passt { background: color-mix(in srgb, var(--good) 22%, var(--bg)); }
+.stc-hot.passt .stc-hot-mark { background: var(--good); color: var(--good-ink); border-style: solid; }
+.stc-hot.passt .stc-hot-mark::after { content: '✓'; }
+.stc-dran[data-dran="links"] { background: var(--teamA); color: var(--teamA-ink); }
+.stc-dran[data-dran="rechts"] { background: var(--teamB); color: var(--teamB-ink); }
+.stc-loes { border-left: 8px solid var(--hot); }
+.stc-bau { display: flex; flex-direction: column; gap: 10px; }
+.stc-bau-row { display: grid; grid-template-columns: 130px 1fr; gap: 10px; align-items: center; padding: 10px 12px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--panel); }
+.stc-bau-l { display: inline-flex; align-items: center; gap: 8px; }
+.stc-bau-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.stc-bau-chip, .stc-wahl { text-align: left; line-height: 1.25; justify-content: flex-start; }
+.stc-gilt { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center; padding: 12px 16px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: color-mix(in srgb, var(--good) 18%, var(--panel)); }
+.stc-gilt .ic { color: var(--good); }
+.stc-drei { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.stc-drei-s { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 14px; text-align: center; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); font-weight: 700; }
+.stc-drei-s b { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--yellow); color: var(--yellow-ink); font-size: 1.5em; border: 2px solid var(--line); }
+@media (max-width: 700px) {
+  .stc-bild { grid-template-columns: 1fr; }
+  .stc-bau-row { grid-template-columns: 1fr; }
+  .stc-drei { grid-template-columns: 1fr; }
+}
+.stc-bau-row { padding: 6px 10px; }
+.stc-bau-chip { min-height: 44px; padding: 6px 12px; }
+.stc-ist { text-transform: none; letter-spacing: 0; font-weight: 600; background: color-mix(in srgb, var(--hot) 35%, var(--panel)); }
+.stc-ist.ok { background: color-mix(in srgb, var(--good) 30%, var(--panel)); }
+
+/* ---- games/kommunikation/uebersetzer.css ---- */
+/* Übersetzer: Chat, zwei verdeckte Lese-Felder, Lesart-Chips, Lese-Test */
+.ue-chat { gap: 8px; }
+.ue-chat-head { display: flex; align-items: center; gap: 8px; padding-bottom: 6px; border-bottom: 2px solid var(--line); flex-wrap: wrap; }
+.ue-chat-head .read-btn { margin-left: auto; }
+.ue-msg { font-size: clamp(1.3em, 1.6vw + 0.7em, 1.9em); font-weight: 700; border-color: var(--yellow); box-shadow: 0 0 0 3px color-mix(in srgb, var(--yellow) 35%, transparent); }
+.ue-narr { margin: 0; align-self: center; text-align: center; font-size: 0.9em; font-style: italic; color: var(--muted); max-width: 52ch; }
+.ue-halves { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.ue-half { display: flex; flex-direction: column; gap: 10px; padding: 14px; border: var(--bw) dashed var(--line); border-radius: var(--radius); background: var(--panel); min-height: 170px; }
+.ue-half[data-side="links"] { border-color: var(--teamA); }
+.ue-half[data-side="rechts"] { border-color: var(--teamB); }
+.ue-half.locked { border-style: solid; background: color-mix(in srgb, var(--good) 14%, var(--panel)); }
+.ue-read-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ue-read-btn { min-height: 56px; padding: 8px 10px; font-size: 1em; gap: 6px; }
+.ue-emo { font-size: 1.4em; line-height: 1; font-family: system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; }
+.ue-lock { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center; }
+.ue-lock .ic { color: var(--good); }
+.ue-reveal { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; }
+.ue-reveal-side { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.ue-reveal-mid { font-size: 2.6em; color: var(--yellow); }
+.ue-lesart { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 99px; border: 2px solid var(--line); background: var(--panel2); }
+.ue-lesart.big { font-size: 1.35em; padding: 10px 20px; }
+.ue-lesart[data-read="nett"] { background: color-mix(in srgb, var(--good) 40%, var(--panel)); }
+.ue-lesart[data-read="ironisch"] { background: color-mix(in srgb, var(--yellow) 40%, var(--panel)); }
+.ue-lesart[data-read="sauer"] { background: color-mix(in srgb, var(--hot) 40%, var(--panel)); }
+.ue-lesart[data-read="egal"] { background: color-mix(in srgb, var(--muted) 30%, var(--panel)); }
+.ue-clues { gap: 6px; align-items: center; }
+.ue-wahl .chip { justify-content: flex-start; text-align: left; line-height: 1.25; }
+.ue-gemeint { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; padding: 14px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.ue-test { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.ue-test-p { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; padding: 12px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); }
+@media (max-width: 640px) {
+  .ue-halves { grid-template-columns: 1fr; }
+  .ue-half { min-height: 0; }
+  .ue-gemeint { grid-template-columns: 1fr; }
+  .ue-test { grid-template-columns: 1fr; }
+  .ue-test-p { flex-direction: row; justify-content: flex-start; text-align: left; }
+  .ue-reveal-mid { font-size: 1.8em; }
+  .ue-lesart.big { font-size: 1.1em; padding: 8px 12px; }
+}
+.ue-lage .fig-text { font-size: clamp(1.15em, 1.2vw + 0.7em, 1.6em); }
+.ue-gemeint { grid-template-columns: 1fr; justify-items: start; }
+@media (max-width: 640px) { .ue-chat-head .muted.small { display: none; } }
+
+/* ---- games/kommunikation/zuhoerfalle.css ---- */
+/* Zuhör-Falle: Erzähl-Karte mit Untertiteln, Verstanden-Meter, Fallen-Pill, eigener Satz */
+.zf-erzaehl { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start; padding: clamp(16px, 2.4vw, 28px); border: var(--bw) solid var(--line); border-radius: calc(var(--radius) + 6px); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.zf-erzaehl-side { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.zf-sub { display: flex; flex-direction: column; gap: 8px; min-height: 7em; }
+.zf-zeile { margin: 0; font-family: var(--font-display); font-size: clamp(1.25em, 1.6vw + 0.7em, 2em); line-height: 1.2; text-wrap: balance; padding: 6px 12px; border-radius: var(--radius-sm); background: color-mix(in srgb, #000 22%, transparent); }
+.zf-kurz .fig-chat { font-size: 1.02em; }
+.zf-meter { padding: 12px 16px; }
+.zf-meter .meter-bar > i { background: linear-gradient(90deg, var(--hot), var(--yellow) 45%, var(--good)); }
+.zf-meter .meter[data-level="hot"] .meter-num { color: var(--good); }
+.zf-meter .meter[data-level="cool"] .meter-num { color: var(--hot); }
+.zf-antwort { padding: 12px 18px; border-left: 8px solid var(--yellow); background: var(--panel); border-radius: var(--radius-sm); }
+.zf-antwort p { margin: 4px 0 0; font-family: var(--font-display); font-size: clamp(1.15em, 1.2vw + 0.7em, 1.6em); line-height: 1.2; }
+.zf-falle[data-falle="treffer"] { background: var(--good); color: var(--good-ink); }
+.zf-falle[data-falle="ratschlag"], .zf-falle[data-falle="ichauch"], .zf-falle[data-falle="kleinreden"] { background: color-mix(in srgb, var(--hot) 60%, var(--panel)); color: #fff; }
+.zf-falle[data-falle="sachlich"] { background: var(--yellow); color: var(--yellow-ink); }
+.zf-satz { padding: 12px 18px; border: var(--bw) dashed var(--line); border-radius: var(--radius); background: var(--panel); }
+.zf-satz p { margin: 4px 0 0; font-family: var(--font-display); font-size: clamp(1.2em, 1.4vw + 0.7em, 1.8em); line-height: 1.2; }
+.zf-satz.big { border-style: solid; border-color: var(--good); background: color-mix(in srgb, var(--good) 14%, var(--panel)); }
+.game-screen[data-game="zuhoerfalle"] .row > .btn.big[id^="zf-a-"] { font-family: var(--font-body); font-weight: 600; font-size: 1.12em; text-transform: none; min-height: 58px; padding: 10px 20px; }
+@media (max-width: 560px) { .zf-erzaehl { grid-template-columns: 1fr; } .zf-erzaehl-side { flex-direction: row; } }
 
 /* ---- games/konflikt/druck-chat.css ---- */
 /* Druck-Chat: Gruppenchat im Handy-Look (hell, eigenständig), Druck-Meter im Fuß */
@@ -9343,6 +9598,105 @@ var qrcode = function() {
         achten: 'Ecken werden gefragt, nicht Einzelne. Nicht zählen, wer wo steht. Beim Umbauen darf die ganze Crew helfen.',
         impulse: ['„Welches Wort war der Hinweis?“', '„Wie klingt Klartext in eurer Sprache?“', '„Was macht „Mach doch, was du willst“ mit der Hitze?“'],
         kippt: 'Wird ein Streit-Satz gegen jemanden im Raum gesagt: stoppen, „Wir sagen Figuren-Sätze“, X. Wird getobt: Gehzeit verlängern.',
+      },
+    },
+    uebersetzer: {
+      warum: 'Im Chat fehlen Stimme und Gesicht. „ok 👍“ liest jede:r anders. Ihr übt nachzufragen, statt zu raten – das spart Streit.',
+      skill: 'Nachfragen statt raten',
+      karte: 'Drei Atemzüge vorm Handy',
+      geuebt: 'Nachrichten verschieden lesen, offen nachfragen statt raten und so schreiben, dass es ankommt.',
+      fragen: ['Welche Nachricht habt ihr am verschiedensten gelesen?', 'Was ist schwerer: nachfragen oder einfach raten?', 'Bei welcher Nachricht fragst du diese Woche lieber nach?'],
+      lehrer: {
+        ziel: 'Missverständnisse in Chat und Emoji erleben (gleiche Nachricht, verschiedene Lesarten), offene Rückfragen statt Annahmen, eindeutig schreiben (j1-e20 Verbal und nonverbal).',
+        stufen: 'Level 1 Lesen (Nachricht mit Emoji verdeckt deuten, vergleichen, Rückfrage wählen), Level 2 Nachfragen (Punkt, Kürze, Ironie – vier Rückfragen, eine davon ist eine Annahme im Fragen-Kostüm), Level 3 Klar schreiben (Mika ist Absender: Welche Version lesen Yara, Luca und Sam so, wie Mika es meint?). Zurückspulen ist jederzeit erlaubt.',
+        achten: 'Verschieden lesen ist kein Fehler, sondern der Kern. Beim Vergleich nicht werten, wer „richtig“ lag – erst die Figur löst auf. Paare sitzen nebeneinander, die Hand dient als Sichtschutz.',
+        impulse: ['„Woran hast du das „sauer“ gelesen – Punkt, Emoji, Kürze?“', '„Was ist der Unterschied zwischen „Wie meinst du das?“ und „Warum bist du sauer?“?“', '„Wann lieber anrufen statt schreiben?“'],
+        kippt: 'Wird eine Nachricht aus der echten Klassengruppe ins Spiel gezogen: stoppen, „Wir bleiben bei den Figuren“, später in Ruhe. Streitet ein Paar über die Lesart: „Beide Lesarten gibt es – genau darum fragt man nach.“ Bei Bewegungsdrang: drei Ecken im Raum (nett / ironisch / sauer), die Lehrkraft liest die Nachricht vor.',
+      },
+    },
+    stillepost: {
+      warum: 'Eine Botschaft wandert nur mit Gesicht und Körper durch die Reihe. Ihr merkt, wie viel ohne Worte ankommt – und wo Worte fehlen.',
+      skill: 'Körpersprache senden und lesen',
+      karte: 'Achtsames Hören',
+      geuebt: 'Gefühle und Botschaften ohne Worte zeigen, genau hinschauen und merken, wann ein Wort hilft.',
+      fragen: ['Wo in der Reihe hat sich die Botschaft verändert?', 'Was war schwerer: zeigen oder lesen?', 'Wo hilft dir diese Woche ein Blick mehr – oder ein Wort mehr?'],
+      lehrer: {
+        ziel: 'Nonverbale Signale bewusst senden und lesen, Grenzen des Nonverbalen erleben (Gefühl geht, Stärke und genaue Bitte sind schwer), ein Wort als Brücke (j1-e20).',
+        stufen: 'Level 1 Gefühl (Gefühl und Stärke weitergeben), Level 2 Botschaft (eine Bitte wie „Warte hier“ nur mit dem Körper), Level 3 Ein Wort (jede Person darf genau ein Wort dazu nehmen – was ändert es?). Nach jeder Runde: Start und Ziel am Beamer, Rückwärts-Check ohne Schuld.',
+        achten: 'Kein Körperkontakt: Umdrehen nur per Signalwort „Funk“ oder zweimal Klopfen auf den Tisch. Beobachter-Rolle aktiv anbieten. Bei der Auswertung nie „Wer hat’s falsch gemacht?“, sondern „Welches Signal war unklar?“. Beamer beim Zeigen der Botschaft kurz aus.',
+        impulse: ['„Welches Signal war eindeutig – welches nicht?“', '„Warum ist eine Stärke 7 so schwer zu zeigen?“', '„Welches Wort hat am meisten geholfen?“'],
+        kippt: 'Wird gealbert oder geschubst: Reihe auflösen, im Sitzkreis weiterspielen (alle schauen nach außen, nur die nächste Person dreht sich um). Will jemand nicht vorne stehen oder zeigen: Platz tauschen oder Beobachter:in.',
+      },
+    },
+    zuhoerfalle: {
+      warum: 'Eine Figur erzählt. Du findest die Antwort, bei der sie sich verstanden fühlt – ohne Ratschlag und ohne „Ich auch“. Das macht Freundschaften stärker.',
+      skill: 'Zuhören, das ankommt',
+      karte: 'Achtsames Hören',
+      geuebt: 'Inhalt und Gefühl zusammenfassen und die Zuhör-Fallen Ratschlag, Ich-auch und Kleinreden erkennen.',
+      fragen: ['Welche Antwort hat die Figur am meisten verstanden?', 'Welche Falle war am schwersten zu erkennen?', 'Wem hörst du diese Woche zu, ohne gleich einen Tipp zu geben?'],
+      lehrer: {
+        ziel: 'Aktives Zuhören (j1-e21): Inhalt und Gefühl spiegeln, das versteckte Gefühl hören, Zuhör-Fallen erkennen (Ratschlag, Ich-auch, Gefühl übersehen, Kleinreden).',
+        stufen: 'Level 1 Erkennen (klare Geschichte, vier Antworten, das Verstanden-Meter zeigt die Wirkung, Zurückspulen erlaubt), Level 2 Gefühl hören (die Figur sagt „egal“ oder „passt schon“ – erst das echte Gefühl wählen, dann die Antwort, dazu die Falle Kleinreden), Level 3 Selbst sagen (eigenen Zuhör-Satz aus Gefühl und Inhalt bauen). Danach Vergleichskarte zu zweit.',
+        achten: 'Ratschläge sind nicht „böse“ – nur oft zu früh. Die Vergleichskarte fragt nach der eigenen Lieblingsfalle: Pass ist okay. Lesestarke Jugendliche können die Geschichten laut vorlesen.',
+        impulse: ['„Wann ist ein Ratschlag doch hilfreich?“', '„Woran hört man ein verstecktes Gefühl?“', '„Warum erzählen wir so schnell „Ich auch …“?“'],
+        kippt: 'Erzählt jemand bei der Vergleichskarte von echtem Kummer: zuhören, nicht in der Gruppe vertiefen, später Einzelgespräch. Wird über Antworten gelacht: „Jede Falle ist menschlich – wir üben, sie zu bemerken.“',
+      },
+    },
+    okayradar: {
+      warum: 'Was für dich okay ist, ist für andere vielleicht nicht okay. Ihr stellt euer Radar ein, lest Signale bei Figuren und übt fragen statt raten.',
+      skill: 'Grenzen spüren und achten',
+      karte: 'Mein sicherer Ort',
+      geuebt: 'Eigene Grenzen spüren, Unterschiede aushalten, Signale anderer lesen und vorher fragen.',
+      fragen: ['Bei welcher Szene lagen die Figuren am weitesten auseinander?', 'Woran merkt man, dass etwas für jemanden nicht okay ist?', 'Wo fragst du diese Woche lieber vorher?'],
+      lehrer: {
+        ziel: 'Eigene Grenzen wahrnehmen (körperlich, emotional, digital), Grenzen anderer respektieren, Unterschiede aushalten („Bei dir okay, bei mir nicht. Beides gilt.“), Einverständnis erfragen und ein Nein annehmen (j1-e22).',
+        stufen: 'Level 1 Spüren (drei Szenen: körperlich, emotional, digital – Radar heimlich stellen, dann zeigen vier Figuren ihr Radar), Level 2 Signale lesen (eine Figur sagt nichts, aber ihr Körper sagt es – okay für sie?), Level 3 Fragen (eine Figur will etwas: Wie fragt sie – und was tut sie mit einem Nein?). Danach Vergleichskarte zu zweit.',
+        achten: 'Die Radar-Einstellung ist privat und wird nicht gespeichert. Nie bewerten, wer „zu empfindlich“ oder „zu locker“ ist. Körper-Szenen bleiben bei Begrüßung, Haaren, Abstand im Bus – keine Berührungsaufgaben im Raum. Hilfenummern am Ende.',
+        impulse: ['„Was heißt „kommt drauf an“ – auf wen, wo, wie gefragt?“', '„Woran erkennt man ein Nein ohne Worte?“', '„Ist ein halbes Ja ein Ja?“'],
+        kippt: 'Erzählt jemand von einer echten Grenzverletzung: ernst nehmen, nicht in der Gruppe vertiefen, Einzelgespräch, ggf. Hilfe holen (116 111, Schulsozialdienst). Wird über eine Einstellung gelacht: „Jede Grenze gilt.“ Die Skill-Karte „Mein sicherer Ort“ anbieten.',
+      },
+    },
+    'naeher-nicht': {
+      warum: 'Eine Figur kommt am Beamer näher. Du stellst dich auf deine „Näher nicht“-Marke. So spürst du deinen Abstand und zeigst ihn ohne Worte.',
+      skill: 'Meinen Abstand spüren und zeigen',
+      karte: 'Fester Stand',
+      geuebt: 'Wohlfühl-Abstand je nach Person spüren, Unterschiede respektieren und ein Stopp ohne Worte zeigen.',
+      fragen: ['Bei welcher Person standet ihr am weitesten auseinander?', 'Was hat den Abstand verändert: die Person, der Ort oder die Stimmung?', 'Wo achtest du diese Woche auf deinen Abstand – oder auf den von anderen?'],
+      lehrer: {
+        ziel: 'Wohlfühl-Distanz spüren, Grenzen je nach Person und Stimmung, Unterschiede respektieren, Nein ohne Worte (Stopp-Zeichen, fester Stand) – j1-e22, Brücke zu j1-e23.',
+        stufen: 'Level 1 Spüren (Freundin vs. fremde Person im Bus), Level 2 Je nach Person (Lehrkraft, Verwandte zur Begrüßung, die gleiche Freundin – aber wütend), Level 3 Nein ohne Worte (alle zeigen gleichzeitig Richtung Beamer das Stopp-Zeichen, die Figur bleibt sofort stehen; dann mit Wort).',
+        achten: 'Bodenmarken 1–5 vor dem Beamer kleben (1 = ganz nah an der Wand, 5 = weit weg). Keine echte Person kommt jemandem nahe, das Stopp-Zeichen zeigt zum Beamer. Nicht kommentieren, wer wo steht – Gruppen reden. Wer nicht gehen mag, zeigt die Zahl mit den Fingern oder beobachtet.',
+        impulse: ['„Warum ist die gleiche Person mal nah okay und mal nicht?“', '„Woran merkt man, dass jemandem etwas zu nah ist?“', '„Wer Stopp sieht oder hört – wie lange darf er noch weitergehen?“'],
+        kippt: 'Wird gedrängelt oder jemand absichtlich bedrängt: sofort stoppen, alle auf ihre Marke, „Abstand ist hier das Thema – jede:r hat ein Recht darauf“. Notfalls im Sitzen mit Fingerzahlen weiterspielen. Wirkt jemand belastet: Pause, Einzelgespräch anbieten.',
+      },
+    },
+    stoppcheck: {
+      warum: 'Eine Figur sagt Stopp – aber etwas passt nicht. Ihr findet den Fehler und baut ein Stopp, das ankommt: Haltung, Blick, Hand, Stimme, kurze Worte.',
+      skill: 'Klar Stopp sagen – auch zweimal',
+      karte: 'Fester Stand',
+      geuebt: 'Ein Stopp mit Haltung, Blick, Hand, Stimme und kurzen Worten setzen und beim Nachhaken dabei bleiben.',
+      fragen: ['Welcher Fehler war am schwersten zu finden?', 'Warum ist das zweite Stopp schwerer als das erste?', 'Wo brauchst du diese Woche ein klares Stopp?'],
+      lehrer: {
+        ziel: 'Grenzen klar setzen (j1-e23): Körper und Worte sagen dasselbe, Stopp unter Nachhaken halten, als drittes Stopp weggehen und Hilfe holen. Grundsatz: Jedes Stopp gilt – die Verantwortung liegt bei der Person, die weitermacht.',
+        stufen: 'Level 1 Fehler finden (ein Fehler im Stopp-Bild, dann aus fünf Bausteinen neu bauen), Level 2 Zwei Fehler (subtiler: zu viel reden, halb weggedreht, Hände in den Taschen), Level 3 Nachhaken (das Gegenüber bohrt nach: zweites Stopp wählen; hört es nicht auf: weggehen und Hilfe holen).',
+        achten: 'Nie den Eindruck lassen, ein „schlechtes“ Stopp sei schuld, wenn jemand weitermacht – das Spiel sagt es ausdrücklich. Ausprobieren nur Richtung Wand oder iPad, nicht zur Partnerperson. Kein Körperkontakt.',
+        impulse: ['„Was sagt dein Körper, wenn du beim Stopp lächelst?“', '„Warum reicht beim Nachhaken ein kurzer Satz?“', '„Wann ist Weggehen das stärkste Stopp?“'],
+        kippt: 'Wird das Stopp-Üben albern oder zum Machtspiel: abbrechen, ernst sagen „Stopp heißt sofort aufhören – auch im Spiel“. Erzählt jemand von einer echten Situation, in der ein Stopp nicht gehört wurde: ernst nehmen, Einzelgespräch, Hilfe (116 111) zeigen.',
+      },
+    },
+    familienfunk: {
+      solo: true,
+      warum: 'Zu Hause etwas aushandeln ist schwer. Du probierst bei erfundenen Familien aus, wie Klartext mit Vorschlag mehr bringt als Vorwurf oder Türknall.',
+      skill: 'Aushandeln statt Türknall',
+      karte: 'Runter unter 70',
+      geuebt: 'Einen Wunsch mit Klartext und Vorschlag sagen, ruhig bleiben und einen Kompromiss annehmen.',
+      fragen: ['Welche Antwort hat das meiste Vertrauen gebracht?', 'Wann war der Türknall am verlockendsten?', 'Welchen Vorschlag könntest du diese Woche ausprobieren?'],
+      lehrer: {
+        ziel: 'Freiraum aushandeln mit Ich-Botschaft und Vorschlag (im Spiel: „Klartext + Vorschlag“), Kompromiss statt Türknall, Anspannung im Blick (Hitze unter 70), Vertrauen als Währung (j1-e21, j1-e24).',
+        stufen: 'Level 1 Ruhig bleiben (drei Antworten: Klartext mit Vorschlag, Vorwurf, Türknall), Level 2 Vorschlag machen (dazu getarnter Angriff und Klartext ohne Vorschlag), Level 3 Kompromiss (die Erwachsenen sagen erst Nein – jetzt zählt der Gegenvorschlag). Ab Hitze 80 knallt es: Zurückspulen wie bei Clash.',
+        achten: 'Bewusst solo und ohne Vergleichskarte – Familie ist privat. Nur erfundene Familien in verschiedenen Formen (mit Mama, mit zwei Papas, bei Oma, zwei Zuhause); keine gilt als „normal“, keine wird kommentiert. Hilfenummern am Ende.',
+        impulse: ['„Was macht einen Vorschlag fair für beide Seiten?“', '„Warum sinkt das Vertrauen beim Türknall so stark?“', '„Wann ist ein guter Moment zum Aushandeln?“'],
+        kippt: 'Wirkt jemand nach einer Szene betroffen (Streit zu Hause): nicht vor anderen nachfragen, Einzelgespräch anbieten, Kanner- a Jugendtelefon 116 111 zeigen. Das Spiel darf jederzeit mit X beendet werden.',
       },
     },
 
@@ -22312,6 +22666,255 @@ var qrcode = function() {
   });
 })();
 
+/* ---- games/kommunikation/familienfunk.js ---- */
+/* Spiel „Familien-Funk“ (Thema: Kommunikation & Grenzen) · Vorlage T0 Solo · j1-e21, j1-e24
+   Eine Figur will zu Hause etwas aushandeln (Handy nach 22 Uhr, länger wegbleiben, Freunde einladen, Training in der
+   Papa-Woche). Die Erwachsenen reagieren, du wählst die Antwort: Klartext mit Vorschlag, Vorwurf, Türknall – ab Level 2
+   auch der getarnte Angriff und Klartext ohne Vorschlag. Vertrauens- und Hitze-Meter zeigen die Rechnung; ab Hitze 80
+   knallt es, dann heißt es Zurückspulen wie bei Clash. Jede Szene hat zwei Schritte: den Wunsch sagen – und auf das
+   erste Nein mit einem Gegenvorschlag antworten. In drei Level:
+   1) Ruhig bleiben – drei Antworten.
+   2) Vorschlag machen – vier Antworten, darunter getarnter Angriff und Klartext ohne Vorschlag.
+   3) Kompromiss – vier Antworten auf das Nein; am Ende die Deal-Karte.
+   Nur erfundene Familien in verschiedenen Formen (mit Mama, mit zwei Papas, bei Oma, zwei Zuhause) – keine gilt als
+   „normal“, keine wird kommentiert. Bewusst ohne Vergleichskarte. Am Ende „Mit jemandem drüber reden“ mit 116 111. */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  // Erwachsene als eigene Figuren-Objekte (gleicher Zeichenstil, erfunden)
+  const ERW = {
+    mama: { id: 'mama', name: 'Mama', colour: '#b48bff', hair: '#2b1d14', skin: '#e0ac7e', style: 'lang' },
+    papa: { id: 'papa', name: 'Papa', colour: '#3d7bff', hair: '#140f1a', skin: '#b87b4f', style: 'kurz' },
+    papi: { id: 'papi', name: 'Papi', colour: '#ffb020', hair: '#5b4636', skin: '#e8c19c', style: 'cap' },
+    oma: { id: 'oma', name: 'Oma', colour: '#2ee6c5', hair: '#d9d4cc', skin: '#f1c9a5', style: 'locken' },
+    papaSam: { id: 'papa-sam', name: 'Papa', colour: '#ff8a5c', hair: '#1d1a24', skin: '#8d5a3a', style: 'kurz' },
+  };
+  const ART = {
+    ich: { label: 'Klartext + Vorschlag', v: 15, hz: -10 },
+    ichohne: { label: 'Klartext ohne Vorschlag', v: 5, hz: 0 },
+    getarnt: { label: 'Getarnter Angriff', v: -8, hz: 12 },
+    vorwurf: { label: 'Vorwurf', v: -12, hz: 18 },
+    tuer: { label: 'Türknall', v: -20, hz: 40 },
+    kompromiss: { label: 'Gegenvorschlag', v: 15, hz: -15 },
+    schmollen: { label: 'Schmollen', v: -5, hz: 6 },
+  };
+  const KNALL = 80;
+  const START = { v: 50, hz: 40 };
+
+  /* Familien: kind (Figur), erw (wer redet), wer (Satz, wie die Familie ist – ohne Kommentar), lage, auf (erste Antwort
+     der Erwachsenen), a (Antworten Schritt 1), nein (das erste Nein), b (Antworten Schritt 2), deal. */
+  const FAMILIEN = [
+    { id: 'mika', kind: 'mika', erw: ['mama'], wer: 'Mika wohnt mit Mama.', thema: 'Handy nach 22 Uhr',
+      lage: 'Es ist 22 Uhr. Mika spielt noch online mit Yara.',
+      auf: { von: 'mama', t: 'Mika, 22 Uhr. Handy in den Flur, wie abgemacht.' },
+      a: {
+        ich: { t: 'Mir ist das Level mit Yara wichtig. Bis 22:15 – dann leg ich’s raus?', r: 'Okay, 15 Minuten. Danke, dass du fragst, statt zu motzen.', mood: 'froh' },
+        ichohne: { t: 'Ich bin echt noch nicht müde. Das nervt mich gerade.', r: 'Kann sein. Trotzdem 22 Uhr. Oder hast du einen Vorschlag?', mood: 'neutral' },
+        getarnt: { t: 'Ich finde halt, du bist die strengste Mutter der Welt.', r: 'Aha. Dann ist die strengste Mutter jetzt auch müde.', mood: 'genervt' },
+        vorwurf: { t: 'Alle anderen in meiner Klasse dürfen bis Mitternacht! Nur ich nicht, wie immer!', r: 'Ich rede mit dir, nicht mit allen anderen.', mood: 'genervt' },
+        tuer: { t: '(Mika knallt die Tür zu und spielt weiter.)', r: '(Mama nimmt das Handy. Bis morgen Abend.)', mood: 'wut' },
+      },
+      nein: { von: 'mama', vorher: 'Am nächsten Tag will Mika eine neue Regel: am Wochenende länger.', t: 'Am Wochenende bis Mitternacht? Nein. Das ist zu spät.' },
+      b: {
+        kompromiss: { t: 'Und Freitag und Samstag bis 22:30? Unter der Woche bleibt 22 Uhr.', r: 'Das klingt fair. Deal.', mood: 'froh' },
+        schmollen: { t: 'Na toll. Dann halt nie.', r: 'Wenn du einen Vorschlag hast, hör ich zu.', mood: 'neutral' },
+        vorwurf: { t: 'Du willst doch nur, dass ich keine Freunde mehr hab und jeden Abend allein bin!', r: 'Das ist unfair. Jetzt hab ich keine Lust mehr zu reden.', mood: 'traurig' },
+        tuer: { t: '(Mika rennt raus. Tür knallt.)', r: '(Die Regel bleibt, wie sie ist. Für lange.)', mood: 'traurig' },
+      },
+      deal: 'Freitag und Samstag bis 22:30. Unter der Woche 22 Uhr – Handy im Flur.' },
+    { id: 'yara', kind: 'yara', erw: ['papa', 'papi'], wer: 'Yara wohnt mit Papa und Papi.', thema: 'Samstag länger bleiben',
+      lage: 'Yara ist am Samstag zu einem Geburtstag eingeladen. Abgemacht ist 21 Uhr.',
+      auf: { von: 'papa', t: 'Samstag? Du bist um 21 Uhr zu Hause, wie immer.' },
+      a: {
+        ich: { t: 'Der Geburtstag ist mir wichtig. Bis 22:30? Ich schreib, wenn ich losgehe.', r: 'Hm. Mit Nachricht? Darüber können wir reden.', mood: 'neutral' },
+        ichohne: { t: 'Ich bin traurig, wenn ich als Erste gehen muss.', r: 'Verstehe ich. Aber was schlägst du vor?', mood: 'neutral' },
+        getarnt: { t: 'Ich finde ja nur, dass ihr bei mir immer voll übertreibt – bei allem, was ich mache.', r: 'Übertreiben. Aha.', mood: 'genervt' },
+        vorwurf: { t: 'Ihr behandelt mich wie ein Baby!', r: 'Babys gehen um 19 Uhr ins Bett. Du um 21.', mood: 'genervt' },
+        tuer: { t: '(Yara stapft in ihr Zimmer. Tür knallt.)', r: '(Papa seufzt. Am Samstag gilt 21 Uhr – ohne Gespräch.)', mood: 'traurig' },
+      },
+      nein: { von: 'papi', vorher: 'Papi kommt dazu.', t: '22:30 ist uns zu spät. Der Weg ist dunkel.' },
+      b: {
+        kompromiss: { t: 'Und wenn ich bis 22 Uhr bleibe und Papi mich abholt?', r: 'Abholen um 22 Uhr – Deal.', mood: 'froh' },
+        schmollen: { t: 'Okay. Dann geh ich halt gar nicht hin.', r: 'Das wollten wir nicht. Überleg dir einen Vorschlag.', mood: 'traurig' },
+        vorwurf: { t: 'Ihr habt doch gar keine Angst um mich, ihr wollt einfach nur eure Ruhe!', r: 'Doch. Wir haben Angst um dich.', mood: 'traurig' },
+        tuer: { t: '(Yara schreibt der Freundin: „Darf nicht.“ Tür zu.)', r: '(Samstag bleibt Yara zu Hause. Keiner ist froh.)', mood: 'traurig' },
+      },
+      deal: 'Yara bleibt bis 22 Uhr, Papi holt sie ab.' },
+    { id: 'luca', kind: 'luca', erw: ['oma'], wer: 'Luca wohnt bei Oma.', thema: 'Freunde zum Zocken einladen',
+      lage: 'Am Freitag will Luca drei Leute zum Zocken einladen.',
+      auf: { von: 'oma', t: 'Drei Leute bis spät? Das wird mir zu laut, Luca.' },
+      a: {
+        ich: { t: 'Ich wünsch mir den Abend. Mit Kopfhörern – und um 21 Uhr sind alle weg?', r: 'Mit Kopfhörern? Hm. Das klingt schon besser.', mood: 'neutral' },
+        ichohne: { t: 'Ich fühl mich allein, wenn nie jemand kommen darf.', r: 'Das wusste ich nicht. Wie stellst du dir das vor?', mood: 'traurig' },
+        getarnt: { t: 'Ich finde, du gönnst mir einfach nichts.', r: 'Ich gönne dir eine Menge, Luca.', mood: 'traurig' },
+        vorwurf: { t: 'Bei dir darf man ja gar nichts! Andere dürfen jedes Wochenende Leute einladen!', r: 'So redest du nicht mit mir.', mood: 'genervt' },
+        tuer: { t: '(Luca schlägt die Tür zu.)', r: '(Oma erschrickt. Am Freitag ist es still im Haus.)', mood: 'traurig' },
+      },
+      nein: { von: 'oma', vorher: 'Oma überlegt.', t: 'Freitag nicht. Da kommt meine Freundin zum Kartenspielen.' },
+      b: {
+        kompromiss: { t: 'Und Samstagnachmittag? Dann hast du abends deine Ruhe.', r: 'Samstag bis 18 Uhr – abgemacht!', mood: 'froh' },
+        schmollen: { t: 'Okay. Dann frag ich halt nie wieder, ist ja eh immer dasselbe.', r: 'Sag nicht nie. Gibt’s einen anderen Tag?', mood: 'traurig' },
+        vorwurf: { t: 'Deine Freundin ist dir immer wichtiger als ich!', r: 'Das stimmt nicht, und das weißt du.', mood: 'traurig' },
+        tuer: { t: '(Luca geht raus und kommt erst spät zurück.)', r: '(Oma wartet am Fenster. Kein Zocken, kein Kartenspiel.)', mood: 'traurig' },
+      },
+      deal: 'Samstag 14 bis 18 Uhr zocken – mit Kopfhörern.' },
+    { id: 'sam', kind: 'sam', erw: ['papaSam'], wer: 'Sam hat zwei Zuhause. Diese Woche ist Papa-Woche.', thema: 'Training am Mittwoch',
+      lage: 'Am Mittwoch ist Training – weit weg von Papas Wohnung. Samstag ist das große Spiel.',
+      auf: { von: 'papaSam', t: 'Mittwoch kann ich dich nicht fahren. Dann fällt das Training diese Woche aus.' },
+      a: {
+        ich: { t: 'Das Training ist mir wichtig. Ich fahr mit dem Bus und schreib dir, okay?', r: 'Mit dem Bus? Zeig mir mal die Verbindung.', mood: 'neutral' },
+        ichohne: { t: 'Ich bin echt enttäuscht. Ich will nicht fehlen.', r: 'Verstehe ich. Hast du eine Idee?', mood: 'neutral' },
+        getarnt: { t: 'Ich merk halt schon länger, dass dir mein Sport total egal ist, Papa.', r: 'Das ist er nicht. Aber so mag ich nicht reden.', mood: 'traurig' },
+        vorwurf: { t: 'Bei Mama klappt das immer, da fährt mich jeder hin! Nur bei dir klappt nie was!', r: 'Hier ist nicht bei Mama.', mood: 'genervt' },
+        tuer: { t: '(Sam verschwindet im Zimmer. Tür zu.)', r: '(Papa sitzt allein in der Küche. Das Training fällt aus.)', mood: 'traurig' },
+      },
+      nein: { von: 'papaSam', vorher: 'Papa schaut die Busverbindung an.', t: 'Allein mit dem Bus, abends? Das ist mir nicht sicher genug.' },
+      b: {
+        kompromiss: { t: 'Und wenn ich mit Luca hinfahre und du uns um 19 Uhr an der Halle abholst?', r: 'Das krieg ich hin. Deal.', mood: 'froh' },
+        schmollen: { t: 'Dann sag ich dem Trainer halt ab. Toll.', r: 'Warte. Lass uns noch was überlegen.', mood: 'traurig' },
+        vorwurf: { t: 'Du findest wirklich immer irgendeinen Grund, warum bei dir etwas nicht geht!', r: 'Und du hörst gar nicht zu.', mood: 'genervt' },
+        tuer: { t: '(Sam knallt die Tür.)', r: '(Sam fehlt beim Training. Und am Samstag sitzt Sam auf der Bank.)', mood: 'traurig' },
+      },
+      deal: 'Sam fährt mit Luca hin, Papa holt beide um 19 Uhr ab.' },
+  ];
+  /* Welche Antworten pro Level und Schritt (die beste ist immer dabei, aber nicht immer die längste) */
+  const OPTS = {
+    1: { a: ['ich', 'vorwurf', 'tuer'], b: ['kompromiss', 'vorwurf', 'tuer'] },
+    2: { a: ['ich', 'ichohne', 'getarnt', 'tuer'], b: ['kompromiss', 'schmollen', 'vorwurf'] },
+    3: { a: ['ich', 'ichohne', 'getarnt', 'vorwurf'], b: ['kompromiss', 'schmollen', 'vorwurf', 'tuer'] },
+  };
+  const LEVELS = ['Ruhig bleiben', 'Vorschlag machen', 'Kompromiss'];
+
+  // Kompakte Aufgaben-Zeile (statt großer Karte), damit die Antworten sichtbar bleiben
+  const hint = (ctx, text, icon) => h('div', { class: 'kg-hint' }, CREW.icon(icon || 'chat', 24), h('span', { class: 'kg-hint-t' }, text), ctx.readBtn(text));
+  const erwFig = (k) => ERW[k];
+  // Familien-Karte: die Figur und ihre Erwachsenen nebeneinander, ein neutraler Satz
+  function familieKarte(ctx, f) {
+    return h('div', { class: 'ff-familie' },
+      h('div', { class: 'ff-leute' }, [ctx.avatar(f.kind, 'neutral', 72)].concat(f.erw.map((k) => ctx.avatar(erwFig(k), 'neutral', 72)))),
+      h('div', { class: 'stack', style: { gap: '4px', minWidth: 0 } },
+        h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Erfundene Familie · ' + f.thema), ctx.readBtn(f.wer + ' ' + f.lage)),
+        h('b', { class: 'ff-wer' }, f.wer), h('span', { class: 'muted' }, f.lage)));
+  }
+  function meters(ctx, st) {
+    const v = ctx.meter({ value: st.v, label: 'Vertrauen' });
+    const hz = ctx.meter({ value: st.hz, label: 'Hitze' });
+    v.el.classList.add('ff-vertrauen');
+    return { el: h('div', { class: 'ff-meters' }, v.el, hz.el), v, hz };
+  }
+
+  /* Ein Schritt (a = Wunsch sagen, b = Antwort auf das Nein). Zurückspulen: freiwillig, ab Hitze 80 Pflicht. */
+  async function schritt(ctx, f, L, key, st, nr) {
+    const badge = ctx.stufe(L, LEVELS);
+    const kind = ctx.figures[f.kind];
+    const satz = key === 'a' ? f.auf : f.nein;
+    const erw = erwFig(satz.von);
+    const order = ctx.rshuffle(OPTS[L][key]);
+    const best = key === 'a' ? 'ich' : 'kompromiss';
+    let tries = 0, erste = null;
+    for (;;) {
+      const m = meters(ctx, st);
+      const w = ctx.scr([
+        key === 'b' && satz.vorher ? h('p', { class: 'muted', style: { margin: 0 } }, satz.vorher) : null,
+        h('div', { class: 'kg-pair ff-pair' }, ctx.figureCard({ fig: erw, mood: key === 'b' ? 'neutral' : 'genervt', text: satz.t, eyebrow: erw.name + (key === 'b' ? ' sagt Nein' : ' sagt'), cls: 'ff-erw' }), m.el),
+        hint(ctx, (key === 'a' ? 'Den Wunsch sagen: ' : 'Auf das Nein antworten: ') + 'Was sagt ' + kind.name + '?', 'chat'),
+      ], { eyebrow: 'Szene ' + nr + ' · ' + (key === 'a' ? 'Schritt 1' : 'Schritt 2'), badge });
+      const r = await ctx.ask(w, order.map((k) => ({ label: f[key][k].t, value: k, variant: 'ghost', id: 'ff-' + k })), { autoPick: tries >= 1 ? () => best : undefined });
+      if (r === ctx.SKIP) return { erste, ok: false };
+      tries++;
+      if (!erste) erste = r;
+      const A = ART[r], R = f[key][r];
+      const vorher = { v: st.v, hz: st.hz };
+      st.v = Math.max(0, Math.min(100, st.v + A.v));
+      st.hz = Math.max(0, Math.min(100, st.hz + A.hz));
+      const knall = st.hz >= KNALL;
+      const ok = r === best;
+      CREW.sound.play(ok ? 'great' : knall ? 'soft' : 'tap');
+      const m2 = meters(ctx, vorher);
+      const w2 = ctx.scr([
+        knall ? h('div', { class: 'stop-big display ff-knall' }, 'Knall!') : null,
+        h('div', { class: 'grid two' },
+          ctx.figureCard({ fig: f.kind, mood: r === 'tuer' ? 'wut' : ok ? 'neutral' : 'genervt', text: R.t, eyebrow: kind.name + ' · ' + A.label, chat: !/^\(/.test(R.t) }),
+          ctx.figureCard({ fig: erw, mood: R.mood, text: R.r, eyebrow: erw.name })),
+        m2.el,
+        h('div', { class: 'card stack soft' }, h('b', null, ok ? (key === 'a' ? 'Wunsch, Grund, Vorschlag – das öffnet die Tür.' : 'Gegenvorschlag statt Ende: So entsteht ein Deal.') : knall ? 'Die Hitze ist über 80. Jetzt redet niemand mehr – erst runterkommen, dann zurückspulen.' : A.label + ': ' + (r === 'ichohne' ? 'Das Gefühl ist gut – aber ohne Vorschlag weiß niemand, was jetzt passieren soll.' : r === 'getarnt' ? 'Klingt nach „Ich“, ist aber ein Vorwurf.' : r === 'schmollen' ? 'Das Gespräch ist zu – aber die Tür noch nicht.' : 'Das treibt die Hitze hoch und kostet Vertrauen.')),
+          knall ? h('div', { class: 'row' }, h('span', { class: 'skill-chip karte' }, CREW.icon('sparkle', 14), 'Skill-Karte „Runter unter 70“')) : null),
+      ], { eyebrow: 'Szene ' + nr + ' · Folge', badge });
+      // Meter mit kurzer Verzögerung bewegen (sichtbare Rechnung)
+      setTimeout(() => { m2.v.set(st.v); m2.hz.set(st.hz); }, ctx.auto ? 0 : 350);
+      if (ok || tries >= 3) { await ctx.next(w2, 'Weiter'); return { erste, ok }; }
+      const opts = knall
+        ? [{ label: 'Zurückspulen', value: 'rewind', variant: 'teamB', icon: 'undo', id: 'ff-rewind' }]
+        : [{ label: 'Zurückspulen', value: 'rewind', variant: 'ghost', icon: 'undo', id: 'ff-rewind' }, { label: 'So lassen', value: 'keep', iconRight: 'right', id: 'btn-next' }];
+      const z = await ctx.ask(w2, opts, { autoPick: () => 'rewind' });
+      if (z === 'rewind' || knall) { st.v = vorher.v; st.hz = vorher.hz; CREW.sound.play('tap'); continue; }
+      return { erste, ok: false };
+    }
+  }
+
+  /* Eine Szene: Familie zeigen, Schritt 1, Schritt 2, Ergebnis */
+  async function szene(ctx, f, L, nr) {
+    const badge = ctx.stufe(L, LEVELS);
+    const w = ctx.scr([familieKarte(ctx, f), ctx.safetyLine('familie')], { eyebrow: 'Szene ' + nr + ' von 3', badge });
+    if ((await ctx.next(w, 'Los')) === ctx.SKIP) return null;
+    const st = { v: START.v, hz: START.hz };
+    const a = await schritt(ctx, f, L, 'a', st, nr);
+    const b = await schritt(ctx, f, L, 'b', st, nr);
+    const deal = b.ok;
+    const kind = ctx.figures[f.kind];
+    const m = meters(ctx, st);
+    const w2 = ctx.scr([
+      h('div', { class: 'ff-ende' + (deal ? ' deal' : '') }, CREW.icon(deal ? 'check' : 'timer', 34),
+        h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, deal ? 'Deal' : 'Kein Deal heute'), h('b', { class: 'ff-deal' }, deal ? f.deal : 'Morgen in Ruhe nochmal – mit einem Vorschlag.'))),
+      m.el,
+      L === 3 && deal ? h('div', { class: 'grid two' },
+        h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, kind.name + ' bekommt'), h('b', null, 'einen Teil vom Wunsch')),
+        h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, kind.name + ' gibt'), h('b', null, 'Zeit, Sicherheit oder Ruhe für die anderen'))) : null,
+      h('p', { class: 'muted small' }, deal ? 'Nicht alles bekommen – aber mehr als mit Türknall. Und das Vertrauen ist gestiegen.' : 'Kein Weltuntergang. Ein guter Moment und ein Vorschlag helfen beim nächsten Versuch.'),
+    ], { eyebrow: 'Szene ' + nr + ' · Ergebnis', badge });
+    CREW.sound.play(deal ? 'good' : 'soft');
+    await ctx.next(w2, nr < 3 ? 'Nächste Familie' : 'Weiter');
+    return { deal, erstA: a.erste, erstB: b.erste, v: st.v };
+  }
+
+  CREW.registerGame({
+    id: 'familienfunk',
+    template: 'T0',
+    icon: 'home',
+    themen: ['Aushandeln', 'Familie', 'Klartext', 'Kompromiss'],
+    safety: ['figuren', 'familie'],
+    help: false,
+    familien: FAMILIEN, art: ART, opts: OPTS, knall: KNALL, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Drei erfundene Familien, drei Wünsche. Du wählst, was die Figur sagt. Vertrauen und Hitze zeigen die Rechnung. Ab Hitze 80 knallt es – dann spulst du zurück.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'chat', title: 'Wunsch sagen', text: 'Klartext, Vorwurf oder Türknall?' },
+          { icon: 'heart', title: 'Vertrauen und Hitze', text: 'Jede Antwort bewegt beide Meter.' },
+          { icon: 'check', title: 'Deal', text: 'Auf das Nein mit einem Gegenvorschlag antworten.' },
+        ],
+        probe: ctx.T.probeCard('Probe: „Räum dein Zimmer auf!“ Was bringt mehr? Tipp irgendwas – zählt nicht.', [{ label: '„Mach ich nach dem Essen, okay?“', value: 1, variant: 'ghost' }, { label: '„Immer ich!“', value: 2, variant: 'ghost' }]),
+      });
+      const fams = ctx.rshuffle(FAMILIEN).slice(0, 3);
+      const res = [];
+      for (let i = 0; i < fams.length; i++) {
+        if (i > 0) await ctx.T.level({ n: i + 1, names: LEVELS, text: i === 1 ? 'Jetzt gibt es mehr Antworten: Eine klingt nach Klartext, ist aber ein getarnter Angriff. Und Klartext ohne Vorschlag reicht nicht ganz.' : 'Letzte Familie. Die Erwachsenen sagen erst Nein. Jetzt zählt der Gegenvorschlag – ein Deal, mit dem beide leben können.' });
+        const r = await szene(ctx, fams[i], i + 1, i + 1);
+        if (r) res.push(r);
+      }
+      const deals = res.filter((r) => r.deal).length;
+      return {
+        summary: deals >= 2 ? 'Ausgehandelt! Klartext plus Vorschlag bringt mehr als jeder Türknall.' : res.length ? 'Aushandeln ist schwer. Ein Vorschlag öffnet die Tür – ein Türknall schließt sie.' : 'Heute nur reingeschaut. Auch okay.',
+        stats: [[deals, 'Deals'], [res.filter((r) => r.erstA === 'ich').length, 'mal gleich mit Vorschlag'], [res.length ? Math.round(res.reduce((s, r) => s + r.v, 0) / res.length) : 0, 'Vertrauen im Schnitt']],
+        extra: ctx.helpCard({ title: 'Mit jemandem drüber reden', text: 'Zu Hause läuft es nicht immer gut. Du musst das nicht allein lösen. Anonym und kostenlos:' }),
+      };
+    },
+  });
+})();
+
 /* ---- games/kommunikation/funkstille.js ---- */
 /* Spiel „Funkstille – der Chat kippt“ (Thema: Kommunikation & Grenzen) · Vorlage T2 Rollen-Puzzle · j1-e21, j1-e23
    A sieht einen Chat, der gerade kippt, und sechs mögliche Nachrichten; B hat die Ich-Botschaft-Regel als
@@ -22705,6 +23308,1614 @@ var qrcode = function() {
       return {
         summary: hitze < 50 ? 'Die Hitze ist gesunken. Klartext hat gewirkt: Gefühl, Grund, Wunsch.' : 'Angriffe treiben die Hitze hoch – auch getarnte. Klartext holt sie runter.',
         stats: [[gegangen, 'Sätze gegangen'], [umformuliert, 'mal umformuliert'], [hitze, 'Hitze am Ende']],
+      };
+    },
+  });
+})();
+
+/* ---- games/kommunikation/naeher-nicht.js ---- */
+/* Spiel „Näher nicht“ (Thema: Kommunikation & Grenzen) · Vorlage T4 Bewegung im Raum · j1-e22 (Brücke zu j1-e23)
+   Bodenmarken 1–5 vor dem Beamer (1 = ganz nah, 5 = weit weg). Am Beamer kommt eine Figur Schritt für Schritt näher –
+   als beste Freundin, fremde Person im Bus, Lehrer, Tante zur Begrüßung. Jede:r stellt sich auf die Marke, ab der es
+   „näher nicht“ heißt; die Position ist die Antwort, Gruppen reden („Beim Fremden stehen wir alle auf 4“). Danach zeigen
+   die Figuren, wo SIE stehen würden – verschieden, alle okay – und der Richtwert aus der Stunde. Keine echte Person kommt
+   jemandem nahe: Die Figur am Beamer ist das Gegenüber. In drei Level:
+   1) Spüren – Freundin vs. fremde Person.
+   2) Je nach Person – Lehrer, Tante zur Begrüßung, die gleiche Freundin, aber wütend: Was verändert den Abstand?
+   3) Nein ohne Worte – die Figur kommt näher, alle zeigen gleichzeitig Richtung Beamer das Stopp-Zeichen (Hand flach,
+      fester Stand); die Lehrkraft tippt „Stopp gesehen“, die Figur bleibt sofort stehen. Dann mit einem Wort.
+   Nur die Lehrkraft tippt. */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  // Erwachsene und Unbekannte als eigene Figuren-Objekte (gleicher Zeichenstil, keine echten Personen)
+  const FREMD = { id: 'fremd', name: 'Fremde Person', colour: '#8f8fb0', hair: '#2a2a33', skin: '#c8a07a', style: 'cap' };
+  const LEHRER = { id: 'lehrer', name: 'Lehrer', colour: '#5fa36b', hair: '#6b6b6b', skin: '#e8c19c', style: 'kurz' };
+  const TANTE = { id: 'tante', name: 'Tante', colour: '#e07a5f', hair: '#7a3b1f', skin: '#b87b4f', style: 'lang' };
+  const KLASSE = { id: 'klasse', name: 'Jemand aus der Klasse', colour: '#4cc9f0', hair: '#14100c', skin: '#f1c9a5', style: 'locken' };
+
+  const MARKEN = [
+    { id: 'm1', n: 1, label: '1', where: 'ganz nah' },
+    { id: 'm2', n: 2, label: '2', where: 'nah' },
+    { id: 'm3', n: 3, label: '3', where: 'mittel' },
+    { id: 'm4', n: 4, label: '4', where: 'weit' },
+    { id: 'm5', n: 5, label: '5', where: 'ganz weit' },
+  ];
+  /* Personen: wer kommt, wo, Stimmung; figs = Marke, auf der die vier Figuren stehen würden (alle verschieden okay) */
+  const PERSONEN = [
+    { id: 'freundin', stufe: 1, fig: 'yara', mood: 'froh', rolle: 'Yara, deine beste Freundin', ort: 'auf dem Schulhof, sie will dir was zeigen', richt: 'Bei guten Freunden ist für viele etwa ein halber Meter okay.', figs: { mika: 1, luca: 2, sam: 2 } },
+    { id: 'fremd', stufe: 1, fig: FREMD, mood: 'neutral', rolle: 'Eine fremde Person', ort: 'im fast leeren Bus', richt: 'Bei Fremden wird es vielen ab etwa 1,2 Metern zu nah.', figs: { mika: 4, yara: 5, luca: 3, sam: 4 } },
+    { id: 'lehrer', stufe: 2, fig: LEHRER, mood: 'neutral', rolle: 'Ein Lehrer', ort: 'er will dein Heft sehen', richt: 'In der Schule ist oft eine Armlänge angenehm – Hefte kann man auch reichen.', figs: { mika: 2, yara: 3, luca: 2, sam: 3 } },
+    { id: 'tante', stufe: 2, fig: TANTE, mood: 'froh', rolle: 'Eine Tante', ort: 'beim Familienfest, sie will dich zur Begrüßung umarmen', familie: true, richt: 'Auch in der Familie darfst du sagen: „Lieber Hand als Umarmung.“', figs: { mika: 1, yara: 4, luca: 2, sam: 3 } },
+    { id: 'wut', stufe: 2, fig: 'yara', mood: 'wut', rolle: 'Yara, deine beste Freundin – aber gerade richtig wütend', ort: 'nach einem Streit', richt: 'Gleiche Person, andere Stimmung: Abstand darf sich ändern.', figs: { mika: 3, luca: 4, sam: 3 } },
+    { id: 'klasse', stufe: 2, fig: KLASSE, mood: 'neutral', rolle: 'Jemand aus der Klasse, den du kaum kennst', ort: 'in der Mensa-Schlange', richt: 'Kaum gekannt ist fast wie fremd – für viele ab etwa einem Meter.', figs: { mika: 3, yara: 4, luca: 2, sam: 3 } },
+  ];
+  const VERAENDERT = ['die Person', 'der Ort', 'die Stimmung', 'ob ich vorbereitet bin'];
+  const LEVELS = ['Spüren', 'Je nach Person', 'Nein ohne Worte'];
+  const figObj = (ctx, f) => (typeof f === 'string' ? ctx.figures[f] : f);
+
+  /* Der „Gang“ am Beamer: Die Figur wird größer, je näher sie kommt. Darunter die Marken 5 … 1. */
+  function gang(ctx, p, mark) {
+    const fo = figObj(ctx, p.fig);
+    const el = h('div', { class: 'nn-gang', 'data-mark': String(mark) },
+      h('div', { class: 'nn-buehne' },
+        h('div', { class: 'nn-fig' }, ctx.avatar(fo, p.mood, 150)),
+        h('span', { class: 'nn-bubble' }, '')),
+      h('div', { class: 'nn-floor', role: 'img', 'aria-label': 'Marken 5 bis 1' }, [5, 4, 3, 2, 1].map((m) => h('span', { class: 'nn-mark' + (m === mark ? ' now' : ''), 'data-m': String(m) }, String(m)))));
+    const set = (m) => { el.dataset.mark = String(m); el.querySelectorAll('.nn-mark').forEach((x) => x.classList.toggle('now', x.dataset.m === String(m))); };
+    const sag = (t) => { const b = el.querySelector('.nn-bubble'); b.textContent = t || ''; b.classList.toggle('on', !!t); };
+    return { el, set, sag };
+  }
+  const personKarte = (ctx, p, eyebrow) => {
+    const fo = figObj(ctx, p.fig);
+    return h('div', { class: 'nn-person' },
+      ctx.avatar(fo, p.mood, 64),
+      h('div', { class: 'stack', style: { gap: '4px', minWidth: 0 } },
+        h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, eyebrow), ctx.readBtn(p.rolle + ', ' + p.ort + '.')),
+        h('b', { class: 'nn-rolle' }, p.rolle), h('span', { class: 'muted' }, p.ort)));
+  };
+
+  /* Annäherung ansehen: Schritt für Schritt von 5 bis 1 (Auto: sofort) */
+  async function ansehen(ctx, p, nr, badge) {
+    const g = gang(ctx, p, 5);
+    const w = ctx.scr([
+      personKarte(ctx, p, 'Person ' + nr + ' kommt näher'),
+      g.el,
+      h('p', { class: 'muted', style: { margin: 0, textAlign: 'center' } }, 'Schaut zu und spürt: Ab welcher Marke heißt es für dich „näher nicht“? Noch nicht gehen.'),
+      p.familie ? ctx.safetyLine('familie') : null,
+    ], { eyebrow: 'Person ' + nr + ' · Ansehen', badge });
+    for (const m of [4, 3, 2, 1]) {
+      await ctx.hold(1300);
+      if (!w.isConnected) break;
+      g.set(m);
+      CREW.sound.play('tick');
+    }
+    return ctx.ask(w, [{ label: 'Nochmal ansehen', value: 'again', variant: 'ghost', icon: 'undo', auto: false, id: 'nn-again' }, { label: 'Jetzt gehen', value: 'go', iconRight: 'right', id: 'btn-next' }]);
+  }
+
+  /* Ein Durchgang: ansehen → zur Marke gehen → Gruppen reden → Figuren und Richtwert */
+  async function durchgang(ctx, p, nr, L) {
+    const badge = ctx.stufe(L, LEVELS);
+    let a;
+    do { a = await ansehen(ctx, p, nr, badge); } while (a === 'again');
+    if (a === ctx.SKIP) return false;
+    const r = await ctx.T.walk({
+      card: personKarte(ctx, p, 'Geh zu deiner Marke'),
+      positions: MARKEN.map((m) => ({ id: m.id, label: m.label, where: m.where })),
+      seconds: 10, step: 'Person ' + nr, badge,
+      hint: 'Ab dieser Marke heißt es: näher nicht. Gehen, nicht rennen. Abstand zu den anderen halten.',
+      question: L === 2 ? 'Jede Marke einen Satz: Was macht den Abstand hier anders als vorhin?' : 'Jede Marke einen Satz: Warum steht ihr hier?',
+      nextLabel: 'Die Figuren',
+    });
+    if (r === ctx.SKIP) return false;
+    // Wo stünden die Figuren? Verschieden – und alle okay
+    const figs = Object.keys(p.figs);
+    const w = ctx.scr([
+      personKarte(ctx, p, 'Person ' + nr),
+      h('div', { class: 'nn-skala' },
+        h('div', { class: 'nn-skala-bar' }, MARKEN.map((m) => h('span', { class: 'nn-skala-m', 'data-m': String(m.n) }, m.label))),
+        h('div', { class: 'nn-skala-figs' }, figs.map((f) => h('div', { class: 'nn-skala-fig', style: { '--pos': String(p.figs[f]) } }, ctx.avatar(f, 'neutral', 48), h('b', null, ctx.figures[f].name + ': ' + p.figs[f]))))),
+      ctx.say('So würden die Figuren stehen. Verschieden – und alle okay. ' + p.richt, { eyebrow: 'Die Figuren', small: true }),
+      L === 2 ? h('div', { class: 'row', style: { gap: '8px' } }, h('span', { class: 'muted small' }, 'Was hat den Abstand verändert?'), VERAENDERT.map((t) => h('span', { class: 'pill' }, t))) : null,
+      CREW.ui.teacherLine('Nicht kommentieren, wer wo stand. Dann Weiter.'),
+    ], { eyebrow: 'Person ' + nr + ' · Figuren', badge });
+    await ctx.next(w, 'Weiter');
+    return true;
+  }
+
+  /* Level 3: Die Figur kommt näher, bis die Crew das Stopp-Zeichen zeigt. Liefert Marke beim Stopp oder SKIP */
+  function stoppZeigen(ctx, p, mitWort) {
+    const badge = ctx.stufe(3, LEVELS);
+    const g = gang(ctx, p, 5);
+    return ctx.waitFor(new Promise((resolve) => {
+      let mark = 5, done = false;
+      const stop = (why) => {
+        if (done) return;
+        done = true; clearInterval(iv);
+        CREW.sound.play(why === 'stopp' ? 'great' : 'soft');
+        g.sag(why === 'stopp' ? 'Okay! Ich bleib hier.' : 'Ich bleib stehen.');
+        btn.disabled = true;
+        setTimeout(() => resolve(mark), ctx.auto ? 30 : 900);
+      };
+      const btn = CREW.ui.btn(mitWort ? 'Stopp gehört' : 'Stopp-Zeichen gesehen', () => stop('stopp'), { variant: 'teamB', icon: 'pause', big: true, id: 'nn-stopp' });
+      ctx.scr([
+        personKarte(ctx, p, mitWort ? 'Jetzt mit Wort' : 'Ohne Worte'),
+        h('div', { class: 'kg-pair nn-pair' }, g.el, h('div', { class: 'stack' },
+        h('div', { class: 'nn-stopp-hilfe' },
+          h('div', { class: 'nn-stopp-ic' }, CREW.icon('shield', 34)),
+          h('div', { class: 'stack', style: { gap: '4px' } },
+            h('b', null, mitWort ? 'An deiner Marke: Hand flach – und laut „Stopp!“' : 'An deiner Marke: Hand flach nach vorn, Füße fest, Blick zur Figur.'),
+            h('span', { class: 'muted small' }, 'Alle zeigen Richtung Beamer, nicht zu anderen. Kein Kichern, kein Wegschauen.'))),
+        h('div', { class: 'row center' }, btn),
+        CREW.ui.teacherLine('Tippen, sobald die ersten Stopp-Zeichen ' + (mitWort ? 'zu hören sind.' : 'zu sehen sind.')))),
+      ], { eyebrow: 'Nein ohne Worte', badge });
+      const iv = setInterval(() => {
+        if (done) return;
+        if (!g.el.isConnected) { clearInterval(iv); return; }
+        if (ctx.isPaused && ctx.isPaused()) return;
+        mark--;
+        g.set(mark);
+        CREW.sound.play('tick');
+        if (mark <= 1) stop('ende');
+      }, ctx.auto ? Math.max(60, (window.__crewAutoDelay || 0) / 2) : 1600);
+      ctx.onCleanup(() => clearInterval(iv));
+      if (ctx.auto) setTimeout(() => { if (!done) btn.click(); }, Math.max(150, window.__crewAutoDelay || 0));
+    }));
+  }
+
+  CREW.registerGame({
+    id: 'naeher-nicht',
+    template: 'T4',
+    icon: 'users',
+    themen: ['Wohlfühl-Abstand', 'Grenzen', 'Nein ohne Worte', 'Körpersprache'],
+    safety: ['koerper', 'raum', 'figuren'],
+    help: false,
+    personen: PERSONEN, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Am Beamer kommt eine Figur näher. Stell dich auf die Marke, ab der es für dich „näher nicht“ heißt. Die Position ist die Antwort. Keine echte Person kommt dir nahe.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'eye', title: 'Ansehen', text: 'Die Figur kommt Schritt für Schritt näher.' },
+          { icon: 'users', title: 'Zur Marke', text: '1 = ganz nah, 5 = weit weg. Gruppen reden.' },
+          { icon: 'shield', title: 'Stopp zeigen', text: 'Hand flach, Füße fest – die Figur bleibt stehen.' },
+        ],
+        probe: async () => {
+          await ctx.T.walk({ card: personKarte(ctx, { fig: 'luca', mood: 'froh', rolle: 'Probe: Luca mit einer Pizza', ort: 'zählt nicht' }, 'PROBE · zählt nicht'), positions: MARKEN.map((m) => ({ id: m.id, label: m.label, where: m.where })), seconds: 10, step: 'Probe', question: 'Probe vorbei. So geht’s: Marke wählen, stehen bleiben.', minorityFirst: false });
+        },
+      });
+      // Marken erklären (einmal)
+      const wM = ctx.scr([
+        ctx.say('Fünf Marken vor dem Beamer: 1 ganz nah an der Wand, 5 weit weg. Jede:r steht allein auf einer Marke – mit Abstand zu den anderen.', { eyebrow: 'Die Marken', small: true }),
+        h('div', { class: 'walk-pos' }, MARKEN.map((m) => h('div', { class: 'walk-p', 'data-pos': m.id }, h('b', { class: 'display' }, m.label), h('span', { class: 'muted small' }, m.where)))),
+        h('div', { class: 'card stack soft' }, h('b', null, 'Wer nicht gehen mag, zeigt die Zahl mit den Fingern – oder beobachtet.'), h('p', { class: 'muted small', style: { margin: 0 } }, 'Niemand kommentiert, wo andere stehen. Deine Marke darf sich jedes Mal ändern.')),
+        h('div', { class: 'row' }, ctx.safetyLine('koerper'), ctx.safetyLine('raum')),
+      ], { eyebrow: 'Marken' });
+      if ((await ctx.next(wM, 'Los')) === ctx.SKIP) return { summary: 'Heute keine Marken. Nächstes Mal.', noNach: true };
+
+      // Level 1: Freundin vs. Fremde (Reihenfolge per Tagescode), Level 2: zwei Personen „je nach Person“
+      const l1 = ctx.rshuffle(PERSONEN.filter((p) => p.stufe === 1));
+      const l2 = ctx.rshuffle(PERSONEN.filter((p) => p.stufe === 2)).slice(0, 2);
+      let gegangen = 0;
+      for (let i = 0; i < l1.length; i++) if (await durchgang(ctx, l1[i], i + 1, 1)) gegangen++;
+      await ctx.T.level({ n: 2, names: LEVELS, text: 'Jetzt wird’s kniffliger: Lehrer, Verwandte, die gleiche Freundin in anderer Stimmung. Was verändert deinen Abstand?' });
+      for (let i = 0; i < l2.length; i++) if (await durchgang(ctx, l2[i], l1.length + i + 1, 2)) gegangen++;
+
+      // Level 3: Nein ohne Worte – erst Zeichen, dann Wort
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Bleibt auf euren Marken. Die Figur kommt näher. An eurer Marke zeigt ihr das Stopp-Zeichen: Hand flach, Füße fest. Die Figur bleibt sofort stehen.' });
+      const p3 = l1.find((p) => p.id === 'fremd') || PERSONEN[1];
+      const m1 = await stoppZeigen(ctx, p3, false);
+      let gehalten = 0;
+      if (m1 !== ctx.SKIP) {
+        gehalten++;
+        const w = ctx.scr([
+          h('div', { class: 'stop-big display' }, 'Stopp!'),
+          ctx.figureCard({ fig: figObj(ctx, p3.fig), mood: 'ueberrascht', text: 'Okay! Ich bleib hier. (Marke ' + m1 + ')', eyebrow: 'Die Figur bleibt stehen' }),
+          ctx.say('Wer ein Stopp sieht oder hört, bleibt sofort stehen. Null Sekunden. Jetzt nochmal – mit einem Wort.', { eyebrow: 'Null Sekunden', small: true }),
+        ], { eyebrow: 'Nein ohne Worte', badge: ctx.stufe(3, LEVELS), center: true });
+        await ctx.next(w, 'Mit Wort');
+        const m2 = await stoppZeigen(ctx, PERSONEN.find((p) => p.id === 'klasse'), true);
+        if (m2 !== ctx.SKIP) {
+          gehalten++;
+          const w2 = ctx.scr([
+            ctx.figureCard({ fig: KLASSE, mood: 'neutral', text: 'Okay, okay. Hab’s verstanden.', eyebrow: 'Die Figur bleibt stehen' }),
+            ctx.say('Zeichen und Wort zusammen sind am klarsten. Und: Deine Grenze bestimmst du – sie darf sich ändern.', { eyebrow: 'Nein ohne Worte', small: true }),
+            h('div', { class: 'row' }, h('span', { class: 'skill-chip karte' }, CREW.icon('sparkle', 14), 'Skill-Karte „Fester Stand“: Füße fest, Schultern locker, Blick geradeaus')),
+          ], { eyebrow: 'Nein ohne Worte', badge: ctx.stufe(3, LEVELS) });
+          await ctx.next(w2, 'Weiter');
+        }
+      }
+      return {
+        summary: 'Jede:r hat einen eigenen Abstand – je nach Person, Ort und Stimmung. Und ein Stopp-Zeichen gilt sofort.',
+        stats: [[gegangen, 'Personen gespürt'], [gehalten, 'mal Stopp gezeigt']],
+      };
+    },
+  });
+})();
+
+/* ---- games/kommunikation/okayradar.js ---- */
+/* Spiel „Okay-Radar“ (Thema: Kommunikation & Grenzen) · Vorlage T1 Solo + Austausch · j1-e22 · Top
+   Kurze Szenen, je ein Satz plus Bild (Umarmung zur Begrüßung, Spitzname vor der Klasse, Foto ohne Fragen gepostet …).
+   Jede:r stellt heimlich das eigene Radar: okay / kommt drauf an (worauf?) / nicht okay. Dann zeigen Mika, Yara, Luca
+   und Sam ihr Radar – fast nie gleich: „Bei Mika okay, bei Yara nicht. Beides gilt.“ In drei Level:
+   1) Spüren – drei Szenen: körperlich, emotional, digital (Einheit j1-e22).
+   2) Signale lesen – eine Figur sagt nichts, aber ihr Körper sagt es. Okay für sie? Was tut die andere Figur jetzt?
+   3) Fragen – eine Figur will etwas (Foto posten, umarmen, aufs Handy schauen): Wie fragt sie – und was tut sie mit
+      einem Nein? Ein halbes Ja ist kein Ja.
+   Danach Vergleichskarte zu zweit. Körper-Szenen bleiben altersgerecht (Begrüßung, Haare, Abstand), keine Berührungs-
+   aufgaben im Raum, alles über Figuren und Skalen. Die eigene Einstellung wird nicht gespeichert. Hilfenummern am Ende. */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  const RADAR = {
+    ok: { id: 'ok', label: 'okay', winkel: -60 },
+    kommt: { id: 'kommt', label: 'kommt drauf an', winkel: 0 },
+    nein: { id: 'nein', label: 'nicht okay', winkel: 60 },
+  };
+  const ART = { koerper: 'Körper', gefuehl: 'Gefühl', digital: 'Digital' };
+  const WORAUF = ['Wer es ist', 'Ob vorher gefragt wird', 'Wo es passiert', 'Wie ich gerade drauf bin'];
+  const LEVELS = ['Spüren', 'Signale lesen', 'Fragen'];
+
+  /* Level 1: Szenen. figs = Radar der vier Figuren [Einstellung, Grund]. Jede Szene hat mindestens zwei verschiedene. */
+  const SZENEN = [
+    { id: 'umarmung', art: 'koerper', bild: '🤗', kurz: 'Umarmung zur Begrüßung', text: 'Zur Begrüßung umarmt dich jemand – einfach so.',
+      figs: { mika: ['ok', 'Bei Freunden voll okay.'], yara: ['nein', 'Ich geb lieber die Faust.'], luca: ['kommt', 'Nur bei Leuten, die ich gut kenne.'], sam: ['ok', 'Ich umarm selbst gern.'] } },
+    { id: 'haare', art: 'koerper', bild: '💇', kurz: 'Durch die Haare wuscheln', text: 'Jemand wuschelt dir zum Spaß durch die Haare.',
+      figs: { mika: ['kommt', 'Bei meiner Schwester ja, sonst nein.'], yara: ['nein', 'Meine Haare sind tabu.'], luca: ['ok', 'Ist mir egal.'], sam: ['nein', 'Die Cap bleibt, wo sie ist.'] } },
+    { id: 'bus', art: 'koerper', bild: '🚌', kurz: 'Ganz dicht im leeren Bus', text: 'Im fast leeren Bus setzt sich jemand ganz dicht neben dich.',
+      figs: { mika: ['nein', 'Da ist doch überall Platz.'], yara: ['nein', 'Zu nah. Ich steh auf.'], luca: ['kommt', 'Wenn es mein Kumpel ist, okay.'], sam: ['kommt', 'Kommt drauf an, wer.'] } },
+    { id: 'spitzname', art: 'gefuehl', bild: '📢', kurz: 'Spitzname vor der Klasse', text: 'Vor der ganzen Klasse ruft dich jemand mit einem Spitznamen.',
+      figs: { mika: ['ok', '„Mikki“ find ich gut.'], yara: ['kommt', 'Kommt auf den Namen an.'], luca: ['nein', 'Vor allen? Nein.'], sam: ['kommt', 'Nur, wenn ich ihn mag.'] } },
+    { id: 'note', art: 'gefuehl', bild: '📝', kurz: 'Note laut vor allen', text: 'Jemand fragt laut vor allen nach deiner Note.',
+      figs: { mika: ['nein', 'Das geht nur mich was an.'], yara: ['ok', 'Ich sag’s eh jedem.'], luca: ['kommt', 'Bei einer guten Note okay.'], sam: ['nein', 'Nicht vor allen.'] } },
+    { id: 'peinlich', art: 'gefuehl', bild: '🤭', kurz: 'Peinliches weitererzählt', text: 'Ein Freund erzählt anderen, was dir gestern Peinliches passiert ist.',
+      figs: { mika: ['nein', 'Das war unter uns.'], yara: ['kommt', 'Wenn ich selbst drüber lache, okay.'], luca: ['ok', 'Ich find so was lustig.'], sam: ['nein', 'Erst fragen!'] } },
+    { id: 'foto', art: 'digital', bild: '📸', kurz: 'Foto ohne Fragen gepostet', text: 'Jemand postet ein Foto von dir, ohne zu fragen.',
+      figs: { mika: ['kommt', 'Wenn ich gut aussehe … trotzdem lieber gefragt.'], yara: ['nein', 'Fotos von mir nur mit Okay.'], luca: ['ok', 'Mir egal.'], sam: ['nein', 'Gar nicht.'] } },
+    { id: 'handy', art: 'digital', bild: '📱', kurz: 'Jemand scrollt durch dein Handy', text: 'Jemand nimmt dein Handy und scrollt durch deine Bilder.',
+      figs: { mika: ['nein', 'Mein Handy ist privat.'], yara: ['nein', 'Niemals.'], luca: ['kommt', 'Wenn ich daneben sitze und es zeige, ja.'], sam: ['nein', 'Stopp, sofort.'] } },
+    { id: 'gruppe', art: 'digital', bild: '👥', kurz: 'Ungefragt in eine Gruppe', text: 'Du wirst ohne Fragen in eine neue Chat-Gruppe gepackt.',
+      figs: { mika: ['ok', 'Ich kann ja wieder raus.'], yara: ['kommt', 'Kommt auf die Gruppe an.'], luca: ['nein', 'Erst fragen, dann adden.'], sam: ['ok', 'Mehr Leute, mehr Spaß.'] } },
+  ];
+
+  /* Level 2: Signale ohne Worte. zuege: was tut die andere Figur jetzt? */
+  const SIGNALE = [
+    { id: 'umarmung', fig: 'yara', von: 'sam', mood: 'angst', text: 'Sam umarmt Yara zur Begrüßung. Yara macht sich steif, die Arme bleiben unten. Ein kurzes Lächeln.',
+      signale: ['macht sich steif', 'Arme bleiben unten', 'nur ein kurzes Lächeln'],
+      zuege: { fragen: { t: 'Sam fragt: „Lieber Faust statt Umarmung?“', a: 'Yara: „Ja, Faust ist besser!“ 👊', mood: 'froh' }, weiter: { t: 'Sam umarmt Yara beim nächsten Mal wieder.', a: 'Yara geht Sam ab jetzt lieber aus dem Weg.', mood: 'traurig' }, witz: { t: 'Sam: „Komm schon, sei nicht so steif!“', a: 'Yara lacht gequält – und fühlt sich doppelt blöd.', mood: 'genervt' } } },
+    { id: 'spitzname', fig: 'luca', von: 'mika', mood: 'traurig', text: 'Mika nennt Luca vor allen „Zwerg“. Luca lacht mit – und schaut dann lange auf den Boden.',
+      signale: ['lacht nur kurz mit', 'Blick auf den Boden', 'wird still'],
+      zuege: { fragen: { t: 'Mika fragt später allein: „Nervt dich der Name?“', a: 'Luca: „Ehrlich? Ja. Vor allen schon.“', mood: 'neutral' }, weiter: { t: 'Mika ruft morgen wieder „Zwerg“.', a: 'Luca lacht wieder mit. Innen wird es jeden Tag schlimmer.', mood: 'traurig' }, witz: { t: 'Mika: „Ist doch Spaß, du lachst ja selbst!“', a: 'Luca: „… ja. Klar.“', mood: 'traurig' } } },
+    { id: 'schulter', fig: 'mika', von: 'yara', mood: 'genervt', text: 'Yara liest Mika beim Tippen über die Schulter mit. Mika dreht das Handy weg und hört auf zu tippen.',
+      signale: ['dreht das Handy weg', 'hört auf zu tippen', 'sagt kein Wort'],
+      zuege: { fragen: { t: 'Yara: „Oh, sorry – willst du das lieber allein?“', a: 'Mika: „Ja, danke. Ist privat.“', mood: 'neutral' }, weiter: { t: 'Yara beugt sich noch weiter rüber.', a: 'Mika steckt das Handy weg und ist sauer.', mood: 'wut' }, witz: { t: 'Yara: „Uiii, wem schreibst du denn? 😏“', a: 'Mika wird rot und steht auf.', mood: 'genervt' } } },
+    { id: 'foto', fig: 'sam', von: 'luca', mood: 'neutral', text: 'Luca will ein Foto von Sam posten. Sam sagt: „Ähm … ja … wenn’s sein muss.“',
+      signale: ['„ähm“', '„wenn’s sein muss“', 'zögert lange'],
+      zuege: { fragen: { t: 'Luca: „Klingt nach eher nicht. Lieber nicht posten?“', a: 'Sam: „Ja, lieber nicht. Danke, dass du fragst.“', mood: 'froh' }, weiter: { t: 'Luca postet das Foto.', a: 'Sam sieht es online und fühlt sich übergangen.', mood: 'traurig' }, witz: { t: 'Luca: „Super, dann poste ich gleich zwei!“', a: 'Sam: „… okay.“ (Es ist nicht okay.)', mood: 'genervt' } } },
+  ];
+  const ZUG_LABEL = { fragen: 'Nachgefragt', weiter: 'Weitergemacht', witz: 'Weggelacht' };
+
+  /* Level 3: Fragen statt raten – und ein Nein annehmen */
+  const FRAGEN = [
+    { id: 'foto', wer: 'sam', an: 'yara', lage: 'Sam will ein Gruppenfoto in den Klassenchat stellen. Yara ist drauf.',
+      wie: { echt: { t: '„Darf ich das Foto posten? Du kannst auch Nein sagen.“' }, druck: { t: '„Ich poste das jetzt, okay? Ist doch gut geworden.“', a: 'Yara: „Ähm … okay …“ – ein halbes Ja. Sam hat nicht wirklich gefragt.', mood: 'neutral' }, suggestiv: { t: '„Du hast doch nichts dagegen, oder?“', a: 'Yara: „Na ja … nein …?“ – Nein sagen ist jetzt schwer.', mood: 'neutral' }, gar: { t: '(Sam postet einfach.)', a: 'Yara sieht das Foto in der Gruppe. Niemand hat gefragt.', mood: 'wut' } },
+      nein: 'Lieber nicht. Ich seh da komisch aus.',
+      reakt: { annehmen: { t: '„Okay, kein Ding. Ich nehm ein anderes.“', a: 'Yara: „Danke! Das mit dem Baum ist gut, nimm das.“', mood: 'froh' }, ueberreden: { t: '„Ach komm, du siehst doch gut aus!“', a: 'Yara: „Ich hab Nein gesagt.“ Die Stimmung kippt.', mood: 'genervt' }, beleidigt: { t: '„Mann, mit dir kann man echt nichts machen.“', a: 'Yara fühlt sich schuldig – obwohl sie nur Nein gesagt hat.', mood: 'traurig' }, heimlich: { t: '(Sam postet es abends trotzdem.)', a: 'Yara sieht es. Das Vertrauen ist kaputt.', mood: 'wut' } } },
+    { id: 'umarmen', wer: 'mika', an: 'sam', lage: 'Sam hat Geburtstag. Mika will Sam zum Gratulieren umarmen.',
+      wie: { echt: { t: '„Umarmung oder lieber High Five?“' }, druck: { t: '„Komm her, Geburtstagskind!“ (Mika hat die Arme schon offen.)', a: 'Sam lässt es geschehen – und steht steif da.', mood: 'neutral' }, suggestiv: { t: '„Eine Umarmung ist doch okay, oder?“', a: 'Sam: „Ähm … ja …“ – das klingt nicht nach Ja.', mood: 'neutral' }, gar: { t: '(Mika umarmt Sam einfach.)', a: 'Sam zuckt zusammen.', mood: 'ueberrascht' } },
+      nein: 'High Five! Umarmen ist nicht so meins.',
+      reakt: { annehmen: { t: '„High Five! Alles Gute!“ ✋', a: 'Sam grinst: „Danke, Mika!“', mood: 'froh' }, ueberreden: { t: '„Ach komm, heute ist doch dein Geburtstag!“', a: 'Sam: „Nein, echt nicht.“ Peinliche Pause.', mood: 'genervt' }, beleidigt: { t: '„Wow. Okay. Dann halt nicht.“', a: 'Sam fühlt sich am eigenen Geburtstag blöd.', mood: 'traurig' }, heimlich: { t: '(Mika umarmt Sam später trotzdem, „aus Spaß“.)', a: 'Sam geht Mika auf der Feier aus dem Weg.', mood: 'wut' } } },
+    { id: 'handy', wer: 'luca', an: 'mika', lage: 'Luca will auf Mikas Handy die Fotos vom Ausflug anschauen.',
+      wie: { echt: { t: '„Darf ich die Ausflugs-Fotos anschauen? Du kannst auch Nein sagen.“' }, druck: { t: '„Gib mal her, ich will die Fotos sehen.“ (Luca greift schon zu.)', a: 'Mika lässt los – und schaut nervös zu.', mood: 'angst' }, suggestiv: { t: '„Ich darf doch kurz, oder?“', a: 'Mika: „Ähm … kurz …“ – ein halbes Ja.', mood: 'neutral' }, gar: { t: '(Luca nimmt das Handy vom Tisch.)', a: 'Mika: „Hey! Gib her!“', mood: 'wut' } },
+      nein: 'Lieber nicht. Ich schick dir die vom Ausflug.',
+      reakt: { annehmen: { t: '„Okay, schick sie mir, danke!“', a: 'Mika schickt fünf Fotos. Alles entspannt.', mood: 'froh' }, ueberreden: { t: '„Ach komm, ich schau nur die vom Ausflug!“', a: 'Mika: „Ich hab Nein gesagt.“ Luca rollt mit den Augen.', mood: 'genervt' }, beleidigt: { t: '„Was hast du denn zu verstecken?“', a: 'Mika fühlt sich ertappt – obwohl gar nichts ist.', mood: 'traurig' }, heimlich: { t: '(Luca schaut, als Mika kurz weg ist.)', a: 'Mika merkt es. Das war’s mit dem Vertrauen.', mood: 'wut' } } },
+  ];
+  const WIE_LABEL = { echt: 'Echt gefragt', druck: 'Mit Druck', suggestiv: 'Ja vorgegeben', gar: 'Nicht gefragt' };
+  const REAKT_LABEL = { annehmen: 'Nein angenommen', ueberreden: 'Überredet', beleidigt: 'Beleidigt', heimlich: 'Heimlich trotzdem' };
+
+  // Radar-Anzeige: Halbkreis grün / gelb / rot, die Nadel zeigt auf die Einstellung
+  function dial(sel, size) {
+    const el = h('div', { class: 'okr-dial' + (size === 'mini' ? ' mini' : ''), 'data-sel': sel || '' });
+    const w = sel ? RADAR[sel].winkel : 0;
+    el.innerHTML = '<svg viewBox="0 0 200 112" aria-hidden="true">'
+      + '<path class="okr-arc ok" d="M20 100 A80 80 0 0 1 60 30.72"/>'
+      + '<path class="okr-arc kommt" d="M60 30.72 A80 80 0 0 1 140 30.72"/>'
+      + '<path class="okr-arc nein" d="M140 30.72 A80 80 0 0 1 180 100"/>'
+      + '<g class="okr-needle" style="transform: rotate(' + (size === 'start' ? 0 : w) + 'deg)"><line x1="100" y1="100" x2="100" y2="36"/><circle cx="100" cy="100" r="9"/></g></svg>';
+    if (size !== 'mini') el.appendChild(h('div', { class: 'okr-dial-labels' }, h('span', null, 'okay'), h('span', null, 'kommt drauf an'), h('span', null, 'nicht okay')));
+    // Nadel einschwingen lassen
+    if (size === 'start' && sel) requestAnimationFrame(() => requestAnimationFrame(() => { const n = el.querySelector('.okr-needle'); if (n) n.style.transform = 'rotate(' + w + 'deg)'; }));
+    return el;
+  }
+  // Kompakte Aufgaben-Zeile (statt großer Karte), damit die Antworten sichtbar bleiben
+  const hint = (ctx, text, icon) => h('div', { class: 'kg-hint' }, CREW.icon(icon || 'chat', 24), h('span', { class: 'kg-hint-t' }, text), ctx.readBtn(text));
+  const szeneKarte = (ctx, s, eyebrow) => h('div', { class: 'okr-szene' },
+    h('span', { class: 'okr-bild', 'aria-hidden': 'true' }, s.bild),
+    h('div', { class: 'stack', style: { gap: '6px', minWidth: 0 } },
+      h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, eyebrow + ' · ' + ART[s.art]), ctx.readBtn(s.text)),
+      h('p', { class: 'okr-text' }, s.text)));
+
+  /* Level 1: eine Szene spüren. Liefert { s, wahl, worauf } oder null */
+  async function spueren(ctx, s, nr, total) {
+    const badge = ctx.stufe(1, LEVELS);
+    const w = ctx.scr([
+      szeneKarte(ctx, s, 'Szene ' + nr + ' von ' + total),
+      h('div', { class: 'okr-frage' }, dial(null), hint(ctx, 'Wenn dir das passiert: Wo steht dein Radar? Nur für dich.', 'target')),
+      ctx.safetyLine('Deine Einstellung bleibt auf diesem iPad. Nichts wird gespeichert.'),
+    ], { eyebrow: 'Szene ' + nr + ' · Spüren', badge });
+    const r = await ctx.ask(w, [
+      { label: 'okay', value: 'ok', variant: 'good', icon: 'check', id: 'okr-ok' },
+      { label: 'kommt drauf an', value: 'kommt', variant: 'yellow', icon: 'help', id: 'okr-kommt' },
+      { label: 'nicht okay', value: 'nein', variant: 'teamB', icon: 'x', id: 'okr-nein' },
+    ]);
+    if (r === ctx.SKIP) return null;
+    let worauf = null;
+    if (r === 'kommt') {
+      const w2 = ctx.scr([szeneKarte(ctx, s, 'Szene ' + nr), hint(ctx, 'Kommt drauf an – worauf kommt es für dich an?', 'help')], { eyebrow: 'Szene ' + nr + ' · Spüren', badge });
+      const r2 = await ctx.ask(w2, WORAUF.map((x) => ({ label: x, value: x, variant: 'ghost' })));
+      if (r2 !== ctx.SKIP) worauf = r2;
+    }
+    // Die Figuren zeigen ihr Radar
+    const figs = Object.keys(s.figs);
+    const arten = new Set(figs.map((f) => s.figs[f][0]));
+    const okF = figs.find((f) => s.figs[f][0] === 'ok'), neinF = figs.find((f) => s.figs[f][0] === 'nein');
+    const satz = okF && neinF ? 'Bei ' + ctx.figures[okF].name + ' okay, bei ' + ctx.figures[neinF].name + ' nicht. Beides gilt.' : 'Vier Figuren, ' + arten.size + ' Einstellungen. Alle gelten.';
+    const w3 = ctx.scr([
+      h('div', { class: 'okr-mein' }, dial(r, 'start'), h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Dein Radar'), h('b', { class: 'okr-mein-t' }, RADAR[r].label + (worauf ? ' – ' + worauf : '')), h('span', { class: 'muted small' }, s.kurz))),
+      h('div', { class: 'okr-figs' }, figs.map((f) => h('div', { class: 'okr-fig', 'data-sel': s.figs[f][0] },
+        ctx.avatar(f, s.figs[f][0] === 'nein' ? 'genervt' : s.figs[f][0] === 'ok' ? 'froh' : 'neutral', 56),
+        h('div', { class: 'stack', style: { gap: '2px', minWidth: 0 } }, h('b', null, ctx.figures[f].name + ': ' + RADAR[s.figs[f][0]].label), h('span', { class: 'small' }, s.figs[f][1]))))),
+      ctx.say(satz, { eyebrow: 'Die Figuren', small: true }),
+    ], { eyebrow: 'Szene ' + nr + ' · Radar', badge });
+    await ctx.next(w3, nr < total ? 'Nächste Szene' : 'Weiter');
+    return { s, wahl: r, worauf };
+  }
+
+  /* Level 2: Signale lesen – okay für die Figur? Was tut die andere? */
+  async function signale(ctx, sg) {
+    const badge = ctx.stufe(2, LEVELS);
+    const fig = ctx.figures[sg.fig], von = ctx.figures[sg.von];
+    const karte = () => ctx.figureCard({ fig: sg.fig, mood: sg.mood, text: sg.text, eyebrow: fig.name + ' sagt kein Wort' });
+    const w = ctx.scr([karte(), hint(ctx, 'Ist das für ' + fig.name + ' okay? Achtet auf den Körper.', 'eye')], { eyebrow: 'Signale lesen', badge });
+    const r = await ctx.ask(w, [{ label: 'Sieht okay aus', value: 'ok', variant: 'ghost', icon: 'check' }, { label: 'Unklar', value: 'kommt', variant: 'ghost', icon: 'help' }, { label: 'Sieht nicht okay aus', value: 'nein', variant: 'ghost', icon: 'x' }]);
+    if (r === ctx.SKIP) return null;
+    const gut = r !== 'ok';
+    const w2 = ctx.scr([
+      karte(),
+      h('div', { class: 'okr-signale' }, h('span', { class: 'eyebrow' }, 'Das sagt der Körper'), h('div', { class: 'row', style: { gap: '8px' } }, sg.signale.map((x) => h('span', { class: 'pill okr-signal' }, CREW.icon('eye', 14), x)))),
+      ctx.say(r === 'ok' ? 'Das Lächeln täuscht. Kein Nein heißt nicht Ja – schau auf die Signale.' : r === 'kommt' ? 'Unsicher? Genau dann hilft eins: fragen.' : 'Gut gelesen. Kein Wort – aber der Körper sagt: nicht okay.', { eyebrow: gut ? 'Gut hingeschaut' : 'Nochmal hinschauen', small: true }),
+    ], { eyebrow: 'Signale lesen', badge });
+    if ((await ctx.next(w2, 'Was macht ' + von.name + ' jetzt?')) === ctx.SKIP) return { gut, zug: null };
+    const order = ctx.rshuffle(Object.keys(sg.zuege));
+    let tries = 0, erster = null;
+    for (;;) {
+      const w3 = ctx.scr([karte(), hint(ctx, 'Und jetzt: Was macht ' + von.name + '?', 'chat')], { eyebrow: 'Signale lesen', badge });
+      const z = await ctx.ask(w3, order.map((k) => ({ label: sg.zuege[k].t, value: k, variant: 'ghost', id: 'okr-zug-' + k })), { autoPick: tries ? () => 'fragen' : undefined });
+      if (z === ctx.SKIP) return { gut, zug: erster };
+      tries++;
+      if (!erster) erster = z;
+      const Z = sg.zuege[z];
+      CREW.sound.play(z === 'fragen' ? 'great' : 'soft');
+      const w4 = ctx.scr([
+        h('div', { class: 'grid two' },
+          ctx.figureCard({ fig: sg.von, mood: z === 'fragen' ? 'neutral' : z === 'witz' ? 'froh' : 'neutral', text: Z.t, eyebrow: von.name + ' · ' + ZUG_LABEL[z] }),
+          ctx.figureCard({ fig: sg.fig, mood: Z.mood, text: Z.a, eyebrow: fig.name })),
+        h('div', { class: 'card stack soft' }, h('b', null, z === 'fragen' ? 'Nachfragen ist die sichere Seite: Jetzt weiß ' + von.name + ' Bescheid.' : 'Signale übergehen kostet Vertrauen – auch wenn es „nur Spaß“ war.'), h('p', { class: 'muted small', style: { margin: 0 } }, 'Wenn du unsicher bist, ob etwas okay ist: fragen. Am besten allein, nicht vor allen.')),
+      ], { eyebrow: 'Signale lesen · Folge', badge });
+      if (z === 'fragen' || tries >= 3) { await ctx.next(w4, 'Weiter'); return { gut, zug: erster }; }
+      const rr = await ctx.ask(w4, [{ label: 'Zurückspulen', value: 'rewind', variant: 'ghost', icon: 'undo', id: 'okr-rewind' }, { label: 'Weiter', value: 'next', iconRight: 'right', id: 'btn-next' }], { autoPick: () => 'rewind' });
+      if (rr !== 'rewind') return { gut, zug: erster };
+    }
+  }
+
+  /* Level 3: Wie fragt die Figur – und was tut sie mit dem Nein? */
+  async function fragen(ctx, f) {
+    const badge = ctx.stufe(3, LEVELS);
+    const wer = ctx.figures[f.wer], an = ctx.figures[f.an];
+    const lageKarte = () => ctx.figureCard({ fig: f.wer, mood: 'neutral', text: f.lage, eyebrow: wer.name + ' will etwas' });
+    const wieOrder = ctx.rshuffle(Object.keys(f.wie));
+    let wieErst = null;
+    for (let t = 0; ; t++) {
+      const w = ctx.scr([lageKarte(), hint(ctx, 'Schritt 1: Wie fragt ' + wer.name + '?', 'chat')], { eyebrow: 'Fragen', badge });
+      const r = await ctx.ask(w, wieOrder.map((k) => ({ label: f.wie[k].t, value: k, variant: 'ghost', id: 'okr-wie-' + k })), { autoPick: t ? () => 'echt' : undefined });
+      if (r === ctx.SKIP) return null;
+      if (!wieErst) wieErst = r;
+      if (r === 'echt') { CREW.sound.play('good'); break; }
+      CREW.sound.play('soft');
+      const W = f.wie[r];
+      const w2 = ctx.scr([
+        ctx.figureCard({ fig: f.an, mood: W.mood, text: W.a, eyebrow: an.name + ' · ' + WIE_LABEL[r] }),
+        h('div', { class: 'card stack soft' }, h('b', null, 'Ein halbes Ja ist kein Ja.'), h('p', { class: 'muted small', style: { margin: 0 } }, 'Echt fragen heißt: vorher fragen – und Nein ist erlaubt. Spulen wir zurück.')),
+      ], { eyebrow: 'Fragen · Folge', badge });
+      if ((await ctx.next(w2, 'Zurückspulen', { id: 'okr-rewind' })) === ctx.SKIP) return null;
+    }
+    // Schritt 2: Die andere Figur sagt Nein
+    const reaktOrder = ctx.rshuffle(Object.keys(f.reakt));
+    let reaktErst = null;
+    for (let t = 0; ; t++) {
+      const w3 = ctx.scr([
+        h('div', { class: 'grid two' },
+          ctx.figureCard({ fig: f.wer, mood: 'neutral', text: f.wie.echt.t, eyebrow: wer.name + ' fragt', chat: true }),
+          ctx.figureCard({ fig: f.an, mood: 'neutral', text: '„' + f.nein + '“', eyebrow: an.name + ' sagt Nein', chat: true })),
+        hint(ctx, 'Schritt 2: Was macht ' + wer.name + ' mit dem Nein?', 'shield'),
+      ], { eyebrow: 'Fragen', badge });
+      const r = await ctx.ask(w3, reaktOrder.map((k) => ({ label: f.reakt[k].t, value: k, variant: 'ghost', id: 'okr-reakt-' + k })), { autoPick: t ? () => 'annehmen' : undefined });
+      if (r === ctx.SKIP) return { wie: wieErst, reakt: reaktErst };
+      if (!reaktErst) reaktErst = r;
+      const R = f.reakt[r];
+      const ok = r === 'annehmen';
+      CREW.sound.play(ok ? 'great' : 'soft');
+      const w4 = ctx.scr([
+        ctx.figureCard({ fig: f.an, mood: R.mood, text: R.a, eyebrow: an.name + ' · ' + REAKT_LABEL[r] }),
+        h('div', { class: 'card stack soft' }, h('b', null, ok ? 'Fragen heißt auch: das Nein annehmen. Ohne Diskussion.' : 'Wer fragt, muss mit einem Nein rechnen – und es stehen lassen.'), h('p', { class: 'muted small', style: { margin: 0 } }, ok ? 'Genau so bleibt Vertrauen. Und ' + an.name + ' sagt beim nächsten Mal ehrlich Ja oder Nein.' : 'Überreden, beleidigt sein oder heimlich trotzdem – das macht aus dem Nein ein Problem für ' + an.name + '.')),
+      ], { eyebrow: 'Fragen · Folge', badge });
+      if (ok || t >= 2) { await ctx.next(w4, 'Weiter'); return { wie: wieErst, reakt: reaktErst }; }
+      const rr = await ctx.ask(w4, [{ label: 'Zurückspulen', value: 'rewind', variant: 'ghost', icon: 'undo', id: 'okr-rewind2' }, { label: 'Weiter', value: 'next', iconRight: 'right', id: 'btn-next' }], { autoPick: () => 'rewind' });
+      if (rr !== 'rewind') return { wie: wieErst, reakt: reaktErst };
+    }
+  }
+
+  CREW.registerGame({
+    id: 'okayradar',
+    template: 'T1',
+    icon: 'target',
+    themen: ['Grenzen', 'Einverständnis', 'Signale lesen', 'Unterschiede'],
+    safety: ['figuren', 'freiwillig'],
+    help: true,
+    szenen: SZENEN, signale: SIGNALE, fragen: FRAGEN, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Kurze Szenen. Du stellst heimlich dein Radar: okay, kommt drauf an oder nicht okay. Dann zeigen die Figuren ihres. Am Ende vergleicht ihr zu zweit.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'target', title: 'Radar stellen', text: 'Allein, nur für dich. Nichts wird gespeichert.' },
+          { icon: 'eye', title: 'Signale lesen', text: 'Ohne Worte: Ist es für die Figur okay?' },
+          { icon: 'chat', title: 'Fragen', text: 'Wie fragt man – und was tut man mit einem Nein?' },
+        ],
+        probe: ctx.T.probeCard('Probe: Jemand leiht sich deinen Stift, ohne zu fragen. Wo steht dein Radar? Tipp irgendwas – zählt nicht.', [{ label: 'okay', value: 'ok', variant: 'ghost' }, { label: 'kommt drauf an', value: 'kommt', variant: 'ghost' }, { label: 'nicht okay', value: 'nein', variant: 'ghost' }]),
+      });
+      await ctx.T.codeCheck();
+      // Level 1: je eine Szene Körper, Gefühl, Digital (Einheit j1-e22), gleiche Auswahl auf allen iPads
+      const l1 = ['koerper', 'gefuehl', 'digital'].map((a) => ctx.rpick(SZENEN.filter((s) => s.art === a)));
+      const wahl = [];
+      for (let i = 0; i < l1.length; i++) {
+        const r = await spueren(ctx, l1[i], i + 1, l1.length);
+        if (r) wahl.push(r);
+      }
+      await ctx.T.level({ n: 2, names: LEVELS, text: 'Jetzt geht es um die Grenzen der anderen. Eine Figur sagt kein Wort – aber ihr Körper sagt etwas. Ist es für sie okay?' });
+      const sg = ctx.rpick(SIGNALE.filter((x) => !l1.some((s) => s.id === x.id))) || SIGNALE[0];
+      const r2 = await signale(ctx, sg);
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Raten ist riskant. Eine Figur will etwas – wie fragt sie richtig? Und was macht sie, wenn die Antwort Nein ist?' });
+      const r3 = await fragen(ctx, ctx.rpick(FRAGEN));
+
+      // Austausch zu zweit
+      await ctx.T.pairScreen();
+      await ctx.T.vergleich({
+        title: 'Okay-Radar',
+        items: wahl.map((x) => ({ label: x.s.kurz, el: dial(x.wahl, 'mini'), text: 'Mein Radar: ' + RADAR[x.wahl].label + (x.worauf ? ' – ' + x.worauf : '') })),
+        questions: ['Bei dir okay, bei mir nicht? Sucht eine Szene, wo ihr verschieden seid.', 'Woran merkst du, dass etwas für andere nicht okay ist?'],
+        note: 'Bei dir okay, bei mir nicht. Beides gilt. Erzählen ist freiwillig.',
+      });
+      const gefragt = (r2 && r2.zug === 'fragen' ? 1 : 0) + (r3 && r3.wie === 'echt' ? 1 : 0);
+      return {
+        summary: 'Jede:r hat ein eigenes Radar. Bei dir okay, bei mir nicht – beides gilt. Und wer unsicher ist, fragt.',
+        stats: [[wahl.length, 'Radar gestellt'], [gefragt, 'mal gleich gefragt'], [r3 && r3.reakt === 'annehmen' ? 1 : 0, 'Nein angenommen']],
+        help: true,
+        extra: h('p', { class: 'muted small' }, 'War etwas für dich nicht okay? Skill-Karte „Mein sicherer Ort“: kurz im Kopf an deinen sicheren Ort – und dann mit jemandem reden, dem du vertraust.'),
+      };
+    },
+  });
+})();
+
+/* ---- games/kommunikation/stillepost.js ---- */
+/* Spiel „Stille Post ohne Worte“ (Thema: Kommunikation & Grenzen) · Vorlage T4 Bewegung im Raum · j1-e20
+   Die Crew steht in einer Reihe und schaut zur Wand. Nur die letzte Person sieht die Botschaft auf dem iPad
+   („genervt, 7“ oder „Warte hier!“). Sie gibt sie nur mit Gesicht und Körper weiter – geweckt wird die Person davor
+   mit dem Signalwort „Funk“ oder zweimal Klopfen auf den Tisch, nie mit Antippen. Vorne tippt die erste Person an,
+   was ankam; der Beamer zeigt Start und Ziel nebeneinander. Rückwärts-Check ohne Schuld: Welches Signal war unklar?
+   In drei Level: 1) Gefühl (Gefühl + Stärke), 2) Botschaft (eine Bitte), 3) Ein Wort (Gefühl + Bitte, jede Person darf
+   genau ein Wort dazu nehmen). Die Beobachter-Rolle wird ausdrücklich angeboten. Nur die Lehrkraft und die vorderste
+   Person tippen. */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  const GEFUEHLE = {
+    froh: { id: 'froh', label: 'froh', mood: 'froh' },
+    genervt: { id: 'genervt', label: 'genervt', mood: 'genervt' },
+    traurig: { id: 'traurig', label: 'traurig', mood: 'traurig' },
+    nervoes: { id: 'nervoes', label: 'nervös', mood: 'angst' },
+    wuetend: { id: 'wuetend', label: 'wütend', mood: 'wut' },
+    ueberrascht: { id: 'ueberrascht', label: 'überrascht', mood: 'ueberrascht' },
+  };
+  // „Nah dran“: Gefühle, die man ohne Worte leicht verwechselt
+  const NAH = { genervt: ['wuetend'], wuetend: ['genervt'], nervoes: ['ueberrascht', 'traurig'], ueberrascht: ['nervoes', 'froh'], traurig: ['nervoes'], froh: ['ueberrascht'] };
+  const BAND = { leicht: { id: 'leicht', label: 'leicht (1–3)' }, mittel: { id: 'mittel', label: 'mittel (4–6)' }, stark: { id: 'stark', label: 'stark (7–10)' } };
+  const band = (z) => (z <= 3 ? 'leicht' : z <= 6 ? 'mittel' : 'stark');
+
+  /* Level 1: Gefühl + Stärke */
+  const KARTEN = [
+    { gef: 'genervt', z: 7 }, { gef: 'froh', z: 3 }, { gef: 'nervoes', z: 8 },
+    { gef: 'traurig', z: 5 }, { gef: 'ueberrascht', z: 9 }, { gef: 'wuetend', z: 4 },
+  ];
+  /* Level 2: Bitten (tipp = Idee für die letzte Person, nur auf ihrem Bildschirm) */
+  const BITTEN = {
+    komm: { id: 'komm', t: 'Komm mit!', tipp: 'Winken, Kopf zur Seite, einen Schritt andeuten.' },
+    warte: { id: 'warte', t: 'Warte hier!', tipp: 'Hand flach nach unten, auf den Boden zeigen.' },
+    leise: { id: 'leise', t: 'Sei leise!', tipp: 'Finger an den Mund, Augen groß.' },
+    schau: { id: 'schau', t: 'Schau mal da!', tipp: 'Mit Blick und Kopf in eine Richtung zeigen.' },
+    hunger: { id: 'hunger', t: 'Ich hab Hunger.', tipp: 'Bauch halten, so tun, als ob du isst.' },
+    muede: { id: 'muede', t: 'Ich bin müde.', tipp: 'Gähnen, Kopf auf die Hände legen.' },
+    super: { id: 'super', t: 'Gut gemacht!', tipp: 'Daumen hoch, nicken, strahlen.' },
+    hilfe: { id: 'hilfe', t: 'Ich brauch Hilfe.', tipp: 'Hände offen nach vorn, fragender Blick.' },
+  };
+  /* Level 3: Gefühl + Bitte, ein Wort erlaubt */
+  const KOMBI = [
+    { gef: 'nervoes', bitte: 'komm', t: 'Ich bin nervös – komm bitte mit.' },
+    { gef: 'genervt', bitte: 'leise', t: 'Ich bin genervt – sei bitte leise.' },
+    { gef: 'froh', bitte: 'schau', t: 'Ich freu mich – schau mal da!' },
+    { gef: 'traurig', bitte: 'warte', t: 'Mir geht’s nicht gut – wartest du kurz?' },
+    { gef: 'ueberrascht', bitte: 'hilfe', t: 'Huch! Ich brauch Hilfe.' },
+  ];
+  const LEVELS = ['Gefühl', 'Botschaft', 'Ein Wort'];
+  const LEVEL_TEXT = {
+    2: 'Jetzt eine Bitte, kein Gefühl: „Warte hier!“ oder „Komm mit!“ – nur mit Körper. Vorne gibt es fünf ähnliche Bitten zur Auswahl.',
+    3: 'Gefühl und Bitte zusammen – das ist schwer. Darum darf jede Person in der Reihe genau EIN Wort dazu sagen. Welches nimmt ihr?',
+  };
+
+  // Botschafts-Karte: Figur mit Gesicht, Gefühl, Zahl (Level 1) oder Bitte (Level 2) oder beides (Level 3)
+  function botschaftKarte(ctx, b, o) {
+    const oo = o || {};
+    const g = b.gef ? GEFUEHLE[b.gef] : null;
+    const text = b.t || (g ? g.label + ' · ' + b.z : '');
+    return h('div', { class: 'sl-karte' + (oo.cls ? ' ' + oo.cls : '') },
+      h('div', { class: 'row between', style: { width: '100%' } }, h('span', { class: 'eyebrow' }, oo.eyebrow || 'Botschaft'), ctx.readBtn(oo.speak || text)),
+      g ? ctx.avatar('sam', g.mood, oo.small ? 72 : 110) : h('span', { class: 'sl-bitte-ic' }, CREW.icon('chat', oo.small ? 34 : 52)),
+      h('b', { class: 'sl-text display' }, text),
+      b.gef && b.z ? h('span', { class: 'pill' }, 'Stärke ' + b.z + ' von 10 · ' + BAND[band(b.z)].label) : null,
+      oo.tipp ? h('p', { class: 'muted small', style: { margin: 0 } }, 'Idee: ' + oo.tipp) : null);
+  }
+
+  /* Vorne: Was ist angekommen? Liefert { gef, band, bitte } (je nach Level) oder SKIP */
+  async function eingabe(ctx, L, start, nr) {
+    const out = {};
+    const badge = ctx.stufe(L, LEVELS);
+    if (L === 1 || L === 3) {
+      const w = ctx.scr([ctx.say('Vorderste Person: Welches Gefühl ist bei dir angekommen?', { eyebrow: 'Angekommen?', small: true }), CREW.ui.teacherLine('Die vorderste Person tippt – oder sagt es, und du tippst.')], { eyebrow: 'Runde ' + nr + ' · vorne', badge });
+      const ids = Object.keys(GEFUEHLE);
+      const r = await ctx.ask(w, ids.map((id) => ({ label: GEFUEHLE[id].label, value: id, variant: 'ghost', id: 'sl-gef-' + id })), { autoPick: ctx.autoRng() < 0.6 ? () => start.gef : undefined });
+      if (r === ctx.SKIP) return ctx.SKIP;
+      out.gef = r;
+    }
+    if (L === 1) {
+      const w = ctx.scr([ctx.say('Und wie stark?', { eyebrow: 'Angekommen?', small: true }), h('div', { class: 'row center' }, h('span', { class: 'pill' }, 'Gefühl: ' + GEFUEHLE[out.gef].label))], { eyebrow: 'Runde ' + nr + ' · vorne', badge });
+      const r = await ctx.ask(w, Object.values(BAND).map((b) => ({ label: b.label, value: b.id, variant: 'ghost', id: 'sl-band-' + b.id })), { autoPick: ctx.autoRng() < 0.5 ? () => band(start.z) : undefined });
+      if (r === ctx.SKIP) return ctx.SKIP;
+      out.band = r;
+    }
+    if (L === 2 || L === 3) {
+      const andere = ctx.rshuffle(Object.keys(BITTEN).filter((k) => k !== start.bitte)).slice(0, 4);
+      const opts = ctx.rshuffle([start.bitte].concat(andere));
+      const w = ctx.scr([ctx.say(L === 3 ? 'Und welche Bitte?' : 'Vorderste Person: Welche Bitte ist bei dir angekommen?', { eyebrow: 'Angekommen?', small: true }), out.gef ? h('div', { class: 'row center' }, h('span', { class: 'pill' }, 'Gefühl: ' + GEFUEHLE[out.gef].label)) : null], { eyebrow: 'Runde ' + nr + ' · vorne', badge });
+      const r = await ctx.ask(w, opts.map((k) => ({ label: BITTEN[k].t, value: k, variant: 'ghost', id: 'sl-bitte-' + k })), { autoPick: ctx.autoRng() < 0.6 ? () => start.bitte : undefined });
+      if (r === ctx.SKIP) return ctx.SKIP;
+      out.bitte = r;
+    }
+    return out;
+  }
+
+  /* Auswertung: Wie nah ist das Ziel am Start? 2 = angekommen, 1 = nah dran, 0 = unterwegs verändert */
+  function bewerten(L, start, ziel) {
+    const teile = [];
+    if (start.gef) teile.push(ziel.gef === start.gef ? 2 : (NAH[start.gef] || []).includes(ziel.gef) ? 1 : 0);
+    if (L === 1) teile.push(ziel.band === band(start.z) ? 2 : 1);
+    if (start.bitte) teile.push(ziel.bitte === start.bitte ? 2 : 0);
+    const min = Math.min(...teile);
+    const allesGleich = teile.every((x) => x === 2);
+    return { stufe: allesGleich ? 2 : min === 0 ? 0 : 1, teile };
+  }
+  const ERGEBNIS = {
+    2: { label: 'Angekommen!', text: 'Die Botschaft ist durch die ganze Reihe gekommen – ohne ein Wort.' },
+    1: { label: 'Nah dran', text: 'Die Richtung stimmt, ein Teil ist unterwegs verrutscht.' },
+    0: { label: 'Unterwegs verändert', text: 'Irgendwo in der Reihe ist eine andere Botschaft draus geworden. Ganz normal ohne Worte.' },
+  };
+
+  CREW.registerGame({
+    id: 'stillepost',
+    template: 'T4',
+    icon: 'eye',
+    themen: ['Körpersprache', 'Nonverbal', 'Gefühle zeigen', 'Missverständnis'],
+    safety: ['koerper', 'raum', 'freiwillig'],
+    help: false,
+    karten: KARTEN, bitten: BITTEN, kombi: KOMBI, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Eine Reihe, alle schauen zur Wand. Nur die letzte Person sieht die Botschaft – und gibt sie nur mit Gesicht und Körper weiter. Vorne wird getippt, was ankam.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'eyeOff', title: 'Nur hinten schaut', text: 'Die letzte Person sieht die Botschaft auf dem iPad.' },
+          { icon: 'users', title: 'Ohne Worte weiter', text: 'Signalwort „Funk“ oder zweimal Klopfen. Kein Antippen.' },
+          { icon: 'eye', title: 'Start und Ziel', text: 'Vorne wird getippt. Der Beamer zeigt beides.' },
+        ],
+        probe: async () => {
+          const slot = h('div', { class: 'row center walk-timer' });
+          const w = ctx.scr([h('div', { class: 'probe-tag' }, 'PROBE · zählt nicht · 10 Sekunden'),
+            botschaftKarte(ctx, { gef: 'froh', z: 5 }, { eyebrow: 'Alle gleichzeitig zeigen' }),
+            h('div', { class: 'row between' }, h('p', { class: 'muted', style: { margin: 0 } }, 'Alle zeigen „froh, 5“ – nur mit dem Gesicht. Kein Wort.'), slot)], { eyebrow: 'Probe' });
+          await ctx.timerOrButton(w, 10, [{ label: 'Gezeigt', value: 'ok', variant: 'ghost', icon: 'check' }], { movement: true, slot });
+        },
+      });
+
+      // Aufstellen: Reihe, Blick zur Wand, Beobachter:in anbieten, Signal statt Antippen
+      const wA = ctx.scr([
+        ctx.say('Stellt euch in eine Reihe, alle schauen zur Wand. Die letzte Person steht am iPad. Wer nicht mitlaufen mag, wird Beobachter:in.', { eyebrow: 'Aufstellen', small: true }),
+        h('div', { class: 'icon-cards' },
+          h('div', { class: 'icon-card' }, CREW.icon('users', 30), h('b', null, 'Reihe'), h('span', { class: 'muted small' }, 'Abstand: eine Armlänge.')),
+          h('div', { class: 'icon-card' }, CREW.icon('speaker', 30), h('b', null, 'Signal „Funk“'), h('span', { class: 'muted small' }, 'oder zweimal auf den Tisch klopfen – dann dreht sich die Person davor um.')),
+          h('div', { class: 'icon-card' }, CREW.icon('x', 30), h('b', null, 'Kein Antippen'), h('span', { class: 'muted small' }, 'Kein Wort, kein Anfassen.')),
+          h('div', { class: 'icon-card sl-beob' }, CREW.icon('eye', 30), h('b', null, 'Beobachter:in'), h('span', { class: 'muted small' }, 'steht seitlich und merkt sich: Wo verändert sich die Botschaft?'))),
+        h('div', { class: 'row' }, ctx.safetyLine('koerper'), ctx.safetyLine('raum')),
+      ], { eyebrow: 'Aufstellen' });
+      if ((await ctx.next(wA, 'Reihe steht')) === ctx.SKIP) return { summary: 'Heute keine Reihe. Nächstes Mal.', noNach: true };
+
+      // Drei Runden: Gefühl → Bitte → Gefühl + Bitte mit einem Wort (gleich auf allen Geräten durch den Tagescode)
+      const r1 = ctx.rpick(KARTEN);
+      const r2 = { bitte: ctx.rpick(Object.keys(BITTEN)) };
+      r2.t = BITTEN[r2.bitte].t;
+      const k3 = ctx.rpick(KOMBI.filter((k) => k.gef !== r1.gef && k.bitte !== r2.bitte)) || KOMBI[0];
+      const runden = [{ L: 1, start: r1 }, { L: 2, start: r2 }, { L: 3, start: k3 }];
+      const ergebnisse = [];
+      for (let i = 0; i < runden.length; i++) {
+        const { L, start } = runden[i];
+        const nr = i + 1;
+        const badge = ctx.stufe(L, LEVELS);
+        if (i > 0) await ctx.T.level({ n: L, names: LEVELS, text: LEVEL_TEXT[L] });
+        // 1) Nur die letzte Person schaut
+        const c = await ctx.T.cover({ who: 'Nur die letzte Person schaut', hint: 'Alle anderen schauen zur Wand. Beamer kurz aus oder zur Seite drehen.', eyebrow: 'Runde ' + nr, label: 'Ich bin die letzte Person' });
+        if (c === ctx.SKIP) continue;
+        const wS = ctx.scr([
+          botschaftKarte(ctx, start, { eyebrow: 'Deine Botschaft – nur für dich', tipp: L === 2 ? BITTEN[start.bitte].tipp : null }),
+          h('p', { class: 'muted', style: { margin: 0, textAlign: 'center' } }, L === 3 ? 'Merk dir Gefühl und Bitte. Du darfst gleich genau EIN Wort dazu sagen.' : 'Merk sie dir. Gleich zeigst du sie nur mit Gesicht und Körper.'),
+        ], { eyebrow: 'Runde ' + nr + ' · geheim', badge, center: true });
+        if ((await ctx.next(wS, 'Gemerkt – verdecken', { id: 'sl-gemerkt' })) === ctx.SKIP) continue;
+        // 2) Weitergeben
+        const slot = h('div', { class: 'row center walk-timer' });
+        const wW = ctx.scr([
+          ctx.say(L === 3 ? 'Weitergeben: Gesicht, Körper – und genau EIN Wort pro Person. Welches Wort hilft am meisten?' : 'Weitergeben ohne Worte: „Funk“ sagen oder klopfen, zeigen, umdrehen. Die Nächste ist dran.', { eyebrow: 'Weitergeben', small: true }),
+          h('div', { class: 'sl-kette', 'aria-label': 'Von hinten nach vorne' }, ['hinten', '…', '…', 'vorne'].flatMap((t, k) => [k ? h('span', { class: 'sl-pfeil-k', 'aria-hidden': 'true' }, '→') : null, h('span', { class: 'sl-glied' + (k === 0 ? ' start' : k === 3 ? ' ziel' : '') }, t)])),
+          h('div', { class: 'row between' }, h('p', { class: 'muted', style: { margin: 0 } }, 'Beobachter:in: Wo verändert sich etwas? Merken, nicht reinrufen.'), slot),
+          h('div', { class: 'row' }, ctx.safetyLine('koerper')),
+        ], { eyebrow: 'Runde ' + nr + ' · Reihe', badge });
+        const wr = await ctx.timerOrButton(wW, 60, [{ label: 'Vorne angekommen', value: 'da', variant: 'good', icon: 'check', id: 'sl-da' }], { movement: true, slot });
+        if (wr === ctx.SKIP) continue;
+        // 3) Vorne tippen, was ankam
+        const ziel = await eingabe(ctx, L, start, nr);
+        if (ziel === ctx.SKIP) continue;
+        const bew = bewerten(L, start, ziel);
+        ergebnisse.push({ L, stufe: bew.stufe });
+        CREW.sound.play(bew.stufe === 2 ? 'great' : bew.stufe === 1 ? 'good' : 'soft');
+        // 4) Start und Ziel am Beamer, Rückwärts-Check ohne Schuld
+        const zielBot = { gef: ziel.gef, z: null, t: ziel.bitte ? BITTEN[ziel.bitte].t : null };
+        if (L === 3 && ziel.gef) zielBot.t = GEFUEHLE[ziel.gef].label + ' · ' + BITTEN[ziel.bitte].t;
+        const w5 = ctx.scr([
+          h('div', { class: 'row center' }, h('span', { class: 'pill sl-ergebnis', 'data-stufe': String(bew.stufe), style: { fontSize: '1.2em' } }, ERGEBNIS[bew.stufe].label)),
+          h('div', { class: 'sl-vergleich' },
+            botschaftKarte(ctx, start, { eyebrow: 'Start (hinten)', small: true, cls: 'start' }),
+            h('span', { class: 'sl-pfeil display', 'aria-hidden': 'true' }, '→'),
+            L === 1
+              ? h('div', { class: 'sl-karte ziel' }, h('span', { class: 'eyebrow' }, 'Angekommen (vorne)'), ctx.avatar('sam', GEFUEHLE[ziel.gef].mood, 72), h('b', { class: 'sl-text display' }, GEFUEHLE[ziel.gef].label), h('span', { class: 'pill' }, BAND[ziel.band].label))
+              : botschaftKarte(ctx, zielBot, { eyebrow: 'Angekommen (vorne)', small: true, cls: 'ziel' })),
+          ctx.say(ERGEBNIS[bew.stufe].text + ' Rückwärts-Check: Von vorne nach hinten zeigt jede:r kurz, was er oder sie bekommen hat.', { eyebrow: 'Wo hat es sich verändert?', small: true }),
+          h('div', { class: 'card stack soft' }, h('b', null, 'Beobachter:in zuerst: Wo hat sich etwas verändert?'), h('p', { class: 'muted small', style: { margin: 0 } }, L === 3 ? 'Und: Welche Wörter wurden genommen? Welches hat geholfen?' : 'Nicht wer, sondern welches Signal: Was war unklar – Gesicht, Hände, Tempo?')),
+          CREW.ui.teacherLine('Niemanden vorführen. Nur Signale besprechen. Dann Weiter.'),
+        ], { eyebrow: 'Runde ' + nr + ' · Start und Ziel', badge });
+        await ctx.next(w5, i + 1 < runden.length ? 'Nächste Runde' : 'Weiter');
+      }
+
+      // Vergleich der Runden: Was ging ohne Worte, wo hat ein Wort geholfen?
+      if (ergebnisse.length) {
+        const wV = ctx.scr([
+          ctx.say('Was geht ohne Worte – und wann hilft ein Wort?', { eyebrow: 'Drei Runden', small: true }),
+          h('div', { class: 'sl-runden' }, ergebnisse.map((e) => h('div', { class: 'sl-runde', 'data-stufe': String(e.stufe) }, h('span', { class: 'eyebrow' }, 'Level ' + e.L + ' · ' + LEVELS[e.L - 1]), h('b', null, ERGEBNIS[e.stufe].label)))),
+          h('div', { class: 'card stack soft' }, h('b', null, 'Gefühle kommen oft an. Stärken und genaue Bitten sind schwer.'), h('p', { class: 'muted small', style: { margin: 0 } }, 'Darum: genau hinschauen – und im Zweifel ein Wort dazu. „Warte!“ ist schneller als jede Geste.')),
+          h('div', { class: 'row' }, h('span', { class: 'skill-chip karte' }, CREW.icon('sparkle', 14), 'Skill-Karte „Achtsames Hören“: ganz bei der anderen Person sein – mit Augen und Ohren')),
+        ], { eyebrow: 'Vergleich', badge: ctx.stufe(3, LEVELS) });
+        await ctx.next(wV, 'Weiter');
+      }
+      const an = ergebnisse.filter((e) => e.stufe === 2).length;
+      return {
+        summary: an >= 2 ? 'Angekommen! Körper und Gesicht sagen viel – und ein Wort rettet den Rest.' : ergebnisse.length ? 'Ohne Worte verrutscht viel. Darum hilft genau hinschauen – und manchmal ein Wort.' : 'Heute nur reingeschaut. Auch okay.',
+        stats: [[ergebnisse.length, 'Runden'], [an, 'mal angekommen']],
+      };
+    },
+  });
+})();
+
+/* ---- games/kommunikation/stoppcheck.js ---- */
+/* Spiel „Stopp-Check“ (Thema: Kommunikation & Grenzen) · Vorlage T3 Zu zweit an einem iPad · j1-e23 · Top
+   Eine Figur sagt Stopp – aber etwas stimmt nicht: Sie lächelt, schaut weg, ist zu leise, redet zu viel. Das Paar sucht
+   den Fehler wie im Wimmelbild (abwechselnd tippen) und baut das Stopp aus fünf Bausteinen neu: Haltung, Blick, Hand,
+   Stimme, kurze Worte. Zwei Finger bestätigen; das Gegenüber weicht sofort zurück – oder merkt es nicht gleich. Klar
+   gesagt wird immer: Jedes Stopp gilt, auch ein wackeliges. In drei Level:
+   1) Fehler finden – ein Fehler, dann neu bauen.
+   2) Zwei Fehler – subtiler (zu viel reden, halb weggedreht, Hände in den Taschen).
+   3) Nachhaken – das Gegenüber bohrt nach: zweites Stopp wählen; hört es nicht auf: drittes Stopp = weggehen und
+      Hilfe holen (die drei Stopps der Stunde j1-e23).
+   Ausprobieren nur Richtung Wand, nie zur anderen Person. Kein Körperkontakt. */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  /* Fünf Bausteine. ok = klares Stopp, falsch = Fehler fürs Wimmelbild (catalog: lächelt, schaut weg, zu leise, redet zu
+     viel), extra = weitere falsche Bausteine nur zum Neubauen. „{an}“ wird durch das Gegenüber ersetzt. */
+  const TEILE = [
+    { id: 'haltung', label: 'Haltung', icon: 'user', ok: 'steht gerade, Füße fest', falsch: ['Schultern hängen', 'dreht sich halb weg'], extra: [] },
+    { id: 'blick', label: 'Blick', icon: 'eye', ok: 'schaut {an} ernst an', falsch: ['lächelt dabei', 'schaut auf den Boden'], extra: [] },
+    { id: 'hand', label: 'Hand', icon: 'shield', ok: 'Hand flach nach vorn', falsch: ['Hände in den Taschen', 'spielt mit den Haaren'], extra: ['droht mit der Faust'] },
+    { id: 'stimme', label: 'Stimme', icon: 'speaker', ok: 'laut und ruhig', falsch: ['ganz leise', 'kichert dabei'], extra: [] },
+    { id: 'worte', label: 'Worte', icon: 'chat', ok: '„Stopp. Das will ich nicht.“', falsch: ['„Ähm, also, sorry, vielleicht könntest du eventuell …“', '„Hihi, lass das mal … oder so.“'], extra: ['„Stopp, du Idiot!“'] },
+  ];
+  const BY = Object.fromEntries(TEILE.map((t) => [t.id, t]));
+  /* Fehler-Sets pro Level: Level 1 die vier Fehler aus dem Katalog (einer), Level 2 je zwei, eher subtil */
+  const FEHLER_L1 = [{ blick: 0 }, { blick: 1 }, { stimme: 0 }, { worte: 0 }];
+  const FEHLER_L2 = [{ haltung: 1, worte: 0 }, { hand: 0, blick: 0 }, { haltung: 0, stimme: 0 }, { hand: 1, worte: 1 }, { blick: 1, stimme: 1 }];
+
+  /* Szenen: Wer setzt die Grenze (fig) bei wem (an)? weiter / zurueck = Reaktion des Gegenübers. nachhaken = zwei Sätze. */
+  const SZENEN = [
+    { id: 'handy', fig: 'yara', an: 'sam', text: 'Sam nimmt Yaras Handy und scrollt durch ihre Fotos.', zurueck: 'Sam gibt das Handy sofort zurück: „Sorry.“', zoegert: 'Sam stutzt: „Echt jetzt?“ – und gibt es dann zurück.', weiter: 'Sam merkt es nicht richtig und scrollt weiter.', nachhaken: ['Chill, ich schau doch nur!', 'Was hast du denn zu verstecken?'] },
+    { id: 'piksen', fig: 'mika', an: 'luca', text: 'Luca piekst Mika in der Pause immer wieder in die Seite. „Nur Spaß!“', zurueck: 'Luca hört sofort auf und geht einen Schritt zurück.', zoegert: 'Luca stutzt: „Oh. Okay.“ – und hört dann auf.', weiter: 'Luca merkt es nicht richtig und piekst nochmal.', nachhaken: ['Ey, war doch nur Spaß!', 'Sei nicht so empfindlich.'] },
+    { id: 'video', fig: 'sam', an: 'mika', text: 'Mika filmt Sam beim Tanzen und will das Video in die Gruppe schicken.', zurueck: 'Mika löscht das Video vor Sams Augen.', zoegert: 'Mika zögert: „Wirklich nicht?“ – und löscht es dann.', weiter: 'Mika merkt es nicht richtig und tippt schon auf Senden.', nachhaken: ['Aber das ist voll lustig!', 'Nur an drei Leute, versprochen.'] },
+    { id: 'bus', fig: 'luca', an: 'yara', text: 'Im fast leeren Bus rückt Yara immer näher an Luca heran.', zurueck: 'Yara rutscht sofort einen Platz weiter.', zoegert: 'Yara stutzt: „Oh, sorry.“ – und rückt dann weg.', weiter: 'Yara merkt es nicht richtig und bleibt kleben.', nachhaken: ['Wieso, ist doch gemütlich!', 'Hast du ein Problem mit mir?'] },
+    { id: 'spitzname', fig: 'sam', an: 'luca', text: 'Luca nennt Sam vor allen „Zwerg“ – schon zum dritten Mal heute.', zurueck: 'Luca: „Okay. Sorry, Sam.“', zoegert: 'Luca stutzt: „Ernsthaft?“ – „Okay, sorry.“', weiter: 'Luca merkt es nicht richtig: „Okay, Zwerg.“', nachhaken: ['Ist doch nur ein Spitzname!', 'Alle nennen dich so.'] },
+  ];
+  /* Level 3: zweites und drittes Stopp */
+  const STOPP2 = [
+    { k: 'wiederholen', t: '„Stopp. Ich hab Nein gesagt.“', ok: true, warum: 'Kurz wiederholen – nicht diskutieren. Das zweite Stopp ist kürzer, nicht länger.' },
+    { k: 'erklaeren', t: '„Weil … also … ich find das halt nicht so gut, weil …“', ok: false, warum: 'Rechtfertigen öffnet die Diskussion. Ein Nein braucht keinen Grund.' },
+    { k: 'nachgeben', t: '„Na gut, aber nur kurz.“', ok: false, warum: 'Nachgeben zeigt: Nachbohren lohnt sich. Das nächste Mal wird es schwerer.' },
+    { k: 'angriff', t: '„Halt die Klappe, du Freak!“', ok: false, warum: 'Der Angriff macht aus der Grenze einen Streit. Das Thema geht unter.' },
+  ];
+  const STOPP3 = [
+    { k: 'gehen', t: 'Weggehen und einer erwachsenen Person Bescheid sagen.', ok: true, warum: 'Das dritte Stopp: gehen und Hilfe holen. Das ist kein Verlieren – das ist stark.' },
+    { k: 'bleiben', t: 'Bleiben und weiter diskutieren.', ok: false, warum: 'Wer nach zwei Stopps weitermacht, hört gerade nicht zu. Reden bringt hier nichts mehr.' },
+    { k: 'rache', t: 'Zurück ärgern, damit es fair ist.', ok: false, warum: 'Rache macht aus einer Grenzverletzung zwei. Und am Ende hast du Ärger.' },
+  ];
+  const LEVELS = ['Fehler finden', 'Zwei Fehler', 'Nachhaken'];
+  const ersetze = (t, an) => t.replace('{an}', an);
+  const zitat = (t) => (/^„/.test(t) ? t : '„' + t + '“');
+
+  // Kompakte Aufgaben-Zeile (statt großer Karte), damit die Antworten sichtbar bleiben
+  const hint = (ctx, text, icon) => h('div', { class: 'kg-hint' }, CREW.icon(icon || 'chat', 24), h('span', { class: 'kg-hint-t' }, text), ctx.readBtn(text));
+  /* Zustand des Stopp-Bilds: { teil: index } heißt „dieser Baustein ist falsch (Variante index)“ */
+  function zustand(fehler) {
+    const st = {};
+    TEILE.forEach((t) => { st[t.id] = fehler[t.id] != null ? { ok: false, t: t.falsch[fehler[t.id]] } : { ok: true, t: t.ok }; });
+    return st;
+  }
+  const gesicht = (st) => (st.blick.t === 'lächelt dabei' ? 'froh' : st.blick.t === 'schaut auf den Boden' ? 'traurig' : st.stimme.t === 'kichert dabei' ? 'froh' : 'genervt');
+
+  /* Das Wimmelbild: Figur in der Mitte, Sprechblase (Worte + Stimme), fünf Bausteine zum Antippen */
+  function stoppBild(ctx, sz, st, o) {
+    const oo = o || {};
+    const an = ctx.figures[sz.an].name;
+    const leise = st.stimme.t === 'ganz leise', kichern = st.stimme.t === 'kichert dabei';
+    const worte = st.worte.t.replace(/^„|“$/g, '');
+    const blase = h('div', { class: 'stc-blase' + (leise ? ' leise' : '') + (kichern ? ' kichern' : '') }, worte);
+    const hot = TEILE.map((t) => {
+      const b = h('button', { type: 'button', class: 'stc-hot', 'data-teil': t.id, 'aria-label': t.label + ': ' + ersetze(st[t.id].t, an) },
+        h('span', { class: 'stc-hot-ic' }, CREW.icon(t.icon, 22)),
+        h('span', { class: 'stc-hot-t' }, h('b', null, t.label), h('span', null, ersetze(st[t.id].t, an))),
+        h('span', { class: 'stc-hot-mark', 'aria-hidden': 'true' }));
+      if (oo.onTap) b.addEventListener('click', () => oo.onTap(t.id, b));
+      else b.disabled = true;
+      return b;
+    });
+    return h('div', { class: 'stc-bild' + (st.haltung.t === 'dreht sich halb weg' ? ' weg' : '') + (st.haltung.t === 'Schultern hängen' ? ' haengt' : '') },
+      h('div', { class: 'stc-mitte' }, blase, h('div', { class: 'stc-fig' }, ctx.avatar(sz.fig, gesicht(st), 120)), h('b', { class: 'fig-name' }, ctx.figures[sz.fig].name + ' zu ' + an)),
+      h('div', { class: 'stc-hots' }, hot));
+  }
+
+  /* Wimmelbild: Fehler suchen, abwechselnd tippen. Liefert { gefunden, fehlTipps } oder SKIP */
+  function fehlerSuchen(ctx, sz, fehler, L, nr) {
+    const st = zustand(fehler);
+    const ziel = Object.keys(fehler);
+    return ctx.waitFor(new Promise((resolve) => {
+      const gefunden = new Set();
+      let fehlTipps = 0, zug = 0, done = false;
+      const zaehler = h('span', { class: 'pill accent' }, 'Fehler: 0 von ' + ziel.length);
+      const dran = h('span', { class: 'pill stc-dran', 'data-dran': 'links' }, 'Links ist dran');
+      const onTap = (id, b) => {
+        if (done || b.classList.contains('found') || b.classList.contains('passt')) return;
+        zug++;
+        dran.dataset.dran = zug % 2 ? 'rechts' : 'links';
+        dran.textContent = (zug % 2 ? 'Rechts' : 'Links') + ' ist dran';
+        if (ziel.includes(id)) {
+          gefunden.add(id); b.classList.add('found'); CREW.sound.play('good');
+          zaehler.textContent = 'Fehler: ' + gefunden.size + ' von ' + ziel.length;
+          if (gefunden.size === ziel.length) { done = true; CREW.sound.play('great'); setTimeout(() => resolve({ gefunden: gefunden.size, fehlTipps }), ctx.auto ? 30 : 700); }
+        } else { fehlTipps++; b.classList.add('passt'); CREW.sound.play('soft'); }
+      };
+      const bild = stoppBild(ctx, sz, st, { onTap });
+      const w = ctx.scr([
+        h('div', { class: 'stc-lage' }, ctx.avatar(sz.an, 'neutral', 44), h('span', null, sz.text), ctx.readBtn(sz.text)),
+        bild,
+        h('div', { class: 'row between' }, h('p', { class: 'muted', style: { margin: 0 } }, L === 1 ? 'Ein Baustein passt nicht zum Stopp. Abwechselnd antippen.' : 'Zwei Bausteine passen nicht. Abwechselnd antippen – „passt“ ist kein Fehler.'), h('div', { class: 'row', style: { gap: '8px' } }, dran, zaehler)),
+      ], { eyebrow: 'Stopp ' + nr + ' · Fehler suchen', badge: ctx.stufe(L, LEVELS) });
+      if (ctx.auto) {
+        const order = TEILE.map((t) => t.id).sort(() => ctx.autoRng() - 0.5);
+        let k = 0;
+        const tick = () => { if (done || !w.isConnected) return; const b = w.querySelector('.stc-hot[data-teil="' + order[k++] + '"]'); if (b) b.click(); if (k < order.length) setTimeout(tick, 40); };
+        setTimeout(tick, Math.max(40, window.__crewAutoDelay || 0));
+      }
+    }));
+  }
+
+  /* Neu bauen: pro Baustein drei Möglichkeiten (eine klar), zwei Finger. Liefert { wahl:{id:ok?}, richtig } oder SKIP */
+  async function neuBauen(ctx, sz, L, nr, versuch) {
+    const an = ctx.figures[sz.an].name;
+    const wahl = {}, wahlT = {};
+    const rows = TEILE.map((t) => {
+      const opts = ctx.rshuffle([{ t: ersetze(t.ok, an), ok: true }].concat(ctx.rshuffle(t.falsch.concat(t.extra)).slice(0, 2).map((x) => ({ t: x, ok: false }))));
+      const row = h('div', { class: 'stc-bau-row', 'data-teil': t.id },
+        h('span', { class: 'stc-bau-l' }, CREW.icon(t.icon, 20), h('b', null, t.label)),
+        h('div', { class: 'stc-bau-opts' }, opts.map((o) => {
+          const b = h('button', { type: 'button', class: 'chip stc-bau-chip', 'data-ok': o.ok ? '1' : '0' }, o.t);
+          b.addEventListener('click', () => { CREW.sound.play('tap'); wahl[t.id] = o.ok; wahlT[t.id] = o.t; row.querySelectorAll('.chip').forEach((c) => c.classList.toggle('sel', c === b)); });
+          return b;
+        })));
+      return row;
+    });
+    const w = ctx.scr([
+      hint(ctx, (versuch > 1 ? 'Nochmal: ' : '') + 'Baut das Stopp neu – pro Baustein eine Karte. Dann beide Finger drauf.', 'shield'),
+      h('div', { class: 'stc-bau' }, rows),
+    ], { eyebrow: 'Stopp ' + nr + ' · Bauen', badge: ctx.stufe(L, LEVELS) });
+    if (ctx.auto) rows.forEach((row) => { const want = versuch > 1 || ctx.autoRng() < 0.7 ? '1' : '0'; const b = row.querySelector('.chip[data-ok="' + want + '"]'); if (b) b.click(); });
+    for (;;) {
+      const r = await ctx.T.twoFinger(w, { label: 'Beide einig: Finger drauf', hint: 'Erst alle fünf Bausteine wählen.' });
+      if (r === ctx.SKIP) return ctx.SKIP;
+      if (Object.keys(wahl).length === TEILE.length) break;
+      CREW.ui.toast('Noch nicht alle fünf Bausteine gewählt.');
+      w.querySelector('.two-finger') && w.querySelector('.two-finger').remove();
+    }
+    return { wahl, wahlT, richtig: TEILE.filter((t) => wahl[t.id]).length };
+  }
+
+  /* Wirkung des neuen Stopps: 5 = sofort zurück, 4 = zögert, sonst merkt es nicht gleich. Jedes Stopp gilt! */
+  async function wirkung(ctx, sz, bau, L, nr, letzter) {
+    const an = ctx.figures[sz.an];
+    const falsch = TEILE.filter((t) => !bau.wahl[t.id]);
+    const n = bau.richtig;
+    const text = n === 5 ? sz.zurueck : n === 4 ? sz.zoegert : sz.weiter;
+    CREW.sound.play(n === 5 ? 'great' : n === 4 ? 'good' : 'soft');
+    const w = ctx.scr([
+      h('div', { class: 'row center' }, h('span', { class: 'pill ' + (n === 5 ? 'good' : ''), style: { fontSize: '1.15em' } }, n + ' von 5 Bausteinen klar')),
+      h('div', { class: 'grid two' },
+        ctx.figureCard({ fig: sz.fig, mood: n >= 4 ? 'genervt' : 'neutral', text: bau.wahlT.worte || '„Stopp.“', eyebrow: ctx.figures[sz.fig].name + ' sagt Stopp', chat: true,
+          extra: h('div', { class: 'row', style: { gap: '6px' } }, TEILE.filter((t) => t.id !== 'worte').map((t) => h('span', { class: 'pill stc-ist' + (bau.wahl[t.id] ? ' ok' : ''), 'data-teil': t.id }, CREW.icon(t.icon, 14), bau.wahlT[t.id]))) }),
+        ctx.figureCard({ fig: sz.an, mood: n === 5 ? 'ueberrascht' : n === 4 ? 'neutral' : 'froh', text: text, eyebrow: an.name + ' reagiert' })),
+      falsch.length ? h('div', { class: 'card stack soft' }, h('b', null, 'Gemischtes Signal: ' + falsch.map((t) => t.label).join(', ')), h('p', { class: 'muted small', style: { margin: 0 } }, 'Worte sagen Stopp, der Körper sagt etwas anderes. Darum kommt es schwerer an.')) : h('p', { class: 'muted small' }, 'Körper und Worte sagen dasselbe. Das kommt sofort an.'),
+      h('div', { class: 'stc-gilt' }, CREW.icon('shield', 26), h('div', { class: 'stack', style: { gap: '2px' } }, h('b', null, 'Wichtig: Jedes Stopp gilt – auch ein leises oder wackeliges.'), h('span', { class: 'small' }, 'Wer Stopp hört, hört auf. Wenn ' + an.name + ' weitermacht, ist das nicht die Schuld von ' + ctx.figures[sz.fig].name + '. Ein klares Stopp kommt nur schneller an.'))),
+    ], { eyebrow: 'Stopp ' + nr + ' · Wirkung', badge: ctx.stufe(L, LEVELS) });
+    if (n === 5) { await ctx.next(w, letzter ? 'Weiter' : 'Nächstes Stopp'); return 'ok'; }
+    return ctx.ask(w, [{ label: 'Nochmal bauen', value: 'again', variant: 'ghost', icon: 'undo', id: 'stc-again' }, { label: 'Weiter', value: 'next', iconRight: 'right', id: 'btn-next' }], { autoPick: () => 'again' });
+  }
+
+  /* Ein Stopp komplett: suchen → bauen → Wirkung (Nochmal bauen erlaubt) */
+  async function runde(ctx, sz, fehler, L, nr, letzter) {
+    const f = await fehlerSuchen(ctx, sz, fehler, L, nr);
+    if (f === ctx.SKIP) return null;
+    // Auflösung der Fehler
+    const st = zustand(fehler);
+    const an = ctx.figures[sz.an].name;
+    const w = ctx.scr([
+      stoppBild(ctx, sz, st, {}),
+      h('div', { class: 'stack' }, Object.keys(fehler).map((id) => h('div', { class: 'card row stc-loes', style: { gap: '10px', alignItems: 'center' } }, CREW.icon(BY[id].icon, 22), h('span', null, h('b', null, BY[id].label + ': '), zitat(ersetze(st[id].t, an)) + ' passt nicht zum Stopp. Klar wäre: ' + ersetze(BY[id].ok, an) + '.')))),
+    ], { eyebrow: 'Stopp ' + nr + ' · Gefunden', badge: ctx.stufe(L, LEVELS) });
+    if ((await ctx.next(w, 'Neu bauen')) === ctx.SKIP) return { fehlTipps: f.fehlTipps, richtig: 0 };
+    let bau = null;
+    for (let v = 1; v <= 3; v++) {
+      bau = await neuBauen(ctx, sz, L, nr, v);
+      if (bau === ctx.SKIP) return { fehlTipps: f.fehlTipps, richtig: 0 };
+      const r = await wirkung(ctx, sz, bau, L, nr, letzter);
+      if (r !== 'again') break;
+    }
+    return { fehlTipps: f.fehlTipps, richtig: bau.richtig };
+  }
+
+  /* Level 3: Nachhaken – zweites Stopp, dann drittes (gehen und Hilfe holen) */
+  async function nachhaken(ctx, sz) {
+    const badge = ctx.stufe(3, LEVELS);
+    const fig = ctx.figures[sz.fig], an = ctx.figures[sz.an];
+    const out = { s2: null, s3: null };
+    for (const [stufe, liste, satz] of [[2, STOPP2, sz.nachhaken[0]], [3, STOPP3, sz.nachhaken[1]]]) {
+      const opts = ctx.rshuffle(liste);
+      let pick = null;
+      const w = ctx.scr([
+        h('div', { class: 'grid two' },
+          ctx.figureCard({ fig: sz.fig, mood: 'genervt', text: stufe === 2 ? '„Stopp. Das will ich nicht.“' : '„Stopp. Ich hab Nein gesagt.“', eyebrow: fig.name + (stufe === 2 ? ' hat Stopp gesagt' : ' hat es wiederholt'), chat: true }),
+          ctx.figureCard({ fig: sz.an, mood: 'froh', text: '„' + satz + '“', eyebrow: an.name + ' bohrt nach', chat: true })),
+        hint(ctx, stufe === 2 ? 'Stopp 2: Was sagt ' + fig.name + ' jetzt? Einigt euch.' : 'Stopp 3: ' + an.name + ' hört immer noch nicht auf. Was macht ' + fig.name + '?', 'shield'),
+      ], { eyebrow: 'Nachhaken · Stopp ' + stufe, badge });
+      const row = h('div', { class: 'stack' }, opts.map((o) => { const b = h('button', { type: 'button', class: 'chip stc-wahl', 'data-wahl': o.k }, o.t); b.addEventListener('click', () => { CREW.sound.play('tap'); pick = o; row.querySelectorAll('.chip').forEach((c) => c.classList.toggle('sel', c === b)); }); return b; }));
+      w.appendChild(h('div', { class: 'card' }, row));
+      if (ctx.auto) pick = opts[Math.floor(ctx.autoRng() * opts.length)];
+      let r;
+      for (;;) {
+        r = await ctx.T.twoFinger(w, { label: 'Beide einig: Finger drauf', hint: 'Erst eine Antwort antippen.' });
+        if (r === ctx.SKIP || pick) break;
+        CREW.ui.toast('Erst eine Antwort antippen.');
+        const z = w.querySelector('.two-finger'); if (z) z.remove();
+      }
+      if (r === ctx.SKIP) return out;
+      out['s' + stufe] = pick.k;
+      CREW.sound.play(pick.ok ? 'great' : 'soft');
+      const w2 = ctx.scr([
+        h('div', { class: 'row center' }, h('span', { class: 'pill ' + (pick.ok ? 'good' : '') }, pick.ok ? 'Starkes Stopp ' + stufe : 'Schwieriger Weg')),
+        ctx.figureCard({ fig: sz.fig, mood: pick.ok ? 'genervt' : 'traurig', text: pick.t, eyebrow: fig.name, chat: true }),
+        h('div', { class: 'card stack soft' }, h('b', null, pick.warum), pick.ok ? null : h('p', { class: 'muted small', style: { margin: 0 } }, 'Besser: ' + liste.find((x) => x.ok).t)),
+      ], { eyebrow: 'Nachhaken · Stopp ' + stufe, badge });
+      await ctx.next(w2, stufe === 2 ? 'Und dann?' : 'Weiter');
+    }
+    // Die drei Stopps aus der Stunde
+    const w3 = ctx.scr([
+      ctx.say('Die drei Stopps: 1. Stopp sagen – mit Körper und Worten. 2. Kurz wiederholen, nicht diskutieren. 3. Weggehen und Hilfe holen.', { eyebrow: 'Drei Stopps', small: true }),
+      h('div', { class: 'stc-drei' }, ['Stopp sagen', 'Wiederholen', 'Gehen + Hilfe'].map((t, i) => h('div', { class: 'stc-drei-s' }, h('b', { class: 'display' }, String(i + 1)), h('span', null, t)))),
+      h('div', { class: 'row' }, h('span', { class: 'skill-chip karte' }, CREW.icon('sparkle', 14), 'Skill-Karte „Fester Stand“: Füße fest, Schultern locker, Blick geradeaus – dann Stopp')),
+    ], { eyebrow: 'Nachhaken', badge });
+    await ctx.next(w3, 'Weiter');
+    return out;
+  }
+
+  CREW.registerGame({
+    id: 'stoppcheck',
+    template: 'T3',
+    icon: 'shield',
+    themen: ['Grenzen setzen', 'Stopp sagen', 'Körpersprache', 'Nachhaken'],
+    safety: ['figuren', 'koerper', 'freiwillig'],
+    help: true,
+    teile: TEILE, szenen: SZENEN, fehlerL1: FEHLER_L1, fehlerL2: FEHLER_L2, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Zu zweit, nebeneinander. Eine Figur sagt Stopp – aber etwas passt nicht. Findet den Fehler und baut ein Stopp, das sofort ankommt.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'eye', title: 'Fehler finden', text: 'Abwechselnd tippen: Was passt nicht?' },
+          { icon: 'shield', title: 'Neu bauen', text: 'Haltung, Blick, Hand, Stimme, Worte. Zwei Finger.' },
+          { icon: 'chat', title: 'Nachhaken', text: 'Das zweite Stopp – und wenn nötig das dritte.' },
+        ],
+        probe: ctx.T.probeCard('Probe: Eine Figur sagt „Stopp“ und grinst dabei breit. Kommt das an? Tippt irgendwas – zählt nicht.', [{ label: 'Kommt an', value: 1, variant: 'ghost' }, { label: 'Kommt schwer an', value: 2, variant: 'ghost' }]),
+      });
+      const szenen = ctx.rshuffle(SZENEN);
+      const s1 = szenen[0], s2 = szenen[1];
+      const f1 = ctx.rpick(FEHLER_L1), f2 = ctx.rpick(FEHLER_L2);
+      const r1 = await runde(ctx, s1, f1, 1, 1, false);
+      // Freiwillig ausprobieren – Richtung Wand, nicht zur anderen Person
+      if (r1 && r1.richtig === 5) {
+        const w = ctx.scr([
+          ctx.say('Wer mag, zeigt das Stopp einmal: aufstehen, Füße fest, Hand flach – Richtung Wand, nicht zur anderen Person.', { eyebrow: 'Ausprobieren', small: true }),
+          h('div', { class: 'row' }, ctx.safetyLine('koerper'), ctx.safetyLine('freiwillig')),
+        ], { eyebrow: 'Ausprobieren', badge: ctx.stufe(1, LEVELS), center: true });
+        await ctx.ask(w, [{ label: 'Heute nicht', value: 'pass', variant: 'ghost', icon: 'x', auto: false }, { label: 'Gezeigt', value: 'ok', iconRight: 'right', id: 'stc-gezeigt' }]);
+      }
+      await ctx.T.level({ n: 2, names: LEVELS, text: 'Jetzt stecken zwei Fehler im Bild – und sie sind leiser: zu viel reden, halb weggedreht, Hände in den Taschen.' });
+      const r2 = await runde(ctx, s2, f2, 2, 2, true);
+      await ctx.T.level({ n: 3, names: LEVELS, text: ctx.figures[s2.an].name + ' bohrt nach. Ein Stopp reicht nicht immer. Was ist das zweite Stopp – und was das dritte?' });
+      const r3 = await nachhaken(ctx, s2);
+      const klar = [r1, r2].filter((r) => r && r.richtig === 5).length;
+      return {
+        summary: klar === 2 && r3.s2 === 'wiederholen' ? 'Stopp-Check bestanden: Körper und Worte sagen dasselbe – auch beim zweiten Mal.' : 'Jedes Stopp gilt. Ein klares kommt schneller an – und das zweite ist kürzer, nicht länger.',
+        stats: [[klar, 'klare Stopps gebaut'], [r3.s2 === 'wiederholen' ? 1 : 0, 'zweites Stopp gehalten'], [r3.s3 === 'gehen' ? 1 : 0, 'Hilfe geholt']],
+        help: true,
+      };
+    },
+  });
+})();
+
+/* ---- games/kommunikation/uebersetzer.js ---- */
+/* Spiel „Übersetzer“ (Thema: Kommunikation & Grenzen) · Vorlage T3 Zu zweit an einem iPad · j1-e20
+   Umgebaut nach der Kritik (kein Daumen-Zählen): Eine Chat-Nachricht einer Figur („ok 👍“, „ja klar.“, „mach doch 🙃“).
+   Beide tippen verdeckt nebeneinander, wie sie sie lesen (nett / ironisch / sauer / egal) – Hand drüber, das Feld sperrt sich.
+   Reveal: gleich oder verschieden? Bei „verschieden“ sagt jede:r in einem Satz, woran er/sie es erkannt hat. Dann wählt das
+   Paar gemeinsam die Rückfrage (zwei Finger), und die Figur antwortet – erst jetzt zeigt sich, wie es gemeint war.
+   Zurückspulen wie bei Clash, wenn die Rückfrage alles schlimmer macht. In drei Level:
+   1) Lesen – Nachrichten mit Emoji, drei Rückfragen.
+   2) Nachfragen – Nachrichten mit Punkt, Kürze oder Ironie, vier Rückfragen (offen, Annahme, Konter, nicht fragen).
+   3) Klar schreiben – jetzt ist Mika der Absender: Welche Version lesen Yara, Luca und Sam gleich – und so, wie Mika es meint?
+   Variante bei Bewegungsdrang (Lehrer-Hinweis): drei Ecken im Raum. */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h, clear } = CREW.util;
+
+  const LESART = {
+    nett: { id: 'nett', label: 'nett', emo: '🙂', mood: 'froh' },
+    ironisch: { id: 'ironisch', label: 'ironisch', emo: '🙃', mood: 'genervt' },
+    sauer: { id: 'sauer', label: 'sauer', emo: '😠', mood: 'wut' },
+    egal: { id: 'egal', label: 'egal', emo: '😐', mood: 'neutral' },
+  };
+  const ORDER = ['nett', 'ironisch', 'sauer', 'egal'];
+  const RUECK = {
+    offen: { label: 'Offen gefragt', warum: 'Offen gefragt: Die Figur kann einfach sagen, wie es gemeint war.' },
+    annahme: { label: 'Annahme', warum: 'Eine Annahme als Frage: Die Figur muss sich erst verteidigen.' },
+    konter: { label: 'Konter', warum: 'Ein Konter macht aus einem Missverständnis einen Streit.' },
+    still: { label: 'Nicht gefragt', warum: 'Nicht gefragt: Das Rätseln bleibt – auf beiden Seiten.' },
+  };
+  const LEVELS = ['Lesen', 'Nachfragen', 'Klar schreiben'];
+
+  /* Nachrichten: von (Absender), an (liest), vorher (Chat davor: [wer, Text]), text, gemeint (eine der vier Lesarten),
+     hinweis (warum man es so oder so lesen kann), rueck: vier Rückfragen von „an“ mit Antwort (a) und Stimmung von „von“. */
+  const NACHRICHTEN = [
+    /* Level 1: mit Emoji */
+    { id: 'daumen', stufe: 1, von: 'yara', an: 'mika', vorher: [['mika', 'Bin 10 Minuten später da, sorry!']], text: 'ok 👍', gemeint: 'nett',
+      hinweis: 'Ein Daumen allein wirkt auf manche kühl. Yara meinte ihn ehrlich.',
+      rueck: {
+        offen: { t: 'Passt das wirklich, oder nervt’s dich?', a: 'Passt echt! Ich hol mir solange einen Kakao 😄', mood: 'froh' },
+        annahme: { t: 'Bist du jetzt sauer auf mich?', a: 'Hä, nein? Wieso denkst du das?', mood: 'ueberrascht' },
+        konter: { t: 'Chill mal, sind doch nur 10 Minuten, kein Weltuntergang 🙄', a: 'Hab ich was gesagt?? Jetzt nervt’s mich wirklich.', mood: 'genervt' },
+        still: { t: '(Mika schreibt nichts zurück.)', a: '(Mika grübelt die ganze Busfahrt: Ist Yara sauer? Yara ahnt nichts.)', mood: 'neutral' },
+      } },
+    { id: 'mutig', stufe: 1, von: 'luca', an: 'sam', vorher: [['sam', '(Foto: neuer Haarschnitt) Und?']], text: 'mutig 😂', gemeint: 'nett',
+      hinweis: '„mutig“ mit 😂 kann Spott sein – oder Bewunderung. Hier war es Bewunderung.',
+      rueck: {
+        offen: { t: 'Wie meinst du „mutig“? Gut oder schlimm? 😅', a: 'Gut! Sieht cool aus. Ich würd mich das nie trauen.', mood: 'froh' },
+        annahme: { t: 'Lachst du mich gerade aus, oder was soll das heißen?', a: 'Nein! Sorry, so war das gar nicht gemeint.', mood: 'ueberrascht' },
+        konter: { t: 'Deine Frisur ist auch kein Kunstwerk 😂', a: 'Wow. Ich wollte eigentlich nett sein.', mood: 'traurig' },
+        still: { t: '(Sam löscht das Foto aus dem Status.)', a: '(Luca wundert sich, warum das Foto weg ist.)', mood: 'neutral' },
+      } },
+    { id: 'allesgut', stufe: 1, von: 'mika', an: 'luca', vorher: [['luca', 'Ich kann doch nicht zu deinem Geburtstag, sorry.']], text: 'alles gut 🙂', gemeint: 'sauer',
+      hinweis: 'Das 🙂 sagt „alles gut“. Mika ist aber enttäuscht – das Emoji versteckt es.',
+      rueck: {
+        offen: { t: 'Echt okay für dich?', a: 'Ehrlich? Ich bin enttäuscht. Du hattest es versprochen.', mood: 'traurig' },
+        annahme: { t: 'Bist du beleidigt oder was?', a: 'Nein. Alles gut, hab ich doch gesagt.', mood: 'genervt' },
+        konter: { t: 'Wieso schreibst du so komisch?', a: 'Ich schreib gar nicht komisch.', mood: 'genervt' },
+        still: { t: 'Cool, dann bis Montag! 👋', a: '(Mika legt das Handy weg. Der Geburtstag fühlt sich etwas leerer an.)', mood: 'traurig' },
+      } },
+    { id: 'malschauen', stufe: 1, von: 'luca', an: 'mika', vorher: [['mika', 'Kommst du heute zum Training?']], text: 'mal schauen 🙃', gemeint: 'ironisch',
+      hinweis: 'Das 🙃 heißt hier: „Die Lage ist blöd.“ Nicht: „Du nervst.“',
+      rueck: {
+        offen: { t: 'Klingt ironisch – was ist los?', a: 'Nachsitzen bis fünf 🙃 Ich komm danach.', mood: 'genervt' },
+        annahme: { t: 'Hast du keinen Bock mehr auf uns?', a: 'Was? Doch! Ich hab Nachsitzen.', mood: 'ueberrascht' },
+        konter: { t: 'Dann bleib halt weg 🙄', a: 'Ich kann nichts dafür! Ich hab Nachsitzen.', mood: 'wut' },
+        still: { t: '(Mika erzählt dem Team: Luca hat keinen Bock.)', a: '(Am nächsten Tag denkt das halbe Team, Luca drückt sich.)', mood: 'traurig' },
+      } },
+    { id: 'kabel', stufe: 1, von: 'yara', an: 'sam', vorher: [['sam', 'Ups, hab dein Ladekabel aus Versehen mitgenommen.']], text: '😐', gemeint: 'egal',
+      hinweis: 'Ein 😐 ohne Worte kann alles heißen. Hier hieß es: „Kein Ding, ich bin müde.“',
+      rueck: {
+        offen: { t: 'Ist das schlimm? Ich bring’s morgen mit.', a: 'Kein Ding, hab noch eins. Bin nur müde 😴', mood: 'neutral' },
+        annahme: { t: 'Bist du sauer wegen dem Kabel?', a: 'Nö. Aber jetzt fragst du so komisch.', mood: 'ueberrascht' },
+        konter: { t: 'Musst nicht gleich so gucken 🙄', a: 'Ich guck gar nicht! Ich bin müde!', mood: 'genervt' },
+        still: { t: '(Sam fährt um 22 Uhr noch mit dem Rad quer durch die Stadt.)', a: '(Yara schläft schon. Sam steht im Regen vor der Tür.)', mood: 'neutral' },
+      } },
+    { id: 'wowdanke', stufe: 1, von: 'sam', an: 'yara', vorher: [['yara', 'Ich hab die Präsi gestern Nacht allein fertig gemacht.']], text: 'wow danke 🙂', gemeint: 'ironisch',
+      hinweis: '„wow danke“ mit 🙂 klingt freundlich. Sam ist aber gekränkt – Sam wollte Teil 2 machen.',
+      rueck: {
+        offen: { t: 'Klingt komisch. Passt dir was nicht?', a: 'Ehrlich? Ich wollte Teil 2 machen. Jetzt steht mein Name drauf, ohne dass ich was gemacht hab.', mood: 'traurig' },
+        annahme: { t: 'Freust du dich gar nicht?', a: 'Doch. Toll. Wirklich.', mood: 'genervt' },
+        konter: { t: 'Gern geschehen! Hättest ja auch mal früher was machen können 😜', a: 'Früher? Ich durfte ja gar nichts machen!', mood: 'wut' },
+        still: { t: '(Yara schickt ein ❤️.)', a: '(Sam sagt bei der Präsi kein Wort.)', mood: 'traurig' },
+      } },
+    /* Level 2: Punkt, Kürze, Ironie */
+    { id: 'jaklar', stufe: 2, von: 'sam', an: 'mika', vorher: [['mika', 'Kann ich mir dein Spiel fürs Wochenende leihen?']], text: 'ja klar.', gemeint: 'nett',
+      hinweis: 'Der Punkt am Ende wirkt auf viele streng. Sam hat im Bus nur schnell getippt.',
+      rueck: {
+        offen: { t: 'Echt okay? Der Punkt klingt so ernst 😅', a: 'Haha, echt okay! Hab im Bus nur schnell getippt.', mood: 'froh' },
+        annahme: { t: 'Wenn du eigentlich keinen Bock hast, dann sag’s halt einfach.', a: 'Hä? Ich hab doch Ja gesagt.', mood: 'ueberrascht' },
+        konter: { t: 'Schon gut, ich frag wen anders.', a: 'Ich hab doch Ja gesagt?! Jetzt versteh ich gar nichts.', mood: 'ueberrascht' },
+        still: { t: '(Mika fragt nicht mehr nach dem Spiel.)', a: '(Sam wundert sich, warum Mika das Spiel nie abholt.)', mood: 'neutral' },
+      } },
+    { id: 'machdoch', stufe: 2, von: 'yara', an: 'luca', vorher: [['luca', 'Ich geh heute doch mit den anderen ins Kino.']], text: 'mach doch 🙃', gemeint: 'sauer',
+      hinweis: '„mach doch“ klingt nach Erlaubnis. Das 🙃 sagt: Yara ist sauer – sie waren verabredet.',
+      rueck: {
+        offen: { t: 'Klingt nicht, als wär’s okay. Ist es okay?', a: 'Nein. Wir waren verabredet. Ich hab mich gefreut.', mood: 'traurig' },
+        annahme: { t: 'Bist du jetzt eifersüchtig, oder was?', a: 'Eifersüchtig?! Wir waren verabredet!', mood: 'wut' },
+        konter: { t: 'Werd ich auch 😎', a: '(Yara antwortet zwei Tage lang nicht mehr.)', mood: 'wut' },
+        still: { t: 'Cool, danke dir! Dann bis morgen in der Schule 👍', a: '(Luca geht ins Kino. Yara sitzt zu Hause und ist richtig sauer.)', mood: 'traurig' },
+      } },
+    { id: 'okpunkt', stufe: 2, von: 'mika', an: 'yara', vorher: [['yara', 'Hab dein Foto in die Gruppe gestellt, sieht voll gut aus!']], text: 'ok.', gemeint: 'sauer',
+      hinweis: 'Ein „ok.“ mit Punkt kann alles heißen. Hier steckt eine Grenze drin: Mika wurde nicht gefragt.',
+      rueck: {
+        offen: { t: 'Hm, „ok.“ – passt das Foto für dich?', a: 'Ehrlich gesagt nein. Ich will gefragt werden, bevor ein Foto von mir in die Gruppe kommt.', mood: 'genervt' },
+        annahme: { t: 'Freust du dich gar nicht? 😕', a: 'Nicht wirklich.', mood: 'genervt' },
+        konter: { t: 'Sei nicht so empfindlich, das Foto ist doch voll schön 🙄', a: 'Empfindlich? Es ist MEIN Foto.', mood: 'wut' },
+        still: { t: '(Yara stellt noch zwei Fotos dazu.)', a: '(Mika ist jetzt richtig wütend – und Yara weiß nicht, warum.)', mood: 'wut' },
+      } },
+    { id: 'k', stufe: 2, von: 'luca', an: 'sam', vorher: [['sam', '… und deshalb war ich gestern so komisch. Sorry, echt.']], text: 'k', gemeint: 'nett',
+      hinweis: 'Nach einer langen Entschuldigung wirkt ein „k“ eiskalt. Luca stand nur im vollen Bus.',
+      rueck: {
+        offen: { t: 'Ist das ein „k, alles gut“ oder ein „k, lass mich“?', a: 'Haha, „alles gut“! War im vollen Bus. Schon vergessen.', mood: 'froh' },
+        annahme: { t: 'Bist du immer noch sauer?', a: 'Nein … wieso immer noch?', mood: 'ueberrascht' },
+        konter: { t: 'Wow, danke für nichts.', a: 'Hä? Ich hab doch geantwortet!', mood: 'genervt' },
+        still: { t: '(Sam schreibt nichts mehr und grübelt.)', a: '(Sam schläft schlecht. Luca hat die Sache längst vergessen.)', mood: 'traurig' },
+      } },
+    { id: 'schoen', stufe: 2, von: 'sam', an: 'yara', vorher: [['yara', 'Ich hab eine 1 in Mathe!!!']], text: 'Schön für dich.', gemeint: 'ironisch',
+      hinweis: '„Schön für dich.“ ohne Ausrufezeichen klingt kühl. Dahinter steckt Sams eigene schlechte Note.',
+      rueck: {
+        offen: { t: 'Klingt bisschen kühl – alles okay bei dir?', a: 'Sorry. Ich hab ’ne 5. Ich freu mich trotzdem für dich.', mood: 'traurig' },
+        annahme: { t: 'Bist du neidisch?', a: 'Nein! … Vielleicht ein bisschen.', mood: 'genervt' },
+        konter: { t: 'Tja, manche können’s halt 😎', a: '(Sam schaltet den Chat stumm.)', mood: 'wut' },
+        still: { t: '(Yara feiert in der Gruppe weiter.)', a: '(Sam fühlt sich noch schlechter.)', mood: 'traurig' },
+      } },
+    { id: 'wiedumeinst', stufe: 2, von: 'mika', an: 'luca', vorher: [['luca', 'Dann mach ich die Präsi halt allein.']], text: 'Wie du meinst.', gemeint: 'sauer',
+      hinweis: '„Wie du meinst.“ klingt nach Zustimmung – ist aber oft Rückzug mit Ärger.',
+      rueck: {
+        offen: { t: 'Heißt das „okay“ – oder bist du sauer?', a: 'Ehrlich? Ich will mitmachen. Aber du hörst nie auf meine Ideen.', mood: 'genervt' },
+        annahme: { t: 'Du hast doch eh keinen Bock, oder?', a: 'Doch! Aber egal.', mood: 'genervt' },
+        konter: { t: 'Gut, dann sag nachher nicht, ich hätte nicht gefragt.', a: 'Mach doch. Ist mir egal.', mood: 'wut' },
+        still: { t: 'Ok 👍', a: '(Luca macht alles allein. Mika fühlt sich ausgebootet.)', mood: 'traurig' },
+      } },
+  ];
+
+  /* Level 3: Mika schreibt. Drei Versionen; lesen = wie Yara, Luca, Sam sie lesen. ziel = so meint Mika es. */
+  const SENDEN = [
+    { id: 'absage', an: 'yara', ziel: 'nett', lage: 'Mika ist zu platt fürs Kino. Yara freut sich schon. Mika will absagen – ohne dass Yara denkt, Mika hat keinen Bock auf sie.',
+      versionen: [
+        { k: 'kurz', t: 'kann heute nicht', lesen: { yara: 'sauer', luca: 'egal', sam: 'sauer' }, antwort: 'Aha. Okay. Dann halt nicht.', mood: 'traurig' },
+        { k: 'klar', t: 'Sorry, ich bin heute echt platt und schaff das Kino nicht 😩 Morgen? Ich freu mich drauf!', lesen: { yara: 'nett', luca: 'nett', sam: 'nett' }, antwort: 'Schade – aber klar! Morgen 18 Uhr? 😊', mood: 'froh' },
+        { k: 'ironisch', t: 'Kino? Heute? Mega Idee 🙃', lesen: { yara: 'ironisch', luca: 'sauer', sam: 'nett' }, antwort: 'Hä? Kommst du jetzt oder nicht?', mood: 'ueberrascht' },
+      ] },
+    { id: 'foto', an: 'luca', ziel: 'nett', lage: 'Luca hat ein Foto von Mika in die Gruppe gestellt. Mika will, dass es weg ist – freundlich, ohne Streit.',
+      versionen: [
+        { k: 'kurz', t: 'lösch das.', lesen: { yara: 'sauer', luca: 'sauer', sam: 'sauer' }, antwort: 'Chill. Ist doch nur ein Foto 🙄', mood: 'wut' },
+        { k: 'klar', t: 'Hey, ich mag das Foto nicht in der Gruppe. Kannst du es bitte löschen? Danke!', lesen: { yara: 'nett', luca: 'nett', sam: 'nett' }, antwort: 'Oh, sorry! Ist gelöscht.', mood: 'neutral' },
+        { k: 'ironisch', t: 'Wow, tolles Foto von mir 😂😂', lesen: { yara: 'nett', luca: 'nett', sam: 'ironisch' }, antwort: 'Haha, oder? Ich stell noch eins rein 😂', mood: 'froh' },
+      ] },
+    { id: 'danke', an: 'sam', ziel: 'nett', lage: 'Sam hat Mika den ganzen Samstag beim Umzug geholfen. Mika will richtig Danke sagen.',
+      versionen: [
+        { k: 'kurz', t: 'thx', lesen: { yara: 'egal', luca: 'nett', sam: 'egal' }, antwort: 'np.', mood: 'neutral' },
+        { k: 'klar', t: 'Danke, dass du den ganzen Samstag geholfen hast! Ohne dich wär ich nie fertig geworden 🙏', lesen: { yara: 'nett', luca: 'nett', sam: 'nett' }, antwort: 'Gern! Die nächste Pizza geht auf dich 😄', mood: 'froh' },
+        { k: 'ironisch', t: 'Na, endlich hast du mal was gemacht 😜', lesen: { yara: 'ironisch', luca: 'nett', sam: 'sauer' }, antwort: 'Endlich?? Ich hab den ganzen Tag geschleppt!', mood: 'wut' },
+      ] },
+  ];
+  const LESER = ['yara', 'luca', 'sam'];
+
+  // Chat im Handy-Look: Zeilen davor, die Nachricht groß, optional die Fortsetzung
+  function chatEl(ctx, n, extra) {
+    const name = (f) => ctx.figures[f].name;
+    return h('div', { class: 'chat-box ue-chat' },
+      h('div', { class: 'ue-chat-head' }, ctx.avatar(n.von, 'neutral', 34), h('b', null, name(n.von) + ' und ' + name(n.an)), h('span', { class: 'muted small' }, 'erfundener Chat'),
+        ctx.readBtn(() => n.vorher.map(([w, t]) => name(w) + ': ' + t).concat([name(n.von) + ': ' + n.text]).join('. '))),
+      n.vorher.map(([w, t]) => ctx.bubble(t, { who: name(w), me: w === n.an })),
+      ctx.bubble(n.text, { who: name(n.von), cls: 'ue-msg' }),
+      // „(…)“ ist Erzähltext (was passiert), keine Nachricht
+      (extra || []).map((l) => (/^\(/.test(l.t) ? h('p', { class: 'ue-narr' }, l.t) : ctx.bubble(l.t, { who: l.who, me: l.me }))));
+  }
+  // Kompakte Aufgaben-Zeile (statt großer Karte), damit die Wahl sichtbar bleibt
+  const hint = (ctx, text, icon) => h('div', { class: 'kg-hint' }, CREW.icon(icon || 'chat', 24), h('span', { class: 'kg-hint-t' }, text), ctx.readBtn(text));
+  const lesartChip = (id, cls) => h('span', { class: 'ue-lesart ' + (cls || ''), 'data-read': id }, h('span', { class: 'ue-emo' }, LESART[id].emo), h('b', null, LESART[id].label));
+
+  /* Verdeckt lesen: zwei Felder nebeneinander (Handy: untereinander). Ein Tipp sperrt das Feld und verdeckt die Wahl.
+     Liefert { links, rechts } oder SKIP. */
+  function geheimLesen(ctx, n, eyebrow, badge) {
+    return ctx.waitFor(new Promise((resolve) => {
+      const picks = { links: null, rechts: null };
+      let done = false;
+      const check = () => {
+        if (done || !picks.links || !picks.rechts) return;
+        done = true;
+        CREW.sound.play('unlock');
+        setTimeout(() => resolve({ links: picks.links, rechts: picks.rechts }), ctx.auto ? 30 : 500);
+      };
+      const half = (side, label) => {
+        const box = h('div', { class: 'ue-half', 'data-side': side });
+        const draw = () => {
+          clear(box);
+          box.classList.toggle('locked', !!picks[side]);
+          box.append(h('div', { class: 'row between ue-half-head' }, h('b', null, label), h('span', { class: 'muted small' }, picks[side] ? 'gesperrt' : 'Hand drüber halten')));
+          if (picks[side]) {
+            box.append(h('div', { class: 'ue-lock' }, CREW.icon('lock', 30), h('b', null, 'Gesperrt'), h('span', { class: 'muted small' }, picks.links && picks.rechts ? 'Gleich kommt der Vergleich.' : 'Warte auf die andere Person.')));
+            return;
+          }
+          box.append(h('div', { class: 'ue-read-btns' }, ORDER.map((id) => {
+            const b = h('button', { type: 'button', class: 'btn ghost ue-read-btn', 'data-read': id }, h('span', { class: 'ue-emo' }, LESART[id].emo), h('span', null, LESART[id].label));
+            b.addEventListener('click', () => { if (picks[side]) return; CREW.sound.play('tap'); picks[side] = id; draw(); redrawOther(side); check(); });
+            return b;
+          })));
+        };
+        box.draw = draw;
+        return box;
+      };
+      const L = half('links', 'Links'), R = half('rechts', 'Rechts');
+      const redrawOther = (side) => { const o = side === 'links' ? R : L; if (picks[side === 'links' ? 'rechts' : 'links']) o.draw(); };
+      L.draw(); R.draw();
+      const wrap = ctx.scr([
+        chatEl(ctx, n),
+        hint(ctx, 'Wie liest du das? Jede:r tippt verdeckt – Hand drüber halten.', 'eyeOff'),
+        h('div', { class: 'ue-halves' }, L, R),
+      ], { eyebrow, badge });
+      if (ctx.auto) setTimeout(() => ['links', 'rechts'].forEach((s) => { const bs = wrap.querySelectorAll('.ue-half[data-side="' + s + '"] .ue-read-btn'); if (bs.length) bs[Math.floor(ctx.autoRng() * bs.length)].click(); }), Math.max(40, window.__crewAutoDelay || 0));
+    }));
+  }
+
+  /* Auswahl als Chips + zwei Finger. Liefert den Schlüssel der gewählten Option, null (nichts gewählt) oder SKIP. */
+  async function paarWahl(ctx, wrap, opts, o) {
+    const slot = (o && o.slot) || wrap;
+    let pick = null;
+    const row = h('div', { class: 'stack ue-wahl' }, opts.map((x) => {
+      const b = h('button', { type: 'button', class: 'chip ue-wahl-chip', 'data-wahl': x.k }, x.t);
+      b.addEventListener('click', () => { CREW.sound.play('tap'); pick = x.k; row.querySelectorAll('.chip').forEach((c) => c.classList.toggle('sel', c === b)); });
+      return b;
+    }));
+    slot.appendChild(h('div', { class: 'card' }, row));
+    if (ctx.auto) pick = o.autoPick || opts[Math.floor(ctx.autoRng() * opts.length)].k;
+    const r = await ctx.T.twoFinger(wrap, { label: 'Beide einig: Finger drauf', hint: 'Erst eine Antwort antippen, dann zwei Finger.' });
+    if (r === ctx.SKIP) return ctx.SKIP;
+    return pick;
+  }
+
+  /* Eine Lese-Runde: verdeckt lesen, vergleichen, Rückfrage wählen, Antwort – mit Zurückspulen */
+  async function leseRunde(ctx, n, nr, total, L) {
+    const von = ctx.figures[n.von], an = ctx.figures[n.an];
+    const badge = ctx.stufe(L, LEVELS);
+    const picks = await geheimLesen(ctx, n, 'Nachricht ' + nr + ' von ' + total, badge);
+    if (picks === ctx.SKIP) return null;
+    const gleich = picks.links === picks.rechts;
+    const w = ctx.scr([
+      chatEl(ctx, n),
+      h('div', { class: 'ue-reveal' },
+        h('div', { class: 'ue-reveal-side' }, h('span', { class: 'muted small' }, 'Links liest'), lesartChip(picks.links, 'big')),
+        h('div', { class: 'ue-reveal-mid display' }, gleich ? '=' : '≠'),
+        h('div', { class: 'ue-reveal-side' }, h('span', { class: 'muted small' }, 'Rechts liest'), lesartChip(picks.rechts, 'big'))),
+      ctx.say(gleich
+        ? 'Gleich gelesen. Aber nur ' + von.name + ' weiß, wie es gemeint war. Wie findet ' + an.name + ' es raus?'
+        : 'Verschieden gelesen – ganz normal. Jede:r sagt in einem Satz: Woran hast du es erkannt?', { eyebrow: gleich ? 'Gleich gelesen' : 'Verschieden gelesen', small: true }),
+      gleich ? null : h('div', { class: 'row ue-clues' }, h('span', { class: 'muted small' }, 'Hilfe zum Reden:'), ['das Emoji', 'der Punkt', 'so kurz', 'der Chat davor'].map((t) => h('span', { class: 'pill' }, t))),
+    ], { eyebrow: 'Nachricht ' + nr + ' · Vergleich', badge });
+    if ((await ctx.next(w, 'Rückfrage wählen')) === ctx.SKIP) return { gleich, klar: false, erst: false };
+    const kinds = ctx.rshuffle(L === 1 ? ['offen', 'annahme', 'konter'] : ['offen', 'annahme', 'konter', 'still']);
+    let tries = 0;
+    for (;;) {
+      const rechts = h('div', { class: 'stack' }, hint(ctx, 'Was schreibt ' + an.name + ' zurück? Einigt euch auf eine Antwort.', 'chat'));
+      const w2 = ctx.scr([h('div', { class: 'kg-pair' }, chatEl(ctx, n), rechts)], { eyebrow: 'Nachricht ' + nr + ' · Rückfrage', badge });
+      const pick = await paarWahl(ctx, w2, kinds.map((k) => ({ k, t: n.rueck[k].t })), { autoPick: tries >= 1 ? 'offen' : null, slot: rechts });
+      if (pick === ctx.SKIP) return { gleich, klar: false, erst: false };
+      if (!pick) { CREW.ui.toast('Erst eine Antwort antippen.'); continue; }
+      tries++;
+      const r = n.rueck[pick];
+      const klar = pick === 'offen';
+      CREW.sound.play(klar ? 'great' : 'soft');
+      const treffer = ['links', 'rechts'].filter((s) => picks[s] === n.gemeint).length;
+      const w3 = ctx.scr([h('div', { class: 'kg-pair' },
+        chatEl(ctx, n, [{ who: an.name, t: r.t, me: true }, { who: von.name, t: r.a }]),
+        h('div', { class: 'ue-gemeint' },
+          h('div', { class: 'stack', style: { gap: '4px', alignItems: 'center' } }, h('span', { class: 'eyebrow' }, 'Gemeint war'), lesartChip(n.gemeint, 'big')),
+          h('div', { class: 'stack', style: { gap: '6px', minWidth: 0 } },
+            h('div', { class: 'row', style: { gap: '8px' } }, h('span', { class: 'pill ' + (klar ? 'good' : '') }, klar ? 'Geklärt' : RUECK[pick].label), h('span', { class: 'muted small' }, treffer === 2 ? 'Ihr habt beide richtig gelesen.' : treffer === 1 ? 'Eine:r von euch lag richtig – ohne Nachfragen weiß man das nie.' : 'Gemeint war etwas anderes, als ihr dachtet.')),
+            h('p', { class: 'small', style: { margin: 0 } }, n.hinweis),
+            h('p', { class: 'muted small', style: { margin: 0 } }, RUECK[pick].warum)))),
+      ], { eyebrow: 'Nachricht ' + nr + ' · Antwort', badge });
+      if (klar || tries >= 3) {
+        await ctx.next(w3, 'Weiter');
+        return { gleich, klar, erst: klar && tries === 1 };
+      }
+      const z = await ctx.ask(w3, [{ label: 'Zurückspulen', value: 'rewind', variant: 'ghost', icon: 'undo', id: 'ue-rewind' }, { label: 'Weiter', value: 'next', iconRight: 'right', id: 'btn-next' }], { autoPick: () => 'rewind' });
+      if (z !== 'rewind') return { gleich, klar: false, erst: false };
+      CREW.sound.play('tap');
+    }
+  }
+
+  /* Level 3: Mika schreibt selbst. Lese-Test mit drei Figuren. */
+  async function senden(ctx, s) {
+    const an = ctx.figures[s.an];
+    const order = ctx.rshuffle(s.versionen);
+    let tries = 0;
+    for (;;) {
+      const rechts = h('div', { class: 'stack' }, hint(ctx, 'Welche Version lesen alle so, wie Mika es meint? Einigt euch.', 'phone'));
+      const w = ctx.scr([h('div', { class: 'kg-pair' },
+        ctx.figureCard({ fig: 'mika', mood: 'neutral', text: s.lage, eyebrow: 'Mika will ' + an.name + ' schreiben', cls: 'ue-lage' }),
+        rechts)], { eyebrow: 'Mika schreibt', badge: ctx.stufe(3, LEVELS) });
+      const pick = await paarWahl(ctx, w, order.map((v) => ({ k: v.k, t: v.t })), { autoPick: tries >= 1 ? 'klar' : null, slot: rechts });
+      if (pick === ctx.SKIP) return { ok: false };
+      if (!pick) { CREW.ui.toast('Erst eine Version antippen.'); continue; }
+      tries++;
+      const v = s.versionen.find((x) => x.k === pick);
+      const reads = LESER.map((f) => v.lesen[f]);
+      const anzahl = new Set(reads).size;
+      const ok = reads.every((x) => x === s.ziel);
+      CREW.sound.play(ok ? 'great' : 'soft');
+      const text = ok ? 'Alle drei lesen es so, wie Mika es meint. Das kommt an.'
+        : anzahl === 1 ? 'Alle lesen es gleich – aber anders, als Mika es meint.'
+          : 'Drei Leute, ' + anzahl + ' Lesarten. Da steckt ein Missverständnis drin.';
+      const w2 = ctx.scr([
+        h('div', { class: 'chat-box ue-chat' }, ctx.bubble(v.t, { who: 'Mika', me: true })),
+        h('div', { class: 'ue-test' }, LESER.map((f) => h('div', { class: 'ue-test-p', 'data-read': v.lesen[f] },
+          ctx.avatar(f, LESART[v.lesen[f]].mood, 64), h('b', null, ctx.figures[f].name + ' liest'), lesartChip(v.lesen[f])))),
+        ctx.say(text, { eyebrow: 'Lese-Test', small: true }),
+        ctx.figureCard({ fig: s.an, mood: v.mood, text: v.antwort, eyebrow: an.name + ' antwortet', chat: true }),
+      ], { eyebrow: 'Lese-Test', badge: ctx.stufe(3, LEVELS) });
+      if (ok || tries >= 3) {
+        await ctx.next(w2, 'Weiter');
+        return { ok, erst: ok && tries === 1 };
+      }
+      const z = await ctx.ask(w2, [{ label: 'Andere Version testen', value: 'rewind', variant: 'ghost', icon: 'undo', id: 'ue-rewind' }, { label: 'So lassen', value: 'next', iconRight: 'right', id: 'btn-next' }], { autoPick: () => 'rewind' });
+      if (z !== 'rewind') return { ok: false };
+    }
+  }
+
+  CREW.registerGame({
+    id: 'uebersetzer',
+    template: 'T3',
+    icon: 'chat',
+    themen: ['Chat', 'Emoji', 'Missverständnis', 'Nachfragen'],
+    safety: ['figuren', 'freiwillig'],
+    help: false,
+    nachrichten: NACHRICHTEN, senden: SENDEN, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Zu zweit, nebeneinander. Eine Chat-Nachricht: Jede:r tippt verdeckt, wie er oder sie sie liest. Dann vergleicht ihr und wählt die Rückfrage, die es klärt.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'eyeOff', title: 'Verdeckt lesen', text: 'Hand drüber: nett, ironisch, sauer oder egal?' },
+          { icon: 'chat', title: 'Nachfragen', text: 'Gemeinsam die Rückfrage wählen. Die Figur antwortet.' },
+          { icon: 'phone', title: 'Klar schreiben', text: 'Welche Nachricht lesen alle gleich?' },
+        ],
+        probe: ctx.T.probeCard('Probe: Die Nachricht „super.“ – nett oder ironisch? Tippt irgendwas – zählt nicht.', [{ label: '🙂 nett', value: 'nett', variant: 'ghost' }, { label: '🙃 ironisch', value: 'ironisch', variant: 'ghost' }]),
+      });
+      const l1 = ctx.rshuffle(NACHRICHTEN.filter((n) => n.stufe === 1)).slice(0, 1);
+      const l2 = ctx.rshuffle(NACHRICHTEN.filter((n) => n.stufe === 2)).slice(0, 2);
+      const plan = l1.map((n) => ({ n, L: 1 })).concat(l2.map((n) => ({ n, L: 2 })));
+      let geklaert = 0, gleich = 0, erst = 0, gespielt = 0;
+      for (let i = 0; i < plan.length; i++) {
+        if (i > 0 && plan[i - 1].L !== plan[i].L) await ctx.T.level({ n: 2, names: LEVELS, text: 'Jetzt ohne Emoji-Hilfe: Punkt, Kürze, Ironie. Und vier Rückfragen – eine davon klingt wie eine Frage, ist aber eine Annahme.' });
+        const r = await leseRunde(ctx, plan[i].n, i + 1, plan.length, plan[i].L);
+        if (!r) continue;
+        gespielt++;
+        if (r.klar) geklaert++;
+        if (r.gleich) gleich++;
+        if (r.erst) erst++;
+      }
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Jetzt seid ihr der Absender: Mika will etwas schreiben. Welche Version lesen Yara, Luca und Sam so, wie Mika es meint?' });
+      const s = ctx.rpick(SENDEN);
+      const r3 = await senden(ctx, s);
+      return {
+        summary: geklaert >= 2 ? 'Übersetzt! Im Chat fehlen Stimme und Gesicht – Nachfragen ersetzt beides.' : 'Gleiche Nachricht, verschiedene Köpfe. Nachfragen spart Rätselraten und Streit.',
+        stats: [[geklaert, 'Nachrichten geklärt'], [gleich, 'mal gleich gelesen'], [r3.ok ? 1 : 0, 'Nachricht kommt an']],
+        extra: gespielt ? h('p', { class: 'muted small' }, erst ? 'Beim ersten Versuch offen nachgefragt: ' + erst + ' mal. Die Zauberfrage: „Wie meinst du das?“' : 'Die Zauberfrage für nächstes Mal: „Wie meinst du das?“') : null,
+      };
+    },
+  });
+})();
+
+/* ---- games/kommunikation/zuhoerfalle.js ---- */
+/* Spiel „Zuhör-Falle“ (Thema: Kommunikation & Grenzen) · Vorlage T1 Solo + Austausch · j1-e21
+   Eine Figur erzählt (Untertitel Zeile für Zeile, dazu Vorlese-Knopf). Du wählst die Antwort, bei der sie sich verstanden
+   fühlt: Eine trifft Inhalt und Gefühl, eine übersieht das Gefühl, eine gibt sofort einen Ratschlag, eine klaut das Thema
+   („Ich auch …“). Das Verstanden-Meter zeigt die Wirkung, die Figur reagiert, Zurückspulen ist erlaubt. In drei Level:
+   1) Erkennen – klare Geschichte, vier Antworten.
+   2) Gefühl hören – die Figur sagt „egal“ oder „passt schon“. Erst das echte Gefühl wählen, dann die Antwort; dazu die
+      Falle „Kleinreden“.
+   3) Selbst sagen – du baust deinen eigenen Zuhör-Satz aus Gefühl und Inhalt (nur im Kopf, nichts wird gespeichert).
+   Danach Vergleichskarte zu zweit: „Welche Falle passiert dir eher: Ratschlag oder Ich-auch?“ */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  const FALLEN = {
+    treffer: { id: 'treffer', label: 'Verstanden', kurz: 'Inhalt und Gefühl', meter: 92, mood: 'froh' },
+    sachlich: { id: 'sachlich', label: 'Gefühl übersehen', kurz: 'nur der Inhalt', meter: 48, mood: 'neutral', reakt: 'Ja … genau. (Es fühlt sich trotzdem nur halb gehört an.)' },
+    ratschlag: { id: 'ratschlag', label: 'Ratschlag-Falle', kurz: 'gleich ein Tipp', meter: 30, mood: 'genervt', reakt: 'Hm. Ich wollte gerade keinen Tipp. Ich wollte nur erzählen.' },
+    ichauch: { id: 'ichauch', label: 'Ich-auch-Falle', kurz: 'Thema geklaut', meter: 20, mood: 'traurig', reakt: 'Okay … jetzt reden wir über dich.' },
+    kleinreden: { id: 'kleinreden', label: 'Kleinreden', kurz: '„nicht so schlimm“', meter: 12, mood: 'traurig', reakt: 'Für mich ist es aber nicht egal.' },
+  };
+  const LEVELS = ['Erkennen', 'Gefühl hören', 'Selbst sagen'];
+
+  /* Geschichten: zeilen (Untertitel), gefuehl (was die Figur fühlt), antworten je Falle (ähnlich lang!), danke (Reaktion
+     auf „verstanden“). Stufe 2: oberflaeche (was die Figur behauptet) + gefuehle (Auswahl) + satz (für Level 3). */
+  const GESCHICHTEN = [
+    { id: 'rad', stufe: 1, fig: 'sam', mood: 'traurig', gefuehl: 'frustriert', inhalt: 'durchgefallen wegen einer Kurve',
+      zeilen: ['Drei Wochen hab ich für die Fahrradprüfung geübt.', 'Heute bin ich durchgefallen. Wegen einer einzigen Kurve.', 'Alle anderen haben bestanden.'],
+      antworten: { treffer: 'Drei Wochen Üben und dann eine Kurve – das ist echt frustrierend.', sachlich: 'Also bist du wegen einer Kurve durchgefallen.', ratschlag: 'Üb die Kurven einfach nochmal auf dem Parkplatz, dann klappt es beim nächsten Mal.', ichauch: 'Ich bin beim Schwimmabzeichen auch mal durchgefallen.' },
+      danke: 'Ja! Genau. Drei Wochen. Und dann so was.' },
+    { id: 'lohn', stufe: 1, fig: 'yara', mood: 'froh', gefuehl: 'stolz', inhalt: 'der erste eigene Lohn',
+      zeilen: ['Ich hab heute meinen ersten Lohn vom Ferienjob bekommen.', '80 Euro! Selbst verdient.', 'Ich hab den ganzen Tag gegrinst.'],
+      antworten: { treffer: 'Selbst verdient – du bist richtig stolz, oder? Zu Recht!', sachlich: 'Okay, 80 Euro vom Ferienjob also.', ratschlag: 'Spar das lieber, sonst ist es gleich wieder weg.', ichauch: 'Ich hab letzten Sommer im Supermarkt sogar 120 Euro bekommen, in zwei Wochen.' },
+      danke: 'Jaaa! So stolz. Endlich mein eigenes Geld.' },
+    { id: 'vorsingen', stufe: 1, fig: 'luca', mood: 'angst', gefuehl: 'nervös', inhalt: 'morgen allein vorsingen',
+      zeilen: ['Morgen soll ich beim Schulkonzert allein vorsingen.', 'Ich hab die ganze Nacht nicht geschlafen.', 'Mir ist jetzt schon schlecht.'],
+      antworten: { treffer: 'Allein vor allen singen – kein Wunder, dass du so nervös bist.', sachlich: 'Ah, das Konzert ist also schon morgen.', ratschlag: 'Stell dir einfach vor, alle sitzen in Unterhose da. Das hilft immer, echt.', ichauch: 'Ich war beim Referat letzte Woche auch total nervös.' },
+      danke: 'Ja. Total nervös. Gut, dass du das verstehst.' },
+    { id: 'party', stufe: 2, fig: 'sam', mood: 'neutral', gefuehl: 'verletzt', oberflaeche: 'egal', inhalt: 'nicht zur Party eingeladen',
+      zeilen: ['Alle reden über die Party am Samstag.', 'Ich bin nicht eingeladen.', 'Ist mir eigentlich egal.'],
+      gefuehle: ['egal', 'verletzt', 'müde', 'gelangweilt'],
+      antworten: { treffer: 'Ganz egal ist es dir nicht, oder? Tut weh, nicht eingeladen zu sein.', sachlich: 'Okay, du bist also nicht zur Party eingeladen.', ratschlag: 'Mach doch einfach selbst eine Party, dann kommen alle zu dir.', ichauch: 'Ich war letztes Jahr auch nicht eingeladen, da hab ich den ganzen Abend gezockt.', kleinreden: 'Ach, Partys sind eh überbewertet. Ist doch nicht schlimm.' },
+      danke: '… Ja. Es tut weh. Danke, dass du das merkst.',
+      satz: { gefuehle: ['verletzt', 'gelangweilt', 'müde', 'gleichgültig'], inhalte: [{ t: 'du zur Party nicht eingeladen bist', ok: true }, { t: 'Partys eh langweilig sind', ok: false }, { t: 'du zu wenig Freunde hast', ok: false }] } },
+    { id: 'tor', stufe: 2, fig: 'mika', mood: 'froh', gefuehl: 'stolz und traurig', oberflaeche: 'nur stolz', inhalt: 'Siegtor, aber keiner von zu Hause da', familie: true,
+      zeilen: ['Ich hab im Finale das Siegtor geschossen!', 'Alle haben gejubelt.', 'Nur aus meiner Familie war keiner da.'],
+      gefuehle: ['nur stolz', 'stolz und traurig', 'nur traurig', 'egal'],
+      antworten: { treffer: 'Das Siegtor – mega! Und schade, dass deine Familie es nicht gesehen hat.', sachlich: 'Ihr habt also das Finale gewonnen, durch dein Tor.', ratschlag: 'Lass dein nächstes Spiel einfach filmen, dann kannst du es zu Hause allen zeigen.', ichauch: 'Bei meinem Turnier war auch keiner von meiner Familie da.', kleinreden: 'Ist doch egal, wer zuschaut. Tor ist Tor!' },
+      danke: 'Genau das. Beides gleichzeitig. Du hast’s gecheckt.',
+      satz: { gefuehle: ['stolz und traurig', 'nur stolz', 'gelangweilt', 'wütend'], inhalte: [{ t: 'du das Siegtor geschossen hast und keiner von zu Hause da war', ok: true }, { t: 'Fußball nicht so wichtig ist', ok: false }, { t: 'deine Familie dich nicht mag', ok: false }] } },
+    { id: 'freundin', stufe: 2, fig: 'yara', mood: 'neutral', gefuehl: 'allein gelassen', oberflaeche: 'passt schon', inhalt: 'die Freundin sitzt jetzt woanders',
+      zeilen: ['Meine beste Freundin sitzt seit Montag bei den anderen.', 'In der Pause steh ich jetzt allein.', 'Sie sagt, es ist nichts. Passt schon.'],
+      gefuehle: ['passt schon', 'allein gelassen', 'wütend auf alle', 'gelangweilt'],
+      antworten: { treffer: '„Passt schon“ – aber allein in der Pause stehen fühlt sich mies an, oder?', sachlich: 'Deine Freundin sitzt jetzt also bei den anderen.', ratschlag: 'Setz dich morgen einfach zu den anderen dazu, dann ist das Problem doch gelöst.', ichauch: 'Meine Freundin hat mich letztes Jahr auch sitzen lassen.', kleinreden: 'Ach, die kommt bestimmt wieder. Ist doch nichts.' },
+      danke: 'Ja. Mies. Ich wollte nicht, dass es jemand merkt.',
+      satz: { gefuehle: ['allein gelassen', 'gelangweilt', 'wütend auf alle', 'ganz okay'], inhalte: [{ t: 'du in der Pause jetzt allein stehst', ok: true }, { t: 'du zu anhänglich bist', ok: false }, { t: 'Pausen eben langweilig sind', ok: false }] } },
+    { id: 'bruder', stufe: 2, fig: 'luca', mood: 'genervt', gefuehl: 'ungerecht behandelt', oberflaeche: 'ist halt so', inhalt: 'der Bruder darf mehr', familie: true,
+      zeilen: ['Mein Bruder darf alles.', 'Heute wieder: Er darf zur Party, ich muss um acht zu Hause sein.', 'Na ja. Ist halt so.'],
+      gefuehle: ['ist halt so', 'ungerecht behandelt', 'froh', 'ängstlich'],
+      antworten: { treffer: '„Ist halt so“ – aber es fühlt sich total ungerecht an, oder?', sachlich: 'Dein Bruder darf also länger weg als du.', ratschlag: 'Sag einfach, dass du trotzdem länger bleibst.', ichauch: 'Meine große Schwester darf auch immer viel länger weg als ich, voll nervig.', kleinreden: 'Er ist halt älter, das ist doch klar.' },
+      danke: 'Ja! Ungerecht. Endlich sagt das mal jemand.',
+      satz: { gefuehle: ['ungerecht behandelt', 'ängstlich', 'froh', 'ganz okay'], inhalte: [{ t: 'dein Bruder länger wegdarf als du', ok: true }, { t: 'du noch zu klein bist', ok: false }, { t: 'Partys sowieso nerven', ok: false }] } },
+  ];
+
+  // Erzählen: Figur, Untertitel erscheinen Zeile für Zeile, Vorlese-Knopf
+  async function erzaehlen(ctx, g, eyebrow, badge) {
+    const fig = ctx.figures[g.fig];
+    const sub = h('div', { class: 'zf-sub', 'aria-live': 'polite' });
+    const w = ctx.scr([
+      h('div', { class: 'zf-erzaehl' },
+        h('div', { class: 'zf-erzaehl-side' }, ctx.avatar(g.fig, g.mood, 104), h('b', { class: 'fig-name' }, fig.name)),
+        h('div', { class: 'stack', style: { gap: '8px', minWidth: 0 } },
+          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, fig.name + ' erzählt'), ctx.readBtn(fig.name + ' erzählt: ' + g.zeilen.join(' '), { cls: 'zf-hoeren' })),
+          sub)),
+      g.familie ? ctx.safetyLine('familie') : null,
+    ], { eyebrow, badge });
+    for (const z of g.zeilen) {
+      sub.appendChild(h('p', { class: 'zf-zeile enter' }, z));
+      CREW.sound.play('tick');
+      await ctx.hold(1500);
+    }
+    return ctx.next(w, 'Antworten');
+  }
+
+  // Kompakte Aufgaben-Zeile (statt großer Karte), damit die Antworten sichtbar bleiben
+  const hint = (ctx, text, icon) => h('div', { class: 'kg-hint' }, CREW.icon(icon || 'chat', 24), h('span', { class: 'kg-hint-t' }, text), ctx.readBtn(text));
+  const zitat = (t) => (/^„/.test(t) ? t : '„' + t + '“');
+  // Kompakte Geschichte (für die Antwort-Bildschirme)
+  const kurzKarte = (ctx, g, eyebrow) => ctx.figureCard({ fig: g.fig, mood: g.mood, text: g.zeilen.join(' '), eyebrow, size: 64, chat: true, cls: 'zf-kurz' });
+
+  /* Eine Geschichte beantworten (mit Zurückspulen). Liefert { erst, falle (erste Wahl), ok } oder null */
+  async function antworten(ctx, g, nr, L, badge) {
+    const fig = ctx.figures[g.fig];
+    const kinds = ctx.rshuffle(Object.keys(g.antworten));
+    const meter = ctx.meter({ value: 0, label: 'Verstanden' });
+    let tries = 0, erste = null;
+    for (;;) {
+      const w = ctx.scr([
+        kurzKarte(ctx, g, 'Geschichte ' + nr),
+        hint(ctx, (tries ? 'Neuer Versuch: ' : '') + 'Bei welcher Antwort fühlt sich ' + fig.name + ' verstanden?', 'heart'),
+      ], { eyebrow: 'Geschichte ' + nr + ' · Antwort', badge });
+      const r = await ctx.ask(w, kinds.map((k) => ({ label: g.antworten[k], value: k, variant: 'ghost', id: 'zf-a-' + k })), { autoPick: tries >= 1 ? () => 'treffer' : undefined });
+      if (r === ctx.SKIP) return erste ? { erst: erste === 'treffer', falle: erste, ok: false } : null;
+      tries++;
+      if (!erste) erste = r;
+      const F = FALLEN[r];
+      const ok = r === 'treffer';
+      meter.set(F.meter);
+      CREW.sound.play(ok ? 'great' : 'soft');
+      const w2 = ctx.scr([
+        h('div', { class: 'zf-antwort' }, h('span', { class: 'eyebrow' }, 'Du sagst'), h('p', null, zitat(g.antworten[r]))),
+        h('div', { class: 'card zf-meter' }, meter.el, h('div', { class: 'row', style: { gap: '8px', marginTop: '8px' } }, h('span', { class: 'pill zf-falle', 'data-falle': r }, F.label), h('span', { class: 'muted small' }, F.kurz))),
+        ctx.figureCard({ fig: g.fig, mood: F.mood, text: ok ? g.danke : F.reakt, eyebrow: fig.name + ' reagiert' }),
+        ok ? h('p', { class: 'muted small' }, 'Inhalt („' + g.inhalt + '“) und Gefühl („' + g.gefuehl + '“) – beides drin. Mehr braucht es oft nicht.') : null,
+      ], { eyebrow: 'Geschichte ' + nr + ' · Wirkung', badge });
+      if (ok || tries >= 3) {
+        await ctx.next(w2, 'Weiter');
+        return { erst: erste === 'treffer', falle: erste, ok };
+      }
+      const z = await ctx.ask(w2, [{ label: 'Zurückspulen', value: 'rewind', variant: 'ghost', icon: 'undo', id: 'zf-rewind' }, { label: 'Weiter', value: 'next', iconRight: 'right', id: 'btn-next' }], { autoPick: () => 'rewind' });
+      if (z !== 'rewind') return { erst: false, falle: erste, ok: false };
+    }
+  }
+
+  /* Level 2: Erst das echte Gefühl hören. Liefert true (gehört), false, oder SKIP */
+  async function gefuehlHoeren(ctx, g, nr, badge) {
+    const fig = ctx.figures[g.fig];
+    const w = ctx.scr([
+      kurzKarte(ctx, g, 'Geschichte ' + nr),
+      hint(ctx, fig.name + ' sagt „' + g.oberflaeche + '“. Was fühlt ' + fig.name + ' wirklich?', 'eye'),
+    ], { eyebrow: 'Geschichte ' + nr + ' · Gefühl', badge });
+    const r = await ctx.ask(w, ctx.rshuffle(g.gefuehle).map((x) => ({ label: x, value: x, variant: 'ghost' })));
+    if (r === ctx.SKIP) return ctx.SKIP;
+    const ok = r === g.gefuehl;
+    const w2 = ctx.scr([
+      h('div', { class: 'row center' }, h('span', { class: 'pill ' + (ok ? 'good' : '') }, ok ? 'Gehört: ' + g.gefuehl : 'Hör nochmal hin')),
+      ctx.say(ok ? 'Genau. „' + g.oberflaeche + '“ ist die Oberfläche. Darunter: ' + g.gefuehl + '.'
+        : r === g.oberflaeche ? 'Das sagt ' + fig.name + ' – aber passt es zum Rest? Darunter steckt: ' + g.gefuehl + '.' : 'Eher nicht. Hör auf das, was passiert ist. Darunter steckt: ' + g.gefuehl + '.', { eyebrow: 'Unter der Oberfläche', small: true }),
+    ], { eyebrow: 'Geschichte ' + nr + ' · Gefühl', badge });
+    await ctx.next(w2, 'Zu den Antworten');
+    return ok;
+  }
+
+  /* Level 3: eigenen Zuhör-Satz bauen – Gefühl + Inhalt. Nur im Kopf, nichts wird gespeichert. */
+  async function satzBauen(ctx, g) {
+    const fig = ctx.figures[g.fig];
+    const badge = ctx.stufe(3, LEVELS);
+    const e = await erzaehlen(ctx, g, 'Selbst sagen', badge);
+    if (e === ctx.SKIP) return null;
+    const w = ctx.scr([
+      kurzKarte(ctx, g, fig.name + ' erzählt'),
+      hint(ctx, 'Bau deinen Satz. Teil 1: „Du fühlst dich …“', 'heart'),
+    ], { eyebrow: 'Selbst sagen · Gefühl', badge });
+    const gw = await ctx.ask(w, ctx.rshuffle(g.satz.gefuehle).map((x) => ({ label: '… ' + x, value: x, variant: 'ghost' })), { autoPick: () => g.gefuehl });
+    if (gw === ctx.SKIP) return null;
+    const w2 = ctx.scr([
+      kurzKarte(ctx, g, fig.name + ' erzählt'),
+      h('div', { class: 'zf-satz' }, h('span', { class: 'eyebrow' }, 'Dein Satz bis jetzt'), h('p', null, '„Du fühlst dich ' + gw + ', weil …“')),
+      hint(ctx, 'Teil 2: „… weil …“ – was ist passiert?', 'chat'),
+    ], { eyebrow: 'Selbst sagen · Inhalt', badge });
+    const opts = ctx.rshuffle(g.satz.inhalte);
+    const iw = await ctx.ask(w2, opts.map((x, k) => ({ label: '… weil ' + x.t, value: k, variant: 'ghost' })), { autoPick: () => opts.findIndex((x) => x.ok) });
+    if (iw === ctx.SKIP) return null;
+    const inhalt = opts[iw];
+    const gefOk = gw === g.gefuehl, inhOk = inhalt.ok;
+    const satz = 'Du fühlst dich ' + gw + ', weil ' + inhalt.t + '.';
+    const meter = ctx.meter({ value: 0, label: 'Verstanden' });
+    meter.set(gefOk && inhOk ? 95 : gefOk || inhOk ? 50 : 15);
+    CREW.sound.play(gefOk && inhOk ? 'great' : 'soft');
+    const w3 = ctx.scr([
+      h('div', { class: 'zf-satz big' }, h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Dein Zuhör-Satz'), ctx.readBtn(satz)), h('p', null, '„' + satz + '“')),
+      h('div', { class: 'card zf-meter' }, meter.el),
+      ctx.figureCard({ fig: g.fig, mood: gefOk && inhOk ? 'froh' : 'neutral', text: gefOk && inhOk ? g.danke : !inhOk ? 'Hm. So war das nicht. Das klingt fast wie ein Urteil über mich.' : 'Das Gefühl stimmt nicht ganz. Unter „' + g.oberflaeche + '“ steckt mehr.', eyebrow: fig.name + ' reagiert' }),
+      ctx.say('Sag den Satz einmal leise im Kopf. Oder flüster ihn. Wer mag, hängt eine Frage dran: „Willst du erzählen?“', { eyebrow: 'Nur für dich', small: true }),
+      ctx.safetyLine('Nichts wird gespeichert.'),
+    ], { eyebrow: 'Selbst sagen · Satz', badge });
+    await ctx.ask(w3, [{ label: 'Heute nicht', value: 'pass', variant: 'ghost', icon: 'x', auto: false }, { label: 'Im Kopf gesagt', value: 'ok', iconRight: 'right', id: 'zf-gesagt' }]);
+    return { ok: gefOk && inhOk };
+  }
+
+  CREW.registerGame({
+    id: 'zuhoerfalle',
+    template: 'T1',
+    icon: 'heart',
+    themen: ['Aktives Zuhören', 'Gefühle spiegeln', 'Zuhör-Fallen', 'Freundschaft'],
+    safety: ['figuren', 'freiwillig'],
+    help: false,
+    geschichten: GESCHICHTEN, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Eine Figur erzählt dir etwas. Du wählst die Antwort, bei der sie sich verstanden fühlt. Drei Antworten sind Fallen. Danach vergleichst du zu zweit.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'speaker', title: 'Zuhören', text: 'Lesen oder vorlesen lassen.' },
+          { icon: 'heart', title: 'Antworten', text: 'Inhalt und Gefühl? Das Verstanden-Meter zeigt es.' },
+          { icon: 'users', title: 'Vergleichen', text: 'Blau findet Blau: Welche Falle passiert dir eher?' },
+        ],
+        probe: ctx.T.probeCard('Probe: „Mein Handy ist runtergefallen.“ Welche Antwort hört zu? Tipp irgendwas – zählt nicht.', [{ label: '„Oh nein, ärgerlich!“', value: 1, variant: 'ghost' }, { label: '„Kauf dir eine Hülle.“', value: 2, variant: 'ghost' }]),
+      });
+      await ctx.T.codeCheck();
+      const pool1 = ctx.rshuffle(GESCHICHTEN.filter((g) => g.stufe === 1));
+      const pool2 = ctx.rshuffle(GESCHICHTEN.filter((g) => g.stufe === 2));
+      const plan = [{ g: pool1[0], L: 1 }, { g: pool1[1], L: 1 }, { g: pool2[0], L: 2 }];
+      const ergebnisse = [];
+      let gehoert = 0;
+      for (let i = 0; i < plan.length; i++) {
+        const { g, L } = plan[i];
+        const badge = ctx.stufe(L, LEVELS);
+        if (i > 0 && plan[i - 1].L !== L) await ctx.T.level({ n: 2, names: LEVELS, text: 'Jetzt sagt die Figur „egal“ oder „passt schon“. Hör, was darunter steckt – und pass auf eine neue Falle auf: Kleinreden.' });
+        const e = await erzaehlen(ctx, g, 'Geschichte ' + (i + 1) + ' von ' + plan.length, badge);
+        if (e === ctx.SKIP) continue;
+        if (L === 2) {
+          const gh = await gefuehlHoeren(ctx, g, i + 1, badge);
+          if (gh === ctx.SKIP) continue;
+          if (gh) gehoert++;
+        }
+        const r = await antworten(ctx, g, i + 1, L, badge);
+        if (r) ergebnisse.push({ g, ...r });
+      }
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Keine Auswahl mehr: Du baust deinen eigenen Zuhör-Satz – „Du fühlst dich …, weil …“. Nur im Kopf.' });
+      const s3 = await satzBauen(ctx, pool2[1]);
+
+      // Austausch zu zweit: die EINE Vergleichskarte
+      await ctx.T.pairScreen();
+      await ctx.T.vergleich({
+        title: 'Zuhör-Falle',
+        items: ergebnisse.map((e) => ({ label: ctx.figures[e.g.fig].name + ': ' + e.g.inhalt, icon: e.erst ? 'heart' : 'help', text: e.erst ? 'Beim ersten Versuch verstanden' : 'Erste Wahl: ' + FALLEN[e.falle].label })),
+        questions: ['Welche Falle passiert dir eher: Ratschlag oder Ich-auch?', 'Woran merkst du, dass dir jemand wirklich zuhört?'],
+        note: 'Fallen sind menschlich. Es geht um die Figuren, nicht um dich. Pass ist okay.',
+      });
+      const erst = ergebnisse.filter((e) => e.erst).length;
+      return {
+        summary: erst >= 2 ? 'Gut zugehört: Inhalt und Gefühl – mehr braucht es oft nicht.' : 'Fallen erkannt. Nächstes Mal: erst das Gefühl hören, dann antworten.',
+        stats: [[erst, 'beim ersten Versuch verstanden'], [gehoert, 'verstecktes Gefühl gehört'], [s3 && s3.ok ? 1 : 0, 'eigener Satz passt']],
       };
     },
   });

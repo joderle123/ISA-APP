@@ -57,7 +57,7 @@ kein Hochhalten und Zählen mehr, dafür Erzählzeit, Gespräch und Bewegung.
 - *Gefühle verstehen:* Gefühls-Funk, Pult-Tausch ★, Frühwarn-Radar ★, Gefühls-Mixer
 - *Anspannung & Skills:* Pegel-Reihe ★, Innen/Außen ★, Undercover-Skill ★, Sinnes-Jagd, Gelb oder Rot?, Skill-Sprechstunde ★, Ampel-Woche, Kipp-Punkt ★, Blackout, Mein Ort
 - *Gedanken & Glaubenssätze:* Gedanken-Weiche ★, Woher kommt der Satz?, Tatsache oder Urteil? ★, Satz-Werkstatt, Beweis-Jäger ★, Haltungs-Switch
-- *Kommunikation & Grenzen:* Funkstille – der Chat kippt ★, Hitze-Ecken ★
+- *Kommunikation & Grenzen:* Übersetzer, Stille Post ohne Worte, Funkstille – der Chat kippt ★, Zuhör-Falle, Okay-Radar ★, Näher nicht, Stopp-Check ★, Hitze-Ecken ★, Familien-Funk
 - *Konflikt, Druck & Mobbing:* Story-Staffel: Der Streit ★, Deal oder kein Deal ★, Druck-Chat ★
 - *Digital, Gesundheit & Abschluss:* Trick erkannt ★, Teilen oder nicht? ★, Gerücht-Staffel ★, Red Flag, Akku-Woche ★, Später-Monster, Jahres-Quest (Abschluss des Jahres)
 
