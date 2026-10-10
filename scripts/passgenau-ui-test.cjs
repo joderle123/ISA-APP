@@ -458,11 +458,31 @@ async function main() {
       pruefe(await tb.getByRole('heading', { name: /Sitzung 3 von 6/ }).isVisible(), 'Weiter mit Sitzung 3 von 6')
       await tb.locator('.pg-ekopf').getByRole('button', { name: 'Baukasten' }).click()
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
-      const er = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).filter({ has: tb.locator('button[aria-label^="Text ändern"]') }).first()
-      if (await er.count()) {
-        await er.locator('button[aria-label^="Text ändern"]').last().click()
-        await er.locator('.felder input, .felder textarea').last().fill('Zu Frau Weber.')
-      } else console.log('  (Sitzung 3: kein Blatt-Teil mit änderbarem Text)')
+      // den ersten Blatt-Teil, dessen „Text ändern“ wirklich Felder öffnet (Kinder-Kernblätter haben auch Teile ohne Text)
+      const kandidaten3 = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).filter({ has: tb.locator('button[aria-label^="Text ändern"]') })
+      let geaendert3 = false
+      const versuche3 = async () => {
+        for (let j = 0; j < (await kandidaten3.count()) && !geaendert3; j++) {
+          const er = kandidaten3.nth(j)
+          await er.locator('button[aria-label^="Text ändern"]').last().click()
+          const f3 = er.locator('.felder input, .felder textarea').last()
+          if (await f3.waitFor({ timeout: 3000 }).then(() => true, () => false)) {
+            await f3.fill('Zu Frau Weber.')
+            geaendert3 = true
+          }
+        }
+      }
+      await versuche3()
+      // das eigene Blatt der Übung hat keine freien Textfelder: einen Baustein einfügen und den bearbeiten
+      if (!geaendert3) {
+        if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Bausteine' }).click()
+        const plus3 = tb.locator('.pg-sk button[aria-label^="Einfügen"]').first()
+        if (!(await plus3.count())) await tb.locator('.pg-ed-spalte .pg-chip', { hasText: 'alle Arten' }).click()
+        await plus3.click()
+        if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
+        await versuche3()
+      }
+      pruefe(geaendert3, 'Sitzung 3: ein Blatt-Teil mit änderbarem Text')
       await tb.getByRole('button', { name: 'Fertig' }).click()
       await tb.getByRole('button', { name: 'Stunde gehalten' }).click()
       await dlg(tb).getByRole('button', { name: 'Hat geklappt' }).click()
