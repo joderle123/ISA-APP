@@ -283,7 +283,9 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
         // Abwechslung über die Wochen: ein Kern im selben Format wie die Kerne der letzten drei Wochen zählt etwas weniger
         (s.rolle === 'kern' ? Math.min(0.1, 0.04 * (jungeKernFormate(c).get(e.format[0] ?? '') ?? 0)) : 0)
       const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: (s.bevorzugt?.has(e.id) ? 1 : 0) - malus })
-      if (phaseSlot && locker < 1 && e.bogen && s.phase !== 'leicht' && b.f.phase < 0.3) continue
+      // … außer eigene Übungen im Kern (Testlauf 13: Sitzung „üben“ nahm Kurs-Teile, weil die neue Jugend-Übung zum Ziel als
+      // „wahrnehmen“ markiert ist)
+      if (phaseSlot && locker < 1 && e.bogen && s.phase !== 'leicht' && b.f.phase < 0.3 && !(s.rolle === 'kern' && kuratiert(c, e.id))) continue
       // Kern: genau das Ziel (ELDiB-Code des Ziels, primär oder sekundär) – ein Nachbar-Code im selben Bereich erst bei
       // Lockerung (Blind-Bewertung 9.10.: Kerne einer Folge drifteten zu Chat-Ton, Schulden, Gaming bei Ziel „warten“)
       if (zielSlot && s.rolle === 'kern' && c.ziele.length) {
