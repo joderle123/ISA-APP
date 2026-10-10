@@ -920,7 +920,7 @@
             { "titel": "Demander de l’aide", "text": "J’appelle un adulte.", "bild": "figur:tom:neutral:melden" }
           ]
         },
-        { "art": "aufgabe", "text": "Voilà la règle que je m’exerce à respecter. Colorie une étoile chaque jour.", "symbole": ["malen"] },
+        { "art": "aufgabe", "text": "Je m’exerce à cette règle. Colorie une étoile par jour.", "symbole": ["malen"] },
         { "art": "plan", "ziel": "", "zeilen": ["Aujourd’hui, ça a marché."], "symbol": "stern" }
       ],
       "lehrer": {

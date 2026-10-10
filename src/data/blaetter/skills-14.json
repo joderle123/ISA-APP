@@ -511,6 +511,139 @@
         "achtung": "Rollen nie mit echten Personen besetzen. Wird eine Szene zu nah an eigenen Erfahrungen, abbrechen, aus der Rolle aussteigen lassen und ein Einzelgespräch anbieten; bei Hinweisen auf Gewalt die zuständige Leitung (Responsable) informieren.",
         "material": "Festes Papier, Schere, eventuell Laminierfolie"
       }
+    },
+    "fr": {
+      "titel": "Cartes de situation : à la maison",
+      "untertitel": "Deux points de vue, deux cartes – pour le théâtre-forum et les négociations",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Comment on joue",
+          "punkte": [
+            "Toutes les situations sont inventées. Personne ne joue quelqu’un de sa propre famille ou de son propre foyer.",
+            "La carte A est le rôle de l’ado, la carte B celui de l’adulte. Qui joue ne lit que sa propre carte.",
+            "Au début, c’est la personne qui anime le groupe qui joue l’adulte.",
+            "Qui dit « Stop » arrête la scène. Pas d’insultes, pas de contact physique.",
+            "Après la scène : se lever, se secouer, dire son propre prénom."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dispute à la maison : jouez la scène deux fois – d’abord comme elle se passe souvent, puis en vous calmant et avec la formule pour la maison.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 112,
+          "karten": [
+            {
+              "titel": "Z1 A · Portable à 22 h",
+              "text": "Tu as 14 ans. À 22 h, ton portable doit aller dans la cuisine : c’est la règle. Ce soir, on organise dans le chat la fête de samedi. Ce qui compte pour toi : faire partie du groupe, ne rien rater, décider toi-même."
+            },
+            {
+              "titel": "Z1 B · Portable à 22 h",
+              "text": "Tu es la mère, le père ou un éducateur. Ton enfant écrit encore dans son lit après 22 h. Le matin, il a du mal à se lever, et le dernier devoir en classe de maths s’est mal passé. Ce qui compte pour toi : le sommeil, l’école, que les accords soient respectés."
+            },
+            {
+              "titel": "Z2 A · La chambre",
+              "text": "Tu as 13 ans. Ta chambre est ton royaume ; le rangement, ce n’est pas ta priorité, tu retrouves tout. Ça t’énerve quand quelqu’un entre sans frapper. Ce qui compte pour toi : l’intimité, ton propre espace."
+            },
+            {
+              "titel": "Z2 B · La chambre",
+              "text": "Tu es la mère, le père ou une éducatrice. Depuis une semaine, des assiettes et des verres traînent dans la chambre, ça sent mauvais. Tu y entres pour prendre du linge. Ce qui compte pour toi : la propreté, que rien ne moisisse, que tout le monde participe."
+            },
+            {
+              "titel": "Z3 A · La fête",
+              "text": "Tu as 14 ans. Samedi, Chiara fête ses 15 ans jusqu’à minuit, presque toute la classe y va. Tu dois être à la maison à 22 h. Ce qui compte pour toi : rester jusqu’à la fin, ne pas avoir l’air d’un enfant."
+            },
+            {
+              "titel": "Z3 B · La fête",
+              "text": "Tu es la mère, le père ou un éducateur. Ton enfant veut aller à une fête samedi. Tu ne connais pas la famille, le dernier bus part à 22 h 40, tu t’inquiètes à cause de l’alcool. Ce qui compte pour toi : la sécurité, savoir où est ton enfant."
+            },
+            {
+              "titel": "Z4 A · Le petit frère",
+              "text": "Tu as 13 ans. Ton frère, 8 ans, prend sans arrêt ton casque – aujourd’hui, il l’a cassé. Quand tu élèves la voix, on te dit : « Tu as cinq ans de plus, cède. » Ce qui compte pour toi : la justice, tes affaires, qu’on t’écoute."
+            },
+            {
+              "titel": "Z4 B · Le petit frère",
+              "text": "Tu es la mère, le père ou une mère d’accueil. Les enfants se disputent pour la troisième fois aujourd’hui, tu n’en peux plus, le repas brûle. L’aîné crie après le petit. Ce qui compte pour toi : le calme, que personne ne se fasse mal, un bon exemple."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Négocier plus de liberté : à deux, négociez avec la feuille de route, y compris avec Z1 et Z3. Ensuite, échangez les rôles.",
+          "hinweis": "Z7, vous l’écrivez vous-mêmes – inventée et avec les deux points de vue.",
+          "symbole": [
+            "schneiden",
+            "partner"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 128,
+          "karten": [
+            {
+              "titel": "Z5 A · En ville sans adulte",
+              "text": "Tu as 14 ans. Samedi, tu veux aller en train à Luxembourg-Ville avec deux amis : cinéma, puis burger. Jusqu’ici, tu y étais toujours avec des adultes. Ce qui compte pour toi : montrer que tu en es capable, du temps avec tes amis."
+            },
+            {
+              "titel": "Z5 B · En ville sans adulte",
+              "text": "Tu es la mère, le père ou un éducateur. Ton enfant veut aller à Luxembourg-Ville avec des amis, sans adulte. Tu ne connais pas l’un des amis, et la batterie du téléphone de ton enfant est souvent vide. Ce qui compte pour toi : pouvoir joindre ton enfant, la sécurité, savoir avec qui."
+            },
+            {
+              "titel": "Z6 A · Dormir chez Zoé",
+              "text": "Tu as 14 ans et tu vis en foyer. Vendredi, Zoé t’invite à une soirée cinéma avec nuit sur place. Pour cela, il faut un accord avec l’équipe. Ce qui compte pour toi : être là comme tous les autres, ne pas devoir tout expliquer à chaque fois."
+            },
+            {
+              "titel": "Z6 B · Dormir chez Zoé",
+              "text": "Tu es éducatrice ou éducateur au foyer. Une ado veut dormir chez une amie. Tu ne connais pas la famille et tu portes la responsabilité. Ce qui compte pour toi : la sécurité, une discussion avec les parents de Zoé, bâtir la confiance."
+            },
+            {
+              "titel": "Z7 A · Votre situation",
+              "text": "Tu es … Il s’agit de … Ce qui compte pour toi : …"
+            },
+            {
+              "titel": "Z7 B · Votre situation",
+              "text": "Tu es la mère, le père, une éducatrice ou … Il s’agit de … Ce qui compte pour toi : …"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Des situations du quotidien inventées, vues sous deux angles, pour le théâtre-forum (unité 19) et les négociations (unité 20). Chaque côté a ses propres préoccupations légitimes.",
+        "ablauf": [
+          "Préparation : imprimer sur du papier épais, découper, trier séparément les cartes A et B. Écarter les cartes trop proches de la situation d’une personne du groupe.",
+          "Unité 19 : Z1 à Z4. La personne qui anime joue la carte B, une personne volontaire la carte A ; d’abord comme cela se passe souvent, puis avec des « Stop » du public.",
+          "Unité 20 : Z1, Z3, Z5 ou Z6. Les binômes négocient avec la feuille de route, chacun ne connaît que sa carte ; ensuite, échanger les rôles.",
+          "Bilan : « Quelle préoccupation de l’autre carte n’aviez-vous pas imaginée ? »"
+        ],
+        "hintergrund": "Jouer la carte de l’autre côté, c’est vivre ses préoccupations de l’intérieur – un pas efficace vers le changement de perspective. Les cartes disent donc non seulement ce que quelqu’un veut, mais aussi ce qui compte pour lui : Fisher et Ury (1981) distinguent les positions des intérêts qui se cachent derrière et montrent que des solutions durables ne deviennent possibles qu’en passant par les intérêts. Les programmes d’apprentissage socio-émotionnel agissent surtout quand ils font pratiquer activement, par exemple en jeu de rôle (Durlak et al., 2011). Les cartes inventées protègent : personne n’a à représenter sa propre famille.",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Lire seulement la carte A et dire une phrase par laquelle l’ado pourrait commencer.",
+          "schwerer": "Écrire sa propre carte Z7 – inventée et avec les deux points de vue."
+        },
+        "impulse": [
+          "Quelle préoccupation de l’autre côté vous a surpris ?",
+          "Où les deux côtés étaient-ils plus proches l’un de l’autre qu’il n’y paraissait au début ?"
+        ],
+        "tipps": [
+          "Plastifier les cartes : elles servent dans deux unités.",
+          "Z6 se passe volontairement dans un foyer : là aussi, on négocie."
+        ],
+        "achtung": "Ne jamais faire jouer de vraies personnes. Si une scène touche de trop près à des expériences vécues : l’interrompre, faire sortir du rôle et proposer un entretien individuel ; en cas d’indices de violence, informer la direction compétente (responsable).",
+        "material": "Papier épais, ciseaux, éventuellement pochettes de plastification"
+      }
     }
   },
   {
@@ -693,6 +826,152 @@
         ],
         "achtung": "Im Foyer und in Pflegefamilien gelten zusätzliche Regeln; das offen sagen, ohne Einzelne vorzuführen. Bei Hinweisen auf Gewalt oder Vernachlässigung die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt, Orange, Karten Z1, Z3, Z5, Z6"
+      }
+    },
+    "fr": {
+      "titel": "Négocier plus de liberté",
+      "untertitel": "Des intérêts plutôt que des positions – et une confiance qui grandit à petits pas",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Position ou intérêt ?",
+          "text": "Une position, c’est ce que quelqu’un exige : « Je reste jusqu’à minuit. » Un intérêt, c’est la raison derrière : être là, ne pas avoir l’air d’un enfant. On se dispute sur les positions. Avec les intérêts, on trouve des solutions."
+        },
+        {
+          "art": "aufgabe",
+          "text": "La fête de la carte Z3 : qu’y a-t-il derrière les exigences ? Complète le côté adulte et cherchez des solutions ensemble."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Qui ?",
+            "Position : ce qui est exigé",
+            "Intérêts : de quoi il s’agit"
+          ],
+          "breiten": [
+            0.9,
+            1.6,
+            2
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "Côté ado",
+            "« Je reste jusqu’à minuit. »",
+            "être là jusqu’à la fin, ne pas avoir l’air d’un enfant"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Des solutions avec lesquelles les deux côtés peuvent vivre",
+          "hoehe": 3,
+          "beispiel": "quelqu’un vient me chercher à 23 h 30"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le compte de confiance : dépôt ou retrait ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "dépôt",
+            "retrait"
+          ],
+          "items": [
+            "J’écris de moi-même quand j’arrive plus tard.",
+            "J’arrive à l’heure – même si personne ne contrôle.",
+            "Je dis « chez Zoé » et je suis ailleurs.",
+            "Je respecte un accord jusqu’à ce que nous le changions ensemble.",
+            "J’éteins mon portable pour que personne n’appelle.",
+            "Je raconte de moi-même comment s’est passée la soirée."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "La confiance grandit lentement et baisse vite",
+          "text": "Après un retrait, une seule chose aide : dire honnêtement ce qui s’est passé, réparer quelque chose et tenir le prochain accord. De petits pas avec une période d’essai rendent le oui plus facile pour les deux côtés."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Négocie avec la feuille de route – dans l’arène et, si tu veux, à la maison."
+        },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Choisir un bon moment",
+              "text": "Les deux en dessous de 50, personne ne se presse, personne ne regarde."
+            },
+            {
+              "titel": "Dire clairement sa demande",
+              "text": "« Je voudrais rester jusqu’à minuit samedi. »"
+            },
+            {
+              "titel": "Clarifier les intérêts – des deux côtés",
+              "text": "« Qu’est-ce qui compte pour toi là-dedans ? Qu’est-ce qui t’inquiète ? »"
+            },
+            {
+              "titel": "Collecter des solutions",
+              "text": "Au moins trois, y compris des solutions intermédiaires. D’abord collecter, ensuite évaluer."
+            },
+            {
+              "titel": "Convenir et essayer",
+              "text": "Concret, avec un plan B et une période d’essai. Ensuite : s’y tenir."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Si tu veux : note un vrai accord – avec ta famille ou au foyer."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Voilà ce dont nous avons convenu : …",
+            "Plan B en cas d’imprévu : …"
+          ]
+        },
+        {
+          "art": "vertrag",
+          "titel": "Période d’essai et signatures",
+          "text": "Ceci vaut à partir du ___ et à l’essai jusqu’au ___. Le ___, nous verrons ensemble si cela a marché.",
+          "unterschriften": [
+            "moi",
+            "personne adulte"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent positions et intérêts, reconnaissent ce qui construit la confiance et négocient avec une feuille de route jusqu’à un accord avec période d’essai.",
+        "ablauf": [
+          "Après l’expérience de l’orange (5 min) : lire l’encadré d’information, exercice 1 à deux ; collecter les solutions au tableau.",
+          "Exercice 2 individuellement (3 min), puis discuter l’encadré à retenir : « Qu’est-ce qui aide après un retrait ? »",
+          "Exercice 3 : utiliser la feuille de route dans l’arène de négociation, deux tours avec échange des rôles.",
+          "L’exercice 4 est une proposition facultative pour la maison ; ne pas le ramasser."
+        ],
+        "hintergrund": "Les positions sont des exigences, les intérêts les raisons qui se cachent derrière. Fisher et Ury (1981) montrent que les négociations qui partent des intérêts mènent plus souvent à des solutions avec lesquelles les deux côtés peuvent vivre. Pour les familles : l’autonomie se développe au mieux dans des relations qui restent chaleureuses et adaptent les règles ensemble, pas à pas (Steinberg, 2001). Une période d’essai et un plan B rendent les accords vérifiables ; liés à des situations concrètes, ils sont plus souvent respectés (Gollwitzer, 1999).",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Steinberg, L. (2001). We know some things: Parent–adolescent relationships in retrospect and prospect. Journal of Research on Adolescence, 11(1), 1–19.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 1 à l’oral ; la personne qui anime écrit au tableau les intérêts du côté adulte.",
+          "schwerer": "Trouver trois solutions où chaque côté obtient plus que la moitié."
+        },
+        "impulse": [
+          "Quel rapport y a-t-il entre l’orange et les heures de sortie ?",
+          "Que pouvez-vous déposer sur le compte de confiance sans que cela vous coûte beaucoup ?"
+        ],
+        "tipps": [
+          "Ne pas supprimer l’orange : un vrai objet reste plus longtemps en mémoire qu’un schéma au tableau.",
+          "Reconnaître concrètement les dépôts au quotidien, par exemple au foyer ou à l’école."
+        ],
+        "achtung": "Au foyer et en famille d’accueil, des règles supplémentaires s’appliquent ; le dire ouvertement, sans exposer personne. En cas d’indices de violence ou de négligence, informer la direction compétente (responsable).",
+        "material": "Fiche, orange, cartes Z1, Z3, Z5, Z6"
       }
     }
   },
@@ -1239,6 +1518,160 @@
         ],
         "achtung": "Keine echten Posts, keine Schimpfwörter für Gruppen. Wird jemand aus der Gruppe angegriffen oder bedroht: Einzelgespräch, Beweise sichern, die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt, Stimmkarten, Kommentar-Wand"
+      }
+    },
+    "fr": {
+      "titel": "Répondre plutôt que se taire",
+      "untertitel": "Reconnaître la haine en ligne, contredire, signaler",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Où se situe la limite",
+          "punkte": [
+            "Opinion : tu as le droit de ne pas aimer quelque chose et de le dire, même clairement. Elle porte sur la chose.",
+            "Insulte : elle attaque la personne. Si cela se répète, c’est du cyberharcèlement.",
+            "Discours de haine : il rabaisse des personnes à cause de leur groupe – origine, religion, couleur de peau, genre, orientation sexuelle, handicap.",
+            "Menace : elle annonce de la violence. On ne discute pas : sauvegarder, signaler, appeler des adultes."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Opinion, insulte, discours de haine ou menace ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Opinion",
+            "Insulte",
+            "Haine",
+            "Menace"
+          ],
+          "items": [
+            "« Cette vidéo est trop longue, au bout de 20 secondes j’ai fermé. »",
+            "« Avec une voix pareille, je n’oserais pas chanter. La honte. »",
+            "« Typique des étrangers, ils ne savent pas se tenir. »",
+            "« Les filles n’ont rien à faire au foot. »",
+            "« La nouvelle règle sur les portables dans notre lycée est une erreur, je trouve. »",
+            "« Si je te vois demain à la gare, tu vas voir ce qui t’attend. »",
+            "« Victime » – tous les jours, de la part des trois mêmes personnes, sous les vidéos de Samuel."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Contre-discours : réponds en public au commentaire – et écris un message privé à Diogo."
+        },
+        {
+          "art": "text",
+          "text": "La maison des jeunes publie une vidéo du concours de street dance. Diogo, 15 ans, danse en fauteuil roulant. En dessous, on lit :"
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "dancefan_09",
+              "text": "Qu’est-ce qu’il fait là, en fauteuil ? Ce n’est pas de la danse."
+            },
+            {
+              "wer": "Toi, en public"
+            },
+            {
+              "wer": "Toi à Diogo"
+            }
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Pour commencer une réponse",
+          "items": [
+            "Comment tu sais ça ?",
+            "C’est rabaissant. Pas ici.",
+            "Moi, je vois ça autrement : …",
+            "Critique oui – insulte non.",
+            "Les gens ne rentrent dans aucune case.",
+            "Aïe. On peut le dire gentiment ?",
+            "@Diogo, vidéo top."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Règles pour répondre",
+          "punkte": [
+            "Tu écris pour les personnes qui lisent – pas pour convaincre l’auteur du message haineux.",
+            "Contredis ce qui est dit, pas la personne. Pas d’insultes en retour.",
+            "Tu n’as pas à mener chaque combat. Un like sur une bonne réponse aide aussi.",
+            "En cas de menace, ne pas discuter."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand ça devient sérieux : que fais-tu quand la haine te vise toi-même – et que fais-tu quand elle vise d’autres personnes ?"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Sauvegarder",
+              "text": "capture d’écran avec nom, date et lien"
+            },
+            {
+              "titel": "Signaler",
+              "text": "dans l’appli ou sur le site"
+            },
+            {
+              "titel": "Bloquer",
+              "text": "si ça te vise toi-même"
+            },
+            {
+              "titel": "Demander de l’aide",
+              "text": "des adultes, BEE SECURE, la police en cas de menace"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Quand la haine me vise, …",
+            "Quand je vois de la haine contre d’autres, …"
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent opinion, insulte, discours de haine et menace, écrivent une réponse sans rabaisser et connaissent les étapes : sauvegarder, signaler, bloquer, demander de l’aide.",
+        "ablauf": [
+          "Exercice 1 avec des cartes de vote (10 min), puis cocher. Solution : 1 opinion, 2 insulte, 3 haine, 4 haine (cas limite), 5 opinion, 6 menace, 7 insulte – répétée, donc cyberharcèlement.",
+          "Lire les encadrés d’information et de conseil (5 min) : « Qui est vraiment touché par une réponse ? »",
+          "Exercice 2 après le mur de commentaires (5 min) : une réponse publique et une réponse privée, la banque de mots aide.",
+          "Exercice 3 (4 min) : discuter les étapes, puis compléter individuellement. Montrer l’encadré d’aide."
+        ],
+        "hintergrund": "Le cyberharcèlement s’en prend de façon répétée à une personne ; en ligne, il pèse lourd parce que les publications se diffusent vite et que beaucoup de gens les lisent (Hinduja & Patchin, 2015). Le discours de haine rabaisse des personnes à cause de leur appartenance à un groupe. Sans contact visuel et souvent anonymement, on écrit en ligne ce qu’on ne dirait jamais en face – Suler (2004) parle de désinhibition en ligne. Qui se tait ou like renforce l’attaque ; qui contredit ou soutient les personnes visées l’affaiblit (Salmivalli et al., 1996). Le contre-discours s’adresse donc surtout aux personnes qui lisent. Au Luxembourg, la BEE SECURE Helpline propose des conseils.",
+        "quellen": [
+          "Hinduja, S. & Patchin, J. W. (2015). Bullying Beyond the Schoolyard (2nd ed.). Thousand Oaks, CA: Corwin.",
+          "Suler, J. (2004). The online disinhibition effect. CyberPsychology & Behavior, 7(3), 321–326.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Trois catégories : opinion, blessant, menace. Exercice 2 seulement en privé.",
+          "schwerer": "Écrire une réponse avec une question et un fait, sans faire la leçon."
+        },
+        "impulse": [
+          "Pourquoi les gens écrivent-ils en ligne des choses qu’ils ne diraient jamais en face ?",
+          "Qu’est-ce qui vous aiderait si vous étiez la personne dans la vidéo ?"
+        ],
+        "tipps": [
+          "Ne pas montrer de vraies publications ou captures d’écran de l’entourage.",
+          "Écrire les meilleures phrases de réponse du groupe sur une affiche et la laisser accrochée."
+        ],
+        "achtung": "Pas de vraies publications, pas d’injures contre des groupes. Si une personne du groupe est attaquée ou menacée : entretien individuel, sauvegarder les preuves, informer la direction compétente (responsable).",
+        "material": "Fiche, cartes de vote, mur de commentaires"
       }
     }
   },

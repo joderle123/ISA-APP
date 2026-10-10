@@ -1711,13 +1711,13 @@
           "art": "comic",
           "spalten": 3,
           "felder": [
-            { "figuren": ["figur:mia:froh:jubeln", "figur:noah:ruhig"], "blase": "keine", "untertitel": "C’est le tour de Mia. Noah attend." },
+            { "figuren": ["figur:mia:froh:jubeln", "figur:noah:ruhig"], "blase": "keine", "untertitel": "C’est à Mia. Noah attend." },
             { "figuren": ["figur:mia:froh:geben", "figur:noah:froh"], "requisit": "icon:ball-football", "blase": "keine", "untertitel": "Mia : « C’est ton tour. »" },
             {
               "figuren": ["figur:mia:ruhig", "figur:noah:froh:jubeln"],
               "requisit": "icon:ball-football",
               "blase": "keine",
-              "untertitel": "C’est le tour de Noah. Mia attend."
+              "untertitel": "C’est à Noah. Mia attend."
             }
           ]
         },
@@ -2584,13 +2584,13 @@
       "lehrer": {
         "ziel": "Les enfants découvrent des adultes qui les aident, reconnaissent des situations où chercher de l’aide et s’exercent à une phrase simple pour demander de l’aide.",
         "ablauf": [
-          "Entrée en matière (5 min) : regarder la suite d’images. Demander : « Que s’est-il passé pour Noah ? Que fait-il ensuite ? »",
-          "Rejouer : un enfant est Noah, l’adulte aide. Tout le monde dit avec lui la phrase « Tu peux m’aider, s’il te plaît ? »",
-          "Tâche 2 : nommer les images. Chaque enfant montre qui l’aide. Citer les prénoms des adultes de l’école.",
-          "Tâche 3 : pour chaque image, demander : « Que fais-tu quand … ? » Faire répondre avec la phrase exercée.",
-          "Conclusion : montrer ensemble où les enfants trouvent un adulte pendant la récré."
+          "Début (5 min) : regarder la suite d’images. Demander : « Que s’est-il passé pour Noah ? Que fait-il ensuite ? »",
+          "Rejouer : un enfant est Noah, l’adulte aide. Tous disent la phrase « Tu peux m’aider, s’il te plaît ? »",
+          "Tâche 2 : nommer les images. Chaque enfant montre qui l’aide ; citer les prénoms des adultes de l’école.",
+          "Tâche 3 : pour chaque image, demander « Que fais-tu quand … ? » ; répondre avec la phrase exercée.",
+          "Fin : montrer ensemble où trouver un adulte pendant la récré."
         ],
-        "hintergrund": "Chercher de l’aide est une capacité importante pour les jeunes enfants – et une question de relation. La recherche sur la résilience montre que des relations fiables avec des adultes bienveillants comptent parmi les plus forts facteurs de protection dans le développement (Masten, 2014). Dans l’étude de Kauai, beaucoup d’enfants qui grandissaient dans des conditions difficiles ont trouvé un appui auprès de personnes de référence hors de la famille, par exemple des enseignants ou des voisins (Werner & Smith, 1992). Pour chercher de l’aide, les enfants doivent savoir qui est disponible et avoir à portée de main une phrase simple. Rejouer la scène plusieurs fois rend cette phrase disponible aussi dans les moments d’émotion.",
+        "hintergrund": "Demander de l’aide est une capacité importante pour les jeunes enfants – et une question de relation. La recherche sur la résilience montre que des relations fiables avec des adultes bienveillants comptent parmi les plus forts facteurs de protection (Masten, 2014). Dans l’étude de Kauai, beaucoup d’enfants qui grandissaient dans des conditions difficiles ont trouvé un appui auprès de personnes de référence hors de la famille, enseignants ou voisins par exemple (Werner & Smith, 1992). Pour demander de l’aide, les enfants doivent savoir qui est disponible et avoir une phrase simple à portée de main. Rejouer la scène la rend disponible aussi dans les moments d’émotion.",
         "quellen": [
           "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
           "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press."
@@ -2605,10 +2605,10 @@
           "Qui as-tu déjà aidé ?"
         ],
         "tipps": [
-          "Répondre gentiment à chaque demande d’aide – même petite. Les enfants apprennent ainsi que demander vaut la peine.",
-          "Associer la phrase à un geste (lever la main) – cela aide les enfants qui parlent peu le français."
+          "Répondre gentiment à chaque demande, même petite : les enfants apprennent que demander vaut la peine.",
+          "Associer la phrase à un geste (lever la main) : cela aide les enfants qui parlent peu le français."
         ],
-        "achtung": "Si un enfant montre une grande peur ou raconte que quelqu’un lui fait mal : le prendre au sérieux, ne pas l’interroger devant le groupe, l’écouter seul et informer la direction compétente (responsable). En cas d’indices de violence, agir immédiatement selon la procédure interne.",
+        "achtung": "Si un enfant montre une grande peur ou dit que quelqu’un lui fait mal : le prendre au sérieux, ne pas l’interroger devant le groupe, l’écouter seul et informer la direction compétente (responsable). En cas d’indices de violence, agir tout de suite selon la procédure interne.",
         "material": "En option : photos des adultes de l’école et de la Maison Relais"
       }
     }

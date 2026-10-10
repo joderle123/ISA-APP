@@ -140,20 +140,20 @@
       "lehrer": {
         "ziel": "Les enfants savent que la puberté arrive pour tout le monde, mais à des moments différents. Ils nomment les émotions qui y sont liées, s’exercent à répondre à des remarques dévalorisantes et connaissent des personnes à qui poser leurs questions.",
         "ablauf": [
-          "Préparation : installer une boîte à questions pour des petits papiers anonymes ; informer les parents du thème à l’avance.",
-          "Entrée en matière (5 min) : convenir de règles – personne n’est obligé de raconter quelque chose de personnel, personne n’est moqué, toutes les questions sont permises.",
-          "Tâche 1 en travail individuel, puis correction en commun (10 min). Solution : 1, 3 et 5 sont faux ; 2, 4 et 6 sont vrais.",
+          "Préparation : installer une boîte à questions (papiers anonymes) ; informer les parents à l’avance.",
+          "Début (5 min) : convenir de règles – rien de personnel à raconter, personne n’est moqué, toutes les questions sont permises.",
+          "Tâche 1 en individuel, puis correction en commun (10 min). Solution : 1, 3 et 5 sont faux ; 2, 4 et 6 sont vrais.",
           "Lire l’histoire, tâches 2 et 3 (15 min). Questions : « Pourquoi Nora rit-elle avec les autres ? » « Est-ce encore pour rire ? » Essayer des réponses pour Nora en jeu de rôle.",
-          "Tâche 4 en travail individuel ; la main n’est pas ramassée.",
-          "À la séance suivante, répondre aux questions de la boîte de façon factuelle et sans citer de noms ; transmettre ce qui reste ouvert à la Médecine scolaire."
+          "Tâche 4 en individuel ; la main n’est pas ramassée.",
+          "Séance suivante : répondre aux questions de la boîte, sans noms ; transmettre le reste à la Médecine scolaire."
         ],
-        "hintergrund": "La puberté commence aujourd’hui plus tôt qu’il y a quelques générations, et son début varie de plusieurs années d’un enfant à l’autre (Steinberg, 2014). Un enfant nettement en avance ou en retard sur la classe se sent souvent particulièrement observé. En même temps, le regard des pairs prend du poids – les remarques dévalorisantes sur le corps blessent particulièrement à cet âge. Des informations factuelles apaisent les inquiétudes, un ton respectueux protège de la honte. Savoir nommer des émotions comme l’incertitude ou la honte aide à les confier et à aller chercher de l’aide (Brackett, 2019).",
+        "hintergrund": "La puberté commence aujourd’hui plus tôt qu’il y a quelques générations, et son début varie de plusieurs années d’un enfant à l’autre (Steinberg, 2014). Un enfant nettement en avance ou en retard sur la classe se sent souvent très observé. Le regard des pairs prend du poids, et les remarques dévalorisantes sur le corps blessent particulièrement. Des informations factuelles apaisent les inquiétudes, un ton respectueux protège de la honte. Savoir nommer l’incertitude ou la honte aide à les confier et à chercher de l’aide (Brackett, 2019).",
         "quellen": [
           "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
           "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
         ],
         "differenzierung": {
-          "leichter": "Lire la tâche 1 ensemble et répondre avec le pouce en haut ou en bas. À la tâche 3, formuler seulement une phrase pour Nora.",
+          "leichter": "Tâche 1 lue ensemble, réponse avec le pouce en haut ou en bas. Tâche 3 : une seule phrase pour Nora.",
           "schwerer": "Formuler des règles de respect pour le vestiaire et les proposer au conseil de classe."
         },
         "impulse": [
@@ -161,11 +161,11 @@
           "Qu’attends-tu de ta classe quand tu changes ?"
         ],
         "tipps": [
-          "Employer des mots factuels, rester serein en cas de fous rires – la gêne fait partie du sujet.",
+          "Employer des mots factuels, rester serein en cas de fous rires : la gêne fait partie du sujet.",
           "En petits groupes, certains enfants posent leurs questions plus librement."
         ],
-        "achtung": "Ne pas approfondir les situations personnelles en plénière, mais les reprendre en entretien individuel et informer la direction compétente (responsable). En cas d’indices de violation des limites ou de contacts non voulus : agir immédiatement selon la procédure interne, ne pas laisser l’enfant seul.",
-        "material": "Boîte pour la boîte à questions, petits papiers"
+        "achtung": "Ne pas approfondir le personnel en plénière : en parler en tête à tête et informer la direction compétente (responsable). En cas d’indices de limites franchies ou de contacts non voulus : agir tout de suite selon la procédure interne, ne pas laisser l’enfant seul.",
+        "material": "Une boîte pour les questions, petits papiers"
       }
     }
   },
@@ -450,7 +450,7 @@
     },
     "fr": {
       "titel": "Ça, je sais déjà le faire",
-      "anleitung": "Nommer ensemble les images. L’enfant entoure ce qu’il sait déjà faire, puis dessine à gauche quelque chose qu’il fait bien et à droite quelque chose qu’il apprend en ce moment. Dire ce qu’il a réussi : « Tu as fermé ta veste tout seul. »",
+      "anleitung": "Nommer les images ensemble. L’enfant entoure ce qu’il sait déjà faire, puis dessine à gauche ce qu’il fait bien et à droite ce qu’il apprend en ce moment. Dire ce qu’il a réussi : « Tu as fermé ta veste tout seul. »",
       "bausteine": [
         { "art": "aufgabe", "text": "Que sais-tu déjà faire ? Entoure.", "symbole": ["zeigen", "einkreisen"] },
         {
@@ -469,7 +469,7 @@
         {
           "art": "spalten",
           "links": [{ "art": "aufgabe", "text": "Ça, je sais déjà faire.", "symbole": ["malen"] }, { "art": "feld", "zeichnen": true, "hoehe": 4.5 }],
-          "rechts": [{ "art": "aufgabe", "text": "Ça, j’apprends en ce moment.", "symbole": ["malen"] }, { "art": "feld", "zeichnen": true, "hoehe": 4.5 }]
+          "rechts": [{ "art": "aufgabe", "text": "Ça, j’apprends.", "symbole": ["malen"] }, { "art": "feld", "zeichnen": true, "hoehe": 4.5 }]
         }
       ],
       "lehrer": {

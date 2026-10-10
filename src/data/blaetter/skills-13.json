@@ -1053,31 +1053,31 @@
         }
       ],
       "lehrer": {
-        "ziel": "À partir d’un personnage inventé, les jeunes décrivent l’amour naissant et le chagrin d’amour, appliquent la règle de base du consentement à des situations du quotidien et s’exercent à accepter un non.",
+        "ziel": "À partir d’un personnage inventé, les jeunes décrivent l’amour naissant et le chagrin d’amour, appliquent le consentement au quotidien et s’exercent à accepter un non.",
         "ablauf": [
-          "Avant : lettre aux parents, direction (responsable) informée, règles affichées, boîte à questions prête.",
+          "Avant : lettre aux parents, responsable informé, règles affichées, boîte à questions prête.",
           "Lire l’histoire, exercices 1 et 2 individuellement (7 min). Souligner : il s’agit de Luca, pas de vous.",
-          "Après le parcours du feu tricolore : encadré à retenir, exercice 3 (4 min). Corrigé : 1 OK, 2 d’abord demander, 3 stop, 4 stop – personne n’outera les autres, 5 d’abord demander.",
-          "Après « Accepter un non » : exercice 4 (3 min), deux ou trois volontaires lisent. Pour finir, montrer l’encadré d’aide."
+          "Après le parcours du feu tricolore : encadré à retenir, exercice 3 (4 min). Corrigé : 1 OK, 2 et 5 d’abord demander, 3 et 4 stop (personne n’outera les autres).",
+          "Après « Accepter un non » : exercice 4 (3 min), deux ou trois volontaires lisent. Pour finir : l’encadré d’aide."
         ],
-        "hintergrund": "Collins (2003) décrit les sentiments amoureux à l’adolescence comme répandus et importants pour le développement : ils s’accompagnent d’émotions fortes et sont un terrain d’entraînement à la proximité et au respect. Le chagrin d’amour est donc à prendre au sérieux. Ici, le consentement s’exerce sur des situations du quotidien – câlin, photo, message, rumeur. Les programmes qui entraînent tôt ces compétences réduisent plus tard la violence dans les relations (Foshee et al., 2004). La fiche ne contient volontairement aucun contenu sexuel : il suit en troisième année du cours.",
+        "hintergrund": "Collins (2003) décrit les sentiments amoureux à l’adolescence comme répandus et importants pour le développement : émotions fortes, terrain d’entraînement à la proximité et au respect. Le chagrin d’amour est donc à prendre au sérieux. Le consentement s’exerce ici sur des situations du quotidien – câlin, photo, message, rumeur. Les programmes qui entraînent tôt ces compétences réduisent plus tard la violence dans les relations (Foshee et al., 2004). La fiche ne contient volontairement aucun contenu sexuel, qui suit en troisième année du cours.",
         "quellen": [
           "Collins, W. A. (2003). More than myth: The developmental significance of romantic relationships during adolescence. Journal of Research on Adolescence, 13(1), 1–24.",
           "Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624."
         ],
         "differenzierung": {
           "leichter": "Lire l’exercice 3 ensemble et évaluer à main levée.",
-          "schwerer": "Écrire une situation « orange » personnelle – et comment on peut poser la question."
+          "schwerer": "Écrire une situation « orange » et une façon de poser la question."
         },
         "impulse": [
           "Pourquoi est-il si difficile d’accepter un non quand on est amoureux ?",
           "Demander, est-ce peu romantique – ou respectueux ?"
         ],
         "tipps": [
-          "Ouvrir la boîte à questions en équipe ; répondre brièvement aux questions sur la sexualité ou orienter vers les services compétents.",
-          "Changer les prénoms si quelqu’un dans le groupe s’appelle ainsi."
+          "Ouvrir la boîte en équipe ; répondre brièvement aux questions sur la sexualité ou orienter.",
+          "Changer les prénoms si quelqu’un du groupe s’appelle ainsi."
         ],
-        "achtung": "Agression, pression pour des images, violence dans une relation : en parler calmement après la séance, ne rien promettre, suivre la procédure de protection, informer le jour même la direction compétente (responsable) ; danger aigu : 112.",
+        "achtung": "Agression, pression pour des images, violence : en parler calmement après la séance, ne rien promettre, appliquer la procédure de protection, informer la direction (responsable) le jour même ; danger aigu : 112.",
         "material": "Fiches, boîte à questions"
       }
     }
