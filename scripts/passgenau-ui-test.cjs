@@ -89,7 +89,7 @@ const PRAXIS = [
     inhalt: { weg: 'gruendlich', n: 2, dauer: 30, sitzungen: [
       sitzung('verstehen', [{ ref: 'r:wetterbericht', h: '6bf63f9f', rolle: 'ankommen', min: 4 }, { ref: 'm:alles-eine-frage-der-perspektive:0', h: '1458d604', rolle: 'einstieg', min: 5 }, { ref: 'm:die-schatztruhe-der-ruhe:1', h: '817f066c', rolle: 'kern', min: 9 }, { ref: 'pg:blatt', h: 'pgblatt1', rolle: 'uebung', min: 8 }, { ref: 'r:staerken-stein', h: '2323a34d', rolle: 'abschluss', min: 4 }],
         { titel: 'Mein Stopp-Plan', bausteine: [{ ref: 'b:wutvulkan:1', h: '1af6f69d', ueber: { '1.items.1': 'Stopp. Ich zähle bis drei.' }, ueberHerkunft: { '1.items.1': 'eigen' } }, { ref: 'b:wutvulkan:2', h: 'e6a9d578' }, { ref: 'b:ruhig-werden-drei-uebungen:0', h: '3aa22f38' }] }),
-      sitzung('ueben', [{ ref: 'r:wetterbericht', h: '6bf63f9f', rolle: 'ankommen', min: 4 }, { ref: 'fb:wandschieben', h: '13609089', rolle: 'bewegung', min: 5 }, { ref: 'm:die-schatztruhe-der-ruhe:2', h: 'eafeefb1', rolle: 'kern', min: 12 }, { ref: 'pg:blatt', h: 'pgblatt1', rolle: 'uebung', min: 5 }, { ref: 'r:staerken-stein', h: '2323a34d', rolle: 'abschluss', min: 4 }],
+      sitzung('ueben', [{ ref: 'r:wetterbericht', h: '6bf63f9f', rolle: 'ankommen', min: 4 }, { ref: 'pg:wand-schieben', h: 'pgwand01', rolle: 'bewegung', min: 5 }, { ref: 'm:die-schatztruhe-der-ruhe:2', h: 'eafeefb1', rolle: 'kern', min: 12 }, { ref: 'pg:blatt', h: 'pgblatt1', rolle: 'uebung', min: 5 }, { ref: 'r:staerken-stein', h: '2323a34d', rolle: 'abschluss', min: 4 }],
         { titel: 'Mein Stopp-Plan', bausteine: [{ ref: 'b:wutvulkan:3', h: 'ad830e23' }, { ref: 'b:ruhig-werden-drei-uebungen:1', h: '75ee5290' }] }),
     ] },
   },

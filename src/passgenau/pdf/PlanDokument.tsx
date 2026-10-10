@@ -170,12 +170,14 @@ function LText({ children, farbe, klein, fett, kursiv, m = PLAN_NORMAL }: { chil
   return <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: klein ? m.klein : m.basis, fontWeight: fett ? 600 : 400, lineHeight: m.lh, color: farbe ?? NEUTRAL.text, ...(kursiv ? { fontStyle: 'normal' } : {}) }}>{children}</Text>
 }
 
-function SchrittZeile({ x, i, d, m }: { x: DruckSchritt; i: number; d: DruckSitzung; m: PlanMasse }) {
+/** `vorAus`: Platz, den die nächste Zeile braucht – der vorletzte Schritt geht mit auf die neue Seite, statt den Abschluss
+ *  allein auf Seite 2 zu lassen (Blind-Bewertung 8: „Planblatt-Seite 2 enthält nur den Abschluss“). */
+function SchrittZeile({ x, i, d, m, vorAus = 0 }: { x: DruckSchritt; i: number; d: DruckSitzung; m: PlanMasse; vorAus?: number }) {
   const tx = T[d.sprache]
   const sp = d.sprache
   const absaetze = x.text.split('\n').filter(Boolean)
   return (
-    <View id={`pg-teil:${d.nr}:schritt:${i}`} wrap={false} style={{ flexDirection: 'row', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingVertical: m.pad }}>
+    <View id={`pg-teil:${d.nr}:schritt:${i}`} wrap={false} minPresenceAhead={vorAus} style={{ flexDirection: 'row', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingVertical: m.pad }}>
       <View style={{ width: 62, paddingRight: 6 }}>
         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 13, color: P.tief }}>{`${x.min}`}<Text style={{ fontSize: 7.4, fontFamily: SCHRIFT.jugend, fontWeight: 400, color: NEUTRAL.leise }}>{` ${tx.min}`}</Text></Text>
         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, letterSpacing: 0.6, color: NEUTRAL.leise, marginTop: 2 }}>{x.rolle.toUpperCase()}</Text>
@@ -331,7 +333,7 @@ export function PlanSeite({ d }: { d: DruckSitzung }) {
       </View>
       <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text, marginBottom: 2 }}>{tx.ablauf}</Text>
       {d.schritte.map((x, i) => (
-        <SchrittZeile key={i} x={x} i={i} d={d} m={m} />
+        <SchrittZeile key={i} x={x} i={i} d={d} m={m} vorAus={i === d.schritte.length - 2 ? schrittHoehe(d.schritte[i + 1], d, m) : 0} />
       ))}
       <Fuss sprache={sp} spielschule={spielschule} />
     </Page>

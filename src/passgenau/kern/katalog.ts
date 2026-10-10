@@ -95,6 +95,9 @@ function stelle(m: { id: string; stelle?: number }): number {
   return m.stelle ?? Number(/(\d+)$/.exec(m.id)?.[1] ?? 0)
 }
 
+/** Luxemburgisch geschriebene Material-Titel (der Text ist deutsch). */
+export const LB_TITEL_RE = /ë|\b(De|Den|D['’]|mat|een|vun|sech|mäi|Mäi|meng|Meng|net|Net|fir|zesumme|wat|Wat|ech|wéi|gëtt|Kanner|ons|ass)\b/
+
 /** Texte eines Stundenschritts aus seiner Quelle (null: Quelle fehlt – Eintrag fällt weg). */
 function texteAusQuelle(m: { id: string; stelle?: number }, q: Quellen, idx: Indizes): Texte | null {
   const [art, quelle] = m.id.split(':')
@@ -133,10 +136,14 @@ function texteAusQuelle(m: { id: string; stelle?: number }, q: Quellen, idx: Ind
     const roh = /^(einstieg|hauptteil(\s*\d+)?|abschluss|vertiefung|teil\s*\d+|phase\s*\d+)\s*:\s*(.+)$/i.exec(ohneMin)?.[3] ?? ohneMin
     const nachStrich = roh.includes(' – ') ? roh.split(' – ').slice(1).join(' – ') : roh.includes(' - ') ? roh.split(' - ').slice(1).join(' - ') : roh
     // „Spielen“, „Durchführung 2“, „Hauptteil“: allein sagt das nichts – dann der Titel des Materials
-    const allgemein = /^(einstieg|spielen|durchführung|üben( und vertiefen)?|übung(sphase)?|hauptteil|hauptphase|arbeitsphase|erarbeitung|aktivität|vertiefung|vertiefen|anwendung|praxis|phase|einheit|stunde|input|gestalten|auswertung|abschluss|reflexion|transfer|teil)(\s*\d+)?\s*(\(.*\))?$/i.test(nachStrich.trim())
-    const titel = !nachStrich || allgemein ? mat.title : nachStrich
+    // Blind-Bewertung 8: „Ritual“, „Reise“, „Bauen“ als Titel des Kerns und als Echo im Einstieg sagen nichts
+    const allgemein = /^(einstieg|spielen|durchführung|üben( und vertiefen)?|übung(sphase)?|hauptteil|hauptphase|arbeitsphase|erarbeitung|aktivität|vertiefung|vertiefen|anwendung|praxis|phase|einheit|stunde|input|gestalten|auswertung|abschluss|reflexion|transfer|teil|ritual|reise|bauen|basteln|malen|spiel|lied|geschichte)(\s*\d+)?\s*(\(.*\))?$/i.test(nachStrich.trim())
+    // luxemburgischer Titel über deutschem Text (102 von 600 Materialien): nicht als Titel oder Quelle drucken
+    // (Blind-Bewertung 8: „Suergesteng: ofginn a lass loossen“ im deutschen Plan)
+    const lb = LB_TITEL_RE.test(mat.title)
+    const titel = !nachStrich || allgemein ? (lb ? kurz(a.text.split(SATZ_GRENZE)[0] ?? nachStrich, 50) : mat.title) : nachStrich
     return {
-      quelle: { art: 'material', titel: mat.title },
+      quelle: { art: 'material', titel: lb ? '' : mat.title },
       titel, text: a.text,
       achtung: mat.remark, vorbereitung: mat.materialsNeeded,
     }
@@ -535,7 +542,7 @@ export function quelleText(e: KatalogEintrag, sprache: Sprache = 'de'): string {
     return `${e.quelle.nr} · ${titel}`
   }
   const name = QUELLE_NAME[e.quelle.art]?.[sprache] ?? e.quelle.art
-  if (e.quelle.art === 'freude' || e.quelle.art === 'ritual' || e.quelle.art === 'praxis') return name
+  if (e.quelle.art === 'freude' || e.quelle.art === 'ritual' || e.quelle.art === 'praxis' || !e.quelle.titel) return name
   return `${name} · ${e.quelle.titel}`
 }
 

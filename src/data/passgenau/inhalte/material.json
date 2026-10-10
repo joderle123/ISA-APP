@@ -110,5 +110,29 @@
  "karopapier": {
   "de": "Karopapier",
   "fr": "papier quadrillé"
+ },
+ "buntstifte": {
+  "de": "Buntstifte",
+  "fr": "crayons de couleur"
+ },
+ "karten": {
+  "de": "Karteikarten",
+  "fr": "fiches cartonnées"
+ },
+ "knete": {
+  "de": "Knete",
+  "fr": "pâte à modeler"
+ },
+ "handpuppe": {
+  "de": "Handpuppe",
+  "fr": "marionnette"
+ },
+ "bausteine": {
+  "de": "Bauklötze",
+  "fr": "cubes"
+ },
+ "sanduhr": {
+  "de": "Sanduhr oder Timer",
+  "fr": "sablier ou minuteur"
  }
 }

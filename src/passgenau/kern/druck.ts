@@ -254,9 +254,15 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     erkundung: x.erkundung,
   }
   // Blind-Bewertung 9.10.: Optionen ohne Anleitung („Carte au trésor“ – und dann?) – jede Option mit einem Satz
+  // Blind-Bewertung 8: die Beschreibung der ersten Option stand unter den anderen – jede Option trägt ihren Satz selbst,
+  // der Schritt heißt neutral „Zur Wahl“
+  if (x.wahl?.length) {
+    d.titel = sprache === 'fr' ? 'Une activité au choix' : 'Eine Aktivität zur Wahl'
+    d.text = ''
+  }
   if (x.wahl?.length)
     d.wahl = [
-      { titel: t.titel, min: x.min },
+      { titel: t.titel, min: x.min, ...(kuerzen(textVon(e, sprache).text.replace(/\n+/g, ' '), 170) ? { kurz: kuerzen(textVon(e, sprache).text.replace(/\n+/g, ' '), 170)! } : {}) },
       ...x.wahl.map((w) => {
         const we = k.eintraege.get(w.ref)
         const titel = (w.ref === 'pg:blatt' ? (sprache === 'fr' ? 'Page à colorier / à jouer' : w.t) : we ? textVon(we, sprache).titel : w.t) ?? w.ref
@@ -316,7 +322,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     }
     if (e.typ === 'schritt' && !e.id.startsWith('s:')) {
       // Förderfach auf Französisch: die französische Vorbereitung der Einheit (deutsche nur, wo es keine Fassung gibt)
-      const v = sp === 'fr' && e.fr && e.id.startsWith('f:') ? e.fr.vorbereitung : e.vorbereitung
+      // … und ebenso jede übersetzte Übung (Jugend, Kinder, fr-kern; R9: „fr.vorbereitung wird nicht gelesen“)
+      const v = sp === 'fr' && e.fr?.vorbereitung ? e.fr.vorbereitung : e.vorbereitung
       if (v) vorbereitung.add(kuerzen(v, 200)!)
     }
     // Elternbrief der Einheit nur, wenn er diesen Schritt betrifft – und nie bei offenem Kinderschutz-Thema
@@ -354,6 +361,11 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     }
   }
   const matSeite = materialSeite(k, p, plan, nr, sp)
+  // C1/C2: höchstens eine Seite fürs Kind (A11) – gibt es ein Blatt, keine zusätzliche Kartenseite (die Stundenleiste
+  // steht oben auf dem Blatt, die Wahl im Planblatt)
+  const kartenSeite = opt.karten && !(s.blatt && ['C1', 'C2'].includes(stufeAusAlter(p.alterJahre))) ? karten(k, p, plan, nr, sp) : null
+  // die Karten stehen im Material und sagen, wann sie dran sind (Blind-Bewertung 8: „Karten-Seite im Ablauf nicht erwähnt“)
+  if (kartenSeite) mat.add(sp === 'fr' ? 'les cartes de la séance (imprimées) – montrer la frise au début' : 'die Karten zur Stunde (gedruckt) – die Stundenleiste zu Beginn zeigen')
   if (matSeite) mat.add(sp === 'fr' ? 'la page de matériel (imprimée, à découper)' : 'die Materialseite (gedruckt, ausschneiden)')
   const tippSchon = new Set<string>()
   const imBlatt = new Set((s.blatt?.bausteine ?? []).map((b) => b.ref))
@@ -418,7 +430,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       : {}),
     // C1/C2: höchstens eine Seite fürs Kind (A11) – gibt es ein Blatt, keine zusätzliche Kartenseite (die Stundenleiste
     // steht oben auf dem Blatt, die Wahl im Planblatt)
-    karten: opt.karten && !(s.blatt && ['C1', 'C2'].includes(stufeAusAlter(p.alterJahre))) ? karten(k, p, plan, nr, sp) : null,
+    karten: kartenSeite,
     materialSeite: matSeite,
     sprache: sp,
     warum: opt.warum,
@@ -508,15 +520,8 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
     : WORT[x.rolle]
   const leiste = s.schritte.slice(0, 7).map((x) => ({ text: wort(x)[sprache], bild: wort(x).bild, min: x.min }))
   if (leiste.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: leiste })
-  const ritual = k.eintraege.get(s.schritte.find((x) => x.rolle === 'ankommen')?.ref ?? '')
-  const anspruch = ritual?.anspruch ?? 1
-  // ist das Ankommens-Ritual selbst schon ein Check-in (Gefühlstiere, Wetter, Zahl), keine zweite Karte dafür
-  const ritualText = ritual ? textVon(ritual, 'de').titel + ' ' + textVon(ritual, 'de').text : ''
-  const selbstCheckin = /(gefühl|wie geht|stimmung|wetter|heute zu (ihm|ihr|dir) passt|zahl von|skala|daumen)/i.test(ritualText)
-  // in Krisenlage keine Gefühle abfragen (A12): Stimmung ≤ 2, Weg 3 mit belastender Tagesform, Vorsicht Trauma/Trauer
-  const krise = (plan.auftrag?.heute?.stimmung ?? 4) <= 2 || p.vorsicht.includes('trauma') || p.vorsicht.includes('trauer') ||
-    (plan.weg === 'leicht' && (plan.auftrag?.tagesformen ?? []).some((t) => ['traurig', 'aengstlich', 'rueckzug', 'aufgewuehlt', 'wuetend'].includes(t)))
-  if (anspruch >= 1 && !selbstCheckin && !krise) bausteine.push({ art: 'checkin', modus: jugend ? 'zahl' : alter <= 7 ? 'gesichter' : 'wetter' })
+  // keine zweite Befindlichkeits-Abfrage auf der Karte (Blind-Bewertung 8: „Skala 0–10 ohne Ankerwerte, im Ablauf nicht
+  // erwähnt“, „Wetter-Karte, die Stunde nutzt den Akku“): das Ankommens-Ritual fragt schon, wie es geht
   const wahl = s.schritte.find((x) => x.wahl?.length)
   if (wahl) {
     const optionen = [wahl, ...(wahl.wahl ?? [])].slice(0, 3).map((w) => {
@@ -530,7 +535,9 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
     bausteine.push({ art: 'wahlkarte', frage: sprache === 'fr' ? 'Aujourd’hui, je choisis :' : 'Heute wähle ich:', optionen })
   }
   // keine Wochenziel-Karte mehr (Blind-Bewertung 9.10., A9): der Ich-Satz des Förderziels gehört nicht aufs Papier des Kindes
-  if (bausteine.length < 2) return null
+  // nur die Stundenleiste: lohnt eine eigene Seite nur, wenn sie dem Kind hilft (Struktur, Bildplan)
+  const hilftLeiste = (p.hilft ?? []).some((h) => h === 'stundenleiste' || h === 'bildplan') || p.zugang.struktur === 'hoch'
+  if (bausteine.length < 2 && !(hilftLeiste && bausteine.length === 1 && !s.blatt)) return null
   const kb = s.blatt ? kinderblatt(k, p, plan, nr, sprache) : null
   const titel = sprache === 'fr' ? 'Cartes pour la séance' : 'Karten zur Stunde'
   // keine Anweisung für Erwachsene auf dem Papier des Kindes (A3) – „ausschneiden“ steht im Planblatt

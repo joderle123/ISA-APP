@@ -552,6 +552,8 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
     } else if (/^(k|f|m|c):/.test(e.id) && e.rolle.includes('kern')) g *= e.einzelvariante ? 0.6 : 0.45
     else if (e.id.startsWith('s:') && e.rolle.includes('kern')) g *= 0.8
   }
+  // Material mit luxemburgischem Titel (Text deutsch): Titel und Quelle fehlen im Plan – nur, wenn wenig anderes passt
+  if (e.typ === 'schritt' && e.id.startsWith('m:') && !e.quelle.titel) g *= 0.5
   // Einzelstunde: Schritte, die nur für Gruppen beschrieben sind (ohne Einzelvariante), zählen weniger – die Beschriftung
   // nennt 1290 solcher Schritte „einzeltauglich“; im Zweifel gewinnt, was für ein Kind geschrieben ist (Testlauf 9.10.)
   if ((c.a.sozialform === 'einzeln' || !c.a.sozialform) && e.typ === 'schritt' && !e.einzelvariante && !e.sozialform.some((x) => x === 'einzeln' || x === 'zu-zweit')) g *= 0.8

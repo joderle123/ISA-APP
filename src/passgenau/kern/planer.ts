@@ -314,7 +314,7 @@ function lockerGrund(c: Kontext, e: KatalogEintrag, locker: number): string | un
 // ---------------------------------------------------------------------------------------------------------------------
 
 /** Rituale, die auf eine nächste Sitzung der Folge zählen („In der nächsten Stunde wird zuerst hineingeschaut“) */
-const FOLGE_RITUAL_RE = /(in der nächsten Stunde|nächste[ns]? Mal (wird|ist|liegt|bereit)|über die Folge|der Folge\b|fürs nächste Mal|zur nächsten Stunde|séance suivante|la prochaine fois|de la série|au fil de la série|pour la prochaine fois)/i
+const FOLGE_RITUAL_RE = /(mit jeder Stunde|jede Stunde wird|à chaque séance|chaque séance, |in der nächsten Stunde|nächste[ns]? Mal (wird|ist|liegt|bereit)|über die Folge|der Folge\b|fürs nächste Mal|zur nächsten Stunde|séance suivante|la prochaine fois|de la série|au fil de la série|pour la prochaine fois)/i
 function folgeRitual(e: KatalogEintrag): boolean {
   if (e.typ !== 'schritt') return false
   return FOLGE_RITUAL_RE.test(`${e.titel} ${e.text} ${(e.sagen ?? []).join(' ')} ${e.fr?.text ?? ''} ${e.fr?.titel ?? ''}`)
@@ -861,7 +861,10 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     const em = einstieg ? merkmaleVon(c.k, einstieg) : new Set<string>()
     if (einstieg?.typ === 'schritt' && !em.has('gruppe') && !em.has('ihr') && !em.has('jugend') && !(em.has('gefuehlfrage') && krisenlage(c))) {
       const t = einstieg.text.replace(/\s+/g, ' ').trim()
-      kernSchritt.hinweis = `Erst kurz einführen: ${kurz(t, 200)}`
+      // ohne abgeschnittenes Zitat (Blind-Bewertung 8: „„Wer steht hinter diesen Schuhen ?“ ist abgeschnitten“)
+      let k2 = kurz(t, 260)
+      if ((k2.match(/„/g) ?? []).length > (k2.match(/“/g) ?? []).length) k2 = k2.slice(0, k2.lastIndexOf('„')).replace(/[\s:,–-]+$/, '') + (k2.lastIndexOf('„') > 0 ? '.' : '')
+      if (k2.length > 20) kernSchritt.hinweis = `Erst kurz einführen: ${k2}`
     }
   }
   // Französisch bevorzugt (T-M4): sagen, wie viele Teile es nur auf Deutsch gibt

@@ -142,7 +142,14 @@ regel(15, 'sprache.fr ohne französischen Text', 'fehler', [
         for (const o of opt) if (o.ref && !k.eintraege.has(o.ref)) f.push(`${id}: Option ${o.ref} fehlt im Katalog`)
         continue
       }
-      if (!/^(fb|r|pa|j):[a-z0-9-]+$/.test(id)) f.push(`${d}: Id „${id}“`)
+      // Ergänzung eines vorhandenen Schritts (fr-kern.json: nur id und französischer Text)
+      if (/^(m|k|f|c|s):/.test(id)) {
+        const fr = x.fr as { titel?: string; text?: string } | undefined
+        if (!fr?.titel || !fr?.text) f.push(`${id}: Ergänzung ohne fr.titel/fr.text`)
+        if (!k.eintraege.has(id)) f.push(`${id}: ergänzter Schritt nicht im Katalog`)
+        continue
+      }
+      if (!/^(fb|r|pa|j|ki):[a-z0-9-]+$/.test(id)) f.push(`${d}: Id „${id}“`)
       if (!x.titel || !x.text || !Array.isArray(x.rolle) || !(x.rolle as unknown[]).length) f.push(`${id}: titel/text/rolle fehlt`)
       const a = x.alter as { von: number; bis: number } | undefined
       if (!a || a.von > a.bis || a.von < 3) f.push(`${id}: Altersband`)
