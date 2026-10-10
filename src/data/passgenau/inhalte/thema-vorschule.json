@@ -141,14 +141,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Mein Gesicht von vorhin",
-    "text": "Die Fachkraft denkt an einen Moment aus der Stunde und zeigt das Gesicht, das sie dabei hatte. Das Kind sagt, wie das Gesicht aussieht. Dann sucht das Kind einen Moment aus und zeigt sein Gesicht dazu; die Fachkraft sagt, was sie sieht, ohne zu bewerten. Das Kind darf auch Pass sagen.",
+    "titel": "Das Gesicht der Handpuppe",
+    "text": "Die Handpuppe erlebt kleine Dinge: Der Turm der Handpuppe fällt um, und danach bekommt sie einen Ball geschenkt. Nach dem Erlebnis macht das Kind das Gesicht, das die Handpuppe jetzt hat, und die Fachkraft sagt, was sie sieht, ohne zu bewerten. Dann denkt sich das Kind ein Erlebnis für die Handpuppe aus, und die Fachkraft macht das Gesicht dazu.",
     "sagen": [
-      "Gefühle sieht man im Gesicht. Wir schauen kurz zurück.",
-      "Bei einem Moment vorhin hatte ich dieses Gesicht. Was siehst du?",
-      "Magst du dein Gesicht von vorhin zeigen? Du darfst auch Pass sagen."
+      "Gefühle sieht man im Gesicht. Die Handpuppe erlebt jetzt kleine Dinge, und du zeigst, wie sie schaut.",
+      "Der Turm der Handpuppe fällt um. Wie schaut sie jetzt?",
+      "Ich sehe: Der Mund geht nach unten. Was erlebt die Handpuppe als Nächstes?"
     ],
-    "wennEsKippt": "Mag das Kind kein Gesicht zeigen, zeigt es mit dem Finger auf eines von drei Gesichtern, die die Fachkraft nacheinander macht. Oder die Fachkraft zeigt nur ihr Gesicht, und das Kind schaut zu.",
+    "wennEsKippt": "Mag das Kind kein Gesicht machen, zeigt es auf eines von drei Gesichtern, die die Fachkraft nacheinander macht. Das Kind darf auch nur zuschauen und „Pass“ sagen.",
     "rolle": [
       "reflexion"
     ],
@@ -177,12 +177,14 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech",
-      "spiel"
+      "spiel",
+      "rollenspiel"
     ],
-    "material": [],
+    "material": [
+      "handpuppe"
+    ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -191,17 +193,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Mon visage de tout à l’heure",
-      "text": "L’adulte pense à un moment de la séance et montre le visage qu’il avait à ce moment-là. L’enfant dit à quoi ressemble ce visage. Ensuite l’enfant choisit un moment et montre son visage ; l’adulte dit ce qu’il voit, sans juger. L’enfant peut aussi dire « Je passe ».",
+      "titel": "Le visage de la marionnette",
+      "text": "La marionnette vit de petites choses : sa tour s’écroule, puis elle reçoit un ballon en cadeau. Après chaque événement, l’enfant fait le visage que la marionnette a maintenant, et l’adulte dit ce qu’il voit, sans juger. Ensuite, l’enfant invente quelque chose qui arrive à la marionnette, et l’adulte fait le visage qui va avec.",
       "sagen": [
-        "Les émotions se voient sur le visage. On regarde un peu en arrière.",
-        "À un moment de tout à l’heure, j’avais ce visage. Qu’est-ce que tu vois ?",
-        "Tu veux montrer ton visage de tout à l’heure ? Tu peux aussi dire « Je passe »."
+        "Les émotions se voient sur le visage. La marionnette vit maintenant de petites choses, et tu montres son visage.",
+        "La tour de la marionnette s’écroule. Quel visage a-t-elle maintenant ?",
+        "Je vois : la bouche va vers le bas. Que va-t-il arriver à la marionnette ensuite ?"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas montrer de visage, il montre du doigt l’un des trois visages que l’adulte fait l’un après l’autre. Ou bien l’adulte montre seulement son visage et l’enfant regarde.",
-      "kurz": "Visage d’un moment de la séance · l’enfant montre le sien"
+      "wennEsKippt": "Si l’enfant ne veut pas faire de visage, il montre du doigt l’un des trois visages que l’adulte fait l’un après l’autre. L’enfant peut aussi seulement regarder et dire « Je passe ».",
+      "kurz": "La marionnette vit quelque chose · l’enfant fait son visage · échanger"
     },
-    "kurz": "Gesicht zu einem Moment der Stunde zeigen · Kind zeigt seins"
+    "kurz": "Handpuppe erlebt etwas · Kind macht das Gesicht dazu · tauschen"
   },
   {
     "id": "th:gefuehle-erkennen-abschluss-vorschule",
@@ -413,14 +415,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Eine Farbe fürs Gefühl",
-    "text": "Kind und Fachkraft bekommen je ein Blatt Papier und Buntstifte. Beide denken an einen Moment aus der Stunde und malen dazu einen Strich oder Fleck in einer Farbe, die zum Gefühl passt. Wer mag, sagt in einem Wort, was die Farbe zeigt; Pass ist auch erlaubt.",
+    "titel": "Mein Knete-Gesicht",
+    "text": "Das Kind bekommt ein Stück Knete und formt eine Kugel als Gesicht. Mit einer kleinen Knetwurst macht es einen Mund, nach oben, nach unten oder gerade, so wie es gerade passt, und legt zwei Punkte als Augen dazu. Die Fachkraft formt auch ein Gesicht, und beide stellen die Gesichter nebeneinander. Wer mag, sagt ein Wort dazu.",
     "sagen": [
-      "Gefühle kann man auch mit Farben zeigen. Das probieren wir jetzt.",
-      "Mal einen Strich in der Farbe, die zu vorhin passt.",
-      "Ich male meinen Strich. Du darfst auch Pass sagen."
+      "Gefühle kann man auch zeigen, ohne zu sprechen. Wir machen Gesichter aus Knete.",
+      "Wie soll der Mund sein: oben, unten oder gerade?",
+      "Mein Gesicht hat einen geraden Mund. Du darfst auch „Pass“ sagen."
     ],
-    "wennEsKippt": "Mag das Kind nicht malen, zeigt es mit dem Finger auf eine Farbe. Die Fachkraft malt ihren Strich allein, und das Kind schaut zu.",
+    "wennEsKippt": "Mag das Kind nicht kneten, zeigt es mit dem Finger auf einen von drei Mündern, die die Fachkraft in die Knete drückt. Die Fachkraft formt allein ein Gesicht, und das Kind schaut zu.",
     "rolle": [
       "reflexion"
     ],
@@ -449,12 +451,11 @@
     "belastung": 1,
     "reiz": 0,
     "format": [
-      "malen",
+      "basteln",
       "gespraech"
     ],
     "material": [
-      "papier",
-      "buntstifte"
+      "knete"
     ],
     "ort": "raum",
     "anspruch": 1,
@@ -466,17 +467,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Une couleur pour l’émotion",
-      "text": "L’enfant et l’adulte reçoivent chacun une feuille de papier et des crayons de couleur. Tous deux pensent à un moment de la séance et dessinent un trait ou une tache dans une couleur qui va avec l’émotion. Celui qui veut dit en un mot ce que la couleur montre ; « Je passe » est aussi permis.",
+      "titel": "Mon visage en plasticine",
+      "text": "L’enfant reçoit un morceau de plasticine et en fait une boule pour le visage. Avec un petit boudin, il fait une bouche, vers le haut, vers le bas ou toute droite, comme ça lui convient en ce moment, et ajoute deux points pour les yeux. L’adulte fait aussi un visage, et les deux posent les visages côte à côte. Si on le souhaite, on dit un mot.",
       "sagen": [
-        "On peut aussi montrer les émotions avec des couleurs. On essaie maintenant.",
-        "Fais un trait de la couleur qui va avec tout à l’heure.",
-        "Je fais mon trait. Tu peux aussi dire « Je passe »."
+        "On peut montrer ses émotions sans parler. On fait des visages en plasticine.",
+        "Comment doit être la bouche : en haut, en bas ou droite ?",
+        "Mon visage a la bouche droite. Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas dessiner, il montre une couleur du doigt. L’adulte fait son trait tout seul et l’enfant regarde.",
-      "kurz": "Choisir une couleur pour l’émotion · un trait · un mot ou passe"
+      "wennEsKippt": "Si l’enfant ne veut pas modeler, il montre du doigt l’une des trois bouches que l’adulte dessine dans la plasticine. L’adulte modèle son visage seul, et l’enfant regarde.",
+      "kurz": "Visage en plasticine · bouche en haut, droite ou en bas · un mot"
     },
-    "kurz": "Farbe zum Gefühl wählen · Strich malen · ein Wort dazu oder Pass"
+    "kurz": "Knete-Gesicht formen · Mund oben, gerade oder unten · ein Wort"
   },
   {
     "id": "th:gefuehle-ausdruecken-abschluss-vorschule",
@@ -824,14 +825,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Erst warten, dann Hallo",
-    "text": "Die Fachkraft dreht die Sanduhr um. Solange der Sand läuft, schauen sich beide an und warten, ohne etwas zu sagen. Wenn der Sand durch ist, sagen beide Hallo. Die Fachkraft wartet genauso wie das Kind.",
+    "titel": "Kuckuck, Hallo!",
+    "text": "Die Fachkraft hält ein Tuch wie einen Vorhang zwischen sich und das Kind, sodass sie sich nicht sehen. Sie flüstert „Gleich, gleich, gleich“ und lässt das Tuch nach einem Moment fallen; erst dann sagen beide „Hallo“. Danach hält das Kind das Tuch und bestimmt, wann es fällt, und die Fachkraft wartet genauso.",
     "sagen": [
       "Heute üben wir Warten und Stoppen. Das fängt schon beim Hallo an.",
-      "Ich drehe die Sanduhr. Wir warten zusammen.",
-      "Der Sand ist durch. Jetzt: Hallo!"
+      "Ich halte das Tuch hoch. Wir warten, bis es fällt.",
+      "Das Tuch ist weg: Hallo!"
     ],
-    "wennEsKippt": "Wird das Warten zu schwer, ist die Zeit kürzer, oder das Kind schaut nur dem Sand zu. Gibt es keine kurze Sanduhr, zählen beide leise bis fünf an den Fingern.",
+    "wennEsKippt": "Sagt das Kind zu früh Hallo, ist das nicht schlimm: Das Tuch geht wieder hoch, und beide versuchen es noch einmal. Ist das Warten zu lang, lässt die Fachkraft das Tuch schneller fallen.",
     "rolle": [
       "ankommen"
     ],
@@ -863,7 +864,7 @@
       "spiel"
     ],
     "material": [
-      "sanduhr"
+      "tuch"
     ],
     "ort": "raum",
     "anspruch": 0,
@@ -875,17 +876,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "D’abord attendre, puis bonjour",
-      "text": "L’adulte retourne le sablier. Tant que le sable coule, tous deux se regardent et attendent sans rien dire. Quand le sable est tombé, tous deux disent bonjour. L’adulte attend exactement comme l’enfant.",
+      "titel": "Coucou, bonjour !",
+      "text": "L’adulte tient un foulard comme un rideau entre lui et l’enfant, de sorte qu’ils ne se voient pas. Il chuchote « Bientôt, bientôt, bientôt » et laisse tomber le foulard après un instant ; ce n’est qu’alors que les deux disent « bonjour ». Ensuite, l’enfant tient le foulard et décide quand il tombe, et l’adulte attend tout autant.",
       "sagen": [
-        "Aujourd’hui, on s’entraîne à attendre et à s’arrêter. Cela commence déjà avec « bonjour ».",
-        "Je retourne le sablier. On attend ensemble.",
-        "Le sable est tombé. Maintenant : bonjour !"
+        "Aujourd’hui, on s’exerce à attendre et à s’arrêter. Ça commence déjà avec le bonjour.",
+        "Je tiens le foulard. On attend qu’il tombe.",
+        "Plus de foulard : bonjour !"
       ],
-      "wennEsKippt": "Si l’attente est trop difficile, le temps est raccourci ou l’enfant regarde seulement le sable. S’il n’y a pas de sablier court, tous deux comptent doucement jusqu’à cinq sur leurs doigts.",
-      "kurz": "Retourner le sablier · attendre sans parler · puis bonjour"
+      "wennEsKippt": "Si l’enfant dit bonjour trop tôt, ce n’est pas grave : le foulard remonte, et les deux réessaient. Si attendre est trop long, l’adulte laisse tomber le foulard plus vite.",
+      "kurz": "Foulard en rideau · attendre qu’il tombe · puis bonjour · échanger"
     },
-    "kurz": "Sanduhr drehen · ohne Worte warten, bis der Sand durch ist · Hallo"
+    "kurz": "Tuch als Vorhang · warten, bis es fällt · dann Hallo · tauschen"
   },
   {
     "id": "th:impulskontrolle-bewegung-vorschule",
@@ -961,14 +962,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Meine Bremse heute",
-    "text": "Die Fachkraft erzählt in einem Satz von einer Stelle in der Stunde, an der sie gewartet oder gestoppt hat, und macht dazu eine Bremsbewegung mit der Hand. Das Kind sucht auch eine solche Stelle und zeigt seine Bremse. Findet es keine, darf es Pass sagen.",
+    "titel": "Mein Hand-Auto bremst",
+    "text": "Ein Baustein steht in der Tischmitte. Das Kind lässt seine flache Hand wie ein Auto zum Baustein fahren und bremst kurz davor, bevor es ihn berührt; dazu sagt es leise „Brrr, stopp“. Die Fachkraft fährt ebenfalls mit einem Hand-Auto bis kurz vor den Baustein. Dann dürfen beide Autos den Baustein ganz sanft anstupsen.",
     "sagen": [
-      "Warten und Stoppen ist wie eine Bremse. Wir suchen heute eine Bremse.",
-      "Ich habe gewartet und nicht gleich losgelegt. Das war meine Bremse.",
-      "Wo war deine Bremse? Du darfst auch Pass sagen."
+      "Warten und Stoppen ist wie Bremsen beim Auto. Dein Hand-Auto darf gleich bremsen.",
+      "Fahr bis kurz vor den Baustein und halt an. Brrr, stopp!",
+      "Mein Auto hat gebremst. Jetzt darf es den Baustein anstupsen."
     ],
-    "wennEsKippt": "Findet das Kind keine Stelle, macht die Fachkraft zwei Bremsen vor, und das Kind sucht sich eine aus. Die Bremsbewegung mit der Hand ohne Worte genügt auch.",
+    "wennEsKippt": "Fährt das Auto zu weit, fährt es einfach zurück und startet noch einmal. Fällt das Bremsen schwer, sagt die Fachkraft leise „Brrr“ mit.",
     "rolle": [
       "reflexion"
     ],
@@ -997,12 +998,14 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech",
-      "spiel"
+      "spiel",
+      "bewegung"
     ],
-    "material": [],
+    "material": [
+      "bausteine"
+    ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -1011,17 +1014,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Mon frein aujourd’hui",
-      "text": "L’adulte raconte en une phrase un moment de la séance où il a attendu ou s’est arrêté, et fait avec la main un geste de frein. L’enfant cherche lui aussi un tel moment et montre son frein. S’il n’en trouve pas, il peut dire « Je passe ».",
+      "titel": "Ma main-voiture freine",
+      "text": "Une brique est posée au milieu de la table. L’enfant fait rouler sa main à plat comme une voiture vers la brique et freine juste avant de la toucher, en disant tout bas « Brrr, stop ». L’adulte fait aussi rouler sa main-voiture jusqu’à juste avant la brique. Ensuite, les deux voitures ont le droit de pousser la brique tout doucement.",
       "sagen": [
-        "Attendre et s’arrêter, c’est comme un frein. Aujourd’hui, on cherche un frein.",
-        "J’ai attendu et je n’ai pas foncé tout de suite. C’était mon frein.",
-        "Où était ton frein ? Tu peux aussi dire « Je passe »."
+        "Attendre et s’arrêter, c’est comme freiner avec une voiture. Ta main-voiture a le droit de freiner maintenant.",
+        "Roule jusqu’à juste avant la brique et arrête-toi. Brrr, stop !",
+        "Ma voiture a freiné. Maintenant, elle peut pousser la brique."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve aucun moment, l’adulte montre deux freins et l’enfant en choisit un. Le geste de frein avec la main, sans paroles, suffit aussi.",
-      "kurz": "Un moment où l’on a attendu · montrer le frein avec la main"
+      "wennEsKippt": "Si la voiture va trop loin, elle recule et repart sans reproche. Si freiner est difficile, l’adulte fait « Brrr » tout bas avec l’enfant.",
+      "kurz": "La main roule comme une voiture · freine avant la brique · pousser"
     },
-    "kurz": "Stelle nennen, an der man gewartet hat · Bremse mit der Hand zeigen"
+    "kurz": "Hand fährt als Auto zum Baustein · kurz davor bremsen · anstupsen"
   },
   {
     "id": "th:impulskontrolle-abschluss-vorschule",
@@ -1235,14 +1238,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Augen zu, Ohren auf",
-    "text": "Fachkraft und Kind machen die Augen zu und lauschen eine halbe Minute still. Danach sagt jede:r, was sie oder er gehört hat. Dann sagt die Fachkraft, wann sie heute genau hingeschaut hat, und fragt das Kind, ob es auch einen solchen Moment gefunden hat; Pass ist erlaubt.",
+    "titel": "Meine Lausch-Ohren",
+    "text": "Fachkraft und Kind machen die Augen zu und lauschen eine halbe Minute still. Dann zeigt das Kind mit dem Finger dorthin, woher ein Geräusch kam, und macht es leise nach. Die Fachkraft macht es auch, und zum Schluss sucht sich das Kind das schönste Geräusch aus, das beide noch einmal leise nachmachen.",
     "sagen": [
-      "Zum Hinschauen und Hinhören gehört auch Stillsein. Wir lauschen kurz.",
-      "Was hörst du?",
-      "Wann hast du heute genau geschaut? Du darfst auch Pass sagen."
+      "Heute ging es ums Hinschauen und Hinhören. Jetzt lauschen wir noch einmal ganz genau.",
+      "Was hörst du? Zeig mit dem Finger, wo es herkommt.",
+      "Welches Geräusch magst du am liebsten? Das machen wir zusammen nach."
     ],
-    "wennEsKippt": "Mag das Kind die Augen nicht zumachen, schaut es auf einen Punkt am Boden. Hört es nichts, nennt die Fachkraft ein Geräusch, und beide suchen noch eins.",
+    "wennEsKippt": "Mag das Kind die Augen nicht zumachen, schaut es auf einen Punkt am Boden. Hört das Kind nichts, macht die Fachkraft ein leises Geräusch, zum Beispiel mit dem Papier, und beide suchen noch eins.",
     "rolle": [
       "reflexion"
     ],
@@ -1272,11 +1275,11 @@
     "reiz": 0,
     "format": [
       "sinne",
-      "gespraech"
+      "spiel"
     ],
     "material": [],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -1285,17 +1288,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Yeux fermés, oreilles ouvertes",
-      "text": "L’adulte et l’enfant ferment les yeux et écoutent en silence une demi-minute. Ensuite chacun dit ce qu’il a entendu. Puis l’adulte dit quand il a regardé très attentivement aujourd’hui et demande à l’enfant s’il a trouvé lui aussi un tel moment ; « Je passe » est permis.",
+      "titel": "Mes oreilles qui écoutent",
+      "text": "L’adulte et l’enfant ferment les yeux et écoutent en silence pendant une demi-minute. Ensuite, l’enfant montre du doigt d’où venait un bruit et l’imite tout bas. L’adulte le fait aussi, puis l’enfant choisit le bruit qu’il préfère, et les deux l’imitent encore une fois à voix basse.",
       "sagen": [
-        "Bien regarder et bien écouter, cela demande aussi du silence. On écoute un instant.",
-        "Qu’est-ce que tu entends ?",
-        "Quand as-tu regardé très attentivement aujourd’hui ? Tu peux aussi dire « Je passe »."
+        "Aujourd’hui, on a parlé de regarder et d’écouter. Maintenant, on écoute encore une fois très attentivement.",
+        "Qu’entends-tu ? Montre du doigt d’où ça vient.",
+        "Quel bruit préfères-tu ? On le fait ensemble."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas fermer les yeux, il regarde un point sur le sol. S’il n’entend rien, l’adulte nomme un bruit et ils en cherchent encore un.",
-      "kurz": "Yeux fermés, 30 s d’écoute · dire ce qu’on a entendu · bilan"
+      "wennEsKippt": "Si l’enfant ne veut pas fermer les yeux, il regarde un point au sol. S’il n’entend rien, l’adulte fait un petit bruit, par exemple avec le papier, et les deux en cherchent un autre.",
+      "kurz": "Yeux fermés, 30 s d’écoute · montrer d’où ça vient · imiter"
     },
-    "kurz": "Augen zu, 30 Sek. lauschen · Gehörtes nennen · Rückblick aufs Hinsehen"
+    "kurz": "Augen zu, 30 Sek. lauschen · zeigen, woher es kam · nachmachen"
   },
   {
     "id": "th:aufmerksamkeit-abschluss-vorschule",
@@ -1371,14 +1374,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Ein Turm, Stein für Stein",
-    "text": "Fünf Bausteine liegen auf dem Tisch. Fachkraft und Kind setzen abwechselnd einen Stein auf den Turm, bis alle fünf oben sind. Wackelt der Turm, wird weitergebaut und nicht aufgegeben.",
+    "titel": "Noch eine Schicht",
+    "text": "Auf dem Tisch liegen zwei Päckchen aus Zeitungspapier, in mehrere Lagen eingewickelt, mit einer kleinen Überraschung innen. Das Kind wickelt das eine Päckchen aus, die Fachkraft das andere, Lage für Lage. Wenn es dauert, sagt die Fachkraft „Noch eine Schicht!“, und beide machen weiter, bis das Innere zum Vorschein kommt.",
     "sagen": [
-      "Heute geht es ums Dranbleiben. Wir fangen mit einem kleinen Turm an.",
-      "Du setzt einen Stein, ich setze einen.",
-      "Fünf Steine, der Turm steht. Wir sind drangeblieben."
+      "Heute geht es ums Dranbleiben. Wir fangen mit einem Päckchen an, das viele Schichten hat.",
+      "Noch eine Schicht! Wir bleiben dran.",
+      "Geschafft, da ist die Überraschung."
     ],
-    "wennEsKippt": "Fällt der Turm um, baut die Fachkraft ruhig mit dem Kind neu auf, nur mit drei Steinen. Mag das Kind nicht bauen, legt es die Steine nur in eine Reihe.",
+    "wennEsKippt": "Reißt das Papier schwer, hilft die Fachkraft an einer Ecke und sagt „Wir machen es zusammen“. Wird es dem Kind zu lang, nimmt die Fachkraft eine Lage ab, und das Kind macht den Rest.",
     "rolle": [
       "ankommen"
     ],
@@ -1395,7 +1398,7 @@
     },
     "dauer": {
       "min": 1,
-      "typ": 2,
+      "typ": 3,
       "max": 4
     },
     "sozialform": [
@@ -1411,6 +1414,7 @@
       "basteln"
     ],
     "material": [
+      "zeitung",
       "bausteine"
     ],
     "ort": "raum",
@@ -1423,17 +1427,19 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Une tour, brique après brique",
-      "text": "Cinq briques sont posées sur la table. L’adulte et l’enfant posent chacun leur tour une brique sur la tour, jusqu’à ce que les cinq soient en haut. Si la tour tremble, on continue à construire, on n’abandonne pas.",
+      "titel": "Encore une couche",
+      "text": "Sur la table, il y a deux petits paquets enveloppés dans plusieurs couches de papier journal, avec une petite surprise à l’intérieur. L’enfant déballe l’un des paquets et l’adulte l’autre, couche après couche. Quand ça dure, l’adulte dit « Encore une couche ! » et les deux continuent jusqu’à voir ce qu’il y a dedans.",
       "sagen": [
-        "Aujourd’hui, on s’entraîne à persévérer. On commence par une petite tour.",
-        "Tu poses une brique, je pose une brique.",
-        "Cinq briques, la tour tient. On a persévéré."
+        "Aujourd’hui, on parle de persévérer. On commence avec un paquet qui a beaucoup de couches.",
+        "Encore une couche ! On continue.",
+        "Voilà, la surprise est là."
       ],
-      "wennEsKippt": "Si la tour tombe, l’adulte la reconstruit calmement avec l’enfant, seulement avec trois briques. Si l’enfant ne veut pas construire, il aligne simplement les briques.",
-      "kurz": "Empiler cinq briques à tour de rôle"
+      "wennEsKippt": "Si le papier se déchire difficilement, l’adulte aide avec un coin en disant « On le fait ensemble ». Si c’est trop long pour l’enfant, l’adulte enlève une couche, et l’enfant fait le reste.",
+      "kurz": "Déballer un paquet en couches · « Encore une couche » · surprise",
+      "vorbereitung": "Préparer deux paquets : une brique dans quatre couches de papier journal"
     },
-    "kurz": "Abwechselnd fünf Steine zu einem Turm stapeln"
+    "kurz": "Päckchen in Lagen auswickeln · „Noch eine Schicht“ · Überraschung",
+    "vorbereitung": "Zwei Päckchen vorbereiten: je einen Baustein in vier Lagen Zeitungspapier einwickeln"
   },
   {
     "id": "th:ausdauer-bewegung-vorschule",
@@ -1513,14 +1519,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Meine Treppe heute",
-    "text": "Die Fachkraft baut aus Bausteinen eine Treppe mit drei Stufen. Stufe eins heißt „angefangen“, Stufe zwei „weitergemacht“, Stufe drei „durchgehalten“. Fachkraft und Kind stellen je einen Stift auf die Stufe, die für sie in der Stunde gestimmt hat; die Fachkraft beginnt und sagt dazu einen Satz. Das Kind darf auch Pass sagen.",
+    "titel": "Die Treppe hinauf",
+    "text": "Die Fachkraft hat aus Bausteinen eine Treppe mit drei Stufen gebaut. Ein kleiner Baustein ist der Wanderer: Die Fachkraft spricht für ihn und seufzt vor den Stufen „Puh, ich bin müde!“. Das Kind sagt „Noch ein Stück!“ und schiebt den Wanderer eine Stufe weiter, oder es sagt „Pause“, und der Wanderer ruht sich kurz aus. Oben winken beide dem Wanderer zu.",
     "sagen": [
-      "Dranbleiben hat Stufen. Wir schauen, auf welcher wir heute waren.",
-      "Ich war auf der zweiten Stufe: Ich habe weitergemacht.",
-      "Auf welche Stufe stellst du deinen Stift? Du darfst auch Pass sagen."
+      "Dranbleiben ist wie Treppensteigen: Stufe für Stufe. Der kleine Wanderer braucht gleich deine Hilfe.",
+      "Puh, ich bin müde! Sagst du mir, wie es weitergeht?",
+      "Danke, du hast mir geholfen. Oben ist es schön."
     ],
-    "wennEsKippt": "Jede Stufe ist in Ordnung, das sagt die Fachkraft auch deutlich. Mag das Kind nicht wählen, zeigt die Fachkraft zwei Stufen, und das Kind tippt auf eine.",
+    "wennEsKippt": "Mag das Kind den Wanderer nicht schieben, zeigt es nur auf die nächste Stufe. Ist die Treppe zu hoch, reichen zwei Stufen.",
     "rolle": [
       "reflexion"
     ],
@@ -1549,15 +1555,14 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "basteln",
-      "gespraech"
+      "spiel",
+      "rollenspiel"
     ],
     "material": [
-      "bausteine",
-      "stifte"
+      "bausteine"
     ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -1566,18 +1571,18 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Mon escalier d’aujourd’hui",
-      "text": "L’adulte construit avec des briques un escalier à trois marches. La première marche s’appelle « commencé », la deuxième « continué », la troisième « tenu jusqu’au bout ». L’adulte et l’enfant posent chacun un crayon sur la marche qui correspondait à leur moment de la séance ; l’adulte commence et dit une phrase. L’enfant peut aussi dire « Je passe ».",
+      "titel": "Monter l’escalier",
+      "text": "L’adulte a construit un escalier de trois marches avec des briques. Une petite brique est le randonneur : l’adulte parle pour lui et soupire devant les marches « Ouf, je suis fatigué ! » L’enfant dit « Encore un peu ! » et pousse le randonneur d’une marche, ou il dit « Pause », et le randonneur se repose un instant. En haut, les deux font un signe de la main au randonneur.",
       "sagen": [
-        "Persévérer a des marches. On regarde sur quelle marche on était aujourd’hui.",
-        "J’étais sur la deuxième marche : j’ai continué.",
-        "Sur quelle marche poses-tu ton crayon ? Tu peux aussi dire « Je passe »."
+        "Persévérer, c’est comme monter un escalier : marche après marche. Le petit randonneur a bientôt besoin de ton aide.",
+        "Ouf, je suis fatigué ! Peux-tu me dire comment continuer ?",
+        "Merci, tu m’as aidé. C’est beau, là-haut."
       ],
-      "wennEsKippt": "Chaque marche est bien, l’adulte le dit clairement. Si l’enfant ne veut pas choisir, l’adulte montre deux marches et l’enfant en touche une.",
-      "kurz": "Choisir une marche : commencé · continué · tenu",
-      "vorbereitung": "Construire un escalier à trois marches avec des briques"
+      "wennEsKippt": "Si l’enfant ne veut pas pousser le randonneur, il montre seulement la marche suivante. Si l’escalier est trop haut, deux marches suffisent.",
+      "kurz": "Escalier en briques · le randonneur est fatigué · continuer ou pause",
+      "vorbereitung": "Construire un escalier de trois marches avec des briques"
     },
-    "kurz": "Stufe wählen: angefangen · weitergemacht · durchgehalten",
+    "kurz": "Treppe aus Bausteinen · Wanderer müde · Kind sagt weiter oder Pause",
     "vorbereitung": "Treppe mit drei Stufen aus Bausteinen bauen"
   },
   {
@@ -1798,14 +1803,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Meine Hand, deine Hand",
-    "text": "Die Fachkraft hält eine Hand hoch und sagt, was sie in der Stunde getan hat. Das Kind hält seine Hand hoch und sagt oder zeigt, was es getan hat. Dann halten beide die Hände nebeneinander, ohne sich zu berühren, und sagen, was sie nur gemeinsam geschafft haben.",
+    "titel": "Unser Turm",
+    "text": "Kind und Fachkraft bauen abwechselnd einen kleinen Turm: ein Baustein vom Kind, einer von der Fachkraft, bis fünf Steine stehen. Dann zeigt das Kind auf die Steine, die es gelegt hat, und die Fachkraft auf die übrigen. Zum Schluss sagt die Fachkraft: „Den Turm haben wir zusammen gebaut.“",
     "sagen": [
-      "Zusammenmachen heißt: Jeder tut etwas, und zusammen wird es mehr. Wir schauen zurück.",
-      "Das habe ich getan. Und du? Du darfst auch Pass sagen.",
-      "Und das haben wir zusammen geschafft."
+      "Zusammen etwas machen heißt: Ich tue etwas, du tust etwas, und zusammen entsteht etwas. Das bauen wir jetzt.",
+      "Ich lege einen Stein, du legst einen Stein. Immer abwechselnd.",
+      "Diese Steine sind von dir, die anderen von mir. Zusammen steht der Turm."
     ],
-    "wennEsKippt": "Findet das Kind nichts, nennt die Fachkraft zwei Dinge, und das Kind zeigt auf eines. Es genügt auch, wenn nur die Fachkraft etwas sagt.",
+    "wennEsKippt": "Fällt der Turm um, bauen beide mit zwei Steinen neu auf. Mag das Kind nicht bauen, legt die Fachkraft einen Stein hin, und das Kind zeigt, wohin der nächste soll.",
     "rolle": [
       "reflexion"
     ],
@@ -1834,11 +1839,13 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech"
+      "spiel"
     ],
-    "material": [],
+    "material": [
+      "bausteine"
+    ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -1847,17 +1854,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Ma main, ta main",
-      "text": "L’adulte lève une main et dit ce qu’il a fait pendant la séance. L’enfant lève sa main et dit ou montre ce qu’il a fait. Ensuite, tous deux tiennent les mains côte à côte, sans se toucher, et disent ce qu’ils n’ont réussi qu’ensemble.",
+      "titel": "Notre tour",
+      "text": "L’enfant et l’adulte empilent des cubes l’un après l’autre pour faire une petite tour : un cube de l’enfant, un cube de l’adulte, jusqu’à cinq cubes. Puis l’enfant montre les cubes qu’il a posés, et l’adulte montre les autres. À la fin, l’adulte dit : « Cette tour, on l’a construite ensemble. »",
       "sagen": [
-        "Faire ensemble, c’est : chacun fait quelque chose, et ensemble, cela fait plus. On regarde en arrière.",
-        "Voilà ce que j’ai fait. Et toi ? Tu peux aussi dire « Je passe ».",
-        "Et voilà ce que nous avons réussi ensemble."
+        "Faire quelque chose ensemble, c’est : je fais quelque chose, tu fais quelque chose, et ensemble il se passe quelque chose. On construit maintenant.",
+        "Je pose un cube, tu poses un cube. Toujours l’un après l’autre.",
+        "Ces cubes-ci sont à toi, les autres à moi. Ensemble, la tour tient."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte nomme deux choses et l’enfant en montre une. Il suffit aussi que seul l’adulte parle.",
-      "kurz": "Mains levées : ce que j’ai fait · ce qu’on a fait à deux"
+      "wennEsKippt": "Si la tour tombe, tous deux la reconstruisent avec deux cubes. Si l’enfant ne veut pas construire, l’adulte pose un cube et l’enfant montre où mettre le suivant.",
+      "kurz": "Empiler des cubes l’un après l’autre · mon cube, ton cube"
     },
-    "kurz": "Hände hoch: was ich getan habe · was wir zusammen geschafft haben"
+    "kurz": "Abwechselnd Bausteine stapeln · zeigen: mein Stein, dein Stein"
   },
   {
     "id": "th:kooperation-abschluss-vorschule",
@@ -2075,14 +2082,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Drei Streit-Tricks",
-    "text": "Die Fachkraft zeigt drei Zeichen für kleinen Streit: die Stopp-Hand („Das mag ich nicht“), zwei Hände im Wechsel („Erst ich, dann du“) und die Hand nach oben („Ich hole Hilfe“). Das Kind macht jedes Zeichen einmal nach und zeigt das, das ihm am besten gefällt. Die Fachkraft zeigt auch ihres.",
+    "titel": "Stopp, das ist meiner",
+    "text": "Das Kind hat einen Baustein vor sich. Die Fachkraft lässt die Handpuppe langsam nach dem Baustein greifen und „Den will ich!“ flüstern. Das Kind zeigt die Stopp-Hand und darf „Stopp, das ist meiner“ sagen; die Handpuppe legt den Baustein zurück und sagt „Danke fürs Sagen“. Dann nimmt das Kind die Handpuppe und greift nach dem Baustein der Fachkraft, die ebenfalls die Stopp-Hand zeigt.",
     "sagen": [
-      "Bei Streit gibt es kleine Tricks. Ich zeige dir drei.",
-      "Das ist Stopp, das ist Abwechseln, das ist Hilfe holen.",
-      "Welches Zeichen magst du? Du darfst auch Pass sagen."
+      "Bei einem kleinen Streit hilft ein Zeichen. Das üben wir gleich.",
+      "Die Handpuppe will deinen Baustein. Zeig der Handpuppe die Stopp-Hand!",
+      "Gut gezeigt. Jetzt bist du die Handpuppe, und ich zeige dir die Stopp-Hand."
     ],
-    "wennEsKippt": "Es genügt ein Zeichen, zum Beispiel die Stopp-Hand. Mag das Kind nichts zeigen, übt die Fachkraft die drei Zeichen allein vor.",
+    "wennEsKippt": "Zeigt das Kind die Stopp-Hand nicht, macht die Fachkraft sie vor, und das Kind macht sie nach. Mag das Kind nicht mitspielen, spielt die Fachkraft die Szene allein, und das Kind schaut zu.",
     "rolle": [
       "reflexion"
     ],
@@ -2111,12 +2118,15 @@
     "belastung": 1,
     "reiz": 0,
     "format": [
-      "gespraech",
+      "rollenspiel",
       "spiel"
     ],
-    "material": [],
+    "material": [
+      "handpuppe",
+      "bausteine"
+    ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -2125,17 +2135,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Trois trucs pour un conflit",
-      "text": "L’adulte montre trois signes pour un petit conflit : la main stop (« Je n’aime pas ça »), les deux mains en alternance (« D’abord moi, puis toi ») et la main levée (« Je vais chercher de l’aide »). L’enfant refait chaque signe une fois et montre celui qu’il préfère. L’adulte montre aussi le sien.",
+      "titel": "Stop, c’est à moi",
+      "text": "L’enfant a un cube devant lui. L’adulte fait avancer lentement la marionnette vers le cube en chuchotant « Je le veux ! ». L’enfant montre la main stop et peut dire « Stop, c’est à moi » ; la marionnette repose le cube et dit « Merci d’avoir dit stop ». Ensuite, l’enfant prend la marionnette et la fait avancer vers le cube de l’adulte, qui montre à son tour la main stop.",
       "sagen": [
-        "Quand il y a un conflit, il y a de petits trucs. Je t’en montre trois.",
-        "Voici stop, voici à tour de rôle, voici chercher de l’aide.",
-        "Quel signe tu aimes ? Tu peux aussi dire « Je passe »."
+        "Quand il y a un petit conflit, un signe aide. On l’essaie tout de suite.",
+        "La marionnette veut ton cube. Montre-lui la main stop !",
+        "Bien montré. Maintenant, tu es la marionnette, et moi je te montre la main stop."
       ],
-      "wennEsKippt": "Un seul signe suffit, par exemple la main stop. Si l’enfant ne veut rien montrer, l’adulte s’entraîne seul aux trois signes.",
-      "kurz": "Trois signes : stop · à tour de rôle · aide · l’enfant en choisit un"
+      "wennEsKippt": "Si l’enfant ne montre pas la main stop, l’adulte la montre d’abord et l’enfant l’imite. Si l’enfant ne veut pas jouer, l’adulte joue la scène seul et l’enfant regarde.",
+      "kurz": "La marionnette veut le cube · l’enfant montre la main stop · échanger"
     },
-    "kurz": "Zeichen zeigen: Stopp · Abwechseln · Hilfe holen · Kind wählt eins"
+    "kurz": "Handpuppe will den Baustein · Kind zeigt Stopp-Hand · Rollen tauschen"
   },
   {
     "id": "th:konflikte-abschluss-vorschule",
@@ -2143,14 +2153,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Wer sagt zuerst Tschüss?",
-    "text": "Die Fachkraft sagt: „Ich möchte zuerst Tschüss sagen.“ Das Kind sagt, dass es auch zuerst will. Beide einigen sich mit einem Wort oder Zeichen, wer anfängt, und tauschen dann: erst der eine, dann der andere. Beide winken.",
+    "titel": "Wer macht das Licht aus?",
+    "text": "Die Handpuppe und das Kind wollen beide die Lampe ausmachen. Die Fachkraft lässt die Handpuppe „Ich will auch!“ flüstern und zeigt das Zeichen fürs Abwechseln (zwei Hände, erst die eine, dann die andere). Das Kind macht das Zeichen nach, macht die Lampe aus und wieder an, dann ist die Handpuppe dran. Zum Schluss winken beide.",
     "sagen": [
-      "Streit klären kann auch ganz klein sein. Wir üben es mit Tschüss.",
-      "Ich möchte zuerst. Du auch? Wie machen wir es?",
-      "Erst ich, dann du. Tschüss!"
+      "Heute geht es darum, wie man einen kleinen Streit löst. Das üben wir gleich ganz klein.",
+      "Die Handpuppe will die Lampe ausmachen. Du auch? Wir wechseln uns ab.",
+      "Erst du, dann die Handpuppe. Tschüss!"
     ],
-    "wennEsKippt": "Fällt dem Kind keine Lösung ein, schlägt die Fachkraft „abwechseln“ vor. Mag das Kind nicht, winkt die Fachkraft einfach und geht.",
+    "wennEsKippt": "Fällt dem Kind das Zeichen schwer, sagt die Fachkraft einfach „Erst du, dann ich“. Mag das Kind nicht, macht die Fachkraft die Lampe selbst aus und winkt.",
     "rolle": [
       "abschluss"
     ],
@@ -2182,7 +2192,10 @@
       "rollenspiel",
       "spiel"
     ],
-    "material": [],
+    "material": [
+      "lampe",
+      "handpuppe"
+    ],
     "ort": "raum",
     "anspruch": 0,
     "merkmale": {
@@ -2193,17 +2206,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Qui dit au revoir en premier ?",
-      "text": "L’adulte dit : « Je voudrais dire au revoir en premier. » L’enfant dit qu’il veut aussi commencer. Tous deux se mettent d’accord, avec un mot ou un signe, sur qui commence, puis ils alternent : d’abord l’un, ensuite l’autre. Tous deux font signe de la main.",
+      "titel": "Qui éteint la lumière ?",
+      "text": "La marionnette et l’enfant veulent tous les deux éteindre la lampe. L’adulte fait chuchoter à la marionnette « Moi aussi ! » et montre le signe pour alterner (deux mains, d’abord l’une, puis l’autre). L’enfant refait le signe, éteint la lampe puis la rallume, et c’est ensuite le tour de la marionnette. À la fin, tous deux font au revoir de la main.",
       "sagen": [
-        "Régler un conflit peut aussi être très petit. On s’entraîne avec « au revoir ».",
-        "Je voudrais commencer. Toi aussi ? Comment fait-on ?",
-        "D’abord moi, ensuite toi. Au revoir !"
+        "Aujourd’hui, on voit comment régler un petit conflit. On l’essaie tout de suite, tout petit.",
+        "La marionnette veut éteindre la lampe. Toi aussi ? On alterne.",
+        "D’abord toi, puis la marionnette. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de solution, l’adulte propose « à tour de rôle ». Si l’enfant ne veut pas, l’adulte fait simplement signe de la main et s’en va.",
-      "kurz": "Les deux veulent saluer d’abord · s’accorder · saluer à tour de rôle"
+      "wennEsKippt": "Si le signe est difficile, l’adulte dit simplement « D’abord toi, puis moi ». Si l’enfant ne veut pas, l’adulte éteint lui-même la lampe et fait au revoir de la main.",
+      "kurz": "Marionnette et enfant veulent éteindre la lampe · signe pour alterner"
     },
-    "kurz": "Beide wollen zuerst Tschüss sagen · einigen · nacheinander winken"
+    "kurz": "Beide wollen die Lampe ausmachen · Zeichen fürs Abwechseln · winken"
   },
   {
     "id": "th:kommunikation-ankommen-vorschule",
@@ -2211,14 +2224,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Ein Wort, ein Satz",
-    "text": "Ein Ding liegt auf dem Tisch, zum Beispiel ein Becher. Die Fachkraft fragt: „Was ist das?“ Das Kind antwortet erst mit einem Wort und dann mit einem ganzen Satz: „Das ist ein Becher.“ Danach macht es die Fachkraft genauso, und das Ding wechselt.",
+    "titel": "Was ist unter dem Becher?",
+    "text": "Die Fachkraft versteckt einen kleinen Gegenstand unter einem Becher und sagt: „Du darfst mich zwei Dinge fragen, dann schaust du nach.“ Das Kind fragt zum Beispiel „Ist es weich?“, und die Fachkraft antwortet ehrlich mit „ja“ oder „nein“. Dann hebt das Kind den Becher hoch; danach versteckt das Kind etwas, und die Fachkraft fragt zweimal.",
     "sagen": [
-      "Heute geht es ums Reden und Zuhören. Wir starten mit Wörtern und Sätzen.",
-      "Was ist das? Sag es erst mit einem Wort, dann mit einem ganzen Satz.",
-      "Ich sage es auch: Becher. Das ist ein Becher."
+      "Heute geht es ums Reden und Zuhören. Wir fragen und hören, was die Antwort ist.",
+      "Frag mich zwei Dinge über das, was unter dem Becher ist.",
+      "Ja, es ist weich. Schau jetzt nach!"
     ],
-    "wennEsKippt": "Fällt der Satz schwer, spricht die Fachkraft ihn vor, und das Kind spricht nach. Mag das Kind nicht sprechen, zeigt es auf das Ding.",
+    "wennEsKippt": "Fällt dem Kind keine Frage ein, schlägt die Fachkraft zwei Fragen vor („Ist es groß?“, „Ist es weich?“), und das Kind wählt eine. Mag das Kind nicht fragen, hebt es den Becher einfach hoch, und die Fachkraft erzählt, was es ist.",
     "rolle": [
       "ankommen"
     ],
@@ -2235,7 +2248,7 @@
     },
     "dauer": {
       "min": 1,
-      "typ": 2,
+      "typ": 3,
       "max": 4
     },
     "sozialform": [
@@ -2251,6 +2264,7 @@
       "spiel"
     ],
     "material": [
+      "becher",
       "alltagsdinge"
     ],
     "ort": "raum",
@@ -2263,17 +2277,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Un mot, une phrase",
-      "text": "Un objet est posé sur la table, par exemple un gobelet. L’adulte demande : « Qu’est-ce que c’est ? » L’enfant répond d’abord par un mot, puis par une phrase entière : « C’est un gobelet. » Ensuite l’adulte le fait aussi, et l’objet change.",
+      "titel": "Qu’y a-t-il sous le gobelet ?",
+      "text": "L’adulte cache un petit objet sous un gobelet et dit : « Tu peux me poser deux questions, puis tu regardes. » L’enfant demande par exemple « Est-ce que c’est doux ? », et l’adulte répond honnêtement par « oui » ou « non ». Ensuite l’enfant soulève le gobelet ; puis il cache un objet à son tour, et l’adulte pose deux questions.",
       "sagen": [
-        "Aujourd’hui, on parle et on écoute. On commence avec des mots et des phrases.",
-        "Qu’est-ce que c’est ? Dis-le d’abord avec un mot, puis avec une phrase entière.",
-        "Je le dis aussi : gobelet. C’est un gobelet."
+        "Aujourd’hui, on parle de parler et d’écouter. On pose des questions et on écoute la réponse.",
+        "Pose-moi deux questions sur ce qu’il y a sous le gobelet.",
+        "Oui, c’est doux. Regarde maintenant !"
       ],
-      "wennEsKippt": "Si la phrase est difficile, l’adulte la dit et l’enfant répète. Si l’enfant ne veut pas parler, il montre l’objet du doigt.",
-      "kurz": "Montrer un objet · un mot, puis une phrase entière · on échange"
+      "wennEsKippt": "Si l’enfant ne trouve pas de question, l’adulte en propose deux (« C’est grand ? », « C’est doux ? »), et l’enfant en choisit une. Si l’enfant ne veut pas questionner, il soulève simplement le gobelet, et l’adulte raconte ce que c’est.",
+      "kurz": "Objet sous le gobelet · l’enfant pose deux questions · échanger"
     },
-    "kurz": "Ding zeigen · Kind sagt ein Wort, dann einen ganzen Satz · tauschen"
+    "kurz": "Gegenstand unter dem Becher · Kind stellt zwei Fragen · tauschen"
   },
   {
     "id": "th:kommunikation-bewegung-vorschule",
@@ -2349,14 +2363,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Ohr, Auge oder Mund",
-    "text": "Die Fachkraft zeigt drei Zeichen: Hand ans Ohr (zuhören), Hand ans Auge (hinschauen), Finger vor den Mund (warten, bis der andere fertig ist). Das Kind macht jedes Zeichen nach und zeigt das, das heute beim Reden geholfen hat. Die Fachkraft zeigt auch ihres.",
+    "titel": "Die Handpuppe hört zu",
+    "text": "Das Kind sagt der Handpuppe ein Wort, zum Beispiel seine Lieblingsfarbe. Die Fachkraft lässt die Handpuppe die Ohren zuhalten und „Was?“ fragen. Das Kind zeigt der Handpuppe, wie Zuhören geht: Hand ans Ohr und hinschauen. Dann sagt die Handpuppe das Wort richtig nach, und das Kind darf die Handpuppe nehmen, während die Fachkraft ein Wort sagt.",
     "sagen": [
-      "Beim Reden und Zuhören helfen kleine Dinge. Ich zeige dir drei Zeichen.",
-      "Ohr, Auge, Mund. Was hat dir heute geholfen?",
-      "Mir hat das Auge geholfen. Du darfst auch Pass sagen."
+      "Beim Reden und Zuhören braucht man Ohren und Augen. Das zeige ich dir gleich mit einem kleinen Spiel.",
+      "Sag der Handpuppe ein Wort. Sie hört nicht richtig zu – zeig der Handpuppe, wie es geht: Hand ans Ohr und hinschauen.",
+      "Super zugehört! Jetzt darfst du die Handpuppe nehmen."
     ],
-    "wennEsKippt": "Mag das Kind keins wählen, zeigt die Fachkraft ihr Zeichen, und das Kind macht es nur nach. Ein Zeichen reicht.",
+    "wennEsKippt": "Mag das Kind nichts sagen, flüstert es der Handpuppe das Wort zu oder zeigt auf einen Gegenstand. Zeigt das Kind die Zeichen nicht, macht die Fachkraft sie vor, und das Kind macht sie nach.",
     "rolle": [
       "reflexion"
     ],
@@ -2385,12 +2399,14 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech",
+      "rollenspiel",
       "spiel"
     ],
-    "material": [],
+    "material": [
+      "handpuppe"
+    ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -2399,17 +2415,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Oreille, œil ou bouche",
-      "text": "L’adulte montre trois signes : la main à l’oreille (écouter), la main à l’œil (regarder), le doigt devant la bouche (attendre que l’autre ait fini). L’enfant refait chaque signe et montre celui qui l’a aidé aujourd’hui quand on parlait. L’adulte montre aussi le sien.",
+      "titel": "La marionnette écoute",
+      "text": "L’enfant dit un mot à la marionnette, par exemple sa couleur préférée. La marionnette se bouche les oreilles et demande « Quoi ? ». L’enfant montre à la marionnette comment on écoute : la main à l’oreille et le regard tourné vers la personne. Ensuite, la marionnette répète correctement le mot, et l’enfant prend la marionnette pendant que l’adulte dit un mot.",
       "sagen": [
-        "Quand on parle et qu’on écoute, de petites choses aident. Je te montre trois signes.",
-        "Oreille, œil, bouche. Qu’est-ce qui t’a aidé aujourd’hui ?",
-        "L’œil m’a aidé. Tu peux aussi dire « Je passe »."
+        "Pour parler et écouter, on a besoin d’oreilles et d’yeux. Je te le montre tout de suite avec un petit jeu.",
+        "Dis un mot à la marionnette. Elle n’écoute pas bien – montre-lui comment faire : la main à l’oreille et regarde.",
+        "Bravo, tu as bien écouté ! Maintenant, tu peux prendre la marionnette."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas choisir, l’adulte montre son signe et l’enfant le refait seulement. Un seul signe suffit.",
-      "kurz": "Signes oreille · œil · bouche · l’enfant montre ce qui a aidé"
+      "wennEsKippt": "Si l’enfant ne veut rien dire, il chuchote le mot à la marionnette ou montre un objet. S’il ne montre pas les signes, l’adulte les fait d’abord et l’enfant les imite.",
+      "kurz": "Dire un mot · la marionnette n’écoute pas · montrer comment faire"
     },
-    "kurz": "Zeichen Ohr · Auge · Mund lernen · Kind zeigt, was heute half"
+    "kurz": "Wort sagen · Handpuppe hält Ohren zu · Kind zeigt, wie Zuhören geht"
   },
   {
     "id": "th:kommunikation-abschluss-vorschule",
@@ -2620,14 +2636,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Das habe ich gemacht",
-    "text": "Die Fachkraft sagt, was sie in der Stunde gemacht hat, und zeigt es mit einer Handbewegung. Das Kind sagt oder zeigt, was es gemacht hat. Die Fachkraft wiederholt es in einem Satz, ohne zu bewerten: „Du hast … gemacht.“ Das Kind darf auch Pass sagen.",
+    "titel": "Das kann meine Hand",
+    "text": "Das Kind legt eine Hand auf ein Blatt und fährt mit dem Stift um die Hand herum; die Fachkraft hält das Blatt still. Dann zeigt das Kind mit der Hand etwas, was sie kann, zum Beispiel winken, drehen oder malen. Die Fachkraft macht es nach und sagt: „Deine Hand kann winken.“ Zwei- bis dreimal; das Blatt darf das Kind behalten.",
     "sagen": [
-      "Heute ging es um dich und das, was du kannst. Wir schauen kurz zurück.",
-      "Das habe ich heute gemacht. Und du? Du darfst auch Pass sagen.",
-      "Ich habe gehört, was du gemacht hast. Danke."
+      "Heute geht es um dich und das, was du schon kannst. Das schauen wir uns mit deiner Hand an.",
+      "Mal deine Hand ab. Was kann sie? Zeig es mir.",
+      "Deine Hand kann winken. Danke fürs Zeigen."
     ],
-    "wennEsKippt": "Fällt dem Kind nichts ein, nennt die Fachkraft zwei Dinge, die sie gesehen hat, und das Kind zeigt auf eines. Das Kind darf auch Pass sagen.",
+    "wennEsKippt": "Mag das Kind nichts zeigen, zeigt die Fachkraft, was die eigene Hand kann, und das Kind macht es nach. Mag das Kind nicht malen, legt es die Hand nur auf das Blatt.",
     "rolle": [
       "reflexion"
     ],
@@ -2656,11 +2672,15 @@
     "belastung": 1,
     "reiz": 0,
     "format": [
-      "gespraech"
+      "malen",
+      "spiel"
     ],
-    "material": [],
+    "material": [
+      "papier",
+      "stifte"
+    ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -2669,17 +2689,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Voilà ce que j’ai fait",
-      "text": "L’adulte dit ce qu’il a fait pendant la séance et le montre avec un geste de la main. L’enfant dit ou montre ce qu’il a fait. L’adulte le répète en une phrase, sans juger : « Tu as fait… » L’enfant peut aussi dire « Je passe ».",
+      "titel": "Ce que sait faire ma main",
+      "text": "L’enfant pose une main sur une feuille et en suit le contour avec le crayon ; l’adulte tient la feuille immobile. Puis l’enfant montre avec la main quelque chose qu’elle sait faire, par exemple faire coucou, tourner ou dessiner. L’adulte le refait et dit : « Ta main sait faire coucou. » Deux ou trois fois ; l’enfant peut garder la feuille.",
       "sagen": [
-        "Aujourd’hui, on parlait de toi et de ce que tu sais faire. On regarde un peu en arrière.",
-        "Voilà ce que j’ai fait aujourd’hui. Et toi ? Tu peux aussi dire « Je passe ».",
-        "J’ai entendu ce que tu as fait. Merci."
+        "Aujourd’hui, on parle de toi et de ce que tu sais déjà faire. On le regarde avec ta main.",
+        "Pose ta main sur la feuille et fais-en le tour avec le crayon. Que sait-elle faire ? Montre-moi.",
+        "Ta main sait faire coucou. Merci de me l’avoir montré."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte nomme deux choses qu’il a vues et l’enfant en montre une. L’enfant peut aussi dire « Je passe ».",
-      "kurz": "Chacun dit ou montre ce qu’il a fait · sans évaluer"
+      "wennEsKippt": "Si l’enfant ne veut rien montrer, l’adulte montre ce que sa propre main sait faire et l’enfant l’imite. Si l’enfant ne veut pas dessiner, il pose seulement la main sur la feuille.",
+      "kurz": "Contour de la main · montrer ce qu’elle sait faire · imiter"
     },
-    "kurz": "Beide sagen oder zeigen, was sie gemacht haben · ohne Bewertung"
+    "kurz": "Hand umfahren · zeigen, was die Hand kann · nachmachen"
   },
   {
     "id": "th:selbstbild-abschluss-vorschule",
@@ -2755,14 +2775,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Eins nach dem anderen",
-    "text": "Die Fachkraft legt drei Dinge in eine Reihe, zum Beispiel Becher, Löffel und Socke. Das Kind schaut zu und legt dieselbe Reihe daneben, ein Ding nach dem anderen. Die Fachkraft sagt dabei „Erst … dann …“. Danach legt das Kind eine Reihe, und die Fachkraft legt nach.",
+    "titel": "Socke in den Korb",
+    "text": "Die Fachkraft stellt den Korb ein paar Schritte entfernt auf. Das Kind wirft eine Socke in den Korb; geht sie daneben, sagt die Fachkraft „Nochmal!“, und das Kind versucht es weiter. Nach drei Versuchen darf das Kind den Korb ein Stück näher stellen. Ist die Socke drin, wirft die Fachkraft auch einmal.",
     "sagen": [
-      "Heute geht es darum, wie man etwas schafft: einen Schritt nach dem anderen.",
-      "Erst der Becher, dann der Löffel, dann die Socke.",
-      "Du hast es Schritt für Schritt gemacht."
+      "Heute geht es darum, wie man etwas schafft: nochmal probieren und es sich leichter machen.",
+      "Wirf die Socke in den Korb. Wenn sie daneben fliegt: nochmal!",
+      "Der Korb darf ein Stück näher. Geschafft!"
     ],
-    "wennEsKippt": "Fällt es schwer, legt die Fachkraft nur zwei Dinge. Mag das Kind nicht legen, zeigt es mit dem Finger die Reihenfolge.",
+    "wennEsKippt": "Gelingt es sofort, stellt das Kind den Korb einen Schritt weiter weg. Mag das Kind nicht werfen, legt es die Socke in den Korb, und die Fachkraft wirft.",
     "rolle": [
       "ankommen"
     ],
@@ -2779,7 +2799,7 @@
     },
     "dauer": {
       "min": 1,
-      "typ": 2,
+      "typ": 3,
       "max": 4
     },
     "sozialform": [
@@ -2787,14 +2807,16 @@
       "zu-zweit"
     ],
     "einzeltauglich": "ja",
-    "energie": 1,
+    "energie": 2,
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "spiel"
+      "spiel",
+      "bewegung"
     ],
     "material": [
-      "alltagsdinge"
+      "socke",
+      "korb"
     ],
     "ort": "raum",
     "anspruch": 0,
@@ -2806,17 +2828,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Une chose après l’autre",
-      "text": "L’adulte aligne trois objets, par exemple un gobelet, une cuillère et une chaussette. L’enfant regarde et aligne la même rangée à côté, un objet après l’autre. L’adulte dit en même temps « D’abord… ensuite… ». Puis l’enfant aligne une rangée et l’adulte la refait.",
+      "titel": "La chaussette dans le panier",
+      "text": "L’adulte place un panier à quelques pas. L’enfant lance une chaussette dans le panier ; si elle tombe à côté, l’adulte dit « Encore ! » et l’enfant essaie de nouveau. Après trois essais, l’enfant peut rapprocher un peu le panier. Quand la chaussette est dedans, l’adulte lance aussi une fois.",
       "sagen": [
-        "Aujourd’hui, on voit comment réussir quelque chose : une étape après l’autre.",
-        "D’abord le gobelet, ensuite la cuillère, puis la chaussette.",
-        "Tu l’as fait étape par étape."
+        "Aujourd’hui, on voit comment réussir quelque chose : réessayer et se faciliter la tâche.",
+        "Lance la chaussette dans le panier. Si elle tombe à côté : encore !",
+        "Le panier peut se rapprocher un peu. Réussi !"
       ],
-      "wennEsKippt": "Si c’est difficile, l’adulte n’aligne que deux objets. Si l’enfant ne veut pas aligner, il montre l’ordre du doigt.",
-      "kurz": "Ranger trois objets en ligne · l’enfant refait · « d’abord… puis… »"
+      "wennEsKippt": "Si ça réussit tout de suite, l’enfant éloigne le panier d’un pas. Si l’enfant ne veut pas lancer, il pose la chaussette dans le panier et l’adulte lance.",
+      "kurz": "Chaussette dans le panier · à côté : encore · rapprocher le panier"
     },
-    "kurz": "Drei Dinge in Reihe legen · Kind legt nach · „Erst … dann …“"
+    "kurz": "Socke in den Korb werfen · daneben: nochmal · Korb näher stellen"
   },
   {
     "id": "th:lernstrategien-bewegung-vorschule",
@@ -2966,14 +2988,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Mein nächster Schritt",
-    "text": "Die Fachkraft sagt, was sie nächstes Mal probieren will, zum Beispiel „noch einmal langsam anfangen“, und macht dazu einen Schritt nach vorn. Das Kind sagt oder zeigt, was es nächstes Mal probieren möchte, und macht auch einen Schritt. Dann winken beide.",
+    "titel": "Nochmal, ganz langsam",
+    "text": "Die Fachkraft lässt die Handpuppe drei Bausteine stapeln, und der Turm kippt um. Dann zeigt sie zwei Zeichen: „nochmal“ (die Hand dreht sich) und „langsam“ (die Hand sinkt ganz sacht). Das Kind wählt eines für die Handpuppe, die den Turm danach neu aufbaut, bis er steht; dann winken beide.",
     "sagen": [
-      "Zum Schluss ein kleiner Plan: ein Schritt für das nächste Mal.",
-      "Nächstes Mal probiere ich etwas Neues. Und du?",
-      "Du darfst auch Pass sagen. Tschüss!"
+      "Heute geht es darum, wie man etwas schafft: nochmal probieren und es langsam machen.",
+      "Oje, der Turm ist umgefallen. Was hilft der Handpuppe: nochmal oder langsam?",
+      "Jetzt klappt es. Tschüss!"
     ],
-    "wennEsKippt": "Fällt dem Kind nichts ein, macht die Fachkraft zwei Vorschläge, und das Kind zeigt auf einen. Der Schritt nach vorn genügt auch ohne Worte.",
+    "wennEsKippt": "Zeigt das Kind kein Zeichen, macht die Fachkraft beide vor, und das Kind wählt eines. Mag das Kind nicht, baut die Handpuppe den Turm allein auf, und das Kind winkt.",
     "rolle": [
       "abschluss"
     ],
@@ -3002,12 +3024,15 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech",
+      "spiel",
       "bewegung"
     ],
-    "material": [],
+    "material": [
+      "handpuppe",
+      "bausteine"
+    ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -3016,17 +3041,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Mon prochain pas",
-      "text": "L’adulte dit ce qu’il veut essayer la prochaine fois, par exemple « recommencer doucement », et fait un pas en avant. L’enfant dit ou montre ce qu’il aimerait essayer la prochaine fois et fait aussi un pas. Puis tous deux font signe de la main.",
+      "titel": "Encore une fois, doucement",
+      "text": "L’adulte fait empiler trois cubes à la marionnette, et la tour tombe. L’adulte montre alors deux signes : « encore une fois » (la main tourne) et « doucement » (la main descend tout doucement). L’enfant en choisit un pour la marionnette, qui reconstruit ensuite la tour jusqu’à ce qu’elle tienne ; puis tous deux font au revoir de la main.",
       "sagen": [
-        "Pour finir, un petit plan : un pas pour la prochaine fois.",
-        "La prochaine fois, j’essaie quelque chose de nouveau. Et toi ?",
-        "Tu peux aussi dire « Je passe ». Au revoir !"
+        "Aujourd’hui, on voit comment réussir quelque chose : réessayer et y aller doucement.",
+        "Oh, la tour est tombée. Qu’est-ce qui aide la marionnette : encore une fois ou doucement ?",
+        "Maintenant, ça marche. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte fait deux propositions et l’enfant en montre une. Le pas en avant suffit aussi, sans paroles.",
-      "kurz": "Un pas en avant : qu’est-ce que j’essaie la prochaine fois ?"
+      "wennEsKippt": "Si l’enfant ne montre aucun signe, l’adulte fait les deux et l’enfant en choisit un. Si l’enfant ne veut pas, la marionnette reconstruit la tour seule et l’enfant fait au revoir.",
+      "kurz": "La tour de la marionnette tombe · l’enfant montre le signe"
     },
-    "kurz": "Schritt nach vorn: was probiere ich nächstes Mal?"
+    "kurz": "Turm der Handpuppe kippt · Kind zeigt „nochmal“ oder „langsam“"
   },
   {
     "id": "th:alltag-ankommen-vorschule",
@@ -3034,14 +3059,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Alles hat seinen Platz",
-    "text": "Ein Korb steht auf dem Tisch. Das Kind legt etwas hinein, das gerade nicht gebraucht wird, zum Beispiel eine Mütze oder einen Stift. Die Fachkraft legt auch etwas hinein und sagt: „Das hat jetzt seinen Platz.“ Dann kann es losgehen.",
+    "titel": "Alles verkehrt!",
+    "text": "Die Fachkraft tut ganz ernst und macht alles verkehrt: Sie setzt sich die Socke auf den Kopf und will sich auf den Tisch statt auf den Stuhl setzen. Das Kind sagt „Nein, so nicht!“ und zeigt oder sagt, wo die Sachen hingehören, und die Fachkraft macht es danach richtig. Dann darf das Kind sich selbst etwas Verkehrtes ausdenken, und die Fachkraft bringt es in Ordnung.",
     "sagen": [
-      "Heute geht es um Alltag: Aufräumen, Anziehen und von einem zum anderen wechseln.",
-      "Was braucht gerade einen Platz?",
-      "Das hat jetzt seinen Platz. Jetzt können wir anfangen."
+      "Heute geht es um den Alltag: Dinge am richtigen Platz und in der richtigen Reihenfolge. Ich bin gleich ein bisschen durcheinander.",
+      "Ich ziehe die Socke an. Hier, auf den Kopf.",
+      "Ach so, an den Fuß! Danke, dass du es mir zeigst."
     ],
-    "wennEsKippt": "Hat das Kind nichts zum Ablegen, legt es einen Stift hinein. Mag es nicht, legt die Fachkraft ihr Ding in den Korb, und das Kind schaut zu.",
+    "wennEsKippt": "Zögert das Kind, macht die Fachkraft den Fehler noch deutlicher und fragt „Stimmt das so?“. Mag das Kind nichts sagen, zeigt es nur mit dem Finger auf den richtigen Platz.",
     "rolle": [
       "ankommen"
     ],
@@ -3070,11 +3095,12 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "spiel"
+      "spiel",
+      "rollenspiel"
     ],
     "material": [
-      "korb",
-      "alltagsdinge"
+      "socke",
+      "stuhl"
     ],
     "ort": "raum",
     "anspruch": 0,
@@ -3086,17 +3112,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Chaque chose a sa place",
-      "text": "Un panier est posé sur la table. L’enfant y met quelque chose dont on n’a pas besoin en ce moment, par exemple un bonnet ou un crayon. L’adulte y met aussi quelque chose et dit : « Maintenant, ça a sa place. » Alors on peut commencer.",
+      "titel": "Tout à l’envers !",
+      "text": "L’adulte fait très sérieusement tout de travers : il met la chaussette sur sa tête et veut s’asseoir sur la table au lieu de la chaise. L’enfant dit « Non, pas comme ça ! » et montre ou dit où vont les choses, puis l’adulte le fait correctement. Ensuite, l’enfant peut inventer une bêtise, et l’adulte la remet en ordre.",
       "sagen": [
-        "Aujourd’hui, on parle de la vie de tous les jours : ranger, s’habiller et passer d’une chose à l’autre.",
-        "Qu’est-ce qui a besoin d’une place en ce moment ?",
-        "Ça a maintenant sa place. On peut commencer."
+        "Aujourd’hui, on parle du quotidien : chaque chose à sa place et dans le bon ordre. Je vais d’abord tout mélanger.",
+        "Je mets la chaussette. Là, sur la tête.",
+        "Ah, sur le pied ! Merci de me l’avoir montré."
       ],
-      "wennEsKippt": "Si l’enfant n’a rien à ranger, il met un crayon dans le panier. S’il ne veut pas, l’adulte met son objet dans le panier et l’enfant regarde.",
-      "kurz": "Mettre un objet inutile au panier : « Il a sa place maintenant »"
+      "wennEsKippt": "Si l’enfant hésite, l’adulte rend l’erreur encore plus visible et demande « C’est bien comme ça ? ». Si l’enfant ne veut rien dire, il montre simplement du doigt la bonne place.",
+      "kurz": "L’adulte fait tout de travers · l’enfant montre la bonne place"
     },
-    "kurz": "Etwas Unnötiges in den Korb legen: „Das hat jetzt seinen Platz“"
+    "kurz": "Fachkraft macht alles falsch · Kind zeigt den richtigen Platz"
   },
   {
     "id": "th:alltag-bewegung-vorschule",
@@ -3172,14 +3198,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Das klappt schon",
-    "text": "Die Fachkraft zeigt mit Gesten drei Dinge aus dem Alltag: Aufräumen (Dinge wegtragen), Anziehen (Jacke zumachen) und Wechseln (Tür aufmachen). Sie sagt, welches davon ihr leichtfällt. Das Kind zeigt auf eines, das ihm leichtfällt; Pass ist erlaubt.",
+    "titel": "Beim Aufhören helfen",
+    "text": "Die Handpuppe hat einen Stift in der Hand und jammert: „Ich will noch nicht aufhören!“ Die Fachkraft zeigt drei Wege zum Aufhören: den Stift in den Korb legen, ihn mit dem Tuch zudecken oder gemeinsam bis drei zählen und loslassen. Das Kind wählt den Weg, der der Handpuppe am besten hilft, und zeigt ihn. Dann hört die Handpuppe auf und sagt „Danke, das hat geholfen“.",
     "sagen": [
-      "Im Alltag gibt es viele kleine Dinge. Wir schauen, was schon klappt.",
-      "Aufräumen, Anziehen, Wechseln: Was geht schon gut?",
-      "Ich zeige auf Aufräumen. Du darfst auch Pass sagen."
+      "Heute ging es um den Alltag, auch ums Aufhören und Aufräumen. Dabei braucht die Handpuppe gleich Hilfe.",
+      "Die Handpuppe will nicht aufhören. Was hilft der Handpuppe?",
+      "Danke, das hat geholfen. Du darfst auch „Pass“ sagen."
     ],
-    "wennEsKippt": "Mag das Kind nicht zeigen, zeigt die Fachkraft zwei der Dinge, und das Kind nickt bei einem. Ein Zeichen genügt.",
+    "wennEsKippt": "Wählt das Kind nicht, probiert die Fachkraft alle drei Wege mit der Handpuppe aus, und das Kind nickt bei dem, der am besten passt. Das Kind darf auch „Pass“ sagen.",
     "rolle": [
       "reflexion"
     ],
@@ -3208,10 +3234,15 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech",
-      "spiel"
+      "spiel",
+      "rollenspiel"
     ],
-    "material": [],
+    "material": [
+      "handpuppe",
+      "korb",
+      "tuch",
+      "stifte"
+    ],
     "ort": "raum",
     "anspruch": 1,
     "merkmale": {
@@ -3222,17 +3253,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Ça marche déjà",
-      "text": "L’adulte montre par des gestes trois choses de la vie de tous les jours : ranger (porter des choses), s’habiller (fermer la veste) et passer d’une chose à l’autre (ouvrir la porte). Il dit laquelle lui est facile. L’enfant montre une chose qui lui est facile ; « Je passe » est permis.",
+      "titel": "Aider à arrêter",
+      "text": "La marionnette tient un crayon et se plaint : « Je ne veux pas encore arrêter ! » L’adulte montre trois façons de l’aider à s’arrêter : ranger le crayon dans le panier, le couvrir avec le foulard ou compter ensemble jusqu’à trois, puis lâcher. L’enfant choisit la façon qui aide le mieux la marionnette et la lui montre. Alors la marionnette s’arrête et dit « Merci, ça m’a aidée ».",
       "sagen": [
-        "Dans la vie de tous les jours, il y a beaucoup de petites choses. On regarde ce qui marche déjà.",
-        "Ranger, s’habiller, passer d’une chose à l’autre : qu’est-ce qui marche déjà bien ?",
-        "Je montre ranger. Tu peux aussi dire « Je passe »."
+        "Aujourd’hui, on a parlé du quotidien, y compris d’arrêter et de ranger. La marionnette a besoin d’aide pour ça.",
+        "La marionnette ne veut pas arrêter. Qu’est-ce qui peut l’aider ?",
+        "Merci, ça m’a aidée. Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas montrer, l’adulte montre deux des choses et l’enfant hoche la tête pour l’une d’elles. Un seul signe suffit.",
-      "kurz": "Gestes ranger · s’habiller · changer · l’enfant montre ce qui va"
+      "wennEsKippt": "Si l’enfant ne choisit pas, l’adulte essaie les trois façons avec la marionnette, et l’enfant fait signe de la tête pour celle qui convient le mieux. L’enfant peut aussi dire « Je passe ».",
+      "kurz": "La marionnette ne veut pas arrêter · l’enfant choisit un moyen"
     },
-    "kurz": "Gesten Aufräumen · Anziehen · Wechseln · Kind zeigt, was klappt"
+    "kurz": "Handpuppe will nicht aufhören · Kind wählt Korb, Tuch oder Zählen"
   },
   {
     "id": "th:alltag-abschluss-vorschule",

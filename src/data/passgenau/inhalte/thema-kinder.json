@@ -141,14 +141,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Woran erkenne ich es?",
-    "text": "Die Fachkraft legt drei Zettel auf den Tisch, jeweils mit einem kleinen Bild: ein Auge für das Gesicht, ein Ohr für die Stimme, ein Strichmännchen für die Haltung. Das Kind zeigt auf den Zettel, der ihm am meisten hilft zu erkennen, wie es anderen geht, und macht ein kleines Beispiel vor. Die Fachkraft wählt auch einen Zettel und macht ebenfalls ein Beispiel.",
+    "titel": "Stimme, Haltung oder Gesicht?",
+    "text": "Die Fachkraft zeigt dem Kind drei Gefühle auf je einem Weg: eins nur mit der Stimme (ein Satz, Gesicht hinter einem Blatt), eins nur mit der Haltung (stumm, Gesicht hinter dem Blatt) und eins nur mit dem Gesicht (stumm). Das Kind nennt jeweils gleich das Gefühl, das es erkennt, und zeigt am Ende auf Ohr, Schultern oder Auge: Wobei war es am leichtesten? Dann zeigt das Kind ein Gefühl auf seinem besten Weg, und die Fachkraft nennt es.",
     "sagen": [
-      "Heute ging es darum, Gefühle bei anderen zu erkennen. Was hilft dir dabei am meisten?",
-      "Zeig auf den Zettel, der am besten passt. Du darfst auch „Pass“ sagen.",
-      "Mir hilft oft die Stimme."
+      "Heute ging es darum, Gefühle bei anderen zu erkennen. Ich zeige dir gleich Gefühle auf drei verschiedenen Wegen.",
+      "Welches Gefühl ist das? Und wobei hast du es am leichtesten erkannt: Ohr, Schultern oder Auge?",
+      "Du darfst auch „Pass“ sagen."
     ],
-    "wennEsKippt": "Fällt dem Kind kein Beispiel ein, macht die Fachkraft zwei vor, und das Kind sagt nur, welches davon leichter zu erkennen war. Das Kind darf auch „Pass“ sagen.",
+    "wennEsKippt": "Findet das Kind das Gefühl nicht, nennt die Fachkraft zwei zur Auswahl, und das Kind zeigt auf eins. Das Kind darf auch „Pass“ sagen.",
     "rolle": [
       "reflexion"
     ],
@@ -177,12 +177,11 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech",
-      "malen"
+      "spiel",
+      "gespraech"
     ],
     "material": [
-      "papier",
-      "stifte"
+      "papier"
     ],
     "ort": "raum",
     "anspruch": 1,
@@ -194,19 +193,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "À quoi je le reconnais ?",
-      "text": "L’adulte pose trois papiers sur la table, chacun avec un petit dessin : un œil pour le visage, une oreille pour la voix, un bonhomme pour la posture. L’enfant montre le papier qui l’aide le plus à reconnaître ce que ressentent les autres et en fait une petite démonstration. L’adulte choisit aussi un papier et fait aussi une démonstration.",
+      "titel": "Voix, posture ou visage ?",
+      "text": "L’adulte tient une feuille devant son visage et montre à l’enfant trois émotions, par un seul moyen à la fois : la voix (une phrase), puis la posture (en silence), puis le visage sans la feuille (en silence). L’enfant nomme tout de suite l’émotion qu’il reconnaît et montre à la fin l’oreille, les épaules ou l’œil : avec quoi était-ce le plus facile ? Puis l’enfant montre une émotion par le moyen qui lui convient le mieux, et l’adulte la nomme.",
       "sagen": [
-        "Aujourd’hui, on a parlé de reconnaître les émotions chez les autres. Qu’est-ce qui t’aide le plus ?",
-        "Montre le papier qui te convient le mieux. Tu peux aussi dire « passe ».",
-        "Moi, c’est souvent la voix qui m’aide."
+        "Aujourd’hui, on a parlé de reconnaître les émotions des autres. Je vais te montrer des émotions de trois façons différentes.",
+        "Quelle émotion est-ce ? Et avec quoi l’as-tu reconnue le plus facilement : l’oreille, les épaules ou l’œil ?",
+        "Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas d’exemple, l’adulte en montre deux et l’enfant dit seulement lequel était le plus facile à reconnaître. L’enfant peut aussi dire « passe ».",
-      "kurz": "Trois papiers : œil · oreille · posture · l’enfant choisit, exemple",
-      "vorbereitung": "Dessiner 3 papiers : œil (visage) · oreille (voix) · bonhomme (posture)"
+      "wennEsKippt": "Si l’enfant ne trouve pas l’émotion, l’adulte en propose deux, et l’enfant montre celle qui convient. L’enfant peut aussi dire « Je passe ».",
+      "kurz": "Émotion par la voix · la posture · le visage · l’enfant choisit"
     },
-    "kurz": "Drei Zettel: Auge · Ohr · Haltung · Kind wählt, macht Beispiel",
-    "vorbereitung": "3 Zettel zeichnen: Auge (Gesicht) · Ohr (Stimme) · Strichmännchen (Haltung)"
+    "kurz": "Gefühl nur per Stimme · Haltung · Gesicht · Kind wählt den besten Weg"
   },
   {
     "id": "th:gefuehle-erkennen-abschluss-kinder",
@@ -214,14 +211,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Detektiv für Gefühle",
-    "text": "Beide halten Daumen und Zeigefinger als Detektiv-Brille vor die Augen. Jeder sagt leise ein Gefühl, das er heute noch bei jemandem oder auf einem Bild entdecken will, zum Beispiel „Überraschung“ oder „Stolz“. Dann sagen beide „Tschüss, Detektiv“ und nehmen die Brille ab.",
+    "titel": "Tschüss mit Stimme",
+    "text": "Die Fachkraft sagt „Tschüss“ so, dass man ein Gefühl hört, zum Beispiel müde, froh oder überrascht, und das Kind sagt, welches Gefühl es gehört hat. Dann sagt das Kind sein „Tschüss“ mit einem Gefühl seiner Wahl, und die Fachkraft nennt, was sie hört. Zwei Runden genügen.",
     "sagen": [
-      "Heute ging es darum, Gefühle zu erkennen. Zum Schluss bekommst du einen kleinen Detektiv-Auftrag.",
-      "Ich suche heute noch „Überraschung“. Und du?",
-      "Du darfst auch „Pass“ sagen. Tschüss, Detektiv!"
+      "Heute ging es darum, Gefühle bei anderen zu erkennen. Zum Schluss hörst du mein Tschüss und sagst, welches Gefühl darin steckt.",
+      "Welches Gefühl hörst du in meinem Tschüss?",
+      "Jetzt bist du dran. Ich höre genau zu."
     ],
-    "wennEsKippt": "Mag das Kind kein Gefühl nennen, hält es nur die Brille hoch und nickt. Der Auftrag gilt auch dann.",
+    "wennEsKippt": "Fällt dem Kind kein Gefühl ein, nennt die Fachkraft drei zur Auswahl, und das Kind sagt sein Tschüss in einem davon. Das Kind darf auch nur zuhören und „Pass“ sagen.",
     "rolle": [
       "abschluss"
     ],
@@ -264,17 +261,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Détective des émotions",
-      "text": "Chacun forme des lunettes de détective avec le pouce et l’index devant les yeux. Chacun dit à voix basse une émotion qu’il veut encore découvrir aujourd’hui chez quelqu’un ou sur une image, par exemple la surprise ou la fierté. Puis les deux disent « Au revoir, détective » et enlèvent leurs lunettes.",
+      "titel": "Au revoir avec la voix",
+      "text": "L’adulte dit « au revoir » de façon à faire entendre une émotion, par exemple fatigué, joyeux ou surpris, et l’enfant dit laquelle il a entendue. Puis l’enfant dit son « au revoir » avec une émotion de son choix, et l’adulte dit ce qu’il entend. Deux tours suffisent.",
       "sagen": [
-        "Aujourd’hui, on a parlé de reconnaître les émotions. Avant de partir, tu reçois une petite mission de détective.",
-        "Moi, je cherche encore la surprise. Et toi ?",
-        "Tu peux aussi dire « passe ». Au revoir, détective !"
+        "Aujourd’hui, on a parlé de reconnaître les émotions des autres. Pour finir, tu écoutes mon au revoir et tu dis quelle émotion tu y entends.",
+        "Quelle émotion entends-tu dans mon au revoir ?",
+        "Maintenant, c’est ton tour. J’écoute bien."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas nommer d’émotion, il lève seulement ses lunettes et hoche la tête. La mission compte quand même.",
-      "kurz": "Lunettes de détective · chacun nomme une émotion à chercher"
+      "wennEsKippt": "Si l’enfant ne trouve pas d’émotion, l’adulte en propose trois, et l’enfant dit son au revoir avec l’une d’elles. L’enfant peut aussi seulement écouter et dire « Je passe ».",
+      "kurz": "Au revoir avec une émotion dans la voix · l’enfant la nomme · échanger"
     },
-    "kurz": "Detektiv-Brille aus Fingern · jeder nennt ein Gefühl, das er sucht"
+    "kurz": "Tschüss mit Gefühl in der Stimme · Kind nennt es · tauschen"
   },
   {
     "id": "th:gefuehle-ausdruecken-ankommen-kinder",
@@ -421,14 +418,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Satz mit Ich-Gefühl",
-    "text": "Die Fachkraft nennt drei Satzanfänge: „Ich freue mich, wenn …“, „Ich fühle mich wohl, wenn …“ und „Ich ärgere mich, wenn …“. Sie macht mit einem eigenen Beispiel den Anfang, zum Beispiel „Ich freue mich, wenn der Bus pünktlich kommt“. Das Kind wählt einen Satzanfang und macht den Satz mit eigenen Worten fertig; gemeint sind kleine Dinge aus Schule, Spiel oder Pause. Ein Satz genügt.",
+    "titel": "Wetterbericht mit Gefühl",
+    "text": "Die Fachkraft sagt einen Satz ohne Gefühl, zum Beispiel „Morgen regnet es“, und sagt ihn dann froh und müde vor, mit Stimme und Gesicht, aber leise. Das Kind wählt zwei von drei Stimmungen (froh, müde, grummelig) und sagt denselben Satz in diesen beiden. Zum Schluss sagt das Kind, welche Stimmung ihm am leichtesten fiel, oder zeigt darauf.",
     "sagen": [
-      "Heute geht es darum, Gefühle mit Worten zu zeigen. Satzanfänge helfen dabei.",
-      "Such dir einen Anfang aus und mach den Satz fertig. „Pass“ ist auch erlaubt.",
-      "Danke, dass du das gesagt hast."
+      "Heute ging es darum, Gefühle auszudrücken, mit Stimme und Gesicht. Dazu gleich ein Wetterbericht mit Gefühl.",
+      "Sag „Morgen regnet es“ froh, müde oder grummelig. Du darfst auch „Pass“ sagen.",
+      "Welche Stimmung ging dir am leichtesten?"
     ],
-    "wennEsKippt": "Fällt dem Kind nichts ein, nennt die Fachkraft zwei mögliche Satzenden zur Auswahl, und das Kind zeigt auf eins. Sagt das Kind „Pass“, ist das in Ordnung.",
+    "wennEsKippt": "Mag das Kind nicht vorspielen, sagt die Fachkraft den Satz in drei Stimmungen, und das Kind zeigt auf die, die ihm am besten gefällt. „Pass“ ist immer erlaubt.",
     "rolle": [
       "reflexion"
     ],
@@ -457,11 +454,12 @@
     "belastung": 1,
     "reiz": 0,
     "format": [
-      "gespraech"
+      "gespraech",
+      "rollenspiel"
     ],
     "material": [],
     "ort": "raum",
-    "anspruch": 2,
+    "anspruch": 1,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -470,17 +468,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Une phrase avec mon émotion",
-      "text": "L’adulte donne trois débuts de phrase : « Ça me fait plaisir quand… », « Je me sens bien quand… » et « Ça m’énerve quand… ». Il commence avec un exemple à lui, par exemple « Ça me fait plaisir quand le bus arrive à l’heure ». L’enfant choisit un début de phrase et la termine avec ses propres mots ; il s’agit de petites choses de l’école, du jeu ou de la récréation. Une seule phrase suffit.",
+      "titel": "Météo avec émotion",
+      "text": "L’adulte dit une phrase sans émotion, par exemple « Demain, il pleut », puis la répète d’un ton joyeux et d’un ton fatigué, avec la voix et le visage, mais doucement. L’enfant choisit deux tons sur trois (joyeux, fatigué, grognon) et dit la même phrase sur ces deux tons. À la fin, l’enfant dit quel ton lui a paru le plus facile, ou le montre.",
       "sagen": [
-        "Aujourd’hui, on parle de dire ses émotions avec des mots. Les débuts de phrase aident pour ça.",
-        "Choisis un début et termine la phrase. Tu peux aussi dire « passe ».",
-        "Merci d’avoir dit ça."
+        "Aujourd’hui, on a parlé de montrer ses émotions, avec la voix et le visage. On fait maintenant une météo avec émotion.",
+        "Dis « Demain, il pleut » joyeux, fatigué ou grognon. Tu peux aussi dire « Je passe ».",
+        "Quel ton t’a semblé le plus facile ?"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose deux fins possibles et l’enfant en montre une. Si l’enfant dit « passe », c’est très bien.",
-      "kurz": "Choisir un début de phrase (« Je me réjouis quand… ») · le finir"
+      "wennEsKippt": "Si l’enfant ne veut pas jouer, l’adulte dit la phrase sur trois tons, et l’enfant montre celui qu’il préfère. « Je passe » est toujours permis.",
+      "kurz": "Phrase météo joyeux · fatigué · grognon · choisir la plus facile"
     },
-    "kurz": "Satzanfang wählen („Ich freue mich, wenn …“) · Satz beenden"
+    "kurz": "Wettersatz froh · müde · grummelig sagen · leichteste Stimmung wählen"
   },
   {
     "id": "th:gefuehle-ausdruecken-abschluss-kinder",
@@ -831,14 +829,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Erst warten, dann Hallo",
-    "text": "Die Fachkraft stellt eine Sanduhr auf den Tisch und dreht sie um. Beide schauen zu, bis der letzte Sand unten ist, und sagen kein Wort. Erst dann sagen sie „Hallo“, und das Kind darf die Begrüßung selbst wählen (Winken, Fingergruß oder Wort).",
+    "titel": "Klopf-Code zum Start",
+    "text": "Die Fachkraft klopft mit den Fingerspitzen leise auf den Tisch. Einmal klopfen heißt: Das Kind klopft einmal zurück. Zweimal klopfen heißt: Hände flach auf den Tisch und keine Antwort. Nach ein paar Runden klopft das Kind, und die Fachkraft folgt dem Code; zum Schluss sagen beide Hallo.",
     "sagen": [
-      "Heute geht es darum, kurz zu warten, bevor man etwas tut. Das üben wir gleich bei der Begrüßung.",
-      "Wir warten, bis der Sand durch ist. Dann sagen wir Hallo.",
-      "Geschafft: Jetzt darfst du Hallo sagen."
+      "Heute geht es darum, kurz zu stoppen, bevor man etwas tut. Dazu ein Klopf-Spiel.",
+      "Einmal klopfen: du klopfst zurück. Zweimal klopfen: Hände flach, nichts tun.",
+      "Jetzt bestimmst du den Code, und ich folge ihm."
     ],
-    "wennEsKippt": "Fällt das Warten schwer, nimmt die Fachkraft eine kürzere Sanduhr oder zählt leise bis fünf, und das Kind zählt mit. Es geht ums Ausprobieren, nicht darum, es perfekt zu machen.",
+    "wennEsKippt": "Klopft das Kind bei zweimal doch zurück, gehört das zum Spiel, und es geht einfach weiter. Fällt es schwer, klopft die Fachkraft langsamer und macht weniger Runden.",
     "rolle": [
       "ankommen"
     ],
@@ -869,9 +867,7 @@
     "format": [
       "spiel"
     ],
-    "material": [
-      "sanduhr"
-    ],
+    "material": [],
     "ort": "raum",
     "anspruch": 0,
     "merkmale": {
@@ -882,17 +878,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "D’abord attendre, puis bonjour",
-      "text": "L’adulte pose un sablier sur la table et le retourne. Les deux regardent jusqu’à ce que le dernier grain soit tombé, sans dire un mot. Ce n’est qu’ensuite qu’ils se disent « bonjour », et l’enfant peut choisir comment saluer (un signe de la main, un geste du doigt ou un mot).",
+      "titel": "Le code des petits coups",
+      "text": "L’adulte frappe doucement du bout des doigts sur la table. Un coup signifie : l’enfant frappe un coup en retour. Deux coups signifient : mains à plat sur la table et pas de réponse. Après quelques tours, l’enfant frappe et l’adulte suit le code ; pour finir, les deux se disent bonjour.",
       "sagen": [
-        "Aujourd’hui, on s’exerce à attendre un petit moment avant d’agir. On commence par le bonjour.",
-        "On attend que le sable soit tombé. Ensuite, on se dit bonjour.",
-        "C’est fini : tu peux maintenant dire bonjour."
+        "Aujourd’hui, on s’exerce à s’arrêter un instant avant d’agir. Voici un petit jeu de coups sur la table.",
+        "Un coup : tu réponds. Deux coups : mains à plat, tu ne fais rien.",
+        "Maintenant, tu décides du code et je le suis."
       ],
-      "wennEsKippt": "Si attendre est difficile, l’adulte prend un sablier plus court ou compte tout bas jusqu’à cinq, et l’enfant compte avec lui. L’important, c’est d’essayer, pas d’être parfait.",
-      "kurz": "Retourner le sablier · regarder en silence · puis bonjour"
+      "wennEsKippt": "Si l’enfant répond quand même à deux coups, cela fait partie du jeu, et on continue. Si c’est difficile, l’adulte frappe plus lentement et fait moins de tours.",
+      "kurz": "Un coup : répondre · deux coups : mains à plat · bonjour"
     },
-    "kurz": "Sanduhr umdrehen · schweigend zuschauen · dann Hallo (Kind wählt)"
+    "kurz": "Einmal klopfen: antworten · zweimal klopfen: Hände flach · Hallo"
   },
   {
     "id": "th:impulskontrolle-bewegung-kinder",
@@ -968,14 +964,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Wo war meine Bremse?",
-    "text": "Die Fachkraft erklärt kurz: Eine Bremse ist, wenn man einen Moment wartet, bevor man etwas sagt oder tut. Sie nennt zuerst ein eigenes Beispiel, zum Beispiel „Ich habe gewartet, bis du fertig warst“. Das Kind sucht einen Moment der Stunde, in dem es kurz gebremst hat (zum Beispiel beim Zuhören oder Warten), und zeigt eine „Bremse“ mit der Hand.",
+    "titel": "Drei Warte-Tricks",
+    "text": "Die Fachkraft zeigt drei Warte-Tricks: die Hände unter die Beine klemmen, im Kopf bis drei zählen und einmal langsam ausatmen. Sie stellt dem Kind drei leichte Fragen, zum Beispiel „Was ist dein Lieblingstier?“, und vor der Antwort probiert das Kind einen anderen Trick. Dann zeigt das Kind auf Hände, Kopf oder Mund, welcher Trick ihm am besten lag, und die Fachkraft sagt, welchen Trick sie am liebsten mag.",
     "sagen": [
-      "Heute ging es darum, kurz zu bremsen, bevor man etwas tut. Wo war heute deine Bremse?",
-      "Eine Bremse ist ein kleiner Moment Warten.",
-      "Ich habe meine Bremse gespürt, als ich dich ausreden ließ."
+      "Heute ging es darum, kurz zu warten, bevor man etwas sagt oder tut. Wir probieren drei Tricks aus.",
+      "Erst der Trick, dann die Antwort.",
+      "Welcher Trick passt zu dir? Zeig auf Hände, Kopf oder Mund, oder sag „Pass“."
     ],
-    "wennEsKippt": "Findet das Kind keinen Moment, nennt die Fachkraft zwei zur Auswahl, und das Kind wählt einen oder sagt „Pass“. Es geht nie darum, wo die Bremse gefehlt hat.",
+    "wennEsKippt": "Fällt dem Kind keine Antwort ein, reicht ein Wort oder Zeigen. Mag das Kind nicht probieren, probiert die Fachkraft alle drei, und das Kind zeigt nur auf einen.",
     "rolle": [
       "reflexion"
     ],
@@ -1004,6 +1000,7 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
+      "spiel",
       "gespraech"
     ],
     "material": [],
@@ -1017,17 +1014,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Où était mon frein ?",
-      "text": "L’adulte explique brièvement : un frein, c’est quand on attend un petit moment avant de dire ou de faire quelque chose. Il donne d’abord un exemple à lui, comme « J’ai attendu que tu aies fini ». L’enfant cherche un moment de la séance où il a freiné un instant (par exemple en écoutant ou en attendant) et montre un « frein » avec la main.",
+      "titel": "Trois astuces pour attendre",
+      "text": "L’adulte montre trois astuces pour attendre : glisser les mains sous les jambes, compter jusqu’à trois dans sa tête, expirer lentement. Il pose à l’enfant trois questions faciles, par exemple « Quel est ton animal préféré ? », et avant de répondre l’enfant essaie une autre astuce. Ensuite, l’enfant montre les mains, la tête ou la bouche, selon l’astuce qui lui a le mieux convenu, et l’adulte dit laquelle il préfère.",
       "sagen": [
-        "Aujourd’hui, on a parlé de freiner un instant avant d’agir. Où était ton frein aujourd’hui ?",
-        "Un frein, c’est un tout petit moment d’attente.",
-        "J’ai senti mon frein quand je t’ai laissé finir de parler."
+        "Aujourd’hui, on a parlé d’attendre un instant avant de dire ou de faire quelque chose. On essaie trois astuces.",
+        "D’abord l’astuce, ensuite la réponse.",
+        "Quelle astuce te convient ? Montre les mains, la tête ou la bouche, ou dis « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve aucun moment, l’adulte en propose deux et l’enfant en choisit un ou dit « passe ». Il ne s’agit jamais de chercher où le frein a manqué.",
-      "kurz": "Expliquer le frein, donner un exemple · l’enfant cherche son moment"
+      "wennEsKippt": "Si l’enfant n’a pas de réponse, un mot ou un geste suffit. Si l’enfant ne veut pas essayer, l’adulte essaie les trois astuces, et l’enfant en montre simplement une.",
+      "kurz": "3 astuces pour attendre avant de répondre · montrer la meilleure"
     },
-    "kurz": "Bremse erklären, Beispiel geben · Kind sucht seinen Bremsmoment"
+    "kurz": "3 Warte-Tricks vor der Antwort probieren · besten zeigen"
   },
   {
     "id": "th:impulskontrolle-abschluss-kinder",
@@ -1035,14 +1032,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Die Stopp-Hand",
-    "text": "Beide legen eine Hand flach auf den Tisch, die „Stopp-Hand“. Sie machen einen ruhigen Atemzug, und erst nach dem Ausatmen sagen sie „Tschüss“. Das Kind darf zuerst aufstehen, wenn beide Tschüss gesagt haben.",
+    "titel": "Bremsstrich vor der Mauer",
+    "text": "Die Fachkraft malt an den Rand eines Blattes eine dicke Linie als Mauer. Das Kind setzt den Stift weit entfernt an, malt zügig auf die Mauer zu und bremst, bevor der Strich sie berührt. Die Fachkraft bremst auf dem eigenen Blatt mit; danach malt das Kind für sie eine Mauer, und beide sagen „Tschüss“.",
     "sagen": [
-      "Heute ging es ums Warten und Stoppen. Zum Schluss üben wir es mit der Stopp-Hand.",
-      "Hand auf den Tisch, ein Atemzug, dann Tschüss.",
-      "Das war ein ruhiger Stopp."
+      "Heute ging es darum, rechtzeitig zu stoppen. Zum Schluss bremst unser Stift vor einer Mauer.",
+      "Schnell losmalen und kurz vor der Mauer anhalten.",
+      "Gebremst! Tschüss!"
     ],
-    "wennEsKippt": "Mag das Kind die Hand nicht auflegen, hält es sie in die Luft wie ein Stoppschild. Wird es zappelig, macht die Fachkraft den Atemzug langsam vor.",
+    "wennEsKippt": "Berührt der Strich die Mauer, ist das kein Fehler: Das Kind setzt neu an und malt etwas langsamer. Wird es zu leicht, malt das Kind schneller oder wählt eine dünnere Mauer.",
     "rolle": [
       "abschluss"
     ],
@@ -1059,7 +1056,7 @@
     },
     "dauer": {
       "min": 1,
-      "typ": 2,
+      "typ": 3,
       "max": 4
     },
     "sozialform": [
@@ -1071,9 +1068,13 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "atmen"
+      "spiel",
+      "malen"
     ],
-    "material": [],
+    "material": [
+      "papier",
+      "stifte"
+    ],
     "ort": "raum",
     "anspruch": 0,
     "merkmale": {
@@ -1084,17 +1085,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "La main stop",
-      "text": "Les deux posent une main à plat sur la table, la « main stop ». Ils prennent une respiration tranquille, et ce n’est qu’après l’expiration qu’ils disent « au revoir ». L’enfant peut se lever en premier quand les deux ont dit au revoir.",
+      "titel": "Freiner devant le mur",
+      "text": "L’adulte dessine au bord d’une feuille une ligne épaisse qui représente un mur. L’enfant pose son crayon loin du mur, trace vite vers lui et freine avant que le trait ne le touche. L’adulte freine aussi sur sa propre feuille ; ensuite l’enfant lui dessine un mur, et les deux disent « au revoir ».",
       "sagen": [
-        "Aujourd’hui, on a parlé d’attendre et de s’arrêter. Pour finir, on s’exerce avec la main stop.",
-        "Main sur la table, une respiration, puis au revoir.",
-        "C’était un arrêt tranquille."
+        "Aujourd’hui, on a parlé de s’arrêter à temps. Pour finir, notre crayon freine devant un mur.",
+        "Démarre vite et arrête-toi juste avant le mur.",
+        "Bien freiné ! Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas poser la main, il la tient en l’air comme un panneau stop. S’il s’agite, l’adulte montre la respiration lentement.",
-      "kurz": "Main à plat sur la table · une respiration · puis au revoir"
+      "wennEsKippt": "Si le trait touche le mur, ce n’est pas une erreur : l’enfant recommence un peu plus lentement. Si c’est trop facile, l’enfant trace plus vite ou choisit un mur plus fin.",
+      "kurz": "Mur au bord de la feuille · tracer vite, freiner avant · au revoir"
     },
-    "kurz": "Hand flach auf den Tisch · ein Atemzug · erst dann Tschüss"
+    "kurz": "Mauer an den Blattrand · schnell malen, davor bremsen · Tschüss"
   },
   {
     "id": "th:aufmerksamkeit-ankommen-kinder",
@@ -1240,14 +1241,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Mein Scheinwerfer",
-    "text": "Die Fachkraft erklärt: Im Kopf gibt es einen Scheinwerfer, der dorthin leuchtet, wohin man schaut und hört. Das Kind nennt oder zeigt drei Dinge, die sein Scheinwerfer in der Stunde angeleuchtet hat (etwas Gesehenes, etwas Gehörtes oder etwas Gespürtes). Die Fachkraft nennt auch drei Dinge und bewertet keins.",
+    "titel": "Scheinwerfer, stopp!",
+    "text": "Die Fachkraft fährt mit einer Lampe langsam über die Dinge auf dem Tisch und im Raum. Das Kind sagt „Stopp“, wenn das Licht bei dem Ding ist, das es heute am längsten angeschaut hat; wenn es mag, sagt es ein Wort dazu. Dann führt das Kind das Licht, und die Fachkraft sagt bei einem Ding „Stopp“ und nennt ein Wort dazu.",
     "sagen": [
-      "Heute ging es um Aufmerksamkeit. Dein Kopf hat einen Scheinwerfer: Wohin hat er heute geleuchtet?",
-      "Nenne oder zeige mir drei Dinge, die du bemerkt hast.",
-      "Mein Scheinwerfer hat auf das Fenster geleuchtet."
+      "Heute ging es um Aufmerksamkeit. Dein Kopf hat einen Scheinwerfer: Wohin hat er heute am längsten gestrahlt?",
+      "Ich fahre mit dem Licht langsam über den Tisch. Sag „Stopp“, wenn es dort ist.",
+      "Bei mir war der Scheinwerfer lange bei den Stiften. Du darfst auch „Pass“ sagen."
     ],
-    "wennEsKippt": "Fallen dem Kind nur ein oder zwei Dinge ein, ist das genug; „Pass“ ist auch in Ordnung. Die Fachkraft kann mit „Ich habe ein Geräusch gehört“ helfen.",
+    "wennEsKippt": "Ohne Lampe wandert die flache Hand der Fachkraft wie ein Scheinwerfer über den Tisch. Findet das Kind keinen Stopp-Punkt, hält die Fachkraft das Licht auf ein Ding und fragt „Hier?“; „Pass“ ist auch in Ordnung.",
     "rolle": [
       "reflexion"
     ],
@@ -1276,9 +1277,12 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech"
+      "spiel",
+      "sinne"
     ],
-    "material": [],
+    "material": [
+      "lampe"
+    ],
     "ort": "raum",
     "anspruch": 1,
     "merkmale": {
@@ -1289,17 +1293,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Mon projecteur",
-      "text": "L’adulte explique : dans la tête, il y a un projecteur qui éclaire là où l’on regarde et là où l’on écoute. L’enfant nomme ou montre trois choses que son projecteur a éclairées pendant la séance (quelque chose de vu, d’entendu ou de ressenti). L’adulte nomme aussi trois choses et n’en juge aucune.",
+      "titel": "Projecteur, stop !",
+      "text": "L’adulte promène lentement une lampe sur les objets de la table et de la pièce. L’enfant dit « stop » quand la lumière arrive sur ce qu’il a regardé le plus longtemps aujourd’hui ; s’il le veut, il ajoute un mot. Ensuite, l’enfant guide la lumière, et l’adulte dit « stop » sur son objet et ajoute un mot.",
       "sagen": [
-        "Aujourd’hui, on a parlé de l’attention. Ta tête a un projecteur : où a-t-il éclairé aujourd’hui ?",
-        "Nomme ou montre-moi trois choses que tu as remarquées.",
-        "Mon projecteur a éclairé la fenêtre."
+        "Aujourd’hui, on a parlé de l’attention. Ta tête a un projecteur : où a-t-il éclairé le plus longtemps aujourd’hui ?",
+        "Je promène la lumière doucement sur la table. Dis « stop » quand elle est au bon endroit.",
+        "Chez moi, le projecteur est resté longtemps sur les crayons. Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve qu’une ou deux choses, c’est suffisant ; « passe » est aussi permis. L’adulte peut aider avec « J’ai entendu un bruit ».",
-      "kurz": "Expliquer le projecteur · l’enfant nomme trois choses remarquées"
+      "wennEsKippt": "Sans lampe, la main à plat de l’adulte glisse comme un projecteur au-dessus de la table. Si l’enfant ne trouve pas d’endroit, l’adulte arrête la lumière sur un objet et demande « Ici ? » ; « Je passe » est aussi permis.",
+      "kurz": "Lampe sur la table · l’enfant dit stop au regard le plus long"
     },
-    "kurz": "Scheinwerfer erklären · Kind nennt drei bemerkte Dinge"
+    "kurz": "Lampe wandert über den Tisch · Kind sagt Stopp beim längsten Blick"
   },
   {
     "id": "th:aufmerksamkeit-abschluss-kinder",
@@ -1447,14 +1451,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Wanderung zum Gipfel",
-    "text": "Die Fachkraft erzählt eine kleine Fantasie-Wanderung in drei Etappen: Bach, Hügel und Berg. Beide gehen auf der Stelle oder in einer Runde durch den Raum, mit Armschwung und gleichmäßigen Schritten, und die Etappen werden etwas länger. Nach jeder Etappe darf das Kind „Pause“ oder „weiter“ sagen. Am Gipfel stehen beide mit hochgereckten Armen da, ganz ohne Ton.",
+    "titel": "Socke in den Korb",
+    "text": "Ein Korb steht auf dem Boden, und beide haben eine zusammengerollte Socke. Das Kind wirft aus drei Schritten Abstand in den Korb; geht der Wurf daneben, holt es die Socke und versucht es ruhig noch einmal. Trifft die Socke, geht das Kind einen Schritt weiter weg. Die Fachkraft wirft mit und sagt bei einem Fehlwurf „Nochmal“.",
     "sagen": [
-      "Dranbleiben heißt, Schritt für Schritt weiterzugehen. Das probieren wir mit einer Wanderung.",
-      "Noch ein kleines Stück bis zum Hügel. Schritt für Schritt.",
-      "Du entscheidest: Pause oder weiter?"
+      "Dranbleiben heißt, es nochmal zu versuchen, wenn es nicht gleich klappt. Das üben wir jetzt beim Werfen.",
+      "Daneben? Dann sagen wir „Nochmal“ und werfen weiter.",
+      "Willst du einen Schritt weiter weg oder noch einmal von hier?"
     ],
-    "wennEsKippt": "Im Sitzen: Mit den Füßen am Boden „wandern“ und die Arme schwingen, die Etappen werden mitgezählt. Wird es dem Kind zu viel, wird eine Etappe kürzer oder ausgelassen.",
+    "wennEsKippt": "Im Sitzen: Das Kind wirft vom Stuhl aus, und die Fachkraft rückt den Korb nach einem Treffer ein Stück weiter weg. Wird es zu schwer, rückt der Korb näher, oder die Fachkraft hält ihn dem Kind entgegen.",
     "rolle": [
       "bewegung"
     ],
@@ -1483,10 +1487,13 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "bewegung",
-      "geschichte"
+      "spiel",
+      "bewegung"
     ],
-    "material": [],
+    "material": [
+      "korb",
+      "socke"
+    ],
     "ort": "raum",
     "anspruch": 0,
     "merkmale": {
@@ -1497,19 +1504,19 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "La randonnée jusqu’au sommet",
-      "text": "L’adulte raconte une petite randonnée imaginaire en trois étapes : le ruisseau, la colline et la montagne. Les deux marchent sur place ou en rond dans la pièce, en balançant les bras d’un pas régulier, et les étapes s’allongent un peu. Après chaque étape, l’enfant peut dire « pause » ou « on continue ». Au sommet, les deux se tiennent les bras levés, sans un bruit.",
+      "titel": "La chaussette dans le panier",
+      "text": "Un panier est posé par terre, et les deux ont une chaussette roulée en boule. L’enfant lance la sienne dans le panier à trois pas de distance ; si elle tombe à côté, il la ramasse et réessaie calmement. Quand la chaussette tombe dans le panier, il recule d’un pas. L’adulte lance aussi et dit « Encore une fois » quand son lancer rate.",
       "sagen": [
-        "Persévérer, c’est continuer pas à pas. On l’essaie avec une randonnée.",
-        "Encore un petit bout jusqu’à la colline. Pas à pas.",
-        "C’est toi qui décides : pause ou on continue ?"
+        "Persévérer, c’est réessayer quand ça ne marche pas tout de suite. On s’y exerce maintenant en lançant.",
+        "À côté ? On dit « Encore une fois » et on relance.",
+        "Veux-tu reculer d’un pas ou rester ici ?"
       ],
-      "wennEsKippt": "Assis : « marcher » avec les pieds au sol et balancer les bras, en comptant les étapes. Si c’est trop pour l’enfant, on raccourcit une étape ou on la saute.",
-      "kurz": "Randonnée imaginaire en 3 étapes · l’enfant dit pause ou on continue",
-      "vorbereitung": "Préparer une courte histoire de randonnée : ruisseau · colline · montagne"
+      "wennEsKippt": "Assis : l’enfant lance depuis la chaise, et l’adulte éloigne un peu le panier après un lancer réussi. Si c’est trop difficile, le panier se rapproche, ou l’adulte le tend vers l’enfant.",
+      "kurz": "Chaussette dans le panier · à côté : encore une fois · un pas de plus",
+      "vorbereitung": "Poser le panier par terre, rouler une chaussette en boule"
     },
-    "kurz": "Fantasie-Wanderung in 3 Etappen gehen · Kind sagt Pause oder weiter",
-    "vorbereitung": "Kurze Wandergeschichte überlegen: Bach · Hügel · Berg, je ein Satz"
+    "kurz": "Socke in den Korb werfen · daneben: Nochmal · Schritt weiter weg",
+    "vorbereitung": "Korb auf den Boden stellen, Socke zu einem Ball zusammenrollen"
   },
   {
     "id": "th:ausdauer-reflexion-kinder",
@@ -1590,14 +1597,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Strich fürs Dranbleiben",
-    "text": "Das Kind macht auf einem Zettel für jeden Moment einen Strich, in dem es heute drangeblieben ist, auch wenn es schwer oder langweilig war. Die Fachkraft macht ihre eigenen Striche und nennt einen dieser Momente. Dann zählen beide kurz ihre Striche, ohne sie zu vergleichen, und der Zettel gehört dem Kind.",
+    "titel": "Der Stift bleibt dran",
+    "text": "Beide setzen einen Stift in die Mitte eines Blattes und ziehen eine Spirale nach außen, ohne den Stift abzusetzen. Das Kind bestimmt das Tempo, die Fachkraft malt auf dem eigenen Blatt mit. Kommt der Stift am Blattrand an, machen beide einen Punkt ans Ende und sagen „Tschüss“.",
     "sagen": [
-      "Heute ging es ums Dranbleiben. Ein Strich für jeden Moment, in dem du drangeblieben bist.",
-      "Ein Strich ist ein Strich, auch wenn der Moment ganz klein war.",
-      "Danke fürs Dranbleiben. Tschüss!"
+      "Heute ging es ums Dranbleiben. Zum Schluss bleibt der Stift dran, bis die Spirale am Rand ist.",
+      "Du bestimmst das Tempo, ich male mit.",
+      "Bis zum Rand gekommen. Tschüss!"
     ],
-    "wennEsKippt": "Findet das Kind keinen Moment, sagt es „Pass“, oder die Fachkraft macht einen Strich für einen, den sie bemerkt hat. Ein einziger Strich genügt.",
+    "wennEsKippt": "Wird es dem Kind zu lang, reicht eine kleine Spirale in der Blattmitte, oder die Fachkraft nimmt ein kleineres Blatt. Rutscht der Stift ab, setzt man ihn an der Stelle neu an und macht weiter.",
     "rolle": [
       "abschluss"
     ],
@@ -1614,7 +1621,7 @@
     },
     "dauer": {
       "min": 1,
-      "typ": 2,
+      "typ": 3,
       "max": 4
     },
     "sozialform": [
@@ -1633,7 +1640,7 @@
       "stifte"
     ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -1642,17 +1649,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Un trait pour avoir persévéré",
-      "text": "L’enfant fait sur un papier un trait pour chaque moment où il a persévéré aujourd’hui, même si c’était difficile ou ennuyeux. L’adulte fait ses propres traits et raconte l’un de ces moments. Puis les deux comptent brièvement leurs traits, sans les comparer, et le papier appartient à l’enfant.",
+      "titel": "Le crayon continue",
+      "text": "Les deux posent un crayon au milieu d’une feuille et tracent une spirale vers l’extérieur, sans jamais lever le crayon. L’enfant choisit le rythme, et l’adulte trace sa propre spirale sur sa feuille. Quand le crayon arrive au bord de la feuille, les deux font un point à la fin et disent « au revoir ».",
       "sagen": [
-        "Aujourd’hui, on a parlé de persévérer. Un trait pour chaque moment où tu as continué.",
-        "Un trait reste un trait, même si le moment était tout petit.",
-        "Merci d’avoir continué. Au revoir !"
+        "Aujourd’hui, on a parlé de persévérer. Pour finir, le crayon continue jusqu’au bord de la feuille.",
+        "C’est toi qui choisis le rythme, et je trace avec toi.",
+        "On est arrivés au bord. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve aucun moment, il dit « passe », ou l’adulte fait un trait pour un moment qu’il a remarqué. Un seul trait suffit.",
-      "kurz": "Un trait par moment où l’on a tenu bon · en nommer un"
+      "wennEsKippt": "Si c’est trop long pour l’enfant, une petite spirale au milieu de la feuille suffit, ou l’adulte prend une feuille plus petite. Si le crayon dérape, on le repose à cet endroit et on continue.",
+      "kurz": "Spirale du centre au bord · sans lever le crayon · au revoir"
     },
-    "kurz": "Strich pro Moment, in dem man drangeblieben ist · einen nennen"
+    "kurz": "Spirale von der Mitte zum Rand · Stift nicht absetzen · Tschüss"
   },
   {
     "id": "th:kooperation-ankommen-kinder",
@@ -1803,14 +1810,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Du, ich, wir",
-    "text": "Die Fachkraft zeichnet zwei sich überlappende Kreise auf ein Blatt: links „du“, rechts „ich“, in der Mitte „wir“. Das Kind malt oder sagt in den mittleren Bereich einen Moment der Stunde, in dem beide etwas zusammen gemacht haben. Die Fachkraft ergänzt ein eigenes Beispiel, und beide schauen, wie viel „wir“ auf dem Blatt steht, ohne zu bewerten.",
+    "titel": "Der Wir-Turm",
+    "text": "Fachkraft und Kind bauen abwechselnd einen Turm aus Bausteinen. Wer einen Stein auflegt, nennt dazu ein Wort für den eigenen Beitrag zur Zusammenarbeit, zum Beispiel „zugehört“, „gewartet“, „vorgeschlagen“ oder „geholfen“. Die Fachkraft beginnt, und nach zwei Steinen von beiden steht der gemeinsame Wir-Turm.",
     "sagen": [
-      "Heute ging es ums Zusammenarbeiten. Was haben wir beide zusammen gemacht?",
-      "Mal oder sag einen Moment in die Mitte.",
-      "Ich nehme den Moment, in dem wir uns zugehört haben."
+      "Heute ging es ums Zusammenarbeiten. Wir bauen einen Wir-Turm und legen Stein für Stein dazu, was wir selbst beigetragen haben.",
+      "Ich habe zugehört. Das ist mein Stein.",
+      "Welches Wort passt zu dir? Du darfst auch „Pass“ sagen."
     ],
-    "wennEsKippt": "Fällt dem Kind nichts ein, nennt die Fachkraft zwei Momente zur Auswahl oder das Kind sagt „Pass“. Statt zu malen darf das Kind auch nur zeigen.",
+    "wennEsKippt": "Fällt dem Kind kein Wort ein, wählt es aus zwei Wörtern, die die Fachkraft nennt, oder sagt „Pass“. Fällt der Turm um, bauen beide ihn gemeinsam neu.",
     "rolle": [
       "reflexion"
     ],
@@ -1839,12 +1846,11 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "malen",
+      "spiel",
       "gespraech"
     ],
     "material": [
-      "papier",
-      "stifte"
+      "bausteine"
     ],
     "ort": "raum",
     "anspruch": 1,
@@ -1856,19 +1862,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Toi, moi, nous",
-      "text": "L’adulte dessine deux cercles qui se chevauchent sur une feuille : à gauche « toi », à droite « moi », au milieu « nous ». L’enfant dessine ou dit, dans la partie du milieu, un moment de la séance où les deux ont fait quelque chose ensemble. L’adulte ajoute un exemple à lui, et les deux regardent la place que prend le « nous » sur la feuille, sans juger.",
+      "titel": "La tour de nous deux",
+      "text": "L’adulte et l’enfant construisent une tour de briques en posant une brique l’un après l’autre. En posant une brique, on dit un mot sur sa propre contribution au travail à deux, par exemple « écouté », « attendu », « proposé » ou « aidé ». L’adulte commence, et après deux briques de chaque côté, la tour commune est finie.",
       "sagen": [
-        "Aujourd’hui, on a parlé de travailler ensemble. Qu’est-ce qu’on a fait ensemble, tous les deux ?",
-        "Dessine ou dis un moment dans la partie du milieu.",
-        "Je choisis le moment où on s’est écoutés."
+        "Aujourd’hui, on a parlé de coopérer. On construit la tour de nous deux et on pose, brique après brique, ce qu’on a apporté soi-même.",
+        "J’ai écouté. C’est ma brique.",
+        "Quel mot te convient ? Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose deux moments au choix, ou l’enfant dit « passe ». Au lieu de dessiner, l’enfant peut aussi seulement montrer.",
-      "kurz": "Dessiner un moment de la séance au centre « nous » · compléter",
-      "vorbereitung": "Dessiner deux cercles qui se chevauchent : toi · moi · nous (milieu)"
+      "wennEsKippt": "Si l’enfant ne trouve pas de mot, il choisit parmi deux mots que l’adulte propose, ou il dit « Je passe ». Si la tour tombe, les deux la reconstruisent ensemble.",
+      "kurz": "Tour de nous deux · en posant une brique, dire ce que j’ai apporté"
     },
-    "kurz": "Moment der Stunde in die Kreismitte „wir“ malen · ergänzen",
-    "vorbereitung": "Zwei überlappende Kreise zeichnen und beschriften: du · ich · wir (Mitte)"
+    "kurz": "Wir-Turm bauen · beim Auflegen ein Wort: was habe ich beigetragen?"
   },
   {
     "id": "th:kooperation-abschluss-kinder",
@@ -1943,14 +1947,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Ein Stift für zwei",
-    "text": "Die Fachkraft legt zwei Blätter und nur einen Stift auf den Tisch und spielt: „Ich will den Stift zuerst.“ Beide tun so, als wollten sie dasselbe, und suchen ruhig gemeinsam zwei Lösungen (zum Beispiel abwechseln, nach einer Minute tauschen oder zusammen malen). Sie probieren die Lösung des Kindes kurz aus.",
+    "titel": "Sechs oder neun?",
+    "text": "Die Fachkraft legt ein Blatt mit einer großen Zahl zwischen beide, die sich gegenübersitzen: Das Kind sieht eine 6, die Fachkraft sieht eine 9. Beide sagen gleichzeitig, was sie sehen, und staunen, dass beide recht haben. Dann stellt sich das Kind dorthin, wo die Fachkraft sitzt, und schaut noch einmal.",
     "sagen": [
-      "Heute geht es darum, wie man bei Streit ruhig bleibt und eine Lösung findet. Dazu ein kleines Spiel.",
-      "Wir tun nur so: Wir wollen beide den Stift. Was könnten wir tun?",
-      "Das ist eine Lösung für uns beide."
+      "Heute geht es um Streit und darum, wie man ihn fair löst. Wir fangen damit an, dass man dasselbe verschieden sehen kann.",
+      "Ich sehe eine Neun. Was siehst du?",
+      "Wir haben beide recht, von unserem Platz aus."
     ],
-    "wennEsKippt": "Mag das Kind nicht mitspielen, spielt die Fachkraft beide Seiten mit zwei Handbewegungen („die eine will, die andere will“), und das Kind wählt die Lösung. Es bleibt ein Spiel und wird nie ein echter Streit.",
+    "wennEsKippt": "Hält das Kind seine Zahl für die einzig richtige, lädt die Fachkraft es ein, sich neben sie zu stellen und selbst nachzuschauen. Wollen beide nicht aufstehen, dreht die Fachkraft das Blatt langsam um.",
     "rolle": [
       "ankommen"
     ],
@@ -1967,7 +1971,7 @@
     },
     "dauer": {
       "min": 1,
-      "typ": 3,
+      "typ": 2,
       "max": 4
     },
     "sozialform": [
@@ -1980,7 +1984,7 @@
     "reiz": 0,
     "format": [
       "spiel",
-      "rollenspiel"
+      "gespraech"
     ],
     "material": [
       "papier",
@@ -1996,17 +2000,19 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Un crayon pour deux",
-      "text": "L’adulte pose deux feuilles et un seul crayon sur la table et joue : « Je veux le crayon en premier. » Les deux font comme s’ils voulaient la même chose et cherchent calmement ensemble deux solutions (par exemple se relayer, échanger après une minute ou dessiner ensemble). Ils essaient brièvement la solution de l’enfant.",
+      "titel": "Six ou neuf ?",
+      "text": "L’adulte pose une feuille avec un grand chiffre entre les deux, qui sont face à face : l’enfant voit un 6, l’adulte voit un 9. Les deux disent en même temps ce qu’ils voient et constatent qu’ils ont raison tous les deux. Ensuite, l’enfant va là où l’adulte est assis et regarde encore une fois.",
       "sagen": [
-        "Aujourd’hui, on parle de la façon de rester calme dans une dispute et de trouver une solution. On commence par un petit jeu.",
-        "On fait semblant : on veut tous les deux le crayon. Qu’est-ce qu’on pourrait faire ?",
-        "C’est une solution pour nous deux."
+        "Aujourd’hui, on parle de dispute et de la façon de la régler de manière juste. On commence par voir qu’on peut regarder la même chose différemment.",
+        "Je vois un neuf. Et toi, que vois-tu ?",
+        "On a raison tous les deux, depuis notre place."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas jouer, l’adulte joue les deux côtés avec deux mouvements de la main (« celle-ci veut, celle-là veut ») et l’enfant choisit la solution. Cela reste un jeu, jamais une vraie dispute.",
-      "kurz": "Un crayon, deux feuilles : jouer la dispute · chercher des solutions"
+      "wennEsKippt": "Si l’enfant pense que son chiffre est le seul bon, l’adulte l’invite à venir à côté de lui pour vérifier. Si aucun des deux ne veut se lever, l’adulte tourne lentement la feuille.",
+      "kurz": "Chiffre entre les deux · six ou neuf ? · changer de place",
+      "vorbereitung": "Écrire un grand 6 au gros feutre sur une feuille"
     },
-    "kurz": "Ein Stift, zwei Blätter: Streit nachspielen · Lösungen suchen"
+    "kurz": "Zahl zwischen beiden · Sechs oder Neun? · Platz tauschen",
+    "vorbereitung": "Eine große 6 mit dickem Stift auf ein Blatt schreiben"
   },
   {
     "id": "th:konflikte-bewegung-kinder",
@@ -2087,14 +2093,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Was hilft beim Streit?",
-    "text": "Die Fachkraft erzählt einen kleinen Fall ohne Namen: Zwei Kinder wollen in der Pause beide den einzigen Ball. Sie legt drei Zettel mit kleinen Bildern hin: eine Uhr (abwechseln), zwei Hände (teilen) und eine erhobene Hand (Hilfe holen). Das Kind wählt die Lösung, die es am besten findet, und sagt in einem Satz warum; die Fachkraft wählt auch eine und sagt warum.",
+    "titel": "Einer teilt, einer wählt",
+    "text": "Die Fachkraft gibt dem Kind ein Stück Knete und sagt: „Teile es so, dass du mit beiden Hälften einverstanden bist. Ich suche mir danach eine Hälfte aus.“ Das Kind teilt, die Fachkraft wählt, und beide schauen, wie fair die Hälften geworden sind. Dann tauschen sie die Rollen. Zum Schluss sagt das Kind, wo ihm dieser Trick helfen könnte, zum Beispiel beim Teilen einer Pizza.",
     "sagen": [
-      "Heute ging es darum, wie man mit Streit umgehen kann. Welche Lösung würde bei diesem Streit helfen?",
-      "Zeig auf den Zettel, der dir gefällt. Es gibt keine falsche Antwort.",
-      "Mir gefällt die Uhr, weil dann jeder drankommt."
+      "Heute ging es darum, wie man bei Streit eine faire Lösung findet. Hier ein Trick zum Teilen: Einer teilt, der andere wählt.",
+      "Teile die Knete so, dass beide Hälften für dich gut sind.",
+      "Wo könnte dir dieser Trick helfen? Du darfst auch „Pass“ sagen."
     ],
-    "wennEsKippt": "Mag das Kind nichts sagen, zeigt es nur auf den Zettel. Hat es eine eigene Lösung, die auf keinem Zettel steht, malt oder schreibt die Fachkraft sie dazu.",
+    "wennEsKippt": "Teilt das Kind sehr ungleich, nimmt die Fachkraft das größere Stück, und beide probieren es noch einmal, jetzt fairer. Mag das Kind kein Beispiel nennen, genügt es, die Hälften nebeneinanderzulegen und zu schauen.",
     "rolle": [
       "reflexion"
     ],
@@ -2111,7 +2117,7 @@
     },
     "dauer": {
       "min": 3,
-      "typ": 4,
+      "typ": 5,
       "max": 6
     },
     "sozialform": [
@@ -2123,15 +2129,14 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech",
-      "karten"
+      "spiel",
+      "gespraech"
     ],
     "material": [
-      "papier",
-      "stifte"
+      "knete"
     ],
     "ort": "raum",
-    "anspruch": 0,
+    "anspruch": 1,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -2140,19 +2145,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Qu’est-ce qui aide en cas de dispute ?",
-      "text": "L’adulte raconte une petite histoire sans prénoms : deux enfants veulent tous les deux l’unique ballon à la récréation. Il pose trois papiers avec de petits dessins : une horloge (à tour de rôle), deux mains (partager) et une main levée (demander de l’aide). L’enfant choisit la solution qui lui paraît la meilleure et dit en une phrase pourquoi ; l’adulte en choisit une aussi et dit pourquoi.",
+      "titel": "L’un partage, l’autre choisit",
+      "text": "L’adulte donne un morceau de plasticine à l’enfant et dit : « Partage-le de façon à être d’accord avec les deux moitiés. Ensuite, je choisis une moitié. » L’enfant partage, l’adulte choisit, et les deux regardent si les moitiés sont justes. Puis ils échangent les rôles. À la fin, l’enfant dit où cette astuce pourrait l’aider, par exemple pour partager une pizza.",
       "sagen": [
-        "Aujourd’hui, on a parlé de la façon de gérer une dispute. Quelle solution aiderait dans cette dispute ?",
-        "Montre le papier qui te plaît. Il n’y a pas de mauvaise réponse.",
-        "J’aime bien l’horloge, parce que comme ça chacun a son tour."
+        "Aujourd’hui, on a parlé de trouver une solution juste en cas de dispute. Voici une astuce pour partager : l’un partage, l’autre choisit.",
+        "Partage la plasticine de façon que les deux moitiés te conviennent.",
+        "Où cette astuce pourrait-elle t’aider ? Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne veut rien dire, il montre seulement le papier. S’il a sa propre solution qui n’est sur aucun papier, l’adulte la dessine ou l’écrit en plus.",
-      "kurz": "Raconter une dispute de ballon · choisir une carte et justifier",
-      "vorbereitung": "Dessiner 3 papiers : horloge (à tour de rôle) · deux mains (partager) · main levée (aide)"
+      "wennEsKippt": "Si l’enfant partage très inégalement, l’adulte prend le plus gros morceau, et les deux réessaient, plus justement cette fois. Si l’enfant ne veut pas donner d’exemple, il suffit de poser les moitiés côte à côte et de les regarder.",
+      "kurz": "L’un partage la plasticine, l’autre choisit · échanger · où ça aide ?"
     },
-    "kurz": "Ballstreit schildern · Kind wählt einen Lösungszettel und begründet",
-    "vorbereitung": "3 Zettel malen: Uhr (abwechseln) · zwei Hände (teilen) · erhobene Hand (Hilfe holen)"
+    "kurz": "Einer teilt Knete, der andere wählt · Rollen tauschen · wo hilft das?"
   },
   {
     "id": "th:konflikte-abschluss-kinder",
@@ -2160,14 +2163,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Ich-Satz zum Schluss",
-    "text": "Die Fachkraft erklärt: Ein Ich-Satz sagt ruhig, was man braucht, ohne jemandem etwas vorzuwerfen. Sie macht ein Beispiel vor: „Ich möchte jetzt eine kurze Pause, weil wir lange gearbeitet haben.“ Das Kind sagt zum Abschied einen eigenen Ich-Satz in der Form „Ich möchte …, weil …“, über etwas Kleines aus der Stunde. Die Fachkraft antwortet nur: „Danke, ich habe es verstanden.“",
+    "titel": "Unser Pausenzeichen",
+    "text": "Das Kind erfindet ein Handzeichen, das „Pause, bitte“ bedeutet, zum Beispiel eine flache Hand wie ein Schild. Zum Test sagt die Fachkraft in übertriebenem Ton: „Und jetzt räumen wir noch zehnmal den ganzen Raum auf!“ Das Kind zeigt sein Zeichen, und die Fachkraft hört sofort auf und sagt „Pause, verstanden“. Dann zeigen beide das Zeichen noch einmal und sagen „Tschüss“.",
     "sagen": [
-      "Heute ging es um Streit und darum, wie man ruhig sagt, was man braucht. Ein Ich-Satz hilft dabei.",
-      "Ich möchte jetzt eine kurze Pause, weil wir lange gearbeitet haben.",
-      "Danke, ich habe es verstanden. Tschüss!"
+      "Heute ging es um Streit und darum, ruhig zu bleiben. Zum Schluss erfinden wir ein Zeichen, das „Pause, bitte“ heißt.",
+      "Wie sieht dein Pausenzeichen aus? Ich mache es nach.",
+      "Pause, verstanden. Tschüss!"
     ],
-    "wennEsKippt": "Fällt dem Kind kein Satz ein, sagt es nur den Teil „Ich möchte …“. Sagt das Kind „Pass“, hört es einfach den Satz der Fachkraft.",
+    "wennEsKippt": "Fällt dem Kind kein Zeichen ein, zeigt die Fachkraft zwei zur Auswahl (flache Hand, gekreuzte Zeigefinger), und das Kind wählt eins. Mag das Kind den Test nicht, zeigt es sein Zeichen nur einmal, und beide sagen Tschüss.",
     "rolle": [
       "abschluss"
     ],
@@ -2184,7 +2187,7 @@
     },
     "dauer": {
       "min": 1,
-      "typ": 2,
+      "typ": 3,
       "max": 4
     },
     "sozialform": [
@@ -2196,11 +2199,12 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech"
+      "spiel",
+      "rollenspiel"
     ],
     "material": [],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -2209,17 +2213,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "La phrase en « je » pour finir",
-      "text": "L’adulte explique : une phrase en « je » dit calmement ce dont on a besoin, sans reprocher quoi que ce soit à quelqu’un. Il en donne un exemple : « Je voudrais une petite pause maintenant, parce qu’on a travaillé longtemps. » En partant, l’enfant dit sa propre phrase de la forme « Je voudrais…, parce que… », sur quelque chose de petit dans la séance. L’adulte répond seulement : « Merci, j’ai compris. »",
+      "titel": "Notre signe de pause",
+      "text": "L’enfant invente un signe de la main qui veut dire « pause, s’il te plaît », par exemple une main à plat comme un panneau. Pour tester, l’adulte dit sur un ton exagéré : « Et maintenant, on range encore dix fois toute la pièce ! » L’enfant montre son signe, et l’adulte s’arrête aussitôt en disant « Pause, compris ». Puis les deux refont le signe et disent « au revoir ».",
       "sagen": [
-        "Aujourd’hui, on a parlé des disputes et de la façon de dire calmement ce dont on a besoin. Une phrase en « je » aide pour ça.",
-        "Je voudrais une petite pause maintenant, parce qu’on a travaillé longtemps.",
-        "Merci, j’ai compris. Au revoir !"
+        "Aujourd’hui, on a parlé de la dispute et de rester calme. Pour finir, on invente un signe qui veut dire « pause, s’il te plaît ».",
+        "À quoi ressemble ton signe de pause ? Je le refais.",
+        "Pause, compris. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de phrase, il dit seulement la partie « Je voudrais… ». Si l’enfant dit « passe », il écoute simplement la phrase de l’adulte.",
-      "kurz": "Expliquer la phrase en « je » · l’enfant : « J’aimerais…, parce que… »"
+      "wennEsKippt": "Si l’enfant ne trouve pas de signe, l’adulte en propose deux (main à plat, index croisés), et l’enfant en choisit un. Si l’enfant ne veut pas faire le test, il montre son signe une seule fois, et les deux disent « au revoir ».",
+      "kurz": "Inventer un signe « pause, s’il te plaît » · tester · au revoir"
     },
-    "kurz": "Ich-Satz erklären · Kind sagt „Ich möchte …, weil …“ · Danke"
+    "kurz": "Handzeichen „Pause, bitte“ erfinden · kurz testen · Tschüss"
   },
   {
     "id": "th:kommunikation-ankommen-kinder",
@@ -2432,14 +2436,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Eine Frage zum Abschied",
-    "text": "Jeder stellt dem anderen zum Abschied eine kleine Frage, die mit „Was“ oder „Wie“ anfängt, zum Beispiel „Was spielst du gern in der Pause?“. Der andere antwortet in einem ganzen Satz. Auf eine Frage, die man nicht beantworten möchte, darf man „Pass“ sagen.",
+    "titel": "Das Becher-Telefon",
+    "text": "Beide halten einen Becher wie ein Telefon: den Rand ans Ohr oder vor den Mund. Die Fachkraft flüstert ein Wort in den eigenen Becher, und das Kind sagt zurück, was es gehört hat. Dann flüstert das Kind ein Wort oder einen kurzen Satz, die Fachkraft sagt ihn zurück; zum Schluss flüstern beide „Tschüss“ in den Becher.",
     "sagen": [
-      "Heute ging es ums Reden und Zuhören. Zum Schluss stellen wir uns noch je eine Frage.",
-      "Frag mich etwas mit „Was“ oder „Wie“. Ich antworte in einem Satz.",
-      "Danke für deine Frage. Tschüss!"
+      "Heute ging es ums Reden und Zuhören. Zum Schluss telefonieren wir mit dem Becher: Einer flüstert, einer hört zu.",
+      "Ich flüstere ein Wort. Sag es mir zurück.",
+      "Jetzt flüsterst du, und ich sage es zurück. Tschüss!"
     ],
-    "wennEsKippt": "Fällt dem Kind keine Frage ein, schlägt die Fachkraft drei vor, und das Kind sucht eine aus. Auch „Pass“ ist eine gültige Antwort.",
+    "wennEsKippt": "Gibt es nur einen Becher, reichen beide ihn hin und her. Fällt dem Kind kein Wort ein, flüstert es einfach „Tschüss“, oder die Fachkraft schlägt drei Wörter vor.",
     "rolle": [
       "abschluss"
     ],
@@ -2468,11 +2472,14 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
+      "spiel",
       "gespraech"
     ],
-    "material": [],
+    "material": [
+      "becher"
+    ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -2481,17 +2488,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Une question pour se dire au revoir",
-      "text": "Chacun pose à l’autre une petite question qui commence par « qu’est-ce que » ou « comment », par exemple « Qu’est-ce que tu aimes jouer à la récréation ? ». L’autre répond par une phrase entière. On peut répondre « passe » à une question à laquelle on ne veut pas répondre.",
+      "titel": "Le téléphone gobelet",
+      "text": "Les deux tiennent un gobelet comme un téléphone : le bord contre l’oreille ou devant la bouche. L’adulte chuchote un mot dans son gobelet, et l’enfant redit ce qu’il a entendu. Puis l’enfant chuchote un mot ou une courte phrase, l’adulte la redit ; pour finir, les deux chuchotent « au revoir » dans le gobelet.",
       "sagen": [
-        "Aujourd’hui, on a parlé de parler et d’écouter. Pour finir, on se pose encore chacun une question.",
-        "Pose-moi une question avec « qu’est-ce que » ou « comment ». Je réponds par une phrase.",
-        "Merci pour ta question. Au revoir !"
+        "Aujourd’hui, on a parlé de parler et d’écouter. Pour finir, on téléphone avec le gobelet : l’un chuchote, l’autre écoute.",
+        "Je chuchote un mot. Redis-le-moi.",
+        "Maintenant, tu chuchotes et je le redis. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de question, l’adulte en propose trois et l’enfant en choisit une. « Passe » est aussi une réponse valable.",
-      "kurz": "Chacun pose une question Quoi/Comment · réponse en phrase entière"
+      "wennEsKippt": "S’il n’y a qu’un gobelet, les deux se le passent. Si l’enfant ne trouve pas de mot, il chuchote simplement « au revoir », ou l’adulte propose trois mots.",
+      "kurz": "Gobelet-téléphone · chuchoter un mot, le redire · échanger"
     },
-    "kurz": "Beide stellen eine Was-/Wie-Frage · Antwort im ganzen Satz"
+    "kurz": "Becher als Telefon · Wort flüstern, zurücksagen · tauschen"
   },
   {
     "id": "th:selbstbild-ankommen-kinder",
@@ -2634,14 +2641,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Ein Stern für mich",
-    "text": "Die Fachkraft zeichnet einen großen Stern auf ein Blatt. Das Kind malt hinein, was ihm heute gelungen ist, zum Beispiel eine Idee, ein Zug im Spiel oder das Dranbleiben, als Bild oder in einem Wort. Die Fachkraft malt ebenfalls einen Stern und zeigt ihn; beide betrachten die Sterne, ohne sie zu vergleichen.",
+    "titel": "Mein Ich-Karton",
+    "text": "Auf dem Tisch stehen ein Schuhkarton und sechs kleine Dinge (zum Beispiel Stift, Ball, Buch, Löffel, Uhr, Knete). Das Kind legt ein oder zwei Dinge in den Karton, die zu etwas passen, das es gut kann oder gern macht, und sagt ein Wort dazu oder zeigt es. Die Fachkraft legt auch ein Ding hinein und sagt ein Wort. Dann schließt das Kind den Deckel.",
     "sagen": [
-      "Heute ging es darum, was ich gut kann. Was ist dir heute gelungen? Es darf etwas ganz Kleines sein.",
-      "Mal es in den Stern oder sag es.",
-      "Mein Stern ist, dass ich gut zugehört habe."
+      "Heute ging es um dich: was du gut kannst und was zu dir gehört. Wir packen einen Ich-Karton.",
+      "Welches Ding passt zu etwas, das du gut kannst oder gern machst?",
+      "Ich lege die Uhr hinein, weil ich gern pünktlich bin. Du darfst auch „Pass“ sagen."
     ],
-    "wennEsKippt": "Fällt dem Kind nichts ein, nennt die Fachkraft zwei Dinge, die sie beobachtet hat, und das Kind wählt eins. Sagt das Kind „Pass“, malt es den Stern einfach in seiner Lieblingsfarbe aus.",
+    "wennEsKippt": "Findet das Kind nichts, nennt die Fachkraft zwei Dinge, die sie heute am Kind beobachtet hat, und das Kind wählt ein passendes Ding oder sagt „Pass“. Es geht nie darum, etwas Besonderes zu können.",
     "rolle": [
       "reflexion"
     ],
@@ -2670,11 +2677,12 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "malen"
+      "spiel",
+      "gespraech"
     ],
     "material": [
-      "papier",
-      "buntstifte"
+      "schuhkarton",
+      "alltagsdinge"
     ],
     "ort": "raum",
     "anspruch": 2,
@@ -2686,19 +2694,19 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Une étoile pour moi",
-      "text": "L’adulte dessine une grande étoile sur une feuille. L’enfant dessine dedans ce qu’il a réussi aujourd’hui, par exemple une idée, un coup dans le jeu ou le fait d’avoir persévéré, en image ou en un mot. L’adulte dessine aussi une étoile et la montre ; les deux regardent les étoiles sans les comparer.",
+      "titel": "Ma boîte à moi",
+      "text": "Sur la table, il y a une boîte à chaussures et six petits objets (par exemple un crayon, une balle, un livre, une cuillère, une montre, de la plasticine). L’enfant met un ou deux objets dans la boîte, qui vont avec quelque chose qu’il sait bien faire ou qu’il aime faire, et dit un mot ou le montre. L’adulte y met aussi un objet et dit un mot. Ensuite, l’enfant ferme le couvercle.",
       "sagen": [
-        "Aujourd’hui, on a parlé de ce que je sais bien faire. Qu’est-ce que tu as réussi aujourd’hui ? Ça peut être très petit.",
-        "Dessine-le dans l’étoile ou dis-le.",
-        "Mon étoile, c’est que j’ai bien écouté."
+        "Aujourd’hui, on a parlé de toi : ce que tu sais bien faire et ce qui te ressemble. On remplit une boîte à toi.",
+        "Quel objet va avec quelque chose que tu sais bien faire ou que tu aimes faire ?",
+        "Je mets la montre, parce que j’aime être à l’heure. Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte nomme deux choses qu’il a observées et l’enfant en choisit une. Si l’enfant dit « passe », il colorie simplement l’étoile de sa couleur préférée.",
-      "kurz": "Remplir l’étoile avec ce qui a réussi · regarder les deux étoiles",
-      "vorbereitung": "Dessiner une grande étoile sur une feuille"
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte cite deux choses qu’il a remarquées chez l’enfant aujourd’hui, et l’enfant choisit un objet qui va avec ou dit « Je passe ». Il ne s’agit jamais de savoir faire quelque chose de spécial.",
+      "kurz": "Mettre dans la boîte un objet qui me ressemble · un mot",
+      "vorbereitung": "Poser une boîte à chaussures et six petits objets sur la table"
     },
-    "kurz": "Stern füllen mit dem, was gelang · beide betrachten die Sterne",
-    "vorbereitung": "Großen Stern auf ein Blatt zeichnen"
+    "kurz": "Ding in den Ich-Karton legen, das zu mir passt · ein Wort dazu",
+    "vorbereitung": "Schuhkarton und sechs kleine Dinge auf den Tisch stellen"
   },
   {
     "id": "th:selbstbild-abschluss-kinder",
@@ -2982,14 +2990,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Mein Trick für später",
-    "text": "Die Fachkraft zählt vier Tricks an den Fingern auf: kleine Schritte, Hilfe fragen, nochmal anders probieren, sich etwas als Bild merken. Das Kind sucht sich einen Trick aus, den es als Nächstes bei einer Aufgabe ausprobieren möchte, und zeigt die passende Fingerzahl. Die Fachkraft zeigt ihren eigenen Trick, und beide verabschieden sich.",
+    "titel": "Ich erkläre es dir",
+    "text": "Die Fachkraft bittet das Kind: „Zeig mir etwas aus der Stunde, das ich jetzt auch können möchte.“ Das Kind erklärt oder zeigt es mit wenigen Worten oder Handgriffen, und die Fachkraft macht es nach. Dann sagt sie „Danke, jetzt kann ich es“, und beide sagen „Tschüss“.",
     "sagen": [
-      "Heute ging es darum, wie man etwas lernen und schaffen kann. Welchen Trick nimmst du mit?",
-      "Eins: kleine Schritte. Zwei: Hilfe fragen. Drei: nochmal anders. Vier: ein Bild merken.",
-      "Viel Spaß beim Ausprobieren. Tschüss!"
+      "Heute ging es darum, wie man etwas lernt. Eine gute Methode ist, es jemand anderem beizubringen.",
+      "Zeig mir etwas, das du heute ausprobiert hast. Ich mache es nach.",
+      "Danke, jetzt kann ich es. Tschüss!"
     ],
-    "wennEsKippt": "Mag das Kind keinen Trick wählen, nimmt es einfach den, den die Fachkraft zeigt. „Pass“ ist auch in Ordnung.",
+    "wennEsKippt": "Fällt dem Kind nichts ein, wählt die Fachkraft zwei Dinge aus der Stunde, und das Kind zeigt eins davon. Mag das Kind nicht erklären, zeigt es nur die Handgriffe ohne Worte.",
     "rolle": [
       "abschluss"
     ],
@@ -3006,7 +3014,7 @@
     },
     "dauer": {
       "min": 1,
-      "typ": 2,
+      "typ": 3,
       "max": 4
     },
     "sozialform": [
@@ -3018,11 +3026,12 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "gespraech"
+      "gespraech",
+      "spiel"
     ],
     "material": [],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -3031,17 +3040,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Mon astuce pour la suite",
-      "text": "L’adulte énumère quatre astuces sur ses doigts : petits pas, demander de l’aide, essayer autrement, retenir avec une image. L’enfant choisit celle qu’il veut essayer la prochaine fois qu’il a une tâche à faire et montre le nombre de doigts correspondant. L’adulte montre son astuce à lui, et les deux se disent au revoir.",
+      "titel": "C’est moi qui t’explique",
+      "text": "L’adulte demande à l’enfant : « Montre-moi quelque chose de la séance que je voudrais savoir faire maintenant. » L’enfant l’explique ou le montre en quelques mots ou gestes, et l’adulte le refait. Puis l’adulte dit « Merci, maintenant je sais le faire », et les deux disent « au revoir ».",
       "sagen": [
-        "Aujourd’hui, on a parlé de la façon d’apprendre et de réussir quelque chose. Quelle astuce emportes-tu ?",
-        "Un : petits pas. Deux : demander de l’aide. Trois : essayer autrement. Quatre : retenir avec une image.",
-        "Amuse-toi bien à l’essayer. Au revoir !"
+        "Aujourd’hui, on a parlé de la façon d’apprendre. Une bonne méthode, c’est d’apprendre quelque chose à quelqu’un d’autre.",
+        "Montre-moi quelque chose que tu as essayé aujourd’hui. Je le refais.",
+        "Merci, maintenant je sais le faire. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas choisir d’astuce, il prend celle que l’adulte montre. « Passe » est aussi permis.",
-      "kurz": "Quatre astuces sur les doigts · l’enfant en choisit une pour plus tard"
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte choisit deux choses de la séance, et l’enfant en montre une. Si l’enfant ne veut pas expliquer, il montre seulement les gestes, sans mots.",
+      "kurz": "L’enfant apprend quelque chose de la séance à l’adulte · il le refait"
     },
-    "kurz": "Vier Tricks an den Fingern · Kind wählt einen für später"
+    "kurz": "Kind bringt der Fachkraft etwas aus der Stunde bei · sie macht es nach"
   },
   {
     "id": "th:alltag-ankommen-kinder",
@@ -3261,14 +3270,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Drei Handgriffe zum Schluss",
-    "text": "Beide räumen am Ende ihre Sachen in drei festen Handgriffen weg, zum Beispiel: Stifte weglegen, Papier zusammenlegen, Stuhl ranschieben. Das Kind sagt zuerst die drei Schritte an und macht sie dann der Reihe nach, die Fachkraft macht mit. Wenn alles an seinem Platz ist, sagen beide „Tschüss“.",
+    "titel": "Der Aufräum-Roboter",
+    "text": "Die Fachkraft spielt einen Aufräum-Roboter, der nur tut, was das Kind sagt, zum Beispiel „Roboter, Papier zusammenlegen“ oder „Roboter, Stuhl ranschieben“. Das Kind gibt zwei, drei Befehle, dann tauschen beide die Rollen, und das Kind räumt als Roboter weg, was die Fachkraft ansagt. Ist der Tisch frei, schaltet sich der Roboter mit einem „Klick“ selbst aus, und beide sagen „Tschüss“.",
     "sagen": [
-      "Heute ging es um den Alltag: aufräumen und sich vorbereiten. Zum Schluss packen wir in drei Schritten zusammen.",
-      "Erst die Stifte, dann das Papier, dann der Stuhl.",
-      "Alles ist an seinem Platz. Tschüss!"
+      "Heute ging es um den Alltag: Dinge in eine Reihenfolge bringen und aufräumen. Zum Schluss bin ich dein Aufräum-Roboter.",
+      "Sag mir Befehl für Befehl, was ich tun soll.",
+      "Tisch frei, Roboter aus. Tschüss!"
     ],
-    "wennEsKippt": "Wirkt das Aufräumen zu viel, reichen zwei Handgriffe. Mag das Kind nicht, räumt die Fachkraft ein Ding weg, und das Kind das nächste.",
+    "wennEsKippt": "Fällt dem Kind kein Befehl ein, zeigt die Fachkraft mit dem Finger auf ein Ding, und das Kind sagt nur, was damit passieren soll. Mag das Kind nicht Roboter sein, bleibt es beim Befehlen, und die Fachkraft räumt allein.",
     "rolle": [
       "abschluss"
     ],
@@ -3298,12 +3307,9 @@
     "reiz": 0,
     "format": [
       "spiel",
-      "bewegung"
+      "rollenspiel"
     ],
-    "material": [
-      "stifte",
-      "papier"
-    ],
+    "material": [],
     "ort": "raum",
     "anspruch": 0,
     "merkmale": {
@@ -3314,16 +3320,16 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Trois gestes pour finir",
-      "text": "À la fin, les deux rangent leurs affaires en trois gestes fixes, par exemple : ranger les crayons, plier le papier, pousser la chaise. L’enfant annonce d’abord les trois étapes, puis les fait dans l’ordre, et l’adulte fait de même. Quand tout est à sa place, les deux disent « au revoir ».",
+      "titel": "Le robot rangeur",
+      "text": "L’adulte joue un robot rangeur qui fait seulement ce que l’enfant dit, par exemple « Robot, plie le papier » ou « Robot, pousse la chaise ». L’enfant donne deux ou trois ordres, puis les deux échangent les rôles, et l’enfant range comme un robot ce que l’adulte annonce. Quand la table est libre, le robot s’éteint tout seul avec un « clic », et les deux disent « au revoir ».",
       "sagen": [
-        "Aujourd’hui, on a parlé du quotidien : ranger et se préparer. Pour finir, on range en trois étapes.",
-        "D’abord les crayons, ensuite le papier, enfin la chaise.",
-        "Tout est à sa place. Au revoir !"
+        "Aujourd’hui, on a parlé du quotidien : mettre les choses dans l’ordre et ranger. Pour finir, je suis ton robot rangeur.",
+        "Dis-moi, ordre après ordre, ce que je dois faire.",
+        "Table libre, robot éteint. Au revoir !"
       ],
-      "wennEsKippt": "Si ranger paraît trop, deux gestes suffisent. Si l’enfant ne veut pas, l’adulte range une chose et l’enfant range la suivante.",
-      "kurz": "Annoncer trois gestes, ranger dans l’ordre · au revoir"
+      "wennEsKippt": "Si l’enfant ne trouve pas d’ordre, l’adulte montre une chose du doigt, et l’enfant dit seulement ce qu’il faut en faire. Si l’enfant ne veut pas jouer le robot, il se contente de donner les ordres, et l’adulte range seul.",
+      "kurz": "L’adulte en robot rangeur · l’enfant ordonne · échanger les rôles"
     },
-    "kurz": "Drei Handgriffe ansagen, der Reihe nach wegräumen · Tschüss"
+    "kurz": "Fachkraft als Aufräum-Roboter · Kind befiehlt · Rollen tauschen"
   }
 ]

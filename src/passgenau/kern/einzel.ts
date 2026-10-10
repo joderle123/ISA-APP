@@ -31,7 +31,8 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   jugend: /\b(der oder die Jugendliche|die Jugendlichen|Jugendliche[nr]?)\b|\b(le ou la jeune|les jeunes|l['’]adolescent(e)?)\b/,
   film: /\b(Film|Filme[ns]?|Filmausschnitt|Kurzfilm|Clip|Video|YouTube|Doku|Dokumentation|Trailer)\b|\b(film|extrait vidéo|vidéo|clip)\b/,
   draussen: /\b(Ausflug|Exkursion|Elterneinverständnis|Wiese|Wald|Park|Spaziergang|draußen|im Freien|Schulhof|Pausenhof|Naturtag|Spielplatz)\b|\b(sortie|en plein air|dehors|forêt|cour de récréation)\b/,
-  kueche: /\b(Küche|kochen|kocht|backen|backt|Backofen|Teig|Rezept)\b|\b(cuisine|cuisiner|four|recette|pâte)\b/,
+  // „pâte à modeler“ ist Knete, kein Teig (sonst fiel jeder Knete-Baustein aus französischen Stunden)
+  kueche: /\b(Küche|kochen|kocht|backen|backt|Backofen|Teig|Rezept)\b|\b(cuisine|cuisiner|four|recette|pâte(?!\s+à\s+modeler))\b/,
   gaeste: /\b(Gäste|Gast|Betriebsbesuch|Besuch(er)?|Bühne|Publikum|Aufführung|filmen|aufnehmen mit dem Handy)\b|\b(invités?|spectateurs|le public|devant un public|sur (la )?scène)\b/,
   // Verweis auf ein Arbeitsblatt der Quelle, das in Passgenau nicht gedruckt wird
   blattverweis: /\b(Aufgabe|Seite|Teil|Schritt|Station|Kapitel) \d\b|\b(Missionen?|Laufzettel|Fallkarten?|Fallakten?|Bodenradar|Forscher-Blatt|Akku-Blatt|Energie-Linie|Skills-Buch|Sinneskiste)\b|\b(Arbeitsblatt|Arbeitsblattes|Schülerblatt|Kopiervorlage|Vorlage|Koffer-Arbeitsblatt|Rückenwind-Blatt|Detektivblatt|Etappen-Karte|Ziel-Kompass|Motivations-Motor|Belohnungs-Baum|Tank-Tabelle)\b|\b(exercice|page|partie) \d\b|\bfiche (de travail|élève)\b/,
