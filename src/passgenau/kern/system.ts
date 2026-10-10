@@ -238,10 +238,10 @@ SYSTEM.push(
     titel: 'Ein Lied zusammen hören',
     text: 'Ein Lied aussuchen (Lautsprecher oder Handy der Fachkraft). Gemeinsam anhören, ohne Aufgabe. Danach darf, wer mag, sagen, was daran gefällt.',
     sagen: ['Such dir ein Lied aus – wir hören es einfach zusammen.'],
-    wennEsKippt: 'Hat das Lied einen belastenden Text (Gewalt, Hoffnungslosigkeit, Selbstverletzung), nicht gemeinsam weiterhören: ruhig ein anderes Lied oder ein Instrumentalstück vorschlagen und später beim Team nachfragen.',
+    wennEsKippt: 'Passt der Liedtext nicht in die Stunde, ruhig ein anderes Lied oder ein Instrumentalstück vorschlagen – ohne den Text zu bewerten.',
     rolle: ['spiel', 'regulation'], dauer: { min: 3, typ: 5, max: 8 }, energie: 1, format: ['musik'], material: ['musik'],
     tagesform: ['muede', 'traurig', 'rueckzug', 'will-nicht', 'aufgewuehlt'],
-    fr: { titel: 'Écouter une chanson ensemble', text: 'Choisir une chanson (haut-parleur ou téléphone de l’adulte). L’écouter ensemble, sans consigne. Ensuite, qui veut peut dire ce qui lui plaît.', sagen: ['Choisis une chanson – on l’écoute simplement ensemble.'], wennEsKippt: 'Si les paroles sont pesantes (violence, désespoir, automutilation), ne pas continuer à écouter ensemble : proposer calmement une autre chanson ou un morceau instrumental, et en parler ensuite à l’équipe.' },
+    fr: { titel: 'Écouter une chanson ensemble', text: 'Choisir une chanson (haut-parleur ou téléphone de l’adulte). L’écouter ensemble, sans consigne. Ensuite, qui veut peut dire ce qui lui plaît.', sagen: ['Choisis une chanson – on l’écoute simplement ensemble.'], wennEsKippt: 'Si les paroles ne conviennent pas à la séance, proposer calmement une autre chanson ou un morceau instrumental – sans juger le texte.' },
   },
 )
 

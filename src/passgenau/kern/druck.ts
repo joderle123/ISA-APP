@@ -5,7 +5,7 @@ import type { Baustein, Blatt } from '../../blatt/typen'
 import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
 import { bausteinInhalt, eldibKurz, intern, istGruppenText, merkmaleVon, quelleText, setzeTextModus, staemme, textVon, zielSatz, type Katalog } from './katalog'
 import { textMerkmale } from './einzel'
-import { kinderblatt, quelleDerUebertragung } from './blatt'
+import { kinderblatt, quellenDerUebertragung } from './blatt'
 import { gruppenRollen, mitgliedProfil } from './gruppe'
 import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME } from './vokabular'
 import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter } from './hilfen'
@@ -76,7 +76,9 @@ function kurzLabel(t: string, n = 38): string {
 }
 
 /** Hinweise des Planers, die eine Handlung in der Oberfläche anbieten oder nur die Planung erklären – auf Papier sinnlos */
-const NUR_OBERFLAECHE = /Leichte Stunde zeigen\.$|Mitmach-Seite auf Wunsch\.$|ohne Blatt geplant|nur auf Deutsch\.$|im Baukasten suchen\.$|Im Ergebnis anpassen\.$/
+// (Blind-Bewertung 8: „noch kein ELDiB-Ziel – ELDiB-Einschätzung fehlt“ ist Fachjargon ohne Nutzen für die Stunde, „Fiche
+// élargie“ und „Gruppenaktivität – so mit einem Kind machen“ ohne Anleitung verunsichern nur)
+const NUR_OBERFLAECHE = /Leichte Stunde zeigen\.$|Mitmach-Seite auf Wunsch\.$|ohne Blatt geplant|nur auf Deutsch\.$|im Baukasten suchen\.$|Im Ergebnis anpassen\.$|ELDiB-Einschätzung fehlt\.$|^Blatt gelockert|^Gruppenaktivität – so mit einem Kind machen$/
 
 /** Name der Phase; bei Jugendlichen ohne „Feiern“ (Blind-Bewertung 5: angekündigt, aber nie gefeiert). */
 function phasenName(phase: string, sp: Sprache, alter: number): string {
@@ -206,6 +208,30 @@ function rolleName(x: PlanSchritt, e: KatalogEintrag | undefined, sprache: Sprac
   return ROLLE_NAME[x.rolle]?.[sprache] ?? x.rolle
 }
 
+/** „Der oder die Jugendliche“ → Name (Planblatt für eine Person). */
+function mitName(t: string, name: string, sp: Sprache): string {
+  if (sp === 'fr') {
+    const de = /^[aeiouyéèêàâîôûh]/i.test(name) ? `d’${name}` : `de ${name}`
+    return t
+      .replace(/\bdu ou de la jeune\b/g, de)
+      .replace(/\bau ou à la jeune\b/g, `à ${name}`)
+      .replace(/\b[Ll]e ou la jeune\b/g, name)
+      .replace(/\b[Ii]l ou elle\b/g, name)
+  }
+  return t
+    .replace(/\b[Dd](er oder die|en oder die) Jugendliche\b/g, name)
+    .replace(/\b[Dd]em oder der Jugendlichen\b/g, name)
+    .replace(/\b[Ee]r oder sie\b/g, name)
+    .replace(/\b[Ii]hm oder ihr\b/g, name)
+}
+
+/** Sätze mit einer Diagnose als Beispiel weglassen (Blind-Bewertung 8: „im Autismus-Spektrum“ ohne Anlass im Planblatt). */
+function ohneDiagnose(t: string | undefined): string | undefined {
+  if (!t || !textMerkmale(t).has('diagnose')) return t
+  const rest = t.split(/(?<=[.!?])\s+/).filter((x) => !textMerkmale(x).has('diagnose')).join(' ').trim()
+  return rest || undefined
+}
+
 function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boolean, blattTitel?: string, jugend = false): DruckSchritt {
   const e = k.eintraege.get(x.ref)
   const rolle = rolleName(x, e, sprache, jugend)
@@ -216,14 +242,14 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     min: x.min,
     rolle,
     titel: x.ref === 'pg:blatt' ? `${sprache === 'fr' ? 'Fiche' : 'Blatt'}: ${blattTitel ?? ''}` : ((sprache === 'fr' ? x.ueber?.['fr.titel'] : undefined) ?? x.ueber?.titel ?? t.titel),
-    text: ueberText ?? t.text,
+    text: ohneDiagnose(ueberText ?? t.text) ?? '',
     sagen: (sprache === 'fr' ? x.ueber?.['fr.sagen'] : undefined) ?? x.ueber?.sagen ? [((sprache === 'fr' ? x.ueber?.['fr.sagen'] : undefined) ?? x.ueber!.sagen)!] : (t.sagen ?? []),
-    wennEsKippt: (sprache === 'fr' ? x.ueber?.['fr.wennEsKippt'] : undefined) ?? x.ueber?.wennEsKippt ?? t.wennEsKippt,
+    wennEsKippt: ohneDiagnose((sprache === 'fr' ? x.ueber?.['fr.wennEsKippt'] : undefined) ?? x.ueber?.wennEsKippt ?? t.wennEsKippt),
     quelle: x.ref.startsWith('pg:') ? '' : t.quelle,
     warum: warum ? (x.warum ?? []).map(warumOhneDatum) : [],
     // Nebenschritte (Ankommen, Bewegung, Spiel, Ruhe, Abschluss) tragen den Hinweis ihrer Einheit nur, wenn er sie betrifft
-    achtung: kuerzen(achtungFuer(e, `${t.titel} ${t.text} ${(t.sagen ?? []).join(' ')}`, x.rolle === 'kern' || x.rolle === 'einstieg' || x.rolle === 'reflexion' || x.rolle === 'transfer', sprache), 320),
-    hinweis: x.hinweis && sprache === 'fr' ? hinweisFr(x.hinweis) : x.hinweis,
+    achtung: ohneDiagnose(kuerzen(achtungFuer(e, `${t.titel} ${t.text} ${(t.sagen ?? []).join(' ')}`, x.rolle === 'kern' || x.rolle === 'einstieg' || x.rolle === 'reflexion' || x.rolle === 'transfer', sprache), 320)),
+    hinweis: !x.hinweis || NUR_OBERFLAECHE.test(x.hinweis) ? undefined : sprache === 'fr' ? hinweisFr(x.hinweis) : x.hinweis,
     blatt: x.ref === 'pg:blatt',
     erkundung: x.erkundung,
   }
@@ -248,8 +274,8 @@ function geuebteZiele(k: Katalog, plan: Plan, s: Plan['sitzungen'][number]): Set
   const codesVon = (e: KatalogEintrag | undefined) => (e ? e.eldib.map((x) => x.code) : [])
   if (kern.ref === 'pg:folge-transfer')
     return new Set(plan.sitzungen.flatMap((y) => y.schritte.filter((z) => z.rolle === 'kern' && !z.ref.startsWith('pg:')).flatMap((z) => codesVon(k.eintraege.get(z.ref)))))
-  const e = kern.ref === 'pg:uebertragen' ? quelleDerUebertragung(k, plan, kern) : k.eintraege.get(kern.ref)
-  return e ? new Set(codesVon(e)) : null
+  const es = kern.ref === 'pg:uebertragen' ? quellenDerUebertragung(k, plan, kern) : [k.eintraege.get(kern.ref)].filter((x): x is KatalogEintrag => !!x)
+  return es.length ? new Set(es.flatMap(codesVon)) : null
 }
 
 /** Druckdaten einer Sitzung. */
@@ -258,6 +284,15 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   const sp = opt.sprache
   setzeTextModus((plan.auftrag?.sozialform ?? 'einzeln') !== 'einzeln')
   const schritte = s.schritte.map((x) => druckSchritt(k, x, sp, opt.warum, s.blatt?.titel, p.alterJahre >= 12))
+  // Jugendliche mit Namen (Blind-Bewertung 8: „‚der oder die Jugendliche‘ statt Elif“, „‚le ou la jeune / il ou elle‘ für
+  // einen namentlich bekannten Jungen“) – nur für eine Person, nicht in der Gruppe
+  const name = !p.gruppe?.length && p.alterJahre >= 12 ? (p.anrede ?? p.vorname ?? '').trim() : ''
+  if (name) for (const d of schritte) {
+    d.text = mitName(d.text, name, sp)
+    if (d.wennEsKippt) d.wennEsKippt = mitName(d.wennEsKippt, name, sp)
+    if (d.achtung) d.achtung = mitName(d.achtung, name, sp)
+    if (d.hinweis) d.hinweis = mitName(d.hinweis, name, sp)
+  }
   // Material: aus allen Schritten und Blatt-Teilen; Ritual-Material nur in Sitzung 1 einer Folge
   const mat = new Set<string>()
   const vorbereitung = new Set<string>()
@@ -321,6 +356,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   const matSeite = materialSeite(k, p, plan, nr, sp)
   if (matSeite) mat.add(sp === 'fr' ? 'la page de matériel (imprimée, à découper)' : 'die Materialseite (gedruckt, ausschneiden)')
   const tippSchon = new Set<string>()
+  const imBlatt = new Set((s.blatt?.bausteine ?? []).map((b) => b.ref))
   const blattTeile = (s.blatt?.bausteine ?? [])
     .filter((b) => !b.ref.startsWith('pg:'))
     .map((b) => {
@@ -333,7 +369,10 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       const qTitel = quelle ? ((sp === 'fr' && quelle.fr) || quelle.de).titel : quelleText(e, sp)
       // der Tipp „leichter“ gilt für das ganze Quellblatt: nur einmal je Blatt
       // … und nicht, wenn er auf Teile des Quellblatts zeigt, die hier fehlen („Aufgabe 3“, „Memory“, „Bildkarten“)
-      const tipp = leichter && p.alterJahre < 12 && !KURSVERWEIS_RE.test(leichter) && !textMerkmale(leichter).has('blattverweis') && !/\b(Aufgabe|Karte|Karten|Memory|Bildkarten|Seite)\b/.test(leichter) && !tippSchon.has(e.quelle.blatt) ? kuerzen(leichter, 160) : undefined
+      // … und nur, wenn das ganze Quellblatt dabei ist (Blind-Bewertung 8: „Aufgaben 3 bis 5 mündlich“, „Exercices 1 et 2“,
+      // „Trost-Satz“ – der Tipp sprach von Teilen, die hier fehlen)
+      const ganz = (intern(k).bausteineVonBlatt.get(e.quelle.blatt) ?? []).every((x) => imBlatt.has(x.id))
+      const tipp = leichter && ganz && p.alterJahre < 12 && !KURSVERWEIS_RE.test(leichter) && !textMerkmale(leichter).has('blattverweis') && !/\b(Aufgabe\w*|Karte|Karten|Memory|Bildkarten|Seite|exercices?|cartes?|page)\b/i.test(leichter) && !tippSchon.has(e.quelle.blatt) ? kuerzen(leichter.replace(/\bdie Lehrperson\b/g, 'die Fachkraft').replace(/\bLehrperson\b/g, 'Fachkraft'), 160) : undefined
       if (tipp) tippSchon.add(e.quelle.blatt)
       return { titel: textVon(e, sp).titel, quelle: sp === 'fr' ? `de la fiche « ${qTitel} »` : `aus dem Blatt „${qTitel}“`, tipp }
     })

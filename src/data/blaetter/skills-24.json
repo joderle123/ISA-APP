@@ -429,6 +429,248 @@
         "achtung": "Rollen nie mit echten Namen oder Paaren aus der Gruppe besetzen; Übergriffe und Erpressung nur besprechen, nie spielen. Erzählt jemand Eigenes, ein Einzelgespräch anbieten, nach dem Schutzkonzept handeln und die Responsable informieren.",
         "material": "Festes Papier, Schere, Laminierfolie"
       }
+    },
+    "fr": {
+      "titel": "Cartes de situations : amour, limites, net",
+      "untertitel": "Des scènes inventées pour trier, se placer dans l’espace et décider",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Comment nous travaillons avec les cartes",
+          "punkte": [
+            "Toutes les scènes sont inventées. Personne ne joue son propre rôle ni celui de quelqu’un du groupe.",
+            "On joue seulement avec des mots et à distance. Qui dit « Stop » met fin à la scène.",
+            "La responsabilité revient à la personne qui dépasse une limite – jamais à celle à qui cela arrive."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "R · Relation : vert, jaune ou rouge ? Décidez en équipe et justifiez.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 104,
+          "karten": [
+            {
+              "titel": "R1 · La localisation",
+              "text": "Liam veut que Chiara partage toujours sa position avec lui. « Comme ça, je sais qu’il ne t’arrive rien. »"
+            },
+            {
+              "titel": "R2 · Le tournoi",
+              "text": "Aylin et Mila sont ensemble depuis un an. Aylin part avec son équipe de handball. Mila : « Écris-moi en arrivant – et ensuite, profite bien. »"
+            },
+            {
+              "titel": "R3 · Le bras",
+              "text": "Pendant une dispute, Ben attrape Nora par le bras si fort que ça lui fait encore mal le lendemain."
+            },
+            {
+              "titel": "R4 · La dispute",
+              "text": "Noah et Samuel sont en couple. Pendant une dispute, Samuel dit : « Je suis trop énervé en ce moment. On en reparle demain ? » Le lendemain, ils le font."
+            },
+            {
+              "titel": "R5 · La menace",
+              "text": "Luca à Zoé : « Si tu sors aujourd’hui avec tes copines, je te quitte. Et tout le monde saura ce que tu m’as raconté. »"
+            },
+            {
+              "titel": "R6 · Devant tout le monde",
+              "text": "Sofia lit à haute voix à ses copines ce que Tiago lui a écrit en privé. Tout le monde rit."
+            },
+            {
+              "titel": "R7 · Le flot de messages",
+              "text": "Emma envoie vingt messages à Diogo quand il ne répond pas tout de suite : « Pourquoi tu lis et tu n’écris pas ? »"
+            },
+            {
+              "titel": "R8 · La meilleure amie",
+              "text": "Inês se vexe quand sa meilleure amie Amira fait quelque chose avec d’autres, et elle ne lui parle plus pendant des jours."
+            },
+            {
+              "titel": "R9 · Le non",
+              "text": "Elias veut embrasser Ana pour lui dire au revoir. Ana tourne la tête. Elias hoche la tête : « Pas de souci. À demain. »"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cartes de signal à montrer assis : découpe-les et colorie-les en vert, jaune et rouge.",
+          "hinweis": "Pour les cartes R, elles signifient sain, malsain, violence ; pour les cartes E : oui clair, pas clair, pas de oui.",
+          "symbole": [
+            "schneiden",
+            "malen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 84,
+          "karten": [
+            {
+              "titel": "Vert",
+              "text": "sain · oui clair",
+              "bild": "icon:circle-check"
+            },
+            {
+              "titel": "Jaune",
+              "text": "malsain · pas clair",
+              "bild": "icon:alert-triangle"
+            },
+            {
+              "titel": "Rouge",
+              "text": "violence · pas de oui",
+              "bild": "icon:hand-stop"
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "E · Consentement : oui clair, pas clair ou pas de oui ?",
+          "hinweis": "Que pourrait demander ou faire la personne ?",
+          "symbole": [
+            "schneiden",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 90,
+          "karten": [
+            {
+              "titel": "E1 · L’accolade",
+              "text": "Après l’entraînement, Rafael ouvre les bras. Chiara sourit brièvement, fait un pas en arrière et lève la main pour taper dans la sienne."
+            },
+            {
+              "titel": "E2 · Action ou vérité",
+              "text": "À une fête, Léa doit embrasser Yusuf. Tout le monde applaudit et crie. Léa rit, gênée, et regarde vers la porte."
+            },
+            {
+              "titel": "E3 · Arrête",
+              "text": "Zoé chatouille Jang. Il rit et crie : « Arrête ! » Zoé continue : « Mais tu ris. »"
+            },
+            {
+              "titel": "E4 · Le oui d’hier",
+              "text": "Tiago et Luca se sont embrassés hier pour la première fois. Aujourd’hui, Luca est silencieux et s’assoit plus loin."
+            },
+            {
+              "titel": "E5 · Dans le bus",
+              "text": "Diogo s’assoit à côté de Sofia et pose sa main sur son genou. Sofia ne dit rien et regarde par la fenêtre."
+            },
+            {
+              "titel": "E6 · Après la fête",
+              "text": "Liam et Emma se sont embrassés. Emma a beaucoup bu et tient à peine debout. Liam veut sortir seul avec elle."
+            },
+            {
+              "titel": "E7 · Le selfie",
+              "text": "Aylin prend un selfie avec Nora et veut le poster. Nora dit : « Hm. J’ai l’air bizarre là-dessus. »"
+            },
+            {
+              "titel": "E8 · La preuve",
+              "text": "Mathis dit à Inês : « Ça fait trois mois qu’on est ensemble. Si tu m’aimes vraiment, alors … »"
+            },
+            {
+              "titel": "E9 · La question",
+              "text": "Elias demande à Ana : « Je peux t’embrasser ? » – « Oui. » Peu après, Ana dit : « Attends, finalement non. » Elias : « D’accord. »"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "N · Net : qu’est-ce qui est juste maintenant – et qui peut aider ?",
+          "symbole": [
+            "schneiden",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 90,
+          "karten": [
+            {
+              "titel": "N1 · La demande",
+              "text": "Depuis des jours, Jang écrit à Nora : « Envoie-moi une photo. Rien que pour moi. » Nora ne veut pas – mais elle ne veut pas non plus le perdre."
+            },
+            {
+              "titel": "N2 · Dans le groupe de classe",
+              "text": "Dans le groupe de la classe, une photo de Léa nue apparaît. Certains écrivent des remarques en dessous, d’autres envoient des smileys qui rient."
+            },
+            {
+              "titel": "N3 · Le profil inconnu",
+              "text": "Un profil avec la photo d’une fille flirte avec Luca. Après l’envoi d’une photo de lui, il reçoit : « Paie 200 euros, sinon tous tes contacts la verront. »"
+            },
+            {
+              "titel": "N4 · Après la rupture",
+              "text": "Après la rupture, Mathis écrit à Lena : « Si tu ne reviens pas, tout le monde verra la photo de toi. »"
+            },
+            {
+              "titel": "N5 · L’image truquée",
+              "text": "Avec une appli, quelqu’un a créé une photo de nu où l’on voit le visage de Rafael. Elle circule à l’école."
+            },
+            {
+              "titel": "N6 · L’appel",
+              "text": "Samuel t’appelle en pleurant : une photo de lui circule. « Je suis tellement bête. Je ne retournerai plus jamais à l’école. »"
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "eintraege": [
+            {
+              "name": "Urgences : secours et pompiers",
+              "nummer": "112"
+            },
+            {
+              "name": "Police",
+              "nummer": "113"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "BEE SECURE Helpline – problèmes sur Internet, y compris avec des images",
+              "nummer": "8002 1234"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Scènes inventées pour le module « Amour, sexualité et consentement » : relation (R, séance 27), consentement (E, séance 28), images sur Internet (N, séance 30).",
+        "ablauf": [
+          "Imprimer sur papier épais, découper, plastifier ; R1–R9 en double, cartes de signal une fois par personne. Retirer des cartes ou changer les noms si elles ressemblent à une situation vécue dans le groupe.",
+          "R (parcours des feux) : vert R2, R4, R9 – jaune R1, R7, R8 – rouge R3, R5, R6. Le jaune passe au rouge dès qu’interviennent la peur, la menace ou la contrainte.",
+          "E (ligne du oui) : oui clair seulement E9, jusqu’à ce qu’Ana revienne dessus – ensuite son non compte ; pas clair, donc demander : E4, E7 – pas de oui : E1, E2, E3, E5, E6, E8. E1 : taper dans la main oui, accolade non.",
+          "N (quatre coins) : options A à D et solutions dans la séance 30."
+        ],
+        "hintergrund": "Les scènes inventées permettent de parler de sujets difficiles sans que personne ait à se dévoiler. L’étude de cas et le jeu de rôle sont au cœur des programmes efficaces contre la violence dans les relations amoureuses des jeunes (Foshee et al., 2004). Les cartes E montrent que l’accord se négocie souvent sans mots – et que malentendus et prétextes surgissent alors facilement (Beres, 2007). Les cartes N reprennent des formes de chantage décrites par Wolak et al. (2018) : par d’anciens partenaires et par des inconnus rencontrés en ligne.",
+        "quellen": [
+          "Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624.",
+          "Beres, M. A. (2007). ‘Spontaneous’ sexual consent: An analysis of sexual consent literature. Feminism & Psychology, 17(1), 93–108.",
+          "Wolak, J., Finkelhor, D., Walsh, W. & Treitman, L. (2018). Sextortion of minors: Characteristics and dynamics. Journal of Adolescent Health, 62(1), 72–79."
+        ],
+        "differenzierung": {
+          "leichter": "Lire les cartes à voix haute ; trois ou quatre cartes par série.",
+          "schwerer": "Écrire la scène suivante : qu’est-ce qui change si quelqu’un intervient ?"
+        },
+        "impulse": [
+          "Quelle carte était la plus difficile – et pourquoi ?",
+          "De quoi la personne sur la carte aurait-elle eu besoin ?"
+        ],
+        "tipps": [
+          "Les cartes servent pendant trois séances : plastifier.",
+          "Mieux vaut peu de cartes travaillées à fond que toutes au pas de course."
+        ],
+        "achtung": "Ne jamais attribuer les rôles à de vrais noms ou couples du groupe ; agressions et chantage se discutent, ne se jouent jamais. Si quelqu’un raconte du vécu : entretien individuel, concept de protection, direction compétente (responsable) informée.",
+        "material": "Papier épais, ciseaux, pochettes de plastification"
+      }
     }
   },
   {
@@ -1043,6 +1285,188 @@
         ],
         "achtung": "Keine Bilder mit sexuellen Darstellungen. Fragen zu eigenen Beschwerden, einer Schwangerschaft oder Infektion diskret aufnehmen und zu Planning Familial oder zur Schulärztin begleiten; bei Hinweisen auf Übergriffe Schutzkonzept und Responsable.",
         "material": "Blatt pro Paar, Station 1 auf festem Papier, Plakat, Haftnotizen, Signal"
+      }
+    },
+    "fr": {
+      "titel": "Le parcours du savoir",
+      "untertitel": "Quatre stations à deux : corps, protection, diversité, net",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Station 1 · Corps et puberté : placez à chaque question la réponse qui convient.",
+          "symbole": [
+            "partner",
+            "lesen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 86,
+          "karten": [
+            {
+              "titel": "Question 1",
+              "text": "Est-il normal que les seins n’aient pas la même taille ?"
+            },
+            {
+              "titel": "Question 2",
+              "text": "Pourquoi la voix sonne-t-elle soudain différemment ?"
+            },
+            {
+              "titel": "Question 3",
+              "text": "Les règles arrivent parfois plus tôt, parfois plus tard. Est-ce que c’est OK ?"
+            },
+            {
+              "titel": "Question 4",
+              "text": "Qu’est-ce qu’un rêve humide ?"
+            },
+            {
+              "titel": "Question 5",
+              "text": "Faut-il se raser les poils du corps ?"
+            },
+            {
+              "titel": "Question 6",
+              "text": "La masturbation est-elle nocive ?"
+            },
+            {
+              "titel": "Réponse A",
+              "text": "Non. Les poils du corps sont normaux. Chaque personne décide d’elle-même de les enlever ou non."
+            },
+            {
+              "titel": "Réponse B",
+              "text": "Le larynx grandit. Après un moment, la voix devient plus grave."
+            },
+            {
+              "titel": "Réponse C",
+              "text": "Non. Elle est normale et ne fait pas de mal. On peut le faire ou ne pas le faire."
+            },
+            {
+              "titel": "Réponse D",
+              "text": "Oui. Chez la plupart des gens, les deux côtés ne sont pas exactement identiques."
+            },
+            {
+              "titel": "Réponse E",
+              "text": "Une éjaculation pendant le sommeil. À la puberté, cela arrive souvent tout seul."
+            },
+            {
+              "titel": "Réponse F",
+              "text": "Oui. Au début, le corps a souvent besoin d’un peu de temps avant qu’un rythme s’installe."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station 2 · Protection et contraception : contre quoi chaque méthode protège-t-elle ? Cochez – deux croix sont possibles.",
+          "symbole": [
+            "partner",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "grossesse",
+            "infections",
+            "pas de protection sûre"
+          ],
+          "items": [
+            "Préservatif",
+            "Pilule",
+            "« Faire attention » (retrait)",
+            "Pilule du lendemain (seulement en cas d’urgence)"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Les préservatifs s’achètent sans ordonnance, par exemple en pharmacie et au supermarché. Pour la contraception, le Planning Familial ainsi que les médecins donnent des conseils."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station 3 · Amour et diversité : de quoi les jeunes ont-ils besoin pour pouvoir être comme ils sont ? Écrivez une idée sur un post-it pour l’affiche.",
+          "symbole": [
+            "partner",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station 4 · Net et pornographie : est-ce comme ça dans la vraie vie – ou seulement dans le porno ? Cochez.",
+          "symbole": [
+            "partner",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vraie vie",
+            "seulement dans le porno"
+          ],
+          "items": [
+            "Tous les corps ont l’air parfaits – sans poils, sans boutons, sans ventre.",
+            "Personne ne demande si l’autre en a envie.",
+            "Il n’y a pas de préservatif.",
+            "Les gens hésitent, rient entre-temps ou s’arrêtent.",
+            "Quand quelque chose fait mal, ça fait partie du jeu.",
+            "Chaque corps est différent."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Les films pornos sont joués, montés et faits pour des adultes. Ils ne servent pas d’éducation sexuelle : la vraie sexualité, c’est demander, se protéger et de vrais corps – et quand quelque chose fait mal, on arrête."
+        },
+        {
+          "art": "notfall",
+          "text": "Ici, tu trouves des réponses fiables",
+          "eintraege": [
+            {
+              "name": "Planning Familial – conseils sur l’amour, le corps et la contraception",
+              "nummer": "__________"
+            },
+            {
+              "name": "Médecin scolaire et SePAS",
+              "nummer": "au lycée"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Par deux, les jeunes acquièrent à quatre stations des connaissances sur le corps, la contraception, la diversité et la pornographie – sans devoir répondre devant tout le groupe.",
+        "ablauf": [
+          "Préparation : imprimer la station 1 sur du papier épais, découper, mélanger ; chaque binôme reçoit un jeu. Station 3 : affiche et post-it.",
+          "Parcours (20 min) : 5 min par station, changement au signal ; l’équipe encadrante circule.",
+          "Corrigé station 1 : 1D, 2B, 3F, 4E, 5A, 6C. Station 2 : préservatif – grossesse et beaucoup d’infections ; pilule – grossesse seulement ; « faire attention » – pas sûr ; pilule du lendemain – seulement en cas d’urgence, le plus tôt possible, ne protège pas des infections.",
+          "Corrigé station 4 : relèvent de la vraie vie les gens qui hésitent et qui rient, ainsi que les corps différents ; tout le reste n’existe que dans le porno. Bilan (5 min) : lire l’affiche à voix haute, sans noms."
+        ],
+        "hintergrund": "Les stations répartissent l’attention : les binômes lisent à leur rythme et posent des questions sans devoir répondre devant tout le groupe – un grand avantage pour des sujets gênants. Les contenus suivent les standards de l’éducation sexuelle (WHO Regional Office for Europe & BZgA, 2010) : puberté, protection contre la grossesse et les infections, diversité et médias. L’éducation sexuelle est efficace lorsqu’elle informe et exerce en même temps des attitudes et des compétences, par exemple vérifier les sources et trouver de l’aide (UNESCO, 2018).",
+        "quellen": [
+          "WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung.",
+          "UNESCO (2018). International Technical Guidance on Sexuality Education: An Evidence-Informed Approach (revised ed.). Paris: UNESCO."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les stations 1, 2 et 4 ; l’adulte lit les cartes à voix haute.",
+          "schwerer": "À la station 4, noter ce que l’on dirait à un frère ou une sœur plus jeune sur la pornographie."
+        },
+        "impulse": [
+          "Quelle carte vous a surpris ?",
+          "Où demanderiez-vous conseil pour la contraception ?"
+        ],
+        "tipps": [
+          "Si le Planning Familial est invité, la personne spécialisée prend en charge la station 2.",
+          "N’accrocher l’affiche que si le groupe est d’accord."
+        ],
+        "achtung": "Pas d’images à caractère sexuel. Recueillir discrètement les questions sur ses propres troubles, une grossesse ou une infection et accompagner vers le Planning Familial ou le médecin scolaire ; en cas d’indices d’agressions, suivre le concept de protection et informer la direction compétente (responsable).",
+        "material": "Une feuille par binôme, station 1 sur papier épais, affiche, post-it, signal"
       }
     }
   },

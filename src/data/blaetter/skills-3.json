@@ -147,6 +147,120 @@
         "achtung": "Schreibt jemand von Belastendem, nicht in der Gruppe nachfragen, sondern ein Einzelgespräch anbieten. Bei Hinweisen auf Gefährdung nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt je Person, Plakat"
       }
+    },
+    "fr": {
+      "titel": "À quoi servent les émotions ?",
+      "untertitel": "Chaque émotion a un message – même les désagréables.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les émotions se manifestent quand il se passe quelque chose qui compte pour toi – un peu comme une notification sur ton téléphone. Tu n’as pas besoin de répondre tout de suite à chacune. Mais ça vaut la peine de la lire."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel message va avec quelle émotion ? Relie.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Émotion",
+            "Son message"
+          ],
+          "links": [
+            "Peur",
+            "Colère",
+            "Tristesse",
+            "Joie",
+            "Dégoût",
+            "Surprise"
+          ],
+          "rechts": [
+            "Ça me fait du bien. J’en veux plus.",
+            "Un instant – que se passe-t-il ?",
+            "Attention, danger. Protège-toi.",
+            "C’est mauvais pour moi. Je m’éloigne.",
+            "Il me manque quelque chose. J’ai besoin de réconfort.",
+            "C’est injuste. Il y a ici une limite."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pense à trois moments de ces dernières semaines : quelle émotion était là – et que voulait-elle te dire ?",
+          "hinweis": "C’est toi qui choisis les émotions. Le tableau reste chez toi et n’est pas lu à voix haute.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Émotion",
+            "Ce qui s’est passé",
+            "Le message"
+          ],
+          "breiten": [
+            1,
+            2.6,
+            2.2
+          ],
+          "beispiel": [
+            "Colère",
+            "Mon frère a pris mon câble de chargeur sans demander – encore une fois.",
+            "Ça m’appartient. Je veux qu’on me demande."
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle émotion aimes-tu le moins – et à quoi sert-elle malgré tout ?",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Pas de mauvaises émotions",
+          "text": "Chaque émotion a son sens. Mais il y a des façons d’y réagir qui aident plus ou moins. La colère a le droit d’exister – que tu cognes ou que tu dises clairement « Stop » fait toute la différence."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes associent à six émotions de base leur message et reconnaissent que même les émotions désagréables ont une fonction. Ils appliquent cela à leurs propres expériences.",
+        "ablauf": [
+          "Entrée en matière (3 min) : « Serions-nous mieux sans émotions ? » Écouter les avis, sans trancher.",
+          "Tâche 1 à deux (4 min), puis correction en commun ; pour chaque message, ajouter ce que l’émotion nous pousse à faire (schéma au tableau à la séance 7).",
+          "Tâche 2 individuelle (5 min) : lire l’exemple à voix haute, faire choisir au moins une émotion désagréable. Le tableau n’est pas ramassé.",
+          "Tâche 3 (3 min) : lecture volontaire des réponses à voix haute, écrire la phrase à retenir au tableau."
+        ],
+        "hintergrund": "Les émotions sont de brèves réactions organisées à des événements importants pour nous : elles dirigent l’attention, préparent une action et montrent aux autres ce qui se passe en nous. Ekman (1992) décrit des émotions de base dont l’expression est reconnue dans de nombreuses cultures. Plutchik (2001) attribue à chacune une fonction : la peur assure la protection, la colère écarte les obstacles, la tristesse cherche la proximité perdue. Qui comprend le message d’une émotion n’a pas à suivre aveuglément son élan d’action – les skills du module 3 s’appuient là-dessus (Rathus & Miller, 2015).",
+        "quellen": [
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Faire la tâche 1 avec les cartes d’émotions ; à la tâche 2, ne remplir qu’une ligne.",
+          "schwerer": "Réfléchir à quand une émotion dépasse la mesure – par exemple une grande peur avant un exposé sans danger."
+        },
+        "impulse": [
+          "Quand la peur t’a-t-elle déjà été utile ?",
+          "À quoi pourrait servir l’envie ?"
+        ],
+        "tipps": [
+          "Accrocher les messages sur une affiche à côté de la roue des émotions – ils resservent à la séance 8.",
+          "Si la tâche 2 coince, des exemples tirés de séries ou du sport sont permis."
+        ],
+        "achtung": "Si quelqu’un écrit quelque chose de pesant, ne pas poser de questions devant le groupe, mais proposer un entretien individuel. En cas d’indices de mise en danger, agir selon le concept de protection et informer la direction compétente (responsable).",
+        "material": "Une feuille par personne, affiche"
+      }
     }
   },
   {
@@ -798,6 +912,98 @@
         ],
         "achtung": "Gerücht und Sorgen-Geheimnis können an Eigenes rühren: nicht vertiefen, Einzelgespräch anbieten. Bei Hinweisen auf Mobbing oder Gefährdung nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt je Person, Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Émotions mélangées",
+      "untertitel": "On ressent rarement une seule chose – et c’est normal.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Tu te réjouis de la fête et en même temps, tu es en colère contre ton meilleur ami. Ce n’est pas contradictoire : les émotions se mélangent comme des couleurs, et souvent l’une est plus forte que les autres."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelles émotions aurais-tu ? Coche toutes celles qui conviennent et entoure la plus forte.",
+          "symbole": [
+            "ankreuzen",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "1. Tu as beaucoup appris et tu as quand même une mauvaise note. À côté de toi, quelqu’un en a une très bonne.",
+            "2. Tu as une invitation à une fête, mais tu as eu une dispute avec ton meilleur ami le même jour.",
+            "3. On te félicite devant la classe, et tout le monde te regarde.",
+            "4. Tu deviens capitaine de ton équipe, mais tu ne te sens pas encore à la hauteur.",
+            "5. Tu gagnes un concours, mais tes amis réagissent avec jalousie.",
+            "6. Quelqu’un répand une fausse rumeur sur toi, et beaucoup de gens y croient.",
+            "7. Une amie te confie un secret qui t’inquiète. Tu ne dois le dire à personne.",
+            "8. Ta famille déménage. Tu auras une chambre plus grande, mais tes amis restent là-bas."
+          ],
+          "optionen": [
+            "Joie",
+            "Tristesse",
+            "Colère",
+            "Peur",
+            "Honte",
+            "Doute"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et toi ? Pense à un moment avec des émotions mélangées. Note les émotions et donne à chacune un chiffre de 0 à 10.",
+          "hinweis": "0 veut dire : pas du tout. 10 veut dire : aussi fort que jamais. C’est toi qui décides si tu en parles.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Le moment",
+            "Mes émotions et leur intensité (0–10)"
+          ],
+          "breiten": [
+            2.2,
+            2.6
+          ],
+          "beispiel": [
+            "Mon cousin retourne vivre au Portugal.",
+            "tristesse 8 · joie pour lui 5 · un peu d’envie 2"
+          ],
+          "zeilen": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent que plusieurs émotions, même contradictoires, peuvent coexister et que la même situation déclenche des réactions différentes selon les personnes. Ils évaluent l’intensité des émotions de 0 à 10.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Peut-on se réjouir et être triste en même temps ? » Écrire au tableau l’exemple du texte.",
+          "Tâche 1 individuelle (8 min) : cocher toutes les émotions qui conviennent, entourer la plus forte.",
+          "Exploitation (8 min) : compter à main levée pour deux ou trois situations et écrire les chiffres au tableau. Rendre les différences visibles, sans les juger.",
+          "Tâche 2 en silence (4 min) ; partager seulement si on le souhaite."
+        ],
+        "hintergrund": "Les émotions apparaissent rarement seules. Larsen, McGraw et Cacioppo (2001) ont montré que, dans des moments doux-amers comme un adieu, les gens ressentent bel et bien joie et tristesse en même temps, pas seulement à tour de rôle. Plutchik (2001) décrit les émotions comme des couleurs qui se mélangent. Reconnaître les émotions mélangées comme normales évite de devoir choisir un camp et aide à comprendre les réactions contradictoires chez soi et chez les autres. Évaluer l’intensité prépare l’échelle de tension de 0 à 100 (séance 11).",
+        "quellen": [
+          "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
+          "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350."
+        ],
+        "differenzierung": {
+          "leichter": "Ne traiter que les situations 1 à 4.",
+          "schwerer": "Pour une situation, noter ce que chaque émotion voudrait faire – et laquelle l’emporte à la fin."
+        },
+        "impulse": [
+          "Quelle situation a reçu le plus de croix différentes – et pourquoi ?",
+          "Connaissez-vous des mots pour les mélanges, par exemple doux-amer ou la joie d’avance ?"
+        ],
+        "tipps": [
+          "Reprendre exprès la situation 7 : un secret qui met quelqu’un en danger, on peut et on doit le confier à une personne de confiance.",
+          "Jouable en se déplaçant : pour chaque situation, tout le monde se place près des cartes d’émotions qui conviennent."
+        ],
+        "achtung": "La rumeur et le secret qui inquiète peuvent toucher à du vécu : ne pas approfondir, proposer un entretien individuel. En cas d’indices de harcèlement ou de mise en danger, agir selon le concept de protection et informer la direction compétente (responsable).",
+        "material": "Une feuille par personne, crayons"
       }
     }
   }

@@ -325,7 +325,9 @@ export function baueKatalog(q: Quellen, bDatei: BausteineDatei, sDatei: Schritte
   for (const roh of inhalte.schritte) {
     const da = eintraege.get(roh.id!)
     if (da && da.typ === 'schritt') {
-      add({ ...da, ...roh, typ: 'schritt', id: da.id, h: da.h } as KatalogEintrag)
+      // Ergänzung mit französischem Text (inhalte/fr-*.json): dann gibt es den Schritt auch auf Französisch
+      const sprache = roh.fr ? { ...da.sprache, fr: true } : da.sprache
+      add({ ...da, ...roh, typ: 'schritt', id: da.id, h: da.h, sprache } as KatalogEintrag)
       continue
     }
     const s = inhaltSchritt(roh as Partial<Stundenschritt> & { id: string })
@@ -419,7 +421,9 @@ export function staemme(t: string): Set<string> {
  *  („fünfmal kopieren“) weg. */
 function vorbereitungFuer(e: Stundenschritt): string | undefined {
   if (!e.vorbereitung) return undefined
-  const einheit = e.id.startsWith('k:') || e.id.startsWith('f:')
+  // auch Material: dessen Vorbereitung gilt für alle Teile (Blind-Bewertung 8: „Kühlpacks, Riechstreifen, Elternzettel“ für
+  // Bausteine, die es in der Stunde nicht gibt)
+  const einheit = e.id.startsWith('k:') || e.id.startsWith('f:') || e.id.startsWith('m:')
   const bezug = staemme(`${e.titel} ${e.text} ${(e.sagen ?? []).join(' ')} ${e.einzelvariante?.text ?? ''}`)
   const teile = e.vorbereitung
     .split(/\s+·\s+/)
@@ -436,6 +440,10 @@ function vorbereitungFuer(e: Stundenschritt): string | undefined {
     })
     // Reste wie „ruhiger Moment“ (aus „Keine; ruhiger Moment“) sagen nichts
     .filter((x) => x.split(/\s+/).length >= 3)
+    // abgeschnittene Reste („in den vereinbarten Gefühlsfarben), Bildkarten …“, Blind-Bewertung 8, A11): Klammern müssen
+    // aufgehen, und ein Teil beginnt nicht mitten im Satz
+    .filter((x) => (x.match(/\(/g) ?? []).length === (x.match(/\)/g) ?? []).length && !/^[a-zäöüéèàç]/.test(x))
+    .map((x) => x.replace(/[;,:]\s*$/, ''))
     .filter((x) => !einheit || [...staemme(x)].some((w) => bezug.has(w)))
   return teile.length ? teile.join(' · ') : undefined
 }
@@ -484,11 +492,23 @@ const ART_NAME: Record<string, string> = {
   rueckblick: 'Rückblick', glaeser: 'Gläser', netz: 'Netz', kurve: 'Kurve', tageskreis: 'Tageskreis', farbkalender: 'Farbkalender', wortspeicher: 'Wortspeicher',
   schneiden_kleben: 'Schneiden & Kleben', memory: 'Memory', labyrinth: 'Labyrinth', laufweg: 'Würfelspiel', minibuch: 'Mini-Buch',
   punkte_verbinden: 'Punkte verbinden', klappbild: 'Klappbild', faedelkarte: 'Fädelkarte', bastelbogen: 'Bastelbogen', suchbild: 'Suchbild',
-  anziehpuppe: 'Anziehpuppe', forscherblatt: 'Forscherblatt', spalten: 'Zwei Spalten',
+  anziehpuppe: 'Anziehpuppe', forscherblatt: 'Forscherblatt', spalten: 'Zwei Spalten', diagramm: 'Diagramm', strichliste: 'Strichliste',
+}
+/** französisch (Blind-Bewertung 8: „Rückblick“ deutsch im französischen Plan, „diagramm:“ klein als Aufgabentitel) */
+const ART_NAME_FR: Record<string, string> = {
+  geschichte: 'Histoire', info: 'Info', text: 'Texte', ankreuzen: 'À cocher', bilder: 'Images', tabelle: 'Tableau', satzanfaenge: 'Débuts de phrases',
+  linien: 'Lignes', frage: 'Question', feld: 'Cadre', wennDann: 'Plan si-alors', dialog: 'Dialogue', vertrag: 'Accord', einschaetzung: 'Évaluation',
+  skala: 'Échelle', zuordnen: 'Relier', gefuehle: 'Visages des émotions', gefuehlsrad: 'Roue des émotions', ampel: 'Feu tricolore', thermometer: 'Thermomètre',
+  vulkan: 'Volcan', eisberg: 'Iceberg', koerper: 'Silhouette', batterie: 'Batterie', waage: 'Balance', leiter: 'Échelle à barreaux', zielscheibe: 'Cible',
+  hand: 'Main', mindmap: 'Carte mentale', schritte: 'Étapes', plan: 'Plan', tagesplan: 'Programme du jour', atmen: 'Respiration', comic: 'BD', karten: 'Cartes',
+  rueckblick: 'Retour', glaeser: 'Bocaux', netz: 'Toile', kurve: 'Courbe', tageskreis: 'Cercle de la journée', farbkalender: 'Calendrier des couleurs', wortspeicher: 'Banque de mots',
+  schneiden_kleben: 'Découper et coller', memory: 'Memory', labyrinth: 'Labyrinthe', laufweg: 'Jeu de dé', minibuch: 'Mini-livre',
+  punkte_verbinden: 'Relier les points', klappbild: 'Image à rabat', faedelkarte: 'Carte à enfiler', bastelbogen: 'Bricolage', suchbild: 'Image à chercher',
+  anziehpuppe: 'Poupée à habiller', forscherblatt: 'Fiche d’exploration', spalten: 'Deux colonnes', diagramm: 'Diagramme', strichliste: 'Bâtons',
 }
 
-export function artName(art: string): string {
-  return ART_NAME[art] ?? art
+export function artName(art: string, sprache: Sprache = 'de'): string {
+  return (sprache === 'fr' ? ART_NAME_FR[art] : ART_NAME[art]) ?? ART_NAME[art] ?? art
 }
 
 /** Kurzfassung ohne Schnitt mitten im Satz, wo es geht: ganze Sätze bis n, sonst bis zum letzten Komma, sonst Wortgrenze. */
@@ -597,13 +617,13 @@ export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; t
     if (!b) return ''
     if ('titel' in b && typeof b.titel === 'string' && b.titel) return b.titel
     if (b.art === 'frage') return b.text
-    return artName(b.art)
+    return artName(b.art, sprache)
   }
-  const titel = aufgaben[0] ? kurz(aufgaben[0], 80) : `${artName(haupt?.art ?? '')}${titelVon(haupt) && titelVon(haupt) !== artName(haupt?.art ?? '') ? ': ' + titelVon(haupt) : ''}`
+  const titel = aufgaben[0] ? kurz(aufgaben[0], 80) : `${artName(haupt?.art ?? '', sprache)}${titelVon(haupt) && titelVon(haupt) !== artName(haupt?.art ?? '', sprache) ? ': ' + titelVon(haupt) : ''}`
   const inhalt = texte(liste.filter((x) => x.art !== 'aufgabe'))
     .map((t) => t.text)
     .filter(Boolean)
-  return { titel, text: kurz([...aufgaben.slice(1), ...inhalt].join(' · ') || artName(haupt?.art ?? ''), 220), quelle: quelleText(e, sprache) }
+  return { titel, text: kurz([...aufgaben.slice(1), ...inhalt].join(' · ') || artName(haupt?.art ?? '', sprache), 220), quelle: quelleText(e, sprache) }
 }
 
 export function ichSatz(k: Katalog, code: string): string | undefined {

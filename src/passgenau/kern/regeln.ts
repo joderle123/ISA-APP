@@ -249,7 +249,14 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     // … und Wachsmalkreiden, Löffel-Parcours, Flamingo-Statue, Kuscheltier wirken bei Jugendlichen kindlich
     if (!eigen && tm.has('kindlich') && c.alter >= 12) return 'kindlich'
     if (tm.has('sorgen') && krisenlage(c)) return 'Gefühle abfragen'
+    // Blind-Bewertung 8 (A12, A7): Mobbing-Geschichten, Selbsteinschätzung auf Skalen und Fragebögen nicht in Krisenlage;
+    // Wettbewerb und Zeitdruck nicht bei Wut, Angst, schwerem Tag oder Reizempfindlichkeit („Tast-Rallye“, „Rekord“)
+    if (tm.has('mobbing') && krisenlage(c)) return 'belastend'
+    if (tm.has('selbstbewertung') && krisenlage(c)) return 'Selbsteinschätzung in Krisenlage'
+    if (tm.has('wettlauf') && (c.vorsicht.has('reiz') || c.heute.stimmung <= 2 || c.themen.has('wut') || c.themen.has('angst') || c.tagesformen.some((t) => t === 'wuetend' || t === 'aufgewuehlt' || t === 'aengstlich'))) return 'Wettbewerb'
   }
+  // Krisenlage: keine Einschätz-Gläser (Schlafen, Freunde, „Trost & Kuscheln“; Blind-Bewertung 8)
+  if (krisenlage(c) && e.typ === 'baustein' && e.art.includes('glaeser')) return 'Gefühle abfragen'
   // Krisenlage: auf dem Blatt keine Skala, kein Check-in, kein Rückblick zu Gefühl oder Stimmung (A12)
   if (krisenlage(c) && e.typ === 'baustein' && e.art.some((a) => a === 'skala' || a === 'checkin' || a === 'rueckblick' || a === 'thermometer') && (e.kompetenz.some((x) => x.startsWith('gefuehle')) || e.thema.some((t) => t === 'gefuehle' || t === 'traurig' || t === 'angst' || t === 'wut'))) return 'Gefühle abfragen'
   // Krisenlage: kein Wut-Material, wenn Wut beim Kind gar kein Thema ist (Wutvulkan bei Trauer)
@@ -441,7 +448,10 @@ function tagesformWert(e: KatalogEintrag, c: Kontext): number {
     const eigen = e.typ === 'schritt' ? (e.tagesform ?? []) : []
     if (tf.some((t) => eigen.includes(t))) w = 1
     else if (tf.some((t) => e.format.some((f) => TAGESFORM_FORMATE[t]?.includes(f)))) w = 0.8
-    if (tf.some((t) => t === 'aufgedreht' || t === 'wuetend' || t === 'aufgewuehlt') && e.energie === 3) w = Math.min(1, w + 0.2)
+    // aufgedreht: Bewegung hilft; wütend oder aufgewühlt: schnelle Fitness steigert die Erregung (Blind-Bewertung 8:
+    // „Hampelmann bei aufgewühlt/wütend“) – dort lieber schwer und ruhig (drücken, tragen, atmen)
+    if (tf.some((t) => t === 'aufgedreht') && e.energie === 3) w = Math.min(1, w + 0.2)
+    if (tf.some((t) => t === 'wuetend' || t === 'aufgewuehlt') && e.energie === 3) w -= 0.3
     if (tf.some((t) => t === 'muede' || t === 'traurig' || t === 'rueckzug') && e.energie === 3) w -= 0.3
     return Math.max(0, w)
   }
@@ -531,6 +541,16 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
       if (e.thema[0] && BESONDERE_THEMEN.has(e.thema[0]) && !c.themen.has(e.thema[0])) g *= 0.25
     }
     else if (/^(k|f|m|c):/.test(e.id)) g *= e.einzelvariante ? 0.5 : 0.35
+  }
+  // Kinder (Blind-Bewertung 8: 6–11 J. nur 47–67 % brauchbar – Gruppenreste, Verweise auf Fehlendes, Blatt ohne Bezug): die
+  // Einzelübungen für Kinder (ki:, inhalte/kinder.json, mit eigenem Blatt) zuerst; Bruchstücke aus Kurs, Förderfach,
+  // Material und CREW nur, wenn nichts anderes passt (Spielschule für die Kleinsten etwas weniger stark)
+  if (c.alter < 12 && e.typ === 'schritt') {
+    if (e.id.startsWith('ki:')) {
+      g *= 2.2
+      if (e.thema[0] && BESONDERE_THEMEN.has(e.thema[0]) && !c.themen.has(e.thema[0])) g *= 0.25
+    } else if (/^(k|f|m|c):/.test(e.id) && e.rolle.includes('kern')) g *= e.einzelvariante ? 0.6 : 0.45
+    else if (e.id.startsWith('s:') && e.rolle.includes('kern')) g *= 0.8
   }
   // Einzelstunde: Schritte, die nur für Gruppen beschrieben sind (ohne Einzelvariante), zählen weniger – die Beschriftung
   // nennt 1290 solcher Schritte „einzeltauglich“; im Zweifel gewinnt, was für ein Kind geschrieben ist (Testlauf 9.10.)

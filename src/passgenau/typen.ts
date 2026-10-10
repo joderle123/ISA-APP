@@ -96,6 +96,10 @@ export interface Stundenschritt extends KatalogZusatz {
   h: string
   /** Blatt zu genau dieser Übung (Jugend-Übungen): 2–4 Aufgaben, die ersten zwei mit wenig Schreiben */
   uebungsblatt?: { titel?: { de: string; fr: string }; de: Baustein[]; fr: Baustein[] }
+  /** die mitnehmbare Fertigkeit als kurze Formel („Stopp – atmen – sagen“) – Übertragen und Rückblick nennen sie (Blind-Bewertung 8) */
+  werkzeug?: { de: string; fr: string }
+  /** false: reine Rückblick-, Einschätz- oder Erkundungsübung – wird nicht in den Alltag übertragen */
+  uebertragbar?: boolean
   quelle: { art: SchrittQuelle; einheit?: string; titel: string }
   titel: string
   text: string

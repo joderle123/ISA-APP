@@ -400,7 +400,9 @@ await pruefung('Vorlieben (11.5): 10 Rückmeldungen kippen ein knappes Ranking, 
   let paar: [(typeof liste)[number], (typeof liste)[number]] | null = null
   for (let i = 0; i + 1 < liste.length && !paar; i++)
     for (let j = i + 1; j < Math.min(liste.length, i + 4); j++)
-      if (liste[i].s - liste[j].s < 0.02 && liste[i].e.format[0] && liste[j].e.format[0] && liste[i].e.format[0] !== liste[j].e.format[0]) {
+      // das obere hat das Format des unteren gar nicht (sonst lernt es mit)
+      // und stammt aus einer anderen Quellart (sonst lernt es über die Quelle mit)
+      if (liste[i].s - liste[j].s < 0.02 && liste[i].e.format[0] && liste[j].e.format[0] && !liste[i].e.format.includes(liste[j].e.format[0]) && liste[i].e.typ === 'schritt' && liste[j].e.typ === 'schritt' && liste[i].e.quelle.art !== liste[j].e.quelle.art) {
         paar = [liste[i], liste[j]]
         break
       }
@@ -413,7 +415,7 @@ await pruefung('Vorlieben (11.5): 10 Rückmeldungen kippen ein knappes Ranking, 
   const c1 = kontext(k, p, a, v)
   const o2 = bewerte(oben.e, c1, { phase: 'ueben' })
   const u2 = bewerte(unten.e, c1, { phase: 'ueben' })
-  info(`Format „${fmt}“: vorher ${oben.s.toFixed(3)} > ${unten.s.toFixed(3)}, nachher ${o2.s.toFixed(3)} / ${u2.s.toFixed(3)}`)
+  info(`Format „${fmt}“ (${oben.e.id} [${oben.e.format.join(',')}] vs. ${unten.e.id}): vorher ${oben.s.toFixed(3)} > ${unten.s.toFixed(3)}, nachher ${o2.s.toFixed(3)} / ${u2.s.toFixed(3)}`)
   soll(u2.s > o2.s, 'Ranking kippt nicht nach 10 Rückmeldungen')
   soll(Math.abs(u2.s / u2.g - 1) <= 0.3 + 1e-9, 'Deckel ±30 % überschritten')
   // harte Regel: ein Eintrag für Jüngere bleibt draußen, egal wie beliebt
@@ -670,9 +672,11 @@ await pruefung('Dünne Daten (T-M5): Kind ohne Ziele und Themen – je Schritt e
     for (const s of plan.sitzungen) {
       soll(s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss').every((x) => (x.warum ?? []).length >= 1), `${name} S${s.nr}: Schritt ohne Warum`)
       const n = s.blatt?.bausteine.filter((b) => !b.ref.startsWith('pg:')).length ?? 0
-      soll(n >= 2, `${name} S${s.nr}: Blatt mit ${n} Paketen`)
-      blaetter++
-      if (n >= 3) dreier++
+      // Blatt zur Übung (Übertragen, Rückblick, kuratierte Übung mit eigenem Blatt) zählt als ein ganzes Blatt
+      const kernblatt = !!s.blatt?.bausteine.some((b) => b.ref === 'pg:kernblatt')
+      soll(kernblatt || n >= 2, `${name} S${s.nr}: Blatt mit ${n} Paketen`)
+      if (!kernblatt) blaetter++
+      if (!kernblatt && n >= 3) dreier++
       soll(!!s.hinweise?.some((h) => h.includes('ELDiB')), `${name} S${s.nr}: kein Hinweis „ELDiB-Einschätzung fehlt“`)
       const kb = kinderblatt(k, p, plan, s.nr, 'de')
       soll(!kb.passgenau?.ziel, `${name}: „Mein Ziel“ ohne Ziel`)
@@ -684,7 +688,7 @@ await pruefung('Dünne Daten (T-M5): Kind ohne Ziele und Themen – je Schritt e
   info(`Blätter mit ≥ 3 Paketen: ${dreier}/${blaetter}`)
   // seit der Blatt-Kohärenz (jeder Teil teilt Ziel oder Thema mit dem Kern) fällt bei dünnen Daten der dritte, fremde Teil
   // öfter weg – lieber zwei passende Teile als drei gemischte (vorher ≥ 75 %)
-  soll(dreier / blaetter >= 0.6, `nur ${dreier}/${blaetter} Blätter mit ≥ 3 Paketen`)
+  soll(!blaetter || dreier / blaetter >= 0.6, `nur ${dreier}/${blaetter} Blätter mit ≥ 3 Paketen`)
 })
 
 await pruefung('Französisch (T-M4): FR-Kinder bekommen ≥ 5 Pakete, Banner „nur auf Deutsch“ stimmt', () => {
@@ -822,7 +826,8 @@ await pruefung('Beschriftung (4.6): Overlay-Prüfung, Sicherungen (Katharsis, ak
 
 await pruefung('Ids (T-M10): auflösen ok / umgezogen / überarbeitet / fehlt – nie ein falscher Baustein', () => {
   const sz = PLAENE.find((x) => x.kind === 'mia' && x.weg === 'gruendlich')!
-  for (const s of sz.plan.sitzungen) for (const x of [...s.schritte, ...(s.blatt?.bausteine ?? [])]) soll(aufloesen(k, x.ref, x.h).status === 'ok', `${x.ref} löst nicht auf`)
+  // feste Blatt-Teile (Blatt zur Übung, Stundenleiste, Hilfe-Zeile) sind keine Katalog-Einträge
+  for (const s of sz.plan.sitzungen) for (const x of [...s.schritte, ...(s.blatt?.bausteine ?? []).filter((b) => !b.ref.startsWith('pg:'))]) soll(aufloesen(k, x.ref, x.h).status === 'ok', `${x.ref} löst nicht auf`)
   const b = [...k.eintraege.values()].find((e) => e.typ === 'baustein')!
   soll(aufloesen(k, b.id, 'deadbeef').status === 'ueberarbeitet', 'neue Fassung nicht erkannt')
   soll(aufloesen(k, 'b:umgebaut:9', b.h).eintrag?.id === b.id, 'umgezogen nicht gefunden')

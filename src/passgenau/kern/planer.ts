@@ -448,51 +448,110 @@ function uebertragenArt(q: KatalogEintrag | undefined, vorige?: 'durchspielen' |
   // zwei Übertragen-Sitzungen hintereinander: die zweite anders
   return vorige === art ? (art === 'durchspielen' ? 'plan' : 'durchspielen') : art
 }
-function uebertragenSchritt(c: Kontext, min: number, ref: string, nr: number, vorige?: 'durchspielen' | 'plan'): PlanSchritt & { art: 'durchspielen' | 'plan' } {
+/** Kuratierte Einzelübung für dieses Alter: j: (12–18) oder ki: (3–11, Blind-Bewertung 8) */
+function kuratiert(c: Kontext, id: string): boolean {
+  return c.alter >= 12 ? id.startsWith('j:') : id.startsWith('ki:')
+}
+
+/** Folge mit rotem Faden, Übertragen und Rückblick: Jugendliche und Kinder ab 6 (Blind-Bewertung 8: bei Kindern „vier
+ *  unverbundene Themen“, „Übertragen bringt eine neue Technik“, „die letzte Sitzung bringt einen neuen Kern“) */
+function mitFaden(c: Kontext): boolean {
+  return c.alter >= 6
+}
+
+/** Das Werkzeug einer Übung („Stopp – atmen – sagen“) – sonst null (dann sagt der Text „so wie in der Übung“) */
+function werkzeugVon(e: KatalogEintrag | undefined, sp: Sprache): string | null {
+  return e && e.typ === 'schritt' && e.werkzeug?.[sp] ? e.werkzeug[sp] : null
+}
+
+function uebertragenSchritt(c: Kontext, min: number, quellen: { ref: string; nr: number }[], vorige?: 'durchspielen' | 'plan'): PlanSchritt & { art: 'durchspielen' | 'plan' } {
   const e = c.k.eintraege.get('pg:uebertragen')!
-  const q = c.k.eintraege.get(ref)
-  const de = q ? textVon(q, 'de').titel : ''
-  const fr = q && q.typ === 'schritt' && q.fr ? q.fr.titel : de
-  const art = uebertragenArt(q, vorige)
+  const qs = quellen.map((x) => ({ ...x, e: c.k.eintraege.get(x.ref) }))
+  const titelDe = qs.map((x) => (x.e ? textVon(x.e, 'de').titel : ''))
+  const titelFr = qs.map((x, i) => (x.e && x.e.typ === 'schritt' && x.e.fr ? x.e.fr.titel : titelDe[i]))
+  const wDe = qs.map((x) => werkzeugVon(x.e, 'de'))
+  const wFr = qs.map((x) => werkzeugVon(x.e, 'fr'))
+  const zwei = qs.length >= 2
+  const art = zwei ? 'plan' : uebertragenArt(qs[0]?.e, vorige)
   // offenes heikles Thema, Krise oder schwerer Tag: erfundene Situation zuerst, nichts steigern (Blind-Bewertung 7)
   const vorsichtig = (c.p.achtung ?? []).length > 0 || krisenlage(c) || c.heute.stimmung <= 2
+  const und = (l: string[], sp: 'de' | 'fr') => (l.length > 1 ? `${l.slice(0, -1).join(', ')} ${sp === 'fr' ? 'et' : 'und'} ${l[l.length - 1]}` : l[0] ?? '')
+  const zit = (t: string, sp: 'de' | 'fr') => (sp === 'fr' ? `« ${t} »` : `„${t}“`)
+  const herkunft = (sp: 'de' | 'fr') =>
+    und(qs.map((x, i) => `${zit((sp === 'fr' ? titelFr : titelDe)[i], sp)} (${sp === 'fr' ? 'séance' : 'Sitzung'} ${x.nr})`), sp)
+  // was genau getan wird: das Werkzeug der Übung (Blind-Bewertung 8: „was aus ‚Titel‘ hilft hier“ war zirkulär)
+  const tun = (sp: 'de' | 'fr') => {
+    const w = sp === 'fr' ? wFr : wDe
+    const t = sp === 'fr' ? titelFr : titelDe
+    return qs.map((_, i) => (w[i] ? zit(w[i]!, sp) : sp === 'fr' ? `ce qu’on a fait dans ${zit(t[i], sp)}` : `das, was in ${zit(t[i], sp)} geübt wurde`))
+  }
+  const titel = { de: `Übertragen: ${und(titelDe, 'de')}`, fr: `Transférer – ${und(titelFr, 'fr')}` }
+  const ueber: Record<string, string> = { titel: titel.de, 'fr.titel': titel.fr, quellen: quellen.map((x) => x.ref).join('|') }
+  if (c.alter < 12) {
+    // Kinder (6–11): kurz erinnern, eine Situation mit Bildern finden, einmal mit einer Figur durchspielen
+    ueber.text = `${zwei ? 'Die Übungen' : 'Die Übung'} ${herkunft('de')} ${zwei ? 'kommen' : 'kommt'} heute in den Alltag. Die Fachkraft erinnert kurz an ${und(tun('de'), 'de')} und macht es einmal gemeinsam mit dem Kind vor. Dann überlegen beide, wo das Kind es in den nächsten Tagen brauchen könnte – in der Pause, im Unterricht, beim Spielen: Die Fachkraft nennt zwei, drei Beispiele, das Kind wählt eins${vorsichtig ? ' (zuerst ein erfundenes)' : ' (echt oder erfunden)'}. Dann einmal durchspielen: Die Fachkraft spielt die Situation mit einer Figur an, das Kind zeigt, was es dann tut. Zum Schluss ein kleiner Versuch bis zum nächsten Mal – ohne Bewertung.`
+    ueber['fr.text'] = `${zwei ? 'Les activités' : 'L’activité'} ${herkunft('fr')} ${zwei ? 'passent' : 'passe'} aujourd’hui dans le quotidien. L’adulte rappelle brièvement ${und(tun('fr'), 'fr')} et le refait une fois avec l’enfant. Ensuite, on cherche ensemble où l’enfant pourrait en avoir besoin les prochains jours – à la récréation, en classe, en jouant : l’adulte donne deux ou trois exemples, l’enfant en choisit un${vorsichtig ? ' (d’abord un exemple inventé)' : ' (vrai ou inventé)'}. Puis on le joue une fois : l’adulte lance la situation avec une figurine, l’enfant montre ce qu’il fait. Pour finir, un petit essai d’ici la prochaine fois – sans évaluation.`
+    ueber.sagen = `Wo könntest du ${tun('de')[0]} in den nächsten Tagen gut brauchen?`
+    ueber['fr.sagen'] = `Où est-ce que ${tun('fr')[0]} pourrait t’aider les prochains jours ?`
+    ueber.wennEsKippt = 'Fällt dem Kind nichts ein, zeigt die Fachkraft zwei Bilder (Pause, Unterricht) und das Kind wählt eins. Mag es nicht spielen, spielt die Fachkraft mit der Figur vor und das Kind sagt nur „Stopp“, wenn es passt.'
+    ueber['fr.wennEsKippt'] = 'Si rien ne vient, l’adulte montre deux images (récréation, classe) et l’enfant en choisit une. S’il ne veut pas jouer, l’adulte joue avec la figurine et l’enfant dit seulement « stop » au bon moment.'
+    return { ref: e.id, h: e.h, rolle: 'kern', min, t: titel.de.slice(0, 60), art, ueber, warum: ['Übertragen: das Geübte in eine kommende Situation bringen'] }
+  }
   const situation = vorsichtig
-    ? { de: 'Zuerst eine erfundene Situation aus Schule, Freundeskreis oder Freizeit, in der die Übung passt; wer mag, nimmt danach eine eigene.', fr: 'D’abord une situation inventée, à l’école, entre amis ou pendant les loisirs, où l’activité convient ; ensuite, si la personne le souhaite, une situation à elle.' }
-    : { de: 'Der oder die Jugendliche wählt eine Situation der nächsten Tage aus Schule, Freundeskreis oder Freizeit, in der die Übung passt (echt oder erfunden).', fr: 'Le ou la jeune choisit une situation des prochains jours, à l’école, entre amis ou pendant les loisirs, où l’activité convient (vraie ou inventée).' }
+    ? { de: `Zuerst eine erfundene Situation aus Schule, Freundeskreis oder Freizeit, in der ${zwei ? 'die Übungen passen' : 'die Übung passt'}; wer mag, nimmt danach eine eigene.`, fr: `D’abord une situation inventée, à l’école, entre amis ou pendant les loisirs, où ${zwei ? 'les activités conviennent' : 'l’activité convient'} ; ensuite, si la personne le souhaite, une situation à elle.` }
+    : { de: `Der oder die Jugendliche wählt ${zwei ? 'für jede Übung eine Situation' : 'eine Situation'} der nächsten Tage aus Schule, Freundeskreis oder Freizeit (echt oder erfunden).`, fr: `Le ou la jeune choisit ${zwei ? 'pour chaque activité une situation' : 'une situation'} des prochains jours, à l’école, entre amis ou pendant les loisirs (vraie ou inventée).` }
   const mitte = art === 'durchspielen'
     ? {
-        de: `Die Situation kurz beschreiben (wo, wann, wer ist dabei). Vorher ein Stopp-Zeichen vereinbaren. Dann einmal durchspielen: Die Fachkraft übernimmt die Rolle, die in „${de}“ vorkam – geht es um zwei Seiten, nacheinander beide. ${vorsichtig ? 'Ohne Steigerung.' : 'Wer mag, spielt es ein zweites Mal etwas schwieriger.'}`,
-        fr: `Décrire brièvement la situation (où, quand, qui est là). Convenir d’abord d’un signe stop. Puis la jouer une fois : l’adulte prend le rôle qui apparaissait dans « ${fr} » – s’il y a deux parties, l’une après l’autre. ${vorsichtig ? 'Sans faire monter la difficulté.' : 'Si la personne le souhaite, on la rejoue une deuxième fois, un peu plus difficile.'}`,
+        de: `Die Situation kurz beschreiben (wo, wann, wer ist dabei). Vorher ein Stopp-Zeichen vereinbaren. Dann einmal durchspielen: Die Fachkraft spielt das Gegenüber, der oder die Jugendliche nutzt ${tun('de')[0]}. ${vorsichtig ? 'Ohne Steigerung.' : 'Wer mag, spielt es ein zweites Mal etwas schwieriger.'}`,
+        fr: `Décrire brièvement la situation (où, quand, qui est là). Convenir d’abord d’un signe stop. Puis la jouer une fois : l’adulte joue l’autre personne, le ou la jeune utilise ${tun('fr')[0]}. ${vorsichtig ? 'Sans faire monter la difficulté.' : 'Si la personne le souhaite, on la rejoue une deuxième fois, un peu plus difficile.'}`,
       }
     : {
-        de: `Gemeinsam einen Plan in drei Schritten festhalten: Woran merke ich, dass der Moment da ist? Was genau mache oder sage ich – was aus „${de}“ hilft hier, in einem Satz? Woran merke ich danach, ob es etwas gebracht hat? Die Fachkraft fragt nach und gibt Beispiele, spielt aber nichts vor.`,
-        fr: `Noter ensemble un plan en trois étapes : à quoi je remarque que le moment est là ? Qu’est-ce que je fais ou dis exactement – qu’est-ce qui, dans « ${fr} », aide ici, en une phrase ? À quoi je remarque ensuite si ça a servi ? L’adulte pose des questions et donne des exemples, sans jouer la scène.`,
+        de: `Gemeinsam ${zwei ? 'je' : 'einen'} Plan in drei Schritten festhalten: Woran merke ich, dass der Moment da ist? Was genau mache oder sage ich dann – mit ${und(tun('de'), 'de')}? Woran merke ich danach, ob es etwas gebracht hat? Die Fachkraft fragt nach und gibt Beispiele, spielt aber nichts vor.`,
+        fr: `Noter ensemble ${zwei ? 'pour chacune un' : 'un'} plan en trois étapes : à quoi je remarque que le moment est là ? Qu’est-ce que je fais ou dis exactement – avec ${und(tun('fr'), 'fr')} ? À quoi je remarque ensuite si ça a servi ? L’adulte pose des questions et donne des exemples, sans jouer la scène.`,
       }
-  return {
-    ref: e.id, h: e.h, rolle: 'kern', min, t: `Übertragen: ${de}`.slice(0, 60), art,
-    ueber: {
-      titel: `Übertragen: ${de}`,
-      'fr.titel': `Transférer – ${fr}`,
-      text: `Die Übung „${de}“ aus Sitzung ${nr} kommt heute in den Alltag. ${situation.de} ${mitte.de} Zum Schluss wird ein kleiner Versuch vereinbart – ohne Bewertung, auch „hat nicht geklappt“ ist eine Information.`,
-      'fr.text': `L’activité « ${fr} » de la séance ${nr} passe aujourd’hui dans le quotidien. ${situation.fr} ${mitte.fr} Pour finir, on convient d’un petit essai – sans évaluation, « ça n’a pas marché » est aussi une information.`,
-    },
-    warum: ['Übertragen: die geübte Übung in eine kommende Situation bringen'],
-  }
+  ueber.text = `${zwei ? 'Die Übungen' : 'Die Übung'} ${herkunft('de')} ${zwei ? 'kommen' : 'kommt'} heute in den Alltag. ${situation.de} ${mitte.de} Zum Schluss wird ein kleiner Versuch vereinbart – ohne Bewertung, auch „hat nicht geklappt“ ist eine Information.`
+  ueber['fr.text'] = `${zwei ? 'Les activités' : 'L’activité'} ${herkunft('fr')} ${zwei ? 'passent' : 'passe'} aujourd’hui dans le quotidien. ${situation.fr} ${mitte.fr} Pour finir, on convient d’un petit essai – sans évaluation, « ça n’a pas marché » est aussi une information.`
+  return { ref: e.id, h: e.h, rolle: 'kern', min, t: titel.de.slice(0, 60), art, ueber, warum: ['Übertragen: die geübte Übung in eine kommende Situation bringen'] }
 }
 
 /** Letzte Sitzung einer Jugend-Folge: die Übungen der Folge mit den Blättern durchgehen, die hilfreichste wählen und
  *  festhalten, was davon bleibt (Blind-Bewertung 7: kein drittes Rollenspiel nach demselben Schema, Rückblick über die
  *  Blätter als Erinnerungsstütze, keine doppelte Rückmeldung – die steht im Abschluss). */
-function folgeTransferSchritt(c: Kontext, min: number, kerne: string[]): PlanSchritt {
+function folgeTransferSchritt(c: Kontext, min: number, kerne: string[], uebertragen: string[] = []): PlanSchritt {
   const e = c.k.eintraege.get('pg:folge-transfer')!
   const eintraege = [...new Set(kerne)].filter((r) => !r.startsWith('pg:')).map((r) => c.k.eintraege.get(r)).filter((x): x is KatalogEintrag => !!x)
-  const de = eintraege.map((x) => `„${textVon(x, 'de').titel}“`).join(', ')
-  const fr = eintraege.map((x) => `« ${x.typ === 'schritt' && x.fr ? x.fr.titel : textVon(x, 'de').titel} »`).join(', ')
+  // mit Werkzeug, damit der Rückblick sagt, was mitgenommen wird (Blind-Bewertung 8: „die Übertragen-Sitzung fehlt in der
+  // Rückschau“ – sie wird mitgenannt)
+  const nenne = (x: KatalogEintrag, sp: 'de' | 'fr') => {
+    const t = sp === 'fr' && x.typ === 'schritt' && x.fr ? x.fr.titel : textVon(x, 'de').titel
+    const w = werkzeugVon(x, sp)
+    const q = sp === 'fr' ? `« ${t} »` : `„${t}“`
+    return w ? `${q} (${w})` : q
+  }
+  const de = eintraege.map((x) => nenne(x, 'de')).join(', ') + (uebertragen.length ? ', dazu der Plan für den Alltag' : '')
+  const fr = eintraege.map((x) => nenne(x, 'fr')).join(', ') + (uebertragen.length ? ', et le plan pour le quotidien' : '')
+  // das Blatt der Sitzung hält fest, was bleibt – hier nur reden (Blind-Bewertung 8: „Kern und Blatt fragen dasselbe doppelt“)
+  const mitBlatt = c.weg !== 'leicht' && blattModus(c) !== 'ohne'
+  if (c.alter < 12)
+    return {
+      ref: e.id, h: e.h, rolle: 'kern', min, t: 'Was ich mitnehme',
+      ueber: {
+        titel: 'Was ich mitnehme',
+        'fr.titel': 'Ce que j’emporte',
+        text: `Gemeinsam auf die Übungen der letzten Male schauen: ${de}. Die Fachkraft macht jede kurz vor oder zeigt die Blätter, falls sie aufgehoben wurden. Das Kind zeigt, was ihm am meisten geholfen oder am meisten Spaß gemacht hat, und macht es noch einmal. Dann sagt die Fachkraft eine Sache, die das Kind dazugelernt hat.${mitBlatt ? ' Was das Kind mitnimmt, kommt nachher aufs Blatt – hier wird nur gezeigt und erzählt.' : ''}`,
+        'fr.text': `Regarder ensemble les activités des dernières fois : ${fr}. L’adulte refait brièvement chacune ou montre les fiches si elles ont été gardées. L’enfant montre ce qui l’a le plus aidé ou ce qu’il a le plus aimé, et le refait une fois. Puis l’adulte nomme une chose que l’enfant a apprise.${mitBlatt ? ' Ce que l’enfant emporte sera noté ensuite sur la fiche – ici, on montre et on raconte seulement.' : ''}`,
+        sagen: 'Was davon möchtest du behalten? Zeig es mir noch einmal.',
+        'fr.sagen': 'Qu’est-ce que tu veux garder ? Montre-le-moi encore une fois.',
+        wennEsKippt: 'Fällt dem Kind nichts ein, macht die Fachkraft zwei Übungen kurz vor und das Kind zeigt nur auf eine. Ein Zeigen genügt.',
+        'fr.wennEsKippt': 'Si rien ne vient, l’adulte refait brièvement deux activités et l’enfant en montre une. Montrer suffit.',
+      },
+      warum: ['Letzte Sitzung: das Wichtigste der Folge festhalten'],
+    }
   return {
     ref: e.id, h: e.h, rolle: 'kern', min, t: 'Das Wichtigste mitnehmen',
     ueber: {
-      text: `Die Blätter der Folge liegen auf dem Tisch (wer sie nicht mehr hat: die Titel genügen). Gemeinsam die Übungen durchgehen: ${de}. Der oder die Jugendliche wählt die, die am meisten gebracht hat, und hält fest: was genau daran geholfen hat, wo es schon einmal gepasst hat oder passen könnte, und einen kleinen nächsten Schritt für die kommenden Wochen (Schule, Freundeskreis oder Freizeit). Die Fachkraft fragt nach, bewertet nicht und spielt nichts vor.`,
-      'fr.text': `Les fiches de la série sont sur la table (si elles manquent, les titres suffisent). Passer ensemble les activités en revue : ${fr}. Le ou la jeune choisit celle qui lui a le plus apporté et note : ce qui a aidé exactement, où cela a déjà servi ou pourrait servir, et un petit prochain pas pour les semaines à venir (école, amis ou loisirs). L’adulte pose des questions, sans évaluer et sans jouer de scène.`,
+      text: `Die Blätter der Folge liegen auf dem Tisch (wer sie nicht mehr hat: die Titel genügen). Gemeinsam die Übungen durchgehen: ${de}. Der oder die Jugendliche wählt die, die am meisten gebracht hat, und erzählt, was genau daran geholfen hat, wo es schon gepasst hat oder passen könnte und was ein kleiner nächster Schritt für die kommenden Wochen wäre. ${mitBlatt ? 'Hier wird nur geredet – festgehalten wird nachher auf dem Blatt.' : 'Zum Schluss einen Satz auf eine Karte schreiben.'} Die Fachkraft fragt nach, bewertet nicht und spielt nichts vor.`,
+      'fr.text': `Les fiches de la série sont sur la table (si elles manquent, les titres suffisent). Passer ensemble les activités en revue : ${fr}. Le ou la jeune choisit celle qui lui a le plus apporté et raconte ce qui a aidé exactement, où cela a déjà servi ou pourrait servir et quel serait un petit prochain pas pour les semaines à venir. ${mitBlatt ? 'Ici, on parle seulement – on note ensuite sur la fiche.' : 'Pour finir, écrire une phrase sur une carte.'} L’adulte pose des questions, sans évaluer et sans jouer de scène.`,
       sagen: 'Welche Übung aus unseren Treffen hat dir am meisten gebracht – und wofür?',
       'fr.sagen': 'Quelle activité de nos séances t’a le plus apporté – et pour quoi ?',
       wennEsKippt: 'Fällt nichts ein, liest die Fachkraft die Titel langsam vor und lässt nur zeigen. Ein Satz genügt.',
@@ -588,13 +647,13 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       }
       continue
     }
-    // Jugendliche, Phase „Übertragen“: kein neues Thema, sondern die zuletzt geübte Übung in eine kommende Situation
-    // übertragen (Blind-Bewertungen 5 und 6: „die Übertragen-Sitzungen bringen neue Themen statt Übertragung“)
-    if (slot.rolle === 'kern' && c.alter >= 12 && c.weg !== 'leicht' && o.phase === 'uebertragen') {
-      // zuerst Übungen mit einem Ziel des Kindes, die jüngste zuerst (Blind-Bewertung 6: „Gesprächseinstieg liegt außerhalb
-      // der Ziele“)
+    // Phase „Übertragen“ (Jugendliche, seit Blind-Bewertung 8 auch Kinder ab 6): kein neues Thema, sondern geübte Übungen in
+    // eine kommende Situation übertragen (Blind-Bewertungen 5 und 6: „die Übertragen-Sitzungen bringen neue Themen statt
+    // Übertragung“)
+    if (slot.rolle === 'kern' && mitFaden(c) && c.weg !== 'leicht' && o.phase === 'uebertragen') {
       // Blind-Bewertung 7: „übertragen wird die zielfernste Übung der Folge (Würfelspiel, Kartentrick) statt des Meldens“ –
-      // zuerst die Übung, die das Ziel dieser Sitzung direkt übt (Hauptcode vor Nebencode), dann die jüngere
+      // zuerst die Übung, die das Ziel dieser Sitzung direkt übt (Hauptcode vor Nebencode), dann die jüngere; Blind-Bewertung
+      // 8: nie ein Rückblick- oder Einschätzwerkzeug („Vor einem Jahr und heute“, Werte-Jetons) und bei zwei Zielen beide
       const ziel = new Set(c.ziele.map((z) => z.code))
       const fokusZiel = o.kernZiel ?? c.ziele[0]?.code
       const punkte = (r: string): number => {
@@ -603,13 +662,26 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         const g = e.eldib.find((x) => x.code === fokusZiel)
         return g ? (g.gewicht === 1 ? 3 : 2) : e.eldib.some((x) => x.gewicht === 1 && ziel.has(x.code)) ? 1 : 0
       }
-      const frueher = [...new Set((o.fruehereKerne ?? []).filter((r) => !r.startsWith('pg:')))].reverse()
+      const uebertragbar = (r: string) => {
+        const e = c.k.eintraege.get(r)
+        return !(e?.typ === 'schritt' && e.uebertragbar === false)
+      }
+      const alle = [...new Set((o.fruehereKerne ?? []).filter((r) => !r.startsWith('pg:')))].reverse()
+      const frueher = alle.filter(uebertragbar).length ? alle.filter(uebertragbar) : alle
       const offen = frueher.filter((r) => !(o.uebertragen ?? []).includes(r))
       const reihe = (offen.length ? offen : frueher).map((r, j) => ({ r, p: punkte(r), j })).sort((x, y) => y.p - x.p || x.j - y.j).map((x) => x.r)
       const quelle = reihe[0]
       if (quelle) {
-        const sch = uebertragenSchritt(c, slot.min, quelle, (o.fruehereKerne ?? []).indexOf(quelle) + 1, o.vorigeUebertragung)
-        o.uebertragen?.push(quelle)
+        const quellen = [quelle]
+        // ein zweites Ziel der Folge, dessen Übung noch nicht übertragen ist, kommt dazu (Blind-Bewertung 8: „Sitzung 1 wird
+        // nie übertragen“, „V-13 bleibt ohne Transfer“) – nur mit genug Zeit und wenn es nicht die einzige Übertragung ist
+        const hauptVon = (r: string) => new Set(c.k.eintraege.get(r)?.eldib.filter((x) => x.gewicht === 1).map((x) => x.code) ?? [])
+        const h1 = hauptVon(quelle)
+        const zweite = slot.min >= 10 && ziel.size >= 2 ? reihe.slice(1).find((r) => [...hauptVon(r)].some((x) => ziel.has(x) && !h1.has(x))) : undefined
+        if (zweite) quellen.push(zweite)
+        const nr = (r: string) => (o.fruehereKerne ?? []).indexOf(r) + 1
+        const sch = uebertragenSchritt(c, slot.min, quellen.map((r) => ({ ref: r, nr: nr(r) })), o.vorigeUebertragung)
+        o.uebertragen?.push(...quellen)
         const { art: _art, ...ohneArt } = sch
         ergebnis[i] = ohneArt
         kern = c.k.eintraege.get(sch.ref)
@@ -617,10 +689,11 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         continue
       }
     }
-    // Jugendliche, letzte Sitzung einer Folge: kein neues Werkzeug und keine wortgleiche Wiederholung, sondern die Übungen
-    // der Folge durchgehen, die hilfreichste wählen und in eine kommende Situation übertragen (Blind-Bewertungen 5 und 6)
-    if (slot.rolle === 'kern' && c.alter >= 12 && c.weg !== 'leicht' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2) {
-      const sch = folgeTransferSchritt(c, slot.min, o.fruehereKerne!)
+    // letzte Sitzung einer Folge (Jugendliche und Kinder ab 6): kein neues Werkzeug und keine wortgleiche Wiederholung,
+    // sondern die Übungen der Folge durchgehen und festhalten, was bleibt (Blind-Bewertungen 5, 6 und 8: „die Rückblick-
+    // Sitzung bringt einen neuen Kern“)
+    if (slot.rolle === 'kern' && mitFaden(c) && c.weg !== 'leicht' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2) {
+      const sch = folgeTransferSchritt(c, slot.min, o.fruehereKerne!, o.uebertragen ?? [])
       ergebnis[i] = sch
       kern = c.k.eintraege.get(sch.ref)
       continue
@@ -631,7 +704,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     const auftragK: SlotAuftrag = { rolle: slot.rolle, min: slot.min, phase: o.phase, nr: o.nr, salz: `${salz}|${i}`, gesperrt: benutzt, vorher: o.vorher, formate, vorigerKern: o.kernFormate[o.kernFormate.length - 1], kernFormate: o.kernFormate.slice(-2), fokus: slot.rolle === 'kern' ? undefined : o.fokus, bevorzugt }
     // Jugend-Folge: zuerst nur Übungen mit dem Ziel der Sitzung (Blind-Bewertung 7: das erste Ziel kam in einer Folge nie vor,
     // weil andere Übungen in der Phase besser passten); gibt es keine, wie bisher
-    const mitZielCode = slot.rolle === 'kern' && o.kernZiel && c.alter >= 12 ? kandidaten(c, { ...auftragK, zielCode: o.kernZiel }).filter((w) => w.b.e.id.startsWith('j:') || w.locker < 3) : []
+    const mitZielCode = slot.rolle === 'kern' && o.kernZiel ? kandidaten(c, { ...auftragK, zielCode: o.kernZiel }).filter((w) => kuratiert(c, w.b.e.id) || w.locker < 3) : []
     const liste = mitZielCode.length ? mitZielCode : kandidaten(c, auftragK)
     let auswahl = liste
     // roter Faden der Folge: ein Kern, der Ziel-Code oder Thema mit den Kernen davor teilt, zählt mehr
@@ -647,14 +720,15 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     }
     // Jugendliche: eine Einzelübung für Jugendliche mit Bezug zum Ziel geht immer vor Bruchstücken aus Kurs, Förderfach und
     // Material (Blind-Bewertung 5: „Kärtchen gestalten und laminieren“, „Erst das Selbstbild, dann die Regeln“)
-    if (slot.rolle === 'kern' && c.alter >= 12 && c.weg !== 'leicht') {
-      const jugend = auswahl.filter((w) => w.b.e.id.startsWith('j:') && w.b.f.ziel >= 0.25)
-      if (jugend.length) auswahl = jugend
+    // … und seit Blind-Bewertung 8 ebenso für Kinder (ki:, mit eigenem Blatt)
+    if (slot.rolle === 'kern' && c.weg !== 'leicht') {
+      const eigene = auswahl.filter((w) => kuratiert(c, w.b.e.id) && w.b.f.ziel >= 0.25)
+      if (eigene.length) auswahl = eigene
       // Jugend-Folge (Blind-Bewertung 7: „das zweite Ziel kommt nur in einer Sitzung vor oder wechselt mitten in der Folge“,
       // „Sitzung 2 übt, was Sitzung 1 nicht angebahnt hat“): der Kern übt das Ziel dieser Sitzung direkt
       // Zukunftsbild und Lebensbilanz nicht in Krisenlage oder bei Stimmung ≤ 2 (Blind-Bewertung 7: „Zukunftsprojektion bei
       // offener Krise und Stimmung 2“)
-      if (krisenlage(c) || c.heute.stimmung <= 2 || (c.p.achtung ?? []).includes('krise')) {
+      if (c.alter >= 12 && (krisenlage(c) || c.heute.stimmung <= 2 || (c.p.achtung ?? []).includes('krise'))) {
         const ohne = auswahl.filter((w) => !(w.b.e.typ === 'schritt' && ZUKUNFT_RE.test(`${w.b.e.titel} ${w.b.e.text}`)))
         if (ohne.length) auswahl = ohne
       }
@@ -676,11 +750,11 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       if (kern) auswahl = auswahl.filter((w) => kernQuelle === quelleEinheit(w.b.e.id) || gleichesThema(w.b.e, kern!))
       // Jugendliche: Einstiege aus Kurs und Förderfach setzen Vorwissen voraus („Neues Thema: …“, „Notbremse und Lenkung“ mit
       // Skills und Thermometer-Blatt in Sitzung 1) – nur Einzelübungen für Jugendliche oder der eigene Einstieg
-      if (c.alter >= 12) auswahl = auswahl.filter((w) => w.b.e.id.startsWith('j:') || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
+      if (c.alter >= 12 || (kern && kuratiert(c, kern.id))) auswahl = auswahl.filter((w) => kuratiert(c, w.b.e.id) || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
       for (const w of auswahl) if (kernQuelle && quelleEinheit(w.b.e.id) === kernQuelle) w.b = { ...w.b, s: w.b.s + 0.25 }
       auswahl.sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
       // letzte Sitzung einer Folge: ein echter Rückblick auf die Kerne der Folge
-      if (slot.rolle === 'reflexion' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2 && c.alter < 12) {
+      if (slot.rolle === 'reflexion' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2 && !mitFaden(c)) {
         ergebnis[i] = rueckblickSchritt(c, slot.min, o.fruehereKerne!)
         continue
       }
@@ -736,7 +810,10 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     const min = ergebnis[blattIndex]!.min
     const auftrag = { phase: o.phase, min, nr: o.nr, salz, gesperrt: benutzt, fokus: o.fokus, kern, optional: c.weg === 'leicht' || min < 6 }
     // Jugendliche: das Blatt zur Übung der Stunde statt Teilen aus Kurs- und Kinderblättern (Blind-Bewertung 5)
-    const erg = c.alter >= 12 && c.weg !== 'leicht' && kern ? kernBlatt(c, auftrag) : baueBlatt(c, auftrag)
+    // … und für Kinder, wenn der Kern ein eigenes Blatt hat oder die Sitzung überträgt bzw. zurückschaut (Blind-Bewertung 8:
+    // „Blatt und Kern brechen auseinander“)
+    const eigenesBlatt = !!kern && (c.alter >= 12 || (kern.typ === 'schritt' && !!kern.uebungsblatt) || ((kern.id === 'pg:uebertragen' || kern.id === 'pg:folge-transfer') && mitFaden(c)))
+    const erg = c.weg !== 'leicht' && kern && eigenesBlatt ? kernBlatt(c, auftrag) : baueBlatt(c, auftrag)
     if (erg) {
       blatt = { titel: erg.titel, bausteine: erg.teile, ziel: false }
       for (const t of erg.teile) benutzt.add(t.ref)
@@ -749,7 +826,12 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         // Ankreuzen“): schreibt man oder kreuzt man an?
         const teile = kern?.typ === 'schritt' && kern.uebungsblatt ? (c.sprache === 'fr' ? kern.uebungsblatt.fr : kern.uebungsblatt.de) ?? [] : []
         const schreiben = !teile.length || teile.some((b) => ['frage', 'satzanfaenge', 'tabelle', 'wennDann', 'dialog', 'feld'].includes(b.art))
-        ergebnis[blattIndex]!.ueber = schreiben
+        ergebnis[blattIndex]!.ueber = c.alter < 12
+          ? {
+              text: 'Das Blatt zur Übung hinlegen und die Aufgaben vorlesen. Das Kind arbeitet, die Fachkraft bleibt daneben und hilft, wenn es fragt. Was nicht passt, darf leer bleiben; wo es um Eigenes geht, geht auch etwas Erfundenes.',
+              'fr.text': 'Poser la fiche de l’activité et lire les consignes à voix haute. L’enfant travaille, l’adulte reste à côté et aide s’il le demande. Ce qui ne convient pas peut rester vide ; là où il s’agit de soi, quelque chose d’inventé, ça marche aussi.',
+            }
+          : schreiben
           ? {
               text: 'Das Blatt zur Übung hinlegen. Der oder die Jugendliche arbeitet allein, die Fachkraft bleibt in der Nähe und hilft, wenn gefragt. Was nicht passt, darf leer bleiben; wo es um Eigenes geht, geht auch ein erfundenes Beispiel.',
               'fr.text': 'Poser la fiche de l’exercice. Le ou la jeune travaille seul, l’adulte reste à proximité et aide si on le lui demande. Ce qui ne convient pas peut rester vide ; là où il s’agit de soi, un exemple inventé, ça marche aussi.',
@@ -978,7 +1060,7 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
   // (das zweite nur, wo eine Übung beide übt – und ein Hinweis sagt das); ab 6 Sitzungen ein zweiter, kürzerer Bogen für das
   // zweite Ziel, mit eigener Übertragung.
   const zieleE = c.ziele.filter((z) => istEldib(z.code)).map((z) => z.code)
-  const faden = c.alter >= 12 && c.weg === 'gruendlich' && bogen.length >= 2 && zieleE.length > 0
+  const faden = mitFaden(c) && c.weg === 'gruendlich' && bogen.length >= 2 && zieleE.length > 0
   const uebIdx = bogen.map((p, j) => ({ p, j })).filter((x) => x.p === 'wahrnehmen' || x.p === 'verstehen' || x.p === 'ueben').map((x) => x.j)
   const zweiBoegen = faden && zieleE.length >= 2 && bogen.length >= 6 && uebIdx.length >= 3
   const g2Ab = zweiBoegen ? uebIdx.length - Math.max(1, Math.floor(uebIdx.length / 3)) : Infinity
