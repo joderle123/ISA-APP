@@ -3,7 +3,7 @@
 // Seiten- und Zeitbudget, Hilfe-Zeile bleibt, kein Etikett („Passgenau“ statt Bereich, „Mein Ziel“ nur auf Wunsch).
 import type { Baustein, Blatt, BlattInhalt, Bereich, Sprache as BlattSprache } from '../../blatt/typen'
 import type { BlattTeil, Bogen, KatalogEintrag, Layout, MikroBaustein, Plan, Profil, Rolle, Sprache } from '../typen'
-import { hash8, hash01, stufeAusAlter, stufenAbstand, istEldib } from './hilfen'
+import { hash8, hash01, stufeAusAlter, stufenAbstand, istEldib, ohneEigenenNamen } from './hilfen'
 import { bausteinInhalt, intern, merkmaleVon, textVon, zielSatz as zielSatzVon, type Katalog } from './katalog'
 import { setzeText, texte } from './inhalt'
 import { bewerte, NACHBAR, pruefe, rang, type Bewertet, type Kontext } from './regeln'
@@ -405,12 +405,11 @@ function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlatt
     liste.push({ art: 'aufgabe', text: fr ? 'Dessine ce que tu emportes.' : 'Mal, was du mitnimmst.' }, { art: 'feld', hoehe: 7, zeichnen: true })
     return liste
   }
-  const liste: Baustein[] = [
-    { art: 'text', klein: true, text: fr ? 'Retour sur la série. Rien n’est obligatoire.' : 'Rückblick auf die Folge. Nichts davon ist Pflicht.' },
-    { art: 'ankreuzen', titel: fr ? 'Ce qui m’a le plus apporté – plusieurs réponses possibles :' : 'Das hat mir am meisten gebracht – mehrere gehen:', items: [...titel, fr ? 'autre chose : …' : 'etwas anderes: …'], spalten: 1 },
-  ]
+  // Blind-Bewertung 9: das Blatt fragte, was der Kern schon gefragt hatte – der Kern ordnet und wiederholt, das Blatt hält
+  // nur fest, was mitkommt und was als Nächstes kommt
+  const liste: Baustein[] = [{ art: 'text', klein: true, text: fr ? 'Retour sur la série. Rien n’est obligatoire.' : 'Rückblick auf die Folge. Nichts davon ist Pflicht.' }]
+  liste.push({ art: 'satzanfaenge', items: [fr ? 'Ce que j’emporte :' : 'Das nehme ich mit:', fr ? 'Mon prochain petit pas, et où :' : 'Mein nächster kleiner Schritt, und wo:'], linien: 1 })
   if (!o.wenigSchreiben) liste.push({ art: 'frage', text: fr ? 'Ce qui a changé depuis la première séance :' : 'Das hat sich seit der ersten Sitzung verändert:', linien: 2 })
-  liste.push({ art: 'satzanfaenge', items: [fr ? 'Mon prochain petit pas :' : 'Mein nächster kleiner Schritt:'], linien: 1 })
   return liste
 }
 
@@ -628,7 +627,8 @@ function ersetzePlatzhalter(liste: Baustein[], p: Profil, sprache: Sprache): Bau
     if (x && typeof x === 'object') return Object.fromEntries(Object.entries(x).map(([k, v]) => [k, tausche(v)]))
     return x
   }
-  return tausche(liste) as Baustein[]
+  // eine Figur mit dem Namen des Kindes bekommt einen anderen Namen (Blind-Bewertung 9) – vor dem Einsetzen von {NAME}
+  return tausche(ohneEigenenNamen(liste, p.vorname)) as Baustein[]
 }
 
 function ausblenden(liste: Baustein[], pfade: string[]): Baustein[] {

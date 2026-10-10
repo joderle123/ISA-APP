@@ -562,8 +562,11 @@ export function bausteinInhalt(k: Katalog, b: MikroBaustein, sprache: Sprache): 
 /** Textmerkmale (einzel.ts) des gedruckten Texts eines Eintrags, DE und FR zusammen; Schritte: Titel, Text (bei Einzelvariante
  *  deren Text), Sagen; Bausteine: aller Text des Pakets. */
 export function merkmaleVon(k: Katalog, e: KatalogEintrag): Set<string> {
+  // je Textmodus getrennt: in der Gruppe gilt der Text der Quelle, einzeln die Einzelvariante (Testlauf 11: nach einer
+  // Gruppenfolge galten in derselben Sitzung alle Einzelstunden-Texte als Gruppentexte – andere Kerne für spätere Kinder)
   const cache = intern(k).merkmale
-  let m = cache.get(e.id)
+  const schluessel = `${gruppenText ? 'g' : 'e'}|${e.id}`
+  let m = cache.get(schluessel)
   if (m) return m
   const teile: string[] = []
   for (const sp of ['de', 'fr'] as const) {
@@ -577,7 +580,7 @@ export function merkmaleVon(k: Katalog, e: KatalogEintrag): Set<string> {
     }
   }
   m = textMerkmale(teile.join('\n'))
-  cache.set(e.id, m)
+  cache.set(schluessel, m)
   return m
 }
 

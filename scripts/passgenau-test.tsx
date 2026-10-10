@@ -256,7 +256,8 @@ await pruefung('Weg 1/2/3 für 5, 9 und 14 Jahre: Minuten, Bogen, Kern, Blatt, R
       const teile = plan.sitzungen.flatMap((s) => [...s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss' && !x.ref.startsWith('pg:')).map((x) => x.ref), ...(s.blatt?.bausteine ?? []).filter((b) => !b.ref.startsWith('pg:')).map((b) => b.ref)])
       soll(new Set(teile).size === teile.length, `${name}: Teil doppelt in der Folge`)
       // gleich in allen Sitzungen; die letzte darf ein Ritual, das auf die nächste Sitzung zählt, durch das eigene ersetzen
-      const abschluss = new Set(plan.sitzungen.map((s, i) => s.schritte[s.schritte.length - 1].ref).filter((r, i, l) => !(i === l.length - 1 && r === 'pg:abschluss' && l.length > 1)))
+      // … und seit Blind-Bewertung 9 ein auswertendes Ritual („Plus und Minus“) nach dem Rückblick durch ein ruhiges
+      const abschluss = new Set(plan.sitzungen.map((s, i) => s.schritte[s.schritte.length - 1].ref).filter((r, i, l) => !(i === l.length - 1 && l.length > 1 && (r === 'pg:abschluss' || plan.sitzungen[i].phase === 'reflektieren'))))
       soll(abschluss.size === 1, `${name}: Abschluss-Ritual wechselt`)
       soll(new Set(plan.sitzungen.map((s) => s.schritte[0].ref)).size === 1, `${name}: Ankommens-Ritual wechselt`)
     }
@@ -847,6 +848,18 @@ await pruefung('Druckmaterial (T-M12): Schritt mit Bildkarten bringt sein Paket 
   const d = druckSitzung(k, p, plan, 1, { sprache: 'de', warum: false })
   soll(!!d.materialSeite && d.material.some((m) => m.includes('Materialseite')), 'Materialseite fehlt')
   info(`${s.id} → ${pakete.map((b) => b.id).join(', ')}`)
+})
+
+await pruefung('Textmodus: eine Gruppenstunde davor ändert keine spätere Einzelstunde (Merkmal-Cache je Modus)', async () => {
+  // Testlauf 11: nach einer Kleingruppen-Folge galten in derselben Sitzung alle Einzelvarianten als Gruppentexte
+  const kerne = (pl: Plan) => pl.sitzungen.map((s) => s.schritte.map((x) => x.ref).join(',')).join(' | ')
+  const k2 = await ladeKatalogNode()
+  const vorher = kerne(planen(k2, KINDER.mia, auftrag(KINDER.mia, 'gruendlich'), leer(), VERLAUF))
+  const g = gruppenProfil([KINDER.mia, KINDER.noe])
+  const gp = planen(k2, g, auftrag(g, 'gruendlich', { sozialform: 'kleingruppe' }), leer(), VERLAUF)
+  druckSitzung(k2, g, gp, 1, { sprache: 'de', warum: false })
+  const nachher = kerne(planen(k2, KINDER.mia, auftrag(KINDER.mia, 'gruendlich'), leer(), VERLAUF))
+  soll(vorher === nachher, `Einzelplan nach Gruppenplan anders:\n  ${vorher}\n  ${nachher}`)
 })
 
 await pruefung('Gruppe (151): Profile übereinander, gemeinsamer Kern, Blatt je Kind in seiner Sprache, Rollen', () => {

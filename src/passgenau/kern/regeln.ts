@@ -549,8 +549,13 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   // Material und CREW nur, wenn nichts anderes passt (Spielschule für die Kleinsten etwas weniger stark)
   if (c.alter < 12 && e.typ === 'schritt') {
     if (e.id.startsWith('ki:')) {
-      g *= 2.2
+      // Blind-Bewertung 9: „Wut-Thermometer in einer Angst-Folge“, „Drei Mini-Aufgaben üben V-24 nicht“ – der Vorrang gilt
+      // nur, wenn die Übung ein Ziel oder ein Thema des Kindes trifft; sonst ist sie eine Übung unter vielen
+      const trifft = e.eldib.some((x) => c.ziele.some((z) => z.code === x.code)) || e.thema.some((t) => c.themen.has(t))
+      g *= trifft || !c.ziele.length ? 2.2 : 0.9
       if (e.thema[0] && BESONDERE_THEMEN.has(e.thema[0]) && !c.themen.has(e.thema[0])) g *= 0.25
+      // am oberen Altersrand zu kindlich (Blind-Bewertung 9: „Turm aus vier Bausteinen für eine Elfjährige“)
+      if (c.alter > e.alter.bis) g *= 0.4
     } else if (/^(k|f|m|c):/.test(e.id) && e.rolle.includes('kern')) g *= e.einzelvariante ? 0.6 : 0.45
     else if (e.id.startsWith('s:') && e.rolle.includes('kern')) g *= 0.8
   }

@@ -3,7 +3,7 @@
 // Wahl, Erkundung ≈ 20 % reproduzierbar, Lockerungsleiter mit sichtbarem Grund. Deterministisch: gleicher Auftrag,
 // gleiches Kind, gleiche Vorlieben → gleicher Plan (Seed aus Kind, Plan-Id, Sitzung, Variante – kein Datum, kein ref).
 import type { Auftrag, Bogen, Ereignis, KatalogEintrag, Plan, PlanSchritt, Profil, Rolle, Sitzung, Sprache } from '../typen'
-import { hash01, hash8, stufeAusAlter, layoutAusStufe, istEldib } from './hilfen'
+import { hash01, hash8, stufeAusAlter, layoutAusStufe, istEldib, ohneEigenenNamen } from './hilfen'
 import { aktuellerKatalog, eldibKurz, ichSatz, intern, kurz, merkmaleVon, setzeTextModus, textVon, zielSatz, type Katalog } from './katalog'
 import { bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
 import { baueBlatt, kernBlatt } from './blatt'
@@ -553,12 +553,14 @@ function folgeTransferSchritt(c: Kontext, min: number, kerne: string[], uebertra
   return {
     ref: e.id, h: e.h, rolle: 'kern', min, t: 'Das Wichtigste mitnehmen',
     ueber: {
-      text: `Die Blätter der Folge liegen auf dem Tisch (wer sie nicht mehr hat: die Titel genügen). Gemeinsam die Übungen durchgehen: ${de}. Der oder die Jugendliche wählt die, die am meisten gebracht hat, und erzählt, was genau daran geholfen hat, wo es schon gepasst hat oder passen könnte und was ein kleiner nächster Schritt für die kommenden Wochen wäre. ${mitBlatt ? 'Hier wird nur geredet – festgehalten wird nachher auf dem Blatt.' : 'Zum Schluss einen Satz auf eine Karte schreiben.'} Die Fachkraft fragt nach, bewertet nicht und spielt nichts vor.`,
-      'fr.text': `Les fiches de la série sont sur la table (si elles manquent, les titres suffisent). Passer ensemble les activités en revue : ${fr}. Le ou la jeune choisit celle qui lui a le plus apporté et raconte ce qui a aidé exactement, où cela a déjà servi ou pourrait servir et quel serait un petit prochain pas pour les semaines à venir. ${mitBlatt ? 'Ici, on parle seulement – on note ensuite sur la fiche.' : 'Pour finir, écrire une phrase sur une carte.'} L’adulte pose des questions, sans évaluer et sans jouer de scène.`,
-      sagen: 'Welche Übung aus unseren Treffen hat dir am meisten gebracht – und wofür?',
-      'fr.sagen': 'Quelle activité de nos séances t’a le plus apporté – et pour quoi ?',
-      wennEsKippt: 'Fällt nichts ein, liest die Fachkraft die Titel langsam vor und lässt nur zeigen. Ein Satz genügt.',
-      'fr.wennEsKippt': 'Si rien ne vient, l’adulte relit lentement les titres et laisse simplement montrer. Une phrase suffit.',
+      // Blind-Bewertung 9: „16 Minuten nur Gespräch“, „Kern und Blatt fragen dasselbe“ – Karten legen, die beste Übung
+      // noch einmal machen; was als Nächstes kommt, steht nur auf dem Blatt
+      text: `Die Titel der Übungen liegen als Karten auf dem Tisch (vorher auf Zettel schreiben oder die Blätter der Folge nehmen): ${de}. Der oder die Jugendliche legt sie in eine Reihe – was am meisten gebracht hat, nach vorne. Die vorderste Übung wird noch einmal kurz gemacht, so wie beim ersten Mal (drei, vier Minuten). Danach in einem Satz: Was genau hat daran geholfen?${mitBlatt ? ' Was als Nächstes kommt, steht nachher auf dem Blatt.' : ' Zum Schluss einen nächsten kleinen Schritt auf die Karte schreiben.'} Die Fachkraft bewertet nicht.`,
+      'fr.text': `Les titres des activités sont posés en cartes sur la table (les écrire avant sur des papiers ou prendre les fiches de la série) : ${fr}. Le ou la jeune les range en ligne – ce qui a le plus apporté, devant. L’activité de devant est refaite brièvement, comme la première fois (trois, quatre minutes). Ensuite, en une phrase : qu’est-ce qui a aidé exactement ?${mitBlatt ? ' La suite est notée ensuite sur la fiche.' : ' Pour finir, écrire un petit prochain pas sur la carte.'} L’adulte n’évalue pas.`,
+      sagen: 'Leg die Karten so, wie sie dir geholfen haben – die wichtigste nach vorne. Die machen wir noch einmal.',
+      'fr.sagen': 'Range les cartes selon ce qui t’a aidé – la plus importante devant. Celle-là, on la refait une fois.',
+      wennEsKippt: 'Fällt das Ordnen schwer, nur eine Karte nach vorne schieben lassen. Mag die Übung nicht noch einmal sein: nur zeigen, wie sie ging.',
+      'fr.wennEsKippt': 'Si ranger est difficile, faire seulement avancer une carte. Si refaire l’activité ne va pas : montrer seulement comment elle allait.',
     },
     warum: ['Letzte Sitzung: das Wichtigste der Folge festhalten'],
   }
@@ -622,7 +624,11 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   for (const i of reihe) {
     const slot = slots[i]
     if (slot.rolle === 'ankommen' || slot.rolle === 'abschluss') {
-      const r = o.rituale[slot.rolle]
+      let r = o.rituale[slot.rolle]
+      // letzte Sitzung: nach dem Rückblick keine dritte Auswertung (Blind-Bewertung 9: „Plus und Minus“ nach „Das Wichtigste
+      // mitnehmen“ und dem Rückblick-Blatt)
+      if (r && slot.rolle === 'abschluss' && o.phase === 'reflektieren' && (r.e.anspruch ?? 1) >= 2)
+        r = waehleRitual({ ...c, heute: { ...c.heute, stimmung: Math.min(c.heute.stimmung, 2) } }, 'abschluss', slot.min, `${salz}|letzte`, new Set([r.e.id])) ?? r
       if (r) {
         ergebnis[i] = planSchritt(r, slot.rolle, slot.min, c, { phase: o.phase, nr: o.nr, ritual: true })
         gewaehlt.push({ b: r, slot, i })
@@ -680,7 +686,8 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         // nie übertragen“, „V-13 bleibt ohne Transfer“) – nur mit genug Zeit und wenn es nicht die einzige Übertragung ist
         const hauptVon = (r: string) => new Set(c.k.eintraege.get(r)?.eldib.filter((x) => x.gewicht === 1).map((x) => x.code) ?? [])
         const h1 = hauptVon(quelle)
-        const zweite = slot.min >= 10 && ziel.size >= 2 ? reihe.slice(1).find((r) => [...hauptVon(r)].some((x) => ziel.has(x) && !h1.has(x))) : undefined
+        // Blind-Bewertung 9: „zwei Übungen mit je drei Planschritten in 13 Minuten“ – eine zweite nur mit viel Zeit
+        const zweite = slot.min >= 18 && ziel.size >= 2 ? reihe.slice(1).find((r) => [...hauptVon(r)].some((x) => ziel.has(x) && !h1.has(x))) : undefined
         if (zweite) quellen.push(zweite)
         const nr = (r: string) => (o.fruehereKerne ?? []).indexOf(r) + 1
         const sch = uebertragenSchritt(c, slot.min, quellen.map((r) => ({ ref: r, nr: nr(r) })), o.vorigeUebertragung)
@@ -736,7 +743,10 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     // … und seit Blind-Bewertung 8 ebenso für Kinder (ki:, mit eigenem Blatt)
     if (slot.rolle === 'kern' && c.weg !== 'leicht') {
       const eigene = auswahl.filter((w) => kuratiert(c, w.b.e.id) && w.b.f.ziel >= 0.25)
-      if (eigene.length) auswahl = eigene
+      // … und davon zuerst die, die ein Ziel des Kindes wirklich übt (Blind-Bewertung 9: „übt V-24 nicht“)
+      const mitCode = eigene.filter((w) => w.b.e.eldib.some((x) => c.ziele.some((z) => z.code === x.code)))
+      if (mitCode.length) auswahl = mitCode
+      else if (eigene.length) auswahl = eigene
       // Jugend-Folge (Blind-Bewertung 7: „das zweite Ziel kommt nur in einer Sitzung vor oder wechselt mitten in der Folge“,
       // „Sitzung 2 übt, was Sitzung 1 nicht angebahnt hat“): der Kern übt das Ziel dieser Sitzung direkt
       // Zukunftsbild und Lebensbilanz nicht in Krisenlage oder bei Stimmung ≤ 2 (Blind-Bewertung 7: „Zukunftsprojektion bei
@@ -809,7 +819,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     const w = ergebnis[wahlIndex]!
     const erg = baueBlatt(c, { phase: 'leicht', min: w.min, nr: o.nr, salz, gesperrt: benutzt, optional: true })
     if (erg) {
-      blatt = { titel: erg.titel, bausteine: erg.teile, ziel: false }
+      blatt = { titel: ohneEigenenNamen(erg.titel, c.p.vorname), bausteine: erg.teile, ziel: false }
       for (const t of erg.teile) benutzt.add(t.ref)
       const da = (w.wahl ?? []).filter((x) => x.ref === 'pg:da-sein')
       const andere = (w.wahl ?? []).filter((x) => x.ref !== 'pg:da-sein').slice(0, 0)
@@ -828,7 +838,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     const eigenesBlatt = !!kern && (c.alter >= 12 || (kern.typ === 'schritt' && !!kern.uebungsblatt) || ((kern.id === 'pg:uebertragen' || kern.id === 'pg:folge-transfer') && mitFaden(c)))
     const erg = c.weg !== 'leicht' && kern && eigenesBlatt ? kernBlatt(c, auftrag) : baueBlatt(c, auftrag)
     if (erg) {
-      blatt = { titel: erg.titel, bausteine: erg.teile, ziel: false }
+      blatt = { titel: ohneEigenenNamen(erg.titel, c.p.vorname), bausteine: erg.teile, ziel: false }
       for (const t of erg.teile) benutzt.add(t.ref)
       hinweise.push(...erg.hinweise)
       const gruende = [...erg.bewertet.values()].flatMap((b) => warum(b, c, { phase: o.phase, nr: o.nr }))

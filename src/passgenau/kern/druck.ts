@@ -8,7 +8,7 @@ import { textMerkmale } from './einzel'
 import { kinderblatt, quellenDerUebertragung } from './blatt'
 import { gruppenRollen, mitgliedProfil } from './gruppe'
 import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME } from './vokabular'
-import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter } from './hilfen'
+import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter, ohneEigenenNamen } from './hilfen'
 
 export interface DruckSchritt {
   min: number
@@ -169,24 +169,25 @@ const MATERIAL_STANDARD: Record<string, { de: string; fr: string }> = {
 const MATERIAL_IM_TEXT: [RegExp, string | { de: string; fr: string }][] = [
   [/Handpuppe|Fingerpuppe|marionnette/i, 'handpuppe'],
   [/Würfel|\bdé\b/i, 'wuerfel'],
-  [/\bBall\b|Bälle|\bballe\b/i, 'ball'],
-  [/Tücher|Tuch\b|foulard/i, 'tuecher'],
+  [/(?<!\p{L})(Ball|Bälle|balle)(?!\p{L})/iu, 'ball'],
+  [/(?<!\p{L})(Tücher|Tuch)(?!\p{L})|foulard/iu, 'tuecher'],
   [/Knete|pâte à modeler/i, 'knete'],
   [/Klangschale|bol chantant/i, 'klangschale'],
   [/Sanduhr|Timer|sablier|minuteur/i, 'sanduhr'],
-  [/\bSpiegel\b|\bmiroir\b/i, 'spiegel'],
+  [/(?<!\p{L})(Spiegel|miroir)(?!\p{L})/iu, 'spiegel'],
   [/etwas zu trinken|Getränk|à boire|boisson/i, { de: 'etwas zu trinken', fr: 'de quoi boire' }],
   [/Knetball|balle anti-stress|balle à malaxer/i, { de: 'Knetball', fr: 'balle anti-stress' }],
   [/\bLineal\b|\bune règle pour tracer\b/i, { de: 'Lineal', fr: 'règle' }],
   [/Bauklötze|Bausteine aus Holz|cubes/i, 'bausteine'],
   [/Wetterkarte|carte météo/i, { de: 'Wetterkarte (Sonne, Wolke, Regen, Gewitter)', fr: 'carte météo (soleil, nuage, pluie, orage)' }],
   [/Sticker|Aufkleber|autocollant/i, { de: 'Sticker', fr: 'autocollants' }],
-  [/Decke\b|couverture/i, { de: 'Decke', fr: 'couverture' }],
+  [/(?<!\p{L})Decke(?!\p{L})|couverture/iu, { de: 'Decke', fr: 'couverture' }],
   [/Kreppband|Klebeband|ruban adhésif/i, { de: 'Kreppband', fr: 'ruban adhésif' }],
-  [/Schachtel|Karton\b|boîte/i, { de: 'Schachtel', fr: 'boîte' }],
+  [/Schachtel|(?<!\p{L})Karton(?!\p{L})|(?<!\p{L})boîte(?!\p{L})/iu, { de: 'Schachtel', fr: 'boîte' }],
   [/Stofftier|peluche/i, { de: 'Stofftier', fr: 'peluche' }],
-  [/Glas\b|Gläser|bocal/i, { de: 'Glas', fr: 'bocal' }],
-  [/Steine?\b|pierres?\b/i, { de: 'kleine Steine', fr: 'petites pierres' }],
+  [/(?<!\p{L})(Glas|Gläser|bocal)(?!\p{L})/iu, { de: 'Glas', fr: 'bocal' }],
+  // nicht „Bausteine“, „Meilensteine“, „Fußball“ (Blind-Bewertung 9: „kleine Steine“ bei 3-Jährigen, nie gebraucht)
+  [/(?<!\p{L})(Steine?|pierres?)(?!\p{L})/iu, { de: 'kleine Steine', fr: 'petites pierres' }],
   [/Seifenblasen|bulles de savon/i, { de: 'Seifenblasen', fr: 'bulles de savon' }],
   [/Luftballon|ballon de baudruche/i, { de: 'Luftballon', fr: 'ballon de baudruche' }],
   [/Strohhalm|paille/i, { de: 'Strohhalme', fr: 'pailles' }],
@@ -290,7 +291,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   const s = plan.sitzungen.find((x) => x.nr === nr)!
   const sp = opt.sprache
   setzeTextModus((plan.auftrag?.sozialform ?? 'einzeln') !== 'einzeln')
-  const schritte = s.schritte.map((x) => druckSchritt(k, x, sp, opt.warum, s.blatt?.titel, p.alterJahre >= 12))
+  // Figuren mit dem Vornamen des Kindes heißen anders (Blind-Bewertung 9: „Mia ist ärgerlich“ für Mia) – vor mitName
+  const schritte = s.schritte.map((x) => ohneEigenenNamen(druckSchritt(k, x, sp, opt.warum, s.blatt?.titel, p.alterJahre >= 12), p.gruppe?.length ? null : p.vorname))
   // mit Namen (Blind-Bewertung 8: „‚der oder die Jugendliche‘ statt Elif“, „‚le ou la jeune / il ou elle‘ für einen
   // namentlich bekannten Jungen“, „la personne“ bei einem Elfjährigen) – nur für eine Person, nicht in der Gruppe
   const name = !p.gruppe?.length ? (p.anrede ?? p.vorname ?? '').trim() : ''

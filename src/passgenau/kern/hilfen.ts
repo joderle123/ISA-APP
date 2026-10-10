@@ -79,3 +79,16 @@ export const SATZ_GRENZE = /(?<!(?:^|[\s(„«])(?:[A-Za-zäöüÄÖÜ]|ca|bzw|v
 export const SATZ_GRENZE_GROSS = /(?<!(?:^|[\s(„«])(?:[A-Za-zäöüÄÖÜ]|ca|bzw|vgl|ggf|usw|etc|evtl|inkl|Nr|Min|max|min|bspw|ex|cf|env|Mme|ev|resp)\.)(?<=[.!?])\s+(?=[A-ZÄÖÜ„«(])/
 /** Wie SATZ_GRENZE, trennt zusätzlich nach „;“ (Listen in der Vorbereitung). */
 export const SATZ_GRENZE_SEMI = /(?<!(?:^|[\s(„«])(?:[A-Za-zäöüÄÖÜ]|ca|bzw|vgl|ggf|usw|etc|evtl|inkl|Nr|Min|max|min|bspw|ex|cf|env|Mme|ev|resp)\.)(?<=[.;!?])\s+/
+
+/** Figuren in Übungen tragen manchmal den Vornamen des Kindes („Mia ist ärgerlich“, Blatt „Mia und die Spielregel“) – das
+ *  Kind fühlt sich gemeint (Blind-Bewertung 9). Der Name wird durch einen anderen ersetzt, der im Text noch nicht vorkommt. */
+const ERSATZ_NAMEN = ['Nora', 'Lio', 'Jana', 'Ben', 'Lina', 'Timo', 'Ella', 'Max', 'Sara', 'Leo']
+export function ohneEigenenNamen<T>(x: T, vorname: string | null | undefined): T {
+  const n = (vorname ?? '').trim()
+  if (n.length < 2 || x == null) return x
+  const re = new RegExp(`(?<!\\p{L})${n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?!\\p{L})`, 'gu')
+  const s = JSON.stringify(x)
+  if (!re.test(s)) return x
+  const ersatz = ERSATZ_NAMEN.find((e) => e !== n && !s.includes(e)) ?? 'Nora'
+  return JSON.parse(s.replace(re, ersatz)) as T
+}
