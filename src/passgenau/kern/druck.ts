@@ -9,6 +9,7 @@ import { kinderblatt, quellenDerUebertragung } from './blatt'
 import { gruppenRollen, mitgliedProfil } from './gruppe'
 import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME } from './vokabular'
 import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter, ohneEigenenNamen } from './hilfen'
+import { BLATT_SYSTEM } from './system'
 
 export interface DruckSchritt {
   min: number
@@ -324,10 +325,14 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     for (const [re, wer] of MATERIAL_IM_TEXT) if (re.test(tx)) mat.add(typeof wer === 'string' ? materialName(k, wer, sp) : wer[sp])
     // Übertragen und Rückblick bringen ihr Material selbst mit (Blind-Bewertung 9: „Figur und Bilder stehen nicht im Material“,
     // „der Rückblick lässt Übungen wiederholen, deren Material fehlt“, „Feier ohne Sticker“)
-    if (x.ref === 'pg:uebertragen' && p.alterJahre < 12) mat.add(sp === 'fr' ? 'une petite figurine ou une peluche' : 'eine kleine Figur oder ein Stofftier')
+    // ab 10 ohne Figur (Blind-Bewertung 10: „Spiel mit Stofftier/Figur kindlich“ bei 11 Jahren)
+    if (x.ref === 'pg:uebertragen' && p.alterJahre < 10) mat.add(sp === 'fr' ? 'une petite figurine ou une peluche' : 'eine kleine Figur oder ein Stofftier')
     if (x.ref === 'pg:folge-transfer') {
       if (p.alterJahre < 12) {
-        mat.add(sp === 'fr' ? 'le matériel de l’activité choisie (de la séance où elle a eu lieu)' : 'das Material der gewählten Übung (aus ihrer Sitzung)')
+        // das Material der früheren Kerne beim Namen (Blind-Bewertung 10: „Material der gewählten Übung“ als Platzhalter)
+        const frueher = plan.sitzungen.filter((y) => y.nr < nr).flatMap((y) => y.schritte.filter((z) => z.rolle === 'kern' && !z.ref.startsWith('pg:')).map((z) => k.eintraege.get(z.ref)))
+        const zeug = [...new Set(frueher.flatMap((y) => (y ? y.material.map((m) => materialName(k, m, sp)) : [])))].filter((m) => !/^(Stifte|crayons|Papier|papier)$/.test(m)).slice(0, 6)
+        if (zeug.length) mat.add(sp === 'fr' ? `pour refaire une activité, au choix : ${zeug.join(', ')}` : `zum Wiederholen, je nach Wahl: ${zeug.join(', ')}`)
         mat.add(sp === 'fr' ? 'autocollants ou étoiles, une petite carte' : 'Sticker oder Sterne, eine kleine Karte')
       } else mat.add(sp === 'fr' ? 'petits papiers pour les titres (ou les fiches de la série)' : 'Zettel für die Titel (oder die Blätter der Folge)')
     }
@@ -404,7 +409,9 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       const ganz = (intern(k).bausteineVonBlatt.get(e.quelle.blatt) ?? []).every((x) => imBlatt.has(x.id))
       const tipp = leichter && ganz && p.alterJahre < 12 && !KURSVERWEIS_RE.test(leichter) && !textMerkmale(leichter).has('blattverweis') && !/\b(Aufgabe\w*|Karte|Karten|Memory|Bildkarten|Seite|exercices?|cartes?|page)\b/i.test(leichter) && !tippSchon.has(e.quelle.blatt) ? kuerzen(leichter.replace(/\bdie Lehrperson\b/g, 'die Fachkraft').replace(/\bLehrperson\b/g, 'Fachkraft'), 160) : undefined
       if (tipp) tippSchon.add(e.quelle.blatt)
-      return { titel: textVon(e, sp).titel, quelle: sp === 'fr' ? `de la fiche « ${qTitel} »` : `aus dem Blatt „${qTitel}“`, tipp }
+      // … mit dem Hinweis, dass der Teil schon auf dem Blatt steht (Blind-Bewertung 10: „verweist auf ein Blatt, das nicht zur Stunde
+      // gehört“)
+      return { titel: textVon(e, sp).titel, quelle: sp === 'fr' ? `extrait de la fiche Toolbox « ${qTitel} », déjà sur la fiche` : `Teil aus dem Toolbox-Blatt „${qTitel}“, schon auf dem Blatt`, tipp }
     })
   // Jugend-Folge (Blind-Bewertung 7: „K-34 steht im Kopf, wird in der Sitzung aber nicht bearbeitet“): nur die Ziele, die der
   // Kern dieser Sitzung übt
@@ -537,9 +544,13 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
     x.wahl?.length ? { de: 'Wählen', fr: 'Choisir', bild: 'icon:arrow-fork' }
     : jugend && x.rolle === 'spiel' ? { de: 'Aktivität', fr: 'Activité', bild: 'icon:sparkles' }
     : jugend && x.rolle === 'abschluss' ? { de: 'Schluss', fr: 'Fin', bild: 'icon:door-exit' }
+    : x.ref === 'pg:folge-transfer' ? WORT.reflexion
+    : x.ref === 'pg:uebertragen' ? WORT.transfer
     : WORT[x.rolle]
-  const leiste = s.schritte.slice(0, 7).map((x) => ({ text: wort(x)[sprache], bild: wort(x).bild, min: x.min }))
-  if (leiste.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: leiste })
+  const leiste = s.schritte.filter((x) => x.min > 0).slice(0, 7).map((x) => ({ text: wort(x)[sprache], bild: wort(x).bild, min: x.min }))
+  // nicht doppelt: steht die Leiste schon auf dem Blatt des Kindes, fehlt sie hier (Blind-Bewertung 10: „doppelte Stundenleiste“)
+  const leisteAufBlatt = (s.blatt?.bausteine ?? []).some((b) => b.ref === BLATT_SYSTEM.stundenleiste)
+  if (leiste.length >= 2 && !leisteAufBlatt) bausteine.push({ art: 'stundenleiste', schritte: leiste })
   // keine zweite Befindlichkeits-Abfrage auf der Karte (Blind-Bewertung 8: „Skala 0–10 ohne Ankerwerte, im Ablauf nicht
   // erwähnt“, „Wetter-Karte, die Stunde nutzt den Akku“): das Ankommens-Ritual fragt schon, wie es geht
   const wahl = s.schritte.find((x) => x.wahl?.length)

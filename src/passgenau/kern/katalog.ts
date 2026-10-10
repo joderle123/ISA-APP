@@ -74,7 +74,16 @@ const QUELLE_NAME: Record<Stundenschritt['quelle']['art'], Record<Sprache, strin
   crew: { de: 'CREW', fr: 'CREW' },
   freude: { de: 'Freude & Beziehung', fr: 'Plaisir et relation' },
   ritual: { de: 'Ritual', fr: 'Rituel' },
-  praxis: { de: 'Passgenau', fr: 'Passgenau' },
+  // eine Kategorie statt des App-Namens (Blind-Bewertung 10: „Baustein-Label ‚Passgenau‘ statt einer Kategorie“)
+  praxis: { de: 'Übung', fr: 'Exercice' },
+}
+/** Eigene Schritte des Plans (Übertragen, Rückblick, Einstieg …) mit ihrer Rolle als Kategorie */
+const PG_NAME: Record<string, { de: string; fr: string }> = {
+  'pg:uebertragen': { de: 'Übertragen', fr: 'Transfert' },
+  'pg:folge-transfer': { de: 'Rückblick', fr: 'Bilan' },
+  'pg:rueckblick': { de: 'Rückblick', fr: 'Bilan' },
+  'pg:einstieg': { de: 'Einstieg', fr: 'Introduction' },
+  'pg:blatt': { de: 'Blatt', fr: 'Fiche' },
 }
 
 type Texte = Pick<Stundenschritt, 'quelle' | 'titel' | 'text' | 'sagen' | 'wennEsKippt' | 'tipp' | 'fr' | 'achtung' | 'vorbereitung' | 'elternbrief'>
@@ -543,7 +552,7 @@ export function quelleText(e: KatalogEintrag, sprache: Sprache = 'de'): string {
     const titel = b ? (sprache === 'fr' && b.fr ? b.fr.titel : b.de.titel) : e.quelle.blatt
     return `${e.quelle.nr} · ${titel}`
   }
-  const name = QUELLE_NAME[e.quelle.art]?.[sprache] ?? e.quelle.art
+  const name = PG_NAME[e.id]?.[sprache] ?? QUELLE_NAME[e.quelle.art]?.[sprache] ?? e.quelle.art
   if (e.quelle.art === 'freude' || e.quelle.art === 'ritual' || e.quelle.art === 'praxis' || !e.quelle.titel) return name
   return `${name} · ${e.quelle.titel}`
 }
@@ -603,9 +612,17 @@ export function istGruppenText(): boolean {
 }
 
 /** In der Gruppenstunde spricht der Text von jedem Kind (bleibt Einzahl: „Jedes Kind malt …“, „Chaque enfant dessine …“) */
-function fuerJedesKind(t: string): string {
+function fuerJedesKind(t: string, einKind = false): string {
   if (!gruppenText) return t
-  return t
+  // Bedingungen und „Wenn es kippt“ meinen ein einzelnes Kind (Blind-Bewertung 10: „Si chaque enfant ne choisit rien“)
+  const ein = t
+    .replace(/\b(Wenn|wenn|Falls|falls|Sobald|sobald|Mag|mag|Will|will|Kann|kann|Braucht|braucht) das Kind\b/g, '$1 ein Kind')
+    .replace(/\b(Si|si|Quand|quand|Lorsque|lorsque) l['’]enfant\b/g, '$1 un enfant')
+  if (einKind)
+    return ein
+      .replace(/\b([Dd])as Kind\b/g, (_m, d: string) => (d === 'D' ? 'Ein Kind' : 'ein Kind'))
+      .replace(/\b([Ll])['’]enfant\b/g, (_m, l: string) => (l === 'L' ? 'Un enfant' : 'un enfant'))
+  return ein
     .replace(/\b([Dd])as Kind\b/g, (_m, d: string) => (d === 'D' ? 'Jedes Kind' : 'jedes Kind'))
     .replace(/\b([Dd])em Kind\b/g, (_m, d: string) => (d === 'D' ? 'Jedem Kind' : 'jedem Kind'))
     .replace(/\b([Dd])es Kindes\b/g, (_m, d: string) => (d === 'D' ? 'Jedes Kindes' : 'jedes Kindes'))
@@ -620,7 +637,7 @@ export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; t
     // in der Einzelstunde leitet die Fachkraft (nicht „die Lehrkraft“, nicht „l’enseignante“); mit Einzelvariante ohne
     // „(Paare)“ im Titel (Blind-Bewertung 9.10.)
     const titel = !gruppenText && (e.einzelvariante || fr?.einzelvariante) ? t.titel.replace(PAAR_TITEL_RE, '') : t.titel
-    return { titel: alsFachkraft(titel), text: fuerJedesKind(alsFachkraft(ev?.text ?? t.text)), sagen: (ev?.sagen ?? t.sagen)?.map(alsFachkraft), wennEsKippt: t.wennEsKippt && fuerJedesKind(alsFachkraft(t.wennEsKippt)), quelle: quelleText(e, sprache) }
+    return { titel: alsFachkraft(titel), text: fuerJedesKind(alsFachkraft(ev?.text ?? t.text)), sagen: (ev?.sagen ?? t.sagen)?.map(alsFachkraft), wennEsKippt: t.wennEsKippt && fuerJedesKind(alsFachkraft(t.wennEsKippt), true), quelle: quelleText(e, sprache) }
   }
   const liste = aktuell ? bausteinInhalt(aktuell, e, sprache) : []
   const aufgaben = liste.filter((x): x is Extract<Baustein, { art: 'aufgabe' }> => x.art === 'aufgabe').map((x) => x.text)
@@ -664,6 +681,16 @@ export function zielSatz(k: Katalog, p: { ziele: { code: string; ich: string }[]
     if (i >= 0 && ICH[code]?.frIch?.[i]) return ICH[code].frIch![i]
     if (eigen || (p.alterJahre ?? 0) >= ALLG_AB) return ICH[code]?.allg?.fr ?? ICH[code]?.fr
     return ICH[code]?.fr
+  }
+  // ohne Gender-Formen (Blind-Bewertung 10: „Ich warte, bis die/der Lehrer:in mich … ruft“ aus dem Profil)
+  if (eigen && /:in\b|\/|\*/.test(eigen)) {
+    const bank = intern(k).eldib.items[code]?.ich ?? []
+    if (bank[0]?.trim() === eigen && ICH[code]?.de) return ICH[code].de
+    return eigen
+      .replace(/\b(die|der)\/(der|die) (\w+):in\b/g, 'die Lehrkraft')
+      .replace(/\b(den|die)\/(die|den) (\w+):in\b/g, 'die Lehrkraft')
+      .replace(/\b(dem|der)\/(der|dem) (\w+):in\b/g, 'der Lehrkraft')
+      .replace(/\b(sie|er)\/(er|sie)\b/g, 'sie')
   }
   return eigen || ichSatz(k, code, p.alterJahre)
 }

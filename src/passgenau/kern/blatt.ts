@@ -372,7 +372,9 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
   const titel = quellen.map((q) => textVon(q, sprache).titel)
   const werkzeug = quellen.map((q, i) => (q.typ === 'schritt' && q.werkzeug?.[sprache]) || titel[i])
   const zit = (t: string) => (fr ? `« ${t} »` : `„${t}“`)
-  if ((o.alter ?? 12) < 12) {
+  // Kinder bis 9 malen und kreisen ein; ab 10 die Wenn-dann-Fassung (Blind-Bewertung 10: „Mal dich, wie du ‚Miesmacher
+  // entlarven‘ machst“ bei 11 Jahren kindlich und kaum zeichenbar)
+  if ((o.alter ?? 12) < 10) {
     // nur der Name des Werkzeugs („Erzähl-Hand“ statt „Erzähl-Hand: Wer? Wo? Was? …“; Blind-Bewertung 9: 12-Wörter-Satz bei
     // Lesen 1)
     const kurzW = werkzeug[0].split(/\s*[:(–]\s*/)[0] || werkzeug[0]
@@ -410,7 +412,8 @@ function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlatt
     if ((o.alter ?? 0) >= 7) liste.push({ art: 'ankreuzen', titel: fr ? 'Ce que j’ai le plus aimé – coche :' : 'Das mochte ich am meisten – kreuz an:', items: titel, spalten: 1 })
     else liste.push({ art: 'aufgabe', text: fr ? 'Comment c’était, nos séances ? Entoure.' : 'Wie war unsere Zeit? Kreis ein.' }, { art: 'gefuehle', gefuehle: ['froh', 'stolz', 'ruhig'], modus: 'einkreisen' })
     // die kleine Feier: ein eigenes Abzeichen (Blind-Bewertung 9: „Rückblick & Feiern ohne Feier“)
-    liste.push({ art: 'aufgabe', text: fr ? 'Dessine ton badge : ce que je sais faire maintenant.' : 'Mal dein Abzeichen: Das kann ich jetzt.' }, { art: 'feld', hoehe: 7, zeichnen: true })
+    // ohne Leistungsbehauptung (Blind-Bewertung 10: „Das kann ich jetzt“ bei einem Kind, das noch übt)
+    liste.push({ art: 'aufgabe', text: fr ? 'Dessine ton badge : ce qu’on a fait ensemble.' : 'Mal dein Abzeichen: Das haben wir zusammen gemacht.' }, { art: 'feld', hoehe: 7, zeichnen: true })
     return liste
   }
   // Blind-Bewertung 9: das Blatt fragte, was der Kern schon gefragt hatte – der Kern ordnet und wiederholt, das Blatt hält
@@ -523,7 +526,12 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
       if (b.art === 'feld') liste.push({ ...b, hoehe: Math.max(b.zeichnen ? 6 : 3, Math.min(9, Math.round((b.hoehe ?? 36) / 8))) })
       else liste.push(o.wenigSchreiben && b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
     }
-    return ohneLeereAufgaben(liste, o.wenigSchreiben)
+    const fertig = ohneLeereAufgaben(liste, o.wenigSchreiben)
+    // dünnes Kinderblatt (Blind-Bewertung 10: „untere Blatthälfte leer“): ein freiwilliges Malfeld zur Übung am Schluss
+    const zahl = fertig.filter((b) => b.art !== 'text' && b.art !== 'aufgabe' && b.art !== 'bild' && b.art !== 'wortspeicher').length
+    if ((o.alter ?? 12) < 12 && zahl <= 2 && !fertig.some((b) => b.art === 'feld'))
+      fertig.push({ art: 'aufgabe', text: fr ? 'Quand tu as fini : dessine ici quelque chose sur l’exercice.' : 'Wenn du fertig bist: Mal hier etwas zur Übung.' }, { art: 'feld', hoehe: 6, zeichnen: true })
+    return fertig
   }
   const F = (de: string, f: string, linien = 2): Baustein => ({ art: 'frage', text: fr ? f : de, linien })
   const sicher: Baustein = o.stimmungTief
@@ -728,8 +736,11 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
       // Jugendliche: „Schluss“ statt „Tschüss“ (Blind-Bewertung 5: wirkt bei 17 Jahren kindlich)
       const wort = (r: Rolle) => (alter >= 12 && r === 'abschluss' ? (sprache === 'fr' ? 'Fin' : 'Schluss') : alter >= 12 && r === 'spiel' ? (sprache === 'fr' ? 'Activité' : 'Aktivität') : STUNDE_WORT[r][sprache])
       // Übertragen heißt „Mitnehmen“, der Rückblick „Zurückschauen“ (Blind-Bewertung 9: „die Stundenleiste nennt den Rückblick Üben“)
+      // … und wie die Karten zur Stunde: eine Wahl heißt „Wählen“ (Blind-Bewertung 10: „Schritt 2 heißt auf S. 2 ‚Jouer‘, auf
+      // S. 3 ‚Choisir‘“)
       const rolleVon = (x: { ref: string; rolle: Rolle }): Rolle => (x.ref === 'pg:folge-transfer' ? 'reflexion' : x.ref === 'pg:uebertragen' ? 'transfer' : x.rolle)
-      if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ text: wort(rolleVon(x)), bild: STUNDE_WORT[rolleVon(x)].bild, min: x.min })) })
+      const feld = (x: (typeof schritte)[number]) => (x.wahl?.length ? { text: sprache === 'fr' ? 'Choisir' : 'Wählen', bild: 'icon:arrow-fork' } : { text: wort(rolleVon(x)), bild: STUNDE_WORT[rolleVon(x)].bild })
+      if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ ...feld(x), min: x.min })) })
       markiere(start, bausteine.length - start, teilId)
       continue
     }

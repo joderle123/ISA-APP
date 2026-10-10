@@ -8,7 +8,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { execFileSync } from 'node:child_process'
 import type { Blatt } from '../src/blatt/typen'
-import type { Auftrag, Ereignis, KatalogEintrag, Plan, PraxisVorlage, Profil, Rueckmeldung, Tagesform } from '../src/passgenau/typen'
+import type { Auftrag, Ereignis, KatalogEintrag, Plan, PraxisVorlage, Profil, Rolle, Rueckmeldung, Tagesform } from '../src/passgenau/typen'
 import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { BlattDokument } from '../src/blatt/pdf/BlattDokument'
 import { PlanSeite, SitzungDokument, teilPositionen } from '../src/passgenau/pdf/PlanDokument'
@@ -395,10 +395,14 @@ await pruefung('Vorlieben (11.5): 10 Rückmeldungen kippen ein knappes Ranking, 
   const p = KINDER.mia
   const a = auftrag(p, 'schnell')
   const c0 = kontext(k, p, a, leer())
-  const liste = (k.nachRolle.get('spiel') ?? []).filter((e) => !e.id.startsWith('pg:') && pruefe(e, c0, {}) === null).map((e) => bewerte(e, c0, { phase: 'ueben' }))
-  liste.sort((x, y) => rang(x, y, 'sim'))
-  // knappes Paar mit verschiedenem Hauptformat
-  let paar: [(typeof liste)[number], (typeof liste)[number]] | null = null
+  // knappes Paar mit verschiedenem Hauptformat – unter den Spielen, sonst unter Bewegung und Ruhe (welche Rolle eines hat,
+  // hängt vom Katalog ab)
+  const listeVon = (rolle: Rolle) => (k.nachRolle.get(rolle) ?? []).filter((e) => !e.id.startsWith('pg:') && pruefe(e, c0, {}) === null).map((e) => bewerte(e, c0, { phase: 'ueben' })).sort((x, y) => rang(x, y, 'sim'))
+  let paar: [ReturnType<typeof listeVon>[number], ReturnType<typeof listeVon>[number]] | null = null
+  let liste: ReturnType<typeof listeVon> = []
+  for (const rolle of ['spiel', 'bewegung', 'regulation'] as Rolle[]) {
+  if (paar) break
+  liste = listeVon(rolle)
   for (let i = 0; i + 1 < liste.length && !paar; i++)
     for (let j = i + 1; j < Math.min(liste.length, i + 4); j++)
       // das obere hat das Format des unteren gar nicht (sonst lernt es mit)
@@ -407,6 +411,7 @@ await pruefung('Vorlieben (11.5): 10 Rückmeldungen kippen ein knappes Ranking, 
         paar = [liste[i], liste[j]]
         break
       }
+  }
   if (!soll(!!paar, 'kein knappes Paar gefunden')) return
   const [oben, unten] = paar!
   const fmt = unten.e.format[0]
