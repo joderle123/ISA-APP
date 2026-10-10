@@ -263,6 +263,10 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
   if (x.wahl?.length) {
     d.titel = sprache === 'fr' ? 'Une activité au choix' : 'Eine Aktivität zur Wahl'
     d.text = ''
+    // Sagen und „Wenn es kippt“ gelten für die Wahl, nicht nur für die erste Option (Blind-Bewertung 9: „nur die erste
+    // Option hat Sagen- und Wenn-es-kippt-Zeilen“)
+    d.sagen = [sprache === 'fr' ? 'Aujourd’hui, tu choisis. Qu’est-ce qui te fait envie ?' : 'Heute wählst du. Worauf hast du Lust?']
+    d.wennEsKippt = sprache === 'fr' ? 'Si le choix est difficile, l’adulte en propose une ; « simplement être là » est toujours permis.' : 'Fällt die Wahl schwer, schlägt die Fachkraft eine vor; „einfach da sein“ ist immer erlaubt.'
   }
   if (x.wahl?.length)
     d.wahl = [
@@ -549,6 +553,12 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
     })
     // „Heute möchte ich zuerst …“ deutete eine Reihenfolge an – gewählt wird eines (Blind-Bewertung 7)
     bausteine.push({ art: 'wahlkarte', frage: sprache === 'fr' ? 'Aujourd’hui, je choisis :' : 'Heute wähle ich:', optionen })
+    // freier Platz statt zwei leerer Drittel (Blind-Bewertung 9: „Blatt zu zwei Dritteln leer, nichts zum Mitmachen“) –
+    // ohne Auftrag, ohne Bewertung
+    bausteine.push(
+      { art: 'aufgabe', text: jugend ? (sprache === 'fr' ? 'Place libre : noter, griffonner – ou laisser vide.' : 'Freier Platz: notieren, kritzeln – oder leer lassen.') : sprache === 'fr' ? 'Ici, tu peux dessiner ce que tu veux.' : 'Hier darfst du malen, was du magst.' },
+      { art: 'feld', hoehe: 8, zeichnen: true },
+    )
   }
   // keine Wochenziel-Karte mehr (Blind-Bewertung 9.10., A9): der Ich-Satz des Förderziels gehört nicht aufs Papier des Kindes
   // nur die Stundenleiste: lohnt eine eigene Seite nur, wenn sie dem Kind hilft (Struktur, Bildplan)

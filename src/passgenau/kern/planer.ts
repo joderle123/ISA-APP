@@ -164,7 +164,8 @@ function vorlage(c: Kontext): Slot[] {
     for (let i = v.length - 1; i >= 0; i--)
       // Jugendliche: die Pause nach dem Kern geht vom Blatt ab, nicht vom Kern (die Einzelübungen brauchen ihre Minuten)
       if (c.alter >= 12 && v[i].rolle === 'kern' && v[i].min > 8) {
-        const u = v.find((x) => x.rolle === 'uebung' && x.min >= 6)
+        // auch bei kurzem Blatt (Blind-Bewertung 9: „Bewegungspausen helfen – keine zwischen Kern und Blatt“)
+        const u = v.find((x) => x.rolle === 'uebung' && x.min >= 5)
         if (u) {
           u.min -= 2
           v.splice(i + 1, 0, { rolle: 'pause', min: 2 })
@@ -653,6 +654,17 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       continue
     }
     if (slot.rolle === 'pause') {
+      // abwechslungsreich (Blind-Bewertung 9: „in allen Sitzungen dieselbe 2-Minuten-Pause“): eine kurze Bewegung aus dem
+      // Katalog, die in der Folge noch nicht dran war – sonst die feste Pause
+      const kurz = kandidaten(c, { rolle: 'bewegung', min: slot.min, phase: o.phase, nr: o.nr, salz: `${salz}|pause${i}`, gesperrt: benutzt, vorher: o.vorher, formate })
+        .filter((w) => w.b.e.typ === 'schritt' && w.b.e.dauer.min <= slot.min + 1 && w.locker <= 2 && /^(pa|pg|fb):/.test(w.b.e.id) && w.b.e.id !== 'pg:pause' && !(o.vorher ?? new Set()).has(w.b.e.id))
+      const wahl = kurz[0]
+      if (wahl) {
+        ergebnis[i] = planSchritt(wahl.b, 'bewegung', slot.min, c, { phase: o.phase, nr: o.nr })
+        ergebnis[i]!.warum = ['Bewegungspause – hilft beim Dranbleiben']
+        benutzt.add(wahl.b.e.id)
+        continue
+      }
       const e = c.k.eintraege.get('pg:pause')!
       ergebnis[i] = { ref: e.id, h: e.h, rolle: 'bewegung', min: slot.min, t: e.typ === 'schritt' ? e.titel : 'Pause', warum: ['Bewegungspause – hilft beim Dranbleiben'] }
       continue
