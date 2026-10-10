@@ -1,0 +1,641 @@
+[
+  {
+    "id": "t1-hilfe-holen-wen-frage-ich",
+    "bereich": "miteinander",
+    "thema": "hilfe",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "SOZ-26",
+      "K-12",
+      "SOZ-15"
+    ],
+    "schlagworte": [
+      "Hilfe holen",
+      "Hilfe-Hand",
+      "Orte und Personen",
+      "soziale Kompetenz",
+      "Rollenspiel"
+    ],
+    "bild": "icon:hand-stop",
+    "verwandt": [
+      "meine-helfer-hand",
+      "das-ist-nicht-fair"
+    ],
+    "de": {
+      "titel": "Hilfe holen: Wen frage ich?",
+      "untertitel": "Jeder braucht manchmal Hilfe. Hilfe holen ist klug.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Wer hilft dir wo? Schreib oder male.",
+          "hinweis": "Du darfst auch Personen erfinden. Ein Finger darf leer bleiben.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "in der Klasse",
+            "auf dem Schulhof",
+            "im Bus",
+            "in der Maison Relais",
+            "zu Hause"
+          ],
+          "mitte": "Meine Hilfe"
+        },
+        {
+          "art": "aufgabe",
+          "text": "So holst du Hilfe. Lies die Schritte.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Stopp",
+              "text": "Ich merke: Ich brauche Hilfe."
+            },
+            {
+              "titel": "Hingehen",
+              "text": "Ich gehe zu einer Person."
+            },
+            {
+              "titel": "Sagen",
+              "text": "Ich sage: „Ich brauche Hilfe.“"
+            },
+            {
+              "titel": "Weiterfragen",
+              "text": "Hilft sie nicht, frage ich die nächste."
+            }
+          ],
+          "linien": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wen fragst du? Schau auf deine Hand und schreib.",
+          "hinweis": "Beispiel: Ich finde meine Jacke nicht. Ich frage die Erzieherin.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich verstehe etwas nicht. Ich frage …",
+            "Jemand schubst mich. Ich frage …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übt zu zweit: Sagt den Satz laut.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Ich",
+              "text": "Ich brauche Hilfe, weil …"
+            },
+            {
+              "wer": "Person",
+              "text": "Gut, dass du kommst. Was ist los?"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder benennen an verschiedenen Orten Personen, die helfen können, kennen vier Schritte, um Hilfe zu holen, und üben den Hilfe-Satz.",
+        "ablauf": [
+          "Einstieg (5 Min.): Rollenspiel „Stift verloren“ in drei Varianten: schweigen, nuscheln, klar sagen. „Bei welcher Version kann man helfen?“",
+          "Aufgabe 1 (10 Min.): Hilfe-Hand ausfüllen, Orte gemeinsam durchgehen. Echte oder erfundene Personen; leere Finger sind erlaubt, Familie muss niemand nennen.",
+          "Aufgabe 2 (5 Min.): Schritte lesen und vormachen.",
+          "Aufgabe 3 und 4 (15 Min.): Situationen vorlesen, Antworten vergleichen; mehrere Personen können richtig sein. Dann zu zweit den Satz üben, einmal als Kind, einmal als Person.",
+          "Abschluss: Hand mitnehmen oder aufhängen; nach einigen Wochen ergänzen."
+        ],
+        "hintergrund": "Kinder, die wissen, an wen sie sich wenden können, bewältigen Belastungen besser: Verlässliche Erwachsene außerhalb der Familie gehören zu den wichtigsten Schutzfaktoren (Werner & Smith, 1992). Dazu braucht es eine Landkarte möglicher Helfer und die Fertigkeit, Hilfe anzusprechen. Bei Jugendlichen bremsen Scham und die Sorge, zur Last zu fallen, die Hilfesuche (Gulliver et al., 2010); das Üben beginnt deshalb früh. Der feste Satz und das Weiterfragen geben Sicherheit, wenn die erste Person keine Zeit hat. Das Blatt ergänzt „Meine Helfer-Hand“.",
+        "quellen": [
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+          "Gulliver, A., Griffiths, K. M. & Christensen, H. (2010). Perceived barriers and facilitators to mental health help-seeking in young people: A systematic review. BMC Psychiatry, 10, 113."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Orte (Klasse, Hof, Zuhause); Namenkarten vorgeben; Aufgabe 3 als Rollenspiel.",
+          "schwerer": "Zu jeder Person notieren, wobei sie hilft; Plan B: „Wenn niemand Zeit hat, dann …“"
+        },
+        "impulse": [
+          "Was kann passieren, wenn man keine Hilfe holt?",
+          "Was macht es leichter, um Hilfe zu bitten?",
+          "Was tust du, wenn die erste Person keine Zeit hat?"
+        ],
+        "tipps": [
+          "Gruppe: Rollenspiele zu zweit (Kind und Person). Hilfe holen ausdrücklich loben: „Gut, dass du gekommen bist.“",
+          "Einzelstunde: Die echten Anlaufstellen der Schule gemeinsam besuchen (Aufsicht, Maison Relais, Büro)."
+        ],
+        "achtung": "Nennt ein Kind niemanden oder nur Personen, vor denen es Angst hat, oder erzählt es von Geheimnissen mit Bauchweh: nicht im Plenum vertiefen, einzeln zuhören, die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "À qui demander de l’aide ?",
+      "untertitel": "Chacun a parfois besoin d’aide. Demander de l’aide est malin.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Qui t’aide, et où ? Écris ou dessine.",
+          "hinweis": "Tu peux aussi inventer des personnes. Un doigt peut rester vide.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "en classe",
+            "dans la cour",
+            "dans le bus",
+            "à la Maison Relais",
+            "à la maison"
+          ],
+          "mitte": "Mon aide"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Voici comment demander de l’aide. Lis les étapes.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Stop",
+              "text": "Je me dis : j’ai besoin d’aide."
+            },
+            {
+              "titel": "Aller voir",
+              "text": "Je vais vers une personne."
+            },
+            {
+              "titel": "Dire",
+              "text": "Je dis : « J’ai besoin d’aide. »"
+            },
+            {
+              "titel": "Redemander",
+              "text": "Si elle ne peut pas, je demande à la suivante."
+            }
+          ],
+          "linien": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui demandes-tu ? Regarde ta main et écris.",
+          "hinweis": "Exemple : je ne trouve pas ma veste. Je demande à l’éducatrice.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je ne comprends pas. Je demande à …",
+            "Quelqu’un me bouscule. Je demande à …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Exercez-vous à deux : dites la phrase à voix haute.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Moi",
+              "text": "J’ai besoin d’aide, parce que …"
+            },
+            {
+              "wer": "La personne",
+              "text": "Tu as bien fait de venir. Que se passe-t-il ?"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants nomment, à différents endroits, des personnes qui peuvent aider, connaissent quatre étapes pour demander de l’aide et s’exercent à dire la phrase.",
+        "ablauf": [
+          "Entrée (5 min) : jeu de rôle « crayon perdu » en trois versions : se taire, marmonner, dire clairement. « Dans quelle version peut-on t’aider ? »",
+          "Tâche 1 (10 min) : remplir la main d’aide, passer les lieux en revue. Personnes réelles ou inventées ; un doigt vide est permis, personne n’a à nommer sa famille.",
+          "Tâche 2 (5 min) : lire et mimer les étapes.",
+          "Tâches 3 et 4 (15 min) : lire les situations, comparer les réponses ; plusieurs personnes conviennent. Puis s’exercer à deux, une fois enfant, une fois personne.",
+          "Conclusion : emporter ou afficher la main ; la compléter après quelques semaines."
+        ],
+        "hintergrund": "Les enfants qui savent à qui s’adresser gèrent mieux les difficultés : des adultes fiables hors de la famille comptent parmi les principaux facteurs de protection (Werner & Smith, 1992). Il faut une carte des aides possibles et la capacité de demander. Chez les adolescents, la honte et la crainte de déranger freinent la demande d’aide (Gulliver et al., 2010) : on s’exerce donc tôt. La phrase fixe et le fait de redemander rassurent quand la première personne n’a pas le temps. La fiche complète « Ma main d’aide ».",
+        "quellen": [
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+          "Gulliver, A., Griffiths, K. M. & Christensen, H. (2010). Perceived barriers and facilitators to mental health help-seeking in young people: A systematic review. BMC Psychiatry, 10, 113."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement trois lieux (classe, cour, maison) ; cartes-prénoms ; tâche 3 en jeu de rôle.",
+          "schwerer": "Noter en quoi chaque personne aide ; plan B : « Si personne n’a le temps, alors … »"
+        },
+        "impulse": [
+          "Que peut-il arriver si on ne demande pas d’aide ?",
+          "Qu’est-ce qui rend plus facile de demander ?",
+          "Que fais-tu si la première personne n’a pas le temps ?"
+        ],
+        "tipps": [
+          "Groupe : jeux de rôle à deux (enfant et personne). Féliciter : « Tu as bien fait de venir. »",
+          "Individuel : visiter ensemble les vrais lieux d’aide de l’école (surveillant, Maison Relais, bureau)."
+        ],
+        "achtung": "Si un enfant ne nomme personne ou seulement des personnes qui lui font peur, ou parle de secrets qui font mal au ventre : ne pas approfondir devant le groupe, écouter en tête à tête, informer la direction compétente (responsable).",
+        "material": "Crayons de couleur"
+      }
+    }
+  },
+  {
+    "id": "t2-streit-klaeren-ich-botschaft",
+    "bereich": "miteinander",
+    "thema": "konflikte",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-26",
+      "SOZ-34",
+      "SOZ-33",
+      "V-26"
+    ],
+    "schlagworte": [
+      "Streit klären",
+      "Ich-Botschaft",
+      "Zuhören",
+      "Lösung finden",
+      "soziale Kompetenz",
+      "Rollenspiel"
+    ],
+    "bild": "icon:messages",
+    "verwandt": [
+      "ich-botschaften",
+      "konflikt-bruecke"
+    ],
+    "de": {
+      "titel": "Streit klären mit der Ich-Botschaft",
+      "untertitel": "In einem Streit musst du nicht gewinnen. Du kannst sagen, was los ist, zuhören und gemeinsam eine Lösung finden.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Der umgebaute Turm",
+          "text": "Chiara und Mehmet bauen in der Maison Relais eine Burg aus Bauklötzen. Chiara holt ein Glas Wasser. Als sie zurückkommt, hat Mehmet ihren Turm umgebaut. Chiara ruft: „Du machst immer alles kaputt.“ Mehmet ruft zurück: „Dein Turm war langweilig.“ Beide sind wütend. Keiner baut mehr.",
+          "bild": "figur:mia:wuetend"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Ruhig werden",
+              "text": "Erst atmen. Dann reden."
+            },
+            {
+              "titel": "Ich-Botschaft sagen",
+              "text": "Ich fühle …, wenn … Ich wünsche mir …"
+            },
+            {
+              "titel": "Zuhören und wiederholen",
+              "text": "Der andere sagt, was er gehört hat."
+            },
+            {
+              "titel": "Lösung finden",
+              "text": "Beide überlegen: Was können wir tun?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Chiara sagt es noch einmal, mit einer Ich-Botschaft. Schreibe ihre Sätze.",
+          "hinweis": "Sag, was passiert ist: ohne „immer“ und „nie“, ohne Schimpfwort. Die Gefühlswörter helfen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Gefühlswörter",
+          "items": [
+            "wütend",
+            "enttäuscht",
+            "traurig",
+            "genervt",
+            "überrumpelt",
+            "ärgerlich"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Ich fühle mich …",
+            "wenn …",
+            "Ich wünsche mir …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mehmet hört zu und wiederholt. Dann sagt er seine Seite. Ergänze das Gespräch.",
+          "hinweis": "Mehmet sagt zuerst mit eigenen Worten, was Chiara gesagt hat. Erst danach erzählt er, wie es ihm ging.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Chiara",
+              "text": "Ich bin enttäuscht, wenn du meinen Turm umbaust, ohne zu fragen. Ich wünsche mir, dass du vorher fragst."
+            },
+            {
+              "wer": "Mehmet"
+            },
+            {
+              "wer": "Chiara",
+              "text": "Ja, genau so. Und was war bei dir los?"
+            },
+            {
+              "wer": "Mehmet"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Unsere Lösung: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übt zu dritt: Wählt einen erfundenen Streit und spielt ihn.",
+          "symbole": [
+            "ankreuzen",
+            "gruppe"
+          ],
+          "hinweis": "Sprecher: sagt die Ich-Botschaft. Zuhörer: wiederholt mit eigenen Worten. Beobachter: kreuzt unten an. Dann wechselt."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Jemand sitzt jeden Morgen auf deinem Platz im Bus.",
+            "Ein Freund gibt dein Buch mit Eselsohren zurück.",
+            "Beim Spiel behauptet jemand, du hättest geschummelt.",
+            "Jemand lacht über deine Zeichnung."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Beobachter: Was hat geklappt? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Es wurde gesagt, was man fühlt.",
+            "Es wurde ein Wunsch gesagt.",
+            "Der Zuhörer hat wiederholt.",
+            "Sie haben eine Lösung gefunden."
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder klären einen Streit in vier Schritten: ruhig werden, eine Ich-Botschaft sagen, zuhören und wiederholen, eine Lösung finden. Sie üben das im Rollenspiel.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. „Was hat Chiara gesagt? Was hat Mehmet gehört? Warum baut keiner mehr?“ Die vier Schritte an der Tafel zeigen.",
+          "Aufgabe 1 (8 Min.): Chiaras Ich-Botschaft schreiben. Gemeinsam prüfen: ohne „immer“, ohne Schimpfwort, mit Wunsch.",
+          "Aufgabe 2 (10 Min.): Das Gespräch ergänzen. Wiederholen üben: „Du bist …, weil … Habe ich das richtig verstanden?“ Zwei Lösungen vorlesen.",
+          "Aufgabe 3 und 4 (15 Min.): Rollenspiel in Dreiergruppen mit Rollenwechsel. Die Beobachter kreuzen an.",
+          "Abschluss (5 Min.): Was war schwer, was hat geholfen? Merksatz: erst atmen, dann sagen, dann zuhören, dann Lösung."
+        ],
+        "hintergrund": "Das Blatt verbindet drei bewährte Bausteine sozialer Kompetenztrainings: die Ich-Botschaft (Gordon, 1972), die Schritte der gewaltfreien Kommunikation – Beobachtung, Gefühl, Bedürfnis, Bitte (Rosenberg, 2001) – und aktives Zuhören, bei dem man wiedergibt, was man verstanden hat (Rogers & Roethlisberger, 1952). Rollenspiel und Rollenwechsel machen die Schritte erfahrbar. Voraussetzung ist, dass die Kinder sich vorher beruhigen können (siehe „STOPP! Erst atmen, dann handeln“). Das Blatt ergänzt „Ich-Botschaften in drei Teilen“ um Zuhören und Lösung.",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52."
+        ],
+        "differenzierung": {
+          "leichter": "Satzanfänge an die Tafel schreiben; Wiederholen mit „Du meinst …“ üben.",
+          "schwerer": "Einen echten, kleinen Streit der Woche vorbereiten – nur freiwillig."
+        },
+        "impulse": [
+          "Was hilft dir, ruhig zu werden, bevor du redest?",
+          "Wie fühlt es sich an, wenn jemand wiederholt, was du gesagt hast?"
+        ],
+        "tipps": [
+          "Gruppe: Rollen vorher klären, die Lehrperson hilft beim Wiederholen. Nur erfundene Streitszenen spielen.",
+          "Einzelstunde: Die Lehrperson ist Zuhörer-Partner und sagt danach, was gut war: Gefühl gesagt, Wunsch gesagt."
+        ],
+        "achtung": "Ich-Botschaften helfen nicht gegen Mobbing oder Gewalt. Wird ein Kind wiederholt angegriffen oder ausgegrenzt, braucht es den Schutz Erwachsener: die Leitung (Responsable) informieren.",
+        "material": "Stifte; optional Rollenkarten"
+      }
+    },
+    "fr": {
+      "titel": "Régler une dispute avec le message je",
+      "untertitel": "Dans une dispute, tu n’as pas besoin de gagner. Tu peux dire ce qui se passe, écouter et chercher une solution ensemble.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "La tour transformée",
+          "text": "À la Maison Relais, Chiara et Mehmet construisent un château avec des blocs. Chiara va chercher un verre d’eau. Quand elle revient, Mehmet a transformé sa tour. Chiara crie : « Tu casses toujours tout. » Mehmet répond : « Ta tour était ennuyeuse. » Tous les deux sont en colère. Plus personne ne construit.",
+          "bild": "figur:mia:wuetend"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Se calmer",
+              "text": "D’abord respirer. Ensuite parler."
+            },
+            {
+              "titel": "Dire un message je",
+              "text": "Quand … , ça me … Je souhaite …"
+            },
+            {
+              "titel": "Écouter et reformuler",
+              "text": "L’autre dit ce qu’il a compris."
+            },
+            {
+              "titel": "Trouver une solution",
+              "text": "Ensemble : que pouvons-nous faire ?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Chiara le redit avec un message je. Écris ses phrases.",
+          "hinweis": "Dis ce qui s’est passé : sans « toujours » ni « jamais », sans insulte. Les mots t’aident.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Pour dire ce que tu ressens",
+          "items": [
+            "Ça me met en colère",
+            "Ça me déçoit",
+            "Ça me rend triste",
+            "Ça m’énerve",
+            "Ça me fait de la peine",
+            "Ça me gêne"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Quand …",
+            "ça me …",
+            "Je souhaite …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mehmet écoute et reformule. Puis il dit son côté. Complète la conversation.",
+          "hinweis": "Mehmet redit d’abord avec ses mots ce que Chiara a dit. Ensuite seulement, il explique comment il se sentait.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Chiara",
+              "text": "Ça me déçoit quand tu changes ma tour sans demander. Je souhaite que tu demandes d’abord."
+            },
+            {
+              "wer": "Mehmet"
+            },
+            {
+              "wer": "Chiara",
+              "text": "Oui, c’est ça. Et toi, qu’est-ce qui se passait ?"
+            },
+            {
+              "wer": "Mehmet"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Notre solution : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Exercez-vous à trois : choisissez une dispute inventée et jouez-la.",
+          "symbole": [
+            "ankreuzen",
+            "gruppe"
+          ],
+          "hinweis": "Celui qui parle : dit son message je. Celui qui écoute : reformule avec ses mots. L’observateur : coche ci-dessous. Puis changez de rôle."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Quelqu’un s’assoit chaque matin à ta place dans le bus.",
+            "Un copain te rend ton livre avec les pages cornées.",
+            "Pendant le jeu, quelqu’un dit que tu as triché.",
+            "Quelqu’un se moque de ton dessin."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Observateur : qu’est-ce qui a bien marché ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "On a dit ce qu’on ressentait.",
+            "On a dit un souhait.",
+            "L’autre a reformulé.",
+            "On a trouvé une solution."
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants règlent une dispute en quatre étapes : se calmer, dire un message je, écouter et reformuler, trouver une solution. Ils s’exercent par le jeu de rôle.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. « Qu’a dit Chiara ? Qu’a entendu Mehmet ? Pourquoi plus personne ne construit ? » Montrer les quatre étapes au tableau.",
+          "Tâche 1 (8 min) : écrire le message je de Chiara. Vérifier ensemble : sans « toujours », sans insulte, avec un souhait.",
+          "Tâche 2 (10 min) : compléter la conversation. S’exercer à reformuler : « Tu es … parce que … J’ai bien compris ? » Lire deux solutions.",
+          "Tâches 3 et 4 (15 min) : jeu de rôle à trois avec changement de rôles. Les observateurs cochent.",
+          "Clôture (5 min) : qu’est-ce qui était difficile, qu’est-ce qui a aidé ? Phrase à retenir : respirer, dire, écouter, trouver."
+        ],
+        "hintergrund": "La feuille réunit trois éléments éprouvés des entraînements aux compétences sociales : le message je (Gordon, 1972), les étapes de la communication non violente – observation, sentiment, besoin, demande (Rosenberg, 2001) – et l’écoute active, où l’on redit ce qu’on a compris (Rogers & Roethlisberger, 1952). Le jeu de rôle et l’échange des rôles rendent les étapes concrètes. Condition : que les enfants puissent d’abord se calmer (voir « STOP ! D’abord respirer, ensuite agir »). La feuille complète « Le message je en trois parties » par l’écoute et la solution.",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52."
+        ],
+        "differenzierung": {
+          "leichter": "Écrire les débuts de phrases au tableau ; s’exercer à reformuler avec « Tu veux dire … ».",
+          "schwerer": "Préparer une vraie petite dispute de la semaine – sur base volontaire."
+        },
+        "impulse": [
+          "Qu’est-ce qui t’aide à te calmer avant de parler ?",
+          "Comment te sens-tu quand quelqu’un redit ce que tu as dit ?"
+        ],
+        "tipps": [
+          "Groupe : clarifier les rôles avant, l’adulte aide à reformuler. Jouer seulement des disputes inventées.",
+          "Séance individuelle : l’adulte est le partenaire qui écoute et dit ensuite ce qui était bien : sentiment dit, souhait dit."
+        ],
+        "achtung": "Les messages je n’aident pas contre le harcèlement ou la violence. Un enfant attaqué ou exclu de façon répétée a besoin de la protection des adultes : informer la direction (responsable).",
+        "material": "Crayons ; en option des cartes de rôles"
+      }
+    }
+  }
+]

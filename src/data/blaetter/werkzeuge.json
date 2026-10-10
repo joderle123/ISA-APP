@@ -1928,7 +1928,7 @@
             "Zoé et Mathis font la liste, dès lundi"
           ]
         },
-        { "art": "aufgabe", "text": "Conclusion", "hinweis": "Lire les décisions, répartir les rôles pour la prochaine séance." },
+        { "art": "aufgabe", "text": "Conclusion", "hinweis": "Lire les décisions, répartir les rôles pour le prochain conseil." },
         { "art": "satzanfaenge", "items": ["Prochaine séance le :", "Prochaine animation et prochain compte rendu :"] },
         { "art": "seitenumbruch" },
         {

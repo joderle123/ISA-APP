@@ -1,0 +1,2443 @@
+[
+  {
+    "id": "t1-mein-akku-heute",
+    "bereich": "selbstreflexion",
+    "thema": "balance",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20–25 Min.",
+    "eldib": [
+      "K-26",
+      "K-17",
+      "K-15"
+    ],
+    "schlagworte": [
+      "Energie",
+      "Akku",
+      "Selbstbeobachtung",
+      "Check-in",
+      "Gruppenrunde"
+    ],
+    "bild": "motiv:batterie",
+    "verwandt": [
+      "energie-batterie",
+      "was-tut-mir-gut",
+      "t1-wohlfuehl-glaeser"
+    ],
+    "de": {
+      "titel": "Mein Akku heute",
+      "untertitel": "Auch du brauchst Strom. Manches lädt dich auf, manches leert dich.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Wie voll ist dein Akku heute? Kreise ein.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "motiv:batterie-leer",
+              "text": "fast leer"
+            },
+            {
+              "bild": "motiv:batterie",
+              "text": "halb voll"
+            },
+            {
+              "bild": "motiv:batterie-voll",
+              "text": "voll"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was lädt deinen Akku auf? Kreise ein.",
+          "hinweis": "Kreise so viele ein, wie du magst.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "klein": true,
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:bed",
+              "text": "schlafen"
+            },
+            {
+              "bild": "icon:run",
+              "text": "toben"
+            },
+            {
+              "bild": "icon:friends",
+              "text": "Freunde"
+            },
+            {
+              "bild": "icon:tree",
+              "text": "draußen"
+            },
+            {
+              "bild": "icon:music",
+              "text": "Musik"
+            },
+            {
+              "bild": "icon:palette",
+              "text": "malen"
+            },
+            {
+              "bild": "icon:heart",
+              "text": "kuscheln"
+            },
+            {
+              "bild": "icon:apple",
+              "text": "essen"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was leert deinen Akku? Kreise ein.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "klein": true,
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:speakerphone",
+              "text": "Lärm"
+            },
+            {
+              "bild": "icon:mood-angry",
+              "text": "Streit"
+            },
+            {
+              "bild": "icon:stopwatch",
+              "text": "Eile"
+            },
+            {
+              "bild": "icon:hourglass",
+              "text": "warten"
+            },
+            {
+              "bild": "icon:notebook",
+              "text": "Aufgaben"
+            },
+            {
+              "bild": "icon:device-tv",
+              "text": "Bildschirm"
+            },
+            {
+              "bild": "icon:zzz",
+              "text": "müde sein"
+            },
+            {
+              "bild": "icon:bowl-spoon",
+              "text": "Hunger"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mein Plan: Womit lädst du heute auf?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Heute lade ich meinen Akku auf mit …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder schätzen ein, wie voll ihr „Akku“ heute ist, erkennen, was sie auflädt und was sie Kraft kostet, und wählen eine Idee zum Aufladen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Tablet zeigen. „Was passiert, wenn der Akku fast leer ist? Und bei uns?“ Mit dem Körper zeigen: voll (Arme hoch), halb, leer (Arme hängen).",
+          "Aufgabe 1 (3 Min.): Akku einkreisen. Gruppe: Akku-Runde, jedes Kind zeigt Daumen oder Karte; sprechen muss niemand.",
+          "Aufgabe 2 und 3 (10 Min.): Bilder vorlesen, einkreisen lassen, eigene Ideen dazumalen. Dasselbe wirkt verschieden: Für manche lädt Toben auf, für andere leert es.",
+          "Aufgabe 4 (5 Min.): Satz schreiben oder diktieren; wer mag, liest ihn vor.",
+          "Im Alltag: Akku-Leiste an der Tür; morgens stecken die Kinder ihre Klammer."
+        ],
+        "hintergrund": "Der Akku ist ein Bild für Energie, das Kinder sofort verstehen. Er verbindet Selbstbeobachtung mit Handeln: Wer merkt, was Kraft gibt und was Kraft kostet, kann den Tag gezielter gestalten (Kanfer et al., 2012). Ein kurzer Check-in schult die Wahrnehmung des eigenen Befindens und schafft eine gemeinsame Sprache für Gefühle und Bedürfnisse (Brackett, 2019). In der Gruppe erleben Kinder, dass andere Ähnliches oder ganz anderes auflädt und dass beides in Ordnung ist (Yalom & Leszcz, 2005). Das Blatt beschreibt Erleben, es bewertet nicht: Einen „richtigen“ Akku-Stand gibt es nicht.",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon.",
+          "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 2; die Bilder als Karten legen statt einkreisen.",
+          "schwerer": "Eine Woche lang jeden Tag den Akku einkreisen und die Tage vergleichen."
+        },
+        "impulse": [
+          "Woran merkst du, dass dein Akku leer wird?",
+          "Was lädt dich schnell wieder auf?",
+          "Was kannst du tun, wenn der Akku fast leer ist?"
+        ],
+        "tipps": [
+          "Gruppe: Akku-Runde mit Daumen oder Farbkarte (grün, gelb, rot). Niemand muss etwas erklären oder kommentieren.",
+          "Einzelstunde: Akku am Anfang und am Ende der Stunde einschätzen; gemeinsam einen Aufladeplan für die Woche entwerfen."
+        ],
+        "achtung": "Ist der Akku über Wochen fast leer oder erzählt ein Kind von Hunger oder Angst zu Hause: nicht im Plenum vertiefen, einzeln zuhören, die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional Wäscheklammern"
+      }
+    },
+    "fr": {
+      "titel": "Ma batterie aujourd’hui",
+      "untertitel": "Toi aussi, tu as besoin d’énergie. Qu’est-ce qui te charge ?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Quel est le niveau de ta batterie aujourd’hui ? Entoure.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "motiv:batterie-leer",
+              "text": "presque vide"
+            },
+            {
+              "bild": "motiv:batterie",
+              "text": "à moitié pleine"
+            },
+            {
+              "bild": "motiv:batterie-voll",
+              "text": "pleine"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui recharge ta batterie ? Entoure.",
+          "hinweis": "Entoure autant d’images que tu veux.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "klein": true,
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:bed",
+              "text": "dormir"
+            },
+            {
+              "bild": "icon:run",
+              "text": "courir"
+            },
+            {
+              "bild": "icon:friends",
+              "text": "les amis"
+            },
+            {
+              "bild": "icon:tree",
+              "text": "dehors"
+            },
+            {
+              "bild": "icon:music",
+              "text": "musique"
+            },
+            {
+              "bild": "icon:palette",
+              "text": "dessiner"
+            },
+            {
+              "bild": "icon:heart",
+              "text": "câlins"
+            },
+            {
+              "bild": "icon:apple",
+              "text": "manger"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui vide ta batterie ? Entoure.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "klein": true,
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:speakerphone",
+              "text": "bruit"
+            },
+            {
+              "bild": "icon:mood-angry",
+              "text": "disputes"
+            },
+            {
+              "bild": "icon:stopwatch",
+              "text": "se presser"
+            },
+            {
+              "bild": "icon:hourglass",
+              "text": "attendre"
+            },
+            {
+              "bild": "icon:notebook",
+              "text": "devoirs"
+            },
+            {
+              "bild": "icon:device-tv",
+              "text": "écrans"
+            },
+            {
+              "bild": "icon:zzz",
+              "text": "fatigue"
+            },
+            {
+              "bild": "icon:bowl-spoon",
+              "text": "faim"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mon plan : avec quoi te recharges-tu aujourd’hui ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Aujourd’hui, je recharge ma batterie avec …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants évaluent le niveau de leur « batterie » aujourd’hui, repèrent ce qui les recharge et ce qui leur coûte de l’énergie, et choisissent une idée pour se recharger.",
+        "ablauf": [
+          "Entrée (5 min) : montrer une tablette. « Que se passe-t-il quand la batterie est presque vide ? Et chez nous ? » Mimer : pleine (bras en l’air), à moitié, vide (bras ballants).",
+          "Tâche 1 (3 min) : entourer la batterie. Groupe : tour des batteries, chaque enfant montre un pouce ou une carte ; personne n’est obligé de parler.",
+          "Tâches 2 et 3 (10 min) : lire les images, faire entourer, dessiner ses propres idées. La même chose agit différemment : courir recharge les uns, vide les autres.",
+          "Tâche 4 (5 min) : écrire ou dicter la phrase ; qui veut la lit.",
+          "Au quotidien : jauge de batterie à la porte ; le matin, les enfants y accrochent leur pince."
+        ],
+        "hintergrund": "La batterie est une image de l’énergie que les enfants comprennent tout de suite. Elle relie auto-observation et action : celui qui remarque ce qui donne et ce qui coûte de l’énergie peut mieux organiser sa journée (Kanfer et al., 2012). Un bref point de situation entraîne la perception de son état et crée un langage commun pour les émotions et les besoins (Brackett, 2019). En groupe, les enfants découvrent que d’autres sont rechargés par des choses semblables ou très différentes, et que les deux sont normaux (Yalom & Leszcz, 2005). La fiche décrit le vécu sans le juger : il n’y a pas de « bon » niveau de batterie.",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon.",
+          "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les tâches 1 et 2 ; poser les images en cartes au lieu d’entourer.",
+          "schwerer": "Pendant une semaine, entourer chaque jour sa batterie et comparer les jours."
+        },
+        "impulse": [
+          "À quoi vois-tu que ta batterie se vide ?",
+          "Qu’est-ce qui te recharge vite ?",
+          "Que peux-tu faire quand ta batterie est presque vide ?"
+        ],
+        "tipps": [
+          "Groupe : tour des batteries avec pouce ou carte de couleur (vert, jaune, rouge). Personne n’a à expliquer ni à commenter.",
+          "Individuel : évaluer la batterie au début et à la fin de la séance ; préparer ensemble un plan de recharge pour la semaine."
+        ],
+        "achtung": "Si la batterie reste presque vide pendant des semaines ou si un enfant parle de faim ou de peur à la maison : ne pas approfondir devant le groupe, écouter en tête à tête, informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; pinces à linge en option"
+      }
+    }
+  },
+  {
+    "id": "t1-wohlfuehl-glaeser",
+    "bereich": "selbstreflexion",
+    "thema": "beduerfnisse",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "K-13",
+      "K-15",
+      "SOZ-24"
+    ],
+    "schlagworte": [
+      "Bedürfnisse",
+      "Wohlfühlen",
+      "Wohlfühl-Gläser",
+      "Selbstwahrnehmung",
+      "Gruppenrunde"
+    ],
+    "bild": "icon:cup",
+    "verwandt": [
+      "beduerfnis-glaeser",
+      "was-tut-mir-gut",
+      "t1-mein-akku-heute"
+    ],
+    "de": {
+      "titel": "Meine Wohlfühl-Gläser",
+      "untertitel": "Was brauchst du, damit es dir gut geht? Wie voll sind deine Gläser?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Male jedes Glas an: So voll ist es heute.",
+          "hinweis": "Voll heißt: Davon habe ich genug. Die leeren Gläser sind für deine eigenen Ideen.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zieh einen Strich: So voll möchtest du es.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "spalten": 4,
+          "leer": 2,
+          "legende": [
+            "Strich: so voll möchte ich es",
+            "Farbe: so voll ist es heute"
+          ],
+          "items": [
+            "Schlafen",
+            "Essen & Trinken",
+            "Bewegen",
+            "Spielen",
+            "Freunde",
+            "Trost & Kuscheln"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welches Glas ist am leersten? Schreib es auf.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein leerstes Glas heißt …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was könnte es füllen? Male oder schreibe.",
+          "hinweis": "Beispiel: Mein Glas „Spielen“ füllt sich, wenn ich mit Lea baue.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Das füllt mein Glas:",
+          "hoehe": 4,
+          "zeichnen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, was sie zum Wohlfühlen brauchen und wie voll das jeweilige „Glas“ heute ist, und finden eine Idee, ein leeres Glas zu füllen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein Glas Wasser zeigen. „Wann ist ein Glas leer? Was braucht ihr, damit es euch gut geht?“ Ideen sammeln.",
+          "Erklären (5 Min.): Farbe = heute, Strich = so voll möchte ich es. Am Glas „Schlafen“ vormachen; ein niedriger Strich ist genauso richtig.",
+          "Einzelarbeit (10 Min.): Gläser ausmalen, Striche ziehen, die leeren Gläser selbst beschriften oder bemalen. Leise Musik.",
+          "Aufgabe 3 und 4 (10 Min.): Leerstes Glas finden und aufschreiben; malen oder diktieren, was es füllen könnte. Beispiel gemeinsam lesen.",
+          "Gruppe: Gläser-Runde. Wer mag, zeigt ein volles und ein leeres Glas."
+        ],
+        "hintergrund": "Bedürfnisse sind das, was Menschen für ihr Wohlbefinden brauchen. Die Selbstbestimmungstheorie nennt Autonomie, Kompetenz und soziale Eingebundenheit als psychologische Grundbedürfnisse (Deci & Ryan, 2000); dauerhaft unerfüllte Bedürfnisse gelten als Quelle von Belastung (Grawe, 2004). Kinder spüren Mangel oft nur als Laune: gereizt, quengelig, müde. Das Glas macht ihn sichtbar und gibt Sprache für „Mir fehlt etwas“. Der Strich trennt Wichtigkeit und Erfüllung: Ein halbes Glas kann genügen, und aus dem Abstand lässt sich ein kleiner Schritt ableiten.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Nur das Ausmalen, ohne Strich; Aufgabe 3 mündlich, die Lehrperson schreibt mit.",
+          "schwerer": "Nach einer Woche mit anderer Farbe neu ausmalen und vergleichen."
+        },
+        "impulse": [
+          "Welches Glas ist bei dir schnell voll, welches schnell leer?",
+          "Wer oder was kann dir helfen, ein Glas zu füllen?",
+          "Ist bei anderen dasselbe Glas leer?"
+        ],
+        "tipps": [
+          "Gruppe: Gläser-Runde ohne Kommentare der anderen. Wer nichts zeigen mag, sagt „Ich passe“. Unterschiede sind normal.",
+          "Einzelstunde: Über das leerste Glas sprechen und einen kleinen Schritt für die Woche vereinbaren."
+        ],
+        "achtung": "Sind „Essen & Trinken“, „Schlafen“ oder „Trost“ immer wieder fast leer: nicht im Plenum nachfragen, Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren. Bei Gefährdung sofort nach internem Ablauf handeln.",
+        "material": "Buntstifte oder Bleistift; ein Glas Wasser"
+      }
+    },
+    "fr": {
+      "titel": "Mes verres du bien-être",
+      "untertitel": "De quoi as-tu besoin pour aller bien ? Tes verres sont-ils pleins ?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Colorie chaque verre jusqu’au niveau d’aujourd’hui.",
+          "hinweis": "Plein veut dire : j’en ai assez. Les verres vides sont pour tes idées.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trace un trait là où tu voudrais qu’il soit plein.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "spalten": 4,
+          "leer": 2,
+          "legende": [
+            "Trait : le niveau que je veux",
+            "Couleur : le niveau d’aujourd’hui"
+          ],
+          "items": [
+            "Dormir",
+            "Manger et boire",
+            "Bouger",
+            "Jouer",
+            "Les amis",
+            "Câlins et réconfort"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel verre est le plus vide ? Écris-le.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon verre le plus vide s’appelle …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui pourrait le remplir ? Dessine ou écris.",
+          "hinweis": "Exemple : mon verre « Jouer » se remplit quand je construis avec Léa.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Voilà ce qui remplit mon verre :",
+          "hoehe": 4,
+          "zeichnen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants repèrent ce dont ils ont besoin pour se sentir bien et à quel point chaque « verre » est plein aujourd’hui, et trouvent une idée pour remplir un verre vide.",
+        "ablauf": [
+          "Entrée (5 min) : montrer un verre d’eau. « Quand un verre est-il vide ? De quoi avez-vous besoin pour aller bien ? » Recueillir les idées.",
+          "Expliquer (5 min) : couleur = aujourd’hui, trait = niveau voulu. Montrer avec « Dormir » ; un trait bas est tout aussi juste.",
+          "Travail individuel (10 min) : colorier, tracer les traits, nommer ou dessiner les verres vides. Musique douce.",
+          "Tâches 3 et 4 (10 min) : trouver le verre le plus vide et l’écrire ; dessiner ou dicter ce qui pourrait le remplir. Lire l’exemple ensemble.",
+          "Groupe : tour des verres. Qui veut montre un verre plein et un verre vide."
+        ],
+        "hintergrund": "Les besoins sont ce dont les êtres humains ont besoin pour leur bien-être. La théorie de l’autodétermination cite l’autonomie, la compétence et l’appartenance sociale comme besoins psychologiques fondamentaux (Deci & Ryan, 2000) ; des besoins durablement insatisfaits sont une source de souffrance (Grawe, 2004). Les enfants ressentent le manque souvent comme de l’humeur : irritable, grognon, fatigué. Le verre le rend visible et donne des mots à « il me manque quelque chose ». Le trait sépare importance et satisfaction : un demi-verre peut suffire, et l’écart permet de déduire un petit pas.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement colorier, sans trait ; tâche 3 à l’oral, l’adulte écrit.",
+          "schwerer": "Une semaine plus tard, recolorier d’une autre couleur et comparer."
+        },
+        "impulse": [
+          "Quel verre est vite plein chez toi, lequel se vide vite ?",
+          "Qui ou quoi peut t’aider à remplir un verre ?",
+          "Est-ce le même verre qui est vide chez les autres ?"
+        ],
+        "tipps": [
+          "Groupe : tour des verres sans commentaires des autres. Qui ne veut rien montrer dit « Je passe ». Les différences sont normales.",
+          "Individuel : parler du verre le plus vide et convenir d’un petit pas pour la semaine."
+        ],
+        "achtung": "Si « Manger et boire », « Dormir » ou « Câlins » sont souvent presque vides : ne pas interroger devant le groupe, proposer un entretien, informer la direction compétente (responsable). En cas de danger, agir selon la procédure interne.",
+        "material": "Crayons de couleur ou crayon ; un verre d’eau"
+      }
+    }
+  },
+  {
+    "id": "t2-werte-kompass",
+    "bereich": "selbstreflexion",
+    "thema": "werte",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40 Min.",
+    "eldib": [
+      "SOZ-35",
+      "K-19",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Werte",
+      "Was mir wichtig ist",
+      "Richtung",
+      "Kompass",
+      "Handeln",
+      "ACT"
+    ],
+    "bild": "icon:compass",
+    "verwandt": [
+      "werte-glaeser"
+    ],
+    "de": {
+      "titel": "Mein Werte-Kompass",
+      "untertitel": "Ein Kompass zeigt dir die Richtung. Deine Werte zeigen dir, was dir wichtig ist – auch wenn gerade Nebel im Bauch ist.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was ist ein Wert?",
+          "text": "Ein Wert ist etwas, das dir wichtig ist, zum Beispiel Freundschaft, Mut oder Ehrlichkeit. Ein Wert ist wie die Richtung auf dem Kompass. Man kommt nie ganz an. Aber jeden Tag kannst du einen Schritt in diese Richtung gehen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie oft hast du in der letzten Woche in diese Richtung gehandelt? Male jedes Stück von innen nach außen aus.",
+          "hinweis": "Innen heißt selten, außen heißt oft. Es gibt keine richtigen oder falschen Antworten. Fehlt dir ein Wert? Den schreibst du gleich bei Aufgabe 2 auf.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "netz",
+          "stufen": 5,
+          "bereiche": [
+            "Freundlich sein",
+            "Mutig sein",
+            "Anderen helfen",
+            "Ehrlich sein",
+            "Fair sein",
+            "Neugierig sein",
+            "Dranbleiben",
+            "Spaß haben"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welcher Wert ist dir am wichtigsten? Welcher ist diese Woche zu kurz gekommen?",
+          "symbole": [
+            "schreiben"
+          ],
+          "hinweis": "Es darf auch ein Wert sein, der im Kompass fehlt."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Am wichtigsten ist mir: …",
+            "Zu kurz gekommen ist: …",
+            "Ein Wert, der im Kompass fehlt: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was tust du schon für einen Wert? Was könntest du diese Woche tun?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mein Wert",
+            "Das tue ich schon",
+            "Das könnte ich diese Woche tun"
+          ],
+          "breiten": [
+            1,
+            1.5,
+            1.9
+          ],
+          "beispiel": [
+            "Freundlich sein",
+            "Ich grüße alle in meiner Klasse.",
+            "Ich frage ein Kind, das allein steht, ob es mitspielen will."
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hält dich manchmal ab? Wie gehst du trotzdem einen Schritt?",
+          "hinweis": "Beispiel: Ich habe Angst, dass mich jemand auslacht. Ich frage trotzdem, ob ich mitspielen darf. Du musst nichts vorlesen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Manchmal hält mich ab: …",
+            "Ich gehe trotzdem einen Schritt: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane einen Schritt für diese Woche.",
+          "hinweis": "Der Schritt soll klein sein. Du solltest ihn wirklich schaffen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich in der Pause jemanden allein stehen sehe,",
+              "dann": "frage ich, ob er oder sie mitspielen möchte. (Wert: freundlich sein)"
+            }
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkunden, was ihnen wichtig ist (Werte als Richtung), schätzen ein, wie sehr sie in der letzten Woche danach gehandelt haben, und planen einen kleinen Schritt.",
+        "ablauf": [
+          "Einstieg (5 Min.): Einen Kompass zeigen. „Er zeigt die Richtung, nicht das Ziel.“ Werte als Richtung erklären, mit einem eigenen Beispiel.",
+          "Aufgabe 1 (10 Min.): Das Netz in Einzelarbeit ausmalen, ohne Vergleich. Wer einen Wert vermisst, notiert ihn bei Aufgabe 2.",
+          "Aufgabe 2 und 3 (12 Min.): Wichtigsten und zu kurz gekommenen Wert benennen, Tabelle ausfüllen. Das Beispiel gemeinsam lesen.",
+          "Aufgabe 4 und 5 (10 Min.): Hindernis benennen, „trotzdem“-Schritt und Wenn-dann-Plan schreiben. Angst, Müdigkeit oder Ärger dürfen dabei sein.",
+          "Austausch (5 Min., freiwillig): Kompass-Runde: Jedes Kind nennt einen Wert und einen kleinen Schritt."
+        ],
+        "hintergrund": "Die Akzeptanz- und Commitment-Therapie (ACT) versteht Werte als frei gewählte Lebensrichtungen, nicht als Ziele: Man kommt nie ganz an, kann aber jeden Tag in diese Richtung handeln (Hayes et al., 2012). Zentral ist die Verbindung von Werten mit konkretem Handeln, auch wenn unangenehme Gefühle dabei sind. Die Kompass-Metapher und das Ausmalen als Selbsteinschätzung machen das für Kinder greifbar. Wertklärende Methoden (Simon et al., 1972) fragen, statt etwas vorzugeben: Es gibt keine richtigen Antworten.",
+        "quellen": [
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Simon, S. B., Howe, L. W. & Kirschenbaum, H. (1972). Values Clarification: A Handbook of Practical Strategies for Teachers and Students. New York: Hart."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Werte ausmalen und mündlich einen Schritt nennen.",
+          "schwerer": "Zu jedem Wert eine Situation notieren, in der er schwerfällt."
+        },
+        "impulse": [
+          "Woran merkst du, dass dir etwas wichtig ist?",
+          "Was tust du, wenn die Angst „Nein“ sagt, der Wert aber „Ja“?"
+        ],
+        "tipps": [
+          "Gruppe: Kompass-Runde im Kreis. Unterschiede sind erwünscht, jedes Kind hat seinen eigenen Kompass. Das Netz muss niemand zeigen.",
+          "Einzelstunde: Das Netz nach vier Wochen in einer anderen Farbe wiederholen und vergleichen."
+        ],
+        "achtung": "Erzählt ein Kind von Druck, Sorgen oder Streit zu Hause, oder sind fast alle Stücke leer: nicht im Plenum vertiefen, Einzelgespräch anbieten, die Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional ein Kompass"
+      }
+    },
+    "fr": {
+      "titel": "Ma boussole des valeurs",
+      "untertitel": "Une boussole montre la direction. Tes valeurs montrent ce qui compte pour toi, même quand le ventre est plein de brouillard.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Qu’est-ce qu’une valeur ?",
+          "text": "Une valeur, c’est quelque chose qui compte pour toi, comme l’amitié, le courage ou l’honnêteté. Une valeur est comme la direction sur la boussole. On n’y arrive jamais tout à fait. Mais chaque jour, on peut faire un pas dans cette direction."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Combien de fois as-tu agi dans cette direction la semaine dernière ? Colorie chaque part, du centre vers l’extérieur.",
+          "hinweis": "Au centre : rarement ; à l’extérieur : souvent. Il n’y a pas de bonne ou de mauvaise réponse. Il te manque une valeur ? Tu l’écriras à la tâche 2.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "netz",
+          "stufen": 5,
+          "bereiche": [
+            "Être aimable",
+            "Oser",
+            "Aider les autres",
+            "Dire la vérité",
+            "Être juste",
+            "Découvrir du nouveau",
+            "Persévérer",
+            "S’amuser"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle valeur compte le plus pour toi ? Laquelle est passée au second plan cette semaine ?",
+          "symbole": [
+            "schreiben"
+          ],
+          "hinweis": "Ce peut être aussi une valeur qui manque sur la boussole."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Le plus important pour moi : …",
+            "Cette semaine, j’ai négligé : …",
+            "Une valeur qui manque sur la boussole : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que fais-tu déjà pour une valeur ? Que pourrais-tu faire cette semaine ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ma valeur",
+            "Je le fais déjà",
+            "Je pourrais le faire cette semaine"
+          ],
+          "breiten": [
+            1,
+            1.5,
+            1.9
+          ],
+          "beispiel": [
+            "Être aimable",
+            "Je dis bonjour à toute ma classe.",
+            "Je demande à un enfant seul s’il veut jouer avec moi."
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te retient parfois ? Comment fais-tu quand même un pas ?",
+          "hinweis": "Exemple : j’ai peur qu’on se moque de moi. Je demande quand même si je peux jouer. Tu n’as rien à lire à voix haute.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Parfois, ce qui me retient : …",
+            "Je fais quand même un pas : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prévois un pas pour cette semaine.",
+          "hinweis": "Le pas doit être petit. Tu dois vraiment pouvoir le faire.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si, à la récréation, je vois quelqu’un tout seul,",
+              "dann": "je lui demande s’il ou elle veut jouer. (Valeur : être aimable)"
+            }
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants explorent ce qui compte pour eux (les valeurs comme direction), estiment dans quelle mesure ils ont agi en ce sens la semaine passée et planifient un petit pas.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer une boussole. « Elle indique la direction, pas le but. » Expliquer les valeurs comme direction, avec un exemple personnel.",
+          "Tâche 1 (10 min) : colorier le cercle en travail individuel, sans comparer. Si une valeur manque, l’écrire à la tâche 2.",
+          "Tâches 2 et 3 (12 min) : nommer la valeur la plus importante et celle négligée, remplir le tableau. Lire l’exemple ensemble.",
+          "Tâches 4 et 5 (10 min) : nommer l’obstacle, écrire le pas « quand même » et le plan « si … alors ». Peur, fatigue ou colère peuvent être là.",
+          "Échange (5 min, volontaire) : tour de boussole : chaque enfant nomme une valeur et un petit pas."
+        ],
+        "hintergrund": "La thérapie d’acceptation et d’engagement (ACT) comprend les valeurs comme des directions de vie choisies, non comme des buts : on n’y arrive jamais tout à fait, mais on peut agir chaque jour dans ce sens (Hayes et al., 2012). L’essentiel est de relier valeurs et actions concrètes, même avec des émotions désagréables. La métaphore de la boussole et le coloriage comme auto-évaluation le rendent accessible aux enfants. Les méthodes de clarification des valeurs (Simon et al., 1972) questionnent au lieu d’imposer : il n’y a pas de bonne réponse.",
+        "quellen": [
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Simon, S. B., Howe, L. W. & Kirschenbaum, H. (1972). Values Clarification: A Handbook of Practical Strategies for Teachers and Students. New York: Hart."
+        ],
+        "differenzierung": {
+          "leichter": "Colorier seulement trois valeurs et nommer un pas à l’oral.",
+          "schwerer": "Noter pour chaque valeur une situation où elle est difficile à vivre."
+        },
+        "impulse": [
+          "À quoi remarques-tu que quelque chose compte pour toi ?",
+          "Que fais-tu quand la peur dit « non » et la valeur « oui » ?"
+        ],
+        "tipps": [
+          "Groupe : tour de boussole en cercle. Les différences sont les bienvenues, chacun a sa propre boussole. Personne n’est obligé de montrer son cercle.",
+          "Séance individuelle : refaire le cercle après quatre semaines, avec une autre couleur, et comparer."
+        ],
+        "achtung": "Si un enfant évoque pression, soucis ou disputes à la maison, ou si presque toutes les parts sont vides : ne pas approfondir en plénière, proposer un entretien individuel, informer la direction (responsable).",
+        "material": "Crayons de couleur ; en option une boussole"
+      }
+    }
+  },
+  {
+    "id": "t2-staerken-schatzkiste",
+    "bereich": "selbstreflexion",
+    "thema": "rueckblick",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-19",
+      "K-20",
+      "K-18",
+      "K-28"
+    ],
+    "schlagworte": [
+      "Stärken",
+      "Selbstwert",
+      "Schatzkiste",
+      "Zuspruch",
+      "Gruppe",
+      "Wachstum"
+    ],
+    "bild": "icon:package",
+    "verwandt": [
+      "staerken-karten",
+      "beduerfnis-glaeser"
+    ],
+    "de": {
+      "titel": "Meine Stärken-Schatzkiste",
+      "untertitel": "Eine Stärke ist etwas, das du gut kannst oder das dich ausmacht: Zeichnen, Geduld, Humor. Jede Stärke ist ein Schatz in deiner Kiste.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Male jedes Glas so voll, wie die Stärke heute schon bei dir ist.",
+          "hinweis": "Der Strich zeigt, wie voll sie noch werden darf. Es gibt keine falschen Antworten. Die leeren Gläser sind für Schätze, die hier fehlen.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "spalten": 5,
+          "legende": [
+            "Strich: da darf noch mehr werden",
+            "Ausmalen: so viel habe ich schon"
+          ],
+          "items": [
+            "Mutig sein",
+            "Freundlich sein",
+            "Geduld haben",
+            "Dranbleiben",
+            "Ehrlich sein",
+            "Neugierig sein",
+            "Anderen helfen",
+            "Humor haben",
+            "Gut zuhören",
+            "Fantasie",
+            "Fair sein",
+            "Ruhig bleiben"
+          ],
+          "leer": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Suche deine drei vollsten Gläser. Wann hast du diese Stärke schon gezeigt?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Meine Stärke",
+            "Das habe ich getan"
+          ],
+          "breiten": [
+            1,
+            3
+          ],
+          "beispiel": [
+            "Geduld haben",
+            "Ich habe meinem kleinen Bruder beim Puzzle geholfen, bis es fertig war."
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schatz-Zuspruch: Gib diese Seite weiter, wenn du magst. Andere schreiben, welche Schätze sie bei dir gesehen haben.",
+          "hinweis": "Schreibe auf den Seiten der anderen so: „Ich habe gesehen, wie du … Das zeigt: Du hast …“ Nur Dinge, die du wirklich gesehen hast. Kein „aber“, kein Vergleich.",
+          "symbole": [
+            "gruppe",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Von",
+            "Dein Schatz",
+            "Da habe ich ihn gesehen"
+          ],
+          "breiten": [
+            0.9,
+            1.2,
+            2.6
+          ],
+          "beispiel": [
+            "Zoé",
+            "Humor",
+            "Du hast den ganzen Bus zum Lachen gebracht, als es regnete."
+          ],
+          "zeilen": 6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies, was andere gesehen haben. Was freut dich? Was überrascht dich?",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ],
+          "hinweis": "Das machst du, wenn dein Blatt zurück ist."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Darüber freue ich mich: …",
+            "Das hat mich überrascht: …",
+            "Diesen Schatz nehme ich mit: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Eine Stärke darf noch wachsen. Was ist dein nächster kleiner Schritt?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich beim Rechnen nicht weiterweiß,",
+              "dann": "bleibe ich dran und frage nach einem Tipp. (Stärke: Dranbleiben)"
+            }
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen eigene Stärken, belegen sie mit Beispielen, erfahren, was andere an ihnen schätzen, und wählen eine Stärke, die wachsen darf.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was kann jemand gut, das man nicht sofort sieht?“ Beispiele sammeln: Geduld, Humor, Trösten.",
+          "Aufgabe 1 und 2 (20 Min.): Gläser ruhig ausmalen; ein niedriger Stand ist kein Mangel. Drei Schätze mit Beispielen belegen.",
+          "Aufgabe 3 (12 Min., freiwillig): Seite 2 geht in der Runde, Seite 1 bleibt beim Kind. Jedes Kind schreibt bei zwei bis drei anderen: nur Gesehenes, konkret, kein „aber“.",
+          "Aufgabe 4 und 5 (8 Min.): Zuspruch lesen, einen Wachstumsschritt planen, freiwillig einen Satz vorlesen. Wer wenig bekommen hat: Die Lehrperson ergänzt."
+        ],
+        "hintergrund": "Stärkenorientierte Arbeit geht davon aus, dass es das Wohlbefinden fördern kann, persönliche Stärken zu benennen und neu einzusetzen (Peterson & Seligman, 2004; Seligman et al., 2005). Das Blatt trennt, wie voll eine Stärke ist (Ausmalen) und wo sie wachsen darf (Strich): Wachstumsdenken statt „Ich habe sie oder nicht“ (Dweck, 2006). Anerkennung wirkt, wenn sie konkret ist: Im Zuspruch steht immer, woran man die Stärke gesehen hat.",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Nur sechs Gläser; Zuspruch zu zweit mit der Lehrperson.",
+          "schwerer": "Notieren, in welcher schwierigen Situation die Stärke helfen würde."
+        },
+        "impulse": [
+          "Welche Stärke siehst du bei anderen leichter als bei dir?",
+          "Wie fühlt es sich an, wenn jemand sagt, was er an dir sieht?"
+        ],
+        "tipps": [
+          "Gruppe: Paare oder Dreiergruppen so bilden, dass jedes Kind mindestens zwei Zusprüche bekommt.",
+          "Einzelstunde: Die Lehrperson schreibt den ersten Schatz; zu Hause kann eine Bezugsperson einen zweiten schreiben."
+        ],
+        "achtung": "Bei niedrigem Selbstwert oder wenig Rückhalt in der Gruppe den Zuspruch vorbereiten, damit niemand leer ausgeht. Starke Selbstabwertung: Einzelgespräch, Leitung (Responsable) informieren.",
+        "material": "Buntstifte, Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Mon coffre aux forces",
+      "untertitel": "Une force, c’est ce que tu sais bien faire ou qui te caractérise : dessiner, la patience, l’humour. Chaque force est un trésor de ton coffre.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Colorie chaque verre : plus la force est présente chez toi aujourd’hui, plus il est plein.",
+          "hinweis": "Le trait montre jusqu’où elle peut encore grandir. Il n’y a pas de mauvaise réponse. Les verres vides sont pour les trésors qui manquent ici.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "spalten": 5,
+          "legende": [
+            "Trait : elle peut encore grandir",
+            "Colorier : ce que j’ai déjà"
+          ],
+          "items": [
+            "Courage",
+            "Gentillesse",
+            "Patience",
+            "Persévérance",
+            "Honnêteté",
+            "Curiosité",
+            "Entraide",
+            "Humour",
+            "Écoute",
+            "Imagination",
+            "Équité",
+            "Calme"
+          ],
+          "leer": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cherche tes trois verres les plus pleins. Quand as-tu déjà montré cette force ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ma force",
+            "Ce que j’ai fait"
+          ],
+          "breiten": [
+            1,
+            3
+          ],
+          "beispiel": [
+            "Patience",
+            "J’ai aidé mon petit frère avec son puzzle jusqu’à la fin."
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trésors offerts : passe cette page si tu veux. Les autres écrivent quels trésors ils ont vus chez toi.",
+          "hinweis": "Sur les pages des autres, écris : « J’ai vu comment tu … Cela montre : tu as … » Seulement ce que tu as vraiment vu. Pas de « mais », pas de comparaison.",
+          "symbole": [
+            "gruppe",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "De",
+            "Ton trésor",
+            "Là où je l’ai vu"
+          ],
+          "breiten": [
+            0.9,
+            1.2,
+            2.6
+          ],
+          "beispiel": [
+            "Zoé",
+            "Humour",
+            "Tu as fait rire tout le bus quand il pleuvait."
+          ],
+          "zeilen": 6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis ce que les autres ont vu. Qu’est-ce qui te fait plaisir ? Te surprend ?",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ],
+          "hinweis": "Tu le fais quand ta feuille est revenue."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Ça me fait plaisir : …",
+            "Ça m’a surpris : …",
+            "Ce trésor, je l’emporte : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Une force peut encore grandir. Quel est ton prochain petit pas ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je ne sais pas continuer en maths,",
+              "dann": "je persévère et je demande un conseil. (Force : persévérance)"
+            }
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent leurs forces, les illustrent par des exemples, découvrent ce que les autres apprécient chez eux et choisissent une force qui peut encore grandir.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Que sait bien faire quelqu’un sans que ça se voie ? » Collecter : patience, humour, consoler.",
+          "Tâches 1 et 2 (20 min) : colorier les verres au calme ; un niveau bas n’est pas un manque. Illustrer trois trésors par des exemples.",
+          "Tâche 3 (12 min, volontaire) : la page 2 circule, la page 1 reste chez l’enfant. Chacun écrit chez deux ou trois autres : seulement ce qu’on a vu, concret, sans « mais ».",
+          "Tâches 4 et 5 (8 min) : lire les messages, prévoir un pas de croissance, lire une phrase à voix haute (volontaire). Qui en a peu reçu : l’adulte complète."
+        ],
+        "hintergrund": "Le travail centré sur les forces part de l’idée que nommer ses forces personnelles et les utiliser autrement peut favoriser le bien-être (Peterson & Seligman, 2004 ; Seligman et al., 2005). La feuille distingue le niveau d’une force (coloriage) et ce qui peut grandir (trait) : état d’esprit de croissance plutôt que « je l’ai ou pas » (Dweck, 2006). La reconnaissance agit quand elle est concrète : chaque message dit où l’on a vu la force.",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement six verres ; trésors offerts à deux avec l’adulte.",
+          "schwerer": "Noter dans quelle situation difficile la force aiderait."
+        },
+        "impulse": [
+          "Quelle force vois-tu plus facilement chez les autres que chez toi ?",
+          "Que ressens-tu quand quelqu’un dit ce qu’il voit en toi ?"
+        ],
+        "tipps": [
+          "Groupe : former des duos ou trios pour que chaque enfant reçoive au moins deux messages.",
+          "Séance individuelle : l’adulte écrit le premier trésor ; une personne de confiance à la maison peut en écrire un second."
+        ],
+        "achtung": "En cas d’estime de soi basse ou de peu de soutien dans le groupe, préparer les messages pour que personne ne reste sans rien. Forte dévalorisation : entretien individuel, informer la direction (responsable).",
+        "material": "Crayons de couleur, stylos"
+      }
+    }
+  },
+  {
+    "id": "t4-werte-karten",
+    "bereich": "selbstreflexion",
+    "thema": "werte",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "K-34",
+      "SOZ-39",
+      "V-29"
+    ],
+    "schlagworte": [
+      "Werte",
+      "Entscheidungen",
+      "kleine Schritte",
+      "Identität",
+      "Wenn-dann"
+    ],
+    "bild": "icon:compass",
+    "verwandt": [
+      "werte-glaeser",
+      "einfluss-kreise",
+      "t4-was-ich-brauche"
+    ],
+    "de": {
+      "titel": "Meine Werte-Karten",
+      "untertitel": "Was ist mir wichtig – und was tue ich dafür?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Werte zeigen, wie du leben willst. Sie sind kein Ziel, das man abhakt, sondern eine Richtung, wie bei einem Kompass. Es gibt keine richtigen oder falschen Werte."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreis die drei Werte ein, die dir am wichtigsten sind.",
+          "hinweis": "Oder schneide die Karten aus und leg sie in drei Stapel: sehr wichtig, wichtig, weniger wichtig.",
+          "symbole": [
+            "einkreisen",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 86,
+          "karten": [
+            {
+              "titel": "Freundschaft",
+              "bild": "icon:friends"
+            },
+            {
+              "titel": "Familie",
+              "bild": "icon:home"
+            },
+            {
+              "titel": "Dazugehören",
+              "bild": "icon:users-group"
+            },
+            {
+              "titel": "Ehrlichkeit",
+              "bild": "icon:lock-open"
+            },
+            {
+              "titel": "Mut",
+              "bild": "icon:mountain"
+            },
+            {
+              "titel": "Respekt",
+              "bild": "icon:heart-handshake"
+            },
+            {
+              "titel": "Gerechtigkeit",
+              "bild": "icon:scale"
+            },
+            {
+              "titel": "Freiheit",
+              "bild": "icon:feather"
+            },
+            {
+              "titel": "Helfen",
+              "bild": "icon:lifebuoy"
+            },
+            {
+              "titel": "Lernen",
+              "bild": "icon:bulb"
+            },
+            {
+              "titel": "Erfolg",
+              "bild": "icon:trophy"
+            },
+            {
+              "titel": "Spaß",
+              "bild": "icon:mood-happy"
+            },
+            {
+              "titel": "Gesundheit",
+              "bild": "icon:heart"
+            },
+            {
+              "titel": "Natur",
+              "bild": "icon:leaf"
+            },
+            {
+              "titel": "Kreativität",
+              "bild": "icon:palette"
+            },
+            {
+              "titel": "Ruhe",
+              "bild": "icon:yoga"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie sehr lebst du deinen wichtigsten Wert gerade?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "gar nicht",
+          "bis": "voll und ganz",
+          "stufen": 11
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Ideen für kleine Schritte",
+          "items": [
+            "jemandem schreiben",
+            "jemandem helfen",
+            "jemandem zuhören",
+            "ehrlich sagen, was ich denke",
+            "etwas Neues ausprobieren",
+            "eine Pause für mich",
+            "draußen sein",
+            "etwas üben",
+            "um Hilfe bitten",
+            "Danke sagen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane für jeden deiner drei Werte einen kleinen Schritt.",
+          "hinweis": "Klein heißt: in 5 Minuten machbar. Ideen stehen im Kasten davor.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mein Wert",
+            "Mein kleiner Schritt",
+            "Wann?"
+          ],
+          "breiten": [
+            1,
+            2.4,
+            1.1
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Freundschaft",
+            "Tiago schreiben: „Wie war dein Wochenende?“",
+            "Mi, nach der Schule"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was könnte dich abhalten? Kreuze an und plane dagegen.",
+          "hinweis": "Hindernisse sind normal. Wer sie kennt, kann sich vorbereiten.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Ich habe keine Lust.",
+            "Ich vergesse es.",
+            "Ich habe Angst vor Blicken oder Sprüchen.",
+            "Ich denke: Ich kann das nicht.",
+            "Mir fehlt die Zeit.",
+            "Ich bin zu müde."
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich keine Lust habe, Tiago zu schreiben,",
+              "dann": "schreibe ich nur einen Satz und lege das Handy danach weg."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Ein Wert ist eine Richtung",
+          "text": "Du kannst jeden Tag ein Stück in diese Richtung gehen, auch mit Angst im Bauch oder an einem schlechten Tag. Mal klappt es gut, mal weniger. Was dir wichtig ist, ändert das nicht."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen benennen drei Werte, die ihnen wichtig sind, und planen für jeden einen kleinen Schritt, der den Wert im Alltag sichtbar macht.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Worüber regt ihr euch richtig auf?“ Dahinter steht oft ein Wert (Ungerechtigkeit – Gerechtigkeit).",
+          "Karten und Skala (10 Min.): drei Werte einkreisen oder Karten sortieren; Abstand zwischen Wichtigkeit und Leben ist normal.",
+          "Schritte (10 Min.): Ideen lesen, je Wert einen Schritt planen, der in 5 Minuten machbar ist.",
+          "Hindernis (8 Min.): Aufgabe 4; Wenn-dann-Plan für das wahrscheinlichste Hindernis, zu zweit prüfen.",
+          "Nach einer Woche: Welcher Schritt wurde gemacht? Was hat es leichter oder schwerer gemacht?"
+        ],
+        "hintergrund": "Werteklärung ist ein Kernprozess der Akzeptanz- und Commitment-Therapie (ACT): Werte sind frei gewählte Lebensrichtungen, nach denen man auch bei unangenehmen Gefühlen handeln kann (Hayes, Strosahl & Wilson, 2012). Übungen zum Wählen und Sortieren haben in der Pädagogik eine lange Tradition (Simon, Howe & Kirschenbaum, 1972); es gibt keine richtigen oder falschen Werte. Der kleine Schritt und der Wenn-dann-Plan für das Hindernis verbinden den Wert mit konkretem Handeln (Gollwitzer, 1999).",
+        "quellen": [
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Simon, S. B., Howe, L. W. & Kirschenbaum, H. (1972). Values Clarification: A Handbook of Practical Strategies for Teachers and Students. New York: Hart.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur einen Wert wählen und einen Schritt aus der Wörterkiste nehmen.",
+          "schwerer": "Zwei Werte wählen, die sich widersprechen können, und eine Entscheidung beschreiben."
+        },
+        "impulse": [
+          "Welcher Wert fehlt auf den Karten?",
+          "Woran würden andere merken, dass dir dieser Wert wichtig ist?"
+        ],
+        "tipps": [
+          "Gruppe: Alle legen drei Karten vor sich; niemand muss begründen. Gemeinsame Werte benennen.",
+          "Einzelstunde: Zu jedem Wert fragen: „Wie sähe ein guter Tag mit diesem Wert aus?“"
+        ],
+        "achtung": "Werte berühren Familie, Religion und Herkunft. Antworten nicht bewerten oder vergleichen und niemanden bitten, Glaubensfragen zu erklären.",
+        "material": "Stift; zum Sortieren Schere"
+      }
+    },
+    "fr": {
+      "titel": "Mes cartes de valeurs",
+      "untertitel": "Ce qui compte pour moi – et ce que je fais pour cela",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les valeurs montrent comment tu veux vivre. Ce ne sont pas des objectifs à cocher, mais une direction, comme une boussole. Il n’y a pas de bonnes ou de mauvaises valeurs."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entoure les trois valeurs les plus importantes pour toi.",
+          "hinweis": "Ou découpe les cartes et fais trois piles : très important, important, moins important.",
+          "symbole": [
+            "einkreisen",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 86,
+          "karten": [
+            {
+              "titel": "Amitié",
+              "bild": "icon:friends"
+            },
+            {
+              "titel": "Famille",
+              "bild": "icon:home"
+            },
+            {
+              "titel": "Appartenance",
+              "bild": "icon:users-group"
+            },
+            {
+              "titel": "Honnêteté",
+              "bild": "icon:lock-open"
+            },
+            {
+              "titel": "Courage",
+              "bild": "icon:mountain"
+            },
+            {
+              "titel": "Respect",
+              "bild": "icon:heart-handshake"
+            },
+            {
+              "titel": "Justice",
+              "bild": "icon:scale"
+            },
+            {
+              "titel": "Liberté",
+              "bild": "icon:feather"
+            },
+            {
+              "titel": "Entraide",
+              "bild": "icon:lifebuoy"
+            },
+            {
+              "titel": "Apprendre",
+              "bild": "icon:bulb"
+            },
+            {
+              "titel": "Réussite",
+              "bild": "icon:trophy"
+            },
+            {
+              "titel": "Plaisir",
+              "bild": "icon:mood-happy"
+            },
+            {
+              "titel": "Santé",
+              "bild": "icon:heart"
+            },
+            {
+              "titel": "Nature",
+              "bild": "icon:leaf"
+            },
+            {
+              "titel": "Créativité",
+              "bild": "icon:palette"
+            },
+            {
+              "titel": "Calme",
+              "bild": "icon:yoga"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quel point vis-tu ta valeur la plus importante en ce moment ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "pas du tout",
+          "bis": "pleinement",
+          "stufen": 11
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Idées de petits pas",
+          "items": [
+            "écrire à quelqu’un",
+            "aider quelqu’un",
+            "écouter quelqu’un",
+            "dire honnêtement ce que je pense",
+            "essayer quelque chose de nouveau",
+            "prendre une pause pour moi",
+            "être dehors",
+            "m’entraîner à quelque chose",
+            "demander de l’aide",
+            "dire merci"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prévois un petit pas pour chacune de tes trois valeurs.",
+          "hinweis": "Petit veut dire : faisable en 5 minutes. Des idées dans l’encadré précédent.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ma valeur",
+            "Mon petit pas",
+            "Quand ?"
+          ],
+          "breiten": [
+            1,
+            2.4,
+            1.1
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Amitié",
+            "Écrire à Tiago : « Comment était ton week-end ? »",
+            "Me, après les cours"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui pourrait t’en empêcher ? Coche et prépare-toi.",
+          "hinweis": "Les obstacles sont normaux. Quand on les connaît, on peut s’y préparer.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Je n’ai pas envie.",
+            "J’oublie.",
+            "J’ai peur des regards ou des remarques.",
+            "Je pense : je n’y arrive pas.",
+            "Je n’ai pas le temps.",
+            "La fatigue l’emporte."
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je n’ai pas envie d’écrire à Tiago,",
+              "dann": "j’écris une seule phrase, puis je range mon téléphone."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Une valeur est une direction",
+          "text": "Tu peux avancer un peu chaque jour dans cette direction, même avec la boule au ventre ou un jour sans. Parfois ça marche bien, parfois moins. Ce qui compte pour toi ne change pas."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes nomment trois valeurs importantes pour eux et prévoient pour chacune un petit pas qui la rend visible au quotidien.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Qu’est-ce qui vous énerve vraiment ? » Souvent, une valeur se cache derrière (injustice – justice).",
+          "Cartes et échelle (10 min) : entourer trois valeurs ou trier les cartes ; un écart entre importance et vie réelle est normal.",
+          "Pas (10 min) : lire les idées, prévoir un pas par valeur, faisable en 5 minutes.",
+          "Obstacle (8 min) : tâche 4 ; plan « si … alors » pour l’obstacle le plus probable, à vérifier à deux.",
+          "Une semaine plus tard : quel pas a été fait ? Qu’est-ce qui l’a facilité ou compliqué ?"
+        ],
+        "hintergrund": "Clarifier ses valeurs est un processus central de la thérapie d’acceptation et d’engagement (ACT) : les valeurs sont des directions de vie choisies librement, selon lesquelles on peut agir même avec des émotions désagréables (Hayes, Strosahl & Wilson, 2012). Choisir et trier a une longue tradition en pédagogie (Simon, Howe & Kirschenbaum, 1972) ; il n’y a ni bonnes ni mauvaises valeurs. Le petit pas et le plan « si … alors » pour l’obstacle relient la valeur à un acte concret (Gollwitzer, 1999).",
+        "quellen": [
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Simon, S. B., Howe, L. W. & Kirschenbaum, H. (1972). Values Clarification: A Handbook of Practical Strategies for Teachers and Students. New York: Hart.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Choisir une seule valeur et prendre un pas dans la liste d’idées.",
+          "schwerer": "Choisir deux valeurs qui peuvent se contredire et décrire une décision."
+        },
+        "impulse": [
+          "Quelle valeur manque sur les cartes ?",
+          "À quoi les autres verraient-ils que cette valeur compte pour toi ?"
+        ],
+        "tipps": [
+          "Groupe : chacun pose trois cartes devant soi ; personne n’a à justifier. Nommer les valeurs communes.",
+          "Séance individuelle : pour chaque valeur : « À quoi ressemblerait une bonne journée avec elle ? »"
+        ],
+        "achtung": "Les valeurs touchent à la famille, à la religion et aux origines. Ne pas juger ni comparer les réponses et ne demander à personne d’expliquer sa foi.",
+        "material": "Crayon ; ciseaux pour trier"
+      }
+    }
+  },
+  {
+    "id": "t4-was-ich-brauche",
+    "bereich": "selbstreflexion",
+    "thema": "beduerfnisse",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min.",
+    "eldib": [
+      "SOZ-40",
+      "K-26",
+      "V-29"
+    ],
+    "schlagworte": [
+      "Bedürfnisse",
+      "Selbstwahrnehmung",
+      "Wohlbefinden",
+      "Selbstfürsorge",
+      "Gruppe"
+    ],
+    "bild": "icon:cup",
+    "verwandt": [
+      "beduerfnis-glaeser",
+      "t4-energie-kreis",
+      "t4-werte-karten"
+    ],
+    "de": {
+      "titel": "Was ich brauche",
+      "untertitel": "Mein Bedürfnis-Glas: Wie voll ist es gerade?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Jeder Mensch braucht bestimmte Dinge, um sich wohlzufühlen: Schlaf, Menschen, Ruhe, Spaß. Ist ein Glas lange fast leer, merkst du es oft an der Stimmung: gereizt, müde, lustlos."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal jedes Glas so voll, wie es gerade ist. Zieh einen Strich, wo es sein soll.",
+          "hinweis": "Denk an die letzten zwei Wochen. Nicht jedes Glas muss voll sein. Die leeren Gläser sind für das, was hier fehlt.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "spalten": 4,
+          "leer": 4,
+          "legende": [
+            "Strich: so voll soll es sein",
+            "Ausmalen: so voll ist es jetzt"
+          ],
+          "items": [
+            "Schlaf",
+            "Essen & Trinken",
+            "Bewegung",
+            "Ruhe",
+            "Freunde",
+            "Familie",
+            "Dazugehören",
+            "Anerkennung",
+            "Selbst entscheiden",
+            "Sicherheit",
+            "Spaß",
+            "Etwas schaffen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welches Glas ist am leersten? Kreis es ein. Was würde es füllen?",
+          "symbole": [
+            "einkreisen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "früher ins Bett gehen",
+            "eine Pause vom Handy",
+            "Bewegung oder Sport",
+            "Zeit mit jemandem, den ich mag",
+            "mit jemandem reden",
+            "etwas Gutes essen",
+            "Zeit nur für mich",
+            "etwas tun, das ich gut kann"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie merkst du, dass ein Glas leer ist? Kreuze an.",
+          "hinweis": "Das sind keine Fehler, sondern Signale: Da fehlt etwas.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Ich bin schnell gereizt.",
+            "Ich bin müde und lustlos.",
+            "Ich ziehe mich zurück.",
+            "Ich hänge lange am Handy.",
+            "Ich streite öfter.",
+            "Ich kann mich schlecht konzentrieren.",
+            "Mir tut oft Kopf oder Bauch weh.",
+            "Ich mache mir viele Sorgen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vervollständige die Sätze, wenn du magst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Am vollsten ist mein Glas bei:",
+            "Am leersten ist mein Glas bei:",
+            "Das würde mir guttun:"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein kleiner Schritt für die nächsten 7 Tage.",
+          "hinweis": "Klein ist gut: ein Schritt, den du wirklich schaffst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich abends im Bett liege,",
+              "dann": "lege ich das Handy um 22 Uhr in die Küche. (Glas: Schlaf)"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Gläser werden mal leer, mal voll – das ist normal. Zeig dein Blatt nur, wenn du willst. Bleibt ein Glas lange leer und belastet dich das, sprich mit einer erwachsenen Person, der du vertraust."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, welche Bedürfnisse gerade gut und welche zu kurz erfüllt sind, und planen einen kleinen Schritt, um ein leeres Glas zu füllen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Glas an die Tafel zeichnen. „Woran merkst du, dass dir etwas fehlt?“ Antworten sammeln.",
+          "Erklären (3 Min.): Strich = so voll soll es sein, Ausmalen = so voll ist es. Ein niedriger Strich ist genauso richtig.",
+          "Gläser (12 Min.): einzeln, ruhige Musik, kein Austausch. Leere Gläser selbst beschriften.",
+          "Auswerten (8 Min.): Aufgaben 2 bis 4; freiwillig zu zweit: „Welches Glas hat dich überrascht?“",
+          "Plan (5 Min.): Wenn-dann-Plan; nach einer Woche nachfragen."
+        ],
+        "hintergrund": "In der Selbstbestimmungstheorie sind Autonomie, Kompetenz und soziale Eingebundenheit psychologische Grundbedürfnisse (Deci & Ryan, 2000); Grawe (2004) beschreibt dauerhaft unerfüllte Grundbedürfnisse als Quelle von Belastung. Eigene Bedürfnisse zu benennen ist auch Kern der Gewaltfreien Kommunikation (Rosenberg, 2001). Das Glasbild trennt Wunsch (Strich) und Erfüllung (Farbe): Der Abstand zeigt, wo ein kleiner Schritt lohnt. Es ist eine Momentaufnahme, kein Test.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die ersten zwei Reihen; Aufgabe 2 mündlich.",
+          "schwerer": "Zu zwei fast leeren Gläsern notieren, wer oder was sie früher gefüllt hat."
+        },
+        "impulse": [
+          "Welches Glas füllt sich bei dir fast von allein?",
+          "Wer könnte dir helfen, ein Glas zu füllen?"
+        ],
+        "tipps": [
+          "Gruppe: Blätter bleiben privat; im Kreis nennt nur, wer mag, ein volles Glas.",
+          "Einzelstunde: die drei leersten Gläser besprechen, dann einen Schritt wählen."
+        ],
+        "achtung": "Sind Sicherheit, Essen oder Schlaf dauerhaft leer, nicht im Plenum nachfragen: Einzelgespräch, Responsable informieren; bei Gefährdung sofort nach internem Ablauf handeln.",
+        "material": "Buntstifte oder Bleistift"
+      }
+    },
+    "fr": {
+      "titel": "Ce dont j’ai besoin",
+      "untertitel": "Mon verre de besoins : à quel point est-il plein en ce moment ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Chacun a besoin de certaines choses pour se sentir bien : sommeil, gens autour de soi, calme, plaisir. Quand un verre reste presque vide longtemps, on le remarque souvent à l’humeur : irritable, à plat, sans envie."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Colorie chaque verre à la hauteur où il en est. Trace un trait là où il devrait être.",
+          "hinweis": "Pense aux deux dernières semaines. Tous les verres n’ont pas à être pleins. Les verres vides sont pour ce qui manque ici.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "spalten": 4,
+          "leer": 4,
+          "legende": [
+            "Un trait : le niveau souhaité",
+            "Colorier : le niveau actuel"
+          ],
+          "items": [
+            "Sommeil",
+            "Manger, boire",
+            "Bouger",
+            "Calme",
+            "Amis",
+            "Famille",
+            "Appartenance",
+            "Reconnaissance",
+            "Décider soi-même",
+            "Sécurité",
+            "Plaisir",
+            "Réussite"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel verre est le plus vide ? Entoure-le. Qu’est-ce qui le remplirait ?",
+          "symbole": [
+            "einkreisen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "me coucher plus tôt",
+            "une pause sans téléphone",
+            "bouger ou faire du sport",
+            "du temps avec quelqu’un que j’aime",
+            "parler avec quelqu’un",
+            "manger quelque chose de bon",
+            "du temps rien que pour moi",
+            "faire ce que je sais bien faire"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment remarques-tu qu’un verre est vide ? Coche.",
+          "hinweis": "Ce ne sont pas des défauts, mais des signaux : quelque chose manque.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Je m’énerve vite.",
+            "Je suis à plat, sans envie.",
+            "Je me renferme.",
+            "Je traîne longtemps sur mon téléphone.",
+            "Je me dispute plus souvent.",
+            "J’ai du mal à me concentrer.",
+            "J’ai souvent mal à la tête ou au ventre.",
+            "Je me fais beaucoup de soucis."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Complète les phrases, si tu veux.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Mon verre est le plus plein pour :",
+            "Mon verre est le plus vide pour :",
+            "Ça me ferait du bien :"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton petit pas pour les 7 prochains jours.",
+          "hinweis": "Petit, c’est bien : un pas que tu arrives vraiment à faire.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je suis au lit le soir,",
+              "dann": "je pose mon téléphone dans la cuisine à 22 h. (Verre : sommeil)"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Les verres se vident et se remplissent – c’est normal. Ne montre ta feuille que si tu veux. Si un verre reste vide longtemps et que cela te pèse, parles-en à un adulte en qui tu as confiance."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent quels besoins sont bien ou trop peu comblés en ce moment et prévoient un petit pas pour remplir un verre vide.",
+        "ablauf": [
+          "Entrée en matière (5 min) : dessiner un verre au tableau. « À quoi remarques-tu qu’il te manque quelque chose ? »",
+          "Expliquer (3 min) : trait = niveau souhaité, colorier = niveau actuel. Un trait bas est aussi juste qu’un trait haut.",
+          "Verres (12 min) : seul, musique calme, pas d’échange. Légender soi-même les verres vides.",
+          "Analyse (8 min) : tâches 2 à 4 ; à deux, sur base volontaire : « Quel verre t’a surpris ? »",
+          "Plan (5 min) : plan « si … alors » ; en reparler une semaine plus tard."
+        ],
+        "hintergrund": "Dans la théorie de l’autodétermination, l’autonomie, la compétence et l’appartenance sociale sont des besoins psychologiques fondamentaux (Deci & Ryan, 2000) ; Grawe (2004) décrit des besoins durablement insatisfaits comme une source de souffrance. Nommer ses besoins est aussi au cœur de la communication non violente (Rosenberg, 2001). Le verre sépare le souhait (trait) et la satisfaction (couleur) : l’écart montre où un petit pas vaut la peine. C’est un instantané, pas un test.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les deux premières lignes ; tâche 2 à l’oral.",
+          "schwerer": "Pour deux verres presque vides, noter qui ou quoi les remplissait avant."
+        },
+        "impulse": [
+          "Quel verre se remplit presque tout seul chez toi ?",
+          "Qui pourrait t’aider à remplir un verre ?"
+        ],
+        "tipps": [
+          "Groupe : les feuilles restent privées ; en cercle, seul qui veut cite un verre plein.",
+          "Séance individuelle : parler des trois verres les plus vides, puis choisir un pas."
+        ],
+        "achtung": "Si la sécurité, la nourriture ou le sommeil restent durablement vides, ne pas questionner en plénière : entretien individuel, informer le responsable ; en cas de danger, procédure interne.",
+        "material": "Crayons de couleur ou crayon à papier"
+      }
+    }
+  },
+  {
+    "id": "t4-energie-kreis",
+    "bereich": "selbstreflexion",
+    "thema": "balance",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min.",
+    "eldib": [
+      "SOZ-40",
+      "K-35",
+      "V-29"
+    ],
+    "schlagworte": [
+      "Kraftquellen",
+      "Ressourcen",
+      "Energie",
+      "Wohlbefinden",
+      "Selbstfürsorge"
+    ],
+    "bild": "icon:battery-4",
+    "verwandt": [
+      "t4-was-ich-brauche",
+      "lebensnetz",
+      "t4-werte-karten"
+    ],
+    "de": {
+      "titel": "Mein Energie-Kreis",
+      "untertitel": "Menschen, Orte und Dinge, die mir Kraft geben",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Manches lädt dich auf, anderes leert den Akku. Hier geht es um das, was dir Kraft gibt. Es dürfen echte oder erfundene Beispiele sein – du musst nichts Persönliches zeigen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie voll ist dein Akku gerade?",
+          "hinweis": "0 = leer, 10 = voll.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "leer",
+          "bis": "voll",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was gibt dir Kraft? Schreib oder zeichne ein Beispiel in jedes Feld.",
+          "hinweis": "Zum Beispiel: Menschen – meine Cousine · Orte – der Sportplatz · Dinge – meine Kopfhörer · Tun – laufen. Erfundenes ist okay.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "mindmap",
+          "mitte": "Das gibt mir Kraft",
+          "aeste": [
+            "Menschen",
+            "Orte",
+            "Dinge",
+            "Tun",
+            "Natur & Tiere",
+            "Musik & Bilder"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie oft nutzt du diese Kraftquellen?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "täglich",
+            "manchmal",
+            "selten"
+          ],
+          "items": [
+            "Menschen",
+            "Orte",
+            "Dinge",
+            "Tun",
+            "Natur & Tiere",
+            "Musik & Bilder"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähle eine Kraftquelle, die du diese Woche öfter nutzen willst. Hake die Tage ab.",
+          "hinweis": "Schreib sie in eine Zeile. Zwei oder drei Tage reichen.",
+          "symbole": [
+            "schreiben",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und wenn dein Akku fast leer ist? Schreib deinen Plan.",
+          "hinweis": "Nimm eine Kraftquelle aus deinem Kreis.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mein Akku unter 3 fällt,",
+              "dann": "höre ich 10 Minuten meine Lieblingsmusik und gehe kurz raus."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Auch Kleines zählt",
+          "text": "Fünf Minuten Lieblingsmusik, ein Stück Sonne, eine Nachricht an jemanden, ein kurzer Spaziergang. Kraft muss nicht groß sein, um zu helfen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie voll ist dein Akku jetzt?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "leer",
+          "bis": "voll",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen sammeln Menschen, Orte, Dinge und Tätigkeiten, die ihnen Kraft geben, erkennen, welche sie selten nutzen, und planen, eine davon öfter in die Woche einzubauen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was lädt euren Akku auf, was leert ihn?“ Ideen sammeln, Akku-Skala einzeln ausfüllen.",
+          "Kreis (10 Min.): Felder einzeln füllen, Stichworte reichen; erfundene Beispiele ausdrücklich erlauben.",
+          "Nutzung (5 Min.): Aufgabe 3; Auffälliges ohne Wertung benennen: „Welche Quelle nutzt du selten?“",
+          "Plan (10 Min.): Quelle wählen, Tage abhaken; Wenn-dann-Plan für den fast leeren Akku; Ideen klein machen.",
+          "Runde (5 Min.): Wer mag, nennt eine Quelle ohne Namen. Akku-Skala am Ende und nach einer Woche."
+        ],
+        "hintergrund": "Das Blatt aktiviert Ressourcen, einen zentralen Wirkfaktor der Psychotherapie (Grawe, 2004). Schutzfaktoren wie tragende Beziehungen, Orte der Erholung und eigene Interessen helfen Kindern und Jugendlichen durch Belastungen (Masten, 2014); in der Salutogenese gelten solche Ressourcen als Quelle von Gesundheit (Antonovsky, 1987). Der Kreis macht sie sichtbar, die Nutzungsfrage zeigt Ungenutztes, der Wochenplan bringt eine Quelle in den Alltag.",
+        "quellen": [
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Felder; Plan mit einer Quelle und zwei Tagen.",
+          "schwerer": "Notieren, was eine Quelle blockiert (Zeit, Geld, Mut), und wie man es löst."
+        },
+        "impulse": [
+          "Welche Kraftquelle würdest du nie hergeben?",
+          "Was könnte eine Quelle sein, die du noch nicht ausprobiert hast?"
+        ],
+        "tipps": [
+          "Gruppe: Beispiele ohne Namen von Personen; erfundene zählen gleich viel.",
+          "Einzelstunde: „Wann hast du diese Quelle zuletzt gespürt?“ macht sie konkret."
+        ],
+        "achtung": "Nennt jemand keine einzige Kraftquelle, nicht im Plenum nachfragen: Einzelgespräch, Responsable informieren; bei Gefährdung sofort nach internem Ablauf handeln.",
+        "material": "Stift, Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "Mon cercle d’énergie",
+      "untertitel": "Les personnes, lieux et choses qui me donnent de la force",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Certaines choses te rechargent, d’autres vident la batterie. Ici, il s’agit de ce qui te donne de la force. Des exemples réels ou inventés sont permis – tu n’as rien de personnel à montrer."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quel point ta batterie est-elle pleine en ce moment ?",
+          "hinweis": "0 = vide, 10 = pleine.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "vide",
+          "bis": "pleine",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te donne de la force ? Écris ou dessine un exemple dans chaque case.",
+          "hinweis": "Par exemple : personnes – ma cousine · lieux – le terrain de sport · choses – mon casque · activités – courir. Inventer est permis.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "mindmap",
+          "mitte": "Ça me donne de la force",
+          "aeste": [
+            "Personnes",
+            "Lieux",
+            "Choses",
+            "Activités",
+            "Nature et animaux",
+            "Musique et images"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quelle fréquence utilises-tu ces sources de force ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "chaque jour",
+            "parfois",
+            "rarement"
+          ],
+          "items": [
+            "Personnes",
+            "Lieux",
+            "Choses",
+            "Activités",
+            "Nature et animaux",
+            "Musique et images"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une source que tu veux utiliser plus souvent cette semaine. Coche les jours.",
+          "hinweis": "Écris-la sur une ligne. Deux ou trois jours suffisent.",
+          "symbole": [
+            "schreiben",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et si ta batterie est presque vide ? Écris ton plan.",
+          "hinweis": "Prends une source de force de ton cercle.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si ma batterie tombe sous 3,",
+              "dann": "j’écoute ma musique préférée pendant 10 minutes et je sors un moment."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Les petites choses comptent aussi",
+          "text": "Cinq minutes de ta musique préférée, un peu de soleil, un message à quelqu’un, une courte promenade. La force n’a pas besoin d’être grande pour aider."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quel point ta batterie est-elle pleine maintenant ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "vide",
+          "bis": "pleine",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes rassemblent personnes, lieux, choses et activités qui leur donnent de la force, repèrent celles qu’ils utilisent peu et prévoient d’en intégrer une plus souvent dans leur semaine.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Qu’est-ce qui recharge ta batterie, qu’est-ce qui la vide ? » Collecter, échelle de batterie seul.",
+          "Cercle (10 min) : remplir les cases seul, des mots-clés suffisent ; autoriser expressément les exemples inventés.",
+          "Fréquence (5 min) : tâche 3 ; nommer ce qui frappe sans juger : « Quelle source utilises-tu rarement ? »",
+          "Plan (10 min) : choisir une source, cocher les jours ; plan « si … alors » pour la batterie presque vide.",
+          "Tour de parole (5 min) : qui veut cite une source, sans noms. Échelle à la fin et une semaine plus tard."
+        ],
+        "hintergrund": "La fiche active des ressources, un facteur d’efficacité central de la psychothérapie (Grawe, 2004). Des facteurs de protection comme des relations solides, des lieux de repos et des centres d’intérêt aident enfants et adolescents à traverser les épreuves (Masten, 2014) ; en salutogenèse, ces ressources sont une source de santé (Antonovsky, 1987). Le cercle les rend visibles, la question de la fréquence montre ce qui reste inutilisé, le plan de la semaine amène une source dans le quotidien.",
+        "quellen": [
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement quatre cases ; plan avec une source et deux jours.",
+          "schwerer": "Noter ce qui bloque une source (temps, argent, courage) et comment le lever."
+        },
+        "impulse": [
+          "Quelle source de force ne lâcherais-tu jamais ?",
+          "Quelle source pourrais-tu essayer, que tu ne connais pas encore ?"
+        ],
+        "tipps": [
+          "Groupe : exemples sans noms de personnes ; les exemples inventés comptent autant.",
+          "Séance individuelle : « Quand as-tu senti cette source pour la dernière fois ? » la rend concrète."
+        ],
+        "achtung": "Si quelqu’un ne cite aucune source de force, ne pas questionner en plénière : entretien individuel, informer le responsable ; en cas de danger, procédure interne.",
+        "material": "Crayon, crayons de couleur"
+      }
+    }
+  }
+]

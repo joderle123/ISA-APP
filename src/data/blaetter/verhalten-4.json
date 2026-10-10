@@ -1,0 +1,2680 @@
+[
+  {
+    "id": "t1-gedankenblase",
+    "bereich": "verhalten",
+    "thema": "selbstbeobachtung",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "K-29",
+      "K-25",
+      "KOG-38"
+    ],
+    "schlagworte": [
+      "Gedanken und Gefühle",
+      "ABC-Modell",
+      "hilfreiche Gedanken",
+      "Gedankenblase",
+      "kognitive Verhaltenstherapie"
+    ],
+    "bild": "icon:bubble",
+    "verwandt": [
+      "was-hilft-bei-angst",
+      "fehler-sind-helfer"
+    ],
+    "de": {
+      "titel": "Die Gedankenblase",
+      "untertitel": "Was du denkst, verändert, wie du dich fühlst.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schau die Bilder an. Was denkt Inês?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:lea:verlegen",
+                "figur:tom:froh"
+              ],
+              "requisit": "icon:ball-football",
+              "blase": "keine",
+              "untertitel": "Der Ball fällt. Jemand lacht."
+            },
+            {
+              "figuren": [
+                "figur:lea:traurig"
+              ],
+              "blase": "denken",
+              "text": "Alle lachen mich aus. Ich kann nichts.",
+              "untertitel": "Gedanke A: Inês ist traurig."
+            },
+            {
+              "figuren": [
+                "figur:lea:ruhig"
+              ],
+              "blase": "denken",
+              "text": "Nur ein Fehler. Ich übe weiter.",
+              "untertitel": "Gedanke B: Inês ist mutig."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tiago hat Angst vor dem Sprung. Was denkt er Mutiges?",
+          "hinweis": "Beispiel: Ich gehe es Schritt für Schritt an. Schreib in die Blase.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            {
+              "figuren": [
+                "figur:noah:aengstlich"
+              ],
+              "requisit": "icon:pool",
+              "blase": "denken",
+              "text": "Ich schaffe das nie.",
+              "untertitel": "Tiago am Beckenrand"
+            },
+            {
+              "figuren": [
+                "figur:noah:ruhig"
+              ],
+              "blase": "denken",
+              "text": "",
+              "untertitel": "Tiago mit einem anderen Gedanken"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Merke",
+          "text": "Gedanken sind wie Radiosender. Du kannst umschalten."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, dass derselbe Vorfall mit anderen Gedanken ein anderes Gefühl auslöst, und finden zu einem belastenden Gedanken einen hilfreichen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Szene nachspielen (Ball fällt, andere lachen). „Was denkt sie? Wie fühlt sie sich?“ Gedankenblase an die Tafel zeichnen.",
+          "Aufgabe 1 (5 Min.): Bildfolge vorlesen, Gedanke A und B getrennt. „Gleiche Szene, anderer Gedanke: Was ist anders?“ Merksatz lesen.",
+          "Aufgabe 2 (15 Min.): Tiagos Situation vorlesen. Mutige Gedanken sammeln, aufschreiben lassen, mehrere vorlesen. „Würde dir das helfen? Glaubst du es?“",
+          "Abschluss (5 Min.): Lieblingsgedanken auf eine Karte fürs Mäppchen schreiben."
+        ],
+        "hintergrund": "Das ABC-Modell der kognitiven Verhaltenstherapie besagt: Nicht die Situation (A) allein löst ein Gefühl (C) aus, sondern vor allem, was wir darüber denken (B) (Ellis, 1962; Beck, 2011). Kinder lernen das gut an Bildfolgen mit Gedankenblasen: Dieselbe Situation führt mit anderen Gedanken zu einem anderen Gefühl, und hilfreiche Gedanken lassen sich üben (Stallard, 2019). Sie müssen glaubhaft sein: „Ich bin der Beste“ hilft nicht, „Ich übe weiter“ schon. Das Blatt führt in die Methode ein; eigene belastende Gedanken umzudenken folgt später und braucht Begleitung.",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Gedanken mündlich finden: Die Lehrperson schreibt in die Blase, das Kind malt dazu.",
+          "schwerer": "Weitere Gedanken zur Ballszene erfinden und nach traurig und mutig sortieren; eine eigene Szene als Comic zeichnen."
+        },
+        "impulse": [
+          "Was denkt Inês, wenn sie traurig ist? Und wenn sie mutig ist?",
+          "Kann man einen Gedanken ändern?",
+          "Wann hat dir ein Gedanke schon Mut gemacht?"
+        ],
+        "tipps": [
+          "Gruppe: Mit erfundenen Figuren üben; niemand muss eigene Gedanken zeigen.",
+          "Einzelstunde: Eine erlebte Situation in drei Feldern zeichnen: was geschah, was dachte ich, was fühlte ich."
+        ],
+        "achtung": "Äußert ein Kind sehr harte Sätze über sich oder wirkt oft niedergeschlagen: nicht im Plenum vertiefen, die zuständige Leitung (Responsable) informieren. Bei Gefährdung sofort nach internem Ablauf handeln.",
+        "material": "Stifte; kleine Karten"
+      }
+    },
+    "fr": {
+      "titel": "La bulle de pensée",
+      "untertitel": "Ce que tu penses change ce que tu ressens.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Regarde les images. Que pense Inês ?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:lea:verlegen",
+                "figur:tom:froh"
+              ],
+              "requisit": "icon:ball-football",
+              "blase": "keine",
+              "untertitel": "La balle tombe. Quelqu’un rit."
+            },
+            {
+              "figuren": [
+                "figur:lea:traurig"
+              ],
+              "blase": "denken",
+              "text": "Tout le monde rit de moi. Je rate tout.",
+              "untertitel": "Pensée A : Inês est triste."
+            },
+            {
+              "figuren": [
+                "figur:lea:ruhig"
+              ],
+              "blase": "denken",
+              "text": "Une erreur. J’essaie encore.",
+              "untertitel": "Pensée B : Inês a du courage."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tiago a peur de sauter. Que pense-t-il de courageux ?",
+          "hinweis": "Exemple : j’y vais pas à pas. Écris dans la bulle.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            {
+              "figuren": [
+                "figur:noah:aengstlich"
+              ],
+              "requisit": "icon:pool",
+              "blase": "denken",
+              "text": "Je n’y arriverai jamais.",
+              "untertitel": "Tiago au bord du bassin"
+            },
+            {
+              "figuren": [
+                "figur:noah:ruhig"
+              ],
+              "blase": "denken",
+              "text": "",
+              "untertitel": "Tiago avec une autre pensée"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "À retenir",
+          "text": "Les pensées sont comme des stations de radio. Tu peux changer."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants comprennent que la même situation provoque une autre émotion avec d’autres pensées, et trouvent une pensée utile pour remplacer une pensée pesante.",
+        "ablauf": [
+          "Entrée (5 min) : jouer la scène (la balle tombe, d’autres rient). « Que pense-t-elle ? Comment se sent-elle ? » Dessiner une bulle de pensée au tableau.",
+          "Tâche 1 (5 min) : lire la suite d’images, pensée A et B séparément. « Même scène, autre pensée : qu’est-ce qui change ? » Lire « À retenir ».",
+          "Tâche 2 (15 min) : lire la situation de Tiago. Trouver des pensées courageuses, les écrire, en lire plusieurs. « Cela t’aiderait ? Y crois-tu ? »",
+          "Conclusion (5 min) : écrire sa pensée préférée sur une carte pour la trousse."
+        ],
+        "hintergrund": "Le modèle ABC de la thérapie cognitivo-comportementale dit : ce n’est pas la situation (A) seule qui provoque une émotion (C), mais surtout ce que nous en pensons (B) (Ellis, 1962 ; Beck, 2011). Les enfants le comprennent bien avec des images et des bulles de pensée : la même situation mène à une autre émotion avec d’autres pensées, et l’on peut s’exercer à trouver des pensées utiles (Stallard, 2019). Elles doivent être crédibles : « Je suis le meilleur » n’aide pas, « Je m’entraîne encore » oui. La fiche introduit la méthode ; transformer ses propres pensées pesantes vient plus tard et demande un accompagnement.",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Trouver les pensées à l’oral : l’adulte écrit dans la bulle, l’enfant dessine.",
+          "schwerer": "Inventer d’autres pensées pour la scène de la balle et les classer (triste, courage) ; dessiner sa propre scène en bande dessinée."
+        },
+        "impulse": [
+          "Que pense Inês quand elle est triste ? Et quand elle a du courage ?",
+          "Peut-on changer une pensée ?",
+          "Quand une pensée t’a-t-elle déjà donné du courage ?"
+        ],
+        "tipps": [
+          "Groupe : s’exercer avec des personnages inventés ; personne n’a à montrer ses pensées.",
+          "Individuel : dessiner une situation vécue en trois cases : ce qui s’est passé, ce que j’ai pensé, ce que j’ai ressenti."
+        ],
+        "achtung": "Si un enfant dit des phrases très dures sur lui-même ou semble souvent abattu : ne pas approfondir devant le groupe, informer la direction compétente (responsable). En cas de danger, agir selon la procédure interne.",
+        "material": "Crayons ; petites cartes"
+      }
+    }
+  },
+  {
+    "id": "t2-stopp-erst-atmen",
+    "bereich": "verhalten",
+    "thema": "impulse",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–40 Min.",
+    "eldib": [
+      "V-20",
+      "V-21",
+      "V-26",
+      "V-18"
+    ],
+    "schlagworte": [
+      "STOPP",
+      "Impulskontrolle",
+      "Atmen",
+      "Selbstkontrolle",
+      "Körpersignale",
+      "DBT"
+    ],
+    "bild": "icon:hand-stop",
+    "de": {
+      "titel": "STOPP! Erst atmen, dann handeln",
+      "untertitel": "Wenn im Körper alles „Los“ ruft, hilft eine kurze Pause. Der STOPP-Weg hat vier Stationen.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "In der Schlange",
+          "text": "In der Schlange vor der Kantine drängelt sich Yusuf vor Mila. Milas Herz klopft schnell. Ihr Gesicht wird heiß. Ihre Hand wird zur Faust. Am liebsten würde sie Yusuf wegschubsen.",
+          "bild": "figur:amira:wuetend"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "S  Stehen bleiben",
+              "text": "Beine, Hände und Mund bleiben still. Wie eine Statue."
+            },
+            {
+              "titel": "T  Tief atmen",
+              "text": "Einen Schritt zurück. Dreimal einatmen, lang ausatmen."
+            },
+            {
+              "titel": "O  Orientieren",
+              "text": "Schauen und spüren: Was ist los? Was fühle ich?"
+            },
+            {
+              "titel": "P  Passend handeln",
+              "text": "Was ist klug? Dann tun – oder Hilfe holen."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mila geht den STOPP-Weg. Was tut und denkt sie an jeder Station?",
+          "hinweis": "Orientieren heißt schauen und spüren: Was ist passiert? Was fühle ich? Was will ich? Die Anfangsbuchstaben der vier Stationen ergeben das Wort STOP.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Station",
+            "Das tut oder denkt Mila"
+          ],
+          "breiten": [
+            1.3,
+            2.2
+          ],
+          "beispiel": [
+            "S Stehen bleiben",
+            "Sie bleibt stehen wie eine Statue. Die Hand öffnet sich."
+          ],
+          "werte": [
+            [
+              "T Tief atmen",
+              ""
+            ],
+            [
+              "O Orientieren",
+              ""
+            ],
+            [
+              "P Passend handeln",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Atme ruhig: Fahre die Finger nach. Mach fünf lange Atemzüge."
+        },
+        {
+          "art": "atmen",
+          "uebung": "finger"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, dass du STOPP brauchst? Kreuze an.",
+          "hinweis": "Jeder Körper meldet sich anders. Du darfst auch eigene Zeichen aufschreiben.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Mein Herz klopft schnell.",
+            "Mein Gesicht wird heiß.",
+            "Ich balle die Fäuste.",
+            "Mein Bauch wird eng.",
+            "Ich werde laut.",
+            "Ich will sofort etwas tun."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibe deinen STOPP-Plan.",
+          "hinweis": "Nimm eine Situation, die du kennst – oder eine erfundene.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn mein Herz klopft und jemand sich vordrängelt,",
+              "dann": "bleibe ich stehen, atme dreimal lang aus und überlege, was klug ist."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneide die STOPP-Karten aus. Leg sie an deinen Platz.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 125,
+          "karten": [
+            {
+              "titel": "S Stehen bleiben",
+              "text": "Wie eine Statue.",
+              "bild": "icon:hand-stop"
+            },
+            {
+              "titel": "T Tief atmen",
+              "text": "Dreimal lang ausatmen.",
+              "bild": "icon:wind"
+            },
+            {
+              "titel": "O Orientieren",
+              "text": "Was ist los?",
+              "bild": "icon:eye"
+            },
+            {
+              "titel": "P Passend handeln",
+              "text": "Was ist klug?",
+              "bild": "icon:footsteps"
+            }
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen den STOPP-Weg kennen (Stehen bleiben, Tief atmen, Orientieren, Passend handeln), erkennen ihre Körpersignale und planen, wann sie ihn einsetzen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen: „Was könnte Mila tun?“ Den Weg an der Tafel zeigen.",
+          "STOPP-Spiel (7 Min.): Auf ein Klatschsignal frieren alle wie Statuen ein, atmen dreimal lang aus, schauen sich um.",
+          "Aufgabe 1 (8 Min.): Stationen für Mila ausfüllen und vergleichen. Orientieren: Was ist passiert? Was fühle ich?",
+          "Aufgabe 2 und 3 (10 Min.): Atmen gemeinsam, Körpersignale ankreuzen, freiwillig nennen.",
+          "Aufgabe 4 und 5 (5 Min.): Plan schreiben, Karten ausschneiden, zu zweit an einer erfundenen Situation üben."
+        ],
+        "hintergrund": "Die STOP-Fertigkeit stammt aus der Dialektisch-Behavioralen Therapie (Modul Stresstoleranz; Linehan, 2015; Schulfassung: Mazza et al., 2016): stoppen, einen Schritt zurücktreten, beobachten, achtsam handeln. Zwischen Impuls und Handlung entsteht eine Pause, in der sich die Erregung beruhigen kann. Langsames, betontes Ausatmen unterstützt das (Zaccaro et al., 2018). Das Blatt ergänzt „Stopp – denken – handeln“ um den Körper. Üben: erst in ruhigen Momenten.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Mazza, J. J., Dexter-Mazza, E. T., Miller, A. L., Rathus, J. H. & Murphy, H. E. (2016). DBT Skills in Schools: Skills Training for Emotional Problem Solving for Adolescents (DBT STEPS-A). New York: Guilford.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Statuen-Spiel und Karten; Aufgabe 1 mündlich.",
+          "schwerer": "Eine eigene schwierige Situation durch alle vier Stationen führen."
+        },
+        "impulse": [
+          "Woran merkst du, dass dein Körper „Los“ ruft?",
+          "Was kann in drei Atemzügen passieren?"
+        ],
+        "tipps": [
+          "Gruppe: STOPP-Spiel öfter wiederholen, etwa vor dem Gang in die Pause; Signal und Handzeichen gemeinsam vereinbaren.",
+          "Einzelstunde: Atmen zusammen üben und im Rollenspiel mit der Lehrperson durchspielen."
+        ],
+        "achtung": "STOPP ersetzt keinen Schutz: Wer bedrängt wird, darf sich entfernen und Hilfe holen. Bei häufigen, heftigen Ausbrüchen die Leitung (Responsable) informieren.",
+        "material": "Stifte, Schere"
+      }
+    },
+    "fr": {
+      "titel": "STOP ! D’abord respirer, ensuite agir",
+      "untertitel": "Quand tout ton corps crie « vas-y », une courte pause aide. Le chemin STOP a quatre étapes.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "À la cantine",
+          "text": "Dans la file de la cantine, Yusuf passe devant Mila. Le cœur de Mila bat vite. Son visage devient chaud. Sa main se ferme en poing. Elle aimerait pousser Yusuf.",
+          "bild": "figur:amira:wuetend"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "S  Se figer",
+              "text": "Jambes, mains et bouche restent calmes. Comme une statue."
+            },
+            {
+              "titel": "T  Trois respirations",
+              "text": "Un pas en arrière. Inspire, expire longuement, trois fois."
+            },
+            {
+              "titel": "O  Observer",
+              "text": "Regarder et ressentir : que se passe-t-il ?"
+            },
+            {
+              "titel": "P  Passer à l’action",
+              "text": "Que faire de malin ? Le faire – ou demander de l’aide."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mila suit le chemin STOP. Que fait-elle et que pense-t-elle à chaque étape ?",
+          "hinweis": "Observer, c’est regarder et ressentir : que s’est-il passé ? Que ressens-tu ? Que veux-tu ? Les premières lettres des quatre étapes forment le mot STOP.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Étape",
+            "Ce que Mila fait ou pense"
+          ],
+          "breiten": [
+            1.3,
+            2.2
+          ],
+          "beispiel": [
+            "S Se figer",
+            "Elle reste immobile comme une statue. Sa main s’ouvre."
+          ],
+          "werte": [
+            [
+              "T Trois respirations",
+              ""
+            ],
+            [
+              "O Observer",
+              ""
+            ],
+            [
+              "P Passer à l’action",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Respire calmement : suis les doigts. Fais cinq longues respirations."
+        },
+        {
+          "art": "atmen",
+          "uebung": "finger"
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi remarques-tu que tu as besoin de STOP ? Coche.",
+          "hinweis": "Chaque corps réagit à sa façon. Tu peux aussi écrire tes propres signes.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Mon cœur bat vite.",
+            "Mon visage devient chaud.",
+            "Je serre les poings.",
+            "Mon ventre se noue.",
+            "Je parle fort.",
+            "Je veux agir tout de suite."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ton plan STOP.",
+          "hinweis": "Prends une situation que tu connais – ou une situation inventée.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si mon cœur bat vite et que quelqu’un passe devant moi,",
+              "dann": "je m’arrête, je respire trois fois et je réfléchis à ce qui est malin."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpe les cartes STOP. Pose-les sur ta place.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 125,
+          "karten": [
+            {
+              "titel": "S Se figer",
+              "text": "Comme une statue.",
+              "bild": "icon:hand-stop"
+            },
+            {
+              "titel": "T Trois respirations",
+              "text": "Expire longuement.",
+              "bild": "icon:wind"
+            },
+            {
+              "titel": "O Observer",
+              "text": "Que se passe-t-il ?",
+              "bild": "icon:eye"
+            },
+            {
+              "titel": "P Passer à l’action",
+              "text": "Que faire de malin ?",
+              "bild": "icon:footsteps"
+            }
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent le chemin STOP (se figer, trois respirations, observer, passer à l’action), reconnaissent leurs signaux corporels et planifient quand l’utiliser.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire : « Que pourrait faire Mila ? » Montrer le chemin au tableau.",
+          "Jeu STOP (7 min) : au claquement de mains, tous se figent comme des statues, expirent longuement trois fois, regardent autour.",
+          "Tâche 1 (8 min) : remplir les étapes pour Mila et comparer. Observer : que s’est-il passé ? que ressens-tu ?",
+          "Tâches 2 et 3 (10 min) : respirer ensemble, cocher les signaux du corps, les nommer sur base volontaire.",
+          "Tâches 4 et 5 (5 min) : écrire le plan, découper les cartes, s’exercer à deux sur une situation inventée."
+        ],
+        "hintergrund": "La compétence STOP vient de la thérapie comportementale dialectique (module de tolérance à la détresse ; Linehan, 2015 ; version scolaire : Mazza et al., 2016) : s’arrêter, faire un pas en arrière, observer, agir en pleine conscience. Entre l’impulsion et l’action naît une pause où l’excitation peut retomber. Une expiration lente et prolongée y contribue (Zaccaro et al., 2018). La feuille complète « Stop – réfléchir – agir » par le corps. À exercer d’abord dans le calme.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Mazza, J. J., Dexter-Mazza, E. T., Miller, A. L., Rathus, J. H. & Murphy, H. E. (2016). DBT Skills in Schools: Skills Training for Emotional Problem Solving for Adolescents (DBT STEPS-A). New York: Guilford.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement le jeu des statues et les cartes ; tâche 1 à l’oral.",
+          "schwerer": "Parcourir les quatre étapes pour une situation difficile personnelle."
+        },
+        "impulse": [
+          "À quoi remarques-tu que ton corps crie « vas-y » ?",
+          "Que peut-il se passer en trois respirations ?"
+        ],
+        "tipps": [
+          "Groupe : répéter souvent le jeu STOP, par exemple avant la récréation ; convenir d’un signal et d’un geste.",
+          "Séance individuelle : respirer ensemble et jouer la scène avec l’adulte."
+        ],
+        "achtung": "STOP ne remplace pas la protection : qui est mis sous pression peut s’éloigner et chercher de l’aide. En cas d’emportements fréquents et violents : informer la direction (responsable).",
+        "material": "Crayons, ciseaux"
+      }
+    },
+    "verwandt": [
+      "stopp-denken-handeln",
+      "t2-das-gegenteil-tun"
+    ]
+  },
+  {
+    "id": "t3-abc-modell",
+    "bereich": "verhalten",
+    "thema": "selbstbeobachtung",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "K-29",
+      "K-26",
+      "V-33"
+    ],
+    "schlagworte": [
+      "ABC-Modell",
+      "Gedanken",
+      "Gefühle",
+      "Bewertung",
+      "kognitive Verhaltenstherapie"
+    ],
+    "bild": "icon:alphabet-latin",
+    "verwandt": [
+      "t3-denkfallen",
+      "t3-gedanken-vor-gericht",
+      "skills-gedanke-gefuehl-verhalten"
+    ],
+    "de": {
+      "titel": "Das ABC-Modell",
+      "untertitel": "Nicht nur das, was passiert, macht Gefühle. Auch das, was du darüber denkst.",
+      "bausteine": [
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "A – Auslöser",
+              "text": "Was passiert. Eine Kamera könnte es filmen."
+            },
+            {
+              "titel": "B – Bewertung",
+              "text": "Was ich darüber denke."
+            },
+            {
+              "titel": "C – Konsequenz",
+              "text": "Was ich fühle, im Körper spüre und tue."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ist das A, B oder C? Kreuze an.",
+          "hinweis": "A kannst du filmen. B ist ein Gedanke. C ist ein Gefühl, eine Körperreaktion oder eine Handlung.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "A",
+            "B",
+            "C"
+          ],
+          "items": [
+            "„Mila geht an mir vorbei, ohne zu grüßen.“",
+            "„Bestimmt ist sie sauer auf mich.“",
+            "„Mein Magen zieht sich zusammen.“",
+            "„Das Training fällt aus.“",
+            "„Gut, dann habe ich endlich Zeit für mich.“",
+            "„Ich rufe Pol an und frage, ob er mit ins Kino kommt.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gleicher Auslöser, zwei Bewertungen. Was fühlt und tut Jana jeweils?",
+          "hinweis": "Auslöser: Jana schickt Ben ein Foto. Zwei Stunden später hat er noch nicht geantwortet.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Wörter zum Auswählen",
+          "items": [
+            "gekränkt",
+            "unsicher",
+            "sauer",
+            "gelassen",
+            "neugierig",
+            "angespannt",
+            "Herz klopft",
+            "Bauch zieht sich zusammen",
+            "Schultern locker",
+            "schreibt Ben nochmal",
+            "legt das Handy weg",
+            "macht etwas anderes"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "",
+            "Bewertung 1",
+            "Bewertung 2"
+          ],
+          "breiten": [
+            0.9,
+            1.5,
+            1.5
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "B – Gedanke",
+              "„Er findet das Foto peinlich.“",
+              "„Er ist bestimmt beim Training.“"
+            ],
+            [
+              "C – Gefühl",
+              "",
+              ""
+            ],
+            [
+              "C – Körper",
+              "",
+              ""
+            ],
+            [
+              "C – Handlung",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Fall: etwas, das dich zuletzt geärgert oder nervös gemacht hat. Ein erfundener Fall ist genauso gut.",
+          "hinweis": "Es muss nichts Schweres sein: Bus, Pause, Chat, Training.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 4,
+          "items": [
+            {
+              "titel": "A – Auslöser",
+              "text": "Was ist passiert?"
+            },
+            {
+              "titel": "B – Bewertung",
+              "text": "Was habe ich gedacht?"
+            },
+            {
+              "titel": "C – Konsequenz",
+              "text": "Was habe ich gefühlt und getan?"
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie stark war das Gefühl?",
+          "von": "kaum",
+          "bis": "sehr stark",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche andere Bewertung (B) könnte auch passen? Was würde sich ändern?",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Eine andere Bewertung: …",
+            "Dann würde ich fühlen: …",
+            "Dann würde ich tun: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "skala",
+          "frage": "Wie stark wäre das Gefühl dann?",
+          "von": "kaum",
+          "bis": "sehr stark",
+          "stufen": 11
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Gedanken sind Vermutungen",
+          "text": "Sie fühlen sich an wie Tatsachen. Oft sind sie nur die erste Erklärung, die dir einfällt. Manchmal stimmt sie. Manchmal gibt es eine andere, und die verändert, wie du dich fühlst."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du zeigst.",
+          "text": "Dein Fall bleibt bei dir, wenn du das willst. Ein erfundener Fall zählt genauso."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Auslöser (A), Bewertung (B) und Konsequenz (C) und erleben an einem eigenen oder erfundenen Fall: Dieselbe Situation kann je nach Bewertung anders ausgehen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Jemand geht grußlos an dir vorbei. Was könnte das heißen?“ Drei bis vier Deutungen sammeln, nicht bewerten.",
+          "Modell (3 Min.): Die drei Kästen erklären. A so beschreiben, wie eine Kamera es filmt; B steckt dazwischen und ist oft kaum bemerkbar.",
+          "Aufgabe 1 zu zweit (5 Min.). Aufgabe 2 gemeinsam (10 Min.): beide Bewertungen nebeneinander ausfüllen. „Was ändert sich, wenn nur B anders ist?“",
+          "Aufgabe 3 und 4 einzeln (12 Min.): eigener oder erfundener Fall, wird nicht vorgelesen. Gefühlsstärke vorher und nachher vergleichen.",
+          "Abschluss (3 Min.): „Welche andere Bewertung hat am meisten geholfen?“ Beispiele ohne persönliche Details."
+        ],
+        "hintergrund": "Das ABC-Modell geht auf Ellis (1962) zurück und ist ein Kern der kognitiven Verhaltenstherapie (KVT): Nicht das Ereignis (A) löst Gefühl und Verhalten (C) aus, sondern seine Bewertung (B). Beck (2011) beschreibt automatische Gedanken, die schnell und ungeprüft auftauchen, sich aber erfragen lassen. Arbeitsbücher für Kinder und Jugendliche führen das Modell an kleinen Alltagsfällen ein (Stallard, 2019). Ziel ist nicht „positiv“, sondern realistischer zu denken.",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgaben vorlesen, Aufgabe 3 mündlich (Leitung schreibt); Aufgabe 4 weglassen.",
+          "schwerer": "Zum eigenen Fall eine dritte Bewertung suchen, jeweils mit Gefühlsstärke."
+        },
+        "impulse": [
+          "Woran merkst du, dass ein Gedanke das Steuer übernimmt?",
+          "Wann hat dich eine erste Erklärung schon einmal in die Irre geführt?"
+        ],
+        "tipps": [
+          "Gruppe: Aufgabe 2 in Kleingruppen; eigene Fälle bleiben privat.",
+          "Einzelstunde: Fall gemeinsam notieren; wer wenig schreibt, spricht."
+        ],
+        "achtung": "Belastendes beim eigenen Fall nicht im Plenum vertiefen: Einzelgespräch anbieten. Bei Hinweisen auf Gefährdung (Gewalt, Selbstverletzung, Suizidgedanken) sofort nach dem internen Ablauf handeln, nicht allein lassen, die zuständige Leitung (Responsable) informieren.",
+        "material": "Stifte, Tafel"
+      }
+    },
+    "fr": {
+      "titel": "Le modèle ABC",
+      "untertitel": "Ce n’est pas seulement ce qui arrive qui crée des émotions. C’est aussi ce que tu en penses.",
+      "bausteine": [
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "A – Déclencheur",
+              "text": "Ce qui arrive. Une caméra pourrait le filmer."
+            },
+            {
+              "titel": "B – Interprétation",
+              "text": "Ce que j’en pense."
+            },
+            {
+              "titel": "C – Conséquence",
+              "text": "Ce que je ressens, mon corps, ce que je fais."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "C’est un A, un B ou un C ? Coche.",
+          "hinweis": "On peut filmer A. B est une pensée. C est une émotion, une réaction du corps ou une action.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "A",
+            "B",
+            "C"
+          ],
+          "items": [
+            "« Mila passe devant moi sans me dire bonjour. »",
+            "« Elle est sûrement fâchée contre moi. »",
+            "« Mon ventre se noue. »",
+            "« L’entraînement est annulé. »",
+            "« Tant mieux, j’aurai enfin du temps pour moi. »",
+            "« J’appelle Pol et je lui demande s’il vient au cinéma. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Même déclencheur, deux interprétations. Que ressent et que fait Jana ?",
+          "hinweis": "Déclencheur : Jana envoie une photo à Ben. Deux heures plus tard, il n’a toujours pas répondu.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Des mots pour t’aider",
+          "items": [
+            "blessée",
+            "incertaine",
+            "fâchée",
+            "sereine",
+            "curieuse",
+            "tendue",
+            "le cœur bat vite",
+            "le ventre se noue",
+            "les épaules se détendent",
+            "écrit encore à Ben",
+            "pose son téléphone",
+            "fait autre chose"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "",
+            "Interprétation 1",
+            "Interprétation 2"
+          ],
+          "breiten": [
+            0.9,
+            1.5,
+            1.5
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "B – Pensée",
+              "« Il trouve ma photo gênante. »",
+              "« Il est sûrement à l’entraînement. »"
+            ],
+            [
+              "C – Émotion",
+              "",
+              ""
+            ],
+            [
+              "C – Corps",
+              "",
+              ""
+            ],
+            [
+              "C – Action",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton cas : une situation récente qui t’a énervé·e ou stressé·e. Un cas inventé marche aussi bien.",
+          "hinweis": "Rien de grave : bus, récré, chat, entraînement.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 4,
+          "items": [
+            {
+              "titel": "A – Déclencheur",
+              "text": "Que s’est-il passé ?"
+            },
+            {
+              "titel": "B – Interprétation",
+              "text": "Qu’ai-je pensé ?"
+            },
+            {
+              "titel": "C – Conséquence",
+              "text": "Qu’ai-je ressenti et fait ?"
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Quelle était l’intensité de l’émotion ?",
+          "von": "faible",
+          "bis": "très forte",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle autre interprétation (B) serait possible ? Qu’est-ce qui changerait ?",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Une autre interprétation : …",
+            "Alors je ressentirais : …",
+            "Alors je ferais : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "skala",
+          "frage": "Quelle serait l’intensité de l’émotion alors ?",
+          "von": "faible",
+          "bis": "très forte",
+          "stufen": 11
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Les pensées sont des hypothèses",
+          "text": "Elles ressemblent à des faits. Souvent, ce n’est que la première explication qui te vient. Parfois elle est juste. Parfois il y en a une autre, et elle change ce que tu ressens."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides ce que tu montres.",
+          "text": "Ton cas reste pour toi si tu le souhaites. Un cas inventé compte autant."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent le déclencheur (A), l’interprétation (B) et la conséquence (C) et constatent, sur un cas personnel ou inventé, qu’une même situation peut tourner autrement selon l’interprétation.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Quelqu’un passe devant toi sans dire bonjour. Qu’est-ce que cela peut signifier ? » Recueillir trois ou quatre interprétations, sans les juger.",
+          "Modèle (3 min) : expliquer les trois cases. Décrire A comme le filmerait une caméra ; B se glisse entre les deux et passe souvent inaperçu.",
+          "Exercice 1 à deux (5 min). Exercice 2 ensemble (10 min) : remplir les deux interprétations côte à côte. « Que change-t-il si seule B est différente ? »",
+          "Exercices 3 et 4 individuellement (12 min) : cas personnel ou inventé, sans lecture à voix haute. Comparer l’intensité avant et après.",
+          "Conclusion (3 min) : « Quelle autre interprétation a le plus aidé ? » Exemples sans détails personnels."
+        ],
+        "hintergrund": "Le modèle ABC remonte à Ellis (1962) et constitue un noyau de la thérapie cognitivo-comportementale (TCC) : ce n’est pas l’événement (A) qui déclenche l’émotion et le comportement (C), mais son interprétation (B). Beck (2011) décrit des pensées automatiques, qui surgissent vite et sans examen, mais que l’on peut questionner. Les manuels pour enfants et adolescents introduisent le modèle par de petits cas du quotidien (Stallard, 2019). Le but n’est pas de penser « positif », mais plus réaliste.",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Lire les consignes, exercice 3 à l’oral (l’adulte note) ; supprimer l’exercice 4.",
+          "schwerer": "Chercher une troisième interprétation pour son cas, avec l’intensité de l’émotion."
+        },
+        "impulse": [
+          "À quoi remarques-tu qu’une pensée prend le volant ?",
+          "Quand une première explication t’a-t-elle déjà égaré·e ?"
+        ],
+        "tipps": [
+          "Groupe : exercice 2 en petits groupes ; les cas personnels restent privés.",
+          "Séance individuelle : noter le cas ensemble ; qui écrit peu parle."
+        ],
+        "achtung": "Ne pas approfondir un cas pesant devant le groupe : proposer un entretien individuel. En cas d’indices de danger (violence, automutilation, idées suicidaires), agir tout de suite selon la procédure interne, ne pas laisser la personne seule, informer la direction compétente (responsable).",
+        "material": "Stylos, tableau"
+      }
+    }
+  },
+  {
+    "id": "t3-denkfallen",
+    "bereich": "verhalten",
+    "thema": "selbstbeobachtung",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "KOG-58",
+      "KOG-61",
+      "V-33"
+    ],
+    "schlagworte": [
+      "Denkfallen",
+      "kognitive Verzerrungen",
+      "Gedanken prüfen",
+      "kognitive Verhaltenstherapie",
+      "Karten"
+    ],
+    "bild": "icon:brain",
+    "verwandt": [
+      "t3-abc-modell",
+      "t3-gedanken-vor-gericht"
+    ],
+    "de": {
+      "titel": "Denkfallen-Karten",
+      "untertitel": "Manche Gedanken klingen wahr und führen trotzdem in die Irre. Acht davon kennen viele Jugendliche.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Lies die acht Karten. Welche Denkfalle kennst du?",
+          "hinweis": "Du kannst die Karten ausschneiden und als Merkkarten behalten.",
+          "symbole": [
+            "lesen",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 128,
+          "karten": [
+            {
+              "bild": "icon:masks-theater",
+              "titel": "Schwarz-Weiß-Denken",
+              "text": "Alles ist ganz gut oder ganz schlecht. Frage: Was liegt dazwischen?"
+            },
+            {
+              "bild": "icon:eye",
+              "titel": "Gedankenlesen",
+              "text": "Ich weiß, was die anderen über mich denken. Frage: Woher weiß ich das? Habe ich gefragt?"
+            },
+            {
+              "bild": "icon:cloud-storm",
+              "titel": "Schwarzmalen",
+              "text": "Ich male mir das Schlimmste aus. Frage: Was ist am wahrscheinlichsten?"
+            },
+            {
+              "bild": "icon:hourglass",
+              "titel": "Immer und nie",
+              "text": "Einmal ist für mich immer. Frage: Stimmt das jedes Mal? Gab es Ausnahmen?"
+            },
+            {
+              "bild": "icon:mood-nervous",
+              "titel": "Gefühl als Beweis",
+              "text": "Ich fühle es, also stimmt es. Frage: Fühlt es sich nur so an – oder gibt es Beweise?"
+            },
+            {
+              "bild": "icon:checklist",
+              "titel": "Muss-Sätze",
+              "text": "Ich muss immer, ich darf nie. Frage: Wer sagt das? Gilt das auch für andere?"
+            },
+            {
+              "bild": "icon:target",
+              "titel": "Alles auf mich beziehen",
+              "text": "Wenn etwas schiefgeht, bin ich schuld. Frage: Was hat noch mitgespielt?"
+            },
+            {
+              "bild": "icon:award",
+              "titel": "Das Gute zählt nicht",
+              "text": "Erfolge sind Glück, Fehler sind echt. Frage: Was habe ich selbst dazu getan?"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Eine Falle zu erkennen, hilft schon",
+          "text": "Jeder Kopf tappt in Denkfallen, besonders unter Stress. Ein Satz wie „Aha, Gedankenlesen“ schafft Abstand."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Falle steckt im Satz? Verbinde.",
+          "hinweis": "Beispiel: „Die gute Note war nur Glück“ gehört zu „Das Gute zählt nicht“.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Gedanke",
+            "Denkfalle"
+          ],
+          "links": [
+            "„Wenn ich nicht die beste Note schreibe, war alles umsonst.“",
+            "„Die starren mich an. Die finden mich bestimmt peinlich.“",
+            "„Bleibe ich beim Vortrag stecken, ist mein Ruf für immer ruiniert.“",
+            "„Mich fragt nie jemand, ob ich mitkomme.“",
+            "„Ich fühle mich so dumm. Also bin ich dumm.“",
+            "„Ich darf mir keinen Fehler erlauben.“",
+            "„Sie ist heute still. Bestimmt habe ich etwas falsch gemacht.“"
+          ],
+          "rechts": [
+            "Muss-Sätze",
+            "Gedankenlesen",
+            "Immer und nie",
+            "Alles auf mich beziehen",
+            "Schwarz-Weiß-Denken",
+            "Gefühl als Beweis",
+            "Schwarzmalen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Denkfalle kennst du von dir selbst? Kreuze höchstens drei an.",
+          "hinweis": "Das bleibt bei dir.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Schwarz-Weiß-Denken",
+            "Gedankenlesen",
+            "Schwarzmalen",
+            "Immer und nie",
+            "Gefühl als Beweis",
+            "Muss-Sätze",
+            "Alles auf mich beziehen",
+            "Das Gute zählt nicht"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fang einen Gedanken ein, einen eigenen oder einen erfundenen. Welche Falle ist es? Welche Frage hilft?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Der Gedanke",
+            "Die Falle",
+            "Frage – und ein neuer Gedanke"
+          ],
+          "breiten": [
+            1.2,
+            0.9,
+            1.9
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "„Alle finden mich peinlich.“",
+            "Gedankenlesen",
+            "Woher weiß ich das? Mila hat gelacht, als ich etwas gesagt habe. Vielleicht über den Witz."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen acht typische Denkfallen, erkennen sie in Alltagssätzen und finden zu einem eigenen Gedanken eine Prüffrage.",
+        "ablauf": [
+          "Einstieg (3 Min.): „Habt ihr etwas fest geglaubt, das sich später als falsch herausstellte?“ Beispiele sammeln.",
+          "Karten (8 Min.): jede Karte laut lesen. „Welche kennt ihr aus Chat, Schule oder Sport?“ Karten auf Wunsch ausschneiden.",
+          "Aufgabe 2 zu zweit (7 Min.). Lösung: beste Note = Schwarz-Weiß · starren = Gedankenlesen · Vortrag = Schwarzmalen · nie jemand = Immer und nie · so dumm = Gefühl als Beweis · keinen Fehler = Muss-Sätze · still = Alles auf mich.",
+          "Aufgabe 3 allein (2 Min.), nicht auswerten. Aufgabe 4 einzeln (12 Min.): die Prüffrage der Karte nutzen.",
+          "Abschluss (3 Min.): „Aha, Gedankenlesen“ als Merksatz üben; Karten mitnehmen."
+        ],
+        "hintergrund": "Denkfehler („kognitive Verzerrungen“) sind ein Kernbegriff der kognitiven Verhaltenstherapie (KVT): systematische Muster, die belastende Gefühle aufrechterhalten (Beck, 2011). Programme für Kinder und Jugendliche geben ihnen anschauliche Namen und je Falle eine Prüffrage (Stallard, 2019; Kendall & Hedtke, 2006). Wichtig: Die Falle ist kein Fehler der Person, und ihr Name ersetzt die Prüfung nicht. Zuerst wird sie meist im Nachhinein erkannt, später im Moment.",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Karten; Aufgabe 4 mündlich.",
+          "schwerer": "Zu jedem Satz aus Aufgabe 2 einen ausgewogenen Gegengedanken formulieren."
+        },
+        "impulse": [
+          "Welche Falle hört man in Chats am häufigsten?",
+          "Wann bist du zuletzt in eine getappt?"
+        ],
+        "tipps": [
+          "Gruppe: Kartenspiel: ein Team stellt einen Satz dar, das andere nennt die Falle.",
+          "Einzelstunde: Karten durchgehen, „Kennst du das?“ Mitgebrachte Chats als Fälle."
+        ],
+        "achtung": "Sätze wie „Ich bin nichts wert“ nicht „widerlegen“, sondern ernst nehmen und ein Einzelgespräch anbieten. Bei Hinweisen auf Gefährdung (Gewalt, Selbstverletzung, Suizidgedanken) sofort nach internem Ablauf handeln, Responsable informieren.",
+        "material": "Schere, Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Cartes des pièges de la pensée",
+      "untertitel": "Certaines pensées sonnent vrai et nous égarent pourtant. Beaucoup de jeunes en connaissent huit.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Lis les huit cartes. Quel piège connais-tu ?",
+          "hinweis": "Tu peux découper les cartes et les garder comme aide-mémoire.",
+          "symbole": [
+            "lesen",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 128,
+          "karten": [
+            {
+              "bild": "icon:masks-theater",
+              "titel": "Tout ou rien",
+              "text": "Tout est très bien ou très mal. Question : qu’y a-t-il entre les deux ?"
+            },
+            {
+              "bild": "icon:eye",
+              "titel": "Lire dans les pensées",
+              "text": "Je sais ce que les autres pensent de moi. Question : comment le sais-je ? Ai-je demandé ?"
+            },
+            {
+              "bild": "icon:cloud-storm",
+              "titel": "Voir tout en noir",
+              "text": "J’imagine le pire. Question : qu’est-ce qui est le plus probable ?"
+            },
+            {
+              "bild": "icon:hourglass",
+              "titel": "Toujours et jamais",
+              "text": "Une fois, c’est toujours. Question : est-ce vrai à chaque fois ? Y a-t-il des exceptions ?"
+            },
+            {
+              "bild": "icon:mood-nervous",
+              "titel": "Émotion = preuve",
+              "text": "Je le ressens, donc c’est vrai. Question : un ressenti ou des preuves ?"
+            },
+            {
+              "bild": "icon:checklist",
+              "titel": "Les « je dois »",
+              "text": "Je dois toujours, je ne peux jamais. Question : qui le dit ? Est-ce vrai pour les autres ?"
+            },
+            {
+              "bild": "icon:target",
+              "titel": "Tout ramener à soi",
+              "text": "Si ça tourne mal, c’est ma faute. Question : qu’est-ce qui a pu jouer aussi ?"
+            },
+            {
+              "bild": "icon:award",
+              "titel": "Le positif ne compte pas",
+              "text": "Mes réussites sont de la chance, mes erreurs sont réelles. Question : qu’ai-je fait pour y arriver ?"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Reconnaître le piège aide déjà",
+          "text": "Tout le monde tombe dans ces pièges, surtout sous stress. Une phrase comme « Tiens, je lis dans les pensées » crée de la distance."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel piège se cache dans la phrase ? Relie.",
+          "hinweis": "Exemple : « La bonne note, c’était juste de la chance » correspond à « Le positif ne compte pas ».",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Pensée",
+            "Piège"
+          ],
+          "links": [
+            "« Si je n’ai pas la meilleure note, tout ça n’a servi à rien. »",
+            "« Ils me fixent. Ils me trouvent sûrement ridicule. »",
+            "« Si je bloque pendant l’exposé, ma réputation est ruinée pour toujours. »",
+            "« Personne ne me demande jamais si je viens. »",
+            "« Je me sens trop bête. Donc je suis bête. »",
+            "« Je n’ai pas le droit à l’erreur. »",
+            "« Elle est silencieuse aujourd’hui. J’ai sûrement fait quelque chose de mal. »"
+          ],
+          "rechts": [
+            "Les « je dois »",
+            "Lire dans les pensées",
+            "Toujours et jamais",
+            "Tout ramener à soi",
+            "Tout ou rien",
+            "Émotion = preuve",
+            "Voir tout en noir"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel piège te ressemble parfois ? Coche trois au maximum.",
+          "hinweis": "Cela reste pour toi.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Tout ou rien",
+            "Lire dans les pensées",
+            "Voir tout en noir",
+            "Toujours et jamais",
+            "Émotion = preuve",
+            "Les « je dois »",
+            "Tout ramener à soi",
+            "Le positif ne compte pas"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Attrape une pensée, la tienne ou une inventée. Quel piège est-ce ? Quelle question aide ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "La pensée",
+            "Le piège",
+            "Question – et nouvelle pensée"
+          ],
+          "breiten": [
+            1.2,
+            0.9,
+            1.9
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "« Tout le monde me trouve ridicule. »",
+            "Lire dans les pensées",
+            "Comment le sais-je ? Mila a ri quand j’ai dit quelque chose. Peut-être à cause de la blague."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent huit pièges de la pensée, les reconnaissent dans des phrases du quotidien et trouvent une question de vérification pour une pensée personnelle.",
+        "ablauf": [
+          "Entrée en matière (3 min) : « Avez-vous déjà cru fermement quelque chose qui s’est révélé faux ? » Recueillir des exemples.",
+          "Cartes (8 min) : lire chaque carte à voix haute. « Lesquelles connaissez-vous : chat, école, sport ? » Découper si souhaité.",
+          "Exercice 2 à deux (7 min). Solution : meilleure note = Tout ou rien · fixent = Lire dans les pensées · exposé = Voir tout en noir · personne jamais = Toujours et jamais · trop bête = Émotion = preuve · droit à l’erreur = « je dois » · silencieuse = Tout ramener à soi.",
+          "Exercice 3 seul (2 min), sans bilan. Exercice 4 individuellement (12 min) : utiliser la question de la carte.",
+          "Conclusion (3 min) : s’exercer à la phrase « Tiens, je lis dans les pensées » ; emporter les cartes."
+        ],
+        "hintergrund": "Les distorsions cognitives sont une notion centrale de la thérapie cognitivo-comportementale (TCC) : des schémas systématiques qui entretiennent les émotions pénibles (Beck, 2011). Les programmes pour enfants et adolescents leur donnent des noms imagés et une question de vérification par piège (Stallard, 2019 ; Kendall & Hedtke, 2006). Important : le piège n’est pas une faute de la personne, et lui donner un nom ne remplace pas la vérification. On le repère d’abord après coup, plus tard sur le moment.",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Quatre cartes seulement ; exercice 4 à l’oral.",
+          "schwerer": "Formuler une pensée de remplacement équilibrée pour chaque phrase de l’exercice 2."
+        },
+        "impulse": [
+          "Quel piège entend-on le plus souvent dans les chats ?",
+          "Quand es-tu tombé·e dans l’un d’eux pour la dernière fois ?"
+        ],
+        "tipps": [
+          "Groupe : jeu de cartes : une équipe mime une phrase, l’autre nomme le piège.",
+          "Séance individuelle : parcourir les cartes, « Tu connais ? » Utiliser des chats apportés comme cas."
+        ],
+        "achtung": "Des phrases comme « Je ne vaux rien » ne se « réfutent » pas : les prendre au sérieux, proposer un entretien individuel. En cas d’indices de danger (violence, automutilation, idées suicidaires), agir tout de suite selon la procédure interne, informer le responsable.",
+        "material": "Ciseaux, stylos"
+      }
+    }
+  },
+  {
+    "id": "t3-gedanken-vor-gericht",
+    "bereich": "verhalten",
+    "thema": "selbstbeobachtung",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40–50 Min.",
+    "eldib": [
+      "KOG-58",
+      "V-33",
+      "SOZ-36"
+    ],
+    "schlagworte": [
+      "Gedanken prüfen",
+      "Beweise",
+      "ausgewogener Gedanke",
+      "kognitive Umstrukturierung",
+      "kognitive Verhaltenstherapie"
+    ],
+    "bild": "icon:scale",
+    "verwandt": [
+      "t3-abc-modell",
+      "t3-denkfallen",
+      "t3-verhaltensexperiment"
+    ],
+    "de": {
+      "titel": "Gedanken vor Gericht",
+      "untertitel": "Ein belastender Gedanke ist angeklagt. Du bist Richterin oder Richter: erst die Beweise, dann das Urteil.",
+      "bausteine": [
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Anklage",
+              "text": "Der belastende Gedanke"
+            },
+            {
+              "titel": "Beweise",
+              "text": "Dafür und dagegen"
+            },
+            {
+              "titel": "Prüfung",
+              "text": "Tatsache oder Gefühl?"
+            },
+            {
+              "titel": "Urteil",
+              "text": "Ein ausgewogener Gedanke"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähle den Gedanken, der angeklagt wird, oder schreib einen eigenen.",
+          "hinweis": "Ein erfundener Gedanke ist genauso gut. Du musst nichts zeigen.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "frei": 1,
+          "items": [
+            "„Ich blamiere mich beim Vortrag.“",
+            "„Niemand will mit mir in eine Gruppe.“",
+            "„Ich schaffe die Prüfung nie.“",
+            "„Ich mache immer alles falsch.“"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie sehr glaubst du den Gedanken?",
+          "von": "gar nicht",
+          "bis": "völlig",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sammle Beweise. Es zählt nur, was man sehen, hören oder nachprüfen kann.",
+          "hinweis": "Beispiel „Ich blamiere mich“: dafür – beim letzten Mal habe ich gezittert. Dagegen – ich habe geübt, und Léa hört mir zu.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "waage",
+          "links": "Beweise dafür",
+          "rechts": "Beweise dagegen",
+          "zeilen": 3
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Richter stellt drei Fragen. Beantworte sie.",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Tatsache oder nur ein Gefühl? …",
+            "Das würde ich einer Freundin sagen: …",
+            "Beim letzten Mal ist es so gegangen: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fälle das Urteil: ein Gedanke, der beide Seiten ernst nimmt.",
+          "hinweis": "Beispiel: „Ich bin nervös, und ich habe geübt. Wahrscheinlich geht es ganz okay.“",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Einerseits …",
+            "Andererseits …",
+            "Mein ausgewogener Gedanke: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "skala",
+          "frage": "Wie sehr glaubst du den ersten Gedanken jetzt?",
+          "von": "gar nicht",
+          "bis": "völlig",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Für den Alltag: Was sagst du dir, wenn der Gedanke zurückkommt?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn „Ich blamiere mich“ wiederkommt,",
+              "dann": "sage ich mir: Ich bin nervös, und ich habe geübt."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Ausgewogen heißt nicht „alles gut“",
+          "text": "Ein Gedanke darf teilweise stimmen. Ein gutes Urteil passt zu den Beweisen, es muss sich nicht nur besser anhören."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen prüfen einen belastenden Gedanken mit Beweisen dafür und dagegen und formulieren einen ausgewogenen Gedanken.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wer darf vor Gericht etwas sagen? Was gilt als Beweis?“ Rollen klären: Anklage, Verteidigung, Richter.",
+          "Gemeinsamer Fall an der Tafel (8 Min.): erfundener Gedanke, Beweise sammeln. „Ist das eine Tatsache oder eine Deutung?“",
+          "Aufgaben 1 und 2 einzeln (12 Min.); wer mag, übernimmt den Beispielgedanken. Überzeugung vorher notieren.",
+          "Aufgaben 3 und 4 (12 Min.): die Fragen allein beantworten, das Urteil zu zweit gegenlesen.",
+          "Aufgabe 5 (3 Min.): das Urteil als Satz für den Alltag. Abschluss (3 Min.): Skalen vergleichen. „Hat sich etwas bewegt? Schon ein Punkt zählt.“"
+        ],
+        "hintergrund": "Die Übung gehört zur kognitiven Umstrukturierung der kognitiven Verhaltenstherapie (KVT): Belastende automatische Gedanken werden als Hypothesen behandelt und anhand von Belegen dafür und dagegen geprüft (Beck, 2011). Ziel ist kein positiver, sondern ein ausgewogener Gedanke; die Überzeugung vorher und nachher (0–10) macht die Veränderung sichtbar. Die Frage „Was würde ich einer Freundin sagen?“ nutzt Selbstdistanzierung (Kross & Ayduk, 2017); Arbeitsbücher für Jugendliche setzen sie ebenso ein (Stallard, 2019).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgaben vorlesen; Beweise mündlich, die Leitung schreibt.",
+          "schwerer": "Zusätzlich eine Denkfalle (Blatt „Denkfallen-Karten“) benennen."
+        },
+        "impulse": [
+          "Woran erkennst du eine Tatsache?",
+          "Was würde dein bester Freund dazu sagen?"
+        ],
+        "tipps": [
+          "Gruppe: Rollenspiel mit Anklage, Verteidigung und Richter an einem erfundenen Fall.",
+          "Einzelstunde: Beweise gemeinsam sammeln; die Fachperson stellt die Fragen der Richterin."
+        ],
+        "achtung": "Bei Gedanken wie „Ich bin nichts wert“ oder „Es hat alles keinen Sinn“ nicht widerlegen, sondern ernst nehmen und ein Einzelgespräch anbieten. Bei Hinweisen auf Gefährdung (Gewalt, Selbstverletzung, Suizidgedanken) sofort nach internem Ablauf handeln, Responsable informieren.",
+        "material": "Stifte, Tafel"
+      }
+    },
+    "fr": {
+      "titel": "Les pensées au tribunal",
+      "untertitel": "Une pensée pesante est accusée. Tu es le juge : d’abord les preuves, ensuite le verdict.",
+      "bausteine": [
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Accusation",
+              "text": "La pensée pesante"
+            },
+            {
+              "titel": "Preuves",
+              "text": "Pour et contre"
+            },
+            {
+              "titel": "Vérification",
+              "text": "Fait ou ressenti ?"
+            },
+            {
+              "titel": "Verdict",
+              "text": "Une pensée équilibrée"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis la pensée accusée, ou écris la tienne.",
+          "hinweis": "Une pensée inventée marche aussi bien. Tu n’as rien à montrer.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "frei": 1,
+          "items": [
+            "« Je vais me ridiculiser pendant l’exposé. »",
+            "« Personne ne veut de moi dans son groupe. »",
+            "« Je ne réussirai jamais l’examen. »",
+            "« Je fais toujours tout de travers. »"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "À quel point crois-tu cette pensée ?",
+          "von": "pas du tout",
+          "bis": "complètement",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rassemble des preuves. Seul compte ce qu’on peut voir, entendre ou vérifier.",
+          "hinweis": "Exemple « Je vais me ridiculiser » : pour – la dernière fois, j’ai tremblé. Contre – je me suis entraîné·e, et Léa m’écoute.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "waage",
+          "links": "Preuves pour",
+          "rechts": "Preuves contre",
+          "zeilen": 3
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le juge pose trois questions. Réponds-y.",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Un fait ou juste un ressenti ? …",
+            "Voilà ce que je dirais à un ami : …",
+            "La dernière fois, ça s’est passé comme ça : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rends ton verdict : une pensée qui prend les deux côtés au sérieux.",
+          "hinweis": "Exemple : « Je suis nerveux, et je me suis entraîné. Ça se passera sans doute assez bien. »",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "D’un côté : …",
+            "De l’autre : …",
+            "Ma pensée équilibrée : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "skala",
+          "frage": "À quel point crois-tu la première pensée maintenant ?",
+          "von": "pas du tout",
+          "bis": "complètement",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pour le quotidien : que te dis-tu quand la pensée revient ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si « Je vais me ridiculiser » revient,",
+              "dann": "je me dis : je suis nerveux·se, et je me suis entraîné·e."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Équilibrée ne veut pas dire « tout va bien »",
+          "text": "Une pensée peut être en partie vraie. Un bon verdict colle aux preuves : il ne suffit pas qu’il sonne mieux."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes vérifient une pensée pesante avec des preuves pour et contre et formulent une pensée équilibrée.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Qui a le droit de parler au tribunal ? Qu’est-ce qui compte comme preuve ? » Clarifier les rôles : accusation, défense, juge.",
+          "Cas commun au tableau (8 min) : pensée inventée, rassembler des preuves. « Un fait ou une interprétation ? »",
+          "Exercices 1 et 2 individuellement (12 min) ; au choix, reprendre la pensée de l’exemple. Noter la conviction avant.",
+          "Exercices 3 et 4 (12 min) : répondre seul·e aux questions, relire le verdict à deux.",
+          "Exercice 5 (3 min) : le verdict comme phrase pour le quotidien. Conclusion (3 min) : comparer les échelles. « Quelque chose a bougé ? Un point compte déjà. »"
+        ],
+        "hintergrund": "L’exercice relève de la restructuration cognitive de la thérapie cognitivo-comportementale (TCC) : les pensées automatiques pesantes sont traitées comme des hypothèses et vérifiées par des preuves pour et contre (Beck, 2011). Le but n’est pas une pensée positive, mais équilibrée ; la conviction avant et après (0–10) rend le changement visible. La question « Que dirais-je à un ami ? » mobilise la distanciation de soi (Kross & Ayduk, 2017) ; les manuels pour adolescents l’utilisent aussi (Stallard, 2019).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Lire les consignes ; preuves à l’oral, l’adulte note.",
+          "schwerer": "Nommer en plus un piège de la pensée (fiche « Cartes des pièges »)."
+        },
+        "impulse": [
+          "À quoi reconnais-tu un fait ?",
+          "Que dirait ton meilleur ami ?"
+        ],
+        "tipps": [
+          "Groupe : jeu de rôle accusation, défense et juge sur un cas inventé.",
+          "Séance individuelle : rassembler les preuves ensemble ; l’adulte pose les questions du juge."
+        ],
+        "achtung": "Face à « Je ne vaux rien » ou « Rien n’a de sens », ne pas réfuter : prendre au sérieux, proposer un entretien individuel. En cas d’indices de danger (violence, automutilation, idées suicidaires), agir tout de suite selon la procédure interne, informer le responsable.",
+        "material": "Stylos, tableau"
+      }
+    }
+  },
+  {
+    "id": "t3-verhaltensexperiment",
+    "bereich": "verhalten",
+    "thema": "ziele",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min. + 1 Woche",
+    "eldib": [
+      "V-24",
+      "V-22",
+      "V-33"
+    ],
+    "schlagworte": [
+      "Verhaltensexperiment",
+      "Vorhersage",
+      "Befürchtung prüfen",
+      "Selbstwirksamkeit",
+      "kognitive Verhaltenstherapie"
+    ],
+    "bild": "icon:microscope",
+    "verwandt": [
+      "t3-gedanken-vor-gericht",
+      "t3-angstkurve",
+      "angst-verstehen"
+    ],
+    "de": {
+      "titel": "Das Verhaltensexperiment",
+      "untertitel": "Stimmt meine Befürchtung wirklich? Statt es nur zu glauben, probierst du es klein und sicher aus.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Befürchtungen sind Vorhersagen",
+          "punkte": [
+            "Viele Sorgen heißen: „Wenn ich etwas sage, lachen alle.“ Das ist eine Vorhersage.",
+            "Ob sie stimmt, weißt du erst, wenn du nachschaust.",
+            "Ein Experiment prüft sie: klein, sicher, mit genauem Blick darauf, was wirklich passiert."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "So hat es Mathis gemacht. Lies das Beispiel.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Schritt",
+            "Mathis"
+          ],
+          "breiten": [
+            0.8,
+            3
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "1  Vorhersage",
+              "„Wenn ich in Mathe eine Frage stelle, lachen alle.“ Wie sicher: 7 von 10."
+            ],
+            [
+              "2  Experiment",
+              "Ich stelle eine kurze Frage zur Aufgabe. Ich schaue, wer lacht."
+            ],
+            [
+              "3  Ergebnis",
+              "Niemand hat gelacht. Pol hat genickt. Mein Herz hat trotzdem geklopft."
+            ],
+            [
+              "4  Gelernt",
+              "Meine Vorhersage war zu schwarz. Jetzt: 2 von 10. Eine Frage zu stellen ist okay."
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Vorhersage: Wähle eine Befürchtung oder schreib eine eigene.",
+          "hinweis": "Eine erfundene Befürchtung ist genauso gut. Du musst nichts zeigen.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "frei": 1,
+          "items": [
+            "„Wenn ich im Unterricht etwas sage, lachen die anderen.“",
+            "„Wenn ich jemanden anspreche, will er nichts von mir wissen.“",
+            "„Wenn ich Nein sage, ist die Freundschaft vorbei.“",
+            "„Wenn ich einen Fehler mache, finden mich alle schwach.“",
+            "„Wenn ich allein Bus fahre, passiert etwas Schlimmes.“"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie sicher bist du, dass es so kommt?",
+          "von": "gar nicht",
+          "bis": "ganz sicher",
+          "stufen": 11
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane dein Experiment. Es muss klein und sicher sein.",
+          "hinweis": "Lieber zu klein als zu groß. Du entscheidest, was du dir zutraust.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Ideen für kleine Experimente",
+          "items": [
+            "im Unterricht eine Frage stellen",
+            "in der Pause jemanden ansprechen",
+            "bei etwas Kleinem Nein sagen",
+            "einen kleinen Fehler zugeben",
+            "eine kurze Strecke allein Bus fahren",
+            "eine Nachricht schicken und warten"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das probiere ich aus: …",
+            "Wann und wo: …",
+            "Darauf achte ich (zählen, schauen): …",
+            "Wer dabei sein kann: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach dem Experiment: Was ist wirklich passiert?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das ist passiert: …",
+            "Das habe ich gelernt: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "skala",
+          "frage": "Wie sicher bist du jetzt, dass es so kommt?",
+          "von": "gar nicht",
+          "bis": "ganz sicher",
+          "stufen": 11
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Kein Experiment, wenn es wirklich gefährlich ist",
+          "text": "Wenn dich jemand ausgrenzt, bedroht oder dir wehtut, ist das kein Test. Sprich dann mit einer erwachsenen Person, der du vertraust."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen formulieren eine konkrete Vorhersage, planen ein kleines, sicheres Experiment und vergleichen Vorhersage und Ergebnis.",
+        "ablauf": [
+          "Einstieg (4 Min.): Befürchtungen als „Wenn …, dann …“ erkennen. „Woran würden wir sehen, ob das stimmt?“",
+          "Beispiel Mathis lesen (4 Min.): Gefühl („Herz klopft“) und Ergebnis („niemand lachte“) auseinanderhalten.",
+          "Aufgabe 2 und 3 (15 Min.): Experiment so klein wählen, dass es sicher gelingt; Zeitpunkt festlegen.",
+          "Experiment durchführen, in der Stunde (Rollenspiel) oder bis zur nächsten.",
+          "Aufgabe 4 (10 Min., nächste Stunde): Ergebnis, neue Sicherheit, Gelerntes. Auch „Es war schwerer als gedacht“ ist ein Ergebnis."
+        ],
+        "hintergrund": "Verhaltensexperimente gehören zu den wirksamsten Werkzeugen der kognitiven Verhaltenstherapie (KVT): Eine Befürchtung wird als Vorhersage formuliert und durch gezieltes Ausprobieren geprüft; Erfahrung überzeugt stärker als Argumente (Beck, 2011). Eigene Erfolgserfahrungen gelten als wichtigste Quelle von Selbstwirksamkeit (Bandura, 1977). Entscheidend sind eine messbare Vorhersage, ein kleiner, sicherer Schritt und der genaue Blick auf das, was tatsächlich geschah (Stallard, 2019).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Beispiel Mathis nachspielen; Aufgaben vorlesen.",
+          "schwerer": "Zwei Experimente zur selben Befürchtung planen und vergleichen."
+        },
+        "impulse": [
+          "Woran würdest du sehen, dass deine Vorhersage nicht stimmt?",
+          "Was wäre ein kleiner, sicherer Test?"
+        ],
+        "tipps": [
+          "Gruppe: Befürchtungen anonym sammeln, gemeinsam in prüfbare Vorhersagen umformulieren.",
+          "Einzelstunde: das Experiment in der Stunde proben, dann im Alltag."
+        ],
+        "achtung": "Nur Befürchtungen testen, bei denen kein echtes Risiko besteht. Wer ausgegrenzt, bedroht oder verletzt wird, braucht Schutz, kein Experiment: Responsable informieren. Bei starker Angst oder Vermeidung SePAS einbeziehen.",
+        "material": "Stifte"
+      }
+    },
+    "fr": {
+      "titel": "L’expérience comportementale",
+      "untertitel": "Ma crainte est-elle vraiment fondée ? Au lieu de le croire, tu l’essaies en petit, en sécurité.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Les craintes sont des prédictions",
+          "punkte": [
+            "Beaucoup d’inquiétudes disent : « Si je dis quelque chose, tout le monde rit. » C’est une prédiction.",
+            "Tu ne sais si elle est vraie qu’en allant voir.",
+            "Une expérience la teste : petite, sûre, en regardant bien ce qui se passe vraiment."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Voici comment Mathis a fait. Lis l’exemple.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Étape",
+            "Mathis"
+          ],
+          "breiten": [
+            0.8,
+            3
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "1  Prédiction",
+              "« Si je pose une question en maths, tout le monde rit. » Certitude : 7 sur 10."
+            ],
+            [
+              "2  Expérience",
+              "Je pose une courte question sur l’exercice. Je regarde qui rit."
+            ],
+            [
+              "3  Résultat",
+              "Personne n’a ri. Pol a hoché la tête. Mon cœur battait quand même fort."
+            ],
+            [
+              "4  Appris",
+              "Ma prédiction était trop noire. Maintenant : 2 sur 10. Poser une question, c’est normal."
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta prédiction : choisis une crainte ou écris la tienne.",
+          "hinweis": "Une crainte inventée marche aussi bien. Tu n’as rien à montrer.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "frei": 1,
+          "items": [
+            "« Si je dis quelque chose en classe, les autres rient. »",
+            "« Si j’adresse la parole à quelqu’un, il ne veut rien savoir de moi. »",
+            "« Si je dis non, l’amitié est finie. »",
+            "« Si je fais une erreur, tout le monde me trouve faible. »",
+            "« Si je prends le bus seul, il m’arrive quelque chose de grave. »"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Quelle est ta certitude que ça se passera ainsi ?",
+          "von": "aucune",
+          "bis": "totale",
+          "stufen": 11
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prépare ton expérience. Elle doit être petite et sûre.",
+          "hinweis": "Mieux vaut trop petit que trop grand. Tu décides de ce que tu te sens capable de faire.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Idées de petites expériences",
+          "items": [
+            "poser une question en classe",
+            "adresser la parole à quelqu’un à la récré",
+            "dire non pour un petit truc",
+            "avouer une petite erreur",
+            "prendre le bus seul sur un court trajet",
+            "envoyer un message et attendre"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Voilà ce que j’essaie : …",
+            "Quand et où : …",
+            "Ce que j’observe (compter, regarder) : …",
+            "Qui peut être là : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après l’expérience : que s’est-il vraiment passé ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Voilà ce qui s’est passé : …",
+            "Voilà ce que j’ai appris : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "skala",
+          "frage": "Quelle est ta certitude maintenant que ça se passera ainsi ?",
+          "von": "aucune",
+          "bis": "totale",
+          "stufen": 11
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Pas d’expérience si c’est vraiment dangereux",
+          "text": "Si quelqu’un t’exclut, te menace ou te fait mal, ce n’est pas un test. Parle alors à un adulte de confiance."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes formulent une prédiction concrète, préparent une petite expérience sûre et comparent prédiction et résultat.",
+        "ablauf": [
+          "Entrée en matière (4 min) : reconnaître les craintes comme des « Si…, alors… ». « À quoi verrait-on si c’est vrai ? »",
+          "Lire l’exemple de Mathis (4 min) : distinguer l’émotion (« le cœur bat ») du résultat (« personne n’a ri »).",
+          "Exercices 2 et 3 (15 min) : choisir une expérience assez petite pour réussir à coup sûr ; fixer le moment.",
+          "Réaliser l’expérience, pendant la séance (jeu de rôle) ou d’ici la suivante.",
+          "Exercice 4 (10 min, séance suivante) : résultat, nouvelle certitude, apprentissage. « C’était plus dur que prévu » est aussi un résultat."
+        ],
+        "hintergrund": "Les expériences comportementales comptent parmi les outils les plus efficaces de la thérapie cognitivo-comportementale (TCC) : une crainte est formulée comme prédiction et vérifiée en l’essayant ; l’expérience convainc plus que les arguments (Beck, 2011). Les réussites vécues sont considérées comme la source principale du sentiment d’efficacité personnelle (Bandura, 1977). L’essentiel : une prédiction mesurable, un petit pas sûr et un regard précis sur ce qui s’est réellement passé (Stallard, 2019).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Rejouer l’exemple de Mathis ; lire les consignes.",
+          "schwerer": "Préparer deux expériences pour la même crainte et les comparer."
+        },
+        "impulse": [
+          "À quoi verrais-tu que ta prédiction est fausse ?",
+          "Quel serait un petit test sûr ?"
+        ],
+        "tipps": [
+          "Groupe : recueillir les craintes anonymement, les reformuler en prédictions vérifiables.",
+          "Séance individuelle : répéter l’expérience pendant la séance, puis dans le quotidien."
+        ],
+        "achtung": "Ne tester que des craintes sans risque réel. Qui est exclu, menacé ou blessé a besoin de protection, pas d’une expérience : informer le responsable. En cas de forte anxiété ou d’évitement, impliquer le SePAS.",
+        "material": "Stylos"
+      }
+    }
+  },
+  {
+    "id": "t4-gedanken-sind-nur-gedanken",
+    "bereich": "verhalten",
+    "thema": "selbstbeobachtung",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "KOG-58",
+      "SOZ-40",
+      "V-25"
+    ],
+    "schlagworte": [
+      "Gedanken",
+      "Gedankenabstand",
+      "Grübeln",
+      "Achtsamkeit",
+      "Selbstbeobachtung"
+    ],
+    "bild": "icon:brain",
+    "verwandt": [
+      "t4-atem-anker",
+      "ich-sage-mir-selbst"
+    ],
+    "de": {
+      "titel": "Gedanken sind nur Gedanken",
+      "untertitel": "Abstand nehmen vom Kopfkino: zwei Übungen",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dein Kopf macht den ganzen Tag Sätze. Manche helfen, andere ziehen runter: „Ich schaffe das nie.“ Ein Gedanke ist ein Satz im Kopf, noch keine Tatsache. Du musst ihn nicht wegdrücken und nicht jedem glauben. Du kannst Abstand nehmen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übung 1: Wähle einen Gedanken, der dich nur ein bisschen stört.",
+          "hinweis": "Nimm keinen, der dich sehr quält. Ein erfundener Gedanke geht auch.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Ich schaffe das nie.",
+            "Die anderen finden mich komisch.",
+            "Ich bin nicht gut genug.",
+            "Das geht bestimmt schief.",
+            "Ich muss alles perfekt machen.",
+            "Keiner hört mir zu."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sag den Gedanken in drei Stufen, laut oder leise. Schreib sie dann auf.",
+          "hinweis": "So klingt es mit einem Beispiel:",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Stufe",
+            "So klingt es"
+          ],
+          "breiten": [
+            1.1,
+            3.4
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "1 · Der Gedanke",
+              "„Ich schaffe das nie.“"
+            ],
+            [
+              "2 · Mit Abstand",
+              "„Ich habe den Gedanken, dass ich das nie schaffe.“"
+            ],
+            [
+              "3 · Mit mehr Abstand",
+              "„Ich bemerke, dass ich den Gedanken habe, dass ich das nie schaffe.“"
+            ]
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Der Gedanke:",
+            "Ich habe den Gedanken, dass …",
+            "Ich bemerke, dass ich den Gedanken habe, dass …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie stark hält dich der Gedanke fest?",
+          "hinweis": "0 = gar nicht, 10 = sehr stark. Es gibt keine falsche Zahl.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Vor der Übung (0–10):",
+            "Nach der Übung (0–10):"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Noch mehr Abstand: Probier eine Variante aus.",
+          "hinweis": "Sag den Gedanken …",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "in Zeitlupe",
+            "mit Comicstimme",
+            "wie eine Schlagzeile",
+            "leise gesungen",
+            "und sag danach: „Danke, Kopf.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übung 2: Blätter im Fluss. Lies die Schritte, dann probier es 2 Minuten.",
+          "hinweis": "Du kannst die Augen schließen oder auf einen Punkt schauen.",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Setz dich bequem hin. Spür deine Füße am Boden."
+            },
+            {
+              "titel": "Stell dir einen Fluss vor. Blätter treiben vorbei."
+            },
+            {
+              "titel": "Jeder Gedanke kommt auf ein Blatt und treibt weiter."
+            },
+            {
+              "titel": "Du schaust nur zu. Mitgeschwommen? Dann zurück ans Ufer."
+            }
+          ]
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 6,
+          "label": "Mein Fluss: Zeichne den Fluss. Schreib auf jedes Blatt einen Gedanken, der gekommen ist."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie war die Übung?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "teils",
+            "nein"
+          ],
+          "items": [
+            "Ich konnte Gedanken vorbeiziehen lassen.",
+            "Ich bin oft mit einem Gedanken mitgeschwommen.",
+            "Danach war ich ruhiger."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Mitgeschwommen? Das gehört dazu",
+          "text": "Das passiert allen. Es zu bemerken und zurück ans Ufer zu gehen, ist die eigentliche Übung."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erleben, dass ein Gedanke nur ein Satz im Kopf ist. Sie üben zwei Wege, Abstand zu nehmen: „Ich habe den Gedanken, dass …“ und „Blätter im Fluss“.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was sagt dein Kopf vor einer Arbeit?“ Beispiele sammeln, nicht bewerten.",
+          "Übung 1 (12 Min.): leichten Gedanken wählen (gern erfunden), in drei Stufen sprechen und aufschreiben, Zahl vorher und nachher.",
+          "Varianten (5 Min.): ein bis zwei ausprobieren (Zeitlupe, Comicstimme); nie bei schweren Gedanken.",
+          "Übung 2 (10 Min.): Schritte vorlesen, 2 Minuten still üben, dann zeichnen oder schreiben.",
+          "Auswertung (5 Min.): „Wer ist mitgeschwommen?“ Das gehört dazu; zurück ans Ufer ist die Übung."
+        ],
+        "hintergrund": "Kognitive Defusion ist ein Verfahren der Akzeptanz- und Commitment-Therapie (ACT): Gedanken werden als Gedanken beobachtet, statt mit ihnen zu verschmelzen (Hayes, Strosahl & Wilson, 2012). Der Satz „Ich habe den Gedanken, dass …“ schafft Abstand; in einer Studie senkte eine Defusionstechnik (ein Wort immer wieder sagen) Unbehagen und Glaubwürdigkeit belastender Gedanken (Masuda et al., 2004). Ähnlich wirkt Selbstdistanzierung (Kross & Ayduk, 2017). Ziel ist nicht, Gedanken zu widerlegen, sondern ihre Macht über das Handeln zu verkleinern.",
+        "quellen": [
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Übung 1 mit einem Gedanken aus der Liste.",
+          "schwerer": "Eigenen Alltagsgedanken wählen, Übung vor einer schwierigen Situation wiederholen."
+        },
+        "impulse": [
+          "Was ändert sich, wenn „Ich habe den Gedanken, dass …“ davorsteht?",
+          "Woran merkst du, dass du in einen Gedanken hineingerutscht bist?"
+        ],
+        "tipps": [
+          "Gruppe: mit gemeinsamen, erfundenen Gedanken üben; niemand liest eigene vor.",
+          "Einzelstunde: Gedanken auf Karten schreiben und wie Blätter beiseitelegen."
+        ],
+        "achtung": "Nur Gedanken mit geringer Belastung nehmen. Bei Hoffnungslosigkeit oder Hinweisen auf Gefährdung nicht mit dieser Übung arbeiten: Einzelgespräch, Responsable informieren, sofort nach internem Ablauf handeln.",
+        "material": "Stift, Buntstifte; optional Karten"
+      }
+    },
+    "fr": {
+      "titel": "Les pensées ne sont que des pensées",
+      "untertitel": "Prendre de la distance avec ses pensées : deux exercices",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ta tête fabrique des phrases toute la journée. Certaines aident, d’autres tirent vers le bas : « Je n’y arriverai jamais. » Une pensée est une phrase dans la tête, pas encore un fait. Tu n’as pas à la chasser ni à tout croire. Tu peux prendre de la distance."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Exercice 1 : choisis une pensée qui te dérange seulement un peu.",
+          "hinweis": "N’en prends pas une qui te fait très mal. Une pensée inventée convient aussi.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Je n’y arriverai jamais.",
+            "Les autres me trouvent bizarre.",
+            "Je ne suis pas assez bien.",
+            "Ça va forcément mal tourner.",
+            "Je dois tout faire parfaitement.",
+            "Personne ne m’écoute."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dis la pensée en trois étapes, à voix haute ou basse. Écris-les ensuite.",
+          "hinweis": "Voici ce que ça donne avec un exemple :",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Étape",
+            "Ce que ça donne"
+          ],
+          "breiten": [
+            1.1,
+            3.4
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "1 · La pensée",
+              "« Je n’y arriverai jamais. »"
+            ],
+            [
+              "2 · Avec distance",
+              "« J’ai la pensée que je n’y arriverai jamais. »"
+            ],
+            [
+              "3 · Avec plus de distance",
+              "« Je remarque que j’ai la pensée que je n’y arriverai jamais. »"
+            ]
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "La pensée :",
+            "J’ai la pensée que …",
+            "Je remarque que j’ai la pensée que …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quel point la pensée te retient-elle ?",
+          "hinweis": "0 = pas du tout, 10 = très fort. Il n’y a pas de mauvais chiffre.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Avant l’exercice (0–10) :",
+            "Après l’exercice (0–10) :"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Encore plus de distance : essaie une variante.",
+          "hinweis": "Dis la pensée …",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "au ralenti",
+            "avec une voix de dessin animé",
+            "comme un gros titre de journal",
+            "chantée tout bas",
+            "puis ajoute : « Merci, ma tête. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Exercice 2 : des feuilles sur la rivière. Lis les étapes, puis essaie 2 minutes.",
+          "hinweis": "Tu peux fermer les yeux ou regarder un point.",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Assieds-toi confortablement. Sens tes pieds sur le sol."
+            },
+            {
+              "titel": "Imagine une rivière. Des feuilles dérivent."
+            },
+            {
+              "titel": "Chaque pensée se pose sur une feuille et s’éloigne."
+            },
+            {
+              "titel": "Tu regardes, c’est tout. Tu as dérivé ? Reviens sur la rive."
+            }
+          ]
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 6,
+          "label": "Ma rivière : dessine la rivière. Écris sur chaque feuille une pensée venue."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment était l’exercice ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "en partie",
+            "faux"
+          ],
+          "items": [
+            "J’ai pu laisser passer des pensées.",
+            "J’ai souvent dérivé avec une pensée.",
+            "Ensuite, j’étais plus calme."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Tu as dérivé ? Ça fait partie du jeu",
+          "text": "Ça arrive à tout le monde. Le remarquer et revenir sur la rive, c’est justement l’exercice."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes constatent qu’une pensée n’est qu’une phrase dans la tête. Ils s’exercent à deux façons de prendre de la distance : « J’ai la pensée que … » et « Des feuilles sur la rivière ».",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Que dit ta tête avant un contrôle ? » Recueillir des exemples sans juger.",
+          "Exercice 1 (12 min) : choisir une pensée légère (inventée si besoin), la dire en trois étapes, l’écrire, chiffre avant et après.",
+          "Variantes (5 min) : en essayer une ou deux (ralenti, voix de dessin animé) ; jamais pour des pensées lourdes.",
+          "Exercice 2 (10 min) : lire les étapes, 2 minutes de calme, puis dessiner ou écrire.",
+          "Bilan (5 min) : « Qui a dérivé ? » Cela fait partie du jeu ; revenir sur la rive, c’est l’exercice."
+        ],
+        "hintergrund": "La défusion cognitive est une méthode de la thérapie d’acceptation et d’engagement (ACT) : on observe les pensées comme des pensées, au lieu de fusionner avec elles (Hayes, Strosahl & Wilson, 2012). La phrase « J’ai la pensée que … » crée de la distance ; dans une étude, une technique de défusion (répéter un mot) a diminué le malaise et la crédibilité de pensées pénibles (Masuda et al., 2004). L’auto-distanciation agit de façon proche (Kross & Ayduk, 2017). Le but n’est pas de réfuter les pensées, mais de réduire leur emprise sur les actes.",
+        "quellen": [
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement l’exercice 1 avec une pensée de la liste.",
+          "schwerer": "Choisir une pensée du quotidien, refaire l’exercice avant une situation difficile."
+        },
+        "impulse": [
+          "Qu’est-ce qui change quand « J’ai la pensée que … » précède la phrase ?",
+          "À quoi remarques-tu que tu as glissé dans une pensée ?"
+        ],
+        "tipps": [
+          "Groupe : s’exercer avec des pensées communes et inventées ; personne ne lit les siennes.",
+          "Séance individuelle : écrire les pensées sur des cartes et les poser de côté comme des feuilles."
+        ],
+        "achtung": "Ne prendre que des pensées peu lourdes. En cas de désespoir ou d’indices de mise en danger, ne pas travailler avec cet exercice : entretien individuel, informer le responsable, agir selon la procédure interne.",
+        "material": "Crayon, crayons de couleur ; en option des cartes"
+      }
+    }
+  }
+]
