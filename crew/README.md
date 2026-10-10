@@ -107,7 +107,7 @@ passend zu den Einheiten j1-e01 … j1-e30 des Skills-Kurses. Kein Kahoot-Stil: 
 gezählt, sondern geredet, kooperiert und bewegt. Alle Spiele reden über die Figuren Mika, Yara, Luca und Sam,
 nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bildschirm, die X-Karte oben bleibt.
 
-- **Startbildschirm → „Spiele“**: alle Spiele nach Thema (noch nicht gebaute stehen als „bald“ dabei).
+- **Startbildschirm → „Spiele“**: alle Spiele nach Thema.
 - **Finder** (auch im Lehrermodus, Tab „Spiele“): nach Einheit (mit dem Varianten-Text für genau diese Stunde),
   Thema, Format und ELDiB-Code suchen.
 - **Sticker-Wand** im Crew-HQ: Jedes gespielte Spiel klebt einen Sticker an die Wand. Das ist die gemeinsame
@@ -115,7 +115,7 @@ nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bild
 - Ist das Katalogspiel einer Einheit noch nicht gebaut, zeigt der Finder automatisch den **besten gebauten Ersatz**
   (gleiches Thema, gleiche ELDiB-Codes). Es gibt nie einen toten Link.
 
-### Gebaute Spiele (38 von 62, ★ = Favorit)
+### Gebaute Spiele (alle 62, ★ = Favorit)
 
 | Thema | Spiele |
 |---|---|
@@ -125,10 +125,10 @@ nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bild
 | Anspannung & Skills | Pegel-Reihe ★ · Innen/Außen ★ · Undercover-Skill ★ · Sinnes-Jagd · Gelb oder Rot? · Skill-Sprechstunde ★ · Ampel-Woche · Kipp-Punkt ★ · Blackout · Mein Ort |
 | Gedanken & Glaubenssätze | Gedanken-Weiche ★ · Woher kommt der Satz? · Tatsache oder Urteil? ★ · Satz-Werkstatt · Beweis-Jäger ★ · Haltungs-Switch |
 | Kommunikation & Grenzen | Übersetzer · Stille Post ohne Worte · Funkstille – der Chat kippt ★ · Zuhör-Falle · Okay-Radar ★ · Näher nicht · Stopp-Check ★ · Hitze-Ecken ★ · Familien-Funk |
-| Konflikt, Druck & Mobbing | Story-Staffel: Der Streit ★ · Deal oder kein Deal ★ · Druck-Chat ★ |
-| Digital, Gesundheit & Abschluss | Trick erkannt ★ · Teilen oder nicht? ★ · Gerücht-Staffel ★ · Red Flag · Akku-Woche ★ · Später-Monster · Jahres-Quest |
+| Konflikt, Druck & Mobbing | Story-Staffel: Der Streit ★ · Sorry-Werkstatt ★ · Deal oder kein Deal ★ · 100 Prozent ★ · Gerecht oder gleich? · Druck-Chat ★ · Nein-Trainer · Vier Zeugen ★ · Leiter-Lauf ★ · Wer fehlt? |
+| Digital, Gesundheit & Abschluss | Trick erkannt ★ · Teilen oder nicht? ★ · Gerücht-Staffel ★ · Red Flag · Akku-Woche ★ · Später-Monster · Jahres-Quest (Abschluss des Jahres) |
 
-Die übrigen 24 Spiele stehen mit Ablauf und Kritik-Notizen in `docs/SPIELEKATALOG.md` und erscheinen in der App als „bald“.
+Ablauf und Kritik-Notizen aller Spiele stehen in `docs/SPIELEKATALOG.md`.
 
 **Gut zu wissen (Gedanken & Digital):** *Satz-Werkstatt* zeigt die Regel-Lampen auf dem iPad von Rolle D (hochhalten oder an den Beamer).
 Bei der *Gerücht-Staffel* ist ein iPad das Gerücht-Handy, das die Reihe entlangwandert – am besten das Beamer-iPad, dann wächst die

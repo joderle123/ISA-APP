@@ -50,7 +50,7 @@ Körperkontakt; „Minderheit spricht zuerst“ stellt nie jemanden bloß.
 Konter-Battle (Reframing) · Chill-Zone · Gefühls-Decoder · Clash-Solo. Sie wurden nach den Kritik-Runden umgebaut:
 kein Hochhalten und Zählen mehr, dafür Erzählzeit, Gespräch und Bewegung.
 
-**Spielekatalog Jahr 1:** 62 Spiele in 8 Themen, davon **38 gebaut** (Favoriten ★):
+**Spielekatalog Jahr 1:** 62 Spiele in 8 Themen, **alle gebaut** (Favoriten ★):
 
 - *Ankommen & Crew:* Probelauf, Regel-Radar, Frag weiter!, Pilot & Navigator ★, Stummer Aufbau, Stärken-Spion ★, Crew-Rat ★, Erster Eindruck ★, Echte Freunde?
 - *Ich: Bedürfnisse & Stärken:* Tank-Detektiv ★, Was steckt dahinter?, Kleiner Schritt ★, Je nach Ort, Zwei Brillen ★, Stärke im Einsatz ★, Vergleichs-Falle
@@ -61,9 +61,8 @@ kein Hochhalten und Zählen mehr, dafür Erzählzeit, Gespräch und Bewegung.
 - *Konflikt, Druck & Mobbing:* Story-Staffel: Der Streit ★, Sorry-Werkstatt ★, Deal oder kein Deal ★, 100 Prozent ★, Gerecht oder gleich?, Druck-Chat ★, Nein-Trainer, Vier Zeugen ★, Leiter-Lauf ★, Wer fehlt?
 - *Digital, Gesundheit & Abschluss:* Trick erkannt ★, Teilen oder nicht? ★, Gerücht-Staffel ★, Red Flag, Akku-Woche ★, Später-Monster, Jahres-Quest (Abschluss des Jahres)
 
-Die übrigen 24 stehen im Katalog (`docs/SPIELEKATALOG.md`) mit Ablauf, ELDiB-Codes und Sicherheitsnotizen und
-erscheinen in der App als „bald“. Für jede Einheit gibt es schon heute ein gebautes Spiel: Fehlt das Katalogspiel
-der Einheit, nimmt der Finder automatisch den besten gebauten Ersatz aus demselben Thema mit denselben ELDiB-Codes.
+Alle 62 Spiele aus dem Katalog (`docs/SPIELEKATALOG.md`, mit Ablauf, ELDiB-Codes und Sicherheitsnotizen) sind gebaut,
+für jede Einheit gibt es ihr eigenes Spiel.
 
 ## So endet eine Stunde mit einem Spiel
 
