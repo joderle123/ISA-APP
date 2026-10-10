@@ -640,7 +640,8 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       let r = o.rituale[slot.rolle]
       // letzte Sitzung: nach dem Rückblick keine dritte Auswertung (Blind-Bewertung 9: „Plus und Minus“ nach „Das Wichtigste
       // mitnehmen“ und dem Rückblick-Blatt)
-      if (r && slot.rolle === 'abschluss' && o.phase === 'reflektieren' && (r.e.anspruch ?? 1) >= 2)
+      // … und keins, das auf „die nächste Stunde“ zählt (Schatz-Schachtel, Sternenkette)
+      if (r && slot.rolle === 'abschluss' && o.phase === 'reflektieren' && ((r.e.anspruch ?? 1) >= 2 || folgeRitual(r.e)))
         r = waehleRitual({ ...c, heute: { ...c.heute, stimmung: Math.min(c.heute.stimmung, 2) } }, 'abschluss', slot.min, `${salz}|letzte`, new Set([r.e.id])) ?? r
       if (r) {
         ergebnis[i] = planSchritt(r, slot.rolle, slot.min, c, { phase: o.phase, nr: o.nr, ritual: true })
