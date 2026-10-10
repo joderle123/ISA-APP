@@ -76,11 +76,13 @@ export function fuerTeam(plan: Plan, p: Profil): { vorlage: Omit<PraxisVorlage, 
   const eigeneTexte: { pfad: string; text: string }[] = []
   // Texte, die der Planer selbst in eigene Schritte (pg:einstieg, pg:rueckblick) schreibt, sind keine eigenen Texte der
   // Fachkraft: sie bleiben aus der Vorlage (der Schritt nimmt dann seinen festen Text)
-  const ueber = (u: Record<string, string> | undefined, pfad: string, ref = '', herkunft?: Record<string, 'eigen' | 'vorlage'>) => {
+  const ueber = (u: Record<string, string> | undefined, pfad: string, ref = '', herkunft?: Record<string, 'eigen' | 'vorlage' | 'plan'>) => {
     if (!u) return undefined
     const out: Record<string, string> = {}
     for (const [k, v] of Object.entries(u)) {
       if (ref.startsWith('pg:') && herkunft?.[k] !== 'eigen') continue
+      // … ebenso, was der Planer in fremde Schritte schreibt (Rückschau des Sammel-Rituals in der letzten Sitzung)
+      if (herkunft?.[k] === 'plan') continue
       out[k] = ersetzeNamen(v, p)
       eigeneTexte.push({ pfad: `${pfad}.${k}`, text: out[k] })
     }
@@ -179,7 +181,7 @@ export function uebernehmen(k: Katalog, p: Profil, vorlage: PraxisVorlage, v: Vo
           titel: s.blatt.titel,
           ziel: false,
           bausteine: s.blatt.bausteine.map((b) => {
-            const t: { ref: string; h: string; ueber?: Record<string, string>; ausgeblendet?: string[]; ueberHerkunft?: Record<string, 'eigen' | 'vorlage'> } = { ref: b.ref, h: b.h }
+            const t: { ref: string; h: string; ueber?: Record<string, string>; ausgeblendet?: string[]; ueberHerkunft?: Record<string, 'eigen' | 'vorlage' | 'plan'> } = { ref: b.ref, h: b.h }
             if (b.ausgeblendet) t.ausgeblendet = b.ausgeblendet
             if (b.ueber && !vorsicht) {
               t.ueber = b.ueber
@@ -261,11 +263,11 @@ export function vorlageZurueckgezogen(plan: Plan, zurueckgezogen: string[]): { p
   if (!v || !zurueckgezogen.some((id) => v === id || v.startsWith(id + '@'))) return { plan, geaendert: false }
   let geaendert = false
   let hier = false
-  const ohne = <T extends { ueber?: Record<string, string>; ueberHerkunft?: Record<string, 'eigen' | 'vorlage'> }>(t: T): T => {
+  const ohne = <T extends { ueber?: Record<string, string>; ueberHerkunft?: Record<string, 'eigen' | 'vorlage' | 'plan'> }>(t: T): T => {
     if (!t.ueber || !t.ueberHerkunft || !Object.values(t.ueberHerkunft).includes('vorlage')) return t
     geaendert = hier = true
     const ueber: Record<string, string> = {}
-    const herkunft: Record<string, 'eigen' | 'vorlage'> = {}
+    const herkunft: Record<string, 'eigen' | 'vorlage' | 'plan'> = {}
     for (const [k, text] of Object.entries(t.ueber))
       if (t.ueberHerkunft[k] !== 'vorlage') {
         ueber[k] = text

@@ -617,10 +617,13 @@ function fuerJedesKind(t: string, einKind = false): string {
   // Bedingungen und „Wenn es kippt“ meinen ein einzelnes Kind (Blind-Bewertung 10: „Si chaque enfant ne choisit rien“)
   const ein = t
     .replace(/\b(Wenn|wenn|Falls|falls|Sobald|sobald|Mag|mag|Will|will|Kann|kann|Braucht|braucht) das Kind\b/g, '$1 ein Kind')
-    .replace(/\b(Si|si|Quand|quand|Lorsque|lorsque) l['’]enfant\b/g, '$1 un enfant')
+    .replace(/\b(Si|si|Quand|quand) l['’]enfant\b/g, '$1 un enfant')
+    .replace(/\b([Ll]orsqu|[Qq]u)e l['’]enfant\b/g, '$1’un enfant')
   if (einKind)
     return ein
       .replace(/\b([Dd])as Kind\b/g, (_m, d: string) => (d === 'D' ? 'Ein Kind' : 'ein Kind'))
+      .replace(/\b([Dd])e l['’]enfant\b/g, (_m, d: string) => `${d}’un enfant`)
+      .replace(/\b([Ll]orsqu|[Qq]u|[Pp]uisqu)e l['’]enfant\b/g, '$1’un enfant')
       .replace(/\b([Ll])['’]enfant\b/g, (_m, l: string) => (l === 'L' ? 'Un enfant' : 'un enfant'))
   return ein
     .replace(/\b([Dd])as Kind\b/g, (_m, d: string) => (d === 'D' ? 'Jedes Kind' : 'jedes Kind'))

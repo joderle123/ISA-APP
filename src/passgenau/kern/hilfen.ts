@@ -89,7 +89,8 @@ const ohneAkzent = (t: string) => t.normalize('NFD').replace(/\p{M}/gu, '').toLo
 function aehnlich(a: string, b: string): boolean {
   const x = ohneAkzent(a)
   const y = ohneAkzent(b)
-  return x === y || (Math.min(x.length, y.length) >= 3 && (x.startsWith(y) || y.startsWith(x) || x.slice(0, 3) === y.slice(0, 3)))
+  // … auch kurze Namen mit gleichem Anfang (Blind-Bewertung 11: „Noah“ neben dem Kind „Noé“)
+  return x === y || (Math.min(x.length, y.length) >= 3 && (x.startsWith(y) || y.startsWith(x) || x.slice(0, 3) === y.slice(0, 3))) || (Math.min(x.length, y.length) <= 4 && x.slice(0, 2) === y.slice(0, 2))
 }
 const wortRe = (w: string) => new RegExp(`(?<!\\p{L})${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?!\\p{L})`, 'gu')
 export function ohneEigenenNamen<T>(x: T, vorname: string | null | undefined): T {

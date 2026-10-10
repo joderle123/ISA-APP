@@ -16845,7 +16845,7 @@
    "de": "Ein genaues Wort suchen: Farbe und Ton dazu finden",
    "fr": "Chercher un mot précis : lui trouver une couleur et un son"
   },
-  "uebertragbar": true,
+  "uebertragbar": false,
   "rolle": [
    "kern"
   ],

@@ -390,7 +390,8 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
   const liste: Baustein[] = [
     { art: 'text', klein: true, text: fr ? 'Pour une situation des prochains jours – vraie ou inventée.' : 'Für eine Situation der nächsten Tage – echt oder erfunden.' },
     { art: 'ankreuzen', titel: fr ? 'Où est-ce que ça pourrait servir ? Plusieurs réponses possibles.' : 'Wo könnte es passen? Mehrere gehen.', items: fr ? ['en cours', 'à la récré', 'entre amis', 'au sport ou au club', 'en ligne, dans le chat', 'autre chose'] : ['im Unterricht', 'in der Pause', 'im Freundeskreis', 'im Training oder Verein', 'online, im Chat', 'etwas anderes'], spalten: 3 },
-    ...werkzeug.slice(0, 2).map((w): Baustein => ({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si … (où, quand)' : 'Wenn … (wo, wann)', dann: fr ? `alors : ${w}` : `dann: ${w}` })),
+    // nur der Name des Werkzeugs (Blind-Bewertung 11: „dann: Stärken erkennen: Was tut sie? Wie heißt das Wort dazu?“)
+    ...werkzeug.slice(0, 2).map((w): Baustein => ({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si … (où, quand)' : 'Wenn … (wo, wann)', dann: fr ? `alors : ${w.split(/\s*[:(–]\s*/)[0] || w}` : `dann: ${w.split(/\s*[:(–]\s*/)[0] || w}` })),
   ]
   // ein Plan B füllt die Seite sinnvoll (Blind-Bewertung 9: „Wenn-dann-Blatt zu zwei Dritteln leer bei 11 Minuten“)
   if (werkzeug.length < 2) liste.push({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si ça ne marche pas tout de suite …' : 'Wenn es nicht gleich klappt …', dann: fr ? 'alors j’essaie :' : 'dann probiere ich:' })

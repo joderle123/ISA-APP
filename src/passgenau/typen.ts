@@ -254,8 +254,9 @@ export interface PlanSchritt {
   erkundung?: boolean
   gesperrt?: boolean
   ueber?: BausteinTexte
-  /** Herkunft je überschriebenem Pfad (E-M7, E-M9): eigener Text oder Text aus einer Vorlage */
-  ueberHerkunft?: Record<string, 'eigen' | 'vorlage'>
+  /** Herkunft je überschriebenem Pfad (E-M7, E-M9): eigener Text, Text aus einer Vorlage oder vom Planer selbst geschrieben
+   *  (Rückschau des Sammel-Rituals) */
+  ueberHerkunft?: Record<string, 'eigen' | 'vorlage' | 'plan'>
   /** Titel bzw. Aufgabentext (≤ 60 Zeichen), damit der Plan ohne Katalogtreffer lesbar bleibt (T-M10) */
   t?: string
   /** Wahl (Weg 3, P8): weitere Optionen, aus denen das Kind in der Stunde wählt; der Schritt selbst ist Option 1.
@@ -275,7 +276,7 @@ export interface BlattTeil {
   ueber?: BausteinTexte
   ausgeblendet?: string[]
   gesperrt?: boolean
-  ueberHerkunft?: Record<string, 'eigen' | 'vorlage'>
+  ueberHerkunft?: Record<string, 'eigen' | 'vorlage' | 'plan'>
   t?: string
 }
 
@@ -418,8 +419,8 @@ export interface VorlagenInhalt {
   dauer: number
   sitzungen: {
     phase: Bogen | 'leicht'
-    schritte: { ref: string; h: string; rolle: Rolle; min: number; ueber?: BausteinTexte; ueberHerkunft?: Record<string, 'eigen' | 'vorlage'> }[]
-    blatt?: { titel: string; bausteine: { ref: string; h: string; ueber?: BausteinTexte; ausgeblendet?: string[]; ueberHerkunft?: Record<string, 'eigen' | 'vorlage'> }[] }
+    schritte: { ref: string; h: string; rolle: Rolle; min: number; ueber?: BausteinTexte; ueberHerkunft?: Record<string, 'eigen' | 'vorlage' | 'plan'> }[]
+    blatt?: { titel: string; bausteine: { ref: string; h: string; ueber?: BausteinTexte; ausgeblendet?: string[]; ueberHerkunft?: Record<string, 'eigen' | 'vorlage' | 'plan'> }[] }
   }[]
 }
 

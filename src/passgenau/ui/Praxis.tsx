@@ -302,7 +302,7 @@ export function Teilen() {
   const entw = (): hub.PraxisEntwurf => {
     const inhalt: VorlagenInhalt = structuredClone(ft.vorlage.inhalt)
     const bestaetigt: string[] = []
-    const behandeln = (x: { ueber?: Record<string, string>; ueberHerkunft?: Record<string, 'eigen' | 'vorlage'> }, basis: string) => {
+    const behandeln = (x: { ueber?: Record<string, string>; ueberHerkunft?: Record<string, 'eigen' | 'vorlage' | 'plan'> }, basis: string) => {
       if (!x.ueber) return
       for (const pf of Object.keys(x.ueber)) {
         const pfad = `${basis}.ueber.${pf}`
