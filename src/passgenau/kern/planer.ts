@@ -865,8 +865,17 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       // Zukunftsbild und Lebensbilanz nicht in Krisenlage oder bei Stimmung ≤ 2 (Blind-Bewertung 7: „Zukunftsprojektion bei
       // offener Krise und Stimmung 2“)
       if (c.alter >= 12 && (krisenlage(c) || c.heute.stimmung <= 2 || (c.p.achtung ?? []).includes('krise'))) {
-        const ohne = auswahl.filter((w) => !(w.b.e.typ === 'schritt' && ZUKUNFT_RE.test(`${w.b.e.titel} ${w.b.e.text}`)))
-        if (ohne.length) auswahl = ohne
+        const zukunft = (w: (typeof auswahl)[number]) => w.b.e.typ === 'schritt' && ZUKUNFT_RE.test(`${w.b.e.titel} ${w.b.e.text}`)
+        const ohne = auswahl.filter((w) => !zukunft(w))
+        // … auch wenn es die einzige eigene Übung zum Ziel ist (Testlauf 12: „Drei Versionen von mir mit 22“ bei Stimmung 2)
+        let ersatz = ohne.length ? ohne : eigene.filter((w) => !zukunft(w)).length ? eigene.filter((w) => !zukunft(w)) : liste.filter((w) => !zukunft(w))
+        // … notfalls eine eigene Übung zu einem anderen Ziel des Jugendlichen
+        if (!ersatz.length) {
+          const alle = kandidaten(c, auftragK).filter((w) => !zukunft(w))
+          ersatz = alle.filter((w) => kuratiert(c, w.b.e.id) && w.b.e.eldib.some((x) => c.ziele.some((z) => z.code === x.code)))
+          if (!ersatz.length) ersatz = alle
+        }
+        if (ersatz.length) auswahl = ersatz
       }
       if (o.kernZiel) {
         const mitZiel = auswahl.filter((w) => w.b.e.eldib.some((x) => x.code === o.kernZiel))

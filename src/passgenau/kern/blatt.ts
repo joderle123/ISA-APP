@@ -511,7 +511,8 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     const teile = (fr ? eigen.fr : eigen.de) ?? []
     let aufgaben = 0
     // höchstens so viele Aufgaben, wie in die Minuten passen (etwa eine je 2½ Minuten), bei wenig Schreiben zwei
-    const hoechstens = o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / 2.5)) : 99
+    // … und in vier Minuten eine (Blind-Bewertung 10: „zwei Aufgaben in 4 Minuten“)
+    const hoechstens = o.min && o.min <= 4 ? 1 : o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / 2.5)) : 99
     for (const b of teile) {
       if (o.stimmungTief && b.art === 'skala') continue
       // Anweisungszeilen und Bilder sind keine eigene Aufgabe (Kinder-Blätter: „aufgabe“ vor jedem Bild-Baustein)
@@ -814,7 +815,8 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
     passgenau: {
       ...(mitZiel ? { ziel: { [sp]: zielSatz! } } : {}),
       // ohne Blattnummern: „V-12“ sähe auf dem Blatt des Kindes aus wie ein ELDiB-Code (9.6) – die Quellen stehen im Planblatt
-      herkunft: herkunft.length ? (sprache === 'fr' ? `Passgenau · ${herkunft.length > 1 ? `éléments de ${herkunft.length} fiches` : 'éléments d’une fiche'} de la Toolbox` : `Passgenau · ${herkunft.length > 1 ? `Bausteine aus ${herkunft.length} Blättern` : 'Bausteine aus einem Blatt'} der Toolbox`) : undefined,
+      // … und ohne „Bausteine aus einem Blatt“ (Blind-Bewertung 10: las sich wie ein Verweis auf ein fehlendes Blatt)
+      herkunft: herkunft.length ? 'Passgenau · CDSE Toolbox' : undefined,
       teile: [...teileIds, ...Array(Math.max(0, bausteine.length - teileIds.length)).fill(null)],
     },
     de: sprache === 'de' ? inhalt : { ...inhalt },

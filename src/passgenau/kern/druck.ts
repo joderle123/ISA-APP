@@ -559,7 +559,11 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
       const e = k.eintraege.get(w.ref)
       const t = w.ref === 'pg:blatt' ? (sprache === 'fr' ? 'Page à colorier' : 'Mitmach-Seite') : e ? textVon(e, sprache).titel : (('t' in w && w.t) || w.ref)
       const f = e?.format[0]
-      const bild = w.ref === 'pg:blatt' ? 'icon:pencil' : f === 'bewegung' ? 'icon:run' : f === 'malen' ? 'icon:palette' : f === 'musik' ? 'icon:music' : f === 'spiel' ? 'icon:dice-5' : f === 'basteln' ? 'icon:puzzle' : f === 'sinne' || f === 'atmen' ? 'icon:leaf' : 'icon:armchair'
+      // unterscheidbar für Kinder, die nicht lesen (Blind-Bewertung 10: „zwei Optionen mit demselben Blatt-Symbol“)
+      const bild = w.ref === 'pg:blatt' ? 'icon:pencil' : w.ref === 'pg:da-sein' ? 'icon:armchair'
+        : /\b(Ball|Tor|balle|ballon|but)\b/i.test(t) ? 'icon:ball-football'
+        : /\b(hör\w*|Geräusch\w*|Klang|Klänge|bruit\w*|écout\w*|son)\b/i.test(t) ? 'icon:ear'
+        : f === 'bewegung' ? 'icon:run' : f === 'malen' ? 'icon:palette' : f === 'musik' ? 'icon:music' : f === 'spiel' ? 'icon:dice-5' : f === 'basteln' ? 'icon:puzzle' : f === 'geschichte' ? 'icon:cloud' : f === 'sinne' || f === 'atmen' ? 'icon:leaf' : 'icon:armchair'
       return { text: kurzLabel(t), bild, min: w.min }
     })
     // „Heute möchte ich zuerst …“ deutete eine Reihenfolge an – gewählt wird eines (Blind-Bewertung 7)

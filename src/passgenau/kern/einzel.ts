@@ -81,6 +81,11 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   // Leistung messen (Blind-Bewertung 9, A12: „Minuteur, Strichzählung und Rundenvergleich an echter Schularbeit bei
   // Stimmung 2“) – nicht in Krisenlage
   leistungsmessung: /\b(Strich(e)? (in|an|am|auf) (den|dem) (Blatt)?[Rr]and|Strichzahlen|Striche zählen|zählt die Striche|Runde \d und \d vergleich\w*|beide Runden vergleich\w*|un trait dans la marge|combien de traits|compter les traits|côte à côte|zählt die Treffer|Treffer laut mit|Schaffen wir (gemeinsam )?\d+|compte ses paniers|compter les paniers|arrive ensemble à \d+)\b/i,
+  // Genauigkeit als Leistung (Blind-Bewertung 10: „Redessine la figure exactement … compte les carreaux“, „genau an der Linie
+  // ausschneiden“ an einem leichten Tag) – nicht im Weg „leicht“
+  genauigkeit: /\b(exakt\w*|ganz genau (ab|nach)\w*|genau an der Linie|genau nachzeichnen|Kästchen zählen|zähle die Kästchen|exactement|précisément|compte les carreaux|compter les carreaux|bien sur la ligne)\b/i,
+  // Raten als Abfrage (Blind-Bewertung 10: „Énigme du jour – Raten hat Abfragecharakter, ‚si l’enfant s’énerve‘“)
+  raetsel: /\b(Rätsel\w*|errät\w*|erraten|énigme\w*|devinette\w*|deviner|devine)\b/i,
   // Wettbewerb und Zeitdruck im Text (Blind-Bewertung 8: „findet zuerst“, „Rekord gegen die Uhr“, „Runde verloren“)
   wettlauf: /\b(wer zuerst|findet zuerst|als Erste[rs]? fertig|Rekord\w*|gegen die Uhr|so viele wie möglich|Runde verloren|hat verloren|wer gewinnt|qui trouve en premier|le premier qui|record|contre la montre|le plus possible|a perdu la manche)\b/i,
   // Diagnosen als Beispiel im Text (Blind-Bewertung 8: „im Autismus-Spektrum“ ohne Anlass im Planblatt)
