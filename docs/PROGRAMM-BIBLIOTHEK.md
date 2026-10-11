@@ -43,6 +43,12 @@ App: Vorschau mit Reitern Plan · Kinderheft · Karten, „Nur die Arbeitsblätt
 Übungen bleiben normale Einträge (ki:/j: mit `uebungsblatt`), erhalten `programm` und `sitzung`; so funktionieren
 Tausch, Rückmeldung und Wirkungs-Kreislauf weiter.
 
+**Jedes Blatt gibt es auch einzeln (Nutzer, 11.10.2026):** Jedes Arbeitsblatt eines Programms ist zugleich ein normales
+Toolbox-Blatt – mit ELDiB-Codes, Alter, DE/FR –, das ohne Programm funktioniert: in der Toolbox-Suche, in den
+Material-Vorschlägen zu PEI-Zielen im Dossier, in der Arbeitsblatt-Checkliste je Kind und in Passgenau-Einzelstunden.
+Das Programm stellt die Blätter nur zusammen (Reihenfolge, Werkzeug-Karte, Heft). Also: erst Einzelblätter bauen,
+die für sich tragen, dann zum Programm bündeln.
+
 ## Bestand und Aufwand
 `docs/PROGRAMM-BESTAND.md` (Skript `scripts/programm-bestand.ts`): eigene Kern-Übungen mit Blatt je Programm gegen das
 Soll 18. Rechnerisch fehlen 341; realistisch mehr, weil vorhandene Übungen nicht um ein gemeinsames Werkzeug gebaut sind
@@ -56,3 +62,10 @@ Rohmaterial. Schwach belegt: Gefühle ausdrücken, Ausdauer, Aufmerksamkeit, Ler
    Kartenbogen → blinde Nachbewertung (Note ≥ 4, wie bei den 150 Bausteinen) → Ausdrucke prüfen.
 3. Zwei Wochen Praxis mit echten Kindern, Rückmeldung über „Stunde gehalten“.
 4. Dann die übrigen 45 nach Häufigkeit der Ziele in den PEIs (nur Zahlen auswerten).
+
+## Danach: die ganze Toolbox mit einem Designer ansehen (Nutzer, 11.10.2026)
+Die Toolbox ist über die Zeit gewachsen (Arbeitsblätter, Material, Kurse, Spielschule, Mathe, Therapie-Blätter,
+Passgenau, Programme, Förderfach …) und wirkt wie eine Ansammlung verschiedener Dinge. Nächster Schritt nach dem Pilot:
+eine Design-Prüfung der ganzen Toolbox – Rundgang mit echten Aufgaben („Blatt zu einem PEI-Ziel finden“, „Stunde für
+morgen“, „Heft drucken“), Klickwege, Begriffe, Navigation, ein gemeinsamer Aufbau für alle Bereiche – dann Entwürfe
+zeigen und erst nach OK umbauen (wie beim Hub-Design).
