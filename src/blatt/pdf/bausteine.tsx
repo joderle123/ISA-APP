@@ -970,9 +970,14 @@ function Gefuehlsrad({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'gefuehlsra
                 const [x, y] = pkt((r1 + R) / 2, a)
                 const w = ring * 0.94
                 const drehung = a > 180 ? a + 90 : a - 90
+                // gedreht immer in der kompakten Schrift und so klein, dass das Wort in eine Zeile passt (Kurs-Kritik 16.10.: in der
+                // Kinderschrift erschien der gedrehte Außenring gar nicht – das Rad blieb außen leer)
+                const txt = t(c, wort)
+                const fs = Math.min(c.m.klein, (w * 0.96) / Math.max(4, txt.length * 0.52))
+                const h = Math.max(wortH, fs * 1.5)
                 return (
-                  <View key={`w${i}-${j}`} style={{ position: 'absolute', left: x - w / 2, top: y - wortH / 2, width: w, height: wortH, alignItems: 'center', justifyContent: 'center', transform: `rotate(${drehung}deg)` }}>
-                    <Text style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, color: NEUTRAL.text }}>{t(c, wort)}</Text>
+                  <View key={`w${i}-${j}`} style={{ position: 'absolute', left: x - w / 2, top: y - h / 2, width: w, height: h, alignItems: 'center', justifyContent: 'center', transform: `rotate(${drehung}deg)` }}>
+                    <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: fs, color: NEUTRAL.text }}>{txt}</Text>
                   </View>
                 )
               }),
