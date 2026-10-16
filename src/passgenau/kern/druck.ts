@@ -720,7 +720,9 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   }
   // Im Spiel üben (Messung 5: „Bewegung und Spiel ohne Bezug zum Ziel“, „Füllblöcke beliebig“, „ruf-nahe Spiele“)
   // Blatt-Schritt einer Kurs-Sitzung: die Anleitung zu genau diesem Blatt (welche Aufgabe gemeinsam, welche allein)
-  const anl = kernE?.typ === 'schritt' ? kernE.uebungsblatt?.anleitung?.[sp] : undefined
+  // (Tausch-Übung als Kern: die Anleitung zum Blatt der Variante, die die Sitzung behält)
+  const blattE = kernX?.blattVon ? k.eintraege.get(kernX.blattVon) ?? kernE : kernE
+  const anl = blattE?.typ === 'schritt' ? blattE.uebungsblatt?.anleitung?.[sp] : undefined
   if (anl) s.schritte.forEach((x, i) => {
     if (x.ref !== 'pg:blatt' || !schritte[i]) return
     schritte[i].text = name ? mitName(anl.text, name, sp) : anl.text

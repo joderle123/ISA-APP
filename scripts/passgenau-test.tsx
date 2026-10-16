@@ -965,6 +965,57 @@ if (!SCHNELL) {
   })
 }
 
+await pruefung('Einzelkurs: Tausch-Übungen nie von selbst, als Alternative nach den Varianten; Blatt, Anleitung und Auftrag bleiben', async () => {
+  const alle = [...k.eintraege.values()]
+  const tausch = alle.filter((e) => e.typ === 'schritt' && e.tausch && e.linie)
+  if (!soll(tausch.length > 0, 'keine Tausch-Übungen im Katalog')) return
+  const linien = [...new Set(tausch.map((e) => e.linie!.id))]
+  let geprueft = 0
+  for (const id of linien.slice(0, SCHNELL ? 6 : linien.length)) {
+    const kursE = alle.filter((e) => e.typ === 'schritt' && e.linie?.id === id && !e.tausch)
+    const erste = kursE.filter((e) => e.linie!.nr === 1)
+    const { von, bis } = erste[0].alter
+    const alter = Math.round((von + bis) / 2)
+    const codes = [...new Set(erste.flatMap((e) => e.eldib.filter((x) => x.gewicht === 1).map((x) => x.code)))].slice(0, 2)
+    const n = Math.max(...kursE.map((e) => e.linie!.nr))
+    const p = kind({ ref: `t-tausch-${id}`, vorname: 'Lina', alterJahre: alter, ziele: codes.map((c, i) => z(c, '', i + 1)) })
+    const plan = planen(k, p, auftrag(p, 'gruendlich', { ziele: codes, n, dauer: alter < 6 ? 20 : 30 }), leer(), VERLAUF)
+    const kernIdx = (nr: number) => plan.sitzungen[nr - 1].schritte.findIndex((x) => x.rolle === 'kern')
+    const kernVon = (pl: Plan, nr: number) => pl.sitzungen[nr - 1].schritte.find((x) => x.rolle === 'kern')
+    if (!soll(k.eintraege.get(kernVon(plan, 1)?.ref ?? '')?.linie?.id === id, `${id}: Folge nimmt den Kurs nicht`)) continue
+    // von selbst nie eine Tausch-Übung
+    for (const s of plan.sitzungen) soll(!s.schritte.some((x) => x.rolle === 'kern' && (k.eintraege.get(x.ref) as { tausch?: boolean } | undefined)?.tausch), `${id} S${s.nr}: Tausch-Übung ohne Wunsch`)
+    for (const nr of [...new Set(tausch.filter((e) => e.linie!.id === id).map((e) => e.linie!.nr))]) {
+      if (nr > plan.sitzungen.length) continue
+      const ort = { sitzung: nr, schritt: kernIdx(nr) }
+      const alts = alternativen(k, p, plan, ort, leer())
+      const t = alts.filter((a) => a.kurs === 'tausch')
+      if (!soll(t.length > 0, `${id} S${nr}: keine Tausch-Übung unter den Alternativen`)) continue
+      soll(alts.findIndex((a) => a.kurs === 'tausch') > alts.map((a) => a.kurs).lastIndexOf('gleich'), `${id} S${nr}: Tausch vor den Varianten`)
+      soll(t.every((a) => a.eintrag.typ === 'schritt' && a.eintrag.linie?.id === id && a.eintrag.linie.nr === nr), `${id} S${nr}: Tausch aus einer anderen Sitzung`)
+      const vorher = kernVon(plan, nr)!
+      const blattVorher = JSON.stringify(kinderblatt(k, p, plan, nr, 'de'))
+      const druck = (pl: Plan) => druckSitzung(k, p, pl, nr, { sprache: 'de', warum: false }).schritte.find((x, i) => pl.sitzungen[nr - 1].schritte[i]?.ref === 'pg:blatt')?.text
+      const anlVorher = druck(plan)
+      for (const a of t) {
+        const neu = ersetzen(plan, ort, a.eintrag)
+        const x = kernVon(neu, nr)!
+        soll(x.ref === a.eintrag.id && x.blattVon === vorher.ref, `${id} S${nr}: blattVon ${x.blattVon} statt ${vorher.ref}`)
+        soll(JSON.stringify(kinderblatt(k, p, neu, nr, 'de')) === blattVorher, `${id} S${nr}: Kinderblatt ändert sich mit ${a.eintrag.id}`)
+        soll(druck(neu) === anlVorher, `${id} S${nr}: Blatt-Anleitung ändert sich mit ${a.eintrag.id}`)
+        // „Neu vorschlagen“ für die nächste Sitzung: der Auftrag vom Blatt bleibt derselbe (nur der Titel der letzten Übung ist neu)
+        if (nr < plan.sitzungen.length) {
+          const titel = [k.eintraege.get(vorher.ref)!, a.eintrag].flatMap((e) => [textVon(e, 'de').titel, textVon(e, 'fr').titel])
+          const auf = (pl: Plan) => titel.reduce((s, t) => s.split(t).join('‹titel›'), JSON.stringify(sitzungNeu(k, p, pl, nr + 1, leer()).sitzungen[nr].schritte.filter((y) => y.rolle === 'einstieg' || y.rolle === 'kern').map((y) => y.ueber ?? null)))
+          soll(auf(neu) === auf(plan), `${id} S${nr + 1}: Auftrag vom Blatt ändert sich nach dem Tausch`)
+        }
+        geprueft++
+      }
+    }
+  }
+  info(`${linien.length} Kurse mit Tausch-Übungen, ${geprueft} Tausche geprüft`)
+})
+
 await pruefung('Tempo: planen < 200 ms nach geladenem Katalog (Median je Szenario)', () => {
   const zeiten: string[] = []
   let schlecht = 0

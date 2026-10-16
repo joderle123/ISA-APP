@@ -317,6 +317,7 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
     if (new Set(s.map(codes)).size > 1) t.push(`${l}: Sitzungen mit verschiedenen ELDiB-Zielen`)
     for (const e of s) {
       const ub = e.uebungsblatt
+      if (e.tausch) continue
       if (!ub || !ub.de?.length || !ub.fr?.length || !ub.anleitung?.de?.text || !ub.anleitung?.fr?.text) t.push(`${e.id}: Blatt oder Anleitung fehlt (DE/FR)`)
       if (!e.fr || !e.imSpiel || !e.werkzeug || !e.zugang) t.push(`${e.id}: fr, imSpiel, werkzeug oder zugang fehlt`)
       if (ub && /Fachkraft/.test(JSON.stringify(ub.de))) t.push(`${e.id}: „Fachkraft“ auf dem Kinderblatt`)
@@ -325,6 +326,29 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
     for (const r of ['ankommen', 'abschluss'] as const) if (!rit.some((e) => e.rolle.includes(r))) t.push(`${l}: Kurs-Ritual „${r}“ fehlt`)
   }
   regel(27, 'Einzelkurs unvollständig oder „Fachkraft“ auf dem Kinderblatt', 'fehler', t)
+}
+
+// 29 Tausch-Übungen eines Einzelkurses (Rückmeldung 16.10.: „austauschbare Bausteine“): gehören zu einer Sitzung mit Varianten,
+// haben kein eigenes Blatt (das Blatt der Sitzung bleibt), dasselbe Werkzeug, denselben Bogen und dieselben Ziele wie die Varianten,
+// eine andere Methode (Format) und vollständiges Französisch
+{
+  const t: string[] = []
+  const kursE = schritte.filter((e) => e.linie?.id.startsWith('kurs-'))
+  for (const e of kursE.filter((x) => x.tausch)) {
+    const geschw = kursE.filter((x) => !x.tausch && x.linie!.id === e.linie!.id && x.linie!.nr === e.linie!.nr)
+    if (!geschw.length) { t.push(`${e.id}: keine Variante derselben Sitzung`); continue }
+    const v = geschw[0]
+    if (e.uebungsblatt) t.push(`${e.id}: Tausch-Übung mit eigenem Blatt (das Blatt der Sitzung bleibt)`)
+    if (!e.rolle.includes('kern')) t.push(`${e.id}: Rolle „kern“ fehlt`)
+    if (e.bogen !== v.bogen) t.push(`${e.id}: anderer Bogen als die Sitzung`)
+    if (JSON.stringify(e.werkzeug) !== JSON.stringify(v.werkzeug)) t.push(`${e.id}: anderes Werkzeug als die Sitzung`)
+    if (JSON.stringify(e.linie!.faden) !== JSON.stringify(v.linie!.faden)) t.push(`${e.id}: anderer Faden als die Sitzung`)
+    const codes = (x: typeof e) => x.eldib.map((y) => `${y.code}:${y.gewicht}`).sort().join(',')
+    if (codes(e) !== codes(v)) t.push(`${e.id}: andere ELDiB-Ziele als die Sitzung`)
+    if (!e.format.some((f) => !geschw.some((g) => g.format.includes(f)))) t.push(`${e.id}: keine andere Methode als die Varianten (format)`)
+    if (!e.fr?.titel || !e.fr?.text || !e.imSpiel || !e.zugang) t.push(`${e.id}: fr, imSpiel oder zugang fehlt`)
+  }
+  regel(29, 'Tausch-Übung passt nicht zu ihrer Kurs-Sitzung', 'fehler', t)
 }
 
 // 28 Einzelkurse: Hintergrund für die Fachkraft (warum es wirkt, Achtung, Quellen; DE und FR) – steht auf dem Deckblatt der

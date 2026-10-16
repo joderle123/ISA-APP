@@ -119,6 +119,10 @@ export interface Stundenschritt extends KatalogZusatz {
   zugang?: { lesen: number; schreiben: number; bild: number }
   /** Ritual eines Einzelkurses (Id der Kurs-Linie): nur in Folgen dieses Kurses, dort vor allen anderen */
   kurs?: string
+  /** Einzelkurs: Tausch-Übung einer Sitzung (Rückmeldung 16.10.: „austauschbare Bausteine“) – dieselbe Sitzung (linie.nr), dasselbe
+   *  Ziel und Werkzeug, eine andere Methode (Spiel, Bewegung, Rollenspiel …); ohne eigenes Blatt: das Blatt der Sitzung bleibt.
+   *  Der Planer nimmt sie nicht von selbst, nur auf Wunsch (Alternativen) oder wenn die Varianten gesperrt sind. */
+  tausch?: boolean
   quelle: { art: SchrittQuelle; einheit?: string; titel: string }
   titel: string
   text: string
@@ -274,6 +278,8 @@ export interface PlanSchritt {
   h: string
   rolle: Rolle
   min: number
+  /** Kern einer Kurs-Sitzung als Tausch-Übung: die Variante, deren Blatt (samt Anleitung und Auftrag) die Sitzung behält */
+  blattVon?: string
   warum?: string[]
   erkundung?: boolean
   gesperrt?: boolean
@@ -356,7 +362,7 @@ export interface Rueckmeldung {
 /** Eine Alternative beim Antippen (5.8) */
 /** kurs: im Einzelkurs – „gleich“ = dieselbe Kurs-Sitzung in anderer Variante (der rote Faden bleibt), „verlaesst“ = eine
  *  Übung außerhalb des Kurses (die nächsten Sitzungen knüpfen an die ersetzte Sitzung an) */
-export interface Alternative { eintrag: KatalogEintrag; wert: number; warum: string[]; kurs?: 'gleich' | 'verlaesst' }
+export interface Alternative { eintrag: KatalogEintrag; wert: number; warum: string[]; kurs?: 'gleich' | 'tausch' | 'verlaesst' }
 
 // ---------------------------------------------------------------------------------------------------------------
 // Vorlieben und Ereignisse (6.9)

@@ -31,7 +31,7 @@ const ZIEL = frei[1] ?? join(ROOT, 'tmp', 'kurs-mappe')
 registriereSchriften((d) => join(ROOT, 'src/assets/fonts/pdf', d))
 const k = await ladeKatalogNode()
 
-type E = { id: string; typ: string; linie?: { id: string; nr: number }; alter?: { von: number; bis: number }; eldib?: { code: string; gewicht: number }[]; zugang?: { lesen: number; schreiben: number; bild: number }; kurs?: string; rolle?: string[]; dauer?: { typ: number } }
+type E = { id: string; typ: string; linie?: { id: string; nr: number }; alter?: { von: number; bis: number }; eldib?: { code: string; gewicht: number }[]; zugang?: { lesen: number; schreiben: number; bild: number }; kurs?: string; rolle?: string[]; dauer?: { typ: number }; tausch?: boolean }
 const alle = [...k.eintraege.values()] as unknown as E[]
 const kurse = nurBericht ? [...new Set(alle.filter((e) => e.linie?.id.startsWith('kurs-')).map((e) => e.linie!.id))].sort() : [frei[0]]
 
@@ -47,7 +47,9 @@ const seitenVon = (b: Buffer) => (b.toString('latin1').match(/\/Type\s*\/Page[^s
 
 let fehler = 0
 for (const kurs of kurse) {
-  const sitzungen = alle.filter((e) => e.linie?.id === kurs)
+  // Tausch-Übungen (ohne eigenes Blatt) kommen nur auf Wunsch – geprüft werden die Varianten
+  const sitzungen = alle.filter((e) => e.linie?.id === kurs && !e.tausch)
+  const tausch = alle.filter((e) => e.linie?.id === kurs && e.tausch)
   if (!sitzungen.length) { console.log(`✗ ${kurs}: keine Sitzungen im Katalog`); fehler++; continue }
   const n = Math.max(...sitzungen.map((e) => e.linie!.nr))
   const erste = sitzungen.filter((e) => e.linie!.nr === 1)
@@ -56,7 +58,7 @@ for (const kurs of kurse) {
   const codes = [...new Set(erste.flatMap((e) => (e.eldib ?? []).filter((x) => x.gewicht === 1).map((x) => x.code)))].slice(0, 2)
   const rituale = alle.filter((e) => e.kurs === kurs)
   const zugaenge = [...new Map(erste.map((e) => [JSON.stringify(e.zugang ?? null), e.zugang ?? null])).values()]
-  console.log(`\n== ${kurs}: ${n} Sitzungen, ${sitzungen.length} Einträge, Alter ${von}–${bis} (Test: ${alter}), Ziele ${codes.join(', ')}, Rituale ${rituale.length}`)
+  console.log(`\n== ${kurs}: ${n} Sitzungen, ${sitzungen.length} Einträge, Alter ${von}–${bis} (Test: ${alter}), Ziele ${codes.join(', ')}, Rituale ${rituale.length}, Tausch-Übungen ${tausch.length}`)
   for (let nr = 1; nr <= n; nr++) if (!sitzungen.some((e) => e.linie!.nr === nr)) { console.log(`  ✗ Sitzung ${nr} fehlt`); fehler++ }
   const sprachen: ('de' | 'fr')[] = flag('--nur-de') || nurBericht ? ['de'] : ['de', 'fr']
   for (const z of zugaenge) {

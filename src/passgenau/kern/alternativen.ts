@@ -99,7 +99,10 @@ export function alternativen(k: Katalog, p: Profil, plan: Plan, ort: Ort, v: Vor
       .filter((e) => e.id !== x.ref && imKurs(e) && pruefe(e, c, ritual ? { ritual: true, rolle: x.rolle } : { rolle: 'kern' }) === null)
       .map((e) => bewerte(e, c, { phase: s.phase }))
     const rest = liste.filter((b) => !imKurs(b.e))
-    return [...gleich.map((b) => aus(b, 'gleich')), ...mmr(rest, Math.max(0, anzahl - gleich.length)).map((b) => aus(b, 'verlaesst'))]
+    // Varianten zuerst, dann die Tausch-Übungen der Sitzung (andere Methode, Blatt bleibt), dann was den Kurs verlässt
+    const istTausch = (b: Bewertet) => b.e.typ === 'schritt' && !!b.e.tausch
+    const nach = [...gleich.filter((b) => !istTausch(b)), ...gleich.filter(istTausch)]
+    return [...nach.map((b) => aus(b, istTausch(b) ? 'tausch' : 'gleich')), ...mmr(rest, Math.max(0, anzahl - gleich.length)).map((b) => aus(b, 'verlaesst'))]
   }
   return mmr(liste, anzahl).map((b) => aus(b))
 }
@@ -156,6 +159,12 @@ export function ersetzen(plan: Plan, ort: Ort, neu: KatalogEintrag): Plan {
   } else if (ort.schritt !== undefined && s.schritte[ort.schritt]) {
     const alt = s.schritte[ort.schritt]
     const x: PlanSchritt = { ref: neu.id, h: neu.h, rolle: alt.rolle, min: alt.min, t: textVon(neu, 'de').titel.slice(0, 60), warum: ['von dir gewählt'] }
+    // Einzelkurs: eine Übung derselben Sitzung ohne eigenes Blatt (Tausch-Übung) behält das Blatt der bisherigen Variante
+    const kat = aktuellerKatalog(), altE = kat?.eintraege.get(alt.ref)
+    if (neu.typ === 'schritt' && !neu.uebungsblatt && neu.linie && altE?.typ === 'schritt' && altE.linie?.id === neu.linie.id && altE.linie.nr === neu.linie.nr) {
+      const von = alt.blattVon ?? (altE.uebungsblatt ? altE.id : undefined)
+      if (von) x.blattVon = von
+    }
     s.schritte[ort.schritt] = x
   }
   if (s.status === 'geplant') s.status = 'angepasst'

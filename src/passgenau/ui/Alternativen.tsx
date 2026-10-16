@@ -53,6 +53,7 @@ export function Alternativen({ ort }: { ort: Ort }) {
             <span className="pg-quelle">{istBlatt ? `aus „${tx.quelle}“` : tx.quelle}</span>
             {nurDe && <Pill art="warn">nur DE</Pill>}
             {a?.kurs === 'gleich' && <Pill>gleiche Kurs-Sitzung, andere Variante</Pill>}
+            {a?.kurs === 'tausch' && <Pill>gleiche Kurs-Sitzung, andere Übung – Blatt und roter Faden bleiben</Pill>}
             {a?.kurs === 'verlaesst' && <Pill art="warn">verlässt den Kurs – die nächste Sitzung knüpft an die ersetzte an</Pill>}
           </div>
           {istBlatt ? (

@@ -620,12 +620,23 @@ function vorigeUebung(c: Kontext, fruehere: string[], kernTitel: unknown): { vor
   return { vorher, nachVersuch: fruehere[fruehere.length - 1] === 'pg:uebertragen' && c.weg === 'gruendlich' && c.alter >= 6 }
 }
 
+/** Einzelkurs: zu einer Tausch-Übung die Variante derselben Sitzung mit Blatt, die zum Kind passt (deren Blatt, Anleitung und
+ *  Auftrag gelten weiter); sonst der Eintrag selbst */
+function blattGeschwister(c: Kontext, e: KatalogEintrag | undefined): KatalogEintrag | undefined {
+  if (e?.typ !== 'schritt' || !e.tausch || !e.linie) return e
+  const id = e.linie.id, nr = e.linie.nr
+  const l = (c.k.nachRolle.get('kern') ?? []).filter((x) => x.typ === 'schritt' && !x.tausch && !!x.uebungsblatt && x.linie?.id === id && x.linie.nr === nr)
+    .map((x) => bewerte(x, c, {})).sort((a, b) => rang(a, b, 'blatt'))
+  return l[0]?.e ?? e
+}
+
 /** Einzelkurs: der kleine Auftrag „bis zum nächsten Mal“ vom Blatt der letzten Kurs-Sitzung (letzte passende Aufgabe, ohne
  *  Vorspann bis zum Doppelpunkt, erster Satz). Leer, wenn das Blatt keinen erkennbaren Auftrag hat; undefined ohne Kurs. */
 const AUFTRAG_RE = /nächsten Mal|Auftrag|Mission|prochaine fois|mission/i
 function kursAuftrag(c: Kontext, fruehere: string[], kern: KatalogEintrag | undefined): { de: string; fr: string } | undefined {
   const vorRef = fruehere[fruehere.length - 1]
-  const vor = vorRef ? c.k.eintraege.get(vorRef) : undefined
+  // (war die letzte Sitzung eine Tausch-Übung, gilt das Blatt ihrer Variante)
+  const vor = blattGeschwister(c, vorRef ? c.k.eintraege.get(vorRef) : undefined)
   if (kern?.typ !== 'schritt' || !kern.linie?.id.startsWith('kurs-') || vor?.typ !== 'schritt' || vor.linie?.id !== kern.linie.id || vor.linie.nr + 1 !== kern.linie.nr) return undefined
   // greift die Sitzung den Auftrag schon selbst auf (am Anfang ihres Texts), nicht doppelt
   if (AUFTRAG_RE.test(textVon(kern, 'de').text.slice(0, 300))) return undefined
@@ -1279,7 +1290,9 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         .filter((e) => e.typ === 'schritt' && e.linie?.id === kurs.id && e.linie.nr === o.nr + kurs.ab && pruefe(e, c, { rolle: 'kern', gesperrt: benutzt }) === null)
         .map((e) => ({ b: bewerte(e, c, { phase: o.phase }), locker: 0 }) as Wahl)
         .sort((x, y) => rang(x.b, y.b, `${salz}|kurs`))
-      if (dran.length) auswahl = dran
+      // Tausch-Übungen nur auf Wunsch – oder wenn „Neu vorschlagen“ beide Varianten gesperrt hat
+      const varianten = dran.filter((x) => !(x.b.e.typ === 'schritt' && x.b.e.tausch))
+      if (dran.length) auswahl = varianten.length ? varianten : dran
     }
     const w = auswahl[0]
     if (!w) {
@@ -1288,6 +1301,8 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     }
     const rolle: Rolle = slot.rolle === 'vertiefung' ? 'kern' : (slot.rolle as Rolle)
     ergebnis[i] = planSchritt(w.b, rolle, slot.min, c, { phase: o.phase, nr: o.nr, lockerText: w.lockerText })
+    // Tausch-Übung als Kern: das Blatt der passenden Variante bleibt
+    if (slot.rolle === 'kern' && w.b.e.typ === 'schritt' && w.b.e.tausch) { const g = blattGeschwister(c, w.b.e); if (g && g !== w.b.e) ergebnis[i]!.blattVon = g.id }
     // Themen-Einstieg ab Sitzung 2: erst kurz an die letzte Übung anknüpfen, dann der Einstieg (roter Faden wie beim eigenen
     // Einstieg)
     if (slot.rolle === 'einstieg' && w.b.e.id.startsWith('th:') && w.b.e.typ === 'schritt' && o.nr > 1) {
@@ -1323,15 +1338,17 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     } else hinweise.push('Keine passende Mitmach-Seite – ohne Blatt geplant.')
   }
   const blattIndex = slots.findIndex((x) => x.rolle === 'uebung')
+  // Tausch-Übung als Kern: Blatt und Anleitung kommen von der passenden Variante der Sitzung
+  const blattKern = blattGeschwister(c, kern)
   if (blattIndex >= 0 && ergebnis[blattIndex]) {
     const min = ergebnis[blattIndex]!.min
-    const auftrag = { phase: o.phase, min, nr: o.nr, salz, gesperrt: benutzt, fokus: o.fokus, kern, optional: c.weg === 'leicht' || min < 6 }
+    const auftrag = { phase: o.phase, min, nr: o.nr, salz, gesperrt: benutzt, fokus: o.fokus, kern: blattKern, optional: c.weg === 'leicht' || min < 6 }
     // Jugendliche: das Blatt zur Übung der Stunde statt Teilen aus Kurs- und Kinderblättern (Blind-Bewertung 5)
     // … und für Kinder, wenn der Kern ein eigenes Blatt hat oder die Sitzung überträgt bzw. zurückschaut (Blind-Bewertung 8:
     // „Blatt und Kern brechen auseinander“)
     // … und der Rückblick auch unter 6 (Blind-Bewertung 10: „Gut sehen – hell und dunkel“ statt des angekündigten Abzeichens)
-    const eigenesBlatt = !!kern && (c.alter >= 12 || (kern.typ === 'schritt' && !!kern.uebungsblatt) || (kern.id === 'pg:uebertragen' && mitFaden(c)) || kern.id === 'pg:folge-transfer')
-    const erg = c.weg !== 'leicht' && kern && eigenesBlatt ? kernBlatt(c, auftrag) : baueBlatt(c, auftrag)
+    const eigenesBlatt = !!blattKern && (c.alter >= 12 || (blattKern.typ === 'schritt' && !!blattKern.uebungsblatt) || (blattKern.id === 'pg:uebertragen' && mitFaden(c)) || blattKern.id === 'pg:folge-transfer')
+    const erg = c.weg !== 'leicht' && blattKern && eigenesBlatt ? kernBlatt(c, auftrag) : baueBlatt(c, auftrag)
     if (erg) {
       blatt = { titel: ohneEigenenNamen(erg.titel, c.p.vorname), bausteine: erg.teile, ziel: false }
       for (const t of erg.teile) benutzt.add(t.ref)
@@ -1342,7 +1359,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       if (erg.teile.some((t) => t.ref === BLATT_SYSTEM.kernblatt)) {
         // die Anleitung passt zum Blatt (Blind-Bewertung 7: „‚schreibt … ein erfundenes Beispiel‘, das Blatt verlangt aber nur
         // Ankreuzen“): schreibt man oder kreuzt man an?
-        const teile = kern?.typ === 'schritt' && kern.uebungsblatt ? (c.sprache === 'fr' ? kern.uebungsblatt.fr : kern.uebungsblatt.de) ?? [] : []
+        const teile = blattKern?.typ === 'schritt' && blattKern.uebungsblatt ? (c.sprache === 'fr' ? blattKern.uebungsblatt.fr : blattKern.uebungsblatt.de) ?? [] : []
         const schreiben = !teile.length || teile.some((b) => ['frage', 'satzanfaenge', 'tabelle', 'wennDann', 'dialog', 'feld'].includes(b.art))
         // „Wo es um Eigenes geht …“ nur, wenn das Blatt nach Eigenem fragt (Blind-Bewertung 10: der Satz stand auch bei reinen
         // Mal- und Ankreuzblättern)
@@ -1816,7 +1833,9 @@ export function sitzungNeu(k: Katalog, p: Profil, plan: Plan, nr: number, v: Vor
     })(),
   }
   const vorher = new Set(plan.sitzungen.filter((s) => s.nr < nr).flatMap((s) => s.schritte.map((x) => x.ref)))
-  const neu = fuelleSitzung(c, { plan: plan.id, nr, phase: alt.phase, rituale: rit, gesperrt, vorher, kernFormate: [], variante })
+  // die Kerne davor wie beim Planen (Einzelkurs: Auftrag vom letzten Blatt, Lernpfad, Rückblick)
+  const fruehereKerne = plan.sitzungen.filter((s) => s.nr < nr).flatMap((x) => x.schritte.filter((y) => y.rolle === 'kern').map((y) => y.ref))
+  const neu = fuelleSitzung(c, { plan: plan.id, nr, phase: alt.phase, rituale: rit, gesperrt, vorher, kernFormate: [], variante, fruehereKerne })
   if (alt.blatt?.ziel && neu.blatt) neu.blatt.ziel = true
   neu.status = alt.status === 'gehalten' ? alt.status : 'geplant'
   return { ...plan, variante, sitzungen: plan.sitzungen.map((s) => (s.nr === nr ? neu : s)) }

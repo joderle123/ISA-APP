@@ -845,7 +845,8 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
     }
     if (t.ref === BLATT_SYSTEM.kernblatt) {
       const ks = (s?.schritte ?? []).find((x) => x.rolle === 'kern')
-      const kern = ks ? k.eintraege.get(ks.ref) : undefined
+      // Tausch-Übung als Kern: das Blatt der Variante, die die Sitzung behält
+      const kern = ks ? k.eintraege.get(ks.blattVon ?? ks.ref) ?? k.eintraege.get(ks.ref) : undefined
       const h = plan.auftrag?.heute
       // schwerer Tag (Stimmung oder Konzentration ≤ 2): kurzes Blatt wie bei wenig Schreiben (Blind-Bewertung 6)
       const schwer = !!h && (h.stimmung <= 2 || h.konzentration <= 2)
