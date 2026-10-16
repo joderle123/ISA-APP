@@ -29,8 +29,8 @@
         { "art": "leiter", "stufen": 3, "oben": "Geschafft.", "unten": "Hier fange ich an." },
         {
           "art": "aufgabe",
-          "text": "Welcher Mut-Satz hilft dir? Male deine Karte an und schneide sie aus.",
-          "hinweis": "In die leere Karte kannst du einen eigenen Satz schreiben.",
+          "text": "Welcher Mut-Satz hilft dir? Schneide die Karten aus.",
+          "hinweis": "Male deine Lieblingskarte an. In die leere Karte kannst du einen eigenen Satz schreiben.",
           "symbole": ["malen", "schneiden"]
         },
         {
@@ -92,8 +92,8 @@
         { "art": "leiter", "stufen": 3, "oben": "C’est fait.", "unten": "Je commence ici." },
         {
           "art": "aufgabe",
-          "text": "Quelle phrase courage t’aide ? Colorie ta carte et découpe-la.",
-          "hinweis": "Sur la carte vide, tu peux écrire ta propre phrase.",
+          "text": "Quelle phrase d’encouragement t’aide ? Découpe les cartes.",
+          "hinweis": "Colorie ta carte préférée. Sur la carte vide, tu peux écrire ta propre phrase.",
           "symbole": ["malen", "schneiden"]
         },
         {
@@ -108,15 +108,15 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les enfants font l’expérience qu’une grande tâche devient plus facile quand on la découpe en petites étapes. Ils planifient une tâche personnelle en trois étapes et choisissent une phrase courage avec laquelle ils s’encouragent.",
+        "ziel": "Les enfants font l’expérience qu’une grande tâche devient plus facile quand on la découpe en petites étapes. Ils planifient une tâche personnelle en trois étapes et choisissent une phrase d’encouragement avec laquelle ils s’encouragent.",
         "ablauf": [
-          "Entrée en matière (5 min) : montrer une haute pile de livres : « Comment est-ce que je mets ça dans l’étagère ? » – « Une chose après l’autre. »",
+          "Entrée en matière (5 min) : montrer une haute pile de livres : « Comment est-ce que je range tout ça sur l’étagère ? » – « Une chose après l’autre. »",
           "Lire l’histoire. Questions : « Que pense Kim d’abord ? Qu’est-ce qui l’aide ensuite ? »",
-          "S’exercer d’abord à l’exercice 1 au tableau (p. ex. préparer le cartable), puis chaque enfant planifie une tâche personnelle.",
-          "Exercice 2 : dire les phrases courage ensemble – à voix haute, puis en chuchotant, puis seulement dans la tête. Chaque enfant choisit une carte.",
+          "Faire d’abord l’exercice 1 ensemble au tableau (p. ex. préparer le cartable), puis chaque enfant planifie une tâche personnelle.",
+          "Exercice 2 : dire les phrases d’encouragement ensemble – à voix haute, puis en chuchotant, puis seulement dans la tête. Chaque enfant choisit une carte.",
           "Poser la carte sur le pupitre. Les jours suivants, demander : « Quelle est ta première étape ? »"
         ],
-        "hintergrund": "À l’école fondamentale, les enfants abandonnent souvent les tâches volumineuses avant d’avoir vraiment commencé : la tâche paraît trop grande dans son ensemble, et garder plusieurs étapes en tête en même temps surcharge la mémoire de travail (Diamond, 2013). Des étapes visibles soulagent. Chaque étape accomplie est une petite expérience de réussite – selon Bandura (1977), la source la plus importante du sentiment d’efficacité personnelle. Les phrases courage reprennent l’entraînement à l’auto-instruction (Meichenbaum & Goodman, 1971) : les adultes disent à voix haute des phrases utiles, les enfants les répètent, d’abord à voix haute, puis en chuchotant, enfin intérieurement.",
+        "hintergrund": "À l’école fondamentale, les enfants abandonnent souvent les tâches volumineuses avant d’avoir vraiment commencé : la tâche paraît trop grande dans son ensemble, et garder plusieurs étapes en tête en même temps surcharge la mémoire de travail (Diamond, 2013). Des étapes visibles soulagent. Chaque étape accomplie est une petite expérience de réussite – selon Bandura (1977), la source la plus importante du sentiment d’efficacité personnelle. Les phrases d’encouragement reprennent l’entraînement à l’auto-instruction (Meichenbaum & Goodman, 1971) : les adultes disent à voix haute des phrases utiles, les enfants les répètent, d’abord à voix haute, puis en chuchotant, enfin intérieurement.",
         "quellen": [
           "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
@@ -124,7 +124,7 @@
         ],
         "differenzierung": {
           "leichter": "Seulement deux étapes, dessinées ; l’adulte écrit sous la dictée.",
-          "schwerer": "Planifier quatre étapes et les cocher ; inventer sa propre phrase courage."
+          "schwerer": "Planifier quatre étapes et les cocher ; inventer sa propre phrase d’encouragement."
         },
         "impulse": [
           "Qu’est-ce qui avait l’air énorme au début et s’est ensuite révélé faisable ?",
@@ -132,10 +132,10 @@
           "Quelle est ta toute première étape ?"
         ],
         "tipps": [
-          "Montrer la pensée à voix haute : « D’abord … ensuite … J’y arrive. » Les enfants reprennent le plus facilement le dialogue intérieur d’un modèle.",
+          "Penser à voix haute devant les enfants : « D’abord … ensuite … J’y arrive. » Les enfants reprennent le plus facilement le dialogue intérieur d’un modèle.",
           "Faire cocher ou colorier les étapes accomplies – ainsi, le progrès devient visible."
         ],
-        "achtung": "Si un enfant abandonne presque toujours ou se dévalorise fortement (« Je suis trop bête ») : chercher le dialogue avec les parents et informer la direction compétente (responsable).",
+        "achtung": "Si un enfant abandonne presque toujours ou se dévalorise fortement (« Je suis trop bête ») : engager la conversation avec les parents et informer la direction compétente (responsable).",
         "material": "Crayons de couleur, ciseaux, une pile de livres"
       }
     }
@@ -255,7 +255,7 @@
     },
     "fr": {
       "titel": "Mon plan de motivation",
-      "untertitel": "Certaines tâches, tu les fais volontiers, d’autres sont collantes comme du chewing-gum. Tu peux toi-même faire quelque chose pour que ça aille mieux.",
+      "untertitel": "Certaines tâches, tu les fais volontiers, d’autres sont pénibles. Tu peux toi-même faire quelque chose pour que ça aille mieux.",
       "bausteine": [
         {
           "art": "geschichte",
@@ -293,7 +293,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Planifie une tâche collante avec les trois moteurs.",
+          "text": "Planifie une tâche pénible avec les trois moteurs.",
           "hinweis": "Écris une idée pour chaque étape.",
           "symbole": ["schreiben"]
         },
@@ -301,7 +301,7 @@
           "art": "schritte",
           "linien": 2,
           "items": [
-            { "titel": "Ma tâche collante", "text": "Par exemple : s’exercer à lire, apprendre des mots, devoirs de langues" },
+            { "titel": "Ma tâche pénible", "text": "Par exemple : s’exercer à lire, apprendre des mots, devoirs de langues" },
             { "titel": "Décider moi-même", "text": "Voilà ce que je décide moi-même, par exemple le lieu, l’heure ou l’ordre :" },
             { "titel": "Savoir faire quelque chose", "text": "Voilà à quoi je vois que je progresse :" },
             { "titel": "Faire partie du groupe", "text": "Avec cette personne, je m’exerce ou je lui en parle :" }
@@ -309,7 +309,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Et si tu n’as quand même pas envie ? Écris un plan « si … alors ».",
+          "text": "Et si tu n’as toujours pas envie ? Écris un plan « si … alors ».",
           "hinweis": "Un plan « si … alors » fixe d’avance ce que tu fais à ce moment précis.",
           "symbole": ["schreiben"]
         },
@@ -321,7 +321,7 @@
         { "art": "rueckblick" }
       ],
       "lehrer": {
-        "ziel": "Les enfants découvrent trois sources de motivation pour apprendre – décider soi-même, savoir faire quelque chose, faire partie du groupe – et les utilisent pour une tâche collante. Pour les moments sans envie, ils fixent un plan « si … alors ».",
+        "ziel": "Les enfants découvrent trois sources de motivation pour apprendre – décider soi-même, savoir faire quelque chose, faire partie du groupe – et les utilisent pour une tâche pénible. Pour les moments sans envie, ils fixent un plan « si … alors ».",
         "ablauf": [
           "Entrée en matière (5 min) : « Qu’apprends-tu volontiers – et qu’est-ce que tu repousses ? » Recueillir en deux colonnes au tableau, sans juger.",
           "Lire l’histoire et l’encadré. Résoudre l’exercice 1 à deux et comparer.",
@@ -348,7 +348,7 @@
           "Proposer de vrais choix, même petits : ordre des tâches, partenaire, place de travail.",
           "Rendre le progrès visible (listes, passeport de lecture) – les enfants sous-estiment souvent ce qu’ils savent déjà."
         ],
-        "achtung": "Si tout laisse un enfant indifférent pendant longtemps, s’il se replie ou paraît triste, il y a plus derrière que le manque de motivation : chercher le dialogue et informer la direction compétente (responsable)."
+        "achtung": "Si tout laisse un enfant indifférent pendant longtemps, s’il se replie ou paraît triste, il y a plus derrière que le manque de motivation : engager la conversation et informer la direction compétente (responsable)."
       }
     }
   },
@@ -438,7 +438,7 @@
     },
     "fr": {
       "titel": "Les erreurs sont des aides",
-      "untertitel": "Tout le monde se trompe. Ça montre ce qu’on peut exercer.",
+      "untertitel": "Tout le monde fait des erreurs. Une erreur te montre ce que tu peux encore travailler.",
       "bausteine": [
         {
           "art": "geschichte",
@@ -459,7 +459,7 @@
             "C’est nul. J’arrête."
           ]
         },
-        { "art": "aufgabe", "text": "Voici tes trois aides pour les erreurs. Répète-les à voix haute.", "symbole": ["zuhoeren", "sprechen"] },
+        { "art": "aufgabe", "text": "Voici tes trois aides quand tu fais une erreur. Répète-les à voix haute.", "symbole": ["zuhoeren", "sprechen"] },
         {
           "art": "schritte",
           "stil": "kette",
@@ -506,7 +506,7 @@
           "Commenter ses propres erreurs avec sérénité – les enfants apprennent à gérer l’erreur grâce au modèle.",
           "Afficher les trois aides pour les erreurs sur une affiche et y renvoyer au quotidien."
         ],
-        "achtung": "Si un enfant réagit très fortement à de petites erreurs, s’insulte lui-même ou refuse des tâches par peur de l’erreur : chercher le dialogue avec les parents et informer la direction compétente (responsable).",
+        "achtung": "Si un enfant réagit très fortement à de petites erreurs, s’insulte lui-même ou refuse des tâches par peur de l’erreur : engager la conversation avec les parents et informer la direction compétente (responsable).",
         "material": "Crayons de couleur ; en option, des cubes de construction"
       }
     }
@@ -636,8 +636,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quelles phrases-stop connais-tu chez toi ? Coche.",
-          "hinweis": "Les phrases-stop te freinent quand tu apprends. Presque tout le monde en connaît.",
+          "text": "Quelles phrases te freinent, chez toi ? Coche.",
+          "hinweis": "Ces phrases te freinent quand tu apprends. Presque tout le monde en connaît.",
           "symbole": ["ankreuzen"]
         },
         {
@@ -649,14 +649,14 @@
             "C’est beaucoup trop difficile.",
             "Je n’apprendrai jamais ça.",
             "Les autres sont bien plus rapides.",
-            "Je suis nul·le en maths.",
+            "Les maths, ce n’est pas pour moi.",
             "Je fais tout faux de toute façon."
           ]
         },
-        { "art": "aufgabe", "text": "Transforme les phrases-stop en phrases pour continuer. Relie.", "symbole": ["verbinden"] },
+        { "art": "aufgabe", "text": "Transforme les phrases qui freinent en phrases qui font avancer. Relie.", "symbole": ["verbinden"] },
         {
           "art": "zuordnen",
-          "titel": ["Phrase-stop", "Phrase pour continuer"],
+          "titel": ["Phrase qui freine", "Phrase qui fait avancer"],
           "links": ["Je n’y arrive pas.", "C’est trop d’un coup.", "J’ai fait une erreur.", "Les autres sont plus rapides."],
           "rechts": ["Je peux apprendre des autres.", "Je n’y arrive pas encore.", "Je m’exerce par petites étapes.", "J’apprends de mes erreurs."]
         },
@@ -675,7 +675,7 @@
         },
         { "art": "aufgabe", "text": "Qu’apprends-tu en ce moment ? Planifie ton prochain petit pas.", "symbole": ["schreiben"] },
         { "art": "satzanfaenge", "items": ["Ça, je ne sais pas encore le faire : …", "Mon prochain petit pas : …", "Ce qui m’aide : …"] },
-        { "art": "aufgabe", "text": "Que te dis-tu à la prochaine phrase-stop ? Écris un plan « si … alors ».", "symbole": ["schreiben"] },
+        { "art": "aufgabe", "text": "Que te dis-tu la prochaine fois que cette phrase te freine ? Écris un plan « si … alors ».", "symbole": ["schreiben"] },
         {
           "art": "wennDann",
           "zeilen": 2,
@@ -689,11 +689,11 @@
         { "art": "rueckblick" }
       ],
       "lehrer": {
-        "ziel": "Les enfants reconnaissent les phrases-stop décourageantes pendant l’apprentissage et les reformulent en phrases encourageantes pour continuer. Ils rassemblent des preuves tirées de leur propre vie qu’ils apprennent en s’exerçant.",
+        "ziel": "Les enfants reconnaissent les phrases décourageantes qui les freinent pendant l’apprentissage et les reformulent en phrases encourageantes qui font avancer. Ils rassemblent des preuves tirées de leur propre vie qu’ils apprennent en s’exerçant.",
         "ablauf": [
           "Entrée en matière (5 min) : écrire « Je n’y arrive pas. » au tableau. Question : « Comment cette phrase se ressent-elle ? » Puis ajouter « pas encore » et poser la même question.",
           "Lire l’histoire et l’encadré. Questions : « Que dit la maîtresse différemment ? Pourquoi cela aide-t-il Samuel ? »",
-          "Exercices 1 et 2 seul, puis comparer l’exercice 2. Collecter d’autres phrases pour continuer sur une affiche.",
+          "Exercices 1 et 2 seul, puis comparer l’exercice 2. Collecter d’autres phrases qui font avancer sur une affiche.",
           "Exercice 3 : recueillir d’abord des exemples (faire du vélo, lire, un instrument). Souligner tout l’entraînement qu’il y a derrière.",
           "Exercices 4 et 5 : fixer un vrai prochain pas et un plan « si … alors ». Au quotidien, répondre aimablement à « Je n’y arrive pas » : « … pas encore. »"
         ],
@@ -705,14 +705,14 @@
         ],
         "differenzierung": {
           "leichter": "Faire l’exercice 2 avec des bandes de phrases découpées à poser. À l’exercice 3, un seul exemple, volontiers dessiné.",
-          "schwerer": "Collecter ses propres phrases-stop et inventer pour chacune une phrase pour continuer qui convient."
+          "schwerer": "Collecter ses propres phrases qui freinent et inventer pour chacune une phrase qui fait avancer qui convient."
         },
-        "impulse": ["Que ne savais-tu pas faire il y a un an ?", "Quelle phrase-stop revient le plus souvent chez toi ?", "Qui t’aide quand tu bloques en t’exerçant ?"],
+        "impulse": ["Que ne savais-tu pas faire il y a un an ?", "Quelle phrase qui freine revient le plus souvent chez toi ?", "Qui t’aide quand tu bloques en t’exerçant ?"],
         "tipps": [
           "Féliciter l’effort et la démarche, pas le don : « Tu as essayé trois chemins » plutôt que « Tu es si intelligent ».",
           "Utiliser « pas encore » honnêtement : il doit encourager, pas mettre la pression."
         ],
-        "achtung": "Si un enfant se dévalorise durablement (« Je suis bête ») ou paraît très abattu, une feuille de travail ne suffit pas : chercher le dialogue avec les parents et impliquer la direction compétente (responsable)."
+        "achtung": "Si un enfant se dévalorise durablement (« Je suis bête ») ou paraît très abattu, une feuille de travail ne suffit pas : engager la conversation avec les parents et impliquer la direction compétente (responsable)."
       }
     }
   },
@@ -890,12 +890,12 @@
         {
           "art": "aufgabe",
           "text": "Fais un plan pour les deux prochaines semaines.",
-          "hinweis": "Demander vaut la peine. La plupart des enseignant·e·s expliquent volontiers si ta question est précise : « Pouvez-vous me montrer ce qui manquait à l’exercice 3 ? »"
+          "hinweis": "Ça vaut la peine de demander. La plupart des enseignants expliquent volontiers si ta question est précise : « Pouvez-vous me montrer ce qui manquait à l’exercice 3 ? »"
         },
         {
           "art": "satzanfaenge",
           "items": [
-            "Ma question pour l’enseignant·e : …",
+            "Ma question pour l’enseignant ou l’enseignante : …",
             "Ce que je travaille d’ici le prochain devoir : …",
             "Quand et à quel rythme : …",
             "À quoi je verrai que ça progresse : …"
@@ -907,7 +907,7 @@
           "titel": "Les premières minutes après une mauvaise note",
           "text": "Colère, déception ou honte : c’est normal. Ne prends pas de grande décision sous le coup de la frustration (« J’arrête le français »). Regarde ta copie quand tu es plus calme – au plus tard le lendemain."
         },
-        { "art": "aufgabe", "text": "Et au prochain coup dur ? Prévois les premières 24 heures." },
+        { "art": "aufgabe", "text": "Et au prochain coup dur ? Prévois les 24 premières heures." },
         {
           "art": "wennDann",
           "zeilen": 2,
@@ -920,9 +920,9 @@
         },
         {
           "art": "skala",
-          "frage": "À quel point es-tu confiant·e que ton plan t’aidera au prochain devoir ?",
-          "von": "pas du tout",
-          "bis": "tout à fait",
+          "frage": "Quelle confiance as-tu dans ton plan pour le prochain devoir ?",
+          "von": "aucune confiance",
+          "bis": "entière confiance",
           "stufen": 11
         }
       ],
@@ -1007,7 +1007,7 @@
         },
         { "art": "aufgabe", "text": "Am Tag der Probe: So wirst du ruhig. Probiere es gleich aus.", "symbole": ["zuhoeren"] },
         { "art": "atmen", "uebung": "blume" },
-        { "art": "aufgabe", "text": "Wähle zwei Mut-Sätze für die Probe. Schreibe einen eigenen dazu.", "symbole": ["ankreuzen", "schreiben"] },
+        { "art": "aufgabe", "text": "Wähle zwei Mut-Sätze für die Probe.", "hinweis": "Auf die leeren Zeilen kannst du einen eigenen Satz schreiben.", "symbole": ["ankreuzen", "schreiben"] },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -1016,7 +1016,7 @@
             "Ich habe geübt. Ich kann schon einiges.",
             "Ich lese jede Aufgabe in Ruhe.",
             "Ich fange mit einer leichten Aufgabe an.",
-            "Wenn ich hänge, mache ich erst weiter.",
+            "Wenn ich nicht weiterkomme, mache ich bei der nächsten Aufgabe weiter.",
             "Aufregung ist normal. Sie macht mich wach.",
             "Eine Probe zeigt, was ich schon kann."
           ]
@@ -1064,20 +1064,20 @@
     },
     "fr": {
       "titel": "Avant le contrôle : mon plan",
-      "untertitel": "Avant un contrôle, beaucoup de gens sont nerveux. C’est normal. Avec un bon plan, tu restes plus calme.",
+      "untertitel": "Avant un contrôle, beaucoup d’enfants sont nerveux. C’est normal. Avec un bon plan, tu restes plus calme.",
       "bausteine": [
         { "art": "aufgabe", "text": "Comment te sens-tu quand on annonce un contrôle ? Entoure.", "symbole": ["einkreisen"] },
         { "art": "gefuehle", "modus": "einkreisen", "spalten": 6, "gefuehle": ["ruhig", "froh", "aufgeregt", "nervoes", "besorgt", "aengstlich"] },
         {
           "art": "info",
           "symbol": "wissen",
-          "titel": "L’agitation est normale",
-          "text": "Un peu d’agitation rend éveillé. Trop d’agitation peut bloquer la pensée. Trois choses aident : s’exercer de façon répartie, respirer calmement et t’encourager toi-même."
+          "titel": "La nervosité, c’est normal",
+          "text": "Un peu de nervosité aide à rester éveillé. Trop de nervosité peut bloquer la réflexion. Trois choses aident : réviser un peu chaque jour, respirer calmement et t’encourager toi-même."
         },
         {
           "art": "aufgabe",
-          "text": "Planifie ton entraînement. Répartis la matière sur plusieurs jours.",
-          "hinweis": "Un peu chaque jour aide plus que tout la dernière veille. Vérifie à la fin : est-ce que j’y arrive sans aide ?",
+          "text": "Planifie tes révisions. Répartis la matière sur plusieurs jours.",
+          "hinweis": "Un peu chaque jour vaut mieux que tout la veille au soir. Vérifie à la fin : est-ce que j’y arrive sans aide ?",
           "symbole": ["schreiben"]
         },
         {
@@ -1100,7 +1100,7 @@
         },
         { "art": "aufgabe", "text": "Le jour du contrôle : voici comment tu te calmes. Essaie tout de suite.", "symbole": ["zuhoeren"] },
         { "art": "atmen", "uebung": "blume" },
-        { "art": "aufgabe", "text": "Choisis deux phrases courage pour le contrôle. Écris-en une de toi.", "symbole": ["ankreuzen", "schreiben"] },
+        { "art": "aufgabe", "text": "Choisis deux phrases d’encouragement pour le contrôle.", "hinweis": "Sur les lignes vides, tu peux écrire une phrase à toi.", "symbole": ["ankreuzen", "schreiben"] },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -1110,7 +1110,7 @@
             "Je lis chaque exercice tranquillement.",
             "Je commence par un exercice facile.",
             "Si je bloque, je passe à la suite.",
-            "L’agitation est normale. Elle me tient en éveil.",
+            "La nervosité est normale. Elle me met en alerte.",
             "Un contrôle montre ce que je sais déjà."
           ]
         },
@@ -1124,12 +1124,12 @@
         { "art": "rueckblick" }
       ],
       "lehrer": {
-        "ziel": "Les enfants préparent un contrôle de façon planifiée : ils répartissent l’entraînement sur plusieurs jours, apprennent un exercice de respiration, choisissent des phrases courage et regardent après le contrôle ce qui a aidé.",
+        "ziel": "Les enfants préparent un contrôle de façon planifiée : ils répartissent l’entraînement sur plusieurs jours, apprennent un exercice de respiration, choisissent des phrases d’encouragement et regardent après le contrôle ce qui a aidé.",
         "ablauf": [
           "Entrée en matière (5 min) : « Que ressentez-vous quand on annonce un contrôle ? » Exercice 1. Toutes les émotions sont permises.",
           "Lire l’encadré. Exercice 2 avec un vrai contrôle annoncé : montrer au tableau comment répartir 40 mots sur quatre jours.",
           "Lire l’encadré conseil. Exercice 3 : faire l’exercice de respiration trois fois ensemble et convenir de le répéter avant chaque contrôle.",
-          "Exercice 4 : faire lire les phrases courage à qui veut ; mettre les phrases choisies sur un papier dans la trousse.",
+          "Exercice 4 : faire lire les phrases d’encouragement à qui veut ; mettre les phrases choisies sur un papier dans la trousse.",
           "Exercice 5 seulement après le contrôle (5 min) : qu’est-ce qui a aidé ? Recueillir des idées."
         ],
         "hintergrund": "L’agitation avant un contrôle a trois côtés : soucis dans la tête, tension dans le corps et souvent un comportement défavorable comme repousser ou bachoter la veille (Zeidner, 1998). La feuille agit sur les trois. Contre le bachotage : l’entraînement réparti avec auto-interrogation fait retenir la matière nettement plus longtemps (Dunlosky et al., 2013). Contre la tension : un exercice de respiration déjà exercé, avec expiration lente ; contre les soucis : des affirmations encourageantes, comme dans les programmes cognitivo-comportementaux pour enfants anxieux (Kendall & Hedtke, 2006).",
@@ -1226,7 +1226,7 @@
         {
           "art": "aufgabe",
           "text": "Übe die Quadrat-Atmung jetzt zwei Minuten lang.",
-          "hinweis": "Sie hilft vor dem Prüfungsraum und in der Prüfung, wenn du hängst."
+          "hinweis": "Sie hilft vor dem Prüfungsraum und in der Prüfung, wenn du nicht weiterkommst."
         },
         { "art": "atmen", "uebung": "quadrat" },
         { "art": "aufgabe", "text": "Plane, was du tust, wenn die Angst in der Prüfung hochkommt." },
@@ -1314,7 +1314,7 @@
           "beispiel": [
             "« Je vais rater, c’est sûr. »",
             "Au dernier devoir, j’avais 38 sur 60. Cette fois, j’ai commencé plus tôt.",
-            "« Je suis préparé·e. Pas besoin de tout savoir pour réussir. »"
+            "« J’ai bien préparé cet examen. Pas besoin de tout savoir pour réussir. »"
           ]
         },
         { "art": "aufgabe", "text": "Préparation : que prévois-tu pour le prochain examen ? Coche." },
@@ -1326,7 +1326,7 @@
             "Je répartis mes révisions sur plusieurs jours.",
             "Je me teste au lieu de seulement relire.",
             "Je m’entraîne sur d’anciens devoirs, en temps limité.",
-            "Je pose mes questions à l’enseignant·e assez tôt.",
+            "Je clarifie mes questions assez tôt avec l’enseignant ou l’enseignante.",
             "Je dors suffisamment avant l’examen.",
             "La veille, je prépare tout ce dont j’ai besoin."
           ]
@@ -1361,15 +1361,15 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Si l’angoisse est si forte que tu n’arrives presque plus à réviser ou à dormir, tu n’as pas à t’en sortir seul·e :",
-          "punkte": ["le SePAS de ton lycée", "ton ou ta régent·e", "Kanner- a Jugendtelefon : 116 111 (anonyme, gratuit)"]
+          "text": "Si l’angoisse est si forte que tu n’arrives presque plus à réviser ou à dormir, tu n’as pas à t’en sortir sans aide :",
+          "punkte": ["le SePAS de ton lycée", "ton régent ou ta régente", "Kanner- a Jugendtelefon : 116 111 (anonyme, gratuit)"]
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes comprennent le stress d’examen comme une interaction entre corps, pensées et comportement, examinent leurs pensées anxieuses et prévoient préparation, stratégie de calme et plan en cas de blocage.",
         "ablauf": [
           "Entrée en matière (5 min) : échelle de 0 à 10 dans la salle : « À quel point êtes-vous stressés avant un examen ? » Ne pas commenter – montrer que presque tout le monde connaît cela.",
-          "Lire l’encadré, exercice 1 seul·e ; recueillir des exemples volontaires.",
+          "Lire l’encadré, exercice 1 en travail individuel ; recueillir des exemples volontaires.",
           "Exercice 2 : examiner l’exemple ensemble – vérifier les pensées de façon réaliste, sans les balayer.",
           "Exercice 3 pour un examen à venir ; exercice 4 : deux minutes de respiration ensemble.",
           "Comparer l’exercice 5 à deux. Signaler l’encadré d’aide et présenter le SePAS."
@@ -1384,12 +1384,12 @@
           "leichter": "Exercices 1 et 2 avec un seul exemple ; proposer des pensées utiles au choix.",
           "schwerer": "Établir un plan sur deux semaines avec plages de travail, autotests et pauses."
         },
-        "impulse": ["Qu’est-ce qui t’a déjà aidé·e à rester calme ?", "Quelle pensée te stresse le plus ?", "À quoi verrais-tu que l’angoisse diminue ?"],
+        "impulse": ["Qu’est-ce qui t’a déjà permis de rester calme ?", "Quelle pensée te stresse le plus ?", "À quoi verrais-tu que l’angoisse diminue ?"],
         "tipps": [
           "Faire l’exercice de respiration ensemble avant les devoirs en classe.",
           "Au lieu de « Tu vas y arriver », clarifier ensemble ce qui est concrètement prêt."
         ],
-        "achtung": "En cas de crises de panique, de troubles du sommeil ou d’évitement de l’école : entretien individuel, impliquer le SePAS et la direction compétente (responsable). En cas d’indices d’automutilation, agir immédiatement selon la procédure interne et ne pas laisser l’élève seul·e.",
+        "achtung": "En cas de crises de panique, de troubles du sommeil ou d’évitement de l’école : entretien individuel, impliquer le SePAS et la direction compétente (responsable). En cas d’indices d’automutilation, agir immédiatement selon la procédure interne et ne pas laisser l’élève sans soutien.",
         "material": "En option : anciens devoirs"
       }
     }
@@ -1519,7 +1519,7 @@
         "ziel": "Les enfants font l’expérience, dans une petite expérience, qu’ils retiennent mieux les mots en les cachant et en les redisant eux-mêmes plutôt qu’en les regardant seulement. Ensuite, ils choisissent comment s’exercer la prochaine fois.",
         "ablauf": [
           "Préparation : choisir six mots nouveaux avec image, p. ex. des noms d’animaux dans la langue à apprendre, et les diviser en deux groupes de trois.",
-          "Jour 1 (10 min) : regarder trois mots seulement et les lire à voix haute. Pour les trois autres, les montrer, les cacher et les faire dire. Les deux groupes s’exercent aussi longtemps.",
+          "Jour 1 (10 min) : regarder trois mots seulement et les lire à voix haute. Pour les trois autres, les montrer, les cacher et les faire dire. Les deux groupes s’exercent pendant le même temps.",
           "Jour 2 (10 min) : interroger sans répétition. Les enfants colorient une étoile pour chaque mot connu.",
           "Discuter : « Avec quoi en sais-tu plus ? » Lire l’encadré. Dire calmement que, chez certains enfants, le résultat peut aussi être différent.",
           "Exercice 3 : chaque enfant entoure comment il ou elle veut s’exercer dès maintenant. Le rappeler à la prochaine séance de vocabulaire."
@@ -1705,12 +1705,12 @@
           "beispiele": [{ "wenn": "Si je remarque que je lis une page pour la deuxième fois,", "dann": "je ferme mon cahier et j’écris ce dont je me souviens." }]
         },
         { "art": "aufgabe", "text": "Après l’examen : fais le bilan de ton plan.", "hinweis": "Ne remplis cette partie qu’après l’examen." },
-        { "art": "satzanfaenge", "items": ["Ce qui m’a le plus aidé·e : …", "La prochaine fois, je ferai autrement : …"] }
+        { "art": "satzanfaenge", "items": ["Ce qui m’a été le plus utile : …", "La prochaine fois, je ferai autrement : …"] }
       ],
       "lehrer": {
         "ziel": "Les jeunes confrontent leurs habitudes de révision aux résultats de la recherche, transforment une méthode habituelle en autotest et planifient des révisions espacées pour le prochain examen.",
         "ablauf": [
-          "Entrée en matière (5 min) : « Comment avez-vous révisé pour le dernier examen ? » Exercice 1 seul·e.",
+          "Entrée en matière (5 min) : « Comment avez-vous révisé pour le dernier examen ? » Exercice 1 en travail individuel.",
           "Lire l’encadré. Distinguer reconnaître et se rappeler : reconnaître un visage est facile, retrouver le nom l’est moins.",
           "Exercice 2 : discuter l’exemple, puis transformer à deux ses propres méthodes.",
           "Exercice 3 avec un vrai examen à venir, en découpant la matière en petites unités.",

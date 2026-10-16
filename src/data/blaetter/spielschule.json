@@ -89,7 +89,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mach dein Ich-Buch. Male in jede Seite.",
+          "text": "Mach dein Ich-Buch. Male auf jede Seite.",
           "symbole": [
             "schneiden",
             "malen"
@@ -370,7 +370,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Fais ton livre sur toi. Dessine dans chaque page.",
+          "text": "Fabrique ton livre sur toi. Dessine sur chaque page.",
           "symbole": [
             "schneiden",
             "malen"
@@ -1365,7 +1365,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Zeig, wo du morgens hingehst.",
+          "text": "Zeig: Was machst du am Morgen?",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -1429,22 +1429,28 @@
           "art": "schneiden_kleben",
           "bilder": [
             {
-              "bild": "motiv:rucksack"
+              "bild": "motiv:rucksack",
+              "text": "ankommen"
             },
             {
-              "bild": "motiv:gruppe"
+              "bild": "motiv:gruppe",
+              "text": "Kreis"
             },
             {
-              "bild": "motiv:spielzeugkiste"
+              "bild": "motiv:spielzeugkiste",
+              "text": "spielen"
             },
             {
-              "bild": "motiv:brot"
+              "bild": "motiv:brot",
+              "text": "essen"
             },
             {
-              "bild": "motiv:baum"
+              "bild": "motiv:baum",
+              "text": "draußen"
             },
             {
-              "bild": "motiv:haus"
+              "bild": "motiv:haus",
+              "text": "nach Hause"
             }
           ]
         }
@@ -1646,7 +1652,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Montre où tu vas le matin.",
+          "text": "Montre : que fais-tu le matin ?",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -1710,22 +1716,28 @@
           "art": "schneiden_kleben",
           "bilder": [
             {
-              "bild": "motiv:rucksack"
+              "bild": "motiv:rucksack",
+              "text": "arriver"
             },
             {
-              "bild": "motiv:gruppe"
+              "bild": "motiv:gruppe",
+              "text": "cercle"
             },
             {
-              "bild": "motiv:spielzeugkiste"
+              "bild": "motiv:spielzeugkiste",
+              "text": "jouer"
             },
             {
-              "bild": "motiv:brot"
+              "bild": "motiv:brot",
+              "text": "manger"
             },
             {
-              "bild": "motiv:baum"
+              "bild": "motiv:baum",
+              "text": "dehors"
             },
             {
-              "bild": "motiv:haus"
+              "bild": "motiv:haus",
+              "text": "rentrer"
             }
           ]
         }
@@ -2440,7 +2452,7 @@
             },
             {
               "bild": "motiv:ohr",
-              "text": "2 pas"
+              "text": "avance de 2"
             },
             {
               "bild": "motiv:freunde",
@@ -2451,7 +2463,7 @@
             },
             {
               "bild": "motiv:fuss",
-              "text": "sur la pointe"
+              "text": "à pas de loup"
             },
             {
               "bild": "motiv:spielzeugkiste"
@@ -2773,11 +2785,11 @@
     "de": {
       "titel": "Das kann ich schon allein",
       "untertitel": "Anziehen, Schuhe, Jacke aufhängen – ein Schritt nach dem anderen",
-      "anleitung": "Die Karten zweimal drucken und an der Garderobe nutzen. Seite 2 auf Karton kopieren: Das Kind malt die Kleidung an, schneidet sie mit Hilfe aus und zieht die Figur an – zuerst die Hose, zuletzt die Mütze.",
+      "anleitung": "Die Karten zweimal drucken und an der Garderobe nutzen. Seite 2 auf Karton kopieren: Das Kind malt die Kleidung an, schneidet sie mit Hilfe aus und zieht die Figur an – zuerst die Hose, zuletzt die Mütze. Wer mag, malt unten, was heute dran ist.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Zeig, was du schon allein anziehst.",
+          "text": "Zeig, was du schon allein kannst.",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -2839,16 +2851,28 @@
         },
         {
           "art": "anziehpuppe",
-          "figur": "sami",
+          "figur": "lea",
           "kleider": [
             "hose",
             "pulli",
-            "jacke",
-            "muetze",
-            "schal",
-            "stiefel"
+            "regenjacke",
+            "gummistiefel",
+            "muetze"
           ],
           "ausmalen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Male dich: Das ziehe ich heute an.",
+          "symbole": [
+            "malen"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 4
         }
       ],
       "lehrer": {
@@ -3045,11 +3069,11 @@
     "fr": {
       "titel": "Je sais déjà le faire tout seul",
       "untertitel": "S’habiller, chaussures, veste à accrocher – une étape après l’autre",
-      "anleitung": "Imprimer les cartes deux fois et les utiliser au vestiaire. Copier la page 2 sur du carton : l’enfant colorie les vêtements, les découpe avec de l’aide et habille la figurine – d’abord le pantalon, le bonnet en dernier.",
+      "anleitung": "Imprimer les cartes deux fois et les utiliser au vestiaire. Copier la page 2 sur du carton : l’enfant colorie les vêtements, les découpe avec de l’aide et habille la figurine – d’abord le pantalon, le bonnet en dernier. Qui veut dessine en bas ce qu’il porte aujourd’hui.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Montre ce que tu mets déjà tout seul.",
+          "text": "Montre ce que tu sais déjà faire tout seul.",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -3111,16 +3135,28 @@
         },
         {
           "art": "anziehpuppe",
-          "figur": "sami",
+          "figur": "lea",
           "kleider": [
             "hose",
             "pulli",
-            "jacke",
-            "muetze",
-            "schal",
-            "stiefel"
+            "regenjacke",
+            "gummistiefel",
+            "muetze"
           ],
           "ausmalen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine-toi avec tes vêtements du jour.",
+          "symbole": [
+            "malen"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 4
         }
       ],
       "lehrer": {
@@ -3715,7 +3751,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Montre et dis : qui joue avec qui ?",
+          "text": "Montre et dis : qui veut jouer avec moi ?",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -4205,6 +4241,38 @@
               "anzahl": 1
             }
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was gehört zum Essen? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "nachdenken"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "bilder",
+          "spalten": 4,
+          "modus": "einkreisen",
+          "bilder": [
+            {
+              "bild": "motiv:teller",
+              "text": "der Teller"
+            },
+            {
+              "bild": "motiv:becher",
+              "text": "der Becher"
+            },
+            {
+              "bild": "motiv:socke",
+              "text": "die Socke"
+            },
+            {
+              "bild": "motiv:muetze",
+              "text": "die Mütze"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -4401,7 +4469,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Montre : où habite-t-il ?",
+          "text": "Montre : où ça se range ?",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -4429,7 +4497,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse"
+              "titel": "le gobelet"
             },
             {
               "bild": "motiv:teller",
@@ -4495,6 +4563,38 @@
             {
               "bild": "motiv:rucksack",
               "anzahl": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qu’on utilise pour manger ? Entoure.",
+          "symbole": [
+            "einkreisen",
+            "nachdenken"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "bilder",
+          "spalten": 4,
+          "modus": "einkreisen",
+          "bilder": [
+            {
+              "bild": "motiv:teller",
+              "text": "l’assiette"
+            },
+            {
+              "bild": "motiv:becher",
+              "text": "le gobelet"
+            },
+            {
+              "bild": "motiv:socke",
+              "text": "la chaussette"
+            },
+            {
+              "bild": "motiv:muetze",
+              "text": "le bonnet"
             }
           ]
         }
@@ -4795,7 +4895,7 @@
     "de": {
       "titel": "Ich helfe dir – du hilfst mir",
       "untertitel": "Dienste in der Klasse, Hilfe holen und Danke sagen",
-      "anleitung": "Die Karten zweimal drucken; ein Satz dient als Dienstkarten an einer Tafel. Auf Seite 2 schneiden die Kinder die sechs Bilder aus und kleben sie in die richtige Reihenfolge: So holt man Hilfe.",
+      "anleitung": "Die Karten zweimal drucken; ein Satz dient als Dienstkarten an einer Tafel. Auf Seite 2 schneiden die Kinder die vier Bilder aus und kleben sie in die richtige Reihenfolge: So holt man Hilfe.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -4851,24 +4951,35 @@
           "art": "schneiden_kleben",
           "bilder": [
             {
-              "bild": "figur:noah:traurig"
+              "bild": "figur:noah:traurig",
+              "text": "Hilfe, bitte"
             },
             {
-              "bild": "figur:noah:ruhig:zeigen"
+              "bild": "figur:noah:ruhig:melden",
+              "text": "Ich melde mich"
             },
             {
-              "bild": "figur:noah:ruhig:winken"
+              "bild": "figur:lehrer:froh:geben",
+              "text": "Hilfe kommt"
             },
             {
-              "bild": "figur:noah:ruhig:melden"
-            },
-            {
-              "bild": "figur:lehrer:froh:geben"
-            },
-            {
-              "bild": "figur:noah:froh:jubeln"
+              "bild": "figur:noah:froh:jubeln",
+              "text": "Danke"
             }
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Male ein Danke-Bild für jemanden, der dir hilft.",
+          "symbole": [
+            "malen"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 7
         }
       ],
       "lehrer": {
@@ -5061,7 +5172,7 @@
     "fr": {
       "titel": "Je t’aide – tu m’aides",
       "untertitel": "Petits services en classe, demander de l’aide et dire merci",
-      "anleitung": "Imprimer les cartes deux fois ; un jeu sert de cartes de services sur un panneau. Page 2 : les enfants découpent les six images et les collent dans l’ordre : comment demander de l’aide.",
+      "anleitung": "Imprimer les cartes deux fois ; un jeu sert de cartes de services sur un panneau. Page 2 : les enfants découpent les quatre images et les collent dans l’ordre : comment demander de l’aide.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -5097,7 +5208,7 @@
             },
             {
               "bild": "figur:lehrer:froh:winken",
-              "titel": "l’enseignante"
+              "titel": "l’enseignant"
             }
           ],
           "hoehe": 235
@@ -5117,24 +5228,35 @@
           "art": "schneiden_kleben",
           "bilder": [
             {
-              "bild": "figur:noah:traurig"
+              "bild": "figur:noah:traurig",
+              "text": "Besoin d’aide"
             },
             {
-              "bild": "figur:noah:ruhig:zeigen"
+              "bild": "figur:noah:ruhig:melden",
+              "text": "Je lève la main"
             },
             {
-              "bild": "figur:noah:ruhig:winken"
+              "bild": "figur:lehrer:froh:geben",
+              "text": "L’aide arrive"
             },
             {
-              "bild": "figur:noah:ruhig:melden"
-            },
-            {
-              "bild": "figur:lehrer:froh:geben"
-            },
-            {
-              "bild": "figur:noah:froh:jubeln"
+              "bild": "figur:noah:froh:jubeln",
+              "text": "Merci"
             }
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine un merci pour quelqu’un qui t’aide.",
+          "symbole": [
+            "malen"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 7
         }
       ],
       "lehrer": {
@@ -5468,12 +5590,12 @@
               "titel": "der Regenbogen"
             },
             {
-              "bild": "motiv:rosine",
-              "titel": "die Rosine"
+              "bild": "motiv:clown",
+              "titel": "der Clown"
             },
             {
-              "bild": "motiv:wasserglas",
-              "titel": "das Sprudelwasser"
+              "bild": "motiv:plaetzchen",
+              "titel": "das Plätzchen"
             },
             {
               "bild": "motiv:freunde",
@@ -5763,11 +5885,11 @@
     "fr": {
       "titel": "Quand la joie est là",
       "untertitel": "Reconnaître la joie, la montrer et la partager avec les autres",
-      "anleitung": "Imprimer les cartes deux fois pour les discussions et le memory : qu’est-ce qui te rend joyeux ? Page 2 : l’enfant entoure ce qui le rend joyeux, raconte la bande dessinée et dessine la fin. La fiche du chercheur sur les raisins secs est une page à part.",
+      "anleitung": "Imprimer les cartes deux fois pour les discussions et le memory : qu’est-ce qui te donne de la joie ? Page 2 : l’enfant entoure ce qui lui donne de la joie, raconte la bande dessinée et dessine la fin. La fiche du chercheur sur les raisins secs est une page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Montre ce qui te rend joyeux.",
+          "text": "Montre ce qui te donne de la joie.",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -5798,12 +5920,12 @@
               "titel": "l’arc-en-ciel"
             },
             {
-              "bild": "motiv:rosine",
-              "titel": "les raisins secs"
+              "bild": "motiv:clown",
+              "titel": "le clown"
             },
             {
-              "bild": "motiv:wasserglas",
-              "titel": "l’eau pétillante"
+              "bild": "motiv:plaetzchen",
+              "titel": "le biscuit"
             },
             {
               "bild": "motiv:freunde",
@@ -5821,7 +5943,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Qu’est-ce qui te rend joyeux ? Entoure.",
+          "text": "Qu’est-ce qui te donne de la joie ? Entoure.",
           "symbole": [
             "einkreisen",
             "zeigen"
@@ -6204,7 +6326,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Zeig: Was tröstet?",
+          "text": "Zeig und sag: Was gehört zur Traurigkeit?",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -6279,8 +6401,8 @@
               "text": "ein Lied"
             },
             {
-              "bild": "motiv:regenschirm",
-              "text": "der Schirm"
+              "bild": "motiv:katze",
+              "text": "die Katze"
             }
           ]
         },
@@ -6523,7 +6645,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Montre : qu’est-ce qui console ?",
+          "text": "Montre et dis : qu’est-ce qui va avec la tristesse ?",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -6598,8 +6720,8 @@
               "text": "une chanson"
             },
             {
-              "bild": "motiv:regenschirm",
-              "text": "le parapluie"
+              "bild": "motiv:katze",
+              "text": "le chat"
             }
           ]
         },
@@ -6948,7 +7070,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Zeig: Was hilft, wenn die Wut kommt?",
+          "text": "Zeig und sag: Was gehört zur Wut?",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -7071,8 +7193,8 @@
               "text": "die Schildkröte"
             },
             {
-              "bild": "icon:run",
-              "text": "stampfen"
+              "bild": "motiv:wasserglas",
+              "text": "Wasser trinken"
             },
             {
               "bild": "figur:lehrerin:ruhig",
@@ -7133,7 +7255,7 @@
               "art": "bewegung",
               "titel": "Stopp – atmen – sagen",
               "dauer": "10 Min.",
-              "text": "Die Kinder stampfen wütend durch den Raum. Auf das Glockenzeichen strecken alle die Stopp-Hand aus, atmen dreimal tief ein und aus und sagen laut: „Ich bin wütend.“ Mehrmals wiederholen, bis der Ablauf sitzt.",
+              "text": "Die Kinder gehen mit schweren Schritten durch den Raum, wie ein wütender Riese. Auf das Glockenzeichen strecken alle die Stopp-Hand aus, atmen dreimal tief ein und aus und sagen laut: „Ich bin wütend.“ Mehrmals wiederholen, bis der Ablauf sitzt.",
               "material": "Glocke"
             },
             {
@@ -7154,8 +7276,8 @@
               "art": "ruhe",
               "titel": "Unsere Wut-Ecke",
               "dauer": "15 Min.",
-              "text": "Die Kinder wählen, was in die Ecke kommt: Kissen zum Drücken, Knautschbälle, Papier zum Zerreißen, Bilder vom Ablauf Stopp – atmen – sagen. Die Regel: Hier darf ich wütend sein, ohne jemandem wehzutun. Die Ecke ist keine Strafe.",
-              "material": "Kissen, Knautschbälle, Papier, Bilder"
+              "text": "Die Kinder wählen, was in die Ecke kommt: Kissen zum Drücken, Knautschbälle, Knete zum Kneten, Bilder vom Ablauf Stopp – atmen – sagen. Die Regel: Hier darf ich wütend sein, ohne jemandem wehzutun. Die Ecke ist keine Strafe.",
+              "material": "Kissen, Knautschbälle, Knete, Bilder"
             },
             {
               "art": "sinne",
@@ -7279,7 +7401,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Montre : qu’est-ce qui aide quand la colère monte ?",
+          "text": "Montre et dis : qu’est-ce qui va avec la colère ?",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -7402,8 +7524,8 @@
               "text": "la tortue"
             },
             {
-              "bild": "icon:run",
-              "text": "taper du pied"
+              "bild": "motiv:wasserglas",
+              "text": "boire de l’eau"
             },
             {
               "bild": "figur:lehrerin:ruhig",
@@ -7464,7 +7586,7 @@
               "art": "bewegung",
               "titel": "Stop – respirer – dire",
               "dauer": "10 min",
-              "text": "Les enfants tapent des pieds en colère à travers la salle. Au signal de la cloche, tous tendent la main stop, respirent trois fois profondément et disent fort : « Je suis en colère. » Répéter plusieurs fois jusqu’à ce que ça devienne facile.",
+              "text": "Les enfants traversent la salle à pas lourds, comme un géant en colère. Au signal de la cloche, tous tendent la main stop, respirent trois fois profondément et disent fort : « Je suis en colère. » Répéter plusieurs fois jusqu’à ce que ça devienne facile.",
               "material": "cloche"
             },
             {
@@ -7485,8 +7607,8 @@
               "art": "ruhe",
               "titel": "Notre coin colère",
               "dauer": "15 min",
-              "text": "Les enfants choisissent ce qui va dans le coin : coussins à serrer, balles anti-stress, papier à déchirer, images du déroulement stop – respirer – dire. La règle : ici, je peux être en colère sans faire mal. Le coin n’est pas une punition.",
-              "material": "coussins, balles anti-stress, papier, images"
+              "text": "Les enfants choisissent ce qui va dans le coin : coussins à serrer, balles anti-stress, pâte à modeler à malaxer, images du déroulement stop – respirer – dire. La règle : ici, je peux être en colère sans faire mal. Le coin n’est pas une punition.",
+              "material": "coussins, balles anti-stress, pâte à modeler, images"
             },
             {
               "art": "sinne",
@@ -7712,11 +7834,11 @@
     "de": {
       "titel": "Angst und Mut",
       "untertitel": "Kleine Mutproben und das, was uns stark macht",
-      "anleitung": "Die Karten zweimal drucken und im Sitzkreis besprechen: Was macht Mut? Auf Seite 2 klebt das Kind seine Mut-Treppe (ansehen – zuschauen – mit Hand – allein; Bildplan beim Parcours) und kreist ein, wie es sich fühlt, wenn es sich traut. Das Forscherblatt zum Wasserbecher gibt es als Zusatzseite.",
+      "anleitung": "Die Karten zweimal drucken und im Sitzkreis besprechen: Was macht Mut? Auf Seite 2 klebt das Kind seine Mut-Treppe (ansehen – zuschauen – an der Hand – allein; Bildplan beim Parcours) und kreist ein, wie es sich fühlt, wenn es sich traut. Das Forscherblatt zum Wasserbecher gibt es als Zusatzseite.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Zeig: Was macht Mut?",
+          "text": "Schau, zeig und sag: Was ist das?",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -7790,7 +7912,7 @@
             },
             {
               "bild": "motiv:kind-troesten",
-              "text": "mit Hand"
+              "text": "an der Hand"
             },
             {
               "bild": "figur:lea:stolz:jubeln",
@@ -7878,7 +8000,7 @@
               "art": "bewegung",
               "titel": "Mut-Parcours",
               "dauer": "20 Min.",
-              "text": "Kleine Stationen: über eine Bank balancieren, durch einen Tunnel kriechen, von einem niedrigen Kasten auf die Matte springen. Jedes Kind wählt selbst, wie weit es geht – mit Hand oder allein. Jeder Versuch wird anerkannt.",
+              "text": "Kleine Stationen: über eine Bank balancieren, durch einen Tunnel kriechen, von einem niedrigen Kasten auf die Matte springen. Jedes Kind wählt selbst, wie weit es geht – an der Hand oder allein. Jeder Versuch wird anerkannt.",
               "material": "Bank, Kriechtunnel, niedriger Kasten, weiche Matten"
             },
             {
@@ -7945,7 +8067,7 @@
             "p2": "Eine Mut-Treppe mit drei kleinen Schritten planen und einem Kind Mut machen."
           },
           "zugang": [
-            "Kleine Schritte mit Bildplan: Station ansehen, zuschauen, mit Hand, allein.",
+            "Kleine Schritte mit Bildplan: Station ansehen, zuschauen, an der Hand, allein.",
             "Zuschauen zählt als Schritt; nie überreden, nie auslachen lassen.",
             "Etwas zum Festhalten (Mut-Stein, Kuscheltier); die Taschenlampe nur auf Wunsch."
           ],
@@ -8016,7 +8138,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Montre : qu’est-ce qui donne du courage ?",
+          "text": "Regarde, montre et dis : qu’est-ce que c’est ?",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -8036,7 +8158,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse"
+              "titel": "le gobelet"
             },
             {
               "bild": "motiv:bett",
@@ -8090,7 +8212,7 @@
             },
             {
               "bild": "motiv:kind-troesten",
-              "text": "avec la main"
+              "text": "par la main"
             },
             {
               "bild": "figur:lea:stolz:jubeln",
@@ -8118,10 +8240,10 @@
           "modus": "einkreisen",
           "spalten": 4,
           "woerter": [
-            "j’ai peur",
-            "excité",
-            "fier",
-            "content"
+            "la peur",
+            "l’excitation",
+            "la fierté",
+            "la joie"
           ]
         }
       ],
@@ -8178,7 +8300,7 @@
               "art": "bewegung",
               "titel": "Parcours du courage",
               "dauer": "20 min",
-              "text": "Petites stations : marcher en équilibre sur un banc, ramper dans un tunnel, sauter d’un caisson bas sur un tapis. Chaque enfant choisit jusqu’où il va – avec la main ou seul. Chaque essai est reconnu.",
+              "text": "Petites stations : marcher en équilibre sur un banc, ramper dans un tunnel, sauter d’un caisson bas sur un tapis. Chaque enfant choisit jusqu’où il va – par la main ou seul. Chaque essai est reconnu.",
               "material": "banc, tunnel, caisson bas, tapis mous"
             },
             {
@@ -8245,7 +8367,7 @@
             "p2": "Planifier un escalier du courage en trois petits pas et encourager un enfant."
           },
           "zugang": [
-            "Petits pas avec planning en images : voir la station, regarder, avec la main, seul.",
+            "Petits pas avec planning en images : voir la station, regarder, par la main, seul.",
             "Regarder compte comme un pas ; ne jamais forcer ni laisser se moquer.",
             "Quelque chose à tenir (pierre du courage, peluche) ; lampe de poche seulement sur demande."
           ],
@@ -11796,22 +11918,28 @@
           "art": "schneiden_kleben",
           "bilder": [
             {
-              "bild": "motiv:waschbecken"
+              "bild": "motiv:waschbecken",
+              "text": "Wasser"
             },
             {
-              "bild": "motiv:seife"
+              "bild": "motiv:seife",
+              "text": "Seife"
             },
             {
-              "bild": "icon:hand-move"
+              "bild": "icon:hand-move",
+              "text": "reiben"
             },
             {
-              "bild": "icon:droplet"
+              "bild": "icon:droplet",
+              "text": "abspülen"
             },
             {
-              "bild": "motiv:handtuch"
+              "bild": "motiv:handtuch",
+              "text": "abtrocknen"
             },
             {
-              "bild": "icon:sparkles"
+              "bild": "icon:sparkles",
+              "text": "sauber"
             }
           ]
         }
@@ -12056,22 +12184,28 @@
           "art": "schneiden_kleben",
           "bilder": [
             {
-              "bild": "motiv:waschbecken"
+              "bild": "motiv:waschbecken",
+              "text": "l’eau"
             },
             {
-              "bild": "motiv:seife"
+              "bild": "motiv:seife",
+              "text": "le savon"
             },
             {
-              "bild": "icon:hand-move"
+              "bild": "icon:hand-move",
+              "text": "frotter"
             },
             {
-              "bild": "icon:droplet"
+              "bild": "icon:droplet",
+              "text": "rincer"
             },
             {
-              "bild": "motiv:handtuch"
+              "bild": "motiv:handtuch",
+              "text": "essuyer"
             },
             {
-              "bild": "icon:sparkles"
+              "bild": "icon:sparkles",
+              "text": "propre"
             }
           ]
         }

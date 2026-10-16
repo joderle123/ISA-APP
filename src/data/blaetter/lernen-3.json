@@ -1173,7 +1173,7 @@
         {
           "art": "info",
           "symbol": "merke",
-          "titel": "Pour comparer sûrement",
+          "titel": "Pour comparer sans te tromper",
           "punkte": [
             "Signe par signe, de gauche à droite.",
             "Suivre la ligne avec le doigt ou une règle.",
@@ -1292,7 +1292,7 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes repèrent des détails sur des images, des listes et des étiquettes et distinguent sûrement si deux choses sont pareilles ou seulement semblables.",
+        "ziel": "Les jeunes repèrent des détails sur des images, des listes et des étiquettes et distinguent à coup sûr si deux choses sont pareilles ou seulement semblables.",
         "ablauf": [
           "Entrée (5 min) : montrer deux objets presque identiques (p. ex. deux câbles). « Qu’est-ce qui change ? »",
           "Exercices 1 et 2 (10 min) : comparer ligne par ligne avec une règle.",
@@ -1734,7 +1734,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Trier, c’est mettre ensemble ce qui va ensemble. On peut trier par sorte (tout ce qui se mange), par taille, par couleur ou par endroit (frigo, étagère)."
+          "text": "Trier, c’est mettre ensemble ce qui va ensemble. On peut trier par type (tout ce qui se mange), par taille, par couleur ou par endroit (frigo, étagère)."
         },
         {
           "art": "aufgabe",
@@ -1995,13 +1995,13 @@
         },
         {
           "art": "aufgabe",
-          "text": "Qu’est-ce qui ne va pas avec les autres ? Écris-le et dis ce que les autres ont en commun."
+          "text": "Quel est l’intrus ? Écris-le et dis ce que les autres ont en commun."
         },
         {
           "art": "tabelle",
           "spalten": [
             "Série",
-            "Ne va pas",
+            "L’intrus",
             "Les autres sont …"
           ],
           "beispiel": [
@@ -4135,8 +4135,7 @@
                       87,
                       14
                     ]
-                  ],
-                  "fuellung": true
+                  ]
                 },
                 {
                   "t": "vieleck",
@@ -4157,7 +4156,8 @@
                       102,
                       14
                     ]
-                  ]
+                  ],
+                  "fuellung": true
                 },
                 {
                   "t": "vieleck",
@@ -4178,34 +4178,34 @@
                       117,
                       14
                     ]
-                  ],
-                  "fuellung": true
-                },
-                {
-                  "t": "vieleck",
-                  "punkte": [
-                    [
-                      132,
-                      3
-                    ],
-                    [
-                      143,
-                      3
-                    ],
-                    [
-                      143,
-                      14
-                    ],
-                    [
-                      132,
-                      14
-                    ]
                   ]
                 },
                 {
                   "t": "vieleck",
                   "punkte": [
                     [
+                      132,
+                      3
+                    ],
+                    [
+                      143,
+                      3
+                    ],
+                    [
+                      143,
+                      14
+                    ],
+                    [
+                      132,
+                      14
+                    ]
+                  ],
+                  "fuellung": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
                       147,
                       3
                     ],
@@ -4221,8 +4221,7 @@
                       147,
                       14
                     ]
-                  ],
-                  "fuellung": true
+                  ]
                 },
                 {
                   "t": "text",
@@ -4304,26 +4303,8 @@
                   "ton": "grau"
                 },
                 {
-                  "t": "vieleck",
-                  "punkte": [
-                    [
-                      102,
-                      34
-                    ],
-                    [
-                      113,
-                      34
-                    ],
-                    [
-                      107.5,
-                      23
-                    ]
-                  ],
-                  "fuellung": true
-                },
-                {
                   "t": "flaeche",
-                  "x": 117,
+                  "x": 102,
                   "y": 23,
                   "b": 11,
                   "h": 11,
@@ -4334,15 +4315,15 @@
                   "t": "vieleck",
                   "punkte": [
                     [
-                      132,
+                      117,
                       34
                     ],
                     [
-                      143,
+                      128,
                       34
                     ],
                     [
-                      137.5,
+                      122.5,
                       23
                     ]
                   ],
@@ -4350,12 +4331,30 @@
                 },
                 {
                   "t": "flaeche",
-                  "x": 147,
+                  "x": 132,
                   "y": 23,
                   "b": 11,
                   "h": 11,
                   "rx": 5.5,
                   "ton": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      147,
+                      34
+                    ],
+                    [
+                      158,
+                      34
+                    ],
+                    [
+                      152.5,
+                      23
+                    ]
+                  ],
+                  "fuellung": true
                 }
               ]
             }
@@ -6948,8 +6947,7 @@
                       87,
                       14
                     ]
-                  ],
-                  "fuellung": true
+                  ]
                 },
                 {
                   "t": "vieleck",
@@ -6970,7 +6968,8 @@
                       102,
                       14
                     ]
-                  ]
+                  ],
+                  "fuellung": true
                 },
                 {
                   "t": "vieleck",
@@ -6991,34 +6990,34 @@
                       117,
                       14
                     ]
-                  ],
-                  "fuellung": true
-                },
-                {
-                  "t": "vieleck",
-                  "punkte": [
-                    [
-                      132,
-                      3
-                    ],
-                    [
-                      143,
-                      3
-                    ],
-                    [
-                      143,
-                      14
-                    ],
-                    [
-                      132,
-                      14
-                    ]
                   ]
                 },
                 {
                   "t": "vieleck",
                   "punkte": [
                     [
+                      132,
+                      3
+                    ],
+                    [
+                      143,
+                      3
+                    ],
+                    [
+                      143,
+                      14
+                    ],
+                    [
+                      132,
+                      14
+                    ]
+                  ],
+                  "fuellung": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
                       147,
                       3
                     ],
@@ -7034,8 +7033,7 @@
                       147,
                       14
                     ]
-                  ],
-                  "fuellung": true
+                  ]
                 },
                 {
                   "t": "text",
@@ -7117,26 +7115,8 @@
                   "ton": "grau"
                 },
                 {
-                  "t": "vieleck",
-                  "punkte": [
-                    [
-                      102,
-                      34
-                    ],
-                    [
-                      113,
-                      34
-                    ],
-                    [
-                      107.5,
-                      23
-                    ]
-                  ],
-                  "fuellung": true
-                },
-                {
                   "t": "flaeche",
-                  "x": 117,
+                  "x": 102,
                   "y": 23,
                   "b": 11,
                   "h": 11,
@@ -7147,15 +7127,15 @@
                   "t": "vieleck",
                   "punkte": [
                     [
-                      132,
+                      117,
                       34
                     ],
                     [
-                      143,
+                      128,
                       34
                     ],
                     [
-                      137.5,
+                      122.5,
                       23
                     ]
                   ],
@@ -7163,12 +7143,30 @@
                 },
                 {
                   "t": "flaeche",
-                  "x": 147,
+                  "x": 132,
                   "y": 23,
                   "b": 11,
                   "h": 11,
                   "rx": 5.5,
                   "ton": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      147,
+                      34
+                    ],
+                    [
+                      158,
+                      34
+                    ],
+                    [
+                      152.5,
+                      23
+                    ]
+                  ],
+                  "fuellung": true
                 }
               ]
             }
@@ -7176,7 +7174,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "À deux : l’un·e invente une suite – dessinée ou tapée dans les mains. L’autre la reproduit exactement.",
+          "text": "À deux : une personne invente une suite – dessinée ou tapée dans les mains. L’autre la reproduit exactement.",
           "hinweis": "T = taper, P = frapper du pied",
           "symbole": [
             "partner"
@@ -9032,7 +9030,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Zeichne die Figur im leeren Karo daneben genau nach. Zähl die Kästchen."
+          "text": "Zeichne die Figur im leeren Karo daneben genau nach.",
+          "hinweis": "Zähl dabei die Kästchen."
         },
         {
           "art": "geo",
@@ -9162,7 +9161,7 @@
               "titel": "Mein Spind"
             },
             {
-              "bild": "icon:backpack",
+              "bild": "icon:mailbox",
               "titel": "Mein Fach"
             }
           ]
@@ -9200,7 +9199,7 @@
     },
     "fr": {
       "titel": "Travailler d’une main sûre",
-      "untertitel": "Couper sur la ligne, tracer à la règle, remplir un formulaire dans des cases : c’est utile à l’atelier, au bureau et à la commune.",
+      "untertitel": "Couper sur la ligne, tracer à la règle, remplir un formulaire dans des cases : c’est utile à l’atelier, au bureau et dans les administrations.",
       "bausteine": [
         {
           "art": "info",
@@ -10436,7 +10435,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Redessine la figure exactement dans le quadrillage vide à côté. Compte les carreaux."
+          "text": "Redessine la figure exactement dans le quadrillage vide à côté.",
+          "hinweis": "Compte les carreaux en même temps."
         },
         {
           "art": "geo",
@@ -10551,7 +10551,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Découpe les étiquettes exactement sur la ligne. Écris ton nom dessus – pour ton casier ou ton casier de classe.",
+          "text": "Découpe les étiquettes exactement sur la ligne. Écris ton nom dessus – pour ton casier ou ta case.",
           "symbole": [
             "schneiden",
             "schreiben"
@@ -10566,8 +10566,8 @@
               "titel": "Mon casier"
             },
             {
-              "bild": "icon:backpack",
-              "titel": "Mon casier de classe"
+              "bild": "icon:mailbox",
+              "titel": "Ma case"
             }
           ]
         }
@@ -10581,7 +10581,7 @@
           "Exercice 3 (10 min) : remplir le formulaire au calme ; les majuscules d’imprimerie sont permises.",
           "Exercices 4 et 5 (10 min) : recopier la figure, puis découper et coller vraiment l’étiquette sur le casier."
         ],
-        "hintergrund": "La motricité fine et la coordination œil-main sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). S’ils restent fragiles à 14 ou 17 ans, les conséquences sont réelles : formulaires illisibles, travail d’atelier imprécis, et beaucoup de jeunes évitent par honte d’écrire ou de bricoler. Des objectifs petits et clairs, avec un succès visible tout de suite, renforcent le sentiment d’efficacité personnelle et l’intérêt (Bandura & Schunk, 1981). Les tâches sont donc courtes et utiles : un formulaire rempli et une étiquette sur son propre casier sont de vrais résultats. En cas de difficultés motrices nettes, demander l’avis d’un·e ergothérapeute.",
+        "hintergrund": "La motricité fine et la coordination œil-main sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). S’ils restent fragiles à 14 ou 17 ans, les conséquences sont réelles : formulaires illisibles, travail d’atelier imprécis, et beaucoup de jeunes évitent par honte d’écrire ou de bricoler. Des objectifs petits et clairs, avec un succès visible tout de suite, renforcent le sentiment d’efficacité personnelle et l’intérêt (Bandura & Schunk, 1981). Les tâches sont donc courtes et utiles : un formulaire rempli et une étiquette sur son propre casier sont de vrais résultats. En cas de difficultés motrices nettes, demander l’avis d’un service d’ergothérapie.",
         "quellen": [
           "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
           "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.",

@@ -93,12 +93,13 @@
         },
         {
           "art": "aufgabe",
-          "text": "Und du? Kreise ein. Frag dann ein Kind und schreib auf.",
+          "text": "Und du? Kreise in jeder Reihe ein Bild ein.",
           "symbole": [
             "einkreisen",
             "partner",
             "schreiben"
-          ]
+          ],
+          "hinweis": "Frag dann ein Kind, was es mag, und schreib den Satz auf."
         },
         {
           "art": "bilder",
@@ -252,12 +253,13 @@
         },
         {
           "art": "aufgabe",
-          "text": "Et toi ? Entoure ton choix. Demande à un enfant et écris.",
+          "text": "Et toi ? Entoure une image par ligne.",
           "symbole": [
             "einkreisen",
             "partner",
             "schreiben"
-          ]
+          ],
+          "hinweis": "Demande ensuite à un enfant ce qu’il aime et écris la phrase."
         },
         {
           "art": "bilder",
@@ -755,7 +757,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Zwei Kinder, ein Stift. Male oder schreibe eine faire Idee.",
+          "text": "Zwei Kinder wollen denselben Stift. Male oder schreibe eine faire Idee.",
           "symbole": [
             "malen",
             "schreiben"
@@ -885,7 +887,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deux enfants, un crayon. Dessine ou écris une idée juste.",
+          "text": "Deux enfants veulent le même crayon. Dessine ou écris une idée juste.",
           "symbole": [
             "malen",
             "schreiben"

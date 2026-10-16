@@ -3,41 +3,119 @@
     "id": "zuerst-dann",
     "bereich": "alltag",
     "thema": "uebergaenge",
-    "stufen": ["C1"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "C1"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "15–20 Min.",
-    "eldib": ["V-8", "V-10", "SOZ-7", "KOG-31"],
-    "schlagworte": ["Zuerst-dann-Tafel", "Übergänge", "Bildkarten", "Visualisierung", "Spielschule"],
+    "eldib": [
+      "V-8",
+      "V-10",
+      "SOZ-7",
+      "KOG-31"
+    ],
+    "schlagworte": [
+      "Zuerst-dann-Tafel",
+      "Übergänge",
+      "Bildkarten",
+      "Visualisierung",
+      "Spielschule"
+    ],
     "bild": "icon:arrow-big-right",
-    "verwandt": ["mein-tag-in-bildern"],
+    "verwandt": [
+      "mein-tag-in-bildern"
+    ],
     "de": {
       "titel": "Zuerst – dann",
       "anleitung": "Karten und Tafel ausschneiden, laminieren, mit Klett versehen. Auf „Zuerst“ kommt die Aufgabe, auf „Dann“ etwas, das das Kind gern tut. Dazu sagen: „Zuerst Hände waschen, dann essen.“",
       "bausteine": [
-        { "art": "aufgabe", "text": "Male die Karten an. Schneide sie aus.", "hinweis": "Auf die leere Karte malst du, was du am liebsten machst.", "symbole": ["malen", "schneiden"] },
+        {
+          "art": "aufgabe",
+          "text": "Male die Karten an. Schneide sie aus.",
+          "hinweis": "Auf die leere Karte malst du, was du am liebsten machst.",
+          "symbole": [
+            "malen",
+            "schneiden"
+          ]
+        },
         {
           "art": "karten",
           "spalten": 4,
           "karten": [
-            { "titel": "aufräumen", "bild": "icon:basket" },
-            { "titel": "Hände waschen", "bild": "icon:droplet" },
-            { "titel": "anziehen", "bild": "icon:shirt" },
-            { "titel": "Toilette", "bild": "icon:toilet-paper" },
-            { "titel": "Kreis", "bild": "icon:users-group" },
-            { "titel": "essen", "bild": "icon:tools-kitchen-2" },
-            { "titel": "draußen spielen", "bild": "icon:ball-football" },
-            { "titel": "malen", "bild": "icon:palette" },
-            { "titel": "Buch anschauen", "bild": "icon:book" },
-            { "titel": "Musik", "bild": "icon:music" },
-            { "titel": "puzzeln", "bild": "icon:puzzle" },
+            {
+              "titel": "aufräumen",
+              "bild": "icon:basket"
+            },
+            {
+              "titel": "Hände waschen",
+              "bild": "icon:droplet"
+            },
+            {
+              "titel": "anziehen",
+              "bild": "icon:shirt"
+            },
+            {
+              "titel": "Toilette",
+              "bild": "icon:toilet-paper"
+            },
+            {
+              "titel": "Kreis",
+              "bild": "icon:users-group"
+            },
+            {
+              "titel": "essen",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "draußen spielen",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "malen",
+              "bild": "icon:palette"
+            },
+            {
+              "titel": "Buch anschauen",
+              "bild": "icon:book"
+            },
+            {
+              "titel": "Musik",
+              "bild": "icon:music"
+            },
+            {
+              "titel": "puzzeln",
+              "bild": "icon:puzzle"
+            },
             {}
           ]
         },
-        { "art": "aufgabe", "text": "Was kommt zuerst? Was kommt dann? Lege die Karten.", "symbole": ["zeigen", "sprechen"] },
+        {
+          "art": "aufgabe",
+          "text": "Was kommt zuerst? Was kommt dann? Lege die Karten.",
+          "symbole": [
+            "zeigen",
+            "sprechen"
+          ]
+        },
         {
           "art": "spalten",
-          "links": [{ "art": "feld", "label": "Zuerst", "hoehe": 4 }],
-          "rechts": [{ "art": "feld", "label": "Dann", "hoehe": 4 }]
+          "links": [
+            {
+              "art": "feld",
+              "label": "Zuerst",
+              "hoehe": 4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Dann",
+              "hoehe": 4
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -80,28 +158,87 @@
           "art": "aufgabe",
           "text": "Colorie les cartes. Découpe-les.",
           "hinweis": "Sur la carte vide, tu dessines ce que tu préfères faire.",
-          "symbole": ["malen", "schneiden"]
+          "symbole": [
+            "malen",
+            "schneiden"
+          ]
         },
         {
           "art": "karten",
           "spalten": 4,
           "karten": [
-            { "titel": "ranger", "bild": "icon:basket" },
-            { "titel": "se laver les mains", "bild": "icon:droplet" },
-            { "titel": "s’habiller", "bild": "icon:shirt" },
-            { "titel": "toilettes", "bild": "icon:toilet-paper" },
-            { "titel": "cercle", "bild": "icon:users-group" },
-            { "titel": "manger", "bild": "icon:tools-kitchen-2" },
-            { "titel": "jouer dehors", "bild": "icon:ball-football" },
-            { "titel": "dessiner", "bild": "icon:palette" },
-            { "titel": "regarder un livre", "bild": "icon:book" },
-            { "titel": "musique", "bild": "icon:music" },
-            { "titel": "faire un puzzle", "bild": "icon:puzzle" },
+            {
+              "titel": "ranger",
+              "bild": "icon:basket"
+            },
+            {
+              "titel": "se laver les mains",
+              "bild": "icon:droplet"
+            },
+            {
+              "titel": "s’habiller",
+              "bild": "icon:shirt"
+            },
+            {
+              "titel": "toilettes",
+              "bild": "icon:toilet-paper"
+            },
+            {
+              "titel": "cercle",
+              "bild": "icon:users-group"
+            },
+            {
+              "titel": "manger",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "jouer dehors",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "dessiner",
+              "bild": "icon:palette"
+            },
+            {
+              "titel": "regarder un livre",
+              "bild": "icon:book"
+            },
+            {
+              "titel": "musique",
+              "bild": "icon:music"
+            },
+            {
+              "titel": "faire un puzzle",
+              "bild": "icon:puzzle"
+            },
             {}
           ]
         },
-        { "art": "aufgabe", "text": "Qu’est-ce qui vient d’abord ? Et ensuite ? Pose les cartes.", "symbole": ["zeigen", "sprechen"] },
-        { "art": "spalten", "links": [{ "art": "feld", "label": "D’abord", "hoehe": 4 }], "rechts": [{ "art": "feld", "label": "Ensuite", "hoehe": 4 }] }
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui vient d’abord ? Et ensuite ? Pose les cartes.",
+          "symbole": [
+            "zeigen",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "feld",
+              "label": "D’abord",
+              "hoehe": 4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ensuite",
+              "hoehe": 4
+            }
+          ]
+        }
       ],
       "lehrer": {
         "ziel": "Les enfants voient sur un tableau d’images ce qu’il faut faire maintenant et ce qui vient après. Les transitions entre deux activités se passent ainsi avec moins de mots et moins de résistance.",
@@ -140,45 +277,143 @@
     "id": "neue-klasse",
     "bereich": "alltag",
     "thema": "uebergaenge",
-    "stufen": ["C2"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "30–40 Min.",
-    "eldib": ["SOZ-15", "K-13", "K-14"],
-    "schlagworte": ["neue Klasse", "Schulanfang", "sich vorstellen", "Kontakt aufnehmen", "Mitspielen"],
+    "eldib": [
+      "SOZ-15",
+      "K-13",
+      "K-14"
+    ],
+    "schlagworte": [
+      "neue Klasse",
+      "Schulanfang",
+      "sich vorstellen",
+      "Kontakt aufnehmen",
+      "Mitspielen"
+    ],
     "bild": "icon:friends",
-    "verwandt": ["wechsel-in-eine-neue-schule", "neustart"],
+    "verwandt": [
+      "wechsel-in-eine-neue-schule",
+      "neustart"
+    ],
     "de": {
       "titel": "Neue Klasse, neue Leute",
       "untertitel": "Am Anfang ist vieles neu. Das ist für fast alle Kinder aufregend.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Worauf freust du dich? Was macht dir Sorgen? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "Worauf freust du dich? Was macht dir Sorgen? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "spalten",
           "links": [
-            { "art": "ankreuzen", "titel": "Ich freue mich auf …", "items": ["neue Kinder.", "neue Spiele in der Pause.", "mein neues Klassenzimmer."], "frei": 1 }
+            {
+              "art": "ankreuzen",
+              "titel": "Ich freue mich auf …",
+              "items": [
+                "neue Kinder.",
+                "neue Spiele in der Pause.",
+                "mein neues Klassenzimmer."
+              ],
+              "frei": 1
+            }
           ],
           "rechts": [
-            { "art": "ankreuzen", "titel": "Ich mache mir Sorgen, …", "items": ["dass ich niemanden kenne.", "dass keiner mit mir spielt.", "dass ich mich verlaufe."], "frei": 1 }
+            {
+              "art": "ankreuzen",
+              "titel": "Ich mache mir Sorgen, …",
+              "items": [
+                "dass ich niemanden kenne.",
+                "dass keiner mit mir spielt.",
+                "dass ich mich verlaufe."
+              ],
+              "frei": 1
+            }
           ]
         },
-        { "art": "aufgabe", "text": "So stellst du dich vor. Male und schreibe.", "symbole": ["malen", "schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "So stellst du dich vor. Male und schreibe.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
         {
           "art": "spalten",
           "verhaeltnis": "1:2",
-          "links": [{ "art": "feld", "label": "Das bin ich.", "hoehe": 3.5, "zeichnen": true }],
-          "rechts": [{ "art": "satzanfaenge", "items": ["Ich heiße …", "Ich spiele gern …", "Ich kann gut …"] }]
+          "links": [
+            {
+              "art": "feld",
+              "label": "Das bin ich.",
+              "hoehe": 3.5,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ich heiße …",
+                "Ich spiele gern …",
+                "Ich kann gut …"
+              ]
+            }
+          ]
         },
-        { "art": "aufgabe", "text": "Was antwortet das Mädchen? Schreibe in die Blase.", "symbole": ["lesen", "schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Was antwortet das Mädchen? Schreibe in die Blase.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
         {
           "art": "comic",
           "spalten": 2,
           "felder": [
-            { "figuren": ["figur:sami:ruhig:winken", "figur:lea:neutral"], "requisit": "icon:ball-football", "text": "Hallo, ich bin Yusuf. Darf ich mitspielen?", "sprecher": 0 },
-            { "figuren": ["figur:sami:ruhig", "figur:lea:ruhig"], "requisit": "icon:ball-football", "sprecher": 1 }
+            {
+              "figuren": [
+                "figur:sami:ruhig:winken",
+                "figur:lea:neutral"
+              ],
+              "requisit": "icon:ball-football",
+              "text": "Hallo, ich bin Yusuf. Darf ich mitspielen?",
+              "sprecher": 0
+            },
+            {
+              "figuren": [
+                "figur:sami:ruhig",
+                "figur:lea:ruhig"
+              ],
+              "requisit": "icon:ball-football",
+              "sprecher": 1
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Wen fragst du morgen? Und was fragst du?", "symbole": ["schreiben"] },
-        { "art": "satzanfaenge", "items": ["Morgen frage ich …"] }
+        {
+          "art": "aufgabe",
+          "text": "Wen fragst du morgen? Und was fragst du?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Morgen frage ich …"
+          ]
+        }
       ],
       "lehrer": {
         "ziel": "Die Kinder benennen, worauf sie sich in der neuen Klasse freuen und was ihnen Sorgen macht. Sie üben, sich vorzustellen und ein anderes Kind anzusprechen.",
@@ -216,14 +451,24 @@
       "titel": "Nouvelle classe, nouveaux copains",
       "untertitel": "Au début, tout est nouveau. C’est excitant pour presque tous.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Qu’est-ce qui te fait plaisir ? Qu’est-ce qui t’inquiète ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te fait plaisir ? Qu’est-ce qui t’inquiète ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "spalten",
           "links": [
             {
               "art": "ankreuzen",
               "titel": "J’ai hâte …",
-              "items": ["de rencontrer d’autres enfants.", "de jouer à de nouveaux jeux.", "de voir ma nouvelle classe."],
+              "items": [
+                "de rencontrer d’autres enfants.",
+                "de jouer à de nouveaux jeux.",
+                "de voir ma nouvelle classe."
+              ],
               "frei": 1
             }
           ],
@@ -231,34 +476,89 @@
             {
               "art": "ankreuzen",
               "titel": "Je m’inquiète …",
-              "items": ["de ne connaître personne.", "que personne ne joue avec moi.", "de me perdre."],
+              "items": [
+                "de ne connaître personne.",
+                "que personne ne joue avec moi.",
+                "de me perdre."
+              ],
               "frei": 1
             }
           ]
         },
-        { "art": "aufgabe", "text": "Voici comment tu te présentes. Dessine et écris.", "symbole": ["malen", "schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Voici comment tu te présentes. Dessine et écris.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
         {
           "art": "spalten",
           "verhaeltnis": "1:2",
-          "links": [{ "art": "feld", "label": "C’est moi.", "hoehe": 3.5, "zeichnen": true }],
-          "rechts": [{ "art": "satzanfaenge", "items": ["Je m’appelle …", "J’aime jouer …", "Je sais bien …"] }]
+          "links": [
+            {
+              "art": "feld",
+              "label": "C’est moi.",
+              "hoehe": 3.5,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Je m’appelle …",
+                "J’aime jouer …",
+                "Je sais bien faire …"
+              ]
+            }
+          ]
         },
-        { "art": "aufgabe", "text": "Que répond la fille ? Écris dans la bulle.", "symbole": ["lesen", "schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Que répond la fille ? Écris dans la bulle.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
         {
           "art": "comic",
           "spalten": 2,
           "felder": [
             {
-              "figuren": ["figur:sami:ruhig:winken", "figur:lea:neutral"],
+              "figuren": [
+                "figur:sami:ruhig:winken",
+                "figur:lea:neutral"
+              ],
               "requisit": "icon:ball-football",
               "text": "Salut, je m’appelle Yusuf. Je peux jouer avec vous ?",
               "sprecher": 0
             },
-            { "figuren": ["figur:sami:ruhig", "figur:lea:ruhig"], "requisit": "icon:ball-football", "sprecher": 1 }
+            {
+              "figuren": [
+                "figur:sami:ruhig",
+                "figur:lea:ruhig"
+              ],
+              "requisit": "icon:ball-football",
+              "sprecher": 1
+            }
           ]
         },
-        { "art": "aufgabe", "text": "À qui parles-tu demain ? Que demandes-tu ?", "symbole": ["schreiben"] },
-        { "art": "satzanfaenge", "items": ["Demain, je demande à …"] }
+        {
+          "art": "aufgabe",
+          "text": "À qui parles-tu demain ? Que demandes-tu ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Demain, je demande à …"
+          ]
+        }
       ],
       "lehrer": {
         "ziel": "Les enfants disent ce qui leur fait plaisir dans la nouvelle classe et ce qui les inquiète. Ils s’exercent à se présenter et à adresser la parole à un autre enfant.",
@@ -279,7 +579,11 @@
           "leichter": "Exercice 2 : seulement dessiner et se présenter à l’oral. Lire les débuts de phrases à voix haute.",
           "schwerer": "Chercher d’autres phrases pour aborder quelqu’un et les écrire."
         },
-        "impulse": ["Qu’est-ce qui te fait le plus plaisir ?", "Que peux-tu dire quand tu veux jouer avec les autres ?", "Que fais-tu si quelqu’un dit non ?"],
+        "impulse": [
+          "Qu’est-ce qui te fait le plus plaisir ?",
+          "Que peux-tu dire quand tu veux jouer avec les autres ?",
+          "Que fais-tu si quelqu’un dit non ?"
+        ],
         "tipps": [
           "Confier chaque nouvel arrivant à un parrain ou une marraine de la classe pour les premiers jours.",
           "Répéter chaque jour des jeux de prénoms la première semaine : quand on connaît les prénoms, on adresse plus facilement la parole."
@@ -293,13 +597,34 @@
     "id": "wechsel-in-eine-neue-schule",
     "bereich": "alltag",
     "thema": "uebergaenge",
-    "stufen": ["C3", "C4"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "45 Min.",
-    "eldib": ["V-24", "V-23", "K-15", "SOZ-26"],
-    "schlagworte": ["Schulwechsel", "Umzug", "Lycée", "Übergang", "Wenn-dann-Plan", "Unterstützung"],
+    "eldib": [
+      "V-24",
+      "V-23",
+      "K-15",
+      "SOZ-26"
+    ],
+    "schlagworte": [
+      "Schulwechsel",
+      "Umzug",
+      "Lycée",
+      "Übergang",
+      "Wenn-dann-Plan",
+      "Unterstützung"
+    ],
     "bild": "icon:school",
-    "verwandt": ["neue-klasse", "neustart"],
+    "verwandt": [
+      "neue-klasse",
+      "neustart"
+    ],
     "de": {
       "titel": "Wechsel in eine neue Schule",
       "untertitel": "Ob Umzug oder Wechsel ins Lycée: In einer neuen Schule ist vieles neu. Aber nicht alles.",
@@ -315,14 +640,37 @@
           "symbol": "wissen",
           "text": "Vor einem Schulwechsel sind fast alle Kinder aufgeregt. Das ist normal. Die Aufregung wird meistens kleiner, wenn du mehr über die neue Schule weißt und einen Plan hast."
         },
-        { "art": "aufgabe", "text": "Was bleibt, wenn du die Schule wechselst? Was wird neu? Worauf freust du dich?", "hinweis": "Denk an Menschen, Wege, Dinge, Hobbys – und an dich selbst.", "symbole": ["schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Was bleibt, wenn du die Schule wechselst? Was wird neu? Worauf freust du dich?",
+          "hinweis": "Denk an Menschen, Wege, Dinge, Hobbys – und an dich selbst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "tabelle",
-          "spalten": ["Das bleibt", "Das wird neu", "Darauf freue ich mich"],
+          "spalten": [
+            "Das bleibt",
+            "Das wird neu",
+            "Darauf freue ich mich"
+          ],
           "zeilen": 4,
-          "beispiel": ["meine Familie, mein Fußballverein", "der Schulweg mit dem Bus, meine Lehrerin", "der große Schulhof"]
+          "beispiel": [
+            "meine Familie, mein Fußballverein",
+            "der Schulweg mit dem Bus, meine Lehrerin",
+            "der große Schulhof"
+          ]
         },
-        { "art": "aufgabe", "text": "Was möchtest du über die neue Schule wissen? Kreuze an und ergänze.", "hinweis": "Stelle deine Fragen beim Kennenlerntag, deiner Lehrperson oder deinen Eltern.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Was möchtest du über die neue Schule wissen? Kreuze an und ergänze.",
+          "hinweis": "Stelle deine Fragen beim Kennenlerntag, deiner Lehrperson oder deinen Eltern.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -336,18 +684,52 @@
           ],
           "frei": 2
         },
-        { "art": "aufgabe", "text": "Was machst du, wenn es in den ersten Tagen schwierig wird? Schreibe Wenn-dann-Pläne.", "hinweis": "Ein Plan für einen schwierigen Moment hilft, im richtigen Augenblick zu handeln.", "symbole": ["schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Was machst du, wenn es in den ersten Tagen schwierig wird? Schreibe Wenn-dann-Pläne.",
+          "hinweis": "Ein Plan für einen schwierigen Moment hilft, im richtigen Augenblick zu handeln.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "wennDann",
           "zeilen": 2,
           "beispiele": [
-            { "wenn": "Wenn ich meinen Klassenraum nicht finde,", "dann": "frage ich ein Kind aus meiner Klasse oder eine Lehrperson." },
-            { "wenn": "Wenn ich in der Pause allein bin,", "dann": "gehe ich zu einer Gruppe und frage: „Was spielt ihr?“" }
+            {
+              "wenn": "Wenn ich meinen Klassenraum nicht finde,",
+              "dann": "frage ich ein Kind aus meiner Klasse oder eine Lehrperson."
+            },
+            {
+              "wenn": "Wenn ich in der Pause allein bin,",
+              "dann": "gehe ich zu einer Gruppe und frage: „Was spielt ihr?“"
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Wer hilft dir beim Wechsel? Schreibe Namen auf.", "symbole": ["schreiben"] },
-        { "art": "hand", "finger": ["Zu Hause", "Aus meiner alten Schule", "In der neuen Klasse", "Eine erwachsene Person in der Schule", "Noch jemand"] },
-        { "art": "skala", "frage": "Wie bereit fühlst du dich jetzt für den Wechsel?", "von": "noch gar nicht", "bis": "richtig bereit", "stufen": 11 }
+        {
+          "art": "aufgabe",
+          "text": "Wer hilft dir beim Wechsel? Schreibe Namen auf.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "Zu Hause",
+            "Aus meiner alten Schule",
+            "In der neuen Klasse",
+            "Eine erwachsene Person in der Schule",
+            "Noch jemand"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie bereit fühlst du dich jetzt für den Wechsel?",
+          "von": "noch gar nicht",
+          "bis": "richtig bereit",
+          "stufen": 11
+        }
       ],
       "lehrer": {
         "ziel": "Die Kinder bereiten sich auf einen Schulwechsel vor: Sie unterscheiden, was bleibt und was neu wird, sammeln offene Fragen und legen fest, was sie in schwierigen Momenten tun und wer ihnen hilft.",
@@ -400,26 +782,39 @@
           "art": "aufgabe",
           "text": "Qu’est-ce qui reste ? Qu’est-ce qui change ? Qu’est-ce qui te réjouit ?",
           "hinweis": "Pense aux personnes, aux trajets, aux objets, aux loisirs – et à toi-même.",
-          "symbole": ["schreiben"]
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "tabelle",
-          "spalten": ["Ça reste", "Ça devient nouveau", "Ce qui me fait plaisir"],
+          "spalten": [
+            "Ça reste",
+            "Ça devient nouveau",
+            "Ce qui me fait plaisir"
+          ],
           "zeilen": 4,
-          "beispiel": ["ma famille, mon club de foot", "le trajet en bus, mon enseignante", "la grande cour de récréation"]
+          "beispiel": [
+            "ma famille, mon club de foot",
+            "le trajet en bus, mon enseignante",
+            "la grande cour de récréation"
+          ]
         },
         {
           "art": "aufgabe",
           "text": "Que voudrais-tu savoir sur la nouvelle école ? Coche et complète.",
           "hinweis": "Pose tes questions lors de la journée d’accueil, à ton enseignant ou ton enseignante ou à tes parents.",
-          "symbole": ["ankreuzen", "schreiben"]
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
         },
         {
           "art": "ankreuzen",
           "spalten": 2,
           "items": [
             "Comment je vais à l’école ?",
-            "Qui sera mon enseignant·e ?",
+            "Qui sera mon enseignant ou mon enseignante ?",
             "Quels sont les horaires ?",
             "Où est-ce que je mange à midi ?",
             "Quelles règles y a-t-il là-bas ?",
@@ -431,18 +826,41 @@
           "art": "aufgabe",
           "text": "Que fais-tu quand c’est difficile pendant les premiers jours ? Écris des plans « si … alors ».",
           "hinweis": "Un plan pour un moment difficile aide à agir au bon moment.",
-          "symbole": ["schreiben"]
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "wennDann",
           "zeilen": 2,
           "beispiele": [
-            { "wenn": "Si je ne trouve pas ma salle de classe,", "dann": "je demande à un enfant de ma classe ou à un adulte de l’école." },
-            { "wenn": "Si je n’ai personne avec qui jouer à la récréation,", "dann": "je vais vers un groupe et je demande : « Vous jouez à quoi ? »" }
+            {
+              "wenn": "Si je ne trouve pas ma salle de classe,",
+              "dann": "je demande à un enfant de ma classe ou à un adulte de l’école."
+            },
+            {
+              "wenn": "Si je n’ai personne avec qui jouer à la récréation,",
+              "dann": "je vais vers un groupe et je demande : « Vous jouez à quoi ? »"
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Qui t’aide pour ce changement ? Écris des noms.", "symbole": ["schreiben"] },
-        { "art": "hand", "finger": ["À la maison", "De mon ancienne école", "Dans la nouvelle classe", "Un adulte à l’école", "Quelqu’un d’autre"] },
+        {
+          "art": "aufgabe",
+          "text": "Qui t’aide pour ce changement ? Écris des noms.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "À la maison",
+            "De mon ancienne école",
+            "Dans la nouvelle classe",
+            "Un adulte à l’école",
+            "Quelqu’un d’autre"
+          ]
+        },
         {
           "art": "skala",
           "frage": "À quel point te sens-tu en confiance pour ce changement ?",
@@ -488,38 +906,103 @@
     "id": "neustart",
     "bereich": "alltag",
     "thema": "uebergaenge",
-    "stufen": ["ES"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "45–50 Min.",
-    "eldib": ["SOZ-40", "V-24", "V-29", "V-32"],
-    "schlagworte": ["Übergang", "Lycée", "Praktikum", "Stärken", "Ziele", "WOOP", "Unterstützung"],
+    "eldib": [
+      "SOZ-40",
+      "V-24",
+      "V-29",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Übergang",
+      "Lycée",
+      "Praktikum",
+      "Stärken",
+      "Ziele",
+      "WOOP",
+      "Unterstützung"
+    ],
     "bild": "icon:rocket",
-    "verwandt": ["wechsel-in-eine-neue-schule", "neue-klasse"],
+    "verwandt": [
+      "wechsel-in-eine-neue-schule",
+      "neue-klasse"
+    ],
     "de": {
       "titel": "Neustart: Was nehme ich mit?",
       "untertitel": "Neues Lycée, neue Klasse, erstes Praktikum: Ein Neustart fängt nie bei null an. Du bringst Stärken, Erfahrungen und Menschen mit.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Welche Stärken bringst du mit? Kreuze die drei an, die am besten zu dir passen. Ergänze, was fehlt." },
+        {
+          "art": "aufgabe",
+          "text": "Welche Stärken bringst du mit? Kreuze die drei an, die am besten zu dir passen. Ergänze, was fehlt."
+        },
         {
           "art": "ankreuzen",
           "spalten": 3,
-          "items": ["neugierig", "kreativ", "mutig", "ausdauernd", "ehrlich", "hilfsbereit", "fair", "teamfähig", "humorvoll", "gut organisiert", "ruhig unter Druck", "mehrsprachig"],
+          "items": [
+            "neugierig",
+            "kreativ",
+            "mutig",
+            "ausdauernd",
+            "ehrlich",
+            "hilfsbereit",
+            "fair",
+            "teamfähig",
+            "humorvoll",
+            "gut organisiert",
+            "ruhig unter Druck",
+            "mehrsprachig"
+          ],
           "frei": 3
         },
-        { "art": "frage", "text": "Denk an einen Wechsel, den du schon geschafft hast. Welche Stärke hat dir damals geholfen – und wie?", "linien": 2 },
-        { "art": "aufgabe", "text": "Was nimmst du mit, was lässt du zurück, was probierst du neu?", "hinweis": "Ein Neustart ist auch eine Chance: Du kannst Gewohnheiten oder Rollen ablegen, die nicht mehr zu dir passen." },
         {
-          "art": "tabelle",
-          "spalten": ["Das nehme ich mit", "Das lasse ich zurück", "Das probiere ich neu"],
-          "zeilen": 3,
-          "beispiel": ["meinen Humor, den Kontakt zu Lena", "meinen Ruf als Klassenclown", "mich im Unterricht öfter melden"]
+          "art": "frage",
+          "text": "Denk an einen Wechsel, den du schon geschafft hast. Welche Stärke hat dir damals geholfen – und wie?",
+          "linien": 2
         },
-        { "art": "aufgabe", "text": "Wer unterstützt dich? Trage ein, an wen du dich wenden kannst.", "hinweis": "Im Lycée zum Beispiel: Klassenlehrer·in (Régent·e), SePAS, Éducateur·rice, Tutor·in. Im Praktikum: deine Betreuungsperson." },
+        {
+          "art": "aufgabe",
+          "text": "Was nimmst du mit, was lässt du zurück, was probierst du neu?",
+          "hinweis": "Ein Neustart ist auch eine Chance: Du kannst Gewohnheiten oder Rollen ablegen, die nicht mehr zu dir passen."
+        },
         {
           "art": "tabelle",
-          "spalten": ["Person oder Stelle", "Dabei kann sie helfen", "So erreiche ich sie"],
+          "spalten": [
+            "Das nehme ich mit",
+            "Das lasse ich zurück",
+            "Das probiere ich neu"
+          ],
           "zeilen": 3,
-          "beispiel": ["SePAS", "Stress, Sorgen, Fragen zur Schullaufbahn", "Termin im Büro oder per E-Mail"]
+          "beispiel": [
+            "meinen Humor, den Kontakt zu Lena",
+            "meinen Ruf als Klassenclown",
+            "mich im Unterricht öfter melden"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer unterstützt dich? Trage ein, an wen du dich wenden kannst.",
+          "hinweis": "Im Lycée zum Beispiel: deine Klassenlehrperson (Régent), SePAS, Éducateurs, Tutorinnen und Tutoren. Im Praktikum: deine Betreuungsperson."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Person oder Stelle",
+            "Dabei kann sie helfen",
+            "So erreiche ich sie"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "SePAS",
+            "Stress, Sorgen, Fragen zur Schullaufbahn",
+            "Termin im Büro oder per E-Mail"
+          ]
         },
         {
           "art": "info",
@@ -527,18 +1010,39 @@
           "titel": "Warum das Hindernis dazugehört",
           "text": "Wer sich nur ausmalt, wie schön das Ziel ist, fühlt sich oft schon fast angekommen – und strengt sich weniger an. Wer zusätzlich überlegt, was ihn bremsen könnte, und dafür einen Plan macht, bleibt eher dran."
         },
-        { "art": "aufgabe", "text": "Setz dir ein Ziel für die ersten Wochen. Geh die vier Schritte der Reihe nach durch." },
+        {
+          "art": "aufgabe",
+          "text": "Setz dir ein Ziel für die ersten Wochen. Geh die vier Schritte der Reihe nach durch."
+        },
         {
           "art": "schritte",
           "linien": 2,
           "items": [
-            { "titel": "Mein Wunsch", "text": "z. B. zwei Leute finden, mit denen ich mittags esse" },
-            { "titel": "Das beste Ergebnis", "text": "z. B. Ich fühle mich in der Klasse nicht mehr fremd." },
-            { "titel": "Mein inneres Hindernis", "text": "z. B. Ich warte, bis mich jemand anspricht." },
-            { "titel": "Mein Plan: Wenn …, dann …", "text": "z. B. Wenn ich zur Kantine gehe, frage ich jemanden aus der Klasse, ob ich mich dazusetzen kann." }
+            {
+              "titel": "Mein Wunsch",
+              "text": "z. B. zwei Leute finden, mit denen ich mittags esse"
+            },
+            {
+              "titel": "Das beste Ergebnis",
+              "text": "z. B. Ich fühle mich in der Klasse nicht mehr fremd."
+            },
+            {
+              "titel": "Mein inneres Hindernis",
+              "text": "z. B. Ich warte, bis mich jemand anspricht."
+            },
+            {
+              "titel": "Mein Plan: Wenn …, dann …",
+              "text": "z. B. Wenn ich zur Kantine gehe, frage ich jemanden aus der Klasse, ob ich mich dazusetzen kann."
+            }
           ]
         },
-        { "art": "skala", "frage": "Wie zuversichtlich blickst du auf deinen Neustart?", "von": "gar nicht zuversichtlich", "bis": "sehr zuversichtlich", "stufen": 11 }
+        {
+          "art": "skala",
+          "frage": "Wie zuversichtlich blickst du auf deinen Neustart?",
+          "von": "gar nicht zuversichtlich",
+          "bis": "sehr zuversichtlich",
+          "stufen": 11
+        }
       ],
       "lehrer": {
         "ziel": "Die Jugendlichen gehen einen Übergang bewusst an: Sie benennen Stärken und frühere Erfahrungen, entscheiden, was sie mitnehmen und ändern wollen, kennen ihre Anlaufstellen und planen ein Ziel samt Hindernis.",
@@ -577,27 +1081,71 @@
       "titel": "Nouveau départ : qu’est-ce que j’emporte ?",
       "untertitel": "Nouveau lycée, nouvelle classe, premier stage : on ne repart jamais de zéro. Tu emportes tes forces, ton expérience et des gens sur qui compter.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Quelles forces emportes-tu ? Coche les trois qui te ressemblent le plus. Ajoute ce qui manque." },
+        {
+          "art": "aufgabe",
+          "text": "Quelles forces emportes-tu ? Coche les trois qui te ressemblent le plus. Ajoute ce qui manque."
+        },
         {
           "art": "ankreuzen",
           "spalten": 3,
-          "items": ["curieux·se", "créatif·ve", "courageux·se", "persévérant·e", "honnête", "serviable", "juste", "à l’aise en équipe", "drôle", "bien organisé·e", "calme sous pression", "multilingue"],
+          "items": [
+            "curiosité",
+            "créativité",
+            "courage",
+            "persévérance",
+            "honnêteté",
+            "entraide",
+            "équité",
+            "esprit d’équipe",
+            "humour",
+            "sens de l’organisation",
+            "calme sous pression",
+            "plurilinguisme"
+          ],
           "frei": 3
         },
-        { "art": "frage", "text": "Pense à un changement que tu as déjà réussi. Quelle force t’a aidé·e à ce moment-là – et comment ?", "linien": 2 },
-        { "art": "aufgabe", "text": "Qu’est-ce que tu emportes, que laisses-tu derrière toi, que veux-tu essayer ?", "hinweis": "Un nouveau départ est aussi une chance : tu peux laisser tomber des habitudes ou des rôles qui ne te correspondent plus." },
         {
-          "art": "tabelle",
-          "spalten": ["J’emporte", "Je laisse derrière moi", "J’essaie"],
-          "zeilen": 3,
-          "beispiel": ["mon humour, le contact avec Lena", "ma réputation de clown de la classe", "lever la main plus souvent en cours"]
+          "art": "frage",
+          "text": "Pense à un changement que tu as déjà réussi. Quelle force t’a servi à ce moment-là – et comment ?",
+          "linien": 2
         },
-        { "art": "aufgabe", "text": "Qui peut te soutenir ? Note à qui tu peux t’adresser.", "hinweis": "Au lycée, par exemple : régent·e, SePAS, éducateur·rice, tuteur·rice. En stage : ton tuteur ou ta tutrice de stage." },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce que tu emportes, que laisses-tu derrière toi, que veux-tu essayer ?",
+          "hinweis": "Un nouveau départ est aussi une chance : tu peux laisser tomber des habitudes ou des rôles qui ne te correspondent plus."
+        },
         {
           "art": "tabelle",
-          "spalten": ["Personne ou service", "Pour quoi elle peut m’aider", "Comment la joindre"],
+          "spalten": [
+            "J’emporte",
+            "Je laisse derrière moi",
+            "J’essaie"
+          ],
           "zeilen": 3,
-          "beispiel": ["SePAS", "stress, soucis, questions d’orientation", "rendez-vous au bureau ou par e-mail"]
+          "beispiel": [
+            "mon humour, le contact avec Lena",
+            "ma réputation de clown de la classe",
+            "lever la main plus souvent en cours"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui peut te soutenir ? Note à qui tu peux t’adresser.",
+          "hinweis": "Au lycée, par exemple : ton régent ou ta régente de classe, le SePAS, les éducateurs et éducatrices, les tuteurs et tutrices. En stage : ton tuteur ou ta tutrice de stage."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Personne ou service",
+            "Pour quoi elle peut m’aider",
+            "Comment la joindre"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "SePAS",
+            "stress, soucis, questions d’orientation",
+            "rendez-vous au bureau ou par e-mail"
+          ]
         },
         {
           "art": "info",
@@ -605,24 +1153,45 @@
           "titel": "Pourquoi l’obstacle compte",
           "text": "Quand on se contente d’imaginer son objectif, on a souvent l’impression d’y être presque – et on fait moins d’efforts. Quand on réfléchit aussi à ce qui pourrait nous freiner et qu’on prévoit un plan, on tient plus facilement."
         },
-        { "art": "aufgabe", "text": "Fixe-toi un objectif pour les premières semaines. Suis les quatre étapes dans l’ordre." },
+        {
+          "art": "aufgabe",
+          "text": "Fixe-toi un objectif pour les premières semaines. Suis les quatre étapes dans l’ordre."
+        },
         {
           "art": "schritte",
           "linien": 2,
           "items": [
-            { "titel": "Mon souhait", "text": "p. ex. trouver deux personnes avec qui manger à midi" },
-            { "titel": "Le meilleur résultat", "text": "p. ex. je ne me sens plus étranger·ère dans la classe." },
-            { "titel": "Mon obstacle intérieur", "text": "p. ex. j’attends que quelqu’un vienne me parler." },
-            { "titel": "Mon plan : si …, alors …", "text": "p. ex. si je vais à la cantine, je demande à quelqu’un de la classe si je peux m’asseoir à sa table." }
+            {
+              "titel": "Mon souhait",
+              "text": "p. ex. trouver deux personnes avec qui manger à midi"
+            },
+            {
+              "titel": "Le meilleur résultat",
+              "text": "p. ex. je me sens à ma place dans la classe."
+            },
+            {
+              "titel": "Mon obstacle intérieur",
+              "text": "p. ex. j’attends que quelqu’un vienne me parler."
+            },
+            {
+              "titel": "Mon plan : si …, alors …",
+              "text": "p. ex. si je vais à la cantine, je demande à quelqu’un de la classe si je peux m’asseoir à sa table."
+            }
           ]
         },
-        { "art": "skala", "frage": "Avec quelle confiance abordes-tu ce nouveau départ ?", "von": "pas du tout confiant·e", "bis": "très confiant·e", "stufen": 11 }
+        {
+          "art": "skala",
+          "frage": "Avec quelle confiance abordes-tu ce nouveau départ ?",
+          "von": "aucune confiance",
+          "bis": "pleine confiance",
+          "stufen": 11
+        }
       ],
       "lehrer": {
         "ziel": "Les jeunes abordent une transition de façon consciente : ils nomment leurs forces et leurs expériences, décident ce qu’ils emportent et ce qu’ils veulent changer, repèrent leurs personnes-ressources et planifient un objectif en tenant compte de l’obstacle.",
         "ablauf": [
           "Entrée en matière (5 min) : « Quel a été votre plus grand changement jusqu’ici – et qu’est-ce qui vous a aidés ? » Recueillir deux ou trois réponses.",
-          "Tâche 1 individuellement (10 min). Puis à deux : chacun·e nomme une force observée chez l’autre.",
+          "Tâche 1 individuellement (10 min). Puis à deux : chaque personne nomme une force observée chez l’autre.",
           "Tâche 2 : souligner qu’un nouveau départ permet de quitter un rôle (« le clown », « la discrète »).",
           "Tâche 3 : compléter les personnes-ressources du lycée avec de vrais noms, salles et horaires.",
           "Tâche 4 (WOOP) : guider étape par étape ; pour l’obstacle, chercher un frein intérieur.",
@@ -636,11 +1205,11 @@
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "differenzierung": {
-          "leichter": "Seulement cocher les forces ; faire le WOOP à l’oral avec un·e adulte et n’écrire que le plan.",
+          "leichter": "Seulement cocher les forces ; faire le WOOP à l’oral avec un adulte et n’écrire que le plan.",
           "schwerer": "Établir un second plan WOOP pour un autre objectif (p. ex. le stage) et l’évaluer après deux semaines."
         },
         "impulse": [
-          "Quelle force t’a le plus aidé·e lors de ton dernier changement ?",
+          "Quelle force t’a le plus servi lors de ton dernier changement ?",
           "Qu’aimerais-tu faire autrement dans ta nouvelle classe ?",
           "Vers qui te tournerais-tu en premier si ça coince ?"
         ],
@@ -648,7 +1217,7 @@
           "Pour l’obstacle, viser les freins intérieurs (habitudes, pensées, émotions) : les obstacles extérieurs se planifient rarement.",
           "Ne pas faire juger les forces : chaque force cochée compte, « multilingue » ou « drôle » aussi."
         ],
-        "achtung": "Si un·e jeune montre pendant la transition un abattement durable, un repli ou une forte surcharge : chercher l’entretien individuel, impliquer le SePAS ou la direction compétente (responsable)."
+        "achtung": "Si des jeunes montrent pendant la transition un abattement durable, un repli ou une forte surcharge : chercher l’entretien individuel, impliquer le SePAS ou la direction compétente (responsable)."
       }
     }
   },
@@ -656,38 +1225,110 @@
     "id": "mein-tag-in-bildern",
     "bereich": "alltag",
     "thema": "tagesablauf",
-    "stufen": ["C1"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "C1"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "20 Min.",
-    "eldib": ["V-8", "KOG-14", "KOG-31"],
-    "schlagworte": ["Tagesablauf", "Bildplan", "Bildkarten", "Struktur", "Spielschule"],
+    "eldib": [
+      "V-8",
+      "KOG-14",
+      "KOG-31"
+    ],
+    "schlagworte": [
+      "Tagesablauf",
+      "Bildplan",
+      "Bildkarten",
+      "Struktur",
+      "Spielschule"
+    ],
     "bild": "icon:sun",
-    "verwandt": ["zuerst-dann", "meine-morgenroutine"],
+    "verwandt": [
+      "zuerst-dann",
+      "meine-morgenroutine"
+    ],
     "de": {
       "titel": "Mein Tag in Bildern",
       "anleitung": "Karten anmalen lassen, ausschneiden, laminieren. In der Reihenfolge des Tages mit Klett auf einen Streifen kleben. Nach jeder Tätigkeit die Karte gemeinsam abnehmen.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Male die Karten an. Schneide sie aus.", "symbole": ["malen", "schneiden"] },
+        {
+          "art": "aufgabe",
+          "text": "Male die Karten an. Schneide sie aus.",
+          "symbole": [
+            "malen",
+            "schneiden"
+          ]
+        },
         {
           "art": "karten",
           "spalten": 4,
           "karten": [
-            { "titel": "ankommen", "bild": "icon:door-enter" },
-            { "titel": "Kreis", "bild": "icon:users-group" },
-            { "titel": "spielen", "bild": "icon:puzzle" },
-            { "titel": "Toilette", "bild": "icon:toilet-paper" },
-            { "titel": "Hände waschen", "bild": "icon:droplet" },
-            { "titel": "essen", "bild": "icon:apple" },
-            { "titel": "draußen", "bild": "icon:trees" },
-            { "titel": "turnen", "bild": "icon:run" },
-            { "titel": "malen", "bild": "icon:palette" },
-            { "titel": "Geschichte", "bild": "icon:book" },
-            { "titel": "ausruhen", "bild": "icon:pillow" },
-            { "titel": "abholen", "bild": "icon:home" }
+            {
+              "titel": "ankommen",
+              "bild": "icon:door-enter"
+            },
+            {
+              "titel": "Kreis",
+              "bild": "icon:users-group"
+            },
+            {
+              "titel": "spielen",
+              "bild": "icon:puzzle"
+            },
+            {
+              "titel": "Toilette",
+              "bild": "icon:toilet-paper"
+            },
+            {
+              "titel": "Hände waschen",
+              "bild": "icon:droplet"
+            },
+            {
+              "titel": "essen",
+              "bild": "icon:apple"
+            },
+            {
+              "titel": "draußen",
+              "bild": "icon:trees"
+            },
+            {
+              "titel": "turnen",
+              "bild": "icon:run"
+            },
+            {
+              "titel": "malen",
+              "bild": "icon:palette"
+            },
+            {
+              "titel": "Geschichte",
+              "bild": "icon:book"
+            },
+            {
+              "titel": "ausruhen",
+              "bild": "icon:pillow"
+            },
+            {
+              "titel": "abholen",
+              "bild": "icon:home"
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Was machst du in der Spielschule am liebsten? Male es.", "symbole": ["malen"] },
-        { "art": "feld", "label": "Das mache ich am liebsten.", "hoehe": 4, "zeichnen": true }
+        {
+          "art": "aufgabe",
+          "text": "Was machst du in der Spielschule am liebsten? Male es.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Das mache ich am liebsten.",
+          "hoehe": 4,
+          "zeichnen": true
+        }
       ],
       "lehrer": {
         "ziel": "Die Kinder erkennen den Ablauf ihres Tages in der Spielschule an Bildern wieder. Der sichtbare Plan gibt Sicherheit und hilft, sich auf das Nächste einzustellen.",
@@ -724,27 +1365,81 @@
       "titel": "Ma journée en images",
       "anleitung": "Faire colorier les cartes, les découper, les plastifier. Les coller avec du velcro sur une bande, dans l’ordre de la journée. Après chaque activité, retirer la carte ensemble.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Colorie les cartes. Découpe-les.", "symbole": ["malen", "schneiden"] },
+        {
+          "art": "aufgabe",
+          "text": "Colorie les cartes. Découpe-les.",
+          "symbole": [
+            "malen",
+            "schneiden"
+          ]
+        },
         {
           "art": "karten",
           "spalten": 4,
           "karten": [
-            { "titel": "arrivée", "bild": "icon:door-enter" },
-            { "titel": "cercle", "bild": "icon:users-group" },
-            { "titel": "jouer", "bild": "icon:puzzle" },
-            { "titel": "toilettes", "bild": "icon:toilet-paper" },
-            { "titel": "se laver les mains", "bild": "icon:droplet" },
-            { "titel": "manger", "bild": "icon:apple" },
-            { "titel": "dehors", "bild": "icon:trees" },
-            { "titel": "gym", "bild": "icon:run" },
-            { "titel": "dessiner", "bild": "icon:palette" },
-            { "titel": "histoire", "bild": "icon:book" },
-            { "titel": "se reposer", "bild": "icon:pillow" },
-            { "titel": "rentrer", "bild": "icon:home" }
+            {
+              "titel": "arrivée",
+              "bild": "icon:door-enter"
+            },
+            {
+              "titel": "cercle",
+              "bild": "icon:users-group"
+            },
+            {
+              "titel": "jouer",
+              "bild": "icon:puzzle"
+            },
+            {
+              "titel": "toilettes",
+              "bild": "icon:toilet-paper"
+            },
+            {
+              "titel": "se laver les mains",
+              "bild": "icon:droplet"
+            },
+            {
+              "titel": "manger",
+              "bild": "icon:apple"
+            },
+            {
+              "titel": "dehors",
+              "bild": "icon:trees"
+            },
+            {
+              "titel": "gym",
+              "bild": "icon:run"
+            },
+            {
+              "titel": "dessiner",
+              "bild": "icon:palette"
+            },
+            {
+              "titel": "histoire",
+              "bild": "icon:book"
+            },
+            {
+              "titel": "se reposer",
+              "bild": "icon:pillow"
+            },
+            {
+              "titel": "rentrer",
+              "bild": "icon:home"
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Qu’est-ce que tu préfères faire à l’école ? Dessine-le.", "symbole": ["malen"] },
-        { "art": "feld", "label": "C’est ce que je préfère faire.", "hoehe": 4, "zeichnen": true }
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce que tu préfères faire à l’école ? Dessine-le.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "C’est ce que je préfère faire.",
+          "hoehe": 4,
+          "zeichnen": true
+        }
       ],
       "lehrer": {
         "ziel": "Les enfants reconnaissent sur des images le déroulement de leur journée à l’école. Le programme visible donne de la sécurité et aide à se préparer à ce qui vient.",
@@ -782,35 +1477,101 @@
     "id": "meine-morgenroutine",
     "bereich": "alltag",
     "thema": "tagesablauf",
-    "stufen": ["C2"],
-    "sozialform": ["einzeln", "klasse"],
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
     "dauer": "30 Min. + eine Woche Plan",
-    "eldib": ["V-6", "V-15", "KOG-31"],
-    "schlagworte": ["Morgenroutine", "Reihenfolge", "Selbstständigkeit", "Checkliste", "Wochenplan"],
+    "eldib": [
+      "V-6",
+      "V-15",
+      "KOG-31"
+    ],
+    "schlagworte": [
+      "Morgenroutine",
+      "Reihenfolge",
+      "Selbstständigkeit",
+      "Checkliste",
+      "Wochenplan"
+    ],
     "bild": "icon:alarm",
-    "verwandt": ["mein-tag-in-bildern", "gut-schlafen"],
+    "verwandt": [
+      "mein-tag-in-bildern",
+      "gut-schlafen"
+    ],
     "de": {
       "titel": "Meine Morgenroutine",
       "untertitel": "Mit einem festen Ablauf klappt der Morgen leichter.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Was machst du am Morgen? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "Was machst du am Morgen? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "ankreuzen",
           "spalten": 4,
           "bilder": [
-            { "bild": "icon:alarm", "text": "aufstehen" },
-            { "bild": "icon:toilet-paper", "text": "Toilette" },
-            { "bild": "icon:droplet", "text": "waschen" },
-            { "bild": "icon:mood-happy", "text": "Zähne putzen" },
-            { "bild": "icon:shirt", "text": "anziehen" },
-            { "bild": "icon:bread", "text": "frühstücken" },
-            { "bild": "icon:shoe", "text": "Schuhe, Jacke" },
-            { "bild": "icon:backpack", "text": "Schultasche" }
+            {
+              "bild": "icon:alarm",
+              "text": "aufstehen"
+            },
+            {
+              "bild": "icon:toilet-paper",
+              "text": "Toilette"
+            },
+            {
+              "bild": "icon:droplet",
+              "text": "waschen"
+            },
+            {
+              "bild": "icon:dental",
+              "text": "Zähne putzen"
+            },
+            {
+              "bild": "icon:shirt",
+              "text": "anziehen"
+            },
+            {
+              "bild": "icon:bread",
+              "text": "frühstücken"
+            },
+            {
+              "bild": "icon:shoe",
+              "text": "Schuhe, Jacke"
+            },
+            {
+              "bild": "icon:backpack",
+              "text": "Schultasche"
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Schreibe deinen Plan. Hake jeden Morgen ab.", "hinweis": "Schreibe die Schritte der Reihe nach auf. Die Wörter oben helfen dir.", "symbole": ["schreiben", "ankreuzen"] },
-        { "art": "plan", "symbol": "kasten", "zeilen": ["aufstehen", "", "", "", ""] }
+        {
+          "art": "aufgabe",
+          "text": "Schreibe deinen Plan. Hake jeden Morgen ab.",
+          "hinweis": "Schreibe die Schritte der Reihe nach auf. Die Wörter oben helfen dir.",
+          "symbole": [
+            "schreiben",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "zeilen": [
+            "aufstehen",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
       ],
       "lehrer": {
         "ziel": "Die Kinder benennen die Schritte ihres Morgens, bringen sie in eine feste Reihenfolge und haken eine Woche lang ab, was sie selbstständig geschafft haben.",
@@ -848,29 +1609,72 @@
       "titel": "Ma routine du matin",
       "untertitel": "Avec un déroulement fixe, le matin se passe mieux.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Que fais-tu le matin ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "Que fais-tu le matin ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "ankreuzen",
           "spalten": 4,
           "bilder": [
-            { "bild": "icon:alarm", "text": "se lever" },
-            { "bild": "icon:toilet-paper", "text": "toilettes" },
-            { "bild": "icon:droplet", "text": "se laver" },
-            { "bild": "icon:mood-happy", "text": "se brosser les dents" },
-            { "bild": "icon:shirt", "text": "s’habiller" },
-            { "bild": "icon:bread", "text": "petit-déjeuner" },
-            { "bild": "icon:shoe", "text": "chaussures, veste" },
-            { "bild": "icon:backpack", "text": "cartable" }
+            {
+              "bild": "icon:alarm",
+              "text": "se lever"
+            },
+            {
+              "bild": "icon:toilet-paper",
+              "text": "toilettes"
+            },
+            {
+              "bild": "icon:droplet",
+              "text": "se laver"
+            },
+            {
+              "bild": "icon:dental",
+              "text": "se brosser les dents"
+            },
+            {
+              "bild": "icon:shirt",
+              "text": "s’habiller"
+            },
+            {
+              "bild": "icon:bread",
+              "text": "petit-déjeuner"
+            },
+            {
+              "bild": "icon:shoe",
+              "text": "chaussures, veste"
+            },
+            {
+              "bild": "icon:backpack",
+              "text": "cartable"
+            }
           ]
         },
         {
           "art": "aufgabe",
           "text": "Écris ton plan. Coche chaque matin.",
           "hinweis": "Écris les étapes dans l’ordre. Les mots du haut t’aident.",
-          "symbole": ["schreiben", "ankreuzen"]
+          "symbole": [
+            "schreiben",
+            "ankreuzen"
+          ]
         },
-        { "art": "plan", "symbol": "kasten", "zeilen": ["se lever", "", "", "", ""] }
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "zeilen": [
+            "se lever",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
       ],
       "lehrer": {
         "ziel": "Les enfants nomment les étapes de leur matin, les mettent dans un ordre fixe et cochent pendant une semaine ce qu’ils ont réussi sans aide.",
@@ -887,8 +1691,15 @@
           "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
           "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
         ],
-        "differenzierung": { "leichter": "Découper les images de l’exercice 1 et les coller dans le bon ordre.", "schwerer": "Noter pour chaque étape sa durée approximative." },
-        "impulse": ["Que fais-tu en premier quand tu te réveilles ?", "Quelle étape dure le plus longtemps pour toi ?", "Que peux-tu déjà préparer le soir ?"],
+        "differenzierung": {
+          "leichter": "Découper les images de l’exercice 1 et les coller dans le bon ordre.",
+          "schwerer": "Noter pour chaque étape sa durée approximative."
+        },
+        "impulse": [
+          "Que fais-tu en premier quand tu te réveilles ?",
+          "Quelle étape dure le plus longtemps pour toi ?",
+          "Que peux-tu déjà préparer le soir ?"
+        ],
         "tipps": [
           "Informer brièvement les parents : le plan doit aider, pas ajouter de la pression.",
           "À la maison, accrocher le plan là où il sert, par exemple à la porte de la salle de bains."
@@ -902,13 +1713,33 @@
     "id": "gut-schlafen",
     "bereich": "alltag",
     "thema": "tagesablauf",
-    "stufen": ["C3", "C4"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "45 Min. + eine Woche Tagebuch",
-    "eldib": ["K-29", "KOG-45", "V-22"],
-    "schlagworte": ["Schlaf", "Abendroutine", "Schlaf-Tagebuch", "Bildschirm am Abend", "Konzentration"],
+    "eldib": [
+      "K-29",
+      "KOG-45",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Schlaf",
+      "Abendroutine",
+      "Schlaf-Tagebuch",
+      "Bildschirm am Abend",
+      "Konzentration"
+    ],
     "bild": "icon:moon-stars",
-    "verwandt": ["meine-morgenroutine", "schlaf-check", "medien-tagebuch"],
+    "verwandt": [
+      "meine-morgenroutine",
+      "schlaf-check",
+      "medien-tagebuch"
+    ],
     "de": {
       "titel": "Gut schlafen",
       "untertitel": "Im Schlaf erholt sich dein Körper. Dein Gehirn ordnet, was du am Tag erlebt und gelernt hast.",
@@ -923,12 +1754,36 @@
             "Ausgeschlafen bist du meistens besser gelaunt und nicht so schnell gereizt."
           ]
         },
-        { "art": "aufgabe", "text": "Rechne aus: Wie lange schläfst du an einem Schultag?", "hinweis": "Beispiel: von 20:30 Uhr bis 6:30 Uhr sind es 10 Stunden.", "symbole": ["nachdenken", "schreiben"] },
-        { "art": "satzanfaenge", "items": ["Ins Bett gehe ich um …", "Aufstehen muss ich um …", "So viele Stunden schlafe ich: …"] },
-        { "art": "aufgabe", "text": "Was hilft beim Einschlafen? Was hält wach? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "Rechne aus: Wie lange schläfst du an einem Schultag?",
+          "hinweis": "Beispiel: von 20:30 Uhr bis 6:30 Uhr sind es 10 Stunden.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ins Bett gehe ich um …",
+            "Aufstehen muss ich um …",
+            "So viele Stunden schlafe ich: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hilft beim Einschlafen? Was hält wach? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["hilft", "hält wach"],
+          "optionen": [
+            "hilft",
+            "hält wach"
+          ],
           "items": [
             "ein Buch lesen oder vorgelesen bekommen",
             "im Bett noch am Tablet oder Handy spielen",
@@ -940,15 +1795,57 @@
             "Sorgen vorher jemandem erzählen"
           ]
         },
-        { "art": "aufgabe", "text": "Plane deine Abendroutine für einen Schultag.", "hinweis": "Die letzte Stunde vor dem Schlafen sollte ruhig sein – am besten ohne Bildschirm.", "symbole": ["schreiben"] },
-        { "art": "tagesplan", "zeilen": [{ "zeit": "19:30", "text": "Bildschirm aus, Schultasche packen", "bild": "icon:backpack" }], "leer": 4 },
-        { "art": "aufgabe", "text": "Führe eine Woche lang dein Schlaf-Tagebuch.", "hinweis": "Trage jeden Morgen ein, wann du ins Bett gegangen und wann du aufgestanden bist.", "symbole": ["schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Plane deine Abendroutine für einen Schultag.",
+          "hinweis": "Die letzte Stunde vor dem Schlafen sollte ruhig sein – am besten ohne Bildschirm.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tagesplan",
+          "zeilen": [
+            {
+              "zeit": "19:30",
+              "text": "Bildschirm aus, Schultasche packen",
+              "bild": "icon:backpack"
+            }
+          ],
+          "leer": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Führe eine Woche lang dein Schlaf-Tagebuch.",
+          "hinweis": "Trage jeden Morgen ein, wann du ins Bett gegangen und wann du aufgestanden bist.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "tabelle",
-          "spalten": ["Tag", "Ins Bett um", "Aufgestanden um", "Stunden", "Am Morgen fühle ich mich …"],
-          "breiten": [0.7, 1.1, 1.3, 0.9, 2.2],
+          "spalten": [
+            "Tag",
+            "Ins Bett um",
+            "Aufgestanden um",
+            "Stunden",
+            "Am Morgen fühle ich mich …"
+          ],
+          "breiten": [
+            0.7,
+            1.1,
+            1.3,
+            0.9,
+            2.2
+          ],
           "zeilen": 7,
-          "beispiel": ["Mo", "20:45", "6:45", "10", "wach und fit"]
+          "beispiel": [
+            "Mo",
+            "20:45",
+            "6:45",
+            "10",
+            "wach und fit"
+          ]
         }
       ],
       "lehrer": {
@@ -1000,13 +1897,32 @@
           "art": "aufgabe",
           "text": "Calcule : combien de temps dors-tu un jour d’école ?",
           "hinweis": "Exemple : de 20 h 30 à 6 h 30, cela fait 10 heures.",
-          "symbole": ["nachdenken", "schreiben"]
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
         },
-        { "art": "satzanfaenge", "items": ["Je vais au lit à …", "Je dois me lever à …", "Voici combien d’heures je dors : …"] },
-        { "art": "aufgabe", "text": "Qu’est-ce qui aide à s’endormir ? Qu’est-ce qui garde éveillé ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je vais au lit à …",
+            "Je dois me lever à …",
+            "Voici combien d’heures je dors : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui aide à s’endormir ? Qu’est-ce qui garde éveillé ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["aide", "garde éveillé"],
+          "optionen": [
+            "aide",
+            "garde éveillé"
+          ],
           "items": [
             "lire un livre ou se faire lire une histoire",
             "jouer encore sur la tablette ou le téléphone au lit",
@@ -1022,21 +1938,53 @@
           "art": "aufgabe",
           "text": "Planifie ta routine du soir pour un jour d’école.",
           "hinweis": "La dernière heure avant de dormir devrait être calme – de préférence sans écran.",
-          "symbole": ["schreiben"]
+          "symbole": [
+            "schreiben"
+          ]
         },
-        { "art": "tagesplan", "zeilen": [{ "zeit": "19 h 30", "text": "Écran éteint, préparer le cartable", "bild": "icon:backpack" }], "leer": 4 },
+        {
+          "art": "tagesplan",
+          "zeilen": [
+            {
+              "zeit": "19 h 30",
+              "text": "Écran éteint, préparer le cartable",
+              "bild": "icon:backpack"
+            }
+          ],
+          "leer": 4
+        },
         {
           "art": "aufgabe",
           "text": "Tiens ton journal du sommeil pendant une semaine.",
           "hinweis": "Chaque matin, note l’heure du coucher et l’heure du lever.",
-          "symbole": ["schreiben"]
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "tabelle",
-          "spalten": ["Jour", "Coucher à", "Lever à", "Heures", "Le matin, je me sens …"],
-          "breiten": [0.7, 1.1, 1.3, 0.9, 2.2],
+          "spalten": [
+            "Jour",
+            "Coucher à",
+            "Lever à",
+            "Heures",
+            "Le matin, je me sens …"
+          ],
+          "breiten": [
+            0.7,
+            1.1,
+            1.3,
+            0.9,
+            2.2
+          ],
           "zeilen": 7,
-          "beispiel": ["Lu", "20 h 45", "6 h 45", "10", "en pleine forme"]
+          "beispiel": [
+            "Lu",
+            "20 h 45",
+            "6 h 45",
+            "10",
+            "en pleine forme"
+          ]
         }
       ],
       "lehrer": {
@@ -1075,13 +2023,32 @@
     "id": "schlaf-check",
     "bereich": "alltag",
     "thema": "tagesablauf",
-    "stufen": ["ES"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "45 Min.",
-    "eldib": ["V-29", "V-32", "K-29", "V-22"],
-    "schlagworte": ["Schlaf", "Handy am Abend", "Schlaf-Protokoll", "Wenn-dann-Plan", "Pubertät"],
+    "eldib": [
+      "V-29",
+      "V-32",
+      "K-29",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Schlaf",
+      "Handy am Abend",
+      "Schlaf-Protokoll",
+      "Wenn-dann-Plan",
+      "Pubertät"
+    ],
     "bild": "icon:bed",
-    "verwandt": ["gut-schlafen", "mein-handy-und-ich"],
+    "verwandt": [
+      "gut-schlafen",
+      "mein-handy-und-ich"
+    ],
     "de": {
       "titel": "Schlaf-Check",
       "untertitel": "Jugendliche brauchen 8 bis 10 Stunden Schlaf pro Nacht. Wie viel bekommst du wirklich – und was hält dich wach?",
@@ -1092,10 +2059,17 @@
           "titel": "Warum Schlaf in der Jugend knapp wird",
           "text": "In der Pubertät verschiebt sich die innere Uhr: Man wird abends später müde, muss morgens aber früh raus. Dazu halten Handy, Serien und Chats wach. Viele schlafen deshalb unter der Woche weniger, als sie brauchen – und merken es an Konzentration und Stimmung."
         },
-        { "art": "aufgabe", "text": "Wie sieht dein Schlaf aus? Kreuze an." },
+        {
+          "art": "aufgabe",
+          "text": "Wie sieht dein Schlaf aus? Kreuze an."
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["stimmt", "teils", "stimmt nicht"],
+          "optionen": [
+            "stimmt",
+            "teils",
+            "stimmt nicht"
+          ],
           "items": [
             "Unter der Woche schlafe ich weniger als 8 Stunden.",
             "Am Wochenende schlafe ich viel länger als unter der Woche.",
@@ -1106,7 +2080,10 @@
             "Nachts wache ich manchmal wegen Nachrichten auf."
           ]
         },
-        { "art": "aufgabe", "text": "Was könntest du ändern? Kreuze eine Idee an, die du eine Woche lang ausprobierst." },
+        {
+          "art": "aufgabe",
+          "text": "Was könntest du ändern? Kreuze eine Idee an, die du eine Woche lang ausprobierst."
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -1122,21 +2099,56 @@
           ],
           "frei": 2
         },
-        { "art": "aufgabe", "text": "Formuliere deinen Plan für die nächste Woche.", "hinweis": "Je genauer Uhrzeit und Handlung, desto eher klappt es." },
+        {
+          "art": "aufgabe",
+          "text": "Formuliere deinen Plan für die nächste Woche.",
+          "hinweis": "Je genauer Uhrzeit und Handlung, desto eher klappt es."
+        },
         {
           "art": "wennDann",
           "zeilen": 1,
-          "beispiele": [{ "wenn": "Wenn es 22 Uhr ist,", "dann": "lege ich das Handy zum Laden in die Küche und stelle meinen Wecker." }]
+          "beispiele": [
+            {
+              "wenn": "Wenn es 22 Uhr ist,",
+              "dann": "lege ich das Handy zum Laden in die Küche und stelle meinen Wecker."
+            }
+          ]
         },
-        { "art": "aufgabe", "text": "Führe eine Woche lang ein Schlaf-Protokoll.", "hinweis": "Trage jeden Morgen ein, wann du das Handy weggelegt hast, wann du ungefähr eingeschlafen und wann du aufgestanden bist." },
+        {
+          "art": "aufgabe",
+          "text": "Führe eine Woche lang ein Schlaf-Protokoll.",
+          "hinweis": "Trage jeden Morgen ein, wann du das Handy weggelegt hast, wann du ungefähr eingeschlafen und wann du aufgestanden bist."
+        },
         {
           "art": "tabelle",
-          "spalten": ["Tag", "Handy weg um", "Eingeschlafen ca.", "Aufgestanden um", "Schlaf (Std.)"],
+          "spalten": [
+            "Tag",
+            "Handy weg um",
+            "Eingeschlafen ca.",
+            "Aufgestanden um",
+            "Schlaf (Std.)"
+          ],
           "zeilen": 7,
-          "beispiel": ["Mo", "22:30", "23:00", "6:30", "7,5"]
+          "beispiel": [
+            "Mo",
+            "22:30",
+            "23:00",
+            "6:30",
+            "7,5"
+          ]
         },
-        { "art": "frage", "text": "Nach der Woche: Was hat sich verändert – beim Einschlafen, am Morgen, im Unterricht?", "linien": 2 },
-        { "art": "skala", "frage": "Wie gut hat dein Plan geklappt?", "von": "gar nicht", "bis": "sehr gut", "stufen": 11 },
+        {
+          "art": "frage",
+          "text": "Nach der Woche: Was hat sich verändert – beim Einschlafen, am Morgen, im Unterricht?",
+          "linien": 2
+        },
+        {
+          "art": "skala",
+          "frage": "Wie gut hat dein Plan geklappt?",
+          "von": "gar nicht",
+          "bis": "sehr gut",
+          "stufen": 11
+        },
         {
           "art": "info",
           "symbol": "tipp",
@@ -1181,7 +2193,7 @@
     },
     "fr": {
       "titel": "Bilan sommeil",
-      "untertitel": "Les ados ont besoin de 8 à 10 heures de sommeil par nuit. Combien en as-tu vraiment – et qu’est-ce qui te tient éveillé·e ?",
+      "untertitel": "Les ados ont besoin de 8 à 10 heures de sommeil par nuit. Combien en as-tu vraiment – et qu’est-ce qui t’empêche de dormir ?",
       "bausteine": [
         {
           "art": "info",
@@ -1189,21 +2201,31 @@
           "titel": "Pourquoi le sommeil manque à l’adolescence",
           "text": "À la puberté, l’horloge interne se décale : on a sommeil plus tard le soir, mais il faut se lever tôt. Le téléphone, les séries et les discussions tiennent en plus éveillé. Beaucoup dorment donc moins que nécessaire en semaine – et le sentent à leur concentration et à leur humeur."
         },
-        { "art": "aufgabe", "text": "À quoi ressemble ton sommeil ? Coche." },
+        {
+          "art": "aufgabe",
+          "text": "À quoi ressemble ton sommeil ? Coche."
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["vrai", "en partie", "faux"],
+          "optionen": [
+            "vrai",
+            "en partie",
+            "faux"
+          ],
           "items": [
             "En semaine, je dors moins de 8 heures.",
             "Le week-end, je dors beaucoup plus longtemps qu’en semaine.",
             "Le matin, j’ai du mal à sortir du lit.",
-            "En cours, je suis souvent fatigué·e.",
+            "En cours, j’ai souvent sommeil.",
             "La nuit, mon téléphone est à portée de main.",
             "Juste avant de m’endormir, je suis encore sur mon téléphone.",
             "Il m’arrive de me réveiller la nuit à cause de messages."
           ]
         },
-        { "art": "aufgabe", "text": "Qu’est-ce que tu pourrais changer ? Coche une idée que tu vas tester pendant une semaine." },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce que tu pourrais changer ? Coche une idée que tu vas tester pendant une semaine."
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -1219,23 +2241,58 @@
           ],
           "frei": 2
         },
-        { "art": "aufgabe", "text": "Formule ton plan pour la semaine prochaine.", "hinweis": "Plus l’heure et l’action sont précises, mieux ça marche." },
+        {
+          "art": "aufgabe",
+          "text": "Formule ton plan pour la semaine prochaine.",
+          "hinweis": "Plus l’heure et l’action sont précises, mieux ça marche."
+        },
         {
           "art": "wennDann",
           "wenn": "Si …",
           "dann": "… alors",
           "zeilen": 1,
-          "beispiele": [{ "wenn": "S’il est 22 h,", "dann": "je mets mon téléphone à charger dans la cuisine et je règle mon réveil." }]
+          "beispiele": [
+            {
+              "wenn": "S’il est 22 h,",
+              "dann": "je mets mon téléphone à charger dans la cuisine et je règle mon réveil."
+            }
+          ]
         },
-        { "art": "aufgabe", "text": "Tiens un relevé de ton sommeil pendant une semaine.", "hinweis": "Note chaque matin quand tu as posé ton téléphone, quand tu t’es endormi·e (environ) et quand tu t’es levé·e." },
+        {
+          "art": "aufgabe",
+          "text": "Tiens un relevé de ton sommeil pendant une semaine.",
+          "hinweis": "Note chaque matin l’heure où tu as posé ton téléphone, l’heure approximative de l’endormissement et l’heure du lever."
+        },
         {
           "art": "tabelle",
-          "spalten": ["Jour", "Téléphone posé à", "Endormi·e vers", "Levé·e à", "Sommeil (h)"],
+          "spalten": [
+            "Jour",
+            "Téléphone posé à",
+            "Endormissement vers",
+            "Lever à",
+            "Sommeil (h)"
+          ],
           "zeilen": 7,
-          "beispiel": ["Lu", "22 h 30", "23 h", "6 h 30", "7,5"]
+          "beispiel": [
+            "Lu",
+            "22 h 30",
+            "23 h",
+            "6 h 30",
+            "7,5"
+          ]
         },
-        { "art": "frage", "text": "Après la semaine : qu’est-ce qui a changé – à l’endormissement, le matin, en cours ?", "linien": 2 },
-        { "art": "skala", "frage": "Dans quelle mesure ton plan a-t-il fonctionné ?", "von": "pas du tout", "bis": "très bien", "stufen": 11 },
+        {
+          "art": "frage",
+          "text": "Après la semaine : qu’est-ce qui a changé – à l’endormissement, le matin, en cours ?",
+          "linien": 2
+        },
+        {
+          "art": "skala",
+          "frage": "Dans quelle mesure ton plan a-t-il fonctionné ?",
+          "von": "pas du tout",
+          "bis": "très bien",
+          "stufen": 11
+        },
         {
           "art": "info",
           "symbol": "tipp",
@@ -1243,7 +2300,7 @@
           "punkte": [
             "Ne regarde ni ton téléphone ni l’heure.",
             "Respire lentement : 4 secondes pour inspirer, 6 pour expirer.",
-            "Si tu es encore bien réveillé·e après une vingtaine de minutes : lève-toi un moment, fais quelque chose de calme, puis retourne au lit."
+            "Si tu n’arrives toujours pas à dormir après une vingtaine de minutes : lève-toi un moment, fais quelque chose de calme, puis retourne au lit."
           ]
         }
       ],
@@ -1252,7 +2309,7 @@
         "ablauf": [
           "Entrée en matière (5 min) : « Combien d’heures avez-vous dormi la nuit dernière ? » Recueillir les réponses de façon anonyme sur des papiers.",
           "Lire l’encadré ; auto-évaluation individuelle (5 min). Pas de mise en commun en plénière.",
-          "Tâche 2 : discuter les idées – qu’est-ce qui est réaliste ? Chacun·e en choisit une.",
+          "Tâche 2 : discuter les idées – qu’est-ce qui est réaliste ? Chaque personne en choisit une.",
           "Tâche 3 : formuler le plan « si … alors » et le vérifier à deux : l’heure et l’action sont-elles concrètes ?",
           "Tâche 4 : tenir le relevé pendant une semaine. Ensuite : « Qu’est-ce qui a changé – le soir, le matin, en cours ? »"
         ],
@@ -1283,45 +2340,115 @@
     "id": "bildschirmzeit",
     "bereich": "alltag",
     "thema": "medien",
-    "stufen": ["C2"],
-    "sozialform": ["einzeln", "klasse"],
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
     "dauer": "30–40 Min.",
-    "eldib": ["K-15", "V-16", "V-17", "K-12"],
-    "schlagworte": ["Bildschirmzeit", "Medien", "Familienabmachung", "Alternativen", "Selbstwahrnehmung"],
+    "eldib": [
+      "K-15",
+      "V-16",
+      "V-17",
+      "K-12"
+    ],
+    "schlagworte": [
+      "Bildschirmzeit",
+      "Medien",
+      "Familienabmachung",
+      "Alternativen",
+      "Selbstwahrnehmung"
+    ],
     "bild": "icon:device-tv",
-    "verwandt": ["medien-tagebuch", "mein-handy-und-ich"],
+    "verwandt": [
+      "medien-tagebuch",
+      "mein-handy-und-ich"
+    ],
     "de": {
       "titel": "Bildschirm – wie viel ist genug?",
       "untertitel": "Bildschirme machen Spaß. Aber es gibt noch viel mehr.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Was machst du am Bildschirm? Kreise ein.", "symbole": ["einkreisen"] },
+        {
+          "art": "aufgabe",
+          "text": "Was machst du am Bildschirm? Kreise ein.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "einkreisen",
           "spalten": 4,
           "bilder": [
-            { "bild": "icon:device-tv", "text": "Videos schauen" },
-            { "bild": "icon:device-gamepad-2", "text": "spielen" },
-            { "bild": "icon:device-laptop", "text": "lernen" },
-            { "bild": "icon:device-mobile-message", "text": "telefonieren" }
+            {
+              "bild": "icon:device-tv",
+              "text": "Videos schauen"
+            },
+            {
+              "bild": "icon:device-gamepad-2",
+              "text": "spielen"
+            },
+            {
+              "bild": "icon:device-laptop",
+              "text": "lernen"
+            },
+            {
+              "bild": "icon:device-mobile-message",
+              "text": "telefonieren"
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Woran merkst du: Es ist genug? Was machst du dann?", "symbole": ["ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du: Es ist genug? Was machst du dann?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "spalten",
           "links": [
-            { "art": "ankreuzen", "titel": "Es ist genug, wenn …", "items": ["meine Augen müde sind.", "mein Kopf ganz voll ist.", "ich schnell sauer werde.", "ich nicht aufhören will."] }
+            {
+              "art": "ankreuzen",
+              "titel": "Es ist genug, wenn …",
+              "items": [
+                "meine Augen müde sind.",
+                "mein Kopf ganz voll ist.",
+                "ich schnell sauer werde.",
+                "ich nicht aufhören will."
+              ]
+            }
           ],
           "rechts": [
-            { "art": "ankreuzen", "titel": "Dann mache ich lieber …", "items": ["draußen spielen.", "malen oder bauen.", "etwas mit anderen."], "frei": 1 }
+            {
+              "art": "ankreuzen",
+              "titel": "Dann mache ich lieber …",
+              "items": [
+                "draußen spielen.",
+                "malen oder bauen.",
+                "etwas mit anderen."
+              ],
+              "frei": 1
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Macht zu Hause eine Abmachung. Unterschreibt sie zusammen.", "symbole": ["schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Macht zu Hause eine Abmachung. Unterschreibt sie zusammen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "vertrag",
           "titel": "Unsere Bildschirm-Abmachung",
           "text": "An Schultagen bin ich höchstens ___ am Bildschirm. Danach mache ich ___. Beim Essen und im Bett bleibt der Bildschirm aus.",
-          "unterschriften": ["Ich", "Erwachsene Person"]
+          "unterschriften": [
+            "Ich",
+            "Erwachsene Person"
+          ]
         }
       ],
       "lehrer": {
@@ -1360,43 +2487,85 @@
       "titel": "Les écrans : combien, c’est assez ?",
       "untertitel": "Les écrans, c’est amusant. Mais il y a bien d’autres choses.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Que fais-tu sur un écran ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "aufgabe",
+          "text": "Que fais-tu sur un écran ? Entoure.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "einkreisen",
           "spalten": 4,
           "bilder": [
-            { "bild": "icon:device-tv", "text": "regarder des vidéos" },
-            { "bild": "icon:device-gamepad-2", "text": "jouer" },
-            { "bild": "icon:device-laptop", "text": "apprendre" },
-            { "bild": "icon:device-mobile-message", "text": "téléphoner" }
+            {
+              "bild": "icon:device-tv",
+              "text": "regarder des vidéos"
+            },
+            {
+              "bild": "icon:device-gamepad-2",
+              "text": "jouer"
+            },
+            {
+              "bild": "icon:device-laptop",
+              "text": "apprendre"
+            },
+            {
+              "bild": "icon:device-mobile-message",
+              "text": "téléphoner"
+            }
           ]
         },
-        { "art": "aufgabe", "text": "À quoi remarques-tu que c’est assez ? Que fais-tu alors ?", "symbole": ["ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "À quoi remarques-tu que c’est assez ? Que fais-tu alors ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "spalten",
           "links": [
             {
               "art": "ankreuzen",
               "titel": "C’est assez quand …",
-              "items": ["mes yeux sont fatigués.", "ma tête est toute pleine.", "je m’énerve vite.", "je ne veux pas arrêter."]
+              "items": [
+                "mes yeux sont fatigués.",
+                "ma tête est toute pleine.",
+                "je m’énerve vite.",
+                "je ne veux pas arrêter."
+              ]
             }
           ],
           "rechts": [
             {
               "art": "ankreuzen",
               "titel": "Alors je préfère …",
-              "items": ["jouer dehors.", "dessiner ou construire.", "faire quelque chose avec d’autres."],
+              "items": [
+                "jouer dehors.",
+                "dessiner ou construire.",
+                "faire quelque chose avec d’autres."
+              ],
               "frei": 1
             }
           ]
         },
-        { "art": "aufgabe", "text": "Faites un accord à la maison. Signez-le ensemble.", "symbole": ["schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Conviens d’une règle à la maison avec un adulte. Signez-la ensemble.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "vertrag",
           "titel": "Notre accord sur les écrans",
           "text": "Les jours d’école, je reste au maximum ___ sur un écran. Après, je fais ___. Pendant le repas et au lit, l’écran reste éteint.",
-          "unterschriften": ["Moi", "Un adulte"]
+          "unterschriften": [
+            "Moi",
+            "Un adulte"
+          ]
         }
       ],
       "lehrer": {
@@ -1418,7 +2587,11 @@
           "leichter": "Exercices 1 et 2 à l’oral ; remplir l’accord avec un adulte.",
           "schwerer": "Noter pendant une semaine ce qui a été fait sur les écrans et pendant combien de temps."
         },
-        "impulse": ["Qu’aimes-tu le plus faire sur un écran ?", "Comment te sens-tu quand tu as joué longtemps ?", "Qu’aimes-tu faire quand l’écran est éteint ?"],
+        "impulse": [
+          "Qu’aimes-tu le plus faire sur un écran ?",
+          "Comment te sens-tu quand tu as joué longtemps ?",
+          "Qu’aimes-tu faire quand l’écran est éteint ?"
+        ],
         "tipps": [
           "Ne pas juger ce que chaque famille autorise – les accords peuvent être différents.",
           "Faciliter les transitions : prévenir à l’avance (« encore une vidéo ») ou utiliser un sablier."
@@ -1432,37 +2605,134 @@
     "id": "medien-tagebuch",
     "bereich": "alltag",
     "thema": "medien",
-    "stufen": ["C3", "C4"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "2 × 30 Min.",
-    "eldib": ["K-26", "K-29", "V-22", "V-27"],
-    "schlagworte": ["Mediennutzung", "Bildschirmzeit", "Medien-Tagebuch", "Gefühle", "Abmachung"],
+    "eldib": [
+      "K-26",
+      "K-29",
+      "V-22",
+      "V-27"
+    ],
+    "schlagworte": [
+      "Mediennutzung",
+      "Bildschirmzeit",
+      "Medien-Tagebuch",
+      "Gefühle",
+      "Abmachung"
+    ],
     "bild": "icon:device-gamepad-2",
-    "verwandt": ["bildschirmzeit", "mein-handy-und-ich", "gut-schlafen"],
+    "verwandt": [
+      "bildschirmzeit",
+      "mein-handy-und-ich",
+      "gut-schlafen"
+    ],
     "de": {
       "titel": "Mein Medien-Tagebuch",
       "untertitel": "Handy, Tablet, Fernseher, Konsole: Wie viel Zeit verbringst du damit – und wie geht es dir dabei?",
       "bausteine": [
-        { "art": "aufgabe", "text": "Schätze zuerst: Wie lange bist du am Bildschirm?", "hinweis": "Zähle alles mit: Handy, Tablet, Fernseher, Konsole und Computer.", "symbole": ["nachdenken", "schreiben"] },
-        { "art": "satzanfaenge", "items": ["An einem Schultag etwa …", "An einem Tag am Wochenende etwa …"] },
-        { "art": "aufgabe", "text": "Führe eine Woche lang dein Medien-Tagebuch.", "hinweis": "Schreibe jeden Abend auf: Was hast du gemacht? Wie lange? Wie ging es dir danach?", "symbole": ["schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Schätze zuerst: Wie lange bist du am Bildschirm?",
+          "hinweis": "Zähle alles mit: Handy, Tablet, Fernseher, Konsole und Computer.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "An einem Schultag etwa …",
+            "An einem Tag am Wochenende etwa …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Führe eine Woche lang dein Medien-Tagebuch.",
+          "hinweis": "Schreibe jeden Abend auf: Was hast du gemacht? Wie lange? Wie ging es dir danach?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "tabelle",
-          "spalten": ["Tag", "Was habe ich gemacht?", "Wie lange?", "Danach fühlte ich mich …"],
-          "breiten": [0.6, 2.4, 1, 2],
+          "spalten": [
+            "Tag",
+            "Was habe ich gemacht?",
+            "Wie lange?",
+            "Danach fühlte ich mich …"
+          ],
+          "breiten": [
+            0.6,
+            2.4,
+            1,
+            2
+          ],
           "zeilen": 7,
-          "beispiel": ["Mo", "Minecraft mit Ben, danach Videos", "1 Std. 20 Min.", "zuerst froh, dann müde und genervt"]
+          "beispiel": [
+            "Mo",
+            "Minecraft mit Ben, danach Videos",
+            "1 Std. 20 Min.",
+            "zuerst froh, dann müde und genervt"
+          ]
         },
-        { "art": "wortspeicher", "titel": "Wörter für „danach“", "items": ["entspannt", "fröhlich", "zufrieden", "stolz", "gelangweilt", "müde", "genervt", "aufgedreht", "traurig", "gestresst"] },
-        { "art": "aufgabe", "text": "Schau auf deine Woche. Was hat deine Batterie aufgeladen? Was hat sie geleert?", "symbole": ["nachdenken", "schreiben"] },
-        { "art": "batterie", "laden": "Danach ging es mir gut", "leeren": "Danach ging es mir schlechter", "linien": 3 },
-        { "art": "frage", "text": "Vergleiche mit deiner Schätzung aus Aufgabe 1. Was fällt dir auf?", "linien": 2 },
-        { "art": "aufgabe", "text": "Mach eine Abmachung für die nächste Woche.", "symbole": ["schreiben"] },
+        {
+          "art": "wortspeicher",
+          "titel": "Wörter für „danach“",
+          "items": [
+            "entspannt",
+            "fröhlich",
+            "zufrieden",
+            "stolz",
+            "gelangweilt",
+            "müde",
+            "genervt",
+            "aufgedreht",
+            "traurig",
+            "gestresst"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau auf deine Woche. Was hat deine Batterie aufgeladen? Was hat sie geleert?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "batterie",
+          "laden": "Danach ging es mir gut",
+          "leeren": "Danach ging es mir schlechter",
+          "linien": 3
+        },
+        {
+          "art": "frage",
+          "text": "Vergleiche mit deiner Schätzung aus Aufgabe 1. Was fällt dir auf?",
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mach eine Abmachung für die nächste Woche.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "vertrag",
           "titel": "Meine Medien-Abmachung",
           "text": "Ich, ___, nehme mir für die nächste Woche vor: ___. Statt Bildschirm mache ich dann ___. Wenn es schwierig wird, hilft mir ___.",
-          "unterschriften": ["Ich", "Erwachsene Person"]
+          "unterschriften": [
+            "Ich",
+            "Erwachsene Person"
+          ]
         }
       ],
       "lehrer": {
@@ -1505,40 +2775,98 @@
           "art": "aufgabe",
           "text": "Estime d’abord : combien de temps passes-tu devant un écran ?",
           "hinweis": "Compte tout : téléphone, tablette, télévision, console et ordinateur.",
-          "symbole": ["nachdenken", "schreiben"]
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
         },
-        { "art": "satzanfaenge", "items": ["Un jour d’école, environ …", "Un jour de week-end, environ …"] },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Un jour d’école, environ …",
+            "Un jour de week-end, environ …"
+          ]
+        },
         {
           "art": "aufgabe",
           "text": "Tiens ton journal des médias pendant une semaine.",
           "hinweis": "Écris chaque soir : qu’as-tu fait ? Combien de temps ? Comment te sentais-tu après ?",
-          "symbole": ["schreiben"]
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "tabelle",
-          "spalten": ["Jour", "Qu’ai-je fait ?", "Combien de temps ?", "Après, je me sentais …"],
-          "breiten": [0.6, 2.4, 1, 2],
+          "spalten": [
+            "Jour",
+            "Qu’ai-je fait ?",
+            "Combien de temps ?",
+            "Après, je me sentais …"
+          ],
+          "breiten": [
+            0.6,
+            2.4,
+            1,
+            2
+          ],
           "zeilen": 7,
-          "beispiel": ["Lu", "Minecraft avec Ben, puis des vidéos", "1 h 20 min", "d’abord de bonne humeur, puis la tête lourde et à cran"]
+          "beispiel": [
+            "Lu",
+            "Minecraft avec Ben, puis des vidéos",
+            "1 h 20 min",
+            "d’abord de bonne humeur, puis la tête lourde et à cran"
+          ]
         },
         {
           "art": "wortspeicher",
           "titel": "Mots pour « après »",
-          "items": ["détendu·e", "de bonne humeur", "satisfait·e", "fier·ère", "qui s’ennuie", "fatigué·e", "agacé·e", "surexcité·e", "triste", "stressé·e"]
+          "items": [
+            "de bonne humeur",
+            "calme",
+            "en forme",
+            "à l’aise",
+            "bien",
+            "à plat",
+            "à cran",
+            "sur les nerfs",
+            "sous tension",
+            "triste"
+          ]
         },
         {
           "art": "aufgabe",
           "text": "Regarde ta semaine. Qu’est-ce qui a rechargé ta batterie ? Qu’est-ce qui l’a vidée ?",
-          "symbole": ["nachdenken", "schreiben"]
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
         },
-        { "art": "batterie", "laden": "Après, je me sentais bien", "leeren": "Après, je me sentais moins bien", "linien": 3 },
-        { "art": "frage", "text": "Compare avec ton estimation de l’exercice 1. Qu’est-ce que tu remarques ?", "linien": 2 },
-        { "art": "aufgabe", "text": "Fais un accord pour la semaine prochaine.", "symbole": ["schreiben"] },
+        {
+          "art": "batterie",
+          "laden": "Après, je me sentais bien",
+          "leeren": "Après, je me sentais moins bien",
+          "linien": 3
+        },
+        {
+          "art": "frage",
+          "text": "Compare avec ton estimation de l’exercice 1. Qu’est-ce que tu remarques ?",
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prends un engagement pour la semaine prochaine.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "vertrag",
-          "titel": "Mon accord sur les médias",
-          "text": "Moi, ___, je décide pour la semaine prochaine : ___. Au lieu de l’écran, je fais alors ___. Quand c’est difficile, ___ m’aide.",
-          "unterschriften": ["Moi", "Un adulte"]
+          "titel": "Mon engagement sur les médias",
+          "text": "Moi, ___, je m’engage pour la semaine prochaine à : ___. Au lieu de l’écran, je fais alors ___. Quand c’est difficile, ___ m’aide.",
+          "unterschriften": [
+            "Moi",
+            "Un adulte"
+          ]
         }
       ],
       "lehrer": {
@@ -1578,21 +2906,50 @@
     "id": "mein-handy-und-ich",
     "bereich": "alltag",
     "thema": "medien",
-    "stufen": ["ES"],
-    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe",
+      "klasse"
+    ],
     "dauer": "50 Min.",
-    "eldib": ["V-32", "SOZ-40", "V-31", "KOG-58"],
-    "schlagworte": ["Handy", "Social Media", "Vergleiche", "Benachrichtigungen", "Klassenchat", "BEE SECURE"],
+    "eldib": [
+      "V-32",
+      "SOZ-40",
+      "V-31",
+      "KOG-58"
+    ],
+    "schlagworte": [
+      "Handy",
+      "Social Media",
+      "Vergleiche",
+      "Benachrichtigungen",
+      "Klassenchat",
+      "BEE SECURE"
+    ],
     "bild": "icon:device-mobile",
-    "verwandt": ["medien-tagebuch", "schlaf-check", "mobbing-cybermobbing"],
+    "verwandt": [
+      "medien-tagebuch",
+      "schlaf-check",
+      "mobbing-cybermobbing"
+    ],
     "de": {
       "titel": "Mein Handy und ich",
       "untertitel": "Das Handy verbindet, unterhält und informiert. Ob es dir guttut, hängt davon ab, wie du es nutzt.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Wie ist das bei dir? Kreuze an." },
+        {
+          "art": "aufgabe",
+          "text": "Wie ist das bei dir? Kreuze an."
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["oft", "manchmal", "selten"],
+          "optionen": [
+            "oft",
+            "manchmal",
+            "selten"
+          ],
           "items": [
             "Ich greife zum Handy, ohne es richtig zu merken.",
             "Nach dem Scrollen fühle ich mich schlechter als vorher.",
@@ -1608,7 +2965,10 @@
           "titel": "Was du siehst, ist eine Auswahl",
           "text": "Profile zeigen meist die besten Momente – ausgewählt, bearbeitet, oft mit Filter. Und Apps sind so gebaut, dass du möglichst lange bleibst: endloses Scrollen, Likes, Benachrichtigungen. Wer das weiß, kann bewusster entscheiden."
         },
-        { "art": "aufgabe", "text": "Denk an einen Post, nach dem du dich schlechter gefühlt hast. Was war zu sehen – und was nicht?" },
+        {
+          "art": "aufgabe",
+          "text": "Denk an einen Post, nach dem du dich schlechter gefühlt hast. Was war zu sehen – und was nicht?"
+        },
         {
           "art": "eisberg",
           "oben": "Das zeigt der Post",
@@ -1616,7 +2976,10 @@
           "beispielOben": "perfektes Foto am Strand, 800 Likes",
           "beispielUnten": "30 Versuche, ein Filter, Streit kurz vorher, ein ganz normaler Rest des Tages"
         },
-        { "art": "aufgabe", "text": "Benachrichtigungen im Griff: Kreuze an, was du diese Woche ausprobierst." },
+        {
+          "art": "aufgabe",
+          "text": "Benachrichtigungen im Griff: Kreuze an, was du diese Woche ausprobierst."
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -1632,7 +2995,13 @@
           ],
           "frei": 1
         },
-        { "art": "aufgabe", "text": "Klassenchat: Welche Regeln schlagt ihr vor? Kreuzt die drei wichtigsten an und ergänzt.", "symbole": ["gruppe"] },
+        {
+          "art": "aufgabe",
+          "text": "Klassenchat: Welche Regeln schlagt ihr vor? Kreuzt die drei wichtigsten an und ergänzt.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
         {
           "art": "ankreuzen",
           "items": [
@@ -1650,9 +3019,18 @@
           "art": "notfall",
           "text": "Hilfe bei Problemen im Netz",
           "eintraege": [
-            { "name": "BEE SECURE Helpline (anonym, kostenlos): Fragen, Cybermobbing, Sextortion", "nummer": "8002 1234" },
-            { "name": "Kanner- a Jugendtelefon (anonym, kostenlos)", "nummer": "116 111" },
-            { "name": "Polizei (bei Drohungen oder Erpressung)", "nummer": "113" }
+            {
+              "name": "BEE SECURE Helpline (anonym, kostenlos): Fragen, Cybermobbing, Sextortion",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Polizei (bei Drohungen oder Erpressung)",
+              "nummer": "113"
+            }
           ]
         }
       ],
@@ -1692,10 +3070,17 @@
       "titel": "Mon téléphone et moi",
       "untertitel": "Le téléphone relie, divertit et informe. S’il te fait du bien ou non dépend de la façon dont tu t’en sers.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Qu’en est-il pour toi ? Coche." },
+        {
+          "art": "aufgabe",
+          "text": "Qu’en est-il pour toi ? Coche."
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["souvent", "parfois", "rarement"],
+          "optionen": [
+            "souvent",
+            "parfois",
+            "rarement"
+          ],
           "items": [
             "Je prends mon téléphone sans vraiment m’en rendre compte.",
             "Après avoir scrollé, je me sens moins bien qu’avant.",
@@ -1711,7 +3096,10 @@
           "titel": "Ce que tu vois est une sélection",
           "text": "Les profils montrent surtout les meilleurs moments – choisis, retouchés, souvent filtrés. Et les applis sont conçues pour te garder le plus longtemps possible : scroll infini, likes, notifications. Le savoir aide à choisir plus consciemment."
         },
-        { "art": "aufgabe", "text": "Pense à une publication après laquelle tu t’es senti·e moins bien. Qu’est-ce qu’on voyait – et qu’est-ce qu’on ne voyait pas ?" },
+        {
+          "art": "aufgabe",
+          "text": "Pense à une publication après laquelle tu allais moins bien. Qu’est-ce qu’on voyait – et qu’est-ce qu’on ne voyait pas ?"
+        },
         {
           "art": "eisberg",
           "oben": "Ce que montre la publication",
@@ -1719,7 +3107,10 @@
           "beispielOben": "photo parfaite à la plage, 800 likes",
           "beispielUnten": "30 essais, un filtre, une dispute juste avant, une fin de journée tout à fait banale"
         },
-        { "art": "aufgabe", "text": "Reprends la main sur les notifications : coche ce que tu testes cette semaine." },
+        {
+          "art": "aufgabe",
+          "text": "Reprends la main sur les notifications : coche ce que tu testes cette semaine."
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -1735,7 +3126,13 @@
           ],
           "frei": 1
         },
-        { "art": "aufgabe", "text": "Groupe de classe : quelles règles proposez-vous ? Cochez les trois plus importantes et complétez.", "symbole": ["gruppe"] },
+        {
+          "art": "aufgabe",
+          "text": "Groupe de classe : quelles règles proposez-vous ? Cochez les trois plus importantes et complétez.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
         {
           "art": "ankreuzen",
           "items": [
@@ -1753,18 +3150,27 @@
           "art": "notfall",
           "text": "De l’aide en cas de problème en ligne",
           "eintraege": [
-            { "name": "BEE SECURE Helpline (anonyme, gratuit) : questions, cyberharcèlement, sextorsion", "nummer": "8002 1234" },
-            { "name": "Kanner- a Jugendtelefon (anonyme, gratuit)", "nummer": "116 111" },
-            { "name": "Police (menaces, chantage)", "nummer": "113" }
+            {
+              "name": "BEE SECURE Helpline (anonyme, gratuit) : questions, cyberharcèlement, sextorsion",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Police (menaces, chantage)",
+              "nummer": "113"
+            }
           ]
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes réfléchissent à leur usage du téléphone, comprennent comment les réseaux sociaux favorisent comparaisons et distractions, ajustent des réglages et élaborent des règles pour le groupe de classe.",
         "ablauf": [
-          "Entrée en matière (5 min) : « À quoi vous sert le plus votre téléphone ? » Recueillir sans jugement. Puis tâche 1 seul·e.",
-          "Lire l’encadré. Tâche 2 seul·e, puis échange volontaire d’exemples – sans vrais noms.",
-          "Tâche 3 : qui le souhaite montre ses réglages ; chacun·e en choisit un pour la semaine.",
+          "Entrée en matière (5 min) : « À quoi vous sert le plus votre téléphone ? » Recueillir sans jugement. Puis tâche 1 en travail individuel.",
+          "Lire l’encadré. Tâche 2 en travail individuel, puis échange volontaire d’exemples – sans vrais noms.",
+          "Tâche 3 : qui le souhaite montre ses réglages ; chaque personne en choisit un pour la semaine.",
           "Tâche 4 en petits groupes ; réunir les propositions en conseil de classe.",
           "Pour finir, parler de l’encadré d’aide : à qui s’adresser, et quand ?"
         ],

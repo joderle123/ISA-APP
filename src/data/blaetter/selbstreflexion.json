@@ -3,13 +3,34 @@
     "id": "beduerfnis-glaeser",
     "bereich": "selbstreflexion",
     "thema": "beduerfnisse",
-    "stufen": ["C4", "ES"],
+    "stufen": [
+      "C4",
+      "ES"
+    ],
     "layout": "jugend",
-    "sozialform": ["einzeln", "gruppe"],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "30–45 Min.",
-    "eldib": ["K-26", "K-33", "SOZ-40", "V-32"],
-    "schlagworte": ["Bedürfnisse", "Selbstwahrnehmung", "Wohlbefinden", "Selbstfürsorge", "Wenn-dann-Plan"],
-    "verwandt": ["werte-glaeser", "lebensnetz", "tag-in-24-stunden"],
+    "eldib": [
+      "K-26",
+      "K-33",
+      "SOZ-40",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Bedürfnisse",
+      "Selbstwahrnehmung",
+      "Wohlbefinden",
+      "Selbstfürsorge",
+      "Wenn-dann-Plan"
+    ],
+    "verwandt": [
+      "werte-glaeser",
+      "lebensnetz",
+      "tag-in-24-stunden"
+    ],
     "bild": "icon:cup",
     "de": {
       "titel": "Meine Bedürfnis-Gläser",
@@ -23,11 +44,17 @@
           "art": "aufgabe",
           "text": "Zieh in jedem Glas einen Strich: So voll soll es für dich sein. Dann mal aus, wie voll es gerade ist.",
           "hinweis": "Denk an die letzten zwei Wochen. Ein Glas muss nicht randvoll sein – manchen reicht wenig Abenteuer, anderen wenig Ruhe. Die leeren Gläser sind für Bedürfnisse, die hier fehlen.",
-          "symbole": ["malen", "nachdenken"]
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "glaeser",
-          "legende": ["Strich: so voll soll es sein", "Ausmalen: so voll ist es jetzt"],
+          "legende": [
+            "Strich: so voll soll es sein",
+            "Ausmalen: so voll ist es jetzt"
+          ],
           "items": [
             "Schlaf",
             "Essen & Trinken",
@@ -60,10 +87,22 @@
         },
         {
           "art": "tabelle",
-          "spalten": ["Glas", "So merke ich, dass es fehlt", "Was es füllen könnte"],
+          "spalten": [
+            "Glas",
+            "So merke ich, dass es fehlt",
+            "Was es füllen könnte"
+          ],
           "zeilen": 3,
-          "breiten": [1, 1.7, 1.7],
-          "beispiel": ["Ruhe", "Ich bin abends gereizt und schlafe schlecht ein.", "nach der Schule 30 Minuten ohne Handy in meinem Zimmer"]
+          "breiten": [
+            1,
+            1.7,
+            1.7
+          ],
+          "beispiel": [
+            "Ruhe",
+            "Ich bin abends gereizt und schlafe schlecht ein.",
+            "nach der Schule 30 Minuten ohne Handy in meinem Zimmer"
+          ]
         },
         {
           "art": "aufgabe",
@@ -73,7 +112,12 @@
         {
           "art": "wennDann",
           "zeilen": 1,
-          "beispiele": [{ "wenn": "Wenn ich am Mittwoch vom Training nach Hause komme,", "dann": "rufe ich meine Cousine an, statt allein zu scrollen. (Glas: Nähe)" }]
+          "beispiele": [
+            {
+              "wenn": "Wenn ich am Mittwoch vom Training nach Hause komme,",
+              "dann": "rufe ich meine Cousine an, statt allein zu scrollen. (Glas: Nähe)"
+            }
+          ]
         },
         {
           "art": "info",
@@ -97,9 +141,18 @@
           "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
           "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe."
         ],
-        "differenzierung": { "leichter": "Nur die erste Reihe und zwei eigene Gläser; Aufgabe 2 mündlich.", "schwerer": "Zu fast leeren Gläsern notieren, wer oder was sie früher gefüllt hat." },
-        "impulse": ["Welches Glas füllt sich bei dir fast von allein?", "Wer könnte dir helfen, ein Glas zu füllen?"],
-        "tipps": ["Strich und Ausmalen gehen auch mit Bleistift.", "Nach einigen Wochen wiederholen – mit anderer Farbe in denselben Gläsern."],
+        "differenzierung": {
+          "leichter": "Nur die erste Reihe und zwei eigene Gläser; Aufgabe 2 mündlich.",
+          "schwerer": "Zu fast leeren Gläsern notieren, wer oder was sie früher gefüllt hat."
+        },
+        "impulse": [
+          "Welches Glas füllt sich bei dir fast von allein?",
+          "Wer könnte dir helfen, ein Glas zu füllen?"
+        ],
+        "tipps": [
+          "Strich und Ausmalen gehen auch mit Bleistift.",
+          "Nach einigen Wochen wiederholen – mit anderer Farbe in denselben Gläsern."
+        ],
         "achtung": "Sind Sicherheit, Essen oder Schlaf dauerhaft leer, nicht im Plenum nachfragen: ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gefährdung sofort nach dem internen Ablauf handeln.",
         "material": "Buntstifte oder Bleistift"
       }
@@ -110,17 +163,23 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Les besoins, c’est ce dont chaque personne a besoin pour vivre et se sentir bien : dormir, être en sécurité, avoir des gens sur qui compter, du temps pour soi. Ils n’ont pas la même importance pour tout le monde – et ne sont pas toujours comblés de la même façon. Quand un verre reste presque vide longtemps, on le remarque souvent d’abord à son humeur : irritable, fatigué·e, sans envie."
+          "text": "Les besoins, c’est ce dont chaque personne a besoin pour vivre et se sentir bien : dormir, être en sécurité, avoir des gens sur qui compter, du temps pour soi. Ils n’ont pas la même importance pour tout le monde – et ne sont pas toujours comblés de la même façon. Quand un verre reste presque vide longtemps, on le remarque souvent d’abord à son humeur : irritable, à plat, sans envie."
         },
         {
           "art": "aufgabe",
           "text": "Dans chaque verre, trace un trait : le niveau que tu souhaites. Puis colorie jusqu’au niveau où il en est maintenant.",
           "hinweis": "Pense aux deux dernières semaines. Un verre n’a pas besoin d’être plein à ras bord – certaines personnes ont besoin de peu d’aventure, d’autres de peu de calme. Les verres vides sont pour les besoins qui manquent ici.",
-          "symbole": ["malen", "nachdenken"]
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "glaeser",
-          "legende": ["Un trait : le niveau souhaité", "Colorier : le niveau actuel"],
+          "legende": [
+            "Un trait : le niveau souhaité",
+            "Colorier : le niveau actuel"
+          ],
           "items": [
             "Sommeil",
             "Manger et boire",
@@ -153,20 +212,37 @@
         },
         {
           "art": "tabelle",
-          "spalten": ["Verre", "Je remarque qu’il manque quand …", "Ce qui pourrait le remplir"],
+          "spalten": [
+            "Verre",
+            "Je remarque qu’il manque quand …",
+            "Ce qui pourrait le remplir"
+          ],
           "zeilen": 3,
-          "breiten": [1, 1.7, 1.7],
-          "beispiel": ["Calme", "Je suis irritable le soir et je m’endors mal.", "après les cours, 30 minutes dans ma chambre sans téléphone"]
+          "breiten": [
+            1,
+            1.7,
+            1.7
+          ],
+          "beispiel": [
+            "Calme",
+            "Je suis irritable le soir et je m’endors mal.",
+            "après les cours, 30 minutes dans ma chambre sans téléphone"
+          ]
         },
         {
           "art": "aufgabe",
           "text": "Choisis un verre. Que fais-tu dans les sept prochains jours pour qu’il se remplisse un peu ?",
-          "hinweis": "Petit, c’est bien : un pas que tu arrives vraiment à faire. Certains verres ne se remplissent pas tout·e seul·e – demander de l’aide en fait partie."
+          "hinweis": "Petit, c’est bien : un pas que tu arrives vraiment à faire. Certains verres ne se remplissent pas tout seuls – demander de l’aide en fait partie."
         },
         {
           "art": "wennDann",
           "zeilen": 1,
-          "beispiele": [{ "wenn": "Si je rentre de l’entraînement mercredi,", "dann": "j’appelle ma cousine au lieu de scroller seul·e. (Verre : proximité)" }]
+          "beispiele": [
+            {
+              "wenn": "Si je rentre de l’entraînement mercredi,",
+              "dann": "j’appelle ma cousine au lieu de scroller dans mon coin. (Verre : proximité)"
+            }
+          ]
         },
         {
           "art": "info",
@@ -181,7 +257,7 @@
           "Entrée en matière (5 min) : dessiner un verre au tableau. Demander : « À quoi remarquez-vous qu’il vous manque quelque chose ? » Recueillir sans juger.",
           "Expliquer (5 min) : trait = niveau souhaité, colorier = niveau actuel. Montrer l’exemple « calme » ; un trait bas est aussi juste qu’un trait haut.",
           "Travail individuel (15 min) : remplir les verres, légender les verres vides. Musique calme, pas d’échange.",
-          "Analyser (10 min) : tâche 2 seul·e, puis à deux sur base volontaire : « Quel verre t’a surpris·e ? »",
+          "Analyser (10 min) : tâche 2 en travail individuel, puis à deux sur base volontaire : « Quel verre te surprend ? »",
           "Planifier (5 min) : plan si-alors ; les volontaires le lisent. En reparler une semaine plus tard."
         ],
         "hintergrund": "Les modèles des besoins décrivent ce dont les êtres humains ont besoin pour leur équilibre psychique. Maslow (1943) les a hiérarchisés ; la théorie de l’autodétermination nomme l’autonomie, la compétence et l’appartenance sociale comme besoins psychologiques fondamentaux (Deci & Ryan, 2000). Des besoins durablement insatisfaits vont de pair avec une souffrance accrue (Grawe, 2004). Regarder ses besoins soulage : l’irritabilité ou le repli deviennent compréhensibles. L’écart entre importance et satisfaction montre où agir.",
@@ -194,8 +270,14 @@
           "leichter": "Seulement la première ligne et deux verres personnels ; tâche 2 à l’oral.",
           "schwerer": "Noter, pour les verres presque vides, qui ou quoi les remplissait autrefois."
         },
-        "impulse": ["Quel verre se remplit presque tout seul chez toi ?", "Qui pourrait t’aider à remplir un verre ?"],
-        "tipps": ["Le trait et le coloriage se font aussi au crayon.", "Refaire la feuille quelques semaines plus tard, avec une autre couleur."],
+        "impulse": [
+          "Quel verre se remplit presque tout seul chez toi ?",
+          "Qui pourrait t’aider à remplir un verre ?"
+        ],
+        "tipps": [
+          "Le trait et le coloriage se font aussi au crayon.",
+          "Refaire la feuille quelques semaines plus tard, avec une autre couleur."
+        ],
         "achtung": "Si la sécurité, la nourriture ou le sommeil restent durablement vides, ne pas questionner en plénière : proposer un entretien individuel et informer la direction compétente (responsable). En cas de danger, agir immédiatement selon la procédure interne.",
         "material": "Crayons de couleur ou crayon à papier"
       }
@@ -205,13 +287,33 @@
     "id": "lebensnetz",
     "bereich": "selbstreflexion",
     "thema": "balance",
-    "stufen": ["C4", "ES"],
+    "stufen": [
+      "C4",
+      "ES"
+    ],
     "layout": "jugend",
-    "sozialform": ["einzeln"],
+    "sozialform": [
+      "einzeln"
+    ],
     "dauer": "30–40 Min.",
-    "eldib": ["SOZ-40", "V-33", "V-32", "K-15"],
-    "schlagworte": ["Lebensbereiche", "Zufriedenheit", "Balance", "Ziele", "WOOP"],
-    "verwandt": ["beduerfnis-glaeser", "einfluss-kreise", "werte-glaeser"],
+    "eldib": [
+      "SOZ-40",
+      "V-33",
+      "V-32",
+      "K-15"
+    ],
+    "schlagworte": [
+      "Lebensbereiche",
+      "Zufriedenheit",
+      "Balance",
+      "Ziele",
+      "WOOP"
+    ],
+    "verwandt": [
+      "beduerfnis-glaeser",
+      "einfluss-kreise",
+      "werte-glaeser"
+    ],
     "bild": "icon:target",
     "de": {
       "titel": "Mein Lebensnetz",
@@ -225,15 +327,39 @@
           "art": "aufgabe",
           "text": "Wie zufrieden bist du in jedem Bereich? Mal von innen nach außen so viele Ringe aus, wie es für dich passt.",
           "hinweis": "1 Ring = gar nicht zufrieden, 10 Ringe = sehr zufrieden. Denk an die letzten Wochen, nicht nur an heute.",
-          "symbole": ["malen"]
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "netz",
-          "bereiche": ["Familie & Zuhause", "Freundschaften", "Schule & Lernen", "Freizeit & Hobbys", "Körper & Gesundheit", "Schlaf & Erholung", "Online & Handy", "Zukunft & Pläne"]
+          "bereiche": [
+            "Familie & Zuhause",
+            "Freundschaften",
+            "Schule & Lernen",
+            "Freizeit & Hobbys",
+            "Körper & Gesundheit",
+            "Schlaf & Erholung",
+            "Online & Handy",
+            "Zukunft & Pläne"
+          ]
         },
-        { "art": "seitenumbruch" },
-        { "art": "aufgabe", "text": "Schau dir dein Netz an. Was fällt dir auf?" },
-        { "art": "satzanfaenge", "items": ["Am meisten trägt mich gerade …", "Am dünnsten ist mein Netz bei …", "Überrascht hat mich …"], "linien": 1 },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau dir dein Netz an. Was fällt dir auf?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am meisten trägt mich gerade …",
+            "Am dünnsten ist mein Netz bei …",
+            "Überrascht hat mich …"
+          ],
+          "linien": 1
+        },
         {
           "art": "aufgabe",
           "text": "Such dir einen Bereich aus, der einen Ring mehr bekommen soll. Plane in vier Schritten.",
@@ -241,14 +367,19 @@
         },
         {
           "art": "satzanfaenge",
-          "items": ["Mein Bereich: …", "Ein Ring mehr würde bedeuten: …", "Was mir im Weg stehen könnte: …", "Mein erster Schritt – wann und wo: …"],
+          "items": [
+            "Mein Bereich: …",
+            "Ein Ring mehr würde bedeuten: …",
+            "Was mir im Weg stehen könnte: …",
+            "Mein erster Schritt – wann und wo: …"
+          ],
           "linien": 1
         },
         {
           "art": "info",
           "symbol": "hilfe",
           "titel": "Du entscheidest, was du teilst.",
-          "text": "Dein Netz ist eine Momentaufnahme, kein Zeugnis. Füll es in ein paar Wochen noch einmal aus – mit einer anderen Farbe."
+          "text": "Dein Netz gehört dir. Es ist eine Momentaufnahme, kein Zeugnis. Füll es in ein paar Wochen noch einmal aus – mit einer anderen Farbe."
         }
       ],
       "lehrer": {
@@ -266,34 +397,67 @@
           "Oettingen, G. (2014). Rethinking Positive Thinking. New York: Current.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
-        "differenzierung": { "leichter": "Nur jeden zweiten Ring zählen; Aufgabe 3 mündlich.", "schwerer": "Mit zweiter Farbe das Netz in einem Jahr einzeichnen und zwei Bereiche planen." },
-        "impulse": ["Welcher Bereich stützt einen anderen, wenn es dort schwierig ist?", "Welcher Bereich hängt vor allem von dir selbst ab?"],
-        "tipps": ["Nach einigen Monaten wiederholen und die alte Fassung daneben legen.", "Ein Bereich darf frei bleiben – auch das ist eine Antwort."],
+        "differenzierung": {
+          "leichter": "Nur jeden zweiten Ring zählen; Aufgabe 3 mündlich.",
+          "schwerer": "Mit zweiter Farbe das Netz in einem Jahr einzeichnen und zwei Bereiche planen."
+        },
+        "impulse": [
+          "Welcher Bereich stützt einen anderen, wenn es dort schwierig ist?",
+          "Welcher Bereich hängt vor allem von dir selbst ab?"
+        ],
+        "tipps": [
+          "Nach einigen Monaten wiederholen und die alte Fassung daneben legen.",
+          "Ein Bereich darf frei bleiben – auch das ist eine Antwort."
+        ],
         "achtung": "Ein Netz, das fast überall dünn ist, kann auf starke Belastung hinweisen. Nicht vor der Gruppe ansprechen, sondern ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte"
       }
     },
     "fr": {
       "titel": "Ma toile de vie",
-      "untertitel": "À quel point suis-je satisfait·e en ce moment – et dans quel domaine ?",
+      "untertitel": "Où en suis-je en ce moment, domaine par domaine ?",
       "bausteine": [
         {
           "art": "text",
-          "text": "Ta vie se joue dans beaucoup de domaines. Il est rare que tout aille aussi bien partout : avec les ami·e·s, c’est bien en ce moment, au lycée c’est plus laborieux, et le sommeil passe à la trappe. La toile te montre d’un coup d’œil où elle te porte et où elle est fine."
+          "text": "Ta vie se joue dans beaucoup de domaines. Il est rare que tout aille aussi bien partout : avec les amis, c’est bien en ce moment, au lycée c’est plus laborieux, et le sommeil passe à la trappe. La toile te montre d’un coup d’œil où elle te porte et où elle est fine."
         },
         {
           "art": "aufgabe",
-          "text": "À quel point es-tu satisfait·e dans chaque domaine ? Colorie de l’intérieur vers l’extérieur autant d’anneaux que tu le sens.",
-          "hinweis": "1 anneau = pas du tout satisfait·e, 10 anneaux = très satisfait·e. Pense aux dernières semaines, pas seulement à aujourd’hui.",
-          "symbole": ["malen"]
+          "text": "Comment ça va dans chaque domaine ? Colorie de l’intérieur vers l’extérieur autant d’anneaux que tu le sens.",
+          "hinweis": "1 anneau = ça ne va pas du tout, 10 anneaux = ça va très bien. Pense aux dernières semaines, pas seulement à aujourd’hui.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "netz",
-          "bereiche": ["Famille et maison", "Amitiés", "École et apprendre", "Loisirs et passions", "Corps et santé", "Sommeil et repos", "En ligne et téléphone", "Avenir et projets"]
+          "bereiche": [
+            "Famille et maison",
+            "Amitiés",
+            "École et apprendre",
+            "Loisirs et passions",
+            "Corps et santé",
+            "Sommeil et repos",
+            "En ligne et téléphone",
+            "Avenir et projets"
+          ]
         },
-        { "art": "seitenumbruch" },
-        { "art": "aufgabe", "text": "Regarde ta toile. Qu’est-ce que tu remarques ?" },
-        { "art": "satzanfaenge", "items": ["Ce qui me porte le plus en ce moment : …", "Ma toile est la plus fine du côté de : …", "Ce qui m’a surpris·e : …"], "linien": 1 },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regarde ta toile. Qu’est-ce que tu remarques ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui me porte le plus en ce moment : …",
+            "Ma toile est la plus fine du côté de : …",
+            "Ce qui me surprend : …"
+          ],
+          "linien": 1
+        },
         {
           "art": "aufgabe",
           "text": "Choisis un domaine qui doit gagner un anneau. Planifie en quatre étapes.",
@@ -301,21 +465,26 @@
         },
         {
           "art": "satzanfaenge",
-          "items": ["Mon domaine : …", "Un anneau de plus voudrait dire : …", "Ce qui pourrait me freiner : …", "Mon premier pas – quand et où : …"],
+          "items": [
+            "Mon domaine : …",
+            "Un anneau de plus voudrait dire : …",
+            "Ce qui pourrait me freiner : …",
+            "Mon premier pas – quand et où : …"
+          ],
           "linien": 1
         },
         {
           "art": "info",
           "symbol": "hilfe",
           "titel": "Tu décides de ce que tu partages.",
-          "text": "Ta toile est un instantané, pas un bulletin. Refais-la dans quelques semaines – avec une autre couleur."
+          "text": "Ta toile t’appartient. C’est un instantané, pas un bulletin. Refais-la dans quelques semaines – avec une autre couleur."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes évaluent leur satisfaction dans huit domaines de vie, repèrent forces et chantiers et planifient un prochain pas pour un domaine.",
         "ablauf": [
           "Entrée en matière (5 min) : demander : « Dans quels domaines se joue votre vie ? » Comparer avec les huit domaines de la feuille.",
-          "Expliquer (5 min) : colorier les anneaux de l’intérieur vers l’extérieur ; 1 anneau = pas du tout satisfait·e, 10 = très satisfait·e. Montrer un domaine au tableau.",
+          "Expliquer (5 min) : colorier les anneaux de l’intérieur vers l’extérieur ; 1 anneau = ça ne va pas du tout, 10 = ça va très bien. Montrer un domaine au tableau.",
           "Travail individuel (10 min) : colorier la toile, compléter la tâche 2. Pas de comparaison avec le voisin.",
           "Planifier (10 min) : tâche 3 en quatre étapes : souhait, résultat, obstacle, plan. Aider à rendre le premier pas petit.",
           "Clôture (5 min) : les volontaires nomment leur domaine et leur premier pas, sans chiffres."
@@ -326,9 +495,18 @@
           "Oettingen, G. (2014). Rethinking Positive Thinking. New York: Current.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
-        "differenzierung": { "leichter": "Ne compter qu’un anneau sur deux ; tâche 3 à l’oral.", "schwerer": "Dessiner avec une deuxième couleur la toile dans un an et planifier deux domaines." },
-        "impulse": ["Quel domaine en soutient un autre quand ça va mal là-bas ?", "Quel domaine dépend surtout de toi ?"],
-        "tipps": ["Refaire la toile quelques mois plus tard et poser l’ancienne à côté.", "Un domaine peut rester vide – c’est aussi une réponse."],
+        "differenzierung": {
+          "leichter": "Ne compter qu’un anneau sur deux ; tâche 3 à l’oral.",
+          "schwerer": "Dessiner avec une deuxième couleur la toile dans un an et planifier deux domaines."
+        },
+        "impulse": [
+          "Quel domaine en soutient un autre quand ça va mal là-bas ?",
+          "Quel domaine dépend surtout de toi ?"
+        ],
+        "tipps": [
+          "Refaire la toile quelques mois plus tard et poser l’ancienne à côté.",
+          "Un domaine peut rester vide – c’est aussi une réponse."
+        ],
         "achtung": "Une toile fine presque partout peut signaler une forte détresse. Ne pas en parler devant le groupe, mais proposer un entretien individuel et informer la direction compétente (responsable).",
         "material": "Crayons de couleur"
       }
@@ -338,13 +516,32 @@
     "id": "wochen-kurve",
     "bereich": "selbstreflexion",
     "thema": "rueckblick",
-    "stufen": ["C4", "ES"],
+    "stufen": [
+      "C4",
+      "ES"
+    ],
     "layout": "jugend",
-    "sozialform": ["einzeln"],
+    "sozialform": [
+      "einzeln"
+    ],
     "dauer": "täglich 2 Min., Auswertung 25 Min.",
-    "eldib": ["K-26", "V-29", "V-33", "SOZ-36"],
-    "schlagworte": ["Stimmung", "Energie", "Wochenrückblick", "Selbstbeobachtung", "Muster erkennen"],
-    "verwandt": ["tag-in-24-stunden", "beduerfnis-glaeser"],
+    "eldib": [
+      "K-26",
+      "V-29",
+      "V-33",
+      "SOZ-36"
+    ],
+    "schlagworte": [
+      "Stimmung",
+      "Energie",
+      "Wochenrückblick",
+      "Selbstbeobachtung",
+      "Muster erkennen"
+    ],
+    "verwandt": [
+      "tag-in-24-stunden",
+      "beduerfnis-glaeser"
+    ],
     "bild": "icon:mood-smile",
     "de": {
       "titel": "Meine Woche als Kurve",
@@ -354,27 +551,69 @@
           "art": "aufgabe",
           "text": "Setz an jedem Abend zwei Punkte: einen für deine Stimmung, einen für deine Energie. Am Ende der Woche verbindest du sie zu zwei Linien.",
           "hinweis": "Stimmung: Wie ging es dir? Energie: Wie viel Kraft hattest du? Beides kann weit auseinanderliegen – gut gelaunt und trotzdem müde.",
-          "symbole": ["malen"]
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "kurve",
-          "x": ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
+          "x": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
           "oben": "richtig gut",
           "mitte": "geht so",
           "unten": "sehr schlecht",
-          "linien": ["Stimmung", "Energie"],
+          "linien": [
+            "Stimmung",
+            "Energie"
+          ],
           "hoehe": 200
         },
-        { "art": "aufgabe", "text": "Schau auf deinen höchsten und deinen tiefsten Punkt. Was war da los?" },
+        {
+          "art": "aufgabe",
+          "text": "Schau auf deinen höchsten und deinen tiefsten Punkt. Was war da los?"
+        },
         {
           "art": "tabelle",
-          "spalten": ["Punkt", "Tag", "Was war los?", "Was hat geholfen – oder gefehlt?"],
+          "spalten": [
+            "Punkt",
+            "Tag",
+            "Was war los?",
+            "Was hat geholfen – oder gefehlt?"
+          ],
           "zeilen": 2,
-          "breiten": [0.8, 0.6, 2, 2],
-          "beispiel": ["hoch", "Fr", "Mathetest geschafft, danach mit Diogo Fußball", "Bewegung, Leute, Erleichterung"]
+          "breiten": [
+            0.8,
+            0.6,
+            2,
+            2
+          ],
+          "beispiel": [
+            "hoch",
+            "Fr",
+            "Mathetest geschafft, danach mit Diogo Fußball",
+            "Bewegung, Leute, Erleichterung"
+          ]
         },
-        { "art": "aufgabe", "text": "Hängen Stimmung und Energie bei dir zusammen? Und was hatte Einfluss – Schlaf, Menschen, Bildschirm, Bewegung?" },
-        { "art": "satzanfaenge", "items": ["Mir fällt auf: …", "Gutgetan hat mir diese Woche …", "Nächste Woche probiere ich …"], "linien": 1 },
+        {
+          "art": "aufgabe",
+          "text": "Hängen Stimmung und Energie bei dir zusammen? Und was hatte Einfluss – Schlaf, Menschen, Bildschirm, Bewegung?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mir fällt auf: …",
+            "Gutgetan hat mir diese Woche …",
+            "Nächste Woche probiere ich …"
+          ],
+          "linien": 1
+        },
         {
           "art": "info",
           "symbol": "wissen",
@@ -396,42 +635,93 @@
           "Baumeister, R. F., Bratslavsky, E., Finkenauer, C. & Vohs, K. D. (2001). Bad is stronger than good. Review of General Psychology, 5(4), 323–370.",
           "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum."
         ],
-        "differenzierung": { "leichter": "Nur die Stimmungslinie zeichnen.", "schwerer": "Zusätzlich Schlafstunden notieren und eine Vermutung für die nächste Woche prüfen." },
-        "impulse": ["Welcher kleine Moment hat einen Tag nach oben gezogen?", "Was davon kannst du selbst beeinflussen?"],
-        "tipps": ["Die Blätter im Kursraum aufbewahren, damit kein Tag vergessen wird.", "Verpasste Tage bleiben leer – nachträgliche Punkte sind ungenau."],
+        "differenzierung": {
+          "leichter": "Nur die Stimmungslinie zeichnen.",
+          "schwerer": "Zusätzlich Schlafstunden notieren und eine Vermutung für die nächste Woche prüfen."
+        },
+        "impulse": [
+          "Welcher kleine Moment hat einen Tag nach oben gezogen?",
+          "Was davon kannst du selbst beeinflussen?"
+        ],
+        "tipps": [
+          "Die Blätter im Kursraum aufbewahren, damit kein Tag vergessen wird.",
+          "Verpasste Tage bleiben leer – nachträgliche Punkte sind ungenau."
+        ],
         "achtung": "Bleibt die Stimmungslinie lange tief oder erzählt jemand von anhaltender Traurigkeit, Schlaflosigkeit oder Rückzug, ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
         "material": "Zwei verschiedene Stifte"
       }
     },
     "fr": {
       "titel": "Ma semaine en courbes",
-      "untertitel": "Humeur et énergie à l’œil – jour après jour",
+      "untertitel": "Humeur et énergie sous les yeux – jour après jour",
       "bausteine": [
         {
           "art": "aufgabe",
           "text": "Chaque soir, place deux points : un pour ton humeur, un pour ton énergie. À la fin de la semaine, relie-les en deux lignes.",
-          "hinweis": "Humeur : comment ça allait ? Énergie : combien de force avais-tu ? Les deux peuvent être très différentes – de bonne humeur et pourtant fatigué·e.",
-          "symbole": ["malen"]
+          "hinweis": "Humeur : comment ça allait ? Énergie : combien de force avais-tu ? Les deux peuvent être très différentes – de bonne humeur et pourtant sans énergie.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "kurve",
-          "x": ["Lu", "Ma", "Me", "Je", "Ve", "Sa", "Di"],
+          "x": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
           "oben": "vraiment bien",
           "mitte": "moyen",
           "unten": "très mal",
-          "linien": ["Humeur", "Énergie"],
+          "linien": [
+            "Humeur",
+            "Énergie"
+          ],
           "hoehe": 200
         },
-        { "art": "aufgabe", "text": "Regarde ton point le plus haut et ton point le plus bas. Que se passait-il ?" },
+        {
+          "art": "aufgabe",
+          "text": "Regarde ton point le plus haut et ton point le plus bas. Que se passait-il ?"
+        },
         {
           "art": "tabelle",
-          "spalten": ["Point", "Jour", "Que se passait-il ?", "Ce qui a aidé – ou manqué"],
+          "spalten": [
+            "Point",
+            "Jour",
+            "Que se passait-il ?",
+            "Ce qui a aidé – ou manqué"
+          ],
           "zeilen": 2,
-          "breiten": [0.8, 0.6, 2, 2],
-          "beispiel": ["haut", "Ve", "Réussi le contrôle de maths, puis foot avec Diogo", "bouger, les copains, du soulagement"]
+          "breiten": [
+            0.8,
+            0.6,
+            2,
+            2
+          ],
+          "beispiel": [
+            "haut",
+            "Ve",
+            "Réussi le contrôle de maths, puis foot avec Diogo",
+            "bouger, les copains, du soulagement"
+          ]
         },
-        { "art": "aufgabe", "text": "Ton humeur et ton énergie vont-elles ensemble ? Et qu’est-ce qui a joué – le sommeil, les gens, les écrans, le sport ?" },
-        { "art": "satzanfaenge", "items": ["Je remarque : …", "Ce qui m’a fait du bien cette semaine : …", "La semaine prochaine, j’essaie : …"], "linien": 1 },
+        {
+          "art": "aufgabe",
+          "text": "Ton humeur et ton énergie vont-elles ensemble ? Et qu’est-ce qui a joué – le sommeil, les gens, les écrans, le sport ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je remarque : …",
+            "Ce qui m’a fait du bien cette semaine : …",
+            "La semaine prochaine, j’essaie : …"
+          ],
+          "linien": 1
+        },
         {
           "art": "info",
           "symbol": "wissen",
@@ -444,7 +734,7 @@
         "ablauf": [
           "Lundi (10 min) : distribuer la feuille, expliquer les deux lignes. Exemple au tableau : bonne humeur, énergie basse – qu’y a-t-il derrière ?",
           "Chaque jour (2 min) : en fin de journée, placer deux points, par exemple au tour de clôture. Sans commentaire, sans comparaison.",
-          "En fin de semaine (15 min) : relier les points, faire seul·e les tâches 2 et 3.",
+          "En fin de semaine (15 min) : relier les points, faire les tâches 2 et 3 individuellement.",
           "Échange (10 min) : discuter seulement « Qu’est-ce qui t’a fait du bien ? » ; noter les idées au tableau."
         ],
         "hintergrund": "L’auto-observation est une base de l’autogestion : ce que l’on note régulièrement devient plus conscient et modifiable (Kanfer, Reinecker & Schmelzer, 2012). Des notes quotidiennes sont plus justes qu’un bilan le week-end, car les expériences négatives pèsent plus lourd et restent plus longtemps en mémoire (Baumeister et al., 2001). Deux lignes séparées pour l’humeur et l’énergie aident à ne pas confondre fatigue et tristesse. Noter ce qui a fait du bien prolonge les expériences positives (Bryant & Veroff, 2007).",
@@ -453,9 +743,18 @@
           "Baumeister, R. F., Bratslavsky, E., Finkenauer, C. & Vohs, K. D. (2001). Bad is stronger than good. Review of General Psychology, 5(4), 323–370.",
           "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum."
         ],
-        "differenzierung": { "leichter": "Ne dessiner que la ligne de l’humeur.", "schwerer": "Noter aussi les heures de sommeil et vérifier une hypothèse la semaine suivante." },
-        "impulse": ["Quel petit moment a tiré une journée vers le haut ?", "Sur quoi peux-tu agir toi-même ?"],
-        "tipps": ["Garder les feuilles en classe pour ne pas oublier de jour.", "Un jour oublié reste vide – les points ajoutés après coup sont imprécis."],
+        "differenzierung": {
+          "leichter": "Ne dessiner que la ligne de l’humeur.",
+          "schwerer": "Noter aussi les heures de sommeil et vérifier une hypothèse la semaine suivante."
+        },
+        "impulse": [
+          "Quel petit moment a tiré une journée vers le haut ?",
+          "Sur quoi peux-tu agir toi-même ?"
+        ],
+        "tipps": [
+          "Garder les feuilles en classe pour ne pas oublier de jour.",
+          "Un jour oublié reste vide – les points ajoutés après coup sont imprécis."
+        ],
         "achtung": "Si la ligne de l’humeur reste basse longtemps ou si quelqu’un parle d’une tristesse persistante, d’insomnie ou de repli, proposer un entretien individuel et informer la direction compétente (responsable).",
         "material": "Deux stylos différents"
       }
@@ -465,13 +764,31 @@
     "id": "lebenslinie",
     "bereich": "selbstreflexion",
     "thema": "rueckblick",
-    "stufen": ["ES"],
+    "stufen": [
+      "ES"
+    ],
     "layout": "jugend",
-    "sozialform": ["einzeln"],
+    "sozialform": [
+      "einzeln"
+    ],
     "dauer": "40–50 Min.",
-    "eldib": ["K-15", "K-18", "SOZ-24", "SOZ-40"],
-    "schlagworte": ["Lebenslinie", "Biografie", "Kraftquellen", "Resilienz", "Identität"],
-    "verwandt": ["werte-glaeser", "einfluss-kreise"],
+    "eldib": [
+      "K-15",
+      "K-18",
+      "SOZ-24",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Lebenslinie",
+      "Biografie",
+      "Kraftquellen",
+      "Resilienz",
+      "Identität"
+    ],
+    "verwandt": [
+      "werte-glaeser",
+      "einfluss-kreise"
+    ],
     "bild": "icon:route",
     "de": {
       "titel": "Meine Lebenslinie",
@@ -486,25 +803,70 @@
         {
           "art": "aufgabe",
           "text": "Zeichne deine Lebenslinie von der Geburt bis heute. Wo ging es dir gut, wo war es schwer?",
-          "hinweis": "Setz zuerst Punkte für Zeiten, an die du dich erinnerst, und verbinde sie dann. Gib den wichtigsten Punkten einen kurzen Namen. Die Linie darf springen, zittern oder lange flach bleiben.",
-          "symbole": ["malen", "schreiben"]
+          "hinweis": "Setz zuerst Punkte für Zeiten, an die du dich erinnerst, und verbinde sie dann. Gib den wichtigsten Punkten einen kurzen Namen. Die Linie darf springen, zittern oder lange flach bleiben. Bist du woanders zur Schule gegangen? Dann schreib deine eigenen Stationen darüber.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
         },
-        { "art": "kurve", "x": ["Geburt", "Précoce", "Cycle 1–2", "Cycle 3–4", "Lycée", "heute"], "oben": "richtig gut", "unten": "richtig schwer", "hoehe": 250 },
+        {
+          "art": "kurve",
+          "x": [
+            "Geburt",
+            "Précoce",
+            "Cycle 1–2",
+            "Cycle 3–4",
+            "Lycée",
+            "heute"
+          ],
+          "oben": "richtig gut",
+          "unten": "richtig schwer",
+          "hoehe": 460
+        },
+        {
+          "art": "seitenumbruch"
+        },
         {
           "art": "aufgabe",
           "text": "Denk an einen Tiefpunkt. Was hat dir damals geholfen, wieder nach oben zu kommen?",
-          "hinweis": "Menschen, Orte, Dinge, die du getan hast – oder einfach die Zeit."
+          "hinweis": "Nimm eine Zeit, über die du ruhig nachdenken kannst – keine, die dich gerade aufwühlt. Geholfen haben vielleicht Menschen, Orte, Dinge, die du getan hast – oder einfach die Zeit."
         },
-        { "art": "satzanfaenge", "items": ["Geholfen hat mir …", "Das habe ich damals über mich gelernt: …", "Diese Stärke von mir hat sich dabei gezeigt: …"], "linien": 2 },
-        { "art": "seitenumbruch" },
-        { "art": "aufgabe", "text": "Wenn deine Lebenslinie ein Buch wäre: Wie heißt das Kapitel, in dem du gerade steckst – und wie soll das nächste heißen?" },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Geholfen hat mir …",
+            "Das habe ich damals über mich gelernt: …",
+            "Diese Stärke von mir hat sich dabei gezeigt: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn deine Lebenslinie ein Buch wäre: Wie heißt das Kapitel, in dem du gerade steckst – und wie soll das nächste heißen?"
+        },
         {
           "art": "spalten",
           "verhaeltnis": "1:1",
-          "links": [{ "art": "feld", "label": "Mein Kapitel jetzt", "beispiel": "Neu im Lycée und noch auf der Suche", "hoehe": 2.6 }],
-          "rechts": [{ "art": "feld", "label": "Mein nächstes Kapitel", "beispiel": "Ankommen und Freunde finden", "hoehe": 2.6 }]
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mein Kapitel jetzt",
+              "beispiel": "Neu im Lycée und noch auf der Suche",
+              "hoehe": 2.6
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Mein nächstes Kapitel",
+              "beispiel": "Ankommen und Freunde finden",
+              "hoehe": 2.6
+            }
+          ]
         },
-        { "art": "notfall" }
+        {
+          "art": "notfall"
+        }
       ],
       "lehrer": {
         "ziel": "Die Jugendlichen betrachten ihren Weg mit Hochs und Tiefs und benennen, was sie in schweren Zeiten getragen hat.",
@@ -521,45 +883,99 @@
           "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
           "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166."
         ],
-        "differenzierung": { "leichter": "Nur die letzten zwei, drei Jahre zeichnen; Aufgabe 3 weglassen.", "schwerer": "Die Linie in die Zukunft verlängern." },
-        "impulse": ["Welche Menschen tauchen an deinen Hochpunkten auf?", "Was würdest du deinem jüngeren Ich an einem Tiefpunkt sagen?"],
-        "tipps": ["Mit Bleistift zeichnen lassen.", "Nie auffordern, die Linie zu zeigen oder Tiefpunkte zu erklären."],
+        "differenzierung": {
+          "leichter": "Nur die letzten zwei, drei Jahre zeichnen; Aufgabe 3 weglassen.",
+          "schwerer": "Die Linie in die Zukunft verlängern."
+        },
+        "impulse": [
+          "Welche Menschen tauchen an deinen Hochpunkten auf?",
+          "Was würdest du deinem jüngeren Ich an einem Tiefpunkt sagen?"
+        ],
+        "tipps": [
+          "Mit Bleistift zeichnen lassen.",
+          "Nie auffordern, die Linie zu zeigen oder Tiefpunkte zu erklären."
+        ],
         "achtung": "Kann schmerzliche Erinnerungen wecken: nicht bei akuter Krise einsetzen, nichts im Plenum vertiefen, danach ansprechbar sein und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gefährdung oder Suizidgedanken sofort nach dem internen Ablauf handeln.",
         "material": "Bleistift, Radiergummi"
       }
     },
     "fr": {
       "titel": "Ma ligne de vie",
-      "untertitel": "Les hauts et les bas jusqu’à aujourd’hui – et ce qui m’a porté·e",
+      "untertitel": "Les hauts et les bas jusqu’à aujourd’hui – et ce qui m’a donné de la force",
       "bausteine": [
         {
           "art": "info",
           "symbol": "hilfe",
           "titel": "Tu décides de ce que tu inscris.",
-          "text": "Ta ligne t’appartient. Tu n’as rien à écrire que tu ne veux pas écrire. Un signe que toi seul·e comprends suffit."
+          "text": "Ta ligne t’appartient. Tu n’as rien à écrire que tu ne veux pas écrire. Un signe qui n’a de sens que pour toi suffit."
         },
         {
           "art": "aufgabe",
           "text": "Dessine ta ligne de vie de ta naissance à aujourd’hui. Quand est-ce que ça allait bien, quand était-ce difficile ?",
           "hinweis": "Place d’abord des points pour les périodes dont tu te souviens, puis relie-les. Donne un nom court aux points les plus importants. La ligne peut sauter, trembler ou rester plate longtemps.",
-          "symbole": ["malen", "schreiben"]
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
         },
-        { "art": "kurve", "x": ["Naissance", "Précoce", "Cycle 1–2", "Cycle 3–4", "Lycée", "Aujourd’hui"], "oben": "vraiment bien", "unten": "vraiment dur", "hoehe": 250 },
+        {
+          "art": "kurve",
+          "x": [
+            "Naissance",
+            "Précoce",
+            "Cycle 1–2",
+            "Cycle 3–4",
+            "Lycée",
+            "Aujourd’hui"
+          ],
+          "oben": "vraiment bien",
+          "unten": "vraiment dur",
+          "hoehe": 460
+        },
+        {
+          "art": "seitenumbruch"
+        },
         {
           "art": "aufgabe",
-          "text": "Pense à un point bas. Qu’est-ce qui t’a aidé·e à remonter à l’époque ?",
+          "text": "Pense à un point bas. Qu’est-ce qui t’a servi, à l’époque, pour remonter ?",
           "hinweis": "Des personnes, des lieux, des choses que tu as faites – ou simplement le temps."
         },
-        { "art": "satzanfaenge", "items": ["Ce qui m’a aidé·e : …", "Ce que j’ai appris sur moi à ce moment-là : …", "Une force que j’ai montrée : …"], "linien": 2 },
-        { "art": "seitenumbruch" },
-        { "art": "aufgabe", "text": "Si ta ligne de vie était un livre : comment s’appelle le chapitre que tu vis en ce moment – et comment s’appellera le suivant ?" },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui m’a servi : …",
+            "Ce que j’ai appris sur moi à ce moment-là : …",
+            "Une force que j’ai montrée : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Si ta ligne de vie était un livre : comment s’appelle le chapitre que tu vis en ce moment – et comment s’appellera le suivant ?"
+        },
         {
           "art": "spalten",
           "verhaeltnis": "1:1",
-          "links": [{ "art": "feld", "label": "Mon chapitre actuel", "beispiel": "Nouveau au lycée, encore en train de chercher ma place", "hoehe": 2.6 }],
-          "rechts": [{ "art": "feld", "label": "Mon prochain chapitre", "beispiel": "Trouver mes repères et des ami·e·s", "hoehe": 2.6 }]
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mon chapitre actuel",
+              "beispiel": "Nouveau au lycée, encore en train de chercher ma place",
+              "hoehe": 2.6
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Mon prochain chapitre",
+              "beispiel": "Trouver mes repères et des amis",
+              "hoehe": 2.6
+            }
+          ]
         },
-        { "art": "notfall" }
+        {
+          "art": "notfall"
+        }
       ],
       "lehrer": {
         "ziel": "Les jeunes regardent leur parcours avec ses hauts et ses bas, nomment ce qui les a portés et se voient comme des personnes qui ont surmonté des difficultés.",
@@ -567,18 +983,27 @@
           "Seulement dans un groupe de confiance ; clarifier avant qui est disponible ensuite.",
           "Entrée en matière (5 min) : ligne d’exemple sans rien de personnel au tableau ; personne ne doit rien montrer.",
           "Travail individuel (15 min) : dessiner et nommer la ligne, ambiance calme.",
-          "Ressources (10 min) : tâche 2 seul·e ; demander à voix basse : « Qu’est-ce qui t’a aidé·e ? »",
+          "Ressources (10 min) : tâche 2 en travail individuel ; demander à voix basse : « Qu’est-ce qui t’a servi à ce moment-là ? »",
           "Chapitres (10 min) : tâche 3 ; les volontaires ne lisent que le titre. Montrer les numéros d’aide."
         ],
-        "hintergrund": "La ligne de vie vient du travail biographique. À l’adolescence, la question « Qui suis-je et comment suis-je devenu·e ainsi ? » devient centrale (Erikson, 1968). Reconnaître ce qui a aidé dans les moments difficiles renforce le sentiment d’avoir surmonté des épreuves ; la résilience naît le plus souvent de facteurs de protection ordinaires comme des relations fiables et des compétences personnelles (Masten, 2014). Écrire sur des expériences marquantes peut soulager si c’est volontaire et protégé (Pennebaker, 1997). La feuille oriente le regard vers les forces qui ont permis de sortir des points bas.",
+        "hintergrund": "La ligne de vie vient du travail biographique. À l’adolescence, la question « Qui suis-je et d’où vient ce que je suis ? » devient centrale (Erikson, 1968). Reconnaître ce qui a aidé dans les moments difficiles renforce le sentiment d’avoir surmonté des épreuves ; la résilience naît le plus souvent de facteurs de protection ordinaires comme des relations fiables et des compétences personnelles (Masten, 2014). Écrire sur des expériences marquantes peut soulager si c’est volontaire et protégé (Pennebaker, 1997). La feuille oriente le regard vers les forces qui ont permis de sortir des points bas.",
         "quellen": [
           "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton.",
           "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
           "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166."
         ],
-        "differenzierung": { "leichter": "Ne dessiner que les deux ou trois dernières années ; laisser tomber la tâche 3.", "schwerer": "Prolonger la ligne vers l’avenir." },
-        "impulse": ["Quelles personnes apparaissent à tes points hauts ?", "Que dirais-tu à ton toi plus jeune à un point bas ?"],
-        "tipps": ["Faire dessiner au crayon.", "Ne jamais demander de montrer la ligne ou d’expliquer les points bas."],
+        "differenzierung": {
+          "leichter": "Ne dessiner que les deux ou trois dernières années ; laisser tomber la tâche 3.",
+          "schwerer": "Prolonger la ligne vers l’avenir."
+        },
+        "impulse": [
+          "Quelles personnes apparaissent à tes points hauts ?",
+          "Que dirais-tu à ton toi plus jeune à un point bas ?"
+        ],
+        "tipps": [
+          "Faire dessiner au crayon.",
+          "Ne jamais demander de montrer la ligne ou d’expliquer les points bas."
+        ],
         "achtung": "Peut réveiller des souvenirs douloureux : pas en cas de crise aiguë, rien à approfondir en plénière, rester disponible et informer la direction compétente (responsable). En cas de danger ou d’idées suicidaires, agir immédiatement selon la procédure interne.",
         "material": "Crayon à papier, gomme"
       }
@@ -588,13 +1013,34 @@
     "id": "einfluss-kreise",
     "bereich": "selbstreflexion",
     "thema": "einfluss",
-    "stufen": ["C4", "ES"],
+    "stufen": [
+      "C4",
+      "ES"
+    ],
     "layout": "jugend",
-    "sozialform": ["einzeln", "gruppe"],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "30–40 Min.",
-    "eldib": ["V-28", "V-32", "V-23", "KOG-61"],
-    "schlagworte": ["Sorgen", "Einfluss", "Gelassenheit", "Problemlösen", "Hilfe holen"],
-    "verwandt": ["lebensnetz", "werte-glaeser", "wochen-kurve"],
+    "eldib": [
+      "V-28",
+      "V-32",
+      "V-23",
+      "KOG-61"
+    ],
+    "schlagworte": [
+      "Sorgen",
+      "Einfluss",
+      "Gelassenheit",
+      "Problemlösen",
+      "Hilfe holen"
+    ],
+    "verwandt": [
+      "lebensnetz",
+      "werte-glaeser",
+      "wochen-kurve"
+    ],
     "bild": "icon:hand-grab",
     "de": {
       "titel": "Was liegt in meiner Hand?",
@@ -604,22 +1050,48 @@
           "art": "geschichte",
           "titel": "Drei Sorgen an einem Abend",
           "bild": "figur:ben:besorgt",
-          "text": "Tiago liegt wach. Morgen ist Deutschtest, und er hat erst die Hälfte gelernt. Seine Eltern streiten seit Wochen, und im Klassenchat wird über ihn gelästert. Alles dreht sich gleichzeitig in seinem Kopf. Dann fällt ihm ein, was sein Educateur gesagt hat: „Nicht jede Sorge braucht dieselbe Antwort.“"
+          "text": "Tiago liegt wach. Morgen ist Deutschtest, und er hat erst die Hälfte gelernt. Seine Eltern streiten seit Wochen, und im Klassenchat wird über ihn gelästert. Alles dreht sich gleichzeitig in seinem Kopf. Dann fällt ihm ein, was sein Éducateur gesagt hat: „Nicht jede Sorge braucht dieselbe Antwort.“"
         },
         {
           "art": "aufgabe",
           "text": "Was beschäftigt dich gerade? Schreib jede Sorge in den Kreis, in den sie gehört.",
-          "hinweis": "Innen: Das kann ich selbst ändern. Mitte: Da kann ich mitreden oder um Hilfe bitten. Außen: Darauf habe ich keinen Einfluss. Stichworte reichen.",
-          "symbole": ["schreiben", "nachdenken"]
+          "hinweis": "Innen: Das kann ich selbst ändern. Mitte: Da kann ich mitreden oder um Hilfe bitten. Außen: Darauf habe ich keinen Einfluss. Stichworte reichen. Das Blatt gehört dir.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
         },
-        { "art": "zielscheibe", "ringe": ["Darauf habe ich keinen Einfluss", "Da kann ich mitreden", "Das kann ich selbst ändern"], "mitte": "Ich" },
-        { "art": "aufgabe", "text": "Nimm aus jedem Kreis eine Sorge. Was tust du damit?" },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "Darauf habe ich keinen Einfluss",
+            "Da kann ich mitreden",
+            "Das kann ich selbst ändern"
+          ],
+          "mitte": "Ich"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nimm aus jedem Kreis eine Sorge. Was tust du damit?"
+        },
         {
           "art": "tabelle",
-          "spalten": ["Kreis", "Meine Sorge", "Was ich tue"],
+          "spalten": [
+            "Kreis",
+            "Meine Sorge",
+            "Was ich tue"
+          ],
           "zeilen": 3,
-          "breiten": [0.8, 1.6, 2.2],
-          "beispiel": ["innen", "Deutschtest morgen", "heute noch 30 Minuten Kapitel 4 lernen, dann schlafen"]
+          "breiten": [
+            0.8,
+            1.6,
+            2.2
+          ],
+          "beispiel": [
+            "innen",
+            "Deutschtest morgen",
+            "heute noch 30 Minuten Kapitel 4 lernen, dann schlafen"
+          ]
         },
         {
           "art": "info",
@@ -631,7 +1103,10 @@
             "Außen: loslassen – dich um dich kümmern, statt die Sorge immer wieder zu wälzen."
           ]
         },
-        { "art": "aufgabe", "text": "Was hilft dir, eine Sorge aus dem äußeren Kreis für heute beiseitezulegen?" },
+        {
+          "art": "aufgabe",
+          "text": "Was hilft dir, eine Sorge aus dem äußeren Kreis für heute beiseitezulegen?"
+        },
         {
           "art": "ankreuzen",
           "items": [
@@ -660,9 +1135,18 @@
           "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
           "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford."
         ],
-        "differenzierung": { "leichter": "Mit den Sorgen aus der Geschichte arbeiten.", "schwerer": "Für eine Sorge aus dem mittleren Kreis einen Satz formulieren, mit dem man um Hilfe bittet." },
-        "impulse": ["Welche Sorge kann vom äußeren in den mittleren Kreis wandern?", "Wer kann dir bei einer Sorge aus dem mittleren Kreis helfen?"],
-        "tipps": ["Eine feste Sorgenzeit ausprobieren: täglich zehn Minuten Sorgen aufschreiben, sonst bewusst aufschieben.", "Passt gut vor Prüfungsphasen."],
+        "differenzierung": {
+          "leichter": "Mit den Sorgen aus der Geschichte arbeiten.",
+          "schwerer": "Für eine Sorge aus dem mittleren Kreis einen Satz formulieren, mit dem man um Hilfe bittet."
+        },
+        "impulse": [
+          "Welche Sorge kann vom äußeren in den mittleren Kreis wandern?",
+          "Wer kann dir bei einer Sorge aus dem mittleren Kreis helfen?"
+        ],
+        "tipps": [
+          "Eine feste Sorgenzeit ausprobieren: täglich zehn Minuten Sorgen aufschreiben, sonst bewusst aufschieben.",
+          "Passt gut vor Prüfungsphasen."
+        ],
         "achtung": "Tauchen Sorgen um Gewalt, Vernachlässigung oder die Sicherheit zu Hause auf, nicht im Plenum vertiefen: Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und bei Gefährdung sofort nach dem internen Ablauf handeln.",
         "material": "Stifte"
       }
@@ -680,17 +1164,43 @@
         {
           "art": "aufgabe",
           "text": "Qu’est-ce qui te préoccupe en ce moment ? Écris chaque souci dans le cercle où il a sa place.",
-          "hinweis": "Au centre : je peux le changer moi-même. Au milieu : je peux donner mon avis ou demander de l’aide. À l’extérieur : je n’ai aucune influence. Quelques mots suffisent.",
-          "symbole": ["schreiben", "nachdenken"]
+          "hinweis": "Au centre : je peux le changer moi-même. Au milieu : je peux donner mon avis ou demander de l’aide. À l’extérieur : je n’ai aucune influence. Quelques mots suffisent. Cette feuille t’appartient.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
         },
-        { "art": "zielscheibe", "ringe": ["Je n’ai aucune influence", "Je peux donner mon avis", "Je peux le changer moi-même"], "mitte": "Moi" },
-        { "art": "aufgabe", "text": "Prends un souci dans chaque cercle. Qu’est-ce que tu en fais ?" },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "Je n’ai aucune influence",
+            "Je peux donner mon avis",
+            "Je peux le changer moi-même"
+          ],
+          "mitte": "Moi"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prends un souci dans chaque cercle. Qu’est-ce que tu en fais ?"
+        },
         {
           "art": "tabelle",
-          "spalten": ["Cercle", "Mon souci", "Ce que je fais"],
+          "spalten": [
+            "Cercle",
+            "Mon souci",
+            "Ce que je fais"
+          ],
           "zeilen": 3,
-          "breiten": [0.8, 1.6, 2.2],
-          "beispiel": ["centre", "contrôle d’allemand demain", "encore 30 minutes sur le chapitre 4 ce soir, puis dormir"]
+          "breiten": [
+            0.8,
+            1.6,
+            2.2
+          ],
+          "beispiel": [
+            "centre",
+            "contrôle d’allemand demain",
+            "encore 30 minutes sur le chapitre 4 ce soir, puis dormir"
+          ]
         },
         {
           "art": "info",
@@ -702,7 +1212,10 @@
             "À l’extérieur : lâcher prise – prendre soin de toi au lieu de ressasser le souci."
           ]
         },
-        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide à mettre de côté, pour aujourd’hui, un souci du cercle extérieur ?" },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui t’aide à mettre de côté, pour aujourd’hui, un souci du cercle extérieur ?"
+        },
         {
           "art": "ankreuzen",
           "items": [
@@ -731,9 +1244,18 @@
           "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
           "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford."
         ],
-        "differenzierung": { "leichter": "Travailler avec les soucis de l’histoire.", "schwerer": "Pour un souci du cercle du milieu, formuler une phrase pour demander de l’aide." },
-        "impulse": ["Quel souci peut passer du cercle extérieur à celui du milieu ?", "Qui peut t’aider pour un souci du cercle du milieu ?"],
-        "tipps": ["Essayer un moment fixe pour les soucis : dix minutes par jour pour les écrire, puis les reporter consciemment.", "Convient bien avant les examens."],
+        "differenzierung": {
+          "leichter": "Travailler avec les soucis de l’histoire.",
+          "schwerer": "Pour un souci du cercle du milieu, formuler une phrase pour demander de l’aide."
+        },
+        "impulse": [
+          "Quel souci peut passer du cercle extérieur à celui du milieu ?",
+          "Qui peut t’aider pour un souci du cercle du milieu ?"
+        ],
+        "tipps": [
+          "Essayer un moment fixe pour les soucis : dix minutes par jour pour les écrire, puis les reporter consciemment.",
+          "Convient bien avant les examens."
+        ],
         "achtung": "Si des soucis liés à la violence, à la négligence ou à la sécurité à la maison apparaissent, ne pas approfondir en plénière : proposer un entretien individuel, informer la direction compétente (responsable) et, en cas de danger, agir immédiatement selon la procédure interne.",
         "material": "Stylos"
       }
@@ -743,13 +1265,33 @@
     "id": "werte-glaeser",
     "bereich": "selbstreflexion",
     "thema": "werte",
-    "stufen": ["ES"],
+    "stufen": [
+      "ES"
+    ],
     "layout": "jugend",
-    "sozialform": ["einzeln", "gruppe"],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "35–45 Min.",
-    "eldib": ["SOZ-35", "SOZ-39", "K-34", "KOG-55"],
-    "schlagworte": ["Werte", "Entscheidungen", "Identität", "Zivilcourage", "Wenn-dann-Plan"],
-    "verwandt": ["beduerfnis-glaeser", "einfluss-kreise", "lebenslinie"],
+    "eldib": [
+      "SOZ-35",
+      "SOZ-39",
+      "K-34",
+      "KOG-55"
+    ],
+    "schlagworte": [
+      "Werte",
+      "Entscheidungen",
+      "Identität",
+      "Zivilcourage",
+      "Wenn-dann-Plan"
+    ],
+    "verwandt": [
+      "beduerfnis-glaeser",
+      "einfluss-kreise",
+      "lebenslinie"
+    ],
     "bild": "icon:compass",
     "de": {
       "titel": "Meine Werte-Gläser",
@@ -763,11 +1305,17 @@
           "art": "aufgabe",
           "text": "Zieh in jedem Glas einen Strich: So wichtig ist dir dieser Wert. Dann mal aus, wie sehr du ihn im Moment lebst.",
           "hinweis": "Leben heißt: Man sieht es an dem, was du tust – nicht nur an dem, was du denkst. Die leeren Gläser sind für Werte, die hier fehlen.",
-          "symbole": ["malen", "nachdenken"]
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "glaeser",
-          "legende": ["Strich: so wichtig ist es mir", "Ausmalen: so sehr lebe ich es"],
+          "legende": [
+            "Strich: so wichtig ist es mir",
+            "Ausmalen: so sehr lebe ich es"
+          ],
           "items": [
             "Ehrlichkeit",
             "Freundschaft",
@@ -788,19 +1336,42 @@
           "leer": 5,
           "spalten": 5
         },
-        { "art": "aufgabe", "text": "Welche drei Werte sind dir am wichtigsten? Wann hast du zuletzt nach ihnen gehandelt – und wann fiel es dir schwer?" },
+        {
+          "art": "aufgabe",
+          "text": "Welche drei Werte sind dir am wichtigsten? Wann hast du zuletzt nach ihnen gehandelt – und wann fiel es dir schwer?"
+        },
         {
           "art": "tabelle",
-          "spalten": ["Mein Wert", "Da habe ich danach gehandelt", "Da fiel es mir schwer"],
+          "spalten": [
+            "Mein Wert",
+            "Da habe ich danach gehandelt",
+            "Da fiel es mir schwer"
+          ],
           "zeilen": 3,
-          "breiten": [1, 1.7, 1.7],
-          "beispiel": ["Gerechtigkeit", "Ich habe gesagt, dass Pol unfair behandelt wurde.", "Als alle über Léa gelacht haben, habe ich mitgelacht."]
+          "breiten": [
+            1,
+            1.7,
+            1.7
+          ],
+          "beispiel": [
+            "Gerechtigkeit",
+            "Ich habe gesagt, dass Pol unfair behandelt wurde.",
+            "Als alle über Léa gelacht haben, habe ich mitgelacht."
+          ]
         },
-        { "art": "aufgabe", "text": "Such dir einen Wert aus, bei dem Strich und Farbe weit auseinanderliegen. Wie kannst du ihn diese Woche ein Stück mehr leben?" },
+        {
+          "art": "aufgabe",
+          "text": "Such dir einen Wert aus, bei dem Strich und Farbe weit auseinanderliegen. Wie kannst du ihn diese Woche ein Stück mehr leben?"
+        },
         {
           "art": "wennDann",
           "zeilen": 1,
-          "beispiele": [{ "wenn": "Wenn im Klassenchat wieder über jemanden gelästert wird,", "dann": "schreibe ich nicht mit und frage die Person, ob alles okay ist. (Wert: Respekt)" }]
+          "beispiele": [
+            {
+              "wenn": "Wenn im Klassenchat wieder über jemanden gelästert wird,",
+              "dann": "schreibe ich nicht mit und frage die Person, ob alles okay ist. (Wert: Respekt)"
+            }
+          ]
         },
         {
           "art": "info",
@@ -828,8 +1399,14 @@
           "leichter": "Nur acht Gläser auswählen und bearbeiten.",
           "schwerer": "Zwei eigene Werte finden, die sich widersprechen, und eine Entscheidung zwischen ihnen beschreiben."
         },
-        "impulse": ["Welche Werte hast du übernommen, welche selbst gewählt?", "Wann fällt es schwer, nach einem Wert zu handeln?"],
-        "tipps": ["Keine Werte vorgeben oder bewerten: Auch Leistung und Spaß sind Werte.", "Passt gut zu Gruppendruck, Zivilcourage oder Berufswahl."],
+        "impulse": [
+          "Welche Werte hast du übernommen, welche selbst gewählt?",
+          "Wann fällt es schwer, nach einem Wert zu handeln?"
+        ],
+        "tipps": [
+          "Keine Werte vorgeben oder bewerten: Auch Leistung und Spaß sind Werte.",
+          "Passt gut zu Gruppendruck, Zivilcourage oder Berufswahl."
+        ],
         "achtung": "Werte berühren Familie, Religion und Herkunft. Antworten nicht kommentieren oder vergleichen und niemanden auffordern, Glaubensfragen vor der Gruppe zu erklären.",
         "material": "Buntstifte oder Bleistift"
       }
@@ -845,12 +1422,18 @@
         {
           "art": "aufgabe",
           "text": "Dans chaque verre, trace un trait : l’importance de cette valeur pour toi. Puis colorie à quel point tu la vis en ce moment.",
-          "hinweis": "Vivre une valeur, c’est qu’on la voit dans ce que tu fais – pas seulement dans ce que tu penses. Les verres vides sont pour les valeurs qui manquent ici.",
-          "symbole": ["malen", "nachdenken"]
+          "hinweis": "Vivre une valeur, c’est la mettre en actes : on le voit à ce que tu fais, pas seulement à ce que tu penses. Les verres vides sont pour les valeurs qui manquent ici.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "glaeser",
-          "legende": ["Un trait : son importance pour moi", "Colorier : à quel point je la vis"],
+          "legende": [
+            "Un trait : son importance pour moi",
+            "Colorier : à quel point je la vis"
+          ],
           "items": [
             "Honnêteté",
             "Amitié",
@@ -871,19 +1454,42 @@
           "leer": 5,
           "spalten": 5
         },
-        { "art": "aufgabe", "text": "Quelles sont tes trois valeurs les plus importantes ? Quand as-tu agi selon elles pour la dernière fois – et quand était-ce difficile ?" },
+        {
+          "art": "aufgabe",
+          "text": "Quelles sont tes trois valeurs les plus importantes ? Quand as-tu agi selon elles pour la dernière fois – et quand était-ce difficile ?"
+        },
         {
           "art": "tabelle",
-          "spalten": ["Ma valeur", "J’ai agi selon elle quand …", "C’était difficile quand …"],
+          "spalten": [
+            "Ma valeur",
+            "J’ai agi selon elle quand …",
+            "C’était difficile quand …"
+          ],
           "zeilen": 3,
-          "breiten": [1, 1.7, 1.7],
-          "beispiel": ["Justice", "J’ai dit que Pol avait été traité injustement.", "Tout le monde s’est moqué de Léa et j’ai ri aussi."]
+          "breiten": [
+            1,
+            1.7,
+            1.7
+          ],
+          "beispiel": [
+            "Justice",
+            "J’ai dit que Pol avait été traité injustement.",
+            "Tout le monde s’est moqué de Léa et j’ai ri aussi."
+          ]
         },
-        { "art": "aufgabe", "text": "Choisis une valeur où le trait et la couleur sont très éloignés. Comment peux-tu la vivre un peu plus cette semaine ?" },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une valeur où le trait et la couleur sont très éloignés. Comment peux-tu la vivre un peu plus cette semaine ?"
+        },
         {
           "art": "wennDann",
           "zeilen": 1,
-          "beispiele": [{ "wenn": "Si quelqu’un est à nouveau critiqué dans le groupe de classe,", "dann": "je n’écris rien et je demande à la personne si ça va. (Valeur : respect)" }]
+          "beispiele": [
+            {
+              "wenn": "Si quelqu’un est à nouveau critiqué dans le groupe de classe,",
+              "dann": "je n’écris rien et je demande à la personne si ça va. (Valeur : respect)"
+            }
+          ]
         },
         {
           "art": "info",
@@ -898,7 +1504,7 @@
           "Entrée en matière (5 min) : demander : « Qu’est-ce qui vous énerve vraiment ? » Montrer qu’il y a souvent une valeur derrière (injustice – justice).",
           "Expliquer (5 min) : trait = importance, couleur = valeur vécue. Exemple au tableau.",
           "Travail individuel (15 min) : remplir les verres, ajouter ses propres valeurs.",
-          "Tâches 2 et 3 (10 min) : seul·e, puis à deux sur base volontaire, autour d’une valeur.",
+          "Tâches 2 et 3 (10 min) : en travail individuel, puis à deux sur base volontaire, autour d’une valeur.",
           "Clôture (5 min) : rassembler les valeurs qui doivent valoir dans le cours."
         ],
         "hintergrund": "Les valeurs sont des buts durables qui orientent les décisions. Schwartz (1992) décrit une structure de valeurs comme la bienveillance, l’autonomie, la sécurité ou la réussite, présente dans de nombreuses cultures – avec des tensions entre valeurs opposées. Dans la thérapie d’acceptation et d’engagement, agir selon ses valeurs est une voie centrale vers une vie épanouie (Hayes, Strosahl & Wilson, 2012). À l’adolescence, les valeurs sont examinées, choisies et intégrées à l’identité (Erikson, 1968). Séparer importance et valeur vécue montre les écarts sans culpabiliser.",
@@ -907,9 +1513,18 @@
           "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
           "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton."
         ],
-        "differenzierung": { "leichter": "Ne choisir et remplir que huit verres.", "schwerer": "Trouver deux de ses valeurs qui se contredisent et décrire un choix entre elles." },
-        "impulse": ["Quelles valeurs as-tu reprises, lesquelles as-tu choisies ?", "Quand est-il difficile d’agir selon une valeur ?"],
-        "tipps": ["Ne pas imposer ni juger de valeurs : performance et plaisir en sont aussi.", "Convient bien pour la pression du groupe, le courage civique ou le choix d’un métier."],
+        "differenzierung": {
+          "leichter": "Ne choisir et remplir que huit verres.",
+          "schwerer": "Trouver deux de ses valeurs qui se contredisent et décrire un choix entre elles."
+        },
+        "impulse": [
+          "Quelles valeurs as-tu reprises, lesquelles as-tu choisies ?",
+          "Quand est-il difficile d’agir selon une valeur ?"
+        ],
+        "tipps": [
+          "Ne pas imposer ni juger de valeurs : performance et plaisir en sont aussi.",
+          "Convient bien pour la pression du groupe, le courage civique ou le choix d’un métier."
+        ],
         "achtung": "Les valeurs touchent à la famille, à la religion et aux origines. Ne pas commenter ni comparer les réponses et ne demander à personne d’expliquer sa foi devant le groupe.",
         "material": "Crayons de couleur ou crayon à papier"
       }
@@ -919,13 +1534,32 @@
     "id": "tag-in-24-stunden",
     "bereich": "selbstreflexion",
     "thema": "rhythmus",
-    "stufen": ["C4", "ES"],
+    "stufen": [
+      "C4",
+      "ES"
+    ],
     "layout": "jugend",
-    "sozialform": ["einzeln"],
+    "sozialform": [
+      "einzeln"
+    ],
     "dauer": "30–40 Min.",
-    "eldib": ["V-29", "V-32", "V-33"],
-    "schlagworte": ["Tagesablauf", "Schlaf", "Bildschirmzeit", "Bewegung", "Balance"],
-    "verwandt": ["monat-in-farben", "wochen-kurve", "beduerfnis-glaeser"],
+    "eldib": [
+      "V-29",
+      "V-32",
+      "V-33"
+    ],
+    "schlagworte": [
+      "Tagesablauf",
+      "Schlaf",
+      "Bildschirmzeit",
+      "Bewegung",
+      "Balance"
+    ],
+    "verwandt": [
+      "monat-in-farben",
+      "wochen-kurve",
+      "beduerfnis-glaeser"
+    ],
     "bild": "icon:clock",
     "de": {
       "titel": "Mein Tag in 24 Stunden",
@@ -935,24 +1569,74 @@
           "art": "aufgabe",
           "text": "Mal im linken Kreis einen normalen Schultag aus, im rechten Kreis einen Schultag, der dir guttun würde.",
           "hinweis": "Jede Stunde in der passenden Farbe. Oben ist Mitternacht, unten Mittag. Die Schulzeit bleibt in beiden Kreisen gleich. Für die graue Farbe darfst du selbst etwas eintragen.",
-          "symbole": ["malen"]
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "tageskreis",
-          "titel": ["Ein normaler Schultag", "So hätte ich ihn gern"],
+          "titel": [
+            "Ein normaler Schultag",
+            "So hätte ich ihn gern"
+          ],
           "legende": [
-            { "farbe": "blau", "text": "Schlafen" },
-            { "farbe": "gelb", "text": "Schule, Hausaufgaben" },
-            { "farbe": "lila", "text": "Handy, Konsole, TV" },
-            { "farbe": "gruen", "text": "Freunde" },
-            { "farbe": "orange", "text": "Familie, Essen" },
-            { "farbe": "rot", "text": "Sport, Bewegung" },
-            { "farbe": "braun", "text": "Wege (Bus, Rad)" },
-            { "farbe": "grau", "text": "" }
+            {
+              "farbe": "blau",
+              "text": "Schlafen"
+            },
+            {
+              "farbe": "gelb",
+              "text": "Schule, Hausaufgaben"
+            },
+            {
+              "farbe": "lila",
+              "text": "Handy, Konsole, TV"
+            },
+            {
+              "farbe": "gruen",
+              "text": "Freunde"
+            },
+            {
+              "farbe": "orange",
+              "text": "Familie, Essen"
+            },
+            {
+              "farbe": "rot",
+              "text": "Sport, Bewegung"
+            },
+            {
+              "farbe": "braun",
+              "text": "Wege (Bus, Rad)"
+            },
+            {
+              "farbe": "grau",
+              "text": ""
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Vergleiche deine beiden Kreise. Wie viele Stunden sind es jetzt – und wie viele wünschst du dir?" },
-        { "art": "tabelle", "spalten": ["Was?", "Jetzt (Stunden)", "Mein Wunsch (Stunden)"], "zeilen": 3, "breiten": [1.6, 1, 1], "beispiel": ["Schlaf", "7", "9"] },
+        {
+          "art": "aufgabe",
+          "text": "Vergleiche deine beiden Kreise. Wie viele Stunden sind es jetzt – und wie viele wünschst du dir?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Was?",
+            "Jetzt (Stunden)",
+            "Mein Wunsch (Stunden)"
+          ],
+          "zeilen": 5,
+          "breiten": [
+            1.6,
+            1,
+            1
+          ],
+          "beispiel": [
+            "Schlaf",
+            "7",
+            "9"
+          ]
+        },
         {
           "art": "info",
           "symbol": "wissen",
@@ -963,8 +1647,20 @@
             "Bildschirmzeit ist nicht gleich Bildschirmzeit: Ein Videoanruf mit Freunden wirkt anders als stundenlanges Scrollen."
           ]
         },
-        { "art": "aufgabe", "text": "Welche kleine Änderung bringt deinen echten Tag ein Stück näher an deinen Wunsch-Tag?" },
-        { "art": "wennDann", "zeilen": 1, "beispiele": [{ "wenn": "Wenn es abends 22 Uhr ist,", "dann": "lege ich das Handy zum Laden in die Küche und lese noch zehn Minuten." }] }
+        {
+          "art": "aufgabe",
+          "text": "Welche kleine Änderung bringt deinen echten Tag ein Stück näher an deinen Wunsch-Tag?"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn es abends 22 Uhr ist,",
+              "dann": "lege ich das Handy zum Laden in die Küche und lese noch zehn Minuten."
+            }
+          ]
+        }
       ],
       "lehrer": {
         "ziel": "Die Jugendlichen machen ihren Tagesablauf sichtbar, vergleichen ihn mit einem gewünschten Tag und planen eine kleine, realistische Veränderung.",
@@ -980,9 +1676,18 @@
           "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO.",
           "Przybylski, A. K. & Weinstein, N. (2017). A large-scale test of the Goldilocks hypothesis: Quantifying the relations between digital-screen use and the mental well-being of adolescents. Psychological Science, 28(2), 204–215."
         ],
-        "differenzierung": { "leichter": "Nur den linken Kreis mit drei Farben ausmalen: Schlaf, Schule, Freizeit.", "schwerer": "Zusätzlich einen Wochenendtag ausmalen und den Schlaf vergleichen." },
-        "impulse": ["Welche Stunde deines Tages gehört ganz dir?", "Was fällt weg, wenn die Bildschirmzeit länger wird?"],
-        "tipps": ["Eine eigene Farbe für die graue Zeile ist erlaubt.", "Nicht über die Zahlen der anderen sprechen."],
+        "differenzierung": {
+          "leichter": "Nur den linken Kreis mit drei Farben ausmalen: Schlaf, Schule, Freizeit.",
+          "schwerer": "Zusätzlich einen Wochenendtag ausmalen und den Schlaf vergleichen."
+        },
+        "impulse": [
+          "Welche Stunde deines Tages gehört ganz dir?",
+          "Was fällt weg, wenn die Bildschirmzeit länger wird?"
+        ],
+        "tipps": [
+          "Eine eigene Farbe für die graue Zeile ist erlaubt.",
+          "Nicht über die Zahlen der anderen sprechen."
+        ],
         "achtung": "Die Blätter zeigen Familienalltag. Sehr wenig Schlaf, fehlende Mahlzeiten oder lange Zeiten allein nicht vor der Gruppe ansprechen; bei Sorge ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte in acht Farben"
       }
@@ -995,39 +1700,97 @@
           "art": "aufgabe",
           "text": "Colorie dans le cercle de gauche une journée d’école ordinaire, dans celui de droite une journée d’école qui te ferait du bien.",
           "hinweis": "Chaque heure dans la couleur qui convient. En haut, c’est minuit, en bas midi. Le temps d’école reste le même dans les deux cercles. Pour le gris, tu choisis toi-même.",
-          "symbole": ["malen"]
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "tageskreis",
-          "titel": ["Une journée d’école ordinaire", "Comme je la voudrais"],
+          "titel": [
+            "Une journée d’école ordinaire",
+            "Comme je la voudrais"
+          ],
           "legende": [
-            { "farbe": "blau", "text": "Dormir" },
-            { "farbe": "gelb", "text": "École, devoirs" },
-            { "farbe": "lila", "text": "Téléphone, console, TV" },
-            { "farbe": "gruen", "text": "Ami·e·s" },
-            { "farbe": "orange", "text": "Famille, repas" },
-            { "farbe": "rot", "text": "Sport, mouvement" },
-            { "farbe": "braun", "text": "Trajets (bus, vélo)" },
-            { "farbe": "grau", "text": "" }
+            {
+              "farbe": "blau",
+              "text": "Dormir"
+            },
+            {
+              "farbe": "gelb",
+              "text": "École, devoirs"
+            },
+            {
+              "farbe": "lila",
+              "text": "Téléphone, console, TV"
+            },
+            {
+              "farbe": "gruen",
+              "text": "Amis"
+            },
+            {
+              "farbe": "orange",
+              "text": "Famille, repas"
+            },
+            {
+              "farbe": "rot",
+              "text": "Sport, mouvement"
+            },
+            {
+              "farbe": "braun",
+              "text": "Trajets (bus, vélo)"
+            },
+            {
+              "farbe": "grau",
+              "text": ""
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Compare tes deux cercles. Combien d’heures maintenant – et combien en souhaites-tu ?" },
-        { "art": "tabelle", "spalten": ["Quoi ?", "Maintenant (heures)", "Mon souhait (heures)"], "zeilen": 3, "breiten": [1.6, 1, 1], "beispiel": ["Sommeil", "7", "9"] },
+        {
+          "art": "aufgabe",
+          "text": "Compare tes deux cercles. Combien d’heures maintenant – et combien en souhaites-tu ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quoi ?",
+            "Maintenant (heures)",
+            "Mon souhait (heures)"
+          ],
+          "zeilen": 5,
+          "breiten": [
+            1.6,
+            1,
+            1
+          ],
+          "beispiel": [
+            "Sommeil",
+            "7",
+            "9"
+          ]
+        },
         {
           "art": "info",
           "symbol": "wissen",
           "titel": "Bon à savoir",
           "punkte": [
-            "Les adolescent·e·s ont besoin de 8 à 10 heures de sommeil par nuit.",
+            "Les adolescents ont besoin de 8 à 10 heures de sommeil par nuit.",
             "On recommande en moyenne au moins une heure de mouvement par jour qui te met à bout de souffle.",
-            "Temps d’écran n’est pas égal temps d’écran : un appel vidéo avec des ami·e·s n’a pas le même effet que des heures à scroller."
+            "Tous les temps d’écran ne se valent pas : un appel vidéo avec des amis n’a pas le même effet que des heures à scroller."
           ]
         },
-        { "art": "aufgabe", "text": "Quel petit changement rapproche un peu ta vraie journée de ta journée idéale ?" },
+        {
+          "art": "aufgabe",
+          "text": "Quel petit changement rapproche un peu ta vraie journée de ta journée idéale ?"
+        },
         {
           "art": "wennDann",
           "zeilen": 1,
-          "beispiele": [{ "wenn": "S’il est 22 heures le soir,", "dann": "je mets mon téléphone à charger dans la cuisine et je lis encore dix minutes." }]
+          "beispiele": [
+            {
+              "wenn": "S’il est 22 heures le soir,",
+              "dann": "je mets mon téléphone à charger dans la cuisine et je lis encore dix minutes."
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -1036,9 +1799,9 @@
           "Entrée en matière (5 min) : dessiner un cercle de 24 heures au tableau. Demander : « Combien d’heures dormez-vous un jour d’école ? »",
           "Expliquer (5 min) : minuit en haut, midi en bas, couleurs selon la légende. Inscrire ensemble le temps d’école.",
           "Travail individuel (15 min) : colorier les deux cercles, puis remplir le tableau.",
-          "Bon à savoir (5 min) : lire l’encadré ensemble : « Qu’est-ce qui vous correspond ? » Puis plan si-alors seul·e."
+          "Bon à savoir (5 min) : lire l’encadré ensemble : « Qu’est-ce qui vous correspond ? » Puis plan si-alors en travail individuel."
         ],
-        "hintergrund": "Beaucoup d’adolescent·e·s dorment moins que les 8 à 10 heures recommandées les jours d’école (Paruthi et al., 2016). L’OMS recommande aux enfants et adolescents au moins 60 minutes par jour en moyenne d’activité physique modérée à intense (World Health Organization, 2020). Pour les médias numériques, la durée compte moins que le type d’usage, le moment et ce qu’ils remplacent ; un usage modéré n’est pas lié à un moins bon bien-être (Przybylski & Weinstein, 2017). Le cercle de la journée rend cette répartition visible, sans reproche.",
+        "hintergrund": "Beaucoup d’adolescents dorment moins que les 8 à 10 heures recommandées les jours d’école (Paruthi et al., 2016). L’OMS recommande aux enfants et adolescents au moins 60 minutes par jour en moyenne d’activité physique modérée à intense (World Health Organization, 2020). Pour les médias numériques, la durée compte moins que le type d’usage, le moment et ce qu’ils remplacent ; un usage modéré n’est pas lié à un moins bon bien-être (Przybylski & Weinstein, 2017). Le cercle de la journée rend cette répartition visible, sans reproche.",
         "quellen": [
           "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
           "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO.",
@@ -1048,9 +1811,15 @@
           "leichter": "Ne colorier que le cercle de gauche avec trois couleurs : sommeil, école, temps libre.",
           "schwerer": "Colorier aussi une journée de week-end et comparer le sommeil."
         },
-        "impulse": ["Quelle heure de ta journée t’appartient entièrement ?", "Qu’est-ce qui disparaît quand le temps d’écran s’allonge ?"],
-        "tipps": ["Une couleur personnelle pour la ligne grise est permise.", "Ne pas parler des chiffres des autres."],
-        "achtung": "Les feuilles montrent le quotidien familial. Ne pas évoquer devant le groupe un sommeil très court, des repas manquants ou de longs moments seul·e ; en cas d’inquiétude, proposer un entretien individuel et informer la direction compétente (responsable).",
+        "impulse": [
+          "Quelle heure de ta journée t’appartient entièrement ?",
+          "Qu’est-ce qui disparaît quand le temps d’écran s’allonge ?"
+        ],
+        "tipps": [
+          "Une couleur personnelle pour la ligne grise est permise.",
+          "Ne pas parler des chiffres des autres."
+        ],
+        "achtung": "Les feuilles montrent le quotidien familial. Ne pas évoquer devant le groupe un sommeil très court, des repas manquants ou de longues périodes d’isolement ; en cas d’inquiétude, proposer un entretien individuel et informer la direction compétente (responsable).",
         "material": "Crayons de couleur (huit couleurs)"
       }
     }
@@ -1059,13 +1828,32 @@
     "id": "monat-in-farben",
     "bereich": "selbstreflexion",
     "thema": "rueckblick",
-    "stufen": ["C4", "ES"],
+    "stufen": [
+      "C4",
+      "ES"
+    ],
     "layout": "jugend",
-    "sozialform": ["einzeln"],
+    "sozialform": [
+      "einzeln"
+    ],
     "dauer": "täglich 1 Min., Auswertung 25 Min.",
-    "eldib": ["K-26", "K-16", "V-33", "SOZ-36"],
-    "schlagworte": ["Stimmung", "Gefühle", "Stimmungskalender", "Selbstbeobachtung", "Muster erkennen"],
-    "verwandt": ["tag-in-24-stunden", "wochen-kurve"],
+    "eldib": [
+      "K-26",
+      "K-16",
+      "V-33",
+      "SOZ-36"
+    ],
+    "schlagworte": [
+      "Stimmung",
+      "Gefühle",
+      "Stimmungskalender",
+      "Selbstbeobachtung",
+      "Muster erkennen"
+    ],
+    "verwandt": [
+      "tag-in-24-stunden",
+      "wochen-kurve"
+    ],
     "bild": "icon:palette",
     "de": {
       "titel": "Mein Monat in Farben",
@@ -1075,34 +1863,94 @@
           "art": "aufgabe",
           "text": "Trag oben links in die Kästchen das Datum ein. Mal jeden Abend das Kästchen des Tages in der Farbe aus, die am besten passt.",
           "hinweis": "Nimm die Stimmung, die den Tag am meisten geprägt hat. Zwei Farben in einem Kästchen sind erlaubt. Du darfst die Farben auch anders festlegen.",
-          "symbole": ["malen"]
+          "symbole": [
+            "malen"
+          ]
         },
-        { "art": "satzanfaenge", "items": ["Mein Monat: …"], "linien": 1 },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Monat: …"
+          ],
+          "linien": 1
+        },
         {
           "art": "farbkalender",
           "wochen": 6,
           "legende": [
-            { "farbe": "gelb", "text": "froh, leicht" },
-            { "farbe": "gruen", "text": "ruhig, zufrieden" },
-            { "farbe": "orange", "text": "gestresst" },
-            { "farbe": "rot", "text": "wütend, gereizt" },
-            { "farbe": "blau", "text": "traurig" },
-            { "farbe": "lila", "text": "ängstlich, besorgt" },
-            { "farbe": "grau", "text": "müde, leer" },
-            { "farbe": "braun", "text": "" }
+            {
+              "farbe": "gelb",
+              "text": "froh, leicht"
+            },
+            {
+              "farbe": "gruen",
+              "text": "ruhig, zufrieden"
+            },
+            {
+              "farbe": "orange",
+              "text": "gestresst"
+            },
+            {
+              "farbe": "rot",
+              "text": "wütend, gereizt"
+            },
+            {
+              "farbe": "blau",
+              "text": "traurig"
+            },
+            {
+              "farbe": "lila",
+              "text": "ängstlich, besorgt"
+            },
+            {
+              "farbe": "grau",
+              "text": "müde, leer"
+            },
+            {
+              "farbe": "braun",
+              "text": ""
+            }
           ]
         },
-        { "art": "seitenumbruch" },
-        { "art": "aufgabe", "text": "Am Monatsende: Zähl deine Farben. Welche kommen am häufigsten vor?" },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Am Monatsende: Zähl deine Farben. Welche kommen am häufigsten vor?"
+        },
         {
           "art": "tabelle",
-          "spalten": ["Farbe", "Wie oft?", "Typisch für diese Tage"],
+          "spalten": [
+            "Farbe",
+            "Wie oft?",
+            "Typisch für diese Tage"
+          ],
           "zeilen": 3,
-          "breiten": [0.9, 0.7, 2.6],
-          "beispiel": ["grün", "9", "Training, Wochenende, früh im Bett"]
+          "breiten": [
+            0.9,
+            0.7,
+            2.6
+          ],
+          "beispiel": [
+            "grün",
+            "9",
+            "Training, Wochenende, früh im Bett"
+          ]
         },
-        { "art": "aufgabe", "text": "Was fällt dir auf? Gibt es Wochentage, Menschen oder Dinge, die bestimmte Farben mitbringen?" },
-        { "art": "satzanfaenge", "items": ["Mir fällt auf: …", "Meine hellen Tage haben oft gemeinsam, dass …", "Im nächsten Monat achte ich auf …"], "linien": 1 },
+        {
+          "art": "aufgabe",
+          "text": "Was fällt dir auf? Gibt es Wochentage, Menschen oder Dinge, die bestimmte Farben mitbringen?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mir fällt auf: …",
+            "Meine hellen Tage haben oft gemeinsam, dass …",
+            "Im nächsten Monat achte ich auf …"
+          ],
+          "linien": 1
+        },
         {
           "art": "info",
           "symbol": "hilfe",
@@ -1124,9 +1972,18 @@
           "Baumeister, R. F., Bratslavsky, E., Finkenauer, C. & Vohs, K. D. (2001). Bad is stronger than good. Review of General Psychology, 5(4), 323–370.",
           "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428."
         ],
-        "differenzierung": { "leichter": "Drei Farben (gut, mittel, schwer), nur zwei Wochen.", "schwerer": "Täglich ein Stichwort ins Kästchen schreiben und am Ende eine Vermutung prüfen." },
-        "impulse": ["Was war an deinem hellsten Tag anders?", "Was kannst du tun, damit eine helle Farbe öfter vorkommt?"],
-        "tipps": ["Das Blatt im Kursraum aufbewahren oder abfotografieren lassen.", "Nicht einsammeln oder bewerten."],
+        "differenzierung": {
+          "leichter": "Drei Farben (gut, mittel, schwer), nur zwei Wochen.",
+          "schwerer": "Täglich ein Stichwort ins Kästchen schreiben und am Ende eine Vermutung prüfen."
+        },
+        "impulse": [
+          "Was war an deinem hellsten Tag anders?",
+          "Was kannst du tun, damit eine helle Farbe öfter vorkommt?"
+        ],
+        "tipps": [
+          "Das Blatt im Kursraum aufbewahren oder abfotografieren lassen.",
+          "Nicht einsammeln oder bewerten."
+        ],
         "achtung": "Erscheinen über längere Zeit fast nur schwere Farben oder berichtet jemand von anhaltender Traurigkeit, Angst oder Leere, ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Selbstverletzung oder Suizidgedanken sofort nach dem internen Ablauf handeln.",
         "material": "Buntstifte"
       }
@@ -1139,34 +1996,94 @@
           "art": "aufgabe",
           "text": "Écris la date en haut à gauche des cases. Chaque soir, colorie la case du jour dans la couleur qui convient le mieux.",
           "hinweis": "Prends l’humeur qui a le plus marqué la journée. Deux couleurs dans une case, c’est permis. Tu peux aussi choisir d’autres couleurs.",
-          "symbole": ["malen"]
+          "symbole": [
+            "malen"
+          ]
         },
-        { "art": "satzanfaenge", "items": ["Mon mois : …"], "linien": 1 },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon mois : …"
+          ],
+          "linien": 1
+        },
         {
           "art": "farbkalender",
           "wochen": 6,
           "legende": [
-            { "farbe": "gelb", "text": "joyeux·se, léger·ère" },
-            { "farbe": "gruen", "text": "calme, content·e" },
-            { "farbe": "orange", "text": "stressé·e" },
-            { "farbe": "rot", "text": "en colère, irrité·e" },
-            { "farbe": "blau", "text": "triste" },
-            { "farbe": "lila", "text": "anxieux·se, inquiet·ète" },
-            { "farbe": "grau", "text": "fatigué·e, vide" },
-            { "farbe": "braun", "text": "" }
+            {
+              "farbe": "gelb",
+              "text": "joie, légèreté"
+            },
+            {
+              "farbe": "gruen",
+              "text": "calme, satisfaction"
+            },
+            {
+              "farbe": "orange",
+              "text": "stress"
+            },
+            {
+              "farbe": "rot",
+              "text": "colère, irritation"
+            },
+            {
+              "farbe": "blau",
+              "text": "triste"
+            },
+            {
+              "farbe": "lila",
+              "text": "peur, inquiétude"
+            },
+            {
+              "farbe": "grau",
+              "text": "fatigue, vide"
+            },
+            {
+              "farbe": "braun",
+              "text": ""
+            }
           ]
         },
-        { "art": "seitenumbruch" },
-        { "art": "aufgabe", "text": "À la fin du mois : compte tes couleurs. Lesquelles reviennent le plus souvent ?" },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "À la fin du mois : compte tes couleurs. Lesquelles reviennent le plus souvent ?"
+        },
         {
           "art": "tabelle",
-          "spalten": ["Couleur", "Combien de fois ?", "Typique de ces jours-là"],
+          "spalten": [
+            "Couleur",
+            "Combien de fois ?",
+            "Typique de ces jours-là"
+          ],
           "zeilen": 3,
-          "breiten": [0.9, 0.7, 2.6],
-          "beispiel": ["vert", "9", "entraînement, week-end, couché·e tôt"]
+          "breiten": [
+            0.9,
+            0.7,
+            2.6
+          ],
+          "beispiel": [
+            "vert",
+            "9",
+            "entraînement, week-end, coucher tôt"
+          ]
         },
-        { "art": "aufgabe", "text": "Qu’est-ce que tu remarques ? Y a-t-il des jours de la semaine, des personnes ou des choses qui amènent certaines couleurs ?" },
-        { "art": "satzanfaenge", "items": ["Je remarque : …", "Mes jours lumineux ont souvent en commun : …", "Le mois prochain, je fais attention à : …"], "linien": 1 },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce que tu remarques ? Y a-t-il des jours de la semaine, des personnes ou des choses qui amènent certaines couleurs ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je remarque : …",
+            "Mes jours lumineux ont souvent en commun : …",
+            "Le mois prochain, je fais attention à : …"
+          ],
+          "linien": 1
+        },
         {
           "art": "info",
           "symbol": "hilfe",
@@ -1179,7 +2096,7 @@
         "ablauf": [
           "Début du mois (10 min) : distribuer la feuille, discuter des couleurs. La légende peut être modifiée.",
           "Chaque jour (1 min) : colorier une case en fin de journée. Un jour oublié reste vide.",
-          "Fin du mois (15 min) : compter les couleurs, faire seul·e les tâches 2 et 3.",
+          "Fin du mois (15 min) : compter les couleurs, faire les tâches 2 et 3 individuellement.",
           "Échange (10 min) : ne parler que de la tâche 3 : « Qu’ont en commun tes jours lumineux ? »"
         ],
         "hintergrund": "Les calendriers d’humeur sont une forme simple d’auto-observation issue de l’autogestion (Kanfer, Reinecker & Schmelzer, 2012). Noter chaque jour protège du biais qui fait paraître les jours difficiles plus nombreux après coup (Baumeister et al., 2001). Nommer régulièrement ses émotions aide à les distinguer ; le simple fait de nommer une émotion peut en atténuer l’intensité (Lieberman et al., 2007).",
@@ -1192,8 +2109,14 @@
           "leichter": "Trois couleurs (bien, moyen, difficile), seulement deux semaines.",
           "schwerer": "Écrire chaque jour un mot-clé dans la case et vérifier une hypothèse à la fin."
         },
-        "impulse": ["Qu’est-ce qui était différent lors de ta journée la plus lumineuse ?", "Que peux-tu faire pour qu’une couleur lumineuse revienne plus souvent ?"],
-        "tipps": ["Garder la feuille en classe ou la faire photographier.", "Ne pas ramasser ni évaluer."],
+        "impulse": [
+          "Qu’est-ce qui était différent lors de ta journée la plus lumineuse ?",
+          "Que peux-tu faire pour qu’une couleur lumineuse revienne plus souvent ?"
+        ],
+        "tipps": [
+          "Garder la feuille en classe ou la faire photographier.",
+          "Ne pas ramasser ni évaluer."
+        ],
         "achtung": "Si presque seules des couleurs lourdes apparaissent longtemps ou si quelqu’un parle d’une tristesse ou d’un vide persistants, proposer un entretien individuel et informer la direction compétente (responsable). En cas d’idées suicidaires, agir immédiatement selon la procédure interne.",
         "material": "Crayons de couleur"
       }

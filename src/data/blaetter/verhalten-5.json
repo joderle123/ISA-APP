@@ -111,7 +111,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Teste zwei Strategien. Trag ein, was passiert.",
+          "text": "Teste zwei davon. Trag ein, was passiert.",
           "hinweis": "Melde dich bei einer Frage und warte etwa eine Minute.",
           "symbole": [
             "schreiben"
@@ -274,7 +274,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Teste deux astuces. Note ce qui se passe.",
+          "text": "Teste-en deux. Note ce qui se passe.",
           "hinweis": "Lève la main quand on pose une question et attends environ une minute.",
           "symbole": [
             "schreiben"
@@ -598,7 +598,7 @@
               "text": "Je m’occupe ou j’écoute."
             },
             {
-              "titel": "Tiède : je deviens agité.",
+              "titel": "Tiède : je m’agite.",
               "text": "Je regarde souvent l’heure et je soupire."
             },
             {
@@ -629,13 +629,13 @@
             "brûlant"
           ],
           "items": [
-            "École : je lève la main sans être interrogé.",
+            "École : je lève la main sans qu’on m’interroge.",
             "École : je fais la queue à la cantine.",
-            "École : j’attends que l’enseignant ait du temps.",
+            "École : j’attends que l’adulte ait du temps pour moi.",
             "Maison : j’attends le repas.",
             "Maison : quelqu’un parle, je veux raconter.",
             "Loisirs : un autre enfant joue longtemps.",
-            "En route : j’attends le bus ou en voiture.",
+            "En route : j’attends le bus ou je patiente en voiture.",
             "En route : j’attends chez le médecin."
           ]
         },

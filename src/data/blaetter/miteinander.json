@@ -8,7 +8,7 @@
     "dauer": "15–20 Min.",
     "eldib": ["SOZ-16", "SOZ-17", "SOZ-18"],
     "schlagworte": ["Freundschaft", "Teilen", "Trösten", "Helfen", "Spielschule"],
-    "bild": "icon:friends",
+    "bild": "motiv:freunde",
     "verwandt": ["guter-freund", "freundschafts-rezept"],
     "de": {
       "titel": "Was machen Freunde?",
@@ -210,7 +210,7 @@
             "m’aide quand je n’y arrive pas.",
             "décide toujours à quoi on joue.",
             "me console quand je suis triste.",
-            "dit : “Sinon, tu n’es plus mon ami.”",
+            "dit : « Sinon, tu n’es plus mon ami. »",
             "joue parfois à ce que je veux.",
             "se réconcilie avec moi après une dispute."
           ]
@@ -627,7 +627,7 @@
             "du soutien dans les moments difficiles",
             "beaucoup de temps ensemble",
             "la discrétion",
-            "la liberté d’avoir d’autres ami·es",
+            "la liberté d’avoir d’autres amitiés",
             "pouvoir se disputer et se réconcilier"
           ]
         },
@@ -665,7 +665,7 @@
             "Yusuf t’écrit : « Si tu sors avec eux aujourd’hui, pas la peine de revenir demain. »",
             "Nora veut voir tes conversations tous les soirs, « pour qu’il n’y ait pas de secrets ».",
             "Devant la classe, Ben fait des blagues sur ton physique. Ensuite, il dit : « C’était pour rire. »",
-            "Vous vous êtes disputé·es et vous en reparlez calmement deux jours plus tard.",
+            "Après une dispute, vous en reparlez calmement deux jours plus tard.",
             "Tu parles toujours de tes problèmes – Tiago a à peine le temps de placer un mot."
           ]
         },
@@ -678,7 +678,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Si tu te sens durablement contrôlé·e, menacé·e ou sous pression dans une amitié ou une relation amoureuse, parles-en à une personne de confiance – par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+          "text": "Si quelqu’un te contrôle, te menace ou te met sous pression de façon durable dans une amitié ou une relation amoureuse, parles-en à une personne de confiance – par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
         }
       ],
       "lehrer": {
@@ -701,7 +701,7 @@
           "schwerer": "Écrire une situation entre « ça va » et « signal d’alerte » et la soumettre à la discussion."
         },
         "impulse": [
-          "Peut-on être trop loyal·e ?",
+          "Peut-on être trop loyal ?",
           "Où s’arrête l’attention, où commence le contrôle ?",
           "Pourquoi est-il si difficile de quitter une amitié qui fait du mal ?"
         ],
@@ -1069,7 +1069,7 @@
         { "art": "satzanfaenge", "items": ["Je voulais …", "L’autre côté voulait …", "Notre pont pourrait être : …"], "linien": 2 }
       ],
       "lehrer": {
-        "ziel": "Les enfants découvrent un modèle de résolution de problèmes en quatre étapes, se mettent à la place des deux côtés d’un conflit, rassemblent des solutions, estiment leurs conséquences et choisissent une solution juste.",
+        "ziel": "Les enfants découvrent un modèle en quatre étapes : comprendre les deux côtés d’un conflit, chercher des solutions, en estimer les conséquences et choisir la plus juste.",
         "ablauf": [
           "Entrée en matière (5 min) : montrer l’image du pont : « Deux groupes se tiennent sur deux rives. De quoi ont-ils besoin pour se rejoindre ? »",
           "Lire l’histoire, exercice 1 à deux (10 min). Demander : « Pourquoi est-ce si important pour le groupe de Kim ? Et pour celui de Robin ? »",
@@ -1077,14 +1077,14 @@
           "Exercice 3 : chaque groupe présente son pont le plus juste. La classe vérifie : les deux côtés peuvent-ils vivre avec ?",
           "Exercice 4 en travail individuel, échange volontaire. Réutiliser l’image du pont pour de vrais conflits, par exemple au conseil de classe."
         ],
-        "hintergrund": "Le programme « I Can Problem Solve » montre que, dès l’école primaire, les enfants peuvent apprendre à réfléchir aux conflits : trouver plusieurs solutions, estimer les conséquences et tenir compte des sentiments des autres (Shure, 1992). L’enseignant ne donne pas de bonne solution toute faite, il stimule la réflexion – les enfants apprennent comment penser, pas quoi penser. Le programme PATHS contient des étapes de résolution de problèmes semblables et renforce de façon démontrée les compétences émotionnelles et sociales des enfants scolarisés (Greenberg et al., 1995). L’image du pont montre qu’une solution solide doit relier les deux côtés.",
+        "hintergrund": "Le programme « I Can Problem Solve » montre que, dès l’école primaire, les enfants peuvent apprendre à réfléchir aux conflits : trouver plusieurs solutions, estimer les conséquences, tenir compte des sentiments des autres (Shure, 1992). L’enseignant ne donne pas de solution toute faite, il stimule la réflexion – les enfants apprennent comment penser, pas quoi penser. Le programme PATHS contient des étapes semblables et renforce les compétences socio-émotionnelles des élèves (Greenberg et al., 1995). Le pont montre qu’une bonne solution relie les deux côtés.",
         "quellen": [
           "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press.",
           "Greenberg, M. T., Kusché, C. A., Cook, E. T. & Quamma, J. P. (1995). Promoting emotional competence in school-aged children: The effects of the PATHS curriculum. Development and Psychopathology, 7(1), 117–136."
         ],
         "differenzierung": {
           "leichter": "N’écrire que deux idées dans le tableau ; discuter la colonne « Que se passe-t-il alors ? » à l’oral.",
-          "schwerer": "Concevoir un pont pour un conflit qui concerne toute la classe (p. ex. l’utilisation du terrain de foot) et le proposer au conseil de classe."
+          "schwerer": "Concevoir un pont pour un conflit de toute la classe (p. ex. le terrain de foot) et le proposer au conseil de classe."
         },
         "impulse": [
           "Y a-t-il des disputes où aucun pont n’est possible ? Que faire alors ?",
@@ -1092,10 +1092,10 @@
           "Qui peut aider à construire un pont ?"
         ],
         "tipps": [
-          "En rassemblant les idées, ne pas juger tout de suite : même des idées inhabituelles mènent souvent à de bonnes solutions.",
+          "Ne pas juger tout de suite : même des idées inhabituelles mènent souvent à de bonnes solutions.",
           "Afficher les quatre étapes avec l’image du pont."
         ],
-        "achtung": "Si un conflit touche toujours les mêmes enfants ou s’accompagne de menaces et de violence, la résolution de problèmes ne suffit pas : informer la direction compétente (responsable) et clarifier ensemble la suite.",
+        "achtung": "Si un conflit touche toujours les mêmes enfants ou s’accompagne de menaces ou de violence, résoudre le problème ne suffit pas : informer la direction compétente (responsable).",
         "material": "Tableau ou affiche avec l’image du pont"
       }
     }
@@ -1235,7 +1235,7 @@
           "punkte": [
             "Séparer les personnes du problème : ferme sur le fond, respectueux envers la personne.",
             "Les intérêts plutôt que les positions : ce qui compte, ce n’est pas la demande, mais le pourquoi.",
-            "Inventer des options : chercher plusieurs solutions où chacun·e gagne.",
+            "Inventer des options : chercher plusieurs solutions où tout le monde gagne.",
             "Utiliser des critères équitables : des repères que les deux parties acceptent."
           ]
         },
@@ -1280,7 +1280,7 @@
           "items": [
             "Les deux font autant de travail.",
             "Celui qui parle le plus fort décide.",
-            "La date de remise fixée par l’enseignant·e est respectée.",
+            "La date de remise fixée par l’équipe enseignante est respectée.",
             "Celui qui a le plus besoin d’une bonne note décide seul.",
             "La solution est compatible avec l’emploi du temps des deux.",
             "Celui qui a le plus d’amis dans la classe a raison."
@@ -1296,7 +1296,7 @@
             "« De quoi aurais-tu besoin pour pouvoir dire oui ? »"
           ]
         },
-        { "art": "aufgabe", "text": "Choisis un conflit personnel – en famille, entre ami·es ou à l’école – et applique les principes." },
+        { "art": "aufgabe", "text": "Choisis un conflit personnel – en famille, entre amis ou à l’école – et applique les principes." },
         {
           "art": "satzanfaenge",
           "linien": 2,
@@ -1353,7 +1353,7 @@
     "verwandt": ["ich-botschaften", "streit-was-nun"],
     "de": {
       "titel": "Ich sage, was ich fühle",
-      "untertitel": "Andere können nicht in dich hineinschauen. Wenn du sagst, was du fühlst, verstehen sie dich besser.",
+      "untertitel": "Sag, was du fühlst – dann verstehen dich die anderen besser.",
       "bausteine": [
         { "art": "aufgabe", "text": "Lies die Ich-Sätze. Sprich sie nach.", "symbole": ["lesen", "sprechen"] },
         {
@@ -1415,7 +1415,7 @@
     },
     "fr": {
       "titel": "Je dis ce que je ressens",
-      "untertitel": "Les autres ne peuvent pas voir dans ta tête. Quand tu dis ce que tu ressens, ils te comprennent mieux.",
+      "untertitel": "Dis ce que tu ressens : les autres te comprennent mieux.",
       "bausteine": [
         { "art": "aufgabe", "text": "Lis les phrases avec « je ». Répète-les à voix haute.", "symbole": ["lesen", "sprechen"] },
         {
@@ -1860,7 +1860,7 @@
     },
     "fr": {
       "titel": "Dire clairement ce dont j’ai besoin",
-      "untertitel": "Exprimer ses besoins plutôt que des reproches, c’est se donner une chance d’être entendu·e. La communication non violente propose quatre étapes.",
+      "untertitel": "Qui exprime ses besoins plutôt que des reproches se fait plus facilement entendre. La communication non violente propose quatre étapes.",
       "bausteine": [
         {
           "art": "schritte",
@@ -1870,7 +1870,7 @@
               "titel": "Observation",
               "text": "Ce qui s’est passé, comme le verrait une caméra, sans jugement. Exemple : « Tu as annulé nos trois derniers rendez-vous une heure avant. »"
             },
-            { "titel": "Sentiment", "text": "Ce que je ressens. Exemple : « Je suis déçu·e, et triste aussi. »" },
+            { "titel": "Sentiment", "text": "Ce que je ressens. Exemple : « Ça me déçoit, et ça me rend triste aussi. »" },
             {
               "titel": "Besoin",
               "text": "Ce qui compte pour moi. Exemple : « J’ai besoin de pouvoir compter sur toi – et de passer du temps avec toi. »"
@@ -1891,7 +1891,7 @@
           "optionen": ["observation", "jugement"],
           "items": [
             "Tu es toujours en retard.",
-            "Aujourd’hui, tu es arrivé·e 20 minutes après l’heure convenue.",
+            "Aujourd’hui, tu as eu 20 minutes de retard sur l’heure convenue.",
             "Tu m’ignores.",
             "Tu n’as pas répondu à mes trois derniers messages.",
             "Tu es égoïste.",
@@ -1906,7 +1906,7 @@
         {
           "art": "wortspeicher",
           "titel": "Sentiments",
-          "items": ["déçu·e", "triste", "agacé·e", "tendu·e", "inquiet·ète", "frustré·e", "seul·e", "dépassé·e", "perdu·e", "soulagé·e"]
+          "items": ["déçu / déçue", "triste", "agacé / agacée", "tendu / tendue", "incertain / incertaine", "frustré / frustrée", "seul / seule", "dépassé / dépassée", "inquiet / inquiète", "soulagé / soulagée"]
         },
         {
           "art": "wortspeicher",
@@ -1917,7 +1917,7 @@
           "art": "info",
           "symbol": "achtung",
           "titel": "Attention aux interprétations",
-          "text": "« Je me sens ignoré·e » ou « … exploité·e » décrit ce que l’autre ferait – pas ce qui se passe en toi. Demande-toi : qu’est-ce que je ressens quand je pense qu’on m’ignore ?"
+          "text": "« Je sens que tu m’ignores » ou « … que tu m’exploites » décrit ce que l’autre ferait – pas ce qui se passe en toi. Demande-toi : qu’est-ce que je ressens quand je pense qu’on m’ignore ?"
         },
         {
           "art": "aufgabe",
@@ -1961,7 +1961,7 @@
           "Activité 3 en individuel, puis s’entraîner à deux : dire, écouter, reformuler (15 min).",
           "Pour conclure : écrire le plan « si … alors ». Demander : « Une demande peut être refusée. Et alors ? »"
         ],
-        "hintergrund": "La communication non violente selon Rosenberg (2001) repose sur quatre étapes : observation sans jugement, sentiment, besoin et demande concrète et réalisable. L’essentiel est de séparer l’observation de l’évaluation : un jugement (« Tu es égoïste ») appelle la justification, une observation peut être vérifiée. Il importe tout autant de distinguer sentiments et interprétations : « Je me sens ignoré·e » contient une supposition sur le comportement de l’autre. L’entraînement aux compétences de la TCD pour adolescents utilise une structure proche (DEAR MAN) pour défendre une demande avec efficacité tout en préservant la relation (Rathus & Miller, 2015).",
+        "hintergrund": "La communication non violente selon Rosenberg (2001) repose sur quatre étapes : observation sans jugement, sentiment, besoin et demande concrète et réalisable. L’essentiel est de séparer l’observation de l’évaluation : un jugement (« Tu es égoïste ») appelle la justification, une observation peut être vérifiée. Il importe tout autant de distinguer sentiments et interprétations : « Je sens que tu m’ignores » contient une supposition sur le comportement de l’autre. L’entraînement aux compétences de la TCD pour adolescents utilise une structure proche (DEAR MAN) pour défendre une demande avec efficacité tout en préservant la relation (Rathus & Miller, 2015).",
         "quellen": [
           "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
@@ -2138,7 +2138,7 @@
           "art": "einschaetzung",
           "optionen": ["stimmt", "stimmt nicht"],
           "items": [
-            "Ich darf Nein sagen, wenn mir etwas nicht gefällt.",
+            "Ich darf Nein sagen, wenn mich jemand anfasst und ich das nicht will.",
             "Zu Erwachsenen darf ich nie Nein sagen.",
             "Wenn ich Nein sage, bin ich unfreundlich.",
             "Wenn jemand mein Nein nicht hört, hole ich Hilfe."
@@ -2207,7 +2207,7 @@
           "art": "einschaetzung",
           "optionen": ["vrai", "faux"],
           "items": [
-            "J’ai le droit de dire non quand quelque chose ne me plaît pas.",
+            "J’ai le droit de dire non quand quelqu’un me touche et que je ne veux pas.",
             "Je n’ai jamais le droit de dire non aux adultes.",
             "Quand je dis non, je suis désagréable.",
             "Si quelqu’un n’entend pas mon non, je vais chercher de l’aide."
@@ -2224,9 +2224,9 @@
           "optionen": ["bon", "mauvais"],
           "items": [
             "On prépare une surprise pour la maîtresse.",
-            "Un enfant dit : “Ne dis à personne que je t’ai frappé.”",
+            "Un enfant dit : « Ne dis à personne que je t’ai frappé. »",
             "Tu sais ce que Mila va recevoir pour son anniversaire.",
-            "Quelqu’un dit : “Si tu racontes ça, tu n’es plus mon ami.”"
+            "Quelqu’un dit : « Si tu racontes ça, tu n’es plus mon ami. »"
           ]
         },
         {
@@ -2424,15 +2424,15 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les enfants perçoivent les signaux du corps comme indices de leurs propres limites, distinguent des degrés de proximité et s’exercent à des phrases claires et aimables pour montrer leurs limites.",
+        "ziel": "Les enfants perçoivent les signaux du corps comme indices de leurs limites, distinguent des degrés de proximité et s’exercent à dire leurs limites avec des phrases claires et aimables.",
         "ablauf": [
-          "Entrée en matière (5 min) : exercice de distance à deux : un enfant avance lentement vers l’autre jusqu’à ce que celui-ci dise « stop ». La distance était-elle la même pour tous ?",
+          "Entrée en matière (5 min) : exercice de distance à deux : un enfant avance lentement vers l’autre jusqu’au « stop ». La distance était-elle la même pour tous ?",
           "Lire l’histoire : « Pourquoi Aylin ne dit-elle rien ? Qu’est-ce qu’elle ressent ? »",
           "Exercice 1 (10 min) : colorier, puis recueillir : quels signes connaissent tous les enfants, lesquels seulement certains ?",
           "Exercice 2 (10 min) : remplir les cercles de proximité ; ils sont privés et ne sont pas montrés.",
           "Exercice 3 à deux (10 min) : écrire des phrases et les répéter en jeu de rôle – d’une voix ferme."
         ],
-        "hintergrund": "Pour protéger ses propres limites, il faut d’abord les percevoir. Les signaux du corps comme la tension, les battements de cœur ou une sensation de creux au ventre montrent souvent en premier que quelque chose est de trop ; les reconnaître et les nommer fait partie de la compétence émotionnelle (Petermann & Wiedebusch, 2016). La fiche montre volontairement des limites au sein d’une amitié : dire non fait partie des bonnes relations et ne rejette pas la personne. Des phrases claires n’agissent que lorsqu’elles ont été exercées ; les jeux de rôle accompagnés de réussites renforcent la confiance de pouvoir les utiliser en situation réelle (Bandura, 1977).",
+        "hintergrund": "Pour protéger ses limites, il faut d’abord les percevoir. Tension, battements de cœur ou ventre noué montrent souvent en premier que c’est trop ; les reconnaître et les nommer fait partie de la compétence émotionnelle (Petermann & Wiedebusch, 2016). La fiche montre volontairement des limites au sein d’une amitié : dire non fait partie des bonnes relations et ne rejette pas la personne. Des phrases claires n’agissent que lorsqu’elles ont été exercées ; les jeux de rôle avec des réussites renforcent la confiance de pouvoir les utiliser pour de vrai (Bandura, 1977).",
         "quellen": [
           "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
@@ -2442,8 +2442,8 @@
           "schwerer": "Écrire une phrase pour le cas où quelqu’un ne respecte pas sa limite."
         },
         "impulse": [
-          "Pourquoi est-il souvent difficile de dire non à des amis ?",
-          "À quoi remarques-tu que c’est trop proche pour les autres ?",
+          "Pourquoi est-il souvent difficile de dire non à un ami ?",
+          "À quoi vois-tu que c’est trop proche pour les autres ?",
           "Cafter ou chercher de l’aide – quelle est la différence ?"
         ],
         "tipps": [
@@ -2587,13 +2587,13 @@
     },
     "fr": {
       "titel": "Dire non sous la pression",
-      "untertitel": "En groupe, dire non est plus difficile que seul·e. Avoir quelques phrases prêtes aide à rester fidèle à soi-même.",
+      "untertitel": "Dire non est plus difficile en groupe qu’en tête à tête. Avoir quelques phrases prêtes aide à rester fidèle à soi-même.",
       "bausteine": [
         {
           "art": "info",
           "symbol": "wissen",
           "titel": "Pourquoi la pression du groupe fonctionne",
-          "text": "À l’adolescence, la reconnaissance des pairs compte énormément. Des expériences le montrent : sous le regard de leurs ami·es, les jeunes prennent plus de risques que seul·es. La pression peut être bruyante – insister, se moquer, menacer – ou silencieuse : tout le monde suit, et personne ne dit rien."
+          "text": "À l’adolescence, la reconnaissance des pairs compte énormément. Des expériences le montrent : sous le regard de leurs camarades, les jeunes prennent plus de risques que sans public. La pression peut être bruyante – insister, se moquer, menacer – ou silencieuse : tout le monde suit, et personne ne dit rien."
         },
         {
           "art": "skala",
@@ -2636,7 +2636,7 @@
             },
             { "titel": "Proposer autre chose", "text": "« Moi, je vais au basket. Quelqu’un vient ? »" },
             { "titel": "Partir", "text": "S’éloigner, rejoindre d’autres personnes, ne pas répondre à un message." },
-            { "titel": "Trouver un·e allié·e", "text": "Un deuxième « non » rend les choses plus faciles : qui d’autre ne veut pas ?" }
+            { "titel": "Chercher du soutien", "text": "Un deuxième « non » rend les choses plus faciles : qui d’autre ne veut pas ?" }
           ]
         },
         { "art": "seitenumbruch" },
@@ -2670,19 +2670,19 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Si on te met la pression, te fait du chantage ou te menace – en ligne aussi –, tu n’es pas seul·e : parles-en à une personne de confiance ou au SePAS. Kanner- a Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234."
+          "text": "Si on te met la pression, te fait du chantage ou te menace – en ligne aussi –, tu peux demander de l’aide : parles-en à une personne de confiance ou au SePAS. Kanner- a Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes reconnaissent différentes formes de pression du groupe, connaissent quatre stratégies pour dire non, les exercent en jeu de rôle et se fixent un plan « si … alors ».",
         "ablauf": [
-          "Entrée en matière (5 min) : remplir l’échelle. « Quand est-il plus difficile de dire non : seul·e ou en groupe ? Pourquoi ? »",
+          "Entrée en matière (5 min) : remplir l’échelle. « Quand est-il plus difficile de dire non : en groupe ou en tête à tête ? Pourquoi ? »",
           "Lire l’encadré et le cas ; activité 1 en individuel, puis noter au tableau les phrases de pression (10 min).",
           "Activité 2 : discuter les stratégies. Important : un non n’a pas besoin d’une longue justification.",
           "Activité 3 par groupes de trois (15 min) : écrire les réponses, jouer la scène, échanger les rôles. Demander : « Qu’est-ce qui a changé quand Mehmet s’en est mêlé ? »",
           "Activité 4 en individuel (5 min) ; présenter les aides disponibles."
         ],
-        "hintergrund": "À l’adolescence, le cerveau réagit particulièrement fort à la récompense sociale. Dans des expériences, les adolescent·es prenaient des décisions plus risquées quand des pairs les observaient – chez les adultes, cet effet n’apparaissait guère (Steinberg, 2014). La pression du groupe n’est donc pas un défaut de caractère, mais un défi prévisible de cet âge. Des phrases courtes et préparées aident : la TCD pour adolescents recommande de formuler clairement sa demande, de la répéter au besoin (« disque rayé ») et d’afficher de l’assurance (Rathus & Miller, 2015). Les plans « si … alors » associent une situation attendue à une réaction fixée d’avance (Gollwitzer, 1999).",
+        "hintergrund": "À l’adolescence, le cerveau réagit particulièrement fort à la récompense sociale. Dans des expériences, les jeunes prenaient des décisions plus risquées quand des pairs les observaient – chez les adultes, cet effet n’apparaissait guère (Steinberg, 2014). La pression du groupe n’est donc pas un défaut de caractère, mais un défi prévisible de cet âge. Des phrases courtes et préparées aident : la TCD pour adolescents recommande de formuler clairement sa demande, de la répéter au besoin (« disque rayé ») et d’afficher de l’assurance (Rathus & Miller, 2015). Les plans « si … alors » associent une situation attendue à une réaction fixée d’avance (Gollwitzer, 1999).",
         "quellen": [
           "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
@@ -2695,13 +2695,13 @@
         "impulse": [
           "Quelle pression est la plus dure : la bruyante ou la silencieuse ?",
           "De quoi as-tu besoin pour dire non en premier ?",
-          "Comment réagis-tu quand un·e ami·e te dit non ?"
+          "Comment réagis-tu quand un ami ou une amie te dit non ?"
         ],
         "tipps": [
           "Annoncer clairement les rôles : « Ben est un rôle, personne de la classe. »",
           "Ne pas faire la morale : il s’agit d’ouvrir des possibilités d’action, pas de culpabiliser."
         ],
-        "achtung": "Si des jeunes sont poussé·es à des délits, à consommer des drogues ou à envoyer des images intimes, ou s’ils subissent chantage ou menaces : proposer un entretien individuel, informer le SePAS et la direction compétente (responsable). En cas de danger, agir aussitôt selon la procédure interne, ne pas laisser la personne seule."
+        "achtung": "Si des jeunes sont poussés à des délits, à consommer des drogues ou à envoyer des images intimes, ou s’ils subissent chantage ou menaces : proposer un entretien individuel, informer le SePAS et la direction compétente (responsable). En cas de danger, agir aussitôt selon la procédure interne, ne pas laisser la personne seule."
       }
     }
   }

@@ -25015,35 +25015,6 @@
   "sicher": 0.85,
   "h": "3c0501b6"
  },
- "s:sp-wenn-ich-wuetend-bin:a1": {
-  "rolle": [
-   "bewegung",
-   "spiel"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "V-21"
-   ],
-   "sekundaer": [
-    "K-26"
-   ]
-  },
-  "alter": {
-   "von": 4,
-   "bis": 6
-  },
-  "energie": 3,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {
-   "laut": true
-  },
-  "begruendung": "Stampfen bis zum Glockenzeichen übt Stopp, atmen, sagen; kein Rauslassen. Stampfen und lautes Sagen: laut.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "57e52e24"
- },
  "s:sp-wenn-ich-wuetend-bin:a2": {
   "rolle": [
    "regulation",
@@ -26810,5 +26781,34 @@
   "von": "agent",
   "sicher": 0.8,
   "h": "468170f3"
+ },
+ "s:sp-wenn-ich-wuetend-bin:a6": {
+  "rolle": [
+   "bewegung",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-21"
+   ],
+   "sekundaer": [
+    "K-26"
+   ]
+  },
+  "alter": {
+   "von": 4,
+   "bis": 6
+  },
+  "energie": 3,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {
+   "laut": true
+  },
+  "begruendung": "Riesenschritte bis zum Glockenzeichen üben Stopp, atmen, sagen; kein Rauslassen. Lautes Sagen: laut.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "57e52e24"
  }
 }

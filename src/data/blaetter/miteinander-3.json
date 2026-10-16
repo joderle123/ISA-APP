@@ -43,7 +43,7 @@
         {
           "art": "aufgabe",
           "text": "Was bedeutet das Zeichen? Schreib es dazu oder mach es vor.",
-          "hinweis": "gut · nicht gut · Stopp · Moment, bitte · zwei, bitte · Ich höre nichts"
+          "hinweis": "Moment, bitte · gut · Ich höre nichts · Stopp · zwei, bitte · nicht gut"
         },
         {
           "art": "bilder",
@@ -221,7 +221,7 @@
         {
           "art": "aufgabe",
           "text": "Que veut dire ce geste ? Écris-le ou montre-le.",
-          "hinweis": "bien · pas bien · stop · un instant · deux, s’il vous plaît · je n’entends rien"
+          "hinweis": "un instant · bien · je n’entends rien · stop · deux, s’il vous plaît · pas bien"
         },
         {
           "art": "bilder",
@@ -322,7 +322,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Essayez à deux : l’un·e fait un geste ou un son, l’autre dit ce que ça veut dire.",
+          "text": "Essayez à deux : une personne fait un geste ou un son, l’autre dit ce que ça veut dire.",
           "symbole": [
             "partner"
           ]
@@ -348,7 +348,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ton propre signal : mets-toi d’accord avec ton enseignant·e."
+          "text": "Ton propre signal : mets-toi d’accord avec ton enseignant ou ton enseignante."
         },
         {
           "art": "satzanfaenge",
@@ -568,7 +568,7 @@
             "„Ein Wasser, bitte.“",
             "ja"
           ],
-          "zeilen": 3,
+          "zeilen": 4,
           "breiten": [
             2,
             3,
@@ -607,8 +607,8 @@
       }
     },
     "fr": {
-      "titel": "Demander simplement, clairement",
-      "untertitel": "Avec la cheffe, à la caisse, entre ami·e·s : qui dit avec des mots ce dont il a besoin l’obtient plus souvent – et plus vite.",
+      "titel": "Demander court et clair",
+      "untertitel": "Chez le patron, à la caisse, entre amis : qui dit avec des mots ce dont il a besoin l’obtient plus souvent – et plus vite.",
       "bausteine": [
         {
           "art": "text",
@@ -633,7 +633,7 @@
             {
               "art": "info",
               "symbol": "merke",
-              "titel": "Entre ami·e·s",
+              "titel": "Entre amis",
               "punkte": [
                 "« Hé, … »",
                 "« Tu me passes … ? »",
@@ -658,7 +658,7 @@
           ],
           "optionen": [
             "adultes",
-            "ami·e·s"
+            "amis"
           ]
         },
         {
@@ -701,7 +701,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Entraînez-vous à deux : l’un·e joue la cheffe de stage, l’autre demande ce qu’il faut faire.",
+          "text": "Entraînez-vous à deux : une personne joue la responsable de stage, l’autre demande ce qu’il faut faire.",
           "symbole": [
             "partner"
           ]
@@ -713,14 +713,14 @@
               "wer": "Moi"
             },
             {
-              "wer": "Cheffe",
+              "wer": "Responsable",
               "text": "Oui, qu’est-ce qu’il y a ?"
             },
             {
               "wer": "Moi"
             },
             {
-              "wer": "Cheffe",
+              "wer": "Responsable",
               "text": "Bonne question. Viens, je te montre."
             },
             {
@@ -752,7 +752,7 @@
             "« Une eau, s’il vous plaît. »",
             "oui"
           ],
-          "zeilen": 3,
+          "zeilen": 4,
           "breiten": [
             2,
             3,
@@ -768,9 +768,9 @@
           "Lire les encadrés et essayer à voix haute (5 min) : la même demande, deux tons.",
           "Exercices 1 et 2 (15 min) : classer, puis écrire ou dire ses propres phrases.",
           "Exercice 3 (10 min) : jeu de rôle ; d’abord, l’adulte joue la cheffe.",
-          "Exercice 4 comme mission de la semaine : demander soi-même en stage, à la cantine, entre ami·e·s, et noter."
+          "Exercice 4 comme mission de la semaine : demander soi-même en stage, à la cantine, entre amis, et noter."
         ],
-        "hintergrund": "Obtenir quelque chose des adultes et des pairs avec des mots sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Qui tire, prend ou attend que quelqu’un remarque se retrouve vite en conflit ou seul. Les jeunes demandent souvent de l’aide tard – aussi par honte et parce qu’ils ne savent pas comment demander (Rickwood et al., 2005). Des modèles de phrases simples lèvent cet obstacle. Comme il s’agit du stage, de la cantine et des ami·e·s, l’entraînement reste adulte et respecte le statut des jeunes (Yeager, Dahl & Dweck, 2018).",
+        "hintergrund": "Obtenir quelque chose des adultes et des pairs avec des mots : ce sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Qui tire, prend ou attend que quelqu’un remarque se retrouve vite en conflit ou seul. Les jeunes demandent souvent de l’aide tard – aussi par honte et parce qu’ils ne savent pas comment demander (Rickwood et al., 2005). Des modèles de phrases simples lèvent cet obstacle. Comme il s’agit du stage, de la cantine et des amis, l’entraînement reste adulte et respecte le statut des jeunes (Yeager, Dahl & Dweck, 2018).",
         "quellen": [
           "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
           "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
@@ -1025,7 +1025,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Décris deux objets à toi – par exemple ta veste et ton sac."
+          "text": "Décris deux de tes affaires – par exemple ta veste et ton sac."
         },
         {
           "art": "tabelle",
@@ -1158,7 +1158,7 @@
           "À quoi reconnais-tu tout de suite tes affaires ?"
         ],
         "tipps": [
-          "Préserver la dignité : pendant la devinette, chacun·e a le temps ; personne n’est interrompu ni moqué.",
+          "Préserver la dignité : pendant la devinette, chaque jeune a le temps ; personne n’est interrompu ni moqué.",
           "Observer les progrès : la personne donne-t-elle sans relance au moins trois caractéristiques dans une phrase suivie ?"
         ],
         "material": "Quelques objets du quotidien pour l’entrée en matière"
@@ -1280,7 +1280,8 @@
             "Am besten war, wie wir …",
             "Mein Teil war …",
             "Das sagen wir den anderen: „Wir …“"
-          ]
+          ],
+          "linien": 2
         },
         {
           "art": "aufgabe",
@@ -1296,7 +1297,7 @@
             "z. B. Inês",
             "Du hast freundlich und laut Werbung gemacht."
           ],
-          "zeilen": 4,
+          "zeilen": 5,
           "breiten": [
             1,
             3
@@ -1416,11 +1417,12 @@
             "Le mieux, c’était quand nous …",
             "Ma part, c’était …",
             "Nous disons aux autres : « Nous … »"
-          ]
+          ],
+          "linien": 2
         },
         {
           "art": "aufgabe",
-          "text": "Chacun·e a contribué : écris pour chaque membre de ton groupe ce qu’il ou elle a bien fait."
+          "text": "Tout le monde a contribué : écris pour chaque membre de ton groupe ce qu’il ou elle a bien fait."
         },
         {
           "art": "tabelle",
@@ -1432,7 +1434,7 @@
             "p. ex. Inês",
             "Tu as fait la publicité avec le sourire et à voix haute."
           ],
-          "zeilen": 4,
+          "zeilen": 5,
           "breiten": [
             1,
             3
@@ -1817,7 +1819,7 @@
       "lehrer": {
         "ziel": "Les jeunes attendent leur tour, alternent en parlant, en ligne et en jouant, et connaissent des stratégies pour ne pas couper la parole.",
         "ablauf": [
-          "Entrée (5 min) : faire passer une balle en cercle ; seul·e celui ou celle qui l’a parle.",
+          "Entrée (5 min) : faire passer une balle en cercle ; seule la personne qui l’a parle.",
           "Exercices 1 et 2 (10 min) : lire la conversation. « Comment se sent Jil, et Luca ? »",
           "Exercice 3 (10 min) : trouver des règles pour de vraies situations de la classe.",
           "Exercices 4 à 6 (15 min) : choisir une stratégie, écrire un plan « si … alors », tester une semaine avec le plan."
@@ -2004,7 +2006,8 @@
             "Ziel ist …",
             "Wer dran ist, darf …",
             "Gewonnen hat, wer …"
-          ]
+          ],
+          "linien": 2
         }
       ],
       "lehrer": {
@@ -2136,7 +2139,7 @@
           "punkte": [
             "Respirer un coup, puis dire « bien joué ».",
             "Demander : « On en refait une ? »",
-            "On a le droit d’être fâché·e – mais pas sur le jeu ni sur les autres."
+            "On a le droit d’être en colère – mais pas sur le jeu ni sur les autres."
           ]
         },
         {
@@ -2149,7 +2152,7 @@
           "zeilen": [
             "J’ai demandé.",
             "J’ai joué.",
-            "Je suis resté·e jusqu’à la fin."
+            "J’ai tenu jusqu’à la fin."
           ],
           "symbol": "kasten"
         },
@@ -2165,7 +2168,8 @@
             "Le but, c’est …",
             "Quand c’est ton tour, tu peux …",
             "On gagne quand …"
-          ]
+          ],
+          "linien": 2
         }
       ],
       "lehrer": {
@@ -2381,7 +2385,8 @@
             "Ich habe es ausprobiert am … in/im …",
             "Gut geklappt hat …",
             "Nächstes Mal mache ich anders: …"
-          ]
+          ],
+          "linien": 2
         }
       ],
       "lehrer": {
@@ -2545,12 +2550,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Après la répétition : à quel point te sens-tu prêt·e pour la vraie situation ?"
+          "text": "Après la répétition : dans quelle mesure te sens-tu capable de gérer la vraie situation ?"
         },
         {
           "art": "skala",
-          "von": "pas du tout prêt·e",
-          "bis": "tout à fait prêt·e",
+          "von": "pas du tout capable",
+          "bis": "tout à fait capable",
           "stufen": 11
         },
         {
@@ -2563,19 +2568,20 @@
             "Je l’ai essayé le … à …",
             "Ce qui a bien marché : …",
             "La prochaine fois, je ferai autrement : …"
-          ]
+          ],
+          "linien": 2
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes observent attentivement un modèle, imitent un comportement adapté et jouent des scènes du quotidien « pour de faux » avant de les essayer en vrai.",
         "ablauf": [
           "Entrée (5 min) : lire les règles de la répétition et les faire accepter.",
-          "Exercice 1 (5 min) : choisir une scène ; chacun·e s’exerce à ce dont il ou elle a vraiment besoin.",
-          "Exercice 2 (10 min) : l’adulte ou un·e camarade montre la scène ; tout le monde observe.",
+          "Exercice 1 (5 min) : choisir une scène ; chaque jeune s’exerce à ce dont il ou elle a vraiment besoin.",
+          "Exercice 2 (10 min) : l’adulte ou une personne de la classe montre la scène ; tout le monde observe.",
           "Exercice 3 (15 min) : rejouer à deux, puis une variante personnelle.",
           "Exercice 4 (5 min) : remplir l’échelle, fixer une date pour l’essai en vrai ; exercice 5 ensuite en entretien individuel."
         ],
-        "hintergrund": "Le jeu d’imagination et l’imitation des comportements adaptés des pairs sont des objectifs sociaux précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Pour les jeunes, le jeu de rôle en est la forme adulte : une répétition avant la situation réelle. Apprendre par le modèle et vivre « j’y suis déjà arrivé·e une fois » renforcent l’attente de réussir en vrai (Bandura, 1977). La pédagogie théâtrale utilise justement le jeu comme espace protégé pour essayer d’agir (Boal, 1979). Le volontariat est essentiel : personne n’est obligé de jouer devant le groupe.",
+        "hintergrund": "Le jeu d’imagination et l’imitation des comportements adaptés des pairs sont des objectifs sociaux précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Pour les jeunes, le jeu de rôle en est la forme adulte : une répétition avant la situation réelle. Apprendre par le modèle et vivre « je l’ai déjà réussi une fois » renforcent l’attente de réussir en vrai (Bandura, 1977). La pédagogie théâtrale utilise justement le jeu comme espace protégé pour essayer d’agir (Boal, 1979). Le volontariat est essentiel : personne n’est obligé de jouer devant le groupe.",
         "quellen": [
           "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",

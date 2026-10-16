@@ -3,11 +3,28 @@
     "id": "mein-koerper-veraendert-sich",
     "bereich": "alltag",
     "thema": "koerper",
-    "stufen": ["C4"],
-    "sozialform": ["klasse", "einzeln"],
+    "stufen": [
+      "C4"
+    ],
+    "sozialform": [
+      "klasse",
+      "einzeln"
+    ],
     "dauer": "45 Min.",
-    "eldib": ["SOZ-31", "K-21", "V-26", "K-12"],
-    "schlagworte": ["Pubertät", "Körper", "Veränderung", "Vielfalt", "Gefühle", "Vertrauensperson"],
+    "eldib": [
+      "SOZ-31",
+      "K-21",
+      "V-26",
+      "K-12"
+    ],
+    "schlagworte": [
+      "Pubertät",
+      "Körper",
+      "Veränderung",
+      "Vielfalt",
+      "Gefühle",
+      "Vertrauensperson"
+    ],
     "bild": "icon:butterfly",
     "de": {
       "titel": "Mein Körper verändert sich",
@@ -19,10 +36,21 @@
           "titel": "Was in der Pubertät passiert",
           "text": "Der Körper wird nach und nach erwachsen. Botenstoffe im Körper, die Hormone, geben dafür das Startsignal. Man wächst schneller, Haut und Stimme verändern sich, an neuen Stellen wachsen Haare. Auch Gefühle können stärker werden und schneller wechseln."
         },
-        { "art": "aufgabe", "text": "Stimmt das oder stimmt das nicht? Kreuze an.", "hinweis": "Danach besprecht ihr die Lösungen gemeinsam.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "Stimmt das oder stimmt das nicht? Kreuze an.",
+          "hinweis": "Danach besprecht ihr die Lösungen gemeinsam.",
+          "symbole": [
+            "lesen",
+            "ankreuzen"
+          ]
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["stimmt", "stimmt nicht"],
+          "optionen": [
+            "stimmt",
+            "stimmt nicht"
+          ],
           "items": [
             "Alle Kinder kommen im gleichen Alter in die Pubertät.",
             "Bei manchen beginnt die Pubertät mit 8 Jahren, bei anderen mit 14.",
@@ -38,19 +66,73 @@
           "text": "Nora ist in einem Jahr zehn Zentimeter gewachsen. Jetzt ist sie die Größte in der Klasse. In der Umkleide ruft Kim: „Hey, Riesin, wie ist das Wetter da oben?“ Alle lachen, auch Nora. Aber in ihrem Bauch fühlt es sich eng an. Mathis steht daneben. Er ist einer der Kleinsten und denkt: „Wann wachse ich endlich?“",
           "bild": "figur:jana:verlegen"
         },
-        { "art": "aufgabe", "text": "Nora lacht mit. Wie fühlt sie sich wohl innen drin? Kreise ein.", "symbole": ["nachdenken", "einkreisen"] },
-        { "art": "gefuehle", "gefuehle": ["froh", "verlegen", "traurig", "wuetend", "stolz", "besorgt"], "modus": "einkreisen", "spalten": 6 },
-        { "art": "aufgabe", "text": "Was könnte Nora zu Kim sagen? Und was würdest du Mathis sagen?", "symbole": ["schreiben"] },
-        { "art": "satzanfaenge", "items": ["Nora könnte zu Kim sagen: …", "Zu Mathis würde ich sagen: …"], "linien": 2 },
-        { "art": "aufgabe", "text": "Mit Fragen musst du nicht allein bleiben. Wen kannst du fragen?", "hinweis": "Schreibe nur auf, was du möchtest. Dieses Blatt musst du niemandem zeigen.", "symbole": ["schreiben"] },
-        { "art": "hand", "finger": ["Zuhause", "In der Schule", "Ärztin oder Arzt", "Noch jemand", "Anonym am Telefon: Kanner- a Jugendtelefon 116 111"] },
+        {
+          "art": "aufgabe",
+          "text": "Nora lacht mit. Wie fühlt sie sich wohl innen drin? Kreise ein.",
+          "symbole": [
+            "nachdenken",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "gefuehle",
+          "gefuehle": [
+            "froh",
+            "verlegen",
+            "traurig",
+            "wuetend",
+            "stolz",
+            "besorgt"
+          ],
+          "modus": "einkreisen",
+          "spalten": 6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was könnte Nora zu Kim sagen? Und was würdest du Mathis sagen?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Nora könnte zu Kim sagen: …",
+            "Zu Mathis würde ich sagen: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mit Fragen musst du nicht allein bleiben. Wen kannst du fragen?",
+          "hinweis": "Schreibe nur auf, was du möchtest. Dieses Blatt musst du niemandem zeigen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "Zuhause",
+            "In der Schule",
+            "Ärztin oder Arzt",
+            "Noch jemand",
+            "Anonym am Telefon: Kanner- a Jugendtelefon 116 111"
+          ]
+        },
         {
           "art": "info",
           "symbol": "tipp",
           "titel": "So kannst du anfangen",
-          "punkte": ["„Hast du kurz Zeit? Ich möchte dich etwas fragen.“", "„Es ist mir ein bisschen peinlich, aber …“", "„Ist es normal, dass …?“"]
+          "punkte": [
+            "„Hast du kurz Zeit? Ich möchte dich etwas fragen.“",
+            "„Es ist mir ein bisschen peinlich, aber …“",
+            "„Ist es normal, dass …?“"
+          ]
         },
-        { "art": "rueckblick" }
+        {
+          "art": "rueckblick"
+        }
       ],
       "lehrer": {
         "ziel": "Die Kinder wissen: Die Pubertät kommt bei allen, aber zu unterschiedlichen Zeiten. Sie benennen Gefühle dazu, üben eine Antwort auf abwertende Sprüche und kennen Ansprechpersonen für ihre Fragen.",
@@ -93,10 +175,21 @@
           "titel": "Ce qui se passe à la puberté",
           "text": "Le corps devient peu à peu celui d’un adulte. Les hormones, des messagers du corps, donnent le signal de départ. On grandit plus vite, la peau et la voix changent, des poils poussent à de nouveaux endroits. Les émotions aussi peuvent devenir plus fortes et changer plus vite."
         },
-        { "art": "aufgabe", "text": "C’est vrai ou c’est faux ? Coche.", "hinweis": "Ensuite, vous discutez des réponses ensemble.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "C’est vrai ou c’est faux ? Coche.",
+          "hinweis": "Ensuite, vous discutez des réponses ensemble.",
+          "symbole": [
+            "lesen",
+            "ankreuzen"
+          ]
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["vrai", "faux"],
+          "optionen": [
+            "vrai",
+            "faux"
+          ],
           "items": [
             "Tous les enfants entrent dans la puberté au même âge.",
             "Chez certains, la puberté commence à 8 ans, chez d’autres à 14 ans.",
@@ -112,30 +205,81 @@
           "text": "Nora a grandi de dix centimètres en un an. Maintenant, elle est la plus grande de la classe. Dans le vestiaire, Kim lance : « Hé, la géante, il fait quel temps là-haut ? » Tout le monde rit, Nora aussi. Mais dans son ventre, ça se serre. Mathis est juste à côté. Il est l’un des plus petits et pense : « Quand est-ce que je vais enfin grandir ? »",
           "bild": "figur:jana:verlegen"
         },
-        { "art": "aufgabe", "text": "Nora rit avec les autres. Que ressent-elle sans doute à l’intérieur ? Entoure.", "symbole": ["nachdenken", "einkreisen"] },
+        {
+          "art": "aufgabe",
+          "text": "Nora rit avec les autres. Que ressent-elle sans doute à l’intérieur ? Entoure.",
+          "symbole": [
+            "nachdenken",
+            "einkreisen"
+          ]
+        },
         {
           "art": "gefuehle",
-          "gefuehle": ["froh", "verlegen", "traurig", "wuetend", "stolz", "besorgt"],
+          "gefuehle": [
+            "froh",
+            "verlegen",
+            "traurig",
+            "wuetend",
+            "stolz",
+            "besorgt"
+          ],
           "modus": "einkreisen",
           "spalten": 6,
-          "woerter": ["contente", "gênée", "triste", "en colère", "fière", "inquiète"]
+          "woerter": [
+            "contente",
+            "gênée",
+            "triste",
+            "en colère",
+            "fière",
+            "inquiète"
+          ]
         },
-        { "art": "aufgabe", "text": "Que pourrait dire Nora à Kim ? Et que dirais-tu à Mathis ?", "symbole": ["schreiben"] },
-        { "art": "satzanfaenge", "items": ["Nora pourrait dire à Kim : …", "À Mathis, je dirais : …"], "linien": 2 },
+        {
+          "art": "aufgabe",
+          "text": "Que pourrait dire Nora à Kim ? Et que dirais-tu à Mathis ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Nora pourrait dire à Kim : …",
+            "À Mathis, je dirais : …"
+          ],
+          "linien": 2
+        },
         {
           "art": "aufgabe",
           "text": "Tes questions, tu n’as pas à les garder pour toi. À qui peux-tu les poser ?",
-          "hinweis": "Écris seulement ce que tu veux. Tu n’as à montrer cette feuille à personne.",
-          "symbole": ["schreiben"]
+          "hinweis": "Écris seulement ce que tu veux. Tu n’as besoin de montrer cette feuille à personne.",
+          "symbole": [
+            "schreiben"
+          ]
         },
-        { "art": "hand", "finger": ["À la maison", "À l’école", "Médecin", "Quelqu’un d’autre", "Anonymement au téléphone : Kanner- a Jugendtelefon 116 111"] },
+        {
+          "art": "hand",
+          "finger": [
+            "À la maison",
+            "À l’école",
+            "Médecin",
+            "Quelqu’un d’autre",
+            "Anonymement au téléphone : Kanner- a Jugendtelefon 116 111"
+          ]
+        },
         {
           "art": "info",
           "symbol": "tipp",
           "titel": "Pour commencer",
-          "punkte": ["« Tu as un moment ? J’aimerais te poser une question. »", "« C’est un peu gênant pour moi, mais … »", "« Est-ce normal que … ? »"]
+          "punkte": [
+            "« Tu as un moment ? J’aimerais te poser une question. »",
+            "« C’est un peu gênant pour moi, mais … »",
+            "« Est-ce normal que … ? »"
+          ]
         },
-        { "art": "rueckblick" }
+        {
+          "art": "rueckblick"
+        }
       ],
       "lehrer": {
         "ziel": "Les enfants savent que la puberté arrive pour tout le monde, mais à des moments différents. Ils nomment les émotions qui y sont liées, s’exercent à répondre à des remarques dévalorisantes et connaissent des personnes à qui poser leurs questions.",
@@ -173,13 +317,31 @@
     "id": "koerperbild",
     "bereich": "alltag",
     "thema": "koerper",
-    "stufen": ["ES"],
-    "sozialform": ["einzeln", "klasse"],
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
     "dauer": "45–50 Min.",
-    "eldib": ["SOZ-40", "KOG-58", "V-29"],
-    "schlagworte": ["Körperbild", "soziale Medien", "Filter", "Vergleiche", "Selbstwert", "Medienkompetenz"],
+    "eldib": [
+      "SOZ-40",
+      "KOG-58",
+      "V-29"
+    ],
+    "schlagworte": [
+      "Körperbild",
+      "soziale Medien",
+      "Filter",
+      "Vergleiche",
+      "Selbstwert",
+      "Medienkompetenz"
+    ],
     "bild": "icon:camera",
-    "verwandt": ["mein-koerper-veraendert-sich"],
+    "verwandt": [
+      "mein-koerper-veraendert-sich"
+    ],
     "de": {
       "titel": "Körperbild: Filter, Vergleiche und ich",
       "untertitel": "Auf dem Handy sehen wir täglich Hunderte Körper. Viele Bilder sind ausgewählt, gestellt oder bearbeitet – vergleichen tun wir uns trotzdem.",
@@ -190,10 +352,18 @@
           "titel": "Was ein Bild nicht zeigt",
           "text": "Hinter einem Bild im Netz steckt oft viel Arbeit: Licht, Winkel und Pose sind geplant, aus vielen Versuchen wird das beste ausgewählt. Filter glätten die Haut, machen Augen größer oder die Taille schmaler – manche schon beim Fotografieren. Viele Beiträge sind außerdem Werbung. Wer sich damit vergleicht, vergleicht seinen Alltag mit den besten, bearbeiteten Momenten anderer."
         },
-        { "art": "aufgabe", "text": "Wie oft trifft das auf dich zu?", "hinweis": "Nur für dich – niemand sammelt das ein." },
+        {
+          "art": "aufgabe",
+          "text": "Wie oft trifft das auf dich zu?",
+          "hinweis": "Nur für dich – niemand sammelt das ein."
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["oft", "manchmal", "selten"],
+          "optionen": [
+            "oft",
+            "manchmal",
+            "selten"
+          ],
           "items": [
             "Ich vergleiche meinen Körper mit Bildern im Netz.",
             "Nach dem Scrollen fühle ich mich schlechter als vorher.",
@@ -203,17 +373,43 @@
             "Ich folge Kanälen, nach denen ich mich gut fühle."
           ]
         },
-        { "art": "aufgabe", "text": "Prüfe harte Gedanken: Was würdest du einer guten Freundin oder einem guten Freund sagen?", "hinweis": "Du kannst auch typische Gedanken aus deinem Alter nehmen – es muss nicht um dich gehen." },
+        {
+          "art": "aufgabe",
+          "text": "Prüfe harte Gedanken: Was würdest du einer guten Freundin oder einem guten Freund sagen?",
+          "hinweis": "Du kannst auch typische Gedanken aus deinem Alter nehmen – es muss nicht um dich gehen."
+        },
         {
           "art": "tabelle",
-          "spalten": ["Harter Gedanke über den Körper", "Was ich einer Freundin oder einem Freund sagen würde"],
-          "breiten": [1, 1.25],
+          "spalten": [
+            "Harter Gedanke über den Körper",
+            "Was ich einer Freundin oder einem Freund sagen würde"
+          ],
+          "breiten": [
+            1,
+            1.25
+          ],
           "zeilen": 2,
-          "beispiel": ["„Mit meiner Haut kann ich mich nicht zeigen.“", "„Pickel haben die meisten in unserem Alter. Auf Bildern im Netz sind sie oft nur wegretuschiert.“"]
+          "beispiel": [
+            "„Mit meiner Haut kann ich mich nicht zeigen.“",
+            "„Pickel haben die meisten in unserem Alter. Auf Bildern im Netz sind sie oft nur wegretuschiert.“"
+          ]
         },
-        { "art": "aufgabe", "text": "Schau auf das, was dein Körper kann – nicht nur darauf, wie er aussieht." },
-        { "art": "satzanfaenge", "items": ["Diese Woche hat mein Körper mir ermöglicht, …", "Meinem Körper tut gut, wenn …"], "linien": 2 },
-        { "art": "aufgabe", "text": "Was du siehst, kannst du mitbestimmen. Wähle zwei Schritte für diese Woche." },
+        {
+          "art": "aufgabe",
+          "text": "Schau auf das, was dein Körper kann – nicht nur darauf, wie er aussieht."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Diese Woche hat mein Körper mir ermöglicht, …",
+            "Meinem Körper tut gut, wenn …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was du siehst, kannst du mitbestimmen. Wähle zwei Schritte für diese Woche."
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -227,11 +423,19 @@
           ],
           "frei": 2
         },
-        { "art": "aufgabe", "text": "Dein Plan für den Moment, in dem der Vergleich kommt." },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan für den Moment, in dem der Vergleich kommt."
+        },
         {
           "art": "wennDann",
           "zeilen": 2,
-          "beispiele": [{ "wenn": "Wenn ich beim Scrollen merke, dass ich mich vergleiche,", "dann": "lege ich das Handy weg und schreibe einer Freundin." }]
+          "beispiele": [
+            {
+              "wenn": "Wenn ich beim Scrollen merke, dass ich mich vergleiche,",
+              "dann": "lege ich das Handy weg und schreibe einer Freundin."
+            }
+          ]
         },
         {
           "art": "info",
@@ -286,10 +490,18 @@
           "titel": "Ce qu’une image ne montre pas",
           "text": "Derrière une image en ligne, il y a souvent beaucoup de travail : la lumière, l’angle et la pose sont étudiés, et on garde la meilleure photo parmi de nombreux essais. Les filtres lissent la peau, agrandissent les yeux ou affinent la taille – certains dès la prise de vue. Beaucoup de publications sont aussi de la publicité. En se comparant à ces images, on compare son quotidien aux meilleurs moments, retouchés, des autres."
         },
-        { "art": "aufgabe", "text": "À quelle fréquence est-ce vrai pour toi ?", "hinweis": "Rien que pour toi – personne ne ramasse la fiche." },
+        {
+          "art": "aufgabe",
+          "text": "À quelle fréquence est-ce vrai pour toi ?",
+          "hinweis": "Rien que pour toi – personne ne ramasse la fiche."
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["souvent", "parfois", "rarement"],
+          "optionen": [
+            "souvent",
+            "parfois",
+            "rarement"
+          ],
           "items": [
             "Je compare mon corps aux images que je vois en ligne.",
             "Après un moment sur les réseaux, je me sens moins bien qu’avant.",
@@ -299,17 +511,43 @@
             "Je suis des comptes qui me font du bien."
           ]
         },
-        { "art": "aufgabe", "text": "Mets à l’épreuve les pensées dures : que dirais-tu à un·e ami·e ?", "hinweis": "Tu peux aussi prendre des pensées typiques à ton âge – il ne s’agit pas forcément de toi." },
+        {
+          "art": "aufgabe",
+          "text": "Mets tes pensées sévères à l’épreuve : que dirais-tu à un ami ou à une amie ?",
+          "hinweis": "Tu peux aussi prendre des pensées typiques à ton âge – il ne s’agit pas forcément de toi."
+        },
         {
           "art": "tabelle",
-          "spalten": ["Pensée dure sur le corps", "Ce que je dirais à un·e ami·e"],
-          "breiten": [1, 1.25],
+          "spalten": [
+            "Pensée sévère sur mon corps",
+            "Ce que je dirais à un ami ou à une amie"
+          ],
+          "breiten": [
+            1,
+            1.25
+          ],
           "zeilen": 2,
-          "beispiel": ["« Avec ma peau, je ne peux pas me montrer. »", "« La plupart des jeunes de notre âge ont des boutons. Sur les photos en ligne, ils sont souvent simplement effacés. »"]
+          "beispiel": [
+            "« Avec ma peau, je ne peux pas me montrer. »",
+            "« La plupart des jeunes de notre âge ont des boutons. Sur les photos en ligne, ils sont souvent simplement effacés. »"
+          ]
         },
-        { "art": "aufgabe", "text": "Regarde ce que ton corps te permet de faire – pas seulement son apparence." },
-        { "art": "satzanfaenge", "items": ["Cette semaine, mon corps m’a permis de …", "Mon corps se sent bien quand …"], "linien": 2 },
-        { "art": "aufgabe", "text": "Ce que tu vois, tu peux en partie le choisir. Choisis deux actions pour cette semaine." },
+        {
+          "art": "aufgabe",
+          "text": "Regarde ce que ton corps te permet de faire – pas seulement son apparence."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Cette semaine, mon corps m’a permis de …",
+            "Mon corps se sent bien quand …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ce que tu vois, tu peux en partie le choisir. Choisis deux actions pour cette semaine."
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -323,13 +561,21 @@
           ],
           "frei": 2
         },
-        { "art": "aufgabe", "text": "Ton plan pour le moment où la comparaison arrive." },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan pour le moment où la comparaison arrive."
+        },
         {
           "art": "wennDann",
           "wenn": "Si …",
           "dann": "… alors",
           "zeilen": 2,
-          "beispiele": [{ "wenn": "Si je remarque, en faisant défiler mon fil, que je me compare,", "dann": "je pose le téléphone et j’écris à une amie." }]
+          "beispiele": [
+            {
+              "wenn": "Si je remarque, en faisant défiler mon fil, que je me compare,",
+              "dann": "je pose le téléphone et j’écris à une amie."
+            }
+          ]
         },
         {
           "art": "info",
@@ -379,40 +625,103 @@
     "id": "das-kann-ich-schon",
     "bereich": "alltag",
     "thema": "staerken",
-    "stufen": ["C1"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "C1"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "20–30 Min.",
-    "eldib": ["V-6", "V-14", "SOZ-9", "K-18"],
-    "schlagworte": ["Selbstständigkeit", "Stolz", "Selbstwirksamkeit", "Können", "Spielschule"],
+    "eldib": [
+      "V-6",
+      "V-14",
+      "SOZ-9",
+      "K-18"
+    ],
+    "schlagworte": [
+      "Selbstständigkeit",
+      "Stolz",
+      "Selbstwirksamkeit",
+      "Können",
+      "Spielschule"
+    ],
     "bild": "figur:tom:stolz:jubeln",
-    "verwandt": ["staerken-sterne"],
+    "verwandt": [
+      "staerken-sterne"
+    ],
     "de": {
       "titel": "Das kann ich schon",
       "anleitung": "Die Bilder gemeinsam benennen. Das Kind kreist ein, was es schon kann, und malt dann links etwas, das es gut kann, rechts etwas, das es gerade lernt. Dabei beschreiben, was es geschafft hat: „Du hast deine Jacke ganz allein zugemacht.“",
       "bausteine": [
-        { "art": "aufgabe", "text": "Was kannst du schon? Kreise ein.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "aufgabe",
+          "text": "Was kannst du schon? Kreise ein.",
+          "symbole": [
+            "zeigen",
+            "einkreisen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "einkreisen",
           "spalten": 3,
           "bilder": [
-            { "bild": "icon:shirt", "text": "mich anziehen" },
-            { "bild": "icon:droplet", "text": "Hände waschen" },
-            { "bild": "icon:basket", "text": "aufräumen" },
-            { "bild": "icon:tools-kitchen-2", "text": "Tisch decken" },
-            { "bild": "icon:palette", "text": "malen" },
-            { "bild": "icon:heart", "text": "trösten" }
+            {
+              "bild": "icon:shirt",
+              "text": "mich anziehen"
+            },
+            {
+              "bild": "icon:droplet",
+              "text": "Hände waschen"
+            },
+            {
+              "bild": "icon:basket",
+              "text": "aufräumen"
+            },
+            {
+              "bild": "icon:tools-kitchen-2",
+              "text": "Tisch decken"
+            },
+            {
+              "bild": "icon:palette",
+              "text": "malen"
+            },
+            {
+              "bild": "icon:heart",
+              "text": "trösten"
+            }
           ]
         },
         {
           "art": "spalten",
           "links": [
-            { "art": "aufgabe", "text": "Das kann ich schon.", "symbole": ["malen"] },
-            { "art": "feld", "zeichnen": true, "hoehe": 4.5 }
+            {
+              "art": "aufgabe",
+              "text": "Das kann ich schon.",
+              "symbole": [
+                "malen"
+              ]
+            },
+            {
+              "art": "feld",
+              "zeichnen": true,
+              "hoehe": 4.5
+            }
           ],
           "rechts": [
-            { "art": "aufgabe", "text": "Das lerne ich gerade.", "symbole": ["malen"] },
-            { "art": "feld", "zeichnen": true, "hoehe": 4.5 }
+            {
+              "art": "aufgabe",
+              "text": "Das lerne ich gerade.",
+              "symbole": [
+                "malen"
+              ]
+            },
+            {
+              "art": "feld",
+              "zeichnen": true,
+              "hoehe": 4.5
+            }
           ]
         }
       ],
@@ -452,24 +761,75 @@
       "titel": "Ça, je sais déjà le faire",
       "anleitung": "Nommer les images ensemble. L’enfant entoure ce qu’il sait déjà faire, puis dessine à gauche ce qu’il fait bien et à droite ce qu’il apprend en ce moment. Dire ce qu’il a réussi : « Tu as fermé ta veste tout seul. »",
       "bausteine": [
-        { "art": "aufgabe", "text": "Que sais-tu déjà faire ? Entoure.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "aufgabe",
+          "text": "Que sais-tu déjà faire ? Entoure.",
+          "symbole": [
+            "zeigen",
+            "einkreisen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "einkreisen",
           "spalten": 3,
           "bilder": [
-            { "bild": "icon:shirt", "text": "m’habiller" },
-            { "bild": "icon:droplet", "text": "me laver les mains" },
-            { "bild": "icon:basket", "text": "ranger" },
-            { "bild": "icon:tools-kitchen-2", "text": "mettre la table" },
-            { "bild": "icon:palette", "text": "dessiner" },
-            { "bild": "icon:heart", "text": "consoler" }
+            {
+              "bild": "icon:shirt",
+              "text": "m’habiller"
+            },
+            {
+              "bild": "icon:droplet",
+              "text": "me laver les mains"
+            },
+            {
+              "bild": "icon:basket",
+              "text": "ranger"
+            },
+            {
+              "bild": "icon:tools-kitchen-2",
+              "text": "mettre la table"
+            },
+            {
+              "bild": "icon:palette",
+              "text": "dessiner"
+            },
+            {
+              "bild": "icon:heart",
+              "text": "consoler"
+            }
           ]
         },
         {
           "art": "spalten",
-          "links": [{ "art": "aufgabe", "text": "Ça, je sais déjà faire.", "symbole": ["malen"] }, { "art": "feld", "zeichnen": true, "hoehe": 4.5 }],
-          "rechts": [{ "art": "aufgabe", "text": "Ça, j’apprends.", "symbole": ["malen"] }, { "art": "feld", "zeichnen": true, "hoehe": 4.5 }]
+          "links": [
+            {
+              "art": "aufgabe",
+              "text": "Ça, je sais déjà faire.",
+              "symbole": [
+                "malen"
+              ]
+            },
+            {
+              "art": "feld",
+              "zeichnen": true,
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "text": "Ça, j’apprends.",
+              "symbole": [
+                "malen"
+              ]
+            },
+            {
+              "art": "feld",
+              "zeichnen": true,
+              "hoehe": 4.5
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -509,38 +869,115 @@
     "id": "staerken-sterne",
     "bereich": "alltag",
     "thema": "staerken",
-    "stufen": ["C2"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "30 Min.",
-    "eldib": ["K-19", "K-20", "K-18"],
-    "schlagworte": ["Stärken", "Selbstwert", "Rückmeldung", "Charakterstärken", "Stolz"],
+    "eldib": [
+      "K-19",
+      "K-20",
+      "K-18"
+    ],
+    "schlagworte": [
+      "Stärken",
+      "Selbstwert",
+      "Rückmeldung",
+      "Charakterstärken",
+      "Stolz"
+    ],
     "bild": "icon:star",
-    "verwandt": ["das-kann-ich-schon", "staerken-karten"],
+    "verwandt": [
+      "das-kann-ich-schon",
+      "staerken-karten"
+    ],
     "de": {
       "titel": "Meine Stärken-Sterne",
       "untertitel": "Jeder Mensch kann etwas gut. Manche Stärken sieht man sofort. Andere entdeckt man erst beim genauen Hinsehen.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Was kannst du gut? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "Was kannst du gut? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "ankreuzen",
           "spalten": 4,
           "bilder": [
-            { "bild": "icon:heart-handshake", "text": "helfen" },
-            { "bild": "icon:ear", "text": "zuhören" },
-            { "bild": "icon:shield", "text": "mutig sein" },
-            { "bild": "icon:bulb", "text": "Ideen haben" },
-            { "bild": "icon:hourglass", "text": "warten können" },
-            { "bild": "icon:mood-happy", "text": "lustig sein" },
-            { "bild": "icon:palette", "text": "malen" },
-            { "bild": "icon:run", "text": "schnell laufen" }
+            {
+              "bild": "icon:heart-handshake",
+              "text": "helfen"
+            },
+            {
+              "bild": "icon:ear",
+              "text": "zuhören"
+            },
+            {
+              "bild": "icon:shield",
+              "text": "mutig sein"
+            },
+            {
+              "bild": "icon:bulb",
+              "text": "Ideen haben"
+            },
+            {
+              "bild": "icon:hourglass",
+              "text": "warten können"
+            },
+            {
+              "bild": "icon:mood-happy",
+              "text": "lustig sein"
+            },
+            {
+              "bild": "icon:palette",
+              "text": "malen"
+            },
+            {
+              "bild": "icon:run",
+              "text": "schnell laufen"
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Frag ein anderes Kind: Was kann ich gut?", "hinweis": "Sag dem anderen Kind danach auch eine Stärke.", "symbole": ["partner", "schreiben"] },
-        { "art": "satzanfaenge", "items": ["Das andere Kind sagt: Du kannst gut …"], "linien": 2 },
-        { "art": "aufgabe", "text": "Schreibe eine Stärke auf die Linie. Zeigst du sie, malst du einen Stern an.", "symbole": ["schreiben", "malen"] },
-        { "art": "plan", "zeilen": [""], "symbol": "stern" },
-        { "art": "rueckblick" }
+        {
+          "art": "aufgabe",
+          "text": "Frag ein anderes Kind: Was kann ich gut?",
+          "hinweis": "Sag dem anderen Kind danach auch eine Stärke.",
+          "symbole": [
+            "partner",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das andere Kind sagt: Du kannst gut …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibe eine Stärke auf die Linie. Zeigst du sie an einem Tag, malst du den Stern an.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "plan",
+          "zeilen": [
+            ""
+          ],
+          "symbol": "stern"
+        },
+        {
+          "art": "rueckblick"
+        }
       ],
       "lehrer": {
         "ziel": "Die Kinder benennen eigene Stärken, erfahren, was andere an ihnen schätzen, und zeigen eine Stärke eine Woche lang bewusst.",
@@ -577,32 +1014,86 @@
       "titel": "Mes étoiles : mes points forts",
       "untertitel": "Chacun sait bien faire quelque chose. Certains points forts se voient tout de suite. D’autres se découvrent en regardant de plus près.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Qu’est-ce que tu sais bien faire ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce que tu sais bien faire ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "ankreuzen",
           "spalten": 4,
           "bilder": [
-            { "bild": "icon:heart-handshake", "text": "aider" },
-            { "bild": "icon:ear", "text": "écouter" },
-            { "bild": "icon:shield", "text": "avoir du courage" },
-            { "bild": "icon:bulb", "text": "avoir des idées" },
-            { "bild": "icon:hourglass", "text": "savoir attendre" },
-            { "bild": "icon:mood-happy", "text": "faire rire" },
-            { "bild": "icon:palette", "text": "dessiner" },
-            { "bild": "icon:run", "text": "courir vite" }
+            {
+              "bild": "icon:heart-handshake",
+              "text": "aider"
+            },
+            {
+              "bild": "icon:ear",
+              "text": "écouter"
+            },
+            {
+              "bild": "icon:shield",
+              "text": "avoir du courage"
+            },
+            {
+              "bild": "icon:bulb",
+              "text": "avoir des idées"
+            },
+            {
+              "bild": "icon:hourglass",
+              "text": "savoir attendre"
+            },
+            {
+              "bild": "icon:mood-happy",
+              "text": "faire rire"
+            },
+            {
+              "bild": "icon:palette",
+              "text": "dessiner"
+            },
+            {
+              "bild": "icon:run",
+              "text": "courir vite"
+            }
           ]
         },
         {
           "art": "aufgabe",
           "text": "Demande à un autre enfant : qu’est-ce que je sais bien faire ?",
           "hinweis": "Ensuite, dis aussi un point fort à l’autre enfant.",
-          "symbole": ["partner", "schreiben"]
+          "symbole": [
+            "partner",
+            "schreiben"
+          ]
         },
-        { "art": "satzanfaenge", "items": ["L’autre enfant dit : Tu sais bien …"], "linien": 2 },
-        { "art": "aufgabe", "text": "Écris un point fort sur la ligne. Si tu le montres, colorie une étoile.", "symbole": ["schreiben", "malen"] },
-        { "art": "plan", "zeilen": [""], "symbol": "stern" },
-        { "art": "rueckblick" }
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "L’autre enfant dit : Tu sais bien …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris un point fort sur la ligne. Si tu le montres ce jour-là, colorie l’étoile.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "plan",
+          "zeilen": [
+            ""
+          ],
+          "symbol": "stern"
+        },
+        {
+          "art": "rueckblick"
+        }
       ],
       "lehrer": {
         "ziel": "Les enfants nomment leurs propres points forts, découvrent ce que les autres apprécient chez eux et montrent consciemment un point fort pendant une semaine.",
@@ -640,13 +1131,34 @@
     "id": "staerken-karten",
     "bereich": "alltag",
     "thema": "staerken",
-    "stufen": ["C3", "C4"],
-    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe",
+      "klasse"
+    ],
     "dauer": "45–60 Min.",
-    "eldib": ["K-19", "K-20", "K-28"],
-    "schlagworte": ["Charakterstärken", "Stärken", "Selbstwert", "Wertschätzung", "Karten", "Klassenklima"],
+    "eldib": [
+      "K-19",
+      "K-20",
+      "K-28"
+    ],
+    "schlagworte": [
+      "Charakterstärken",
+      "Stärken",
+      "Selbstwert",
+      "Wertschätzung",
+      "Karten",
+      "Klassenklima"
+    ],
     "bild": "figur:amira:froh:geben",
-    "verwandt": ["staerken-sterne", "mein-staerkenprofil"],
+    "verwandt": [
+      "staerken-sterne",
+      "mein-staerkenprofil"
+    ],
     "de": {
       "titel": "Stärken-Karten",
       "untertitel": "Stärken sind mehr als Tore oder gute Noten. Auch Mut, Geduld oder Humor sind Stärken – und jeder Mensch hat seine eigene Mischung.",
@@ -656,50 +1168,164 @@
           "symbol": "wissen",
           "text": "Forschende haben in vielen Kulturen nachgeschaut, welche Eigenschaften Menschen aneinander schätzen. Sie beschreiben 24 solche Stärken. 16 davon findest du auf den Karten auf Seite 2."
         },
-        { "art": "aufgabe", "text": "Schneide die Karten aus. Suche die drei, die am besten zu dir passen.", "hinweis": "Schreibe zu jeder Stärke ein Beispiel: Wann zeigst du sie?", "symbole": ["schneiden", "schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Schneide die Karten auf Seite 2 aus. Suche die drei, die am besten zu dir passen.",
+          "hinweis": "Schreibe zu jeder Stärke ein Beispiel: Wann zeigst du sie?",
+          "symbole": [
+            "schneiden",
+            "schreiben"
+          ]
+        },
         {
           "art": "tabelle",
-          "spalten": ["Meine Stärke", "Da zeige ich sie"],
-          "breiten": [1, 2.6],
+          "spalten": [
+            "Meine Stärke",
+            "Da zeige ich sie"
+          ],
+          "breiten": [
+            1,
+            2.6
+          ],
           "zeilen": 3,
-          "beispiel": ["Ausdauer", "Beim Seilspringen übe ich so lange, bis es klappt."]
+          "beispiel": [
+            "Ausdauer",
+            "Beim Seilspringen übe ich so lange, bis es klappt."
+          ]
         },
-        { "art": "aufgabe", "text": "Stärken-Detektiv: Schenke zwei Kindern eine Karte, die gut zu ihnen passt.", "hinweis": "Sag dazu, wann du diese Stärke bei ihm oder ihr gesehen hast.", "symbole": ["gruppe", "sprechen"] },
+        {
+          "art": "aufgabe",
+          "text": "Stärken-Detektiv: Schenke zwei Kindern eine Karte, die gut zu ihnen passt.",
+          "hinweis": "Sag dazu, wann du diese Stärke bei ihm oder ihr gesehen hast.",
+          "symbole": [
+            "gruppe",
+            "sprechen"
+          ]
+        },
         {
           "art": "tabelle",
-          "spalten": ["Für wen?", "Welche Stärke?", "Da habe ich sie gesehen"],
-          "breiten": [1, 1.2, 2.4],
+          "spalten": [
+            "Für wen?",
+            "Welche Stärke?",
+            "Da habe ich sie gesehen"
+          ],
+          "breiten": [
+            1,
+            1.2,
+            2.4
+          ],
           "zeilen": 2,
-          "beispiel": ["Chiara", "Freundlichkeit", "Sie hat mir in der Pause ihre Jacke geliehen."]
+          "beispiel": [
+            "Chiara",
+            "Freundlichkeit",
+            "Sie hat mir in der Pause ihre Jacke geliehen."
+          ]
         },
-        { "art": "aufgabe", "text": "Welche Stärke möchtest du diese Woche öfter zeigen? Mach einen Plan.", "symbole": ["schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Welche Stärke möchtest du diese Woche öfter zeigen? Mach einen Plan.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "wennDann",
           "zeilen": 1,
-          "beispiele": [{ "wenn": "Wenn in der Pause jemand allein herumsteht,", "dann": "frage ich: „Willst du mitspielen?“ (Freundlichkeit)" }]
+          "beispiele": [
+            {
+              "wenn": "Wenn in der Pause jemand allein herumsteht,",
+              "dann": "frage ich: „Willst du mitspielen?“ (Freundlichkeit)"
+            }
+          ]
         },
-        { "art": "seitenumbruch" },
+        {
+          "art": "seitenumbruch"
+        },
         {
           "art": "karten",
           "spalten": 4,
-          "hoehe": 136,
+          "hoehe": 168,
           "karten": [
-            { "titel": "Mut", "text": "Ich traue mich, auch wenn ich Angst habe.", "bild": "icon:shield" },
-            { "titel": "Ausdauer", "text": "Ich gebe nicht so schnell auf.", "bild": "icon:mountain" },
-            { "titel": "Ehrlichkeit", "text": "Ich bin ehrlich, auch wenn es schwerfällt.", "bild": "icon:circle-check" },
-            { "titel": "Freundlichkeit", "text": "Ich bin nett zu anderen und helfe gern.", "bild": "icon:heart" },
-            { "titel": "Fairness", "text": "Ich sorge dafür, dass alle mitmachen dürfen.", "bild": "motiv:waage" },
-            { "titel": "Teamgeist", "text": "In der Gruppe mache ich gut mit.", "bild": "icon:users-group" },
-            { "titel": "Neugier", "text": "Ich will wissen, wie Dinge funktionieren.", "bild": "icon:search" },
-            { "titel": "Kreativität", "text": "Ich habe eigene Ideen und probiere sie aus.", "bild": "icon:bulb" },
-            { "titel": "Humor", "text": "Ich mache Witze, aber ich lache niemanden aus.", "bild": "icon:mood-happy" },
-            { "titel": "Dankbarkeit", "text": "Ich merke, wenn mir jemand etwas Gutes tut.", "bild": "icon:gift" },
-            { "titel": "Verzeihen", "text": "Ich kann verzeihen, wenn sich jemand entschuldigt.", "bild": "icon:heart-handshake" },
-            { "titel": "Selbstkontrolle", "text": "Ich kann warten und mich bremsen.", "bild": "motiv:schildkroete" },
-            { "titel": "Mitgefühl", "text": "Ich merke, wie es anderen geht.", "bild": "icon:user-heart" },
-            { "titel": "Begeisterung", "text": "Ich mache Dinge mit viel Schwung.", "bild": "icon:rocket" },
-            { "titel": "Zuversicht", "text": "Ich glaube daran, dass es gut wird.", "bild": "icon:rainbow" },
-            { "titel": "Sinn für Schönes", "text": "Ich staune über Natur, Musik und Bilder.", "bild": "icon:flower" }
+            {
+              "titel": "Mut",
+              "text": "Ich traue mich, auch wenn ich Angst habe.",
+              "bild": "icon:shield"
+            },
+            {
+              "titel": "Ausdauer",
+              "text": "Ich gebe nicht so schnell auf.",
+              "bild": "icon:mountain"
+            },
+            {
+              "titel": "Ehrlichkeit",
+              "text": "Ich bin ehrlich, auch wenn es schwerfällt.",
+              "bild": "icon:circle-check"
+            },
+            {
+              "titel": "Freundlichkeit",
+              "text": "Ich bin nett zu anderen und helfe gern.",
+              "bild": "icon:heart"
+            },
+            {
+              "titel": "Fairness",
+              "text": "Ich sorge dafür, dass alle mitmachen dürfen.",
+              "bild": "motiv:waage"
+            },
+            {
+              "titel": "Teamgeist",
+              "text": "In der Gruppe mache ich gut mit.",
+              "bild": "icon:users-group"
+            },
+            {
+              "titel": "Neugier",
+              "text": "Ich will wissen, wie Dinge funktionieren.",
+              "bild": "icon:search"
+            },
+            {
+              "titel": "Kreativität",
+              "text": "Ich habe eigene Ideen und probiere sie aus.",
+              "bild": "icon:bulb"
+            },
+            {
+              "titel": "Humor",
+              "text": "Ich mache Witze, aber ich lache niemanden aus.",
+              "bild": "icon:mood-happy"
+            },
+            {
+              "titel": "Dankbarkeit",
+              "text": "Ich merke, wenn mir jemand etwas Gutes tut.",
+              "bild": "icon:gift"
+            },
+            {
+              "titel": "Verzeihen",
+              "text": "Ich kann verzeihen, wenn sich jemand entschuldigt.",
+              "bild": "icon:heart-handshake"
+            },
+            {
+              "titel": "Selbstkontrolle",
+              "text": "Ich kann warten und mich bremsen.",
+              "bild": "motiv:schildkroete"
+            },
+            {
+              "titel": "Mitgefühl",
+              "text": "Ich merke, wie es anderen geht.",
+              "bild": "icon:user-heart"
+            },
+            {
+              "titel": "Begeisterung",
+              "text": "Ich mache Dinge mit viel Schwung.",
+              "bild": "icon:rocket"
+            },
+            {
+              "titel": "Zuversicht",
+              "text": "Ich glaube daran, dass es gut wird.",
+              "bild": "icon:rainbow"
+            },
+            {
+              "titel": "Sinn für Schönes",
+              "text": "Ich staune über Natur, Musik und Bilder.",
+              "bild": "icon:flower"
+            }
           ]
         }
       ],
@@ -745,58 +1371,162 @@
         },
         {
           "art": "aufgabe",
-          "text": "Découpe les cartes. Cherche les trois qui te correspondent le mieux.",
+          "text": "Découpe les cartes de la page 2. Cherche les trois qui te correspondent le mieux.",
           "hinweis": "Écris un exemple pour chaque force : quand la montres-tu ?",
-          "symbole": ["schneiden", "schreiben"]
+          "symbole": [
+            "schneiden",
+            "schreiben"
+          ]
         },
         {
           "art": "tabelle",
-          "spalten": ["Ma force", "Quand je la montre"],
-          "breiten": [1, 2.6],
+          "spalten": [
+            "Ma force",
+            "Quand je la montre"
+          ],
+          "breiten": [
+            1,
+            2.6
+          ],
           "zeilen": 3,
-          "beispiel": ["La persévérance", "À la corde à sauter, je m’entraîne jusqu’à ce que ça marche."]
+          "beispiel": [
+            "La persévérance",
+            "À la corde à sauter, je m’entraîne jusqu’à ce que ça marche."
+          ]
         },
         {
           "art": "aufgabe",
           "text": "Détective des forces : offre à deux enfants une carte qui leur correspond bien.",
           "hinweis": "Dis aussi quand tu as vu cette force chez cet enfant.",
-          "symbole": ["gruppe", "sprechen"]
+          "symbole": [
+            "gruppe",
+            "sprechen"
+          ]
         },
         {
           "art": "tabelle",
-          "spalten": ["Pour qui ?", "Quelle force ?", "Quand je l’ai vue"],
-          "breiten": [1, 1.2, 2.4],
+          "spalten": [
+            "Pour qui ?",
+            "Quelle force ?",
+            "Quand je l’ai vue"
+          ],
+          "breiten": [
+            1,
+            1.2,
+            2.4
+          ],
           "zeilen": 2,
-          "beispiel": ["Chiara", "La gentillesse", "Elle m’a prêté sa veste à la récréation."]
+          "beispiel": [
+            "Chiara",
+            "La gentillesse",
+            "Elle m’a prêté sa veste à la récréation."
+          ]
         },
-        { "art": "aufgabe", "text": "Quelle force veux-tu montrer plus souvent cette semaine ? Fais un plan.", "symbole": ["schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Quelle force veux-tu montrer plus souvent cette semaine ? Fais un plan.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "wennDann",
           "zeilen": 1,
-          "beispiele": [{ "wenn": "Si quelqu’un reste seul à la récréation,", "dann": "je demande : « Tu veux jouer avec nous ? » (gentillesse)" }]
+          "beispiele": [
+            {
+              "wenn": "Si quelqu’un reste seul à la récréation,",
+              "dann": "je demande : « Tu veux jouer avec nous ? » (gentillesse)"
+            }
+          ]
         },
-        { "art": "seitenumbruch" },
+        {
+          "art": "seitenumbruch"
+        },
         {
           "art": "karten",
           "spalten": 4,
-          "hoehe": 136,
+          "hoehe": 168,
           "karten": [
-            { "titel": "Courage", "text": "J’ose, même quand j’ai peur.", "bild": "icon:shield" },
-            { "titel": "Persévérance", "text": "Je n’abandonne pas vite.", "bild": "icon:mountain" },
-            { "titel": "Honnêteté", "text": "Je suis honnête, même si c’est difficile.", "bild": "icon:circle-check" },
-            { "titel": "Gentillesse", "text": "Je suis aimable avec les autres et j’aide volontiers.", "bild": "icon:heart" },
-            { "titel": "Équité", "text": "Je veille à ce que tous puissent jouer.", "bild": "motiv:waage" },
-            { "titel": "Esprit d’équipe", "text": "Je participe bien dans un groupe.", "bild": "icon:users-group" },
-            { "titel": "Curiosité", "text": "Je veux savoir comment les choses fonctionnent.", "bild": "icon:search" },
-            { "titel": "Créativité", "text": "J’ai mes propres idées et je les essaie.", "bild": "icon:bulb" },
-            { "titel": "Humour", "text": "Je fais des blagues, mais je ne me moque de personne.", "bild": "icon:mood-happy" },
-            { "titel": "Gratitude", "text": "Je remarque quand on est gentil avec moi.", "bild": "icon:gift" },
-            { "titel": "Pardon", "text": "Je sais pardonner quand quelqu’un s’excuse.", "bild": "icon:heart-handshake" },
-            { "titel": "Maîtrise de soi", "text": "Je sais attendre et me retenir.", "bild": "motiv:schildkroete" },
-            { "titel": "Empathie", "text": "Je remarque comment vont les autres.", "bild": "icon:user-heart" },
-            { "titel": "Enthousiasme", "text": "Je fais les choses avec beaucoup d’élan.", "bild": "icon:rocket" },
-            { "titel": "Optimisme", "text": "Je crois que ça va bien se passer.", "bild": "icon:rainbow" },
-            { "titel": "Sens du beau", "text": "Je m’émerveille devant la nature, la musique et les images.", "bild": "icon:flower" }
+            {
+              "titel": "Courage",
+              "text": "J’ose, même quand j’ai peur.",
+              "bild": "icon:shield"
+            },
+            {
+              "titel": "Persévérance",
+              "text": "Je n’abandonne pas vite.",
+              "bild": "icon:mountain"
+            },
+            {
+              "titel": "Honnêteté",
+              "text": "Je suis honnête, même si c’est difficile.",
+              "bild": "icon:circle-check"
+            },
+            {
+              "titel": "Gentillesse",
+              "text": "Je suis aimable avec les autres et j’aide volontiers.",
+              "bild": "icon:heart"
+            },
+            {
+              "titel": "Équité",
+              "text": "Je veille à ce que tous puissent jouer.",
+              "bild": "motiv:waage"
+            },
+            {
+              "titel": "Esprit d’équipe",
+              "text": "Je participe bien en groupe.",
+              "bild": "icon:users-group"
+            },
+            {
+              "titel": "Curiosité",
+              "text": "Je veux savoir comment les choses fonctionnent.",
+              "bild": "icon:search"
+            },
+            {
+              "titel": "Créativité",
+              "text": "J’ai mes propres idées et je les essaie.",
+              "bild": "icon:bulb"
+            },
+            {
+              "titel": "Humour",
+              "text": "Je fais des blagues, mais je ne me moque de personne.",
+              "bild": "icon:mood-happy"
+            },
+            {
+              "titel": "Gratitude",
+              "text": "Je remarque quand on est gentil avec moi.",
+              "bild": "icon:gift"
+            },
+            {
+              "titel": "Pardon",
+              "text": "Je sais pardonner quand quelqu’un s’excuse.",
+              "bild": "icon:heart-handshake"
+            },
+            {
+              "titel": "Maîtrise de soi",
+              "text": "Je sais attendre et me retenir.",
+              "bild": "motiv:schildkroete"
+            },
+            {
+              "titel": "Empathie",
+              "text": "Je remarque comment vont les autres.",
+              "bild": "icon:user-heart"
+            },
+            {
+              "titel": "Enthousiasme",
+              "text": "Je fais les choses avec beaucoup d’élan.",
+              "bild": "icon:rocket"
+            },
+            {
+              "titel": "Optimisme",
+              "text": "Je crois que ça va bien se passer.",
+              "bild": "icon:rainbow"
+            },
+            {
+              "titel": "Sens du beau",
+              "text": "Je m’émerveille devant la nature, la musique et les images.",
+              "bild": "icon:flower"
+            }
           ]
         }
       ],
@@ -836,13 +1566,32 @@
     "id": "mein-staerkenprofil",
     "bereich": "alltag",
     "thema": "staerken",
-    "stufen": ["ES"],
-    "sozialform": ["einzeln", "gruppe"],
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
     "dauer": "45 Min.",
-    "eldib": ["SOZ-40", "K-34", "V-29"],
-    "schlagworte": ["Charakterstärken", "Signaturstärken", "Selbstbild", "Fremdbild", "Selbstwert", "Positive Psychologie"],
+    "eldib": [
+      "SOZ-40",
+      "K-34",
+      "V-29"
+    ],
+    "schlagworte": [
+      "Charakterstärken",
+      "Signaturstärken",
+      "Selbstbild",
+      "Fremdbild",
+      "Selbstwert",
+      "Positive Psychologie"
+    ],
     "bild": "icon:compass",
-    "verwandt": ["staerken-karten", "balance-finden"],
+    "verwandt": [
+      "staerken-karten",
+      "balance-finden"
+    ],
     "de": {
       "titel": "Mein Stärkenprofil",
       "untertitel": "Stärken sind nicht nur Talente wie Zeichnen oder Fußball. Es geht auch darum, wie du denkst, handelst und mit anderen umgehst.",
@@ -853,10 +1602,18 @@
           "titel": "Charakterstärken",
           "text": "Forschende haben untersucht, welche Eigenschaften in vielen Kulturen als wertvoll gelten, und 24 Charakterstärken beschrieben. Jeder Mensch hat alle – aber unterschiedlich stark. Die drei bis fünf stärksten nennt man Signaturstärken: Sie fühlen sich ‚typisch ich‘ an, und es gibt Energie, sie einzusetzen. Stärken sind nicht festgelegt: Wer sie nutzt, baut sie aus."
         },
-        { "art": "aufgabe", "text": "Wie sehr beschreibt dich das?", "hinweis": "Denk an dein Verhalten in den letzten Wochen – in der Schule, zu Hause, in der Freizeit. Niemand hat alles." },
+        {
+          "art": "aufgabe",
+          "text": "Wie sehr beschreibt dich das?",
+          "hinweis": "Denk an dein Verhalten in den letzten Wochen – in der Schule, zu Hause, in der Freizeit. Niemand hat alles."
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["passt genau", "teils", "kaum"],
+          "optionen": [
+            "passt genau",
+            "teils",
+            "kaum"
+          ],
           "items": [
             "Neugier – Ich frage nach, bis ich etwas verstehe.",
             "Kreativität – Mir fallen oft neue Lösungen ein.",
@@ -876,23 +1633,59 @@
             "Humor – Ich sehe auch die lustige Seite der Dinge."
           ]
         },
-        { "art": "aufgabe", "text": "Wähle drei Stärken mit „passt genau“: deine Top 3. Woran sieht man sie im Alltag?" },
         {
-          "art": "tabelle",
-          "spalten": ["Meine Stärke", "Ein Beispiel aus den letzten Wochen"],
-          "breiten": [1, 3],
-          "zeilen": 3,
-          "beispiel": ["Ausdauer", "Beim Training bin ich drangeblieben, obwohl ich wochenlang nur auf der Bank saß."]
+          "art": "aufgabe",
+          "text": "Wähle drei Stärken mit „passt genau“: deine Top 3. Woran sieht man sie im Alltag?"
         },
-        { "art": "aufgabe", "text": "Frag eine Person, die dich gut kennt: „Welche Stärken siehst du bei mir?“", "hinweis": "Zum Beispiel eine Freundin, einen Trainer oder jemanden aus der Familie." },
-        { "art": "satzanfaenge", "items": ["Diese Person sieht bei mir: …", "Überrascht hat mich: …"], "linien": 2 },
-        { "art": "aufgabe", "text": "Setze eine deiner Top-Stärken eine Woche lang jeden Tag auf neue Weise ein.", "hinweis": "Kleine Schritte reichen. Das Beispiel zeigt, wie es gemeint ist." },
         {
           "art": "tabelle",
-          "spalten": ["Tag", "So habe ich meine Stärke neu eingesetzt"],
-          "breiten": [0.55, 4],
+          "spalten": [
+            "Meine Stärke",
+            "Ein Beispiel aus den letzten Wochen"
+          ],
+          "breiten": [
+            1,
+            3
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Ausdauer",
+            "Beim Training bin ich drangeblieben, obwohl ich wochenlang nur auf der Bank saß."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Frag eine Person, die dich gut kennt: „Welche Stärken siehst du bei mir?“",
+          "hinweis": "Zum Beispiel eine Freundin, einen Trainer oder jemanden aus der Familie."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Diese Person sieht bei mir: …",
+            "Überrascht hat mich: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Setze eine deiner Top-Stärken an fünf Tagen auf neue Weise ein.",
+          "hinweis": "Kleine Schritte reichen. Das Beispiel zeigt, wie es gemeint ist."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Tag",
+            "So habe ich meine Stärke neu eingesetzt"
+          ],
+          "breiten": [
+            0.55,
+            4
+          ],
           "zeilen": 5,
-          "beispiel": ["Mo", "Neugier: In der Kantine jemanden aus der Parallelklasse nach seinem Hobby gefragt."]
+          "beispiel": [
+            "Mo",
+            "Neugier: In der Kantine jemanden aus der Parallelklasse nach seinem Hobby gefragt."
+          ]
         }
       ],
       "lehrer": {
@@ -934,12 +1727,20 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Les forces de caractère",
-          "text": "Des chercheurs ont étudié quelles qualités sont jugées précieuses dans de nombreuses cultures et ont décrit 24 forces de caractère. Chacun·e les possède toutes – mais à des degrés différents. Les trois à cinq plus fortes s’appellent forces signatures : elles donnent le sentiment d’être « vraiment moi », et les utiliser donne de l’énergie. Les forces ne sont pas figées : on les développe en s’en servant."
+          "text": "Des chercheurs ont étudié quelles qualités sont jugées précieuses dans de nombreuses cultures et ont décrit 24 forces de caractère. Chaque personne les possède toutes – mais à des degrés différents. Les trois à cinq plus fortes s’appellent forces signatures : elles donnent le sentiment d’être « vraiment moi », et les utiliser donne de l’énergie. Les forces ne sont pas figées : on les développe en s’en servant."
         },
-        { "art": "aufgabe", "text": "Dans quelle mesure cela te décrit-il ?", "hinweis": "Pense à ton comportement des dernières semaines – à l’école, à la maison, pendant tes loisirs. Personne n’a tout." },
+        {
+          "art": "aufgabe",
+          "text": "Dans quelle mesure cela te décrit-il ?",
+          "hinweis": "Pense à ton comportement des dernières semaines – à l’école, à la maison, pendant tes loisirs. Personne n’a tout."
+        },
         {
           "art": "einschaetzung",
-          "optionen": ["tout à fait", "en partie", "peu"],
+          "optionen": [
+            "tout à fait",
+            "en partie",
+            "peu"
+          ],
           "items": [
             "Curiosité – Je pose des questions jusqu’à ce que je comprenne.",
             "Créativité – Je trouve souvent de nouvelles solutions.",
@@ -959,23 +1760,59 @@
             "Humour – Je vois aussi le côté drôle des choses."
           ]
         },
-        { "art": "aufgabe", "text": "Choisis trois forces cochées « tout à fait » : ton top 3. À quoi les voit-on au quotidien ?" },
         {
-          "art": "tabelle",
-          "spalten": ["Ma force", "Un exemple des dernières semaines"],
-          "breiten": [1, 3],
-          "zeilen": 3,
-          "beispiel": ["Persévérance", "À l’entraînement, j’ai tenu bon, même si je suis resté·e des semaines sur le banc."]
+          "art": "aufgabe",
+          "text": "Choisis trois forces cochées « tout à fait » : ton top 3. À quoi les voit-on au quotidien ?"
         },
-        { "art": "aufgabe", "text": "Demande à une personne qui te connaît bien : « Quelles forces vois-tu chez moi ? »", "hinweis": "Par exemple une amie, un entraîneur ou quelqu’un de ta famille." },
-        { "art": "satzanfaenge", "items": ["Cette personne voit chez moi : …", "Ce qui m’a surpris·e : …"], "linien": 2 },
-        { "art": "aufgabe", "text": "Pendant une semaine, utilise chaque jour une de tes forces principales d’une nouvelle manière.", "hinweis": "De petits pas suffisent. L’exemple montre comment faire." },
         {
           "art": "tabelle",
-          "spalten": ["Jour", "Comment j’ai utilisé ma force autrement"],
-          "breiten": [0.55, 4],
+          "spalten": [
+            "Ma force",
+            "Un exemple des dernières semaines"
+          ],
+          "breiten": [
+            1,
+            3
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Persévérance",
+            "À l’entraînement, j’ai tenu bon, même quand je ne jouais pas depuis des semaines."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Demande à une personne qui te connaît bien : « Quelles forces vois-tu chez moi ? »",
+          "hinweis": "Par exemple une amie, un entraîneur ou quelqu’un de ta famille."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Cette personne voit chez moi : …",
+            "Ce qui me surprend : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pendant cinq jours, utilise une de tes forces principales d’une nouvelle manière.",
+          "hinweis": "De petits pas suffisent. L’exemple montre comment faire."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Jour",
+            "Comment j’ai utilisé ma force autrement"
+          ],
+          "breiten": [
+            0.55,
+            4
+          ],
           "zeilen": 5,
-          "beispiel": ["Lu", "Curiosité : à la cantine, j’ai demandé à un·e élève d’une autre classe quel était son passe-temps."]
+          "beispiel": [
+            "Lu",
+            "Curiosité : à la cantine, j’ai demandé à quelqu’un d’une autre classe quel était son passe-temps."
+          ]
         }
       ],
       "lehrer": {
@@ -1014,35 +1851,100 @@
     "id": "was-tut-mir-gut",
     "bereich": "alltag",
     "thema": "wohlbefinden",
-    "stufen": ["C2"],
-    "sozialform": ["einzeln", "klasse"],
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
     "dauer": "30 Min.",
-    "eldib": ["K-15", "V-13", "K-26"],
-    "schlagworte": ["Wohlbefinden", "Selbstfürsorge", "Bewegung", "Ruhe", "Schlaf", "Kraftquellen"],
+    "eldib": [
+      "K-15",
+      "V-13",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Wohlbefinden",
+      "Selbstfürsorge",
+      "Bewegung",
+      "Ruhe",
+      "Schlaf",
+      "Kraftquellen"
+    ],
     "bild": "icon:user-heart",
-    "verwandt": ["energie-batterie"],
+    "verwandt": [
+      "energie-batterie"
+    ],
     "de": {
       "titel": "Was tut mir gut?",
       "untertitel": "Jeder Mensch braucht Dinge, die ihm guttun. Manches macht froh, manches macht ruhig.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Was tut dir gut? Kreise ein.", "symbole": ["einkreisen"] },
+        {
+          "art": "aufgabe",
+          "text": "Was tut dir gut? Kreise ein.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "einkreisen",
           "spalten": 4,
           "bilder": [
-            { "bild": "icon:run", "text": "rennen" },
-            { "bild": "icon:tree", "text": "draußen sein" },
-            { "bild": "icon:pillow", "text": "ausruhen" },
-            { "bild": "icon:bed", "text": "schlafen" },
-            { "bild": "icon:puzzle", "text": "spielen" },
-            { "bild": "icon:friends", "text": "Freunde" },
-            { "bild": "icon:apple", "text": "Obst essen" },
-            { "bild": "icon:bottle", "text": "Wasser trinken" }
+            {
+              "bild": "icon:run",
+              "text": "rennen"
+            },
+            {
+              "bild": "icon:tree",
+              "text": "draußen sein"
+            },
+            {
+              "bild": "icon:pillow",
+              "text": "ausruhen"
+            },
+            {
+              "bild": "icon:bed",
+              "text": "schlafen"
+            },
+            {
+              "bild": "icon:puzzle",
+              "text": "spielen"
+            },
+            {
+              "bild": "icon:friends",
+              "text": "Freunde"
+            },
+            {
+              "bild": "icon:apple",
+              "text": "Obst essen"
+            },
+            {
+              "bild": "icon:bottle",
+              "text": "Wasser trinken"
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Deine Wohlfühl-Hand: Was tut dir gut?", "hinweis": "Schreibe oder male zu jedem Finger etwas. Kreise dann ein, was du heute noch machst.", "symbole": ["schreiben", "malen"] },
-        { "art": "hand", "finger": ["Bewegung", "Ruhe", "Menschen", "Essen und Trinken", "Spielen"] }
+        {
+          "art": "aufgabe",
+          "text": "Deine Wohlfühl-Hand: Was tut dir gut?",
+          "hinweis": "Schreibe oder male zu jedem Finger etwas. Kreise dann ein, was du heute noch machst.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "Bewegung",
+            "Ruhe",
+            "Menschen",
+            "Essen und Trinken",
+            "Spielen"
+          ]
+        }
       ],
       "lehrer": {
         "ziel": "Die Kinder lernen fünf Bereiche kennen, die zum Wohlbefinden beitragen – Bewegung, Ruhe, Menschen, Essen und Trinken, Spielen – und legen eine eigene Liste an, was ihnen guttut.",
@@ -1079,29 +1981,71 @@
       "titel": "Qu’est-ce qui me fait du bien ?",
       "untertitel": "Tout le monde a besoin de choses qui font du bien. Certaines rendent joyeux. D’autres apaisent.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Qu’est-ce qui te fait du bien ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te fait du bien ? Entoure.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "einkreisen",
           "spalten": 4,
           "bilder": [
-            { "bild": "icon:run", "text": "courir" },
-            { "bild": "icon:tree", "text": "être dehors" },
-            { "bild": "icon:pillow", "text": "se reposer" },
-            { "bild": "icon:bed", "text": "dormir" },
-            { "bild": "icon:puzzle", "text": "jouer" },
-            { "bild": "icon:friends", "text": "des amis" },
-            { "bild": "icon:apple", "text": "manger des fruits" },
-            { "bild": "icon:bottle", "text": "boire de l’eau" }
+            {
+              "bild": "icon:run",
+              "text": "courir"
+            },
+            {
+              "bild": "icon:tree",
+              "text": "être dehors"
+            },
+            {
+              "bild": "icon:pillow",
+              "text": "se reposer"
+            },
+            {
+              "bild": "icon:bed",
+              "text": "dormir"
+            },
+            {
+              "bild": "icon:puzzle",
+              "text": "jouer"
+            },
+            {
+              "bild": "icon:friends",
+              "text": "des amis"
+            },
+            {
+              "bild": "icon:apple",
+              "text": "manger des fruits"
+            },
+            {
+              "bild": "icon:bottle",
+              "text": "boire de l’eau"
+            }
           ]
         },
         {
           "art": "aufgabe",
           "text": "Ta main du bien-être : qu’est-ce qui te fait du bien ?",
           "hinweis": "Écris ou dessine quelque chose pour chaque doigt. Entoure ensuite ce que tu fais encore aujourd’hui.",
-          "symbole": ["schreiben", "malen"]
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
         },
-        { "art": "hand", "finger": ["Bouger", "Se reposer", "Les gens", "Manger et boire", "Jouer"] }
+        {
+          "art": "hand",
+          "finger": [
+            "Bouger",
+            "Se reposer",
+            "Les gens",
+            "Manger et boire",
+            "Jouer"
+          ]
+        }
       ],
       "lehrer": {
         "ziel": "Les enfants découvrent cinq domaines qui contribuent au bien-être – bouger, se reposer, les gens, manger et boire, jouer – et dressent leur propre liste de ce qui leur fait du bien.",
@@ -1139,38 +2083,97 @@
     "id": "energie-batterie",
     "bereich": "alltag",
     "thema": "wohlbefinden",
-    "stufen": ["C3", "C4"],
-    "sozialform": ["einzeln", "klasse"],
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
     "dauer": "45 Min.",
-    "eldib": ["K-29", "V-18", "V-29"],
-    "schlagworte": ["Energie", "Erholung", "Ausgleich", "Schlaf", "Wochenplan", "Wohlbefinden"],
+    "eldib": [
+      "K-29",
+      "V-18",
+      "V-29"
+    ],
+    "schlagworte": [
+      "Energie",
+      "Erholung",
+      "Ausgleich",
+      "Schlaf",
+      "Wochenplan",
+      "Wohlbefinden"
+    ],
     "bild": "motiv:batterie",
-    "verwandt": ["was-tut-mir-gut", "balance-finden"],
+    "verwandt": [
+      "was-tut-mir-gut",
+      "balance-finden"
+    ],
     "de": {
       "titel": "Meine Energie-Batterie",
       "untertitel": "Wie ein Handy braucht auch dein Körper Energie. Manches lädt dich auf, anderes kostet Kraft. Wer beides kennt, kann gut für sich sorgen.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Lies die Geschichte. Unterstreiche rot, was Diogo Kraft kostet, und grün, was ihn auflädt.", "symbole": ["lesen"] },
+        {
+          "art": "aufgabe",
+          "text": "Lies die Geschichte. Unterstreiche rot, was Diogo Kraft kostet, und grün, was ihn auflädt.",
+          "symbole": [
+            "lesen"
+          ]
+        },
         {
           "art": "geschichte",
           "titel": "Ein langer Montag",
           "text": "Am Montag hat Diogo bis 16 Uhr Schule, danach Fußballtraining. Abends spielt er noch lange am Tablet und schläft erst um zehn ein. Am Dienstag ist er schon in der ersten Stunde müde. In der Pause streitet er mit Luca wegen einer Kleinigkeit. Nach der Schule geht er mit seinem Hund in den Wald. Abends liest er einen Comic und geht früh schlafen. Am Mittwoch fühlt er sich wieder fit.",
           "bild": "figur:noah:muede"
         },
-        { "art": "aufgabe", "text": "Wie voll ist deine Batterie heute? Kreise ein.", "symbole": ["einkreisen"] },
+        {
+          "art": "aufgabe",
+          "text": "Wie voll ist deine Batterie heute? Kreise ein.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "einkreisen",
           "spalten": 3,
           "bilder": [
-            { "bild": "motiv:batterie-leer", "text": "fast leer" },
-            { "bild": "motiv:batterie", "text": "halb voll" },
-            { "bild": "motiv:batterie-voll", "text": "voll" }
+            {
+              "bild": "motiv:batterie-leer",
+              "text": "fast leer"
+            },
+            {
+              "bild": "motiv:batterie",
+              "text": "halb voll"
+            },
+            {
+              "bild": "motiv:batterie-voll",
+              "text": "voll"
+            }
           ]
         },
-        { "art": "aufgabe", "text": "Was lädt dich auf? Was kostet dich Kraft?", "hinweis": "Denk an Schule, Pause, Maison Relais, zu Hause und Freizeit.", "symbole": ["schreiben"] },
-        { "art": "batterie", "laden": "Das lädt mich auf", "leeren": "Das kostet mich Kraft", "linien": 4 },
-        { "art": "aufgabe", "text": "Schnell aufladen: Was hilft dir, wenn deine Batterie fast leer ist? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "aufgabe",
+          "text": "Was lädt dich auf? Was kostet dich Kraft?",
+          "hinweis": "Denk an Schule, Pause, Maison Relais, zu Hause und Freizeit.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "batterie",
+          "laden": "Das lädt mich auf",
+          "leeren": "Das kostet mich Kraft",
+          "linien": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schnell aufladen: Was hilft dir, wenn deine Batterie fast leer ist? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -1186,15 +2189,36 @@
           ],
           "frei": 2
         },
-        { "art": "aufgabe", "text": "Plane deine Woche: Wo wird es anstrengend? Was lädt dich danach wieder auf?", "hinweis": "Trage zuerst die anstrengenden Dinge ein, dann den Ausgleich.", "symbole": ["schreiben"] },
+        {
+          "art": "aufgabe",
+          "text": "Plane deine Woche: Wo wird es anstrengend? Was lädt dich danach wieder auf?",
+          "hinweis": "Trage zuerst die anstrengenden Dinge ein, dann den Ausgleich.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
         {
           "art": "tabelle",
-          "spalten": ["Tag", "Das wird anstrengend", "Das lädt mich danach auf"],
-          "breiten": [0.8, 2, 2],
+          "spalten": [
+            "Tag",
+            "Das wird anstrengend",
+            "Das lädt mich danach auf"
+          ],
+          "breiten": [
+            0.8,
+            2,
+            2
+          ],
           "zeilen": 5,
-          "beispiel": ["Montag", "Schule bis 16 Uhr, danach Training", "Tablet um 19 Uhr weglegen, um 20.30 Uhr ins Bett"]
+          "beispiel": [
+            "Montag",
+            "Schule bis 16 Uhr, danach Training",
+            "Tablet um 19 Uhr weglegen, um 20:30 Uhr ins Bett"
+          ]
         },
-        { "art": "rueckblick" }
+        {
+          "art": "rueckblick"
+        }
       ],
       "lehrer": {
         "ziel": "Die Kinder erkennen, was ihnen Energie gibt und was Kraft kostet, kennen schnelle Wege zum Aufladen und planen für eine Woche Ausgleich nach anstrengenden Tagen.",
@@ -1235,8 +2259,10 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Lis l’histoire. Souligne en rouge ce qui prend de la force à Diogo et en vert ce qui le recharge.",
-          "symbole": ["lesen"]
+          "text": "Lis l’histoire. Souligne en rouge ce qui fatigue Diogo et en vert ce qui le recharge.",
+          "symbole": [
+            "lesen"
+          ]
         },
         {
           "art": "geschichte",
@@ -1244,25 +2270,53 @@
           "text": "Le lundi, Diogo a école jusqu’à 16 h, puis entraînement de foot. Le soir, il joue longtemps sur la tablette et ne s’endort qu’à dix heures. Le mardi, il est déjà fatigué à la première heure. À la récréation, il se dispute avec Luca pour un rien. Après l’école, il va dans la forêt avec son chien. Le soir, il lit une BD et se couche tôt. Le mercredi, il se sent de nouveau en forme.",
           "bild": "figur:noah:muede"
         },
-        { "art": "aufgabe", "text": "À quel point ta batterie est-elle pleine aujourd’hui ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "aufgabe",
+          "text": "À quel point ta batterie est-elle pleine aujourd’hui ? Entoure.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
         {
           "art": "bilder",
           "modus": "einkreisen",
           "spalten": 3,
           "bilder": [
-            { "bild": "motiv:batterie-leer", "text": "presque vide" },
-            { "bild": "motiv:batterie", "text": "à moitié pleine" },
-            { "bild": "motiv:batterie-voll", "text": "pleine" }
+            {
+              "bild": "motiv:batterie-leer",
+              "text": "presque vide"
+            },
+            {
+              "bild": "motiv:batterie",
+              "text": "à moitié pleine"
+            },
+            {
+              "bild": "motiv:batterie-voll",
+              "text": "pleine"
+            }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Qu’est-ce qui te recharge ? Qu’est-ce qui te prend de la force ?",
+          "text": "Qu’est-ce qui te recharge ? Qu’est-ce qui te fatigue ?",
           "hinweis": "Pense à l’école, à la récréation, à la Maison Relais, à la maison et aux loisirs.",
-          "symbole": ["schreiben"]
+          "symbole": [
+            "schreiben"
+          ]
         },
-        { "art": "batterie", "laden": "Ça me recharge", "leeren": "Ça me prend de la force", "linien": 4 },
-        { "art": "aufgabe", "text": "Recharge rapide : qu’est-ce qui t’aide quand ta batterie est presque vide ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "batterie",
+          "laden": "Ça me recharge",
+          "leeren": "Ça me fatigue",
+          "linien": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Recharge rapide : qu’est-ce qui t’aide quand ta batterie est presque vide ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -1282,16 +2336,32 @@
           "art": "aufgabe",
           "text": "Planifie ta semaine : où est-ce que ça devient fatigant ? Qu’est-ce qui te recharge ensuite ?",
           "hinweis": "Note d’abord les choses fatigantes, puis ce qui compense.",
-          "symbole": ["schreiben"]
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "tabelle",
-          "spalten": ["Jour", "Ce sera fatigant", "Ce qui me recharge ensuite"],
-          "breiten": [0.8, 2, 2],
+          "spalten": [
+            "Jour",
+            "Ce sera fatigant",
+            "Ce qui me recharge ensuite"
+          ],
+          "breiten": [
+            0.8,
+            2,
+            2
+          ],
           "zeilen": 5,
-          "beispiel": ["Lundi", "École jusqu’à 16 h, puis entraînement", "Poser la tablette à 19 h, au lit à 20 h 30"]
+          "beispiel": [
+            "Lundi",
+            "École jusqu’à 16 h, puis entraînement",
+            "Poser la tablette à 19 h, au lit à 20 h 30"
+          ]
         },
-        { "art": "rueckblick" }
+        {
+          "art": "rueckblick"
+        }
       ],
       "lehrer": {
         "ziel": "Les enfants reconnaissent ce qui leur donne de l’énergie et ce qui leur en prend, connaissent des moyens rapides de se recharger et planifient pour une semaine une compensation après les journées fatigantes.",
@@ -1331,13 +2401,33 @@
     "id": "balance-finden",
     "bereich": "alltag",
     "thema": "wohlbefinden",
-    "stufen": ["ES"],
-    "sozialform": ["einzeln", "klasse"],
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
     "dauer": "45–50 Min.",
-    "eldib": ["V-33", "V-29", "K-26"],
-    "schlagworte": ["Stress", "Ausgleich", "Ressourcen", "Warnsignale", "Salutogenese", "Selbstfürsorge", "Schlaf"],
+    "eldib": [
+      "V-33",
+      "V-29",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Stress",
+      "Ausgleich",
+      "Ressourcen",
+      "Warnsignale",
+      "Salutogenese",
+      "Selbstfürsorge",
+      "Schlaf"
+    ],
     "bild": "motiv:waage",
-    "verwandt": ["energie-batterie", "mein-staerkenprofil"],
+    "verwandt": [
+      "energie-batterie",
+      "mein-staerkenprofil"
+    ],
     "de": {
       "titel": "Balance finden: Stress und Ausgleich",
       "untertitel": "Stress gehört zum Leben – vor Prüfungen, bei Streit, wenn vieles gleichzeitig kommt. Entscheidend ist, ob genug Ausgleich da ist.",
@@ -1348,9 +2438,21 @@
           "titel": "Belastungen und Ressourcen",
           "text": "Gesundheit ist kein Entweder-oder. Wir bewegen uns ständig zwischen ‚Mir geht es gut‘ und ‚Mir geht es schlecht‘. Belastungen ziehen in die eine Richtung, Ressourcen in die andere: Schlaf, Bewegung, Menschen, die zu dir halten, Hobbys, Humor – und das Gefühl, die Dinge im Griff zu haben. Schwierig wird Stress vor allem, wenn er lange anhält und der Ausgleich fehlt."
         },
-        { "art": "aufgabe", "text": "Was belastet dich zurzeit? Was gibt dir Kraft?", "hinweis": "Stichworte reichen. Schreib nur auf, was du aufschreiben möchtest." },
-        { "art": "waage", "links": "Das belastet mich", "rechts": "Das gibt mir Kraft", "zeilen": 4 },
-        { "art": "aufgabe", "text": "Woran merkst du, dass es zu viel wird? Kreuze deine Warnsignale an." },
+        {
+          "art": "aufgabe",
+          "text": "Was belastet dich zurzeit? Was gibt dir Kraft?",
+          "hinweis": "Stichworte reichen. Schreib nur auf, was du aufschreiben möchtest."
+        },
+        {
+          "art": "waage",
+          "links": "Das belastet mich",
+          "rechts": "Das gibt mir Kraft",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, dass es zu viel wird? Kreuze deine Warnsignale an."
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -1368,24 +2470,56 @@
           ],
           "frei": 2
         },
-        { "art": "aufgabe", "text": "Deine Stress-Ampel: Was tust du in welchem Bereich?", "hinweis": "Fang unten bei Grün an." },
+        {
+          "art": "aufgabe",
+          "text": "Deine Stress-Ampel: Was tust du in welchem Bereich?",
+          "hinweis": "Fang unten bei Grün an."
+        },
         {
           "art": "ampel",
           "stufen": [
-            { "titel": "Rot: Es ist zu viel.", "text": "Warnsignale halten an, nichts hilft mehr. Ich spreche mit:" },
-            { "titel": "Gelb: Es wird eng.", "text": "Erste Warnsignale. Das hilft mir, wieder runterzukommen:" },
-            { "titel": "Grün: Ich bin im Gleichgewicht.", "text": "Das tue ich, damit es so bleibt:" }
+            {
+              "titel": "Rot: Es ist zu viel.",
+              "text": "Warnsignale halten an, nichts hilft mehr. Ich spreche mit:"
+            },
+            {
+              "titel": "Gelb: Es wird eng.",
+              "text": "Erste Warnsignale. Das hilft mir, wieder runterzukommen:"
+            },
+            {
+              "titel": "Grün: Ich bin im Gleichgewicht.",
+              "text": "Das tue ich, damit es so bleibt:"
+            }
           ],
           "linien": 2
         },
-        { "art": "aufgabe", "text": "Plane eine Woche mit Ausgleich. Hake jeden Abend ab, was geklappt hat." },
+        {
+          "art": "aufgabe",
+          "text": "Plane eine Woche mit Ausgleich. Hake jeden Abend ab, was geklappt hat."
+        },
         {
           "art": "plan",
-          "tage": ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
-          "zeilen": ["Mindestens 8 Stunden geschlafen", "30 Minuten bewegt", "Zeit mit jemandem, der mir guttut", "Handy eine Stunde vor dem Schlafen weg", ""],
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "Mindestens 8 Stunden geschlafen",
+            "30 Minuten bewegt",
+            "Zeit mit jemandem, der mir guttut",
+            "Handy eine Stunde vor dem Schlafen weg",
+            ""
+          ],
           "symbol": "kasten"
         },
-        { "art": "notfall" }
+        {
+          "art": "notfall"
+        }
       ],
       "lehrer": {
         "ziel": "Die Jugendlichen unterscheiden Belastungen und Ressourcen, erkennen ihre persönlichen Warnsignale, legen für jeden Bereich ihrer Stress-Ampel Schritte fest und planen eine Woche mit Ausgleich.",
@@ -1428,15 +2562,27 @@
           "titel": "Tensions et ressources",
           "text": "La santé n’est pas une question de tout ou rien. Nous nous déplaçons sans cesse entre « ça va bien » et « ça ne va pas ». Les tensions tirent d’un côté, les ressources de l’autre : le sommeil, le mouvement, des personnes qui te soutiennent, tes loisirs, l’humour – et le sentiment de maîtriser les choses. Le stress devient surtout un problème quand il dure longtemps sans compensation."
         },
-        { "art": "aufgabe", "text": "Qu’est-ce qui te pèse en ce moment ? Qu’est-ce qui te donne de la force ?", "hinweis": "Des mots-clés suffisent. N’écris que ce que tu veux bien écrire." },
-        { "art": "waage", "links": "Ce qui me pèse", "rechts": "Ce qui me donne de la force", "zeilen": 4 },
-        { "art": "aufgabe", "text": "À quoi remarques-tu que c’est trop ? Coche tes signaux d’alerte." },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te pèse en ce moment ? Qu’est-ce qui te donne de la force ?",
+          "hinweis": "Des mots-clés suffisent. N’écris que ce que tu veux bien écrire."
+        },
+        {
+          "art": "waage",
+          "links": "Ce qui me pèse",
+          "rechts": "Ce qui me donne de la force",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi remarques-tu que c’est trop ? Coche tes signaux d’alerte."
+        },
         {
           "art": "ankreuzen",
           "spalten": 2,
           "items": [
             "Je dors mal.",
-            "Je suis tout le temps fatigué·e.",
+            "J’ai tout le temps sommeil.",
             "J’ai souvent mal à la tête ou au ventre.",
             "Je suis vite irritable.",
             "J’ai du mal à me concentrer.",
@@ -1448,24 +2594,56 @@
           ],
           "frei": 2
         },
-        { "art": "aufgabe", "text": "Ton feu tricolore du stress : que fais-tu dans chaque zone ?", "hinweis": "Commence en bas, par le vert." },
+        {
+          "art": "aufgabe",
+          "text": "Ton feu tricolore du stress : que fais-tu dans chaque zone ?",
+          "hinweis": "Commence en bas, par le vert."
+        },
         {
           "art": "ampel",
           "stufen": [
-            { "titel": "Rouge : c’est trop.", "text": "Les signaux durent, plus rien n’aide. J’en parle à :" },
-            { "titel": "Orange : ça devient serré.", "text": "Premiers signaux. Ce qui m’aide à redescendre :" },
-            { "titel": "Vert : je suis en équilibre.", "text": "Ce que je fais pour que ça dure :" }
+            {
+              "titel": "Rouge : c’est trop.",
+              "text": "Les signaux durent, plus rien n’aide. J’en parle à :"
+            },
+            {
+              "titel": "Orange : ça devient serré.",
+              "text": "Premiers signaux. Ce qui m’aide à redescendre :"
+            },
+            {
+              "titel": "Vert : je suis en équilibre.",
+              "text": "Ce que je fais pour que ça dure :"
+            }
           ],
           "linien": 2
         },
-        { "art": "aufgabe", "text": "Planifie une semaine équilibrée. Coche chaque soir ce qui a marché." },
+        {
+          "art": "aufgabe",
+          "text": "Planifie une semaine équilibrée. Coche chaque soir ce qui a marché."
+        },
         {
           "art": "plan",
-          "tage": ["Lu", "Ma", "Me", "Je", "Ve", "Sa", "Di"],
-          "zeilen": ["Dormi au moins 8 heures", "Bougé 30 minutes", "Du temps avec quelqu’un qui me fait du bien", "Téléphone rangé une heure avant de dormir", ""],
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "Dormi au moins 8 heures",
+            "Bougé 30 minutes",
+            "Du temps avec quelqu’un qui me fait du bien",
+            "Téléphone rangé une heure avant de dormir",
+            ""
+          ],
           "symbol": "kasten"
         },
-        { "art": "notfall" }
+        {
+          "art": "notfall"
+        }
       ],
       "lehrer": {
         "ziel": "Les jeunes distinguent tensions et ressources, repèrent leurs signaux d’alerte, définissent des actions pour chaque zone de leur feu tricolore du stress et planifient une semaine équilibrée.",
@@ -1473,11 +2651,11 @@
           "Entrée en matière (5 min) : « Qu’est-ce qui stresse le plus les jeunes de votre âge ? » Faire écrire les réponses anonymement, puis les lire.",
           "Lire l’encadré, expliquer la balance : on ne peut pas toujours éviter le stress, mais on peut le compenser.",
           "Exercices 1 et 2 individuellement (10 min), sans lecture à voix haute.",
-          "Exercice 3 (10 min) : remplir le feu tricolore. Pour la zone rouge, préciser où trouver de l’aide au lycée (SePAS, enseignant·e de confiance).",
+          "Exercice 3 (10 min) : remplir le feu tricolore. Pour la zone rouge, préciser où trouver de l’aide au lycée (SePAS, personne de confiance à l’école).",
           "Lancer l’exercice 4, puis échanger à deux une semaine plus tard.",
           "Présenter les numéros d’aide – qui le souhaite les enregistre dans son téléphone."
         ],
-        "hintergrund": "La salutogenèse ne se demande pas seulement ce qui rend malade, mais aussi ce qui maintient en bonne santé (Antonovsky, 1987). Nous nous situons sur un continuum entre santé et maladie. Des ressources de résistance comme le soutien social, le sommeil et l’activité physique, ainsi que le sentiment de pouvoir comprendre les exigences, y faire face et leur donner un sens, maintiennent l’équilibre. Les adolescent·e·s ont besoin de 8 à 10 heures de sommeil (Paruthi et al., 2016). Le feu tricolore relie les premiers signaux à des actions prévues à l’avance – comme les entraînements aux compétences pour adolescent·e·s qui renforcent sommeil, alimentation et activité physique (Rathus & Miller, 2015).",
+        "hintergrund": "La salutogenèse ne se demande pas seulement ce qui rend malade, mais aussi ce qui maintient en bonne santé (Antonovsky, 1987). Nous nous situons sur un continuum entre santé et maladie. Des ressources de résistance comme le soutien social, le sommeil et l’activité physique, ainsi que le sentiment de pouvoir comprendre les exigences, y faire face et leur donner un sens, maintiennent l’équilibre. Les adolescents ont besoin de 8 à 10 heures de sommeil (Paruthi et al., 2016). Le feu tricolore relie les premiers signaux à des actions prévues à l’avance – comme les entraînements aux compétences pour adolescents qui renforcent sommeil, alimentation et activité physique (Rathus & Miller, 2015).",
         "quellen": [
           "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
           "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",

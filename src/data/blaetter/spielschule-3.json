@@ -35,7 +35,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Welches Tier schläft im Winter? Zeig es und sag das Wort.",
+          "text": "Was siehst du im Winter draußen? Zeig und sag das Wort.",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -322,7 +322,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Quel animal dort en hiver ? Montre-le et dis le mot.",
+          "text": "Que vois-tu dehors en hiver ? Montre et dis le mot.",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -762,27 +762,33 @@
           "art": "labyrinth",
           "start": "motiv:taschenlampe",
           "ziel": "motiv:spielzeugkiste",
-          "stufe": 2,
+          "stufe": 1,
           "seed": 42
         },
         {
           "art": "aufgabe",
-          "text": "Die Lampe leuchtet. Male den Schatten der Kiste {schwarz} neben die Kiste.",
+          "text": "Die Lampe steht links. Male den Schatten der Kiste {schwarz} neben die Kiste.",
           "symbole": [
             "malen"
           ],
           "niveau": "stern"
         },
         {
-          "art": "bilder",
-          "modus": "anmalen",
-          "spalten": 2,
-          "bilder": [
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
             {
-              "bild": "motiv:taschenlampe"
-            },
+              "art": "bild",
+              "bild": "motiv:spielzeugkiste",
+              "groesse": "l",
+              "ausrichtung": "mitte"
+            }
+          ],
+          "rechts": [
             {
-              "bild": "motiv:spielzeugkiste"
+              "art": "feld",
+              "zeichnen": true,
+              "hoehe": 6
             }
           ]
         }
@@ -1033,27 +1039,33 @@
           "art": "labyrinth",
           "start": "motiv:taschenlampe",
           "ziel": "motiv:spielzeugkiste",
-          "stufe": 2,
+          "stufe": 1,
           "seed": 42
         },
         {
           "art": "aufgabe",
-          "text": "La lampe est allumée. Dessine l’ombre du coffre en {noir}, à côté.",
+          "text": "La lampe est à gauche. Dessine l’ombre du coffre en {noir}, à côté.",
           "symbole": [
             "malen"
           ],
           "niveau": "stern"
         },
         {
-          "art": "bilder",
-          "modus": "anmalen",
-          "spalten": 2,
-          "bilder": [
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
             {
-              "bild": "motiv:taschenlampe"
-            },
+              "art": "bild",
+              "bild": "motiv:spielzeugkiste",
+              "groesse": "l",
+              "ausrichtung": "mitte"
+            }
+          ],
+          "rechts": [
             {
-              "bild": "motiv:spielzeugkiste"
+              "art": "feld",
+              "zeichnen": true,
+              "hoehe": 6
             }
           ]
         }
@@ -2654,7 +2666,7 @@
             },
             {
               "bild": "motiv:helm",
-              "text": "warten"
+              "text": "Helm auf"
             },
             {
               "bild": "motiv:berg"
@@ -2945,7 +2957,7 @@
             },
             {
               "bild": "motiv:helm",
-              "text": "attendre"
+              "text": "mets le casque"
             },
             {
               "bild": "motiv:berg"
@@ -3593,7 +3605,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse"
+              "titel": "le gobelet"
             },
             {
               "bild": "motiv:wasserglas",
@@ -4034,7 +4046,7 @@
           "Was braucht die Tulpe, damit sie aufgeht?"
         ],
         "tipps": [
-          "Nur ungiftige Blumen (Tulpe, Primel, Gänseblümchen), kein Maiglöckchen, keine Narzissen; Blumen nie in den Mund, danach Hände waschen.",
+          "Nur harmlose Blumen (Gänseblümchen, Stiefmütterchen); Tulpen und Primeln vorsichtig anfassen, die Haut kann reagieren; kein Maiglöckchen, keine Narzissen; Blumen nie in den Mund, danach Hände waschen.",
           "Draußen nur pflücken, was reichlich wächst, und nur so viel, wie gebraucht wird."
         ],
         "material": "Topfblume, Tulpen, Vase, Farbkarten, Reifen, Papierblumen, Papprollen, Fingerfarbe, Wasser, Kamera",
@@ -4269,7 +4281,7 @@
           "De quoi la tulipe a-t-elle besoin pour s’ouvrir ?"
         ],
         "tipps": [
-          "Seulement des fleurs non toxiques (tulipe, primevère, pâquerette), ni muguet ni narcisse ; jamais en bouche, se laver les mains ensuite.",
+          "Seulement des fleurs inoffensives (pâquerette, pensée) ; tulipes et primevères à toucher avec précaution, la peau peut réagir ; ni muguet ni narcisse ; jamais en bouche, se laver les mains ensuite.",
           "Dehors, ne cueillir que ce qui pousse en abondance, et juste ce qu’il faut."
         ],
         "material": "plante en pot, tulipes, vase, cartes couleur, cerceaux, fleurs en papier, rouleaux, gouache, eau, appareil photo",
@@ -5855,7 +5867,7 @@
         {
           "art": "feld",
           "zeichnen": true,
-          "hoehe": 3
+          "hoehe": 6
         }
       ],
       "lehrer": {
@@ -6118,7 +6130,7 @@
         {
           "art": "feld",
           "zeichnen": true,
-          "hoehe": 3
+          "hoehe": 6
         }
       ],
       "lehrer": {
@@ -7072,10 +7084,9 @@
         },
         {
           "art": "aufgabe",
-          "text": "Finde 3 Regenwürmer und 2 Schnecken. Kreise ein und hake ab.",
+          "text": "Finde 3 Regenwürmer und 2 Schnecken. Kreise sie ein.",
           "symbole": [
-            "einkreisen",
-            "zeigen"
+            "einkreisen"
           ],
           "niveau": "einstieg"
         },
@@ -7315,7 +7326,7 @@
     },
     "fr": {
       "titel": "Au jardin",
-      "untertitel": "Printemps : terre, outils, vers – un potager à soi et la question du bas",
+      "untertitel": "Printemps : terre, outils, vers – un potager à soi et la question : où est le bas ?",
       "anleitung": "Imprimer les cartes deux fois. Sur la page 2, les enfants cherchent vers de terre et escargots dans le potager, les entourent et comptent : des cases à cocher en bas. Haricots crus toxiques, seulement sous surveillance.",
       "bausteine": [
         {
@@ -7374,10 +7385,9 @@
         },
         {
           "art": "aufgabe",
-          "text": "Trouve 3 vers de terre et 2 escargots. Entoure et coche.",
+          "text": "Trouve 3 vers de terre et 2 escargots. Entoure-les.",
           "symbole": [
-            "einkreisen",
-            "zeigen"
+            "einkreisen"
           ],
           "niveau": "einstieg"
         },
@@ -8698,7 +8708,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Colorie les vêtements. Découpe. Habille Mia pour la journée chaude.",
+          "text": "Colorie les vêtements. Découpe. Habille Mia pour une journée chaude.",
           "symbole": [
             "schneiden",
             "malen"
@@ -9055,7 +9065,8 @@
               "bild": "motiv:gummistiefel",
               "titel": "die Gummistiefel"
             }
-          ]
+          ],
+          "hoehe": 165
         },
         {
           "art": "seitenumbruch"
@@ -9066,15 +9077,15 @@
           "bild": "motiv:flasche",
           "vermuten": [
             {
-              "bild": "motiv:flasche",
+              "bild": "icon:number-1",
               "text": "oben"
             },
             {
-              "bild": "motiv:flasche",
-              "text": "Mitte"
+              "bild": "icon:number-2",
+              "text": "in der Mitte"
             },
             {
-              "bild": "motiv:flasche",
+              "bild": "icon:number-3",
               "text": "unten"
             }
           ],
@@ -9276,7 +9287,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse"
+              "titel": "le gobelet"
             },
             {
               "bild": "motiv:giesskanne",
@@ -9306,7 +9317,8 @@
               "bild": "motiv:gummistiefel",
               "titel": "les bottes"
             }
-          ]
+          ],
+          "hoehe": 165
         },
         {
           "art": "seitenumbruch"
@@ -9317,15 +9329,15 @@
           "bild": "motiv:flasche",
           "vermuten": [
             {
-              "bild": "motiv:flasche",
+              "bild": "icon:number-1",
               "text": "en haut"
             },
             {
-              "bild": "motiv:flasche",
+              "bild": "icon:number-2",
               "text": "au milieu"
             },
             {
-              "bild": "motiv:flasche",
+              "bild": "icon:number-3",
               "text": "en bas"
             }
           ],
@@ -9712,7 +9724,7 @@
         }
       ],
       "lehrer": {
-        "ziel": "Die Kinder planen ein Picknick mit, packen den Korb, verteilen für jedes Kind einen Becher und Teller, teilen gerecht, nehmen ihren Müll mit und erforschen im Versuch, wohin Ameisen zuerst laufen.",
+        "ziel": "Die Kinder planen gemeinsam ein Picknick, packen den Korb, verteilen für jedes Kind einen Becher und Teller, teilen gerecht, nehmen ihren Müll mit und erforschen im Versuch, wohin Ameisen zuerst laufen.",
         "ablauf": [
           "Montag – Fragenplakat; Picknickplatz wählen (Bausteine); Karten einführen; Picknick-Liste in Bildern.",
           "Dienstag – für jedes Kind einen Becher und einen Teller zählen und verteilen; fehlt etwas?",
@@ -9943,7 +9955,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse"
+              "titel": "le gobelet"
             },
             {
               "bild": "motiv:teller",
@@ -10310,7 +10322,7 @@
     "de": {
       "titel": "Sand und Matsch",
       "untertitel": "Sommer: bauen, formen und fühlen – trocken, nass und matschig",
-      "anleitung": "Die Karten zweimal drucken. Auf Seite 2 schneidet das Kind das Sand-Buch aus, faltet es und malt die Bilder an. Wer mag, malt später die eigene Burg auf die Leerseite.",
+      "anleitung": "Die Karten zweimal drucken. Auf Seite 2 schneidet das Kind das Sand-Buch aus und faltet es (Erwachsene helfen beim Einschneiden); auf die letzte Seite malt es ein eigenes Bild, zum Beispiel eine Burg.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -10368,7 +10380,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schneide dein Buch aus. Falte es. Male die Bilder an.",
+          "text": "Schneide dein Buch aus. Falte es. Male auf die letzte Seite.",
           "symbole": [
             "schneiden",
             "malen"
@@ -10388,7 +10400,7 @@
               "text": "Eimer"
             },
             {
-              "bild": "icon:tower",
+              "bild": "motiv:burg",
               "text": "Burg"
             },
             {
@@ -10396,12 +10408,11 @@
               "text": "Stiefel"
             },
             {
-              "bild": "icon:footsteps",
-              "text": "Spur"
-            },
-            {
               "bild": "motiv:pfuetze",
               "text": "Pfütze"
+            },
+            {
+              "text": "Mein Bild"
             }
           ]
         }
@@ -10609,7 +10620,7 @@
     "fr": {
       "titel": "Sable et boue",
       "untertitel": "Été : construire, modeler et sentir – sec, mouillé et boueux",
-      "anleitung": "Imprimer les cartes deux fois. Sur la page 2, l’enfant découpe son livre de sable, le plie et colorie les images. Qui veut dessine ensuite son château sur la page vide.",
+      "anleitung": "Imprimer les cartes deux fois. Sur la page 2, l’enfant découpe son livre de sable et le plie (l’adulte aide à faire la fente) ; sur la dernière page, il dessine par exemple son château.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -10653,7 +10664,7 @@
             },
             {
               "bild": "motiv:gummistiefel",
-              "titel": "la botte en caoutchouc"
+              "titel": "la botte"
             },
             {
               "bild": "motiv:hand-offen",
@@ -10667,7 +10678,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Découpe ton livre, plie-le et colorie les images.",
+          "text": "Découpe ton livre. Plie-le. Dessine sur la dernière page.",
           "symbole": [
             "schneiden",
             "malen"
@@ -10687,7 +10698,7 @@
               "text": "seau"
             },
             {
-              "bild": "icon:tower",
+              "bild": "motiv:burg",
               "text": "château"
             },
             {
@@ -10695,12 +10706,11 @@
               "text": "botte"
             },
             {
-              "bild": "icon:footsteps",
-              "text": "trace"
-            },
-            {
               "bild": "motiv:pfuetze",
               "text": "flaque"
+            },
+            {
+              "text": "Mon dessin"
             }
           ]
         }
@@ -11296,7 +11306,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse"
+              "titel": "le gobelet"
             },
             {
               "bild": "icon:banana",
@@ -11330,7 +11340,7 @@
         },
         {
           "art": "forscherblatt",
-          "frage": "Quel tissu chauffe plus : le foncé ou le clair ?",
+          "frage": "Quel tissu chauffe le plus : le foncé ou le clair ?",
           "bild": "motiv:sonne",
           "vermuten": [
             {
@@ -11747,7 +11757,7 @@
             },
             {
               "bild": "motiv:flugzeug",
-              "text": "brummen"
+              "text": "fliegen"
             },
             {
               "bild": "motiv:koffer",
@@ -12027,7 +12037,7 @@
             },
             {
               "bild": "motiv:bus",
-              "text": "1 de plus"
+              "text": "avance de 1"
             },
             {
               "bild": "motiv:zug",
@@ -12063,7 +12073,7 @@
             },
             {
               "bild": "motiv:flugzeug",
-              "text": "vrombir"
+              "text": "voler"
             },
             {
               "bild": "motiv:koffer",

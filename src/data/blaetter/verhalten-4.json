@@ -34,7 +34,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Schau die Bilder an. Was denkt Inês?",
+          "text": "Schau die Bilder an. Was ist bei A und B anders?",
           "symbole": [
             "lesen",
             "nachdenken"
@@ -146,7 +146,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Regarde les images. Que pense Inês ?",
+          "text": "Regarde les images. Qu’est-ce qui change entre A et B ?",
           "symbole": [
             "lesen",
             "nachdenken"
@@ -218,7 +218,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "À retenir",
-          "text": "Les pensées sont comme des stations de radio. Tu peux changer."
+          "text": "Les pensées sont comme des stations de radio. Tu peux changer de station."
         }
       ],
       "lehrer": {
@@ -354,7 +354,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Atme ruhig: Fahre die Finger nach. Mach fünf lange Atemzüge."
+          "text": "Probiere die Finger-Atmung aus: fünf lange Atemzüge."
         },
         {
           "art": "atmen",
@@ -476,7 +476,7 @@
         {
           "art": "geschichte",
           "titel": "À la cantine",
-          "text": "Dans la file de la cantine, Yusuf passe devant Mila. Le cœur de Mila bat vite. Son visage devient chaud. Sa main se ferme en poing. Elle aimerait pousser Yusuf.",
+          "text": "Dans la file de la cantine, Yusuf passe devant Mila. Le cœur de Mila bat vite. Son visage devient brûlant. Sa main se ferme en poing. Elle aimerait pousser Yusuf.",
           "bild": "figur:amira:wuetend"
         },
         {
@@ -542,7 +542,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Respire calmement : suis les doigts. Fais cinq longues respirations."
+          "text": "Essaie la respiration des doigts : cinq longues respirations."
         },
         {
           "art": "atmen",
@@ -1017,7 +1017,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ton cas : une situation récente qui t’a énervé·e ou stressé·e. Un cas inventé marche aussi bien.",
+          "text": "Ton cas : une situation récente qui a provoqué chez toi de l’agacement ou du stress. Un cas inventé marche aussi bien.",
           "hinweis": "Rien de grave : bus, récré, chat, entraînement.",
           "symbole": [
             "schreiben"
@@ -1106,7 +1106,7 @@
         },
         "impulse": [
           "À quoi remarques-tu qu’une pensée prend le volant ?",
-          "Quand une première explication t’a-t-elle déjà égaré·e ?"
+          "Quand ta première explication s’est-elle déjà révélée fausse ?"
         ],
         "tipps": [
           "Groupe : exercice 2 en petits groupes ; les cas personnels restent privés.",
@@ -1502,7 +1502,7 @@
         },
         "impulse": [
           "Quel piège entend-on le plus souvent dans les chats ?",
-          "Quand es-tu tombé·e dans l’un d’eux pour la dernière fois ?"
+          "Quand t’es-tu fait piéger par l’un d’eux pour la dernière fois ?"
         ],
         "tipps": [
           "Groupe : jeu de cartes : une équipe mime une phrase, l’autre nomme le piège.",
@@ -1626,7 +1626,7 @@
           "art": "satzanfaenge",
           "items": [
             "Tatsache oder nur ein Gefühl? …",
-            "Das würde ich einer Freundin sagen: …",
+            "Das würde ich einem Freund oder einer Freundin sagen: …",
             "Beim letzten Mal ist es so gegangen: …"
           ],
           "linien": 1
@@ -1700,7 +1700,7 @@
         },
         "impulse": [
           "Woran erkennst du eine Tatsache?",
-          "Was würde dein bester Freund dazu sagen?"
+          "Was würde ein guter Freund oder eine gute Freundin dazu sagen?"
         ],
         "tipps": [
           "Gruppe: Rollenspiel mit Anklage, Verteidigung und Richter an einem erfundenen Fall.",
@@ -1766,7 +1766,7 @@
         {
           "art": "aufgabe",
           "text": "Rassemble des preuves. Seul compte ce qu’on peut voir, entendre ou vérifier.",
-          "hinweis": "Exemple « Je vais me ridiculiser » : pour – la dernière fois, j’ai tremblé. Contre – je me suis entraîné·e, et Léa m’écoute.",
+          "hinweis": "Exemple « Je vais me ridiculiser » : pour – la dernière fois, j’ai tremblé. Contre – j’ai répété, et Léa m’écoute.",
           "symbole": [
             "schreiben"
           ]
@@ -1791,7 +1791,7 @@
           "art": "satzanfaenge",
           "items": [
             "Un fait ou juste un ressenti ? …",
-            "Voilà ce que je dirais à un ami : …",
+            "Voilà ce que je dirais à un ami ou à une amie : …",
             "La dernière fois, ça s’est passé comme ça : …"
           ],
           "linien": 1
@@ -1799,7 +1799,7 @@
         {
           "art": "aufgabe",
           "text": "Rends ton verdict : une pensée qui prend les deux côtés au sérieux.",
-          "hinweis": "Exemple : « Je suis nerveux, et je me suis entraîné. Ça se passera sans doute assez bien. »",
+          "hinweis": "Exemple : « J’ai le trac, et j’ai répété. Ça se passera sans doute assez bien. »",
           "symbole": [
             "schreiben"
           ]
@@ -1833,7 +1833,7 @@
           "beispiele": [
             {
               "wenn": "Si « Je vais me ridiculiser » revient,",
-              "dann": "je me dis : je suis nerveux·se, et je me suis entraîné·e."
+              "dann": "je me dis : j’ai le trac, et j’ai répété."
             }
           ]
         },
@@ -1850,7 +1850,7 @@
           "Entrée en matière (5 min) : « Qui a le droit de parler au tribunal ? Qu’est-ce qui compte comme preuve ? » Clarifier les rôles : accusation, défense, juge.",
           "Cas commun au tableau (8 min) : pensée inventée, rassembler des preuves. « Un fait ou une interprétation ? »",
           "Exercices 1 et 2 individuellement (12 min) ; au choix, reprendre la pensée de l’exemple. Noter la conviction avant.",
-          "Exercices 3 et 4 (12 min) : répondre seul·e aux questions, relire le verdict à deux.",
+          "Exercices 3 et 4 (12 min) : répondre individuellement aux questions, relire le verdict à deux.",
           "Exercice 5 (3 min) : le verdict comme phrase pour le quotidien. Conclusion (3 min) : comparer les échelles. « Quelque chose a bougé ? Un point compte déjà. »"
         ],
         "hintergrund": "L’exercice relève de la restructuration cognitive de la thérapie cognitivo-comportementale (TCC) : les pensées automatiques pesantes sont traitées comme des hypothèses et vérifiées par des preuves pour et contre (Beck, 2011). Le but n’est pas une pensée positive, mais équilibrée ; la conviction avant et après (0–10) rend le changement visible. La question « Que dirais-je à un ami ? » mobilise la distanciation de soi (Kross & Ayduk, 2017) ; les manuels pour adolescents l’utilisent aussi (Stallard, 2019).",

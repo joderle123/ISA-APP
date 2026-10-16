@@ -117,7 +117,7 @@
             "s’enfuir",
             "éponger l’eau",
             "dire : « C’est pas grave. »",
-            "donner une feuille à Finn",
+            "apporter une nouvelle feuille à Finn",
             "demander : « Que puis-je faire ? »"
           ]
         },
@@ -254,7 +254,7 @@
         {
           "art": "wennDann",
           "zeilen": 1,
-          "beispiele": [{ "wenn": "Wenn ich merke, dass ich gleich wütend werde,", "dann": "gehe ich zur Lehrerin und sage: „Ich brauche eine Pause.“" }]
+          "beispiele": [{ "wenn": "Wenn ich merke, dass ich gleich wütend werde,", "dann": "gehe ich zu meiner Lehrerin oder meinem Lehrer und sage: „Ich brauche eine Pause.“" }]
         },
         { "art": "frage", "text": "Mit wem möchtest du über deine Antworten sprechen?", "linien": 1 },
         { "art": "rueckblick", "frage": "So ging es mir mit den Fragen:" }
@@ -329,7 +329,7 @@
         },
         {
           "art": "tabelle",
-          "spalten": ["Qui ?", "Ce qui lui est arrivé", "Comment elle se sent"],
+          "spalten": ["Qui ?", "Qu’est-ce qui lui est arrivé ?", "Comment la personne se sent-elle ?"],
           "breiten": [1, 2.2, 1.6],
           "zeilen": 4,
           "beispiel": ["Kim", "Son cahier est déchiré.", "triste, fâchée contre moi"]
@@ -364,7 +364,7 @@
           "beispiele": [
             {
               "wenn": "Si je sens que je vais bientôt me mettre en colère,",
-              "dann": "je vais voir la maîtresse et je dis : « J’ai besoin d’une pause. »"
+              "dann": "je vais voir ma maîtresse ou mon maître et je dis : « J’ai besoin d’une pause. »"
             }
           ]
         },
@@ -585,7 +585,7 @@
         { "art": "aufgabe", "text": "Prépare la conversation avec la personne concernée. Complète les phrases." },
         {
           "art": "satzanfaenge",
-          "items": ["J’aimerais te parler de …", "J’ai compris que …", "Je suis désolé·e de …", "J’aimerais réparer en …"],
+          "items": ["J’aimerais te parler de …", "J’ai compris que …", "Excuse-moi pour …", "J’aimerais réparer en …"],
           "linien": 2
         },
         {
@@ -594,7 +594,7 @@
           "titel": "Bien préparer la conversation",
           "punkte": [
             "Choisis un moment et un lieu calmes – pas entre deux portes.",
-            "Demande à quelqu’un de t’accompagner, par exemple un·e enseignant·e ou une personne du SePAS.",
+            "Demande à quelqu’un de t’accompagner, par exemple un enseignant, une enseignante ou une personne du SePAS.",
             "Écoute sans te défendre. L’autre a le droit d’être en colère.",
             "Pour finir, demande : « De quoi as-tu encore besoin de ma part ? »",
             "Si la personne ne veut pas (encore) parler, respecte-le – et fais quand même ce que tu as promis."
@@ -606,7 +606,7 @@
         "ablauf": [
           "Entrée en matière (5 min) : présenter les trois questions clés. Souligner qu’il s’agit de conséquences et de solutions, pas de faute ni de punition.",
           "Lire le cas, exercice 1 à deux (10 min). En plénière, recenser toutes les personnes concernées.",
-          "Exercice 2 (5 min) : classer seul·e, puis comparer. Expliquer pourquoi « désolé si quelqu’un s’est senti visé » ne sont pas de vraies excuses.",
+          "Exercice 2 (5 min) : classer individuellement, puis comparer. Expliquer pourquoi « désolé si quelqu’un s’est senti visé » n’est pas une vraie excuse.",
           "Exercices 3–4 (15 min) : choisir le cas de Mehmet ou une situation personnelle. Ne pas discuter les situations personnelles en plénière.",
           "En cas d’incident réel : mener la conversation accompagnée et sur base volontaire. La personne concernée décide si et quand."
         ],
@@ -711,7 +711,7 @@
       "titel": "Mon petit objectif",
       "untertitel": "Un bon objectif est petit et clair. On peut voir si ça marche.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Choisis un objectif. Coche ou écris toi-même.", "symbole": ["ankreuzen", "schreiben"] },
+        { "art": "aufgabe", "text": "Choisis un objectif. Coche une case ou écris le tien.", "symbole": ["ankreuzen", "schreiben"] },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -743,7 +743,7 @@
         { "art": "skala", "von": "pas du tout", "bis": "très bien", "stufen": 5, "gesichter": true }
       ],
       "lehrer": {
-        "ziel": "Les enfants choisissent un petit objectif de comportement observable, le suivent pendant une semaine avec un plan d’étoiles et vivent qu’avec du soutien, ils progressent.",
+        "ziel": "Les enfants choisissent un petit objectif de comportement observable, le suivent pendant une semaine avec un plan d’étoiles et font l’expérience qu’avec du soutien, ils progressent.",
         "ablauf": [
           "Entrée en matière (5 min) : comparer deux objectifs : « Je suis sage » et « Je lève la main et j’attends ». Question : « Avec quel objectif peut-on voir si ça marche ? »",
           "Exercice 1 : l’enfant choisit un objectif qu’il sait presque déjà faire. Un seul objectif par semaine.",
@@ -931,7 +931,7 @@
           "spalten": ["Ce qui peut devenir difficile", "Ce que je fais alors", "Qui m’aide ?"],
           "breiten": [1.6, 1.8, 1.1],
           "zeilen": 3,
-          "beispiel": ["Nous perdons, et je m’énerve.", "J’expire et je dis : « La prochaine fois. »", "Robin me montre le pouce."]
+          "beispiel": ["Nous perdons, et je m’énerve.", "J’expire et je dis : « La prochaine fois. »", "Robin lève le pouce."]
         },
         { "art": "aufgabe", "text": "Comment fêtes-tu une marche réussie ? Coche ou écris.", "symbole": ["ankreuzen", "schreiben"] },
         {
@@ -948,7 +948,7 @@
         {
           "art": "info",
           "symbol": "tipp",
-          "titel": "Quand une marche ne marche pas",
+          "titel": "Quand une marche est trop haute",
           "text": "C’est normal. Exerce la marche encore une semaine ou fais-la plus petite. Même sur un vrai escalier, on redescend parfois d’une marche."
         },
         { "art": "aufgabe", "text": "Signe ton accord – avec la personne qui t’aide.", "symbole": ["schreiben"] },
@@ -1226,7 +1226,7 @@
           "hoehe": 190,
           "karten": [
             { "titel": "Pause", "text": "Ich brauche eine Pause.", "bild": "icon:armchair" },
-            { "titel": "Hilfe", "text": "Hilf mir bitte.", "bild": "icon:heart-handshake" },
+            { "titel": "Hilfe", "text": "Hilf mir bitte.", "bild": "figur:tom:neutral:melden" },
             { "titel": "Toilette", "text": "Ich muss zur Toilette.", "bild": "icon:toilet-paper" },
             { "titel": "Trinken", "text": "Ich habe Durst.", "bild": "motiv:wasserglas" }
           ]
@@ -1286,7 +1286,7 @@
           "hoehe": 190,
           "karten": [
             { "titel": "Pause", "text": "J’ai besoin d’une pause.", "bild": "icon:armchair" },
-            { "titel": "Aide", "text": "Aide-moi, s’il te plaît.", "bild": "icon:heart-handshake" },
+            { "titel": "Aide", "text": "Aide-moi, s’il te plaît.", "bild": "figur:tom:neutral:melden" },
             { "titel": "Toilettes", "text": "Je dois aller aux toilettes.", "bild": "icon:toilet-paper" },
             { "titel": "Boire", "text": "J’ai soif.", "bild": "motiv:wasserglas" }
           ]
@@ -1364,7 +1364,7 @@
         {
           "art": "zuordnen",
           "titel": ["Situation", "Karte"],
-          "links": ["Ich merke, dass ich gleich platze.", "Ich verstehe Aufgabe 3 nicht.", "Mein Blatt ist fertig.", "Es ist so laut, dass mein Kopf dröhnt."],
+          "links": ["Ich habe lange gearbeitet und brauche kurz Ruhe.", "Ich verstehe Aufgabe 3 nicht.", "Mein Blatt ist fertig.", "Es ist so laut, dass mein Kopf dröhnt."],
           "rechts": ["Ich bin fertig.", "Es ist mir zu viel.", "Ich brauche eine Pause.", "Ich brauche Hilfe."]
         },
         {
@@ -1457,7 +1457,7 @@
           "frei": 2,
           "items": [
             "Ma tête est pleine.",
-            "Je n’arrive plus à rester assis.",
+            "Je n’arrive plus à rester en place.",
             "Tout est trop bruyant pour moi.",
             "Je me mets en colère.",
             "Je ne comprends pas la consigne.",
@@ -1469,7 +1469,7 @@
           "art": "zuordnen",
           "titel": ["Situation", "Carte"],
           "links": [
-            "Je sens que je vais exploser.",
+            "J’ai longtemps travaillé et j’ai besoin d’un moment de calme.",
             "Je ne comprends pas l’exercice 3.",
             "Ma feuille est terminée.",
             "C’est si bruyant que ma tête résonne."
@@ -1661,7 +1661,7 @@
     },
     "fr": {
       "titel": "Des pauses qui ressourcent",
-      "untertitel": "Toutes les pauses ne rechargent pas les batteries. Savoir ce qui te fait du bien aide à traverser la journée plus concentré·e et plus calme.",
+      "untertitel": "Toutes les pauses ne rechargent pas les batteries. Savoir ce qui te fait du bien aide à traverser la journée avec plus de concentration et de calme.",
       "bausteine": [
         {
           "art": "info",
@@ -1676,9 +1676,9 @@
           "art": "einschaetzung",
           "optionen": ["recharge", "neutre", "fatigue"],
           "items": [
-            "faire défiler mon téléphone pendant 5 minutes",
+            "scroller 5 minutes sur mon téléphone",
             "faire un tour de la cour ou du bâtiment",
-            "parler et rire avec des ami·e·s",
+            "parler et rire avec mes amis",
             "manger quelque chose et boire un verre d’eau",
             "écouter de la musique au casque, les yeux fermés",
             "vite finir les devoirs pour le cours suivant",
@@ -1689,7 +1689,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Astuce pour les devoirs : 25 + 5",
-          "text": "Travaille 25 minutes concentré·e, puis fais une vraie pause de 5 minutes : te lever, boire, ouvrir la fenêtre. Mets un réveil pour que 5 minutes ne deviennent pas 30."
+          "text": "Travaille 25 minutes avec concentration, puis fais une vraie pause de 5 minutes : te lever, boire, ouvrir la fenêtre. Mets un réveil pour que 5 minutes ne deviennent pas 30."
         },
         {
           "art": "aufgabe",
@@ -1756,7 +1756,7 @@
           "Intégrer aussi des pauses actives en classe : se lever une minute, s’étirer, ouvrir la fenêtre.",
           "Ne pas diaboliser le téléphone : les jeunes vérifient eux-mêmes quand il repose et quand il stresse."
         ],
-        "achtung": "Si un·e jeune paraît épuisé·e en permanence, dort très peu ou se replie sur soi, chercher un entretien individuel et, si nécessaire, impliquer le SePAS."
+        "achtung": "Si un élève semble constamment à bout de forces, dort très peu ou se replie sur soi, chercher un entretien individuel et, si nécessaire, impliquer le SePAS."
       }
     }
   }

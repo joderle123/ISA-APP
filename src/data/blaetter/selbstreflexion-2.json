@@ -156,7 +156,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mein Plan: Womit lädst du heute auf?",
+          "text": "Dein Plan: Womit lädst du heute auf?",
           "symbole": [
             "schreiben"
           ]
@@ -202,7 +202,7 @@
     },
     "fr": {
       "titel": "Ma batterie aujourd’hui",
-      "untertitel": "Toi aussi, tu as besoin d’énergie. Qu’est-ce qui te charge ?",
+      "untertitel": "Toi aussi, tu as besoin d’énergie. Certaines choses te rechargent, d’autres te vident.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -327,7 +327,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mon plan : avec quoi te recharges-tu aujourd’hui ?",
+          "text": "Ton plan : avec quoi te recharges-tu aujourd’hui ?",
           "symbole": [
             "schreiben"
           ]
@@ -773,7 +773,7 @@
     },
     "fr": {
       "titel": "Ma boussole des valeurs",
-      "untertitel": "Une boussole montre la direction. Tes valeurs montrent ce qui compte pour toi, même quand le ventre est plein de brouillard.",
+      "untertitel": "Une boussole montre la direction. Tes valeurs montrent ce qui compte pour toi, même quand tout est flou à l’intérieur.",
       "bausteine": [
         {
           "art": "info",
@@ -879,7 +879,7 @@
           "beispiele": [
             {
               "wenn": "Si, à la récréation, je vois quelqu’un tout seul,",
-              "dann": "je lui demande s’il ou elle veut jouer. (Valeur : être aimable)"
+              "dann": "je demande à la personne si elle veut jouer avec moi. (Valeur : être aimable)"
             }
           ]
         },
@@ -1014,8 +1014,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schatz-Zuspruch: Gib diese Seite weiter, wenn du magst. Andere schreiben, welche Schätze sie bei dir gesehen haben.",
-          "hinweis": "Schreibe auf den Seiten der anderen so: „Ich habe gesehen, wie du … Das zeigt: Du hast …“ Nur Dinge, die du wirklich gesehen hast. Kein „aber“, kein Vergleich.",
+          "text": "Schatz-Zuspruch: Gib diese Seite in deiner Gruppe weiter, wenn du magst. Andere schreiben, welche Schätze sie bei dir gesehen haben.",
+          "hinweis": "Schreibe auf den Seiten der anderen so: „Ich habe gesehen, wie du … Das zeigt: Du hast …“ Nur Dinge, die du wirklich gesehen hast. Kein „aber“, kein Vergleich. Hat ein Blatt noch wenig Einträge, schreib dort zuerst.",
           "symbole": [
             "gruppe",
             "schreiben"
@@ -1173,8 +1173,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Trésors offerts : passe cette page si tu veux. Les autres écrivent quels trésors ils ont vus chez toi.",
-          "hinweis": "Sur les pages des autres, écris : « J’ai vu comment tu … Cela montre : tu as … » Seulement ce que tu as vraiment vu. Pas de « mais », pas de comparaison.",
+          "text": "Trésors offerts : passe cette page dans ton groupe si tu veux. Les autres écrivent quels trésors ils ont vus chez toi.",
+          "hinweis": "Sur les pages des autres, écris : « J’ai vu comment tu … Cela montre : tu as … » Seulement ce que tu as vraiment vu. Pas de « mais », pas de comparaison. Si une feuille a encore peu de messages, commence par celle-là.",
           "symbole": [
             "gruppe",
             "schreiben"
@@ -1213,7 +1213,7 @@
           "linien": 1,
           "items": [
             "Ça me fait plaisir : …",
-            "Ça m’a surpris : …",
+            "Ça me surprend : …",
             "Ce trésor, je l’emporte : …"
           ]
         },
@@ -1337,7 +1337,7 @@
             },
             {
               "titel": "Ehrlichkeit",
-              "bild": "icon:lock-open"
+              "bild": "icon:message-circle"
             },
             {
               "titel": "Mut",
@@ -1551,7 +1551,7 @@
             },
             {
               "titel": "Honnêteté",
-              "bild": "icon:lock-open"
+              "bild": "icon:message-circle"
             },
             {
               "titel": "Courage",
@@ -1764,7 +1764,7 @@
     ],
     "de": {
       "titel": "Was ich brauche",
-      "untertitel": "Mein Bedürfnis-Glas: Wie voll ist es gerade?",
+      "untertitel": "Meine Bedürfnis-Gläser: Wie voll sind sie gerade?",
       "bausteine": [
         {
           "art": "text",
@@ -1922,7 +1922,7 @@
     },
     "fr": {
       "titel": "Ce dont j’ai besoin",
-      "untertitel": "Mon verre de besoins : à quel point est-il plein en ce moment ?",
+      "untertitel": "Mes verres de besoins : à quel point sont-ils pleins en ce moment ?",
       "bausteine": [
         {
           "art": "text",
@@ -2138,7 +2138,7 @@
         {
           "art": "aufgabe",
           "text": "Was gibt dir Kraft? Schreib oder zeichne ein Beispiel in jedes Feld.",
-          "hinweis": "Zum Beispiel: Menschen – meine Cousine · Orte – der Sportplatz · Dinge – meine Kopfhörer · Tun – laufen. Erfundenes ist okay.",
+          "hinweis": "Zum Beispiel: Menschen – meine Cousine · Orte – der Sportplatz · Dinge – meine Kopfhörer · Aktivitäten – laufen. Erfundenes ist okay.",
           "symbole": [
             "schreiben",
             "malen"
@@ -2151,7 +2151,7 @@
             "Menschen",
             "Orte",
             "Dinge",
-            "Tun",
+            "Aktivitäten",
             "Natur & Tiere",
             "Musik & Bilder"
           ]
@@ -2174,7 +2174,7 @@
             "Menschen",
             "Orte",
             "Dinge",
-            "Tun",
+            "Aktivitäten",
             "Natur & Tiere",
             "Musik & Bilder"
           ]

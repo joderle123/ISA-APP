@@ -1554,7 +1554,7 @@
     "de": {
       "titel": "Unsere Haustiere",
       "untertitel": "Was ein Tier braucht – und wie wir gut für es sorgen",
-      "anleitung": "Karten zweimal drucken. Auf Seite 2 auf Karton kopieren: Die Kinder schneiden die Karten aus und spielen Memory „Tier und Futter“; unten malen sie ein Tier und was es braucht.",
+      "anleitung": "Karten zweimal drucken. Auf Seite 2 auf Karton kopieren: Die Kinder schneiden die Karten aus und spielen Memory „Tier und was es braucht“; unten malen sie, was der Hund braucht.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -1612,7 +1612,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schneide aus. Welches Futter passt zu welchem Tier?",
+          "text": "Schneide aus. Was braucht welches Tier? Finde die Paare.",
           "symbole": [
             "schneiden",
             "zeigen"
@@ -1879,7 +1879,7 @@
     "fr": {
       "titel": "Nos animaux domestiques",
       "untertitel": "Ce dont un animal a besoin – et comment bien s’en occuper",
-      "anleitung": "Imprimer les cartes deux fois. Copier la page 2 sur du carton : les enfants découpent les cartes et jouent au memory « animal et nourriture » ; en bas, ils dessinent un animal et ce dont il a besoin.",
+      "anleitung": "Imprimer les cartes deux fois. Copier la page 2 sur du carton : les enfants découpent les cartes et jouent au memory « animal et ce dont il a besoin » ; en bas, ils dessinent ce dont le chien a besoin.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -1937,7 +1937,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Découpe. Quelle nourriture va avec quel animal ?",
+          "text": "Découpe. De quoi chaque animal a-t-il besoin ? Trouve les paires.",
           "symbole": [
             "schneiden",
             "zeigen"
@@ -2386,7 +2386,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Male den Elefanten {grau} an. Wie viele Beine hat er? Zeig es.",
+          "text": "Male den Elefanten {grau} an und den Löwen {gelb}.",
           "symbole": [
             "malen"
           ],
@@ -2682,7 +2682,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Colorie l’éléphant en {gris}. Combien de pattes a-t-il ? Montre-le.",
+          "text": "Colorie l’éléphant en {gris} et le lion en {jaune}.",
           "symbole": [
             "malen"
           ],
@@ -4470,7 +4470,7 @@
     "de": {
       "titel": "Tierspuren",
       "untertitel": "Pfoten, Füße und Hände: Spuren suchen, drucken und lesen",
-      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory, Spurenraten). Seite 2 ist das Forscherblatt: Die Kinder legen ihren Baustein zum erwarteten Tier und malen am Morgen die Spur aus der Sandfalle.",
+      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory, Spurenraten). Seite 2 ist das Forscherblatt: Die Kinder kreisen das Tier ein, das nachts durch den Hof läuft, und malen am Morgen die Spur aus der Sandfalle.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -4747,7 +4747,7 @@
     "fr": {
       "titel": "Traces d’animaux",
       "untertitel": "Pattes, pieds et mains : chercher, imprimer et lire des traces",
-      "anleitung": "Imprimer les cartes deux fois (cercle, memory, jeu des traces). La page 2 est la fiche du chercheur : les enfants posent leur cube sur l’animal attendu et dessinent le matin la trace du bac de sable.",
+      "anleitung": "Imprimer les cartes deux fois (cercle, memory, jeu des traces). La page 2 est la fiche du chercheur : les enfants entourent l’animal qui passe la nuit dans la cour et dessinent le matin la trace du bac de sable.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -5181,7 +5181,7 @@
             },
             {
               "bild": "icon:home",
-              "titel": "das Haus"
+              "titel": "das Schneckenhaus"
             }
           ],
           "hoehe": 270
@@ -5193,7 +5193,7 @@
           "art": "aufgabe",
           "text": "Hilf dem Vogel: Finde den Weg zum Nest.",
           "symbole": [
-            "malen"
+            "verbinden"
           ],
           "niveau": "einstieg"
         },
@@ -5201,12 +5201,12 @@
           "art": "labyrinth",
           "start": "motiv:vogel",
           "ziel": "motiv:nest",
-          "stufe": 2,
+          "stufe": 1,
           "seed": 68
         },
         {
           "art": "aufgabe",
-          "text": "Der Igel braucht ein Zuhause aus Laub. Zeichne es.",
+          "text": "Male dem Igel ein Zuhause aus Laub.",
           "symbole": [
             "malen",
             "nachdenken"
@@ -5490,7 +5490,7 @@
             },
             {
               "bild": "icon:home",
-              "titel": "la maison"
+              "titel": "la coquille"
             }
           ],
           "hoehe": 270
@@ -5502,7 +5502,7 @@
           "art": "aufgabe",
           "text": "Aide l’oiseau : trouve le chemin jusqu’au nid.",
           "symbole": [
-            "malen"
+            "verbinden"
           ],
           "niveau": "einstieg"
         },
@@ -5510,7 +5510,7 @@
           "art": "labyrinth",
           "start": "motiv:vogel",
           "ziel": "motiv:nest",
-          "stufe": 2,
+          "stufe": 1,
           "seed": 68
         },
         {
@@ -5971,20 +5971,20 @@
               "bild": "motiv:apfel"
             },
             {
-              "bild": "icon:banana"
+              "bild": "motiv:karotte"
             },
             {
               "bild": "motiv:apfel"
             },
             {
-              "bild": "icon:banana"
+              "bild": "motiv:karotte"
             }
           ]
         },
         {
           "art": "feld",
           "zeichnen": true,
-          "hoehe": 3
+          "hoehe": 4
         }
       ],
       "lehrer": {
@@ -6226,7 +6226,7 @@
               "titel": "la cerise"
             },
             {
-              "bild": "motiv:rosine",
+              "bild": "icon:grape",
               "titel": "le raisin"
             },
             {
@@ -6299,20 +6299,20 @@
               "bild": "motiv:apfel"
             },
             {
-              "bild": "icon:banana"
+              "bild": "motiv:karotte"
             },
             {
               "bild": "motiv:apfel"
             },
             {
-              "bild": "icon:banana"
+              "bild": "motiv:karotte"
             }
           ]
         },
         {
           "art": "feld",
           "zeichnen": true,
-          "hoehe": 3
+          "hoehe": 4
         }
       ],
       "lehrer": {
@@ -6988,7 +6988,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "le mug"
+              "titel": "le gobelet"
             }
           ],
           "hoehe": 168
@@ -7408,7 +7408,7 @@
           "bild": "motiv:teig",
           "vermuten": [
             {
-              "bild": "icon:file-text",
+              "bild": "icon:thumb-down",
               "text": "bleibt flach"
             },
             {
@@ -7683,7 +7683,7 @@
           "bild": "motiv:teig",
           "vermuten": [
             {
-              "bild": "icon:file-text",
+              "bild": "icon:thumb-down",
               "text": "reste plat"
             },
             {
@@ -8008,7 +8008,7 @@
     "de": {
       "titel": "Wasser trinken",
       "untertitel": "Durst und Wasser: trinken, gießen, schütten und zählen",
-      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory). Auf Seite 2 führt das Kind den Stift durch das Labyrinth: vom Tropfen zur Blume; unten malt es Wasser in drei Gläser.",
+      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory). Auf Seite 2 führt das Kind den Stift durch das Labyrinth: vom Tropfen zur Blume; unten malt es das Wasser in drei Gläsern an.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -8068,7 +8068,7 @@
           "art": "aufgabe",
           "text": "Hilf dem Tropfen: Finde den Weg zur Blume.",
           "symbole": [
-            "malen"
+            "verbinden"
           ],
           "niveau": "einstieg"
         },
@@ -8081,10 +8081,9 @@
         },
         {
           "art": "aufgabe",
-          "text": "Male Wasser in die Gläser: leer, halb, voll.",
+          "text": "Male das Wasser {blau} an.",
           "symbole": [
-            "malen",
-            "nachdenken"
+            "malen"
           ],
           "niveau": "stern"
         },
@@ -8094,22 +8093,19 @@
           "spalten": 3,
           "bilder": [
             {
-              "bild": "motiv:wasserglas",
-              "text": "leer"
+              "bild": "motiv:wasserglas"
             },
             {
-              "bild": "motiv:wasserglas",
-              "text": "halb"
+              "bild": "motiv:wasserglas"
             },
             {
-              "bild": "motiv:wasserglas",
-              "text": "voll"
+              "bild": "motiv:wasserglas"
             }
           ]
         }
       ],
       "lehrer": {
-        "ziel": "Die Kinder lernen, wann und wie sie Wasser trinken, gießen und schütten Wasser ab und zählen Becher, suchen Wasser im Haus und erforschen, was bleibt, wenn Wasser trocknet.",
+        "ziel": "Die Kinder lernen, wann und wie sie Wasser trinken, gießen und schütten Wasser, zählen Becher, suchen Wasser im Haus und erforschen, was bleibt, wenn Wasser trocknet.",
         "ablauf": [
           "Montag – Fragenplakat „Was wollen wir über Wasser wissen?“; „Wer braucht Wasser?“; Karten; Regenwasser sammeln.",
           "Dienstag – Becher füllen und zählen; Wasser-Detektive suchen tropfende Hähne; Experiment mit Tropfen ansetzen.",
@@ -8313,7 +8309,7 @@
     "fr": {
       "titel": "Boire de l’eau",
       "untertitel": "Soif et eau : boire, arroser, verser et compter",
-      "anleitung": "Imprimer les cartes deux fois (cercle, memory). Sur la page 2, l’enfant guide son crayon dans le labyrinthe : de la goutte à la fleur ; en bas, il dessine l’eau dans trois verres.",
+      "anleitung": "Imprimer les cartes deux fois (cercle, memory). Sur la page 2, l’enfant guide son crayon dans le labyrinthe : de la goutte à la fleur ; en bas, il colorie l’eau dans trois verres.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -8337,7 +8333,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse"
+              "titel": "le gobelet"
             },
             {
               "bild": "motiv:giesskanne",
@@ -8373,7 +8369,7 @@
           "art": "aufgabe",
           "text": "Aide la goutte : trouve le chemin jusqu’à la fleur.",
           "symbole": [
-            "malen"
+            "verbinden"
           ],
           "niveau": "einstieg"
         },
@@ -8386,10 +8382,9 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dessine l’eau dans les verres : vide, à moitié, plein.",
+          "text": "Colorie l’eau en {bleu}.",
           "symbole": [
-            "malen",
-            "nachdenken"
+            "malen"
           ],
           "niveau": "stern"
         },
@@ -8399,16 +8394,13 @@
           "spalten": 3,
           "bilder": [
             {
-              "bild": "motiv:wasserglas",
-              "text": "vide"
+              "bild": "motiv:wasserglas"
             },
             {
-              "bild": "motiv:wasserglas",
-              "text": "à moitié"
+              "bild": "motiv:wasserglas"
             },
             {
-              "bild": "motiv:wasserglas",
-              "text": "plein"
+              "bild": "motiv:wasserglas"
             }
           ]
         }
@@ -10626,7 +10618,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse"
+              "titel": "le gobelet"
             },
             {
               "bild": "icon:bell",
@@ -11342,13 +11334,13 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse",
+              "titel": "le gobelet",
               "text": "{rouge}"
             },
             {
               "bild": "motiv:gummistiefel",
               "titel": "les bottes",
-              "text": "{jaune}"
+              "text": "{jaunes}"
             },
             {
               "bild": "motiv:regenjacke",
@@ -11372,7 +11364,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Colorie : bonnet {rouge}, pull {bleu}, bottes {jaune}. Découpe. Habille l’enfant.",
+          "text": "Colorie : bonnet {rouge}, pull {bleu}, bottes {jaunes}. Découpe. Habille l’enfant.",
           "symbole": [
             "malen",
             "schneiden"
@@ -12021,7 +12013,7 @@
             {
               "bild": "motiv:schal",
               "titel": "l’écharpe",
-              "text": "{vert}"
+              "text": "{verte}"
             },
             {
               "bild": "motiv:regenbogen",

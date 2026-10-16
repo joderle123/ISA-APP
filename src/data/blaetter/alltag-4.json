@@ -287,8 +287,8 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Cet apport, je pourrais le réduire : …",
-            "Cette évacuation me manque le plus : …"
+            "Cette arrivée d’eau, je pourrais la réduire : …",
+            "Ce qui me manque le plus pour vider mon tonneau : …"
           ],
           "linien": 1
         },
@@ -327,7 +327,7 @@
           "items": [
             "Je m’énerve vite",
             "Je dors mal",
-            "Je me replie sur moi",
+            "Je me replie sur moi-même",
             "J’ai du mal à me concentrer",
             "Je mange beaucoup plus ou moins",
             "Je pense : je n’y arriverai pas"
@@ -335,7 +335,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quel robinet ouvres-tu cette semaine ? Prépare une petite évacuation.",
+          "text": "Quel robinet ouvres-tu cette semaine ? Prévois une façon de vider un peu ton tonneau.",
           "symbole": [
             "schreiben"
           ]
@@ -612,7 +612,7 @@
     },
     "fr": {
       "titel": "Sommeil et écrans : mon bilan",
-      "untertitel": "Sans bien ni mal : tu regardes et, si tu veux, tu essaies une petite chose.",
+      "untertitel": "Ni bonne ni mauvaise réponse : tu regardes et, si tu veux, tu essaies une petite chose.",
       "bausteine": [
         {
           "art": "info",
@@ -649,7 +649,7 @@
         },
         {
           "art": "skala",
-          "frage": "À quel point te sens-tu reposé·e en général ?",
+          "frage": "En général, à quel point as-tu l’impression d’avoir assez dormi ?",
           "von": "pas du tout",
           "bis": "tout à fait",
           "stufen": 11
@@ -747,7 +747,7 @@
           ],
           "zeilen": [
             "Essai fait",
-            "Reposé le matin"
+            "En forme le matin"
           ],
           "symbol": "kasten"
         },

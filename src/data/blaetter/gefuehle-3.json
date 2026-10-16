@@ -159,10 +159,10 @@
             "J’ai envie de sauter."
           ],
           "rechts": [
-            "triste",
-            "en colère",
-            "de bonne humeur",
-            "j’ai peur"
+            "la tristesse",
+            "la colère",
+            "la joie",
+            "la peur"
           ]
         },
         {
@@ -197,7 +197,7 @@
         {
           "art": "aufgabe",
           "text": "Écris où tu sens une émotion.",
-          "hinweis": "Exemple : en colère, je serre les poings.",
+          "hinweis": "Exemple : quand je ressens de la colère, je serre les poings.",
           "symbole": [
             "schreiben"
           ]
@@ -205,7 +205,7 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Quand je suis de bonne humeur, je le sens …"
+            "Quand je ressens de la joie, je le sens …"
           ]
         }
       ],
@@ -1728,9 +1728,9 @@
         "ablauf": [
           "Einstieg (5 Min.): „Wer ist schon einmal auf einen Trick hereingefallen?“ Auch Gedanken können hereinlegen. Info lesen, Karten ausschneiden.",
           "Karten besprechen (5 Min.): Zu jeder Falle ein Beispiel aus dem Schulalltag sammeln, Merkwörter an die Tafel schreiben.",
-          "Aufgabe 1 (10 Min.): Einzeln oder zu zweit zuordnen, dann vergleichen. Lösung (Beispiel zuerst): 1, 2, 3, 1, 2, 3, x. Grenzfälle sind erlaubt, wenn das Kind begründet.",
-          "Aufgabe 2 und 3 (12 Min.): Fallen-Gedanken erfinden und vorlesen lassen. Ausweg-Fragen verbinden (Lösung in Reihenfolge der Fallen: dazwischen – woher weiß ich das – am wahrscheinlichsten) und laut sprechen.",
-          "Aufgabe 4 und 5 (8 Min.): Eigene Lieblingsfalle freiwillig ankreuzen, Wenn-dann-Satz schreiben."
+          "Aufgabe 2 (10 Min.): Einzeln oder zu zweit zuordnen, dann vergleichen. Lösung (Beispiel zuerst): 1, 2, 3, 1, 2, 3, x. Grenzfälle sind erlaubt, wenn das Kind begründet.",
+          "Aufgabe 3 und 4 (12 Min.): Fallen-Gedanken erfinden und vorlesen lassen. Ausweg-Fragen verbinden (Lösung in Reihenfolge der Fallen: dazwischen – woher weiß ich das – am wahrscheinlichsten) und laut sprechen.",
+          "Aufgabe 5 und 6 (8 Min.): Eigene Lieblingsfalle freiwillig ankreuzen, Wenn-dann-Satz schreiben."
         ],
         "hintergrund": "Kognitive Verzerrungen („Denkfehler“) sind typische, meist automatische Muster, in denen Gedanken die Wirklichkeit verzerren (Beck, 2011). Kinderprogramme der kognitiven Verhaltenstherapie nennen sie bildhaft „Denkfallen“. Die Kinder erkennen sie zuerst an erfundenen Beispielen, bevor sie eigene Gedanken prüfen (Stallard, 2019; Kendall & Hedtke, 2006). Das Benennen schafft Abstand: Statt „Ich bin so dumm“ heißt es „Aha, die Schwarz-Weiß-Brille“. Drei Muster genügen für den Einstieg. Denkfallen sind normal und kein Zeichen von Schwäche.",
         "quellen": [
@@ -1761,7 +1761,7 @@
         {
           "art": "info",
           "symbol": "wissen",
-          "text": "Les pièges de la pensée sont des pensées qui nous font marcher. Presque tout le monde y tombe parfois, surtout quand on est stressé ou fatigué. Trois pièges reviennent très souvent."
+          "text": "Les pièges de la pensée sont des pensées qui nous jouent des tours. Presque tout le monde y tombe parfois, surtout quand on est stressé ou fatigué. Trois pièges reviennent très souvent."
         },
         {
           "art": "aufgabe",
@@ -1787,7 +1787,7 @@
               "bild": "icon:bubble"
             },
             {
-              "titel": "3 La vague catastrophe",
+              "titel": "3 Le scénario catastrophe",
               "text": "Un petit problème devient énorme. Le pire va arriver.\nMots-indices : et puis …",
               "bild": "icon:cloud-storm"
             }
@@ -1872,7 +1872,7 @@
               ""
             ],
             [
-              "3 La vague catastrophe",
+              "3 Le scénario catastrophe",
               ""
             ]
           ],
@@ -1894,7 +1894,7 @@
           "links": [
             "Le tout ou rien",
             "Le lecteur de pensées",
-            "La vague catastrophe"
+            "Le scénario catastrophe"
           ],
           "rechts": [
             "Comment je le sais ? Je peux demander ?",
@@ -1905,7 +1905,7 @@
         {
           "art": "aufgabe",
           "text": "Quel piège reconnais-tu chez toi ? Coche.",
-          "hinweis": "C’est seulement pour toi. Tu n’as à le montrer à personne.",
+          "hinweis": "C’est seulement pour toi. Tu n’as besoin de le montrer à personne.",
           "symbole": [
             "ankreuzen"
           ]
@@ -1916,7 +1916,7 @@
           "items": [
             "Le tout ou rien",
             "Le lecteur de pensées",
-            "La vague catastrophe",
+            "Le scénario catastrophe",
             "Je ne sais pas encore."
           ]
         },
@@ -1948,9 +1948,9 @@
         "ablauf": [
           "Entrée en matière (5 min) : « Qui est déjà tombé dans un piège ? » Les pensées aussi peuvent piéger. Lire l’encadré, découper les cartes.",
           "Cartes (5 min) : un exemple scolaire par piège, mots-indices au tableau.",
-          "Tâche 1 (10 min) : classer seul ou à deux, comparer. Solution (exemple en premier) : 1, 2, 3, 1, 2, 3, x. Cas limites permis si l’enfant argumente.",
-          "Tâches 2 et 3 (12 min) : inventer et lire des pensées-pièges. Solution des questions : entre les deux – comment je le sais – le plus probable.",
-          "Tâches 4 et 5 (8 min) : cocher son piège préféré sur base volontaire, écrire la phrase « si … alors »."
+          "Tâche 2 (10 min) : classer seul ou à deux, comparer. Solution (exemple en premier) : 1, 2, 3, 1, 2, 3, x. Cas limites permis si l’enfant argumente.",
+          "Tâches 3 et 4 (12 min) : inventer et lire des pensées-pièges. Solution des questions : entre les deux – comment je le sais – le plus probable.",
+          "Tâches 5 et 6 (8 min) : cocher son piège préféré sur base volontaire, écrire la phrase « si … alors »."
         ],
         "hintergrund": "Les distorsions cognitives (« erreurs de pensée ») sont des schémas typiques, souvent automatiques, où la pensée déforme la réalité (Beck, 2011). Les programmes de thérapie cognitivo-comportementale pour enfants les appellent « pièges de la pensée » et les font d’abord reconnaître dans des exemples inventés, avant de vérifier ses propres pensées (Stallard, 2019 ; Kendall & Hedtke, 2006). Nommer le piège crée de la distance : « Tiens, le tout ou rien » au lieu de « Je suis nul ». Ces pièges sont normaux, pas un signe de faiblesse.",
         "quellen": [
@@ -2013,7 +2013,7 @@
         {
           "art": "geschichte",
           "titel": "Diogo und die Bank",
-          "text": "In der Pause spielen vier Kinder mit einem Ball. Diogo möchte mitspielen. Seine Angst ruft: „Geh weg. Die lachen dich nur aus.“ Diogo setzt sich auf die Bank und schaut zu. Am nächsten Tag tut er das Gegenteil. Er atmet tief durch und geht einen Schritt auf die Gruppe zu. Er fragt: „Darf ich mitspielen?“ Zwei Kinder nicken. Sein Herz klopft noch eine Weile, dann wird es ruhiger.",
+          "text": "In der Pause spielen vier Kinder mit einem Ball. Diogo möchte mitspielen. Seine Angst ruft: „Geh weg. Die lachen dich nur aus.“ Diogo setzt sich auf die Bank und schaut zu. Am nächsten Tag tut er das Gegenteil. Er atmet tief durch und geht einen Schritt auf die Gruppe zu. Er fragt: „Darf ich mitspielen?“ Zwei Kinder nicken. Sein Herz klopft noch schneller, aber er bleibt. Nach einer Weile wird es ruhiger.",
           "bild": "figur:noah:aengstlich"
         },
         {
@@ -2092,7 +2092,7 @@
             "„Sag, dass du krank bist.“",
             "Ich übe den ersten Satz laut zu Hause."
           ],
-          "zeilen": 2
+          "zeilen": 3
         },
         {
           "art": "aufgabe",
@@ -2153,13 +2153,13 @@
         {
           "art": "geschichte",
           "titel": "Diogo et le banc",
-          "text": "À la récréation, quatre enfants jouent au ballon. Diogo voudrait jouer avec eux. Sa peur lui dit : « Va-t’en. Ils vont se moquer de toi. » Diogo s’assoit sur le banc et regarde. Le lendemain, il fait le contraire. Il respire à fond, s’approche d’un pas et demande : « Je peux jouer avec vous ? » Deux enfants hochent la tête. Son cœur bat encore un moment, puis se calme.",
+          "text": "À la récréation, quatre enfants jouent au ballon. Diogo voudrait jouer avec eux. Sa peur lui dit : « Va-t’en. Ils vont se moquer de toi. » Diogo s’assoit sur le banc et regarde. Le lendemain, il fait le contraire. Il respire à fond, s’approche d’un pas et demande : « Je peux jouer avec vous ? » Deux enfants hochent la tête. Son cœur bat encore plus vite, mais il reste. Au bout d’un moment, il se calme.",
           "bild": "figur:noah:aengstlich"
         },
         {
           "art": "info",
           "symbol": "wissen",
-          "text": "Quand une émotion est là, elle dit souvent quelque chose. La peur dit « sauve-toi », la tristesse « isole-toi », la colère « crie sur lui ». Si tu obéis toujours, l’émotion reste souvent grande. Si tu fais le contraire, elle devient souvent plus petite."
+          "text": "Quand une émotion est là, elle dit souvent quelque chose. La peur dit « sauve-toi », la tristesse « isole-toi », la colère « crie-lui dessus ». Si tu obéis toujours, l’émotion reste souvent grande. Si tu fais le contraire, elle devient souvent plus petite."
         },
         {
           "art": "aufgabe",
@@ -2177,7 +2177,7 @@
           "links": [
             "Peur : « Sauve-toi. »",
             "Tristesse : « Isole-toi. »",
-            "Colère : « Crie sur lui. »"
+            "Colère : « Crie-lui dessus. »"
           ],
           "rechts": [
             "Je fais une petite chose avec d’autres.",
@@ -2232,7 +2232,7 @@
             "« Dis que tu es malade. »",
             "Je m’entraîne à dire la première phrase à voix haute à la maison."
           ],
-          "zeilen": 2
+          "zeilen": 3
         },
         {
           "art": "aufgabe",
@@ -2789,7 +2789,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wo weichst du manchmal aus, vielleicht ganz klein? Kreuze an.",
+          "text": "Wo weichst du manchmal aus – auch nur ein bisschen? Kreuze an.",
           "hinweis": "Das bleibt bei dir.",
           "symbole": [
             "ankreuzen"
@@ -2964,7 +2964,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Où évites-tu parfois, peut-être tout petit ? Coche.",
+          "text": "Dans quelles situations évites-tu parfois quelque chose, même un tout petit peu ? Coche.",
           "hinweis": "Cela reste pour toi.",
           "symbole": [
             "ankreuzen"
@@ -2976,7 +2976,7 @@
           "frei": 1,
           "items": [
             "Je ne dis rien en classe, même si je connais la réponse.",
-            "Je ne vais pas à certaines choses : entraînement, fête, sortie.",
+            "Je renonce à certaines choses : entraînement, fête, sortie.",
             "Je regarde mon téléphone au lieu d’aborder quelqu’un.",
             "Je demande sans cesse si tout va bien.",
             "Je ne participe que si quelqu’un est avec moi."
@@ -2984,8 +2984,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta propre courbe : seulement accompagné·e et pour une petite peur (2 à 4).",
-          "hinweis": "Choisis une situation avec un professionnel. Mesure toutes les cinq minutes. Tu peux faire une pause à tout moment.",
+          "text": "Ta propre courbe : seulement avec un accompagnement et pour une petite peur (2 à 4).",
+          "hinweis": "Choisis une situation avec une personne spécialisée. Mesure toutes les cinq minutes. Tu peux faire une pause à tout moment.",
           "symbole": [
             "schreiben"
           ]
@@ -3085,7 +3085,7 @@
           "linien": 0,
           "stufen": [
             {
-              "titel": "0–30 · ruhig bis leicht gespannt",
+              "titel": "unter 30 · ruhig bis leicht gespannt",
               "text": "Ich kann denken, reden und zuhören."
             },
             {
@@ -3237,11 +3237,11 @@
         "ablauf": [
           "Einstieg (5 Min.): Barometer an die Tafel zeichnen. Frage: „Bei welcher Zahl kannst du nicht mehr gut zuhören?“",
           "Warnzeichen (7 Min.): Aufgabe 2 allein ankreuzen, danach freiwillig: „Was merkst du zuerst?“",
-          "Skills (10 Min.): Info lesen, Aufgabe 3 ankreuzen (mehrere Kreuze je Zeile sind erwünscht). Zwei Skills kurz testen.",
+          "Hilfen (10 Min.): Info lesen, Aufgabe 3 ankreuzen (mehrere Kreuze je Zeile sind erwünscht). Zwei Hilfen kurz testen.",
           "Plan (8 Min.): Wenn-dann-Pläne für ab 60 und ab 90; zu zweit prüfen: konkret und in der Schule machbar?",
-          "Wochenaufgabe: Aufgabe 5. Nach einer Woche nachfragen: Welcher Skill hat bei welcher Zahl geholfen?"
+          "Wochenaufgabe: Aufgabe 5. Nach einer Woche nachfragen: Welche Hilfe hat bei welcher Zahl geholfen?"
         ],
-        "hintergrund": "Das Barometer verbindet zwei Bausteine der DBT: die Einschätzung der Anspannung auf einer Skala (hier 0 bis 100) und die Wahl der Fertigkeit nach der Stärke der Erregung. Bei niedriger Spannung genügen Denk- und Gesprächsfertigkeiten, bei sehr hoher helfen körperorientierte Stresstoleranz-Skills wie Kälte, Bewegung und langsames Atmen, weil Nachdenken dann kaum noch gelingt (Linehan, 2015; Rathus & Miller, 2015). Passend dazu wählen Menschen bei starker Erregung eher Ablenkung als Umdeuten (Sheppes et al., 2011).",
+        "hintergrund": "Das Barometer verbindet zwei Bausteine der DBT: die Einschätzung der Anspannung auf einer Skala (hier 0 bis 100) und die Wahl der Fertigkeit nach der Stärke der Erregung. Bei niedriger Spannung genügen Denk- und Gesprächsfertigkeiten, bei sehr hoher helfen körperorientierte Stresstoleranz-Fertigkeiten wie Kälte, Bewegung und langsames Atmen, weil Nachdenken dann kaum noch gelingt (Linehan, 2015; Rathus & Miller, 2015). Passend dazu wählen Menschen bei starker Erregung eher Ablenkung als Umdeuten (Sheppes et al., 2011).",
         "quellen": [
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
@@ -3256,8 +3256,8 @@
           "Was hilft bei 60, was bei 90 – und warum nicht dasselbe?"
         ],
         "tipps": [
-          "Gruppe: Zahlen nicht vergleichen; anonyme Skill-Wand mit Karten sammeln.",
-          "Einzelstunde: Zahl am Anfang und Ende erfragen; einen Skill gemeinsam testen.",
+          "Gruppe: Zahlen nicht vergleichen; anonyme Hilfen-Wand mit Karten sammeln.",
+          "Einzelstunde: Zahl am Anfang und Ende erfragen; eine Hilfe gemeinsam testen.",
           "Kaltes Wasser nur kurz; bei Herz- oder Kreislaufproblemen ärztlich klären."
         ],
         "achtung": "Bei dauerhaft hoher Spannung, Schlafproblemen oder Hinweisen auf Gefährdung nicht im Plenum nachfragen: Einzelgespräch, Responsable informieren, bei Gefährdung sofort nach internem Ablauf handeln.",
@@ -3277,7 +3277,7 @@
           "linien": 0,
           "stufen": [
             {
-              "titel": "0–30 · calme à légèrement tendu",
+              "titel": "moins de 30 · calme à légèrement tendu",
               "text": "Je peux réfléchir, parler et écouter."
             },
             {
@@ -3427,15 +3427,15 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes évaluent leur tension de 0 à 100, repèrent leurs signaux d’alerte et associent à chaque niveau des skills adaptés. Ils formulent un plan pour « dès 60 » et un pour « dès 90 ».",
+        "ziel": "Les jeunes évaluent leur tension de 0 à 100, repèrent leurs signaux d’alerte et associent à chaque niveau des outils adaptés. Ils formulent un plan pour « dès 60 » et un pour « dès 90 ».",
         "ablauf": [
           "Entrée en matière (5 min) : dessiner le baromètre au tableau. Question : « À quel chiffre n’écoutes-tu plus bien ? »",
-          "Signaux (7 min) : tâche 2 seul·e, puis sur base volontaire : « Que remarques-tu en premier ? »",
-          "Skills (10 min) : lire l’encadré, tâche 3 (plusieurs croix par ligne sont voulues). Tester deux skills.",
+          "Signaux (7 min) : tâche 2 en individuel, puis sur base volontaire : « Que remarques-tu en premier ? »",
+          "Outils (10 min) : lire l’encadré, tâche 3 (plusieurs croix par ligne sont voulues). Tester deux outils.",
           "Plan (8 min) : plans « si … alors » pour dès 60 et dès 90 ; à deux : concret et faisable à l’école ?",
-          "Tâche de la semaine : tâche 5. Une semaine plus tard : quel skill a aidé à quel chiffre ?"
+          "Tâche de la semaine : tâche 5. Une semaine plus tard : quel outil a aidé à quel chiffre ?"
         ],
-        "hintergrund": "Le baromètre associe deux éléments de la DBT : l’évaluation de la tension sur une échelle (ici de 0 à 100) et le choix du skill selon l’intensité de l’activation. À faible tension, les skills de réflexion et de dialogue suffisent ; à très forte tension, ce sont les skills corporels de tolérance à la détresse (froid, mouvement, respiration lente) qui aident, car réfléchir devient presque impossible (Linehan, 2015 ; Rathus & Miller, 2015). Quand l’émotion est intense, on choisit d’ailleurs plutôt la distraction que la réinterprétation (Sheppes et al., 2011).",
+        "hintergrund": "Le baromètre associe deux éléments de la DBT : l’évaluation de la tension sur une échelle (ici de 0 à 100) et le choix de l’outil selon l’intensité de l’activation. À faible tension, les compétences de réflexion et de dialogue suffisent ; à très forte tension, ce sont les outils corporels de tolérance à la détresse (froid, mouvement, respiration lente) qui aident, car réfléchir devient presque impossible (Linehan, 2015 ; Rathus & Miller, 2015). Quand l’émotion est intense, on choisit d’ailleurs plutôt la distraction que la réinterprétation (Sheppes et al., 2011).",
         "quellen": [
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
@@ -3450,8 +3450,8 @@
           "Qu’est-ce qui aide à 60, qu’est-ce qui aide à 90 – et pourquoi pas la même chose ?"
         ],
         "tipps": [
-          "Groupe : ne pas comparer les chiffres ; mur de skills avec cartes anonymes.",
-          "Séance individuelle : chiffre au début et à la fin ; tester un skill ensemble.",
+          "Groupe : ne pas comparer les chiffres ; mur d’outils avec cartes anonymes.",
+          "Séance individuelle : chiffre au début et à la fin ; tester un outil ensemble.",
           "Eau froide brièvement ; si problèmes cardiaques ou circulatoires, voir un médecin."
         ],
         "achtung": "En cas de tension durablement élevée, de troubles du sommeil ou d’indices de mise en danger, ne pas questionner en plénière : entretien individuel, informer le responsable, en cas de danger agir selon la procédure interne.",
@@ -3953,7 +3953,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Compose ton kit de calme : un objet pour chaque sens.",
+          "text": "Compose ta trousse anti-stress : un objet pour chaque sens.",
           "hinweis": "Prends ce qui t’a aidé. Il peut être tout petit.",
           "symbole": [
             "schreiben"
@@ -3968,7 +3968,7 @@
             "Goûter",
             "Toucher"
           ],
-          "mitte": "Mon kit"
+          "mitte": "Ma trousse"
         },
         {
           "art": "info",
@@ -3997,7 +3997,7 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes trouvent pour chacun des cinq sens quelque chose qui les apaise, composent un kit de calme et vérifient son effet sur une échelle de stress de 0 à 10.",
+        "ziel": "Les jeunes trouvent pour chacun des cinq sens quelque chose qui les apaise, composent une trousse anti-stress et vérifient son effet sur une échelle de stress de 0 à 10.",
         "ablauf": [
           "Entrée en matière (5 min) : « Qu’est-ce qui te fait du bien quand le stress monte ? » Recueillir sans juger.",
           "Tâche 1 (8 min) : cocher. Insister : laisser de côté ce qui déplaît, rien n’est obligatoire.",
@@ -4005,7 +4005,7 @@
           "Kit (7 min) : tâche 3 ; choisir, parmi ce qui a aidé, un objet par sens.",
           "Plan (5 min) : « si … alors ». « Que remarque-t-on le moins en classe ? » Revenir dessus une semaine plus tard."
         ],
-        "hintergrund": "S’apaiser avec les cinq sens fait partie des skills de tolérance à la détresse de la DBT (Linehan, 2015 ; Rathus & Miller, 2015). Des stimuli sensoriels agréables ramènent l’attention des ruminations vers l’instant présent et peuvent atténuer l’activation du corps. Les jeunes choisissent eux-mêmes : ce qui calme l’un peut déranger l’autre, par exemple une odeur liée à un mauvais souvenir. L’échelle avant et après le test rend l’effet visible, sans le promettre.",
+        "hintergrund": "S’apaiser avec les cinq sens fait partie des compétences de tolérance à la détresse de la DBT (Linehan, 2015 ; Rathus & Miller, 2015). Des stimuli sensoriels agréables ramènent l’attention des ruminations vers l’instant présent et peuvent atténuer l’activation du corps. Les jeunes choisissent eux-mêmes : ce qui calme l’un peut déranger l’autre, par exemple une odeur liée à un mauvais souvenir. L’échelle avant et après le test rend l’effet visible, sans le promettre.",
         "quellen": [
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
@@ -4155,7 +4155,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wann nutzt du deinen Anker? Kreuze an und schreib einen Plan.",
+          "text": "Plane, wann du deinen Anker nutzt.",
+          "hinweis": "Kreuze Momente an. Schreibe dann deinen Plan.",
           "symbole": [
             "ankreuzen",
             "schreiben"
@@ -4259,15 +4260,15 @@
         {
           "art": "aufgabe",
           "text": "Quel est ton niveau de tension en ce moment ?",
-          "hinweis": "0 = tout à fait détendu, 10 = très tendu.",
+          "hinweis": "0 = aucune tension, 10 = très forte tension.",
           "symbole": [
             "ankreuzen"
           ]
         },
         {
           "art": "skala",
-          "von": "détendu",
-          "bis": "très tendu",
+          "von": "aucune tension",
+          "bis": "très forte tension",
           "stufen": 11
         },
         {
@@ -4310,7 +4311,7 @@
             },
             {
               "titel": "Compter ses respirations",
-              "text": "À chaque expiration, compte de 1 à 10, puis recommence. Distrait ? Reprends à 1, sans te fâcher."
+              "text": "À chaque expiration, compte de 1 à 10, puis recommence. Tes pensées s’égarent ? Reprends à 1, sans te fâcher."
             }
           ]
         },
@@ -4337,13 +4338,14 @@
         {
           "art": "skala",
           "frage": "Ma tension maintenant :",
-          "von": "détendu",
-          "bis": "très tendu",
+          "von": "aucune tension",
+          "bis": "très forte tension",
           "stufen": 11
         },
         {
           "art": "aufgabe",
-          "text": "Quand utiliseras-tu ton ancre ? Coche et écris un plan.",
+          "text": "Planifie quand tu utilises ton ancre.",
+          "hinweis": "Coche des moments. Écris ensuite ton plan.",
           "symbole": [
             "ankreuzen",
             "schreiben"
@@ -4410,7 +4412,7 @@
       "lehrer": {
         "ziel": "Les jeunes découvrent trois courts exercices de respiration, trouvent leur ancre et vérifient lequel les aide. Ils prévoient quand l’utiliser.",
         "ablauf": [
-          "Entrée en matière (3 min) : tous expirent une fois consciemment. « À quoi remarques-tu dans ta respiration que tu es stressé ? »",
+          "Entrée en matière (3 min) : tous expirent une fois consciemment. « À quoi remarques-tu dans ta respiration que le stress monte ? »",
           "Ancre (5 min) : tâches 1 et 2 ; poser la main sur le nez, la poitrine ou le ventre.",
           "Exercices (10 min) : guider les exercices l’un après l’autre, environ 1 minute, avec une pause pour cocher.",
           "Bilan (5 min) : échelle après ; sur base volontaire : « Quel exercice était facile, lequel non ? »",

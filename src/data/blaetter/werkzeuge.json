@@ -368,12 +368,11 @@
             {
               "art": "ankreuzen",
               "titel": "Spielen und Bewegen",
-              "items": ["10 Minuten in der Bauecke", "den Ball für die Pause aussuchen", "als Erstes in die Pause gehen"]
+              "items": ["10 Minuten in der Bauecke", "den Ball für die Pause aussuchen", "ein Spiel für die Pause anleiten"]
             }
           ]
         },
         {"art": "satzanfaenge", "items": ["Meine eigenen Ideen:"]},
-        {"art": "seitenumbruch"},
         {
           "art": "aufgabe",
           "text": "Stell dein Menü zusammen.",
@@ -383,7 +382,7 @@
         {
           "art": "schritte",
           "stil": "kette",
-          "linien": 2,
+          "linien": 1,
           "items": [
             {"titel": "Klein", "text": "jeden Tag, für ___ Punkte"},
             {"titel": "Mittel", "text": "jede Woche, für ___ Punkte"},
@@ -458,12 +457,11 @@
             {
               "art": "ankreuzen",
               "titel": "Jouer et bouger",
-              "items": ["10 minutes dans le coin construction", "choisir le ballon pour la récré", "sortir en premier à la récré"]
+              "items": ["10 minutes dans le coin construction", "choisir le ballon pour la récré", "animer un jeu pour la récré"]
             }
           ]
         },
         { "art": "satzanfaenge", "items": ["Mes propres idées :"] },
-        { "art": "seitenumbruch" },
         {
           "art": "aufgabe",
           "text": "Compose ton menu.",
@@ -473,7 +471,7 @@
         {
           "art": "schritte",
           "stil": "kette",
-          "linien": 2,
+          "linien": 1,
           "items": [
             { "titel": "Petite", "text": "chaque jour, pour ___ points" },
             { "titel": "Moyenne", "text": "chaque semaine, pour ___ points" },
@@ -960,8 +958,8 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Ce qui m’a impressionné :",
-            "Plus petit prochain pas (pour quand ?) :",
+            "Ce que j’ai trouvé remarquable :",
+            "Prochain tout petit pas (pour quand ?) :",
             "À surveiller jusqu’à la prochaine fois :",
             "Prochain entretien le :"
           ]
@@ -1030,7 +1028,7 @@
           "spalten": ["Datum, Situation", "Was genau ist passiert?"],
           "breiten": [1, 3],
           "zeilen": 2,
-          "beispiel": ["Di, 12.3., Pause", "Noah sagt zweimal „Halt die Klappe“ zur Aufsicht und läuft weg, als sie ihn anspricht."]
+          "beispiel": ["Do, 12.3., Pause", "Noah sagt zweimal „Halt die Klappe“ zur Aufsicht und läuft weg, als sie ihn anspricht."]
         },
         {"art": "aufgabe", "text": "Stärken und Gelungenes", "hinweis": "Mit konkreten Beispielen – damit beginnt das Gespräch."},
         {
@@ -1110,15 +1108,15 @@
           "spalten": ["Date, situation", "Que s’est-il passé exactement ?"],
           "breiten": [1, 3],
           "zeilen": 2,
-          "beispiel": ["Ma, 12.3., récré", "Noah dit deux fois « Ferme-la » à la surveillante et s’en va quand elle lui parle."]
+          "beispiel": ["Je, 12.3., récré", "Noah dit deux fois « Ferme-la » à la surveillante et s’en va quand elle lui parle."]
         },
         { "art": "aufgabe", "text": "Forces et réussites", "hinweis": "Avec des exemples concrets – c’est par là que l’entretien commence." },
-        { "art": "satzanfaenge", "items": ["Ce que l’enfant fait bien :", "Ce qui l’a réjoui récemment :", "Ce qui va mieux depuis peu :"] },
+        { "art": "satzanfaenge", "items": ["Ce que l’enfant fait bien :", "Ce qui lui a fait plaisir récemment :", "Ce qui va mieux depuis peu :"] },
         { "art": "aufgabe", "text": "Questions aux parents" },
         {
           "art": "ankreuzen",
           "items": [
-            "Comment vivez-vous votre enfant à la maison ?",
+            "Comment cela se passe-t-il à la maison pour votre enfant ?",
             "Qu’est-ce qui aide votre enfant quand ça devient difficile ?",
             "Que raconte votre enfant de l’école ?",
             "Qu’attendez-vous de nous ?"
@@ -1135,7 +1133,7 @@
           "spalten": ["Quoi ?", "Qui ?", "Jusqu’à quand ?"],
           "breiten": [3, 1.2, 1],
           "zeilen": 2,
-          "beispiel": ["Court message dans le cahier quand la matinée s’est bien passée", "Titulaire de classe", "dès lundi, chaque jour"]
+          "beispiel": ["Court message dans le cahier de liaison quand la matinée s’est bien passée", "Titulaire de classe", "dès lundi, chaque jour"]
         },
         { "art": "satzanfaenge", "items": ["Prochain entretien le :"] }
       ],
@@ -1193,24 +1191,24 @@
           "art": "karten",
           "spalten": 4,
           "karten": [
-            {"titel": "Ankommen", "bild": "icon:door-enter"},
-            {"titel": "Morgenkreis", "bild": "icon:users-group"},
+            {"titel": "Ankommen", "bild": "motiv:rucksack"},
+            {"titel": "Morgenkreis", "bild": "motiv:gruppe"},
             {"titel": "Spielen", "bild": "icon:puzzle"},
-            {"titel": "Aufräumen", "bild": "icon:basket"},
-            {"titel": "Hände waschen", "bild": "icon:droplet"},
-            {"titel": "Essen", "bild": "icon:tools-kitchen-2"},
+            {"titel": "Aufräumen", "bild": "motiv:spielzeugkiste"},
+            {"titel": "Hände waschen", "bild": "motiv:seife"},
+            {"titel": "Essen", "bild": "motiv:teller"},
             {"titel": "Toilette", "bild": "icon:toilet-paper"},
-            {"titel": "Anziehen", "bild": "icon:hanger"},
+            {"titel": "Anziehen", "bild": "motiv:pulli"},
             {"titel": "Pause", "bild": "icon:ball-football"},
-            {"titel": "Turnen", "bild": "icon:run"},
-            {"titel": "Malen", "bild": "icon:palette"},
-            {"titel": "Singen", "bild": "icon:music"},
-            {"titel": "Vorlesen", "bild": "icon:book"},
-            {"titel": "Ausruhen", "bild": "icon:pillow"},
+            {"titel": "Turnen", "bild": "motiv:turnmatte"},
+            {"titel": "Malen", "bild": "motiv:pinsel"},
+            {"titel": "Singen", "bild": "motiv:mikrofon"},
+            {"titel": "Vorlesen", "bild": "motiv:buch"},
+            {"titel": "Ausruhen", "bild": "motiv:bett"},
             {"titel": "Überraschung", "bild": "icon:question-mark"},
-            {"titel": "Bus", "bild": "icon:bus"},
+            {"titel": "Bus", "bild": "motiv:bus"},
             {"titel": "Maison Relais", "bild": "icon:building-community"},
-            {"titel": "Nach Hause", "bild": "icon:home"},
+            {"titel": "Nach Hause", "bild": "motiv:haus"},
             {"titel": "Fertig", "bild": "icon:circle-check"},
             {}
           ]
@@ -1243,7 +1241,7 @@
       }
     },
     "fr": {
-      "titel": "Cartes-images du programme du jour",
+      "titel": "Emploi du temps en images",
       "anleitung": "Découper les cartes, les plastifier et les coller avec du velcro sur une bande – dans l’ordre de la journée. Après chaque activité, l’enfant retire la carte et la glisse dans la pochette « Fini ».",
       "bausteine": [
         { "art": "aufgabe", "text": "Que faisons-nous maintenant ? Qu’est-ce qui vient après ?", "symbole": ["zeigen", "sprechen"] },
@@ -1251,24 +1249,24 @@
           "art": "karten",
           "spalten": 4,
           "karten": [
-            { "titel": "Arrivée", "bild": "icon:door-enter" },
-            { "titel": "Cercle du matin", "bild": "icon:users-group" },
+            { "titel": "Arrivée", "bild": "motiv:rucksack" },
+            { "titel": "Cercle du matin", "bild": "motiv:gruppe" },
             { "titel": "Jouer", "bild": "icon:puzzle" },
-            { "titel": "Ranger", "bild": "icon:basket" },
-            { "titel": "Se laver les mains", "bild": "icon:droplet" },
-            { "titel": "Manger", "bild": "icon:tools-kitchen-2" },
+            { "titel": "Ranger", "bild": "motiv:spielzeugkiste" },
+            { "titel": "Se laver les mains", "bild": "motiv:seife" },
+            { "titel": "Manger", "bild": "motiv:teller" },
             { "titel": "Toilettes", "bild": "icon:toilet-paper" },
-            { "titel": "S’habiller", "bild": "icon:hanger" },
+            { "titel": "S’habiller", "bild": "motiv:pulli" },
             { "titel": "Récré", "bild": "icon:ball-football" },
-            { "titel": "Gym", "bild": "icon:run" },
-            { "titel": "Peindre", "bild": "icon:palette" },
-            { "titel": "Chanter", "bild": "icon:music" },
-            { "titel": "Lecture", "bild": "icon:book" },
-            { "titel": "Se reposer", "bild": "icon:pillow" },
+            { "titel": "Gym", "bild": "motiv:turnmatte" },
+            { "titel": "Peindre", "bild": "motiv:pinsel" },
+            { "titel": "Chanter", "bild": "motiv:mikrofon" },
+            { "titel": "Écouter une histoire", "bild": "motiv:buch" },
+            { "titel": "Se reposer", "bild": "motiv:bett" },
             { "titel": "Surprise", "bild": "icon:question-mark" },
-            { "titel": "Bus", "bild": "icon:bus" },
+            { "titel": "Bus", "bild": "motiv:bus" },
             { "titel": "Maison Relais", "bild": "icon:building-community" },
-            { "titel": "Rentrer", "bild": "icon:home" },
+            { "titel": "Rentrer", "bild": "motiv:haus" },
             { "titel": "Fini", "bild": "icon:circle-check" },
             {}
           ]
@@ -1532,7 +1530,7 @@
     },
     "fr": {
       "titel": "Mon plan de sécurité",
-      "untertitel": "Pour les moments où tu vas vraiment mal. À remplir avec un·e professionnel·le et à garder à portée de main, par exemple en photo sur ton téléphone.",
+      "untertitel": "Pour les moments où tu vas vraiment mal. À remplir avec une personne spécialisée et à garder à portée de main, par exemple en photo.",
       "bausteine": [
         {
           "art": "info",
@@ -1561,13 +1559,13 @@
         {
           "art": "aufgabe",
           "text": "Les personnes à qui je peux demander de l’aide",
-          "hinweis": "Famille, ami·e·s, adultes en qui j’ai confiance."
+          "hinweis": "Famille, amis, adultes en qui j’ai confiance."
         },
         {"art": "tabelle", "spalten": ["Nom", "Téléphone"], "breiten": [2, 1.2], "zeilen": 3},
         {
           "art": "aufgabe",
-          "text": "Les professionnel·le·s que je peux joindre",
-          "hinweis": "Par exemple le SePAS, un·e psychologue, un·e médecin."
+          "text": "Les professionnels que je peux joindre",
+          "hinweis": "Par exemple le SePAS, un cabinet de psychologie, ton médecin traitant."
         },
         {"art": "tabelle", "spalten": ["Nom, service", "Téléphone", "Joignable quand ?"], "breiten": [1.8, 1.1, 1.1], "zeilen": 2},
         {"art": "notfall"},
@@ -1588,7 +1586,7 @@
         {"art": "satzanfaenge", "items": ["Établi le … avec :", "Mon plan se trouve ici :", "Nous le revoyons le :"]}
       ],
       "lehrer": {
-        "ziel": "Avec un·e professionnel·le, le ou la jeune élabore un plan personnel pour les moments de crise : reconnaître les signaux d’alerte, s’aider soi-même, demander de l’aide, sécuriser son environnement.",
+        "ziel": "Avec un professionnel ou une professionnelle, le ou la jeune élabore un plan personnel pour les moments de crise : reconnaître les signaux d’alerte, s’aider soi-même, demander de l’aide, sécuriser son environnement.",
         "ablauf": [
           "Cadre (5 min) : uniquement en entretien individuel ; expliquer à quoi sert le plan et qui en sera informé.",
           "Signaux d’alerte (5–10 min) : les dégager de la dernière situation difficile – avec les mots du ou de la jeune.",
@@ -1602,19 +1600,19 @@
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Si l’écriture est difficile, le ou la professionnel·le note ; des mots-clés suffisent.",
+          "leichter": "Si l’écriture est difficile, le professionnel ou la professionnelle note ; des mots-clés suffisent.",
           "schwerer": "Avec son accord, montrer le plan à une personne de confiance pour qu’elle sache comment aider."
         },
         "impulse": [
           "La dernière fois, à quoi as-tu remarqué en premier que ça devenait critique ?",
-          "Qu’est-ce qui t’a déjà aidé·e, même un peu ?",
+          "Qu’est-ce qui t’a déjà fait du bien, même un peu ?",
           "À qui pourrais-tu écrire si parler est trop difficile ?"
         ],
         "tipps": [
           "Utiliser les mots du ou de la jeune : en pleine crise, le plan doit rester compréhensible.",
           "Poser ouvertement la question des idées suicidaires ne donne pas l’idée à quelqu’un ; cela soulage souvent."
         ],
-        "achtung": "Uniquement en entretien individuel, jamais en classe ; informer la direction (responsable) et le SePAS. En cas d’idées suicidaires aiguës, agir selon la procédure de crise, ne pas laisser le ou la jeune seul·e, impliquer les parents et le 112.",
+        "achtung": "Uniquement en entretien individuel, jamais en classe ; informer la direction (responsable) et le SePAS. En cas d’idées suicidaires aiguës, agir selon la procédure de crise, ne pas laisser la personne seule, impliquer les parents et le 112.",
         "material": "Une copie ; une photo sur le téléphone"
       }
     }
@@ -1859,7 +1857,7 @@
           "spalten": ["Datum", "Mein Anliegen", "Name"],
           "breiten": [0.8, 3.2, 1],
           "zeilen": 6,
-          "beispiel": ["Mo, 14.10.", "In der Garderobe wird nach der Pause immer gedrängelt.", "Leonor"]
+          "beispiel": ["Mo, 12.10.", "In der Garderobe wird nach der Pause immer gedrängelt.", "Leonor"]
         }
       ],
       "lehrer": {
@@ -1900,7 +1898,7 @@
       "bausteine": [
         {
           "art": "spalten",
-          "links": [{ "art": "satzanfaenge", "items": ["Animation :", "Compte rendu :"] }],
+          "links": [{ "art": "satzanfaenge", "items": ["Présidence :", "Secrétariat :"] }],
           "rechts": [{ "art": "satzanfaenge", "items": ["Temps :", "Règles :"] }]
         },
         { "art": "aufgabe", "text": "Tour positif : qu’est-ce qui s’est bien passé cette semaine ?" },
@@ -1929,14 +1927,14 @@
           ]
         },
         { "art": "aufgabe", "text": "Conclusion", "hinweis": "Lire les décisions, répartir les rôles pour le prochain conseil." },
-        { "art": "satzanfaenge", "items": ["Prochaine séance le :", "Prochaine animation et prochain compte rendu :"] },
+        { "art": "satzanfaenge", "items": ["Prochaine séance le :", "Prochaine présidence et prochain secrétariat :"] },
         { "art": "seitenumbruch" },
         {
           "art": "info",
           "symbol": "wissen",
           "titel": "Déroulement d’une séance",
           "punkte": [
-            "Ouverture : l’animation accueille, nomme les rôles et les demandes du jour.",
+            "Ouverture : la présidence accueille, nomme les rôles et les demandes du jour.",
             "Tour positif : qui veut dit ce qui s’est bien passé ou qui il ou elle souhaite remercier.",
             "Retour : qu’est devenu ce qui avait été décidé ?",
             "Demandes : raconter, poser des questions, recueillir des solutions, voter, noter.",
@@ -1949,8 +1947,8 @@
           "spalten": 4,
           "hoehe": 120,
           "karten": [
-            { "titel": "Animation", "text": "ouvre, donne la parole, résume, fait voter", "bild": "icon:microphone" },
-            { "titel": "Compte rendu", "text": "note les demandes et les décisions et les lit", "bild": "icon:pencil" },
+            { "titel": "Présidence", "text": "ouvre, donne la parole, résume, fait voter", "bild": "icon:microphone" },
+            { "titel": "Secrétariat", "text": "note les demandes et les décisions et les lit", "bild": "icon:pencil" },
             { "titel": "Temps", "text": "surveille le temps et dit quand il reste cinq minutes", "bild": "icon:hourglass" },
             { "titel": "Règles", "text": "veille aux règles de discussion et les rappelle aimablement", "bild": "icon:hand-stop" }
           ]
@@ -1976,7 +1974,7 @@
           "spalten": ["Date", "Ma demande", "Nom"],
           "breiten": [0.8, 3.2, 1],
           "zeilen": 6,
-          "beispiel": ["Lu, 14.10.", "Au vestiaire, on se bouscule toujours après la récré.", "Leonor"]
+          "beispiel": ["Lu, 12.10.", "Au vestiaire, on se bouscule toujours après la récré.", "Leonor"]
         }
       ],
       "lehrer": {

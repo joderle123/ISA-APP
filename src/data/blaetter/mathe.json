@@ -234,7 +234,7 @@
               ""
             ],
             [
-              "In 3,4 ist die 4 wert: 4 Hundertstel.",
+              "In 3,4 steht die 4 für 4 Hundertstel.",
               "",
               "",
               ""
@@ -353,7 +353,7 @@
               "punkte": [
                 "À gauche de la virgule : les entiers. À droite : les parties.",
                 "1er chiffre après la virgule : les dixièmes (0,1). 2e chiffre : les centièmes (0,01).",
-                "Un 0 à la fin ne change rien : 3,5 = 3,50. Un 0 juste après la virgule, si : 3,05 n’est pas 3,5."
+                "Un 0 à la fin ne change rien : 3,5 = 3,50. Un 0 juste après la virgule, en revanche, change la valeur : 3,05 n’est pas 3,5."
               ]
             }
           ],
@@ -504,7 +504,7 @@
             "Affirmation",
             "vrai",
             "faux",
-            "correct serait"
+            "correction"
           ],
           "breiten": [
             3.4,
@@ -557,7 +557,7 @@
         },
         {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -568,7 +568,7 @@
             "Je sais quand un 0 change la valeur."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -643,11 +643,11 @@
           "bilder": [
             {
               "bild": "icon:run-sprint",
-              "text": "Inês: 13,4 s"
+              "text": "Tiago: 13,4 s"
             },
             {
               "bild": "icon:run-sprint",
-              "text": "Diogo: 13,25 s"
+              "text": "Inês: 13,25 s"
             },
             {
               "bild": "icon:stopwatch",
@@ -860,7 +860,7 @@
         {
           "art": "aufgabe",
           "stufe": 3,
-          "text": "Überschlagen an der Kasse: Runde auf ganze Euro. Ab ,50 rundest du auf. Wie viel kostet alles ungefähr?"
+          "text": "Überschlagen an der Kasse: Runde auf ganze Euro. Ab 50 Cent rundest du auf. Wie viel kostet alles ungefähr?"
         },
         {
           "art": "paeckchen",
@@ -878,6 +878,11 @@
           "items": [
             "Zusammen ungefähr: ___ €"
           ]
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4,
+          "label": "Rechnung"
         },
         {
           "art": "text",
@@ -943,11 +948,11 @@
           "bilder": [
             {
               "bild": "icon:run-sprint",
-              "text": "Inês : 13,4 s"
+              "text": "Tiago : 13,4 s"
             },
             {
               "bild": "icon:run-sprint",
-              "text": "Diogo : 13,25 s"
+              "text": "Inês : 13,25 s"
             },
             {
               "bild": "icon:stopwatch",
@@ -1121,7 +1126,7 @@
             "Affirmation",
             "vrai",
             "faux",
-            "correct serait"
+            "correction"
           ],
           "breiten": [
             3.2,
@@ -1160,7 +1165,7 @@
         {
           "art": "aufgabe",
           "stufe": 3,
-          "text": "Estimer à la caisse : arrondis à l’euro près. À partir de ,50, on arrondit au-dessus. Combien coûte le tout environ ?"
+          "text": "Estimer à la caisse : arrondis à l’euro près. À partir de 50 centimes, on arrondit à l’euro supérieur. Combien coûte le tout environ ?"
         },
         {
           "art": "paeckchen",
@@ -1180,8 +1185,13 @@
           ]
         },
         {
+          "art": "kaestchen",
+          "zeilen": 4,
+          "label": "Calcul"
+        },
+        {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -1192,7 +1202,7 @@
             "Je range des nombres décimaux dans l’ordre."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -1676,7 +1686,7 @@
             "Calcul",
             "vrai",
             "faux",
-            "correct serait"
+            "correction"
           ],
           "breiten": [
             3,
@@ -1724,7 +1734,7 @@
         },
         {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -1735,7 +1745,7 @@
             "J’estime avant de calculer."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -2314,7 +2324,7 @@
             "Calcul",
             "vrai",
             "faux",
-            "correct serait"
+            "correction"
           ],
           "breiten": [
             3,
@@ -2371,7 +2381,7 @@
         },
         {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -2382,7 +2392,7 @@
             "Je complète les rangs manquants par des 0."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -3025,7 +3035,7 @@
             "Affirmation",
             "vrai",
             "faux",
-            "correct serait"
+            "correction"
           ],
           "breiten": [
             3.6,
@@ -3063,7 +3073,7 @@
         },
         {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -3074,7 +3084,7 @@
             "Je vérifie si les parts sont égales."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -3535,7 +3545,7 @@
         {
           "art": "aufgabe",
           "stufe": 2,
-          "text": "Sondage en classe : sur 24 jeunes, 1/3 vient en bus, 1/2 à pied et le reste à vélo. Combien sont-ils ?"
+          "text": "Sondage en classe : sur 24 jeunes, 1/3 vient en bus, 1/2 à pied et le reste à vélo. Combien de jeunes pour chaque moyen de transport ?"
         },
         {
           "art": "tabelle",
@@ -3570,7 +3580,7 @@
         {
           "art": "aufgabe",
           "stufe": 3,
-          "text": "Penser à l’envers."
+          "text": "Raisonner à l’envers."
         },
         {
           "art": "paeckchen",
@@ -3583,7 +3593,7 @@
         },
         {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -3594,7 +3604,7 @@
             "Je vérifie mon résultat avec la quantité entière."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -3864,6 +3874,11 @@
           ]
         },
         {
+          "art": "kaestchen",
+          "zeilen": 4,
+          "label": "Umrechnen in ml"
+        },
+        {
           "art": "aufgabe",
           "stufe": 3,
           "text": "Party-Planung."
@@ -3876,6 +3891,11 @@
             "Wie viele Gläser zu 2 dl füllst du aus einer 1,5-l-Flasche?     ___ Gläser, Rest: ___ dl",
             "Eine Dose hat 33 cl. Wie viele ml sind 6 Dosen?     ___ ml"
           ]
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 6,
+          "label": "Rechnung"
         },
         {
           "art": "text",
@@ -4135,6 +4155,11 @@
           ]
         },
         {
+          "art": "kaestchen",
+          "zeilen": 4,
+          "label": "Conversion en ml"
+        },
+        {
           "art": "aufgabe",
           "stufe": 3,
           "text": "Préparer une fête."
@@ -4149,8 +4174,13 @@
           ]
         },
         {
+          "art": "kaestchen",
+          "zeilen": 6,
+          "label": "Calcul"
+        },
+        {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -4161,7 +4191,7 @@
             "Avant de comparer, je convertis dans la même unité."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -4677,7 +4707,7 @@
             "Affirmation",
             "vrai",
             "faux",
-            "correct serait"
+            "correction"
           ],
           "breiten": [
             3,
@@ -4733,7 +4763,7 @@
         },
         {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -4744,7 +4774,7 @@
             "Avant de comparer, je convertis dans la même unité."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -5996,7 +6026,7 @@
         },
         {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -6007,7 +6037,7 @@
             "Je trace proprement à la règle."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -6848,7 +6878,7 @@
         },
         {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -6859,7 +6889,7 @@
             "Je trouve le milieu d’un segment."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -7933,7 +7963,7 @@
         },
         {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -7944,7 +7974,7 @@
             "Je vérifie avec l’équerre ou le coin d’une feuille."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]
@@ -8991,7 +9021,7 @@
             "Calcul",
             "vrai",
             "faux",
-            "correct serait"
+            "correction"
           ],
           "breiten": [
             3.6,
@@ -9030,7 +9060,7 @@
         {
           "art": "aufgabe",
           "stufe": 3,
-          "text": "Penser à l’envers."
+          "text": "Raisonner à l’envers."
         },
         {
           "art": "paeckchen",
@@ -9044,7 +9074,7 @@
         },
         {
           "art": "text",
-          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "text": "Petit bilan : où en es-tu ?",
           "klein": true
         },
         {
@@ -9055,7 +9085,7 @@
             "J’écris l’unité avec le résultat."
           ],
           "optionen": [
-            "sûr·e",
+            "oui",
             "à peu près",
             "pas encore"
           ]

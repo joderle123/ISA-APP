@@ -354,8 +354,8 @@
             "enttäuscht",
             "traurig",
             "genervt",
-            "überrumpelt",
-            "ärgerlich"
+            "verletzt",
+            "überrascht"
           ]
         },
         {
@@ -403,12 +403,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Übt zu dritt: Wählt einen erfundenen Streit und spielt ihn.",
+          "text": "Übt zu dritt: Wählt einen Streit aus und spielt ihn.",
           "symbole": [
             "ankreuzen",
             "gruppe"
           ],
-          "hinweis": "Sprecher: sagt die Ich-Botschaft. Zuhörer: wiederholt mit eigenen Worten. Beobachter: kreuzt unten an. Dann wechselt."
+          "hinweis": "Sprecher: sagt die Ich-Botschaft. Zuhörer: wiederholt mit eigenen Worten. Beobachter: füllt die nächste Aufgabe aus. Dann wechselt."
         },
         {
           "art": "ankreuzen",
@@ -520,8 +520,8 @@
             "Ça me déçoit",
             "Ça me rend triste",
             "Ça m’énerve",
-            "Ça me fait de la peine",
-            "Ça me gêne"
+            "Ça me blesse",
+            "Ça me surprend"
           ]
         },
         {
@@ -569,12 +569,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Exercez-vous à trois : choisissez une dispute inventée et jouez-la.",
+          "text": "Exercez-vous à trois : choisissez une dispute et jouez-la.",
           "symbole": [
             "ankreuzen",
             "gruppe"
           ],
-          "hinweis": "Celui qui parle : dit son message je. Celui qui écoute : reformule avec ses mots. L’observateur : coche ci-dessous. Puis changez de rôle."
+          "hinweis": "Celui qui parle : dit son message je. Celui qui écoute : reformule avec ses mots. L’observateur : remplit l’exercice suivant. Puis changez de rôle."
         },
         {
           "art": "ankreuzen",

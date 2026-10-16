@@ -110,7 +110,7 @@
             { "bild": "icon:headphones", "text": "musique" },
             { "bild": "icon:palette", "text": "dessiner" },
             { "bild": "icon:paw", "text": "caresser un chat" },
-            { "bild": "icon:trees", "text": "aller dehors" },
+            { "bild": "icon:trees", "text": "sortir" },
             { "bild": "icon:coffee", "text": "chocolat chaud" },
             { "bild": "icon:book", "text": "regarder un livre" }
           ]
@@ -295,7 +295,7 @@
           "karten": [
             { "bild": "icon:heart", "titel": "J’ai le droit d’être triste." },
             { "bild": "icon:rainbow", "titel": "Ça va passer." },
-            { "bild": "icon:friends", "titel": "Je ne suis pas seul·e." },
+            { "bild": "icon:friends", "titel": "Quelqu’un est là pour moi." },
             { "bild": "icon:sunrise", "titel": "Demain est un nouveau jour." },
             { "bild": "icon:lifebuoy", "titel": "Je peux demander de l’aide." },
             { "bild": "icon:droplet", "titel": "C’est normal de pleurer." },
@@ -393,7 +393,7 @@
             "Chiara sitzt seit über einem Monat in den Pausen allein. Ihre Noten fallen ab, und sie wirkt ständig erschöpft."
           ]
         },
-        { "art": "aufgabe", "text": "Wenn du dir um jemanden Sorgen machst: vier Schritte" },
+        { "art": "aufgabe", "text": "Lies, wie du helfen kannst, wenn du dir um jemanden Sorgen machst." },
         {
           "art": "schritte",
           "stil": "kette",
@@ -420,7 +420,7 @@
           "titel": "Wichtig",
           "text": "Spricht jemand davon, nicht mehr leben zu wollen, oder verletzt sich selbst, musst du das nicht allein tragen. Sag es sofort einer erwachsenen Person – auch wenn du versprochen hast, es geheim zu halten. Das ist kein Verrat, sondern Hilfe."
         },
-        { "art": "aufgabe", "text": "Und wenn es dich selbst betrifft? Dein Plan", "hinweis": "Was du hier schreibst, gehört dir. Ein Anfang kann so klingen: „Mir geht es seit einer Weile nicht gut. Hast du kurz Zeit?“" },
+        { "art": "aufgabe", "text": "Und wenn es dich selbst betrifft? Schreibe deinen Plan.", "hinweis": "Was du hier schreibst, gehört dir. Ein Anfang kann so klingen: „Mir geht es seit einer Weile nicht gut. Hast du kurz Zeit?“" },
         { "art": "satzanfaenge", "items": ["Daran merke ich, dass es mir länger nicht gut geht: …"], "linien": 2 },
         { "art": "satzanfaenge", "items": ["Mit dieser Person könnte ich reden: …", "In der Schule kann ich mich wenden an (z. B. SePAS): …"] },
         { "art": "satzanfaenge", "items": ["Mein erster Satz könnte sein: …"], "linien": 2 },
@@ -476,7 +476,7 @@
               "art": "info",
               "symbol": "achtung",
               "titel": "Plus qu’un coup de mou, quand …",
-              "punkte": ["ça dure des semaines, presque tous les jours", "presque plus rien ne fait plaisir", "on s’éloigne des ami·e·s et de la famille", "le sommeil, l’appétit ou la concentration changent", "des pensées comme « Je ne vaux rien » ou « Tout est inutile » reviennent"]
+              "punkte": ["ça dure des semaines, presque tous les jours", "presque plus rien ne fait plaisir", "on s’éloigne de ses proches", "le sommeil, l’appétit ou la concentration changent", "des pensées comme « Je ne vaux rien » ou « Tout est inutile » reviennent"]
             }
           ]
         },
@@ -492,24 +492,24 @@
             "Depuis plus d’un mois, Chiara reste seule pendant les récréations. Ses notes baissent et elle a l’air épuisée en permanence."
           ]
         },
-        { "art": "aufgabe", "text": "Tu t’inquiètes pour quelqu’un ? Quatre étapes" },
+        { "art": "aufgabe", "text": "Lis comment tu peux aider quand tu t’inquiètes pour quelqu’un." },
         {
           "art": "schritte",
           "stil": "kette",
           "linien": 0,
           "items": [
-            { "titel": "Aborder", "text": "« J’ai remarqué que tu es souvent seul·e. Comment tu vas, vraiment ? »" },
+            { "titel": "Aborder", "text": "« J’ai remarqué que tu restes souvent à l’écart. Comment tu vas, vraiment ? »" },
             { "titel": "Écouter", "text": "Prendre au sérieux, ne pas juger, ne pas donner tout de suite des conseils." },
-            { "titel": "Chercher de l’aide", "text": "Aller ensemble voir un·e adulte de confiance." },
-            { "titel": "Rester présent·e", "text": "Quelques jours plus tard, redemander comment ça va." }
+            { "titel": "Chercher de l’aide", "text": "Aller ensemble voir une personne adulte de confiance." },
+            { "titel": "Garder le contact", "text": "Quelques jours plus tard, redemander comment ça va." }
           ]
         },
-        { "art": "aufgabe", "text": "Aylin a l’air abattue depuis des semaines. Comment pourrais-tu l’aborder ? Continue le dialogue.", "hinweis": "Beaucoup répondent d’abord de façon évasive. Reste bienveillant·e et présent·e, sans mettre la pression." },
+        { "art": "aufgabe", "text": "Aylin a l’air abattue depuis des semaines. Comment pourrais-tu l’aborder ? Continue le dialogue.", "hinweis": "Beaucoup répondent d’abord de façon évasive. Reste à l’écoute, sans mettre la pression." },
         {
           "art": "dialog",
           "zeilen": [
             { "wer": "Toi" },
-            { "wer": "Aylin", "text": "Ça va. C’est juste beaucoup en ce moment." },
+            { "wer": "Aylin", "text": "Ça va. J’ai juste beaucoup de choses en ce moment." },
             { "wer": "Toi" }
           ]
         },
@@ -517,9 +517,9 @@
           "art": "info",
           "symbol": "achtung",
           "titel": "Important",
-          "text": "Si quelqu’un parle de ne plus vouloir vivre ou se fait du mal, tu n’as pas à porter ça seul·e. Parles-en tout de suite à un·e adulte – même si tu as promis de garder le secret. Ce n’est pas une trahison, c’est de l’aide."
+          "text": "Si quelqu’un parle de ne plus vouloir vivre ou se fait du mal, tu n’as pas à porter ça en solitaire. Parles-en tout de suite à une personne adulte – même si tu as promis de garder le secret. Ce n’est pas une trahison, c’est de l’aide."
         },
-        { "art": "aufgabe", "text": "Et si c’est toi qui ne vas pas bien ? Ton plan", "hinweis": "Ce que tu écris ici t’appartient. Pour commencer, tu peux dire : « Ça ne va pas trop depuis quelque temps. Tu as un moment ? »" },
+        { "art": "aufgabe", "text": "Et si c’est toi qui ne vas pas bien ? Écris ton plan.", "hinweis": "Ce que tu écris ici t’appartient. Pour commencer, tu peux dire : « Ça ne va pas trop depuis quelque temps. Tu as un moment ? »" },
         { "art": "satzanfaenge", "items": ["Je remarque que ça ne va pas depuis un moment quand : …"], "linien": 2 },
         { "art": "satzanfaenge", "items": ["Une personne à qui je pourrais parler : …", "Au lycée, je peux m’adresser à (p. ex. le SePAS) : …"] },
         { "art": "satzanfaenge", "items": ["Ma première phrase pourrait être : …"], "linien": 2 },
@@ -532,9 +532,9 @@
           "Lire les encadrés (5 min) : ce qui compte, c’est la durée, la fréquence et l’impact sur le quotidien.",
           "Exercice 1 à deux (10 min), puis justifier. Les cas ambigus sont voulus : dans le doute, mieux vaut demander.",
           "Exercices 2 et 3 (10 min) : discuter les étapes, formuler des premières phrases, lecture volontaire.",
-          "Exercice 4 seul·e (10 min), sans ramasser. Indiquer le SePAS (salle, horaires) et quand vous êtes joignable."
+          "Exercice 4 en individuel (10 min), sans ramasser. Indiquer le SePAS (salle, horaires) et quand vous êtes joignable."
         ],
-        "hintergrund": "L’adolescence est une période de sensibilité émotionnelle accrue ; en même temps, les pairs deviennent des personnes de référence essentielles (Steinberg, 2014). La plupart des baisses de moral sont passagères. Mais quand l’abattement, la perte de plaisir et le repli durent des semaines, un soutien et, le cas échéant, un avis professionnel s’imposent. Comme les jeunes se confient souvent d’abord à leurs ami·e·s, toute la classe devrait savoir aborder une inquiétude et impliquer des adultes. L’exercice 4 reprend, simplifiée, la structure d’un plan de sécurité : repérer les signaux d’alerte, choisir des personnes ressources, connaître l’aide professionnelle (Stanley & Brown, 2012).",
+        "hintergrund": "L’adolescence est une période de sensibilité émotionnelle accrue ; en même temps, les pairs deviennent des personnes de référence essentielles (Steinberg, 2014). La plupart des baisses de moral sont passagères. Mais quand l’abattement, la perte de plaisir et le repli durent des semaines, un soutien et, le cas échéant, un avis professionnel s’imposent. Comme les jeunes se confient souvent d’abord à leurs pairs, toute la classe devrait savoir aborder une inquiétude et impliquer des adultes. L’exercice 4 reprend, simplifiée, la structure d’un plan de sécurité : repérer les signaux d’alerte, choisir des personnes ressources, connaître l’aide professionnelle (Stanley & Brown, 2012).",
         "quellen": [
           "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
           "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
@@ -580,15 +580,15 @@
           "bilder": [
             { "bild": "icon:pillow", "text": "Kissen drücken" },
             { "bild": "motiv:ballon", "text": "Ballon-Atmen" },
-            { "bild": "icon:book", "text": "Buch ansehen" },
+            { "bild": "motiv:buch", "text": "Buch ansehen" },
             { "bild": "icon:headphones", "text": "Musik hören" },
-            { "bild": "icon:hourglass", "text": "Sanduhr" },
-            { "bild": "icon:palette", "text": "malen" },
+            { "bild": "motiv:sanduhr", "text": "Sanduhr" },
+            { "bild": "motiv:pinsel", "text": "malen" },
             { "bild": "motiv:wasserglas", "text": "Wasser trinken" },
-            { "bild": "icon:hand-grab", "text": "Knete drücken" }
+            { "bild": "motiv:knete", "text": "Knete drücken" }
           ]
         },
-        { "art": "aufgabe", "text": "So komme ich zurück.", "symbole": ["zeigen"] },
+        { "art": "aufgabe", "text": "Schau die Bilder an: So komme ich zurück.", "symbole": ["zeigen"] },
         {
           "art": "comic",
           "spalten": 3,
@@ -641,16 +641,16 @@
           "spalten": 4,
           "bilder": [
             { "bild": "icon:pillow", "text": "serrer un coussin" },
-            { "bild": "motiv:ballon", "text": "respirer en ballon" },
-            { "bild": "icon:book", "text": "regarder un livre" },
+            { "bild": "motiv:ballon", "text": "respirer comme un ballon" },
+            { "bild": "motiv:buch", "text": "regarder un livre" },
             { "bild": "icon:headphones", "text": "écouter de la musique" },
-            { "bild": "icon:hourglass", "text": "sablier" },
-            { "bild": "icon:palette", "text": "dessiner" },
+            { "bild": "motiv:sanduhr", "text": "sablier" },
+            { "bild": "motiv:pinsel", "text": "dessiner" },
             { "bild": "motiv:wasserglas", "text": "boire de l’eau" },
-            { "bild": "icon:hand-grab", "text": "pétrir la pâte" }
+            { "bild": "motiv:knete", "text": "pâte à modeler" }
           ]
         },
-        { "art": "aufgabe", "text": "Voilà comment je reviens.", "symbole": ["zeigen"] },
+        { "art": "aufgabe", "text": "Regarde les images : voilà comment je reviens.", "symbole": ["zeigen"] },
         {
           "art": "comic",
           "spalten": 3,
@@ -751,12 +751,12 @@
       }
     },
     "fr": {
-      "titel": "Mon île de calme",
-      "untertitel": "Ton île de calme est dans ta tête. Tu peux l’emporter partout.",
+      "titel": "Mon île paisible",
+      "untertitel": "Ton île paisible est dans ta tête. Tu peux l’emporter partout.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Imagine ton île de calme. Dessine-la.",
+          "text": "Imagine ton île paisible. Dessine-la.",
           "hinweis": "Seul ce qui te fait du bien a le droit d’aller sur ton île.",
           "symbole": ["zuhoeren", "malen"]
         },
@@ -826,7 +826,7 @@
           "art": "schritte",
           "linien": 0,
           "items": [
-            { "titel": "Hände: Zitrone auspressen", "text": "Balle beide Fäuste, als ob du eine Zitrone auspresst. Halten – und loslassen." },
+            { "titel": "Hände: Zitrone auspressen", "text": "Balle beide Fäuste, als wolltest du eine Zitrone auspressen. Halten – und loslassen." },
             { "titel": "Schultern: Schildkröte", "text": "Zieh die Schultern hoch bis zu den Ohren. Halten – und fallen lassen." },
             { "titel": "Gesicht: Fliege verscheuchen", "text": "Rümpfe die Nase und kneif die Augen zu. Halten – und locker lassen." },
             { "titel": "Füße: Zehen im Sand", "text": "Drück die Zehen fest in den Boden. Halten – und entspannen." }
@@ -997,7 +997,7 @@
           "art": "ankreuzen",
           "titel": "Kopf – wenn du wieder denken kannst",
           "spalten": 2,
-          "items": ["STOPP: anhalten, Schritt zurück, beobachten, dann bewusst handeln", "Von 100 in Siebener-Schritten rückwärts zählen", "Nur den nächsten kleinen Schritt planen", "Mir sagen: „Das ist unangenehm, aber ich schaffe das.“"]
+          "items": ["STOP: anhalten, Schritt zurück, beobachten, dann bewusst handeln", "Von 100 in Siebener-Schritten rückwärts zählen", "Nur den nächsten kleinen Schritt planen", "Mir sagen: „Das ist unangenehm, aber ich schaffe das.“"]
         },
         {
           "art": "ankreuzen",
@@ -1077,7 +1077,7 @@
           "art": "ankreuzen",
           "spalten": 3,
           "frei": 3,
-          "items": ["cœur qui bat fort", "pensées qui tournent en boucle", "vite irrité·e", "épaules, nuque tendues", "trou noir", "me replier sur moi", "mal au ventre, nausée", "« Je n’y arriverai jamais. »", "plus de temps sur le téléphone", "mal dormir", "oublier des choses", "tout remettre à plus tard"]
+          "items": ["cœur qui bat fort", "pensées qui tournent en boucle", "s’énerver vite", "épaules, nuque tendues", "trou noir", "me replier sur moi-même", "mal au ventre, nausée", "« Je n’y arriverai jamais. »", "plus de temps sur le téléphone", "mal dormir", "oublier des choses", "tout remettre à plus tard"]
         },
         { "art": "aufgabe", "text": "Tester des outils : coche ce que tu veux essayer." },
         {
@@ -1094,7 +1094,7 @@
         },
         {
           "art": "ankreuzen",
-          "titel": "Contact – personne ne doit tout gérer seul·e",
+          "titel": "Contact – personne n’a à tout gérer en solitaire",
           "spalten": 2,
           "items": ["Écrire à quelqu’un : « Tu as un moment ? »", "Parler à une personne de confiance", "Passer du temps avec d’autres, sans parler du stress", "Demander de l’aide, p. ex. au SePAS"]
         },
@@ -1104,8 +1104,8 @@
           "linien": 2,
           "stufen": [
             { "titel": "Calme", "text": "Qu’est-ce qui m’aide à rester ainsi ?" },
-            { "titel": "Tendu·e", "text": "Premiers signes – mon outil :" },
-            { "titel": "Stressé·e", "text": "Signes nets – mon outil :" },
+            { "titel": "Tension", "text": "Premiers signes – mon outil :" },
+            { "titel": "Stress", "text": "Signes nets – mon outil :" },
             { "titel": "Trop", "text": "Tout de suite : pause et contact. À qui je m’adresse ?" }
           ]
         },
@@ -1115,31 +1115,31 @@
           "spalten": ["Jour", "Situation", "Outil", "Effet"],
           "breiten": [0.7, 2.2, 1.8, 1.3],
           "zeilen": 3,
-          "beispiel": ["mardi", "Avant l’exposé en allemand", "4 inspirer, 6 expirer", "de 8 à 5"]
+          "beispiel": ["Ma", "Avant l’exposé en allemand", "4 inspirer, 6 expirer", "de 8 à 5"]
         },
         {
           "art": "info",
           "symbol": "hilfe",
           "titel": "Quand la boîte à outils ne suffit pas",
-          "text": "Si le stress ne diminue pas pendant des semaines, si tu ne dors presque plus ou si tu ne penses plus qu’à ça : parles-en au SePAS ou à un·e enseignant·e, ou appelle le Kanner- a Jugendtelefon au 116 111 (anonyme, gratuit)."
+          "text": "Si le stress ne diminue pas pendant des semaines, si tu ne dors presque plus ou si tu ne penses plus qu’à ça : parles-en au SePAS ou à un membre de l’équipe enseignante, ou appelle le Kanner- a Jugendtelefon au 116 111 (anonyme, gratuit)."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes reconnaissent leurs signaux de stress personnels, découvrent des outils pour le corps, la tête et le contact, et élaborent un plan par niveaux pour les moments où c’est « trop ».",
         "ablauf": [
           "Entrée en matière (5 min) : « Qu’est-ce qui stresse le plus les jeunes de votre âge ? » Recueillir sans juger.",
-          "Encadré et exercice 1 (10 min) : cocher ses signaux. Souligner : chacun·e a ses propres schémas.",
+          "Encadré et exercice 1 (10 min) : cocher ses signaux. Souligner : chacun a ses propres schémas.",
           "Exercice 2 (10 min) : tester ensemble un outil par domaine, p. ex. respiration 4-6 et compte à rebours.",
-          "Exercice 3 (10 min) seul·e ; vérifier à deux si les outils conviennent au niveau.",
+          "Exercice 3 (10 min) en individuel ; vérifier à deux si les outils conviennent au niveau.",
           "Exercice 4 à faire pendant la semaine ; une semaine plus tard, faire le point : qu’est-ce qui a marché ?"
         ],
-        "hintergrund": "Les outils s’inspirent des compétences de la thérapie comportementale dialectique, adaptées aux adolescent·e·s (Rathus & Miller, 2015). Sous une tension très forte, la réflexion et la résolution de problèmes sont limitées. Ce sont alors d’abord des compétences corporelles qui font baisser rapidement l’activation : eau froide, bref effort physique intense, expiration ralentie et relâchement musculaire. Une fois la tension retombée, la pause (STOP), la distraction, le discours intérieur aidant et le soutien social deviennent efficaces (Linehan, 2015). L’essentiel : s’entraîner dans les moments calmes et organiser son plan par niveaux.",
+        "hintergrund": "Les outils s’inspirent des compétences de la thérapie comportementale dialectique, adaptées aux adolescents (Rathus & Miller, 2015). Sous une tension très forte, la réflexion et la résolution de problèmes sont limitées. Ce sont alors d’abord des compétences corporelles qui font baisser rapidement l’activation : eau froide, bref effort physique intense, expiration ralentie et relâchement musculaire. Une fois la tension retombée, la pause (STOP), la distraction, le discours intérieur aidant et le soutien social deviennent efficaces (Linehan, 2015). L’essentiel : s’entraîner dans les moments calmes et organiser son plan par niveaux.",
         "quellen": [
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Ne remplir que le niveau « Stressé·e » et choisir un outil par domaine.",
+          "leichter": "Ne remplir que le niveau « Stress » et choisir un outil par domaine.",
           "schwerer": "Formuler une phrase « si … alors » pour chaque niveau et l’expliquer à quelqu’un."
         },
         "impulse": [
@@ -1478,7 +1478,7 @@
       "titel": "Ce qui s’est bien passé cette semaine",
       "untertitel": "Le négatif reste plus facilement en mémoire. Un regard en arrière ne rend pas la semaine plus belle – mais plus complète.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Trois choses qui se sont bien passées cette semaine – et comment c’est arrivé", "hinweis": "Les petites choses comptent aussi. Demande-toi à chaque fois : qu’est-ce que j’y ai apporté, qui m’a aidé·e, qu’est-ce qui relevait de la chance ?" },
+        { "art": "aufgabe", "text": "Trois choses qui se sont bien passées cette semaine – et comment c’est arrivé", "hinweis": "Les petites choses comptent aussi. Demande-toi à chaque fois : qu’est-ce que j’y ai apporté, qui m’a donné un coup de main, qu’est-ce qui relevait de la chance ?" },
         {
           "art": "tabelle",
           "spalten": ["Qu’est-ce qui était bien ?", "Ma part", "Les autres, la chance"],
@@ -1486,15 +1486,15 @@
           "zeilen": 3,
           "beispiel": ["L’exposé d’histoire s’est bien passé.", "répété deux fois, préparé des fiches", "Ana m’a fait un retour"]
         },
-        { "art": "aufgabe", "text": "À qui es-tu reconnaissant·e cette semaine – et pour quoi ?", "hinweis": "Si tu veux : dis-le à la personne ou envoie-lui un petit message." },
-        { "art": "satzanfaenge", "items": ["Je suis reconnaissant·e pour …", "J’aimerais dire merci à …"] },
-        { "art": "aufgabe", "text": "De quoi es-tu fier·ère cette semaine ?", "hinweis": "Les résultats ne sont pas tout : l’effort, le courage ou l’esprit d’équipe comptent aussi. Les mots t’aident à nommer tes forces." },
+        { "art": "aufgabe", "text": "Qui voudrais-tu remercier cette semaine – et pour quoi ?", "hinweis": "Si tu veux : dis-le à la personne ou envoie-lui un petit message." },
+        { "art": "satzanfaenge", "items": ["Un grand merci pour …", "J’aimerais dire merci à …"] },
+        { "art": "aufgabe", "text": "Quelle est ta fierté de cette semaine ?", "hinweis": "Les résultats ne sont pas tout : l’effort, le courage ou l’esprit d’équipe comptent aussi. Les mots t’aident à nommer tes forces." },
         {
           "art": "wortspeicher",
           "titel": "Forces",
           "items": ["persévérance", "courage", "serviabilité", "humour", "sens de la justice", "curiosité", "patience", "créativité", "honnêteté", "autodiscipline", "esprit d’équipe", "gentillesse"]
         },
-        { "art": "satzanfaenge", "items": ["Je suis fier·ère de : …", "Une force qui m’a aidé·e : …"], "linien": 2 },
+        { "art": "satzanfaenge", "items": ["Ma fierté : …", "Une force qui m’a servi : …"], "linien": 2 },
         { "art": "aufgabe", "text": "Que retiens-tu pour la semaine prochaine ?" },
         { "art": "satzanfaenge", "items": ["Ce que je veux refaire ou garder : …"], "linien": 2 }
       ],

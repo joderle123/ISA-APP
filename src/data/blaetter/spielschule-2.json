@@ -193,7 +193,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Was siehst du am Tag? Was in der Nacht? Male.",
+          "text": "Male links den Tag, rechts die Nacht.",
           "symbole": [
             "malen"
           ],
@@ -204,18 +204,10 @@
           "spalten": 2,
           "felder": [
             {
-              "figuren": [
-                "figur:mia:froh:zeigen"
-              ],
-              "requisit": "motiv:sonne",
-              "blase": "keine"
+              "leer": true
             },
             {
-              "figuren": [
-                "figur:mia:muede"
-              ],
-              "requisit": "icon:moon",
-              "blase": "keine"
+              "leer": true
             }
           ]
         }
@@ -427,7 +419,7 @@
     "fr": {
       "titel": "Bien voir – clair et sombre",
       "untertitel": "Les yeux, la lumière et l’ombre : chercher, trouver, s’émerveiller",
-      "anleitung": "Imprimer les cartes deux fois (cercle, memory, « Je vois quelque chose »). Page 2 : l’enfant cherche des étoiles et des lunes dans la nuit et dessine ce qu’il voit le jour et la nuit.",
+      "anleitung": "Imprimer les cartes deux fois (cercle, memory, « Je vois quelque chose »). Page 2 : l’enfant cherche des étoiles, des lunes et des lucioles dans la nuit et dessine ce qu’il voit le jour et la nuit.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -481,7 +473,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Trouve étoiles, lunes et lucioles. Entoure.",
+          "text": "Trouve les étoiles, les lunes et les lucioles. Entoure-les.",
           "symbole": [
             "zeigen",
             "einkreisen"
@@ -514,7 +506,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Que vois-tu le jour ? Et la nuit ? Dessine.",
+          "text": "Dessine le jour à gauche, la nuit à droite.",
           "symbole": [
             "malen"
           ],
@@ -525,18 +517,10 @@
           "spalten": 2,
           "felder": [
             {
-              "figuren": [
-                "figur:mia:froh:zeigen"
-              ],
-              "requisit": "motiv:sonne",
-              "blase": "keine"
+              "leer": true
             },
             {
-              "figuren": [
-                "figur:mia:muede"
-              ],
-              "requisit": "icon:moon",
-              "blase": "keine"
+              "leer": true
             }
           ]
         }
@@ -854,7 +838,7 @@
     "de": {
       "titel": "Fühlen und tasten",
       "untertitel": "Mit den Händen: weich und hart, warm und kalt, eins oder zwei",
-      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory, Fühlspiele). Seite 2: Das Kind malt Weiches gelb, Hartes blau und klebt echte Stoffe auf (Watte, Schmirgelpapier, Wellpappe bereitlegen).",
+      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory, Fühlspiele). Seite 2: Das Kind malt Weiches gelb, Hartes blau und klebt echte Stoffe auf (Watte, Stoffreste, Korken, Wellpappe bereitlegen).",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -914,7 +898,7 @@
           "art": "aufgabe",
           "text": "Weich {gelb}, hart {blau}. Male an.",
           "symbole": [
-            "zuhoeren",
+            "nachdenken",
             "malen"
           ],
           "niveau": "einstieg"
@@ -1164,7 +1148,7 @@
     "fr": {
       "titel": "Toucher et sentir",
       "untertitel": "Avec les mains : doux et dur, chaud et froid, un ou deux",
-      "anleitung": "Imprimer les cartes deux fois (cercle, memory, jeux du toucher). Page 2 : l’enfant colorie le doux en jaune, le dur en bleu et colle de vraies matières (préparer coton, papier de verre, carton ondulé).",
+      "anleitung": "Imprimer les cartes deux fois (cercle, memory, jeux du toucher). Page 2 : l’enfant colorie le doux en jaune, le dur en bleu et colle de vraies matières (préparer coton, chutes de tissu, bouchons, carton ondulé).",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -1224,7 +1208,7 @@
           "art": "aufgabe",
           "text": "Doux {jaune}, dur {bleu}. Colorie.",
           "symbole": [
-            "zuhoeren",
+            "nachdenken",
             "malen"
           ],
           "niveau": "einstieg"
@@ -1648,8 +1632,8 @@
               "text": "riechen"
             },
             {
-              "bild": "icon:scissors",
-              "text": "schneiden"
+              "bild": "icon:leaf",
+              "text": "zupfen"
             },
             {
               "bild": "motiv:loeffel",
@@ -1663,7 +1647,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Probier die Zitrone. Wie schmeckt sie dir?",
+          "text": "Probier das Zitronenwasser, wenn du magst. Wie schmeckt es?",
           "symbole": [
             "einkreisen"
           ]
@@ -1950,8 +1934,8 @@
               "text": "sentir"
             },
             {
-              "bild": "icon:scissors",
-              "text": "couper"
+              "bild": "icon:leaf",
+              "text": "effeuiller"
             },
             {
               "bild": "motiv:loeffel",
@@ -1965,7 +1949,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Goûte le citron. Comment est-il ?",
+          "text": "Goûte l’eau citronnée, si tu veux. Comment la trouves-tu ?",
           "symbole": [
             "einkreisen"
           ]
@@ -2590,7 +2574,7 @@
     },
     "fr": {
       "titel": "Ma famille",
-      "untertitel": "Les familles sont différentes – et chacune est bien",
+      "untertitel": "Les familles sont différentes – et chacune est bien comme elle est",
       "anleitung": "Imprimer les cartes deux fois (cercle, memory). Page 2 : l’enfant entoure ce qu’il aime faire avec ses proches et, s’il le veut, se dessine avec eux. Personne n’a à parler de sa propre famille. La fiche du chercheur sur le noir est une page à part.",
       "bausteine": [
         {
@@ -3343,7 +3327,7 @@
             },
             {
               "bild": "motiv:spielzeugkiste",
-              "titel": "le coffre à jouets"
+              "titel": "la caisse à jouets"
             }
           ],
           "hoehe": 170
@@ -3758,7 +3742,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Male in jedes Bild. Falte dein Buch.",
+          "text": "Male in jeden Rahmen. Falte dein Buch.",
           "symbole": [
             "malen",
             "schneiden"
@@ -4025,7 +4009,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse"
+              "titel": "le gobelet"
             },
             {
               "bild": "motiv:hand-offen",
@@ -4039,7 +4023,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dessine dans chaque image. Plie ton livre.",
+          "text": "Dessine dans chaque cadre. Plie ton livre.",
           "symbole": [
             "malen",
             "schneiden"
@@ -4047,7 +4031,7 @@
         },
         {
           "art": "minibuch",
-          "titel": "Quand j’étais petit",
+          "titel": "Quand j’étais bébé",
           "titelbild": "motiv:baby",
           "seiten": [
             {
@@ -4064,7 +4048,7 @@
               "text": "Bientôt j’apprends"
             },
             {
-              "text": "J’aime"
+              "text": "Ce que j’aime"
             },
             {
               "text": "C’est moi"
@@ -4368,7 +4352,7 @@
     "de": {
       "titel": "Oma, Opa und ältere Menschen",
       "untertitel": "Jung und alt: zuhören, zusammen spielen, einander helfen",
-      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory). Seite 2 auf Karton kopieren: Herz ausschneiden, Löcher mit der Lochzange stanzen (Erwachsene), dicke Wolle mit Klebeband an der Spitze bereitlegen.",
+      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory). Seite 2 auf Karton kopieren: Herz ausschneiden, Löcher mit der Lochzange stanzen (Erwachsene), dicke Wolle mit Klebeband an der Spitze bereitlegen. Wer keine Großeltern hat, schenkt das Herz einem anderen Menschen.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -4428,7 +4412,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wem schenkst du das Herz? Male ihn oder sie an.",
+          "text": "Wem schenkst du das Herz? Male an, wer es bekommt.",
           "symbole": [
             "malen"
           ]
@@ -4436,13 +4420,16 @@
         {
           "art": "bilder",
           "modus": "anmalen",
-          "spalten": 2,
+          "spalten": 3,
           "bilder": [
             {
               "bild": "motiv:oma"
             },
             {
               "bild": "motiv:opa"
+            },
+            {
+              "bild": "motiv:freunde"
             }
           ]
         }
@@ -4638,8 +4625,8 @@
     },
     "fr": {
       "titel": "Mamie, papi et les aînés",
-      "untertitel": "Jeunes et vieux : écouter, jouer ensemble, s’entraider",
-      "anleitung": "Imprimer les cartes deux fois (cercle, memory). Copier la page 2 sur carton : découper le cœur, perforer (adultes), préparer de la grosse laine avec du ruban adhésif au bout.",
+      "untertitel": "Petits et grands : écouter, jouer ensemble, s’entraider",
+      "anleitung": "Imprimer les cartes deux fois (cercle, memory). Copier la page 2 sur carton : découper le cœur, perforer (adultes), préparer de la grosse laine avec du ruban adhésif au bout. Qui n’a pas de grands-parents offre le cœur à une autre personne.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -4699,7 +4686,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "À qui offres-tu le cœur ? Colorie.",
+          "text": "À qui offres-tu le cœur ? Colorie la personne.",
           "symbole": [
             "malen"
           ]
@@ -4707,13 +4694,16 @@
         {
           "art": "bilder",
           "modus": "anmalen",
-          "spalten": 2,
+          "spalten": 3,
           "bilder": [
             {
               "bild": "motiv:oma"
             },
             {
               "bild": "motiv:opa"
+            },
+            {
+              "bild": "motiv:freunde"
             }
           ]
         }
@@ -5083,11 +5073,11 @@
             },
             {
               "bild": "motiv:handschuhe",
-              "text": "Handschuhe"
+              "text": "die Handschuhe"
             },
             {
               "bild": "motiv:gummistiefel",
-              "text": "Stiefel"
+              "text": "die Stiefel"
             },
             {
               "bild": "motiv:hose",
@@ -5111,7 +5101,7 @@
               "figuren": [
                 "figur:lea:ruhig:geben"
               ],
-              "requisit": "icon:bowl",
+              "requisit": "motiv:teller",
               "blase": "keine",
               "untertitel": "Zuerst: der Teller"
             },
@@ -5119,7 +5109,7 @@
               "figuren": [
                 "figur:lea:froh:geben"
               ],
-              "requisit": "icon:bowl-spoon",
+              "requisit": "motiv:loeffel",
               "blase": "keine",
               "untertitel": "Dann: der Löffel"
             },
@@ -5127,7 +5117,7 @@
               "figuren": [
                 "figur:lea:stolz:jubeln"
               ],
-              "requisit": "icon:cup",
+              "requisit": "motiv:becher",
               "blase": "keine",
               "untertitel": "Zum Schluss: der Becher"
             }
@@ -5351,7 +5341,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "la tasse"
+              "titel": "le gobelet"
             },
             {
               "bild": "motiv:socke",
@@ -5393,19 +5383,19 @@
           "bilder": [
             {
               "bild": "motiv:socke",
-              "text": "chaussette"
+              "text": "la chaussette"
             },
             {
               "bild": "motiv:handschuhe",
-              "text": "gants"
+              "text": "les gants"
             },
             {
               "bild": "motiv:gummistiefel",
-              "text": "bottes"
+              "text": "les bottes"
             },
             {
               "bild": "motiv:hose",
-              "text": "pantalon"
+              "text": "le pantalon"
             }
           ]
         },
@@ -5425,7 +5415,7 @@
               "figuren": [
                 "figur:lea:ruhig:geben"
               ],
-              "requisit": "icon:bowl",
+              "requisit": "motiv:teller",
               "blase": "keine",
               "untertitel": "D’abord : l’assiette"
             },
@@ -5433,7 +5423,7 @@
               "figuren": [
                 "figur:lea:froh:geben"
               ],
-              "requisit": "icon:bowl-spoon",
+              "requisit": "motiv:loeffel",
               "blase": "keine",
               "untertitel": "Puis : la cuillère"
             },
@@ -5441,7 +5431,7 @@
               "figuren": [
                 "figur:lea:stolz:jubeln"
               ],
-              "requisit": "icon:cup",
+              "requisit": "motiv:becher",
               "blase": "keine",
               "untertitel": "À la fin : le gobelet"
             }
@@ -6718,17 +6708,17 @@
         },
         {
           "art": "forscherblatt",
-          "frage": "Quelles tranches restent claires ?",
+          "frage": "Quelles tranches de pomme restent claires ?",
           "bild": "motiv:apfel",
           "name": false,
           "vermuten": [
             {
               "bild": "motiv:apfel",
-              "text": "sans rien"
+              "text": "sans rien dessus"
             },
             {
               "bild": "motiv:zitrone",
-              "text": "avec citron"
+              "text": "avec du citron"
             }
           ],
           "sehen": "vorher-nachher"
@@ -9356,7 +9346,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Imprime avec la pomme de terre dans le cadre.",
+          "text": "Tamponne avec la pomme de terre dans le cadre.",
           "symbole": [
             "malen"
           ],
@@ -9364,7 +9354,7 @@
         },
         {
           "art": "feld",
-          "label": "Mon impression",
+          "label": "Mon empreinte",
           "zeichnen": true,
           "hoehe": 6
         }
@@ -10032,7 +10022,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Que le vent emporte-t-il ? Coche.",
+          "text": "Qu’est-ce que le vent emporte ? Coche.",
           "symbole": [
             "nachdenken",
             "ankreuzen"
@@ -10645,7 +10635,7 @@
         },
         {
           "art": "forscherblatt",
-          "frage": "La courge au sel devient-elle mouillée ?",
+          "frage": "Le sel mouille-t-il la courge ?",
           "bild": "motiv:kuerbis",
           "name": false,
           "vermuten": [
@@ -10947,7 +10937,7 @@
     "de": {
       "titel": "Laternen und Lichter",
       "untertitel": "Liichtmëssdag: eine Laterne basteln und gemeinsam im Dunkeln gehen",
-      "anleitung": "Karten zweimal drucken; im Sitzkreis liegt eine echte LED-Laterne dabei. Seite 2: Das Kind fährt den Weg zum Fest nach und kreist ein, was im Dunkeln leuchtet; ältere Kinder malen Laterne und Lampion mit einem Muster aus zwei Farben.",
+      "anleitung": "Karten zweimal drucken; im Sitzkreis liegt eine echte LED-Laterne dabei. Seite 2: Das Kind fährt den Weg zur Laterne nach und kreist ein, was im Dunkeln leuchtet; ältere Kinder malen Laterne und Lampion mit einem Muster aus zwei Farben.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -11001,7 +10991,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bring das Kind mit der Laterne zum Fest. Fahre mit dem Stift.",
+          "text": "Mia sucht ihre Laterne. Fahre mit dem Stift zu ihr.",
           "symbole": [
             "malen"
           ],
@@ -11257,7 +11247,7 @@
     "fr": {
       "titel": "Lanternes et lumières",
       "untertitel": "Liichtmëssdag : fabriquer une lanterne et marcher ensemble dans le noir",
-      "anleitung": "Imprimer les cartes deux fois ; au cercle, une vraie lanterne LED est présente. Page 2 : l’enfant suit le chemin vers la fête et entoure ce qui brille dans le noir ; les plus grands décorent lanterne et lampion d’un motif à deux couleurs.",
+      "anleitung": "Imprimer les cartes deux fois ; au cercle, une vraie lanterne LED est présente. Page 2 : l’enfant suit le chemin vers la lanterne et entoure ce qui brille dans le noir ; les plus grands décorent lanterne et lampion d’un motif à deux couleurs.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -11311,7 +11301,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mène l’enfant à la fête avec sa lanterne. Suis le chemin au crayon.",
+          "text": "Mia cherche sa lanterne. Suis le chemin au crayon.",
           "symbole": [
             "malen"
           ],
@@ -11729,7 +11719,7 @@
               "text": "mit Salz"
             },
             {
-              "bild": "icon:cube",
+              "bild": "motiv:eiswuerfel",
               "text": "ohne Salz"
             }
           ],
@@ -11972,7 +11962,7 @@
         },
         {
           "art": "forscherblatt",
-          "frage": "Où le trésor sort-il d’abord ?",
+          "frage": "Où le trésor sort-il en premier ?",
           "bild": "icon:snowflake",
           "name": false,
           "vermuten": [
@@ -11981,7 +11971,7 @@
               "text": "avec du sel"
             },
             {
-              "bild": "icon:cube",
+              "bild": "motiv:eiswuerfel",
               "text": "sans sel"
             }
           ],
@@ -12285,7 +12275,7 @@
     "de": {
       "titel": "Warm angezogen",
       "untertitel": "Winter: Was ziehe ich an – und in welcher Reihenfolge?",
-      "anleitung": "Karten zweimal drucken; echte Winterkleidung liegt in einem Korb dabei. Seite 2: Das Kind schneidet die Kleider der Anziehpuppe aus, klebt sie auf und malt sie an. Zuerst die Wörter auf Seite 1 sprechen.",
+      "anleitung": "Karten zweimal drucken; echte Winterkleidung liegt in einem Korb dabei. Seite 2: Das Kind malt die Kleider der Anziehpuppe an, schneidet sie aus und zieht das Kind an. Zuerst die Wörter auf Seite 1 sprechen.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -12339,7 +12329,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Zieh das Kind für den Schnee an: ausschneiden, aufkleben, anmalen.",
+          "text": "Male, schneide aus, zieh an: warm für den Schnee.",
           "symbole": [
             "schneiden",
             "kleben",
@@ -12358,6 +12348,38 @@
             "stiefel"
           ],
           "ausmalen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was braucht man im Schnee? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "nachdenken"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "bilder",
+          "spalten": 4,
+          "modus": "einkreisen",
+          "bilder": [
+            {
+              "bild": "motiv:muetze",
+              "text": "die Mütze"
+            },
+            {
+              "bild": "motiv:sonnenschirm",
+              "text": "der Sonnenschirm"
+            },
+            {
+              "bild": "motiv:handschuhe",
+              "text": "die Handschuhe"
+            },
+            {
+              "bild": "icon:ice-cream",
+              "text": "das Eis"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -12534,7 +12556,7 @@
     "fr": {
       "titel": "Bien couvert",
       "untertitel": "Hiver : que mettre – et dans quel ordre ?",
-      "anleitung": "Imprimer les cartes deux fois ; de vrais vêtements d’hiver sont prêts dans un panier. Page 2 : l’enfant découpe les vêtements de la poupée, les colle et les colorie. D’abord dire les mots de la page 1.",
+      "anleitung": "Imprimer les cartes deux fois ; de vrais vêtements d’hiver sont prêts dans un panier. Page 2 : l’enfant colorie les vêtements de la poupée, les découpe et en habille l’enfant. D’abord dire les mots de la page 1.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -12588,7 +12610,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Habille l’enfant pour la neige : découpe, colle, colorie.",
+          "text": "Colorie, découpe, habille : bien au chaud pour la neige.",
           "symbole": [
             "schneiden",
             "kleben",
@@ -12607,6 +12629,38 @@
             "stiefel"
           ],
           "ausmalen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "De quoi a-t-on besoin dans la neige ? Entoure.",
+          "symbole": [
+            "einkreisen",
+            "nachdenken"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "bilder",
+          "spalten": 4,
+          "modus": "einkreisen",
+          "bilder": [
+            {
+              "bild": "motiv:muetze",
+              "text": "le bonnet"
+            },
+            {
+              "bild": "motiv:sonnenschirm",
+              "text": "le parasol"
+            },
+            {
+              "bild": "motiv:handschuhe",
+              "text": "les gants"
+            },
+            {
+              "bild": "icon:ice-cream",
+              "text": "la glace"
+            }
+          ]
         }
       ],
       "lehrer": {

@@ -220,7 +220,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Dans la rue, à la gare et à l’atelier, il y a des panneaux. Regarde d’abord la forme, puis la couleur. Ainsi, tu sais vite ce qui est demandé."
+          "text": "Dans la rue, à la gare et à l’atelier, il y a des panneaux. Regarde d’abord la forme, puis la couleur. Ainsi, tu sais vite ce qu’il faut faire."
         },
         {
           "art": "aufgabe",
@@ -660,7 +660,7 @@
             "Au basket, j’ai fait une mauvaise réception.",
             "En cuisine, le couteau a glissé.",
             "Au dépôt, j’ai mal soulevé une caisse lourde.",
-            "Je me suis cogné·e contre une porte d’armoire.",
+            "J’ai heurté une porte d’armoire ouverte.",
             "J’ai écouté de la musique très fort, longtemps."
           ],
           "rechts": [
@@ -673,7 +673,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Entraînez-vous à deux à appeler les secours. L’un·e joue le 112, l’autre répond. Puis échangez.",
+          "text": "Entraînez-vous à deux à appeler les secours. Une personne joue le 112, l’autre répond. Puis échangez.",
           "symbole": [
             "partner"
           ]
@@ -718,7 +718,7 @@
       "lehrer": {
         "ziel": "Les jeunes montrent et nomment les grandes parties du corps (tête, tronc, bras, jambes) et des endroits plus précis, et savent dire où ça fait mal en cas d’urgence.",
         "ablauf": [
-          "Entrée (5 min) : « Tu arrives blessé·e aux urgences. Que dois-tu pouvoir dire ? »",
+          "Entrée (5 min) : « Tu arrives aux urgences avec une blessure. Que dois-tu pouvoir dire ? »",
           "Exercice 1 (10 min) : colorier en nommant ; on montre sur soi ou sur l’image.",
           "Mots et exercice 2 (5 min) : « Montre-moi le poignet. » Discuter l’échelle.",
           "Exercice 3 (5 min) : relier, comparer à deux.",
@@ -825,7 +825,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Du steigst am Bahnhof ein. Fahr mit dem Finger mit und zähl die Haltestellen. An der 4. steigst du aus. Kreise sie ein."
+          "text": "Du steigst am Bahnhof ein (er zählt nicht mit). Fahr mit dem Finger mit und zähl die Haltestellen. An der 4. steigst du aus. Kreise sie ein."
         },
         {
           "art": "geo",
@@ -1068,7 +1068,7 @@
     },
     "fr": {
       "titel": "En bus : ligne et arrêts",
-      "untertitel": "Trouver le bon numéro, compter les arrêts, descendre au bon endroit – ainsi, tu arrives seul·e à destination.",
+      "untertitel": "Trouver le bon numéro, compter les arrêts, descendre au bon endroit – ainsi, tu arrives à destination par tes propres moyens.",
       "bausteine": [
         {
           "art": "text",
@@ -1112,7 +1112,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Tu montes à la gare. Suis la ligne avec le doigt et compte les arrêts. Tu descends au 4e arrêt. Entoure-le."
+          "text": "Tu montes à la gare (elle ne compte pas). Suis la ligne avec le doigt et compte les arrêts. Tu descends au 4e arrêt. Entoure-le."
         },
         {
           "art": "geo",
@@ -1196,7 +1196,7 @@
                   "t": "text",
                   "x": 14,
                   "y": 6,
-                  "text": "Montée",
+                  "text": "Je monte",
                   "mitte": true,
                   "klein": true
                 }
@@ -1284,7 +1284,7 @@
         {
           "art": "info",
           "symbol": "tipp",
-          "titel": "Tu t’es trompé·e ? Pas de souci",
+          "titel": "Tu as mal compté ? Pas de souci",
           "punkte": [
             "Dans le bus, un écran affiche le prochain arrêt.",
             "Appuie sur le bouton d’arrêt quand ton arrêt s’affiche.",
@@ -1314,7 +1314,7 @@
           "rechts": [
             {
               "art": "feld",
-              "label": "Verso : si je suis perdu·e, j’appelle",
+              "label": "Verso : si je ne sais plus où aller, j’appelle",
               "beispiel": "nom et numéro de téléphone",
               "hoehe": 4,
               "zeichnen": true
@@ -1329,7 +1329,7 @@
           "Exercice 1 (5 min) : entourer chaque 7 ; attention au 1 et au 7.",
           "Exercice 2 (10 min) : suivre la ligne avec le doigt et compter à voix haute : « un, deux, trois, quatre – on descend ».",
           "Exercices 3 à 5 (15 min) : préparer son trajet, lire l’écran, remplir la carte de poche.",
-          "Transfert : faire le trajet ensemble. Le ou la jeune compte, l’accompagnant·e n’aide qu’en cas de besoin."
+          "Transfert : faire le trajet ensemble. Le jeune compte, la personne qui l’accompagne n’aide qu’en cas de besoin."
         ],
         "hintergrund": "Compter jusqu’à quatre et reconnaître les chiffres jusqu’à dix sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Pour les jeunes, beaucoup d’autonomie en dépend : prendre le bus, trouver l’étage dans l’ascenseur, le bon numéro de maison. Les compétences numériques précoces se construisent par étapes – de la correspondance terme à terme jusqu’à la lecture sûre des chiffres (Clements & Sarama, 2009). Qui a encore besoin de ces étapes à 15 ans les apprend le mieux là où elles servent. Que l’exercice ressemble au quotidien des adultes n’est pas un détail : les jeunes s’engagent quand l’apprentissage respecte leur statut (Yeager, Dahl & Dweck, 2018).",
         "quellen": [
@@ -1342,7 +1342,7 @@
           "schwerer": "Préparer un trajet avec correspondance : deux lignes, compter les arrêts des deux parties."
         },
         "impulse": [
-          "Que fais-tu si tu t’es trompé·e en comptant ?",
+          "Que fais-tu si tu as mal compté ?",
           "Comment reconnais-tu ton bus si deux arrivent en même temps ?"
         ],
         "tipps": [
@@ -1350,7 +1350,7 @@
           "Observer les progrès : sur un trajet connu, la personne descend-elle au bon arrêt sans rappel ?"
         ],
         "achtung": "Convenir des premiers trajets en autonomie avec les parents et la direction compétente (responsable). Une carte avec un numéro de téléphone d’urgence va dans la poche.",
-        "material": "Plan des lignes ou photos des arrêts autour de l’école ; pour le transfert, un·e accompagnant·e"
+        "material": "Plan des lignes ou photos des arrêts autour de l’école ; pour le transfert, une personne pour accompagner"
       }
     }
   },
@@ -2365,7 +2365,7 @@
     },
     "fr": {
       "titel": "Faire les courses : pièce par pièce",
-      "untertitel": "Six œufs, trois pommes, dix petits pains : qui compte sûrement achète exactement ce qu’il faut.",
+      "untertitel": "Six œufs, trois pommes, dix petits pains : qui sait bien compter achète exactement ce qu’il faut.",
       "bausteine": [
         {
           "art": "text",
@@ -2661,7 +2661,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Petit-déjeuner de la classe : chacun·e a noté ce qu’il ou elle veut. Compte avec des bâtons et écris le nombre."
+          "text": "Petit-déjeuner de la classe : tout le monde a noté ce qu’il veut. Compte avec des bâtons et écris le nombre."
         },
         {
           "art": "strichliste",
@@ -3335,7 +3335,7 @@
         ],
         "tipps": [
           "Préserver la dignité : compter avec le doigt ou à mi-voix est permis. Faire les vraies courses à deux pour que personne ne se sente sous pression à la caisse.",
-          "Observer les progrès : lors des prochaines courses ou en stage, la personne rapporte-t-elle la quantité demandée sans que l’accompagnant·e recompte ?"
+          "Observer les progrès : lors des prochaines courses ou en stage, la personne rapporte-t-elle la quantité demandée sans que la personne qui l’accompagne recompte ?"
         ],
         "material": "Objets réels à compter (pommes, boîte d’œufs), argent pour le petit-déjeuner de la classe"
       }
@@ -3378,7 +3378,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Erst das eine, dann das andere: Beim Kochen ist die Reihenfolge wichtig. Nudeln in kaltes Wasser? Dann werden sie weich und klebrig."
+          "text": "Erst das eine, dann das andere: Beim Kochen ist die Reihenfolge wichtig. Nudeln in kaltes Wasser? Dann werden sie oft weich und klebrig."
         },
         {
           "art": "aufgabe",
@@ -3451,7 +3451,7 @@
                 "figur:ben:froh"
               ],
               "requisit": "icon:battery-4",
-              "text": "100 %. Los geht’s.",
+              "text": "Wieder voll. Los geht’s.",
               "blase": "denken",
               "untertitel": ""
             },
@@ -3547,7 +3547,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "D’abord une chose, puis l’autre : en cuisine, l’ordre compte. Des pâtes dans l’eau froide ? Elles deviennent molles et collantes."
+          "text": "D’abord une chose, puis l’autre : en cuisine, l’ordre compte. Des pâtes dans l’eau froide ? Elles deviennent souvent molles et collantes."
         },
         {
           "art": "aufgabe",
@@ -3620,7 +3620,7 @@
                 "figur:ben:froh"
               ],
               "requisit": "icon:battery-4",
-              "text": "100 %. C’est parti.",
+              "text": "Batterie rechargée. C’est parti.",
               "blase": "denken",
               "untertitel": ""
             },
@@ -3652,8 +3652,8 @@
           "art": "tabelle",
           "spalten": [
             "Étape",
-            "Que fais-je ?",
-            "De quoi ai-je besoin ?"
+            "Qu’est-ce que je fais ?",
+            "Ce dont j’ai besoin"
           ],
           "beispiel": [
             "1",
@@ -4004,7 +4004,7 @@
           "titel": "Travailler en sécurité",
           "punkte": [
             "Utiliser chaque outil seulement pour son travail.",
-            "Pas sûr·e de savoir faire ? D’abord demander, ensuite commencer.",
+            "Tu ne sais pas comment faire ? D’abord demander, ensuite commencer.",
             "Après le travail, tout retourne à sa place."
           ]
         }
@@ -4018,7 +4018,7 @@
           "Exercice 3 (10 min) : prévoir le matériel pour des travaux ; ensuite, faire chercher les objets dans la salle.",
           "Clôture : lire l’encadré. « Quel outil veux-tu maîtriser en stage ? »"
         ],
-        "hintergrund": "Nommer des images et connaître l’usage des objets sont des objectifs cognitifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Pour les jeunes, ils décident souvent de la première impression en stage : qui ne sait pas répondre à « Va chercher le seau » paraît peu sûr·e, alors qu’il ne manque que des mots. Le vocabulaire se développe le mieux avec de vrais objets et de vraies tâches ; les cartes illustrées servent de pont (Hodgdon, 1995). Outils et ustensiles de cuisine sont des contenus idéaux : concrets, utiles et clairement adultes. On travaille ainsi un objectif précoce sans rabaisser la personne (Wood, 1996).",
+        "hintergrund": "Nommer des images et connaître l’usage des objets sont des objectifs cognitifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Pour les jeunes, ils décident souvent de la première impression en stage : qui ne sait pas répondre à « Va chercher le seau » donne une impression d’incertitude, alors qu’il ne manque que des mots. Le vocabulaire se développe le mieux avec de vrais objets et de vraies tâches ; les cartes illustrées servent de pont (Hodgdon, 1995). Outils et ustensiles de cuisine sont des contenus idéaux : concrets, utiles et clairement adultes. On travaille ainsi un objectif précoce sans rabaisser la personne (Wood, 1996).",
         "quellen": [
           "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
           "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
@@ -4321,7 +4321,7 @@
         {
           "art": "einschaetzung",
           "items": [
-            "wifi",
+            "Wi-Fi",
             "son",
             "lampe de poche",
             "Bluetooth",

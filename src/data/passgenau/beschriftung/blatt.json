@@ -10867,37 +10867,6 @@
   "sicher": 0.85,
   "h": "d4dacaaf"
  },
- "b:konzentrations-tricks:1": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "V-18"
-   ],
-   "sekundaer": [
-    "V-15"
-   ]
-  },
-  "kompetenz": [
-   "konflikte",
-   "aufmerksamkeit"
-  ],
-  "alter": {
-   "von": 6,
-   "bis": 8
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Hilfen gegen Ablenkung auswählen (Platz, Pause, Stopp-Satz): Alternativen beschreiben.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "378d3ae4"
- },
  "b:konzentrations-tricks:2": {
   "rolle": [
    "uebung",
@@ -12797,40 +12766,6 @@
   "von": "agent",
   "sicher": 0.75,
   "h": "9376e91a"
- },
- "b:mein-staerkenprofil:4": {
-  "rolle": [
-   "uebung",
-   "transfer"
-  ],
-  "bogen": "uebertragen",
-  "eldib": {
-   "primaer": [
-    "V-29"
-   ],
-   "sekundaer": [
-    "SOZ-40",
-    "K-34"
-   ]
-  },
-  "kompetenz": [
-   "ausdauer",
-   "selbstbild"
-  ],
-  "alter": {
-   "von": 12,
-   "bis": 18
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "mehrtaegig": true,
-  "begruendung": "Eine Woche täglich eine Top-Stärke neu einsetzen und eintragen; mehrtägig.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "a8d756a1"
  },
  "b:mein-tag-in-bildern:0": {
   "rolle": [
@@ -18708,36 +18643,6 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "9e7ef6ad"
- },
- "b:signalkarten:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "verstehen",
-  "eldib": {
-   "primaer": [
-    "V-18"
-   ],
-   "sekundaer": [
-    "V-25"
-   ]
-  },
-  "kompetenz": [
-   "konflikte",
-   "selbstregulation"
-  ],
-  "alter": {
-   "von": 8,
-   "bis": 11
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Situationen den Signalkarten zuordnen: Karte als Alternative zum Ausbruch kennenlernen.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "0dcde930"
  },
  "b:signalkarten:3": {
   "rolle": [
@@ -50775,37 +50680,6 @@
   "sicher": 0.75,
   "h": "764e8d06"
  },
- "b:sp-angst-und-mut:0": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "verstehen",
-  "eldib": {
-   "primaer": [
-    "V-24"
-   ],
-   "sekundaer": [
-    "K-26",
-    "K-18"
-   ]
-  },
-  "kompetenz": [
-   "gefuehle-erkennen",
-   "selbstregulation"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Karten zeigen, was Mut macht (Taschenlampe, Herz, Bauch, Matte).",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "282c6e82"
- },
  "b:sp-angst-und-mut:1": {
   "rolle": [
    "uebung"
@@ -54291,36 +54165,6 @@
   "sicher": 0.8,
   "h": "52ad4bcd"
  },
- "b:sp-guten-morgen:1": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "KOG-31"
-   ],
-   "sekundaer": [
-    "V-8"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien",
-   "alltag"
-  ],
-  "alter": {
-   "von": 4,
-   "bis": 5
-  },
-  "energie": 2,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Bilder des Tages ausschneiden und der Reihe nach aufkleben: Tagesablauf.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "a88d9581"
- },
  "b:sp-gutes-fruehstueck:0": {
   "rolle": [
    "uebung",
@@ -54574,36 +54418,6 @@
   "sicher": 0.85,
   "h": "3ce33dec"
  },
- "b:sp-hell-und-dunkel:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "uebertragen",
-  "eldib": {
-   "primaer": [
-    "KOG-20"
-   ],
-   "sekundaer": [
-    "KOG-21"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Malen, was man am Tag und was in der Nacht sieht: Gegensätze Tag und Nacht.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "d7089917"
- },
  "b:sp-hokuspokus:0": {
   "rolle": [
    "uebung",
@@ -54698,37 +54512,6 @@
   "von": "agent",
   "sicher": 0.8,
   "h": "53ebc9f1"
- },
- "b:sp-ich-helfe-dir:1": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "SOZ-26"
-   ],
-   "sekundaer": [
-    "KOG-31",
-    "K-12"
-   ]
-  },
-  "kompetenz": [
-   "kooperation",
-   "kommunikation"
-  ],
-  "alter": {
-   "von": 4,
-   "bis": 5
-  },
-  "energie": 2,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Sechs Bilder der Reihe nach kleben: So holst du Hilfe.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "bff9289b"
  },
  "b:sp-ich-helfe-mit:0": {
   "rolle": [
@@ -55800,37 +55583,6 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "d948197b"
- },
- "b:sp-laternen:1": {
-  "rolle": [
-   "uebung",
-   "spiel"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "KOG-26"
-   ],
-   "sekundaer": [
-    "KOG-18"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien",
-   "aufmerksamkeit"
-  ],
-  "alter": {
-   "von": 4,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Labyrinth: das Kind mit der Laterne zum Fest führen; spielerische Feinmotorik.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "e74d84ff"
  },
  "b:sp-laternen:2": {
   "rolle": [
@@ -57084,37 +56836,6 @@
   "sicher": 0.75,
   "h": "479292ae"
  },
- "b:sp-oma-opa-und-wir:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "wahrnehmen",
-  "eldib": {
-   "primaer": [
-    "SOZ-16"
-   ],
-   "sekundaer": [
-    "K-13"
-   ]
-  },
-  "kompetenz": [
-   "kooperation",
-   "gefuehle-ausdruecken"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Malen, wem man das Herz schenkt: Beziehung zu einer Person benennen.",
-  "von": "agent",
-  "sicher": 0.75,
-  "h": "fdb734aa"
- },
  "b:sp-picknick:0": {
   "rolle": [
    "einstieg",
@@ -57483,37 +57204,6 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "3992f170"
- },
- "b:sp-riechen-und-schmecken:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "wahrnehmen",
-  "eldib": {
-   "primaer": [
-    "V-24"
-   ],
-   "sekundaer": [
-    "K-15"
-   ]
-  },
-  "kompetenz": [
-   "selbstregulation",
-   "gefuehle-ausdruecken"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Zitrone probieren und sagen, ob man sie mag: Neues ohne Zwang erleben, eigene Meinung benennen.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "711db0ff"
  },
  "b:sp-sand-matsch:0": {
   "rolle": [
@@ -58655,39 +58345,6 @@
   "sicher": 0.8,
   "h": "4f470514"
  },
- "b:sp-tiere-haustiere:1": {
-  "rolle": [
-   "uebung",
-   "spiel"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "KOG-15"
-   ],
-   "sekundaer": [
-    "KOG-17",
-    "SOZ-19"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien",
-   "aufmerksamkeit"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 2,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Futter ausschneiden und dem passenden Tier zuordnen.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "03ab3a68"
- },
  "b:sp-tiere-haustiere:2": {
   "rolle": [
    "uebung"
@@ -58812,38 +58469,6 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "db6c789f"
- },
- "b:sp-tiere-im-winter:0": {
-  "rolle": [
-   "uebung",
-   "einstieg"
-  ],
-  "bogen": "verstehen",
-  "eldib": {
-   "primaer": [
-    "KOG-21"
-   ],
-   "sekundaer": [
-    "K-10",
-    "KOG-14"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien",
-   "kommunikation"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Karten ziehen oder zeigen und das Wort sagen: Welches Tier schläft im Winter? Tiere und Winterdinge kategorisieren.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "916b569f"
  },
  "b:sp-tiere-im-winter:1": {
   "rolle": [
@@ -59167,38 +58792,6 @@
   "sicher": 0.8,
   "h": "65918587"
  },
- "b:sp-tiere-wer-wohnt-wo:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "uebertragen",
-  "eldib": {
-   "primaer": [
-    "KOG-21"
-   ],
-   "sekundaer": [
-    "K-10",
-    "KOG-18"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien",
-   "aufmerksamkeit"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Ein Laub-Zuhause für den Igel zeichnen; Zuhause des Tieres, kein Familienthema.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "1412ce02"
- },
  "b:sp-tiere-zoo:0": {
   "rolle": [
    "uebung",
@@ -59264,37 +58857,6 @@
   "von": "agent",
   "sicher": 0.75,
   "h": "54186658"
- },
- "b:sp-tiere-zoo:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "wahrnehmen",
-  "eldib": {
-   "primaer": [
-    "KOG-23"
-   ],
-   "sekundaer": [
-    "KOG-22"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien",
-   "aufmerksamkeit"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Elefanten grau anmalen und Beine zählen.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "c40a5944"
  },
  "b:sp-unser-waldplatz:0": {
   "rolle": [
@@ -59609,37 +59171,6 @@
   "sicher": 0.85,
   "h": "4b7cd834"
  },
- "b:sp-warm-angezogen:1": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "V-6"
-   ],
-   "sekundaer": [
-    "KOG-18",
-    "KOG-23"
-   ]
-  },
-  "kompetenz": [
-   "aufmerksamkeit",
-   "alltag"
-  ],
-  "alter": {
-   "von": 4,
-   "bis": 5
-  },
-  "energie": 2,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Anziehpuppe für den Schnee: Kleider ausschneiden, aufkleben, anmalen.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "a626dd1c"
- },
  "b:sp-wasser-marsch:0": {
   "rolle": [
    "einstieg",
@@ -59765,37 +59296,6 @@
   "sicher": 0.8,
   "h": "526c6236"
  },
- "b:sp-wasser-trinken:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "KOG-20"
-   ],
-   "sekundaer": [
-    "KOG-18",
-    "KOG-29"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien",
-   "aufmerksamkeit"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Wasser in Gläser malen: leer, halb, voll; Mengenwörter.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "89d3d87d"
- },
  "b:sp-wenn-ich-froh-bin:0": {
   "rolle": [
    "uebung"
@@ -59888,37 +59388,6 @@
   "sicher": 0.8,
   "h": "ddf31a16"
  },
- "b:sp-wenn-ich-traurig-bin:0": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "verstehen",
-  "eldib": {
-   "primaer": [
-    "K-26"
-   ],
-   "sekundaer": [
-    "K-21",
-    "K-28"
-   ]
-  },
-  "kompetenz": [
-   "gefuehle-erkennen",
-   "gefuehle-ausdruecken"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Karten zeigen, was tröstet (Kissen, Pflaster, Regenschirm, Pflanze).",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "7ca91c21"
- },
  "b:sp-wenn-ich-traurig-bin:1": {
   "rolle": [
    "uebung"
@@ -59981,41 +59450,6 @@
   "von": "agent",
   "sicher": 0.8,
   "h": "3c28fe74"
- },
- "b:sp-wenn-ich-wuetend-bin:0": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "verstehen",
-  "eldib": {
-   "primaer": [
-    "V-18"
-   ],
-   "sekundaer": [
-    "V-21",
-    "V-20"
-   ]
-  },
-  "kompetenz": [
-   "konflikte",
-   "impulskontrolle"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {
-   "laut": true,
-   "katharsis": true
-  },
-  "sensibel": null,
-  "begruendung": "Karten zeigen, was bei Wut hilft; Trommel und Kissen als Abreagieren, daher Katharsis markiert.",
-  "von": "agent",
-  "sicher": 0.7,
-  "h": "03daab72"
  },
  "b:sp-wenn-ich-wuetend-bin:1": {
   "rolle": [
@@ -63154,37 +62588,6 @@
   "sicher": 0.85,
   "h": "f9d80533"
  },
- "b:vor-der-probe:5": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "V-18"
-   ],
-   "sekundaer": [
-    "K-16"
-   ]
-  },
-  "kompetenz": [
-   "konflikte",
-   "selbstregulation"
-  ],
-  "alter": {
-   "von": 8,
-   "bis": 11
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Zwei Mut-Sätze für die Probe wählen, einen eigenen schreiben: Alternativen beschreiben.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "ba7f52de"
- },
  "b:vor-der-probe:6": {
   "rolle": [
    "uebung",
@@ -63788,38 +63191,6 @@
   "von": "agent",
   "sicher": 0.8,
   "h": "515a2afa"
- },
- "b:was-hilft-bei-angst:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "V-18"
-   ],
-   "sekundaer": [
-    "K-16"
-   ]
-  },
-  "kompetenz": [
-   "selbstregulation"
-  ],
-  "alter": {
-   "von": 6,
-   "bis": 8
-  },
-  "energie": 1,
-  "belastung": 1,
-  "einzeltauglich": "ja",
-  "allgemein": {
-   "0.text": "Was kannst du zu dir sagen, wenn du Angst hast? Kreuze die Mut-Sätze an, die dir helfen."
-  },
-  "sensibel": null,
-  "begruendung": "Mut-Sätze wählen heißt eine hilfreiche Alternative zur Angst finden; allgemeine Fassung ohne Emma.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "fe554ced"
  },
  "b:was-hilft-bei-angst:3": {
   "rolle": [
@@ -65033,37 +64404,6 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "b64b3fb8"
- },
- "b:wenn-es-laenger-schwer-ist:3": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "verstehen",
-  "eldib": {
-   "primaer": [
-    "K-28"
-   ],
-   "sekundaer": [
-    "SOZ-37"
-   ]
-  },
-  "kompetenz": [
-   "kommunikation",
-   "gefuehle-erkennen"
-  ],
-  "alter": {
-   "von": 12,
-   "bis": 18
-  },
-  "energie": 1,
-  "belastung": 1,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Vier Schritte, wie man jemandem hilft (ansprechen, zuhören, Hilfe holen): andere unterstützen, Gefühle verstehen.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "2b57ae4f"
  },
  "b:wenn-es-laenger-schwer-ist:4": {
   "rolle": [
@@ -67395,5 +66735,665 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "e10d1551"
+ },
+ "b:konzentrations-tricks:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-18"
+   ],
+   "sekundaer": [
+    "V-15"
+   ]
+  },
+  "kompetenz": [
+   "konflikte",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 8
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Hilfen gegen Ablenkung auswählen (Platz, Pause, Stopp-Satz): Alternativen beschreiben.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "378d3ae4"
+ },
+ "b:mein-staerkenprofil:5": {
+  "rolle": [
+   "uebung",
+   "transfer"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "V-29"
+   ],
+   "sekundaer": [
+    "SOZ-40",
+    "K-34"
+   ]
+  },
+  "kompetenz": [
+   "ausdauer",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "mehrtaegig": true,
+  "begruendung": "Eine Woche täglich eine Top-Stärke neu einsetzen und eintragen; mehrtägig.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "a8d756a1"
+ },
+ "b:signalkarten:6": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "V-18"
+   ],
+   "sekundaer": [
+    "V-25"
+   ]
+  },
+  "kompetenz": [
+   "konflikte",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Situationen den Signalkarten zuordnen: Karte als Alternative zum Ausbruch kennenlernen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "0dcde930"
+ },
+ "b:sp-angst-und-mut:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "V-24"
+   ],
+   "sekundaer": [
+    "K-26",
+    "K-18"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Karten zeigen, was Mut macht (Taschenlampe, Herz, Bauch, Matte).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "282c6e82"
+ },
+ "b:sp-guten-morgen:2": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-31"
+   ],
+   "sekundaer": [
+    "V-8"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "alltag"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 5
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Bilder des Tages ausschneiden und der Reihe nach aufkleben: Tagesablauf.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "a88d9581"
+ },
+ "b:sp-hell-und-dunkel:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "KOG-20"
+   ],
+   "sekundaer": [
+    "KOG-21"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Malen, was man am Tag und was in der Nacht sieht: Gegensätze Tag und Nacht.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "d7089917"
+ },
+ "b:sp-ich-helfe-dir:2": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-26"
+   ],
+   "sekundaer": [
+    "KOG-31",
+    "K-12"
+   ]
+  },
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 5
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Sechs Bilder der Reihe nach kleben: So holst du Hilfe.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "bff9289b"
+ },
+ "b:sp-laternen:4": {
+  "rolle": [
+   "uebung",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-26"
+   ],
+   "sekundaer": [
+    "KOG-18"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Labyrinth: das Kind mit der Laterne zum Fest führen; spielerische Feinmotorik.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "e74d84ff"
+ },
+ "b:sp-oma-opa-und-wir:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "SOZ-16"
+   ],
+   "sekundaer": [
+    "K-13"
+   ]
+  },
+  "kompetenz": [
+   "kooperation",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Malen, wem man das Herz schenkt: Beziehung zu einer Person benennen.",
+  "von": "agent",
+  "sicher": 0.75,
+  "h": "fdb734aa"
+ },
+ "b:sp-riechen-und-schmecken:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "V-24"
+   ],
+   "sekundaer": [
+    "K-15"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Zitrone probieren und sagen, ob man sie mag: Neues ohne Zwang erleben, eigene Meinung benennen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "711db0ff"
+ },
+ "b:sp-tiere-haustiere:3": {
+  "rolle": [
+   "uebung",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-15"
+   ],
+   "sekundaer": [
+    "KOG-17",
+    "SOZ-19"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Futter ausschneiden und dem passenden Tier zuordnen.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "03ab3a68"
+ },
+ "b:sp-tiere-im-winter:2": {
+  "rolle": [
+   "uebung",
+   "einstieg"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "KOG-21"
+   ],
+   "sekundaer": [
+    "K-10",
+    "KOG-14"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Karten ziehen oder zeigen und das Wort sagen: Welches Tier schläft im Winter? Tiere und Winterdinge kategorisieren.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "916b569f"
+ },
+ "b:sp-tiere-wer-wohnt-wo:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "KOG-21"
+   ],
+   "sekundaer": [
+    "K-10",
+    "KOG-18"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Ein Laub-Zuhause für den Igel zeichnen; Zuhause des Tieres, kein Familienthema.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "1412ce02"
+ },
+ "b:sp-tiere-zoo:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "KOG-23"
+   ],
+   "sekundaer": [
+    "KOG-22"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Elefanten grau anmalen und Beine zählen.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "c40a5944"
+ },
+ "b:sp-warm-angezogen:2": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-6"
+   ],
+   "sekundaer": [
+    "KOG-18",
+    "KOG-23"
+   ]
+  },
+  "kompetenz": [
+   "aufmerksamkeit",
+   "alltag"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 5
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Anziehpuppe für den Schnee: Kleider ausschneiden, aufkleben, anmalen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "a626dd1c"
+ },
+ "b:sp-wasser-trinken:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-20"
+   ],
+   "sekundaer": [
+    "KOG-18",
+    "KOG-29"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Wasser in Gläser malen: leer, halb, voll; Mengenwörter.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "89d3d87d"
+ },
+ "b:sp-wenn-ich-traurig-bin:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-21",
+    "K-28"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Karten zeigen, was tröstet (Kissen, Pflaster, Regenschirm, Pflanze).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "7ca91c21"
+ },
+ "b:sp-wenn-ich-wuetend-bin:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "V-18"
+   ],
+   "sekundaer": [
+    "V-21",
+    "V-20"
+   ]
+  },
+  "kompetenz": [
+   "konflikte",
+   "impulskontrolle"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {
+   "laut": true,
+   "katharsis": true
+  },
+  "sensibel": null,
+  "begruendung": "Karten zeigen, was bei Wut hilft; Trommel und Kissen als Abreagieren, daher Katharsis markiert.",
+  "von": "agent",
+  "sicher": 0.7,
+  "h": "03daab72"
+ },
+ "b:vor-der-probe:8": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-18"
+   ],
+   "sekundaer": [
+    "K-16"
+   ]
+  },
+  "kompetenz": [
+   "konflikte",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Zwei Mut-Sätze für die Probe wählen, einen eigenen schreiben: Alternativen beschreiben.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "ba7f52de"
+ },
+ "b:was-hilft-bei-angst:5": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-18"
+   ],
+   "sekundaer": [
+    "K-16"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 8
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Welche Mut-Sätze helfen dir bei Angst? Kreuze an."
+  },
+  "sensibel": null,
+  "begruendung": "Mut-Sätze wählen heißt eine hilfreiche Alternative zur Angst finden; allgemeine Fassung ohne Emma.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "fe554ced"
+ },
+ "b:wenn-es-laenger-schwer-ist:7": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-28"
+   ],
+   "sekundaer": [
+    "SOZ-37"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Vier Schritte, wie man jemandem hilft (ansprechen, zuhören, Hilfe holen): andere unterstützen, Gefühle verstehen.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "2b57ae4f"
  }
 }

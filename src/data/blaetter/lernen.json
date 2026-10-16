@@ -17,7 +17,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Warum wir aufschieben",
-          "text": "Eine Aufgabe fühlt sich langweilig, schwer oder unklar an. Das Handy oder etwas anderes verspricht sofort ein besseres Gefühl. Kurzfristig wirkt das – langfristig wächst der Druck. Hilfreich ist deshalb nicht mehr Druck, sondern ein leichterer Start."
+          "text": "Eine Aufgabe fühlt sich langweilig, schwer oder unklar an. Das Handy verspricht sofort ein besseres Gefühl. Kurzfristig wirkt das, langfristig wächst der Druck. Besser hilft ein leichterer Start."
         },
         { "art": "aufgabe", "text": "Wie sehr trifft das auf dich zu?" },
         {
@@ -27,8 +27,7 @@
             "Ich fange erst an, wenn es richtig knapp wird.",
             "Ich weiß oft nicht, womit ich anfangen soll.",
             "Das Handy lenkt mich ab, sobald ich lerne.",
-            "Ich habe Angst, dass das Ergebnis nicht gut genug wird.",
-            "Ich unterschätze, wie lange eine Aufgabe dauert.",
+            "Ich habe Angst, dass das Ergebnis nicht gut genug wird.", 
             "Wenn ich einmal angefangen habe, geht es meistens gut."
           ]
         },
@@ -37,13 +36,13 @@
           "art": "tabelle",
           "spalten": ["Schritt", "Was genau?", "Wie lange?", "Erledigt"],
           "breiten": [0.8, 3, 1.1, 1],
-          "zeilen": 4,
+          "zeilen": 2,
           "beispiel": ["1", "Mathe-Heft aufschlagen, Aufgabe 3 lesen", "5 Min.", "x"]
         },
-        { "art": "aufgabe", "text": "Formuliere deinen Wenn-dann-Plan.", "hinweis": "Wenn-dann-Pläne verbinden eine feste Situation mit einer konkreten Handlung. Sie wirken besser als gute Vorsätze." },
+        { "art": "aufgabe", "text": "Formuliere deinen Wenn-dann-Plan: eine feste Situation, eine konkrete Handlung." },
         {
           "art": "wennDann",
-          "zeilen": 2,
+          "zeilen": 1,
           "beispiele": [{ "wenn": "Wenn ich am Dienstag um 16 Uhr nach Hause komme,", "dann": "lege ich das Handy in die Küche und arbeite 25 Minuten an Schritt 1." }]
         },
         { "art": "skala", "frage": "Wie sicher bist du, dass du deinen Plan diese Woche umsetzt?", "von": "gar nicht sicher", "bis": "sehr sicher", "stufen": 11 }
@@ -89,7 +88,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Pourquoi on remet à plus tard",
-          "text": "Une tâche paraît ennuyeuse, difficile ou floue. Le téléphone ou autre chose promet tout de suite un meilleur ressenti. À court terme, ça marche – à long terme, la pression augmente. Ce qui aide, ce n’est donc pas plus de pression, mais un démarrage plus facile."
+          "text": "Une tâche paraît ennuyeuse, difficile ou floue. Le téléphone promet tout de suite de se sentir mieux. À court terme, ça marche, à long terme, la pression augmente. Mieux vaut un démarrage plus facile."
         },
         { "art": "aufgabe", "text": "Dans quelle mesure est-ce vrai pour toi ?" },
         {
@@ -99,9 +98,8 @@
             "Je ne commence que quand ça devient vraiment urgent.",
             "Je ne sais souvent pas par où commencer.",
             "Le téléphone me distrait dès que j’apprends.",
-            "J’ai peur que le résultat ne soit pas assez bon.",
-            "Je sous-estime le temps que prend une tâche.",
-            "Une fois lancé·e, ça se passe plutôt bien."
+            "J’ai peur que le résultat ne soit pas assez bon.", 
+            "Une fois que j’ai commencé, ça se passe plutôt bien."
           ]
         },
         { "art": "aufgabe", "text": "Choisis une tâche que tu repousses en ce moment. Découpe-la en petites étapes.", "hinweis": "La première étape doit être si petite qu’elle se fait en cinq minutes." },
@@ -109,25 +107,25 @@
           "art": "tabelle",
           "spalten": ["Étape", "Quoi exactement ?", "Combien de temps ?", "Fait"],
           "breiten": [0.8, 3, 1.1, 1],
-          "zeilen": 4,
+          "zeilen": 2,
           "beispiel": ["1", "Ouvrir le cahier de maths, lire l’exercice 3", "5 min", "x"]
         },
-        { "art": "aufgabe", "text": "Formule ton plan « si … alors ».", "hinweis": "Un plan « si … alors » relie une situation précise à une action concrète. Il fonctionne mieux que les bonnes résolutions." },
+        { "art": "aufgabe", "text": "Formule ton plan « si … alors » : une situation précise, une action concrète." },
         {
           "art": "wennDann",
           "wenn": "Si …",
           "dann": "… alors",
-          "zeilen": 2,
+          "zeilen": 1,
           "beispiele": [{ "wenn": "Si je rentre à la maison mardi à 16 h,", "dann": "je pose mon téléphone dans la cuisine et je travaille 25 minutes sur l’étape 1." }]
         },
-        { "art": "skala", "frage": "À quel point es-tu sûr·e de mettre ton plan en œuvre cette semaine ?", "von": "pas du tout sûr·e", "bis": "tout à fait sûr·e", "stufen": 11 }
+        { "art": "skala", "frage": "Quelle est la probabilité que tu mettes ton plan en œuvre cette semaine ?", "von": "très faible", "bis": "très élevée", "stufen": 11 }
       ],
       "lehrer": {
         "ziel": "Les jeunes comprennent la procrastination comme une façon de réguler leur humeur à court terme, découpent une tâche concrète en petites étapes et formulent un plan « si … alors » pour démarrer.",
         "ablauf": [
           "Entrée en matière (5 min) : « Qu’avez-vous remis à plus tard récemment – et qu’avez-vous fait à la place ? » Recueillir les réponses sans jugement.",
           "Lire ensemble l’encadré. Souligner : remettre à plus tard est lié aux émotions, pas au caractère.",
-          "Auto-évaluation individuelle (5 min), puis échange volontaire sur l’affirmation la plus vraie pour chacun·e.",
+          "Auto-évaluation individuelle (5 min), puis échange volontaire sur l’affirmation qui s’applique le mieux à chacun.",
           "Faire choisir une vraie tâche à venir et la découper en étapes. Rendre la première étape volontairement minuscule.",
           "Formuler le plan « si … alors » ; vérifier à deux : le moment, le lieu et l’action sont-ils concrets ?",
           "Une semaine plus tard : qu’est-ce qui a marché, que faut-il ajuster dans le plan ?"
@@ -139,7 +137,7 @@
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "differenzierung": {
-          "leichter": "Découper la tâche avec l’enseignant·e ; formuler un seul plan « si … alors ».",
+          "leichter": "Découper la tâche avec l’enseignant ou l’enseignante ; formuler un seul plan « si … alors ».",
           "schwerer": "Noter en plus quel sentiment la tâche déclenche et ce que l’on peut s’offrir après la première étape."
         },
         "impulse": [
@@ -151,7 +149,7 @@
           "Tester une fois en classe le minuteur (25 minutes de travail, 5 minutes de pause).",
           "Ne pas juger moralement la procrastination – la honte renforce l’évitement."
         ],
-        "achtung": "Si la procrastination cache un abattement durable, une forte anxiété ou une surcharge à la maison, chercher le dialogue et impliquer la direction compétente (responsable).",
+        "achtung": "Si la procrastination cache un abattement durable, une forte anxiété ou une surcharge à la maison, engager la conversation et impliquer la direction compétente (responsable).",
         "material": "En option : minuteur de cuisine ou application"
       }
     }
@@ -187,7 +185,7 @@
             { "bild": "icon:search", "text": "Sachen suchen" }
           ]
         },
-        { "art": "aufgabe", "text": "Was hilft dir? Kreuze an.", "hinweis": "Kreise danach deine zwei besten Tricks ein.", "symbole": ["ankreuzen"] },
+        { "art": "aufgabe", "text": "Was hilft dir? Kreuze an.", "hinweis": "Du darfst mehrere Kreuze machen.", "symbole": ["ankreuzen"] },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -261,10 +259,10 @@
             { "bild": "icon:apple", "text": "faim" },
             { "bild": "icon:zzz", "text": "fatigue" },
             { "bild": "icon:bubble", "text": "pensées" },
-            { "bild": "icon:search", "text": "chercher" }
+            { "bild": "icon:search", "text": "chercher ses affaires" }
           ]
         },
-        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide ? Coche.", "hinweis": "Ensuite, entoure tes deux meilleures astuces.", "symbole": ["ankreuzen"] },
+        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide ? Coche.", "hinweis": "Tu peux faire plusieurs croix.", "symbole": ["ankreuzen"] },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -423,12 +421,12 @@
         {
           "art": "geschichte",
           "titel": "Parti trop vite",
-          "text": "Mathis reçoit une feuille de travail. Il veut être le premier à finir et commence tout de suite. Après cinq minutes, il remarque : il ne devait pas recopier les mots, mais les classer. Mathis s’énerve et gomme si fort que la feuille se déchire. Sa maîtresse dit calmement : « Essaie avec des phrases-guides. »",
+          "text": "Mathis reçoit une feuille de travail. Il veut être le premier à finir et commence tout de suite. Après cinq minutes, il remarque : il ne devait pas recopier les mots, mais les classer. Mathis s’énerve et gomme si fort que la feuille se déchire. Sa maîtresse dit calmement : « Essaie avec des phrases pour te guider. »",
           "bild": "figur:noah:enttaeuscht"
         },
         {
           "art": "aufgabe",
-          "text": "Lis les cinq phrases-guides. Écris chacune avec tes propres mots.",
+          "text": "Lis les cinq phrases pour te guider. Écris chacune avec tes propres mots.",
           "hinweis": "Exemple pour la phrase 1 : « Qu’est-ce que je dois faire exactement ici ? »",
           "symbole": ["lesen", "schreiben"]
         },
@@ -447,12 +445,12 @@
           "art": "info",
           "symbol": "merke",
           "titel": "À voix haute – tout bas – dans la tête",
-          "text": "Dis d’abord les phrases-guides à mi-voix. Puis chuchote-les. À la fin, tu les penses seulement. Elles deviennent ainsi ta voix intérieure."
+          "text": "Dis d’abord ces phrases à mi-voix. Puis chuchote-les. À la fin, tu les penses seulement. Elles deviennent ainsi ta voix intérieure."
         },
-        { "art": "aufgabe", "text": "Que pense Mathis pendant son deuxième essai ? Relie avec la phrase-guide qui correspond.", "symbole": ["verbinden"] },
+        { "art": "aufgabe", "text": "Que pense Mathis pendant son deuxième essai ? Relie avec la phrase qui correspond.", "symbole": ["verbinden"] },
         {
           "art": "zuordnen",
-          "titel": ["Mathis pense", "Phrase-guide"],
+          "titel": ["Mathis pense", "Ma phrase"],
           "links": [
             "Qu’est-ce que je dois faire exactement ici ?",
             "D’abord lire, ensuite numéroter.",
@@ -463,10 +461,10 @@
           "rechts": ["Je vérifie.", "Quelle est ma tâche ?", "Je me félicite.", "Comment je m’y prends ?", "Je travaille pas à pas."]
         },
         { "art": "aufgabe", "text": "Entraîne-toi pendant une semaine. Colorie une étoile quand ça a marché.", "symbole": ["malen"] },
-        { "art": "plan", "symbol": "stern", "zeilen": ["J’ai utilisé les phrases-guides.", "J’ai vérifié à la fin."] },
+        { "art": "plan", "symbol": "stern", "zeilen": ["J’ai utilisé mes cinq phrases.", "J’ai vérifié à la fin."] },
         {
           "art": "aufgabe",
-          "text": "Découpe ta carte-guide. Pose-la sur ta table quand tu travailles.",
+          "text": "Découpe ta carte de phrases. Pose-la sur ta table quand tu travailles.",
           "hinweis": "Tu peux aussi découper les cartes une par une et les accrocher à un anneau.",
           "symbole": ["schneiden"]
         },
@@ -475,7 +473,7 @@
           "spalten": 3,
           "hoehe": 104,
           "karten": [
-            { "titel": "Mes phrases-guides", "text": "D’abord penser, ensuite faire.", "bild": "icon:message-circle" },
+            { "titel": "Mes phrases pour me guider", "text": "D’abord penser, ensuite faire.", "bild": "icon:message-circle" },
             { "titel": "1. Quelle est ma tâche ?", "bild": "icon:search" },
             { "titel": "2. Comment je m’y prends ?", "bild": "icon:route" },
             { "titel": "3. Je travaille pas à pas.", "bild": "icon:stairs-up" },
@@ -485,10 +483,10 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les enfants apprennent cinq phrases-guides avec lesquelles ils se guident eux-mêmes en travaillant, et s’exercent à les dire d’abord à voix haute, puis tout bas et enfin seulement dans la tête.",
+        "ziel": "Les enfants apprennent cinq phrases avec lesquelles ils se guident eux-mêmes en travaillant, et s’exercent à les dire d’abord à voix haute, puis tout bas et enfin seulement dans la tête.",
         "ablauf": [
           "Entrée en matière (5 min) : lire l’histoire. Questions : « Qu’est-ce qui a mal tourné ? Qu’aurait pu se dire Mathis ? »",
-          "Démonstration (5 min) : résoudre une tâche au tableau en disant à voix haute les cinq phrases-guides – et corriger tranquillement une erreur.",
+          "Démonstration (5 min) : résoudre une tâche au tableau en disant à voix haute les cinq phrases – et corriger tranquillement une erreur.",
           "Exercices 1 et 2 (10 min) : reformuler les phrases avec ses mots, contrôler ensemble l’association.",
           "S’exercer à deux : un enfant reproduit un motif et dit les phrases à voix haute, puis en chuchotant, puis dans la tête ; ensuite échanger les rôles.",
           "Découper la carte. La semaine suivante, rappeler la carte avant les travaux individuels et faire remplir le plan."
@@ -500,9 +498,9 @@
         ],
         "differenzierung": {
           "leichter": "N’utiliser que trois phrases : Quelle est ma tâche ? – Je travaille pas à pas. – Je vérifie.",
-          "schwerer": "Développer ses propres phrases-guides pour des moments difficiles, p. ex. en cas de colère ou avant un contrôle."
+          "schwerer": "Développer ses propres phrases pour des moments difficiles, p. ex. en cas de colère ou avant un contrôle."
         },
-        "impulse": ["Quelle phrase-guide est la plus difficile pour toi ?", "Que te dis-tu quand tu fais une erreur ?", "Où veux-tu essayer les phrases demain ?"],
+        "impulse": ["Quelle phrase est la plus difficile pour toi ?", "Que te dis-tu quand tu fais une erreur ?", "Où veux-tu essayer les phrases demain ?"],
         "tipps": [
           "Servir soi-même de modèle : penser tout haut de temps en temps lors des travaux au tableau.",
           "Autoriser expressément le dialogue intérieur à voix basse pendant le travail – il fait partie de l’exercice."
@@ -584,7 +582,7 @@
         { "art": "aufgabe", "text": "Halte deinen Fokusplan fest. Ergänze die Sätze." },
         {
           "art": "satzanfaenge",
-          "items": [
+          "linien": 2, "items": [
             "Ich lerne am besten hier: …",
             "Mein Handy ist während der Lernzeit …",
             "Ein Arbeitsblock dauert bei mir … Minuten.",
@@ -593,7 +591,7 @@
           ]
         },
         { "art": "skala", "frage": "Wie sicher bist du, dass du deinen Fokusplan diese Woche umsetzt?", "von": "gar nicht sicher", "bis": "sehr sicher", "stufen": 11 },
-        { "art": "frage", "text": "Nach einer Woche: Welche Regel hat dir am meisten geholfen – und was änderst du?", "linien": 2 }
+        { "art": "frage", "text": "Nach einer Woche: Welche Regel hat dir am meisten geholfen – und was änderst du?", "linien": 3 }
       ],
       "lehrer": {
         "ziel": "Die Jugendlichen erkennen ihre typischen Ablenkungen, legen Handy-Regeln fest, erproben Arbeitsblöcke und halten ihre Strategien in einem Fokusplan fest.",
@@ -662,8 +660,8 @@
             "Le mode Concentration ou « Ne pas déranger » est activé.",
             "Les notifications des applis sont coupées.",
             "Je ne regarde mon téléphone qu’après la plage de travail.",
-            "Je préviens mes ami·e·s : « Hors ligne jusqu’à 18\u00a0h. »",
-            "Les applis qui prennent beaucoup de temps ont une limite."
+            "Je préviens mes amis : « Hors ligne jusqu’à 18\u00a0h. »",
+            "Les applis qui prennent beaucoup de temps ont une limite de temps."
           ]
         },
         {
@@ -688,7 +686,7 @@
         { "art": "aufgabe", "text": "Note ton plan de concentration : complète les phrases." },
         {
           "art": "satzanfaenge",
-          "items": [
+          "linien": 2, "items": [
             "Je travaille le mieux ici : …",
             "Pendant que je travaille, mon téléphone est …",
             "Une plage de travail dure chez moi … minutes.",
@@ -696,14 +694,14 @@
             "Quand je remarque que je décroche, je …"
           ]
         },
-        { "art": "skala", "frage": "À quel point es-tu sûr·e d’appliquer ton plan cette semaine ?", "von": "pas du tout sûr·e", "bis": "tout à fait sûr·e", "stufen": 11 },
-        { "art": "frage", "text": "Une semaine plus tard : quelle règle t’a le plus aidé·e – et que vas-tu changer ?", "linien": 2 }
+        { "art": "skala", "frage": "Quelle est la probabilité que tu appliques ton plan cette semaine ?", "von": "très faible", "bis": "très élevée", "stufen": 11 },
+        { "art": "frage", "text": "Une semaine plus tard : quelle règle t’a été la plus utile – et que vas-tu changer ?", "linien": 3 }
       ],
       "lehrer": {
         "ziel": "Les jeunes repèrent leurs distractions habituelles, fixent des règles pour leur téléphone, testent des plages de travail et rédigent leur plan de concentration.",
         "ablauf": [
           "Entrée (5 min) : « Hier, combien de fois avez-vous regardé votre téléphone en travaillant ? » Recueillir sans juger.",
-          "Lire l’encadré ; exercice 1 seul·e (5 min). Puis trier : distractions extérieures ou intérieures ?",
+          "Lire l’encadré ; exercice 1 en travail individuel (5 min). Puis trier : distractions extérieures ou intérieures ?",
           "Exercice 2 : choisir des règles et les justifier à deux.",
           "Présenter la plage de travail ; en tester une de 10 minutes en classe.",
           "Remplir le plan. Une semaine plus tard, répondre à la dernière question et ajuster."
@@ -719,7 +717,7 @@
           "schwerer": "Noter ses plages pendant une semaine et repérer quand on décroche le plus."
         },
         "impulse": [
-          "Quand restes-tu concentré·e le plus facilement ?",
+          "Quand te concentres-tu le plus facilement ?",
           "Pause ou distraction : quelle différence ?",
           "Qui pourrait t’aider à tenir tes règles ?"
         ],
@@ -727,7 +725,7 @@
           "Ne pas exposer ni juger l’usage du téléphone de chacun : il s’agit de stratégies, pas de contrôle.",
           "En classe, afficher un minuteur visible de tous pendant la plage de travail."
         ],
-        "achtung": "Si un·e jeune ne maîtrise plus son usage du téléphone, dort mal ou est bloqué·e par de fortes inquiétudes : entretien individuel et contact avec le SePAS.",
+        "achtung": "Si des jeunes ne maîtrisent plus leur usage du téléphone, dorment mal ou sont bloqués par de fortes inquiétudes : entretien individuel et contact avec le SePAS.",
         "material": "Minuteur ou horloge ; en option, une boîte à téléphones"
       }
     }
@@ -910,10 +908,10 @@
             { "bild": "icon:bread", "text": "Pausenbrot" },
             { "bild": "icon:device-gamepad-2", "text": "Spielkonsole" },
             { "bild": "icon:mail", "text": "Elternbrief" },
-            { "bild": "icon:shoe", "text": "Turnschuhe" }
+            { "bild": "icon:ruler", "text": "Lineal" }
           ]
         },
-        { "art": "aufgabe", "text": "Was brauchst du nur an manchen Tagen? Kreuze an.", "symbole": ["ankreuzen"] },
+        { "art": "aufgabe", "text": "Was brauchst du nur an manchen Tagen? Kreuze die Tage an.", "symbole": ["ankreuzen"] },
         {
           "art": "plan",
           "symbol": "kasten",
@@ -980,10 +978,10 @@
             { "bild": "icon:bread", "text": "collation" },
             { "bild": "icon:device-gamepad-2", "text": "console de jeux" },
             { "bild": "icon:mail", "text": "mot aux parents" },
-            { "bild": "icon:shoe", "text": "baskets" }
+            { "bild": "icon:ruler", "text": "règle" }
           ]
         },
-        { "art": "aufgabe", "text": "De quoi as-tu besoin seulement certains jours ? Coche.", "symbole": ["ankreuzen"] },
+        { "art": "aufgabe", "text": "De quoi as-tu besoin seulement certains jours ? Coche les jours.", "symbole": ["ankreuzen"] },
         { "art": "plan", "symbol": "kasten", "zeilen": ["Affaires de sport", "Affaires de piscine", ""] },
         { "art": "aufgabe", "text": "Lis les quatre étapes. Prépare ton cartable ce soir de la même façon.", "symbole": ["lesen"] },
         {
@@ -993,7 +991,7 @@
           "items": [
             { "titel": "Regarder l’horaire", "text": "De quoi ai-je besoin demain ?" },
             { "titel": "Ranger", "text": "Cahiers, livres, trousse" },
-            { "titel": "Vérifier", "text": "Y a-t-il tout ?" },
+            { "titel": "Vérifier", "text": "Ai-je tout ?" },
             { "titel": "Cartable près de la porte", "text": "Comme ça, tu ne l’oublies pas." }
           ]
         }
@@ -1055,7 +1053,7 @@
         {
           "art": "ankreuzen",
           "spalten": 3,
-          "items": ["sein Heft", "die Brotdose", "den Füller", "die Sammelkarten", "den Tintenkiller", "das zerknüllte Blatt", "die anderen Hefte"]
+          "items": ["sein Heft", "die Brotdose", "den Füller", "die Sammelkarten", "die Trinkflasche", "das zerknüllte Blatt", "die anderen Hefte"]
         },
         {
           "art": "info",
@@ -1070,7 +1068,7 @@
           "items": ["Bleistift, gespitzt", "Radiergummi", "Füller und Patronen", "Tintenkiller", "Buntstifte", "Lineal", "Klebestift"]
         },
         { "art": "aufgabe", "text": "Zeichne deinen Tisch so, wie er beim Arbeiten aussehen soll.", "hinweis": "Was liegt darauf? Wo ist der Rest?", "symbole": ["malen"] },
-        { "art": "feld", "zeichnen": true, "hoehe": 10 },
+        { "art": "feld", "zeichnen": true, "hoehe": 14 },
         { "art": "aufgabe", "text": "Mach jeden Freitag deinen Wochen-Check. Kreuze an, was du geschafft hast.", "symbole": ["ankreuzen"] },
         {
           "art": "plan",
@@ -1112,7 +1110,7 @@
       }
     },
     "fr": {
-      "titel": "Le check-up de ma place de travail",
+      "titel": "Le check de ma place de travail",
       "untertitel": "Sur une table bien rangée, tu trouves plus vite ce dont tu as besoin. Et tu te mets plus facilement au travail.",
       "bausteine": [
         {
@@ -1125,7 +1123,7 @@
         {
           "art": "ankreuzen",
           "spalten": 3,
-          "items": ["son cahier", "la boîte à tartines", "le stylo plume", "les cartes à collectionner", "l’effaceur", "la feuille froissée", "les autres cahiers"]
+          "items": ["son cahier", "la boîte à tartines", "le stylo plume", "les cartes à collectionner", "la gourde", "la feuille froissée", "les autres cahiers"]
         },
         {
           "art": "info",
@@ -1150,13 +1148,13 @@
           "hinweis": "Qu’y a-t-il dessus ? Où est le reste ?",
           "symbole": ["malen"]
         },
-        { "art": "feld", "zeichnen": true, "hoehe": 10 },
+        { "art": "feld", "zeichnen": true, "hoehe": 14 },
         { "art": "aufgabe", "text": "Fais ton check de la semaine chaque vendredi. Coche ce que tu as réussi.", "symbole": ["ankreuzen"] },
         {
           "art": "plan",
           "symbol": "kasten",
           "tage": ["Semaine 1", "Semaine 2", "Semaine 3", "Semaine 4"],
-          "zeilen": ["Ma trousse est complète.", "Les feuilles volantes sont classées.", "Mon casier est rangé.", "Les déchets et les miettes sont partis."]
+          "zeilen": ["Ma trousse est complète.", "Les feuilles volantes sont classées.", "Mon casier est rangé.", "Plus de déchets ni de miettes."]
         },
         { "art": "rueckblick" }
       ],
@@ -1405,7 +1403,7 @@
           "Faire le premier bilan de la semaine ensemble en classe.",
           "Harmoniser classeurs et couleurs dans la classe quand c’est possible."
         ],
-        "achtung": "Un désordre soudain, des travaux qui ne sont plus rendus ou un repli sur soi peuvent signaler une difficulté : chercher le dialogue et, si besoin, impliquer le SePAS.",
+        "achtung": "Un désordre soudain, des travaux qui ne sont plus rendus ou un repli sur soi peuvent signaler une difficulté : engager la conversation et, si besoin, impliquer le SePAS.",
         "material": "Classeurs, pochettes, pastilles de couleur ; si possible, ordinateur portable ou tablette"
       }
     }
@@ -1509,7 +1507,7 @@
         "ziel": "Les enfants mettent les moments de leur journée d’école dans un ordre fixe, y associent des heures et savent ce qui les aide quand une journée se déroule autrement.",
         "ablauf": [
           "Entrée en matière (5 min) : accrocher au tableau en désordre des cartes illustrées de la journée d’école et les ordonner ensemble : « Qu’est-ce qui vient d’abord ? »",
-          "Exercice 1 : discuter les images. Déterminer et noter les heures avec une grande horloge d’apprentissage.",
+          "Exercice 1 : discuter les images. Déterminer et noter les heures avec une grande horloge à aiguilles.",
           "Utiliser la ligne vide pour quelque chose de personnel, p. ex. sport, piscine ou musique.",
           "Exercice 2 : raconter un changement (« Aujourd’hui, une autre maîtresse vient. »). Demander : « Qu’est-ce qui vous aide alors ? »",
           "Afficher dans la classe un plan de la journée avec les mêmes images et le discuter brièvement chaque matin."
@@ -1533,7 +1531,7 @@
           "Annoncer les changements le plus tôt possible le matin."
         ],
         "achtung": "Si un enfant réagit régulièrement aux changements de déroulement par une forte peur ou colère : discuter des observations avec les parents et la direction compétente (responsable).",
-        "material": "Horloge d’apprentissage ; cartes illustrées ou photos de la journée d’école"
+        "material": "Horloge à aiguilles ; cartes illustrées ou photos de la journée d’école"
       }
     }
   },
@@ -1563,7 +1561,8 @@
           "art": "tabelle",
           "spalten": ["Tag", "Wann?", "Wo?", "Wer kann helfen?"],
           "breiten": [1, 1, 1.6, 2],
-          "zeilen": 5,
+          "werte": [["Dienstag", "", "", ""], ["Mittwoch", "", "", ""], ["Donnerstag", "", "", ""], ["Freitag", "", "", ""], ["Wochenende", "", "", ""]],
+          "zeilen": 0,
           "beispiel": ["Montag", "16:30 Uhr", "am Küchentisch", "Papa, Hausaufgabenhilfe"]
         },
         {
@@ -1653,7 +1652,8 @@
           "art": "tabelle",
           "spalten": ["Jour", "Quand ?", "Où ?", "Qui peut aider ?"],
           "breiten": [1, 1, 1.6, 2],
-          "zeilen": 5,
+          "werte": [["Mardi", "", "", ""], ["Mercredi", "", "", ""], ["Jeudi", "", "", ""], ["Vendredi", "", "", ""], ["Week-end", "", "", ""]],
+          "zeilen": 0,
           "beispiel": ["Lundi", "16 h 30", "à la table de la cuisine", "Papa, aide aux devoirs"]
         },
         {
@@ -1763,7 +1763,8 @@
           "art": "tabelle",
           "spalten": ["Tag", "Feste Termine", "Lernen und Aufgaben", "Puffer"],
           "breiten": [0.6, 2, 2.2, 1.1],
-          "zeilen": 6,
+          "werte": [["Di", "", "", ""], ["Mi", "", "", ""], ["Do", "", "", ""], ["Fr", "", "", ""], ["Sa", "", "", ""], ["So", "", "", ""]],
+          "zeilen": 0,
           "beispiel": ["Mo", "17–18:30 Fußballtraining", "16–16:45 Vokabeln Englisch", "19:30–20:00"]
         },
         { "art": "aufgabe", "text": "Lege einen festen Termin für deine Wochenplanung fest." },
@@ -1850,7 +1851,8 @@
           "art": "tabelle",
           "spalten": ["Jour", "Rendez-vous fixes", "Travail et devoirs", "Marge"],
           "breiten": [0.6, 2, 2.2, 1.1],
-          "zeilen": 6,
+          "werte": [["Ma", "", "", ""], ["Me", "", "", ""], ["Je", "", "", ""], ["Ve", "", "", ""], ["Sa", "", "", ""], ["Di", "", "", ""]],
+          "zeilen": 0,
           "beispiel": ["Lu", "17 h–18 h 30 entraînement de foot", "16 h–16 h 45 vocabulaire d’anglais", "19 h 30–20 h"]
         },
         { "art": "aufgabe", "text": "Fixe un moment régulier pour planifier ta semaine." },
@@ -1906,7 +1908,7 @@
           "Inscrire explicitement loisirs, sport et repos : un planning sans pauses n’est pas tenu.",
           "Refaire la planification en classe, le même jour, pendant quelques semaines."
         ],
-        "achtung": "Si un·e jeune décrit une semaine durablement surchargée (petit boulot, garde des frères et sœurs) ou une forte pression scolaire : entretien individuel et, si besoin, contact avec le SePAS.",
+        "achtung": "Si des jeunes décrivent une semaine durablement surchargée (petit boulot, garde des frères et sœurs) ou une forte pression scolaire : entretien individuel et, si besoin, contact avec le SePAS.",
         "material": "En option : agenda ou application de calendrier"
       }
     }

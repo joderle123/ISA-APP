@@ -198,7 +198,7 @@
         {
           "art": "geschichte",
           "titel": "Dans la salle d’attente",
-          "text": "Tiago a rendez-vous chez le médecin. Six personnes attendent déjà. Tiago met son casque et joue sur son téléphone. Au bout de vingt minutes, l’assistante appelle : « Tiago Martins ? » Tiago n’entend rien. Elle appelle encore deux fois. Puis elle fait entrer la personne suivante.",
+          "text": "Tiago a rendez-vous chez le médecin. Six personnes attendent déjà. Tiago met son casque et joue sur son téléphone. Au bout de vingt minutes, l’assistante médicale appelle : « Tiago Martins ? » Tiago n’entend rien. Elle appelle encore deux fois. Puis elle fait entrer la personne suivante.",
           "bild": "figur:ben:gelangweilt"
         },
         {
@@ -235,7 +235,7 @@
           ],
           "werte": [
             [
-              "au comptoir boucherie",
+              "au rayon boucherie",
               "",
               ""
             ],
@@ -281,14 +281,14 @@
         {
           "art": "zuordnen",
           "links": [
-            "L’assistante appelle ton nom.",
+            "L’assistante médicale appelle ton nom.",
             "Un numéro s’affiche sur l’écran.",
             "Quelqu’un prononce mal ton nom.",
             "Tu étais aux toilettes un moment."
           ],
           "rechts": [
             "Dire gentiment : « Je crois que c’est moi. Je m’appelle … »",
-            "Demander à l’accueil : « Est-ce qu’on m’a déjà appelé·e ? »",
+            "Demander à l’accueil : « Quelqu’un a-t-il déjà appelé mon nom ? »",
             "Lever la main, dire « Oui, je suis là », y aller.",
             "Comparer avec le numéro sur ton ticket."
           ]
@@ -336,7 +336,7 @@
         ],
         "differenzierung": {
           "leichter": "Commencer par de courtes attentes (2 minutes avec un sablier) et appeler le prénom doucement mais clairement.",
-          "schwerer": "Prendre seul·e un vrai rendez-vous et s’y rendre (coiffeur, bibliothèque, administration)."
+          "schwerer": "Prendre soi-même un vrai rendez-vous et s’y rendre (coiffeur, bibliothèque, administration)."
         },
         "impulse": [
           "Où détestes-tu le plus attendre ?",
@@ -456,7 +456,7 @@
           "art": "wennDann",
           "beispiele": [
             {
-              "wenn": "ich nicht weiß, womit ich anfangen soll,",
+              "wenn": "Wenn ich nicht weiß, womit ich anfangen soll,",
               "dann": "frage ich: „Was mache ich zuerst?“"
             }
           ],
@@ -565,7 +565,7 @@
     },
     "fr": {
       "titel": "Consigne : écouter, demander, commencer",
-      "untertitel": "En stage, la cheffe dit ce qu’il faut faire. Qui écoute, pose une question courte et commence tout de suite fait bonne impression.",
+      "untertitel": "En stage, la responsable dit ce qu’il faut faire. Qui écoute, pose une question courte et commence tout de suite fait bonne impression.",
       "bausteine": [
         {
           "art": "text",
@@ -637,7 +637,7 @@
           "art": "wennDann",
           "beispiele": [
             {
-              "wenn": "je ne sais pas par quoi commencer,",
+              "wenn": "Si je ne sais pas par quoi commencer,",
               "dann": "je demande : « Qu’est-ce que je fais d’abord ? »"
             }
           ],
@@ -724,7 +724,7 @@
           "Exercice 4 (10 min) : décomposer les consignes ; puis donner de petites consignes réelles dans la salle et s’exercer aux quatre étapes.",
           "Tenir l’exercice 5 pendant une semaine et en faire le bilan ensemble."
         ],
-        "hintergrund": "Réagir aux demandes des adultes et participer aux activités sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Chez les jeunes, ces lacunes passent souvent pour du « refus », alors que la consigne n’a pas été comprise ou retenue. Les consignes en plusieurs parties chargent la mémoire de travail ; répéter et demander la soulagent (Diamond, 2013). Pour commencer, les plans « si … alors » qui fixent la première étape à l’avance aident (Gollwitzer, 1999). Le cadre du stage montre à quoi sert l’exercice : faire bonne impression et être pris·e au sérieux.",
+        "hintergrund": "Réagir aux demandes des adultes et participer aux activités sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Chez les jeunes, ces lacunes passent souvent pour du « refus », alors que la consigne n’a pas été comprise ou retenue. Les consignes en plusieurs parties chargent la mémoire de travail ; répéter et demander la soulagent (Diamond, 2013). Pour commencer, les plans « si … alors » qui fixent la première étape à l’avance aident (Gollwitzer, 1999). Le cadre du stage montre à quoi sert l’exercice : faire bonne impression et se faire prendre au sérieux.",
         "quellen": [
           "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
           "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
@@ -925,7 +925,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Rester longtemps assis sans bouger, c’est difficile pour beaucoup de gens. C’est normal. Ça aide de savoir : quand dois-je rester assis ? Combien de temps ? Et comment bouger sans déranger ?"
+          "text": "Rester longtemps assis sans bouger, c’est difficile pour beaucoup de gens. C’est normal. Il est utile de savoir : quand dois-je rester assis ? Combien de temps ? Et comment bouger sans déranger ?"
         },
         {
           "art": "aufgabe",
@@ -943,7 +943,7 @@
             "au repas à la cantine"
           ],
           "optionen": [
-            "assis",
+            "rester en place",
             "bouger",
             "les deux"
           ]
@@ -974,7 +974,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quand est-ce dur de rester assis·e ? Dessine ton agitation pendant une journée d’école."
+          "text": "Quand est-ce difficile de rester en place ? Dessine ton agitation pendant une journée d’école."
         },
         {
           "art": "kurve",
@@ -989,7 +989,7 @@
             "15 h",
             "16 h"
           ],
-          "oben": "très agité·e",
+          "oben": "beaucoup d’agitation",
           "unten": "très calme"
         },
         {
@@ -999,10 +999,10 @@
         {
           "art": "vertrag",
           "titel": "Notre accord",
-          "text": "Quand je n’arrive plus à rester assis·e, je le montre avec ___. Alors, je peux ___. Après ___ minutes, je suis de retour à ma place.",
+          "text": "Quand je n’arrive plus à rester en place, je le montre avec ___. Alors, je peux ___. Après ___ minutes, je suis de retour à ma place.",
           "unterschriften": [
             "Moi",
-            "Enseignant·e"
+            "Enseignant / enseignante"
           ]
         },
         {
@@ -1056,7 +1056,7 @@
           "Préserver la dignité : ne jamais commenter le besoin de bouger devant la classe. On répond au signe convenu en silence.",
           "Observer les progrès : combien de temps la personne reste-t-elle à sa place ? Mesurer une fois par semaine ; adapter ensuite l’accord."
         ],
-        "achtung": "Ne pas interpréter seul·e une agitation forte et durable : envisager un bilan spécialisé avec la direction compétente (responsable) et les parents.",
+        "achtung": "Ne pas interpréter une agitation forte et durable de façon isolée : envisager un bilan spécialisé avec la direction compétente (responsable) et les parents.",
         "material": "Balles anti-stress, minuterie ou sablier"
       }
     }

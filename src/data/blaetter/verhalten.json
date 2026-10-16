@@ -599,7 +599,7 @@
             "Quelqu’un me provoque devant les autres et je riposte.",
             "En classe, un commentaire m’échappe.",
             "Quand je perds à un jeu vidéo ou en sport, je m’emporte.",
-            "Quand je suis fatigué·e ou que j’ai faim, je deviens vite irritable."
+            "Quand j’ai sommeil ou que j’ai faim, je deviens vite irritable."
           ]
         },
         {
@@ -675,7 +675,7 @@
           "Montrer l’exemple : en cas d’agacement, marquer une courte pause visible.",
           "Pas de sermon – des connaissances sur son propre cerveau et de vrais choix fonctionnent mieux."
         ],
-        "achtung": "Si un·e jeune perd souvent le contrôle, menace d’autres personnes ou évoque du cyberharcèlement : ne pas approfondir en groupe, chercher un entretien individuel, impliquer la direction compétente (responsable) ou le SePAS. En cas de signes d’automutilation, agir immédiatement selon la procédure interne et ne pas laisser le ou la jeune seul·e."
+        "achtung": "Si un élève perd souvent le contrôle, menace d’autres personnes ou évoque du cyberharcèlement : ne pas approfondir en groupe, chercher un entretien individuel, impliquer la direction compétente (responsable) ou le SePAS. En cas de signes d’automutilation, agir immédiatement selon la procédure interne et ne pas laisser la personne seule."
       }
     }
   },
@@ -798,7 +798,7 @@
             {
               "figuren": ["figur:noah:froh", "figur:tom:froh"],
               "requisit": "motiv:schildkroete",
-              "text": "À mon tour d’attraper.",
+              "text": "La prochaine fois, c’est moi le chat.",
               "sprecher": 0,
               "untertitel": "5. Sortir avec une solution."
             }
@@ -913,7 +913,7 @@
           "hoehe": 172,
           "karten": [
             { "titel": "Parler doucement", "text": "Je parle doucement.", "bild": "icon:feather" },
-            { "titel": "Mes mains", "text": "Mes mains restent avec moi.", "bild": "figur:amira:ruhig:verschraenkt" },
+            { "titel": "Mains tranquilles", "text": "Mes mains restent avec moi.", "bild": "figur:amira:ruhig:verschraenkt" },
             { "titel": "Écouter", "text": "J’écoute.", "bild": "icon:ear" },
             { "titel": "Chacun son tour", "text": "On fait chacun son tour.", "bild": "figur:lea:froh:geben" },
             { "titel": "Ranger", "text": "Je range.", "bild": "icon:basket" },
@@ -1223,7 +1223,7 @@
           "art": "vertrag",
           "titel": "Notre accord de classe",
           "text": "Nous, la classe ___, avons négocié nos règles ensemble. Nous les respectons et nous nous le rappelons gentiment. Si une règle ne marche pas, nous en parlons au conseil de classe. Nous réexaminons l’accord le ___.",
-          "unterschriften": ["Signature", "Enseignant·e"]
+          "unterschriften": ["Signature", "Enseignant / enseignante"]
         },
         { "art": "aufgabe", "text": "Après deux semaines : notre accord fonctionne-t-il bien ?", "symbole": ["nachdenken"] },
         { "art": "skala", "von": "pas du tout bien", "bis": "très bien", "stufen": 5, "gesichter": true },
@@ -1378,10 +1378,10 @@
         {
           "art": "geschichte",
           "titel": "La dispute des écouteurs",
-          "text": "Deux fois par semaine, la classe a une heure d’étude où chacun travaille en silence. Mila écoute alors de la musique avec ses écouteurs – elle se concentre mieux ainsi. Elias, assis à côté d’elle, entend quand même un léger bourdonnement. Cela le déconcentre. Certains utilisent aussi leurs écouteurs pour regarder des vidéos en cachette. La régente veut donc interdire complètement les écouteurs. La classe porte le sujet au conseil de coopération.",
+          "text": "Deux fois par semaine, la classe a une heure d’étude où chacun travaille en silence. Mila écoute alors de la musique avec ses écouteurs – elle se concentre mieux ainsi. Elias, assis à côté d’elle, entend quand même un léger bourdonnement. Cela le déconcentre. Certains utilisent aussi leurs écouteurs pour regarder des vidéos en cachette. La régente veut donc interdire complètement les écouteurs. La classe porte le sujet au conseil de classe.",
           "bild": "figur:jana:neutral"
         },
-        {"art": "text", "text": "Au conseil de coopération, vous avancez en quatre étapes :"},
+        {"art": "text", "text": "Au conseil de classe, vous avancez en quatre étapes :"},
         {
           "art": "schritte",
           "stil": "kette",
@@ -1443,20 +1443,20 @@
         {
           "art": "vertrag",
           "titel": "Accord",
-          "text": "Nous avons négocié cette règle ensemble au conseil de coopération. Nous la respectons et nous la réexaminerons le ___.",
-          "unterschriften": ["Pour la classe", "Enseignant·e"]
+          "text": "Nous avons négocié cette règle ensemble au conseil de classe. Nous la respectons et nous la réexaminerons le ___.",
+          "unterschriften": ["Pour la classe", "Enseignant / enseignante"]
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes distinguent positions et intérêts, élaborent au conseil de coopération des solutions qui répondent à plusieurs intérêts, évaluent des conséquences selon leur équité et consignent un accord par écrit.",
+        "ziel": "Les jeunes distinguent positions et intérêts, élaborent au conseil de classe des solutions qui répondent à plusieurs intérêts, évaluent des conséquences selon leur équité et consignent un accord par écrit.",
         "ablauf": [
           "Entrée en matière (5 min) : « Quelle règle de l’école trouvez-vous absurde – et pourquoi ? » Recueillir deux ou trois exemples, sans en débattre.",
           "Lire le cas, discuter l’encadré, exercice 1 à deux (10 min). Question : « De quoi Elias a-t-il besoin ? Et la régente ? »",
-          "Exercice 2 sous forme de conseil de coopération (10 min) : récolter des idées sans les juger, puis vérifier laquelle tient compte du plus grand nombre d’intérêts.",
+          "Exercice 2 sous forme de conseil de classe (10 min) : récolter des idées sans les juger, puis vérifier laquelle tient compte du plus grand nombre d’intérêts.",
           "Exercice 3 (10 min) : évaluer les conséquences et discuter des différences : qu’est-ce qui rend une conséquence juste ?",
           "Exercice 4 (10 min) : formuler l’accord, le signer et fixer une date pour le réexaminer."
         ],
-        "hintergrund": "La méthode de Harvard distingue les positions – ce que quelqu’un exige – des intérêts – pourquoi il l’exige. Les négociations qui partent des intérêts aboutissent plus souvent à des solutions viables pour plusieurs parties (Fisher & Ury, 1981). Face aux transgressions, les approches restauratives offrent une alternative à la punition : il s’agit de reconnaître le tort causé et de le réparer ensemble plutôt que de simplement sanctionner. Elles renforcent ainsi la responsabilité et la relation (Wachtel, 2016). Le conseil de coopération réunit les deux : les jeunes négocient leurs conflits dans un cadre réglé et constatent que leur voix compte.",
+        "hintergrund": "La méthode de Harvard distingue les positions – ce que quelqu’un exige – des intérêts – pourquoi il l’exige. Les négociations qui partent des intérêts aboutissent plus souvent à des solutions viables pour plusieurs parties (Fisher & Ury, 1981). Face aux transgressions, les approches restauratives offrent une alternative à la punition : il s’agit de reconnaître le tort causé et de le réparer ensemble plutôt que de simplement sanctionner. Elles renforcent ainsi la responsabilité et la relation (Wachtel, 2016). Le conseil de classe réunit les deux : les jeunes négocient leurs conflits dans un cadre réglé et constatent que leur voix compte.",
         "quellen": [
           "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
           "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices."
@@ -1471,10 +1471,10 @@
           "Comment convaincre quelqu’un sans passer par-dessus lui ?"
         ],
         "tipps": [
-          "Au conseil, répartir des rôles fixes (animation, compte rendu, gardien du temps) – cela soulage l’enseignant·e.",
+          "Au conseil de classe, répartir des rôles fixes (présidence, secrétariat, gestion du temps) – cela soulage l’enseignant ou l’enseignante.",
           "Toutes les règles ne sont pas négociables (sécurité, règlement de l’école). Le dire clairement dès le départ pour éviter une participation de façade."
         ],
-        "achtung": "Si un conflit cache du harcèlement ou une exclusion ciblée, il n’a pas sa place au conseil de coopération : mener des entretiens individuels et impliquer la direction compétente (responsable) ou le SePAS."
+        "achtung": "Si un conflit cache du harcèlement ou une exclusion ciblée, il n’a pas sa place au conseil de classe : mener des entretiens individuels et impliquer la direction compétente (responsable) ou le SePAS."
       }
     }
   },
@@ -1573,7 +1573,7 @@
         { "art": "plan", "ziel": "", "zeilen": ["Jusqu’à la récré", "Après la récré"], "symbol": "stern" },
         {
           "art": "aufgabe",
-          "text": "Qu’obtiens-tu pour tes étoiles ? Faites un accord.",
+          "text": "Qu’obtiens-tu pour tes étoiles ? Mettez-vous d’accord.",
           "hinweis": "Idées : choisir un jeu, choisir la tâche de classe, s’asseoir à côté d’un ami.",
           "symbole": ["sprechen", "schreiben"]
         },
@@ -1725,13 +1725,13 @@
       }
     },
     "fr": {
-      "titel": "Mon attention est-elle là ?",
+      "titel": "Suis-je sur ma tâche ?",
       "untertitel": "Les pensées s’envolent – ça arrive à tout le monde. Celui qui le remarque peut les ramener.",
       "bausteine": [
         {
           "art": "info",
           "symbol": "wissen",
-          "titel": "Comment marche le tableau de traits",
+          "titel": "Comment marche le tableau de pointage",
           "text": "Pendant que tu travailles, un signal retentit de temps en temps. Ce peut être un son doux ou un geste de l’adulte. Alors tu te demandes un instant : suis-je sur ma tâche en ce moment ? Tu fais un trait sous « Oui » ou sous « Non ». Ensuite, tu continues tout de suite à travailler."
         },
         { "art": "aufgabe", "text": "Sur ma tâche ou ailleurs ? Coche.", "symbole": ["ankreuzen"] },
@@ -1749,7 +1749,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Tiens ton tableau de traits pendant une semaine. Fais un trait à chaque signal.",
+          "text": "Tiens ton tableau de pointage pendant une semaine. Fais un trait à chaque signal.",
           "hinweis": "La première ligne est un exemple.",
           "symbole": ["schreiben"]
         },
@@ -1795,12 +1795,12 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les enfants apprennent à vérifier eux-mêmes leur attention lors d’un signal, tiennent un tableau de traits pendant une semaine et en tirent leurs propres stratégies.",
+        "ziel": "Les enfants apprennent à vérifier eux-mêmes leur attention lors d’un signal, tiennent un tableau de pointage pendant une semaine et en tirent leurs propres stratégies.",
         "ablauf": [
           "Entrée en matière (5 min) : « Où vont vos pensées quand vous travaillez ? » Insister : se laisser distraire est normal – ce qui compte, c’est de les ramener.",
           "Discuter l’exercice 1 (5 min), surtout les cas limites : relire fait partie du travail, jouer avec le stylo non.",
           "Convenir d’un signal et l’essayer (10 min), par exemple un gong doux toutes les cinq à dix minutes en travail individuel. Après le signal : vérifier brièvement, faire un trait, continuer à travailler.",
-          "Tenir le tableau de traits pendant une semaine, dans une ou deux phases de travail par jour.",
+          "Tenir le tableau de pointage pendant une semaine, dans une ou deux phases de travail par jour.",
           "En fin de semaine, traiter les exercices 3 et 4 et en parler en entretien individuel : « Qu’est-ce qui t’a aidé ? »"
         ],
         "hintergrund": "L’auto-observation est un élément central de l’autogestion : celui qui observe régulièrement un comportement et le note le modifie souvent déjà dans le sens voulu (Kanfer, Reinecker & Schmelzer, 2012). Les programmes thérapeutiques pour enfants ayant des problèmes d’attention utilisent des cartes-signaux et de simples fiches d’observation dont les résultats sont d’abord comparés à l’évaluation de l’adulte (Döpfner, Schürmann & Frölich, 2019). Une attitude sans jugement est importante : chaque trait Non est une information, pas un échec.",
@@ -1821,7 +1821,7 @@
           "Garder le signal doux et neutre : c’est un rappel, pas un reproche.",
           "Féliciter expressément le comptage honnête – des traits Oui récompensés mènent facilement à des listes embellies."
         ],
-        "achtung": "Le tableau de traits ne remplace pas un bilan. Si un enfant arrive à peine à se concentrer longtemps et dans de nombreuses situations : parler avec les parents et associer la direction compétente (responsable).",
+        "achtung": "Le tableau de pointage ne remplace pas un bilan. Si un enfant arrive à peine à se concentrer longtemps et dans de nombreuses situations : parler avec les parents et associer la direction compétente (responsable).",
         "material": "Bol tibétain, gong ou minuteur"
       }
     }
@@ -1949,7 +1949,7 @@
         {
           "art": "aufgabe",
           "text": "Choisis un comportement que tu vas observer pendant une semaine.",
-          "hinweis": "Décris-le de façon qu’une caméra puisse le filmer : pas « Je suis irrespectueux·se », mais « Je lance des remarques pendant le cours »."
+          "hinweis": "Décris-le de façon qu’une caméra puisse le filmer : pas « Je manque de respect », mais « Je lance des remarques pendant le cours »."
         },
         {"art": "satzanfaenge", "items": ["J’observe ceci : …"]},
         {"art": "aufgabe", "text": "Observe pendant une semaine. Note à chaque fois : qu’y avait-il avant, qu’as-tu fait, que s’est-il passé après ?"},
@@ -1996,7 +1996,7 @@
           "Entrée en matière (5 min) : « Quelle habitude aimeriez-vous perdre – et pourquoi est-ce si dur ? » Lire l’encadré.",
           "Exercices 1 et 2 (10 min) : faire le bilan, puis choisir un comportement. Pour le préciser : « À quoi une caméra le reconnaîtrait-elle ? »",
           "Semaine d’observation : remplir le tableau chaque jour, y compris les jours sans le comportement.",
-          "Une semaine plus tard (15 min) : exercice 4 seul·e, puis échange volontaire à deux : quels schémas apparaissent ?",
+          "Une semaine plus tard (15 min) : exercice 4 en travail individuel, puis échange volontaire à deux : quels schémas apparaissent ?",
           "Exercice 5 (10 min) : plan « si … alors » et récompense ; en reparler deux semaines plus tard."
         ],
         "hintergrund": "Le modèle de l’autogestion décrit le changement en trois étapes : s’observer, comparer son comportement à un critère personnel et se renforcer soi-même pour ses progrès (Kanfer, Reinecker & Schmelzer, 2012). L’analyse déclencheur – comportement – conséquence montre pourquoi un comportement se maintient : il est souvent récompensé à court terme, alors que ses inconvénients n’apparaissent que plus tard. Les exceptions (« Quand le problème n’apparaît-il pas ? ») donnent des pistes de solution (de Shazer, 1985). Un plan « si … alors » aide à mobiliser le nouveau comportement au bon moment (Gollwitzer, 1999).",
@@ -2006,11 +2006,11 @@
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "differenzierung": {
-          "leichter": "Trois jours d’observation et une seule question d’analyse ; choisir le comportement avec l’enseignant·e.",
+          "leichter": "Trois jours d’observation et une seule question d’analyse ; choisir le comportement avec l’adulte.",
           "schwerer": "Noter aussi les pensées au moment du déclencheur et observer une deuxième semaine avec le nouveau plan."
         },
         "impulse": [
-          "Qu’est-ce qui t’a surpris·e dans l’analyse ?",
+          "Qu’est-ce qui a été surprenant dans l’analyse ?",
           "Quelle récompense à court terme entretient ce comportement ?",
           "Qu’est-ce qui changeait les jours où ça allait mieux ?"
         ],
@@ -2018,7 +2018,7 @@
           "Montrer un exemple personnel (trop de téléphone le soir, par exemple) : cela enlève la honte.",
           "Ne pas ramasser ni noter les tableaux : ils appartiennent aux jeunes."
         ],
-        "achtung": "En cas d’automutilation, de dépendance ou de forte souffrance : entretien individuel, ne pas laisser le ou la jeune seul·e, agir tout de suite selon la procédure interne en cas de danger et impliquer la direction compétente (responsable) ou le SePAS."
+        "achtung": "En cas d’automutilation, de dépendance ou de forte souffrance : entretien individuel, ne pas laisser la personne seule, agir tout de suite selon la procédure interne en cas de danger et impliquer la direction compétente (responsable) ou le SePAS."
       }
     }
   }

@@ -34,6 +34,8 @@
           "spalten": 2,
           "frei": 2
         },
+        {"art": "aufgabe", "text": "Schreibe deinen Plan: Was tust du, wenn dein Vulkan brodelt?", "hinweis": "Nimm eine Idee von oben oder eine eigene.", "symbole": ["schreiben"]},
+        {"art": "wennDann", "zeilen": 1, "beispiele": [{"wenn": "Wenn mein Gesicht heiß wird und ich Fäuste mache,", "dann": "sage ich „Stopp, ich brauche eine Pause“ und gehe kurz raus."}]},
         { "art": "rueckblick" }
       ],
       "lehrer": {
@@ -43,7 +45,7 @@
           "Aufgabe 1 gemeinsam besprechen. Die Körpersignale an der Tafel sammeln und ergänzen (Herzklopfen, Zähne zusammenbeißen, laute Stimme).",
           "Aufgabe 2 in Einzelarbeit: Jedes Kind füllt seinen Vulkan von unten nach oben aus. Wer nicht schreiben mag, darf zeichnen.",
           "Aufgabe 3: Strategien auswählen und im Sitzkreis kurz vorstellen. Eine Strategie gleich gemeinsam ausprobieren (z. B. Bauchatmung).",
-          "Abschluss: Den Vulkan als persönlichen Plan im Heft oder am Platz aufbewahren und in der nächsten Woche nachfragen, was geklappt hat."
+          "Aufgabe 4: Den Wenn-dann-Plan schreiben und zu zweit vorlesen. Abschluss: Den Vulkan als persönlichen Plan im Heft oder am Platz aufbewahren und in der nächsten Woche nachfragen, was geklappt hat."
         ],
         "hintergrund": "Wut ist ein normales, oft nützliches Gefühl: Sie zeigt an, dass ein Ziel blockiert oder eine Grenze verletzt wurde. Schwierig wird es, wenn die Erregung so hoch ist, dass Denken und Planen kaum noch möglich sind. Nach dem Prozessmodell der Emotionsregulation (Gross, 1998) lässt sich früh im Ablauf am leichtesten eingreifen: Situation erkennen, Aufmerksamkeit umlenken, Erregung senken. Trainingsprogramme für impulsive und aggressive Kinder setzen deshalb auf das Wahrnehmen körperlicher Frühwarnzeichen und auf wenige, gut eingeübte Handlungsalternativen (Petermann & Petermann, 2012). Das Bild des Vulkans macht diesen Ablauf für Kinder greifbar.",
         "quellen": [
@@ -74,7 +76,7 @@
         {
           "art": "geschichte",
           "titel": "Juste avant l’éruption",
-          "text": "Luca a perdu au foot à la récréation. En classe, Ben rit d’un but que Luca a raté. Luca sent son visage devenir chaud. Ses mains se serrent en poings. Quand Ben rit encore une fois, Luca jette sa trousse par terre.",
+          "text": "Luca a perdu au foot à la récréation. En classe, Ben rit d’un but que Luca a raté. Luca sent son visage chauffer. Ses mains se serrent en poings. Quand Ben rit encore une fois, Luca jette sa trousse par terre.",
           "bild": "figur:noah:wuetend"
         },
         { "art": "aufgabe", "text": "À quoi aurais-tu pu voir que la colère de Luca monte ? Coche.", "symbole": ["lesen", "ankreuzen"] },
@@ -108,6 +110,8 @@
           "spalten": 2,
           "frei": 2
         },
+        {"art": "aufgabe", "text": "Écris ton plan : que fais-tu quand ton volcan bout ?", "hinweis": "Prends une idée ci-dessus ou une idée à toi.", "symbole": ["schreiben"]},
+        {"art": "wennDann", "zeilen": 1, "beispiele": [{"wenn": "Si mon visage devient chaud et que je serre les poings,", "dann": "je dis « Stop, j’ai besoin d’une pause » et je sors un moment."}]},
         { "art": "rueckblick" }
       ],
       "lehrer": {
@@ -117,7 +121,7 @@
           "Discuter ensemble de l’exercice 1. Recueillir au tableau les signaux du corps et les compléter (cœur qui bat, mâchoires serrées, voix forte).",
           "Exercice 2 en individuel : chaque enfant remplit son volcan de bas en haut. Celui ou celle qui n’aime pas écrire peut dessiner.",
           "Exercice 3 : choisir des stratégies et les présenter brièvement en cercle. En essayer une tout de suite ensemble (p. ex. la respiration abdominale).",
-          "Conclusion : garder le volcan comme plan personnel dans le cahier ou sur la table, et demander la semaine suivante ce qui a marché."
+          "Exercice 4 : écrire le plan « si … alors » et le lire à deux. Conclusion : garder le volcan comme plan personnel dans le cahier ou sur la table, et demander la semaine suivante ce qui a marché."
         ],
         "hintergrund": "La colère est une émotion normale, souvent utile : elle signale qu’un but est bloqué ou qu’une limite a été franchie. Cela devient difficile quand l’excitation est si forte que penser et planifier deviennent presque impossibles. Selon le modèle des processus de la régulation émotionnelle (Gross, 1998), c’est tôt dans le déroulement qu’il est le plus facile d’intervenir : reconnaître la situation, déplacer l’attention, faire baisser l’excitation. Les programmes d’entraînement pour enfants impulsifs et agressifs misent donc sur la perception des premiers signes physiques et sur quelques alternatives d’action bien exercées (Petermann & Petermann, 2012). L’image du volcan rend ce déroulement concret pour les enfants.",
         "quellen": [
@@ -308,13 +312,13 @@
       "titel": "Les visages des émotions",
       "anleitung": "Regarder ensemble les visages : « Montre-moi qui est triste. » Ensuite, l’enfant nomme lui-même les émotions et les imite. Copier les cartes sur du papier épais et jouer au memory.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Montre le visage. Fais la même tête.", "symbole": ["zeigen", "sprechen"] },
-        { "art": "gefuehle", "gefuehle": ["froh", "traurig", "wuetend", "aengstlich"], "spalten": 4, "woerter": ["content", "triste", "en colère", "j’ai peur"] },
-        { "art": "aufgabe", "text": "Quand es-tu content ? Quand es-tu triste ? Dessine.", "symbole": ["malen"] },
+        { "art": "aufgabe", "text": "Montre le visage. Fais pareil.", "symbole": ["zeigen", "sprechen"] },
+        { "art": "gefuehle", "gefuehle": ["froh", "traurig", "wuetend", "aengstlich"], "spalten": 4, "woerter": ["la joie", "la tristesse", "la colère", "la peur"] },
+        { "art": "aufgabe", "text": "Quand ressens-tu de la joie ? Et de la tristesse ? Dessine.", "symbole": ["malen"] },
         {
           "art": "spalten",
-          "links": [{ "art": "feld", "label": "Là, je suis content.", "hoehe": 2.75, "zeichnen": true }],
-          "rechts": [{ "art": "feld", "label": "Là, je suis triste.", "hoehe": 2.75, "zeichnen": true }]
+          "links": [{ "art": "feld", "label": "Là, je ressens de la joie.", "hoehe": 2.75, "zeichnen": true }],
+          "rechts": [{ "art": "feld", "label": "Là, je ressens de la tristesse.", "hoehe": 2.75, "zeichnen": true }]
         },
         { "art": "aufgabe", "text": "Découpe les cartes. Joue au memory.", "symbole": ["schneiden"] },
         {
@@ -322,21 +326,21 @@
           "spalten": 4,
           "hoehe": 108,
           "karten": [
-            { "bild": "gesicht:froh", "titel": "content" },
-            { "bild": "gesicht:traurig", "titel": "triste" },
-            { "bild": "gesicht:wuetend", "titel": "en colère" },
-            { "bild": "gesicht:aengstlich", "titel": "j’ai peur" },
-            { "bild": "gesicht:wuetend", "titel": "en colère" },
-            { "bild": "gesicht:froh", "titel": "content" },
-            { "bild": "gesicht:aengstlich", "titel": "j’ai peur" },
-            { "bild": "gesicht:traurig", "titel": "triste" }
+            { "bild": "gesicht:froh", "titel": "la joie" },
+            { "bild": "gesicht:traurig", "titel": "la tristesse" },
+            { "bild": "gesicht:wuetend", "titel": "la colère" },
+            { "bild": "gesicht:aengstlich", "titel": "la peur" },
+            { "bild": "gesicht:wuetend", "titel": "la colère" },
+            { "bild": "gesicht:froh", "titel": "la joie" },
+            { "bild": "gesicht:aengstlich", "titel": "la peur" },
+            { "bild": "gesicht:traurig", "titel": "la tristesse" }
           ]
         }
       ],
       "lehrer": {
         "ziel": "Les enfants reconnaissent la joie, la tristesse, la colère et la peur aux yeux, aux sourcils et à la bouche. Ils montrent ces émotions quand on leur demande, les nomment et les relient à leurs propres expériences.",
         "ablauf": [
-          "Au cercle (5 min) : l’adulte fait un visage content, triste, en colère, apeuré. Demander : « Comment je me sens ? À quoi le vois-tu ? »",
+          "Au cercle (5 min) : l’adulte fait un visage joyeux, triste, en colère, apeuré. Demander : « Comment je me sens ? À quoi le vois-tu ? »",
           "Tâche 1 : faire montrer (« Montre-moi : qui est en colère ? »), puis nommer. Repérer les détails : larmes, dents serrées, yeux grands ouverts.",
           "Imiter tous les visages, de préférence devant un miroir à main.",
           "Tâche 2 : chaque enfant dessine une situation ; écrire ses mots à côté du dessin.",
@@ -348,7 +352,7 @@
           "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
         ],
         "differenzierung": {
-          "leichter": "Commencer avec deux émotions (content, triste). Memory à découvert : l’enfant cherche les paires.",
+          "leichter": "Commencer avec deux émotions (joie, tristesse). Memory à découvert : l’enfant cherche les paires.",
           "schwerer": "Raconter pour chaque paire : « J’étais en colère quand … » Ajouter d’autres émotions (surpris, fatigué)."
         },
         "impulse": [
@@ -556,7 +560,7 @@
           "art": "tabelle",
           "spalten": ["Was ist passiert?", "Gefühlswort", "Stärke (0–10)"],
           "breiten": [3, 1.4, 1.1],
-          "beispiel": ["In der Pause wurde ich beim Fußball als Letzter gewählt.", "enttäuscht", "6"],
+          "beispiel": ["Beim Fußball in der Pause wurde ich zuletzt gewählt.", "enttäuscht", "6"],
           "zeilen": 3
         },
         {
@@ -630,12 +634,12 @@
         {
           "art": "wortspeicher",
           "titel": "Boîte à mots",
-          "items": ["paniqué·e", "content·e", "triste", "pas rassuré·e", "fou/folle de joie", "déçu·e", "effrayé·e", "désespéré·e", "joyeux·se"]
+          "items": ["la panique", "le contentement", "la tristesse", "l’inquiétude", "l’euphorie", "la déception", "la peur", "le désespoir", "la joie"]
         },
         {
           "art": "tabelle",
           "spalten": ["Famille d’émotions", "un peu", "moyen", "très fort"],
-          "beispiel": ["Colère", "agacé·e", "fâché·e", "furieux·se"],
+          "beispiel": ["Colère", "l’agacement", "la colère", "la rage"],
           "zeilen": 3
         },
         {
@@ -648,7 +652,7 @@
           "art": "tabelle",
           "spalten": ["Que s’est-il passé ?", "Mot d’émotion", "Force (0–10)"],
           "breiten": [3, 1.4, 1.1],
-          "beispiel": ["À la récréation, on m’a choisi en dernier pour le foot.", "déçu·e", "6"],
+          "beispiel": ["À la récréation, j’ai attendu longtemps qu’on me choisisse pour le foot.", "la déception", "6"],
           "zeilen": 3
         },
         {
@@ -669,12 +673,12 @@
         { "art": "aufgabe", "text": "Dis-le précisément. Complète les phrases avec un mot d’émotion qui convient.", "symbole": ["schreiben"] },
         {
           "art": "satzanfaenge",
-          "items": ["Quand quelqu’un se moque de moi, je suis …", "Avant un contrôle, je suis …", "Quand j’ai réussi quelque chose de difficile, je suis …"]
+          "items": ["Quand quelqu’un se moque de moi, je ressens …", "Avant un contrôle, je ressens …", "Quand j’ai réussi quelque chose de difficile, je ressens …"]
         },
         {
           "art": "info",
           "symbol": "merke",
-          "text": "Les émotions ont plusieurs noms et des forces différentes. Souvent, deux émotions sont là en même temps : avant la sortie scolaire, on est peut-être excité et content."
+          "text": "Les émotions ont plusieurs noms et des forces différentes. Souvent, deux émotions sont là en même temps : avant la sortie scolaire, on ressent peut-être de l’excitation et de la joie."
         },
         { "art": "rueckblick" }
       ],
@@ -694,7 +698,7 @@
         ],
         "differenzierung": {
           "leichter": "Ne travailler que les familles de la colère et de la joie ; proposer les mots sous forme de petites cartes à poser.",
-          "schwerer": "Compléter chaque famille par un mot (p. ex. exaspéré, nerveux, abattu, soulagé) et justifier le classement."
+          "schwerer": "Compléter chaque famille par un mot (p. ex. l’exaspération, la nervosité, l’abattement, le soulagement) et justifier le classement."
         },
         "impulse": [
           "Quelle émotion connais-tu dans les trois forces ?",
@@ -857,7 +861,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Classe les mots dans les quatre zones. Ajoute un mot à toi dans chaque zone.",
+          "text": "Classe les mots dans les quatre zones. Ajoute dans chaque zone un mot de ton choix.",
           "hinweis": "Le classement n’est pas toujours évident. Ce qui compte, c’est ce que tu ressens toi-même."
         },
         {
@@ -1148,7 +1152,7 @@
           "Gottman, J. (1997). Raising an Emotionally Intelligent Child. New York: Simon & Schuster."
         ],
         "differenzierung": {
-          "leichter": "Nur Aufgabe 1 und 3: Das Kind zeigt auf Gesicht und Bild, die Lehrperson schreibt den Grund auf.",
+          "leichter": "Aufgabe 2 mündlich: Das Kind zeigt auf Gesicht (Aufgabe 1) und Bild (Aufgabe 3) und erzählt den Grund; die Lehrperson schreibt ihn auf.",
           "schwerer": "Ein genaues Gefühlswort ergänzen (z. B. enttäuscht, aufgeregt) und aufschreiben, wer helfen kann."
         },
         "impulse": ["Was hat dir heute gutgetan?", "Was könnte dein Gesicht auf der Skala nach rechts bringen?", "Wem kannst du sagen, was du brauchst?"],
@@ -1161,12 +1165,12 @@
       }
     },
     "fr": {
-      "titel": "Comment je vais aujourd’hui ?",
-      "untertitel": "Les émotions changent chaque jour. Aujourd’hui, tu regardes bien.",
+      "titel": "Comment ça va aujourd’hui ?",
+      "untertitel": "Les émotions changent chaque jour. Aujourd’hui, tu prends le temps de regarder.",
       "bausteine": [
         { "art": "aufgabe", "text": "Comment vas-tu en ce moment ? Entoure un visage.", "symbole": ["einkreisen"] },
         { "art": "skala", "von": "pas bien du tout", "bis": "très bien", "gesichter": true },
-        { "art": "aufgabe", "text": "Pourquoi vas-tu comme ça ? Dessine ou écris.", "symbole": ["malen", "schreiben"] },
+        { "art": "aufgabe", "text": "Pourquoi te sens-tu comme ça ? Dessine ou écris.", "symbole": ["malen", "schreiben"] },
         { "art": "feld", "label": "Je me sens comme ça, parce que …", "hoehe": 4.5, "zeichnen": true },
         {
           "art": "aufgabe",
@@ -1205,7 +1209,7 @@
           "Gottman, J. (1997). Raising an Emotionally Intelligent Child. New York: Simon & Schuster."
         ],
         "differenzierung": {
-          "leichter": "Seulement les exercices 1 et 3 : l’enfant montre le visage et l’image, l’adulte note la raison.",
+          "leichter": "Exercice 2 à l’oral : l’enfant montre le visage (exercice 1) et l’image (exercice 3) et raconte la raison ; l’adulte la note.",
           "schwerer": "Ajouter un mot d’émotion précis (p. ex. déçu, excité) et noter qui peut aider."
         },
         "impulse": [
@@ -1334,7 +1338,7 @@
         {
           "art": "wortspeicher",
           "titel": "Mots d’émotions",
-          "items": ["joyeux·se", "fier·ère", "calme", "soulagé·e", "excité·e", "agacé·e", "en colère", "triste", "déçu·e", "effrayé·e", "fatigué·e", "ennuyé·e"]
+          "items": ["la joie", "la fierté", "le calme", "le soulagement", "l’excitation", "l’agacement", "la colère", "la tristesse", "la déception", "la peur", "la fatigue", "l’ennui"]
         },
         {
           "art": "aufgabe",
@@ -1344,9 +1348,9 @@
         },
         {
           "art": "tabelle",
-          "spalten": ["Jour", "Que s’est-il passé ?", "Comment me suis-je senti·e ?", "Qu’ai-je fait ?"],
+          "spalten": ["Jour", "Que s’est-il passé ?", "Qu’est-ce que j’ai ressenti ?", "Qu’ai-je fait ?"],
           "breiten": [0.6, 2.5, 1.6, 2.1],
-          "beispiel": ["Lu", "À la récréation, je n’ai pas pu jouer avec les autres.", "triste, puis en colère", "Je l’ai raconté à la maîtresse."],
+          "beispiel": ["Lu", "À la récréation, je n’ai pas pu jouer avec les autres.", "tristesse, puis colère", "Je l’ai raconté à la maîtresse."],
           "zeilen": 6
         },
         {
@@ -1612,7 +1616,7 @@
         },
         "impulse": ["Qu’est-ce qui t’a surpris dans tes données ?", "Qui ou quoi pourrait t’aider dans ton expérience ?"],
         "tipps": ["Faire le bilan sans jugement : on cherche des schémas, pas de « bonnes » valeurs.", "Participer soi-même et partager ses observations."],
-        "achtung": "Si l’humeur reste longtemps très basse ou si un·e jeune se replie fortement : chercher le dialogue et impliquer la direction compétente (responsable) ou le SePAS. En cas de signes d’automutilation, agir immédiatement selon la procédure interne.",
+        "achtung": "Si l’humeur reste longtemps très basse ou si le repli est marqué : chercher le dialogue et impliquer la direction compétente (responsable) ou le SePAS. En cas de signes d’automutilation, agir immédiatement selon la procédure interne.",
         "material": "En option : tableur"
       }
     }
@@ -1688,7 +1692,7 @@
           "bilder": [
             { "bild": "icon:pillow", "text": "serrer un coussin" },
             { "bild": "icon:shoe", "text": "taper des pieds" },
-            { "bild": "motiv:ballon", "text": "respirer fort" },
+            { "bild": "motiv:ballon", "text": "respirer profondément" },
             { "bild": "motiv:stopp", "text": "dire « Stop »" },
             { "bild": "icon:armchair", "text": "coin calme" },
             { "bild": "figur:lehrerin:ruhig", "text": "appeler un adulte" }
@@ -2055,9 +2059,9 @@
         },
         {
           "art": "skala",
-          "frage": "À quel point es-tu sûr·e d’utiliser STOP au moins une fois la semaine prochaine ?",
-          "von": "pas du tout sûr·e",
-          "bis": "tout à fait sûr·e",
+          "frage": "Quelle est la probabilité que tu utilises STOP au moins une fois la semaine prochaine ?",
+          "von": "pas du tout probable",
+          "bis": "très probable",
           "stufen": 11
         }
       ],
@@ -2070,7 +2074,7 @@
           "Exercice 3 : lire STOP et le jouer dans une courte scène (p. ex. « Quelqu’un se moque de ton exposé »). Discuter l’encadré sur Diogo.",
           "Exercice 4 : vérifier les plans à deux (le signal est-il précis ? l’action réalisable ?). Une semaine plus tard, demander où STOP a fonctionné."
         ],
-        "hintergrund": "La colère réagit à un obstacle, à une injustice ou à une blessure ; elle recouvre souvent des émotions plus vulnérables comme la déception, la honte ou la peur. L’image de l’iceberg aide à percevoir cette couche. Selon le modèle processuel de la régulation émotionnelle, il est plus facile d’intervenir tôt (Gross, 1998) – d’où l’importance des signaux d’alerte. La compétence STOP vient de la thérapie comportementale dialectique, où elle fait partie des outils pour les moments de crise ; Rathus et Miller (2015) l’ont adaptée aux adolescent·e·s. Les plans « si … alors » relient un signal à une action préparée et augmentent ainsi les chances qu’elle soit mobilisée le moment venu (Gollwitzer, 1999).",
+        "hintergrund": "La colère réagit à un obstacle, à une injustice ou à une blessure ; elle recouvre souvent des émotions plus vulnérables comme la déception, la honte ou la peur. L’image de l’iceberg aide à percevoir cette couche. Selon le modèle processuel de la régulation émotionnelle, il est plus facile d’intervenir tôt (Gross, 1998) – d’où l’importance des signaux d’alerte. La compétence STOP vient de la thérapie comportementale dialectique, où elle fait partie des outils pour les moments de crise ; Rathus et Miller (2015) l’ont adaptée aux adolescents. Les plans « si … alors » relient un signal à une action préparée et augmentent ainsi les chances qu’elle soit mobilisée le moment venu (Gollwitzer, 1999).",
         "quellen": [
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
@@ -2133,7 +2137,7 @@
             {"bild": "icon:stairs-up", "text": "klein anfangen"}
           ]
         },
-        {"art": "aufgabe", "text": "Warst du mutig? Male einen Stern an.", "symbole": ["malen"]},
+        {"art": "aufgabe", "text": "Mein Ziel diese Woche: Warst du mutig? Male einen Stern an.", "symbole": ["malen"]},
         {"art": "plan", "ziel": "", "zeilen": ["Ich war mutig."], "symbol": "stern"}
       ],
       "lehrer": {
@@ -2164,7 +2168,7 @@
       }
     },
     "fr": {
-      "titel": "Je peux avoir du courage",
+      "titel": "Je peux oser",
       "anleitung": "Regarder ensemble les images : pour quoi faut-il du courage ? L’enfant entoure ce qui est difficile pour lui et choisit ce qui l’aide. Puis fixer ensemble un petit pas de courage pour la semaine.",
       "bausteine": [
         { "art": "aufgabe", "text": "Pour quoi as-tu besoin de courage ? Entoure.", "symbole": ["einkreisen"] },
@@ -2185,13 +2189,13 @@
           "modus": "einkreisen",
           "spalten": 4,
           "bilder": [
-            { "bild": "motiv:ballon", "text": "respirer fort" },
+            { "bild": "motiv:ballon", "text": "respirer profondément" },
             { "bild": "icon:heart-handshake", "text": "tenir une main" },
             { "bild": "icon:message-circle", "text": "« J’y arrive. »" },
             { "bild": "icon:stairs-up", "text": "commencer petit" }
           ]
         },
-        { "art": "aufgabe", "text": "As-tu eu du courage ? Colorie une étoile.", "symbole": ["malen"] },
+        { "art": "aufgabe", "text": "Mon objectif cette semaine : as-tu osé ? Colorie une étoile.", "symbole": ["malen"] },
         { "art": "plan", "ziel": "", "zeilen": ["J’ai osé."], "symbol": "stern" }
       ],
       "lehrer": {
@@ -2255,8 +2259,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Was könnte Emma zu sich sagen? Kreuze die Mut-Sätze an, die dir helfen.",
-          "hinweis": "Unten kannst du einen eigenen Mut-Satz schreiben.",
+          "text": "Welche Mut-Sätze helfen dir? Kreuze an.",
+          "hinweis": "Emma kann sie auch brauchen. Unten ist Platz für deinen eigenen Mut-Satz.",
           "symbole": ["lesen", "ankreuzen"]
         },
         {
@@ -2310,7 +2314,7 @@
         {
           "art": "geschichte",
           "titel": "Emma et la poésie",
-          "text": "Demain, Emma doit réciter une poésie devant la classe. Dès le repas du soir, son ventre picote. Au lit, son cœur bat très vite. Elle pense : « Tout le monde va sûrement se moquer de moi. »",
+          "text": "Demain, Emma doit réciter une poésie devant la classe. Dès le repas du soir, son ventre se noue. Au lit, son cœur bat très vite. Elle pense : « Tout le monde va sûrement se moquer de moi. »",
           "bild": "figur:mia:aengstlich"
         },
         { "art": "aufgabe", "text": "Où sens-tu la peur dans ton corps ? Coche.", "symbole": ["ankreuzen"] },
@@ -2321,8 +2325,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Que pourrait se dire Emma ? Coche les phrases courage qui t’aident.",
-          "hinweis": "En bas, tu peux écrire ta propre phrase courage.",
+          "text": "Quelles phrases de courage t’aident ? Coche.",
+          "hinweis": "Emma peut en avoir besoin aussi. En bas, tu peux écrire ta propre phrase de courage.",
           "symbole": ["lesen", "ankreuzen"]
         },
         {
@@ -2343,30 +2347,30 @@
         { "art": "rueckblick" }
       ],
       "lehrer": {
-        "ziel": "Les enfants reconnaissent la peur à des signaux du corps, découvrent des phrases courage pour s’encourager et nomment des personnes qui les aident.",
+        "ziel": "Les enfants reconnaissent la peur à des signaux du corps, découvrent des phrases de courage pour s’encourager et nomment des personnes qui les aident.",
         "ablauf": [
           "Entrée en matière (5 min) : lire l’histoire. Questions : « Comment se sent Emma ? À quoi le remarque-t-elle ? »",
           "Clarifier : la peur est une alarme dans le corps. Elle veut protéger, mais elle est parfois trop forte – comme un détecteur de fumée qui sonne déjà quand on fait griller du pain.",
           "Exercice 1 : cocher les signaux du corps ; qui le souhaite montre sur son propre corps où ça picote ou ça serre.",
-          "Exercice 2 : lire les phrases courage ensemble, d’abord à voix haute, puis à voix basse. Chaque enfant écrit sa phrase préférée sur une carte pour la trousse.",
+          "Exercice 2 : lire les phrases de courage ensemble, d’abord à voix haute, puis à voix basse. Chaque enfant écrit sa phrase préférée sur une carte pour la trousse.",
           "Exercice 3 : noter les personnes qui aident. Conclusion : « Que pourrait faire Emma demain matin ? »"
         ],
-        "hintergrund": "La peur est un système de protection : cœur qui bat, respiration rapide et muscles tendus préparent le corps au danger. Chez les enfants anxieux, cette alarme se déclenche aussi quand il n’y a pas de danger réel. Les programmes pour enfants anxieux commencent donc par reconnaître les signaux du corps et les nommer comme de la peur (Kendall & Hedtke, 2006). Un deuxième élément est le dialogue intérieur utile : les enfants apprennent à se guider et à s’encourager avec de courtes phrases. Le principe de l’autoinstruction remonte à Meichenbaum et Goodman (1971). Les phrases courage agissent le mieux quand elles sont courtes, réalistes et déjà souvent exercées. Savoir qui peut aider donne en plus de la sécurité.",
+        "hintergrund": "La peur est un système de protection : cœur qui bat, respiration rapide et muscles tendus préparent le corps au danger. Chez les enfants anxieux, cette alarme se déclenche aussi quand il n’y a pas de danger réel. Les programmes pour enfants anxieux commencent donc par reconnaître les signaux du corps et les nommer comme de la peur (Kendall & Hedtke, 2006). Un deuxième élément est le dialogue intérieur utile : les enfants apprennent à se guider et à s’encourager avec de courtes phrases. Le principe de l’autoinstruction remonte à Meichenbaum et Goodman (1971). Les phrases de courage agissent le mieux quand elles sont courtes, réalistes et déjà souvent exercées. Savoir qui peut aider donne en plus de la sécurité.",
         "quellen": [
           "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
           "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126."
         ],
         "differenzierung": {
           "leichter": "Exercices 1 et 2 à l’oral : l’adulte lit, l’enfant montre ses phrases.",
-          "schwerer": "Inventer sa propre phrase courage pour une situation précise, p. ex. pour le cours de natation."
+          "schwerer": "Inventer sa propre phrase de courage pour une situation précise, p. ex. pour le cours de natation."
         },
         "impulse": ["Quand as-tu eu peur – et finalement ce n’était pas si terrible ?", "Que te dis-tu quand tu as peur ?", "Qui remarque quand tu as peur ?"],
         "tipps": [
           "Ne pas minimiser la peur (« Tu n’as pas à avoir peur »), mais la reconnaître : « C’est stressant pour toi. Tu peux y arriver quand même. »",
-          "Écrire la phrase courage préférée sur une petite carte que l’enfant garde sur lui."
+          "Écrire la phrase de courage préférée sur une petite carte que l’enfant garde sur lui."
         ],
         "achtung": "Si les peurs sont très fortes, durent longtemps ou rendent difficile la fréquentation de l’école (mal au ventre chaque matin, pleurs, refus) : parler avec les parents et informer la direction compétente (responsable).",
-        "material": "Crayons ; en option, de petites cartes pour les phrases courage"
+        "material": "Crayons ; en option, de petites cartes pour les phrases de courage"
       }
     }
   },
@@ -2485,7 +2489,7 @@
           "frei": 2,
           "items": [
             "parler devant la classe",
-            "dormir seul·e",
+            "dormir sans personne près de moi",
             "les chiens ou d’autres animaux",
             "aborder de nouveaux enfants",
             "être dans le noir",
@@ -2520,7 +2524,7 @@
         },
         {
           "art": "satzanfaenge",
-          "items": ["Ma phrase courage : …", "Après l’échelon 3, je me récompense avec …", "Quand j’arrive en haut, je fête ça avec …"]
+          "items": ["Ma phrase de courage : …", "Après l’échelon 3, je me récompense avec …", "Quand j’arrive en haut, je fête ça avec …"]
         },
         { "art": "rueckblick" }
       ],
@@ -2530,17 +2534,17 @@
           "Entrée en matière (10 min) : lire l’histoire de Tiago. « Pourquoi le détour n’aide-t-il pas Tiago ? Pourquoi commence-t-il par des photos ? »",
           "Exercices 1 et 2 accompagnés : ordonner les échelons ensemble, faire estimer la peur. Le premier échelon doit être bien faisable (peur d’environ 2 à 3).",
           "Discuter l’encadré et montrer une vague de la main : la peur monte, atteint un sommet, redescend.",
-          "Exercices 3 et 4 : fixer plan d’exercice, phrase courage et récompense. Impliquer les parents si l’on s’exerce à la maison.",
+          "Exercices 3 et 4 : fixer plan d’exercice, phrase de courage et récompense. Impliquer les parents si l’on s’exerce à la maison.",
           "Chaque semaine : « À quel échelon es-tu ? Quelle est la peur maintenant ? » Reconnaître chaque progrès."
         ],
-        "hintergrund": "Éviter soulage la peur à court terme, mais l’entretient à long terme : l’enfant ne fait jamais l’expérience qu’il peut venir à bout de la situation. Les programmes cognitivo-comportementaux pour enfants anxieux misent donc sur l’exposition progressive : la situation redoutée est découpée en échelons classés par difficulté et exercée de bas en haut (Kendall & Hedtke, 2006). Rapee et ses collègues (2008) en font le cœur de leur programme et soulignent deux points : exercer chaque échelon jusqu’à ce qu’il soit facile, et récompenser le courage, pas seulement la réussite. Les phrases courage aident à tenir l’échelon au lieu de s’esquiver.",
+        "hintergrund": "Éviter soulage la peur à court terme, mais l’entretient à long terme : l’enfant ne fait jamais l’expérience qu’il peut venir à bout de la situation. Les programmes cognitivo-comportementaux pour enfants anxieux misent donc sur l’exposition progressive : la situation redoutée est découpée en échelons classés par difficulté et exercée de bas en haut (Kendall & Hedtke, 2006). Rapee et ses collègues (2008) en font le cœur de leur programme et soulignent deux points : exercer chaque échelon jusqu’à ce qu’il soit facile, et récompenser le courage, pas seulement la réussite. Les phrases de courage aident à tenir l’échelon au lieu de s’esquiver.",
         "quellen": [
           "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
           "Rapee, R. M., Wignall, A., Spence, S. H., Cobham, V. & Lyneham, H. (2008). Helping Your Anxious Child (2nd ed.). Oakland: New Harbinger."
         ],
         "differenzierung": {
           "leichter": "Planifier seulement trois échelons et les formuler avec une personne de référence.",
-          "schwerer": "Pour un échelon, imaginer une variante plus difficile : plus longue, seul·e ou devant plus de monde."
+          "schwerer": "Pour un échelon, imaginer une variante plus difficile : plus longue, en solitaire ou devant plus de monde."
         },
         "impulse": [
           "Qu’est-ce qui a gardé ta peur grande jusqu’ici ?",
@@ -2710,7 +2714,7 @@
           "Exercices 3 et 4 : construire l’échelle et planifier la première étape, si besoin avec un accompagnement individuel. La première étape doit être bien réalisable.",
           "Les semaines suivantes, prendre des nouvelles et reconnaître chaque pas, même une tentative."
         ],
-        "hintergrund": "La peur est un système d’alarme qui réagit parfois de façon trop sensible. L’évitement apaise à court terme, mais empêche l’expérience correctrice que la situation est gérable ; des formes plus discrètes comme les excuses, la distraction ou le besoin constant d’être rassuré entretiennent aussi la peur (Beck, 2011). L’exposition progressive est donc efficace : qui reste dans la situation constate que la peur atteint un pic, puis redescend. L’échelle de la peur ordonne ces expériences par difficulté ; elle est un élément central des programmes cognitivo-comportementaux pour enfants et adolescent·e·s (Kendall & Hedtke, 2006 ; Rapee et al., 2008).",
+        "hintergrund": "La peur est un système d’alarme qui réagit parfois de façon trop sensible. L’évitement apaise à court terme, mais empêche l’expérience correctrice que la situation est gérable ; des formes plus discrètes comme les excuses, la distraction ou le besoin constant d’être rassuré entretiennent aussi la peur (Beck, 2011). L’exposition progressive est donc efficace : qui reste dans la situation constate que la peur atteint un pic, puis redescend. L’échelle de la peur ordonne ces expériences par difficulté ; elle est un élément central des programmes cognitivo-comportementaux pour enfants et adolescents (Kendall & Hedtke, 2006 ; Rapee et al., 2008).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
           "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
