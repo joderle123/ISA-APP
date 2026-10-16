@@ -1386,10 +1386,10 @@
         },
         "impulse": ["Qu’est-ce qui t’a déjà permis de rester calme ?", "Quelle pensée te stresse le plus ?", "À quoi verrais-tu que l’angoisse diminue ?"],
         "tipps": [
-          "Faire l’exercice de respiration ensemble avant les devoirs en classe.",
+          "Respirer ensemble avant un devoir en classe.",
           "Au lieu de « Tu vas y arriver », clarifier ensemble ce qui est concrètement prêt."
         ],
-        "achtung": "En cas de crises de panique, de troubles du sommeil ou d’évitement de l’école : entretien individuel, impliquer le SePAS et la direction compétente (responsable). En cas d’indices d’automutilation, agir immédiatement selon la procédure interne et ne pas laisser l’élève sans soutien.",
+        "achtung": "En cas de crises de panique, de troubles du sommeil ou d’évitement scolaire : entretien individuel, impliquer le SePAS et la direction compétente (responsable). Indices d’automutilation : agir aussitôt selon la procédure interne, ne pas laisser l’élève sans soutien.",
         "material": "En option : anciens devoirs"
       }
     }

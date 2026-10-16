@@ -380,6 +380,15 @@
           "symbol": "hilfe",
           "titel": "Du entscheidest, was du teilst.",
           "text": "Dein Netz gehört dir. Es ist eine Momentaufnahme, kein Zeugnis. Füll es in ein paar Wochen noch einmal aus – mit einer anderen Farbe."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib dir selbst einen kurzen Brief für später: Was soll dein Netz in ein paar Wochen zeigen?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "fuellen": true
         }
       ],
       "lehrer": {
@@ -478,6 +487,15 @@
           "symbol": "hilfe",
           "titel": "Tu décides de ce que tu partages.",
           "text": "Ta toile t’appartient. C’est un instantané, pas un bulletin. Refais-la dans quelques semaines – avec une autre couleur."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris-toi une petite lettre pour plus tard : que doit montrer ta toile dans quelques semaines ?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "fuellen": true
         }
       ],
       "lehrer": {
@@ -1119,6 +1137,15 @@
           ],
           "spalten": 2,
           "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stell dir vor, eine Sorge kommt heute Abend im Bett zurück. Schreib auf, was du dann tust – und was du dir sagst."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "fuellen": true
         }
       ],
       "lehrer": {
@@ -1228,6 +1255,15 @@
           ],
           "spalten": 2,
           "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Imagine : ce soir, au lit, un souci revient. Écris ce que tu fais alors – et ce que tu te dis."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "fuellen": true
         }
       ],
       "lehrer": {
@@ -1660,6 +1696,16 @@
               "dann": "lege ich das Handy zum Laden in die Küche und lese noch zehn Minuten."
             }
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib auf, was du an deinem normalen Tag behalten möchtest, weil es dir guttut.",
+          "hinweis": "Auch Kleinigkeiten zählen: ein Spaziergang, ein Lied, ein Gespräch mit Freunden."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "fuellen": true
         }
       ],
       "lehrer": {
@@ -1791,6 +1837,16 @@
               "dann": "je mets mon téléphone à charger dans la cuisine et je lis encore dix minutes."
             }
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ce que tu veux garder dans ta journée ordinaire parce que ça te fait du bien.",
+          "hinweis": "Les petites choses comptent aussi : une promenade, une chanson, une discussion avec des amis."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "fuellen": true
         }
       ],
       "lehrer": {

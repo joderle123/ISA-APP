@@ -1586,13 +1586,13 @@
         {"art": "satzanfaenge", "items": ["Établi le … avec :", "Mon plan se trouve ici :", "Nous le revoyons le :"]}
       ],
       "lehrer": {
-        "ziel": "Avec un professionnel ou une professionnelle, le ou la jeune élabore un plan personnel pour les moments de crise : reconnaître les signaux d’alerte, s’aider soi-même, demander de l’aide, sécuriser son environnement.",
+        "ziel": "Avec une personne spécialisée, le ou la jeune élabore un plan personnel pour les moments de crise : reconnaître les signaux d’alerte, s’aider soi-même, demander de l’aide, sécuriser son environnement.",
         "ablauf": [
           "Cadre (5 min) : uniquement en entretien individuel ; expliquer à quoi sert le plan et qui en sera informé.",
           "Signaux d’alerte (5–10 min) : les dégager de la dernière situation difficile – avec les mots du ou de la jeune.",
-          "Étapes 2 à 5 (15 min) : réponses concrètes et réalistes ; pour chaque étape, repérer ce qui pourrait gêner sa mise en œuvre et chercher une solution.",
+          "Étapes 2 à 5 (15 min) : réponses concrètes et réalistes ; pour chacune, repérer l’obstacle possible et chercher une solution.",
           "Environnement (5 min) : aborder calmement ce qui sera mis à l’écart et qui aide ; si nécessaire, impliquer les parents.",
-          "Clôture (5 min) : évaluer la probabilité d’utiliser le plan, convenir où le garder et du prochain rendez-vous ; le revoir après chaque crise."
+          "Clôture (5 min) : demander si le plan sera utilisé, convenir où le garder et du prochain rendez-vous ; le revoir après chaque crise."
         ],
         "hintergrund": "Le plan de sécurité s’appuie sur la Safety Planning Intervention de Stanley & Brown (2012), une intervention brève et structurée pour les personnes ayant des idées suicidaires ou sortant d’une crise suicidaire. Élaboré ensemble, le plan liste dans un ordre défini les signaux d’alerte, les stratégies personnelles, les contacts qui changent les idées, les personnes et services d’aide et les mesures pour sécuriser l’environnement – en commençant par ce que la personne peut faire seule. Pour les stratégies personnelles, les compétences de tolérance à la détresse conviennent bien : eau froide, activité physique intense, respiration lente (Rathus & Miller, 2015). Le plan n’est pas un « contrat de non-suicide » et ne remplace aucun traitement.",
         "quellen": [
@@ -1610,10 +1610,10 @@
         ],
         "tipps": [
           "Utiliser les mots du ou de la jeune : en pleine crise, le plan doit rester compréhensible.",
-          "Poser ouvertement la question des idées suicidaires ne donne pas l’idée à quelqu’un ; cela soulage souvent."
+          "Poser ouvertement la question des idées suicidaires n’y fait penser personne ; cela soulage souvent."
         ],
         "achtung": "Uniquement en entretien individuel, jamais en classe ; informer la direction (responsable) et le SePAS. En cas d’idées suicidaires aiguës, agir selon la procédure de crise, ne pas laisser la personne seule, impliquer les parents et le 112.",
-        "material": "Une copie ; une photo sur le téléphone"
+        "material": "Copie ; photo sur téléphone"
       }
     }
   },

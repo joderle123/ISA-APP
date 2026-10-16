@@ -259,7 +259,7 @@
             { "bild": "icon:apple", "text": "faim" },
             { "bild": "icon:zzz", "text": "fatigue" },
             { "bild": "icon:bubble", "text": "pensées" },
-            { "bild": "icon:search", "text": "chercher ses affaires" }
+            { "bild": "icon:search", "text": "affaires perdues" }
           ]
         },
         { "art": "aufgabe", "text": "Qu’est-ce qui t’aide ? Coche.", "hinweis": "Tu peux faire plusieurs croix.", "symbole": ["ankreuzen"] },
