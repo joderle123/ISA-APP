@@ -13,7 +13,7 @@ import { join, dirname, basename } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { Baustein, Bildtext, Blatt, BlattInhalt, Brieftext, Experiment, Forscherblatt, Spielideen, Sprache } from '../src/blatt/typen'
 import { BEREICHE, THEMEN, STUFEN_REIHE } from '../src/blatt/katalog'
-import { hatIcon } from '../src/blatt/zeichnung'
+import { bildGueltig, hatIcon } from '../src/blatt/zeichnung'
 import { GEFUEHLE, gefuehlWort } from '../src/blatt/gesichter'
 import { FIGUREN, POSEN } from '../src/blatt/figuren'
 import { istSzene } from '../src/blatt/szenen'
@@ -41,6 +41,39 @@ const ids = new Map<string, string>()
 
 const SYMBOLE = ['malen', 'schreiben', 'lesen', 'schneiden', 'kleben', 'ankreuzen', 'einkreisen', 'verbinden', 'sprechen', 'zuhoeren', 'nachdenken', 'zeigen', 'partner', 'gruppe']
 const FARBWOERTER: string[] = ALLE_FARBEN
+
+/** Neue Gestaltungs-Optionen (Design-Umbau 16.10.2026): Typ und Wertebereich prüfen. */
+function pruefeGestaltung(w: string, b: Baustein) {
+  const nur = (name: string, wert: unknown, typ: 'boolean' | 'string') => {
+    if (wert !== undefined && typeof wert !== typ) melde('F', w, `${name}: ${typ === 'boolean' ? 'true oder false' : 'Text'}`)
+  }
+  if (b.art === 'feld' || b.art === 'linien' || b.art === 'kaestchen' || b.art === 'karten') {
+    nur('fuellen', b.fuellen, 'boolean')
+    if (b.art === 'kaestchen' && b.fuellen && b.zeilen > 14) melde('H', w, 'Kästchen füllen die Restseite nur bis 14 Zeilen')
+    if (b.art === 'karten' && b.fuellen && b.karten.length > 6) melde('H', w, 'Karten, die den Rest der Seite füllen: höchstens 6 Karten (sonst bricht die Reihe nicht um)')
+  }
+  if (b.art === 'tabelle') {
+    if (b.hoehe !== undefined && (typeof b.hoehe !== 'number' || b.hoehe < 1 || b.hoehe > 6)) melde('F', w, 'Tabelle: hoehe zählt in Schreibzeilen (1–6)')
+    if (b.kopffarben && (b.kopffarben.length > b.spalten.length || b.kopffarben.some((f) => f && !FARBWOERTER.includes(f)))) melde('F', w, 'Tabelle: kopffarben – höchstens eine je Spalte, nur Farbwörter')
+  }
+  if (b.art === 'einschaetzung' && b.kopffarben && (b.kopffarben.length > b.optionen.length || b.kopffarben.some((f) => f && !FARBWOERTER.includes(f)))) melde('F', w, 'Einschätzung: kopffarben – höchstens eine je Option, nur Farbwörter')
+  if (b.art === 'karten') {
+    nur('schneiden', b.schneiden, 'boolean')
+    for (const k of b.karten) if (k.farbe && !FARBWOERTER.includes(k.farbe)) melde('F', w, `Karte „${k.titel ?? ''}“: Farbe „${k.farbe}“ gibt es nicht`)
+  }
+  if (b.art === 'dialog') {
+    if (b.stil !== undefined && b.stil !== 'chat') melde('F', w, "Dialog: stil nur 'chat'")
+    if (b.zeilen.some((z) => z.zeit) && b.stil !== 'chat') melde('H', w, 'Dialog: zeit zeigt nur der Chat-Stil')
+  }
+  if (b.art === 'batterie') nur('leer', b.leer, 'boolean')
+  if (b.art === 'spalten') nur('zusammen', b.zusammen, 'boolean')
+  if (b.art === 'zielscheibe') nur('daneben', b.daneben, 'boolean')
+  if (b.art === 'comic') for (const f of b.felder) if (f.szene !== undefined && !bildGueltig(`szene:${f.szene}`)) melde('F', w, `Comic: Szene „${f.szene}“ gibt es nicht (Liste: SZENEN_NAMEN in src/blatt/szenen.ts)`)
+  if (b.art === 'geschichte' && b.szene !== undefined) {
+    if (typeof b.szene !== 'string' || !b.szene) melde('F', w, 'Geschichte: szene = Name der Szene')
+    else if (!bildGueltig(`szene:${b.szene}`)) melde('F', w, `Geschichte: Szene „${b.szene}“ gibt es nicht (Liste: SZENEN_NAMEN in src/blatt/szenen.ts)`)
+  }
+}
 /** Spielschule: Bausteine zum Tun, die eine ganze Seite brauchen (nicht in Spalten). */
 const SPIEL_ARTEN = ['schneiden_kleben', 'memory', 'labyrinth', 'laufweg', 'minibuch', 'punkte_verbinden', 'klappbild', 'faedelkarte', 'bastelbogen', 'suchbild', 'anziehpuppe']
 /** Französisch auf Kinderblättern (C1): keine inklusiven Formen mit Mittelpunkt (« joyeux·se ») – nicht vorlesbar. */
@@ -181,6 +214,7 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
     const w = `${wo} [${i + 1}:${b?.art}]`
     if (!b || !ARTEN.has(b.art)) return melde('F', w, 'unbekannte Bausteinart')
     const bilder: string[] = []
+    pruefeGestaltung(w, b)
     switch (b.art) {
       case 'aufgabe':
         aufgaben++
@@ -606,7 +640,8 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         if (b.stufen < 3 || b.stufen > 7) melde('F', w, '3–7 Stufen')
         break
       case 'zielscheibe':
-        if (b.ringe.length < 2 || b.ringe.length > 4) melde('F', w, '2–4 Ringe')
+        if (b.ringe.length < 2 || b.ringe.length > 6) melde('F', w, '2–6 Ringe')
+        if (b.ringe.length > 4 && b.daneben === false) melde('H', w, 'Zielscheibe: ab 5 Ringen stehen die Namen neben der Scheibe (daneben: false lässt sie auf den Ringen – zu eng)')
         break
       case 'skala':
         if (b.stufen && ![5, 10, 11].includes(b.stufen)) melde('F', w, 'Skala mit 5, 10 oder 11 Stufen')

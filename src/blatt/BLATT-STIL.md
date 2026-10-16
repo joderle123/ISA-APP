@@ -79,6 +79,33 @@ Gestaltung nach Stufe (automatisch aus der niedrigsten Stufe):
 
 Stufen nicht zu breit mischen: gut sind `["C1"]`, `["C2"]`, `["C3","C4"]`, `["C4","ES"]`, `["ES"]`.
 
+### Gestaltung „Blatt 2.0“ (automatisch – im Blatt steht nichts davon)
+
+Farbe, Motive und Raster ergeben sich aus der Stufe (Code: `src/blatt/pdf/design.ts`, `src/blatt/icon-motiv.ts`). Ein Blatt beschreibt
+weiter nur Inhalt; bestehende Blätter rendern ohne Änderung.
+
+| Stufe | Kopf | Bilder | Kästen und Tabellen |
+|---|---|---|---|
+| C1–C2 | zart getöntes Band in der Bereichsfarbe, rechts das Leitbild groß (Motiv, sonst Duotone-Piktogramm auf weißem Kreis) | farbige **Motive statt Piktogramme** überall, wo es eins gibt; Karten mit getöntem Grund, Motiv ca. 62 % der Zelle, Beschriftung mind. 11 pt | getönte Geschichten-Kästen, Figur als Porträt |
+| C3 (und C3–C4) | wie C1–C2 | Motive, wo es eins gibt, sonst Duotone | wie oben; Tabellenschrift mind. 10 pt |
+| C4–ES | ruhiges Magazin: die Kopfzeile liegt auf einem getönten Band, Leitbild als Duotone-Piktogramm im getönten Quadrat | **Duotone-Piktogramme** (Linie in Tinte, geschlossene Formen zart in der Bereichsfarbe), Jugendfiguren statt Kinderfiguren | getönte Tabellenköpfe, Beispielzeile in der Akzentfarbe |
+
+- **Piktogramm → Motiv:** `icon:book` zeigt in C1–C3 das Motiv `buch`. Die Zuordnung steht in `src/blatt/icon-motiv.ts`
+  (`ICON_MOTIV_BESTAND`) und `src/blatt/motive-neu.ts` (`ICON_MOTIV`, neue Motive; sie gehen vor). Ein Motiv ersetzt ein Piktogramm
+  nur bei **gleicher Bedeutung**. Mit `modus: "anmalen"` erscheint die Ausmal-Fassung des Motivs. Wer ein bestimmtes Bild will, schreibt
+  `motiv:<name>` direkt.
+- **Jugendfiguren:** in C4–ES werden die Kinderfiguren zu Jugendfiguren: `mia` → `jana`, `lea` → `chloe`, `amira` → `lina`, `sami` → `yusuf`,
+  `noah` und `tom` → `ben` (sonst `yusuf`) – jede Figur des Blatts bekommt dabei ihre eigene, sonst bleibt alles Kinderfiguren. `nele` und `finn`
+  (Merkmal Rollstuhl, Hörgerät) setzt nur, wer sie hinschreibt (`icon-motiv.ts`: `jugendFiguren`).
+- **Gefühls-Themen** tragen ihre Farbe (Kopfband, Nummern, Kästen): Wut rot, Angst lila, Trauer blau, Freude gelb, Ruhig werden grün;
+  im Skills-Kurs Wut warm, Freundschaft und Liebe ein weiches Rosé. Alle anderen Themen behalten die Bereichsfarbe (`akzentFarben` in `design.ts`).
+- **Druck:** Flächen sind nur zart getönt (in Schwarz-Weiß hellgrau); Linien und Text tragen den Kontrast. Die Seitenhöhe des Kopfes ist nicht größer als zuvor.
+- **Restseite füllen:** der **letzte** Baustein eines Blatts, wenn er `feld`, `linien`, `kaestchen` (bis 14 Zeilen) oder `karten` (ohne `hoehe`, bis 6 Karten) ist,
+  wächst von selbst bis zum Seitenende (die angegebene Größe ist das Minimum – nie mehr Seiten als zuvor). `fuellen: false` schaltet es aus,
+  `fuellen: true` lässt auch einen früheren Baustein wachsen. Ist der letzte Baustein etwas anderes (Tabelle, Skala …), hängt man ein
+  `{ "art": "linien", "anzahl": 2, "label": "Das nehme ich mit" }` an: es füllt den Rest. Blätter mit halbleerer letzter Seite findet
+  `npx tsx --tsconfig tsconfig.scripts.json scripts/blatt-seiten.tsx` (Hinweis „letzte Seite nur zu … % gefüllt“).
+
 ## 3. Bausteine
 
 Aufgaben werden automatisch nummeriert. Eine Aufgabe (`aufgabe`) steht **vor**
@@ -90,21 +117,21 @@ dem Baustein, zu dem sie gehört, und bleibt mit ihm auf einer Seite.
 | `aufgabe` | `text`, `hinweis?`, `symbole?`, `niveau?` | Arbeitsauftrag. Kurz, klar, ein Verb. `symbole`: malen, schreiben, lesen, schneiden, kleben, ankreuzen, einkreisen, verbinden, sprechen, zuhoeren, nachdenken, zeigen, partner, gruppe (vor allem C1–C3). `niveau` (Spielschule): `einstieg` oder `stern`. |
 | `text` | `text`, `klein?` | Kurzer Sachtext (v. a. ES). |
 | `info` | `titel?`, `text?`, `punkte?`, `symbol?` | Kasten: `wissen` (Gut zu wissen), `tipp`, `merke`, `achtung`, `hilfe`. |
-| `geschichte` | `titel?`, `text`, `bild?` | Kurze Alltagsgeschichte (C2: 3–5 Sätze, C3–C4: 4–7, ES: Fallvignette). Mit Figur links. |
+| `geschichte` | `titel?`, `text`, `bild?`, `szene?` | Kurze Alltagsgeschichte (C2: 3–5 Sätze, C3–C4: 4–7, ES: Fallvignette). Mit Figur links als Porträt (Kopf und Oberkörper groß; bei langem Text wächst der Rahmen mit). `szene` = die ganze Figur steht in einer Szene (pausenhof, klassenzimmer, bus, kueche, kinderzimmer, park, flur, kantine, umkleide; `src/blatt/szenen.ts`; Prüfskript meldet unbekannte). |
 | `bild` | `bild`, `groesse?` (s/m/l/xl), `text?`, `ausrichtung?` | Einzelnes Bild. |
-| `spalten` | `links`, `rechts`, `verhaeltnis?` ('1:1','2:1','1:2') | Zwei Spalten (nicht verschachteln). Mit `bilder`, `comic`, `gefuehle`, `karten`, `glaeser` (und in der Spielschule immer) brechen sie als Ganzes nicht um – dann nicht höher als eine Seite; kein `seitenumbruch` darin. |
+| `spalten` | `links`, `rechts`, `verhaeltnis?` ('1:1','2:1','1:2'), `zusammen?` | Zwei Spalten (nicht verschachteln). Mit `bilder`, `comic`, `gefuehle`, `karten`, `glaeser` (und in der Spielschule immer) brechen sie als Ganzes nicht um – dann nicht höher als eine Seite; kein `seitenumbruch` darin. `zusammen: true` hält auch andere Spalten (z. B. mit `info`-Kästen) zusammen, `false` erlaubt den Umbruch; Vorsicht: zusammengehaltene Spalten rücken als Ganzes auf die nächste Seite, das kann eine Seite kosten. |
 | `abstand` / `seitenumbruch` | – | Nur wenn wirklich nötig. |
 
 ### Schreiben
 | Art | Felder | Wofür |
 |---|---|---|
-| `linien` | `anzahl`, `label?` | Schreiblinien. |
+| `linien` | `anzahl`, `label?`, `fuellen?` | Schreiblinien; `fuellen` füllt die Restseite mit weiteren Linien (`anzahl` ist das Minimum). |
 | `frage` | `text`, `linien?` | Frage mit Linien. |
 | `satzanfaenge` | `items`, `linien?` | „Ich fühle mich sicher, wenn …“ – stark für Reflexion. |
-| `feld` | `label?`, `hoehe?` (Zeilen), `beispiel?`, `zeichnen?` | Freies Feld; `zeichnen: true` = gestrichelter Malrahmen. |
-| `tabelle` | `spalten`, `zeilen`, `beispiel?`, `breiten?` | Mit **ausgefüllter Beispielzeile** – zeigt, wie es gemeint ist. |
+| `feld` | `label?`, `hoehe?` (Zeilen), `beispiel?`, `zeichnen?`, `fuellen?` | Freies Feld; `zeichnen: true` = gestrichelter Malrahmen. `hoehe` ist die Mindesthöhe, `fuellen` lässt es bis zum Seitenende wachsen (als letzter Baustein von selbst). |
+| `tabelle` | `spalten`, `zeilen`, `beispiel?`, `breiten?`, `nummern?`, `werte?`, `hoehe?`, `kopffarben?` | Mit **ausgefüllter Beispielzeile** – zeigt, wie es gemeint ist (steht in der Akzentfarbe). `werte` = vorgegebene Zeilen vor den leeren, auch zusammen mit `beispiel`. `hoehe` = Höhe der leeren Zeilen in Schreibzeilen (1–6; ab 2 mit zarten Schreiblinien) für Antworten in ganzen Sätzen. `kopffarben` = Farbe je Spaltenkopf, z. B. `["grau", "gruen", "gelb", "rot"]`. |
 | `wennDann` | `zeilen`, `beispiele?`, `wenn?`, `dann?` | Wenn-dann-Pläne (Implementation Intentions). |
-| `dialog` | `zeilen: [{wer, text?}]` | Gespräch in Sprechblasen, leere Blasen zum Ausfüllen. |
+| `dialog` | `zeilen: [{wer, text?, zeit?}]`, `stil?` | Gespräch in Sprechblasen, leere Blasen zum Ausfüllen. `stil: "chat"` = Handy-Verlauf (Blasen links und rechts auf Chat-Grund, ohne Marken; `zeit` = Uhrzeit unter der Blase). |
 | `vertrag` | `titel?`, `text` (Lücken mit `___`), `unterschriften` | Abmachung mit Unterschriften. |
 
 ### Auswählen & Einschätzen
@@ -113,8 +140,8 @@ dem Baustein, zu dem sie gehört, und bleibt mit ihm auf einer Seite.
 | `ankreuzen` | `items`, `spalten?` (1–3), `frei?`, `titel?` | Auswahl; `frei` = leere Zeilen für eigene Ideen. |
 | `bilder` | `bilder: [{bild, text?}]`, `spalten?`, `modus?` (einkreisen/ankreuzen/anmalen/nur) | Bildauswahl – **das** Werkzeug für die Spielschule. |
 | `wortspeicher` | `titel?`, `items` | Wörterkiste (Gefühlswörter …). |
-| `skala` | `frage?`, `von`, `bis`, `stufen?` (5/10/11), `gesichter?` | 5 Stufen mit Gesichtern (C1–C2) oder 0–10. |
-| `einschaetzung` | `items`, `optionen` | Selbsteinschätzung als Raster (stimmt / teils / stimmt nicht). |
+| `skala` | `frage?`, `von`, `bis`, `stufen?` (5/10/11), `gesichter?` | 5 Stufen mit Gesichtern (C1–C2) oder 0–10, auf einem Balken mit Farbverlauf (hell → kräftig in der Bereichsfarbe, ohne Ampelfarben). |
+| `einschaetzung` | `items`, `optionen`, `kopffarben?` | Selbsteinschätzung als Raster (stimmt / teils / stimmt nicht). `kopffarben` = Farbpunkt je Option, z. B. `["gruen", "gelb", "rot"]`. |
 | `zuordnen` | `links`, `rechts`, `titel?` | Verbinden mit Linien (rechts gemischt anordnen!). |
 | `gefuehle` | `gefuehle`, `modus?` (benennen/einkreisen/nur), `leer?`, `spalten?`, `woerter?` | Gefühlsgesichter; `benennen` = Linie statt Wort; `woerter` = eigene Wörter statt der Standardwörter (Pflicht auf französischen C1-Blättern, wo das Standardwort einen Mittelpunkt hat). |
 
@@ -126,10 +153,10 @@ dem Baustein, zu dem sie gehört, und bleibt mit ihm auf einer Seite.
 | `vulkan` | `stufen?` (3: unten → oben) | Auslöser – Anzeichen – Plan. Ohne `stufen` Standardtexte. |
 | `eisberg` | `oben`, `unten`, `beispielOben?`, `beispielUnten?` | Sichtbares Verhalten vs. Gefühle/Bedürfnisse darunter. |
 | `koerper` | `legende?` ([{farbe, text}]), `frage?` | Körperumriss zum Anmalen (farbe: rot, orange, gelb, gruen, blau, hellblau, lila, rosa, grau, braun, schwarz, weiss). |
-| `batterie` | `laden`, `leeren`, `linien?` | Was gibt/kostet Energie. |
+| `batterie` | `laden`, `leeren`, `linien?`, `leer?` | Was gibt/kostet Energie. `leer: true` = leere Batterie mit fünf Feldern zum Ausmalen (statt 3 von 5 gefüllt, was wie ein Ergebnis wirkt). |
 | `waage` | `links`, `rechts`, `zeilen?` | Vor-/Nachteile, Entscheidungswaage. |
 | `leiter` | `stufen` (3–7), `oben?`, `unten?`, `beispiele?` | Mut-Leiter, Ziel-Treppe (Stufe 1 unten). |
-| `zielscheibe` | `ringe` (2–4, außen → innen), `mitte?` | Nähe-Kreise, Wichtigkeit. |
+| `zielscheibe` | `ringe` (2–6, außen → innen), `mitte?`, `daneben?` | Nähe-Kreise, Wichtigkeit. Ab 5 Ringen oder Namen über 14 Zeichen stehen die Ringe nummeriert und die Namen als Liste daneben (`daneben: true/false` erzwingt es). |
 | `hand` | `finger?` (5 Hinweise), `mitte?` | Fünf Helfer, fünf Stärken. |
 | `mindmap` | `mitte`, `aeste?` ('' = leer), `anzahl?` | Sammeln (max. 6 Äste; ab 7 überlappen sich die Kästen). |
 | `schritte` | `items: [{titel, text?}]`, `stil?` (liste/kette), `linien?` | Abläufe. `kette` = waagrecht, max. 4, Titel ≤ 26 Zeichen. |
@@ -142,8 +169,8 @@ Ruhige Liniengrafiken mit viel Weißraum – für Blätter, die zum Innehalten e
 
 | Art | Felder | Wofür |
 |---|---|---|
-| `glaeser` | `items`, `leer?`, `spalten?` (3–6), `legende?` (2 Texte), `skala?` | Gläser mit Beschriftung (max. 20 Zeichen): Strich = so voll soll es sein, ausmalen = so voll ist es jetzt. Bedürfnisse, Werte. |
-| `netz` | `bereiche` (5–10, max. 28 Zeichen), `stufen?` (5/10) | Lebensnetz: jeder Bereich ein Tortenstück mit Ringen zum Ausmalen (innen wenig, außen viel). |
+| `glaeser` | `items`, `leer?`, `spalten?` (3–6), `legende?` (2 Texte), `skala?` | Gläser mit Beschriftung (max. 20 Zeichen): Strich = so voll soll es sein, ausmalen = so voll ist es jetzt. Bedürfnisse, Werte. Das Glas ist wasserblau getönt, Teilstriche mit ¼ ½ ¾. |
+| `netz` | `bereiche` (5–10, max. 28 Zeichen), `stufen?` (5/10) | Lebensnetz: jeder Bereich ein Tortenstück (zart getönt, je Bereich ein anderer Ton) mit Ringen zum Ausmalen (innen wenig, außen viel). |
 | `kurve` | `x` (2–12), `oben`, `unten`, `mitte?`, `linien?` (2 Legendentexte), `hoehe?` | Leeres Diagramm zum Einzeichnen: Stimmung und Energie einer Woche, Lebenslinie. |
 | `tageskreis` | `titel` (1–2 Kreise), `legende` ([{farbe, text}], 2–8; `text: ''` = Linie) | 24-Stunden-Kreise zum Ausmalen: normaler Tag und Wunsch-Tag. |
 | `farbkalender` | `wochen?` (4–6), `legende` ([{farbe, text}], 2–8) | Kästchen-Kalender (Mo–So) zum Ausmalen, z. B. Stimmung pro Tag. |
@@ -475,8 +502,8 @@ und Satz der Woche), wenn `woche.elternbrief` da ist. Sie erscheinen in der Tool
 ### Bildgeschichten & Karten
 | Art | Felder | Wofür |
 |---|---|---|
-| `comic` | `felder` (1–6), `spalten?` (2/3) | Feld: `figuren` (max. 2), `requisit?`, `text?` (Sprechblase, ≤ 70 Zeichen), `sprecher?` (0/1), `blase?` (sprechen/denken/keine), `untertitel?` ('' = Linie), `leer?` (zum Selbstzeichnen). |
-| `karten` | `karten: [{titel?, text?, bild?}]`, `spalten?` (2–4), `hoehe?` | Karten zum Ausschneiden (Signalkarten, Stärkenkarten, Bildkarten). |
+| `comic` | `felder` (1–6), `spalten?` (2/3) | Feld: `figuren` (max. 2), `requisit?`, `text?` (Sprechblase, ≤ 70 Zeichen), `sprecher?` (0/1), `blase?` (sprechen/denken/keine), `untertitel?` ('' = Linie), `leer?` (zum Selbstzeichnen), `szene?` (Kulisse hinter den Figuren, auch bei `leer`: pausenhof, klassenzimmer, bus, kueche, kinderzimmer, park, flur, kantine, umkleide). |
+| `karten` | `karten: [{titel?, text?, bild?, nummer?, farbe?}]`, `spalten?` (2–4), `hoehe?`, `schneiden?`, `fuellen?` | Karten zum Ausschneiden (Signalkarten, Stärkenkarten, Bildkarten). Ohne `hoehe` füllen bis zu 6 Karten als letzter Baustein den Rest der Seite (Motiv und Karte wachsen mit). `schneiden: false` = Lesekarten ohne Scherenlinie, runde Karten mit Abstand. `nummer` / `farbe` = Zahl oder Farbpunkt in der Kartenecke. |
 | `forscherblatt` | `frage?`, `bild?`, `vermuten?`, `sehen?`, `ergebnis?`, `name?` | Spielschule: Forscherblatt zum Experiment der Woche – eine ganze Seite (siehe „Experiment der Woche“). |
 
 ### Abschluss

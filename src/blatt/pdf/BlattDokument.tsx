@@ -9,7 +9,9 @@ import type { AktivitaetArt, Baustein, Blatt, BlattInhalt, Layout, Sprache } fro
 import { bereichById, blattLayout, stufenText, themaLabel, type Farben } from '../katalog'
 import { NEUTRAL, palette, type Palette } from '../zeichnung'
 import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
-import { Bausteine, nummerieren, NiveauZeichen, Plakette, Fliess, type Ctx } from './bausteine'
+import { Bausteine, nummerieren, NiveauZeichen, Plakette, Leitbild, Fliess, type Ctx } from './bausteine'
+import { akzentFarben, designVon, type Design } from './design'
+import { textBreite, type SchriftSorte } from './textbreite'
 import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, TEXTE, dauerText, typo, type Masse } from './stil'
 import { ELDIB_FR } from '../eldib-fr'
 import { urheberschaft } from '../../lib/urheber'
@@ -81,7 +83,10 @@ function NameFeld({ label, breite, m }: { label: string; breite: number; m: Mass
   )
 }
 
-function Kopfzeile({ blatt, nr, sprache, p, m, lehrer, heft }: { blatt: Blatt; nr?: string; sprache: Sprache; p: Palette; m: Masse; lehrer?: boolean; heft?: HeftAngaben }) {
+/** `design`: Kopf der Schülerseite in der Gestaltung der Stufe – Magazin (C4–ES): die Zeile liegt auf einem zart getönten Band
+ *  in der Bereichsfarbe; Bilderbuch (C1–C3): kein Band, der Kopf darunter trägt die Farbe. Ohne `design` (Lehrerseiten) wie gehabt. */
+function Kopfzeile({ blatt, nr, sprache, p, m, lehrer, heft, design }: { blatt: Blatt; nr?: string; sprache: Sprache; p: Palette; m: Masse; lehrer?: boolean; heft?: HeftAngaben; design?: Design }) {
+  const band = !lehrer && !!design?.magazin
   const bereich = bereichById.get(blatt.bereich)!
   const tx = TEXTE[sprache]
   // Im Heft: „Lektion 1“ als Reiter, Modul und Thema daneben, keine Namensfelder (der Name steht auf dem Deckblatt)
@@ -94,42 +99,55 @@ function Kopfzeile({ blatt, nr, sprache, p, m, lehrer, heft }: { blatt: Blatt; n
   // Passt die Meta-Zeile neben Reiter, Name und Datum? Breiten je Zeichen an Inter 7,4 pt und
   // Manrope 7 pt (Versalien) gemessen – obere Werte, damit nie eine Zeile ungewollt umbricht.
   const felder = lehrer || heft ? 0 : m.layout === 'bild' ? 14 + 27 + 150 : 14 + 27 + 118 + 14 + 27 + 62
-  const frei = BREITE - (reiter.length * 5.85 + 12) - 8 - felder
+  const frei = BREITE - (reiter.length * 5.85 + 12) - 8 - felder 
   const metaText = [nummer, thema].filter(Boolean).join('  ·  ')
   const eineZeile = metaText.length * 3.95 <= frei
   // Langer Reiter (z. B. „Lernen & Selbstorganisation“): passt auch zweizeilig nicht daneben –
   // dann steht die Meta-Zeile vollständig unter dem Kopf statt über vier Zeilen gequetscht.
   const zweiZeilen = !eineZeile && Math.max(nummer.length, thema.length) * 3.95 <= frei
   const darunter = !eineZeile && !zweiZeilen
-  return (
-    <View style={{ marginBottom: 14 }}>
-      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-        <Reiter text={reiter} farbe={lehrer ? NEUTRAL.tinte : p.tief} />
-        {eineZeile ? (
-          <View style={{ marginLeft: 8, flex: 1 }}>
-            <Meta>{metaText}</Meta>
-          </View>
-        ) : zweiZeilen ? (
-          // zu lang für eine Zeile: bewusst zwei Zeilen statt eines zufälligen Umbruchs
-          <View style={{ marginLeft: 8, flex: 1 }}>
-            <Meta>{nummer}</Meta>
-            <Meta>{thema}</Meta>
-          </View>
-        ) : (
-          <View style={{ flex: 1 }} />
-        )}
-        {!lehrer && !heft ? (
-          <>
-            <NameFeld label={tx.name} breite={m.layout === 'bild' ? 150 : 118} m={m} />
-            {m.layout !== 'bild' ? <NameFeld label={tx.datum} breite={62} m={m} /> : null}
-          </>
-        ) : null}
-      </View>
-      {darunter ? (
-        <View style={{ marginTop: 5 }}>
+  const zeile = (
+    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+      <Reiter text={reiter} farbe={lehrer ? NEUTRAL.tinte : p.tief} />
+      {eineZeile ? (
+        <View style={{ marginLeft: 8, flex: 1 }}>
           <Meta>{metaText}</Meta>
         </View>
+      ) : zweiZeilen ? (
+        // zu lang für eine Zeile: bewusst zwei Zeilen statt eines zufälligen Umbruchs
+        <View style={{ marginLeft: 8, flex: 1 }}>
+          <Meta>{nummer}</Meta>
+          <Meta>{thema}</Meta>
+        </View>
+      ) : (
+        <View style={{ flex: 1 }} />
+      )}
+      {!lehrer && !heft ? (
+        <>
+          <NameFeld label={tx.name} breite={m.layout === 'bild' ? 150 : 118} m={m} />
+          {m.layout !== 'bild' ? <NameFeld label={tx.datum} breite={62} m={m} /> : null}
+        </>
       ) : null}
+    </View>
+  )
+  const unter = darunter ? (
+    <View style={{ marginTop: 5 }}>
+      <Meta>{metaText}</Meta>
+    </View>
+  ) : null
+  return (
+    <View style={{ marginBottom: design ? (band ? 8 : 6) : 14 }}>
+      {band ? (
+        <View style={{ backgroundColor: p.zart, borderRadius: 6, paddingVertical: 3, paddingHorizontal: 6, marginHorizontal: -6 }}>
+          {zeile}
+          {unter}
+        </View>
+      ) : (
+        <>
+          {zeile}
+          {unter}
+        </>
+      )}
     </View>
   )
 }
@@ -168,35 +186,94 @@ function Fusszeile({ blatt, nr, sprache, heft }: { blatt: Blatt; nr?: string; sp
   )
 }
 
-function Titelblock({ blatt, inhalt, sprache, p, m, heft }: { blatt: Blatt; inhalt: BlattInhalt; sprache: Sprache; p: Palette; m: Masse; heft?: HeftAngaben }) {
-  const c: Ctx = { m, p, sprache, nummern: new Map(), breite: BREITE }
+/** Zeilen eines Texts bei gegebener Breite (Umbruch zwischen Wörtern, Breiten aus den Schriftdateien). */
+function zeilenZahl(text: string, sorte: SchriftSorte, gr: number, breite: number): number {
+  if (!text) return 0
+  const leer = textBreite(' ', sorte, gr)
+  let zeilen = 1
+  let x = 0
+  for (const wort of text.split(/\s+/)) {
+    const w = textBreite(wort, sorte, gr)
+    if (x > 0 && x + leer + w > breite) {
+      zeilen++
+      x = w
+    } else x += (x > 0 ? leer : 0) + w
+  }
+  return zeilen
+}
+
+function Titelblock({ blatt, inhalt, sprache, p, m, heft, design }: { blatt: Blatt; inhalt: BlattInhalt; sprache: Sprache; p: Palette; m: Masse; heft?: HeftAngaben; design?: Design }) {
+  const c: Ctx = { m, p, sprache, nummern: new Map(), breite: BREITE, design }
   const bild = blatt.bild ?? 'icon:' + (bereichById.get(blatt.bereich)?.icon ?? 'star')
   const d = m.layout === 'jugend' ? 54 : m.layout === 'bild' ? 74 : 64
   // Passgenau, Jugendblatt: kein Kreis-Piktogramm neben dem Titel (wirkt kindlich), der Titel nutzt die ganze Breite
   const ohneBild = !!blatt.passgenau && m.layout === 'jugend'
+  // Bilderbuch (C1–C3): zart getöntes Band, rechts das Leitbild groß und farbig (Motiv statt Piktogramm-Kreis); die Höhe des
+  // Kopfes bleibt etwa wie vorher, weil das Band keinen eigenen Rand oben und unten hat – das Motiv füllt es.
+  const bilderbuch = !!design && !design.magazin && !ohneBild
+  const hBild = design?.alter === 'c1' ? 78 : design?.alter === 'c2' ? 70 : 66
+  // Breite des Leitbilds im Band: so groß wie möglich, aber Titel und Untertitel dürfen dadurch nicht in mehr Zeilen umbrechen als vorher
+  // (Spalte vorher: Seitenbreite − Plakette − 14). Ist die Spalte zu schmal, wird die Schrift bis zu 12 % kleiner (messbar aus den
+  // Schriftbreiten, siehe textbreite.ts); reicht auch das nicht, wird das Leitbild schmaler (nie unter 56 pt).
+  let bildBreite = Math.round(hBild * 1.3)
+  let titelGr: number = m.titel
+  let untertitelGr: number = m.untertitel
+  if (bilderbuch) {
+    const sub = heft?.lernziel ? `${heft.zielWort ?? 'Mein Ziel:'} ${heft.lernziel}` : (blatt.passgenau?.ziel?.[sprache] ?? inhalt.untertitel ?? '')
+    const alt = BREITE - d - 14
+    const subSorte = m.schrift === SCHRIFT.jugend ? 'jugend' : 'kind'
+    const titel = typo(inhalt.titel, sprache)
+    const sub2 = typo(sub, sprache)
+    const zuvor = [zeilenZahl(titel, 'titel', m.titel, alt), zeilenZahl(sub2, subSorte, m.untertitel, alt)]
+    const skala = (text: string, sorte: SchriftSorte, gr: number, soll: number, col: number) => {
+      for (let k = 1; k >= 0.88; k -= 0.02) if (zeilenZahl(text, sorte, gr * k, col * 0.985) <= soll) return k
+      return 0
+    }
+    for (; bildBreite >= 56; bildBreite -= 4) {
+      const col = BREITE - 16 - 12 - 14 - bildBreite
+      const kt = skala(titel, 'titel', m.titel, zuvor[0], col)
+      const ks = skala(sub2, subSorte, m.untertitel, zuvor[1], col)
+      if (kt && ks) {
+        titelGr = m.titel * kt
+        untertitelGr = m.untertitel * ks
+        break
+      }
+    }
+    bildBreite = Math.max(56, bildBreite)
+  }
+  const texte = (
+    <View style={{ flex: 1, paddingRight: ohneBild ? 0 : 14, paddingVertical: bilderbuch ? 3 : 0 }}>
+      <View style={{ width: 26, height: 3.5, borderRadius: 2, backgroundColor: p.tief, marginBottom: 7 }} />
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: titelGr, lineHeight: 1.12, color: NEUTRAL.text, letterSpacing: -0.3 }}>{typo(inhalt.titel, sprache)}</Text>
+      {heft?.lernziel ? (
+        <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>
+          <Text style={{ fontWeight: m.fett, color: p.tief }}>{heft.zielWort ?? 'Mein Ziel:'} </Text>
+          {typo(heft.lernziel, sprache)}
+        </Text>
+      ) : blatt.passgenau?.ziel?.[sprache] ? (
+        // Passgenau: Ich-Satz des Förderziels statt des Untertitels
+        <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>
+          <Text style={{ fontWeight: m.fett, color: p.tief }}>{typo(TEXTE[sprache].meinZiel + ':', sprache)} </Text>
+          {typo(blatt.passgenau.ziel[sprache]!, sprache)}
+        </Text>
+      ) : inhalt.untertitel ? (
+        <Text style={{ fontFamily: m.schrift, fontSize: untertitelGr, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>{typo(inhalt.untertitel, sprache)}</Text>
+      ) : null}
+    </View>
+  )
   return (
     <View style={{ marginBottom: m.abstand * 0.6 }}>
-      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-        <View style={{ flex: 1, paddingRight: ohneBild ? 0 : 14 }}>
-          <View style={{ width: 26, height: 3.5, borderRadius: 2, backgroundColor: p.tief, marginBottom: 7 }} />
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: m.titel, lineHeight: 1.12, color: NEUTRAL.text, letterSpacing: -0.3 }}>{typo(inhalt.titel, sprache)}</Text>
-          {heft?.lernziel ? (
-            <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>
-              <Text style={{ fontWeight: m.fett, color: p.tief }}>{heft.zielWort ?? 'Mein Ziel:'} </Text>
-              {typo(heft.lernziel, sprache)}
-            </Text>
-          ) : blatt.passgenau?.ziel?.[sprache] ? (
-            // Passgenau: Ich-Satz des Förderziels statt des Untertitels
-            <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>
-              <Text style={{ fontWeight: m.fett, color: p.tief }}>{typo(TEXTE[sprache].meinZiel + ':', sprache)} </Text>
-              {typo(blatt.passgenau.ziel[sprache]!, sprache)}
-            </Text>
-          ) : inhalt.untertitel ? (
-            <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>{typo(inhalt.untertitel, sprache)}</Text>
-          ) : null}
+      {bilderbuch ? (
+        <View style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: p.zart, borderRadius: 16, paddingLeft: 16, paddingRight: 12, minHeight: hBild }}>
+          {texte}
+          <Leitbild c={c} id={bild} h={hBild} b={bildBreite} />
         </View>
-        {ohneBild ? null : <Plakette c={c} id={bild} d={d} />}
-      </View>
+      ) : (
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          {texte}
+          {ohneBild ? null : design ? <Leitbild c={c} id={bild} h={d} /> : <Plakette c={c} id={bild} d={d} />}
+        </View>
+      )}
       {inhalt.anleitung ? (
         <View style={{ flexDirection: 'row', marginTop: 10, backgroundColor: NEUTRAL.flaeche, borderRadius: 8, paddingVertical: 7, paddingHorizontal: 10 }}>
           <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 8.4, color: NEUTRAL.leise, marginRight: 6 }}>{TEXTE[sprache].anleitung}:</Text>
@@ -553,16 +630,19 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
   const sprache = opt?.sprache ?? 'de'
   const inhalt = blattInhalt(blatt, sprache)
   const bereich = bereichById.get(blatt.bereich) ?? bereichById.get('werkzeuge')!
-  const p = palette(opt?.farben ?? bereich.farben)
+  // Bereichsfarbe für die Lehrerseiten; die Schülerseite trägt bei den Gefühls-Themen die Farbe des Gefühls (Wut rot, Angst lila …)
+  const bp = palette(opt?.farben ?? bereich.farben)
+  const p = opt?.farben ? bp : palette(akzentFarben(blatt) ?? bereich.farben)
   const layoutName = opt?.layout ?? blattLayout(blatt)
   // Passgenau, Jugendblatt: großzügigere Schreibzeilen (28 statt 23 pt) – wer Gedanken aufschreibt, braucht Platz
   const m = blatt.passgenau && layoutName === 'jugend' ? { ...MASSE.jugend, zeile: 28 } : MASSE[layoutName]
   const teile = blatt.passgenau?.teile
   const ids = teile ? new Map(inhalt.bausteine.flatMap((b, i) => (teile[i] ? [[b, teile[i]!] as const] : []))) : undefined
-  const c: Ctx = { m, p, sprache, nummern: nummerieren(inhalt.bausteine), breite: BREITE, ids }
+  const design = designVon(blatt, layoutName, JSON.stringify(inhalt.bausteine))
+  const c: Ctx = { m, p, sprache, nummern: nummerieren(inhalt.bausteine), breite: BREITE, ids, design, fuellen: true }
   const melde = opt?.seite
   // Spielschule: Seite „Beobachten & Begleiten“ und Zusatzseiten mit demselben Kopf und Fuß wie alle Seiten
-  const lehrerKopf = <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={LEHRER_MASSE} lehrer heft={opt?.heft} />
+  const lehrerKopf = <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={bp} m={LEHRER_MASSE} lehrer heft={opt?.heft} />
   const fuss = <Fusszeile blatt={blatt} nr={opt?.nr} sprache={sprache} heft={opt?.heft} />
   const moeglich = zusaetzeVon(blatt, sprache)
   const zusaetze = (opt?.zusaetze ?? []).filter((z) => moeglich.includes(z))
@@ -582,16 +662,16 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
             />
           ) : null}
           <Folgekopf inhalt={inhalt} sprache={sprache} p={p} m={m} />
-          <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} />
-          <Titelblock blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} heft={opt?.heft} />
+          <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} design={design} />
+          <Titelblock blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} heft={opt?.heft} design={design} />
           <Bausteine c={c} liste={inhalt.bausteine} oben />
           <Fusszeile blatt={blatt} nr={opt?.nr} sprache={sprache} heft={opt?.heft} />
         </Page>
       ) : null}
-      {opt?.lehrer !== false ? <Lehrerseite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} nr={opt?.nr} heft={opt?.heft} /> : null}
-      {opt?.lehrer !== false && inhalt.lehrer.spielschule ? <IdeenSeite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} nr={opt?.nr} heft={opt?.heft} /> : null}
-      {opt?.lehrer !== false && experiment ? <ForschenSeite exp={experiment} sprache={sprache} p={p} kopf={lehrerKopf} fuss={fuss} unter={inhalt.titel} /> : null}
-      {opt?.lehrer !== false && hatBegleiten(blatt, inhalt.lehrer.spielschule) ? <BegleitenSeite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} kopf={lehrerKopf} fuss={fuss} /> : null}
+      {opt?.lehrer !== false ? <Lehrerseite blatt={blatt} inhalt={inhalt} sprache={sprache} p={bp} nr={opt?.nr} heft={opt?.heft} /> : null}
+      {opt?.lehrer !== false && inhalt.lehrer.spielschule ? <IdeenSeite blatt={blatt} inhalt={inhalt} sprache={sprache} p={bp} nr={opt?.nr} heft={opt?.heft} /> : null}
+      {opt?.lehrer !== false && experiment ? <ForschenSeite exp={experiment} sprache={sprache} p={bp} kopf={lehrerKopf} fuss={fuss} unter={inhalt.titel} /> : null}
+      {opt?.lehrer !== false && hatBegleiten(blatt, inhalt.lehrer.spielschule) ? <BegleitenSeite blatt={blatt} inhalt={inhalt} sprache={sprache} p={bp} kopf={lehrerKopf} fuss={fuss} /> : null}
       {zusaetze.map((z) =>
         z === 'klassenraster' ? (
           <KlassenrasterSeite key={z} inhalt={inhalt} sprache={sprache} p={p} kopf={lehrerKopf} fuss={fuss} />

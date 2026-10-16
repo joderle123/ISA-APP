@@ -5,6 +5,8 @@
 //     (Lehrerseite + „Aktivitäten & Ideen“), dazu je 1 Seite „Forschen“ (mit `experiment`) und „Beobachten &
 //     Begleiten“; jede Zusatzseite (Klassenraster, Portfolio-Blatt, Elternbrief, Forscherblatt) genau 1 Seite,
 //   • keine leere Seite (nur Kopf/Fußzeile),
+//   • Hinweise (·, zählen nicht als Fehler): die französische Fassung hat mehr Seiten als die deutsche; die letzte Seite des
+//     Schülerteils ist unter 50 % gefüllt (Platz für `fuellen: true` bei Feld, Linien, Karo oder Karten),
 //   • jede Seite trägt den Urheber-Vermerk des Bereichs in der Sprache des Blatts (urheberschaft in
 //     src/lib/urheber.ts) und daneben in der Fußzeile das CDSE-Logo (src/lib/cdse-logo.ts) – außer in der
 //     Spielschule (Michèle Wagner, ohne CDSE und ohne Logo).
@@ -71,7 +73,17 @@ for f in auftrag['dateien']:
         zeilen = [z for z in t.splitlines() if z.strip() and not any(m in z for m in auftrag['marken']) and not z.strip().startswith(('Seite ', 'Page ', '©'))]
         bilder = p.get_image_info()
         fuss = [b for b in bilder if p.rect.height - b['bbox'][1] < 45]
-        seiten.append({'inhalt': len(''.join(zeilen)) + (len(bilder) - len(fuss)) * 50 + len(p.get_drawings()), 'vermerk': auftrag['vermerk'][f] in t, 'logos': len(fuss)})
+        # Füllung: tiefster Inhalt (Text, Bild, Zeichnung) über der Fußzeile im Verhältnis zur Inhaltshöhe der Seite (30 pt oben, 52 pt unten)
+        h = p.rect.height
+        tiefste = 30.0
+        for blk in p.get_text('blocks'):
+            if blk[3] < h - 52 and blk[4].strip(): tiefste = max(tiefste, blk[3])
+        for b in bilder:
+            if b['bbox'][3] < h - 52: tiefste = max(tiefste, b['bbox'][3])
+        for dr in p.get_drawings():
+            r = dr['rect']
+            if r.y1 < h - 52 and r.width < p.rect.width - 10: tiefste = max(tiefste, r.y1)
+        seiten.append({'inhalt': len(''.join(zeilen)) + (len(bilder) - len(fuss)) * 50 + len(p.get_drawings()), 'vermerk': auftrag['vermerk'][f] in t, 'logos': len(fuss), 'fuell': (tiefste - 30) / (h - 52 - 30)})
     out[f] = seiten
 print(json.dumps(out))
 `
@@ -79,9 +91,11 @@ const listeDatei = join(tmp, 'liste.json')
 const marken = [...new Set(auftraege.flatMap((a) => Object.values(urheberschaft(a.blatt.bereich).marke)))]
 const vermerk = Object.fromEntries(auftraege.map((a) => [a.datei, urheberschaft(a.blatt.bereich).text[a.sprache]]))
 writeFileSync(listeDatei, JSON.stringify({ dateien: auftraege.map((a) => a.datei), vermerk, marken }))
-const ergebnis = JSON.parse(execFileSync('python3', ['-c', py, listeDatei], { maxBuffer: 64 * 1024 * 1024 }).toString()) as Record<string, { inhalt: number; vermerk: boolean; logos: number }[]>
+const ergebnis = JSON.parse(execFileSync('python3', ['-c', py, listeDatei], { maxBuffer: 64 * 1024 * 1024 }).toString()) as Record<string, { inhalt: number; vermerk: boolean; logos: number; fuell: number }[]>
 
 let fehler = 0
+let hinweise = 0
+const zahl = new Map(auftraege.map((a) => [`${a.blatt.nr}|${a.teil}|${a.sprache}`, (ergebnis[a.datei] ?? []).length]))
 for (const a of auftraege) {
   const seiten = ergebnis[a.datei] ?? []
   const wo = `${a.blatt.nr} ${a.blatt.id} ${a.sprache.toUpperCase()} ${a.teil === 'lehrer' ? 'Lehrerseite' : a.teil === 'schueler' ? 'Schülerteil' : a.teil}`
@@ -103,7 +117,20 @@ for (const a of auftraege) {
     fehler++
     console.log(`✗ ${wo}: ${probleme.join(' · ')}`)
   }
+  // Hinweise: FR länger als DE; letzte Kinderseite zu leer
+  const de = zahl.get(`${a.blatt.nr}|${a.teil}|de`) ?? 0
+  if (a.sprache === 'fr' && seiten.length > de && de > 0) {
+    hinweise++
+    console.log(`· ${wo}: französische Fassung hat mehr Seiten als die deutsche (${seiten.length} statt ${de})`)
+  }
+  if (a.sprache === 'de' && a.teil === 'schueler' && seiten.length) {
+    const letzte = seiten[seiten.length - 1].fuell
+    if (letzte < 0.5) {
+      hinweise++
+      console.log(`· ${wo}: letzte Seite nur zu ${Math.round(letzte * 100)} % gefüllt`)
+    }
+  }
 }
 rmSync(tmp, { recursive: true, force: true })
-console.log(`\n${liste.length} Blätter, ${auftraege.length} PDF-Teile geprüft – ${fehler} mit Problemen`)
+console.log(`\n${liste.length} Blätter, ${auftraege.length} PDF-Teile geprüft – ${fehler} mit Problemen, ${hinweise} Hinweise`)
 process.exit(fehler ? 1 : 0)

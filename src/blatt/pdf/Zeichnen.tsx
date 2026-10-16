@@ -79,3 +79,14 @@ export function Zeichnen({
     </Svg>
   )
 }
+
+/** Zeichnung, die die ganze Fläche ihres Elternelements nutzt (eingepasst, nicht verzerrt) – für Bilder in Karten, die mit dem
+ *  Restplatz der Seite wachsen. Das Elternelement braucht eine Höhe (z. B. flexGrow mit minHeight). */
+export function ZeichnungFlaeche({ z, p }: { z: Zeichnung; p: Palette }) {
+  const [x, y, vw, vh] = z.vb
+  return (
+    <Svg width="100%" height="100%" viewBox={`${x} ${y} ${vw} ${vh}`} preserveAspectRatio="xMidYMid meet">
+      {z.formen.map((f, i) => formPdf(f, p, z.w ?? 2, i))}
+    </Svg>
+  )
+}

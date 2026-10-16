@@ -4,19 +4,22 @@
 // Bereichs, Sprache) – dadurch sehen alle Blätter wie aus einem Guss aus.
 // ---------------------------------------------------------------------------
 
-import { View, Text, Svg, Path, Circle, Line, Rect, Polygon } from '@react-pdf/renderer'
+import { View, Text, Svg, Path, Circle, Line, Rect, Polygon, Defs, LinearGradient, Stop, G } from '@react-pdf/renderer'
 import type { ReactNode } from 'react'
 import type { Baustein, BildId, ComicFeld, Farbwort, Gefuehl, Rechnung, Sprache, Stufentext, Symbol } from '../typen'
 import { bildZeichnung, iconZeichnung, NEUTRAL, type Form, type Palette, type Zeichnung } from '../zeichnung'
 import { gefuehlWort, gesichtZeichnung } from '../gesichter'
 import { motivZeichnung, VULKAN, HAND, fingerSpitze, EISBERG } from '../motive'
-import { Zeichnen } from './Zeichnen'
+import { Zeichnen, ZeichnungFlaeche, ZeichnungG } from './Zeichnen'
 import { ForscherblattBlock } from './Forscherblatt'
 import { Bruchbilder, Diagramm, Flaeche, Geo, Hunderterfeld, Kommasprung, Paeckchen, Stellentafel, Strichliste, Temperatur, Treppe, Zahlenstrahl, Zeile } from './mathe'
 import { SCHRIFT, TEXTE, typo, type Masse } from './stil'
 import { FARBEN, farbTeile, type FarbTeil } from '../spielschule'
 import { Anziehpuppe, Bastelbogen, Faedelkarte, Klappbild, Labyrinth, Laufweg, Memory, Minibuch, PunkteVerbinden, SchneidenKleben, Suchbild } from './spielschule'
 import { Abhaken, Checkin, Stundenleiste, Wahlkarte, Zielkarte } from './passgenau'
+import { aufhellen, mischen, SEKTOR_TOENE, verlauf, WASSER, type Design } from './design'
+import { duotone, motivFuerIcon } from '../icon-motiv'
+import { istSzene, szeneMitFiguren } from '../szenen'
 
 export interface Ctx {
   m: Masse
@@ -27,6 +30,10 @@ export interface Ctx {
   breite: number
   /** Passgenau: Kennung des Teils, das mit diesem Baustein beginnt (Ziel im PDF für die antippbare Vorschau) */
   ids?: Map<Baustein, string>
+  /** Gestaltung nach Alter (Motive statt Piktogramme, Duotone, Jugendfiguren – siehe design.ts); ohne Angabe wie bisher */
+  design?: Design
+  /** Fülle die Restseite: der letzte Baustein dieser Liste darf bis zum Seitenende wachsen (siehe `fuellen`) */
+  fuellen?: boolean
 }
 
 type Tx = (typeof TEXTE)['de']
@@ -131,14 +138,42 @@ function Nummer({ c, n, d, farbe }: { c: Ctx; n: number | string; d?: number; fa
   )
 }
 
+/** Bild-Verweis in der Gestaltung der Stufe: junge Stufen sehen statt des Piktogramms das farbige Motiv mit derselben Bedeutung,
+ *  ältere Stufen statt der Kinderfigur eine Jugendfigur (design.ts, icon-motiv.ts). Ohne `c.design` bleibt der Verweis. */
+export function bildAuf(c: Ctx, id: BildId): BildId {
+  const d = c.design
+  if (!d) return id
+  if (d.motive && id.startsWith('icon:')) return motivFuerIcon(id)
+  if (d.figuren && id.startsWith('figur:')) {
+    const [, name, ...rest] = id.split(':')
+    const neu = d.figuren.get(name)
+    if (neu) return ['figur', neu, ...rest].join(':')
+  }
+  return id
+}
+
 export function Bild({ c, id, breite, hoehe, ausmalen }: { c: Ctx; id: BildId; breite?: number; hoehe?: number; ausmalen?: boolean }) {
+  id = bildAuf(c, id)
   let z = bildZeichnung(id)
   if (id.startsWith('icon:')) {
     // Piktogramme sind für 24 px gezeichnet: groß gedruckt den Strich verfeinern
     const g = Math.min(breite ?? hoehe ?? 24, hoehe ?? breite ?? 24)
     z = { ...z, w: Math.max(0.55, Math.min(1.7, (2.3 * 24) / g)) }
+    // Duotone (C3–ES): geschlossene Formen zart in der Bereichsfarbe, die Linie bleibt Tinte
+    if (c.design?.duotone && !ausmalen) z = { ...duotone(z, aufhellen(c.p.mittel, 0.8)), w: Math.max(0.7, Math.min(1.7, (2.5 * 24) / g)) }
   }
   return <Zeichnen z={ausmalen ? zumAusmalen(z) : z} p={c.p} breite={breite} hoehe={hoehe} />
+}
+
+/** Zeichnung eines Bild-Verweises mit denselben Regeln wie `Bild` (Motiv statt Piktogramm, Duotone, Jugendfigur), für flexible Flächen. */
+function bildFlaeche(c: Ctx, id: BildId, g = 70): Zeichnung {
+  const eff = bildAuf(c, id)
+  let z = bildZeichnung(eff)
+  if (eff.startsWith('icon:')) {
+    z = { ...z, w: Math.max(0.55, Math.min(1.7, (2.3 * 24) / g)) }
+    if (c.design?.duotone) z = { ...duotone(z, aufhellen(c.p.mittel, 0.8)), w: Math.max(0.7, Math.min(1.7, (2.5 * 24) / g)) }
+  }
+  return z
 }
 
 /** Alle Flächen weiß → Vorlage zum Ausmalen. */
@@ -151,12 +186,35 @@ export function zumAusmalen(z: Zeichnung): Zeichnung {
   return { ...z, formen: z.formen.map(weiss) }
 }
 
-/** Piktogramm auf zart getöntem Kreis (Leitbilder, Info-Kästen). */
+/** Piktogramm auf zart getöntem Kreis (Leitbilder, Info-Kästen). In den jungen Stufen steht statt des Piktogramms
+ *  das Motiv (größer, farbig), in den älteren das Duotone-Piktogramm (etwas größer als der graue Strich). */
 export function Plakette({ c, id, d, ton }: { c: Ctx; id: BildId; d: number; ton?: string }) {
-  const istIcon = id.startsWith('icon:') || !id.includes(':')
+  const eff = bildAuf(c, id)
+  const istIcon = eff.startsWith('icon:') || !eff.includes(':')
+  const g = istIcon ? d * (c.design?.duotone ? 0.6 : 0.52) : d * 0.8
   return (
     <View style={{ width: d, height: d, borderRadius: d / 2, backgroundColor: ton ?? c.p.zart, alignItems: 'center', justifyContent: 'center' }}>
-      <Bild c={c} id={id} breite={istIcon ? d * 0.52 : d * 0.8} hoehe={istIcon ? d * 0.52 : d * 0.8} />
+      <Bild c={c} id={eff} breite={g} hoehe={g} />
+    </View>
+  )
+}
+
+/** Leitbild im Kopf des Blatts, `h` hoch: Motiv (oder Figur) frei auf dem Band; ohne Motiv das Duotone-Piktogramm
+ *  auf weißem Kreis (Bilderbuch) bzw. getöntem Quadrat (Magazin). */
+export function Leitbild({ c, id, h, b }: { c: Ctx; id: BildId; h: number; b?: number }) {
+  const eff = bildAuf(c, id)
+  if (!(eff.startsWith('icon:') || !eff.includes(':'))) {
+    return (
+      <View style={{ height: h, justifyContent: 'center', alignItems: 'center' }}>
+        <Bild c={c} id={eff} breite={b ?? h * 1.5} hoehe={h} />
+      </View>
+    )
+  }
+  const magazin = !!c.design?.magazin
+  const s = Math.min(magazin ? h : h * 0.9, b ?? 999)
+  return (
+    <View style={{ width: s, height: s, borderRadius: magazin ? s * 0.26 : s / 2, backgroundColor: magazin ? c.p.zart : '#FFFFFF', alignItems: 'center', justifyContent: 'center' }}>
+      <Bild c={c} id={eff} breite={s * 0.58} hoehe={s * 0.58} />
     </View>
   )
 }
@@ -323,14 +381,56 @@ function Info({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'info' }> }) {
   )
 }
 
-function Geschichte({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'geschichte' }> }) {
-  const bildB = c.m.layout === 'jugend' ? 62 : 78
+/** Szene (mit Figur davor) als Zeichnung, die die Fläche füllt (zugeschnitten, nicht verzerrt). */
+function SzeneFlaeche({ c, z, b, h }: { c: Ctx; z: Zeichnung; b: number; h: number }) {
+  const [, , vw, vh] = z.vb
+  const k = Math.max(b / vw, h / vh)
   return (
-    <View wrap={false} style={{ flexDirection: 'row', backgroundColor: NEUTRAL.flaeche, borderRadius: 10, padding: 12 }}>
-      {b.bild ? (
-        <View style={{ width: bildB, marginRight: 12, alignItems: 'center', justifyContent: 'flex-end' }}>
-          <Bild c={c} id={b.bild} breite={bildB} hoehe={bildB * 1.5} />
+    <Svg width={b} height={h} viewBox={`0 0 ${b} ${h}`}>
+      <ZeichnungG z={z} p={c.p} x={(b - vw * k) / 2} y={(h - vh * k) / 2} b={vw * k} h={vh * k} />
+    </Svg>
+  )
+}
+
+function Geschichte({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'geschichte' }> }) {
+  // Die Figur steht als Porträt im Rahmen: Kopf und Oberkörper groß, die Beine sind abgeschnitten – das Gesicht (und damit das
+  // Gefühl) trägt die Geschichte. Der Rahmen ist so hoch wie vorher (117 pt); bei langem Text, der das Kästchen ohnehin hoch macht,
+  // wächst er mit (bis 176 pt). So ändert sich die Seitenhöhe nicht. Mit `szene` steht die ganze Figur in der Szene (src/blatt/szenen.ts).
+  const klein = c.m.layout === 'jugend' ? 62 : 78
+  const eff = b.bild ? bildAuf(c, b.bild) : ''
+  const szene = b.szene && c.design && istSzene(b.szene) ? b.szene : undefined
+  const figur = !!c.design && eff.startsWith('figur:') && !szene
+  let hFig = klein * 1.5
+  const breiteVon = (h: number) => (szene ? h * 1.25 : figur ? h * 0.72 : klein)
+  if (figur || szene) {
+    const fs = c.m.basis
+    const zeichenBreite = c.m.layout === 'jugend' ? 0.5 : 0.54
+    const textB = c.breite - 24 - 12 - breiteVon(hFig)
+    const zeilen = Math.ceil((b.text.length * zeichenBreite * fs * 1.06) / textB)
+    const hText = zeilen * fs * (c.m.lh + 0.08) + (b.titel ? c.m.basis * 1.05 * 1.3 + 4 : 0)
+    // geschätzt, eher zu klein als zu groß: der Rahmen darf das Kästchen nie höher machen als der Text
+    hFig = Math.max(hFig, Math.min(176, hText * 0.88))
+  }
+  const bildB = breiteVon(hFig)
+  const rahmen = { width: bildB, height: hFig - 2, marginRight: 12, borderRadius: 14, backgroundColor: '#FFFFFF', borderWidth: 1, borderColor: aufhellen(c.p.mittel, 0.7), overflow: 'hidden' as const, alignItems: 'center' as const }
+  return (
+    <View wrap={false} style={{ flexDirection: 'row', backgroundColor: c.design ? c.p.zart : NEUTRAL.flaeche, borderRadius: 10, padding: 12 }}>
+      {szene ? (
+        <View style={rahmen}>
+          <SzeneFlaeche c={c} z={szeneMitFiguren(szene, eff.startsWith('figur:') ? [{ bild: eff, x: 0.5, hoehe: 0.74 }] : [])} b={bildB - 2} h={hFig - 4} />
         </View>
+      ) : b.bild ? (
+        figur ? (
+          <View style={rahmen}>
+            <View style={{ position: 'absolute', top: hFig * 0.04, left: 0, right: 0, alignItems: 'center' }}>
+              <Bild c={c} id={eff} hoehe={hFig * 1.3} />
+            </View>
+          </View>
+        ) : (
+          <View style={{ width: klein, marginRight: 12, alignItems: 'center', justifyContent: 'flex-end' }}>
+            <Bild c={c} id={b.bild} breite={klein} hoehe={klein * 1.5} />
+          </View>
+        )
       ) : null}
       <View style={{ flex: 1 }}>
         {b.titel ? (
@@ -367,6 +467,8 @@ const REIHEN_ARTEN = new Set<Baustein['art']>(['bilder', 'comic', 'gefuehle', 'k
 
 /** Spalten mit Reihen-Bausteinen (und in der Spielschule immer) brechen als Ganzes nicht um; dann bricht innen nichts um. */
 export function spaltenFest(b: Extract<Baustein, { art: 'spalten' }>, layout: string): boolean {
+  // `zusammen`: Autor*in entscheidet (z. B. Spalten mit Info-Kästen, die nicht über die Seitengrenze brechen sollen)
+  if (b.zusammen !== undefined) return b.zusammen
   return layout === 'bild' || [...b.links, ...b.rechts].some((x) => REIHEN_ARTEN.has(x.art))
 }
 
@@ -416,10 +518,10 @@ function Satzanfaenge({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'satzanfae
   )
 }
 
-function Feld({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'feld' }> }) {
+function Feld({ c, b, grow }: { c: Ctx; b: Extract<Baustein, { art: 'feld' }>; grow?: boolean }) {
   const h = (b.hoehe ?? 4) * c.m.zeile
   return (
-    <View wrap={false} style={{ height: h, borderWidth: 1, borderColor: b.zeichnen ? c.p.mittel : NEUTRAL.rahmen, borderStyle: b.zeichnen ? 'dashed' : 'solid', borderRadius: 10, padding: 9 }}>
+    <View wrap={false} style={{ ...(grow ? { flexGrow: 1, minHeight: h } : { height: h }), borderWidth: 1, borderColor: b.zeichnen ? c.p.mittel : NEUTRAL.rahmen, borderStyle: b.zeichnen ? 'dashed' : 'solid', borderRadius: 10, padding: 9 }}>
       {b.label ? (
         <Fliess c={c} klein fett farbe={NEUTRAL.leise}>
           {t(c, b.label)}
@@ -439,36 +541,87 @@ function Feld({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'feld' }> }) {
   )
 }
 
+/** Schreiblinien: `grow` füllt den Rest der Seite (mehr Linien, vom Seitenrand abgeschnitten) – mindestens `n` bleiben. */
+function LinienBlock({ c, b, grow }: { c: Ctx; b: Extract<Baustein, { art: 'linien' }>; grow?: boolean }) {
+  const label = b.label ? (
+    <Fliess c={c} klein fett farbe={NEUTRAL.leise}>
+      {t(c, b.label)}
+    </Fliess>
+  ) : null
+  if (!grow)
+    return (
+      <View wrap={false}>
+        {label}
+        <Linien c={c} n={b.anzahl} />
+      </View>
+    )
+  const h = c.m.zeile
+  const w = c.breite
+  return (
+    <View wrap={false} style={{ flexGrow: 1 }}>
+      {label}
+      <View style={{ flexGrow: 1, minHeight: b.anzahl * h, overflow: 'hidden' }}>
+        <View style={{ position: 'absolute', left: 0, top: 0 }}>
+          <Svg width={w} height={MAX_REST + 2} viewBox={`0 0 ${w} ${MAX_REST + 2}`}>
+            {Array.from({ length: Math.floor(MAX_REST / h) }, (_, i) => (
+              <Line key={i} x1={0} y1={(i + 1) * h - 0.4} x2={w} y2={(i + 1) * h - 0.4} stroke={NEUTRAL.linie} strokeWidth={0.8} />
+            ))}
+          </Svg>
+        </View>
+      </View>
+    </View>
+  )
+}
+
+/** Höchste Restseite in pt, die gefüllt werden kann (A4 ohne Kopf und Fuß) */
+const MAX_REST = 760
+
 function Tabelle({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'tabelle' }> }) {
   const n = b.spalten.length
   const gew = b.breiten && b.breiten.length === n ? b.breiten : Array(n).fill(1)
   const summe = gew.reduce((a, x) => a + x, 0)
   const breite = (i: number) => `${(gew[i] / summe) * 100}%`
-  const zeileH = c.m.zeile * (c.m.layout === 'jugend' ? 1.35 : 1.25)
-  const zelle = (i: number, inhalt: ReactNode, kopf = false) => (
-    <View key={i} style={{ width: breite(i), borderRightWidth: i < n - 1 ? 0.8 : 0, borderRightColor: NEUTRAL.rahmen, paddingHorizontal: 6, paddingVertical: kopf ? 5 : 4, justifyContent: kopf ? 'center' : 'flex-start' }}>
+  const d = !!c.design
+  // Schrift: C3/C4 mindestens 10 pt (vorher 9,4), C1/C2 mindestens 11 pt; Jugendliche wie bisher kompakt
+  const gr = !d ? c.m.klein : c.m.layout === 'mittel' ? 10.5 : c.m.layout === 'jugend' ? c.m.klein : Math.max(c.m.klein, 11)
+  // Zeilenhöhe: `hoehe` in Schreibzeilen (für Antworten in ganzen Sätzen), sonst wie bisher
+  const zeileH = b.hoehe ? c.m.zeile * b.hoehe : c.m.zeile * (c.m.layout === 'jugend' ? 1.35 : 1.25)
+  const kopfTon = d ? mischen(c.p.zart, c.p.mittel, 0.5) : c.p.zart
+  const rahmen = d ? aufhellen(c.p.mittel, 0.75) : NEUTRAL.rahmen
+  const zelle = (i: number, inhalt: ReactNode, kopf = false, hoehe?: number) => (
+    <View key={i} style={{ width: breite(i), borderRightWidth: i < n - 1 ? 0.8 : 0, borderRightColor: rahmen, paddingHorizontal: 6, paddingVertical: kopf ? 5 : 4, justifyContent: kopf ? 'center' : 'flex-start', ...(kopf && b.kopffarben?.[i] ? { backgroundColor: aufhellen(FARBWORT[b.kopffarben[i]], 0.3) } : {}) }}>
+      {/* Antwortzellen mit mehreren Zeilen: zarte Schreiblinien */}
+      {hoehe && hoehe >= 2
+        ? Array.from({ length: Math.floor(hoehe) - 1 }, (_, k) => (
+            <View key={k} style={{ position: 'absolute', left: 6, right: 6, top: (k + 1) * c.m.zeile - 0.4, borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie }} />
+          ))
+        : null}
       {inhalt}
     </View>
   )
   return (
-    <View style={{ borderWidth: 0.8, borderColor: NEUTRAL.rahmen, borderRadius: 8 }}>
-      <View style={{ flexDirection: 'row', backgroundColor: c.p.zart, borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.rahmen }} wrap={false}>
+    <View style={{ borderWidth: 0.8, borderColor: rahmen, borderRadius: 8 }}>
+      <View style={{ flexDirection: 'row', backgroundColor: kopfTon, borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottomWidth: 0.8, borderBottomColor: rahmen }} wrap={false}>
         {b.spalten.map((s, i) =>
           zelle(
             i,
-            <Fliess c={c} klein fett>
-              {t(c, s)}
-            </Fliess>,
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+              {b.kopffarben?.[i] ? <View style={{ width: 7, height: 7, borderRadius: 3.5, backgroundColor: FARBWORT[b.kopffarben[i]], borderWidth: 0.8, borderColor: NEUTRAL.tinte, marginRight: 4 }} /> : null}
+              <Fliess c={c} klein fett groesse={gr} farbe={d ? c.p.tief : undefined} style={{ flex: 1 }}>
+                {t(c, s)}
+              </Fliess>
+            </View>,
             true,
           ),
         )}
       </View>
       {b.beispiel ? (
-        <View style={{ flexDirection: 'row', borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.rahmen, minHeight: zeileH }} wrap={false}>
+        // Beispielzeile: so groß wie der Text und in der Akzentfarbe, damit man sie als Vorbild liest (nicht als Grau-in-Grau)
+        <View style={{ flexDirection: 'row', borderBottomWidth: 0.8, borderBottomColor: rahmen, minHeight: zeileH, backgroundColor: d ? c.p.zart : undefined }} wrap={false}>
           {b.spalten.map((_, i) =>
             zelle(
               i,
-              <Fliess c={c} klein farbe={NEUTRAL.leise}>
+              <Fliess c={c} klein groesse={d ? gr : undefined} farbe={d ? c.p.tief : NEUTRAL.leise}>
                 {t(c, b.beispiel?.[i] ?? '')}
               </Fliess>,
             ),
@@ -476,20 +629,22 @@ function Tabelle({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'tabelle' }> })
         </View>
       ) : null}
       {(b.werte ?? []).map((w, r) => (
-        <View key={'w' + r} style={{ flexDirection: 'row', minHeight: zeileH, borderBottomWidth: r < (b.werte?.length ?? 0) - 1 || b.zeilen > 0 ? 0.8 : 0, borderBottomColor: NEUTRAL.rahmen }} wrap={false}>
-          {b.spalten.map((_, i) => zelle(i, <Fliess c={c} klein>{t(c, w[i] ?? '')}</Fliess>))}
+        <View key={'w' + r} style={{ flexDirection: 'row', minHeight: zeileH, borderBottomWidth: r < (b.werte?.length ?? 0) - 1 || b.zeilen > 0 ? 0.8 : 0, borderBottomColor: rahmen }} wrap={false}>
+          {b.spalten.map((_, i) => zelle(i, <Fliess c={c} klein groesse={gr}>{t(c, w[i] ?? '')}</Fliess>))}
         </View>
       ))}
       {Array.from({ length: b.zeilen }, (_, r) => (
-        <View key={r} style={{ flexDirection: 'row', height: zeileH, borderBottomWidth: r < b.zeilen - 1 ? 0.8 : 0, borderBottomColor: NEUTRAL.rahmen }} wrap={false}>
+        <View key={r} style={{ flexDirection: 'row', height: zeileH, borderBottomWidth: r < b.zeilen - 1 ? 0.8 : 0, borderBottomColor: rahmen }} wrap={false}>
           {b.spalten.map((_, i) =>
             zelle(
               i,
               i === 0 && typeof b.nummern === 'number' ? (
-                <Fliess c={c} klein farbe={NEUTRAL.leise}>
+                <Fliess c={c} klein groesse={gr} farbe={NEUTRAL.leise}>
                   {String(b.nummern + r)}
                 </Fliess>
               ) : null,
+              false,
+              i === 0 && typeof b.nummern === 'number' ? undefined : b.hoehe,
             ),
           )}
         </View>
@@ -556,6 +711,7 @@ function Blase({ c, text, linien, rechts, denken }: { c: Ctx; text?: string; lin
 }
 
 function Dialog({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'dialog' }> }) {
+  if (b.stil === 'chat') return <ChatVerlauf c={c} b={b} />
   return (
     <View>
       {b.zeilen.map((z, i) => {
@@ -570,6 +726,44 @@ function Dialog({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'dialog' }> }) {
             <View style={{ flex: 1, maxWidth: '80%' }}>
               <Blase c={c} text={z.text} linien={2} rechts={rechts} />
             </View>
+          </View>
+        )
+      })}
+    </View>
+  )
+}
+
+/** Handy-Verlauf: Blasen links (weiß) und rechts (getönt) auf einem hellen Chat-Hintergrund, Name über der Blase, optional Uhrzeit darunter.
+ *  Ohne Marken und Zeichen echter Apps. Leere Blasen haben Schreiblinien. */
+function ChatVerlauf({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'dialog' }> }) {
+  const rechtsTon = mischen(c.p.zart, c.p.mittel, 0.5)
+  return (
+    <View style={{ backgroundColor: NEUTRAL.flaeche, borderWidth: 0.8, borderColor: NEUTRAL.rahmen, borderRadius: 16, paddingHorizontal: 12, paddingTop: 8, paddingBottom: 3 }}>
+      <View style={{ alignSelf: 'center', width: 34, height: 3.5, borderRadius: 2, backgroundColor: NEUTRAL.rahmen, marginBottom: 8 }} />
+      {b.zeilen.map((z, i) => {
+        const rechts = i % 2 === 1
+        return (
+          <View key={i} wrap={false} style={{ alignItems: rechts ? 'flex-end' : 'flex-start', marginBottom: 7 }}>
+            <Fliess c={c} klein fett farbe={rechts ? c.p.tief : NEUTRAL.leise} style={{ marginBottom: 1.5, marginHorizontal: 7 }}>
+              {t(c, z.wer)}
+            </Fliess>
+            <View
+              style={{
+                ...(z.text ? { maxWidth: '80%' } : { width: '80%' }),
+                backgroundColor: rechts ? rechtsTon : '#FFFFFF',
+                borderWidth: 1,
+                borderColor: rechts ? c.p.tief : NEUTRAL.rahmen,
+                borderRadius: 14,
+                [rechts ? 'borderBottomRightRadius' : 'borderBottomLeftRadius']: 3,
+                paddingHorizontal: 10,
+                paddingVertical: z.text ? 6 : 1,
+              }}
+            >
+              {z.text ? <Fliess c={c}>{t(c, z.text)}</Fliess> : <Linien c={c} n={2} hoehe={c.m.zeile * 0.95} />}
+            </View>
+            {z.zeit ? (
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.8, color: NEUTRAL.sehrLeise, marginTop: 1.5, marginHorizontal: 7 }}>{z.zeit}</Text>
+            ) : null}
           </View>
         )
       })}
@@ -659,6 +853,7 @@ function Bilder({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'bilder' }> }) {
   const sp = Math.min(b.spalten ?? (b.bilder.length <= 4 ? b.bilder.length : 3), spMax)
   const kb = Math.floor(((c.breite - luecke * (sp - 1)) / sp) * 100) / 100
   if (b.klein) {
+    // kompakte Reihe: Motiv (junge Stufen) oder Duotone-Piktogramm auf getöntem Kreis, etwas größer als früher
     const d = c.m.basis * 3.1
     return (
       <View>
@@ -685,34 +880,39 @@ function Bilder({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'bilder' }> }) {
       </View>
     )
   }
+  // Karten: Motiv 62 % der Zellbreite (statt eines Piktogramms im Kreis, das nur ein Drittel füllte) auf getöntem Kartengrund; die Beschriftung
+  // bleibt in C1 und C2 mindestens 11 pt. Die Zellhöhe bleibt wie vorher – die Seitenzahl darf nicht steigen.
   const bildB = Math.min(kb * 0.62, 110)
   const innen = kb - 12
-  const minSchrift = c.m.layout === 'bild' ? 11 : c.m.klein
+  const minSchrift = c.m.layout === 'bild' || c.m.layout === 'gross' ? 11 : c.m.klein
+  const anmalen = b.modus === 'anmalen'
+  const grund = c.design ? (anmalen ? '#FFFFFF' : c.p.zart) : undefined
+  const rand = c.design ? aufhellen(c.p.mittel, 0.7) : NEUTRAL.haarlinie
   return (
     <View>
       {reihen(b.bilder, sp).map((reihe, k) => (
         <View key={k} wrap={false} style={{ flexDirection: 'row' }}>
-          {reihe.map((x, i) => (
-            <View key={i} style={{ width: kb, marginRight: i < sp - 1 ? luecke : 0, marginBottom: luecke, borderWidth: istHeute(x) ? 2 : 1, borderColor: istHeute(x) ? c.p.tief : NEUTRAL.haarlinie, backgroundColor: istHeute(x) ? c.p.zart : undefined, borderRadius: 12, alignItems: 'center', paddingVertical: istHeute(x) ? 9 : 10, paddingHorizontal: istHeute(x) ? 5 : 6 }}>
-              <View style={{ height: bildB * 0.95, justifyContent: 'center', alignItems: 'center' }}>
-                {x.bild.startsWith('icon:') && b.modus !== 'anmalen' ? (
-                  <Plakette c={c} id={x.bild} d={bildB * 0.92} />
-                ) : (
-                  <Bild c={c} id={x.bild} breite={bildB} hoehe={bildB * 0.95} ausmalen={b.modus === 'anmalen'} />
-                )}
-              </View>
-              {x.text ? (
-                <Fliess c={c} zentriert groesse={passend(x.text.replace(/[{}]/g, ''), innen, c.m.basis, minSchrift)} style={{ marginTop: 6, maxWidth: innen }}>
-                  {t(c, x.text)}
-                </Fliess>
-              ) : null}
-              {b.modus === 'ankreuzen' ? (
-                <View style={{ marginTop: 6 }}>
-                  <Kaestchen c={c} groesse={kreuzGroesse(c)} />
+          {reihe.map((x, i) => {
+            const eff = bildAuf(c, x.bild)
+            const pikto = eff.startsWith('icon:') && !anmalen
+            return (
+              <View key={i} style={{ width: kb, marginRight: i < sp - 1 ? luecke : 0, marginBottom: luecke, borderWidth: istHeute(x) ? 2 : 1, borderColor: istHeute(x) ? c.p.tief : rand, backgroundColor: istHeute(x) ? (c.design ? aufhellen(c.p.mittel, 0.55) : c.p.zart) : grund, borderRadius: 12, alignItems: 'center', paddingVertical: istHeute(x) ? 9 : 10, paddingHorizontal: istHeute(x) ? 5 : 6 }}>
+                <View style={{ height: bildB * 0.95, justifyContent: 'center', alignItems: 'center' }}>
+                  {pikto ? <Plakette c={c} id={eff} d={bildB * 0.92} ton="#FFFFFF" /> : <Bild c={c} id={eff} breite={bildB} hoehe={bildB * 0.95} ausmalen={anmalen} />}
                 </View>
-              ) : null}
-            </View>
-          ))}
+                {x.text ? (
+                  <Fliess c={c} zentriert groesse={passend(x.text.replace(/[{}]/g, ''), innen, c.m.basis, minSchrift)} style={{ marginTop: 6, maxWidth: innen }}>
+                    {t(c, x.text)}
+                  </Fliess>
+                ) : null}
+                {b.modus === 'ankreuzen' ? (
+                  <View style={{ marginTop: 6 }}>
+                    <Kaestchen c={c} groesse={kreuzGroesse(c)} />
+                  </View>
+                ) : null}
+              </View>
+            )
+          })}
         </View>
       ))}
     </View>
@@ -746,24 +946,44 @@ function Skala({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'skala' }> }) {
   const werte = Array.from({ length: n }, (_, i) => start + i)
   const d = Math.min(c.m.kaestchen * 1.9, (c.breite - 20) / n - 6)
   const gesichter = b.gesichter && n === 5
+  // Farbverlauf (Thermometer-Balken) in der Bereichsfarbe: von hell nach kräftig, ohne Ampelfarben – die Skala wertet nicht
+  const verlaufB = !!c.design
+  const bandH = d + 8
+  const gid = 'sk' + c.p.tief.slice(1)
   return (
     <View wrap={false}>
       {b.frage ? <Fliess c={c} style={{ marginBottom: 6 }}>{t(c, b.frage)}</Fliess> : null}
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 4 }}>
-        {werte.map((w, i) => (
-          <View key={w} style={{ alignItems: 'center', width: gesichter ? d * 1.6 : d }}>
-            {gesichter ? (
-              <Zeichnen z={gesichtZeichnung(SKALA_GESICHTER[i])} p={c.p} breite={d * 1.35} />
-            ) : (
-              <View style={{ width: d, height: d, borderRadius: d / 2, borderWidth: 1.1, borderColor: NEUTRAL.leise, alignItems: 'center', justifyContent: 'center' }}>
-                <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 700, fontSize: d * 0.42, color: NEUTRAL.leise }}>{String(w)}</Text>
-              </View>
-            )}
+      <View style={{ height: verlaufB ? bandH : undefined, justifyContent: 'center' }}>
+        {verlaufB ? (
+          <View style={{ position: 'absolute', left: 0, top: 0 }}>
+            <Svg width={c.breite} height={bandH} viewBox={`0 0 ${c.breite} ${bandH}`}>
+              <Defs>
+                <LinearGradient id={gid} x1="0" y1="0" x2="1" y2="0">
+                  <Stop offset="0" stopColor={verlauf(c.p, 0.02)} />
+                  <Stop offset="0.5" stopColor={verlauf(c.p, 0.5)} />
+                  <Stop offset="1" stopColor={verlauf(c.p, 0.95)} />
+                </LinearGradient>
+              </Defs>
+              <Rect x={0} y={0} width={c.breite} height={bandH} rx={bandH / 2} fill={`url(#${gid})`} />
+            </Svg>
           </View>
-        ))}
+        ) : null}
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: verlaufB ? 4 + 4 : 4 }}>
+          {werte.map((w, i) => (
+            <View key={w} style={{ alignItems: 'center', width: gesichter ? d * 1.6 : d }}>
+              {gesichter ? (
+                <Zeichnen z={gesichtZeichnung(SKALA_GESICHTER[i])} p={c.p} breite={d * 1.35} />
+              ) : (
+                <View style={{ width: d, height: d, borderRadius: d / 2, borderWidth: verlaufB ? 1.3 : 1.1, borderColor: verlaufB ? c.p.tief : NEUTRAL.leise, backgroundColor: verlaufB ? '#FFFFFF' : undefined, alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 700, fontSize: d * 0.42, color: verlaufB ? NEUTRAL.text : NEUTRAL.leise }}>{String(w)}</Text>
+                </View>
+              )}
+            </View>
+          ))}
+        </View>
       </View>
-      <View style={{ height: 3, marginHorizontal: d / 2 + 4, marginTop: 5, borderRadius: 2, backgroundColor: c.p.mittel }} />
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 4 }}>
+      {verlaufB ? null : <View style={{ height: 3, marginHorizontal: d / 2 + 4, marginTop: 5, borderRadius: 2, backgroundColor: c.p.mittel }} />}
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: verlaufB ? 3 : 4 }}>
         <Fliess c={c} klein farbe={NEUTRAL.leise} style={{ maxWidth: '45%' }}>
           {t(c, b.von)}
         </Fliess>
@@ -780,15 +1000,19 @@ function Einschaetzung({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'einschae
   const optB = Math.min(64, (c.breite * 0.46) / n)
   return (
     <View style={{ borderWidth: 0.8, borderColor: NEUTRAL.rahmen, borderRadius: 8 }}>
-      <View wrap={false} style={{ flexDirection: 'row', backgroundColor: c.p.zart, borderTopLeftRadius: 7.2, borderTopRightRadius: 7.2, paddingVertical: 5 }}>
+      <View wrap={false} style={{ flexDirection: 'row', backgroundColor: c.design ? mischen(c.p.zart, c.p.mittel, 0.5) : c.p.zart, borderTopLeftRadius: 7.2, borderTopRightRadius: 7.2, paddingVertical: 5 }}>
         <View style={{ flex: 1 }} />
-        {b.optionen.map((o, i) => (
-          <View key={i} style={{ width: optB, paddingHorizontal: 2 }}>
-            <Fliess c={c} klein fett zentriert>
-              {t(c, o)}
-            </Fliess>
-          </View>
-        ))}
+        {b.optionen.map((o, i) => {
+          const farbe = b.kopffarben?.[i]
+          return (
+            <View key={i} style={{ width: optB, paddingHorizontal: 2, alignItems: 'center' }}>
+              {farbe ? <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: FARBWORT[farbe], borderWidth: 0.8, borderColor: NEUTRAL.tinte, marginBottom: 2 }} /> : null}
+              <Fliess c={c} klein fett zentriert farbe={c.design ? c.p.tief : undefined}>
+                {t(c, o)}
+              </Fliess>
+            </View>
+          )
+        })}
       </View>
       {b.items.map((x, r) => (
         <View
@@ -914,13 +1138,6 @@ const RAD: Record<Sprache, RadFeld[]> = {
     { wort: 'triste', farbe: 'blau', aussen: ['déçu', 'seul', 'ennuyé', 'fatigué'] },
     { wort: 'calme', farbe: 'gruen', aussen: ['détendu', 'content', 'en sécurité', 'reconnaissant'] },
   ],
-}
-
-/** Farbe mit Weiß mischen (anteil 0 = weiß, 1 = volle Farbe). */
-function aufhellen(hex: string, anteil: number): string {
-  const n = parseInt(hex.slice(1), 16)
-  const k = (v: number) => Math.round(255 - (255 - v) * anteil).toString(16).padStart(2, '0')
-  return `#${k((n >> 16) & 255)}${k((n >> 8) & 255)}${k(n & 255)}`
 }
 
 function Gefuehlsrad({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'gefuehlsrad' }> }) {
@@ -1162,6 +1379,19 @@ function Koerper({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'koerper' }> })
   )
 }
 
+/** Leere Batterie mit fünf Feldern zum Ausmalen (statt 3 von 5 gefüllt, was wie ein Ergebnis wirkt). */
+function BatterieLeer({ w }: { w: number }) {
+  return (
+    <Svg width={w} height={w * 0.42} viewBox="0 0 200 84">
+      <Rect x={4} y={6} width={176} height={72} rx={14} fill="#FFFFFF" stroke={NEUTRAL.tinte} strokeWidth={4} />
+      <Rect x={184} y={28} width={12} height={28} rx={4} fill={NEUTRAL.tinte} />
+      {[0, 1, 2, 3, 4].map((i) => (
+        <Rect key={i} x={15 + i * 32} y={17} width={27} height={50} rx={5} fill="#FFFFFF" stroke={NEUTRAL.sehrLeise} strokeWidth={2} strokeDasharray="4 3" />
+      ))}
+    </Svg>
+  )
+}
+
 function Batterie({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'batterie' }> }) {
   const n = b.linien ?? 4
   const spalte = (titel: string, icon: string, ton: string, rand: string) => (
@@ -1178,7 +1408,7 @@ function Batterie({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'batterie' }> 
   return (
     <View wrap={false}>
       <View style={{ alignItems: 'center', marginBottom: 10 }}>
-        <Zeichnen z={motivZeichnung('batterie')} p={c.p} breite={Math.min(170, c.breite * 0.4)} />
+        {b.leer ? <BatterieLeer w={Math.min(170, c.breite * 0.4)} /> : <Zeichnen z={motivZeichnung('batterie')} p={c.p} breite={Math.min(170, c.breite * 0.4)} />}
       </View>
       <View style={{ flexDirection: 'row' }}>
         {spalte(b.laden, 'battery-4', '#EAF5EE', '#BFDCC8')}
@@ -1247,20 +1477,26 @@ function Leiter({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'leiter' }> }) {
 
 function Zielscheibe({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'zielscheibe' }> }) {
   const n = b.ringe.length
-  const d = Math.min(c.breite, c.m.layout === 'jugend' ? 330 : 360)
+  // Viele oder lange Ringnamen passen nicht in die schmalen Ringe: dann stehen nur Nummern auf der Scheibe und die Namen als Liste daneben
+  const daneben = b.daneben ?? (n >= 5 || b.ringe.some((r) => r.length > 14))
+  const d = daneben ? Math.min(c.breite * 0.56, 290) : Math.min(c.breite, c.m.layout === 'jugend' ? 330 : 360)
   const r = d / 2
   const schritt = r / (n + 0.8)
   const toene = [c.p.zart, '#FFFFFF']
-  return (
-    <View wrap={false} style={{ alignItems: 'center' }}>
-      <View style={{ width: d, height: d }}>
-        <Svg width={d} height={d} viewBox={`0 0 ${d} ${d}`}>
-          {b.ringe.map((_, i) => (
-            <Circle key={i} cx={r} cy={r} r={r - i * schritt - 1} fill={toene[i % 2]} stroke={c.p.tief} strokeWidth={1.2} />
-          ))}
-          <Circle cx={r} cy={r} r={schritt * 0.8} fill={c.p.mittel} stroke={c.p.tief} strokeWidth={1.4} />
-        </Svg>
-        {b.ringe.map((s, i) => (
+  const scheibe = (
+    <View style={{ width: d, height: d }}>
+      <Svg width={d} height={d} viewBox={`0 0 ${d} ${d}`}>
+        {b.ringe.map((_, i) => (
+          <Circle key={i} cx={r} cy={r} r={r - i * schritt - 1} fill={toene[i % 2]} stroke={c.p.tief} strokeWidth={1.2} />
+        ))}
+        <Circle cx={r} cy={r} r={schritt * 0.8} fill={c.p.mittel} stroke={c.p.tief} strokeWidth={1.4} />
+      </Svg>
+      {b.ringe.map((s, i) =>
+        daneben ? (
+          <View key={i} style={{ position: 'absolute', top: i * schritt + (schritt - 14) / 2 + 1, left: 0, right: 0, alignItems: 'center' }}>
+            <Nummer c={c} n={i + 1} d={14} />
+          </View>
+        ) : (
           <View key={i} style={{ position: 'absolute', top: i * schritt + 5, left: 0, right: 0, alignItems: 'center' }}>
             <View style={{ backgroundColor: '#FFFFFF', borderRadius: 8, paddingHorizontal: 6 }}>
               <Fliess c={c} klein fett farbe={c.p.tief}>
@@ -1268,12 +1504,37 @@ function Zielscheibe({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'zielscheib
               </Fliess>
             </View>
           </View>
+        ),
+      )}
+      <View style={{ position: 'absolute', top: r - 9, left: 0, right: 0, alignItems: 'center' }}>
+        <Fliess c={c} fett>
+          {t(c, b.mitte ?? tx(c).ich)}
+        </Fliess>
+      </View>
+    </View>
+  )
+  if (!daneben)
+    return (
+      <View wrap={false} style={{ alignItems: 'center' }}>
+        {scheibe}
+      </View>
+    )
+  return (
+    <View wrap={false} style={{ flexDirection: 'row', alignItems: 'center' }}>
+      {scheibe}
+      <View style={{ flex: 1, marginLeft: 16 }}>
+        {b.ringe.map((s, i) => (
+          <View key={i} style={{ flexDirection: 'row', alignItems: 'flex-end', marginBottom: 8 }}>
+            <Nummer c={c} n={i + 1} d={c.m.nummer * 0.85} />
+            <View style={{ flex: 1, marginLeft: 8, minHeight: c.m.zeile * 0.9, justifyContent: 'flex-end', borderBottomWidth: s ? 0 : 0.8, borderBottomColor: NEUTRAL.linie }}>
+              {s ? (
+                <Fliess c={c} fett>
+                  {t(c, s)}
+                </Fliess>
+              ) : null}
+            </View>
+          </View>
         ))}
-        <View style={{ position: 'absolute', top: r - 9, left: 0, right: 0, alignItems: 'center' }}>
-          <Fliess c={c} fett>
-            {t(c, b.mitte ?? tx(c).ich)}
-          </Fliess>
-        </View>
       </View>
     </View>
   )
@@ -1639,18 +1900,31 @@ function ComicPanel({ c, f, breite, hoehe }: { c: Ctx; f: ComicFeld; breite: num
   const blase = f.blase ?? (f.leer ? 'keine' : 'sprechen')
   const figH = hoehe * (blase === 'keine' ? 0.8 : 0.58)
   const spricht = f.sprecher ?? 0
+  // Kulisse (src/blatt/szenen.ts) hinter den Figuren
+  const szene = f.szene && c.design && istSzene(f.szene) ? bildZeichnung(`szene:${f.szene}`) : undefined
+  const kulisse = szene ? (
+    <View style={{ position: 'absolute', left: 0, top: 0 }}>
+      <SzeneFlaeche c={c} z={szene} b={breite - 3} h={hoehe - 3} />
+    </View>
+  ) : null
   return (
     <View style={{ width: breite }}>
       <View style={{ height: hoehe, borderWidth: 1.4, borderColor: NEUTRAL.tinte, borderRadius: 6, overflow: 'hidden', backgroundColor: '#FFFFFF' }}>
         {f.leer ? (
-          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Fliess c={c} klein farbe={NEUTRAL.sehrLeise}>
-              {tx(c).zeichnen}
-            </Fliess>
-          </View>
+          <>
+            {kulisse}
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+              {szene ? null : (
+                <Fliess c={c} klein farbe={NEUTRAL.sehrLeise}>
+                  {tx(c).zeichnen}
+                </Fliess>
+              )}
+            </View>
+          </>
         ) : (
           <>
-            <View style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: hoehe * 0.16, backgroundColor: NEUTRAL.flaeche }} />
+            {kulisse}
+            {szene ? null : <View style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: hoehe * 0.16, backgroundColor: NEUTRAL.flaeche }} />}
             {blase !== 'keine' ? (
               <View style={{ position: 'absolute', top: 7, left: 8, right: 8 }}>
                 <View style={{ alignSelf: figuren.length > 1 && spricht === 1 ? 'flex-end' : figuren.length === 1 ? 'center' : 'flex-start', maxWidth: '92%', minWidth: '62%' }}>
@@ -1671,7 +1945,7 @@ function ComicPanel({ c, f, breite, hoehe }: { c: Ctx; f: ComicFeld; breite: num
                 </View>
               </View>
             ) : null}
-            <View style={{ position: 'absolute', left: 0, right: 0, bottom: hoehe * 0.06, flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'flex-end' }}>
+            <View style={{ position: 'absolute', left: 0, right: 0, bottom: hoehe * (szene ? 0.1 : 0.06), flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'flex-end' }}>
               {figuren.map((id, i) => (
                 <View key={i} style={{ alignItems: 'center' }}>
                   <Bild c={c} id={id} hoehe={figH} />
@@ -1721,33 +1995,88 @@ function Comic({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'comic' }> }) {
   )
 }
 
-function Karten({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'karten' }> }) {
+function Karten({ c, b, grow }: { c: Ctx; b: Extract<Baustein, { art: 'karten' }>; grow?: boolean }) {
   const sp = b.spalten ?? 3
-  const kb = (c.breite - 1.5) / sp
+  const schneiden = b.schneiden !== false
+  const luecke = schneiden ? 0 : 8
+  const kb = (c.breite - 1.5 - luecke * (sp - 1)) / sp
   const kh = b.hoehe ?? (sp === 2 ? 150 : sp === 3 ? 124 : 104)
-  const bildH = kh * 0.42
-  return (
-    <View>
-      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 3 }}>
-        <Zeichnen z={iconZeichnung('scissors')} p={c.p} breite={13} />
-        <View style={{ flex: 1, marginLeft: 6, borderTopWidth: 1, borderTopColor: NEUTRAL.sehrLeise, borderStyle: 'dashed' }} />
-      </View>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', borderLeftWidth: 1, borderLeftColor: NEUTRAL.sehrLeise, borderStyle: 'dashed' }}>
-        {b.karten.map((k, i) => (
-          <View key={i} wrap={false} style={{ width: kb, height: kh, borderRightWidth: 1, borderBottomWidth: 1, borderColor: NEUTRAL.sehrLeise, borderStyle: 'dashed', borderTopWidth: i < sp ? 1 : 0, padding: 9, alignItems: 'center', justifyContent: 'center' }}>
-            {k.bild ? (
-              <View style={{ height: bildH, justifyContent: 'center', marginBottom: 5 }}>
-                <Bild c={c} id={k.bild} hoehe={bildH} breite={kb * 0.6} />
+  const titelGr = c.m.basis * (sp >= 4 ? 0.9 : 1)
+  // Beschriftung in C1/C2 mindestens 11 pt (Zweitzeile: „das Kalb“)
+  const textGr = c.m.layout === 'bild' || c.m.layout === 'gross' ? Math.max(c.m.klein, 11) : c.m.klein
+  // Das Motiv bekommt, was neben der Beschriftung übrig ist: gut 60 % der Karte, vorher 42 %
+  const textHoehe = (k: { titel?: string; text?: string }) => {
+    const innen = kb - 18
+    const zeilen = (s: string, gr: number) => Math.max(1, Math.ceil((s.length * gr * 0.55) / innen))
+    return (k.titel ? zeilen(k.titel, titelGr) * titelGr * 1.3 : 0) + (k.text ? zeilen(k.text, textGr) * textGr * c.m.lh + 2 : 0)
+  }
+  const bildHoehe = (k: { titel?: string; text?: string }) => (c.design ? Math.max(kh * 0.36, Math.min(kh * 0.62, kh - 18 - 7 - textHoehe(k))) : kh * 0.42)
+  const kante = NEUTRAL.sehrLeise
+  const karte = (k: (typeof b.karten)[number], i: number, r: number) => {
+    const bildH = bildHoehe(k)
+    const stil = schneiden
+      ? { borderRightWidth: 1, borderBottomWidth: 1, borderColor: kante, borderStyle: 'dashed' as const, borderTopWidth: r === 0 ? 1 : 0 }
+      : { borderWidth: 1, borderColor: aufhellen(c.p.mittel, 0.6), borderRadius: 10, marginRight: i < sp - 1 ? luecke : 0, marginBottom: luecke }
+    const abzeichen =
+      k.nummer !== undefined || k.farbe ? (
+        <View style={{ position: 'absolute', left: 6, top: 6 }}>
+          {k.nummer !== undefined ? <Nummer c={c} n={k.nummer} d={16} farbe={k.farbe ? FARBWORT[k.farbe] : undefined} /> : <View style={{ width: 10, height: 10, borderRadius: 5, backgroundColor: FARBWORT[k.farbe!], borderWidth: 0.8, borderColor: NEUTRAL.tinte }} />}
+        </View>
+      ) : null
+    const beschriftung = (
+      <>
+        {k.titel ? (
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: titelGr, color: c.p.tief, textAlign: 'center' }}>{t(c, k.titel)}</Text>
+        ) : null}
+        {k.text ? (
+          <Fliess c={c} klein groesse={textGr} zentriert style={{ marginTop: 2 }}>
+            {t(c, k.text)}
+          </Fliess>
+        ) : null}
+      </>
+    )
+    const kasten = { width: kb, ...(grow ? { minHeight: kh } : { height: kh }), ...stil, backgroundColor: c.design ? c.p.zart : undefined }
+    // wachsende Karten: Bild und Beschriftung liegen frei in der Karte (Bild oben, so groß wie der Platz erlaubt, Text unten) –
+    // so wächst das Motiv mit der Karte, ohne dass die Höhe vom Inhalt abhängt
+    if (grow)
+      return (
+        <View key={i} wrap={false} style={kasten}>
+          {k.bild ? (
+            <View style={{ position: 'absolute', left: 9, right: 9, top: 9, bottom: 9 + textHoehe(k) + 8, alignItems: 'center', justifyContent: 'center' }}>
+              {/* Motive wachsen mit der Karte, Piktogramme bleiben bei höchstens 100 pt (sonst würde der Strich plump) */}
+              <View style={{ width: '100%', height: '100%', ...(bildAuf(c, k.bild).startsWith('icon:') ? { maxWidth: 100, maxHeight: 100 } : {}) }}>
+                <ZeichnungFlaeche z={bildFlaeche(c, k.bild, 90)} p={c.p} />
               </View>
-            ) : null}
-            {k.titel ? (
-              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: c.m.basis * (sp >= 4 ? 0.9 : 1), color: c.p.tief, textAlign: 'center' }}>{t(c, k.titel)}</Text>
-            ) : null}
-            {k.text ? (
-              <Fliess c={c} klein zentriert style={{ marginTop: 2 }}>
-                {t(c, k.text)}
-              </Fliess>
-            ) : null}
+            </View>
+          ) : null}
+          <View style={{ position: 'absolute', left: 9, right: 9, bottom: 9, alignItems: 'center' }}>{beschriftung}</View>
+          {abzeichen}
+        </View>
+      )
+    return (
+      <View key={i} wrap={false} style={{ ...kasten, padding: 9, alignItems: 'center', justifyContent: 'center' }}>
+        {abzeichen}
+        {k.bild ? (
+          <View style={{ height: bildH, justifyContent: 'center', marginBottom: 5 }}>
+            <Bild c={c} id={k.bild} hoehe={bildH} breite={kb * (c.design ? 0.74 : 0.6)} />
+          </View>
+        ) : null}
+        {beschriftung}
+      </View>
+    )
+  }
+  return (
+    <View style={grow ? { flexGrow: 1 } : undefined}>
+      {schneiden ? (
+        <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 3 }}>
+          <Zeichnen z={iconZeichnung('scissors')} p={c.p} breite={13} />
+          <View style={{ flex: 1, marginLeft: 6, borderTopWidth: 1, borderTopColor: kante, borderStyle: 'dashed' }} />
+        </View>
+      ) : null}
+      <View style={{ ...(grow ? { flexGrow: 1 } : {}), ...(schneiden ? { borderLeftWidth: 1, borderLeftColor: kante, borderStyle: 'dashed' as const } : {}) }}>
+        {reihen(b.karten, sp).map((reihe, r) => (
+          <View key={r} wrap={false} style={{ flexDirection: 'row', ...(grow ? { flexGrow: 1 } : {}) }}>
+            {reihe.map((k, i) => karte(k, i, r))}
           </View>
         ))}
       </View>
@@ -1830,29 +2159,43 @@ function Notfall({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'notfall' }> })
 // Ruhige Liniengrafiken zum Füllen, Ausmalen und Einzeichnen – viel Weißraum, dünne Striche
 // in der Bereichsfarbe, keine Deko.
 
-/** Ein Glas als Umriss: oben offen breit, unten schmaler mit runden Ecken. */
-function GlasForm({ b, h, farbe, fuell, strich, skala, feinFarbe }: { b: number; h: number; farbe: string; fuell?: number; strich?: number; skala?: boolean; feinFarbe?: string }) {
+/** Ein Glas als Umriss: oben offen breit, unten schmaler mit runden Ecken.
+ *  `wasser`: das Glas ist zart wasserblau getönt, Wasser (`fuell`) ist blau; `teilstriche`: ¼ ½ ¾ links neben dem Glas. */
+function GlasForm({ b, h, farbe, fuell, strich, skala, feinFarbe, wasser, teilstriche }: { b: number; h: number; farbe: string; fuell?: number; strich?: number; skala?: boolean; feinFarbe?: string; wasser?: boolean; teilstriche?: boolean }) {
   const ein = b * 0.13
   const r = b * 0.17
   const umriss = `M1 1 L${b - 1} 1 L${b - 1 - ein} ${h - 1 - r} Q${b - 1 - ein} ${h - 1} ${b - 1 - ein - r} ${h - 1} L${1 + ein + r} ${h - 1} Q${1 + ein} ${h - 1} ${1 + ein} ${h - 1 - r} Z`
   /** x der linken Wand in Höhe y (0 = oben) */
   const links = (y: number) => 1 + ein * Math.min(1, (y - 1) / (h - 2 - r))
   const hoeheBei = (anteil: number) => h - 1 - (h - 2) * anteil
+  const rand = teilstriche ? 14 : 0
+  const wasserFarbe = wasser ? WASSER.fuell : (feinFarbe ?? farbe)
+  const strichFarbe = wasser ? WASSER.linie : (feinFarbe ?? farbe)
+  const marke = ['¼', '½', '¾']
   return (
-    <Svg width={b} height={h} viewBox={`0 0 ${b} ${h}`}>
-      <Path d={umriss} fill="#FFFFFF" stroke="none" />
+    <Svg width={b + rand * 2} height={h} viewBox={`${-rand} 0 ${b + rand * 2} ${h}`}>
+      <Path d={umriss} fill={wasser ? WASSER.hell : '#FFFFFF'} stroke="none" />
       {fuell ? (
         <Path
           d={`M${links(hoeheBei(fuell))} ${hoeheBei(fuell)} L${b - links(hoeheBei(fuell))} ${hoeheBei(fuell)} L${b - 1 - ein} ${h - 1 - r} Q${b - 1 - ein} ${h - 1} ${b - 1 - ein - r} ${h - 1} L${1 + ein + r} ${h - 1} Q${1 + ein} ${h - 1} ${1 + ein} ${h - 1 - r} Z`}
-          fill={feinFarbe ?? farbe}
+          fill={wasserFarbe}
           stroke="none"
         />
       ) : null}
       {skala
-        ? [0.25, 0.5, 0.75].map((a) => {
+        ? [0.25, 0.5, 0.75].map((a, i) => {
             const y = hoeheBei(a)
             const x = links(y)
-            return <Line key={a} x1={x + 1} y1={y} x2={x + (a === 0.5 ? 6 : 4)} y2={y} stroke={feinFarbe ?? farbe} strokeWidth={0.9} />
+            return (
+              <G key={a}>
+                <Line x1={teilstriche ? x - 3 : x + 1} y1={y} x2={x + (a === 0.5 ? 7 : 4.5)} y2={y} stroke={strichFarbe} strokeWidth={teilstriche ? 1 : 0.9} />
+                {teilstriche ? (
+                  <Text x={x - 4.5} y={y + 2.4} style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.8 }} fill={NEUTRAL.leise} textAnchor="end">
+                    {marke[i]}
+                  </Text>
+                ) : null}
+              </G>
+            )
           })
         : null}
       {strich !== undefined ? (
@@ -1872,13 +2215,14 @@ function Glaeser({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'glaeser' }> })
   const reihen: string[][] = []
   for (let i = 0; i < alle.length; i += sp) reihen.push(alle.slice(i, i + sp))
   const skala = b.skala !== false
+  const wasser = !!c.design
   return (
     <View>
       {b.legende ? (
         <View wrap={false} style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 10 }}>
           {b.legende.map((l, i) => (
             <View key={i} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 22, marginBottom: 2 }}>
-              <GlasForm b={15} h={19} farbe={c.p.tief} feinFarbe={c.p.mittel} fuell={i === 1 ? 0.45 : undefined} strich={i === 0 ? 0.72 : undefined} />
+              <GlasForm b={15} h={19} farbe={c.p.tief} feinFarbe={c.p.mittel} fuell={i === 1 ? 0.45 : undefined} strich={i === 0 ? 0.72 : undefined} wasser={wasser} />
               <Fliess c={c} klein style={{ marginLeft: 6 }}>
                 {t(c, l)}
               </Fliess>
@@ -1890,7 +2234,7 @@ function Glaeser({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'glaeser' }> })
         <View key={i} wrap={false} style={{ flexDirection: 'row', marginTop: i ? c.m.abstand * 0.8 : 0 }}>
           {reihe.map((text, k) => (
             <View key={k} style={{ width: zelle, alignItems: 'center' }}>
-              <GlasForm b={gb} h={gh} farbe={c.p.tief} feinFarbe={c.p.mittel} skala={skala} />
+              <GlasForm b={gb} h={gh} farbe={c.p.tief} feinFarbe={c.p.mittel} skala={skala} wasser={wasser} teilstriche={wasser && skala && gb >= 36} />
               {text ? (
                 <Fliess c={c} klein zentriert style={{ marginTop: 4, width: zelle - 6 }}>
                   {t(c, text)}
@@ -1928,7 +2272,7 @@ function Netz({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'netz' }> }) {
     <View wrap={false} style={{ width: W, height: H }}>
       <Svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
         {b.bereiche.map((_, i) => (
-          <Path key={`s${i}`} d={sektor(R, i * seg, (i + 1) * seg)} fill={i % 2 ? '#FFFFFF' : c.p.zart} stroke="none" />
+          <Path key={`s${i}`} d={sektor(R, i * seg, (i + 1) * seg)} fill={c.design ? SEKTOR_TOENE[i % SEKTOR_TOENE.length] : i % 2 ? '#FFFFFF' : c.p.zart} stroke="none" />
         ))}
         {Array.from({ length: st }, (_, k) => (
           <Circle key={`r${k}`} cx={cx} cy={cy} r={(R * (k + 1)) / st} fill="none" stroke={(k + 1) % 5 === 0 && k + 1 < st ? c.p.tief : c.p.mittel} strokeWidth={(k + 1) % 5 === 0 && k + 1 < st ? 0.9 : 0.7} />
@@ -2222,26 +2566,37 @@ function Rechnungen({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'rechnungen'
   )
 }
 
-/** Karopapier (5 mm) für eigene Rechnungen */
-function KaestchenFeld({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'kaestchen' }> }) {
+/** Karopapier (5 mm) für eigene Rechnungen; `grow` füllt den Rest der Seite (mindestens `zeilen` Zeilen) */
+function KaestchenFeld({ c, b, grow }: { c: Ctx; b: Extract<Baustein, { art: 'kaestchen' }>; grow?: boolean }) {
   const n = Math.max(1, b.zeilen)
   const spalten = Math.floor((c.breite - 1) / KARO)
-  const w = spalten * KARO, h = n * KARO
+  const w = spalten * KARO
+  const nz = grow ? Math.floor(MAX_REST / KARO) : n
+  const h = nz * KARO
+  const gitter = (
+    <Svg width={w + 1} height={h + 1}>
+      {Array.from({ length: spalten + 1 }, (_, i) => (
+        <Line key={'v' + i} x1={0.5 + i * KARO} y1={0.5} x2={0.5 + i * KARO} y2={h + 0.5} stroke={KARO_LINIE} strokeWidth={0.5} />
+      ))}
+      {Array.from({ length: nz + 1 }, (_, i) => (
+        <Line key={'h' + i} x1={0.5} y1={0.5 + i * KARO} x2={w + 0.5} y2={0.5 + i * KARO} stroke={KARO_LINIE} strokeWidth={0.5} />
+      ))}
+    </Svg>
+  )
   return (
-    <View wrap={false}>
+    <View wrap={false} style={grow ? { flexGrow: 1 } : undefined}>
       {b.label ? (
         <Fliess c={c} klein fett farbe={NEUTRAL.leise} style={{ marginBottom: 3 }}>
           {t(c, b.label)}
         </Fliess>
       ) : null}
-      <Svg width={w + 1} height={h + 1}>
-        {Array.from({ length: spalten + 1 }, (_, i) => (
-          <Line key={'v' + i} x1={0.5 + i * KARO} y1={0.5} x2={0.5 + i * KARO} y2={h + 0.5} stroke={KARO_LINIE} strokeWidth={0.5} />
-        ))}
-        {Array.from({ length: n + 1 }, (_, i) => (
-          <Line key={'h' + i} x1={0.5} y1={0.5 + i * KARO} x2={w + 0.5} y2={0.5 + i * KARO} stroke={KARO_LINIE} strokeWidth={0.5} />
-        ))}
-      </Svg>
+      {grow ? (
+        <View style={{ flexGrow: 1, minHeight: n * KARO + 1, width: w + 1, overflow: 'hidden' }}>
+          <View style={{ position: 'absolute', left: 0, top: 0 }}>{gitter}</View>
+        </View>
+      ) : (
+        gitter
+      )}
     </View>
   )
 }
@@ -2311,7 +2666,7 @@ function Bon({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'bon' }> }) {
   )
 }
 
-function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
+function EinBaustein({ c, b, grow }: { c: Ctx; b: Baustein; grow?: boolean }) {
   switch (b.art) {
     case 'aufgabe':
       return <Aufgabe c={c} b={b} />
@@ -2334,22 +2689,13 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
     case 'seitenumbruch':
       return <View break />
     case 'linien':
-      return (
-        <View wrap={false}>
-          {b.label ? (
-            <Fliess c={c} klein fett farbe={NEUTRAL.leise}>
-              {t(c, b.label)}
-            </Fliess>
-          ) : null}
-          <Linien c={c} n={b.anzahl} />
-        </View>
-      )
+      return <LinienBlock c={c} b={b} grow={grow} />
     case 'frage':
       return <Frage c={c} b={b} />
     case 'satzanfaenge':
       return <Satzanfaenge c={c} b={b} />
     case 'feld':
-      return <Feld c={c} b={b} />
+      return <Feld c={c} b={b} grow={grow} />
     case 'tabelle':
       return <Tabelle c={c} b={b} />
     case 'wennDann':
@@ -2407,7 +2753,7 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
     case 'comic':
       return <Comic c={c} b={b} />
     case 'karten':
-      return <Karten c={c} b={b} />
+      return <Karten c={c} b={b} grow={grow} />
     case 'rueckblick':
       return <Rueckblick c={c} b={b} />
     case 'notfall':
@@ -2427,7 +2773,7 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
     case 'rechnungen':
       return <Rechnungen c={c} b={b} />
     case 'kaestchen':
-      return <KaestchenFeld c={c} b={b} />
+      return <KaestchenFeld c={c} b={b} grow={grow} />
     case 'bon':
       return <Bon c={c} b={b} />
     case 'paeckchen':
@@ -2552,6 +2898,16 @@ function istFest(b: Baustein, layout: string): boolean {
   }
 }
 
+/** Darf dieser Baustein den Rest der Seite füllen? Schreibfeld, Schreiblinien, Karo und Karten (ohne `hoehe`): ausdrücklich mit `fuellen: true`,
+ *  von selbst als letzter Baustein des Blatts (`fuellen: false` schaltet es aus). Nur Bausteine, die nicht umbrechen – sie wachsen
+ *  höchstens bis zum Seitenende und bleiben mindestens so groß wie angegeben, die Seitenzahl ändert sich dadurch nie. */
+function waechst(b: Baustein, c: Ctx, letzter: boolean): boolean {
+  if (b.art === 'karten') return b.fuellen ?? (!!c.fuellen && letzter && b.hoehe === undefined && b.karten.length <= 6)
+  if (b.art !== 'feld' && b.art !== 'linien' && b.art !== 'kaestchen') return false
+  if (b.art === 'kaestchen' && b.zeilen > 14) return false
+  return b.fuellen ?? (!!c.fuellen && letzter)
+}
+
 /** Bausteine untereinander.
  *  - `oben` (die Seite selbst, Spielschule): je Abschnitt zwischen zwei `seitenumbruch` eine Hülle; ab dem zweiten
  *    mit `break`. react-pdf beachtet `break` nur bei Kindern, die es beim Umbrechen einzeln prüft – in einer Hülle, die ganz
@@ -2569,8 +2925,8 @@ export function Bausteine({ c, liste, inSpalte, oben }: { c: Ctx; liste: Baustei
     return (
       <>
         {abschnitte.map((a, i) => (
-          <View key={i} break={i > 0}>
-            {abschnittInhalt(c, a)}
+          <View key={i} break={i > 0} style={a.some((b, k) => waechst(b, c, i === abschnitte.length - 1 && k === a.length - 1)) ? { flexGrow: 1 } : undefined}>
+            {abschnittInhalt(c, a, i === abschnitte.length - 1)}
           </View>
         ))}
       </>
@@ -2588,10 +2944,12 @@ export function Bausteine({ c, liste, inSpalte, oben }: { c: Ctx; liste: Baustei
           ))}
       </View>
     )
-  return <View>{abschnittInhalt(c, liste)}</View>
+  // Restseite füllen: nur auf der Seite selbst (nicht in Spalten) und nur, wenn kein Seitenumbruch den Baustein von der letzten Seite trennt
+  const fuell = !!oben && liste.some((b, k) => waechst(b, c, k === liste.length - 1))
+  return <View style={fuell ? { flexGrow: 1 } : undefined}>{abschnittInhalt(c, liste, true, !!oben)}</View>
 }
 
-function abschnittInhalt(c: Ctx, liste: Baustein[]): ReactNode[] {
+function abschnittInhalt(c: Ctx, liste: Baustein[], letzterAbschnitt = true, seite = true): ReactNode[] {
   const out: ReactNode[] = []
   let umbruch = false
   for (let i = 0; i < liste.length; i++) {
@@ -2602,19 +2960,22 @@ function abschnittInhalt(c: Ctx, liste: Baustein[]): ReactNode[] {
     }
     const naechster = liste[i + 1]
     const gruppe = b.art === 'aufgabe' && naechster && istFest(naechster, c.m.layout)
-    const style = { marginTop: umbruch ? 0 : abstandVor(b, liste[i - 1], c) }
+    const style: { marginTop: number; flexGrow?: number } = { marginTop: umbruch ? 0 : abstandVor(b, liste[i - 1], c) }
+    // wächst dieser Baustein (oder bei einer Gruppe der nach der Aufgabe) bis ans Seitenende?
+    const wachs = seite && (gruppe ? waechst(naechster, c, letzterAbschnitt && i + 1 === liste.length - 1) : waechst(b, c, letzterAbschnitt && i === liste.length - 1))
+    if (wachs) style.flexGrow = 1
     if (gruppe) {
       out.push(
         <View key={i} id={c.ids?.get(b)} break={umbruch} wrap={false} style={style}>
           <EinBaustein c={c} b={b} />
-          <EinBaustein c={c} b={naechster} />
+          <EinBaustein c={c} b={naechster} grow={wachs} />
         </View>,
       )
       i++
     } else {
       out.push(
-        <View key={i} id={c.ids?.get(b)} break={umbruch} wrap={!istFest(b, c.m.layout)} style={style} minPresenceAhead={b.art === 'aufgabe' ? c.m.zeile * 4 : undefined}>
-          <EinBaustein c={c} b={b} />
+        <View key={i} id={c.ids?.get(b)} break={umbruch} wrap={!istFest(b, c.m.layout) && !wachs} style={style} minPresenceAhead={b.art === 'aufgabe' ? c.m.zeile * 4 : undefined}>
+          <EinBaustein c={c} b={b} grow={wachs} />
         </View>,
       )
     }

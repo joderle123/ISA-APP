@@ -116,19 +116,24 @@ export type Baustein =
   | { art: 'aufgabe'; text: string; hinweis?: string; symbole?: Symbol[]; stufe?: 1 | 2 | 3; niveau?: 'einstieg' | 'stern' }
   | { art: 'text'; text: string; klein?: boolean }
   | { art: 'info'; titel?: string; text?: string; punkte?: string[]; symbol?: 'tipp' | 'wissen' | 'achtung' | 'merke' | 'hilfe' }
-  | { art: 'geschichte'; titel?: string; text: string; bild?: BildId }
+  /** `szene`: Hintergrund hinter der Figur, z. B. 'bus', 'kueche', 'pausenhof' (Name der Szene; unbekannte Szenen werden übergangen). */
+  | { art: 'geschichte'; titel?: string; text: string; bild?: BildId; szene?: string }
   | { art: 'bild'; bild: BildId; groesse?: 's' | 'm' | 'l' | 'xl'; text?: string; ausrichtung?: 'links' | 'mitte' | 'rechts' }
-  | { art: 'spalten'; links: Baustein[]; rechts: Baustein[]; verhaeltnis?: '1:1' | '2:1' | '1:2' }
+  /** `zusammen`: beide Spalten bleiben zusammen auf einer Seite (z. B. mit Info-Kästen); sonst nur bei Bildreihen, Karten, Gläsern, Comic und in der Spielschule. Nur setzen, wenn die Spalten samt Inhalt auf die Seite passen – sie rücken sonst als Ganzes auf die nächste Seite. */
+  | { art: 'spalten'; links: Baustein[]; rechts: Baustein[]; verhaeltnis?: '1:1' | '2:1' | '1:2'; zusammen?: boolean }
   | { art: 'abstand'; hoehe?: number }
   | { art: 'seitenumbruch' }
   // --- Schreiben -------------------------------------------------------------
-  | { art: 'linien'; anzahl: number; label?: string }
+  /** `fuellen`: füllt den Rest der Seite (`anzahl` ist das Minimum); der letzte Baustein eines Blatts tut das von selbst, `false` schaltet es aus. */
+  | { art: 'linien'; anzahl: number; label?: string; fuellen?: boolean }
   | { art: 'frage'; text: string; linien?: number }
   | { art: 'satzanfaenge'; items: string[]; linien?: number }
-  | { art: 'feld'; label?: string; hoehe?: number; beispiel?: string; zeichnen?: boolean }
-  | { art: 'tabelle'; spalten: string[]; zeilen: number; beispiel?: string[]; breiten?: number[]; /** Erste Spalte vorab nummerieren, beginnend mit dieser Zahl. */ nummern?: number; /** Vorgegebene Zeilen (z. B. Aufgaben, Preise) vor den leeren. */ werte?: string[][] }
+  /** `fuellen`: wächst bis zum Seitenende (`hoehe` ist das Minimum); der letzte Baustein eines Blatts tut das von selbst, `false` schaltet es aus. */
+  | { art: 'feld'; label?: string; hoehe?: number; beispiel?: string; zeichnen?: boolean; fuellen?: boolean }
+  | { art: 'tabelle'; spalten: string[]; zeilen: number; beispiel?: string[]; breiten?: number[]; /** Erste Spalte vorab nummerieren, beginnend mit dieser Zahl. */ nummern?: number; /** Vorgegebene Zeilen (z. B. Aufgaben, Preise) vor den leeren. */ werte?: string[][]; /** Höhe der leeren Zeilen in Schreibzeilen (1 = eine Zeile; ab 2 mit zarten Schreiblinien) – für Antworten in ganzen Sätzen. */ hoehe?: number; /** Farbe je Spaltenkopf (z. B. ['grau', 'gruen', 'gelb', 'rot']; ohne Farbe = Bereichsfarbe). */ kopffarben?: Farbwort[] }
   | { art: 'wennDann'; zeilen: number; beispiele?: { wenn: string; dann: string }[]; wenn?: string; dann?: string }
-  | { art: 'dialog'; zeilen: { wer: string; text?: string }[] }
+  /** `stil: 'chat'`: Handy-Verlauf – Sprechblasen links und rechts auf einem Chat-Hintergrund (ohne Marken); `zeit` = Uhrzeit unter der Blase. */
+  | { art: 'dialog'; zeilen: { wer: string; text?: string; zeit?: string }[]; stil?: 'chat' }
   | { art: 'vertrag'; titel?: string; text: string; unterschriften: string[] }
   // --- Auswählen & Einschätzen ----------------------------------------------
   | { art: 'ankreuzen'; titel?: string; items: string[]; spalten?: 1 | 2 | 3; frei?: number }
@@ -136,7 +141,8 @@ export type Baustein =
   | { art: 'bilder'; bilder: { bild: BildId; text?: string; heute?: boolean }[]; spalten?: 2 | 3 | 4; modus?: 'einkreisen' | 'ankreuzen' | 'anmalen' | 'nur'; klein?: boolean }
   | { art: 'wortspeicher'; titel?: string; items: string[] }
   | { art: 'skala'; frage?: string; von: string; bis: string; stufen?: 5 | 10 | 11; gesichter?: boolean }
-  | { art: 'einschaetzung'; items: string[]; optionen: string[] }
+  /** `kopffarben`: Farbe je Option im Spaltenkopf (z. B. ['gruen', 'gelb', 'rot']). */
+  | { art: 'einschaetzung'; items: string[]; optionen: string[]; kopffarben?: Farbwort[] }
   | { art: 'zuordnen'; links: string[]; rechts: string[]; titel?: [string, string] }
   /** `woerter`: eigene Wörter unter den Gesichtern (statt der Standardwörter, z. B. « content » statt « joie »). */
   | { art: 'gefuehle'; gefuehle: Gefuehl[]; modus?: 'benennen' | 'einkreisen' | 'nur'; leer?: number; spalten?: number; woerter?: string[] }
@@ -149,10 +155,12 @@ export type Baustein =
   | { art: 'vulkan'; stufen?: [Stufentext, Stufentext, Stufentext] }
   | { art: 'eisberg'; oben: string; unten: string; beispielOben?: string; beispielUnten?: string }
   | { art: 'koerper'; legende?: { farbe: Farbwort; text: string }[]; frage?: string }
-  | { art: 'batterie'; laden: string; leeren: string; linien?: number }
+  /** `leer`: die Batterie ist leer und wird ausgemalt (statt 3 von 5 Balken gefüllt wie ein Ergebnis). */
+  | { art: 'batterie'; laden: string; leeren: string; linien?: number; leer?: boolean }
   | { art: 'waage'; links: string; rechts: string; zeilen?: number }
   | { art: 'leiter'; stufen: number; oben?: string; unten?: string; beispiele?: string[] }
-  | { art: 'zielscheibe'; ringe: string[]; mitte?: string }
+  /** `daneben`: Ringe nur nummeriert, die Beschriftungen stehen als Liste neben der Scheibe (bei vielen oder langen Ringnamen; Standard: ab 5 Ringen oder Namen über 14 Zeichen). */
+  | { art: 'zielscheibe'; ringe: string[]; mitte?: string; daneben?: boolean }
   | { art: 'hand'; finger?: string[]; mitte?: string }
   | { art: 'mindmap'; mitte: string; aeste?: string[]; anzahl?: number }
   | { art: 'schritte'; items: Stufentext[]; stil?: 'liste' | 'kette' | 'weg'; linien?: number }
@@ -177,7 +185,8 @@ export type Baustein =
    *  Ergebniszeile leer. `auffuellen`: fehlende Nachkommastellen als 0 in der Akzentfarbe zeigen (für Beispiele). */
   | { art: 'rechnungen'; items: Rechnung[]; spalten?: 1 | 2 | 3 | 4; auffuellen?: boolean }
   /** Rechenkästchen (Karopapier) für eigene Rechnungen. */
-  | { art: 'kaestchen'; zeilen: number; label?: string }
+  /** `fuellen`: Karo bis zum Seitenende (`zeilen` ist das Minimum, nur bis 14 Zeilen); der letzte Baustein eines Blatts tut das von selbst, `false` schaltet es aus. */
+  | { art: 'kaestchen'; zeilen: number; label?: string; fuellen?: boolean }
   /** Kassenbon: Posten mit Preisen; ohne `summe` bleibt die Summe zum Ausrechnen leer. */
   | { art: 'bon'; titel?: string; posten: { text: string; preis: string }[]; summe?: string; fuss?: string }
   /** Rechenpäckchen: kurze Aufgaben in Spalten. Im Text: `___` Antwortlinie, `[]` Kästchen (für <, >, =),
@@ -216,7 +225,9 @@ export type Baustein =
   | { art: 'strichliste'; kopf?: [string, string, string]; zeilen: { text: string; striche?: number; anzahl?: number }[]; daten?: string[]; summe?: boolean | number }
   // --- Bildgeschichten & Karten ---------------------------------------------
   | { art: 'comic'; felder: ComicFeld[]; spalten?: 2 | 3 }
-  | { art: 'karten'; karten: { titel?: string; text?: string; bild?: BildId }[]; spalten?: 2 | 3 | 4; hoehe?: number }
+  /** `hoehe` fehlt → bei höchstens 6 Karten als letztem Baustein füllen die Karten den Rest der Seite (`fuellen: false` schaltet es aus).
+   *  `schneiden: false`: Lesekarten ohne Scherenlinie und gestrichelte Ränder (runde Karten mit Abstand). Je Karte optional `nummer` und `farbe` (Farbpunkt). */
+  | { art: 'karten'; karten: { titel?: string; text?: string; bild?: BildId; nummer?: number | string; farbe?: Farbwort }[]; spalten?: 2 | 3 | 4; hoehe?: number; schneiden?: boolean; fuellen?: boolean }
   // --- Spielschule: Blätter zum Tun (Schneiden, Kleben, Falten, Spielen) – je eine ganze Seite ----------
   /** Bildfolge: 3–6 Bilder in der RICHTIGEN Reihenfolge angeben. Auf dem Blatt stehen oben nummerierte Klebefelder
    *  1, 2, 3 …, unten die Bilder gemischt auf einem Streifen zum Ausschneiden (`gemischt: false` = nicht mischen). */
@@ -376,6 +387,9 @@ export interface ComicFeld {
   untertitel?: string
   /** Leeres Feld zum Selbstzeichnen. */
   leer?: boolean
+  /** Kulisse hinter den Figuren (Name aus src/blatt/szenen.ts: pausenhof, klassenzimmer, bus, kueche, kinderzimmer, park, flur, kantine, umkleide);
+   *  auch bei `leer: true` – dann zeichnen die Kinder die Figuren in die Szene. */
+  szene?: string
 }
 
 export interface Lehrerseite {
