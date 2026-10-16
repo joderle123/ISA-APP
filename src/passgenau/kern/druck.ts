@@ -3,7 +3,7 @@
 // auf dem Planblatt Vorname, Codes und Quelle-Art, aber keine Daten von Vorfällen oder Notizen; Begründungen nur auf Wunsch.
 import type { Baustein, Blatt } from '../../blatt/typen'
 import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
-import { bausteinInhalt, eldibKurz, intern, istGruppenText, merkmaleVon, quelleText, setzeTextModus, staemme, textVon, zielSatz, type Katalog } from './katalog'
+import { bausteinInhalt, eldibKurz, intern, istGruppenText, kindSatz, merkmaleVon, quelleText, setzeTextModus, staemme, textVon, zielSatz, type Katalog } from './katalog'
 import { textMerkmale } from './einzel'
 import { kinderblatt, quellenDerUebertragung, werkzeugName } from './blatt'
 import { gruppenRollen, mitgliedProfil } from './gruppe'
@@ -453,7 +453,15 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   for (const x of s.schritte) {
     const e = k.eintraege.get(x.ref)
     if (!e) continue
-    if ((x.rolle === 'ankommen' || x.rolle === 'abschluss') && nr > 1 && plan.n > 1) continue
+    // Ritual einer Folge ab Sitzung 2: sein Material „von Sitzung 1“ (Messung 6: „S2–S4 ‚nichts vorzubereiten‘, obwohl das
+    // Ankommen die Tierkarten aus S1 braucht“)
+    if ((x.rolle === 'ankommen' || x.rolle === 'abschluss') && nr > 1 && plan.n > 1) {
+      const rtx = e.typ === 'schritt' ? (e.einzelvariante?.text ?? e.text) : ''
+      const rm = new Set(e.material.map((m) => materialName(k, m, sp)))
+      for (const [re, wer] of MATERIAL_IM_TEXT) if (re.test(rtx)) rm.add(typeof wer === 'string' ? materialName(k, wer, sp) : wer[sp])
+      for (const m of rm) mat.add(sp === 'fr' ? `${m} (de la séance 1)` : `${m} (von Sitzung 1)`)
+      continue
+    }
     for (const m of e.material) mat.add(materialName(k, m, sp))
     // was der Text nennt, kommt dazu (Ritual-Material einer Folge nur in Sitzung 1, wie oben); nur der Text, nicht der Titel
     // („Miroir d’improvisation“ braucht keinen Spiegel), und nicht bei Übertragen/Rückblick – dort stehen nur die Titel
@@ -605,15 +613,20 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   const uebQuelle = kernX?.ref === 'pg:uebertragen' ? quellenDerUebertragung(k, plan, kernX)[0] : undefined
   // Rückblick: die Ziele, die die Kerne der Folge wirklich geübt haben (Messung 4: Rückblick auf „Wenn die Fachkraft mich ruft“,
   // geübt wurde „Wenn ich etwas gefragt werde, antworte ich“)
-  const zieleGeuebt = plan.ziele.filter((c) => /^[A-Z]+-\d+$/.test(c) && plan.sitzungen.some((x) => x.schritte.some((y) => y.rolle === 'kern' && !!k.eintraege.get(y.ref)?.eldib.some((z) => z.code === c))))
+  // … und ein zweites Ziel nur, wenn es mindestens zweimal dran war (Kern oder Übertragen; Messung 6: „Sitzung 6 beansprucht
+  // K-26, geübt wurde es einmal“)
+  const geuebtZahl = (c: string) => plan.sitzungen.filter((x) => x.schritte.some((y) => y.rolle === 'kern' && (y.ref === 'pg:uebertragen' ? quellenDerUebertragung(k, plan, y).some((q) => q.eldib.some((z) => z.code === c)) : !y.ref.startsWith('pg:') && !!k.eintraege.get(y.ref)?.eldib.some((z) => z.code === c)))).length
+  const zieleGeuebt = plan.ziele.filter((c) => /^[A-Z]+-\d+$/.test(c) && geuebtZahl(c) >= 1)
   const ichCode = kernX?.ref === 'pg:folge-transfer'
     ? zieleGeuebt[0] ?? plan.ziele.find((c) => /^[A-Z]+-\d+$/.test(c))
     : uebQuelle ? plan.ziele.find((c) => uebQuelle.eldib.some((x) => x.code === c)) : kernX && !kernX.ref.startsWith('pg:') ? kernZiel : undefined
   const ich = ichCode ? zielSatz(k, p, ichCode, sp)?.trim() : undefined
   // Rückblick einer Folge mit zwei Zielen: beide, wenn die Folge beide geübt hat (Messung 4: „K-26 kommt im Rückblick nicht vor“)
-  const zweitesZiel = kernX?.ref === 'pg:folge-transfer' ? zieleGeuebt[1] : undefined
-  const ich2 = zweitesZiel ? zielSatz(k, p, zweitesZiel, sp)?.trim() : undefined
-  const ichZit = ich ? (sp === 'fr' ? `« ${ich} »${ich2 ? ` et « ${ich2} »` : ''}` : `„${ich}“${ich2 ? ` und „${ich2}“` : ''}`) : undefined
+  const zweitesZiel = kernX?.ref === 'pg:folge-transfer' ? zieleGeuebt.slice(1).find((c) => geuebtZahl(c) >= 2) : undefined
+  // gesagt wird dem Kind der kindgerechte Satz (die Fachkraft sieht oben den Satz des Förderplans)
+  const ichS = ichCode ? kindSatz(k, p, ichCode, sp)?.trim() : undefined
+  const ich2S = zweitesZiel ? kindSatz(k, p, zweitesZiel, sp)?.trim() : undefined
+  const ichZit = ichS ? (sp === 'fr' ? `« ${ichS} »${ich2S ? ` et « ${ich2S} »` : ''}` : `„${ichS}“${ich2S ? ` und „${ich2S}“` : ''}`) : undefined
   const einstiegSatz = ichZit && kernX?.ref === 'pg:uebertragen' && p.alterJahre < 8
     ? sp === 'fr' ? `Aujourd’hui, on joue ${ichZit} dans de petites scènes de tous les jours.` : `Heute spielen wir ${ichZit} in kleinen Szenen aus dem Alltag.`
     : ichZit && kernX?.ref === 'pg:uebertragen'

@@ -3,6 +3,7 @@
 import type { Baustein, NummeriertesBlatt, Sprache } from '../../blatt/typen'
 import { ELDIB_FR } from '../../blatt/eldib-fr'
 import ELDIB_ICH from '../../data/passgenau/eldib-ich.json'
+import ELDIB_KIND from '../../data/passgenau/eldib-kind.json'
 import EINHEITEN_FR from '../../data/passgenau/einheiten-fr.json'
 import type { Einheit as KursEinheit } from '../../kurs/typen'
 import type { Material } from '../../types/material'
@@ -667,12 +668,27 @@ export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; t
 /** Ich-Sätze aus eldib-ich.json: `fr` (erster Bank-Satz), `de` (ohne „die/der Lehrer:in“), `frIch` (jeder Bank-Satz
  *  übersetzt) und `allg` (altersneutral aus der Beschreibung – der erste Bank-Satz ist oft ein Beispiel für Kleine) */
 const ICH = ELDIB_ICH as Record<string, { de?: string; fr?: string; frIch?: string[]; allg?: { de?: string; fr?: string } }>
+/** Kindersätze (Messung 6): kurz, ohne Fachsprache, zum Sagen ans Kind unter 12 */
+const KIND = ELDIB_KIND as Record<string, { de: string; fr: string }>
 /** ab diesem Alter der altersneutrale Satz statt des Beispiels (V-13: „Ich setze mich in den Morgenkreis“) */
 const ALLG_AB = 10
 
 export function ichSatz(k: Katalog, code: string, alter?: number): string | undefined {
   if (alter !== undefined && alter >= ALLG_AB && ICH[code]?.allg?.de) return ICH[code].allg!.de
   return ICH[code]?.de ?? intern(k).eldib.items[code]?.ich[0]
+}
+
+/** Fachsprache, die ein Kind nicht sagt (Messung 6: „Heute haben wir geübt: ‚Ich behalte die Kontrolle über mein Verhalten
+ *  während Gruppenaktivitäten.‘“, „Wenn die Fachkraft mich ruft …“ – ein Kind sagt nicht „Fachkraft“) */
+const FACHSPRACHE = /Fachkraft|Lehrkraft|Lehrperson|Gruppenaktivit|Gruppenleistung|Klassengespr|vernünftig|angemessen|Verhalten|Kontrolle über|Kompetenz|adulte référent|activités de groupe|de manière appropriée|comportement|compétence/i
+
+/** Ich-Satz zum Sagen ans Kind (unter 12): der des Profils, wenn er kindgerecht ist, sonst der Kindersatz der Bank
+ *  (eldib-ich.json `kind`), sonst der übliche Ich-Satz. */
+export function kindSatz(k: Katalog, p: { ziele: { code: string; ich: string }[]; alterJahre?: number }, code: string, sprache: Sprache): string | undefined {
+  const satz = zielSatz(k, p, code, sprache)
+  if ((p.alterJahre ?? 0) >= 12) return satz
+  if (satz && !FACHSPRACHE.test(satz) && satz.length <= 70) return satz
+  return KIND[code]?.[sprache] ?? satz
 }
 
 export function eldibKurz(k: Katalog, code: string, sprache: Sprache = 'de'): string {

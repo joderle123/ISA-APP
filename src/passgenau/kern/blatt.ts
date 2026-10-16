@@ -566,6 +566,22 @@ const WENIG_SCHREIBEN = new Set<Baustein['art']>(['ankreuzen', 'bilder', 'gefueh
  *  aus ihren Anweisungen (Text, Aufgabe, Bild) und dem Teil danach. Passt nicht alles in die Minuten, fällt die Mitte weg, nicht
  *  der Schluss: der Bezug zum eigenen Leben bleibt (Testlauf 16.10.: „Lea hat Geburtstag …“ und „Mal ein Gefühl“ fielen weg,
  *  danach stand ein allgemeines Malfeld). Bei wenig Schreiben bleibt der Schluss nur, wenn er kaum Schreiben braucht. */
+/** Eine Einleitungs-Szene, deren Aufgabe beim Kürzen wegfiel (Messung 6: „Lea hat ein Bild für Amira gemalt.“ steht vor
+ *  Aufgaben zu Tom, Noah und Sami – „Wie ist es für Lea?“ fiel weg): Ihre Namen und Dinge (großgeschriebene Wörter ab drei
+ *  Buchstaben) stehen nur in weggefallenen Teilen, in keinem behaltenen danach – dann fällt sie mit weg. */
+function ohneVerwaisteSzene(behalten: Baustein[], weg: Baustein[]): Baustein[] {
+  const woerter = (t: string) => new Set((t.match(/(?<![\p{L}-])\p{Lu}[\p{Ll}ß]{2,}/gu) ?? []).filter((w) => !ALLTAG_ANFANG.has(w)))
+  const fort = woerter(JSON.stringify(weg))
+  return behalten.filter((b, i) => {
+    if (b.art !== 'text' || b.klein) return true
+    const szene = [...woerter(b.text)]
+    if (szene.length < 2 || !szene.some((w) => fort.has(w))) return true
+    const rest = woerter(JSON.stringify(behalten.slice(i + 1)))
+    return szene.some((w) => rest.has(w))
+  })
+}
+const ALLTAG_ANFANG = new Set(['Was', 'Wie', 'Wer', 'Wo', 'Wann', 'Warum', 'Dann', 'Danach', 'Heute', 'Jetzt', 'Und', 'Aber', 'Oder', 'Schreib', 'Kreuz', 'Mal', 'Verbinde', 'Lies', 'Die', 'Der', 'Das', 'Ein', 'Eine', 'Sie', 'Er', 'Es', 'Ich', 'Du', 'Wir', 'Ihr', 'Quand', 'Puis', 'Que', 'Qui', 'Comment', 'Les', 'Une', 'Elle', 'Il', 'Écris', 'Coche', 'Dessine', 'Relie', 'Lis'])
+
 function blattGeruest(teile: Baustein[], hoechstens: number, o: { wenigSchreiben: boolean; stimmungTief?: boolean }): Baustein[] {
   const gruppen: Baustein[][] = []
   let offen: Baustein[] = []
@@ -585,7 +601,8 @@ function blattGeruest(teile: Baustein[], hoechstens: number, o: { wenigSchreiben
   while (i > 0 && letzte(nutzbar[i]).art === 'skala') i--
   const teil = letzte(nutzbar[i])
   const schlussGeht = hoechstens >= 2 && i >= hoechstens - 1 && teil.art !== 'skala' && (!o.wenigSchreiben || WENIG_SCHREIBEN.has(teil.art) || (teil.art === 'feld' && !!teil.zeichnen))
-  return (schlussGeht ? [...nutzbar.slice(0, hoechstens - 1), nutzbar[i]] : nutzbar.slice(0, hoechstens)).flat()
+  const gewaehlt = schlussGeht ? [...nutzbar.slice(0, hoechstens - 1), nutzbar[i]] : nutzbar.slice(0, hoechstens)
+  return ohneVerwaisteSzene(gewaehlt.flat(), nutzbar.filter((g) => !gewaehlt.includes(g)).flat())
 }
 
 /** Inhalt des Blatts zur Übung (kernBlatt): kurz, ohne Pflicht, Persönliches aufzuschreiben. */

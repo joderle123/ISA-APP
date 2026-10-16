@@ -539,7 +539,7 @@ function vorigeUebung(c: Kontext, fruehere: string[], kernTitel: unknown): { vor
     ? { de: textVon(vorE, 'de').titel, fr: vorE.typ === 'schritt' && vorE.fr ? vorE.fr.titel : textVon(vorE, 'de').titel }
     : undefined
   // (unter 8 gibt es beim Übertragen keinen Versuch – „keine Aufgabe für zu Hause“, Blind-Bewertung 13)
-  return { vorher, nachVersuch: fruehere[fruehere.length - 1] === 'pg:uebertragen' && c.weg === 'gruendlich' && c.alter >= 8 }
+  return { vorher, nachVersuch: fruehere[fruehere.length - 1] === 'pg:uebertragen' && c.weg === 'gruendlich' && c.alter >= 6 }
 }
 
 /** Brücke des Lernpfads (Stufe 4): der Kern ist ein späterer Schritt derselben Reihe wie die Übung der letzten Sitzung. */
@@ -591,7 +591,7 @@ function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1, 
   // Jugendliche: ohne „Material zeigen“ und „das Kind“; ab Sitzung 2 kurz an die letzte anknüpfen (roter Faden)
   if (c.alter >= 12) {
     return {
-      ref: e.id, h: e.h, rolle: 'einstieg', min: Math.min(min, 5), t: 'Worum es heute geht',
+      ref: e.id, h: e.h, rolle: 'einstieg', min: Math.min(min, an.de || ziel.de ? 4 : 3), t: 'Worum es heute geht',
       ueber: {
         text: `${an.de}${ziel.de}Die Fachkraft sagt in einem Satz, worum es heute geht („${de}“), und nennt ein kurzes Beispiel aus dem Alltag. Der oder die Jugendliche darf nachfragen, widersprechen oder einfach zuhören.`,
         'fr.text': `${an.fr}${ziel.fr}L’adulte dit en une phrase de quoi il s’agit aujourd’hui (« ${fr} ») et donne un court exemple du quotidien. Le ou la jeune peut poser une question, ne pas être d’accord ou simplement écouter.`,
@@ -602,7 +602,8 @@ function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1, 
   // Kinder: zeigen, was bereitliegt – nur wenn es etwas gibt (Blind-Bewertung 10: „zeigt das Material“, es gab keins)
   const zeug = kern.material.length > 0 || (!!titel && c.alter < 10)
   return {
-    ref: e.id, h: e.h, rolle: 'einstieg', min: Math.min(min, 5), t: 'Worum es heute geht',
+    // (Messung 6: „Einstieg ohne Inhalt – 4 Min. für einen Satz“; die Minuten gehen an den Kern)
+    ref: e.id, h: e.h, rolle: 'einstieg', min: Math.min(min, an.de || ziel.de ? 3 : 2), t: 'Worum es heute geht',
     ueber: {
       text: `${an.de}${ziel.de}${an.de ? 'Dann sagt sie' : 'Die Fachkraft sagt'} in einem Satz, worum es heute geht („${de}“)${zeug ? ', und zeigt, was dafür bereitliegt' : ''}. Das Kind darf eine Frage stellen oder einfach zuhören.`,
       'fr.text': `${an.fr}${ziel.fr}${an.fr ? 'Puis il dit' : 'L’adulte dit'} en une phrase de quoi il s’agit aujourd’hui (« ${fr} »)${zeug ? ' et montre ce qui est prêt pour cela' : ''}. L’enfant peut poser une question ou simplement écouter.`,
@@ -685,8 +686,16 @@ function uebertragenSchritt(c: Kontext, min: number, quellen: { ref: string; nr:
     // unter 8 (Blind-Bewertung 9: „abstraktes Überlegen, wo du es in den nächsten Tagen brauchst“ bei 6-Jährigen): die
     // Fachkraft bringt die Szene mit, das Kind spielt sie mit der Figur – ohne Planen
     if (c.alter < 8) {
-      ueber.text = `Die Übung ${herkunft('de')} kommt heute in den Alltag. Die Fachkraft macht ${zit(titelDe[0], 'de')} noch einmal kurz mit dem Kind. ${tr.de ? `Dann erzählt sie eine kleine Szene: ${zit2(tr.de.szenen[0].text, 'de')}. Das Kind zeigt mit der Figur (oder selbst), was es da mit ${kurz('de')} tun kann. Danach die zweite: ${zit2(tr.de.szenen[1].text, 'de')}.` : `Dann zeigt sie auf dem Blatt zwei der Bilder (etwa ${orte.de.kinder[0].text} und ${orte.de.kinder[1].text}) und erzählt zu einem eine kleine Szene${vorsichtig ? ' mit einer erfundenen Figur' : ''}. Die Figur kommt in die Szene, und das Kind spielt mit ihr, was sie jetzt tun kann. Danach noch einmal mit dem anderen Bild.`} Ein Lob für das Mitspielen – keine Aufgabe für zu Hause.`
-      ueber['fr.text'] = `L’activité ${herkunft('fr')} passe aujourd’hui dans le quotidien. L’adulte refait brièvement ${zit(titelFr[0], 'fr')} avec l’enfant. ${tr.fr ? `Puis il raconte une petite scène : ${zit2(tr.fr.szenen[0].text, 'fr')}. L’enfant montre avec la figurine (ou lui-même) ce qu’il peut y faire avec ${kurz('fr')}. Ensuite la deuxième : ${zit2(tr.fr.szenen[1].text, 'fr')}.` : `Puis il montre sur la fiche deux des images (par exemple ${orte.fr.kinder[0].text} et ${orte.fr.kinder[1].text}) et raconte une petite scène pour l’une d’elles${vorsichtig ? ' avec une figurine inventée' : ''}. La figurine entre dans la scène, et l’enfant joue avec elle ce qu’elle peut faire maintenant. Ensuite, encore une fois avec l’autre image.`} Un compliment pour le jeu – pas de devoir pour la maison.`
+      // ein ganz kleiner, freiwilliger Versuch, von dem die Bezugsperson weiß (Messung 6: „Übertragen ohne Auftrag – ‚keine
+      // Aufgabe für zu Hause‘“, „einen vorher mit der Erzieherin abgesprochenen Versuch geben und danach fragen“)
+      const familie = c.vorsicht.has('familie') || c.vorsicht.has('trauma') || (c.p.achtung ?? []).length > 0
+      const wer = { de: `${c.alter < 6 ? 'der Erzieherin oder dem Erzieher' : 'der Lehrerin oder dem Lehrer'}${familie ? '' : ' (oder den Eltern)'}`, fr: `${c.alter < 6 ? 'à l’éducatrice ou à l’éducateur' : 'à l’enseignante ou à l’enseignant'}${familie ? '' : ' (ou aux parents)'}` }
+      const klein = {
+        de: `Ein ganz kleiner Versuch für die nächsten Tage, freiwillig: ${tr.de ? zit2(tr.de.versuch, 'de') : `${kurz('de')} einmal ${c.alter < 6 ? 'in der Spielschule' : 'in der Schule'} oder zu Hause ausprobieren`}. Die Fachkraft sagt es ${wer.de}, damit jemand es bemerkt und sich mitfreut${c.alter < 6 ? ' – ohne Nachfragen beim Kind' : ''}.`,
+        fr: `Un tout petit essai pour les prochains jours, sans obligation : ${tr.fr ? zit2(tr.fr.versuch, 'fr') : `essayer ${kurz('fr')} une fois ${c.alter < 6 ? 'au préscolaire' : 'à l’école'} ou à la maison`}. L’adulte le dit ${wer.fr}, pour que quelqu’un le remarque et s’en réjouisse${c.alter < 6 ? ' – sans questionner l’enfant' : ''}.`,
+      }
+      ueber.text = `Die Übung ${herkunft('de')} kommt heute in den Alltag. Die Fachkraft macht ${zit(titelDe[0], 'de')} noch einmal kurz mit dem Kind. ${tr.de ? `Dann erzählt sie eine kleine Szene: ${zit2(tr.de.szenen[0].text, 'de')}. Das Kind zeigt mit der Figur (oder selbst), was es da mit ${kurz('de')} tun kann. Danach die zweite: ${zit2(tr.de.szenen[1].text, 'de')}.` : `Dann zeigt sie auf dem Blatt zwei der Bilder (etwa ${orte.de.kinder[0].text} und ${orte.de.kinder[1].text}) und erzählt zu einem eine kleine Szene${vorsichtig ? ' mit einer erfundenen Figur' : ''}. Die Figur kommt in die Szene, und das Kind spielt mit ihr, was sie jetzt tun kann. Danach noch einmal mit dem anderen Bild.`} Ein Lob für das Mitspielen. ${klein.de}`
+      ueber['fr.text'] = `L’activité ${herkunft('fr')} passe aujourd’hui dans le quotidien. L’adulte refait brièvement ${zit(titelFr[0], 'fr')} avec l’enfant. ${tr.fr ? `Puis il raconte une petite scène : ${zit2(tr.fr.szenen[0].text, 'fr')}. L’enfant montre avec la figurine (ou lui-même) ce qu’il peut y faire avec ${kurz('fr')}. Ensuite la deuxième : ${zit2(tr.fr.szenen[1].text, 'fr')}.` : `Puis il montre sur la fiche deux des images (par exemple ${orte.fr.kinder[0].text} et ${orte.fr.kinder[1].text}) et raconte une petite scène pour l’une d’elles${vorsichtig ? ' avec une figurine inventée' : ''}. La figurine entre dans la scène, et l’enfant joue avec elle ce qu’elle peut faire maintenant. Ensuite, encore une fois avec l’autre image.`} Un compliment pour le jeu. ${klein.fr}`
       // (mit Szenen aus dem Alltags-Paket ohne Verweis auf Blatt-Bilder – bis 5 Jahre gibt es kein Blatt, Blind-Bewertung 13)
       ueber.wennEsKippt = tr.de
         ? 'Fällt dem Kind nichts ein, erzählt die Fachkraft die Szene noch einmal langsam und spielt sie mit der Figur vor; das Kind zeigt nur, was es dann tun würde. Zeigen zählt genauso wie Sagen.'
@@ -779,7 +788,7 @@ function folgeTransferSchritt(c: Kontext, min: number, kerne: string[], uebertra
   const mitBlatt = c.weg !== 'leicht' && blattModus(c) !== 'ohne'
   // nach einer Übertragen-Sitzung zuerst der kleine Versuch (Blind-Bewertung 13: „der Versuch aus Sitzung 3 wird nie
   // aufgegriffen“ – der Rückblick hat keinen eigenen Einstieg)
-  const an = kerne[kerne.length - 1] === 'pg:uebertragen' && c.alter >= 8 ? anknuepfen(c, kerne.length + 1, undefined, true) : { de: '', fr: '' }
+  const an = kerne[kerne.length - 1] === 'pg:uebertragen' && c.alter >= 6 ? anknuepfen(c, kerne.length + 1, undefined, true) : { de: '', fr: '' }
   // die neuen Proben aus den Alltags-Paketen der Übungen (Stufe 2) – je Übung eine erfundene Situation
   const proben = (sp: 'de' | 'fr') =>
     eintraege
@@ -789,6 +798,12 @@ function folgeTransferSchritt(c: Kontext, min: number, kerne: string[], uebertra
       .join(' · ')
   const probeDe = proben('de')
   const probeFr = proben('fr')
+  // unter 6 (Messung 6: „Rückblick ist leer – keine Frage zum Ziel“): das Kind zeigt das Werkzeug der Folge noch einmal
+  const wzE = [...eintraege].reverse().find((x) => !!werkzeugVon(x, 'de'))
+  const wz = (sp: 'de' | 'fr') => (wzE ? werkzeugName(werkzeugVon(wzE, sp) ?? werkzeugVon(wzE, 'de')!, textVon(wzE, sp).titel) : undefined)
+  const zeigWz = c.alter < 6 && wz('de')
+    ? { de: ` Dann zeigt das Kind mit der Figur noch einmal „${wz('de')}“: „Zeig mir, wie das geht.“`, fr: ` Puis l’enfant montre encore une fois « ${wz('fr')} » avec la figurine : « Montre-moi comment on fait. »` }
+    : { de: '', fr: '' }
   if (c.alter < 12)
     return {
       ref: e.id, h: e.h, rolle: 'kern', min, t: 'Was ich mitnehme',
@@ -798,8 +813,8 @@ function folgeTransferSchritt(c: Kontext, min: number, kerne: string[], uebertra
         // Blind-Bewertung 9: „vier Übungen vormachen in 12 Minuten“, „Rückblick & Feiern ohne Feier“, „Material fehlt“
         // kurz (Blind-Bewertung 10: „Wahl, Wiederholung, Feier und Abzeichen in 5–8 Minuten nicht machbar“): unter 10 Minuten
         // nur kurz zeigen, wie sie ging
-        text: `${an.de}Die Übungen der letzten Male liegen da – ${mitBlatt ? 'die Blätter oder je ein Zettel mit dem Titel' : 'je ein Ding aus jeder Übung'}: ${de}. Das Kind sucht die aus, die am meisten Spaß gemacht oder geholfen hat, ${min >= 10 ? 'und sie wird noch einmal gespielt (drei, vier Minuten)' : 'und zeigt kurz, wie sie ging'}.${c.alter >= 6 ? ' Dann fragt die Fachkraft: „Was hat dir dabei geholfen?“ – zeigen oder ein Wort reicht.' : ''}${min >= 15 ? (probeDe ? ` Danach eine kleine neue Probe zur gewählten Übung – die Fachkraft liest die passende vor (${probeDe}), und das Kind zeigt oder sagt, was die Figur tun könnte.` : ' Danach eine kleine neue Probe: Die Fachkraft erzählt eine neue, erfundene Situation, in der diese Übung passt, und das Kind zeigt oder sagt, was es tun würde.') : ''} Dann wird gefeiert: Die Fachkraft sagt eine Sache, die ihr in den Stunden gefallen hat, und das Kind bekommt einen Sticker oder einen Stern auf eine Karte.${mitBlatt ? ' Auf dem Blatt malt es danach sein Abzeichen.' : ''}`,
-        'fr.text': `${an.fr}Les activités des dernières fois sont là – ${mitBlatt ? 'les fiches ou un papier avec chaque titre' : 'un objet de chaque activité'} : ${fr}. L’enfant choisit celle qu’il a le plus aimée ou qui l’a le plus aidé, ${min >= 10 ? 'et on la refait une fois (trois, quatre minutes)' : 'et montre brièvement comment elle allait'}.${c.alter >= 6 ? ' Puis l’adulte demande : « Qu’est-ce qui t’a aidé ? » – montrer ou dire un mot suffit.' : ''}${min >= 15 ? (probeFr ? ` Ensuite, un petit essai nouveau sur l’activité choisie – l’adulte lit celui qui va (${probeFr}), et l’enfant montre ou dit ce que le personnage pourrait faire.` : ' Ensuite, un petit essai nouveau : l’adulte raconte une nouvelle situation inventée où cette activité convient, et l’enfant montre ou dit ce qu’il ferait.') : ''} Puis on fête : l’adulte nomme une chose qui lui a plu pendant les séances, et l’enfant reçoit un autocollant ou une étoile sur une carte.${mitBlatt ? ' Sur la fiche, il dessine ensuite son badge.' : ''}`,
+        text: `${an.de}Die Übungen der letzten Male liegen da – ${mitBlatt ? 'die Blätter oder je ein Zettel mit dem Titel' : 'je ein Ding aus jeder Übung'}: ${de}. Das Kind sucht die aus, die am meisten Spaß gemacht oder geholfen hat, ${min >= 10 ? 'und sie wird noch einmal gespielt (drei, vier Minuten)' : 'und zeigt kurz, wie sie ging'}.${c.alter >= 6 ? ' Dann fragt die Fachkraft: „Was hat dir dabei geholfen?“ – zeigen oder ein Wort reicht.' : zeigWz.de}${min >= 15 ? (probeDe ? ` Danach eine kleine neue Probe zur gewählten Übung – die Fachkraft liest die passende vor (${probeDe}), und das Kind zeigt oder sagt, was die Figur tun könnte.` : ' Danach eine kleine neue Probe: Die Fachkraft erzählt eine neue, erfundene Situation, in der diese Übung passt, und das Kind zeigt oder sagt, was es tun würde.') : ''} Dann wird gefeiert: Die Fachkraft sagt eine Sache, die ihr in den Stunden gefallen hat, und das Kind bekommt einen Sticker oder einen Stern auf eine Karte.${mitBlatt ? ' Auf dem Blatt malt es danach sein Abzeichen.' : ''}`,
+        'fr.text': `${an.fr}Les activités des dernières fois sont là – ${mitBlatt ? 'les fiches ou un papier avec chaque titre' : 'un objet de chaque activité'} : ${fr}. L’enfant choisit celle qu’il a le plus aimée ou qui l’a le plus aidé, ${min >= 10 ? 'et on la refait une fois (trois, quatre minutes)' : 'et montre brièvement comment elle allait'}.${c.alter >= 6 ? ' Puis l’adulte demande : « Qu’est-ce qui t’a aidé ? » – montrer ou dire un mot suffit.' : zeigWz.fr}${min >= 15 ? (probeFr ? ` Ensuite, un petit essai nouveau sur l’activité choisie – l’adulte lit celui qui va (${probeFr}), et l’enfant montre ou dit ce que le personnage pourrait faire.` : ' Ensuite, un petit essai nouveau : l’adulte raconte une nouvelle situation inventée où cette activité convient, et l’enfant montre ou dit ce qu’il ferait.') : ''} Puis on fête : l’adulte nomme une chose qui lui a plu pendant les séances, et l’enfant reçoit un autocollant ou une étoile sur une carte.${mitBlatt ? ' Sur la fiche, il dessine ensuite son badge.' : ''}`,
         sagen: c.alter >= 6 ? (mitBlatt ? 'Welche machen wir noch einmal? Und was hat dir dabei geholfen?' : 'Welches Spiel machen wir noch einmal? Und was hat dir dabei geholfen?') : 'Welches Spiel machen wir noch einmal? Du darfst zeigen.',
         'fr.sagen': c.alter >= 6 ? (mitBlatt ? 'Laquelle on refait ? Et qu’est-ce qui t’a aidé ?' : 'Quel jeu on refait ? Et qu’est-ce qui t’a aidé ?') : 'Quel jeu on refait ? Tu peux montrer.',
         wennEsKippt: 'Mag das Kind nicht wählen, schlägt die Fachkraft eine vor. Feiern geht auch leise: ein Daumen hoch und ein Stern auf die Karte.',
