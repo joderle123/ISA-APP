@@ -1228,7 +1228,7 @@ function GruppenDialog({ onClose, stand, aendern }: { onClose: () => void; stand
   return (
     <Dialog onClose={onClose} labelledBy="ku-gruppen-titel" className="dlg-mid">
       <header className="dlg-head items-center">
-        <h2 id="ku-gruppen-titel" className="disp flex-1 text-[19px]">
+        <h2 id="ku-gruppen-titel" className="disp flex-1 text-lg">
           Meine Kursgruppen
         </h2>
         <button type="button" className="icon-btn" onClick={onClose} aria-label="Schließen">
@@ -1398,8 +1398,8 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
       <>
         <div className="mb-4 flex flex-wrap items-end justify-between gap-x-4 gap-y-3">
           <div className="min-w-0">
-            <h1 className="disp text-[26px] leading-tight text-ink sm:text-[30px]">Skills-Kurs</h1>
-            <p className="mt-1 text-[14px] text-muted">
+            <h1 className="disp text-xl leading-tight text-ink sm:text-2xl">Skills-Kurs</h1>
+            <p className="mt-1 text-base text-muted">
               Für Kleingruppen von 12 bis 16 Jahren · {kursjahre.length === 1 ? 'ein Kursjahr' : `${kursjahre.length} Kursjahre`}, je ein Schuljahr mit rund 100 Minuten pro Woche
             </p>
           </div>
@@ -1419,8 +1419,8 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
     )
 
   return (
-    <div className={aktiv ? '' : 'hidden'}>
-      <div className="mx-auto max-w-[1180px] px-4 pt-6 pb-16 sm:px-6">
+    <main className={aktiv ? '' : 'hidden'}>
+      <div className="mx-auto max-w-[1180px] px-4 pt-4 pb-16 sm:px-6 sm:pt-6">
         {!gespeichert ? (
           <div className="callout mb-4">
             <Icon name="alert" />
@@ -1430,6 +1430,6 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
         {inhalt}
       </div>
       {gruppenOffen && <GruppenDialog onClose={() => setGruppenOffen(false)} stand={stand} aendern={aendern} />}
-    </div>
+    </main>
   )
 }

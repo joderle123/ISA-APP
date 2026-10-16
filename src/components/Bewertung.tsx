@@ -35,7 +35,7 @@ function zahl(x: number) {
   return x.toFixed(1).replace('.', ',')
 }
 
-/** Kompakt für Karten: Team-Schnitt (oder eigene Sterne, solange es keinen gibt). */
+/** Kompakt für Karten: Team-Schnitt (oder eigene Sterne, solange es keinen gibt); ohne Bewertung nichts. */
 export function BewertungKurz({ gesamt, eigen }: { gesamt?: Gesamtbewertung; eigen: number }) {
   if (gesamt && gesamt.anzahl > 0)
     return (
@@ -52,7 +52,8 @@ export function BewertungKurz({ gesamt, eigen }: { gesamt?: Gesamtbewertung; eig
         <span className="n">deine</span>
       </span>
     )
-  return <span className="bew-kurz leer">Noch keine Bewertung</span>
+  // Ohne Bewertung bleibt die Zeile leer (500 Mal „Noch keine Bewertung“ war Rauschen ohne Aussage)
+  return null
 }
 
 /** Ausführlich in der Detailansicht. */
@@ -107,7 +108,7 @@ export function BewertungVoll({
         </button>
       </div>
       {!verbunden && (
-        <p className="mt-2 flex items-start gap-1.5 text-[12.5px] text-muted">
+        <p className="mt-2 flex items-start gap-1.5 text-xs text-muted">
           <Icon name="info" className="ic mt-[2px] h-3.5 w-3.5 shrink-0" />
           Ohne verbundene Team-Ablage bleibt deine Bewertung auf diesem PC.
         </p>

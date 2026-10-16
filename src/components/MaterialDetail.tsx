@@ -17,6 +17,7 @@ import { variants, applyVariant } from '../data/variants'
 import { WorksheetView } from './WorksheetView'
 import { Dialog } from './Dialog'
 import { Icon } from './Icon'
+import { alterText } from './stufe'
 
 export type DownloadKind = 'pdf' | 'ab'
 
@@ -37,8 +38,8 @@ interface Props {
 function Fact({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div className="grid grid-cols-[104px_minmax(0,1fr)] gap-3 border-t border-line py-2.5 first:border-t-0 first:pt-0">
-      <dt className="text-[13px] text-muted">{label}</dt>
-      <dd className="m-0 text-[14px] leading-snug font-[540] text-ink">{children}</dd>
+      <dt className="text-sm text-muted">{label}</dt>
+      <dd className="m-0 text-base leading-snug font-[540] text-ink">{children}</dd>
     </div>
   )
 }
@@ -79,21 +80,24 @@ export function MaterialDetail({
       <header className="dlg-head">
         <div className="min-w-0 flex-1">
           <div className="eyebrow text-accent">{typeLabels(view)} · ISA-Material</div>
-          <h2 id={titleId} className="disp mt-1 text-[24px] leading-[1.18] text-ink sm:text-[27px]">
+          <h2 id={titleId} className="disp mt-1 text-xl leading-[1.18] text-ink sm:text-2xl">
             {view.title}
           </h2>
           <div className="mt-2.5 flex flex-wrap items-center gap-x-3 gap-y-2">
-            <span className={src.badge} title={src.title}>
-              <Icon name={src.icon} />
-              {src.label}
-            </span>
+            {/* das Herkunftsabzeichen nur bei Abweichung vom Üblichen (KI-Entwurf, Team-Ablage); „ISA-Team“ steht unter „Herkunft“ */}
+            {m.source !== 'original' && (
+              <span className={src.badge} title={src.title}>
+                <Icon name={src.icon} />
+                {src.label}
+              </span>
+            )}
             {m.author && (
-              <span className="inline-flex items-center gap-1.5 text-[13.5px] text-muted">
+              <span className="inline-flex items-center gap-1.5 text-sm text-muted">
                 <Icon name="user" className="ic h-4 w-4" />
                 {m.author}
               </span>
             )}
-            <span className="inline-flex items-center gap-1.5 text-[13px] text-muted">
+            <span className="inline-flex items-center gap-1.5 text-sm text-muted">
               <StarRating value={rating} onChange={(n) => onRate(m.id, n)} size={18} label={m.title} />
               <span aria-hidden="true">{rating ? `${rating}/5` : 'noch nicht bewertet'}</span>
             </span>
@@ -108,7 +112,7 @@ export function MaterialDetail({
         {vset && (
           <div className="border-b border-line bg-surface-2 px-6 py-3 max-sm:px-4">
             <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-              <span className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-ink-2">
+              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-2">
                 <Icon name="layers" className="ic h-4 w-4 text-accent" />
                 Version
               </span>
@@ -123,7 +127,7 @@ export function MaterialDetail({
                 ))}
               </div>
             </div>
-            <p className="mt-1.5 text-[12.5px] text-muted">
+            <p className="mt-1.5 text-xs text-muted">
               {setting?.description ?? 'Titel, Ablauf und PDF passen sich an – die Lernziele bleiben gleich.'}
             </p>
           </div>
@@ -132,21 +136,16 @@ export function MaterialDetail({
         <div className="grid gap-6 p-6 max-sm:p-4 lg:grid-cols-[minmax(0,1fr)_330px] lg:grid-rows-[auto_auto_1fr]">
           {/* Auf einen Blick */}
           <section className="panel p-4 lg:col-start-2 lg:row-start-1" aria-label="Auf einen Blick">
-            <h3 className="mb-3 text-[14px] font-semibold text-ink">Auf einen Blick</h3>
+            <h3 className="mb-3 text-base font-semibold text-ink">Auf einen Blick</h3>
             <dl className="m-0">
-              <Fact label="Altersstufe">
-                <span className="flex flex-wrap gap-1">
+              <Fact label="Alter">
+                {alterText(view.ageLevels) || view.ageLevels.join(', ')}
+                <span className="mt-1 flex flex-wrap gap-1">
                   {view.ageLevels.map((a) => (
                     <span key={a} className="tag" title={ageLevelById.get(a)?.description}>
                       {a}
                     </span>
                   ))}
-                </span>
-                <span className="mt-1 block text-[12.5px] font-normal text-muted">
-                  {view.ageLevels
-                    .map((a) => ageLevelById.get(a)?.description.match(/\(([^)]+)\)/)?.[1])
-                    .filter(Boolean)
-                    .join(' · ')}
                 </span>
               </Fact>
               <Fact label="Format">{typeLabels(view)}</Fact>
@@ -156,7 +155,7 @@ export function MaterialDetail({
                     {view.participants.map((p) => (
                       <li key={p.mode}>
                         {participantModeById.get(p.mode)?.labelDe ?? p.mode}
-                        {p.note ? <span className="block text-[12.5px] font-normal text-muted">{p.note}</span> : null}
+                        {p.note ? <span className="block text-xs font-normal text-muted">{p.note}</span> : null}
                       </li>
                     ))}
                   </ul>
@@ -170,9 +169,9 @@ export function MaterialDetail({
               <Fact label="Herkunft">
                 {src.label}
                 {m.source === 'generated' && (
-                  <span className="block text-[12.5px] font-normal text-muted">Vor dem Einsatz fachlich prüfen.</span>
+                  <span className="block text-xs font-normal text-muted">Vor dem Einsatz fachlich prüfen.</span>
                 )}
-                {m.uploadedBy && <span className="block text-[12.5px] font-normal text-muted">von {m.uploadedBy}</span>}
+                {m.uploadedBy && <span className="block text-xs font-normal text-muted">von {m.uploadedBy}</span>}
               </Fact>
             </dl>
           </section>
@@ -181,7 +180,7 @@ export function MaterialDetail({
           <div className="min-w-0 space-y-7 lg:col-start-1 lg:row-span-3 lg:row-start-1">
             <section>
               <h3 className="eyebrow mb-2">Kurzbeschreibung</h3>
-              <p className="text-[15.5px] leading-[1.65] text-ink-2">{view.shortDescription}</p>
+              <p className="text-base leading-[1.65] text-ink-2">{view.shortDescription}</p>
             </section>
 
             <section>
@@ -190,14 +189,14 @@ export function MaterialDetail({
                 {view.ablauf.map((phase, i) => (
                   <li key={i} className="flex gap-3">
                     <span
-                      className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-accent-soft text-[13px] font-bold text-accent-strong"
+                      className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-accent-soft text-sm font-bold text-accent-strong"
                       aria-hidden="true"
                     >
                       {i + 1}
                     </span>
-                    <div className="min-w-0 flex-1 rounded-xl border border-line bg-surface-2 px-4 py-3">
-                      {phase.title && <div className="mb-1 text-[14.5px] font-semibold text-ink">{phase.title}</div>}
-                      <p className="text-[14.5px] leading-[1.65] whitespace-pre-line text-ink-2">{phase.text}</p>
+                    <div className="min-w-0 flex-1 rounded-[var(--r-md)] border border-line bg-surface-2 px-4 py-3">
+                      {phase.title && <div className="mb-1 text-base font-semibold text-ink">{phase.title}</div>}
+                      <p className="text-base leading-[1.65] whitespace-pre-line text-ink-2">{phase.text}</p>
                     </div>
                   </li>
                 ))}
@@ -208,8 +207,8 @@ export function MaterialDetail({
               <section className="callout callout-info" aria-label="Hinweise">
                 <Icon name="lightbulb" />
                 <div className="min-w-0">
-                  <h3 className="mb-1 text-[14px] font-semibold">Hinweise zur Durchführung</h3>
-                  <p className="text-[14px] leading-[1.6] whitespace-pre-line text-ink-2">{view.remark}</p>
+                  <h3 className="mb-1 text-base font-semibold">Hinweise zur Durchführung</h3>
+                  <p className="text-base leading-[1.6] whitespace-pre-line text-ink-2">{view.remark}</p>
                 </div>
               </section>
             )}
@@ -221,7 +220,7 @@ export function MaterialDetail({
                     <h3 id={titleId + '-ab'} className="eyebrow">
                       Arbeitsblatt
                     </h3>
-                    <p className="mt-0.5 text-[13px] text-muted">So wird es gedruckt – am Ende des Material-PDFs oder einzeln.</p>
+                    <p className="mt-0.5 text-sm text-muted">So wird es gedruckt – am Ende des Material-PDFs oder einzeln.</p>
                   </div>
                   <button
                     type="button"
@@ -240,10 +239,10 @@ export function MaterialDetail({
 
           {/* Ziele & Themen */}
           <section className="panel p-4 lg:col-start-2 lg:row-start-2" aria-label="Ziele">
-            <h3 className="mb-3 text-[14px] font-semibold text-ink">Zielsetzungen</h3>
+            <h3 className="mb-3 text-base font-semibold text-ink">Zielsetzungen</h3>
             {view.etepStufen.length > 0 && (
               <div className="mb-3">
-                <div className="mb-1.5 text-[12.5px] font-semibold text-muted">ETEP-Stufen</div>
+                <div className="mb-1.5 text-xs font-semibold text-muted">ETEP-Stufen</div>
                 <div className="flex flex-wrap gap-1">
                   {etepStufen
                     .filter((e) => view.etepStufen.includes(e.id))
@@ -255,16 +254,16 @@ export function MaterialDetail({
                 </div>
               </div>
             )}
-            <div className="mb-1.5 text-[12.5px] font-semibold text-muted">
+            <div className="mb-1.5 text-xs font-semibold text-muted">
               ELDiB-Ziele{view.eldibGoals.length ? ` (${view.eldibGoals.length})` : ''}
             </div>
             {goalsByDomain.length === 0 && unknownGoals.length === 0 && (
-              <p className="text-[13.5px] text-muted">Keine ELDiB-Ziele hinterlegt.</p>
+              <p className="text-sm text-muted">Keine ELDiB-Ziele hinterlegt.</p>
             )}
             <div className="space-y-3">
               {goalsByDomain.map(({ domain, goals }) => (
                 <div key={domain.id} style={domainStyle(domain.id)}>
-                  <div className="mb-1 flex items-center gap-2 text-[13px] font-semibold text-ink">
+                  <div className="mb-1 flex items-center gap-2 text-sm font-semibold text-ink">
                     <span className="dot" />
                     {domain.label}
                   </div>
@@ -277,14 +276,14 @@ export function MaterialDetail({
                             type="button"
                             onClick={() => onShowGoal(g.id)}
                             title={`Alle Materialien zu ${g.id} ${g.label} anzeigen`}
-                            className={`flex w-full items-center gap-2 rounded-lg px-1.5 py-1 text-left text-[13.5px] hover:bg-page ${
+                            className={`flex w-full items-center gap-2 rounded-[var(--r-sm)] px-1.5 py-1 text-left text-sm hover:bg-page ${
                               hit ? 'bg-[color-mix(in_srgb,var(--bc)_8%,white)] font-semibold text-ink' : 'text-ink-2'
                             }`}
                           >
                             <span className="code">{g.id}</span>
                             <span className="min-w-0 flex-1">{g.label}</span>
                             {hit && (
-                              <span className="inline-flex items-center gap-1 text-[11.5px] font-semibold text-muted">
+                              <span className="inline-flex items-center gap-1 text-xs font-semibold text-muted">
                                 <Icon name="check" className="ic h-3.5 w-3.5" />
                                 gesucht
                               </span>
@@ -297,7 +296,7 @@ export function MaterialDetail({
                 </div>
               ))}
               {unknownGoals.length > 0 && (
-                <p className="text-[13px] text-muted">Weitere Codes: {unknownGoals.join(', ')}</p>
+                <p className="text-sm text-muted">Weitere Codes: {unknownGoals.join(', ')}</p>
               )}
             </div>
           </section>
@@ -305,7 +304,7 @@ export function MaterialDetail({
           <section className="panel p-4 lg:col-start-2 lg:row-start-3 lg:self-start" aria-label="Themen und Schlagwörter">
             {view.themes.length > 0 && (
               <>
-                <h3 className="mb-2 text-[14px] font-semibold text-ink">Themen</h3>
+                <h3 className="mb-2 text-base font-semibold text-ink">Themen</h3>
                 <div className="mb-3 flex flex-wrap gap-1">
                   {view.themes.map((t) => (
                     <span key={t} className="tag tag-outline">
@@ -316,11 +315,11 @@ export function MaterialDetail({
               </>
             )}
             {view.tags.length > 0 && (
-              <p className="text-[13px] leading-relaxed text-muted">{view.tags.map((t) => `#${t}`).join('  ')}</p>
+              <p className="text-sm leading-relaxed text-muted">{view.tags.map((t) => `#${t}`).join('  ')}</p>
             )}
             {m.attachments?.length ? (
               <div className="mt-3 border-t border-line pt-3">
-                <h3 className="mb-1.5 text-[14px] font-semibold text-ink">Weitere Materialien</h3>
+                <h3 className="mb-1.5 text-base font-semibold text-ink">Weitere Materialien</h3>
                 <ul className="m-0 list-none space-y-1.5 p-0">
                   {m.attachments.map((a, i) => (
                     <li key={i}>
@@ -328,7 +327,7 @@ export function MaterialDetail({
                         href={a.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-start gap-1.5 text-[13.5px] font-semibold text-accent underline decoration-accent-line underline-offset-3 hover:decoration-accent"
+                        className="inline-flex items-start gap-1.5 text-sm font-semibold text-accent underline decoration-accent-line underline-offset-3 hover:decoration-accent"
                       >
                         <Icon name="external" className="ic mt-0.5 h-4 w-4" />
                         {a.label}
@@ -345,7 +344,7 @@ export function MaterialDetail({
       </div>
 
       <footer className="dlg-foot">
-        <span className="hidden min-w-0 flex-1 truncate text-[13px] text-muted sm:block">
+        <span className="hidden min-w-0 flex-1 truncate text-sm text-muted sm:block">
           {setting ? `Version: ${plainLabel(setting.label)}` : vset ? 'Original-Version' : ''}
         </span>
         <span className="flex-1 sm:hidden" />

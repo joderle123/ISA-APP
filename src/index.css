@@ -36,15 +36,29 @@
   --ink: #0e1628;
   --ink-2: #263149;
   --muted: #586277;
-  --faint: #8c96a8;
+  /* --faint nur für Platzhalter und Deaktiviertes, nie für Text mit Aussage (5,0:1 auf Weiß, 4,6:1 auf --bg) */
+  --faint: #667084;
   --accent: #2e3a9c;
   --accent-strong: #232c7c;
   --accent-soft: #eceefa;
   --accent-line: #c8cdf0;
   --focus: 0 0 0 3px rgba(46, 58, 156, 0.26);
-  --radius-lg: 14px;
-  --radius: 10px;
-  --radius-sm: 7px;
+  /* Token-Stufe (gemeinsam mit Passgenau): vier Radien, sechs Schriftgrößen */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-pill: 999px;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-md: 15px;
+  --fs-lg: 17px;
+  --fs-xl: 22px;
+  --fs-2xl: 28px;
+  /* ältere Namen bleiben als Alias bestehen */
+  --radius-lg: var(--r-lg);
+  --radius: var(--r-md);
+  --radius-sm: var(--r-sm);
+  --tab-h: 0px;
   --shadow-1: 0 1px 2px rgba(14, 22, 40, 0.05);
   --shadow-2: 0 1px 2px rgba(14, 22, 40, 0.04), 0 10px 28px -10px rgba(14, 22, 40, 0.16);
   --shadow-3: 0 2px 6px rgba(14, 22, 40, 0.06), 0 22px 48px -14px rgba(14, 22, 40, 0.22);
@@ -76,6 +90,21 @@
   --font-display: 'Manrope var', 'Manrope', 'Inter var', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
 
+  /* Schriftskala: text-xs/sm/base/lg/xl/2xl = --fs-xs … --fs-2xl */
+  --text-xs: var(--fs-xs);
+  --text-sm: var(--fs-sm);
+  --text-base: var(--fs-md);
+  --text-lg: var(--fs-lg);
+  --text-xl: var(--fs-xl);
+  --text-2xl: var(--fs-2xl);
+  /* Zeilenhöhe wie bisher von außen erben (die Vorgaben von Tailwind würden leading-tight & Co. überschreiben) */
+  --text-xs--line-height: inherit;
+  --text-sm--line-height: inherit;
+  --text-base--line-height: inherit;
+  --text-lg--line-height: inherit;
+  --text-xl--line-height: inherit;
+  --text-2xl--line-height: inherit;
+
   --color-page: #f3f5f8;
   --color-page-2: #e9edf2;
   --color-surface: #ffffff;
@@ -85,7 +114,7 @@
   --color-ink: #0e1628;
   --color-ink-2: #263149;
   --color-muted: #586277;
-  --color-faint: #8c96a8;
+  --color-faint: #667084;
   --color-accent: #2e3a9c;
   --color-accent-strong: #232c7c;
   --color-accent-soft: #eceefa;
@@ -114,7 +143,7 @@
     background: var(--bg);
     color: var(--ink);
     font-family: var(--font-ui);
-    font-size: 14.5px;
+    font-size: var(--fs-md);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
@@ -147,6 +176,12 @@
     animation: none !important;
     scroll-behavior: auto !important;
   }
+  /* Ladekreise (hier und in Passgenau) bleiben als Ring mit dunklem Segment sichtbar, statt zu verschwinden */
+  .spin,
+  .pg-spin {
+    border-top-color: var(--accent) !important;
+    border-right-color: var(--accent) !important;
+  }
 }
 
 /* ---------------------------------------------------------------------------
@@ -159,7 +194,7 @@
     letter-spacing: var(--display-track);
   }
   .eyebrow {
-    font-size: 11.5px;
+    font-size: var(--fs-xs);
     font-weight: 650;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -188,7 +223,7 @@
     border-radius: var(--radius);
     background: var(--surface);
     color: var(--ink);
-    font-size: 14px;
+    font-size: var(--fs-md);
     font-weight: 600;
     line-height: 1.2;
     white-space: nowrap;
@@ -240,8 +275,8 @@
   .btn-sm {
     min-height: 32px;
     padding: 4px 11px;
-    font-size: 13px;
-    border-radius: 9px;
+    font-size: var(--fs-sm);
+    border-radius: var(--r-md);
   }
   .btn-sm .ic {
     width: 15px;
@@ -254,7 +289,7 @@
     height: 36px;
     flex: 0 0 auto;
     border: 0;
-    border-radius: 9px;
+    border-radius: var(--r-md);
     background: none;
     color: var(--muted);
     cursor: pointer;
@@ -271,7 +306,7 @@
     background: none;
     padding: 2px 0;
     color: var(--accent);
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     font-weight: 600;
     cursor: pointer;
     text-decoration: underline;
@@ -297,7 +332,7 @@
     border-radius: var(--radius);
     background: var(--surface);
     color: var(--ink);
-    font-size: 14.5px;
+    font-size: var(--fs-md);
     transition:
       border-color 0.15s,
       box-shadow 0.15s;
@@ -315,7 +350,7 @@
     height: 42px;
     padding: 0 8px 0 13px;
     border: 1px solid var(--line-2);
-    border-radius: 12px;
+    border-radius: var(--r-md);
     background: var(--surface);
     color: var(--faint);
     box-shadow: var(--shadow-1);
@@ -334,14 +369,14 @@
     outline: 0;
     background: transparent;
     color: var(--ink);
-    font-size: 14.5px;
+    font-size: var(--fs-md);
   }
   .search input::-webkit-search-cancel-button {
     display: none;
   }
   .search-sm {
     height: 38px;
-    border-radius: 10px;
+    border-radius: var(--r-md);
     box-shadow: none;
   }
   .search-sm .ic {
@@ -349,15 +384,15 @@
     height: 16px;
   }
   .search-sm input {
-    font-size: 14px;
+    font-size: var(--fs-md);
   }
   .kbd {
-    font-size: 11px;
+    font-size: var(--fs-xs);
     font-weight: 600;
     color: var(--muted);
     border: 1px solid var(--line);
     border-bottom-width: 2px;
-    border-radius: 6px;
+    border-radius: var(--r-sm);
     padding: 0 7px;
     background: var(--surface-2);
     line-height: 18px;
@@ -371,10 +406,10 @@
     min-height: 32px;
     padding: 4px 11px;
     border: 1px solid var(--line-2);
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     background: var(--surface);
     color: var(--ink-2);
-    font-size: 13px;
+    font-size: var(--fs-sm);
     font-weight: 560;
     line-height: 1.2;
     cursor: pointer;
@@ -400,7 +435,7 @@
     background: var(--surface-2);
   }
   .fchip .n {
-    font-size: 11.5px;
+    font-size: var(--fs-xs);
     font-weight: 600;
     color: var(--muted);
     font-variant-numeric: tabular-nums;
@@ -422,10 +457,10 @@
     max-width: 100%;
     padding: 3px 5px 3px 11px;
     border: 1px solid var(--accent-line);
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     background: var(--accent-soft);
     color: var(--accent-strong);
-    font-size: 13px;
+    font-size: var(--fs-sm);
     font-weight: 600;
     line-height: 1.25;
   }
@@ -442,7 +477,7 @@
     height: 24px;
     flex: 0 0 auto;
     border: 0;
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     background: transparent;
     color: var(--accent);
     cursor: pointer;
@@ -470,7 +505,7 @@
     display: inline-flex;
     gap: 2px;
     padding: 3px;
-    border-radius: 11px;
+    border-radius: var(--r-md);
     background: var(--bg-2);
     flex-wrap: wrap;
   }
@@ -479,10 +514,10 @@
     align-items: center;
     gap: 6px;
     border: 0;
-    border-radius: 8px;
+    border-radius: var(--r-sm);
     background: transparent;
     color: var(--muted);
-    font-size: 13px;
+    font-size: var(--fs-sm);
     font-weight: 580;
     padding: 6px 11px;
     cursor: pointer;
@@ -495,7 +530,8 @@
     color: var(--ink);
   }
   .seg button[aria-pressed='true'],
-  .seg button[aria-selected='true'] {
+  .seg button[aria-selected='true'],
+  .seg button[aria-current='page'] {
     background: var(--surface);
     color: var(--ink);
     box-shadow:
@@ -505,7 +541,7 @@
   .dot {
     width: 8px;
     height: 8px;
-    border-radius: 3px;
+    border-radius: var(--r-sm);
     flex: 0 0 auto;
     background: var(--bc, var(--faint));
   }
@@ -516,10 +552,10 @@
     align-items: center;
     gap: 4px;
     padding: 2px 7px;
-    border-radius: 6px;
+    border-radius: var(--r-sm);
     background: var(--bg-2);
     color: var(--ink-2);
-    font-size: 12px;
+    font-size: var(--fs-xs);
     font-weight: 600;
     line-height: 1.35;
     white-space: nowrap;
@@ -539,8 +575,8 @@
     align-items: center;
     gap: 5px;
     padding: 3px 9px;
-    border-radius: 999px;
-    font-size: 11.5px;
+    border-radius: var(--r-pill);
+    font-size: var(--fs-xs);
     font-weight: 620;
     line-height: 1.3;
     white-space: nowrap;
@@ -570,11 +606,11 @@
   .code {
     display: inline-block;
     padding: 2px 7px;
-    border-radius: 6px;
+    border-radius: var(--r-sm);
     background: color-mix(in srgb, var(--bc, var(--accent)) 12%, white);
     color: color-mix(in srgb, var(--bc, var(--accent)) 85%, black);
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: var(--fs-xs);
     font-weight: 700;
     line-height: 1.4;
     white-space: nowrap;
@@ -648,8 +684,8 @@
     gap: 11px;
     align-items: flex-start;
     padding: 12px 14px;
-    border-radius: 12px;
-    font-size: 14px;
+    border-radius: var(--r-md);
+    font-size: var(--fs-md);
     line-height: 1.55;
     background: var(--warn-bg);
     border: 1px solid var(--warn-line);
@@ -682,7 +718,7 @@
     margin: auto;
     padding: 0;
     border: 0;
-    border-radius: 16px;
+    border-radius: var(--r-lg);
     background: var(--surface);
     color: var(--ink);
     box-shadow: var(--shadow-3);
@@ -748,10 +784,10 @@
     gap: 10px;
     max-width: min(520px, calc(100vw - 32px));
     padding: 11px 14px 11px 16px;
-    border-radius: 12px;
+    border-radius: var(--r-md);
     background: var(--ink);
     color: #fff;
-    font-size: 14px;
+    font-size: var(--fs-md);
     line-height: 1.45;
     box-shadow: var(--shadow-3);
   }
@@ -799,7 +835,7 @@
     border: 0;
     background: none;
     color: var(--ink);
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     font-weight: 650;
     text-align: left;
     cursor: pointer;
@@ -819,10 +855,10 @@
     min-width: 20px;
     height: 20px;
     padding: 0 6px;
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     background: var(--accent);
     color: #fff;
-    font-size: 11.5px;
+    font-size: var(--fs-xs);
     font-weight: 700;
   }
   .check-row {
@@ -831,8 +867,8 @@
     gap: 9px;
     min-height: 32px;
     padding: 3px 6px;
-    border-radius: 8px;
-    font-size: 13.5px;
+    border-radius: var(--r-sm);
+    font-size: var(--fs-sm);
     color: var(--ink-2);
     cursor: pointer;
   }
@@ -848,7 +884,7 @@
   }
   .check-row .n {
     margin-left: auto;
-    font-size: 12px;
+    font-size: var(--fs-xs);
     color: var(--muted);
     font-variant-numeric: tabular-nums;
   }
@@ -865,7 +901,7 @@
   }
   .scroll-slim::-webkit-scrollbar-thumb {
     background: var(--line-2);
-    border-radius: 9999px;
+    border-radius: var(--r-pill);
   }
 
   /* Urheber-Vermerk am Ende KI-erstellter Inhalte (Text: src/lib/urheber.ts), davor das CDSE-Logo */
@@ -876,7 +912,7 @@
     margin: 0;
     padding-top: 10px;
     border-top: 1px solid var(--line);
-    font-size: 12px;
+    font-size: var(--fs-xs);
     line-height: 1.5;
     color: var(--muted);
   }
@@ -903,7 +939,7 @@
     display: flex;
     gap: 2px;
     padding: 3px;
-    border-radius: 12px;
+    border-radius: var(--r-md);
     background: var(--bg-2);
     overflow-x: auto;
     max-width: 100%;
@@ -913,10 +949,10 @@
     align-items: center;
     gap: 7px;
     border: 0;
-    border-radius: 9px;
+    border-radius: var(--r-md);
     background: transparent;
     color: var(--muted);
-    font-size: 14px;
+    font-size: var(--fs-md);
     font-weight: 600;
     padding: 7px 13px;
     white-space: nowrap;
@@ -941,11 +977,11 @@
       0 0 0 1px var(--line);
   }
   .haupt-reiter .n {
-    font-size: 11.5px;
+    font-size: var(--fs-xs);
     font-weight: 650;
     color: var(--muted);
     background: var(--bg);
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     padding: 1px 7px;
     font-variant-numeric: tabular-nums;
   }
@@ -953,65 +989,341 @@
     background: var(--accent-soft);
     color: var(--accent);
   }
-
-  /* Bereichs-Kacheln */
-  .bl-bereiche {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 176px), 1fr));
-    gap: 10px;
-    margin-bottom: 20px;
+  /* „Stunde planen“ trägt den Namen des Werkzeugs als Zusatz */
+  .zusatz {
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    color: var(--muted);
   }
-  .bl-bereich-kachel {
-    --bc: var(--accent);
-    --bz: var(--accent-soft);
+  .haupt-reiter button[aria-current='page'] .zusatz {
+    color: var(--accent);
+  }
+
+  /* Unterreiter der Bibliothek (Arbeitsblätter | Einheiten) */
+  .bib-unter button {
+    min-height: 36px;
+    font-size: var(--fs-md);
+  }
+  .bib-unter .n {
+    font-size: var(--fs-xs);
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+  }
+
+  /* Willkommensleiste (nur beim ersten Besuch) */
+  .willkommen {
+    padding: 16px 18px 18px;
+    border: 1px solid var(--accent-line);
+    border-radius: var(--r-lg);
+    background: linear-gradient(180deg, var(--accent-soft), var(--surface) 130%);
+  }
+  .willkommen-kopf {
     display: flex;
-    align-items: center;
-    gap: 11px;
-    min-width: 0;
-    padding: 10px 12px;
-    border: 1px solid var(--line);
-    border-radius: 14px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .willkommen-titel {
+    margin: 0;
+    font-size: var(--fs-lg);
+    color: var(--ink);
+  }
+  .willkommen-text {
+    margin: 2px 0 0;
+    max-width: 66ch;
+    font-size: var(--fs-md);
+    color: var(--ink-2);
+  }
+  .willkommen-wahl {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .willkommen-karte {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-height: 44px;
+    padding: 12px 14px;
+    border: 1px solid var(--line-2);
+    border-radius: var(--r-md);
     background: var(--surface);
+    color: var(--ink);
     text-align: left;
     cursor: pointer;
     box-shadow: var(--shadow-1);
     transition:
       border-color 0.15s,
-      box-shadow 0.15s,
-      transform 0.15s;
+      box-shadow 0.15s;
+  }
+  .willkommen-karte:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-2);
+  }
+  .willkommen-karte.primaer {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: #fff;
+  }
+  .willkommen-karte.primaer:hover {
+    background: var(--accent-strong);
+  }
+  .willkommen-karte b {
+    display: block;
+    font-size: var(--fs-md);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .willkommen-karte small {
+    display: block;
+    margin-top: 2px;
+    font-size: var(--fs-sm);
+    line-height: 1.4;
+    color: var(--muted);
+  }
+  .nur-klein {
+    display: none;
+  }
+  .willkommen-karte.primaer small {
+    color: rgba(255, 255, 255, 0.88);
+  }
+  .willkommen-icon {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 auto;
+    border-radius: var(--r-md);
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+  .willkommen-karte.primaer .willkommen-icon {
+    background: rgba(255, 255, 255, 0.16);
+    color: #fff;
+  }
+
+  /* Menü in Passgenau (Handy): ersetzt die untere Tableiste */
+  .menue-wrap {
+    position: relative;
+  }
+  .menue-liste {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    z-index: 50;
+    min-width: 260px;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: var(--surface);
+    border: 1px solid var(--line-2);
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-3);
+  }
+  .menue-liste button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 44px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: var(--r-sm);
+    background: none;
+    color: var(--ink);
+    font-size: var(--fs-md);
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .menue-liste .zusatz {
+    margin-left: auto;
+  }
+  .menue-liste button:hover {
+    background: var(--bg);
+  }
+  .menue-liste button[aria-current='page'] {
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+  }
+
+  /* Handy: Hauptnavigation als feste Tableiste unten (Passgenau hat dort seine eigene Aktionsleiste) */
+  .tabbar {
+    display: none;
+  }
+  @media (max-width: 639.98px) {
+    .haupt-reiter {
+      display: none;
+    }
+    body.mit-tabbar {
+      --tab-h: calc(56px + env(safe-area-inset-bottom, 0px));
+    }
+    body.mit-tabbar #inhalt {
+      padding-bottom: var(--tab-h);
+    }
+    body.mit-tabbar .tabbar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 45;
+      display: flex;
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      box-shadow: 0 -8px 20px -16px rgba(14, 22, 40, 0.4);
+    }
+    .tabbar button {
+      position: relative;
+      display: flex;
+      flex: 1 1 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      min-width: 0;
+      min-height: 56px;
+      padding: 6px 2px;
+      border: 0;
+      background: none;
+      color: var(--muted);
+      font-size: var(--fs-xs);
+      font-weight: 600;
+      line-height: 1.15;
+      cursor: pointer;
+    }
+    .tabbar button .ic {
+      width: 22px;
+      height: 22px;
+    }
+    .tabbar button span {
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .tabbar button[aria-current='page'] {
+      color: var(--accent);
+    }
+    .tabbar button[aria-current='page']::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 22%;
+      right: 22%;
+      height: 3px;
+      border-radius: 0 0 var(--r-sm) var(--r-sm);
+      background: var(--accent);
+    }
+    .willkommen {
+      padding: 12px 12px 14px;
+    }
+    .willkommen-text {
+      display: none;
+    }
+    .willkommen-wahl {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .willkommen-karte {
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 6px;
+      text-align: center;
+    }
+    .willkommen-karte small {
+      display: none;
+    }
+    .willkommen-karte b {
+      font-size: var(--fs-sm);
+    }
+    .nur-gross {
+      display: none;
+    }
+    .nur-klein {
+      display: inline;
+    }
+  }
+
+  /* Bereichsauswahl: eine Zeile, seitlich wischbar (Radiogruppe, Pfeiltasten) */
+  .bl-bereiche {
+    display: flex;
+    gap: 8px;
+    margin: 0 -2px 10px;
+    padding: 2px 2px 8px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  .bl-bereich-kachel {
+    --bc: var(--accent);
+    --bz: var(--accent-soft);
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 6px 14px 6px 7px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-pill);
+    background: var(--surface);
+    color: var(--ink);
+    white-space: nowrap;
+    cursor: pointer;
+    scroll-snap-align: start;
+    transition:
+      border-color 0.15s,
+      background 0.15s;
   }
   .bl-bereich-kachel:hover {
     border-color: color-mix(in srgb, var(--bc) 45%, var(--line));
-    transform: translateY(-1px);
   }
+  .bl-bereich-kachel[aria-checked='true'],
   .bl-bereich-kachel.an {
     border-color: var(--bc);
-    box-shadow:
-      0 0 0 1px var(--bc),
-      var(--shadow-2);
+    background: color-mix(in srgb, var(--bc) 8%, white);
+    box-shadow: 0 0 0 1px var(--bc);
+  }
+  .bl-bereich-kachel[disabled] {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
   }
   .bl-bereich-kachel b {
-    display: block;
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     font-weight: 650;
-    color: var(--ink);
-    line-height: 1.25;
+    line-height: 1.2;
   }
-  .bl-bereich-kachel span > span {
-    display: block;
-    font-size: 12px;
+  .bl-bereich-kachel .n {
+    font-size: var(--fs-xs);
+    font-weight: 600;
     color: var(--muted);
+    font-variant-numeric: tabular-nums;
   }
   .bl-bereich-ic {
     display: grid;
     place-items: center;
-    width: 38px;
-    height: 38px;
+    width: 30px;
+    height: 30px;
     flex: 0 0 auto;
-    border-radius: 11px;
+    border-radius: 50%;
     color: var(--accent);
   }
   .bl-bereich-ic svg {
+    width: 18px;
+    height: 18px;
+  }
+  /* im Modulheft (siehe unten) ist das Symbol größer */
+  .bl-heft .bl-bereich-ic {
+    width: 38px;
+    height: 38px;
+    border-radius: var(--r-md);
+  }
+  .bl-heft .bl-bereich-ic svg {
     width: 21px;
     height: 21px;
   }
@@ -1028,7 +1340,7 @@
     background: var(--surface);
     border: 1px solid color-mix(in srgb, var(--bc) 28%, var(--line));
     border-left: 4px solid var(--bc);
-    border-radius: 14px;
+    border-radius: var(--r-lg);
     box-shadow: var(--shadow-1);
   }
   .bl-heft-text {
@@ -1037,7 +1349,7 @@
   }
   .bl-heft-text b {
     display: block;
-    font-size: 14.5px;
+    font-size: var(--fs-md);
     font-weight: 650;
     color: var(--ink);
     line-height: 1.3;
@@ -1045,7 +1357,7 @@
   .bl-heft-text span {
     display: block;
     margin-top: 1px;
-    font-size: 13px;
+    font-size: var(--fs-sm);
     color: var(--muted);
   }
   .bl-heft-knoepfe {
@@ -1077,6 +1389,15 @@
     box-shadow: var(--shadow-2);
     border-color: color-mix(in srgb, var(--bc) 30%, var(--line));
   }
+  /* Karten außerhalb des Bildes werden nicht gemalt – bei vielen Treffern die halbe Arbeit */
+  .bl-karte {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 260px;
+  }
+  .bl-karte .card-open:focus-visible::after {
+    outline-offset: -3px;
+    border-radius: var(--r-lg);
+  }
   .bl-karte::before {
     content: '';
     position: absolute;
@@ -1094,13 +1415,13 @@
     display: block;
     font-family: var(--font-display);
     font-weight: 800;
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     letter-spacing: 0.04em;
     color: var(--bc);
   }
   .bl-bereich {
     display: block;
-    font-size: 12px;
+    font-size: var(--fs-xs);
     color: var(--muted);
     white-space: nowrap;
     overflow: hidden;
@@ -1126,75 +1447,181 @@
     width: 74%;
     height: 74%;
   }
-  .bl-wahl {
-    position: relative;
-    z-index: 2;
-    margin-left: auto;
-    align-self: flex-start;
-    display: grid;
-    place-items: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 9px;
-    border: 1px solid var(--line);
-    color: var(--muted);
-    cursor: pointer;
-    transition:
-      background 0.15s,
-      color 0.15s,
-      border-color 0.15s;
-  }
-  .bl-wahl input {
-    position: absolute;
-    opacity: 0;
-    inset: 0;
-    cursor: pointer;
-  }
-  .bl-wahl:hover {
-    color: var(--ink);
-    border-color: var(--line-2);
-  }
-  .bl-wahl:has(input:checked) {
-    background: var(--bc);
-    border-color: var(--bc);
-    color: #fff;
-  }
-  .bl-wahl:has(input:focus-visible) {
-    box-shadow: var(--focus);
-  }
-  .bl-wahl .ic {
-    width: 16px;
-    height: 16px;
-  }
-
-  /* Filter */
-  .bl-filter section {
-    padding: 12px 0;
+  .bl-karte-fuss {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px 10px 16px;
     border-top: 1px solid var(--line);
   }
-  .bl-filter section:first-child {
-    border-top: 0;
+  .bl-meta {
+    display: grid;
+    gap: 1px;
+  }
+  .bl-meta-eins {
+    margin: 0;
+    font-size: var(--fs-sm);
+    color: var(--ink-2);
+  }
+  .bl-meta-eins b {
+    font-weight: 650;
+    color: var(--ink);
+  }
+  .bl-meta-zwei {
+    margin: 0;
+    font-size: var(--fs-xs);
+    color: var(--muted);
+  }
+  /* „Zur Mappe“: beim ersten Mal mit Text, danach ein Symbolknopf mit 44 px Trefferfläche */
+  .bl-mappe-knopf.an {
+    background: var(--bc, var(--accent));
+    border-color: var(--bc, var(--accent));
+    color: #fff;
+  }
+  .bl-mappe-knopf.nur-symbol {
+    position: relative;
+    width: 36px;
+    min-width: 36px;
+    padding: 0;
+  }
+  .bl-mappe-knopf.nur-symbol::after {
+    content: '';
+    position: absolute;
+    inset: -6px;
+  }
+  .btn-gross {
+    min-height: 44px;
+    padding: 9px 16px;
+  }
+  /* Sprachabzeichen auf der Karte: DE ruhig, alles andere (LU, FR, EN) hervorgehoben, damit es nicht wie ein Fehler aussieht */
+  .sprache {
+    display: inline-flex;
+    align-items: center;
+    padding: 1px 6px;
+    border: 1px solid var(--line-2);
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    color: var(--muted);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+  }
+  .sprache.fremd {
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+  }
+  .einheit-karte {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 260px;
+  }
+  .einheit-karte .card-open:focus-visible::after {
+    outline-offset: -3px;
+  }
+  /* Filter in der Einheiten-Seite: Abschnitte laufen in Spalten (wie das Fach der Arbeitsblätter) */
+  .filterpanel {
+    display: flex;
+    flex-direction: column;
+  }
+  .fach-spalten .filterpanel {
+    display: block;
+    columns: 3 300px;
+    column-gap: 32px;
+  }
+  .fach-spalten .fsec {
+    break-inside: avoid;
+  }
+  .fach-spalten .fsec:first-child {
+    border-top: 1px solid var(--line);
+  }
+  .bl-fach-fuss {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0 8px;
+    border-top: 1px solid var(--line);
+  }
+  .bl-mehr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    font-size: var(--fs-sm);
+    color: var(--muted);
+  }
+  .bl-mehr p {
+    margin: 0;
+  }
+
+  /* Filter (einklappbares Fach über den Treffern) */
+  .bl-fach {
+    margin-bottom: 14px;
+    padding: 12px 16px 6px;
+  }
+  .bl-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0 28px;
+  }
+  .bl-filter section {
+    padding: 10px 0;
+  }
+  .bl-filter .bl-filter-breit {
+    flex: 1 0 100%;
+    border-top: 1px solid var(--line);
   }
   .bl-filter h3 {
-    font-size: 12px;
+    font-size: var(--fs-xs);
     font-weight: 650;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--muted);
     margin-bottom: 8px;
   }
+  .bl-thema-fach summary {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 36px;
+    font-size: var(--fs-xs);
+    font-weight: 650;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .bl-thema-fach summary .n {
+    font-variant-numeric: tabular-nums;
+  }
+  .bl-thema-fach summary .hinweis {
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+  .bl-thema-fach[open] summary .hinweis {
+    display: none;
+  }
+  .bl-themen {
+    columns: 3 230px;
+    column-gap: 16px;
+    padding: 4px 0 8px;
+  }
   .bl-thema {
     display: flex;
     align-items: center;
     gap: 8px;
     width: 100%;
+    min-height: 36px;
     padding: 5px 8px;
     border: 0;
-    border-radius: 8px;
+    border-radius: var(--r-sm);
     background: transparent;
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     color: var(--ink-2);
     cursor: pointer;
+    break-inside: avoid;
   }
   .bl-thema:hover {
     background: var(--surface-2);
@@ -1205,7 +1632,7 @@
     font-weight: 620;
   }
   .bl-thema .n {
-    font-size: 12px;
+    font-size: var(--fs-xs);
     color: var(--muted);
     font-variant-numeric: tabular-nums;
   }
@@ -1225,12 +1652,66 @@
     gap: 22px;
     padding: 18px 22px 22px;
   }
+  .bl-vorschau-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+  }
   .bl-vorschau {
+    position: relative;
     width: 100%;
     aspect-ratio: 1 / 1.414;
     border: 1px solid var(--line);
-    border-radius: 12px;
+    border-radius: var(--r-md);
     background: var(--surface-2);
+    overflow: hidden;
+  }
+  .bl-vorschau.fertig {
+    aspect-ratio: auto;
+    background: #fff;
+  }
+  .bl-vorschau-bild {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .bl-vorschau.platz .bl-vorschau-bild {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+  .bl-vorschau-platz {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 24px;
+    text-align: center;
+    color: var(--muted);
+    font-size: var(--fs-md);
+  }
+  .bl-vorschau-platz b {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    font-weight: 750;
+    color: var(--ink);
+    max-width: 24ch;
+  }
+  .bl-vorschau-platz .spin {
+    margin-right: 6px;
+    vertical-align: -3px;
+  }
+  .bl-vorschau-leiste {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px 12px;
   }
   .bl-vorschau.leer {
     display: flex;
@@ -1238,7 +1719,7 @@
     justify-content: center;
     gap: 10px;
     color: var(--muted);
-    font-size: 14px;
+    font-size: var(--fs-md);
   }
   .bl-detail-info {
     display: flex;
@@ -1253,7 +1734,7 @@
   }
   .bl-fakten > div {
     display: grid;
-    grid-template-columns: 92px minmax(0, 1fr);
+    grid-template-columns: 112px minmax(0, 1fr);
     gap: 12px;
     padding: 8px 0;
     border-top: 1px solid var(--line);
@@ -1262,12 +1743,12 @@
     border-top: 0;
   }
   .bl-fakten dt {
-    font-size: 13px;
+    font-size: var(--fs-sm);
     color: var(--muted);
   }
   .bl-fakten dd {
     margin: 0;
-    font-size: 14px;
+    font-size: var(--fs-md);
     line-height: 1.5;
     color: var(--ink);
   }
@@ -1282,9 +1763,9 @@
     width: 100%;
     padding: 7px 9px;
     border: 1px solid var(--line);
-    border-radius: 9px;
+    border-radius: var(--r-md);
     background: var(--surface);
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     color: var(--ink-2);
     text-align: left;
     cursor: pointer;
@@ -1298,7 +1779,7 @@
     gap: 3px;
     margin: 0;
     padding-left: 18px;
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     line-height: 1.45;
     color: var(--ink-2);
   }
@@ -1314,24 +1795,40 @@
       grid-template-columns: 1fr;
       padding: 14px 14px 20px;
     }
+    /* Handy: erst Fassung und Knöpfe (Hauptweg), dann die Vorschau, dann die Einzelheiten */
+    .bl-detail-info {
+      display: contents;
+    }
+    .bl-detail-info > * {
+      order: 3;
+    }
+    .bl-detail-body > .bl-detail-vorschau {
+      order: 2;
+    }
+    .bl-detail-info > .bl-zuerst {
+      order: 1;
+    }
+    .bl-detail-body > .bl-detail-urheber {
+      order: 4;
+    }
   }
 
   /* Mappe (schwebende Leiste) */
   .bl-mappe {
     position: fixed;
     left: 50%;
-    bottom: 18px;
+    bottom: calc(18px + var(--tab-h));
     z-index: 40;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 9px 10px 9px 16px;
-    border-radius: 14px;
+    border-radius: var(--r-lg);
     background: var(--ink);
     color: #fff;
     box-shadow: var(--shadow-3);
-    font-size: 14px;
+    font-size: var(--fs-md);
     max-width: calc(100vw - 24px);
   }
   .bl-mappe .ic {
@@ -1368,10 +1865,10 @@
     gap: 4px;
     margin: 8px 0 0;
     padding: 8px 10px;
-    border-radius: 9px;
+    border-radius: var(--r-md);
     background: var(--surface-2);
     border: 1px solid var(--line);
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     line-height: 1.45;
     color: var(--ink-2);
   }
@@ -1395,7 +1892,7 @@
     gap: 6px 10px;
     padding: 7px 6px 7px 10px;
     border: 1px solid var(--line);
-    border-radius: 10px;
+    border-radius: var(--r-md);
     background: var(--surface);
   }
   .mp-pos {
@@ -1407,7 +1904,7 @@
     border-radius: 50%;
     background: var(--accent-soft);
     color: var(--accent-strong);
-    font-size: 12px;
+    font-size: var(--fs-xs);
     font-weight: 700;
     font-variant-numeric: tabular-nums;
   }
@@ -1416,7 +1913,7 @@
     min-width: 0;
   }
   .mp-titel {
-    font-size: 14px;
+    font-size: var(--fs-md);
     font-weight: 620;
     line-height: 1.3;
     color: var(--ink);
@@ -1427,7 +1924,7 @@
     flex-wrap: wrap;
     gap: 4px 8px;
     margin-top: 2px;
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     color: var(--muted);
   }
   .mp-knoepfe {
@@ -1440,7 +1937,7 @@
     width: auto;
     min-height: 32px;
     padding: 3px 26px 3px 9px;
-    font-size: 13px;
+    font-size: var(--fs-sm);
     margin-right: 4px;
   }
   .mp-knoepfe .icon-btn {
@@ -1459,7 +1956,7 @@
   .mp-leer {
     padding: 28px 12px;
     text-align: center;
-    font-size: 14px;
+    font-size: var(--fs-md);
     color: var(--muted);
   }
 
@@ -1468,7 +1965,7 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-size: 13px;
+    font-size: var(--fs-sm);
     color: var(--ink-2);
     white-space: nowrap;
   }
@@ -1480,15 +1977,11 @@
   }
   .bew-kurz .n {
     color: var(--muted);
-    font-size: 12px;
-  }
-  .bew-kurz.leer {
-    color: var(--faint);
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
   }
   .bew-voll {
     border: 1px solid var(--line);
-    border-radius: 14px;
+    border-radius: var(--r-lg);
     padding: 14px 16px;
     background: linear-gradient(180deg, #fffdf6, var(--surface) 60%);
   }
@@ -1505,13 +1998,13 @@
     gap: 12px;
   }
   .bew-zahl {
-    font-size: 34px;
+    font-size: var(--fs-2xl);
     line-height: 1;
     color: var(--ink);
     font-variant-numeric: tabular-nums;
   }
   .bew-anzahl {
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     color: var(--muted);
     margin-top: 3px;
   }
@@ -1522,7 +2015,7 @@
     gap: 2px;
   }
   .bew-label {
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     font-weight: 650;
     color: var(--ink-2);
   }
@@ -1536,12 +2029,12 @@
     padding: 4px 0 4px 10px;
   }
   .bew-notizen p {
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     color: var(--ink-2);
     line-height: 1.45;
   }
   .bew-notizen span {
-    font-size: 12px;
+    font-size: var(--fs-xs);
     color: var(--muted);
   }
 
@@ -1551,7 +2044,7 @@
     align-items: center;
     gap: 8px;
     padding: 7px 10px;
-    border-radius: 10px;
+    border-radius: var(--r-md);
     background: var(--surface-2);
     border: 1px solid var(--line);
   }
@@ -1563,8 +2056,23 @@
     border-radius: 50%;
     background: var(--accent);
     color: #fff;
-    font-size: 12px;
+    font-size: var(--fs-xs);
     flex: 0 0 auto;
+  }
+  .team-einrichtung {
+    margin-top: 10px;
+  }
+  .team-einrichtung summary {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    color: var(--accent);
+    font-size: var(--fs-sm);
+    font-weight: 650;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-line);
+    text-underline-offset: 3px;
   }
   .team-drop {
     margin-top: 16px;
@@ -1575,10 +2083,10 @@
     gap: 6px;
     padding: 30px 16px;
     border: 2px dashed var(--line-2);
-    border-radius: 16px;
+    border-radius: var(--r-lg);
     background: var(--surface-2);
     color: var(--muted);
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     cursor: pointer;
     transition:
       border-color 0.15s,
@@ -1586,7 +2094,7 @@
       color 0.15s;
   }
   .team-drop b {
-    font-size: 15.5px;
+    font-size: var(--fs-md);
     color: var(--ink);
   }
   .team-drop:hover,
@@ -1601,9 +2109,9 @@
     gap: 10px;
     padding: 10px 12px;
     border: 1px solid var(--line);
-    border-radius: 12px;
+    border-radius: var(--r-md);
     background: var(--surface-2);
-    font-size: 14px;
+    font-size: var(--fs-md);
   }
   .team-typ {
     display: grid;
@@ -1611,10 +2119,10 @@
     min-width: 42px;
     height: 30px;
     padding: 0 6px;
-    border-radius: 8px;
+    border-radius: var(--r-sm);
     font-family: var(--font-display);
     font-weight: 800;
-    font-size: 11px;
+    font-size: var(--fs-xs);
     letter-spacing: 0.04em;
     color: #fff;
     background: #b4533a;
@@ -1626,7 +2134,7 @@
   .team-label {
     display: block;
     margin-bottom: 6px;
-    font-size: 13px;
+    font-size: var(--fs-sm);
     font-weight: 620;
     color: var(--ink-2);
   }
@@ -1640,14 +2148,14 @@
     gap: 14px;
     padding: 12px 14px;
     border: 1px solid var(--line);
-    border-radius: 14px;
+    border-radius: var(--r-lg);
     background: var(--surface);
     box-shadow: var(--shadow-1);
   }
   .team-titel {
     font-family: var(--font-display);
     font-weight: 750;
-    font-size: 16px;
+    font-size: var(--fs-md);
     color: var(--ink);
     text-align: left;
     background: none;
@@ -1663,7 +2171,7 @@
     flex-wrap: wrap;
     gap: 4px 12px;
     margin-top: 2px;
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     color: var(--muted);
   }
   .team-aktionen {
@@ -1704,7 +2212,7 @@
     gap: 12px;
     padding: 22px 24px 20px;
     border: 1px solid var(--ku-mittel);
-    border-radius: 18px;
+    border-radius: var(--r-lg);
     background:
       linear-gradient(180deg, var(--ku-zart), rgba(255, 255, 255, 0) 70%),
       var(--surface);
@@ -1727,7 +2235,7 @@
     align-items: center;
     gap: 6px;
     margin: 0;
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     font-weight: 650;
     letter-spacing: 0.02em;
     color: var(--ku, #6e4a7e);
@@ -1738,7 +2246,7 @@
   }
   .ku-held-zuletzt {
     margin: 0;
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     color: var(--muted);
   }
   .ku-held-link {
@@ -1756,7 +2264,7 @@
   .ku-held-kurz {
     margin: 0;
     max-width: 760px;
-    font-size: 15.5px;
+    font-size: var(--fs-md);
     line-height: 1.55;
     color: var(--ink-2);
   }
@@ -1764,7 +2272,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px 18px;
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     color: var(--muted);
   }
   .ku-held-fakten span {
@@ -1795,7 +2303,7 @@
     display: flex;
     gap: 2px;
     height: 12px;
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     overflow: hidden;
     background: var(--bg-2);
   }
@@ -1820,7 +2328,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 12px;
+    font-size: var(--fs-xs);
     color: var(--muted);
   }
   .ku-legende li {
@@ -1831,14 +2339,14 @@
   .ku-legende i {
     width: 9px;
     height: 9px;
-    border-radius: 3px;
+    border-radius: var(--r-sm);
   }
 
   .ku-fortschritt {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 13px;
+    font-size: var(--fs-sm);
     color: var(--muted);
   }
   .ku-fortschritt b {
@@ -1849,7 +2357,7 @@
     flex: 1 1 auto;
     max-width: 360px;
     height: 6px;
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     background: var(--bg-2);
     overflow: hidden;
   }
@@ -1857,7 +2365,7 @@
     display: block;
     height: 100%;
     background: var(--ok-ink);
-    border-radius: 999px;
+    border-radius: var(--r-pill);
   }
 
   /* Abschnitte der Übersicht */
@@ -1870,13 +2378,13 @@
   }
   .ku-abschnitt-kopf h2 {
     margin: 0;
-    font-size: 20px;
+    font-size: var(--fs-xl);
     color: var(--ink);
   }
   .ku-abschnitt-kopf p {
     margin: 4px 0 0;
     max-width: 820px;
-    font-size: 14px;
+    font-size: var(--fs-md);
     line-height: 1.55;
     color: var(--muted);
   }
@@ -1894,7 +2402,7 @@
     gap: 2px;
     padding: 11px 14px 12px;
     border: 1px solid var(--line);
-    border-radius: 14px;
+    border-radius: var(--r-lg);
     background: var(--surface);
     font: inherit;
     text-align: left;
@@ -1917,7 +2425,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 11.5px;
+    font-size: var(--fs-xs);
     font-weight: 750;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1925,21 +2433,21 @@
   }
   .ku-jahr-gruppe {
     padding: 1px 7px;
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     background: var(--ku, #6e4a7e);
     color: #fff;
-    font-size: 10.5px;
+    font-size: var(--fs-xs);
     letter-spacing: 0.02em;
     text-transform: none;
   }
   .ku-jahr-titel {
     font-family: var(--font-display);
     font-weight: 760;
-    font-size: 16px;
+    font-size: var(--fs-md);
     line-height: 1.3;
   }
   .ku-jahr-info {
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     color: var(--muted);
   }
   .ku-sichtinfo {
@@ -1949,10 +2457,10 @@
     gap: 10px 14px;
     padding: 12px 16px;
     border: 1px solid var(--accent-line);
-    border-radius: 14px;
+    border-radius: var(--r-lg);
     background: var(--accent-soft);
     color: var(--accent-strong);
-    font-size: 14px;
+    font-size: var(--fs-md);
     line-height: 1.5;
   }
   .ku-sichtinfo > .ic {
@@ -1979,7 +2487,7 @@
     gap: 16px;
     padding: 14px 16px;
     border: 1px solid var(--line);
-    border-radius: 16px;
+    border-radius: var(--r-lg);
     background: var(--surface);
     box-shadow: var(--shadow-1);
   }
@@ -2002,7 +2510,7 @@
     align-items: center;
     gap: 8px;
     margin: 0 0 1px;
-    font-size: 11.5px;
+    font-size: var(--fs-xs);
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -2010,10 +2518,10 @@
   }
   .ku-stufe-jetzt {
     padding: 1px 7px;
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     background: var(--ku);
     color: #fff;
-    font-size: 10.5px;
+    font-size: var(--fs-xs);
     letter-spacing: 0.02em;
     text-transform: none;
   }
@@ -2021,13 +2529,13 @@
     margin: 0;
     font-family: var(--font-display);
     font-weight: 780;
-    font-size: 17px;
+    font-size: var(--fs-lg);
     line-height: 1.25;
     color: var(--ink);
   }
   .ku-stufe-frage {
     margin: 3px 0 0;
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     line-height: 1.45;
     color: var(--ink-2);
   }
@@ -2036,21 +2544,21 @@
     align-items: center;
     gap: 8px;
     margin-top: 9px;
-    font-size: 12px;
+    font-size: var(--fs-xs);
     color: var(--muted);
     font-variant-numeric: tabular-nums;
   }
   .ku-mini-balken {
     flex: 0 0 64px;
     height: 5px;
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     background: var(--bg-2);
     overflow: hidden;
   }
   .ku-mini-balken span {
     display: block;
     height: 100%;
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     background: var(--ok-ink);
   }
   .ku-modul-nr {
@@ -2059,11 +2567,11 @@
     flex: 0 0 auto;
     width: 34px;
     height: 34px;
-    border-radius: 11px;
+    border-radius: var(--r-md);
     background: var(--ku-zart);
     color: var(--ku);
     font-weight: 780;
-    font-size: 15px;
+    font-size: var(--fs-md);
   }
   .ku-modul-nr .ic {
     width: 17px;
@@ -2094,7 +2602,7 @@
     height: 100%;
     padding: 10px 12px;
     border: 1px solid var(--line);
-    border-radius: 12px;
+    border-radius: var(--r-md);
     background: var(--surface);
     font: inherit;
     text-align: left;
@@ -2114,9 +2622,9 @@
     flex: 0 0 auto;
     width: 26px;
     height: 26px;
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     border: 1.5px solid var(--line-2);
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     font-weight: 750;
     color: var(--muted);
     font-variant-numeric: tabular-nums;
@@ -2132,12 +2640,12 @@
     min-width: 0;
   }
   .ku-kachel-titel {
-    font-size: 14px;
+    font-size: var(--fs-md);
     font-weight: 620;
     line-height: 1.3;
   }
   .ku-kachel-status {
-    font-size: 12px;
+    font-size: var(--fs-xs);
     color: var(--muted);
   }
   .ku-kachel.erledigt {
@@ -2192,7 +2700,7 @@
     height: 100%;
     padding: 12px 14px;
     border: 1px dashed var(--line-2);
-    border-radius: 12px;
+    border-radius: var(--r-md);
     background: var(--surface);
     font: inherit;
     text-align: left;
@@ -2205,11 +2713,11 @@
     background: var(--ku-zart);
   }
   .ku-joker-karte b {
-    font-size: 14.5px;
+    font-size: var(--fs-md);
     line-height: 1.35;
   }
   .ku-joker-tag {
-    font-size: 11.5px;
+    font-size: var(--fs-xs);
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -2217,7 +2725,7 @@
   }
   .ku-joker-passt,
   .ku-joker-erl {
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     color: var(--muted);
   }
   .ku-joker-erl {
@@ -2243,7 +2751,7 @@
     gap: 8px;
   }
   .ku-gruppenwahl-label {
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     font-weight: 650;
     color: var(--muted);
   }
@@ -2266,7 +2774,7 @@
     gap: 8px;
     padding: 8px;
     border: 1px solid var(--line);
-    border-radius: 10px;
+    border-radius: var(--r-md);
   }
   .ku-gruppen li.aktiv {
     border-color: var(--accent-line);
@@ -2285,7 +2793,7 @@
   }
   .ku-klein {
     margin: 0;
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     line-height: 1.5;
     color: var(--muted);
   }
@@ -2313,7 +2821,7 @@
   .ku-einheit-kurz {
     margin: 0;
     max-width: 820px;
-    font-size: 16px;
+    font-size: var(--fs-md);
     line-height: 1.55;
     color: var(--ink-2);
   }
@@ -2329,16 +2837,16 @@
     align-items: center;
     gap: 8px;
     padding: 5px 6px 5px 10px;
-    border-radius: 10px;
+    border-radius: var(--r-md);
     background: var(--ok-bg);
     color: var(--ok-ink);
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     font-weight: 600;
   }
   .ku-gehalten .field {
     width: auto;
     padding: 3px 6px;
-    font-size: 13px;
+    font-size: var(--fs-sm);
   }
   /* Achtung: sensible Punkte, gleich unter dem Kopf */
   .ku-achtung-band {
@@ -2346,10 +2854,10 @@
     padding: 11px 16px;
     border: 1px solid var(--err-line);
     border-left: 4px solid var(--err-ink);
-    border-radius: 12px;
+    border-radius: var(--r-md);
     background: var(--err-bg);
     color: var(--err-ink);
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     line-height: 1.6;
   }
   .ku-achtung-band summary {
@@ -2405,7 +2913,7 @@
     gap: 2px;
     padding: 14px 16px 16px;
     border: 1px solid var(--line);
-    border-radius: 14px;
+    border-radius: var(--r-lg);
     background: var(--surface);
     box-shadow: var(--shadow-1);
   }
@@ -2431,7 +2939,7 @@
     overflow: auto;
     padding: 12px 10px 12px 12px;
     border: 1px solid var(--line);
-    border-radius: 14px;
+    border-radius: var(--r-lg);
     background: var(--surface);
     box-shadow: var(--shadow-1);
     scrollbar-width: thin;
@@ -2454,10 +2962,10 @@
     padding: 7px 8px 7px 10px;
     border: 0;
     border-left: 3px solid var(--pf);
-    border-radius: 0 9px 9px 0;
+    border-radius: 0 var(--r-md) var(--r-md) 0;
     background: transparent;
     font: inherit;
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     line-height: 1.35;
     text-align: left;
     color: var(--ink-2);
@@ -2472,7 +2980,7 @@
     font-weight: 650;
   }
   .ku-fp-zeit {
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     font-weight: 650;
     color: var(--muted);
     font-variant-numeric: tabular-nums;
@@ -2483,7 +2991,7 @@
   }
   .ku-zwischen {
     margin: 0 0 12px;
-    font-size: 19px;
+    font-size: var(--fs-lg);
     color: var(--ink);
   }
   .ku-schritte {
@@ -2502,7 +3010,7 @@
     padding: 14px 16px 14px 18px;
     border: 1px solid var(--line);
     border-left: 4px solid var(--pf);
-    border-radius: 12px;
+    border-radius: var(--r-md);
     background: var(--surface);
     box-shadow: var(--shadow-1);
   }
@@ -2522,19 +3030,19 @@
     justify-content: center;
     min-width: 66px;
     padding: 6px 8px;
-    border-radius: 11px;
+    border-radius: var(--r-md);
     background: color-mix(in srgb, var(--pf) 12%, white);
     color: var(--pf);
     line-height: 1.15;
   }
   .ku-schritt-zeit b {
-    font-size: 15px;
+    font-size: var(--fs-md);
     font-weight: 780;
     font-variant-numeric: tabular-nums;
     white-space: nowrap;
   }
   .ku-schritt-zeit small {
-    font-size: 11px;
+    font-size: var(--fs-xs);
     font-weight: 650;
     opacity: 0.85;
   }
@@ -2542,7 +3050,7 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-size: 12px;
+    font-size: var(--fs-xs);
     font-weight: 650;
     color: var(--pf);
   }
@@ -2560,14 +3068,14 @@
     margin: 1px 0 0;
     font-family: var(--font-display);
     font-weight: 760;
-    font-size: 16.5px;
+    font-size: var(--fs-lg);
     line-height: 1.3;
     color: var(--ink);
   }
   .ku-schritt-text {
     margin: 0;
     overflow-wrap: anywhere;
-    font-size: 14.5px;
+    font-size: var(--fs-md);
     line-height: 1.6;
     color: var(--ink-2);
   }
@@ -2577,9 +3085,9 @@
     gap: 4px;
     margin: 0;
     padding: 10px 12px 10px 30px;
-    border-radius: 10px;
+    border-radius: var(--r-md);
     background: var(--surface-2);
-    font-size: 14px;
+    font-size: var(--fs-md);
     line-height: 1.5;
     color: var(--ink-2);
   }
@@ -2588,14 +3096,14 @@
     flex-direction: column;
     gap: 5px;
     padding: 10px 12px;
-    border-radius: 10px;
+    border-radius: var(--r-md);
     background: var(--ku-zart);
   }
   .ku-sagen-titel {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-size: 12px;
+    font-size: var(--fs-xs);
     font-weight: 700;
     color: var(--ku);
   }
@@ -2605,7 +3113,7 @@
   }
   .ku-sagen p {
     margin: 0;
-    font-size: 14.5px;
+    font-size: var(--fs-md);
     line-height: 1.5;
     font-style: italic;
     color: var(--ink);
@@ -2615,8 +3123,8 @@
     gap: 9px;
     align-items: flex-start;
     padding: 9px 12px;
-    border-radius: 10px;
-    font-size: 13.5px;
+    border-radius: var(--r-md);
+    font-size: var(--fs-sm);
     line-height: 1.55;
   }
   .ku-hinweise {
@@ -2630,7 +3138,7 @@
   .ku-hinweis p b {
     display: block;
     margin-bottom: 1px;
-    font-size: 12px;
+    font-size: var(--fs-xs);
     font-weight: 750;
     letter-spacing: 0.02em;
   }
@@ -2655,10 +3163,10 @@
     align-self: flex-start;
     padding: 6px 11px;
     border: 1px solid var(--ku-mittel);
-    border-radius: 999px;
+    border-radius: var(--r-pill);
     background: var(--surface);
     font: inherit;
-    font-size: 13px;
+    font-size: var(--fs-sm);
     font-weight: 600;
     color: var(--ku);
     cursor: pointer;
@@ -2676,7 +3184,7 @@
   .ku-tabelle {
     width: 100%;
     border-collapse: collapse;
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
   }
   .ku-tabelle th,
   .ku-tabelle td {
@@ -2692,7 +3200,7 @@
   .ku-bruecke {
     margin-top: 16px;
     padding: 12px 16px;
-    border-radius: 12px;
+    border-radius: var(--r-md);
     border: 1px solid var(--ku-mittel);
     background: var(--ku-zart);
   }
@@ -2705,9 +3213,9 @@
     margin-top: 16px;
     padding: 12px 16px;
     border: 1px solid var(--line);
-    border-radius: 12px;
+    border-radius: var(--r-md);
     background: var(--surface);
-    font-size: 14px;
+    font-size: var(--fs-md);
     line-height: 1.6;
     color: var(--ink-2);
   }
@@ -2723,7 +3231,7 @@
     list-style: disc;
     margin: 10px 0 0;
     padding-left: 18px;
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     color: var(--muted);
   }
   .ku-notiz {
@@ -2740,7 +3248,7 @@
     align-items: center;
     gap: 6px;
     margin-bottom: 6px;
-    font-size: 11.5px;
+    font-size: var(--fs-xs);
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -2757,7 +3265,7 @@
     gap: 5px;
     margin: 0;
     padding-left: 18px;
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     line-height: 1.5;
     color: var(--ink-2);
   }
@@ -2773,8 +3281,8 @@
     align-items: flex-start;
     gap: 8px;
     padding: 4px 4px;
-    border-radius: 7px;
-    font-size: 13.5px;
+    border-radius: var(--r-sm);
+    font-size: var(--fs-sm);
     line-height: 1.45;
     color: var(--ink-2);
     cursor: pointer;
@@ -2804,7 +3312,7 @@
     width: 100%;
     padding: 8px 10px;
     border: 1px solid var(--line);
-    border-radius: 10px;
+    border-radius: var(--r-md);
     background: var(--surface);
     font: inherit;
     text-align: left;
@@ -2816,12 +3324,12 @@
   }
   .ku-blaetter b {
     display: block;
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     line-height: 1.35;
     color: var(--ink);
   }
   .ku-blaetter span span {
-    font-size: 12px;
+    font-size: var(--fs-xs);
     color: var(--muted);
   }
   .ku-blaetter .ic {
@@ -2832,10 +3340,10 @@
   .ku-blatt-nr {
     flex: 0 0 auto;
     padding: 2px 6px;
-    border-radius: 6px;
+    border-radius: var(--r-sm);
     background: var(--ku-zart);
     color: var(--ku);
-    font-size: 11.5px;
+    font-size: var(--fs-xs);
     font-weight: 750;
   }
   .ku-gl-reiter {
@@ -2876,7 +3384,7 @@
     border: 0;
     background: none;
     font: inherit;
-    font-size: 13.5px;
+    font-size: var(--fs-sm);
     line-height: 1.35;
     text-align: left;
     color: var(--ink-2);
@@ -2889,12 +3397,12 @@
     margin: 0 0 6px;
     font-family: var(--font-display);
     font-weight: 760;
-    font-size: 17px;
+    font-size: var(--fs-lg);
     color: var(--ink);
   }
   .ku-gl-abschnitt p {
     margin: 0 0 8px;
-    font-size: 14.5px;
+    font-size: var(--fs-md);
     line-height: 1.6;
     color: var(--ink-2);
   }
@@ -2922,7 +3430,7 @@
       overflow-x: auto;
       overflow-y: hidden;
       padding: 6px;
-      border-radius: 12px;
+      border-radius: var(--r-md);
     }
     .ku-fahrplan .ku-seite-label {
       display: none;
@@ -2941,7 +3449,7 @@
       padding: 5px 10px 6px;
       border-left: 0;
       border-bottom: 3px solid var(--pf);
-      border-radius: 8px 8px 0 0;
+      border-radius: var(--r-sm) var(--r-sm) 0 0;
     }
     .ku-fp-titel {
       overflow: hidden;
@@ -2965,20 +3473,20 @@
     }
     .ku-jahr {
       padding: 8px 9px 9px;
-      border-radius: 12px;
+      border-radius: var(--r-md);
     }
     .ku-jahr-nr {
       flex-wrap: wrap;
       gap: 3px 6px;
-      font-size: 10.5px;
+      font-size: var(--fs-xs);
       letter-spacing: 0.03em;
     }
     .ku-jahr-gruppe {
-      font-size: 10px;
+      font-size: var(--fs-xs);
       padding: 0 6px;
     }
     .ku-jahr-titel {
-      font-size: 13.5px;
+      font-size: var(--fs-sm);
       line-height: 1.25;
     }
     .ku-jahr-info {

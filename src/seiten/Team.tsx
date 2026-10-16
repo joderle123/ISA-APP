@@ -15,6 +15,7 @@ import type { Bewertungen } from '../lib/useBewertungen'
 import { BewertungKurz, BewertungVoll } from '../components/Bewertung'
 import { Dialog } from '../components/Dialog'
 import { Icon } from '../components/Icon'
+import { alterText, stufeMitAlter } from '../components/stufe'
 
 const STUFEN: AgeLevel[] = ['C1', 'C2', 'C3', 'C4', 'ES']
 const ENDUNGEN = ['pdf', 'doc', 'docx']
@@ -49,32 +50,36 @@ function Verbindung({ status, onVerbinden }: { status: TeamStatus; onVerbinden: 
   return (
     <section className="panel p-5" aria-label="Verbindung mit dem Team-Ordner">
       <div className="flex flex-wrap items-start gap-4">
-        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-accent-soft text-accent">
+        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-[var(--r-md)] bg-accent-soft text-accent">
           <Icon name="folder" className="ic h-5 w-5" />
         </span>
         <div className="min-w-[240px] flex-1">
-          <h2 className="disp text-[18px] text-ink">{status.needsPermission ? 'Zugriff bestätigen' : 'Mit dem Team-Ordner verbinden'}</h2>
-          <p className="mt-1 text-[14px] leading-relaxed text-muted">
+          <h2 className="disp text-lg text-ink">{status.needsPermission ? 'Zugriff bestätigen' : 'Team-Ordner noch nicht verbunden'}</h2>
+          <p className="mt-1 text-base leading-relaxed text-muted">
             {status.needsPermission
               ? 'Der Ordner ist gemerkt – Edge fragt nach einem Neustart einmal neu nach der Erlaubnis.'
-              : 'Das Team-Material liegt in einem gemeinsamen Ordner auf O:\\ (z. B. O:\\ISA-Blaetter). Einmal verbinden – danach geht es automatisch.'}
+              : 'Einmal pro Computer verbinden, danach siehst du das Material der Kolleginnen und Kollegen und kannst eigenes teilen.'}
           </p>
-          <ol className="mt-3 grid gap-1.5 text-[13.5px] text-ink-2 sm:grid-cols-3">
-            <li className="team-schritt">
-              <b>1</b> Auf „Verbinden“ klicken
-            </li>
-            <li className="team-schritt">
-              <b>2</b> Den Team-Ordner auf O:\ wählen
-            </li>
-            <li className="team-schritt">
-              <b>3</b> Zugriff erlauben – fertig
-            </li>
-          </ol>
-          {!status.supported && (
-            <p className="mt-3 text-[13px] text-danger">Nur mit Microsoft Edge oder Chrome möglich.</p>
-          )}
+          <details className="team-einrichtung" open={!!status.error}>
+            <summary>Einrichtung (einmalig)</summary>
+            <ol className="mt-2 grid gap-1.5 text-sm text-ink-2 sm:grid-cols-3">
+              <li className="team-schritt">
+                <b>1</b> Auf „Verbinden“ klicken
+              </li>
+              <li className="team-schritt">
+                <b>2</b> Den Team-Ordner auf O:\ wählen
+              </li>
+              <li className="team-schritt">
+                <b>3</b> Zugriff erlauben – fertig
+              </li>
+            </ol>
+            <p className="mt-2 text-sm text-muted">
+              Hinweis für Administratoren: Der gemeinsame Ordner liegt auf dem Laufwerk O:\ (z. B. O:\ISA-Blaetter) und braucht Schreibrechte für das Team. Es funktioniert nur mit Microsoft Edge oder Chrome.
+            </p>
+          </details>
+          {!status.supported && <p className="mt-3 text-sm text-danger">Nur mit Microsoft Edge oder Chrome möglich.</p>}
           {status.error && (
-            <p className="mt-3 flex items-start gap-1.5 text-[13px] text-danger" role="alert">
+            <p className="mt-3 flex items-start gap-1.5 text-sm text-danger" role="alert">
               <Icon name="alert" className="ic mt-px h-4 w-4" />
               {status.error}
             </p>
@@ -151,8 +156,8 @@ function Hochladen({ nutzer, onFertig }: { nutzer: Nutzer; onFertig: () => void 
 
   return (
     <section className="panel p-5" aria-label="Material hochladen">
-      <h2 className="disp text-[18px] text-ink">Eigenes Material teilen</h2>
-      <p className="mt-1 text-[14px] text-muted">Einheit, Arbeitsblatt oder Spielidee als PDF oder Word – alle im Team sehen es sofort.</p>
+      <h2 className="disp text-lg text-ink">Eigenes Material teilen</h2>
+      <p className="mt-1 text-base text-muted">Einheit, Arbeitsblatt oder Spielidee als PDF oder Word – alle im Team sehen es sofort.</p>
       {!datei ? (
         <button
           type="button"
@@ -178,7 +183,7 @@ function Hochladen({ nutzer, onFertig }: { nutzer: Nutzer; onFertig: () => void 
           <div className="team-datei">
             <span className={`team-typ ${datei.name.toLowerCase().endsWith('.pdf') ? 'pdf' : 'word'}`}>{datei.name.split('.').pop()?.toUpperCase()}</span>
             <span className="min-w-0 flex-1 truncate">{datei.name}</span>
-            <span className="text-[12.5px] text-muted">{groesse(datei.size)}</span>
+            <span className="text-xs text-muted">{groesse(datei.size)}</span>
             <button type="button" className="icon-btn" onClick={() => setDatei(null)} aria-label="Andere Datei wählen">
               <Icon name="x" />
             </button>
@@ -195,7 +200,7 @@ function Hochladen({ nutzer, onFertig }: { nutzer: Nutzer; onFertig: () => void 
                 Von
               </label>
               <input id={id + '-n'} className="field" value={name} onChange={(e) => setName(e.target.value)} readOnly={nutzer.ausHub} placeholder="Dein Name" />
-              {nutzer.ausHub && <p className="mt-1 text-[12px] text-muted">Aus deinem Hub-Konto.</p>}
+              {nutzer.ausHub && <p className="mt-1 text-xs text-muted">Aus deinem Konto im CDSE-Hub.</p>}
             </div>
           </div>
           <div>
@@ -203,7 +208,7 @@ function Hochladen({ nutzer, onFertig }: { nutzer: Nutzer; onFertig: () => void 
             <div className="flex flex-wrap gap-1.5">
               {STUFEN.map((s) => (
                 <button key={s} type="button" className="fchip" aria-pressed={stufen.includes(s)} onClick={() => setStufen((l) => (l.includes(s) ? l.filter((x) => x !== s) : [...l, s]))}>
-                  {s === 'C1' ? 'C1 · Spielschule' : s === 'ES' ? 'ES · Sekundar' : s}
+                  {stufeMitAlter(s)}
                 </button>
               ))}
             </div>
@@ -278,7 +283,7 @@ function Bearbeiten({ m, onSchliessen }: { m: Material; onSchliessen: () => void
   return (
     <Dialog onClose={onSchliessen} labelledBy={id} className="dlg-mid">
       <header className="dlg-head items-center">
-        <h2 id={id} className="disp flex-1 text-[19px]">
+        <h2 id={id} className="disp flex-1 text-lg">
           Angaben bearbeiten
         </h2>
         <button type="button" className="icon-btn" onClick={onSchliessen} aria-label="Schließen">
@@ -297,7 +302,7 @@ function Bearbeiten({ m, onSchliessen }: { m: Material; onSchliessen: () => void
           <div className="flex flex-wrap gap-1.5">
             {STUFEN.map((s) => (
               <button key={s} type="button" className="fchip" aria-pressed={stufen.includes(s)} onClick={() => setStufen((l) => (l.includes(s) ? l.filter((x) => x !== s) : [...l, s]))}>
-                {s}
+                {stufeMitAlter(s)}
               </button>
             ))}
           </div>
@@ -398,12 +403,12 @@ export function Team({ aktiv, material, bew }: { aktiv: boolean; material: Mater
   const verwalten = darfVerwalten(nutzer)
 
   return (
-    <div className={aktiv ? '' : 'hidden'}>
-      <div className="mx-auto max-w-[1180px] px-4 pt-6 pb-16 sm:px-6">
+    <main className={aktiv ? '' : 'hidden'}>
+      <div className="mx-auto max-w-[1180px] px-4 pt-4 pb-16 sm:px-6 sm:pt-5">
         <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
           <div>
-            <h1 className="disp text-[26px] leading-tight text-ink sm:text-[30px]">Team-Material</h1>
-            <p className="mt-1 text-[14px] text-muted">Eigene Einheiten und Blätter teilen – gespeichert im Team-Ordner auf O:\, ohne Internet.</p>
+            <h1 className="disp text-xl leading-tight text-ink sm:text-2xl">Team-Material</h1>
+            <p className="mt-1 text-base text-muted">Eigene Einheiten und Blätter teilen – gespeichert im Team-Ordner auf O:\, ohne Internet.</p>
           </div>
           {status.connected && (
             <span className="badge badge-ok" title={status.folderName ?? ''}>
@@ -418,7 +423,7 @@ export function Team({ aktiv, material, bew }: { aktiv: boolean; material: Mater
 
           <section aria-label="Geteiltes Material">
             <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-              <h2 className="disp text-[19px] text-ink">
+              <h2 className="disp text-lg text-ink">
                 Im Team geteilt <span className="text-muted">({material.length})</span>
               </h2>
               {material.length > 4 && (
@@ -430,7 +435,7 @@ export function Team({ aktiv, material, bew }: { aktiv: boolean; material: Mater
               )}
             </div>
             {!liste.length ? (
-              <div className="panel px-6 py-10 text-center text-[14.5px] text-muted">
+              <div className="panel px-6 py-10 text-center text-base text-muted">
                 {status.connected ? 'Noch nichts geteilt. Das erste Material kannst du oben hochladen.' : 'Nach dem Verbinden erscheint hier das Material aus dem Team.'}
               </div>
             ) : (
@@ -448,7 +453,7 @@ export function Team({ aktiv, material, bew }: { aktiv: boolean; material: Mater
                         <div className="team-meta">
                           <span>{m.uploadedBy || m.author || 'Team'}</span>
                           {m.uploadedAt ? <span>{datum(m.uploadedAt)}</span> : null}
-                          <span>{m.ageLevels.join(', ')}</span>
+                          <span title={m.ageLevels.join(', ')}>{alterText(m.ageLevels) || m.ageLevels.join(', ')}</span>
                           {b ? (
                             <span className="inline-flex items-center gap-1">
                               <span className="dot" style={{ background: b.farben.tief }} />
@@ -457,7 +462,7 @@ export function Team({ aktiv, material, bew }: { aktiv: boolean; material: Mater
                           ) : null}
                           {m.upload ? <span>{groesse(m.upload.size)}</span> : null}
                         </div>
-                        {m.shortDescription && m.shortDescription !== 'Aus dem Team hochgeladen.' ? <p className="clamp-2 mt-1 text-[13.5px] text-muted">{m.shortDescription}</p> : null}
+                        {m.shortDescription && m.shortDescription !== 'Aus dem Team hochgeladen.' ? <p className="clamp-2 mt-1 text-sm text-muted">{m.shortDescription}</p> : null}
                       </div>
                       <div className="team-aktionen">
                         <BewertungKurz gesamt={bew.gesamt.get(m.id)} eigen={bew.eigene[m.id] || 0} />
@@ -489,11 +494,11 @@ export function Team({ aktiv, material, bew }: { aktiv: boolean; material: Mater
       {loeschen && (
         <Dialog onClose={() => setLoeschen(null)} labelledBy="team-loeschen" className="dlg-mid">
           <header className="dlg-head items-center">
-            <h2 id="team-loeschen" className="disp flex-1 text-[19px]">
+            <h2 id="team-loeschen" className="disp flex-1 text-lg">
               Material entfernen?
             </h2>
           </header>
-          <div className="dlg-body p-5 text-[14.5px] text-ink-2" data-autofocus tabIndex={-1} style={{ outline: 'none' }}>
+          <div className="dlg-body p-5 text-base text-ink-2" data-autofocus tabIndex={-1} style={{ outline: 'none' }}>
             „{loeschen.title}“ wird für alle im Team entfernt.
           </div>
           <footer className="dlg-foot flex justify-end gap-2">
@@ -512,10 +517,10 @@ export function Team({ aktiv, material, bew }: { aktiv: boolean; material: Mater
           <header className="dlg-head items-center">
             <span className={`team-typ ${offen.upload?.ext === 'pdf' ? 'pdf' : 'word'}`}>{(offen.upload?.ext ?? 'PDF').toUpperCase()}</span>
             <div className="min-w-0 flex-1">
-              <h2 id="team-offen" className="disp truncate text-[19px]">
+              <h2 id="team-offen" className="disp truncate text-lg">
                 {offen.title}
               </h2>
-              <p className="text-[12.5px] text-muted">
+              <p className="text-xs text-muted">
                 Von {offen.uploadedBy || offen.author || 'Team'}
                 {offen.uploadedAt ? ' · ' + datum(offen.uploadedAt) : ''}
               </p>
@@ -525,7 +530,7 @@ export function Team({ aktiv, material, bew }: { aktiv: boolean; material: Mater
             </button>
           </header>
           <div className="dlg-body scroll-slim grid gap-4 p-5" data-autofocus tabIndex={-1} style={{ outline: 'none' }}>
-            <p className="text-[14.5px] leading-relaxed text-ink-2">{offen.shortDescription}</p>
+            <p className="text-base leading-relaxed text-ink-2">{offen.shortDescription}</p>
             <button type="button" className="btn btn-primary justify-self-start" onClick={() => oeffnen(offen)}>
               <Icon name="download" />
               Datei öffnen
@@ -542,6 +547,6 @@ export function Team({ aktiv, material, bew }: { aktiv: boolean; material: Mater
           </div>
         </Dialog>
       )}
-    </div>
+    </main>
   )
 }

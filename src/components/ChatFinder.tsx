@@ -47,7 +47,7 @@ function MatchBar({ percent }: { percent: number }) {
       <div className="h-1.5 w-14 overflow-hidden rounded-full bg-page-2">
         <div className="h-full rounded-full bg-accent" style={{ width: `${percent}%` }} />
       </div>
-      <span className="w-8 text-right text-[11.5px] font-semibold text-muted tabular-nums">{percent} %</span>
+      <span className="w-8 text-right text-xs font-semibold text-muted tabular-nums">{percent} %</span>
     </div>
   )
 }
@@ -69,16 +69,16 @@ function ResultCard({
 }) {
   const m = r.material
   return (
-    <div className="flex gap-3 rounded-xl border border-line bg-surface p-3">
-      <div className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-accent-soft text-[12.5px] font-bold text-accent-strong">
+    <div className="flex gap-3 rounded-[var(--r-md)] border border-line bg-surface p-3">
+      <div className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-accent-soft text-xs font-bold text-accent-strong">
         {rankNo}
       </div>
       <div className="min-w-0 flex-1">
         <div className="flex items-start justify-between gap-3">
-          <span className="text-[14.5px] leading-snug font-semibold text-ink">{m.title}</span>
+          <span className="text-base leading-snug font-semibold text-ink">{m.title}</span>
           <MatchBar percent={r.percent} />
         </div>
-        <div className="mt-1.5 flex flex-wrap items-center gap-1.5 text-[12.5px] text-muted">
+        <div className="mt-1.5 flex flex-wrap items-center gap-1.5 text-xs text-muted">
           <span className="font-semibold text-accent">{typeLabels(m)}</span>
           {m.ageLevels.map((a) => (
             <span key={a} className="tag">
@@ -94,7 +94,7 @@ function ResultCard({
           {rating > 0 && <StarRating value={rating} size={12} readOnly />}
         </div>
         {r.reasons.length > 0 && (
-          <div className="mt-1.5 flex items-start gap-1.5 text-[12.5px] leading-snug text-muted">
+          <div className="mt-1.5 flex items-start gap-1.5 text-xs leading-snug text-muted">
             <Icon name="check" className="ic mt-px h-3.5 w-3.5 text-ok" />
             <span>{r.reasons.join(' · ')}</span>
           </div>
@@ -168,14 +168,14 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
   return (
     <Dialog onClose={onClose} labelledBy={titleId} className="dlg-mid sm:h-[min(820px,calc(100dvh-48px))]">
       <header className="dlg-head items-center">
-        <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-accent-soft text-accent">
+        <div className="grid h-10 w-10 shrink-0 place-items-center rounded-[var(--r-md)] bg-accent-soft text-accent">
           <Icon name="compass" className="ic h-5 w-5" />
         </div>
         <div className="min-w-0 flex-1">
-          <h2 id={titleId} className="disp text-[19px] leading-tight">
+          <h2 id={titleId} className="disp text-lg leading-tight">
             Material-Finder
           </h2>
-          <p className="text-[13px] text-muted max-sm:hidden">Situation beschreiben – passende Materialien finden und vergleichen</p>
+          <p className="text-sm text-muted max-sm:hidden">Situation beschreiben – passende Materialien finden und vergleichen</p>
         </div>
         {hasAnySignal(signals) && (
           <button type="button" onClick={reset} className="btn btn-sm btn-quiet">
@@ -192,11 +192,11 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
         {messages.map((m, i) =>
           m.role === 'user' ? (
             <div key={i} className="flex justify-end">
-              <div className="max-w-[85%] rounded-2xl rounded-br-md bg-accent px-3.5 py-2 text-[14px] text-white">{m.text}</div>
+              <div className="max-w-[85%] rounded-[var(--r-lg)] rounded-br-md bg-accent px-3.5 py-2 text-base text-white">{m.text}</div>
             </div>
           ) : (
             <div key={i} className="flex flex-col items-start gap-2">
-              <div className="max-w-[92%] rounded-2xl rounded-bl-md border border-line bg-surface px-3.5 py-2.5 text-[14px] leading-relaxed text-ink-2">
+              <div className="max-w-[92%] rounded-[var(--r-lg)] rounded-bl-md border border-line bg-surface px-3.5 py-2.5 text-base leading-relaxed text-ink-2">
                 {m.text}
               </div>
               {m.understood && m.understood.length > 0 && (
@@ -236,7 +236,7 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
 
         {messages.length === 1 && (
           <div className="space-y-2 pt-1">
-            <div className="flex items-center gap-1.5 pl-1 text-[12.5px] font-semibold text-muted">
+            <div className="flex items-center gap-1.5 pl-1 text-xs font-semibold text-muted">
               <Icon name="lightbulb" className="ic h-4 w-4" />
               Beispiele – antippen oder selbst schreiben
             </div>
@@ -245,7 +245,7 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
                 key={ex}
                 type="button"
                 onClick={() => send(ex)}
-                className="block w-full rounded-xl border border-line bg-surface px-3.5 py-2.5 text-left text-[14px] text-ink-2 transition hover:border-accent-line hover:text-accent-strong"
+                className="block w-full rounded-[var(--r-md)] border border-line bg-surface px-3.5 py-2.5 text-left text-base text-ink-2 transition hover:border-accent-line hover:text-accent-strong"
               >
                 {ex}
               </button>
@@ -257,7 +257,7 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
       <div className="dlg-foot flex-col items-stretch gap-2">
         {understood.length > 0 && (
           <div className="flex flex-wrap items-center gap-1">
-            <span className="mr-1 text-[12px] font-semibold text-muted">Verstanden:</span>
+            <span className="mr-1 text-xs font-semibold text-muted">Verstanden:</span>
             {understood.map((u, i) => (
               <span key={i} className="badge badge-upload">
                 {u}

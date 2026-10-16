@@ -100,6 +100,8 @@ const PATHS = {
     </>
   ),
   stairs: <path d="M3.5 20.5h4v-4h4v-4h4v-4h5M3.5 20.5v-3M20.5 8.5V4" />,
+  menu: <path d="M4 7h16M4 12h16M4 17h16" />,
+  chevronUp: <path d="m6 15 6-6 6 6" />,
   chevronLeft: <path d="m15 6-6 6 6 6" />,
   chevronRight: <path d="m9 6 6 6-6 6" />,
   printer: (

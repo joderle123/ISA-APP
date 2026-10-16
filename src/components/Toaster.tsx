@@ -15,7 +15,7 @@ export function Toaster() {
   const list = (
     <div
       className={`pointer-events-none fixed inset-x-0 z-[60] flex flex-col items-center gap-2 px-4 ${
-        host ? 'bottom-[84px]' : ueberLeiste ? '' : 'bottom-5'
+        host ? 'bottom-[84px]' : ueberLeiste ? '' : 'bottom-[calc(20px+var(--tab-h))]'
       }`}
       style={ueberLeiste ? { bottom: ueberLeiste } : undefined}
       role="status"
@@ -27,7 +27,7 @@ export function Toaster() {
           <span className="min-w-0 flex-1 break-words">{t.text}</span>
           <button
             type="button"
-            className="-mr-1 grid h-7 w-7 shrink-0 place-items-center rounded-md text-white/80 hover:bg-white/10 hover:text-white"
+            className="-mr-1 grid h-7 w-7 shrink-0 place-items-center rounded-[var(--r-sm)] text-white/80 hover:bg-white/10 hover:text-white"
             onClick={() => dismissToast(t.id)}
             aria-label="Hinweis schließen"
           >

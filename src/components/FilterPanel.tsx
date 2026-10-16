@@ -5,6 +5,7 @@ import type { EldibDomain } from '../types/material'
 import { StarRating } from './StarRating'
 import { Icon } from './Icon'
 import { domainStyle } from '../lib/ui'
+import { stufeMitAlter } from './stufe'
 import {
   ageLevels,
   eldibDomains,
@@ -131,11 +132,11 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
   const themeOrder = themes
     .filter((t) => (totals.themes.get(t.id) ?? 0) > 0 || filter.themes.includes(t.id))
     .sort((a, b) => a.label.localeCompare(b.label, 'de'))
-  const moreCount = filter.languages.length + filter.sources.length + filter.authors.length + filter.tags.length
+  const moreCount = filter.sources.length + filter.authors.length + filter.tags.length
 
   return (
-    <div className="flex flex-col">
-      <Section title="Altersstufe" active={filter.ageLevels.length}>
+    <div className="filterpanel">
+      <Section title="Alter" active={filter.ageLevels.length}>
         <div className="flex flex-wrap gap-1.5">
           {ageLevels.map((a) => (
             <Chip
@@ -145,7 +146,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
               title={a.description}
               onClick={() => update({ ageLevels: toggleIn(filter.ageLevels, a.id) })}
             >
-              {a.label}
+              {stufeMitAlter(a.id)}
             </Chip>
           ))}
         </div>
@@ -163,6 +164,23 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
                 onClick={() => update({ types: toggleIn(filter.types, t.id) })}
               >
                 {t.labelDe}
+              </Chip>
+            ))}
+        </div>
+      </Section>
+
+      <Section title="Sprache" active={filter.languages.length}>
+        <div className="flex flex-wrap gap-1.5">
+          {languages
+            .filter((l) => (totals.languages.get(l.id) ?? 0) > 0 || filter.languages.includes(l.id))
+            .map((l) => (
+              <Chip
+                key={l.id}
+                on={filter.languages.includes(l.id)}
+                n={counts.languages.get(l.id) ?? 0}
+                onClick={() => update({ languages: toggleIn(filter.languages, l.id) })}
+              >
+                {l.labelDe}
               </Chip>
             ))}
         </div>
@@ -225,7 +243,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
         </label>
         {filter.eldibGoals.length > 0 && (
           <div className="mb-2 flex flex-wrap items-center gap-1">
-            <span className="mr-0.5 text-[12px] font-semibold text-muted">Gewählt:</span>
+            <span className="mr-0.5 text-xs font-semibold text-muted">Gewählt:</span>
             {filter.eldibGoals.map((id) => (
               <button
                 key={id}
@@ -257,7 +275,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
                   checked={on}
                   onChange={() => update({ eldibGoals: toggleIn(filter.eldibGoals, g.id) })}
                 />
-                <span className="code text-[11px]" style={domainStyle(g.id)}>
+                <span className="code text-xs" style={domainStyle(g.id)}>
                   {g.id}
                 </span>
                 <span className="min-w-0 truncate">{g.label}</span>
@@ -265,10 +283,10 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
               </label>
             )
           })}
-          {goalsToShow.length === 0 && <p className="px-1.5 py-2 text-[13px] text-muted">Kein Ziel gefunden.</p>}
+          {goalsToShow.length === 0 && <p className="px-1.5 py-2 text-sm text-muted">Kein Ziel gefunden.</p>}
         </div>
         <div className="mt-3">
-          <div className="mb-1.5 text-[12px] font-semibold text-muted">Ganzer Bereich</div>
+          <div className="mb-1.5 text-xs font-semibold text-muted">Ganzer Bereich</div>
           <div className="flex flex-wrap gap-1.5">
             {eldibDomains.map((d) => (
               <Chip
@@ -324,7 +342,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
         defaultOpen={false}
       >
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-[13px] text-muted">Mindestens</span>
+          <span className="text-sm text-muted">Mindestens</span>
           <StarRating
             value={filter.minRating}
             onChange={(n) => update({ minRating: n, onlyUnrated: false })}
@@ -341,7 +359,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
             Nur unbewertete
           </Chip>
         </div>
-        <p className="mt-2 text-[12.5px] leading-snug text-muted">
+        <p className="mt-2 text-xs leading-snug text-muted">
           Bewertungen bleiben nur in diesem Browser gespeichert.
         </p>
       </Section>
@@ -349,24 +367,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
       <Section title="Weitere Filter" active={moreCount} defaultOpen={false}>
         <div className="space-y-4">
           <div>
-            <div className="mb-1.5 text-[12.5px] font-semibold text-ink-2">Sprache</div>
-            <div className="flex flex-wrap gap-1.5">
-              {languages
-                .filter((l) => (totals.languages.get(l.id) ?? 0) > 0 || filter.languages.includes(l.id))
-                .map((l) => (
-                  <Chip
-                    key={l.id}
-                    on={filter.languages.includes(l.id)}
-                    n={counts.languages.get(l.id) ?? 0}
-                    onClick={() => update({ languages: toggleIn(filter.languages, l.id) })}
-                  >
-                    {l.labelDe}
-                  </Chip>
-                ))}
-            </div>
-          </div>
-          <div>
-            <div className="mb-1.5 text-[12.5px] font-semibold text-ink-2">Herkunft</div>
+            <div className="mb-1.5 text-xs font-semibold text-ink-2">Herkunft</div>
             <div className="flex flex-wrap gap-1.5">
               {sources
                 .filter((s) => (totals.sources.get(s.id) ?? 0) > 0 || filter.sources.includes(s.id))
@@ -384,7 +385,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
           </div>
           {allAuthors.length > 0 && (
             <div>
-              <div className="mb-1 text-[12.5px] font-semibold text-ink-2">Autor:in</div>
+              <div className="mb-1 text-xs font-semibold text-ink-2">Autor:in</div>
               <div className="-mx-1.5">
                 {allAuthors.map((a) => {
                   const n = counts.authors.get(a) ?? 0
@@ -401,7 +402,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
             </div>
           )}
           <div>
-            <div className="mb-1.5 text-[12.5px] font-semibold text-ink-2">Schlagwort</div>
+            <div className="mb-1.5 text-xs font-semibold text-ink-2">Schlagwort</div>
             <label className="search search-sm mb-1.5">
               <Icon name="search" className="ic h-4 w-4" />
               <span className="sr-only">Schlagwort suchen</span>
@@ -424,7 +425,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
                   </label>
                 )
               })}
-              {tq.length > 0 && tagList.length === 0 && <p className="px-1.5 py-1 text-[13px] text-muted">Kein Schlagwort gefunden.</p>}
+              {tq.length > 0 && tagList.length === 0 && <p className="px-1.5 py-1 text-sm text-muted">Kein Schlagwort gefunden.</p>}
             </div>
           </div>
         </div>

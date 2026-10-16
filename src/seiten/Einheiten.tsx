@@ -17,8 +17,8 @@ import { FilterPanel } from '../components/FilterPanel'
 import { MaterialCard } from '../components/MaterialCard'
 import { MaterialDetail, type DownloadKind } from '../components/MaterialDetail'
 import { ChatFinder } from '../components/ChatFinder'
-import { Dialog } from '../components/Dialog'
 import { Icon } from '../components/Icon'
+import { stufeMitAlter } from '../components/stufe'
 import { teamSync } from '../lib/teamSync'
 import type { RatingMap } from '../lib/ratings'
 import type { Bewertungen } from '../lib/useBewertungen'
@@ -26,7 +26,6 @@ import { buildHash, isEmptyLink, parseHash, writeHash, type DeepLink } from '../
 import { toast } from '../lib/toast'
 import { loadPdfModule } from '../lib/loadPdf'
 import {
-  ageLevelById,
   eldibDomainById,
   eldibGoalById,
   eldibGoals as allEldibGoals,
@@ -39,7 +38,7 @@ import {
 import { domainStyle, goalText } from '../lib/ui'
 import type { Material } from '../types/material'
 
-const PAGE = 36
+const PAGE = 48
 
 /** Filter state for a deep link: eldib/alter/q start a fresh query. */
 function filterFromLink(link: DeepLink, base: FilterState): FilterState {
@@ -130,12 +129,13 @@ export function Einheiten({
   // Keep the URL in sync (without history entries), so a link sent again by
   // the hub is always recognised as a change. With "seite=einheiten", because
   // "#eldib=…" alone opens the Arbeitsblätter (reload, back, App's hashchange).
+  // Ohne Filter steht "#einheiten" (der Reiter hat eine Adresse; „Zurück“ erkennt die Seite).
   const eldibKey = filter.eldibGoals.join(',')
   const selectedId = selected?.id ?? null
   useEffect(() => {
     if (!aktiv) return
     const hash = buildHash(eldibKey ? eldibKey.split(',') : [], selectedId)
-    writeHash(hash ? hash + '&seite=einheiten' : '')
+    writeHash(hash ? hash + '&seite=einheiten' : '#einheiten')
   }, [aktiv, eldibKey, selectedId])
 
   // "/" focuses the search (like in the hub).
@@ -207,73 +207,106 @@ export function Einheiten({
   )
 
   return (
-    <div className={aktiv ? '' : 'hidden'}>
-      <div className="mx-auto max-w-[1440px] px-4 pt-6 pb-16 sm:px-6 lg:grid lg:grid-cols-[276px_minmax(0,1fr)] lg:gap-7">
-        {/* Filter (Seitenleiste ab 960 px) */}
-        <aside className="hidden lg:block" aria-label="Filter">
-          <div className="panel scroll-slim sticky top-[80px] max-h-[calc(100vh-96px)] overflow-y-auto px-4 pb-2">
-            <div className="flex items-center justify-between border-b border-line py-3">
-              <h2 className="disp text-[17px] text-ink">Filter</h2>
+    <main className={aktiv ? '' : 'hidden'}>
+      <div className="mx-auto max-w-[1440px] px-4 pt-4 pb-16 sm:px-6 sm:pt-5">
+        <div className="mb-3 flex flex-wrap items-end justify-between gap-x-4 gap-y-3">
+          <div className="min-w-0">
+            <h1 className="disp text-xl leading-tight text-ink sm:text-2xl">Einheiten</h1>
+            <p className="mt-1 text-base text-muted" aria-live="polite">
+              <b className="font-semibold text-ink">{results.length}</b>
+              {results.length !== library.length ? ` von ${library.length}` : ''} Materialien
+              {withSheet > 0 ? ` · ${withSheet} mit Arbeitsblatt` : ''}
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <label className="search search-sm w-[260px] max-w-full max-sm:w-full">
+              <Icon name="search" />
+              <span className="sr-only">Einheiten durchsuchen</span>
+              <input
+                ref={searchRef}
+                type="search"
+                value={filter.search}
+                onChange={(e) => update({ search: e.target.value })}
+                onKeyDown={(e) => {
+                  if (e.key === 'Escape' && filter.search) {
+                    e.preventDefault()
+                    update({ search: '' })
+                  }
+                }}
+                placeholder="Titel, Thema, Ziel-Code …"
+                autoComplete="off"
+                spellCheck={false}
+              />
+            </label>
+            <button type="button" className="btn" aria-expanded={filtersOpen} aria-controls="filterfach" onClick={() => setFiltersOpen((o) => !o)}>
+              <Icon name="filter" />
+              Filter
               {active > 0 && (
-                <button type="button" className="link-btn text-[13px]" onClick={reset}>
-                  Alle zurücksetzen
-                </button>
+                <span className="fsec-count" aria-label={`${active} aktiv`}>
+                  {active}
+                </span>
               )}
-            </div>
-            {filterPanel}
+              <Icon name={filtersOpen ? 'chevronUp' : 'chevronDown'} />
+            </button>
+            <button type="button" className="btn" onClick={() => setFinderOpen(true)} title="Situation beschreiben – passende Materialien finden">
+              <Icon name="compass" />
+              <span className="max-sm:sr-only">Material-Finder</span>
+            </button>
+            <label className="flex items-center gap-2 text-sm text-muted">
+              <span className="max-sm:sr-only">Sortieren</span>
+              <select className="field w-auto py-1.5 pr-8" value={sort} onChange={(e) => setSort(e.target.value as SortMode)}>
+                <option value="empfohlen">Empfohlen</option>
+                <option value="titel">Titel A–Z</option>
+                <option value="bewertung">Meine Bewertung</option>
+              </select>
+            </label>
           </div>
-        </aside>
+        </div>
 
-        <main id="ergebnisse" tabIndex={-1} className="min-w-0 outline-none">
-          <div className="mb-3 flex flex-wrap items-end justify-between gap-x-4 gap-y-3">
-            <div className="min-w-0">
-              <h1 className="disp text-[26px] leading-tight text-ink sm:text-[30px]">Einheiten</h1>
-              <p className="mt-1 text-[14px] text-muted" aria-live="polite">
-                <b className="font-semibold text-ink">{results.length}</b>
-                {results.length !== library.length ? ` von ${library.length}` : ''} Materialien
-                {withSheet > 0 ? ` · ${withSheet} mit Arbeitsblatt` : ''}
-              </p>
-            </div>
-            <div className="flex flex-wrap items-center gap-2">
-              <label className="search search-sm w-[260px] max-w-full">
-                <Icon name="search" />
-                <span className="sr-only">Einheiten durchsuchen</span>
-                <input
-                  ref={searchRef}
-                  type="search"
-                  value={filter.search}
-                  onChange={(e) => update({ search: e.target.value })}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Escape' && filter.search) {
-                      e.preventDefault()
-                      update({ search: '' })
-                    }
-                  }}
-                  placeholder="Titel, Thema, ELDiB-Code …"
-                  autoComplete="off"
-                  spellCheck={false}
-                />
-              </label>
-              <button type="button" className="btn" onClick={() => setFinderOpen(true)} title="Situation beschreiben – passende Materialien finden">
-                <Icon name="compass" />
-                <span className="max-sm:sr-only">Material-Finder</span>
+        {chips.length > 0 && (
+          <div className="mb-3 flex flex-wrap items-center gap-1.5" role="group" aria-label="Aktive Filter">
+            {chips.map((c) => (
+              <span key={c.key} className={`achip ${c.eldib ? 'eldib' : ''}`} style={c.style}>
+                {c.eldib && <span className="dot" />}
+                <span>{c.label}</span>
+                <button type="button" onClick={c.remove} aria-label={`Filter entfernen: ${c.label}`} title="Filter entfernen">
+                  <Icon name="x" />
+                </button>
+              </span>
+            ))}
+            {chips.length > 1 && (
+              <button type="button" className="link-btn ml-1 text-sm" onClick={reset}>
+                Alle zurücksetzen
               </button>
-              <button type="button" className="btn lg:hidden" onClick={() => setFiltersOpen(true)}>
-                <Icon name="filter" />
-                Filter
-                {active > 0 && <span className="fsec-count">{active}</span>}
-              </button>
-              <label className="flex items-center gap-2 text-[13px] text-muted">
-                <span className="max-sm:sr-only">Sortieren</span>
-                <select className="field w-auto py-1.5 pr-8" value={sort} onChange={(e) => setSort(e.target.value as SortMode)}>
-                  <option value="empfohlen">Empfohlen</option>
-                  <option value="titel">Titel A–Z</option>
-                  <option value="bewertung">Meine Bewertung</option>
-                </select>
-              </label>
-            </div>
+            )}
           </div>
+        )}
 
+        {filtersOpen && (
+          <section id="filterfach" className="panel bl-fach" aria-label="Filter">
+            <div className="mb-1 flex items-center justify-between">
+              <h2 className="disp text-lg text-ink">Filter</h2>
+              <div className="flex items-center gap-1">
+                {active > 0 && (
+                  <button type="button" className="link-btn text-sm" onClick={reset}>
+                    Alle zurücksetzen
+                  </button>
+                )}
+                <button type="button" className="icon-btn" onClick={() => setFiltersOpen(false)} aria-label="Filter einklappen" title="Einklappen">
+                  <Icon name="chevronUp" />
+                </button>
+              </div>
+            </div>
+            <div className="fach-spalten">{filterPanel}</div>
+            <div className="bl-fach-fuss">
+              <button type="button" className="btn btn-primary" onClick={() => setFiltersOpen(false)}>
+                {results.length} {results.length === 1 ? 'Material' : 'Materialien'} anzeigen
+              </button>
+            </div>
+          </section>
+        )}
+
+        <section id="ergebnisse" tabIndex={-1} aria-label="Treffer" className="min-w-0 outline-none">
           {filter.eldibGoals.length > 0 && (
             <div className="callout callout-info mb-3">
               <Icon name="info" />
@@ -283,25 +316,6 @@ export function Einheiten({
                   Arbeitsblätter ansehen
                 </button>
               </div>
-            </div>
-          )}
-
-          {chips.length > 0 && (
-            <div className="mb-4 flex flex-wrap items-center gap-1.5" role="group" aria-label="Aktive Filter">
-              {chips.map((c) => (
-                <span key={c.key} className={`achip ${c.eldib ? 'eldib' : ''}`} style={c.style}>
-                  {c.eldib && <span className="dot" />}
-                  <span>{c.label}</span>
-                  <button type="button" onClick={c.remove} aria-label={`Filter entfernen: ${c.label}`} title="Filter entfernen">
-                    <Icon name="x" />
-                  </button>
-                </span>
-              ))}
-              {chips.length > 1 && (
-                <button type="button" className="link-btn ml-1 text-[13px]" onClick={reset}>
-                  Alle zurücksetzen
-                </button>
-              )}
             </div>
           )}
 
@@ -317,11 +331,11 @@ export function Einheiten({
                 goals={query.eldibGoals}
                 onOpen={openDetail}
                 onDownload={downloadPdf}
-                onRate={rate}
+                bew={bew}
               />
             )}
           </div>
-        </main>
+        </section>
       </div>
 
       {selected && (
@@ -336,32 +350,6 @@ export function Einheiten({
           highlightGoals={filter.eldibGoals}
           onShowGoal={showGoal}
         />
-      )}
-
-      {filtersOpen && (
-        <Dialog onClose={() => setFiltersOpen(false)} labelledBy="filter-dialog-title" className="dlg-mid">
-          <header className="dlg-head items-center">
-            <h2 id="filter-dialog-title" className="disp flex-1 text-[19px]">
-              Filter
-            </h2>
-            {active > 0 && (
-              <button type="button" className="link-btn text-[13px]" onClick={reset}>
-                Alle zurücksetzen
-              </button>
-            )}
-            <button type="button" className="icon-btn" onClick={() => setFiltersOpen(false)} aria-label="Schließen">
-              <Icon name="x" />
-            </button>
-          </header>
-          <div className="dlg-body scroll-slim px-4 sm:px-6" data-autofocus tabIndex={-1} style={{ outline: 'none' }}>
-            {filterPanel}
-          </div>
-          <footer className="dlg-foot">
-            <button type="button" className="btn btn-primary w-full" onClick={() => setFiltersOpen(false)}>
-              {results.length} {results.length === 1 ? 'Material' : 'Materialien'} anzeigen
-            </button>
-          </footer>
-        </Dialog>
       )}
 
       {finderOpen && (
@@ -383,7 +371,7 @@ export function Einheiten({
         />
       )}
 
-    </div>
+    </main>
   )
 }
 
@@ -411,7 +399,7 @@ function activeChips(f: FilterState, update: (p: Partial<FilterState>) => void):
       eldib: true,
     })
   for (const a of f.ageLevels)
-    out.push({ key: 'a' + a, label: `Altersstufe ${ageLevelById.get(a)?.label ?? a}`, remove: () => update({ ageLevels: without(f.ageLevels, a) }) })
+    out.push({ key: 'a' + a, label: `Alter ${stufeMitAlter(a)}`, remove: () => update({ ageLevels: without(f.ageLevels, a) }) })
   for (const t of f.types)
     out.push({ key: 't' + t, label: materialTypeById.get(t)?.labelDe ?? t, remove: () => update({ types: without(f.types, t) }) })
   for (const p of f.participantModes)
@@ -451,7 +439,7 @@ function ResultGrid({
   goals,
   onOpen,
   onDownload,
-  onRate,
+  bew,
 }: {
   items: Material[]
   ratings: RatingMap
@@ -459,7 +447,7 @@ function ResultGrid({
   goals: string[]
   onOpen: (m: Material) => void
   onDownload: (m: Material) => void
-  onRate: (id: string, n: number) => void
+  bew: Bewertungen
 }) {
   const [limit, setLimit] = useState(PAGE)
   const sentinel = useRef<HTMLDivElement>(null)
@@ -489,18 +477,18 @@ function ResultGrid({
             onDownload={onDownload}
             downloading={downloading?.id === m.id}
             rating={ratings[m.id] || 0}
-            onRate={onRate}
+            gesamt={bew.gesamt.get(m.id)}
             goals={goals}
           />
         ))}
       </div>
       {more > 0 && (
-        <div ref={sentinel} className="mt-6 flex flex-col items-center gap-2 text-[13px] text-muted">
-          <span>
+        <div ref={sentinel} className="mt-6 flex flex-col items-center gap-2 text-sm text-muted">
+          <span role="status">
             {limit} von {items.length} angezeigt
           </span>
           <button type="button" className="btn" onClick={() => setLimit((l) => l + PAGE)}>
-            Weitere {Math.min(PAGE, more)} anzeigen
+            Mehr zeigen ({Math.min(PAGE, more)} weitere)
           </button>
         </div>
       )}
@@ -544,8 +532,8 @@ function EmptyState({
       <div className="mx-auto mb-4 grid h-12 w-12 place-items-center rounded-full bg-page-2 text-muted">
         <Icon name="search" className="ic h-6 w-6" />
       </div>
-      <h2 className="disp text-[20px] text-ink">Keine passenden Materialien</h2>
-      <p className="mx-auto mt-2 max-w-[520px] text-[14.5px] leading-relaxed text-muted">
+      <h2 className="disp text-xl text-ink">Keine passenden Materialien</h2>
+      <p className="mx-auto mt-2 max-w-[520px] text-base leading-relaxed text-muted">
         {onlyEldib
           ? `Zu ${filter.eldibGoals.length === 1 ? 'diesem ELDiB-Ziel' : 'diesen ELDiB-Zielen'} (${filter.eldibGoals.map(goalText).join(', ')}) gibt es in der Toolbox noch kein Material.`
           : filter.search.trim()
@@ -554,7 +542,7 @@ function EmptyState({
       </p>
       {suggestions.length > 0 && (
         <div className="mx-auto mt-5 max-w-[560px]">
-          <div className="mb-2 text-[13px] font-semibold text-ink-2">Benachbarte Ziele mit Material:</div>
+          <div className="mb-2 text-sm font-semibold text-ink-2">Benachbarte Ziele mit Material:</div>
           <div className="flex flex-wrap justify-center gap-1.5">
             {suggestions.map((s) => (
               <button key={s.code} type="button" className="fchip" style={domainStyle(s.code)} onClick={() => onGoal(s.code)}>

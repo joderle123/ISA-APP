@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------------------
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { blattById } from '../data/blaetter'
-import { stufenText } from '../blatt/katalog'
+import { alterText, stufenKurz } from '../components/stufe'
 import { FASSUNGEN, groesseresLayout, istFassung, kuerzbar } from '../blatt/variante'
 import { loadPdfModule } from '../lib/loadPdf'
 import { toast } from '../lib/toast'
@@ -95,10 +95,10 @@ export function MappeDialog({ onSchliessen }: { onSchliessen: () => void }) {
     <Dialog onClose={onSchliessen} labelledBy="mp-dialog-titel" className="dlg-mid">
       <header className="dlg-head items-center">
         <div className="min-w-0 flex-1">
-          <h2 id="mp-dialog-titel" className="disp text-[20px] leading-tight">
+          <h2 id="mp-dialog-titel" className="disp text-xl leading-tight">
             Mappe als Heft
           </h2>
-          <p className="mt-0.5 text-[13px] text-muted">
+          <p className="mt-0.5 text-sm text-muted">
             {zeilen.length === 1 ? '1 Blatt' : `${zeilen.length} Blätter`} · bleibt in diesem Browser gespeichert
           </p>
         </div>
@@ -124,7 +124,7 @@ export function MappeDialog({ onSchliessen }: { onSchliessen: () => void }) {
               autoComplete="off"
               aria-describedby="mp-untertitel-hinweis"
             />
-            <span id="mp-untertitel-hinweis" className="mt-1 block text-[12.5px] text-muted">
+            <span id="mp-untertitel-hinweis" className="mt-1 block text-xs text-muted">
               Bitte keine Namen von Kindern eintragen.
             </span>
           </label>
@@ -169,7 +169,7 @@ export function MappeDialog({ onSchliessen }: { onSchliessen: () => void }) {
                       <div className="mp-titel">{inhalt.titel}</div>
                       <div className="mp-meta">
                         <span>{b.nr}</span>
-                        <span>{stufenText(b.stufen)}</span>
+                        <span title={`Stufe ${stufenKurz(b.stufen)}`}>{alterText(b.stufen)}</span>
                         {e.sprache === 'fr' && b.fr ? <span className="tag tag-outline">FR</span> : null}
                       </div>
                     </div>
@@ -204,7 +204,7 @@ export function MappeDialog({ onSchliessen }: { onSchliessen: () => void }) {
               })}
             </ol>
           )}
-          {zeilen.length > 40 ? <p className="mt-2 text-[12.5px] text-muted">Große Hefte brauchen beim Erstellen etwas Geduld.</p> : null}
+          {zeilen.length > 40 ? <p className="mt-2 text-xs text-muted">Große Hefte brauchen beim Erstellen etwas Geduld.</p> : null}
         </section>
       </div>
 

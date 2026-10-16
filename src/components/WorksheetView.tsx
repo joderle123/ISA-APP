@@ -153,7 +153,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
 
   if (kind === 'instruction')
     return (
-      <p className="mt-2 rounded-lg px-3 py-2 text-sm" style={{ backgroundColor: light, color: deep }}>
+      <p className="mt-2 rounded-[var(--r-sm)] px-3 py-2 text-sm" style={{ backgroundColor: light, color: deep }}>
         {text}
       </p>
     )
@@ -175,7 +175,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
       <div className="mt-4">
         {text ? prompt : null}
         <div
-          className={`mt-2 rounded-xl border-2 border-dashed ${num ? 'ml-[34px]' : ''}`}
+          className={`mt-2 rounded-[var(--r-md)] border-2 border-dashed ${num ? 'ml-[34px]' : ''}`}
           style={{ borderColor: '#cbd5e1', height: Math.min(220, (lines ?? 5) * 26) }}
         />
       </div>
@@ -188,7 +188,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
           const g = glyphFor(it, deep)
           return (
             <div key={i} className="flex items-center gap-2.5">
-              <span className="h-5 w-5 shrink-0 rounded-md border-2" style={{ borderColor: deep }} />
+              <span className="h-5 w-5 shrink-0 rounded-[var(--r-sm)] border-2" style={{ borderColor: deep }} />
               {g}
               <span className="text-slate-700">{it}</span>
             </div>
@@ -210,7 +210,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
             return (
               <div
                 key={i}
-                className="flex min-w-[84px] flex-1 flex-col items-center gap-1.5 rounded-xl border px-2 py-2.5"
+                className="flex min-w-[84px] flex-1 flex-col items-center gap-1.5 rounded-[var(--r-md)] border px-2 py-2.5"
                 style={{ borderColor: deep }}
               >
                 {g}
@@ -229,7 +229,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
     return (
       <div className="mt-4">
         {text ? prompt : null}
-        <div className="mt-2 overflow-hidden rounded-xl border border-slate-200">
+        <div className="mt-2 overflow-hidden rounded-[var(--r-md)] border border-slate-200">
           <div className="flex" style={{ backgroundColor: deep }}>
             {cols.map((c, i) => (
               <div key={i} className="flex-1 px-3 py-2 text-xs font-bold text-white">{c}</div>
@@ -255,7 +255,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
         {text ? prompt : null}
         <div className={`mt-2 flex gap-2.5 ${num ? 'pl-[34px]' : ''}`}>
           {cols.map((c, i) => (
-            <div key={i} className="flex-1 overflow-hidden rounded-xl border" style={{ borderColor: deep }}>
+            <div key={i} className="flex-1 overflow-hidden rounded-[var(--r-md)] border" style={{ borderColor: deep }}>
               <div className="px-2 py-1.5 text-center text-xs font-bold text-white" style={{ backgroundColor: deep }}>
                 {c}
               </div>
@@ -275,7 +275,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
     return (
       <div className="mt-4">
         {text ? prompt : null}
-        <div className={`mt-2 flex flex-wrap gap-1.5 rounded-xl p-2.5 ${num ? 'ml-[34px]' : ''}`} style={{ backgroundColor: light }}>
+        <div className={`mt-2 flex flex-wrap gap-1.5 rounded-[var(--r-md)] p-2.5 ${num ? 'ml-[34px]' : ''}`} style={{ backgroundColor: light }}>
           {(items ?? []).map((w, i) => (
             <span
               key={i}
@@ -325,7 +325,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
                   </span>
                 ) : null}
                 <div
-                  className={`w-[82%] rounded-2xl border-2 bg-white px-3 pt-1 pb-3 ${right ? 'rounded-br-sm' : 'rounded-bl-sm'}`}
+                  className={`w-[82%] rounded-[var(--r-lg)] border-2 bg-white px-3 pt-1 pb-3 ${right ? 'rounded-br-sm' : 'rounded-bl-sm'}`}
                   style={{ borderColor: deep }}
                 >
                   {Array.from({ length: lines ?? 2 }).map((_, r) => (
@@ -411,7 +411,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
       <div className="mt-4">
         {text ? prompt : null}
         <div className={`mt-2 flex gap-3 ${num ? 'ml-[34px]' : ''}`}>
-          <div className="flex flex-1 items-center justify-center rounded-xl border-2 border-dashed border-slate-300 py-3">
+          <div className="flex flex-1 items-center justify-center rounded-[var(--r-md)] border-2 border-dashed border-slate-300 py-3">
             <svg width={Math.min(120, (lines ?? 8) * 12)} viewBox="0 0 100 240" fill="none">
               <circle cx="50" cy="26" r="19" stroke={deep} strokeWidth="5" />
               <rect x="36" y="52" width="28" height="80" rx="13" stroke={deep} strokeWidth="5" />
@@ -536,17 +536,17 @@ export function WorksheetView({
   let task = 0
   // Papier-Vorschau: Farben und Aufbau wie auf dem gedruckten Blatt (PDF).
   return (
-    <div className="overflow-hidden rounded-xl border border-line bg-white shadow-[var(--shadow-1)]">
+    <div className="overflow-hidden rounded-[var(--r-md)] border border-line bg-white shadow-[var(--shadow-1)]">
       <div className="h-1.5" style={{ backgroundColor: deep }} />
       <div className="p-4 sm:p-6">
         <div className="flex flex-wrap items-center gap-2">
           <span
-            className="rounded-md px-2 py-0.5 text-[11px] font-bold tracking-wide text-white uppercase"
+            className="rounded-[var(--r-sm)] px-2 py-0.5 text-xs font-bold tracking-wide text-white uppercase"
             style={{ backgroundColor: deep }}
           >
             Arbeitsblatt
           </span>
-          <h4 className="text-[16px] font-bold text-slate-800">{w.title || fallbackTitle}</h4>
+          <h4 className="text-base font-bold text-slate-800">{w.title || fallbackTitle}</h4>
         </div>
 
         <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-500">
@@ -559,7 +559,7 @@ export function WorksheetView({
         </div>
 
         {w.intro ? (
-          <p className="mt-3 rounded-lg px-3 py-2 text-sm text-slate-700" style={{ backgroundColor: light }}>
+          <p className="mt-3 rounded-[var(--r-sm)] px-3 py-2 text-sm text-slate-700" style={{ backgroundColor: light }}>
             {w.intro}
           </p>
         ) : null}
@@ -571,7 +571,7 @@ export function WorksheetView({
         })}
 
         {/* wie die Fußzeile des gedruckten Blatts */}
-        {vermerk ? <Urheber text={vermerk} className="urheber mt-6 text-[11.5px]" /> : null}
+        {vermerk ? <Urheber text={vermerk} className="urheber mt-6 text-xs" /> : null}
       </div>
     </div>
   )
