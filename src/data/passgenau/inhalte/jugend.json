@@ -22725,5 +22725,3497 @@
     "probe": "Noah s’entraîne aux services au ping-pong. Il estime que cinq sur dix tombent sur la table. En essayant, il n’y en a que trois. Que pourrait faire Noah maintenant avec « S’entraîner avec des chiffres » ?"
    }
   }
+ },
+ {
+  "id": "j:drei-regler-kennenlernen",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Drei Regler: Woran man Veränderung erkennt",
+  "text": "Die Fachkraft zeichnet drei Regler auf ein Blatt: „Wie oft?“, „Wie lange?“, „Wie stark?“ Sie erklärt: „Ich bin besser geworden“ bleibt vage, bis man einen Regler benennt. Dann liest sie drei erfundene Aussagen von Luca vor: Früher fast jeden Streit im Chat sofort beantwortet, heute nur jeden dritten. Nach einem Streit früher eine Stunde gegrübelt, heute zehn Minuten. Früher lange Vorwürfe, heute ein ruhiger Satz. Der oder die Jugendliche ordnet jede Aussage einem Regler zu, markiert darauf „früher“ und „heute“ und erfindet eine vierte Aussage für Yanis.",
+  "sagen": [
+   "„Ich bin besser geworden“ klingt gut, lässt sich aber schwer prüfen. Drei Regler helfen: wie oft, wie lange, wie stark.",
+   "Ich lese Aussagen von Luca. Ordne jede einem Regler zu und trag ein, wo früher war und wo heute.",
+   "Erfinde jetzt eine vierte Aussage für Yanis. An welchem Regler hat sich bei ihm etwas bewegt?"
+  ],
+  "wennEsKippt": "Fällt die Zuordnung schwer, liest die Fachkraft die Aussage noch einmal und fragt nur: Geht es um die Häufigkeit, die Dauer oder die Stärke? Fällt keine eigene Aussage ein, nennt sie zwei Anfänge („Früher habe ich …“ / „Heute dauert es nur noch …“), und der oder die Jugendliche ergänzt einen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "thema": [
+   "selbstwert",
+   "lernen"
+  ],
+  "eldib": [
+   {
+    "code": "V-22",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "selbstbild",
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "denkmodell",
+   "gespraech"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Drei Regler: wie oft, wie lange, wie stark – was hat sich bewegt?",
+   "fr": "Trois curseurs : combien de fois, combien de temps, quelle intensité ?"
+  },
+  "uebertragbar": true,
+  "fr": {
+   "titel": "Trois curseurs : à quoi reconnaît-on un changement ?",
+   "text": "L’adulte dessine trois curseurs sur une feuille : « Combien de fois ? », « Combien de temps ? », « Quelle intensité ? » Il explique que « je me suis amélioré(e) » reste vague tant qu’on ne nomme pas un curseur. Puis il lit trois affirmations inventées de Luca : avant, il répondait tout de suite à presque chaque dispute dans le chat, maintenant à une sur trois. Après une dispute, il ruminait une heure, maintenant dix minutes. Avant, de longs reproches, maintenant une phrase calme. Le ou la jeune attribue chaque affirmation à un curseur, y marque « avant » et « maintenant » et invente une quatrième affirmation pour Yanis.",
+   "sagen": [
+    "« Je me suis amélioré(e) » sonne bien, mais c’est difficile à vérifier. Trois curseurs aident : combien de fois, combien de temps, quelle intensité.",
+    "Je lis des affirmations de Luca. Attribue chacune à un curseur et note où c’était avant et où c’est maintenant.",
+    "Invente maintenant une quatrième affirmation pour Yanis. Sur quel curseur quelque chose a-t-il bougé chez lui ?"
+   ],
+   "wennEsKippt": "Si l’attribution est difficile, l’adulte relit l’affirmation et demande seulement : s’agit-il de la fréquence, de la durée ou de l’intensité ? Si aucune idée ne vient, il propose deux débuts (« Avant, je … » / « Maintenant, ça ne dure que … ») et le ou la jeune en complète un.",
+   "kurz": "Dessiner 3 curseurs · classer · noter avant/maintenant"
+  },
+  "tagesform": [],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Drei Regler: Was hat sich bewegt?",
+    "fr": "Trois curseurs : qu’est-ce qui a bougé ?"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Diogo sagt: „Seit dem Sommer bin ich im Training verlässlicher.“ Drei Sätze zeigen, was gemeint ist."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welcher Regler gehört zu welchem Satz? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Aussage",
+      "Regler"
+     ],
+     "links": [
+      "Früher kam Diogo etwa zweimal im Monat pünktlich, heute fast immer.",
+      "Nach einem Fehlpass hat er früher zehn Minuten geschmollt, heute zwei.",
+      "Nach einem Fehlpass hat er früher laut geschimpft, heute nur geseufzt."
+     ],
+     "rechts": [
+      "Wie stark?",
+      "Wie oft?",
+      "Wie lange?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Sofia sagt: „Ich bin ruhiger geworden.“ Welche ihrer Aussagen lassen sich an einem Regler prüfen? Kreuz an, mehrere gehen."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Ich fühle mich einfach besser.",
+      "Früher habe ich dreimal pro Woche andere angemeckert, jetzt etwa einmal.",
+      "Es läuft irgendwie besser.",
+      "Früher dauerte mein Frust nach einer schlechten Note einen Nachmittag, jetzt eine halbe Stunde."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Wähl einen Bereich (Schule, Training, Chat) und einen Regler (echt oder erfunden)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Bereich und Regler: …",
+      "Früher … – heute …"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Diogo dit : « Depuis l’été, je suis plus fiable à l’entraînement. » Trois phrases montrent ce que cela veut dire."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quel curseur va avec quelle phrase ? Relie."
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Affirmation",
+      "Curseur"
+     ],
+     "links": [
+      "Avant, Diogo était à l’heure environ deux fois par mois, maintenant presque toujours.",
+      "Après une passe ratée, il boudait dix minutes avant, maintenant deux.",
+      "Après une passe ratée, il râlait fort avant, maintenant il soupire seulement."
+     ],
+     "rechts": [
+      "Quelle intensité ?",
+      "Combien de fois ?",
+      "Combien de temps ?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Sofia dit : « Je suis devenue plus calme. » Lesquelles de ses affirmations se vérifient sur un curseur ? Coche, plusieurs réponses possibles."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Je me sens simplement mieux.",
+      "Avant, je critiquais les autres trois fois par semaine, maintenant environ une fois.",
+      "Ça va un peu mieux, je ne sais pas comment.",
+      "Avant, ma frustration après une mauvaise note durait un après-midi, maintenant une demi-heure."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Choisis un domaine (école, entraînement, chat) et un curseur (vrai ou inventé)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Domaine et curseur : …",
+      "Avant … – maintenant …"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "3 Regler zeichnen · Aussagen zuordnen · früher/heute eintragen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Training: Fehlpass-Frust",
+      "text": "Nach dem Training denkst du: „Ich habe mich nicht verbessert.“ Du gehst die drei Regler durch: wie oft, wie lange, wie stark der Frust war."
+     },
+     {
+      "kurz": "Praktikum: Rückmeldung",
+      "text": "Im Praktikum sagt dir jemand aus dem Team: „Das wird besser.“ Du prüfst an den drei Reglern, was sich bei dir verändert hat."
+     }
+    ],
+    "versuch": "Such dir diese Woche eine kleine Veränderung bei dir und prüfe sie an den drei Reglern: wie oft, wie lange, wie stark.",
+    "probe": "Luca sagt: „Ich nerve mich beim Üben nicht mehr so.“ Was könnte Luca mit den drei Reglern prüfen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Entraînement : passe ratée",
+      "text": "Après l’entraînement, tu penses : « Je n’ai fait aucun progrès. » Tu passes les trois curseurs en revue : combien de fois, combien de temps, quelle intensité."
+     },
+     {
+      "kurz": "Stage : un retour positif",
+      "text": "Pendant ton stage, quelqu’un de l’équipe te dit : « Ça s’améliore. » Tu vérifies sur les trois curseurs ce qui a changé chez toi."
+     }
+    ],
+    "versuch": "Cette semaine, choisis un petit changement chez toi et vérifie-le sur les trois curseurs : combien de fois, combien de temps, quelle intensité.",
+    "probe": "Luca dit : « Je m’énerve moins en m’entraînant. » Que pourrait vérifier Luca avec les trois curseurs ?"
+   }
+  },
+  "linie": {
+   "id": "selbstbild-12-18-c",
+   "nr": 1,
+   "faden": {
+    "de": "Eigene Fortschritte erkennen und beschreiben – mit den drei Reglern",
+    "fr": "Reconnaître et décrire ses progrès – avec les trois curseurs"
+   }
+  }
+ },
+ {
+  "id": "j:drei-regler-nachfragen",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Nachfragen bis es konkret wird",
+  "text": "Die Fachkraft spielt Inês, die sagt: „Im Unterricht läuft es besser.“ Der oder die Jugendliche stellt Fragen zu den drei Reglern: wie oft, wie lange, wie stark. Inês antwortet vom Zettel: früher fast nie gemeldet, heute etwa einmal pro Stunde; früher zehn Minuten Rückzug nach einem Fehler, heute zwei; früher Kopf auf den Tisch, heute kurz durchatmen. Der oder die Jugendliche trägt die Antworten auf drei Regler ein und fasst in einem Satz zusammen, was Inês jetzt kann. Dann tauschen sie: Die Fachkraft fragt mit denselben drei Fragen zu einer kleinen Veränderung, echt oder erfunden.",
+  "sagen": [
+   "Ich bin Inês und sage: Im Unterricht läuft es besser. Frag mit den drei Reglern nach, bis man es prüfen kann.",
+   "Trag meine Antworten auf die Regler ein. Was kann Inês jetzt, das sie früher nicht konnte?",
+   "Jetzt frage ich dich zu einer kleinen Veränderung, echt oder erfunden. „Pass“ ist jederzeit erlaubt."
+  ],
+  "wennEsKippt": "Fällt dem oder der Jugendlichen keine Nachfrage ein, tippt die Fachkraft auf den Regler, den sie meint. Ist die eigene Runde zu persönlich, fragt die Fachkraft zu einer erfundenen Person (Diogo), und der oder die Jugendliche antwortet für ihn.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "selbstwert",
+   "lernen"
+  ],
+  "eldib": [
+   {
+    "code": "V-22",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "selbstbild",
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Drei Regler: nachfragen, an welchem Regler die Veränderung liegt",
+   "fr": "Trois curseurs : demander sur quel curseur se situe le changement"
+  },
+  "uebertragbar": true,
+  "fr": {
+   "titel": "Poser des questions jusqu’à ce que ce soit concret",
+   "text": "L’adulte joue Inês, qui dit : « En cours, ça va mieux. » Le ou la jeune pose des questions sur les trois curseurs : combien de fois, combien de temps, quelle intensité. Inês répond d’après un papier : avant, elle ne levait presque jamais la main, maintenant environ une fois par heure ; avant, dix minutes de repli après une erreur, maintenant deux ; avant, la tête sur la table, maintenant une respiration. Le ou la jeune note les réponses sur trois curseurs et résume en une phrase ce qu’Inês sait faire maintenant. Puis ils échangent : l’adulte pose les trois mêmes questions sur un petit changement, vrai ou inventé.",
+   "sagen": [
+    "Je suis Inês et je dis : en cours, ça va mieux. Pose des questions avec les trois curseurs jusqu’à ce qu’on puisse vérifier.",
+    "Note mes réponses sur les curseurs. Que sait faire Inês maintenant qu’elle ne savait pas faire avant ?",
+    "Maintenant, je te pose des questions sur un petit changement, vrai ou inventé. Tu peux toujours dire « Je passe »."
+   ],
+   "wennEsKippt": "Si le ou la jeune ne trouve pas de question, l’adulte montre du doigt le curseur qu’il a en tête. Si le tour personnel est trop intime, l’adulte interroge à propos d’une personne inventée (Diogo), et le ou la jeune répond pour lui.",
+   "kurz": "Jouer Inês · questions sur 3 curseurs · noter les réponses",
+   "vorbereitung": "Papier pour Inês : avant presque jamais la main levée, maintenant souvent · pause après erreur : 10 min, maintenant 2 · avant tête sur la table"
+  },
+  "tagesform": [],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Drei Regler: Nachfragen",
+    "fr": "Trois curseurs : poser des questions"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Zoé sagt: „Ich gehe lockerer mit Fehlern um.“ Du willst herausfinden, was daran stimmt."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Frage prüft den Regler „Wie lange?“ Kreuz eine an."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Wie oft ist dir das in den letzten Wochen passiert?",
+      "Wie lange hat es danach gedauert, bis du wieder konzentriert warst?",
+      "Wie heftig war deine Reaktion?",
+      "Warum glaubst du, dass du lockerer geworden bist?"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "text",
+     "text": "Zoé antwortet: Früher war sie nach einem Fehler zehn Minuten blockiert, heute eine Minute. Früher hat sie das Heft zugeknallt, heute nur kurz geseufzt."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welcher Satz fasst Zoés Veränderung am besten zusammen? Kreuz einen an."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Zoé ist jetzt perfekt und macht nie mehr Fehler.",
+      "Zoé ist insgesamt irgendwie entspannter.",
+      "Zoé ist nach einem Fehler nur noch eine Minute statt zehn blockiert und seufzt, statt das Heft zuzuknallen."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Eine Veränderung bei dir oder einer erfundenen Person (echt oder erfunden)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Die Veränderung: …",
+      "Der Regler, der sich am meisten bewegt hat: …"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Zoé dit : « Je gère mieux mes erreurs. » Tu veux savoir ce qui est vrai là-dedans."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelle question vérifie le curseur « Combien de temps ? » Coche une case."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Combien de fois cela t’est-il arrivé ces dernières semaines ?",
+      "Combien de temps cela a-t-il pris ensuite avant que tu sois de nouveau concentrée ?",
+      "Ta réaction était-elle forte ?",
+      "Pourquoi crois-tu que tu es plus détendue ?"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "text",
+     "text": "Zoé répond : avant, elle restait bloquée dix minutes après une erreur, maintenant une minute. Avant, elle claquait son cahier, maintenant elle soupire seulement un instant."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelle phrase résume le mieux le changement de Zoé ? Coche une case."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Zoé est parfaite maintenant et ne fait plus jamais d’erreur.",
+      "Zoé est globalement un peu plus détendue.",
+      "Après une erreur, Zoé reste bloquée une minute au lieu de dix et soupire au lieu de claquer son cahier."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Un changement chez toi ou chez une personne inventée (vrai ou inventé)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Le changement : …",
+      "Le curseur qui a le plus bougé : …"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Inês spielen · mit 3 Reglern nachfragen · Antworten eintragen",
+  "vorbereitung": "Zettel für Inês: früher nie gemeldet, heute oft · Pause nach Fehler 10 Min., heute 2 · früher Kopf auf den Tisch",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Pause: Kompliment prüfen",
+      "text": "Jemand sagt dir: „Du bist ruhiger geworden.“ Du fragst nach: Wie oft fällt das auf, wie lange, wie stark?"
+     },
+     {
+      "kurz": "Praktikum: Rückmeldung genauer",
+      "text": "Eine Kollegin sagt, sie komme besser mit Kritik klar. Du fragst an den drei Reglern nach, bis es konkret wird."
+     }
+    ],
+    "versuch": "Wenn dir diese Woche jemand sagt, etwas sei besser geworden, frag einmal nach einem Regler: wie oft, wie lange oder wie stark?",
+    "probe": "Sofia erzählt, sie sei im Chat entspannter geworden. Mehdi will es genauer wissen. Welche Fragen kann Mehdi mit den drei Reglern stellen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Récré : vérifier un compliment",
+      "text": "Quelqu’un te dit : « Tu es plus calme qu’avant. » Tu demandes : combien de fois on le remarque, combien de temps, quelle intensité ?"
+     },
+     {
+      "kurz": "Stage : retour plus précis",
+      "text": "Une collègue dit qu’elle supporte mieux la critique. Tu poses des questions sur les trois curseurs jusqu’à ce que ce soit concret."
+     }
+    ],
+    "versuch": "Si quelqu’un te dit que quelque chose s’est amélioré, demande une fois sur quel curseur : combien de fois, combien de temps, quelle intensité ?",
+    "probe": "Sofia raconte qu’elle est plus détendue dans le chat. Mehdi veut en savoir plus. Quelles questions Mehdi peut-il poser avec les trois curseurs ?"
+   }
+  },
+  "linie": {
+   "id": "selbstbild-12-18-c",
+   "nr": 2,
+   "faden": {
+    "de": "Eigene Fortschritte erkennen und beschreiben – mit den drei Reglern",
+    "fr": "Reconnaître et décrire ses progrès – avec les trois curseurs"
+   },
+   "bruecke": {
+    "de": "Du hast drei Regler kennengelernt: wie oft, wie lange, wie stark. Heute fragst du damit nach, bis eine Veränderung konkret wird.",
+    "fr": "Tu as découvert les trois curseurs : combien de fois, combien de temps, quelle intensité. Aujourd’hui, tu poses des questions jusqu’à ce qu’un changement devienne concret."
+   }
+  }
+ },
+ {
+  "id": "j:drei-regler-trotz-rueckschlag",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Regler prüfen – auch nach einem Rückschlag",
+  "text": "Der oder die Jugendliche wählt eine Veränderung bei sich, echt oder erfunden, zum Beispiel pünktlicher werden, ruhiger bleiben oder mehr sagen. Die Fachkraft zeichnet dazu die drei Regler (wie oft, wie lange, wie stark). Dann kommt die schwierigere Lage: Die Fachkraft nennt einen Rückschlag („Vor zwei Tagen ging es wieder schief.“). Der oder die Jugendliche prüft allein an jedem Regler, ob sich gegenüber früher trotzdem etwas bewegt hat, und schreibt zu jedem „Früher … – heute …“ auf, dazu was geholfen hat. Zum Schluss steht auf einer Karte ein Satz: „Das konnte ich früher noch nicht: …“, den er oder sie mitnimmt.",
+  "sagen": [
+   "Wähl eine Veränderung, an der du arbeitest – echt oder erfunden. Wir zeichnen dazu die drei Regler.",
+   "Angenommen, es gab einen Rückschlag. Prüf an jedem Regler: Was hat sich trotzdem gegenüber früher bewegt?",
+   "Schreib auf die Karte: Das konnte ich früher noch nicht – und was dabei geholfen hat."
+  ],
+  "wennEsKippt": "Fällt keine eigene Veränderung ein, wählt der oder die Jugendliche aus drei Vorschlägen (pünktlicher, ruhiger bleiben, mehr sagen) oder nimmt Diogo als erfundene Person. Wirkt der Rückschlag zu schwer, bleibt es bei einem kleinen erfundenen Beispiel, und die Fachkraft schreibt die Karte mit.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "selbstwert",
+   "lernen"
+  ],
+  "eldib": [
+   {
+    "code": "V-22",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "selbstbild",
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "schreiben",
+   "plan"
+  ],
+  "material": [
+   "papier",
+   "stifte",
+   "karten"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Drei Regler: allein prüfen, was sich trotz Rückschlag bewegt hat",
+   "fr": "Trois curseurs : vérifier soi-même ce qui a bougé malgré un revers"
+  },
+  "uebertragbar": true,
+  "fr": {
+   "titel": "Vérifier les curseurs – même après un revers",
+   "text": "Le ou la jeune choisit un changement chez lui ou elle, vrai ou inventé, par exemple être plus ponctuel, rester plus calme ou en dire plus. L’adulte dessine les trois curseurs (combien de fois, combien de temps, quelle intensité). Puis vient la situation plus difficile : l’adulte nomme un revers (« Il y a deux jours, ça a de nouveau mal tourné. »). Le ou la jeune examine, sur chaque curseur, si quelque chose a quand même bougé par rapport à avant, et note pour chacun « Avant … – maintenant … » ainsi que ce qui a aidé. À la fin, une carte porte une phrase : « Ça, je ne savais pas le faire avant : … », qu’il ou elle emporte.",
+   "sagen": [
+    "Choisis un changement sur lequel tu travailles – vrai ou inventé. On dessine les trois curseurs.",
+    "Imaginons qu’il y ait eu un revers. Vérifie sur chaque curseur : qu’est-ce qui a quand même bougé par rapport à avant ?",
+    "Écris sur la carte : Ça, je ne savais pas le faire avant – et ce qui m’a aidé."
+   ],
+   "wennEsKippt": "Si aucun changement ne vient, le ou la jeune choisit parmi trois propositions (plus ponctuel, plus calme, en dire plus) ou prend Diogo comme personne inventée. Si le revers est trop lourd, on reste sur un petit exemple inventé, et l’adulte écrit la carte avec lui ou elle.",
+   "kurz": "Choisir un changement · examiner le revers · carte"
+  },
+  "tagesform": [],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Drei Regler: Trotz Rückschlag",
+    "fr": "Trois curseurs : malgré un revers"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Lara will im Unterricht öfter etwas sagen. Vor zwei Tagen hat sie sich wieder nicht gemeldet."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Aussage nennt trotz des Rückschlags etwas, das sich an einem Regler prüfen lässt? Kreuz eine an."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Es hat sowieso nichts gebracht.",
+      "Früher hat sie sich fast nie gemeldet, in den letzten Wochen zwei- bis dreimal. Zwei Tage ohne Melden ändern das nicht.",
+      "Sie ist eben schüchtern und bleibt es."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Beschreibe für Lara beides, den Rückschlag und das, was sich trotzdem bewegt hat."
+    },
+    {
+     "art": "waage",
+     "links": "Der Rückschlag war: …",
+     "rechts": "Gleichzeitig hat sich bewegt (welcher Regler?): …",
+     "zeilen": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Eine Fähigkeit, die du früher noch nicht hattest (echt oder erfunden)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Das konnte ich früher noch nicht: …",
+      "Geholfen hat dabei: …"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Lara veut prendre plus souvent la parole en cours. Il y a deux jours, elle n’a de nouveau pas levé la main."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelle affirmation nomme, malgré le revers, quelque chose qu’on peut vérifier sur un curseur ? Coche une case."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "De toute façon, ça n’a rien apporté.",
+      "Avant, elle ne levait presque jamais la main, ces dernières semaines deux à trois fois. Deux jours sans le faire n’y changent rien.",
+      "Elle est timide, c’est comme ça."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Décris pour Lara les deux choses : le revers et ce qui a quand même bougé."
+    },
+    {
+     "art": "waage",
+     "links": "Le revers a été : …",
+     "rechts": "En même temps, quelque chose a bougé (quel curseur ?) : …",
+     "zeilen": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Une chose que tu ne savais pas faire avant (vrai ou inventé)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Ça, je ne savais pas le faire avant : …",
+      "Ce qui m’a aidé : …"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Veränderung wählen · Rückschlag prüfen · Karte „Das konnte ich …“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Schlechter Tag in der Schule",
+      "text": "Nach einem schlechten Tag in der Schule denkst du: „Das bringt ja doch nichts.“ Du prüfst an den drei Reglern, was sich trotzdem bewegt hat."
+     },
+     {
+      "kurz": "Training: alter Fehler wieder",
+      "text": "Im Training passiert dir wieder der alte Fehler. Du schaust an den drei Reglern, was sich gegenüber früher verändert hat."
+     }
+    ],
+    "versuch": "Schreib dir diese Woche einmal auf: „Das konnte ich früher noch nicht: …“ Ein Satz reicht.",
+    "probe": "Yanis hat wieder zu spät auf eine Nachricht geantwortet und denkt: „Ich bin kein Stück weiter.“ Was könnte Yanis mit den drei Reglern prüfen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Mauvaise journée à l’école",
+      "text": "Après une mauvaise journée à l’école, tu penses : « Ça ne sert à rien. » Tu vérifies sur les trois curseurs ce qui a quand même bougé."
+     },
+     {
+      "kurz": "Entraînement : la même erreur",
+      "text": "À l’entraînement, tu refais la même vieille erreur. Tu regardes sur les trois curseurs ce qui a changé par rapport à avant."
+     }
+    ],
+    "versuch": "Note-toi une fois cette semaine : « Ça, je ne savais pas le faire avant : … » Une phrase suffit.",
+    "probe": "Yanis a de nouveau répondu trop tard à un message et pense : « Je n’ai pas avancé d’un pouce. » Que pourrait vérifier Yanis avec les trois curseurs ?"
+   }
+  },
+  "linie": {
+   "id": "selbstbild-12-18-c",
+   "nr": 3,
+   "faden": {
+    "de": "Eigene Fortschritte erkennen und beschreiben – mit den drei Reglern",
+    "fr": "Reconnaître et décrire ses progrès – avec les trois curseurs"
+   },
+   "bruecke": {
+    "de": "Du hast mit den drei Reglern nachgefragt. Heute prüfst du allein, was sich bei einer Veränderung bewegt hat – auch nach einem Rückschlag.",
+    "fr": "Tu as posé des questions avec les trois curseurs. Aujourd’hui, tu vérifies par toi-même ce qui a bougé – même après un revers."
+   }
+  }
+ },
+ {
+  "id": "j:wertungswort-check",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Der Wertungswort-Check",
+  "text": "Die Fachkraft legt zwei erfundene Karten hin: „Die Mensa hat vier Sorten Sandwich.“ und „Das Sandwich dort ist das beste der Stadt.“ Sie zeigt: In der zweiten steckt ein Wertungswort („das beste“), also ist es eine Meinung; die erste kann man nachprüfen, also ist es ein Fakt. Dann liegen sechs weitere Karten da, Fakten und Meinungen gemischt. Der oder die Jugendliche sortiert sie in zwei Stapel und kreist bei jeder Meinung das Wertungswort ein. Zum Schluss schreibt er oder sie zu einer Meinungs-Karte einen Satz zum selben Thema, der ohne Wertungswort auskommt.",
+  "sagen": [
+   "Hier liegen zwei Sätze über dasselbe Sandwich. Welcher lässt sich nachprüfen, und in welchem steckt ein Urteil?",
+   "Sortier die Karten in Fakt und Meinung. Bei jeder Meinung: Welches Wort verrät das Urteil? Kreis es ein.",
+   "Schreib zu einer Meinungs-Karte einen Satz zum selben Thema, in dem kein Wertungswort vorkommt."
+  ],
+  "wennEsKippt": "Kommt der oder die Jugendliche bei einer Karte nicht weiter, liest die Fachkraft sie laut und fragt: „Wird hier etwas bewertet, oder wird nur etwas gesagt, das man prüfen kann?“ Ist das Schreiben zu viel, nennt er oder sie den Satz ohne Wertungswort nur mündlich.",
+  "werkzeug": {
+   "de": "Wertungswort-Check: Wertungswort drin? Dann ist es Meinung",
+   "fr": "Mot de jugement : s’il y en a un dans la phrase, c’est une opinion"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "thema": [
+   "lernen",
+   "medien"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-58",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "karten",
+   "gespraech"
+  ],
+  "material": [
+   "karten",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Repérer le mot de jugement",
+   "text": "L’adulte pose deux cartes inventées : « La cantine propose quatre sortes de sandwichs. » et « Le sandwich de là-bas est le meilleur de la ville. » Il montre : dans la deuxième se cache un mot de jugement (« le meilleur »), donc c’est une opinion ; la première, on peut la vérifier, donc c’est un fait. Ensuite, six autres cartes, faits et opinions mélangés, sont posées sur la table. Le ou la jeune les trie en deux piles et entoure le mot de jugement dans chaque opinion. Pour finir, il ou elle écrit, à partir d’une carte d’opinion, une phrase sur le même sujet, sans mot de jugement.",
+   "sagen": [
+    "Voici deux phrases sur le même sandwich. Laquelle peut-on vérifier, et laquelle contient un jugement ?",
+    "Trie les cartes en fait et opinion. Dans chaque opinion : quel mot trahit le jugement ? Entoure-le.",
+    "À partir d’une carte d’opinion, écris une phrase sur le même sujet, sans aucun mot de jugement."
+   ],
+   "wennEsKippt": "Si le ou la jeune bloque sur une carte, l’adulte la lit à voix haute et demande : « Ici, on juge quelque chose, ou on dit seulement quelque chose qu’on peut vérifier ? » Si écrire est trop long, la phrase sans mot de jugement se dit simplement à l’oral.",
+   "kurz": "Trier des cartes · entourer le mot de jugement · phrase neutre",
+   "vorbereitung": "Écrire 8 cartes (2 pour montrer, 6 à trier), p. ex. « La salle a 20 places. » · « La salle est beaucoup trop petite. » · « La pause est trop courte. »"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Fakt oder Meinung? Das Wertungswort",
+    "fr": "Fait ou opinion ? Le mot de jugement"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Inês liest einen Beitrag über eine neue Skatehalle in der Stadt."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Sätze sind Meinungen? Kreuz sie an. Mehrere gehen."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Die Halle hat vier Rampen.",
+      "Die Halle ist die coolste im ganzen Land.",
+      "Der Eintritt kostet 6 Euro.",
+      "Der Eintritt ist viel zu teuer.",
+      "Die Halle öffnet um 14 Uhr.",
+      "Die Musik dort ist furchtbar."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welches Wertungswort steckt in jedem Satz? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Das Eis am Kiosk ist viel zu süß.",
+      "Die Bibliothek ist langweilig.",
+      "Das neue Spiel ist mega.",
+      "Der Bus ist am bequemsten."
+     ],
+     "rechts": [
+      "langweilig",
+      "viel zu süß",
+      "am bequemsten",
+      "mega"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Schreib einen Satz mit Wertungswort über etwas, das du kennst (echt oder erfunden). Dann denselben Gedanken als Fakt."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Meine Meinung, mit Wertungswort:",
+      "Derselbe Gedanke als Fakt:"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Inês lit un article sur une nouvelle salle de skate en ville."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelles phrases sont des opinions ? Coche-les. Plusieurs réponses possibles."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "La salle a quatre rampes.",
+      "La salle est la plus cool du pays.",
+      "L’entrée coûte 6 euros.",
+      "L’entrée est beaucoup trop chère.",
+      "La salle ouvre à 14 h.",
+      "La musique là-bas est horrible."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quel mot de jugement se cache dans chaque phrase ? Relie."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "La glace du kiosque est beaucoup trop sucrée.",
+      "La bibliothèque est ennuyeuse.",
+      "Le nouveau jeu est génial.",
+      "Le bus est le plus confortable."
+     ],
+     "rechts": [
+      "ennuyeuse",
+      "beaucoup trop sucrée",
+      "le plus confortable",
+      "génial"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Écris une phrase avec un mot de jugement sur quelque chose que tu connais (vrai ou inventé). Puis la même idée sous forme de fait."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Mon opinion, avec un mot de jugement :",
+      "La même idée sous forme de fait :"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Karten sortieren · Wertungswort einkreisen · Satz ohne Urteil",
+  "vorbereitung": "8 Karten schreiben (2 zum Vormachen, 6 zum Sortieren), z. B. „Die Halle hat 20 Plätze.“ · „Die Halle ist viel zu klein.“ · „Die Pause ist zu kurz.“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Mensa: Urteil über den Tagesteller",
+      "text": "In der Mensa sagt jemand: „Der Tagesteller ist heute das Ekligste überhaupt.“ Du fragst dich, was daran sich überhaupt prüfen lässt."
+     },
+     {
+      "kurz": "Plakat: bester Verein",
+      "text": "Im Bus hängt ein Plakat: „Der beste Sportverein der Stadt – schon 200 Mitglieder!“ Du überlegst, welcher Teil Urteil ist und welcher Zahl."
+     }
+    ],
+    "versuch": "Achte diese Woche einmal auf ein Wertungswort in einem Satz, den du hörst, z. B. „mega“ oder „viel zu“.",
+    "probe": "Inês liest im Chat: „Das Konzert war das beste aller Zeiten.“ Ihr Freund schreibt: „Es dauerte zwei Stunden.“ Was könnte Inês mit dem Wertungswort-Check sagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Cantine : avis du plat",
+      "text": "À la cantine, quelqu’un dit : « Le plat du jour est le truc le plus dégoûtant du monde. » Tu te demandes ce qu’on peut vraiment vérifier là-dedans."
+     },
+     {
+      "kurz": "Affiche : le meilleur club",
+      "text": "Dans le bus, une affiche dit : « Le meilleur club de sport de la ville – déjà 200 membres ! » Tu cherches quelle partie est un avis et laquelle un chiffre."
+     }
+    ],
+    "versuch": "Cette semaine, fais attention une fois à un mot de jugement dans une phrase que tu entends, par exemple « trop bien » ou « beaucoup trop ».",
+    "probe": "Inês lit dans le chat : « Le concert était le meilleur de tous les temps. » Son ami écrit : « Il a duré deux heures. » Que pourrait dire Inês avec le mot de jugement ?"
+   }
+  },
+  "linie": {
+   "id": "lernstrategien-12-18-c",
+   "nr": 1,
+   "faden": {
+    "de": "Fakten von Meinungen trennen – mit dem Wertungswort-Check",
+    "fr": "Séparer les faits des opinions – avec le mot de jugement"
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:werbespot-zerlegen",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Den Werbespot zerlegen",
+  "text": "Die Fachkraft liest einen erfundenen Radio-Spot vor: „Die Nova-Sneaker: nur 59 Euro, in 12 Farben und die bequemsten Schuhe aller Zeiten – leider fast ausverkauft!“ Der oder die Jugendliche teilt ein Blatt mit einem Strich: links, was sich nachprüfen lässt (59 Euro, 12 Farben), rechts die Wertungswörter, also Wörter, die ein Urteil ausdrücken (nur, bequemsten, leider). Auch gemischte Sätze werden so geteilt. Dann tauschen die Rollen: Er oder sie schreibt zwei Spot-Sätze für erfundene Kopfhörer, in denen Fakt und Urteil gemischt sind, und die Fachkraft teilt sie.",
+  "sagen": [
+   "Ich lese dir einen Radio-Spot vor. Schreib links, was sich prüfen lässt, und rechts die Wertungswörter.",
+   "Auch kleine Wörter wie „nur“ oder „leider“ bewerten etwas. Welche Zahl bleibt dann links stehen?",
+   "Jetzt du: Schreib zwei Spot-Sätze für Kopfhörer, in denen beides gemischt ist. Ich teile sie."
+  ],
+  "wennEsKippt": "Ist der Spot zu schnell, liest die Fachkraft Satz für Satz und hält nach jedem an. Fällt dem oder der Jugendlichen kein eigener Spot ein, wählt er oder sie zwei Satzanfänge („Diese Kopfhörer sind …“, „Sie kosten …“) und ergänzt sie.",
+  "werkzeug": {
+   "de": "Wertungswort-Check: gemischte Sätze in Fakt und Meinung teilen",
+   "fr": "Mot de jugement : séparer fait et opinion dans une même phrase"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "lernen",
+   "medien"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-58",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "schreiben"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Décortiquer une pub radio",
+   "text": "L’adulte lit une pub radio inventée : « Les Nova : seulement 59 euros, 12 coloris et les baskets les plus confortables de tous les temps – hélas presque épuisées ! » Le ou la jeune trace un trait au milieu d’une feuille : à gauche ce qu’on peut vérifier (59 euros, 12 coloris), à droite les mots de jugement, c’est-à-dire les mots qui expriment un avis (seulement, les plus confortables, hélas). Les phrases mixtes se coupent de la même façon. Puis on échange les rôles : il ou elle écrit deux phrases de pub pour des écouteurs inventés, mêlant fait et jugement, et l’adulte les sépare.",
+   "sagen": [
+    "Je te lis une pub radio. À gauche, écris ce qu’on peut vérifier ; à droite, les mots de jugement.",
+    "Même les petits mots comme « seulement » ou « hélas » jugent quelque chose. Quel chiffre reste alors à gauche ?",
+    "À toi : écris deux phrases de pub pour des écouteurs, avec fait et jugement mélangés. Je les sépare."
+   ],
+   "wennEsKippt": "Si la pub va trop vite, l’adulte lit phrase par phrase et s’arrête après chacune. Si le ou la jeune n’a pas d’idée, il ou elle choisit deux débuts de phrase (« Ces écouteurs sont … », « Ils coûtent … ») et les complète.",
+   "kurz": "Pub radio · fait à gauche, jugement à droite · sa propre pub"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Fakt und Wertung im selben Satz",
+    "fr": "Fait et jugement dans la même phrase"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Mehdi liest den Aushang einer neuen Pizzeria ganz genau."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Sätze enthalten Fakt und Wertung zugleich? Kreuz sie an. Mehrere gehen."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Die Pizza kostet 7 Euro.",
+      "Die Pizza kostet nur 7 Euro.",
+      "Die Pizza ist die beste der Stadt.",
+      "Die Pizzeria öffnet um 11 Uhr.",
+      "Die Pizzeria hat 12 Sorten, die sehr lecker sind."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welches kleine Wertungswort steckt in jedem Satz? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Der Teller kostet nur 9 Euro.",
+      "Das Lokal ist sogar sonntags offen.",
+      "Der Salat ist leider aus."
+     ],
+     "rechts": [
+      "leider",
+      "nur",
+      "sogar"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Teile den Satz in Fakt und Wertung."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "„Der Akku hält nur 8 Stunden.“ Das lässt sich prüfen:",
+      "Das ist Wertung:"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Ein Spruch aus Werbung oder Chat, den du kennst (echt oder erfunden): Welches kleine Wertungswort steckt drin?"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Der Spruch mit diesem Wertungswort:"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Mehdi lit très attentivement l’affiche d’une nouvelle pizzeria."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelles phrases contiennent un fait et un jugement à la fois ? Coche-les. Plusieurs réponses possibles."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "La pizza coûte 7 euros.",
+      "La pizza ne coûte que 7 euros.",
+      "C’est la meilleure pizza de la ville.",
+      "La pizzeria ouvre à 11 h.",
+      "La pizzeria propose 12 sortes, qui sont très bonnes."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quel petit mot de jugement se cache dans chaque phrase ? Relie."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Le plat coûte seulement 9 euros.",
+      "Le restaurant est même ouvert le dimanche.",
+      "La salade est malheureusement épuisée."
+     ],
+     "rechts": [
+      "malheureusement",
+      "seulement",
+      "même"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Sépare la phrase en fait et jugement."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "« La batterie ne tient que 8 heures. » Ce qu’on peut vérifier :",
+      "Ce qui est un jugement :"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Un slogan de pub ou un message que tu connais (vrai ou inventé) : quel petit mot de jugement s’y cache ?"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Le slogan avec ce mot de jugement :"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Radio-Spot hören · Fakt links, Wertung rechts · eigener Spot",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Online-Shop: Sneaker-Angebot",
+      "text": "Im Online-Shop steht: „Nur 59 Euro – die bequemsten Sneaker aller Zeiten!“ Dein Kumpel will sofort bestellen."
+     },
+     {
+      "kurz": "Verein: Ansage vor dem Spiel",
+      "text": "Vor dem Spiel sagt der Trainer: „Die Gegner sind schwach, wir haben schon dreimal gegen sie gewonnen.“"
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einer Werbung einen Satz in Fakt und Wertung zu teilen, z. B. bei „nur 9 Euro“.",
+    "probe": "Yanis hört einen Radio-Spot: „Das Handy kostet nur 199 Euro und ist das schnellste überhaupt.“ Was könnte Yanis mit dem Wertungswort-Check trennen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Boutique en ligne : baskets",
+      "text": "Dans la boutique en ligne, on lit : « Seulement 59 euros – les baskets les plus confortables de tous les temps ! » Ton pote veut commander tout de suite."
+     },
+     {
+      "kurz": "Club : annonce d’avant-match",
+      "text": "Avant le match, l’entraîneur dit : « Les adversaires sont faibles, on a déjà gagné trois fois contre eux. »"
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de séparer, dans une pub, une phrase en fait et jugement, par exemple pour « seulement 9 euros ».",
+    "probe": "Yanis entend une pub radio : « Le téléphone coûte seulement 199 euros et c’est le plus rapide de tous. » Que pourrait séparer Yanis avec le mot de jugement ?"
+   }
+  },
+  "linie": {
+   "id": "lernstrategien-12-18-c",
+   "nr": 2,
+   "faden": {
+    "de": "Fakten von Meinungen trennen – mit dem Wertungswort-Check",
+    "fr": "Séparer les faits des opinions – avec le mot de jugement"
+   },
+   "bruecke": {
+    "de": "Du hast beim Wertungswort-Check Sätze in Fakt und Meinung sortiert. Heute teilst du auch gemischte Sätze, in denen beides steckt.",
+    "fr": "Tu as trié des phrases en faits et opinions avec le mot de jugement. Aujourd’hui, tu sépares aussi des phrases mixtes, où les deux se mélangent."
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:meinung-mit-fakt-belegen",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Meinung mit Fakt belegen",
+  "text": "Die Fachkraft gibt eine erfundene Kurzkritik zu einem Handyspiel mit sechs Sätzen, z. B. „Das Spiel hat 40 Level und kostet 3 Euro. Die Grafik ist einfach genial, aber die Level sind nach zehn Minuten öde.“ Der oder die Jugendliche markiert allein: Fakten grün, Wertungswörter orange. Dann wählt er oder sie die stärkste Meinung und macht daraus einen prüfbaren Satz („öde“ → „Nach zehn Minuten wiederholen sich die Aufgaben“). Zum Schluss schreibt er oder sie eine Mini-Kritik zu etwas Eigenem: ein Fakt, eine Meinung und ein „weil“, das die Meinung mit einem Fakt stützt.",
+  "sagen": [
+   "Hier ist eine Kritik zu einem Spiel. Markier allein: Fakten grün, Wertungswörter orange.",
+   "Nimm die stärkste Meinung. Welche Beobachtung steckt dahinter, die man nachprüfen könnte?",
+   "Schreib jetzt eine Mini-Kritik zu etwas Eigenem: ein Fakt, eine Meinung und ein „weil“ mit einem Fakt."
+  ],
+  "wennEsKippt": "Fällt das Markieren schwer, liest die Fachkraft den ersten Satz laut vor und fragt, ob er sich prüfen lässt; den Rest macht der oder die Jugendliche allein. Fällt nichts Eigenes ein, wählt er oder sie etwas Erfundenes, z. B. eine Pizzeria oder einen Skatepark.",
+  "werkzeug": {
+   "de": "Wertungswort-Check: allein prüfen, Meinung mit Fakt belegen",
+   "fr": "Mot de jugement : en autonomie, appuyer l’opinion sur un fait"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "lernen",
+   "medien"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-58",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "lesen",
+   "schreiben"
+  ],
+  "material": [
+   "papier",
+   "buntstifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Appuyer une opinion sur un fait",
+   "text": "L’adulte donne une courte critique inventée d’un jeu sur téléphone, en six phrases, par exemple : « Le jeu a 40 niveaux et coûte 3 euros. Les graphismes sont carrément géniaux, mais les niveaux sont ennuyeux au bout de dix minutes. » Le ou la jeune marque seul ou seule : les faits en vert, les mots de jugement en orange. Puis il ou elle choisit l’opinion la plus forte et en fait une phrase vérifiable (« ennuyeux » → « Au bout de dix minutes, les tâches se répètent »). Pour finir, il ou elle écrit une mini-critique sur quelque chose de personnel : un fait, une opinion et un « parce que » qui appuie l’opinion sur un fait.",
+   "sagen": [
+    "Voici la critique d’un jeu. Marque seul ou seule : les faits en vert, les mots de jugement en orange.",
+    "Prends l’opinion la plus forte. Quelle observation se cache derrière, qu’on pourrait vérifier ?",
+    "Écris maintenant une mini-critique sur quelque chose de personnel : un fait, une opinion et un « parce que » avec un fait."
+   ],
+   "wennEsKippt": "Si marquer est difficile, l’adulte lit la première phrase à voix haute et demande si on peut la vérifier ; le ou la jeune fait le reste seul ou seule. S’il ou elle ne trouve rien de personnel, il ou elle prend quelque chose d’inventé, par exemple une pizzeria ou un skatepark.",
+   "kurz": "Marquer une critique · rendre l’avis vérifiable · mini-critique",
+   "vorbereitung": "Écrire sur une feuille la critique d’un jeu inventé en 6 phrases : 3 faits, 3 jugements."
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Meinung prüfbar machen",
+    "fr": "Rendre une opinion vérifiable"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Lara liest die Bewertung eines Cafés. Darin steht: „30 Plätze, geöffnet ab 8 Uhr. Bester Kaffee weit und breit, aber lächerlich hohe Preise.“"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Was lässt sich nachprüfen? Kreuz an. Mehrere gehen."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "30 Plätze",
+      "geöffnet ab 8 Uhr",
+      "bester Kaffee weit und breit",
+      "lächerlich hohe Preise"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Hinter jedem Wertungswort steckt eine Beobachtung. Welche macht aus dem Urteil einen prüfbaren Satz? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Lächerlich hohe Preise",
+      "Immer überfüllt",
+      "Ewig langsame Bedienung"
+     ],
+     "rechts": [
+      "Ich habe 25 Minuten auf mein Getränk gewartet.",
+      "Ein Kaffee kostet 6 Euro, im Café nebenan 3 Euro.",
+      "Um 12 Uhr waren 30 von 30 Plätzen besetzt."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Schreib eine Mini-Kritik zu etwas aus deinem Alltag (echt oder erfunden)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Ein Fakt:",
+      "Eine Meinung, die ich mit einem Fakt belege: … , weil …"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Lara lit l’avis sur un café. On y trouve : « 30 places, ouvert dès 8 h. Meilleur café à des kilomètres, mais des prix ridiculement élevés. »"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Qu’est-ce qu’on peut vérifier ? Coche. Plusieurs réponses possibles."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "30 places",
+      "ouvert dès 8 h",
+      "meilleur café à des kilomètres",
+      "des prix ridiculement élevés"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Derrière chaque mot de jugement se cache une observation. Laquelle transforme le jugement en phrase vérifiable ? Relie."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Des prix ridicules",
+      "Toujours bondé",
+      "Un service interminable"
+     ],
+     "rechts": [
+      "J’ai attendu 25 minutes pour ma boisson.",
+      "Un café coûte 6 euros, dans le café d’à côté 3 euros.",
+      "À midi, 30 places sur 30 étaient occupées."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Écris une mini-critique sur quelque chose de ton quotidien (vrai ou inventé)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Un fait :",
+      "Une opinion que j’appuie sur un fait : … , parce que …"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Kritik markieren · Meinung prüfbar machen · Mini-Kritik",
+  "vorbereitung": "Kurzkritik zu einem erfundenen Handyspiel mit 6 Sätzen auf Papier schreiben: 3 Fakten, 3 Urteile.",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: Pizzeria-Tipp",
+      "text": "Im Chat schreibt dein Kumpel: „Die neue Pizzeria ist mega, da müssen wir hin.“ Du willst wissen, woran er das festmacht."
+     },
+     {
+      "kurz": "Praktikum: Rückmeldung",
+      "text": "Im Praktikum sagt dein Betreuer: „Das war zu langsam.“ Du fragst dich, was genau er gesehen hat und woran er es misst."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einem Urteil nachzufragen: „Woran siehst du das?“ Und belege dein eigenes mit einem Fakt.",
+    "probe": "Sofia schreibt in eine Bewertung: „Die Jugendherberge war schrecklich.“ Wie könnte Sofia mit dem Wertungswort-Check ihre Meinung mit einem Fakt belegen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : bon plan pizzeria",
+      "text": "Dans le chat, ton pote écrit : « La nouvelle pizzeria est trop bien, on doit y aller. » Tu veux savoir sur quoi il se base."
+     },
+     {
+      "kurz": "Stage : un retour",
+      "text": "Pendant ton stage, ton maître de stage dit : « C’était trop lent. » Tu te demandes ce qu’il a vu exactement et à quoi il le mesure."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de demander, face à un jugement : « À quoi tu vois ça ? » Et appuie le tien sur un fait.",
+    "probe": "Sofia écrit dans un avis : « L’auberge de jeunesse était horrible. » Comment Sofia pourrait-elle appuyer son opinion sur un fait avec le mot de jugement ?"
+   }
+  },
+  "linie": {
+   "id": "lernstrategien-12-18-c",
+   "nr": 3,
+   "faden": {
+    "de": "Fakten von Meinungen trennen – mit dem Wertungswort-Check",
+    "fr": "Séparer les faits des opinions – avec le mot de jugement"
+   },
+   "bruecke": {
+    "de": "Du hast gemischte Sätze geteilt. Heute prüfst du einen ganzen Text allein und belegst eine Meinung mit einem Fakt.",
+    "fr": "Tu as séparé des phrases mixtes. Aujourd’hui, tu examines seul ou seule un texte entier et tu appuies une opinion sur un fait."
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:mir-ist-wichtig",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Mir ist … wichtig",
+  "text": "Die Fachkraft legt acht Wertkarten aus: Ehrlichkeit, Humor, Ruhe, Fairness, Freiheit, Fleiß, Mut, Treue. Sie zeigt den Wichtig-Satz an einem erfundenen Beispiel: „Mir ist Fairness wichtig, weil ich es blöd finde, wenn jemand bevorzugt wird. Man sieht das daran, dass ich beim Spielen abwechselnd anfange.“ Der oder die Jugendliche sucht eine Karte, die passt (für sich oder für eine erfundene Person), und baut den Satz: Wert, Grund, woran man es sieht. Dann folgt eine zweite Karte. Die Fachkraft sagt zurück, was sie in den Sätzen gehört hat.",
+  "sagen": [
+   "Hier liegen acht Wörter für das, was Menschen wichtig sein kann. Ich zeige dir einen Satz mit einem davon.",
+   "Such eine Karte, die zu dir oder zu einer erfundenen Person passt. Dann: Mir ist … wichtig, weil …",
+   "Und woran sieht man das? Fang an mit: Man sieht es daran, dass ich …"
+  ],
+  "wennEsKippt": "Findet der oder die Jugendliche keine Karte, wählt die Fachkraft zwei aus und fragt, bei welcher der Satz leichter fällt. Ist es zu persönlich, baut er oder sie den Satz für eine erfundene Person wie Luca; „Pass“ ist immer erlaubt.",
+  "werkzeug": {
+   "de": "Wichtig-Satz: Wert, Grund und woran man es sieht",
+   "fr": "Phrase-valeur : la valeur, la raison, et à quoi on le voit"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "thema": [
+   "selbstwert",
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "K-34",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "karten",
+   "gespraech"
+  ],
+  "material": [
+   "karten",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Pour moi, … est important",
+   "text": "L’adulte étale huit cartes de valeurs : honnêteté, humour, calme, équité, liberté, application, courage, fidélité. Il montre la phrase-valeur avec un exemple inventé : « Pour moi, l’équité est importante, parce que je trouve ça nul quand quelqu’un est favorisé. On le voit à ceci : au jeu, je laisse l’autre commencer une fois sur deux. » Le ou la jeune choisit une carte qui lui parle (pour lui-même ou pour un personnage inventé) et construit la phrase : la valeur, la raison, à quoi on le voit. Puis on recommence avec une deuxième carte. L’adulte redit ce qu’il a entendu dans les phrases.",
+   "sagen": [
+    "Voici huit mots pour ce qui peut compter pour quelqu’un. Je te montre une phrase avec l’un d’eux.",
+    "Choisis une carte qui te va, ou qui va à un personnage inventé. Puis : Pour moi, … est important, parce que …",
+    "Et à quoi le voit-on ? Commence par : On le voit à ceci : je …"
+   ],
+   "wennEsKippt": "Si le ou la jeune ne trouve pas de carte, l’adulte en choisit deux et demande avec laquelle la phrase est la plus facile. Si c’est trop personnel, il ou elle construit la phrase pour un personnage inventé comme Luca ; « Je passe » est toujours permis.",
+   "kurz": "Cartes de valeurs · valeur, raison, preuve · deuxième phrase",
+   "vorbereitung": "Écrire 8 cartes de valeurs : honnêteté · humour · calme · équité · liberté · application · courage · fidélité"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Die drei Teile des Wichtig-Satzes",
+    "fr": "Les trois parties de la phrase-valeur"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Diogo erzählt von sich: „Mir ist Ehrlichkeit wichtig, weil ich dann weiß, woran ich bin. Man sieht das daran, dass ich auch Unbequemes sage.“"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welcher Teil ist welcher? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Ehrlichkeit",
+      "weil ich dann weiß, woran ich bin",
+      "dass ich auch Unbequemes sage"
+     ],
+     "rechts": [
+      "woran man es sieht",
+      "der Wert",
+      "der Grund"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Sofia sagt: „Mir ist Humor wichtig.“ Was fehlt noch? Kreuz an. Mehrere gehen."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "der Grund (weil …)",
+      "woran man es sieht",
+      "der Wert",
+      "ein Beweis, dass es stimmt"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Ergänze den Satz für dich oder für eine erfundene Person."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Mir ist … wichtig, weil …",
+      "Man sieht das daran, dass …"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Diogo parle de lui : « Pour moi, l’honnêteté est importante, parce que je sais alors à quoi m’en tenir. On le voit à ceci : je dis aussi des choses gênantes. »"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelle partie est laquelle ? Relie."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "l’honnêteté",
+      "parce que je sais alors à quoi m’en tenir",
+      "que je dis aussi des choses gênantes"
+     ],
+     "rechts": [
+      "à quoi on le voit",
+      "la valeur",
+      "la raison"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Sofia dit : « Pour moi, l’humour est important. » Que manque-t-il ? Coche. Plusieurs réponses possibles."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "la raison (parce que …)",
+      "à quoi on le voit",
+      "la valeur",
+      "une preuve que c’est vrai"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Complète la phrase pour toi ou pour un personnage inventé."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Pour moi, … est important, parce que …",
+      "On le voit à ceci : je …"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Wertkarten wählen · Wert, Grund, Beleg sagen · zweiter Satz",
+  "vorbereitung": "8 Wertkarten schreiben: Ehrlichkeit · Humor · Ruhe · Fairness · Freiheit · Fleiß · Mut · Treue",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: Was ist dir wichtig?",
+      "text": "Beim Kennenlernen im Chat fragt jemand: „Was ist dir eigentlich wichtig?“ Du willst mehr als „keine Ahnung“ antworten."
+     },
+     {
+      "kurz": "Training: Frage der Trainerin",
+      "text": "Im Verein fragt die Trainerin, was dir beim Training wichtig ist, damit sie dich passend einteilt."
+     }
+    ],
+    "versuch": "Achte diese Woche einmal darauf, was dir bei einer Entscheidung wichtig war, und sag es dir in einem Satz: „Mir ist … wichtig, weil …“",
+    "probe": "Luca soll beim Probetag in einer Werkstatt sagen, was ihm wichtig ist. Er weiß nur: „Irgendwas mit Freunden.“ Was könnte Luca mit dem Wichtig-Satz sagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : ce qui compte",
+      "text": "En faisant connaissance dans le chat, quelqu’un demande : « Au fait, qu’est-ce qui est important pour toi ? » Tu veux répondre mieux que « aucune idée »."
+     },
+     {
+      "kurz": "Club : question de l’entraîneuse",
+      "text": "Au club, l’entraîneuse te demande ce qui compte pour toi à l’entraînement, pour mieux te placer."
+     }
+    ],
+    "versuch": "Repère cette semaine ce qui comptait pour toi dans une décision et dis-le en une phrase : « Pour moi, … est important, parce que … »",
+    "probe": "Luca doit dire, pendant un jour d’essai dans un atelier, ce qui compte pour lui. Il sait seulement : « Un truc avec les amis. » Que pourrait dire Luca avec la phrase-valeur ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-c",
+   "nr": 1,
+   "faden": {
+    "de": "Sagen, was mir wichtig ist – mit dem Wichtig-Satz",
+    "fr": "Dire ce qui compte pour moi – avec la phrase-valeur"
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:zwei-werte-auf-der-waage",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Zwei Werte auf der Waage",
+  "text": "Die Fachkraft zeichnet eine Waage mit zwei Schalen und liest einen erfundenen Fall: „Mehdi hat dem Verein für Samstag zugesagt. Am selben Tag laden Freunde ihn zum Bowling ein.“ Der oder die Jugendliche schreibt in jede Schale den Wert dahinter (Verlässlichkeit, Spaß mit Freunden), entscheidet für Mehdi und sagt den Wichtig-Satz: „Mir ist … wichtig, weil … Deshalb …“ Ein zweiter Fall hat andere Werte: Sofia soll sagen, wie ihr der noch unfertige Song eines Freundes gefällt (Ehrlichkeit gegen Rücksicht). Zum Schluss: Welche zwei Werte ziehen bei dir manchmal auseinander (echt oder erfunden)?",
+  "sagen": [
+   "Mehdi hat zwei gute Gründe, die in verschiedene Richtungen ziehen. Welcher Wert steckt hinter jedem? Schreib sie in die Schalen.",
+   "Entscheide für Mehdi und sag den Wichtig-Satz: Mir ist … wichtig, weil … Deshalb …",
+   "Welche zwei Werte ziehen bei dir manchmal auseinander? Echt oder erfunden, du kannst auch passen."
+  ],
+  "wennEsKippt": "Fällt die Entscheidung schwer, darf die Waage im Gleichgewicht bleiben: Der oder die Jugendliche sagt, was Mehdi vorher klären könnte (z. B. den Verein fragen, ob er später kommen darf). Will er oder sie nichts Eigenes nennen, bleibt es bei Mehdi und Sofia, und die Fachkraft macht ein eigenes Beispiel vor.",
+  "werkzeug": {
+   "de": "Wichtig-Satz: zwei Werte abwägen, einen begründen",
+   "fr": "Phrase-valeur : peser deux valeurs, en justifier une"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "selbstwert",
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "K-34",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "denkmodell",
+   "gespraech"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Deux valeurs sur la balance",
+   "text": "L’adulte dessine une balance à deux plateaux et lit un cas inventé : « Mehdi a promis au club d’être là samedi. Le même jour, des amis l’invitent au bowling. » Le ou la jeune écrit dans chaque plateau la valeur qui se cache derrière (fiabilité, plaisir avec les amis), tranche pour Mehdi et dit la phrase-valeur : « Pour moi, … est important, parce que … C’est pourquoi … » Un deuxième cas oppose d’autres valeurs : Sofia doit dire ce qu’elle pense d’une chanson encore inachevée d’un ami (honnêteté contre égards). Pour finir : quelles deux valeurs tirent parfois en sens contraire chez toi (vrai ou inventé) ?",
+   "sagen": [
+    "Mehdi a deux bonnes raisons qui tirent dans des sens opposés. Quelle valeur se cache derrière chacune ? Écris-les dans les plateaux.",
+    "Tranche pour Mehdi et dis la phrase-valeur : Pour moi, … est important, parce que … C’est pourquoi …",
+    "Quelles deux valeurs tirent parfois en sens contraire chez toi ? Vrai ou inventé, tu peux aussi passer."
+   ],
+   "wennEsKippt": "Si la décision est difficile, la balance peut rester en équilibre : le ou la jeune dit ce que Mehdi pourrait clarifier avant (par exemple demander au club s’il peut arriver plus tard). S’il ou elle ne veut rien dire de personnel, on reste sur Mehdi et Sofia, et l’adulte donne un exemple personnel.",
+   "kurz": "Dessiner la balance · peser deux valeurs · phrase-valeur"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Wenn zwei Werte ziehen",
+    "fr": "Quand deux valeurs tirent"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Yanis hat einem Freund versprochen, ihm beim Lernen zu helfen. Am selben Nachmittag spielt seine Lieblingsband ein Konzert in der Stadt."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welcher Wert steckt hinter jedem Satz? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "„Ich habe es versprochen.“",
+      "„Darauf freue ich mich so.“",
+      "„Er braucht mich gerade.“"
+     ],
+     "rechts": [
+      "Hilfsbereitschaft",
+      "Verlässlichkeit",
+      "Freude"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Yanis entscheidet sich für den Freund. Welcher Wichtig-Satz hat Wert, Grund und „Deshalb …“? Kreuz einen an."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Mir ist Verlässlichkeit wichtig, weil ich Zusagen ernst nehme. Deshalb verzichte ich auf das Konzert.",
+      "Ich bleibe bei meinem Freund, das ist halt so.",
+      "Mir ist Verlässlichkeit wichtig, weil ich Zusagen ernst nehme.",
+      "Deshalb verzichte ich auf das Konzert."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Zwei Werte, die bei dir manchmal ziehen (echt oder erfunden):"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Zwei Werte, die bei mir ziehen:",
+      "Dafür entscheide ich mich: Mir ist … wichtig, weil … Deshalb …"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Yanis a promis à un ami de l’aider à réviser. Le même après-midi, son groupe préféré donne un concert en ville."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelle valeur se cache derrière chaque phrase ? Relie."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "« J’ai promis. »",
+      "« Je m’en réjouis tellement. »",
+      "« Il a besoin de moi maintenant. »"
+     ],
+     "rechts": [
+      "l’entraide",
+      "la fiabilité",
+      "la joie"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Yanis choisit son ami. Quelle phrase-valeur contient la valeur, la raison et « C’est pourquoi … » ? Coche une seule."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Pour moi, la fiabilité est importante, parce que je prends mes promesses au sérieux. C’est pourquoi je renonce au concert.",
+      "Je reste avec mon ami, c’est comme ça.",
+      "Pour moi, la fiabilité est importante, parce que je prends mes promesses au sérieux.",
+      "C’est pourquoi je renonce au concert."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Deux valeurs qui tirent parfois en sens contraire chez toi (vrai ou inventé) :"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Deux valeurs qui tirent chez moi :",
+      "Je choisis ceci : Pour moi, … est important, parce que … C’est pourquoi …"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Waage zeichnen · zwei Werte abwägen · Wichtig-Satz mit „Deshalb“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Kumpels Bild: ehrlich oder nett?",
+      "text": "Dein Kumpel zeigt dir stolz ein selbst gemaltes Bild. Dir gefällt es nicht besonders, und er fragt, was du denkst."
+     },
+     {
+      "kurz": "Test Freitag, Training heute",
+      "text": "Du hast am Freitag einen Test, aber heute ist auch dein Lieblingstraining. Beides passt nicht in den Nachmittag."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einer Entscheidung die zwei Werte zu benennen, die ziehen: „Mir ist … wichtig, deshalb …“",
+    "probe": "Sofia bekommt einen Nebenjob im Café angeboten. Er würde ihr Training am Freitag kosten. Was könnte Sofia mit dem Wichtig-Satz abwägen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Dessin : franc ou poli",
+      "text": "Ton pote te montre fièrement un dessin qu’il a fait. Il ne te plaît pas trop, et il te demande ce que tu en penses."
+     },
+     {
+      "kurz": "Test vendredi, entraînement aujourd’hui",
+      "text": "Tu as un test vendredi, mais aujourd’hui, il y a aussi ton entraînement préféré. Les deux ne tiennent pas dans l’après-midi."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de nommer, lors d’une décision, les deux valeurs qui tirent : « Pour moi, … est important, c’est pourquoi … »",
+    "probe": "On propose à Sofia un petit job dans un café. Il lui ferait manquer l’entraînement du vendredi. Qu’est-ce que Sofia pourrait peser avec la phrase-valeur ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-c",
+   "nr": 2,
+   "faden": {
+    "de": "Sagen, was mir wichtig ist – mit dem Wichtig-Satz",
+    "fr": "Dire ce qui compte pour moi – avec la phrase-valeur"
+   },
+   "bruecke": {
+    "de": "Du hast mit dem Wichtig-Satz gesagt, was dir wichtig ist und warum. Heute wiegst du zwei Werte gegeneinander ab.",
+    "fr": "Tu as dit avec la phrase-valeur ce qui compte pour toi et pourquoi. Aujourd’hui, tu mets deux valeurs en balance."
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:was-ist-dir-wichtig",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Was ist dir wichtig? Das Kennenlern-Gespräch",
+  "text": "Die Fachkraft spielt eine Betreuerin im Praktikum, die jemanden Neues kennenlernen will, und stellt drei Fragen: „Was ist dir bei der Arbeit wichtig?“, „Was ist dir im Umgang mit anderen wichtig?“, „Was ist dir in deiner freien Zeit wichtig?“ Der oder die Jugendliche antwortet jedes Mal mit dem Wichtig-Satz (Wert, Grund, woran man es sieht), ohne Karte, notfalls mit drei Stichwörtern auf Papier. Danach tauschen die Rollen: Er oder sie fragt, die Fachkraft antwortet, und er oder sie sagt, welcher Teil gefehlt hat. Zum Schluss: Welche Antwort würdest du so im echten Gespräch geben?",
+  "sagen": [
+   "Stell dir vor, ich bin deine Betreuerin im Praktikum. Ich frage: Was ist dir bei der Arbeit wichtig? Antworte mit dem Wichtig-Satz.",
+   "Du darfst kurz nachdenken oder passen. Eine erfundene Antwort, die du passend findest, geht auch.",
+   "Jetzt fragst du mich. Hör hin: Welcher Teil des Wichtig-Satzes fehlt in meiner Antwort?"
+  ],
+  "wennEsKippt": "Gerät der oder die Jugendliche ins Stocken, legt die Fachkraft zwei Wertwörter auf Papier zur Auswahl, und der Satz wird nur mit einem davon gebaut. Wird die Frage zu persönlich, antwortet er oder sie als erfundene Person (z. B. Inês) oder passt.",
+  "werkzeug": {
+   "de": "Wichtig-Satz: frei im Gespräch sagen, ohne Karte",
+   "fr": "Phrase-valeur : la dire librement dans un échange, sans carte"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "selbstwert",
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "K-34",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Qu’est-ce qui compte pour toi ? Faire connaissance",
+   "text": "L’adulte joue une responsable de stage qui veut faire connaissance et pose trois questions : « Qu’est-ce qui est important pour toi au travail ? », « … dans ta façon d’être avec les autres ? », « … pendant ton temps libre ? » Le ou la jeune répond chaque fois par la phrase-valeur (la valeur, la raison, à quoi on le voit), sans carte, au besoin avec trois mots-clés sur une feuille. Puis on échange les rôles : il ou elle pose les questions, l’adulte répond, et le ou la jeune dit quelle partie a manqué. Pour finir : quelle réponse donnerais-tu telle quelle dans une vraie conversation ?",
+   "sagen": [
+    "Imagine que je suis ta responsable de stage. Je demande : qu’est-ce qui est important pour toi au travail ? Réponds avec la phrase-valeur.",
+    "Tu peux réfléchir un moment ou passer. Une réponse inventée qui te paraît juste convient aussi.",
+    "À toi de me questionner. Écoute : quelle partie de la phrase-valeur est absente de ma réponse ?"
+   ],
+   "wennEsKippt": "Si le ou la jeune bloque, l’adulte pose deux mots de valeurs sur une feuille au choix, et la phrase se construit avec un seul. Si la question devient trop personnelle, il ou elle répond comme un personnage inventé (par exemple Inês) ou passe.",
+   "kurz": "Entretien de stage · phrase-valeur sans carte · échange de rôles"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Mein Wichtig-Satz im Gespräch",
+    "fr": "Ma phrase-valeur dans l’échange"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Zoé tritt einem Fußballverein bei. Nach dem ersten Training will die Trainerin sie besser kennenlernen."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Was fehlt in jeder Antwort? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Mir ist Zusammenhalt wichtig. Man sieht es daran, dass ich andere anfeuere.",
+      "Mir ist Fleiß wichtig, weil ich besser werden will.",
+      "Ich komme immer pünktlich, weil sich sonst andere ärgern."
+     ],
+     "rechts": [
+      "woran man es sieht",
+      "der Wert (das Wort dafür)",
+      "der Grund (weil …)"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Schreib Zoés Antwort als Wichtig-Satz."
+    },
+    {
+     "art": "dialog",
+     "zeilen": [
+      {
+       "wer": "Trainerin",
+       "text": "Was ist dir beim Training wichtig?"
+      },
+      {
+       "wer": "Zoé (Wert, Grund, woran man es sieht)"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Wenn dich jemand fragt, was dir wichtig ist (echt oder erfunden):"
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "wenn": "Wenn mich jemand fragt, was mir wichtig ist …",
+     "dann": "dann sage ich: Mir ist … wichtig, weil …"
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Zoé rejoint un club de foot. Après le premier entraînement, l’entraîneuse veut mieux la connaître."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Que manque-t-il dans chaque réponse ? Relie."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Pour moi, la cohésion est importante. On le voit à ceci : j’encourage les autres.",
+      "Pour moi, l’application est importante, parce que je veux progresser.",
+      "Je suis toujours à l’heure, parce que sinon d’autres s’énervent."
+     ],
+     "rechts": [
+      "à quoi on le voit",
+      "la valeur (le mot pour ça)",
+      "la raison (parce que …)"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Écris la réponse de Zoé avec la phrase-valeur."
+    },
+    {
+     "art": "dialog",
+     "zeilen": [
+      {
+       "wer": "Entraîneuse",
+       "text": "Qu’est-ce qui est important pour toi à l’entraînement ?"
+      },
+      {
+       "wer": "Zoé (valeur, raison, à quoi on le voit)"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Quand quelqu’un te demande ce qui compte pour toi (vrai ou inventé) :"
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "wenn": "Si quelqu’un me demande ce qui compte pour moi …",
+     "dann": "alors je dis : Pour moi, … est important, parce que …"
+    }
+   ]
+  },
+  "kurz": "Praktikums-Gespräch · Wichtig-Satz ohne Karte · Rollen tauschen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Jugendtreff: Frage der Leiterin",
+      "text": "Im Jugendtreff fragt dich die Leiterin beim Kennenlernen, was dir wichtig ist. Du hast keine Karte zum Nachsehen."
+     },
+     {
+      "kurz": "Neuer Kumpel: Freunde-Frage",
+      "text": "Ein neuer Kumpel fragt dich: „Was ist dir bei Freunden wichtig?“ Du möchtest mehr sagen als „Spaß haben“."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, in einem Gespräch ohne Karte zu sagen, was dir wichtig ist. Ein Satz mit „weil“ genügt.",
+    "probe": "Diogo schnuppert in einer Schreinerei. Die Meisterin fragt ihn: „Was ist dir bei der Arbeit wichtig?“ Er weiß es, findet aber keine Worte. Was könnte Diogo mit dem Wichtig-Satz sagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Centre de jeunes : question",
+      "text": "Au centre de jeunes, la responsable te demande, pour faire connaissance, ce qui compte pour toi. Tu n’as pas de carte pour t’aider."
+     },
+     {
+      "kurz": "Nouveau pote : question d’amitié",
+      "text": "Un nouveau pote te demande : « Qu’est-ce qui est important pour toi chez des amis ? » Tu voudrais dire plus que « s’amuser »."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de dire, dans une conversation et sans carte, ce qui compte pour toi. Une phrase avec « parce que » suffit.",
+    "probe": "Diogo fait un stage d’essai dans une menuiserie. La patronne lui demande : « Qu’est-ce qui est important pour toi au travail ? » Il le sait, mais ne trouve pas les mots. Que pourrait dire Diogo avec la phrase-valeur ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-c",
+   "nr": 3,
+   "faden": {
+    "de": "Sagen, was mir wichtig ist – mit dem Wichtig-Satz",
+    "fr": "Dire ce qui compte pour moi – avec la phrase-valeur"
+   },
+   "bruecke": {
+    "de": "Du hast zwei Werte abgewogen und eine Entscheidung begründet. Heute sagst du den Wichtig-Satz frei im Gespräch, ohne Karte.",
+    "fr": "Tu as pesé deux valeurs et justifié une décision. Aujourd’hui, tu dis la phrase-valeur librement dans une conversation, sans carte."
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:einladung-in-drei-teilen",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Eine Einladung in drei Teilen",
+  "text": "Die Fachkraft zeigt die drei Teile einer Einladung auf Karten: Vorschlag („Ich gehe am Samstag in die Skatehalle.“), Frage („Hast du Lust mitzukommen?“) und offener Ausweg („Wenn nicht, ist das auch okay.“). Dann liegen drei misslungene Einladungen da: „Komm Samstag einfach mit.“ – „Hast du mal Lust auf irgendwas?“ – „Du kommst doch mit, oder?“ Der oder die Jugendliche sagt jeweils, was fehlt oder drückt, und baut daraus eine Einladung in drei Teilen. Zum Schluss formuliert er oder sie eine eigene für eine erfundene Person und spricht sie laut: freundlich, mit Ausweg.",
+  "sagen": [
+   "Eine gute Einladung hat drei Teile: Vorschlag, Frage und Ausweg. Ich lese dir eine vor.",
+   "Bei diesen drei klappt etwas nicht. Was fehlt, oder was drückt? Bau sie so um, dass Ja und Nein beide leichtfallen.",
+   "Jetzt deine eigene, für eine erfundene Person. Sag sie laut, so freundlich, wie du es meinst."
+  ],
+  "wennEsKippt": "Fällt der Umbau schwer, nennt die Fachkraft nur, was fehlt, und der oder die Jugendliche ergänzt diesen einen Teil. Ist das laute Sprechen peinlich, liest er oder sie die Einladung leise, oder die Fachkraft liest sie vor und lässt sie verbessern.",
+  "werkzeug": {
+   "de": "Einladungs-Satz: Vorschlag, Frage, offener Ausweg",
+   "fr": "Phrase d’invitation : proposition, question, porte ouverte"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "K-27",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-25",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "karten",
+   "gespraech"
+  ],
+  "material": [
+   "karten",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Une invitation en trois parties",
+   "text": "L’adulte montre sur des cartes les trois parties d’une invitation : la proposition (« Samedi, je vais à la salle de skate. »), la question (« Ça te dit de venir ? ») et la porte ouverte, une phrase qui rend le non facile (« Sinon, ce n’est pas grave. »). Puis trois invitations ratées sont posées : « Viens samedi, c’est tout. » – « Ça te dit de faire un truc un jour ? » – « Tu viens, hein ? » Le ou la jeune dit chaque fois ce qui fait défaut ou ce qui met la pression, et en fait une invitation en trois parties. Pour finir, il ou elle formule la sienne pour une personne inventée et la dit à voix haute : gentiment, avec une porte ouverte.",
+   "sagen": [
+    "Une bonne invitation a trois parties : une proposition, une question et une porte ouverte. Je t’en lis une.",
+    "Dans ces trois-là, quelque chose cloche. Qu’est-ce qui fait défaut, ou qui met la pression ? Refais-les pour que oui et non soient faciles.",
+    "Maintenant la tienne, pour une personne inventée. Dis-la à voix haute, aussi gentiment que tu le penses."
+   ],
+   "wennEsKippt": "Si la reformulation est difficile, l’adulte dit seulement ce qui manque et le ou la jeune complète cette partie. Si parler à voix haute gêne, il ou elle lit l’invitation à voix basse, ou l’adulte la lit et la fait améliorer.",
+   "kurz": "Invitation en trois parties · refaire · dire la sienne",
+   "vorbereitung": "Écrire 6 cartes : les trois parties de l’invitation et les trois phrases ratées du texte"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Vorschlag, Frage, Ausweg",
+    "fr": "Proposition, question, porte ouverte"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Lara möchte Mehdi aus dem Verein einladen, mit ihr ein Eis essen zu gehen."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Einladungen sind ein guter Einladungs-Satz, mit Vorschlag, Frage und Ausweg? Kreuz an. Mehrere gehen."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Ich gehe am Freitag ein Eis essen. Magst du mitkommen? Wenn nicht, ist das auch okay.",
+      "Komm am Freitag mit zum Eis.",
+      "Ich gehe am Freitag ein Eis essen. Du kommst doch mit, oder?",
+      "Ich gehe am Samstag in die Eisdiele. Hast du Lust? Sag einfach Bescheid, wenn es nicht passt."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lara schreibt auch Sofia. Welcher Teil ist welcher? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Ich fahre am Mittwoch zur Eisdiele.",
+      "Fährst du mit?",
+      "Wenn du keine Zeit hast, machen wir es ein andermal."
+     ],
+     "rechts": [
+      "Frage",
+      "offener Ausweg",
+      "Vorschlag"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Wen würdest du gern zu etwas einladen (echt oder erfunden)? Schreib die Einladung mit Vorschlag, Frage und Ausweg."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Meine Einladung:"
+     ],
+     "linien": 2
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Lara voudrait inviter Mehdi, du club, à manger une glace avec elle."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelles invitations sont une bonne phrase d’invitation, avec proposition, question et porte ouverte ? Coche. Plusieurs réponses possibles."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Vendredi, je vais manger une glace. Tu veux venir ? Sinon, ce n’est pas grave.",
+      "Viens vendredi manger une glace.",
+      "Vendredi, je vais manger une glace. Tu viens, hein ?",
+      "Samedi, je vais chez le glacier. Ça te dit ? Dis-moi simplement si ça ne va pas."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lara écrit aussi à Sofia. Quelle partie est laquelle ? Relie."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Mercredi, je vais chez le glacier.",
+      "Tu viens ?",
+      "Si tu n’as pas le temps, on le fera une autre fois."
+     ],
+     "rechts": [
+      "question",
+      "porte ouverte",
+      "proposition"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Qui aimerais-tu inviter à faire quelque chose (vrai ou inventé) ? Écris l’invitation avec proposition, question et porte ouverte."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Mon invitation :"
+     ],
+     "linien": 2
+    }
+   ]
+  },
+  "kurz": "Einladung in drei Teilen · misslungene Sätze umbauen · eigene sagen",
+  "vorbereitung": "6 Karten schreiben: die drei Teile der Einladung und die drei misslungenen Sätze aus dem Text",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Nach dem Training: Eis?",
+      "text": "Nach dem Training möchtest du mit jemandem aus dem Verein ein Eis essen gehen, traust dich aber nicht zu fragen."
+     },
+     {
+      "kurz": "Mathe: zusammen lernen",
+      "text": "Vor dem Mathetest möchtest du jemanden fragen, ob ihr zwei nachmittags zusammen lernen könnt."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, eine kleine Einladung zu sagen oder zu schreiben: Vorschlag, Frage und ein Ausweg zum Nein.",
+    "probe": "Yanis möchte Lara fragen, ob sie nach der Schule mit ihm zum Kicker geht. Er ist nervös. Was könnte Yanis mit dem Einladungs-Satz sagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Après l’entraînement : glace ?",
+      "text": "Après l’entraînement, tu aimerais aller manger une glace avec quelqu’un du club, mais tu n’oses pas demander."
+     },
+     {
+      "kurz": "Maths : réviser ensemble",
+      "text": "Avant le contrôle de maths, tu voudrais demander à quelqu’un si vous pouvez réviser ensemble l’après-midi."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de dire ou d’écrire une petite invitation : une proposition, une question et une porte ouverte pour le non.",
+    "probe": "Yanis voudrait demander à Lara si elle vient au baby-foot avec lui après l’école. Il est nerveux. Que pourrait dire Yanis avec la phrase d’invitation ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-d",
+   "nr": 1,
+   "faden": {
+    "de": "Jemanden freundlich einladen – mit dem Einladungs-Satz",
+    "fr": "Inviter quelqu’un gentiment – avec la phrase d’invitation"
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:ja-nein-vielleicht",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Ja, Nein oder Vielleicht",
+  "text": "Die Fachkraft spielt Luca, der eingeladen wird. Der oder die Jugendliche lädt ihn mit dem Einladungs-Satz ein (Vorschlag, Frage, offener Ausweg), z. B. zur Skatehalle am Samstag. Luca antwortet dreimal anders: „Ja, gern!“, „Nein, am Samstag habe ich Training.“ und „Mal sehen …“ Der oder die Jugendliche reagiert jedes Mal freundlich: bei Ja etwas Konkretes ausmachen, ein Nein annehmen und die Tür offen lassen, bei „Mal sehen“ Zeit geben, ohne zu drängeln. Dann tauschen die Rollen: Die Fachkraft lädt ein, und der oder die Jugendliche sagt freundlich Nein.",
+  "sagen": [
+   "Ich bin Luca. Lad mich mit deinem Einladungs-Satz ein, ich antworte jedes Mal anders.",
+   "Luca sagt Nein. Wie klingt eine Antwort, bei der er sich trotzdem nett angesprochen fühlt?",
+   "Jetzt tauschen wir: Ich lade dich ein, und du sagst freundlich Nein. Ein Danke, ein kurzer Grund oder ein anderer Vorschlag genügt."
+  ],
+  "wennEsKippt": "Fällt die Reaktion auf das Nein schwer, spielt die Fachkraft sie einmal vor, und der oder die Jugendliche wiederholt sie in eigenen Worten. Wird es unangenehm, sagt Luca so lange Ja, bis der oder die Jugendliche sicherer ist.",
+  "werkzeug": {
+   "de": "Einladungs-Satz: auf Ja, Nein und Vielleicht freundlich reagieren",
+   "fr": "Phrase d’invitation : réagir gentiment à oui, non et peut-être"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "K-27",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-25",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [],
+  "ort": "raum",
+  "fr": {
+   "titel": "Oui, non ou peut-être",
+   "text": "L’adulte joue Luca. Le ou la jeune l’invite avec la phrase d’invitation (proposition, question, porte ouverte), par exemple à la salle de skate samedi. Luca répond trois fois différemment : « Oui, avec plaisir ! », « Non, samedi j’ai entraînement. » et « On verra … » Le ou la jeune réagit chaque fois gentiment : fixer quelque chose de concret après un oui, accepter un non en laissant la porte ouverte, laisser du temps après « On verra », sans pousser. Puis on échange les rôles : l’adulte invite, et le ou la jeune dit non gentiment.",
+   "sagen": [
+    "Je suis Luca. Invite-moi avec ta phrase d’invitation, je réponds différemment à chaque fois.",
+    "Luca dit non. Comment répondre pour qu’il se sente quand même bien accueilli ?",
+    "On échange : je t’invite, et tu dis non gentiment. Un merci, une courte raison ou une autre proposition suffit."
+   ],
+   "wennEsKippt": "Si réagir au non est difficile, l’adulte le joue une fois et le ou la jeune le redit avec ses mots. Si ça devient gênant, Luca dit oui jusqu’à ce que le ou la jeune soit plus à l’aise.",
+   "kurz": "Inviter Luca · réagir à oui, non, peut-être · échange de rôles"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Auf Ja, Nein und Vielleicht reagieren",
+    "fr": "Réagir à oui, non et peut-être"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Diogo hat Inês zum Bowling eingeladen und bekommt als Antwort ein Nein."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Antworten von Diogo sind freundlich? Kreuz an. Mehrere gehen."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Schade, dann ein andermal.",
+      "Immer sagst du Nein.",
+      "Okay, kein Problem. Sag Bescheid, wenn du mal Lust hast.",
+      "Warum nicht? Gib mir einen Grund.",
+      "Na toll, dann eben nicht."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Inês antwortet auf Diogos Einladungs-Satz mit „Mal sehen“. Schreib Diogos freundliche Antwort."
+    },
+    {
+     "art": "dialog",
+     "zeilen": [
+      {
+       "wer": "Diogo",
+       "text": "Ich gehe am Samstag bowlen. Hast du Lust mitzukommen? Wenn nicht, ist das okay."
+      },
+      {
+       "wer": "Inês",
+       "text": "Mal sehen, ich weiß noch nicht."
+      },
+      {
+       "wer": "Diogo (freundlich, ohne zu drängeln)"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Wenn jemand Nein zu deiner Einladung sagt (echt oder erfunden):"
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "wenn": "Wenn jemand Nein zu meiner Einladung sagt …",
+     "dann": "dann sage ich:"
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Diogo a invité Inês au bowling et reçoit un non en réponse."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelles réponses de Diogo sont gentilles ? Coche. Plusieurs réponses possibles."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Dommage, ce sera pour une autre fois.",
+      "Tu dis toujours non.",
+      "D’accord, pas de souci. Dis-moi si tu as envie un jour.",
+      "Pourquoi pas ? Donne-moi une raison.",
+      "Bon, tant pis pour toi."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Inês répond « On verra » à la phrase d’invitation de Diogo. Écris la réponse gentille de Diogo."
+    },
+    {
+     "art": "dialog",
+     "zeilen": [
+      {
+       "wer": "Diogo",
+       "text": "Samedi, je vais au bowling. Ça te dit de venir ? Sinon, pas de souci."
+      },
+      {
+       "wer": "Inês",
+       "text": "On verra, je ne sais pas encore."
+      },
+      {
+       "wer": "Diogo (gentil, sans pousser)"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Quand quelqu’un dit non à ton invitation (vrai ou inventé) :"
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "wenn": "Si quelqu’un dit non à mon invitation …",
+     "dann": "alors je dis :"
+    }
+   ]
+  },
+  "kurz": "Luca einladen · auf Ja, Nein, Vielleicht reagieren · Rollen tauschen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: Absage bekommen",
+      "text": "Du schreibst jemandem: „Kino am Freitag?“ Die Antwort: „Geht leider nicht.“ Du überlegst, was du zurückschreibst."
+     },
+     {
+      "kurz": "Verein: Antwort „Mal sehen“",
+      "text": "Eine Person aus dem Verein antwortet auf deine Einladung nur mit „Mal sehen.“ Du weißt nicht, wie du jetzt reagieren sollst."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, auf ein Nein freundlich zu antworten, z. B. mit „Schade, ein andermal!“",
+    "probe": "Sofia fragt Diogo, ob er mit ihr bowlen geht. Er antwortet: „Diese Woche nicht.“ Was könnte Sofia mit dem Einladungs-Satz freundlich antworten?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : un refus",
+      "text": "Tu écris à quelqu’un : « Cinéma vendredi ? » La réponse : « Malheureusement, ça ne va pas. » Tu réfléchis à ce que tu réponds."
+     },
+     {
+      "kurz": "Club : réponse floue",
+      "text": "Quelqu’un du club répond à ton invitation seulement : « On verra. » Tu ne sais pas comment réagir maintenant."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de répondre gentiment à un non, par exemple avec « Dommage, une autre fois ! »",
+    "probe": "Sofia demande à Diogo s’il vient au bowling avec elle. Il répond : « Pas cette semaine. » Que pourrait répondre Sofia gentiment avec la phrase d’invitation ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-d",
+   "nr": 2,
+   "faden": {
+    "de": "Jemanden freundlich einladen – mit dem Einladungs-Satz",
+    "fr": "Inviter quelqu’un gentiment – avec la phrase d’invitation"
+   },
+   "bruecke": {
+    "de": "Du hast Einladungen in drei Teilen gebaut: Vorschlag, Frage, Ausweg. Heute übst du, auf Ja, Nein und Vielleicht freundlich zu reagieren.",
+    "fr": "Tu as construit des invitations en trois parties : proposition, question, porte ouverte. Aujourd’hui, tu t’entraînes à réagir gentiment à un oui, un non ou un peut-être."
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:eigene-einladung-schreiben",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Meine eigene Einladung",
+  "text": "Der oder die Jugendliche überlegt sich jemanden, den er oder sie gern besser kennenlernen würde (echt oder erfunden, ohne Namen), und etwas Kleines, das man zusammen machen könnte. Allein schreibt er oder sie dazu eine Chat-Nachricht mit Vorschlag, Frage und offenem Ausweg, höchstens drei Sätze, und liest sie vor. Die Fachkraft zieht verdeckt eine Karte (Ja, Nein oder Vielleicht) und antwortet als diese Person; der oder die Jugendliche reagiert freundlich. Danach verbessert er oder sie die Nachricht mit der Frage: Wie würde ich sie selbst gern bekommen? Ob sie je abgeschickt wird, entscheidet er oder sie allein.",
+  "sagen": [
+   "Denk an jemanden, den du gern besser kennen würdest, echt oder erfunden. Was könnte man zusammen machen, etwas Kleines?",
+   "Schreib die Nachricht allein: Vorschlag, Frage, Ausweg. Höchstens drei Sätze, so wie du wirklich schreiben würdest.",
+   "Ich antworte jetzt als diese Person. Und wie würdest du selbst gern so eine Nachricht bekommen?"
+  ],
+  "wennEsKippt": "Fällt niemand ein oder ist es zu persönlich, schreibt der oder die Jugendliche die Nachricht an eine erfundene Person wie Sofia. Stockt das Schreiben, formuliert die Fachkraft den Vorschlag, und er oder sie ergänzt Frage und Ausweg.",
+  "werkzeug": {
+   "de": "Einladungs-Satz: selbst formulieren, für jemanden, den ich mag",
+   "fr": "Phrase d’invitation : la formuler soi-même, pour quelqu’un que j’aime bien"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "K-27",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-25",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "schreiben",
+   "rollenspiel"
+  ],
+  "material": [
+   "papier",
+   "stifte",
+   "karten"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Ma propre invitation",
+   "text": "Le ou la jeune pense à quelqu’un qu’il ou elle aimerait mieux connaître (vrai ou inventé, sans nom) et à une petite chose à faire ensemble. Seul ou seule, il ou elle écrit un message de chat avec proposition, question et porte ouverte, trois phrases au plus, et le lit à voix haute. L’adulte tire une carte face cachée (oui, non ou peut-être) et répond en tant que cette personne ; le ou la jeune réagit gentiment. Ensuite, il ou elle améliore le message avec cette question : comment aimerais-je le recevoir moi-même ? Le ou la jeune décide seul ou seule s’il sera un jour envoyé.",
+   "sagen": [
+    "Pense à quelqu’un que tu aimerais mieux connaître, vrai ou inventé. Que pourrait-on faire ensemble, quelque chose de petit ?",
+    "Écris le message seul ou seule : proposition, question, porte ouverte. Trois phrases au plus, comme tu écrirais vraiment.",
+    "Je réponds maintenant en tant que cette personne. Et toi, comment aimerais-tu recevoir un tel message ?"
+   ],
+   "wennEsKippt": "Si personne ne vient à l’esprit ou si c’est trop personnel, le ou la jeune écrit le message à un personnage inventé comme Sofia. Si l’écriture bloque, l’adulte formule la proposition et le ou la jeune ajoute la question et la porte ouverte.",
+   "kurz": "Écrire le message · tirer la réponse · réagir gentiment",
+   "vorbereitung": "Écrire 3 cartes : Oui · Non · Peut-être"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Meine Einladung an jemanden, den ich mag",
+    "fr": "Mon invitation à quelqu’un que j’aime bien"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Sofia möchte Mehdi, der neu im Verein ist, zu etwas Kleinem einladen. Sie ist ein wenig nervös."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welcher Einladungs-Satz passt für den Anfang: klein und konkret? Kreuz einen an."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Ich gehe am Mittwoch nach dem Training einen Saft trinken. Magst du mit? Wenn nicht, ist das okay.",
+      "Willst du mit mir in den Urlaub fahren?",
+      "Wollen wir irgendwann mal was machen?",
+      "Ich lade dich zu meinem großen Fest ein."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mehdi sagt Nein. Schreib Sofias Einladungs-Satz und ihre Reaktion."
+    },
+    {
+     "art": "dialog",
+     "zeilen": [
+      {
+       "wer": "Sofia (Einladung mit Vorschlag, Frage, Ausweg)"
+      },
+      {
+       "wer": "Mehdi",
+       "text": "Mittwoch geht nicht, da habe ich Musikunterricht."
+      },
+      {
+       "wer": "Sofia (freundliche Reaktion)"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Mit wem würdest du gern etwas Kleines unternehmen (echt oder erfunden, kein Name nötig)? Schreib die Einladung in drei Sätzen."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Meine Einladung:"
+     ],
+     "linien": 2
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Sofia voudrait inviter Mehdi, nouveau au club, à faire quelque chose de simple. Elle est un peu nerveuse."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelle phrase d’invitation convient pour commencer : petite et concrète ? Coche une seule."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Mercredi après l’entraînement, je vais boire un jus. Tu viens ? Sinon, pas de souci.",
+      "Tu veux partir en vacances avec moi ?",
+      "On pourrait faire un truc un jour ?",
+      "Je t’invite à ma grande fête."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mehdi dit non. Écris la phrase d’invitation de Sofia et sa réaction."
+    },
+    {
+     "art": "dialog",
+     "zeilen": [
+      {
+       "wer": "Sofia (invitation avec proposition, question, porte ouverte)"
+      },
+      {
+       "wer": "Mehdi",
+       "text": "Mercredi, ça ne va pas, j’ai cours de musique."
+      },
+      {
+       "wer": "Sofia (réaction gentille)"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Avec qui aimerais-tu faire quelque chose de simple (vrai ou inventé, pas besoin de nom) ? Écris l’invitation en trois phrases."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Mon invitation :"
+     ],
+     "linien": 2
+    }
+   ]
+  },
+  "kurz": "Nachricht schreiben · Antwort ziehen · freundlich reagieren",
+  "vorbereitung": "3 Karten schreiben: Ja · Nein · Vielleicht",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Verein: Neuer im Training",
+      "text": "Im Verein ist jemand Neues, mit dem du dich gut verstehst. Du möchtest etwas Kleines vorschlagen, zum Beispiel einen Saft nach dem Training."
+     },
+     {
+      "kurz": "Bus: neues Café testen",
+      "text": "Im Bus erzählst du jemandem von einem neuen Café in der Stadt. Du könntest vorschlagen, es zusammen zu testen."
+     }
+    ],
+    "versuch": "Schreib diese Woche einmal einer Person, die du magst, eine kleine Einladung mit Ausweg. Ob du sie abschickst, entscheidest du.",
+    "probe": "Zoé findet Luca im Chat nett und möchte etwas mit ihm machen. Sie hat Angst, dass er Nein sagt. Was könnte Zoé mit dem Einladungs-Satz schreiben?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Club : un nouveau",
+      "text": "Au club, il y a un nouveau avec qui tu t’entends bien. Tu voudrais proposer quelque chose de simple, par exemple un jus après l’entraînement."
+     },
+     {
+      "kurz": "Bus : tester un café",
+      "text": "Dans le bus, tu parles à quelqu’un d’un nouveau café en ville. Tu pourrais proposer de l’essayer ensemble."
+     }
+    ],
+    "versuch": "Écris cette semaine, une fois, une petite invitation avec porte ouverte à quelqu’un que tu aimes bien. Tu décides si tu l’envoies.",
+    "probe": "Zoé trouve Luca sympa dans le chat et voudrait faire quelque chose avec lui. Elle a peur qu’il dise non. Que pourrait écrire Zoé avec la phrase d’invitation ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-d",
+   "nr": 3,
+   "faden": {
+    "de": "Jemanden freundlich einladen – mit dem Einladungs-Satz",
+    "fr": "Inviter quelqu’un gentiment – avec la phrase d’invitation"
+   },
+   "bruecke": {
+    "de": "Du kannst einladen und freundlich auf Antworten reagieren. Heute formulierst du allein eine Einladung für jemanden, den du magst.",
+    "fr": "Tu sais inviter et réagir gentiment aux réponses. Aujourd’hui, tu formules seul ou seule une invitation pour quelqu’un que tu aimes bien."
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:ausrede-oder-reparatur",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Ausrede oder Reparatur?",
+  "text": "Die Fachkraft liest einen erfundenen Fall: Diogo ruft seinem Mitspieler nach einem Fehlpass „Voll der Anfänger!“ zu; der Mitspieler schaut weg. Dann liest sie zwei Antworten von Diogo vor. A: „War doch nur Spaß, du bist zu empfindlich.“ B: „Ich habe dich Anfänger genannt. Das hat dich getroffen, du hast weggeschaut. Ich entschuldige mich und sage so etwas nicht mehr.“ Der oder die Jugendliche findet in B die drei Teile des Reparatur-Satzes (was getan, was ausgelöst, was jetzt) und sagt, was in A fehlt. Dann baut er oder sie den Satz für einen zweiten Fall: Yanis hat Zoés geliehenes Heft bekleckert und es kommentarlos zurückgegeben.",
+  "sagen": [
+   "Zwei Antworten auf denselben Fehler. Hör zu: Welche würdest du lieber bekommen, und warum?",
+   "Der Reparatur-Satz hat drei Teile: was ich getan habe, was es ausgelöst hat, was ich jetzt tue.",
+   "Bau den Satz für Yanis und das bekleckerte Heft. Ohne „aber“ und ohne „nur“."
+  ],
+  "wennEsKippt": "Fällt das Finden der drei Teile schwer, unterstreicht die Fachkraft den ersten Teil in B, und der oder die Jugendliche sucht die anderen zwei. Wird es zu persönlich, bleibt es bei Diogo, Yanis und Zoé; eigene Fälle werden nicht verlangt.",
+  "werkzeug": {
+   "de": "Reparatur-Satz: Was ich tat, was es auslöste, was ich tue",
+   "fr": "Phrase de réparation : ce que j’ai fait, l’effet, ce que je répare"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "thema": [
+   "regeln",
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "V-27",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "konflikte"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "geschichte",
+   "gespraech"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Excuse ou réparation ?",
+   "text": "L’adulte lit un cas inventé : après une mauvaise passe, Diogo lance à son coéquipier « Quel débutant ! » ; le coéquipier détourne les yeux. Puis l’adulte lit deux réponses de Diogo. A : « C’était pour rire, tu es trop susceptible. » B : « Je t’ai traité de débutant. Ça t’a touché, tu as détourné le regard. Je m’excuse et je ne dirai plus ça. » Le ou la jeune retrouve dans B les trois parties de la phrase de réparation (ce qui a été fait, l’effet, ce qui se fait maintenant) et dit ce qui fait défaut dans A. Puis il ou elle construit la phrase pour un deuxième cas : Yanis a taché le cahier prêté par Zoé et le lui a rendu sans un mot.",
+   "sagen": [
+    "Deux réponses à la même erreur. Écoute : laquelle préférerais-tu recevoir, et pourquoi ?",
+    "La phrase de réparation a trois parties : ce que j’ai fait, l’effet que ça a eu, ce que je fais maintenant.",
+    "Construis la phrase pour Yanis et le cahier taché. Sans « mais » et sans « seulement »."
+   ],
+   "wennEsKippt": "Si trouver les trois parties est difficile, l’adulte souligne la première dans B et le ou la jeune cherche les deux autres. Si ça devient trop personnel, on reste sur Diogo, Yanis et Zoé ; aucun cas personnel n’est demandé.",
+   "kurz": "Comparer deux réponses · trois parties · construire la phrase"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Ausrede oder Reparatur-Satz?",
+    "fr": "Excuse ou phrase de réparation ?"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Luca hat Lara zum Kino verabredet und ist nicht gekommen. Sie hat 20 Minuten gewartet."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Antwort von Luca ist ein Reparatur-Satz? Kreuz eine an."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Ich habe dich versetzt, und du hast 20 Minuten umsonst gewartet. Ich entschuldige mich und melde mich künftig vorher ab.",
+      "Du hättest ja auch nachfragen können.",
+      "Tut mir leid, aber ich hatte so viel Stress.",
+      "Ist doch nicht so schlimm."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Sofia hat Zoés Zeichnung nass gemacht. Welcher Teil des Reparatur-Satzes ist das? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Ich habe deine Zeichnung nass gemacht.",
+      "Die Farben sind jetzt verlaufen.",
+      "Ich male sie heute noch einmal neu für dich."
+     ],
+     "rechts": [
+      "was ich jetzt tue",
+      "was ich getan habe",
+      "was es ausgelöst hat"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Ein kleiner Fehler von mir (echt oder erfunden): Mein Reparatur-Satz dazu."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Ich habe …",
+      "Das hat …",
+      "Ich werde …"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Luca avait rendez-vous avec Lara au cinéma et n’est pas venu. Elle a attendu 20 minutes."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelle réponse de Luca est une phrase de réparation ? Coche une seule."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Je t’ai posé un lapin, et tu as attendu 20 minutes pour rien. Je m’excuse et je te préviendrai à l’avance.",
+      "Tu aurais aussi pu demander.",
+      "Désolé, mais j’avais tellement de stress.",
+      "C’est pas si grave."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Sofia a mouillé le dessin de Zoé. Quelle partie de la phrase de réparation est-ce ? Relie."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "J’ai mouillé ton dessin.",
+      "Les couleurs ont coulé.",
+      "Je le refais pour toi aujourd’hui même."
+     ],
+     "rechts": [
+      "ce que je fais maintenant",
+      "ce que j’ai fait",
+      "l’effet que ça a eu"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Une petite erreur de ma part (vraie ou inventée) : ma phrase de réparation."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "J’ai …",
+      "Ça a …",
+      "Je vais …"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Zwei Antworten vergleichen · drei Teile finden · Satz bauen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Beim Kicken: harter Spruch",
+      "text": "Beim Kicken rutscht dir ein harter Spruch raus, und dein Mitspieler schaut weg."
+     },
+     {
+      "kurz": "Chat: falscher Treffpunkt",
+      "text": "Du hast im Chat einen falschen Treffpunkt geschrieben, und jemand hat umsonst gewartet."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal bei einem kleinen Fehler: „Ich habe …, das hat …, ich …“ – laut gesagt oder aufgeschrieben.",
+    "probe": "Tom hat in der Pause Bens Rucksack umgestoßen, und alles liegt auf dem Boden. Er sagt nur: „Wieso stellst du ihn auch dahin?“ Was könnte Tom mit dem Reparatur-Satz sagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Foot : mot dur",
+      "text": "En jouant au foot, il t’échappe une phrase dure, et ton coéquipier détourne les yeux."
+     },
+     {
+      "kurz": "Chat : mauvais rendez-vous",
+      "text": "Dans le chat, tu as écrit un mauvais lieu de rendez-vous, et quelqu’un a attendu pour rien."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, pour une petite erreur : « J’ai …, ça a …, je … » – dit à voix haute ou écrit.",
+    "probe": "Tom a fait tomber le sac de Ben pendant la récré, et tout est par terre. Il dit seulement : « Pourquoi tu le poses là aussi ? » Que pourrait dire Tom avec la phrase de réparation ?"
+   }
+  },
+  "linie": {
+   "id": "selbstregulation-12-18-c",
+   "nr": 1,
+   "faden": {
+    "de": "Für mein Verhalten geradestehen – mit dem Reparatur-Satz",
+    "fr": "Assumer mon comportement – avec la phrase de réparation"
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:folge-annehmen",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Die Folge annehmen",
+  "text": "Die Fachkraft spielt einen Trainer: „Mehdi, du bist zum dritten Mal zu spät gekommen, und ich musste warten. Beim nächsten Mal baust du die Matten mit auf.“ Der oder die Jugendliche spielt Mehdi und probiert drei Antworten: Ausrede („Der Bus war schuld!“), Gegenangriff („Das ist unfair!“) und Reparatur-Satz (was ich getan habe, was es ausgelöst hat, was ich tue) mit angenommener Folge („Ich bin zu spät gekommen, du musstest warten. Ich baue die Matten mit auf und nehme früher den Bus.“). Nach jeder Antwort sagt der Trainer, wie sie bei ihm ankommt. Dann suchen beide für einen zweiten Fall eine Folge, die zum Vorfall passt und ein Ende hat.",
+  "sagen": [
+   "Ich bin der Trainer und sage dir gleich, was jetzt passiert. Probier drei Antworten: Ausrede, Gegenangriff, Reparatur-Satz.",
+   "Wie hat sich jede Antwort für mich angehört? Bei welcher hätte ich Lust gehabt, dir wieder zu vertrauen?",
+   "Welche Folge wäre fair? Sie hat mit dem Vorfall zu tun, du schaffst sie, und sie hat ein Ende."
+  ],
+  "wennEsKippt": "Wird die Szene zu echt, sagt der oder die Jugendliche „Stopp“, und die Fachkraft wechselt zu einem anderen erfundenen Fall (z. B. Inês, die im Praktikum einen Termin vergessen hat). Fällt die dritte Antwort schwer, spricht die Fachkraft den ersten Teil vor, und er oder sie ergänzt die anderen zwei.",
+  "werkzeug": {
+   "de": "Reparatur-Satz: die Folge annehmen, ohne Ausrede",
+   "fr": "Phrase de réparation : accepter la conséquence, sans excuse"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "regeln",
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "V-27",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "konflikte"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [],
+  "ort": "raum",
+  "fr": {
+   "titel": "Accepter la conséquence",
+   "text": "L’adulte joue un entraîneur : « Mehdi, tu es arrivé en retard pour la troisième fois, et j’ai dû attendre. La prochaine fois, tu aides à installer les tapis. » Le ou la jeune joue Mehdi et essaie trois réponses : l’excuse (« C’est la faute du bus ! »), la contre-attaque (« C’est injuste ! ») et la phrase de réparation (ce que j’ai fait, l’effet, ce que je fais) avec la conséquence acceptée (« Je suis arrivé en retard, tu as dû attendre. J’installe les tapis et je prends le bus plus tôt. »). Après chaque réponse, l’entraîneur dit comment elle lui parvient. Puis on cherche, pour un autre cas, une conséquence liée à l’incident, avec une fin.",
+   "sagen": [
+    "Je suis l’entraîneur et je te dis ce qui va se passer. Essaie trois réponses : excuse, contre-attaque, phrase de réparation.",
+    "Comment chaque réponse m’est-elle arrivée ? Avec laquelle aurais-je eu envie de te refaire confiance ?",
+    "Quelle conséquence serait juste ? Elle a un lien avec l’incident, tu peux la réaliser, et elle a une fin."
+   ],
+   "wennEsKippt": "Si la scène devient trop réelle, le ou la jeune dit « stop » et l’adulte passe à un autre cas inventé (par exemple Inês, qui a oublié un rendez-vous pendant son stage). Si la troisième réponse est difficile, l’adulte dit la première partie et le ou la jeune complète les deux autres.",
+   "kurz": "Jouer l’entraîneur · trois réponses · conséquence juste"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Die Folge annehmen",
+    "fr": "Accepter la conséquence"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Sofia hat im Praktikum einen Termin mit einem Kunden vergessen. Ihr Chef sagt, sie soll den Kunden jetzt anrufen und sich entschuldigen."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Antworten nehmen die Folge an? Kreuz an. Mehrere gehen."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "„Okay, das ist fair. Ich rufe an.“",
+      "„Das war doch nicht meine Schuld!“",
+      "„Ich habe den Termin vergessen, der Kunde musste warten. Ich rufe ihn jetzt an.“",
+      "„Warum muss immer ich das machen?“"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Schreib Sofias Antwort als Reparatur-Satz, mit der angenommenen Folge."
+    },
+    {
+     "art": "dialog",
+     "zeilen": [
+      {
+       "wer": "Chef",
+       "text": "Du hast den Kunden warten lassen. Ruf ihn jetzt an und entschuldige dich."
+      },
+      {
+       "wer": "Sofia (Reparatur-Satz, Folge annehmen)"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Wenn ich etwas falsch gemacht habe und jemand nennt mir eine Folge (echt oder erfunden):"
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "wenn": "Wenn mir jemand eine Folge nennt …",
+     "dann": "dann sage ich:"
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Sofia a oublié, pendant son stage, un rendez-vous avec un client. Son chef dit qu’elle doit l’appeler tout de suite et s’excuser."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelles réponses acceptent la conséquence ? Coche. Plusieurs réponses possibles."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "« D’accord, c’est juste. J’appelle. »",
+      "« Ce n’était pas ma faute ! »",
+      "« J’ai oublié le rendez-vous, le client a dû attendre. Je l’appelle tout de suite. »",
+      "« Pourquoi c’est toujours à moi de le faire ? »"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Écris la réponse de Sofia avec la phrase de réparation, en acceptant la conséquence."
+    },
+    {
+     "art": "dialog",
+     "zeilen": [
+      {
+       "wer": "Chef",
+       "text": "Tu as fait attendre le client. Appelle-le tout de suite et excuse-toi."
+      },
+      {
+       "wer": "Sofia (phrase de réparation, accepter la conséquence)"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Quand j’ai fait une erreur et que quelqu’un me dit la conséquence (vrai ou inventé) :"
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "wenn": "Si quelqu’un me dit la conséquence …",
+     "dann": "alors je dis :"
+    }
+   ]
+  },
+  "kurz": "Trainer spielen · drei Antworten üben · faire Folge finden",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Kantine: Saft verschüttet",
+      "text": "In der Kantine hast du Saft verschüttet und bist weitergegangen. Die Aufsicht bittet dich, es aufzuwischen."
+     },
+     {
+      "kurz": "Praktikum: Werkzeug liegengelassen",
+      "text": "Im Praktikum hast du Werkzeug nicht zurückgelegt. Die Betreuerin sagt, du sollst es jetzt sortieren."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, auf eine Rückmeldung ruhig zu sagen: „Okay, ich mache das.“ – ohne „aber“.",
+    "probe": "Noah hat den Schlüssel zum Vereinsraum zu spät zurückgebracht. Die Trainerin bittet ihn, den Raum künftig aufzuschließen. Was könnte Noah mit dem Reparatur-Satz antworten?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Cantine : jus renversé",
+      "text": "À la cantine, tu as renversé du jus et tu es parti. La surveillante te demande de l’essuyer."
+     },
+     {
+      "kurz": "Stage : outil oublié",
+      "text": "Pendant ton stage, tu n’as pas rangé un outil. La responsable te dit de le ranger tout de suite."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de répondre calmement à un retour : « D’accord, je le fais. » – sans « mais ».",
+    "probe": "Noah a rapporté trop tard la clé de la salle du club. L’entraîneuse lui demande d’ouvrir la salle à l’avenir. Que pourrait répondre Noah avec la phrase de réparation ?"
+   }
+  },
+  "linie": {
+   "id": "selbstregulation-12-18-c",
+   "nr": 2,
+   "faden": {
+    "de": "Für mein Verhalten geradestehen – mit dem Reparatur-Satz",
+    "fr": "Assumer mon comportement – avec la phrase de réparation"
+   },
+   "bruecke": {
+    "de": "Du hast mit dem Reparatur-Satz gesagt, was du getan hast und was es ausgelöst hat. Heute kommt dazu, eine Folge anzunehmen.",
+    "fr": "Tu as dit avec la phrase de réparation ce que tu as fait et ce que ça a causé. Aujourd’hui s’ajoute le fait d’accepter une conséquence."
+   }
+  },
+  "tagesform": []
+ },
+ {
+  "id": "j:wenn-der-andere-noch-sauer-ist",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Wenn der andere noch sauer ist",
+  "text": "Der oder die Jugendliche wählt einen erfundenen Fall (z. B. Inês hat eine Verabredung mit einer Freundin kurzfristig abgesagt) und schreibt allein den Reparatur-Satz dazu: was getan, was ausgelöst, was jetzt. Die Fachkraft spielt die Freundin, die noch sauer ist, und antwortet mit drei Sätzen: „Das reicht mir nicht.“ – „Du machst das ständig.“ – „Ich sag jetzt erstmal nichts.“ Der oder die Jugendliche bleibt freundlich, sagt den eigenen Teil noch einmal und bietet die Wiedergutmachung an, ohne zu streiten. Danach notiert er oder sie, was dabei geholfen hat: ein Atemzug, ein Satzanfang oder eine Pause.",
+  "sagen": [
+   "Such dir einen erfundenen Fall aus und schreib deinen Reparatur-Satz auf: Was ich getan habe, was es ausgelöst hat, was ich tue.",
+   "Ich spiele jemanden, der noch sauer ist. Bleib freundlich, sag deinen Teil noch einmal und biete deine Wiedergutmachung an.",
+   "Was hat dir geholfen, ruhig zu bleiben? Schreib es auf einen Zettel, den du mitnehmen kannst."
+  ],
+  "wennEsKippt": "Wird es zu hitzig, sagt der oder die Jugendliche „Stopp“, und die Fachkraft antwortet nur noch mit dem mildesten der drei Sätze. Fällt kein Fall ein, wählt er oder sie einen aus zwei Vorschlägen: eine vergessene Verabredung oder ein ausgeliehenes Heft mit Fleck.",
+  "werkzeug": {
+   "de": "Reparatur-Satz: bei Gegenwind sagen und dabei bleiben",
+   "fr": "Phrase de réparation : la dire malgré le vent contraire et s’y tenir"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "regeln",
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "V-27",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "konflikte"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "plan",
+   "rollenspiel"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Quand l’autre est encore fâché",
+   "text": "Le ou la jeune choisit un cas inventé (par exemple Inês a annulé au dernier moment un rendez-vous avec une amie) et écrit seul ou seule la phrase de réparation : ce qui a été fait, l’effet, ce qui se fait maintenant. L’adulte joue l’amie, encore fâchée, et répond par trois phrases : « Ça ne me suffit pas. » – « Tu fais ça tout le temps. » – « Je ne dis plus rien pour l’instant. » Le ou la jeune reste aimable, redit sa part et propose de réparer, sans se disputer. Ensuite, il ou elle note ce qui l’a aidé : une respiration, un début de phrase ou une pause.",
+   "sagen": [
+    "Choisis un cas inventé et écris ta phrase de réparation : ce que j’ai fait, l’effet que ça a eu, ce que je fais.",
+    "Je joue quelqu’un qui est encore fâché. Reste aimable, redis ta part et propose de réparer.",
+    "Qu’est-ce qui t’a aidé à rester calme ? Note-le sur un papier que tu peux emporter."
+   ],
+   "wennEsKippt": "Si ça s’échauffe, le ou la jeune dit « stop » et l’adulte ne répond plus que par la plus douce des trois phrases. Si aucun cas ne vient, il ou elle en choisit un parmi deux propositions : un rendez-vous oublié ou un cahier prêté avec une tache.",
+   "kurz": "Écrire la phrase · tenir face au vent contraire · noter l’aide"
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Beim eigenen Teil bleiben",
+    "fr": "Rester sur sa part"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Luca hat Diogos Kopfhörer ausgeliehen und ein Kabel geknickt. Diogo ist noch sauer."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Antwort bleibt beim eigenen Teil und streitet nicht? Kreuz eine an."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "„Du übertreibst. Andere machen viel Schlimmeres.“",
+      "„Ich verstehe, dass du sauer bist. Ich habe das Kabel geknickt, ich bezahle ein neues.“",
+      "„Dann sag halt nichts mehr zu mir.“",
+      "„Du hast mir die Kopfhörer ja auch nicht richtig erklärt.“"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Schreib Lucas Antworten: Sein Reparatur-Satz bleibt bei seinem Teil."
+    },
+    {
+     "art": "dialog",
+     "zeilen": [
+      {
+       "wer": "Diogo",
+       "text": "Typisch, du gehst nie sorgsam mit Sachen um."
+      },
+      {
+       "wer": "Luca (ruhig, beim eigenen Teil bleiben)"
+      },
+      {
+       "wer": "Diogo",
+       "text": "Das reicht mir noch nicht."
+      },
+      {
+       "wer": "Luca (Wiedergutmachung anbieten)"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und du? Was mir hilft, ruhig zu bleiben, wenn jemand noch sauer ist (echt oder erfunden):"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Das hilft mir, ruhig zu bleiben:",
+      "Mein Satz, mit dem ich bei meinem Teil bleibe:"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Luca a emprunté les écouteurs de Diogo et a plié un câble. Diogo est encore fâché."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelle réponse reste sur sa propre part sans se disputer ? Coche une seule."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "« Tu exagères. D’autres font bien pire. »",
+      "« Je comprends que tu sois fâché. J’ai plié le câble, j’en paie un nouveau. »",
+      "« Alors ne me parle plus. »",
+      "« Tu ne m’as pas bien expliqué les écouteurs non plus. »"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Écris les réponses de Luca : sa phrase de réparation reste sur sa part."
+    },
+    {
+     "art": "dialog",
+     "zeilen": [
+      {
+       "wer": "Diogo",
+       "text": "Typique, tu ne fais jamais attention aux affaires des autres."
+      },
+      {
+       "wer": "Luca (calme, rester sur sa part)"
+      },
+      {
+       "wer": "Diogo",
+       "text": "Ça ne me suffit pas encore."
+      },
+      {
+       "wer": "Luca (proposer de réparer)"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Ce qui m’aide à rester calme quand quelqu’un est encore fâché (vrai ou inventé) :"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Ça m’aide à rester calme :",
+      "Ma phrase pour rester sur ma part :"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Reparatur-Satz schreiben · Gegenwind aushalten · Hilfe notieren",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: „Immer zu spät!“",
+      "text": "Eine Freundin schreibt dir: „Du bist immer zu spät!“, nachdem du eine Verabredung verpasst hast. Du willst kontern."
+     },
+     {
+      "kurz": "Nach dem Spiel: Mitspieler sauer",
+      "text": "Nach dem Spiel ist ein Mitspieler noch sauer, weil du den Ball nicht abgegeben hast."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei Gegenwind nur deinen Teil zu sagen und freundlich zu bleiben, auch wenn es schwerfällt.",
+    "probe": "Diogo hat Mehdis Fahrrad ohne Fragen geliehen und einen Platten gemacht. Mehdi sagt: „Du bist so unzuverlässig.“ Was könnte Diogo mit dem Reparatur-Satz sagen, wenn Mehdi noch sauer ist?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : reproche de retard",
+      "text": "Une amie t’écrit : « Tu es toujours en retard ! » après un rendez-vous manqué. Tu as envie de répliquer."
+     },
+     {
+      "kurz": "Match : coéquipier encore fâché",
+      "text": "Après le match, un coéquipier est encore fâché parce que tu n’as pas passé le ballon."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, face à un reproche, de dire seulement ta part et de rester aimable, même si c’est difficile.",
+    "probe": "Diogo a emprunté le vélo de Mehdi sans demander et l’a crevé. Mehdi dit : « Tu es tellement peu fiable. » Que pourrait dire Diogo avec la phrase de réparation si Mehdi est encore fâché ?"
+   }
+  },
+  "linie": {
+   "id": "selbstregulation-12-18-c",
+   "nr": 3,
+   "faden": {
+    "de": "Für mein Verhalten geradestehen – mit dem Reparatur-Satz",
+    "fr": "Assumer mon comportement – avec la phrase de réparation"
+   },
+   "bruecke": {
+    "de": "Du hast geübt, eine Folge ohne Ausrede anzunehmen. Heute bleibst du bei deinem Teil, auch wenn der andere noch sauer ist.",
+    "fr": "Tu as appris à accepter une conséquence sans excuse. Aujourd’hui, tu restes sur ta part, même si l’autre est encore fâché."
+   }
+  },
+  "tagesform": []
  }
 ]
