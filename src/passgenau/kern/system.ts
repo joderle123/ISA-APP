@@ -17,7 +17,7 @@ export const SYSTEM: Stundenschritt[] = [
     titel: 'Am Blatt arbeiten',
     text: 'Das Blatt hinlegen und gemeinsam lesen, was zu tun ist. Danach wird allein gearbeitet; die Fachkraft bleibt daneben und hilft beim Anfangen. Was heute nicht passt, darf wegbleiben.',
     sagen: ['Du sagst mir, wenn du Hilfe brauchst.'],
-    wennEsKippt: 'Nicht fertig machen müssen: was nicht passt, bleibt leer; darüber reden geht auch.',
+    wennEsKippt: 'Das Kind muss nicht fertig werden: Was nicht passt, bleibt leer. Darüber reden geht auch.',
     rolle: ['uebung'], dauer: { min: 4, typ: 8, max: 20 }, energie: 1, format: ['schreiben'],
     fr: {
       titel: 'Travailler sur la fiche',

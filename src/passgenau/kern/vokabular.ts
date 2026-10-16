@@ -195,6 +195,14 @@ export function kompetenzAusCode(code: string): Kompetenz {
     return 'kooperation'
   }
   if (n <= 6) return 'aufmerksamkeit'
+  // KOG (Blind-Bewertung 13: „Erklärt Verhalten anderer“, „Werte“ und „Geld bis 10 €“ liefen als „Gut lernen“ – Titel,
+  // Einstiege und Rituale sprachen vom Merken): Sprache, andere verstehen, Alltag und Geschick eigens
+  if ([7, 8, 9, 44, 49, 57].includes(n)) return 'kommunikation'
+  if ([38, 53].includes(n)) return 'gefuehle-erkennen'
+  if (n === 55) return 'selbstbild'
+  if ([45, 46, 52].includes(n)) return 'alltag'
+  if ([17, 19, 23, 24, 18, 32].includes(n)) return 'aufmerksamkeit'
+  if ([16, 28, 33, 43].includes(n)) return 'ausdauer'
   return 'lernstrategien'
 }
 

@@ -225,7 +225,10 @@ function rolleName(x: PlanSchritt, e: KatalogEintrag | undefined, sprache: Sprac
 function mitName(t: string, name: string, sp: Sprache): string {
   if (sp === 'fr') {
     const de = /^[aeiouyéèêàâîôûh]/i.test(name) ? `d’${name}` : `de ${name}`
+    const vokal = /^[aeiouyéèêàâîôûh]/i.test(name)
     return t
+      // „ce qu’il ou elle voit“ → „ce que Dario voit“ (Blind-Bewertung 13: „ce qu’Dario“)
+      .replace(/\b(qu|lorsqu|puisqu)['’](il ou elle|le ou la jeune)\b/g, (_m, q: string) => (vokal ? `${q}’${name}` : `${q}e ${name}`))
       .replace(/\bdu ou de la jeune\b/g, de)
       .replace(/\bau ou à la jeune\b/g, `à ${name}`)
       .replace(/\b([Ss])['’]il ou elle\b/g, (_m, s: string) => `${s}i ${name}`)
@@ -311,8 +314,21 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     blatt: x.ref === 'pg:blatt',
     erkundung: x.erkundung,
   }
+  // Grundgerüst: jeder Kern endet damit, dass das Werkzeug einen Namen bekommt – Übertragen, Blatt und Rückblick nennen ihn
+  // später (Blind-Bewertung 13: „Anderes-Ende-Trick“ stand im Übertragen und auf dem Blatt, das Kind hatte ihn nie gehört)
+  const w = x.rolle === 'kern' && e.typ === 'schritt' ? e.werkzeug?.[sprache] : undefined
+  if (w && !x.ref.startsWith('pg:')) {
+    const name = w.split(/\s*[:(–]\s*/)[0].replace(/^[„“"«»\s]+|[„“"«»\s]+$/g, '').toLowerCase()
+    const schon = name.length > 2 && `${d.text} ${d.sagen.join(' ')}`.toLowerCase().includes(name)
+    const zit = /[„“«»]/.test(w) ? w : sprache === 'fr' ? `« ${w} »` : `„${w}“`
+    if (!schon)
+      d.text += sprache === 'fr'
+        ? ` Pour finir, l’adulte donne un nom à ce qu’on vient de faire : ${zit}${jugend ? '.' : ' – et l’enfant le redit avec ses mots.'}`
+        : ` Zum Schluss gibt die Fachkraft dem Geübten einen Namen: ${zit}${jugend ? '.' : ' – und das Kind sagt es mit eigenen Worten nach.'}`
+  }
   // eigene Schritte haben eine feste Zeile (auch mit eingesetztem Text); ein überschriebener Text verdrängt die Zeile des Bausteins
-  const kz = PG_KURZ[x.ref]?.[sprache] ?? (ueberText || x.wahl?.length ? undefined : e.typ === 'schritt' ? (sprache === 'fr' ? e.fr?.kurz : e.kurz) : undefined)
+  // Themen-Einstieg mit Anknüpfen: die Spickzettel-Zeile der Übung, nicht der Anknüpf-Satz (Blind-Bewertung 13)
+  const kz = PG_KURZ[x.ref]?.[sprache] ?? ((ueberText && !x.ref.startsWith('th:')) || x.wahl?.length ? undefined : e.typ === 'schritt' ? (sprache === 'fr' ? e.fr?.kurz : e.kurz) : undefined)
   d.kurz = kz ?? ersterSatz(d.text, 80)
   // Blind-Bewertung 9.10.: Optionen ohne Anleitung („Carte au trésor“ – und dann?) – jede Option mit einem Satz
   // Blind-Bewertung 8: die Beschreibung der ersten Option stand unter den anderen – jede Option trägt ihren Satz selbst,
@@ -391,6 +407,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
         if (zeug.length) mat.add(sp === 'fr' ? `pour refaire une activité, au choix : ${zeug.join(', ')}` : `zum Wiederholen, je nach Wahl: ${zeug.join(', ')}`)
         mat.add(sp === 'fr' ? 'autocollants ou étoiles, une petite carte' : 'Sticker oder Sterne, eine kleine Karte')
       } else mat.add(sp === 'fr' ? 'petits papiers pour les titres (ou les fiches de la série)' : 'Zettel für die Titel (oder die Blätter der Folge)')
+      // (Blind-Bewertung 13: „Zettel mit dem Titel“ im Text, „nichts vorzubereiten“ im Kasten)
+      vorbereitung.add(sp === 'fr' ? 'Écrire le titre de chaque activité de la série sur un papier (ou reprendre les fiches) ; garder à portée le matériel des activités.' : 'Den Titel jeder Übung der Folge auf einen Zettel schreiben (oder die Blätter der Folge nehmen); das Material der Übungen griffbereit legen.')
     }
     // Optionen einer Wahl bringen ihr Material mit („Einfach da sein“: Getränk, Knetball, Tuch)
     for (const w of x.wahl ?? []) {

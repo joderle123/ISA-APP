@@ -365,6 +365,15 @@ export function kernBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   }
 }
 
+/** Der kurze Name eines Werkzeugs zum Sprechen und für das Blatt: „Erzähl-Hand: Wer? Wo? …“ → „Erzähl-Hand“. Ohne Namen
+ *  (ein ganzer Satz, Blind-Bewertung 13: „Wo kannst du „„Ja, und …“ sagen und die Idee weitererzählen“ ausprobieren?“)
+ *  gilt der Titel der Übung; äußere Anführungszeichen fallen weg. */
+export function werkzeugName(w: string | null | undefined, titel: string): string {
+  if (!w) return titel
+  const k = (w.split(/\s*[:(–]\s*/)[0] || w).replace(/^[„“"«»‚‘’\s]+|[„“"«»‚‘’\s]+$/g, '').trim()
+  return !k || k.split(/\s+/).length > 4 || /[„“«»]/.test(k) ? titel : k
+}
+
 /** Übertragen-Blatt (Blind-Bewertung 8: „wiederholt Tabelle und Beispielzeile aus Sitzung 3 wörtlich“, „dann nutze ich
  *  ‚<Titel>‘ ist sinnleer“, „rund zehn Schreibfelder in 5 Min.“): wo es passt (ankreuzen), Wenn-dann mit dem Werkzeug der
  *  Übung, woran ich merke, dass es geholfen hat – höchstens drei Teile. Kinder: Bilder und Malen. */
@@ -378,7 +387,7 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
   if ((o.alter ?? 12) < 10) {
     // nur der Name des Werkzeugs („Erzähl-Hand“ statt „Erzähl-Hand: Wer? Wo? Was? …“; Blind-Bewertung 9: 12-Wörter-Satz bei
     // Lesen 1)
-    const kurzW = werkzeug[0].split(/\s*[:(–]\s*/)[0] || werkzeug[0]
+    const kurzW = werkzeugName(werkzeug[0], titel[0])
     const liste: Baustein[] = [
       { art: 'aufgabe', text: fr ? `Où est-ce que tu peux essayer ${zit(kurzW)} ? Entoure.` : `Wo kannst du ${zit(kurzW)} ausprobieren? Kreis ein.` },
       { art: 'bilder', bilder: [{ bild: 'motiv:schule', text: fr ? 'en classe' : 'im Unterricht' }, { bild: 'motiv:freunde', text: fr ? 'à la récré' : 'in der Pause' }, { bild: 'motiv:turnmatte', text: fr ? 'au sport' : 'beim Sport' }, { bild: 'icon:question-mark', text: fr ? 'ailleurs' : 'woanders' }], spalten: 4, modus: 'einkreisen' },
@@ -392,7 +401,7 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
     { art: 'text', klein: true, text: fr ? 'Pour une situation des prochains jours – vraie ou inventée.' : 'Für eine Situation der nächsten Tage – echt oder erfunden.' },
     { art: 'ankreuzen', titel: fr ? 'Où est-ce que ça pourrait servir ? Plusieurs réponses possibles.' : 'Wo könnte es passen? Mehrere gehen.', items: fr ? ['en cours', 'à la récré', 'entre amis', 'au sport ou au club', 'en ligne, dans le chat', 'autre chose'] : ['im Unterricht', 'in der Pause', 'im Freundeskreis', 'im Training oder Verein', 'online, im Chat', 'etwas anderes'], spalten: 3 },
     // nur der Name des Werkzeugs (Blind-Bewertung 11: „dann: Stärken erkennen: Was tut sie? Wie heißt das Wort dazu?“)
-    ...werkzeug.slice(0, 2).map((w): Baustein => ({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si … (où, quand)' : 'Wenn … (wo, wann)', dann: fr ? `alors : ${w.split(/\s*[:(–]\s*/)[0] || w}` : `dann: ${w.split(/\s*[:(–]\s*/)[0] || w}` })),
+    ...werkzeug.slice(0, 2).map((w, i): Baustein => ({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si … (où, quand)' : 'Wenn … (wo, wann)', dann: fr ? `alors : ${werkzeugName(w, titel[i])}` : `dann: ${werkzeugName(w, titel[i])}` })),
   ]
   // ein Plan B füllt die Seite sinnvoll (Blind-Bewertung 9: „Wenn-dann-Blatt zu zwei Dritteln leer bei 11 Minuten“)
   if (werkzeug.length < 2) liste.push({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si ça ne marche pas tout de suite …' : 'Wenn es nicht gleich klappt …', dann: fr ? 'alors j’essaie :' : 'dann probiere ich:' })
@@ -413,15 +422,20 @@ function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlatt
     const liste: Baustein[] = []
     if ((o.alter ?? 0) >= 7) liste.push({ art: 'ankreuzen', titel: fr ? 'Ce que j’ai le plus aimé – coche :' : 'Das mochte ich am meisten – kreuz an:', items: titel, spalten: 1 })
     else liste.push({ art: 'aufgabe', text: fr ? 'Comment c’était, nos séances ? Entoure.' : 'Wie war unsere Zeit? Kreis ein.' }, { art: 'gefuehle', gefuehle: ['froh', 'stolz', 'ruhig'], modus: 'einkreisen' })
+    // was geholfen hat, in einem Satz (Blind-Bewertung 13: „zwei Kästchen und ein Abzeichen für 13 Minuten“)
+    if ((o.alter ?? 0) >= 8 && !o.wenigSchreiben) liste.push({ art: 'satzanfaenge', items: [fr ? 'Ce qui m’a le plus aidé :' : 'Am meisten geholfen hat mir:'], linien: 1 })
     // die kleine Feier: ein eigenes Abzeichen (Blind-Bewertung 9: „Rückblick & Feiern ohne Feier“)
     // ohne Leistungsbehauptung (Blind-Bewertung 10: „Das kann ich jetzt“ bei einem Kind, das noch übt)
-    liste.push({ art: 'aufgabe', text: fr ? 'Dessine ton badge : ce qu’on a fait ensemble.' : 'Mal dein Abzeichen: Das haben wir zusammen gemacht.' }, { art: 'feld', hoehe: 7, zeichnen: true })
+    liste.push({ art: 'aufgabe', text: fr ? 'Dessine ton badge : ce qu’on a fait ensemble.' : 'Mal dein Abzeichen: Das haben wir zusammen gemacht.' }, { art: 'feld', hoehe: 7, zeichnen: true, label: fr ? 'Mon badge' : 'Mein Abzeichen' })
     return liste
   }
   // Blind-Bewertung 9: das Blatt fragte, was der Kern schon gefragt hatte – der Kern ordnet und wiederholt, das Blatt hält
   // nur fest, was mitkommt und was als Nächstes kommt
   const liste: Baustein[] = [{ art: 'text', klein: true, text: fr ? 'Retour sur la série. Rien n’est obligatoire.' : 'Rückblick auf die Folge. Nichts davon ist Pflicht.' }]
-  liste.push({ art: 'satzanfaenge', items: [fr ? 'Ce que j’emporte :' : 'Das nehme ich mit:', fr ? 'Mon prochain petit pas, et où :' : 'Mein nächster kleiner Schritt, und wo:'], linien: 1 })
+  // die Werkzeuge der Folge zum Ankreuzen – ein Gerüst statt drei leerer Zeilen (Blind-Bewertung 13)
+  const werkzeuge = [...new Set(folge.slice(0, 6).map((e) => werkzeugName(e.typ === 'schritt' ? e.werkzeug?.[sprache] : undefined, textVon(e, sprache).titel)))]
+  if (werkzeuge.length >= 2) liste.push({ art: 'ankreuzen', titel: fr ? 'Ce que j’emporte de la série – coche :' : 'Das nehme ich aus der Folge mit – kreuz an:', items: werkzeuge, spalten: 1 })
+  liste.push({ art: 'satzanfaenge', items: [werkzeuge.length >= 2 ? (fr ? 'Ce qui m’a le plus aidé, et pourquoi :' : 'Am meisten geholfen hat, und warum:') : (fr ? 'Ce que j’emporte :' : 'Das nehme ich mit:'), fr ? 'Mon prochain petit pas, et où :' : 'Mein nächster kleiner Schritt, und wo:'], linien: 1 })
   if (!o.wenigSchreiben) liste.push({ art: 'frage', text: fr ? 'Ce qui a changé depuis la première séance :' : 'Das hat sich seit der ersten Sitzung verändert:', linien: 2 })
   return liste
 }
@@ -557,7 +571,9 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     // dünnes Kinderblatt (Blind-Bewertung 10: „untere Blatthälfte leer“): ein freiwilliges Malfeld zur Übung am Schluss
     const zahl = fertig.filter((b) => b.art !== 'text' && b.art !== 'aufgabe' && b.art !== 'bild' && b.art !== 'wortspeicher').length
     if ((o.alter ?? 12) < 12 && zahl <= 2 && !fertig.some((b) => b.art === 'feld'))
-      fertig.push({ art: 'aufgabe', text: fr ? 'Quand tu as fini : dessine ici ce que tu as fait pendant l’exercice.' : 'Wenn du fertig bist: Mal hier, was du bei der Übung gemacht hast.' }, { art: 'feld', hoehe: 6, zeichnen: true })
+      // … als „Und du?“ des Blatt-Gerüsts (Blind-Bewertung 13: „Mal hier, was du bei der Übung gemacht hast“ war ein immer
+      // gleicher Füller ohne Bezug zum eigenen Leben)
+      fertig.push({ art: 'aufgabe', text: fr ? 'Et toi ? Dessine un moment où ça peut te servir (vrai ou inventé).' : 'Und du? Mal einen Moment, in dem du das brauchen kannst (echt oder erfunden).' }, { art: 'feld', hoehe: 6, zeichnen: true })
     return fertig
   }
   const F = (de: string, f: string, linien = 2): Baustein => ({ art: 'frage', text: fr ? f : de, linien })
