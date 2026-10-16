@@ -539,6 +539,51 @@ und Satz der Woche), wenn `woche.elternbrief` da ist. Sie erscheinen in der Tool
     mit Bus-Zeichen, Strichen und Lochung, ohne Text).
   - Fahrzeuge: auto, zug (Lok mit Wagen), fahrrad, traktor, flugzeug, schiff (Segelboot), roller (Tretroller; `bus` gibt es schon).
 
+- **Farbige Motive: häufige Piktogramme, Zeichen, Gesten, Schilder** (`src/blatt/motive-neu-*.ts`, im Design-Umbau vom
+  16.10.2026 dazugekommen; auf Karten ≈ 18 mm noch erkennbar, im Schwarzweißdruck lesbar, auch als Ausmalbild mit
+  `modus: "anmalen"`; ohne Schrift, Marken und Landesflaggen). Wo es ein Motiv zu einem Piktogramm gibt, ersetzen es die
+  Bausteine für junge Stufen automatisch – die Zuordnung steht in `ICON_MOTIV` (`src/blatt/motive-neu.ts`):
+  - Spiel, Sinne, Licht: fussball, puzzle, tropfen, herz, wuerfel (Spielwürfel mit Punkten), bauklotz (Klotz mit Stern und
+    Kreis), auge-nah / ohr-nah / nase-nah (nur das Körperteil groß; `motiv:auge` und `motiv:ohr` sind ganze Köpfe),
+    haendedruck (zwei Hände, Herz darüber), gluehbirne, palette, fussspuren.
+  - Himmel, Musik, Auszeichnung: stern, sterne, mond (Sichel mit Sternen), noten, kopfhoerer, treppe (vier Stufen, Fähnchen),
+    stift, pokal, medaille (mit Band), zielscheibe (mit Pfeil).
+  - Gesten (Hand mit Ärmel, Daumen und Finger gut zu unterscheiden): daumen-hoch (grüner Ärmel), daumen-runter (roter Ärmel),
+    geste-daumen (= daumen-hoch), stopp-hand, geste-ein-finger, geste-zwei-finger, geste-ohr-zu (Ohr im Verbotszeichen).
+  - Schilder als reine Bildzeichen: schild-stopp (rotes Achteck), schild-verbot (roter Ring mit Balken), schild-schutzbrille,
+    schild-handschuhe, schild-radweg (blaue Gebotszeichen), schild-strom (gelbes Warndreieck), schild-notausgang,
+    schild-erste-hilfe (grün; das rote Kreuz auf Weiß ist ein geschütztes Zeichen und kommt nicht vor).
+  - Zuhause, Schule, Geräte: korb, thermometer, paket, glocke, feder, geschenk, sprechblase (drei Punkte), sprechblasen, kissen,
+    tuer, werkzeug (Hammer und Schraubenschlüssel), uhr, wecker, pflaster, lineal, notizbuch, schuessel (leer), suppe, leiter,
+    stiftebecher, knochen, handy, handy-chat (Chat-Blasen ohne Schrift), telefon, kerze, ausweis (Bibliotheksausweis ohne
+    Schrift), muenzen; dazu controller, kamera, megafon, fernseher, stoppuhr, tafel (Kreidezeichnung ohne Schrift), tshirt,
+    schere, hammer, rechenrahmen, kalender (ohne Zahlen), schutzschild, besteck, salzstreuer, konfetti, einkaufstasche,
+    papiertuete, pappbecher, schuh, toilettenpapier, fahne (einfarbig, keine Landesfahne), rettungsring, burgturm.
+  - Obst und Essen: banane, traube, kirsche, melone (Wassermelone), paprika, kaese, kuchen (Geburtstagstorte mit Kerzen), eis,
+    kakao, nudelsalat, chips, kaesebroetchen.
+  - Tiere und Kuscheltier: kalb, lamm, ferkel, welpe, kaetzchen (Jungtiere), kaninchen (kurze Ohren – nicht der `hase`),
+    teddy, lerche (singend, Gegenstück zur `eule`), pfote.
+  - Natur, Draußen, Spielsachen: schneeflocke, flamme, feuer (Lagerfeuer), gewitter, blatt (grün; im Herbst `blatt-herbst`),
+    zelt, sandkasten (mit Eimer und Schaufel), setzling, samenkorn (Kerne – fachlich genau, nicht der Topf), blumentopf,
+    schneckenhaus (leer; die Schnecke heißt `schnecke`), ball (Strandball), basketball, igelball, knetball, brille,
+    taschentuch (Packung mit Tuch), schliessfach (Spind), gehirn, auge-zu, theatermasken.
+  - Hilfe, Gesundheit, Bewegung: feuerwehrauto, krankenwagen, lastwagen, stethoskop, rollstuhl, notfallkarte (grünes Kreuz,
+    ohne Schrift), kuehlpack, klangschale, loeschdecke, kuechenwecker (Zeitgeber mit rotem Sektor), laufen (Kind rennt),
+    gehen (Kind geht), artistin (auf der Kugel).
+  - Verhalten, Gefühle, Spielschule: faust (rote Manschette, Wut), herzklopfen, gedanken-kopf (Kind mit Gedankenwolke), radio,
+    richterhammer, toilette, papierball (zerknülltes Blatt), handschuh (einzelner Handschuh), stall (Scheune).
+- **Wachsende Motive für Kurse** (`src/blatt/motive-neu-wachsend.ts`): dasselbe Bild in fünf Stufen, jede Stufe ein Teil
+  vollständiger, gleicher Bildausschnitt in allen Stufen (wie `bruecke-1` … `bruecke-5`). Im Kurs nimmt die Einheit n das Bild n:
+  - werkzeugkiste-1 … 5: offene Kiste, je Stufe ein Werkzeug mehr (Hammer, Schraubenzieher, Zange, Schraubenschlüssel,
+    Maßband); die fehlenden Plätze sind gestrichelt.
+  - turm-1 … 5: Turm aus bunten Bausteinen, ein Klotz mehr je Stufe, in Stufe 5 mit Fahne.
+  - blume-1 … 5: Samen im Boden (mit Gießwasser) – Keimling – Pflanze mit Knospe – Knospe öffnet sich – Blume.
+  - rucksack-1 … 5: leer und offen – Heft – Federmappe – Trinkflasche – zu mit Schnalle und Schlüsselanhänger, bereit.
+  - insel-1 … 5: Insel – Palme – Hütte – Steg mit Boot – Leuchtturm; ruhige, flache Formen für Kurse ab 13 Jahren.
+- Vorschau und Prüfung der neuen Motive: `npx tsx --tsconfig tsconfig.scripts.json scripts/motive-vorschau.tsx <ordner> [--neu | --alle | name,name]`
+  (Kontaktbogen mit Namen darunter in 40 mm und 18 mm, dazu Graustufen-PNG) und `scripts/motive-paare.tsx <ordner>`
+  (Piktogramm neben Motiv für jedes Paar aus `ICON_MOTIV`; meldet fehlende Namen).
+
 Figuren-Namen erscheinen **nicht** im Bild – in Geschichten dürfen die Kinder
 anders heißen. Bilder sparsam und gezielt einsetzen, nie als Dekoration.
 
