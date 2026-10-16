@@ -421,10 +421,19 @@ function kursDerFolge(c: Kontext): string | null {
   return k
 }
 
-function waehleRitual(c: Kontext, rolle: 'ankommen' | 'abschluss', min: number, salz: string, ausser: Set<string>, ohneFolge = false, themaK?: Set<string>): Bewertet | null {
-  // Einzelkurs: seine eigenen Rituale (Kurs-Pilot 16.10.: „Gefühlsfarbe“ und „Sternenkette“ hatten mit Eule Oli nichts zu tun)
+/** Einzelkurs: hat der Kurs der Folge eine eigene Sitzung mit dieser Nummer, gilt sie – auch für Übertragen und Rückblick
+ *  (Kurs-Sitzungen 5 und 6 sind dafür geschrieben; Kurs-Prüfung 16.10.: dort kamen die allgemeinen Schritte des Planers) */
+function kursHatSitzung(c: Kontext, nr: number): boolean {
   const kurs = kursDerFolge(c)
-  if (kurs && !themaK)
+  if (!kurs) return false
+  return (c.k.nachRolle.get('kern') ?? []).some((e) => e.typ === 'schritt' && e.linie?.id === kurs && e.linie.nr === nr && pruefe(e, c, { rolle: 'kern' }) === null)
+}
+
+function waehleRitual(c: Kontext, rolle: 'ankommen' | 'abschluss', min: number, salz: string, ausser: Set<string>, ohneFolge = false, themaK?: Set<string>): Bewertet | null {
+  // Einzelkurs: seine eigenen Rituale (Kurs-Pilot 16.10.: „Gefühlsfarbe“ und „Sternenkette“ hatten mit Eule Oli nichts zu tun) –
+  // auch vor den Ritualen zum Thema der Folge (Kurs-Prüfung 16.10.: bei Zielen aus einem Feld kamen die Themen-Rituale)
+  const kurs = kursDerFolge(c)
+  if (kurs)
     for (const e of c.k.nachRolle.get(rolle) ?? [])
       if (e.typ === 'schritt' && e.kurs === kurs && !ausser.has(e.id) && pruefe(e, c, { ritual: true, rolle }) === null) return bewerte(e, c, {})
   const gewuenscht = c.p.rituale?.[rolle]
@@ -988,7 +997,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     // Übertragung“)
     // … und ab 4 (Blind-Bewertung 13: Vorschule bekam in der Übertragen-Sitzung nur ein weiteres Spiel – jetzt die Szene zum
     // Nachspielen aus dem Alltags-Paket der Übung)
-    if (slot.rolle === 'kern' && (mitFaden(c) || c.alter >= 4) && c.weg !== 'leicht' && o.phase === 'uebertragen') {
+    if (slot.rolle === 'kern' && (mitFaden(c) || c.alter >= 4) && c.weg !== 'leicht' && o.phase === 'uebertragen' && !kursHatSitzung(c, o.nr)) {
       // Blind-Bewertung 7: „übertragen wird die zielfernste Übung der Folge (Würfelspiel, Kartentrick) statt des Meldens“ –
       // zuerst die Übung, die das Ziel dieser Sitzung direkt übt (Hauptcode vor Nebencode), dann die jüngere; Blind-Bewertung
       // 8: nie ein Rückblick- oder Einschätzwerkzeug („Vor einem Jahr und heute“, Werte-Jetons) und bei zwei Zielen beide
@@ -1032,7 +1041,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     // letzte Sitzung einer Folge (Jugendliche und Kinder ab 6): kein neues Werkzeug und keine wortgleiche Wiederholung,
     // sondern die Übungen der Folge durchgehen und festhalten, was bleibt (Blind-Bewertungen 5, 6 und 8: „die Rückblick-
     // Sitzung bringt einen neuen Kern“)
-    if (slot.rolle === 'kern' && c.weg !== 'leicht' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2) {
+    if (slot.rolle === 'kern' && c.weg !== 'leicht' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2 && !kursHatSitzung(c, o.nr)) {
       const sch = folgeTransferSchritt(c, slot.min, o.fruehereKerne!, o.uebertragen ?? [])
       ergebnis[i] = sch
       kern = c.k.eintraege.get(sch.ref)
@@ -1196,6 +1205,16 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       auswahl = passend
     }
     if (slot.rolle === 'kern' && c.weg === 'gruendlich' && o.phase !== 'leicht') auswahl = nachLinie(c, auswahl, o.fruehereKerne ?? [])
+    // Einzelkurs: Sitzung k der Folge ist Sitzung k des Kurses – die Variante, die zum Zugang des Kindes passt (Kurs-Prüfung
+    // 16.10.: sonst rutschte eine Einzelübung dazwischen und der Kurs lief versetzt weiter)
+    if (slot.rolle === 'kern' && c.weg === 'gruendlich' && o.phase !== 'leicht' && kursHatSitzung(c, o.nr)) {
+      const kurs = kursDerFolge(c)!
+      const dran = (c.k.nachRolle.get('kern') ?? [])
+        .filter((e) => e.typ === 'schritt' && e.linie?.id === kurs && e.linie.nr === o.nr && pruefe(e, c, { rolle: 'kern' }) === null)
+        .map((e) => ({ b: bewerte(e, c, { phase: o.phase }), locker: 0 }) as Wahl)
+        .sort((x, y) => rang(x.b, y.b, `${salz}|kurs`))
+      if (dran.length) auswahl = dran
+    }
     const w = auswahl[0]
     if (!w) {
       if (slot.rolle === 'kern') hinweise.push(`Hier fehlt Material: kein passender Kern für ${c.ziele[0]?.code ?? 'dieses Kind'} – im Baukasten suchen.`)
