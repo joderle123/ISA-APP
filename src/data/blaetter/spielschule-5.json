@@ -29,7 +29,7 @@
     "bild": "icon:abacus",
     "de": {
       "titel": "Zählen bis 10",
-      "untertitel": "Weiterzählen, Zehnerfeld, Zahlentreppe und zwei Hände",
+      "untertitel": "Zahlen von 6 bis 10: Finger zeigen, Punkte verbinden, rückwärts zählen",
       "anleitung": "Die Karten zweimal drucken: unter jeder Zahl von 6 bis 10 steht „fünf und …“. Auf Seite 2 verbindet das Kind die Punkte von 1 bis 10; neben jeder Zahl zeigen Punkte die Menge, das Lesen der Ziffern ist nicht nötig.",
       "bausteine": [
         {
@@ -146,7 +146,7 @@
         {
           "art": "bild",
           "bild": "motiv:rakete",
-          "groesse": "m",
+          "groesse": "l",
           "ausrichtung": "mitte"
         }
       ],
@@ -325,7 +325,7 @@
     },
     "fr": {
       "titel": "Compter jusqu’à 10",
-      "untertitel": "Continuer à compter, cadre à dix cases, escalier des nombres et deux mains",
+      "untertitel": "Les nombres de 6 à 10 : montrer avec les doigts, relier les points, compter à rebours",
       "anleitung": "Imprimer les cartes deux fois : sous chaque nombre de 6 à 10, on lit « cinq et … ». Sur la page 2, l’enfant relie les points de 1 à 10 ; à côté de chaque chiffre, des points montrent la quantité : pas besoin de lire les chiffres.",
       "bausteine": [
         {
@@ -442,7 +442,7 @@
         {
           "art": "bild",
           "bild": "motiv:rakete",
-          "groesse": "m",
+          "groesse": "l",
           "ausrichtung": "mitte"
         }
       ],
@@ -799,7 +799,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Male weiter: {rot}, {blau}, {blau}, {rot} … immer weiter.",
+          "text": "Male das Muster weiter: {rot}, {blau}, {blau}, {rot} …",
           "symbole": [
             "malen"
           ],
@@ -821,7 +821,8 @@
               "text": "{blau}"
             },
             {
-              "bild": "icon:circle"
+              "bild": "icon:circle",
+              "text": "{rot}"
             },
             {
               "bild": "icon:circle"
@@ -1114,7 +1115,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Colorie la suite : {rouge}, {bleu}, {bleu}, {rouge} … toujours.",
+          "text": "Continue le motif : {rouge}, {bleu}, {bleu}, {rouge} …",
           "symbole": [
             "malen"
           ],
@@ -1136,7 +1137,8 @@
               "text": "{bleu}"
             },
             {
-              "bild": "icon:circle"
+              "bild": "icon:circle",
+              "text": "{rouge}"
             },
             {
               "bild": "icon:circle"
@@ -1450,7 +1452,7 @@
     "bild": "icon:layout-grid",
     "de": {
       "titel": "Sortieren und ordnen",
-      "untertitel": "Nach Farbe, Form und Größe sortieren – und beim Aufräumen anwenden",
+      "untertitel": "Wohin gehört was? Sortieren, Paare finden – und beim Aufräumen anwenden",
       "anleitung": "Die Karten zweimal drucken, zum Sortieren und als Schilder für die Spielkisten nutzen. Seite 2 auf Karton kopieren, die Memory-Karten ausschneiden und zu zweit spielen; für die Jüngsten nur die oberen vier Paare.",
       "bausteine": [
         {
@@ -1771,7 +1773,7 @@
     },
     "fr": {
       "titel": "Trier et ranger",
-      "untertitel": "Trier par couleur, forme et taille – et s’en servir pour ranger",
+      "untertitel": "Où va quoi ? Trier, trouver des paires – et s’en servir pour ranger",
       "anleitung": "Imprimer les cartes deux fois, les utiliser pour trier et comme étiquettes pour les caisses de jeux. Copier la page 2 sur du carton, découper les cartes du memory et jouer à deux ; pour les plus petits, seulement les quatre premières paires.",
       "bausteine": [
         {
@@ -4367,7 +4369,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schneide aus und falte dein Hilfe-Buch. Male auf die letzte Seite.",
+          "text": "Schneide aus. Wir falten dein Hilfe-Buch. Male die letzte Seite.",
           "symbole": [
             "schneiden",
             "malen"
@@ -4593,7 +4595,7 @@
     "fr": {
       "titel": "Les pompiers nous aident",
       "untertitel": "Véhicules, appel au 112 et règles claires – sans faire peur",
-      "anleitung": "Imprimer les cartes deux fois et les utiliser pour le cercle, le memory et les jeux de pompiers. Sur la page 2, l’enfant découpe le livre d’aide et le plie comme l’enseignante le montre : couper, plier, fendre au milieu. La dernière page, l’enfant la dessine lui-même.",
+      "anleitung": "Imprimer les cartes deux fois et les utiliser pour le cercle, le memory et les jeux de pompiers. Sur la page 2, l’enfant découpe le livre d’aide et le plie comme l’enseignante le montre : couper, plier, fendre au milieu. La dernière page est un cadre à dessiner librement.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -4641,7 +4643,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Découpe et plie ton livre d’aide. Dessine sur la dernière page.",
+          "text": "Découpe. On plie ton livre d’aide. Dessine la dernière page.",
           "symbole": [
             "schneiden",
             "malen"
@@ -4663,7 +4665,7 @@
             },
             {
               "bild": "figur:lehrerin:ruhig:stehen",
-              "text": "Un adulte aide."
+              "text": "J’appelle l’adulte"
             },
             {
               "bild": "icon:phone",
@@ -4674,7 +4676,7 @@
               "text": "Ils arrivent."
             },
             {
-              "text": "Tout va bien."
+              "text": "Je suis à l’abri."
             }
           ]
         }
@@ -5318,7 +5320,7 @@
     "fr": {
       "titel": "Chez le médecin",
       "untertitel": "Examiner, soigner, être courageux : le cabinet médical en jeu de rôle",
-      "anleitung": "Imprimer les cartes deux fois, les découper et les utiliser pour le cercle, le memory et le jeu du médecin. Page 2 : l’enfant raconte la visite (attendre – examiner – pansement), entoure ce dont la médecin a besoin et ce qu’il ressent. La fiche du chercheur est une page à part.",
+      "anleitung": "Imprimer les cartes deux fois, les découper et les utiliser pour le cercle, le memory et le jeu du médecin. Page 2 : l’enfant raconte la visite (attendre – examiner – pansement), entoure ce dont la doctoresse a besoin et ce qu’il ressent. La fiche du chercheur est une page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -5334,11 +5336,11 @@
           "karten": [
             {
               "bild": "motiv:aerztin",
-              "titel": "la médecin"
+              "titel": "la doctoresse"
             },
             {
               "bild": "motiv:arzt",
-              "titel": "le médecin"
+              "titel": "le docteur"
             },
             {
               "bild": "icon:stethoscope",
@@ -5418,7 +5420,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "De quoi la médecin a-t-elle besoin ? Entoure.",
+          "text": "De quoi la doctoresse a-t-elle besoin ? Entoure.",
           "symbole": [
             "einkreisen",
             "nachdenken"
@@ -5477,7 +5479,7 @@
       "lehrer": {
         "ziel": "Les enfants découvrent la visite médicale par le jeu, nomment les parties du corps et les instruments et parlent de leurs émotions. Qui sait ce qui va se passer a moins peur.",
         "ablauf": [
-          "Lundi – cercle : affiche de questions « Que fait la médecin ou le médecin ? ». Une trousse circule ; deviner à quoi sert chaque chose. Présenter les cartes.",
+          "Lundi – cercle : affiche de questions « Que fait la doctoresse ou le médecin ? ». Une trousse circule ; deviner à quoi sert chaque chose. Présenter les cartes.",
           "Mardi – nommer les parties du corps ; écouter le cœur après avoir sauté (avec un rouleau en carton, seulement si l’enfant dit oui).",
           "Mercredi – expérience « Des doigts qui brillent en rouge » dans la salle assombrie, avec la fiche du chercheur (page à part). Vote pour le cabinet.",
           "Jeudi – jeu de rôle du cabinet avec accueil et salle d’attente ; on examine poupées et peluches.",
@@ -5485,10 +5487,10 @@
         ],
         "differenzierung": {
           "leichter": "Commencer avec trois instruments (stéthoscope, pansement, thermomètre) ; montrer l’examen sur une poupée.",
-          "schwerer": "Jouer la visite avec des rôles (accueil, médecin, enfant, parent) et expliquer ce que fait la médecin."
+          "schwerer": "Jouer la visite avec des rôles (accueil, médecin, enfant, parent) et expliquer ce que fait la doctoresse."
         },
         "impulse": [
-          "Que fait la médecin avec le stéthoscope ?",
+          "Que fait la doctoresse avec le stéthoscope ?",
           "Qu’est-ce qui t’aide quand tu as peur ?",
           "Comment consoler un enfant blessé ?"
         ],
@@ -5505,7 +5507,7 @@
         ],
         "spielschule": {
           "wortschatz": [
-            "la médecin",
+            "la doctoresse",
             "le médecin",
             "le stéthoscope",
             "le pansement",
@@ -5535,7 +5537,7 @@
               "art": "spiel",
               "titel": "Le cabinet médical",
               "dauer": "25 min",
-              "text": "Accueil avec téléphone, salle d’attente avec des livres, lit d’examen. Les enfants jouent la médecin, l’enfant, le parent et l’accueil ; on examine poupées et peluches. On change de rôle.",
+              "text": "Accueil avec téléphone, salle d’attente avec des livres, lit d’examen. Les enfants jouent la doctoresse, l’enfant, le parent et l’accueil ; on examine poupées et peluches. On change de rôle.",
               "material": "couverture, téléphone, mallette, peluches"
             },
             {
@@ -5593,12 +5595,12 @@
           ],
           "entscheiden": {
             "text": "Mercredi : les enfants posent des cubes sur un cabinet pour le jeu de rôle : pédiatre, dentiste ou ophtalmo. Celui qui a le plus de cubes est installé jeudi.",
-            "frage": "Que fait la médecin ou le médecin ?"
+            "frage": "Que fait la doctoresse ou le médecin ?"
           },
           "stufen": {
             "precoce": "Nommer des objets de la trousse, les montrer sur la poupée et coller un pansement.",
             "p1": "Nommer parties du corps et instruments ; prendre un rôle au cabinet.",
-            "p2": "Raconter la visite : que fait la médecin d’abord, ensuite ? Lui poser des questions."
+            "p2": "Raconter la visite : que fait la doctoresse d’abord, ensuite ? Lui poser des questions."
           },
           "zugang": [
             "Laisser toucher une vraie trousse ; examiner d’abord la poupée, puis un enfant s’il le veut.",
@@ -5630,7 +5632,7 @@
               "Assombrir la salle, les enfants sont assis en cercle.",
               "Un enfant pose le bout des doigts sur la vitre de la lampe ; l’enseignante la tient bien.",
               "Tous regardent : de quelle couleur est le doigt ? Vois-tu des lignes sombres dedans ?",
-              "Montrer la photo : que voit la médecin avec ça dans notre corps ?"
+              "Montrer la photo : que voit la doctoresse avec ça dans notre corps ?"
             ],
             "vermutung": "Choisir une carte avant d’allumer : le doigt reste sombre, brille en blanc ou brille en rouge.",
             "beobachten": "Le bout des doigts brille en rouge-orangé ; l’ongle et l’os font des ombres plus sombres. Demander : que vois-tu dans le doigt ? Où est-ce le plus clair ?",
@@ -5856,6 +5858,19 @@
               "paar": "motiv:bus"
             }
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was möchtest du gern arbeiten? Male dich dabei.",
+          "symbole": [
+            "malen"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 6
         }
       ],
       "lehrer": {
@@ -6070,7 +6085,7 @@
             },
             {
               "bild": "motiv:feuerwehrfrau",
-              "titel": "la pompière",
+              "titel": "la femme pompier",
               "text": "elle éteint le feu"
             },
             {
@@ -6126,6 +6141,19 @@
               "paar": "motiv:bus"
             }
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que voudrais-tu faire comme métier ? Dessine-toi.",
+          "symbole": [
+            "malen"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 6
         }
       ],
       "lehrer": {
@@ -6699,7 +6727,7 @@
     },
     "fr": {
       "titel": "Sur le chantier",
-      "untertitel": "Construire, engins, casque : observer, compter et continuer des suites",
+      "untertitel": "Construire, engins, casque : observer, chercher, compter et soulever",
       "anleitung": "Imprimer les cartes deux fois, les découper et les utiliser pour le cercle, le memory et les jeux de construction. Sur la page 2, l’enfant cherche les pelleteuses sur le chantier, les entoure et les compte ; les plus grands cherchent aussi les casques.",
       "bausteine": [
         {
@@ -7088,7 +7116,7 @@
     "de": {
       "titel": "Wir feiern Geburtstag",
       "untertitel": "Älter werden, Jahre zählen, sich mitfreuen – jedes Kind ist wichtig",
-      "anleitung": "Die Karten zweimal drucken, ausschneiden und für Sitzkreis, Memory und das Geburtstagsritual nutzen. Auf Seite 2 schneidet und bemalt das Kind seine Krone; Erwachsene kleben an der Rückseite einen Streifen zum Verlängern an.",
+      "anleitung": "Die Karten zweimal drucken, ausschneiden und für Sitzkreis, Memory und das Geburtstagsritual nutzen. Auf Seite 2 schneidet und bemalt das Kind seine Krone; Erwachsene kleben an der Rückseite einen Streifen zum Verlängern an. Klebepunkte bereitlegen.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -7338,7 +7366,7 @@
     "fr": {
       "titel": "On fête les anniversaires",
       "untertitel": "Grandir, compter les bougies, partager la joie – chaque enfant compte",
-      "anleitung": "Imprimer les cartes deux fois, les découper et les utiliser pour le cercle, le memory et le rituel d’anniversaire. Sur la page 2, l’enfant découpe et décore sa couronne ; un adulte colle une bande à l’arrière pour l’agrandir.",
+      "anleitung": "Imprimer les cartes deux fois, les découper et les utiliser pour le cercle, le memory et le rituel d’anniversaire. Sur la page 2, l’enfant découpe et décore sa couronne ; un adulte colle une bande à l’arrière pour l’agrandir. Préparer des gommettes.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -7679,7 +7707,7 @@
     "schlagworte": [
       "Spielschule",
       "Feste",
-      "Fuesent",
+      "Fuesend",
       "Karneval",
       "Verkleiden",
       "Luxemburg",
@@ -7687,13 +7715,13 @@
     ],
     "bild": "icon:confetti",
     "de": {
-      "titel": "Fuesent – wir verkleiden uns",
+      "titel": "Fuesend – wir verkleiden uns",
       "untertitel": "Karneval in Luxemburg: Masken, Musik und Verkleiden – nur wer mag",
       "anleitung": "Die Karten zweimal drucken und für Sitzkreis, Memory und Verkleidungsspiele nutzen. Seite 2 auf festen Karton kopieren: Das Kind malt seine Maske an, Erwachsene schneiden die Augenlöcher und befestigen ein Gummiband am Kopf, nie am Hals. Wer keine Maske mag, hält sie nur vor.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Wer möchtest du an der Fuesent sein? Zeig die Karte und sag das Wort.",
+          "text": "Wer möchtest du an der Fuesend sein? Zeig die Karte und sag das Wort.",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -7705,7 +7733,7 @@
           "karten": [
             {
               "bild": "icon:confetti",
-              "titel": "die Fuesent",
+              "titel": "die Fuesend",
               "text": "wir verkleiden uns"
             },
             {
@@ -7758,9 +7786,9 @@
         }
       ],
       "lehrer": {
-        "ziel": "Die Kinder lernen die Fuesent als fröhliche Zeit des Verkleidens kennen, probieren Rollen aus und sprechen über Gefühle. Sie erfahren: Unter jeder Maske ist ein Mensch, und niemand muss eine tragen.",
+        "ziel": "Die Kinder lernen die Fuesend als fröhliche Zeit des Verkleidens kennen, probieren Rollen aus und sprechen über Gefühle. Sie erfahren: Unter jeder Maske ist ein Mensch, und niemand muss eine tragen.",
         "ablauf": [
-          "Montag – Sitzkreis: Fragenplakat „Wer möchte ich an der Fuesent sein?“. Verkleidungskiste öffnen, Karten einführen. Wer hat schon einen Umzug gesehen?",
+          "Montag – Sitzkreis: Fragenplakat „Wer möchte ich an der Fuesend sein?“. Verkleidungskiste öffnen, Karten einführen. Wer hat schon einen Umzug gesehen?",
           "Dienstag – Maske auf, Maske ab: vor den Kindern aufsetzen und abnehmen; im Spiegel ansehen, wer man jetzt ist.",
           "Mittwoch – Experiment „Der Fettfleck wird ein Fenster“ (siehe Seite Forschen); das Blatt: Maske bemalen. Abstimmung: Motto der Kavalkade.",
           "Donnerstag – Verkleiden und sich selbst beschreiben, Rasseln bauen, der Reim mit Fragen und Antworten.",
@@ -7777,17 +7805,17 @@
         ],
         "tipps": [
           "Masken und Schminke nur freiwillig, ein Nein gilt. Kinderschminke vorher an der Haut testen, Allergien erfragen.",
-          "Große Augenlöcher, kein Band um den Hals; Konfetti nur aus Papier. Die Einheit in der Woche vor der Fuesvakanz planen: Kavalkaden und Fuesent-Dënschdeg liegen in den Ferien."
+          "Große Augenlöcher, kein Band um den Hals; Konfetti nur aus Papier. Die Einheit in der Woche vor der Fuesvakanz planen: Kavalkaden und Fastnachtsdienstag liegen in den Ferien."
         ],
         "material": "Verkleidungskiste, großer Spiegel, Karton, Gummiband, Joghurtbecher, Nudeln, Klebeband, Kinderschminke, Papierkonfetti, Instrumente, Öl, Pinsel, Papier",
-        "hintergrund": "In Luxemburg ist die Fuesent die Zeit vor dem Aschermittwoch: Man verkleidet sich, in vielen Orten ziehen Kavalkaden durch die Straßen, und es gibt typisches Gebäck wie die Fuesentskichelcher. Für kleine Kinder ist Verkleiden vor allem Rollenspiel – das fördert Fantasie, Sprache und Selbststeuerung (Bodrova & Leong, 2007). Masken können aber verunsichern, weil das vertraute Gesicht verschwindet. Gefühle zu benennen und ernst zu nehmen, hilft Kindern, sie zu verstehen und zu regulieren (Denham, 1998).",
+        "hintergrund": "In Luxemburg ist die Fuesend die Zeit vor dem Aschermittwoch: Man verkleidet sich, in vielen Orten ziehen Kavalkaden durch die Straßen, und es gibt typisches Gebäck wie die Fuesekichelcher. Für kleine Kinder ist Verkleiden vor allem Rollenspiel – das fördert Fantasie, Sprache und Selbststeuerung (Bodrova & Leong, 2007). Masken können aber verunsichern, weil das vertraute Gesicht verschwindet. Gefühle zu benennen und ernst zu nehmen, hilft Kindern, sie zu verstehen und zu regulieren (Denham, 1998).",
         "quellen": [
           "Bodrova, E. & Leong, D. J. (2007). Tools of the Mind: The Vygotskian Approach to Early Childhood Education (2nd ed.). Upper Saddle River, NJ: Pearson.",
           "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford."
         ],
         "spielschule": {
           "wortschatz": [
-            "die Fuesent",
+            "die Fuesend",
             "die Maske",
             "der Clown",
             "die Katze",
@@ -7869,7 +7897,7 @@
           ],
           "entscheiden": {
             "text": "Mittwoch: Die Kinder legen Bausteine zu einem Motto für die Kavalkade am Freitag: Tiere, Clowns oder Fantasiewesen. Das Motto mit den meisten Bausteinen gilt.",
-            "frage": "Wer möchte ich an der Fuesent sein?"
+            "frage": "Wer möchte ich an der Fuesend sein?"
           },
           "stufen": {
             "precoce": "Tuch oder Hut ausprobieren, sich im Spiegel erkennen; die Maske nur vorhalten.",
@@ -7937,13 +7965,13 @@
       }
     },
     "fr": {
-      "titel": "Fuesent – on se déguise",
+      "titel": "Fuesend – on se déguise",
       "untertitel": "Le carnaval au Luxembourg : masques, musique et déguisements – seulement si l’on veut",
-      "anleitung": "Imprimer les cartes deux fois et les utiliser pour le cercle, le memory et les jeux de déguisement. Copier la page 2 sur du carton solide : l’enfant colorie son masque, un adulte découpe les trous des yeux et fixe un élastique autour de la tête, jamais du cou. Qui n’aime pas le masque le tient devant lui.",
+      "anleitung": "Imprimer les cartes deux fois et les utiliser pour le cercle, le memory et les jeux de déguisement. Copier la page 2 sur du carton solide : l’enfant colorie son masque, un adulte découpe les trous des yeux et fixe un élastique autour de la tête, jamais du cou. Qui n’aime pas porter le masque peut le tenir devant son visage.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Qui voudrais-tu être à la Fuesent ? Montre la carte et dis le mot.",
+          "text": "Qui voudrais-tu être à la Fuesend ? Montre la carte et dis le mot.",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -7955,7 +7983,7 @@
           "karten": [
             {
               "bild": "icon:confetti",
-              "titel": "la Fuesent",
+              "titel": "la Fuesend",
               "text": "on se déguise"
             },
             {
@@ -8008,9 +8036,9 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les enfants découvrent la Fuesent comme un temps joyeux de déguisement, essaient des rôles et parlent de leurs émotions. Ils apprennent que sous chaque masque, il y a quelqu’un, et que personne n’est obligé d’en porter.",
+        "ziel": "Les enfants découvrent la Fuesend comme un temps joyeux de déguisement, essaient des rôles et parlent de leurs émotions. Ils apprennent que sous chaque masque, il y a quelqu’un, et que personne n’est obligé d’en porter.",
         "ablauf": [
-          "Lundi – cercle : affiche de questions « Qui voudrais-tu être à la Fuesent ? ». Ouvrir la caisse de déguisements, présenter les cartes. Qui a déjà vu un défilé ?",
+          "Lundi – cercle : affiche de questions « Qui voudrais-tu être à la Fuesend ? ». Ouvrir la caisse de déguisements, présenter les cartes. Qui a déjà vu un défilé ?",
           "Mardi – masque mis, masque ôté : le mettre et l’enlever devant les enfants ; se regarder dans le miroir : qui est-on maintenant ?",
           "Mercredi – expérience « La tache de gras devient fenêtre » (page Chercher) ; la fiche : colorier le masque. Vote : thème de la cavalcade.",
           "Jeudi – se déguiser et se décrire, fabriquer des hochets, la comptine en questions et réponses.",
@@ -8030,14 +8058,14 @@
           "Grands trous pour les yeux, pas de cordon autour du cou ; confettis en papier. Planifier l’unité la semaine avant les vacances de carnaval : cavalcades et mardi gras tombent pendant les vacances."
         ],
         "material": "Caisse de déguisements, grand miroir, carton, élastique, pots de yaourt, pâtes, ruban adhésif, maquillage pour enfants, confettis en papier, instruments, huile, pinceaux, papier",
-        "hintergrund": "Au Luxembourg, la Fuesent est la période avant le mercredi des Cendres : on se déguise, des cavalcades défilent dans de nombreuses localités et on mange des pâtisseries typiques comme les Fuesentskichelcher. Pour les jeunes enfants, se déguiser est surtout un jeu de rôle qui nourrit l’imagination, le langage et l’autorégulation (Bodrova & Leong, 2007). Les masques peuvent aussi inquiéter, car le visage familier disparaît. Nommer les émotions et les prendre au sérieux aide l’enfant à les comprendre et à les réguler (Denham, 1998).",
+        "hintergrund": "Au Luxembourg, la Fuesend est la période avant le mercredi des Cendres : on se déguise, des cavalcades défilent dans de nombreuses localités et on mange des pâtisseries typiques comme les Fuesekichelcher. Pour les jeunes enfants, se déguiser est surtout un jeu de rôle qui nourrit l’imagination, le langage et l’autorégulation (Bodrova & Leong, 2007). Les masques peuvent aussi inquiéter, car le visage familier disparaît. Nommer les émotions et les prendre au sérieux aide l’enfant à les comprendre et à les réguler (Denham, 1998).",
         "quellen": [
           "Bodrova, E. & Leong, D. J. (2007). Tools of the Mind: The Vygotskian Approach to Early Childhood Education (2nd ed.). Upper Saddle River, NJ: Pearson.",
           "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford."
         ],
         "spielschule": {
           "wortschatz": [
-            "la Fuesent",
+            "la Fuesend",
             "le masque",
             "le clown",
             "le chat",
@@ -8119,7 +8147,7 @@
           ],
           "entscheiden": {
             "text": "Mercredi : les enfants posent des cubes sur un thème pour la cavalcade de vendredi : animaux, clowns ou êtres imaginaires. Le thème qui a le plus de cubes gagne.",
-            "frage": "Qui voudrais-tu être à la Fuesent ?"
+            "frage": "Qui voudrais-tu être à la Fuesend ?"
           },
           "stufen": {
             "precoce": "Essayer un foulard ou un chapeau, se reconnaître au miroir ; tenir le masque devant soi.",
@@ -8194,9 +8222,9 @@
       "sprachen": {
         "woerter": [
           {
-            "de": "die Fuesent",
+            "de": "die Fuesend",
             "fr": "le carnaval",
-            "lb": "d’Fuesent",
+            "lb": "d’Fuesend",
             "pt": "o carnaval"
           },
           {
@@ -8240,17 +8268,17 @@
       },
       "elternbrief": {
         "de": {
-          "woche": "Diese Woche feiern wir die Fuesent: Die Kinder verkleiden sich, wenn sie mögen, gestalten Masken und Rasseln und ziehen am Freitag in einer kleinen Kavalkade durch die Spillschoul. Wer keine Maske mag, macht anders mit.",
+          "woche": "Diese Woche feiern wir die Fuesend: Die Kinder verkleiden sich, wenn sie mögen, gestalten Masken und Rasseln und ziehen am Freitag in einer kleinen Kavalkade durch die Spillschoul. Wer keine Maske mag, macht anders mit.",
           "idee": "Lassen Sie Ihr Kind selbst entscheiden, ob und wie es sich verkleidet: Ein Tuch oder Hut reicht. Setzen Sie Masken vor seinen Augen auf und wieder ab.",
           "bitte": "Wie feiert Ihre Familie, wenn man sich verkleidet? Erzählen Sie uns davon oder bringen Sie ein Tuch oder eine Maske mit, wenn Sie mögen."
         },
         "fr": {
-          "woche": "Cette semaine, nous fêtons la Fuesent : les enfants se déguisent, s’ils le souhaitent, créent masques et hochets et défilent vendredi dans une petite cavalcade à l’école. Qui n’aime pas les masques participe autrement.",
+          "woche": "Cette semaine, nous fêtons la Fuesend : les enfants se déguisent, s’ils le souhaitent, créent masques et hochets et défilent vendredi dans une petite cavalcade à l’école. Qui n’aime pas les masques participe autrement.",
           "idee": "Laissez votre enfant décider s’il se déguise et comment : un foulard ou un chapeau suffit. Mettez et ôtez les masques devant ses yeux.",
           "bitte": "Comment votre famille fête-t-elle quand on se déguise ? Racontez-nous ou apportez un foulard ou un masque, si vous le souhaitez."
         },
         "pt": {
-          "woche": "Esta semana festejamos a Fuesent, o carnaval do Luxemburgo: as crianças disfarçam-se, se quiserem, fazem máscaras e chocalhos e, na sexta-feira, desfilam numa pequena cavalgata pela escola. Quem não gosta de máscaras participa de outra maneira.",
+          "woche": "Esta semana festejamos a Fuesend, o carnaval do Luxemburgo: as crianças disfarçam-se, se quiserem, fazem máscaras e chocalhos e, na sexta-feira, desfilam numa pequena cavalgata pela escola. Quem não gosta de máscaras participa de outra maneira.",
           "idee": "Deixem a criança decidir se e como se disfarça: um lenço ou um chapéu chega. Ponham e tirem as máscaras diante dos olhos dela.",
           "bitte": "Como festeja a vossa família quando há disfarces? Contem-nos ou tragam um lenço ou uma máscara, se quiserem."
         }
@@ -8361,6 +8389,12 @@
             },
             {
               "bild": "motiv:marienkaefer"
+            },
+            {
+              "bild": "motiv:regenwurm"
+            },
+            {
+              "bild": "motiv:schnecke"
             }
           ]
         }
@@ -8626,6 +8660,12 @@
             },
             {
               "bild": "motiv:marienkaefer"
+            },
+            {
+              "bild": "motiv:regenwurm"
+            },
+            {
+              "bild": "motiv:schnecke"
             }
           ]
         }
@@ -8972,12 +9012,19 @@
         },
         {
           "art": "aufgabe",
-          "text": "Male das Péckvillchen {blau} an. Fädle die Wolle rundherum.",
+          "text": "Male das Péckvillchen {blau} an.",
           "symbole": [
-            "malen",
-            "zeigen"
+            "malen"
           ],
           "niveau": "einstieg"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fädle die Wolle durch die Löcher.",
+          "symbole": [
+            "verbinden"
+          ],
+          "niveau": "stern"
         },
         {
           "art": "faedelkarte",
@@ -9234,12 +9281,19 @@
         },
         {
           "art": "aufgabe",
-          "text": "Colorie le Péckvillchen en {bleu}. Enfile la laine tout autour.",
+          "text": "Colorie le Péckvillchen en {bleu}.",
           "symbole": [
-            "malen",
-            "zeigen"
+            "malen"
           ],
           "niveau": "einstieg"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Enfile la laine dans les trous.",
+          "symbole": [
+            "verbinden"
+          ],
+          "niveau": "stern"
         },
         {
           "art": "faedelkarte",
@@ -10314,12 +10368,31 @@
         },
         {
           "art": "aufgabe",
-          "text": "Zähl: Wie oft musst du warten?",
+          "text": "Wie oft siehst du das Karussell? Kreise die Zahl ein.",
           "symbole": [
-            "zeigen",
-            "sprechen"
+            "einkreisen",
+            "nachdenken"
           ],
           "niveau": "stern"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:number-1"
+            },
+            {
+              "bild": "icon:number-2"
+            },
+            {
+              "bild": "icon:number-3"
+            },
+            {
+              "bild": "icon:number-4"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -10626,12 +10699,31 @@
         },
         {
           "art": "aufgabe",
-          "text": "Compte : combien de fois dois-tu attendre ?",
+          "text": "Combien de fois vois-tu le manège ? Entoure le nombre.",
           "symbole": [
-            "zeigen",
-            "sprechen"
+            "einkreisen",
+            "nachdenken"
           ],
           "niveau": "stern"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:number-1"
+            },
+            {
+              "bild": "icon:number-2"
+            },
+            {
+              "bild": "icon:number-3"
+            },
+            {
+              "bild": "icon:number-4"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -12395,7 +12487,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schneide aus und falte dein Buch. Male deine Geschichte.",
+          "text": "Schneide aus. Wir falten dein Buch. Male deine Geschichte.",
           "symbole": [
             "schneiden",
             "malen"
@@ -12685,7 +12777,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Découpe et plie ton livre. Dessine ton histoire.",
+          "text": "Découpe. On plie ton livre. Dessine ton histoire.",
           "symbole": [
             "schneiden",
             "malen"
@@ -13080,7 +13172,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Welches Gefühl spielst du? Zeig es mit dem Gesicht. Kreise ein.",
+          "text": "Zeig ein Gefühl mit dem Gesicht. Kreise es ein.",
           "symbole": [
             "zeigen",
             "einkreisen"
@@ -13397,7 +13489,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quelle émotion joues-tu ? Montre-la avec ton visage. Entoure.",
+          "text": "Montre une émotion avec ton visage. Entoure-la.",
           "symbole": [
             "zeigen",
             "einkreisen"

@@ -229,7 +229,7 @@
           "Termin 1, Menü-Rat (30 Min.): Allergien ohne Namen vorlesen (Aufgabe 1), vier Menüs vorstellen, Ampel-Abfrage (2), Einkaufsliste (3).",
           "Termin 1, Küchen-Stationen: die Regeln auf Seite 2 lesen (Aufgabe 5).",
           "Termin 1, Ende: Die Rollen Rezept und Zeit schreiben mit der Leitung den Zeitplan rückwärts (Aufgabe 4).",
-          "Termin 2: Seite 2 in A3 in der Küche aufhängen, den Zeitplan daneben."
+          "Termin 2: Seite 2 mit Zeitplan und Küchenregeln in A3 in der Küche aufhängen."
         ],
         "hintergrund": "Die Menü-Ampel folgt einem einfachen Gedanken: Gewählt wird nicht, was die meisten am liebsten mögen, sondern womit alle leben können. So bekommen auch Stimmen Gewicht, die bei einer Mehrheitsabstimmung untergehen, und die Gruppe übt, Unterschiede – Allergien, religiöse Essensregeln, Vorlieben – als Aufgabe zu sehen statt als Störung. Mitbestimmung stärkt die Bereitschaft, Absprachen einzuhalten (Deci & Ryan, 2000). Rückwärts zu planen entlastet das Arbeitsgedächtnis: Der Plan hängt an der Wand, statt im Kopf gehalten zu werden (Diamond, 2013).",
         "quellen": [
@@ -333,7 +333,7 @@
               "text": "Erinnert an Händewaschen und getrennte Bretter, weiß, wo Erste-Hilfe-Kasten und Löschdecke sind. Wenn es hakt: freundlich erinnern statt kontrollieren."
             },
             {
-              "bild": "icon:heart-handshake",
+              "bild": "icon:table",
               "titel": "Tisch und Ordnung",
               "text": "Spült schon beim Kochen, hält die Flächen frei, deckt den Tisch und sorgt dafür, dass alle zusammen anfangen. Wenn es hakt: eine Sache fertig machen, dann die nächste."
             }
@@ -552,7 +552,7 @@
         },
         {
           "art": "schritte",
-          "linien": 1,
+          "linien": 2,
           "items": [
             {
               "titel": "Hilfe finden · Skill: Hilfe holen",

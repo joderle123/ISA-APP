@@ -487,7 +487,7 @@
             },
             {
               "titel": "R8 · La meilleure amie",
-              "text": "Inês se vexe quand sa meilleure amie Amira fait quelque chose avec d’autres, et elle ne lui parle plus pendant des jours."
+              "text": "Inês se vexe quand sa meilleure amie Amira passe du temps avec d’autres personnes, et elle ne lui parle plus pendant des jours."
             },
             {
               "titel": "R9 · Le non",
@@ -498,7 +498,7 @@
         {
           "art": "aufgabe",
           "text": "Cartes de signal à montrer assis : découpe-les et colorie-les en vert, jaune et rouge.",
-          "hinweis": "Pour les cartes R, elles signifient sain, malsain, violence ; pour les cartes E : oui clair, pas clair, pas de oui.",
+          "hinweis": "Pour les cartes R, elles signifient sain, malsain, violence ; pour les cartes E : oui clair, pas clair, pas de consentement.",
           "symbole": [
             "schneiden",
             "malen"
@@ -521,7 +521,7 @@
             },
             {
               "titel": "Rouge",
-              "text": "violence · pas de oui",
+              "text": "violence · pas de consentement",
               "bild": "icon:hand-stop"
             }
           ]
@@ -531,7 +531,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "E · Consentement : oui clair, pas clair ou pas de oui ?",
+          "text": "E · Consentement : oui clair, pas clair ou pas de consentement ?",
           "hinweis": "Que pourrait demander ou faire la personne ?",
           "symbole": [
             "schneiden",
@@ -647,7 +647,7 @@
         "ablauf": [
           "Imprimer sur papier épais, découper, plastifier ; R1–R9 en double, cartes de signal une fois par personne. Retirer des cartes ou changer les noms si elles ressemblent à une situation vécue dans le groupe.",
           "R (parcours des feux) : vert R2, R4, R9 – jaune R1, R7, R8 – rouge R3, R5, R6. Le jaune passe au rouge dès qu’interviennent la peur, la menace ou la contrainte.",
-          "E (ligne du oui) : oui clair seulement E9, jusqu’à ce qu’Ana revienne dessus – ensuite son non compte ; pas clair, donc demander : E4, E7 – pas de oui : E1, E2, E3, E5, E6, E8. E1 : taper dans la main oui, accolade non.",
+          "E (ligne du oui) : oui clair seulement E9, jusqu’à ce qu’Ana revienne dessus – ensuite son non compte ; pas clair, donc demander : E4, E7 – pas de consentement : E1, E2, E3, E5, E6, E8. E1 : taper dans la main oui, accolade non.",
           "N (quatre coins) : options A à D et solutions dans la séance 30."
         ],
         "hintergrund": "Les scènes inventées permettent de parler de sujets difficiles sans que personne ait à se dévoiler. L’étude de cas et le jeu de rôle sont au cœur des programmes efficaces contre la violence dans les relations amoureuses des jeunes (Foshee et al., 2004). Les cartes E montrent que l’accord se négocie souvent sans mots – et que malentendus et prétextes surgissent alors facilement (Beres, 2007). Les cartes N reprennent des formes de chantage décrites par Wolak et al. (2018) : par d’anciens partenaires et par des inconnus rencontrés en ligne.",
@@ -969,7 +969,7 @@
             "welches Geschlecht man selbst ist",
             "verhindert eine Schwangerschaft",
             "in wen man sich verliebt",
-            "Das eigene Geschlecht ist ein anderes als das, das bei der Geburt eingetragen wurde."
+            "wenn das eigene Geschlecht nicht dem bei der Geburt eingetragenen entspricht"
           ]
         },
         {
@@ -1367,7 +1367,7 @@
           "optionen": [
             "grossesse",
             "infections",
-            "pas de protection sûre"
+            "pas fiable"
           ],
           "items": [
             "Préservatif",
@@ -1379,7 +1379,7 @@
         {
           "art": "info",
           "symbol": "wissen",
-          "text": "Les préservatifs s’achètent sans ordonnance, par exemple en pharmacie et au supermarché. Pour la contraception, le Planning Familial ainsi que les médecins donnent des conseils."
+          "text": "Les préservatifs s’achètent sans ordonnance, par exemple en pharmacie ou au supermarché. Conseils sur la contraception : Planning Familial, médecins."
         },
         {
           "art": "aufgabe",
@@ -1419,7 +1419,7 @@
         {
           "art": "info",
           "symbol": "merke",
-          "text": "Les films pornos sont joués, montés et faits pour des adultes. Ils ne servent pas d’éducation sexuelle : la vraie sexualité, c’est demander, se protéger et de vrais corps – et quand quelque chose fait mal, on arrête."
+          "text": "Les films porno sont joués, montés et faits pour des adultes. Ils ne servent pas d’éducation sexuelle : la vraie sexualité repose sur le dialogue, la protection et de vrais corps – et quand quelque chose fait mal, on arrête."
         },
         {
           "art": "notfall",
@@ -1445,7 +1445,7 @@
         "ablauf": [
           "Préparation : imprimer la station 1 sur du papier épais, découper, mélanger ; chaque binôme reçoit un jeu. Station 3 : affiche et post-it.",
           "Parcours (20 min) : 5 min par station, changement au signal ; l’équipe encadrante circule.",
-          "Corrigé station 1 : 1D, 2B, 3F, 4E, 5A, 6C. Station 2 : préservatif – grossesse et beaucoup d’infections ; pilule – grossesse seulement ; « faire attention » – pas sûr ; pilule du lendemain – seulement en cas d’urgence, le plus tôt possible, ne protège pas des infections.",
+          "Corrigé station 1 : 1D, 2B, 3F, 4E, 5A, 6C. Station 2 : préservatif – grossesse et beaucoup d’infections ; pilule – grossesse seulement ; « faire attention » – pas fiable ; pilule du lendemain – seulement en cas d’urgence, le plus tôt possible, ne protège pas des infections.",
           "Corrigé station 4 : relèvent de la vraie vie les gens qui hésitent et qui rient, ainsi que les corps différents ; tout le reste n’existe que dans le porno. Bilan (5 min) : lire l’affiche à voix haute, sans noms."
         ],
         "hintergrund": "Les stations répartissent l’attention : les binômes lisent à leur rythme et posent des questions sans devoir répondre devant tout le groupe – un grand avantage pour des sujets gênants. Les contenus suivent les standards de l’éducation sexuelle (WHO Regional Office for Europe & BZgA, 2010) : puberté, protection contre la grossesse et les infections, diversité et médias. L’éducation sexuelle est efficace lorsqu’elle informe et exerce en même temps des attitudes et des compétences, par exemple vérifier les sources et trouver de l’aide (UNESCO, 2018).",

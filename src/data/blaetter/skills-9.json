@@ -211,7 +211,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Chris Gardner verliert fast alles – und macht trotzdem weiter. Du findest heraus, was ihn bremst und was ihn trägt."
+          "text": "Chris verliert fast alles – und macht trotzdem weiter. Du findest heraus, was ihn bremst und was ihn trägt."
         },
         {
           "art": "aufgabe",
@@ -452,7 +452,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Stopp 3: So entsteht eine Meinungsblase."
+          "text": "Stopp 3: Lies, wie eine Meinungsblase entsteht."
         },
         {
           "art": "schritte",
@@ -597,7 +597,7 @@
           "spalten": 2,
           "karten": [
             {
-              "bild": "icon:shoe",
+              "bild": "icon:footsteps",
               "titel": "1 · Barfußpfad",
               "text": "Schuhe aus. Geht langsam über Gras, Moos, Erde und Sand. Wo ist es kalt, weich, pieksig? Wer mag, schließt die Augen und lässt sich am Arm führen."
             },
@@ -990,7 +990,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Unsere drei wichtigsten Regeln – in deinen Worten.",
+          "text": "Schreib die drei wichtigsten Regeln der Gruppe in deinen Worten auf.",
           "hinweis": "Deine Patin oder dein Pate erklärt dir, wie die Regeln im Alltag aussehen.",
           "symbole": [
             "schreiben"
@@ -1442,7 +1442,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mein Blackout-Plan für die Prüfung",
+          "text": "Schreib deinen Blackout-Plan für die Prüfung.",
           "symbole": [
             "schreiben"
           ]

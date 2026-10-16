@@ -23015,41 +23015,6 @@
   "sicher": 0.85,
   "h": "c845edd9"
  },
- "b:skills-debattier-turnier:1": {
-  "rolle": [
-   "uebung",
-   "regulation"
-  ],
-  "bogen": "uebertragen",
-  "eldib": {
-   "primaer": [
-    "V-21"
-   ],
-   "sekundaer": [
-    "V-25"
-   ]
-  },
-  "kompetenz": [
-   "impulskontrolle",
-   "alltag"
-  ],
-  "alter": {
-   "von": 13,
-   "bis": 18
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {
-   "wettbewerb": true,
-   "koerperkontakt": true
-  },
-  "sensibel": null,
-  "begruendung": "Frust-Plan fürs Verlieren (atmen, Hand geben, Tipp erfragen): Turnier, Handschlag, daher wettbewerb, koerperkontakt.",
-  "von": "agent",
-  "sicher": 0.7,
-  "h": "4150b642"
- },
  "b:skills-debattier-turnier:2": {
   "rolle": [
    "uebung"
@@ -23178,7 +23143,7 @@
   },
   "sensibel": null,
   "braucht": [
-   "b:skills-debattier-turnier:1"
+   "b:skills-debattier-turnier:6"
   ],
   "begruendung": "Frust nach dem Turnier einschätzen und was half; bezieht sich auf den Frust-Plan; Turnier, daher wettbewerb.",
   "von": "agent",
@@ -38815,37 +38780,6 @@
   "sicher": 0.85,
   "h": "2d81b2d8"
  },
- "b:skills-neu-in-der-gruppe:3": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "SOZ-27"
-   ],
-   "sekundaer": [
-    "V-17"
-   ]
-  },
-  "kompetenz": [
-   "kooperation",
-   "kommunikation"
-  ],
-  "alter": {
-   "von": 11,
-   "bis": 18
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "nein",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Drei Gruppenregeln in eigenen Worten: bezieht sich auf die Regeln der Gruppe, daher nein.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "0042af5c"
- },
  "b:skills-neu-in-der-gruppe:4": {
   "rolle": [
    "uebung"
@@ -43272,37 +43206,6 @@
   "sicher": 0.8,
   "h": "b28d71a0"
  },
- "b:skills-sorge-um-jemanden:3": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "K-28"
-   ],
-   "sekundaer": [
-    "SOZ-26"
-   ]
-  },
-  "kompetenz": [
-   "kommunikation",
-   "gefuehle-erkennen"
-  ],
-  "alter": {
-   "von": 12,
-   "bis": 18
-  },
-  "energie": 1,
-  "belastung": 1,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Vier Schritte zur Hilfe für Freunde (ansprechen, zuhören, Hilfe holen, dranbleiben).",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "8a41c13d"
- },
  "b:skills-sorge-um-jemanden:4": {
   "rolle": [
    "uebung"
@@ -45742,40 +45645,6 @@
   "sicher": 0.85,
   "h": "370fc2a4"
  },
- "b:skills-tester:3": {
-  "rolle": [
-   "uebung",
-   "regulation"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "V-25"
-   ],
-   "sekundaer": [
-    "V-24"
-   ]
-  },
-  "kompetenz": [
-   "selbstregulation"
-  ],
-  "alter": {
-   "von": 11,
-   "bis": 18
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "allgemein": {
-   "0.text": "Achtsamkeit und Kopf"
-  },
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Achtsamkeits- und Kopf-Skills testen und bewerten (Zählen, Gedankenschiffchen, sicherer Ort). Kursverweis ersetzt.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "e414f9ec"
- },
  "b:skills-tester:4": {
   "rolle": [
    "uebung",
@@ -45805,7 +45674,7 @@
   "braucht": [
    "b:skills-tester:1",
    "b:skills-tester:2",
-   "b:skills-tester:3"
+   "b:skills-tester:6"
   ],
   "begruendung": "Drei Favoriten und ihre Wirkgrenze festhalten; setzt die getesteten Skills voraus.",
   "von": "agent",
@@ -52243,38 +52112,6 @@
   "sicher": 0.8,
   "h": "cb301705"
  },
- "b:sp-eimaischen:1": {
-  "rolle": [
-   "uebung",
-   "spiel"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "KOG-18"
-   ],
-   "sekundaer": [
-    "KOG-26"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien",
-   "aufmerksamkeit"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 2,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Péckvillchen blau anmalen und Wolle rundherum fädeln: Feinmotorik.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "8c26e8fb"
- },
  "b:sp-fahrzeuge:0": {
   "rolle": [
    "einstieg",
@@ -52439,37 +52276,6 @@
   "von": "agent",
   "sicher": 0.8,
   "h": "6615a3a0"
- },
- "b:sp-familiencafe:3": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "uebertragen",
-  "eldib": {
-   "primaer": [
-    "K-11"
-   ],
-   "sekundaer": [
-    "SOZ-15"
-   ]
-  },
-  "kompetenz": [
-   "kommunikation",
-   "kooperation"
-  ],
-  "alter": {
-   "von": 3,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Ein Wort für die Wort-Kasse sagen, ein Erwachsener schreibt es auf.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "9f7c9d04"
  },
  "b:sp-farben-formen:0": {
   "rolle": [
@@ -52748,37 +52554,6 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "200a9000"
- },
- "b:sp-farben-muster:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "KOG-24"
-   ],
-   "sekundaer": [
-    "KOG-23",
-    "KOG-17"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien",
-   "aufmerksamkeit"
-  ],
-  "alter": {
-   "von": 4,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Farbmuster rot, blau, blau, rot weitermalen.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "8eca3c76"
  },
  "b:sp-farben-rot-gelb-blau:0": {
   "rolle": [
@@ -57518,37 +57293,6 @@
   "sicher": 0.75,
   "h": "e89153ed"
  },
- "b:sp-schueberfouer:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "uebertragen",
-  "eldib": {
-   "primaer": [
-    "KOG-22"
-   ],
-   "sekundaer": [
-    "V-10"
-   ]
-  },
-  "kompetenz": [
-   "lernstrategien",
-   "impulskontrolle"
-  ],
-  "alter": {
-   "von": 4,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Zählen, wie oft man im Spiel warten musste.",
-  "von": "agent",
-  "sicher": 0.75,
-  "h": "883c42a6"
- },
  "b:sp-sommernacht:0": {
   "rolle": [
    "einstieg",
@@ -57834,37 +57578,6 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "3f888ab1"
- },
- "b:sp-sprachen-geschichtensack:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "wahrnehmen",
-  "eldib": {
-   "primaer": [
-    "K-13"
-   ],
-   "sekundaer": [
-    "SOZ-31",
-    "K-10"
-   ]
-  },
-  "kompetenz": [
-   "kommunikation",
-   "kooperation"
-  ],
-  "alter": {
-   "von": 4,
-   "bis": 5
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "sensibel": null,
-  "begruendung": "Anmalen, wo man welche Sprache spricht (zu Hause, in der Klasse, am Telefon).",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "c512ea7f"
  },
  "b:sp-strasse-sicher:0": {
   "rolle": [
@@ -67395,5 +67108,292 @@
   "von": "agent",
   "sicher": 0.8,
   "h": "2b57ae4f"
+ },
+ "b:skills-debattier-turnier:6": {
+  "rolle": [
+   "uebung",
+   "regulation"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "V-21"
+   ],
+   "sekundaer": [
+    "V-25"
+   ]
+  },
+  "kompetenz": [
+   "impulskontrolle",
+   "alltag"
+  ],
+  "alter": {
+   "von": 13,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {
+   "wettbewerb": true,
+   "koerperkontakt": true
+  },
+  "sensibel": null,
+  "begruendung": "Frust-Plan fürs Verlieren (atmen, Hand geben, Tipp erfragen): Turnier, Handschlag, daher wettbewerb, koerperkontakt.",
+  "von": "agent",
+  "sicher": 0.7,
+  "h": "4150b642"
+ },
+ "b:skills-neu-in-der-gruppe:9": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-27"
+   ],
+   "sekundaer": [
+    "V-17"
+   ]
+  },
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 11,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Drei Gruppenregeln in eigenen Worten: bezieht sich auf die Regeln der Gruppe, daher nein.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "0042af5c"
+ },
+ "b:skills-sorge-um-jemanden:9": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-28"
+   ],
+   "sekundaer": [
+    "SOZ-26"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Vier Schritte zur Hilfe für Freunde (ansprechen, zuhören, Hilfe holen, dranbleiben).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "8a41c13d"
+ },
+ "b:skills-tester:6": {
+  "rolle": [
+   "uebung",
+   "regulation"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": [
+    "V-24"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 11,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Teste die Skills für Achtsamkeit und Kopf."
+  },
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Achtsamkeits- und Kopf-Skills testen und bewerten (Zählen, Gedankenschiffchen, sicherer Ort). Kursverweis ersetzt.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "e414f9ec"
+ },
+ "b:sp-eimaischen:2": {
+  "rolle": [
+   "uebung",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-18"
+   ],
+   "sekundaer": [
+    "KOG-26"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Péckvillchen blau anmalen und Wolle rundherum fädeln: Feinmotorik.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "8c26e8fb"
+ },
+ "b:sp-familiencafe:4": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "K-11"
+   ],
+   "sekundaer": [
+    "SOZ-15"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Ein Wort für die Wort-Kasse sagen, ein Erwachsener schreibt es auf.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "9f7c9d04"
+ },
+ "b:sp-farben-muster:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-24"
+   ],
+   "sekundaer": [
+    "KOG-23",
+    "KOG-17"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Farbmuster rot, blau, blau, rot weitermalen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "8eca3c76"
+ },
+ "b:sp-schueberfouer:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "KOG-22"
+   ],
+   "sekundaer": [
+    "V-10"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "impulskontrolle"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Zählen, wie oft man im Spiel warten musste.",
+  "von": "agent",
+  "sicher": 0.75,
+  "h": "883c42a6"
+ },
+ "b:sp-sprachen-geschichtensack:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-13"
+   ],
+   "sekundaer": [
+    "SOZ-31",
+    "K-10"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 5
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Anmalen, wo man welche Sprache spricht (zu Hause, in der Klasse, am Telefon).",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "c512ea7f"
  }
 }

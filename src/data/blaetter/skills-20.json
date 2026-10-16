@@ -42,7 +42,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Kreuz alles an, was du gern tun würdest – egal, ob du es schon kannst. Zähl dann die Kreuze und schreib die Zahl neben den Bereich.",
+          "text": "Kreuz alles an, was du gern tun würdest – egal, ob du es schon kannst. Zähl dann die Kreuze in jedem Bereich.",
           "hinweis": "Nicht lange überlegen: Das erste Bauchgefühl ist meist das ehrlichste."
         },
         {
@@ -88,7 +88,7 @@
               "art": "ankreuzen",
               "titel": "Helfen",
               "items": [
-                "jemandem etwas erklären, bis er es kann",
+                "jemandem etwas erklären, bis es klappt",
                 "auf kleine Kinder aufpassen",
                 "mich um Kranke oder Ältere kümmern",
                 "zuhören, wenn es jemandem schlecht geht",
@@ -307,7 +307,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Das sieht die Gruppe in mir: Übertrag Sätze aus deiner Stärken-Post."
+          "text": "Das sieht die Gruppe in mir: Übertrage Sätze aus deiner Stärken-Post."
         },
         {
           "art": "satzanfaenge",
@@ -343,7 +343,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Berufe, die mich neugierig machen"
+          "text": "Berufe, die mich neugierig machen: Trag bis zu drei ein."
         },
         {
           "art": "tabelle",
@@ -417,7 +417,7 @@
           "Einheit 10: Aufgabe 1 nach dem Interessen-Check, Aufgabe 2 mit einem Beispiel der Leitung, Aufgabe 3 nach der Stärken-Post.",
           "Einheit 11: Aufgaben 4 und 5 im Berufe-Markt, Aufgabe 6 nach dem Tafelbild „Viele Wege“.",
           "Einheit 12: Das Profil liefert Beispiele für Lebenslauf und Vorstellungsgespräch.",
-          "Einheit 13: Es liegt beim Zielplan daneben und kommt danach, wer mag, ins Skills-Buch."
+          "Einheit 13: Es liegt beim Zielplan daneben und kommt danach, wenn die Person mag, ins Skills-Buch."
         ],
         "hintergrund": "Das Vier-Felder-Schema trennt Mögen und Können: Holland (1997) beschreibt, wie Interessen und Arbeitsumwelt zusammenpassen; ob man einen Beruf gut ausübt, hängt zusätzlich von Fähigkeiten ab, und die lassen sich lernen. Das Lernfeld macht deshalb Mut. Die Stärken-Post nutzt den ‚blinden Fleck‘ des Johari-Fensters: Andere sehen, was man selbst übersieht (Luft & Ingham, 1955). Nach Super (1980) ist ein Berufswunsch mit 15 selten fertig – die Skala in Aufgabe 6 macht Offenheit ausdrücklich normal.",
         "quellen": [
@@ -600,7 +600,7 @@
         {
           "art": "aufgabe",
           "text": "Kreuz fünf Fragen an, die du einem Profi stellen willst – oder schreib eigene dazu.",
-          "hinweis": "Im Interview-Karussell probierst du sie aus."
+          "hinweis": "Im Interview-Karussell probierst du schon zwei davon aus."
         },
         {
           "art": "ankreuzen",
@@ -797,7 +797,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Angaben zu dir",
+          "text": "Angaben zu dir: Füll die Zeilen aus.",
           "hinweis": "Eine seriöse E-Mail-Adresse wie vorname.nachname@… lohnt sich – leg lieber eine neue an."
         },
         {
@@ -828,7 +828,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schule: Beginn mit der Schule, die du jetzt besuchst.",
+          "text": "Schule: Fang mit der Schule an, die du jetzt besuchst.",
           "hinweis": "Nur Schulen, Klassen und Jahre – Gründe für einen Wechsel oder eine Wiederholung gehören nicht hinein."
         },
         {
@@ -852,7 +852,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Praktika, Jobs und Erfahrungen",
+          "text": "Praktika, Jobs und Erfahrungen: Trag sie ein.",
           "hinweis": "Auch Babysitten, Hilfe im Verein oder ein Ferienjob zählen."
         },
         {
@@ -1113,7 +1113,7 @@
           "items": [
             "Das war stark: …",
             "Mein Tipp für das nächste Mal: …",
-            "Meine Anspannung vor der Tür: … von 100 – nach dem Gespräch: … von 100"
+            "Bewerbende Person – Anspannung vor der Tür: … von 100 – danach: … von 100"
           ],
           "linien": 1
         },

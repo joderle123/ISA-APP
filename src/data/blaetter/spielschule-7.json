@@ -83,7 +83,8 @@
               "bild": "motiv:spiegel",
               "titel": "der Spiegel"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -97,7 +98,7 @@
           "vermuten": [
             {
               "bild": "motiv:leuchttisch",
-              "text": "bleibt gelb, blau"
+              "text": "bleibt gleich"
             },
             {
               "bild": "icon:palette",
@@ -344,7 +345,8 @@
               "bild": "motiv:spiegel",
               "titel": "le miroir"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -358,7 +360,7 @@
           "vermuten": [
             {
               "bild": "motiv:leuchttisch",
-              "text": "reste jaune, bleu"
+              "text": "ça reste pareil"
             },
             {
               "bild": "icon:palette",
@@ -707,7 +709,8 @@
               "bild": "motiv:rad",
               "titel": "das Rad"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -987,13 +990,14 @@
             },
             {
               "bild": "icon:bowl",
-              "titel": "le bac"
+              "titel": "le bol"
             },
             {
               "bild": "motiv:rad",
               "titel": "la roue"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -1381,7 +1385,8 @@
               "bild": "motiv:pinsel",
               "titel": "der Pinsel"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -1714,7 +1719,8 @@
               "bild": "motiv:pinsel",
               "titel": "le pinceau"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -1767,7 +1773,7 @@
             },
             {
               "bild": "icon:bell",
-              "text": "chanter ding"
+              "text": "ding-dong"
             },
             {
               "bild": "gesicht:ruhig",
@@ -1783,7 +1789,7 @@
             },
             {
               "bild": "icon:piano",
-              "text": "doigts dansent"
+              "text": "jouer du piano"
             },
             {
               "bild": "gesicht:traurig",
@@ -1799,7 +1805,7 @@
             },
             {
               "bild": "gesicht:ruhig",
-              "text": "chanter doux"
+              "text": "fredonner bas"
             },
             {
               "bild": "motiv:pinsel",
@@ -2158,7 +2164,8 @@
               "bild": "motiv:taschenlampe",
               "titel": "die Taschenlampe"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -2186,7 +2193,7 @@
               "text": "der Magier"
             },
             {
-              "bild": "icon:feather",
+              "bild": "figur:mia:froh:jubeln",
               "text": "die Artistin"
             },
             {
@@ -2198,7 +2205,7 @@
               "text": "das Licht"
             },
             {
-              "bild": "motiv:fahrkarte",
+              "bild": "icon:cash",
               "text": "die Kasse"
             }
           ]
@@ -2475,7 +2482,8 @@
               "bild": "motiv:taschenlampe",
               "titel": "la lampe de poche"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -2503,7 +2511,7 @@
               "text": "le magicien"
             },
             {
-              "bild": "icon:feather",
+              "bild": "figur:mia:froh:jubeln",
               "text": "l’acrobate"
             },
             {
@@ -2515,7 +2523,7 @@
               "text": "la lumière"
             },
             {
-              "bild": "motiv:fahrkarte",
+              "bild": "icon:cash",
               "text": "la caisse"
             }
           ]
@@ -2893,7 +2901,8 @@
               "bild": "motiv:familie",
               "titel": "die Familie"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -2930,7 +2939,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wo sprichst du deine Sprachen? Male die Bilder an.",
+          "text": "Male jeden Ort in der Farbe deiner Sprache.",
           "symbole": [
             "malen"
           ],
@@ -3193,7 +3202,8 @@
               "bild": "motiv:familie",
               "titel": "la famille"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -3230,7 +3240,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Où parles-tu tes langues ? Colorie les images.",
+          "text": "Colorie chaque lieu de la couleur de ta langue.",
           "symbole": [
             "malen"
           ],
@@ -3594,7 +3604,8 @@
               "bild": "icon:toilet-paper",
               "titel": "die Toilette"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -3887,7 +3898,8 @@
               "bild": "icon:toilet-paper",
               "titel": "les toilettes"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -4286,7 +4298,8 @@
               "bild": "motiv:katze",
               "titel": "die Katze"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -4575,7 +4588,8 @@
               "bild": "motiv:katze",
               "titel": "le chat"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -4962,17 +4976,18 @@
               "titel": "die Seite"
             },
             {
-              "bild": "motiv:fahrkarte",
+              "bild": "icon:gift-card",
               "titel": "der Ausweis"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
         },
         {
           "art": "aufgabe",
-          "text": "Schneide aus, falte dein Buch und male jede Seite.",
+          "text": "Schneide aus. Wir falten dein Buch. Male jede Seite.",
           "symbole": [
             "schneiden",
             "malen"
@@ -4996,7 +5011,7 @@
               "text": "Ich lese mit …"
             },
             {
-              "text": "Buch heißt bei mir"
+              "text": "So sage ich Buch:"
             },
             {
               "text": "Das lese ich bald."
@@ -5242,17 +5257,18 @@
               "titel": "la page"
             },
             {
-              "bild": "motiv:fahrkarte",
-              "titel": "la carte"
+              "bild": "icon:gift-card",
+              "titel": "la carte de prêt"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
         },
         {
           "art": "aufgabe",
-          "text": "Découpe, plie ton livre et dessine chaque page.",
+          "text": "Découpe. On plie ton livre. Dessine chaque page.",
           "symbole": [
             "schneiden",
             "malen"

@@ -823,7 +823,7 @@
               "titel": "der Wind"
             },
             {
-              "bild": "figur:tom:aengstlich",
+              "bild": "figur:tom:stolz",
               "titel": "der Mut"
             },
             {
@@ -857,7 +857,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schneide aus und falte dein Buch. Male, was du denkst.",
+          "text": "Schneide aus. Wir falten dein Buch. Male, was du denkst.",
           "symbole": [
             "schneiden",
             "malen",
@@ -877,7 +877,7 @@
               "text": "Ich denke …"
             },
             {
-              "bild": "figur:tom:aengstlich",
+              "bild": "figur:tom:stolz",
               "text": "Was ist Mut?"
             },
             {
@@ -1101,7 +1101,7 @@
     },
     "fr": {
       "titel": "Grandes questions pour petites têtes",
-      "untertitel": "Philosopher en cercle : où est le vent ? C’est quoi, oser ? Pourquoi rêve-t-on ?",
+      "untertitel": "Philosopher en cercle : où est le vent ? C’est quoi, le courage ? Pourquoi rêve-t-on ?",
       "anleitung": "Imprimer les cartes deux fois ; elles servent de point de départ au cercle de réflexion. Le mini-livre de la page 2 se découpe et se plie : l’enfant dessine ce qu’il pense, l’adulte écrit ses mots.",
       "bausteine": [
         {
@@ -1126,7 +1126,7 @@
               "titel": "le vent"
             },
             {
-              "bild": "figur:tom:aengstlich",
+              "bild": "figur:tom:stolz",
               "titel": "le courage"
             },
             {
@@ -1160,7 +1160,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Découpe et plie ton livre. Dessine ce que tu penses.",
+          "text": "Découpe. On plie ton livre. Dessine ce que tu penses.",
           "symbole": [
             "schneiden",
             "malen",
@@ -1180,8 +1180,8 @@
               "text": "Je pense …"
             },
             {
-              "bild": "figur:tom:aengstlich",
-              "text": "C’est quoi, oser ?"
+              "bild": "figur:tom:stolz",
+              "text": "Le courage ?"
             },
             {
               "text": "Je pense …"
@@ -2293,11 +2293,11 @@
             },
             {
               "bild": "motiv:brot",
-              "text": "essen"
+              "text": "satt werden"
             },
             {
               "bild": "motiv:aerztin",
-              "text": "gesund sein"
+              "text": "zur Ärztin"
             },
             {
               "bild": "motiv:buch",
@@ -2305,7 +2305,7 @@
             },
             {
               "bild": "motiv:haus",
-              "text": "ein Zuhause"
+              "text": "sicher wohnen"
             },
             {
               "bild": "motiv:mikrofon",
@@ -2534,7 +2534,7 @@
             },
             {
               "bild": "motiv:aerztin",
-              "titel": "la médecin"
+              "titel": "la doctoresse"
             },
             {
               "bild": "motiv:buch",
@@ -2584,7 +2584,7 @@
             },
             {
               "bild": "motiv:aerztin",
-              "text": "être soigné"
+              "text": "se soigner"
             },
             {
               "bild": "motiv:buch",
@@ -2592,7 +2592,7 @@
             },
             {
               "bild": "motiv:haus",
-              "text": "une maison"
+              "text": "avoir un toit"
             },
             {
               "bild": "motiv:mikrofon",
@@ -3016,7 +3016,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mein Wort für die Wort-Kasse: Sag es. Ein Erwachsener schreibt es auf.",
+          "text": "Wenn du magst: Sag dein Wort für die Wort-Kasse.",
           "symbole": [
             "sprechen",
             "zuhoeren"
@@ -3363,7 +3363,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mon mot pour la caisse à mots : dis-le. Un adulte l’écrit.",
+          "text": "Si tu veux : dis ton mot pour la caisse à mots.",
           "symbole": [
             "sprechen",
             "zuhoeren"
@@ -3691,7 +3691,7 @@
     "de": {
       "titel": "Abschied und Wiedersehen",
       "untertitel": "Wenn jemand geht, wenn etwas zu Ende ist – und was bleibt: Erinnerungen, Trost und gemischte Gefühle",
-      "anleitung": "Die Karten zweimal drucken. Seite 2 auf Karton kopieren: Das Kind kreist seine Gefühle ein (das leere Gesicht malt es selbst), malt ins Herz, an wen es denkt; die Erwachsene schneidet aus und locht, dann wird mit Wolle gefädelt.",
+      "anleitung": "Die Karten zweimal drucken. Seite 2 auf Karton kopieren: Das Kind kreist seine Gefühle ein (das leere Gesicht malt es selbst), malt ins Herz, woran es gern denkt; die Erwachsene schneidet aus und locht, dann wird mit Wolle gefädelt.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -3749,7 +3749,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Abschied: Wie fühlt es sich an? Kreise ein. Es dürfen zwei sein.",
+          "text": "Abschied: Wie fühlt sich das an? Kreise ein – auch zwei.",
           "symbole": [
             "nachdenken",
             "einkreisen"
@@ -3772,7 +3772,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mein Erinnerungsherz: Male hinein, an wen du denkst. Dann fädle.",
+          "text": "Mein Erinnerungsherz: Male, woran du gern denkst.",
           "symbole": [
             "malen",
             "nachdenken"
@@ -3990,7 +3990,7 @@
     "fr": {
       "titel": "Se quitter et se retrouver",
       "untertitel": "Quand quelqu’un part, quand quelque chose finit – et ce qui reste : souvenirs, réconfort et émotions mêlées",
-      "anleitung": "Imprimer les cartes deux fois. Copier la page 2 sur du carton : l’enfant entoure ses émotions (il dessine lui-même le visage vide), dessine dans le cœur à qui il pense ; l’adulte découpe et perce, puis on enfile la laine.",
+      "anleitung": "Imprimer les cartes deux fois. Copier la page 2 sur du carton : l’enfant entoure ses émotions (il dessine lui-même le visage vide), dessine dans le cœur ce à quoi il aime penser ; l’adulte découpe et perce, puis on enfile la laine.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -4048,7 +4048,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Au revoir : qu’est-ce que tu ressens ? Entoure. Deux, c’est possible.",
+          "text": "Au revoir : que ressens-tu ? Entoure-en un ou deux.",
           "symbole": [
             "nachdenken",
             "einkreisen"
@@ -4071,7 +4071,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mon cœur souvenir : dessine à qui tu penses. Puis enfile la laine.",
+          "text": "Mon cœur souvenir : dessine ce à quoi tu aimes penser.",
           "symbole": [
             "malen",
             "nachdenken"
@@ -4344,17 +4344,17 @@
         "de": {
           "woche": "Diese Woche sprechen wir über Abschied und Wiedersehen: wenn Freunde wegziehen, etwas zu Ende geht oder jemand stirbt. Die Kinder hören ein Bilderbuch, gestalten eine Erinnerungsschachtel und pflanzen eine Blume.",
           "idee": "Erzählen Sie von einem Abschied aus Ihrem Leben und davon, was Ihnen geholfen hat. Sagen Sie Ihrem Kind beim Abschied immer, wann Sie wiederkommen.",
-          "bitte": "Gibt es in Ihrer Familie gerade einen Abschied? Sagen Sie es uns gern vertraulich – dann können wir Ihr Kind gut begleiten."
+          "bitte": "Wenn Sie mögen: Sagen Sie uns, welches Wort oder Lied Ihr Kind beim Abschied tröstet. Steht bei Ihnen gerade ein großer Abschied an, sprechen Sie uns gern an – vertraulich."
         },
         "fr": {
           "woche": "Cette semaine, nous parlons des au revoir et des retrouvailles : quand un ami déménage, qu’une chose se termine ou que quelqu’un meurt. Les enfants écoutent un album, décorent une boîte à souvenirs et plantent une fleur.",
           "idee": "Racontez un au revoir de votre vie et ce qui vous a aidé. En partant, dites toujours à votre enfant quand vous revenez.",
-          "bitte": "Votre famille vit-elle en ce moment une séparation ou une perte ? Dites-le-nous en confiance – nous pourrons mieux accompagner votre enfant."
+          "bitte": "Si vous le souhaitez : dites-nous quel mot ou quelle chanson console votre enfant au moment de se quitter. Si un grand au revoir approche chez vous, parlez-nous-en, en toute confidentialité."
         },
         "pt": {
           "woche": "Esta semana falamos de despedidas e reencontros: quando um amigo muda de casa, algo termina ou alguém morre. As crianças ouvem um livro, decoram uma caixa de recordações e plantam uma flor.",
           "idee": "Conte uma despedida da sua vida e o que o ajudou. Ao despedir-se, diga sempre à criança quando volta.",
-          "bitte": "A vossa família vive agora uma despedida ou uma perda? Digam-nos em confiança – assim podemos acompanhar melhor a criança."
+          "bitte": "Se quiserem: digam-nos que palavra ou canção consola a criança nas despedidas. Se em casa houver uma grande despedida, falem connosco, com toda a confidencialidade."
         }
       }
     }
@@ -4408,7 +4408,7 @@
           "hoehe": 160,
           "karten": [
             {
-              "bild": "icon:building-community",
+              "bild": "motiv:schule",
               "titel": "die Schule"
             },
             {
@@ -4440,7 +4440,7 @@
               "titel": "die Trinkflasche"
             },
             {
-              "bild": "motiv:schule",
+              "bild": "icon:bell-school",
               "titel": "die Schulglocke"
             }
           ]
@@ -4718,7 +4718,7 @@
           "hoehe": 160,
           "karten": [
             {
-              "bild": "icon:building-community",
+              "bild": "motiv:schule",
               "titel": "l’école"
             },
             {
@@ -4750,8 +4750,8 @@
               "titel": "la gourde"
             },
             {
-              "bild": "motiv:schule",
-              "titel": "la cloche"
+              "bild": "icon:bell-school",
+              "titel": "la sonnerie"
             }
           ]
         },

@@ -419,12 +419,12 @@
       "lehrer": {
         "ziel": "À la fin de chaque thème, les jeunes notent quel skill les aide dans ce domaine de leur quotidien, et quand. Cela donne un aperçu personnel de toute l’année.",
         "ablauf": [
-          "Séance 1 (10 min) : distribuer la feuille, montrer les onze domaines et expliquer : la valise de l’année 1 range les skills selon le niveau de tension, la boussole selon les domaines de vie.",
-          "À la fin de chaque thème (5 min, avant le Skills-Pass) : feuilleter le Skills-Pass en arrière. Question : « Quel skill t’aide dans ce domaine – et quand ? » Pour qui n’en a pas encore : écrire « encore ouvert ».",
+          "Séance 1 (10 min) : distribuer la feuille, montrer les onze domaines. La valise de l’année 1 range les skills selon le niveau de tension, la boussole selon les domaines de vie.",
+          "À la fin de chaque thème (5 min, avant le Skills-Pass) : feuilleter le Skills-Pass en arrière. Question : « Quel skill t’aide dans ce domaine – et quand ? » Sans skill pour l’instant : écrire « encore ouvert ».",
           "Court tour de table : chaque personne ne dit que le nom de son skill. Noter au tableau les skills identiques – cela montre ce qui porte tout le groupe.",
           "Module 10 : remplir l’exercice 2 et la case « Mon skill le plus important cette année », puis faire un bilan ensemble."
         ],
-        "hintergrund": "Les skills s’apprennent en groupe, mais c’est dans le quotidien qu’on en a besoin – ce transfert est le point le plus difficile de tout entraînement. Le training de skills DBT pour adolescents relie donc les skills à des situations concrètes et note leur utilisation (Rathus & Miller, 2015). Se rappeler soi-même ce qu’on a appris, au lieu de le relire, permet de mieux le retenir (Roediger & Karpicke, 2006) – l’entrée de fin de module est un tel rappel. Le lien entre skill et situation (« m’aide quand … ») agit comme un plan « si … alors » et rend l’utilisation plus probable au moment décisif (Gollwitzer, 1999).",
+        "hintergrund": "Les skills s’apprennent en groupe, mais c’est dans le quotidien qu’on en a besoin – ce transfert est le point le plus difficile de tout entraînement. Le training de skills DBT pour adolescents relie donc les skills à des situations concrètes (Rathus & Miller, 2015). Se rappeler soi-même ce qu’on a appris, au lieu de le relire, aide à mieux le retenir (Roediger & Karpicke, 2006) – l’entrée de fin de module est un tel rappel. Le lien entre skill et situation (« m’aide quand … ») agit comme un plan « si … alors » (Gollwitzer, 1999).",
         "quellen": [
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
           "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
@@ -870,14 +870,14 @@
           "links": [
             {
               "art": "feld",
-              "label": "Kann mir ein schlechter Tag wegnehmen",
+              "label": "Das kann mir ein schlechter Tag wegnehmen",
               "hoehe": 3
             }
           ],
           "rechts": [
             {
               "art": "feld",
-              "label": "Bleibt, auch an einem schlechten Tag",
+              "label": "Das bleibt, auch an einem schlechten Tag",
               "hoehe": 3
             }
           ]
@@ -1071,7 +1071,7 @@
           "rechts": [
             {
               "art": "feld",
-              "label": "Reste, même un mauvais jour",
+              "label": "Ça reste, même un mauvais jour",
               "hoehe": 3
             }
           ]
@@ -1265,7 +1265,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Zieht zu zweit eine Situationskarte. Was würdet ihr sagen oder tun? Spielt die Szene kurz vor.",
+          "text": "Zieht zu zweit eine Situationskarte von Seite 2. Was würdet ihr sagen oder tun? Spielt die Szene kurz vor.",
           "hinweis": "Den Kommentar spricht die Leitung. Gespielt wird nur, was auf der Karte steht.",
           "symbole": [
             "partner",
@@ -1414,7 +1414,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "À deux, tirez une carte de situation. Que diriez-vous ou que feriez-vous ? Jouez la scène en quelques phrases.",
+          "text": "À deux, tirez une carte de situation de la page 2. Que diriez-vous ou que feriez-vous ? Jouez la scène en quelques phrases.",
           "hinweis": "Le commentaire est dit par la personne qui anime. On ne joue que ce qui est écrit sur la carte.",
           "symbole": [
             "partner",
@@ -1641,7 +1641,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Die Selbstmitgefühls-Pause: Probier die drei Schritte bei einer kleinen Panne aus – im Bus, vor der Arbeit, nach einer blöden Nachricht."
+          "text": "Die Selbstmitgefühls-Pause: Probier die drei Schritte bei einer kleinen Panne aus – im Bus, vor einer Klassenarbeit, nach einer blöden Nachricht."
         },
         {
           "art": "schritte",

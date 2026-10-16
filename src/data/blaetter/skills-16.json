@@ -424,7 +424,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Packt als Team eine Tasche mit höchstens fünf Karten, die euch gut durch die Lage bringt, die die Leitung nennt.",
+          "text": "Packt als Team eine Tasche mit höchstens fünf Karten. Sie soll euch gut durch die Lage bringen, die die Leitung nennt.",
           "hinweis": "Beim Vorstellen zeichnet ihr, wie eure Energie-Kurve mit dieser Tasche aussehen würde.",
           "symbole": [
             "gruppe"
@@ -463,7 +463,7 @@
             {
               "titel": "Kakao",
               "text": "heiß oder kalt",
-              "bild": "icon:coffee"
+              "bild": "icon:mug"
             },
             {
               "titel": "Käsebrötchen",
@@ -483,7 +483,7 @@
             {
               "titel": "Nudelsalat",
               "text": "in der Box, mit Gemüse",
-              "bild": "icon:leaf"
+              "bild": "icon:salad"
             },
             {
               "titel": "Kekse",
@@ -564,7 +564,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Préparez en équipe un sac de cinq cartes au maximum, qui vous aide à tenir dans la situation que l’adulte annonce.",
+          "text": "Préparez en équipe un sac de cinq cartes au maximum. Il doit vous aider à tenir dans la situation que l’adulte annonce.",
           "hinweis": "À la présentation, vous dessinez à quoi ressemblerait votre courbe d’énergie avec ce sac.",
           "symbole": [
             "gruppe"
@@ -603,7 +603,7 @@
             {
               "titel": "Chocolat",
               "text": "chaud ou froid",
-              "bild": "icon:coffee"
+              "bild": "icon:mug"
             },
             {
               "titel": "Petit pain au fromage",
@@ -623,7 +623,7 @@
             {
               "titel": "Salade de pâtes",
               "text": "en boîte, avec des légumes",
-              "bild": "icon:leaf"
+              "bild": "icon:salad"
             },
             {
               "titel": "Biscuits",
@@ -898,7 +898,7 @@
           "Draußen (25 Min.): zwölf Minuten zügig gehen zu zweit, dann Hütchen-Wende; vor und nach jeder Runde eintragen.",
           "Auswertung (8 Min.): Daumen-Runde, Aufgabe 2, Info-Kasten.",
           "Schlapp-Falle (4 Min.): Comic lesen; wann hilft das Gegenteil, ohne zu überfordern?",
-          "Aufgabe 4 und 5 (12 Min.): Idee und Wenn-dann-Satz; Zuversicht unter 7 heißt: kleiner machen."
+          "Aufgabe 4 und 5 (12 Min.): Idee mit Wenn-dann-Satz wählen, dann die Wochenübersicht; wer sich die Idee nicht zutraut, macht sie kleiner."
         ],
         "hintergrund": "Eine Übersicht über zahlreiche Reviews fand bei Kindern und Jugendlichen kleine, aber günstige Effekte von Bewegung auf depressive Beschwerden sowie Hinweise auf weniger Ängste, besseren Selbstwert und bessere Konzentration (Biddle & Asare, 2011). Die WHO (2020) empfiehlt Jugendlichen im Schnitt 60 Minuten Bewegung am Tag und betont, dass jede Bewegung besser ist als keine. Das Gegenteil-Tun stammt aus dem Skillstraining: Bei Niedergeschlagenheit aktiv werden, obwohl der Impuls zum Rückzug rät (Linehan, 2015).",
         "quellen": [

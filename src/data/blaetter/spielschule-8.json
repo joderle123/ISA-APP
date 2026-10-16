@@ -157,14 +157,15 @@
               "bild": "icon:pencil",
               "titel": "der Stift"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
         },
         {
           "art": "aufgabe",
-          "text": "Falte dein Forscherbuch. Male jeden Tag einen Schritt.",
+          "text": "Wir falten dein Forscherbuch. Male jeden Tag einen Schritt.",
           "symbole": [
             "schneiden",
             "malen"
@@ -417,7 +418,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "De quoi a besoin un petit chercheur ? Montre et dis.",
+          "text": "De quoi un petit chercheur a-t-il besoin ? Montre et dis.",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -463,14 +464,15 @@
               "bild": "icon:pencil",
               "titel": "le crayon"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
         },
         {
           "art": "aufgabe",
-          "text": "Plie ton cahier. Chaque jour, dessine une étape.",
+          "text": "On plie ton cahier. Chaque jour, dessine une étape.",
           "symbole": [
             "schneiden",
             "malen"
@@ -876,7 +878,8 @@
               "bild": "motiv:lupe",
               "titel": "die Lupe"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -905,6 +908,18 @@
             {
               "bild": "icon:leaf",
               "text": "das Blatt"
+            },
+            {
+              "bild": "motiv:kastanie",
+              "text": "die Kastanie"
+            },
+            {
+              "bild": "motiv:knete",
+              "text": "die Knetkugel"
+            },
+            {
+              "bild": "motiv:blume",
+              "text": "die Blume"
             }
           ]
         },
@@ -1188,7 +1203,8 @@
               "bild": "motiv:lupe",
               "titel": "la loupe"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -1217,6 +1233,18 @@
             {
               "bild": "icon:leaf",
               "text": "la feuille"
+            },
+            {
+              "bild": "motiv:kastanie",
+              "text": "le marron"
+            },
+            {
+              "bild": "motiv:knete",
+              "text": "la boule de pâte"
+            },
+            {
+              "bild": "motiv:blume",
+              "text": "la fleur"
             }
           ]
         },
@@ -1601,7 +1629,8 @@
               "bild": "motiv:kastanie",
               "titel": "die Kastanie"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -1647,7 +1676,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Puste-Bild: {blaue} Farbe tropfen, dann mit dem Strohhalm pusten.",
+          "text": "Puste-Bild: Puste den {blauen} Tropfen mit dem Strohhalm.",
           "symbole": [
             "malen"
           ]
@@ -1908,7 +1937,8 @@
               "bild": "motiv:kastanie",
               "titel": "le marron"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -1954,7 +1984,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dessin soufflé : une goutte {bleue}, puis souffle avec la paille.",
+          "text": "Dessin soufflé : souffle sur la goutte {bleue} avec la paille.",
           "symbole": [
             "malen"
           ]
@@ -2234,7 +2264,7 @@
           {
             "de": "das Auto",
             "fr": "la voiture",
-            "lb": "den Auto",
+            "lb": "d’Auto",
             "pt": "o carro"
           },
           {
@@ -2323,7 +2353,8 @@
               "bild": "motiv:bauarbeiterin",
               "titel": "die Bauarbeiterin"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -2600,7 +2631,8 @@
               "bild": "motiv:bauarbeiterin",
               "titel": "l’ouvrière"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -2979,7 +3011,8 @@
               "bild": "motiv:stopp",
               "titel": "stopp"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -3311,7 +3344,8 @@
               "bild": "motiv:stopp",
               "titel": "stop"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -3750,7 +3784,8 @@
               "bild": "motiv:ameise",
               "titel": "die Ameise"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -3783,7 +3818,7 @@
               "bild": "motiv:ameise"
             },
             {
-              "bild": "motiv:eichel"
+              "bild": "motiv:frosch"
             }
           ]
         }
@@ -4042,7 +4077,8 @@
               "bild": "motiv:ameise",
               "titel": "la fourmi"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -4075,7 +4111,7 @@
               "bild": "motiv:ameise"
             },
             {
-              "bild": "motiv:eichel"
+              "bild": "motiv:frosch"
             }
           ]
         }
@@ -4442,7 +4478,8 @@
               "bild": "motiv:regenwurm",
               "titel": "der Regenwurm"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -4745,7 +4782,8 @@
               "bild": "motiv:regenwurm",
               "titel": "le ver de terre"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -5161,7 +5199,8 @@
               "bild": "motiv:bein",
               "titel": "auf einem Bein"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -5224,6 +5263,37 @@
             }
           ],
           "ziel": "icon:trophy"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Bewegung machst du am liebsten? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:ladder",
+              "text": "klettern"
+            },
+            {
+              "bild": "icon:run",
+              "text": "rennen"
+            },
+            {
+              "bild": "icon:yoga",
+              "text": "balancieren"
+            },
+            {
+              "bild": "icon:footsteps",
+              "text": "schleichen"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -5487,7 +5557,8 @@
               "bild": "motiv:bein",
               "titel": "sur un pied"
             }
-          ]
+          ],
+          "hoehe": 160
         },
         {
           "art": "seitenumbruch"
@@ -5550,6 +5621,37 @@
             }
           ],
           "ziel": "icon:trophy"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel mouvement préfères-tu ? Entoure-le.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:ladder",
+              "text": "grimper"
+            },
+            {
+              "bild": "icon:run",
+              "text": "courir"
+            },
+            {
+              "bild": "icon:yoga",
+              "text": "en équilibre"
+            },
+            {
+              "bild": "icon:footsteps",
+              "text": "pas de loup"
+            }
+          ]
         }
       ],
       "lehrer": {

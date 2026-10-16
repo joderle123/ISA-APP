@@ -44,7 +44,7 @@
         {
           "art": "aufgabe",
           "text": "Welches Tier bist du mit wem? Kreuze in jeder Spalte das Tier an, das am besten passt.",
-          "hinweis": "Denk an einen typischen Streit. Wenn zwei Tiere passen, darfst du auch zwei ankreuzen."
+          "hinweis": "Denk an einen typischen Streit. Wenn zwei Tiere passen, darfst du auch zwei ankreuzen. Eine Spalte darfst du freilassen."
         },
         {
           "art": "einschaetzung",
@@ -87,7 +87,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Und du?"
+          "text": "Und du? Ergänze die Sätze."
         },
         {
           "art": "satzanfaenge",
@@ -106,7 +106,7 @@
         {
           "art": "info",
           "symbol": "merke",
-          "text": "Die Eule braucht Zeit und Ruhe. Sie klappt erst, wenn beide unter 70 sind."
+          "text": "Die Eule braucht Zeit und Ruhe. Ihr Weg klappt erst, wenn beide unter 70 sind."
         },
         {
           "art": "info",
@@ -510,7 +510,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wo liegen deine Zonen? Schreib in jeden Ring eine Situation aus deinem Alltag.",
+          "text": "Wo liegen deine Zonen? Schreib in jeden Ring ein Stichwort zu einer Situation aus deinem Alltag.",
           "symbole": [
             "schreiben"
           ]
@@ -565,7 +565,8 @@
             },
             {
               "titel": "Mit Humor",
-              "text": "„Nee, dafür bin ich heute echt zu faul.“"
+              "text": "„Nee, dafür bin ich heute echt zu faul.“",
+              "heute": false
             },
             {
               "titel": "Einfach gehen",
@@ -618,11 +619,11 @@
           "items": [
             "Anas zweite Antwort: …"
           ],
-          "linien": 1
+          "linien": 2
         },
         {
           "art": "aufgabe",
-          "text": "Dein Plan für einen Moment, den du kennst."
+          "text": "Plane dein Nein für einen Moment, den du kennst."
         },
         {
           "art": "wennDann",
@@ -779,7 +780,7 @@
             "Betroffene",
             "Täter",
             "Verteidigerin",
-            "Helfer",
+            "Helfer des Täters",
             "Außenstehende"
           ]
         },
@@ -789,7 +790,7 @@
         },
         {
           "art": "linien",
-          "anzahl": 2
+          "anzahl": 3
         },
         {
           "art": "notfall"
@@ -1085,7 +1086,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mein Plan: eine Sache, die ich ändern will – klein und machbar."
+          "text": "Mein Plan: Schreib eine Sache auf, die du ändern willst – klein und machbar."
         },
         {
           "art": "satzanfaenge",

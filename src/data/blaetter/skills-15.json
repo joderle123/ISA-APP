@@ -323,7 +323,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wenn jemand sehr betrunken ist oder nicht mehr reagiert: die Notfall-Kette"
+          "text": "Notfall-Kette: Lies, was du tust, wenn jemand sehr betrunken ist oder nicht mehr reagiert.",
+          "symbole": [
+            "lesen"
+          ]
         },
         {
           "art": "schritte",
@@ -719,7 +722,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Vier Schritte, wenn du dir Sorgen machst"
+          "text": "Vier Schritte, wenn du dir Sorgen machst: Lies sie und überleg, welcher dir am schwersten fällt."
         },
         {
           "art": "schritte",

@@ -61,7 +61,7 @@
           ],
           "links": [
             "„Die lachen mich aus. Alle haben es gesehen.“",
-            "„Der nimmt mich nicht ernst.“",
+            "„Niemand nimmt mich ernst.“",
             "„Das ist nicht fair. Die anderen kommen davon.“",
             "„Wenn das so weitergeht, bin ich bald ganz allein.“",
             "„Ich kann heute einfach nicht mehr.“"
@@ -1045,7 +1045,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Die Fragen der Wiedergutmachung: Beantworte sie für Diogo oder für Léa.",
+          "text": "Die Fragen der Wiedergutmachung: Beantworte sie für Diogo oder für Léa – in Stichworten.",
           "hinweis": "Mit solchen Fragen werden auch in Schulen Klärungsgespräche geführt."
         },
         {
@@ -1208,7 +1208,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Les questions de la réparation : réponds-y pour Diogo ou pour Léa.",
+          "text": "Les questions de la réparation : réponds-y pour Diogo ou pour Léa – en quelques mots.",
           "hinweis": "On pose ce genre de questions aussi dans les écoles, lors des entretiens pour clarifier une situation."
         },
         {
@@ -1257,7 +1257,7 @@
           "linien": 1,
           "items": [
             {
-              "titel": "Qu’ai-je fait ?",
+              "titel": "Qu’est-ce que j’ai fait ?",
               "text": "Concrètement et sans prétexte."
             },
             {
@@ -1269,8 +1269,8 @@
               "text": "Est-ce que ça correspond au dégât ? Ce qui s’est passé devant tout le monde demande souvent une clarification devant tout le monde – si la personne le souhaite."
             },
             {
-              "titel": "Que ferai-je autrement la prochaine fois ?",
-              "text": "Par exemple : quelle couleur du feu tricolore est-ce que je m’entraîne ?"
+              "titel": "Qu’est-ce que je ferai autrement la prochaine fois ?",
+              "text": "Par exemple : sur quelle couleur du feu tricolore est-ce que je m’entraîne ?"
             }
           ]
         },
@@ -1735,7 +1735,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein Sprachenporträt: Male jede Sprache in einer eigenen Farbe dorthin, wo sie für dich hingehört. Schreib daneben, welche Sprache es ist.",
+          "text": "Dein Sprachenporträt: Male jede Sprache in einer eigenen Farbe dorthin, wo sie für dich hingehört. Schreib in die Legende, welche Sprache es ist.",
           "hinweis": "Kopf, Herz, Bauch, Hände, Füße – du entscheidest. Auch Sprachen, von denen du nur ein paar Wörter kannst, Dialekte und Gebärdensprache zählen."
         },
         {
@@ -1792,7 +1792,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mein Ruhesatz: Schreib einen kurzen Satz, der dich beruhigt – in der Sprache, die sich dafür am besten anfühlt."
+          "text": "Mein Ruhesatz: Schreib einen kurzen Satz, der dich beruhigt – in der Sprache, die sich dafür am besten anfühlt.",
+          "hinweis": "Probier ihn danach mit der Atemübung unten aus."
         },
         {
           "art": "feld",
@@ -1818,7 +1819,7 @@
             },
             {
               "titel": "Sechsmal",
-              "text": "dann nachspüren"
+              "text": "wiederholen, dann nachspüren"
             }
           ]
         },

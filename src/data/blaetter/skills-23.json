@@ -731,7 +731,7 @@
             },
             {
               "name": "Planning Familial: Beratung zu Liebe, Sexualität und Verhütung",
-              "nummer": ""
+              "nummer": "__________"
             },
             {
               "name": "Kanner- a Jugendtelefon: für alle Sorgen, anonym und kostenlos",
@@ -932,7 +932,7 @@
           "symbol": "tipp",
           "titel": "Einen guten Moment verlängern",
           "punkte": [
-            "Anhalten: Merk, dass gerade etwas gut ist.",
+            "Anhalten: Bemerke, dass gerade etwas gut ist.",
             "Hinspüren: Was siehst, hörst, schmeckst du? Wo im Körper spürst du es?",
             "Festhalten: ein Foto im Kopf, ein Zettel fürs Glas oder jemandem davon erzählen."
           ]
@@ -1399,7 +1399,7 @@
           "art": "satzanfaenge",
           "items": [
             "Mein Feed zeigt vor allem: …",
-            "Kaum oder gar nicht vor kommt: …"
+            "Kaum oder gar nicht kommt vor: …"
           ],
           "linien": 1
         },

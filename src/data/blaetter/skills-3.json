@@ -154,7 +154,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Les émotions se manifestent quand il se passe quelque chose qui compte pour toi – un peu comme une notification sur ton téléphone. Tu n’as pas besoin de répondre tout de suite à chacune. Mais ça vaut la peine de la lire."
+          "text": "Les émotions arrivent quand il se passe quelque chose d’important pour toi – comme des notifications sur ton téléphone. Pas besoin de réagir tout de suite à chacune, mais ça vaut la peine de les lire."
         },
         {
           "art": "aufgabe",
@@ -178,11 +178,11 @@
             "Surprise"
           ],
           "rechts": [
-            "Ça me fait du bien. J’en veux plus.",
+            "Ça me fait du bien. J’en veux encore.",
             "Un instant – que se passe-t-il ?",
             "Attention, danger. Protège-toi.",
-            "C’est mauvais pour moi. Je m’éloigne.",
-            "Il me manque quelque chose. J’ai besoin de réconfort.",
+            "Mauvais pour moi. Je m’éloigne.",
+            "Il me manque du réconfort.",
             "C’est injuste. Il y a ici une limite."
           ]
         },
@@ -309,7 +309,7 @@
           "titel": "So könnt ihr spielen",
           "punkte": [
             "Pantomime: Eine Karte verdeckt ziehen und das Gefühl ohne Worte zeigen. Die anderen raten.",
-            "Memory: Mit zwei Sätzen dieser Seite spielen. Wer ein Paar findet, nennt eine Situation, in der man sich so fühlt.",
+            "Memory: Mit zwei Kartensätzen von dieser Seite spielen. Wer ein Paar findet, nennt eine Situation, in der man sich so fühlt.",
             "Emotionswürfel: Die sechs Grundgefühle aus den ersten beiden Reihen auf einen Würfel kleben."
           ]
         },
@@ -954,7 +954,7 @@
         {
           "art": "aufgabe",
           "text": "Et toi ? Pense à un moment avec des émotions mélangées. Note les émotions et donne à chacune un chiffre de 0 à 10.",
-          "hinweis": "0 veut dire : pas du tout. 10 veut dire : aussi fort que jamais. C’est toi qui décides si tu en parles.",
+          "hinweis": "0 veut dire : pas du tout. 10 veut dire : plus fort que jamais. C’est toi qui décides si tu en parles.",
           "symbole": [
             "nachdenken",
             "schreiben"
@@ -972,7 +972,7 @@
           ],
           "beispiel": [
             "Mon cousin retourne vivre au Portugal.",
-            "tristesse 8 · joie pour lui 5 · un peu d’envie 2"
+            "tristesse 8 · joie pour lui 5 · un peu de jalousie 2"
           ],
           "zeilen": 2
         }

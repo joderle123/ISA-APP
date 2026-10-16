@@ -107,7 +107,7 @@
         {
           "art": "aufgabe",
           "text": "Wie hoch wäre deine Anspannung? Kreuz für jede Situation die Zone an.",
-          "hinweis": "Es gibt kein Richtig oder Falsch. Dieselbe Situation ist für die eine eine 20, für den anderen eine 80."
+          "hinweis": "Es gibt kein Richtig oder Falsch. Dieselbe Situation ist für eine Person eine 20, für eine andere eine 80."
         },
         {
           "art": "einschaetzung",
@@ -274,7 +274,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Körper und Atem (Einheit 12)",
+          "text": "Teste die Skills für Körper und Atem (Einheit 12).",
           "hinweis": "Wird dir schwindelig, hörst du auf und atmest normal weiter."
         },
         {
@@ -296,7 +296,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Sinne (Einheit 13)",
+          "text": "Teste die Sinnes-Skills (Einheit 13).",
           "hinweis": "Düfte nur vom Riechstreifen, nie direkt aus der Flasche. Kälte nur kurz und mit Tuch."
         },
         {
@@ -317,7 +317,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Achtsamkeit und Kopf (Einheit 14)"
+          "text": "Teste die Skills für Achtsamkeit und Kopf (Einheit 14)."
         },
         {
           "art": "einschaetzung",
@@ -895,7 +895,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Zu diesen Menschen kann ich gehen, wenn es mir schlecht geht.",
+          "text": "Trag ein, zu welchen Menschen du gehen kannst, wenn es dir schlecht geht.",
           "hinweis": "Mindestens eine erwachsene Person, die du wirklich erreichen kannst."
         },
         {
@@ -1107,7 +1107,7 @@
             {
               "titel": "Gedankenschiffchen",
               "text": "Jeden Gedanken auf ein Schiff setzen und davontreiben lassen.",
-              "bild": "icon:cloud"
+              "bild": "icon:sailboat"
             },
             {
               "titel": "Mein sicherer Ort",
@@ -1134,7 +1134,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ich bringe euch einen Skill bei: Nimm dein Lieblingskärtchen und leite den Skill für die Gruppe an.",
+          "text": "Bring der Gruppe einen Skill bei: Nimm dein Lieblingskärtchen und leite den Skill an.",
           "hinweis": "Ein bis zwei Minuten reichen. Du darfst vom Kärtchen ablesen.",
           "symbole": [
             "sprechen",

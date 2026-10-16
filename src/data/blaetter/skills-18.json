@@ -56,7 +56,7 @@
         {
           "art": "aufgabe",
           "text": "Gestalte dein Deckblatt: Gib deinem Buch einen Namen und zeichne ein Zeichen, das zu dir und deinem Weg passt.",
-          "hinweis": "Ein Symbol, ein Wort, ein Muster oder ein aufgeklebtes Foto – es muss nur dir gefallen."
+          "hinweis": "Ein Symbol, ein Wort, ein Muster oder ein aufgeklebtes Foto – es muss nur dir gefallen. Den Juni-Satz schreibst du nur für dich."
         },
         {
           "art": "spalten",
@@ -89,7 +89,7 @@
         {
           "art": "aufgabe",
           "text": "Inhalt: Trag jedes Blatt aus den Einheiten ein, das du in dein Buch aufnimmst.",
-          "hinweis": "Die Rubrikenseiten brauchen keinen Eintrag – sie stehen nach Modulen sortiert im Buch."
+          "hinweis": "Die Rubrikenseiten (Seite 2) musst du hier nicht eintragen – sie liegen im Buch nach Modulen sortiert."
         },
         {
           "art": "tabelle",
@@ -274,7 +274,7 @@
         {
           "art": "aufgabe",
           "text": "Blick von außen: Gib dein Blatt einer Person aus der Gruppe. Sie malt einen Stern neben die zwei Bereiche, in denen sie dich stark erlebt.",
-          "hinweis": "Nur Stärken, keine Kritik. Wer dich noch nicht lange kennt, schreibt auf, was ihm heute an dir aufgefallen ist."
+          "hinweis": "Nur Stärken, keine Kritik. Wer dich noch nicht lange kennt, schreibt auf, was heute an dir aufgefallen ist."
         },
         {
           "art": "satzanfaenge",
@@ -477,14 +477,14 @@
             "1 · Eine Freundschaft, die ein Leben lang hält",
             "2 · Ein Jahr lang reisen, wohin du willst",
             "3 · In einer Sache richtig gut sein – und alle wissen es",
-            "4 · 500 000 Euro auf dem Konto",
+            "4 · 500 000 Euro auf dem Konto",
             "5 · Eine Familie, auf die du dich immer verlassen kannst",
             "6 · Eine Welt ohne Rassismus und Ausgrenzung",
             "7 · Ein Jahr lang nur tun, worauf du Lust hast",
             "8 · Selbst entscheiden, was du lernst und wie du lebst",
             "9 · Feste, Sprache und Bräuche deiner Familie weitergeben",
             "10 · Nie Ärger bekommen – mit Schule, Eltern oder Chef",
-            "11 · 100 000 Follower, die jeden Post feiern",
+            "11 · 100 000 Follower, die jeden Post feiern",
             "12 · Gesund bleiben – du und alle, die du liebst"
           ]
         },
@@ -999,8 +999,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wer prägt dich? Schreib Menschen in die Ringe: innen, wen du persönlich kennst – außen, wen du nur aus Medien kennst.",
-          "hinweis": "Initialen oder Spitznamen reichen."
+          "text": "Wer prägt dich? Schreib Menschen in die passenden Ringe: innen, wen du persönlich kennst – außen, wen du nur aus Medien kennst.",
+          "hinweis": "Initialen oder Spitznamen reichen. Der mittlere Ring ist für Menschen, die du nur vom Sehen kennst."
         },
         {
           "art": "spalten",
@@ -1103,7 +1103,7 @@
         "ablauf": [
           "Aufgabe 1 und 2 (12 Min.): Initialen reichen; in der Runde nur sagen, in welchem Ring die meisten Namen stehen.",
           "Vorbild-Check (15 Min.): zu zweit an einer erfundenen Profilkarte üben, dann Aufgabe 3 und 4 allein an einem eigenen Vorbild.",
-          "Aufgabe 5 und 6 (10 Min.) vor der Post für die Jüngeren; die Karten liest die Leitung vor dem Weitergeben.",
+          "Aufgabe 5 und 6 (10 Min.): erst selbst Vorbild sein, dann die Post für die Jüngeren; die Karten liest die Leitung vor dem Weitergeben.",
           "Das Blatt kommt ins Skills-Buch; Menschen aus dem inneren Ring passen zu „Menschen, die helfen“."
         ],
         "hintergrund": "Nach Bandura (1977) ist die stellvertretende Erfahrung – zu sehen, wie eine ähnliche Person etwas schafft – eine wichtige Quelle von Selbstwirksamkeit. Verlässliche Beziehungen zu kompetenten Erwachsenen gehören zu den alltäglichen Schutzfaktoren (Masten, 2014). Vorbilder aus sozialen Medien zeigen dagegen eine Auswahl; Vergleiche mit idealisierten Beiträgen können Stimmung und Selbstbild drücken (Fardouly et al., 2015). Der Vorbild-Check setzt deshalb nicht auf Verbote, sondern lenkt den Blick auf das, was fehlt: Mühe, Fehler, Geschäftsinteressen.",

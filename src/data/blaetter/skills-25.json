@@ -47,7 +47,7 @@
           "symbol": "merke",
           "titel": "Vier Fragen an einen Satz, der trägt",
           "punkte": [
-            "Kurz: Du kannst ihn auch bei 80 noch denken.",
+            "Kurz: Du kannst ihn auch bei Anspannung 80 von 100 noch denken.",
             "Wahr: Er verspricht nichts, was niemand halten kann.",
             "Meiner: Er klingt nach dir, nicht nach einem Kalenderspruch.",
             "Freundlich: So würdest du mit einem guten Freund oder einer guten Freundin reden."
@@ -1187,7 +1187,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Unser Menü: drei Gänge, in 40 Minuten machbar, für alle Gäste essbar."
+          "text": "Unser Menü: Plant drei Gänge, in 40 Minuten machbar und für alle Gäste essbar."
         },
         {
           "art": "tabelle",
@@ -1384,14 +1384,14 @@
           "punkte": [
             "Meinungslinie vorher: Das Publikum stellt sich auf.",
             "Eröffnung: Pro 1 Minute, dann Contra 1 Minute.",
-            "Schlagabtausch: 3 Minuten, jeder Beitrag höchstens 30 Sekunden – wer widerspricht, fasst zuerst zusammen.",
+            "Schlagabtausch: 3 Minuten, Beiträge bis 30 Sekunden – erst zusammenfassen, dann widersprechen.",
             "Schluss: Contra 30 Sekunden, dann Pro 30 Sekunden.",
             "Meinungslinie nachher, dann entscheidet die Jury."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Vor dem Turnier: Dein Frust-Plan für den Moment, in dem ihr verliert. Kreuz an, was dir hilft.",
+          "text": "Vor dem Turnier: Dein Frust-Plan für eine Niederlage. Kreuz an, was dir hilft.",
           "hinweis": "Einen Plan für den Ärger macht man, solange man noch ruhig ist.",
           "symbole": [
             "ankreuzen"
@@ -1422,7 +1422,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Vorbereitung: Baut drei Argumente für eure Seite.",
+          "text": "Vorbereitung: Baut zwei bis drei Argumente für eure Seite.",
           "hinweis": "Behauptung, Begründung, Beispiel. Ohne Beispiel ist es nur eine Meinung.",
           "symbole": [
             "partner",
@@ -1444,7 +1444,7 @@
             "Begründung",
             "Beispiel"
           ],
-          "zeilen": 3,
+          "zeilen": 2,
           "beispiel": [
             "Pausen sind zum Erholen da.",
             "Mit Musik oder einer Nachricht an Freunde schalten viele schneller ab.",
@@ -1486,7 +1486,7 @@
             "Contra"
           ],
           "items": [
-            "Sachkenntnis: Wer wusste, wovon er spricht?",
+            "Sachkenntnis: Wer kannte sich besser aus?",
             "Überzeugungskraft: Wer hatte die besseren Gründe und Beispiele?",
             "Eingehen auf die anderen: Wer hat auf Gegenargumente geantwortet?",
             "Auftreten: Wer sprach klar und verständlich?",
@@ -1588,14 +1588,14 @@
           "punkte": [
             "Ligne d’opinion avant : le public se place.",
             "Ouverture : pour 1 minute, puis contre 1 minute.",
-            "Échange : 3 minutes, chaque intervention dure 30 secondes au maximum – qui contredit reformule d’abord.",
+            "Échange : 3 minutes, 30 secondes par intervention – d’abord reformuler, puis contredire.",
             "Conclusion : contre 30 secondes, puis pour 30 secondes.",
             "Ligne d’opinion après, puis le jury décide."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Avant le tournoi : ton plan anti-frustration pour le moment où vous perdez. Coche ce qui t’aide.",
+          "text": "Avant le tournoi : ton plan anti-frustration en cas de défaite. Coche ce qui t’aide.",
           "hinweis": "On prépare un plan pour la colère tant qu’on est encore calme.",
           "symbole": [
             "ankreuzen"
@@ -1626,7 +1626,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Préparation : construisez trois arguments pour votre camp.",
+          "text": "Préparation : construisez deux ou trois arguments pour votre camp.",
           "hinweis": "Affirmation, raison, exemple. Sans exemple, ce n’est qu’une opinion.",
           "symbole": [
             "partner",
@@ -1648,7 +1648,7 @@
             "Raison",
             "Exemple"
           ],
-          "zeilen": 3,
+          "zeilen": 2,
           "beispiel": [
             "Les pauses servent à se reposer.",
             "Avec de la musique ou un message à des amis, beaucoup décrochent plus vite.",

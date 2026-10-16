@@ -132,7 +132,7 @@
         {
           "art": "aufgabe",
           "text": "Deine Barometer-Woche bis zum nächsten Treffen: Kreuz jeden Abend an, auf welcher Stufe dein Tag war.",
-          "hinweis": "Im nächsten Check-in fragen wir nach deiner Woche – eine Zahl reicht.",
+          "hinweis": "Im nächsten Check-in fragen wir nach deiner Woche – eine Stufe reicht. Im Kasten darunter hakst du ab, an welchen Tagen du die Seufzer-Atmung geübt hast.",
           "symbole": [
             "ankreuzen"
           ]
@@ -989,7 +989,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Prüf einen Prüfungsgedanken mit drei Fragen. Schreib unter das dritte Bild, was Inês stattdessen denken könnte.",
+          "text": "Prüf einen Prüfungsgedanken mit drei Fragen. Schreib unter das dritte Bild, was Inês stattdessen denken könnte – dann deinen Gedanken in die Tabelle.",
           "hinweis": "Was ist das Schlimmste, das realistisch passieren kann – und wie würdest du damit fertig? Was passiert am wahrscheinlichsten? Was würdest du einer Freundin sagen?",
           "symbole": [
             "nachdenken",

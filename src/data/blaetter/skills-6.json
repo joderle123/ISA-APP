@@ -245,7 +245,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jetzt du: Verwandle die Du-Botschaften in Ich-Botschaften.",
+          "text": "Jetzt du: Verwandle diese drei Sätze in Ich-Botschaften.",
           "hinweis": "Die Situation hilft dir. Gefühlswörter findest du im Kasten."
         },
         {
@@ -807,7 +807,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Qu’est-ce qui est une limite pour toi ? Écris un exemple pour chaque sorte.",
+          "text": "Qu’est-ce qu’une limite pour toi ? Écris un exemple pour chaque sorte.",
           "hinweis": "Les cartes des limites t’aident. Tes propres exemples sont encore mieux."
         },
         {
@@ -1057,7 +1057,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein eigener Stopp-Satz"
+          "text": "Finde deinen eigenen Stopp-Satz."
         },
         {
           "art": "satzanfaenge",
