@@ -492,6 +492,12 @@ function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlatt
   return liste
 }
 
+/** Symbol oben rechts auf den Blättern eines Einzelkurses, nach dem Thema der Linie (kurs-<thema>-…) */
+const KURS_ICON: Record<string, string> = {
+  gefuehle: 'icon:mood-smile', wut: 'icon:flame', freundschaft: 'icon:friends', streit: 'icon:scale', selbstwert: 'icon:star',
+  mut: 'icon:shield', fokus: 'icon:target', zusammen: 'icon:puzzle',
+}
+
 const KERNBLATT_BEREICH: Record<string, Bereich> = {
   'gefuehle-erkennen': 'gefuehle', 'gefuehle-ausdruecken': 'gefuehle', impulskontrolle: 'verhalten', selbstregulation: 'verhalten',
   kooperation: 'miteinander', konflikte: 'miteinander', kommunikation: 'miteinander', aufmerksamkeit: 'lernen', ausdauer: 'lernen',
@@ -919,9 +925,13 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
   // Jugendliche: kein Herz als Symbol (Blind-Bewertung 9: „Herz-Symbol auf einem Konfliktblatt für 17-Jährige“) –
   // Übertragen mit Pfeil, Rückblick mit Fahne, sonst eine Sprechblase
   const kernRef = (s?.schritte ?? []).find((x) => x.rolle === 'kern')?.ref
-  const jugendBild = alter >= 12 && (bereich === 'gefuehle' || bereich === 'selbstreflexion')
+  // Einzelkurs: ein Symbol zum Thema des Kurses (Kurs-Kritik 16.10.: oben rechts stand der Kompass des Bereichs auch beim
+  // Selbstwert-Kurs)
+  const kursE = kernRef ? k.eintraege.get(kernRef) : undefined
+  const kursBild = kursE?.typ === 'schritt' && kursE.linie?.id.startsWith('kurs-') ? KURS_ICON[kursE.linie.id.split('-')[1]] : undefined
+  const jugendBild = kursBild ?? (alter >= 12 && (bereich === 'gefuehle' || bereich === 'selbstreflexion')
     ? kernRef === 'pg:uebertragen' ? 'icon:arrow-right' : kernRef === 'pg:folge-transfer' ? 'icon:flag' : 'icon:message-circle'
-    : undefined
+    : undefined)
   const blatt: Blatt = {
     id: `pg-${hash8(plan.id + '|' + nr + '|' + (s?.blatt?.bausteine.map((b) => b.ref + (b.ueber ? JSON.stringify(b.ueber) : '')).join(',') ?? ''))}`,
     ...(jugendBild ? { bild: jugendBild } : {}),
