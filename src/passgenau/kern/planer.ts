@@ -297,6 +297,9 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
       const zumThema = e.typ === 'schritt' && e.kompetenz.some((k) => themaK.has(k))
       if (e.typ === 'schritt' && e.nurZumThema && !zumThema) continue
       if (pruefe(e, c, { locker, gesperrt: s.gesperrt, rolle: s.rolle === 'pause' ? 'bewegung' : s.rolle === 'vertiefung' ? 'kern' : (s.rolle as Rolle), vorher: s.vorher }) !== null) continue
+      // Einzelkurs: nur die nächste Sitzung (Kurs-Prüfung 16.10.: einzelne Stunden sprangen mitten in den Kurs und wechselten
+      // zwischen Sitzung 3 und 4)
+      if (e.typ === 'schritt' && e.linie?.id.startsWith('kurs-') && e.linie.nr !== kursStand(c, e.linie.id, s.vorher) + 1) continue
       if (!dauerPasst(e, s.min, locker)) continue
       // der Text nennt selbst eine längere Zeit („30 Minuten Ruhezeit“, „20 Minuten backen“) als der Slot hat
       if (textMinuten(e) > s.min + 5) continue
@@ -309,7 +312,8 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
         (kernArtig ? Math.min(0.1, 0.04 * (jungeKernFormate(c).get(e.format[0] ?? '') ?? 0)) : 0)
       const thema = rahmen && zumThema ? (e.typ === 'schritt' && e.nurZumThema ? 0.6 : 0.04) : 0
       // Einzelkurs (Kurs-Pilot 16.10.): eine als Ganzes geschriebene Folge mit eigenem Blatt je Sitzung geht vor einzelnen Übungen
-      const kurs = kernArtig && e.typ === 'schritt' && e.linie?.id.startsWith('kurs-') ? 0.3 : 0
+      // – aber nur zu einem Hauptziel des Kurses (sonst begann nach dem Wut-Kurs der Fokus-Kurs, weil er V-21 nebenbei führt)
+      const kurs = kernArtig && e.typ === 'schritt' && e.linie?.id.startsWith('kurs-') && e.eldib.some((x) => x.gewicht === 1 && c.ziele.some((z) => z.code === x.code)) ? 0.3 : 0
       const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: (s.bevorzugt?.has(e.id) ? 1 : 0) - malus + thema + kurs })
       // … außer eigene Übungen im Kern (Testlauf 13: Sitzung „üben“ nahm Kurs-Teile, weil die neue Jugend-Übung zum Ziel als
       // „wahrnehmen“ markiert ist)
@@ -404,10 +408,24 @@ function ritualErlaubt(c: Kontext, e: KatalogEintrag, rolle: 'ankommen' | 'absch
   return true
 }
 
+/** Einzelkurs: die höchste Sitzung eines Kurses, die das Kind schon hatte (aus „gemacht“, egal welche Variante) – und in
+ *  dieser Folge schon geplant (vorher). */
+function kursStand(c: Kontext, kurs: string, vorher?: Set<string>): number {
+  let n = 0
+  const sieh = (id: string) => {
+    const e = c.k.eintraege.get(id)
+    if (e?.typ === 'schritt' && e.linie?.id === kurs) n = Math.max(n, e.linie.nr)
+  }
+  for (const id of c.gemacht.keys()) sieh(id)
+  for (const id of vorher ?? []) sieh(id)
+  return n
+}
+
 /** themaK: nur Rituale zum Thema (Themen-Rahmen mit einer dieser Kompetenzen); ohne themaK nie ein Themen-Rahmen. */
-const KURS_DER_FOLGE = new WeakMap<Kontext, string | null>()
-/** Der Einzelkurs, den eine gründliche Folge nimmt: eine erste Kurs-Sitzung zum Hauptziel, die für das Kind passt. */
-function kursDerFolge(c: Kontext): string | null {
+const KURS_DER_FOLGE = new WeakMap<Kontext, { id: string; ab: number } | null>()
+/** Der Einzelkurs, den eine gründliche Folge nimmt: ein Kurs zum Hauptziel, dessen nächste Sitzung für das Kind passt. Hatte
+ *  das Kind schon Sitzungen daraus (z. B. als einzelne Stunden), geht die Folge dort weiter (ab); ein fertiger Kurs zählt nicht. */
+function kursWahl(c: Kontext): { id: string; ab: number } | null {
   let k = KURS_DER_FOLGE.get(c)
   if (k !== undefined) return k
   k = null
@@ -415,27 +433,35 @@ function kursDerFolge(c: Kontext): string | null {
   // wichtigere Ziel des Kindes – und bei Gleichstand der Kurs, dessen erstes Ziel es ist
   if (c.weg === 'gruendlich' && c.ziele.length) {
     let best = 0
-    for (const e of c.k.nachRolle.get('kern') ?? []) {
+    const kerne = c.k.nachRolle.get('kern') ?? []
+    for (const e of kerne) {
       if (e.typ !== 'schritt' || !e.linie?.id.startsWith('kurs-') || e.linie.nr !== 1) continue
       let w = 0
       c.ziele.forEach((z, i) => { const x = e.eldib.find((y) => y.code === z.code); if (x) w += (x.gewicht === 1 ? 1 : 0.2) / (i + 1) })
       if (!e.eldib.some((x) => x.gewicht === 1 && c.ziele.some((z) => z.code === x.code))) continue
       if (e.eldib[0]?.code === c.ziele[0].code) w += 0.25
-      if (w <= best || pruefe(e, c, { rolle: 'kern' }) !== null) continue
+      if (w <= best) continue
+      const id = e.linie.id
+      const ab = kursStand(c, id)
+      if (!kerne.some((x) => x.typ === 'schritt' && x.linie?.id === id && x.linie.nr === ab + 1 && pruefe(x, c, { rolle: 'kern' }) === null)) continue
       best = w
-      k = e.linie.id
+      k = { id, ab }
     }
   }
   KURS_DER_FOLGE.set(c, k)
   return k
 }
+function kursDerFolge(c: Kontext): string | null {
+  return kursWahl(c)?.id ?? null
+}
 
-/** Einzelkurs: hat der Kurs der Folge eine eigene Sitzung mit dieser Nummer, gilt sie – auch für Übertragen und Rückblick
- *  (Kurs-Sitzungen 5 und 6 sind dafür geschrieben; Kurs-Prüfung 16.10.: dort kamen die allgemeinen Schritte des Planers) */
+/** Einzelkurs: hat der Kurs der Folge eine eigene Sitzung für diese Sitzung der Folge, gilt sie – auch für Übertragen und
+ *  Rückblick (Kurs-Sitzungen 5 und 6 sind dafür geschrieben; Kurs-Prüfung 16.10.: dort kamen die allgemeinen Schritte des
+ *  Planers) */
 function kursHatSitzung(c: Kontext, nr: number): boolean {
-  const kurs = kursDerFolge(c)
+  const kurs = kursWahl(c)
   if (!kurs) return false
-  return (c.k.nachRolle.get('kern') ?? []).some((e) => e.typ === 'schritt' && e.linie?.id === kurs && e.linie.nr === nr && pruefe(e, c, { rolle: 'kern' }) === null)
+  return (c.k.nachRolle.get('kern') ?? []).some((e) => e.typ === 'schritt' && e.linie?.id === kurs.id && e.linie.nr === nr + kurs.ab && pruefe(e, c, { rolle: 'kern' }) === null)
 }
 
 function waehleRitual(c: Kontext, rolle: 'ankommen' | 'abschluss', min: number, salz: string, ausser: Set<string>, ohneFolge = false, themaK?: Set<string>): Bewertet | null {
@@ -1215,11 +1241,12 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     }
     if (slot.rolle === 'kern' && c.weg === 'gruendlich' && o.phase !== 'leicht') auswahl = nachLinie(c, auswahl, o.fruehereKerne ?? [])
     // Einzelkurs: Sitzung k der Folge ist Sitzung k des Kurses – die Variante, die zum Zugang des Kindes passt (Kurs-Prüfung
-    // 16.10.: sonst rutschte eine Einzelübung dazwischen und der Kurs lief versetzt weiter)
+    // 16.10.: sonst rutschte eine Einzelübung dazwischen und der Kurs lief versetzt weiter). „Neu vorschlagen“ sperrt die
+    // bisherige Variante – dann kommt die andere, sonst eine Übung außerhalb des Kurses.
     if (slot.rolle === 'kern' && c.weg === 'gruendlich' && o.phase !== 'leicht' && kursHatSitzung(c, o.nr)) {
-      const kurs = kursDerFolge(c)!
+      const kurs = kursWahl(c)!
       const dran = (c.k.nachRolle.get('kern') ?? [])
-        .filter((e) => e.typ === 'schritt' && e.linie?.id === kurs && e.linie.nr === o.nr && pruefe(e, c, { rolle: 'kern' }) === null)
+        .filter((e) => e.typ === 'schritt' && e.linie?.id === kurs.id && e.linie.nr === o.nr + kurs.ab && pruefe(e, c, { rolle: 'kern', gesperrt: benutzt }) === null)
         .map((e) => ({ b: bewerte(e, c, { phase: o.phase }), locker: 0 }) as Wahl)
         .sort((x, y) => rang(x.b, y.b, `${salz}|kurs`))
       if (dran.length) auswahl = dran
