@@ -321,10 +321,12 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     const name = w.split(/\s*[:(–]\s*/)[0].replace(/^[„“"«»\s]+|[„“"«»\s]+$/g, '').toLowerCase()
     const schon = name.length > 2 && `${d.text} ${d.sagen.join(' ')}`.toLowerCase().includes(name)
     const zit = /[„“«»]/.test(w) ? w : sprache === 'fr' ? `« ${w} »` : `„${w}“`
+    // Übungen für die Kleinsten (bis 6): nachsprechen oder zeigen statt „mit eigenen Worten“ (Blind-Bewertung 13)
+    const klein = e.alter.bis <= 6
     if (!schon)
       d.text += sprache === 'fr'
-        ? ` Pour finir, l’adulte donne un nom à ce qu’on vient de faire : ${zit}${jugend ? '.' : ' – et l’enfant le redit avec ses mots.'}`
-        : ` Zum Schluss gibt die Fachkraft dem Geübten einen Namen: ${zit}${jugend ? '.' : ' – und das Kind sagt es mit eigenen Worten nach.'}`
+        ? ` Pour finir, l’adulte donne un nom à ce qu’on vient de faire : ${zit}${jugend ? '.' : klein ? ' – l’enfant peut le répéter ou le montrer.' : ' – et l’enfant le redit avec ses mots.'}`
+        : ` Zum Schluss gibt die Fachkraft dem Geübten einen Namen: ${zit}${jugend ? '.' : klein ? ' – das Kind darf es nachsprechen oder zeigen.' : ' – und das Kind sagt es mit eigenen Worten nach.'}`
   }
   // eigene Schritte haben eine feste Zeile (auch mit eingesetztem Text); ein überschriebener Text verdrängt die Zeile des Bausteins
   // Themen-Einstieg mit Anknüpfen: die Spickzettel-Zeile der Übung, nicht der Anknüpf-Satz (Blind-Bewertung 13)
@@ -489,7 +491,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     })
   // Jugend-Folge (Blind-Bewertung 7: „K-34 steht im Kopf, wird in der Sitzung aber nicht bearbeitet“): nur die Ziele, die der
   // Kern dieser Sitzung übt
-  const geuebt = p.alterJahre >= 6 && plan.n > 1 ? geuebteZiele(k, plan, s) : null
+  // … für alle Alter (Blind-Bewertung 13: „kommen“ im Kopf, geübt wurde „antworten“ – bei einem Vierjährigen)
+  const geuebt = plan.n > 1 ? geuebteZiele(k, plan, s) : null
   const codes = geuebt ? plan.ziele.filter((c) => geuebt.has(c)) : plan.ziele
   const ziele = (codes.length ? codes : plan.ziele.slice(0, 1)).map((code) => {
     const satz = zielSatz(k, p, code, sp)

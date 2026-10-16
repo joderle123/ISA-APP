@@ -3279,7 +3279,7 @@
     "titel": "Der Aufräum-Roboter",
     "text": "Die Fachkraft spielt einen Aufräum-Roboter, der nur tut, was das Kind sagt. Das Kind gibt zwei, drei Befehle nacheinander, zum Beispiel „Roboter, erst Papier zusammenlegen, dann Stuhl ranschieben“, und der Roboter führt sie in dieser Reihenfolge aus. Dann tauschen beide die Rollen, und das Kind räumt als Roboter weg, was die Fachkraft ansagt. Ist der Tisch frei, schaltet sich der Roboter mit einem „Klick“ selbst aus, und beide sagen „Tschüss“.",
     "sagen": [
-      "Heute ging es um den Alltag: Dinge in eine Reihenfolge bringen und aufräumen. Zum Schluss bin ich dein Aufräum-Roboter.",
+      "Heute ging es um den Alltag und darum, Dinge selbst zu schaffen. Zum Schluss bin ich dein Aufräum-Roboter.",
       "Sag mir Befehl für Befehl, was ich tun soll.",
       "Tisch frei, Roboter aus. Tschüss!"
     ],
@@ -3329,7 +3329,7 @@
       "titel": "Le robot rangeur",
       "text": "L’adulte joue un robot rangeur qui fait seulement ce que l’enfant dit. L’enfant donne deux ou trois ordres l’un après l’autre, par exemple « Robot, d’abord plie le papier, ensuite pousse la chaise », et le robot les exécute dans cet ordre. Puis les deux échangent les rôles, et l’enfant range comme un robot ce que l’adulte annonce. Quand la table est libre, le robot s’éteint tout seul avec un « clic », et les deux disent « au revoir ».",
       "sagen": [
-        "Aujourd’hui, on a parlé du quotidien : mettre les choses dans l’ordre et ranger. Pour finir, je suis ton robot rangeur.",
+        "Aujourd’hui, on a parlé du quotidien et de réussir des choses tout seul. Pour finir, je suis ton robot rangeur.",
         "Dis-moi, ordre après ordre, ce que je dois faire.",
         "Table libre, robot éteint. Au revoir !"
       ],

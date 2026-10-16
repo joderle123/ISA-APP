@@ -374,11 +374,36 @@ export function werkzeugName(w: string | null | undefined, titel: string): strin
   return !k || k.split(/\s+/).length > 4 || /[„“«»]/.test(k) ? titel : k
 }
 
+/** Wo das Geübte im Alltag vorkommt – nach dem Feld der Übung (Blind-Bewertung 13: „Zehn-Euro-Plan“ im Unterricht, in der
+ *  Pause, beim Sport und im Chat). Text für das Planblatt, Bilder für Kinder, Ankreuz-Liste für Jugendliche. */
+export function alltagsOrte(kompetenz: string | undefined, sprache: Sprache): { text: string; kinder: { bild: string; text: string }[]; jugend: string[] } {
+  const fr = sprache === 'fr'
+  const sonst = { bild: 'icon:question-mark', text: fr ? 'ailleurs' : 'woanders' }
+  if (kompetenz === 'alltag')
+    return {
+      text: fr ? 'en faisant les courses, au bus, avec l’argent de poche' : 'beim Einkaufen, am Bus, mit dem Taschengeld',
+      kinder: [{ bild: 'motiv:baeckerin', text: fr ? 'à la boulangerie' : 'beim Bäcker' }, { bild: 'motiv:bushaltestelle', text: fr ? 'au bus' : 'am Bus' }, { bild: 'motiv:haus', text: fr ? 'chez moi' : 'daheim' }, sonst],
+      jugend: fr ? ['en faisant les courses', 'avec l’argent de poche', 'avec les horaires de bus', 'en commandant en ligne', 'pour un rendez-vous', 'autre chose'] : ['beim Einkaufen', 'mit dem Taschengeld', 'mit dem Busfahrplan', 'beim Online-Bestellen', 'bei Terminen und Verabredungen', 'etwas anderes'],
+    }
+  if (kompetenz === 'lernstrategien' || kompetenz === 'aufmerksamkeit' || kompetenz === 'ausdauer')
+    return {
+      text: fr ? 'pendant les devoirs, en classe, en révisant un contrôle' : 'bei den Hausaufgaben, im Unterricht, beim Lernen für einen Test',
+      kinder: [{ bild: 'motiv:buch', text: fr ? 'les devoirs' : 'Hausaufgaben' }, { bild: 'motiv:schule', text: fr ? 'en classe' : 'im Unterricht' }, { bild: 'motiv:turnmatte', text: fr ? 'au sport' : 'beim Sport' }, sonst],
+      jugend: fr ? ['pendant les devoirs', 'en cours', 'en révisant un contrôle', 'à l’entraînement ou au club', 'en stage ou en apprentissage', 'autre chose'] : ['bei den Hausaufgaben', 'im Unterricht', 'beim Lernen für eine Prüfung', 'im Training oder Verein', 'im Praktikum oder in der Ausbildung', 'etwas anderes'],
+    }
+  return {
+    text: fr ? 'en classe, à la récré, au sport' : 'im Unterricht, in der Pause, beim Sport',
+    kinder: [{ bild: 'motiv:schule', text: fr ? 'en classe' : 'im Unterricht' }, { bild: 'motiv:freunde', text: fr ? 'à la récré' : 'in der Pause' }, { bild: 'motiv:turnmatte', text: fr ? 'au sport' : 'beim Sport' }, sonst],
+    jugend: fr ? ['en cours', 'à la récré', 'entre amis', 'au sport ou au club', 'en ligne, dans le chat', 'autre chose'] : ['im Unterricht', 'in der Pause', 'im Freundeskreis', 'im Training oder Verein', 'online, im Chat', 'etwas anderes'],
+  }
+}
+
 /** Übertragen-Blatt (Blind-Bewertung 8: „wiederholt Tabelle und Beispielzeile aus Sitzung 3 wörtlich“, „dann nutze ich
  *  ‚<Titel>‘ ist sinnleer“, „rund zehn Schreibfelder in 5 Min.“): wo es passt (ankreuzen), Wenn-dann mit dem Werkzeug der
  *  Übung, woran ich merke, dass es geholfen hat – höchstens drei Teile. Kinder: Bilder und Malen. */
 function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBlattOpt): Baustein[] {
   const fr = sprache === 'fr'
+  const orte = alltagsOrte(quellen[0]?.kompetenz[0], sprache)
   const titel = quellen.map((q) => textVon(q, sprache).titel)
   const werkzeug = quellen.map((q, i) => (q.typ === 'schritt' && q.werkzeug?.[sprache]) || titel[i])
   const zit = (t: string) => (fr ? `« ${t} »` : `„${t}“`)
@@ -390,7 +415,7 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
     const kurzW = werkzeugName(werkzeug[0], titel[0])
     const liste: Baustein[] = [
       { art: 'aufgabe', text: fr ? `Où est-ce que tu peux essayer ${zit(kurzW)} ? Entoure.` : `Wo kannst du ${zit(kurzW)} ausprobieren? Kreis ein.` },
-      { art: 'bilder', bilder: [{ bild: 'motiv:schule', text: fr ? 'en classe' : 'im Unterricht' }, { bild: 'motiv:freunde', text: fr ? 'à la récré' : 'in der Pause' }, { bild: 'motiv:turnmatte', text: fr ? 'au sport' : 'beim Sport' }, { bild: 'icon:question-mark', text: fr ? 'ailleurs' : 'woanders' }], spalten: 4, modus: 'einkreisen' },
+      { art: 'bilder', bilder: orte.kinder, spalten: 4, modus: 'einkreisen' },
       { art: 'aufgabe', text: fr ? `Dessine-toi en train de faire ${zit(kurzW)}.` : `Mal dich, wie du ${zit(kurzW)} machst.` },
       { art: 'feld', hoehe: 7, zeichnen: true },
     ]
@@ -399,7 +424,7 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
   }
   const liste: Baustein[] = [
     { art: 'text', klein: true, text: fr ? 'Pour une situation des prochains jours – vraie ou inventée.' : 'Für eine Situation der nächsten Tage – echt oder erfunden.' },
-    { art: 'ankreuzen', titel: fr ? 'Où est-ce que ça pourrait servir ? Plusieurs réponses possibles.' : 'Wo könnte es passen? Mehrere gehen.', items: fr ? ['en cours', 'à la récré', 'entre amis', 'au sport ou au club', 'en ligne, dans le chat', 'autre chose'] : ['im Unterricht', 'in der Pause', 'im Freundeskreis', 'im Training oder Verein', 'online, im Chat', 'etwas anderes'], spalten: 3 },
+    { art: 'ankreuzen', titel: fr ? 'Où est-ce que ça pourrait servir ? Plusieurs réponses possibles.' : 'Wo könnte es passen? Mehrere gehen.', items: orte.jugend, spalten: 3 },
     // nur der Name des Werkzeugs (Blind-Bewertung 11: „dann: Stärken erkennen: Was tut sie? Wie heißt das Wort dazu?“)
     ...werkzeug.slice(0, 2).map((w, i): Baustein => ({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si … (où, quand)' : 'Wenn … (wo, wann)', dann: fr ? `alors : ${werkzeugName(w, titel[i])}` : `dann: ${werkzeugName(w, titel[i])}` })),
   ]
