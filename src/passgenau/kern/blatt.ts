@@ -614,8 +614,10 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
   if (phase === 'reflektieren' && (o.folge?.length ?? 0) >= 2) return rueckblickBlatt(o.folge!, sprache, o)
   const t = textVon(kern, sprache)
   const frage = (t.sagen ?? []).find((x) => /\?\s*[»“"]?$/.test(x.trim()) && x.length <= 140)
-  // Kinder unter 9 lesen den Hinweis nicht – er steht dann nur im Planblatt (Blatt-Anleitung)
-  const liste: Baustein[] = (o.alter ?? 12) < 9 ? [] : [
+  // Kinder unter 9 lesen den Hinweis nicht – er steht dann nur im Planblatt (Blatt-Anleitung); ein Kurs-Blatt trägt den Titel
+  // der Sitzung schon in der Überschrift (Kurs-Prüfung 16.10.: „Zur Übung ‚Werkzeug 3: …‘“ unter „Werkzeug 3: …“)
+  const kursEigen = kern.typ === 'schritt' && !!kern.linie?.id.startsWith('kurs-') && !!kern.uebungsblatt
+  const liste: Baustein[] = (o.alter ?? 12) < 9 || kursEigen ? [] : [
     // kurz (Blind-Bewertung 9: „‚Ein erfundenes Beispiel geht auch‘ ist hölzern, das Beispiel ist schon erfunden“)
     { art: 'text', klein: true, text: fr ? `Pour l’exercice « ${t.titel} ». Ce qui ne va pas peut rester vide.` : `Zur Übung „${t.titel}“. Was nicht passt, bleibt leer.` },
   ]
