@@ -336,10 +336,12 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     const zit = /[„“«»]/.test(w) ? w : sprache === 'fr' ? `« ${w} »` : `„${w}“`
     // Übungen für die Kleinsten (bis 6): nachsprechen oder zeigen statt „mit eigenen Worten“ (Blind-Bewertung 13)
     const klein = e.alter.bis <= 6
+    // nicht zweimal „Zum Schluss“ (Messung 4)
+    const auch = /\b(Zum Schluss|Pour finir)\b/.test(d.text)
     if (!schon)
       d.text += sprache === 'fr'
-        ? ` Pour finir, l’adulte donne un nom à ce qu’on vient de faire : ${zit}${jugend ? '.' : klein ? ' – l’enfant peut le répéter ou le montrer.' : ' – et l’enfant le redit avec ses mots.'}`
-        : ` Zum Schluss gibt die Fachkraft dem Geübten einen Namen: ${zit}${jugend ? '.' : klein ? ' – das Kind darf es nachsprechen oder zeigen.' : ' – und das Kind sagt es mit eigenen Worten nach.'}`
+        ? ` ${auch ? 'Tout à la fin' : 'Pour finir'}, l’adulte donne un nom à ce qu’on vient de faire : ${zit}${jugend ? '.' : klein ? ' – l’enfant peut le répéter ou le montrer.' : ' – et l’enfant le redit avec ses mots.'}`
+        : ` ${auch ? 'Ganz am Ende' : 'Zum Schluss'} gibt die Fachkraft dem Geübten einen Namen: ${zit}${jugend ? '.' : klein ? ' – das Kind darf es nachsprechen oder zeigen.' : ' – und das Kind sagt es mit eigenen Worten nach.'}`
   }
   // Zeit (Blind-Bewertung 13: „drei Balance-Posen erfinden, benennen, halten, wechseln – in 2 Minuten“): hat der Schritt deutlich
   // weniger Minuten, als die Übung braucht, darf die Fachkraft kürzen – das steht dabei
@@ -428,7 +430,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       } else mat.add(sp === 'fr' ? 'petits papiers pour les titres (ou les fiches de la série)' : 'Zettel für die Titel (oder die Blätter der Folge)')
       // (Blind-Bewertung 13: „Zettel mit dem Titel“ im Text, „nichts vorzubereiten“ im Kasten)
       vorbereitung.add(p.alterJahre < 6
-        ? sp === 'fr' ? 'Poser un objet de chaque activité de la série (balle, marionnette …) ; garder le matériel à portée.' : 'Je ein Ding aus jeder Übung der Folge hinlegen (Ball, Handpuppe …); das Material griffbereit halten.'
+        ? sp === 'fr' ? 'Poser un objet de chaque activité de la série ; garder le matériel à portée.' : 'Je ein Ding aus jeder Übung der Folge hinlegen; das Material griffbereit halten.'
         : sp === 'fr' ? 'Écrire le titre de chaque activité de la série sur un papier (ou reprendre les fiches) ; garder à portée le matériel des activités.' : 'Den Titel jeder Übung der Folge auf einen Zettel schreiben (oder die Blätter der Folge nehmen); das Material der Übungen griffbereit legen.')
     }
     // Optionen einer Wahl bringen ihr Material mit („Einfach da sein“: Getränk, Knetball, Tuch)
@@ -551,11 +553,17 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   // lief als „gut mit anderen zusammenarbeiten“, „Ich rechne mit Geld bis 10 Euro“ als „Dinge im Alltag selbst schaffen“)
   // Übertragen: das Ziel der übertragenen Übung; Rückblick: das erste Ziel der Folge
   const uebQuelle = kernX?.ref === 'pg:uebertragen' ? quellenDerUebertragung(k, plan, kernX)[0] : undefined
+  // Rückblick: die Ziele, die die Kerne der Folge wirklich geübt haben (Messung 4: Rückblick auf „Wenn die Fachkraft mich ruft“,
+  // geübt wurde „Wenn ich etwas gefragt werde, antworte ich“)
+  const zieleGeuebt = plan.ziele.filter((c) => /^[A-Z]+-\d+$/.test(c) && plan.sitzungen.some((x) => x.schritte.some((y) => y.rolle === 'kern' && !!k.eintraege.get(y.ref)?.eldib.some((z) => z.code === c))))
   const ichCode = kernX?.ref === 'pg:folge-transfer'
-    ? plan.ziele.find((c) => /^[A-Z]+-\d+$/.test(c))
+    ? zieleGeuebt[0] ?? plan.ziele.find((c) => /^[A-Z]+-\d+$/.test(c))
     : uebQuelle ? plan.ziele.find((c) => uebQuelle.eldib.some((x) => x.code === c)) : kernX && !kernX.ref.startsWith('pg:') ? kernZiel : undefined
   const ich = ichCode ? zielSatz(k, p, ichCode, sp)?.trim() : undefined
-  const ichZit = ich ? (sp === 'fr' ? `« ${ich} »` : `„${ich}“`) : undefined
+  // Rückblick einer Folge mit zwei Zielen: beide, wenn die Folge beide geübt hat (Messung 4: „K-26 kommt im Rückblick nicht vor“)
+  const zweitesZiel = kernX?.ref === 'pg:folge-transfer' ? zieleGeuebt[1] : undefined
+  const ich2 = zweitesZiel ? zielSatz(k, p, zweitesZiel, sp)?.trim() : undefined
+  const ichZit = ich ? (sp === 'fr' ? `« ${ich} »${ich2 ? ` et « ${ich2} »` : ''}` : `„${ich}“${ich2 ? ` und „${ich2}“` : ''}`) : undefined
   const einstiegSatz = ichZit && kernX?.ref === 'pg:uebertragen' && p.alterJahre < 8
     ? sp === 'fr' ? `Aujourd’hui, on joue ${ichZit} dans de petites scènes de tous les jours.` : `Heute spielen wir ${ichZit} in kleinen Szenen aus dem Alltag.`
     : ichZit && kernX?.ref === 'pg:uebertragen'

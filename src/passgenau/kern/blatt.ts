@@ -370,6 +370,10 @@ export function kernBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
  *  gilt der Titel der Übung; äußere Anführungszeichen fallen weg. */
 export function werkzeugName(w: string | null | undefined, titel: string): string {
   if (!w) return titel
+  // … beginnt das Werkzeug mit einem zitierten Satz („„Ja, und …“ sagen und die Idee weitererzählen“), ist er der Name
+  // (Messung 4: im Abschluss stand der Spieltitel „Die Geschichte wandert“ statt „Ja, und …“)
+  const satz = /^[„"«‚]\s*([^“"»‘]{2,40}?)\s*[“"»‘]/.exec(w.trim())
+  if (satz && satz[1].split(/\s+/).length <= 4) return satz[1]
   const k = (w.split(/\s*[:(–]\s*/)[0] || w).replace(/^[„“"«»‚‘’\s]+|[„“"«»‚‘’\s]+$/g, '').trim()
   return !k || k.split(/\s+/).length > 4 || /[„“«»]/.test(k) ? titel : k
 }

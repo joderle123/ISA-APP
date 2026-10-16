@@ -260,7 +260,8 @@ function SchrittZeile({ x, i, d, m, vorAus = 0 }: { x: DruckSchritt; i: number; 
             {x.sagen.slice(0, 3).map((s, k) => (
               <Text key={k} style={{ fontFamily: SCHRIFT.jugend, fontSize: m.sagen, lineHeight: 1.4, color: NEUTRAL.text }}>
                 <Text style={{ fontWeight: 600, color: P.tief }}>{k === 0 ? `${tx.sagen}${tx.dp} ` : ''}</Text>
-                {ty(sp === 'fr' ? `« ${s} »` : `„${s}“`, sp)}
+                {/* innen einfache Anführungszeichen (Messung 4: „Heute haben wir zurückgeschaut: „Ich …““) */}
+                {ty(sp === 'fr' ? `« ${s.replace(/«\s*/g, '“').replace(/\s*»/g, '”')} »` : `„${s.replace(/„/g, '‚').replace(/“/g, '‘')}“`, sp)}
               </Text>
             ))}
           </View>
