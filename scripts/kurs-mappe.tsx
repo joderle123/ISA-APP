@@ -13,6 +13,7 @@ import { execFileSync } from 'node:child_process'
 import { Document, renderToBuffer } from '@react-pdf/renderer'
 import { BlattSeiten } from '../src/blatt/pdf/BlattDokument'
 import { kinderblatt } from '../src/passgenau/kern/blatt'
+import { kontext, pruefe } from '../src/passgenau/kern/regeln'
 import type { Auftrag, Plan, Profil } from '../src/passgenau/typen'
 import type { Layout, Stufe } from '../src/blatt/typen'
 import { registriereSchriften } from '../src/blatt/pdf/stil'
@@ -100,7 +101,9 @@ for (const kurs of kurse) {
         const ritOk = !rituale.length || rituale.every((r) => rit.some((x) => x.endsWith(r.id) || x === r.id))
         const zuLang = blattSeiten[i] > maxSeiten
         if (!ok || zuLang) fehler++
-        zeilen.push(`  ${ok && !zuLang ? '✓' : '✗'} S${s.nr}: ${hat ?? kern.join(', ') ?? '–'}${ok ? '' : `  (erwartet ${passend?.id ?? '?'})`}${ritOk ? '' : '  · Rituale fehlen: ' + rit.join(', ')} · ${s.schritte.reduce((x, y) => x + y.min, 0)} Min.${s.blatt ? ` · Blatt ${blattSeiten[i]} S.${zuLang ? ` (höchstens ${maxSeiten})` : ''}` : ' · ohne Blatt'}`)
+        /* warum die erwartete Sitzung nicht kam (Textmerkmal, Alter, Zugang …) */
+        const grund = !ok && passend ? pruefe(k.eintraege.get(passend.id)!, kontext(k, p, a, leer() as never), { rolle: 'kern' }) : null
+        zeilen.push(`  ${ok && !zuLang ? '✓' : '✗'} S${s.nr}: ${hat ?? kern.join(', ') ?? '–'}${ok ? '' : `  (erwartet ${passend?.id ?? '?'}${grund ? ` – ausgeschlossen: ${grund}` : ''})`}${ritOk ? '' : '  · Rituale fehlen: ' + rit.join(', ')} · ${s.schritte.reduce((x, y) => x + y.min, 0)} Min.${s.blatt ? ` · Blatt ${blattSeiten[i]} S.${zuLang ? ` (höchstens ${maxSeiten})` : ''}` : ' · ohne Blatt'}`)
       })
       console.log(`  Variante ${v} (${JSON.stringify(z)}) · ${sprache}:`)
       zeilen.forEach((x) => console.log(x))

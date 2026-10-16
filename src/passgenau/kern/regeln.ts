@@ -231,7 +231,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     const eigen = e.id.startsWith('pg:')
     // Themen-Rahmen (th:) und die eigenen Einzelübungen (ki:, j:) sind fürs Einzelsetting geschrieben – „chacun“, „à tour de
     // rôle“ (die Fachkraft und das Kind) ist dort keine Gruppe, und „die Gruppe wählt“ ist ein Thema, kein Setting
-    const einzelText = eigen || /^(th|ki|j):/.test(e.id)
+    // (auch die Rituale eines Einzelkurses – Kurs-Prüfung 16.10.: „chacun“ im Abschluss-Ritual galt als Gruppe)
+    const einzelText = eigen || /^(th|ki|j):/.test(e.id) || (e.typ === 'schritt' && !!e.kurs)
     const kinderschutz = (c.p.achtung ?? []).includes('kinderschutz')
     if (einzeln && !einzelText && (tm.has('gruppe') || tm.has('ihr'))) return 'Gruppe'
     // Spielschule-Schritte sprechen fast alle von „den Kindern“ – dort nur nachrangig (gewicht), sonst ausgeschlossen

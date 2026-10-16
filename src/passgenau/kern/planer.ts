@@ -182,7 +182,9 @@ function vorlage(c: Kontext): Slot[] {
 }
 
 export function blattModus(c: Kontext): 'mit' | 'ohne' {
-  return c.a.blatt ?? (c.alter <= 5 || c.weg === 'leicht' ? 'ohne' : 'mit')
+  // Einzelkurs: das Blatt der Sitzung gehört dazu, auch bis 5 Jahre (Kurs-Prüfung 16.10.: „Die Schildkröte macht Pause“
+  // lief bei Fünfjährigen ohne seine Blätter)
+  return c.a.blatt ?? (c.weg === 'leicht' || (c.alter <= 5 && !kursDerFolge(c)) ? 'ohne' : 'mit')
 }
 
 function bogenFuer(c: Kontext, n: number): Bogen[] {

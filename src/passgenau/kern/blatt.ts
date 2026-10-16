@@ -844,7 +844,9 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
       const folge = ks?.ref === 'pg:folge-transfer'
         ? [...new Set(plan.sitzungen.flatMap((y) => y.schritte.filter((z) => z.rolle === 'kern' && !z.ref.startsWith('pg:')).map((z) => z.ref)))].map((r) => k.eintraege.get(r)).filter((e): e is KatalogEintrag => !!e)
         : undefined
-      if (kern) bausteine.push(...kernBlattInhalt(kern, s!.phase === 'reflektieren' && plan.n < 2 ? 'ueben' : s!.phase, sprache, { wenigSchreiben: schwer || p.zugang.schreiben <= 1 || p.zugang.lesen <= 1 || p.zugang.tempo === 'ruhig', nr, stimmungTief: !!h && h.stimmung <= 2, quellen, folge, uebertragen, alter, min: s?.schritte.find((x) => x.ref === 'pg:blatt')?.min }))
+      // Kurs-Sitzung mit Zugang: gekürzt nur, wenn das Kind weniger liest oder schreibt, als die Variante verlangt (Kurs-Prüfung
+      // 16.10.: die schreibende Variante 1/1/2 wurde gerade bei ihrem Zielkind gekürzt)
+      if (kern) bausteine.push(...kernBlattInhalt(kern, s!.phase === 'reflektieren' && plan.n < 2 ? 'ueben' : s!.phase, sprache, { wenigSchreiben: schwer || p.zugang.tempo === 'ruhig' || (kern.typ === 'schritt' && kern.zugang ? p.zugang.schreiben < kern.zugang.schreiben || p.zugang.lesen < kern.zugang.lesen : p.zugang.schreiben <= 1 || p.zugang.lesen <= 1), nr, stimmungTief: !!h && h.stimmung <= 2, quellen, folge, uebertragen, alter, min: s?.schritte.find((x) => x.ref === 'pg:blatt')?.min }))
       markiere(start, bausteine.length - start, teilId)
       continue
     }

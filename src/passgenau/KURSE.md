@@ -101,7 +101,9 @@ Mal gleich, freiwillig, 1–3 Minuten, mit der Leitfigur verbunden; das Abschlus
 - **Am Schluss:** das wachsende Modell (`schritte` mit `stil: "kette"` oder `"weg"`, `leiter`, `hand` …: „Mal aus, was du heute
   gefunden hast“) und der **Auftrag bis zum nächsten Mal** (eine kleine, machbare Beobachtung oder Handlung im Alltag).
   Sitzung 6: das ganze Modell, eine eigene Karte (`zielkarte`, `vertrag` oder `karten`) und eine Urkunde/ein Diplom-Satz.
-- **Umfang:** 4–6 Jahre 1 Seite, sonst höchstens 2 Seiten (prüft `scripts/kurs-mappe.tsx`).
+- **Umfang:** 4–6 Jahre 1 Seite, sonst höchstens 2 Seiten (prüft `scripts/kurs-mappe.tsx`). Platzfresser: `feld` mit
+  `zeichnen` (gut 7 cm), `minibuch` und `schneiden_kleben` (fast eine ganze Seite) – auf einem 1-Seiten-Blatt höchstens
+  einer davon, das Minibuch gar nicht (das Ich-Buch entsteht aus den Blättern selbst und wird in Sitzung 6 gebunden).
 - **Bilder nur aus dem Bestand:** `motiv:<name>` (Liste: `MOTIV_NAMEN` in `src/blatt/motive.ts`), `figur:<name>[:<gefühl>[:<pose>]]`
   mit Namen mia, noah, lea, sami, amira, tom, jana, ben (Gefühle wie bei `gefuehle`, Posen stehen, winken, verschraenkt,
   zeigen, jubeln, melden, stopp, haende-gesicht, geben), `gesicht:<gefühl>`, `icon:<name>` (`src/blatt/bilder/icons.json`).
@@ -122,7 +124,22 @@ Mal gleich, freiwillig, 1–3 Minuten, mit der Leitfigur verbunden; das Abschlus
   freiwillig, Beispiele der Figuren gehen immer. Für Jugendliche respektvoll und sachlich, nie verniedlichend.
 - Gleichberechtigt: Figuren verschiedener Herkunft und Geschlechter; keine Klischees.
 
-## 6. Arbeitsweise und Prüfung
+## 6. Stolperfallen
+
+- **Kinderblatt:** spricht das Kind direkt an („Kreis ein …“, „Wir spielen …“, „Ich sage dir ein Gefühl“) – nie „die Fachkraft“
+  (Fachsprache). Auf Französisch geht „l’adulte“.
+- **Wörter, bei denen der Planer eine Sitzung weglässt** (Schutzfilter für Einzelstunden, `src/passgenau/kern/einzel.ts`):
+  „Prüfung“/„examen“ (gilt als Prüfungsangst-Thema), „jeden Tag“, „täglich“, „die ganze Woche“, „zu Hause ausprobieren“,
+  „bis zur nächsten Stunde“, „heute Abend“, „chaque jour“, „à la maison“, „ce soir“ (mehrtägig), „draußen“/„dehors“ (Ort),
+  „Film“; ab 12 Jahren kindliche Wörter wie „Sticker“, „Stempel“, „Smiley“, „Handpuppe“, „Kuscheltier“. Statt „bis zur
+  nächsten Stunde“: „bis zum nächsten Mal“; statt „zu Hause ausprobieren“: „diese Woche ausprobieren“.
+- **Vorsicht-Filter gelten weiter:** Sitzungen, die nach Familie, Körperbild oder Trauer fragen, fallen bei Kindern mit dieser
+  Vorsicht weg – darum Beispiele aus Schule, Pause, Spiel und Verein.
+- `scripts/kurs-mappe.tsx` nennt den Grund, wenn eine Sitzung nicht kommt („ausgeschlossen: …“).
+
+## 7. Arbeitsweise und Prüfung
+
+Bis 5 Jahre plant Passgenau sonst ohne Blatt – in einer Kurs-Folge gehört das Blatt dazu (auch bei Fünfjährigen).
 
 1. Kurs-Datei schreiben (alle Sitzungen und Varianten, zwei Rituale, DE und FR).
 2. `npm run -s passgenau:pruefen` – keine Fehler.
@@ -130,7 +147,7 @@ Mal gleich, freiwillig, 1–3 Minuten, mit der Leitfigur verbunden; das Abschlus
    Blätter im Umfang; die Bilder in `tmp/kurs-mappe/blaetter/` ansehen (mindestens je Variante Sitzung 1 und 6 auf Deutsch und
    eine auf Französisch) und nachbessern: zu voll, zu leer, Seitenumbruch, Bild fehlt?
 
-## 7. Katalog (32 Kurse)
+## 8. Katalog (32 Kurse)
 
 Codes: Hauptziel(e) mit Gewicht 1, weitere mit 0.5 – in allen Sitzungen eines Kurses gleich. Die Titel der Sitzungen sind
 Vorschläge; Reihenfolge und Bogen gelten.
@@ -153,7 +170,7 @@ Vorschläge; Reihenfolge und Bogen gelten.
 | kurs-streit-7-9 | Die Friedens-Treppe | Treppe (`leiter`/`schritte`) mit sechs Stufen: Stopp · Erzählen · Gefühl · Ideen · Einigen · Frieden | V-18 1, SOZ-21 1, SOZ-23 .5, V-28 .5 | konflikte · freundschaft | 1 Stopp und durchatmen · 2 Erzählen, was passiert ist · 3 Gefühle sagen · 4 Ideen sammeln · 5 Sich einigen · 6 Meine Friedens-Treppe |
 | kurs-streit-10-12 | Konflikt-Lotsen | Waage (`motiv:waage`): fair für beide | V-28 1, SOZ-34 1, SOZ-32 .5, V-27 .5 | konflikte · regeln | 1 Konflikte gehören dazu · 2 Beide Seiten sehen · 3 Ich-Botschaften statt Vorwürfe · 4 Lösungen sammeln und prüfen · 5 Entschuldigen und wiedergutmachen · 6 Mein Lösungs-Fahrplan |
 | kurs-streit-13-16 | Konflikte klären | Eisberg (`eisberg`): Positionen oben, Interessen unten | K-31 1, V-33 1, SOZ-38 .5, V-27 .5 | konflikte · regeln | 1 Wie Konflikte eskalieren · 2 Interessen hinter Positionen · 3 Zuhören und spiegeln · 4 Verhandeln · 5 Versöhnen und Verantwortung übernehmen · 6 Mein Konflikt-Kompass |
-| kurs-selbstwert-4-6 | Das bin ich! | Spiegel (`motiv:spiegel`) und das Ich-Buch (`minibuch`) | K-13 1, V-14 1, K-18 .5 | selbstbild · selbstwert | 1 Mein Name, mein Gesicht · 2 Das mag ich · 3 Das kann ich schon · 4 Ich bin stolz · 5 Ich helfe – ich bin wichtig · 6 Mein Ich-Buch |
+| kurs-selbstwert-4-6 | Das bin ich! | Spiegel (`motiv:spiegel`) und das Ich-Buch (jedes Blatt eine Seite, Sitzung 6 bindet es) | K-13 1, V-14 1, K-18 .5 | selbstbild · selbstwert | 1 Mein Name, mein Gesicht · 2 Das mag ich · 3 Das kann ich schon · 4 Ich bin stolz · 5 Ich helfe – ich bin wichtig · 6 Mein Ich-Buch |
 | kurs-selbstwert-7-9 | Mein Stärken-Schatz | Schatzkiste (`icon:gift`) mit Stärken-Edelsteinen | K-19 1, K-18 1, K-24 .5 | selbstbild · selbstwert | 1 Stärken entdecken · 2 Was ich gut kann – mit Beispiel · 3 Was andere an mir mögen · 4 Fehler gehören dazu: noch nicht! · 5 Stolz sein dürfen · 6 Meine Schatzkiste |
 | kurs-selbstwert-10-12 | Mein Stärken-Turm | Turm aus Bausteinen (`icon:tower`) | K-19 1, K-24 1, V-22 .5, K-28 .5 | selbstbild · selbstwert | 1 Stärken mit Beweis · 2 Stärken anderer sehen und sagen · 3 Fortschritt sichtbar machen · 4 Die innere Stimme: kritisch oder fair · 5 Rückschläge und mein Lernweg · 6 Mein Stärken-Turm |
 | kurs-selbstwert-13-16 | Wer bin ich? | Selbstbild-Fenster: wie ich mich sehe · wie andere mich sehen · was mir wichtig ist · wohin ich will | SOZ-40 1, K-34 1, SOZ-39 .5, K-24 .5 | selbstbild · selbstwert | 1 Selbstbild und Fremdbild · 2 Stärken mit Belegen · 3 Meine Werte · 4 Der innere Kritiker und ein fairer Blick · 5 Ziele, die zu mir passen · 6 Mein Profil |
