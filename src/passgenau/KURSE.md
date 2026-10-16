@@ -111,6 +111,15 @@ Mal gleich, freiwillig, 1–3 Minuten, mit der Leitfigur verbunden; das Abschlus
 - **Anleitung** (`uebungsblatt.anleitung`): welche Aufgabe gemeinsam, welche allein, was die Fachkraft fragt (`sagen`), was hilft,
   wenn Schreiben oder Lesen schwerfällt (`wennEsKippt`).
 - Keine Codes, Testkürzel, „Sitzung 3“, „Einheit“, „Modul“ auf dem Kinderblatt; Nummer der Spur/Stufe des Modells ist gut.
+- **Das Modell wächst sichtbar (Lektorat 16.10.):** In `schritte` (Kette/Weg) ist nur der Schritt von heute getönt – mit
+  `"heute": true` oder „heute“/« aujourd’hui » im Titel; die anderen bleiben weiß. In der `leiter` ist die Sprosse „Heute: …“
+  hervorgehoben. Wachsende Motive: `motiv:ampel-aus`, `ampel-rot`, `ampel-gelb`, `ampel-gruen` (nur ein Licht an),
+  `motiv:bruecke-1` … `bruecke-5` (so viele Abschnitte gebaut), `batterie-leer`/`batterie-voll`, `schildkroete-panzer`.
+- **Höchstens 4–5 Aufgaben** je Blatt (die Blattphase dauert 6–8 Minuten); der Modell-Kasten oben höchstens ein Fünftel der Seite.
+- **Auftrag nachfragen:** Den Auftrag vom letzten Blatt fragt der Planer am Anfang jeder Kurs-Sitzung selbst nach (wörtlich vom
+  Blatt). Darum nicht in `text` oder `sagen` schreiben; das Blatt endet aber immer mit einem klaren kleinen Auftrag.
+- **Hintergrund für die Fachkraft:** je Kurs in `src/data/passgenau/kurs-hintergrund.json` (warum es wirkt, Achtung, Quellen;
+  DE und FR) – steht auf dem Deckblatt der Kurs-Mappe.
 
 ## 5. Fachliche Leitplanken
 

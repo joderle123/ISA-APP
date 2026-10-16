@@ -92,15 +92,23 @@ function batterie(stand = 3): Zeichnung {
 }
 
 // --- Ampel ----------------------------------------------------------------------------
-function ampel(): Zeichnung {
+/** licht: nur dieses Licht leuchtet (Kurs „Mein Ampel-Plan“: das Bild wächst mit – Rot, dann Gelb, dann Grün; 'aus' = noch
+ *  keins); ohne Angabe leuchten alle drei */
+function ampel(licht?: 'rot' | 'gelb' | 'gruen' | 'aus'): Zeichnung {
+  const AUS = '#5C6373'
+  const an = (l: 'rot' | 'gelb' | 'gruen') => !licht || licht === l
+  const lampe = (l: 'rot' | 'gelb' | 'gruen', cy: number, farbe: string): Form[] => [
+    ...(licht && licht === l ? [{ t: 'circle' as const, cx: 30, cy, r: 22, f: farbe, s: 'none', o: 0.28 }] : []),
+    { t: 'circle', cx: 30, cy, r: 17, f: an(l) ? farbe : AUS, s: T, w: 2 },
+  ]
   return {
     vb: [0, 0, 60, 150],
     formen: [
       { t: 'rect', x: 4, y: 2, b: 52, h: 146, rx: 16, f: '#3A4152', s: T, w: 2.4 },
-      { t: 'circle', cx: 30, cy: 28, r: 17, f: ROT, s: T, w: 2 },
-      { t: 'circle', cx: 30, cy: 75, r: 17, f: GELB, s: T, w: 2 },
-      { t: 'circle', cx: 30, cy: 122, r: 17, f: AMPELGRUEN, s: T, w: 2 },
-      { t: 'path', d: 'M20 22 Q24 16 30 16', s: 'papier', f: 'none', w: 2.4, o: 0.7 },
+      ...lampe('rot', 28, ROT),
+      ...lampe('gelb', 75, GELB),
+      ...lampe('gruen', 122, AMPELGRUEN),
+      ...(an('rot') ? [{ t: 'path' as const, d: 'M20 22 Q24 16 30 16', s: 'papier', f: 'none', w: 2.4, o: 0.7 }] : []),
     ],
   }
 }
@@ -273,15 +281,27 @@ function stopp(): Zeichnung {
 }
 
 // --- Brücke ----------------------------------------------------------------------------------------
-function bruecke(): Zeichnung {
+/** gebaut: so viele von fünf Abschnitten sind schon gebaut (Kurs „Die Freundschafts-Brücke“: die Brücke wächst mit), die übrigen
+ *  sind gestrichelt; ohne Angabe die ganze Brücke */
+function bruecke(gebaut?: number): Zeichnung {
   const planken: Form[] = []
-  for (let i = 0; i < 9; i++) planken.push({ t: 'line', x1: 54 + i * 14, y1: 62 + Math.sin((i / 8) * Math.PI) * -10, x2: 54 + i * 14, y2: 74 + Math.sin((i / 8) * Math.PI) * -10, s: T, w: 1.6 })
+  if (gebaut === undefined) {
+    for (let i = 0; i < 9; i++) planken.push({ t: 'line', x1: 54 + i * 14, y1: 62 + Math.sin((i / 8) * Math.PI) * -10, x2: 54 + i * 14, y2: 74 + Math.sin((i / 8) * Math.PI) * -10, s: T, w: 1.6 })
+  } else {
+    // fünf Abschnitte entlang der Bögen (oben 48,70 → 110,42 → 172,70; unten 18 tiefer – dick genug, um sie klein zu sehen)
+    const q = (t: number, y0: number, yc: number): [number, number] => [(1 - t) ** 2 * 48 + 2 * (1 - t) * t * 110 + t ** 2 * 172, (1 - t) ** 2 * y0 + 2 * (1 - t) * t * yc + t ** 2 * y0]
+    const r = (v: number) => Math.round(v * 10) / 10
+    for (let i = 0; i < 5; i++) {
+      const pkt = [q(i / 5, 70, 42), q((i + 1) / 5, 70, 42), q((i + 1) / 5, 88, 60), q(i / 5, 88, 60)].map(([x, y]) => `${r(x)},${r(y)}`).join(' ')
+      planken.push(i < gebaut ? { t: 'polygon', p: pkt, f: '#C9925A', s: T, w: 2.2 } : { t: 'polygon', p: pkt, f: 'papier', s: T, w: 1.6, dash: '4 3' })
+    }
+  }
   return {
     vb: [0, 0, 220, 120],
     formen: [
       { t: 'path', d: 'M0 70 L48 70 L56 120 L0 120 Z', f: 'zart', s: T, w: 2.4 },
       { t: 'path', d: 'M220 70 L172 70 L164 120 L220 120 Z', f: 'zart', s: T, w: 2.4 },
-      { t: 'path', d: 'M48 70 Q110 42 172 70 L172 80 Q110 52 48 80 Z', f: '#D9B98F', s: T, w: 2.6 },
+      ...(gebaut === undefined ? [{ t: 'path' as const, d: 'M48 70 Q110 42 172 70 L172 80 Q110 52 48 80 Z', f: '#D9B98F', s: T, w: 2.6 }] : []),
       ...planken,
       { t: 'path', d: 'M48 48 Q110 20 172 48', s: T, f: 'none', w: 2.6 },
       { t: 'line', x1: 48, y1: 48, x2: 48, y2: 72, s: T, w: 2.6 },
@@ -357,7 +377,11 @@ const MOTIVE: Record<string, () => Zeichnung> = {
   batterie: () => batterie(3),
   'batterie-leer': () => batterie(1),
   'batterie-voll': () => batterie(5),
-  ampel,
+  ampel: () => ampel(),
+  'ampel-rot': () => ampel('rot'),
+  'ampel-gelb': () => ampel('gelb'),
+  'ampel-gruen': () => ampel('gruen'),
+  'ampel-aus': () => ampel('aus'),
   waage,
   hand,
   koerper,
@@ -367,7 +391,12 @@ const MOTIVE: Record<string, () => Zeichnung> = {
   berg,
   insel,
   stopp,
-  bruecke,
+  bruecke: () => bruecke(),
+  'bruecke-1': () => bruecke(1),
+  'bruecke-2': () => bruecke(2),
+  'bruecke-3': () => bruecke(3),
+  'bruecke-4': () => bruecke(4),
+  'bruecke-5': () => bruecke(5),
   ballon,
   werkzeugkiste,
   haus,
