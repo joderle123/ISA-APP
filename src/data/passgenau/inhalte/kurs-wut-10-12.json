@@ -6,7 +6,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 1: Mein Wut-Thermometer",
-    "text": "Die Fachkraft öffnet die Werkzeugkiste auf dem Blatt: In den nächsten Treffen kommt jedes Mal ein Werkzeug hinein, mit dem das Kind bei Wut cool bleiben kann. Das erste ist das Wut-Thermometer von 1 (ganz ruhig) bis 10 (Kochpunkt). Sie sagt, dass Wut ein normales Gefühl ist und es nur darum geht, was man damit tut. An einer erfundenen Szene (Sami fliegt beim Handyspiel kurz vor dem Ziel raus) zeigt sie, wie die Zahl steigt, und nennt ein Körperzeichen; das Kind rät die Zahl. Dann liest sie drei kurze Situationen aus Klasse, Pause und Chat vor, und das Kind zeigt mit den Fingern, wie heiß es würde – ohne Begründung. Zum Schluss sucht das Kind für eine mittlere und eine hohe Zahl je ein Körperzeichen; eigene Beispiele sind freiwillig, Figuren gehen immer.",
+    "text": "Die Fachkraft öffnet die Werkzeugkiste auf dem Blatt: In den nächsten Treffen kommt jedes Mal ein Werkzeug hinein, mit dem das Kind bei Wut cool bleiben kann. Das erste ist das Wut-Thermometer von 1 (ganz ruhig) bis 10 (Kochpunkt); sie sagt, dass Wut ein normales Gefühl ist und es nur darum geht, was man damit tut. An einer erfundenen Szene (Sami fliegt beim Handyspiel kurz vor dem Ziel raus) zeigt sie, wie die Zahl steigt, und nennt ein Körperzeichen; das Kind rät die Zahl. Dann liest sie drei kurze Situationen vor (Klasse: Du wirst zu Unrecht beschuldigt. Pause: Jemand schnappt dir den Ball weg. Chat: Jemand stellt ein Foto von dir ohne Frage in die Klassengruppe), und das Kind zeigt mit den Fingern, wie heiß es würde – ohne Begründung. Zum Schluss sucht das Kind für eine mittlere und eine hohe Zahl je ein Körperzeichen; eigene Beispiele sind freiwillig, Figuren gehen immer.",
     "sagen": [
       "Wut ist ein Gefühl wie jedes andere. Sie sagt dir: Hier ist etwas wichtig oder unfair. Was du dann tust, das üben wir hier.",
       "Das Wut-Thermometer geht von 1, ganz ruhig, bis 10, Kochpunkt. Wie heiß wirst du, wenn der Bus gerade vor deiner Nase wegfährt?",
@@ -107,7 +107,7 @@
             },
             {
               "art": "text",
-              "text": "Cool bleiben heißt, das Feuer zu kennen und zu steuern. Heute: das Wut-Thermometer."
+              "text": "Cool bleiben heißt: Du kennst deine Wut und weißt, was du tun kannst, wenn sie steigt. Heute: das Wut-Thermometer."
             }
           ],
           "rechts": [
@@ -296,7 +296,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Auftrag bis zum nächsten Mal: Lies dein Thermometer zweimal ab, wenn du dich ärgerst. Trag es ein.",
+          "text": "Auftrag bis zum nächsten Mal: Wenn du dich ärgerst, lies dein Thermometer ab. Zweimal reicht – trag es ein.",
           "symbole": [
             "schreiben"
           ]
@@ -341,7 +341,7 @@
             },
             {
               "art": "text",
-              "text": "Rester cool, c’est connaître le feu et savoir le diriger. Aujourd’hui : le thermomètre de la colère."
+              "text": "Rester cool, c’est connaître sa colère et savoir quoi faire quand elle monte. Aujourd’hui : le thermomètre de la colère."
             }
           ],
           "rechts": [
@@ -356,7 +356,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "La colère peut monter très haut. Lis les niveaux et colorie où tu la sens d’abord.",
+          "text": "La colère peut monter très haut. Lis les niveaux et colorie sur le corps l’endroit où tu la sens en premier.",
           "symbole": [
             "lesen",
             "malen"
@@ -530,7 +530,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mission jusqu’à la prochaine fois : lis ton thermomètre deux fois quand tu t’énerves. Note-le.",
+          "text": "Mission d’ici la prochaine fois : quand tu t’énerves, lis ton thermomètre. Deux fois suffit – note-le.",
           "symbole": [
             "schreiben"
           ]
@@ -557,7 +557,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1: Das Kind liest die fünf Stufen des Thermometers und malt am Körper an, wo die Wut bei ihm zuerst heiß wird; ausgedachte Beispiele gehen immer. In Aufgabe 2 ergänzt es allein zwei Körperzeichen – es muss nichts vorlesen. In Aufgabe 3 schätzt es, wie heiß Sami, Amira und Tom werden, und schreibt in die Tabelle, woran man es sieht. In Aufgabe 4 sieht es, was schon im Werkzeugkasten liegt, und schreibt, wann es das Thermometer brauchen kann. Den Auftrag (Aufgabe 5) nimmt es mit; das Blatt kommt in die Werkzeug-Mappe.",
+          "text": "Aufgabe 1: Das Kind liest die fünf Stufen des Thermometers und malt am Körper an, wo die Wut bei ihm zuerst heiß wird; ausgedachte Beispiele gehen immer. In Aufgabe 2 ergänzt es allein zwei Körperzeichen – es muss nichts vorlesen. In Aufgabe 3 schätzt es, wie heiß Sami, Amira und Tom werden, und schreibt in die Tabelle, woran man es sieht (wenn Zeit bleibt: die letzte Spalte). In Aufgabe 4 sieht es, was schon im Werkzeugkasten liegt, und schreibt, wann es das Thermometer brauchen kann. Den Auftrag (Aufgabe 5) liest die Fachkraft mit dem Kind durch und fragt, wann es ihn machen kann; das Blatt kommt in die Werkzeug-Mappe.",
           "sagen": [
             "Es gibt keine falsche Zahl. Deine Zahl ist deine.",
             "Woran sieht man es – woran merkst du es?"
@@ -565,7 +565,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Beispiele, und die Fachkraft schreibt Stichworte; bei den Zahlen genügt eine Zahl ohne Begründung. Mag das Kind keine eigene Situation nennen, bleibt es bei Sami, Amira und Tom."
         },
         "fr": {
-          "text": "Exercice 1 : l’enfant lit les cinq niveaux du thermomètre et colorie sur le corps où la colère chauffe d’abord chez lui ; les exemples inventés vont toujours. À l’exercice 2, il complète seul deux signes du corps – il n’a rien à lire à voix haute. À l’exercice 3, il estime à combien montent Sami, Amira et Tom et écrit dans le tableau à quoi on le voit. À l’exercice 4, il voit ce qui est déjà dans la boîte à outils et écrit quand le thermomètre peut lui servir. Il emporte la mission (exercice 5) ; la fiche va dans la chemise des outils.",
+          "text": "Exercice 1 : l’enfant lit les cinq niveaux du thermomètre et colorie sur le corps l’endroit où la colère chauffe d’abord chez lui ; les exemples inventés vont toujours. À l’exercice 2, il complète seul deux signes du corps – il n’a rien à lire à voix haute. À l’exercice 3, il estime à combien montent Sami, Amira et Tom et écrit dans le tableau à quoi on le voit (s’il reste du temps : la dernière colonne). À l’exercice 4, il voit ce qui est déjà dans la boîte à outils et écrit quand le thermomètre peut lui servir. L’adulte lit la mission (exercice 5) avec l’enfant et demande quand il peut la faire ; la fiche va dans la chemise des outils.",
           "sagen": [
             "Il n’y a pas de mauvais chiffre. Ton chiffre, c’est le tien.",
             "À quoi on le voit – à quoi tu le remarques ?"
@@ -576,7 +576,7 @@
     },
     "fr": {
       "titel": "Outil 1 : mon thermomètre de la colère",
-      "text": "L’adulte ouvre la boîte à outils sur la fiche : aux prochains rendez-vous, un nouvel outil y entre à chaque fois pour aider l’enfant à garder son calme quand la colère monte. Le premier est le thermomètre de la colère, de 1 (tout est calme) à 10 (ébullition). L’adulte dit que la colère est un sentiment normal et que tout dépend de ce qu’on en fait. Avec une scène inventée (Sami est éliminé d’un jeu sur téléphone juste avant l’arrivée), l’adulte montre comment le chiffre monte et nomme un signe du corps ; l’enfant estime le chiffre. Ensuite, l’adulte lit trois courtes situations (classe, récré, chat), et l’enfant montre avec ses doigts à combien il monterait – sans avoir à se justifier. Pour finir, l’enfant cherche un signe du corps pour un chiffre moyen et pour un chiffre élevé ; les exemples personnels sont facultatifs, ceux des personnages vont toujours.",
+      "text": "L’adulte ouvre la boîte à outils sur la fiche : à chaque rendez-vous, un nouvel outil y entre pour aider l’enfant à garder son calme quand la colère monte. Le premier est le thermomètre de la colère, de 1 (tout est calme) à 10 (ébullition) ; l’adulte dit que la colère est un sentiment normal et que tout dépend de ce qu’on en fait. Avec une scène inventée (Sami est éliminé d’un jeu sur téléphone juste avant l’arrivée), il montre comment le chiffre monte et nomme un signe du corps ; l’enfant estime le chiffre. Ensuite, l’adulte lit trois courtes situations (en classe : on t’accuse à tort ; à la récré : quelqu’un te prend ton ballon ; dans le chat : quelqu’un met une photo de toi dans le groupe de la classe sans te demander), et l’enfant montre avec ses doigts à combien il monterait – sans avoir à se justifier. Pour finir, l’enfant cherche un signe du corps pour un chiffre moyen et pour un chiffre élevé ; les exemples personnels sont facultatifs, ceux des personnages vont toujours.",
       "sagen": [
         "La colère est un sentiment comme les autres. Elle te dit : ici, quelque chose est important ou injuste. Ce que tu en fais, c’est ce que nous allons exercer ici.",
         "Le thermomètre de la colère va de 1, tout est calme, à 10, ébullition. À combien tu montes quand le bus part juste sous ton nez ?",
@@ -598,7 +598,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 1: Mein Wut-Thermometer",
-    "text": "Die Fachkraft öffnet die Werkzeugkiste auf dem Blatt: In den nächsten Treffen kommt jedes Mal ein Werkzeug hinein, mit dem das Kind bei Wut cool bleiben kann. Das erste ist das Wut-Thermometer von 1 (ganz ruhig) bis 10 (Kochpunkt). Sie sagt, dass Wut ein normales Gefühl ist und es nur darum geht, was man damit tut. An einer erfundenen Szene (Sami fliegt beim Handyspiel kurz vor dem Ziel raus) zeigt sie, wie die Zahl steigt, und nennt ein Körperzeichen; das Kind rät die Zahl. Dann liest sie drei kurze Situationen aus Klasse, Pause und Chat vor, und das Kind zeigt mit den Fingern, wie heiß es würde – ohne Begründung. Zum Schluss zeigt das Kind auf dem Körperbild, wo es bei einer mittleren und einer hohen Zahl etwas spürt; eigene Beispiele sind freiwillig, Figuren gehen immer.",
+    "text": "Die Fachkraft öffnet die Werkzeugkiste auf dem Blatt: In den nächsten Treffen kommt jedes Mal ein Werkzeug hinein, mit dem das Kind bei Wut cool bleiben kann. Das erste ist das Wut-Thermometer von 1 (ganz ruhig) bis 10 (Kochpunkt); sie sagt, dass Wut ein normales Gefühl ist und es nur darum geht, was man damit tut. An einer erfundenen Szene (Sami fliegt beim Handyspiel kurz vor dem Ziel raus) zeigt sie, wie die Zahl steigt, und nennt ein Körperzeichen; das Kind rät die Zahl. Dann liest sie drei kurze Situationen vor (Klasse: Du wirst zu Unrecht beschuldigt. Pause: Jemand schnappt dir den Ball weg. Chat: Jemand stellt ein Foto von dir ohne Frage in die Klassengruppe), und das Kind zeigt mit den Fingern, wie heiß es würde – ohne Begründung. Zum Schluss zeigt das Kind auf dem Körperbild, wo es bei einer mittleren und einer hohen Zahl etwas spürt; eigene Beispiele sind freiwillig, Figuren gehen immer.",
     "sagen": [
       "Wut ist ein Gefühl wie jedes andere. Sie sagt dir: Hier ist etwas wichtig oder unfair. Was du dann tust, das üben wir hier.",
       "Das Wut-Thermometer geht von 1, ganz ruhig, bis 10, Kochpunkt. Wie heiß wirst du, wenn der Bus gerade vor deiner Nase wegfährt?",
@@ -699,7 +699,7 @@
             },
             {
               "art": "text",
-              "text": "Cool bleiben heißt, das Feuer zu kennen und zu steuern. Heute: das Wut-Thermometer."
+              "text": "Cool bleiben heißt: Du kennst deine Wut und weißt, was du tun kannst, wenn sie steigt. Heute: das Wut-Thermometer."
             }
           ],
           "rechts": [
@@ -920,7 +920,7 @@
             },
             {
               "art": "text",
-              "text": "Rester cool, c’est connaître le feu et savoir le diriger. Aujourd’hui : le thermomètre de la colère."
+              "text": "Rester cool, c’est connaître sa colère et savoir quoi faire quand elle monte. Aujourd’hui : le thermomètre de la colère."
             }
           ],
           "rechts": [
@@ -935,7 +935,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "La colère peut monter très haut. Lis les niveaux et colorie où tu la sens d’abord.",
+          "text": "La colère peut monter très haut. Lis les niveaux et colorie sur le corps l’endroit où tu la sens en premier.",
           "symbole": [
             "lesen",
             "malen"
@@ -1108,7 +1108,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mission jusqu’à la prochaine fois : fais attention quand tu t’énerves – même un tout petit peu. Fais une croix : à combien est-ce monté ?",
+          "text": "Mission d’ici la prochaine fois : fais attention quand tu t’énerves – même un tout petit peu. Fais une croix : à combien est-ce monté ?",
           "symbole": [
             "ankreuzen"
           ]
@@ -1123,7 +1123,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1: Das Kind liest die fünf Stufen des Thermometers und malt am Körper an, wo die Wut bei ihm zuerst heiß wird; ausgedachte Beispiele gehen immer. In Aufgabe 2 kreist es ein, woran es die Wut bei einer 6 merkt. In Aufgabe 3 kreuzt es an, wie heiß Sami, Amira und Tom werden. In Aufgabe 4 kreist es das neue Werkzeug ein. Der Auftrag (Aufgabe 5) besteht nur aus einem Kreuz; das Blatt kommt in die Werkzeug-Mappe.",
+          "text": "Aufgabe 1: Das Kind liest die fünf Stufen des Thermometers und malt am Körper an, wo die Wut bei ihm zuerst heiß wird; ausgedachte Beispiele gehen immer. In Aufgabe 2 kreist es ein, woran es die Wut bei einer 6 merkt. In Aufgabe 3 kreuzt es an, wie heiß Sami, Amira und Tom werden. In Aufgabe 4 kreist es das neue Werkzeug ein. Der Auftrag (Aufgabe 5) besteht nur aus einem Kreuz – die Fachkraft liest ihn mit dem Kind durch; das Blatt kommt in die Werkzeug-Mappe.",
           "sagen": [
             "Es gibt keine falsche Zahl. Deine Zahl ist deine.",
             "Woran merkst du es in deinem Körper?"
@@ -1131,7 +1131,7 @@
           "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Stufen vor, und das Kind zeigt auf die Zahl. Ein Kreuz in der Raster-Tabelle und ein Körperzeichen genügen."
         },
         "fr": {
-          "text": "Exercice 1 : l’enfant lit les cinq niveaux du thermomètre et colorie sur le corps où la colère chauffe d’abord chez lui ; les exemples inventés vont toujours. À l’exercice 2, il entoure à quoi il remarque la colère à 6. À l’exercice 3, il coche à combien montent Sami, Amira et Tom. À l’exercice 4, il entoure le nouvel outil. La mission (exercice 5) ne demande qu’une croix ; la fiche va dans la chemise des outils.",
+          "text": "Exercice 1 : l’enfant lit les cinq niveaux du thermomètre et colorie sur le corps où la colère chauffe d’abord chez lui ; les exemples inventés vont toujours. À l’exercice 2, il entoure à quoi il remarque la colère à 6. À l’exercice 3, il coche à combien montent Sami, Amira et Tom. À l’exercice 4, il entoure le nouvel outil. La mission (exercice 5) ne demande qu’une croix – l’adulte la lit avec l’enfant ; la fiche va dans la chemise des outils.",
           "sagen": [
             "Il n’y a pas de mauvais chiffre. Ton chiffre, c’est le tien.",
             "À quoi tu le remarques dans ton corps ?"
@@ -1142,7 +1142,7 @@
     },
     "fr": {
       "titel": "Outil 1 : mon thermomètre de la colère",
-      "text": "L’adulte ouvre la boîte à outils sur la fiche : aux prochains rendez-vous, un nouvel outil y entre à chaque fois pour aider l’enfant à garder son calme quand la colère monte. Le premier est le thermomètre de la colère, de 1 (tout est calme) à 10 (ébullition). L’adulte dit que la colère est un sentiment normal et que tout dépend de ce qu’on en fait. Avec une scène inventée (Sami est éliminé d’un jeu sur téléphone juste avant l’arrivée), l’adulte montre comment le chiffre monte et nomme un signe du corps ; l’enfant estime le chiffre. Ensuite, l’adulte lit trois courtes situations (classe, récré, chat), et l’enfant montre avec ses doigts à combien il monterait – sans avoir à se justifier. Pour finir, l’enfant montre sur le dessin du corps où il sent quelque chose avec un chiffre moyen et un chiffre élevé ; les exemples personnels sont facultatifs, ceux des personnages vont toujours.",
+      "text": "L’adulte ouvre la boîte à outils sur la fiche : à chaque rendez-vous, un nouvel outil y entre pour aider l’enfant à garder son calme quand la colère monte. Le premier est le thermomètre de la colère, de 1 (tout est calme) à 10 (ébullition) ; l’adulte dit que la colère est un sentiment normal et que tout dépend de ce qu’on en fait. Avec une scène inventée (Sami est éliminé d’un jeu sur téléphone juste avant l’arrivée), il montre comment le chiffre monte et nomme un signe du corps ; l’enfant estime le chiffre. Ensuite, l’adulte lit trois courtes situations (en classe : on t’accuse à tort ; à la récré : quelqu’un te prend ton ballon ; dans le chat : quelqu’un met une photo de toi dans le groupe de la classe sans te demander), et l’enfant montre avec ses doigts à combien il monterait – sans avoir à se justifier. Pour finir, l’enfant montre sur le dessin du corps où il sent quelque chose, pour un chiffre moyen et pour un chiffre élevé ; les exemples personnels sont facultatifs, ceux des personnages vont toujours.",
       "sagen": [
         "La colère est un sentiment comme les autres. Elle te dit : ici, quelque chose est important ou injuste. Ce que tu en fais, c’est ce que nous allons exercer ici.",
         "Le thermomètre de la colère va de 1, tout est calme, à 10, ébullition. À combien tu montes quand le bus part juste sous ton nez ?",
@@ -1164,7 +1164,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 2: Auslöser und Knöpfe",
-    "text": "Das Kind hat sein Wut-Thermometer gebaut und erste Körperzeichen gefunden; heute geht es darum, was die Zahl nach oben schießen lässt: die Knöpfe. Die Fachkraft sagt, dass jeder andere Knöpfe hat und dass man früher merkt, wenn jemand draufdrückt, sobald man den eigenen kennt. Sie liest sechs kurze Situationen vor (ein Foul-Pfiff, das keins war; alle lachen über ein Foto im Klassenchat; beim Teamwählen als Letzter übrig bleiben; ein Spiel, das knapp schiefgeht; jemand sagt „Mach das jetzt!“; jemand nimmt Sachen ohne zu fragen); das Kind zeigt jedes Mal mit den Fingern seine Zahl, und beide vergleichen: Warum ist dieselbe Situation für den einen eine 3 und für den anderen eine 8? Gemeinsam suchen sie, was die heißen Situationen verbindet, und geben den Knöpfen Namen (unfair, ausgelacht, ausgeschlossen, verlieren, herumkommandiert, Sachen angefasst). Zum Schluss wählt das Kind höchstens zwei Knöpfe, die bei ihm am ehesten drücken – freiwillig, ohne Geschichte dazu – und schreibt sie in seine Knopf-Karte.",
+    "text": "Das Kind kennt sein Wut-Thermometer und hat erste Körperzeichen gefunden; heute geht es darum, was die Zahl nach oben schießen lässt: die Knöpfe. Die Fachkraft sagt, dass jeder andere Knöpfe hat und dass man früher merkt, wenn jemand draufdrückt, sobald man den eigenen kennt. Sie liest sechs kurze Situationen vor (ein Foul-Pfiff, das keins war; alle lachen über ein Foto im Klassenchat; beim Teamwählen als Letzter übrig bleiben; ein Spiel, das knapp schiefgeht; jemand sagt „Mach das jetzt!“; jemand nimmt Sachen ohne zu fragen); das Kind zeigt jedes Mal mit den Fingern seine Zahl, und bei einer Situation vergleichen beide: Warum ist dasselbe für den einen eine 3 und für den anderen eine 8? Gemeinsam suchen sie, was die heißen Situationen verbindet, und geben den Knöpfen Namen (unfair, ausgelacht, ausgeschlossen, verlieren, herumkommandiert, Sachen angefasst). Zum Schluss wählt das Kind höchstens zwei Knöpfe, die bei ihm am ehesten drücken – freiwillig, ohne Geschichte dazu, der Knopf einer Figur geht auch – und trägt sie danach auf dem Blatt in seine Knopf-Karte ein.",
     "sagen": [
       "Jeder hat Knöpfe. Wenn jemand draufdrückt, schießt die Zahl hoch – meistens schneller, als man denkt.",
       "Dieselbe Situation: bei dir eine 3, bei mir eine 7. Das ist normal. Wichtig ist nur: Welche Knöpfe hast du?",
@@ -1326,6 +1326,10 @@
             "Ausgeschlossen werden",
             "Sachen angefasst oder weggenommen",
             "Verlieren oder einen Fehler machen"
+          ],
+          "titel": [
+            "Figur",
+            "Knopf"
           ]
         },
         {
@@ -1352,7 +1356,7 @@
         },
         {
           "art": "satzanfaenge",
-          "linien": 1,
+          "linien": 2,
           "items": [
             "Mein größter Knopf: …",
             "Dann steigt mein Thermometer auf etwa …"
@@ -1513,16 +1517,20 @@
             "Mise à l’écart",
             "Affaires touchées ou prises",
             "Perdre ou faire une erreur"
+          ],
+          "titel": [
+            "Personnage",
+            "Bouton"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Quels boutons s’activent le plus vite chez toi ? Coche ou complète. Écris aussi jusqu’où ton thermomètre monte.",
+          "text": "Quels boutons te font monter le plus vite ? Coche ou complète. Écris aussi jusqu’où ton thermomètre monte.",
           "symbole": [
             "ankreuzen",
             "schreiben"
           ],
-          "hinweis": "Tu n’as rien à révéler que tu ne veux pas."
+          "hinweis": "Tu n’as pas à dire ce que tu ne veux pas dire."
         },
         {
           "art": "ankreuzen",
@@ -1532,14 +1540,14 @@
             "quand quelqu’un se moque de moi",
             "quand on me laisse de côté",
             "quand je perds ou que je fais une erreur",
-            "quand quelqu’un me commande",
+            "quand quelqu’un me donne des ordres",
             "quand quelqu’un touche à mes affaires"
           ],
           "frei": 1
         },
         {
           "art": "satzanfaenge",
-          "linien": 1,
+          "linien": 2,
           "items": [
             "Mon plus gros bouton : …",
             "Mon thermomètre monte alors à environ …"
@@ -1593,7 +1601,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mission jusqu’à la prochaine fois : attrape un bouton. Dès que ton thermomètre monte, note vite ce qui a appuyé dessus.",
+          "text": "Mission d’ici la prochaine fois : attrape un bouton. Dès que ton thermomètre monte, note vite ce qui a appuyé dessus.",
           "symbole": [
             "schreiben"
           ]
@@ -1620,17 +1628,17 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind liest die Blasen von Lea, Noah und Amira und verbindet jede Figur mit dem Knopf, der gedrückt wird. In Aufgabe 2 kreuzt es die Knöpfe an, die bei ihm am schnellsten drücken, und schreibt seinen größten Knopf und die Zahl dazu; eigene Knöpfe sind freiwillig, es darf auch den einer Figur nehmen, und es gibt keine falsche Zahl – die Fachkraft fragt nur: „Warum eine 7?“ Aufgabe 3 zeigt, wie der Werkzeugkasten wächst; den Auftrag (Aufgabe 4) nimmt das Kind mit.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind liest die Blasen von Lea, Noah und Amira und verbindet jede Figur mit dem Knopf, der gedrückt wird. In Aufgabe 2 kreuzt es die Knöpfe an, die bei ihm am schnellsten drücken, und schreibt seinen größten Knopf und die Zahl dazu; eigene Knöpfe sind freiwillig, es darf auch den einer Figur nehmen, und es gibt keine falsche Zahl – die Fachkraft fragt nur: „Welcher Knopf war das?“ Aufgabe 3 zeigt, wie der Werkzeugkasten wächst; den Auftrag (Aufgabe 4) nimmt das Kind mit.",
           "sagen": [
-            "Warum eine 7? Was war der Knopf?",
+            "Welcher Knopf war das? Du musst es nicht erklären.",
             "Dieselbe Situation kann für andere eine 2 sein – das ist okay."
           ],
           "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind den Knopf, und die Fachkraft schreibt ihn ab. Wird ein Beispiel zu persönlich, bleibt es bei den Figuren. Ein Knopf genügt."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant lit les bulles de Lea, Noah et Amira et relie chaque personnage au bouton qui est pressé. À l’exercice 2, il coche les boutons qui s’activent le plus vite chez lui et écrit son plus gros bouton avec le chiffre ; les boutons personnels sont facultatifs, il peut prendre celui d’un personnage, et il n’y a pas de mauvais chiffre – l’adulte demande seulement : « Pourquoi un 7 ? » L’exercice 3 montre comment la boîte à outils grandit ; l’enfant emporte la mission (exercice 4).",
+          "text": "Exercice 1 ensemble : l’enfant lit les bulles de Lea, Noah et Amira et relie chaque personnage au bouton qui est pressé. À l’exercice 2, il coche les boutons qui s’activent le plus vite chez lui et écrit son plus gros bouton avec le chiffre ; les boutons personnels sont facultatifs, il peut prendre celui d’un personnage, et il n’y a pas de mauvais chiffre – l’adulte demande seulement : « C’était quel bouton ? » L’exercice 3 montre comment la boîte à outils grandit ; l’enfant emporte la mission (exercice 4).",
           "sagen": [
-            "Pourquoi un 7 ? C’était quel bouton ?",
+            "C’était quel bouton ? Tu n’as pas à l’expliquer.",
             "La même situation peut être un 2 pour d’autres – c’est normal."
           ],
           "wennEsKippt": "Si écrire est pénible, l’enfant dit le bouton et l’adulte le recopie. Si un exemple devient trop personnel, on reste avec les personnages. Un bouton suffit."
@@ -1639,7 +1647,7 @@
     },
     "fr": {
       "titel": "Outil 2 : déclencheurs et boutons",
-      "text": "L’enfant a construit son thermomètre de la colère et trouvé ses premiers signes du corps ; aujourd’hui, il s’agit de ce qui fait monter le chiffre en flèche : les boutons. L’adulte dit que chacun a d’autres boutons et que, quand on connaît le sien, on remarque plus tôt qu’on appuie dessus. L’adulte lit six courtes situations (un coup de sifflet pour une faute qui n’en était pas une ; tout le monde rit d’une photo dans le chat de la classe ; être choisi en dernier pour les équipes ; une partie qui échoue de justesse ; quelqu’un dit « Fais ça tout de suite ! » ; quelqu’un prend ses affaires sans demander) ; chaque fois, l’enfant montre son chiffre avec ses doigts, puis on compare : pourquoi la même situation est-elle un 3 pour l’un et un 8 pour l’autre ? Ensemble, ils cherchent ce que les situations chaudes ont en commun et donnent un nom aux boutons (injustice, moqueries, mise à l’écart, perdre, ordres, affaires touchées). Pour finir, l’enfant choisit au plus deux boutons qui s’activent le plus facilement chez lui – librement, sans raconter d’histoire – et les écrit sur sa carte des boutons.",
+      "text": "L’enfant connaît son thermomètre de la colère et a trouvé ses premiers signes du corps ; aujourd’hui, il s’agit de ce qui fait monter le chiffre en flèche : les boutons. L’adulte dit que chacun a d’autres boutons et que, quand on connaît le sien, on remarque plus tôt qu’on appuie dessus. Il lit six courtes situations (un coup de sifflet pour une faute qui n’en était pas une ; tout le monde rit d’une photo dans le chat de la classe ; être choisi en dernier pour les équipes ; une partie perdue de justesse ; quelqu’un dit « Fais ça tout de suite ! » ; quelqu’un prend des affaires sans demander) ; chaque fois, l’enfant montre son chiffre avec ses doigts, et pour l’une des situations, ils comparent : pourquoi la même situation est-elle un 3 pour l’un et un 8 pour l’autre ? Ensemble, ils cherchent ce que les situations chaudes ont en commun et donnent un nom aux boutons (injustice, moqueries, mise à l’écart, perdre, ordres, affaires touchées). Pour finir, l’enfant choisit au plus deux boutons qui s’activent le plus facilement chez lui – librement, sans raconter d’histoire ; le bouton d’un personnage convient aussi – et les note ensuite sur sa carte des boutons, sur la fiche.",
       "sagen": [
         "Tout le monde a des boutons. Quand quelqu’un appuie dessus, le chiffre monte en flèche – souvent plus vite qu’on ne croit.",
         "La même situation : un 3 pour toi, un 7 pour moi. C’est normal. Ce qui compte, c’est : quels sont tes boutons ?",
@@ -1660,7 +1668,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 2: Auslöser und Knöpfe",
-    "text": "Das Kind hat sein Wut-Thermometer gebaut und erste Körperzeichen gefunden; heute geht es darum, was die Zahl nach oben schießen lässt: die Knöpfe. Die Fachkraft sagt, dass jeder andere Knöpfe hat und dass man früher merkt, wenn jemand draufdrückt, sobald man den eigenen kennt. Sie liest sechs kurze Situationen vor (ein Foul-Pfiff, das keins war; alle lachen über ein Foto im Klassenchat; beim Teamwählen als Letzter übrig bleiben; ein Spiel, das knapp schiefgeht; jemand sagt „Mach das jetzt!“; jemand nimmt Sachen ohne zu fragen); das Kind zeigt jedes Mal mit den Fingern seine Zahl, und beide vergleichen: Warum ist dieselbe Situation für den einen eine 3 und für den anderen eine 8? Gemeinsam suchen sie, was die heißen Situationen verbindet, und geben den Knöpfen Namen (unfair, ausgelacht, ausgeschlossen, verlieren, herumkommandiert, Sachen angefasst). Zum Schluss zeigt das Kind auf höchstens zwei Bilder von Knöpfen, die bei ihm am ehesten drücken – freiwillig, ohne Geschichte dazu.",
+    "text": "Das Kind kennt sein Wut-Thermometer und hat erste Körperzeichen gefunden; heute geht es darum, was die Zahl nach oben schießen lässt: die Knöpfe. Die Fachkraft sagt, dass jeder andere Knöpfe hat und dass man früher merkt, wenn jemand draufdrückt, sobald man den eigenen kennt. Sie liest sechs kurze Situationen vor (ein Foul-Pfiff, das keins war; alle lachen über ein Foto im Klassenchat; beim Teamwählen als Letzter übrig bleiben; ein Spiel, das knapp schiefgeht; jemand sagt „Mach das jetzt!“; jemand nimmt Sachen ohne zu fragen); das Kind zeigt jedes Mal mit den Fingern seine Zahl, und bei einer Situation vergleichen beide: Warum ist dasselbe für den einen eine 3 und für den anderen eine 8? Gemeinsam suchen sie, was die heißen Situationen verbindet, und geben den Knöpfen Namen (unfair, ausgelacht, ausgeschlossen, verlieren, herumkommandiert, Sachen angefasst). Zum Schluss zeigt das Kind auf höchstens zwei Bilder von Knöpfen, die bei ihm am ehesten drücken – freiwillig, ohne Geschichte dazu; der Knopf einer Figur geht auch.",
     "sagen": [
       "Jeder hat Knöpfe. Wenn jemand draufdrückt, schießt die Zahl hoch – meistens schneller, als man denkt.",
       "Dieselbe Situation: bei dir eine 3, bei mir eine 7. Das ist normal. Wichtig ist nur: Welche Knöpfe hast du?",
@@ -1822,6 +1830,10 @@
             "Ausgeschlossen werden",
             "Sachen angefasst oder weggenommen",
             "Verlieren oder einen Fehler machen"
+          ],
+          "titel": [
+            "Figur",
+            "Knopf"
           ]
         },
         {
@@ -2013,16 +2025,20 @@
             "Mise à l’écart",
             "Affaires touchées ou prises",
             "Perdre ou faire une erreur"
+          ],
+          "titel": [
+            "Personnage",
+            "Bouton"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Quel bouton s’active le plus vite chez toi ? Entoure-le. Fais une croix : jusqu’où ton thermomètre monte-t-il ?",
+          "text": "Quel bouton te fait monter le plus vite ? Entoure-le. Fais une croix : jusqu’où ton thermomètre monte-t-il ?",
           "symbole": [
             "einkreisen",
             "ankreuzen"
           ],
-          "hinweis": "Tu n’as rien à révéler que tu ne veux pas."
+          "hinweis": "Tu n’as pas à dire ce que tu ne veux pas dire."
         },
         {
           "art": "bilder",
@@ -2104,7 +2120,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mission jusqu’à la prochaine fois : attrape un bouton. Dès que ton thermomètre monte : quel bouton était-ce ? Coche.",
+          "text": "Mission d’ici la prochaine fois : attrape un bouton. Dès que ton thermomètre monte : quel bouton était-ce ? Coche.",
           "symbole": [
             "ankreuzen"
           ]
@@ -2124,17 +2140,17 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind liest die Blasen von Lea, Noah und Amira und verbindet jede Figur mit dem Knopf, der gedrückt wird. In Aufgabe 2 kreist es den Knopf ein, der bei ihm am schnellsten drückt, und macht auf der Skala ein Kreuz; eigene Knöpfe sind freiwillig, und es gibt keine falsche Zahl – die Fachkraft fragt nur: „Warum eine 7?“ Aufgabe 3 zeigt, wie der Werkzeugkasten wächst; der Auftrag (Aufgabe 4) besteht aus einem Kreuz.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind liest die Blasen von Lea, Noah und Amira und verbindet jede Figur mit dem Knopf, der gedrückt wird. In Aufgabe 2 kreist es den Knopf ein, der bei ihm am schnellsten drückt, und macht auf der Skala ein Kreuz; eigene Knöpfe sind freiwillig, und es gibt keine falsche Zahl – die Fachkraft fragt nur: „Welcher Knopf war das?“ Aufgabe 3 zeigt, wie der Werkzeugkasten wächst; der Auftrag (Aufgabe 4) besteht aus einem Kreuz.",
           "sagen": [
-            "Warum eine 7? Was war der Knopf?",
+            "Welcher Knopf war das? Du musst es nicht erklären.",
             "Dieselbe Situation kann für andere eine 2 sein – das ist okay."
           ],
           "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Blasen vor, und das Kind zeigt auf den Knopf. Ein Bild und ein Kreuz auf der Skala genügen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant lit les bulles de Lea, Noah et Amira et relie chaque personnage au bouton qui est pressé. À l’exercice 2, il entoure le bouton qui s’active le plus vite chez lui et fait une croix sur l’échelle ; les boutons personnels sont facultatifs, et il n’y a pas de mauvais chiffre – l’adulte demande seulement : « Pourquoi un 7 ? » L’exercice 3 montre comment la boîte à outils grandit ; la mission (exercice 4) se fait avec une croix.",
+          "text": "Exercice 1 ensemble : l’enfant lit les bulles de Lea, Noah et Amira et relie chaque personnage au bouton qui est pressé. À l’exercice 2, il entoure le bouton qui s’active le plus vite chez lui et fait une croix sur l’échelle ; les boutons personnels sont facultatifs, et il n’y a pas de mauvais chiffre – l’adulte demande seulement : « C’était quel bouton ? » L’exercice 3 montre comment la boîte à outils grandit ; la mission (exercice 4) se fait avec une croix.",
           "sagen": [
-            "Pourquoi un 7 ? C’était quel bouton ?",
+            "C’était quel bouton ? Tu n’as pas à l’expliquer.",
             "La même situation peut être un 2 pour d’autres – c’est normal."
           ],
           "wennEsKippt": "Si lire est difficile, l’adulte lit les bulles et l’enfant montre le bouton. Une image et une croix sur l’échelle suffisent."
@@ -2143,7 +2159,7 @@
     },
     "fr": {
       "titel": "Outil 2 : déclencheurs et boutons",
-      "text": "L’enfant a construit son thermomètre de la colère et trouvé ses premiers signes du corps ; aujourd’hui, il s’agit de ce qui fait monter le chiffre en flèche : les boutons. L’adulte dit que chacun a d’autres boutons et que, quand on connaît le sien, on remarque plus tôt qu’on appuie dessus. L’adulte lit six courtes situations (un coup de sifflet pour une faute qui n’en était pas une ; tout le monde rit d’une photo dans le chat de la classe ; être choisi en dernier pour les équipes ; une partie qui échoue de justesse ; quelqu’un dit « Fais ça tout de suite ! » ; quelqu’un prend ses affaires sans demander) ; chaque fois, l’enfant montre son chiffre avec ses doigts, puis on compare : pourquoi la même situation est-elle un 3 pour l’un et un 8 pour l’autre ? Ensemble, ils cherchent ce que les situations chaudes ont en commun et donnent un nom aux boutons (injustice, moqueries, mise à l’écart, perdre, ordres, affaires touchées). Pour finir, l’enfant montre au plus deux images de boutons qui s’activent le plus facilement chez lui – librement, sans raconter d’histoire.",
+      "text": "L’enfant connaît son thermomètre de la colère et a trouvé ses premiers signes du corps ; aujourd’hui, il s’agit de ce qui fait monter le chiffre en flèche : les boutons. L’adulte dit que chacun a d’autres boutons et que, quand on connaît le sien, on remarque plus tôt qu’on appuie dessus. Il lit six courtes situations (un coup de sifflet pour une faute qui n’en était pas une ; tout le monde rit d’une photo dans le chat de la classe ; être choisi en dernier pour les équipes ; une partie perdue de justesse ; quelqu’un dit « Fais ça tout de suite ! » ; quelqu’un prend des affaires sans demander) ; chaque fois, l’enfant montre son chiffre avec ses doigts, et pour l’une des situations, ils comparent : pourquoi la même situation est-elle un 3 pour l’un et un 8 pour l’autre ? Ensemble, ils cherchent ce que les situations chaudes ont en commun et donnent un nom aux boutons (injustice, moqueries, mise à l’écart, perdre, ordres, affaires touchées). Pour finir, l’enfant montre au plus deux images de boutons qui s’activent le plus facilement chez lui – librement, sans raconter d’histoire ; le bouton d’un personnage convient aussi.",
       "sagen": [
         "Tout le monde a des boutons. Quand quelqu’un appuie dessus, le chiffre monte en flèche – souvent plus vite qu’on ne croit.",
         "La même situation : un 3 pour toi, un 7 pour moi. C’est normal. Ce qui compte, c’est : quels sont tes boutons ?",
@@ -2164,7 +2180,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 3: Gedanken, die anheizen oder abkühlen",
-    "text": "Das Kind kennt sein Thermometer und seine Knöpfe; heute geht es darum, dass nicht nur der Knopf, sondern auch der Gedanke danach die Zahl bestimmt. Die Fachkraft spielt eine kleine Szene zweimal (jemand rempelt im Gang, ohne Berührung): erst mit einem heißen Gedanken („Das macht der extra!“), dann mit einem kühlen („Im Gang ist es eng“) – und das Kind zeigt jedes Mal, wie hoch das Thermometer steigt. Dann sortiert das Kind sechs vorgelesene Gedanken in heiß und kühl und formt zwei heiße in kühle um, die für es glaubhaft klingen: Es geht nicht ums Schönreden, sondern darum zu prüfen, ob der Gedanke stimmt. Zum Schluss sucht es sich einen kühlen Satz für die Kiste und übt ihn im Rollenspiel: Die Fachkraft spielt den Rempler, das Kind sagt leise „Stopp, ich bin bei einer 7“ und dann seinen kühlen Satz.",
+    "text": "Das Kind kennt sein Thermometer und seine Knöpfe; heute geht es darum, dass nicht nur der Knopf, sondern auch der Gedanke danach die Zahl bestimmt. Die Fachkraft spielt eine kleine Szene zweimal (jemand rempelt im Gang, ohne Berührung): erst mit einem heißen Gedanken („Das macht der extra!“), dann mit einem kühlen („Im Gang ist es eng“) – und das Kind zeigt jedes Mal, wie hoch das Thermometer steigt. Dann liest sie sechs Gedanken vor, und das Kind sortiert sie in heiß und kühl (heiß: „Der will mich ärgern!“, „Das ist so unfair!“, „Alle lachen über mich!“; kühl: „Das war keine Absicht.“, „Das kann passieren.“, „Das ärgert mich, aber ich schaffe das.“) und formt zwei heiße in kühle um, die für es glaubhaft klingen: Es geht nicht ums Schönreden, sondern darum zu prüfen, ob der Gedanke stimmt. Zum Schluss wählt es einen kühlen Satz für die Kiste und übt ihn im Rollenspiel: Die Fachkraft sagt „Ich bin jetzt der Rempler“ und spielt ihn nur mit Worten, das Kind sagt leise „Stopp, ich bin bei einer 7“ und dann seinen kühlen Satz. Danach steigt die Fachkraft ausdrücklich aus der Rolle aus („Jetzt bin ich wieder ich“).",
     "sagen": [
       "Nicht nur der Knopf macht heiß, sondern auch das, was du dir danach sagst. Zwei Gedanken, zwei Zahlen – das probieren wir aus.",
       "Heißer Gedanke: „Der will mich ärgern!“ Kühler Gedanke: „Vielleicht war es nur eng.“ Wie hoch steht dein Thermometer bei dem einen, wie hoch bei dem anderen?",
@@ -2243,7 +2259,7 @@
     "uebungsblatt": {
       "titel": {
         "de": "Cool bleiben · Kühle Gedanken",
-        "fr": "Rester cool · Pensées calmes"
+        "fr": "Rester cool · Pensées qui calment"
       },
       "de": [
         {
@@ -2373,7 +2389,7 @@
         },
         {
           "art": "satzanfaenge",
-          "linien": 1,
+          "linien": 2,
           "items": [
             "Wenn ich merke, dass es heiß wird, sage ich mir: …",
             "Das hilft mir, weil …"
@@ -2573,7 +2589,7 @@
         },
         {
           "art": "satzanfaenge",
-          "linien": 1,
+          "linien": 2,
           "items": [
             "Quand je sens que ça chauffe, je me dis : …",
             "Ça m’aide parce que …"
@@ -2602,7 +2618,7 @@
             },
             {
               "bild": "icon:snowflake",
-              "text": "3 Pensées calmes – NOUVEAU"
+              "text": "3 Pensées qui calment – NOUVEAU"
             },
             {
               "bild": "icon:help-circle",
@@ -2627,7 +2643,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mission jusqu’à la prochaine fois : attrape une pensée qui chauffe. Quand tu t’énerves, fais attention à ce que tu te dis – et écris-en une plus calme.",
+          "text": "Mission d’ici la prochaine fois : attrape une pensée qui chauffe. Quand tu t’énerves, fais attention à ce que tu te dis – et écris-en une plus calme.",
           "symbole": [
             "schreiben"
           ]
@@ -2666,7 +2682,7 @@
     },
     "fr": {
       "titel": "Outil 3 : des pensées qui chauffent ou qui calment",
-      "text": "L’enfant connaît son thermomètre et ses boutons ; aujourd’hui, il s’agit de voir que ce n’est pas seulement le bouton, mais aussi la pensée qui suit, qui décide du chiffre. L’adulte joue deux fois une petite scène (quelqu’un bouscule dans le couloir, sans contact) : d’abord avec une pensée qui chauffe (« Il l’a fait exprès ! »), puis avec une pensée qui calme (« Le couloir est étroit ») – et l’enfant montre chaque fois jusqu’où le thermomètre monte. Ensuite, l’enfant trie six pensées lues à voix haute en « chaudes » et « calmes » et transforme deux pensées chaudes en pensées calmes qui lui semblent crédibles : il ne s’agit pas d’enjoliver, mais de vérifier si la pensée est vraie. Pour finir, il choisit une phrase calme pour la boîte et la teste dans un jeu de rôle : l’adulte joue celui qui bouscule, l’enfant dit doucement « Stop, je suis à 7 » puis sa phrase calme.",
+      "text": "L’enfant connaît son thermomètre et ses boutons ; aujourd’hui, il s’agit de voir que ce n’est pas seulement le bouton, mais aussi la pensée qui suit, qui décide du chiffre. L’adulte joue deux fois une petite scène (quelqu’un bouscule dans le couloir, sans contact) : d’abord avec une pensée qui chauffe (« Il l’a fait exprès ! »), puis avec une pensée qui calme (« Le couloir est étroit ») – et l’enfant montre chaque fois jusqu’où le thermomètre monte. Ensuite, l’adulte lit six pensées, et l’enfant les trie en « chaudes » et « calmes » (chaudes : « Il veut m’énerver ! », « C’est tellement injuste ! », « Tout le monde rit de moi ! » ; calmes : « C’était pas exprès. », « Ça peut arriver. », « Ça m’énerve, mais je vais y arriver. ») et transforme deux pensées chaudes en pensées calmes qui lui semblent crédibles : il ne s’agit pas d’enjoliver, mais de vérifier si la pensée est vraie. Pour finir, il choisit une phrase calme pour la boîte et la teste dans un jeu de rôle : l’adulte dit « Maintenant, je suis celui qui bouscule » et joue ce rôle seulement avec des mots, l’enfant dit doucement « Stop, je suis à 7 » puis sa phrase calme. Ensuite, l’adulte sort clairement de son rôle (« Maintenant, je suis de nouveau moi »).",
       "sagen": [
         "Ce n’est pas seulement le bouton qui fait monter, mais aussi ce que tu te dis ensuite. Deux pensées, deux chiffres – on teste.",
         "Pensée qui chauffe : « Il veut m’énerver ! » Pensée qui calme : « Peut-être que c’était juste étroit. » À combien est ton thermomètre avec l’une, à combien avec l’autre ?",
@@ -2688,7 +2704,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 3: Gedanken, die anheizen oder abkühlen",
-    "text": "Das Kind kennt sein Thermometer und seine Knöpfe; heute geht es darum, dass nicht nur der Knopf, sondern auch der Gedanke danach die Zahl bestimmt. Die Fachkraft spielt eine kleine Szene zweimal (jemand rempelt im Gang, ohne Berührung): erst mit einem heißen Gedanken („Das macht der extra!“), dann mit einem kühlen („Im Gang ist es eng“) – und das Kind zeigt jedes Mal, wie hoch das Thermometer steigt. Dann sortiert das Kind sechs vorgelesene Gedanken in heiß und kühl und verbindet auf dem Blatt heiße mit kühlen, die für es glaubhaft klingen: Es geht nicht ums Schönreden, sondern darum zu prüfen, ob der Gedanke stimmt. Zum Schluss wählt es einen kühlen Satz für die Kiste und übt ihn im Rollenspiel: Die Fachkraft spielt den Rempler, das Kind sagt leise „Stopp, ich bin bei einer 7“ und dann seinen kühlen Satz.",
+    "text": "Das Kind kennt sein Thermometer und seine Knöpfe; heute geht es darum, dass nicht nur der Knopf, sondern auch der Gedanke danach die Zahl bestimmt. Die Fachkraft spielt eine kleine Szene zweimal (jemand rempelt im Gang, ohne Berührung): erst mit einem heißen Gedanken („Das macht der extra!“), dann mit einem kühlen („Im Gang ist es eng“) – und das Kind zeigt jedes Mal, wie hoch das Thermometer steigt. Dann liest sie sechs Gedanken vor, und das Kind sortiert sie in heiß und kühl (heiß: „Der will mich ärgern!“, „Das ist so unfair!“, „Alle lachen über mich!“; kühl: „Das war keine Absicht.“, „Das kann passieren.“, „Das ärgert mich, aber ich schaffe das.“) und verbindet auf dem Blatt heiße mit kühlen, die für es glaubhaft klingen: Es geht nicht ums Schönreden, sondern darum zu prüfen, ob der Gedanke stimmt. Zum Schluss wählt es einen kühlen Satz für die Kiste und übt ihn im Rollenspiel: Die Fachkraft sagt „Ich bin jetzt der Rempler“ und spielt ihn nur mit Worten, das Kind sagt leise „Stopp, ich bin bei einer 7“ und dann seinen kühlen Satz. Danach steigt die Fachkraft ausdrücklich aus der Rolle aus („Jetzt bin ich wieder ich“).",
     "sagen": [
       "Nicht nur der Knopf macht heiß, sondern auch das, was du dir danach sagst. Zwei Gedanken, zwei Zahlen – das probieren wir aus.",
       "Heißer Gedanke: „Der will mich ärgern!“ Kühler Gedanke: „Vielleicht war es nur eng.“ Wie hoch steht dein Thermometer bei dem einen, wie hoch bei dem anderen?",
@@ -2767,7 +2783,7 @@
     "uebungsblatt": {
       "titel": {
         "de": "Cool bleiben · Kühle Gedanken",
-        "fr": "Rester cool · Pensées calmes"
+        "fr": "Rester cool · Pensées qui calment"
       },
       "de": [
         {
@@ -3057,7 +3073,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quelle phrase qui calme te va bien ? Coche-en deux.",
+          "text": "Quelle phrase qui calme te convient ? Coches-en deux.",
           "symbole": [
             "ankreuzen"
           ]
@@ -3095,7 +3111,7 @@
             },
             {
               "bild": "icon:snowflake",
-              "text": "3 Pensées calmes – NOUVEAU"
+              "text": "3 Pensées qui calment – NOUVEAU"
             },
             {
               "bild": "icon:help-circle",
@@ -3113,7 +3129,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mission jusqu’à la prochaine fois : quand tu t’énerves, dis-toi ta phrase qui calme. Coche comment ça s’est passé.",
+          "text": "Mission d’ici la prochaine fois : quand tu t’énerves, dis-toi ta phrase qui calme. Coche comment ça s’est passé.",
           "symbole": [
             "ankreuzen"
           ]
@@ -3150,7 +3166,7 @@
     },
     "fr": {
       "titel": "Outil 3 : des pensées qui chauffent ou qui calment",
-      "text": "L’enfant connaît son thermomètre et ses boutons ; aujourd’hui, il s’agit de voir que ce n’est pas seulement le bouton, mais aussi la pensée qui suit, qui décide du chiffre. L’adulte joue deux fois une petite scène (quelqu’un bouscule dans le couloir, sans contact) : d’abord avec une pensée qui chauffe (« Il l’a fait exprès ! »), puis avec une pensée qui calme (« Le couloir est étroit ») – et l’enfant montre chaque fois jusqu’où le thermomètre monte. Ensuite, l’enfant trie six pensées lues à voix haute en « chaudes » et « calmes » et relie sur la fiche des pensées chaudes à des pensées calmes qui lui semblent crédibles : il ne s’agit pas d’enjoliver, mais de vérifier si la pensée est vraie. Pour finir, il choisit une phrase calme pour la boîte et la teste dans un jeu de rôle : l’adulte joue celui qui bouscule, l’enfant dit doucement « Stop, je suis à 7 » puis sa phrase calme.",
+      "text": "L’enfant connaît son thermomètre et ses boutons ; aujourd’hui, il s’agit de voir que ce n’est pas seulement le bouton, mais aussi la pensée qui suit, qui décide du chiffre. L’adulte joue deux fois une petite scène (quelqu’un bouscule dans le couloir, sans contact) : d’abord avec une pensée qui chauffe (« Il l’a fait exprès ! »), puis avec une pensée qui calme (« Le couloir est étroit ») – et l’enfant montre chaque fois jusqu’où le thermomètre monte. Ensuite, l’adulte lit six pensées, et l’enfant les trie en « chaudes » et « calmes » (chaudes : « Il veut m’énerver ! », « C’est tellement injuste ! », « Tout le monde rit de moi ! » ; calmes : « C’était pas exprès. », « Ça peut arriver. », « Ça m’énerve, mais je vais y arriver. ») et relie sur la fiche des pensées chaudes à des pensées calmes qui lui semblent crédibles : il ne s’agit pas d’enjoliver, mais de vérifier si la pensée est vraie. Pour finir, il choisit une phrase calme pour la boîte et la teste dans un jeu de rôle : l’adulte dit « Maintenant, je suis celui qui bouscule » et joue ce rôle seulement avec des mots, l’enfant dit doucement « Stop, je suis à 7 » puis sa phrase calme. Ensuite, l’adulte sort clairement de son rôle (« Maintenant, je suis de nouveau moi »).",
       "sagen": [
         "Ce n’est pas seulement le bouton qui fait monter, mais aussi ce que tu te dis ensuite. Deux pensées, deux chiffres – on teste.",
         "Pensée qui chauffe : « Il veut m’énerver ! » Pensée qui calme : « Peut-être que c’était juste étroit. » À combien est ton thermomètre avec l’une, à combien avec l’autre ?",
@@ -3172,7 +3188,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 4: Abkühl-Werkzeuge testen",
-    "text": "Das Kind hat Thermometer, Knopf-Karte und kühle Gedanken in der Kiste; heute testet es, wie es seinen Körper abkühlt. Die Fachkraft sagt, dass ein Abkühl-Trick ein Werkzeug ist, das man ausprobiert und bewertet: Was bei einem klappt, klappt beim anderen nicht. Das Kind stellt sich eine leicht ärgerliche Szene vor (die Pause fällt aus, auf die es sich gefreut hat) und liest sein Thermometer ab. Dann probieren beide drei bis vier Tricks je etwa eine Minute – lang ausatmen, kaltes Wasser an Händen und Handgelenken, rückwärts zählen, Hände fest drücken und loslassen, zügig gehen, fünf Dinge sehen –; die Fachkraft macht mit, und das Kind liest nach jedem Trick die Zahl wieder ab. Es bewertet jeden Trick (hilft, ein bisschen, gar nicht; passt in die Klasse oder nicht) und wählt seinen Trick für die Kiste. Abkühlen heißt, das Thermometer langsam sinken zu lassen; Schlagen oder Schreien gehören nicht dazu.",
+    "text": "Das Kind hat Thermometer, Knopf-Karte und kühle Gedanken in der Kiste; heute testet es, wie es seinen Körper abkühlt. Die Fachkraft sagt, dass ein Abkühl-Trick ein Werkzeug ist, das man ausprobiert und bewertet: Was bei einem klappt, klappt beim anderen nicht. Das Kind stellt sich eine leicht ärgerliche Szene vor (die Pause fällt aus, auf die es sich gefreut hat) und liest sein Thermometer ab. Dann probieren beide drei Tricks je etwa eine Minute (zur Wahl stehen: lang ausatmen, kaltes Wasser an Händen und Handgelenken, rückwärts zählen, Hände fest gegeneinanderdrücken und loslassen, zügig gehen, fünf Dinge sehen; das Kind sucht drei aus, die Fachkraft macht mit), und das Kind liest nach jedem Trick die Zahl wieder ab. Es bewertet jeden getesteten Trick (hilft, ein bisschen, gar nicht; passt in die Klasse oder nicht) und wählt seinen Trick für die Kiste; bleibt Zeit, probiert es auf dem Blatt noch einen weiteren. Abkühlen heißt, das Thermometer langsam sinken zu lassen; Schlagen oder Schreien gehören nicht dazu.",
     "sagen": [
       "Heute testest du Abkühl-Tricks wie ein Profi: Zahl vorher, ausprobieren, Zahl nachher, bewerten.",
       "Stell dir vor, die Pause fällt aus, und du hattest dich so darauf gefreut. Wie heiß wirst du? Zeig die Zahl.",
@@ -3253,7 +3269,7 @@
     "uebungsblatt": {
       "titel": {
         "de": "Cool bleiben · Abkühl-Trick",
-        "fr": "Rester cool · Astuce calme"
+        "fr": "Rester cool · Astuce pour se calmer"
       },
       "de": [
         {
@@ -3290,7 +3306,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deine Testreihe: Stell dir vor, die Pause fällt aus – dabei hattest du dich so gefreut. Lies dein Thermometer ab, probier einen Trick eine Minute und lies noch einmal ab.",
+          "text": "Deine Testreihe: Stell dir vor, die Pause fällt aus – dabei hattest du dich so gefreut. Trag für jeden Trick, den ihr getestet habt, die Zahl vorher und nachher ein.",
           "symbole": [
             "schreiben"
           ]
@@ -3487,7 +3503,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta série de tests : imagine que la récré est annulée – et tu t’en réjouissais tant. Lis ton thermomètre, essaie une astuce une minute et relis ton chiffre.",
+          "text": "Ta série de tests : imagine que la récré est annulée alors que tu t’en réjouissais tant. Pour chaque astuce testée, note le chiffre avant et le chiffre après.",
           "symbole": [
             "schreiben"
           ]
@@ -3509,7 +3525,7 @@
           ],
           "werte": [
             [
-              "Expirer longuement : 4 en inspirant, 6 en expirant",
+              "Expirer longuement : compter 4 en inspirant, 6 en expirant",
               "",
               "",
               ""
@@ -3527,7 +3543,7 @@
               ""
             ],
             [
-              "Serrer les mains 5 secondes, puis relâcher",
+              "Presser les mains l’une contre l’autre 5 secondes, puis relâcher",
               "",
               "",
               ""
@@ -3539,7 +3555,7 @@
               ""
             ],
             [
-              "Voir cinq choses : détourner le regard de ce qui énerve",
+              "Repérer cinq choses autour de soi : détourner le regard de ce qui énerve",
               "",
               "",
               ""
@@ -3559,7 +3575,7 @@
           "linien": 1,
           "items": [
             "Mon astuce : …",
-            "Je la commence dès un …"
+            "Je la commence dès que je suis à …"
           ]
         },
         {
@@ -3602,11 +3618,11 @@
             },
             {
               "bild": "icon:snowflake",
-              "text": "3 Pensées calmes"
+              "text": "3 Pensées qui calment"
             },
             {
               "bild": "icon:wind",
-              "text": "4 Astuce calme – NOUVEAU"
+              "text": "4 Astuce pour se calmer – NOUVEAU"
             },
             {
               "bild": "icon:help-circle",
@@ -3627,7 +3643,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mission jusqu’à la prochaine fois : essaie ton astuce une fois quand tu es un peu agacé (3 à 5). Note si elle t’a aidé.",
+          "text": "Mission d’ici la prochaine fois : essaie ton astuce une fois quand tu es un peu agacé (3 à 5). Note si elle t’a aidé.",
           "symbole": [
             "schreiben"
           ]
@@ -3651,7 +3667,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Zu jedem Trick liest das Kind die Zahl vorher, probiert ihn mit der Fachkraft eine Minute und trägt die Zahl nachher ein; in der letzten Spalte schreibt es „ja“ oder „nein“. Bei einem Trick, der nicht hilft, ist „nachher“ gleich „vorher“ – auch das ist ein gültiges Ergebnis. In Aufgabe 2 schreibt das Kind seinen Trick und die Zahl, ab der es startet, in Aufgabe 3 einen Wenn-dann-Plan; die Beispielzeile zeigt, wie es gemeint ist. Aufgabe 4 zeigt, was schon im Werkzeugkasten liegt; den Auftrag (Aufgabe 5) nimmt das Kind mit.",
+          "text": "Aufgabe 1 gemeinsam: Für die drei Tricks, die das Kind im Kern getestet hat, trägt es die Zahl vorher und nachher ein und schreibt in der letzten Spalte „ja“ oder „nein“; die anderen Zeilen bleiben leer, und wenn Zeit bleibt, probiert das Kind mit der Fachkraft noch einen davon eine Minute aus. Bei einem Trick, der nicht hilft, ist „nachher“ gleich „vorher“ – auch das ist ein gültiges Ergebnis. In Aufgabe 2 schreibt das Kind seinen Trick und die Zahl, ab der es startet, in Aufgabe 3 einen Wenn-dann-Plan; die Beispielzeile zeigt, wie es gemeint ist. Aufgabe 4 zeigt, was schon im Werkzeugkasten liegt; den Auftrag (Aufgabe 5) nimmt das Kind mit, die Fachkraft liest ihn kurz mit ihm durch.",
           "sagen": [
             "Welche Zahl hast du vorher? Und nachher?",
             "Kein Trick hilft allen – welcher hilft dir?"
@@ -3659,7 +3675,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Zahlen, und die Fachkraft trägt sie ein; „ja“ und „nein“ dürfen auch gezeigt werden. Drei getestete Tricks und ein Plan genügen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : pour chaque astuce, l’enfant lit son chiffre avant, l’essaie une minute avec l’adulte et note le chiffre après ; dans la dernière colonne, il écrit « oui » ou « non ». Si une astuce n’aide pas, « après » reste égal à « avant » – c’est aussi un résultat valable. À l’exercice 2, l’enfant écrit son astuce et le chiffre à partir duquel il commence, à l’exercice 3 un plan « si … alors … » ; la ligne d’exemple montre comment faire. L’exercice 4 montre ce qui est déjà dans la boîte à outils ; l’enfant emporte la mission (exercice 5).",
+          "text": "Exercice 1 ensemble : pour les trois astuces que l’enfant a testées dans la première partie, il note le chiffre avant et après et écrit dans la dernière colonne « oui » ou « non » ; les autres lignes restent vides, et s’il reste du temps, l’enfant en essaie encore une avec l’adulte pendant une minute. Si une astuce n’aide pas, « après » reste égal à « avant » – c’est aussi un résultat valable. À l’exercice 2, l’enfant écrit son astuce et le chiffre à partir duquel il commence, à l’exercice 3 un plan « si … alors … » ; la ligne d’exemple montre comment faire. L’exercice 4 montre ce qui est déjà dans la boîte à outils ; l’enfant emporte la mission (exercice 5), l’adulte la lit rapidement avec lui.",
           "sagen": [
             "Quel chiffre avant ? Et après ?",
             "Aucune astuce n’aide tout le monde – laquelle t’aide, toi ?"
@@ -3670,7 +3686,7 @@
     },
     "fr": {
       "titel": "Outil 4 : tester des astuces pour se calmer",
-      "text": "L’enfant a le thermomètre, la carte des boutons et les pensées qui calment dans la boîte ; aujourd’hui, il teste comment refroidir son corps. L’adulte dit qu’une astuce pour se calmer est un outil qu’on essaie et qu’on évalue : ce qui marche pour l’un ne marche pas pour l’autre. L’enfant imagine une scène légèrement agaçante (la récré est annulée alors qu’il s’en réjouissait) et lit son thermomètre. Ensuite, ils essaient ensemble trois ou quatre astuces, environ une minute chacune – expirer longuement, eau froide sur les mains et les poignets, compter à l’envers, serrer fort les mains puis relâcher, marcher d’un bon pas, voir cinq choses – ; l’adulte fait avec, et l’enfant relit son chiffre après chaque astuce. Il évalue chaque astuce (aide, un peu, pas du tout ; possible en classe ou non) et choisit son astuce pour la boîte. Se calmer, c’est laisser le thermomètre descendre lentement ; frapper ou crier n’en font pas partie.",
+      "text": "L’enfant a le thermomètre, la carte des boutons et les pensées qui calment dans la boîte ; aujourd’hui, il teste comment refroidir son corps. L’adulte dit qu’une astuce pour se calmer est un outil qu’on essaie et qu’on évalue : ce qui marche pour l’un ne marche pas pour l’autre. L’enfant imagine une scène légèrement agaçante (la récré est annulée alors qu’il s’en réjouissait) et lit son thermomètre. Ensuite, ils essaient ensemble trois astuces, une minute chacune (au choix : expirer longuement, eau froide sur les mains et les poignets, compter à l’envers, presser fort les mains l’une contre l’autre puis relâcher, marcher d’un bon pas, repérer cinq choses autour de soi ; l’enfant en choisit trois, l’adulte fait avec), et l’enfant relit son chiffre après chaque astuce. Il évalue chaque astuce testée (aide, un peu, pas du tout ; possible en classe ou non) et choisit son astuce pour la boîte ; s’il reste du temps, il en essaie une autre sur la fiche. Se calmer, c’est laisser le thermomètre descendre lentement ; frapper ou crier n’en font pas partie.",
       "sagen": [
         "Aujourd’hui, tu testes des astuces comme un pro : chiffre avant, essayer, chiffre après, évaluer.",
         "Imagine que la récré est annulée alors que tu t’en réjouissais tellement. À combien tu montes ? Montre le chiffre.",
@@ -3694,7 +3710,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 4: Abkühl-Werkzeuge testen",
-    "text": "Das Kind hat Thermometer, Knopf-Karte und kühle Gedanken in der Kiste; heute testet es, wie es seinen Körper abkühlt. Die Fachkraft sagt, dass ein Abkühl-Trick ein Werkzeug ist, das man ausprobiert und bewertet: Was bei einem klappt, klappt beim anderen nicht. Das Kind stellt sich eine leicht ärgerliche Szene vor (die Pause fällt aus, auf die es sich gefreut hat) und liest sein Thermometer ab. Dann probieren beide drei bis vier Tricks je etwa eine Minute – lang ausatmen, kaltes Wasser an Händen und Handgelenken, rückwärts zählen, Hände fest drücken und loslassen, zügig gehen, fünf Dinge sehen –; die Fachkraft macht mit, und das Kind zeigt nach jedem Trick auf der Skala die Zahl. Es kreuzt für jeden Trick an, ob er hilft, und wählt seinen Trick für die Kiste. Abkühlen heißt, das Thermometer langsam sinken zu lassen; Schlagen oder Schreien gehören nicht dazu.",
+    "text": "Das Kind hat Thermometer, Knopf-Karte und kühle Gedanken in der Kiste; heute testet es, wie es seinen Körper abkühlt. Die Fachkraft sagt, dass ein Abkühl-Trick ein Werkzeug ist, das man ausprobiert und bewertet: Was bei einem klappt, klappt beim anderen nicht. Das Kind stellt sich eine leicht ärgerliche Szene vor (die Pause fällt aus, auf die es sich gefreut hat) und zeigt mit den Fingern die Zahl. Dann probieren beide drei Tricks je etwa eine Minute (zur Wahl stehen: lang ausatmen, kaltes Wasser an Händen und Handgelenken, rückwärts zählen, Hände fest gegeneinanderdrücken und loslassen, zügig gehen, fünf Dinge sehen; das Kind sucht drei aus, die Fachkraft macht mit), und das Kind zeigt nach jedem Trick mit den Fingern die Zahl. Es kreuzt für jeden getesteten Trick an, ob er hilft, und wählt seinen Trick für die Kiste; bleibt Zeit, probiert es noch einen weiteren. Abkühlen heißt, das Thermometer langsam sinken zu lassen; Schlagen oder Schreien gehören nicht dazu.",
     "sagen": [
       "Heute testest du Abkühl-Tricks wie ein Profi: Zahl vorher, ausprobieren, Zahl nachher, bewerten.",
       "Stell dir vor, die Pause fällt aus, und du hattest dich so darauf gefreut. Wie heiß wirst du? Zeig die Zahl.",
@@ -3775,7 +3791,7 @@
     "uebungsblatt": {
       "titel": {
         "de": "Cool bleiben · Abkühl-Trick",
-        "fr": "Rester cool · Astuce calme"
+        "fr": "Rester cool · Astuce pour se calmer"
       },
       "de": [
         {
@@ -3812,7 +3828,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Das sind sechs Abkühl-Tricks. Probiert jeden eine Minute aus. Hat er geholfen? Kreuz an.",
+          "text": "Das sind sechs Abkühl-Tricks. Ihr probiert drei davon je eine Minute aus. Hat der Trick geholfen? Kreuz an.",
           "symbole": [
             "ankreuzen"
           ]
@@ -4008,7 +4024,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Voici six astuces pour se calmer. Essayez chacune une minute. T’a-t-elle aidé ? Coche.",
+          "text": "Voici six astuces pour se calmer. Vous en essayez trois, une minute chacune. L’astuce t’a-t-elle aidé ? Coche.",
           "symbole": [
             "ankreuzen"
           ]
@@ -4033,7 +4049,7 @@
             },
             {
               "bild": "icon:hand-grab",
-              "text": "Serrer les mains"
+              "text": "Presser les mains"
             },
             {
               "bild": "icon:footsteps",
@@ -4041,7 +4057,7 @@
             },
             {
               "bild": "icon:eye",
-              "text": "Voir cinq choses"
+              "text": "Repérer cinq choses"
             }
           ]
         },
@@ -4051,9 +4067,9 @@
             "Expirer longuement",
             "Eau froide",
             "Compter à l’envers",
-            "Serrer les mains",
+            "Presser les mains",
             "Marcher d’un bon pas",
-            "Voir cinq choses"
+            "Repérer cinq choses"
           ],
           "optionen": [
             "aide",
@@ -4135,11 +4151,11 @@
             },
             {
               "bild": "icon:snowflake",
-              "text": "3 Pensées calmes"
+              "text": "3 Pensées qui calment"
             },
             {
               "bild": "icon:wind",
-              "text": "4 Astuce calme – NOUVEAU"
+              "text": "4 Astuce pour se calmer – NOUVEAU"
             },
             {
               "bild": "icon:help-circle",
@@ -4153,7 +4169,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mission jusqu’à la prochaine fois : essaie ton astuce une fois quand tu es un peu agacé (3 à 5). Coche comment c’était.",
+          "text": "Mission d’ici la prochaine fois : essaie ton astuce une fois quand tu es un peu agacé (3 à 5). Coche comment c’était.",
           "symbole": [
             "ankreuzen"
           ]
@@ -4171,7 +4187,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind probiert mit der Fachkraft jeden der sechs Tricks eine Minute und kreuzt in der Tabelle an, ob er hilft. In Aufgabe 2 macht es mit seinem Lieblings-Trick ein Kreuz vor und eins nach dem Trick; steht das zweite Kreuz nicht tiefer, ist das auch ein gültiges Ergebnis. In Aufgabe 3 kreist es ein, wo sein Trick passt. Aufgabe 4 zeigt, was schon im Werkzeugkasten liegt; der Auftrag (Aufgabe 5) besteht nur aus einem Kreuz.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind kreuzt in der Tabelle für die drei getesteten Tricks an, ob sie helfen; die anderen Zeilen bleiben leer (bleibt Zeit: einen weiteren Trick eine Minute testen). In Aufgabe 2 macht es mit seinem Lieblings-Trick ein Kreuz vor und eins nach dem Trick; steht das zweite Kreuz nicht tiefer, ist das auch ein gültiges Ergebnis. In Aufgabe 3 kreist es ein, wo sein Trick passt. Aufgabe 4 zeigt, was schon im Werkzeugkasten liegt; der Auftrag (Aufgabe 5) besteht nur aus einem Kreuz.",
           "sagen": [
             "Welche Zahl hast du vorher? Und nachher?",
             "Kein Trick hilft allen – welcher hilft dir?"
@@ -4179,7 +4195,7 @@
           "wennEsKippt": "Fällt Lesen schwer, zeigt die Fachkraft die Bilder und macht den Trick vor; das Kind zeigt auf „hilft“, „ein bisschen“ oder „hilft nicht“. Drei getestete Tricks und ein Favorit genügen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant essaie chacune des six astuces une minute avec l’adulte et coche dans le tableau si elle aide. À l’exercice 2, il fait avec son astuce préférée une croix avant et une après ; si la deuxième croix n’est pas plus basse, c’est aussi un résultat valable. À l’exercice 3, il entoure où son astuce convient. L’exercice 4 montre ce qui est déjà dans la boîte à outils ; la mission (exercice 5) ne demande qu’une croix.",
+          "text": "Exercice 1 ensemble : l’enfant coche dans le tableau, pour les trois astuces testées, si elles aident ; les autres lignes restent vides (s’il reste du temps : tester une autre astuce une minute). À l’exercice 2, il fait avec son astuce préférée une croix avant et une après ; si la deuxième croix n’est pas plus basse, c’est aussi un résultat valable. À l’exercice 3, il entoure où son astuce convient. L’exercice 4 montre ce qui est déjà dans la boîte à outils ; la mission (exercice 5) ne demande qu’une croix.",
           "sagen": [
             "Quel chiffre avant ? Et après ?",
             "Aucune astuce n’aide tout le monde – laquelle t’aide, toi ?"
@@ -4190,7 +4206,7 @@
     },
     "fr": {
       "titel": "Outil 4 : tester des astuces pour se calmer",
-      "text": "L’enfant a le thermomètre, la carte des boutons et les pensées qui calment dans la boîte ; aujourd’hui, il teste comment refroidir son corps. L’adulte dit qu’une astuce pour se calmer est un outil qu’on essaie et qu’on évalue : ce qui marche pour l’un ne marche pas pour l’autre. L’enfant imagine une scène légèrement agaçante (la récré est annulée alors qu’il s’en réjouissait) et lit son thermomètre. Ensuite, ils essaient ensemble trois ou quatre astuces, environ une minute chacune – expirer longuement, eau froide sur les mains et les poignets, compter à l’envers, serrer fort les mains puis relâcher, marcher d’un bon pas, voir cinq choses – ; l’adulte fait avec, et l’enfant montre son chiffre sur l’échelle après chaque astuce. Il coche pour chaque astuce si elle aide et choisit son astuce pour la boîte. Se calmer, c’est laisser le thermomètre descendre lentement ; frapper ou crier n’en font pas partie.",
+      "text": "L’enfant a le thermomètre, la carte des boutons et les pensées qui calment dans la boîte ; aujourd’hui, il teste comment refroidir son corps. L’adulte dit qu’une astuce pour se calmer est un outil qu’on essaie et qu’on évalue : ce qui marche pour l’un ne marche pas pour l’autre. L’enfant imagine une scène légèrement agaçante (la récré est annulée alors qu’il s’en réjouissait) et montre son chiffre avec ses doigts. Ensuite, ils essaient ensemble trois astuces, une minute chacune (au choix : expirer longuement, eau froide sur les mains et les poignets, compter à l’envers, presser fort les mains l’une contre l’autre puis relâcher, marcher d’un bon pas, repérer cinq choses autour de soi ; l’enfant en choisit trois, l’adulte fait avec), et l’enfant montre son chiffre avec ses doigts après chaque astuce. Il coche pour chaque astuce testée si elle aide et choisit son astuce pour la boîte ; s’il reste du temps, il en essaie une autre. Se calmer, c’est laisser le thermomètre descendre lentement ; frapper ou crier n’en font pas partie.",
       "sagen": [
         "Aujourd’hui, tu testes des astuces comme un pro : chiffre avant, essayer, chiffre après, évaluer.",
         "Imagine que la récré est annulée alors que tu t’en réjouissais tellement. À combien tu montes ? Montre le chiffre.",
@@ -4214,14 +4230,14 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 5: Wenn mich jemand reizt",
-    "text": "Das Kind hat Thermometer, Knopf-Karte, kühle Gedanken und seinen Abkühl-Trick in der Kiste; heute geht es um den schwersten Knopf: Jemand reizt absichtlich. Die Fachkraft erklärt, warum Reizen funktioniert (wer anbeißt, tut, was der andere will), und zeigt vier Wege: nichts zeigen, Schild-Satz, weggehen, Hilfe holen. Sie spielt dreimal die reizende Person – erst leicht („Na, schon wieder zu spät?“), dann hartnäckig, zuletzt drängend – und das Kind probiert seinen Schild-Satz und liest dazwischen sein Thermometer ab; nach jedem Durchgang gibt die Fachkraft ein Plus und höchstens einen Tipp. Dann plant das Kind eine echte Situation dieser Woche (oder eine erfundene): wer, wann, wo, welcher Satz und was es tut, wenn es nicht klappt; den Plan spielen beide einmal durch. Zum Schluss sagt die Fachkraft: Passiert es oft oder tut es weh, reicht ein Satz nicht – dann ist Hilfe holen kein Petzen.",
+    "text": "Das Kind hat Thermometer, Knopf-Karte, kühle Gedanken und seinen Abkühl-Trick in der Kiste; heute geht es um den schwersten Knopf: Jemand reizt absichtlich. Die Fachkraft erklärt kurz, warum Reizen funktioniert (wer anbeißt, tut, was der andere will), zeigt vier Wege – nichts zeigen, Schild-Satz, weggehen, Hilfe holen – und legt vier Schild-Sätze zur Wahl hin („Kann sein.“, „Okay.“, „Das ist deine Meinung.“, „Hör bitte auf.“); das Kind wählt einen oder erfindet einen eigenen, der nach ihm klingt. Vor dem Rollenspiel vereinbaren beide ein Stopp-Zeichen (Hand hoch) und sagen die Rollen an: Die Fachkraft spielt dreimal die reizende Person, mit harmlosen Sprüchen, die nie Aussehen, Familie oder einen echten Menschen treffen – erst leicht („Na, schon wieder zu spät?“), dann hartnäckig, zuletzt drängend. Das Kind probiert seinen Schild-Satz und zeigt dazwischen mit den Fingern sein Thermometer; nach jedem Durchgang nennt die Fachkraft ein Plus und höchstens einen Tipp, am Ende steigt sie ausdrücklich aus der Rolle aus. Dann plant das Kind mündlich eine echte Situation dieser Woche (oder eine erfundene): wo, welcher Satz, wer hilft, wenn es nicht klappt; beide spielen den Plan einmal durch. Zum Schluss sagt die Fachkraft: Passiert es oft oder tut es weh, reicht ein Satz nicht – dann ist Hilfe holen kein Petzen.",
     "sagen": [
       "Wer reizt, will, dass du anbeißt. Wenn du ruhig bleibst, hat er sein Ziel nicht erreicht. Wir üben vier Wege.",
       "Weg eins: nichts zeigen. Weg zwei: ein Schild-Satz – kurz, ruhig, ohne Vorwurf. Weg drei: weggehen. Weg vier: Hilfe holen.",
-      "Ich spiele jetzt jemanden, der dich reizt. Du darfst jederzeit „Stopp“ sagen. Wie heiß bist du gerade? Welchen Weg nimmst du?",
+      "Ich spiele jetzt jemanden, der dich reizt – nur gespielt, nichts davon ist echt. Hand hoch heißt Stopp. Wie heiß bist du gerade? Welchen Weg nimmst du?",
       "Wenn jemand dich immer wieder fertigmacht oder es wehtut, reicht ein Schild-Satz nicht. Dann holst du jemanden dazu – das ist kein Petzen, das ist Schutz."
     ],
-    "wennEsKippt": "Wird das Rollenspiel zu echt, gilt sofort „Stopp“, und die Rollen werden getauscht (das Kind spielt die reizende Person, die Fachkraft den Schild-Satz). Wird die gewählte Situation zu belastend oder erzählt das Kind von wiederholtem Fertigmachen, bleibt die Fachkraft ruhig, wechselt zu Tom und Noah auf dem Blatt und bespricht mit dem Kind, wer in der Schule helfen kann. Ein Schild-Satz und ein Weg zu Hilfe genügen.",
+    "wennEsKippt": "Wird das Rollenspiel zu echt, gilt sofort „Stopp“, und die Rollen werden getauscht (das Kind spielt die reizende Person, die Fachkraft den Schild-Satz). Wird die gewählte Situation zu belastend oder erzählt das Kind von wiederholtem Fertigmachen, bleibt die Fachkraft ruhig, wechselt zu Tom und Noah auf dem Blatt, bespricht mit dem Kind, wer in der Schule helfen kann, und klärt nach der Stunde, wen sie selbst einbeziehen muss. Ein Schild-Satz und ein Weg zu Hilfe genügen.",
     "rolle": [
       "kern"
     ],
@@ -4286,8 +4302,8 @@
       }
     },
     "imSpiel": {
-      "de": "Mitten im Spiel sagt die Fachkraft einen kleinen Spruch („Na, das war wohl nichts“); das Kind antwortet mit seinem Schild-Satz und spielt weiter.",
-      "fr": "Au milieu du jeu, l’adulte lance une petite pique (« Tiens, c’était raté ») ; l’enfant répond avec sa phrase-bouclier et continue à jouer."
+      "de": "Mitten im Spiel sagt die Fachkraft – vorher angekündigt – einen kleinen Spruch („Na, das war wohl nichts“); das Kind antwortet mit seinem Schild-Satz und spielt weiter.",
+      "fr": "Au milieu du jeu, l’adulte lance – après l’avoir annoncé – une petite pique (« Tiens, c’était raté ») ; l’enfant répond avec sa phrase-bouclier et continue à jouer."
     },
     "uebungsblatt": {
       "titel": {
@@ -4329,7 +4345,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Nicht anbeißen: vier Wege. Du fängst unten an und gehst nur eine Stufe höher, wenn es nicht klappt.",
+          "text": "Nicht anbeißen: vier Wege. Du fängst unten an und gehst eine Stufe höher, wenn es nicht klappt. Tut es weh oder hört es nicht auf, holst du gleich Hilfe.",
           "symbole": [
             "lesen"
           ]
@@ -4337,7 +4353,7 @@
         {
           "art": "leiter",
           "stufen": 4,
-          "oben": "Wenn es nicht klappt: eine Stufe höher",
+          "oben": "Wenn es nicht klappt: eine Stufe höher. Tut es weh: gleich Hilfe holen",
           "unten": "Hier fängst du an",
           "beispiele": [
             "Nichts zeigen: ausatmen, ruhig bleiben",
@@ -4368,9 +4384,19 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wer hilft, wenn es nicht klappt? Kreuz an.",
+          "text": "Dein Plan für eine echte Situation dieser Woche – oder eine ausgedachte.",
           "symbole": [
-            "ankreuzen"
+            "schreiben"
+          ],
+          "hinweis": "Du musst nichts erzählen, was du nicht willst. Namen brauchst du nicht."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Wer könnte mich reizen? …",
+            "Wann und wo? …",
+            "Mein Schild-Satz: …"
           ]
         },
         {
@@ -4381,25 +4407,8 @@
             "jemand von der Aufsicht",
             "mein Trainer oder meine Trainerin",
             "jemand aus der Maison Relais"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Dein Plan für eine echte Situation dieser Woche – oder eine ausgedachte.",
-          "symbole": [
-            "schreiben"
           ],
-          "hinweis": "Du musst nichts erzählen, was du nicht willst."
-        },
-        {
-          "art": "satzanfaenge",
-          "linien": 1,
-          "items": [
-            "Wer könnte mich reizen? …",
-            "Wann und wo? …",
-            "Mein Schild-Satz: …",
-            "Wenn es nicht klappt, gehe ich zu: …"
-          ]
+          "titel": "Wenn es nicht klappt, hole ich Hilfe bei:"
         },
         {
           "art": "aufgabe",
@@ -4449,7 +4458,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Auftrag bis zum nächsten Mal: Sag deinen Schild-Satz einmal laut für dich – und probier ihn aus, wenn es passt.",
+          "text": "Auftrag bis zum nächsten Mal: Sag deinen Schild-Satz einmal laut für dich. Und wenn es diese Woche passt, probier aus, was du geplant hast. Hak ab, was du geschafft hast.",
           "symbole": [
             "sprechen"
           ]
@@ -4499,7 +4508,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ne pas mordre à l’hameçon : quatre chemins. Tu commences en bas et tu montes d’un niveau seulement si ça ne marche pas.",
+          "text": "Ne pas mordre à l’hameçon : quatre façons de réagir. Tu commences en bas et tu montes d’un niveau si ça ne marche pas. Si ça fait mal ou si ça ne s’arrête pas, tu demandes tout de suite de l’aide.",
           "symbole": [
             "lesen"
           ]
@@ -4507,7 +4516,7 @@
         {
           "art": "leiter",
           "stufen": 4,
-          "oben": "Si ça ne marche pas : un niveau plus haut",
+          "oben": "Si ça ne marche pas : un niveau plus haut. Si ça fait mal : tout de suite de l’aide",
           "unten": "Tu commences ici",
           "beispiele": [
             "Ne rien montrer : expirer, rester calme",
@@ -4518,7 +4527,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Tom est provoqué. Que répond-il avec une phrase-bouclier ? Écris dans la bulle vide.",
+          "text": "On provoque Tom. Que répond-il avec une phrase-bouclier ? Écris dans la bulle vide.",
           "symbole": [
             "schreiben"
           ],
@@ -4538,38 +4547,31 @@
         },
         {
           "art": "aufgabe",
-          "text": "Qui aide si ça ne marche pas ? Coche.",
+          "text": "Ton plan pour une vraie situation de cette semaine – ou une inventée.",
           "symbole": [
-            "ankreuzen"
+            "schreiben"
+          ],
+          "hinweis": "Tu n’as pas à raconter ce que tu ne veux pas. Pas besoin de noms."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Qui pourrait me provoquer ? …",
+            "Quand et où ? …",
+            "Ma phrase-bouclier : …"
           ]
         },
         {
           "art": "ankreuzen",
           "spalten": 2,
           "items": [
-            "mon instituteur ou mon institutrice",
-            "quelqu’un de la surveillance",
+            "mon enseignant ou mon enseignante",
+            "un surveillant ou une surveillante",
             "mon entraîneur ou mon entraîneuse",
             "quelqu’un de la Maison Relais"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Ton plan pour une vraie situation de cette semaine – ou une inventée.",
-          "symbole": [
-            "schreiben"
           ],
-          "hinweis": "Tu n’as rien à raconter que tu ne veux pas."
-        },
-        {
-          "art": "satzanfaenge",
-          "linien": 1,
-          "items": [
-            "Qui pourrait me provoquer ? …",
-            "Quand et où ? …",
-            "Ma phrase-bouclier : …",
-            "Si ça ne marche pas, je vais voir : …"
-          ]
+          "titel": "Si ça ne marche pas, je demande de l’aide à :"
         },
         {
           "art": "aufgabe",
@@ -4594,11 +4596,11 @@
             },
             {
               "bild": "icon:snowflake",
-              "text": "3 Pensées calmes"
+              "text": "3 Pensées qui calment"
             },
             {
               "bild": "icon:wind",
-              "text": "4 Astuce calme"
+              "text": "4 Astuce pour se calmer"
             },
             {
               "bild": "icon:shield",
@@ -4619,7 +4621,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mission jusqu’à la prochaine fois : dis ta phrase-bouclier une fois à voix haute pour toi – et essaie-la quand ça s’y prête.",
+          "text": "Mission d’ici la prochaine fois : dis ta phrase-bouclier une fois à voix haute, pour toi. Et si l’occasion se présente cette semaine, essaie ce que tu as prévu. Coche ce que tu as fait.",
           "symbole": [
             "sprechen"
           ]
@@ -4636,7 +4638,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind liest die vier Stufen und sagt, welche es schon kennt. In Aufgabe 2 schreibt es für Tom einen Schild-Satz in die Blase; der Hinweis hilft, eigene Worte sind besser. In Aufgabe 3 kreuzt es allein an, wer helfen kann. Aufgabe 4 ist der Kern: Das Kind plant eine Situation dieser Woche (oder eine erfundene) mit den vier Satzanfängen; was es aufschreibt, wird nicht vorgelesen. Aufgabe 5 zeigt, wie der Werkzeugkasten wächst; im Auftrag (Aufgabe 6) hakt das Kind später auf der Zielkarte ab, was geschafft ist, und das Blatt kommt in die Werkzeug-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind liest die vier Stufen und sagt, welche es schon kennt; Hilfe holen geht sofort, wenn es wehtut oder nicht aufhört. In Aufgabe 2 schreibt es für Tom einen Schild-Satz in die Blase; der Hinweis hilft, eigene Worte sind besser. Aufgabe 3 ist der Kern: Das Kind hält den Plan fest, den es im ersten Teil mündlich gemacht hat – mit den drei Satzanfängen und dem Ankreuzen, wer hilft; was es aufschreibt, wird nicht vorgelesen, Namen sind nicht nötig. Aufgabe 4 zeigt, wie der Werkzeugkasten wächst; im Auftrag (Aufgabe 5) hakt das Kind später auf der Zielkarte ab, was geschafft ist, und das Blatt kommt in die Werkzeug-Mappe.",
           "sagen": [
             "Auf welcher Stufe fängst du an?",
             "Wie klingt dein Satz, wenn du ihn so sagst, wie du wirklich sprichst?"
@@ -4644,7 +4646,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Satzanfänge, und die Fachkraft schreibt Stichworte. Geht die Situation zu nah, wechselt das Kind zu Tom und Noah. Das Rollenspiel darf im Chor beginnen, bis der Satz sitzt."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant lit les quatre niveaux et dit lesquels il connaît déjà. À l’exercice 2, il écrit pour Tom une phrase-bouclier dans la bulle ; l’indication aide, mais des mots à soi sont mieux. À l’exercice 3, il coche seul qui peut aider. L’exercice 4 est le cœur : l’enfant prépare une situation de cette semaine (ou une inventée) avec les quatre débuts de phrase ; ce qu’il écrit n’est pas lu à voix haute. L’exercice 5 montre comment la boîte à outils grandit ; dans la mission (exercice 6), l’enfant coche plus tard sur la carte d’objectif ce qui est fait, et la fiche va dans la chemise des outils.",
+          "text": "Exercice 1 ensemble : l’enfant lit les quatre niveaux et dit lesquels il connaît déjà ; demander de l’aide va tout de suite, si ça fait mal ou si ça ne s’arrête pas. À l’exercice 2, il écrit pour Tom une phrase-bouclier dans la bulle ; l’indication aide, mais des mots à soi sont mieux. L’exercice 3 est le cœur : l’enfant note le plan qu’il a préparé à voix haute dans la première partie – avec les trois débuts de phrase et en cochant qui aide ; ce qu’il écrit n’est pas lu à voix haute, les noms ne sont pas nécessaires. L’exercice 4 montre comment la boîte à outils grandit ; dans la mission (exercice 5), l’enfant coche plus tard sur la carte « Ma phrase-bouclier » ce qui est fait, et la fiche va dans la chemise des outils.",
           "sagen": [
             "Par quel niveau tu commences ?",
             "Comment sonne ta phrase quand tu la dis comme tu parles vraiment ?"
@@ -4655,14 +4657,14 @@
     },
     "fr": {
       "titel": "Outil 5 : quand quelqu’un me provoque",
-      "text": "L’enfant a le thermomètre, la carte des boutons, les pensées qui calment et son astuce dans la boîte ; aujourd’hui, il s’agit du bouton le plus difficile : quelqu’un provoque exprès. L’adulte explique pourquoi provoquer fonctionne (celui qui mord à l’hameçon fait ce que l’autre veut) et montre quatre chemins : ne rien montrer, phrase-bouclier, partir, demander de l’aide. L’adulte joue trois fois la personne qui provoque – d’abord gentiment (« Tiens, encore en retard ? »), puis avec insistance, enfin avec pression – et l’enfant essaie sa phrase-bouclier et relit son thermomètre entre les tours ; après chaque tour, l’adulte donne un point positif et au plus un conseil. Ensuite, l’enfant prépare une vraie situation de cette semaine (ou une inventée) : qui, quand, où, quelle phrase et ce qu’il fait si ça ne marche pas ; ils la jouent une fois. Pour finir, l’adulte dit : si ça arrive souvent ou si ça fait mal, une phrase ne suffit pas – demander de l’aide n’est alors pas rapporter.",
+      "text": "L’enfant a le thermomètre, la carte des boutons, les pensées qui calment et son astuce dans la boîte ; aujourd’hui, il s’agit du bouton le plus difficile : quelqu’un provoque exprès. L’adulte explique brièvement pourquoi provoquer fonctionne (celui qui mord à l’hameçon fait ce que l’autre veut), montre quatre façons de réagir – ne rien montrer, phrase-bouclier, partir, demander de l’aide – et propose quatre phrases-boucliers (« Peut-être. », « D’accord. », « C’est ton avis. », « Arrête, s’il te plaît. ») ; l’enfant en choisit une ou en invente une qui lui ressemble. Avant le jeu de rôle, ils conviennent d’un signe d’arrêt (main levée) et annoncent les rôles : l’adulte joue trois fois la personne qui provoque, avec des piques inoffensives qui ne touchent jamais l’apparence, la famille ou une vraie personne – d’abord gentiment (« Tiens, encore en retard ? »), puis avec insistance, enfin avec pression. L’enfant essaie sa phrase-bouclier et montre entre les tours son thermomètre avec ses doigts ; après chaque tour, l’adulte souligne ce qui a bien marché et donne au plus un conseil, et à la fin, il sort clairement de son rôle. Ensuite, l’enfant prépare à voix haute une vraie situation de cette semaine (ou une inventée) : où, quelle phrase, qui aide si ça ne marche pas ; ils la jouent une fois. Pour finir, l’adulte dit : si ça arrive souvent ou si ça fait mal, une phrase ne suffit pas – demander de l’aide n’est alors pas rapporter.",
       "sagen": [
-        "Celui qui provoque veut que tu mordes à l’hameçon. Si tu restes calme, il n’a pas atteint son but. On s’entraîne sur quatre chemins.",
-        "Chemin un : ne rien montrer. Chemin deux : une phrase-bouclier – courte, calme, sans reproche. Chemin trois : partir. Chemin quatre : demander de l’aide.",
-        "Je joue maintenant quelqu’un qui te provoque. Tu peux dire « stop » à tout moment. À combien tu es ? Quel chemin tu prends ?",
+        "Celui qui provoque veut que tu mordes à l’hameçon. Si tu restes calme, il n’a pas atteint son but. On s’entraîne sur quatre façons de réagir.",
+        "Première façon : ne rien montrer. Deuxième façon : une phrase-bouclier – courte, calme, sans reproche. Troisième façon : partir. Quatrième façon : demander de l’aide.",
+        "Je joue maintenant quelqu’un qui te provoque – pour de faux, rien de tout ça n’est vrai. Main levée = stop. À combien tu es ? Laquelle tu choisis ?",
         "Si quelqu’un s’en prend à toi encore et encore, ou si ça fait mal, une phrase-bouclier ne suffit pas. Alors tu fais venir quelqu’un – ce n’est pas rapporter, c’est se protéger."
       ],
-      "wennEsKippt": "Si le jeu de rôle devient trop vrai, on dit tout de suite « stop » et on échange les rôles (l’enfant joue la personne qui provoque, l’adulte dit la phrase-bouclier). Si la situation choisie est trop lourde ou si l’enfant parle de moqueries répétées, l’adulte reste calme, passe à Tom et Noah sur la fiche et cherche avec l’enfant qui peut l’aider à l’école. Une phrase-bouclier et un chemin vers de l’aide suffisent."
+      "wennEsKippt": "Si le jeu de rôle devient trop vrai, on dit tout de suite « stop » et on échange les rôles (l’enfant joue la personne qui provoque, l’adulte dit la phrase-bouclier). Si la situation choisie est trop lourde ou si l’enfant parle de moqueries répétées, l’adulte reste calme, passe à Tom et Noah sur la fiche, cherche avec l’enfant qui peut l’aider à l’école et clarifie ensuite qui il doit lui-même impliquer. Une phrase-bouclier et une façon de demander de l’aide suffisent."
     },
     "zugang": {
       "lesen": 2,
@@ -4677,14 +4679,14 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 5: Wenn mich jemand reizt",
-    "text": "Das Kind hat Thermometer, Knopf-Karte, kühle Gedanken und seinen Abkühl-Trick in der Kiste; heute geht es um den schwersten Knopf: Jemand reizt absichtlich. Die Fachkraft erklärt, warum Reizen funktioniert (wer anbeißt, tut, was der andere will), und zeigt vier Wege: nichts zeigen, Schild-Satz, weggehen, Hilfe holen. Sie spielt dreimal die reizende Person – erst leicht („Na, schon wieder zu spät?“), dann hartnäckig, zuletzt drängend – und das Kind probiert seinen Schild-Satz und zeigt dazwischen auf der Skala sein Thermometer; nach jedem Durchgang gibt die Fachkraft ein Plus und höchstens einen Tipp. Dann plant das Kind auf dem Blatt eine echte Situation dieser Woche (oder eine erfundene): Es kreuzt an, wo es passieren könnte, welcher Satz zu ihm passt und wer hilft; den Plan spielen beide einmal durch. Zum Schluss sagt die Fachkraft: Passiert es oft oder tut es weh, reicht ein Satz nicht – dann ist Hilfe holen kein Petzen.",
+    "text": "Das Kind hat Thermometer, Knopf-Karte, kühle Gedanken und seinen Abkühl-Trick in der Kiste; heute geht es um den schwersten Knopf: Jemand reizt absichtlich. Die Fachkraft erklärt kurz, warum Reizen funktioniert (wer anbeißt, tut, was der andere will), zeigt vier Wege – nichts zeigen, Schild-Satz, weggehen, Hilfe holen – und legt vier Schild-Sätze zur Wahl hin („Kann sein.“, „Okay.“, „Das ist deine Meinung.“, „Hör bitte auf.“); das Kind wählt einen oder erfindet einen eigenen, der nach ihm klingt. Vor dem Rollenspiel vereinbaren beide ein Stopp-Zeichen (Hand hoch) und sagen die Rollen an: Die Fachkraft spielt dreimal die reizende Person, mit harmlosen Sprüchen, die nie Aussehen, Familie oder einen echten Menschen treffen – erst leicht („Na, schon wieder zu spät?“), dann hartnäckig, zuletzt drängend. Das Kind probiert seinen Schild-Satz und zeigt dazwischen mit den Fingern sein Thermometer; nach jedem Durchgang nennt die Fachkraft ein Plus und höchstens einen Tipp, am Ende steigt sie ausdrücklich aus der Rolle aus. Dann plant das Kind eine echte Situation dieser Woche (oder eine erfundene): Es sagt oder zeigt, wo es passieren könnte, welcher Satz zu ihm passt und wer hilft; beide spielen den Plan einmal durch. Zum Schluss sagt die Fachkraft: Passiert es oft oder tut es weh, reicht ein Satz nicht – dann ist Hilfe holen kein Petzen.",
     "sagen": [
       "Wer reizt, will, dass du anbeißt. Wenn du ruhig bleibst, hat er sein Ziel nicht erreicht. Wir üben vier Wege.",
       "Weg eins: nichts zeigen. Weg zwei: ein Schild-Satz – kurz, ruhig, ohne Vorwurf. Weg drei: weggehen. Weg vier: Hilfe holen.",
-      "Ich spiele jetzt jemanden, der dich reizt. Du darfst jederzeit „Stopp“ sagen. Wie heiß bist du gerade? Welchen Weg nimmst du?",
+      "Ich spiele jetzt jemanden, der dich reizt – nur gespielt, nichts davon ist echt. Hand hoch heißt Stopp. Wie heiß bist du gerade? Welchen Weg nimmst du?",
       "Wenn jemand dich immer wieder fertigmacht oder es wehtut, reicht ein Schild-Satz nicht. Dann holst du jemanden dazu – das ist kein Petzen, das ist Schutz."
     ],
-    "wennEsKippt": "Wird das Rollenspiel zu echt, gilt sofort „Stopp“, und die Rollen werden getauscht (das Kind spielt die reizende Person, die Fachkraft den Schild-Satz). Wird die gewählte Situation zu belastend oder erzählt das Kind von wiederholtem Fertigmachen, bleibt die Fachkraft ruhig, wechselt zu Tom und Noah auf dem Blatt und bespricht mit dem Kind, wer in der Schule helfen kann. Ein Schild-Satz und ein Weg zu Hilfe genügen.",
+    "wennEsKippt": "Wird das Rollenspiel zu echt, gilt sofort „Stopp“, und die Rollen werden getauscht (das Kind spielt die reizende Person, die Fachkraft den Schild-Satz). Wird die gewählte Situation zu belastend oder erzählt das Kind von wiederholtem Fertigmachen, bleibt die Fachkraft ruhig, wechselt zu Tom und Noah auf dem Blatt, bespricht mit dem Kind, wer in der Schule helfen kann, und klärt nach der Stunde, wen sie selbst einbeziehen muss. Ein Schild-Satz und ein Weg zu Hilfe genügen.",
     "rolle": [
       "kern"
     ],
@@ -4749,8 +4751,8 @@
       }
     },
     "imSpiel": {
-      "de": "Mitten im Spiel sagt die Fachkraft einen kleinen Spruch („Na, das war wohl nichts“); das Kind antwortet mit seinem Schild-Satz und spielt weiter.",
-      "fr": "Au milieu du jeu, l’adulte lance une petite pique (« Tiens, c’était raté ») ; l’enfant répond avec sa phrase-bouclier et continue à jouer."
+      "de": "Mitten im Spiel sagt die Fachkraft – vorher angekündigt – einen kleinen Spruch („Na, das war wohl nichts“); das Kind antwortet mit seinem Schild-Satz und spielt weiter.",
+      "fr": "Au milieu du jeu, l’adulte lance – après l’avoir annoncé – une petite pique (« Tiens, c’était raté ») ; l’enfant répond avec sa phrase-bouclier et continue à jouer."
     },
     "uebungsblatt": {
       "titel": {
@@ -4792,28 +4794,22 @@
         },
         {
           "art": "aufgabe",
-          "text": "Nicht anbeißen: vier Wege. Du fängst unten an und gehst nur eine Stufe höher, wenn es nicht klappt.",
+          "text": "Nicht anbeißen: vier Wege. Du fängst unten an und gehst eine Stufe höher, wenn es nicht klappt. Tut es weh oder hört es nicht auf, holst du gleich Hilfe. Dann verbinde: Welcher Weg passt?",
           "symbole": [
-            "lesen"
+            "lesen",
+            "verbinden"
           ]
         },
         {
           "art": "leiter",
           "stufen": 4,
-          "oben": "Wenn es nicht klappt: eine Stufe höher",
+          "oben": "Wenn es nicht klappt: eine Stufe höher. Tut es weh: gleich Hilfe holen",
           "unten": "Hier fängst du an",
           "beispiele": [
             "Nichts zeigen: ausatmen, ruhig bleiben",
             "Schild-Satz sagen: kurz, ruhig, ohne Vorwurf",
             "Weggehen: zu anderen, an einen anderen Ort",
             "Hilfe holen: bei jemandem, dem du vertraust"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Welcher Weg passt? Verbinde.",
-          "symbole": [
-            "verbinden"
           ]
         },
         {
@@ -4827,6 +4823,10 @@
             "Hilfe holen",
             "Schild-Satz sagen",
             "Weggehen"
+          ],
+          "titel": [
+            "Situation",
+            "Das passt"
           ]
         },
         {
@@ -4848,12 +4848,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein Plan für diese Woche: Wo könnte es passieren? Wie heiß wärst du dann?",
+          "text": "Dein Plan für diese Woche: Wo könnte es passieren? Wie heiß wärst du? Wer hilft, wenn es nicht klappt?",
           "symbole": [
             "einkreisen",
             "ankreuzen"
           ],
-          "hinweis": "Du musst nichts erzählen, was du nicht willst."
+          "hinweis": "Du musst nichts erzählen, was du nicht willst. Namen brauchst du nicht."
         },
         {
           "art": "bilder",
@@ -4887,35 +4887,15 @@
           "bis": "10 · Kochpunkt"
         },
         {
-          "art": "aufgabe",
-          "text": "Wer hilft, wenn es nicht klappt? Kreis ein.",
-          "symbole": [
-            "einkreisen"
-          ]
-        },
-        {
-          "art": "bilder",
-          "klein": true,
-          "spalten": 2,
-          "modus": "einkreisen",
-          "bilder": [
-            {
-              "bild": "icon:school",
-              "text": "Lehrerin oder Lehrer"
-            },
-            {
-              "bild": "icon:eye",
-              "text": "Aufsicht in der Pause"
-            },
-            {
-              "bild": "icon:trophy",
-              "text": "Trainer oder Trainerin"
-            },
-            {
-              "bild": "icon:users-group",
-              "text": "Maison Relais"
-            }
-          ]
+          "art": "ankreuzen",
+          "titel": "Wer hilft, wenn es nicht klappt?",
+          "items": [
+            "Lehrerin oder Lehrer",
+            "Aufsicht in der Pause",
+            "Trainer oder Trainerin",
+            "Maison Relais"
+          ],
+          "spalten": 2
         },
         {
           "art": "aufgabe",
@@ -4958,7 +4938,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Auftrag bis zum nächsten Mal: Sag deinen Schild-Satz einmal laut für dich – und probier ihn aus, wenn es passt.",
+          "text": "Auftrag bis zum nächsten Mal: Sag deinen Schild-Satz einmal laut für dich. Und wenn es diese Woche passt, probier aus, was du geplant hast. Hak ab, was du geschafft hast.",
           "symbole": [
             "sprechen"
           ]
@@ -5008,15 +4988,16 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ne pas mordre à l’hameçon : quatre chemins. Tu commences en bas et tu montes d’un niveau seulement si ça ne marche pas.",
+          "text": "Ne pas mordre à l’hameçon : quatre façons de réagir. Tu commences en bas et tu montes d’un niveau si ça ne marche pas. Si ça fait mal ou si ça ne s’arrête pas, tu demandes tout de suite de l’aide. Ensuite, relie : quelle façon convient ?",
           "symbole": [
-            "lesen"
+            "lesen",
+            "verbinden"
           ]
         },
         {
           "art": "leiter",
           "stufen": 4,
-          "oben": "Si ça ne marche pas : un niveau plus haut",
+          "oben": "Si ça ne marche pas : un niveau plus haut. Si ça fait mal : tout de suite de l’aide",
           "unten": "Tu commences ici",
           "beispiele": [
             "Ne rien montrer : expirer, rester calme",
@@ -5026,28 +5007,25 @@
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Quel chemin convient ? Relie.",
-          "symbole": [
-            "verbinden"
-          ]
-        },
-        {
           "art": "zuordnen",
           "links": [
             "Dans le bus, quelqu’un dit une fois : « Tiens, encore seul ? »",
-            "Quelqu’un te suit et continue encore et encore.",
+            "Quelqu’un te suit et n’arrête pas.",
             "Dans le chat, quelqu’un t’écrit sans arrêt des méchancetés."
           ],
           "rechts": [
             "Demander de l’aide",
             "Dire la phrase-bouclier",
             "Partir"
+          ],
+          "titel": [
+            "Situation",
+            "Façon de réagir"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Ta phrase-bouclier : laquelle te ressemble ? Coche-en une.",
+          "text": "Ta phrase-bouclier : laquelle te ressemble ? Coches-en une.",
           "symbole": [
             "ankreuzen"
           ]
@@ -5064,12 +5042,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ton plan pour cette semaine : où cela pourrait-il arriver ? À combien monterais-tu ?",
+          "text": "Ton plan pour cette semaine : où cela pourrait-il arriver ? À combien monterais-tu ? Qui aide si ça ne marche pas ?",
           "symbole": [
             "einkreisen",
             "ankreuzen"
           ],
-          "hinweis": "Tu n’as rien à raconter que tu ne veux pas."
+          "hinweis": "Tu n’as pas à raconter ce que tu ne veux pas. Pas besoin de noms."
         },
         {
           "art": "bilder",
@@ -5103,35 +5081,15 @@
           "bis": "10 · ébullition"
         },
         {
-          "art": "aufgabe",
-          "text": "Qui aide si ça ne marche pas ? Entoure.",
-          "symbole": [
-            "einkreisen"
-          ]
-        },
-        {
-          "art": "bilder",
-          "klein": true,
-          "spalten": 2,
-          "modus": "einkreisen",
-          "bilder": [
-            {
-              "bild": "icon:school",
-              "text": "instituteur ou institutrice"
-            },
-            {
-              "bild": "icon:eye",
-              "text": "surveillance à la récré"
-            },
-            {
-              "bild": "icon:trophy",
-              "text": "entraîneur ou entraîneuse"
-            },
-            {
-              "bild": "icon:users-group",
-              "text": "Maison Relais"
-            }
-          ]
+          "art": "ankreuzen",
+          "titel": "Qui aide si ça ne marche pas ?",
+          "items": [
+            "enseignant ou enseignante",
+            "surveillant ou surveillante à la récré",
+            "entraîneur ou entraîneuse",
+            "Maison Relais"
+          ],
+          "spalten": 2
         },
         {
           "art": "aufgabe",
@@ -5156,11 +5114,11 @@
             },
             {
               "bild": "icon:snowflake",
-              "text": "3 Pensées calmes"
+              "text": "3 Pensées qui calment"
             },
             {
               "bild": "icon:wind",
-              "text": "4 Astuce calme"
+              "text": "4 Astuce pour se calmer"
             },
             {
               "bild": "icon:shield",
@@ -5174,7 +5132,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mission jusqu’à la prochaine fois : dis ta phrase-bouclier une fois à voix haute pour toi – et essaie-la quand ça s’y prête.",
+          "text": "Mission d’ici la prochaine fois : dis ta phrase-bouclier une fois à voix haute, pour toi. Et si l’occasion se présente cette semaine, essaie ce que tu as prévu. Coche ce que tu as fait.",
           "symbole": [
             "sprechen"
           ]
@@ -5191,7 +5149,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind liest die vier Stufen und sagt, welche es schon kennt. In Aufgabe 2 verbindet es drei Situationen mit dem Weg, der passt: ein einzelner Spruch, einer, der nicht aufhört, und einer, der immer wieder kommt. In Aufgabe 3 kreuzt es einen Schild-Satz an; eigene Worte sind besser, die Fachkraft fragt: „Wie sagst du das wirklich?“ Aufgabe 4 und 5 sind der Plan: wo es passieren könnte, wie heiß das Kind dann ist und wer hilft; was es ankreuzt, wird nicht vorgelesen. Aufgabe 6 zeigt, wie der Werkzeugkasten wächst; im Auftrag (Aufgabe 7) hakt das Kind später auf der Zielkarte ab, was geschafft ist.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind liest die vier Stufen und verbindet drei Situationen mit dem Weg, der passt: ein einzelner Spruch, einer, der nicht aufhört, und einer, der immer wieder kommt; Hilfe holen geht sofort, wenn es wehtut. In Aufgabe 2 kreuzt es einen Schild-Satz an; eigene Worte sind besser, die Fachkraft fragt: „Wie sagst du das wirklich?“ Aufgabe 3 ist der Plan: wo es passieren könnte, wie heiß das Kind dann ist und wer hilft; was es ankreuzt, wird nicht vorgelesen. Aufgabe 4 zeigt, wie der Werkzeugkasten wächst; im Auftrag (Aufgabe 5) hakt das Kind später auf der Zielkarte ab, was geschafft ist.",
           "sagen": [
             "Auf welcher Stufe fängst du an?",
             "Wie sagst du das wirklich?"
@@ -5199,7 +5157,7 @@
           "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Situationen und Sätze vor, und das Kind zeigt darauf. Ein Schild-Satz, ein Ort und eine Person, die hilft, genügen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant lit les quatre niveaux et dit lesquels il connaît déjà. À l’exercice 2, il relie trois situations au chemin qui convient : une seule pique, quelqu’un qui ne s’arrête pas, et quelque chose qui revient sans cesse. À l’exercice 3, il coche une phrase-bouclier ; des mots à soi sont mieux, l’adulte demande : « Comment tu le dis vraiment ? » Les exercices 4 et 5 forment le plan : où cela pourrait arriver, à combien l’enfant monte alors et qui aide ; ce qu’il coche n’est pas lu à voix haute. L’exercice 6 montre comment la boîte à outils grandit ; dans la mission (exercice 7), l’enfant coche plus tard sur la carte d’objectif ce qui est fait.",
+          "text": "Exercice 1 ensemble : l’enfant lit les quatre niveaux et relie trois situations à la façon de réagir qui convient : une seule pique, quelqu’un qui ne s’arrête pas, et quelque chose qui revient sans cesse ; demander de l’aide va tout de suite, si ça fait mal. À l’exercice 2, il coche une phrase-bouclier ; des mots à soi sont mieux, l’adulte demande : « Comment tu le dis vraiment ? » L’exercice 3 est le plan : où cela pourrait arriver, à combien l’enfant monte alors et qui aide ; ce qu’il coche n’est pas lu à voix haute. L’exercice 4 montre comment la boîte à outils grandit ; dans la mission (exercice 5), l’enfant coche plus tard sur la carte « Ma phrase-bouclier » ce qui est fait.",
           "sagen": [
             "Par quel niveau tu commences ?",
             "Comment tu le dis vraiment ?"
@@ -5210,14 +5168,14 @@
     },
     "fr": {
       "titel": "Outil 5 : quand quelqu’un me provoque",
-      "text": "L’enfant a le thermomètre, la carte des boutons, les pensées qui calment et son astuce dans la boîte ; aujourd’hui, il s’agit du bouton le plus difficile : quelqu’un provoque exprès. L’adulte explique pourquoi provoquer fonctionne (celui qui mord à l’hameçon fait ce que l’autre veut) et montre quatre chemins : ne rien montrer, phrase-bouclier, partir, demander de l’aide. L’adulte joue trois fois la personne qui provoque – d’abord gentiment (« Tiens, encore en retard ? »), puis avec insistance, enfin avec pression – et l’enfant essaie sa phrase-bouclier et montre entre les tours son thermomètre sur l’échelle ; après chaque tour, l’adulte donne un point positif et au plus un conseil. Ensuite, l’enfant prépare sur la fiche une vraie situation de cette semaine (ou une inventée) : il coche où ça pourrait arriver, quelle phrase lui convient et qui aide ; ils la jouent une fois. Pour finir, l’adulte dit : si ça arrive souvent ou si ça fait mal, une phrase ne suffit pas – demander de l’aide n’est alors pas rapporter.",
+      "text": "L’enfant a le thermomètre, la carte des boutons, les pensées qui calment et son astuce dans la boîte ; aujourd’hui, il s’agit du bouton le plus difficile : quelqu’un provoque exprès. L’adulte explique brièvement pourquoi provoquer fonctionne (celui qui mord à l’hameçon fait ce que l’autre veut), montre quatre façons de réagir – ne rien montrer, phrase-bouclier, partir, demander de l’aide – et propose quatre phrases-boucliers (« Peut-être. », « D’accord. », « C’est ton avis. », « Arrête, s’il te plaît. ») ; l’enfant en choisit une ou en invente une qui lui ressemble. Avant le jeu de rôle, ils conviennent d’un signe d’arrêt (main levée) et annoncent les rôles : l’adulte joue trois fois la personne qui provoque, avec des piques inoffensives qui ne touchent jamais l’apparence, la famille ou une vraie personne – d’abord gentiment (« Tiens, encore en retard ? »), puis avec insistance, enfin avec pression. L’enfant essaie sa phrase-bouclier et montre entre les tours son thermomètre avec ses doigts ; après chaque tour, l’adulte souligne ce qui a bien marché et donne au plus un conseil, et à la fin, il sort clairement de son rôle. Ensuite, l’enfant prépare une vraie situation de cette semaine (ou une inventée) : il dit ou montre où cela pourrait arriver, quelle phrase lui convient et qui aide ; ils la jouent une fois. Pour finir, l’adulte dit : si ça arrive souvent ou si ça fait mal, une phrase ne suffit pas – demander de l’aide n’est alors pas rapporter.",
       "sagen": [
-        "Celui qui provoque veut que tu mordes à l’hameçon. Si tu restes calme, il n’a pas atteint son but. On s’entraîne sur quatre chemins.",
-        "Chemin un : ne rien montrer. Chemin deux : une phrase-bouclier – courte, calme, sans reproche. Chemin trois : partir. Chemin quatre : demander de l’aide.",
-        "Je joue maintenant quelqu’un qui te provoque. Tu peux dire « stop » à tout moment. À combien tu es ? Quel chemin tu prends ?",
+        "Celui qui provoque veut que tu mordes à l’hameçon. Si tu restes calme, il n’a pas atteint son but. On s’entraîne sur quatre façons de réagir.",
+        "Première façon : ne rien montrer. Deuxième façon : une phrase-bouclier – courte, calme, sans reproche. Troisième façon : partir. Quatrième façon : demander de l’aide.",
+        "Je joue maintenant quelqu’un qui te provoque – pour de faux, rien de tout ça n’est vrai. Main levée = stop. À combien tu es ? Laquelle tu choisis ?",
         "Si quelqu’un s’en prend à toi encore et encore, ou si ça fait mal, une phrase-bouclier ne suffit pas. Alors tu fais venir quelqu’un – ce n’est pas rapporter, c’est se protéger."
       ],
-      "wennEsKippt": "Si le jeu de rôle devient trop vrai, on dit tout de suite « stop » et on échange les rôles (l’enfant joue la personne qui provoque, l’adulte dit la phrase-bouclier). Si la situation choisie est trop lourde ou si l’enfant parle de moqueries répétées, l’adulte reste calme, passe à Tom et Noah sur la fiche et cherche avec l’enfant qui peut l’aider à l’école. Une phrase-bouclier et un chemin vers de l’aide suffisent."
+      "wennEsKippt": "Si le jeu de rôle devient trop vrai, on dit tout de suite « stop » et on échange les rôles (l’enfant joue la personne qui provoque, l’adulte dit la phrase-bouclier). Si la situation choisie est trop lourde ou si l’enfant parle de moqueries répétées, l’adulte reste calme, passe à Tom et Noah sur la fiche, cherche avec l’enfant qui peut l’aider à l’école et clarifie ensuite qui il doit lui-même impliquer. Une phrase-bouclier et une façon de demander de l’aide suffisent."
     },
     "zugang": {
       "lesen": 1,
@@ -5232,7 +5190,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 6: Mein Werkzeugkasten",
-    "text": "Das Kind hat fünf Werkzeuge in seiner Kiste: Thermometer, Knopf-Karte, kühle Gedanken, Abkühl-Trick und Schild-Satz. Heute packt es die Kiste aus: Die Fachkraft nennt die Werkzeuge nacheinander, und das Kind sagt zu jedem in einem Satz, was es damit macht und welches ihm am meisten geholfen hat. Dann spielen beide einen letzten Fall durch (im Chat schreibt jemand etwas Reizendes): Die Fachkraft spielt die Person, das Kind zeigt, was es tut – Zahl ablesen, Trick, Satz, Weg. Durchfallen gibt es nicht; es geht darum, was für das Kind funktioniert. Zum Schluss entstehen die eigene Karte (Körperzeichen, größter Knopf, kühler Satz, Trick, Schild-Satz) und die Urkunde; das Kind sucht aus, wer in Schule oder Verein helfen kann, und die Fachkraft nennt sich als eine Anlaufstelle.",
+    "text": "Das Kind hat fünf Werkzeuge in seiner Kiste: Thermometer, Knopf-Karte, kühle Gedanken, Abkühl-Trick und Schild-Satz. Heute packt es die Kiste aus: Die Fachkraft legt die Blätter aus der Werkzeug-Mappe nebeneinander und nennt die Werkzeuge nacheinander; das Kind sagt zu jedem in einem Satz, was es damit macht, und welches ihm am meisten geholfen hat – das erste Blatt zeigt auch, was es am Anfang schon wusste. Dann spielen beide einen letzten Fall durch (im Chat schreibt jemand etwas Reizendes, harmlos formuliert, mit Stopp-Zeichen und Rollenansage wie beim letzten Mal): Die Fachkraft spielt die Person, das Kind zeigt, was es tut – Zahl ablesen, Trick, Satz, Weg. Durchfallen gibt es nicht; es geht darum, was für das Kind funktioniert. Zum Schluss sucht das Kind aus, wer in Schule oder Verein helfen kann, und die Fachkraft nennt sich als eine Anlaufstelle; Karte und Urkunde füllt es danach auf dem Blatt aus.",
     "sagen": [
       "Heute packst du deine Werkzeugkiste aus. Durchfallen gibt es nicht – es geht darum, was für dich funktioniert.",
       "Welches Werkzeug hat dir am meisten geholfen? Und bei welchem möchtest du noch üben?",
@@ -5288,7 +5246,9 @@
       "rollenspiel",
       "gespraech"
     ],
-    "material": [],
+    "material": [
+      "mappe"
+    ],
     "ort": "raum",
     "werkzeug": {
       "de": "Meine Karte: Thermometer, Trick, Satz – und wer mir hilft",
@@ -5348,9 +5308,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein Werkzeugkasten auf einen Blick. Kreis das Werkzeug ein, das dir bisher am meisten geholfen hat.",
+          "text": "Dein Werkzeugkasten auf einen Blick. Kreis das Werkzeug ein, das dir bisher am meisten geholfen hat, und schreib, wie es dir hilft.",
           "symbole": [
-            "einkreisen"
+            "einkreisen",
+            "schreiben"
           ]
         },
         {
@@ -5386,13 +5347,6 @@
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Was machst du mit deinen Werkzeugen? Schreib auf, was dir am meisten hilft und was du noch übst.",
-          "symbole": [
-            "schreiben"
-          ]
-        },
-        {
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
@@ -5402,9 +5356,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Meine Karte: Das ist dein Plan für heiße Momente. Trag ein, was zu dir passt.",
+          "text": "Meine Karte: Das ist dein Plan für heiße Momente. Trag ein, was zu dir passt, und kreuz an, wer hilft.",
           "symbole": [
-            "schreiben"
+            "schreiben",
+            "ankreuzen"
           ]
         },
         {
@@ -5442,13 +5397,6 @@
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Wer hilft, wenn es heiß wird und du es allein nicht schaffst? Kreuz an.",
-          "symbole": [
-            "ankreuzen"
-          ]
-        },
-        {
           "art": "ankreuzen",
           "spalten": 2,
           "items": [
@@ -5458,7 +5406,8 @@
             "ein Freund oder eine Freundin",
             "meine Begleitperson hier"
           ],
-          "frei": 1
+          "frei": 1,
+          "titel": "Wer hilft, wenn es heiß wird und du es allein nicht schaffst?"
         },
         {
           "art": "aufgabe",
@@ -5470,15 +5419,15 @@
         {
           "art": "vertrag",
           "titel": "Urkunde: Cool bleiben",
-          "text": "Diese Urkunde bekommt ___. Wer sie hat, kennt sein Wut-Thermometer und seine Knöpfe, hat kühle Gedanken und einen Abkühl-Trick, bleibt beim Reizen ruhig und weiß, wer hilft. Am besten hilft mir: ___",
+          "text": "Diese Urkunde bekommt ___. Wer sie hat, kennt sein Wut-Thermometer und seine Knöpfe, hat kühle Gedanken und einen Abkühl-Trick, übt, beim Reizen ruhig zu bleiben, und weiß, wer hilft. Am besten hilft mir: ___",
           "unterschriften": [
             "Mein Name",
-            "Datum"
+            "Meine Begleitperson"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Das nehme ich mit in meinen Alltag: Kreuz zwei Werkzeuge an.",
+          "text": "Das nehme ich mit in meinen Alltag: Kreuz zwei Werkzeuge an – die probierst du als Erstes aus.",
           "symbole": [
             "ankreuzen"
           ]
@@ -5530,9 +5479,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta boîte à outils en un coup d’œil. Entoure l’outil qui t’a le plus aidé jusqu’ici.",
+          "text": "Ta boîte à outils en un coup d’œil. Entoure l’outil qui t’a le plus aidé jusqu’ici et écris comment il t’aide.",
           "symbole": [
-            "einkreisen"
+            "einkreisen",
+            "schreiben"
           ]
         },
         {
@@ -5551,11 +5501,11 @@
             },
             {
               "bild": "icon:snowflake",
-              "text": "3 Pensées calmes"
+              "text": "3 Pensées qui calment"
             },
             {
               "bild": "icon:wind",
-              "text": "4 Astuce calme"
+              "text": "4 Astuce pour se calmer"
             },
             {
               "bild": "icon:shield",
@@ -5568,13 +5518,6 @@
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Que fais-tu avec tes outils ? Écris ce qui t’aide le plus et ce que tu t’entraînes encore à faire.",
-          "symbole": [
-            "schreiben"
-          ]
-        },
-        {
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
@@ -5584,9 +5527,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ma carte : voici ton plan pour les moments chauds. Écris ce qui te convient.",
+          "text": "Ma carte : voici ton plan pour les moments chauds. Écris ce qui te convient et coche qui aide.",
           "symbole": [
-            "schreiben"
+            "schreiben",
+            "ankreuzen"
           ]
         },
         {
@@ -5624,23 +5568,17 @@
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Qui aide quand ça chauffe et que tu n’y arrives pas seul ? Coche.",
-          "symbole": [
-            "ankreuzen"
-          ]
-        },
-        {
           "art": "ankreuzen",
           "spalten": 2,
           "items": [
-            "mon instituteur ou mon institutrice",
+            "mon enseignant ou mon enseignante",
             "quelqu’un de la Maison Relais",
             "mon entraîneur ou mon entraîneuse",
             "un ami ou une amie",
-            "mon accompagnateur ou accompagnatrice ici"
+            "l’adulte qui m’accompagne ici"
           ],
-          "frei": 1
+          "frei": 1,
+          "titel": "Qui aide quand ça chauffe et que tu n’y arrives pas seul ?"
         },
         {
           "art": "aufgabe",
@@ -5652,15 +5590,15 @@
         {
           "art": "vertrag",
           "titel": "Certificat : rester cool",
-          "text": "Ce certificat est remis à ___. Celui qui l’a connaît son thermomètre de la colère et ses boutons, a des pensées qui calment et une astuce pour se calmer, reste calme face aux provocations et sait qui peut l’aider. Ce qui m’aide le mieux : ___",
+          "text": "Ce certificat est remis à ___. Celui ou celle qui l’a connaît son thermomètre de la colère et ses boutons, a des pensées qui calment et une astuce pour se calmer, s’entraîne à rester calme face aux provocations et sait qui peut l’aider. Ce qui m’aide le mieux : ___",
           "unterschriften": [
             "Mon nom",
-            "Date"
+            "L’adulte qui m’accompagne"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Voilà ce que j’emporte dans mon quotidien : coche deux outils.",
+          "text": "Voilà ce que j’emporte au quotidien : coche deux outils – tu les essaieras en premier.",
           "symbole": [
             "ankreuzen"
           ]
@@ -5679,33 +5617,33 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind betrachtet die sechs Werkzeuge, kreist das ein, das ihm bisher am meisten geholfen hat, und sagt, warum. In Aufgabe 2 schreibt es zwei Sätze dazu, in Aufgabe 3 füllt es seine Karte aus – sie nimmt es mit. In Aufgabe 4 kreuzt das Kind an, wer helfen kann; was es im freien Feld einträgt, wird nicht nachgefragt. Dann schreibt es seinen Namen auf die Urkunde (Aufgabe 5) und kreuzt an, welche zwei Werkzeuge es als Erstes in den Alltag mitnimmt (Aufgabe 6). Die Werkzeug-Mappe mit allen Blättern darf das Kind heute mitnehmen.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind betrachtet die sechs Werkzeuge, kreist das ein, das ihm bisher am meisten geholfen hat, und schreibt zwei Sätze dazu: was ihm hilft und was es noch übt. In Aufgabe 2 füllt es seine Karte aus – sie nimmt es mit – und kreuzt an, wer helfen kann; was es im freien Feld einträgt, wird nicht nachgefragt. Dann schreibt es seinen Namen auf die Urkunde, die Fachkraft unterschreibt daneben (Aufgabe 3) und kreuzt an, welche zwei Werkzeuge es als Erstes in den Alltag mitnimmt (Aufgabe 4). Die Werkzeug-Mappe mit allen Blättern darf das Kind heute mitnehmen.",
           "sagen": [
             "Welches Werkzeug hat dir am meisten geholfen?",
             "Wen kannst du ansprechen? Ich bin auch eine Person, die du fragen darfst."
           ],
-          "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Sätze, und die Fachkraft schreibt Stichworte. Auf der Karte genügen drei Einträge, bei der Urkunde Name und Unterschrift; „Am besten hilft mir“ darf auch gesagt werden."
+          "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Sätze, und die Fachkraft schreibt Stichworte. Auf der Karte genügen drei Einträge, bei der Urkunde Name und Unterschrift; „Am besten hilft mir“ darf auch gesagt werden. Wird die Zeit knapp, entfällt Aufgabe 4; die Fachkraft fragt mündlich, welche zwei Werkzeuge das Kind mitnimmt."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant observe les six outils, entoure celui qui l’a le plus aidé jusqu’ici et dit pourquoi. À l’exercice 2, il écrit deux phrases, à l’exercice 3 il remplit sa carte – il l’emporte. À l’exercice 4, il coche qui peut aider ; on ne demande rien sur ce qu’il écrit dans le champ libre. Ensuite, il écrit son nom sur le certificat (exercice 5) et coche les deux outils qu’il emporte en premier dans son quotidien (exercice 6). L’enfant peut emporter aujourd’hui la chemise des outils avec toutes les fiches.",
+          "text": "Exercice 1 ensemble : l’enfant observe les six outils, entoure celui qui l’a le plus aidé jusqu’ici et écrit deux phrases : ce qui l’aide et ce qu’il s’entraîne encore à faire. À l’exercice 2, il remplit sa carte – il l’emporte – et coche qui peut aider ; on ne demande rien sur ce qu’il écrit dans le champ libre. Ensuite, il écrit son nom sur le certificat, l’adulte signe à côté (exercice 3) et coche les deux outils qu’il emporte en premier au quotidien (exercice 4). L’enfant peut emporter aujourd’hui la chemise des outils avec toutes les fiches.",
           "sagen": [
             "Quel outil t’a le plus aidé ?",
             "À qui peux-tu t’adresser ? Moi aussi, tu peux me demander."
           ],
-          "wennEsKippt": "Si écrire est pénible, l’enfant dit les phrases et l’adulte note des mots-clés. Sur la carte, trois entrées suffisent ; pour le certificat, le nom et la signature ; « Ce qui m’aide le mieux » peut aussi être dit."
+          "wennEsKippt": "Si écrire est pénible, l’enfant dit les phrases et l’adulte note des mots-clés. Sur la carte, trois entrées suffisent ; pour le certificat, le nom et la signature ; « Ce qui m’aide le mieux » peut aussi être dit. Si le temps manque, l’exercice 4 tombe ; l’adulte demande à l’oral quels deux outils l’enfant emporte."
         }
       }
     },
     "fr": {
       "titel": "Outil 6 : ma boîte à outils",
-      "text": "L’enfant a cinq outils dans sa boîte : thermomètre, carte des boutons, pensées qui calment, astuce pour se calmer et phrase-bouclier. Aujourd’hui, il vide la boîte : l’adulte nomme les outils l’un après l’autre, et l’enfant dit pour chacun, en une phrase, ce qu’il en fait et lequel l’a le plus aidé. Ensuite, ils jouent un dernier cas (dans le chat, quelqu’un écrit quelque chose de provocant) : l’adulte joue la personne, l’enfant montre ce qu’il fait – lire son chiffre, astuce, phrase, chemin. Il n’y a pas d’échec possible ; ce qui compte, c’est ce qui fonctionne pour l’enfant. Pour finir, l’enfant crée sa propre carte (signe du corps, plus gros bouton, phrase calme, astuce, phrase-bouclier) et le certificat ; il cherche qui peut l’aider à l’école ou au club, et l’adulte se présente comme l’une des personnes à qui s’adresser.",
+      "text": "L’enfant a cinq outils dans sa boîte : thermomètre, carte des boutons, pensées qui calment, astuce pour se calmer et phrase-bouclier. Aujourd’hui, on fait le tour de la boîte : l’adulte étale les fiches de la chemise des outils et nomme les outils l’un après l’autre ; l’enfant dit pour chacun, en une phrase, ce qu’il en fait et lequel l’a le plus aidé – la première fiche montre aussi ce qu’il savait déjà au début. Ensuite, ils jouent un dernier cas (dans le chat, quelqu’un écrit quelque chose de provocant, sans méchanceté, avec le signe d’arrêt et l’annonce des rôles comme la dernière fois) : l’adulte joue la personne, l’enfant montre ce qu’il fait – lire son chiffre, astuce, phrase, façon de réagir. Il n’y a pas d’échec possible ; ce qui compte, c’est ce qui fonctionne pour l’enfant. Pour finir, l’enfant choisit qui peut l’aider à l’école ou au club, et l’adulte se présente comme l’une des personnes à qui s’adresser ; la carte et le certificat se remplissent ensuite sur la fiche.",
       "sagen": [
-        "Aujourd’hui, tu vides ta boîte à outils. Il n’y a pas d’échec – ce qui compte, c’est ce qui marche pour toi.",
+        "Aujourd’hui, on fait le tour de ta boîte à outils. Il n’y a pas d’échec – ce qui compte, c’est ce qui marche pour toi.",
         "Quel outil t’a le plus aidé ? Et pour lequel tu veux encore t’entraîner ?",
         "Voici un dernier cas : je joue quelqu’un qui te provoque. Que fais-tu en premier ?",
         "À qui peux-tu t’adresser quand ça chauffe et que tu n’y arrives pas seul ?"
       ],
-      "wennEsKippt": "Si le dernier cas ressemble à un test, l’adulte en fait un jeu à deux (« On le résout ensemble ») et aide pour le premier outil. Si l’enfant ne trouve personne, l’adulte donne des exemples (instituteur, éducateur de la Maison Relais, entraîneuse) et dit qu’il est lui-même une personne à qui s’adresser. Une personne suffit."
+      "wennEsKippt": "Si le dernier cas ressemble à un test, l’adulte en fait un jeu à deux (« On le résout ensemble ») et aide pour le premier outil. Si l’enfant ne trouve personne, l’adulte donne des exemples (un enseignant, une éducatrice de la Maison Relais, un entraîneur) et dit qu’il est lui-même une personne à qui s’adresser. Une personne suffit."
     },
     "zugang": {
       "lesen": 2,
@@ -5720,7 +5658,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Werkzeug 6: Mein Werkzeugkasten",
-    "text": "Das Kind hat fünf Werkzeuge in seiner Kiste: Thermometer, Knopf-Karte, kühle Gedanken, Abkühl-Trick und Schild-Satz. Heute packt es die Kiste aus: Die Fachkraft nennt die Werkzeuge nacheinander, und das Kind zeigt zu jedem auf dem Blatt, wie sicher es sich damit fühlt und welches ihm am meisten geholfen hat. Dann spielen beide einen letzten Fall durch (im Chat schreibt jemand etwas Reizendes): Die Fachkraft spielt die Person, das Kind zeigt, was es tut – Zahl ablesen, Trick, Satz, Weg. Durchfallen gibt es nicht; es geht darum, was für das Kind funktioniert. Zum Schluss stellt das Kind seine Karte aus Bildern zusammen (größter Knopf, Trick, Schild-Satz) und füllt die Urkunde aus; es sucht aus, wer in Schule oder Verein helfen kann, und die Fachkraft nennt sich als eine Anlaufstelle.",
+    "text": "Das Kind hat fünf Werkzeuge in seiner Kiste: Thermometer, Knopf-Karte, kühle Gedanken, Abkühl-Trick und Schild-Satz. Heute packt es die Kiste aus: Die Fachkraft legt die Blätter aus der Werkzeug-Mappe nebeneinander und nennt die Werkzeuge nacheinander; das Kind zeigt auf das Werkzeug, das ihm am meisten geholfen hat, und sagt oder zeigt, was es damit macht – das erste Blatt zeigt auch, was es am Anfang schon wusste. Dann spielen beide einen letzten Fall durch (im Chat schreibt jemand etwas Reizendes, harmlos formuliert, mit Stopp-Zeichen und Rollenansage wie beim letzten Mal): Die Fachkraft spielt die Person, das Kind zeigt, was es tut – Zahl ablesen, Trick, Satz, Weg. Durchfallen gibt es nicht; es geht darum, was für das Kind funktioniert. Zum Schluss sucht das Kind aus, wer in Schule oder Verein helfen kann, und die Fachkraft nennt sich als eine Anlaufstelle; die Karte aus Bildern und die Urkunde macht es danach auf dem Blatt.",
     "sagen": [
       "Heute packst du deine Werkzeugkiste aus. Durchfallen gibt es nicht – es geht darum, was für dich funktioniert.",
       "Welches Werkzeug hat dir am meisten geholfen? Und bei welchem möchtest du noch üben?",
@@ -5776,7 +5714,9 @@
       "rollenspiel",
       "gespraech"
     ],
-    "material": [],
+    "material": [
+      "mappe"
+    ],
     "ort": "raum",
     "werkzeug": {
       "de": "Meine Karte: Thermometer, Trick, Satz – und wer mir hilft",
@@ -5875,10 +5815,15 @@
         },
         {
           "art": "aufgabe",
-          "text": "Meine Karte, Teil 1: Mein größter Knopf. Kreis ihn ein.",
+          "text": "Meine Karte: Kreis ein oder kreuz an – dein größter Knopf, dein Abkühl-Trick, dein Schild-Satz und wer dir hilft.",
           "symbole": [
-            "einkreisen"
+            "einkreisen",
+            "ankreuzen"
           ]
+        },
+        {
+          "art": "text",
+          "text": "Teil 1: Mein größter Knopf"
         },
         {
           "art": "bilder",
@@ -5913,11 +5858,8 @@
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Teil 2: Mein Abkühl-Trick. Kreis ihn ein.",
-          "symbole": [
-            "einkreisen"
-          ]
+          "art": "text",
+          "text": "Teil 2: Mein Abkühl-Trick"
         },
         {
           "art": "bilder",
@@ -5952,13 +5894,6 @@
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Teil 3: Mein Schild-Satz. Kreuz einen an.",
-          "symbole": [
-            "ankreuzen"
-          ]
-        },
-        {
           "art": "ankreuzen",
           "spalten": 2,
           "items": [
@@ -5966,14 +5901,12 @@
             "„Okay.“",
             "„Das ist deine Meinung.“",
             "„Hör bitte auf.“"
-          ]
+          ],
+          "titel": "Teil 3: Mein Schild-Satz"
         },
         {
-          "art": "aufgabe",
-          "text": "Teil 4: Wer hilft? Kreis ein.",
-          "symbole": [
-            "einkreisen"
-          ]
+          "art": "text",
+          "text": "Teil 4: Wer hilft?"
         },
         {
           "art": "bilder",
@@ -6009,15 +5942,15 @@
         {
           "art": "vertrag",
           "titel": "Urkunde: Cool bleiben",
-          "text": "Diese Urkunde bekommt ___. Wer sie hat, kennt sein Wut-Thermometer und seine Knöpfe, hat kühle Gedanken und einen Abkühl-Trick, bleibt beim Reizen ruhig und weiß, wer hilft. Am besten hilft mir: ___",
+          "text": "Diese Urkunde bekommt ___. Wer sie hat, kennt sein Wut-Thermometer und seine Knöpfe, hat kühle Gedanken und einen Abkühl-Trick, übt, beim Reizen ruhig zu bleiben, und weiß, wer hilft. Am besten hilft mir: ___",
           "unterschriften": [
             "Mein Name",
-            "Datum"
+            "Meine Begleitperson"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Das nehme ich mit in meinen Alltag: Kreuz zwei Werkzeuge an.",
+          "text": "Das nehme ich mit in meinen Alltag: Kreuz zwei Werkzeuge an – die probierst du als Erstes aus.",
           "symbole": [
             "ankreuzen"
           ]
@@ -6090,11 +6023,11 @@
             },
             {
               "bild": "icon:snowflake",
-              "text": "3 Pensées calmes"
+              "text": "3 Pensées qui calment"
             },
             {
               "bild": "icon:wind",
-              "text": "4 Astuce calme"
+              "text": "4 Astuce pour se calmer"
             },
             {
               "bild": "icon:shield",
@@ -6108,10 +6041,15 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ma carte, partie 1 : mon plus gros bouton. Entoure-le.",
+          "text": "Ma carte : entoure ou coche – ton plus gros bouton, ton astuce pour te calmer, ta phrase-bouclier et qui t’aide.",
           "symbole": [
-            "einkreisen"
+            "einkreisen",
+            "ankreuzen"
           ]
+        },
+        {
+          "art": "text",
+          "text": "Partie 1 : mon plus gros bouton"
         },
         {
           "art": "bilder",
@@ -6146,11 +6084,8 @@
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Partie 2 : mon astuce pour me calmer. Entoure-la.",
-          "symbole": [
-            "einkreisen"
-          ]
+          "art": "text",
+          "text": "Partie 2 : mon astuce pour me calmer"
         },
         {
           "art": "bilder",
@@ -6172,7 +6107,7 @@
             },
             {
               "bild": "icon:hand-grab",
-              "text": "Serrer les mains"
+              "text": "Presser les mains"
             },
             {
               "bild": "icon:footsteps",
@@ -6180,15 +6115,8 @@
             },
             {
               "bild": "icon:eye",
-              "text": "Voir cinq choses"
+              "text": "Repérer cinq choses"
             }
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Partie 3 : ma phrase-bouclier. Coche-en une.",
-          "symbole": [
-            "ankreuzen"
           ]
         },
         {
@@ -6199,14 +6127,12 @@
             "« D’accord. »",
             "« C’est ton avis. »",
             "« Arrête, s’il te plaît. »"
-          ]
+          ],
+          "titel": "Partie 3 : ma phrase-bouclier"
         },
         {
-          "art": "aufgabe",
-          "text": "Partie 4 : qui aide ? Entoure.",
-          "symbole": [
-            "einkreisen"
-          ]
+          "art": "text",
+          "text": "Partie 4 : qui aide ?"
         },
         {
           "art": "bilder",
@@ -6216,11 +6142,11 @@
           "bilder": [
             {
               "bild": "icon:school",
-              "text": "instituteur ou institutrice"
+              "text": "enseignant ou enseignante"
             },
             {
               "bild": "icon:eye",
-              "text": "surveillance à la récré"
+              "text": "surveillant ou surveillante à la récré"
             },
             {
               "bild": "icon:trophy",
@@ -6242,15 +6168,15 @@
         {
           "art": "vertrag",
           "titel": "Certificat : rester cool",
-          "text": "Ce certificat est remis à ___. Celui qui l’a connaît son thermomètre de la colère et ses boutons, a des pensées qui calment et une astuce pour se calmer, reste calme face aux provocations et sait qui peut l’aider. Ce qui m’aide le mieux : ___",
+          "text": "Ce certificat est remis à ___. Celui ou celle qui l’a connaît son thermomètre de la colère et ses boutons, a des pensées qui calment et une astuce pour se calmer, s’entraîne à rester calme face aux provocations et sait qui peut l’aider. Ce qui m’aide le mieux : ___",
           "unterschriften": [
             "Mon nom",
-            "Date"
+            "L’adulte qui m’accompagne"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Voilà ce que j’emporte dans mon quotidien : coche deux outils.",
+          "text": "Voilà ce que j’emporte au quotidien : coche deux outils – tu les essaieras en premier.",
           "symbole": [
             "ankreuzen"
           ]
@@ -6269,33 +6195,33 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind betrachtet die sechs Werkzeuge, kreist das ein, das ihm bisher am meisten geholfen hat, und sagt, warum. Aufgabe 2 bis 5 sind seine Karte: Es kreist seinen größten Knopf und seinen Abkühl-Trick ein, kreuzt einen Schild-Satz an und kreist die Menschen ein, die helfen können; was es wählt, wird nicht nachgefragt. Dann schreibt es seinen Namen auf die Urkunde (Aufgabe 6) und kreuzt an, welche zwei Werkzeuge es als Erstes in den Alltag mitnimmt (Aufgabe 7). Die Werkzeug-Mappe mit allen Blättern darf das Kind heute mitnehmen.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind betrachtet die sechs Werkzeuge, kreist das ein, das ihm bisher am meisten geholfen hat, und sagt, warum. In Aufgabe 2 stellt es seine Karte zusammen: Es kreist seinen größten Knopf und seinen Abkühl-Trick ein, kreuzt einen Schild-Satz an und kreist die Menschen ein, die helfen können; was es wählt, wird nicht nachgefragt. Dann schreibt es seinen Namen auf die Urkunde, die Fachkraft unterschreibt daneben (Aufgabe 3) und kreuzt an, welche zwei Werkzeuge es als Erstes in den Alltag mitnimmt (Aufgabe 4). Die Werkzeug-Mappe mit allen Blättern darf das Kind heute mitnehmen.",
           "sagen": [
             "Welches Werkzeug hat dir am meisten geholfen?",
             "Wen kannst du ansprechen? Ich bin auch eine Person, die du fragen darfst."
           ],
-          "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Werkzeuge und Sätze vor, und das Kind zeigt darauf. Auf der Karte genügen drei Kreise; bei der Urkunde reichen Name und Unterschrift."
+          "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Werkzeuge und Sätze vor, und das Kind zeigt darauf. Auf der Karte genügen drei Kreise; bei der Urkunde reichen Name und Unterschrift. Wird die Zeit knapp, entfällt Aufgabe 4; die Fachkraft fragt mündlich, welche zwei Werkzeuge das Kind mitnimmt."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant observe les six outils, entoure celui qui l’a le plus aidé jusqu’ici et dit pourquoi. Les exercices 2 à 5 forment sa carte : il entoure son plus gros bouton et son astuce pour se calmer, coche une phrase-bouclier et entoure les personnes qui peuvent aider ; on ne demande rien sur ce qu’il choisit. Ensuite, il écrit son nom sur le certificat (exercice 6) et coche les deux outils qu’il emporte en premier dans son quotidien (exercice 7). L’enfant peut emporter aujourd’hui la chemise des outils avec toutes les fiches.",
+          "text": "Exercice 1 ensemble : l’enfant observe les six outils, entoure celui qui l’a le plus aidé jusqu’ici et dit pourquoi. À l’exercice 2, il compose sa carte : il entoure son plus gros bouton et son astuce pour se calmer, coche une phrase-bouclier et entoure les personnes qui peuvent aider ; on ne demande rien sur ce qu’il choisit. Ensuite, il écrit son nom sur le certificat, l’adulte signe à côté (exercice 3) et coche les deux outils qu’il emporte en premier au quotidien (exercice 4). L’enfant peut emporter aujourd’hui la chemise des outils avec toutes les fiches.",
           "sagen": [
             "Quel outil t’a le plus aidé ?",
             "À qui peux-tu t’adresser ? Moi aussi, tu peux me demander."
           ],
-          "wennEsKippt": "Si lire est difficile, l’adulte lit les outils et les phrases et l’enfant les montre. Sur la carte, trois cercles suffisent ; pour le certificat, le nom et la signature suffisent."
+          "wennEsKippt": "Si lire est difficile, l’adulte lit les outils et les phrases et l’enfant les montre. Sur la carte, trois cercles suffisent ; pour le certificat, le nom et la signature suffisent. Si le temps manque, l’exercice 4 tombe ; l’adulte demande à l’oral quels deux outils l’enfant emporte."
         }
       }
     },
     "fr": {
       "titel": "Outil 6 : ma boîte à outils",
-      "text": "L’enfant a cinq outils dans sa boîte : thermomètre, carte des boutons, pensées qui calment, astuce pour se calmer et phrase-bouclier. Aujourd’hui, il vide la boîte : l’adulte nomme les outils l’un après l’autre, et l’enfant montre pour chacun sur la fiche à quel point il est à l’aise et lequel l’a le plus aidé. Ensuite, ils jouent un dernier cas (dans le chat, quelqu’un écrit quelque chose de provocant) : l’adulte joue la personne, l’enfant montre ce qu’il fait – lire son chiffre, astuce, phrase, chemin. Il n’y a pas d’échec possible ; ce qui compte, c’est ce qui fonctionne pour l’enfant. Pour finir, l’enfant compose sa carte avec des images (plus gros bouton, astuce, phrase-bouclier) et remplit le certificat ; il cherche qui peut l’aider à l’école ou au club, et l’adulte se présente comme l’une des personnes à qui s’adresser.",
+      "text": "L’enfant a cinq outils dans sa boîte : thermomètre, carte des boutons, pensées qui calment, astuce pour se calmer et phrase-bouclier. Aujourd’hui, on fait le tour de la boîte : l’adulte étale les fiches de la chemise des outils et nomme les outils l’un après l’autre ; l’enfant montre l’outil qui l’a le plus aidé et dit ou montre ce qu’il en fait – la première fiche montre aussi ce qu’il savait déjà au début. Ensuite, ils jouent un dernier cas (dans le chat, quelqu’un écrit quelque chose de provocant, sans méchanceté, avec le signe d’arrêt et l’annonce des rôles comme la dernière fois) : l’adulte joue la personne, l’enfant montre ce qu’il fait – lire son chiffre, astuce, phrase, façon de réagir. Il n’y a pas d’échec possible ; ce qui compte, c’est ce qui fonctionne pour l’enfant. Pour finir, l’enfant choisit qui peut l’aider à l’école ou au club, et l’adulte se présente comme l’une des personnes à qui s’adresser ; la carte avec des images et le certificat se font ensuite sur la fiche.",
       "sagen": [
-        "Aujourd’hui, tu vides ta boîte à outils. Il n’y a pas d’échec – ce qui compte, c’est ce qui marche pour toi.",
+        "Aujourd’hui, on fait le tour de ta boîte à outils. Il n’y a pas d’échec – ce qui compte, c’est ce qui marche pour toi.",
         "Quel outil t’a le plus aidé ? Et pour lequel tu veux encore t’entraîner ?",
         "Voici un dernier cas : je joue quelqu’un qui te provoque. Que fais-tu en premier ?",
         "À qui peux-tu t’adresser quand ça chauffe et que tu n’y arrives pas seul ?"
       ],
-      "wennEsKippt": "Si le dernier cas ressemble à un test, l’adulte en fait un jeu à deux (« On le résout ensemble ») et aide pour le premier outil. Si l’enfant ne trouve personne, l’adulte donne des exemples (instituteur, éducateur de la Maison Relais, entraîneuse) et dit qu’il est lui-même une personne à qui s’adresser. Une personne suffit."
+      "wennEsKippt": "Si le dernier cas ressemble à un test, l’adulte en fait un jeu à deux (« On le résout ensemble ») et aide pour le premier outil. Si l’enfant ne trouve personne, l’adulte donne des exemples (un enseignant, une éducatrice de la Maison Relais, un entraîneur) et dit qu’il est lui-même une personne à qui s’adresser. Une personne suffit."
     },
     "zugang": {
       "lesen": 1,
@@ -6363,7 +6289,7 @@
       "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
     },
     "titel": "Deckel zu: die Werkzeug-Mappe",
-    "text": "Das Blatt von heute kommt in die Werkzeug-Mappe (sie bleibt bei der Fachkraft). Auf dem Umschlag steht eine Reihe von sechs Kästchen; das Kind malt das Kästchen für das heutige Werkzeug aus. Zum Schluss klappen beide den Deckel der Werkzeugkiste mit einer Handbewegung zu und zeigen noch einmal mit der Hand, wo das Thermometer jetzt steht.",
+    "text": "Das Blatt von heute kommt in die Werkzeug-Mappe (sie bleibt bei der Fachkraft; beim letzten Treffen darf das Kind sie mitnehmen). Auf dem Umschlag steht eine Reihe von sechs Kästchen; das Kind malt das Kästchen für das heutige Werkzeug aus. Zum Schluss klappen beide den Deckel der Werkzeugkiste mit einer Handbewegung zu und zeigen noch einmal mit der Hand, wo das Thermometer jetzt steht.",
     "sagen": [
       "Das Blatt kommt in die Werkzeug-Mappe. Mal dein Kästchen für heute aus.",
       "Deckel zu! Wo steht dein Thermometer jetzt?"
@@ -6403,7 +6329,7 @@
     "qualitaet": "geprueft",
     "fr": {
       "titel": "Couvercle fermé : la chemise des outils",
-      "text": "La fiche d’aujourd’hui va dans la chemise des outils (elle reste chez l’adulte). Sur la couverture, il y a une rangée de six cases ; l’enfant colorie la case de l’outil du jour. Pour se dire au revoir, ils referment ensemble le couvercle de la boîte à outils d’un geste de la main et montrent encore une fois avec la main où est le thermomètre maintenant.",
+      "text": "La fiche d’aujourd’hui va dans la chemise des outils (elle reste chez l’adulte ; au dernier rendez-vous, l’enfant peut l’emporter). Sur la couverture, il y a une rangée de six cases ; l’enfant colorie la case de l’outil du jour. Pour se dire au revoir, ils referment ensemble le couvercle de la boîte à outils d’un geste de la main et montrent encore une fois avec la main où est le thermomètre maintenant.",
       "sagen": [
         "La fiche va dans la chemise des outils. Colorie ta case pour aujourd’hui.",
         "On ferme le couvercle ! Où est ton thermomètre maintenant ?"
