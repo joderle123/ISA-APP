@@ -1,0 +1,5720 @@
+[
+ {
+  "id": "r:kurs-streit-10-12-waage",
+  "kurs": "kurs-streit-10-12",
+  "quelle": {
+   "art": "ritual",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Wie steht deine Waage?",
+  "text": "Fachkraft und Kind halten beide Hände vor sich wie die Schalen einer Waage. Das Kind zeigt, wie seine Waage heute steht: beide Hände gleich hoch = alles im Gleichgewicht, eine Hand tiefer = auf einer Seite liegt gerade mehr Gewicht. Die Fachkraft zeigt zuerst ihre eigene und sagt zum Kind nur „Danke“, ohne nach dem Grund zu fragen. Das Ritual läuft jedes Mal gleich ab.",
+  "sagen": [
+   "Wie steht deine Waage heute? Beide Hände gleich hoch – oder eine tiefer?",
+   "Du musst nichts erklären. Ich schaue nur, was du zeigst."
+  ],
+  "wennEsKippt": "Mag das Kind nicht zeigen, reicht ein Nicken oder ein Blick auf die Waage auf dem Blatt. „Weiß nicht“ ist auch eine Antwort: Beide Hände wackeln. Die Fachkraft wartet kurz und beginnt dann mit der Stunde.",
+  "rolle": [
+   "ankommen"
+  ],
+  "thema": [],
+  "eldib": [],
+  "kompetenz": [],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 1,
+   "typ": 2,
+   "max": 3
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "spiel"
+  ],
+  "material": [],
+  "ohneZiel": true,
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Où en est ta balance ?",
+   "text": "L’adulte et l’enfant tiennent leurs deux mains devant eux comme les plateaux d’une balance. L’enfant montre où en est sa balance aujourd’hui : les deux mains à la même hauteur = tout est en équilibre, une main plus bas = il y a en ce moment plus de poids d’un côté. L’adulte montre d’abord la sienne et dit seulement « Merci » à l’enfant, sans demander pourquoi. Le rituel se déroule toujours de la même façon.",
+   "sagen": [
+    "Où en est ta balance aujourd’hui ? Les deux mains à la même hauteur – ou une plus bas ?",
+    "Tu n’as rien à expliquer. Je regarde seulement ce que tu montres."
+   ],
+   "wennEsKippt": "Si l’enfant ne veut pas montrer, un signe de tête ou un regard sur la balance de la fiche suffit. « Je ne sais pas » est aussi une réponse : les deux mains tremblent. L’adulte attend un instant puis commence la séance."
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s1-a",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Konflikte gehören dazu: der Konflikt-Check",
+  "text": "Die Fachkraft zeigt auf dem Blatt die Lotsen-Waage: Ein Lotse steuert ein Schiff durch schwieriges Wasser, ohne Partei zu ergreifen – und eine Lösung ist gut, wenn die Waage im Gleichgewicht bleibt, also für beide Seiten passt. Heute kommt das erste Werkzeug dazu, der Konflikt-Check: Worum geht es hier eigentlich – um eine Sache, eine Regel, ein Missverständnis oder um Gefühle? Die Fachkraft liest vier kurze Szenen aus Pause, Training und Chat vor; das Kind sagt zu jeder die Art und woran es sie erkennt. Danach nennt das Kind, wenn es mag, mündlich einen Konflikt aus Schule, Verein oder Chat (echt oder erfunden, es wird nichts nachgefragt) und bestimmt seine Art.",
+  "sagen": [
+   "Konflikte gehören dazu: Wo Leute zusammen sind, wollen sie nicht immer dasselbe. Ein Lotse fragt deshalb nicht „Wer ist schuld?“, sondern „Worum geht es hier?“",
+   "Ich lese dir eine Szene vor. Ist es eine Sache, eine Regel, ein Missverständnis oder sind es Gefühle? Und woran merkst du es?",
+   "Oft stecken zwei Arten in einem Konflikt. Dann nimmst du die, die am heißesten ist.",
+   "Eine Lösung ist gut, wenn die Waage im Gleichgewicht bleibt – wenn sie für beide Seiten passt."
+  ],
+  "wennEsKippt": "Findet das Kind keine Art, liest die Fachkraft die Szene noch einmal und fragt nur: „Was will jeder der beiden?“ Mag das Kind keinen eigenen Konflikt nennen, bleibt es bei den Szenen vom Blatt oder erfindet einen mit Mia und Ben – eigene Beispiele sind immer freiwillig. Drei Szenen genügen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "wahrnehmen",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "denkmodell"
+  ],
+  "material": [],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Konflikt-Check: Worum geht es – Sache, Regel, Missverständnis oder Gefühle?",
+   "fr": "Check du conflit : de quoi s’agit-il – à partager, règle, malentendu, sentiments ?"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 1,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel wirft die Fachkraft eine kurze Streitszene ein („Zwei wollen denselben Platz im Bus“), und das Kind ruft die Art: Sache, Regel, Missverständnis oder Gefühle.",
+   "fr": "Au milieu du jeu, l’adulte lance une courte scène de dispute (« Deux enfants veulent la même place dans le bus ») et l’enfant annonce le type : à partager, règle, malentendu ou sentiments."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Werkzeug 1: Der Konflikt-Check",
+    "fr": "Pilotes de conflit · Outil 1 : le check du conflit"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Heute neu: Werkzeug 1, Konflikt-Check."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Ein Lotse steuert ein Schiff durch schwieriges Wasser. Er sucht den Weg – nicht den Schuldigen. Genau das lernst du hier bei Konflikten."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Vier Szenen, vier Arten. Verbinde jede Szene mit der Art von Konflikt, die am besten passt.",
+     "symbole": [
+      "verbinden"
+     ]
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Sami und Tom wollen beide in der Pause den letzten Basketball.",
+      "Lea ruft: Das war Aus! Ben sagt: Nein, der Ball war drin!",
+      "Noah schreibt im Chat „na toll“. Amira denkt, er ist sauer. Er meinte es als Spaß.",
+      "Mia hört, wie andere über ihre Sprachnachricht lachen. Sie fühlt sich ausgelacht."
+     ],
+     "rechts": [
+      "Missverständnis – Wer meint was?",
+      "Sache – Wer bekommt was?",
+      "Gefühle – Wer fühlt sich wie?",
+      "Regel – Was ist fair?"
+     ],
+     "titel": [
+      "Die Szene",
+      "Die Art – und die Lotsen-Frage dazu"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Wo stehst du heute? Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "skala",
+     "stufen": 5,
+     "frage": "Wenn es Streit gibt, weiß ich, was ich tun kann …",
+     "von": "gar nicht",
+     "bis": "sehr genau"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Zwei Seiten, zwei Wünsche. Lies die Szene und schreib: Was will jeder?",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "comic",
+     "spalten": 2,
+     "felder": [
+      {
+       "figuren": [
+        "figur:sami:wuetend"
+       ],
+       "requisit": "icon:ball-basketball",
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "Ich war zuerst da!",
+       "untertitel": "Sami"
+      },
+      {
+       "figuren": [
+        "figur:tom:wuetend"
+       ],
+       "requisit": "icon:ball-basketball",
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "Ich hatte ihn schon in der Hand!",
+       "untertitel": "Tom"
+      }
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Sami will …",
+      "Tom will …"
+     ],
+     "linien": 2
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Konflikt-Check – heute"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "2 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "3 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lotsen-Auftrag bis zum nächsten Mal: Achte auf einen Konflikt – in der Klasse, im Chat oder in einer Serie. Welche Art war es?",
+     "symbole": [
+      "zuhoeren"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Sache",
+      "Regel",
+      "Missverständnis",
+      "Gefühle"
+     ],
+     "spalten": 2
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Nouveau aujourd’hui : outil 1, check du conflit."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Un pilote guide un bateau à travers des eaux difficiles. Il cherche le chemin – pas le coupable. C’est exactement ce que tu apprends ici pour les conflits."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quatre scènes, quatre types. Relie chaque scène au type de conflit qui convient le mieux.",
+     "symbole": [
+      "verbinden"
+     ]
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Sami et Tom veulent tous les deux le dernier ballon de basket à la récré.",
+      "Lea crie que la balle était sortie. Ben dit qu’elle était dedans.",
+      "Noah écrit « super, merci… » dans le chat. Amira pense qu’il est fâché. Lui, il plaisantait.",
+      "Mia entend d’autres rire de son message vocal. Elle se sent moquée."
+     ],
+     "rechts": [
+      "Malentendu – Qui veut dire quoi ?",
+      "À partager – Qui a droit à quoi ?",
+      "Sentiments – Qui ressent quoi ?",
+      "Règle – Qu’est-ce qui est juste ?"
+     ],
+     "titel": [
+      "La scène",
+      "Le type – et la question du pilote"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Où en es-tu aujourd’hui ? Coche.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "skala",
+     "stufen": 5,
+     "frage": "Quand il y a une dispute, je sais ce que je peux faire …",
+     "von": "pas du tout",
+     "bis": "très bien"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Deux côtés, deux souhaits. Lis la scène et écris : qu’est-ce que chacun veut ?",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "comic",
+     "spalten": 2,
+     "felder": [
+      {
+       "figuren": [
+        "figur:sami:wuetend"
+       ],
+       "requisit": "icon:ball-basketball",
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "J’étais là le premier !",
+       "untertitel": "Sami"
+      },
+      {
+       "figuren": [
+        "figur:tom:wuetend"
+       ],
+       "requisit": "icon:ball-basketball",
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "Je l’avais déjà dans la main !",
+       "untertitel": "Tom"
+      }
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Sami veut …",
+      "Tom veut …"
+     ],
+     "linien": 2
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Check du conflit – aujourd’hui"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "2 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "3 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mission de pilote jusqu’à la prochaine fois : repère un conflit – en classe, dans un chat ou dans une série. Quel type était-ce ?",
+     "symbole": [
+      "zuhoeren"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "À partager",
+      "Règle",
+      "Malentendu",
+      "Sentiments"
+     ],
+     "spalten": 2
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die vier Szenen vor, das Kind verbindet jede mit ihrer Art und sagt, woran es sie erkennt; mehrere Arten können passen, es zählt die Begründung. In Aufgabe 2 kreuzt es allein auf der Skala an, wo es heute steht – dieselbe Skala kommt beim sechsten Treffen noch einmal. In Aufgabe 3 schreibt das Kind zu Sami und Tom je ein Stichwort: Was will jeder? Wer mag, nennt danach mündlich einen eigenen oder erfundenen Konflikt und bestimmt seine Art; nichts davon wird aufgeschrieben oder erfragt. Das Werkzeugbild (Aufgabe 4) malt das Kind zum Schluss aus, und der Lotsen-Auftrag (Aufgabe 5) geht mit; das Blatt kommt ins Lotsen-Logbuch.",
+     "sagen": [
+      "Woran hast du die Art erkannt?",
+      "Was will jeder – und was brauchen sie wirklich?"
+     ],
+     "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Waage-Sätze, und die Fachkraft schreibt Stichworte. Aufgabe 3 darf ganz mündlich bleiben oder mit Mia und Ben geschehen."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’adulte lit les quatre scènes, l’enfant relie chacune à son type et dit à quoi il le reconnaît ; plusieurs types peuvent convenir, c’est la justification qui compte. À l’exercice 2, l’enfant coche seul sur l’échelle où il en est aujourd’hui – la même échelle revient à la sixième rencontre. À l’exercice 3, il écrit un mot pour Sami et un pour Tom : qu’est-ce que chacun veut ? Si l’enfant veut, il cite ensuite à l’oral un conflit à lui ou inventé et en détermine le type ; rien n’est écrit ni demandé. Il colorie l’image de l’outil (exercice 4) à la fin, et la mission de pilote (exercice 5) l’accompagne ; la fiche va dans le carnet de bord.",
+     "sagen": [
+      "À quoi tu as reconnu le type ?",
+      "Qu’est-ce que chacun veut – et de quoi ils ont vraiment besoin ?"
+     ],
+     "wennEsKippt": "Si écrire est pénible, l’enfant dit les phrases de la balance et l’adulte note quelques mots. L’exercice 3 peut rester entièrement oral ou se faire avec Mia et Ben."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 2,
+   "schreiben": 2,
+   "bild": 1
+  },
+  "fr": {
+   "titel": "Les conflits, ça arrive : le check du conflit",
+   "text": "L’adulte présente sur la fiche la balance du pilote : un pilote guide un bateau à travers des eaux difficiles sans prendre parti – et une solution est bonne quand la balance reste en équilibre, c’est-à-dire quand elle convient aux deux côtés. Aujourd’hui s’ajoute le premier outil, le check du conflit : de quoi s’agit-il vraiment – de quelque chose à partager, d’une règle, d’un malentendu ou de sentiments ? L’adulte lit quatre courtes scènes de la récré, de l’entraînement et du chat ; pour chacune, l’enfant dit le type de conflit et à quoi il le reconnaît. Ensuite, s’il le souhaite, l’enfant cite à l’oral un conflit de l’école, du club ou d’un chat (vrai ou inventé, on ne pose pas de questions) et en détermine le type.",
+   "sagen": [
+    "Les conflits, ça arrive : quand des gens sont ensemble, ils ne veulent pas toujours la même chose. Un pilote ne demande donc pas : qui est coupable ? Il demande : de quoi s’agit-il ?",
+    "Je te lis une scène. C’est quelque chose à partager, une règle, un malentendu ou des sentiments ? Et à quoi tu le vois ?",
+    "Souvent, il y a deux types dans un conflit. Alors tu prends celui qui est le plus chaud.",
+    "Une solution est bonne quand la balance reste en équilibre – quand elle convient aux deux côtés."
+   ],
+   "wennEsKippt": "Si l’enfant ne trouve pas de type, l’adulte relit la scène et demande seulement : « Qu’est-ce que chacun veut ? » Si l’enfant ne veut pas citer de conflit personnel, il reste avec les scènes de la fiche ou en invente un avec Mia et Ben – les exemples personnels sont toujours libres. Trois scènes suffisent."
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s1-b",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Konflikte gehören dazu: der Konflikt-Check",
+  "text": "Die Fachkraft zeigt auf dem Blatt die Lotsen-Waage: Ein Lotse steuert ein Schiff durch schwieriges Wasser, ohne Partei zu ergreifen – und eine Lösung ist gut, wenn die Waage im Gleichgewicht bleibt, also für beide Seiten passt. Heute kommt das erste Werkzeug dazu, der Konflikt-Check: Worum geht es hier eigentlich – um eine Sache, eine Regel, ein Missverständnis oder um Gefühle? Die Fachkraft liest vier kurze Szenen aus Pause, Training und Chat vor; das Kind sagt zu jeder die Art und woran es sie erkennt. Danach nennt das Kind, wenn es mag, mündlich einen Konflikt aus Schule, Verein oder Chat (echt oder erfunden, es wird nichts nachgefragt) und bestimmt seine Art.",
+  "sagen": [
+   "Konflikte gehören dazu: Wo Leute zusammen sind, wollen sie nicht immer dasselbe. Ein Lotse fragt deshalb nicht „Wer ist schuld?“, sondern „Worum geht es hier?“",
+   "Ich lese dir eine Szene vor. Ist es eine Sache, eine Regel, ein Missverständnis oder sind es Gefühle? Und woran merkst du es?",
+   "Oft stecken zwei Arten in einem Konflikt. Dann nimmst du die, die am heißesten ist.",
+   "Eine Lösung ist gut, wenn die Waage im Gleichgewicht bleibt – wenn sie für beide Seiten passt."
+  ],
+  "wennEsKippt": "Findet das Kind keine Art, liest die Fachkraft die Szene noch einmal und fragt nur: „Was will jeder der beiden?“ Mag das Kind keinen eigenen Konflikt nennen, bleibt es bei den Szenen vom Blatt oder erfindet einen mit Mia und Ben – eigene Beispiele sind immer freiwillig. Drei Szenen genügen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "wahrnehmen",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "denkmodell"
+  ],
+  "material": [],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Konflikt-Check: Worum geht es – Sache, Regel, Missverständnis oder Gefühle?",
+   "fr": "Check du conflit : de quoi s’agit-il – à partager, règle, malentendu, sentiments ?"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 1,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel wirft die Fachkraft eine kurze Streitszene ein („Zwei wollen denselben Platz im Bus“), und das Kind ruft die Art: Sache, Regel, Missverständnis oder Gefühle.",
+   "fr": "Au milieu du jeu, l’adulte lance une courte scène de dispute (« Deux enfants veulent la même place dans le bus ») et l’enfant annonce le type : à partager, règle, malentendu ou sentiments."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Werkzeug 1: Der Konflikt-Check",
+    "fr": "Pilotes de conflit · Outil 1 : le check du conflit"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Heute neu: Werkzeug 1, Konflikt-Check."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Ein Lotse steuert ein Schiff durch schwieriges Wasser. Er sucht den Weg – nicht den Schuldigen. Genau das lernst du hier bei Konflikten."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Schau dir die vier Bilder an. Welche Art Konflikt ist es? Setz in jeder Zeile ein Kreuz.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "spalten": 4,
+     "modus": "nur",
+     "bilder": [
+      {
+       "bild": "figur:sami:wuetend:stopp",
+       "text": "1 Der letzte Ball"
+      },
+      {
+       "bild": "figur:lea:wuetend:zeigen",
+       "text": "2 War der Ball Aus?"
+      },
+      {
+       "bild": "figur:amira:besorgt",
+       "text": "3 Chat: „na toll“"
+      },
+      {
+       "bild": "figur:mia:traurig:haende-gesicht",
+       "text": "4 Ausgelacht"
+      }
+     ]
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Bild",
+      "Sache",
+      "Regel",
+      "Missverständnis",
+      "Gefühle"
+     ],
+     "zeilen": 4,
+     "nummern": 1,
+     "breiten": [
+      0.7,
+      1,
+      1,
+      1.8,
+      1.2
+     ]
+    },
+    {
+     "art": "text",
+     "klein": true,
+     "text": "Sache: Wer bekommt was? · Regel: Was ist fair? · Missverständnis: Wer meint was? · Gefühle: Wer fühlt sich wie?"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Wo stehst du heute? Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "skala",
+     "stufen": 5,
+     "frage": "Wenn es Streit gibt, weiß ich, was ich tun kann …",
+     "von": "gar nicht",
+     "bis": "sehr genau"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Zwei Seiten, zwei Wünsche. Was will jeder? Schreib ein Stichwort dazu.",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "comic",
+     "spalten": 2,
+     "felder": [
+      {
+       "figuren": [
+        "figur:sami:wuetend"
+       ],
+       "requisit": "icon:ball-basketball",
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "Ich war zuerst da!",
+       "untertitel": "Sami"
+      },
+      {
+       "figuren": [
+        "figur:tom:wuetend"
+       ],
+       "requisit": "icon:ball-basketball",
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "Ich hatte ihn schon in der Hand!",
+       "untertitel": "Tom"
+      }
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Sami will …",
+      "Tom will …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Konflikt-Check – heute"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "2 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "3 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lotsen-Auftrag bis zum nächsten Mal: Achte auf einen Konflikt – in der Klasse, im Chat oder in einer Serie. Welche Art war es?",
+     "symbole": [
+      "zuhoeren"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Sache",
+      "Regel",
+      "Missverständnis",
+      "Gefühle"
+     ],
+     "spalten": 2
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Nouveau aujourd’hui : outil 1, check du conflit."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Un pilote guide un bateau à travers des eaux difficiles. Il cherche le chemin – pas le coupable. C’est exactement ce que tu apprends ici pour les conflits."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Regarde les quatre images. Quel type de conflit est-ce ? Mets une croix dans chaque ligne.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "spalten": 4,
+     "modus": "nur",
+     "bilder": [
+      {
+       "bild": "figur:sami:wuetend:stopp",
+       "text": "1 Le dernier ballon"
+      },
+      {
+       "bild": "figur:lea:wuetend:zeigen",
+       "text": "2 La balle était-elle sortie ?"
+      },
+      {
+       "bild": "figur:amira:besorgt",
+       "text": "3 Chat : « super, merci »"
+      },
+      {
+       "bild": "figur:mia:traurig:haende-gesicht",
+       "text": "4 Moquée"
+      }
+     ]
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Image",
+      "À partager",
+      "Règle",
+      "Malentendu",
+      "Sentiments"
+     ],
+     "zeilen": 4,
+     "nummern": 1,
+     "breiten": [
+      0.7,
+      1,
+      1,
+      1.8,
+      1.2
+     ]
+    },
+    {
+     "art": "text",
+     "klein": true,
+     "text": "À partager : qui a droit à quoi ? · Règle : qu’est-ce qui est juste ? · Malentendu : qui veut dire quoi ? · Sentiments : qui ressent quoi ?"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Où en es-tu aujourd’hui ? Coche.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "skala",
+     "stufen": 5,
+     "frage": "Quand il y a une dispute, je sais ce que je peux faire …",
+     "von": "pas du tout",
+     "bis": "très bien"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Deux côtés, deux souhaits. Qu’est-ce que chacun veut ? Écris un mot.",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "comic",
+     "spalten": 2,
+     "felder": [
+      {
+       "figuren": [
+        "figur:sami:wuetend"
+       ],
+       "requisit": "icon:ball-basketball",
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "J’étais là le premier !",
+       "untertitel": "Sami"
+      },
+      {
+       "figuren": [
+        "figur:tom:wuetend"
+       ],
+       "requisit": "icon:ball-basketball",
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "Je l’avais déjà dans la main !",
+       "untertitel": "Tom"
+      }
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Sami veut …",
+      "Tom veut …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Check du conflit – aujourd’hui"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "2 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "3 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mission de pilote jusqu’à la prochaine fois : repère un conflit – en classe, dans un chat ou dans une série. Quel type était-ce ?",
+     "symbole": [
+      "zuhoeren"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "À partager",
+      "Règle",
+      "Malentendu",
+      "Sentiments"
+     ],
+     "spalten": 2
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind schaut die vier Bilder an und setzt in jeder Zeile ein Kreuz; die Fachkraft liest die Bildunterschriften vor und fragt, woran es die Art erkennt – ein Stichwort genügt. In Aufgabe 2 kreuzt es allein auf der Skala an, wo es heute steht – dieselbe Skala kommt beim sechsten Treffen noch einmal. In Aufgabe 3 schreibt das Kind ein Stichwort für Sami und eines für Tom (oder sagt es, und die Fachkraft schreibt). Wer mag, nennt danach mündlich einen eigenen oder erfundenen Konflikt und bestimmt seine Art; nichts davon wird aufgeschrieben oder erfragt. Das Werkzeugbild (Aufgabe 4) malt das Kind zum Schluss aus, und den Lotsen-Auftrag (Aufgabe 5) kreuzt es später an; das Blatt kommt ins Lotsen-Logbuch.",
+     "sagen": [
+      "Woran erkennst du die Art?",
+      "Wo ist der Konflikt am heißesten?"
+     ],
+     "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alles vor, und das Kind zeigt auf Bild oder Wort. Verwirren die vier Arten, genügen zwei (Sache und Gefühle). Aufgabe 3 darf auch ohne eigenen Konflikt mit Mia und Ben geschehen."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant regarde les quatre images et met une croix dans chaque ligne ; l’adulte lit les légendes et demande à quoi il reconnaît le type – un mot suffit. À l’exercice 2, l’enfant coche seul sur l’échelle où il en est aujourd’hui – la même échelle revient à la sixième rencontre. À l’exercice 3, il écrit un mot pour Sami et un pour Tom (ou le dit, et l’adulte écrit). Si l’enfant veut, il cite ensuite à l’oral un conflit à lui ou inventé et en détermine le type ; rien n’est écrit ni demandé. Il colorie l’image de l’outil (exercice 4) à la fin et coche la mission de pilote (exercice 5) plus tard ; la fiche va dans le carnet de bord.",
+     "sagen": [
+      "À quoi tu reconnais le type ?",
+      "Où est-ce que le conflit est le plus chaud ?"
+     ],
+     "wennEsKippt": "Si lire est difficile, l’adulte lit tout et l’enfant montre l’image ou le mot. Si les quatre types embrouillent, deux suffisent (à partager et sentiments). L’exercice 3 peut aussi se faire sans conflit personnel, avec Mia et Ben."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 1,
+   "schreiben": 0,
+   "bild": 2
+  },
+  "fr": {
+   "titel": "Les conflits, ça arrive : le check du conflit",
+   "text": "L’adulte présente sur la fiche la balance du pilote : un pilote guide un bateau à travers des eaux difficiles sans prendre parti – et une solution est bonne quand la balance reste en équilibre, c’est-à-dire quand elle convient aux deux côtés. Aujourd’hui s’ajoute le premier outil, le check du conflit : de quoi s’agit-il vraiment – de quelque chose à partager, d’une règle, d’un malentendu ou de sentiments ? L’adulte lit quatre courtes scènes de la récré, de l’entraînement et du chat ; pour chacune, l’enfant dit le type de conflit et à quoi il le reconnaît. Ensuite, s’il le souhaite, l’enfant cite à l’oral un conflit de l’école, du club ou d’un chat (vrai ou inventé, on ne pose pas de questions) et en détermine le type.",
+   "sagen": [
+    "Les conflits, ça arrive : quand des gens sont ensemble, ils ne veulent pas toujours la même chose. Un pilote ne demande donc pas : qui est coupable ? Il demande : de quoi s’agit-il ?",
+    "Je te lis une scène. C’est quelque chose à partager, une règle, un malentendu ou des sentiments ? Et à quoi tu le vois ?",
+    "Souvent, il y a deux types dans un conflit. Alors tu prends celui qui est le plus chaud.",
+    "Une solution est bonne quand la balance reste en équilibre – quand elle convient aux deux côtés."
+   ],
+   "wennEsKippt": "Si l’enfant ne trouve pas de type, l’adulte relit la scène et demande seulement : « Qu’est-ce que chacun veut ? » Si l’enfant ne veut pas citer de conflit personnel, il reste avec les scènes de la fiche ou en invente un avec Mia et Ben – les exemples personnels sont toujours libres. Trois scènes suffisent."
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s2-a",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Beide Seiten sehen: der Seitenwechsel",
+  "text": "Das Kind kennt schon den Konflikt-Check und sagt kurz, ob ihm in der Zwischenzeit ein Konflikt aufgefallen ist („nichts entdeckt“ gilt auch). Heute kommt der Seitenwechsel dazu: Die Fachkraft spielt mit dem Kind eine kleine Streitszene (zwei Kinder und ein Plakat für die Klasse). Dann tauschen beide die Stühle und sprechen aus der Rolle der anderen Seite: Was ist passiert? Was denke ich? Wie fühle ich mich? Was brauche ich wirklich? Zum Schluss zeigt die Fachkraft, dass beide Wünsche auf der Waage Platz haben, und hält fest, dass Verstehen nicht heißt, einverstanden zu sein.",
+  "sagen": [
+   "Verstehen heißt nicht, einverstanden zu sein. Ein Lotse schaut erst auf beide Seiten, bevor er seinen Kurs wählt.",
+   "Jetzt tauschen wir die Plätze. Du bist Ben. Was ist aus seiner Sicht passiert? Was denkt er, was fühlt er, was braucht er?",
+   "Beide haben einen Grund. Hinter dem Ärger steckt oft ein Wunsch – bei Amira: gesehen und gefragt werden, bei Ben: dass das Plakat gut aussieht.",
+   "Haben beide Wünsche auf der Waage Platz? Dann suchen wir eine Lösung, die beide hält."
+  ],
+  "wennEsKippt": "Fällt dem Kind die andere Seite schwer, spielt die Fachkraft die Rolle vor und lässt das Kind nur eine Frage beantworten (Was braucht er?). Sperrt sich das Kind gegen eine Seite, gilt: Verstehen heißt nicht zustimmen – es genügt ein Wunsch, den es für die andere Seite findet. Der Stuhltausch geht auch am Tisch mit zwei Stiften als Figuren.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [
+   "stuhl"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Seitenwechsel: Was denkt, fühlt und braucht die andere Seite?",
+   "fr": "Changer de côté : qu’est-ce que l’autre pense, ressent, et de quoi a-t-il besoin ?"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 2,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel stoppt die Fachkraft kurz und sagt: „Seitenwechsel!“ Das Kind sagt in einem Satz, was die Gegenseite gerade denkt oder braucht, und spielt dann weiter.",
+   "fr": "Au milieu du jeu, l’adulte arrête un instant et dit : « Changement de côté ! » L’enfant dit en une phrase ce que le côté adverse pense ou veut, puis le jeu continue."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Werkzeug 2: Der Seitenwechsel",
+    "fr": "Pilotes de conflit · Outil 2 : changer de côté"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Schon im Kasten: Konflikt-Check",
+        "Heute neu: Werkzeug 2, Seitenwechsel."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Du weißt jetzt, worum es in einem Konflikt geht. Heute lernst du, auf die andere Seite zu schauen – ohne ihr zuzustimmen."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lies die Geschichte. Beide haben ihre Gründe.",
+     "symbole": [
+      "lesen"
+     ]
+    },
+    {
+     "art": "geschichte",
+     "titel": "Das Plakat",
+     "bild": "figur:amira:enttaeuscht",
+     "text": "Amira und Ben gestalten zusammen ein Plakat für die Klasse. Am Montag klebt Amira ihre Fotos auf. Am Mittwoch hat Ben sie abgenommen und seine eigenen daraufgeklebt. Amira sagt: ‚Das war meine Idee!‘ Ben sagt: ‚Deine Fotos waren zu klein, man hat nichts gesehen!‘ Beide sind sauer."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Seitenwechsel: Was denkt jeder? Schreib in die Denkblasen.",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "comic",
+     "spalten": 2,
+     "felder": [
+      {
+       "figuren": [
+        "figur:amira:enttaeuscht"
+       ],
+       "blase": "denken",
+       "untertitel": "Amira"
+      },
+      {
+       "figuren": [
+        "figur:ben:wuetend"
+       ],
+       "blase": "denken",
+       "untertitel": "Ben"
+      }
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "tipp",
+     "titel": "Der Seitenwechsel in vier Fragen",
+     "text": "Verstehen heißt nicht, einverstanden zu sein.",
+     "punkte": [
+      "Was ist passiert – aus seiner Sicht?",
+      "Was denkt sie oder er?",
+      "Wie fühlt sie oder er sich?",
+      "Was braucht sie oder er wirklich?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Hinter dem Ärger steckt ein Wunsch. Verbinde.",
+     "symbole": [
+      "verbinden"
+     ]
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Amira: ‚Das war meine Idee!‘",
+      "Ben: ‚Man hat nichts gesehen!‘",
+      "Beide zusammen"
+     ],
+     "rechts": [
+      "Beide wollen ein gutes Plakat für die Klasse.",
+      "Sie möchte gefragt und gesehen werden.",
+      "Er möchte, dass man alles gut erkennt."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Konflikt-Check"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Seitenwechsel – heute"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "3 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lotsen-Auftrag bis zum nächsten Mal: Wenn dich etwas ärgert, frag dich einmal: Was denkt und braucht die andere Seite?",
+     "symbole": [
+      "nachdenken"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Die andere Seite brauchte vielleicht: …"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Déjà dans la boîte : Check du conflit",
+        "Nouveau aujourd’hui : outil 2, changer de côté."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Tu sais maintenant de quoi il s’agit dans un conflit. Aujourd’hui, tu apprends à regarder l’autre côté – sans lui donner raison."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lis l’histoire. Chacun a ses raisons.",
+     "symbole": [
+      "lesen"
+     ]
+    },
+    {
+     "art": "geschichte",
+     "titel": "L’affiche",
+     "bild": "figur:amira:enttaeuscht",
+     "text": "Amira et Ben font ensemble une affiche pour la classe. Le lundi, Amira colle ses photos. Le mercredi, Ben les a enlevées et a collé les siennes à la place. Amira dit : « C’était mon idée ! » Ben dit : « Tes photos étaient trop petites, on ne voyait rien ! » Tous les deux sont fâchés."
+    },
+    {
+     "art": "aufgabe",
+     "text": "Changer de côté : qu’est-ce que chacun pense ? Écris dans les bulles.",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "comic",
+     "spalten": 2,
+     "felder": [
+      {
+       "figuren": [
+        "figur:amira:enttaeuscht"
+       ],
+       "blase": "denken",
+       "untertitel": "Amira"
+      },
+      {
+       "figuren": [
+        "figur:ben:wuetend"
+       ],
+       "blase": "denken",
+       "untertitel": "Ben"
+      }
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "tipp",
+     "titel": "Changer de côté en quatre questions",
+     "text": "Comprendre ne veut pas dire être d’accord.",
+     "punkte": [
+      "Qu’est-ce qui s’est passé – de son point de vue ?",
+      "Qu’est-ce qu’elle ou il pense ?",
+      "Comment elle ou il se sent ?",
+      "De quoi elle ou il a vraiment besoin ?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Derrière la colère, il y a un souhait. Relie.",
+     "symbole": [
+      "verbinden"
+     ]
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Amira : « C’était mon idée ! »",
+      "Ben : « On ne voyait rien ! »",
+      "Tous les deux"
+     ],
+     "rechts": [
+      "Tous les deux veulent une bonne affiche pour la classe.",
+      "Elle veut qu’on lui demande son avis et qu’on la voie.",
+      "Il veut qu’on distingue bien tout."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Check du conflit"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Changer de côté – aujourd’hui"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "3 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mission de pilote jusqu’à la prochaine fois : quand quelque chose t’énerve, demande-toi une fois : qu’est-ce que l’autre côté pense et de quoi a-t-il besoin ?",
+     "symbole": [
+      "nachdenken"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "L’autre côté avait peut-être besoin de : …"
+     ],
+     "linien": 1
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind liest die Geschichte vom Plakat. In Aufgabe 2 spielen Fachkraft und Kind die Szene, tauschen die Stühle, und das Kind schreibt in die Denkblasen, was Amira und Ben denken. Die vier Fragen im Kasten sind das Werkzeug; Aufgabe 3 verbindet Ärger und Wunsch. Wer mag, probiert den Seitenwechsel danach mündlich an einem Konflikt, den das Kind kennt (oder einem erfundenen) – nichts davon muss aufgeschrieben werden. Das Werkzeugbild (Aufgabe 4) malt das Kind zum Schluss aus, den Lotsen-Auftrag (Aufgabe 5) nimmt es mit.",
+     "sagen": [
+      "Was denkt Ben – und was braucht er?",
+      "Welcher Wunsch steckt hinter dem Ärger?"
+     ],
+     "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Gedanken, und die Fachkraft schreibt Stichworte. Eine Denkblase darf auch ein einziges Wort enthalten; Aufgabe 4 geht mündlich."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant lit l’histoire de l’affiche. À l’exercice 2, l’adulte et l’enfant jouent la scène, échangent les chaises, et l’enfant écrit dans les bulles ce qu’Amira et Ben pensent. Les quatre questions dans l’encadré sont l’outil ; l’exercice 3 relie la colère et le souhait. Si l’enfant veut, il essaie ensuite « changer de côté » à l’oral sur un conflit qu’il connaît (ou inventé) – rien n’a besoin d’être écrit. Il colorie l’image de l’outil (exercice 4) à la fin et emporte la mission de pilote (exercice 5).",
+     "sagen": [
+      "Qu’est-ce que Ben pense – et de quoi il a besoin ?",
+      "Quel souhait se cache derrière la colère ?"
+     ],
+     "wennEsKippt": "Si écrire est pénible, l’enfant dit les pensées et l’adulte note quelques mots. Une bulle peut ne contenir qu’un mot ; l’exercice 4 se fait à l’oral."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 2,
+   "schreiben": 2,
+   "bild": 1
+  },
+  "fr": {
+   "titel": "Voir les deux côtés : changer de côté",
+   "text": "L’enfant connaît déjà le check du conflit et dit brièvement s’il a remarqué un conflit entre-temps (« rien remarqué » est aussi une réponse). Aujourd’hui s’ajoute l’outil « changer de côté » : l’adulte joue avec l’enfant une petite scène de dispute (deux enfants et une affiche pour la classe). Puis tous deux échangent leurs chaises et parlent depuis le rôle de l’autre côté : qu’est-ce qui s’est passé ? Qu’est-ce que je pense ? Comment je me sens ? De quoi j’ai vraiment besoin ? Pour finir, l’adulte montre que les deux souhaits ont leur place sur la balance et rappelle que comprendre ne veut pas dire être d’accord.",
+   "sagen": [
+    "Comprendre ne veut pas dire être d’accord. Un pilote regarde d’abord les deux côtés avant de choisir sa route.",
+    "Maintenant, on change de place. Tu es Ben. Qu’est-ce qui s’est passé de son point de vue ? Qu’est-ce qu’il pense, qu’est-ce qu’il ressent, de quoi il a besoin ?",
+    "Chacun a une raison. Derrière la colère, il y a souvent un souhait – chez Amira : qu’on lui demande son avis et qu’on la voie, chez Ben : que l’affiche soit bien.",
+    "Les deux souhaits ont leur place sur la balance ? Alors on cherche une solution qui les porte tous les deux."
+   ],
+   "wennEsKippt": "Si l’autre côté est difficile pour l’enfant, l’adulte montre le rôle et ne lui laisse répondre qu’à une seule question (De quoi il a besoin ?). Si l’enfant résiste à un côté : comprendre n’est pas approuver – il suffit de trouver un souhait pour l’autre côté. L’échange de chaises peut aussi se faire à la table, avec deux stylos comme figurines."
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s2-b",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Beide Seiten sehen: der Seitenwechsel",
+  "text": "Das Kind kennt schon den Konflikt-Check und sagt kurz, ob ihm in der Zwischenzeit ein Konflikt aufgefallen ist („nichts entdeckt“ gilt auch). Heute kommt der Seitenwechsel dazu: Die Fachkraft spielt mit dem Kind eine kleine Streitszene (zwei Kinder und ein Plakat für die Klasse). Dann tauschen beide die Stühle und sprechen aus der Rolle der anderen Seite: Was ist passiert? Was denke ich? Wie fühle ich mich? Was brauche ich wirklich? Zum Schluss zeigt die Fachkraft, dass beide Wünsche auf der Waage Platz haben, und hält fest, dass Verstehen nicht heißt, einverstanden zu sein.",
+  "sagen": [
+   "Verstehen heißt nicht, einverstanden zu sein. Ein Lotse schaut erst auf beide Seiten, bevor er seinen Kurs wählt.",
+   "Jetzt tauschen wir die Plätze. Du bist Ben. Was ist aus seiner Sicht passiert? Was denkt er, was fühlt er, was braucht er?",
+   "Beide haben einen Grund. Hinter dem Ärger steckt oft ein Wunsch – bei Amira: gesehen und gefragt werden, bei Ben: dass das Plakat gut aussieht.",
+   "Haben beide Wünsche auf der Waage Platz? Dann suchen wir eine Lösung, die beide hält."
+  ],
+  "wennEsKippt": "Fällt dem Kind die andere Seite schwer, spielt die Fachkraft die Rolle vor und lässt das Kind nur eine Frage beantworten (Was braucht er?). Sperrt sich das Kind gegen eine Seite, gilt: Verstehen heißt nicht zustimmen – es genügt ein Wunsch, den es für die andere Seite findet. Der Stuhltausch geht auch am Tisch mit zwei Stiften als Figuren.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [
+   "stuhl"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Seitenwechsel: Was denkt, fühlt und braucht die andere Seite?",
+   "fr": "Changer de côté : qu’est-ce que l’autre pense, ressent, et de quoi a-t-il besoin ?"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 2,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel stoppt die Fachkraft kurz und sagt: „Seitenwechsel!“ Das Kind sagt in einem Satz, was die Gegenseite gerade denkt oder braucht, und spielt dann weiter.",
+   "fr": "Au milieu du jeu, l’adulte arrête un instant et dit : « Changement de côté ! » L’enfant dit en une phrase ce que le côté adverse pense ou veut, puis le jeu continue."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Werkzeug 2: Der Seitenwechsel",
+    "fr": "Pilotes de conflit · Outil 2 : changer de côté"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Schon im Kasten: Konflikt-Check",
+        "Heute neu: Werkzeug 2, Seitenwechsel."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Du weißt jetzt, worum es in einem Konflikt geht. Heute lernst du, auf die andere Seite zu schauen – ohne ihr zuzustimmen."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Schau dir die Geschichte an: Amira und Ben gestalten ein Plakat.",
+     "symbole": [
+      "lesen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "spalten": 4,
+     "modus": "nur",
+     "bilder": [
+      {
+       "bild": "figur:amira:froh:zeigen",
+       "text": "Montag: Amira klebt ihre Fotos auf."
+      },
+      {
+       "bild": "figur:ben:neutral:geben",
+       "text": "Mittwoch: Ben klebt seine darüber."
+      },
+      {
+       "bild": "figur:amira:wuetend:verschraenkt",
+       "text": "Amira: Das war meine Idee!"
+      },
+      {
+       "bild": "figur:ben:wuetend:verschraenkt",
+       "text": "Ben: Deine waren zu klein!"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Seitenwechsel: Wie fühlt sich jeder? Kreis je ein Gesicht ein.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Amira",
+     "klein": true
+    },
+    {
+     "art": "gefuehle",
+     "gefuehle": [
+      "traurig",
+      "wuetend",
+      "enttaeuscht",
+      "verlegen",
+      "besorgt",
+      "froh"
+     ],
+     "modus": "einkreisen",
+     "spalten": 6
+    },
+    {
+     "art": "text",
+     "text": "Ben",
+     "klein": true
+    },
+    {
+     "art": "gefuehle",
+     "gefuehle": [
+      "traurig",
+      "wuetend",
+      "enttaeuscht",
+      "verlegen",
+      "besorgt",
+      "froh"
+     ],
+     "modus": "einkreisen",
+     "spalten": 6
+    },
+    {
+     "art": "info",
+     "symbol": "tipp",
+     "titel": "Der Seitenwechsel in vier Fragen",
+     "text": "Verstehen heißt nicht, einverstanden zu sein.",
+     "punkte": [
+      "Was ist passiert – aus seiner Sicht?",
+      "Was denkt sie oder er?",
+      "Wie fühlt sie oder er sich?",
+      "Was braucht sie oder er wirklich?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Hinter dem Ärger steckt ein Wunsch. Verbinde.",
+     "symbole": [
+      "verbinden"
+     ]
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Amira",
+      "Ben",
+      "Beide zusammen"
+     ],
+     "rechts": [
+      "ein gutes Plakat",
+      "gefragt werden",
+      "gut erkennbare Fotos"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Konflikt-Check"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Seitenwechsel – heute"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "3 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lotsen-Auftrag bis zum nächsten Mal: Wenn dich etwas ärgert, frag dich einmal: Was denkt und braucht die andere Seite?",
+     "symbole": [
+      "nachdenken"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Ich habe mich einmal in die andere Seite hineingedacht.",
+      "Ich habe gefragt: Wie war das für dich?",
+      "Ich habe es noch nicht probiert."
+     ],
+     "spalten": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Déjà dans la boîte : Check du conflit",
+        "Nouveau aujourd’hui : outil 2, changer de côté."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Tu sais maintenant de quoi il s’agit dans un conflit. Aujourd’hui, tu apprends à regarder l’autre côté – sans lui donner raison."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Regarde l’histoire : Amira et Ben font une affiche.",
+     "symbole": [
+      "lesen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "spalten": 4,
+     "modus": "nur",
+     "bilder": [
+      {
+       "bild": "figur:amira:froh:zeigen",
+       "text": "Lundi : Amira colle ses photos."
+      },
+      {
+       "bild": "figur:ben:neutral:geben",
+       "text": "Mercredi : Ben colle les siennes par-dessus."
+      },
+      {
+       "bild": "figur:amira:wuetend:verschraenkt",
+       "text": "Amira : C’était mon idée !"
+      },
+      {
+       "bild": "figur:ben:wuetend:verschraenkt",
+       "text": "Ben : Les tiennes étaient trop petites !"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Changer de côté : comment chacun se sent-il ? Entoure un visage pour chacun.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Amira",
+     "klein": true
+    },
+    {
+     "art": "gefuehle",
+     "gefuehle": [
+      "traurig",
+      "wuetend",
+      "enttaeuscht",
+      "verlegen",
+      "besorgt",
+      "froh"
+     ],
+     "modus": "einkreisen",
+     "spalten": 6,
+     "woerter": [
+      "triste",
+      "en colère",
+      "déçu",
+      "gêné",
+      "inquiet",
+      "content"
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Ben",
+     "klein": true
+    },
+    {
+     "art": "gefuehle",
+     "gefuehle": [
+      "traurig",
+      "wuetend",
+      "enttaeuscht",
+      "verlegen",
+      "besorgt",
+      "froh"
+     ],
+     "modus": "einkreisen",
+     "spalten": 6,
+     "woerter": [
+      "triste",
+      "en colère",
+      "déçu",
+      "gêné",
+      "inquiet",
+      "content"
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "tipp",
+     "titel": "Changer de côté en quatre questions",
+     "text": "Comprendre ne veut pas dire être d’accord.",
+     "punkte": [
+      "Qu’est-ce qui s’est passé – de son point de vue ?",
+      "Qu’est-ce qu’elle ou il pense ?",
+      "Comment elle ou il se sent ?",
+      "De quoi elle ou il a vraiment besoin ?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Derrière la colère, il y a un souhait. Relie.",
+     "symbole": [
+      "verbinden"
+     ]
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Amira",
+      "Ben",
+      "Tous les deux"
+     ],
+     "rechts": [
+      "une bonne affiche",
+      "qu’on lui demande",
+      "des photos bien visibles"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Check du conflit"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Changer de côté – aujourd’hui"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "3 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mission de pilote jusqu’à la prochaine fois : quand quelque chose t’énerve, demande-toi une fois : qu’est-ce que l’autre côté pense et de quoi a-t-il besoin ?",
+     "symbole": [
+      "nachdenken"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Je me suis mis une fois à la place de l’autre côté.",
+      "J’ai demandé : Comment c’était pour toi ?",
+      "Je n’ai pas encore essayé."
+     ],
+     "spalten": 1
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind schaut die vier Bilder an, die Fachkraft liest die Bildunterschriften vor; dann spielen beide die Szene und tauschen die Stühle. In Aufgabe 2 kreist das Kind für Amira und für Ben je ein Gesicht ein und sagt, woran es das sieht. Die vier Fragen im Kasten sind das Werkzeug; Aufgabe 3 verbindet Ärger und Wunsch. Wer mag, probiert den Seitenwechsel danach mündlich an einem Konflikt, den das Kind kennt (oder einem erfundenen). Das Werkzeugbild (Aufgabe 4) malt das Kind zum Schluss aus, den Lotsen-Auftrag (Aufgabe 5) kreuzt es später an.",
+     "sagen": [
+      "Wie fühlt sich Ben – und warum?",
+      "Was wünscht sich jeder von beiden?"
+     ],
+     "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alles vor, und das Kind zeigt auf Bild und Gesicht. Verwirren zwei Gesichts-Reihen, genügt eine. Aufgabe 4 darf ohne eigenen Konflikt bleiben."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant regarde les quatre images, l’adulte lit les légendes ; puis ils jouent la scène et échangent les chaises. À l’exercice 2, l’enfant entoure un visage pour Amira et un pour Ben et dit à quoi il le voit. Les quatre questions dans l’encadré sont l’outil ; l’exercice 3 relie la colère et le souhait. Si l’enfant veut, il essaie ensuite « changer de côté » à l’oral sur un conflit qu’il connaît (ou inventé). Il colorie l’image de l’outil (exercice 4) à la fin et coche la mission de pilote (exercice 5) plus tard.",
+     "sagen": [
+      "Comment Ben se sent – et pourquoi ?",
+      "Qu’est-ce que chacun souhaite ?"
+     ],
+     "wennEsKippt": "Si lire est difficile, l’adulte lit tout et l’enfant montre l’image et le visage. Si deux rangées de visages embrouillent, une suffit. L’exercice 4 peut rester sans conflit personnel."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 1,
+   "schreiben": 0,
+   "bild": 2
+  },
+  "fr": {
+   "titel": "Voir les deux côtés : changer de côté",
+   "text": "L’enfant connaît déjà le check du conflit et dit brièvement s’il a remarqué un conflit entre-temps (« rien remarqué » est aussi une réponse). Aujourd’hui s’ajoute l’outil « changer de côté » : l’adulte joue avec l’enfant une petite scène de dispute (deux enfants et une affiche pour la classe). Puis tous deux échangent leurs chaises et parlent depuis le rôle de l’autre côté : qu’est-ce qui s’est passé ? Qu’est-ce que je pense ? Comment je me sens ? De quoi j’ai vraiment besoin ? Pour finir, l’adulte montre que les deux souhaits ont leur place sur la balance et rappelle que comprendre ne veut pas dire être d’accord.",
+   "sagen": [
+    "Comprendre ne veut pas dire être d’accord. Un pilote regarde d’abord les deux côtés avant de choisir sa route.",
+    "Maintenant, on change de place. Tu es Ben. Qu’est-ce qui s’est passé de son point de vue ? Qu’est-ce qu’il pense, qu’est-ce qu’il ressent, de quoi il a besoin ?",
+    "Chacun a une raison. Derrière la colère, il y a souvent un souhait – chez Amira : qu’on lui demande son avis et qu’on la voie, chez Ben : que l’affiche soit bien.",
+    "Les deux souhaits ont leur place sur la balance ? Alors on cherche une solution qui les porte tous les deux."
+   ],
+   "wennEsKippt": "Si l’autre côté est difficile pour l’enfant, l’adulte montre le rôle et ne lui laisse répondre qu’à une seule question (De quoi il a besoin ?). Si l’enfant résiste à un côté : comprendre n’est pas approuver – il suffit de trouver un souhait pour l’autre côté. L’échange de chaises peut aussi se faire à la table, avec deux stylos comme figurines."
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s3-a",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Ich-Botschaften statt Vorwürfe",
+  "text": "Das Kind erzählt kurz, was es bei der anderen Seite entdeckt hat. Heute kommt das dritte Werkzeug dazu, die Ich-Botschaft: Statt „Du bist so unzuverlässig!“ sagt man, was man sieht, wie es einem damit geht und was man sich wünscht („Wenn du später kommst als abgemacht, ärgere ich mich, weil wir dann ohne dich anfangen. Ich wünsche mir, dass du Bescheid sagst.“). Die Fachkraft spielt erst Vorwürfe aus Pause, Training und Chat; das Kind übersetzt jeden in eine Ich-Botschaft, mit den drei Bausteinen vom Blatt. Dann tauschen sie: Das Kind sagt einen Vorwurf, die Fachkraft übersetzt, und beide sprechen darüber, wie es sich anhört. Zum Schluss prüft das Kind mit einer Faustregel, ob es eine echte Ich-Botschaft ist (kein „Ich finde, du bist …“).",
+  "sagen": [
+   "Vorwürfe fangen mit „Du“ an und klingen wie ein Urteil. Dann macht der andere dicht. Eine Ich-Botschaft sagt, was bei mir ankommt.",
+   "Drei Bausteine: Wenn … – das, was ich sehe oder höre, ohne Urteil. Ich fühle mich … – mein Gefühl. Ich wünsche mir … – was ich brauche.",
+   "Ich sage dir jetzt einen Vorwurf. Mach daraus eine Ich-Botschaft. Und sag mir danach: Wie fühlt sie sich an?",
+   "Vorsicht: „Ich finde, du bist nervig“ ist keine Ich-Botschaft. Es muss um dich gehen – um dein Gefühl und deinen Wunsch."
+  ],
+  "wennEsKippt": "Fällt dem Kind das Gefühlswort schwer, legt die Fachkraft drei zur Wahl hin (ärgerlich, enttäuscht, übergangen). Klingt der Satz steif, darf das Kind ihn in eigenen Worten sagen – die drei Bausteine sind ein Gerüst, kein Text zum Aufsagen. Eigene Beispiele sind freiwillig; Mia, Tom und Noah auf dem Blatt genügen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Ich-Botschaft: Wenn … fühle ich … ich wünsche mir … – statt Vorwurf",
+   "fr": "Message-je : quand … je me sens … j’aimerais … – au lieu d’un reproche"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 3,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel wirft die Fachkraft einen kurzen Vorwurf ein („Du nervst!“), und das Kind antwortet mit einer Ich-Botschaft in einem Satz, bevor es weiterspielt.",
+   "fr": "Au milieu du jeu, l’adulte lance un court reproche (« Tu es pénible ! ») et l’enfant répond par un message-je en une phrase avant de continuer à jouer."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Werkzeug 3: Die Ich-Botschaft",
+    "fr": "Pilotes de conflit · Outil 3 : le message-je"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Schon im Kasten: Konflikt-Check · Seitenwechsel",
+        "Heute neu: Werkzeug 3, Ich-Botschaft."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Du kennst jetzt beide Seiten. Heute lernst du, wie du deine Seite sagst, ohne den anderen anzugreifen."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Vorwurf oder Ich-Botschaft? Verbinde jeden Vorwurf mit der Ich-Botschaft, die dazu passt.",
+     "symbole": [
+      "verbinden"
+     ]
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Du kommst immer zu spät!",
+      "Du hörst mir nie zu!",
+      "Du bist peinlich im Gruppenchat!"
+     ],
+     "rechts": [
+      "Wenn du mein Foto in den Chat stellst, schäme ich mich. Ich möchte, dass du vorher fragst.",
+      "Wenn du später kommst als abgemacht, ärgere ich mich, weil wir ohne dich anfangen. Bitte sag Bescheid.",
+      "Wenn du aufs Handy schaust, während ich erzähle, fühle ich mich nicht wichtig. Ich wünsche mir, dass du kurz zuhörst."
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Die Ich-Botschaft hat drei Teile",
+     "text": "Ein Vorwurf beginnt mit „Du …“ und klingt wie ein Urteil. Eine Ich-Botschaft sagt, was bei dir ankommt:"
+    },
+    {
+     "art": "schritte",
+     "stil": "kette",
+     "linien": 0,
+     "items": [
+      {
+       "titel": "Wenn …",
+       "text": "was ich sehe oder höre, ohne Urteil"
+      },
+      {
+       "titel": "Ich fühle mich …",
+       "text": "mein Gefühl"
+      },
+      {
+       "titel": "Ich wünsche mir …",
+       "text": "was ich brauche"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Jetzt du: Jana stellt ein Foto von Noah in die Klassengruppe, und alle lachen. Wie klingt Noahs Ich-Botschaft?",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Wenn …",
+      "Ich fühle mich …, weil …",
+      "Ich wünsche mir …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und bei dir? Mach aus einem Vorwurf, den du kennst oder hörst, eine Ich-Botschaft. Echt oder erfunden.",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Ein Vorwurf: Du …",
+      "Daraus wird: Wenn …, fühle ich mich …, weil … Ich wünsche mir …"
+     ],
+     "linien": 2
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Konflikt-Check"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Seitenwechsel"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Ich-Botschaft – heute"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lotsen-Auftrag bis zum nächsten Mal: Achte auf Vorwürfe mit „Du …“ – im Chat, in der Pause oder in einer Serie. Schreib einen auf und mach eine Ich-Botschaft daraus.",
+     "symbole": [
+      "zuhoeren"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Vorwurf: Du …",
+      "Ich-Botschaft: Wenn … ich fühle … ich wünsche mir …"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Déjà dans la boîte : Check du conflit · Changer de côté",
+        "Nouveau aujourd’hui : outil 3, message-je."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Tu connais maintenant les deux côtés. Aujourd’hui, tu apprends à dire ton côté sans attaquer l’autre."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Reproche ou message-je ? Relie chaque reproche au message-je qui lui correspond.",
+     "symbole": [
+      "verbinden"
+     ]
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Tu es toujours en retard !",
+      "Tu ne m’écoutes jamais !",
+      "Tu es gênant dans le chat du groupe !"
+     ],
+     "rechts": [
+      "Quand tu mets ma photo dans le chat, j’ai honte. Je voudrais que tu demandes avant.",
+      "Quand tu arrives plus tard que prévu, je m’énerve, parce qu’on commence sans toi. Préviens-moi, s’il te plaît.",
+      "Quand tu regardes ton portable pendant que je raconte, je ne me sens pas important. J’aimerais que tu m’écoutes un moment."
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Le message-je a trois éléments",
+     "text": "Un reproche commence par « Tu … » et sonne comme un jugement. Un message-je dit ce qui t’arrive à toi :"
+    },
+    {
+     "art": "schritte",
+     "stil": "kette",
+     "linien": 0,
+     "items": [
+      {
+       "titel": "Quand …",
+       "text": "ce que je vois ou entends, sans jugement"
+      },
+      {
+       "titel": "Je me sens …",
+       "text": "mon émotion"
+      },
+      {
+       "titel": "J’aimerais …",
+       "text": "ce dont j’ai besoin"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "À toi : Jana met une photo de Noah dans le groupe de la classe et tout le monde rit. Comment sonne le message-je de Noah ?",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Quand …",
+      "Je me sens …, parce que …",
+      "J’aimerais …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Transforme un reproche que tu connais ou entends en message-je. Vrai ou inventé.",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Un reproche : Tu …",
+      "Ça devient : Quand …, je me sens …, parce que … J’aimerais …"
+     ],
+     "linien": 2
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Check du conflit"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Changer de côté"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Message-je – aujourd’hui"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mission de pilote jusqu’à la prochaine fois : repère des reproches avec « Tu … » – dans le chat, à la récré ou dans une série. Note-en un et transforme-le en message-je.",
+     "symbole": [
+      "zuhoeren"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Reproche : Tu …",
+      "Message-je : Quand … je me sens … j’aimerais …"
+     ],
+     "linien": 1
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind verbindet die drei Vorwürfe mit der passenden Ich-Botschaft und sagt, was sich im Ton ändert; danach liest es die drei Bausteine im Kasten. In Aufgabe 2 baut es Noahs Ich-Botschaft mit den drei Satzanfängen; die Fachkraft spielt Jana und antwortet. Aufgabe 3 ist freiwillig: Das Kind schreibt einen Vorwurf auf, den es kennt, und macht eine Ich-Botschaft daraus (erfunden geht auch). Das Werkzeugbild (Aufgabe 4) malt es zum Schluss aus, den Lotsen-Auftrag (Aufgabe 5) nimmt es mit.",
+     "sagen": [
+      "Was ändert sich, wenn du mit „Ich“ anfängst?",
+      "Wie würdest du es sagen, wenn du so sprichst, wie du wirklich sprichst?"
+     ],
+     "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Sätze, und die Fachkraft schreibt Stichworte. Fällt kein Gefühlswort ein, hilft eine Auswahl von drei (ärgerlich, enttäuscht, übergangen)."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant relie les trois reproches au message-je qui convient et dit ce qui change dans le ton ; puis il lit les trois éléments dans l’encadré. À l’exercice 2, il construit le message-je de Noah avec les trois débuts de phrase ; l’adulte joue Jana et répond. L’exercice 3 est libre : l’enfant note un reproche qu’il connaît et en fait un message-je (inventé, ça marche aussi). Il colorie l’image de l’outil (exercice 4) à la fin et emporte la mission de pilote (exercice 5).",
+     "sagen": [
+      "Qu’est-ce qui change quand tu commences par « je » ?",
+      "Comment tu le dirais, avec tes mots à toi ?"
+     ],
+     "wennEsKippt": "Si écrire est pénible, l’enfant dit les phrases et l’adulte note quelques mots. Si aucun mot d’émotion ne vient, un choix de trois aide (énervé, déçu, mis de côté)."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 2,
+   "schreiben": 2,
+   "bild": 1
+  },
+  "fr": {
+   "titel": "Messages-je plutôt que reproches",
+   "text": "L’enfant raconte brièvement ce qu’il a découvert du côté de l’autre. Aujourd’hui s’ajoute le troisième outil, le message-je : au lieu de « Tu n’es vraiment pas fiable ! », on dit ce qu’on voit, comment on le vit et ce qu’on souhaite (« Quand tu arrives plus tard que prévu, je m’énerve, parce qu’on commence sans toi. J’aimerais que tu préviennes. »). L’adulte joue d’abord des reproches de la récré, de l’entraînement et du chat ; l’enfant les transforme chacun en message-je, avec les trois éléments de la fiche. Puis on échange : l’enfant lance un reproche, l’adulte le transforme, et tous deux parlent de ce que ça fait. Pour finir, l’enfant vérifie avec une règle simple si c’est un vrai message-je (pas de « Je trouve que tu es … »).",
+   "sagen": [
+    "Un reproche commence par « tu » et sonne comme un jugement. L’autre se ferme alors. Un message-je dit ce qui m’arrive à moi.",
+    "Trois éléments : Quand … – ce que je vois ou entends, sans jugement. Je me sens … – mon émotion. J’aimerais … – ce dont j’ai besoin.",
+    "Je te lance un reproche. Transforme-le en message-je. Et dis-moi après : comment ça te fait ?",
+    "Attention : « Je trouve que tu es pénible » n’est pas un message-je. Il faut que ça parle de toi – de ton émotion et de ton souhait."
+   ],
+   "wennEsKippt": "Si le mot d’émotion est difficile, l’adulte en propose trois au choix (énervé, déçu, mis de côté). Si la phrase sonne raide, l’enfant peut la dire avec ses propres mots – les trois éléments sont un appui, pas un texte à réciter. Les exemples personnels sont libres ; Tom, Noah et Jana sur la fiche suffisent."
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s3-b",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Ich-Botschaften statt Vorwürfe",
+  "text": "Das Kind erzählt kurz, was es bei der anderen Seite entdeckt hat. Heute kommt das dritte Werkzeug dazu, die Ich-Botschaft: Statt „Du bist so unzuverlässig!“ sagt man, was man sieht, wie es einem damit geht und was man sich wünscht („Wenn du später kommst als abgemacht, ärgere ich mich, weil wir dann ohne dich anfangen. Ich wünsche mir, dass du Bescheid sagst.“). Die Fachkraft spielt erst Vorwürfe aus Pause, Training und Chat; das Kind übersetzt jeden in eine Ich-Botschaft, mit den drei Bausteinen vom Blatt. Dann tauschen sie: Das Kind sagt einen Vorwurf, die Fachkraft übersetzt, und beide sprechen darüber, wie es sich anhört. Zum Schluss prüft das Kind mit einer Faustregel, ob es eine echte Ich-Botschaft ist (kein „Ich finde, du bist …“).",
+  "sagen": [
+   "Vorwürfe fangen mit „Du“ an und klingen wie ein Urteil. Dann macht der andere dicht. Eine Ich-Botschaft sagt, was bei mir ankommt.",
+   "Drei Bausteine: Wenn … – das, was ich sehe oder höre, ohne Urteil. Ich fühle mich … – mein Gefühl. Ich wünsche mir … – was ich brauche.",
+   "Ich sage dir jetzt einen Vorwurf. Mach daraus eine Ich-Botschaft. Und sag mir danach: Wie fühlt sie sich an?",
+   "Vorsicht: „Ich finde, du bist nervig“ ist keine Ich-Botschaft. Es muss um dich gehen – um dein Gefühl und deinen Wunsch."
+  ],
+  "wennEsKippt": "Fällt dem Kind das Gefühlswort schwer, legt die Fachkraft drei zur Wahl hin (ärgerlich, enttäuscht, übergangen). Klingt der Satz steif, darf das Kind ihn in eigenen Worten sagen – die drei Bausteine sind ein Gerüst, kein Text zum Aufsagen. Eigene Beispiele sind freiwillig; Mia, Tom und Noah auf dem Blatt genügen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Ich-Botschaft: Wenn … fühle ich … ich wünsche mir … – statt Vorwurf",
+   "fr": "Message-je : quand … je me sens … j’aimerais … – au lieu d’un reproche"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 3,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel wirft die Fachkraft einen kurzen Vorwurf ein („Du nervst!“), und das Kind antwortet mit einer Ich-Botschaft in einem Satz, bevor es weiterspielt.",
+   "fr": "Au milieu du jeu, l’adulte lance un court reproche (« Tu es pénible ! ») et l’enfant répond par un message-je en une phrase avant de continuer à jouer."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Werkzeug 3: Die Ich-Botschaft",
+    "fr": "Pilotes de conflit · Outil 3 : le message-je"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Schon im Kasten: Konflikt-Check · Seitenwechsel",
+        "Heute neu: Werkzeug 3, Ich-Botschaft."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Du kennst jetzt beide Seiten. Heute lernst du, wie du deine Seite sagst, ohne den anderen anzugreifen."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "So klingt der Unterschied. Lies beide Sprechblasen.",
+     "symbole": [
+      "lesen"
+     ]
+    },
+    {
+     "art": "comic",
+     "spalten": 2,
+     "felder": [
+      {
+       "figuren": [
+        "figur:tom:wuetend",
+        "figur:ben:verlegen"
+       ],
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "Du bist so unzuverlässig!",
+       "untertitel": "Vorwurf"
+      },
+      {
+       "figuren": [
+        "figur:tom:ruhig",
+        "figur:ben:neutral"
+       ],
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "Ich ärgere mich, wenn du zu spät kommst. Sag bitte Bescheid.",
+       "untertitel": "Ich-Botschaft"
+      }
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Die Ich-Botschaft hat drei Teile",
+     "text": "Ein Vorwurf beginnt mit „Du …“ und klingt wie ein Urteil. Eine Ich-Botschaft sagt, was bei dir ankommt:"
+    },
+    {
+     "art": "schritte",
+     "stil": "kette",
+     "linien": 0,
+     "items": [
+      {
+       "titel": "Wenn …",
+       "text": "was ich sehe oder höre, ohne Urteil"
+      },
+      {
+       "titel": "Ich fühle mich …",
+       "text": "mein Gefühl"
+      },
+      {
+       "titel": "Ich wünsche mir …",
+       "text": "was ich brauche"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Jetzt du: Jana stellt ein Foto von Noah in die Klassengruppe, und alle lachen. Baue Noahs Ich-Botschaft: Wähle je einen Baustein.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "du mein Foto ohne Frage in die Gruppe stellst",
+      "du ein blödes Foto machst",
+      "du so gemein bist"
+     ],
+     "titel": "Wenn …",
+     "spalten": 1
+    },
+    {
+     "art": "ankreuzen",
+     "items": [],
+     "titel": "Ich fühle mich …"
+    },
+    {
+     "art": "gefuehle",
+     "gefuehle": [
+      "verlegen",
+      "wuetend",
+      "traurig",
+      "enttaeuscht",
+      "froh"
+     ],
+     "modus": "einkreisen",
+     "spalten": 5
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "dass du vorher fragst",
+      "dass du mir nie mehr schreibst",
+      "dass du es löschst"
+     ],
+     "titel": "Ich wünsche mir …",
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und bei dir? Wo könntest du eine Ich-Botschaft brauchen? Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "im Chat",
+      "in der Pause",
+      "im Training oder Verein",
+      "in der Gruppenarbeit"
+     ],
+     "spalten": 2
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Konflikt-Check"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Seitenwechsel"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Ich-Botschaft – heute"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lotsen-Auftrag bis zum nächsten Mal: Achte auf Vorwürfe mit „Du …“ – im Chat, in der Pause oder in einer Serie. Wo hast du einen gehört?",
+     "symbole": [
+      "zuhoeren"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "im Chat",
+      "in der Pause",
+      "in einer Serie"
+     ],
+     "spalten": 3
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Déjà dans la boîte : Check du conflit · Changer de côté",
+        "Nouveau aujourd’hui : outil 3, message-je."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Tu connais maintenant les deux côtés. Aujourd’hui, tu apprends à dire ton côté sans attaquer l’autre."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Voilà la différence. Lis les deux bulles.",
+     "symbole": [
+      "lesen"
+     ]
+    },
+    {
+     "art": "comic",
+     "spalten": 2,
+     "felder": [
+      {
+       "figuren": [
+        "figur:tom:wuetend",
+        "figur:ben:verlegen"
+       ],
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "Tu n’es vraiment pas fiable !",
+       "untertitel": "Reproche"
+      },
+      {
+       "figuren": [
+        "figur:tom:ruhig",
+        "figur:ben:neutral"
+       ],
+       "blase": "sprechen",
+       "sprecher": 0,
+       "text": "Je m’énerve quand tu arrives en retard. Préviens-moi, s’il te plaît.",
+       "untertitel": "Message-je"
+      }
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Le message-je a trois éléments",
+     "text": "Un reproche commence par « Tu … » et sonne comme un jugement. Un message-je dit ce qui t’arrive à toi :"
+    },
+    {
+     "art": "schritte",
+     "stil": "kette",
+     "linien": 0,
+     "items": [
+      {
+       "titel": "Quand …",
+       "text": "ce que je vois ou entends, sans jugement"
+      },
+      {
+       "titel": "Je me sens …",
+       "text": "mon émotion"
+      },
+      {
+       "titel": "J’aimerais …",
+       "text": "ce dont j’ai besoin"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "À toi : Jana met une photo de Noah dans le groupe de la classe et tout le monde rit. Construis le message-je de Noah : choisis un élément à chaque fois.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "tu mets ma photo dans le groupe sans demander",
+      "tu fais une photo nulle",
+      "tu es tellement méchant"
+     ],
+     "titel": "Quand …",
+     "spalten": 1
+    },
+    {
+     "art": "ankreuzen",
+     "items": [],
+     "titel": "Je me sens …"
+    },
+    {
+     "art": "gefuehle",
+     "gefuehle": [
+      "verlegen",
+      "wuetend",
+      "traurig",
+      "enttaeuscht",
+      "froh"
+     ],
+     "modus": "einkreisen",
+     "spalten": 5,
+     "woerter": [
+      "gêné",
+      "en colère",
+      "triste",
+      "déçu",
+      "content"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "que tu demandes avant",
+      "que tu ne m’écrives plus jamais",
+      "que tu l’effaces"
+     ],
+     "titel": "J’aimerais …",
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Où pourrais-tu avoir besoin d’un message-je ? Coche.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "dans le chat",
+      "à la récré",
+      "à l’entraînement ou au club",
+      "dans le travail de groupe"
+     ],
+     "spalten": 2
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Check du conflit"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Changer de côté"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Message-je – aujourd’hui"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "4 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mission de pilote jusqu’à la prochaine fois : repère des reproches avec « Tu … » – dans le chat, à la récré ou dans une série. Où en as-tu entendu un ?",
+     "symbole": [
+      "zuhoeren"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "dans le chat",
+      "à la récré",
+      "dans une série"
+     ],
+     "spalten": 3
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind schaut Vorwurf und Ich-Botschaft an, die Fachkraft liest die Sprechblasen vor, und beide sprechen darüber, was sich im Ton ändert. Die drei Bausteine im Kasten sind das Werkzeug. In Aufgabe 2 baut das Kind Noahs Ich-Botschaft aus drei Bausteinen (zwei Kreuze und ein eingekreistes Gesicht), die Fachkraft liest den fertigen Satz vor. Aufgabe 3 ist freiwillig: Das Kind kreuzt an, wo es eine Ich-Botschaft brauchen könnte. Das Werkzeugbild (Aufgabe 4) malt es zum Schluss aus, den Lotsen-Auftrag (Aufgabe 5) kreuzt es später an.",
+     "sagen": [
+      "Welcher Satz sagt etwas über dich – und welcher über den anderen?",
+      "Wie klingt der ganze Satz, wenn du ihn laut sagst?"
+     ],
+     "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alle Bausteine vor, und das Kind zeigt darauf. Klingt der gebaute Satz steif, sagt das Kind ihn in eigenen Worten. Aufgabe 3 darf ohne eigenes Beispiel bleiben."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant regarde le reproche et le message-je, l’adulte lit les bulles, et tous deux parlent de ce qui change dans le ton. Les trois éléments dans l’encadré sont l’outil. À l’exercice 2, l’enfant construit le message-je de Noah avec trois éléments (deux croix et un visage entouré) et l’adulte lit la phrase terminée. L’exercice 3 est libre : l’enfant coche où il pourrait avoir besoin d’un message-je. Il colorie l’image de l’outil (exercice 4) à la fin et coche la mission de pilote (exercice 5) plus tard.",
+     "sagen": [
+      "Quelle phrase parle de toi – et laquelle parle de l’autre ?",
+      "Comment sonne toute la phrase quand tu la dis à voix haute ?"
+     ],
+     "wennEsKippt": "Si lire est difficile, l’adulte lit tous les éléments et l’enfant les montre. Si la phrase construite sonne raide, l’enfant la dit avec ses mots. L’exercice 3 peut rester sans exemple personnel."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 1,
+   "schreiben": 0,
+   "bild": 2
+  },
+  "fr": {
+   "titel": "Messages-je plutôt que reproches",
+   "text": "L’enfant raconte brièvement ce qu’il a découvert du côté de l’autre. Aujourd’hui s’ajoute le troisième outil, le message-je : au lieu de « Tu n’es vraiment pas fiable ! », on dit ce qu’on voit, comment on le vit et ce qu’on souhaite (« Quand tu arrives plus tard que prévu, je m’énerve, parce qu’on commence sans toi. J’aimerais que tu préviennes. »). L’adulte joue d’abord des reproches de la récré, de l’entraînement et du chat ; l’enfant les transforme chacun en message-je, avec les trois éléments de la fiche. Puis on échange : l’enfant lance un reproche, l’adulte le transforme, et tous deux parlent de ce que ça fait. Pour finir, l’enfant vérifie avec une règle simple si c’est un vrai message-je (pas de « Je trouve que tu es … »).",
+   "sagen": [
+    "Un reproche commence par « tu » et sonne comme un jugement. L’autre se ferme alors. Un message-je dit ce qui m’arrive à moi.",
+    "Trois éléments : Quand … – ce que je vois ou entends, sans jugement. Je me sens … – mon émotion. J’aimerais … – ce dont j’ai besoin.",
+    "Je te lance un reproche. Transforme-le en message-je. Et dis-moi après : comment ça te fait ?",
+    "Attention : « Je trouve que tu es pénible » n’est pas un message-je. Il faut que ça parle de toi – de ton émotion et de ton souhait."
+   ],
+   "wennEsKippt": "Si le mot d’émotion est difficile, l’adulte en propose trois au choix (énervé, déçu, mis de côté). Si la phrase sonne raide, l’enfant peut la dire avec ses propres mots – les trois éléments sont un appui, pas un texte à réciter. Les exemples personnels sont libres ; Tom, Noah et Jana sur la fiche suffisent."
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s4-a",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Lösungen sammeln und prüfen: die Ideen-Waage",
+  "text": "Das Kind kennt schon die Ich-Botschaft und sagt kurz, ob es eine gehört oder gesagt hat. Heute kommt die Ideen-Waage dazu, in zwei Schritten: erst sammeln, dann prüfen. Die Fachkraft nennt einen Fall (Mia will für das Referat Delfine, Ben will Haie – es darf nur ein Thema sein), und das Kind sammelt in zwei Minuten möglichst viele Ideen, auch verrückte, ohne sie schon zu bewerten. Danach prüfen beide jede Idee mit drei Fragen: Bekommt jede Seite etwas von dem, was sie braucht? Sagen beide ohne Druck „einverstanden“? Hält die Lösung auch nächste Woche noch? Die Fachkraft zeigt, dass hinter zwei Wünschen oft eine dritte Idee steckt (Meerestiere im Vergleich).",
+  "sagen": [
+   "Erst sammeln, dann prüfen – sonst würgst du gute Ideen ab. Auch eine verrückte Idee darf auf die Liste.",
+   "Wie viele Ideen schaffst du in zwei Minuten? Ich schreibe mit.",
+   "Jetzt kommt die Waage: Was bekommt Mia? Was bekommt Ben? Hängt sie schief, ist die Lösung nicht fair.",
+   "Schau hinter die Wünsche: Beide mögen Meerestiere. Gibt es eine Idee, die beides enthält?"
+  ],
+  "wennEsKippt": "Kommen dem Kind kaum Ideen, nennt die Fachkraft Anstöße (abwechseln, teilen, losen, etwas Drittes, jemanden fragen), und das Kind wählt aus. Dauert das Prüfen zu lang, genügt es, zwei Ideen zu prüfen. Sagt ein Kind immer „fair“, kommt die Gegenfrage: Wer hätte hier einen Nachteil?",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "denkmodell",
+   "spiel"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Ideen-Waage: erst viele Ideen sammeln, dann prüfen: Passt es für beide Seiten?",
+   "fr": "Balance des idées : chercher, puis peser – ça convient aux deux côtés ?"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 4,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft einen Streitfall in einem Satz, und das Kind ruft in 30 Sekunden drei Lösungsideen; eine davon prüft es mit der Waage.",
+   "fr": "Au milieu du jeu, l’adulte décrit un cas de dispute en une phrase et l’enfant lance en 30 secondes trois idées de solution ; il en teste une avec la balance."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Werkzeug 4: Die Ideen-Waage",
+    "fr": "Pilotes de conflit · Outil 4 : la balance des idées"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Schon im Kasten: Konflikt-Check · Seitenwechsel · Ich-Botschaft",
+        "Heute neu: Werkzeug 4, Ideen-Waage."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Du kannst jetzt beide Seiten sehen und deine Seite ohne Vorwurf sagen. Heute suchst du Lösungen, die beide halten."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mia will für das Referat Delfine, Ben will Haie – es darf nur ein Thema sein. Sammle Ideen. Erst sammeln, noch nicht bewerten!",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "mindmap",
+     "mitte": "Delfine oder Haie?",
+     "aeste": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Die drei Waage-Fragen",
+     "punkte": [
+      "Bekommt jede Seite etwas von dem, was sie braucht?",
+      "Sagen beide „einverstanden“ – ohne Druck?",
+      "Hält die Lösung auch nächste Woche noch?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Waage-Test: Wie fair sind diese Ideen? Kreuz in jeder Zeile an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Wir werfen eine Münze.",
+      "Mia entscheidet, weil sie zuerst gefragt hat.",
+      "Wir vergleichen Delfine und Haie.",
+      "Erst Delfine, im nächsten Referat Haie."
+     ],
+     "optionen": [
+      "passt für beide",
+      "nur für einen",
+      "für keinen"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und bei dir? Such Lösungen für einen Konflikt – echt oder erfunden.",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Der Konflikt: …",
+      "Meine drei Ideen: …",
+      "Das passt für beide, weil …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Konflikt-Check"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Seitenwechsel"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Ich-Botschaft"
+      },
+      {
+       "bild": "icon:scale",
+       "text": "4 Ideen-Waage – heute"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lotsen-Auftrag bis zum nächsten Mal: Wenn zwei etwas Verschiedenes wollen – in der Klasse, im Verein oder in einer Serie –, such im Kopf drei Ideen und prüf eine davon mit den Waage-Fragen.",
+     "symbole": [
+      "nachdenken"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Ich habe drei Ideen gesammelt.",
+      "Ich habe eine Idee mit den drei Fragen geprüft.",
+      "Ich habe es noch nicht probiert."
+     ],
+     "spalten": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Déjà dans la boîte : Check du conflit · Changer de côté · Message-je",
+        "Nouveau aujourd’hui : outil 4, balance des idées."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Tu sais maintenant voir les deux côtés et dire ton côté sans reproche. Aujourd’hui, tu cherches des solutions qui tiennent pour les deux."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mia veut faire son exposé sur les dauphins, Ben sur les requins – il n’y aura qu’un seul sujet. Cherche des idées. D’abord chercher, ne pas encore juger !",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "mindmap",
+     "mitte": "Dauphins ou requins ?",
+     "aeste": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Les trois questions de la balance",
+     "punkte": [
+      "Chaque côté reçoit-il un peu de ce dont il a besoin ?",
+      "Les deux disent-ils « d’accord » – sans pression ?",
+      "La solution tient-elle encore la semaine prochaine ?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Test de la balance : ces idées sont-elles justes ? Coche dans chaque ligne.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "On tire à pile ou face.",
+      "Mia décide, parce qu’elle a demandé la première.",
+      "On compare les dauphins et les requins.",
+      "D’abord les dauphins, au prochain exposé les requins."
+     ],
+     "optionen": [
+      "convient aux deux",
+      "à un seul",
+      "à aucun"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? Cherche des solutions pour un conflit – vrai ou inventé.",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Le conflit : …",
+      "Mes trois idées : …",
+      "Ça convient aux deux, parce que …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Check du conflit"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Changer de côté"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Message-je"
+      },
+      {
+       "bild": "icon:scale",
+       "text": "4 Balance des idées – aujourd’hui"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mission de pilote jusqu’à la prochaine fois : quand deux personnes veulent des choses différentes – en classe, au club ou dans une série –, cherche trois idées dans ta tête et teste-en une avec les questions de la balance.",
+     "symbole": [
+      "nachdenken"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "J’ai cherché trois idées.",
+      "J’ai testé une idée avec les trois questions.",
+      "Je n’ai pas encore essayé."
+     ],
+     "spalten": 1
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind schreibt in zwei Minuten Ideen in die Äste der Mindmap, die Fachkraft schreibt mit und bewertet noch nichts; ein Ast darf leer bleiben. Dann lesen beide die drei Waage-Fragen im Kasten. In Aufgabe 2 kreuzt das Kind an, wie fair die vier Ideen sind – hier gibt es kein „richtig“, wichtig ist die Begründung („Wer hätte einen Nachteil?“). Aufgabe 3 ist freiwillig: Das Kind sucht Lösungen für einen Konflikt, den es kennt, und schreibt drei Ideen auf. Das Werkzeugbild (Aufgabe 4) malt es zum Schluss aus, den Lotsen-Auftrag (Aufgabe 5) kreuzt es später an.",
+     "sagen": [
+      "Wer hätte bei dieser Idee einen Nachteil?",
+      "Was steckt hinter den beiden Wünschen?"
+     ],
+     "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Ideen, und die Fachkraft schreibt Stichworte; drei Ideen genügen. Aufgabe 3 darf mit Mia und Ben bleiben."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant écrit en deux minutes des idées sur les branches de la carte mentale, l’adulte écrit avec lui et ne juge encore rien ; une branche peut rester vide. Puis ils lisent les trois questions de la balance dans l’encadré. À l’exercice 2, l’enfant coche à quel point les quatre idées sont justes – il n’y a pas de « bonne réponse », c’est la justification qui compte (« Qui aurait un désavantage ? »). L’exercice 3 est libre : l’enfant cherche des solutions pour un conflit qu’il connaît et note trois idées. Il colorie l’image de l’outil (exercice 4) à la fin et coche la mission de pilote (exercice 5) plus tard.",
+     "sagen": [
+      "Qui aurait un désavantage avec cette idée ?",
+      "Qu’est-ce qui se cache derrière les deux souhaits ?"
+     ],
+     "wennEsKippt": "Si écrire est pénible, l’enfant dit les idées et l’adulte note quelques mots ; trois idées suffisent. L’exercice 3 peut rester avec Mia et Ben."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 2,
+   "schreiben": 2,
+   "bild": 1
+  },
+  "fr": {
+   "titel": "Chercher des solutions et les peser : la balance des idées",
+   "text": "L’enfant connaît déjà le message-je et dit brièvement s’il en a entendu ou dit un. Aujourd’hui s’ajoute la balance des idées, en deux temps : d’abord chercher, ensuite peser. L’adulte présente un cas (Mia veut faire son exposé sur les dauphins, Ben sur les requins – il n’y aura qu’un seul sujet), et l’enfant cherche en deux minutes le plus d’idées possible, même folles, sans les juger tout de suite. Ensuite, ils testent chaque idée avec trois questions : chaque côté reçoit-il un peu de ce dont il a besoin ? Les deux disent-ils « d’accord » sans pression ? La solution tient-elle encore la semaine prochaine ? L’adulte montre que, derrière deux souhaits, il y a souvent une troisième idée (comparer des animaux marins).",
+   "sagen": [
+    "D’abord chercher, ensuite peser – sinon tu étouffes de bonnes idées. Même une idée un peu folle a sa place sur la liste.",
+    "Combien d’idées tu trouves en deux minutes ? J’écris avec toi.",
+    "Maintenant, la balance : qu’est-ce que Mia reçoit ? Qu’est-ce que Ben reçoit ? Si elle penche d’un côté, la solution n’est pas juste.",
+    "Regarde derrière les souhaits : tous les deux aiment les animaux marins. Y a-t-il une idée qui contient les deux ?"
+   ],
+   "wennEsKippt": "Si l’enfant a peu d’idées, l’adulte donne des pistes (alterner, partager, tirer au sort, trouver une troisième idée, demander à quelqu’un) et l’enfant choisit. Si peser prend trop de temps, tester deux idées suffit. Si l’enfant dit toujours « c’est juste », la contre-question est : qui aurait un désavantage ?"
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s4-b",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Lösungen sammeln und prüfen: die Ideen-Waage",
+  "text": "Das Kind kennt schon die Ich-Botschaft und sagt kurz, ob es eine gehört oder gesagt hat. Heute kommt die Ideen-Waage dazu, in zwei Schritten: erst sammeln, dann prüfen. Die Fachkraft nennt einen Fall (Mia will für das Referat Delfine, Ben will Haie – es darf nur ein Thema sein), und das Kind sammelt in zwei Minuten möglichst viele Ideen, auch verrückte, ohne sie schon zu bewerten. Danach prüfen beide jede Idee mit drei Fragen: Bekommt jede Seite etwas von dem, was sie braucht? Sagen beide ohne Druck „einverstanden“? Hält die Lösung auch nächste Woche noch? Die Fachkraft zeigt, dass hinter zwei Wünschen oft eine dritte Idee steckt (Meerestiere im Vergleich).",
+  "sagen": [
+   "Erst sammeln, dann prüfen – sonst würgst du gute Ideen ab. Auch eine verrückte Idee darf auf die Liste.",
+   "Wie viele Ideen schaffst du in zwei Minuten? Ich schreibe mit.",
+   "Jetzt kommt die Waage: Was bekommt Mia? Was bekommt Ben? Hängt sie schief, ist die Lösung nicht fair.",
+   "Schau hinter die Wünsche: Beide mögen Meerestiere. Gibt es eine Idee, die beides enthält?"
+  ],
+  "wennEsKippt": "Kommen dem Kind kaum Ideen, nennt die Fachkraft Anstöße (abwechseln, teilen, losen, etwas Drittes, jemanden fragen), und das Kind wählt aus. Dauert das Prüfen zu lang, genügt es, zwei Ideen zu prüfen. Sagt ein Kind immer „fair“, kommt die Gegenfrage: Wer hätte hier einen Nachteil?",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "denkmodell",
+   "spiel"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Ideen-Waage: erst viele Ideen sammeln, dann prüfen: Passt es für beide Seiten?",
+   "fr": "Balance des idées : chercher, puis peser – ça convient aux deux côtés ?"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 4,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft einen Streitfall in einem Satz, und das Kind ruft in 30 Sekunden drei Lösungsideen; eine davon prüft es mit der Waage.",
+   "fr": "Au milieu du jeu, l’adulte décrit un cas de dispute en une phrase et l’enfant lance en 30 secondes trois idées de solution ; il en teste une avec la balance."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Werkzeug 4: Die Ideen-Waage",
+    "fr": "Pilotes de conflit · Outil 4 : la balance des idées"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Schon im Kasten: Konflikt-Check · Seitenwechsel · Ich-Botschaft",
+        "Heute neu: Werkzeug 4, Ideen-Waage."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Du kannst jetzt beide Seiten sehen und deine Seite ohne Vorwurf sagen. Heute suchst du Lösungen, die beide halten."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mia will für das Referat Delfine, Ben will Haie – es darf nur ein Thema sein. Welche Ideen findest du gut? Kreis ein, so viele du magst.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:coin",
+       "text": "Münze werfen"
+      },
+      {
+       "bild": "icon:calendar-event",
+       "text": "Abwechseln"
+      },
+      {
+       "bild": "icon:puzzle",
+       "text": "Beides verbinden"
+      },
+      {
+       "bild": "icon:thumb-up",
+       "text": "Abstimmen"
+      },
+      {
+       "bild": "icon:flag",
+       "text": "Einer entscheidet"
+      },
+      {
+       "bild": "icon:school",
+       "text": "Lehrperson fragen"
+      }
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Die drei Waage-Fragen",
+     "punkte": [
+      "Bekommt jede Seite etwas von dem, was sie braucht?",
+      "Sagen beide „einverstanden“ – ohne Druck?",
+      "Hält die Lösung auch nächste Woche noch?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Waage-Test: Wie fair sind diese Ideen? Kreuz in jeder Zeile an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Wir werfen eine Münze.",
+      "Mia entscheidet, weil sie zuerst gefragt hat.",
+      "Wir vergleichen Delfine und Haie.",
+      "Erst Delfine, im nächsten Referat Haie."
+     ],
+     "optionen": [
+      "passt für beide",
+      "nur für einen",
+      "für keinen"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Und bei dir? Wie fair ist deine Lieblings-Idee? Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "skala",
+     "stufen": 5,
+     "frage": "Meine Lieblings-Idee passt …",
+     "von": "nur für einen",
+     "bis": "für beide gleich"
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Ich habe eine dritte Idee gefunden.",
+      "Ich habe die Idee mit den drei Fragen geprüft.",
+      "Ich würde noch jemanden fragen."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Konflikt-Check"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Seitenwechsel"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Ich-Botschaft"
+      },
+      {
+       "bild": "icon:scale",
+       "text": "4 Ideen-Waage – heute"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lotsen-Auftrag bis zum nächsten Mal: Wenn zwei etwas Verschiedenes wollen – in der Klasse, im Verein oder in einer Serie –, such im Kopf drei Ideen und prüf eine davon mit den Waage-Fragen.",
+     "symbole": [
+      "nachdenken"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Ich habe drei Ideen gesammelt.",
+      "Ich habe eine Idee mit den drei Fragen geprüft.",
+      "Ich habe es noch nicht probiert."
+     ],
+     "spalten": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Déjà dans la boîte : Check du conflit · Changer de côté · Message-je",
+        "Nouveau aujourd’hui : outil 4, balance des idées."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Tu sais maintenant voir les deux côtés et dire ton côté sans reproche. Aujourd’hui, tu cherches des solutions qui tiennent pour les deux."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mia veut faire son exposé sur les dauphins, Ben sur les requins – il n’y aura qu’un seul sujet. Quelles idées te plaisent ? Entoure-en autant que tu veux.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:coin",
+       "text": "Pile ou face"
+      },
+      {
+       "bild": "icon:calendar-event",
+       "text": "Alterner"
+      },
+      {
+       "bild": "icon:puzzle",
+       "text": "Mélanger les deux"
+      },
+      {
+       "bild": "icon:thumb-up",
+       "text": "Voter"
+      },
+      {
+       "bild": "icon:flag",
+       "text": "Un seul décide"
+      },
+      {
+       "bild": "icon:school",
+       "text": "Demander au prof"
+      }
+     ]
+    },
+    {
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Les trois questions de la balance",
+     "punkte": [
+      "Chaque côté reçoit-il un peu de ce dont il a besoin ?",
+      "Les deux disent-ils « d’accord » – sans pression ?",
+      "La solution tient-elle encore la semaine prochaine ?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Test de la balance : ces idées sont-elles justes ? Coche dans chaque ligne.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "On tire à pile ou face.",
+      "Mia décide, parce qu’elle a demandé la première.",
+      "On compare les dauphins et les requins.",
+      "D’abord les dauphins, au prochain exposé les requins."
+     ],
+     "optionen": [
+      "convient aux deux",
+      "à un seul",
+      "à aucun"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Et toi ? À quel point ton idée préférée est-elle juste ? Coche.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "skala",
+     "stufen": 5,
+     "frage": "Mon idée préférée convient …",
+     "von": "à un seul",
+     "bis": "aux deux pareil"
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "J’ai trouvé une troisième idée.",
+      "J’ai testé l’idée avec les trois questions.",
+      "Je demanderais encore à quelqu’un."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Check du conflit"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Changer de côté"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Message-je"
+      },
+      {
+       "bild": "icon:scale",
+       "text": "4 Balance des idées – aujourd’hui"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "5 ?"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mission de pilote jusqu’à la prochaine fois : quand deux personnes veulent des choses différentes – en classe, au club ou dans une série –, cherche trois idées dans ta tête et teste-en une avec les questions de la balance.",
+     "symbole": [
+      "nachdenken"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "J’ai cherché trois idées.",
+      "J’ai testé une idée avec les trois questions.",
+      "Je n’ai pas encore essayé."
+     ],
+     "spalten": 1
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind kreist die Ideen ein, die ihm gefallen, und die Fachkraft ergänzt mündlich weitere; bewertet wird noch nichts. Dann lesen beide die drei Waage-Fragen im Kasten. In Aufgabe 2 kreuzt das Kind an, wie fair die vier Ideen sind – hier gibt es kein „richtig“, wichtig ist die Begründung („Wer hätte einen Nachteil?“). Aufgabe 3 ist freiwillig: Das Kind schätzt auf der Skala, wie fair seine Lieblings-Idee ist, und kreuzt an, was es schon getan hat. Das Werkzeugbild (Aufgabe 4) malt es zum Schluss aus, den Lotsen-Auftrag (Aufgabe 5) kreuzt es später an.",
+     "sagen": [
+      "Welche Idee magst du am liebsten – und warum?",
+      "Wer hätte bei dieser Idee einen Nachteil?"
+     ],
+     "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft Ideen und Fragen vor, und das Kind zeigt darauf. Zwei Ideen genügen zum Prüfen."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant entoure les idées qui lui plaisent et l’adulte en ajoute d’autres à l’oral ; rien n’est encore jugé. Puis ils lisent les trois questions de la balance dans l’encadré. À l’exercice 2, l’enfant coche à quel point les quatre idées sont justes – il n’y a pas de « bonne réponse », c’est la justification qui compte (« Qui aurait un désavantage ? »). L’exercice 3 est libre : l’enfant estime sur l’échelle à quel point son idée préférée est juste et coche ce qu’il a déjà fait. Il colorie l’image de l’outil (exercice 4) à la fin et coche la mission de pilote (exercice 5) plus tard.",
+     "sagen": [
+      "Quelle idée tu préfères – et pourquoi ?",
+      "Qui aurait un désavantage avec cette idée ?"
+     ],
+     "wennEsKippt": "Si lire est difficile, l’adulte lit les idées et les questions et l’enfant les montre. Tester deux idées suffit."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 1,
+   "schreiben": 0,
+   "bild": 2
+  },
+  "fr": {
+   "titel": "Chercher des solutions et les peser : la balance des idées",
+   "text": "L’enfant connaît déjà le message-je et dit brièvement s’il en a entendu ou dit un. Aujourd’hui s’ajoute la balance des idées, en deux temps : d’abord chercher, ensuite peser. L’adulte présente un cas (Mia veut faire son exposé sur les dauphins, Ben sur les requins – il n’y aura qu’un seul sujet), et l’enfant cherche en deux minutes le plus d’idées possible, même folles, sans les juger tout de suite. Ensuite, ils testent chaque idée avec trois questions : chaque côté reçoit-il un peu de ce dont il a besoin ? Les deux disent-ils « d’accord » sans pression ? La solution tient-elle encore la semaine prochaine ? L’adulte montre que, derrière deux souhaits, il y a souvent une troisième idée (comparer des animaux marins).",
+   "sagen": [
+    "D’abord chercher, ensuite peser – sinon tu étouffes de bonnes idées. Même une idée un peu folle a sa place sur la liste.",
+    "Combien d’idées tu trouves en deux minutes ? J’écris avec toi.",
+    "Maintenant, la balance : qu’est-ce que Mia reçoit ? Qu’est-ce que Ben reçoit ? Si elle penche d’un côté, la solution n’est pas juste.",
+    "Regarde derrière les souhaits : tous les deux aiment les animaux marins. Y a-t-il une idée qui contient les deux ?"
+   ],
+   "wennEsKippt": "Si l’enfant a peu d’idées, l’adulte donne des pistes (alterner, partager, tirer au sort, trouver une troisième idée, demander à quelqu’un) et l’enfant choisit. Si peser prend trop de temps, tester deux idées suffit. Si l’enfant dit toujours « c’est juste », la contre-question est : qui aurait un désavantage ?"
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s5-a",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Entschuldigen und wiedergutmachen",
+  "text": "Das Kind sagt kurz, ob es eine Lösung mit der Ideen-Waage geprüft hat. Heute kommt das fünfte Werkzeug dazu, die gute Entschuldigung – und danach wird es konkret: Das Kind plant eine echte Situation dieser Woche (oder, wenn es lieber will, eine erfundene) mit allen Werkzeugen. Zuerst zeigt die Fachkraft an einem erfundenen Fall (Ben hat einen peinlichen Screenshot von Sami in die Klassengruppe geschickt) die vier Teile einer guten Entschuldigung: Was war – Es tut mir leid – Wiedergutmachen – Nächstes Mal. Das Kind prüft zwei schlechte Entschuldigungen („Sorry, war doch nur Spaß“). Dann legt es für seine Situation fest: wer, wann, wo und welcher erste Satz; die Fachkraft spielt die andere Person in drei Durchgängen (freundlich, abweisend, „ist mir egal“) und gibt nach jedem ein Plus und höchstens einen Tipp.",
+  "sagen": [
+   "Eine gute Entschuldigung hat vier Teile: Was war – ohne „aber“. Es tut mir leid – für das, was beim anderen angekommen ist. Was ich wiedergutmache. Und: Nächstes Mal.",
+   "Eine Entschuldigung kann man nicht erzwingen – und der andere muss sie nicht sofort annehmen. Du sagst sie, weil du die Waage wieder ins Gleichgewicht bringen willst.",
+   "Such dir eine Situation dieser Woche aus. Sie darf klein sein – oder erfunden. Wer, wann, wo – und wie lautet dein erster Satz?",
+   "Ich spiele die andere Person. Erst freundlich, dann abweisend. Du sagst deinen Satz – danach sage ich dir, was gut war."
+  ],
+  "wennEsKippt": "Geht dem Kind die gewählte Situation zu nahe, wechselt es zu einer erfundenen (Ben und Sami, Lea und Jana) – eigene Beispiele sind immer freiwillig, und es wird nichts nachgefragt. Fällt der Satz schwer, legt die Fachkraft zwei Satzanfänge zur Wahl hin; wird das Rollenspiel zu echt, gilt sofort Stopp, und die Rollen werden getauscht. Ein Satz, der zum Kind passt, und ein Weg zu Hilfe genügen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "uebertragen",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Gute Entschuldigung: Was war – tut mir leid – wiedergutmachen – nächstes Mal",
+   "fr": "Bonne excuse : ce qui s’est passé – je regrette – réparer – la prochaine fois"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 5,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft einen kleinen Fehler („Ich habe dein Heft zerknickt“), und das Kind sagt in drei Sätzen eine gute Entschuldigung.",
+   "fr": "Au milieu du jeu, l’adulte cite une petite maladresse (« J’ai froissé ton cahier ») et l’enfant dit en trois phrases une bonne excuse."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Werkzeug 5: Die gute Entschuldigung",
+    "fr": "Pilotes de conflit · Outil 5 : la bonne excuse"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Schon im Kasten: Konflikt-Check · Seitenwechsel · Ich-Botschaft · Ideen-Waage",
+        "Heute neu: Werkzeug 5, Gute Entschuldigung."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Du hast schon vier Werkzeuge. Heute kommt die Entschuldigung dazu – und du planst eine echte Situation für diese Woche."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "So geht eine gute Entschuldigung. Ben hat einen peinlichen Screenshot von Sami in die Klassengruppe geschickt.",
+     "symbole": [
+      "lesen"
+     ]
+    },
+    {
+     "art": "schritte",
+     "stil": "kette",
+     "linien": 0,
+     "items": [
+      {
+       "titel": "Was war",
+       "text": "Ich habe deinen Screenshot in die Gruppe geschickt."
+      },
+      {
+       "titel": "Es tut mir leid",
+       "text": "Das war peinlich für dich."
+      },
+      {
+       "titel": "Wiedergutmachen",
+       "text": "Ich lösche ihn und schreibe, dass es nicht okay war."
+      },
+      {
+       "titel": "Nächstes Mal",
+       "text": "Ich schicke nichts mehr weiter, ohne zu fragen."
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Entschuldigung ist gut? Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Sorry, war doch nur Spaß!",
+      "Tut mir leid, aber du hast ja angefangen.",
+      "Ich habe deinen Screenshot weitergeschickt. Das tut mir leid. Ich lösche ihn und sage es in der Gruppe.",
+      "Na gut, dann entschuldige ich mich halt, wenn du es unbedingt willst."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Jetzt wird es echt: Plane eine Situation dieser Woche – mit jemandem aus Schule, Verein oder Chat. Du darfst auch eine erfundene nehmen.",
+     "symbole": [
+      "schreiben"
+     ],
+     "hinweis": "Du musst nichts erzählen, was du nicht willst."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Mit wem will ich reden? …",
+      "Wann und wo? …",
+      "Was war – und was tut mir leid? …",
+      "Was mache ich wieder gut? …",
+      "Mein erster Satz: …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Konflikt-Check",
+      "Seitenwechsel",
+      "Ich-Botschaft",
+      "Ideen-Waage",
+      "Entschuldigung"
+     ],
+     "titel": "Diese Werkzeuge brauche ich dafür:",
+     "spalten": 3
+    },
+    {
+     "art": "aufgabe",
+     "text": "Wenn die andere Person nicht mitmacht: Was tust du dann?",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "beispiele": [
+      {
+       "wenn": "Sie sagt: Ist mir egal.",
+       "dann": "Ich sage: Mir ist es wichtig. Ich bin da, wenn du reden willst."
+      },
+      {
+       "wenn": "Sie nimmt die Entschuldigung nicht an.",
+       "dann": "Ich lasse ihr Zeit und gehe ohne Streit weg."
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Konflikt-Check"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Seitenwechsel"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Ich-Botschaft"
+      },
+      {
+       "bild": "icon:scale",
+       "text": "4 Ideen-Waage"
+      },
+      {
+       "bild": "icon:heart-handshake",
+       "text": "5 Gute Entschuldigung – heute"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lotsen-Auftrag bis zum nächsten Mal: Sag deinen ersten Satz einmal laut für dich – und probier ihn aus, wenn es passt.",
+     "symbole": [
+      "sprechen"
+     ]
+    },
+    {
+     "art": "zielkarte",
+     "titel": "Mein erster Satz",
+     "text": "Diese Woche übe ich ihn und probiere ihn aus.",
+     "tage": [
+      "geübt",
+      "ausprobiert"
+     ]
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Déjà dans la boîte : Check du conflit · Changer de côté · Message-je · Balance des idées",
+        "Nouveau aujourd’hui : outil 5, s’excuser et réparer."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Tu as déjà quatre outils. Aujourd’hui s’ajoute l’excuse – et tu prépares une vraie situation pour cette semaine."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Voilà une bonne excuse. Ben a envoyé dans le groupe de la classe une capture d’écran gênante de Sami.",
+     "symbole": [
+      "lesen"
+     ]
+    },
+    {
+     "art": "schritte",
+     "stil": "kette",
+     "linien": 0,
+     "items": [
+      {
+       "titel": "Ce qui s’est passé",
+       "text": "J’ai envoyé ta capture d’écran dans le groupe."
+      },
+      {
+       "titel": "Je regrette",
+       "text": "C’était gênant pour toi."
+      },
+      {
+       "titel": "Réparer",
+       "text": "Je l’efface et j’écris que ce n’était pas bien."
+      },
+      {
+       "titel": "La prochaine fois",
+       "text": "Je n’envoie plus rien sans demander."
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelle excuse est bonne ? Coche.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Pardon, c’était pour rire !",
+      "Désolé, mais c’est toi qui as commencé.",
+      "J’ai envoyé ta capture d’écran. Je regrette. Je l’efface et je le dis dans le groupe.",
+      "Bon, alors je m’excuse, si tu y tiens vraiment."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Maintenant, ça devient concret : prépare une situation de cette semaine – avec quelqu’un de l’école, du club ou d’un chat. Tu peux aussi en inventer une.",
+     "symbole": [
+      "schreiben"
+     ],
+     "hinweis": "Tu n’as pas à raconter ce que tu ne veux pas."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Avec qui je veux parler ? …",
+      "Quand et où ? …",
+      "Ce qui s’est passé – et ce que je regrette : …",
+      "Ce que je répare : …",
+      "Ma première phrase : …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Check du conflit",
+      "Changer de côté",
+      "Message-je",
+      "Balance des idées",
+      "Excuse"
+     ],
+     "titel": "J’ai besoin de ces outils pour ça :",
+     "spalten": 3
+    },
+    {
+     "art": "aufgabe",
+     "text": "Si l’autre personne ne joue pas le jeu : que fais-tu alors ?",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "beispiele": [
+      {
+       "wenn": "Elle dit : Je m’en fiche.",
+       "dann": "Je dis : C’est important pour moi. Je suis là si tu veux parler."
+      },
+      {
+       "wenn": "Elle n’accepte pas l’excuse.",
+       "dann": "Je lui laisse du temps et je m’en vais sans dispute."
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Check du conflit"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Changer de côté"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Message-je"
+      },
+      {
+       "bild": "icon:scale",
+       "text": "4 Balance des idées"
+      },
+      {
+       "bild": "icon:heart-handshake",
+       "text": "5 S’excuser et réparer – aujourd’hui"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mission de pilote jusqu’à la prochaine fois : dis ta première phrase une fois à voix haute pour toi – et essaie-la quand ça se présente.",
+     "symbole": [
+      "sprechen"
+     ]
+    },
+    {
+     "art": "zielkarte",
+     "titel": "Ma première phrase",
+     "text": "Cette semaine, je m’entraîne et je l’essaie.",
+     "tage": [
+      "entraîné",
+      "essayé"
+     ]
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind liest die vier Teile der Entschuldigung an Bens Beispiel. In Aufgabe 2 kreuzt es die gute Entschuldigung an und sagt, was den anderen fehlt. Aufgabe 3 ist der Kern: Das Kind plant mit den fünf Satzanfängen eine Situation dieser Woche (oder eine erfundene) und kreuzt an, welche Werkzeuge es dafür braucht; was es aufschreibt, wird nicht vorgelesen. Danach spielt die Fachkraft die andere Person in drei Durchgängen. Aufgabe 4 füllt das Kind allein aus (was tue ich, wenn die andere Person nicht mitmacht), das Werkzeugbild (Aufgabe 5) malt es zum Schluss aus, und auf der Karte (Aufgabe 6) hakt es später ab, was geschafft ist.",
+     "sagen": [
+      "Welche Entschuldigung würdest du selbst gern hören?",
+      "Wie lautet dein erster Satz, wenn du ihn so sagst, wie du wirklich sprichst?"
+     ],
+     "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Satzanfänge, und die Fachkraft schreibt Stichworte. Geht die Situation zu nah, wechselt das Kind zu Ben und Sami. Das Rollenspiel darf im Chor beginnen, bis der Satz sitzt."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant lit les quatre parties de l’excuse dans l’exemple de Ben. À l’exercice 2, il coche la bonne excuse et dit ce qui manque aux autres. L’exercice 3 est le cœur : l’enfant prépare avec les cinq débuts de phrase une situation de cette semaine (ou inventée) et coche les outils dont il a besoin ; ce qu’il écrit n’est pas lu à voix haute. Ensuite, l’adulte joue l’autre personne en trois tours. L’exercice 4, l’enfant le remplit seul (que fais-je si l’autre ne joue pas le jeu), il colorie l’image de l’outil (exercice 5) à la fin et, sur la carte (exercice 6), il coche plus tard ce qui est fait.",
+     "sagen": [
+      "Quelle excuse tu aimerais entendre toi-même ?",
+      "Quelle est ta première phrase, dite comme tu parles vraiment ?"
+     ],
+     "wennEsKippt": "Si écrire est pénible, l’enfant dit les débuts de phrase et l’adulte note quelques mots. Si la situation touche de trop près, l’enfant passe à Ben et Sami. Le jeu de rôle peut commencer en chœur, jusqu’à ce que la phrase tienne."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 2,
+   "schreiben": 2,
+   "bild": 1
+  },
+  "fr": {
+   "titel": "S’excuser et réparer : la bonne excuse",
+   "text": "L’enfant dit brièvement s’il a testé une solution avec la balance des idées. Aujourd’hui s’ajoute le cinquième outil, la bonne excuse – et ensuite, on passe au concret : l’enfant prépare une vraie situation de cette semaine (ou, s’il préfère, une situation inventée) avec tous les outils. D’abord, l’adulte montre sur un cas inventé (Ben a envoyé dans le groupe de la classe une capture d’écran gênante de Sami) les quatre parties d’une bonne excuse : ce qui s’est passé – je regrette – réparer – la prochaine fois. L’enfant examine deux mauvaises excuses (« Pardon, c’était pour rire »). Ensuite, il décide pour sa situation : avec qui, quand, où et quelle première phrase ; l’adulte joue l’autre personne en trois tours (aimable, fermée, « je m’en fiche ») et donne après chacun un point positif et au plus un conseil.",
+   "sagen": [
+    "Une bonne excuse a quatre parties : ce qui s’est passé – sans « mais ». Je regrette – pour ce que l’autre a ressenti. Ce que je répare. Et : la prochaine fois.",
+    "On ne peut pas forcer une excuse – et l’autre n’a pas à l’accepter tout de suite. Tu la dis parce que tu veux remettre la balance en équilibre.",
+    "Choisis une situation de cette semaine. Elle peut être petite – ou inventée. Avec qui, quand, où – et quelle est ta première phrase ?",
+    "Je joue l’autre personne. D’abord aimable, puis fermée. Tu dis ta phrase – et après, je te dis ce qui était bien."
+   ],
+   "wennEsKippt": "Si la situation choisie touche l’enfant de trop près, il passe à une situation inventée (Ben et Sami, Lea et Jana) – les exemples personnels sont toujours libres et on ne pose pas de questions. Si la phrase est difficile, l’adulte propose deux débuts de phrase au choix ; si le jeu de rôle devient trop réel, on dit stop tout de suite et on échange les rôles. Une phrase qui convient à l’enfant et un chemin vers de l’aide suffisent."
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s5-b",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Entschuldigen und wiedergutmachen",
+  "text": "Das Kind sagt kurz, ob es eine Lösung mit der Ideen-Waage geprüft hat. Heute kommt das fünfte Werkzeug dazu, die gute Entschuldigung – und danach wird es konkret: Das Kind plant eine echte Situation dieser Woche (oder, wenn es lieber will, eine erfundene) mit allen Werkzeugen. Zuerst zeigt die Fachkraft an einem erfundenen Fall (Ben hat einen peinlichen Screenshot von Sami in die Klassengruppe geschickt) die vier Teile einer guten Entschuldigung: Was war – Es tut mir leid – Wiedergutmachen – Nächstes Mal. Das Kind prüft zwei schlechte Entschuldigungen („Sorry, war doch nur Spaß“). Dann legt es für seine Situation fest: wer, wann, wo und welcher erste Satz; die Fachkraft spielt die andere Person in drei Durchgängen (freundlich, abweisend, „ist mir egal“) und gibt nach jedem ein Plus und höchstens einen Tipp.",
+  "sagen": [
+   "Eine gute Entschuldigung hat vier Teile: Was war – ohne „aber“. Es tut mir leid – für das, was beim anderen angekommen ist. Was ich wiedergutmache. Und: Nächstes Mal.",
+   "Eine Entschuldigung kann man nicht erzwingen – und der andere muss sie nicht sofort annehmen. Du sagst sie, weil du die Waage wieder ins Gleichgewicht bringen willst.",
+   "Such dir eine Situation dieser Woche aus. Sie darf klein sein – oder erfunden. Wer, wann, wo – und wie lautet dein erster Satz?",
+   "Ich spiele die andere Person. Erst freundlich, dann abweisend. Du sagst deinen Satz – danach sage ich dir, was gut war."
+  ],
+  "wennEsKippt": "Geht dem Kind die gewählte Situation zu nahe, wechselt es zu einer erfundenen (Ben und Sami, Lea und Jana) – eigene Beispiele sind immer freiwillig, und es wird nichts nachgefragt. Fällt der Satz schwer, legt die Fachkraft zwei Satzanfänge zur Wahl hin; wird das Rollenspiel zu echt, gilt sofort Stopp, und die Rollen werden getauscht. Ein Satz, der zum Kind passt, und ein Weg zu Hilfe genügen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "uebertragen",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Gute Entschuldigung: Was war – tut mir leid – wiedergutmachen – nächstes Mal",
+   "fr": "Bonne excuse : ce qui s’est passé – je regrette – réparer – la prochaine fois"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 5,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft einen kleinen Fehler („Ich habe dein Heft zerknickt“), und das Kind sagt in drei Sätzen eine gute Entschuldigung.",
+   "fr": "Au milieu du jeu, l’adulte cite une petite maladresse (« J’ai froissé ton cahier ») et l’enfant dit en trois phrases une bonne excuse."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Werkzeug 5: Die gute Entschuldigung",
+    "fr": "Pilotes de conflit · Outil 5 : la bonne excuse"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Schon im Kasten: Konflikt-Check · Seitenwechsel · Ich-Botschaft · Ideen-Waage",
+        "Heute neu: Werkzeug 5, Gute Entschuldigung."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Du hast schon vier Werkzeuge. Heute kommt die Entschuldigung dazu – und du planst eine echte Situation für diese Woche."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "So geht eine gute Entschuldigung. Ben hat einen peinlichen Screenshot von Sami in die Klassengruppe geschickt.",
+     "symbole": [
+      "lesen"
+     ]
+    },
+    {
+     "art": "schritte",
+     "stil": "kette",
+     "linien": 0,
+     "items": [
+      {
+       "titel": "Was war",
+       "text": "Ich habe deinen Screenshot in die Gruppe geschickt."
+      },
+      {
+       "titel": "Es tut mir leid",
+       "text": "Das war peinlich für dich."
+      },
+      {
+       "titel": "Wiedergutmachen",
+       "text": "Ich lösche ihn und schreibe, dass es nicht okay war."
+      },
+      {
+       "titel": "Nächstes Mal",
+       "text": "Ich schicke nichts mehr weiter, ohne zu fragen."
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Welche Entschuldigung ist gut? Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Sorry, war nur Spaß!",
+      "Tut mir leid, aber du hast angefangen.",
+      "Das war nicht okay. Es tut mir leid. Ich lösche es."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Jetzt wird es echt: Plane eine Situation dieser Woche – mit jemandem aus Schule, Verein oder Chat. Du darfst auch eine erfundene nehmen. Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ],
+     "hinweis": "Du musst nichts erzählen, was du nicht willst."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "jemand aus meiner Klasse",
+      "jemand aus dem Verein",
+      "jemand aus dem Chat",
+      "eine erfundene Person"
+     ],
+     "titel": "Wer?",
+     "spalten": 2
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "in der Pause",
+      "vor dem Training",
+      "im Chat",
+      "in der Maison Relais"
+     ],
+     "titel": "Wann und wo?",
+     "spalten": 2
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Das war nicht okay von mir: …",
+      "Es tut mir leid, dass …",
+      "Ich möchte etwas klären: …"
+     ],
+     "titel": "Mein erster Satz:",
+     "spalten": 1,
+     "frei": 1
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Konflikt-Check",
+      "Seitenwechsel",
+      "Ich-Botschaft",
+      "Ideen-Waage",
+      "Entschuldigung"
+     ],
+     "titel": "Diese Werkzeuge brauche ich dafür:",
+     "spalten": 3
+    },
+    {
+     "art": "aufgabe",
+     "text": "Wenn die andere Person nicht mitmacht: Was tust du dann? Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Später noch einmal fragen",
+      "Abstand halten, nicht diskutieren",
+      "Eine erwachsene Person um Hilfe bitten"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Konflikt-Check"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Seitenwechsel"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Ich-Botschaft"
+      },
+      {
+       "bild": "icon:scale",
+       "text": "4 Ideen-Waage"
+      },
+      {
+       "bild": "icon:heart-handshake",
+       "text": "5 Gute Entschuldigung – heute"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Lotsen-Auftrag bis zum nächsten Mal: Sag deinen ersten Satz einmal laut für dich – und probier ihn aus, wenn es passt.",
+     "symbole": [
+      "sprechen"
+     ]
+    },
+    {
+     "art": "zielkarte",
+     "titel": "Mein erster Satz",
+     "text": "Diese Woche übe ich ihn und probiere ihn aus.",
+     "tage": [
+      "geübt",
+      "ausprobiert"
+     ]
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Déjà dans la boîte : Check du conflit · Changer de côté · Message-je · Balance des idées",
+        "Nouveau aujourd’hui : outil 5, s’excuser et réparer."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Tu as déjà quatre outils. Aujourd’hui s’ajoute l’excuse – et tu prépares une vraie situation pour cette semaine."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Voilà une bonne excuse. Ben a envoyé dans le groupe de la classe une capture d’écran gênante de Sami.",
+     "symbole": [
+      "lesen"
+     ]
+    },
+    {
+     "art": "schritte",
+     "stil": "kette",
+     "linien": 0,
+     "items": [
+      {
+       "titel": "Ce qui s’est passé",
+       "text": "J’ai envoyé ta capture d’écran dans le groupe."
+      },
+      {
+       "titel": "Je regrette",
+       "text": "C’était gênant pour toi."
+      },
+      {
+       "titel": "Réparer",
+       "text": "Je l’efface et j’écris que ce n’était pas bien."
+      },
+      {
+       "titel": "La prochaine fois",
+       "text": "Je n’envoie plus rien sans demander."
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Quelle excuse est bonne ? Coche.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Pardon, c’était pour rire !",
+      "Désolé, mais c’est toi qui as commencé.",
+      "Ce n’était pas bien. Je regrette. Je l’efface."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Maintenant, ça devient concret : prépare une situation de cette semaine – avec quelqu’un de l’école, du club ou d’un chat. Tu peux aussi en inventer une. Coche.",
+     "symbole": [
+      "ankreuzen"
+     ],
+     "hinweis": "Tu n’as pas à raconter ce que tu ne veux pas."
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "quelqu’un de ma classe",
+      "quelqu’un du club",
+      "quelqu’un d’un chat",
+      "une personne inventée"
+     ],
+     "titel": "Qui ?",
+     "spalten": 2
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "à la récré",
+      "avant l’entraînement",
+      "dans le chat",
+      "à la Maison Relais"
+     ],
+     "titel": "Quand et où ?",
+     "spalten": 2
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Ce n’était pas bien de ma part : …",
+      "Je regrette que …",
+      "Je voudrais clarifier quelque chose : …"
+     ],
+     "titel": "Ma première phrase :",
+     "spalten": 1,
+     "frei": 1
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Check du conflit",
+      "Changer de côté",
+      "Message-je",
+      "Balance des idées",
+      "Excuse"
+     ],
+     "titel": "J’ai besoin de ces outils pour ça :",
+     "spalten": 3
+    },
+    {
+     "art": "aufgabe",
+     "text": "Si l’autre personne ne joue pas le jeu : que fais-tu alors ? Coche.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Redemander plus tard",
+      "Garder mes distances, ne pas discuter",
+      "Demander de l’aide à un adulte"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+     "symbole": [
+      "einkreisen"
+     ]
+    },
+    {
+     "art": "bilder",
+     "bilder": [
+      {
+       "bild": "icon:search",
+       "text": "1 Check du conflit"
+      },
+      {
+       "bild": "icon:arrows-shuffle",
+       "text": "2 Changer de côté"
+      },
+      {
+       "bild": "icon:message-circle",
+       "text": "3 Message-je"
+      },
+      {
+       "bild": "icon:scale",
+       "text": "4 Balance des idées"
+      },
+      {
+       "bild": "icon:heart-handshake",
+       "text": "5 S’excuser et réparer – aujourd’hui"
+      },
+      {
+       "bild": "icon:help-circle",
+       "text": "6 ?"
+      }
+     ],
+     "spalten": 3,
+     "klein": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mission de pilote jusqu’à la prochaine fois : dis ta première phrase une fois à voix haute pour toi – et essaie-la quand ça se présente.",
+     "symbole": [
+      "sprechen"
+     ]
+    },
+    {
+     "art": "zielkarte",
+     "titel": "Ma première phrase",
+     "text": "Cette semaine, je m’entraîne et je l’essaie.",
+     "tage": [
+      "entraîné",
+      "essayé"
+     ]
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind liest die vier Teile der Entschuldigung an Bens Beispiel (die Fachkraft liest bei Bedarf vor). In Aufgabe 2 kreuzt es die gute Entschuldigung an und sagt, was den anderen fehlt. Aufgabe 3 ist der Kern: Das Kind kreuzt an, mit wem, wann und wo es reden will und welchen ersten Satz es wählt (ein Stichwort dazu genügt), und welche Werkzeuge es dafür braucht; niemand fragt nach Namen. Danach spielt die Fachkraft die andere Person in drei Durchgängen. Aufgabe 4 kreuzt das Kind allein an, das Werkzeugbild (Aufgabe 5) malt es zum Schluss aus, und auf der Karte (Aufgabe 6) hakt es später ab, was geschafft ist.",
+     "sagen": [
+      "Welche Entschuldigung würdest du selbst gern hören?",
+      "Welcher erste Satz passt zu dir?"
+     ],
+     "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alle Kreuz-Möglichkeiten vor. Geht die Situation zu nah, wechselt das Kind zu Ben und Sami. Das Rollenspiel darf im Chor beginnen, bis der Satz sitzt."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant lit les quatre parties de l’excuse dans l’exemple de Ben (l’adulte lit si besoin). À l’exercice 2, il coche la bonne excuse et dit ce qui manque aux autres. L’exercice 3 est le cœur : l’enfant coche avec qui, quand et où il veut parler et quelle première phrase il choisit (un mot clé suffit), puis les outils dont il a besoin ; personne ne demande de prénoms. Ensuite, l’adulte joue l’autre personne en trois tours. L’exercice 4, l’enfant le coche seul, il colorie l’image de l’outil (exercice 5) à la fin et, sur la carte (exercice 6), il coche plus tard ce qui est fait.",
+     "sagen": [
+      "Quelle excuse tu aimerais entendre toi-même ?",
+      "Quelle première phrase te ressemble ?"
+     ],
+     "wennEsKippt": "Si lire est difficile, l’adulte lit toutes les possibilités à cocher. Si la situation touche de trop près, l’enfant passe à Ben et Sami. Le jeu de rôle peut commencer en chœur, jusqu’à ce que la phrase tienne."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 1,
+   "schreiben": 0,
+   "bild": 2
+  },
+  "fr": {
+   "titel": "S’excuser et réparer : la bonne excuse",
+   "text": "L’enfant dit brièvement s’il a testé une solution avec la balance des idées. Aujourd’hui s’ajoute le cinquième outil, la bonne excuse – et ensuite, on passe au concret : l’enfant prépare une vraie situation de cette semaine (ou, s’il préfère, une situation inventée) avec tous les outils. D’abord, l’adulte montre sur un cas inventé (Ben a envoyé dans le groupe de la classe une capture d’écran gênante de Sami) les quatre parties d’une bonne excuse : ce qui s’est passé – je regrette – réparer – la prochaine fois. L’enfant examine deux mauvaises excuses (« Pardon, c’était pour rire »). Ensuite, il décide pour sa situation : avec qui, quand, où et quelle première phrase ; l’adulte joue l’autre personne en trois tours (aimable, fermée, « je m’en fiche ») et donne après chacun un point positif et au plus un conseil.",
+   "sagen": [
+    "Une bonne excuse a quatre parties : ce qui s’est passé – sans « mais ». Je regrette – pour ce que l’autre a ressenti. Ce que je répare. Et : la prochaine fois.",
+    "On ne peut pas forcer une excuse – et l’autre n’a pas à l’accepter tout de suite. Tu la dis parce que tu veux remettre la balance en équilibre.",
+    "Choisis une situation de cette semaine. Elle peut être petite – ou inventée. Avec qui, quand, où – et quelle est ta première phrase ?",
+    "Je joue l’autre personne. D’abord aimable, puis fermée. Tu dis ta phrase – et après, je te dis ce qui était bien."
+   ],
+   "wennEsKippt": "Si la situation choisie touche l’enfant de trop près, il passe à une situation inventée (Ben et Sami, Lea et Jana) – les exemples personnels sont toujours libres et on ne pose pas de questions. Si la phrase est difficile, l’adulte propose deux débuts de phrase au choix ; si le jeu de rôle devient trop réel, on dit stop tout de suite et on échange les rôles. Une phrase qui convient à l’enfant et un chemin vers de l’aide suffisent."
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s6-a",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Mein Lösungs-Fahrplan",
+  "text": "Die Fachkraft legt die fünf Blätter aus der Mappe nebeneinander – Konflikt-Check, Seitenwechsel, Ich-Botschaft, Ideen-Waage und Entschuldigung –, und das Kind berichtet kurz, was aus seinem Plan geworden ist („nicht geschafft“ ist auch eine Antwort, ohne Bewertung). Es sagt, welches Werkzeug ihm am meisten geholfen hat und welches noch wackelt, und zeigt eines davon in einer Minute Rollenspiel. Dann legt es seinen Lösungs-Fahrplan fest: Woran merke ich, dass ein Konflikt heiß wird? Welches Werkzeug nehme ich zuerst? Wie lautet mein erster Satz? Und wer hilft, wenn es allein nicht geht? Zum Schluss schaut das Kind noch einmal auf die Skala vom Anfang, und die Fachkraft übergibt das Lotsen-Patent.",
+  "sagen": [
+   "Fünf Werkzeuge, jedes für etwas anderes. Welches hast du am meisten gebraucht – und welches wackelt noch?",
+   "Zeig mir eines in einer Minute. Ich bin die andere Seite, du bestimmst, womit du beginnst.",
+   "Ein Fahrplan muss klein sein, damit er klappt: erstes Zeichen, erstes Werkzeug, erster Satz – und wer hilft.",
+   "Ein Lotse löst nicht jeden Konflikt allein. Wenn es zu heiß wird, holt er Hilfe – das gehört zum Können."
+  ],
+  "wennEsKippt": "Fällt dem Kind kein hilfreiches Werkzeug ein, nennt die Fachkraft eines, das sie beim Kind bemerkt hat („Du hast zuerst gefragt, was Ben braucht – das war der Seitenwechsel“). Hat das Kind nichts ausprobiert, wird das nicht bewertet: Der Fahrplan beginnt dann mit dem kleinsten Schritt. Das Rollenspiel darf ausfallen; dann sagt das Kind nur seinen ersten Satz.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "reflektieren",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "rollenspiel"
+  ],
+  "material": [
+   "mappe",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Lösungs-Fahrplan: Warnzeichen, erstes Werkzeug, erster Satz – und wer hilft",
+   "fr": "Plan de route : signe d’alerte, premier outil, première phrase – et qui aide"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 6,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft eine kurze Konfliktszene, und das Kind sagt, welches Werkzeug es zuerst nähme und wie sein erster Satz lautete.",
+   "fr": "Au milieu du jeu, l’adulte décrit une courte scène de conflit et l’enfant dit quel outil il prendrait en premier et quelle serait sa première phrase."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Der ganze Lotsen-Kasten",
+    "fr": "Pilotes de conflit · Toute la boîte à outils"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Schon im Kasten: Konflikt-Check · Seitenwechsel · Ich-Botschaft · Ideen-Waage · Gute Entschuldigung",
+        "Heute: alles zusammen in deinem Fahrplan."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Heute ist dein Lotsen-Kasten voll. Du packst alles zu einem Fahrplan zusammen, der zu dir passt."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Deine fünf Werkzeuge: Schreib zu jedem Finger, wann es dir hilft.",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "hand",
+     "mitte": "Waage",
+     "finger": [
+      "Konflikt-Check: wann hilft er?",
+      "Seitenwechsel: wann hilft er?",
+      "Ich-Botschaft: wann hilft sie?",
+      "Ideen-Waage: wann hilft sie?",
+      "Entschuldigung: wann hilft sie?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Wo stehst du jetzt? Kreuz an – dieselbe Skala wie am Anfang.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "skala",
+     "stufen": 5,
+     "frage": "Wenn es Streit gibt, weiß ich, was ich tun kann …",
+     "von": "gar nicht",
+     "bis": "sehr genau"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lösungs-Fahrplan: Was tust du, wenn ein Konflikt heiß wird?",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Daran merke ich, dass es heiß wird: …",
+      "Mein erstes Werkzeug: …",
+      "Mein erster Satz: …"
+     ],
+     "linien": 2
+    },
+    {
+     "art": "aufgabe",
+     "text": "Wer hilft dir, wenn es allein nicht geht? Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "meine Lehrerin oder mein Lehrer",
+      "jemand aus der Maison Relais",
+      "eine erwachsene Person, der ich vertraue",
+      "ein Freund oder eine Freundin",
+      "meine Begleitperson hier"
+     ],
+     "spalten": 2,
+     "frei": 1
+    },
+    {
+     "art": "zielkarte",
+     "titel": "Mein erster Schritt",
+     "text": "Ich probiere ihn in den nächsten zwei Wochen aus.",
+     "tage": [
+      "geübt",
+      "probiert",
+      "wiederholt"
+     ]
+    },
+    {
+     "art": "vertrag",
+     "titel": "Lotsen-Patent",
+     "text": "Für ___. Du kennst jetzt den Konflikt-Check, den Seitenwechsel, die Ich-Botschaft, die Ideen-Waage und die gute Entschuldigung. Eine Lösung ist gut, wenn sie für beide Seiten passt. Hilfe zu holen gehört dazu.",
+     "unterschriften": [
+      "Meine Begleitperson"
+     ]
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Déjà dans la boîte : Check du conflit · Changer de côté · Message-je · Balance des idées · S’excuser et réparer",
+        "Aujourd’hui : tout ensemble dans ton plan de route."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Aujourd’hui, ta boîte à outils de pilote est pleine. Tu mets tout ensemble dans un plan de route qui te ressemble."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Tes cinq outils : écris pour chaque doigt quand il t’aide.",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "hand",
+     "mitte": "Balance",
+     "finger": [
+      "Check du conflit : quand il aide ?",
+      "Changer de côté : quand ça aide ?",
+      "Message-je : quand il aide ?",
+      "Balance des idées : quand elle aide ?",
+      "Excuse : quand elle aide ?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Où en es-tu maintenant ? Coche – la même échelle qu’au début.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "skala",
+     "stufen": 5,
+     "frage": "Quand il y a une dispute, je sais ce que je peux faire …",
+     "von": "pas du tout",
+     "bis": "très bien"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ton plan de route : que fais-tu quand un conflit chauffe ?",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "À cela je remarque que ça chauffe : …",
+      "Mon premier outil : …",
+      "Ma première phrase : …"
+     ],
+     "linien": 2
+    },
+    {
+     "art": "aufgabe",
+     "text": "Qui t’aide quand tu n’y arrives pas seul ? Coche.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "ma maîtresse ou mon maître",
+      "quelqu’un de la Maison Relais",
+      "un adulte en qui j’ai confiance",
+      "un ami ou une amie",
+      "ma personne d’accompagnement ici"
+     ],
+     "spalten": 2,
+     "frei": 1
+    },
+    {
+     "art": "zielkarte",
+     "titel": "Mon premier pas",
+     "text": "Je l’essaie dans les deux prochaines semaines.",
+     "tage": [
+      "entraîné",
+      "essayé",
+      "répété"
+     ]
+    },
+    {
+     "art": "vertrag",
+     "titel": "Brevet de pilote",
+     "text": "Pour ___. Tu connais maintenant le check du conflit, changer de côté, le message-je, la balance des idées et la bonne excuse. Une solution est bonne quand elle convient aux deux côtés. Demander de l’aide en fait partie.",
+     "unterschriften": [
+      "Ma personne d’accompagnement"
+     ]
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind schreibt zu jedem Finger, wann das Werkzeug hilft; die Fachkraft blättert dazu mit ihm die Blätter der Mappe durch. In Aufgabe 2 kreuzt es dieselbe Skala an wie am Anfang; die Fachkraft legt das erste Blatt daneben, wenn das Kind es sehen möchte, und fragt: Was ist leichter geworden? Aufgabe 3 ist der Fahrplan, den das Kind allein schreibt, in Aufgabe 4 kreuzt es an, wer helfen kann. Auf der Karte hakt es später ab, was geschafft ist. Das Lotsen-Patent unterschreibt die Fachkraft zum Schluss; das Kind darf das Blatt mitnehmen.",
+     "sagen": [
+      "Welches Werkzeug war für dich das überraschendste?",
+      "Wer wäre der Erste, den du fragst, wenn es hakt?"
+     ],
+     "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind seine Sätze, und die Fachkraft schreibt Stichworte. Fehlt dem Kind ein Plan, genügt ein Satz: „Diese Woche frage ich zuerst, was die andere Seite braucht.“ Die Hand darf auch nur mit Stichworten gefüllt werden."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant écrit pour chaque doigt quand l’outil aide ; l’adulte feuillette avec lui les fiches du dossier. À l’exercice 2, l’enfant coche la même échelle qu’au début ; l’adulte pose la première fiche à côté, si l’enfant veut la voir, et demande : qu’est-ce qui est devenu plus facile ? L’exercice 3 est le plan de route, que l’enfant écrit seul ; à l’exercice 4, il coche qui peut aider. Sur la carte, il coche plus tard ce qui est fait. L’adulte signe le brevet de pilote à la fin ; l’enfant peut emporter la fiche.",
+     "sagen": [
+      "Quel outil t’a le plus surpris ?",
+      "Qui serait le premier que tu demandes, si ça coince ?"
+     ],
+     "wennEsKippt": "Si écrire est pénible, l’enfant dit ses phrases et l’adulte note quelques mots. S’il manque un plan, une phrase suffit : « Cette semaine, je demande d’abord de quoi l’autre côté a besoin. » La main peut aussi être remplie seulement avec des mots clés."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 2,
+   "schreiben": 2,
+   "bild": 1
+  },
+  "fr": {
+   "titel": "Mon plan de route pour les conflits",
+   "text": "L’adulte étale côte à côte les cinq fiches du dossier – check du conflit, changer de côté, message-je, balance des idées et excuse –, et l’enfant raconte brièvement ce qu’est devenu son plan (« pas réussi » est aussi une réponse, sans jugement). Il dit quel outil lui a le plus servi et lequel n’est pas encore sûr, et en montre un en une minute de jeu de rôle. Ensuite, il fixe son plan de route : à quoi je remarque qu’un conflit chauffe ? Quel outil je prends en premier ? Quelle est ma première phrase ? Et qui m’aide quand je n’y arrive pas seul ? Pour finir, l’enfant regarde encore l’échelle du début, et l’adulte lui remet le brevet de pilote.",
+   "sagen": [
+    "Cinq outils, chacun pour autre chose. Lequel tu as le plus utilisé – et lequel est encore fragile ?",
+    "Montre-m’en un en une minute. Je suis l’autre côté, tu décides par quoi tu commences.",
+    "Un plan de route doit être petit pour marcher : premier signe, premier outil, première phrase – et qui aide.",
+    "Un pilote ne résout pas tous les conflits seul. Quand ça chauffe trop, il va chercher de l’aide – ça fait partie du savoir-faire."
+   ],
+   "wennEsKippt": "Si l’enfant ne trouve aucun outil utile, l’adulte en nomme un qu’il a remarqué (« Tu as d’abord demandé de quoi Ben avait besoin – c’était changer de côté »). Si l’enfant n’a rien essayé, on ne juge pas : le plan commence alors par le plus petit pas. Le jeu de rôle peut être sauté ; l’enfant dit alors seulement sa première phrase."
+  }
+ },
+ {
+  "id": "ki:kurs-streit-10-12-s6-b",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Mein Lösungs-Fahrplan",
+  "text": "Die Fachkraft legt die fünf Blätter aus der Mappe nebeneinander – Konflikt-Check, Seitenwechsel, Ich-Botschaft, Ideen-Waage und Entschuldigung –, und das Kind berichtet kurz, was aus seinem Plan geworden ist („nicht geschafft“ ist auch eine Antwort, ohne Bewertung). Es sagt, welches Werkzeug ihm am meisten geholfen hat und welches noch wackelt, und zeigt eines davon in einer Minute Rollenspiel. Dann legt es seinen Lösungs-Fahrplan fest: Woran merke ich, dass ein Konflikt heiß wird? Welches Werkzeug nehme ich zuerst? Wie lautet mein erster Satz? Und wer hilft, wenn es allein nicht geht? Zum Schluss schaut das Kind noch einmal auf die Skala vom Anfang, und die Fachkraft übergibt das Lotsen-Patent.",
+  "sagen": [
+   "Fünf Werkzeuge, jedes für etwas anderes. Welches hast du am meisten gebraucht – und welches wackelt noch?",
+   "Zeig mir eines in einer Minute. Ich bin die andere Seite, du bestimmst, womit du beginnst.",
+   "Ein Fahrplan muss klein sein, damit er klappt: erstes Zeichen, erstes Werkzeug, erster Satz – und wer hilft.",
+   "Ein Lotse löst nicht jeden Konflikt allein. Wenn es zu heiß wird, holt er Hilfe – das gehört zum Können."
+  ],
+  "wennEsKippt": "Fällt dem Kind kein hilfreiches Werkzeug ein, nennt die Fachkraft eines, das sie beim Kind bemerkt hat („Du hast zuerst gefragt, was Ben braucht – das war der Seitenwechsel“). Hat das Kind nichts ausprobiert, wird das nicht bewertet: Der Fahrplan beginnt dann mit dem kleinsten Schritt. Das Rollenspiel darf ausfallen; dann sagt das Kind nur seinen ersten Satz.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "reflektieren",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-28",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "rollenspiel"
+  ],
+  "material": [
+   "mappe",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Lösungs-Fahrplan: Warnzeichen, erstes Werkzeug, erster Satz – und wer hilft",
+   "fr": "Plan de route : signe d’alerte, premier outil, première phrase – et qui aide"
+  },
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "linie": {
+   "id": "kurs-streit-10-12",
+   "nr": 6,
+   "faden": {
+    "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+    "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+   }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft eine kurze Konfliktszene, und das Kind sagt, welches Werkzeug es zuerst nähme und wie sein erster Satz lautete.",
+   "fr": "Au milieu du jeu, l’adulte décrit une courte scène de conflit et l’enfant dit quel outil il prendrait en premier et quelle serait sa première phrase."
+  },
+  "uebungsblatt": {
+   "titel": {
+    "de": "Konflikt-Lotsen · Der ganze Lotsen-Kasten",
+    "fr": "Pilotes de conflit · Toute la boîte à outils"
+   },
+   "de": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "Die Lotsen-Waage",
+       "punkte": [
+        "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+        "Schon im Kasten: Konflikt-Check · Seitenwechsel · Ich-Botschaft · Ideen-Waage · Gute Entschuldigung",
+        "Heute: alles zusammen in deinem Fahrplan."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Heute ist dein Lotsen-Kasten voll. Du packst alles zu einem Fahrplan zusammen, der zu dir passt."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "Die Lotsen-Waage",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Deine fünf Werkzeuge: Wie viel helfen sie dir? Kreuz in jeder Zeile an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Konflikt-Check",
+      "Seitenwechsel",
+      "Ich-Botschaft",
+      "Ideen-Waage",
+      "Entschuldigung"
+     ],
+     "optionen": [
+      "hilft mir viel",
+      "manchmal",
+      "noch üben"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Wo stehst du jetzt? Kreuz an – dieselbe Skala wie am Anfang.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "skala",
+     "stufen": 5,
+     "frage": "Wenn es Streit gibt, weiß ich, was ich tun kann …",
+     "von": "gar nicht",
+     "bis": "sehr genau"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Dein Lösungs-Fahrplan: Was tust du, wenn ein Konflikt heiß wird? Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "mein Herz klopft schneller",
+      "meine Stimme wird laut",
+      "ich will nur noch weg"
+     ],
+     "titel": "Daran merke ich, dass es heiß wird:",
+     "spalten": 1
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Konflikt-Check",
+      "Seitenwechsel",
+      "Ich-Botschaft",
+      "Ideen-Waage",
+      "Entschuldigung"
+     ],
+     "titel": "Mein erstes Werkzeug:",
+     "spalten": 3
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Ich möchte verstehen, worum es geht.",
+      "Wenn …, fühle ich mich … Ich wünsche mir …",
+      "Wie wäre es, wenn …?",
+      "Es tut mir leid, dass …"
+     ],
+     "titel": "Mein erster Satz:",
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Wer hilft dir, wenn es allein nicht geht? Kreuz an.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "meine Lehrerin oder mein Lehrer",
+      "jemand aus der Maison Relais",
+      "eine erwachsene Person, der ich vertraue",
+      "ein Freund oder eine Freundin",
+      "meine Begleitperson hier"
+     ],
+     "spalten": 2,
+     "frei": 1
+    },
+    {
+     "art": "zielkarte",
+     "titel": "Mein erster Schritt",
+     "text": "Ich probiere ihn in den nächsten zwei Wochen aus.",
+     "tage": [
+      "geübt",
+      "probiert",
+      "wiederholt"
+     ]
+    },
+    {
+     "art": "vertrag",
+     "titel": "Lotsen-Patent",
+     "text": "Für ___. Du kennst jetzt den Konflikt-Check, den Seitenwechsel, die Ich-Botschaft, die Ideen-Waage und die gute Entschuldigung. Eine Lösung ist gut, wenn sie für beide Seiten passt. Hilfe zu holen gehört dazu.",
+     "unterschriften": [
+      "Meine Begleitperson"
+     ]
+    }
+   ],
+   "fr": [
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "wissen",
+       "titel": "La balance du pilote",
+       "punkte": [
+        "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+        "Déjà dans la boîte : Check du conflit · Changer de côté · Message-je · Balance des idées · S’excuser et réparer",
+        "Aujourd’hui : tout ensemble dans ton plan de route."
+       ]
+      },
+      {
+       "art": "text",
+       "text": "Aujourd’hui, ta boîte à outils de pilote est pleine. Tu mets tout ensemble dans un plan de route qui te ressemble."
+      }
+     ],
+     "rechts": [
+      {
+       "art": "bild",
+       "bild": "motiv:waage",
+       "groesse": "m",
+       "text": "La balance du pilote",
+       "ausrichtung": "mitte"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Tes cinq outils : combien t’aident-ils ? Coche dans chaque ligne.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Check du conflit",
+      "Changer de côté",
+      "Message-je",
+      "Balance des idées",
+      "Excuse"
+     ],
+     "optionen": [
+      "m’aide beaucoup",
+      "parfois",
+      "à travailler"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "text": "Où en es-tu maintenant ? Coche – la même échelle qu’au début.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "skala",
+     "stufen": 5,
+     "frage": "Quand il y a une dispute, je sais ce que je peux faire …",
+     "von": "pas du tout",
+     "bis": "très bien"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ton plan de route : que fais-tu quand un conflit chauffe ? Coche.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "mon cœur bat plus vite",
+      "ma voix devient forte",
+      "je veux juste partir"
+     ],
+     "titel": "À cela je remarque que ça chauffe :",
+     "spalten": 1
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Check du conflit",
+      "Changer de côté",
+      "Message-je",
+      "Balance des idées",
+      "Excuse"
+     ],
+     "titel": "Mon premier outil :",
+     "spalten": 3
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "Je voudrais comprendre de quoi il s’agit.",
+      "Quand …, je me sens … J’aimerais …",
+      "Et si on …?",
+      "Je regrette que …"
+     ],
+     "titel": "Ma première phrase :",
+     "spalten": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Qui t’aide quand tu n’y arrives pas seul ? Coche.",
+     "symbole": [
+      "ankreuzen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "ma maîtresse ou mon maître",
+      "quelqu’un de la Maison Relais",
+      "un adulte en qui j’ai confiance",
+      "un ami ou une amie",
+      "ma personne d’accompagnement ici"
+     ],
+     "spalten": 2,
+     "frei": 1
+    },
+    {
+     "art": "zielkarte",
+     "titel": "Mon premier pas",
+     "text": "Je l’essaie dans les deux prochaines semaines.",
+     "tage": [
+      "entraîné",
+      "essayé",
+      "répété"
+     ]
+    },
+    {
+     "art": "vertrag",
+     "titel": "Brevet de pilote",
+     "text": "Pour ___. Tu connais maintenant le check du conflit, changer de côté, le message-je, la balance des idées et la bonne excuse. Une solution est bonne quand elle convient aux deux côtés. Demander de l’aide en fait partie.",
+     "unterschriften": [
+      "Ma personne d’accompagnement"
+     ]
+    }
+   ],
+   "anleitung": {
+    "de": {
+     "text": "Aufgabe 1 gemeinsam: Das Kind kreuzt für jedes der fünf Werkzeuge an, wie viel es ihm hilft; die Fachkraft blättert dazu mit ihm die Blätter der Mappe durch. In Aufgabe 2 kreuzt es dieselbe Skala an wie am Anfang; die Fachkraft legt das erste Blatt daneben, wenn das Kind es sehen möchte, und fragt: Was ist leichter geworden? Aufgabe 3 ist der Fahrplan: Das Kind kreuzt sein Warnzeichen, sein erstes Werkzeug und seinen ersten Satz an; in Aufgabe 4 kreuzt es an, wer helfen kann. Auf der Karte hakt es später ab, was geschafft ist. Das Lotsen-Patent unterschreibt die Fachkraft zum Schluss; das Kind darf das Blatt mitnehmen.",
+     "sagen": [
+      "Welches Werkzeug war für dich das überraschendste?",
+      "Wer wäre der Erste, den du fragst, wenn es hakt?"
+     ],
+     "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alle Möglichkeiten vor, und das Kind zeigt darauf. Fehlt dem Kind ein Plan, genügt ein Kreuz: das erste Werkzeug. Das Rollenspiel darf ausfallen."
+    },
+    "fr": {
+     "text": "Exercice 1 ensemble : l’enfant coche pour chacun des cinq outils combien il l’aide ; l’adulte feuillette avec lui les fiches du dossier. À l’exercice 2, l’enfant coche la même échelle qu’au début ; l’adulte pose la première fiche à côté, si l’enfant veut la voir, et demande : qu’est-ce qui est devenu plus facile ? L’exercice 3 est le plan de route : l’enfant coche son signe d’alerte, son premier outil et sa première phrase ; à l’exercice 4, il coche qui peut aider. Sur la carte, il coche plus tard ce qui est fait. L’adulte signe le brevet de pilote à la fin ; l’enfant peut emporter la fiche.",
+     "sagen": [
+      "Quel outil t’a le plus surpris ?",
+      "Qui serait le premier que tu demandes, si ça coince ?"
+     ],
+     "wennEsKippt": "Si lire est difficile, l’adulte lit toutes les possibilités et l’enfant les montre. S’il manque un plan, une croix suffit : le premier outil. Le jeu de rôle peut être sauté."
+    }
+   }
+  },
+  "zugang": {
+   "lesen": 1,
+   "schreiben": 0,
+   "bild": 2
+  },
+  "fr": {
+   "titel": "Mon plan de route pour les conflits",
+   "text": "L’adulte étale côte à côte les cinq fiches du dossier – check du conflit, changer de côté, message-je, balance des idées et excuse –, et l’enfant raconte brièvement ce qu’est devenu son plan (« pas réussi » est aussi une réponse, sans jugement). Il dit quel outil lui a le plus servi et lequel n’est pas encore sûr, et en montre un en une minute de jeu de rôle. Ensuite, il fixe son plan de route : à quoi je remarque qu’un conflit chauffe ? Quel outil je prends en premier ? Quelle est ma première phrase ? Et qui m’aide quand je n’y arrive pas seul ? Pour finir, l’enfant regarde encore l’échelle du début, et l’adulte lui remet le brevet de pilote.",
+   "sagen": [
+    "Cinq outils, chacun pour autre chose. Lequel tu as le plus utilisé – et lequel est encore fragile ?",
+    "Montre-m’en un en une minute. Je suis l’autre côté, tu décides par quoi tu commences.",
+    "Un plan de route doit être petit pour marcher : premier signe, premier outil, première phrase – et qui aide.",
+    "Un pilote ne résout pas tous les conflits seul. Quand ça chauffe trop, il va chercher de l’aide – ça fait partie du savoir-faire."
+   ],
+   "wennEsKippt": "Si l’enfant ne trouve aucun outil utile, l’adulte en nomme un qu’il a remarqué (« Tu as d’abord demandé de quoi Ben avait besoin – c’était changer de côté »). Si l’enfant n’a rien essayé, on ne juge pas : le plan commence alors par le plus petit pas. Le jeu de rôle peut être sauté ; l’enfant dit alors seulement sa première phrase."
+  }
+ },
+ {
+  "id": "r:kurs-streit-10-12-logbuch",
+  "kurs": "kurs-streit-10-12",
+  "quelle": {
+   "art": "ritual",
+   "titel": "Einzelkurs Konflikt-Lotsen"
+  },
+  "titel": "Ins Lotsen-Logbuch",
+  "text": "Das Blatt von heute kommt ins Lotsen-Logbuch (eine Mappe, die bei der Fachkraft bleibt). Auf dem Umschlag ist eine Fahrtroute mit fünf Stationen und einem Hafen gezeichnet; das Kind malt die Station aus, die es heute erreicht hat – in der sechsten Stunde den Hafen. Zum Schluss halten beide noch einmal die Hände wie Waagschalen: gleich hoch, im Gleichgewicht.",
+  "sagen": [
+   "Heute ist ein neues Werkzeug dazugekommen. Das Blatt kommt ins Lotsen-Logbuch, und du malst die Station aus.",
+   "Beide Hände gleich hoch – im Gleichgewicht. Bis zum nächsten Mal."
+  ],
+  "wennEsKippt": "Mag das Kind nicht malen, legt es das Blatt selbst in die Mappe, und die Fachkraft malt die Station nach seiner Ansage aus. Ist die Zeit knapp, reicht die Geste mit den Händen.",
+  "rolle": [
+   "abschluss"
+  ],
+  "thema": [],
+  "eldib": [],
+  "kompetenz": [],
+  "alter": {
+   "von": 10,
+   "bis": 12
+  },
+  "dauer": {
+   "min": 1,
+   "typ": 3,
+   "max": 4
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "malen"
+  ],
+  "material": [
+   "mappe",
+   "stifte"
+  ],
+  "vorbereitung": "Eine Mappe als Lotsen-Logbuch bereitlegen; beim ersten Mal Namen und „Lotsen-Logbuch“ auf den Umschlag schreiben und eine Fahrtroute mit fünf Stationen und einem Hafen zeichnen.",
+  "ohneZiel": true,
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Dans le carnet de bord",
+   "text": "La fiche d’aujourd’hui va dans le carnet de bord du pilote (une chemise qui reste chez l’adulte). Sur la couverture est dessinée une route avec cinq étapes et un port ; l’enfant colorie l’étape qu’il a atteinte aujourd’hui – à la sixième rencontre, le port. Pour finir, tous les deux tiennent encore une fois les mains comme les plateaux d’une balance : à la même hauteur, en équilibre.",
+   "sagen": [
+    "Aujourd’hui, un nouvel outil est arrivé. La fiche va dans le carnet de bord, et tu colories l’étape.",
+    "Les deux mains à la même hauteur – en équilibre. À la prochaine."
+   ],
+   "wennEsKippt": "Si l’enfant ne veut pas colorier, il range lui-même la fiche, et l’adulte colorie l’étape selon ce qu’il dit. Si le temps manque, le geste des mains suffit.",
+   "vorbereitung": "Préparer une chemise comme carnet de bord du pilote ; la première fois, écrire le prénom et « Carnet de bord » sur la couverture et y dessiner une route avec cinq étapes et un port."
+  }
+ }
+]

@@ -567,8 +567,17 @@ function themenRahmenPasst(c: Kontext, kern: KatalogEintrag): boolean {
 /** Der Satz, mit dem ein Einstieg ab Sitzung 2 an die letzte Sitzung anknüpft (roter Faden): die Übung beim Namen oder, nach
  *  einer Übertragen-Sitzung, der vereinbarte kleine Versuch (Blind-Bewertung 11: „wird in der Folgesitzung nirgends
  *  nachgefragt“). Gilt für den eigenen Einstieg und für Themen-Einstiege. */
-function anknuepfen(c: Kontext, nr: number, vorher: { de: string; fr: string } | undefined, nachVersuch: boolean, bruecke?: { de: string; fr: string }): { de: string; fr: string } {
+function anknuepfen(c: Kontext, nr: number, vorher: { de: string; fr: string } | undefined, nachVersuch: boolean, bruecke?: { de: string; fr: string }, auftrag?: { de: string; fr: string }): { de: string; fr: string } {
   const v = nr > 1 ? vorher : undefined
+  // Einzelkurs: der Auftrag vom letzten Blatt wird nachgefragt (Referenzmessung 16.10., alle vier Gutachten: „Aufträge
+  // verpuffen – kein Einstieg fragt danach“)
+  if (auftrag && nr > 1) {
+    const still = (c.p.achtung ?? []).length > 0 || krisenlage(c)
+    const a = { de: auftrag.de ? ` („${auftrag.de}“)` : '', fr: auftrag.fr ? ` (« ${auftrag.fr} »)` : '' }
+    return still
+      ? { de: `Zuerst erinnert die Fachkraft an den Auftrag vom letzten Blatt${a.de} – ohne nachzufragen. `, fr: `D’abord, l’adulte rappelle la mission de la dernière fiche${a.fr} – sans poser de questions. ` }
+      : { de: `Zuerst kurz zum Auftrag vom letzten Blatt${a.de}: das Blatt von damals aufschlagen und fragen, wie es war. „Nicht ausprobiert“ ist auch eine Antwort – was versucht wurde, wird gewürdigt. `, fr: `D’abord, revenir brièvement sur la mission de la dernière fiche${a.fr} : ouvrir la fiche de la séance d’avant et demander comment ça s’est passé. « Pas essayé » est aussi une réponse – on valorise ce qui a été tenté. ` }
+  }
   // Lernpfad (Stufe 4): die Übung baut auf der letzten auf – die Fachkraft sagt die Brücke statt nur den Titel von damals
   // (Blind-Bewertung 13: „Sitzung 2 übt nicht, was Sitzung 1 lehrt“)
   if (v && bruecke && !nachVersuch) {
@@ -609,6 +618,25 @@ function vorigeUebung(c: Kontext, fruehere: string[], kernTitel: unknown): { vor
     : undefined
   // (unter 8 gibt es beim Übertragen keinen Versuch – „keine Aufgabe für zu Hause“, Blind-Bewertung 13)
   return { vorher, nachVersuch: fruehere[fruehere.length - 1] === 'pg:uebertragen' && c.weg === 'gruendlich' && c.alter >= 6 }
+}
+
+/** Einzelkurs: der kleine Auftrag „bis zum nächsten Mal“ vom Blatt der letzten Kurs-Sitzung (letzte passende Aufgabe, ohne
+ *  Vorspann bis zum Doppelpunkt, erster Satz). Leer, wenn das Blatt keinen erkennbaren Auftrag hat; undefined ohne Kurs. */
+const AUFTRAG_RE = /nächsten Mal|Auftrag|Mission|prochaine fois|mission/i
+function kursAuftrag(c: Kontext, fruehere: string[], kern: KatalogEintrag | undefined): { de: string; fr: string } | undefined {
+  const vorRef = fruehere[fruehere.length - 1]
+  const vor = vorRef ? c.k.eintraege.get(vorRef) : undefined
+  if (kern?.typ !== 'schritt' || !kern.linie?.id.startsWith('kurs-') || vor?.typ !== 'schritt' || vor.linie?.id !== kern.linie.id || vor.linie.nr + 1 !== kern.linie.nr) return undefined
+  // greift die Sitzung den Auftrag schon selbst auf (am Anfang ihres Texts), nicht doppelt
+  if (AUFTRAG_RE.test(textVon(kern, 'de').text.slice(0, 300))) return undefined
+  const satz = (sp: 'de' | 'fr') => {
+    const bl = (vor.uebungsblatt?.[sp] ?? []) as { art?: string; text?: string }[]
+    const t = [...bl].reverse().find((b) => b.art === 'aufgabe' && AUFTRAG_RE.test(b.text ?? ''))?.text ?? ''
+    const ohneVorspann = t.replace(/^[^:]{0,70}?(?:nächsten Mal|Auftrag|Mission|prochaine fois|mission)[^:]{0,40}:\s*/i, '')
+    const erster = (ohneVorspann.match(/^.+?[.!?](?=\s|$)/) ?? [ohneVorspann])[0].trim()
+    return erster.length > 140 ? erster.slice(0, 137).replace(/\s+\S*$/, '') + ' …' : erster
+  }
+  return { de: satz('de'), fr: satz('fr') }
 }
 
 /** Brücke des Lernpfads (Stufe 4): der Kern ist ein späterer Schritt derselben Reihe wie die Übung der letzten Sitzung. */
@@ -655,13 +683,15 @@ function nachLinie(c: Kontext, auswahl: Wahl[], fruehere: string[]): Wahl[] {
 /** Eigener Einstieg, der den Kern der Stunde ankündigt (wenn keine Einheit einen passenden hat). Ab Sitzung 2 knüpft er an
  *  die Übung der letzten Sitzung beim Namen an (Blind-Bewertung 10: „derselbe Textbaustein in jeder Sitzung“, „was von der
  *  Übung davor hängen geblieben ist“ ohne Titel, „Beispiel aus ihrem eigenen Alltag“ ohne Anleitung). */
-function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1, titel?: { de: string; fr: string }, neuesZiel?: { de: string; fr: string }, vorher?: { de: string; fr: string }, nachVersuch = false, bruecke?: { de: string; fr: string }): PlanSchritt {
+function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1, titel?: { de: string; fr: string }, neuesZiel?: { de: string; fr: string }, vorher?: { de: string; fr: string }, nachVersuch = false, bruecke?: { de: string; fr: string }, auftrag?: { de: string; fr: string }): PlanSchritt {
   const e = c.k.eintraege.get('pg:einstieg')!
   const de = titel?.de ?? textVon(kern, 'de').titel
   const fr = titel?.fr ?? (kern.typ === 'schritt' && kern.fr ? kern.fr.titel : de)
   const ohnePunkt = (t: string) => t.trim().replace(/[.!]$/, '')
-  const ziel = neuesZiel ? { de: `Heute kommt das zweite Ziel der Folge dazu: „${ohnePunkt(neuesZiel.de)}“. `, fr: `Aujourd’hui, le deuxième objectif de la série arrive : « ${ohnePunkt(neuesZiel.fr)} ». ` } : { de: '', fr: '' }
-  const an = anknuepfen(c, nr, vorher, nachVersuch, bruecke)
+  // (im Einzelkurs gehören alle Ziele von Anfang an zum Kurs – kein „zweites Ziel kommt dazu“)
+  const imKurs = kern.typ === 'schritt' && !!kern.linie?.id.startsWith('kurs-')
+  const ziel = neuesZiel && !imKurs ? { de: `Heute kommt das zweite Ziel der Folge dazu: „${ohnePunkt(neuesZiel.de)}“. `, fr: `Aujourd’hui, le deuxième objectif de la série arrive : « ${ohnePunkt(neuesZiel.fr)} ». ` } : { de: '', fr: '' }
+  const an = anknuepfen(c, nr, vorher, nachVersuch, bruecke, auftrag)
   // Jugendliche: ohne „Material zeigen“ und „das Kind“; ab Sitzung 2 kurz an die letzte anknüpfen (roter Faden)
   if (c.alter >= 12) {
     return {
@@ -1188,7 +1218,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         // das zweite Ziel nur ankündigen, wenn der Kern es auch übt (Messung 2, 16.10.: „le deuxième objectif arrive“ vor einer
         // Übung zum ersten Ziel – es gab keine eigene Übung zum zweiten)
         const neu = o.neuesZiel && kern.eldib.some((x) => x.code === o.kernZiel) ? o.neuesZiel : undefined
-        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr, kernTitel, neu, vorher, nachVersuch, brueckeVon(c, o.fruehereKerne ?? [], kern))
+        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr, kernTitel, neu, vorher, nachVersuch, brueckeVon(c, o.fruehereKerne ?? [], kern), kursAuftrag(c, o.fruehereKerne ?? [], kern))
         continue
       }
     }
@@ -1348,6 +1378,19 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     }
   }
   const schritte = ergebnis.filter((x): x is PlanSchritt => !!x)
+  // Einzelkurs ohne eigenen Einstieg (Vorschule, Rückblick-Sitzung): der Auftrag vom letzten Blatt steht vor dem Kern
+  // (Referenzmessung 16.10.: „der Plan aus Stunde 5 wird in Stunde 6 nicht nachgefragt“)
+  const kursKern = schritte.find((x) => x.rolle === 'kern')
+  const kursE = kursKern ? c.k.eintraege.get(kursKern.ref) : undefined
+  if (kursKern && kursE && !schritte.some((x) => x.rolle === 'einstieg')) {
+    const auf = kursAuftrag(c, o.fruehereKerne ?? [], kursE)
+    const an = auf ? anknuepfen(c, o.nr, undefined, false, undefined, auf) : undefined
+    if (an?.de) {
+      const de = kursKern.ueber?.text ?? textVon(kursE, 'de').text
+      const fr = kursKern.ueber?.['fr.text'] ?? (kursE.typ === 'schritt' && kursE.fr ? kursE.fr.text : de)
+      kursKern.ueber = { ...(kursKern.ueber ?? {}), text: an.de + de, 'fr.text': an.fr + fr }
+    }
+  }
   // Rituale nicht länger als gedacht (Blind-Bewertung 8: „6 Minuten Ankommen für ein Klopfzeichen“): der Rest geht an den Kern
   for (const x of schritte) {
     if (x.rolle !== 'ankommen' && x.rolle !== 'abschluss') continue

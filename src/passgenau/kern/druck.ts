@@ -607,6 +607,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   const werkzeug = kernE?.typ === 'schritt' ? kernE.werkzeug?.[sp] : undefined
   // … und je Sitzung ein anderer, konkreter Satz mit dem Titel der Übung (vorher in jeder Sitzung derselbe „kleine Trick“)
   const kernTitel = kernE && !kernX!.ref.startsWith('pg:') ? textVon(kernE, sp).titel.replace(/[.!?]$/, '') : undefined
+  const kursNr = kernE?.typ === 'schritt' && kernE.linie?.id.startsWith('kurs-') && !kernX!.ref.startsWith('pg:') ? kernE.linie.nr : 0
   // der genaue Ich-Satz des Ziels, das der Kern übt, statt des Felds (Blind-Bewertung 13: „Ich komme, wenn man mich ruft“
   // lief als „gut mit anderen zusammenarbeiten“, „Ich rechne mit Geld bis 10 Euro“ als „Dinge im Alltag selbst schaffen“)
   // Übertragen: das Ziel der übertragenen Übung; Rückblick: das erste Ziel der Folge
@@ -635,6 +636,12 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     ? sp === 'fr' ? 'Aujourd’hui, on regarde en arrière : quel jeu on refait ? Tu peux montrer.' : 'Heute schauen wir zurück: Welches Spiel machen wir noch einmal? Du darfst zeigen.'
     : ichZit && kernX?.ref === 'pg:folge-transfer'
     ? sp === 'fr' ? `Aujourd’hui, on regarde en arrière : ${ichZit} – qu’est-ce qui t’a aidé ?` : `Heute schauen wir zurück auf ${ichZit} – was hat dir geholfen?`
+    // Einzelkurs: die Sitzung beim Namen statt des Förderplan-Satzes (Referenzmessung 16.10.: „Dafür probieren wir ‚…‘ aus“
+    // klang mechanisch, und der Ich-Satz des Ziels passte nicht immer zu dem, was die Sitzung übt)
+    : kursNr && kernTitel
+    ? kursNr === 1
+      ? sp === 'fr' ? `Aujourd’hui, on commence quelque chose de nouveau : « ${kernTitel} ».` : `Heute fangen wir etwas Neues an: „${kernTitel}“.`
+      : sp === 'fr' ? `Aujourd’hui, on continue : « ${kernTitel} ».` : `Heute geht es weiter: „${kernTitel}“.`
     : ichZit
     ? sp === 'fr'
       ? `Aujourd’hui, on s’entraîne : ${ichZit}${kernTitel ? ` Pour ça, on essaie « ${kernTitel} ».` : ''}`
