@@ -4759,17 +4759,17 @@
    "art": "praxis",
    "titel": "Einzelstunde Jugend"
   },
-  "titel": "Heiß, warm, cool: dieselbe Nachricht",
-  "text": "Die Fachkraft erfindet eine Lage: Ein Kumpel hat sich vor zwei Wochen ein Ladekabel geliehen und es noch nicht zurückgebracht. Runde 1: Sie sagt die Nachricht in drei Temperaturen: heiß („Danke für nichts, war ja klar“), warm („Mich nervt das echt, bring es bitte mit“), cool („Kannst du mir das Kabel morgen mitbringen?“). Der oder die Jugendliche antwortet jedes Mal als der Kumpel. Runde 2: Getauscht – er oder sie sagt es in drei Temperaturen, die Fachkraft antwortet ehrlich, wie sie reagieren würde. Dann wählt er oder sie die Fassung, die er oder sie wirklich senden würde, und schreibt sie in einer Zeile auf.",
+  "titel": "Heiß, lauwarm, kühl: dieselbe Nachricht",
+  "text": "Die Fachkraft erfindet eine Lage: Ein Kumpel hat sich vor zwei Wochen ein Ladekabel geliehen und es noch nicht zurückgebracht. Sie nennt die Skala: heiß = Vorwurf oder Sarkasmus, auch mit Bitte; lauwarm = Ärger gesagt, aber keine Bitte; kühl = ein Gefühl in einem Satz plus eine konkrete Bitte, ohne Vorwurf. Runde 1: Sie sagt die Nachricht in drei Temperaturen: heiß („Danke für nichts, war ja klar“), lauwarm („Mich nervt das echt, dass das Kabel noch fehlt“), kühl („Ich bin genervt, weil ich das Kabel brauche. Kannst du es mir morgen mitbringen?“). Der oder die Jugendliche antwortet jedes Mal als der Kumpel. Runde 2: Getauscht – er oder sie sagt es in drei Temperaturen, die Fachkraft antwortet ehrlich, wie sie reagieren würde. Dann wählt er oder sie die Fassung, die er oder sie wirklich senden würde, und schreibt sie in einer Zeile auf.",
   "sagen": [
-   "Gleich kommt dieselbe Nachricht in drei Temperaturen. Du bist der Kumpel – sag mir, was bei dir ankommt.",
-   "Heiß, warm, cool – bei welcher hättest du am liebsten zurückgeschrieben, und bei welcher gar nicht?",
-   "Jetzt bist du der Absender. Sag es erst heiß und dann so, dass dein Kumpel es annehmen kann."
+   "Heiß ist Vorwurf oder Sarkasmus, lauwarm ist Ärger ohne Bitte, kühl ist ein Gefühl plus konkrete Bitte. Du bist der Kumpel – sag mir bei jeder Nachricht, was bei dir ankommt.",
+   "Heiß, lauwarm, kühl – bei welcher hättest du am liebsten zurückgeschrieben, und bei welcher gar nicht?",
+   "Jetzt bist du der Absender. Sag es erst heiß und dann kühl: ein Gefühl in einem Satz, eine konkrete Bitte, kein Vorwurf."
   ],
-  "wennEsKippt": "Erinnert die Lage an etwas Echtes oder wird die heiße Fassung zu laut, nimmt man eine harmlosere Lage (ein Kumpel antwortet seit einem Tag nicht) oder lässt heiß aus, und es bleibt bei warm und cool. Fällt die warme Fassung schwer, schlägt die Fachkraft ein Gefühlswort vor (genervt, übergangen, enttäuscht), und der oder die Jugendliche sucht ein eigenes.",
+  "wennEsKippt": "Erinnert die Lage an etwas Echtes oder wird die heiße Fassung zu laut, nimmt man eine harmlosere Lage (ein Kumpel antwortet seit einem Tag nicht) oder lässt heiß aus, und es bleibt bei lauwarm und kühl. Fällt die kühle Fassung schwer, schlägt die Fachkraft ein Gefühlswort vor (genervt, übergangen, enttäuscht), und der oder die Jugendliche sucht ein eigenes.",
   "werkzeug": {
-   "de": "Nachricht eine Stufe kühler: sagen, was nervt, und was ich brauche",
-   "fr": "Un message un cran plus cool : dire ce qui m’énerve et ce qu’il me faut"
+   "de": "Nachricht kühl sagen: ein Gefühl in einem Satz und eine konkrete Bitte, ohne Vorwurf",
+   "fr": "Un message cool : un ressenti en une phrase et une demande concrète, sans reproche"
   },
   "uebertragbar": true,
   "rolle": [
@@ -4823,11 +4823,11 @@
   "ort": "raum",
   "fr": {
    "titel": "Chaud, tiède, cool : le même message",
-   "text": "L’adulte invente une situation : un copain a emprunté un chargeur il y a deux semaines et ne l’a pas encore rendu. Manche 1 : l’adulte dit le message à trois températures : chaud (« Merci pour rien, comme d’habitude »), tiède (« Ça m’énerve vraiment, rapporte-le, s’il te plaît »), cool (« Tu peux me rapporter le chargeur demain ? »). Le ou la jeune répond chaque fois en copain. Manche 2 : on inverse – il ou elle dit le message à trois températures, l’adulte répond franchement comme il réagirait. Ensuite le ou la jeune choisit la version qu’il ou elle enverrait vraiment et la note en une ligne.",
+   "text": "L’adulte invente une situation : un copain a emprunté un chargeur il y a deux semaines et ne l’a pas encore rendu. Il donne l’échelle : chaud = reproche ou sarcasme, même avec une demande ; tiède = énervement dit, mais pas de demande ; cool = un ressenti en une phrase plus une demande concrète, sans reproche. Manche 1 : l’adulte dit le message à trois températures : chaud (« Merci pour rien, comme d’habitude »), tiède (« Ça m’énerve vraiment que le chargeur ne soit pas encore là »), cool (« Je suis énervé parce que j’ai besoin du chargeur. Tu peux me le rapporter demain ? »). Le ou la jeune répond chaque fois en copain. Manche 2 : on inverse – il ou elle dit le message à trois températures, l’adulte répond franchement comme il réagirait. Ensuite le ou la jeune choisit la version qu’il ou elle enverrait vraiment et la note en une ligne.",
    "sagen": [
-    "Tu vas entendre le même message à trois températures. Tu es le copain – dis-moi ce qui t’arrive.",
+    "Chaud, c’est un reproche ou du sarcasme ; tiède, de l’énervement sans demande ; cool, un ressenti plus une demande concrète. Tu es le copain – dis-moi, pour chaque message, ce qui t’arrive.",
     "Chaud, tiède, cool : auquel aurais-tu le plus volontiers répondu, et auquel pas du tout ?",
-    "Maintenant c’est toi qui écris. Dis-le d’abord chaud, puis de façon que ton copain puisse l’accepter."
+    "Maintenant c’est toi qui écris. Dis-le d’abord chaud, puis cool : un ressenti en une phrase, une demande concrète, pas de reproche."
    ],
    "wennEsKippt": "Si la situation rappelle quelque chose de vécu ou si la version chaude devient trop forte, on prend une situation plus anodine (un copain ne répond plus depuis un jour) ou on saute le chaud, et il reste le tiède et le cool. Si la version tiède est difficile, l’adulte propose un mot de ressenti (agacé, mis de côté, déçu) et le ou la jeune en cherche un à lui ou elle.",
    "kurz": "Un message chaud, tiède, cool · écouter la réaction · en choisir un",
@@ -4856,6 +4856,16 @@
      "text": "Léa hat Elias gestern eine Sprachnachricht geschickt. Heute sieht sie, dass er online war, aber nicht geantwortet hat. Am Abend schreibt er nur: „Hatte keine Zeit.“"
     },
     {
+     "art": "info",
+     "symbol": "merke",
+     "titel": "So liest man die Temperatur",
+     "punkte": [
+      "heiß: Vorwurf oder Sarkasmus – auch wenn eine Bitte dabei ist",
+      "lauwarm: Ärger gesagt, aber keine Bitte",
+      "kühl: ein Gefühl in einem Satz plus eine konkrete Bitte, ohne Vorwurf"
+     ]
+    },
+    {
      "art": "zuordnen",
      "titel": [
       "Verbinde: Léas Nachricht …",
@@ -4863,13 +4873,13 @@
      ],
      "links": [
       "„Online, aber keine Antwort. Typisch.“",
-      "„Mich nervt es gerade, dass keine Antwort kam. Antworte mir bitte kurz.“",
-      "„Hast du meine Nachricht gesehen? Ich brauche kurz eine Antwort.“"
+      "„Mich nervt es gerade, dass keine Antwort kam.“",
+      "„Ich bin gerade etwas genervt, weil keine Antwort kam. Kannst du mir heute Abend kurz antworten?“"
      ],
      "rechts": [
-      "cool",
+      "kühl",
       "heiß",
-      "warm"
+      "lauwarm"
      ]
     },
     {
@@ -4877,17 +4887,17 @@
      "titel": "Was macht eine Nachricht kühler? Kreuz an, mehrere gehen.",
      "items": [
       "Wörter wie „immer“ und „typisch“ weglassen",
-      "sagen, was ich brauche",
+      "eine konkrete Bitte sagen (was ich brauche)",
       "in Großbuchstaben schreiben, damit er es merkt",
-      "sagen, dass mich etwas nervt – ohne zu sagen, was er falsch macht",
+      "ein Gefühl in einem Satz sagen – ohne zu sagen, was er falsch macht",
       "einen Screenshot seiner Online-Anzeige mitschicken"
      ],
      "spalten": 1
     },
     {
      "art": "frage",
-     "text": "Elias hat nur zurückgeschrieben: „Hatte keine Zeit.“ Léas Antwort in der „coolen“ Fassung, ein Satz:",
-     "linien": 1
+     "text": "Elias hat nur zurückgeschrieben: „Hatte keine Zeit.“ Léas Antwort in der kühlen Fassung: ein Gefühl in einem Satz, eine konkrete Bitte, kein Vorwurf:",
+     "linien": 2
     },
     {
      "art": "satzanfaenge",
@@ -4903,6 +4913,16 @@
      "text": "Léa a envoyé hier un message vocal à Elias. Aujourd’hui, elle voit qu’il était en ligne, mais qu’il n’a pas répondu. Le soir, il écrit seulement : « Pas eu le temps. »"
     },
     {
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Comment lire la température",
+     "punkte": [
+      "chaud : un reproche ou du sarcasme – même avec une demande",
+      "tiède : l’énervement est dit, mais pas de demande",
+      "cool : un ressenti en une phrase plus une demande concrète, sans reproche"
+     ]
+    },
+    {
      "art": "zuordnen",
      "titel": [
       "Relie : le message de Léa …",
@@ -4910,8 +4930,8 @@
      ],
      "links": [
       "« En ligne, mais pas de réponse. Typique. »",
-      "« Ça m’énerve en ce moment qu’il n’y ait pas eu de réponse. Réponds-moi vite, s’il te plaît. »",
-      "« Tu as vu mon message ? J’ai juste besoin d’une réponse rapide. »"
+      "« Ça m’énerve en ce moment qu’il n’y ait pas eu de réponse. »",
+      "« Je suis un peu agacée parce qu’il n’y a pas eu de réponse. Tu peux me répondre ce soir, juste un mot ? »"
      ],
      "rechts": [
       "cool",
@@ -4924,17 +4944,17 @@
      "titel": "Qu’est-ce qui rend un message moins chaud ? Coche, plusieurs réponses possibles.",
      "items": [
       "laisser tomber des mots comme « toujours » et « typique »",
-      "dire ce dont j’ai besoin",
+      "faire une demande concrète (ce dont j’ai besoin)",
       "écrire en majuscules pour qu’il le remarque",
-      "dire que quelque chose m’énerve – sans dire ce qu’il fait de mal",
+      "dire un ressenti en une phrase – sans dire ce qu’il fait de mal",
       "joindre une capture d’écran de son statut en ligne"
      ],
      "spalten": 1
     },
     {
      "art": "frage",
-     "text": "Elias a seulement répondu : « Pas eu le temps. » La réponse de Léa dans la version « cool », une phrase :",
-     "linien": 1
+     "text": "Elias a seulement répondu : « Pas eu le temps. » La réponse de Léa dans la version « cool » : un ressenti en une phrase, une demande concrète, pas de reproche :",
+     "linien": 2
     },
     {
      "art": "satzanfaenge",
@@ -4945,8 +4965,8 @@
     }
    ]
   },
-  "kurz": "Eine Nachricht heiß, warm, cool sagen · Reaktion hören · eine wählen",
-  "vorbereitung": "Lage notieren: Kumpel gibt Ladekabel nicht zurück · drei Fassungen: heiß · warm · cool",
+  "kurz": "Nachricht heiß, lauwarm, kühl sagen · Reaktion hören · eine wählen",
+  "vorbereitung": "Lage notieren: Kumpel gibt Ladekabel nicht zurück · drei Fassungen: heiß · lauwarm · kühl",
   "transfer": {
    "de": {
     "szenen": [
@@ -4959,8 +4979,8 @@
       "text": "Im Praktikum hat dein Betreuer zum zweiten Mal deine Pause verschoben, ohne zu fragen. Du willst sagen, was dich nervt, ohne dass es kracht."
      }
     ],
-    "versuch": "Wenn dich diese Woche etwas nervt, schreib die Nachricht einmal heiß und dann eine Stufe kühler: was nervt, was du brauchst. Senden musst du nicht.",
-    "probe": "Diogo wartet seit zwei Wochen darauf, dass Yanis ihm die geliehene Powerbank zurückgibt. Er ist genervt. Wie könnte Diogo seine Nachricht „eine Stufe kühler“ formulieren?"
+    "versuch": "Wenn dich diese Woche etwas nervt, schreib die Nachricht einmal heiß und dann kühl: ein Gefühl in einem Satz, eine konkrete Bitte, kein Vorwurf. Senden musst du nicht.",
+    "probe": "Diogo wartet seit zwei Wochen darauf, dass Yanis ihm die geliehene Powerbank zurückgibt. Er ist genervt. Wie könnte Diogo seine Nachricht kühl formulieren: ein Gefühl in einem Satz, eine konkrete Bitte?"
    },
    "fr": {
     "szenen": [
@@ -4973,8 +4993,8 @@
       "text": "En stage, ton responsable a décalé ta pause pour la deuxième fois sans te demander. Tu veux dire ce qui te dérange, sans que ça parte en dispute."
      }
     ],
-    "versuch": "Cette semaine, écris un message énervé d’abord « chaud », puis un cran plus cool : ce qui t’énerve, ce qu’il te faut. Pas besoin de l’envoyer.",
-    "probe": "Diogo attend depuis deux semaines que Yanis lui rende sa batterie externe. Il est agacé. Comment Diogo pourrait-il écrire son message un cran plus cool ?"
+    "versuch": "Cette semaine, écris un message énervé d’abord « chaud », puis « cool » : un ressenti en une phrase, une demande concrète, pas de reproche. Pas besoin de l’envoyer.",
+    "probe": "Diogo attend depuis deux semaines que Yanis lui rende sa batterie externe. Il est agacé. Comment Diogo pourrait-il écrire son message cool : un ressenti en une phrase, une demande concrète ?"
    }
   },
   "linie": {
@@ -24139,16 +24159,16 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Mir ist … wichtig",
-  "text": "Die Fachkraft legt acht Wertkarten aus: Ehrlichkeit, Humor, Ruhe, Fairness, Freiheit, Fleiß, Mut, Treue. Sie zeigt den Wichtig-Satz an einem erfundenen Beispiel: „Mir ist Fairness wichtig, weil ich es blöd finde, wenn jemand bevorzugt wird. Man sieht das daran, dass ich beim Spielen abwechselnd anfange.“ Der oder die Jugendliche sucht eine Karte, die passt (für sich oder für eine erfundene Person), und baut den Satz: Wert, Grund, woran man es sieht. Dann folgt eine zweite Karte. Die Fachkraft sagt zurück, was sie in den Sätzen gehört hat.",
+  "text": "Die Fachkraft legt acht Wertkarten aus: Ehrlichkeit, Humor, Ruhe, Fairness, Freiheit, Fleiß, Mut, Treue. Sie zeigt den Wichtig-Satz an einem erfundenen Beispiel: „Mir ist Fairness wichtig, weil ich es blöd finde, wenn jemand bevorzugt wird. Deshalb fange ich beim Spielen abwechselnd an.“ Der oder die Jugendliche sucht eine Karte, die passt (für sich oder für eine erfundene Person), und baut den Satz: Wert, Grund, was ich deshalb tue. Dann folgt eine zweite Karte. Die Fachkraft sagt zurück, was sie in den Sätzen gehört hat.",
   "sagen": [
    "Hier liegen acht Wörter für das, was Menschen wichtig sein kann. Ich zeige dir einen Satz mit einem davon.",
    "Such eine Karte, die zu dir oder zu einer erfundenen Person passt. Dann: Mir ist … wichtig, weil …",
-   "Und woran sieht man das? Fang an mit: Man sieht es daran, dass ich …"
+   "Und was tust du deshalb (oder die erfundene Person)? Fang an mit: Deshalb …"
   ],
   "wennEsKippt": "Findet der oder die Jugendliche keine Karte, wählt die Fachkraft zwei aus und fragt, bei welcher der Satz leichter fällt. Ist es zu persönlich, baut er oder sie den Satz für eine erfundene Person wie Luca; „Pass“ ist immer erlaubt.",
   "werkzeug": {
-   "de": "Wichtig-Satz: Wert, Grund und woran man es sieht",
-   "fr": "Phrase-valeur : la valeur, la raison, et à quoi on le voit"
+   "de": "Wichtig-Satz: Wert, Grund und was ich deshalb tue",
+   "fr": "Phrase-valeur : la valeur, la raison et ce que je fais en conséquence"
   },
   "uebertragbar": true,
   "rolle": [
@@ -24196,14 +24216,14 @@
   "ort": "raum",
   "fr": {
    "titel": "Pour moi, … est important",
-   "text": "L’adulte étale huit cartes de valeurs : honnêteté, humour, calme, équité, liberté, application, courage, fidélité. Il montre la phrase-valeur avec un exemple inventé : « Pour moi, l’équité est importante, parce que je trouve ça nul quand quelqu’un est favorisé. On le voit à ceci : au jeu, je laisse l’autre commencer une fois sur deux. » Le ou la jeune choisit une carte qui lui parle (pour lui-même ou pour un personnage inventé) et construit la phrase : la valeur, la raison, à quoi on le voit. Puis on recommence avec une deuxième carte. L’adulte redit ce qu’il a entendu dans les phrases.",
+   "text": "L’adulte étale huit cartes de valeurs : honnêteté, humour, calme, équité, liberté, application, courage, fidélité. Il montre la phrase-valeur avec un exemple inventé : « Pour moi, l’équité est importante, parce que je trouve ça nul quand quelqu’un est favorisé. C’est pourquoi, au jeu, je laisse l’autre commencer une fois sur deux. » Le ou la jeune choisit une carte qui lui parle (pour lui-même ou pour un personnage inventé) et construit la phrase : la valeur, la raison, ce que je fais en conséquence. Puis on recommence avec une deuxième carte. L’adulte redit ce qu’il a entendu dans les phrases.",
    "sagen": [
     "Voici huit mots pour ce qui peut compter pour quelqu’un. Je te montre une phrase avec l’un d’eux.",
     "Choisis une carte qui te va, ou qui va à un personnage inventé. Puis : Pour moi, … est important, parce que …",
-    "Et à quoi le voit-on ? Commence par : On le voit à ceci : je …"
+    "Et que fais-tu pour cette raison (ou le personnage inventé) ? Commence par : C’est pourquoi je …"
    ],
    "wennEsKippt": "Si le ou la jeune ne trouve pas de carte, l’adulte en choisit deux et demande avec laquelle la phrase est la plus facile. Si c’est trop personnel, il ou elle construit la phrase pour un personnage inventé comme Luca ; « Je passe » est toujours permis.",
-   "kurz": "Cartes de valeurs · valeur, raison, preuve · deuxième phrase",
+   "kurz": "Cartes de valeurs · valeur, raison, « c’est pourquoi » · deuxième phrase",
    "vorbereitung": "Écrire 8 cartes de valeurs : honnêteté · humour · calme · équité · liberté · application · courage · fidélité"
   },
   "merkmale": {
@@ -24223,7 +24243,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Diogo erzählt von sich: „Mir ist Ehrlichkeit wichtig, weil ich dann weiß, woran ich bin. Man sieht das daran, dass ich auch Unbequemes sage.“"
+     "text": "Diogo erzählt von sich: „Mir ist Ehrlichkeit wichtig, weil ich dann weiß, woran ich bin. Deshalb sage ich auch Unbequemes.“"
     },
     {
      "art": "aufgabe",
@@ -24234,10 +24254,10 @@
      "links": [
       "Ehrlichkeit",
       "weil ich dann weiß, woran ich bin",
-      "dass ich auch Unbequemes sage"
+      "Deshalb sage ich auch Unbequemes"
      ],
      "rechts": [
-      "woran man es sieht",
+      "was ich deshalb tue",
       "der Wert",
       "der Grund"
      ]
@@ -24250,7 +24270,7 @@
      "art": "ankreuzen",
      "items": [
       "der Grund (weil …)",
-      "woran man es sieht",
+      "was ich deshalb tue (Deshalb …)",
       "der Wert",
       "ein Beweis, dass es stimmt"
      ],
@@ -24264,7 +24284,7 @@
      "art": "satzanfaenge",
      "items": [
       "Mir ist … wichtig, weil …",
-      "Man sieht das daran, dass …"
+      "Deshalb …"
      ],
      "linien": 1
     }
@@ -24272,7 +24292,7 @@
    "fr": [
     {
      "art": "text",
-     "text": "Diogo parle de lui : « Pour moi, l’honnêteté est importante, parce que je sais alors à quoi m’en tenir. On le voit à ceci : je dis aussi des choses gênantes. »"
+     "text": "Diogo parle de lui : « Pour moi, l’honnêteté est importante, parce que je sais alors à quoi m’en tenir. C’est pourquoi je dis aussi des choses gênantes. »"
     },
     {
      "art": "aufgabe",
@@ -24283,10 +24303,10 @@
      "links": [
       "l’honnêteté",
       "parce que je sais alors à quoi m’en tenir",
-      "que je dis aussi des choses gênantes"
+      "C’est pourquoi je dis aussi des choses gênantes"
      ],
      "rechts": [
-      "à quoi on le voit",
+      "ce que je fais en conséquence",
       "la valeur",
       "la raison"
      ]
@@ -24299,7 +24319,7 @@
      "art": "ankreuzen",
      "items": [
       "la raison (parce que …)",
-      "à quoi on le voit",
+      "ce que je fais en conséquence (C’est pourquoi …)",
       "la valeur",
       "une preuve que c’est vrai"
      ],
@@ -24313,13 +24333,13 @@
      "art": "satzanfaenge",
      "items": [
       "Pour moi, … est important, parce que …",
-      "On le voit à ceci : je …"
+      "C’est pourquoi je …"
      ],
      "linien": 1
     }
    ]
   },
-  "kurz": "Wertkarten wählen · Wert, Grund, Beleg sagen · zweiter Satz",
+  "kurz": "Wertkarten wählen · Wert, Grund, Deshalb sagen · zweiter Satz",
   "vorbereitung": "8 Wertkarten schreiben: Ehrlichkeit · Humor · Ruhe · Fairness · Freiheit · Fleiß · Mut · Treue",
   "transfer": {
    "de": {
@@ -24333,7 +24353,7 @@
       "text": "Im Verein fragt die Trainerin, was dir beim Training wichtig ist, damit sie dich passend einteilt."
      }
     ],
-    "versuch": "Achte diese Woche einmal darauf, was dir bei einer Entscheidung wichtig war, und sag es dir in einem Satz: „Mir ist … wichtig, weil …“",
+    "versuch": "Achte diese Woche einmal darauf, was dir bei einer Entscheidung wichtig war, und sag es dir in einem Satz: „Mir ist … wichtig, weil … Deshalb …“",
     "probe": "Luca soll beim Probetag in einer Werkstatt sagen, was ihm wichtig ist. Er weiß nur: „Irgendwas mit Freunden.“ Was könnte Luca mit dem Wichtig-Satz sagen?"
    },
    "fr": {
@@ -24347,7 +24367,7 @@
       "text": "Au club, l’entraîneuse te demande ce qui compte pour toi à l’entraînement, pour mieux te placer."
      }
     ],
-    "versuch": "Repère cette semaine ce qui comptait pour toi dans une décision et dis-le en une phrase : « Pour moi, … est important, parce que … »",
+    "versuch": "Repère cette semaine ce qui comptait pour toi dans une décision et dis-le en une phrase : « Pour moi, … est important, parce que … C’est pourquoi … »",
     "probe": "Luca doit dire, pendant un jour d’essai dans un atelier, ce qui compte pour lui. Il sait seulement : « Un truc avec les amis. » Que pourrait dire Luca avec la phrase-valeur ?"
    }
   },
@@ -24368,16 +24388,16 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Zwei Werte auf der Waage",
-  "text": "Die Fachkraft zeichnet eine Waage mit zwei Schalen und liest einen erfundenen Fall: „Mehdi hat dem Verein für Samstag zugesagt. Am selben Tag laden Freunde ihn zum Bowling ein.“ Der oder die Jugendliche schreibt in jede Schale den Wert dahinter (Verlässlichkeit, Spaß mit Freunden), entscheidet für Mehdi und sagt den Wichtig-Satz: „Mir ist … wichtig, weil … Deshalb …“ Ein zweiter Fall hat andere Werte: Sofia soll sagen, wie ihr der noch unfertige Song eines Freundes gefällt (Ehrlichkeit gegen Rücksicht). Zum Schluss: Welche zwei Werte ziehen bei dir manchmal auseinander (echt oder erfunden)?",
+  "text": "Die Fachkraft zeichnet eine Waage mit zwei Schalen und liest einen erfundenen Fall: „Mehdi hat dem Verein für Samstag zugesagt. Am selben Tag laden Freunde ihn zum Bowling ein.“ Der oder die Jugendliche schreibt in jede Schale den Wert dahinter (Verlässlichkeit, Spaß mit Freunden), entscheidet für Mehdi und sagt den Wichtig-Satz (Wert, Grund, was ich deshalb tue): „Mir ist … wichtig, weil … Deshalb …“ Ein zweiter Fall hat andere Werte: Sofia soll sagen, wie ihr der noch unfertige Song eines Freundes gefällt (Ehrlichkeit gegen Rücksicht). Zum Schluss: Welche zwei Werte ziehen bei dir manchmal auseinander (echt oder erfunden)?",
   "sagen": [
    "Mehdi hat zwei gute Gründe, die in verschiedene Richtungen ziehen. Welcher Wert steckt hinter jedem? Schreib sie in die Schalen.",
-   "Entscheide für Mehdi und sag den Wichtig-Satz: Mir ist … wichtig, weil … Deshalb …",
+   "Entscheide für Mehdi und sag den Wichtig-Satz mit Wert, Grund und dem, was er deshalb tut: Mir ist … wichtig, weil … Deshalb …",
    "Welche zwei Werte ziehen bei dir manchmal auseinander? Echt oder erfunden, du kannst auch passen."
   ],
   "wennEsKippt": "Fällt die Entscheidung schwer, darf die Waage im Gleichgewicht bleiben: Der oder die Jugendliche sagt, was Mehdi vorher klären könnte (z. B. den Verein fragen, ob er später kommen darf). Will er oder sie nichts Eigenes nennen, bleibt es bei Mehdi und Sofia, und die Fachkraft macht ein eigenes Beispiel vor.",
   "werkzeug": {
-   "de": "Wichtig-Satz: zwei Werte abwägen, einen begründen",
-   "fr": "Phrase-valeur : peser deux valeurs, en justifier une"
+   "de": "Wichtig-Satz (Wert, Grund, was ich deshalb tue): zwei Werte abwägen",
+   "fr": "Phrase-valeur (valeur, raison, ce que je fais en conséquence) : peser deux valeurs"
   },
   "uebertragbar": true,
   "rolle": [
@@ -24425,10 +24445,10 @@
   "ort": "raum",
   "fr": {
    "titel": "Deux valeurs sur la balance",
-   "text": "L’adulte dessine une balance à deux plateaux et lit un cas inventé : « Mehdi a promis au club d’être là samedi. Le même jour, des amis l’invitent au bowling. » Le ou la jeune écrit dans chaque plateau la valeur qui se cache derrière (fiabilité, plaisir avec les amis), tranche pour Mehdi et dit la phrase-valeur : « Pour moi, … est important, parce que … C’est pourquoi … » Un deuxième cas oppose d’autres valeurs : Sofia doit dire ce qu’elle pense d’une chanson encore inachevée d’un ami (honnêteté contre égards). Pour finir : quelles deux valeurs tirent parfois en sens contraire chez toi (vrai ou inventé) ?",
+   "text": "L’adulte dessine une balance à deux plateaux et lit un cas inventé : « Mehdi a promis au club d’être là samedi. Le même jour, des amis l’invitent au bowling. » Le ou la jeune écrit dans chaque plateau la valeur qui se cache derrière (fiabilité, plaisir avec les amis), tranche pour Mehdi et dit la phrase-valeur (valeur, raison, ce que je fais en conséquence) : « Pour moi, … est important, parce que … C’est pourquoi … » Un deuxième cas oppose d’autres valeurs : Sofia doit dire ce qu’elle pense d’une chanson encore inachevée d’un ami (honnêteté contre égards). Pour finir : quelles deux valeurs tirent parfois en sens contraire chez toi (vrai ou inventé) ?",
    "sagen": [
     "Mehdi a deux bonnes raisons qui tirent dans des sens opposés. Quelle valeur se cache derrière chacune ? Écris-les dans les plateaux.",
-    "Tranche pour Mehdi et dis la phrase-valeur : Pour moi, … est important, parce que … C’est pourquoi …",
+    "Tranche pour Mehdi et dis la phrase-valeur avec la valeur, la raison et ce qu’il fait en conséquence : Pour moi, … est important, parce que … C’est pourquoi …",
     "Quelles deux valeurs tirent parfois en sens contraire chez toi ? Vrai ou inventé, tu peux aussi passer."
    ],
    "wennEsKippt": "Si la décision est difficile, la balance peut rester en équilibre : le ou la jeune dit ce que Mehdi pourrait clarifier avant (par exemple demander au club s’il peut arriver plus tard). S’il ou elle ne veut rien dire de personnel, on reste sur Mehdi et Sofia, et l’adulte donne un exemple personnel.",
@@ -24472,15 +24492,15 @@
     },
     {
      "art": "aufgabe",
-     "text": "Yanis entscheidet sich für den Freund. Welcher Wichtig-Satz hat Wert, Grund und „Deshalb …“? Kreuz einen an."
+     "text": "Yanis entscheidet sich für den Freund. Welcher Wichtig-Satz hat alle drei Teile: Wert, Grund und was Yanis deshalb tut („Deshalb …“)? Kreuz einen an."
     },
     {
      "art": "ankreuzen",
      "items": [
       "Mir ist Verlässlichkeit wichtig, weil ich Zusagen ernst nehme. Deshalb verzichte ich auf das Konzert.",
       "Ich bleibe bei meinem Freund, das ist halt so.",
-      "Mir ist Verlässlichkeit wichtig, weil ich Zusagen ernst nehme.",
-      "Deshalb verzichte ich auf das Konzert."
+      "Mir ist Verlässlichkeit wichtig, weil Versprechen für mich zählen.",
+      "Deshalb sage ich das Konzert ab."
      ],
      "spalten": 1
     },
@@ -24521,15 +24541,15 @@
     },
     {
      "art": "aufgabe",
-     "text": "Yanis choisit son ami. Quelle phrase-valeur contient la valeur, la raison et « C’est pourquoi … » ? Coche une seule."
+     "text": "Yanis choisit son ami. Quelle phrase-valeur a les trois parties : la valeur, la raison et ce que Yanis fait en conséquence (« C’est pourquoi … ») ? Coche une seule."
     },
     {
      "art": "ankreuzen",
      "items": [
       "Pour moi, la fiabilité est importante, parce que je prends mes promesses au sérieux. C’est pourquoi je renonce au concert.",
       "Je reste avec mon ami, c’est comme ça.",
-      "Pour moi, la fiabilité est importante, parce que je prends mes promesses au sérieux.",
-      "C’est pourquoi je renonce au concert."
+      "Pour moi, la fiabilité est importante, parce que mes promesses comptent.",
+      "C’est pourquoi j’annule le concert."
      ],
      "spalten": 1
     },
@@ -24560,7 +24580,7 @@
       "text": "Du hast am Freitag einen Test, aber heute ist auch dein Lieblingstraining. Beides passt nicht in den Nachmittag."
      }
     ],
-    "versuch": "Probier diese Woche einmal, bei einer Entscheidung die zwei Werte zu benennen, die ziehen: „Mir ist … wichtig, deshalb …“",
+    "versuch": "Probier diese Woche einmal, bei einer Entscheidung die zwei Werte zu benennen, die ziehen: „Mir ist … wichtig, weil … Deshalb …“",
     "probe": "Sofia bekommt einen Nebenjob im Café angeboten. Er würde ihr Training am Freitag kosten. Was könnte Sofia mit dem Wichtig-Satz abwägen?"
    },
    "fr": {
@@ -24574,7 +24594,7 @@
       "text": "Tu as un test vendredi, mais aujourd’hui, il y a aussi ton entraînement préféré. Les deux ne tiennent pas dans l’après-midi."
      }
     ],
-    "versuch": "Essaie une fois cette semaine de nommer, lors d’une décision, les deux valeurs qui tirent : « Pour moi, … est important, c’est pourquoi … »",
+    "versuch": "Essaie une fois cette semaine de nommer, lors d’une décision, les deux valeurs qui tirent : « Pour moi, … est important, parce que … C’est pourquoi … »",
     "probe": "On propose à Sofia un petit job dans un café. Il lui ferait manquer l’entraînement du vendredi. Qu’est-ce que Sofia pourrait peser avec la phrase-valeur ?"
    }
   },
@@ -24586,8 +24606,8 @@
     "fr": "Dire ce qui compte pour moi – avec la phrase-valeur"
    },
    "bruecke": {
-    "de": "Du hast mit dem Wichtig-Satz gesagt, was dir wichtig ist und warum. Heute wiegst du zwei Werte gegeneinander ab.",
-    "fr": "Tu as dit avec la phrase-valeur ce qui compte pour toi et pourquoi. Aujourd’hui, tu mets deux valeurs en balance."
+    "de": "Du hast mit dem Wichtig-Satz gesagt, was dir wichtig ist, warum und was du deshalb tust. Heute wiegst du zwei Werte gegeneinander ab.",
+    "fr": "Tu as dit avec la phrase-valeur ce qui compte pour toi, pourquoi et ce que tu fais en conséquence. Aujourd’hui, tu mets deux valeurs en balance."
    }
   },
   "tagesform": []
@@ -24599,16 +24619,16 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Was ist dir wichtig? Das Kennenlern-Gespräch",
-  "text": "Die Fachkraft spielt eine Betreuerin im Praktikum, die jemanden Neues kennenlernen will, und stellt drei Fragen: „Was ist dir bei der Arbeit wichtig?“, „Was ist dir im Umgang mit anderen wichtig?“, „Was ist dir in deiner freien Zeit wichtig?“ Der oder die Jugendliche antwortet jedes Mal mit dem Wichtig-Satz (Wert, Grund, woran man es sieht), ohne Karte, notfalls mit drei Stichwörtern auf Papier. Danach tauschen die Rollen: Er oder sie fragt, die Fachkraft antwortet, und er oder sie sagt, welcher Teil gefehlt hat. Zum Schluss: Welche Antwort würdest du so im echten Gespräch geben?",
+  "text": "Die Fachkraft spielt eine Betreuerin im Praktikum, die jemanden Neues kennenlernen will, und stellt drei Fragen: „Was ist dir bei der Arbeit wichtig?“, „Was ist dir im Umgang mit anderen wichtig?“, „Was ist dir in deiner freien Zeit wichtig?“ Der oder die Jugendliche antwortet jedes Mal mit dem Wichtig-Satz (Wert, Grund, was ich deshalb tue), ohne Karte, notfalls mit drei Stichwörtern auf Papier. Danach tauschen die Rollen: Er oder sie fragt, die Fachkraft antwortet, und er oder sie sagt, welcher Teil gefehlt hat. Zum Schluss: Welche Antwort würdest du so im echten Gespräch geben?",
   "sagen": [
-   "Stell dir vor, ich bin deine Betreuerin im Praktikum. Ich frage: Was ist dir bei der Arbeit wichtig? Antworte mit dem Wichtig-Satz.",
+   "Stell dir vor, ich bin deine Betreuerin im Praktikum. Ich frage: Was ist dir bei der Arbeit wichtig? Antworte mit dem Wichtig-Satz: Wert, Grund, was du deshalb tust.",
    "Du darfst kurz nachdenken oder passen. Eine erfundene Antwort, die du passend findest, geht auch.",
    "Jetzt fragst du mich. Hör hin: Welcher Teil des Wichtig-Satzes fehlt in meiner Antwort?"
   ],
   "wennEsKippt": "Gerät der oder die Jugendliche ins Stocken, legt die Fachkraft zwei Wertwörter auf Papier zur Auswahl, und der Satz wird nur mit einem davon gebaut. Wird die Frage zu persönlich, antwortet er oder sie als erfundene Person (z. B. Inês) oder passt.",
   "werkzeug": {
-   "de": "Wichtig-Satz: frei im Gespräch sagen, ohne Karte",
-   "fr": "Phrase-valeur : la dire librement dans un échange, sans carte"
+   "de": "Wichtig-Satz (Wert, Grund, was ich deshalb tue): frei sagen, ohne Karte",
+   "fr": "Phrase-valeur (valeur, raison, ce que je fais en conséquence) : la dire sans carte"
   },
   "uebertragbar": true,
   "rolle": [
@@ -24656,9 +24676,9 @@
   "ort": "raum",
   "fr": {
    "titel": "Qu’est-ce qui compte pour toi ? Faire connaissance",
-   "text": "L’adulte joue une responsable de stage qui veut faire connaissance et pose trois questions : « Qu’est-ce qui est important pour toi au travail ? », « … dans ta façon d’être avec les autres ? », « … pendant ton temps libre ? » Le ou la jeune répond chaque fois par la phrase-valeur (la valeur, la raison, à quoi on le voit), sans carte, au besoin avec trois mots-clés sur une feuille. Puis on échange les rôles : il ou elle pose les questions, l’adulte répond, et le ou la jeune dit quelle partie a manqué. Pour finir : quelle réponse donnerais-tu telle quelle dans une vraie conversation ?",
+   "text": "L’adulte joue une responsable de stage qui veut faire connaissance et pose trois questions : « Qu’est-ce qui est important pour toi au travail ? », « … dans ta façon d’être avec les autres ? », « … pendant ton temps libre ? » Le ou la jeune répond chaque fois par la phrase-valeur (la valeur, la raison, ce que je fais en conséquence), sans carte, au besoin avec trois mots-clés sur une feuille. Puis on échange les rôles : il ou elle pose les questions, l’adulte répond, et le ou la jeune dit quelle partie a manqué. Pour finir : quelle réponse donnerais-tu telle quelle dans une vraie conversation ?",
    "sagen": [
-    "Imagine que je suis ta responsable de stage. Je demande : qu’est-ce qui est important pour toi au travail ? Réponds avec la phrase-valeur.",
+    "Imagine que je suis ta responsable de stage. Je demande : qu’est-ce qui est important pour toi au travail ? Réponds avec la phrase-valeur : la valeur, la raison, ce que tu fais en conséquence.",
     "Tu peux réfléchir un moment ou passer. Une réponse inventée qui te paraît juste convient aussi.",
     "À toi de me questionner. Écoute : quelle partie de la phrase-valeur est absente de ma réponse ?"
    ],
@@ -24691,12 +24711,12 @@
     {
      "art": "zuordnen",
      "links": [
-      "Mir ist Zusammenhalt wichtig. Man sieht es daran, dass ich andere anfeuere.",
+      "Mir ist Zusammenhalt wichtig. Deshalb feuere ich andere an.",
       "Mir ist Fleiß wichtig, weil ich besser werden will.",
       "Ich komme immer pünktlich, weil sich sonst andere ärgern."
      ],
      "rechts": [
-      "woran man es sieht",
+      "was ich deshalb tue",
       "der Wert (das Wort dafür)",
       "der Grund (weil …)"
      ]
@@ -24713,7 +24733,7 @@
        "text": "Was ist dir beim Training wichtig?"
       },
       {
-       "wer": "Zoé (Wert, Grund, woran man es sieht)"
+       "wer": "Zoé (Wert, Grund, was sie deshalb tut)"
       }
      ]
     },
@@ -24725,7 +24745,7 @@
      "art": "wennDann",
      "zeilen": 1,
      "wenn": "Wenn mich jemand fragt, was mir wichtig ist …",
-     "dann": "dann sage ich: Mir ist … wichtig, weil …"
+     "dann": "dann sage ich: Mir ist … wichtig, weil … Deshalb …"
     }
    ],
    "fr": [
@@ -24740,12 +24760,12 @@
     {
      "art": "zuordnen",
      "links": [
-      "Pour moi, la cohésion est importante. On le voit à ceci : j’encourage les autres.",
+      "Pour moi, la cohésion est importante. C’est pourquoi j’encourage les autres.",
       "Pour moi, l’application est importante, parce que je veux progresser.",
       "Je suis toujours à l’heure, parce que sinon d’autres s’énervent."
      ],
      "rechts": [
-      "à quoi on le voit",
+      "ce que je fais en conséquence",
       "la valeur (le mot pour ça)",
       "la raison (parce que …)"
      ]
@@ -24762,7 +24782,7 @@
        "text": "Qu’est-ce qui est important pour toi à l’entraînement ?"
       },
       {
-       "wer": "Zoé (valeur, raison, à quoi on le voit)"
+       "wer": "Zoé (valeur, raison, ce qu’elle fait en conséquence)"
       }
      ]
     },
@@ -24774,7 +24794,7 @@
      "art": "wennDann",
      "zeilen": 1,
      "wenn": "Si quelqu’un me demande ce qui compte pour moi …",
-     "dann": "alors je dis : Pour moi, … est important, parce que …"
+     "dann": "alors je dis : Pour moi, … est important, parce que … C’est pourquoi …"
     }
    ]
   },
@@ -24791,7 +24811,7 @@
       "text": "Ein neuer Kumpel fragt dich: „Was ist dir bei Freunden wichtig?“ Du möchtest mehr sagen als „Spaß haben“."
      }
     ],
-    "versuch": "Probier diese Woche einmal, in einem Gespräch ohne Karte zu sagen, was dir wichtig ist. Ein Satz mit „weil“ genügt.",
+    "versuch": "Probier diese Woche einmal, in einem Gespräch ohne Karte zu sagen, was dir wichtig ist. Ein Satz mit „weil“ und „deshalb“ genügt.",
     "probe": "Diogo schnuppert in einer Schreinerei. Die Meisterin fragt ihn: „Was ist dir bei der Arbeit wichtig?“ Er weiß es, findet aber keine Worte. Was könnte Diogo mit dem Wichtig-Satz sagen?"
    },
    "fr": {
@@ -24805,7 +24825,7 @@
       "text": "Un nouveau pote te demande : « Qu’est-ce qui est important pour toi chez des amis ? » Tu voudrais dire plus que « s’amuser »."
      }
     ],
-    "versuch": "Essaie une fois cette semaine de dire, dans une conversation et sans carte, ce qui compte pour toi. Une phrase avec « parce que » suffit.",
+    "versuch": "Essaie une fois cette semaine de dire, dans une conversation et sans carte, ce qui compte pour toi. Une phrase avec « parce que » et « c’est pourquoi » suffit.",
     "probe": "Diogo fait un stage d’essai dans une menuiserie. La patronne lui demande : « Qu’est-ce qui est important pour toi au travail ? » Il le sait, mais ne trouve pas les mots. Que pourrait dire Diogo avec la phrase-valeur ?"
    }
   },
@@ -24817,8 +24837,8 @@
     "fr": "Dire ce qui compte pour moi – avec la phrase-valeur"
    },
    "bruecke": {
-    "de": "Du hast zwei Werte abgewogen und eine Entscheidung begründet. Heute sagst du den Wichtig-Satz frei im Gespräch, ohne Karte.",
-    "fr": "Tu as pesé deux valeurs et justifié une décision. Aujourd’hui, tu dis la phrase-valeur librement dans une conversation, sans carte."
+    "de": "Du hast zwei Werte abgewogen und mit „Deshalb …“ gesagt, was du tust. Heute sagst du den Wichtig-Satz (Wert, Grund, was du deshalb tust) frei im Gespräch, ohne Karte.",
+    "fr": "Tu as pesé deux valeurs et dit, avec « C’est pourquoi … », ce que tu fais. Aujourd’hui, tu dis la phrase-valeur (valeur, raison, ce que tu fais en conséquence) librement dans une conversation, sans carte."
    }
   },
   "tagesform": []
