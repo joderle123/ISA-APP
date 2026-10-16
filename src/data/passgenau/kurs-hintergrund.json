@@ -1,0 +1,712 @@
+{
+  "kurs-gefuehle-4-6": {
+    "de": {
+      "warum": "Kleine Kinder lernen Gefühle zuerst an Gesichtern, Körperhaltung und Situationen zu erkennen und zu benennen, lange bevor sie sie steuern können. Der Kurs übt das in Bild, Spiel und Wiederholung (Ansatz wie bei PATHS): Wer ein Gefühl benennen kann, kann später sagen, wie es ihm geht, statt es in Handlungen auszudrücken.",
+      "achtung": [
+        "Gefühle benennen, nicht bewerten: kein „Ist doch nicht schlimm“. Jedes Gefühl ist erlaubt, nur manche Handlungen haben Grenzen.",
+        "Nichts aus der Familie ausfragen: Beispiele kommen von Ivo, eigene Erlebnisse nur freiwillig.",
+        "Kaum sichtbare Gefühle, anhaltende Traurigkeit oder Berichte von Gewalt: Leitung/Responsable und Fachstelle informieren."
+      ]
+    },
+    "fr": {
+      "warum": "Les jeunes enfants apprennent d’abord à reconnaître et à nommer les émotions à partir des visages, du corps et des situations, bien avant de savoir les maîtriser. Le cours s’appuie sur l’image, le jeu et la répétition (démarche proche de PATHS) : savoir nommer ce que l’on ressent permet plus tard de le dire au lieu de le traduire en gestes.",
+      "achtung": [
+        "Nommer sans juger : pas de « ce n’est pas grave ». Toute émotion est permise, seuls certains gestes ont des limites.",
+        "Ne pas interroger sur la famille : les exemples viennent d’Ivo, les vécus personnels restent volontaires.",
+        "Peu d’émotions visibles, tristesse durable ou récit de violence : informer le ou la Responsable et le service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Denham, S. A. (1998): Emotional Development in Young Children",
+      "Domitrovich, C. E., Cortes, R. C. & Greenberg, M. T. (2007): Improving young children's social and emotional competence: A randomized trial of the preschool PATHS curriculum"
+    ]
+  },
+  "kurs-gefuehle-7-9": {
+    "de": {
+      "warum": "Schon im Grundschulalter verstehen Kinder, dass dieselbe Situation bei Menschen verschiedene Gefühle auslösen kann. Der Kurs verbindet drei Hinweise (Gesicht, Körper, Situation – wie in PATHS) mit genaueren Gefühlswörtern und der Gewohnheit nachzufragen, statt zu raten. Das stärkt Einfühlung und beugt Fehldeutungen im Streit vor.",
+      "achtung": [
+        "Nachfragen heißt nicht Ausfragen: Das Kind entscheidet, ob es ein eigenes Gefühl erzählt. Beispiele der Figuren gehen immer.",
+        "Kein Gefühl ist „falsch“; kein Kind vorführen, wenn es ein Gefühl nicht erkennt oder nicht benennen kann.",
+        "Gefühle werden dauerhaft kaum wahrgenommen oder das Kind zieht sich stark zurück: beobachten, notieren, Fachstelle/Psychologie einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "Dès l’école primaire, les enfants comprennent qu’une même situation peut déclencher des émotions différentes. Le cours relie trois indices (visage, corps, situation, comme dans PATHS) à un vocabulaire plus précis et à l’habitude de demander « C’est bien ça ? » au lieu de deviner. Cela renforce l’empathie et évite des erreurs d’interprétation dans les disputes.",
+      "achtung": [
+        "Demander n’est pas interroger : l’enfant décide s’il raconte une émotion vécue. Les exemples des personnages passent toujours.",
+        "Aucune émotion n’est « fausse » ; ne pas mettre l’enfant en difficulté s’il ne sait pas reconnaître ou nommer une émotion.",
+        "Émotions durablement peu perçues ou fort repli : observer, noter et associer le service spécialisé ou psychologue."
+      ]
+    },
+    "quellen": [
+      "Domitrovich, C. E., Cortes, R. C. & Greenberg, M. T. (2007): Improving young children's social and emotional competence: A randomized trial of the preschool PATHS curriculum",
+      "Saarni, C. (1999): The Development of Emotional Competence"
+    ]
+  },
+  "kurs-gefuehle-10-12": {
+    "de": {
+      "warum": "Mit zehn bis zwölf Jahren wächst der Gefühlswortschatz, und Kinder begreifen, dass Gedanken Gefühle und Handlungen beeinflussen. Der Kurs nutzt das (Dreieck Gedanke–Gefühl–Handlung aus der KVT, Gefühlsrad, Thermometer) und übt Ich-Botschaften nach Gordon. So werden Gefühle benennbar und sagbar, bevor sie sich im Verhalten entladen.",
+      "achtung": [
+        "Gefühle sagen ist freiwillig: lieber Figuren als Beispiel nehmen, als das Kind zu persönlichen Erlebnissen zu drängen.",
+        "Gefühle nicht ausreden oder bewerten: auch Wut, Neid und Scham sind erlaubt. Nur Handlungen haben Grenzen.",
+        "Selbstverletzung, Gewalt oder Angst vor dem Heimweg: nicht nachbohren, Leitung/Responsable und Fachstelle informieren."
+      ]
+    },
+    "fr": {
+      "warum": "Entre 10 et 12 ans, le vocabulaire émotionnel s’élargit et les enfants saisissent que les pensées influencent émotions et actes. Le cours en profite (triangle pensée–émotion–action de la TCC, roue des émotions, thermomètre) et exerce le message-je selon Gordon. L’émotion devient ainsi nommable et dicible avant de se décharger en comportement.",
+      "achtung": [
+        "Dire ses émotions reste volontaire : prendre des personnages en exemple plutôt que d’insister sur le vécu de l’enfant.",
+        "Ne pas minimiser ni juger : colère, jalousie et honte sont permises ; ce sont les actes qui ont des limites.",
+        "Automutilation, violence ou peur de rentrer chez soi : ne pas creuser, informer le ou la Responsable et le service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Saarni, C. (1999): The Development of Emotional Competence",
+      "Gordon, T. (1970): Parent Effectiveness Training",
+      "Beck, A. T. (1976): Cognitive Therapy and the Emotional Disorders"
+    ]
+  },
+  "kurs-gefuehle-13-16": {
+    "de": {
+      "warum": "Jugendliche erleben Gefühle intensiver und gemischter und können nachvollziehen, wie Bewertungen sie prägen. Der Kurs erklärt Emotionen sachlich als Signale (Auslöser – Bewertung – Folge) und übt Regulation und fairen Ausdruck, auch im Chat (Gross; Saarni). Es geht nicht darum, Gefühle wegzumachen, sondern sie zu verstehen und steuerbar zu machen.",
+      "achtung": [
+        "Respektvoll und sachlich bleiben, nie verniedlichend; ein Gefühl nie als Schwäche oder Drama abtun.",
+        "Eigene Erlebnisse nur freiwillig; keine Traumata bearbeiten und nichts aus der Familie ausfragen.",
+        "Anhaltende Niedergeschlagenheit, Selbstverletzung, Suizidgedanken: ernst nehmen, nicht allein tragen, sofort Leitung/Responsable und Fachstelle."
+      ]
+    },
+    "fr": {
+      "warum": "Les adolescents vivent des émotions plus intenses et plus mêlées, et comprennent comment l’évaluation d’une situation les façonne. Le cours présente les émotions comme des signaux (déclencheur – évaluation – conséquence) et exerce la régulation et l’expression juste, y compris par messagerie (Gross ; Saarni). Il ne s’agit pas de supprimer l’émotion, mais de la comprendre et de la guider.",
+      "achtung": [
+        "Rester respectueux et factuel, sans infantiliser ; ne jamais réduire une émotion à de la faiblesse ou à du drame.",
+        "Vécus personnels seulement volontaires ; ne pas travailler de traumatismes ni interroger sur la famille.",
+        "Tristesse durable, automutilation, idées suicidaires : l’adulte ne reste pas seul, il prévient aussitôt Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Saarni, C. (1999): The Development of Emotional Competence",
+      "Gross, J. J. (1998): The emerging field of emotion regulation: An integrative review"
+    ]
+  },
+  "kurs-wut-4-6": {
+    "de": {
+      "warum": "Kleine Kinder können Impulse noch schwer bremsen. Die Schildkröten-Technik (Robin, Schneider & Dolnick) gibt ihnen einen einfachen, bildhaften Ablauf: Stopp, in den Panzer, atmen, dann sagen, was los ist. Im Spiel geübt, vom Erwachsenen vorgemacht und gelobt, wird daraus eine Alternative zum Hauen. Wut ist erlaubt, Verletzen nicht.",
+      "achtung": [
+        "Keine Katharsis: nicht auf Kissen einschlagen oder „Wut rauslassen“. Der Panzer dient dem Beruhigen.",
+        "Gelungenes Innehalten sofort und konkret loben; die Schildkröte nie als Strafe oder Isolierung einsetzen.",
+        "Verletzt das Kind andere oft oder erzählt von Schlägen zu Hause: Leitung/Responsable und Fachstelle informieren, nicht nachfragen."
+      ]
+    },
+    "fr": {
+      "warum": "À cet âge, freiner un élan est encore difficile. La technique de la tortue (Robin, Schneider & Dolnick) offre une suite simple et imagée : stop, carapace, respirer, puis dire ce qui se passe. Exercée par le jeu, montrée et valorisée par l’adulte, elle donne à l’enfant une alternative à frapper. La colère est permise, blesser ne l’est pas.",
+      "achtung": [
+        "Pas de catharsis : ni frapper un coussin ni « se défouler ». La carapace sert à se calmer.",
+        "Féliciter aussitôt et précisément chaque arrêt réussi ; ne jamais utiliser la tortue comme punition ou isolement.",
+        "Enfant qui blesse souvent ou parle de coups à la maison : informer Responsable et service spécialisé, sans questionner."
+      ]
+    },
+    "quellen": [
+      "Robin, A. L., Schneider, M. & Dolnick, M. (1976): The turtle technique: An extended case study of self-control in the classroom",
+      "Webster-Stratton, C. & Reid, M. J. (2003): Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program"
+    ]
+  },
+  "kurs-wut-7-9": {
+    "de": {
+      "warum": "Impulsives Handeln lässt sich bei Grundschulkindern trainieren, wenn der Ablauf klar und bildhaft ist. Die Ampel (Rot: stopp und abkühlen, Gelb: denken, Grün: handeln) folgt der Selbstinstruktion nach Meichenbaum und Bausteinen von Coping Power. Das Kind lernt Frühwarnzeichen im Körper zu bemerken und Alternativen zum Hauen zu üben.",
+      "achtung": [
+        "Keine Katharsis: kein Kissenboxen, kein „Wut rauslassen“ durch Schlagen. Abkühlen heißt atmen, bewegen, Abstand.",
+        "Wut ist okay, Hauen nicht: Grenze klar ziehen, ohne zu beschämen. Eigene Beispiele des Kindes nur freiwillig.",
+        "Häufige Gewalt, Waffen, Drohungen oder Hinweise auf Gewalt zu Hause: Leitung/Responsable und Fachstelle informieren."
+      ]
+    },
+    "fr": {
+      "warum": "À l’école primaire, le contrôle des impulsions s’exerce bien si la marche à suivre est claire et imagée. Le feu tricolore (rouge : stop et se calmer, orange : réfléchir, vert : agir) reprend l’auto-instruction de Meichenbaum et des éléments de Coping Power. L’enfant apprend à repérer les signaux d’alerte du corps et à s’exercer à des alternatives à frapper.",
+      "achtung": [
+        "Pas de catharsis : pas de coussin à frapper ni de « défoulement ». Se calmer, c’est respirer, bouger, prendre de la distance.",
+        "La colère est permise, pas les coups : limite claire, sans humilier. Vécus personnels de l’enfant seulement volontaires.",
+        "Violence fréquente, armes, menaces ou indices de violence à la maison : informer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Lochman, J. E., Wells, K. C. & Lenhart, L. A. (2008): Coping Power: Child Group Facilitator's Guide",
+      "Meichenbaum, D. & Goodman, J. (1971): Training impulsive children to talk to themselves: A means of developing self-control"
+    ]
+  },
+  "kurs-wut-10-12": {
+    "de": {
+      "warum": "Aggressives Verhalten hängt in diesem Alter oft an Deutungen („Der hat das mit Absicht gemacht“). Coping Power (Lochman) arbeitet deshalb mit Wut-Thermometer, Auslösern, heißen und kühlen Gedanken und Selbstinstruktion; KVT-Programme gegen Ärger wirken nachweislich (Sukhodolsky et al.). Das Kind probiert Abkühl-Werkzeuge aus und bewertet sie selbst.",
+      "achtung": [
+        "Keine Katharsis: Schlagen oder Schreien steigert Ärger eher (Bushman). Nur beruhigende Werkzeuge üben.",
+        "Provokation nicht wegreden: Reaktionen üben, die ohne Gesichtsverlust gehen. Hilfe holen ist stark.",
+        "Mobbing, Waffen, Drohungen oder Gewalt: nicht allein lösen, Leitung/Responsable und Fachstelle einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "À cet âge, l’agressivité tient souvent aux interprétations (« Il l’a fait exprès »). Coping Power (Lochman) travaille donc avec le thermomètre de la colère, les déclencheurs, les pensées chaudes et fraîches et l’auto-instruction ; les programmes TCC contre la colère sont efficaces (Sukhodolsky et al.). L’enfant teste des outils pour se calmer et les évalue lui-même.",
+      "achtung": [
+        "Pas de catharsis : frapper ou crier attise plutôt la colère (Bushman). N’exercer que des outils qui apaisent.",
+        "Ne pas balayer la provocation : exercer des réponses sans perte de face. Demander de l’aide est une force.",
+        "Harcèlement, armes, menaces ou violence : l’adulte ne gère pas seul, il associe Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Lochman, J. E., Wells, K. C. & Lenhart, L. A. (2008): Coping Power: Child Group Facilitator's Guide",
+      "Sukhodolsky, D. G., Kassinove, H. & Gorman, B. S. (2004): Cognitive-behavioral therapy for anger in children and adolescents: A meta-analysis",
+      "Bushman, B. J. (2002): Does venting anger feed or extinguish the flame? Catharsis, rumination, distraction, anger, and aggressive responding"
+    ]
+  },
+  "kurs-wut-13-16": {
+    "de": {
+      "warum": "Jugendliche profitieren von Wissen über den Verlauf von Erregung und von Alternativen, die sie ernst nehmen. Der Kurs arbeitet mit Ärger-Kurve, Triggern und Frühwarnzeichen, prüft Denkfallen (Gedankenlesen, unterstellte Feindseligkeit) wie in der KVT und übt Ausstiege und fairen Ausdruck (vereinfacht nach den DBT-Skills). Online gilt: erst schreiben, später senden.",
+      "achtung": [
+        "Keine Katharsis, keine Predigt: Ärger ist legitim, Gewalt und Drohung nicht. Respektvoll bleiben.",
+        "Time-out ist eine Pause mit Rückkehr, keine Strafe: absprechen, wann das Gespräch weitergeht.",
+        "Gewalt, Drohungen, Waffen, Mobbing oder Selbstverletzung: Leitung/Responsable und Fachstelle sofort einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "Les adolescents tirent profit d’un savoir sur le déroulement de l’excitation et d’alternatives prises au sérieux. Le cours utilise la courbe de la colère, les déclencheurs et signaux d’alerte, examine les pièges de pensée (lecture de pensée, hostilité supposée) comme en TCC et exerce sorties et expression juste (DBT simplifiée). En ligne : écrire d’abord, envoyer plus tard.",
+      "achtung": [
+        "Pas de catharsis ni de sermon : la colère est légitime, la violence et la menace ne le sont pas. Rester respectueux.",
+        "Le time-out est une pause avec retour, pas une punition : convenir de quand la discussion reprend.",
+        "Violence, menaces, armes, harcèlement ou automutilation : informer sans attendre Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Rathus, J. H. & Miller, A. L. (2015): DBT Skills Manual for Adolescents",
+      "Sukhodolsky, D. G., Kassinove, H. & Gorman, B. S. (2004): Cognitive-behavioral therapy for anger in children and adolescents: A meta-analysis",
+      "Bushman, B. J. (2002): Does venting anger feed or extinguish the flame? Catharsis, rumination, distraction, anger, and aggressive responding"
+    ]
+  },
+  "kurs-freundschaft-4-6": {
+    "de": {
+      "warum": "Kontakt zu anderen Kindern gelingt im Vorschulalter, wenn kleine Schritte konkret geübt werden: grüßen, fragen, abwechseln, ein Nein aushalten. Der Kurs arbeitet mit Modell, Rollenspiel mit Figuren, Rückmeldung und Übertragung in den Alltag (Ansatz der Dinosaur School nach Webster-Stratton). Das Einsteigen in ein laufendes Spiel wird in Schritten vorbereitet (Putallaz & Gottman).",
+      "achtung": [
+        "Freundschaft nicht erzwingen: Fragen üben, ein Nein gehört dazu und wird gemeinsam ausgehalten.",
+        "Keine Beispiele über echte Kinder aus Gruppe oder Klasse verlangen; mit Hoppel und den Figuren üben.",
+        "Kind wird ausgeschlossen, gehänselt oder geschlagen: Beobachtung festhalten und Leitung/Responsable informieren, nicht allein lösen."
+      ]
+    },
+    "fr": {
+      "warum": "Chez les enfants d’âge préscolaire, le contact avec les autres réussit lorsque de petits pas sont exercés concrètement : saluer, demander, alterner, accepter un non. Le cours emploie modèle, jeu de rôle avec les personnages, retour et transfert au quotidien (démarche de la Dinosaur School de Webster-Stratton). Rejoindre un jeu en cours se prépare par étapes (Putallaz & Gottman).",
+      "achtung": [
+        "Ne pas forcer l’amitié : on exerce la demande, le refus fait partie du jeu et se supporte ensemble.",
+        "Ne pas demander d’exemples sur de vrais enfants du groupe ou de la classe ; exercer avec Hoppel et les personnages.",
+        "Enfant exclu, moqué ou frappé : noter ce que l’on observe et informer Responsable, ne pas régler seul."
+      ]
+    },
+    "quellen": [
+      "Webster-Stratton, C. & Reid, M. J. (2003): Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program",
+      "Putallaz, M. & Gottman, J. M. (1981): An interactional model of children's entry into peer groups"
+    ]
+  },
+  "kurs-freundschaft-7-9": {
+    "de": {
+      "warum": "In diesem Alter werden Freundschaften beständiger und hängen an Gegenseitigkeit: zuhören, teilen, helfen, wieder gut machen. Der Kurs übt diese Fertigkeiten über Modell, Rollenspiel, Rückmeldung und Übertragung in den Alltag. Das Einsteigen in ein laufendes Spiel gelingt eher, wenn Kinder sich zuerst anpassen, bevor sie eigene Ideen einbringen (Putallaz & Gottman).",
+      "achtung": [
+        "Freundschaft lässt sich üben, nicht erzwingen: Absagen und Zurückweisung offen besprechen, nicht kleinreden.",
+        "Nicht nach Namen von Kindern aus der Klasse fragen; Beispiele der Figuren reichen.",
+        "Wiederholte Ausgrenzung, Hänseln oder Schläge (Mobbing): ernst nehmen, Leitung/Responsable informieren, nicht allein lösen."
+      ]
+    },
+    "fr": {
+      "warum": "À cet âge, les amitiés deviennent plus stables et reposent sur la réciprocité : écouter, partager, aider, réparer. Le cours exerce ces compétences par modèle, jeu de rôle, retour et transfert au quotidien. Rejoindre un jeu en cours réussit mieux quand l’enfant s’adapte d’abord au jeu avant d’y apporter ses propres idées (Putallaz & Gottman).",
+      "achtung": [
+        "L’amitié s’exerce mais ne s’impose pas : parler ouvertement des refus et des rejets, sans les minimiser.",
+        "Ne pas chercher de noms d’enfants de la classe ; les exemples des personnages suffisent.",
+        "Exclusion répétée, moqueries ou coups (harcèlement) : prendre au sérieux, informer Responsable, ne pas traiter seul."
+      ]
+    },
+    "quellen": [
+      "Putallaz, M. & Gottman, J. M. (1981): An interactional model of children's entry into peer groups",
+      "Bukowski, W. M., Newcomb, A. F. & Hartup, W. W. (1996): The Company They Keep: Friendship in Childhood and Adolescence"
+    ]
+  },
+  "kurs-freundschaft-10-12": {
+    "de": {
+      "warum": "Mit zehn bis zwölf Jahren werden enge Freundschaften wichtiger, und Gruppendruck setzt ein. Der Kurs übt als konkretes Verhalten Gespräche beginnen, Interesse zeigen, einladen und Absagen aushalten, mit Modell, Rollenspiel und Rückmeldung wie im Gruppentraining sozialer Kompetenzen (Hinsch & Pfingsten). Freundschafts-Kreise helfen, das eigene Netz realistisch zu sehen.",
+      "achtung": [
+        "Kein Druck, mehr Freunde zu haben: ein bis zwei enge Beziehungen genügen. Maßstab ist das Kind, nicht die Norm.",
+        "Gruppendruck an Figuren üben; nicht nach Namen oder Vorfällen aus Klasse und Familie fragen.",
+        "Anhaltende Einsamkeit, Rückzug, Mobbing oder gefährliche Mutproben: Leitung/Responsable und Fachstelle einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "Entre 10 et 12 ans, les amitiés proches gagnent en importance et la pression du groupe apparaît. Le cours exerce comme comportements concrets : engager la conversation, montrer de l’intérêt, inviter, supporter un refus, avec modèle, jeu de rôle et retour comme dans l’entraînement aux compétences sociales de Hinsch & Pfingsten. Les cercles d’amitié aident à voir son réseau avec réalisme.",
+      "achtung": [
+        "Aucune pression pour avoir plus d’amis : une ou deux relations proches suffisent. La mesure est l’enfant, pas la norme.",
+        "Exercer la pression du groupe avec des personnages ; ne pas demander de noms ni d’incidents de classe ou de famille.",
+        "Solitude durable, repli, harcèlement ou défis dangereux : associer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Bukowski, W. M., Newcomb, A. F. & Hartup, W. W. (1996): The Company They Keep: Friendship in Childhood and Adolescence",
+      "Hinsch, R. & Pfingsten, U. (1983): Gruppentraining sozialer Kompetenzen (GSK)"
+    ]
+  },
+  "kurs-freundschaft-13-16": {
+    "de": {
+      "warum": "Jugendliche brauchen Netz, Nähe und Abgrenzung zugleich. Der Kurs übt Kontakt aufnehmen, Zuhören, Grenzen setzen und Beziehungen reparieren in konkreten Schritten (PEERS nach Laugeson & Frankel) und mit Techniken der zwischenmenschlichen Wirksamkeit aus den DBT-Skills (Rathus & Miller). Vertrauen online gehört dazu: nichts weiterleiten ohne Einverständnis.",
+      "achtung": [
+        "Ein Nein des Jugendlichen ist eine Grenze: respektieren, nicht überreden. Keine Ratschläge zu Liebe oder Sexualität.",
+        "Zu Freundschaft, Liebe und Netz nur Freiwilliges erfragen; Beispiele über Figuren.",
+        "Hinweise auf Cybermobbing, Nacktbilder, Erpressung, Gewalt in Beziehungen oder Missbrauch: sofort Leitung/Responsable und Fachstelle."
+      ]
+    },
+    "fr": {
+      "warum": "Les adolescents ont besoin à la fois de réseau, de proximité et de limites. Le cours exerce prendre contact, écouter, poser des limites et réparer une relation en étapes concrètes (PEERS, Laugeson & Frankel) et avec des techniques d’efficacité interpersonnelle de la DBT (Rathus & Miller). La confiance en ligne en fait partie : ne rien transférer sans accord.",
+      "achtung": [
+        "Le non de l’adolescent est une limite : la respecter, ne pas l’amadouer. Pas de conseils sur la vie amoureuse ou sexuelle.",
+        "Sur l’amitié, l’amour et le réseau, ne demander que ce qui est donné librement ; passer par des personnages.",
+        "Cyberharcèlement, photos intimes, chantage, violence dans le couple ou abus : informer aussitôt Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Laugeson, E. A. & Frankel, F. (2010): Social Skills for Teenagers with Developmental and Autism Spectrum Disorders: The PEERS Treatment Manual",
+      "Rathus, J. H. & Miller, A. L. (2015): DBT Skills Manual for Adolescents"
+    ]
+  },
+  "kurs-streit-4-6": {
+    "de": {
+      "warum": "Streit unter kleinen Kindern geht meist um Dinge und Reihenfolge. Der Kurs übt konkrete Alternativen: fragen statt nehmen, mit der Sanduhr abwechseln, teilen, Stopp sagen, Hilfe holen. Die Sanduhr macht Warten sichtbar; Lob für jeden gelungenen Versuch und einfaches Problemlösen (Webster-Stratton; Spivack & Shure) helfen beim Übertragen in den Alltag.",
+      "achtung": [
+        "Teilen nicht erzwingen: Warten und Abwechseln üben, aber kein Lieblingsding ohne Grund abgeben lassen.",
+        "Entschuldigungen nicht erzwingen; lieber zeigen, wie man etwas wieder gut macht.",
+        "Wiederholtes Beißen, Schlagen oder Verletzen trotz Üben: Beobachtungen festhalten, Leitung/Responsable informieren."
+      ]
+    },
+    "fr": {
+      "warum": "Les disputes de jeunes enfants portent surtout sur les objets et l’ordre de passage. Le cours exerce des alternatives concrètes : demander au lieu de prendre, alterner avec le sablier, partager, dire stop, appeler à l’aide. Le sablier rend l’attente visible ; les éloges pour chaque essai réussi et une résolution de problème simple (Webster-Stratton ; Spivack & Shure) aident au transfert.",
+      "achtung": [
+        "Ne pas forcer à partager : exercer l’attente et l’alternance sans faire céder sans raison un objet très aimé.",
+        "Ne pas exiger d’excuses ; montrer plutôt comment réparer.",
+        "Morsures ou coups répétés malgré l’entraînement : noter ce que l’on observe et informer Responsable."
+      ]
+    },
+    "quellen": [
+      "Webster-Stratton, C. & Reid, M. J. (2003): Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program",
+      "Spivack, G. & Shure, M. B. (1974): Social Adjustment of Young Children: A Cognitive Approach to Solving Real-Life Problems"
+    ]
+  },
+  "kurs-streit-7-9": {
+    "de": {
+      "warum": "Soziale Problemlöse-Schritte (Spivack & Shure) helfen Kindern, im Konflikt nicht nur zu reagieren: Problem benennen, Gefühl sagen, Ideen sammeln, Folgen bedenken, sich einigen. Die Friedens-Treppe macht diese Reihenfolge sichtbar. Wer in unklaren Situationen schnell Feindseligkeit unterstellt, streitet häufiger (Crick & Dodge); deshalb gehört Nachfragen dazu.",
+      "achtung": [
+        "Beide Seiten hören, keinen Schuldigen suchen: Die Treppe ist weder Verhör noch Gericht.",
+        "Einigen heißt nicht nachgeben: Das Kind darf bei Unfairem Nein sagen und Hilfe holen.",
+        "Dauerstreit mit einem Kind, Ausgrenzung oder körperliche Gewalt: Leitung/Responsable einbeziehen, nicht zur Versöhnung drängen."
+      ]
+    },
+    "fr": {
+      "warum": "Les étapes de résolution sociale de problèmes (Spivack & Shure) aident les enfants à ne pas seulement réagir : nommer le problème, dire ses émotions, chercher des idées, prévoir les suites, s’accorder. L’escalier de la paix rend cet ordre visible. Les enfants qui prêtent vite une intention hostile dans les situations floues se disputent plus (Crick & Dodge) : demander fait donc partie du cours.",
+      "achtung": [
+        "Écouter les deux côtés, ne pas chercher de coupable : l’escalier n’est ni un interrogatoire ni un tribunal.",
+        "S’accorder ne veut pas dire céder : l’enfant peut dire non à l’injuste et demander de l’aide.",
+        "Dispute durable avec un enfant, exclusion ou violence physique : associer Responsable, ne pas pousser à la réconciliation."
+      ]
+    },
+    "quellen": [
+      "Spivack, G. & Shure, M. B. (1974): Social Adjustment of Young Children: A Cognitive Approach to Solving Real-Life Problems",
+      "Crick, N. R. & Dodge, K. A. (1994): A review and reformulation of social information-processing mechanisms in children's social adjustment"
+    ]
+  },
+  "kurs-streit-10-12": {
+    "de": {
+      "warum": "Ab etwa zehn Jahren gelingt es, die Sicht des anderen mitzudenken, ohne die eigene aufzugeben (Selman). Der Kurs nutzt das: beide Seiten sehen, Ich-Botschaften statt Vorwürfe (Gordon), Lösungen sammeln und auf Fairness für beide prüfen, sich mit Bedauern und Wiedergutmachung entschuldigen. So treten übbare Schritte an die Stelle von Vorwürfen und Appellen.",
+      "achtung": [
+        "Perspektivwechsel heißt weder Unrecht gutheißen noch verzeihen müssen; Betroffene von Gewalt nie zum Einlenken drängen.",
+        "Entschuldigung nur freiwillig und ehrlich: Eine erzwungene Entschuldigung beschämt.",
+        "Mobbing, Erpressung, Gewalt oder Drohung ist kein Konflikt auf Augenhöhe: nicht vermitteln, Leitung/Responsable und Fachstelle."
+      ]
+    },
+    "fr": {
+      "warum": "Dès 10 ans environ, on parvient à intégrer le point de vue de l’autre sans abandonner le sien (Selman). Le cours s’y appuie : voir les deux côtés, messages-je plutôt que reproches (Gordon), chercher des solutions et vérifier qu’elles sont justes pour les deux, s’excuser avec regret et réparation. Des étapes qui s’exercent remplacent reproches et sermons.",
+      "achtung": [
+        "Changer de point de vue ne demande ni d’approuver l’injustice ni de pardonner ; ne jamais presser une victime de céder.",
+        "Excuses seulement volontaires et sincères : des excuses forcées humilient.",
+        "Harcèlement, chantage, violence ou menace ne sont pas des conflits à égalité : pas de médiation, associer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Selman, R. L. (1980): The Growth of Interpersonal Understanding",
+      "Gordon, T. (1970): Parent Effectiveness Training"
+    ]
+  },
+  "kurs-streit-13-16": {
+    "de": {
+      "warum": "Jugendliche können zwischen Positionen und den Interessen dahinter unterscheiden. Der Kurs arbeitet mit dem Harvard-Konzept (Fisher & Ury): Interessen statt Positionen, Optionen erfinden, faire Kriterien wählen. Dazu kommen aktives Zuhören und restorative Fragen (Zehr): Was ist passiert, wer ist betroffen, was braucht es zur Wiedergutmachung? Eskalationsstufen nach Glasl helfen, früh auszusteigen.",
+      "achtung": [
+        "Nur Konflikte auf Augenhöhe verhandeln. Bei Gewalt, Drohung, Mobbing oder Machtgefälle nicht vermitteln: Leitung/Responsable.",
+        "Wiedergutmachen ist weder Strafe noch Pflicht zur Versöhnung; Betroffene müssen nicht verzeihen.",
+        "Keine Beispiele aus Familie oder Klasse verlangen, mit Fallgeschichten üben. Schwerer Konflikt zu Hause: Fachstelle einbinden."
+      ]
+    },
+    "fr": {
+      "warum": "Les adolescents savent distinguer positions et intérêts sous-jacents. Le cours emploie le concept de Harvard (Fisher & Ury) : intérêts plutôt que positions, options inventées, critères équitables. S’y ajoutent l’écoute active et les questions restauratives (Zehr) : que s’est-il passé, qui est touché, que faut-il pour réparer ? Les degrés d’escalade de Glasl aident à s’arrêter tôt.",
+      "achtung": [
+        "Ne négocier que des conflits à égalité. Violence, menace, harcèlement ou rapport de force : pas de médiation, informer Responsable.",
+        "Réparer n’est ni une punition ni une obligation de se réconcilier ; la personne touchée n’a pas à pardonner.",
+        "Pas d’exemples tirés de la famille ou de la classe : travailler sur des histoires. Conflit grave à la maison : associer le service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Fisher, R. & Ury, W. (1981): Getting to Yes: Negotiating Agreement Without Giving In",
+      "Zehr, H. (2002): The Little Book of Restorative Justice"
+    ]
+  },
+  "kurs-selbstwert-4-6": {
+    "de": {
+      "warum": "Vorschulkinder beschreiben sich über Konkretes: was sie mögen und was sie schon können (Harter). Das Ich-Buch hält solche Aussagen fest, jeweils mit Beleg („Ich kann …, das habe ich schon geschafft“). Wirksam ist, was das Kind selbst erlebt und tut: Selbstwirksamkeit entsteht durch eigene Erfolge (Bandura), nicht durch pauschales Lob.",
+      "achtung": [
+        "Konkret statt pauschal loben („Du hast lange gebaut“); nie mit anderen Kindern vergleichen.",
+        "Alles ist freiwillig: Das Ich-Buch gehört dem Kind. Zeigt es Fotos oder Zeichnungen nicht gern, genügt das.",
+        "Ständig „Ich bin dumm / mich mag keiner“ oder sehr ängstliches, gehemmtes Kind: Leitung/Responsable und Fachstelle informieren."
+      ]
+    },
+    "fr": {
+      "warum": "À l’âge préscolaire, les enfants se décrivent par du concret : ce qu’ils aiment, ce qu’ils savent déjà faire (Harter). Le livre du moi garde ces phrases, chacune avec une preuve (« Je sais…, je l’ai déjà réussi »). Ce qui compte, c’est ce que l’enfant vit et fait lui-même : le sentiment d’efficacité naît de ses propres réussites (Bandura), non d’éloges généraux.",
+      "achtung": [
+        "Féliciter de façon concrète (« tu as construit longtemps »), jamais globale ; ne jamais comparer avec d’autres enfants.",
+        "Tout reste volontaire : le livre appartient à l’enfant. S’il ne veut pas montrer photos ou dessins, c’est suffisant.",
+        "« Je suis nul / personne ne m’aime » sans cesse, ou enfant très anxieux ou inhibé : informer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Harter, S. (1999): The Construction of the Self: A Developmental Perspective",
+      "Bandura, A. (1977): Self-efficacy: Toward a unifying theory of behavioral change"
+    ]
+  },
+  "kurs-selbstwert-7-9": {
+    "de": {
+      "warum": "Mit sieben bis neun Jahren vergleichen sich Kinder stärker mit anderen und bewerten ihre Fähigkeiten (Harter). Der Kurs stützt ein realistisches Selbstbild: Stärken immer mit Beispiel als Beleg, Rückmeldungen anderer, Fehler als Teil des Lernens („noch nicht“, Dweck). Zuversicht wächst durch erlebte Erfolge (Bandura), nicht durch leere Komplimente.",
+      "achtung": [
+        "Stärken immer mit Beleg; keine erfundenen Lobsprüche und den Wert eines Kindes nicht mit Leistung gleichsetzen.",
+        "Niemanden bloßstellen: eigene Beispiele freiwillig, Vergleiche mit Geschwistern oder Mitschülern nicht zulassen.",
+        "Starke Selbstabwertung, Schulangst oder Hinweise auf Mobbing oder Vernachlässigung: Leitung/Responsable und Fachstelle."
+      ]
+    },
+    "fr": {
+      "warum": "Entre 7 et 9 ans, les enfants se comparent davantage aux autres et jugent leurs capacités (Harter). Le cours soutient une image de soi réaliste : forces toujours avec un exemple comme preuve, retours des autres, erreurs comme partie de l’apprentissage (« pas encore », Dweck). La confiance naît des réussites vécues (Bandura), non de compliments creux.",
+      "achtung": [
+        "Toujours une preuve pour chaque force ; pas de compliments inventés ni de valeur de l’enfant mesurée à sa performance.",
+        "Ne mettre personne en difficulté : vécus personnels volontaires, ne pas laisser comparer à frères, sœurs ou camarades.",
+        "Forte autodévalorisation, peur de l’école ou indices de harcèlement ou de négligence : informer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Harter, S. (1999): The Construction of the Self: A Developmental Perspective",
+      "Dweck, C. S. (2006): Mindset: The New Psychology of Success",
+      "Bandura, A. (1977): Self-efficacy: Toward a unifying theory of behavioral change"
+    ]
+  },
+  "kurs-selbstwert-10-12": {
+    "de": {
+      "warum": "Mit zehn bis zwölf Jahren wird das Selbstbild differenzierter und kritischer (Harter), Vergleich und Leistung bekommen Gewicht. Der Kurs hält Stärken mit Belegen fest, lässt Stärken anderer erkennen und prüft die innere Kritik: Ist sie fair? Die freundliche Stimme (kindgerechtes Selbstmitgefühl nach Neff) ersetzt nicht den Realismus, sondern den Dauertadel.",
+      "achtung": [
+        "Kein verordnetes „positives Denken“: Kritische Gedanken prüfen statt verbieten, Rückschläge nicht beschönigen.",
+        "Stärken nur mit Beleg und ohne Vergleich mit anderen; keine Bewertung von Aussehen oder Körper.",
+        "Hinweise auf Selbstverletzung, Essstörung, anhaltende Traurigkeit oder Mobbing: Leitung/Responsable und Fachstelle einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "Entre 10 et 12 ans, l’image de soi se nuance et devient plus critique (Harter) ; comparaison et performance prennent du poids. Le cours fixe les forces avec des preuves, apprend à voir celles des autres et examine la critique intérieure : est-elle juste ? La voix bienveillante (auto-compassion adaptée à l’enfant, Neff) ne remplace pas le réalisme, elle remplace le blâme permanent.",
+      "achtung": [
+        "Ne pas imposer de « penser positif » : examiner les pensées critiques sans les interdire, ne pas enjoliver les échecs.",
+        "Forces toujours avec preuve, sans comparaison ; aucun jugement sur l’apparence ou le corps.",
+        "Automutilation, troubles alimentaires, tristesse durable ou harcèlement : informer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Harter, S. (1999): The Construction of the Self: A Developmental Perspective",
+      "Neff, K. D. (2003): Self-compassion: An alternative conceptualization of a healthy attitude toward oneself"
+    ]
+  },
+  "kurs-selbstwert-13-16": {
+    "de": {
+      "warum": "Jugendliche bilden ihre Identität zwischen Selbstbild und Fremdbild, Werten und Zielen. Der Kurs verbindet belegte Stärken mit Werteklärung, einem fairen Blick auf den inneren Kritiker (Selbstmitgefühl nach Neff) und Zielen mit WOOP (Oettingen). WOOP verknüpft Wunsch, Hindernis und Wenn-Dann-Plan und ist realistischer als bloßes positives Denken.",
+      "achtung": [
+        "Werte und Ziele gehören dem Jugendlichen: nicht lenken, bewerten oder an eigenen Erwartungen messen.",
+        "Das Profil bleibt privat, wird weder weitergegeben noch verglichen. Persönliches nur freiwillig.",
+        "Selbstverletzung, Suizidgedanken, Essstörung oder Identitätskrise mit starkem Leid: nicht allein tragen, sofort Fachstelle einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "Les adolescents construisent leur identité entre image de soi et regard des autres, valeurs et projets. Le cours relie forces prouvées, clarification des valeurs, regard juste sur le critique intérieur (auto-compassion, Neff) et objectifs avec WOOP (Oettingen). WOOP combine souhait, obstacle et plan si-alors et reste plus réaliste que la seule pensée positive.",
+      "achtung": [
+        "Valeurs et objectifs appartiennent à l’adolescent : ne pas orienter, juger ni mesurer à ses propres attentes.",
+        "Le profil reste privé : ni transmis ni comparé. Contenus personnels seulement volontaires.",
+        "Automutilation, idées suicidaires, troubles alimentaires ou crise d’identité très douloureuse : ne pas rester seul, service spécialisé aussitôt."
+      ]
+    },
+    "quellen": [
+      "Harter, S. (1999): The Construction of the Self: A Developmental Perspective",
+      "Neff, K. D. (2003): Self-compassion: An alternative conceptualization of a healthy attitude toward oneself",
+      "Oettingen, G. (2014): Rethinking Positive Thinking: Inside the New Science of Motivation"
+    ]
+  },
+  "kurs-mut-4-6": {
+    "de": {
+      "warum": "Ängste sind im Vorschulalter normal. Statt zu vermeiden, übt der Kurs gestufte Annäherung in kleinen, schaffbaren Schritten mit Belohnung für Versuche (Leo und die Mut-Medaille), dazu Atmen und einen Mut-Satz als einfache Selbstinstruktion (Meichenbaum). Mut heißt nicht „keine Angst“, sondern es trotzdem probieren; Vermeiden hält Angst aufrecht (Rapee et al.).",
+      "achtung": [
+        "Nicht zum Mut zwingen oder überreden: Ist die Stufe zu groß, eine kleinere wählen. Das Kind bestimmt das Tempo.",
+        "Nicht „Du brauchst keine Angst zu haben“ sagen: Angst ernst nehmen, ohne sie zu verstärken.",
+        "Starke Angst mit Vermeiden über Wochen, Schlaf- oder Essprobleme: Leitung/Responsable und Fachstelle informieren."
+      ]
+    },
+    "fr": {
+      "warum": "Les peurs sont normales à l’âge préscolaire. Plutôt qu’éviter, le cours exerce l’approche graduelle en petits pas réalisables, avec récompense des essais (Léo et la médaille du courage), plus respiration et phrase de courage comme auto-instruction simple (Meichenbaum). Avoir du courage, ce n’est pas ne pas avoir peur, c’est essayer malgré tout ; l’évitement entretient la peur (Rapee et al.).",
+      "achtung": [
+        "Ne pas forcer ni persuader : si la marche est trop haute, en choisir une plus petite. L’enfant fixe le rythme.",
+        "Ne pas dire « tu n’as pas à avoir peur » : prendre la peur au sérieux sans la renforcer.",
+        "Peur forte avec évitement durant des semaines, troubles du sommeil ou de l’alimentation : informer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Rapee, R. M., Wignall, A., Hudson, J. L. & Schniering, C. A. (2000): Treating Anxious Children and Adolescents: An Evidence-Based Approach",
+      "Meichenbaum, D. (1977): Cognitive-Behavior Modification: An Integrative Approach"
+    ]
+  },
+  "kurs-mut-7-9": {
+    "de": {
+      "warum": "Kinder dieses Alters verstehen schon, dass Angst ein Alarmsystem ist, das manchmal zu früh anschlägt. Der Kurs erklärt das, übt Beruhigen im Körper, prüft ängstliche Gedanken und führt über eine Stufenleiter schrittweise an Gefürchtetes heran, ähnlich wie Coping Cat (Kendall). Vermeiden beruhigt kurzfristig, hält die Angst aber aufrecht.",
+      "achtung": [
+        "Keine Konfrontation ohne Vorbereitung: Stufen gemeinsam planen, nie überrumpeln oder „ins kalte Wasser werfen“.",
+        "Nichts aus der Familie ausfragen; bei Veränderungen (Umzug, Trennung) nur aufgreifen, was das Kind selbst erzählt.",
+        "Angst mit Vermeiden über Wochen (Schule, Schlaf, Trennung) oder Panik: Leitung/Responsable und Fachstelle einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "À cet âge, les enfants comprennent déjà que la peur est un système d’alarme qui se déclenche parfois trop tôt. Le cours l’explique, exerce l’apaisement du corps, examine les pensées anxieuses et mène par une échelle vers ce qui fait peur, dans l’esprit de Coping Cat (Kendall). L’évitement calme à court terme mais entretient la peur.",
+      "achtung": [
+        "Pas de confrontation sans préparation : planifier les marches ensemble, ne jamais surprendre ni « jeter à l’eau ».",
+        "Ne pas interroger sur la famille ; en cas de changement (déménagement, séparation), ne reprendre que ce que l’enfant raconte.",
+        "Peur avec évitement durant des semaines (école, sommeil, séparation) ou panique : associer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Kendall, P. C. (1994): Treating anxiety disorders in children: Results of a randomized clinical trial",
+      "Rapee, R. M., Wignall, A., Hudson, J. L. & Schniering, C. A. (2000): Treating Anxious Children and Adolescents: An Evidence-Based Approach"
+    ]
+  },
+  "kurs-mut-10-12": {
+    "de": {
+      "warum": "Mit zehn bis zwölf Jahren können Kinder Gedanken prüfen (Beweise, Wahrscheinlichkeit, „Was würde ich einem Freund sagen?“) und eine Expositionsleiter gemeinsam planen. Der Kurs folgt der kognitiv-verhaltenstherapeutischen Linie von Coping Cat (Kendall): Angst verstehen, beruhigen, Gedanken prüfen, schrittweise annähern. Entscheidend ist die Annäherung, nicht das Wegdenken.",
+      "achtung": [
+        "Das ist Mut-Training, keine Angsttherapie: Bei anhaltend starker Angst nicht weitermachen, Fachstelle/Psychologie einbeziehen.",
+        "Gedanken prüfen statt „positiv denken“: Sorgen nicht wegreden, sondern mit Belegen testen.",
+        "Schulverweigerung, Panik, Zwänge oder Rückzug über Wochen: Leitung/Responsable und Fachstelle zeitnah informieren."
+      ]
+    },
+    "fr": {
+      "warum": "Entre 10 et 12 ans, on peut examiner ses pensées (preuves, probabilité, « que dirais-je à un ami ? ») et planifier ensemble une échelle d’exposition. Le cours suit la ligne cognitivo-comportementale de Coping Cat (Kendall) : comprendre la peur, se calmer, examiner les pensées, s’approcher pas à pas. L’essentiel est l’approche, non de chasser la pensée.",
+      "achtung": [
+        "Entraînement au courage, pas thérapie de l’anxiété : si l’angoisse est forte et durable, ne pas poursuivre, associer le service spécialisé.",
+        "Examiner les pensées plutôt que « penser positif » : ne pas balayer les soucis, les tester avec des preuves.",
+        "Refus scolaire, panique, compulsions ou repli durant des semaines : informer vite Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Kendall, P. C. (1994): Treating anxiety disorders in children: Results of a randomized clinical trial",
+      "Kendall, P. C. & Hedtke, K. (2006): Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual"
+    ]
+  },
+  "kurs-mut-13-16": {
+    "de": {
+      "warum": "Anspannung hilft bis zu einem Punkt, darüber blockiert sie (Yerkes & Dodson). Jugendliche verstehen diese Stress-Kurve und können Katastrophengedanken prüfen (Beck). Der Kurs verbindet Körperregulation, Gedanken prüfen, gestufte Annäherung statt Vermeiden und Kontrollkreise (beeinflussbar oder nicht) zu einem eigenen Stressplan.",
+      "achtung": [
+        "Kein Ersatz für Therapie: Bei Panik, Schulvermeidung, Zwängen oder Angst über Wochen Fachstelle/Psychologie einbeziehen.",
+        "Auf Augenhöhe bleiben: Sorgen nicht herunterspielen, keine Floskeln; die Stufen wählt der Jugendliche selbst.",
+        "Suizidgedanken, Selbstverletzung oder Substanzen zum Beruhigen: nicht allein tragen, sofort Leitung/Responsable und Fachstelle."
+      ]
+    },
+    "fr": {
+      "warum": "La tension aide jusqu’à un certain point, au-delà elle bloque (Yerkes & Dodson). Les adolescents comprennent cette courbe du stress et savent examiner les pensées catastrophistes (Beck). Le cours relie régulation du corps, examen des pensées, approche graduelle plutôt qu’évitement et cercles de contrôle (ce que je peux influencer ou non) dans un plan personnel contre le stress.",
+      "achtung": [
+        "Ne remplace pas une thérapie : panique, évitement scolaire, compulsions ou angoisse durable : associer le service spécialisé.",
+        "Rester à égalité : ne pas minimiser leurs soucis, pas de formules toutes faites ; l’adolescent choisit les étapes.",
+        "Idées suicidaires, automutilation ou substances pour se calmer : ne pas rester seul, informer aussitôt Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Yerkes, R. M. & Dodson, J. D. (1908): The relation of strength of stimulus to rapidity of habit-formation",
+      "Beck, A. T. (1976): Cognitive Therapy and the Emotional Disorders"
+    ]
+  },
+  "kurs-fokus-4-6": {
+    "de": {
+      "warum": "Aufmerksamkeit und Innehalten sind bei Vorschulkindern noch im Aufbau (Diamond & Lee). Der Kurs übt sie in kurzen, spielerischen Schritten: genau hinschauen, hinhören, still wie eine Statue, eins nach dem anderen, bis zum Ziel. Ein festes Bild (Fuchs Fino) und laut gesprochene Schritte nach Meichenbaum & Goodman geben Halt, ohne Druck zu machen.",
+      "achtung": [
+        "Kurze Etappen, viel Bewegung: keine lange stille Konzentration erwarten, Pausen einplanen.",
+        "Unruhe ist kein Ungehorsam: nicht tadeln, sondern Gelungenes konkret loben.",
+        "Dauerhafte Unruhe überall oder Verdacht auf Hör- und Sehprobleme: Leitung/Responsable informieren und von der Fachstelle abklären lassen."
+      ]
+    },
+    "fr": {
+      "warum": "Chez les enfants d’âge préscolaire, l’attention et l’arrêt de l’élan sont encore en construction (Diamond & Lee). Le cours les exerce en petits pas ludiques : bien regarder, bien écouter, rester immobile comme une statue, une chose après l’autre, aller jusqu’au bout. Une image fixe (le renard Fino) et des étapes dites à voix haute, selon Meichenbaum & Goodman, donnent un appui sans pression.",
+      "achtung": [
+        "Étapes courtes, beaucoup de mouvement : ne pas attendre une longue concentration immobile, prévoir des pauses.",
+        "L’agitation n’est pas de la désobéissance : ne pas gronder, mais féliciter précisément les réussites.",
+        "Agitation durable partout ou doute sur l’audition ou la vue : informer Responsable, faire clarifier par le service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Diamond, A. & Lee, K. (2011): Interventions shown to aid executive function development in children 4 to 12 years old",
+      "Meichenbaum, D. & Goodman, J. (1971): Training impulsive children to talk to themselves: A means of developing self-control"
+    ]
+  },
+  "kurs-fokus-7-9": {
+    "de": {
+      "warum": "Die drei Fragen (Was soll ich tun? Wie? Fertig?) sind Selbstinstruktion nach Meichenbaum & Goodman: Das Kind spricht den Ablauf erst laut, dann leise mit. So lässt sich Aufmerksamkeit steuern und Ablenkung früher bemerken. Der Kurs ergänzt Ablenkungen erkennen, Etappen und bewusste Pausen, ein Training selbstregulierten Lernens (Zimmerman).",
+      "achtung": [
+        "Keine Diagnostik: Bei anhaltender Unaufmerksamkeit oder Impulsivität in mehreren Lebensbereichen an Fachstelle/Psychologie.",
+        "Keine Etiketten wie „unkonzentriert“: Ablenkung ist normal, Erfolge konkret benennen.",
+        "Pausen gehören zum Plan; Zeit und Aufgabe klein halten, damit das Kind Erfolg erlebt."
+      ]
+    },
+    "fr": {
+      "warum": "Les trois questions (Que dois-je faire ? Comment ? C’est fini ?) relèvent de l’auto-instruction de Meichenbaum & Goodman : l’enfant dit d’abord la marche à voix haute, puis tout bas. Cela aide à diriger l’attention et à repérer plus tôt les distractions. Le cours ajoute étapes et pauses voulues : un entraînement à l’apprentissage autorégulé (Zimmerman).",
+      "achtung": [
+        "Pas de diagnostic ici : inattention ou impulsivité durables dans plusieurs domaines de vie : service spécialisé ou psychologue.",
+        "Pas d’étiquettes comme « distrait » : la distraction est normale, nommer concrètement les réussites.",
+        "Les pauses font partie du plan ; garder temps et tâche petits pour que l’enfant vive la réussite."
+      ]
+    },
+    "quellen": [
+      "Meichenbaum, D. & Goodman, J. (1971): Training impulsive children to talk to themselves: A means of developing self-control",
+      "Zimmerman, B. J. (2002): Becoming a self-regulated learner: An overview"
+    ]
+  },
+  "kurs-fokus-10-12": {
+    "de": {
+      "warum": "Wirksam lernen heißt abrufen, verteilen und planen, nicht nur wiederlesen oder markieren (Dunlosky et al.). Der Kurs übt Abfragen, verteiltes Lernen, Zerlegen großer Aufgaben und Ablenkungen managen. Lernstile („visueller Typ“) kommen nicht vor, weil Studien keinen Nutzen zeigen (Pashler et al.). Ein Fehler zeigt, was noch fehlt.",
+      "achtung": [
+        "Keine Lernstil-Mythen weitergeben: nicht „Du bist ein visueller Typ“ sagen, sondern Strategien ausprobieren und bewerten lassen.",
+        "Kein Lernen unter Prüfungsdruck: Ziel ist eine Strategie, die das Kind selbst anwenden kann.",
+        "Starke, anhaltende Lernblockade, Schulangst oder Verdacht auf Lernstörung: Leitung/Responsable und Fachstelle/Psychologie."
+      ]
+    },
+    "fr": {
+      "warum": "Apprendre efficacement, c’est se tester, étaler et planifier, pas seulement relire ou surligner (Dunlosky et al.). Le cours exerce l’autotest, les révisions espacées, le découpage des grandes tâches et la gestion des distractions. Les styles d’apprentissage (« type visuel ») n’y figurent pas : les études n’en montrent pas l’utilité (Pashler et al.). L’erreur indique ce qui manque encore.",
+      "achtung": [
+        "Pas de mythe des styles d’apprentissage : ne pas dire « tu es un type visuel », laisser essayer et évaluer des stratégies.",
+        "Pas d’apprentissage sous pression d’évaluation : le but est une stratégie que l’enfant applique seul.",
+        "Blocage fort et durable, peur de l’école ou soupçon de trouble d’apprentissage : informer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013): Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology",
+      "Pashler, H., McDaniel, M., Rohrer, D. & Bjork, R. (2008): Learning styles: Concepts and evidence"
+    ]
+  },
+  "kurs-fokus-13-16": {
+    "de": {
+      "warum": "Aufmerksamkeit ist begrenzt, und häufiges Medien-Multitasking geht mit schlechterer Ablenkungskontrolle einher (Ophir et al.). Der Kurs verbindet dieses Wissen mit praktischen Mitteln: Handy außer Sicht, Rückwärtsplanung, Prioritäten, Abrufen und Verteilen beim Lernen (Dunlosky et al.) und Wenn-Dann-Pläne gegen Aufschieben (Gollwitzer).",
+      "achtung": [
+        "Der Jugendliche entscheidet selbst, was er ausprobiert; keine Bevormundung bei Handy- und Mediennutzung.",
+        "Aufschieben ist nicht Faulheit: Angst, Überforderung oder Niedergeschlagenheit können dahinterstecken. Nachfragen, nicht verurteilen.",
+        "Anhaltendes Schuleschwänzen, Antriebslosigkeit, Schlafstörungen oder Suchtverhalten: Leitung/Responsable und Fachstelle einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "L’attention est limitée, et le multitâche intensif avec les médias va de pair avec un moins bon contrôle des distractions (Ophir et al.). Le cours relie ce savoir à des moyens pratiques : téléphone hors de vue, planification à rebours, priorités, rappel et espacement pour apprendre (Dunlosky et al.), plans si-alors contre la procrastination (Gollwitzer).",
+      "achtung": [
+        "L’adolescent décide de ce qu’il essaie ; pas de tutelle sur l’usage du téléphone ou des médias.",
+        "Procrastiner n’est pas de la paresse : peur, surcharge ou tristesse peuvent y être. Demander, ne pas condamner.",
+        "Absentéisme durable, manque d’élan, troubles du sommeil ou conduite addictive : associer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013): Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology",
+      "Ophir, E., Nass, C. & Wagner, A. D. (2009): Cognitive control in media multitaskers",
+      "Gollwitzer, P. M. (1999): Implementation intentions: Strong effects of simple plans"
+    ]
+  },
+  "kurs-zusammen-4-6": {
+    "de": {
+      "warum": "Zusammen spielen verlangt Warten, Abwechseln, Verlieren und Helfen, Fertigkeiten, die in diesem Alter wachsen. In der Einzelstunde ist die Fachkraft Spielpartner und übt sie in kleinen Aufgaben (Turm bauen, aufräumen) mit Modell, Lob für Gelungenes und Wiederholung (Webster-Stratton & Reid; Durlak et al.). Spielregeln werden vorher vereinbart und mit Bildern gestützt.",
+      "achtung": [
+        "Verlieren darf wehtun: Gefühl zulassen („Du ärgerst dich“), nicht beschämen, eine Pause anbieten.",
+        "Regeln vorher einfach und positiv formulieren; das Kind bei Regelverstößen nicht bloßstellen.",
+        "Häufiges Schlagen, Beißen, Wutausbrüche oder sehr gehemmtes Spiel: Beobachtungen festhalten, Leitung/Responsable und Fachstelle."
+      ]
+    },
+    "fr": {
+      "warum": "Jouer ensemble demande d’attendre, d’alterner, de perdre et d’aider : des compétences qui se développent à cet âge. En séance individuelle, l’adulte est partenaire de jeu et les exerce par petites tâches (tour, rangement), avec modèle, éloges du comportement réussi et répétition (Webster-Stratton & Reid ; Durlak et al.). Les règles sont convenues d’avance et soutenues par des images.",
+      "achtung": [
+        "Perdre peut faire mal : accueillir l’émotion (« tu es fâché »), ne pas humilier, proposer une pause.",
+        "Formuler les règles d’avance, simplement et positivement ; ne pas exposer l’enfant en cas d’écart.",
+        "Coups, morsures, crises fréquentes ou jeu très inhibé : noter ce que l’on observe, informer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Webster-Stratton, C. & Reid, M. J. (2003): Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011): The impact of enhancing students' social and emotional learning: A meta-analysis of school-based universal interventions"
+    ]
+  },
+  "kurs-zusammen-7-9": {
+    "de": {
+      "warum": "Grundschulkinder beginnen, Regeln nach ihrem Grund und ihrer Fairness zu beurteilen (Turiel). Darauf baut der Kurs: Warum gibt es Regeln, welche Gründe haben sie, wie gewinnt und verliert man fair, wie trifft man Abmachungen und erinnert freundlich statt zu petzen. Gelernt wird über Beispiele, Rollenspiel und Rückmeldung (CASEL; Durlak et al.).",
+      "achtung": [
+        "Regeln begründen statt befehlen; das Kind darf sie hinterfragen und Verbesserungen vorschlagen.",
+        "Petzen und Hilfe holen unterscheiden: Wer in Gefahr ist oder verletzt wird, holt immer Hilfe.",
+        "Berichte von Bestrafung, Drohungen oder Gewalt: nicht nachbohren, Leitung/Responsable und Fachstelle informieren."
+      ]
+    },
+    "fr": {
+      "warum": "À l’école primaire, les enfants commencent à juger les règles selon leur raison et leur équité (Turiel). Le cours s’y appuie : pourquoi des règles, quelles raisons, comment gagner et perdre avec fair-play, convenir d’accords, rappeler gentiment au lieu de rapporter. L’apprentissage passe par exemples, jeu de rôle et retour (CASEL ; Durlak et al.).",
+      "achtung": [
+        "Expliquer les règles au lieu de les imposer ; l’enfant peut les questionner et proposer des améliorations.",
+        "Distinguer rapporter et appeler à l’aide : quiconque est en danger ou blessé demande toujours de l’aide.",
+        "Récit de punitions, menaces ou violence : ne pas creuser, informer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Turiel, E. (1983): The Development of Social Knowledge: Morality and Convention",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011): The impact of enhancing students' social and emotional learning: A meta-analysis of school-based universal interventions"
+    ]
+  },
+  "kurs-zusammen-10-12": {
+    "de": {
+      "warum": "Teamarbeit gelingt, wenn jeder Beitrag zählt, Rollen klar sind und Fehler gemeinsam gelöst statt beschuldigt werden (Johnson & Johnson). In der Einzelstunde ist die Fachkraft Teampartner in Kooperationsaufgaben und macht es vor; das Kind übt Ideen einbringen, Meinungen annehmen, Absprachen halten und Pannen meistern, mit sofortiger Rückmeldung.",
+      "achtung": [
+        "Als Teampartner Fehler selbst vormachen und konstruktiv lösen; nicht überlegen auftreten, nicht gegen das Kind antreten.",
+        "Rollen nicht nach festen Stärken-Schwächen-Schablonen verteilen; das Kind darf wechseln.",
+        "Wiederholte Ausgrenzung im Team oder Hinweise auf Mobbing: Leitung/Responsable und Fachstelle einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "Le travail d’équipe réussit quand chaque apport compte, que les rôles sont clairs et que les erreurs se résolvent ensemble au lieu d’être reprochées (Johnson & Johnson). En séance individuelle, l’adulte est partenaire d’équipe dans des tâches de coopération et montre l’exemple ; l’enfant exerce proposer des idées, accepter l’avis d’autrui, tenir des accords et gérer les couacs, avec retour immédiat.",
+      "achtung": [
+        "Comme partenaire, montrer soi-même une erreur et la résoudre de façon constructive ; pas de supériorité, pas de compétition contre l’enfant.",
+        "Ne pas attribuer les rôles selon des forces et faiblesses figées ; l’enfant peut en changer.",
+        "Exclusion répétée dans une équipe ou indices de harcèlement : informer Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Johnson, D. W. & Johnson, R. T. (1989): Cooperation and Competition: Theory and Research",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011): The impact of enhancing students' social and emotional learning: A meta-analysis of school-based universal interventions"
+    ]
+  },
+  "kurs-zusammen-13-16": {
+    "de": {
+      "warum": "Jugendliche suchen ihren Platz in Gruppen und sind für Gruppendruck empfänglich. Der Kurs klärt Rollen, Regeln und Fairness als Rechte und Pflichten, übt Verantwortung, Wiedergutmachung und eine eigene Haltung unter Druck. Zivilcourage wird als konkretes Handeln geübt: Je mehr Zuschauer, desto seltener wird geholfen (Latané & Darley). Mitbestimmen heißt, Vorschläge sachlich einzubringen (Hart).",
+      "achtung": [
+        "Zivilcourage nie auf Kosten der eigenen Sicherheit: Bei Gewalt Hilfe holen statt eingreifen. Das ist mutig.",
+        "Keine Namen oder Vorfälle aus Klasse, Clique oder Familie sammeln; mit Fallgeschichten üben.",
+        "Berichte von Mobbing, Nötigung, Gewalt oder extremistischen Gruppen: sofort Leitung/Responsable und Fachstelle einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "Les adolescents cherchent leur place dans les groupes et sont sensibles à la pression. Le cours clarifie rôles, règles et équité comme droits et devoirs, exerce la responsabilité, la réparation et une position propre sous pression. Le courage civique s’exerce comme geste concret : plus il y a de témoins, moins on aide (Latané & Darley). Participer, c’est apporter ses propositions de façon factuelle (Hart).",
+      "achtung": [
+        "Jamais de courage civique au prix de sa sécurité : en cas de violence, appeler à l’aide plutôt qu’intervenir. C’est courageux.",
+        "Ne pas collecter de noms ni d’incidents de classe, de clique ou de famille ; travailler sur des histoires.",
+        "Harcèlement, contrainte, violence ou groupes extrémistes évoqués : informer aussitôt Responsable et service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Latané, B. & Darley, J. M. (1970): The Unresponsive Bystander: Why Doesn't He Help?",
+      "Hart, R. A. (1992): Children's Participation: From Tokenism to Citizenship"
+    ]
+  }
+}

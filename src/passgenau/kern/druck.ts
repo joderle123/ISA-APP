@@ -2,6 +2,7 @@
 // keinen Katalog – so landen Blätter und Metadaten nicht ein zweites Mal im PDF-Modul. Datenschutz (9.6 Punkt 3, E-M13):
 // auf dem Planblatt Vorname, Codes und Quelle-Art, aber keine Daten von Vorfällen oder Notizen; Begründungen nur auf Wunsch.
 import type { Baustein, Blatt } from '../../blatt/typen'
+import HINTERGRUND from '../../data/passgenau/kurs-hintergrund.json'
 import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
 import { bausteinInhalt, eldibKurz, intern, istGruppenText, kindSatz, merkmaleVon, quelleText, setzeTextModus, staemme, textVon, zielSatz, type Katalog } from './katalog'
 import { textMerkmale } from './einzel'
@@ -74,6 +75,9 @@ export interface DruckFolge {
   ziele: { code: string; text: string }[]
   /** Lernpfad (Stufe 4): worauf die Kerne der Folge hinauslaufen – nur, wenn mindestens zwei aus derselben Reihe kommen */
   faden?: string
+  /** Einzelkurs: Hintergrund für die Fachkraft – warum es wirkt, worauf achten, Quellen (Referenzmessung 16.10.: „Hintergrund,
+   *  Quellen und Achtung-Hinweise fehlen im Vergleich zum Skills-Kurs“) */
+  hintergrund?: { warum: string; achtung: string[]; quellen: string[] }
   material: string[]
   datei: string
   sprache: Sprache
@@ -301,7 +305,10 @@ function ersterSatz(t: string, n: number): string | undefined {
   const s = (t || '').replace(/\s+/g, ' ').trim().split(/(?<=[.!?])\s+(?=[A-ZÄÖÜÀ-Ý„«])/)[0] ?? ''
   if (!s) return undefined
   if (s.length <= n) return s.replace(/[.]$/, '')
-  return s.slice(0, s.lastIndexOf(' ', n - 1)).replace(/[,;:–-]+$/, '') + ' …'
+  // lieber an einer Satzteilgrenze (Komma, Doppelpunkt, Gedankenstrich) als mitten in einer Klammer oder Aufzählung
+  const teil = Math.max(s.lastIndexOf(', ', n - 2), s.lastIndexOf(': ', n - 2), s.lastIndexOf(' – ', n - 2), s.lastIndexOf('; ', n - 2))
+  const ende = teil > n * 0.55 ? teil : s.lastIndexOf(' ', n - 1)
+  return s.slice(0, ende).replace(/[,;:–-]+$/, '').trim() + ' …'
 }
 /** Ziel der Stunde je Kompetenz: kurz (für die Fachkraft) und als Satzteil „Heute geht es darum, …“ (fürs Kind) */
 const ZIEL_FELD: Record<string, { de: string; fr: string; satz: { de: string; fr: string } }> = {
@@ -376,7 +383,10 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
   // eigene Schritte haben eine feste Zeile (auch mit eingesetztem Text); ein überschriebener Text verdrängt die Zeile des Bausteins
   // Themen-Einstieg mit Anknüpfen: die Spickzettel-Zeile der Übung, nicht der Anknüpf-Satz (Blind-Bewertung 13)
   const kz = PG_KURZ[x.ref]?.[sprache] ?? ((ueberText && !x.ref.startsWith('th:')) || x.wahl?.length ? undefined : e.typ === 'schritt' ? (sprache === 'fr' ? e.fr?.kurz : e.kurz) : undefined)
-  d.kurz = kz ?? ersterSatz(d.text, 80)
+  // Einzelkurs: die Werkzeug-Zeile der Sitzung ist schon ein Einzeiler (Referenzmessung 16.10.: „Auf einen Blick“ brach den
+  // ersten Satz mitten im Satzteil ab)
+  const kursZeile = e.typ === 'schritt' && e.linie?.id.startsWith('kurs-') && x.rolle === 'kern' ? e.werkzeug?.[sprache] : undefined
+  d.kurz = kz ?? kursZeile ?? ersterSatz(d.text, 80)
   // Blind-Bewertung 9.10.: Optionen ohne Anleitung („Carte au trésor“ – und dann?) – jede Option mit einem Satz
   // Blind-Bewertung 8: die Beschreibung der ersten Option stand unter den anderen – jede Option trägt ihren Satz selbst,
   // der Schritt heißt neutral „Zur Wahl“
@@ -882,14 +892,27 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
   }
 }
 
+/** Hintergrund eines Einzelkurses (src/data/passgenau/kurs-hintergrund.json) */
+export interface KursHintergrund {
+  de: { warum: string; achtung: string[] }
+  fr: { warum: string; achtung: string[] }
+  quellen: string[]
+}
+
 export function druckFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache: Sprache; warum: boolean }): DruckFolge {
   const sitzungen = plan.sitzungen.map((s) => druckSitzung(k, p, plan, s.nr, { ...opt, karten: false }))
-  const material = [...new Set(sitzungen.flatMap((s) => s.material))]
+  // „Mappe (von Sitzung 1)“ nicht neben „Mappe“: in der Liste für die ganze Folge genügt das Ding einmal
+  const alleMat = [...new Set(sitzungen.flatMap((s) => s.material))]
+  const material = alleMat.filter((m) => { const b = /^(.+) \((von Sitzung|de la séance) \d+\)$/.exec(m); return !b || !alleMat.includes(b[1]) })
   const linien = plan.sitzungen.flatMap((s) => s.schritte.filter((x) => x.rolle === 'kern').map((x) => k.eintraege.get(x.ref))).flatMap((e) => (e?.typ === 'schritt' && e.linie ? [e.linie] : []))
-  const faden = linien.find((l) => linien.filter((x) => x.id === l.id).length >= 2)?.faden[opt.sprache]
+  const reihe = linien.find((l) => linien.filter((x) => x.id === l.id).length >= 2)
+  const faden = reihe?.faden[opt.sprache]
+  const h = reihe ? (HINTERGRUND as Record<string, KursHintergrund>)[reihe.id] : undefined
+  const hintergrund = h?.[opt.sprache]?.warum ? { warum: h[opt.sprache].warum, achtung: h[opt.sprache].achtung ?? [], quellen: h.quellen ?? [] } : undefined
   return {
     titel: plan.titel,
     ...(faden ? { faden } : {}),
+    ...(hintergrund ? { hintergrund } : {}),
     sitzungen,
     bogen: plan.sitzungen.map((s) => {
       const kern = s.schritte.find((x) => x.rolle === 'kern')

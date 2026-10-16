@@ -648,6 +648,28 @@ function Deckblatt({ f }: { f: DruckFolge }) {
           </View>
         </Absatz>
       </View>
+      {f.hintergrund ? (
+        <View style={{ marginTop: 4, borderLeftWidth: 2.5, borderLeftColor: P.tief, paddingLeft: 9 }}>
+          <Absatz titel={sp === 'fr' ? 'Pour l’adulte : pourquoi ça marche' : 'Für die Fachkraft: warum das wirkt'} abstand={6}>
+            <LText>{f.hintergrund.warum}</LText>
+          </Absatz>
+          {f.hintergrund.achtung.length ? (
+            <Absatz titel={sp === 'fr' ? 'Attention' : 'Achtung'} farbe={P.tief} abstand={6}>
+              {f.hintergrund.achtung.map((a, i) => (
+                <View key={i} style={{ flexDirection: 'row', marginBottom: 1.5 }}>
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9, color: P.tief, width: 9 }}>•</Text>
+                  <View style={{ flex: 1 }}><LText>{a}</LText></View>
+                </View>
+              ))}
+            </Absatz>
+          ) : null}
+          {f.hintergrund.quellen.length ? (
+            <View>
+              <LText klein farbe={NEUTRAL.leise}>{`${sp === 'fr' ? 'Sources' : 'Quellen'}: ${f.hintergrund.quellen.join(' · ')}`}</LText>
+            </View>
+          ) : null}
+        </View>
+      ) : null}
       <Fuss sprache={sp} spielschule={false} />
     </Page>
   )

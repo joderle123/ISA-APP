@@ -327,6 +327,20 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
   regel(27, 'Einzelkurs unvollständig oder „Fachkraft“ auf dem Kinderblatt', 'fehler', t)
 }
 
+// 28 Einzelkurse: Hintergrund für die Fachkraft (warum es wirkt, Achtung, Quellen; DE und FR) – steht auf dem Deckblatt der
+// Kurs-Mappe (Referenzmessung 16.10.: „Hintergrund, Quellen und Achtung-Hinweise fehlen“)
+{
+  const H = JSON.parse(readFileSync(join(ROOT, 'src/data/passgenau/kurs-hintergrund.json'), 'utf8')) as Record<string, { de?: { warum?: string; achtung?: string[] }; fr?: { warum?: string; achtung?: string[] }; quellen?: string[] }>
+  const t: string[] = []
+  for (const l of new Set(schritte.filter((e) => e.linie?.id.startsWith('kurs-')).map((e) => e.linie!.id))) {
+    const h = H[l]
+    if (!h) { t.push(`${l}: kein Hintergrund`); continue }
+    for (const sp of ['de', 'fr'] as const) if (!h[sp]?.warum || !(h[sp]?.achtung ?? []).length) t.push(`${l}: Hintergrund ${sp} unvollständig`)
+    if (!(h.quellen ?? []).length) t.push(`${l}: keine Quelle`)
+  }
+  regel(28, 'Einzelkurs ohne Hintergrund (src/data/passgenau/kurs-hintergrund.json)', 'fehler', t)
+}
+
 // Ausgabe
 let fehler = 0
 for (const r of ergebnis.sort((a, b) => a.nr - b.nr)) {
