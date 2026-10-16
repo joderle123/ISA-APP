@@ -6,13 +6,13 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Selbstbild und Fremdbild",
-    "text": "Die Fachkraft zeigt das Selbstbild-Fenster auf dem Blatt: vier Felder (wie ich mich sehe, wie andere mich sehen, was mir wichtig ist, wohin ich will), die in den nächsten Stunden nacheinander gefüllt werden. Heute geht es um die ersten beiden: Das Bild, das man von sich hat, und das Bild, das andere von einem haben, sind selten gleich – beide stimmen ein Stück, nur aus verschiedener Sicht. Die Übung ist ein kurzes Podcast-Interview mit der erfundenen Jana: Der oder die Jugendliche spielt zuerst Jana und antwortet, wie sie sich sieht, dann ihren besten Freund Ben und sagt, was Ben an ihr sieht; die Fachkraft ist die Interviewerin. In der zweiten Runde tauschen sie die Rollen: Die Fachkraft spielt Jana oder Ben, der oder die Jugendliche stellt die Fragen und fasst am Ende die Unterschiede zusammen. Eigene Beispiele nur, wenn der oder die Jugendliche sie von sich aus nennt.",
+    "text": "Die Fachkraft zeigt oben auf dem Blatt das Selbstbild-Fenster (vier Felder: wie ich mich sehe, wie andere mich sehen, was mir wichtig ist, wohin ich will), das sich in den nächsten Stunden Feld für Feld füllt. Heute gehören die ersten beiden dazu: Das Bild von sich selbst und das Bild, das andere von einem haben, sind selten gleich – beide stimmen ein Stück, nur aus verschiedener Sicht. Dann spielen sie ein kurzes Podcast-Interview mit der erfundenen Jana (14, spielt Handball, in der Klasse eher still): Die Fachkraft interviewt („Jana, wie läuft es im Training, in Bio, im Gruppenchat?“), und der oder die Jugendliche antwortet erst als Jana, wie sie sich sieht (ca. 4 Minuten), dann als ihr bester Freund Ben, was er an ihr sieht (ca. 3 Minuten). In der zweiten Runde tauschen sie die Rollen: Die Fachkraft spielt Jana oder Ben, der oder die Jugendliche stellt die Fragen und fasst am Ende die Unterschiede zusammen. Eigene Beispiele nur, wenn der oder die Jugendliche sie von sich aus nennt.",
     "sagen": [
       "Du hast ein Bild von dir – und jede Person, die dich kennt, hat ihr eigenes. Beide stimmen ein Stück, aber selten ganz überein.",
       "Heute interviewe ich dich als Jana: Wie sieht sie sich selbst? Und danach: Was sagt ihr bester Freund Ben über sie?",
       "Wo unterscheiden sich die beiden Bilder – und was fällt dir daran auf?"
     ],
-    "wennEsKippt": "Mag der oder die Jugendliche nicht spielen, liest die Fachkraft beide Rollen, und er oder sie zeigt auf dem Blatt, welche Aussage zu Janas Selbstbild und welche zu Bens Blick gehört. Fällt zu Ben nichts ein, nennt die Fachkraft zwei Satzanfänge zur Wahl („Ben würde sagen: Sie ist die, die …“). Eigenes wird nicht verlangt; Jana trägt die Stunde allein.",
+    "wennEsKippt": "Mag der oder die Jugendliche nicht spielen, liest die Fachkraft beide Rollen, und er oder sie sagt nur, welche Aussage zu Janas Selbstbild und welche zu Bens Blick gehört. Fällt zu Ben nichts ein, nennt die Fachkraft zwei Satzanfänge zur Wahl („Ben würde sagen: Sie ist die, die …“). Eigenes wird nicht verlangt; Jana trägt die Stunde allein.",
     "rolle": [
       "kern"
     ],
@@ -112,7 +112,7 @@
               "art": "bild",
               "bild": "motiv:spiegel",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Der Spiegel zeigt nur einen der beiden Blicke.",
               "ausrichtung": "mitte"
             }
           ]
@@ -197,11 +197,13 @@
           "items": [
             {
               "titel": "Wie ich mich sehe",
-              "text": "heute neu"
+              "text": "heute neu",
+              "heute": true
             },
             {
               "titel": "Wie andere mich sehen",
-              "text": "heute neu"
+              "text": "heute neu",
+              "heute": true
             },
             {
               "titel": "Was mir wichtig ist",
@@ -223,7 +225,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Achte darauf, wenn dir jemand eine Rückmeldung gibt – ein Lob, einen Hinweis, einen Spruch im Chat. Notiere zwei Stichworte."
+          "text": "Bis zum nächsten Mal: Achte darauf, wenn dir jemand eine Rückmeldung gibt – ein Lob, einen Hinweis, einen Spruch im Chat. Notiere zwei Stichworte.",
+          "hinweis": "Jede Rückmeldung zählt. Du entscheidest, was du aufschreibst."
         },
         {
           "art": "tabelle",
@@ -271,7 +274,7 @@
               "art": "bild",
               "bild": "motiv:spiegel",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Le miroir ne montre que l’un des deux regards.",
               "ausrichtung": "mitte"
             }
           ]
@@ -356,11 +359,13 @@
           "items": [
             {
               "titel": "Mon regard sur moi",
-              "text": "nouveau aujourd’hui"
+              "text": "nouveau aujourd’hui",
+              "heute": true
             },
             {
               "titel": "Le regard des autres",
-              "text": "nouveau aujourd’hui"
+              "text": "nouveau aujourd’hui",
+              "heute": true
             },
             {
               "titel": "Ce qui compte pour moi",
@@ -382,7 +387,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : fais attention quand quelqu’un te donne un retour – un compliment, une remarque, un message dans le chat. Note deux mots-clés."
+          "text": "D’ici la prochaine fois : fais attention quand quelqu’un te donne un retour – un compliment, une remarque, un message dans le chat. Note deux mots-clés.",
+          "hinweis": "Chaque remarque compte. Tu décides de ce que tu notes."
         },
         {
           "art": "tabelle",
@@ -406,7 +412,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die Beispielzeile vor, dann trägt der oder die Jugendliche ein, was Janas Freunde in den anderen Situationen sagen würden; im Gespräch darüber steckt das Interview aus dem Kern. Mehrere Antworten können stimmen. Der Kasten „Wer sieht was?“ wird kurz gelesen, ohne Vortrag. Aufgabe 2 ist allein und freiwillig: Wörter in die Äste, der Satz darunter nur, wenn er oder sie mag. Fenster und Auftrag am Ende sind kurz; das Blatt kommt in die Fenster-Mappe.",
+          "text": "Das Interview aus dem Kern liefert die Beispiele für das Blatt. Aufgabe 1 gemeinsam: Die Fachkraft liest die Beispielzeile vor, der oder die Jugendliche trägt ein, was Janas Freunde in den anderen Situationen sagen würden; mehrere Antworten können stimmen. Der Kasten „Wer sieht was?“ wird kurz gelesen, ohne Vortrag. Aufgabe 2 ist allein und freiwillig: Wörter in die Äste; der Satz darunter ist „wenn Zeit bleibt“. Fenster und Auftrag am Ende sind kurz; beim Auftrag zählen nur Rückmeldungen, die er oder sie teilen mag. Das Blatt kommt in die Fenster-Mappe.",
           "sagen": [
             "Wo unterscheiden sich die beiden Blicke?",
             "Was könnte bei Jana der blinde Fleck sein?"
@@ -414,7 +420,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche die Antworten, und die Fachkraft schreibt Stichworte in die Tabelle. Eine Zeile pro Aufgabe genügt; die Äste dürfen auch leer bleiben. Ist die Zeit knapp, genügen die Aufgaben 1 und 2; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit la ligne d’exemple, puis le ou la jeune note ce que les amis de Jana diraient dans les autres situations ; la conversation qui suit reprend l’interview vue pendant la séance. Plusieurs réponses peuvent être justes. L’encadré « Qui voit quoi ? » se lit brièvement, sans exposé. L’exercice 2 se fait seul et librement : des mots dans les branches, la phrase en dessous seulement si le ou la jeune le souhaite. La fenêtre et la mission à la fin sont brèves ; la fiche va dans le dossier de la fenêtre.",
+          "text": "L’interview de la séance fournit les exemples de la fiche. Exercice 1 ensemble : l’adulte lit la ligne d’exemple, puis le ou la jeune note ce que les amis de Jana diraient dans les autres situations ; plusieurs réponses peuvent être justes. L’encadré « Qui voit quoi ? » se lit brièvement, sans exposé. L’exercice 2 se fait seul et librement : des mots dans les branches ; la phrase en dessous, seulement s’il reste du temps. La fenêtre et la mission à la fin sont brèves ; pour la mission, seuls comptent les retours que le ou la jeune veut bien partager. La fiche va dans le dossier de la fenêtre.",
           "sagen": [
             "Où les deux regards diffèrent-ils ?",
             "Quel pourrait être l’angle mort de Jana ?"
@@ -425,13 +431,13 @@
     },
     "fr": {
       "titel": "Image de soi et regard des autres",
-      "text": "L’adulte présente sur la fiche la fenêtre sur moi : quatre champs (mon regard sur moi, le regard des autres, ce qui compte pour moi, où je veux aller), qui se remplissent l’un après l’autre au fil des séances. Aujourd’hui, ce sont les deux premiers : l’image qu’on a de soi et celle que les autres ont de nous sont rarement identiques – les deux sont en partie justes, mais vues de deux endroits différents. L’exercice est une courte interview de podcast avec Jana, un personnage inventé : le ou la jeune joue d’abord Jana et dit comment elle se voit, puis son meilleur ami Ben et dit ce qu’il voit en elle ; l’adulte est l’intervieweuse. Au second tour, on échange les rôles : l’adulte joue Jana ou Ben, le ou la jeune pose les questions et résume à la fin les différences. Les exemples personnels ne viennent que si le ou la jeune les apporte lui-même ou elle-même.",
+      "text": "L’adulte montre en haut de la fiche la fenêtre sur moi (quatre champs : mon regard sur moi, le regard des autres, ce qui compte pour moi, où je veux aller), qui se remplit champ après champ au fil des séances. Aujourd’hui, ce sont les deux premiers : l’image qu’on a de soi et celle que les autres ont de nous sont rarement identiques – elles sont toutes deux en partie justes, mais vues de deux endroits différents. Ensuite, on joue une courte interview de podcast avec Jana, un personnage inventé (14 ans, joue au handball, plutôt discrète en classe) : l’adulte pose les questions (« Jana, comment ça se passe à l’entraînement, en bio, dans la conversation de groupe ? »), et le ou la jeune répond d’abord en tant que Jana pour dire comment elle se voit (environ 4 minutes), puis en tant que Ben, son meilleur ami, pour dire ce qu’il voit en elle (environ 3 minutes). Au second tour, on échange les rôles : l’adulte joue Jana ou Ben, le ou la jeune pose les questions et résume à la fin les différences. Les exemples personnels ne viennent que si le ou la jeune les apporte de lui-même ou d’elle-même.",
       "sagen": [
         "Tu as une image de toi – et chaque personne qui te connaît a la sienne. Les deux sont en partie justes, mais rarement identiques.",
         "Aujourd’hui, je t’interviewe dans le rôle de Jana : comment se voit-elle ? Et ensuite : que dit son meilleur ami, Ben, d’elle ?",
-        "Où les deux images diffèrent-elles – et qu’est-ce que tu remarques ?"
+        "En quoi ces deux images sont-elles différentes – et qu’est-ce que tu remarques ?"
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut pas jouer, l’adulte lit les deux rôles et le ou la jeune montre sur la fiche quelle phrase correspond à l’image que Jana a d’elle et laquelle au regard de Ben. Si rien ne vient pour Ben, l’adulte propose deux débuts de phrase au choix (« Ben dirait : c’est elle qui … »). Rien de personnel n’est demandé ; Jana porte seule la séance."
+      "wennEsKippt": "Si le ou la jeune ne veut pas jouer, l’adulte lit les deux rôles et le ou la jeune dit seulement quelle phrase correspond à l’image que Jana a d’elle-même et laquelle au regard de Ben. Si rien ne vient pour Ben, l’adulte propose deux débuts de phrase au choix (« Ben dirait : c’est elle qui … »). Rien de personnel n’est demandé ; Jana porte seule la séance."
     },
     "zugang": {
       "lesen": 2,
@@ -446,13 +452,13 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Selbstbild und Fremdbild",
-    "text": "Die Fachkraft zeigt das Selbstbild-Fenster auf dem Blatt: vier Felder (wie ich mich sehe, wie andere mich sehen, was mir wichtig ist, wohin ich will), die in den nächsten Stunden nacheinander gefüllt werden. Heute geht es um die ersten beiden: Das Bild, das man von sich hat, und das Bild, das andere von einem haben, sind selten gleich – beide stimmen ein Stück, nur aus verschiedener Sicht. Die Übung ist ein kurzes Podcast-Interview mit der erfundenen Jana: Der oder die Jugendliche spielt zuerst Jana und antwortet, wie sie sich sieht, dann ihren besten Freund Ben und sagt, was Ben an ihr sieht; die Fachkraft ist die Interviewerin. In der zweiten Runde tauschen sie die Rollen: Die Fachkraft spielt Jana oder Ben, der oder die Jugendliche stellt die Fragen und fasst am Ende die Unterschiede zusammen. Eigene Beispiele nur, wenn der oder die Jugendliche sie von sich aus nennt.",
+    "text": "Die Fachkraft zeigt oben auf dem Blatt das Selbstbild-Fenster (vier Felder: wie ich mich sehe, wie andere mich sehen, was mir wichtig ist, wohin ich will), das sich in den nächsten Stunden Feld für Feld füllt. Heute gehören die ersten beiden dazu: Das Bild von sich selbst und das Bild, das andere von einem haben, sind selten gleich – beide stimmen ein Stück, nur aus verschiedener Sicht. Dann spielen sie ein kurzes Podcast-Interview mit der erfundenen Jana (14, spielt Handball, in der Klasse eher still): Die Fachkraft interviewt („Jana, wie läuft es im Training, in Bio, im Gruppenchat?“), und der oder die Jugendliche antwortet erst als Jana, wie sie sich sieht (ca. 4 Minuten), dann als ihr bester Freund Ben, was er an ihr sieht (ca. 3 Minuten). In der zweiten Runde tauschen sie die Rollen: Die Fachkraft spielt Jana oder Ben, der oder die Jugendliche stellt die Fragen und fasst am Ende die Unterschiede zusammen. Eigene Beispiele nur, wenn der oder die Jugendliche sie von sich aus nennt.",
     "sagen": [
       "Du hast ein Bild von dir – und jede Person, die dich kennt, hat ihr eigenes. Beide stimmen ein Stück, aber selten ganz überein.",
       "Heute interviewe ich dich als Jana: Wie sieht sie sich selbst? Und danach: Was sagt ihr bester Freund Ben über sie?",
       "Wo unterscheiden sich die beiden Bilder – und was fällt dir daran auf?"
     ],
-    "wennEsKippt": "Mag der oder die Jugendliche nicht spielen, liest die Fachkraft beide Rollen, und er oder sie zeigt auf dem Blatt, welche Aussage zu Janas Selbstbild und welche zu Bens Blick gehört. Fällt zu Ben nichts ein, nennt die Fachkraft zwei Satzanfänge zur Wahl („Ben würde sagen: Sie ist die, die …“). Eigenes wird nicht verlangt; Jana trägt die Stunde allein.",
+    "wennEsKippt": "Mag der oder die Jugendliche nicht spielen, liest die Fachkraft beide Rollen, und er oder sie sagt nur, welche Aussage zu Janas Selbstbild und welche zu Bens Blick gehört. Fällt zu Ben nichts ein, nennt die Fachkraft zwei Satzanfänge zur Wahl („Ben würde sagen: Sie ist die, die …“). Eigenes wird nicht verlangt; Jana trägt die Stunde allein.",
     "rolle": [
       "kern"
     ],
@@ -552,7 +558,7 @@
               "art": "bild",
               "bild": "motiv:spiegel",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Der Spiegel zeigt nur einen der beiden Blicke.",
               "ausrichtung": "mitte"
             }
           ]
@@ -621,11 +627,13 @@
           "items": [
             {
               "titel": "Wie ich mich sehe",
-              "text": "heute neu"
+              "text": "heute neu",
+              "heute": true
             },
             {
               "titel": "Wie andere mich sehen",
-              "text": "heute neu"
+              "text": "heute neu",
+              "heute": true
             },
             {
               "titel": "Was mir wichtig ist",
@@ -649,7 +657,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Achte darauf, wenn dir jemand eine Rückmeldung gibt – ein Lob, einen Hinweis, einen Spruch im Chat. Merk dir eine."
+          "text": "Bis zum nächsten Mal: Achte darauf, wenn dir jemand eine Rückmeldung gibt – ein Lob, einen Hinweis, einen Spruch im Chat. Merk dir eine.",
+          "hinweis": "Jede Rückmeldung zählt. Du entscheidest, was du aufschreibst."
         },
         {
           "art": "zielkarte",
@@ -684,7 +693,7 @@
               "art": "bild",
               "bild": "motiv:spiegel",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Le miroir ne montre que l’un des deux regards.",
               "ausrichtung": "mitte"
             }
           ]
@@ -753,11 +762,13 @@
           "items": [
             {
               "titel": "Mon regard sur moi",
-              "text": "nouveau aujourd’hui"
+              "text": "nouveau aujourd’hui",
+              "heute": true
             },
             {
               "titel": "Le regard des autres",
-              "text": "nouveau aujourd’hui"
+              "text": "nouveau aujourd’hui",
+              "heute": true
             },
             {
               "titel": "Ce qui compte pour moi",
@@ -781,7 +792,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : fais attention quand quelqu’un te donne un retour – un compliment, une remarque, un message dans le chat. Retiens-en un."
+          "text": "D’ici la prochaine fois : fais attention quand quelqu’un te donne un retour – un compliment, une remarque, un message dans le chat. Retiens-en un.",
+          "hinweis": "Chaque remarque compte. Tu décides de ce que tu notes."
         },
         {
           "art": "zielkarte",
@@ -792,7 +804,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche verbindet jede Aussage von Jana mit dem Blick ihrer Freunde und sagt, woran er oder sie es merkt; die Fachkraft schreibt nichts mit. Der Kasten „Wer sieht was?“ wird kurz gelesen. In Aufgabe 2 wird angekreuzt, wer die jeweilige Eigenschaft sieht – bei „andere“ darf geraten werden, ein Wort dazu genügt. Fenster und Auftrag sind zum Ankreuzen und freiwillig; das Blatt kommt in die Fenster-Mappe.",
+          "text": "Das Interview aus dem Kern liefert die Beispiele für das Blatt. Aufgabe 1 gemeinsam: Der oder die Jugendliche verbindet jede Aussage von Jana mit dem Blick ihrer Freunde und sagt, woran er oder sie es merkt; die Fachkraft schreibt nichts mit. Der Kasten „Wer sieht was?“ wird kurz gelesen. In Aufgabe 2 wird angekreuzt, wer die jeweilige Eigenschaft sieht – bei „andere“ darf geraten werden, ein Wort dazu genügt. Fenster und Auftrag sind zum Ankreuzen und freiwillig; beim Auftrag zählen nur Rückmeldungen, die er oder sie teilen mag. Das Blatt kommt in die Fenster-Mappe.",
           "sagen": [
             "Woran merkst du das?",
             "Was sehen nur die anderen?"
@@ -800,7 +812,7 @@
           "wennEsKippt": "Fällt das Verbinden schwer, liest die Fachkraft die Karten vor, und der oder die Jugendliche zeigt. Auch das Ankreuzen darf mündlich bleiben. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune relie chaque phrase de Jana au regard de ses amis et dit à quoi il ou elle le remarque ; l’adulte n’écrit rien. L’encadré « Qui voit quoi ? » se lit brièvement. À l’exercice 2, on coche qui voit chaque trait – pour « les autres », on peut deviner, un mot suffit. La fenêtre et la mission se font en cochant, librement ; la fiche va dans le dossier de la fenêtre.",
+          "text": "L’interview de la séance fournit les exemples de la fiche. Exercice 1 ensemble : le ou la jeune relie chaque phrase de Jana au regard de ses amis et dit à quoi il ou elle le remarque ; l’adulte n’écrit rien. L’encadré « Qui voit quoi ? » se lit brièvement. À l’exercice 2, on coche qui voit chaque trait – pour « les autres », on peut deviner, un mot suffit. La fenêtre et la mission se font en cochant, librement ; pour la mission, seuls comptent les retours que le ou la jeune veut bien partager. La fiche va dans le dossier de la fenêtre.",
           "sagen": [
             "À quoi tu le remarques ?",
             "Qu’est-ce que seuls les autres voient ?"
@@ -811,13 +823,13 @@
     },
     "fr": {
       "titel": "Image de soi et regard des autres",
-      "text": "L’adulte présente sur la fiche la fenêtre sur moi : quatre champs (mon regard sur moi, le regard des autres, ce qui compte pour moi, où je veux aller), qui se remplissent l’un après l’autre au fil des séances. Aujourd’hui, ce sont les deux premiers : l’image qu’on a de soi et celle que les autres ont de nous sont rarement identiques – les deux sont en partie justes, mais vues de deux endroits différents. L’exercice est une courte interview de podcast avec Jana, un personnage inventé : le ou la jeune joue d’abord Jana et dit comment elle se voit, puis son meilleur ami Ben et dit ce qu’il voit en elle ; l’adulte est l’intervieweuse. Au second tour, on échange les rôles : l’adulte joue Jana ou Ben, le ou la jeune pose les questions et résume à la fin les différences. Les exemples personnels ne viennent que si le ou la jeune les apporte lui-même ou elle-même.",
+      "text": "L’adulte montre en haut de la fiche la fenêtre sur moi (quatre champs : mon regard sur moi, le regard des autres, ce qui compte pour moi, où je veux aller), qui se remplit champ après champ au fil des séances. Aujourd’hui, ce sont les deux premiers : l’image qu’on a de soi et celle que les autres ont de nous sont rarement identiques – elles sont toutes deux en partie justes, mais vues de deux endroits différents. Ensuite, on joue une courte interview de podcast avec Jana, un personnage inventé (14 ans, joue au handball, plutôt discrète en classe) : l’adulte pose les questions (« Jana, comment ça se passe à l’entraînement, en bio, dans la conversation de groupe ? »), et le ou la jeune répond d’abord en tant que Jana pour dire comment elle se voit (environ 4 minutes), puis en tant que Ben, son meilleur ami, pour dire ce qu’il voit en elle (environ 3 minutes). Au second tour, on échange les rôles : l’adulte joue Jana ou Ben, le ou la jeune pose les questions et résume à la fin les différences. Les exemples personnels ne viennent que si le ou la jeune les apporte de lui-même ou d’elle-même.",
       "sagen": [
         "Tu as une image de toi – et chaque personne qui te connaît a la sienne. Les deux sont en partie justes, mais rarement identiques.",
         "Aujourd’hui, je t’interviewe dans le rôle de Jana : comment se voit-elle ? Et ensuite : que dit son meilleur ami, Ben, d’elle ?",
-        "Où les deux images diffèrent-elles – et qu’est-ce que tu remarques ?"
+        "En quoi ces deux images sont-elles différentes – et qu’est-ce que tu remarques ?"
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut pas jouer, l’adulte lit les deux rôles et le ou la jeune montre sur la fiche quelle phrase correspond à l’image que Jana a d’elle et laquelle au regard de Ben. Si rien ne vient pour Ben, l’adulte propose deux débuts de phrase au choix (« Ben dirait : c’est elle qui … »). Rien de personnel n’est demandé ; Jana porte seule la séance."
+      "wennEsKippt": "Si le ou la jeune ne veut pas jouer, l’adulte lit les deux rôles et le ou la jeune dit seulement quelle phrase correspond à l’image que Jana a d’elle-même et laquelle au regard de Ben. Si rien ne vient pour Ben, l’adulte propose deux débuts de phrase au choix (« Ben dirait : c’est elle qui … »). Rien de personnel n’est demandé ; Jana porte seule la séance."
     },
     "zugang": {
       "lesen": 1,
@@ -832,13 +844,13 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Stärken mit Belegen",
-    "text": "Die ersten beiden Felder des Fensters stehen schon: wie ich mich sehe und wie andere mich sehen. Heute werden sie mit Belegen gefüllt: Eine Stärke zählt erst, wenn man sie zeigen kann – mit einer Tat, einem Ergebnis oder einer Rückmeldung (Stärke – Beleg – Wirkung). Die Fachkraft zeigt das am Beispiel von Tiago und spielt dann eine freundlich-skeptische Praktikumsleiterin: „Du sagst, du bist zuverlässig – woran sieht man das?“ Der oder die Jugendliche antwortet zuerst als Tiago, dann – wenn er oder sie mag – für sich selbst, immer mit einer Situation. In der zweiten Runde tauschen sie die Rollen: Der oder die Jugendliche fragt nach, die Fachkraft belegt eine eigene Stärke.",
+    "text": "Die ersten beiden Felder des Fensters stehen schon: wie ich mich sehe und wie andere mich sehen. Heute bekommen sie Belege: Eine Stärke zählt erst, wenn man sie zeigen kann – mit einer Tat, einem Ergebnis oder einer Rückmeldung (Stärke – Beleg – Wirkung). Die Fachkraft zeigt das an Tiago („Ich bin zuverlässig“ – Beleg: Seit September hat er vor jedem Spiel die Bälle dabei) und spielt dann eine freundlich-skeptische Praktikumsleiterin: „Du sagst, du bist zuverlässig – woran sieht man das?“ Der oder die Jugendliche antwortet zuerst als Tiago, dann – wenn er oder sie mag – für sich selbst, immer mit einer Situation; auch Rückmeldungen anderer zählen als Belege. In der zweiten Runde tauschen sie die Rollen: Der oder die Jugendliche fragt nach, die Fachkraft belegt eine eigene Stärke.",
     "sagen": [
       "Eine Stärke ohne Beleg ist nur eine Behauptung. Mit Beleg ist sie ein Fakt, den dir niemand wegreden kann.",
       "Ich spiele eine Praktikumsleiterin und frage nach: „Du sagst, du bist zuverlässig – woran sieht man das?“ Antworte mit einer Situation.",
       "Ein Beleg muss nicht groß sein. „Ich habe seit September vor jedem Spiel die Bälle mitgebracht“ zählt."
     ],
-    "wennEsKippt": "Fällt dem oder der Jugendlichen keine eigene Stärke ein, wählt er oder sie eine aus dem Wortspeicher und sucht den Beleg zuerst für Tiago. Bei „kann ich nicht“ fragt die Fachkraft: „Was haben dir andere schon mal gesagt?“ – auch das ist ein Beleg. Mag er oder sie nicht spielen, genügt das Gespräch am Blatt: Stärke wählen, Beleg sagen, die Fachkraft notiert Stichworte.",
+    "wennEsKippt": "Fällt dem oder der Jugendlichen keine eigene Stärke ein, wählt er oder sie eine aus dem Wortspeicher auf dem Blatt und sucht den Beleg zuerst für Tiago. Bei „kann ich nicht“ fragt die Fachkraft: „Was haben dir andere schon mal gesagt?“ – auch das ist ein Beleg. Mag er oder sie nicht spielen, genügt das Gespräch am Blatt: Stärke wählen, Beleg sagen, die Fachkraft notiert Stichworte.",
     "rolle": [
       "kern"
     ],
@@ -930,15 +942,15 @@
             },
             {
               "art": "text",
-              "text": "Eine Stärke zählt, wenn du sie zeigen kannst. Dreischritt: Stärke – Beleg – Wirkung."
+              "text": "Eine Stärke zählt, wenn du sie zeigen kannst: Stärke – Beleg – Wirkung (Wer hat es gemerkt? Was kam dabei heraus?)."
             }
           ],
           "rechts": [
             {
               "art": "bild",
-              "bild": "figur:ben:stolz:stehen",
+              "bild": "motiv:lupe",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Genau hinschauen: Was belegt die Stärke?",
               "ausrichtung": "mitte"
             }
           ]
@@ -1003,14 +1015,14 @@
         {
           "art": "aufgabe",
           "text": "Deine Belege: Trag deine drei Stärken ein und schreib dazu, wann du sie gezeigt hast.",
-          "hinweis": "Die erste Zeile ist ein Beispiel. Kleine Belege zählen."
+          "hinweis": "Die erste Zeile ist ein Beispiel. Kleine Belege und Rückmeldungen anderer zählen."
         },
         {
           "art": "tabelle",
           "spalten": [
             "Meine Stärke",
             "Beleg: Wann habe ich das gezeigt?",
-            "Wer hat es gemerkt?"
+            "Wirkung: Wer hat es gemerkt?"
           ],
           "breiten": [
             1.4,
@@ -1034,11 +1046,13 @@
           "items": [
             {
               "titel": "Wie ich mich sehe",
-              "text": "heute: mit Belegen"
+              "text": "heute: mit Belegen",
+              "heute": true
             },
             {
               "titel": "Wie andere mich sehen",
-              "text": "heute: mit Belegen"
+              "text": "heute: mit Belegen",
+              "heute": true
             },
             {
               "titel": "Was mir wichtig ist",
@@ -1089,15 +1103,15 @@
             },
             {
               "art": "text",
-              "text": "Une force compte quand tu peux la montrer. Trois temps : force – preuve – effet."
+              "text": "Une force compte quand tu peux la montrer : force – preuve – effet (Qui l’a remarqué ? Qu’est-ce qui en est sorti ?)."
             }
           ],
           "rechts": [
             {
               "art": "bild",
-              "bild": "figur:ben:stolz:stehen",
+              "bild": "motiv:lupe",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Regarder de près : qu’est-ce qui prouve la force ?",
               "ausrichtung": "mitte"
             }
           ]
@@ -1162,14 +1176,14 @@
         {
           "art": "aufgabe",
           "text": "Tes preuves : note tes trois forces et écris quand tu les as montrées.",
-          "hinweis": "La première ligne est un exemple. Les petites preuves comptent."
+          "hinweis": "La première ligne est un exemple. Les petites preuves et les retours des autres comptent."
         },
         {
           "art": "tabelle",
           "spalten": [
             "Ma force",
             "Preuve : quand l’ai-je montré ?",
-            "Qui l’a remarqué ?"
+            "Effet : qui l’a remarqué ?"
           ],
           "breiten": [
             1.4,
@@ -1193,11 +1207,13 @@
           "items": [
             {
               "titel": "Mon regard sur moi",
-              "text": "aujourd’hui : avec preuves"
+              "text": "aujourd’hui : avec preuves",
+              "heute": true
             },
             {
               "titel": "Le regard des autres",
-              "text": "aujourd’hui : avec preuves"
+              "text": "aujourd’hui : avec preuves",
+              "heute": true
             },
             {
               "titel": "Ce qui compte pour moi",
@@ -1232,7 +1248,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche verbindet Stärken und Belege; die Fachkraft fragt bei jedem Paar, ob es eine Tat, ein Ergebnis oder eine Rückmeldung ist. Danach das Praktikumsgespräch aus dem Kern. In Aufgabe 2 wählt er oder sie drei Stärken aus dem Wortspeicher, in Aufgabe 3 schreibt er oder sie zu jeder einen Beleg; die Fachkraft hilft mit „Wann war das? Was hast du genau getan?“. Fenster und Auftrag sind allein und kurz; das Blatt kommt in die Fenster-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche verbindet Stärken und Belege; die Fachkraft fragt bei jedem Paar, ob es eine Tat, ein Ergebnis oder eine Rückmeldung ist – das Praktikumsgespräch aus dem Kern ist damit schon geübt. In Aufgabe 2 wählt er oder sie drei Stärken aus dem Wortspeicher, in Aufgabe 3 schreibt er oder sie zu jeder einen Beleg und trägt ein, wer es gemerkt hat; die Fachkraft hilft mit „Wann war das? Was hast du genau getan?“. Fenster und Auftrag sind allein und kurz; das Blatt kommt in die Fenster-Mappe. Wenn Zeit bleibt: alle drei Zeilen in Aufgabe 3, sonst genügt eine.",
           "sagen": [
             "Ist das eine Tat, ein Ergebnis oder eine Rückmeldung?",
             "Wann war das, und was hast du genau getan?"
@@ -1240,7 +1256,7 @@
           "wennEsKippt": "Fällt kein Beleg ein, hilft die Frage „Was haben dir andere schon mal gesagt?“. Schreiben darf mündlich ersetzt werden, die Fachkraft notiert Stichworte. Reicht die Zeit nicht für drei Belege, genügt einer."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune relie forces et preuves ; pour chaque paire, l’adulte demande s’il s’agit d’un acte, d’un résultat ou d’un retour. Ensuite, l’entretien de stage du temps de séance. À l’exercice 2, il ou elle choisit trois forces dans la boîte à mots, à l’exercice 3, il ou elle écrit une preuve pour chacune ; l’adulte aide avec « C’était quand ? Qu’est-ce que tu as fait exactement ? ». La fenêtre et la mission se font seul et brièvement ; la fiche va dans le dossier de la fenêtre.",
+          "text": "Exercice 1 ensemble : le ou la jeune relie forces et preuves ; pour chaque paire, l’adulte demande s’il s’agit d’un acte, d’un résultat ou d’un retour – le jeu de rôle de la séance l’a déjà préparé. À l’exercice 2, il ou elle choisit trois forces dans la boîte à mots, à l’exercice 3, il ou elle écrit une preuve pour chacune et note qui l’a remarqué ; l’adulte aide avec « C’était quand ? Qu’est-ce que tu as fait exactement ? ». La fenêtre et la mission se font seul et brièvement ; la fiche va dans le dossier de la fenêtre. S’il reste du temps : les trois lignes de l’exercice 3, sinon une seule suffit.",
           "sagen": [
             "C’est un acte, un résultat ou un retour ?",
             "C’était quand, et qu’est-ce que tu as fait exactement ?"
@@ -1251,13 +1267,13 @@
     },
     "fr": {
       "titel": "Des forces, preuves à l’appui",
-      "text": "Les deux premiers champs de la fenêtre sont déjà posés : mon regard sur moi et le regard des autres. Aujourd’hui, on les remplit de preuves : une force ne compte que si on peut la montrer – par un acte, un résultat ou un retour (force – preuve – effet). L’adulte le montre avec l’exemple de Tiago, puis joue une responsable de stage bienveillante mais sceptique : « Tu dis que tu es fiable – à quoi le voit-on ? » Le ou la jeune répond d’abord en tant que Tiago, puis – s’il ou elle le souhaite – pour lui-même ou elle-même, toujours avec une situation. Au second tour, on échange les rôles : le ou la jeune pose les questions, l’adulte prouve l’une de ses propres forces.",
+      "text": "Les deux premiers champs de la fenêtre sont déjà posés : mon regard sur moi et le regard des autres. Aujourd’hui, on leur donne des preuves : une force ne compte que si on peut la montrer – par un acte, un résultat ou un retour (force – preuve – effet). L’adulte le montre avec Tiago (« Je suis fiable » – preuve : depuis septembre, il apporte les ballons avant chaque match), puis joue une responsable de stage bienveillante mais sceptique : « Tu dis que tu es fiable – à quoi le voit-on ? » Le ou la jeune répond d’abord en tant que Tiago, puis – s’il ou elle le souhaite – pour lui-même ou elle-même, toujours avec une situation ; les retours des autres comptent aussi comme preuves. Au second tour, on échange les rôles : le ou la jeune pose les questions, l’adulte donne la preuve de l’une de ses propres forces.",
       "sagen": [
         "Une force sans preuve n’est qu’une affirmation. Avec une preuve, c’est un fait que personne ne peut te retirer.",
         "Je joue une responsable de stage et je creuse : « Tu dis que tu es fiable – à quoi le voit-on ? » Réponds avec une situation.",
         "Une preuve n’a pas besoin d’être grande. « Depuis septembre, j’apporte les ballons avant chaque match » compte."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve pas de force, il ou elle en choisit une dans la boîte à mots et cherche d’abord la preuve pour Tiago. Pour « je n’en ai pas », l’adulte demande : « Qu’est-ce que d’autres t’ont déjà dit ? » – c’est aussi une preuve. S’il ou elle ne veut pas jouer, la discussion sur la fiche suffit : choisir une force, dire la preuve, l’adulte note des mots-clés."
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de force, il ou elle en choisit une dans la boîte à mots de la fiche et cherche d’abord la preuve pour Tiago. Pour « je n’en ai pas », l’adulte demande : « Qu’est-ce que d’autres t’ont déjà dit ? » – c’est aussi une preuve. S’il ou elle ne veut pas jouer, la discussion sur la fiche suffit : choisir une force, dire la preuve, l’adulte note des mots-clés."
     },
     "zugang": {
       "lesen": 2,
@@ -1272,13 +1288,13 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Stärken mit Belegen",
-    "text": "Die ersten beiden Felder des Fensters stehen schon: wie ich mich sehe und wie andere mich sehen. Heute werden sie mit Belegen gefüllt: Eine Stärke zählt erst, wenn man sie zeigen kann – mit einer Tat, einem Ergebnis oder einer Rückmeldung (Stärke – Beleg – Wirkung). Die Fachkraft zeigt das am Beispiel von Tiago und spielt dann eine freundlich-skeptische Praktikumsleiterin: „Du sagst, du bist zuverlässig – woran sieht man das?“ Der oder die Jugendliche antwortet zuerst als Tiago, dann – wenn er oder sie mag – für sich selbst, immer mit einer Situation. In der zweiten Runde tauschen sie die Rollen: Der oder die Jugendliche fragt nach, die Fachkraft belegt eine eigene Stärke.",
+    "text": "Die ersten beiden Felder des Fensters stehen schon: wie ich mich sehe und wie andere mich sehen. Heute bekommen sie Belege: Eine Stärke zählt erst, wenn man sie zeigen kann – mit einer Tat, einem Ergebnis oder einer Rückmeldung (Stärke – Beleg – Wirkung). Die Fachkraft zeigt das an Tiago („Ich bin zuverlässig“ – Beleg: Seit September hat er vor jedem Spiel die Bälle dabei) und spielt dann eine freundlich-skeptische Praktikumsleiterin: „Du sagst, du bist zuverlässig – woran sieht man das?“ Der oder die Jugendliche antwortet zuerst als Tiago, dann – wenn er oder sie mag – für sich selbst, immer mit einer Situation; auch Rückmeldungen anderer zählen als Belege. In der zweiten Runde tauschen sie die Rollen: Der oder die Jugendliche fragt nach, die Fachkraft belegt eine eigene Stärke.",
     "sagen": [
       "Eine Stärke ohne Beleg ist nur eine Behauptung. Mit Beleg ist sie ein Fakt, den dir niemand wegreden kann.",
       "Ich spiele eine Praktikumsleiterin und frage nach: „Du sagst, du bist zuverlässig – woran sieht man das?“ Antworte mit einer Situation.",
       "Ein Beleg muss nicht groß sein. „Ich habe seit September vor jedem Spiel die Bälle mitgebracht“ zählt."
     ],
-    "wennEsKippt": "Fällt dem oder der Jugendlichen keine eigene Stärke ein, wählt er oder sie eine aus dem Wortspeicher und sucht den Beleg zuerst für Tiago. Bei „kann ich nicht“ fragt die Fachkraft: „Was haben dir andere schon mal gesagt?“ – auch das ist ein Beleg. Mag er oder sie nicht spielen, genügt das Gespräch am Blatt: Stärke wählen, Beleg sagen, die Fachkraft notiert Stichworte.",
+    "wennEsKippt": "Fällt dem oder der Jugendlichen keine eigene Stärke ein, wählt er oder sie eine aus der Liste auf dem Blatt und sucht den Beleg zuerst für Tiago. Bei „kann ich nicht“ fragt die Fachkraft: „Was haben dir andere schon mal gesagt?“ – auch das ist ein Beleg. Mag er oder sie nicht spielen, genügt das Gespräch am Blatt: Stärke wählen, Beleg sagen, die Fachkraft notiert Stichworte.",
     "rolle": [
       "kern"
     ],
@@ -1370,15 +1386,15 @@
             },
             {
               "art": "text",
-              "text": "Eine Stärke zählt, wenn du sie zeigen kannst. Dreischritt: Stärke – Beleg – Wirkung."
+              "text": "Eine Stärke zählt, wenn du sie zeigen kannst: Stärke – Beleg – Wirkung (Wer hat es gemerkt? Was kam dabei heraus?)."
             }
           ],
           "rechts": [
             {
               "art": "bild",
-              "bild": "figur:ben:stolz:stehen",
+              "bild": "motiv:lupe",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Genau hinschauen: Was belegt die Stärke?",
               "ausrichtung": "mitte"
             }
           ]
@@ -1468,11 +1484,13 @@
           "items": [
             {
               "titel": "Wie ich mich sehe",
-              "text": "heute: mit Belegen"
+              "text": "heute: mit Belegen",
+              "heute": true
             },
             {
               "titel": "Wie andere mich sehen",
-              "text": "heute: mit Belegen"
+              "text": "heute: mit Belegen",
+              "heute": true
             },
             {
               "titel": "Was mir wichtig ist",
@@ -1523,15 +1541,15 @@
             },
             {
               "art": "text",
-              "text": "Une force compte quand tu peux la montrer. Trois temps : force – preuve – effet."
+              "text": "Une force compte quand tu peux la montrer : force – preuve – effet (Qui l’a remarqué ? Qu’est-ce qui en est sorti ?)."
             }
           ],
           "rechts": [
             {
               "art": "bild",
-              "bild": "figur:ben:stolz:stehen",
+              "bild": "motiv:lupe",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Regarder de près : qu’est-ce qui prouve la force ?",
               "ausrichtung": "mitte"
             }
           ]
@@ -1606,9 +1624,9 @@
             "Un retour : voilà ce que quelqu’un a dit."
           ],
           "optionen": [
-            "je trouve vite",
+            "j’en trouve vite",
             "il me faut du temps",
-            "je trouve peu"
+            "j’en trouve peu"
           ]
         },
         {
@@ -1621,11 +1639,13 @@
           "items": [
             {
               "titel": "Mon regard sur moi",
-              "text": "aujourd’hui : avec preuves"
+              "text": "aujourd’hui : avec preuves",
+              "heute": true
             },
             {
               "titel": "Le regard des autres",
-              "text": "aujourd’hui : avec preuves"
+              "text": "aujourd’hui : avec preuves",
+              "heute": true
             },
             {
               "titel": "Ce qui compte pour moi",
@@ -1660,7 +1680,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche verbindet Stärken und Belege und sagt, ob es eine Tat, ein Ergebnis oder eine Rückmeldung ist; danach das Praktikumsgespräch aus dem Kern. In Aufgabe 2 kreuzt er oder sie drei Stärken an und sagt zu jeder einen Beleg laut; in Aufgabe 3 zeigt er oder sie im Raster, welche Art von Beleg ihm oder ihr leichtfällt. Fenster und Auftrag sind zum Ankreuzen; das Blatt kommt in die Fenster-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche verbindet Stärken und Belege und sagt, ob es eine Tat, ein Ergebnis oder eine Rückmeldung ist – das Praktikumsgespräch aus dem Kern ist damit schon geübt. In Aufgabe 2 kreuzt er oder sie drei Stärken an und sagt zu jeder einen Beleg laut; in Aufgabe 3 zeigt er oder sie im Raster, welche Art von Beleg ihm oder ihr leichtfällt. Fenster und Auftrag sind zum Ankreuzen; das Blatt kommt in die Fenster-Mappe.",
           "sagen": [
             "Ist das eine Tat, ein Ergebnis oder eine Rückmeldung?",
             "Wann war das?"
@@ -1668,7 +1688,7 @@
           "wennEsKippt": "Fällt kein Beleg ein, nennt die Fachkraft zwei Beispiele aus dem Gespräch („Du hast vorhin erzählt, dass …“), und der oder die Jugendliche wählt. Auch das Ankreuzen darf mündlich bleiben. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune relie forces et preuves et dit s’il s’agit d’un acte, d’un résultat ou d’un retour ; ensuite, l’entretien de stage du temps de séance. À l’exercice 2, il ou elle coche trois forces et dit à voix haute une preuve pour chacune ; à l’exercice 3, il ou elle montre dans la grille quelle sorte de preuve lui vient facilement. La fenêtre et la mission se font en cochant ; la fiche va dans le dossier de la fenêtre.",
+          "text": "Exercice 1 ensemble : le ou la jeune relie forces et preuves et dit s’il s’agit d’un acte, d’un résultat ou d’un retour – le jeu de rôle de la séance l’a déjà préparé. À l’exercice 2, il ou elle coche trois forces et dit à voix haute une preuve pour chacune ; à l’exercice 3, il ou elle montre dans la grille quelle sorte de preuve lui vient facilement. La fenêtre et la mission se font en cochant ; la fiche va dans le dossier de la fenêtre.",
           "sagen": [
             "C’est un acte, un résultat ou un retour ?",
             "C’était quand ?"
@@ -1679,13 +1699,13 @@
     },
     "fr": {
       "titel": "Des forces, preuves à l’appui",
-      "text": "Les deux premiers champs de la fenêtre sont déjà posés : mon regard sur moi et le regard des autres. Aujourd’hui, on les remplit de preuves : une force ne compte que si on peut la montrer – par un acte, un résultat ou un retour (force – preuve – effet). L’adulte le montre avec l’exemple de Tiago, puis joue une responsable de stage bienveillante mais sceptique : « Tu dis que tu es fiable – à quoi le voit-on ? » Le ou la jeune répond d’abord en tant que Tiago, puis – s’il ou elle le souhaite – pour lui-même ou elle-même, toujours avec une situation. Au second tour, on échange les rôles : le ou la jeune pose les questions, l’adulte prouve l’une de ses propres forces.",
+      "text": "Les deux premiers champs de la fenêtre sont déjà posés : mon regard sur moi et le regard des autres. Aujourd’hui, on leur donne des preuves : une force ne compte que si on peut la montrer – par un acte, un résultat ou un retour (force – preuve – effet). L’adulte le montre avec Tiago (« Je suis fiable » – preuve : depuis septembre, il apporte les ballons avant chaque match), puis joue une responsable de stage bienveillante mais sceptique : « Tu dis que tu es fiable – à quoi le voit-on ? » Le ou la jeune répond d’abord en tant que Tiago, puis – s’il ou elle le souhaite – pour lui-même ou elle-même, toujours avec une situation ; les retours des autres comptent aussi comme preuves. Au second tour, on échange les rôles : le ou la jeune pose les questions, l’adulte donne la preuve de l’une de ses propres forces.",
       "sagen": [
         "Une force sans preuve n’est qu’une affirmation. Avec une preuve, c’est un fait que personne ne peut te retirer.",
         "Je joue une responsable de stage et je creuse : « Tu dis que tu es fiable – à quoi le voit-on ? » Réponds avec une situation.",
         "Une preuve n’a pas besoin d’être grande. « Depuis septembre, j’apporte les ballons avant chaque match » compte."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve pas de force, il ou elle en choisit une dans la boîte à mots et cherche d’abord la preuve pour Tiago. Pour « je n’en ai pas », l’adulte demande : « Qu’est-ce que d’autres t’ont déjà dit ? » – c’est aussi une preuve. S’il ou elle ne veut pas jouer, la discussion sur la fiche suffit : choisir une force, dire la preuve, l’adulte note des mots-clés."
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de force, il ou elle en choisit une dans la liste de la fiche et cherche d’abord la preuve pour Tiago. Pour « je n’en ai pas », l’adulte demande : « Qu’est-ce que d’autres t’ont déjà dit ? » – c’est aussi une preuve. S’il ou elle ne veut pas jouer, la discussion sur la fiche suffit : choisir une force, dire la preuve, l’adulte note des mots-clés."
     },
     "zugang": {
       "lesen": 1,
@@ -1700,7 +1720,7 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Meine Werte",
-    "text": "Das Fenster hat schon zwei Felder: wie ich mich sehe und wie andere mich sehen, jeweils mit Belegen. Heute kommt das dritte dazu: was mir wichtig ist. Die Fachkraft schreibt die zwölf Werte vom Blatt auf Papierstreifen und legt sie aus; der oder die Jugendliche sortiert sie in drei Stapel – sehr wichtig (höchstens drei), wichtig, weniger wichtig – und stellt sich zum Schluss zu der Karte, die heute am meisten zählt (Bewegung im Raum, ein paar Schritte). Im Rollenspiel „Entscheidung nach Wert“ spielt die Fachkraft einen Freund, der etwas Heikles fragt: „Gibst du mir deine Hausaufgaben zum Abschreiben?“ Der oder die Jugendliche antwortet nach einem seiner oder ihrer drei wichtigsten Werte; in der zweiten Runde tauschen sie die Rollen, und die Fachkraft antwortet nach einem anderen Wert. Eigenes bleibt freiwillig.",
+    "text": "Das Fenster hat schon zwei Felder: wie ich mich sehe und wie andere mich sehen, jeweils mit Belegen. Heute kommt das dritte dazu: was mir wichtig ist. Die zwölf Werte vom Blatt hat die Fachkraft vorher auf Papierstreifen geschrieben und legt sie im Raum aus; der oder die Jugendliche sortiert sie in drei Stapel – sehr wichtig (höchstens drei), wichtig, weniger wichtig – und stellt sich zum Schluss ein paar Schritte weit zu der Karte, die heute am meisten zählt. Im Rollenspiel „Entscheidung nach Wert“ spielt die Fachkraft einen Freund, der etwas Heikles fragt: „Gibst du mir deine Hausaufgaben zum Abschreiben?“ Der oder die Jugendliche antwortet nach einem seiner oder ihrer drei wichtigsten Werte. In der zweiten Runde tauschen sie die Rollen, und die Fachkraft antwortet nach einem anderen Wert; Eigenes bleibt freiwillig.",
     "sagen": [
       "Werte sind keine Regeln von anderen. Sie sind das, wonach du dich richtest, wenn es drauf ankommt.",
       "Du darfst höchstens drei Karten auf „sehr wichtig“ legen. Das ist absichtlich eng: So merkst du, was wirklich zählt.",
@@ -1810,15 +1830,15 @@
               "art": "bild",
               "bild": "motiv:waage",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Was wiegt bei dir mehr?",
               "ausrichtung": "mitte"
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Welche Werte zählen bei dir? Kreuz höchstens fünf an und trag dann die drei wichtigsten in die Zielscheibe ein.",
-          "hinweis": "Außen: wichtig. Innen: sehr wichtig. Mitte: dein wichtigster Wert. Ein Stichwort genügt."
+          "text": "Welche Werte zählen bei dir? Kreuz höchstens fünf an und trag sie dann in die Zielscheibe ein.",
+          "hinweis": "Mitte: dein wichtigster Wert. Ring „sehr wichtig“: zwei weitere. Außen „wichtig“: die übrigen. Ein Stichwort genügt."
         },
         {
           "art": "ankreuzen",
@@ -1905,7 +1925,8 @@
             },
             {
               "titel": "Was mir wichtig ist",
-              "text": "heute neu"
+              "text": "heute neu",
+              "heute": true
             },
             {
               "titel": "Wohin ich will",
@@ -1960,15 +1981,15 @@
               "art": "bild",
               "bild": "motiv:waage",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Qu’est-ce qui pèse le plus pour toi ?",
               "ausrichtung": "mitte"
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Quelles valeurs comptent pour toi ? Coche cinq valeurs au maximum, puis note les trois plus importantes dans la cible.",
-          "hinweis": "À l’extérieur : important. À l’intérieur : très important. Au centre : ta valeur la plus importante. Un mot suffit."
+          "text": "Quelles valeurs comptent pour toi ? Coche cinq valeurs au maximum, puis note-les dans la cible.",
+          "hinweis": "Au centre : ta valeur la plus importante. Anneau « très important » : deux autres. À l’extérieur, « important » : les autres. Un mot suffit."
         },
         {
           "art": "ankreuzen",
@@ -2055,7 +2076,8 @@
             },
             {
               "titel": "Ce qui compte pour moi",
-              "text": "nouveau aujourd’hui"
+              "text": "nouveau aujourd’hui",
+              "heute": true
             },
             {
               "titel": "Où je veux aller",
@@ -2086,7 +2108,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die zwölf Werte vor; der oder die Jugendliche kreuzt höchstens fünf an und trägt die drei wichtigsten in die Zielscheibe ein. Danach die Werte-Linie mit den Papierstreifen (Kern). In Aufgabe 2 übt er oder sie das Rollenspiel schriftlich nach: Wert und Satz zu drei Situationen, die Beispielzeile hilft. Fenster und Auftrag sind allein und kurz; das Blatt kommt in die Fenster-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die zwölf Werte vor; der oder die Jugendliche kreuzt höchstens fünf an und trägt sie in die Zielscheibe ein – den wichtigsten in die Mitte, zwei in den Ring „sehr wichtig“, die übrigen nach außen; die sortierten Streifen aus dem Kern helfen. In Aufgabe 2 übt er oder sie das Rollenspiel schriftlich nach: Wert und Satz zu drei Situationen, die Beispielzeile hilft. Fenster und Auftrag sind allein und kurz; das Blatt kommt in die Fenster-Mappe. Wenn Zeit bleibt: die dritte Situation in Aufgabe 2.",
           "sagen": [
             "Welcher Wert steckt in deinem Satz?",
             "Was würdest du sagen, wenn ein anderer Wert zählt?"
@@ -2094,7 +2116,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche Wert und Satz, und die Fachkraft notiert Stichworte. Eine Situation pro Aufgabe genügt. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les douze valeurs ; le ou la jeune en coche cinq au maximum et note les trois plus importantes dans la cible. Ensuite, la ligne des valeurs avec les bandes de papier (temps de séance). À l’exercice 2, il ou elle reprend le jeu de rôle par écrit : valeur et phrase pour trois situations, la ligne d’exemple aide. La fenêtre et la mission se font seul et brièvement ; la fiche va dans le dossier de la fenêtre.",
+          "text": "Exercice 1 ensemble : l’adulte lit les douze valeurs ; le ou la jeune en coche cinq au maximum et les note dans la cible – la plus importante au centre, deux dans l’anneau « très important », les autres à l’extérieur ; les bandes triées pendant la séance aident. À l’exercice 2, il ou elle reprend le jeu de rôle par écrit : valeur et phrase pour trois situations, la ligne d’exemple aide. La fenêtre et la mission se font seul et brièvement ; la fiche va dans le dossier de la fenêtre. S’il reste du temps : la troisième situation de l’exercice 2.",
           "sagen": [
             "Quelle valeur y a-t-il dans ta phrase ?",
             "Que dirais-tu si une autre valeur comptait ?"
@@ -2105,19 +2127,21 @@
     },
     "fr": {
       "titel": "Mes valeurs",
-      "text": "La fenêtre a déjà deux champs : mon regard sur moi et le regard des autres, chacun avec des preuves. Aujourd’hui, le troisième s’ajoute : ce qui compte pour moi. L’adulte écrit les douze valeurs de la fiche sur des bandes de papier et les étale ; le ou la jeune les trie en trois piles – très important (trois au maximum), important, moins important – et, pour finir, se place devant la carte qui compte le plus aujourd’hui (un peu de mouvement dans la pièce, quelques pas). Dans le jeu de rôle « Décider selon une valeur », l’adulte joue un ami qui pose une question délicate : « Tu me prêtes tes devoirs pour que je copie ? » Le ou la jeune répond en s’appuyant sur l’une de ses trois valeurs principales ; au second tour, on échange les rôles et l’adulte répond selon une autre valeur. Le personnel reste facultatif.",
+      "text": "La fenêtre a déjà deux champs : mon regard sur moi et le regard des autres, chacun avec des preuves. Aujourd’hui, le troisième s’ajoute : ce qui compte pour moi. L’adulte a écrit les douze valeurs de la fiche sur des bandes de papier avant la séance et les étale dans la pièce ; le ou la jeune les trie en trois piles – très important (trois au maximum), important, moins important – et, pour finir, fait quelques pas jusqu’à la carte qui compte le plus aujourd’hui. Dans le jeu de rôle « Décider selon une valeur », l’adulte joue un ami qui pose une question délicate : « Tu me prêtes tes devoirs pour que je copie ? » Le ou la jeune répond en s’appuyant sur l’une de ses trois valeurs principales. Au second tour, on échange les rôles et l’adulte répond selon une autre valeur ; les exemples personnels restent facultatifs.",
       "sagen": [
         "Les valeurs ne sont pas des règles imposées par d’autres. C’est ce sur quoi tu t’appuies quand ça compte.",
         "Tu as le droit de poser trois cartes au maximum sur « très important ». C’est voulu : ça aide à voir ce qui compte vraiment.",
         "Je vais te demander quelque chose de délicat. Réponds de façon à ce que ta valeur principale s’y retrouve."
       ],
-      "wennEsKippt": "Si le choix est difficile, le ou la jeune commence par poser des cartes sur « moins important » – c’est souvent plus facile – et le reste suit. S’il ou elle ne veut pas jouer avec l’adulte, il ou elle choisit sur la fiche la valeur pour chaque situation et dit la phrase à voix haute. On ne discute pas de « bonnes » valeurs : il n’y a pas de mauvaises valeurs, seulement des priorités différentes."
+      "wennEsKippt": "Si le choix est difficile, le ou la jeune commence par poser des cartes sur « moins important » – c’est souvent plus facile – et le reste suit. S’il ou elle ne veut pas jouer avec l’adulte, il ou elle choisit sur la fiche la valeur pour chaque situation et dit la phrase à voix haute. On ne discute pas de « bonnes » valeurs : il n’y a pas de mauvaises valeurs, seulement des priorités différentes.",
+      "vorbereitung": "Écrire à l’avance les douze valeurs de la fiche sur des bandes de papier (une valeur par bande) et préparer des stylos."
     },
     "zugang": {
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
-    }
+    },
+    "vorbereitung": "Die zwölf Werte vom Blatt vorab auf Papierstreifen schreiben (ein Wert pro Streifen) und Stifte bereithalten."
   },
   {
     "id": "ki:kurs-selbstwert-13-16-s3-b",
@@ -2126,7 +2150,7 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Meine Werte",
-    "text": "Das Fenster hat schon zwei Felder: wie ich mich sehe und wie andere mich sehen, jeweils mit Belegen. Heute kommt das dritte dazu: was mir wichtig ist. Die Fachkraft schreibt die zwölf Werte vom Blatt auf Papierstreifen und legt sie aus; der oder die Jugendliche sortiert sie in drei Stapel – sehr wichtig (höchstens drei), wichtig, weniger wichtig – und stellt sich zum Schluss zu der Karte, die heute am meisten zählt (Bewegung im Raum, ein paar Schritte). Im Rollenspiel „Entscheidung nach Wert“ spielt die Fachkraft einen Freund, der etwas Heikles fragt: „Gibst du mir deine Hausaufgaben zum Abschreiben?“ Der oder die Jugendliche antwortet nach einem seiner oder ihrer drei wichtigsten Werte; in der zweiten Runde tauschen sie die Rollen, und die Fachkraft antwortet nach einem anderen Wert. Eigenes bleibt freiwillig.",
+    "text": "Das Fenster hat schon zwei Felder: wie ich mich sehe und wie andere mich sehen, jeweils mit Belegen. Heute kommt das dritte dazu: was mir wichtig ist. Die zwölf Werte vom Blatt hat die Fachkraft vorher auf Papierstreifen geschrieben und legt sie im Raum aus; der oder die Jugendliche sortiert sie in drei Stapel – sehr wichtig (höchstens drei), wichtig, weniger wichtig – und stellt sich zum Schluss ein paar Schritte weit zu der Karte, die heute am meisten zählt. Im Rollenspiel „Entscheidung nach Wert“ spielt die Fachkraft einen Freund, der etwas Heikles fragt: „Gibst du mir deine Hausaufgaben zum Abschreiben?“ Der oder die Jugendliche antwortet nach einem seiner oder ihrer drei wichtigsten Werte. In der zweiten Runde tauschen sie die Rollen, und die Fachkraft antwortet nach einem anderen Wert; Eigenes bleibt freiwillig.",
     "sagen": [
       "Werte sind keine Regeln von anderen. Sie sind das, wonach du dich richtest, wenn es drauf ankommt.",
       "Du darfst höchstens drei Karten auf „sehr wichtig“ legen. Das ist absichtlich eng: So merkst du, was wirklich zählt.",
@@ -2236,7 +2260,7 @@
               "art": "bild",
               "bild": "motiv:waage",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Was wiegt bei dir mehr?",
               "ausrichtung": "mitte"
             }
           ]
@@ -2324,7 +2348,8 @@
             },
             {
               "titel": "Was mir wichtig ist",
-              "text": "heute neu"
+              "text": "heute neu",
+              "heute": true
             },
             {
               "titel": "Wohin ich will",
@@ -2379,7 +2404,7 @@
               "art": "bild",
               "bild": "motiv:waage",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Qu’est-ce qui pèse le plus pour toi ?",
               "ausrichtung": "mitte"
             }
           ]
@@ -2387,7 +2412,7 @@
         {
           "art": "aufgabe",
           "text": "Quelles valeurs comptent pour toi ? Coche cinq valeurs au maximum, puis entoure les trois plus importantes.",
-          "hinweis": "Dis pour une valeur à quoi on la voit chez toi."
+          "hinweis": "Dis à quoi on voit l’une de ces valeurs chez toi."
         },
         {
           "art": "ankreuzen",
@@ -2410,7 +2435,7 @@
         {
           "art": "aufgabe",
           "text": "Deux valeurs, une seule place : quand les deux ne sont pas possibles, qu’est-ce qui compte le plus pour toi ?",
-          "hinweis": "Mets une croix sur l’échelle. Le milieu veut dire : les deux pareil."
+          "hinweis": "Mets une croix sur l’échelle. Le milieu veut dire : les deux comptent autant."
         },
         {
           "art": "skala",
@@ -2467,7 +2492,8 @@
             },
             {
               "titel": "Ce qui compte pour moi",
-              "text": "nouveau aujourd’hui"
+              "text": "nouveau aujourd’hui",
+              "heute": true
             },
             {
               "titel": "Où je veux aller",
@@ -2498,7 +2524,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die zwölf Werte vor; der oder die Jugendliche kreuzt höchstens fünf an und kreist die drei wichtigsten ein. Danach die Werte-Linie mit den Papierstreifen (Kern). In Aufgabe 2 setzt er oder sie auf drei Skalen ein Kreuz, welcher Wert im Zweifel mehr zählt; die Mitte heißt „beides gleich“. In Aufgabe 3 kreuzt er oder sie für drei Situationen an, welcher Wert leitet, und sagt den passenden Satz laut. Fenster und Auftrag sind zum Ankreuzen; das Blatt kommt in die Fenster-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die zwölf Werte vor; der oder die Jugendliche kreuzt höchstens fünf an und kreist die drei wichtigsten ein – die sortierten Streifen aus dem Kern helfen. In Aufgabe 2 setzt er oder sie auf drei Skalen ein Kreuz, welcher Wert im Zweifel mehr zählt; die Mitte heißt „beides gleich“. In Aufgabe 3 kreuzt er oder sie für drei Situationen an, welcher Wert leitet, und sagt den passenden Satz laut. Fenster und Auftrag sind zum Ankreuzen; das Blatt kommt in die Fenster-Mappe.",
           "sagen": [
             "Welcher Wert leitet dich hier?",
             "Was würdest du dann konkret sagen?"
@@ -2506,7 +2532,7 @@
           "wennEsKippt": "Fällt das Ankreuzen schwer, liest die Fachkraft die Situation vor und der oder die Jugendliche zeigt auf einen Wert. Die Skalen dürfen mündlich bleiben. Ist die Zeit knapp, genügen die Aufgaben 1 und 3."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les douze valeurs ; le ou la jeune en coche cinq au maximum et entoure les trois plus importantes. Ensuite, la ligne des valeurs avec les bandes de papier (temps de séance). À l’exercice 2, il ou elle met une croix sur trois échelles pour dire quelle valeur compte le plus en cas de doute ; le milieu veut dire « les deux pareil ». À l’exercice 3, il ou elle coche pour trois situations la valeur qui guide et dit la phrase correspondante à voix haute. La fenêtre et la mission se font en cochant ; la fiche va dans le dossier de la fenêtre.",
+          "text": "Exercice 1 ensemble : l’adulte lit les douze valeurs ; le ou la jeune en coche cinq au maximum et entoure les trois plus importantes – les bandes triées pendant la séance aident. À l’exercice 2, il ou elle met une croix sur trois échelles pour dire quelle valeur compte le plus en cas de doute ; le milieu veut dire « les deux comptent autant ». À l’exercice 3, il ou elle coche pour trois situations la valeur qui guide et dit la phrase correspondante à voix haute. La fenêtre et la mission se font en cochant ; la fiche va dans le dossier de la fenêtre.",
           "sagen": [
             "Quelle valeur te guide ici ?",
             "Que dirais-tu alors concrètement ?"
@@ -2517,19 +2543,21 @@
     },
     "fr": {
       "titel": "Mes valeurs",
-      "text": "La fenêtre a déjà deux champs : mon regard sur moi et le regard des autres, chacun avec des preuves. Aujourd’hui, le troisième s’ajoute : ce qui compte pour moi. L’adulte écrit les douze valeurs de la fiche sur des bandes de papier et les étale ; le ou la jeune les trie en trois piles – très important (trois au maximum), important, moins important – et, pour finir, se place devant la carte qui compte le plus aujourd’hui (un peu de mouvement dans la pièce, quelques pas). Dans le jeu de rôle « Décider selon une valeur », l’adulte joue un ami qui pose une question délicate : « Tu me prêtes tes devoirs pour que je copie ? » Le ou la jeune répond en s’appuyant sur l’une de ses trois valeurs principales ; au second tour, on échange les rôles et l’adulte répond selon une autre valeur. Le personnel reste facultatif.",
+      "text": "La fenêtre a déjà deux champs : mon regard sur moi et le regard des autres, chacun avec des preuves. Aujourd’hui, le troisième s’ajoute : ce qui compte pour moi. L’adulte a écrit les douze valeurs de la fiche sur des bandes de papier avant la séance et les étale dans la pièce ; le ou la jeune les trie en trois piles – très important (trois au maximum), important, moins important – et, pour finir, fait quelques pas jusqu’à la carte qui compte le plus aujourd’hui. Dans le jeu de rôle « Décider selon une valeur », l’adulte joue un ami qui pose une question délicate : « Tu me prêtes tes devoirs pour que je copie ? » Le ou la jeune répond en s’appuyant sur l’une de ses trois valeurs principales. Au second tour, on échange les rôles et l’adulte répond selon une autre valeur ; les exemples personnels restent facultatifs.",
       "sagen": [
         "Les valeurs ne sont pas des règles imposées par d’autres. C’est ce sur quoi tu t’appuies quand ça compte.",
         "Tu as le droit de poser trois cartes au maximum sur « très important ». C’est voulu : ça aide à voir ce qui compte vraiment.",
         "Je vais te demander quelque chose de délicat. Réponds de façon à ce que ta valeur principale s’y retrouve."
       ],
-      "wennEsKippt": "Si le choix est difficile, le ou la jeune commence par poser des cartes sur « moins important » – c’est souvent plus facile – et le reste suit. S’il ou elle ne veut pas jouer avec l’adulte, il ou elle choisit sur la fiche la valeur pour chaque situation et dit la phrase à voix haute. On ne discute pas de « bonnes » valeurs : il n’y a pas de mauvaises valeurs, seulement des priorités différentes."
+      "wennEsKippt": "Si le choix est difficile, le ou la jeune commence par poser des cartes sur « moins important » – c’est souvent plus facile – et le reste suit. S’il ou elle ne veut pas jouer avec l’adulte, il ou elle choisit sur la fiche la valeur pour chaque situation et dit la phrase à voix haute. On ne discute pas de « bonnes » valeurs : il n’y a pas de mauvaises valeurs, seulement des priorités différentes.",
+      "vorbereitung": "Écrire à l’avance les douze valeurs de la fiche sur des bandes de papier (une valeur par bande) et préparer des stylos."
     },
     "zugang": {
       "lesen": 1,
       "schreiben": 0,
       "bild": 2
-    }
+    },
+    "vorbereitung": "Die zwölf Werte vom Blatt vorab auf Papierstreifen schreiben (ein Wert pro Streifen) und Stifte bereithalten."
   },
   {
     "id": "ki:kurs-selbstwert-13-16-s4-a",
@@ -2538,7 +2566,7 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Der innere Kritiker und ein fairer Blick",
-    "text": "Das Fenster hat jetzt drei Felder, das dritte sind die Werte. Heute geht es zurück zum ersten Feld, wie ich mich sehe: Dort sitzt oft eine strenge innere Stimme, die Fehler größer macht als Erfolge. Die Fachkraft unterscheidet den inneren Kritiker (hart und pauschal: „Ich blamiere mich immer“) vom fairen Blick (genau und freundlich, mit Belegen; nach Kristin Neff: bemerken, dass es weh tut, wissen, dass es anderen auch so geht, mit sich umgehen wie mit einem guten Freund) und beginnt mit zwei Runden Quadrat-Atmen (je vier Zähler einatmen, halten, ausatmen, halten). Im Rollenspiel liest die Fachkraft den Kritiker mit Sätzen zu einer erfundenen Situation (Tiago hat beim Spiel einen Elfmeter verschossen), der oder die Jugendliche antwortet mit dem fairen Blick; in der zweiten Runde tauschen sie die Rollen, und der oder die Jugendliche sagt, welche Antwort geholfen hat.",
+    "text": "Das Fenster hat jetzt drei Felder, das dritte sind die Werte. Heute geht es zurück zum ersten Feld, wie ich mich sehe: Dort sitzt oft eine strenge innere Stimme, die Fehler größer macht als Erfolge. Die Fachkraft unterscheidet den inneren Kritiker (hart und pauschal: „Ich blamiere mich immer“) vom fairen Blick (genau und freundlich, mit Belegen; nach Kristin Neff: bemerken, dass es weh tut, wissen, dass es anderen auch so geht, mit sich umgehen wie mit einem guten Freund) und beginnt mit zwei Runden Quadrat-Atmen (je vier Zähler einatmen, halten, ausatmen, halten). Im Rollenspiel liest sie den Kritiker zu einer erfundenen Situation (Tiago hat beim Spiel einen Elfmeter verschossen: „Typisch. Wegen dir haben wir verloren.“ – „Du kannst es einfach nicht.“), der oder die Jugendliche antwortet mit dem fairen Blick. In der zweiten Runde tauschen sie die Rollen, und der oder die Jugendliche sagt, welche Antwort geholfen hat.",
     "sagen": [
       "Der innere Kritiker ist nicht dein Feind, aber er übertreibt gern. Fair heißt nicht schönreden, fair heißt genau hinschauen.",
       "Frag dich: Was würde ich einem guten Freund in genau dieser Lage sagen?",
@@ -2643,9 +2671,9 @@
           "rechts": [
             {
               "art": "bild",
-              "bild": "figur:jana:ruhig:stehen",
+              "bild": "motiv:mikrofon",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Welche Stimme sprichst du mit dir?",
               "ausrichtung": "mitte"
             }
           ]
@@ -2708,7 +2736,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Kurz runterfahren: Atme zwei Runden im Quadrat.",
+          "text": "Dein Werkzeug zum Runterfahren: das Quadrat. Atme eine Runde mit.",
           "hinweis": "Jede Seite dauert vier Zähler: einatmen, halten, ausatmen, halten."
         },
         {
@@ -2725,7 +2753,8 @@
           "items": [
             {
               "titel": "Wie ich mich sehe",
-              "text": "heute: fairer Blick"
+              "text": "heute: fairer Blick",
+              "heute": true
             },
             {
               "titel": "Wie andere mich sehen",
@@ -2751,7 +2780,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Wenn dein Kritiker sich meldet, sag dir deinen fairen Satz – leise oder aufgeschrieben."
+          "text": "Bis zum nächsten Mal: Wenn dein Kritiker sich meldet, atme einmal im Quadrat und sag dir deinen fairen Satz – leise oder aufgeschrieben."
         },
         {
           "art": "wennDann",
@@ -2761,7 +2790,7 @@
           "beispiele": [
             {
               "wenn": "Mein Kritiker sagt: „Das war peinlich.“",
-              "dann": "Ich sage mir: „Das war ein Fehler, nicht ich als Ganzes.“"
+              "dann": "Ich atme einmal durch und sage mir: „Das war ein Fehler, nicht ich als Ganzes.“"
             }
           ]
         }
@@ -2790,9 +2819,9 @@
           "rechts": [
             {
               "art": "bild",
-              "bild": "figur:jana:ruhig:stehen",
+              "bild": "motiv:mikrofon",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Quelle voix utilises-tu pour te parler ?",
               "ausrichtung": "mitte"
             }
           ]
@@ -2855,7 +2884,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Se calmer un instant : respire deux tours en carré.",
+          "text": "Ton outil pour te calmer : le carré. Respire un tour.",
           "hinweis": "Chaque côté dure quatre temps : inspirer, retenir, expirer, retenir."
         },
         {
@@ -2872,7 +2901,8 @@
           "items": [
             {
               "titel": "Mon regard sur moi",
-              "text": "aujourd’hui : regard juste"
+              "text": "aujourd’hui : regard juste",
+              "heute": true
             },
             {
               "titel": "Le regard des autres",
@@ -2898,7 +2928,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : quand ton critique se manifeste, dis-toi ta phrase juste – à voix basse ou par écrit."
+          "text": "D’ici la prochaine fois : quand ton critique se manifeste, respire une fois en carré et dis-toi ta phrase juste – à voix basse ou par écrit."
         },
         {
           "art": "wennDann",
@@ -2908,14 +2938,14 @@
           "beispiele": [
             {
               "wenn": "Mon critique dit : « C’était gênant. »",
-              "dann": "Je me dis : « C’était une erreur, pas moi tout entier·ère. »"
+              "dann": "Je respire un bon coup et je me dis : « C’était une erreur, pas moi tout entier·ère. »"
             }
           ]
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche verbindet harte Sätze und faire Antworten; die Fachkraft fragt jeweils, was an der fairen Antwort genauer ist. Der Kasten mit den drei Fragen wird kurz gelesen. In Aufgabe 2 schreibt er oder sie ein eigenes oder erfundenes Beispiel in die Tabelle; „Stimmt das ganz?“ ist der wichtigste Schritt. Aufgabe 3, die Atemübung, wird gemeinsam gemacht, zwei Runden. Fenster und Auftrag sind allein; der Wenn-dann-Satz darf aus dem Beispiel abgewandelt werden.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche verbindet harte Sätze und faire Antworten; die Fachkraft fragt jeweils, was an der fairen Antwort genauer ist. Der Kasten mit den drei Fragen wird kurz gelesen. In Aufgabe 2 schreibt er oder sie ein eigenes oder erfundenes Beispiel in die Tabelle; „Stimmt das ganz?“ ist der wichtigste Schritt. Aufgabe 3 ist das Quadrat aus dem Kern: eine Runde als Erinnerung, denn es gehört zum Auftrag. Fenster und Auftrag sind allein; der Wenn-dann-Satz darf aus dem Beispiel abgewandelt werden. Wenn Zeit bleibt: eine zweite Zeile in der Tabelle.",
           "sagen": [
             "Was ist an der fairen Antwort genauer als am Kritiker-Satz?",
             "Was würdest du einem guten Freund sagen?"
@@ -2923,7 +2953,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche den fairen Satz, und die Fachkraft notiert Stichworte. Wird es zu persönlich, bleibt es bei Tiago. Fällt die Atemübung schwer, genügt eine lange Ausatmung. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune relie phrases dures et réponses justes ; l’adulte demande à chaque fois ce qui est plus précis dans la réponse juste. L’encadré avec les trois questions se lit brièvement. À l’exercice 2, il ou elle écrit un exemple personnel ou inventé dans le tableau ; « Est-ce entièrement vrai ? » est l’étape la plus importante. L’exercice 3, la respiration, se fait ensemble, deux tours. La fenêtre et la mission se font seul ; la phrase « si – alors » peut s’inspirer de l’exemple.",
+          "text": "Exercice 1 ensemble : le ou la jeune relie phrases dures et réponses justes ; l’adulte demande à chaque fois ce qui est plus précis dans la réponse juste. L’encadré avec les trois questions se lit brièvement. À l’exercice 2, il ou elle écrit un exemple personnel ou inventé dans le tableau ; « Est-ce entièrement vrai ? » est l’étape la plus importante. L’exercice 3 est le carré vu pendant la séance : un tour en rappel, car il fait partie de la mission. La fenêtre et la mission se font seul ; la phrase « si – alors » peut s’inspirer de l’exemple. S’il reste du temps : une deuxième ligne dans le tableau.",
           "sagen": [
             "Qu’est-ce qui est plus précis dans la réponse juste que dans la phrase du critique ?",
             "Que dirais-tu à un bon ami ?"
@@ -2934,7 +2964,7 @@
     },
     "fr": {
       "titel": "Le critique intérieur et un regard juste",
-      "text": "La fenêtre a maintenant trois champs, le troisième étant les valeurs. Aujourd’hui, on revient au premier champ, mon regard sur moi : il y a souvent là une voix intérieure sévère qui grossit les erreurs plus que les réussites. L’adulte distingue le critique intérieur (dur et général : « Je me ridiculise toujours ») du regard juste (précis et bienveillant, avec des preuves ; d’après Kristin Neff : remarquer que ça fait mal, savoir que d’autres vivent la même chose, se traiter comme on traiterait un bon ami) et commence par deux tours de respiration en carré (quatre temps pour inspirer, retenir, expirer, retenir). Dans le jeu de rôle, l’adulte lit le critique avec des phrases sur une situation inventée (Tiago a raté un penalty pendant un match), le ou la jeune répond avec le regard juste ; au second tour, on échange les rôles, et le ou la jeune dit quelle réponse a aidé.",
+      "text": "La fenêtre a maintenant trois champs, le troisième étant les valeurs. Aujourd’hui, on revient au premier champ, mon regard sur moi : il y a souvent là une voix intérieure sévère qui grossit les erreurs plus que les réussites. L’adulte distingue le critique intérieur (dur et général : « Je me ridiculise toujours ») du regard juste (précis et bienveillant, avec des preuves ; d’après Kristin Neff : remarquer que ça fait mal, savoir que d’autres vivent la même chose, se traiter comme on traiterait un bon ami) et commence par deux tours de respiration en carré (quatre temps pour inspirer, retenir, expirer, retenir). Dans le jeu de rôle, l’adulte lit le critique à propos d’une situation inventée (Tiago a raté un penalty pendant un match : « Typique. À cause de toi, on a perdu. » – « Tu ne sais pas le faire, c’est tout. »), et le ou la jeune répond avec le regard juste. Au second tour, on échange les rôles, et le ou la jeune dit quelle réponse a aidé.",
       "sagen": [
         "Le critique intérieur n’est pas ton ennemi, mais il aime exagérer. Juste ne veut pas dire enjoliver, juste veut dire regarder de près.",
         "Demande-toi : que dirais-je à un bon ami dans exactement cette situation ?",
@@ -2955,7 +2985,7 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Der innere Kritiker und ein fairer Blick",
-    "text": "Das Fenster hat jetzt drei Felder, das dritte sind die Werte. Heute geht es zurück zum ersten Feld, wie ich mich sehe: Dort sitzt oft eine strenge innere Stimme, die Fehler größer macht als Erfolge. Die Fachkraft unterscheidet den inneren Kritiker (hart und pauschal: „Ich blamiere mich immer“) vom fairen Blick (genau und freundlich, mit Belegen; nach Kristin Neff: bemerken, dass es weh tut, wissen, dass es anderen auch so geht, mit sich umgehen wie mit einem guten Freund) und beginnt mit zwei Runden Quadrat-Atmen (je vier Zähler einatmen, halten, ausatmen, halten). Im Rollenspiel liest die Fachkraft den Kritiker mit Sätzen zu einer erfundenen Situation (Tiago hat beim Spiel einen Elfmeter verschossen), der oder die Jugendliche antwortet mit dem fairen Blick; in der zweiten Runde tauschen sie die Rollen, und der oder die Jugendliche sagt, welche Antwort geholfen hat.",
+    "text": "Das Fenster hat jetzt drei Felder, das dritte sind die Werte. Heute geht es zurück zum ersten Feld, wie ich mich sehe: Dort sitzt oft eine strenge innere Stimme, die Fehler größer macht als Erfolge. Die Fachkraft unterscheidet den inneren Kritiker (hart und pauschal: „Ich blamiere mich immer“) vom fairen Blick (genau und freundlich, mit Belegen; nach Kristin Neff: bemerken, dass es weh tut, wissen, dass es anderen auch so geht, mit sich umgehen wie mit einem guten Freund) und beginnt mit zwei Runden Quadrat-Atmen (je vier Zähler einatmen, halten, ausatmen, halten). Im Rollenspiel liest sie den Kritiker zu einer erfundenen Situation (Tiago hat beim Spiel einen Elfmeter verschossen: „Typisch. Wegen dir haben wir verloren.“ – „Du kannst es einfach nicht.“), der oder die Jugendliche antwortet mit dem fairen Blick. In der zweiten Runde tauschen sie die Rollen, und der oder die Jugendliche sagt, welche Antwort geholfen hat.",
     "sagen": [
       "Der innere Kritiker ist nicht dein Feind, aber er übertreibt gern. Fair heißt nicht schönreden, fair heißt genau hinschauen.",
       "Frag dich: Was würde ich einem guten Freund in genau dieser Lage sagen?",
@@ -3060,9 +3090,9 @@
           "rechts": [
             {
               "art": "bild",
-              "bild": "figur:jana:ruhig:stehen",
+              "bild": "motiv:mikrofon",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Welche Stimme sprichst du mit dir?",
               "ausrichtung": "mitte"
             }
           ]
@@ -3116,7 +3146,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Kurz runterfahren: Atme zwei Runden im Quadrat.",
+          "text": "Dein Werkzeug zum Runterfahren: das Quadrat. Atme eine Runde mit.",
           "hinweis": "Jede Seite dauert vier Zähler: einatmen, halten, ausatmen, halten."
         },
         {
@@ -3133,7 +3163,8 @@
           "items": [
             {
               "titel": "Wie ich mich sehe",
-              "text": "heute: fairer Blick"
+              "text": "heute: fairer Blick",
+              "heute": true
             },
             {
               "titel": "Wie andere mich sehen",
@@ -3161,12 +3192,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Wenn dein Kritiker sich meldet, sag dir deinen fairen Satz – leise oder aufgeschrieben."
+          "text": "Bis zum nächsten Mal: Wenn dein Kritiker sich meldet, atme einmal im Quadrat und sag dir deinen fairen Satz – leise oder aufgeschrieben."
         },
         {
           "art": "zielkarte",
           "titel": "Bis zum nächsten Mal",
-          "text": "Ich sage meinen fairen Satz, wenn der Kritiker laut wird.",
+          "text": "Ich atme durch und sage meinen fairen Satz, wenn der Kritiker laut wird.",
           "kaestchen": 2
         }
       ],
@@ -3194,9 +3225,9 @@
           "rechts": [
             {
               "art": "bild",
-              "bild": "figur:jana:ruhig:stehen",
+              "bild": "motiv:mikrofon",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Quelle voix utilises-tu pour te parler ?",
               "ausrichtung": "mitte"
             }
           ]
@@ -3250,7 +3281,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Se calmer un instant : respire deux tours en carré.",
+          "text": "Ton outil pour te calmer : le carré. Respire un tour.",
           "hinweis": "Chaque côté dure quatre temps : inspirer, retenir, expirer, retenir."
         },
         {
@@ -3267,7 +3298,8 @@
           "items": [
             {
               "titel": "Mon regard sur moi",
-              "text": "aujourd’hui : regard juste"
+              "text": "aujourd’hui : regard juste",
+              "heute": true
             },
             {
               "titel": "Le regard des autres",
@@ -3295,18 +3327,18 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : quand ton critique se manifeste, dis-toi ta phrase juste – à voix basse ou par écrit."
+          "text": "D’ici la prochaine fois : quand ton critique se manifeste, respire une fois en carré et dis-toi ta phrase juste – à voix basse ou par écrit."
         },
         {
           "art": "zielkarte",
           "titel": "D’ici la prochaine fois",
-          "text": "Je dis ma phrase juste quand le critique devient bruyant.",
+          "text": "Je respire un bon coup et je dis ma phrase juste quand le critique devient bruyant.",
           "kaestchen": 2
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche setzt zwei Kreuze – wie hart er oder sie zu sich selbst ist und wie hart zu einem guten Freund in derselben Lage – und sagt, was ihm oder ihr auffällt. Der Kasten mit den drei Fragen wird kurz gelesen. In Aufgabe 2 kreuzt er oder sie an, ob jede der drei Antworten schönredet, fair ist oder hart; die Fachkraft fragt, woran man es merkt. Aufgabe 3, die Atemübung, wird gemeinsam gemacht, zwei Runden. Fenster und Auftrag sind zum Ankreuzen; der faire Satz kann laut gesagt werden.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche setzt zwei Kreuze – wie hart er oder sie zu sich selbst ist und wie hart zu einem guten Freund in derselben Lage – und sagt, was ihm oder ihr auffällt. Der Kasten mit den drei Fragen wird kurz gelesen. In Aufgabe 2 kreuzt er oder sie an, ob jede der drei Antworten schönredet, fair ist oder hart; die Fachkraft fragt, woran man es merkt. Aufgabe 3 ist das Quadrat aus dem Kern: eine Runde als Erinnerung, denn es gehört zum Auftrag. Fenster und Auftrag sind zum Ankreuzen; der faire Satz kann laut gesagt werden.",
           "sagen": [
             "Was fällt dir an den beiden Kreuzen auf?",
             "Woran merkst du, ob eine Antwort fair ist?"
@@ -3314,7 +3346,7 @@
           "wennEsKippt": "Fällt das Beurteilen schwer, liest die Fachkraft die Antworten mit unterschiedlicher Stimme vor, und der oder die Jugendliche zeigt. Wird es zu persönlich, bleibt es bei dem Team-Beispiel und die Kreuze bleiben unkommentiert. Fällt die Atemübung schwer, genügt eine lange Ausatmung. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune met deux croix – à quel point il ou elle est dur·e avec soi-même et avec un bon ami dans la même situation – et dit ce qu’il ou elle remarque. L’encadré avec les trois questions se lit brièvement. À l’exercice 2, il ou elle coche si chacune des trois réponses enjolive, est juste ou est dure ; l’adulte demande à quoi on le remarque. L’exercice 3, la respiration, se fait ensemble, deux tours. La fenêtre et la mission se font en cochant ; la phrase juste peut être dite à voix haute.",
+          "text": "Exercice 1 ensemble : le ou la jeune met deux croix – à quel point il ou elle est dur·e avec soi-même et avec un bon ami dans la même situation – et dit ce qu’il ou elle remarque. L’encadré avec les trois questions se lit brièvement. À l’exercice 2, il ou elle coche si chacune des trois réponses enjolive, est juste ou est dure ; l’adulte demande à quoi on le remarque. L’exercice 3 est le carré vu pendant la séance : un tour en rappel, car il fait partie de la mission. La fenêtre et la mission se font en cochant ; la phrase juste peut être dite à voix haute.",
           "sagen": [
             "Qu’est-ce que tu remarques sur les deux croix ?",
             "À quoi remarques-tu qu’une réponse est juste ?"
@@ -3325,7 +3357,7 @@
     },
     "fr": {
       "titel": "Le critique intérieur et un regard juste",
-      "text": "La fenêtre a maintenant trois champs, le troisième étant les valeurs. Aujourd’hui, on revient au premier champ, mon regard sur moi : il y a souvent là une voix intérieure sévère qui grossit les erreurs plus que les réussites. L’adulte distingue le critique intérieur (dur et général : « Je me ridiculise toujours ») du regard juste (précis et bienveillant, avec des preuves ; d’après Kristin Neff : remarquer que ça fait mal, savoir que d’autres vivent la même chose, se traiter comme on traiterait un bon ami) et commence par deux tours de respiration en carré (quatre temps pour inspirer, retenir, expirer, retenir). Dans le jeu de rôle, l’adulte lit le critique avec des phrases sur une situation inventée (Tiago a raté un penalty pendant un match), le ou la jeune répond avec le regard juste ; au second tour, on échange les rôles, et le ou la jeune dit quelle réponse a aidé.",
+      "text": "La fenêtre a maintenant trois champs, le troisième étant les valeurs. Aujourd’hui, on revient au premier champ, mon regard sur moi : il y a souvent là une voix intérieure sévère qui grossit les erreurs plus que les réussites. L’adulte distingue le critique intérieur (dur et général : « Je me ridiculise toujours ») du regard juste (précis et bienveillant, avec des preuves ; d’après Kristin Neff : remarquer que ça fait mal, savoir que d’autres vivent la même chose, se traiter comme on traiterait un bon ami) et commence par deux tours de respiration en carré (quatre temps pour inspirer, retenir, expirer, retenir). Dans le jeu de rôle, l’adulte lit le critique à propos d’une situation inventée (Tiago a raté un penalty pendant un match : « Typique. À cause de toi, on a perdu. » – « Tu ne sais pas le faire, c’est tout. »), et le ou la jeune répond avec le regard juste. Au second tour, on échange les rôles, et le ou la jeune dit quelle réponse a aidé.",
       "sagen": [
         "Le critique intérieur n’est pas ton ennemi, mais il aime exagérer. Juste ne veut pas dire enjoliver, juste veut dire regarder de près.",
         "Demande-toi : que dirais-je à un bon ami dans exactement cette situation ?",
@@ -3346,7 +3378,7 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Ziele, die zu mir passen",
-    "text": "Das Fenster ist fast voll: Stärken mit Belegen, Rückmeldungen, Werte und ein fairer Blick sind schon da. Heute kommt das vierte Feld dazu: wohin ich will. Ein Ziel passt, wenn es zu den eigenen Stärken und Werten passt und klein genug für diese Woche ist. Die Fachkraft führt durch WOOP (nach Gabriele Oettingen): Wunsch, bestes Ergebnis, Hindernis in mir, Plan als Wenn-dann-Satz. Der oder die Jugendliche wählt dazu eine echte kleine Situation dieser Woche – oder eine erfundene, die gut passen könnte – und plant: wer, wann, wo, welcher Satz. Im Rollenspiel übt er oder sie den Satz: Die Fachkraft spielt das Gegenüber, ruhig und nicht gemein, in zwei Durchgängen; nach jedem sagt die Fachkraft zuerst, was gelungen ist, dann der oder die Jugendliche, was er oder sie ändern würde. Im dritten Durchgang spielt der oder die Jugendliche das Gegenüber und sagt, wie der Satz bei ihm oder ihr ankommt.",
+    "text": "Das Fenster ist fast voll: Stärken mit Belegen, Rückmeldungen, Werte und ein fairer Blick sind schon da. Heute kommt das vierte Feld dazu: wohin ich will. Ein Ziel passt, wenn es zu den eigenen Stärken oder Werten passt und klein genug für diese Woche ist. Die Fachkraft zeigt WOOP kurz an Tiago (er will die Trainerin um eine neue Position bitten; nach Gabriele Oettingen: Wunsch, bestes Ergebnis, Hindernis in mir, Plan als Wenn-dann-Satz) und führt den oder die Jugendliche dann mündlich durch WOOP zu einer echten kleinen Situation dieser Woche (oder einer erfundenen, die gut passen könnte): wer, wann, wo, welcher erste Satz (ca. 5 Minuten). Danach übt er oder sie den Satz im Rollenspiel (ca. 6 Minuten): Die Fachkraft spielt das Gegenüber, ruhig und nicht gemein, in zwei Durchgängen; nach jedem sagt sie zuerst, was gelungen ist, dann sagt der oder die Jugendliche, was er oder sie ändern würde. Ein dritter Durchgang mit vertauschten Rollen gehört nur dazu, wenn Zeit bleibt.",
     "sagen": [
       "Ein gutes Ziel ist klein genug für diese Woche und passt zu dem, was dir wichtig ist.",
       "WOOP: Was wünsche ich mir? Was ist das beste Ergebnis? Was in mir kommt dazwischen? Und was tue ich dann?",
@@ -3437,15 +3469,15 @@
               "symbol": "wissen",
               "titel": "Das Selbstbild-Fenster",
               "punkte": [
-                "Wie ich mich sehe – Stärken mit Belegen, fairer Blick (schon da)",
-                "Wie andere mich sehen – ihre Rückmeldungen (schon da)",
+                "Wie ich mich sehe – Stärken, fairer Blick (schon da)",
+                "Wie andere mich sehen – Rückmeldungen (schon da)",
                 "Was mir wichtig ist – meine Werte (schon da)",
-                "Heute: Wohin ich will – ein Ziel, das zu mir passt"
+                "Heute: Wohin ich will – mein Ziel"
               ]
             },
             {
               "art": "text",
-              "text": "Ein Ziel passt, wenn es zu deinen Stärken und Werten passt und klein genug ist für diese Woche. Heute kommt das vierte Feld dazu."
+              "text": "Ein Ziel passt, wenn es zu deinen Stärken oder Werten passt und klein genug ist für diese Woche. Heute kommt das vierte Feld dazu."
             }
           ],
           "rechts": [
@@ -3453,7 +3485,7 @@
               "art": "bild",
               "bild": "motiv:kompass",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Wohin willst du?",
               "ausrichtung": "mitte"
             }
           ]
@@ -3485,7 +3517,7 @@
         {
           "art": "aufgabe",
           "text": "Dein Ziel für diese Woche: klein, machbar, zu dir passend.",
-          "hinweis": "Echt oder erfunden – du entscheidest, wie nah es an dir dran ist."
+          "hinweis": "Echt oder erfunden – du entscheidest. Gut passt, was zu einem deiner Werte oder Stärken passt."
         },
         {
           "art": "satzanfaenge",
@@ -3494,7 +3526,15 @@
             "Das beste Ergebnis:",
             "Das Hindernis in mir:"
           ],
-          "linien": 1
+          "linien": 2
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan: Was tust du, wenn das Hindernis kommt – und mit wem, wann und wo?",
+          "hinweis": "Das Beispiel zeigt Tiagos Plan. Zum Schluss legst du deinen ersten Satz fest."
         },
         {
           "art": "wennDann",
@@ -3507,10 +3547,6 @@
               "dann": "Ich atme aus und sage meinen Satz."
             }
           ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Deine Situation planen: wer, wann, wo – und der erste Satz."
         },
         {
           "art": "tabelle",
@@ -3553,7 +3589,8 @@
             },
             {
               "titel": "Wohin ich will",
-              "text": "heute neu"
+              "text": "heute neu",
+              "heute": true
             }
           ],
           "linien": 0
@@ -3590,15 +3627,15 @@
               "symbol": "wissen",
               "titel": "Ma fenêtre sur moi",
               "punkte": [
-                "Mon regard sur moi – forces avec preuves, regard juste (déjà là)",
+                "Mon regard sur moi – forces, regard juste (déjà là)",
                 "Le regard des autres – leurs retours (déjà là)",
                 "Ce qui compte pour moi – mes valeurs (déjà là)",
-                "Aujourd’hui : où je veux aller – un but qui me correspond"
+                "Aujourd’hui : où je veux aller – mon but"
               ]
             },
             {
               "art": "text",
-              "text": "Un but te correspond quand il va avec tes forces et tes valeurs et qu’il est assez petit pour cette semaine. Aujourd’hui, le quatrième champ s’ajoute."
+              "text": "Un but te correspond quand il va avec tes forces ou tes valeurs et qu’il est assez petit pour cette semaine. Aujourd’hui, le quatrième champ s’ajoute."
             }
           ],
           "rechts": [
@@ -3606,7 +3643,7 @@
               "art": "bild",
               "bild": "motiv:kompass",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Où veux-tu aller ?",
               "ausrichtung": "mitte"
             }
           ]
@@ -3631,14 +3668,14 @@
           "rechts": [
             "« Je pense : ce sera gênant si elle dit non. »",
             "« Si je deviens nerveux·se, j’expire et je demande. »",
-            "« Je demande à l’entraîneuse un nouveau poste. »",
+            "« Je demande à l’entraîneuse de changer de poste. »",
             "« J’ai plus confiance en moi, et elle sait ce que je veux. »"
           ]
         },
         {
           "art": "aufgabe",
           "text": "Ton but pour cette semaine : petit, réalisable, qui te correspond.",
-          "hinweis": "Vrai ou inventé – tu décides à quel point c’est proche de toi."
+          "hinweis": "Vrai ou inventé – tu décides. Un but va bien avec l’une de tes valeurs ou de tes forces."
         },
         {
           "art": "satzanfaenge",
@@ -3647,7 +3684,15 @@
             "Le meilleur résultat :",
             "L’obstacle en moi :"
           ],
-          "linien": 1
+          "linien": 2
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan : que fais-tu quand l’obstacle arrive – et avec qui, quand et où ?",
+          "hinweis": "L’exemple montre le plan de Tiago. Pour finir, tu fixes ta première phrase."
         },
         {
           "art": "wennDann",
@@ -3660,10 +3705,6 @@
               "dann": "J’expire et je dis ma phrase."
             }
           ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Planifier ta situation : qui, quand, où – et la première phrase."
         },
         {
           "art": "tabelle",
@@ -3706,7 +3747,8 @@
             },
             {
               "titel": "Où je veux aller",
-              "text": "nouveau aujourd’hui"
+              "text": "nouveau aujourd’hui",
+              "heute": true
             }
           ],
           "linien": 0
@@ -3735,7 +3777,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die vier Schritte vor, der oder die Jugendliche verbindet jeden mit Tiagos Satz und sagt, wie er oder sie das Hindernis lösen würde. Aufgabe 2 ist der Kern der Stunde: Situation wählen (erfunden oder echt), Wunsch, Ergebnis, Hindernis und Wenn-dann-Plan aufschreiben, dann in der Tabelle wer, wann, wo und der erste Satz; danach spielt die Fachkraft das Gegenüber (Kern), mit Stopp-Wort. Fenster, Satz und Auftrag sind allein und kurz.",
+          "text": "Aufgabe 1 (kurz): Die Fachkraft liest die vier Schritte vor, der oder die Jugendliche verbindet jeden mit Tiagos Satz – das Schema von eben, jetzt schwarz auf weiß. Aufgabe 2 ist die Schreibarbeit der Stunde: Wunsch, bestes Ergebnis und Hindernis aus dem Gespräch aufschreiben. In Aufgabe 3 kommen der Wenn-dann-Plan und in der Tabelle mit wem, wann, wo und der erste Satz dazu – das ist der Plan, der im Kern geübt wurde. Fenster und Auftrag sind allein und kurz; der Satz „Mein Ziel passt zu mir, weil“ gilt nur, wenn Zeit bleibt.",
           "sagen": [
             "Was würde dir helfen, wenn die Person abblockt?",
             "Wie soll dein erster Satz klingen?"
@@ -3743,7 +3785,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche die Teile des Plans, und die Fachkraft notiert Stichworte; der Wenn-dann-Plan darf mündlich bleiben. Geht es um etwas Schweres, bleibt es bei der erfundenen Situation mit Tiago. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les quatre étapes, le ou la jeune relie chacune à la phrase de Tiago et dit comment il ou elle résoudrait l’obstacle. L’exercice 2 est le cœur de la séance : choisir une situation (inventée ou vraie), noter souhait, résultat, obstacle et plan « si – alors », puis dans le tableau qui, quand, où et la première phrase ; ensuite, l’adulte joue l’autre personne (temps de séance), avec un mot d’arrêt. La fenêtre, la phrase et la mission se font seul et brièvement.",
+          "text": "Exercice 1 (court) : l’adulte lit les quatre étapes, le ou la jeune relie chacune à la phrase de Tiago – le schéma de tout à l’heure, maintenant noir sur blanc. L’exercice 2 est le travail d’écriture de la séance : noter souhait, meilleur résultat et obstacle issus de la conversation. À l’exercice 3 s’ajoutent le plan « si – alors » et, dans le tableau, avec qui, quand, où et la première phrase – c’est le plan travaillé pendant la séance. La fenêtre et la mission se font seul et brièvement ; la phrase « Mon but me correspond, parce que » n’est à faire que s’il reste du temps.",
           "sagen": [
             "Qu’est-ce qui t’aiderait si la personne se ferme ?",
             "Comment ta première phrase doit-elle sonner ?"
@@ -3754,13 +3796,13 @@
     },
     "fr": {
       "titel": "Des buts qui me correspondent",
-      "text": "La fenêtre est presque pleine : les forces avec preuves, les retours, les valeurs et un regard juste sont déjà là. Aujourd’hui, le quatrième champ s’ajoute : où je veux aller. Un but convient quand il va avec ses forces et ses valeurs et qu’il est assez petit pour cette semaine. L’adulte guide à travers WOOP (d’après Gabriele Oettingen) : souhait, meilleur résultat, obstacle en moi, plan sous forme de phrase « si – alors ». Le ou la jeune choisit pour cela une vraie petite situation de cette semaine – ou une situation inventée qui pourrait convenir – et planifie : qui, quand, où, quelle phrase. Dans le jeu de rôle, il ou elle s’exerce à dire la phrase : l’adulte joue l’autre personne, calme et pas méchante, en deux tours ; après chacun, l’adulte dit d’abord ce qui a réussi, puis le ou la jeune dit ce qu’il ou elle changerait. Au troisième tour, le ou la jeune joue l’autre personne et dit comment la phrase lui arrive.",
+      "text": "La fenêtre est presque pleine : les forces avec preuves, les retours, les valeurs et un regard juste sont déjà là. Aujourd’hui, le quatrième champ s’ajoute : où je veux aller. Un but convient quand il va avec ses forces ou ses valeurs et qu’il est assez petit pour cette semaine. L’adulte montre brièvement WOOP avec Tiago (il veut demander à l’entraîneuse de changer de poste ; d’après Gabriele Oettingen : souhait, meilleur résultat, obstacle en moi, plan sous forme de phrase « si – alors »), puis guide le ou la jeune à l’oral à travers WOOP pour une vraie petite situation de cette semaine (ou une situation inventée qui pourrait convenir) : qui, quand, où, quelle première phrase (environ 5 minutes). Ensuite, il ou elle s’exerce à dire la phrase dans un jeu de rôle (environ 6 minutes) : l’adulte joue l’autre personne, calme et pas méchante, en deux tours ; après chacun, l’adulte dit d’abord ce qui a réussi, puis le ou la jeune dit ce qu’il ou elle changerait. Un troisième tour, avec les rôles échangés, n’a lieu que s’il reste du temps.",
       "sagen": [
         "Un bon but est assez petit pour cette semaine et correspond à ce qui compte pour toi.",
         "WOOP : qu’est-ce que je souhaite ? Quel est le meilleur résultat ? Qu’est-ce qui, en moi, se met en travers ? Et que fais-je alors ?",
         "Je joue l’autre personne, calme et pas méchante. Tu peux dire stop à tout moment."
       ],
-      "wennEsKippt": "Si aucune situation ne vient, le ou la jeune en choisit une parmi trois inventées (Tiago demande à l’entraîneuse de changer de poste ; Noor dit au groupe qu’elle ne veut pas participer ; Elif lève la main en histoire). S’il est question de violence, de menaces ou de harcèlement, on ne joue rien : écouter, demander qui peut aider et agir selon la procédure interne. Si le jeu de rôle est trop, il suffit de dire la phrase une fois à voix haute ou de l’écrire."
+      "wennEsKippt": "Si aucune situation ne vient, le ou la jeune en choisit une parmi trois inventées (Tiago demande à l’entraîneuse de changer de poste ; Noor dit au groupe qu’elle ne veut pas participer ; Elif lève la main en histoire). S’il est question de violence, de menaces ou de harcèlement, on ne joue rien : écouter, demander qui peut aider et agir selon la procédure interne. Si le jeu de rôle est trop difficile, il suffit de dire la phrase une fois à voix haute ou de l’écrire."
     },
     "zugang": {
       "lesen": 2,
@@ -3775,7 +3817,7 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Ziele, die zu mir passen",
-    "text": "Das Fenster ist fast voll: Stärken mit Belegen, Rückmeldungen, Werte und ein fairer Blick sind schon da. Heute kommt das vierte Feld dazu: wohin ich will. Ein Ziel passt, wenn es zu den eigenen Stärken und Werten passt und klein genug für diese Woche ist. Die Fachkraft führt durch WOOP (nach Gabriele Oettingen): Wunsch, bestes Ergebnis, Hindernis in mir, Plan als Wenn-dann-Satz. Der oder die Jugendliche wählt dazu eine echte kleine Situation dieser Woche – oder eine erfundene, die gut passen könnte – und plant: wer, wann, wo, welcher Satz. Im Rollenspiel übt er oder sie den Satz: Die Fachkraft spielt das Gegenüber, ruhig und nicht gemein, in zwei Durchgängen; nach jedem sagt die Fachkraft zuerst, was gelungen ist, dann der oder die Jugendliche, was er oder sie ändern würde. Im dritten Durchgang spielt der oder die Jugendliche das Gegenüber und sagt, wie der Satz bei ihm oder ihr ankommt.",
+    "text": "Das Fenster ist fast voll: Stärken mit Belegen, Rückmeldungen, Werte und ein fairer Blick sind schon da. Heute kommt das vierte Feld dazu: wohin ich will. Ein Ziel passt, wenn es zu den eigenen Stärken oder Werten passt und klein genug für diese Woche ist. Die Fachkraft zeigt WOOP kurz an Tiago (er will die Trainerin um eine neue Position bitten; nach Gabriele Oettingen: Wunsch, bestes Ergebnis, Hindernis in mir, Plan als Wenn-dann-Satz) und führt den oder die Jugendliche dann mündlich durch WOOP zu einer echten kleinen Situation dieser Woche (oder einer erfundenen, die gut passen könnte): wer, wann, wo, welcher erste Satz (ca. 5 Minuten). Danach übt er oder sie den Satz im Rollenspiel (ca. 6 Minuten): Die Fachkraft spielt das Gegenüber, ruhig und nicht gemein, in zwei Durchgängen; nach jedem sagt sie zuerst, was gelungen ist, dann sagt der oder die Jugendliche, was er oder sie ändern würde. Ein dritter Durchgang mit vertauschten Rollen gehört nur dazu, wenn Zeit bleibt.",
     "sagen": [
       "Ein gutes Ziel ist klein genug für diese Woche und passt zu dem, was dir wichtig ist.",
       "WOOP: Was wünsche ich mir? Was ist das beste Ergebnis? Was in mir kommt dazwischen? Und was tue ich dann?",
@@ -3866,15 +3908,15 @@
               "symbol": "wissen",
               "titel": "Das Selbstbild-Fenster",
               "punkte": [
-                "Wie ich mich sehe – Stärken mit Belegen, fairer Blick (schon da)",
-                "Wie andere mich sehen – ihre Rückmeldungen (schon da)",
+                "Wie ich mich sehe – Stärken, fairer Blick (schon da)",
+                "Wie andere mich sehen – Rückmeldungen (schon da)",
                 "Was mir wichtig ist – meine Werte (schon da)",
-                "Heute: Wohin ich will – ein Ziel, das zu mir passt"
+                "Heute: Wohin ich will – mein Ziel"
               ]
             },
             {
               "art": "text",
-              "text": "Ein Ziel passt, wenn es zu deinen Stärken und Werten passt und klein genug ist für diese Woche. Heute kommt das vierte Feld dazu."
+              "text": "Ein Ziel passt, wenn es zu deinen Stärken oder Werten passt und klein genug ist für diese Woche. Heute kommt das vierte Feld dazu."
             }
           ],
           "rechts": [
@@ -3882,7 +3924,7 @@
               "art": "bild",
               "bild": "motiv:kompass",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Wohin willst du?",
               "ausrichtung": "mitte"
             }
           ]
@@ -3914,7 +3956,7 @@
         {
           "art": "aufgabe",
           "text": "Dein Ziel für diese Woche: klein, machbar, zu dir passend. Kreuz an, was zu dir passt.",
-          "hinweis": "Echt oder erfunden – du entscheidest, wie nah es an dir dran ist."
+          "hinweis": "Echt oder erfunden – du entscheidest. Gut passt, was zu einem deiner Werte oder Stärken passt."
         },
         {
           "art": "ankreuzen",
@@ -3937,19 +3979,19 @@
           "bilder": [
             {
               "bild": "gesicht:nervoes",
-              "text": "nervös"
+              "text": "Nervosität"
             },
             {
               "bild": "gesicht:verlegen",
-              "text": "peinlich"
+              "text": "Peinlichkeit"
             },
             {
               "bild": "gesicht:muede",
-              "text": "aufschieben"
+              "text": "Unlust"
             },
             {
               "bild": "gesicht:verwirrt",
-              "text": "kein Satz"
+              "text": "Blackout"
             }
           ],
           "spalten": 4,
@@ -3960,9 +4002,9 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "text",
-          "klein": true,
-          "text": "Mein Plan, wenn das Hindernis kommt:"
+          "art": "aufgabe",
+          "text": "Dein Plan: Was tust du, wenn das Hindernis kommt – und mit wem, wann und wo?",
+          "hinweis": "Das Beispiel zeigt Tiagos Plan. Zum Schluss legst du deinen ersten Satz fest."
         },
         {
           "art": "wennDann",
@@ -3975,10 +4017,6 @@
               "dann": "Ich atme aus und sage meinen Satz."
             }
           ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Deine Situation planen: wer, wann, wo – und der erste Satz."
         },
         {
           "art": "tabelle",
@@ -4032,7 +4070,8 @@
             },
             {
               "titel": "Wohin ich will",
-              "text": "heute neu"
+              "text": "heute neu",
+              "heute": true
             }
           ],
           "linien": 0
@@ -4072,15 +4111,15 @@
               "symbol": "wissen",
               "titel": "Ma fenêtre sur moi",
               "punkte": [
-                "Mon regard sur moi – forces avec preuves, regard juste (déjà là)",
+                "Mon regard sur moi – forces, regard juste (déjà là)",
                 "Le regard des autres – leurs retours (déjà là)",
                 "Ce qui compte pour moi – mes valeurs (déjà là)",
-                "Aujourd’hui : où je veux aller – un but qui me correspond"
+                "Aujourd’hui : où je veux aller – mon but"
               ]
             },
             {
               "art": "text",
-              "text": "Un but te correspond quand il va avec tes forces et tes valeurs et qu’il est assez petit pour cette semaine. Aujourd’hui, le quatrième champ s’ajoute."
+              "text": "Un but te correspond quand il va avec tes forces ou tes valeurs et qu’il est assez petit pour cette semaine. Aujourd’hui, le quatrième champ s’ajoute."
             }
           ],
           "rechts": [
@@ -4088,7 +4127,7 @@
               "art": "bild",
               "bild": "motiv:kompass",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Où veux-tu aller ?",
               "ausrichtung": "mitte"
             }
           ]
@@ -4113,14 +4152,14 @@
           "rechts": [
             "« Je pense : ce sera gênant si elle dit non. »",
             "« Si je deviens nerveux·se, j’expire et je demande. »",
-            "« Je demande à l’entraîneuse un nouveau poste. »",
+            "« Je demande à l’entraîneuse de changer de poste. »",
             "« J’ai plus confiance en moi, et elle sait ce que je veux. »"
           ]
         },
         {
           "art": "aufgabe",
           "text": "Ton but pour cette semaine : petit, réalisable, qui te correspond. Coche ce qui te convient.",
-          "hinweis": "Vrai ou inventé – tu décides à quel point c’est proche de toi."
+          "hinweis": "Vrai ou inventé – tu décides. Un but va bien avec l’une de tes valeurs ou de tes forces."
         },
         {
           "art": "ankreuzen",
@@ -4143,19 +4182,19 @@
           "bilder": [
             {
               "bild": "gesicht:nervoes",
-              "text": "nerveux·se"
+              "text": "le trac"
             },
             {
               "bild": "gesicht:verlegen",
-              "text": "gênant"
+              "text": "la gêne"
             },
             {
               "bild": "gesicht:muede",
-              "text": "remettre à plus tard"
+              "text": "le manque d’envie"
             },
             {
               "bild": "gesicht:verwirrt",
-              "text": "pas de phrase"
+              "text": "le trou noir"
             }
           ],
           "spalten": 4,
@@ -4166,9 +4205,9 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "text",
-          "klein": true,
-          "text": "Mon plan quand l’obstacle arrive :"
+          "art": "aufgabe",
+          "text": "Ton plan : que fais-tu quand l’obstacle arrive – et avec qui, quand et où ?",
+          "hinweis": "L’exemple montre le plan de Tiago. Pour finir, tu fixes ta première phrase."
         },
         {
           "art": "wennDann",
@@ -4181,10 +4220,6 @@
               "dann": "J’expire et je dis ma phrase."
             }
           ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Planifier ta situation : qui, quand, où – et la première phrase."
         },
         {
           "art": "tabelle",
@@ -4238,7 +4273,8 @@
             },
             {
               "titel": "Où je veux aller",
-              "text": "nouveau aujourd’hui"
+              "text": "nouveau aujourd’hui",
+              "heute": true
             }
           ],
           "linien": 0
@@ -4270,7 +4306,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die vier Schritte vor, der oder die Jugendliche verbindet jeden mit Tiagos Satz. In Aufgabe 2 kreuzt er oder sie Wunsch und Hindernis an (Gesichter) und schreibt nur Stichworte: wer, wann, wo; den ersten Satz wählt er oder sie aus drei Karten oder sagt einen eigenen. Danach spielt die Fachkraft das Gegenüber (Kern), mit Stopp-Wort. Fenster, Ziel und Auftrag sind zum Ankreuzen.",
+          "text": "Aufgabe 1 (kurz): Die Fachkraft liest die vier Schritte vor, der oder die Jugendliche verbindet jeden mit Tiagos Satz. In Aufgabe 2 kreuzt er oder sie Wunsch und Hindernis (Gesichter) an, passend zum Gespräch von eben. In Aufgabe 3 stehen der Wenn-dann-Plan, nur Stichworte zu mit wem, wann und wo und der erste Satz – er oder sie wählt ihn aus drei Karten oder sagt einen eigenen. Fenster, Ziel und Auftrag sind zum Ankreuzen.",
           "sagen": [
             "Was würde dir helfen, wenn die Person abblockt?",
             "Welcher Satz klingt nach dir?"
@@ -4278,7 +4314,7 @@
           "wennEsKippt": "Fällt die Wahl schwer, nennt die Fachkraft zwei Beispiele aus dem Gespräch, und der oder die Jugendliche entscheidet. Die Stichworte dürfen mündlich bleiben. Geht es um etwas Schweres, bleibt es bei der erfundenen Situation mit Tiago. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les quatre étapes, le ou la jeune relie chacune à la phrase de Tiago. À l’exercice 2, il ou elle coche souhait et obstacle (visages) et note seulement des mots-clés : qui, quand, où ; la première phrase se choisit parmi trois cartes, ou il ou elle en dit une personnelle. Ensuite, l’adulte joue l’autre personne (temps de séance), avec un mot d’arrêt. La fenêtre, le but et la mission se font en cochant.",
+          "text": "Exercice 1 (court) : l’adulte lit les quatre étapes, le ou la jeune relie chacune à la phrase de Tiago. À l’exercice 2, il ou elle coche souhait et obstacle (visages), comme dans la conversation de tout à l’heure. À l’exercice 3, il ou elle note le plan « si – alors », seulement des mots-clés pour avec qui, quand et où, et choisit la première phrase parmi trois cartes ou en dit une personnelle. La fenêtre, le but et la mission se font en cochant.",
           "sagen": [
             "Qu’est-ce qui t’aiderait si la personne se ferme ?",
             "Quelle phrase sonne comme toi ?"
@@ -4289,13 +4325,13 @@
     },
     "fr": {
       "titel": "Des buts qui me correspondent",
-      "text": "La fenêtre est presque pleine : les forces avec preuves, les retours, les valeurs et un regard juste sont déjà là. Aujourd’hui, le quatrième champ s’ajoute : où je veux aller. Un but convient quand il va avec ses forces et ses valeurs et qu’il est assez petit pour cette semaine. L’adulte guide à travers WOOP (d’après Gabriele Oettingen) : souhait, meilleur résultat, obstacle en moi, plan sous forme de phrase « si – alors ». Le ou la jeune choisit pour cela une vraie petite situation de cette semaine – ou une situation inventée qui pourrait convenir – et planifie : qui, quand, où, quelle phrase. Dans le jeu de rôle, il ou elle s’exerce à dire la phrase : l’adulte joue l’autre personne, calme et pas méchante, en deux tours ; après chacun, l’adulte dit d’abord ce qui a réussi, puis le ou la jeune dit ce qu’il ou elle changerait. Au troisième tour, le ou la jeune joue l’autre personne et dit comment la phrase lui arrive.",
+      "text": "La fenêtre est presque pleine : les forces avec preuves, les retours, les valeurs et un regard juste sont déjà là. Aujourd’hui, le quatrième champ s’ajoute : où je veux aller. Un but convient quand il va avec ses forces ou ses valeurs et qu’il est assez petit pour cette semaine. L’adulte montre brièvement WOOP avec Tiago (il veut demander à l’entraîneuse de changer de poste ; d’après Gabriele Oettingen : souhait, meilleur résultat, obstacle en moi, plan sous forme de phrase « si – alors »), puis guide le ou la jeune à l’oral à travers WOOP pour une vraie petite situation de cette semaine (ou une situation inventée qui pourrait convenir) : qui, quand, où, quelle première phrase (environ 5 minutes). Ensuite, il ou elle s’exerce à dire la phrase dans un jeu de rôle (environ 6 minutes) : l’adulte joue l’autre personne, calme et pas méchante, en deux tours ; après chacun, l’adulte dit d’abord ce qui a réussi, puis le ou la jeune dit ce qu’il ou elle changerait. Un troisième tour, avec les rôles échangés, n’a lieu que s’il reste du temps.",
       "sagen": [
         "Un bon but est assez petit pour cette semaine et correspond à ce qui compte pour toi.",
         "WOOP : qu’est-ce que je souhaite ? Quel est le meilleur résultat ? Qu’est-ce qui, en moi, se met en travers ? Et que fais-je alors ?",
         "Je joue l’autre personne, calme et pas méchante. Tu peux dire stop à tout moment."
       ],
-      "wennEsKippt": "Si aucune situation ne vient, le ou la jeune en choisit une parmi trois inventées (Tiago demande à l’entraîneuse de changer de poste ; Noor dit au groupe qu’elle ne veut pas participer ; Elif lève la main en histoire). S’il est question de violence, de menaces ou de harcèlement, on ne joue rien : écouter, demander qui peut aider et agir selon la procédure interne. Si le jeu de rôle est trop, il suffit de dire la phrase une fois à voix haute ou de l’écrire."
+      "wennEsKippt": "Si aucune situation ne vient, le ou la jeune en choisit une parmi trois inventées (Tiago demande à l’entraîneuse de changer de poste ; Noor dit au groupe qu’elle ne veut pas participer ; Elif lève la main en histoire). S’il est question de violence, de menaces ou de harcèlement, on ne joue rien : écouter, demander qui peut aider et agir selon la procédure interne. Si le jeu de rôle est trop difficile, il suffit de dire la phrase une fois à voix haute ou de l’écrire."
     },
     "zugang": {
       "lesen": 1,
@@ -4310,13 +4346,13 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Mein Profil",
-    "text": "Das Fenster ist komplett: wie ich mich sehe, wie andere mich sehen, was mir wichtig ist, wohin ich will. Heute schaut der oder die Jugendliche auf alle Stunden zurück: Zuerst färbt er oder sie das Profil ein – ehrlich, nicht freundlich –, dann trägt er oder sie ins Fenster ein, was bleibt, und sagt, wer helfen kann. Im Rollenspiel „60-Sekunden-Porträt“ stellt er oder sie sich in vier Sätzen vor (eine Stärke mit Beleg, ein Wert, ein fairer Satz, ein Ziel), als wäre er oder sie neu in einem Praktikum; die Fachkraft hört interessiert zu und sagt, was bei ihr hängen geblieben ist. In der zweiten Runde stellt sich die Fachkraft so vor, und der oder die Jugendliche gibt die Rückmeldung. Zum Schluss entscheidet er oder sie, was auf die Karte kommt, die er oder sie mitnimmt.",
+    "text": "Das Fenster ist komplett: wie ich mich sehe, wie andere mich sehen, was mir wichtig ist, wohin ich will. Heute ist der Rückblick dran: Die Fachkraft legt die Blätter der Fenster-Mappe aus, und der oder die Jugendliche zeigt zu jedem Feld, was ihm oder ihr geblieben ist – eine Stärke mit Beleg, eine Rückmeldung, einen Wert, einen fairen Satz, das Ziel (ca. 4 Minuten). Im Rollenspiel „60-Sekunden-Porträt“ stellt er oder sie sich danach in vier Sätzen vor (eine Stärke mit Beleg, ein Wert, ein fairer Satz, ein Ziel), als wäre er oder sie neu in einem Praktikum; die Fachkraft hört interessiert zu und sagt, was bei ihr hängen geblieben ist. In der zweiten Runde stellt sich die Fachkraft so vor, und der oder die Jugendliche gibt die Rückmeldung.",
     "sagen": [
       "Schau auf alles, was wir gemacht haben. Was bleibt von deinem Fenster – und was nimmst du mit?",
-      "Mal ehrlich aus, nicht freundlich. Ein kleiner Ring ist kein schlechtes Ergebnis, sondern ein Startpunkt.",
+      "Such dir pro Feld das Blatt aus, das dir am meisten bedeutet, und sag mir, warum.",
       "Stell dich in vier Sätzen vor, als wärst du neu in einem Praktikum. Ich höre zu und sage dir, was bei mir hängen geblieben ist."
     ],
-    "wennEsKippt": "Fällt die Vorstellung oder das Einschätzen schwer, genügen zwei Sätze bzw. zwei oder drei Stücke, oder das Porträt wird zuerst über eine erfundene Person (Tiago) geübt. Mag der oder die Jugendliche keine Person nennen, die hilft, bleibt das Feld leer – die Nummern auf dem Blatt gelten trotzdem. Nennt der oder die Jugendliche etwas Belastendes oder gibt es Hinweise auf eine Gefährdung, geht es nicht mehr ums Blatt: zuhören, nicht allein lassen und nach dem internen Ablauf handeln; die Nummern auf dem Blatt bleiben bei ihm oder ihr.",
+    "wennEsKippt": "Fällt die Vorstellung schwer, genügen zwei Sätze, oder das Porträt wird zuerst über eine erfundene Person (Tiago) geübt. Nennt der oder die Jugendliche etwas Belastendes oder gibt es Hinweise auf eine Gefährdung, geht es nicht mehr ums Blatt: zuhören, nicht allein lassen und nach dem internen Ablauf handeln; die Nummern auf dem Blatt bleiben bei ihm oder ihr.",
     "rolle": [
       "kern"
     ],
@@ -4419,14 +4455,14 @@
               "art": "bild",
               "bild": "motiv:spiegel",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Ein ehrlicher Blick auf dich",
               "ausrichtung": "mitte"
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Dein Profil: Mal in jedem Stück so viele Ringe aus, wie es dir heute gelingt.",
+          "text": "Dein Profil: Mal in jedem Abschnitt so viele Ringe aus, wie es dir heute gelingt.",
           "hinweis": "Innen heißt wenig, außen viel. Ehrlich, nicht freundlich: Ein kleiner Ring ist ein Startpunkt."
         },
         {
@@ -4459,7 +4495,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein Fenster, komplett: Was gehört bei dir in jedes Feld?",
+          "text": "Dein Fenster, komplett: Was gehört bei dir in jedes Feld? Das sind die vier Zeilen für deine Karte.",
           "hinweis": "Schau in deine Blätter. Die erste Zeile ist ein Beispiel."
         },
         {
@@ -4494,7 +4530,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Trag deine Karte bei dir – in der Handyhülle oder im Federmäppchen – und hak ab, wenn sie dir geholfen hat."
+          "text": "Bis zum nächsten Mal: Schreib deine vier Zeilen auf eine Karte, trag sie bei dir – in der Handyhülle oder im Federmäppchen – und hak ab, wenn sie dir geholfen hat."
         },
         {
           "art": "zielkarte",
@@ -4535,15 +4571,15 @@
               "art": "bild",
               "bild": "motiv:spiegel",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Un regard honnête sur toi",
               "ausrichtung": "mitte"
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Ton profil : dans chaque part, colorie plus d’anneaux quand ça te réussit mieux aujourd’hui.",
-          "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Honnêtement, pas gentiment : un petit anneau est un point de départ."
+          "text": "Ton profil : dans chaque part, colorie autant d’anneaux que ça te réussit aujourd’hui.",
+          "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Sois honnête, pas indulgent·e : un petit anneau est un point de départ."
         },
         {
           "art": "netz",
@@ -4553,7 +4589,7 @@
             "Accepter les retours",
             "Connaître mes valeurs",
             "Me parler avec justesse",
-            "Planifier de petits buts",
+            "Me fixer de petits buts",
             "Demander de l’aide"
           ]
         },
@@ -4575,7 +4611,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta fenêtre, complète : qu’est-ce qui va dans chaque champ chez toi ?",
+          "text": "Ta fenêtre, complète : qu’est-ce qui va dans chaque champ chez toi ? Ce sont les quatre lignes de ta carte.",
           "hinweis": "Regarde tes fiches. La première ligne est un exemple."
         },
         {
@@ -4610,7 +4646,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : garde ta carte sur toi – dans la coque de ton téléphone ou ta trousse – et coche quand elle t’a aidé·e."
+          "text": "D’ici la prochaine fois : recopie tes quatre lignes sur une carte, garde-la sur toi – dans la coque de ton téléphone ou ta trousse – et coche quand elle t’a aidé·e."
         },
         {
           "art": "zielkarte",
@@ -4627,15 +4663,15 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt das Profil ein und sagt zu zwei Stücken, woran er oder sie es merkt; die Fachkraft fragt nach einem Beispiel aus den Stunden. In Aufgabe 2 schreibt er oder sie auf, was bleibt, und trägt eine Person ein – nur, wenn er oder sie mag; die Nummern liest die Fachkraft kurz vor. In Aufgabe 3 schreibt er oder sie zu jedem Feld des Fensters einen Eintrag und schaut dazu in die Blätter der Mappe. Karte und Auftrag sind freiwillig und kommen zum Schluss; das 60-Sekunden-Porträt aus dem Kern kann Aufgabe 3 ersetzen, wenn die Zeit knapp ist. Die Mappe mit allen Blättern geht in die Verabschiedung.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt das Profil ein – ehrlich, nicht freundlich – und sagt zu zwei Abschnitten, woran er oder sie es merkt; die Fachkraft fragt nach einem Beispiel aus den Stunden. In Aufgabe 2 schreibt er oder sie auf, was bleibt, und trägt eine Person ein – nur, wenn er oder sie mag; die Nummern liest die Fachkraft kurz vor. In Aufgabe 3 schreibt er oder sie zu jedem Feld des Fensters einen Eintrag und schaut dazu in die Blätter der Mappe; diese vier Zeilen sind der Text der Karte. Karte und Auftrag sind freiwillig und kommen zum Schluss. Bei knapper Zeit genügen die Aufgaben 1 und 3 (Aufgabe 2 „wenn Zeit bleibt“), denn das 60-Sekunden-Porträt hat Aufgabe 3 schon mündlich vorbereitet. Am Ende bekommt er oder sie die Mappe mit allen Blättern zum Behalten.",
           "sagen": [
-            "Woran würdest du merken, dass ein Stück größer geworden ist?",
+            "Woran würdest du merken, dass ein Abschnitt größer geworden ist?",
             "Wer oder was hilft dir, wenn es schwierig wird?"
           ],
-          "wennEsKippt": "Fällt das Einschätzen schwer, genügen zwei oder drei Stücke, und die Fachkraft nennt ein Beispiel aus den Stunden. Mag der oder die Jugendliche keine Person eintragen, bleibt das Feld leer – die Nummern gelten trotzdem. Ist die Zeit knapp, genügen die Aufgaben 1 und 3; die Karte geht mit."
+          "wennEsKippt": "Fällt das Einschätzen schwer, genügen zwei oder drei Abschnitte, und die Fachkraft nennt ein Beispiel aus den Stunden. Mag der oder die Jugendliche keine Person eintragen, bleibt das Feld leer – die Nummern gelten trotzdem. Ist die Zeit knapp, genügen die Aufgaben 1 und 3; die Karte geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune colorie le profil et dit à deux parties à quoi il ou elle le remarque ; l’adulte demande un exemple tiré des séances. À l’exercice 2, il ou elle écrit ce qui reste et note une personne – seulement si le ou la jeune le souhaite ; l’adulte lit brièvement les numéros. À l’exercice 3, il ou elle écrit une entrée pour chaque champ de la fenêtre en regardant les fiches du dossier. La carte et la mission sont facultatives et viennent à la fin ; le portrait en 60 secondes peut remplacer l’exercice 3 si le temps manque. Le dossier avec toutes les fiches fait partie des adieux.",
+          "text": "Exercice 1 ensemble : le ou la jeune colorie le profil – honnêtement, sans indulgence – et dit à deux parts à quoi il ou elle le remarque ; l’adulte demande un exemple tiré des séances. À l’exercice 2, il ou elle écrit ce qui reste et note une personne – seulement s’il ou elle le souhaite ; l’adulte lit brièvement les numéros. À l’exercice 3, il ou elle écrit une entrée pour chaque champ de la fenêtre en regardant les fiches du dossier ; ces quatre lignes sont le texte de la carte. La carte et la mission sont facultatives et viennent à la fin. Si le temps manque, les exercices 1 et 3 suffisent (l’exercice 2 seulement s’il reste du temps), car le portrait en 60 secondes a déjà préparé l’exercice 3 à l’oral. À la fin, le ou la jeune reçoit le dossier avec toutes les fiches pour le garder.",
           "sagen": [
             "À quoi remarquerais-tu qu’une part a grandi ?",
             "Qui ou quoi t’aide quand c’est difficile ?"
@@ -4646,13 +4682,13 @@
     },
     "fr": {
       "titel": "Mon profil",
-      "text": "La fenêtre est complète : mon regard sur moi, le regard des autres, ce qui compte pour moi, où je veux aller. Aujourd’hui, le ou la jeune regarde en arrière sur toutes les séances : d’abord, il ou elle colorie le profil – honnêtement, pas gentiment –, puis note dans la fenêtre ce qui reste et dit qui peut aider. Dans le jeu de rôle « portrait en 60 secondes », il ou elle se présente en quatre phrases (une force avec preuve, une valeur, une phrase juste, un but), comme dans un nouveau stage ; l’adulte écoute avec intérêt et dit ce qui lui est resté. Au second tour, l’adulte se présente de la même façon et le ou la jeune donne son retour. Pour finir, il ou elle décide de ce qui va sur la carte qu’il ou elle emporte.",
+      "text": "La fenêtre est complète : mon regard sur moi, le regard des autres, ce qui compte pour moi, où je veux aller. Aujourd’hui, on fait le point : l’adulte étale les fiches du dossier de la fenêtre, et le ou la jeune montre pour chaque champ ce qui lui est resté – une force avec preuve, un retour, une valeur, une phrase juste, le but (environ 4 minutes). Dans le jeu de rôle « portrait en 60 secondes », il ou elle se présente ensuite en quatre phrases (une force avec preuve, une valeur, une phrase juste, un but), comme dans un nouveau stage ; l’adulte écoute avec intérêt et dit ce qui lui est resté. Au second tour, l’adulte se présente de la même façon et le ou la jeune donne son retour.",
       "sagen": [
-        "Regarde tout ce qu’on a fait. Qu’est-ce qui reste de ta fenêtre – et qu’est-ce que tu emportes ?",
-        "Colorie honnêtement, pas gentiment. Un petit anneau n’est pas un mauvais résultat, c’est un point de départ.",
+        "Regarde tout ce qu’on a fait. Qu’est-ce qui reste de ta fenêtre – et qu’est-ce que tu emportes ?",
+        "Choisis pour chaque champ la fiche qui compte le plus pour toi et dis-moi pourquoi.",
         "Présente-toi en quatre phrases, comme si tu arrivais en stage. J’écoute, et je te dis ce qui m’est resté."
       ],
-      "wennEsKippt": "Si la présentation ou l’évaluation est difficile, deux phrases ou deux ou trois parties suffisent, ou on s’exerce d’abord avec un personnage inventé (Tiago). Si le ou la jeune ne veut nommer personne, le champ reste vide – les numéros sur la fiche valent quand même. Si le ou la jeune évoque quelque chose de lourd ou s’il y a des signes de danger, il ne s’agit plus de la fiche : écouter, ne pas laisser seul·e et agir selon la procédure interne ; les numéros sur la fiche restent à la personne."
+      "wennEsKippt": "Si la présentation est difficile, deux phrases suffisent, ou on s’exerce d’abord avec un personnage inventé (Tiago). Si le ou la jeune évoque quelque chose de lourd ou s’il y a des signes de danger, il ne s’agit plus de la fiche : écouter, ne pas laisser seul·e et agir selon la procédure interne ; les numéros sur la fiche restent à la personne."
     },
     "zugang": {
       "lesen": 2,
@@ -4667,13 +4703,13 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Mein Profil",
-    "text": "Das Fenster ist komplett: wie ich mich sehe, wie andere mich sehen, was mir wichtig ist, wohin ich will. Heute schaut der oder die Jugendliche auf alle Stunden zurück: Zuerst färbt er oder sie das Profil ein – ehrlich, nicht freundlich –, dann trägt er oder sie ins Fenster ein, was bleibt, und sagt, wer helfen kann. Im Rollenspiel „60-Sekunden-Porträt“ stellt er oder sie sich in vier Sätzen vor (eine Stärke mit Beleg, ein Wert, ein fairer Satz, ein Ziel), als wäre er oder sie neu in einem Praktikum; die Fachkraft hört interessiert zu und sagt, was bei ihr hängen geblieben ist. In der zweiten Runde stellt sich die Fachkraft so vor, und der oder die Jugendliche gibt die Rückmeldung. Zum Schluss entscheidet er oder sie, was auf die Karte kommt, die er oder sie mitnimmt.",
+    "text": "Das Fenster ist komplett: wie ich mich sehe, wie andere mich sehen, was mir wichtig ist, wohin ich will. Heute ist der Rückblick dran: Die Fachkraft legt die Blätter der Fenster-Mappe aus, und der oder die Jugendliche zeigt zu jedem Feld, was ihm oder ihr geblieben ist – eine Stärke mit Beleg, eine Rückmeldung, einen Wert, einen fairen Satz, das Ziel (ca. 4 Minuten). Im Rollenspiel „60-Sekunden-Porträt“ stellt er oder sie sich danach in vier Sätzen vor (eine Stärke mit Beleg, ein Wert, ein fairer Satz, ein Ziel), als wäre er oder sie neu in einem Praktikum; die Fachkraft hört interessiert zu und sagt, was bei ihr hängen geblieben ist. In der zweiten Runde stellt sich die Fachkraft so vor, und der oder die Jugendliche gibt die Rückmeldung.",
     "sagen": [
       "Schau auf alles, was wir gemacht haben. Was bleibt von deinem Fenster – und was nimmst du mit?",
-      "Mal ehrlich aus, nicht freundlich. Ein kleiner Ring ist kein schlechtes Ergebnis, sondern ein Startpunkt.",
+      "Such dir pro Feld das Blatt aus, das dir am meisten bedeutet, und sag mir, warum.",
       "Stell dich in vier Sätzen vor, als wärst du neu in einem Praktikum. Ich höre zu und sage dir, was bei mir hängen geblieben ist."
     ],
-    "wennEsKippt": "Fällt die Vorstellung oder das Einschätzen schwer, genügen zwei Sätze bzw. zwei oder drei Stücke, oder das Porträt wird zuerst über eine erfundene Person (Tiago) geübt. Mag der oder die Jugendliche keine Person nennen, die hilft, bleibt das Feld leer – die Nummern auf dem Blatt gelten trotzdem. Nennt der oder die Jugendliche etwas Belastendes oder gibt es Hinweise auf eine Gefährdung, geht es nicht mehr ums Blatt: zuhören, nicht allein lassen und nach dem internen Ablauf handeln; die Nummern auf dem Blatt bleiben bei ihm oder ihr.",
+    "wennEsKippt": "Fällt die Vorstellung schwer, genügen zwei Sätze, oder das Porträt wird zuerst über eine erfundene Person (Tiago) geübt. Nennt der oder die Jugendliche etwas Belastendes oder gibt es Hinweise auf eine Gefährdung, geht es nicht mehr ums Blatt: zuhören, nicht allein lassen und nach dem internen Ablauf handeln; die Nummern auf dem Blatt bleiben bei ihm oder ihr.",
     "rolle": [
       "kern"
     ],
@@ -4776,14 +4812,14 @@
               "art": "bild",
               "bild": "motiv:spiegel",
               "groesse": "m",
-              "text": "Dein Selbstbild-Fenster",
+              "text": "Ein ehrlicher Blick auf dich",
               "ausrichtung": "mitte"
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Dein Profil: Mal in jedem Stück so viele Ringe aus, wie es dir heute gelingt.",
+          "text": "Dein Profil: Mal in jedem Abschnitt so viele Ringe aus, wie es dir heute gelingt.",
           "hinweis": "Innen heißt wenig, außen viel. Ehrlich, nicht freundlich: Ein kleiner Ring ist ein Startpunkt."
         },
         {
@@ -4810,7 +4846,7 @@
             "eine Freundin oder ein Freund",
             "eine Person im Training oder Verein",
             "eine Lehrkraft oder die Schulpsychologie",
-            "eine Person aus der Familie",
+            "eine andere erwachsene Vertrauensperson",
             "eine Beratungsstelle"
           ],
           "spalten": 2
@@ -4839,7 +4875,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Trag deine Karte bei dir – in der Handyhülle oder im Federmäppchen – und hak ab, wenn sie dir geholfen hat."
+          "text": "Bis zum nächsten Mal: Schneid deine Karte aus und trag sie bei dir – in der Handyhülle oder im Federmäppchen – und hak ab, wenn sie dir geholfen hat."
         },
         {
           "art": "zielkarte",
@@ -4880,15 +4916,15 @@
               "art": "bild",
               "bild": "motiv:spiegel",
               "groesse": "m",
-              "text": "Ta fenêtre sur moi",
+              "text": "Un regard honnête sur toi",
               "ausrichtung": "mitte"
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Ton profil : dans chaque part, colorie plus d’anneaux quand ça te réussit mieux aujourd’hui.",
-          "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Honnêtement, pas gentiment : un petit anneau est un point de départ."
+          "text": "Ton profil : dans chaque part, colorie autant d’anneaux que ça te réussit aujourd’hui.",
+          "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Sois honnête, pas indulgent·e : un petit anneau est un point de départ."
         },
         {
           "art": "netz",
@@ -4898,7 +4934,7 @@
             "Accepter les retours",
             "Connaître mes valeurs",
             "Me parler avec justesse",
-            "Planifier de petits buts",
+            "Me fixer de petits buts",
             "Demander de l’aide"
           ]
         },
@@ -4913,8 +4949,8 @@
           "items": [
             "une amie ou un ami",
             "une personne à l’entraînement ou au club",
-            "un·e enseignant·e ou la psychologue scolaire",
-            "une personne de la famille",
+            "un·e enseignant·e ou le service de psychologie scolaire",
+            "une autre personne adulte de confiance",
             "un service de conseil"
           ],
           "spalten": 2
@@ -4925,7 +4961,7 @@
         {
           "art": "aufgabe",
           "text": "Ta fenêtre, complète : qu’est-ce qui a changé chez toi ? Coche.",
-          "hinweis": "Regarde tes fiches. Honnêtement, pas gentiment."
+          "hinweis": "Regarde tes fiches. Sois honnête, pas indulgent·e."
         },
         {
           "art": "einschaetzung",
@@ -4943,7 +4979,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : garde ta carte sur toi – dans la coque de ton téléphone ou ta trousse – et coche quand elle t’a aidé·e."
+          "text": "D’ici la prochaine fois : découpe ta carte et garde-la sur toi – dans la coque de ton téléphone ou ta trousse – et coche quand elle t’a aidé·e."
         },
         {
           "art": "zielkarte",
@@ -4960,15 +4996,15 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt das Profil ein und sagt zu zwei Stücken, woran er oder sie es merkt; die Fachkraft fragt nach einem Beispiel aus den Stunden. In Aufgabe 2 kreuzt er oder sie an, wer ihn oder sie unterstützt; die Nummern liest die Fachkraft kurz vor. In Aufgabe 3 kreuzt er oder sie an, was sich verändert hat, mit den Blättern der Mappe vor sich. Karte und Auftrag sind freiwillig und kommen zum Schluss; das 60-Sekunden-Porträt aus dem Kern kann Aufgabe 3 ersetzen. Die Mappe mit allen Blättern geht in die Verabschiedung.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt das Profil ein – ehrlich, nicht freundlich – und sagt zu zwei Abschnitten, woran er oder sie es merkt; die Fachkraft fragt nach einem Beispiel aus den Stunden. In Aufgabe 2 kreuzt er oder sie an, wer ihn oder sie unterstützt; die Nummern liest die Fachkraft kurz vor. In Aufgabe 3 kreuzt er oder sie an, was sich verändert hat, mit den Blättern der Mappe vor sich. Karte und Auftrag sind freiwillig und kommen zum Schluss; das 60-Sekunden-Porträt aus dem Kern hat Aufgabe 3 schon mündlich vorbereitet. Am Ende bekommt er oder sie die Mappe mit allen Blättern zum Behalten.",
           "sagen": [
-            "Woran würdest du merken, dass ein Stück größer geworden ist?",
+            "Woran würdest du merken, dass ein Abschnitt größer geworden ist?",
             "Wer oder was hilft dir, wenn es schwierig wird?"
           ],
           "wennEsKippt": "Fällt das Einschätzen schwer, genügen zwei oder drei Stücke, und die Fachkraft nennt ein Beispiel aus den Stunden. Mag der oder die Jugendliche kein Kreuz bei den Menschen setzen, bleibt es leer – die Nummern gelten trotzdem. Ist die Zeit knapp, genügen die Aufgaben 1 und 3; die Karte geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune colorie le profil et dit à deux parties à quoi il ou elle le remarque ; l’adulte demande un exemple tiré des séances. À l’exercice 2, il ou elle coche qui le ou la soutient ; l’adulte lit brièvement les numéros. À l’exercice 3, il ou elle coche ce qui a changé, avec les fiches du dossier sous les yeux. La carte et la mission sont facultatives et viennent à la fin ; le portrait en 60 secondes peut remplacer l’exercice 3. Le dossier avec toutes les fiches fait partie des adieux.",
+          "text": "Exercice 1 ensemble : le ou la jeune colorie le profil – honnêtement, sans indulgence – et dit à deux parts à quoi il ou elle le remarque ; l’adulte demande un exemple tiré des séances. À l’exercice 2, il ou elle coche qui le ou la soutient ; l’adulte lit brièvement les numéros. À l’exercice 3, il ou elle coche ce qui a changé, avec les fiches du dossier sous les yeux. La carte et la mission sont facultatives et viennent à la fin ; le portrait en 60 secondes a déjà préparé l’exercice 3 à l’oral. À la fin, le ou la jeune reçoit le dossier avec toutes les fiches pour le garder.",
           "sagen": [
             "À quoi remarquerais-tu qu’une part a grandi ?",
             "Qui ou quoi t’aide quand c’est difficile ?"
@@ -4979,13 +5015,13 @@
     },
     "fr": {
       "titel": "Mon profil",
-      "text": "La fenêtre est complète : mon regard sur moi, le regard des autres, ce qui compte pour moi, où je veux aller. Aujourd’hui, le ou la jeune regarde en arrière sur toutes les séances : d’abord, il ou elle colorie le profil – honnêtement, pas gentiment –, puis note dans la fenêtre ce qui reste et dit qui peut aider. Dans le jeu de rôle « portrait en 60 secondes », il ou elle se présente en quatre phrases (une force avec preuve, une valeur, une phrase juste, un but), comme dans un nouveau stage ; l’adulte écoute avec intérêt et dit ce qui lui est resté. Au second tour, l’adulte se présente de la même façon et le ou la jeune donne son retour. Pour finir, il ou elle décide de ce qui va sur la carte qu’il ou elle emporte.",
+      "text": "La fenêtre est complète : mon regard sur moi, le regard des autres, ce qui compte pour moi, où je veux aller. Aujourd’hui, on fait le point : l’adulte étale les fiches du dossier de la fenêtre, et le ou la jeune montre pour chaque champ ce qui lui est resté – une force avec preuve, un retour, une valeur, une phrase juste, le but (environ 4 minutes). Dans le jeu de rôle « portrait en 60 secondes », il ou elle se présente ensuite en quatre phrases (une force avec preuve, une valeur, une phrase juste, un but), comme dans un nouveau stage ; l’adulte écoute avec intérêt et dit ce qui lui est resté. Au second tour, l’adulte se présente de la même façon et le ou la jeune donne son retour.",
       "sagen": [
-        "Regarde tout ce qu’on a fait. Qu’est-ce qui reste de ta fenêtre – et qu’est-ce que tu emportes ?",
-        "Colorie honnêtement, pas gentiment. Un petit anneau n’est pas un mauvais résultat, c’est un point de départ.",
+        "Regarde tout ce qu’on a fait. Qu’est-ce qui reste de ta fenêtre – et qu’est-ce que tu emportes ?",
+        "Choisis pour chaque champ la fiche qui compte le plus pour toi et dis-moi pourquoi.",
         "Présente-toi en quatre phrases, comme si tu arrivais en stage. J’écoute, et je te dis ce qui m’est resté."
       ],
-      "wennEsKippt": "Si la présentation ou l’évaluation est difficile, deux phrases ou deux ou trois parties suffisent, ou on s’exerce d’abord avec un personnage inventé (Tiago). Si le ou la jeune ne veut nommer personne, le champ reste vide – les numéros sur la fiche valent quand même. Si le ou la jeune évoque quelque chose de lourd ou s’il y a des signes de danger, il ne s’agit plus de la fiche : écouter, ne pas laisser seul·e et agir selon la procédure interne ; les numéros sur la fiche restent à la personne."
+      "wennEsKippt": "Si la présentation est difficile, deux phrases suffisent, ou on s’exerce d’abord avec un personnage inventé (Tiago). Si le ou la jeune évoque quelque chose de lourd ou s’il y a des signes de danger, il ne s’agit plus de la fiche : écouter, ne pas laisser seul·e et agir selon la procédure interne ; les numéros sur la fiche restent à la personne."
     },
     "zugang": {
       "lesen": 1,
@@ -5053,7 +5089,7 @@
       "titel": "Einzelkurs Wer bin ich?"
     },
     "titel": "Fenster zu, Blatt in die Mappe",
-    "text": "Das Blatt von heute kommt in die Fenster-Mappe (eine Mappe, die bei der Fachkraft bleibt). Auf dem Umschlag ist ein Fenster mit vier Feldern gezeichnet: wie ich mich sehe, wie andere mich sehen, was mir wichtig ist, wohin ich will. Der oder die Jugendliche färbt das Feld ein, das heute dazugekommen oder gewachsen ist, und schreibt – wenn er oder sie mag – ein Stichwort dazu; in der sechsten Stunde kommt das Datum in die Mitte. Dann nennen beide noch ein Wort, das sie aus der Stunde mitnehmen, oder „Pass“.",
+    "text": "Das Blatt von heute kommt in die Fenster-Mappe (eine Mappe, die bei der Fachkraft bleibt – in der sechsten Stunde bekommt der oder die Jugendliche sie zum Behalten). Auf dem Umschlag ist ein Fenster mit vier Feldern gezeichnet: wie ich mich sehe, wie andere mich sehen, was mir wichtig ist, wohin ich will. Der oder die Jugendliche färbt das Feld ein, das heute dazugekommen oder gewachsen ist, und schreibt – wenn er oder sie mag – ein Stichwort dazu; in der sechsten Stunde kommt das Datum in die Mitte. Dann nennen beide noch ein Wort, das sie aus der Stunde mitnehmen, oder „Pass“.",
     "sagen": [
       "Das Blatt kommt in die Fenster-Mappe. Färb bitte das Feld ein, das heute dazugekommen ist.",
       "Fenster zu: ein Wort, das du mitnimmst – oder „Pass“."
@@ -5094,7 +5130,7 @@
     "qualitaet": "geprueft",
     "fr": {
       "titel": "Fenêtre fermée, fiche dans le dossier",
-      "text": "La fiche d’aujourd’hui va dans le dossier de la fenêtre (une chemise qui reste chez l’adulte). Sur la couverture, une fenêtre à quatre champs est dessinée : mon regard sur moi, le regard des autres, ce qui compte pour moi, où je veux aller. Le ou la jeune colorie le champ qui s’est ajouté ou qui a grandi aujourd’hui et, s’il ou elle le souhaite, y note un mot-clé ; à la sixième séance, on écrit la date au centre. Pour finir, les deux disent encore un mot qu’ils emportent de la séance, ou « je passe ».",
+      "text": "La fiche d’aujourd’hui va dans le dossier de la fenêtre (une chemise qui reste chez l’adulte – à la sixième séance, le ou la jeune la reçoit pour la garder). Sur la couverture, une fenêtre à quatre champs est dessinée : mon regard sur moi, le regard des autres, ce qui compte pour moi, où je veux aller. Le ou la jeune colorie le champ qui s’est ajouté ou qui a grandi aujourd’hui et, s’il ou elle le souhaite, y note un mot-clé ; à la sixième séance, on écrit la date au centre. Pour finir, les deux disent encore un mot qu’ils emportent de la séance, ou « je passe ».",
       "sagen": [
         "La fiche va dans le dossier de la fenêtre. Colorie le champ qui s’est ajouté aujourd’hui.",
         "Fenêtre fermée : un mot que tu emportes – ou « je passe »."

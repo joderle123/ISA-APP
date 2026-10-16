@@ -52,6 +52,8 @@ export function Alternativen({ ort }: { ort: Ort }) {
             {istBlatt ? <Pill>{tx.text}</Pill> : schritt && <RolleBadge rolle={schritt.rolle} />}
             <span className="pg-quelle">{istBlatt ? `aus „${tx.quelle}“` : tx.quelle}</span>
             {nurDe && <Pill art="warn">nur DE</Pill>}
+            {a?.kurs === 'gleich' && <Pill>gleiche Kurs-Sitzung, andere Variante</Pill>}
+            {a?.kurs === 'verlaesst' && <Pill art="warn">verlässt den Kurs – die nächste Sitzung knüpft an die ersetzte an</Pill>}
           </div>
           {istBlatt ? (
             <Miniatur bausteine={inhaltVon(k, p, plan, ort.sitzung, e, p.sprache.blatt)} layout={p.layout} bereich={bereich} breite={Math.min(420, window.innerWidth - 120)} />

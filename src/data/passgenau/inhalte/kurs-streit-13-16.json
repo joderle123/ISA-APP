@@ -58,14 +58,14 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Wie Konflikte eskalieren",
-  "text": "Die Fachkraft zeigt den Eisberg auf dem Blatt: Oben liegt, was man hört und sieht (Positionen), unten, worum es wirklich geht (Interessen und Bedürfnisse); in jeder Stunde kommt ein Werkzeug dazu. Heute bleibt der Blick oben: Wie wird aus einem Streit um eine Sache ein Konflikt, der Menschen verletzt? Die Fachkraft liest den erfundenen Fall von Jana und Ben, die gemeinsam ein Referat halten müssen, in fünf Stufen; der oder die Jugendliche ordnet ihnen die Szenen zu und sagt, wo ein Streit kippt. Zur Bewegung legt die Fachkraft fünf Karten als Stufen auf den Boden: Beim erneuten Vorlesen steigen beide Stufe um Stufe hoch, und auf jeder Stufe nennt der oder die Jugendliche einen Schritt zur Seite (eine Pause, eine Frage, eine dritte Person holen). Eigene Konflikte nur, wenn der oder die Jugendliche sie von sich aus nennt.",
+  "text": "Die Fachkraft zeigt den Eisberg auf dem Blatt: Oben liegt, was man hört und sieht (Positionen), unten, worum es wirklich geht (Interessen und Bedürfnisse); in jeder Stunde kommt ein Werkzeug dazu. Heute bleibt der Blick oben: Wie wird aus einem Streit um eine Sache ein Konflikt, der Menschen verletzt? Dazu legt die Fachkraft fünf Karten als Stufen auf den Boden und liest die fünf Szenen von Jana und Ben (Blatt, Aufgabe 1) nacheinander vor. Bei jeder Szene steigt der oder die Jugendliche eine Stufe höher, sagt, woran er oder sie hört, dass es heißer wird, und nennt einen Schritt zur Seite (eine Pause, eine Frage, eine dritte Person holen). Ab Stufe vier, bei Drohungen und Bloßstellen, wird nicht mehr zu zweit geklärt: Da holt man Hilfe. Eigene Konflikte nur, wenn der oder die Jugendliche sie von sich aus nennt.",
   "sagen": [
    "Kaum ein Streit beginnt bei Stufe fünf. Er klettert – und auf jeder Stufe gibt es einen Ausstieg.",
    "Hör die Szene und sag mir: Auf welcher Stufe sind wir – und woran hörst du das?",
    "Stufe zwei erkennst du oft an zwei Wörtern: „immer“ und „nie“.",
-   "Aussteigen heißt nicht verlieren. Du behältst in der Hand, was du tust."
+   "Aussteigen heißt nicht verlieren. Und bei Drohungen oder Bloßstellen klärt man nichts mehr zu zweit: Da holt man Hilfe."
   ],
-  "wennEsKippt": "Fällt das Zuordnen schwer, liest die Fachkraft die Stufen nacheinander und fragt nur: „Lauter oder leiser als vorher?“ Mag der oder die Jugendliche nicht aufstehen, bleiben die Karten auf dem Tisch und werden mit dem Finger abgegangen. Zwei Stufen mit je einem Ausstieg genügen.",
+  "wennEsKippt": "Fällt das Zuordnen schwer, liest die Fachkraft die Szenen nacheinander und fragt nur: „Lauter oder leiser als vorher?“ Mag der oder die Jugendliche nicht aufstehen, bleiben die Karten auf dem Tisch und werden mit dem Finger abgegangen; zwei Stufen mit je einem Ausstieg genügen. Erzählt er oder sie von einem eigenen Streit mit Drohungen oder Ausgrenzung, hört die Fachkraft zu, fragt nicht nach Einzelheiten und klärt, wer an der Schule helfen kann.",
   "rolle": [
    "kern"
   ],
@@ -152,14 +152,14 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
         "Heute neu: Werkzeug 1, Stufen-Check"
        ]
       },
       {
        "art": "text",
-       "text": "Ein Konflikt hat eine Oberfläche und einen verborgenen Teil darunter. Mit sechs Werkzeugen lernst du, beides zu lesen. Das erste zeigt dir, wie weit ein Streit schon gekommen ist."
+       "text": "Ein Konflikt hat eine Oberfläche und einen verborgenen Teil. Sechs Werkzeuge helfen dir, beides zu lesen."
       }
      ],
      "rechts": [
@@ -268,7 +268,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bis zum nächsten Mal: Beobachte einen Streit – in der Klasse, beim Sport oder online – und bestimme die Stufe."
+     "text": "Bis zum nächsten Mal: Beobachte einen Streit – in der Klasse, beim Sport, online oder in einer Serie – und bestimme die Stufe."
     },
     {
      "art": "tabelle",
@@ -300,14 +300,14 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
         "Nouveau aujourd’hui : outil 1, les degrés"
        ]
       },
       {
        "art": "text",
-       "text": "Un conflit a une surface et une partie cachée en dessous. Avec six outils, tu apprends à lire les deux. Le premier montre jusqu’où une dispute est déjà montée."
+       "text": "Un conflit a une surface et une partie cachée. Six outils t’aident à lire les deux."
       }
      ],
      "rechts": [
@@ -416,14 +416,14 @@
     },
     {
      "art": "aufgabe",
-     "text": "D’ici la prochaine fois : observe une dispute – en classe, au sport ou en ligne – et détermine le degré."
+     "text": "D’ici la prochaine fois : observe une dispute – en classe, au sport, en ligne ou dans une série – et détermine le degré."
     },
     {
      "art": "tabelle",
      "spalten": [
       "Où ?",
       "Degré",
-      "Quelqu’un est-il sorti de la montée ? Comment ?"
+      "Quelqu’un a-t-il désamorcé la situation ? Comment ?"
      ],
      "breiten": [
       1.4,
@@ -440,7 +440,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die Stufen von unten nach oben vor, der oder die Jugendliche setzt ein Kreuz an die Stufe, auf der er oder sie spätestens aussteigen würde, und sagt, woran er oder sie es merkt; danach gehen beide die Stufen noch einmal als Karten am Boden. In Aufgabe 2 schreibt er oder sie zu zwei Stufen einen Ausstieg, in Stichworten oder als Satz. Aufgabe 3 und der Werkzeugkasten sind allein und freiwillig; eigene Erlebnisse gibt es nur, wenn er oder sie mag. Das Blatt kommt in die Mappe, der Auftrag geht mit.",
+     "text": "Aufgabe 1 gemeinsam, nach dem Gang über die Karten: Der oder die Jugendliche setzt ein Kreuz an die Stufe, auf der er oder sie spätestens aussteigen würde, und sagt, woran er oder sie es merkt. In Aufgabe 2 schreibt er oder sie zu zwei Stufen einen Ausstieg, in Stichworten oder als Satz. Aufgabe 3 und der Werkzeugkasten sind allein und freiwillig (Aufgabe 3 nur, wenn Zeit bleibt); eigene Erlebnisse gibt es nur, wenn er oder sie mag. Das Blatt kommt in die Mappe, der Auftrag geht mit.",
      "sagen": [
       "Woran hörst du, dass es eine Stufe höher geht?",
       "Was würde Jana oder Ben auf dieser Stufe das Aussteigen leichter machen?"
@@ -448,7 +448,7 @@
      "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche den Ausstieg, und die Fachkraft schreibt ein Stichwort. Eine Zeile in Aufgabe 2 genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 2; der Rest geht mit."
     },
     "fr": {
-     "text": "Exercice 1 ensemble : l’adulte lit les degrés de bas en haut, le ou la jeune met une croix au degré où il ou elle sortirait au plus tard et dit à quoi il ou elle le remarque ; ensuite, les deux reparcourent les degrés avec les cartes posées par terre. À l’exercice 2, il ou elle écrit une sortie pour deux degrés, en mots-clés ou en phrase. L’exercice 3 et la boîte à outils se font seul et librement ; une expérience personnelle n’est donnée que si le ou la jeune le souhaite. La fiche va dans le dossier, la mission est emportée.",
+     "text": "Exercice 1 ensemble, après le parcours avec les cartes : le ou la jeune met une croix au degré où il ou elle sortirait au plus tard et dit à quoi il ou elle le remarque. À l’exercice 2, il ou elle écrit une sortie pour deux degrés, en mots-clés ou en phrase. L’exercice 3 et la boîte à outils se font seul et librement (l’exercice 3 seulement s’il reste du temps) ; une expérience personnelle n’est donnée que si le ou la jeune le souhaite. La fiche va dans le dossier, la mission part avec lui ou elle.",
      "sagen": [
       "À quoi tu entends que ça monte d’un degré ?",
       "Qu’est-ce qui aiderait Jana ou Ben à sortir de la montée, à ce degré ?"
@@ -459,14 +459,14 @@
   },
   "fr": {
    "titel": "Comment un conflit s’envenime",
-   "text": "L’adulte présente l’iceberg sur la fiche : en haut, ce qu’on entend et ce qu’on voit (les positions), en bas, ce qui compte vraiment (les intérêts et les besoins) ; à chaque séance, un outil s’ajoute. Aujourd’hui, le regard reste en haut : comment une dispute à propos d’une chose devient-elle un conflit qui blesse ? L’adulte lit le cas inventé de Jana et Ben, qui doivent présenter un exposé ensemble, en cinq degrés ; le ou la jeune leur associe les scènes et dit à quel moment une dispute bascule. Pour bouger, l’adulte pose cinq cartes par terre comme des marches : à la relecture, les deux montent degré après degré, et à chaque degré le ou la jeune propose un pas de côté (une pause, une question, appeler une tierce personne). Des conflits personnels seulement si le ou la jeune les évoque de sa propre initiative.",
+   "text": "L’adulte présente l’iceberg sur la fiche : en haut, ce qu’on entend et ce qu’on voit (les positions), en bas, ce qui compte vraiment (les intérêts et les besoins) ; à chaque séance, un outil s’ajoute. Aujourd’hui, le regard reste en haut : comment une dispute à propos d’une chose devient-elle un conflit qui blesse ? L’adulte pose cinq cartes par terre comme des marches et lit l’une après l’autre les cinq scènes de Jana et Ben (fiche, exercice 1). À chaque scène, le ou la jeune monte d’une marche, dit à quoi il ou elle entend que ça chauffe et propose un pas de côté (une pause, une question, aller chercher quelqu’un d’autre). À partir du degré quatre, face à des menaces ou à des humiliations, on ne règle plus rien à deux : on va chercher de l’aide. Des conflits personnels seulement si le ou la jeune les évoque de sa propre initiative.",
    "sagen": [
     "Presque aucune dispute ne commence au degré cinq. Elle monte – et à chaque degré, il existe une sortie.",
     "Écoute la scène et dis-moi : on en est à quel degré – et à quoi tu l’entends ?",
     "Le degré deux se reconnaît souvent à deux mots : « toujours » et « jamais ».",
-    "Sortir de la montée, ce n’est pas perdre. Tu gardes en main ce que tu fais."
+    "Sortir de l’escalade, ce n’est pas perdre. Et face à des menaces ou à des humiliations, on ne règle plus rien à deux : on va chercher de l’aide."
    ],
-   "wennEsKippt": "Si l’association est difficile, l’adulte lit les degrés l’un après l’autre et demande seulement : « Plus fort ou plus calme qu’avant ? » Si le ou la jeune ne veut pas se lever, les cartes restent sur la table et on les parcourt du doigt. Deux degrés avec une sortie chacun suffisent.",
+   "wennEsKippt": "Si le repérage est difficile, l’adulte lit les scènes l’une après l’autre et demande seulement : « Plus fort ou plus calme qu’avant ? » Si le ou la jeune ne veut pas se lever, les cartes restent sur la table et on les parcourt du doigt ; deux degrés avec une sortie chacun suffisent. S’il ou elle parle d’une dispute personnelle avec des menaces ou de l’exclusion, l’adulte écoute, ne demande pas de détails et cherche avec lui ou elle qui peut aider à l’école.",
    "vorbereitung": "Préparer cinq cartes ou papiers numérotés de 1 à 5 (ils seront posés par terre comme des degrés)."
   },
   "zugang": {
@@ -483,14 +483,14 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Wie Konflikte eskalieren",
-  "text": "Die Fachkraft zeigt den Eisberg auf dem Blatt: Oben liegt, was man hört und sieht (Positionen), unten, worum es wirklich geht (Interessen und Bedürfnisse); in jeder Stunde kommt ein Werkzeug dazu. Heute bleibt der Blick oben: Wie wird aus einem Streit um eine Sache ein Konflikt, der Menschen verletzt? Die Fachkraft liest den erfundenen Fall von Jana und Ben, die gemeinsam ein Referat halten müssen, in fünf Stufen; der oder die Jugendliche ordnet ihnen die Szenen zu und sagt, wo ein Streit kippt. Zur Bewegung legt die Fachkraft fünf Karten als Stufen auf den Boden: Beim erneuten Vorlesen steigen beide Stufe um Stufe hoch, und auf jeder Stufe nennt der oder die Jugendliche einen Schritt zur Seite (eine Pause, eine Frage, eine dritte Person holen). Eigene Konflikte nur, wenn der oder die Jugendliche sie von sich aus nennt.",
+  "text": "Die Fachkraft zeigt den Eisberg auf dem Blatt: Oben liegt, was man hört und sieht (Positionen), unten, worum es wirklich geht (Interessen und Bedürfnisse); in jeder Stunde kommt ein Werkzeug dazu. Heute bleibt der Blick oben: Wie wird aus einem Streit um eine Sache ein Konflikt, der Menschen verletzt? Dazu legt die Fachkraft fünf Karten als Stufen auf den Boden und liest die fünf Szenen von Jana und Ben (Blatt, Aufgabe 1) nacheinander vor. Bei jeder Szene steigt der oder die Jugendliche eine Stufe höher, sagt, woran er oder sie hört, dass es heißer wird, und nennt einen Schritt zur Seite (eine Pause, eine Frage, eine dritte Person holen). Ab Stufe vier, bei Drohungen und Bloßstellen, wird nicht mehr zu zweit geklärt: Da holt man Hilfe. Eigene Konflikte nur, wenn der oder die Jugendliche sie von sich aus nennt.",
   "sagen": [
    "Kaum ein Streit beginnt bei Stufe fünf. Er klettert – und auf jeder Stufe gibt es einen Ausstieg.",
    "Hör die Szene und sag mir: Auf welcher Stufe sind wir – und woran hörst du das?",
    "Stufe zwei erkennst du oft an zwei Wörtern: „immer“ und „nie“.",
-   "Aussteigen heißt nicht verlieren. Du behältst in der Hand, was du tust."
+   "Aussteigen heißt nicht verlieren. Und bei Drohungen oder Bloßstellen klärt man nichts mehr zu zweit: Da holt man Hilfe."
   ],
-  "wennEsKippt": "Fällt das Zuordnen schwer, liest die Fachkraft die Stufen nacheinander und fragt nur: „Lauter oder leiser als vorher?“ Mag der oder die Jugendliche nicht aufstehen, bleiben die Karten auf dem Tisch und werden mit dem Finger abgegangen. Zwei Stufen mit je einem Ausstieg genügen.",
+  "wennEsKippt": "Fällt das Zuordnen schwer, liest die Fachkraft die Szenen nacheinander und fragt nur: „Lauter oder leiser als vorher?“ Mag der oder die Jugendliche nicht aufstehen, bleiben die Karten auf dem Tisch und werden mit dem Finger abgegangen; zwei Stufen mit je einem Ausstieg genügen. Erzählt er oder sie von einem eigenen Streit mit Drohungen oder Ausgrenzung, hört die Fachkraft zu, fragt nicht nach Einzelheiten und klärt, wer an der Schule helfen kann.",
   "rolle": [
    "kern"
   ],
@@ -577,14 +577,14 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
         "Heute neu: Werkzeug 1, Stufen-Check"
        ]
       },
       {
        "art": "text",
-       "text": "Ein Konflikt hat eine Oberfläche und einen verborgenen Teil darunter. Mit sechs Werkzeugen lernst du, beides zu lesen. Das erste zeigt dir, wie weit ein Streit schon gekommen ist."
+       "text": "Ein Konflikt hat eine Oberfläche und einen verborgenen Teil. Sechs Werkzeuge helfen dir, beides zu lesen."
       }
      ],
      "rechts": [
@@ -700,7 +700,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bis zum nächsten Mal: Beobachte einen Streit – in der Klasse, beim Sport oder online – und bestimme die Stufe."
+     "text": "Bis zum nächsten Mal: Beobachte einen Streit – in der Klasse, beim Sport, online oder in einer Serie – und bestimme die Stufe."
     },
     {
      "art": "zielkarte",
@@ -723,14 +723,14 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
         "Nouveau aujourd’hui : outil 1, les degrés"
        ]
       },
       {
        "art": "text",
-       "text": "Un conflit a une surface et une partie cachée en dessous. Avec six outils, tu apprends à lire les deux. Le premier montre jusqu’où une dispute est déjà montée."
+       "text": "Un conflit a une surface et une partie cachée. Six outils t’aident à lire les deux."
       }
      ],
      "rechts": [
@@ -846,7 +846,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "D’ici la prochaine fois : observe une dispute – en classe, au sport ou en ligne – et détermine le degré."
+     "text": "D’ici la prochaine fois : observe une dispute – en classe, au sport, en ligne ou dans une série – et détermine le degré."
     },
     {
      "art": "zielkarte",
@@ -861,7 +861,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die Stufen von unten nach oben vor, der oder die Jugendliche setzt ein Kreuz an die Stufe, auf der er oder sie spätestens aussteigen würde, und sagt, woran er oder sie es merkt; danach gehen beide die Stufen noch einmal als Karten am Boden. In Aufgabe 2 kreuzt er oder sie die zwei Ausstiege an, die er oder sie am ehesten probieren würde, und sagt, wann. Aufgabe 3 und der Werkzeugkasten sind zum Ankreuzen und freiwillig; eigene Erlebnisse gibt es nur, wenn er oder sie mag. Das Blatt kommt in die Mappe, der Auftrag geht mit.",
+     "text": "Aufgabe 1 gemeinsam, nach dem Gang über die Karten: Der oder die Jugendliche setzt ein Kreuz an die Stufe, auf der er oder sie spätestens aussteigen würde, und sagt, woran er oder sie es merkt. In Aufgabe 2 kreuzt er oder sie die zwei Ausstiege an, die er oder sie am ehesten probieren würde, und sagt, wann. Aufgabe 3 und der Werkzeugkasten sind zum Ankreuzen und freiwillig (Aufgabe 3 nur, wenn Zeit bleibt); eigene Erlebnisse gibt es nur, wenn er oder sie mag. Das Blatt kommt in die Mappe, der Auftrag geht mit.",
      "sagen": [
       "Woran hörst du, dass es eine Stufe höher geht?",
       "Welcher Ausstieg wäre für dich der leichteste?"
@@ -869,7 +869,7 @@
      "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Stufen und die Bildkarten vor, und der oder die Jugendliche zeigt darauf. Ist die Zeit knapp, reichen die Aufgaben 1 und 2; der Rest geht mit."
     },
     "fr": {
-     "text": "Exercice 1 ensemble : l’adulte lit les degrés de bas en haut, le ou la jeune met une croix au degré où il ou elle sortirait au plus tard et dit à quoi il ou elle le remarque ; ensuite, les deux reparcourent les degrés avec les cartes posées par terre. À l’exercice 2, il ou elle coche les deux sorties qu’il ou elle essaierait le plus volontiers et dit quand. L’exercice 3 et la boîte à outils se cochent et sont facultatifs ; une expérience personnelle n’est donnée que si le ou la jeune le souhaite. La fiche va dans le dossier, la mission est emportée.",
+     "text": "Exercice 1 ensemble, après le parcours avec les cartes : le ou la jeune met une croix au degré où il ou elle sortirait au plus tard et dit à quoi il ou elle le remarque. À l’exercice 2, il ou elle coche les deux sorties qu’il ou elle essaierait le plus volontiers et dit quand. L’exercice 3 et la boîte à outils se cochent et sont facultatifs (l’exercice 3 seulement s’il reste du temps) ; une expérience personnelle n’est donnée que si le ou la jeune le souhaite. La fiche va dans le dossier, la mission part avec lui ou elle.",
      "sagen": [
       "À quoi tu entends que ça monte d’un degré ?",
       "Quelle sortie serait la plus facile pour toi ?"
@@ -880,14 +880,14 @@
   },
   "fr": {
    "titel": "Comment un conflit s’envenime",
-   "text": "L’adulte présente l’iceberg sur la fiche : en haut, ce qu’on entend et ce qu’on voit (les positions), en bas, ce qui compte vraiment (les intérêts et les besoins) ; à chaque séance, un outil s’ajoute. Aujourd’hui, le regard reste en haut : comment une dispute à propos d’une chose devient-elle un conflit qui blesse ? L’adulte lit le cas inventé de Jana et Ben, qui doivent présenter un exposé ensemble, en cinq degrés ; le ou la jeune leur associe les scènes et dit à quel moment une dispute bascule. Pour bouger, l’adulte pose cinq cartes par terre comme des marches : à la relecture, les deux montent degré après degré, et à chaque degré le ou la jeune propose un pas de côté (une pause, une question, appeler une tierce personne). Des conflits personnels seulement si le ou la jeune les évoque de sa propre initiative.",
+   "text": "L’adulte présente l’iceberg sur la fiche : en haut, ce qu’on entend et ce qu’on voit (les positions), en bas, ce qui compte vraiment (les intérêts et les besoins) ; à chaque séance, un outil s’ajoute. Aujourd’hui, le regard reste en haut : comment une dispute à propos d’une chose devient-elle un conflit qui blesse ? L’adulte pose cinq cartes par terre comme des marches et lit l’une après l’autre les cinq scènes de Jana et Ben (fiche, exercice 1). À chaque scène, le ou la jeune monte d’une marche, dit à quoi il ou elle entend que ça chauffe et propose un pas de côté (une pause, une question, aller chercher quelqu’un d’autre). À partir du degré quatre, face à des menaces ou à des humiliations, on ne règle plus rien à deux : on va chercher de l’aide. Des conflits personnels seulement si le ou la jeune les évoque de sa propre initiative.",
    "sagen": [
     "Presque aucune dispute ne commence au degré cinq. Elle monte – et à chaque degré, il existe une sortie.",
     "Écoute la scène et dis-moi : on en est à quel degré – et à quoi tu l’entends ?",
     "Le degré deux se reconnaît souvent à deux mots : « toujours » et « jamais ».",
-    "Sortir de la montée, ce n’est pas perdre. Tu gardes en main ce que tu fais."
+    "Sortir de l’escalade, ce n’est pas perdre. Et face à des menaces ou à des humiliations, on ne règle plus rien à deux : on va chercher de l’aide."
    ],
-   "wennEsKippt": "Si l’association est difficile, l’adulte lit les degrés l’un après l’autre et demande seulement : « Plus fort ou plus calme qu’avant ? » Si le ou la jeune ne veut pas se lever, les cartes restent sur la table et on les parcourt du doigt. Deux degrés avec une sortie chacun suffisent.",
+   "wennEsKippt": "Si le repérage est difficile, l’adulte lit les scènes l’une après l’autre et demande seulement : « Plus fort ou plus calme qu’avant ? » Si le ou la jeune ne veut pas se lever, les cartes restent sur la table et on les parcourt du doigt ; deux degrés avec une sortie chacun suffisent. S’il ou elle parle d’une dispute personnelle avec des menaces ou de l’exclusion, l’adulte écoute, ne demande pas de détails et cherche avec lui ou elle qui peut aider à l’école.",
    "vorbereitung": "Préparer cinq cartes ou papiers numérotés de 1 à 5 (ils seront posés par terre comme des degrés)."
   },
   "zugang": {
@@ -904,14 +904,14 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Interessen hinter Positionen",
-  "text": "Der oder die Jugendliche kennt den Stufen-Check und weiß, wie ein Streit klettert; heute geht die Fachkraft mit ihm oder ihr unter die Wasserlinie des Eisbergs. Sie erklärt kurz: Eine Position ist das, was jemand sagt oder verlangt („Ich will den Platz“), ein Interesse ist der Grund dahinter – oft ein Bedürfnis wie Ruhe, Respekt, Fairness oder Zugehörigkeit. Gemeinsam tauchen beide im Fall von Jana und Ben: Was verlangt Jana oben, was braucht sie unten – und was Ben? Dann üben beide die Taucherfrage („Wozu ist dir das wichtig?“) in einem kurzen Rollenspiel: Die Fachkraft nennt eine Position aus dem Alltag, der oder die Jugendliche fragt nach, die Fachkraft antwortet mit einem erfundenen Interesse; danach tauschen sie die Rollen und prüfen: Ist das eine Vermutung, oder weiß ich es? Eigene Beispiele nur, wenn er oder sie sie von sich aus nennt.",
+  "text": "Der oder die Jugendliche kennt den Stufen-Check und weiß, wie ein Streit klettert; heute geht die Fachkraft mit ihm oder ihr unter die Wasserlinie des Eisbergs. Sie erklärt kurz: Eine Position ist das, was jemand sagt oder verlangt („Ich will den Platz“), ein Interesse ist der Grund dahinter – oft ein Bedürfnis wie Ruhe, Respekt, Fairness oder Zugehörigkeit. Gemeinsam tauchen beide im Fall von Jana und Ben: Was verlangt Jana oben, was braucht sie unten – und was Ben? Dann üben beide die Taucherfrage („Wozu ist dir das wichtig?“) in einem kurzen Rollenspiel: Die Fachkraft nennt eine Position („Mit Leo arbeite ich nicht mehr.“), der oder die Jugendliche fragt nach, und die Fachkraft antwortet mit einem erfundenen Interesse („Ich will nicht wieder alles allein machen.“); danach tauschen sie die Rollen und prüfen gemeinsam: Ist das eine Vermutung, oder weiß ich es? Eigene Beispiele nur, wenn er oder sie sie von sich aus nennt.",
   "sagen": [
    "Oben steht, was jemand verlangt. Unten steht, wozu er oder sie es braucht.",
    "Ein Interesse kannst du nur vermuten. Bestätigen kann es nur die Person selbst – darum fragen wir.",
    "„Wozu ist dir das wichtig?“ öffnet ein Gespräch. „Das ist doch Quatsch.“ macht es zu.",
    "Zwei gegensätzliche Positionen können unten ganz gut zusammenpassen."
   ],
-  "wennEsKippt": "Fällt das Vermuten schwer, legt die Fachkraft zwei oder drei Wörter aus dem Wortspeicher zur Wahl vor (Ruhe, Respekt, Fairness); mag er oder sie nicht spielen, bleibt es bei den Positionen auf dem Blatt. Kommt „weiß ich nicht“, gilt das: Dann ist die Frage an die Person selbst die richtige Antwort. Es genügt ein Eisberg mit je einer Zeile oben und unten.",
+  "wennEsKippt": "Fällt das Vermuten schwer, legt die Fachkraft zwei oder drei Wörter vom Blatt zur Wahl vor (Ruhe, Respekt, Fairness); mag er oder sie nicht spielen, bleibt es bei den Positionen auf dem Blatt. Kommt „weiß ich nicht“, gilt das: Dann ist die Frage an die Person selbst die richtige Antwort. Es genügt ein Eisberg mit je einer Zeile oben und unten.",
   "rolle": [
    "kern"
   ],
@@ -995,8 +995,9 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
+        "Schon dabei: Werkzeug 1",
         "Heute neu: Werkzeug 2, Tauchgang"
        ]
       },
@@ -1143,7 +1144,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bis zum nächsten Mal: Hör bei einem Wunsch oder Streit in deiner Umgebung genau hin und vermute das Interesse hinter der Position. Wenn es passt, stell einmal die Taucherfrage."
+     "text": "Bis zum nächsten Mal: Hör bei einem Wunsch oder Streit – in der Schule, im Sport oder in einer Serie – genau hin und vermute das Interesse hinter der Position. Wenn es passt, stell einmal die Taucherfrage."
     },
     {
      "art": "tabelle",
@@ -1172,8 +1173,9 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
+        "Déjà acquis : outil 1",
         "Nouveau aujourd’hui : outil 2, la plongée"
        ]
       },
@@ -1239,9 +1241,9 @@
      ],
      "zeilen": 0,
      "beispiel": [
-      "« Je suis près de la fenêtre. Point. »",
+      "« Je m’assois côté fenêtre. Point barre. »",
       "du calme ou de l’air frais",
-      "« Qu’est-ce qui compte pour toi, près de la fenêtre ? »"
+      "« Qu’est-ce qui compte pour toi, côté fenêtre ? »"
      ],
      "werte": [
       [
@@ -1320,7 +1322,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "D’ici la prochaine fois : écoute attentivement un souhait ou une dispute autour de toi et suppose l’intérêt derrière la position. Si ça s’y prête, pose une fois la question de plongée."
+     "text": "D’ici la prochaine fois : écoute attentivement un souhait ou une dispute – à l’école, au sport ou dans une série – et suppose l’intérêt derrière la position. Si ça s’y prête, pose une fois la question de plongée."
     },
     {
      "art": "tabelle",
@@ -1360,14 +1362,14 @@
   },
   "fr": {
    "titel": "Les intérêts derrière les positions",
-   "text": "Le ou la jeune connaît déjà les degrés de l’escalade et sait comment une dispute monte ; aujourd’hui, l’adulte plonge avec lui ou elle sous la surface de l’eau de l’iceberg. L’adulte explique brièvement : une position, c’est ce que quelqu’un dit ou exige (« Je veux cette place »), un intérêt, c’est la raison derrière – souvent un besoin comme le calme, le respect, l’équité ou l’appartenance. Ensemble, les deux plongent dans le cas de Jana et Ben : que réclame Jana en haut, de quoi a-t-elle besoin en bas – et Ben ? Ensuite, les deux s’exercent à la question de plongée (« Qu’est-ce qui compte pour toi là-dedans ? ») dans un court jeu de rôle : l’adulte énonce une position de la vie quotidienne, le ou la jeune pose la question, l’adulte répond par un intérêt inventé ; puis ils échangent les rôles et vérifient : est-ce une supposition, ou est-ce que je le sais ? Des exemples personnels seulement si le ou la jeune les donne de sa propre initiative.",
+   "text": "Le ou la jeune connaît déjà les degrés de l’escalade et sait comment une dispute monte ; aujourd’hui, l’adulte plonge avec lui ou elle sous la surface de l’eau de l’iceberg. L’adulte explique brièvement : une position, c’est ce que quelqu’un dit ou exige (« Je veux cette place »), un intérêt, c’est la raison derrière – souvent un besoin comme le calme, le respect, l’équité ou l’appartenance. Ensemble, les deux plongent dans le cas de Jana et Ben : que réclame Jana en haut, de quoi a-t-elle besoin en bas – et Ben ? Ensuite, les deux s’exercent à la question de plongée (« Qu’est-ce qui compte pour toi là-dedans ? ») dans un court jeu de rôle : l’adulte énonce une position (« Je ne travaille plus avec Leo. »), le ou la jeune pose la question, et l’adulte répond par un intérêt inventé (« Je ne veux pas tout refaire tout seul. ») ; puis ils échangent les rôles et vérifient ensemble : est-ce une supposition, ou est-ce que je le sais ? Des exemples personnels seulement si le ou la jeune les donne de sa propre initiative.",
    "sagen": [
     "En haut, il y a ce que quelqu’un exige. En bas, il y a ce dont il ou elle a besoin pour ça.",
     "Un intérêt, tu ne peux que le supposer. Seule la personne peut le confirmer – c’est pour ça qu’on demande.",
-    "« Qu’est-ce qui compte pour toi là-dedans ? » ouvre la conversation. « N’importe quoi. » la ferme.",
+    "« Qu’est-ce qui compte pour toi là-dedans ? » ouvre la conversation. « C’est n’importe quoi. » la ferme.",
     "Deux positions opposées peuvent très bien se rejoindre en bas."
    ],
-   "wennEsKippt": "Si supposer est difficile, l’adulte propose deux ou trois mots de la boîte à mots (calme, respect, équité) ; s’il ou elle ne veut pas jouer, on en reste aux positions de la fiche. Si la réponse est « je ne sais pas », c’est valable : alors la bonne réponse, c’est de poser la question à la personne elle-même. Un iceberg avec une ligne en haut et une en bas suffit."
+   "wennEsKippt": "Si supposer est difficile, l’adulte propose deux ou trois mots de la fiche (calme, respect, équité) ; s’il ou elle ne veut pas jouer, on en reste aux positions de la fiche. Si la réponse est « je ne sais pas », c’est valable : alors la bonne réponse, c’est de poser la question à la personne elle-même. Un iceberg avec une ligne en haut et une en bas suffit."
   },
   "zugang": {
    "lesen": 2,
@@ -1382,14 +1384,14 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Interessen hinter Positionen",
-  "text": "Der oder die Jugendliche kennt den Stufen-Check und weiß, wie ein Streit klettert; heute geht die Fachkraft mit ihm oder ihr unter die Wasserlinie des Eisbergs. Sie erklärt kurz: Eine Position ist das, was jemand sagt oder verlangt („Ich will den Platz“), ein Interesse ist der Grund dahinter – oft ein Bedürfnis wie Ruhe, Respekt, Fairness oder Zugehörigkeit. Gemeinsam tauchen beide im Fall von Jana und Ben: Was verlangt Jana oben, was braucht sie unten – und was Ben? Dann üben beide die Taucherfrage („Wozu ist dir das wichtig?“) in einem kurzen Rollenspiel: Die Fachkraft nennt eine Position aus dem Alltag, der oder die Jugendliche fragt nach, die Fachkraft antwortet mit einem erfundenen Interesse; danach tauschen sie die Rollen und prüfen: Ist das eine Vermutung, oder weiß ich es? Eigene Beispiele nur, wenn er oder sie sie von sich aus nennt.",
+  "text": "Der oder die Jugendliche kennt den Stufen-Check und weiß, wie ein Streit klettert; heute geht die Fachkraft mit ihm oder ihr unter die Wasserlinie des Eisbergs. Sie erklärt kurz: Eine Position ist das, was jemand sagt oder verlangt („Ich will den Platz“), ein Interesse ist der Grund dahinter – oft ein Bedürfnis wie Ruhe, Respekt, Fairness oder Zugehörigkeit. Gemeinsam tauchen beide im Fall von Jana und Ben: Was verlangt Jana oben, was braucht sie unten – und was Ben? Dann üben beide die Taucherfrage („Wozu ist dir das wichtig?“) in einem kurzen Rollenspiel: Die Fachkraft nennt eine Position („Mit Leo arbeite ich nicht mehr.“), der oder die Jugendliche fragt nach, und die Fachkraft antwortet mit einem erfundenen Interesse („Ich will nicht wieder alles allein machen.“); danach tauschen sie die Rollen und prüfen gemeinsam: Ist das eine Vermutung, oder weiß ich es? Eigene Beispiele nur, wenn er oder sie sie von sich aus nennt.",
   "sagen": [
    "Oben steht, was jemand verlangt. Unten steht, wozu er oder sie es braucht.",
    "Ein Interesse kannst du nur vermuten. Bestätigen kann es nur die Person selbst – darum fragen wir.",
    "„Wozu ist dir das wichtig?“ öffnet ein Gespräch. „Das ist doch Quatsch.“ macht es zu.",
    "Zwei gegensätzliche Positionen können unten ganz gut zusammenpassen."
   ],
-  "wennEsKippt": "Fällt das Vermuten schwer, legt die Fachkraft zwei oder drei Wörter aus dem Wortspeicher zur Wahl vor (Ruhe, Respekt, Fairness); mag er oder sie nicht spielen, bleibt es bei den Positionen auf dem Blatt. Kommt „weiß ich nicht“, gilt das: Dann ist die Frage an die Person selbst die richtige Antwort. Es genügt ein Eisberg mit je einer Zeile oben und unten.",
+  "wennEsKippt": "Fällt das Vermuten schwer, legt die Fachkraft zwei oder drei Wörter vom Blatt zur Wahl vor (Ruhe, Respekt, Fairness); mag er oder sie nicht spielen, bleibt es bei den Positionen auf dem Blatt. Kommt „weiß ich nicht“, gilt das: Dann ist die Frage an die Person selbst die richtige Antwort. Es genügt ein Eisberg mit je einer Zeile oben und unten.",
   "rolle": [
    "kern"
   ],
@@ -1473,8 +1475,9 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
+        "Schon dabei: Werkzeug 1",
         "Heute neu: Werkzeug 2, Tauchgang"
        ]
       },
@@ -1657,7 +1660,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bis zum nächsten Mal: Hör bei einem Wunsch oder Streit in deiner Umgebung genau hin und vermute das Interesse hinter der Position. Wenn es passt, stell einmal die Taucherfrage."
+     "text": "Bis zum nächsten Mal: Hör bei einem Wunsch oder Streit – in der Schule, im Sport oder in einer Serie – genau hin und vermute das Interesse hinter der Position. Wenn es passt, stell einmal die Taucherfrage."
     },
     {
      "art": "zielkarte",
@@ -1680,8 +1683,9 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
+        "Déjà acquis : outil 1",
         "Nouveau aujourd’hui : outil 2, la plongée"
        ]
       },
@@ -1794,7 +1798,7 @@
     {
      "art": "zuordnen",
      "links": [
-      "« Je suis près de la fenêtre. Point. »",
+      "« Je m’assois côté fenêtre. Point barre. »",
       "« Je ne joue pas à ce poste. »",
       "« Efface la photo. Tout de suite. »"
      ],
@@ -1864,7 +1868,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "D’ici la prochaine fois : écoute attentivement un souhait ou une dispute autour de toi et suppose l’intérêt derrière la position. Si ça s’y prête, pose une fois la question de plongée."
+     "text": "D’ici la prochaine fois : écoute attentivement un souhait ou une dispute – à l’école, au sport ou dans une série – et suppose l’intérêt derrière la position. Si ça s’y prête, pose une fois la question de plongée."
     },
     {
      "art": "zielkarte",
@@ -1898,14 +1902,14 @@
   },
   "fr": {
    "titel": "Les intérêts derrière les positions",
-   "text": "Le ou la jeune connaît déjà les degrés de l’escalade et sait comment une dispute monte ; aujourd’hui, l’adulte plonge avec lui ou elle sous la surface de l’eau de l’iceberg. L’adulte explique brièvement : une position, c’est ce que quelqu’un dit ou exige (« Je veux cette place »), un intérêt, c’est la raison derrière – souvent un besoin comme le calme, le respect, l’équité ou l’appartenance. Ensemble, les deux plongent dans le cas de Jana et Ben : que réclame Jana en haut, de quoi a-t-elle besoin en bas – et Ben ? Ensuite, les deux s’exercent à la question de plongée (« Qu’est-ce qui compte pour toi là-dedans ? ») dans un court jeu de rôle : l’adulte énonce une position de la vie quotidienne, le ou la jeune pose la question, l’adulte répond par un intérêt inventé ; puis ils échangent les rôles et vérifient : est-ce une supposition, ou est-ce que je le sais ? Des exemples personnels seulement si le ou la jeune les donne de sa propre initiative.",
+   "text": "Le ou la jeune connaît déjà les degrés de l’escalade et sait comment une dispute monte ; aujourd’hui, l’adulte plonge avec lui ou elle sous la surface de l’eau de l’iceberg. L’adulte explique brièvement : une position, c’est ce que quelqu’un dit ou exige (« Je veux cette place »), un intérêt, c’est la raison derrière – souvent un besoin comme le calme, le respect, l’équité ou l’appartenance. Ensemble, les deux plongent dans le cas de Jana et Ben : que réclame Jana en haut, de quoi a-t-elle besoin en bas – et Ben ? Ensuite, les deux s’exercent à la question de plongée (« Qu’est-ce qui compte pour toi là-dedans ? ») dans un court jeu de rôle : l’adulte énonce une position (« Je ne travaille plus avec Leo. »), le ou la jeune pose la question, et l’adulte répond par un intérêt inventé (« Je ne veux pas tout refaire tout seul. ») ; puis ils échangent les rôles et vérifient ensemble : est-ce une supposition, ou est-ce que je le sais ? Des exemples personnels seulement si le ou la jeune les donne de sa propre initiative.",
    "sagen": [
     "En haut, il y a ce que quelqu’un exige. En bas, il y a ce dont il ou elle a besoin pour ça.",
     "Un intérêt, tu ne peux que le supposer. Seule la personne peut le confirmer – c’est pour ça qu’on demande.",
-    "« Qu’est-ce qui compte pour toi là-dedans ? » ouvre la conversation. « N’importe quoi. » la ferme.",
+    "« Qu’est-ce qui compte pour toi là-dedans ? » ouvre la conversation. « C’est n’importe quoi. » la ferme.",
     "Deux positions opposées peuvent très bien se rejoindre en bas."
    ],
-   "wennEsKippt": "Si supposer est difficile, l’adulte propose deux ou trois mots de la boîte à mots (calme, respect, équité) ; s’il ou elle ne veut pas jouer, on en reste aux positions de la fiche. Si la réponse est « je ne sais pas », c’est valable : alors la bonne réponse, c’est de poser la question à la personne elle-même. Un iceberg avec une ligne en haut et une en bas suffit."
+   "wennEsKippt": "Si supposer est difficile, l’adulte propose deux ou trois mots de la fiche (calme, respect, équité) ; s’il ou elle ne veut pas jouer, on en reste aux positions de la fiche. Si la réponse est « je ne sais pas », c’est valable : alors la bonne réponse, c’est de poser la question à la personne elle-même. Un iceberg avec une ligne en haut et une en bas suffit."
   },
   "zugang": {
    "lesen": 1,
@@ -1920,10 +1924,10 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Zuhören und spiegeln",
-  "text": "Der oder die Jugendliche kann Interessen vermuten und mit der Taucherfrage nachfragen; heute lernt er oder sie, so zuzuhören, dass das Gegenüber es merkt: zuhören, spiegeln, prüfen. Die Fachkraft spielt zuerst bewusst schlechtes Zuhören vor (abwiegeln, Ratschläge geben, von sich erzählen), und der oder die Jugendliche ordnet die Antworten auf dem Blatt zu. Vor dem Spielen eine Minute zum Runterfahren: länger aus- als einatmen, Schultern fallen lassen. Dann zwei kurze Runden: In Runde eins spielt die Fachkraft eine Person mit einem erfundenen Ärger, und der oder die Jugendliche spiegelt; in Runde zwei tauschen sie die Rollen, und die Fachkraft spiegelt. Danach schätzt der oder die Jugendliche ein, was gelungen ist.",
+  "text": "Der oder die Jugendliche kann Interessen vermuten und mit der Taucherfrage nachfragen; heute lernt er oder sie, so zuzuhören, dass das Gegenüber es merkt: zuhören, spiegeln, prüfen. Die Fachkraft spielt zuerst bewusst schlechtes Zuhören vor (abwiegeln, Ratschläge geben, von sich erzählen), und der oder die Jugendliche ordnet die Antworten auf dem Blatt zu und sagt, welche er oder sie gern bekäme. Vor dem Spielen eine Minute zum Runterfahren (länger aus- als einatmen, Schultern fallen lassen) und ein Stopp-Wort ausmachen. In Runde eins spielt die Fachkraft eine Person mit einem erfundenen Ärger („Alle treffen sich am Samstag, und mich hat keiner gefragt.“), und der oder die Jugendliche spiegelt; in Runde zwei tauschen sie die Rollen, und die Fachkraft spiegelt. Danach schätzt der oder die Jugendliche ein, was gelungen ist.",
   "sagen": [
    "Spiegeln heißt nicht zustimmen. Es heißt: Ich habe verstanden, was du meinst.",
-   "Fang mit „Du meinst also …“ oder „Dir ist wichtig, dass …“ an und frag am Ende: „Stimmt das so?“",
+   "Fang mit „Du meinst also …“ oder „Klingt, als …“ an und frag am Ende: „Stimmt das so?“ Mit eigenen Worten, nicht wie ein Papagei.",
    "Ein Gefühl vermutest du als Frage: „Das hat dich geärgert?“ – nicht als Feststellung."
   ],
   "wennEsKippt": "Mag der oder die Jugendliche nicht spielen, bleibt es beim Vorlesen: Er oder sie wählt auf dem Blatt einen Spiegel-Satz, und die Fachkraft spielt die Reaktion darauf. Fallen Spiegel-Sätze schwer, sagt die Fachkraft den Anfang vor („Du meinst also …“) und wartet. Eine Runde genügt; ein Stopp-Wort beendet jedes Spiel sofort.",
@@ -2010,8 +2014,9 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
+        "Schon dabei: Werkzeug 1 und 2",
         "Heute neu: Werkzeug 3, Spiegeln"
        ]
       },
@@ -2059,7 +2064,7 @@
      "titel": "Spiegeln in drei Schritten",
      "punkte": [
       "1 Zuhören: ausreden lassen, nicht bewerten",
-      "2 Spiegeln: „Du meinst also …“ oder „Dir ist wichtig, dass …“",
+      "2 Spiegeln: „Du meinst also …“ oder „Klingt, als …“",
       "3 Prüfen: „Stimmt das so?“"
      ]
     },
@@ -2074,8 +2079,8 @@
       "Mein Spiegel-Satz"
      ],
      "breiten": [
-      2.6,
-      3
+      2.2,
+      3.4
      ],
      "zeilen": 0,
      "beispiel": [
@@ -2169,8 +2174,9 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
+        "Déjà acquis : outils 1 et 2",
         "Nouveau aujourd’hui : outil 3, reformuler"
        ]
       },
@@ -2218,7 +2224,7 @@
      "titel": "Reformuler en trois étapes",
      "punkte": [
       "1 Écouter : laisser finir, ne pas juger",
-      "2 Reformuler : « Tu veux dire que … » ou « Ce qui compte pour toi, c’est que … »",
+      "2 Reformuler : « Tu veux dire que … » ou « On dirait que … »",
       "3 Vérifier : « C’est bien ça ? »"
      ]
     },
@@ -2233,8 +2239,8 @@
       "Ma phrase de reformulation"
      ],
      "breiten": [
-      2.6,
-      3
+      2.2,
+      3.4
      ],
      "zeilen": 0,
      "beispiel": [
@@ -2320,7 +2326,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest Milas Satz und die vier Antworten (in einem Ton, der zur Antwort passt) vor, der oder die Jugendliche verbindet jede mit ihrer Wirkung und sagt, welche er oder sie am liebsten bekäme. In Aufgabe 2 schreibt er oder sie zu zwei Sätzen einen Spiegel-Satz; danach folgt das Rollenspiel in zwei Runden mit Stopp-Wort. Aufgabe 3 füllt er oder sie nach dem Spielen aus: ehrlich, nicht freundlich. Der Auftrag geht mit.",
+     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest Milas Satz und die vier Antworten (in einem Ton, der zur Antwort passt) vor, der oder die Jugendliche verbindet jede mit ihrer Wirkung und sagt, welche er oder sie am liebsten bekäme. In Aufgabe 2 schreibt er oder sie zu zwei Sätzen einen Spiegel-Satz; danach folgt das Rollenspiel in zwei Runden mit Stopp-Wort. Aufgabe 3 füllt er oder sie nach dem Spielen aus: ehrlich, aber fair zu sich selbst. Der Auftrag geht mit.",
      "sagen": [
       "Welche Antwort hättest du an Milas Stelle gern bekommen?",
       "Woran hast du gemerkt, dass der Spiegel-Satz gepasst hat?"
@@ -2328,7 +2334,7 @@
      "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche den Spiegel-Satz laut, und die Fachkraft schreibt ihn mit. Mag er oder sie nicht spielen, genügt die Auswahl auf dem Blatt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3."
     },
     "fr": {
-     "text": "Exercice 1 ensemble : l’adulte lit la phrase de Mila et les quatre réponses (sur un ton qui correspond à chaque réponse), le ou la jeune relie chacune à son effet et dit laquelle il ou elle aimerait le mieux recevoir. À l’exercice 2, il ou elle écrit une phrase de reformulation pour deux phrases ; ensuite vient le jeu de rôle en deux manches avec un mot d’arrêt. L’exercice 3 se remplit après le jeu : honnêtement, pas gentiment. La mission est emportée.",
+     "text": "Exercice 1 ensemble : l’adulte lit la phrase de Mila et les quatre réponses (sur un ton qui correspond à chaque réponse), le ou la jeune relie chacune à son effet et dit laquelle il ou elle aimerait le mieux recevoir. À l’exercice 2, il ou elle écrit une phrase de reformulation pour deux phrases ; ensuite vient le jeu de rôle en deux manches avec un mot d’arrêt. L’exercice 3 se remplit après le jeu : honnêtement, sans se juger trop durement. La mission est emportée.",
      "sagen": [
       "Quelle réponse aurais-tu aimé recevoir, à la place de Mila ?",
       "À quoi as-tu vu que la phrase de reformulation convenait ?"
@@ -2339,10 +2345,10 @@
   },
   "fr": {
    "titel": "Écouter et reformuler",
-   "text": "Le ou la jeune sait supposer des intérêts et poser la question de plongée ; aujourd’hui, il ou elle apprend à écouter de façon que l’autre le remarque : écouter, reformuler, vérifier. L’adulte joue d’abord volontairement une mauvaise écoute (minimiser, donner des conseils, parler de soi), et le ou la jeune associe les réponses sur la fiche. Avant de jouer, une minute pour se poser : expirer plus longtemps qu’inspirer, laisser tomber les épaules. Puis deux courtes manches : à la première, l’adulte joue une personne avec une contrariété inventée et le ou la jeune reformule ; à la seconde, ils échangent les rôles et l’adulte reformule. Ensuite, le ou la jeune évalue ce qui a bien marché.",
+   "text": "Le ou la jeune sait supposer des intérêts et poser la question de plongée ; aujourd’hui, il ou elle apprend à écouter de façon que l’autre le remarque : écouter, reformuler, vérifier. L’adulte joue d’abord volontairement une mauvaise écoute (minimiser, donner des conseils, parler de soi), et le ou la jeune associe les réponses sur la fiche et dit laquelle il ou elle aimerait recevoir. Avant de jouer, une minute pour se poser (expirer plus longtemps qu’inspirer, laisser tomber les épaules) et on convient d’un mot d’arrêt. À la première manche, l’adulte joue une personne avec une contrariété inventée (« Tout le monde se retrouve samedi, et personne ne m’a rien demandé. »), et le ou la jeune reformule ; à la seconde, ils échangent les rôles et l’adulte reformule. Ensuite, le ou la jeune évalue ce qui a bien marché.",
    "sagen": [
     "Reformuler, ce n’est pas donner raison. C’est dire : j’ai compris ce que tu veux dire.",
-    "Commence par « Tu veux dire que … » ou par « Ce qui compte pour toi, c’est que … », puis demande : « C’est bien ça ? »",
+    "Commence par « Tu veux dire que … » ou « On dirait que … », puis demande : « C’est bien ça ? » Avec tes mots, pas comme un perroquet.",
     "Une émotion, tu la supposes sous forme de question : « Ça t’a mis en colère ? » – pas comme une constatation."
    ],
    "wennEsKippt": "Si le ou la jeune ne veut pas jouer, on en reste à la lecture : il ou elle choisit sur la fiche une phrase de reformulation et l’adulte joue la réaction. Si les reformulations sont difficiles, l’adulte donne le début (« Tu veux dire que … ») et attend. Une manche suffit ; un mot d’arrêt met fin à tout jeu immédiatement."
@@ -2360,10 +2366,10 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Zuhören und spiegeln",
-  "text": "Der oder die Jugendliche kann Interessen vermuten und mit der Taucherfrage nachfragen; heute lernt er oder sie, so zuzuhören, dass das Gegenüber es merkt: zuhören, spiegeln, prüfen. Die Fachkraft spielt zuerst bewusst schlechtes Zuhören vor (abwiegeln, Ratschläge geben, von sich erzählen), und der oder die Jugendliche ordnet die Antworten auf dem Blatt zu. Vor dem Spielen eine Minute zum Runterfahren: länger aus- als einatmen, Schultern fallen lassen. Dann zwei kurze Runden: In Runde eins spielt die Fachkraft eine Person mit einem erfundenen Ärger, und der oder die Jugendliche spiegelt; in Runde zwei tauschen sie die Rollen, und die Fachkraft spiegelt. Danach schätzt der oder die Jugendliche ein, was gelungen ist.",
+  "text": "Der oder die Jugendliche kann Interessen vermuten und mit der Taucherfrage nachfragen; heute lernt er oder sie, so zuzuhören, dass das Gegenüber es merkt: zuhören, spiegeln, prüfen. Die Fachkraft spielt zuerst bewusst schlechtes Zuhören vor (abwiegeln, Ratschläge geben, von sich erzählen), und der oder die Jugendliche ordnet die Antworten auf dem Blatt zu und sagt, welche er oder sie gern bekäme. Vor dem Spielen eine Minute zum Runterfahren (länger aus- als einatmen, Schultern fallen lassen) und ein Stopp-Wort ausmachen. In Runde eins spielt die Fachkraft eine Person mit einem erfundenen Ärger („Alle treffen sich am Samstag, und mich hat keiner gefragt.“), und der oder die Jugendliche spiegelt; in Runde zwei tauschen sie die Rollen, und die Fachkraft spiegelt. Danach schätzt der oder die Jugendliche ein, was gelungen ist.",
   "sagen": [
    "Spiegeln heißt nicht zustimmen. Es heißt: Ich habe verstanden, was du meinst.",
-   "Fang mit „Du meinst also …“ oder „Dir ist wichtig, dass …“ an und frag am Ende: „Stimmt das so?“",
+   "Fang mit „Du meinst also …“ oder „Klingt, als …“ an und frag am Ende: „Stimmt das so?“ Mit eigenen Worten, nicht wie ein Papagei.",
    "Ein Gefühl vermutest du als Frage: „Das hat dich geärgert?“ – nicht als Feststellung."
   ],
   "wennEsKippt": "Mag der oder die Jugendliche nicht spielen, bleibt es beim Vorlesen: Er oder sie wählt auf dem Blatt einen Spiegel-Satz, und die Fachkraft spielt die Reaktion darauf. Fallen Spiegel-Sätze schwer, sagt die Fachkraft den Anfang vor („Du meinst also …“) und wartet. Eine Runde genügt; ein Stopp-Wort beendet jedes Spiel sofort.",
@@ -2450,8 +2456,9 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
+        "Schon dabei: Werkzeug 1 und 2",
         "Heute neu: Werkzeug 3, Spiegeln"
        ]
       },
@@ -2499,7 +2506,7 @@
      "titel": "Spiegeln in drei Schritten",
      "punkte": [
       "1 Zuhören: ausreden lassen, nicht bewerten",
-      "2 Spiegeln: „Du meinst also …“ oder „Dir ist wichtig, dass …“",
+      "2 Spiegeln: „Du meinst also …“ oder „Klingt, als …“",
       "3 Prüfen: „Stimmt das so?“"
      ]
     },
@@ -2595,8 +2602,9 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
+        "Déjà acquis : outils 1 et 2",
         "Nouveau aujourd’hui : outil 3, reformuler"
        ]
       },
@@ -2644,7 +2652,7 @@
      "titel": "Reformuler en trois étapes",
      "punkte": [
       "1 Écouter : laisser finir, ne pas juger",
-      "2 Reformuler : « Tu veux dire que … » ou « Ce qui compte pour toi, c’est que … »",
+      "2 Reformuler : « Tu veux dire que … » ou « On dirait que … »",
       "3 Vérifier : « C’est bien ça ? »"
      ]
     },
@@ -2732,7 +2740,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest Milas Satz und die vier Antworten (in einem Ton, der zur Antwort passt) vor, der oder die Jugendliche verbindet jede mit ihrer Wirkung und sagt, welche er oder sie am liebsten bekäme. In Aufgabe 2 kreuzt er oder sie zu Bens Satz den passenden Spiegel-Satz an und spiegelt mündlich Janas Satz; danach folgt das Rollenspiel in zwei Runden mit Stopp-Wort. Aufgabe 3 füllt er oder sie nach dem Spielen aus: ehrlich, nicht freundlich. Der Auftrag geht mit.",
+     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest Milas Satz und die vier Antworten (in einem Ton, der zur Antwort passt) vor, der oder die Jugendliche verbindet jede mit ihrer Wirkung und sagt, welche er oder sie am liebsten bekäme. In Aufgabe 2 kreuzt er oder sie zu Bens Satz den passenden Spiegel-Satz an und spiegelt mündlich Janas Satz; danach folgt das Rollenspiel in zwei Runden mit Stopp-Wort. Aufgabe 3 füllt er oder sie nach dem Spielen aus: ehrlich, aber fair zu sich selbst. Der Auftrag geht mit.",
      "sagen": [
       "Welche Antwort hättest du an Milas Stelle gern bekommen?",
       "Woran hast du gemerkt, dass der Spiegel-Satz gepasst hat?"
@@ -2740,7 +2748,7 @@
      "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Antworten vor, und der oder die Jugendliche zeigt darauf. Mag er oder sie nicht spielen, genügt die Auswahl auf dem Blatt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3."
     },
     "fr": {
-     "text": "Exercice 1 ensemble : l’adulte lit la phrase de Mila et les quatre réponses (sur un ton qui correspond à chaque réponse), le ou la jeune relie chacune à son effet et dit laquelle il ou elle aimerait le mieux recevoir. À l’exercice 2, il ou elle coche la phrase de reformulation qui convient à la phrase de Ben et reformule à l’oral celle de Jana ; ensuite vient le jeu de rôle en deux manches avec un mot d’arrêt. L’exercice 3 se remplit après le jeu : honnêtement, pas gentiment. La mission est emportée.",
+     "text": "Exercice 1 ensemble : l’adulte lit la phrase de Mila et les quatre réponses (sur un ton qui correspond à chaque réponse), le ou la jeune relie chacune à son effet et dit laquelle il ou elle aimerait le mieux recevoir. À l’exercice 2, il ou elle coche la phrase de reformulation qui convient à la phrase de Ben et reformule à l’oral celle de Jana ; ensuite vient le jeu de rôle en deux manches avec un mot d’arrêt. L’exercice 3 se remplit après le jeu : honnêtement, sans se juger trop durement. La mission est emportée.",
      "sagen": [
       "Quelle réponse aurais-tu aimé recevoir, à la place de Mila ?",
       "À quoi as-tu vu que la phrase de reformulation convenait ?"
@@ -2751,10 +2759,10 @@
   },
   "fr": {
    "titel": "Écouter et reformuler",
-   "text": "Le ou la jeune sait supposer des intérêts et poser la question de plongée ; aujourd’hui, il ou elle apprend à écouter de façon que l’autre le remarque : écouter, reformuler, vérifier. L’adulte joue d’abord volontairement une mauvaise écoute (minimiser, donner des conseils, parler de soi), et le ou la jeune associe les réponses sur la fiche. Avant de jouer, une minute pour se poser : expirer plus longtemps qu’inspirer, laisser tomber les épaules. Puis deux courtes manches : à la première, l’adulte joue une personne avec une contrariété inventée et le ou la jeune reformule ; à la seconde, ils échangent les rôles et l’adulte reformule. Ensuite, le ou la jeune évalue ce qui a bien marché.",
+   "text": "Le ou la jeune sait supposer des intérêts et poser la question de plongée ; aujourd’hui, il ou elle apprend à écouter de façon que l’autre le remarque : écouter, reformuler, vérifier. L’adulte joue d’abord volontairement une mauvaise écoute (minimiser, donner des conseils, parler de soi), et le ou la jeune associe les réponses sur la fiche et dit laquelle il ou elle aimerait recevoir. Avant de jouer, une minute pour se poser (expirer plus longtemps qu’inspirer, laisser tomber les épaules) et on convient d’un mot d’arrêt. À la première manche, l’adulte joue une personne avec une contrariété inventée (« Tout le monde se retrouve samedi, et personne ne m’a rien demandé. »), et le ou la jeune reformule ; à la seconde, ils échangent les rôles et l’adulte reformule. Ensuite, le ou la jeune évalue ce qui a bien marché.",
    "sagen": [
     "Reformuler, ce n’est pas donner raison. C’est dire : j’ai compris ce que tu veux dire.",
-    "Commence par « Tu veux dire que … » ou par « Ce qui compte pour toi, c’est que … », puis demande : « C’est bien ça ? »",
+    "Commence par « Tu veux dire que … » ou « On dirait que … », puis demande : « C’est bien ça ? » Avec tes mots, pas comme un perroquet.",
     "Une émotion, tu la supposes sous forme de question : « Ça t’a mis en colère ? » – pas comme une constatation."
    ],
    "wennEsKippt": "Si le ou la jeune ne veut pas jouer, on en reste à la lecture : il ou elle choisit sur la fiche une phrase de reformulation et l’adulte joue la réaction. Si les reformulations sont difficiles, l’adulte donne le début (« Tu veux dire que … ») et attend. Une manche suffit ; un mot d’arrêt met fin à tout jeu immédiatement."
@@ -2772,7 +2780,7 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Verhandeln",
-  "text": "Der oder die Jugendliche kann zuhören und spiegeln; heute entsteht aus zwei Eisbergen eine Lösung. Die Fachkraft zeigt die vier Schritte des Verhandelns: Interessen auf den Tisch, viele Optionen erfinden (ohne sie sofort zu bewerten), nach fairen Kriterien auswählen, die Abmachung konkret machen (wer, was, bis wann, wann schauen wir nach). Am Fall von Jana und Ben sammelt der oder die Jugendliche in drei Minuten möglichst viele Optionen und wählt die zwei Kriterien, die ihm oder ihr am wichtigsten sind. Dann das Rollenspiel: Die Fachkraft spielt Ben, der oder die Jugendliche verhandelt als Jana in den vier Schritten; in der zweiten Runde tauschen sie die Rollen, und das Ergebnis wird als Abmachung festgehalten. Ein Plan B für den Fall, dass man sich nicht einigt, gehört dazu.",
+  "text": "Der oder die Jugendliche kann zuhören und spiegeln; heute entsteht aus zwei Eisbergen eine Lösung. Die Fachkraft zeigt die vier Schritte des Verhandelns: Interessen auf den Tisch, viele Optionen erfinden (ohne sie sofort zu bewerten), nach fairen Kriterien auswählen, die Abmachung konkret machen (wer, was, bis wann, wann schauen wir nach). Am Fall von Jana und Ben sammelt der oder die Jugendliche in drei Minuten möglichst viele Optionen und wählt die zwei Kriterien, die ihm oder ihr am wichtigsten sind. Dann das Rollenspiel: Die Fachkraft spielt Ben („Ich hab Training und schaffe höchstens die Hälfte.“) und geht auf eine Option ein, wenn sie fair klingt; der oder die Jugendliche verhandelt als Jana in den vier Schritten und hält das Ergebnis als Abmachung fest – mit einem Plan B für den Fall, dass man sich nicht einigt. Wenn Zeit bleibt, tauschen sie die Rollen. Verhandelt wird nur auf Augenhöhe: Bei Drohungen oder Bloßstellen wird nicht verhandelt, da holt man Hilfe.",
   "sagen": [
    "Erst die Interessen beider auf den Tisch, dann die Ideen. Sonst verhandelt ihr nur über Positionen.",
    "Sammle erst, bewerte später. Je mehr Optionen, desto eher passt eine für beide.",
@@ -2863,8 +2871,9 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
+        "Schon dabei: Werkzeug 1 bis 3",
         "Heute neu: Werkzeug 4, Verhandeln"
        ]
       },
@@ -2914,7 +2923,7 @@
      "art": "mindmap",
      "mitte": "Referat fertig – wie?",
      "aeste": [
-      "Frist für Ben auf Mittwoch",
+      "Zwischenstand am Mittwoch",
       "",
       "",
       "",
@@ -2940,7 +2949,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Rollenspiel: Verhandelt den Fall in den vier Schritten – du als Jana, dein Gegenüber als Ben, danach umgekehrt. Haltet das Ergebnis fest."
+     "text": "Rollenspiel: Verhandelt den Fall in den vier Schritten – du als Jana, dein Gegenüber als Ben. Haltet das Ergebnis fest. Wenn Zeit bleibt: danach umgekehrt."
     },
     {
      "art": "vertrag",
@@ -3009,8 +3018,9 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
+        "Déjà acquis : outils 1 à 3",
         "Nouveau aujourd’hui : outil 4, négocier"
        ]
       },
@@ -3060,7 +3070,7 @@
      "art": "mindmap",
      "mitte": "Exposé prêt – comment ?",
      "aeste": [
-      "Délai de Ben : mercredi",
+      "Point d’étape mercredi",
       "",
       "",
       "",
@@ -3077,7 +3087,7 @@
      "items": [
       "Elle convient aux deux côtés.",
       "Elle est réaliste.",
-      "Les deux portent à peu près autant.",
+      "Chacun porte à peu près autant.",
       "Je pourrais l’expliquer sans honte.",
       "Celui qui crie le plus fort décide."
      ],
@@ -3086,12 +3096,12 @@
     },
     {
      "art": "aufgabe",
-     "text": "Jeu de rôle : négociez le cas en quatre étapes – toi en Jana, la personne en face de toi en Ben, puis l’inverse. Notez le résultat."
+     "text": "Jeu de rôle : négociez le cas en quatre étapes – toi en Jana, la personne en face de toi en Ben. Notez le résultat. S’il reste du temps : on inverse les rôles."
     },
     {
      "art": "vertrag",
      "titel": "Notre accord",
-     "text": "Nous avons convenu que ___ fait ___ pour le ___. Nous vérifions le ___ si ça marche. Sinon, notre plan B est : ___.",
+     "text": "Nous avons convenu que ___ fait ___ d’ici le ___. Nous refaisons le point le ___ pour voir si ça marche. Sinon, notre plan B est : ___.",
      "unterschriften": [
       "Jana",
       "Ben"
@@ -3147,7 +3157,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche sammelt in drei Minuten Optionen in der Mindmap, die Fachkraft schreibt nichts mit und bewertet nicht; absurde Ideen sind erlaubt. In Aufgabe 2 kreuzt er oder sie die zwei wichtigsten Kriterien an und sagt, warum. Aufgabe 3 ist das Rollenspiel in den vier Schritten (die Kette oben hilft), danach schreiben beide die Abmachung in den Vertrag; ein Plan B gehört hinein. Der Auftrag geht mit.",
+     "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche sammelt in drei Minuten Optionen in der Mindmap, die Fachkraft schreibt nichts mit und bewertet nicht; absurde Ideen sind erlaubt. In Aufgabe 2 kreuzt er oder sie die zwei wichtigsten Kriterien an und sagt, warum. Aufgabe 3 ist das Rollenspiel in den vier Schritten (die Kette oben hilft; getauscht wird nur, wenn Zeit bleibt), danach schreiben beide die Abmachung in den Vertrag; ein Plan B gehört hinein. Der Auftrag geht mit.",
      "sagen": [
       "Welche Option würdest du wählen, wenn du auf der anderen Seite stündest?",
       "Woran würdest du merken, dass die Abmachung nicht hält?"
@@ -3155,7 +3165,7 @@
      "wennEsKippt": "Ist Schreiben mühsam, nennt der oder die Jugendliche die Optionen, und die Fachkraft notiert Stichworte. Mag er oder sie nicht spielen, verhandelt die Fachkraft beide Seiten laut, und der oder die Jugendliche ruft „Stopp“, wenn ein Schritt fehlt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3."
     },
     "fr": {
-     "text": "Exercice 1 ensemble : le ou la jeune rassemble des options dans la carte mentale en trois minutes, l’adulte n’écrit rien et ne juge pas ; les idées absurdes sont permises. À l’exercice 2, il ou elle coche les deux critères les plus importants et dit pourquoi. L’exercice 3 est le jeu de rôle en quatre étapes (la chaîne en haut aide), puis les deux écrivent l’accord dans le contrat ; un plan B en fait partie. La mission est emportée.",
+     "text": "Exercice 1 ensemble : le ou la jeune rassemble des options dans la carte mentale en trois minutes, l’adulte n’écrit rien et ne juge pas ; les idées absurdes sont permises. À l’exercice 2, il ou elle coche les deux critères les plus importants et dit pourquoi. L’exercice 3 est le jeu de rôle en quatre étapes (la chaîne en haut aide ; on n’échange les rôles que s’il reste du temps), puis les deux écrivent l’accord dans le contrat ; un plan B en fait partie. La mission est emportée.",
      "sagen": [
       "Quelle option choisirais-tu si tu étais de l’autre côté ?",
       "À quoi remarquerais-tu que l’accord ne tient pas ?"
@@ -3166,14 +3176,14 @@
   },
   "fr": {
    "titel": "Négocier",
-   "text": "Le ou la jeune sait écouter et reformuler ; aujourd’hui, deux icebergs deviennent une solution. L’adulte montre les quatre étapes de la négociation : mettre les intérêts sur la table, inventer beaucoup d’options (sans les juger tout de suite), choisir selon des critères équitables, rendre l’accord concret (qui, quoi, pour quand, quand on vérifie). Avec le cas de Jana et Ben, le ou la jeune rassemble en trois minutes un maximum d’options et choisit les deux critères qui comptent le plus pour lui ou elle. Puis le jeu de rôle : l’adulte joue Ben, le ou la jeune négocie en Jana en suivant les quatre étapes ; à la seconde manche, ils échangent les rôles, et le résultat est noté sous forme d’accord. Un plan B, pour le cas où l’on ne s’entend pas, en fait partie.",
+   "text": "Le ou la jeune sait écouter et reformuler ; aujourd’hui, deux icebergs deviennent une solution. L’adulte montre les quatre étapes de la négociation : mettre les intérêts sur la table, inventer beaucoup d’options (sans les juger tout de suite), choisir selon des critères équitables, rendre l’accord concret (qui, quoi, pour quand, quand on vérifie). Avec le cas de Jana et Ben, le ou la jeune rassemble en trois minutes un maximum d’options et choisit les deux critères qui comptent le plus pour lui ou elle. Puis le jeu de rôle : l’adulte joue Ben (« J’ai entraînement et je n’arrive pas à faire plus de la moitié. ») et accepte une option quand elle semble équitable ; le ou la jeune négocie en Jana en suivant les quatre étapes et note le résultat sous forme d’accord, avec un plan B au cas où on ne s’entend pas. S’il reste du temps, ils échangent les rôles. On ne négocie que sur un pied d’égalité : face à des menaces ou à une humiliation, on ne négocie pas, on va chercher de l’aide.",
    "sagen": [
     "D’abord les intérêts des deux sur la table, ensuite les idées. Sinon, vous ne négociez que des positions.",
     "Rassemble d’abord, juge ensuite. Plus il y a d’options, plus il y a de chances qu’une convienne aux deux.",
-    "Ce n’est pas juste, celui qui parle le plus fort. Cherche un critère que tu accepterais aussi si tu étais de l’autre côté.",
-    "Un accord a besoin de quatre choses : qui, quoi, pour quand, et quand vous vérifiez."
+    "Ce n’est pas celui qui parle le plus fort qui a raison. Cherche un critère que tu accepterais aussi si tu étais de l’autre côté.",
+    "Un accord tient sur quatre points : qui, quoi, pour quand, et quand vous refaites le point."
    ],
-   "wennEsKippt": "Si peu d’options viennent, l’adulte en propose une absurde (« Ben écrit tout en une nuit »), et le ou la jeune l’améliore. S’il ou elle ne veut pas jouer, l’adulte négocie à voix haute avec lui-même ou elle-même et se laisse interrompre : « Stop – quelle étape manque ? » Une option, un critère et un accord suffisent."
+   "wennEsKippt": "Si peu d’options viennent, l’adulte en propose une absurde (« Ben écrit tout en une nuit »), et le ou la jeune l’améliore. S’il ou elle ne veut pas jouer, l’adulte négocie les deux côtés à voix haute et se laisse interrompre : « Stop – quelle étape manque ? » Une option, un critère et un accord suffisent."
   },
   "zugang": {
    "lesen": 2,
@@ -3188,7 +3198,7 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Verhandeln",
-  "text": "Der oder die Jugendliche kann zuhören und spiegeln; heute entsteht aus zwei Eisbergen eine Lösung. Die Fachkraft zeigt die vier Schritte des Verhandelns: Interessen auf den Tisch, viele Optionen erfinden (ohne sie sofort zu bewerten), nach fairen Kriterien auswählen, die Abmachung konkret machen (wer, was, bis wann, wann schauen wir nach). Am Fall von Jana und Ben sammelt der oder die Jugendliche in drei Minuten möglichst viele Optionen und wählt die zwei Kriterien, die ihm oder ihr am wichtigsten sind. Dann das Rollenspiel: Die Fachkraft spielt Ben, der oder die Jugendliche verhandelt als Jana in den vier Schritten; in der zweiten Runde tauschen sie die Rollen, und das Ergebnis wird als Abmachung festgehalten. Ein Plan B für den Fall, dass man sich nicht einigt, gehört dazu.",
+  "text": "Der oder die Jugendliche kann zuhören und spiegeln; heute entsteht aus zwei Eisbergen eine Lösung. Die Fachkraft zeigt die vier Schritte des Verhandelns: Interessen auf den Tisch, viele Optionen erfinden (ohne sie sofort zu bewerten), nach fairen Kriterien auswählen, die Abmachung konkret machen (wer, was, bis wann, wann schauen wir nach). Am Fall von Jana und Ben sammelt der oder die Jugendliche in drei Minuten möglichst viele Optionen und wählt die zwei Kriterien, die ihm oder ihr am wichtigsten sind. Dann das Rollenspiel: Die Fachkraft spielt Ben („Ich hab Training und schaffe höchstens die Hälfte.“) und geht auf eine Option ein, wenn sie fair klingt; der oder die Jugendliche verhandelt als Jana in den vier Schritten und hält das Ergebnis als Abmachung fest – mit einem Plan B für den Fall, dass man sich nicht einigt. Wenn Zeit bleibt, tauschen sie die Rollen. Verhandelt wird nur auf Augenhöhe: Bei Drohungen oder Bloßstellen wird nicht verhandelt, da holt man Hilfe.",
   "sagen": [
    "Erst die Interessen beider auf den Tisch, dann die Ideen. Sonst verhandelt ihr nur über Positionen.",
    "Sammle erst, bewerte später. Je mehr Optionen, desto eher passt eine für beide.",
@@ -3279,8 +3289,9 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
+        "Schon dabei: Werkzeug 1 bis 3",
         "Heute neu: Werkzeug 4, Verhandeln"
        ]
       },
@@ -3374,7 +3385,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Rollenspiel: Verhandelt den Fall in den vier Schritten – du als Jana, dein Gegenüber als Ben, danach umgekehrt. Kreuz an, was geklappt hat."
+     "text": "Rollenspiel: Verhandelt den Fall in den vier Schritten – du als Jana, dein Gegenüber als Ben. Kreuz an, was geklappt hat. Wenn Zeit bleibt: danach umgekehrt."
     },
     {
      "art": "ankreuzen",
@@ -3447,8 +3458,9 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
+        "Déjà acquis : outils 1 à 3",
         "Nouveau aujourd’hui : outil 4, négocier"
        ]
       },
@@ -3534,7 +3546,7 @@
      "items": [
       "Elle convient aux deux côtés.",
       "Elle est réaliste.",
-      "Les deux portent à peu près autant.",
+      "Chacun porte à peu près autant.",
       "Je pourrais l’expliquer sans honte.",
       "Celui qui crie le plus fort décide."
      ],
@@ -3542,7 +3554,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Jeu de rôle : négociez le cas en quatre étapes – toi en Jana, la personne en face de toi en Ben, puis l’inverse. Coche ce qui a marché."
+     "text": "Jeu de rôle : négociez le cas en quatre étapes – toi en Jana, la personne en face de toi en Ben. Coche ce qui a marché. S’il reste du temps : on inverse les rôles."
     },
     {
      "art": "ankreuzen",
@@ -3607,7 +3619,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt drei Optionen an und nennt dazu weitere mündlich, die Fachkraft bewertet nicht; absurde Ideen sind erlaubt. In Aufgabe 2 kreuzt er oder sie die zwei wichtigsten Kriterien an und sagt, warum. Aufgabe 3 ist das Rollenspiel in den vier Schritten (die Kette oben hilft); danach kreuzt er oder sie an, was geklappt hat, und sagt die Abmachung in einem Satz. Der Auftrag geht mit.",
+     "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt drei Optionen an und nennt dazu weitere mündlich, die Fachkraft bewertet nicht; absurde Ideen sind erlaubt. In Aufgabe 2 kreuzt er oder sie die zwei wichtigsten Kriterien an und sagt, warum. Aufgabe 3 ist das Rollenspiel in den vier Schritten (die Kette oben hilft; getauscht wird nur, wenn Zeit bleibt); danach kreuzt er oder sie an, was geklappt hat, und sagt die Abmachung in einem Satz. Der Auftrag geht mit.",
      "sagen": [
       "Welche Option würdest du wählen, wenn du auf der anderen Seite stündest?",
       "Woran würdest du merken, dass die Abmachung nicht hält?"
@@ -3615,7 +3627,7 @@
      "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Karten vor, und der oder die Jugendliche zeigt darauf. Mag er oder sie nicht spielen, verhandelt die Fachkraft beide Seiten laut, und der oder die Jugendliche ruft „Stopp“, wenn ein Schritt fehlt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3."
     },
     "fr": {
-     "text": "Exercice 1 ensemble : le ou la jeune coche trois options et en cite d’autres à l’oral, l’adulte ne juge pas ; les idées absurdes sont permises. À l’exercice 2, il ou elle coche les deux critères les plus importants et dit pourquoi. L’exercice 3 est le jeu de rôle en quatre étapes (la chaîne en haut aide) ; ensuite, il ou elle coche ce qui a marché et dit l’accord en une phrase. La mission est emportée.",
+     "text": "Exercice 1 ensemble : le ou la jeune coche trois options et en cite d’autres à l’oral, l’adulte ne juge pas ; les idées absurdes sont permises. À l’exercice 2, il ou elle coche les deux critères les plus importants et dit pourquoi. L’exercice 3 est le jeu de rôle en quatre étapes (la chaîne en haut aide ; on n’échange les rôles que s’il reste du temps) ; ensuite, il ou elle coche ce qui a marché et dit l’accord en une phrase. La mission est emportée.",
      "sagen": [
       "Quelle option choisirais-tu si tu étais de l’autre côté ?",
       "À quoi remarquerais-tu que l’accord ne tient pas ?"
@@ -3626,14 +3638,14 @@
   },
   "fr": {
    "titel": "Négocier",
-   "text": "Le ou la jeune sait écouter et reformuler ; aujourd’hui, deux icebergs deviennent une solution. L’adulte montre les quatre étapes de la négociation : mettre les intérêts sur la table, inventer beaucoup d’options (sans les juger tout de suite), choisir selon des critères équitables, rendre l’accord concret (qui, quoi, pour quand, quand on vérifie). Avec le cas de Jana et Ben, le ou la jeune rassemble en trois minutes un maximum d’options et choisit les deux critères qui comptent le plus pour lui ou elle. Puis le jeu de rôle : l’adulte joue Ben, le ou la jeune négocie en Jana en suivant les quatre étapes ; à la seconde manche, ils échangent les rôles, et le résultat est noté sous forme d’accord. Un plan B, pour le cas où l’on ne s’entend pas, en fait partie.",
+   "text": "Le ou la jeune sait écouter et reformuler ; aujourd’hui, deux icebergs deviennent une solution. L’adulte montre les quatre étapes de la négociation : mettre les intérêts sur la table, inventer beaucoup d’options (sans les juger tout de suite), choisir selon des critères équitables, rendre l’accord concret (qui, quoi, pour quand, quand on vérifie). Avec le cas de Jana et Ben, le ou la jeune rassemble en trois minutes un maximum d’options et choisit les deux critères qui comptent le plus pour lui ou elle. Puis le jeu de rôle : l’adulte joue Ben (« J’ai entraînement et je n’arrive pas à faire plus de la moitié. ») et accepte une option quand elle semble équitable ; le ou la jeune négocie en Jana en suivant les quatre étapes et note le résultat sous forme d’accord, avec un plan B au cas où on ne s’entend pas. S’il reste du temps, ils échangent les rôles. On ne négocie que sur un pied d’égalité : face à des menaces ou à une humiliation, on ne négocie pas, on va chercher de l’aide.",
    "sagen": [
     "D’abord les intérêts des deux sur la table, ensuite les idées. Sinon, vous ne négociez que des positions.",
     "Rassemble d’abord, juge ensuite. Plus il y a d’options, plus il y a de chances qu’une convienne aux deux.",
-    "Ce n’est pas juste, celui qui parle le plus fort. Cherche un critère que tu accepterais aussi si tu étais de l’autre côté.",
-    "Un accord a besoin de quatre choses : qui, quoi, pour quand, et quand vous vérifiez."
+    "Ce n’est pas celui qui parle le plus fort qui a raison. Cherche un critère que tu accepterais aussi si tu étais de l’autre côté.",
+    "Un accord tient sur quatre points : qui, quoi, pour quand, et quand vous refaites le point."
    ],
-   "wennEsKippt": "Si peu d’options viennent, l’adulte en propose une absurde (« Ben écrit tout en une nuit »), et le ou la jeune l’améliore. S’il ou elle ne veut pas jouer, l’adulte négocie à voix haute avec lui-même ou elle-même et se laisse interrompre : « Stop – quelle étape manque ? » Une option, un critère et un accord suffisent."
+   "wennEsKippt": "Si peu d’options viennent, l’adulte en propose une absurde (« Ben écrit tout en une nuit »), et le ou la jeune l’améliore. S’il ou elle ne veut pas jouer, l’adulte négocie les deux côtés à voix haute et se laisse interrompre : « Stop – quelle étape manque ? » Une option, un critère et un accord suffisent."
   },
   "zugang": {
    "lesen": 1,
@@ -3648,14 +3660,14 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Versöhnen und Verantwortung übernehmen",
-  "text": "Mit Stufen-Check, Tauchgang, Spiegeln und Verhandeln hat der oder die Jugendliche vier Werkzeuge; heute kommt das fünfte dazu – Verantwortung übernehmen und etwas wiedergutmachen – und eine echte Situation dieser Woche wird geplant. Zuerst vergleicht er oder sie auf dem Blatt drei Entschuldigungen von Ben an Jana und findet die, die Verantwortung übernimmt; vier Fragen helfen bei der Vorbereitung. Dann wählt er oder sie eine Situation, echt oder erfunden (er oder sie bestimmt, wie nah sie ist), und plant: mit wem, wann und wo, was passiert ist, den eigenen Teil und den ersten Satz. Vor dem Spielen eine Minute zum Runterfahren: dreimal lang ausatmen. Die Fachkraft spielt das Gegenüber in zwei Durchgängen (erst offen, dann abweisend) mit einem Stopp-Wort; in der dritten Runde tauschen sie die Rollen, damit der oder die Jugendliche spürt, wie der Satz ankommt.",
+  "text": "Mit Stufen-Check, Tauchgang, Spiegeln und Verhandeln hat der oder die Jugendliche vier Werkzeuge; heute kommt das fünfte dazu – Verantwortung übernehmen und etwas wiedergutmachen – und eine Situation dieser Woche wird geplant. Zuerst vergleicht er oder sie auf dem Blatt drei Entschuldigungen von Ben an Jana und findet die, die Verantwortung übernimmt. Dann wählt er oder sie eine Situation, echt oder erfunden (er oder sie bestimmt, wie nah sie ist), und plant: mit wem, wann und wo, was passiert ist, den eigenen Teil, welches der vier anderen Werkzeuge zuerst dran ist und den ersten Satz. Vor dem Spielen eine Minute zum Runterfahren (dreimal lang ausatmen) und ein Stopp-Wort ausmachen. Die Fachkraft spielt das Gegenüber in zwei Durchgängen, erst offen („Danke, dass du das sagst.“), dann abweisend („Dafür ist es zu spät.“); wenn Zeit bleibt, tauschen sie die Rollen, damit der oder die Jugendliche spürt, wie der Satz ankommt.",
   "sagen": [
    "Verantwortung übernehmen heißt: sagen, was ich getan habe – ohne „aber“ und ohne „wenn du so empfindlich bist“.",
-   "Frag dich vorher: Was ist passiert, wer ist davon betroffen, und was braucht es, damit es wieder gut wird?",
+   "Frag dich vorher: Was ist passiert, wer ist betroffen, was braucht es, damit es wieder gut wird – und welches Werkzeug nimmst du zuerst?",
    "Es geht nur um deinen Teil. Den anderen Teil trägt die andere Person.",
    "Wenn sie abblockt, hast du trotzdem getan, was in deiner Hand lag."
   ],
-  "wennEsKippt": "Geht die gewählte Situation zu nah, bleibt es bei Ben und Jana; der Plan ist der gleiche, nur erfunden. Ist Schreiben mühsam, sagt der oder die Jugendliche den Satz, und die Fachkraft schreibt drei Wörter; mag er oder sie nicht spielen, genügt es, den Satz laut zu sagen und die mögliche Reaktion zu besprechen. Zwei Aufgaben genügen.",
+  "wennEsKippt": "Geht die gewählte Situation zu nah, bleibt es bei Ben und Jana; der Plan ist der gleiche, nur erfunden. Ist Schreiben mühsam, sagt der oder die Jugendliche den Satz, und die Fachkraft schreibt drei Wörter; mag er oder sie nicht spielen, wird der Satz nur laut gesagt und die mögliche Reaktion besprochen. Geht es um Drohungen, Mobbing oder Gewalt gegen ihn oder sie selbst, wird kein Gespräch mit der anderen Seite geplant, sondern geklärt, wer hilft.",
   "rolle": [
    "kern"
   ],
@@ -3739,8 +3751,9 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
+        "Schon dabei: Werkzeug 1 bis 4",
         "Heute neu: Werkzeug 5, Wiedergutmachen"
        ]
       },
@@ -3773,7 +3786,7 @@
      "rechts": [
       "übernimmt Verantwortung",
       "rechtfertigt sich mit „aber“",
-      "schiebt es auf Jana"
+      "spricht nur von Janas Gefühl, nicht von seinem Tun"
      ],
      "titel": [
       "Entschuldigung",
@@ -3791,8 +3804,8 @@
       "Mein Plan"
      ],
      "breiten": [
-      2.5,
-      3.5
+      2.4,
+      3.6
      ],
      "zeilen": 0,
      "beispiel": [
@@ -3805,15 +3818,15 @@
        ""
       ],
       [
-       "Was ist passiert, wer ist betroffen?",
-       ""
-      ],
-      [
-       "Mein Teil – oder: was mich getroffen hat",
+       "Was ist passiert – und was ist mein Teil (oder: was hat mich getroffen)?",
        ""
       ],
       [
        "Was braucht es, damit es wieder gut wird?",
+       ""
+      ],
+      [
+       "Welches Werkzeug nehme ich zuerst (1 bis 4)?",
        ""
       ],
       [
@@ -3824,7 +3837,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Rollenspiel: Sag deinen ersten Satz – dein Gegenüber reagiert erst offen, dann abweisend. Danach tauscht ihr. Schätz ein, wie es gelaufen ist."
+     "text": "Rollenspiel: Sag deinen ersten Satz – dein Gegenüber reagiert erst offen, dann abweisend. Wenn Zeit bleibt, tauscht ihr. Schätz ein, wie es gelaufen ist."
     },
     {
      "art": "einschaetzung",
@@ -3900,8 +3913,9 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
+        "Déjà acquis : outils 1 à 4",
         "Nouveau aujourd’hui : outil 5, réparer"
        ]
       },
@@ -3934,7 +3948,7 @@
      "rechts": [
       "assume sa part",
       "se justifie avec « mais »",
-      "rejette la faute sur Jana"
+      "parle seulement du ressenti de Jana, pas de son acte"
      ],
      "titel": [
       "Excuse",
@@ -3952,8 +3966,8 @@
       "Mon plan"
      ],
      "breiten": [
-      2.5,
-      3.5
+      2.4,
+      3.6
      ],
      "zeilen": 0,
      "beispiel": [
@@ -3966,15 +3980,15 @@
        ""
       ],
       [
-       "Ce qui s’est passé, qui est touché ?",
-       ""
-      ],
-      [
-       "Ma part – ou : ce qui m’a touché",
+       "Ce qui s’est passé – et quelle est ma part (ou : ce qui m’a touché) ?",
        ""
       ],
       [
        "Ce qu’il faut pour que ça aille mieux",
+       ""
+      ],
+      [
+       "Quel outil je prends en premier (1 à 4) ?",
        ""
       ],
       [
@@ -3985,7 +3999,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Jeu de rôle : dis ta première phrase – la personne en face de toi réagit d’abord de façon ouverte, puis fermée. Ensuite, vous échangez les rôles. Évalue comment ça s’est passé."
+     "text": "Jeu de rôle : dis ta première phrase – la personne en face de toi réagit d’abord de façon ouverte, puis fermée. S’il reste du temps, vous échangez les rôles. Évalue comment ça s’est passé."
     },
     {
      "art": "einschaetzung",
@@ -4053,7 +4067,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche er oder sie selbst gern hören würde; die vier Fragen im Kasten leiten die Vorbereitung. Aufgabe 2 ist der Kern: Situation wählen (erfunden oder echt, eine echte ist freiwillig) und den Plan in Stichworten in die Tabelle schreiben. Danach das Rollenspiel in drei Runden mit Stopp-Wort; die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind allein.",
+     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche er oder sie selbst gern hören würde. Aufgabe 2 ist der Kern: Situation wählen (erfunden oder echt, eine echte ist freiwillig) und den Plan in Stichworten in die Tabelle schreiben; „eine Freundin“ genügt, ein Name muss nicht sein. Danach das Rollenspiel in zwei Runden mit Stopp-Wort (getauscht wird nur, wenn Zeit bleibt); die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind allein.",
      "sagen": [
       "Wie fühlt sich jede Entschuldigung an, wenn du sie bekommst?",
       "Was würde dir helfen, wenn die andere Person abblockt?"
@@ -4061,7 +4075,7 @@
      "wennEsKippt": "Ist selbst das Notieren zu viel, sagt der oder die Jugendliche den Satz laut, und die Fachkraft schreibt drei Wörter. Geht es um etwas Schweres, bleibt es bei der erfundenen Situation mit Ben und Jana. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
     },
     "fr": {
-     "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle il ou elle aimerait entendre soi-même ; les quatre questions de l’encadré guident la préparation. L’exercice 2 est le cœur : choisir une situation (inventée ou réelle, une situation réelle est facultative) et écrire le plan en mots-clés dans le tableau. Ensuite, le jeu de rôle en trois manches avec un mot d’arrêt ; l’évaluation suit tout de suite. La boîte à outils et la mission se font seul.",
+     "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle il ou elle aimerait entendre soi-même. L’exercice 2 est le cœur : choisir une situation (inventée ou réelle, une situation réelle est facultative) et écrire le plan en mots-clés dans le tableau ; « une amie » suffit, un prénom n’est pas nécessaire. Ensuite, le jeu de rôle en deux manches avec un mot d’arrêt (on n’échange les rôles que s’il reste du temps) ; l’évaluation suit tout de suite. La boîte à outils et la mission se font seul.",
      "sagen": [
       "Comment chaque excuse te fait-elle ressentir quand tu la reçois ?",
       "Qu’est-ce qui t’aiderait si l’autre personne se ferme ?"
@@ -4072,14 +4086,14 @@
   },
   "fr": {
    "titel": "Se réconcilier et assumer sa part",
-   "text": "Avec les degrés, la plongée, la reformulation et la négociation, le ou la jeune a quatre outils ; aujourd’hui s’ajoute le cinquième – assumer sa part et réparer – et on prépare une situation réelle de cette semaine. D’abord, il ou elle compare sur la fiche trois excuses de Ben à Jana et trouve celle qui assume la responsabilité ; quatre questions aident à se préparer. Ensuite, il ou elle choisit une situation, réelle ou inventée (il ou elle décide à quel point elle est proche), et planifie : avec qui, quand et où, ce qui s’est passé, sa propre part et la première phrase. Avant de jouer, une minute pour se poser : expirer trois fois lentement. L’adulte joue l’autre personne en deux manches (d’abord ouverte, puis fermée) avec un mot d’arrêt ; à la troisième manche, ils échangent les rôles, pour que le ou la jeune sente comment la phrase arrive.",
+   "text": "Avec les degrés, la plongée, la reformulation et la négociation, le ou la jeune a quatre outils ; aujourd’hui s’ajoute le cinquième – assumer sa part et réparer – et on prépare une situation de cette semaine. D’abord, il ou elle compare sur la fiche trois excuses de Ben à Jana et trouve celle qui assume la responsabilité. Ensuite, il ou elle choisit une situation, réelle ou inventée (il ou elle décide à quel point elle est proche), et planifie : avec qui, quand et où, ce qui s’est passé, sa propre part, lequel des quatre autres outils vient en premier et la première phrase. Avant de jouer, une minute pour se poser (expirer trois fois lentement) et on convient d’un mot d’arrêt. L’adulte joue l’autre personne en deux manches, d’abord ouverte (« Merci de me le dire. »), puis fermée (« C’est trop tard pour ça. ») ; s’il reste du temps, ils échangent les rôles, pour que le ou la jeune sente comment la phrase arrive.",
    "sagen": [
     "Assumer sa part, c’est dire ce que j’ai fait – sans « mais » et sans « si tu es si susceptible ».",
-    "Demande-toi d’abord : qu’est-ce qui s’est passé, qui est touché et comment, et qu’est-ce qu’il faut pour que ça aille mieux ?",
+    "Demande-toi d’abord : qu’est-ce qui s’est passé, qui est touché, qu’est-ce qu’il faut pour que ça aille mieux – et quel outil tu prends en premier ?",
     "Il s’agit seulement de ta part. L’autre part, c’est l’autre personne qui la porte.",
     "Si elle se ferme, tu as quand même fait ce qui dépendait de toi."
    ],
-   "wennEsKippt": "Si la situation choisie touche de trop près, on reste avec Ben et Jana ; le plan est le même, mais inventé. Si écrire est pénible, le ou la jeune dit la phrase et l’adulte écrit trois mots ; s’il ou elle ne veut pas jouer, il suffit de dire la phrase à voix haute et de discuter de la réaction possible. Deux exercices suffisent."
+   "wennEsKippt": "Si la situation choisie touche de trop près, on reste avec Ben et Jana ; le plan est le même, mais inventé. Si écrire est pénible, le ou la jeune dit la phrase et l’adulte écrit trois mots ; s’il ou elle ne veut pas jouer, on dit seulement la phrase à voix haute et on discute de la réaction possible. S’il s’agit de menaces, de harcèlement ou de violence contre lui ou elle-même, on ne prépare pas de discussion avec l’autre côté : on cherche d’abord qui peut aider."
   },
   "zugang": {
    "lesen": 2,
@@ -4094,14 +4108,14 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Versöhnen und Verantwortung übernehmen",
-  "text": "Mit Stufen-Check, Tauchgang, Spiegeln und Verhandeln hat der oder die Jugendliche vier Werkzeuge; heute kommt das fünfte dazu – Verantwortung übernehmen und etwas wiedergutmachen – und eine echte Situation dieser Woche wird geplant. Zuerst vergleicht er oder sie auf dem Blatt drei Entschuldigungen von Ben an Jana und findet die, die Verantwortung übernimmt; vier Fragen helfen bei der Vorbereitung. Dann wählt er oder sie eine Situation, echt oder erfunden (er oder sie bestimmt, wie nah sie ist), und plant: mit wem, wann und wo, was passiert ist, den eigenen Teil und den ersten Satz. Vor dem Spielen eine Minute zum Runterfahren: dreimal lang ausatmen. Die Fachkraft spielt das Gegenüber in zwei Durchgängen (erst offen, dann abweisend) mit einem Stopp-Wort; in der dritten Runde tauschen sie die Rollen, damit der oder die Jugendliche spürt, wie der Satz ankommt.",
+  "text": "Mit Stufen-Check, Tauchgang, Spiegeln und Verhandeln hat der oder die Jugendliche vier Werkzeuge; heute kommt das fünfte dazu – Verantwortung übernehmen und etwas wiedergutmachen – und eine Situation dieser Woche wird geplant. Zuerst vergleicht er oder sie auf dem Blatt drei Entschuldigungen von Ben an Jana und findet die, die Verantwortung übernimmt. Dann wählt er oder sie eine Situation, echt oder erfunden (er oder sie bestimmt, wie nah sie ist), und plant: mit wem, wann und wo, was passiert ist, den eigenen Teil, welches der vier anderen Werkzeuge zuerst dran ist und den ersten Satz. Vor dem Spielen eine Minute zum Runterfahren (dreimal lang ausatmen) und ein Stopp-Wort ausmachen. Die Fachkraft spielt das Gegenüber in zwei Durchgängen, erst offen („Danke, dass du das sagst.“), dann abweisend („Dafür ist es zu spät.“); wenn Zeit bleibt, tauschen sie die Rollen, damit der oder die Jugendliche spürt, wie der Satz ankommt.",
   "sagen": [
    "Verantwortung übernehmen heißt: sagen, was ich getan habe – ohne „aber“ und ohne „wenn du so empfindlich bist“.",
-   "Frag dich vorher: Was ist passiert, wer ist davon betroffen, und was braucht es, damit es wieder gut wird?",
+   "Frag dich vorher: Was ist passiert, wer ist betroffen, was braucht es, damit es wieder gut wird – und welches Werkzeug nimmst du zuerst?",
    "Es geht nur um deinen Teil. Den anderen Teil trägt die andere Person.",
    "Wenn sie abblockt, hast du trotzdem getan, was in deiner Hand lag."
   ],
-  "wennEsKippt": "Geht die gewählte Situation zu nah, bleibt es bei Ben und Jana; der Plan ist der gleiche, nur erfunden. Ist Schreiben mühsam, sagt der oder die Jugendliche den Satz, und die Fachkraft schreibt drei Wörter; mag er oder sie nicht spielen, genügt es, den Satz laut zu sagen und die mögliche Reaktion zu besprechen. Zwei Aufgaben genügen.",
+  "wennEsKippt": "Geht die gewählte Situation zu nah, bleibt es bei Ben und Jana; der Plan ist der gleiche, nur erfunden. Ist Schreiben mühsam, sagt der oder die Jugendliche den Satz, und die Fachkraft schreibt drei Wörter; mag er oder sie nicht spielen, wird der Satz nur laut gesagt und die mögliche Reaktion besprochen. Geht es um Drohungen, Mobbing oder Gewalt gegen ihn oder sie selbst, wird kein Gespräch mit der anderen Seite geplant, sondern geklärt, wer hilft.",
   "rolle": [
    "kern"
   ],
@@ -4185,8 +4199,9 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
+        "Schon dabei: Werkzeug 1 bis 4",
         "Heute neu: Werkzeug 5, Wiedergutmachen"
        ]
       },
@@ -4219,22 +4234,11 @@
      "rechts": [
       "übernimmt Verantwortung",
       "rechtfertigt sich mit „aber“",
-      "schiebt es auf Jana"
+      "spricht nur von Janas Gefühl, nicht von seinem Tun"
      ],
      "titel": [
       "Entschuldigung",
       "Sie …"
-     ]
-    },
-    {
-     "art": "info",
-     "symbol": "tipp",
-     "titel": "Vier Fragen vor dem Gespräch",
-     "punkte": [
-      "Was ist passiert – nur die Tatsachen?",
-      "Wer ist davon betroffen, und wie?",
-      "Was war mein Teil?",
-      "Was braucht es, damit es wieder gut wird?"
      ]
     },
     {
@@ -4317,6 +4321,17 @@
     {
      "art": "ankreuzen",
      "items": [
+      "den Stufen-Check",
+      "die Taucherfrage",
+      "einen Spiegel-Satz",
+      "eine Abmachung"
+     ],
+     "titel": "Zuerst nehme ich …",
+     "spalten": 2
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
       "„Es war nicht okay, dass ich …“",
       "„Mich hat getroffen, dass …“",
       "„Ich möchte etwas klären, damit …“"
@@ -4337,7 +4352,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Rollenspiel: Sag deinen ersten Satz – dein Gegenüber reagiert erst offen, dann abweisend. Danach tauscht ihr. Schätz ein, wie es gelaufen ist."
+     "text": "Rollenspiel: Sag deinen ersten Satz – dein Gegenüber reagiert erst offen, dann abweisend. Wenn Zeit bleibt, tauscht ihr. Schätz ein, wie es gelaufen ist."
     },
     {
      "art": "einschaetzung",
@@ -4413,8 +4428,9 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
+        "Déjà acquis : outils 1 à 4",
         "Nouveau aujourd’hui : outil 5, réparer"
        ]
       },
@@ -4447,22 +4463,11 @@
      "rechts": [
       "assume sa part",
       "se justifie avec « mais »",
-      "rejette la faute sur Jana"
+      "parle seulement du ressenti de Jana, pas de son acte"
      ],
      "titel": [
       "Excuse",
       "Elle …"
-     ]
-    },
-    {
-     "art": "info",
-     "symbol": "tipp",
-     "titel": "Quatre questions avant la discussion",
-     "punkte": [
-      "Qu’est-ce qui s’est passé – seulement les faits ?",
-      "Qui est touché, et comment ?",
-      "Quelle était ma part ?",
-      "Qu’est-ce qu’il faut pour que ça aille mieux ?"
      ]
     },
     {
@@ -4545,6 +4550,17 @@
     {
      "art": "ankreuzen",
      "items": [
+      "les degrés",
+      "la question de plongée",
+      "une phrase de reformulation",
+      "un accord"
+     ],
+     "titel": "Je prends d’abord …",
+     "spalten": 2
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
       "« Ce n’était pas OK que je … »",
       "« Ça m’a touché que … »",
       "« Je voudrais clarifier quelque chose pour que … »"
@@ -4565,7 +4581,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Jeu de rôle : dis ta première phrase – la personne en face de toi réagit d’abord de façon ouverte, puis fermée. Ensuite, vous échangez les rôles. Évalue comment ça s’est passé."
+     "text": "Jeu de rôle : dis ta première phrase – la personne en face de toi réagit d’abord de façon ouverte, puis fermée. S’il reste du temps, vous échangez les rôles. Évalue comment ça s’est passé."
     },
     {
      "art": "einschaetzung",
@@ -4633,7 +4649,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche er oder sie selbst gern hören würde; die vier Fragen im Kasten leiten die Vorbereitung. Aufgabe 2 ist der Kern: Situation wählen (erfunden oder echt, eine echte ist freiwillig) und ankreuzen: mit wem, wann und wo, erster Satz, Angebot. Danach das Rollenspiel in drei Runden mit Stopp-Wort; die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind zum Ankreuzen.",
+     "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche er oder sie selbst gern hören würde. Aufgabe 2 ist der Kern: Situation wählen (erfunden oder echt, eine echte ist freiwillig) und ankreuzen: mit wem, wann und wo, erstes Werkzeug, erster Satz, Angebot. Danach das Rollenspiel in zwei Runden mit Stopp-Wort (getauscht wird nur, wenn Zeit bleibt); die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind zum Ankreuzen.",
      "sagen": [
       "Wie fühlt sich jede Entschuldigung an, wenn du sie bekommst?",
       "Was würde dir helfen, wenn die andere Person abblockt?"
@@ -4641,7 +4657,7 @@
      "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Möglichkeiten vor, und der oder die Jugendliche zeigt darauf. Geht es um etwas Schweres, bleibt es bei der erfundenen Situation mit Ben und Jana. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
     },
     "fr": {
-     "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle il ou elle aimerait entendre soi-même ; les quatre questions de l’encadré guident la préparation. L’exercice 2 est le cœur : choisir une situation (inventée ou réelle, une situation réelle est facultative) et cocher : avec qui, quand et où, première phrase, proposition. Ensuite, le jeu de rôle en trois manches avec un mot d’arrêt ; l’évaluation suit tout de suite. La boîte à outils et la mission se cochent.",
+     "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle il ou elle aimerait entendre soi-même. L’exercice 2 est le cœur : choisir une situation (inventée ou réelle, une situation réelle est facultative) et cocher : avec qui, quand et où, premier outil, première phrase, proposition. Ensuite, le jeu de rôle en deux manches avec un mot d’arrêt (on n’échange les rôles que s’il reste du temps) ; l’évaluation suit tout de suite. La boîte à outils et la mission se cochent.",
      "sagen": [
       "Comment chaque excuse te fait-elle ressentir quand tu la reçois ?",
       "Qu’est-ce qui t’aiderait si l’autre personne se ferme ?"
@@ -4652,14 +4668,14 @@
   },
   "fr": {
    "titel": "Se réconcilier et assumer sa part",
-   "text": "Avec les degrés, la plongée, la reformulation et la négociation, le ou la jeune a quatre outils ; aujourd’hui s’ajoute le cinquième – assumer sa part et réparer – et on prépare une situation réelle de cette semaine. D’abord, il ou elle compare sur la fiche trois excuses de Ben à Jana et trouve celle qui assume la responsabilité ; quatre questions aident à se préparer. Ensuite, il ou elle choisit une situation, réelle ou inventée (il ou elle décide à quel point elle est proche), et planifie : avec qui, quand et où, ce qui s’est passé, sa propre part et la première phrase. Avant de jouer, une minute pour se poser : expirer trois fois lentement. L’adulte joue l’autre personne en deux manches (d’abord ouverte, puis fermée) avec un mot d’arrêt ; à la troisième manche, ils échangent les rôles, pour que le ou la jeune sente comment la phrase arrive.",
+   "text": "Avec les degrés, la plongée, la reformulation et la négociation, le ou la jeune a quatre outils ; aujourd’hui s’ajoute le cinquième – assumer sa part et réparer – et on prépare une situation de cette semaine. D’abord, il ou elle compare sur la fiche trois excuses de Ben à Jana et trouve celle qui assume la responsabilité. Ensuite, il ou elle choisit une situation, réelle ou inventée (il ou elle décide à quel point elle est proche), et planifie : avec qui, quand et où, ce qui s’est passé, sa propre part, lequel des quatre autres outils vient en premier et la première phrase. Avant de jouer, une minute pour se poser (expirer trois fois lentement) et on convient d’un mot d’arrêt. L’adulte joue l’autre personne en deux manches, d’abord ouverte (« Merci de me le dire. »), puis fermée (« C’est trop tard pour ça. ») ; s’il reste du temps, ils échangent les rôles, pour que le ou la jeune sente comment la phrase arrive.",
    "sagen": [
     "Assumer sa part, c’est dire ce que j’ai fait – sans « mais » et sans « si tu es si susceptible ».",
-    "Demande-toi d’abord : qu’est-ce qui s’est passé, qui est touché et comment, et qu’est-ce qu’il faut pour que ça aille mieux ?",
+    "Demande-toi d’abord : qu’est-ce qui s’est passé, qui est touché, qu’est-ce qu’il faut pour que ça aille mieux – et quel outil tu prends en premier ?",
     "Il s’agit seulement de ta part. L’autre part, c’est l’autre personne qui la porte.",
     "Si elle se ferme, tu as quand même fait ce qui dépendait de toi."
    ],
-   "wennEsKippt": "Si la situation choisie touche de trop près, on reste avec Ben et Jana ; le plan est le même, mais inventé. Si écrire est pénible, le ou la jeune dit la phrase et l’adulte écrit trois mots ; s’il ou elle ne veut pas jouer, il suffit de dire la phrase à voix haute et de discuter de la réaction possible. Deux exercices suffisent."
+   "wennEsKippt": "Si la situation choisie touche de trop près, on reste avec Ben et Jana ; le plan est le même, mais inventé. Si écrire est pénible, le ou la jeune dit la phrase et l’adulte écrit trois mots ; s’il ou elle ne veut pas jouer, on dit seulement la phrase à voix haute et on discute de la réaction possible. S’il s’agit de menaces, de harcèlement ou de violence contre lui ou elle-même, on ne prépare pas de discussion avec l’autre côté : on cherche d’abord qui peut aider."
   },
   "zugang": {
    "lesen": 1,
@@ -4768,9 +4784,10 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
-        "Heute: alle Werkzeuge in deinem Kompass"
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
+        "Schon dabei: Werkzeug 1 bis 5",
+        "Heute: alle Werkzeuge im Kompass"
        ]
       },
       {
@@ -4791,7 +4808,7 @@
     {
      "art": "aufgabe",
      "text": "Dein Konflikt-Profil: Mal in jedem Stück so viele Ringe aus, wie es dir heute gelingt.",
-     "hinweis": "Innen heißt wenig, außen viel. Ehrlich, nicht freundlich: Ein kleiner Ring ist ein Startpunkt."
+     "hinweis": "Innen heißt wenig, außen viel. Ehrlich und fair zu dir: Ein kleiner Ring ist ein Startpunkt."
     },
     {
      "art": "netz",
@@ -4827,7 +4844,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Dein Werkzeugkasten ist voll. Kreis das Werkzeug ein, das dir am meisten hilft."
+     "text": "Rückblick: Dein Werkzeugkasten ist voll. Kreis das Werkzeug ein, das dir am meisten hilft."
     },
     {
      "art": "bilder",
@@ -4863,9 +4880,11 @@
     {
      "art": "satzanfaenge",
      "items": [
+      "Am Anfang dachte ich über Streit:",
+      "Heute sehe ich das so:",
       "Das bleibt bei mir:"
      ],
-     "linien": 2
+     "linien": 1
     },
     {
      "art": "aufgabe",
@@ -4894,9 +4913,10 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
-        "Aujourd’hui : tous les outils dans ta boussole"
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
+        "Déjà acquis : outils 1 à 5",
+        "Aujourd’hui : tous les outils dans la boussole"
        ]
       },
       {
@@ -4917,7 +4937,7 @@
     {
      "art": "aufgabe",
      "text": "Ton profil de conflit : colorie dans chaque part autant d’anneaux que tu y arrives aujourd’hui.",
-     "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Honnête, pas gentil : un petit anneau est un point de départ."
+     "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Sois honnête et juste envers toi : un petit anneau est un point de départ."
     },
     {
      "art": "netz",
@@ -4953,7 +4973,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Ta boîte à outils est pleine. Entoure l’outil qui t’aide le plus."
+     "text": "Retour en arrière : ta boîte à outils est pleine. Entoure l’outil qui t’aide le plus."
     },
     {
      "art": "bilder",
@@ -4989,9 +5009,11 @@
     {
      "art": "satzanfaenge",
      "items": [
-      "Voici ce qui me reste :"
+      "Au début, je pensais des disputes :",
+      "Aujourd’hui, je vois ça ainsi :",
+      "Ce que je garde :"
      ],
-     "linien": 2
+     "linien": 1
     },
     {
      "art": "aufgabe",
@@ -5012,7 +5034,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt das Konflikt-Profil ein, ehrlich und nicht freundlich, und sagt zu zwei Stücken, woran er oder sie es merkt; die Fachkraft fragt nach einem Beispiel aus den Stunden und blättert dazu die Blätter der Mappe durch. In Aufgabe 2 schreibt er oder sie die Kompass-Karte, klein und konkret. In Aufgabe 3 trägt er oder sie eine Vertrauensperson ein – nur, wenn er oder sie mag; die Nummern liest die Fachkraft kurz vor. Werkzeugkasten und Auftrag kommen zum Schluss; die Blätter aus der Mappe darf der oder die Jugendliche zum Abschied mitnehmen.",
+     "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt das Konflikt-Profil ein, ehrlich und fair zu sich selbst, und sagt zu zwei Stücken, woran er oder sie es merkt; die Fachkraft fragt nach einem Beispiel aus den Stunden und blättert dazu die Blätter der Mappe durch. In Aufgabe 2 schreibt er oder sie die Kompass-Karte, klein und konkret. In Aufgabe 3 trägt er oder sie eine Vertrauensperson ein – nur, wenn er oder sie mag; die Nummern liest die Fachkraft kurz vor. Werkzeugkasten, Rückblick und Auftrag kommen zum Schluss; die Blätter aus der Mappe darf der oder die Jugendliche zum Abschied mitnehmen.",
      "sagen": [
       "Woran würdest du merken, dass ein Stück größer geworden ist?",
       "Welcher Schritt würde dir in der nächsten Woche wirklich helfen?"
@@ -5020,7 +5042,7 @@
      "wennEsKippt": "Fällt das Einschätzen schwer, genügen zwei oder drei Stücke, und die Fachkraft nennt ein Beispiel aus den Stunden. Mag der oder die Jugendliche keine Person eintragen, bleibt das Feld leer – die Nummern gelten trotzdem. Ist die Zeit knapp, genügen die Aufgaben 1 und 2; zwei Zeilen der Karte reichen."
     },
     "fr": {
-     "text": "Exercice 1 ensemble : le ou la jeune colorie le profil de conflit, honnêtement et pas gentiment, et dit pour deux parts à quoi il ou elle le remarque ; l’adulte demande un exemple tiré des séances et feuillette avec lui ou elle les fiches du dossier. À l’exercice 2, il ou elle écrit la carte-boussole, petite et concrète. À l’exercice 3, il ou elle note une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit rapidement les numéros. La boîte à outils et la mission viennent à la fin ; le ou la jeune peut emporter les fiches du dossier en partant.",
+     "text": "Exercice 1 ensemble : le ou la jeune colorie le profil de conflit, honnêtement et avec justesse envers soi, et dit pour deux parts à quoi il ou elle le remarque ; l’adulte demande un exemple tiré des séances et feuillette avec lui ou elle les fiches du dossier. À l’exercice 2, il ou elle écrit la carte-boussole, petite et concrète. À l’exercice 3, il ou elle note une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit rapidement les numéros. La boîte à outils, le retour en arrière et la mission viennent à la fin ; le ou la jeune peut emporter les fiches du dossier en partant.",
      "sagen": [
       "À quoi remarquerais-tu qu’une part a grandi ?",
       "Quel pas t’aiderait vraiment la semaine prochaine ?"
@@ -5053,7 +5075,7 @@
    "titel": "Einzelkurs Konflikte klären"
   },
   "titel": "Mein Konflikt-Kompass",
-  "text": "Der oder die Jugendliche hat jetzt fünf Werkzeuge; heute schaut er oder sie auf das Ganze. Zuerst färbt er oder sie das Konflikt-Profil auf dem Blatt ein und sagt zu zwei Stücken, woran er oder sie es merkt. Dann zeigt er oder sie ein Werkzeug in einer Minute Rollenspiel, bei dem die Fachkraft die andere Seite spielt, und danach wird getauscht. Danach entsteht die Kompass-Karte: Warnzeichen, erster Schritt, erste Frage, erster Satz – und wer hilft. Zum Schluss legt er oder sie alle Blätter aus der Mappe zusammen und sagt, was bleibt; die Fachkraft nennt, was ihr an ihm oder ihr aufgefallen ist (mit einem Beispiel).",
+  "text": "Der oder die Jugendliche hat jetzt fünf Werkzeuge; heute schaut er oder sie auf das Ganze. Zuerst kreuzt er oder sie das Konflikt-Profil auf dem Blatt an und sagt zu zwei Stücken, woran er oder sie es merkt. Dann zeigt er oder sie ein Werkzeug in einer Minute Rollenspiel, bei dem die Fachkraft die andere Seite spielt, und danach wird getauscht. Danach entsteht die Kompass-Karte: Warnzeichen, erster Schritt, erste Frage, erster Satz – und wer hilft. Zum Schluss legt er oder sie alle Blätter aus der Mappe zusammen und sagt, was bleibt; die Fachkraft nennt, was ihr an ihm oder ihr aufgefallen ist (mit einem Beispiel).",
   "sagen": [
    "Du hast fünf Werkzeuge. Welches hast du am meisten gebraucht – und welches wackelt noch?",
    "Zeig mir eines in einer Minute. Ich bin die andere Seite, du bestimmst, womit du beginnst.",
@@ -5147,9 +5169,10 @@
        "symbol": "wissen",
        "titel": "Der Konflikt-Eisberg",
        "punkte": [
-        "Oben, sichtbar: Positionen – was gesagt und gefordert wird",
-        "Unten, verborgen: Interessen und Bedürfnisse – worum es wirklich geht",
-        "Heute: alle Werkzeuge in deinem Kompass"
+        "Oben: Positionen – was gesagt wird",
+        "Unten: Interessen – worum es geht",
+        "Schon dabei: Werkzeug 1 bis 5",
+        "Heute: alle Werkzeuge im Kompass"
        ]
       },
       {
@@ -5170,7 +5193,7 @@
     {
      "art": "aufgabe",
      "text": "Dein Konflikt-Profil: Wie gut gelingt dir jedes Werkzeug heute? Kreuz in jeder Zeile an.",
-     "hinweis": "Ehrlich, nicht freundlich: „noch üben“ ist ein Startpunkt."
+     "hinweis": "Ehrlich und fair zu dir: „noch üben“ ist ein Startpunkt."
     },
     {
      "art": "einschaetzung",
@@ -5294,7 +5317,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Dein Werkzeugkasten ist voll. Kreis das Werkzeug ein, das dir am meisten hilft."
+     "text": "Rückblick: Dein Werkzeugkasten ist voll. Kreis das Werkzeug ein, das dir am meisten hilft."
     },
     {
      "art": "bilder",
@@ -5326,6 +5349,17 @@
      ],
      "spalten": 3,
      "klein": true
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
+      "früher aussteigen",
+      "nachfragen statt vorwerfen",
+      "zuhören und spiegeln",
+      "Abmachungen treffen"
+     ],
+     "titel": "Im Vergleich zum Anfang kann ich heute besser (mehrere möglich):",
+     "spalten": 2
     },
     {
      "art": "ankreuzen",
@@ -5365,9 +5399,10 @@
        "symbol": "wissen",
        "titel": "L’iceberg du conflit",
        "punkte": [
-        "En haut, visible : les positions – ce qu’on dit et ce qu’on exige",
-        "En bas, caché : les intérêts et les besoins – ce qui compte vraiment",
-        "Aujourd’hui : tous les outils dans ta boussole"
+        "En haut : les positions – ce qui se dit",
+        "En bas : les intérêts – ce qui compte",
+        "Déjà acquis : outils 1 à 5",
+        "Aujourd’hui : tous les outils dans la boussole"
        ]
       },
       {
@@ -5388,7 +5423,7 @@
     {
      "art": "aufgabe",
      "text": "Ton profil de conflit : dans quelle mesure chaque outil te réussit-il aujourd’hui ? Coche dans chaque ligne.",
-     "hinweis": "Honnête, pas gentil : « à travailler » est un point de départ."
+     "hinweis": "Sois honnête et juste envers toi : « à travailler » est un point de départ."
     },
     {
      "art": "einschaetzung",
@@ -5500,10 +5535,10 @@
      "art": "ankreuzen",
      "items": [
       "une enseignante ou un enseignant de confiance",
-      "la médiation ou le service d’accompagnement de l’école",
+      "la médiation scolaire ou le service psycho-social de l’école",
       "mon entraîneur ou mon entraîneuse",
       "un ami ou une amie",
-      "ma personne d’accompagnement ici"
+      "l’adulte qui m’accompagne ici"
      ],
      "spalten": 2
     },
@@ -5512,7 +5547,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Ta boîte à outils est pleine. Entoure l’outil qui t’aide le plus."
+     "text": "Retour en arrière : ta boîte à outils est pleine. Entoure l’outil qui t’aide le plus."
     },
     {
      "art": "bilder",
@@ -5548,6 +5583,17 @@
     {
      "art": "ankreuzen",
      "items": [
+      "sortir plus tôt de l’escalade",
+      "poser une question plutôt que reprocher",
+      "écouter et reformuler",
+      "convenir d’un accord"
+     ],
+     "titel": "Par rapport au début, je sais mieux (plusieurs réponses possibles) :",
+     "spalten": 2
+    },
+    {
+     "art": "ankreuzen",
+     "items": [
       "Un conflit a des degrés – je peux en sortir.",
       "Derrière chaque position, il y a un intérêt.",
       "Reformuler montre : j’ai compris ce que tu veux dire.",
@@ -5575,7 +5621,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt das Konflikt-Profil ein, ehrlich und nicht freundlich, und sagt zu zwei Stücken, woran er oder sie es merkt; die Fachkraft fragt nach einem Beispiel aus den Stunden und blättert dazu die Blätter der Mappe durch. In Aufgabe 2 kreuzt er oder sie die Kompass-Karte an: Warnzeichen, erster Schritt, erster Satz. In Aufgabe 3 kreuzt er oder sie an, wer hilft; die Nummern liest die Fachkraft kurz vor. Werkzeugkasten und Auftrag kommen zum Schluss; die Blätter aus der Mappe darf der oder die Jugendliche zum Abschied mitnehmen.",
+     "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt das Konflikt-Profil an, ehrlich und fair zu sich selbst, und sagt zu zwei Stücken, woran er oder sie es merkt; die Fachkraft fragt nach einem Beispiel aus den Stunden und blättert dazu die Blätter der Mappe durch. In Aufgabe 2 kreuzt er oder sie die Kompass-Karte an: Warnzeichen, erster Schritt, erster Satz. In Aufgabe 3 kreuzt er oder sie an, wer hilft; die Nummern liest die Fachkraft kurz vor. Werkzeugkasten, Rückblick und Auftrag kommen zum Schluss; die Blätter aus der Mappe darf der oder die Jugendliche zum Abschied mitnehmen.",
      "sagen": [
       "Woran würdest du merken, dass ein Stück größer geworden ist?",
       "Welcher Schritt würde dir in der nächsten Woche wirklich helfen?"
@@ -5583,7 +5629,7 @@
      "wennEsKippt": "Fällt das Einschätzen schwer, genügen zwei oder drei Stücke, und die Fachkraft nennt ein Beispiel aus den Stunden. Fällt Lesen schwer, liest die Fachkraft die Möglichkeiten vor, und der oder die Jugendliche zeigt darauf. Ist die Zeit knapp, genügen die Aufgaben 1 und 2; zwei Kreuze reichen."
     },
     "fr": {
-     "text": "Exercice 1 ensemble : le ou la jeune colorie le profil de conflit, honnêtement et pas gentiment, et dit pour deux parts à quoi il ou elle le remarque ; l’adulte demande un exemple tiré des séances et feuillette avec lui ou elle les fiches du dossier. À l’exercice 2, il ou elle coche la carte-boussole : signe d’alerte, premier pas, première phrase. À l’exercice 3, il ou elle coche qui aide ; l’adulte lit rapidement les numéros. La boîte à outils et la mission viennent à la fin ; le ou la jeune peut emporter les fiches du dossier en partant.",
+     "text": "Exercice 1 ensemble : le ou la jeune coche le profil de conflit, honnêtement et avec justesse envers soi, et dit pour deux parts à quoi il ou elle le remarque ; l’adulte demande un exemple tiré des séances et feuillette avec lui ou elle les fiches du dossier. À l’exercice 2, il ou elle coche la carte-boussole : signe d’alerte, premier pas, première phrase. À l’exercice 3, il ou elle coche qui aide ; l’adulte lit rapidement les numéros. La boîte à outils, le retour en arrière et la mission viennent à la fin ; le ou la jeune peut emporter les fiches du dossier en partant.",
      "sagen": [
       "À quoi remarquerais-tu qu’une part a grandi ?",
       "Quel pas t’aiderait vraiment la semaine prochaine ?"
@@ -5594,7 +5640,7 @@
   },
   "fr": {
    "titel": "Ma boussole des conflits",
-   "text": "Le ou la jeune a maintenant cinq outils ; aujourd’hui, il ou elle regarde l’ensemble. D’abord, il ou elle colorie le profil de conflit sur la fiche et dit pour deux parts à quoi il ou elle le remarque. Ensuite, il ou elle montre un outil en une minute de jeu de rôle, où l’adulte joue l’autre côté, puis on échange. Puis naît la carte-boussole : signe d’alerte, premier pas, première question, première phrase – et qui aide. Pour finir, il ou elle réunit toutes les fiches du dossier et dit ce qui reste ; l’adulte dit ce qu’il a remarqué chez le ou la jeune (avec un exemple).",
+   "text": "Le ou la jeune a maintenant cinq outils ; aujourd’hui, il ou elle regarde l’ensemble. D’abord, il ou elle coche le profil de conflit sur la fiche et dit pour deux parts à quoi il ou elle le remarque. Ensuite, il ou elle montre un outil en une minute de jeu de rôle, où l’adulte joue l’autre côté, puis on échange. Puis naît la carte-boussole : signe d’alerte, premier pas, première question, première phrase – et qui aide. Pour finir, il ou elle réunit toutes les fiches du dossier et dit ce qui reste ; l’adulte dit ce qu’il a remarqué chez le ou la jeune (avec un exemple).",
    "sagen": [
     "Tu as cinq outils. Lequel as-tu le plus utilisé – et lequel est encore fragile ?",
     "Montre-m’en un en une minute. Je suis l’autre côté, tu décides par où tu commences.",

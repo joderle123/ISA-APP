@@ -89,7 +89,19 @@ export function alternativen(k: Katalog, p: Profil, plan: Plan, ort: Ort, v: Vor
   }
   liste = liste.filter((b) => b.e.id !== x.ref)
   liste.sort((a, b) => rang(a, b, salz))
-  return mmr(liste, anzahl).map((b) => ({ eintrag: b.e, wert: Math.round(b.s * 1000) / 1000, warum: warum(b, c, { phase: s.phase, nr: s.nr, rolle: x.rolle, ritual }) }))
+  const aus = (b: Bewertet, kurs?: Alternative['kurs']): Alternative => ({ eintrag: b.e, wert: Math.round(b.s * 1000) / 1000, warum: warum(b, c, { phase: s.phase, nr: s.nr, rolle: x.rolle, ritual }), ...(kurs ? { kurs } : {}) })
+  // Einzelkurs: zuerst, was den Kurs nicht verlässt – dieselbe Sitzung in der anderen Variante (bzw. ein anderes Ritual
+  // desselben Kurses); alles andere ist gekennzeichnet (Rückmeldung 16.10.: „Aufgaben wechseln, ohne dass der Kurs sich ändert“)
+  const kursId = cur?.typ === 'schritt' ? (cur.linie?.id.startsWith('kurs-') ? cur.linie.id : cur.kurs) : undefined
+  if (kursId && cur?.typ === 'schritt') {
+    const imKurs = (e: KatalogEintrag) => e.typ === 'schritt' && (ritual ? e.kurs === kursId : e.linie?.id === kursId && e.linie.nr === cur.linie?.nr)
+    const gleich = (k.nachRolle.get(ritual ? x.rolle : 'kern') ?? [])
+      .filter((e) => e.id !== x.ref && imKurs(e) && pruefe(e, c, ritual ? { ritual: true, rolle: x.rolle } : { rolle: 'kern' }) === null)
+      .map((e) => bewerte(e, c, { phase: s.phase }))
+    const rest = liste.filter((b) => !imKurs(b.e))
+    return [...gleich.map((b) => aus(b, 'gleich')), ...mmr(rest, Math.max(0, anzahl - gleich.length)).map((b) => aus(b, 'verlaesst'))]
+  }
+  return mmr(liste, anzahl).map((b) => aus(b))
 }
 
 function blattAlternativen(c: Kontext, plan: Plan, ort: Ort, folge: Set<string>, anzahl: number): Alternative[] {

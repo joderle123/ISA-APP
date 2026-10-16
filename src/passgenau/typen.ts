@@ -354,7 +354,9 @@ export interface Rueckmeldung {
 }
 
 /** Eine Alternative beim Antippen (5.8) */
-export interface Alternative { eintrag: KatalogEintrag; wert: number; warum: string[] }
+/** kurs: im Einzelkurs – „gleich“ = dieselbe Kurs-Sitzung in anderer Variante (der rote Faden bleibt), „verlaesst“ = eine
+ *  Übung außerhalb des Kurses (die nächsten Sitzungen knüpfen an die ersetzte Sitzung an) */
+export interface Alternative { eintrag: KatalogEintrag; wert: number; warum: string[]; kurs?: 'gleich' | 'verlaesst' }
 
 // ---------------------------------------------------------------------------------------------------------------
 // Vorlieben und Ereignisse (6.9)
