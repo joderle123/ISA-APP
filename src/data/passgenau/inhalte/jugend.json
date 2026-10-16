@@ -142,7 +142,7 @@
     },
     {
      "art": "skala",
-     "frage": "Wie leicht wäre es für mich, diesen klugen Weg wirklich zu gehen?",
+     "frage": "Wie leicht wäre es für mich, in so einer Szene den klugen Weg zu gehen?",
      "von": "sehr schwer",
      "bis": "ganz leicht",
      "stufen": 5
@@ -193,7 +193,7 @@
     },
     {
      "art": "skala",
-     "frage": "Est-ce que ce serait facile pour moi de prendre vraiment cette voie intelligente ?",
+     "frage": "Est-ce que ce serait facile pour moi de prendre la voie intelligente dans une telle scène ?",
      "von": "très difficile",
      "bis": "très facile",
      "stufen": 5
@@ -230,6 +230,14 @@
     ],
     "versuch": "Cette semaine, quand tu t’énerves, essaie une fois de passer en revue les trois voies dans ta tête : envenimer, neutre, intelligent. Puis tu choisis.",
     "probe": "Luca attend le bus, et Mehdi écrit dans le groupe que Luca est « encore en retard ». Luca veut répondre tout de suite. Que pourrait faire Luca avec les trois voies ?"
+   }
+  },
+  "linie": {
+   "id": "impulskontrolle-12-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Bei Ärger nicht eskalieren: Wege prüfen, neutral antworten, vor dem Senden pausieren",
+    "fr": "Ne pas s’emporter : examiner les voies, répondre neutre, faire une pause avant d’envoyer"
    }
   }
  },
@@ -433,6 +441,18 @@
     "versuch": "Cette semaine, essaie une fois de répondre à une pique par « Peut-être. » et de continuer ton chemin. Regarde ensuite comment ça fait.",
     "probe": "Zoé prend un sandwich à la cantine, et derrière elle quelqu’un lance : « Dépêche-toi, Majesté, on n’a pas toute la journée. » Que pourrait faire Zoé pour laisser glisser la pique ?"
    }
+  },
+  "linie": {
+   "id": "impulskontrolle-12-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Bei Ärger nicht eskalieren: Wege prüfen, neutral antworten, vor dem Senden pausieren",
+    "fr": "Ne pas s’emporter : examiner les voies, répondre neutre, faire une pause avant d’envoyer"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du drei Wege geprüft: schlimmer machen, neutral bleiben, klug handeln. Heute übst du den neutralen Weg, wenn jemand stichelt.",
+    "fr": "La dernière fois, tu as examiné trois voies : envenimer, rester neutre, agir intelligemment. Aujourd’hui, tu t’exerces à rester neutre quand quelqu’un te pique."
+   }
   }
  },
  {
@@ -532,7 +552,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Im Chat des Kurses schreibt Diogo: „Sagen wir Zoé einfach eine falsche Uhrzeit für morgen, das wird lustig.“ Zwei antworten schon mit einem Lachen."
+     "text": "Im Chat schreibt Diogo: „Sagen wir Zoé einfach eine falsche Uhrzeit für morgen, das wird lustig.“ Zwei antworten schon mit einem Lachen."
     },
     {
      "art": "zuordnen",
@@ -583,7 +603,7 @@
    "fr": [
     {
      "art": "text",
-     "text": "Dans le chat du cours, Diogo écrit : « Disons à Zoé une fausse heure pour demain, ça va être drôle. » Deux personnes répondent déjà par un rire."
+     "text": "Dans le chat, Diogo écrit : « Disons à Zoé une fausse heure pour demain, ça va être drôle. » Deux personnes répondent déjà par un rire."
     },
     {
      "art": "zuordnen",
@@ -812,7 +832,7 @@
      "art": "ankreuzen",
      "titel": "Quelles réponses Mila n’enverrait probablement plus telles quelles demain ? Coche.",
      "items": [
-      "« Alors fais tout toi-même, directement. »",
+      "« Alors fais tout toi-même, puisque c’est comme ça. »",
       "« Je t’envoie mes diapos avant 20 heures. Ça te va ? »",
       "« Tu exagères encore une fois. »",
       "« J’ai sous-estimé le temps. Lesquelles te manquent exactement ? »",
@@ -873,6 +893,18 @@
     ],
     "versuch": "Cette semaine, laisse une fois un message énervé reposer trois minutes : téléphone de côté, lève-toi un instant, puis décide si tu l’envoies.",
     "probe": "Inês lit dans le chat de classe : « Qui a pris ma calculatrice ? » Elle se sent accusée et a déjà tapé une réponse cinglante. Que pourrait faire Inês avec la pause de trois minutes ?"
+   }
+  },
+  "linie": {
+   "id": "impulskontrolle-12-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Bei Ärger nicht eskalieren: Wege prüfen, neutral antworten, vor dem Senden pausieren",
+    "fr": "Ne pas s’emporter : examiner les voies, répondre neutre, faire une pause avant d’envoyer"
+   },
+   "bruecke": {
+    "de": "Du hast geübt, auf Sprüche kurz und neutral zu antworten. Heute geht es um Chatnachrichten: erst Pause, dann antworten.",
+    "fr": "Tu as répété comment répondre court et neutre à une pique. Aujourd’hui, on passe aux messages : d’abord une pause, ensuite la réponse."
    }
   }
  },
@@ -1310,6 +1342,18 @@
     ],
     "versuch": "Cette semaine, essaie une fois de rester quatre minutes d’affilée sur une tâche et de marquer chaque décrochage d’un trait. Rien de plus.",
     "probe": "Lara veut finir cinq exercices de maths avant l’entraînement, mais elle regarde son portable toutes les quelques secondes. Que pourrait faire Lara avec les quatre minutes d’affilée ?"
+   }
+  },
+  "linie": {
+   "id": "aufmerksamkeit-12-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Ablenkungen erkennen und bremsen – und dann länger am Stück konzentriert arbeiten",
+    "fr": "Reconnaître et freiner les distractions pour travailler plus longtemps sans décrocher"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du Ablenker sortiert und ein Gegenmittel ausprobiert. Heute arbeitest du vier Minuten am Stück und machst bei jedem Abschweifen einen Strich.",
+    "fr": "Tu as déjà trié tes distractions et testé un antidote. Aujourd’hui, tu travailles quatre minutes d’affilée et notes chaque décrochage d’un trait."
    }
   }
  },
@@ -1754,6 +1798,18 @@
     "versuch": "Cette semaine, teste une fois une de tes règles un mauvais jour. Si elle craque, rends-la plus petite ou plus précise – sans reproches.",
     "probe": "Zoé s’est donné cette règle : « Trente minutes de vocabulaire par jour. » Après une longue journée de cours, elle craque à chaque fois. Que pourrait faire Zoé avec le crash-test de la règle ?"
    }
+  },
+  "linie": {
+   "id": "lernstrategien-12-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Besser lernen: abfragen statt lesen, rückwärts planen, eine Lernregel testen",
+    "fr": "Mieux apprendre : se tester au lieu de relire, planifier à rebours, tester une règle"
+   },
+   "bruecke": {
+    "de": "Du hast einen Lernplan rückwärts gebaut. Heute prüfst du eine Lernregel: Hält sie auch an einem miesen Tag?",
+    "fr": "Tu as construit un planning à l’envers. Aujourd’hui, tu testes une règle de travail : tient-elle aussi un mauvais jour ?"
+   }
   }
  },
  {
@@ -1878,7 +1934,7 @@
      "titel": "Was kann Kai beim nächsten Mal selbst ändern? Kreuz an, mehrere gehen.",
      "items": [
       "den Wecker am Abend vorher stellen",
-      "früher losgehen, damit zehn Minuten Verspätung nicht reichen",
+      "früher losgehen, damit zehn Minuten Verspätung nicht schaden",
       "die Uhrzeit bei Jana noch einmal bestätigen lassen",
       "erreichen, dass der Bus pünktlich kommt",
       "Jana bitten, sich nie wieder zu irren",
@@ -1923,7 +1979,7 @@
      "titel": "Que peut changer Kai lui-même la prochaine fois ? Coche, plusieurs réponses possibles.",
      "items": [
       "mettre son réveil la veille au soir",
-      "partir plus tôt pour que dix minutes de retard ne suffisent pas",
+      "partir plus tôt pour que dix minutes de retard ne posent pas de problème",
       "se faire confirmer l’heure par Jana",
       "faire en sorte que le bus soit à l’heure",
       "demander à Jana de ne plus jamais se tromper",
@@ -2087,17 +2143,9 @@
      "spalten": 1
     },
     {
-     "art": "satzanfaenge",
-     "items": [
-      "Meine Beschwerde (echt oder erfunden):",
-      "Der Wunsch dahinter:"
-     ],
-     "linien": 1
-    },
-    {
      "art": "tabelle",
      "spalten": [
-      "Drei Vorschläge (auch verrückte)",
+      "Drei Vorschläge zu einer Beschwerde (echt oder erfunden, auch verrückte)",
       "Was hätte die andere Seite davon?"
      ],
      "zeilen": 3
@@ -2127,17 +2175,9 @@
      "spalten": 1
     },
     {
-     "art": "satzanfaenge",
-     "items": [
-      "Ma plainte (vécue ou inventée) :",
-      "Le souhait qui se cache derrière :"
-     ],
-     "linien": 1
-    },
-    {
      "art": "tabelle",
      "spalten": [
-      "Trois propositions (même farfelues)",
+      "Trois propositions pour une plainte (vécue ou inventée, même farfelues)",
       "Qu’est-ce que l’autre côté y gagnerait ?"
      ],
      "zeilen": 3
@@ -2460,7 +2500,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Tom (erfunden) kommt morgens fast immer zu spät. Links steht ein Morgen, Glied für Glied. Verbinde jedes Stück mit dem passenden Kästchen: Auslöser – Gedanke – Gefühl – Handlung – Folge."
+     "text": "Tom (erfunden) kommt morgens fast immer zu spät. Heute ist der Auslöser: Um 6.30 Uhr klingelt der Wecker. Verbinde jedes weitere Stück mit dem passenden Kästchen: Gedanke – Gefühl – Handlung – Folge."
     },
     {
      "art": "zuordnen",
@@ -2469,18 +2509,16 @@
       "Kästchen"
      ],
      "links": [
-      "6.30 Uhr: Der Wecker klingelt.",
       "„Noch fünf Minuten.“",
-      "müde, es ist gemütlich",
+      "müde und wohlig warm",
       "Wecker aus, weiterschlafen",
       "Bus verpasst, zu spät im Lycée"
      ],
      "rechts": [
       "Handlung",
-      "Auslöser",
       "Folge",
-      "Gefühl",
-      "Gedanke"
+      "Gedanke",
+      "Gefühl"
      ]
     },
     {
@@ -2511,7 +2549,7 @@
    "fr": [
     {
      "art": "text",
-     "text": "Tom (inventé) arrive presque toujours en retard le matin. À gauche, un matin, maillon par maillon. Relie chaque morceau à la bonne case : déclencheur – pensée – émotion – action – conséquence."
+     "text": "Tom (inventé) arrive presque toujours en retard le matin. Aujourd’hui, le déclencheur : à 6 h 30, le réveil sonne. Relie chaque autre morceau à la bonne case : pensée – émotion – action – conséquence."
     },
     {
      "art": "zuordnen",
@@ -2520,23 +2558,21 @@
       "Case"
      ],
      "links": [
-      "6 h 30 : le réveil sonne.",
       "« Encore cinq minutes. »",
-      "fatigué, c’est confortable",
+      "fatigué, bien au chaud",
       "réveil éteint, il se rendort",
       "bus raté, en retard au lycée"
      ],
      "rechts": [
       "action",
-      "déclencheur",
       "conséquence",
-      "émotion",
-      "pensée"
+      "pensée",
+      "émotion"
      ]
     },
     {
      "art": "ankreuzen",
-     "titel": "À quel maillon Tom pourrait-il casser la chaîne le plus facilement ? Coche-en un.",
+     "titel": "À quel maillon Tom pourrait-il casser la chaîne le plus facilement ? Coches-en un.",
      "items": [
       "déclencheur",
       "pensée",
@@ -2728,7 +2764,7 @@
     },
     {
      "art": "skala",
-     "frage": "Wie sehr würde es mich nerven, wenn mein Beginn so kurzfristig vorverlegt würde?",
+     "frage": "Wie sehr würde es mich nerven, wenn sich ein Termin von mir so kurzfristig ändern würde?",
      "von": "gar nicht",
      "bis": "sehr",
      "stufen": 5
@@ -2779,7 +2815,7 @@
     },
     {
      "art": "skala",
-     "frage": "À quel point ça m’énerverait si l’heure de mon début était avancée aussi vite ?",
+     "frage": "À quel point ça m’énerverait si un de mes rendez-vous changeait aussi vite, au dernier moment ?",
      "von": "pas du tout",
      "bis": "énormément",
      "stufen": 5
@@ -2816,6 +2852,18 @@
     ],
     "versuch": "Si un plan change cette semaine, essaie une fois la phrase « OK, nouveau plan. » – dans ta tête ou à voix haute. Regarde si ça aide un peu.",
     "probe": "Zoé voulait aller au terrain de basket avec Inês après les cours, mais Inês annule juste avant. Zoé sent l’agacement monter. Que pourrait faire Zoé avec « OK, nouveau plan. » ?"
+   }
+  },
+  "linie": {
+   "id": "selbstregulation-12-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Umschalten, wenn Neues kommt oder sich Pläne ändern: ein Satz im Kopf hilft",
+    "fr": "Basculer quand les plans changent : une phrase en tête aide"
+   },
+   "bruecke": {
+    "de": "Beim Werfen hast du umgeschaltet, als sich die Regel geändert hat. Heute ändern sich Pläne öfter, und du suchst dir einen Umschalt-Satz.",
+    "fr": "Pendant les lancers, tu as basculé quand la règle a changé. Aujourd’hui, les plans changent plus souvent, et tu cherches une phrase pour basculer."
    }
   }
  },
@@ -2925,7 +2973,7 @@
      "art": "ankreuzen",
      "titel": "Welche Gedanken könnten Lina durch den Kopf gehen? Kreuz an, mehrere gehen.",
      "items": [
-      "„Alle anderen können das schon.“",
+      "„Die anderen können das schon.“",
       "„Zwei Takte waren schon gut.“",
       "„Ich habe einfach kein Rhythmusgefühl.“",
       "„Beim zweiten Mal wird es ruhiger.“",
@@ -2941,14 +2989,14 @@
       "… ein Satz im Kopf dazu"
      ],
      "links": [
-      "„Alle anderen können das schon.“",
+      "„Die anderen können das schon.“",
       "„Ich habe einfach kein Rhythmusgefühl.“",
       "„Warum habe ich mich dafür gemeldet?“"
      ],
      "rechts": [
-      "„Ich übe seit zehn Minuten, nicht seit zehn Jahren.“",
+      "„Rhythmusgefühl kommt mit Übung. Ich übe erst seit zehn Minuten.“",
       "„Ich habe mich getraut. Jetzt nur zwei Takte.“",
-      "„Alle haben mal angefangen. Ich bin am Anfang.“"
+      "„Die anderen haben auch mal angefangen. Ich bin am Anfang.“"
      ]
     },
     {
@@ -2976,7 +3024,7 @@
      "art": "ankreuzen",
      "titel": "Quelles pensées pourraient passer par la tête de Lina ? Coche, plusieurs réponses possibles.",
      "items": [
-      "« Tous les autres savent déjà faire ça. »",
+      "« Les autres savent déjà faire ça. »",
       "« Deux mesures, c’était déjà bien. »",
       "« Je n’ai simplement aucun sens du rythme. »",
       "« La deuxième fois, ce sera plus calme. »",
@@ -2992,14 +3040,14 @@
       "… une phrase en tête"
      ],
      "links": [
-      "« Tous les autres savent déjà faire ça. »",
+      "« Les autres savent déjà faire ça. »",
       "« Je n’ai simplement aucun sens du rythme. »",
       "« Pourquoi est-ce que je me suis inscrite à ça ? »"
      ],
      "rechts": [
-      "« Je m’entraîne depuis dix minutes, pas depuis dix ans. »",
+      "« Le sens du rythme vient avec l’entraînement. Je m’entraîne depuis dix minutes seulement. »",
       "« Je me suis lancée. Maintenant, seulement deux mesures. »",
-      "« Tous ont commencé un jour. Moi, je suis au début. »"
+      "« Les autres ont aussi commencé un jour. Moi, je suis au début. »"
      ]
     },
     {
@@ -3049,6 +3097,14 @@
     ],
     "versuch": "Cette semaine, face à du nouveau, essaie de commencer lentement, en petit, avec une phrase en tête, p. ex. « Je m’entraîne encore. »",
     "probe": "En apprentissage, Sofia doit pour la première fois conseiller une cliente au téléphone. Elle est nerveuse et voudrait raccrocher vite. Que pourrait faire Sofia avec « lentement, petit, une phrase » ?"
+   }
+  },
+  "linie": {
+   "id": "selbstregulation-12-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Umschalten, wenn Neues kommt oder sich Pläne ändern: ein Satz im Kopf hilft",
+    "fr": "Basculer quand les plans changent : une phrase en tête aide"
    }
   }
  },
@@ -3180,7 +3236,7 @@
     },
     {
      "art": "waage",
-     "links": "Bester Grund für die Regel",
+     "links": "Bester Grund für die Handtuch-Regel",
      "rechts": "Bester Grund dagegen"
     },
     {
@@ -3229,7 +3285,7 @@
     },
     {
      "art": "waage",
-     "links": "Meilleure raison pour la règle",
+     "links": "Meilleure raison pour la règle des serviettes",
      "rechts": "Meilleure raison contre"
     },
     {
@@ -3272,6 +3328,18 @@
     "versuch": "Cette semaine, prends une règle qui t’agace et demande-toi : à quoi sert-elle, et qui protège-t-elle ? Tu n’as pas à la trouver bien ensuite.",
     "probe": "Mehdi trouve injuste qu’au centre de jeunes, on doive arrêter le babyfoot dès 18 h. Que pourrait découvrir Mehdi avec le test de la règle ?"
    }
+  },
+  "linie": {
+   "id": "alltag-13-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Regeln erkennen, verstehen und ruhig verhandeln",
+    "fr": "Reconnaître et comprendre les règles, puis les négocier calmement"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du bei unbekannten Regeln gewählt: beobachten, abwarten oder nachfragen. Heute geht es darum, wozu Regeln da sind und wen sie schützen.",
+    "fr": "Face à une règle inconnue, tu as choisi : observer, attendre ou demander. Aujourd’hui : à quoi servent les règles, et qui protègent-elles ?"
+   }
   }
  },
  {
@@ -3305,6 +3373,10 @@
    {
     "code": "V-16",
     "gewicht": 1
+   },
+   {
+    "code": "V-31",
+    "gewicht": 0.5
    }
   ],
   "kompetenz": [
@@ -3495,6 +3567,14 @@
     ],
     "versuch": "Si une règle n’est pas claire cette semaine, choisis-en une : observer, attendre un peu ou demander. Regarde laquelle te convient le mieux.",
     "probe": "Inês arrive pour la première fois au centre de jeunes. Personne ne lui dit s’il faut enlever ses chaussures ou si chacun peut choisir la musique. Que pourrait faire Inês : observer, attendre ou demander ?"
+   }
+  },
+  "linie": {
+   "id": "alltag-13-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Regeln erkennen, verstehen und ruhig verhandeln",
+    "fr": "Reconnaître et comprendre les règles, puis les négocier calmement"
    }
   }
  },
@@ -4320,11 +4400,10 @@
      "titel": "Jil fühlt zwei Dinge zugleich. Welche zwei Wörter passen zusammen? Kreuz zwei an.",
      "items": [
       "begeistert",
-      "erleichtert",
       "geknickt",
-      "unruhig",
+      "gelangweilt",
       "genervt",
-      "dankbar"
+      "beleidigt"
      ],
      "spalten": 3
     },
@@ -4371,11 +4450,10 @@
      "titel": "Jil ressent deux choses à la fois. Quels deux mots vont ensemble ? Coches-en deux.",
      "items": [
       "enthousiaste",
-      "soulagée",
       "peinée",
-      "inquiète",
+      "ennuyée",
       "agacée",
-      "reconnaissante"
+      "vexée"
      ],
      "spalten": 3
     },
@@ -4661,6 +4739,18 @@
     "versuch": "Cette semaine, avant quelque chose d’important, essaie une fois un frein : une autre pensée, une minute d’expiration lente ou un petit pas.",
     "probe": "Lara a un contrôle de maths demain. Elle pense : « Ça ne marchera pas », arrête de réviser et devient encore plus nerveuse. Où Lara pourrait-elle freiner le cercle ?"
    }
+  },
+  "linie": {
+   "id": "gefuehle-erkennen-12-18-b",
+   "nr": 2,
+   "faden": {
+    "de": "Verstehen, wie Gedanken, Gefühle und Handlungen sich beeinflussen – bei mir und bei anderen",
+    "fr": "Comprendre comment pensées, émotions et actions s’influencent – chez moi et chez les autres"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du gesehen, wie ein Gedanke ein Gefühl auslöst. Heute schauen wir, wie sich Gedanke, Körper und Handlung hochschaukeln.",
+    "fr": "Tu as vu comment une pensée déclenche une émotion. Aujourd’hui, on regarde comment pensée, corps et action se renforcent."
+   }
   }
  },
  {
@@ -4773,7 +4863,7 @@
      ],
      "links": [
       "„Online, aber keine Antwort. Typisch.“",
-      "„Mich nervt es gerade, dass keine Antwort kam.“",
+      "„Mich nervt es gerade, dass keine Antwort kam. Antworte mir bitte kurz.“",
       "„Hast du meine Nachricht gesehen? Ich brauche kurz eine Antwort.“"
      ],
      "rechts": [
@@ -4820,7 +4910,7 @@
      ],
      "links": [
       "« En ligne, mais pas de réponse. Typique. »",
-      "« Ça m’énerve en ce moment qu’il n’y ait pas eu de réponse. »",
+      "« Ça m’énerve en ce moment qu’il n’y ait pas eu de réponse. Réponds-moi vite, s’il te plaît. »",
       "« Tu as vu mon message ? J’ai juste besoin d’une réponse rapide. »"
      ],
      "rechts": [
@@ -4831,7 +4921,7 @@
     },
     {
      "art": "ankreuzen",
-     "titel": "Qu’est-ce qui rend un message plus cool ? Coche, plusieurs réponses possibles.",
+     "titel": "Qu’est-ce qui rend un message moins chaud ? Coche, plusieurs réponses possibles.",
      "items": [
       "laisser tomber des mots comme « toujours » et « typique »",
       "dire ce dont j’ai besoin",
@@ -4886,6 +4976,18 @@
     "versuch": "Cette semaine, écris un message énervé d’abord « chaud », puis un cran plus cool : ce qui t’énerve, ce qu’il te faut. Pas besoin de l’envoyer.",
     "probe": "Diogo attend depuis deux semaines que Yanis lui rende sa batterie externe. Il est agacé. Comment Diogo pourrait-il écrire son message un cran plus cool ?"
    }
+  },
+  "linie": {
+   "id": "gefuehle-ausdruecken-12-18-a",
+   "nr": 4,
+   "faden": {
+    "de": "Gefühle ausdrücken: erst mit Farbe und Musik, dann mit genauen Worten, dann direkt sagen",
+    "fr": "Exprimer ses émotions : couleur et musique d’abord, puis mots précis, puis dire directement"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du genaue Gefühlswörter gesucht. Heute übst du, in einer Nachricht zu sagen, was dich nervt und was du brauchst.",
+    "fr": "La dernière fois, tu as cherché des mots précis. Aujourd’hui, dans un message, tu dis ce qui t’énerve et ce dont tu as besoin."
+   }
   }
  },
  {
@@ -4925,6 +5027,10 @@
    },
    {
     "code": "K-35",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-28",
     "gewicht": 0.5
    }
   ],
@@ -5138,6 +5244,14 @@
     "versuch": "Si deux personnes se disputent cette semaine, essaie une phrase d’apaisement : nommer l’émotion ou proposer quelque chose, sans prendre parti.",
     "probe": "Yanis et Zoé se disputent dans le bus pour la dernière place côté fenêtre, et tous les deux regardent Sofia. Que pourrait faire Sofia : nommer l’émotion, ne pas prendre parti, proposer ?"
    }
+  },
+  "linie": {
+   "id": "konflikte-12-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Streit zwischen zwei Seiten klären: zuhören, Lösungen für beide finden, selbst anders handeln",
+    "fr": "Régler un conflit : écouter, trouver des solutions pour les deux, agir autrement"
+   }
   }
  },
  {
@@ -5335,7 +5449,15 @@
    ]
   },
   "vorbereitung": "Acht Zettel mit den Werten beschriften (Freundschaft, Ehrlichkeit, Freiheit, Erfolg, Gerechtigkeit, Zusammenhalt, Spaß, eine leere Karte).",
-  "kurz": "Zehn Chips auf Wertekarten verteilen · Wertekonflikt besprechen"
+  "kurz": "Zehn Chips auf Wertekarten verteilen · Wertekonflikt besprechen",
+  "linie": {
+   "id": "selbstbild-12-18-b",
+   "nr": 1,
+   "faden": {
+    "de": "Eigene Werte kennen, danach entscheiden und im Alltag leben",
+    "fr": "Connaître mes valeurs, décider selon elles et les vivre au quotidien"
+   }
+  }
  },
  {
   "id": "j:was-eine-freundschaft-traegt",
@@ -5664,7 +5786,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Im Chat vom Kurs schreiben Lena und Tim über das Spiel am Wochenende. Lena: „Das 3:3 in der letzten Minute war unfassbar.“ – Tim: „Und der Torwart hat bei einem der Gegentore geschlafen.“"
+     "text": "Im Chat schreiben Lena und Tim über das Spiel am Wochenende. Lena: „Das 3:3 in der letzten Minute war unfassbar.“ – Tim: „Und der Torwart hat bei einem der Gegentore geschlafen.“"
     },
     {
      "art": "zuordnen",
@@ -5707,7 +5829,7 @@
    "fr": [
     {
      "art": "text",
-     "text": "Dans le chat du cours, Lena et Tim parlent du match du week-end. Lena : « Le 3-3 à la dernière minute, c’était incroyable. » – Tim : « Et le gardien dormait complètement sur l’un des buts. »"
+     "text": "Dans le chat, Lena et Tim parlent du match du week-end. Lena : « Le 3-3 à la dernière minute, c’était incroyable. » – Tim : « Et le gardien dormait complètement sur l’un des buts. »"
     },
     {
      "art": "zuordnen",
@@ -5778,6 +5900,18 @@
     ],
     "versuch": "Cette semaine, essaie une fois de te lancer dans une conversation : rebondir, poser une vraie question ou dire quelque chose de toi. Un seul suffit.",
     "probe": "Dans le chat du club, Zoé voit Mehdi et Diogo parler d’un nouveau jeu qu’elle connaît aussi. Elle n’a jamais écrit dans ce chat. Comment Zoé pourrait-elle entrer dans l’échange ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Kontakt aufnehmen: den Moment erkennen, ins Gespräch einsteigen, den ersten Satz finden",
+    "fr": "Aller vers les autres : saisir le bon moment, entrer dans la conversation, trouver la première phrase"
+   },
+   "bruecke": {
+    "de": "Du hast geübt, an Signalen zu erkennen, ob jetzt ein guter Moment zum Ansprechen ist. Heute steigst du in einen laufenden Chat ein.",
+    "fr": "Tu as appris à repérer, grâce aux signaux, si c’est le bon moment pour aborder quelqu’un. Aujourd’hui, tu entres dans un chat qui a déjà commencé."
    }
   }
  },
@@ -6216,6 +6350,18 @@
     "versuch": "Cette semaine, dis une fois à quelqu’un : « Sans toi … » en nommant un apport que personne ne voit. Une phrase suffit.",
     "probe": "Luca et son groupe ont réussi la présentation pour la fête de l’école. Mehdi avait cherché et monté toute la musique avant, mais personne n’en parle. Que pourrait dire Luca à Mehdi avec « Sans toi … » ?"
    }
+  },
+  "linie": {
+   "id": "kooperation-12-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Gemeinsam etwas schaffen – und sehen, wer was dazu beigetragen hat",
+    "fr": "Réussir quelque chose ensemble – et voir qui y a contribué"
+   },
+   "bruecke": {
+    "de": "Wir haben zusammen Pässe gespielt und einen Turm gebaut. Heute schauen wir, wer was dazu beigetragen hat – auch das, was man kaum sieht.",
+    "fr": "On a joué des passes ensemble et construit une tour. Aujourd’hui, on regarde qui a apporté quoi, même ce qui se voit à peine."
+   }
   }
  },
  {
@@ -6439,6 +6585,14 @@
     "versuch": "Si quelqu’un te paraît bizarre cette semaine, cherche d’abord trois raisons possibles avant d’en croire une. Dans ta tête ou sur papier.",
     "probe": "Inês écrit à Diogo à propos d’un exercice de maths, et il répond juste « ok ». Elle pense tout de suite qu’il est fâché. Que pourrait faire Inês avec « collecter plusieurs raisons » ?"
    }
+  },
+  "linie": {
+   "id": "gefuehle-erkennen-12-18-b",
+   "nr": 1,
+   "faden": {
+    "de": "Verstehen, wie Gedanken, Gefühle und Handlungen sich beeinflussen – bei mir und bei anderen",
+    "fr": "Comprendre comment pensées, émotions et actions s’influencent – chez moi et chez les autres"
+   }
   }
  },
  {
@@ -6550,9 +6704,9 @@
       "… in welcher Reihe?"
      ],
      "links": [
-      "Die Lehrerin fragt nach der Stunde, ob alles in Ordnung ist.",
+      "Die Lehrerin sagt: „Okay, nimm dir die Minute.“",
       "Die Lehrerin stellt die Frage einem anderen und seufzt.",
-      "Der Sitznachbar schiebt ihr einen Zettel mit der Seitenzahl zu.",
+      "Der Sitznachbar fragt in der Pause, was mit dem Bus war.",
       "Ihre Freundin lacht nicht mehr über ihre Witze."
      ],
      "rechts": [
@@ -6592,9 +6746,9 @@
       "… dans quelle série ?"
      ],
      "links": [
-      "La prof demande à la fin de l’heure si tout va bien.",
+      "La prof dit : « D’accord, prends ta minute. »",
       "La prof pose la question à un autre et soupire.",
-      "Son voisin lui glisse un mot avec le numéro de page.",
+      "Son voisin lui demande à la récré ce qui s’est passé avec le bus.",
       "Son amie ne rit plus de ses blagues."
      ],
      "rechts": [
@@ -6653,6 +6807,18 @@
     ],
     "versuch": "Essaie une fois cette semaine, avant de réagir à chaud, de te demander : qu’est-ce que ça déclenche chez les autres ?",
     "probe": "Zoé a eu une mauvaise note et, dans le bus, elle veut envoyer un message sec à sa copine. Que pourrait faire Zoé avec la question domino avant d’appuyer sur « envoyer » ?"
+   }
+  },
+  "linie": {
+   "id": "gefuehle-erkennen-12-18-b",
+   "nr": 3,
+   "faden": {
+    "de": "Verstehen, wie Gedanken, Gefühle und Handlungen sich beeinflussen – bei mir und bei anderen",
+    "fr": "Comprendre comment pensées, émotions et actions s’influencent – chez moi et chez les autres"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du den Kreislauf aus Gedanke, Körper und Handlung gebremst. Heute fragst du: Was löst meine Handlung bei anderen aus?",
+    "fr": "Tu as cherché comment freiner le cercle pensée, corps, action. Aujourd’hui, tu te demandes : qu’est-ce que mon geste déclenche chez les autres ?"
    }
   }
  },
@@ -6906,6 +7072,10 @@
    {
     "code": "K-23",
     "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 0.5
    }
   ],
   "kompetenz": [
@@ -7057,7 +7227,15 @@
    ]
   },
   "kurz": "Story-Seiten mit Farbe und Soundtrack · deuten · erzählen",
-  "vorbereitung": "3 Story-Seiten zu „Bahn verpasst“ gestalten: grau · gelb · hellblau, je 4 Wörter und ein Songtitel"
+  "vorbereitung": "3 Story-Seiten zu „Bahn verpasst“ gestalten: grau · gelb · hellblau, je 4 Wörter und ein Songtitel",
+  "linie": {
+   "id": "gefuehle-ausdruecken-12-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Gefühle ausdrücken: erst mit Farbe und Musik, dann mit genauen Worten, dann direkt sagen",
+    "fr": "Exprimer ses émotions : couleur et musique d’abord, puis mots précis, puis dire directement"
+   }
+  }
  },
  {
   "id": "j:ein-song-fuer-schwere-tage",
@@ -7162,7 +7340,6 @@
       "tröstet",
       "gibt dem Gefühl Worte",
       "lenkt ab",
-      "beruhigt",
       "gibt Kraft",
       "etwas anderes"
      ],
@@ -7174,7 +7351,6 @@
      "items": [
       "Nieselregen",
       "grau",
-      "Nebel",
       "Gewitter",
       "dunkelblau",
       "bewölkt mit Lücken",
@@ -7190,7 +7366,7 @@
     {
      "art": "satzanfaenge",
      "items": [
-      "Mein Song für danach, wenn es wieder leichter wird:",
+      "Mein Song für danach, wenn es wieder leichter wird (echt oder ausgedacht):",
       "Eine Zeile oder ein Gefühl daraus:"
      ],
      "linien": 1
@@ -7205,7 +7381,6 @@
       "elle console",
       "elle met des mots sur ce qu’on ressent",
       "elle change les idées",
-      "elle calme",
       "elle donne de la force",
       "autre chose"
      ],
@@ -7217,7 +7392,6 @@
      "items": [
       "bruine",
       "gris",
-      "brouillard",
       "orage",
       "bleu foncé",
       "nuageux avec des éclaircies",
@@ -7233,14 +7407,26 @@
     {
      "art": "satzanfaenge",
      "items": [
-      "Ma chanson pour après, quand ça redevient plus léger :",
+      "Ma chanson pour après, quand ça redevient plus léger (vraie ou imaginée) :",
       "Une ligne ou une émotion de cette chanson :"
      ],
      "linien": 1
     }
    ]
   },
-  "kurz": "Song nennen · hängengebliebene Zeile · eigene Zeile · Song für danach"
+  "kurz": "Song nennen · hängengebliebene Zeile · eigene Zeile · Song für danach",
+  "linie": {
+   "id": "gefuehle-ausdruecken-12-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Gefühle ausdrücken: erst mit Farbe und Musik, dann mit genauen Worten, dann direkt sagen",
+    "fr": "Exprimer ses émotions : couleur et musique d’abord, puis mots précis, puis dire directement"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du einen Moment mit Farbe, Wörtern und Soundtrack gezeigt. Heute geht es um einen Song für einen schweren Tag.",
+    "fr": "La dernière fois, tu as montré un moment avec couleur, mots et bande-son. Aujourd’hui, on parle d’une chanson pour un jour difficile."
+   }
+  }
  },
  {
   "id": "j:fair-beschreiben",
@@ -7474,6 +7660,18 @@
     "versuch": "Remarque une fois cette semaine, quand le comportement de quelqu’un t’agace : dans quel cas ce trait pourrait aussi aider ?",
     "probe": "Sofia trouve sa camarade Lara « super silencieuse » et pense qu’on ne peut rien faire avec elle. Que pourrait voir Sofia avec « les deux faces » : quand le calme de Lara aide, quand il agace ?"
    }
+  },
+  "linie": {
+   "id": "selbstbild-12-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Eigenschaften und Stärken benennen – und jedes Mal mit einem Beispiel belegen",
+    "fr": "Nommer ses qualités et ses points forts – toujours avec un exemple"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du Eigenschaften jeweils mit einem Beispiel belegt. Heute schauen wir, wann dieselbe Eigenschaft hilft und wann sie nervt.",
+    "fr": "La dernière fois, tu as appuyé chaque qualité sur un exemple. Aujourd’hui, on regarde quand un même trait aide et quand il agace."
+   }
   }
  },
  {
@@ -7623,6 +7821,7 @@
     {
      "art": "satzanfaenge",
      "items": [
+      "Eine Nachricht, bei der ich lieber nachfrage, als zu raten (echt oder erfunden):",
       "Nachfragen ist besser als Raten, wenn …"
      ],
      "linien": 1
@@ -7680,6 +7879,7 @@
     {
      "art": "satzanfaenge",
      "items": [
+      "Un message où je préfère demander plutôt que deviner (vrai ou inventé) :",
       "Demander vaut mieux que deviner quand …"
      ],
      "linien": 1
@@ -7716,6 +7916,14 @@
     ],
     "versuch": "Essaie une fois cette semaine, devant un « ça va » pas clair, de demander : « Tu le penses vraiment, ou il y a un souci ? »",
     "probe": "Diogo reçoit de Mehdi seulement « Mouais, fais ce que tu veux. » dans le chat et le voit ensuite les bras croisés. Que pourrait faire Diogo avec « demander plutôt que deviner » ?"
+   }
+  },
+  "linie": {
+   "id": "gefuehle-erkennen-12-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Gefühle hinter Worten erkennen – und ruhig und ohne Vorwurf reagieren, auch im Chat",
+    "fr": "Reconnaître les émotions derrière les mots et réagir calmement, même dans un chat"
    }
   }
  },
@@ -7865,11 +8073,9 @@
      ]
     },
     {
-     "art": "skala",
-     "frage": "Wo liegt dein zweites Nein auf der Linie? Die Mitte heißt „klar“.",
-     "von": "zu weich",
-     "bis": "zu hart",
-     "stufen": 5
+     "art": "frage",
+     "text": "Eine Bitte, bei der es mir schwerfällt, klar Nein zu sagen (echt oder erfunden): Wie würde mein klares Nein klingen?",
+     "linien": 2
     }
    ],
    "fr": [
@@ -7923,11 +8129,9 @@
      ]
     },
     {
-     "art": "skala",
-     "frage": "Ton deuxième non, il est où sur la ligne ? Le milieu, c’est « clair ».",
-     "von": "trop mou",
-     "bis": "trop dur",
-     "stufen": 5
+     "art": "frage",
+     "text": "Une demande où j’ai du mal à dire non clairement (vraie ou inventée) : comment sonnerait mon non clair ?",
+     "linien": 2
     }
    ]
   },
@@ -8076,9 +8280,7 @@
       "„Es soll am Samstag beim Turnier regnen.“",
       "„Ich weiß nicht, wo ich mit dem Referat anfangen soll.“",
       "„Was die anderen im Chat über mich denken.“",
-      "„Ich habe meiner Freundin noch nicht geantwortet.“",
-      "„Der Trainer entscheidet, wer am Samstag spielt.“",
-      "„Ich habe noch nicht fürs Probetraining geübt.“"
+      "„Ich habe meiner Freundin noch nicht geantwortet.“"
      ],
      "rechts": [
       "außen: kann ich nicht beeinflussen",
@@ -8128,9 +8330,7 @@
       "« Il va pleuvoir samedi pendant le tournoi. »",
       "« Je ne sais pas par où commencer l’exposé. »",
       "« Ce que les autres pensent de moi dans le chat. »",
-      "« Je n’ai pas encore répondu à mon amie. »",
-      "« L’entraîneur décide qui joue samedi. »",
-      "« Je n’ai pas encore préparé la séance d’essai. »"
+      "« Je n’ai pas encore répondu à mon amie. »"
      ],
      "rechts": [
       "à l’extérieur : je ne peux pas agir",
@@ -8480,6 +8680,10 @@
    {
     "code": "KOG-55",
     "gewicht": 0.5
+   },
+   {
+    "code": "K-33",
+    "gewicht": 0.5
    }
   ],
   "kompetenz": [
@@ -8664,6 +8868,18 @@
     ],
     "versuch": "Essaie une fois cette semaine, dans un désaccord, de dire d’abord : « Tu penses donc que … parce que … ? » Réponds seulement après.",
     "probe": "Mehdi veut que le club de jeunes reste ouvert plus longtemps, Sofia n’en voit pas l’intérêt. Elle a déjà sa réponse. Que pourrait faire Sofia avec « d’abord résumer » avant de répondre ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-14-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Verstehen, was hinter Verhalten und Meinungen steckt – Gründe und Werte der anderen Seite",
+    "fr": "Comprendre ce qui se cache derrière un comportement ou une opinion : raisons et valeurs de l’autre"
+   },
+   "bruecke": {
+    "de": "Du hast überlegt, was hinter Toms Verhalten stecken kann. Heute setzt du Kreuze auf eine Linie und fasst den Grund der anderen Seite zusammen.",
+    "fr": "Tu as réfléchi à ce qui peut se cacher derrière le comportement de Tom. Aujourd’hui, tu places des croix sur une ligne et tu résumes la raison de l’autre côté."
    }
   }
  },
@@ -8878,6 +9094,18 @@
     "versuch": "Essaie une fois cette semaine, devant un avis qui t’agace, de te demander : qu’est-ce qui compte pour l’autre dans cette idée ?",
     "probe": "Luca veut plus de tournois au club de jeunes, Zoé plus de moments calmes. Chacun trouve l’idée de l’autre faible. Que pourrait faire Luca avec « défendre l’autre camp » avant de répondre ?"
    }
+  },
+  "linie": {
+   "id": "kommunikation-14-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Verstehen, was hinter Verhalten und Meinungen steckt – Gründe und Werte der anderen Seite",
+    "fr": "Comprendre ce qui se cache derrière un comportement ou une opinion : raisons et valeurs de l’autre"
+   },
+   "bruecke": {
+    "de": "Du hast den Grund der anderen Seite zusammengefasst. Heute gehst du weiter und vertrittst die Gegenseite mit den stärksten Gründen und dem Wert dahinter.",
+    "fr": "Tu as résumé la raison de l’autre côté. Aujourd’hui, tu vas plus loin : tu défends le camp opposé avec ses meilleurs arguments et la valeur qui les porte."
+   }
   }
  },
  {
@@ -9005,7 +9233,7 @@
      ],
      "rechts": [
       "Ich hab mich gestern übergangen gefühlt.",
-      "Ich hätte gern kurz Bescheid gewusst.",
+      "Ich wünsche mir öfter eine kurze Antwort von dir.",
       "Mir ist wichtig, dass wir uns schreiben können."
      ]
     },
@@ -9058,7 +9286,7 @@
      ],
      "rechts": [
       "Hier, je me suis sentie mise de côté.",
-      "J’aurais aimé être prévenue.",
+      "J’aimerais recevoir plus souvent une courte réponse de ta part.",
       "C’est important pour moi qu’on puisse s’écrire."
      ]
     },
@@ -9111,6 +9339,18 @@
     ],
     "versuch": "Essaie une fois cette semaine de lire un message agaçant, d’attendre un instant, puis de répondre sans reproche.",
     "probe": "Noah écrit à Amira dans le chat : « Tu ne lis jamais mes messages. » Or Amira était à l’entraînement toute la journée. Que pourrait répondre Amira avec « répondre calmement » ?"
+   }
+  },
+  "linie": {
+   "id": "gefuehle-erkennen-12-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Gefühle hinter Worten erkennen – und ruhig und ohne Vorwurf reagieren, auch im Chat",
+    "fr": "Reconnaître les émotions derrière les mots et réagir calmement, même dans un chat"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du hinter einem Satz zwei mögliche Gefühle gehört. Heute liest du einen Chatstreit aus beiden Sichtweisen und schreibst ruhig zurück.",
+    "fr": "Tu as cherché deux émotions possibles derrière une phrase. Aujourd’hui, tu lis une dispute de chat des deux côtés et tu réponds calmement."
    }
   }
  },
@@ -9223,8 +9463,6 @@
       "genervt",
       "erleichtert",
       "unsicher",
-      "will nicht darüber reden",
-      "wirklich alles gut",
       "etwas anderes"
      ],
      "spalten": 3
@@ -9271,8 +9509,6 @@
       "énervé",
       "soulagé",
       "pas sûr de lui",
-      "ne veut pas en parler",
-      "tout va vraiment bien",
       "autre chose"
      ],
      "spalten": 3
@@ -9336,6 +9572,18 @@
     ],
     "versuch": "Remarque une fois cette semaine, quand quelqu’un dit « laisse-moi » ou « peu importe » : quelles deux émotions pourraient se cacher derrière ?",
     "probe": "Après le match, Yanis dit à Diogo seulement « Alors jouez sans moi » et remonte sa capuche. Que pourrait penser Diogo avec « deux émotions derrière une phrase », et quelle phrase ferait du bien à Yanis ?"
+   }
+  },
+  "linie": {
+   "id": "gefuehle-erkennen-12-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Gefühle hinter Worten erkennen – und ruhig und ohne Vorwurf reagieren, auch im Chat",
+    "fr": "Reconnaître les émotions derrière les mots et réagir calmement, même dans un chat"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du auf Ton und Signale geachtet und lieber nachgefragt als geraten. Heute hörst du hinter einem Satz zwei mögliche Gefühle.",
+    "fr": "Tu as écouté le ton et les signes, et demandé plutôt que deviné. Aujourd’hui, tu cherches deux émotions possibles derrière une phrase."
    }
   }
  },
@@ -9447,7 +9695,6 @@
      "links": [
       "Ein Lach-Emoji unter das Meme setzen",
       "Leonor in der Pause zu sich holen",
-      "Das Meme bei der Plattform melden",
       "Dem SePAS im Lycée Bescheid geben"
      ],
      "rechts": [
@@ -9469,7 +9716,7 @@
     {
      "art": "leiter",
      "stufen": 3,
-     "oben": "Deine Treppe für Leonor: oben der größte Schritt",
+     "oben": "Deine Leiter für Leonor: oben der größte Schritt",
      "unten": "unten der kleinste Schritt – der erste steht schon da",
      "beispiele": [
       "Das Meme nicht weiterleiten"
@@ -9495,7 +9742,6 @@
      "links": [
       "Mettre un émoji rieur sous le meme",
       "Inviter Leonor à venir près de toi pendant la pause",
-      "Signaler le meme à la plateforme",
       "Prévenir le SePAS du lycée"
      ],
      "rechts": [
@@ -9517,7 +9763,7 @@
     {
      "art": "leiter",
      "stufen": 3,
-     "oben": "Ton escalier pour Leonor : en haut le plus grand pas",
+     "oben": "Ton échelle pour Leonor : en haut le plus grand pas",
      "unten": "en bas le plus petit pas – le premier est déjà écrit",
      "beispiele": [
       "Ne pas faire suivre le meme"
@@ -9673,7 +9919,7 @@
     },
     {
      "art": "skala",
-     "frage": "Die zweite Runde mit „Ja, und …“ war für mich …",
+     "frage": "Eine fremde Idee mit „Ja, und …“ aufzunehmen, fühlt sich für mich an …",
      "von": "komisch",
      "bis": "richtig gut",
      "stufen": 5
@@ -9699,7 +9945,7 @@
     },
     {
      "art": "frage",
-     "text": "Welcher Plan würde mehr Leute mitnehmen: dein erster Vorschlag oder der verbundene? Warum?",
+     "text": "Ein Plan mit Freunden (echt oder erfunden): Was schlägst du vor, und wie nimmst du eine andere Idee mit „Ja, und …“ auf?",
      "linien": 2
     }
    ],
@@ -9722,7 +9968,7 @@
     },
     {
      "art": "skala",
-     "frage": "Le deuxième tour avec « Oui, et… », pour moi, c’était …",
+     "frage": "Reprendre l’idée d’un autre avec « Oui, et… », pour moi, c’est …",
      "von": "bizarre",
      "bis": "vraiment bien",
      "stufen": 5
@@ -9748,7 +9994,7 @@
     },
     {
      "art": "frage",
-     "text": "Quel plan embarquerait le plus de monde : ta première proposition ou le plan combiné ? Pourquoi ?",
+     "text": "Un plan avec des amis (vrai ou inventé) : qu’est-ce que tu proposes, et comment reprends-tu une autre idée avec « Oui, et… » ?",
      "linien": 2
     }
    ]
@@ -9891,7 +10137,6 @@
       "kleine Schritte",
       "nachfragen, ob es angekommen ist",
       "Geduld",
-      "ein Beispiel zeigen",
       "Fehler ruhig korrigieren",
       "etwas anderes"
      ],
@@ -9927,7 +10172,6 @@
       "avancer par petites étapes",
       "vérifier si c’est compris",
       "avoir de la patience",
-      "donner un exemple",
       "corriger les erreurs calmement",
       "autre chose"
      ],
@@ -10196,6 +10440,18 @@
     "versuch": "Essaie une fois cette semaine de tester une valeur de ton modèle dans une petite situation, par exemple rester calme ou inviter quelqu’un.",
     "probe": "Jana admire une rappeuse parce qu’elle assume toujours ses erreurs. En stage, Jana préfère pourtant taire une erreur. Que pourrait faire Jana avec « la valeur du modèle » : quand, où, avec qui ?"
    }
+  },
+  "linie": {
+   "id": "selbstbild-12-18-b",
+   "nr": 3,
+   "faden": {
+    "de": "Eigene Werte kennen, danach entscheiden und im Alltag leben",
+    "fr": "Connaître mes valeurs, décider selon elles et les vivre au quotidien"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du Situationen nach deinen Werten eingeordnet. Heute wählst du eine bewunderte Person und einen ihrer Werte für deinen Alltag.",
+    "fr": "La dernière fois, tu as classé des situations selon tes valeurs. Aujourd’hui, tu choisis une personne admirée et une de ses valeurs à reprendre."
+   }
   }
  },
  {
@@ -10235,6 +10491,10 @@
    },
    {
     "code": "KOG-61",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-28",
     "gewicht": 0.5
    }
   ],
@@ -10336,7 +10596,7 @@
     },
     {
      "art": "ankreuzen",
-     "titel": "Le tournant : à partir de quel moment ça aurait pu se passer autrement ? Coche-en un.",
+     "titel": "Le tournant : à partir de quel moment ça aurait pu se passer autrement ? Coches-en un.",
      "items": [
       "A",
       "B",
@@ -10388,6 +10648,18 @@
     ],
     "versuch": "Essaie une fois cette semaine, après une scène qui s’est mal passée, de rembobiner : où était le tournant ? Quel autre geste aurais-tu pu choisir ?",
     "probe": "Luca a écrit à Mia dans le chat : « Alors vas-y sans moi. » Mia ne répond plus. Que pourrait faire Luca avec le replay : où est le tournant, et quel autre geste serait mieux ?"
+   }
+  },
+  "linie": {
+   "id": "konflikte-12-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Streit zwischen zwei Seiten klären: zuhören, Lösungen für beide finden, selbst anders handeln",
+    "fr": "Régler un conflit : écouter, trouver des solutions pour les deux, agir autrement"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du Ideen gesucht, die für beide passen. Heute nimmst du eine Situation, die nicht gut lief, und suchst eine andere Reaktion.",
+    "fr": "La dernière fois, tu as cherché des idées qui conviennent aux deux. Aujourd’hui, tu prends une situation mal passée et tu cherches une autre réaction."
    }
   }
  },
@@ -10890,6 +11162,18 @@
     "versuch": "Essaie une fois cette semaine, devant deux envies différentes, de demander : qu’est-ce qui compte pour chacun ? Puis cherche une idée pour les deux.",
     "probe": "Amira veut un stand de musique à la fête de l’école, Noah plutôt un coin jeux. Il n’y a qu’une table. Que pourrait faire Amira avec le test des deux côtés avant de lancer des idées ?"
    }
+  },
+  "linie": {
+   "id": "konflikte-12-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Streit zwischen zwei Seiten klären: zuhören, Lösungen für beide finden, selbst anders handeln",
+    "fr": "Régler un conflit : écouter, trouver des solutions pour les deux, agir autrement"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du in einem Streit zwischen zwei Freunden vermittelt. Heute prüfst du, wie ein Vorschlag für beide Seiten passt.",
+    "fr": "La dernière fois, tu as apaisé une dispute entre deux amis. Aujourd’hui, tu vérifies comment une idée convient aux deux côtés."
+   }
   }
  },
  {
@@ -10994,7 +11278,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Lou überlegt bei drei Zetteln, ob die Situation richtig, falsch oder „kommt drauf an“ ist: ein gefundenes Handy behalten · im Bus sitzen bleiben, obwohl eine ältere Person steht · einem Freund sagen, dass sein Lied nicht gut ist."
+     "text": "Lou überlegt bei drei Zetteln, ob die Situation richtig, falsch oder „kommt drauf an“ ist: einen privaten Screenshot weiterleiten · zu viel Wechselgeld behalten · jemanden ansprechen, der in der Pause allein steht."
     },
     {
      "art": "zuordnen",
@@ -11003,14 +11287,14 @@
       "… der Wert dahinter"
      ],
      "links": [
-      "ein gefundenes Handy behalten",
-      "im Bus sitzen bleiben, obwohl eine ältere Person steht",
-      "einem Freund sagen, dass sein Lied nicht gut ist"
+      "einen privaten Screenshot weiterleiten",
+      "zu viel Wechselgeld behalten",
+      "jemanden ansprechen, der in der Pause allein steht"
      ],
      "rechts": [
-      "Ehrlichkeit",
-      "Respekt vor fremdem Eigentum",
-      "Rücksicht"
+      "Freundschaft",
+      "Privatsphäre",
+      "Ehrlichkeit"
      ]
     },
     {
@@ -11022,7 +11306,7 @@
     },
     {
      "art": "ankreuzen",
-     "titel": "Wovon hängt es ab? Kreuz an, was deine Entscheidung ändern würde.",
+     "titel": "Einem Freund sagen, dass sein Lied nicht gut ist: Wovon hängt es ab? Kreuz an, was deine Entscheidung ändern würde.",
      "items": [
       "ob er mich nach meiner Meinung gefragt hat",
       "ob er das Lied nur für sich schreibt oder bald anderen vorspielt",
@@ -11042,7 +11326,7 @@
    "fr": [
     {
      "art": "text",
-     "text": "Lou se demande, pour trois papiers, si la situation est juste, fausse ou « ça dépend » : garder un portable trouvé · rester assis dans le bus alors qu’une personne âgée est debout · dire à un ami que sa chanson n’est pas bonne."
+     "text": "Lou se demande, pour trois papiers, si la situation est juste, fausse ou « ça dépend » : transférer une capture d’écran privée · garder la monnaie rendue en trop · aller parler à quelqu’un qui est seul à la pause."
     },
     {
      "art": "zuordnen",
@@ -11051,14 +11335,14 @@
       "… la valeur derrière"
      ],
      "links": [
-      "garder un portable trouvé",
-      "rester assis dans le bus alors qu’une personne âgée est debout",
-      "dire à un ami que sa chanson n’est pas bonne"
+      "transférer une capture d’écran privée",
+      "garder la monnaie rendue en trop",
+      "aller parler à quelqu’un qui est seul à la pause"
      ],
      "rechts": [
-      "l’honnêteté",
-      "le respect du bien d’autrui",
-      "la considération"
+      "l’amitié",
+      "la vie privée",
+      "l’honnêteté"
      ]
     },
     {
@@ -11070,7 +11354,7 @@
     },
     {
      "art": "ankreuzen",
-     "titel": "De quoi ça dépend ? Coche ce qui changerait ta décision.",
+     "titel": "Dire à un ami que sa chanson n’est pas bonne : de quoi ça dépend ? Coche ce qui changerait ta décision.",
      "items": [
       "s’il m’a demandé mon avis",
       "s’il écrit la chanson seulement pour lui ou s’il va bientôt la jouer à d’autres",
@@ -11089,7 +11373,19 @@
    ]
   },
   "kurz": "Zettel auf drei Stapel · Wert dahinter nennen · einen Fall vertiefen",
-  "vorbereitung": "8 Zettel schreiben: Foto ohne Fragen posten · Hausaufgaben schicken · Wechselgeld behalten · Screenshot weiterleiten"
+  "vorbereitung": "8 Zettel schreiben: Foto ohne Fragen posten · Hausaufgaben schicken · Wechselgeld behalten · Screenshot weiterleiten",
+  "linie": {
+   "id": "selbstbild-12-18-b",
+   "nr": 2,
+   "faden": {
+    "de": "Eigene Werte kennen, danach entscheiden und im Alltag leben",
+    "fr": "Connaître mes valeurs, décider selon elles et les vivre au quotidien"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du zehn Chips auf deine Werte verteilt. Heute prüfst du an Beispielen, welcher Wert in einer Situation entscheidet.",
+    "fr": "La dernière fois, tu as réparti dix jetons sur tes valeurs. Aujourd’hui, tu cherches, sur des exemples, quelle valeur décide dans chaque situation."
+   }
+  }
  },
  {
   "id": "j:zeitung-fakt-oder-meinung",
@@ -11198,7 +11494,6 @@
       "… ist am ehesten"
      ],
      "links": [
-      "„Der Bus 12 fährt ab Montag alle 15 Minuten.“",
       "„Endlich mal eine gute Idee, super gemacht!“",
       "„Mit Kopfhörern lernt man schlechter – das ist längst klar.“",
       "„Das Konzert am Samstag ist ausverkauft, steht auf der Seite des Vereins.“"
@@ -11246,7 +11541,6 @@
       "… est plutôt"
      ],
      "links": [
-      "« Le bus 12 passera toutes les 15 minutes à partir de lundi. »",
       "« Enfin une bonne idée, bravo ! »",
       "« Avec un casque, on apprend moins bien – c’est clair depuis longtemps. »",
       "« Le concert de samedi est complet, c’est écrit sur le site du club. »"
@@ -11513,7 +11807,15 @@
    ]
   },
   "kurz": "Zwei Karten, die nicht passen · Figur interviewen · Gründe wählen",
-  "vorbereitung": "3 Karten zu Tom (schreibt · lacht mit · schreibt privat); 4 Gründe: dazugehören · Angst · drankommen · nicht gedacht"
+  "vorbereitung": "3 Karten zu Tom (schreibt · lacht mit · schreibt privat); 4 Gründe: dazugehören · Angst · drankommen · nicht gedacht",
+  "linie": {
+   "id": "kommunikation-14-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Verstehen, was hinter Verhalten und Meinungen steckt – Gründe und Werte der anderen Seite",
+    "fr": "Comprendre ce qui se cache derrière un comportement ou une opinion : raisons et valeurs de l’autre"
+   }
+  }
  },
  {
   "id": "j:staerken-mit-beweis",
@@ -11711,7 +12013,19 @@
     }
    ]
   },
-  "kurz": "Drei Stärken mit Situation belegen · Baustelle · Fremdbild schätzen"
+  "kurz": "Drei Stärken mit Situation belegen · Baustelle · Fremdbild schätzen",
+  "linie": {
+   "id": "selbstbild-12-18-a",
+   "nr": 4,
+   "faden": {
+    "de": "Eigenschaften und Stärken benennen – und jedes Mal mit einem Beispiel belegen",
+    "fr": "Nommer ses qualités et ses points forts – toujours avec un exemple"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du eine Karte mit Stärken und Beispielen gemacht. Heute prüfst du, welche Stärken du belegen kannst und wie andere dich sehen.",
+    "fr": "La dernière fois, tu as fait une carte avec des exemples. Aujourd’hui, tu vérifies quels points forts tu peux prouver et comment on te voit."
+   }
+  }
  },
  {
   "id": "j:redekarten",
@@ -12066,13 +12380,13 @@
      ],
      "rechts": [
       "Dann bin ich auf dein Urteil gespannt – bis später.",
-      "Worum geht es denn?",
+      "Welche Figur magst du am liebsten?",
       "Okay, dann lies in Ruhe weiter."
      ]
     },
     {
      "art": "skala",
-     "frage": "„Wir sind uns hier schon ein paarmal begegnet – ich bin Mathis.“ Wo liegt dieser erste Satz? Die Mitte passt meist am besten.",
+     "frage": "„Wir sind uns hier schon ein paarmal begegnet – ich bin Mathis.“ Wo liegt dieser erste Satz?",
      "von": "zu vorsichtig",
      "bis": "zu direkt",
      "stufen": 5
@@ -12114,13 +12428,13 @@
      ],
      "rechts": [
       "Alors j’attends ton avis avec impatience – à tout à l’heure.",
-      "Ça parle de quoi ?",
+      "Quel personnage tu préfères ?",
       "D’accord, je te laisse lire tranquillement."
      ]
     },
     {
      "art": "skala",
-     "frage": "« Ça fait plusieurs fois qu’on se croise ici – moi, c’est Mathis. » Où se situe cette première phrase ? Le milieu convient le plus souvent.",
+     "frage": "« Ça fait plusieurs fois qu’on se croise ici – moi, c’est Mathis. » Où se situe cette première phrase ?",
      "von": "trop prudent",
      "bis": "trop direct",
      "stufen": 5
@@ -12162,6 +12476,18 @@
     ],
     "versuch": "Essaie une fois cette semaine d’aborder quelqu’un avec une petite question sur la situation (« Tu es aussi à … ? »), puis de finir tranquillement.",
     "probe": "Sami voudrait parler à une personne de la classe d’à côté qu’il croise dans le bus. Il ne sait pas quoi dire en premier. Que pourrait préparer Sami avec « la première phrase », et comment finir tranquillement ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Kontakt aufnehmen: den Moment erkennen, ins Gespräch einsteigen, den ersten Satz finden",
+    "fr": "Aller vers les autres : saisir le bon moment, entrer dans la conversation, trouver la première phrase"
+   },
+   "bruecke": {
+    "de": "Du hast verschiedene Einstiege in einen Chat getestet. Heute bereitest du den ersten Satz für jemanden vor, den du besser kennenlernen willst.",
+    "fr": "Tu as testé plusieurs façons d’entrer dans un chat. Aujourd’hui, tu prépares la première phrase pour quelqu’un que tu aimerais mieux connaître."
    }
   }
  },
@@ -12331,7 +12657,7 @@
      "titel": "Quelles propositions prennent au sérieux la raison de la règle de la salle ? Coche, plusieurs réponses possibles.",
      "items": [
       "On arrête à 21 h et on commence une demi-heure plus tôt.",
-      "On demande si la règle ne peut pas ne pas s’appliquer à nous – on n’est que dix.",
+      "On demande une exception à la règle – on n’est que dix.",
       "Après neuf heures, on fait seulement des étirements et de la tactique, sans ballon.",
       "On joue jusqu’à neuf heures et quart, mais on range avec un soin particulier."
      ],
@@ -12377,6 +12703,18 @@
     ],
     "versuch": "Essaie une fois cette semaine, devant une règle qui t’agace, de te demander : à quoi sert-elle ? Quelle offre pourrais-tu faire ?",
     "probe": "Yanis voudrait que le terrain de sport de l’école reste ouvert plus tard. Le concierge ferme à 18 h. Que pourrait dire Yanis avec la règle-offre : d’abord à quoi elle sert, puis son offre ?"
+   }
+  },
+  "linie": {
+   "id": "alltag-13-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Regeln erkennen, verstehen und ruhig verhandeln",
+    "fr": "Reconnaître et comprendre les règles, puis les négocier calmement"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du den Zweck von Regeln untersucht. Heute verhandelst du eine Regel: erst den Grund nennen, dann ein Angebot machen.",
+    "fr": "Tu as cherché à quoi servent les règles. Aujourd’hui, tu négocies une règle : d’abord son but, ensuite une offre."
    }
   }
  },
@@ -12724,22 +13062,20 @@
    "de": [
     {
      "art": "text",
-     "text": "Ein typischer Nachmittag mit Hausaufgaben. Was zieht dich raus? Verbinde jede Ablenkung mit ihrem Haufen."
+     "text": "Ein typischer Nachmittag mit Hausaufgaben. Was zieht dich raus?"
     },
     {
-     "art": "zuordnen",
-     "links": [
-      "Gedanke ans Training",
+     "art": "ankreuzen",
+     "titel": "Welche Ablenkungen kommen aus der Umgebung, nicht aus meinem Kopf? Kreuz an, mehrere gehen.",
+     "items": [
       "Handy vibriert",
-      "Hunger",
+      "Gedanke ans Training",
       "Lärm im Flur",
-      "ein Chat, der nicht aufhört",
-      "Langeweile"
+      "Langeweile",
+      "jemand ruft nach mir",
+      "ein Lied, das im Kopf hängt"
      ],
-     "rechts": [
-      "kommt aus der Umgebung",
-      "kommt aus meinem Kopf"
-     ]
+     "spalten": 2
     },
     {
      "art": "skala",
@@ -12763,7 +13099,7 @@
     {
      "art": "satzanfaenge",
      "items": [
-      "Dieses Gegenmittel probiere ich aus:",
+      "Dieses Gegenmittel könnte ich ausprobieren (echt oder erfunden):",
       "Wann und wo:"
      ],
      "linien": 1
@@ -12772,22 +13108,20 @@
    "fr": [
     {
      "art": "text",
-     "text": "Un après-midi typique de devoirs. Qu’est-ce qui te fait décrocher ? Relie chaque distraction à son tas."
+     "text": "Un après-midi typique de devoirs. Qu’est-ce qui te fait décrocher ?"
     },
     {
-     "art": "zuordnen",
-     "links": [
-      "une pensée pour l’entraînement",
+     "art": "ankreuzen",
+     "titel": "Quelles distractions viennent de l’environnement, pas de ma tête ? Coche, plusieurs réponses possibles.",
+     "items": [
       "le portable qui vibre",
-      "la faim",
+      "une pensée pour l’entraînement",
       "du bruit dans le couloir",
-      "une conversation qui n’arrête pas",
-      "l’ennui"
+      "l’ennui",
+      "quelqu’un m’appelle",
+      "une chanson qui reste dans la tête"
      ],
-     "rechts": [
-      "ça vient de mon environnement",
-      "ça vient de ma tête"
-     ]
+     "spalten": 2
     },
     {
      "art": "skala",
@@ -12811,7 +13145,7 @@
     {
      "art": "satzanfaenge",
      "items": [
-      "Cette parade, je l’essaie :",
+      "Cette parade, je pourrais l’essayer (vrai ou inventé) :",
       "Quand et où :"
      ],
      "linien": 1
@@ -12848,6 +13182,14 @@
     ],
     "versuch": "Avant de réviser, cherche une fois cette semaine la distraction la plus forte et choisis un antidote, par exemple le portable dans ton sac.",
     "probe": "Mia veut préparer un exposé pendant la pause de midi. Son portable s’allume sans arrêt et elle repense au concert du week-end. Que pourrait faire Mia avec le tri des distractions ?"
+   }
+  },
+  "linie": {
+   "id": "aufmerksamkeit-12-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Ablenkungen erkennen und bremsen – und dann länger am Stück konzentriert arbeiten",
+    "fr": "Reconnaître et freiner les distractions pour travailler plus longtemps sans décrocher"
    }
   }
  },
@@ -13064,6 +13406,18 @@
     "versuch": "Essaie une fois cette semaine de noter une pensée parasite en trois mots sur un papier, puis de continuer tout de suite.",
     "probe": "Jana révise son vocabulaire à la bibliothèque. Toutes les deux minutes, autre chose lui vient : une pizza, un jeu, un message. Que pourrait faire Jana avec le parking à pensées ?"
    }
+  },
+  "linie": {
+   "id": "aufmerksamkeit-12-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Ablenkungen erkennen und bremsen – und dann länger am Stück konzentriert arbeiten",
+    "fr": "Reconnaître et freiner les distractions pour travailler plus longtemps sans décrocher"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du Striche beim Abschweifen gemacht und eine Bremse gewählt. Heute parkst du Störgedanken in drei Wörtern und arbeitest acht Minuten.",
+    "fr": "Tu as déjà marqué tes décrochages et choisi un frein. Aujourd’hui, tu gares tes pensées parasites en trois mots et tu travailles huit minutes."
+   }
   }
  },
  {
@@ -13099,6 +13453,10 @@
    },
    {
     "code": "KOG-56",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-29",
     "gewicht": 0.5
    }
   ],
@@ -13162,7 +13520,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Erfundene Prüfung (oder deine eigene): Französisch, in acht Tagen. Der Stoff in Brocken: Vokabeln A–M · Vokabeln N–Z · Passé composé · Lesetext mit Fragen · Generalprobe (alles einmal ohne Hilfe). Verbinde jeden Tag mit dem, was dorthin kommt."
+     "text": "Erfundene Prüfung (oder deine eigene): Französisch, in acht Tagen. Der Stoff in Brocken: Vokabeln A–M · Vokabeln N–Z · Passé composé · Lesetext mit Fragen · Probetest (alles einmal ohne Hilfe). Verbinde jeden Tag mit dem, was dorthin kommt."
     },
     {
      "art": "zuordnen",
@@ -13180,7 +13538,7 @@
       "leicht wiederholen und früh schlafen",
       "die Prüfung",
       "Puffer, falls etwas dazwischenkommt",
-      "Generalprobe"
+      "Probetest"
      ]
     },
     {
@@ -13302,6 +13660,18 @@
     ],
     "versuch": "Essaie une fois cette semaine, pour une échéance, de noter à rebours ce qui est prévu chaque jour, avec un jour libre de marge.",
     "probe": "Lara a un contrôle de maths dans onze jours et ne révise que la veille. En plus, elle a trois entraînements. Que pourrait noter Lara en premier dans son agenda avec le planning à l’envers ?"
+   }
+  },
+  "linie": {
+   "id": "lernstrategien-12-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Besser lernen: abfragen statt lesen, rückwärts planen, eine Lernregel testen",
+    "fr": "Mieux apprendre : se tester au lieu de relire, planifier à rebours, tester une règle"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du erst aus dem Kopf aufgeschrieben, statt nochmal zu lesen. Heute planst du rückwärts vom Prüfungstag, wann du was lernst.",
+    "fr": "La dernière fois, tu as écrit de mémoire au lieu de relire. Aujourd’hui, tu planifies tes révisions à rebours depuis l’examen."
    }
   }
  },
@@ -13511,6 +13881,14 @@
     ],
     "versuch": "Essaie une fois cette semaine, après avoir lu, de retourner la feuille et d’écrire cinq choses de mémoire.",
     "probe": "Noah relit pour la quatrième fois son résumé de bio et se sent sûr de lui. En essayant, presque rien ne lui revient. Que pourrait faire Noah autrement avec « d’abord de mémoire » ?"
+   }
+  },
+  "linie": {
+   "id": "lernstrategien-12-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Besser lernen: abfragen statt lesen, rückwärts planen, eine Lernregel testen",
+    "fr": "Mieux apprendre : se tester au lieu de relire, planifier à rebours, tester une règle"
    }
   }
  },
@@ -13834,7 +14212,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Jonas schreibt am Abend vor dem Vorspielen in der Musikschule: „Ich verspiele mich bestimmt, und alle merken es.“ Du willst ihm antworten."
+     "text": "Jonas schreibt am Abend vor dem Vorspielen in der Musikschule: „Ich verspiele mich bestimmt, und man merkt es.“ Du willst ihm antworten."
     },
     {
      "art": "ankreuzen",
@@ -13948,6 +14326,18 @@
     ],
     "versuch": "Essaie une fois cette semaine, avant une tâche qui te stresse, de trouver une phrase à laquelle tu crois, par exemple « Je commence par le premier. »",
     "probe": "Mehdi écrit à Zoé la veille du test d’anglais : « J’ai zéro envie et zéro plan. » Zoé répond d’abord « Ça va aller ! ». Que pourrait écrire Zoé à la place, avec « une phrase que je crois » ?"
+   }
+  },
+  "linie": {
+   "id": "gefuehle-erkennen-12-18-b",
+   "nr": 4,
+   "faden": {
+    "de": "Verstehen, wie Gedanken, Gefühle und Handlungen sich beeinflussen – bei mir und bei anderen",
+    "fr": "Comprendre comment pensées, émotions et actions s’influencent – chez moi et chez les autres"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du verfolgt, was eine Handlung bei anderen auslöst. Heute suchst du den Satz, der jemandem vor einem Test wirklich hilft.",
+    "fr": "Tu as suivi ce qu’une action déclenche chez les autres. Aujourd’hui, tu cherches la phrase qui aide vraiment quelqu’un avant un test."
    }
   }
  },
@@ -14270,9 +14660,9 @@
       "Kommst du jetzt wieder jede Woche?"
      ],
      "rechts": [
-      "Mal sehen, ich fange langsam an.",
-      "Ich war verletzt, jetzt geht es besser.",
-      "Ja, Schritt für Schritt."
+      "Ja, jede Woche, aber Schritt für Schritt.",
+      "Fast, ich fange langsam wieder an.",
+      "Ich war verletzt, jetzt geht es besser."
      ]
     },
     {
@@ -14286,7 +14676,7 @@
     },
     {
      "art": "frage",
-     "text": "Was oder wer würde dir bei der ersten Stufe helfen? Ein Mensch, ein Satz oder ein Gegenstand reicht.",
+     "text": "Stell dir einen Neustart nach einer Pause vor (echt oder erfunden): Was oder wer würde dir beim ersten kleinen Schritt helfen? Ein Mensch, ein Satz oder ein Gegenstand reicht.",
      "linien": 1
     }
    ],
@@ -14318,9 +14708,9 @@
       "Tu reviens chaque semaine maintenant ?"
      ],
      "rechts": [
-      "On verra, je commence doucement.",
-      "J’étais blessé, ça va mieux maintenant.",
-      "Oui, pas à pas."
+      "Oui, chaque semaine, mais pas à pas.",
+      "Presque, je reprends doucement.",
+      "J’étais blessé, ça va mieux maintenant."
      ]
     },
     {
@@ -14334,7 +14724,7 @@
     },
     {
      "art": "frage",
-     "text": "Qui ou quoi t’aiderait pour la première marche ? Une personne, une phrase ou un objet suffit.",
+     "text": "Imagine un nouveau départ après une pause (vrai ou inventé) : qui ou quoi t’aiderait pour le premier petit pas ? Une personne, une phrase ou un objet suffit.",
      "linien": 1
     }
    ]
@@ -14468,7 +14858,7 @@
    "de": [
     {
      "art": "text",
-     "text": "Tiago (17) hat drei Versionen von sich mit 22 aufgeschrieben: Grafiker in einer Agentur, ein eigenes Fotostudio, mit einem Zirkus auf Tour."
+     "text": "Tiago (17) hat drei Versionen von sich mit 22 aufgeschrieben: Grafiker in einer Agentur, ein eigenes Fotostudio, Kostümbildner bei einem Zirkus auf Tour."
     },
     {
      "art": "ankreuzen",
@@ -14520,7 +14910,7 @@
    "fr": [
     {
      "art": "text",
-     "text": "Tiago (17 ans) a écrit trois versions de lui à 22 ans : graphiste dans une agence, son propre studio photo, en tournée avec un cirque."
+     "text": "Tiago (17 ans) a écrit trois versions de lui à 22 ans : graphiste dans une agence, son propre studio photo, costumier dans un cirque en tournée."
     },
     {
      "art": "ankreuzen",
@@ -16187,19 +16577,18 @@
     {
      "art": "zuordnen",
      "titel": [
-      "Verbinde: wo Jang wartet …",
-      "… welcher Trick passt (mehrere Linien gehen)"
+      "Verbinde: der Trick …",
+      "… so geht er"
      ],
      "links": [
-      "im Wartezimmer",
-      "an der Kasse",
-      "auf das Ergebnis einer Arbeit",
-      "am Bahnsteig bei Verspätung"
-     ],
-     "rechts": [
       "Atemzüge zählen",
       "einen Punkt fixieren",
       "ein Lied im Kopf mitsingen"
+     ],
+     "rechts": [
+      "den Blick auf eine Stelle im Raum richten",
+      "eine Melodie im Kopf weiterlaufen lassen",
+      "bei jedem Atemzug eine Zahl denken"
      ]
     },
     {
@@ -16236,19 +16625,18 @@
     {
      "art": "zuordnen",
      "titel": [
-      "Relie : où Jang attend …",
-      "… quelle astuce convient (plusieurs traits possibles)"
+      "Relie : l’astuce …",
+      "… comment ça marche"
      ],
      "links": [
-      "dans la salle d’attente",
-      "à la caisse",
-      "en attendant le résultat d’un devoir",
-      "sur le quai, avec du retard"
-     ],
-     "rechts": [
       "compter ses respirations",
       "fixer un point",
       "chanter une chanson dans sa tête"
+     ],
+     "rechts": [
+      "regarder un endroit précis de la pièce",
+      "laisser une mélodie tourner dans sa tête",
+      "penser à un chiffre à chaque respiration"
      ]
     },
     {
@@ -16294,6 +16682,14 @@
     ],
     "versuch": "Essaie cette semaine, quand tu dois attendre, l’une des trois astuces : compter tes souffles, un morceau dans la tête ou fixer un point.",
     "probe": "Sofia attend ses amis devant le cinéma. Ils ont du retard et son portable n’a plus de batterie. Quelle astuce pour attendre Sofia pourrait-elle choisir : compter ses souffles, un morceau dans la tête ou fixer un point ?"
+   }
+  },
+  "linie": {
+   "id": "impulskontrolle-12-16-a",
+   "nr": 1,
+   "faden": {
+    "de": "Abwarten üben: von der gefühlten Minute bis zum Melden im Unterricht",
+    "fr": "Savoir attendre : de la minute ressentie jusqu’à la prise de parole en cours"
    }
   }
  },
@@ -16425,7 +16821,7 @@
     {
      "art": "wennDann",
      "zeilen": 1,
-     "wenn": "Wenn ich dort etwas sagen oder tun will, aber noch nicht dran bin …",
+     "wenn": "Wenn ich etwas sagen oder tun will, aber noch nicht dran bin (echt oder erfunden) …",
      "dann": "dann hilft mir:"
     }
    ],
@@ -16458,7 +16854,7 @@
     {
      "art": "wennDann",
      "zeilen": 1,
-     "wenn": "Si là-bas je veux dire ou faire quelque chose, mais que ce n’est pas encore mon tour …",
+     "wenn": "Si je veux dire ou faire quelque chose, mais que ce n’est pas encore mon tour (vrai ou inventé) …",
      "dann": "alors ce qui m’aide :"
     }
    ]
@@ -16493,6 +16889,18 @@
     ],
     "versuch": "Fais attention cette semaine quand tu dois attendre : garde les mains calmes, compte à voix basse, souffle lentement.",
     "probe": "Mia est à la caisse du supermarché avec Noah. Devant eux, quelqu’un paie lentement en petite monnaie et Mia devient impatiente. Comment peut-elle rester calme avec « Attendre » : mains calmes, compter, souffler ?"
+   }
+  },
+  "linie": {
+   "id": "impulskontrolle-12-16-a",
+   "nr": 2,
+   "faden": {
+    "de": "Abwarten üben: von der gefühlten Minute bis zum Melden im Unterricht",
+    "fr": "Savoir attendre : de la minute ressentie jusqu’à la prise de parole en cours"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du Warte-Tricks ausprobiert: Atemzüge zählen, Song im Kopf, Punkt fixieren. Heute geht es um ruhige Hände bei einem Kartentrick.",
+    "fr": "La dernière fois, tu as testé des astuces pour attendre. Aujourd’hui : rester les mains calmes pendant un tour de cartes."
    }
   }
  },
@@ -16726,6 +17134,18 @@
     "versuch": "Essaie cette semaine, face à un long message ou à une explication, de noter un mot-clé, de souffler, puis de répondre.",
     "probe": "Mehdi reçoit de Sami un long message vocal sur l’entraînement. Dès la première phrase, il a déjà sa réponse en tête. Comment Mehdi peut-il appliquer « Écouter jusqu’au bout » ?"
    }
+  },
+  "linie": {
+   "id": "impulskontrolle-12-16-a",
+   "nr": 3,
+   "faden": {
+    "de": "Abwarten üben: von der gefühlten Minute bis zum Melden im Unterricht",
+    "fr": "Savoir attendre : de la minute ressentie jusqu’à la prise de parole en cours"
+   },
+   "bruecke": {
+    "de": "Beim Kartentrick hast du ruhig abgewartet. Heute geht es um das Gespräch: erst zu Ende hören, dann antworten.",
+    "fr": "Pendant le tour de cartes, tu as attendu calmement. Aujourd’hui, il s’agit de la conversation : écouter jusqu’au bout, puis répondre."
+   }
   }
  },
  {
@@ -16762,6 +17182,10 @@
    {
     "code": "K-30",
     "gewicht": 1
+   },
+   {
+    "code": "V-13",
+    "gewicht": 0.5
    }
   ],
   "kompetenz": [
@@ -16930,6 +17354,18 @@
     ],
     "versuch": "Essaie cette semaine, avant un appel ou un exposé, d’écrire trois mots-clés et ta première phrase sur un papier.",
     "probe": "Diogo doit dire quelques mots à la réunion de son stage sur ce qu’il a fait cette semaine. Il ne sait pas comment commencer. Que pourrait-il faire avec des mots-clés et une première phrase prête ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-b",
+   "nr": 2,
+   "faden": {
+    "de": "Aus dem, was ich gut kann, sprechen – bis zur eigenen Meldung im Unterricht",
+    "fr": "Parler de ce que je sais bien – jusqu’à ma propre prise de parole en cours"
+   },
+   "bruecke": {
+    "de": "Du hast aus deinem Fachgebiet Fragen gestellt und erklärt. Heute machst du eine kurze Radiosendung: erst Stichworte, dann drei Minuten sprechen.",
+    "fr": "Tu as posé des questions et expliqué dans ton domaine. Aujourd’hui, tu fais une courte émission de radio : d’abord des mots-clés, puis trois minutes de parole."
    }
   }
  },
@@ -17151,6 +17587,10 @@
    {
     "code": "SOZ-23",
     "gewicht": 0.5
+   },
+   {
+    "code": "K-22",
+    "gewicht": 0.5
    }
   ],
   "kompetenz": [
@@ -17239,7 +17679,7 @@
      "art": "dialog",
      "zeilen": [
       {
-       "wer": "Freundin (ihr gestaltet zusammen ein Plakat)",
+       "wer": "Freundin (sie gestaltet mit dir ein Plakat)",
        "text": "„Ich würde die Überschrift lieber oben machen statt links.“"
       },
       {
@@ -17291,7 +17731,7 @@
      "art": "dialog",
      "zeilen": [
       {
-       "wer": "Une amie (vous faites une affiche ensemble)",
+       "wer": "Une amie (elle fait une affiche avec toi)",
        "text": "« Je mettrais le titre plutôt en haut qu’à gauche. »"
       },
       {
@@ -17345,6 +17785,18 @@
     ],
     "versuch": "Essaie cette semaine de répondre à une proposition par « Oui, et … » et d’y ajouter ta propre idée.",
     "probe": "Tom et Jana doivent préparer un quiz pour la fête de classe. Jana veut commencer par des questions sur les animaux, Tom préférerait la musique. Comment Tom peut-il accueillir la proposition de Jana et y ajouter son idée ?"
+   }
+  },
+  "linie": {
+   "id": "kooperation-12-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Gemeinsam etwas schaffen – und sehen, wer was dazu beigetragen hat",
+    "fr": "Réussir quelque chose ensemble – et voir qui y a contribué"
+   },
+   "bruecke": {
+    "de": "Letztes Mal haben wir uns den Ball zugespielt und eine Serie gezählt. Heute bauen wir zusammen einen Papierturm: erst planen, dann abwechselnd bauen.",
+    "fr": "On s’est passé le ballon en comptant une série. Aujourd’hui, on construit une tour en papier : planifier d’abord, puis construire en alternant."
    }
   }
  },
@@ -17551,7 +18003,15 @@
     }
    ]
   },
-  "kurz": "Fachgebiet wählen · 8 Fragekarten schreiben · abfragen · erklären"
+  "kurz": "Fachgebiet wählen · 8 Fragekarten schreiben · abfragen · erklären",
+  "linie": {
+   "id": "kommunikation-12-18-b",
+   "nr": 1,
+   "faden": {
+    "de": "Aus dem, was ich gut kann, sprechen – bis zur eigenen Meldung im Unterricht",
+    "fr": "Parler de ce que je sais bien – jusqu’à ma propre prise de parole en cours"
+   }
+  }
  },
  {
   "id": "j:becher-beat",
@@ -17665,17 +18125,12 @@
      "spalten": 2
     },
     {
-     "art": "frage",
-     "text": "Mein Beat aus acht Schlägen, in Zeichen:",
-     "linien": 1
-    },
-    {
      "art": "tabelle",
      "spalten": [
       "Satz im Takt (z. B. ein Songtitel)",
       "Beat dazu, in Zeichen"
      ],
-     "zeilen": 2,
+     "zeilen": 1,
      "beispiel": [
       "Noch fünf Minuten",
       "B K T T K"
@@ -17709,17 +18164,12 @@
      "spalten": 2
     },
     {
-     "art": "frage",
-     "text": "Mon beat de huit coups, en signes :",
-     "linien": 1
-    },
-    {
      "art": "tabelle",
      "spalten": [
       "Phrase en rythme (par ex. un titre de chanson)",
       "Le beat qui va avec, en signes"
      ],
-     "zeilen": 2,
+     "zeilen": 1,
      "beispiel": [
       "Encore cinq minutes",
       "G M T T M"
@@ -17964,6 +18414,18 @@
     "versuch": "Remarque cette semaine quand un plan ou une règle change d’un coup : respire un bon coup, change de cap, continue.",
     "probe": "Mehdi joue à l’Uno à la récré. En pleine partie, Lara dit : « Maintenant, on peut cumuler les +2 ! » Mehdi avait un autre plan. Comment peut-il basculer et continuer ?"
    }
+  },
+  "linie": {
+   "id": "selbstregulation-12-18-a",
+   "nr": 2,
+   "faden": {
+    "de": "Umschalten, wenn Neues kommt oder sich Pläne ändern: ein Satz im Kopf hilft",
+    "fr": "Basculer quand les plans changent : une phrase en tête aide"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du etwas Neues ausprobiert und einen Satz gefunden, der hilft. Heute ändert sich mitten im Spiel die Regel, und du schaltest um.",
+    "fr": "La dernière fois, tu as essayé du nouveau et trouvé une phrase qui aide. Aujourd’hui, la règle change en plein jeu, et tu bascules."
+   }
   }
  },
  {
@@ -18067,8 +18529,7 @@
      "links": [
       "„War nur Glück.“",
       "weggucken und Blödsinn machen",
-      "„Danke, hat geklappt.“",
-      "„Ach, das war doch nichts.“"
+      "„Danke, hat geklappt.“"
      ],
      "rechts": [
       "annehmen",
@@ -18132,8 +18593,7 @@
      "links": [
       "« C’était juste de la chance. »",
       "regarder ailleurs et faire le clown",
-      "« Merci, ça a marché. »",
-      "« Bof, c’était rien. »"
+      "« Merci, ça a marché. »"
      ],
      "rechts": [
       "contrôler",
@@ -18542,7 +19002,6 @@
      "items": [
       "Wie groß ist das?",
       "Links oder rechts?",
-      "Oben oder unten?",
       "Berührt es eine andere Form?",
       "Was kommt zuerst?",
       "Womit kann man es vergleichen?",
@@ -18576,7 +19035,6 @@
      "items": [
       "C’est grand comment ?",
       "À gauche ou à droite ?",
-      "En haut ou en bas ?",
       "Ça touche une autre forme ?",
       "Qu’est-ce qui vient en premier ?",
       "On peut le comparer à quoi ?",
@@ -18729,7 +19187,7 @@
   "sicher": {},
   "uebungsblatt": {
    "titel": {
-    "de": "Wort plus Beispiel",
+    "de": "Wort mit Beispiel",
     "fr": "Un mot, un exemple"
    },
    "de": [
@@ -18844,7 +19302,15 @@
    ]
   },
   "kurz": "Je 3 Wörter heimlich wählen · gleichzeitig aufdecken · Beispiel nennen",
-  "vorbereitung": "10 Karten: ruhig · lustig · mutig · fair · klug · ehrlich · kreativ · geduldig · neugierig · hilfsbereit"
+  "vorbereitung": "10 Karten: ruhig · lustig · mutig · fair · klug · ehrlich · kreativ · geduldig · neugierig · hilfsbereit",
+  "linie": {
+   "id": "selbstbild-12-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Eigenschaften und Stärken benennen – und jedes Mal mit einem Beispiel belegen",
+    "fr": "Nommer ses qualités et ses points forts – toujours avec un exemple"
+   }
+  }
  },
  {
   "id": "j:sprechblase-erster-satz",
@@ -18961,7 +19427,7 @@
     },
     {
      "art": "ankreuzen",
-     "titel": "Welche ersten Sätze passen zu Samir? Kreuz an, mehrere gehen.",
+     "titel": "Welche kurzen Fragen passen als erster Satz zu Samir? Kreuz an, mehrere gehen.",
      "items": [
       "„Wartest du auch auf den Tisch?“",
       "„Wieso stehst du hier so allein rum?“",
@@ -19004,7 +19470,7 @@
     },
     {
      "art": "ankreuzen",
-     "titel": "Quelles premières phrases conviennent pour Samir ? Coche, plusieurs réponses possibles.",
+     "titel": "Quelles courtes questions conviennent comme première phrase pour Samir ? Coche, plusieurs réponses possibles.",
      "items": [
       "« Tu attends aussi la table ? »",
       "« Pourquoi tu restes là tout seul ? »",
@@ -19054,6 +19520,14 @@
     ],
     "versuch": "Remarque cette semaine à quoi tu vois si quelqu’un envoie « Maintenant », « Bientôt » ou « Plus tard » avant de l’aborder.",
     "probe": "Lara veut demander un conseil en maths à Mehdi, à la cantine. Il a son casque et mange vite, mais lève brièvement les yeux. Quel signal lit-elle – Maintenant, Bientôt ou Plus tard – et que dit-elle ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Kontakt aufnehmen: den Moment erkennen, ins Gespräch einsteigen, den ersten Satz finden",
+    "fr": "Aller vers les autres : saisir le bon moment, entrer dans la conversation, trouver la première phrase"
    }
   }
  },
@@ -19146,7 +19620,7 @@
   "uebungsblatt": {
    "titel": {
     "de": "Einhaken, aber wann?",
-    "fr": "Intervenir, mais quand ?"
+    "fr": "Prendre la parole, mais quand ?"
    },
    "de": [
     {
@@ -19266,6 +19740,18 @@
     ],
     "versuch": "Essaie cette semaine de faire un signe, d’attendre la fin de la phrase, puis de dire court ce que tu veux dire.",
     "probe": "Amira a une idée pour la composition de l’équipe pendant l’entraînement, mais l’entraîneur parle encore. Elle a déjà la main à moitié levée. Comment peut-elle s’y prendre avec « Prendre la parole » ?"
+   }
+  },
+  "linie": {
+   "id": "impulskontrolle-12-16-a",
+   "nr": 4,
+   "faden": {
+    "de": "Abwarten üben: von der gefühlten Minute bis zum Melden im Unterricht",
+    "fr": "Savoir attendre : de la minute ressentie jusqu’à la prise de parole en cours"
+   },
+   "bruecke": {
+    "de": "Du hast geübt, im Gespräch erst zu Ende zu hören. Heute geht es ums Einhaken im Unterricht: Zeichen geben, Satzende abwarten, kurz sagen.",
+    "fr": "Tu as répété comment écouter jusqu’au bout. Aujourd’hui, tu t’exerces à prendre la parole en cours : faire un signe, attendre la fin, dire court."
    }
   }
  },
@@ -19484,6 +19970,18 @@
     ],
     "versuch": "Essaie cette semaine de préparer une seule prise de parole : écris une phrase sur une carte et répète-la deux fois à voix haute.",
     "probe": "Zoé aimerait poser une question en cours de français, mais rien ne lui vient sur le moment. Le cours est demain matin. Comment Zoé peut-elle « préparer une seule prise de parole » ?"
+   }
+  },
+  "linie": {
+   "id": "kommunikation-12-18-b",
+   "nr": 3,
+   "faden": {
+    "de": "Aus dem, was ich gut kann, sprechen – bis zur eigenen Meldung im Unterricht",
+    "fr": "Parler de ce que je sais bien – jusqu’à ma propre prise de parole en cours"
+   },
+   "bruecke": {
+    "de": "Du hast mit Stichworten und einem ersten Satz gesprochen. Heute bereiten wir eine einzige Meldung für den Unterricht vor.",
+    "fr": "Tu as parlé avec des mots-clés et une première phrase. Aujourd’hui, on prépare une seule prise de parole pour tes cours."
    }
   }
  },
@@ -20148,7 +20646,19 @@
    ]
   },
   "kurz": "Vier Gefühlswörter ziehen · Farbe und Klang dazu · Palette betiteln",
-  "vorbereitung": "12 Wortkarten schreiben: gelassen · gereizt · wehmütig · trotzig · erschöpft · gespannt · übermütig · verlegen …"
+  "vorbereitung": "12 Wortkarten schreiben: gelassen · gereizt · wehmütig · trotzig · erschöpft · gespannt · übermütig · verlegen …",
+  "linie": {
+   "id": "gefuehle-ausdruecken-12-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Gefühle ausdrücken: erst mit Farbe und Musik, dann mit genauen Worten, dann direkt sagen",
+    "fr": "Exprimer ses émotions : couleur et musique d’abord, puis mots précis, puis dire directement"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du überlegt, was ein Song mit der Stimmung macht. Heute suchst du genaue Gefühlswörter und gibst ihnen Farbe und Klang.",
+    "fr": "La dernière fois, tu as réfléchi à ce qu’une chanson fait à l’ambiance. Aujourd’hui, tu cherches des mots précis et leur donnes couleur et son."
+   }
+  }
  },
  {
   "id": "j:zwei-fassungen-meiner-arbeit",
@@ -20462,8 +20972,7 @@
       "Musik hören oder machen",
       "Zeichnen oder Gestalten",
       "Gaming",
-      "Sport oder Training",
-      "Tanzen",
+      "Sport, Tanzen oder Training",
       "Fotografieren",
       "etwas anderes"
      ],
@@ -20502,8 +21011,7 @@
       "écouter ou faire de la musique",
       "dessiner ou créer",
       "gaming",
-      "sport ou entraînement",
-      "danse",
+      "sport, danse ou entraînement",
       "photographier",
       "autre chose"
      ],
@@ -20565,6 +21073,18 @@
     ],
     "versuch": "Essaie cette semaine de noter, pour une activité que tu aimes : ce qui va déjà, ce que tu travailles encore et quelle astuce t’aide.",
     "probe": "Sami joue de la batterie depuis un an. La prof de musique lui demande s’il veut rejoindre le groupe de l’école et ce qu’il sait déjà faire. Comment Sami peut-il le dire avec « Une carte » ?"
+   }
+  },
+  "linie": {
+   "id": "selbstbild-12-18-a",
+   "nr": 3,
+   "faden": {
+    "de": "Eigenschaften und Stärken benennen – und jedes Mal mit einem Beispiel belegen",
+    "fr": "Nommer ses qualités et ses points forts – toujours avec un exemple"
+   },
+   "bruecke": {
+    "de": "Letztes Mal hast du zu Eigenschaften die zwei Seiten gesucht. Heute belegst du deine eigenen Stärken mit Beispielen auf einer Karte.",
+    "fr": "La dernière fois, tu as cherché les deux faces d’un trait. Aujourd’hui, tu illustres tes propres points forts par des exemples sur une carte."
    }
   }
  },
@@ -20791,6 +21311,14 @@
     ],
     "versuch": "Essaie cette semaine, dans un jeu de balle, de chercher le regard avant la passe et d’appeler « Maintenant ! ».",
     "probe": "Luca joue au basket à la récré. Yanis est démarqué, mais Luca lance le ballon fort et sans prévenir, et Yanis le rate. Que pourrait faire Luca autrement avec « Jeu d’équipe » la prochaine fois ?"
+   }
+  },
+  "linie": {
+   "id": "kooperation-12-18-a",
+   "nr": 1,
+   "faden": {
+    "de": "Gemeinsam etwas schaffen – und sehen, wer was dazu beigetragen hat",
+    "fr": "Réussir quelque chose ensemble – et voir qui y a contribué"
    }
   }
  },
@@ -21367,15 +21895,15 @@
      ],
      "links": [
       "Was ändert sich?",
+      "Wo endet Bus 14?",
       "Wann geht es los?",
-      "Warum?",
-      "Wie lange?"
+      "Warum?"
      ],
      "rechts": [
+      "ab Montag",
       "wegen einer Baustelle",
-      "etwa sechs Wochen",
-      "Bus 14 endet am Bahnhof",
-      "ab Montag"
+      "Bus 14 fährt nicht mehr bis zum Schwimmbad",
+      "am Bahnhof"
      ]
     },
     {
@@ -21383,7 +21911,7 @@
      "titel": "Wen betrifft die Meldung am meisten? Kreuz an, mehrere gehen.",
      "items": [
       "Leute, die täglich mit Bus 14 zum Schwimmbad fahren",
-      "Eltern, die ihr Kind zum Schwimmtraining bringen",
+      "Eltern, die ihr Kind mit Bus 14 zum Schwimmtraining bringen",
       "Leute, die nie Bus fahren und im Norden der Stadt wohnen",
       "Ältere Menschen, die schlecht zu Fuß sind"
      ],
@@ -21418,15 +21946,15 @@
      ],
      "links": [
       "Qu’est-ce qui change ?",
+      "Où s’arrête le bus 14 ?",
       "Quand ça commence ?",
-      "Pourquoi ?",
-      "Combien de temps ?"
+      "Pourquoi ?"
      ],
      "rechts": [
+      "à partir de lundi",
       "à cause de travaux",
-      "environ six semaines",
-      "le bus 14 s’arrête à la gare",
-      "à partir de lundi"
+      "le bus 14 ne va plus jusqu’à la piscine",
+      "à la gare"
      ]
     },
     {
@@ -21434,7 +21962,7 @@
      "titel": "Qui est le plus concerné par cette info ? Coche, plusieurs réponses possibles.",
      "items": [
       "Les gens qui prennent le bus 14 tous les jours pour aller à la piscine",
-      "Les parents qui emmènent leur enfant à l’entraînement de natation",
+      "Les parents qui emmènent leur enfant à l’entraînement de natation avec le bus 14",
       "Les gens qui ne prennent jamais le bus et habitent au nord de la ville",
       "Les personnes âgées qui marchent difficilement"
      ],

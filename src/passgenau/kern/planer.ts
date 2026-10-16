@@ -496,8 +496,18 @@ function themenRahmenPasst(c: Kontext, kern: KatalogEintrag): boolean {
 /** Der Satz, mit dem ein Einstieg ab Sitzung 2 an die letzte Sitzung anknüpft (roter Faden): die Übung beim Namen oder, nach
  *  einer Übertragen-Sitzung, der vereinbarte kleine Versuch (Blind-Bewertung 11: „wird in der Folgesitzung nirgends
  *  nachgefragt“). Gilt für den eigenen Einstieg und für Themen-Einstiege. */
-function anknuepfen(c: Kontext, nr: number, vorher: { de: string; fr: string } | undefined, nachVersuch: boolean): { de: string; fr: string } {
+function anknuepfen(c: Kontext, nr: number, vorher: { de: string; fr: string } | undefined, nachVersuch: boolean, bruecke?: { de: string; fr: string }): { de: string; fr: string } {
   const v = nr > 1 ? vorher : undefined
+  // Lernpfad (Stufe 4): die Übung baut auf der letzten auf – die Fachkraft sagt die Brücke statt nur den Titel von damals
+  // (Blind-Bewertung 13: „Sitzung 2 übt nicht, was Sitzung 1 lehrt“)
+  if (v && bruecke && !nachVersuch) {
+    const still = c.alter >= 12 && ((c.p.achtung ?? []).length > 0 || krisenlage(c))
+    return c.alter >= 12
+      ? still
+        ? { de: `Zuerst schlägt die Fachkraft die Brücke zu „${v.de}“ aus Sitzung ${nr - 1} – ohne Fragen: „${bruecke.de}“ `, fr: `D’abord, l’adulte fait le lien avec « ${v.fr} » (séance ${nr - 1}) – sans questions : « ${bruecke.fr} » ` }
+        : { de: `Zuerst die Brücke zu „${v.de}“ aus Sitzung ${nr - 1}: „${bruecke.de}“ Wer mag, sagt, was davon hängen geblieben ist – nichts muss. `, fr: `D’abord le lien avec « ${v.fr} » (séance ${nr - 1}) : « ${bruecke.fr} » Si le ou la jeune le souhaite, il ou elle dit ce qui en est resté – rien n’est obligatoire. ` }
+      : { de: `Zuerst die Brücke zu „${v.de}“ aus Sitzung ${nr - 1}: „${bruecke.de}“ `, fr: `D’abord le lien avec « ${v.fr} » (séance ${nr - 1}) : « ${bruecke.fr} » ` }
+  }
   if (c.alter >= 12) {
     // offenes heikles Thema oder Krise (Blind-Bewertung 7 und 10: „fragt die Vorstunde ab“ bei Stimmung 2): nur erinnern
     const still = (c.p.achtung ?? []).length > 0 || krisenlage(c)
@@ -530,16 +540,52 @@ function vorigeUebung(c: Kontext, fruehere: string[], kernTitel: unknown): { vor
   return { vorher, nachVersuch: fruehere[fruehere.length - 1] === 'pg:uebertragen' && c.weg === 'gruendlich' && c.alter >= 8 }
 }
 
+/** Brücke des Lernpfads (Stufe 4): der Kern ist ein späterer Schritt derselben Reihe wie die Übung der letzten Sitzung. */
+function brueckeVon(c: Kontext, fruehere: string[], kern: KatalogEintrag | undefined): { de: string; fr: string } | undefined {
+  const vorRef = fruehere[fruehere.length - 1]
+  const vor = vorRef && !vorRef.startsWith('pg:') ? c.k.eintraege.get(vorRef) : undefined
+  if (!kern || kern.typ !== 'schritt' || !kern.linie?.bruecke || vor?.typ !== 'schritt' || !vor.linie) return undefined
+  // nur der direkte Folgeschritt: die Brücke erzählt vom Schritt davor
+  return vor.linie.id === kern.linie.id && vor.linie.nr + 1 === kern.linie.nr ? kern.linie.bruecke : undefined
+}
+
+/** Lernpfad (Stufe 4, Blind-Bewertung 13: „Sitzung 2 übt nicht, was Sitzung 1 lehrt“, „jede Sitzung ein neues Werkzeug“):
+ *  gehört die Übung der letzten Sitzung zu einer Reihe, geht deren nächster Schritt vor – wenn er unter den Kandidaten ist,
+ *  also das Ziel der Sitzung übt. Am Anfang einer Folge (oder des Bogens für das zweite Ziel) zählt ein Reihen-Anfang, wenn
+ *  er fast so gut passt wie der beste Kandidat. */
+function nachLinie(c: Kontext, auswahl: Wahl[], fruehere: string[]): Wahl[] {
+  const linie = (w: Wahl) => (w.b.e.typ === 'schritt' ? w.b.e.linie : undefined)
+  const vorRef = [...fruehere].reverse().find((r) => !r.startsWith('pg:'))
+  const vor = vorRef ? c.k.eintraege.get(vorRef) : undefined
+  const l = vor?.typ === 'schritt' ? vor.linie : undefined
+  if (l) {
+    const weiter = auswahl.filter((w) => linie(w)?.id === l.id && linie(w)!.nr > l.nr).sort((x, y) => linie(x)!.nr - linie(y)!.nr)[0]
+    if (weiter) return [weiter, ...auswahl.filter((w) => w !== weiter)]
+  }
+  // Anfang einer Reihe: nie ein späterer Schritt vor seinem Vorgänger (Testlauf 16.10.: Schritt 3, dann Schritt 1), nie eine
+  // Reihe neu beginnen, aus der die Folge schon eine Übung hatte
+  const schon = new Set(fruehere.flatMap((r) => { const e = c.k.eintraege.get(r); return e?.typ === 'schritt' && e.linie ? [e.linie.id] : [] }))
+  const frueh = (w: Wahl) => { const x = linie(w); return !!x && !schon.has(x.id) && !auswahl.some((v) => linie(v)?.id === x.id && linie(v)!.nr < x.nr) }
+  // … und kein Schritt hinter einen späteren derselben Reihe zurück (Testlauf 16.10.: Schritt 3, dann Schritt 1)
+  const hoechst = new Map<string, number>()
+  for (const r of fruehere) { const e = c.k.eintraege.get(r); if (e?.typ === 'schritt' && e.linie) hoechst.set(e.linie.id, Math.max(hoechst.get(e.linie.id) ?? 0, e.linie.nr)) }
+  const zurueck = (w: Wahl) => { const x = linie(w); return !!x && (hoechst.get(x.id) ?? 0) > x.nr }
+  const vorwaerts = [...auswahl.filter((w) => !zurueck(w)), ...auswahl.filter(zurueck)]
+  const start = vorwaerts.find(frueh)
+  if (start && vorwaerts[0] && start.b.s >= vorwaerts[0].b.s - 0.15) return [start, ...vorwaerts.filter((w) => w !== start)]
+  return vorwaerts
+}
+
 /** Eigener Einstieg, der den Kern der Stunde ankündigt (wenn keine Einheit einen passenden hat). Ab Sitzung 2 knüpft er an
  *  die Übung der letzten Sitzung beim Namen an (Blind-Bewertung 10: „derselbe Textbaustein in jeder Sitzung“, „was von der
  *  Übung davor hängen geblieben ist“ ohne Titel, „Beispiel aus ihrem eigenen Alltag“ ohne Anleitung). */
-function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1, titel?: { de: string; fr: string }, neuesZiel?: { de: string; fr: string }, vorher?: { de: string; fr: string }, nachVersuch = false): PlanSchritt {
+function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1, titel?: { de: string; fr: string }, neuesZiel?: { de: string; fr: string }, vorher?: { de: string; fr: string }, nachVersuch = false, bruecke?: { de: string; fr: string }): PlanSchritt {
   const e = c.k.eintraege.get('pg:einstieg')!
   const de = titel?.de ?? textVon(kern, 'de').titel
   const fr = titel?.fr ?? (kern.typ === 'schritt' && kern.fr ? kern.fr.titel : de)
   const ohnePunkt = (t: string) => t.trim().replace(/[.!]$/, '')
   const ziel = neuesZiel ? { de: `Heute kommt das zweite Ziel der Folge dazu: „${ohnePunkt(neuesZiel.de)}“. `, fr: `Aujourd’hui, le deuxième objectif de la série arrive : « ${ohnePunkt(neuesZiel.fr)} ». ` } : { de: '', fr: '' }
-  const an = anknuepfen(c, nr, vorher, nachVersuch)
+  const an = anknuepfen(c, nr, vorher, nachVersuch, bruecke)
   // Jugendliche: ohne „Material zeigen“ und „das Kind“; ab Sitzung 2 kurz an die letzte anknüpfen (roter Faden)
   if (c.alter >= 12) {
     return {
@@ -1045,7 +1091,10 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       }
       if (!auswahl[0] && slot.rolle === 'einstieg' && kern) {
         const { vorher, nachVersuch } = vorigeUebung(c, o.fruehereKerne ?? [], kernTitel)
-        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr, kernTitel, o.neuesZiel, vorher, nachVersuch)
+        // das zweite Ziel nur ankündigen, wenn der Kern es auch übt (Messung 2, 16.10.: „le deuxième objectif arrive“ vor einer
+        // Übung zum ersten Ziel – es gab keine eigene Übung zum zweiten)
+        const neu = o.neuesZiel && kern.eldib.some((x) => x.code === o.kernZiel) ? o.neuesZiel : undefined
+        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr, kernTitel, neu, vorher, nachVersuch, brueckeVon(c, o.fruehereKerne ?? [], kern))
         continue
       }
     }
@@ -1096,6 +1145,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         .sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
       auswahl = passend
     }
+    if (slot.rolle === 'kern' && c.weg === 'gruendlich' && o.phase !== 'leicht') auswahl = nachLinie(c, auswahl, o.fruehereKerne ?? [])
     const w = auswahl[0]
     if (!w) {
       if (slot.rolle === 'kern') hinweise.push(`Hier fehlt Material: kein passender Kern für ${c.ziele[0]?.code ?? 'dieses Kind'} – im Baukasten suchen.`)
@@ -1107,7 +1157,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     // Einstieg)
     if (slot.rolle === 'einstieg' && w.b.e.id.startsWith('th:') && w.b.e.typ === 'schritt' && o.nr > 1) {
       const { vorher, nachVersuch } = vorigeUebung(c, o.fruehereKerne ?? [], kernTitel)
-      const an = anknuepfen(c, o.nr, vorher, nachVersuch)
+      const an = anknuepfen(c, o.nr, vorher, nachVersuch, brueckeVon(c, o.fruehereKerne ?? [], kern))
       // (FR: nach dem Doppelpunkt klein – „Ensuite : l’adulte …“, Blind-Bewertung 13; Namen bleiben groß)
       const klein = (t: string) => t.replace(/^(L’|Le |La |Les |Un |Une |On |Il |Elle |Ensemble |Pour |Sur |Avec )/, (m) => m.toLowerCase())
       if (an.de) ergebnis[i]!.ueber = { ...ergebnis[i]!.ueber, text: `${an.de}Danach: ${w.b.e.text}`, ...(w.b.e.fr ? { 'fr.text': `${an.fr}Ensuite : ${klein(w.b.e.fr.text)}` } : {}) }

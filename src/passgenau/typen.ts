@@ -106,6 +106,9 @@ export interface Stundenschritt extends KatalogZusatz {
   /** Alltags-Paket (Stufe 2, 16.10.): zwei konkrete Szenen, in denen genau dieses Werkzeug hilft, ein kleiner Versuch und
    *  eine neue Probe für den Rückblick – Übertragen und Rückblick werden damit so konkret wie der Kern */
   transfer?: { de: Transfer; fr?: Transfer }
+  /** Lernpfad (Stufe 4, 16.10.): Platz der Übung in einer Reihe von 3–4 Übungen, die auf einem Werkzeug aufbauen; `bruecke`
+   *  ist der Satz zum Kind ab dem zweiten Schritt („Letztes Mal … Heute …“), `faden` sagt, worauf die Reihe hinausläuft */
+  linie?: { id: string; nr: number; faden: { de: string; fr: string }; bruecke?: { de: string; fr: string } }
   quelle: { art: SchrittQuelle; einheit?: string; titel: string }
   titel: string
   text: string

@@ -592,6 +592,7 @@ function Deckblatt({ f }: { f: DruckFolge }) {
               </View>
             </View>
           ))}
+          {f.faden ? <View style={{ marginTop: 3 }}><LText klein farbe={NEUTRAL.leise}>{`${sp === 'fr' ? 'Fil rouge : ' : 'Roter Faden: '}${f.faden}`}</LText></View> : null}
         </View>
       ) : null}
       {/* Übersicht der Folge zum Abhaken: Phase, Kern, Minuten, Blatt, Datum, gehalten */}

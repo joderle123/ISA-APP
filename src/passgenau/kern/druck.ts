@@ -70,6 +70,8 @@ export interface DruckFolge {
   bogen: { nr: number; phase: string; kern: string }[]
   /** alle Ziele, die eine Sitzung der Folge übt (Blind-Bewertung 9: „das Titelblatt nennt nur ein Ziel“) */
   ziele: { code: string; text: string }[]
+  /** Lernpfad (Stufe 4): worauf die Kerne der Folge hinauslaufen – nur, wenn mindestens zwei aus derselben Reihe kommen */
+  faden?: string
   material: string[]
   datei: string
   sprache: Sprache
@@ -578,7 +580,13 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   // ein Themen-Einstieg bringt seinen eigenen ersten Satz mit – nicht zwei verschiedene Anfänge
   const thEinstieg = s.schritte.map((x) => k.eintraege.get(x.ref)).find((e) => e?.id.startsWith('th:') && e.rolle.includes('einstieg'))
   const thSatz = thEinstieg && s.schritte.some((x) => x.ref === thEinstieg.id && x.rolle === 'einstieg') ? textVon(thEinstieg, sp).sagen?.[0] : undefined
-  const ersterSatz = thSatz ?? einstiegSatz
+  // Lernpfad (Stufe 4): die Übung ist der nächste Schritt der Reihe von letzter Sitzung – der erste Satz ist die Brücke, mit
+  // dem Ziel dahinter (auch ohne eigenen Einstieg in kurzen Stunden)
+  const vorKern = [...(plan.sitzungen.find((x) => x.nr === s.nr - 1)?.schritte ?? [])].reverse().find((x) => x.rolle === 'kern')
+  const vorE = vorKern ? k.eintraege.get(vorKern.ref) : undefined
+  const bruecke = kernE?.typ === 'schritt' && kernE.linie?.bruecke && vorE?.typ === 'schritt' && vorE.linie?.id === kernE.linie.id && vorE.linie.nr + 1 === kernE.linie.nr ? kernE.linie.bruecke[sp] : undefined
+  const brueckeSatz = bruecke ? `${bruecke.trim()}${ichZit ? (sp === 'fr' ? ` Notre but : ${ichZit}` : ` Unser Ziel: ${ichZit}`) : ''}` : undefined
+  const ersterSatz = brueckeSatz ?? thSatz ?? einstiegSatz
   // innen einfache Anführungszeichen (Blind-Bewertung 13: „Heute üben wir: „Ich …“ …“)
   const innen = (t: string) => (sp === 'fr' ? t.replace(/«\s*/g, '“').replace(/\s*»/g, '”') : t.replace(/„/g, '‚').replace(/“/g, '‘'))
   const einstieg = ersterSatz ? (sp === 'fr' ? `« ${innen(ersterSatz.replace(/^«\s*|\s*»$/g, ''))} »` : `„${innen(ersterSatz.replace(/^„|“$/g, ''))}“`) : undefined
@@ -788,8 +796,11 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
 export function druckFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache: Sprache; warum: boolean }): DruckFolge {
   const sitzungen = plan.sitzungen.map((s) => druckSitzung(k, p, plan, s.nr, { ...opt, karten: false }))
   const material = [...new Set(sitzungen.flatMap((s) => s.material))]
+  const linien = plan.sitzungen.flatMap((s) => s.schritte.filter((x) => x.rolle === 'kern').map((x) => k.eintraege.get(x.ref))).flatMap((e) => (e?.typ === 'schritt' && e.linie ? [e.linie] : []))
+  const faden = linien.find((l) => linien.filter((x) => x.id === l.id).length >= 2)?.faden[opt.sprache]
   return {
     titel: plan.titel,
+    ...(faden ? { faden } : {}),
     sitzungen,
     bogen: plan.sitzungen.map((s) => {
       const kern = s.schritte.find((x) => x.rolle === 'kern')
