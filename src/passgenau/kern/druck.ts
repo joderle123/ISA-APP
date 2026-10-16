@@ -5,7 +5,7 @@ import type { Baustein, Blatt } from '../../blatt/typen'
 import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
 import { bausteinInhalt, eldibKurz, intern, istGruppenText, merkmaleVon, quelleText, setzeTextModus, staemme, textVon, zielSatz, type Katalog } from './katalog'
 import { textMerkmale } from './einzel'
-import { kinderblatt, quellenDerUebertragung } from './blatt'
+import { kinderblatt, quellenDerUebertragung, werkzeugName } from './blatt'
 import { gruppenRollen, mitgliedProfil } from './gruppe'
 import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME, kompetenzAusCode } from './vokabular'
 import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter, ohneEigenenNamen } from './hilfen'
@@ -242,6 +242,17 @@ function mitName(t: string, name: string, sp: Sprache): string {
     .replace(/\b[Ii]hm oder ihr\b/g, name)
 }
 
+/** Der eigene Themensatz eines Rahmenteils („Heute geht es ums Dranbleiben.“, „Zum Schluss etwas zu Konflikten:“) – fällt im
+ *  Stunden-Faden weg, der Rest bleibt. null: kein Themensatz. */
+const THEMA_SATZ_RE = /^(Heute (geht|ging) es (um|ums|darum)\b[^.!?:]*[.!?:]|Heute üben wir\b[^.!?:]*[.!?:]|Aujourd’hui, on (parle|s’intéresse|a parlé|apprend|voit|fait|va)\b[^.!?:]*[.!?:])\s*/
+const RAHMEN_PRAEFIX_RE = /^(Zum (Anfang|Ankommen|Start|Schluss|Abschluss)) (noch )?(etwas|ein(en|e)? [\wäöüß-]+) (zu|zum|zur|für|über) [^:]+:\s*/
+const RAHMEN_PRAEFIX_FR_RE = /^(Pour (commencer|finir|terminer)),? (encore )?quelque chose (sur|pour|autour de) [^:]+ :\s*/
+function ohneThemensatz(t: string): string | null {
+  if (!THEMA_SATZ_RE.test(t) && !RAHMEN_PRAEFIX_RE.test(t) && !RAHMEN_PRAEFIX_FR_RE.test(t)) return null
+  const r = t.replace(THEMA_SATZ_RE, '').replace(RAHMEN_PRAEFIX_RE, (_m, a: string) => `${a}: `).replace(RAHMEN_PRAEFIX_FR_RE, (_m, a: string) => `${a} : `).trim()
+  return r ? r.charAt(0).toUpperCase() + r.slice(1) : ''
+}
+
 /** Sätze mit einer Diagnose als Beispiel weglassen (Blind-Bewertung 8: „im Autismus-Spektrum“ ohne Anlass im Planblatt). */
 function ohneDiagnose(t: string | undefined): string | undefined {
   if (!t || !textMerkmale(t).has('diagnose')) return t
@@ -328,6 +339,10 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
         ? ` Pour finir, l’adulte donne un nom à ce qu’on vient de faire : ${zit}${jugend ? '.' : klein ? ' – l’enfant peut le répéter ou le montrer.' : ' – et l’enfant le redit avec ses mots.'}`
         : ` Zum Schluss gibt die Fachkraft dem Geübten einen Namen: ${zit}${jugend ? '.' : klein ? ' – das Kind darf es nachsprechen oder zeigen.' : ' – und das Kind sagt es mit eigenen Worten nach.'}`
   }
+  // Zeit (Blind-Bewertung 13: „drei Balance-Posen erfinden, benennen, halten, wechseln – in 2 Minuten“): hat der Schritt deutlich
+  // weniger Minuten, als die Übung braucht, darf die Fachkraft kürzen – das steht dabei
+  if (e.typ === 'schritt' && !x.ref.startsWith('pg:') && x.rolle !== 'ankommen' && x.rolle !== 'abschluss' && !x.wahl?.length && x.min > 0 && x.min < e.dauer.typ - 1)
+    d.text += sprache === 'fr' ? ` Aujourd’hui en bref (${x.min} min) : la première partie suffit.` : ` Heute knapp (${x.min} Min.): Der erste Teil reicht.`
   // eigene Schritte haben eine feste Zeile (auch mit eingesetztem Text); ein überschriebener Text verdrängt die Zeile des Bausteins
   // Themen-Einstieg mit Anknüpfen: die Spickzettel-Zeile der Übung, nicht der Anknüpf-Satz (Blind-Bewertung 13)
   const kz = PG_KURZ[x.ref]?.[sprache] ?? ((ueberText && !x.ref.startsWith('th:')) || x.wahl?.length ? undefined : e.typ === 'schritt' ? (sprache === 'fr' ? e.fr?.kurz : e.kurz) : undefined)
@@ -546,6 +561,36 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   if (einstiegSatz) s.schritte.forEach((x, i) => {
     if (x.ref === 'pg:einstieg' && schritte[i]) schritte[i].sagen = [einstiegSatz, ...schritte[i].sagen.filter((t) => t !== einstiegSatz)].slice(0, 3)
   })
+  // Stunden-Faden (Blind-Bewertung 13: „Heute geht es ums Stoppen“ im Ankommen, „um Gefühle“ im Einstieg, „ums Aufräumen“ im
+  // Abschluss – drei Themen in einer Stunde): Rahmenteile bringen keinen eigenen Themensatz mehr mit. Ankommen und Pausen
+  // lassen ihn weg, Abschluss und Reflexion sagen, worum es in dieser Sitzung ging – mit dem Werkzeug beim Namen.
+  if (zf) {
+    // beim Übertragen das Werkzeug der übertragenen Übung
+    const wQuelle = kernX?.ref === 'pg:uebertragen' ? quellenDerUebertragung(k, plan, kernX)[0] : kernX && !kernX.ref.startsWith('pg:') ? kernE : undefined
+    const wName = wQuelle && wQuelle.typ === 'schritt' && wQuelle.werkzeug ? werkzeugName(wQuelle.werkzeug[sp], textVon(wQuelle, sp).titel) : undefined
+    const rueck = sp === 'fr'
+      ? `Aujourd’hui, on a travaillé ceci : ${zf.fr.charAt(0).toLowerCase()}${zf.fr.slice(1)}${wName ? ` – avec « ${wName} »` : ''}.`
+      : `Heute ging es darum, ${zf.satz.de}${wName ? ` – mit „${wName}“` : ''}.`
+    s.schritte.forEach((x, i) => {
+      const d = schritte[i]
+      if (!d || x.ref.startsWith('pg:') || x.rolle === 'kern' || x.rolle === 'einstieg' || x.rolle === 'uebung') return
+      const zurueck = x.rolle === 'abschluss' || x.rolle === 'reflexion'
+      let ersetzt = false
+      d.sagen = d.sagen
+        .map((t) => {
+          const ohne = ohneThemensatz(t)
+          if (ohne === null) return t
+          if (zurueck && !ersetzt) {
+            ersetzt = true
+            return `${rueck}${ohne ? ` ${ohne}` : ''}`
+          }
+          return ohne
+        })
+        .filter((t) => t.trim())
+      // der Abschluss nennt immer, worum es heute ging – auch bei einem Ritual ohne Thema (roter Faden bis zum Schluss)
+      if (x.rolle === 'abschluss' && !ersetzt) d.sagen = [rueck, ...d.sagen].slice(0, 3)
+    })
+  }
   return {
     titel: plan.titel,
     zeile,
