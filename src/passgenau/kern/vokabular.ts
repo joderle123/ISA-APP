@@ -191,7 +191,8 @@ export function kompetenzAusCode(code: string): Kompetenz {
     if ([37, 21].includes(n)) return 'gefuehle-erkennen'
     if ([34, 23].includes(n)) return 'konflikte'
     if ([9, 40, 35].includes(n)) return 'selbstbild'
-    if ([12, 15, 33, 41].includes(n)) return 'kommunikation'
+    // SOZ-25 „Vorliebe für bestimmte Kinder“: auf jemanden zugehen (Blind-Bewertung 13: lief als „Coopérer“)
+    if ([12, 15, 33, 41, 25].includes(n)) return 'kommunikation'
     return 'kooperation'
   }
   if (n <= 6) return 'aufmerksamkeit'
@@ -204,6 +205,19 @@ export function kompetenzAusCode(code: string): Kompetenz {
   if ([17, 19, 23, 24, 18, 32].includes(n)) return 'aufmerksamkeit'
   if ([16, 28, 33, 43].includes(n)) return 'ausdauer'
   return 'lernstrategien'
+}
+
+/** Gehört das Ziel eindeutig zu seinem Kompetenzfeld? Nur dann passen die Themen-Rahmen des Felds (Einstieg, Bewegung,
+ *  Rituale) zum Ziel (Blind-Bewertung 13: „Ich komme, wenn man mich ruft“ bekam Einstiege und Abschluss zur Kooperation,
+ *  „Ich erkläre, warum jemand etwas tut“ zu Gefühlen, „Geld bis 10 €“ einen Reißverschluss). Nicht eindeutig: kognitive
+ *  Ziele, die Grundstufe (Vorschul-Basis: V-1–9, K-1–8, SOZ-1–12) und die Rest-Zuordnungen ohne eigene Liste. */
+export function feldEindeutig(code: string): boolean {
+  const [d, nStr] = code.split('-')
+  const n = Number(nStr)
+  if (d === 'V') return [10, 11, 20, 21, 26, 13, 15, 29, 14, 22, 30, 16, 17, 31, 18, 28, 12].includes(n)
+  if (d === 'K') return [16, 21, 26, 15, 18, 19, 22, 24, 32, 31, 25].includes(n)
+  if (d === 'SOZ') return [14, 19, 37, 21, 34, 23, 9, 40, 35, 15, 33, 41].includes(n)
+  return false
 }
 
 // --- Namen für Oberfläche, Plan und Begründungen ----------------------------------------------------------------------

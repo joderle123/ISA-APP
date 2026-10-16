@@ -451,7 +451,13 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
 function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlattOpt): Baustein[] {
   const fr = sprache === 'fr'
   // Alltags-Paket: eine neue, erfundene Probe zur ersten Übung der Folge (Blind-Bewertung 13: „ein Kreuz und ein Abzeichen“)
-  const probe = folge.map((e) => (e.typ === 'schritt' ? e.transfer?.[sprache]?.probe : undefined)).find(Boolean)
+  // … bis zu zwei, zur Wahl (Blind-Bewertung 13: „das Blatt druckt immer die Aufgabe zur ersten Übung, auch wenn das Kind
+  // eine andere wählt“)
+  const proben = folge.map((e) => (e.typ === 'schritt' ? e.transfer?.[sprache]?.probe : undefined)).filter((x): x is string => !!x).slice(0, 2)
+  const probenTeile = (linien: number): Baustein[] =>
+    proben.length >= 2
+      ? [{ art: 'aufgabe', text: fr ? 'Choisis une situation et écris ce qui pourrait aider.' : 'Wähl eine Situation und schreib, was helfen könnte.' }, ...proben.map((t): Baustein => ({ art: 'frage', text: t, linien: 1 }))]
+      : proben.map((t): Baustein => ({ art: 'frage', text: t, linien }))
   const titel = folge.slice(0, 6).map((e) => textVon(e, sprache).titel)
   // „der Plan für den Alltag“ nur bei Jugendlichen – Kinder spielen das Übertragen durch, einen Plan gab es nicht
   // (Blind-Bewertung 9: „verweist auf einen Plan für den Alltag, den es nicht gab“)
@@ -462,7 +468,7 @@ function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlatt
     else liste.push({ art: 'aufgabe', text: fr ? 'Comment c’était, nos séances ? Entoure.' : 'Wie war unsere Zeit? Kreis ein.' }, { art: 'gefuehle', gefuehle: ['froh', 'stolz', 'ruhig'], modus: 'einkreisen' })
     // was geholfen hat, in einem Satz (Blind-Bewertung 13: „zwei Kästchen und ein Abzeichen für 13 Minuten“)
     if ((o.alter ?? 0) >= 8 && !o.wenigSchreiben) liste.push({ art: 'satzanfaenge', items: [fr ? 'Ce qui m’a le plus aidé :' : 'Am meisten geholfen hat mir:'], linien: 1 })
-    if ((o.alter ?? 0) >= 8 && probe) liste.push({ art: 'frage', text: probe, linien: o.wenigSchreiben ? 1 : 2 })
+    if ((o.alter ?? 0) >= 8) liste.push(...probenTeile(o.wenigSchreiben ? 1 : 2))
     // die kleine Feier: ein eigenes Abzeichen (Blind-Bewertung 9: „Rückblick & Feiern ohne Feier“)
     // ohne Leistungsbehauptung (Blind-Bewertung 10: „Das kann ich jetzt“ bei einem Kind, das noch übt)
     liste.push({ art: 'aufgabe', text: fr ? 'Dessine ton badge : ce qu’on a fait ensemble.' : 'Mal dein Abzeichen: Das haben wir zusammen gemacht.' }, { art: 'feld', hoehe: 7, zeichnen: true, label: fr ? 'Mon badge' : 'Mein Abzeichen' })
@@ -476,7 +482,7 @@ function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlatt
   if (werkzeuge.length >= 2) liste.push({ art: 'ankreuzen', titel: fr ? 'Ce que j’emporte de la série – coche :' : 'Das nehme ich aus der Folge mit – kreuz an:', items: werkzeuge, spalten: 1 })
   liste.push({ art: 'satzanfaenge', items: [werkzeuge.length >= 2 ? (fr ? 'Ce qui m’a le plus aidé, et pourquoi :' : 'Am meisten geholfen hat, und warum:') : (fr ? 'Ce que j’emporte :' : 'Das nehme ich mit:'), fr ? 'Mon prochain petit pas, et où :' : 'Mein nächster kleiner Schritt, und wo:'], linien: 1 })
   // eine neue Probe statt „Das hat sich seit der ersten Sitzung verändert“ (Blind-Bewertung 13: „setzt Veränderung voraus“)
-  if (probe) liste.push({ art: 'frage', text: probe, linien: o.wenigSchreiben ? 1 : 2 })
+  if (proben.length) liste.push(...probenTeile(o.wenigSchreiben ? 1 : 2))
   else if (!o.wenigSchreiben) liste.push({ art: 'frage', text: fr ? 'Ce qui a changé depuis la première séance :' : 'Das hat sich seit der ersten Sitzung verändert:', linien: 2 })
   return liste
 }
@@ -597,7 +603,9 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
   if (eigen) {
     // höchstens so viele Aufgaben, wie in die Minuten passen (etwa eine je 2½ Minuten), bei wenig Schreiben zwei
     // … und in vier Minuten eine (Blind-Bewertung 10: „zwei Aufgaben in 4 Minuten“)
-    const hoechstens = o.min && o.min <= 4 ? 1 : o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / 2.5)) : 99
+    // Jugendliche schreiben mehr je Aufgabe: eine je 3 Minuten (Blind-Bewertung 13: „sechs Ankreuzfelder, drei Zuordnungen,
+    // Skala und freie Antworten in 11 Minuten“)
+    const hoechstens = o.min && o.min <= 4 ? 1 : o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / ((o.alter ?? 0) >= 12 ? 3 : 2.5))) : 99
     for (const b of blattGeruest(fr ? eigen.fr : eigen.de, hoechstens, o)) {
       // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
       // … außer die Übung schreibt selbst eine Anweisung davor (Kinder-Blätter: „Was passt zusammen? Verbinde.“)

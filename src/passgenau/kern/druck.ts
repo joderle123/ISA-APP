@@ -543,7 +543,24 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   const werkzeug = kernE?.typ === 'schritt' ? kernE.werkzeug?.[sp] : undefined
   // … und je Sitzung ein anderer, konkreter Satz mit dem Titel der Übung (vorher in jeder Sitzung derselbe „kleine Trick“)
   const kernTitel = kernE && !kernX!.ref.startsWith('pg:') ? textVon(kernE, sp).titel.replace(/[.!?]$/, '') : undefined
-  const einstiegSatz = zf
+  // der genaue Ich-Satz des Ziels, das der Kern übt, statt des Felds (Blind-Bewertung 13: „Ich komme, wenn man mich ruft“
+  // lief als „gut mit anderen zusammenarbeiten“, „Ich rechne mit Geld bis 10 Euro“ als „Dinge im Alltag selbst schaffen“)
+  // Übertragen: das Ziel der übertragenen Übung; Rückblick: das erste Ziel der Folge
+  const uebQuelle = kernX?.ref === 'pg:uebertragen' ? quellenDerUebertragung(k, plan, kernX)[0] : undefined
+  const ichCode = kernX?.ref === 'pg:folge-transfer'
+    ? plan.ziele.find((c) => /^[A-Z]+-\d+$/.test(c))
+    : uebQuelle ? plan.ziele.find((c) => uebQuelle.eldib.some((x) => x.code === c)) : kernX && !kernX.ref.startsWith('pg:') ? kernZiel : undefined
+  const ich = ichCode ? zielSatz(k, p, ichCode, sp)?.trim() : undefined
+  const ichZit = ich ? (sp === 'fr' ? `« ${ich} »` : `„${ich}“`) : undefined
+  const einstiegSatz = ichZit && kernX?.ref === 'pg:uebertragen'
+    ? sp === 'fr' ? `Aujourd’hui, on emmène ${ichZit} dans ton quotidien : où est-ce que ça peut te servir ces prochains jours ?` : `Heute bringen wir ${ichZit} in deinen Alltag: Wo kannst du das in den nächsten Tagen brauchen?`
+    : ichZit && kernX?.ref === 'pg:folge-transfer'
+    ? sp === 'fr' ? `Aujourd’hui, on regarde en arrière : ${ichZit} – qu’est-ce qui t’a aidé ?` : `Heute schauen wir zurück auf ${ichZit} – was hat dir geholfen?`
+    : ichZit
+    ? sp === 'fr'
+      ? `Aujourd’hui, on s’entraîne : ${ichZit}${kernTitel ? ` Pour ça, on essaie « ${kernTitel} ».` : ''}`
+      : `Heute üben wir: ${ichZit}${kernTitel ? ` Dafür probieren wir „${kernTitel}“ aus.` : ''}`
+    : zf
     ? kernX?.ref === 'pg:uebertragen'
       ? sp === 'fr' ? `Aujourd’hui, on va ${zf.satz.fr} – et chercher où tu pourras t’en servir ces prochains jours.` : `Heute geht es darum, ${zf.satz.de} – und wo du das in den nächsten Tagen brauchen kannst.`
       : kernX?.ref === 'pg:folge-transfer'
@@ -556,7 +573,9 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   const thEinstieg = s.schritte.map((x) => k.eintraege.get(x.ref)).find((e) => e?.id.startsWith('th:') && e.rolle.includes('einstieg'))
   const thSatz = thEinstieg && s.schritte.some((x) => x.ref === thEinstieg.id && x.rolle === 'einstieg') ? textVon(thEinstieg, sp).sagen?.[0] : undefined
   const ersterSatz = thSatz ?? einstiegSatz
-  const einstieg = ersterSatz ? (sp === 'fr' ? `« ${ersterSatz.replace(/^«\s*|\s*»$/g, '')} »` : `„${ersterSatz.replace(/^„|“$/g, '')}“`) : undefined
+  // innen einfache Anführungszeichen (Blind-Bewertung 13: „Heute üben wir: „Ich …“ …“)
+  const innen = (t: string) => (sp === 'fr' ? t.replace(/«\s*/g, '“').replace(/\s*»/g, '”') : t.replace(/„/g, '‚').replace(/“/g, '‘'))
+  const einstieg = ersterSatz ? (sp === 'fr' ? `« ${innen(ersterSatz.replace(/^«\s*|\s*»$/g, ''))} »` : `„${innen(ersterSatz.replace(/^„|“$/g, ''))}“`) : undefined
   // der Schritt „Worum es heute geht“ sagt denselben fertigen Satz (statt „sagt in einem Satz, worum es geht“)
   if (einstiegSatz) s.schritte.forEach((x, i) => {
     if (x.ref === 'pg:einstieg' && schritte[i]) schritte[i].sagen = [einstiegSatz, ...schritte[i].sagen.filter((t) => t !== einstiegSatz)].slice(0, 3)
@@ -568,9 +587,15 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     // beim Übertragen das Werkzeug der übertragenen Übung
     const wQuelle = kernX?.ref === 'pg:uebertragen' ? quellenDerUebertragung(k, plan, kernX)[0] : kernX && !kernX.ref.startsWith('pg:') ? kernE : undefined
     const wName = wQuelle && wQuelle.typ === 'schritt' && wQuelle.werkzeug ? werkzeugName(wQuelle.werkzeug[sp], textVon(wQuelle, sp).titel) : undefined
-    const rueck = sp === 'fr'
-      ? `Aujourd’hui, on a travaillé ceci : ${zf.fr.charAt(0).toLowerCase()}${zf.fr.slice(1)}${wName ? ` – avec « ${wName} »` : ''}.`
-      : `Heute ging es darum, ${zf.satz.de}${wName ? ` – mit „${wName}“` : ''}.`
+    // (mit Ich-Satz, wenn der Kern ein Ziel übt; Werkzeug als eigener Satz – „mit „Zehn-Euro-Plan““ ohne Artikel klang schief)
+    const werkzeugSatz = wName ? (sp === 'fr' ? ` L’outil : « ${wName} ».` : ` Das Werkzeug dazu: „${wName}“.`) : ''
+    const rueck = ichZit
+      ? kernX?.ref === 'pg:folge-transfer'
+        ? sp === 'fr' ? `Aujourd’hui, on a regardé en arrière : ${ichZit}` : `Heute haben wir zurückgeschaut: ${ichZit}`
+        : sp === 'fr' ? `Aujourd’hui, on s’est entraînés : ${ichZit}${werkzeugSatz}` : `Heute haben wir geübt: ${ichZit}${werkzeugSatz}`
+      : sp === 'fr'
+        ? `Aujourd’hui, on a travaillé ceci : ${zf.fr.charAt(0).toLowerCase()}${zf.fr.slice(1)}.${werkzeugSatz}`
+        : `Heute ging es darum, ${zf.satz.de}.${werkzeugSatz}`
     s.schritte.forEach((x, i) => {
       const d = schritte[i]
       if (!d || x.ref.startsWith('pg:') || x.rolle === 'kern' || x.rolle === 'einstieg' || x.rolle === 'uebung') return
@@ -594,7 +619,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   return {
     titel: plan.titel,
     zeile,
-    ...(zf ? { ziel: zf[sp] } : {}),
+    ...(ich ? { ziel: ich } : zf ? { ziel: zf[sp] } : {}),
     ...(werkzeug ? { werkzeug } : {}),
     ...(einstieg ? { einstieg } : {}),
     vorname: p.vorname,

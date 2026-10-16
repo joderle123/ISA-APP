@@ -4373,21 +4373,21 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft beschreibt das Kind, ohne zu zeigen: „Es hat lockige Haare und eine blaue Jacke.“ Das Kind rät, wer gemeint ist. Dann beschreibt das Kind die Fachkraft, und sie rät. Es wird nur beschrieben, nie bewertet.",
+   "text": "Drei Figuren-Karten liegen offen (Kinder mit Haaren, Kleidung, Brille). Die Fachkraft beschreibt eine, ohne zu zeigen: „Sie hat lockige Haare und eine blaue Jacke.“ Das Kind zeigt, wer gemeint ist. Dann beschreibt das Kind eine Karte, und die Fachkraft rät. Nur beschreiben, nie bewerten.",
    "sagen": [
     "Ich sehe ein Kind mit blauer Jacke. Wer ist das?",
-    "Jetzt du: Beschreib mich!"
+    "Jetzt du: Beschreib eine Karte, und ich rate!"
    ],
    "fr": {
-    "text": "L’adulte décrit l’enfant sans le montrer : « Il a les cheveux bouclés et une veste bleue. » L’enfant devine qui c’est. Puis l’enfant décrit l’adulte, qui devine. On décrit seulement, on ne juge jamais.",
+    "text": "Trois cartes de personnages sont posées (enfants avec cheveux, vêtements, lunettes). L’adulte en décrit une sans la montrer : « Elle a les cheveux bouclés et une veste bleue. » L’enfant montre qui c’est. Puis l’enfant décrit une carte, et l’adulte devine. On décrit seulement, on ne juge jamais.",
     "sagen": [
      "Je vois un enfant avec une veste bleue. Qui est-ce ?",
-     "À toi : décris-moi !"
+     "À toi : décris une carte, et je devine !"
     ]
    }
   },
   "merkmale": {},
-  "begruendung": "Rätsel mit Kind und Fachkraft im Wechsel; „andere Kinder der Klasse“ entfallen. Beschreiben von sich und anderen (K-13).",
+  "begruendung": "Einzeln: drei Figuren-Karten statt das Kind selbst – Raten zu zweit ergibt sonst keinen Sinn.",
   "von": "agent",
   "sicher": 0.85,
   "h": "3332ca8a"

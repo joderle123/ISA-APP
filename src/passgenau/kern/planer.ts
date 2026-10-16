@@ -9,7 +9,7 @@ import { bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type 
 import { alltagsOrte, baueBlatt, kernBlatt, werkzeugName } from './blatt'
 import { BLATT_SYSTEM } from './system'
 import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
-import { KOMPETENZ_NAME, NUR_DEUTSCH, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
+import { KOMPETENZ_NAME, NUR_DEUTSCH, feldEindeutig, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
 
 export interface Verlauf {
   plaene: Plan[]
@@ -483,6 +483,16 @@ function gleichesThema(e: KatalogEintrag, kern: KatalogEintrag): boolean {
   return (ziel && thema) || gemeinsamesThema
 }
 
+/** Passen die Themen-Rahmen (th:) zum Ziel, das der Kern übt? Nur wenn dieses Ziel eindeutig zu einem Feld gehört und der
+ *  Kern dieses Feld übt (Blind-Bewertung 13: Einstiege und Bewegungen „beliebig“ bei Vorschul-, kognitiven und Rest-Zielen).
+ *  Ohne Förderziel (nur Themen oder Kompetenzen): wie bisher. */
+function themenRahmenPasst(c: Kontext, kern: KatalogEintrag): boolean {
+  const codes = c.ziele.map((z) => z.code).filter((x) => /^[A-Z]+-\d+$/.test(x))
+  if (!codes.length) return true
+  const geuebt = codes.find((x) => kern.eldib.some((y) => y.code === x))
+  return !!geuebt && feldEindeutig(geuebt) && kern.kompetenz.includes(kompetenzAusCode(geuebt))
+}
+
 /** Der Satz, mit dem ein Einstieg ab Sitzung 2 an die letzte Sitzung anknüpft (roter Faden): die Übung beim Namen oder, nach
  *  einer Übertragen-Sitzung, der vereinbarte kleine Versuch (Blind-Bewertung 11: „wird in der Folgesitzung nirgends
  *  nachgefragt“). Gilt für den eigenen Einstieg und für Themen-Einstiege. */
@@ -644,10 +654,14 @@ function uebertragenSchritt(c: Kontext, min: number, quellen: { ref: string; nr:
       const vormachen = art === 'durchspielen' && min >= 12
       ueber.text = `${zwei ? 'Die Übungen' : 'Die Übung'} ${herkunft('de')} ${zwei ? 'kommen' : 'kommt'} heute in den Alltag. Die Fachkraft erinnert kurz an ${und(tun('de'), 'de')}${vormachen ? ' und macht es einmal gemeinsam mit dem Kind vor' : ''}. ${tr.de ? `Dann liest sie zwei Situationen vor: ${zit2(tr.de.szenen[0].text, 'de')} – und: ${zit2(tr.de.szenen[1].text, 'de')}. Das Kind wählt eine${vorsichtig ? '' : ' oder nennt eine eigene (echt oder erfunden)'}.` : `Dann nennt sie zwei Beispiele, wo das Kind es in den nächsten Tagen brauchen könnte – ${orte.de.text} –, und das Kind wählt eins${vorsichtig ? ' (zuerst ein erfundenes)' : ' (echt oder erfunden)'}.`} ${mitte.de} Zum Schluss ein kleiner Versuch bis zum nächsten Mal${tr.de ? `, zum Beispiel: ${zit2(tr.de.versuch, 'de')}` : ''} – ohne Bewertung.`
       ueber['fr.text'] = `${zwei ? 'Les activités' : 'L’activité'} ${herkunft('fr')} ${zwei ? 'passent' : 'passe'} aujourd’hui dans le quotidien. L’adulte rappelle brièvement ${und(tun('fr'), 'fr')}${vormachen ? ' et le refait une fois avec l’enfant' : ''}. ${tr.fr ? `Puis il lit deux situations : ${zit2(tr.fr.szenen[0].text, 'fr')} – et : ${zit2(tr.fr.szenen[1].text, 'fr')}. L’enfant en choisit une${vorsichtig ? '' : ' ou en propose une à lui (vraie ou inventée)'}.` : `Puis il donne deux exemples où l’enfant pourrait en avoir besoin les prochains jours – ${orte.fr.text} –, et l’enfant en choisit un${vorsichtig ? ' (d’abord un exemple inventé)' : ' (vrai ou inventé)'}.`} ${mitte.fr} Pour finir, un petit essai d’ici la prochaine fois${tr.fr ? `, par exemple : ${zit2(tr.fr.versuch, 'fr')}` : ''} – sans évaluation.`
-      ueber.wennEsKippt = figur
+      ueber.wennEsKippt = tr.de
+        ? `Fällt dem Kind nichts ein, liest die Fachkraft die zwei Situationen noch einmal vor, und das Kind zeigt auf eine.${figur ? ' Mag es nicht spielen, spielt die Fachkraft mit der Figur vor und das Kind zeigt nur, was es dann tun würde.' : ' Ist das zu viel, genügt ein Satz: Wo probiere ich es aus?'}`
+        : figur
         ? `Fällt dem Kind nichts ein, zeigt die Fachkraft die Bilder auf dem Blatt (${orte.de.kinder.slice(0, 3).map((x) => x.text).join(', ')}) und das Kind tippt auf eins. Mag es nicht spielen, spielt die Fachkraft mit der Figur vor und das Kind zeigt nur, was es dann tun würde.`
         : 'Fällt keine Situation ein, schlägt die Fachkraft zwei erfundene vor. Ist das zu viel, genügt ein Satz: Wo probiere ich es aus?'
-      ueber['fr.wennEsKippt'] = figur
+      ueber['fr.wennEsKippt'] = tr.fr
+        ? `Si rien ne vient, l’adulte relit les deux situations, et l’enfant en montre une.${figur ? ' S’il ne veut pas jouer, l’adulte joue avec la figurine et l’enfant montre seulement ce qu’il ferait.' : ' Si c’est trop, une phrase suffit : où est-ce que je l’essaie ?'}`
+        : figur
         ? `Si rien ne vient, l’adulte montre les images de la fiche (${orte.fr.kinder.slice(0, 3).map((x) => x.text).join(', ')}) et l’enfant en touche une. S’il ne veut pas jouer, l’adulte joue avec la figurine et l’enfant montre seulement ce qu’il ferait.`
         : 'Si aucune situation ne vient, l’adulte en propose deux inventées. Si c’est trop, une phrase suffit : où est-ce que je l’essaie ?'
     }
@@ -1003,6 +1017,8 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       // Kommunikation vor einer Übung zu Werten – die Brücke „genau darum geht es jetzt weiter“ stimmte nicht)
       const haupt = [...kk][0]
       if (slot.rolle === 'einstieg' && haupt) auswahl = auswahl.filter((w) => !w.b.e.id.startsWith('th:') || w.b.e.kompetenz[0] === haupt)
+      // … und nur, wenn das Ziel, das der Kern übt, eindeutig zu diesem Feld gehört (sonst der eigene Einstieg mit dem Ziel)
+      if (slot.rolle === 'einstieg' && kern && !themenRahmenPasst(c, kern)) auswahl = auswahl.filter((w) => !w.b.e.id.startsWith('th:'))
       // Jugendliche: Einstiege aus Kurs und Förderfach setzen Vorwissen voraus („Neues Thema: …“, „Notbremse und Lenkung“ mit
       // Skills und Thermometer-Blatt in Sitzung 1) – nur Einzelübungen für Jugendliche oder der eigene Einstieg
       if (c.alter >= 12 || (kern && kuratiert(c, kern.id))) auswahl = auswahl.filter((w) => kuratiert(c, w.b.e.id) || rahmenThema(w.b.e) || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
@@ -1035,6 +1051,10 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       if (kraeftig.length) auswahl = kraeftig
     }
     // Spiel, Bewegung, Ruhe neben dem Kern: kein fremdes Thema (eine Wut-Übung als Pause in einer Motivations-Stunde)
+    if (kern && c.weg !== 'leicht' && (slot.rolle === 'spiel' || slot.rolle === 'bewegung' || slot.rolle === 'regulation') && !themenRahmenPasst(c, kern)) {
+      const ohneTh = auswahl.filter((w) => !w.b.e.id.startsWith('th:'))
+      if (ohneTh.length) auswahl = ohneTh
+    }
     if (kern && c.weg !== 'leicht' && (slot.rolle === 'spiel' || slot.rolle === 'bewegung' || slot.rolle === 'regulation')) {
       const ohneFremd = auswahl.filter((w) => !w.b.e.thema.length || w.b.e.ohneZiel || gleichesThema(w.b.e, kern!))
       if (ohneFremd.length) auswahl = ohneFremd
@@ -1388,7 +1408,8 @@ function rituale(c: Kontext, salz: string, ausser = new Set<string>()): { ankomm
   // (Blind-Bewertung 13: „Heute geht es darum, kurz zu stoppen“ zum Ankommen einer Sitzung, die Gefühle übt; dann
   // lieber ein Ritual ohne Thema)
   const felder = new Set(c.ziele.filter((z) => z.feld && z.quelle !== 'kennenlernen').map((z) => z.feld as string))
-  const haupt = c.weg === 'gruendlich' && felder.size === 1 ? [...felder][0] : undefined
+  const eindeutig = c.ziele.filter((z) => z.feld && z.quelle !== 'kennenlernen').every((z) => !/^[A-Z]+-\d+$/.test(z.code) || feldEindeutig(z.code))
+  const haupt = c.weg === 'gruendlich' && felder.size === 1 && eindeutig ? [...felder][0] : undefined
   const thema = haupt ? new Set<string>([haupt]) : undefined
   return {
     ankommen: (thema && waehleRitual(c, 'ankommen', ank, salz + '|r-a', ausser, false, thema)) || waehleRitual(c, 'ankommen', ank, salz + '|r-a', ausser),
