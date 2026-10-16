@@ -3337,5 +3337,1664 @@
       "kurz": "L’adulte en robot rangeur · l’enfant ordonne · échanger les rôles"
     },
     "kurz": "Fachkraft als Aufräum-Roboter · Kind befiehlt · Rollen tauschen"
+  },
+  {
+    "id": "th:gefuehle-erkennen-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Nur die Augen",
+    "text": "Die Fachkraft hält ein Blatt Papier vor die untere Gesichtshälfte, sodass nur Augen und Augenbrauen zu sehen sind, und zeigt so ein Gefühl, zum Beispiel überrascht oder genervt. Das Kind rät und sagt, woran es das gemerkt hat. Dann hält sie das Blatt vor die Augen, und nur der Mund ist zu sehen: Verrät er mehr oder weniger? Danach hält sich das Kind das Blatt vor und zeigt ein Gefühl, und die Fachkraft rät.",
+    "sagen": [
+      "Heute geht es um Gefühle: wie man merkt, wie es jemandem geht. Wir sind Gefühls-Detektive und schauen erst nur auf die Augen.",
+      "Was verraten die Augen und die Augenbrauen? Welches Gefühl könnte das sein?",
+      "Genau darum geht es jetzt weiter: Gefühle bei anderen und bei uns selbst erkennen."
+    ],
+    "wennEsKippt": "Rät das Kind nicht, bietet die Fachkraft zwei Gefühle zur Auswahl an („überrascht oder genervt?“). Mag es sich nicht hinter dem Blatt zeigen, rät es nur, und die Fachkraft zeigt noch zwei, drei Gefühle.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "sinne"
+    ],
+    "material": [
+      "papier"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Rien que les yeux",
+      "text": "L’adulte tient une feuille devant le bas de son visage, de sorte que seuls les yeux et les sourcils se voient, et montre ainsi une émotion, par exemple la surprise ou l’agacement. L’enfant devine et dit ce qui l’a mis sur la piste. Ensuite, l’adulte place la feuille devant les yeux et on ne voit plus que la bouche : en dit-elle plus ou moins ? Puis l’enfant tient la feuille devant son visage et montre une émotion, et l’adulte devine.",
+      "sagen": [
+        "Aujourd’hui, on parle des émotions : comment voir ce que ressent quelqu’un. On joue aux détectives et on regarde d’abord seulement les yeux.",
+        "Qu’est-ce que les yeux et les sourcils nous disent ? Quelle émotion ça pourrait être ?",
+        "Et c’est ce qu’on va faire maintenant : reconnaître les émotions des autres et les siennes."
+      ],
+      "wennEsKippt": "Si l’enfant ne devine pas, l’adulte propose deux émotions au choix (« surpris ou agacé ? »). S’il ne veut pas se montrer derrière la feuille, il ne fait que deviner, et l’adulte montre encore deux ou trois émotions.",
+      "kurz": "Montrer seulement les yeux · l’enfant devine · puis la bouche"
+    },
+    "kurz": "Nur Augen zeigen · Kind rät das Gefühl · dann der Mund allein"
+  },
+  {
+    "id": "th:gefuehle-erkennen-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Kribbeln im Bauch",
+    "text": "Die Fachkraft erzählt eine ganz kurze Geschichte: Mia steht vor einer Tür, ihr Bauch kribbelt, die Knie wackeln, und sie hält die Klinke fest. Das Kind sagt, welches Gefühl das sein könnte. Dann erzählt die Fachkraft zwei Enden: Hinter der Tür wartet eine Überraschungsparty, oder das Zimmer ist dunkel, und Mia ist unsicher, was dort raschelt. Derselbe Körper, zwei ganz verschiedene Gefühle! Beide sammeln, was hilft, den Unterschied zu erkennen: Gesicht, Stimme, was gerade passiert.",
+    "sagen": [
+      "Heute geht es um Gefühle: wie man merkt, was jemand fühlt. Ich erzähle dir dazu eine ganz kurze Geschichte.",
+      "Mia steht vor einer Tür. Ihr Bauch kribbelt, und die Knie wackeln. Was könnte Mia fühlen?",
+      "Genau darum geht es jetzt weiter: Gefühle erkennen und gut hinschauen."
+    ],
+    "wennEsKippt": "Fällt dem Kind kein Gefühl ein, nennt die Fachkraft zwei zur Wahl (aufgeregt oder unsicher?). Mag das Kind nicht raten, erzählt die Fachkraft beide Enden selbst, und das Kind zeigt, welches es spannender findet.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Des papillons dans le ventre",
+      "text": "L’adulte raconte une toute petite histoire : Mia est devant une porte, elle a des papillons dans le ventre, les genoux qui tremblent, et elle serre la poignée. L’enfant dit quelle émotion cela pourrait être. Puis l’adulte raconte deux fins : derrière la porte, une fête surprise attend Mia, ou la pièce est sombre et Mia ne sait pas ce qui bruisse là-dedans. Le même corps, deux émotions très différentes ! Ensemble, ils cherchent ce qui aide à faire la différence : le visage, la voix, ce qui se passe.",
+      "sagen": [
+        "Aujourd’hui, on parle des émotions : comment voir ce que ressent quelqu’un. Je te raconte pour cela une toute petite histoire.",
+        "Mia est devant une porte. Elle a des papillons dans le ventre et les genoux qui tremblent. Que ressent Mia, à ton avis ?",
+        "Et c’est ce qu’on va faire maintenant : reconnaître les émotions et bien observer."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas d’émotion, l’adulte en propose deux au choix (excitée ou inquiète ?). S’il ne veut pas deviner, l’adulte raconte lui-même les deux fins et l’enfant montre celle qu’il trouve la plus passionnante.",
+      "kurz": "Mia devant la porte · papillons · deux émotions possibles"
+    },
+    "kurz": "Mia vor der Tür · Bauch kribbelt · zwei mögliche Gefühle"
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Wie voll ist das Gefühl?",
+    "text": "Auf dem Tisch stehen ein Becher und ein paar Bausteine. Die Fachkraft sagt „Ich bin ein bisschen müde“ und legt einen Baustein in den Becher, dann „Ich bin ziemlich müde“ (Becher halb voll) und „Ich bin total müde“ (bis zum Rand). So zeigt der Becher, wie groß ein Gefühl ist. Das Kind wählt ein Gefühl (froh, genervt, gespannt oder ein erfundenes), sagt die drei Sätze mit „ein bisschen, ziemlich, total“ und füllt den Becher dazu.",
+    "sagen": [
+      "Heute geht es darum, Gefühle in Worte zu fassen. Mit „ein bisschen“, „ziemlich“ und „total“ sagt man, wie groß ein Gefühl ist.",
+      "Ich bin ein bisschen müde. Ich bin ziemlich müde. Ich bin total müde. Siehst du den Unterschied im Becher?",
+      "Genau darum geht es jetzt weiter: Gefühle zeigen und mit Worten sagen."
+    ],
+    "wennEsKippt": "Fällt dem Kind kein Gefühl ein, nennt die Fachkraft drei zur Wahl (froh, müde, genervt). Mag das Kind nicht sprechen, füllt es den Becher still, und die Fachkraft sagt den passenden Satz dazu.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [
+      "becher",
+      "bausteine"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le gobelet des émotions",
+      "text": "Sur la table, il y a un gobelet et quelques cubes. L’adulte dit « Je suis un peu fatigué » et met un cube dans le gobelet, puis « Je suis assez fatigué » (gobelet à moitié plein) et « Je suis très fatigué » (jusqu’au bord). Le gobelet montre à quel point une émotion est grande. L’enfant choisit une émotion (joie, agacement, impatience ou une émotion inventée), dit les trois phrases avec « un peu, assez, très » et remplit le gobelet en même temps.",
+      "sagen": [
+        "Aujourd’hui, on apprend à mettre des mots sur les émotions. Avec « un peu », « assez » et « très », on dit à quel point une émotion est grande.",
+        "Je suis un peu fatigué. Je suis assez fatigué. Je suis très fatigué. Tu vois la différence dans le gobelet ?",
+        "Et c’est ce qu’on va faire maintenant : montrer ses émotions et les dire avec des mots."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas d’émotion, l’adulte en propose trois au choix (joyeux, fatigué, agacé). S’il ne veut pas parler, il remplit le gobelet en silence, et l’adulte dit la phrase qui va avec.",
+      "kurz": "Remplir le gobelet : un peu · assez · très"
+    },
+    "kurz": "Becher füllen: ein bisschen · ziemlich · total"
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Fipps sagt „Ist egal“",
+    "text": "Die Fachkraft spielt mit der Handpuppe Fipps: Sein Turm ist umgefallen, er lässt den Kopf hängen und murmelt nur „Ist egal.“ Das Kind darf Fipps helfen und sagt, was Fipps wohl wirklich fühlt. Fipps probiert den ganzen Satz aus („Ich bin traurig, weil mein Turm umgefallen ist“) und atmet erleichtert auf. Dann erzählt Fipps von einem zweiten Missgeschick, und das Kind sagt ihm, was er diesmal sagen könnte.",
+    "sagen": [
+      "Heute geht es darum, Gefühle in Worte zu fassen. Das ist Fipps, und er braucht gleich deine Hilfe.",
+      "Fipps (leise, mit hängendem Kopf): „Ist egal.“ Sein Turm ist umgefallen. Was fühlt Fipps wohl wirklich?",
+      "Genau darum geht es jetzt weiter: sagen, was man fühlt, damit andere es verstehen."
+    ],
+    "wennEsKippt": "Fällt dem Kind kein Wort ein, bietet die Fachkraft drei an (traurig, enttäuscht, sauer), und das Kind wählt das, das zu Fipps passt. Mag das Kind nicht mit der Puppe sprechen, zeigt es nur auf das Wort oder nickt, und die Fachkraft spricht für Fipps.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "rollenspiel",
+      "spiel"
+    ],
+    "material": [
+      "handpuppe"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Fipps et son « ça m’est égal »",
+      "text": "L’adulte joue avec la marionnette Fipps : sa tour s’est écroulée, il baisse la tête et marmonne seulement « Ça m’est égal. » L’enfant aide Fipps et dit ce que Fipps ressent sans doute vraiment. Fipps essaie la phrase entière (« Je suis triste parce que ma tour s’est écroulée ») et soupire de soulagement. Puis Fipps raconte un deuxième petit malheur, et l’enfant lui dit ce qu’il pourrait dire cette fois.",
+      "sagen": [
+        "Aujourd’hui, on apprend à mettre des mots sur ce qu’on ressent. Voici Fipps, et il va avoir besoin de ton aide.",
+        "Fipps (doucement, la tête basse) : « Ça m’est égal. » Sa tour s’est écroulée. Que ressent vraiment Fipps ?",
+        "Et c’est ce qu’on va faire maintenant : dire ce qu’on ressent pour que les autres comprennent."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas de mot, l’adulte en propose trois (triste, déçu, fâché) et l’enfant choisit celui qui va à Fipps. S’il ne veut pas parler à la marionnette, il montre le mot ou hoche la tête, et l’adulte parle pour Fipps.",
+      "kurz": "Marionnette : « ça m’est égal » · l’enfant trouve le vrai mot"
+    },
+    "kurz": "Handpuppe sagt „Ist egal“ · Kind findet das echte Wort"
+  },
+  {
+    "id": "th:selbstregulation-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Der tanzende Streifen",
+    "text": "Fachkraft und Kind haben je einen schmalen Papierstreifen. Die Fachkraft hält ihren an einem Ende knapp unter den Mund, sodass er nach unten hängt, und pustet zweimal kurz und kräftig: Der Streifen flattert wild. Dann atmet sie langsam und leise aus: Er hebt sich nur sanft. Das Kind probiert beides mit seinem Streifen und versucht dann, ihn einen ganzen langen Atemzug lang sanft schweben zu lassen. Dabei merkt es: Der Atem lenkt den Streifen, und ein langer, ruhiger Atem kann auch einen selbst ruhiger machen.",
+    "sagen": [
+      "Heute geht es darum, wie wir uns beruhigen können, wenn in uns viel los ist. Ich zeige dir dazu einen kleinen Versuch.",
+      "Pusten wir kurz und stark, flattert der Streifen wild. Und wenn wir ganz lang und leise ausatmen?",
+      "Genau darum geht es jetzt weiter: ruhig werden, wenn ein Gefühl stark ist."
+    ],
+    "wennEsKippt": "Gelingt das lange Ausatmen nicht, atmet die Fachkraft mit und zählt leise bis vier. Mag das Kind nicht pusten, hält es nur den Streifen, die Fachkraft pustet, und das Kind beschreibt, was der Streifen tut.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "sinne",
+      "atmen",
+      "spiel"
+    ],
+    "material": [
+      "papier"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La bande de papier qui danse",
+      "text": "L’adulte et l’enfant ont chacun une fine bande de papier. L’adulte tient la sienne par un bout, juste sous la bouche, de sorte qu’elle pende vers le bas, et souffle deux fois, court et fort : la bande s’agite dans tous les sens. Puis il expire lentement et doucement : la bande se soulève à peine. L’enfant essaie les deux avec sa propre bande, puis tente de la faire flotter doucement pendant toute une longue expiration. Il constate que son souffle guide la bande, et qu’une expiration longue et calme peut aussi apaiser celui qui souffle.",
+      "sagen": [
+        "Aujourd’hui, on cherche comment se calmer quand il se passe beaucoup de choses en nous. Je te montre une petite expérience.",
+        "Quand on souffle fort et court, la bande s’agite. Et quand on expire très longtemps et très doucement ?",
+        "Et c’est ce qu’on va faire maintenant : se calmer quand une émotion est forte."
+      ],
+      "wennEsKippt": "Si l’expiration longue ne vient pas, l’adulte respire avec l’enfant et compte tout bas jusqu’à quatre. Si l’enfant ne veut pas souffler, il tient seulement la bande pendant que l’adulte souffle, et il dit ce que fait la bande.",
+      "kurz": "Bande de papier : souffler court, expirer long · l’enfant essaie"
+    },
+    "kurz": "Papierstreifen: kurz pusten, lang ausatmen · Kind probiert"
+  },
+  {
+    "id": "th:selbstregulation-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Das Herz-Tempo",
+    "text": "Beide hüpfen zehnmal leise auf der Stelle und legen danach sofort eine Hand auf die Brust: Wie schnell geht das Herz, wie schnell der Atem? Dann atmen beide dreimal lang aus, die Hand bleibt liegen, und sie spüren nach, ob es langsamer wird. Dabei erzählt die Fachkraft kurz, dass der Körper bei Aufregung hochschaltet und man mit langem Ausatmen oft wieder zur Ruhe kommt. Jeder spürt nur sein eigenes Tempo.",
+    "sagen": [
+      "Heute geht es darum, was im Körper passiert, wenn wir aufgeregt sind, und wie wir wieder ruhig werden. Das spürst du gleich selbst.",
+      "Hüpfen wir zehnmal. Jetzt die Hand aufs Herz: Wie schnell geht es? Und nach dem langen Ausatmen?",
+      "Genau darum geht es jetzt weiter: den Körper beruhigen, wenn ein Gefühl stark ist."
+    ],
+    "wennEsKippt": "Spürt das Kind das Herz nicht, achtet es auf den Atem: Ist er schneller geworden? Geht Hüpfen nicht, wippt es mit den Fersen auf dem Stuhl oder drückt zehnmal die Handflächen aneinander.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "atmen"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le rythme du cœur",
+      "text": "Tous les deux sautent dix fois sur place, sans bruit, puis posent tout de suite une main sur la poitrine : à quelle vitesse bat le cœur, à quelle vitesse va le souffle ? Ensuite, ils expirent trois fois longuement, la main toujours là, et sentent si cela ralentit. L’adulte explique en deux mots que le corps s’emballe quand on est agité et qu’une longue expiration peut souvent le ramener au calme. Chacun ne sent que son propre rythme.",
+      "sagen": [
+        "Aujourd’hui, on regarde ce qui se passe dans le corps quand on est agité, et comment redevenir calme. Tu vas le sentir toi-même.",
+        "On saute dix fois. Maintenant, la main sur le cœur : à quelle vitesse bat-il ? Et après la longue expiration ?",
+        "Et c’est ce qu’on va faire maintenant : calmer son corps quand une émotion est forte."
+      ],
+      "wennEsKippt": "Si l’enfant ne sent pas son cœur, il observe plutôt son souffle : est-il plus rapide ? Si sauter n’est pas possible, il balance les talons sur la chaise ou presse dix fois ses paumes l’une contre l’autre.",
+      "kurz": "10 sauts · main sur le cœur · expirer longuement et sentir"
+    },
+    "kurz": "10 Mal hüpfen · Hand aufs Herz · lang ausatmen und spüren"
+  },
+  {
+    "id": "th:impulskontrolle-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Rätsel mit Falle",
+    "text": "Die Fachkraft stellt zwei Rätsel, bei denen die schnelle Antwort meist falsch ist. Das erste: „Sag fünfmal schnell hintereinander ‚Milch‘. Was trinkt die Kuh?“ Das zweite: „Was ist schwerer: ein Kilo Federn oder ein Kilo Steine?“ Fällt das Kind auf die schnelle Antwort herein, lacht die Fachkraft freundlich mit („Viele fallen darauf herein!“), und beide denken noch einmal in Ruhe nach. Dann darf das Kind sich eine kleine Falle für die Fachkraft ausdenken.",
+    "sagen": [
+      "Heute geht es darum, kurz zu stoppen, bevor man antwortet oder etwas tut. Ich habe dafür zwei Rätsel mit einer kleinen Falle.",
+      "Sag fünfmal schnell hintereinander „Milch“. Und jetzt ganz schnell: Was trinkt die Kuh?",
+      "Genau darum geht es jetzt weiter: erst stoppen, dann denken, dann handeln."
+    ],
+    "wennEsKippt": "Ärgert sich das Kind über die Falle, sagt die Fachkraft „Das passiert vielen, auch Erwachsenen“ und löst gleich lachend auf. Mag das Kind nicht raten, spielt die Fachkraft beide Rätsel allein vor, und das Kind sagt, wann sie „Stopp“ denken sollte.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Devinettes-pièges",
+      "text": "L’adulte pose deux devinettes pour lesquelles la réponse rapide est presque toujours fausse. La première : « Dis cinq fois de suite très vite “lait”. Que boit la vache ? » La seconde : « Qu’est-ce qui est le plus lourd : un kilo de plumes ou un kilo de pierres ? » Si l’enfant tombe dans le piège, l’adulte rit gentiment avec lui (« Beaucoup de gens s’y laissent prendre ! »), et ils réfléchissent encore une fois, calmement. Ensuite, l’enfant peut inventer un petit piège pour l’adulte.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à s’arrêter un instant avant de répondre ou d’agir. J’ai deux devinettes avec un petit piège.",
+        "Dis cinq fois de suite très vite « lait ». Et maintenant, vite : que boit la vache ?",
+        "Et c’est ce qu’on va faire maintenant : d’abord s’arrêter, puis réfléchir, puis agir."
+      ],
+      "wennEsKippt": "Si l’enfant s’agace du piège, l’adulte dit « Ça arrive à beaucoup de monde, même aux adultes » et donne la solution en riant. S’il ne veut pas deviner, l’adulte joue seul les deux devinettes et l’enfant dit quand il aurait fallu penser « Stop ».",
+      "kurz": "Deux devinettes-pièges · s’arrêter avant de répondre"
+    },
+    "kurz": "Zwei Fangrätsel · erst stoppen, dann antworten"
+  },
+  {
+    "id": "th:impulskontrolle-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Das Gegenteil-Spiel",
+    "text": "Beide stehen sich gegenüber. Die Fachkraft macht eine Bewegung und sagt sie dazu: „Ich hebe die Arme.“ Das Kind macht nicht mit, sondern das Gegenteil: die Arme senken. Weitere Paare: nicken und den Kopf schütteln, einen Schritt vor und einen zurück, in die Hocke gehen und sich strecken. Der erste Drang will nachmachen; kurz stoppen und denken hilft. Nach ein paar Runden gibt das Kind die Bewegung vor, und die Fachkraft macht das Gegenteil (und darf sich dabei auch mal vertun).",
+    "sagen": [
+      "Heute geht es darum, nicht sofort loszulegen, sondern kurz zu stoppen und nachzudenken. Dazu spielen wir das Gegenteil-Spiel.",
+      "Ich hebe die Arme, und du machst das Gegenteil. Erst stopp, dann denken, dann machen.",
+      "Darum geht es jetzt weiter: den ersten Gedanken bremsen und erst denken."
+    ],
+    "wennEsKippt": "Klappt es nicht, macht die Fachkraft die Bewegung langsamer und sagt vorher „Stopp – Gegenteil“. Ist es dem Kind zu knifflig, bleibt es bei zwei einfachen Paaren (Arme hoch und runter, Kopf nicken und schütteln).",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le jeu du contraire",
+      "text": "Ils se font face. L’adulte fait un geste et le dit à voix haute : « Je lève les bras. » L’enfant ne l’imite pas, il fait le contraire : il baisse les bras. Autres paires : hocher la tête et la secouer, un pas en avant et un pas en arrière, s’accroupir et se relever. Le premier réflexe, c’est d’imiter ; s’arrêter un instant pour réfléchir aide. Après quelques tours, l’enfant propose le geste et l’adulte fait le contraire (et a le droit de se tromper).",
+      "sagen": [
+        "Aujourd’hui, on apprend à ne pas se lancer tout de suite, mais à s’arrêter un instant pour réfléchir. On joue au jeu du contraire.",
+        "Je lève les bras, et toi, tu fais le contraire. D’abord stop, puis je réfléchis, puis je fais.",
+        "Et c’est ce qu’on va faire maintenant : freiner sa première idée et réfléchir d’abord."
+      ],
+      "wennEsKippt": "Si ça ne marche pas, l’adulte fait le geste plus lentement et dit d’abord « Stop, le contraire ». Si c’est trop compliqué, on garde deux paires simples (bras en haut et en bas, tête qui dit oui et non).",
+      "kurz": "L’adulte montre, l’enfant fait le contraire · on échange"
+    },
+    "kurz": "Fachkraft zeigt, Kind macht das Gegenteil · Rollen tauschen"
+  },
+  {
+    "id": "th:aufmerksamkeit-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Was steckt unterm Tuch?",
+    "text": "Die Fachkraft hat ein Ding aus dem Alltag unter ein Tuch gelegt, zum Beispiel einen Löffel, einen Radiergummi oder eine Socke. Das Kind greift mit einer Hand darunter, fühlt ganz genau und sagt drei Wörter dazu, etwa weich, rund, kalt. Dann rät es, was es ist. Danach sucht sich das Kind ein Ding im Raum und legt es unter das Tuch; die Fachkraft fühlt, sagt drei Wörter und rät. Wer genau fühlt, merkt viel mehr, als man denkt.",
+    "sagen": [
+      "Heute geht es darum, bei der Sache zu sein und ganz genau hinzuspüren, hinzuschauen und hinzuhören. Wir fangen mit den Fingern an.",
+      "Unter dem Tuch liegt etwas. Fühl genau und sag mir drei Wörter dazu. Was könnte es sein?",
+      "Genau darum geht es jetzt weiter: bei einer Sache bleiben und genau hinschauen oder hinhören."
+    ],
+    "wennEsKippt": "Fällt dem Kind kein Wort ein, gibt die Fachkraft Beispiele zur Wahl („weich oder hart? rund oder eckig?“). Mag das Kind nicht unter das Tuch greifen, hält die Fachkraft das Ding offen in der Hand, und das Kind beschreibt es mit den Augen.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "sinne",
+      "spiel"
+    ],
+    "material": [
+      "tuch",
+      "alltagsdinge"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Qu’y a-t-il sous le foulard ?",
+      "text": "Sous un foulard, l’adulte a posé un objet du quotidien, par exemple une cuillère, une gomme ou une chaussette. L’enfant glisse une main dessous, palpe très attentivement et dit trois mots : par exemple doux, rond, froid. Puis il devine ce que c’est. Ensuite, l’enfant choisit un objet dans la pièce et le glisse sous le foulard ; l’adulte palpe, dit trois mots et devine. Quand on touche vraiment avec attention, on remarque bien plus qu’on ne croit.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à être bien attentif et à sentir, regarder et écouter avec attention. On commence avec les doigts.",
+        "Il y a quelque chose sous le foulard. Palpe bien et donne-moi trois mots. Qu’est-ce que ça pourrait être ?",
+        "Et c’est ce qu’on va faire maintenant : rester concentré sur une chose et bien observer ou écouter."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas de mots, l’adulte propose des choix (« doux ou dur ? rond ou pointu ? »). S’il ne veut pas glisser la main sous le foulard, l’adulte tient l’objet à la main, bien visible, et l’enfant le décrit avec les yeux.",
+      "kurz": "Palper un objet sous le foulard · 3 mots · deviner"
+    },
+    "kurz": "Ding unterm Tuch ertasten · 3 Wörter sagen · raten"
+  },
+  {
+    "id": "th:aufmerksamkeit-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Die Geschichte mit den Fehlern",
+    "text": "Die Fachkraft erzählt eine kurze Geschichte, in die sich lustige Fehler geschlichen haben: „Mia wachte auf, zog im tiefsten Winter ihre Badehose an und putzte sich die Zähne mit dem Löffel. Dann packte sie einen Fisch in die Schultasche und flog auf einem Besen zur Schule.“ Das Kind hört genau zu und hebt die Hand, sobald etwas nicht stimmt. Danach denkt sich das Kind einen oder zwei Fehler aus, die die Fachkraft finden soll.",
+    "sagen": [
+      "Heute geht es darum, genau zuzuhören und bei der Sache zu bleiben. Ich erzähle dir eine Geschichte, in der sich Fehler versteckt haben.",
+      "Hör gut zu und heb die Hand, sobald etwas nicht stimmt. Los geht’s: Mia wachte auf …",
+      "Genau darum geht es jetzt weiter: gut hinhören und bei der Sache bleiben."
+    ],
+    "wennEsKippt": "Findet das Kind keinen Fehler, erzählt die Fachkraft langsamer und betont die Fehler mit der Stimme. Hebt das Kind die Hand nicht gern, darf es stattdessen leise klopfen oder „Stopp“ sagen.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "L’histoire pleine d’erreurs",
+      "text": "L’adulte raconte une courte histoire où se sont glissées des erreurs amusantes : « Mia s’est réveillée, a enfilé son maillot de bain en plein hiver et s’est brossé les dents avec une cuillère. Puis elle a mis un poisson dans son cartable et est partie à l’école sur un balai volant. » L’enfant écoute bien et lève la main dès que quelque chose ne va pas. Ensuite, l’enfant invente une ou deux erreurs que l’adulte doit trouver.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à bien écouter et à rester concentré. Je te raconte une histoire dans laquelle des erreurs se sont cachées.",
+        "Écoute bien et lève la main dès que quelque chose ne va pas. C’est parti : Mia s’est réveillée…",
+        "Et c’est ce qu’on va faire maintenant : bien écouter et rester concentré."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve aucune erreur, l’adulte raconte plus lentement et souligne les erreurs avec sa voix. Si l’enfant n’aime pas lever la main, il peut taper doucement ou dire « Stop ».",
+      "kurz": "Histoire pleine d’erreurs · lever la main quand ça cloche"
+    },
+    "kurz": "Geschichte mit Fehlern · Hand heben, wenn etwas nicht stimmt"
+  },
+  {
+    "id": "th:ausdauer-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Wie oft kann man falten?",
+    "text": "Das Kind bekommt ein Blatt Papier, die Fachkraft auch. Beide falten es in der Mitte, dann wieder in der Mitte, so oft es geht, und zählen laut mit. Fast jede Falte ist schwerer als die davor; bei der fünften oder sechsten wird das Päckchen dick und zäh, und beide drücken es fest mit der Handfläche flach. Kaum ein Blatt lässt sich öfter als sechs- oder siebenmal falten, und doch zählt jede einzelne Falte. Am Ende liegt ein kleines festes Päckchen auf dem Tisch.",
+    "sagen": [
+      "Heute geht es ums Dranbleiben, auch wenn etwas schwerer wird. Wir probieren das mit einem Blatt Papier aus.",
+      "Falte es noch einmal in der Mitte. Merkst du, dass es jetzt schwerer geht? Eine Falte noch!",
+      "Genau darum geht es jetzt weiter: nicht aufgeben, wenn es zäh wird."
+    ],
+    "wennEsKippt": "Wird eine Falte zu schwer, bleibt das Kind bei der Zahl, die es geschafft hat: „Bis hierher sind wir gekommen.“ Ärgert es sich, weil das Papier nicht mitmacht, faltet die Fachkraft ihr Blatt vor und zeigt, wie es geht (flach drücken, mit dem Daumennagel nachfahren).",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "sinne"
+    ],
+    "material": [
+      "papier"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Combien de plis possibles ?",
+      "text": "L’enfant reçoit une feuille de papier, l’adulte aussi. Ils la plient en deux, puis encore en deux, aussi souvent que possible, et comptent à voix haute. Presque chaque pli est plus difficile que le précédent ; au cinquième ou au sixième, le paquet devient épais et dur à plier, et tous deux l’écrasent avec la paume. Presque aucune feuille ne se plie plus de six ou sept fois, et pourtant chaque pli compte. À la fin, un petit paquet bien dur est posé sur la table.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à persévérer, même quand ça devient plus difficile. On essaie avec une feuille de papier.",
+        "Plie-la encore une fois en deux. Tu sens que c’est plus dur maintenant ? Un pli de plus !",
+        "Et c’est ce qu’on va faire maintenant : ne pas abandonner quand ça résiste."
+      ],
+      "wennEsKippt": "Si un pli devient trop difficile, l’enfant s’arrête au nombre atteint : « Voilà jusqu’où on est arrivés. » S’il s’agace parce que le papier résiste, l’adulte plie sa feuille devant lui et montre comment faire (écraser à plat, repasser avec l’ongle).",
+      "kurz": "Plier la feuille aussi souvent que possible · compter"
+    },
+    "kurz": "Papier falten, so oft es geht · laut zählen"
+  },
+  {
+    "id": "th:ausdauer-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Die Ameise und der Krümel",
+    "text": "Die Fachkraft erzählt von einer Ameise, die einen riesigen Krümel nach Hause tragen will. Das Kind lässt Zeige- und Mittelfinger als Ameise über den Tisch laufen und über die eigene Faust als Hügel klettern. Sagt die Fachkraft „Rutsch!“, gleitet die Ameise ein Stück zurück, und das Kind ruft „Noch einmal!“. Beim dritten Versuch nimmt die Ameise einen anderen Weg um den Hügel, beim vierten ist sie oben. Sie schafft es nicht, weil es leicht ist, sondern weil sie weitermacht.",
+    "sagen": [
+      "Heute geht es ums Dranbleiben, auch wenn etwas nicht gleich klappt. Dazu gibt es eine kleine Ameisen-Geschichte.",
+      "Die Ameise klettert den Hügel hoch … Rutsch! Was sagt sie jetzt wohl?",
+      "Genau darum geht es jetzt weiter: weitermachen und es noch einmal anders versuchen."
+    ],
+    "wennEsKippt": "Mag das Kind nicht mit den Fingern spielen, spielt die Fachkraft die Ameise, und das Kind ruft nur „Noch einmal!“ an den richtigen Stellen. Wird die Geschichte dem Kind zu lang, kommt die Ameise schon beim dritten Versuch oben an.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La fourmi et la miette",
+      "text": "L’adulte raconte l’histoire d’une fourmi qui veut rapporter une énorme miette jusqu’à la fourmilière. L’enfant fait marcher son index et son majeur comme une fourmi sur la table et grimper sur son propre poing, qui sert de colline. Quand l’adulte dit « Glisse ! », la fourmi redescend un peu, et l’enfant dit « Encore une fois ! ». À la troisième tentative, la fourmi prend un autre chemin autour de la colline ; à la quatrième, elle arrive en haut. Elle n’y arrive pas parce que c’est facile, mais parce qu’elle continue.",
+      "sagen": [
+        "Aujourd’hui, on parle de persévérer, même quand ça ne marche pas tout de suite. Voici une petite histoire de fourmi.",
+        "La fourmi grimpe sur la colline… Ouh, elle glisse ! Qu’est-ce qu’elle dit maintenant, à ton avis ?",
+        "Et c’est ce qu’on va faire maintenant : continuer et réessayer autrement."
+      ],
+      "wennEsKippt": "Si l’enfant ne veut pas jouer avec les doigts, l’adulte joue la fourmi et l’enfant dit seulement « Encore une fois ! » aux bons moments. Si l’histoire devient trop longue, la fourmi arrive en haut dès la troisième tentative.",
+      "kurz": "Fourmi-doigts qui glisse · Encore ! · arriver en haut"
+    },
+    "kurz": "Ameisen-Finger rutscht zurück · Noch einmal! · oben ankommen"
+  },
+  {
+    "id": "th:kooperation-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Ein Takt für zwei",
+    "text": "Fachkraft und Kind sitzen nebeneinander oder gegenüber am Tisch. Die Fachkraft klopft einmal leise mit einem Finger auf den Tisch, das Kind klopft als Nächstes, dann wieder die Fachkraft, immer abwechselnd, bis es klingt, als würde nur eine einzige Person klopfen, gleichmäßig und ohne Lücken. Klappt das, versuchen beide, den Takt gemeinsam langsam schneller und wieder langsamer zu machen, ohne ein Wort. Dafür muss man aufeinander hören.",
+    "sagen": [
+      "Heute geht es darum, wie man zusammen etwas schafft. Wir fangen mit einem Klopf-Spiel an, bei dem wir gemeinsam einen Takt bilden.",
+      "Ich klopfe, du klopfst, ich klopfe, du klopfst … Wir wollen klingen wie eine einzige Person.",
+      "Genau darum geht es jetzt weiter: gemeinsam etwas schaffen, indem wir aufeinander achten."
+    ],
+    "wennEsKippt": "Klappt das Abwechseln nicht, klopfen beide zuerst gleichzeitig im selben Takt und wechseln erst danach ab. Mag das Kind nicht klopfen, zählt es den Takt laut mit („eins, zwei“), und die Fachkraft klopft beide Schläge.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "musik",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Un rythme à deux",
+      "text": "L’adulte et l’enfant sont assis côte à côte ou face à face à la table. L’adulte tape une fois doucement du doigt sur la table, l’enfant tape ensuite, puis à nouveau l’adulte, toujours à tour de rôle, jusqu’à ce que cela sonne comme si une seule personne tapait, régulièrement et sans trou. Quand cela marche, ils essaient d’accélérer le rythme ensemble, doucement, puis de le ralentir, sans un mot. Pour cela, il faut s’écouter l’un l’autre.",
+      "sagen": [
+        "Aujourd’hui, on voit comment réussir quelque chose ensemble. On commence par un jeu de tapotements où l’on fabrique un rythme à deux.",
+        "Je tape, tu tapes, je tape, tu tapes… On veut sonner comme une seule personne.",
+        "Et c’est ce qu’on va faire maintenant : réussir ensemble en faisant attention l’un à l’autre."
+      ],
+      "wennEsKippt": "Si l’alternance ne marche pas, ils tapent d’abord ensemble au même rythme et alternent seulement ensuite. Si l’enfant ne veut pas taper, il compte le rythme à voix haute (« un, deux ») et l’adulte tape les deux coups.",
+      "kurz": "Taper à tour de rôle comme une seule personne · changer de tempo"
+    },
+    "kurz": "Abwechselnd klopfen wie eine Person · Tempo gemeinsam ändern"
+  },
+  {
+    "id": "th:kooperation-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Zwei Esel, ein Seil",
+    "text": "Die Fachkraft erzählt: Zwei Esel hängen an einem Seil. Der eine will zum Heuhaufen links, der andere zum Heuhaufen rechts. Beide ziehen, und keiner kommt vom Fleck. Das Kind spielt die Esel mit seinen zwei Händen, die in verschiedene Richtungen ziehen, und überlegt, was die Esel tun können. Zum Schluss zeigen beide die Lösung mit den Händen: erst gemeinsam nach links zum Heu, dann gemeinsam nach rechts. So werden beide satt.",
+    "sagen": [
+      "Heute geht es darum, wie man zusammen etwas schafft. Dazu gibt es eine kleine Geschichte von zwei Eseln.",
+      "Der eine Esel will nach links, der andere nach rechts, und beide ziehen. Es geht keinen Schritt voran. Was können sie tun?",
+      "Genau darum geht es jetzt weiter: zusammen etwas schaffen."
+    ],
+    "wennEsKippt": "Fällt dem Kind die Lösung nicht ein, fragt die Fachkraft: „Was, wenn die Esel zuerst zusammen nach links gehen?“ Mag das Kind die Hände nicht spielen lassen, erzählt die Fachkraft weiter, und das Kind sagt nur, was die Esel tun sollen.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Deux ânes, une corde",
+      "text": "L’adulte raconte : deux ânes sont attachés par une corde. L’un veut aller au tas de foin à gauche, l’autre au tas de foin à droite. Tous deux tirent, et aucun n’avance. L’enfant joue les ânes avec ses deux mains, qui tirent chacune de leur côté, et cherche ce que les ânes pourraient faire. À la fin, ils montrent la solution avec les mains : d’abord ensemble vers la gauche, puis ensemble vers la droite. Ainsi, les deux ânes sont rassasiés.",
+      "sagen": [
+        "Aujourd’hui, on voit comment réussir quelque chose ensemble. Voici une petite histoire de deux ânes.",
+        "Un âne veut aller à gauche, l’autre à droite, et tous les deux tirent. Ils n’avancent pas d’un pas. Que peuvent-ils faire ?",
+        "Et c’est ce qu’on va faire maintenant : réussir quelque chose ensemble."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas la solution, l’adulte demande : « Et si les ânes allaient d’abord ensemble vers la gauche ? » S’il ne veut pas jouer avec ses mains, l’adulte continue l’histoire, et l’enfant dit seulement ce que les ânes devraient faire.",
+      "kurz": "Deux ânes attachés tirent chacun de son côté · solution"
+    },
+    "kurz": "Zwei Esel am Seil ziehen auseinander · Kind findet die Lösung"
+  },
+  {
+    "id": "th:konflikte-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Mauer-Sätze, Brücken-Sätze",
+    "text": "Die Fachkraft erklärt: Im Streit können Sätze wie eine Mauer wirken oder wie eine Brücke. Sie sagt Sätze, die Sami zu Lea sagen könnte, und das Kind entscheidet jedes Mal: Mauer oder Brücke? Bei einer Mauer stapelt es einen Baustein auf den Turm, bei einer Brücke legt es einen Baustein flach in die Brückenreihe. Beispiele: „Mit dir spiele ich nie wieder!“ (Mauer), „Ich ärgere mich, weil mein Turm umgefallen ist.“ (Brücke), „Immer machst du alles kaputt!“ (Mauer), „Wollen wir abwechseln?“ (Brücke).",
+    "sagen": [
+      "Heute geht es darum, wie man einen Streit lösen kann. Dabei können Sätze wie eine Mauer wirken oder wie eine Brücke.",
+      "Sami sagt zu Lea: „Mit dir spiele ich nie wieder!“ Ist das eine Mauer oder eine Brücke? Und wie ist „Wollen wir abwechseln?“",
+      "Genau darum geht es jetzt weiter: Streit so lösen, dass wir Brücken bauen."
+    ],
+    "wennEsKippt": "Ist dem Kind unklar, ob ein Satz Mauer oder Brücke ist, fragt die Fachkraft: „Kommt der andere danach näher oder geht er weg?“ Mag das Kind nicht bauen, sagt es nur „Mauer“ oder „Brücke“, und die Fachkraft legt die Bausteine.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [
+      "bausteine"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Phrases-murs, phrases-ponts",
+      "text": "L’adulte explique : dans une dispute, des phrases peuvent faire comme un mur ou comme un pont. L’adulte dit des phrases que Sami pourrait dire à Lea, et l’enfant décide à chaque fois : mur ou pont ? Pour un mur, il empile un cube sur la tour ; pour un pont, il pose un cube à plat dans la rangée du pont. Exemples : « Je ne joue plus jamais avec toi ! » (mur), « Je suis fâché parce que ma tour est tombée. » (pont), « Tu casses toujours tout ! » (mur), « On fait chacun son tour ? » (pont).",
+      "sagen": [
+        "Aujourd’hui, on cherche comment résoudre une dispute. Des phrases peuvent faire comme un mur ou comme un pont.",
+        "Sami dit à Lea : « Je ne joue plus jamais avec toi ! » Est-ce un mur ou un pont ? Et « On fait chacun son tour ? »",
+        "Et c’est ce qu’on va faire maintenant : résoudre une dispute en construisant des ponts."
+      ],
+      "wennEsKippt": "Si l’enfant ne sait pas si une phrase est un mur ou un pont, l’adulte demande : « Après ça, l’autre se rapproche ou il s’en va ? » S’il ne veut pas construire, il dit seulement « mur » ou « pont », et l’adulte pose les cubes.",
+      "kurz": "Trier des phrases : mur ou pont · avec des cubes"
+    },
+    "kurz": "Sätze sortieren: Mauer oder Brücke · mit Bausteinen legen"
+  },
+  {
+    "id": "th:konflikte-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Die eine Orange",
+    "text": "Die Fachkraft erzählt: Jana und Ben wollen beide die letzte Orange und streiten. Schließlich teilen sie sie in der Mitte. Jana presst ihre Hälfte aus und wirft die Schale weg; Ben braucht für seinen Kuchen nur die Schale und wirft das Innere weg. Das Kind überlegt, was die beiden vorher hätten fragen können („Wofür brauchst du sie?“) und was dann passiert wäre. Dann spielen sie es kurz durch: Die Fachkraft ist Jana und ruft „Ich will die Orange!“, das Kind ist Ben und probiert die Frage.",
+    "sagen": [
+      "Heute geht es darum, wie man einen Streit lösen kann. Ich erzähle dir von zwei Kindern, die sich um eine Orange streiten.",
+      "Jana und Ben haben die Orange geteilt, und beide haben nur die Hälfte von dem, was sie brauchten. Was hätten sie vorher fragen können?",
+      "Genau darum geht es jetzt weiter: Streit lösen, sodass beide bekommen, was sie brauchen."
+    ],
+    "wennEsKippt": "Fällt dem Kind die Frage nicht ein, hilft die Fachkraft: „Warum will Jana die Orange? Und warum Ben?“ Mag das Kind nicht raten, löst die Fachkraft das Rätsel auf, und das Kind sagt nur, was es an der Lösung am klügsten findet.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "rollenspiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "L’unique orange",
+      "text": "L’adulte raconte : Jana et Ben veulent tous les deux la dernière orange et se disputent. Finalement, ils la coupent en deux. Jana presse sa moitié et jette l’écorce ; Ben n’a besoin que de l’écorce pour son gâteau et jette l’intérieur. L’enfant cherche ce que les deux auraient pu demander avant (« Pourquoi as-tu besoin de l’orange ? ») et ce qui se serait passé. Puis ils le jouent brièvement : l’adulte est Jana et lance « Je veux l’orange ! », l’enfant est Ben et essaie la question.",
+      "sagen": [
+        "Aujourd’hui, on cherche comment résoudre une dispute. Je te raconte l’histoire de deux enfants qui se disputent une orange.",
+        "Jana et Ben ont coupé l’orange en deux, et chacun n’a eu que la moitié de ce dont il avait besoin. Qu’auraient-ils pu demander avant ?",
+        "Et c’est ce qu’on va faire maintenant : résoudre une dispute pour que chacun ait ce dont il a besoin."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas la question, l’adulte aide : « Pourquoi Jana veut-elle l’orange ? Et pourquoi Ben ? » S’il ne veut pas deviner, l’adulte donne la réponse, et l’enfant dit seulement ce qu’il trouve de plus malin dans la solution.",
+      "kurz": "Une orange, deux enfants · l’enfant trouve « Pourquoi ? »"
+    },
+    "kurz": "Eine Orange, zwei Kinder · Kind findet die Frage „Wofür?“"
+  },
+  {
+    "id": "th:kommunikation-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Zeichnen nach Ansage",
+    "text": "Die Fachkraft zeichnet verdeckt ein einfaches Bild aus drei Formen, zum Beispiel ein Haus mit Dach, eine Sonne rechts oben und einen Baum links. Ohne es zu zeigen, sagt sie dem Kind nur grob, was es zeichnen soll: „Ein Haus, eine Sonne, ein Baum.“ Beim ersten Mal darf das Kind nicht nachfragen. Dann vergleichen beide die Bilder und lachen über die Unterschiede. Beim zweiten Mal, mit demselben Bild, darf das Kind nachfragen („Wie groß? Wo genau?“), die Fachkraft antwortet, und das Bild wird viel ähnlicher. Es geht nicht um ein schönes Bild.",
+    "sagen": [
+      "Heute geht es darum, so zu reden und zuzuhören, dass man sich versteht. Wir probieren es mit einem Bild, das du nicht sehen darfst.",
+      "Zeichne ein Haus, eine Sonne und einen Baum. Beim zweiten Mal darfst du nachfragen.",
+      "Genau darum geht es jetzt weiter: klar sagen, was man meint, und nachfragen, wenn man etwas nicht versteht."
+    ],
+    "wennEsKippt": "Ärgert sich das Kind über sein Bild, sagt die Fachkraft: „Das lag an meiner Ansage“ und erklärt es beim zweiten Mal genauer. Mag das Kind nicht zeichnen, legt es stattdessen drei Stifte nach Ansage in eine Reihe.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "malen",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Dessiner sur consigne",
+      "text": "L’adulte dessine en cachette un dessin simple fait de trois formes, par exemple une maison avec un toit, un soleil en haut à droite et un arbre à gauche. Sans le montrer, il dit seulement en gros à l’enfant ce qu’il doit dessiner : « Une maison, un soleil, un arbre. » La première fois, l’enfant n’a pas le droit de poser de questions. Ensuite, ils comparent les dessins et rient des différences. La deuxième fois, avec le même dessin, l’enfant peut poser des questions (« De quelle taille ? Où exactement ? »), l’adulte répond, et le dessin ressemble beaucoup plus. Le but n’est pas de faire un joli dessin.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à parler et à écouter pour se comprendre. On essaie avec un dessin que tu n’as pas le droit de voir.",
+        "Dessine une maison, un soleil et un arbre. La deuxième fois, tu pourras poser des questions.",
+        "Et c’est ce qu’on va faire maintenant : dire clairement ce qu’on veut dire et poser des questions quand on ne comprend pas."
+      ],
+      "wennEsKippt": "Si l’enfant s’agace de son dessin, l’adulte dit : « C’est à cause de ma consigne » et l’explique plus précisément la deuxième fois. S’il ne veut pas dessiner, il aligne trois crayons selon la consigne.",
+      "kurz": "Dessiner sur consigne · d’abord sans, puis avec questions"
+    },
+    "kurz": "Bild nach Ansage zeichnen · erst ohne, dann mit Nachfragen"
+  },
+  {
+    "id": "th:kommunikation-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Gib mir das Dings!",
+    "text": "Auf dem Tisch liegen vier Dinge, zum Beispiel zwei Stifte (ein langer, ein kurzer), ein Löffel und ein Radiergummi. Die Fachkraft spielt jemanden, der es sehr eilig hat, und ruft nur: „Gib mir mal das Dings da!“ Das Kind merkt, dass es nicht weiß, was gemeint ist, und fragt nach („Welches meinst du?“). Erst als die Fachkraft sagt „Den langen Stift, bitte“, klappt es. Dann ist das Kind dran: Es ruft „Dings!“, und die Fachkraft fragt nach, bis es klar sagt, was es braucht.",
+    "sagen": [
+      "Heute geht es darum, klar zu sagen, was man braucht, und gut zuzuhören. Ich spiele jemanden, der es sehr eilig hat.",
+      "Gib mir mal das Dings da! Schnell, schnell!",
+      "Genau darum geht es jetzt weiter: sagen, was man braucht, und verstehen, was der andere meint."
+    ],
+    "wennEsKippt": "Gibt das Kind einfach irgendetwas, spielt die Fachkraft freundlich ratlos („Hm, das war es nicht, aber ich habe ja auch nicht gesagt, was ich will“). Traut sich das Kind nicht nachzufragen, flüstert die Fachkraft ihm den Satz „Welches meinst du?“ vor.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "rollenspiel"
+    ],
+    "material": [
+      "alltagsdinge"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Passe-moi le machin !",
+      "text": "Sur la table, il y a quatre objets, par exemple deux crayons (un long et un court), une cuillère et une gomme. L’adulte joue quelqu’un de très pressé et lance seulement : « Passe-moi le machin, là ! » L’enfant remarque qu’il ne sait pas ce qu’on lui demande et pose la question (« Lequel ? »). Ce n’est que lorsque l’adulte dit « Le long crayon, s’il te plaît » que ça marche. Ensuite, c’est au tour de l’enfant : il lance « Truc ! », et l’adulte demande jusqu’à ce que l’enfant dise clairement ce dont il a besoin.",
+      "sagen": [
+        "Aujourd’hui, on s’exerce à dire clairement ce dont on a besoin et à bien écouter. Je joue quelqu’un qui est très pressé.",
+        "Passe-moi le machin, là ! Vite, vite !",
+        "Et c’est ce qu’on va faire maintenant : dire ce dont on a besoin et comprendre ce que l’autre veut dire."
+      ],
+      "wennEsKippt": "Si l’enfant donne n’importe quoi, l’adulte joue la perplexité gentille (« Hum, ce n’était pas ça, mais je n’ai pas dit ce que je voulais »). S’il n’ose pas demander, l’adulte lui souffle la phrase « Lequel ? ».",
+      "kurz": "« Passe-moi le machin ! » · l’enfant demande · on échange"
+    },
+    "kurz": "„Gib mir das Dings!“ · Kind fragt nach · dann Rollentausch"
+  },
+  {
+    "id": "th:selbstbild-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Kein Daumen gleicht dem anderen",
+    "text": "Die Fachkraft formt ein Stück Knete zu einer flachen Scheibe, drückt den Daumen fest hinein und zieht ihn vorsichtig ab. Das Kind macht dasselbe in seiner eigenen Scheibe. Beide betrachten die feinen Linien: Bögen, Kringel, Wirbel. Sie vergleichen die beiden Abdrücke und finden Unterschiede. Die Fachkraft verrät: Nach allem, was man weiß, gleicht kein Fingerabdruck dem anderen, nicht einmal bei eineiigen Zwillingen. Jeder gehört nur zu einem einzigen Menschen.",
+    "sagen": [
+      "Heute geht es darum, was dich ausmacht und was du gut kannst. Wir fangen mit einem Beweis an, den du immer dabeihast: deinem Daumen.",
+      "Drück den Daumen in die Knete und schau dir die Linien an. Nach allem, was man weiß, hat kein anderer Mensch genau diese Linien.",
+      "Darum geht es jetzt weiter: sich selbst kennen und mögen, mit allem, was einen ausmacht."
+    ],
+    "wennEsKippt": "Sieht das Kind keine Linien, drückt es den Daumen noch einmal fester hinein, oder die Fachkraft zeigt auf ihren eigenen Abdruck. Mag das Kind nicht in die Knete drücken, schauen beide nur auf den eigenen Daumen; auch dort sieht man die Linien.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "sinne",
+      "spiel"
+    ],
+    "material": [
+      "knete"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Pas deux pouces pareils",
+      "text": "L’adulte aplatit un morceau de pâte à modeler en galette, y enfonce fermement le pouce et le retire avec précaution. L’enfant fait la même chose dans sa propre galette. Ils regardent de près les fines lignes : arcs, boucles, tourbillons. Ils comparent les deux empreintes et trouvent des différences. L’adulte révèle : d’après ce qu’on sait, deux empreintes ne sont jamais identiques, même chez de vrais jumeaux. Chacune n’appartient qu’à une seule personne.",
+      "sagen": [
+        "Aujourd’hui, on parle de ce qui fait de toi quelqu’un d’unique. On commence avec une preuve que tu as toujours sur toi : ton pouce.",
+        "Enfonce ton pouce dans la pâte à modeler et regarde les lignes. D’après ce qu’on sait, personne d’autre n’a exactement les mêmes.",
+        "Et c’est ce qu’on va faire maintenant : se connaître et s’aimer tel qu’on est, avec tout ce qui nous rend unique."
+      ],
+      "wennEsKippt": "Si l’enfant ne voit pas de lignes, il enfonce à nouveau son pouce plus fort, ou l’adulte montre sa propre empreinte. S’il ne veut pas toucher la pâte à modeler, ils regardent seulement leur pouce : on y voit aussi les lignes.",
+      "kurz": "Empreinte de pouce dans la pâte à modeler · lignes uniques"
+    },
+    "kurz": "Daumenabdruck in Knete · Linien vergleichen · nur einmal da"
+  },
+  {
+    "id": "th:selbstbild-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Zwei Arten, mit sich zu sprechen",
+    "text": "Die Fachkraft erzählt: Sami bricht beim Malen die Stiftspitze ab und denkt dazu zwei verschiedene Dinge über sich. Zuerst klingt es wie eine Meckerstimme (die Fachkraft spricht grummelig): „Typisch! Immer passiert mir sowas!“ Dann klingt es wie eine Freundstimme (warm und ruhig): „Ups, das kann passieren. Ich spitze ihn einfach neu.“ Das Kind sagt, welche Stimme Sami besser hilft, und sucht einen weiteren Satz für die Freundstimme. Mit sich selbst kann man sprechen wie mit einem guten Freund.",
+    "sagen": [
+      "Heute geht es darum, sich selbst zu mögen und freundlich mit sich zu sprechen. Sami denkt dazu gleich zwei verschiedene Sachen über sich.",
+      "Erst meckert Sami mit sich: „Typisch, immer passiert mir sowas!“ Dann sagt er freundlich: „Ups, kann passieren, ich spitze neu.“ Welcher Satz hilft ihm mehr?",
+      "Genau darum geht es jetzt weiter: sich selbst gut kennen und mögen."
+    ],
+    "wennEsKippt": "Antwortet das Kind nicht, spielt die Fachkraft beide Stimmen noch einmal vor und fragt nur: „Welche klingt wie ein Freund?“ Fällt dem Kind kein eigener Satz ein, bietet die Fachkraft zwei zur Wahl („Nächstes Mal klappt es besser“, „Das darf passieren“).",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "rollenspiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Deux façons de se parler",
+      "text": "L’adulte raconte : en dessinant, Sami casse la mine de son crayon et pense deux choses très différentes sur lui-même. D’abord, cela sonne comme une voix grincheuse (l’adulte parle d’un ton bougon) : « Typique ! Ça n’arrive qu’à moi ! » Puis cela sonne comme une voix amie (chaleureuse et calme) : « Oups, ça peut arriver. Je le taille et c’est reparti. » L’enfant dit quelle voix aide le mieux Sami et cherche une autre phrase pour la voix amie. On peut se parler à soi-même comme à un bon ami.",
+      "sagen": [
+        "Aujourd’hui, on apprend à s’aimer et à se parler gentiment. Sami, lui, pense deux choses très différentes sur lui-même.",
+        "D’abord, Sami grogne contre lui-même : « Typique, ça n’arrive qu’à moi ! » Ensuite, il se parle gentiment : « Oups, ça arrive, je le taille. » Quelle phrase l’aide le plus ?",
+        "Et c’est ce qu’on va faire maintenant : bien se connaître et s’aimer."
+      ],
+      "wennEsKippt": "Si l’enfant ne répond pas, l’adulte rejoue les deux voix et demande seulement : « Laquelle ressemble à un ami ? » S’il ne trouve pas de phrase, l’adulte en propose deux au choix (« La prochaine fois, ça ira mieux », « On a le droit de se tromper »).",
+      "kurz": "Voix grincheuse ou voix amie · l’enfant choisit une phrase"
+    },
+    "kurz": "Meckerstimme oder Freundstimme · Kind wählt, sucht Satz"
+  },
+  {
+    "id": "th:lernstrategien-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Zahlen in Päckchen",
+    "text": "Die Fachkraft liest langsam acht Zahlen vor, zum Beispiel 4 – 8 – 1 – 5 – 9 – 2 – 6 – 3, und sagt vorher: „Das sind mit Absicht zu viele.“ Das Kind sagt sie nach. Meist rutschen einige durcheinander oder gehen verloren, das geht fast allen so. Dann liest die Fachkraft dieselben Zahlen in Zweier-Päckchen vor, mit einer kleinen Pause nach jedem Päckchen: 4 8 – 1 5 – 9 2 – 6 3. Jetzt klappt es meist besser. Wer etwas in Päckchen packt, kann es sich leichter merken, so wie bei Telefonnummern. Es zählt nicht, wie viele Zahlen jemand schafft.",
+    "sagen": [
+      "Heute geht es darum, wie man sich Dinge gut merken und gut lernen kann. Ich lese dir Zahlen vor, und du sagst sie nach.",
+      "Das sind mit Absicht viele Zahlen auf einmal. Jetzt packe ich sie in Päckchen: 4 8 – 1 5 – 9 2 – 6 3. Versuch es noch einmal.",
+      "Genau darum geht es jetzt weiter: Tricks, mit denen man gut lernt."
+    ],
+    "wennEsKippt": "Ärgert sich das Kind über die Fehler, sagt die Fachkraft „Acht einzelne Zahlen sind für jeden zu viel, darum brauchen wir einen Trick“ und beginnt gleich mit den Päckchen. Fallen die Päckchen schwer, nimmt sie nur sechs Zahlen in drei Päckchen.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Les chiffres en paquets",
+      "text": "L’adulte lit lentement huit chiffres, par exemple 4 – 8 – 1 – 5 – 9 – 2 – 6 – 3, et dit d’avance : « Il y en a exprès trop. » L’enfant les répète. Le plus souvent, quelques-uns se mélangent ou se perdent, ce qui arrive à presque tout le monde. Puis l’adulte relit les mêmes chiffres par paquets de deux, avec une petite pause après chaque paquet : 4 8 – 1 5 – 9 2 – 6 3. Cette fois, c’est souvent plus facile. Quand on range les choses en paquets, on les retient mieux, comme pour les numéros de téléphone. Ce qui compte, ce n’est pas le nombre de chiffres retenus.",
+      "sagen": [
+        "Aujourd’hui, on cherche comment bien retenir les choses et bien apprendre. Je te lis des chiffres et tu les répètes.",
+        "Exprès, ça fait beaucoup de chiffres d’un coup. Maintenant, je les range en paquets : 4 8 – 1 5 – 9 2 – 6 3. Essaie encore une fois.",
+        "Et c’est ce qu’on va faire maintenant : des astuces pour bien apprendre."
+      ],
+      "wennEsKippt": "Si l’enfant s’agace de ses erreurs, l’adulte dit « Huit chiffres séparés, c’est trop pour tout le monde, il nous faut une astuce » et passe tout de suite aux paquets. Si les paquets sont difficiles, il ne prend que six chiffres en trois paquets.",
+      "kurz": "8 chiffres à répéter · puis en paquets · sentir la différence"
+    },
+    "kurz": "8 Zahlen nachsagen · dann in Päckchen · Unterschied spüren"
+  },
+  {
+    "id": "th:lernstrategien-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Lea und Tom lernen",
+    "text": "Die Fachkraft erzählt: Lea und Tom wollen sich zehn neue Wörter merken. Tom liest die Liste zwanzigmal durch. Lea nimmt fünf Wörter, deckt sie zu, sagt sie aus dem Kopf auf, schaut nach, macht eine kleine Pause und nimmt dann die nächsten fünf. Das Kind rät, wer am Nachmittag mehr weiß, und sagt, was ihm an den beiden Wegen auffällt. Die Fachkraft verrät: Wer sich selbst abfragt und Pausen macht, behält meist mehr. Zum Probieren deckt das Kind drei Wörter zu und sagt sie auf.",
+    "sagen": [
+      "Heute geht es darum, wie man gut lernt. Ich erzähle dir von zwei Kindern, die zehn Wörter lernen wollen.",
+      "Tom liest die Liste zwanzigmal. Lea deckt die Wörter zu und sagt sie aus dem Kopf auf. Wer weiß am Nachmittag mehr?",
+      "Genau darum geht es jetzt weiter: Wege finden, mit denen man gut lernt."
+    ],
+    "wennEsKippt": "Tippt das Kind nicht oder sagt „weiß nicht“, fragt die Fachkraft: „Wer musste mehr nachdenken?“ und sagt Leas Trick in einem Satz. Hat das Kind keine Lust aufs Probieren, bleibt es bei der Geschichte, und die Fachkraft sagt die drei Wörter nur selbst auf.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Lea et Tom apprennent",
+      "text": "L’adulte raconte : Lea et Tom veulent retenir dix mots nouveaux. Tom relit la liste vingt fois. Lea prend cinq mots, les cache, les récite de tête, vérifie, fait une petite pause, puis prend les cinq suivants. L’enfant devine qui en saura le plus l’après-midi et dit ce qu’il remarque dans ces deux façons de faire. L’adulte révèle : celui qui s’interroge lui-même et fait des pauses retient en général plus. Pour essayer, l’enfant cache trois mots et les récite.",
+      "sagen": [
+        "Aujourd’hui, on cherche comment bien apprendre. Je te raconte l’histoire de deux enfants qui veulent retenir dix mots.",
+        "Tom relit la liste vingt fois. Lea cache les mots et les dit de tête. Qui en saura le plus cet après-midi ?",
+        "Et c’est ce qu’on va faire maintenant : trouver des façons de bien apprendre."
+      ],
+      "wennEsKippt": "Si l’enfant ne se prononce pas ou dit « je sais pas », l’adulte demande : « Qui a dû le plus réfléchir ? » et résume l’astuce de Lea en une phrase. S’il n’a pas envie d’essayer, on en reste à l’histoire, et l’adulte récite lui-même les trois mots.",
+      "kurz": "Deux façons d’apprendre · l’enfant devine · essayer de cacher"
+    },
+    "kurz": "Zwei Lernwege von Lea und Tom · Kind rät · Zudecken probieren"
+  },
+  {
+    "id": "th:alltag-einstieg-kinder-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Wie lang ist eine halbe Minute?",
+    "text": "Das Kind schließt die Augen und hebt die Hand, sobald es meint, dass eine halbe Minute um ist. Die Fachkraft schaut dabei auf die Uhr oder den Timer und sagt nichts. Danach sehen beide nach, wie nah das Kind dran war; fast alle liegen ein Stück daneben, auch Erwachsene. Dann schätzt auch die Fachkraft eine halbe Minute. Zusammen überlegen sie, was im Alltag hilft, wenn das Zeitgefühl nicht reicht: Uhr, Wecker, Timer.",
+    "sagen": [
+      "Heute geht es darum, den Alltag allein zu schaffen, zum Beispiel pünktlich fertig zu werden. Dazu brauchen wir ein Gefühl für Zeit.",
+      "Augen zu. Heb die Hand, wenn du denkst, dass eine halbe Minute vorbei ist. Ich schaue auf die Uhr.",
+      "Genau darum geht es jetzt weiter: den Alltag Schritt für Schritt allein schaffen."
+    ],
+    "wennEsKippt": "Mag das Kind die Augen nicht schließen, schaut es auf einen Punkt an der Wand. Ärgert es sich, weil es weit daneben lag, sagt die Fachkraft „Dafür gibt es die Uhr“ und macht gleich eine zweite Runde mit der Uhr in Sicht.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "sinne"
+    ],
+    "material": [
+      "uhr"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Combien dure une demi-minute ?",
+      "text": "L’enfant ferme les yeux et lève la main dès qu’il pense qu’une demi-minute est passée. L’adulte regarde pendant ce temps la montre ou le minuteur et ne dit rien. Ensuite, ils regardent ensemble à quel point l’enfant était proche ; presque tout le monde se trompe un peu, même les adultes. Puis l’adulte estime lui aussi une demi-minute. Ensemble, ils cherchent ce qui aide au quotidien quand le sens du temps ne suffit pas : montre, réveil, minuteur.",
+      "sagen": [
+        "Aujourd’hui, on parle de se débrouiller seul au quotidien, par exemple pour être prêt à l’heure. Pour cela, il faut avoir le sens du temps.",
+        "Ferme les yeux. Lève la main quand tu penses qu’une demi-minute est passée. Moi, je regarde la montre.",
+        "Et c’est ce qu’on va faire maintenant : se débrouiller seul au quotidien, étape par étape."
+      ],
+      "wennEsKippt": "Si l’enfant ne veut pas fermer les yeux, il fixe un point sur le mur. S’il s’agace d’être très loin du compte, l’adulte dit « C’est pour ça qu’on a la montre » et refait tout de suite un tour avec la montre sous les yeux.",
+      "kurz": "Estimer une demi-minute · yeux fermés · vérifier à la montre"
+    },
+    "kurz": "Halbe Minute schätzen · Augen zu · dann zeigt die Uhr es"
+  },
+  {
+    "id": "th:alltag-einstieg-kinder-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Das klemmt!",
+    "text": "Die Fachkraft erzählt: Toms Reißverschluss an der Jacke klemmt, und gleich beginnt die Pause. Sie zeigt drei Wege an drei Fingern: noch einmal selbst probieren, ruhig und langsam; es anders machen, zum Beispiel den Stoff glatt ziehen und von unten neu ansetzen; jemanden um Hilfe bitten und sagen, was man braucht. Das Kind sagt, welchen Weg Tom zuerst nehmen könnte und welchen, wenn es nicht klappt. Wer mehrere Wege kennt, schafft den Alltag eher allein, und Hilfe holen gehört dazu.",
+    "sagen": [
+      "Heute geht es darum, den Alltag selbstständig zu schaffen. Dazu gehört auch zu wissen, was man tut, wenn etwas klemmt.",
+      "Toms Reißverschluss klemmt, und gleich ist Pause. Was kann Tom tun? Ich habe drei Wege an drei Fingern.",
+      "Genau darum geht es jetzt weiter: den Alltag selbstständig schaffen, mit Ideen und mit Hilfe."
+    ],
+    "wennEsKippt": "Fällt dem Kind nichts ein, zeigt die Fachkraft die drei Finger und sagt die Wege langsam vor, und das Kind zeigt auf einen. Meint das Kind, Tom müsste es einfach allein können, sagt die Fachkraft „Auch Große fragen manchmal“ und lässt den Hilfe-Weg gelten.",
+    "rolle": [
+      "einstieg",
+      "spiel"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Ça coince !",
+      "text": "L’adulte raconte : la fermeture éclair de la veste de Tom coince, et la récréation va bientôt commencer. L’adulte montre trois pistes sur trois doigts : réessayer seul, calmement et lentement ; s’y prendre autrement, par exemple tirer le tissu bien à plat et recommencer par le bas ; demander de l’aide en disant ce dont on a besoin. L’enfant dit quelle piste Tom peut suivre d’abord, et laquelle si ça ne marche pas. Quand on connaît plusieurs façons de faire, on se débrouille plus facilement seul, et demander de l’aide en fait partie.",
+      "sagen": [
+        "Aujourd’hui, on parle de se débrouiller seul au quotidien. Ça veut dire aussi savoir quoi faire quand quelque chose coince.",
+        "La fermeture éclair de Tom coince, et la récréation va commencer. Que peut faire Tom ? J’ai trois pistes sur trois doigts.",
+        "Et c’est ce qu’on va faire maintenant : se débrouiller au quotidien, avec des idées et avec de l’aide."
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte montre les trois doigts et dit les pistes lentement ; l’enfant en désigne un. S’il pense que Tom devrait y arriver seul, l’adulte dit « Même les grands demandent parfois » et fait valoir la piste de l’aide.",
+      "kurz": "La veste coince : trois pistes sur trois doigts · choisir"
+    },
+    "kurz": "Jacke klemmt: drei Wege an drei Fingern · Kind wählt"
   }
 ]

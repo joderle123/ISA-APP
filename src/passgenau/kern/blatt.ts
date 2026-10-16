@@ -492,6 +492,36 @@ function ohneLeereAufgaben(liste: Baustein[], wenigSchreiben: boolean): Baustein
   return raus
 }
 
+const ANWEISUNG = new Set<Baustein['art']>(['text', 'aufgabe', 'bild', 'wortspeicher'])
+/** Aufgaben-Teile, die (fast) kein Schreiben brauchen: ankreuzen, einkreisen, malen, einschätzen */
+const WENIG_SCHREIBEN = new Set<Baustein['art']>(['ankreuzen', 'bilder', 'gefuehle', 'zuordnen', 'skala', 'thermometer', 'leiter'])
+
+/** Das Gerüst eines Übungsblatts (Grundgerüst 16.10.): Situation – Erkennen – Anwenden – „Und du?“. Jede Aufgabe ist eine Gruppe
+ *  aus ihren Anweisungen (Text, Aufgabe, Bild) und dem Teil danach. Passt nicht alles in die Minuten, fällt die Mitte weg, nicht
+ *  der Schluss: der Bezug zum eigenen Leben bleibt (Testlauf 16.10.: „Lea hat Geburtstag …“ und „Mal ein Gefühl“ fielen weg,
+ *  danach stand ein allgemeines Malfeld). Bei wenig Schreiben bleibt der Schluss nur, wenn er kaum Schreiben braucht. */
+function blattGeruest(teile: Baustein[], hoechstens: number, o: { wenigSchreiben: boolean; stimmungTief?: boolean }): Baustein[] {
+  const gruppen: Baustein[][] = []
+  let offen: Baustein[] = []
+  for (const b of teile) {
+    offen.push(b)
+    if (ANWEISUNG.has(b.art)) continue
+    gruppen.push(offen)
+    offen = []
+  }
+  // Stimmung ≤ 2: keine Selbsteinschätzung auf Skalen (Blind-Bewertung 7) – ihre Anweisung fällt mit weg
+  const nutzbar = o.stimmungTief ? gruppen.filter((g) => g[g.length - 1].art !== 'skala') : gruppen
+  // (eine Schluss-Anweisung ohne eigenen Teil bekommt ihr Feld in ohneLeereAufgaben)
+  if (nutzbar.length <= hoechstens) return [...nutzbar.flat(), ...offen]
+  // der Schluss ist die letzte Aufgabe vor einer abschließenden Skala („Wie leicht wäre es für mich …“)
+  const letzte = (g: Baustein[]) => g[g.length - 1]
+  let i = nutzbar.length - 1
+  while (i > 0 && letzte(nutzbar[i]).art === 'skala') i--
+  const teil = letzte(nutzbar[i])
+  const schlussGeht = hoechstens >= 2 && i >= hoechstens - 1 && teil.art !== 'skala' && (!o.wenigSchreiben || WENIG_SCHREIBEN.has(teil.art) || (teil.art === 'feld' && !!teil.zeichnen))
+  return (schlussGeht ? [...nutzbar.slice(0, hoechstens - 1), nutzbar[i]] : nutzbar.slice(0, hoechstens)).flat()
+}
+
 /** Inhalt des Blatts zur Übung (kernBlatt): kurz, ohne Pflicht, Persönliches aufzuschreiben. */
 function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache: Sprache, o: KernBlattOpt): Baustein[] {
   const fr = sprache === 'fr'
@@ -510,26 +540,10 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
   // Tag nur der Text-Kasten und die ersten zwei Aufgaben (die brauchen wenig Schreiben)
   const eigen = kern.typ === 'schritt' ? kern.uebungsblatt : undefined
   if (eigen) {
-    const teile = (fr ? eigen.fr : eigen.de) ?? []
-    let aufgaben = 0
     // höchstens so viele Aufgaben, wie in die Minuten passen (etwa eine je 2½ Minuten), bei wenig Schreiben zwei
     // … und in vier Minuten eine (Blind-Bewertung 10: „zwei Aufgaben in 4 Minuten“)
     const hoechstens = o.min && o.min <= 4 ? 1 : o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / 2.5)) : 99
-    // Ende der letzten echten Aufgabe: fällt die nächste weg, auch ihre Anweisung davor (Blind-Bewertung 11: „Kreis die Stufe
-    // der Mut-Treppe ein“ ohne Treppe, „Relie chaque pensée …“ ohne Zuordnung)
-    let ende = liste.length
-    for (const b of teile) {
-      const anweisung = b.art === 'text' || b.art === 'aufgabe' || b.art === 'bild' || b.art === 'wortspeicher'
-      if (o.stimmungTief && b.art === 'skala') {
-        liste.length = ende
-        continue
-      }
-      // Anweisungszeilen und Bilder sind keine eigene Aufgabe (Kinder-Blätter: „aufgabe“ vor jedem Bild-Baustein)
-      if (!anweisung) aufgaben++
-      if (aufgaben > hoechstens) {
-        liste.length = ende
-        break
-      }
+    for (const b of blattGeruest(fr ? eigen.fr : eigen.de, hoechstens, o)) {
       // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
       // … außer die Übung schreibt selbst eine Anweisung davor (Kinder-Blätter: „Was passt zusammen? Verbinde.“)
       const vorher = liste[liste.length - 1]?.art === 'aufgabe'
@@ -538,7 +552,6 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
       // Feldhöhe kommt in Millimetern (Übungsblätter), der Renderer rechnet in Zeilen
       if (b.art === 'feld') liste.push({ ...b, hoehe: Math.max(b.zeichnen ? 6 : 3, Math.min(9, Math.round((b.hoehe ?? 36) / 8))) })
       else liste.push(o.wenigSchreiben && b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
-      if (!anweisung) ende = liste.length
     }
     const fertig = ohneLeereAufgaben(liste, o.wenigSchreiben)
     // dünnes Kinderblatt (Blind-Bewertung 10: „untere Blatthälfte leer“): ein freiwilliges Malfeld zur Übung am Schluss

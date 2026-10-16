@@ -3366,5 +3366,1660 @@
       "kurz": "Nommer la prochaine étape · faire tout de suite le premier geste"
     },
     "kurz": "Nächsten Schritt nach der Stunde nennen · ersten Handgriff gleich tun"
+  },
+  {
+    "id": "th:gefuehle-erkennen-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Zwei Lächeln",
+    "text": "Die Fachkraft zeigt nacheinander zwei Lächeln: erst eines nur mit dem Mund, dann eines, bei dem auch die Augen mitmachen (Augenwinkel, Wangen). Der oder die Jugendliche sagt, welches echter wirkt und woran man es sieht. Aha: Ein Gefühl verrät sich oft in winzigen Zeichen, die man erst bemerkt, wenn man gezielt hinschaut. Wer mag, probiert beide Lächeln selbst aus, und die Fachkraft rät.",
+    "sagen": [
+      "Heute geht es ums Erkennen von Gefühlen, bei anderen und bei uns selbst. Zuerst ein kurzer Blick auf zwei Gesichter.",
+      "Ich zeige dir zwei Lächeln. Welches wirkt echter, und woran siehst du das?",
+      "Die Hinweise stecken oft in Kleinigkeiten. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht selbst lächeln, bleibt es beim Beurteilen. Sieht er oder sie keinen Unterschied, zeigt die Fachkraft beide Lächeln noch einmal langsam und lenkt den Blick auf die Augenwinkel. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "sinne",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Deux sourires",
+      "text": "L’adulte montre deux sourires l’un après l’autre : d’abord un sourire seulement avec la bouche, puis un sourire où les yeux participent aussi (coins des yeux, joues). Le ou la jeune dit lequel paraît le plus sincère et à quoi on le voit. Le déclic : une émotion se trahit souvent par de minuscules signes qu’on ne remarque qu’en regardant exprès. Qui veut peut essayer les deux sourires, et l’adulte devine.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la façon de reconnaître les émotions, chez les autres et chez nous. D’abord, un coup d’œil à deux visages.",
+        "Je te montre deux sourires. Lequel paraît le plus sincère, et à quoi le vois-tu ?",
+        "Les indices se cachent souvent dans de petits détails. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas sourire, il ou elle se contente de juger. S’il ou elle ne voit pas de différence, l’adulte remontre les deux sourires lentement en attirant le regard sur les coins des yeux. « Passe » est permis.",
+      "kurz": "Deux sourires · lequel est sincère ? · à quoi le voit-on ?"
+    },
+    "kurz": "Zwei Lächeln zeigen · welches wirkt echter? · woran sieht man es?"
+  },
+  {
+    "id": "th:gefuehle-erkennen-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Szene ohne Gefühlswort",
+    "text": "Die Fachkraft liest eine kurze Szene ohne Gefühlswort vor: „Lara wartet an der Bushaltestelle, tippt schnell auf dem Handy, schaut hoch, wieder aufs Handy. Ihr Fuß wippt, die Schultern sind hochgezogen, sie atmet laut aus.“ Der oder die Jugendliche nennt ein mögliches Gefühl und woran er oder sie es merkt. Dann kommt ein Zusatz: Lara wartet auf die Antwort einer Freundin. Ändert sich die Vermutung? Aha: Körperzeichen sind Hinweise, aber ohne Zusammenhang kein Beweis.",
+    "sagen": [
+      "Heute geht es ums Erkennen von Gefühlen. Ich lese dir eine kurze Szene vor, in der kein Gefühlswort vorkommt.",
+      "Welches Gefühl könnte Lara haben, und woran merkst du es? Und wenn sie dabei auf die Antwort einer Freundin wartet?",
+      "Ein Körperzeichen allein sagt wenig, erst mit dem Zusammenhang wird es klarer. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen kein Wort ein, nennt die Fachkraft drei zur Auswahl (genervt, nervös, ungeduldig). Oder sie liest die Szene noch einmal und betont ein Detail, zum Beispiel den wippenden Fuß. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-erkennen"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "gespraech"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Scène sans mot d’émotion",
+      "text": "L’adulte lit une courte scène sans aucun mot d’émotion : « Lara attend à l’arrêt de bus, tape vite sur son téléphone, lève les yeux, regarde de nouveau son téléphone. Son pied bat la mesure, ses épaules sont montées, elle expire bruyamment. » Le ou la jeune nomme une émotion possible et dit à quoi il ou elle la reconnaît. Puis un détail s’ajoute : Lara attend la réponse d’une amie. L’hypothèse change-t-elle ? Le déclic : les signes du corps sont des indices, mais sans contexte, pas une preuve.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la façon de reconnaître les émotions. Je te lis une courte scène où aucun mot d’émotion n’apparaît.",
+        "Quelle émotion Lara pourrait-elle ressentir, et à quoi le remarques-tu ? Et si elle attendait en plus la réponse d’une amie ?",
+        "Un signe du corps seul dit peu ; c’est avec le contexte que cela devient plus clair. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de mot, l’adulte en propose trois (agacé, nerveux, impatient). Ou il relit la scène en insistant sur un détail, par exemple le pied qui bat la mesure. « Passe » est permis.",
+      "kurz": "Scène sans mot d’émotion · deviner · le contexte change tout"
+    },
+    "kurz": "Szene ohne Gefühlswort · Gefühl vermuten · Zusatz ändert vieles"
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Vier Wörter, eine Reihenfolge",
+    "text": "Die Fachkraft legt vier Zettel mit Wörtern für Ärger hin und mischt sie: genervt, sauer, wütend, außer sich. Der oder die Jugendliche legt sie von schwach bis stark in eine Reihe und darf umlegen. Dann überlegt er oder sie, welches Wort in eine Lücke zwischen zwei Zetteln passt (zum Beispiel „gereizt“). Aha: Das genauere Wort sagt dem Gegenüber viel mehr als „ich bin schlecht drauf“.",
+    "sagen": [
+      "Heute geht es darum, Gefühle in Worte zu fassen, und zwar möglichst genau. Dazu vier Wörter, die alle mit Ärger zu tun haben.",
+      "Bring sie von schwach bis stark in eine Reihe. Und: Welches Wort passt noch dazwischen?",
+      "Je genauer das Wort, desto besser versteht uns jemand. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Fällt die Reihenfolge schwer, legt die Fachkraft das erste und das letzte Wort hin, und nur die zwei mittleren werden sortiert. Mag der oder die Jugendliche nicht an Ärger denken, tauscht sie die Reihe gegen: schläfrig, müde, erschöpft, am Ende. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "karten",
+      "schreiben"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Quatre mots, un ordre",
+      "text": "L’adulte écrit quatre mots de colère sur quatre papiers et les mélange : agacé, énervé, furieux, hors de soi. Le ou la jeune les range du plus faible au plus fort et peut les déplacer. Ensuite, il ou elle cherche quel mot irait entre deux papiers (par exemple « irrité »). Le déclic : le mot précis en dit bien plus à l’autre que « je suis de mauvaise humeur ».",
+      "sagen": [
+        "Aujourd’hui, on cherche des mots pour dire ce qu’on ressent, le plus précisément possible. Voici quatre mots qui parlent tous de colère.",
+        "Range-les du plus faible au plus fort. Et quel mot irait encore entre deux ?",
+        "Plus le mot est précis, mieux l’autre nous comprend. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si l’ordre est difficile, l’adulte pose le premier et le dernier mot, et seuls les deux du milieu sont à ranger. Si le ou la jeune ne veut pas penser à la colère, l’adulte change de série : somnolent, fatigué, épuisé, à bout. « Passe » est permis.",
+      "kurz": "Quatre mots de colère · du faible au fort · un mot entre deux"
+    },
+    "kurz": "Vier Ärger-Wörter ordnen · schwach bis stark · ein Wort dazwischen"
+  },
+  {
+    "id": "th:gefuehle-ausdruecken-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Wo im Körper sitzt es?",
+    "text": "Die Fachkraft zeichnet einen einfachen Körperumriss auf Papier und erzählt, dass Forschende Hunderte Menschen markieren ließen, wo sie Gefühle im Körper spüren, und die Karten sich überraschend ähnelten. Die Fachkraft markiert zuerst, wo man „aufgeregt vor einem wichtigen Termin“ ist (Bauch, Brust, Hände); der oder die Jugendliche markiert, wo man „sich riesig freut“ oder „genervt ist“. Aha: Der Körper liefert Wörter: Kribbeln, Druck, Enge.",
+    "sagen": [
+      "Heute geht es darum, Gefühle zu zeigen und in Worte zu fassen. Ein Weg dahin führt über den Körper.",
+      "Forschende haben viele Menschen markieren lassen, wo sie Gefühle spüren. Ich zeige dir Aufregung. Wo würde man Freude oder Genervtsein spüren?",
+      "Wer weiß, wo im Körper ein Gefühl sitzt, findet leichter das passende Wort. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht zeichnen, zeigt er oder sie die Stelle mit dem Finger auf dem Umriss. Fällt keine Stelle ein, nennt die Fachkraft drei Körperwörter (Kribbeln, Kloß, Druck) zum Zuordnen. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "gefuehle-ausdruecken"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "malen",
+      "denkmodell"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Où ça se sent dans le corps ?",
+      "text": "L’adulte dessine un contour simple de corps sur une feuille et raconte que des chercheurs ont demandé à des centaines de personnes de colorier les endroits où elles ressentent leurs émotions : les cartes se ressemblaient étonnamment. L’adulte marque d’abord où se ressent « l’excitation avant un rendez-vous important » (ventre, poitrine, mains) ; le ou la jeune marque où l’on ressent « une grande joie » ou « l’agacement ». Le déclic : le corps fournit des mots : fourmillement, pression, serrement.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la façon de montrer ses émotions et de les mettre en mots. Un chemin passe par le corps.",
+        "Des chercheurs ont fait marquer où l’on ressent les émotions. Voici l’excitation. Où ressentirait-on la joie ou l’agacement ?",
+        "Quand on sait où on le ressent, on trouve plus facilement le mot. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas dessiner, il ou elle montre l’endroit du doigt sur le contour. S’il ou elle ne trouve pas, l’adulte propose trois mots du corps (fourmillement, boule, pression) à associer. « Passe » est permis.",
+      "kurz": "Contour du corps · marquer où l’on ressent une émotion"
+    },
+    "kurz": "Körperumriss zeichnen · markieren, wo man ein Gefühl spürt"
+  },
+  {
+    "id": "th:selbstregulation-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Dasselbe Ärgernis, zwei Tage",
+    "text": "Die Fachkraft schildert ein kleines Ärgernis: In der Schlange vor der Kantine drängelt sich jemand vor. Tag 1: gut geschlafen, satt, entspannt. Tag 2: kaum geschlafen, Hunger. Der oder die Jugendliche zeigt mit den Fingern auf einer Skala von 0 bis 10, wie sehr man sich jeweils ärgern würde (erfunden genügt); die Fachkraft nennt ihre Zahlen. Aha: Der Anlass bleibt gleich, die Stärke nicht. Studien deuten darauf hin: Nach wenig Schlaf reagiert das Gehirn auf Unangenehmes oft stärker.",
+    "sagen": [
+      "Heute geht es darum, mit starken Gefühlen umzugehen und sich zu beruhigen. Dazu zuerst eine kleine Frage aus dem Alltag.",
+      "Jemand drängelt sich in der Schlange vor. Einmal bist du ausgeschlafen und satt, einmal müde und hungrig. Wie stark wäre der Ärger, von 0 bis 10?",
+      "Gleicher Anlass, andere Stärke: Wie heftig ein Gefühl wird, hängt von mehr ab als vom Ereignis. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Nennt der oder die Jugendliche keine Zahl, zeigt er oder sie die Stärke mit der Hand an: tief für wenig, hoch für viel. Passt das Beispiel nicht, wählt die Fachkraft ein anderes Ärgernis: das WLAN fällt aus oder der Bus fährt vor der Nase weg.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "denkmodell"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Même agacement, deux jours",
+      "text": "L’adulte décrit un petit agacement : à la cantine, quelqu’un passe devant tout le monde dans la file. Jour 1 : bien dormi, bien mangé, détendu. Jour 2 : très peu dormi, la faim au ventre. Le ou la jeune montre avec les doigts, de 0 à 10, à quel point on s’énerverait chaque fois (inventé suffit) ; l’adulte donne ses chiffres. Le déclic : l’événement reste le même, pas l’intensité. Des études indiquent qu’après peu de sommeil, le cerveau réagit souvent plus fort à ce qui est désagréable.",
+      "sagen": [
+        "Aujourd’hui, on parle des émotions fortes et de la façon de se calmer. Pour commencer, une petite question du quotidien.",
+        "Quelqu’un te passe devant dans la file. Un jour, tu as bien dormi et bien mangé ; un autre, peu dormi et faim. Quel agacement, de 0 à 10 ?",
+        "Même événement, autre intensité : la force d’une émotion dépend de plus que de l’événement. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne donne pas de chiffre, il ou elle montre l’intensité avec la main : bas pour peu, haut pour beaucoup. Si l’exemple ne convient pas, l’adulte en choisit un autre : le wifi qui coupe ou le bus qui part sous le nez. « Passe » est permis.",
+      "kurz": "Même agacement, deux jours · agacement de 0 à 10"
+    },
+    "kurz": "Gleiches Ärgernis, zwei Tage · Ärger von 0 bis 10 zeigen"
+  },
+  {
+    "id": "th:selbstregulation-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Wellen und Surfen",
+    "text": "Die Fachkraft schreibt einen Satz groß auf Papier: „Du kannst die Wellen nicht anhalten, aber du kannst lernen zu surfen.“ (vom Achtsamkeitslehrer Jon Kabat-Zinn). Der oder die Jugendliche überlegt, was mit „Wellen“ gemeint sein könnte, und zeichnet eine Welle: Wo steigt sie, wo ist die Spitze, wo ebbt sie ab? Die Fachkraft ergänzt: Starke Gefühle kommen oft wie Wellen und gehen auch wieder.",
+    "sagen": [
+      "Heute geht es darum, mit starken Gefühlen umzugehen und sich zu beruhigen. Ich habe dazu einen Satz mitgebracht.",
+      "„Du kannst die Wellen nicht anhalten, aber du kannst lernen zu surfen.“ Was könnten die Wellen sein? Zeichne eine: Wo steigt sie, wo geht sie zurück?",
+      "Gefühle kommen und gehen, und man kann lernen, auf ihnen zu bleiben. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Kann der oder die Jugendliche mit dem Satz nichts anfangen, zeichnet die Fachkraft die Welle und fragt nur: Wo wäre sie am höchsten? Oder sie gibt ein Beispiel (ein Anruf, auf den man wartet) und lässt die Spitze einzeichnen. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstregulation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "denkmodell",
+      "malen"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Les vagues et le surf",
+      "text": "L’adulte écrit une phrase en grand sur une feuille : « On ne peut pas arrêter les vagues, mais on peut apprendre à surfer. » (de Jon Kabat-Zinn, enseignant de la pleine conscience). Le ou la jeune réfléchit à ce que les « vagues » pourraient être et dessine une vague : où monte-t-elle, où est le sommet, où retombe-t-elle ? L’adulte ajoute : les émotions fortes arrivent souvent comme des vagues, et elles repartent aussi.",
+      "sagen": [
+        "Aujourd’hui, on parle de la façon de gérer les émotions fortes et de se calmer. J’ai apporté une phrase pour cela.",
+        "« On ne peut pas arrêter les vagues, mais on peut apprendre à surfer. » Que seraient les vagues ? Dessines-en une : où monte-t-elle, où redescend-elle ?",
+        "Les émotions viennent et repartent, et on peut apprendre à tenir dessus. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne sait pas quoi faire de la phrase, l’adulte dessine la vague et demande seulement : où serait-elle la plus haute ? Ou il donne un exemple (un appel qu’on attend) et fait marquer le sommet. « Passe » est permis.",
+      "kurz": "Phrase sur les vagues · dessiner une vague · sommet et descente"
+    },
+    "kurz": "Satz über Wellen · Welle zeichnen · Spitze und Abstieg zeigen"
+  },
+  {
+    "id": "th:impulskontrolle-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Lies nicht, sag die Farbe",
+    "text": "Die Fachkraft schreibt mit Buntstiften fünf Farbwörter, jedes in einer anderen Farbe als das Wort selbst (ROT in Blau, BLAU in Orange, GRÜN in Violett …; kein Rot neben Grün, wegen Farbsehschwäche). Der oder die Jugendliche sagt zügig nur die Farbe der Schrift, nicht das, was dort steht. Die meisten stolpern, auch Erwachsene; die Fachkraft probiert danach selbst eine andere Reihe. Aha: Das Lesen läuft von allein, und das Stoppen kostet einen kurzen Moment.",
+    "sagen": [
+      "Heute geht es ums Stoppen: erst anhalten, dann handeln. Dazu ein kurzer Test, bei dem die meisten ins Stolpern kommen.",
+      "Ich habe Farbwörter in anderen Farben geschrieben. Sag nur, in welcher Farbe das Wort geschrieben ist, nicht, was dort steht.",
+      "Das Lesen läuft von allein, das Stoppen braucht einen Moment. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Ärgert sich der oder die Jugendliche über Fehler, sagt die Fachkraft: Genau dafür ist der Test gebaut. Sie probiert dann selbst eine Reihe und stolpert meist auch. Oder die Reihe wird kürzer und langsamer, und er oder sie zeigt die Farbe nur mit dem Finger. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "sinne",
+      "spiel"
+    ],
+    "material": [
+      "papier",
+      "buntstifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Ne lis pas, dis la couleur",
+      "text": "L’adulte écrit avec des crayons de couleur cinq noms de couleurs, chacun dans une autre couleur que le mot lui-même (ROUGE en bleu, BLEU en orange, VERT en violet … ; pas de rouge à côté de vert, à cause du daltonisme). Le ou la jeune dit rapidement seulement la couleur de l’écriture, pas ce qui est écrit. La plupart des gens trébuchent, les adultes aussi ; l’adulte essaie ensuite lui-même une autre série. Le déclic : la lecture se fait toute seule, et s’arrêter demande un court instant.",
+      "sagen": [
+        "Aujourd’hui, on parle de s’arrêter avant d’agir. Pour commencer, un court test où la plupart des gens trébuchent.",
+        "J’ai écrit des noms de couleurs avec d’autres couleurs. Dis seulement la couleur dans laquelle le mot est écrit, pas ce qu’il dit.",
+        "Lire se fait tout seul, mais s’arrêter demande un instant. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune s’énerve de ses erreurs, l’adulte dit que le test est justement fait pour cela. Il essaie ensuite une série lui-même et trébuche en général aussi. Ou la série est raccourcie et ralentie, et le ou la jeune montre la couleur du doigt. « Passe » est permis.",
+      "kurz": "Mots de couleur mal coloriés · dire la couleur de l’écriture"
+    },
+    "kurz": "Farbwörter in falscher Farbe · nur die Schriftfarbe sagen"
+  },
+  {
+    "id": "th:impulskontrolle-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Eine Fünftelsekunde",
+    "text": "Die Fachkraft hält ein Lineal senkrecht (die Null unten). Der oder die Jugendliche hält Daumen und Zeigefinger offen knapp unter das untere Ende, ohne es zu berühren. Die Fachkraft lässt ohne Ansage los, und er oder sie fängt es. An der Fangstelle liest man ab: Etwa 20 Zentimeter entsprechen einer Fünftelsekunde (10 cm ≈ 0,14 s, 30 cm ≈ 0,25 s). Zwei, drei Versuche, dann tauschen die Rollen. Aha: Zwischen Sehen und Handeln bleibt erstaunlich wenig Zeit.",
+    "sagen": [
+      "Heute geht es ums Stoppen und Erst-Denken. Dazu messen wir etwas, das viel schneller ist, als man denkt.",
+      "Halte Daumen und Zeigefinger offen unter das Lineal. Ich lasse ohne Ansage los, du fängst es. Dann lesen wir ab, wie lange es gedauert hat.",
+      "So kurz ist die Lücke zwischen Sehen und Handeln, und in ihr passiert das Stoppen. Darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Fällt das Lineal ganz durch oder ärgert sich der oder die Jugendliche, geht es nicht um Treffer: Die Fachkraft fängt selbst und zeigt ihren eigenen Wert (meist ähnlich, etwa 15 bis 25 Zentimeter). Mag er oder sie die Finger nicht so nah halten, lässt er oder sie los, und die Fachkraft fängt. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 1,
+    "format": [
+      "bewegung",
+      "sinne"
+    ],
+    "material": [
+      "lineal"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Un cinquième de seconde",
+      "text": "L’adulte tient une règle à la verticale (le zéro en bas). Le ou la jeune tient le pouce et l’index ouverts juste sous le bas de la règle, sans la toucher. L’adulte lâche sans prévenir, et le ou la jeune l’attrape. À l’endroit de la prise, on lit : environ 20 centimètres correspondent à un cinquième de seconde (10 cm ≈ 0,14 s, 30 cm ≈ 0,25 s). Deux ou trois essais, puis on échange les rôles. Le déclic : entre voir et agir, il reste étonnamment peu de temps.",
+      "sagen": [
+        "Aujourd’hui, on parle de s’arrêter et de réfléchir avant d’agir. On va mesurer quelque chose de bien plus rapide qu’on ne le croit.",
+        "Tiens le pouce et l’index ouverts sous la règle. Je lâche sans prévenir, tu l’attrapes. Ensuite, on lit combien de temps cela a pris.",
+        "Voilà à quel point l’écart entre voir et agir est court, et c’est là que se joue l’arrêt. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si la règle tombe entièrement ou si le ou la jeune s’énerve, ce n’est pas une question de réussite : l’adulte attrape lui-même et montre sa propre valeur (en général semblable, 15 à 25 centimètres). Si le ou la jeune n’aime pas tenir les doigts si près, il ou elle lâche la règle et l’adulte l’attrape. « Passe » est permis.",
+      "kurz": "Attraper la règle · lire l’endroit de la prise · échanger"
+    },
+    "kurz": "Lineal fangen · Fangstelle ablesen · Rollen tauschen"
+  },
+  {
+    "id": "th:aufmerksamkeit-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Rot sehen, Blau übersehen",
+    "text": "Die Fachkraft wählt zwei Farben, die im Raum mehrfach vorkommen (hier Rot und Blau), und bittet: „Schau 15 Sekunden durch den Raum und merk dir alles, was rot ist.“ Dann schließt der oder die Jugendliche die Augen und nennt alles Blaue im Raum. Meist fällt das schwer. Augen auf: Wie viel Blaues war da? Aha: Man sieht vor allem, wonach man sucht, der Rest rauscht durch.",
+    "sagen": [
+      "Heute geht es darum, bei der Sache zu bleiben und hinzuhören. Dazu ein kleiner Test mit den Augen.",
+      "Schau dich 15 Sekunden um und merk dir alles, was rot ist. Jetzt Augen zu: Was war alles blau?",
+      "Man sieht, wonach man sucht, und übersieht den Rest. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche die Augen nicht schließen, dreht er oder sie sich zur Wand oder legt die Hände vors Gesicht. Gibt es kaum Blaues im Raum, nimmt die Fachkraft zwei andere Farben, von denen jeweils mehrere Dinge zu sehen sind. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "sinne",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Voir le rouge, rater le bleu",
+      "text": "L’adulte choisit deux couleurs présentes plusieurs fois dans la pièce (ici le rouge et le bleu) et demande : « Regarde autour de toi pendant 15 secondes et retiens tout ce qui est rouge. » Puis le ou la jeune ferme les yeux et nomme tout ce qui est bleu dans la pièce. En général, c’est difficile. Yeux ouverts : combien de bleu y avait-il ? Le déclic : on voit surtout ce qu’on cherche, le reste passe sans qu’on le remarque.",
+      "sagen": [
+        "Aujourd’hui, on parle de la façon de rester dans ce qu’on fait et de bien écouter. Pour commencer, un petit test avec les yeux.",
+        "Regarde autour de toi pendant 15 secondes et retiens tout ce qui est rouge. Maintenant, yeux fermés : qu’y avait-il de bleu ?",
+        "On voit ce qu’on cherche et on rate le reste. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas fermer les yeux, il ou elle se tourne vers le mur ou met les mains devant le visage. S’il y a peu de bleu dans la pièce, l’adulte prend deux autres couleurs, chacune présente sur plusieurs objets. « Passe » est permis.",
+      "kurz": "Chercher tout le rouge · yeux fermés · citer le bleu"
+    },
+    "kurz": "Alles Rote suchen · Augen zu · Blaues nennen"
+  },
+  {
+    "id": "th:aufmerksamkeit-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Genau hinhören",
+    "text": "Die Fachkraft stellt langsam zwei Fragen zum Hinhören: „Wie viele Tiere jeder Art nahm Moses mit auf die Arche?“ und „Wie viel Erde ist in einem Loch, das einen Meter lang, breit und tief ist?“ Der oder die Jugendliche antwortet. Die meisten sagen „zwei“ und „einen Kubikmeter“ und merken nicht, was nicht stimmt. Dann gemeinsam: Was war an der Frage seltsam? Aha: Das Gehirn ergänzt, was es erwartet; selbst Erwachsene hören nicht genau hin.",
+    "sagen": [
+      "Heute geht es darum, genau hinzuhören und bei der Sache zu bleiben. Dazu zwei kurze Fragen. Antworte einfach spontan.",
+      "Erste Frage: Wie viele Tiere jeder Art nahm Moses mit auf die Arche? Zweite Frage: Wie viel Erde ist in einem Loch, ein Meter lang, breit und tief?",
+      "Das Gehirn ergänzt gern, was es erwartet. Genau darum geht es jetzt weiter: wirklich hinhören."
+    ],
+    "wennEsKippt": "Ärgert sich der oder die Jugendliche über die Trickfrage, bestätigt die Fachkraft: Sie ist so gebaut, dass die meisten hereinfallen. Sie verrät die Antworten selbst (keine, es war Noah; keine, ein Loch enthält keine Erde). Oder sie wiederholt jede Frage langsam und lässt das Wort nennen, das nicht passt. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "aufmerksamkeit"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "spiel"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Écouter vraiment",
+      "text": "L’adulte pose lentement deux questions pour tester l’écoute : « Combien d’animaux de chaque espèce Moïse a-t-il emmenés dans l’arche ? » et « Quelle quantité de terre y a-t-il dans un trou d’un mètre de long, de large et de profondeur ? » Le ou la jeune répond. La plupart des gens disent « deux » et « un mètre cube » sans voir ce qui cloche. Ensuite, ensemble : qu’avait d’étrange la question ? Le déclic : le cerveau complète ce qu’il attend ; même les adultes n’écoutent pas toujours précisément.",
+      "sagen": [
+        "Aujourd’hui, on parle d’écouter précisément et de rester dans ce qu’on fait. Voici deux questions courtes. Réponds spontanément.",
+        "D’abord : combien d’animaux de chaque espèce Moïse a-t-il pris dans l’arche ? Ensuite : combien de terre dans un trou d’un mètre sur un mètre sur un mètre ?",
+        "Le cerveau complète volontiers ce qu’il attend. C’est justement de cela qu’il s’agit maintenant : écouter vraiment."
+      ],
+      "wennEsKippt": "Si le ou la jeune s’énerve de cette question piège, l’adulte confirme qu’elle est faite pour que la plupart des gens se trompent. Il donne lui-même les réponses (aucun, c’était Noé ; aucune, un trou ne contient pas de terre). Ou il répète chaque question lentement et fait nommer le mot qui ne va pas. « Passe » est permis.",
+      "kurz": "Deux questions d’écoute · répondre · qu’y avait-il d’étrange ?"
+    },
+    "kurz": "Zwei Hör-Fragen · Antwort geben · was war seltsam?"
+  },
+  {
+    "id": "th:ausdauer-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Eine Stunde Laufenlernen",
+    "text": "Die Fachkraft schreibt drei Angaben auf Papier: „rund 2400 Schritte · etwa 17 Stürze · 1 Stunde“ und fragt, was das beschreibt. Nach dem Raten die Auflösung: Forschende haben gemessen, was ein Kleinkind beim Laufenlernen im Schnitt in einer Stunde macht. Der oder die Jugendliche überlegt, warum es trotzdem nie aufhört. Aha: Dranbleiben war am Anfang des Lebens selbstverständlich, und es hat gewirkt.",
+    "sagen": [
+      "Heute geht es ums Dranbleiben, auch wenn es nicht gleich klappt. Dazu ein Rätsel mit drei Zahlen.",
+      "Rund 2400 Schritte, etwa 17 Stürze, eine Stunde. Was wird hier gemessen?",
+      "Ein Kleinkind beim Laufenlernen, und es gibt nicht auf. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht raten, verrät die Fachkraft die Auflösung sofort und lässt nur die Zahlen wirken. Wirkt das Beispiel zu kindlich, nimmt sie ein Alltagsbeispiel: ein Skateboard-Trick oder ein Spiellevel, die man Dutzende Male neu versucht. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "denkmodell",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Une heure pour apprendre à marcher",
+      "text": "L’adulte écrit trois indications sur une feuille : « environ 2400 pas · environ 17 chutes · 1 heure » et demande ce que cela décrit. Après la devinette, la solution : des chercheurs ont mesuré ce que fait en moyenne un tout-petit en une heure d’apprentissage de la marche. Le ou la jeune se demande pourquoi le tout-petit ne s’arrête pourtant jamais. Le déclic : persévérer allait de soi au début de la vie, et cela a marché.",
+      "sagen": [
+        "Aujourd’hui, on parle de persévérer, même quand cela ne marche pas tout de suite. Pour commencer, une devinette avec trois chiffres.",
+        "Environ 2400 pas, environ 17 chutes, une heure. Qu’est-ce qu’on mesure ici ?",
+        "Un tout-petit qui apprend à marcher, et qui n’abandonne pas. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas deviner, l’adulte donne tout de suite la solution et laisse agir les chiffres. Si l’exemple paraît trop enfantin, il prend un exemple du quotidien : une figure de skateboard ou un niveau de jeu qu’on recommence des dizaines de fois. « Passe » est permis.",
+      "kurz": "Trois chiffres à deviner · un tout-petit apprend à marcher"
+    },
+    "kurz": "Drei Zahlen raten · Kleinkind lernt laufen · nie aufgegeben"
+  },
+  {
+    "id": "th:ausdauer-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Der Name mit der anderen Hand",
+    "text": "Die Fachkraft und der oder die Jugendliche schreiben je dreimal untereinander den eigenen Vornamen, mit der Hand, mit der sie sonst nicht schreiben. Danach vergleichen sie den ersten und den dritten Namen: Was ist besser geworden, was nicht? Meist ist der dritte lesbarer. Aha: Schon nach wenigen Versuchen sieht man, dass Dranbleiben etwas bringt, auch wenn es zuerst schief aussieht.",
+    "sagen": [
+      "Heute geht es ums Dranbleiben. Dazu ein kurzer Versuch, bei dem es nicht schön aussehen muss.",
+      "Schreib deinen Vornamen dreimal untereinander, mit der Hand, mit der du sonst nicht schreibst. Ich mache es auch.",
+      "Schau, was beim dritten Namen schon anders ist als beim ersten. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Ärgert sich der oder die Jugendliche über das Gekritzel, zeigt die Fachkraft ihr eigenes: Es geht nicht um schöne Schrift, nur um den Vergleich. Geht Schreiben mit der anderen Hand gar nicht, malen beide dreimal eine Welle oder Spirale. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "ausdauer"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "schreiben"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Son prénom de l’autre main",
+      "text": "L’adulte et le ou la jeune écrivent chacun trois fois leur prénom l’un sous l’autre, avec la main avec laquelle ils n’écrivent pas d’habitude. Ensuite, ils comparent le premier et le troisième : qu’est-ce qui s’est amélioré, qu’est-ce qui ne l’est pas ? Le plus souvent, le troisième est plus lisible. Le déclic : après quelques essais seulement, on voit que persévérer sert à quelque chose, même si cela paraît bancal au début.",
+      "sagen": [
+        "Aujourd’hui, on parle de persévérer. Pour commencer, un petit essai qui n’a pas besoin d’être beau.",
+        "Écris ton prénom trois fois l’un sous l’autre, avec la main avec laquelle tu n’écris pas d’habitude. Moi aussi.",
+        "Regarde ce qui est déjà différent entre le premier et le troisième. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune s’énerve du gribouillis, l’adulte montre le sien : ce n’est pas une question de belle écriture, seulement de comparaison. Si écrire de l’autre main est impossible, chacun dessine trois fois une vague ou une spirale. « Passe » est permis.",
+      "kurz": "Prénom de l’autre main · trois fois · comparer le 1er et le 3e"
+    },
+    "kurz": "Name mit der anderen Hand · dreimal · ersten und dritten vergleichen"
+  },
+  {
+    "id": "th:kooperation-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Zusammen geschätzt",
+    "text": "Die Fachkraft nimmt ein dickes Buch mit nummerierten Seiten. Beide schätzen im Stillen, wie viele Seiten es hat, und sagen die Zahl auf „drei“ gleichzeitig. Die Fachkraft rechnet den Mittelwert aus, dann wird nachgesehen, wie nah die beiden Schätzungen und der Mittelwert an der echten Zahl liegen. Aha: Zwei verschiedene Schätzungen zusammen liegen oft näher an der Wahrheit als eine allein. Berühmtes Beispiel: Auf einem Jahrmarkt schätzten fast 800 Leute das Gewicht eines Ochsen, der Durchschnitt lag nur um etwa ein Pfund daneben.",
+    "sagen": [
+      "Heute geht es ums Zusammenarbeiten: Was geht zu zweit besser als allein? Dazu eine kleine Schätzung.",
+      "Wie viele Seiten hat dieses Buch? Denk dir eine Zahl, auf drei sagen wir sie gleichzeitig. Dann nehmen wir den Mittelwert und schauen nach.",
+      "Zwei Köpfe liegen oft näher an der Wahrheit als einer. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Passt kein Buch oder mag der oder die Jugendliche nicht laut raten, schätzen beide, wie viele Schritte es von der Tür zum Fenster sind, und zählen sie gemeinsam nach. Liegt eine Schätzung weit daneben, sagt die Fachkraft: Genau deshalb hilft der Mittelwert.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "denkmodell",
+      "spiel"
+    ],
+    "material": [
+      "buecher"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Estimer à deux",
+      "text": "L’adulte prend un gros livre aux pages numérotées. Chacun estime en silence combien de pages compte ce livre, et tous deux disent leur chiffre en même temps sur « trois ». L’adulte calcule la moyenne des deux chiffres, puis on vérifie à quelle distance du vrai chiffre se trouvent les deux estimations et la moyenne. Le déclic : deux estimations différentes réunies sont souvent plus proches de la vérité qu’une seule. Exemple célèbre : lors d’une foire, près de 800 personnes ont estimé le poids d’un bœuf, et la moyenne n’était qu’à environ une livre de la réalité.",
+      "sagen": [
+        "Aujourd’hui, on parle de travailler ensemble : qu’est-ce qui marche mieux à deux que seul ? Pour commencer, une petite estimation.",
+        "Combien de pages a ce livre ? Pense à un chiffre, et sur trois, on le dit en même temps. Ensuite, on fait la moyenne et on vérifie.",
+        "Deux têtes sont souvent plus près de la vérité qu’une seule. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "S’il n’y a pas de livre ou si le ou la jeune ne veut pas deviner à voix haute, chacun estime le nombre de pas entre la porte et la fenêtre, et on les compte ensemble. Si une estimation est très éloignée, l’adulte dit que c’est justement pour cela que la moyenne aide. « Passe » est permis.",
+      "kurz": "Estimer les pages · ensemble, sur trois · vérifier la moyenne"
+    },
+    "kurz": "Seiten schätzen · beide zugleich · Mittelwert prüfen"
+  },
+  {
+    "id": "th:kooperation-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Im Takt, ohne Worte",
+    "text": "Die Fachkraft klopft mit dem Finger leise einen ruhigen Takt auf den Tisch. Der oder die Jugendliche steigt ein, ohne Worte. Nach etwa 20 Sekunden hören beide gleichzeitig auf, ohne Zeichen, nur durch Aufeinander-Achten. Dann gibt der oder die Jugendliche den Takt vor (auch schneller oder langsamer), und die Fachkraft folgt. Aha: Studien deuten darauf hin, dass Menschen, die zusammen im Takt etwas tun (gehen, singen), danach eher zusammenarbeiten.",
+    "sagen": [
+      "Heute geht es ums Zusammenarbeiten. Dazu fangen wir ohne Worte an, mit einem Takt auf dem Tisch.",
+      "Ich klopfe leise einen Takt, steig ein, wenn du magst. Nach einer Weile hören wir gleichzeitig auf, ohne Zeichen. Danach gibst du den Takt vor.",
+      "Wer zusammen im Takt ist, arbeitet danach oft leichter zusammen. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht klopfen, wippt er oder sie mit dem Fuß, oder er oder sie hört nur zu und zählt mit, während die Fachkraft klopft. Fällt der Takt auseinander, passt sich die Fachkraft an und lässt ihn ruhig langsamer werden. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 1,
+    "format": [
+      "musik",
+      "bewegung"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Au même rythme, sans mots",
+      "text": "L’adulte tapote doucement du doigt un rythme calme sur la table. Le ou la jeune le rejoint, sans mots. Après environ 20 secondes, tous deux s’arrêtent en même temps, sans signal, en se guettant seulement. Puis le ou la jeune donne le rythme (plus vite ou plus lentement) et l’adulte suit. Le déclic : des études suggèrent que les gens qui font quelque chose ensemble en rythme (marcher, chanter) coopèrent ensuite plus facilement.",
+      "sagen": [
+        "Aujourd’hui, on parle de travailler ensemble. Pour commencer, sans mots, avec un rythme sur la table.",
+        "Je tapote doucement un rythme ; joins-toi à moi si tu veux. Après un moment, on s’arrête en même temps, sans signal. Ensuite, c’est toi qui donnes le rythme.",
+        "Quand on est au même rythme, on coopère souvent plus facilement ensuite. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas tapoter, il ou elle bat la mesure du pied, ou se contente d’écouter et de compter pendant que l’adulte tapote. Si le rythme part dans tous les sens, l’adulte s’adapte et le laisse ralentir tranquillement. « Passe » est permis.",
+      "kurz": "Rythme sur la table · s’arrêter ensemble · donner le rythme"
+    },
+    "kurz": "Takt auf den Tisch klopfen · zusammen aufhören · Takt vorgeben"
+  },
+  {
+    "id": "th:konflikte-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Eine Orange, zwei Wünsche",
+    "text": "Die Fachkraft erzählt: Diogo und Mehdi wollen beide die letzte Orange, und zwar ganz. Sie teilen sie in der Mitte, und trotzdem sind beide unzufrieden. Der oder die Jugendliche rät, was jeder gebraucht haben könnte. Falls niemand darauf kommt: Der eine wollte nur den Saft, der andere nur die Schale für einen Kuchen. Aha: Wer streitet, will oft Verschiedenes; wer nachfragt, wofür, findet manchmal eine Lösung, bei der beide mehr bekommen.",
+    "sagen": [
+      "Heute geht es darum, wie man einen Streit lösen kann. Ich erzähle dir dazu ein kleines Rätsel.",
+      "Diogo und Mehdi wollen beide die letzte Orange, ganz. Sie teilen sie in der Mitte, und trotzdem sind beide unzufrieden. Was hat jeder wohl gebraucht?",
+      "Oft wollen zwei etwas Verschiedenes, auch wenn es gleich aussieht. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Kommt der oder die Jugendliche nicht darauf, gibt die Fachkraft einen Hinweis: Wofür kann man eine Orange brauchen? Oder sie verrät die Auflösung (Saft und Schale) und bittet um ein eigenes Beispiel, in dem zwei dasselbe zu wollen scheinen, etwa den Platz am Fenster. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "denkmodell"
+    ],
+    "material": [],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Une orange, deux envies",
+      "text": "L’adulte raconte : Diogo et Mehdi veulent tous les deux la dernière orange, en entier. Ils la partagent en deux, et pourtant les deux sont mécontents. Le ou la jeune devine ce que chacun a pu vouloir. Si personne ne trouve : l’un voulait seulement le jus, l’autre seulement le zeste pour un gâteau. Le déclic : ceux qui se disputent veulent souvent des choses différentes ; en demandant « pour quoi faire », on trouve parfois une solution où chacun reçoit davantage.",
+      "sagen": [
+        "Aujourd’hui, on parle de la façon de résoudre un conflit. Je te raconte une petite énigme.",
+        "Diogo et Mehdi veulent tous deux la dernière orange, en entier. Ils la coupent en deux, et les deux sont pourtant mécontents. Que voulait chacun ?",
+        "Souvent, deux personnes veulent des choses différentes, même si cela se ressemble. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve pas, l’adulte donne un indice : à quoi peut servir une orange ? Ou il donne la solution (jus et zeste) et demande un exemple où deux personnes semblent vouloir la même chose, comme la place près de la fenêtre. « Passe » est permis.",
+      "kurz": "Orange partagée, tous mécontents · que voulait chacun ?"
+    },
+    "kurz": "Orange geteilt, trotzdem unzufrieden · was brauchte jeder?"
+  },
+  {
+    "id": "th:konflikte-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Öl oder Wasser?",
+    "text": "Die Fachkraft legt zwei Zettel hin: „Öl ins Feuer“ und „Wasser drauf“. Sie liest vier Sätze, die in einem Streit fallen können, und der oder die Jugendliche legt jeden Satz zu einem der Zettel: „Du hörst mir nie zu!“ · „Mich nervt es, wenn dein Handy läuft, während ich rede.“ · „Immer musst du das machen!“ · „Lass uns zwei Minuten Pause machen, ich bin gerade zu sauer.“ Dann: Was macht den Unterschied? Aha: Schon ein Wort wie „nie“ oder „immer“ kann einen Streit größer machen.",
+    "sagen": [
+      "Heute geht es darum, Streit zu lösen, oder besser: ihn nicht größer zu machen. Dazu vier Sätze.",
+      "Ich lese Sätze vor, die in einem Streit fallen können. Legst du sie zu „Öl ins Feuer“ oder zu „Wasser drauf“? Und was macht den Unterschied?",
+      "Schon kleine Wörter verändern, wie ein Streit weitergeht. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Sagt der oder die Jugendliche „kommt drauf an“, nimmt die Fachkraft das ernst und fragt, worauf: Ein „eher“ reicht. Erinnert ein Satz an echten Streit und wird es still, geht sie zum nächsten Satz weiter. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "karten",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Attiser ou apaiser ?",
+      "text": "L’adulte pose deux papiers : « De l’huile sur le feu » et « Calmer le jeu ». Il lit quatre phrases qui peuvent tomber pendant une dispute, et le ou la jeune pose chaque phrase sur l’un des papiers : « Tu ne m’écoutes jamais ! » · « Ça m’énerve quand ton téléphone sonne pendant que je parle. » · « C’est toujours toi qui dois faire ça ! » · « On fait deux minutes de pause, je suis trop à cran. » Ensuite : qu’est-ce qui change tout ? Le déclic : un seul mot comme « jamais » ou « toujours » peut agrandir une dispute.",
+      "sagen": [
+        "Aujourd’hui, on parle de la façon de résoudre une dispute, ou plutôt de ne pas l’aggraver. Pour cela, quatre phrases.",
+        "Je lis des phrases qui peuvent tomber dans une dispute. Les poses-tu sur « de l’huile sur le feu » ou « calmer le jeu » ? Et qu’est-ce qui change tout ?",
+        "De petits mots changent déjà la suite d’une dispute. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune dit « ça dépend », l’adulte le prend au sérieux et demande de quoi : un « plutôt » suffit. Si une phrase rappelle une vraie dispute et que le silence s’installe, l’adulte passe à la phrase suivante. « Passe » est permis.",
+      "kurz": "Phrases de dispute · attiser ou apaiser ? · la différence ?"
+    },
+    "kurz": "Streit-Sätze hören · Öl oder Wasser? · was macht den Unterschied?"
+  },
+  {
+    "id": "th:kommunikation-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Wie lang ist „gleich“?",
+    "text": "Die Fachkraft zeichnet eine Linie von 0 bis 60 Minuten und liest eine Nachricht vor: „Bin gleich da.“ Der oder die Jugendliche macht ein Kreuz: Wie viele Minuten meint das? Danach macht die Fachkraft ihres in einer anderen Farbe, ehrlich und nicht absichtlich anders. Oft liegen die Kreuze weit auseinander. Liegen sie nah beieinander, folgt ein zweites Wort, zum Beispiel „später“. Aha: Dasselbe Wort bedeutet für zwei Menschen Verschiedenes, darum hilft eine genaue Angabe.",
+    "sagen": [
+      "Heute geht es ums Reden und Verstehen und darum, genau zu sagen, was man meint. Dazu eine Nachricht.",
+      "Jemand schreibt dir: „Bin gleich da.“ Mach auf der Linie ein Kreuz: Wie viele Minuten meint das? Danach mache ich meines.",
+      "Dasselbe Wort, zwei verschiedene Bedeutungen. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht ankreuzen, sagt er oder sie die Minutenzahl laut. Liegen beide Kreuze nah beieinander, nimmt die Fachkraft „bald“ oder „in einer Weile“ als zweites Wort, bis die Zahlen auseinanderliegen. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "ankreuzen",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Combien dure « tout de suite » ?",
+      "text": "L’adulte trace une ligne de 0 à 60 minutes et lit un message : « J’arrive tout de suite. » Le ou la jeune met une croix : combien de minutes cela veut-il dire ? Ensuite, l’adulte met la sienne d’une autre couleur, honnêtement et pas exprès différente. Souvent, les croix sont très éloignées. Si elles sont proches, on passe à un deuxième mot, par exemple « plus tard ». Le déclic : le même mot signifie des choses différentes pour deux personnes, c’est pourquoi une précision aide.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la communication : se parler, se comprendre, dire précisément ce qu’on veut dire. Pour commencer, un message.",
+        "Quelqu’un t’écrit : « J’arrive tout de suite. » Mets une croix sur la ligne : combien de minutes cela veut-il dire ? Ensuite, je mets la mienne.",
+        "Le même mot, deux sens différents. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas cocher, il ou elle dit le nombre de minutes à voix haute. Si les deux croix sont proches, l’adulte prend « bientôt » ou « un petit moment » comme deuxième mot, jusqu’à ce que les chiffres divergent. « Passe » est permis.",
+      "kurz": "« J’arrive tout de suite » · croix sur la ligne · comparer"
+    },
+    "kurz": "„Bin gleich da“ · Minuten auf Linie ankreuzen · vergleichen"
+  },
+  {
+    "id": "th:kommunikation-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Zwei Nachrichten",
+    "text": "Die Fachkraft schreibt zwei Nachrichten aus einem Gruppenchat auf Papier. A: „Kann mir mal jemand helfen?“ B: „Ich verstehe die Bruch-Aufgabe in Mathe nicht. Hat morgen in der Pause jemand zehn Minuten, sie mir zu erklären?“ Der oder die Jugendliche tippt, auf welche eher jemand antwortet und woran das liegt. Was fehlt bei A? Aha: Wer genau sagt, was gebraucht wird und wie viel Zeit es kostet, bekommt eher Hilfe, weil niemand raten muss.",
+    "sagen": [
+      "Heute geht es ums Reden und darum, zu sagen, was man braucht. Ich habe zwei Nachrichten aus einem Gruppenchat mitgebracht.",
+      "A: „Kann mir mal jemand helfen?“ B: „Ich verstehe die Bruch-Aufgabe nicht. Hat morgen jemand zehn Minuten für mich?“ Welche bekommt eher Antwort?",
+      "Je klarer die Bitte, desto leichter ist es zu helfen. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Sieht der oder die Jugendliche keinen Unterschied, fragt die Fachkraft: Was müsste jemand bei A zuerst nachfragen? Blockiert das Mathe-Beispiel, wechselt sie zu: „Kann mich wer mitnehmen?“ gegen „Kann mich morgen jemand um 8 Uhr zum Training mitnehmen?“ Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "lesen",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Deux messages",
+      "text": "L’adulte écrit sur une feuille deux messages d’un chat de groupe. A : « Quelqu’un peut m’aider ? » B : « Je ne comprends pas l’exercice sur les fractions de maths. Quelqu’un aurait dix minutes demain à la récré pour me l’expliquer ? » Le ou la jeune devine auquel quelqu’un répondra plus probablement, et pourquoi. Qu’est-ce qui manque dans A ? Le déclic : en disant précisément ce dont on a besoin et combien de temps cela prend, on obtient plus facilement de l’aide, car personne n’a à deviner.",
+      "sagen": [
+        "Aujourd’hui, on s’intéresse à la communication et à la façon de dire clairement ce dont on a besoin. J’ai apporté deux messages d’un chat de groupe.",
+        "A : « Quelqu’un peut m’aider ? » B : « Je ne comprends pas l’exercice sur les fractions. Quelqu’un a dix minutes demain ? » Lequel aura une réponse ?",
+        "Plus la demande est claire, plus il est facile d’aider. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne voit pas de différence, l’adulte demande : que faudrait-il d’abord demander à l’auteur de A ? S’il ou elle bloque sur les maths, l’adulte change d’exemple : « Quelqu’un peut m’emmener ? » contre « Quelqu’un peut m’emmener demain à 8 h à l’entraînement ? » « Passe » est permis.",
+      "kurz": "Deux messages de chat · lequel obtient une réponse ? · pourquoi ?"
+    },
+    "kurz": "Zwei Chatnachrichten lesen · welche wird beantwortet? · warum?"
+  },
+  {
+    "id": "th:selbstbild-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Die Stärken von Yanis",
+    "text": "Die Fachkraft liest über Yanis vor: Er spielt kein Instrument, ist im Sport Durchschnitt, seine Noten sind mittel. Aber er war in zwei Jahren nie zu spät, er kennt die Geburtstage aller Freunde, und wenn jemand traurig ist, setzt er sich einfach dazu. Der oder die Jugendliche nennt die Stärken von Yanis, auch die unscheinbaren, und die Fachkraft schreibt mit. Aha: Viele Stärken stehen in keinem Zeugnis: Verlässlichkeit, Aufmerksamkeit, Mitgefühl.",
+    "sagen": [
+      "Heute geht es darum, die eigenen Stärken zu kennen und sich selbst zu mögen. Dazu erst einmal jemand anderes.",
+      "Das ist Yanis: kein Instrument, Sport nur Durchschnitt, Noten mittel. Aber nie zu spät, kennt alle Geburtstage, setzt sich zu Traurigen. Welche Stärken hat er?",
+      "Viele Stärken stehen in keinem Zeugnis. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Findet der oder die Jugendliche keine Stärke, nennt die Fachkraft die erste („nie zu spät“ heißt: verlässlich), und er oder sie sucht die nächste. Oder er oder sie wählt nur die Stärke, die in einer Freundschaft am wichtigsten wäre. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Les forces de Yanis",
+      "text": "L’adulte lit un portrait de Yanis : il ne joue d’aucun instrument, il est moyen en sport, ses notes sont moyennes. Mais il n’a jamais été en retard en deux ans, il connaît les anniversaires de tous ses amis, et quand quelqu’un est triste, il vient simplement s’asseoir à côté. Le ou la jeune nomme les forces de Yanis, même les discrètes, et l’adulte note. Le déclic : beaucoup de forces ne figurent sur aucun bulletin : la fiabilité, l’attention, l’empathie.",
+      "sagen": [
+        "Aujourd’hui, on parle de connaître ses forces et de s’apprécier. Pour commencer, quelqu’un d’autre.",
+        "Yanis : pas d’instrument, sport moyen, notes moyennes. Mais jamais en retard, tous les anniversaires en tête, assis près de ceux qui vont mal. Ses forces ?",
+        "Beaucoup de forces ne figurent sur aucun bulletin. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de force, l’adulte donne la première (« jamais en retard » veut dire : fiable) et le ou la jeune cherche la suivante. Ou il ou elle choisit seulement la force qui compterait le plus dans une amitié. « Passe » est permis.",
+      "kurz": "Portrait de Yanis · nommer ses forces · même les discrètes"
+    },
+    "kurz": "Yanis kennenlernen · seine Stärken nennen · auch die unscheinbaren"
+  },
+  {
+    "id": "th:selbstbild-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Was würde Sofia sagen?",
+    "text": "Die Fachkraft erzählt: Zoé verhaspelt sich bei einem Vortrag zweimal. Auf dem Heimweg denkt sie: „Ich bin so peinlich, ich kann das einfach nicht.“ Ihre Freundin Sofia merkt, wie es ihr geht. Der oder die Jugendliche schreibt zwei Sprechblasen auf Papier: Was denkt Zoé über sich? Was würde Sofia ihr sagen? Beide Sätze werden verglichen. Aha: Mit sich selbst redet man oft härter als mit einer Freundin, und die zweite Stimme lässt sich üben.",
+    "sagen": [
+      "Heute geht es darum, die eigenen Stärken zu sehen und sich selbst zu mögen. Dazu eine kleine Geschichte.",
+      "Zoé verhaspelt sich im Vortrag und denkt: „Ich bin so peinlich.“ Ihre Freundin Sofia hört zu. Was würde Sofia ihr sagen? Schreib es in eine Sprechblase.",
+      "Mit sich selbst redet man oft härter als mit einer Freundin. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Hält der oder die Jugendliche Sofias Satz für Kitsch, fragt die Fachkraft: Wie würdest du es sagen, ohne dass es kitschig klingt? Mag er oder sie nicht schreiben, sagt er oder sie den Satz laut, und die Fachkraft schreibt ihn in die Sprechblase. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "schreiben",
+      "comic"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Que dirait Sofia ?",
+      "text": "L’adulte raconte : Zoé s’emmêle deux fois pendant un exposé. Sur le chemin du retour, elle pense : « Je suis ridicule, je n’y arrive pas. » Son amie Sofia voit comment elle va. Le ou la jeune écrit deux bulles sur une feuille : que pense Zoé d’elle-même ? Que lui dirait Sofia ? On compare les deux phrases. Le déclic : on se parle souvent plus durement qu’à une amie, et la deuxième voix, on peut l’entraîner.",
+      "sagen": [
+        "Aujourd’hui, on parle de voir ses forces et de s’apprécier. Pour commencer, une petite histoire.",
+        "Zoé s’emmêle pendant un exposé et pense : « Je suis ridicule. » Son amie Sofia l’écoute. Que lui dirait Sofia ? Écris-le dans une bulle.",
+        "On se parle souvent plus durement qu’à une amie. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune trouve la phrase de Sofia mièvre, l’adulte demande : comment le dirais-tu sans que ça sonne mièvre ? S’il ou elle ne veut pas écrire, il ou elle dit la phrase à voix haute et l’adulte l’écrit dans la bulle. « Passe » est permis.",
+      "kurz": "Pensée de Zoé · que dirait son amie ? · deux bulles"
+    },
+    "kurz": "Zoés Gedanke · was würde ihre Freundin sagen? · zwei Sprechblasen"
+  },
+  {
+    "id": "th:lernstrategien-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Welcher Weg bringt mehr?",
+    "text": "Die Fachkraft schreibt drei Wege zum Lernen auf Zettel: A „Text noch einmal lesen“, B „Text zuklappen und aufschreiben oder aufsagen, was man noch weiß“, C „Wichtiges farbig markieren“. Der oder die Jugendliche tippt, mit welchem Weg man nach einer Woche am meisten behält. Auflösung: In Studien schneidet B meist am besten ab, obwohl es sich am anstrengendsten anfühlt. Aha: Was sich sicher anfühlt, wirkt nicht unbedingt am besten.",
+    "sagen": [
+      "Heute geht es darum, wie man gut lernt. Dazu eine Tipp-Frage mit drei Wegen.",
+      "Du willst dir einen Text für nächste Woche merken. A: noch einmal lesen. B: zuklappen und aufschreiben, was du weißt. C: markieren. Was bringt am meisten?",
+      "Das Ergebnis aus Studien überrascht viele. Genau darum geht es jetzt weiter: Wie lernt man wirklich gut?"
+    ],
+    "wennEsKippt": "Sagt der oder die Jugendliche „ich lerne eh anders“, erklärt die Fachkraft: Es geht nur ums Tippen, nicht um Richtig oder Falsch. Welcher Weg fühlt sich am sichersten an? Mag er oder sie nicht tippen, zeigt er oder sie auf einen der drei Zettel. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "ankreuzen",
+      "denkmodell"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Quelle méthode rapporte le plus ?",
+      "text": "L’adulte écrit trois façons d’apprendre sur des papiers : A « relire le texte », B « fermer le texte et écrire ou réciter ce dont on se souvient », C « surligner l’essentiel en couleur ». Le ou la jeune devine avec quelle façon on retient le plus après une semaine. Solution : dans les études, B donne le plus souvent les meilleurs résultats, même si c’est ce qui paraît le plus pénible. Le déclic : ce qui paraît sûr n’est pas forcément ce qui marche le mieux.",
+      "sagen": [
+        "Aujourd’hui, on parle de la façon d’apprendre efficacement. Pour commencer, une question à deviner avec trois façons.",
+        "Retenir un texte pour la semaine prochaine : A, le relire ; B, le fermer et écrire ce qu’on sait ; C, le surligner. Quelle méthode rapporte le plus ?",
+        "Le résultat des études surprend beaucoup de monde. C’est justement de cela qu’il s’agit maintenant : comment apprend-on vraiment bien ?"
+      ],
+      "wennEsKippt": "Si le ou la jeune répond « moi, j’apprends autrement », l’adulte dit qu’il s’agit seulement de deviner, pas de juste ou faux : qu’est-ce qui paraît le plus sûr ? S’il ou elle ne veut pas deviner, il ou elle montre du doigt l’un des trois papiers. « Passe » est permis.",
+      "kurz": "Trois façons d’apprendre · laquelle rapporte le plus ?"
+    },
+    "kurz": "Drei Lernwege tippen · welcher bringt mehr? · Studie verrät es"
+  },
+  {
+    "id": "th:lernstrategien-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Der Reißverschluss",
+    "text": "Die Fachkraft fragt: „Wie gut verstehst du, wie ein Reißverschluss funktioniert? Von 1 (gar nicht) bis 5 (genau).“ Beide nennen eine Zahl. Dann zeichnet jeder in einer Minute, was im Schieber passiert, oder erklärt es in drei Sätzen. Meist zeigt sich: Man dachte, man wisse es, und merkt die Lücken erst beim Erklären. Aha: Forschende nennen das die Illusion des Verstehens. Beim Erklären zeigt sich, was man wirklich kann.",
+    "sagen": [
+      "Heute geht es darum, wie man gut lernt. Dazu eine Frage, die einfach klingt.",
+      "Wie gut verstehst du, wie ein Reißverschluss funktioniert, von 1 bis 5? Zeichne oder erkläre dann in drei Sätzen, was im Schieber passiert. Ich mache mit.",
+      "Oft merkt man erst beim Erklären, was man wirklich weiß. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Ist die Zeichnung zu schwer, erklärt der oder die Jugendliche nur mündlich in drei Sätzen. Ärgert er oder sie sich über Lücken, zeigt die Fachkraft zuerst ihre eigenen: Lücken sind der Normalfall und genau der Punkt dieser Frage. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "lernstrategien"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "malen",
+      "denkmodell"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "La fermeture éclair",
+      "text": "L’adulte demande : « À quel point comprends-tu comment fonctionne une fermeture éclair ? De 1 (pas du tout) à 5 (très bien). » Chacun donne un chiffre. Puis chacun dessine en une minute ce qui se passe dans le curseur, ou l’explique en trois phrases. En général, on pensait savoir, et on ne remarque les lacunes qu’en expliquant. Le déclic : les chercheurs parlent d’illusion de compréhension. En expliquant, on voit ce qu’on sait vraiment.",
+      "sagen": [
+        "Aujourd’hui, on parle de la façon d’apprendre efficacement. Pour commencer, une question qui paraît simple.",
+        "À quel point comprends-tu la fermeture éclair, de 1 à 5 ? Dessine ou explique en trois phrases ce qui se passe dans le curseur. Je le fais aussi.",
+        "Souvent, on ne voit qu’en expliquant ce qu’on sait vraiment. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le dessin est trop difficile, le ou la jeune explique seulement à l’oral en trois phrases. S’il ou elle s’énerve de ses lacunes, l’adulte montre d’abord les siennes : les lacunes sont normales et sont justement le but de cette question. « Passe » est permis.",
+      "kurz": "Fermeture éclair : se noter · dessiner · trouver les lacunes"
+    },
+    "kurz": "Reißverschluss: Verständnis 1 bis 5 · zeichnen · Lücken entdecken"
+  },
+  {
+    "id": "th:alltag-einstieg-jugend-1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Wie lang sind 30 Sekunden?",
+    "text": "Die Fachkraft startet unauffällig die Uhr. Der oder die Jugendliche schaut auf einen Punkt an der Wand und sagt „jetzt“, wenn er oder sie glaubt, dass 30 Sekunden vorbei sind. Die Fachkraft zeigt die echte Zeit, dann macht sie es selbst. Oft liegt man ein gutes Stück daneben, in beide Richtungen. Aha: Das Zeitgefühl ist bei jedem anders und kann mit Stimmung und Müdigkeit schwanken. Wer es kennt, plant besser.",
+    "sagen": [
+      "Heute geht es um den Alltag und darum, ihn selbst gut hinzubekommen, zum Beispiel mit der Zeit. Dazu ein kurzer Test.",
+      "Schau auf einen Punkt an der Wand und sag „jetzt“, wenn du glaubst, dass 30 Sekunden um sind. Ich stoppe die Zeit. Danach bin ich dran.",
+      "Unser Zeitgefühl täuscht oft, und wer das weiß, plant besser. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Ärgert sich der oder die Jugendliche über die Abweichung, erklärt die Fachkraft: Das ist eine Messung, kein Ergebnis, und sie nennt ihre eigene Abweichung. Mag er oder sie nicht still schätzen, zählt er oder sie leise mit, und beide schauen, ob das Zählen hilft. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 2,
+      "typ": 3,
+      "max": 5
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "sinne",
+      "spiel"
+    ],
+    "material": [
+      "uhr"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "30 secondes, c’est combien ?",
+      "text": "L’adulte lance discrètement le chronomètre. Le ou la jeune regarde un point sur le mur et dit « maintenant » quand il ou elle pense que 30 secondes se sont écoulées. L’adulte montre le temps réel, puis le fait lui-même. On se trompe souvent assez nettement, dans les deux sens. Le déclic : le sens du temps est différent pour chacun et peut varier avec l’humeur et la fatigue. Qui connaît le sien planifie mieux.",
+      "sagen": [
+        "Aujourd’hui, on parle du quotidien et de la façon de bien s’en sortir seul, par exemple avec le temps. Pour commencer, un court test.",
+        "Regarde un point sur le mur et dis « maintenant » quand tu crois que 30 secondes sont passées. Je chronomètre. Ensuite, c’est mon tour.",
+        "Notre sens du temps nous trompe souvent, et qui le sait planifie mieux. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune s’énerve de l’écart, l’adulte explique que c’est une mesure, pas un résultat, et donne son propre écart. S’il ou elle ne veut pas estimer en silence, il ou elle compte doucement, et on regarde si compter aide. « Passe » est permis.",
+      "kurz": "Estimer 30 secondes · le chronomètre montre · son sens du temps"
+    },
+    "kurz": "30 Sekunden schätzen · Uhr zeigt die Zeit · Zeitgefühl kennen"
+  },
+  {
+    "id": "th:alltag-einstieg-jugend-2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Themen-Einstieg"
+    },
+    "titel": "Der wörtliche Roboter",
+    "text": "Die Fachkraft spielt einen Roboter, der nur wörtlich ausführt, was gesagt wird. Der oder die Jugendliche gibt Anweisungen, damit der Roboter ein Wort auf ein Blatt schreibt. „Nimm den Stift.“ (Der Roboter greift ins Leere.) „Schreib Hallo.“ (Der Roboter schreibt in die Luft.) Schritt für Schritt wird es genauer: Hand zum Stift, Stift greifen, Spitze aufs Papier … Aha: Eine einfache Aufgabe hat viele kleine Schritte; wenn etwas nicht klappt, fehlt oft einer.",
+    "sagen": [
+      "Heute geht es um den Alltag und darum, Aufgaben selbst zu schaffen. Ich bin jetzt ein Roboter, der nur wörtlich tut, was du sagst.",
+      "Bring mir bei, mit diesem Stift ein Wort aufs Papier zu schreiben. Sag mir genau, was ich tun soll, Schritt für Schritt.",
+      "Auch kleine Aufgaben bestehen aus vielen Schritten. Genau darum geht es jetzt weiter."
+    ],
+    "wennEsKippt": "Ärgert sich der oder die Jugendliche über das wörtliche Nehmen, tauschen sie die Rollen: Er oder sie ist der Roboter, die Fachkraft gibt die Anweisungen. Wird es zu lang, schreibt die Fachkraft nur drei Schritte auf, und der Roboter führt genau diese aus. Pass ist erlaubt.",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [],
+    "eldib": [],
+    "kompetenz": [
+      "alltag"
+    ],
+    "ohneZiel": true,
+    "nurZumThema": true,
+    "alter": {
+      "von": 12,
+      "bis": 18
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 4,
+      "max": 6
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "rollenspiel",
+      "spiel"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "anspruch": 1,
+    "merkmale": {
+      "wettbewerb": false,
+      "koerperkontakt": false,
+      "laut": false,
+      "gewaltbezug": false,
+      "katharsis": false
+    },
+    "fr": {
+      "titel": "Le robot à la lettre",
+      "text": "L’adulte joue un robot qui exécute seulement à la lettre ce qu’on lui dit. Le ou la jeune donne des consignes pour que le robot écrive un mot sur une feuille : « Prends le stylo. » (Le robot saisit dans le vide.) « Écris bonjour. » (Le robot écrit en l’air.) Peu à peu, les consignes deviennent plus précises : main vers le stylo, saisir le stylo, pointe sur le papier … Le déclic : une tâche simple compte beaucoup de petites étapes ; quand cela ne marche pas, il en manque souvent une.",
+      "sagen": [
+        "Aujourd’hui, on parle du quotidien et de la façon de s’en sortir seul. Je suis maintenant un robot qui fait seulement, à la lettre, ce que tu dis.",
+        "Apprends-moi à écrire un mot sur la feuille avec ce stylo. Dis-moi exactement ce que je dois faire, étape par étape.",
+        "Même les petites tâches ont beaucoup d’étapes. C’est justement de cela qu’il s’agit maintenant."
+      ],
+      "wennEsKippt": "Si le ou la jeune s’agace du côté littéral, on échange les rôles : il ou elle est le robot, l’adulte donne les consignes. Si cela devient trop long, l’adulte note seulement trois étapes, et le robot exécute exactement celles-ci. « Passe » est permis.",
+      "kurz": "Robot à la lettre · consignes précises · écrire un mot"
+    },
+    "kurz": "Roboter folgt wörtlich · Schritte genau sagen · Wort schreiben"
   }
 ]

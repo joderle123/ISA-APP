@@ -18467,5 +18467,1425 @@
   },
   "kurz": "Tätigkeit wählen · Karte: Name, 3 Stärken, 2 Baustellen, 1 Trick",
   "vorbereitung": "Beispielkarte vorzeichnen: Name · 3 Dinge, die gehen · 2 Dinge zum Üben · 1 Trick"
+ },
+ {
+  "id": "j:zehn-paesse-am-stueck",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Zehn Pässe am Stück",
+  "text": "Die Fachkraft zeigt aus drei, vier Schritten Abstand einen guten Pass: Blickkontakt, kurze Ansage („Jetzt!“), weich auf Brusthöhe. Beide spielen sich den Ball zu; der oder die Jugendliche zählt laut mit und hakt auf einem Blatt zehn Kästchen ab, in die er oder sie vorher die Zahlen 1 bis 10 geschrieben hat. Fällt der Ball, beginnt man ohne Kommentar von vorn. Ziel ist keine Wertung, sondern eine gemeinsame Serie: zehn Pässe am Stück. Dann wählt der oder die Jugendliche eine Variante (Aufprall, Seitenschritt, schwächere Hand). Zum Schluss schreibt er oder sie die beste Serie oben aufs Blatt: „Das haben wir geschafft: … Pässe.“",
+  "sagen": [
+   "Wir spielen nicht gegeneinander, sondern miteinander. Unser Ziel: zehn Pässe am Stück, und du zählst laut mit.",
+   "Ein guter Pass ist einer, den der andere gut fangen kann. Sag mir ruhig, wenn ich zu hart oder zu hoch passe.",
+   "Das ist unsere gemeinsame Serie, und darauf dürfen wir stolz sein. Was hat bei dir dazu beigetragen, und was bei mir?"
+  ],
+  "wennEsKippt": "Fällt der Ball immer wieder und die Stimmung sinkt, wird das Ziel kleiner (fünf Pässe) oder der Abstand kürzer. Hat der oder die Jugendliche keine Lust auf Bewegung, wird im Sitzen am Tisch gespielt: den Ball zurollen statt werfen.",
+  "werkzeug": {
+   "de": "Zuspiel im Team: Blick, Ansage, weicher Pass",
+   "fr": "Jeu d’équipe : regard, annonce, passe douce"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "freundschaft",
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-43",
+    "gewicht": 1
+   },
+   {
+    "code": "K-22",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-33",
+    "gewicht": 0.5
+   },
+   {
+    "code": "KOG-35",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "ausdauer"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 18
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 3,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "bewegung",
+   "spiel"
+  ],
+  "material": [
+   "ball",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Dix passes d’affilée",
+   "text": "L’adulte montre, à trois ou quatre pas de distance, une bonne passe : contact visuel, courte annonce (« Maintenant ! »), passe douce à hauteur de poitrine. Ils se passent le ballon ; le ou la jeune compte à voix haute et coche sur une feuille dix cases dans lesquelles il ou elle a d’abord écrit les chiffres de 1 à 10. Si le ballon tombe, on recommence sans commentaire. Le but n’est pas de gagner, mais de réussir une série à deux : dix passes d’affilée. Ensuite, le ou la jeune choisit une variante (rebond, pas de côté, main non dominante). À la fin, il ou elle écrit en haut de la feuille la meilleure série : « On a réussi : … passes. »",
+   "sagen": [
+    "On ne joue pas l’un contre l’autre, mais ensemble. Notre but : dix passes d’affilée, et tu comptes à voix haute.",
+    "Une bonne passe, c’est une passe que l’autre peut bien attraper. Dis-moi si je passe trop fort ou trop haut.",
+    "C’est notre série à nous deux, et nous pouvons en être fiers. Qu’est-ce qui a aidé de ton côté, et du mien ?"
+   ],
+   "wennEsKippt": "Si le ballon tombe sans cesse et que l’ambiance baisse, on réduit l’objectif (cinq passes) ou la distance. Si le ou la jeune n’a pas envie de bouger, on joue assis à la table : on se fait rouler le ballon au lieu de le lancer.",
+   "kurz": "Passes · compter jusqu’à 10 · variante · noter le record"
+  },
+  "tagesform": [
+   "aufgedreht"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Wenn das Team zusammenspielt",
+    "fr": "Quand l’équipe joue ensemble"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Zoé, Diogo, Mehdi und Léa trainieren Basketball. Nach vielen Versuchen schaffen sie zum ersten Mal zehn Pässe am Stück, und alle vier jubeln."
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Was haben die vier wahrscheinlich gut gemacht? Kreuz an, mehrere gehen.",
+     "items": [
+      "Sie haben sich vor dem Pass angeschaut.",
+      "Jeder wollte den Ball möglichst lange behalten.",
+      "Sie haben den Namen gerufen, bevor sie passten.",
+      "Nach einem Fehler haben sie sich Vorwürfe gemacht.",
+      "Sie haben weich und auf Brusthöhe gespielt.",
+      "Nach einem Fehler haben sie ohne Streit wieder bei eins angefangen."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Verbinde: Das passiert im Training …",
+      "… das hilft dem Team"
+     ],
+     "links": [
+      "Der Ball fällt beim siebten Pass runter.",
+      "Zoé steht frei, aber niemand sieht sie.",
+      "Diogo passt immer sehr hart."
+     ],
+     "rechts": [
+      "„Etwas weicher bitte, dann kann ich ihn fangen.“",
+      "„Kein Problem, wir fangen nochmal bei eins an.“",
+      "„Zoé ist frei!“ laut ansagen"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Das haben wir gemeinsam geschafft, und darauf bin ich stolz (echt oder erfunden):",
+      "Mein Teil dabei war:",
+      "Das hat uns als Gruppe geholfen:"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Zoé, Diogo, Mehdi et Léa font du basket. Après de nombreux essais, ils réussissent pour la première fois dix passes d’affilée, et tous les quatre sautent de joie."
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Qu’est-ce que les quatre ont probablement bien fait ? Coche, plusieurs réponses possibles.",
+     "items": [
+      "Ils se regardaient avant de passer.",
+      "Chacun voulait garder le ballon le plus longtemps possible.",
+      "Ils appelaient le prénom avant de passer.",
+      "Après une erreur, ils se faisaient des reproches.",
+      "Ils jouaient en douceur, à hauteur de poitrine.",
+      "Après une erreur, ils recommençaient à un sans se disputer."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Relie : ce qui se passe à l’entraînement …",
+      "… ce qui aide l’équipe"
+     ],
+     "links": [
+      "Le ballon tombe à la septième passe.",
+      "Zoé est démarquée, mais personne ne la voit.",
+      "Diogo passe toujours très fort."
+     ],
+     "rechts": [
+      "« Un peu plus doucement, s’il te plaît, comme ça je peux l’attraper. »",
+      "« Pas grave, on recommence à un. »",
+      "annoncer : « Zoé est libre ! »"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Quelque chose que nous avons réussi ensemble et dont je suis fier ou fière (vrai ou inventé) :",
+      "Ma part dans ce succès :",
+      "Ce qui nous a aidés comme groupe :"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Ball zuspielen · bis 10 zählen · Variante · Rekord-Satz"
+ },
+ {
+  "id": "j:marie-macht-es-vor",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Marie macht es vor",
+  "text": "Die Fachkraft erzählt in drei kurzen Szenen von Diogo, der in einer Fahrradwerkstatt Praktikum macht. Eine Kundin schimpft, weil die Reparatur länger dauert, und die Mechanikerin Marie bleibt ruhig und fragt nach. Marie baut die falsche Schraube ein und sagt es sofort. Marie fragt einen neuen Kollegen, ob er Hilfe braucht. Der oder die Jugendliche erzählt die Geschichte in drei Sätzen nach und sucht eine Sache, die er oder sie von Marie übernehmen würde. Diese Szene spielen beide: Die Fachkraft ist das Gegenüber, der oder die Jugendliche macht es wie Marie. Zum Schluss ein Satz: „Ich mache es wie Marie: …“",
+  "sagen": [
+   "Ich erzähle dir drei kurze Szenen aus einer Werkstatt. Achte darauf, was Marie tut, wenn es schwierig wird.",
+   "Erzähl es mir in drei Sätzen nach: Was ist passiert, was hat Marie getan, wie ging es aus?",
+   "Such dir eine Sache von Marie aus, die du selbst können möchtest. Wir spielen sie: Ich bin das Gegenüber, du bist Marie."
+  ],
+  "wennEsKippt": "Fällt das Nacherzählen schwer, malt die Fachkraft drei Kästchen mit Stichworten auf (Kundin, Schraube, Neuer), und der oder die Jugendliche erzählt dazu. Mag er oder sie nicht spielen, sagt er oder sie nur den Satz, den Marie sagen würde.",
+  "werkzeug": {
+   "de": "Abgucken: Was macht sie? Was übernehme ich?",
+   "fr": "S’inspirer : que fait-elle ? qu’est-ce que je reprends ?"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "thema": [
+   "lernen"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-20",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-47",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-37",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "lernstrategien",
+   "alltag"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 14,
+   "max": 18
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "geschichte",
+   "rollenspiel"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Marie montre l’exemple",
+   "text": "L’adulte raconte en trois courtes scènes l’histoire de Diogo, en stage dans un atelier de vélos. Une cliente s’emporte parce que la réparation est longue, et Marie, la mécanicienne, reste calme et pose des questions. Marie met la mauvaise vis et le dit tout de suite. Marie demande à un nouveau collègue s’il a besoin d’aide. Le ou la jeune raconte l’histoire en trois phrases et cherche une chose qu’il ou elle reprendrait de Marie. Ils jouent cette scène : l’adulte joue la personne en face, le ou la jeune fait comme Marie. Pour finir, une phrase : « Je fais comme Marie : … »",
+   "sagen": [
+    "Je te raconte trois courtes scènes dans un atelier de vélos. Observe ce que fait Marie quand ça se complique.",
+    "Raconte-les-moi en trois phrases : que s’est-il passé, qu’a fait Marie, comment ça s’est terminé ?",
+    "Choisis une chose que fait Marie et que tu voudrais savoir faire toi aussi. On la joue : je suis la personne en face, tu es Marie."
+   ],
+   "wennEsKippt": "Si le récit est difficile, l’adulte dessine trois cases avec des mots-clés (cliente, vis, nouveau) et le ou la jeune raconte à partir de là. S’il ou elle ne veut pas jouer, il ou elle dit seulement la phrase que Marie dirait.",
+   "kurz": "3 scènes · raconter · choisir un geste de Marie · jouer la scène",
+   "vorbereitung": "Retenir trois scènes : cliente en colère · mauvaise vis · un nouveau a besoin d’aide"
+  },
+  "tagesform": [],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Erster Tag in der Bäckerei",
+    "fr": "Premier jour à la boulangerie"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Lena hat ihren ersten Tag im Praktikum in einer Bäckerei. Ihr Kollege Pit bedient die Kunden freundlich, auch wenn die Schlange lang ist."
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Woran siehst du, dass Pit es gut macht? Kreuz an, mehrere gehen.",
+     "items": [
+      "Er schaut die Kundin an und grüßt.",
+      "Er seufzt laut, wenn jemand lange überlegt.",
+      "Er sagt: „Einen Moment, ich bin gleich bei Ihnen.“",
+      "Er bleibt freundlich, auch wenn jemand drängelt.",
+      "Er schaut aufs Handy, während er bedient.",
+      "Er fragt nach, wenn er eine Bestellung nicht verstanden hat."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Verbinde: Lenas Situation …",
+      "… so macht es Pit"
+     ],
+     "links": [
+      "Eine Kundin ist schlecht gelaunt.",
+      "Lena hat einen falschen Preis eingetippt.",
+      "Lena weiß nicht, wo die Tüten liegen."
+     ],
+     "rechts": [
+      "kurz nachfragen, statt zu suchen und zu raten",
+      "ruhig und freundlich bleiben",
+      "den Fehler gleich sagen und korrigieren"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Eine Person, bei der ich mir etwas abschauen kann (echt oder erfunden):",
+      "Das macht sie oder er gut:",
+      "Das probiere ich diese Woche aus:"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "skala",
+     "frage": "Wie leicht fällt es mir, etwas, das ich bei anderen gut finde, selbst auszuprobieren?",
+     "von": "schwer",
+     "bis": "leicht",
+     "stufen": 5
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Lena fait son premier jour de stage dans une boulangerie. Son collègue Pit sert les clients avec gentillesse, même quand la file est longue."
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "À quoi vois-tu que Pit s’y prend bien ? Coche, plusieurs réponses possibles.",
+     "items": [
+      "Il regarde la cliente et la salue.",
+      "Il soupire bruyamment quand quelqu’un hésite longtemps.",
+      "Il dit : « Un instant, je suis à vous tout de suite. »",
+      "Il reste aimable, même quand quelqu’un s’impatiente.",
+      "Il regarde son téléphone pendant qu’il sert.",
+      "Il demande quand il n’a pas compris une commande."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Relie : la situation de Lena …",
+      "… comment fait Pit"
+     ],
+     "links": [
+      "Une cliente est de mauvaise humeur.",
+      "Lena a tapé un mauvais prix.",
+      "Lena ne sait pas où sont les sacs."
+     ],
+     "rechts": [
+      "demander rapidement au lieu de chercher et de deviner",
+      "rester calme et aimable",
+      "dire l’erreur tout de suite et la corriger"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Une personne dont je peux m’inspirer (vraie ou inventée) :",
+      "Ce qu’elle fait bien :",
+      "Ce que j’essaie cette semaine :"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "skala",
+     "frage": "Est-ce facile pour moi d’essayer moi-même ce que je trouve bien chez les autres ?",
+     "von": "difficile",
+     "bis": "facile",
+     "stufen": 5
+    }
+   ]
+  },
+  "kurz": "3 Szenen hören · nacherzählen · Marie-Verhalten wählen · spielen",
+  "vorbereitung": "Drei Szenen merken: Kundin schimpft · falsche Schraube · Neuer braucht Hilfe"
+ },
+ {
+  "id": "j:tarif-check",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Der Tarif-Check",
+  "text": "Die Fachkraft schreibt zwei erfundene Handy-Tarife auf Karten: A kostet 9 € im Monat, hat 5 GB, 24 Monate Laufzeit und einmalig 40 € Anschlussgebühr; B kostet 13 € im Monat, hat 20 GB und ist monatlich kündbar. Gemeinsam unterstreichen sie die Zahlen, die den Preis bestimmen, und rechnen A für 12 Monate vor. Der oder die Jugendliche rechnet B und dann beide für 24 Monate. Dann wird umgerechnet: 5 GB sind 5000 MB, ein Handyfoto braucht etwa 5 MB – wie viele Fotos passen hinein? Zum Schluss steht eine Empfehlung in einem Satz. Für Schnelle: Ab welchem Monat ist A insgesamt billiger? (Lösung: ab dem 11.)",
+  "sagen": [
+   "Bei einem Angebot zählt nicht der Preis pro Monat, sondern das, was am Ende insgesamt bezahlt wird. Suchen wir die Zahlen dafür.",
+   "Rechne B für 12 Monate und schreib die Rechnung mit Maßeinheiten auf, zum Beispiel 13 € mal 12 Monate.",
+   "Für wen passt welcher Tarif? Sag es in einem Satz, mit einer Zahl als Begründung."
+  ],
+  "wennEsKippt": "Wird das Rechnen zäh, rechnet die Fachkraft mit und fragt nur nach dem jeweils nächsten Schritt, oder beide füllen Monat für Monat eine kleine Liste. Mag der oder die Jugendliche nicht über das eigene Handy sprechen, bleibt es bei den erfundenen Tarifen.",
+  "werkzeug": {
+   "de": "Gesamtpreis: Monatspreis mal Monate plus Einmaliges",
+   "fr": "Prix total : prix mensuel × mois + frais uniques"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "uebertragen",
+  "thema": [
+   "medien"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-60",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-46",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "alltag",
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 14,
+   "max": 18
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "karten",
+   "lesen"
+  ],
+  "material": [
+   "karten",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Le test des forfaits",
+   "text": "L’adulte écrit deux forfaits de téléphone inventés sur des cartes : A coûte 9 € par mois, offre 5 Go, dure 24 mois et demande 40 € de frais de mise en service ; B coûte 13 € par mois, offre 20 Go et est résiliable chaque mois. Ensemble, ils soulignent les chiffres qui font le prix et calculent A pour 12 mois. Le ou la jeune calcule B, puis les deux pour 24 mois. Ensuite, on convertit : 5 Go font 5000 Mo, une photo de portable pèse environ 5 Mo – combien de photos y entrent ? Pour finir, une recommandation en une phrase. Pour les plus rapides : à partir de quel mois A est-il globalement moins cher ? (Réponse : dès le 11e.)",
+   "sagen": [
+    "Dans une offre, ce qui compte, ce n’est pas le prix par mois, mais ce qu’on paie au total. Cherchons les chiffres qui comptent.",
+    "Calcule B pour 12 mois et écris le calcul avec les unités, par exemple 13 € fois 12 mois.",
+    "Pour qui convient chaque forfait ? Dis-le en une phrase, avec un chiffre comme argument."
+   ],
+   "wennEsKippt": "Si le calcul traîne, l’adulte calcule avec le ou la jeune et ne demande que l’étape suivante, ou ils remplissent une petite liste mois par mois. Si le ou la jeune ne veut pas parler de son propre téléphone, on reste sur les forfaits inventés.",
+   "kurz": "Forfaits sur cartes · prix total · Go en Mo · recommandation",
+   "vorbereitung": "Cartes : A 9 €/mois · 5 Go · 24 mois · 40 € de frais ; B 13 €/mois · 20 Go · résiliable. Après 12 mois : A 148 €, B 156 €"
+  },
+  "tagesform": [],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Monat oder Jahr?",
+    "fr": "Abonnement mensuel ou annuel ?"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Jil möchte eine Musik-App: 10 € pro Monat oder 96 € für ein ganzes Jahr. Ein Jahresabo kann man nicht vorzeitig beenden."
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Welche Angaben brauchst du, um beide Angebote zu vergleichen? Kreuz an, mehrere gehen.",
+     "items": [
+      "10 € pro Monat",
+      "96 € für ein Jahr",
+      "wie viele Monate ein Jahr hat",
+      "das Logo der App",
+      "wie lange Jil die App wirklich nutzen will",
+      "wie viele Lieder die App hat"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Verbinde: die Angabe …",
+      "… so viel ist das"
+     ],
+     "links": [
+      "96 € für ein Jahr",
+      "18 Monate",
+      "2 GB"
+     ],
+     "rechts": [
+      "2000 MB",
+      "8 € pro Monat",
+      "1,5 Jahre"
+     ]
+    },
+    {
+     "art": "frage",
+     "text": "Jil hört die App nur 9 Monate lang. Welches Angebot ist dann günstiger, und um wie viel? Schreib die Rechnung auf.",
+     "linien": 2
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Ein Abo oder Angebot, das ich kenne (echt oder erfunden):",
+      "Das kostet im Monat … € und im Jahr … €:"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Jil voudrait une appli de musique : 10 € par mois ou 96 € pour une année entière. Un abonnement annuel ne peut pas être résilié avant la fin."
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "De quelles informations as-tu besoin pour comparer les deux offres ? Coche, plusieurs réponses possibles.",
+     "items": [
+      "10 € par mois",
+      "96 € pour une année",
+      "combien de mois compte une année",
+      "le logo de l’appli",
+      "combien de temps Jil veut vraiment utiliser l’appli",
+      "combien de chansons contient l’appli"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Relie : l’indication …",
+      "… ça fait combien"
+     ],
+     "links": [
+      "96 € pour une année",
+      "18 mois",
+      "2 Go"
+     ],
+     "rechts": [
+      "2000 Mo",
+      "8 € par mois",
+      "un an et demi"
+     ]
+    },
+    {
+     "art": "frage",
+     "text": "Jil n’écoute l’appli que pendant 9 mois. Quelle offre est alors la moins chère, et de combien ? Écris le calcul.",
+     "linien": 2
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Un abonnement ou une offre que je connais (vrai ou inventé) :",
+      "Ça coûte … € par mois et … € par an :"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Tarife auf Karten · Gesamtpreis rechnen · GB in MB · Empfehlung",
+  "vorbereitung": "Tarifkarten: A 9 €/Monat · 5 GB · 24 Monate · 40 € einmalig; B 13 €/Monat · 20 GB · kündbar. Nach 12 Monaten: A 148 €, B 156 €"
+ },
+ {
+  "id": "j:meldung-fuenf-fragen",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Eine Meldung, fünf Fragen",
+  "text": "Die Fachkraft hat drei kurze, harmlose Meldungen dieser Woche aus der Zeitung ausgesucht (Verkehr, Sport, Schule). Sie liest die erste vor und schreibt am Rand Stichworte zu Wer, Was, Wo, Wann, Warum. Die zweite liest der oder die Jugendliche und füllt die Stichworte selbst aus. Zur dritten genügt ein Satz in eigenen Worten: „Kurz gesagt: …“. Danach ordnet er oder sie die drei Meldungen: betrifft mich, betrifft Leute, die ich kenne, oder ist mir egal, und begründet eine. Zum Schluss: Welche Meldung würde er oder sie weitererzählen, und wem – am liebsten jemandem, mit dem er oder sie gern mehr reden würde?",
+  "sagen": [
+   "Heute geht es um Neuigkeiten. In jeder Meldung stecken fünf Antworten: wer, was, wo, wann und warum.",
+   "Lies die zweite Meldung selbst und sag mir dann in einem Satz: Kurz gesagt, worum geht es?",
+   "Welche Meldung betrifft dich oder Leute, die du kennst? Und wem würdest du sie erzählen? Pass ist erlaubt."
+  ],
+  "wennEsKippt": "Ist das Lesen mühsam, liest die Fachkraft alle drei vor, und der oder die Jugendliche hakt die fünf Stichworte nur ab. Findet er oder sie keine Meldung interessant, reicht eine zu einem Lieblingsthema (Sport, Musik, Games).",
+  "werkzeug": {
+   "de": "Fünf Fragen an eine Meldung: Wer, was, wo, wann, warum?",
+   "fr": "Cinq questions à une info : qui, quoi, où, quand, pourquoi ?"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "thema": [
+   "medien"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-57",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-37",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-47",
+    "gewicht": 0.5
+   },
+   {
+    "code": "SOZ-25",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "alltag",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 13,
+   "max": 18
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "lesen",
+   "gespraech"
+  ],
+  "material": [
+   "zeitung",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Une info, cinq questions",
+   "text": "L’adulte choisit dans le journal trois courtes infos de la semaine, sans sujet pesant (circulation, sport, école), lit la première à voix haute et note en marge des mots-clés pour qui, quoi, où, quand, pourquoi. La deuxième, le ou la jeune la lit et complète les mots-clés seul ou seule. Pour la troisième, une phrase avec ses propres mots suffit : « En bref : … ». Ensuite, il ou elle classe les trois infos : ça me concerne, ça concerne des gens que je connais, ou ça m’est égal ; et justifie un choix. Pour finir : quelle info raconterait-il ou elle, et à qui – de préférence à quelqu’un avec qui il ou elle aimerait parler davantage ?",
+   "sagen": [
+    "Aujourd’hui, on s’intéresse à l’actualité. Dans chaque info, il y a cinq réponses : qui, quoi, où, quand et pourquoi.",
+    "Lis la deuxième info toi-même, puis dis-moi en une phrase : en bref, de quoi ça parle ?",
+    "Quelle info te concerne, ou concerne des gens que tu connais ? Et à qui la raconterais-tu ? Tu peux aussi passer."
+   ],
+   "wennEsKippt": "Si lire est pénible, l’adulte lit les trois infos et le ou la jeune coche seulement les cinq mots-clés. Si aucune info ne l’intéresse, une seule sur un sujet qu’il ou elle aime suffit (sport, musique, jeux vidéo).",
+   "kurz": "3 infos · cinq questions · « En bref » · ça me concerne ?",
+   "vorbereitung": "Préparer trois courtes infos de la semaine, sans sujet pesant (journal ou site d’actualités)"
+  },
+  "tagesform": [],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Eine neue Meldung",
+    "fr": "Une autre info"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Nina liest diese Meldung: „Ab Montag endet Bus 14 wegen einer Baustelle am Bahnhof. Bis zum Schwimmbad sind es dann 600 Meter zu Fuß. Die Baustelle dauert voraussichtlich sechs Wochen.“"
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Verbinde: die Frage …",
+      "… die Antwort aus der Meldung"
+     ],
+     "links": [
+      "Was ändert sich?",
+      "Wann geht es los?",
+      "Warum?",
+      "Wie lange?"
+     ],
+     "rechts": [
+      "wegen einer Baustelle",
+      "etwa sechs Wochen",
+      "Bus 14 endet am Bahnhof",
+      "ab Montag"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Wen betrifft die Meldung am meisten? Kreuz an, mehrere gehen.",
+     "items": [
+      "Leute, die täglich mit Bus 14 zum Schwimmbad fahren",
+      "Eltern, die ihr Kind zum Schwimmtraining bringen",
+      "Leute, die nie Bus fahren und im Norden der Stadt wohnen",
+      "Ältere Menschen, die schlecht zu Fuß sind"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "wenn": "Wenn Nina montags um 17 Uhr zum Schwimmen will …",
+     "dann": "… dann könnte sie …"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Eine Neuigkeit aus dieser Woche, die ich weitererzählen würde (echt oder erfunden):",
+      "Kurz gesagt: Es geht darum, dass …",
+      "Ich würde sie erzählen an:"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Nina lit cette info : « À partir de lundi, le bus 14 s’arrêtera à la gare à cause de travaux. Il faudra alors faire 600 mètres à pied jusqu’à la piscine. Les travaux devraient durer six semaines. »"
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Relie : la question …",
+      "… la réponse dans l’info"
+     ],
+     "links": [
+      "Qu’est-ce qui change ?",
+      "Quand ça commence ?",
+      "Pourquoi ?",
+      "Combien de temps ?"
+     ],
+     "rechts": [
+      "à cause de travaux",
+      "environ six semaines",
+      "le bus 14 s’arrête à la gare",
+      "à partir de lundi"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Qui est le plus concerné par cette info ? Coche, plusieurs réponses possibles.",
+     "items": [
+      "Les gens qui prennent le bus 14 tous les jours pour aller à la piscine",
+      "Les parents qui emmènent leur enfant à l’entraînement de natation",
+      "Les gens qui ne prennent jamais le bus et habitent au nord de la ville",
+      "Les personnes âgées qui marchent difficilement"
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "wenn": "Si Nina veut aller nager le lundi à 17 h …",
+     "dann": "… alors elle pourrait …"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Une nouvelle de cette semaine que je raconterais (vraie ou inventée) :",
+      "En bref : il s’agit du fait que …",
+      "Je la raconterais à :"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "3 Meldungen · fünf Fragen · „Kurz gesagt“ · betrifft mich?",
+  "vorbereitung": "Drei kurze, unbelastende Meldungen dieser Woche aus Zeitung oder Nachrichtenseite bereitlegen"
+ },
+ {
+  "id": "j:passt-das-ins-zimmer",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Passt das ins Zimmer?",
+  "text": "Die Fachkraft zeigt auf Karopapier: 1 Kästchen sind 10 cm, ein Bett (90 × 200 cm) also 9 × 20 Kästchen; sie schneidet es genau entlang der Linien aus. Der oder die Jugendliche misst einen eigenen Schritt mit dem Lineal (etwa 60 bis 70 cm) und geht damit 3 m und 4 m im Raum ab – so groß ist ein erfundenes Zimmer. Er oder sie zeichnet es als Rechteck, schneidet Schreibtisch (120 × 60 cm) und Schrank (100 × 50 cm) aus und legt alles hinein: Wo bleibt zwischen den Möbeln ein Weg von 80 cm, wo wird es eng? Zum Schluss formuliert er oder sie die Regel: „Zentimeter geteilt durch zehn sind Kästchen.“",
+  "sagen": [
+   "Ein Plan zeigt etwas Großes ganz klein, aber mit festem Maß: Ein Kästchen sind zehn Zentimeter. Ein Bett ist also neun mal zwanzig Kästchen.",
+   "Miss deinen Schritt mit dem Lineal und geh dann das Zimmer ab: Wie viele Schritte sind drei Meter? Schätzen ist erlaubt.",
+   "Wo bleibt zwischen den Möbeln ein Weg von mindestens 80 Zentimetern, und wo wird es eng? Schieb sie hin und her, bis es passt."
+  ],
+  "wennEsKippt": "Klappt das Umrechnen nicht, zählt die Fachkraft Kästchen für Kästchen mit dem Finger mit und fragt nur nach dem nächsten Schritt. Fällt das Schneiden schwer, werden die Möbel mit dem Lineal vorgezeichnet, und die Fachkraft hilft bei den Ecken.",
+  "werkzeug": {
+   "de": "Maßstab: 1 Kästchen = 10 cm, umrechnen und prüfen",
+   "fr": "Échelle : 1 carreau = 10 cm, convertir et vérifier"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "lernen"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-46",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-32",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-60",
+    "gewicht": 0.5
+   },
+   {
+    "code": "KOG-33",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "alltag",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 14,
+   "max": 18
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "plan",
+   "basteln"
+  ],
+  "material": [
+   "karopapier",
+   "lineal",
+   "schere",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Est-ce que ça rentre ?",
+   "text": "L’adulte montre sur du papier quadrillé que 1 carreau = 10 cm : un lit (90 × 200 cm) fait donc 9 × 20 carreaux ; il est découpé exactement le long des lignes. Le ou la jeune mesure un de ses pas avec la règle (environ 60 à 70 cm) et parcourt ainsi 3 m et 4 m dans la pièce – c’est la taille d’une chambre inventée. Il ou elle la dessine en rectangle, découpe un bureau (120 × 60 cm) et une armoire (100 × 50 cm) et pose le tout dedans : où reste-t-il entre les meubles un passage de 80 cm, et où est-ce étroit ? Pour finir, il ou elle formule la règle : « Les centimètres divisés par dix donnent les carreaux. »",
+   "sagen": [
+    "Un plan montre quelque chose de grand en petit, mais avec une mesure fixe : un carreau, c’est dix centimètres. Un lit fait donc neuf carreaux sur vingt.",
+    "Mesure ton pas avec la règle, puis parcours la pièce : combien de pas font trois mètres ? Tu peux estimer.",
+    "Où reste-t-il un passage d’au moins 80 centimètres entre les meubles, et où est-ce trop étroit ? Déplace-les jusqu’à ce que ça passe."
+   ],
+   "wennEsKippt": "Si la conversion coince, l’adulte compte les carreaux au doigt et ne demande que l’étape suivante. Si découper est difficile, les meubles sont d’abord tracés à la règle et l’adulte aide pour les coins.",
+   "kurz": "Échelle 1 carreau = 10 cm · mesurer un pas · dessiner · découper",
+   "vorbereitung": "Noter : pièce 3 × 4 m (30 × 40 carreaux) · lit 90 × 200 (9 × 20) · bureau 120 × 60 (12 × 6) · armoire 100 × 50 (10 × 5)"
+  },
+  "tagesform": [],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Pols erstes eigenes Zimmer",
+    "fr": "La première chambre de Pol"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Pol zieht in sein erstes eigenes Zimmer: 3 m breit und 4 m lang. Er plant auf Karopapier, 1 Kästchen sind 10 cm."
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Verbinde: das Maß in echt …",
+      "… so viele Kästchen"
+     ],
+     "links": [
+      "Zimmerbreite: 3 m",
+      "Bettbreite: 90 cm",
+      "Schrank: 1 m breit"
+     ],
+     "rechts": [
+      "9 Kästchen",
+      "10 Kästchen",
+      "30 Kästchen"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Das Bett (90 cm breit) steht an der linken Wand, der Schrank (50 cm tief) an der rechten. Wie breit ist der Weg dazwischen? Kreuz an.",
+     "items": [
+      "110 cm",
+      "160 cm",
+      "210 cm",
+      "250 cm"
+     ],
+     "spalten": 2
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Ein Möbelstück aus meinem Zimmer (echt oder erfunden) und sein Maß:",
+      "Auf dem Plan sind das … × … Kästchen. Ich rechne so:"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "skala",
+     "frage": "Wie sicher bin ich beim Umrechnen von Zentimetern in Kästchen?",
+     "von": "unsicher",
+     "bis": "sicher",
+     "stufen": 5
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Pol emménage dans sa première chambre à lui : 3 m de large et 4 m de long. Il planifie sur du papier quadrillé, 1 carreau = 10 cm."
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Relie : la mesure réelle …",
+      "… combien de carreaux"
+     ],
+     "links": [
+      "Largeur de la chambre : 3 m",
+      "Largeur du lit : 90 cm",
+      "Armoire : 1 m de large"
+     ],
+     "rechts": [
+      "9 carreaux",
+      "10 carreaux",
+      "30 carreaux"
+     ]
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Le lit (90 cm de large) est contre le mur de gauche, l’armoire (50 cm de profondeur) contre celui de droite. Quelle est la largeur du passage entre les deux ? Coche.",
+     "items": [
+      "110 cm",
+      "160 cm",
+      "210 cm",
+      "250 cm"
+     ],
+     "spalten": 2
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Un meuble de ma chambre (vrai ou inventé) et sa mesure :",
+      "Sur le plan, ça fait … × … carreaux. Je calcule ainsi :"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "skala",
+     "frage": "Suis-je sûr ou sûre de moi pour convertir des centimètres en carreaux ?",
+     "von": "pas sûr",
+     "bis": "très sûr",
+     "stufen": 5
+    }
+   ]
+  },
+  "kurz": "Maßstab 1 Kästchen = 10 cm · Schritt messen · zeichnen · schneiden",
+  "vorbereitung": "Maße notieren: Zimmer 3 × 4 m (30 × 40 Kästchen) · Bett 90 × 200 (9 × 20) · Schreibtisch 120 × 60 (12 × 6) · Schrank 100 × 50 (10 × 5)"
+ },
+ {
+  "id": "j:platz-am-tisch",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Ein Platz am Tisch",
+  "text": "Die Fachkraft erzählt von einer Clique: Lara, Luca, Inês und Yanis sitzen seit Jahren am selben Mensa-Tisch und sind stolz auf ihr Freitagsritual. Neu in der Klasse ist Sofia, sie isst allein. Inês mag sie. Die Fachkraft spielt Inês, geht zum Stuhl abseits, auf dem Sofia sitzt, und macht den ersten Schritt vor: Blick, einen Platz anbieten, ein aktuelles Thema („Hast du das Spiel gestern gesehen?“). Der oder die Jugendliche spielt Luca und überlegt, ob und wie er nachzieht. Dann wird getauscht: Er oder sie ist Inês, wählt Thema und ersten Satz, und die Fachkraft sitzt als Sofia auf dem Stuhl.",
+  "sagen": [
+   "Die vier sind stolz auf ihre Clique. Das ist schön. Die Frage ist, ob dieser Stolz für Neue eher eine Tür oder eine Wand ist.",
+   "Du bist jetzt Luca und siehst, wie Inês zu Sofia geht. Was machst du: zuschauen, wegschauen oder nachziehen?",
+   "Jetzt bist du Inês. Such dir ein Thema aus, das gerade viele kennen, und sag Sofia den ersten Satz."
+  ],
+  "wennEsKippt": "Mag der oder die Jugendliche nicht spielen, schreibt er oder sie den ersten Satz auf einen Zettel, und die Fachkraft liest Sofias Antwort vor. Wird es zu persönlich (eigene Erfahrung als Neuling), bleibt es bei der erfundenen Clique.",
+  "werkzeug": {
+   "de": "Platz machen: Blick, Platz anbieten, aktuelles Thema",
+   "fr": "Faire de la place : regard, place offerte, sujet du moment"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "uebertragen",
+  "thema": [
+   "freundschaft",
+   "vielfalt"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-25",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-20",
+    "gewicht": 1
+   },
+   {
+    "code": "K-22",
+    "gewicht": 0.5
+   },
+   {
+    "code": "KOG-57",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 14,
+   "max": 18
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "geschichte"
+  ],
+  "material": [
+   "stuhl"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Une place à table",
+   "text": "L’adulte raconte l’histoire d’une bande de copains : Lara, Luca, Inês et Yanis mangent depuis des années à la même table de la cantine et sont fiers de leur rituel du vendredi. Sofia vient d’arriver dans la classe et mange seule. Inês l’aime bien. L’adulte joue Inês, va vers la chaise à l’écart où Sofia est assise et montre le premier pas : un regard, une place offerte, un sujet du moment (« Tu as vu le match hier ? »). Le ou la jeune joue Luca et réfléchit : est-ce qu’il suit, et comment ? Puis ils échangent : il ou elle est Inês, choisit le sujet et la première phrase, et l’adulte est Sofia, assise sur la chaise.",
+   "sagen": [
+    "Les quatre sont fiers de leur bande. C’est bien. La question, c’est si cette fierté est plutôt une porte ou un mur pour les nouveaux.",
+    "Tu es Luca et tu vois Inês aller vers Sofia. Que fais-tu : regarder, détourner les yeux ou lui emboîter le pas ?",
+    "Maintenant, tu es Inês. Choisis un sujet que beaucoup de gens connaissent en ce moment et dis une première phrase à Sofia."
+   ],
+   "wennEsKippt": "Si le ou la jeune ne veut pas jouer, il ou elle écrit la première phrase sur un papier et l’adulte lit la réponse de Sofia. Si cela devient trop personnel (sa propre expérience de nouveau ou de nouvelle), on reste sur la bande inventée.",
+   "kurz": "Scène de bande · Luca suit · Inês dit la première phrase",
+   "vorbereitung": "Placer une chaise un peu à l’écart de la table : c’est là que s’assoit Sofia."
+  },
+  "tagesform": [],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Offen für Neue?",
+    "fr": "Ouverts aux nouveaux ?"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Im Schulbus sitzen Nora, Max und Kim immer hinten. Ravi ist neu und sitzt allein vorne; er zeichnet in einem Heft."
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Woran erkennt man, dass eine Clique offen für Neue ist? Kreuz an, mehrere gehen.",
+     "items": [
+      "Jemand rückt zur Seite und bietet einen Platz an.",
+      "Alle schauen weg, wenn jemand Neues kommt.",
+      "Die Gruppe fragt Neue nach ihren Interessen.",
+      "Es gibt Witze, die nur die Gruppe versteht, und niemand erklärt sie.",
+      "Jemand stellt die Neuen den anderen vor.",
+      "Die Plätze sind fest verteilt, und niemand teilt sie."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Verbinde: Nora sieht …",
+      "… ihr erster Satz"
+     ],
+     "links": [
+      "Ravi zeichnet in einem Heft.",
+      "Ravi trägt ein Fußballtrikot.",
+      "Ravi hört Musik und wippt im Takt."
+     ],
+     "rechts": [
+      "„Hast du das Spiel am Wochenende gesehen?“",
+      "„Was hörst du da gerade?“",
+      "„Cool, was zeichnest du da?“"
+     ]
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "wenn": "Wenn Nora sich zu Ravi setzt und ihn anspricht …",
+     "dann": "… dann könnte Max …"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Eine Person, die ich gern besser kennenlernen würde (echt oder erfunden):",
+      "Mein erster Satz, mit einem Thema, das gerade viele kennen:"
+     ],
+     "linien": 1
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Dans le bus scolaire, Nora, Max et Kim s’asseyent toujours au fond. Ravi est nouveau et s’assoit seul à l’avant ; il dessine dans un cahier."
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "À quoi voit-on qu’une bande est ouverte aux nouveaux ? Coche, plusieurs réponses possibles.",
+     "items": [
+      "Quelqu’un se pousse et propose une place.",
+      "Tout le monde détourne le regard quand quelqu’un de nouveau arrive.",
+      "Le groupe demande aux nouveaux ce qui les intéresse.",
+      "Il y a des blagues que seul le groupe comprend, et personne ne les explique.",
+      "Quelqu’un présente les nouveaux aux autres.",
+      "Les places sont attribuées une fois pour toutes, et personne ne les partage."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Relie : Nora voit …",
+      "… sa première phrase"
+     ],
+     "links": [
+      "Ravi dessine dans un cahier.",
+      "Ravi porte un maillot de foot.",
+      "Ravi écoute de la musique et suit le rythme."
+     ],
+     "rechts": [
+      "« Tu as vu le match du week-end ? »",
+      "« Qu’est-ce que tu écoutes là ? »",
+      "« Cool, qu’est-ce que tu dessines ? »"
+     ]
+    },
+    {
+     "art": "wennDann",
+     "zeilen": 1,
+     "wenn": "Si Nora s’assoit à côté de Ravi et lui parle …",
+     "dann": "… alors Max pourrait …"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Une personne que j’aimerais mieux connaître (vraie ou inventée) :",
+      "Ma première phrase, avec un sujet que beaucoup de gens connaissent en ce moment :"
+     ],
+     "linien": 1
+    }
+   ]
+  },
+  "kurz": "Clique-Szene hören · als Luca nachziehen · als Inês ersten Satz sagen",
+  "vorbereitung": "Einen Stuhl etwas abseits vom Tisch hinstellen: Dort sitzt Sofia."
+ },
+ {
+  "id": "j:meine-trainingskarte",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Meine Trainingskarte",
+  "text": "Auf dem Boden entstehen drei Stationen: Einbeinstand (Sekunden zählen, bis 10), Zielwurf einer zusammengerollten Socke in den Korb aus zwei Metern und Socke hochwerfen, klatschen, fangen. Die Fachkraft zeigt jede Station und macht einen Versuch mit. Der oder die Jugendliche schreibt je Station eine Zahl von 0 bis 10 auf, die er oder sie sich zutraut, probiert (zehn Würfe oder Fangversuche) und trägt das Ergebnis ein. Für eine Station nach Wahl gibt es einen Tipp (Einbeinstand: festen Punkt anschauen; Wurf: Blick aufs Ziel, locker aus dem Knie; Fangen: Socke bis in die Hände ansehen) und eine zweite Runde.",
+  "sagen": [
+   "Drei kleine Stationen. Es geht nicht um Bestleistung, sondern darum, was sich mit ein bisschen Übung verändert.",
+   "Bevor du anfängst: Wie viele von zehn traust du dir zu? Schreib die Zahl auf, danach schauen wir, was rauskommt.",
+   "Mein Tipp, zum Beispiel beim Wurf: Schau auf das Ziel, nicht auf die Socke, und wirf locker aus dem Knie. Dann noch einmal."
+  ],
+  "wennEsKippt": "Ärgert sich der oder die Jugendliche über schlechte Ergebnisse, wird die Entfernung halbiert oder es gibt nur fünf Versuche, bis es wieder klappt. Wirkt der Einbeinstand peinlich, trägt er oder sie stattdessen eine Socke auf dem Handrücken drei Schritte weit.",
+  "werkzeug": {
+   "de": "Üben mit Zahlen: schätzen, probieren, Tipp, nochmal",
+   "fr": "S’entraîner : estimer, essayer, conseil, recommencer"
+  },
+  "uebertragbar": true,
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "wahrnehmen",
+  "thema": [
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-33",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-32",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-43",
+    "gewicht": 0.5
+   },
+   {
+    "code": "KOG-35",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "ausdauer",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 15
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 18
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 3,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "bewegung",
+   "spiel"
+  ],
+  "material": [
+   "socke",
+   "korb",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Ma carte d’entraînement",
+   "text": "Trois stations sont installées au sol : équilibre sur une jambe (compter les secondes jusqu’à 10), lancer d’une chaussette roulée en boule dans le panier à deux mètres, et lancer la chaussette en l’air, taper dans les mains, la rattraper. L’adulte montre chaque station et fait un essai. Pour chacune, le ou la jeune écrit un chiffre de 0 à 10 qu’il ou elle pense atteindre, essaie (dix lancers ou dix rattrapages) et note le résultat. Pour une station de son choix, il y a un conseil (équilibre : fixer un point ; lancer : viser la cible, en souplesse ; rattraper : suivre la chaussette des yeux) et un deuxième tour.",
+   "sagen": [
+    "Trois petites stations. Il ne s’agit pas de faire le meilleur score, mais de voir ce qui change avec un peu d’entraînement.",
+    "Avant de commencer : combien sur dix penses-tu réussir ? Écris le chiffre, puis on verra ce que ça donne.",
+    "Mon conseil, par exemple pour le lancer : regarde la cible, pas la chaussette, et lance en fléchissant un peu les genoux. Puis encore une fois."
+   ],
+   "wennEsKippt": "Si le ou la jeune s’énerve des mauvais résultats, on divise la distance par deux ou on ne fait que cinq essais, jusqu’à ce que ça marche. Si l’équilibre sur une jambe paraît gênant, il ou elle porte à la place une chaussette sur le dos de la main sur trois pas.",
+   "kurz": "3 stations · estimer · essayer · conseil · 2e tour",
+   "vorbereitung": "Marquer trois stations au sol : place pour l’équilibre · panier à 2 m · espace pour lancer"
+  },
+  "tagesform": [
+   "aufgedreht"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Rui übt für das Sportfest",
+    "fr": "Rui s’entraîne pour la fête du sport"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Rui übt für das Schulsportfest den Zielwurf. In der ersten Runde trifft er 4 von 10 Würfen. Nach einem Tipp trifft er in der zweiten Runde 7 von 10."
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Was hat Rui wahrscheinlich geholfen? Kreuz an, mehrere gehen.",
+     "items": [
+      "Er hat auf den Korb geschaut statt auf die Socke.",
+      "Er hat so fest wie möglich geworfen.",
+      "Er hat locker aus den Knien geworfen.",
+      "Er hat nach drei Fehlwürfen aufgehört.",
+      "Er hat die zweite Runde noch einmal versucht."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Verbinde: das Problem …",
+      "… der Tipp"
+     ],
+     "links": [
+      "Beim Einbeinstand wackelt Rui stark.",
+      "Die Socke fliegt immer zu weit.",
+      "Beim Fangen macht Rui die Augen zu."
+     ],
+     "rechts": [
+      "weniger Schwung nehmen",
+      "die Socke bis in die Hände anschauen",
+      "auf einen festen Punkt vor sich schauen"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Eine Bewegung oder ein Spiel, das ich gern besser könnte (echt oder erfunden):",
+      "So gut kann ich es heute, von 0 bis 10:",
+      "Ein Tipp, den ich mir selbst gebe:"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "skala",
+     "frage": "Wie leicht fällt es mir, bei einem Bewegungsspiel mitzumachen?",
+     "von": "schwer",
+     "bis": "leicht",
+     "stufen": 5
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Rui s’entraîne au lancer sur cible pour la fête du sport de l’école. Au premier tour, il réussit 4 lancers sur 10. Après un conseil, il en réussit 7 sur 10 au deuxième tour."
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Qu’est-ce qui a probablement aidé Rui ? Coche, plusieurs réponses possibles.",
+     "items": [
+      "Il a regardé le panier au lieu de la chaussette.",
+      "Il a lancé le plus fort possible.",
+      "Il a lancé en souplesse, en fléchissant les genoux.",
+      "Il a arrêté après trois lancers ratés.",
+      "Il a retenté un deuxième tour."
+     ],
+     "spalten": 1
+    },
+    {
+     "art": "zuordnen",
+     "titel": [
+      "Relie : le problème …",
+      "… le conseil"
+     ],
+     "links": [
+      "Sur une jambe, Rui vacille beaucoup.",
+      "La chaussette va toujours trop loin.",
+      "Pour rattraper, Rui ferme les yeux."
+     ],
+     "rechts": [
+      "prendre moins d’élan",
+      "suivre la chaussette des yeux jusque dans les mains",
+      "regarder un point fixe devant soi"
+     ]
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Un mouvement ou un jeu que j’aimerais mieux réussir (vrai ou inventé) :",
+      "Ce que je réussis aujourd’hui, de 0 à 10 :",
+      "Un conseil que je me donne :"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "skala",
+     "frage": "Est-ce facile pour moi de participer à un jeu de mouvement ?",
+     "von": "difficile",
+     "bis": "facile",
+     "stufen": 5
+    }
+   ]
+  },
+  "kurz": "3 Stationen · Zahl schätzen · probieren · Tipp · zweite Runde",
+  "vorbereitung": "Drei Stationen am Boden markieren: Standfläche · Korb in 2 m Abstand · freie Fläche zum Werfen"
  }
 ]

@@ -499,16 +499,28 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   // Auf einen Blick: Ziel der Stunde, Werkzeug der Übung, erster Satz
   const kernX = s.schritte.find((x) => x.rolle === 'kern')
   const kernE = kernX ? k.eintraege.get(kernX.ref) : undefined
-  const feld = feldDerStunde(plan, kernE)
+  // das Feld des Ziels, das der Kern dieser Sitzung übt (Testlauf 16.10.: Sitzung 4 übte „Gefühle anderer erkennen“, der erste
+  // Satz sagte „Gefühle in Worte fassen“ – das Feld des ersten Ziels der Folge)
+  const kernZiel = kernE ? plan.ziele.find((c) => kernE.eldib.some((x) => x.code === c)) : undefined
+  const feld = (kernZiel && ZIEL_FELD[kompetenzAusCode(kernZiel)] ? kompetenzAusCode(kernZiel) : undefined) ?? feldDerStunde(plan, kernE)
   const zf = feld ? ZIEL_FELD[feld] : undefined
   const werkzeug = kernE?.typ === 'schritt' ? kernE.werkzeug?.[sp] : undefined
-  const jung = p.alterJahre < 8
+  // … und je Sitzung ein anderer, konkreter Satz mit dem Titel der Übung (vorher in jeder Sitzung derselbe „kleine Trick“)
+  const kernTitel = kernE && !kernX!.ref.startsWith('pg:') ? textVon(kernE, sp).titel.replace(/[.!?]$/, '') : undefined
   const einstiegSatz = zf
-    ? sp === 'fr'
-      ? `Aujourd’hui, on va ${zf.satz.fr}.${werkzeug && !jung ? ' Pour ça, on essaie une petite astuce.' : ''}`
-      : `Heute geht es darum, ${zf.satz.de}.${werkzeug && !jung ? ' Dafür probieren wir einen kleinen Trick aus.' : ''}`
+    ? kernX?.ref === 'pg:uebertragen'
+      ? sp === 'fr' ? `Aujourd’hui, on va ${zf.satz.fr} – et chercher où tu pourras t’en servir ces prochains jours.` : `Heute geht es darum, ${zf.satz.de} – und wo du das in den nächsten Tagen brauchen kannst.`
+      : kernX?.ref === 'pg:folge-transfer'
+        ? sp === 'fr' ? `Aujourd’hui, on regarde en arrière : qu’est-ce qui t’a aidé à ${zf.satz.fr} ?` : `Heute schauen wir zurück: Was hat dir geholfen, ${zf.satz.de}?`
+        : sp === 'fr'
+          ? `Aujourd’hui, on va ${zf.satz.fr}.${kernTitel ? ` Pour ça, on essaie « ${kernTitel} ».` : ''}`
+          : `Heute geht es darum, ${zf.satz.de}.${kernTitel ? ` Dafür probieren wir „${kernTitel}“ aus.` : ''}`
     : undefined
-  const einstieg = einstiegSatz ? (sp === 'fr' ? `« ${einstiegSatz} »` : `„${einstiegSatz}“`) : undefined
+  // ein Themen-Einstieg bringt seinen eigenen ersten Satz mit – nicht zwei verschiedene Anfänge
+  const thEinstieg = s.schritte.map((x) => k.eintraege.get(x.ref)).find((e) => e?.id.startsWith('th:') && e.rolle.includes('einstieg'))
+  const thSatz = thEinstieg && s.schritte.some((x) => x.ref === thEinstieg.id && x.rolle === 'einstieg') ? textVon(thEinstieg, sp).sagen?.[0] : undefined
+  const ersterSatz = thSatz ?? einstiegSatz
+  const einstieg = ersterSatz ? (sp === 'fr' ? `« ${ersterSatz.replace(/^«\s*|\s*»$/g, '')} »` : `„${ersterSatz.replace(/^„|“$/g, '')}“`) : undefined
   // der Schritt „Worum es heute geht“ sagt denselben fertigen Satz (statt „sagt in einem Satz, worum es geht“)
   if (einstiegSatz) s.schritte.forEach((x, i) => {
     if (x.ref === 'pg:einstieg' && schritte[i]) schritte[i].sagen = [einstiegSatz, ...schritte[i].sagen.filter((t) => t !== einstiegSatz)].slice(0, 3)

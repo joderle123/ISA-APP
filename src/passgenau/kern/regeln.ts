@@ -229,8 +229,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   if (tm.size) {
     const einzeln = c.a.sozialform === 'einzeln' || !c.a.sozialform
     const eigen = e.id.startsWith('pg:')
-    // Themen-Rahmen (th:) sind fürs Einzelsetting geschrieben – „chacun“ (die Fachkraft und das Kind) ist dort keine Gruppe
-    const einzelText = eigen || e.id.startsWith('th:')
+    // Themen-Rahmen (th:) und die eigenen Einzelübungen (ki:, j:) sind fürs Einzelsetting geschrieben – „chacun“, „à tour de
+    // rôle“ (die Fachkraft und das Kind) ist dort keine Gruppe, und „die Gruppe wählt“ ist ein Thema, kein Setting
+    const einzelText = eigen || /^(th|ki|j):/.test(e.id)
     const kinderschutz = (c.p.achtung ?? []).includes('kinderschutz')
     if (einzeln && !einzelText && (tm.has('gruppe') || tm.has('ihr'))) return 'Gruppe'
     // Spielschule-Schritte sprechen fast alle von „den Kindern“ – dort nur nachrangig (gewicht), sonst ausgeschlossen

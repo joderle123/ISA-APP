@@ -483,6 +483,40 @@ function gleichesThema(e: KatalogEintrag, kern: KatalogEintrag): boolean {
   return (ziel && thema) || gemeinsamesThema
 }
 
+/** Der Satz, mit dem ein Einstieg ab Sitzung 2 an die letzte Sitzung anknüpft (roter Faden): die Übung beim Namen oder, nach
+ *  einer Übertragen-Sitzung, der vereinbarte kleine Versuch (Blind-Bewertung 11: „wird in der Folgesitzung nirgends
+ *  nachgefragt“). Gilt für den eigenen Einstieg und für Themen-Einstiege. */
+function anknuepfen(c: Kontext, nr: number, vorher: { de: string; fr: string } | undefined, nachVersuch: boolean): { de: string; fr: string } {
+  const v = nr > 1 ? vorher : undefined
+  if (c.alter >= 12) {
+    // offenes heikles Thema oder Krise (Blind-Bewertung 7 und 10: „fragt die Vorstunde ab“ bei Stimmung 2): nur erinnern
+    const still = (c.p.achtung ?? []).length > 0 || krisenlage(c)
+    if (nachVersuch && nr > 1)
+      return still
+        ? { de: `Zuerst erinnert die Fachkraft an den kleinen Versuch aus Sitzung ${nr - 1} – ohne nachzufragen. `, fr: `D’abord, l’adulte rappelle le petit essai de la séance ${nr - 1} – sans poser de questions. ` }
+        : { de: `Zuerst kurz nach dem kleinen Versuch aus Sitzung ${nr - 1} fragen – „nicht ausprobiert“ oder „hat nicht geklappt“ ist auch eine Antwort. `, fr: `D’abord demander brièvement comment s’est passé le petit essai de la séance ${nr - 1} – « pas essayé » ou « ça n’a pas marché » est aussi une réponse. ` }
+    if (!v) return { de: '', fr: '' }
+    return still
+      ? { de: `Zuerst erinnert die Fachkraft in einem Satz an „${v.de}“ aus Sitzung ${nr - 1} – ohne Fragen. `, fr: `D’abord, l’adulte rappelle en une phrase « ${v.fr} » (séance ${nr - 1}) – sans questions. ` }
+      : { de: `Zuerst kurz fragen, was von „${v.de}“ hängen geblieben ist – ein Satz reicht, nichts muss. `, fr: `D’abord demander brièvement ce qui est resté de « ${v.fr} » – une phrase suffit, rien n’est obligatoire. ` }
+  }
+  if (nachVersuch && nr > 1)
+    return krisenlage(c)
+      ? { de: `Zuerst erinnert die Fachkraft an den kleinen Versuch aus Sitzung ${nr - 1} – ohne nachzufragen. `, fr: `D’abord, l’adulte rappelle le petit essai de la séance ${nr - 1} – sans poser de questions. ` }
+      : { de: `Zuerst kurz nach dem kleinen Versuch aus Sitzung ${nr - 1} fragen: Hat es irgendwo geklappt? „Nicht ausprobiert“ ist auch eine Antwort. `, fr: `D’abord demander brièvement comment s’est passé le petit essai de la séance ${nr - 1} : est-ce que ça a marché quelque part ? « Pas essayé » est aussi une réponse. ` }
+  return v ? { de: `Zuerst ein Satz zu „${v.de}“ aus Sitzung ${nr - 1}: Die Fachkraft zeigt das Blatt von damals oder sagt, was da gemacht wurde. `, fr: `D’abord une phrase sur « ${v.fr} » (séance ${nr - 1}) : l’adulte montre la fiche de ce jour-là ou dit ce qu’on y a fait. ` } : { de: '', fr: '' }
+}
+
+/** Die Übung der letzten Sitzung beim Namen (nicht die eigene Übertragung oder den Rückblick) und ob davor übertragen wurde. */
+function vorigeUebung(c: Kontext, fruehere: string[], kernTitel: unknown): { vorher?: { de: string; fr: string }; nachVersuch: boolean } {
+  const vorRef = [...fruehere].reverse().find((r) => !r.startsWith('pg:'))
+  const vorE = vorRef ? c.k.eintraege.get(vorRef) : undefined
+  const vorher = vorE && fruehere[fruehere.length - 1] === vorRef && kernTitel === undefined
+    ? { de: textVon(vorE, 'de').titel, fr: vorE.typ === 'schritt' && vorE.fr ? vorE.fr.titel : textVon(vorE, 'de').titel }
+    : undefined
+  return { vorher, nachVersuch: fruehere[fruehere.length - 1] === 'pg:uebertragen' && c.weg === 'gruendlich' }
+}
+
 /** Eigener Einstieg, der den Kern der Stunde ankündigt (wenn keine Einheit einen passenden hat). Ab Sitzung 2 knüpft er an
  *  die Übung der letzten Sitzung beim Namen an (Blind-Bewertung 10: „derselbe Textbaustein in jeder Sitzung“, „was von der
  *  Übung davor hängen geblieben ist“ ohne Titel, „Beispiel aus ihrem eigenen Alltag“ ohne Anleitung). */
@@ -490,25 +524,11 @@ function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1, 
   const e = c.k.eintraege.get('pg:einstieg')!
   const de = titel?.de ?? textVon(kern, 'de').titel
   const fr = titel?.fr ?? (kern.typ === 'schritt' && kern.fr ? kern.fr.titel : de)
-  const v = nr > 1 ? vorher : undefined
   const ohnePunkt = (t: string) => t.trim().replace(/[.!]$/, '')
   const ziel = neuesZiel ? { de: `Heute kommt das zweite Ziel der Folge dazu: „${ohnePunkt(neuesZiel.de)}“. `, fr: `Aujourd’hui, le deuxième objectif de la série arrive : « ${ohnePunkt(neuesZiel.fr)} ». ` } : { de: '', fr: '' }
+  const an = anknuepfen(c, nr, vorher, nachVersuch)
   // Jugendliche: ohne „Material zeigen“ und „das Kind“; ab Sitzung 2 kurz an die letzte anknüpfen (roter Faden)
   if (c.alter >= 12) {
-    // offenes heikles Thema oder Krise (Blind-Bewertung 7 und 10: „fragt die Vorstunde ab“ bei Stimmung 2): nur erinnern
-    const still = (c.p.achtung ?? []).length > 0 || krisenlage(c)
-    // nach einer Übertragen-Sitzung: der vereinbarte kleine Versuch (Blind-Bewertung 11: „wird in der Folgesitzung nirgends
-    // nachgefragt“)
-    const versuch = nachVersuch && nr > 1
-      ? still
-        ? { de: `Zuerst erinnert die Fachkraft an den kleinen Versuch aus Sitzung ${nr - 1} – ohne nachzufragen. `, fr: `D’abord, l’adulte rappelle le petit essai de la séance ${nr - 1} – sans poser de questions. ` }
-        : { de: `Zuerst kurz nach dem kleinen Versuch aus Sitzung ${nr - 1} fragen – „nicht ausprobiert“ oder „hat nicht geklappt“ ist auch eine Antwort. `, fr: `D’abord demander brièvement comment s’est passé le petit essai de la séance ${nr - 1} – « pas essayé » ou « ça n’a pas marché » est aussi une réponse. ` }
-      : undefined
-    const an = versuch ?? (v
-      ? still
-        ? { de: `Zuerst erinnert die Fachkraft in einem Satz an „${v.de}“ aus Sitzung ${nr - 1} – ohne Fragen. `, fr: `D’abord, l’adulte rappelle en une phrase « ${v.fr} » (séance ${nr - 1}) – sans questions. ` }
-        : { de: `Zuerst kurz fragen, was von „${v.de}“ hängen geblieben ist – ein Satz reicht, nichts muss. `, fr: `D’abord demander brièvement ce qui est resté de « ${v.fr} » – une phrase suffit, rien n’est obligatoire. ` }
-      : { de: '', fr: '' })
     return {
       ref: e.id, h: e.h, rolle: 'einstieg', min: Math.min(min, 5), t: 'Worum es heute geht',
       ueber: {
@@ -520,11 +540,6 @@ function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1, 
   }
   // Kinder: zeigen, was bereitliegt – nur wenn es etwas gibt (Blind-Bewertung 10: „zeigt das Material“, es gab keins)
   const zeug = kern.material.length > 0 || (!!titel && c.alter < 10)
-  const an = nachVersuch && nr > 1
-    ? krisenlage(c)
-      ? { de: `Zuerst erinnert die Fachkraft an den kleinen Versuch aus Sitzung ${nr - 1} – ohne nachzufragen. `, fr: `D’abord, l’adulte rappelle le petit essai de la séance ${nr - 1} – sans poser de questions. ` }
-      : { de: `Zuerst kurz nach dem kleinen Versuch aus Sitzung ${nr - 1} fragen: Hat es irgendwo geklappt? „Nicht ausprobiert“ ist auch eine Antwort. `, fr: `D’abord demander brièvement comment s’est passé le petit essai de la séance ${nr - 1} : est-ce que ça a marché quelque part ? « Pas essayé » est aussi une réponse. ` }
-    : v ? { de: `Zuerst ein Satz zu „${v.de}“ aus Sitzung ${nr - 1}: Die Fachkraft zeigt das Blatt von damals oder sagt, was da gemacht wurde. `, fr: `D’abord une phrase sur « ${v.fr} » (séance ${nr - 1}) : l’adulte montre la fiche de ce jour-là ou dit ce qu’on y a fait. ` } : { de: '', fr: '' }
   return {
     ref: e.id, h: e.h, rolle: 'einstieg', min: Math.min(min, 5), t: 'Worum es heute geht',
     ueber: {
@@ -947,6 +962,9 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       const kk = kern ? themaKompetenzen(c, kern.kompetenz) : new Set<string>()
       const rahmenThema = (e: KatalogEintrag) => e.id.startsWith('th:') && e.kompetenz.some((x) => kk.has(x))
       if (kern) auswahl = auswahl.filter((w) => kernQuelle === quelleEinheit(w.b.e.id) || gleichesThema(w.b.e, kern!) || rahmenThema(w.b.e))
+      // Übertragen und Rückblick: der eigene Einstieg, der die Übung beim Namen nennt und nach dem Versuch fragt – kein
+      // Themen-Einstieg (Testlauf 16.10.: „Im Takt, ohne Worte“ zur Kooperation vor dem Übertragen einer Selbstbild-Übung)
+      if (slot.rolle === 'einstieg' && kern?.id.startsWith('pg:')) auswahl = auswahl.filter((w) => !w.b.e.id.startsWith('th:'))
       // Jugendliche: Einstiege aus Kurs und Förderfach setzen Vorwissen voraus („Neues Thema: …“, „Notbremse und Lenkung“ mit
       // Skills und Thermometer-Blatt in Sitzung 1) – nur Einzelübungen für Jugendliche oder der eigene Einstieg
       if (c.alter >= 12 || (kern && kuratiert(c, kern.id))) auswahl = auswahl.filter((w) => kuratiert(c, w.b.e.id) || rahmenThema(w.b.e) || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
@@ -961,13 +979,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         continue
       }
       if (!auswahl[0] && slot.rolle === 'einstieg' && kern) {
-        // die Übung der letzten Sitzung beim Namen (nicht die eigene Übertragung oder den Rückblick)
-        const vorRef = [...(o.fruehereKerne ?? [])].reverse().find((r) => !r.startsWith('pg:'))
-        const vorE = vorRef ? c.k.eintraege.get(vorRef) : undefined
-        const vorher = vorE && (o.fruehereKerne ?? [])[(o.fruehereKerne ?? []).length - 1] === vorRef && kernTitel === undefined
-          ? { de: textVon(vorE, 'de').titel, fr: vorE.typ === 'schritt' && vorE.fr ? vorE.fr.titel : textVon(vorE, 'de').titel }
-          : undefined
-        const nachVersuch = (o.fruehereKerne ?? [])[(o.fruehereKerne ?? []).length - 1] === 'pg:uebertragen' && c.weg === 'gruendlich'
+        const { vorher, nachVersuch } = vorigeUebung(c, o.fruehereKerne ?? [], kernTitel)
         ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr, kernTitel, o.neuesZiel, vorher, nachVersuch)
         continue
       }
@@ -1022,6 +1034,13 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     }
     const rolle: Rolle = slot.rolle === 'vertiefung' ? 'kern' : (slot.rolle as Rolle)
     ergebnis[i] = planSchritt(w.b, rolle, slot.min, c, { phase: o.phase, nr: o.nr, lockerText: w.lockerText })
+    // Themen-Einstieg ab Sitzung 2: erst kurz an die letzte Übung anknüpfen, dann der Einstieg (roter Faden wie beim eigenen
+    // Einstieg)
+    if (slot.rolle === 'einstieg' && w.b.e.id.startsWith('th:') && w.b.e.typ === 'schritt' && o.nr > 1) {
+      const { vorher, nachVersuch } = vorigeUebung(c, o.fruehereKerne ?? [], kernTitel)
+      const an = anknuepfen(c, o.nr, vorher, nachVersuch)
+      if (an.de) ergebnis[i]!.ueber = { ...ergebnis[i]!.ueber, text: `${an.de}Danach: ${w.b.e.text}`, ...(w.b.e.fr ? { 'fr.text': `${an.fr}Ensuite : ${w.b.e.fr.text}` } : {}) }
+    }
     gewaehlt.push({ b: w.b, slot, i })
     benutzt.add(w.b.e.id)
     w.b.e.format.forEach((f) => formate.add(f))
