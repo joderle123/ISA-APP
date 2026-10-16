@@ -604,7 +604,10 @@ function uebertragenSchritt(c: Kontext, min: number, quellen: { ref: string; nr:
     const t = qs.map((x) => (x.e?.typ === 'schritt' ? x.e.transfer?.[sp] : undefined))
     if (!t[0]) return null
     const szenen = zwei && t[1] ? [t[0].szenen[0], t[1].szenen[0]] : t[0].szenen.slice(0, 2)
-    return { szenen, versuch: t[0].versuch }
+    // bei Streit anderer: nur, wenn es ungefährlich ist (Blind-Bewertung 13: „Wochenversuch ohne Sicherheitsgrenze“)
+    const konflikt = qs.some((x) => x.e?.kompetenz.includes('konflikte'))
+    const grenze = konflikt ? (sp === 'fr' ? ' (seulement si c’est sans danger – sinon, aller chercher un adulte)' : ' (nur, wenn es ungefährlich ist – sonst eine erwachsene Person holen)') : ''
+    return { szenen, versuch: t[0].versuch.replace(/[.!]$/, '') + grenze }
   }
   const tr = { de: paket('de'), fr: paket('fr') }
   const zit2 = (t: string, sp: 'de' | 'fr') => zit(t.replace(/[.!]$/, ''), sp)
@@ -727,7 +730,7 @@ function folgeTransferSchritt(c: Kontext, min: number, kerne: string[], uebertra
   const proben = (sp: 'de' | 'fr') =>
     eintraege
       .filter((x) => x.typ === 'schritt' && x.transfer?.[sp])
-      .slice(0, 3)
+      .slice(0, 4)
       .map((x) => `${sp === 'fr' ? 'pour' : 'zu'} ${nur(x, sp).replace(/ \(.*\)$/, '')}: ${sp === 'fr' ? `« ${(x as { transfer: { fr: { probe: string } } }).transfer.fr.probe} »` : `„${(x as { transfer: { de: { probe: string } } }).transfer.de.probe}“`}`)
       .join(' · ')
   const probeDe = proben('de')
@@ -741,10 +744,10 @@ function folgeTransferSchritt(c: Kontext, min: number, kerne: string[], uebertra
         // Blind-Bewertung 9: „vier Übungen vormachen in 12 Minuten“, „Rückblick & Feiern ohne Feier“, „Material fehlt“
         // kurz (Blind-Bewertung 10: „Wahl, Wiederholung, Feier und Abzeichen in 5–8 Minuten nicht machbar“): unter 10 Minuten
         // nur kurz zeigen, wie sie ging
-        text: `${an.de}Die Übungen der letzten Male liegen da – die Blätter oder je ein Zettel mit dem Titel: ${de}. Das Kind sucht die aus, die am meisten Spaß gemacht oder geholfen hat, ${min >= 10 ? 'und sie wird noch einmal gespielt (drei, vier Minuten)' : 'und zeigt kurz, wie sie ging'}.${min >= 15 ? (probeDe ? ` Danach eine kleine neue Probe zur gewählten Übung – die Fachkraft liest die passende vor (${probeDe}), und das Kind zeigt oder sagt, was die Figur tun könnte.` : ' Danach eine kleine neue Probe: Die Fachkraft erzählt eine neue, erfundene Situation, in der diese Übung passt, und das Kind zeigt oder sagt, was es tun würde.') : ''} Dann wird gefeiert: Die Fachkraft sagt eine Sache, die ihr in den Stunden gefallen hat, und das Kind bekommt einen Sticker oder einen Stern auf eine Karte.${mitBlatt ? ' Auf dem Blatt malt es danach sein Abzeichen.' : ''}`,
-        'fr.text': `${an.fr}Les activités des dernières fois sont là – les fiches ou un papier avec chaque titre : ${fr}. L’enfant choisit celle qu’il a le plus aimée ou qui l’a le plus aidé, ${min >= 10 ? 'et on la refait une fois (trois, quatre minutes)' : 'et montre brièvement comment elle allait'}.${min >= 15 ? (probeFr ? ` Ensuite, un petit essai nouveau sur l’activité choisie – l’adulte lit celui qui va (${probeFr}), et l’enfant montre ou dit ce que le personnage pourrait faire.` : ' Ensuite, un petit essai nouveau : l’adulte raconte une nouvelle situation inventée où cette activité convient, et l’enfant montre ou dit ce qu’il ferait.') : ''} Puis on fête : l’adulte nomme une chose qui lui a plu pendant les séances, et l’enfant reçoit un autocollant ou une étoile sur une carte.${mitBlatt ? ' Sur la fiche, il dessine ensuite son badge.' : ''}`,
-        sagen: 'Welche machen wir noch einmal? Du darfst aussuchen.',
-        'fr.sagen': 'Laquelle on refait ? Tu peux choisir.',
+        text: `${an.de}Die Übungen der letzten Male liegen da – ${mitBlatt ? 'die Blätter oder je ein Zettel mit dem Titel' : 'je ein Ding aus jeder Übung'}: ${de}. Das Kind sucht die aus, die am meisten Spaß gemacht oder geholfen hat, ${min >= 10 ? 'und sie wird noch einmal gespielt (drei, vier Minuten)' : 'und zeigt kurz, wie sie ging'}.${min >= 15 ? (probeDe ? ` Danach eine kleine neue Probe zur gewählten Übung – die Fachkraft liest die passende vor (${probeDe}), und das Kind zeigt oder sagt, was die Figur tun könnte.` : ' Danach eine kleine neue Probe: Die Fachkraft erzählt eine neue, erfundene Situation, in der diese Übung passt, und das Kind zeigt oder sagt, was es tun würde.') : ''} Dann wird gefeiert: Die Fachkraft sagt eine Sache, die ihr in den Stunden gefallen hat, und das Kind bekommt einen Sticker oder einen Stern auf eine Karte.${mitBlatt ? ' Auf dem Blatt malt es danach sein Abzeichen.' : ''}`,
+        'fr.text': `${an.fr}Les activités des dernières fois sont là – ${mitBlatt ? 'les fiches ou un papier avec chaque titre' : 'un objet de chaque activité'} : ${fr}. L’enfant choisit celle qu’il a le plus aimée ou qui l’a le plus aidé, ${min >= 10 ? 'et on la refait une fois (trois, quatre minutes)' : 'et montre brièvement comment elle allait'}.${min >= 15 ? (probeFr ? ` Ensuite, un petit essai nouveau sur l’activité choisie – l’adulte lit celui qui va (${probeFr}), et l’enfant montre ou dit ce que le personnage pourrait faire.` : ' Ensuite, un petit essai nouveau : l’adulte raconte une nouvelle situation inventée où cette activité convient, et l’enfant montre ou dit ce qu’il ferait.') : ''} Puis on fête : l’adulte nomme une chose qui lui a plu pendant les séances, et l’enfant reçoit un autocollant ou une étoile sur une carte.${mitBlatt ? ' Sur la fiche, il dessine ensuite son badge.' : ''}`,
+        sagen: mitBlatt ? 'Welche machen wir noch einmal? Du darfst aussuchen.' : 'Welches Spiel machen wir noch einmal? Du darfst zeigen.',
+        'fr.sagen': mitBlatt ? 'Laquelle on refait ? Tu peux choisir.' : 'Quel jeu on refait ? Tu peux montrer.',
         wennEsKippt: 'Mag das Kind nicht wählen, schlägt die Fachkraft eine vor. Feiern geht auch leise: ein Daumen hoch und ein Stern auf die Karte.',
         'fr.wennEsKippt': 'Si l’enfant ne veut pas choisir, l’adulte en propose une. Fêter peut aussi être discret : un pouce levé et une étoile sur la carte.',
       },
@@ -884,7 +887,9 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     // Phase „Übertragen“ (Jugendliche, seit Blind-Bewertung 8 auch Kinder ab 6): kein neues Thema, sondern geübte Übungen in
     // eine kommende Situation übertragen (Blind-Bewertungen 5 und 6: „die Übertragen-Sitzungen bringen neue Themen statt
     // Übertragung“)
-    if (slot.rolle === 'kern' && mitFaden(c) && c.weg !== 'leicht' && o.phase === 'uebertragen') {
+    // … und ab 4 (Blind-Bewertung 13: Vorschule bekam in der Übertragen-Sitzung nur ein weiteres Spiel – jetzt die Szene zum
+    // Nachspielen aus dem Alltags-Paket der Übung)
+    if (slot.rolle === 'kern' && (mitFaden(c) || c.alter >= 4) && c.weg !== 'leicht' && o.phase === 'uebertragen') {
       // Blind-Bewertung 7: „übertragen wird die zielfernste Übung der Folge (Würfelspiel, Kartentrick) statt des Meldens“ –
       // zuerst die Übung, die das Ziel dieser Sitzung direkt übt (Hauptcode vor Nebencode), dann die jüngere; Blind-Bewertung
       // 8: nie ein Rückblick- oder Einschätzwerkzeug („Vor einem Jahr und heute“, Werte-Jetons) und bei zwei Zielen beide

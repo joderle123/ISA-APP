@@ -425,7 +425,9 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
         mat.add(sp === 'fr' ? 'autocollants ou étoiles, une petite carte' : 'Sticker oder Sterne, eine kleine Karte')
       } else mat.add(sp === 'fr' ? 'petits papiers pour les titres (ou les fiches de la série)' : 'Zettel für die Titel (oder die Blätter der Folge)')
       // (Blind-Bewertung 13: „Zettel mit dem Titel“ im Text, „nichts vorzubereiten“ im Kasten)
-      vorbereitung.add(sp === 'fr' ? 'Écrire le titre de chaque activité de la série sur un papier (ou reprendre les fiches) ; garder à portée le matériel des activités.' : 'Den Titel jeder Übung der Folge auf einen Zettel schreiben (oder die Blätter der Folge nehmen); das Material der Übungen griffbereit legen.')
+      vorbereitung.add(p.alterJahre < 6
+        ? sp === 'fr' ? 'Poser un objet de chaque activité de la série (balle, marionnette …) ; garder le matériel à portée.' : 'Je ein Ding aus jeder Übung der Folge hinlegen (Ball, Handpuppe …); das Material griffbereit halten.'
+        : sp === 'fr' ? 'Écrire le titre de chaque activité de la série sur un papier (ou reprendre les fiches) ; garder à portée le matériel des activités.' : 'Den Titel jeder Übung der Folge auf einen Zettel schreiben (oder die Blätter der Folge nehmen); das Material der Übungen griffbereit legen.')
     }
     // Optionen einer Wahl bringen ihr Material mit („Einfach da sein“: Getränk, Knetball, Tuch)
     for (const w of x.wahl ?? []) {
@@ -552,8 +554,12 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     : uebQuelle ? plan.ziele.find((c) => uebQuelle.eldib.some((x) => x.code === c)) : kernX && !kernX.ref.startsWith('pg:') ? kernZiel : undefined
   const ich = ichCode ? zielSatz(k, p, ichCode, sp)?.trim() : undefined
   const ichZit = ich ? (sp === 'fr' ? `« ${ich} »` : `„${ich}“`) : undefined
-  const einstiegSatz = ichZit && kernX?.ref === 'pg:uebertragen'
+  const einstiegSatz = ichZit && kernX?.ref === 'pg:uebertragen' && p.alterJahre < 8
+    ? sp === 'fr' ? `Aujourd’hui, on joue ${ichZit} dans de petites scènes de tous les jours.` : `Heute spielen wir ${ichZit} in kleinen Szenen aus dem Alltag.`
+    : ichZit && kernX?.ref === 'pg:uebertragen'
     ? sp === 'fr' ? `Aujourd’hui, on emmène ${ichZit} dans ton quotidien : où est-ce que ça peut te servir ces prochains jours ?` : `Heute bringen wir ${ichZit} in deinen Alltag: Wo kannst du das in den nächsten Tagen brauchen?`
+    : kernX?.ref === 'pg:folge-transfer' && p.alterJahre < 6
+    ? sp === 'fr' ? 'Aujourd’hui, on regarde en arrière : quel jeu on refait ? Tu peux montrer.' : 'Heute schauen wir zurück: Welches Spiel machen wir noch einmal? Du darfst zeigen.'
     : ichZit && kernX?.ref === 'pg:folge-transfer'
     ? sp === 'fr' ? `Aujourd’hui, on regarde en arrière : ${ichZit} – qu’est-ce qui t’a aidé ?` : `Heute schauen wir zurück auf ${ichZit} – was hat dir geholfen?`
     : ichZit

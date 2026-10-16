@@ -435,13 +435,14 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
   }
   const liste: Baustein[] = [
     { art: 'text', klein: true, text: fr ? 'Pour une situation des prochains jours – vraie ou inventée.' : 'Für eine Situation der nächsten Tage – echt oder erfunden.' },
-    { art: 'ankreuzen', titel: fr ? 'Où est-ce que ça pourrait servir ? Plusieurs réponses possibles.' : 'Wo könnte es passen? Mehrere gehen.', items: szenen.length ? [...szenen, ...orte.jugend.slice(0, 3), orte.jugend[orte.jugend.length - 1]] : orte.jugend, spalten: szenen.length ? 2 : 3 },
+    { art: 'ankreuzen', titel: fr ? 'Où est-ce que ça pourrait servir ? Plusieurs réponses possibles.' : 'Wo könnte es passen? Mehrere gehen.', items: szenen.length ? [...szenen, orte.jugend[0], orte.jugend[orte.jugend.length - 1]] : orte.jugend, spalten: szenen.length ? 2 : 3 },
     // nur der Name des Werkzeugs (Blind-Bewertung 11: „dann: Stärken erkennen: Was tut sie? Wie heißt das Wort dazu?“)
     ...werkzeug.slice(0, 2).map((w, i): Baustein => ({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si … (où, quand)' : 'Wenn … (wo, wann)', dann: fr ? `alors : ${werkzeugName(w, titel[i])}` : `dann: ${werkzeugName(w, titel[i])}` })),
   ]
   // ein Plan B füllt die Seite sinnvoll (Blind-Bewertung 9: „Wenn-dann-Blatt zu zwei Dritteln leer bei 11 Minuten“)
   if (werkzeug.length < 2) liste.push({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si ça ne marche pas tout de suite …' : 'Wenn es nicht gleich klappt …', dann: fr ? 'alors j’essaie :' : 'dann probiere ich:' })
-  if (!o.wenigSchreiben) liste.push({ art: 'frage', text: fr ? 'À quoi je remarque ensuite que ça a aidé ?' : 'Woran merke ich danach, dass es geholfen hat?', linien: 1 })
+  // ab 12 (Blind-Bewertung 13: „zu abstrakt“ für 10-Jährige)
+  if (!o.wenigSchreiben && (o.alter ?? 12) >= 12) liste.push({ art: 'frage', text: fr ? 'À quoi je remarque ensuite que ça a aidé ?' : 'Woran merke ich danach, dass es geholfen hat?', linien: 1 })
   return liste
 }
 
