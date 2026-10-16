@@ -114,6 +114,11 @@ export interface Stundenschritt extends KatalogZusatz {
    *  Spiel oder eine Bewegung einbaut – steht unter dem Bewegungs- oder Spielblock der Stunde (Messung 5: „Bewegung und Spiel
    *  ohne Bezug zum Ziel“, „Füllblöcke beliebig“) */
   imSpiel?: { de: string; fr: string }
+  /** Einzelkurs: was die Sitzung samt Blatt an Lesen, Schreiben und Bild verlangt (0–2 bzw. 0–3, wie Profil.zugang) – die
+   *  Variante einer Kurs-Sitzung, die zum Zugang des Kindes passt, gewinnt (Kurs-Pilot 16.10.) */
+  zugang?: { lesen: number; schreiben: number; bild: number }
+  /** Ritual eines Einzelkurses (Id der Kurs-Linie): nur in Folgen dieses Kurses, dort vor allen anderen */
+  kurs?: string
   quelle: { art: SchrittQuelle; einheit?: string; titel: string }
   titel: string
   text: string

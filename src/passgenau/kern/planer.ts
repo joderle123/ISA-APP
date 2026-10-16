@@ -403,11 +403,36 @@ function ritualErlaubt(c: Kontext, e: KatalogEintrag, rolle: 'ankommen' | 'absch
 }
 
 /** themaK: nur Rituale zum Thema (Themen-Rahmen mit einer dieser Kompetenzen); ohne themaK nie ein Themen-Rahmen. */
+const KURS_DER_FOLGE = new WeakMap<Kontext, string | null>()
+/** Der Einzelkurs, den eine gründliche Folge nimmt: eine erste Kurs-Sitzung zum Hauptziel, die für das Kind passt. */
+function kursDerFolge(c: Kontext): string | null {
+  let k = KURS_DER_FOLGE.get(c)
+  if (k !== undefined) return k
+  k = null
+  if (c.weg === 'gruendlich' && c.ziele.length)
+    for (const e of c.k.nachRolle.get('kern') ?? []) {
+      if (e.typ !== 'schritt' || !e.linie?.id.startsWith('kurs-') || e.linie.nr !== 1) continue
+      if (!e.eldib.some((x) => x.gewicht === 1 && c.ziele.some((z) => z.code === x.code))) continue
+      if (pruefe(e, c, { rolle: 'kern' }) !== null) continue
+      k = e.linie.id
+      break
+    }
+  KURS_DER_FOLGE.set(c, k)
+  return k
+}
+
 function waehleRitual(c: Kontext, rolle: 'ankommen' | 'abschluss', min: number, salz: string, ausser: Set<string>, ohneFolge = false, themaK?: Set<string>): Bewertet | null {
+  // Einzelkurs: seine eigenen Rituale (Kurs-Pilot 16.10.: „Gefühlsfarbe“ und „Sternenkette“ hatten mit Eule Oli nichts zu tun)
+  const kurs = kursDerFolge(c)
+  if (kurs && !themaK)
+    for (const e of c.k.nachRolle.get(rolle) ?? [])
+      if (e.typ === 'schritt' && e.kurs === kurs && !ausser.has(e.id) && pruefe(e, c, { ritual: true, rolle }) === null) return bewerte(e, c, {})
   const gewuenscht = c.p.rituale?.[rolle]
   const liste: Bewertet[] = []
   for (const e of c.k.nachRolle.get(rolle) ?? []) {
     if (ausser.has(e.id) || e.id.startsWith('pg:')) continue
+    // Rituale eines Einzelkurses nur in dessen Folgen (oben)
+    if (e.typ === 'schritt' && e.kurs) continue
     if (themaK ? !(e.typ === 'schritt' && e.nurZumThema && e.kompetenz.some((k) => themaK.has(k))) : e.typ === 'schritt' && e.nurZumThema) continue
     if (ohneFolge && folgeRitual(e)) continue
     // Anfang und Schluss einer Material-, Kurs- oder Förderfach-Einheit sprechen von deren Übung (Testlauf 10: Abschluss
@@ -572,6 +597,11 @@ function nachLinie(c: Kontext, auswahl: Wahl[], fruehere: string[]): Wahl[] {
   const hoechst = new Map<string, number>()
   for (const r of fruehere) { const e = c.k.eintraege.get(r); if (e?.typ === 'schritt' && e.linie) hoechst.set(e.linie.id, Math.max(hoechst.get(e.linie.id) ?? 0, e.linie.nr)) }
   const zurueck = (w: Wahl) => { const x = linie(w); return !!x && (hoechst.get(x.id) ?? 0) > x.nr }
+  // Einzelkurs: eine Sitzung, die schon dran war, kommt in keiner anderen Variante wieder (Kurs-Pilot 16.10.: Sitzung 2 nahm
+  // Variante B von „Spur 1“)
+  const verbraucht = (w: Wahl) => { const x = linie(w); return !!x && x.id.startsWith('kurs-') && (hoechst.get(x.id) ?? 0) >= x.nr }
+  const offen = auswahl.filter((w) => !verbraucht(w))
+  if (offen.length) auswahl = offen
   const vorwaerts = [...auswahl.filter((w) => !zurueck(w)), ...auswahl.filter(zurueck)]
   const start = vorwaerts.find(frueh)
   if (start && vorwaerts[0] && start.b.s >= vorwaerts[0].b.s - 0.15) return [start, ...vorwaerts.filter((w) => w !== start)]

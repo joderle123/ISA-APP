@@ -629,7 +629,8 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     // Skala und freie Antworten in 11 Minuten“)
     // Einzelkurs (Kurs-Pilot 16.10.): das Blatt ist für die Sitzung geschrieben und bleibt ganz (nur bei wenig Schreiben gekürzt)
     const kursBlatt = kern.typ === 'schritt' && !!kern.linie?.id.startsWith('kurs-')
-    const hoechstens = kursBlatt && !o.wenigSchreiben ? 99 : o.min && o.min <= 4 ? 1 : o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / ((o.alter ?? 0) >= 12 ? 3 : 2.5))) : 99
+    // (die bildgestützte Variante, zugang.schreiben 0, ist schon für wenig Schreiben gebaut)
+    const hoechstens = kursBlatt && (!o.wenigSchreiben || (kern.typ === 'schritt' && kern.zugang?.schreiben === 0)) ? 99 : o.min && o.min <= 4 ? 1 : o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / ((o.alter ?? 0) >= 12 ? 3 : 2.5))) : 99
     for (const b of blattGeruest(fr ? eigen.fr : eigen.de, hoechstens, o)) {
       // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
       // … außer die Übung schreibt selbst eine Anweisung davor (Kinder-Blätter: „Was passt zusammen? Verbinde.“)

@@ -492,8 +492,9 @@ function tagesformWert(e: KatalogEintrag, c: Kontext): number {
 }
 
 function zugangWert(e: KatalogEintrag, c: Kontext): number {
-  if (e.typ !== 'baustein') return 1
   const z = c.p.zugang
+  // Kurs-Sitzungen bringen ihr Zugangsprofil mit (Varianten: am Tisch schreibend oder bildgestützt)
+  if (e.typ === 'schritt') return e.zugang ? Math.max(0, 1 - (Math.abs(e.zugang.lesen - z.lesen) + Math.abs(e.zugang.schreiben - z.schreiben) + Math.max(0, z.bild - e.zugang.bild)) / 6) : 1
   return Math.max(0, 1 - (Math.abs(e.lesemenge - z.lesen) + Math.abs(e.schreibmenge - z.schreiben) + Math.max(0, z.bild - e.bildanteil)) / 6)
 }
 
