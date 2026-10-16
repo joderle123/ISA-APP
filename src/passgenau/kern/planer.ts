@@ -526,7 +526,8 @@ function vorigeUebung(c: Kontext, fruehere: string[], kernTitel: unknown): { vor
   const vorher = vorE && fruehere[fruehere.length - 1] === vorRef && kernTitel === undefined
     ? { de: textVon(vorE, 'de').titel, fr: vorE.typ === 'schritt' && vorE.fr ? vorE.fr.titel : textVon(vorE, 'de').titel }
     : undefined
-  return { vorher, nachVersuch: fruehere[fruehere.length - 1] === 'pg:uebertragen' && c.weg === 'gruendlich' }
+  // (unter 8 gibt es beim Übertragen keinen Versuch – „keine Aufgabe für zu Hause“, Blind-Bewertung 13)
+  return { vorher, nachVersuch: fruehere[fruehere.length - 1] === 'pg:uebertragen' && c.weg === 'gruendlich' && c.alter >= 8 }
 }
 
 /** Eigener Einstieg, der den Kern der Stunde ankündigt (wenn keine Einheit einen passenden hat). Ab Sitzung 2 knüpft er an
@@ -638,8 +639,13 @@ function uebertragenSchritt(c: Kontext, min: number, quellen: { ref: string; nr:
     if (c.alter < 8) {
       ueber.text = `Die Übung ${herkunft('de')} kommt heute in den Alltag. Die Fachkraft macht ${tun('de')[0]} noch einmal kurz mit dem Kind. ${tr.de ? `Dann erzählt sie eine kleine Szene: ${zit2(tr.de.szenen[0].text, 'de')}. Das Kind zeigt mit der Figur (oder selbst), was es da mit ${kurz('de')} tun kann. Danach die zweite: ${zit2(tr.de.szenen[1].text, 'de')}.` : `Dann zeigt sie auf dem Blatt zwei der Bilder (etwa ${orte.de.kinder[0].text} und ${orte.de.kinder[1].text}) und erzählt zu einem eine kleine Szene${vorsichtig ? ' mit einer erfundenen Figur' : ''}. Die Figur kommt in die Szene, und das Kind spielt mit ihr, was sie jetzt tun kann. Danach noch einmal mit dem anderen Bild.`} Ein Lob für das Mitspielen – keine Aufgabe für zu Hause.`
       ueber['fr.text'] = `L’activité ${herkunft('fr')} passe aujourd’hui dans le quotidien. L’adulte refait brièvement ${tun('fr')[0]} avec l’enfant. ${tr.fr ? `Puis il raconte une petite scène : ${zit2(tr.fr.szenen[0].text, 'fr')}. L’enfant montre avec la figurine (ou lui-même) ce qu’il peut y faire avec ${kurz('fr')}. Ensuite la deuxième : ${zit2(tr.fr.szenen[1].text, 'fr')}.` : `Puis il montre sur la fiche deux des images (par exemple ${orte.fr.kinder[0].text} et ${orte.fr.kinder[1].text}) et raconte une petite scène pour l’une d’elles${vorsichtig ? ' avec une figurine inventée' : ''}. La figurine entre dans la scène, et l’enfant joue avec elle ce qu’elle peut faire maintenant. Ensuite, encore une fois avec l’autre image.`} Un compliment pour le jeu – pas de devoir pour la maison.`
-      ueber.wennEsKippt = `Fällt dem Kind nichts ein, zeigt die Fachkraft die Bilder auf dem Blatt (${orte.de.kinder.slice(0, 3).map((x) => x.text).join(', ')}) und das Kind tippt auf eins. Mag es nicht spielen, spielt die Fachkraft mit der Figur vor und das Kind zeigt nur, was es dann tun würde.`
-      ueber['fr.wennEsKippt'] = `Si rien ne vient, l’adulte montre les images de la fiche (${orte.fr.kinder.slice(0, 3).map((x) => x.text).join(', ')}) et l’enfant en touche une. S’il ne veut pas jouer, l’adulte joue avec la figurine et l’enfant montre seulement ce qu’il ferait.`
+      // (mit Szenen aus dem Alltags-Paket ohne Verweis auf Blatt-Bilder – bis 5 Jahre gibt es kein Blatt, Blind-Bewertung 13)
+      ueber.wennEsKippt = tr.de
+        ? 'Fällt dem Kind nichts ein, erzählt die Fachkraft die Szene noch einmal langsam und spielt sie mit der Figur vor; das Kind zeigt nur, was es dann tun würde. Zeigen zählt genauso wie Sagen.'
+        : `Fällt dem Kind nichts ein, zeigt die Fachkraft die Bilder auf dem Blatt (${orte.de.kinder.slice(0, 3).map((x) => x.text).join(', ')}) und das Kind tippt auf eins. Mag es nicht spielen, spielt die Fachkraft mit der Figur vor und das Kind zeigt nur, was es dann tun würde.`
+      ueber['fr.wennEsKippt'] = tr.fr
+        ? 'Si rien ne vient, l’adulte raconte la scène encore une fois lentement et la joue avec la figurine ; l’enfant montre seulement ce qu’il ferait. Montrer compte autant que dire.'
+        : `Si rien ne vient, l’adulte montre les images de la fiche (${orte.fr.kinder.slice(0, 3).map((x) => x.text).join(', ')}) et l’enfant en touche une. S’il ne veut pas jouer, l’adulte joue avec la figurine et l’enfant montre seulement ce qu’il ferait.`
     } else {
       // 8–9 mit Figur, ab 10 ohne (Blind-Bewertung 10: „Spiel mit Stofftier/Figur kindlich“ bei 11 Jahren); zwei
       // Übertragen-Sitzungen hintereinander nicht wortgleich: einmal durchspielen, einmal einen kleinen Plan machen
@@ -668,8 +674,8 @@ function uebertragenSchritt(c: Kontext, min: number, quellen: { ref: string; nr:
         ? `Si rien ne vient, l’adulte montre les images de la fiche (${orte.fr.kinder.slice(0, 3).map((x) => x.text).join(', ')}) et l’enfant en touche une. S’il ne veut pas jouer, l’adulte joue avec la figurine et l’enfant montre seulement ce qu’il ferait.`
         : 'Si aucune situation ne vient, l’adulte en propose deux inventées. Si c’est trop, une phrase suffit : où est-ce que je l’essaie ?'
     }
-    ueber.sagen = tr.de ? `Stell dir vor: ${tr.de.szenen[0].text} Was könntest du da mit ${kurz('de')} tun?` : `Wo könntest du ${kurz('de')} in den nächsten Tagen gut brauchen?`
-    ueber['fr.sagen'] = tr.fr ? `Imagine : ${tr.fr.szenen[0].text} Qu’est-ce que tu pourrais faire avec ${kurz('fr')} ?` : `Où est-ce que ${kurz('fr')} pourrait t’aider les prochains jours ?`
+    ueber.sagen = tr.de ? (c.alter < 8 ? `Stell dir vor: ${tr.de.szenen[0].text} Zeig mir mit der Figur, was du da tust!` : `Stell dir vor: ${tr.de.szenen[0].text} Was könntest du da mit ${kurz('de')} tun?`) : `Wo könntest du ${kurz('de')} in den nächsten Tagen gut brauchen?`
+    ueber['fr.sagen'] = tr.fr ? (c.alter < 8 ? `Imagine : ${tr.fr.szenen[0].text} Montre-moi avec la figurine ce que tu fais !` : `Imagine : ${tr.fr.szenen[0].text} Qu’est-ce que tu pourrais faire avec ${kurz('fr')} ?`) : `Où est-ce que ${kurz('fr')} pourrait t’aider les prochains jours ?`
     return { ref: e.id, h: e.h, rolle: 'kern', min, t: titel.de.slice(0, 60), art, ueber, warum: ['Übertragen: das Geübte in eine kommende Situation bringen'] }
   }
   const situation = tr.de
@@ -725,7 +731,7 @@ function folgeTransferSchritt(c: Kontext, min: number, kerne: string[], uebertra
   const mitBlatt = c.weg !== 'leicht' && blattModus(c) !== 'ohne'
   // nach einer Übertragen-Sitzung zuerst der kleine Versuch (Blind-Bewertung 13: „der Versuch aus Sitzung 3 wird nie
   // aufgegriffen“ – der Rückblick hat keinen eigenen Einstieg)
-  const an = kerne[kerne.length - 1] === 'pg:uebertragen' ? anknuepfen(c, kerne.length + 1, undefined, true) : { de: '', fr: '' }
+  const an = kerne[kerne.length - 1] === 'pg:uebertragen' && c.alter >= 8 ? anknuepfen(c, kerne.length + 1, undefined, true) : { de: '', fr: '' }
   // die neuen Proben aus den Alltags-Paketen der Übungen (Stufe 2) – je Übung eine erfundene Situation
   const proben = (sp: 'de' | 'fr') =>
     eintraege
