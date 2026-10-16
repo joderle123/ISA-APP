@@ -211,7 +211,7 @@
       ],
       "wennEsKippt": "Si le ou la jeune ne trouve pas de situation, il ou elle choisit seulement le papier et dit pourquoi. L’adulte peut décrire une situation inventée (deux personnes dans le bus), et le ou la jeune complète : à quoi le voit-on ?",
       "kurz": "Quatre papiers : visage · voix · posture · chat · une situation",
-      "vorbereitung": "Écrire 4 papiers : visage · voix · posture · message de chat"
+      "vorbereitung": "Écrire 4 papiers : visage · voix · posture · message dans le chat"
     },
     "kurz": "Vier Zettel: Gesicht · Stimme · Haltung · Chat · Situation erzählen",
     "vorbereitung": "4 Zettel beschriften: Gesicht · Stimme · Haltung · Chat-Nachricht"
@@ -339,7 +339,7 @@
     },
     "fr": {
       "titel": "Plus que « ça va »",
-      "text": "L’adulte demande : « Comment tu vas en ce moment ? » Chacun répond non pas par « bien » ou « ça va », mais en commençant par « En ce moment, je suis plutôt … » avec un mot de son choix (par exemple fatigué, impatient, calme, agacé). L’adulte commence ; à la place d’un mot d’émotion, ce peut aussi être une météo, et « Passe » est permis.",
+      "text": "L’adulte demande : « Comment tu vas en ce moment ? » Tous deux répondent non pas par « bien » ou « ça va », mais en commençant par « En ce moment, je suis plutôt … » avec un mot de leur choix (par exemple fatigué, impatient, calme, agacé). L’adulte commence ; à la place d’un mot d’émotion, ce peut aussi être une météo, et « Passe » est permis.",
       "sagen": [
         "Aujourd’hui, on cherche des mots pour dire ce qu’on ressent. Pour commencer, un seul mot suffit.",
         "Je commence : en ce moment, je suis plutôt …",
@@ -396,7 +396,9 @@
       "gespraech"
     ],
     "material": [
-      "klebeband"
+      "klebeband",
+      "papier",
+      "stifte"
     ],
     "ort": "raum",
     "anspruch": 1,
@@ -409,7 +411,7 @@
     },
     "fr": {
       "titel": "Les émotions sur la ligne",
-      "text": "L’adulte colle sur le sol une ligne d’environ deux mètres : à gauche « à peine », à droite « très fort ». Il nomme une situation du quotidien (par exemple : rater le bus, recevoir un compliment en classe, un message qui reste sans réponse), et chacun se place au point de la ligne qui montre l’intensité habituelle d’une telle émotion, puis dit un mot. Cinq à six situations ; l’adulte participe à chaque fois.",
+      "text": "L’adulte colle sur le sol une ligne d’environ deux mètres : à gauche « à peine », à droite « très fort ». Ensuite, l’adulte nomme une situation du quotidien (par exemple : rater le bus, recevoir un compliment en cours, un message qui reste sans réponse), et les deux se placent au point de la ligne qui montre l’intensité habituelle d’une telle émotion, puis disent un mot. Cinq à six situations ; l’adulte participe à chaque fois.",
       "sagen": [
         "Aujourd’hui, on s’intéresse à la façon de dire ce qu’on ressent : à quel point, et avec quel mot ? On le teste en marchant.",
         "Place-toi là où cela correspond à peu près – aucun point n’est faux.",
@@ -482,7 +484,7 @@
     },
     "fr": {
       "titel": "Même émotion, trois phrases",
-      "text": "Le ou la jeune pense à une petite situation où une émotion n’a pas été exprimée, ou en invente une. Sur une feuille, le même contenu est écrit en trois versions : comme message dans le chat, comme phrase adressée à un ami ou une amie, et comme phrase adressée à un adulte. Ensuite, il ou elle dit quelle version a été la plus facile et laquelle en disait le plus. L’adulte écrit aussi trois versions pour un exemple à lui.",
+      "text": "Le ou la jeune pense à une petite situation où une émotion n’a pas été exprimée, ou en invente une. Sur une feuille, le même contenu est écrit en trois versions : comme message dans le chat, comme phrase adressée à un ami ou une amie, et comme phrase adressée à un adulte. Ensuite, il ou elle dit quelle version a été la plus facile et laquelle en disait le plus. L’adulte écrit aussi trois versions pour un exemple personnel.",
       "sagen": [
         "Aujourd’hui, on s’intéresse à la façon de dire ce qu’on ressent. Une même émotion peut se dire de plusieurs façons – on l’essaie.",
         "Quelle version a été la plus facile pour toi ?",
@@ -558,7 +560,7 @@
         "Je montre le mien en premier : il me correspond en ce moment.",
         "Et le tien ? Tu peux aussi laisser la feuille retournée – tu peux dire « Je passe »."
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut pas dessiner, il ou elle montre l’un de trois émojis que l’adulte esquisse vite (fatigué, calme, tendu). Un signe de tête à la place est aussi très bien.",
+      "wennEsKippt": "Si le ou la jeune ne veut pas dessiner, il ou elle désigne l’un des trois émojis que l’adulte esquisse vite (fatigué, calme, tendu). Un signe de tête à la place est aussi très bien.",
       "kurz": "Dessiner un émoji · le montrer · Je passe : feuille retournée"
     },
     "kurz": "Emoji für den Moment zeichnen · zeigen · Pass: Zettel umdrehen"
@@ -620,7 +622,7 @@
     },
     "fr": {
       "titel": "Niveau de batterie et un petit pas",
-      "text": "Chacun donne un chiffre de 0 à 100 pour son niveau de batterie en ce moment. Puis chacun cherche un tout petit pas qui pourrait faire un peu bouger ce chiffre (boire de l’eau, détendre les épaules, regarder un instant par la fenêtre) et le fait tout de suite. L’adulte commence et montre son pas en premier.",
+      "text": "Tous deux donnent un chiffre de 0 à 100 pour leur niveau de batterie en ce moment. Puis tous deux cherchent un tout petit pas qui pourrait faire un peu bouger leur chiffre (boire de l’eau, détendre les épaules, regarder un instant par la fenêtre) et le font tout de suite. L’adulte commence et montre son pas en premier.",
       "sagen": [
         "Aujourd’hui, on s’intéresse à l’autorégulation : remarquer comment on va et faire une petite chose pour soi. Pour commencer, un mini-exercice.",
         "Ma batterie est à … pour cent en ce moment. Et la tienne ?",
@@ -688,7 +690,7 @@
     },
     "fr": {
       "titel": "Monter puis redescendre",
-      "text": "Le ou la jeune marche une minute à bon rythme dans la pièce, comme pour s’échauffer avant l’entraînement, en balançant les bras. Puis vient la descente : marcher de plus en plus lentement, s’arrêter, expirer longuement deux fois et secouer les bras. L’adulte l’accompagne et dit à la fin à quoi il a remarqué le retour au calme (souffle, épaules ou jambes).",
+      "text": "Le ou la jeune marche une minute à bon rythme dans la pièce, comme pour s’échauffer avant l’entraînement, en balançant les bras. Puis vient la descente : marcher de plus en plus lentement, s’arrêter, expirer longuement deux fois et secouer les bras. L’adulte marche aussi et dit à la fin ce qui lui a fait remarquer son retour au calme (souffle, épaules ou jambes).",
       "sagen": [
         "Aujourd’hui, on s’intéresse à l’autorégulation : savoir monter puis redescendre en énergie. On l’essaie en bougeant.",
         "Marche une minute à bon rythme, comme avant l’entraînement – à l’allure qui te convient.",
@@ -759,13 +761,13 @@
     },
     "fr": {
       "titel": "Mon chemin pour me calmer",
-      "text": "L’adulte pose cinq papiers : respirer profondément, bouger, écouter de la musique, parler à quelqu’un, rester seul un moment. Le ou la jeune les trie en « m’aide souvent », « parfois » et « plutôt pas », et raconte pour un papier une fois où cela a aidé, par exemple avant quelque chose d’important à l’école ou après une dispute dans le chat. L’adulte trie aussi ses propres papiers.",
+      "text": "L’adulte pose cinq papiers : respirer profondément, bouger, écouter de la musique, parler à quelqu’un, rester seul un moment. Le ou la jeune les trie en « m’aide souvent », « parfois » et « plutôt pas », et raconte pour un papier une fois où cela a aidé, par exemple avant quelque chose d’important à l’école ou après une dispute en ligne. L’adulte trie aussi ses propres papiers.",
       "sagen": [
         "Aujourd’hui, on s’intéresse à l’autorégulation : qu’est-ce qui m’aide quand c’est trop ? Pour cela, on trie cinq possibilités.",
         "Où mets-tu ce papier ? Il n’y a ni bonne ni mauvaise réponse.",
-        "Quand cela t’a-t-il aidé la dernière fois ? Tu peux dire « Passe »."
+        "Quand est-ce que cela t’a déjà aidé ? « Passe » est permis."
       ],
-      "wennEsKippt": "Si le ou la jeune n’a pas d’exemple, on trie seulement et l’adulte en raconte un à lui. Si trier est trop, il ou elle choisit un seul papier, celui qui convient le mieux.",
+      "wennEsKippt": "Si le ou la jeune n’a pas d’exemple, on trie seulement et l’adulte raconte un exemple de sa propre expérience. Si trier est trop compliqué, il ou elle choisit un seul papier, celui qui convient le mieux.",
       "kurz": "Trier cinq papiers en trois piles · raconter un exemple",
       "vorbereitung": "Écrire 5 papiers : respirer · bouger · musique · parler · rester seul"
     },
@@ -828,7 +830,7 @@
     },
     "fr": {
       "titel": "Un cran plus bas",
-      "text": "Chacun évalue en silence son niveau de tension en ce moment (de 1 à 10), sans dire le chiffre. Puis on laisse retomber les épaules, on expire lentement une fois et on évalue à nouveau. Qui veut dit si le chiffre a baissé ; ensuite, au revoir.",
+      "text": "Tous deux évaluent en silence leur niveau de tension en ce moment (de 1 à 10), sans dire le chiffre. Puis on laisse retomber les épaules, on expire lentement une fois et on évalue à nouveau. Qui le souhaite peut dire si le chiffre a baissé ; ensuite, au revoir.",
       "sagen": [
         "Pour finir, quelque chose pour l’autorégulation : remarquer la tension et la faire descendre d’un cran.",
         "Évalue en silence un chiffre de 1 à 10. Tu n’as pas besoin de le dire.",
@@ -1035,7 +1037,7 @@
     },
     "fr": {
       "titel": "La seconde entre les deux",
-      "text": "Le ou la jeune pense à un moment de cette semaine où quelque chose voulait se passer très vite (dire quelque chose, envoyer un message, courir, acheter), ou en invente un. Sur une feuille, on dessine une ligne avec trois points : impulsion, pause, action. Le ou la jeune marque où il y a eu ou aurait pu y avoir une pause, et dit ce qui aurait aidé pendant cette pause. L’adulte apporte un exemple à lui.",
+      "text": "Le ou la jeune pense à un moment de cette semaine où quelque chose voulait se passer très vite (dire quelque chose, envoyer un message, courir, acheter), ou en invente un. Sur une feuille, on dessine une ligne avec trois points : impulsion, pause, action. Le ou la jeune marque où il y a eu ou aurait pu y avoir une pause, et dit ce qui aurait aidé pendant cette pause. L’adulte apporte aussi un exemple personnel.",
       "sagen": [
         "Aujourd’hui, on s’intéresse au contrôle des impulsions : entre l’impulsion et l’action, il y a une seconde qu’on peut utiliser. On la regarde de près.",
         "Où y a-t-il eu, ou y aurait-il, une pause ? Un exemple inventé est permis.",
@@ -1453,13 +1455,13 @@
     },
     "fr": {
       "titel": "Fait quand même",
-      "text": "Chacun nomme une petite chose terminée ces derniers temps alors que l’envie manquait (vocabulaire, entraînement, un exercice à l’école, un long trajet). L’adulte commence par un exemple, qui peut être minuscule. « Passe » est permis, alors l’adulte en nomme un deuxième.",
+      "text": "Tous les deux nomment une petite chose terminée ces derniers temps alors que l’envie manquait (vocabulaire, entraînement, un exercice à l’école, un long trajet). L’adulte commence par un exemple, qui peut être minuscule. « Je passe » est permis ; dans ce cas, l’adulte en nomme un deuxième.",
       "sagen": [
         "Aujourd’hui, on s’intéresse à la persévérance : tenir bon et aller jusqu’au bout. Pour commencer, un petit retour en arrière.",
         "Je commence : dernièrement, j’ai quand même terminé …",
-        "Et toi ? Cela peut être petit – ou « Passe »."
+        "Et toi ? Cela peut être petit – ou « Je passe »."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte propose deux exemples de la vie des jeunes (entraînement, devoirs, vocabulaire) et il ou elle choisit celui qui convient. Un signe de tête compte aussi.",
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte propose deux exemples de la vie des jeunes (entraînement, devoirs, vocabulaire) et le ou la jeune choisit celui qui convient. Un signe de tête compte aussi.",
       "kurz": "Nommer ce qu’on a terminé malgré le manque d’envie"
     },
     "kurz": "Nennen, was man trotz fehlender Lust zu Ende gebracht hat"
@@ -1594,13 +1596,13 @@
     },
     "fr": {
       "titel": "Qu’est-ce qui m’aide à tenir bon ?",
-      "text": "L’adulte pose quatre papiers : petites étapes, pauses régulières, récompense après, ne pas travailler seul. Le ou la jeune choisit celui qui l’aide le plus à tenir bon (devoirs, entraînement, exercices) et raconte une fois où cela a marché. L’adulte dit ce qui l’aide lui-même, en restant honnête.",
+      "text": "L’adulte pose quatre papiers : petites étapes, pauses régulières, récompense après, ne pas travailler seul. Le ou la jeune choisit celui qui l’aide le plus à tenir bon (devoirs, entraînement, exercices) et raconte une fois où cela a marché. L’adulte dit aussi ce qui l’aide personnellement, en restant honnête.",
       "sagen": [
         "Aujourd’hui, on s’intéresse à la persévérance. Regardons maintenant ce qui aide à tenir bon.",
         "Quel papier t’aide le plus ?",
-        "Quand cela a-t-il marché la dernière fois ? Ou que voudrais-tu essayer un jour ?"
+        "Quand est-ce que ça a déjà marché ? Ou qu’aimerais-tu essayer une fois ?"
       ],
-      "wennEsKippt": "Si aucun papier ne convient, le ou la jeune en écrit un lui-même. S’il ou elle n’a pas d’exemple, il suffit de choisir le papier et de dire brièvement pourquoi.",
+      "wennEsKippt": "Si aucun papier ne convient, le ou la jeune en écrit un autre de son invention. S’il ou elle n’a pas d’exemple, il suffit de choisir le papier et de dire brièvement pourquoi.",
       "kurz": "Quatre papiers : étapes · pauses · récompense · pas seul · choisir",
       "vorbereitung": "Écrire 4 papiers : petites étapes · pauses fixes · récompense · pas seul"
     },
@@ -1614,13 +1616,13 @@
       "titel": "Themen-Rahmen"
     },
     "titel": "Karten, die stehen",
-    "text": "Die Fachkraft und der oder die Jugendliche bauen beide ein kleines Kartenhaus aus fünf Spielkarten: Zwei Karten lehnen sich als Zelt gegeneinander, daneben steht ein zweites Zelt, und eine fünfte Karte liegt quer als Dach darüber. Fällt es um, wird ohne Kommentar neu angesetzt. Stehen beide Dächer, sagen sie „Tschüss“; nach spätestens drei Minuten ist auch ohne Dach Schluss.",
+    "text": "Die Fachkraft und der oder die Jugendliche bauen beide ihr eigenes kleines Kartenhaus aus je fünf Spielkarten: Zwei Karten lehnen sich als Zelt gegeneinander, daneben steht ein zweites Zelt, und eine fünfte Karte liegt quer als Dach darüber. Fällt es um, wird ohne Kommentar neu angesetzt. Stehen beide Dächer, sagen sie „Tschüss“; nach spätestens drei Minuten ist auch ohne Dach Schluss.",
     "sagen": [
       "Zum Schluss etwas zum Dranbleiben: Wir bauen beide ein kleines Kartenhaus. Es darf umfallen.",
       "Zwei Karten als Zelt, ein zweites Zelt daneben, die fünfte quer darüber. Fällt es, setzen wir neu an.",
       "Steht das Dach? Dann Tschüss."
     ],
-    "wennEsKippt": "Fällt das Dach ständig, reicht ein einzelnes Zelt aus zwei Karten. Rutschen die Karten, ein Blatt Papier oder ein Tuch unterlegen; klappt es sofort, kommt ein zweites Dach obendrauf.",
+    "wennEsKippt": "Fällt das Dach ständig, reicht ein einzelnes Zelt aus zwei Karten. Rutschen die Karten, ein Blatt Papier unterlegen; klappt es sofort, kommt ein zweites Dach obendrauf.",
     "rolle": [
       "abschluss"
     ],
@@ -1652,7 +1654,8 @@
       "spiel"
     ],
     "material": [
-      "spielkarten"
+      "spielkarten",
+      "papier"
     ],
     "ort": "raum",
     "anspruch": 0,
@@ -1665,13 +1668,13 @@
     },
     "fr": {
       "titel": "Des cartes qui tiennent",
-      "text": "L’adulte et le ou la jeune construisent tous deux un petit château de cartes avec cinq cartes : deux cartes s’appuient l’une contre l’autre comme une tente, une deuxième tente se dresse à côté, et une cinquième carte est posée à plat en travers comme toit. S’il s’écroule, on recommence sans commentaire. Quand les deux toits tiennent, on dit « au revoir » ; au bout de trois minutes au plus, on s’arrête de toute façon.",
+      "text": "L’adulte et le ou la jeune construisent tous deux leur propre petit château de cartes à partir de cinq cartes : deux cartes s’appuient l’une contre l’autre comme une tente, une deuxième tente se dresse à côté, et une cinquième carte est posée à plat en travers comme toit. S’il s’écroule, on recommence sans commentaire. Quand les deux toits tiennent, on dit « au revoir » ; au bout de trois minutes au plus, on s’arrête de toute façon.",
       "sagen": [
         "Pour finir, quelque chose sur la persévérance : on construit tous deux un petit château de cartes. Il a le droit de s’écrouler.",
         "Deux cartes en tente, une deuxième tente à côté, la cinquième en travers. S’il tombe, on recommence.",
         "Le toit tient ? Alors au revoir."
       ],
-      "wennEsKippt": "Si le toit tombe sans arrêt, une seule tente de deux cartes suffit. Si les cartes glissent, glisser une feuille de papier ou un foulard dessous ; si cela réussit tout de suite, on ajoute un deuxième toit par-dessus.",
+      "wennEsKippt": "Si le toit tombe sans arrêt, une seule tente de deux cartes suffit. Si les cartes glissent, glisser une feuille de papier dessous ; si cela réussit tout de suite, on ajoute un deuxième toit par-dessus.",
       "kurz": "Petit château de cartes · il tombe : recommencer · toit, au revoir"
     },
     "kurz": "Kleines Kartenhaus bauen · fällt es, neu ansetzen · Dach, dann Tschüss"
@@ -1757,7 +1760,7 @@
       "Wir spielen uns den Ball zu und gehen dabei. Vor dem Wurf ein Nicken oder „jetzt“.",
       "Was hat geholfen: Blick, Zeichen oder Tempo?"
     ],
-    "wennEsKippt": "Im Sitzen rollen oder werfen sich beide einen Papierball über den Tisch zu, mit einem Nicken vor dem Wurf. Fällt der Ball oft, rücken beide näher zusammen oder nehmen einen größeren Ball.",
+    "wennEsKippt": "Im Sitzen rollen oder werfen sich beide den Ball über den Tisch zu, mit einem Nicken vor dem Wurf. Fällt der Ball oft, rücken beide näher zusammen oder nehmen einen größeren Ball.",
     "rolle": [
       "bewegung"
     ],
@@ -1809,7 +1812,7 @@
         "On se lance la balle en marchant. Avant le lancer, un signe de tête ou « maintenant ».",
         "Qu’est-ce qui nous a aidés : le regard, le signe ou le rythme ?"
       ],
-      "wennEsKippt": "Assis : tous deux se font rouler ou lancer une balle en papier sur la table, avec un signe de tête avant chaque lancer. Si la balle tombe souvent, on se rapproche ou on prend une plus grande balle.",
+      "wennEsKippt": "Assis : tous deux se font rouler ou lancer la balle sur la table, avec un signe de tête avant chaque lancer. Si la balle tombe souvent, on se rapproche ou on prend une plus grande balle.",
       "kurz": "Marcher côte à côte · balle jamais au sol · signe avant le lancer"
     },
     "kurz": "Nebeneinander gehen · Ball zuwerfen, ohne Boden · Zeichen vor dem Wurf"
@@ -1882,7 +1885,7 @@
       ],
       "wennEsKippt": "Si le ou la jeune ne trouve pas de situation d’équipe, l’adulte en propose une inventée (créer une affiche pour l’école) et il ou elle choisit un rôle pour celle-ci. Un seul papier suffit aussi.",
       "kurz": "Cinq rôles d’équipe : mon rôle · un à essayer",
-      "vorbereitung": "Écrire 5 papiers : idées · organiser · agir · médiation · motiver"
+      "vorbereitung": "Écrire 5 papiers : donner des idées · organiser · se mettre au travail · faire le lien · motiver"
     },
     "kurz": "Fünf Teamrollen-Zettel: meine Rolle · eine zum Ausprobieren",
     "vorbereitung": "5 Zettel beschriften: Ideen geben · ordnen · anpacken · vermitteln · antreiben"
@@ -2018,7 +2021,7 @@
     },
     "fr": {
       "titel": "Ce que je vois d’ici",
-      "text": "L’adulte et le ou la jeune sont assis face à face, entre eux se trouve un objet qui a deux côtés différents (un gobelet à motif ou un livre ouvert). Chacun décrit en une phrase ce qu’il ou elle voit de sa place. Ensuite, ils échangent leurs places et vérifient si la description de l’autre était juste.",
+      "text": "L’adulte et le ou la jeune sont assis face à face, entre eux se trouve un objet qui a deux côtés différents (un gobelet à motif ou un livre ouvert). Les deux décrivent en une phrase ce qu’ils voient de leur place. Ensuite, ils échangent leurs places et vérifient si la description de l’autre était juste.",
       "sagen": [
         "Aujourd’hui, on s’intéresse aux conflits. Pour commencer : deux places, deux points de vue sur le même objet.",
         "Que vois-tu de ta place ? Je te dis ce que je vois de la mienne.",
@@ -2090,7 +2093,7 @@
     },
     "fr": {
       "titel": "Se retrouver au milieu",
-      "text": "Au sol se trouve une ligne de ruban adhésif, avec une feuille « point de rencontre » au milieu. Tous deux se tiennent aux bouts et veulent des choses incompatibles ; le ou la jeune choisit de quoi il s’agit (par exemple quelle musique passe d’abord). Tour à tour, une personne fait un pas vers le milieu et dit comment elle vient à la rencontre de l’autre (« Alors ta chanson passe en premier »), jusqu’au point de rencontre. À la fin, ils disent leur solution commune en une phrase.",
+      "text": "Au sol se trouve une ligne de ruban adhésif, avec une feuille « point de rencontre » au milieu. Tous deux se tiennent aux bouts et veulent des choses incompatibles ; le ou la jeune choisit de quoi il s’agit (par exemple quelle musique passe d’abord). Tour à tour, une personne fait un pas vers le milieu et dit comment elle vient à la rencontre de l’autre (« Alors ta chanson passe en premier »), jusqu’à ce que les deux soient au point de rencontre. À la fin, ils disent leur solution commune en une phrase.",
       "sagen": [
         "Aujourd’hui, on s’intéresse aux conflits : deux personnes veulent des choses différentes et doivent pourtant s’entendre. On le parcourt pas à pas.",
         "Choisis un petit point de désaccord, par exemple la musique. Un pas vers le milieu veut dire : je viens un peu à ta rencontre.",
@@ -2163,7 +2166,7 @@
     },
     "fr": {
       "titel": "Ce dont j’ai besoin dans une dispute",
-      "text": "Quatre fiches sont posées sur la table : d’abord de la distance, que quelqu’un m’écoute, une proposition pour la suite, un peu d’humour. L’adulte choisit d’abord la fiche qui compte le plus pour lui dans une dispute et dit en une phrase à quoi les autres peuvent le remarquer. Le ou la jeune choisit une ou deux fiches, ou aucune, et cherche à quoi les autres pourraient remarquer qu’on en a besoin : une phrase, un signe, un regard.",
+      "text": "Quatre fiches sont posées sur la table : d’abord de la distance, que quelqu’un m’écoute, une proposition pour la suite, un peu d’humour. L’adulte choisit d’abord la fiche qui compte le plus à ses yeux dans une dispute et dit en une phrase à quoi les autres peuvent le remarquer. Le ou la jeune choisit une ou deux fiches, ou aucune, et cherche à quoi les autres pourraient remarquer qu’on en a besoin : une phrase, un signe, un regard.",
       "sagen": [
         "Aujourd’hui, on parle des conflits. Dans une dispute, on n’a pas besoin de la même chose – on le regarde avec quatre fiches.",
         "Je choisis d’abord « de la distance ». On le remarque à une phrase comme : j’ai besoin de prendre l’air.",
@@ -2183,7 +2186,7 @@
       "titel": "Themen-Rahmen"
     },
     "titel": "Gegenvorschlag",
-    "text": "Die Fachkraft sagt einen Wunsch, der nicht zu dem eines anderen passt, zum Beispiel „Ich will am Fenster sitzen!“ oder „Ich will den Song gleich hören!“. Der oder die Jugendliche antwortet nicht mit „Nein“, sondern mit einem Gegenvorschlag, der beide Wünsche berücksichtigt („Wir wechseln nach der Hälfte“). Das geht zwei, drei Mal, dann nennt der oder die Jugendliche Wünsche, und die Fachkraft macht die Gegenvorschläge. Dann Tschüss.",
+    "text": "Die Fachkraft sagt einen Wunsch, der sich nicht zugleich mit dem Wunsch des Gegenübers erfüllen lässt, zum Beispiel „Ich will am Fenster sitzen!“ oder „Ich will den Song gleich hören!“. Der oder die Jugendliche antwortet nicht mit „Nein“, sondern mit einem Gegenvorschlag, der beide Wünsche berücksichtigt („Wir wechseln nach der Hälfte“). Das geht zwei, drei Mal, dann nennt der oder die Jugendliche Wünsche, und die Fachkraft macht die Gegenvorschläge. Dann Tschüss.",
     "sagen": [
       "Zum Schluss etwas zu Konflikten: Statt „Nein“ zu sagen, hilft oft ein Gegenvorschlag.",
       "Ich will am Fenster sitzen! – Was ist dein Gegenvorschlag?",
@@ -2233,7 +2236,7 @@
     },
     "fr": {
       "titel": "La contre-proposition",
-      "text": "L’adulte exprime un souhait qui ne va pas avec celui de quelqu’un d’autre, par exemple « Je veux m’asseoir près de la fenêtre ! » ou « Je veux écouter ce morceau tout de suite ! ». Le ou la jeune ne répond pas « non », mais par une contre-proposition qui tient compte des deux souhaits (« On change à la moitié »). On le fait deux ou trois fois, puis le ou la jeune exprime des souhaits, et l’adulte fait les contre-propositions. Puis au revoir.",
+      "text": "L’adulte exprime un souhait qui ne peut pas être réalisé en même temps que celui de son vis-à-vis, par exemple « Je veux m’asseoir près de la fenêtre ! » ou « Je veux écouter ce morceau tout de suite ! ». Le ou la jeune ne répond pas « non », mais par une contre-proposition qui tient compte des deux souhaits (« On change à la moitié du temps »). On le fait deux ou trois fois, puis le ou la jeune exprime des souhaits, et l’adulte fait les contre-propositions. Puis au revoir.",
       "sagen": [
         "Pour finir, quelque chose sur les conflits : au lieu de dire « non », une contre-proposition aide souvent.",
         "Je veux m’asseoir près de la fenêtre ! – Quelle est ta contre-proposition ?",
@@ -2450,7 +2453,7 @@
       ],
       "wennEsKippt": "Si aucun papier ne convient, le ou la jeune en écrit un lui-même. S’il ou elle ne trouve rien, il ou elle choisit simplement le papier qu’il ou elle apprécie le plus dans les conversations.",
       "kurz": "Trois papiers : regard · questions · laisser finir · lequel a aidé ?",
-      "vorbereitung": "Écrire 3 papiers : regard · poser des questions · laisser finir"
+      "vorbereitung": "Écrire 3 papiers : contact visuel · poser des questions · laisser finir"
     },
     "kurz": "Drei Zettel: Blickkontakt · Fragen · ausreden lassen · was half?",
     "vorbereitung": "3 Zettel beschriften: Blickkontakt · Fragen stellen · ausreden lassen"
@@ -2514,7 +2517,7 @@
     },
     "fr": {
       "titel": "Ma phrase pour demain",
-      "text": "Chacun écrit sur un papier un début de phrase avec lequel il ou elle pourrait entamer une conversation demain (par exemple : « Comment s’est passé ton week-end ? » ou « Je peux te poser une question ? »). L’adulte lit son début de phrase ; le ou la jeune peut le lire ou le garder pour lui ou elle. Le papier peut être emporté.",
+      "text": "Tous deux écrivent sur un papier un début de phrase avec lequel ils pourraient entamer une conversation demain (par exemple : « Comment s’est passé ton week-end ? » ou « Je peux te poser une question ? »). L’adulte lit son début de phrase ; le ou la jeune peut le lire ou le garder pour soi. Le papier peut être emporté.",
       "sagen": [
         "Pour finir, une phrase sur le thème de parler et d’écouter : comment pourrais-je commencer une conversation demain ?",
         "Mon début de phrase est : …",
@@ -2611,7 +2614,7 @@
       "Erst hängende Schultern, dann neutral, dann aufrecht. Was ändert sich?",
       "Welcher Gang fühlt sich nach dir an?"
     ],
-    "wennEsKippt": "Im Sitzen probieren beide drei Sitzhaltungen aus (eingesunken, neutral, aufrecht) und beantworten dieselben Fragen. Mag der oder die Jugendliche nicht zeigen, schaut er oder sie zu, und die Fachkraft zeigt alle Varianten.",
+    "wennEsKippt": "Im Sitzen probieren beide drei Sitzhaltungen aus (eingesunken, neutral, aufrecht) und beantworten dieselben Fragen. Mag der oder die Jugendliche nicht zeigen, schaut er oder sie zu, und die Fachkraft zeigt die drei Varianten.",
     "rolle": [
       "bewegung"
     ],
@@ -2654,13 +2657,13 @@
     },
     "fr": {
       "titel": "Trois façons de marcher",
-      "text": "Tous deux traversent plusieurs fois la pièce, chaque fois autrement : d’abord les épaules tombantes et le regard vers le bas, puis de façon neutre, puis le dos droit et le regard calme. Après chaque tour, chacun dit en une phrase ce qui a changé en marchant (rythme, ressenti, regard). À la fin, chacun cherche la démarche qui lui ressemble.",
+      "text": "Tous deux traversent plusieurs fois la pièce, chaque fois autrement : d’abord les épaules tombantes et le regard vers le bas, puis de façon neutre, puis le dos droit et le regard calme. Après chaque tour, tous deux disent en une phrase ce qui a changé en marchant (rythme, ressenti, regard). À la fin, tous deux cherchent leur propre démarche, celle qui leur ressemble.",
       "sagen": [
         "Aujourd’hui, on s’intéresse à l’image de soi. La posture et ce qu’on ressent sont liés – on l’essaie maintenant.",
         "D’abord les épaules tombantes, puis neutre, puis le dos droit. Qu’est-ce qui change ?",
         "Quelle démarche te ressemble ?"
       ],
-      "wennEsKippt": "Assis : tous deux essaient trois postures (affaissé, neutre, droit) et répondent aux mêmes questions. Si le ou la jeune ne veut pas montrer, il ou elle regarde, et l’adulte montre toutes les variantes.",
+      "wennEsKippt": "Assis : tous deux essaient trois postures (affaissée, neutre, droite) et répondent aux mêmes questions. Si le ou la jeune ne veut pas montrer, il ou elle regarde, et l’adulte montre les trois variantes.",
       "kurz": "Trois démarches : voûté · neutre · droit · dire ce qui change"
     },
     "kurz": "Drei Gangarten: hängend · neutral · aufrecht · Veränderung benennen"
@@ -2795,7 +2798,7 @@
     },
     "fr": {
       "titel": "Ligne de profil du jour",
-      "text": "Tous deux écrivent sur une feuille une ligne de profil de trois mots, comme dans la bio d’un profil, par exemple « basket, musique, calme » ou « curieux, calme, guitare ». L’adulte montre d’abord sa propre ligne. Le ou la jeune montre la sienne ou garde la feuille. Puis au revoir.",
+      "text": "Tous deux écrivent sur une feuille une ligne de profil de trois mots, comme dans la bio d’un profil, par exemple « basket, musique, détendu » ou « curieux, calme, guitare ». L’adulte montre d’abord sa propre ligne. Le ou la jeune montre la sienne ou garde la feuille. Puis au revoir.",
       "sagen": [
         "Pour finir, quelque chose sur l’image de soi : trois mots qui me correspondent aujourd’hui, comme dans un profil.",
         "Je montre d’abord : ce sont mes trois mots d’aujourd’hui.",
@@ -2887,7 +2890,7 @@
       "Dieser Begriff kommt an die Tür. Welches Bild verbindet ihn damit?",
       "Jetzt gehen wir die Route ab und sagen alle fünf auf."
     ],
-    "wennEsKippt": "Im Sitzen dienen fünf Dinge auf dem Tisch (Stift, Becher, Heft …) als Stationen, und ein Finger wandert von Ding zu Ding. Sind fünf Begriffe zu viel, genügen drei.",
+    "wennEsKippt": "Im Sitzen dienen die fünf Finger einer Hand als Stationen, und ein Finger der anderen Hand wandert von Finger zu Finger. Sind fünf Begriffe zu viel, genügen drei.",
     "rolle": [
       "bewegung"
     ],
@@ -2937,7 +2940,7 @@
         "Cette notion va à la porte. Quelle image peut la relier à cet endroit ?",
         "Maintenant, on parcourt le chemin et on dit les cinq notions."
       ],
-      "wennEsKippt": "Assis : cinq objets sur la table (stylo, gobelet, cahier …) servent de stations, et un doigt passe d’un objet à l’autre. Si cinq notions, c’est trop, trois suffisent.",
+      "wennEsKippt": "Assis : les cinq doigts d’une main servent de stations, et un doigt de l’autre main passe d’un doigt à l’autre. Si cinq notions, c’est trop, trois suffisent.",
       "kurz": "Cinq notions posées dans la pièce · parcours dans les deux sens"
     },
     "kurz": "Fünf Begriffe an Orten im Raum ablegen · Route vor- und rückwärts"
@@ -3002,15 +3005,15 @@
     },
     "fr": {
       "titel": "Mes façons d’apprendre",
-      "text": "L’adulte pose des papiers avec cinq méthodes d’apprentissage : écrire, expliquer avec ses propres mots, faire un schéma ou une carte mentale, se faire interroger, surligner en couleurs. Le ou la jeune les trie en deux piles, « je le fais déjà » et « je voudrais essayer », et raconte pour une méthode quand elle l’a aidé la dernière fois. L’adulte trie aussi et nomme une méthode qu’il ou elle utilise pour apprendre.",
+      "text": "L’adulte pose cinq petits papiers, un par méthode d’apprentissage : écrire, expliquer avec ses propres mots, faire un schéma ou une carte mentale, se faire interroger, surligner en couleurs. Le ou la jeune les trie en deux piles, « je l’utilise déjà » et « je voudrais l’essayer », puis raconte, pour une méthode, quand elle lui a servi pour la dernière fois. L’adulte trie aussi et nomme une méthode qu’il ou elle utilise pour apprendre.",
       "sagen": [
         "Aujourd’hui, on s’intéresse aux stratégies d’apprentissage. Voyons quelles méthodes tu utilises déjà et lesquelles te tenteraient.",
         "Dans quelle pile va ce papier ?",
-        "Quand cette méthode t’a-t-elle aidé la dernière fois ?"
+        "Quand cette méthode t’a-t-elle été utile la dernière fois ?"
       ],
-      "wennEsKippt": "Si trier est trop, le ou la jeune choisit seulement un papier, celui qui convient le mieux. S’il ou elle n’a pas d’exemple, l’adulte en raconte un à lui.",
+      "wennEsKippt": "Si trier est trop compliqué, le ou la jeune choisit seulement un papier, celui qui convient le mieux. Si aucun exemple ne lui vient, l’adulte en raconte un de sa propre expérience.",
       "kurz": "Cinq méthodes en deux piles · raconter un exemple",
-      "vorbereitung": "Écrire 5 papiers : noter · expliquer · schéma/mindmap · se faire interroger · couleurs"
+      "vorbereitung": "Inscrire sur 5 petits papiers : écrire · expliquer · schéma/carte mentale · se faire interroger · couleurs"
     },
     "kurz": "Fünf Lernmethoden-Zettel in zwei Stapel · Beispiel erzählen",
     "vorbereitung": "5 Zettel beschriften: aufschreiben · erklären · Skizze/Mindmap · abfragen lassen · Farben"
@@ -3496,7 +3499,7 @@
         "Quelle émotion Lara pourrait-elle ressentir, et à quoi le remarques-tu ? Et si elle attendait en plus la réponse d’une amie ?",
         "Un signe du corps seul dit peu ; c’est avec le contexte que cela devient plus clair. C’est justement de cela qu’il s’agit maintenant."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve pas de mot, l’adulte en propose trois (agacé, nerveux, impatient). Ou il relit la scène en insistant sur un détail, par exemple le pied qui bat la mesure. « Passe » est permis.",
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de mot, l’adulte en propose trois (agacée, nerveuse, impatiente). Ou l’adulte relit la scène en insistant sur un détail, par exemple le pied qui bat la mesure. « Passe » est permis.",
       "kurz": "Scène sans mot d’émotion · deviner · le contexte change tout"
     },
     "kurz": "Szene ohne Gefühlswort · Gefühl vermuten · Zusatz ändert vieles"
@@ -3560,16 +3563,18 @@
     },
     "fr": {
       "titel": "Quatre mots, un ordre",
-      "text": "L’adulte écrit quatre mots de colère sur quatre papiers et les mélange : agacé, énervé, furieux, hors de soi. Le ou la jeune les range du plus faible au plus fort et peut les déplacer. Ensuite, il ou elle cherche quel mot irait entre deux papiers (par exemple « irrité »). Le déclic : le mot précis en dit bien plus à l’autre que « je suis de mauvaise humeur ».",
+      "text": "L’adulte pose quatre papiers portant des mots de colère et les mélange : agacé, énervé, furieux, hors de soi. Le ou la jeune les range du plus faible au plus fort et peut les déplacer. Ensuite, il ou elle cherche quel mot irait entre deux papiers (par exemple « irrité »). Le déclic : le mot précis en dit bien plus à l’autre que « je suis de mauvaise humeur ».",
       "sagen": [
         "Aujourd’hui, on cherche des mots pour dire ce qu’on ressent, le plus précisément possible. Voici quatre mots qui parlent tous de colère.",
         "Range-les du plus faible au plus fort. Et quel mot irait encore entre deux ?",
         "Plus le mot est précis, mieux l’autre nous comprend. C’est justement de cela qu’il s’agit maintenant."
       ],
       "wennEsKippt": "Si l’ordre est difficile, l’adulte pose le premier et le dernier mot, et seuls les deux du milieu sont à ranger. Si le ou la jeune ne veut pas penser à la colère, l’adulte change de série : somnolent, fatigué, épuisé, à bout. « Passe » est permis.",
-      "kurz": "Quatre mots de colère · du faible au fort · un mot entre deux"
+      "kurz": "Quatre mots de colère · du faible au fort · un mot entre deux",
+      "vorbereitung": "Écrire quatre papiers : agacé · énervé · furieux · hors de soi"
     },
-    "kurz": "Vier Ärger-Wörter ordnen · schwach bis stark · ein Wort dazwischen"
+    "kurz": "Vier Ärger-Wörter ordnen · schwach bis stark · ein Wort dazwischen",
+    "vorbereitung": "Vier Zettel beschriften: genervt · sauer · wütend · außer sich"
   },
   {
     "id": "th:gefuehle-ausdruecken-einstieg-jugend-2",
@@ -3654,7 +3659,7 @@
       "Jemand drängelt sich in der Schlange vor. Einmal bist du ausgeschlafen und satt, einmal müde und hungrig. Wie stark wäre der Ärger, von 0 bis 10?",
       "Gleicher Anlass, andere Stärke: Wie heftig ein Gefühl wird, hängt von mehr ab als vom Ereignis. Genau darum geht es jetzt weiter."
     ],
-    "wennEsKippt": "Nennt der oder die Jugendliche keine Zahl, zeigt er oder sie die Stärke mit der Hand an: tief für wenig, hoch für viel. Passt das Beispiel nicht, wählt die Fachkraft ein anderes Ärgernis: das WLAN fällt aus oder der Bus fährt vor der Nase weg.",
+    "wennEsKippt": "Nennt der oder die Jugendliche keine Zahl, zeigt er oder sie die Stärke mit der Hand an: tief für wenig, hoch für viel. Passt das Beispiel nicht, wählt die Fachkraft ein anderes Ärgernis: das WLAN fällt aus oder der Bus fährt vor der Nase weg. Pass ist erlaubt.",
     "rolle": [
       "einstieg"
     ],
@@ -3700,7 +3705,7 @@
       "text": "L’adulte décrit un petit agacement : à la cantine, quelqu’un passe devant tout le monde dans la file. Jour 1 : bien dormi, bien mangé, détendu. Jour 2 : très peu dormi, la faim au ventre. Le ou la jeune montre avec les doigts, de 0 à 10, à quel point on s’énerverait chaque fois (inventé suffit) ; l’adulte donne ses chiffres. Le déclic : l’événement reste le même, pas l’intensité. Des études indiquent qu’après peu de sommeil, le cerveau réagit souvent plus fort à ce qui est désagréable.",
       "sagen": [
         "Aujourd’hui, on parle des émotions fortes et de la façon de se calmer. Pour commencer, une petite question du quotidien.",
-        "Quelqu’un te passe devant dans la file. Un jour, tu as bien dormi et bien mangé ; un autre, peu dormi et faim. Quel agacement, de 0 à 10 ?",
+        "Quelqu’un te passe devant dans la file. Un jour, tu as bien dormi et bien mangé ; un autre jour, tu as peu dormi et tu as faim. Quel agacement, de 0 à 10 ?",
         "Même événement, autre intensité : la force d’une émotion dépend de plus que de l’événement. C’est justement de cela qu’il s’agit maintenant."
       ],
       "wennEsKippt": "Si le ou la jeune ne donne pas de chiffre, il ou elle montre l’intensité avec la main : bas pour peu, haut pour beaucoup. Si l’exemple ne convient pas, l’adulte en choisit un autre : le wifi qui coupe ou le bus qui part sous le nez. « Passe » est permis.",
@@ -3773,7 +3778,7 @@
         "« On ne peut pas arrêter les vagues, mais on peut apprendre à surfer. » Que seraient les vagues ? Dessines-en une : où monte-t-elle, où redescend-elle ?",
         "Les émotions viennent et repartent, et on peut apprendre à tenir dessus. C’est justement de cela qu’il s’agit maintenant."
       ],
-      "wennEsKippt": "Si le ou la jeune ne sait pas quoi faire de la phrase, l’adulte dessine la vague et demande seulement : où serait-elle la plus haute ? Ou il donne un exemple (un appel qu’on attend) et fait marquer le sommet. « Passe » est permis.",
+      "wennEsKippt": "Si le ou la jeune ne sait pas quoi faire de la phrase, l’adulte dessine la vague et demande seulement : où serait-elle la plus haute ? Ou l’adulte donne un exemple (un appel qu’on attend) et fait marquer le sommet. « Passe » est permis.",
       "kurz": "Phrase sur les vagues · dessiner une vague · sommet et descente"
     },
     "kurz": "Satz über Wellen · Welle zeichnen · Spitze und Abstieg zeigen"
@@ -3837,13 +3842,13 @@
     },
     "fr": {
       "titel": "Ne lis pas, dis la couleur",
-      "text": "L’adulte écrit avec des crayons de couleur cinq noms de couleurs, chacun dans une autre couleur que le mot lui-même (ROUGE en bleu, BLEU en orange, VERT en violet … ; pas de rouge à côté de vert, à cause du daltonisme). Le ou la jeune dit rapidement seulement la couleur de l’écriture, pas ce qui est écrit. La plupart des gens trébuchent, les adultes aussi ; l’adulte essaie ensuite lui-même une autre série. Le déclic : la lecture se fait toute seule, et s’arrêter demande un court instant.",
+      "text": "L’adulte écrit avec des crayons de couleur cinq noms de couleurs, dans une autre couleur que celle du mot (ROUGE en bleu, BLEU en orange, VERT en violet … ; pas de rouge à côté de vert, à cause du daltonisme). Le ou la jeune dit rapidement seulement la couleur de l’écriture, pas ce qui est écrit. La plupart des gens trébuchent, les adultes aussi ; l’adulte essaie ensuite une autre série. Le déclic : la lecture se fait toute seule, et s’arrêter demande un court instant.",
       "sagen": [
         "Aujourd’hui, on parle de s’arrêter avant d’agir. Pour commencer, un court test où la plupart des gens trébuchent.",
         "J’ai écrit des noms de couleurs avec d’autres couleurs. Dis seulement la couleur dans laquelle le mot est écrit, pas ce qu’il dit.",
         "Lire se fait tout seul, mais s’arrêter demande un instant. C’est justement de cela qu’il s’agit maintenant."
       ],
-      "wennEsKippt": "Si le ou la jeune s’énerve de ses erreurs, l’adulte dit que le test est justement fait pour cela. Il essaie ensuite une série lui-même et trébuche en général aussi. Ou la série est raccourcie et ralentie, et le ou la jeune montre la couleur du doigt. « Passe » est permis.",
+      "wennEsKippt": "Si le ou la jeune s’énerve de ses erreurs, l’adulte dit que le test est justement fait pour cela. L’adulte essaie ensuite une série et trébuche en général aussi. Ou la série est raccourcie et ralentie, et le ou la jeune montre la couleur du doigt. « Passe » est permis.",
       "kurz": "Mots de couleur mal coloriés · dire la couleur de l’écriture"
     },
     "kurz": "Farbwörter in falscher Farbe · nur die Schriftfarbe sagen"
@@ -3912,7 +3917,7 @@
         "Tiens le pouce et l’index ouverts sous la règle. Je lâche sans prévenir, tu l’attrapes. Ensuite, on lit combien de temps cela a pris.",
         "Voilà à quel point l’écart entre voir et agir est court, et c’est là que se joue l’arrêt. C’est justement de cela qu’il s’agit maintenant."
       ],
-      "wennEsKippt": "Si la règle tombe entièrement ou si le ou la jeune s’énerve, ce n’est pas une question de réussite : l’adulte attrape lui-même et montre sa propre valeur (en général semblable, 15 à 25 centimètres). Si le ou la jeune n’aime pas tenir les doigts si près, il ou elle lâche la règle et l’adulte l’attrape. « Passe » est permis.",
+      "wennEsKippt": "Si la règle tombe entièrement ou si le ou la jeune s’énerve, ce n’est pas une question de réussite : c’est l’adulte qui attrape la règle et montre sa propre valeur (en général semblable, 15 à 25 centimètres). Si le ou la jeune n’aime pas tenir les doigts si près, il ou elle lâche la règle et l’adulte l’attrape. « Passe » est permis.",
       "kurz": "Attraper la règle · lire l’endroit de la prise · échanger"
     },
     "kurz": "Lineal fangen · Fangstelle ablesen · Rollen tauschen"
@@ -4116,7 +4121,7 @@
         "Environ 2400 pas, environ 17 chutes, une heure. Qu’est-ce qu’on mesure ici ?",
         "Un tout-petit qui apprend à marcher, et qui n’abandonne pas. C’est justement de cela qu’il s’agit maintenant."
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut pas deviner, l’adulte donne tout de suite la solution et laisse agir les chiffres. Si l’exemple paraît trop enfantin, il prend un exemple du quotidien : une figure de skateboard ou un niveau de jeu qu’on recommence des dizaines de fois. « Passe » est permis.",
+      "wennEsKippt": "Si le ou la jeune ne veut pas deviner, l’adulte donne tout de suite la solution et laisse agir les chiffres. Si l’exemple paraît trop enfantin, l’adulte prend un exemple du quotidien : une figure de skateboard ou un niveau de jeu qu’on recommence des dizaines de fois. « Je passe » est permis.",
       "kurz": "Trois chiffres à deviner · un tout-petit apprend à marcher"
     },
     "kurz": "Drei Zahlen raten · Kleinkind lernt laufen · nie aufgegeben"
@@ -4179,13 +4184,13 @@
     },
     "fr": {
       "titel": "Son prénom de l’autre main",
-      "text": "L’adulte et le ou la jeune écrivent chacun trois fois leur prénom l’un sous l’autre, avec la main avec laquelle ils n’écrivent pas d’habitude. Ensuite, ils comparent le premier et le troisième : qu’est-ce qui s’est amélioré, qu’est-ce qui ne l’est pas ? Le plus souvent, le troisième est plus lisible. Le déclic : après quelques essais seulement, on voit que persévérer sert à quelque chose, même si cela paraît bancal au début.",
+      "text": "L’adulte et le ou la jeune écrivent tous deux leur prénom trois fois en colonne, avec la main avec laquelle ils n’écrivent pas d’habitude. Ensuite, ils comparent le premier et le troisième : qu’est-ce qui s’est amélioré, qu’est-ce qui ne l’est pas ? Le plus souvent, le troisième est plus lisible. Le déclic : après quelques essais seulement, on voit que persévérer sert à quelque chose, même si cela paraît bancal au début.",
       "sagen": [
         "Aujourd’hui, on parle de persévérer. Pour commencer, un petit essai qui n’a pas besoin d’être beau.",
         "Écris ton prénom trois fois l’un sous l’autre, avec la main avec laquelle tu n’écris pas d’habitude. Moi aussi.",
         "Regarde ce qui est déjà différent entre le premier et le troisième. C’est justement de cela qu’il s’agit maintenant."
       ],
-      "wennEsKippt": "Si le ou la jeune s’énerve du gribouillis, l’adulte montre le sien : ce n’est pas une question de belle écriture, seulement de comparaison. Si écrire de l’autre main est impossible, chacun dessine trois fois une vague ou une spirale. « Passe » est permis.",
+      "wennEsKippt": "Si le ou la jeune s’énerve du gribouillis, l’adulte montre le sien : ce n’est pas une question de belle écriture, seulement de comparaison. Si écrire de l’autre main est impossible, les deux dessinent trois fois une vague ou une spirale. « Passe » est permis.",
       "kurz": "Prénom de l’autre main · trois fois · comparer le 1er et le 3e"
     },
     "kurz": "Name mit der anderen Hand · dreimal · ersten und dritten vergleichen"
@@ -4203,7 +4208,7 @@
       "Wie viele Seiten hat dieses Buch? Denk dir eine Zahl, auf drei sagen wir sie gleichzeitig. Dann nehmen wir den Mittelwert und schauen nach.",
       "Zwei Köpfe liegen oft näher an der Wahrheit als einer. Genau darum geht es jetzt weiter."
     ],
-    "wennEsKippt": "Passt kein Buch oder mag der oder die Jugendliche nicht laut raten, schätzen beide, wie viele Schritte es von der Tür zum Fenster sind, und zählen sie gemeinsam nach. Liegt eine Schätzung weit daneben, sagt die Fachkraft: Genau deshalb hilft der Mittelwert.",
+    "wennEsKippt": "Passt kein Buch oder mag der oder die Jugendliche nicht laut raten, schätzen beide, wie viele Schritte es von der Tür zum Fenster sind, und zählen sie gemeinsam nach. Liegt eine Schätzung weit daneben, sagt die Fachkraft: Genau deshalb hilft der Mittelwert. Pass ist erlaubt.",
     "rolle": [
       "einstieg"
     ],
@@ -4248,13 +4253,13 @@
     },
     "fr": {
       "titel": "Estimer à deux",
-      "text": "L’adulte prend un gros livre aux pages numérotées. Chacun estime en silence combien de pages compte ce livre, et tous deux disent leur chiffre en même temps sur « trois ». L’adulte calcule la moyenne des deux chiffres, puis on vérifie à quelle distance du vrai chiffre se trouvent les deux estimations et la moyenne. Le déclic : deux estimations différentes réunies sont souvent plus proches de la vérité qu’une seule. Exemple célèbre : lors d’une foire, près de 800 personnes ont estimé le poids d’un bœuf, et la moyenne n’était qu’à environ une livre de la réalité.",
+      "text": "L’adulte prend un gros livre aux pages numérotées. Tous deux estiment en silence combien de pages compte ce livre, et disent leur chiffre en même temps sur « trois ». L’adulte calcule la moyenne des deux chiffres, puis on vérifie à quelle distance du vrai chiffre se trouvent les deux estimations et la moyenne. Le déclic : deux estimations différentes réunies sont souvent plus proches de la vérité qu’une seule. Exemple célèbre : lors d’une foire, près de 800 personnes ont estimé le poids d’un bœuf, et la moyenne n’était qu’à environ une livre de la réalité.",
       "sagen": [
         "Aujourd’hui, on parle de travailler ensemble : qu’est-ce qui marche mieux à deux que seul ? Pour commencer, une petite estimation.",
         "Combien de pages a ce livre ? Pense à un chiffre, et sur trois, on le dit en même temps. Ensuite, on fait la moyenne et on vérifie.",
         "Deux têtes sont souvent plus près de la vérité qu’une seule. C’est justement de cela qu’il s’agit maintenant."
       ],
-      "wennEsKippt": "S’il n’y a pas de livre ou si le ou la jeune ne veut pas deviner à voix haute, chacun estime le nombre de pas entre la porte et la fenêtre, et on les compte ensemble. Si une estimation est très éloignée, l’adulte dit que c’est justement pour cela que la moyenne aide. « Passe » est permis.",
+      "wennEsKippt": "S’il n’y a pas de livre ou si le ou la jeune ne veut pas deviner à voix haute, les deux estiment le nombre de pas entre la porte et la fenêtre, et on les compte ensemble. Si une estimation est très éloignée, l’adulte dit que c’est justement pour cela que la moyenne aide. « Passe » est permis.",
       "kurz": "Estimer les pages · ensemble, sur trois · vérifier la moyenne"
     },
     "kurz": "Seiten schätzen · beide zugleich · Mittelwert prüfen"
@@ -4388,7 +4393,7 @@
         "Diogo et Mehdi veulent tous deux la dernière orange, en entier. Ils la coupent en deux, et les deux sont pourtant mécontents. Que voulait chacun ?",
         "Souvent, deux personnes veulent des choses différentes, même si cela se ressemble. C’est justement de cela qu’il s’agit maintenant."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve pas, l’adulte donne un indice : à quoi peut servir une orange ? Ou il donne la solution (jus et zeste) et demande un exemple où deux personnes semblent vouloir la même chose, comme la place près de la fenêtre. « Passe » est permis.",
+      "wennEsKippt": "Si le ou la jeune ne trouve pas, l’adulte donne un indice : à quoi peut servir une orange ? Ou l’adulte donne la solution (jus et zeste) et demande un exemple où deux personnes semblent vouloir la même chose, comme la place près de la fenêtre. « Passe » est permis.",
       "kurz": "Orange partagée, tous mécontents · que voulait chacun ?"
     },
     "kurz": "Orange geteilt, trotzdem unzufrieden · was brauchte jeder?"
@@ -4452,16 +4457,18 @@
     },
     "fr": {
       "titel": "Attiser ou apaiser ?",
-      "text": "L’adulte pose deux papiers : « De l’huile sur le feu » et « Calmer le jeu ». Il lit quatre phrases qui peuvent tomber pendant une dispute, et le ou la jeune pose chaque phrase sur l’un des papiers : « Tu ne m’écoutes jamais ! » · « Ça m’énerve quand ton téléphone sonne pendant que je parle. » · « C’est toujours toi qui dois faire ça ! » · « On fait deux minutes de pause, je suis trop à cran. » Ensuite : qu’est-ce qui change tout ? Le déclic : un seul mot comme « jamais » ou « toujours » peut agrandir une dispute.",
+      "text": "L’adulte pose deux papiers : « De l’huile sur le feu » et « Calmer le jeu ». L’adulte lit quatre phrases qui peuvent tomber pendant une dispute, et le ou la jeune pose chaque phrase sur l’un des papiers : « Tu ne m’écoutes jamais ! » · « Ça m’énerve quand ton téléphone sonne pendant que je parle. » · « C’est toujours toi qui dois faire ça ! » · « On fait deux minutes de pause, je suis trop à cran. » Ensuite : qu’est-ce qui change tout ? Le déclic : un seul mot comme « jamais » ou « toujours » peut agrandir une dispute.",
       "sagen": [
         "Aujourd’hui, on parle de la façon de résoudre une dispute, ou plutôt de ne pas l’aggraver. Pour cela, quatre phrases.",
         "Je lis des phrases qui peuvent tomber dans une dispute. Les poses-tu sur « de l’huile sur le feu » ou « calmer le jeu » ? Et qu’est-ce qui change tout ?",
         "De petits mots changent déjà la suite d’une dispute. C’est justement de cela qu’il s’agit maintenant."
       ],
       "wennEsKippt": "Si le ou la jeune dit « ça dépend », l’adulte le prend au sérieux et demande de quoi : un « plutôt » suffit. Si une phrase rappelle une vraie dispute et que le silence s’installe, l’adulte passe à la phrase suivante. « Passe » est permis.",
-      "kurz": "Phrases de dispute · attiser ou apaiser ? · la différence ?"
+      "kurz": "Phrases de dispute · attiser ou apaiser ? · la différence ?",
+      "vorbereitung": "Écrire deux papiers : « De l’huile sur le feu » et « Calmer le jeu »"
     },
-    "kurz": "Streit-Sätze hören · Öl oder Wasser? · was macht den Unterschied?"
+    "kurz": "Streit-Sätze hören · Öl oder Wasser? · was macht den Unterschied?",
+    "vorbereitung": "Zwei Zettel beschriften: „Öl ins Feuer“ und „Wasser drauf“"
   },
   {
     "id": "th:kommunikation-einstieg-jugend-1",

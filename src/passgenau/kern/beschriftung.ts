@@ -27,7 +27,8 @@ export type BeschriftungFeld = (typeof BESCHRIFTUNG_FELDER)[number]
 const META = ['begruendung', 'von', 'sicher', 'h'] as const
 
 /** Längengrenzen (Zeichen). */
-export const GRENZEN = { begruendung: 120, einzelvariante: 300, einzelvarianteMin: 40, sagen: 160, sagenAnzahl: 3, eldibPrimaer: 2, eldibSekundaer: 3, eldib: 4, kompetenz: 2, rolle: 3 }
+// einzelvariante bis 400 Zeichen: die Einzelfassungen der Rahmen-Prüfung (16.10.) ersetzen Klassentexte samt Reim-Gesten
+export const GRENZEN = { begruendung: 120, einzelvariante: 400, einzelvarianteMin: 40, sagen: 160, sagenAnzahl: 3, eldibPrimaer: 2, eldibSekundaer: 3, eldib: 4, kompetenz: 2, rolle: 3 }
 
 export interface Einzelvariante { text: string; sagen?: string[] }
 

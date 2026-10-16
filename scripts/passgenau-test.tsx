@@ -488,7 +488,7 @@ await pruefung('Lern-Simulation: Kind „liebt Bewegung, schreibt ungern“ übe
   // Erkundung über viele Pläne (Varianten) messen
   let f2 = 0
   let e2 = 0
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 600; i++) {
     const q = kind({ ref: `t-erk-${i}`, alterJahre: 6 + (i % 9), ziele: [z(['V-21', 'K-26', 'SOZ-32', 'V-18', 'K-17', 'V-24'][i % 6], '', 1)] })
     const plan = planen(k, q, auftrag(q, 'schnell', { dauer: ([30, 45] as const)[i % 2] }), leer(), VERLAUF)
     const kernRef = plan.sitzungen[0].schritte.find((x) => x.rolle === 'kern')?.ref
@@ -498,9 +498,11 @@ await pruefung('Lern-Simulation: Kind „liebt Bewegung, schreibt ungern“ übe
         if (x.erkundung) e2++
       }
   }
-  info(`Erkundung über 200 Pläne: ${e2}/${f2} = ${Math.round((100 * e2) / f2)} %`)
-  // Ziel ≈ 20 %; bei rund 90 Slots streut der Anteil um ±4 Prozentpunkte – Grenze mit dieser Unschärfe
-  soll(e2 / f2 >= 0.14 && e2 / f2 <= 0.27, `Erkundung ${Math.round((100 * e2) / f2)} % außerhalb 14–27 %`)
+  info(`Erkundung über 600 Pläne: ${e2}/${f2} = ${Math.round((100 * e2) / f2)} %`)
+  // Ziel ≈ 20 % der Slots mit gleichwertiger Alternative; frei sind nur noch Bewegungs-Slots (Einstiege hängen am Kern),
+  // und seit den Einzelfassungen der Spielschule (Rahmen-Prüfung 16.10.) gibt es freie Slots ohne Alternative (≥ 0,8 der
+  // Bewertung) – sie bleiben, wie sie sind. 600 Pläne ergeben rund 90 freie Slots, ±4 Prozentpunkte Streuung
+  soll(e2 / f2 >= 0.1 && e2 / f2 <= 0.27, `Erkundung ${Math.round((100 * e2) / f2)} % außerhalb 10–27 %`)
 })
 
 await pruefung('Ethik 9: Angst-Kind (5 × „nicht geklappt“ bei der Mut-Leiter) und Fachkraft, die nur „hoch“ gibt (≤ ±6 %)', () => {
@@ -789,7 +791,7 @@ await pruefung('Beschriftung (4.6): Overlay-Prüfung, Sicherungen (Katharsis, ak
     ['Code nicht in der Bank', { ...gut, eldib: { primaer: ['V-99'] } }, schritt],
     ['angepasst ohne Variante', { ...gut, einzelvariante: undefined }, schritt],
     ['Variante bei „ja“', { ...gut, einzeltauglich: 'ja' }, schritt],
-    ['Variante zu lang', { ...gut, einzelvariante: { text: 'x'.repeat(301) } }, schritt],
+    ['Variante zu lang', { ...gut, einzelvariante: { text: 'x'.repeat(401) } }, schritt],
     ['FR fehlt, obwohl die Quelle FR hat', gut, { ...schritt, fr: true }],
     ['allgemein am Schritt mit Paket-Pfad', { ...gut, allgemein: { '0.text': 'Text' } }, { ...schritt, textPfade: new Map([['text', schritt.text!]]) }],
     ['Kursverweis in der Einzelvariante', { ...gut, einzelvariante: { text: 'Wie in Einheit 20: Die Fachkraft und das Kind werfen sich den Ball zu.' } }, schritt],

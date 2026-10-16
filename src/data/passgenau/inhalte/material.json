@@ -134,5 +134,33 @@
  "sanduhr": {
   "de": "Sanduhr oder Timer",
   "fr": "sablier ou minuteur"
+ },
+ "tuecher": {
+  "de": "Tücher",
+  "fr": "foulards"
+ },
+ "musik": {
+  "de": "Musik (Lautsprecher)",
+  "fr": "musique (haut-parleur)"
+ },
+ "matten": {
+  "de": "Matten",
+  "fr": "tapis"
+ },
+ "seil": {
+  "de": "Seil",
+  "fr": "corde"
+ },
+ "klangschale": {
+  "de": "Klangschale",
+  "fr": "bol chantant"
+ },
+ "spiegel": {
+  "de": "Spiegel",
+  "fr": "miroir"
+ },
+ "wolle": {
+  "de": "Wollfaden",
+  "fr": "fil de laine"
  }
 }

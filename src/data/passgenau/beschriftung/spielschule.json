@@ -247,21 +247,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Ein Sack voller Spielsachen wird ausgeschüttet. Das Kind zieht ein Ding und trägt es an seinen Platz: „Das Auto wohnt in der Autokiste.“ Die Fachkraft zeigt Daumen hoch, wenn es stimmt. Dann zieht die Fachkraft eins, und das Kind prüft mit dem Daumen.",
-   "sagen": [
-    "Zieh ein Ding. Wo wohnt das?",
-    "Daumen hoch – das wohnt da!"
-   ],
+   "text": "Die Fachkraft nennt ein Ding des Alltags, zum Beispiel den Löffel. Das Kind sagt, wo es wohnt: „Der Löffel wohnt in der Schublade.“ Die Fachkraft zeigt Daumen hoch, wenn es stimmt. Dann nennt das Kind ein Ding, die Fachkraft sagt, wo es wohnt – mal richtig, mal lustig falsch –, und das Kind prüft mit dem Daumen.",
    "fr": {
-    "text": "On vide un sac de jouets. L’enfant tire un objet et le porte à sa place : « La voiture habite dans la caisse des voitures. » L’adulte lève le pouce si c’est juste. Puis l’adulte en tire un, et l’enfant vérifie avec le pouce.",
-    "sagen": [
-     "Tire un objet. Où habite-t-il ?",
-     "Pouce levé – il habite là !"
-    ]
+    "text": "L’adulte nomme un objet du quotidien, par exemple la cuillère. L’enfant dit où il habite : « La cuillère habite dans le tiroir. » L’adulte lève le pouce si c’est juste. Puis l’enfant nomme un objet, l’adulte dit où il habite – tantôt juste, tantôt drôlement faux –, et l’enfant vérifie avec le pouce."
    }
   },
   "merkmale": {},
-  "begruendung": "Die Klasse prüft nicht mehr: Fachkraft und Kind prüfen sich abwechselnd mit dem Daumen.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung benutzte Sack und Spielsachen, die nicht im Material stehen – neu…",
   "von": "agent",
   "sicher": 0.85,
   "h": "a3211bc3"
@@ -681,14 +673,30 @@
   },
   "energie": 3,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Wachsen-Reim: krabbeln, laufen, hüpfen im Raum; am Ende sagt das Kind, was es kann.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassenreim („Die Kinder werden größer“, „jedes Kind“) – Einzelfassung für Kind…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "dfe75a3b"
+  "h": "dfe75a3b",
+  "einzelvariante": {
+   "text": "Kind und Fachkraft sprechen den Reim zusammen und werden mit jeder Zeile größer: bei „einem Jahr“ krabbeln, bei „zwei“ aufstehen und laufen, bei „drei“ hüpfen, bei „vier“ die Arme hochstrecken. In der letzten Zeile sagt das Kind, was es kann, und zeigt es; danach zeigt die Fachkraft etwas, das sie kann.",
+   "sagen": [
+    "Mit einem Jahr: Krabbeln, wunderbar! Mit zwei: Ich laufe, ich bin frei!",
+    "Mit drei: Ich spring, ich bin dabei! Mit vier: Ich zeig es dir!",
+    "Und jetzt? Ich kann … – sag es mir!"
+   ],
+   "fr": {
+    "text": "L’enfant et l’adulte disent la comptine ensemble et grandissent à chaque vers : à « un an », avancer à quatre pattes ; à « deux ans », se lever et courir ; à « trois ans », sauter ; à « quatre ans », lever les bras. Au dernier vers, l’enfant dit ce qu’il sait faire et le montre ; ensuite, l’adulte montre aussi quelque chose.",
+    "sagen": [
+     "Un an : à quatre pattes, hop là ! Deux ans : je cours, regarde-moi !",
+     "Trois ans : je saute, tu vois ? Quatre ans : bras en l’air, hourra !",
+     "Et maintenant, je sais … – dis-le-moi !"
+    ]
+   }
+  }
  },
  "s:sp-angst-und-mut:a0": {
   "rolle": [
@@ -1699,14 +1707,30 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Baustellen-Reim: gemeinsam ziehen, schaufeln, klopfen; Fachkraft ruft vor, Kind antwortet (SOZ-18).",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: Reim und Bewegungen für Klasse („alle zusammen“, „Lehrperson…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "8b595da9"
+  "h": "8b595da9",
+  "einzelvariante": {
+   "text": "Das Kind und die Fachkraft sprechen den Reim im Rhythmus und machen die Bewegungen dazu: bei „Hau ruck“ gemeinsam ziehen, dann schaufeln, mit den Armen den Kran drehen, die Walze rollen, mit der Faust klopfen, die Hände übereinander stapeln und zum Schluss den Helm absetzen. Erst ruft die Fachkraft vor, das Kind antwortet; dann tauschen sie.",
+   "sagen": [
+    "Hau ruck, hau ruck, wir heben den Stein, wir zwei zusammen, das klappt – und wie fein.",
+    "Der Bagger gräbt, der Kran dreht sich rum, die Walze rollt: brumm, brumm, brumm.",
+    "Der Hammer klopft: tock, tock, tock, und oben bauen wir Stock um Stock. Helm ab, jetzt ist Feierabend – genau! Wir bauen bald weiter am Bau."
+   ],
+   "fr": {
+    "text": "L’enfant et l’adulte disent la comptine en rythme et font les gestes : au « hop », tirer ensemble, puis pelleter, bras en grue qui tourne, rouler comme un rouleau, taper du poing, empiler les mains et enfin ôter le casque. D’abord l’adulte lance, l’enfant répond ; ensuite ils échangent.",
+    "sagen": [
+     "Hop hop hop, on lève la pierre, à deux, c’est la bonne manière !",
+     "La pelleteuse creuse, creuse, creuse, la grue tourne, quelle danseuse !",
+     "Toc, toc, toc, le marteau frappe fort, le mur monte, étage par étage encore. Casque ôté, c’est la fin du jour, bientôt, on reprend, à notre tour."
+    ]
+   }
+  }
  },
  "s:sp-bei-uns-zu-hause:a0": {
   "rolle": [
@@ -2807,21 +2831,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Das Kind ist der Roboter und trägt ein rotes Band am rechten Handgelenk. Die Fachkraft gibt die Befehle mit Karte oder Ansage: ein Schritt vor, Vierteldrehung nach rechts oder links, stopp. Verdreht es sich, dreht es einfach zurück. Dann tauschen sie die Rollen.",
-   "sagen": [
-    "Du bist der Roboter. Befehl: ein Schritt vor!",
-    "Stopp! Dreh dich nach rechts – dahin, wo das rote Band ist."
-   ],
+   "text": "Das Kind ist der Roboter. Die Fachkraft gibt die Befehle mit einer Karte oder per Ansage: ein Schritt vor, Vierteldrehung nach rechts oder links, stopp. Verdreht sich das Kind, dreht es einfach zurück. Als Merkhilfe zeigt die rechte Hand, wo rechts ist. Dann tauschen die beiden die Rollen.",
    "fr": {
-    "text": "L’enfant est le robot et porte un ruban rouge au poignet droit. L’adulte donne les ordres avec une carte ou à la voix : un pas en avant, un quart de tour à droite ou à gauche, stop. S’il se trompe, il se retourne simplement. Puis ils échangent les rôles.",
-    "sagen": [
-     "Tu es le robot. Ordre : un pas en avant !",
-     "Stop ! Tourne à droite – du côté du ruban rouge."
-    ]
+    "text": "L’enfant est le robot. L’adulte donne les ordres avec une carte ou à la voix : un pas en avant, un quart de tour à droite ou à gauche, stop. Si l’enfant se tourne du mauvais côté, il suffit de revenir dans le bon sens. Pour s’y retrouver, la main droite montre où est la droite. Ensuite, l’enfant et l’adulte échangent les rôles."
    }
   },
   "merkmale": {},
-  "begruendung": "Statt „alle Kinder sind Roboter“: Das Kind ist Roboter, die Fachkraft gibt die Befehle, dann tauschen sie.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Rotes Band fehlt im Material (nur karten) – in der Einzelfassung vermieden; FR…",
   "von": "agent",
   "sicher": 0.8,
   "h": "17112939"
@@ -3204,14 +3220,28 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Brücken-Reim: fällt sie um, 'wir bauen sie neu' (V-23 Flexibilität); Fachkraft und Kind stapeln zu zweit.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): FR-Gestenanleitung « faire au revoir » ist kein Französisch (→ dire au revoir…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "66c0cb9a"
+  "h": "66c0cb9a",
+  "einzelvariante": {
+   "text": "Fachkraft und Kind sprechen den Reim zusammen und machen die Bewegungen dazu: Fäuste abwechselnd übereinander stapeln, mit beiden Armen einen Bogen formen, Lenkrad drehen, bei „fällt sie um“ die Arme fallen lassen, Daumen hoch und neu stapeln, zum Schluss winken.",
+   "sagen": [
+    "Ein Brett, ein Stein und noch ein Stein, / so bauen wir die Brücke fein. / Ein Auto kommt – brumm, brumm, brumm: / Hält sie? Oder fällt sie um?",
+    "Und fällt sie um, das macht nichts aus: / Wir baun sie neu – und fahrn nach Haus."
+   ],
+   "fr": {
+    "text": "L’adulte et l’enfant disent la comptine ensemble et font les gestes : empiler les poings l’un sur l’autre, former une arche avec les bras, tourner le volant, au « boum » laisser tomber les bras, pouce levé et empiler de nouveau, pour finir dire au revoir de la main.",
+    "sagen": [
+     "Une planche, un cube, et puis un autre, / voici le pont : c’est le nôtre ! / Une voiture arrive : vroum, vroum, vroum ! / Tiendra-t-il ? Ou fera-t-il boum ?",
+     "S’il s’écroule, pas de souci : / on le reconstruit, et c’est reparti !"
+    ]
+   }
+  }
  },
  "s:sp-buecherreise:a0": {
   "rolle": [
@@ -3423,23 +3453,15 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Ein Bilderbuch geht zwischen Kind und Fachkraft hin und her: Wer es hält, schaut hinein, zeigt dem anderen ein Bild, klappt es zu und gibt es weiter. Bei „jetzt kommst du“ ist der oder die andere dran. Zum Schluss sagt das Kind, welches Bild ihm am besten gefallen hat.",
-   "sagen": [
-    "Schau hinein und zeig mir ein Bild, das dir gefällt.",
-    "Ich klappe zu – jetzt kommst du."
-   ],
+   "text": "Das Buch geht rum von Hand zu Hand – / was steht wohl drin? Ich bin gespannt! / Ich schau hinein und zeig dir hier / ein schönes Bild und geb es dir. / Und bin ich fertig, klapp ich’s zu – / zurück ins Regal! Und jetzt kommst du.\nBewegungen: Die Hände sind das Buch: aufklappen, hineinschauen, dem anderen ein Bild zeigen, zuklappen; bei „jetzt kommst du“ wechseln die Rollen.",
    "fr": {
-    "text": "Un livre d’images passe de l’enfant à l’adulte et inversement : celui qui le tient regarde dedans, montre une image à l’autre, ferme le livre et le passe. À « maintenant c’est toi », c’est au tour de l’autre. À la fin, l’enfant dit quelle image il préfère.",
-    "sagen": [
-     "Regarde dedans et montre-moi une image qui te plaît.",
-     "Je referme – maintenant, c’est toi."
-    ]
+    "text": "Le livre passe de main en main : / qu’y a-t-il dedans ? On verra bien ! / J’ouvre, je regarde, et je souris : / regarde l’image, elle est jolie ! / Je le referme et je dis merci, / à toi maintenant – c’est parti !\nGestes : Les mains sont le livre : ouvrir, regarder dedans, montrer une image à l’autre, refermer ; à « à toi maintenant », on change de rôle."
    }
   },
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Buch wandert im Kreis: zwischen Kind und Fachkraft hin und her, abwechselnd ein Bild zeigen.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Vorhandene Einzelvariante braucht ein echtes Bilderbuch (nicht im Material)…",
   "von": "agent",
   "sicher": 0.8,
   "h": "0ee0647e"
@@ -4373,21 +4395,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Drei Figuren-Karten liegen offen (Kinder mit Haaren, Kleidung, Brille). Die Fachkraft beschreibt eine, ohne zu zeigen: „Sie hat lockige Haare und eine blaue Jacke.“ Das Kind zeigt, wer gemeint ist. Dann beschreibt das Kind eine Karte, und die Fachkraft rät. Nur beschreiben, nie bewerten.",
-   "sagen": [
-    "Ich sehe ein Kind mit blauer Jacke. Wer ist das?",
-    "Jetzt du: Beschreib eine Karte, und ich rate!"
-   ],
+   "text": "Die Fachkraft beschreibt, ohne zu zeigen und ohne den Namen zu sagen, was sie am Kind sieht (Kleidung, Haare, Farben): „Jemand hat eine blaue Jacke und rote Schuhe.“ Das Kind sagt, wer gemeint ist: „Das bin ich!“ Dann beschreibt das Kind die Fachkraft, und sie sagt: „Das bin ich!“ Es wird nur beschrieben, nie bewertet.",
    "fr": {
-    "text": "Trois cartes de personnages sont posées (enfants avec cheveux, vêtements, lunettes). L’adulte en décrit une sans la montrer : « Elle a les cheveux bouclés et une veste bleue. » L’enfant montre qui c’est. Puis l’enfant décrit une carte, et l’adulte devine. On décrit seulement, on ne juge jamais.",
-    "sagen": [
-     "Je vois un enfant avec une veste bleue. Qui est-ce ?",
-     "À toi : décris une carte, et je devine !"
-    ]
+    "text": "L’adulte décrit l’enfant sans le montrer du doigt et sans dire son prénom (vêtements, cheveux, couleurs) : « Quelqu’un a une veste bleue et des chaussures rouges. » L’enfant dit de qui il s’agit : « C’est moi ! » Ensuite, l’enfant décrit l’adulte, et l’adulte dit : « C’est moi ! » On décrit seulement, on ne juge jamais."
    }
   },
   "merkmale": {},
-  "begruendung": "Einzeln: drei Figuren-Karten statt das Kind selbst – Raten zu zweit ergibt sonst keinen Sinn.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: drei Figuren-Karten fehlen im Material (Material leer), „Kinder“…",
   "von": "agent",
   "sicher": 0.85,
   "h": "3332ca8a"
@@ -4415,20 +4429,12 @@
   "einzeltauglich": "angepasst",
   "einzelvariante": {
    "text": "Das Kind schaut die Fachkraft genau an und schließt dann die Augen. Die Fachkraft verändert eine Sache an sich: Haarspange ab, Ärmel hoch, Brille auf. Das Kind öffnet die Augen und rät, was anders ist. Danach wird getauscht: Das Kind verändert etwas, die Fachkraft rät.",
-   "sagen": [
-    "Schau mich genau an. Jetzt Augen zu!",
-    "Augen auf. Was ist anders?"
-   ],
    "fr": {
-    "text": "L’enfant regarde bien l’adulte, puis ferme les yeux. L’adulte change une chose sur lui : barrette enlevée, manche remontée, lunettes mises. L’enfant ouvre les yeux et devine ce qui a changé. Puis on échange : l’enfant change quelque chose, l’adulte devine.",
-    "sagen": [
-     "Regarde-moi bien. Maintenant, ferme les yeux !",
-     "Ouvre les yeux. Qu’est-ce qui a changé ?"
-    ]
+    "text": "L’enfant regarde bien l’adulte, puis ferme les yeux. L’adulte change une chose sur soi : barrette enlevée, manche remontée, lunettes mises. L’enfant ouvre les yeux et devine ce qui a changé. Puis on échange : l’enfant change quelque chose, l’adulte devine."
    }
   },
   "merkmale": {},
-  "begruendung": "Ein Kind vorne und Klasse raten wird Wechsel zu zweit. Unterschiede erkennen (KOG-19); Spiel, keine Regulation.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): FR „change une chose sur lui“ setzt ein männliches Gegenüber voraus (l’adulte)…",
   "von": "agent",
   "sicher": 0.85,
   "h": "3e1a5dbb"
@@ -4685,24 +4691,16 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Kind und Fachkraft sind der Drache: Die Hände liegen auf den Schultern des Vorderen, oder ein Schal verbindet beide. Zur Musik schleicht der Drache leise, stampft laut und schläft langsam ein. Nach jeder Runde führt der andere.",
-   "sagen": [
-    "Wir sind ein Drache. Du führst, ich gehe hinter dir: leise schleichen, laut stampfen, dann schläft er ein.",
-    "Jetzt führe ich, und du kommst hinterher."
-   ],
+   "text": "Kind und Fachkraft sind zusammen der Drache und gehen hintereinander: Wenn das Kind mag, liegen die Hände auf den Schultern des Vorderen, sonst gehen beide mit einer Armlänge Abstand. Zur Musik schleicht der Drache leise, stampft kräftig (oder ganz leise, wenn das Kind das lieber mag) und schläft langsam ein. Nach jeder Runde führt der andere.",
    "fr": {
-    "text": "L’enfant et l’adulte forment le dragon : les mains sont posées sur les épaules de celui qui est devant, ou une écharpe relie les deux. Sur la musique, le dragon se glisse sans bruit, tape fort des pieds et s’endort lentement. Après chaque tour, l’autre mène.",
-    "sagen": [
-     "On est un dragon. Tu mènes, je suis derrière toi : on se glisse, on tape fort, puis il s’endort.",
-     "Maintenant, c’est moi qui mène et tu me suis."
-    ]
+    "text": "L’enfant et l’adulte forment ensemble le dragon et marchent l’un derrière l’autre : si l’enfant le veut, les mains se posent sur les épaules de celui qui est devant, sinon on garde une longueur de bras d’écart. En musique, le dragon avance à pas de loup, tape des pieds (ou tout doucement, si l’enfant préfère) et s’endort lentement. Après chaque tour, l’autre mène."
    }
   },
   "merkmale": {
    "koerperkontakt": true,
    "laut": true
   },
-  "begruendung": "Die lange Schlange wird zu zweit; Hände auf den Schultern oder Schal. Berührung und Stampfen: Merkmale bleiben.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Schal fehlt im Material (nur musik) – vermieden; Berührung (Hände auf den…",
   "von": "agent",
   "sicher": 0.8,
   "h": "3e464842"
@@ -7058,13 +7056,19 @@
   },
   "energie": 3,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Rakete mit Rückwärtszählen von zehn und Abflug geht mit Kind und Fachkraft; Landung ruft die Fachkraft.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Gruppenspiel (Alle, Kinder, Lehrperson) – Einzelfassung mit Fachkraft und Kind",
   "von": "agent",
   "sicher": 0.85,
-  "h": "574d83eb"
+  "h": "574d83eb",
+  "einzelvariante": {
+   "text": "Fachkraft und Kind hocken sich als Rakete auf den Boden. Gemeinsam zählen sie von zehn rückwärts; bei jeder Zahl wachsen sie ein Stück. Bei „null“ springen sie hoch und fliegen durch den Raum – bis die Fachkraft „Landung“ ruft. Beim zweiten Flug darf das Kind „Landung“ rufen.",
+   "fr": {
+    "text": "L’adulte et l’enfant s’accroupissent comme une fusée. Ensemble, ils comptent à rebours à partir de dix ; à chaque nombre, ils se relèvent un peu. À « zéro », ils sautent et volent à travers la pièce – jusqu’à ce que l’adulte annonce « Atterrissage ». Au deuxième vol, l’enfant peut annoncer l’atterrissage."
+   }
+  }
  },
  "s:sp-farben-zaehlen-bis-10:a4": {
   "rolle": [
@@ -8056,13 +8060,19 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Lauschen bis der Klang verklingt geht unverändert zu zweit; „Gewaltbezug“ war falsch.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Gruppenspiel (Alle, Kinder, Lehrperson) – Einzelfassung mit Fachkraft und Kind…",
   "von": "agent",
   "sicher": 0.9,
-  "h": "c3547f6c"
+  "h": "c3547f6c",
+  "einzelvariante": {
+   "text": "Die Fachkraft schlägt eine Klangschale an. Beide lauschen mit geschlossenen Augen (das Kind darf sie auch offen lassen), bis der Ton ganz verklungen ist. Wer nichts mehr hört, hebt langsam die Hand. Danach erzählen beide, was sie außerdem gehört haben. Beim zweiten Mal darf das Kind die Klangschale anschlagen.",
+   "fr": {
+    "text": "L’adulte fait sonner un bol sonore. Tous deux écoutent les yeux fermés (l’enfant peut aussi les garder ouverts) jusqu’à ce que le son s’éteigne. Celui qui n’entend plus lève lentement la main. Ensuite, tous deux racontent ce qu’ils ont entendu en plus. La deuxième fois, l’enfant peut faire sonner le bol."
+   }
+  }
  },
  "s:sp-ganz-ruhig-werden:a2": {
   "rolle": [
@@ -8133,15 +8143,21 @@
   },
   "energie": 3,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {
    "laut": true
   },
   "sensibel": null,
-  "begruendung": "Bewegen zur Trommel (schnell, langsam, still) geht mit Kind und Fachkraft; Trommel bleibt als Merkmal laut.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Gruppenspiel (Kinder, alle) – Einzelfassung; Trommel steht nicht im Material…",
   "von": "agent",
   "sicher": 0.85,
-  "h": "c8d9d61b"
+  "h": "c8d9d61b",
+  "einzelvariante": {
+   "text": "Die Fachkraft klatscht, das Kind bewegt sich dazu: schnelles Klatschen – rennen, langsames – schleichen wie eine Schnecke, kein Ton – erstarren. Zum Schluss wird das Klatschen immer leiser und langsamer, bis das Kind am Boden liegt und ruhig atmet. Dann tauschen sie die Rollen, wenn das Kind mag.",
+   "fr": {
+    "text": "L’adulte frappe dans ses mains et l’enfant bouge en rythme : vite – courir, lentement – ramper comme un escargot, plus un bruit – se figer. À la fin, les claquements deviennent de plus en plus doux et lents, jusqu’à ce que l’enfant s’allonge et respire calmement. Puis ils échangent les rôles, si l’enfant le souhaite."
+   }
+  }
  },
  "s:sp-ganz-ruhig-werden:a4": {
   "rolle": [
@@ -8165,13 +8181,27 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Atmen mit Kuscheltier auf dem Bauch geht unverändert mit einem Kind; ruhig werden (V-21).",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassentext (Kinder, Lehrperson, alle); Kuscheltiere/Decken stehen nicht im…",
   "von": "agent",
   "sicher": 0.9,
-  "h": "13b3c766"
+  "h": "13b3c766",
+  "einzelvariante": {
+   "text": "Fachkraft und Kind liegen auf dem Rücken, eine Hand auf dem Bauch (im Sitzen geht es auch). Beim Einatmen hebt sich die Hand wie ein Boot auf den Wellen, beim Ausatmen sinkt sie. Die Fachkraft zählt leise mit. Nach fünf Atemzügen ruhen beide kurz, atmen noch fünfmal und setzen sich dann langsam auf.",
+   "sagen": [
+    "Leg eine Hand auf den Bauch. Beim Einatmen fährt dein Boot nach oben, beim Ausatmen nach unten.",
+    "Wir zählen fünf Atemzüge, ganz langsam."
+   ],
+   "fr": {
+    "text": "L’adulte et l’enfant s’allongent sur le dos, une main sur le ventre (assis, c’est possible aussi). À l’inspiration, la main monte comme un bateau sur les vagues, à l’expiration, elle descend. L’adulte compte tout bas. Après cinq respirations, les deux se reposent un instant, respirent encore cinq fois, puis s’assoient lentement.",
+    "sagen": [
+     "Pose une main sur le ventre. À l’inspiration, ton bateau monte, à l’expiration, il descend.",
+     "On compte cinq respirations, très lentement."
+    ]
+   }
+  }
  },
  "s:sp-ganz-ruhig-werden:reim": {
   "rolle": [
@@ -8317,21 +8347,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Ein Päckchen geht zwischen Kind und Fachkraft hin und her, solange die Musik spielt. Stoppt sie, sagt, wer das Päckchen hat, einen Wunsch für den anderen. Am Ende wird ausgepackt: ein Spiel, das beide spielen.",
-   "sagen": [
-    "Die Musik ist aus – ich wünsche dir einen schönen Tag. Was wünschst du mir?",
-    "Jetzt packen wir aus: Es ist ein Spiel für uns beide."
-   ],
+   "text": "Kind und Fachkraft geben ein „unsichtbares“ Päckchen (nur mit den Händen geformt) hin und her, solange die Musik läuft. Die Fachkraft stoppt die Musik: Wer das Päckchen hält, sagt einen Wunsch für den anderen. Am Ende wird „ausgepackt“: Das Kind sagt, welches kleine Spiel darin steckt, und beide spielen es kurz.",
    "fr": {
-    "text": "Un paquet passe entre l’enfant et l’adulte tant que la musique joue. Quand elle s’arrête, celui qui tient le paquet fait un vœu pour l’autre. À la fin, on déballe : un jeu auquel les deux jouent.",
-    "sagen": [
-     "La musique s’arrête – je te souhaite une belle journée. Que me souhaites-tu ?",
-     "Maintenant on déballe : c’est un jeu pour nous deux."
-    ]
+    "text": "L’enfant et l’adulte se passent un paquet « invisible » (formé avec les mains) tant que la musique joue. L’adulte arrête la musique : celui qui tient le paquet fait un vœu pour l’autre. À la fin, on « déballe » : l’enfant dit quel petit jeu se cache dedans, et les deux y jouent un moment."
    }
   },
   "merkmale": {},
-  "begruendung": "Päckchen wandert zwischen Kind und Fachkraft, bei Musikstopp ein Wunsch füreinander; am Ende ein Spiel.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Material: „Päckchen“ steht nicht im Material (nur Musik) – in der Einzelfassung…",
   "von": "agent",
   "sicher": 0.75,
   "h": "f41b4fe6"
@@ -8817,16 +8839,32 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {
    "koerperkontakt": true
   },
   "sensibel": null,
-  "begruendung": "Tischspruch: Glocke, still werden, Menge zeigen (V-10, SOZ-16); Hände reichen ist Körperkontakt.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassenreim mit Glocke (nicht im Material), jeder/alle/chacun/tous…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "53ece244"
+  "h": "53ece244",
+  "einzelvariante": {
+   "text": "Kind und Fachkraft sprechen den Reim zusammen und machen dazu die Bewegungen: Finger auf die Lippen, mit den Händen zeigen, wie viel man möchte, sich die Hände reichen (nur wenn das Kind mag). Zum Schluss sagen beide: Gudden Appetit, guten Appetit, bon appétit, bom apetite.",
+   "sagen": [
+    "Mit dem Finger am Mund werden wir still, jeder sagt, wie viel er will.",
+    "Wir wünschen uns ein gutes Essen, und keiner wird dabei vergessen.",
+    "Wir essen, wie jeder es mag und kann, und fangen dann zusammen an."
+   ],
+   "fr": {
+    "text": "L’enfant et l’adulte disent la comptine ensemble et font les gestes : doigt sur les lèvres, montrer avec les mains la part voulue, se donner la main (seulement si l’enfant le veut). À la fin, tous deux disent : Gudden Appetit, guten Appetit, bon appétit, bom apetite.",
+    "sagen": [
+     "Le doigt sur la bouche, on fait silence, on dit sa part avec confiance.",
+     "On se souhaite un bon appétit, et personne n’est oublié, ici.",
+     "On mange comme on veut et peut, on commence ensemble, c’est mieux !"
+    ]
+   }
+  }
  },
  "s:sp-gemuesesuppe:a0": {
   "rolle": [
@@ -9696,12 +9734,24 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
-  "begruendung": "Auf dem Rücken liegen, Sanduhr, still sein, dann einen Satz sagen: geht mit einem Kind. Ruhe halten (V-21).",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassentext (Alle liegen, jedes Kind); „Decken“ nicht im Material – in der…",
   "von": "agent",
   "sicher": 0.9,
-  "h": "06b04322"
+  "h": "06b04322",
+  "einzelvariante": {
+   "text": "Das Kind liegt bequem auf dem Rücken (oder sitzt bequem) und schaut an die Zimmerdecke oder stellt sich Wolken vor. Die Fachkraft dreht die Sanduhr um, und solange sie läuft, spricht niemand. Danach darf das Kind einen Satz sagen: „Ich habe an … gedacht.“ Pass ist erlaubt.",
+   "sagen": [
+    "Wir schauen nach oben und denken, solange die Sanduhr läuft. Danach darfst du einen Satz sagen, oder du sagst Pass."
+   ],
+   "fr": {
+    "text": "L’enfant s’allonge confortablement sur le dos (ou s’assoit confortablement) et regarde le plafond ou imagine des nuages. L’adulte retourne le sablier, et tant qu’il coule, personne ne parle. Ensuite, l’enfant peut dire une phrase : « J’ai pensé à … » L’enfant peut aussi passer.",
+    "sagen": [
+     "On regarde vers le haut et on pense tant que le sablier coule. Ensuite, tu peux dire une phrase, ou tu dis « Je passe »."
+    ]
+   }
+  }
  },
  "s:sp-grosse-fragen:reim": {
   "rolle": [
@@ -9725,14 +9775,30 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Denk-Reim: still werden, sagen was man denkt, zuhören; im Gespräch mit der Fachkraft.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassenreim mit Nachbarkind – Einzelfassung für Kind und Fachkraft, Reim in…",
   "von": "agent",
   "sicher": 0.7,
-  "h": "725f10ac"
+  "h": "725f10ac",
+  "einzelvariante": {
+   "text": "Kind und Fachkraft sprechen den Reim zusammen und machen die Bewegungen dazu: mit den Händen eine Frage hereinfliegen lassen, bei „groß“ die Arme weit, bei „klein“ hocken, Finger an die Schläfe, bei „wach“ dreimal leise auf den Kopf tippen, Hand ans Ohr, zum Schluss erst auf sich, dann auf den anderen zeigen.",
+   "sagen": [
+    "Eine Frage fliegt herein, sie ist groß, und ich bin klein.",
+    "Ich halte still und denke nach, mein Kopf ist wach, ganz wach, ganz wach.",
+    "Ich sag, was ich denk, und hör dir zu, dann denkst du weiter – erst ich, dann du."
+   ],
+   "fr": {
+    "text": "L’enfant et l’adulte disent la comptine ensemble et font les gestes : frapper à une porte imaginaire, bras écartés pour « grande », mains serrées pour « petite », un doigt sur la tempe, mains qui s’ouvrent comme une lampe, main à l’oreille, et pour finir montrer d’abord soi-même, puis l’autre.",
+    "sagen": [
+     "Toc, toc, une question à la porte, grande ou petite, elle m’importe.",
+     "Je pose un doigt sur ma tempe, ma tête s’allume comme une lampe.",
+     "Je dis ce que je pense, tu m’écoutes, puis c’est ton tour : on cherche la route."
+    ]
+   }
+  }
  },
  "s:sp-gute-nacht:a0": {
   "rolle": [
@@ -9815,12 +9881,24 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
-  "begruendung": "Ballon-Atmen mit Kuscheltier auf dem Bauch geht wörtlich mit einem Kind. Ruhig werden, Atemübung: Regulation.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassentext (Kinder, jedes Kind); Kuscheltiere nicht im Material – Hand auf dem…",
   "von": "agent",
   "sicher": 0.9,
-  "h": "e2678133"
+  "h": "e2678133",
+  "einzelvariante": {
+   "text": "Das Kind liegt auf dem Rücken (auf der Matte) und legt eine Hand auf den Bauch. Beim Einatmen hebt sich die Hand wie ein Ballon, beim Ausatmen sinkt sie. Die Fachkraft atmet in der Nähe mit. Nach fünf ruhigen Atemzügen flüstert das Kind „Gute Nacht“, und die Fachkraft flüstert es zurück.",
+   "sagen": [
+    "Leg eine Hand auf den Bauch. Einatmen: Der Ballon wird groß. Ausatmen: Er wird klein."
+   ],
+   "fr": {
+    "text": "L’enfant est couché sur le dos (sur le tapis) et pose une main sur le ventre. À l’inspiration, la main monte comme un ballon, à l’expiration, elle redescend. L’adulte respire doucement à côté. Après cinq respirations calmes, l’enfant chuchote « bonne nuit », et l’adulte le chuchote en retour.",
+    "sagen": [
+     "Pose une main sur ton ventre. Tu inspires : le ballon grossit. Tu expires : il rétrécit."
+    ]
+   }
+  }
  },
  "s:sp-gute-nacht:a3": {
   "rolle": [
@@ -9902,12 +9980,18 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
-  "begruendung": "Leises Schlaflied und Wiegen gehen zu zweit; das Kind schlägt ein Lied vor, die Fachkraft summt mit. Beruhigen.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassentext („Die Klasse singt“, „Kinder … die anderen“) – Einzelfassung für…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "63374310"
+  "h": "63374310",
+  "einzelvariante": {
+   "text": "Kind und Fachkraft singen oder summen den Reim ganz leise auf eine einfache, wiegende Melodie und schaukeln dabei sanft hin und her. Das Kind darf ein Schlaflied in seiner Familiensprache vorschlagen; die Fachkraft summt mit.",
+   "fr": {
+    "text": "L’enfant et l’adulte chantent ou fredonnent la comptine très doucement sur une mélodie simple et berçante, en se balançant doucement. L’enfant peut proposer une berceuse dans la langue de sa famille ; l’adulte fredonne avec l’enfant."
+   }
+  }
  },
  "s:sp-gute-nacht:reim": {
   "rolle": [
@@ -9932,14 +10016,29 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Leiser Abendreim zum Runterfahren; Abendablauf als Ritual.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Material: Teddy/Peluche steht nicht im Material – Einzelfassung spielt ihn nur…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "490b9a27"
+  "h": "490b9a27",
+  "einzelvariante": {
+   "text": "Fachkraft und Kind sprechen den Reim ganz leise oder summen ihn, ohne Gegenstände: einen Mond formen, die Sonne sinken lassen, den Finger auf die Lippen legen, den Teddy (nur in der Vorstellung) wiegen.",
+   "sagen": [
+    "Der Mond kommt raus, die Sonne geht, / der Wind ganz leise draußen weht.",
+    "Die Zähne blank, das Licht ist aus, / ganz still wird’s jetzt im ganzen Haus.",
+    "Mein Teddy kuschelt sich zu mir: / Gut Nacht, mein Bär, ich bin bei dir."
+   ],
+   "fr": {
+    "text": "L’adulte et l’enfant disent la comptine tout bas ou la fredonnent, sans accessoires : dessiner la lune, poser un doigt sur les lèvres, serrer et bercer la peluche (seulement en imagination).",
+    "sagen": [
+     "La lune brille, la nuit s’habille, / le vent murmure : tout est tranquille.",
+     "Mon ours se blottit tout contre moi : / bonne nuit, mon ours, je suis près de toi."
+    ]
+   }
+  }
  },
  "s:sp-guten-morgen:a0": {
   "rolle": [
@@ -10092,23 +10191,15 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Das Kind geht zur Musik durch den Raum. Stoppt die Musik, ruft die Fachkraft eine Begrüßungsart: winken, Ellbogen antippen, Füße antippen oder verbeugen. Das Kind begrüßt die Fachkraft so und sagt ihren Namen. Antippen nur, wenn das Kind mag; winken und verbeugen gehen immer.",
-   "sagen": [
-    "Musik! Geh durch den Raum.",
-    "Stopp! Wir winken. Hallo, …!"
-   ],
+   "text": "Das Kind geht zur Musik durch den Raum. Stoppt die Musik, ruft die Fachkraft eine Begrüßungsart: winken, Ellbogen antippen, Füße antippen oder verbeugen. Das Kind begrüßt die Fachkraft so und sagt ihren Namen. Das geht über mehrere Runden, später darf das Kind die Begrüßungsart wählen. Antippen nur, wenn das Kind mag; winken und verbeugen gehen immer.",
    "fr": {
-    "text": "L’enfant marche dans la pièce en musique. Quand elle s’arrête, l’adulte annonce une façon de saluer : faire coucou, toucher le coude, toucher les pieds ou s’incliner. L’enfant salue l’adulte ainsi et dit son prénom. Toucher seulement si l’enfant le veut ; coucou et salut vont toujours.",
-    "sagen": [
-     "Musique ! Marche dans la pièce.",
-     "Stop ! On fait coucou. Bonjour, … !"
-    ]
+    "text": "L’enfant marche dans la pièce en musique. Quand la musique s’arrête, l’adulte annonce une façon de saluer : faire coucou, toucher les coudes, toucher les pieds ou s’incliner. L’enfant salue l’adulte ainsi et dit le prénom de l’adulte. On fait plusieurs tours ; ensuite, l’enfant choisit la façon. Toucher seulement si l’enfant le veut ; faire coucou et s’incliner sont toujours possibles."
    }
   },
   "merkmale": {
    "koerperkontakt": true
   },
-  "begruendung": "Kinder in der Nähe werden die Fachkraft. Antippen ist Kontakt; winken und verbeugen sind die Alternative.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): FR „son prénom“ mehrdeutig (Kind/Fachkraft) und „coucou et salut“ passt nicht…",
   "von": "agent",
   "sicher": 0.8,
   "h": "da2efbce"
@@ -10560,12 +10651,24 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "nein",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
-  "begruendung": "Lebt von der Kette vieler Kinder; zu zweit bleibt nur Nachmachen, das leisten die anderen Gebärden-Spiele.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Gruppenspiel im Kreis (Kinder, Nachbar, letztes Kind) – Einzelfassung: Gebärde…",
   "von": "agent",
   "sicher": 0.9,
-  "h": "e8756a83"
+  "h": "e8756a83",
+  "einzelvariante": {
+   "text": "Die Fachkraft zeigt ohne Stimme eine Gebärde (zum Beispiel „müde“ oder „Hunger“). Das Kind schaut genau auf Hände und Gesicht und zeigt sie nach; die Fachkraft zeigt das Gesehene wieder zurück, und so geht die Gebärde dreimal hin und her. Kommt am Ende dieselbe Gebärde an wie am Anfang? Dann ist das Kind dran.",
+   "sagen": [
+    "Ich zeige dir etwas ohne Worte. Schau genau auf meine Hände und mein Gesicht, dann zeigst du es mir nach."
+   ],
+   "fr": {
+    "text": "L’adulte montre sans voix un signe (par exemple « fatigué » ou « faim »). L’enfant regarde bien les mains et le visage, puis reproduit le signe ; l’adulte reproduit ce que l’enfant vient de montrer, et le signe fait ainsi trois allers-retours. Est-ce le même signe à la fin qu’au début ? Ensuite, c’est au tour de l’enfant.",
+    "sagen": [
+     "Je te montre quelque chose sans mots. Regarde bien mes mains et mon visage, puis montre-le-moi à ton tour."
+    ]
+   }
+  }
  },
  "s:sp-haende-sprechen:reim": {
   "rolle": [
@@ -10589,14 +10692,28 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Gebärden-Reim: essen, trinken, danke, froh mit den Händen zeigen; nachmachen.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Verweis auf „Gebärden aus der Sammlung“/« signes du recueil » (gibt es in der…",
   "von": "agent",
   "sicher": 0.7,
-  "h": "48300c78"
+  "h": "48300c78",
+  "einzelvariante": {
+   "text": "Fachkraft und Kind sprechen den Reim zusammen. Am Anfang die Hände zeigen und still vor den Mund halten. Dazu einfache Handzeichen: „essen“ – Fingerspitzen zum Mund, „trinken“ – Hand wie ein Becher, „danke“ – flache Hand vom Kinn nach vorn, „froh“ – Hände aufs Herz, „mehr“ – Fingerspitzen tippen. Bei „schau her!“ Hände hochhalten und schütteln.",
+   "sagen": [
+    "Meine Hände sprechen leise, / ganz auf ihre eigne Weise. / Essen, trinken, danke sagen – / meine Hände kann ich fragen.",
+    "Bin ich froh und will ich mehr, / zeigt es meine Hand – schau her!"
+   ],
+   "fr": {
+    "text": "L’adulte et l’enfant disent la comptine ensemble. Au début, montrer les mains puis les poser devant la bouche. Puis des gestes simples : « manger » – bout des doigts vers la bouche, « boire » – main en coupe, « merci » – main à plat du menton vers l’avant, « tout va bien » – mains sur le cœur, « encore » – bouts des doigts qui se tapotent. À « regarde », lever les mains et les agiter.",
+    "sagen": [
+     "Mes mains parlent sans un bruit, / elles disent tout, jour et nuit. / Manger, boire, dire merci, / mes deux mains savent tout ceci.",
+     "Tout va bien, j’en veux encore : / regarde, mes mains le disent fort !"
+    ]
+   }
+  }
  },
  "s:sp-haende-waschen:a0": {
   "rolle": [
@@ -11647,16 +11764,30 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {
    "koerperkontakt": true
   },
   "sensibel": null,
-  "begruendung": "Kettenreim ums Tischdecken und Helfen; Hände fassen am Schluss, also Körperkontakt.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Sicherheit: „Hände fassen“ (Berührung ohne Ausweg) – in der Einzelfassung nur…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "c20103ca"
+  "h": "c20103ca",
+  "einzelvariante": {
+   "text": "Die Fachkraft spricht den Reim, das Kind macht die Bewegungen, alles nur gespielt: Teller hinlegen, über den Tisch wischen, den Becherrand nachfahren, die Hand zeigen. Zum Schluss hält die Fachkraft die Hand hin; das Kind darf einschlagen, winken oder nur nicken. Kettenreim: Das letzte Wort jeder Zeile beginnt die nächste.",
+   "sagen": [
+    "Ich leg den Teller auf den Tisch, / der Tisch ist sauber, der Tisch ist frisch. / Frisch ist der Becher, rund der Rand, / der Rand ist glatt in meiner Hand.",
+    "Die Hand, die hilft, das macht uns froh, / und Hand in Hand geht’s doppelt so!"
+   ],
+   "fr": {
+    "text": "L’adulte dit la comptine, l’enfant fait les gestes, tout est mimé : poser une assiette, dessiner un rond, montrer le monde. À la fin, l’adulte tend la main ; l’enfant peut la prendre, faire un signe ou simplement hocher la tête. Comptine en chaîne : le dernier mot de chaque vers ouvre le suivant.",
+    "sagen": [
+     "Je pose l’assiette, l’assiette est ronde, / ronde comme la lune, ronde comme le monde.",
+     "Le monde est grand, ma main est là, / ma main t’aide, et toi, tu m’aides – voilà !"
+    ]
+   }
+  }
  },
  "s:sp-igel:a0": {
   "rolle": [
@@ -12192,23 +12323,15 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Das Kind liegt als Kartoffel „unter der Erde“, etwa auf einer Decke. Die Fachkraft gräbt in der Luft und tippt die Schulter nur an, wenn das Kind mag; sonst ruft sie leise seinen Namen. Dann rollt das Kind heraus, hilft beim Graben und rollt zuletzt in den Seilkreis. Danach tauschen sie die Rollen.",
-   "sagen": [
-    "Du bist eine Kartoffel unter der Erde. Warte, bis ich dich antippe oder rufe.",
-    "Darf ich dich an der Schulter antippen, oder rufe ich nur deinen Namen?"
-   ],
+   "text": "Das Kind liegt als Kartoffel „unter der Erde“ auf dem Boden. Die Fachkraft gräbt in der Luft und tippt die Schulter nur an, wenn das Kind mag; sonst ruft sie leise seinen Namen. Dann rollt das Kind heraus, hilft beim Graben und rollt zuletzt in den „Korb“ – eine Ecke, die beide vorher festlegen. Danach tauschen sie die Rollen.",
    "fr": {
-    "text": "L’enfant est couché comme une pomme de terre « sous la terre », par exemple sur une couverture. L’adulte creuse dans l’air et ne touche l’épaule que si l’enfant le veut ; sinon il l’appelle. L’enfant sort en roulant, aide à creuser et roule dans le cercle de cordes. Puis ils échangent les rôles.",
-    "sagen": [
-     "Tu es une pomme de terre sous la terre. Attends que je te touche ou t’appelle.",
-     "Je peux toucher ton épaule, ou je dis seulement ton prénom ?"
-    ]
+    "text": "L’enfant est couché comme une pomme de terre « sous la terre », par terre. L’adulte creuse dans l’air et ne touche l’épaule que si l’enfant le veut ; sinon l’adulte appelle doucement l’enfant par son prénom. L’enfant sort en roulant, aide à creuser et roule dans le « panier » – un coin choisi ensemble. Puis ils échangent les rôles."
    }
   },
   "merkmale": {
    "koerperkontakt": true
   },
-  "begruendung": "Kinder werden das eine Kind, Fachkraft gräbt. Schultertipp nur mit Einverständnis, Zuruf als Alternative.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Material: „Decke“ und „Seilkreis“ stehen nicht im Material (leer) – ersetzt; FR…",
   "von": "agent",
   "sicher": 0.8,
   "h": "638f7853"
@@ -13146,21 +13269,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft läutet leise eine Glocke, das Kind schließt die Augen und zeigt, woher der Klang kommt. Dann sprechen beide den Reim; bei „Klingeling“ läutet das Kind die Glocke, und die Fachkraft zeigt.",
-   "sagen": [
-    "Augen zu. Woher kommt der Klang?",
-    "Jetzt läutest du, und ich zeige."
-   ],
+   "text": "Die Fachkraft klatscht leise an einer Stelle im Raum, das Kind schließt die Augen und zeigt, woher der Klang kommt. Dann sprechen beide den Reim; bei „Klingeling“ klatscht das Kind leise an einer Stelle, und die Fachkraft zeigt mit geschlossenen Augen, woher es kommt.",
    "fr": {
-    "text": "L’adulte fait sonner doucement une cloche, l’enfant ferme les yeux et montre d’où vient le son. Puis tous deux disent la comptine ; à « ding, dong », l’enfant fait sonner la cloche et l’adulte montre.",
-    "sagen": [
-     "Yeux fermés. D’où vient le son ?",
-     "Maintenant tu fais sonner, et moi je montre."
-    ]
+    "text": "L’adulte frappe doucement dans ses mains à un endroit de la pièce, l’enfant ferme les yeux et montre d’où vient le son. Puis tous deux disent la comptine ; à « ding, dong », l’enfant frappe doucement dans ses mains à un endroit, et l’adulte, les yeux fermés, montre d’où vient le son."
    }
   },
   "merkmale": {},
-  "begruendung": "Das nächste Kind läutet: im Wechsel Fachkraft und Kind. Hören und zeigen, woher der Klang kommt.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: Glocke steht nicht im Material (leer); neu mit leisem Klatschen…",
   "von": "agent",
   "sicher": 0.85,
   "h": "ac7ef3c4"
@@ -13568,23 +13683,15 @@
   "einzeltauglich": "angepasst",
   "einzelvariante": {
    "text": "Das Kind hockt als Samen am Boden. Die Fachkraft ist der Regen und tippt mit den Fingerspitzen auf den Boden neben dem Kind, dann kommt die Sonne (gelbes Tuch). Das Kind streckt erst einen Finger, dann die Arme und wächst langsam hoch, zum Licht.",
-   "sagen": [
-    "Du bist ein kleiner Samen. Jetzt kommt der Regen – hörst du ihn?",
-    "Die Sonne scheint: Streck einen Finger, dann die Arme, und wachse zum Licht."
-   ],
    "fr": {
-    "text": "L’enfant s’accroupit en graine. L’adulte est la pluie et tapote du bout des doigts sur le sol à côté de lui, puis vient le soleil (tissu jaune). L’enfant tend d’abord un doigt, puis les bras et grandit lentement vers la lumière.",
-    "sagen": [
-     "Tu es une petite graine. Voilà la pluie – tu l’entends ?",
-     "Le soleil brille : tends un doigt, puis les bras, et grandis vers la lumière."
-    ]
+    "text": "L’enfant s’accroupit en graine. L’adulte est la pluie et tapote du bout des doigts sur le sol, à côté de l’enfant, puis vient le soleil (tissu jaune). L’enfant tend d’abord un doigt, puis les bras, et grandit lentement vers la lumière."
    }
   },
   "merkmale": {
    "koerperkontakt": true
   },
   "sensibel": null,
-  "begruendung": "Original: Regen tippt auf die Rücken; Variante kontaktfrei, Regen auf dem Boden. Fantasiespiel vom Wachsen.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Vorhandene Einzelvariante: FR « à côté de lui » mehrdeutig (l’adulte/l’enfant)…",
   "von": "agent",
   "sicher": 0.8,
   "h": "fdf98eba"
@@ -14209,12 +14316,18 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
-  "begruendung": "Reim sprechen, mit Laterne gehen, bei „Halt“ stehen bleiben: geht mit der Fachkraft. Innehalten auf Signal (V-10).",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: Gruppenspiel (Kinder im Kreis) und Laternen stehen nicht im…",
   "von": "agent",
   "sicher": 0.85,
-  "h": "8725ebd1"
+  "h": "8725ebd1",
+  "einzelvariante": {
+   "text": "Das Kind und die Fachkraft gehen im Takt durch den Raum und halten dabei eine Hand wie eine Laterne hoch. Sie sprechen den Reim im Rhythmus oder singen ihn auf eine einfache Melodie: „Laterne, Laterne, leuchte in die Ferne – Halt!“ Bei „Halt“ bleiben beide stehen. Dann geht das Kind voran und ruft „Halt“, wann es mag, auch leise.",
+   "fr": {
+    "text": "L’enfant et l’adulte marchent au rythme à travers la pièce, une main levée comme une lanterne. Ils disent la comptine en rythme ou la chantent sur une mélodie simple : « Lanterne, lanterne, brille au loin – Stop ! » À « Stop », les deux s’arrêtent. Ensuite, l’enfant ouvre la marche et dit « Stop » au moment de son choix, même tout bas."
+   }
+  }
  },
  "s:sp-laternen:a4": {
   "rolle": [
@@ -14243,20 +14356,12 @@
   "einzeltauglich": "angepasst",
   "einzelvariante": {
    "text": "Probe-Umzug im Flur: Das Kind geht langsam neben der Fachkraft. Zeigt sie die Stopp-Karte, bleiben beide sofort stehen. Danach wird getauscht: Das Kind zeigt die Stopp-Karte, die Fachkraft bleibt stehen und geht auf ein Zeichen weiter.",
-   "sagen": [
-    "Wir gehen langsam. Wenn ich die Karte zeige, bleiben wir stehen.",
-    "Jetzt zeigst du die Karte, und ich bleibe stehen."
-   ],
    "fr": {
-    "text": "Répétition du cortège dans le couloir : l’enfant marche lentement à côté de l’adulte. Quand celui-ci montre la carte stop, tous deux s’arrêtent aussitôt. Puis on échange : l’enfant montre la carte stop, l’adulte s’arrête et repart à un signal.",
-    "sagen": [
-     "On marche doucement. Quand je montre la carte, on s’arrête.",
-     "Maintenant c’est toi qui montres la carte, et moi je m’arrête."
-    ]
+    "text": "Répétition du cortège dans le couloir : l’enfant marche lentement à côté de l’adulte. Quand l’adulte montre la carte stop, tous deux s’arrêtent aussitôt. Puis on échange : l’enfant montre la carte stop, l’adulte s’arrête et repart à un signal."
    }
   },
   "merkmale": {},
-  "begruendung": "Gehen zu zweit wird Kind plus Fachkraft; Stopp beachten und Karte zeigen bleiben. Kein Körperkontakt.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): FR-Einzelfassung: Pronomen „celui-ci“ → „l’adulte“ (DE unverändert)",
   "von": "agent",
   "sicher": 0.85,
   "h": "570fde3c"
@@ -14910,14 +15015,28 @@
   },
   "energie": 3,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Ballon-Reim: tief einatmen, pusten, Reimwörter rufen; am Ende 'fliegen' durch den Raum.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Reim mit „Die Kinder rufen die Reimwörter“ (Gruppenrest, laut) – Einzelfassung…",
   "von": "agent",
   "sicher": 0.7,
-  "h": "495b9b52"
+  "h": "495b9b52",
+  "einzelvariante": {
+   "text": "Die Fachkraft spricht den Reim, das Kind macht die Bewegungen: tief einatmen, Schultern heben; die Hände formen einen Ballon, der bei jedem Pusten wächst; bei „Bär“ die Arme weit. Das Kind ruft oder flüstert die Reimwörter „Bär“ und „See“. Zum Schluss mit Zischen durch den Raum fliegen und still hinhocken.",
+   "sagen": [
+    "Ich atme ein, ganz tief und still, / weil ich den Ballon aufblasen will. / Ich puste – pff – und puste mehr: / Jetzt ist er groß wie … ein Bär!",
+    "Ich lass ihn los – oh weh, oh je: / Zisch! Fliegt er bis in den … See!"
+   ],
+   "fr": {
+    "text": "L’adulte dit la comptine, l’enfant fait les gestes : inspirer, épaules levées ; les mains forment un ballon qui grandit à chaque souffle ; au mot « lit », bras ouverts. L’enfant dit ou chuchote les mots « lit » et « nuit ». Pour finir, voler en sifflant, puis s’accroupir.",
+    "sagen": [
+     "J’inspire tout doucement, / je souffle dans mon ballon blanc. / Pff ! Il grossit, il grossit, / le voilà gros comme… un lit !",
+     "Je le lâche, il file : pfuit ! / Il s’envole jusqu’à… la nuit !"
+    ]
+   }
+  }
  },
  "s:sp-magnet-detektive:a0": {
   "rolle": [
@@ -15108,14 +15227,28 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Fingerspiel mit Magnet-Klammern: rückwärts zählen von 5 bis 1; zu zweit machbar.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: „dann zählen alle“ / „Montrez“ (Gruppe); FR-Reim „doigts levés“…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "d84d6ec2"
+  "h": "d84d6ec2",
+  "einzelvariante": {
+   "text": "Fünf Finger einer Hand liegen auf dem Tisch, die andere Hand ist der Magnet. Das Kind und die Fachkraft sprechen den Reim; bei „Klick“ klappt ein Finger hoch, dann zählen beide die übrigen. So weiter mit vier, drei, zwei, eins – bis keine Klammer mehr liegt.",
+   "sagen": [
+    "Fünf Klammern liegen auf dem Tisch, da kommt der Magnet – und zisch! Klick! Die erste hängt schon dran.",
+    "Wie viele liegen noch? Fang an: eins, zwei, drei, vier – vier Klammern bleiben hier."
+   ],
+   "fr": {
+    "text": "Cinq doigts d’une main sont posés sur la table, l’autre main est l’aimant. L’enfant et l’adulte disent la comptine ; au « clic », un doigt se lève, puis les deux comptent ceux qui restent. On continue avec quatre, trois, deux, un – jusqu’au dernier trombone.",
+    "sagen": [
+     "Cinq trombones sur la table, l’aimant arrive, formidable ! Clic ! Le premier est collé, il s’en va, bien accroché.",
+     "Combien en reste-t-il ? Compte : quatre petits doigts posés !"
+    ]
+   }
+  }
  },
  "s:sp-mein-name:a0": {
   "rolle": [
@@ -15186,21 +15319,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft spricht den ersten Laut eines Namens lang („Mmmia“). Das Kind winkt, wenn der eigene Name so beginnt, sonst zeigt es auf die passende Namenskarte (Kind, Fachkraft, Kuscheltiere). Bei schwierigen Lauten wird der Name zweimal langsam nachgesprochen.",
-   "sagen": [
-    "Hör gut hin: Mmmia. Fängt dein Name so an?",
-    "Sprich den Namen zweimal langsam nach."
-   ],
+   "text": "Die Fachkraft spricht den ersten Laut eines Namens lang („Mmmia“). Das Kind winkt, wenn der eigene Name so beginnt, sonst zeigt es auf die passende Namenskarte (Kind, Fachkraft und ein paar weitere Namen). Bei schwierigen Lauten wird der Name zweimal langsam nachgesprochen. Danach darf das Kind einen Laut vorsprechen, und die Fachkraft zeigt die Karte.",
    "fr": {
-    "text": "L’adulte prononce longuement le premier son d’un prénom (« Mmmia »). L’enfant fait un signe si son prénom commence ainsi, sinon il montre la carte de prénom qui convient (enfant, adulte, peluches). Pour les sons difficiles, le prénom est répété deux fois, lentement.",
-    "sagen": [
-     "Écoute bien : Mmmia. Ton prénom commence comme ça ?",
-     "Répète le prénom deux fois, lentement."
-    ]
+    "text": "L’adulte prononce longuement le premier son d’un prénom (« Mmmia »). L’enfant fait coucou si son prénom commence ainsi ; sinon, l’enfant montre la carte de prénom qui convient (enfant, adulte et quelques autres prénoms). Pour les sons difficiles, le prénom est répété deux fois, lentement. Ensuite, l’enfant peut prononcer un son, et l’adulte montre la carte."
    }
   },
   "merkmale": {},
-  "begruendung": "Mit einem Kind passt nur der eigene Name selten: Namenskarten der Fachkraft und Kuscheltiere ergänzen. Anlaute hören.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Kuscheltiere/Peluches (nicht im Material, nur karten) in der Einzelfassung…",
   "von": "agent",
   "sicher": 0.75,
   "h": "28ed5b81"
@@ -15567,14 +15692,30 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": "familie",
-  "begruendung": "Zähl-Reim 'Wer wohnt bei dir?': fragt nach Familie, 'niemand muss antworten'; Familie-Themen heikel.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Gruppenwort „Alle, alle“ im Reim; Einzelfassung mit Zählen und Gesten, Zuhören…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "280bb5fb"
+  "h": "280bb5fb",
+  "einzelvariante": {
+   "text": "Fachkraft und Kind sprechen den Reim zusammen und zeigen bei jeder Zahl einen Finger (1 bis 10). Bei „wer“ die Schultern heben, bei „gelacht“ lachen, am Ende die Arme weit öffnen und die Hand aufs Herz legen. Niemand muss antworten; das Kind darf auch nur zuhören.",
+   "sagen": [
+    "Eins, zwei, drei, vier – wer wohnt bei dir? / Fünf, sechs, sieben, acht – wer hat mit dir gelacht?",
+    "Neun, zehn – wer ist bei dir zu sehn?",
+    "Mal groß, mal klein, mal laut, mal fein – / so darf jede Familie sein!"
+   ],
+   "fr": {
+    "text": "L’adulte et l’enfant disent la comptine ensemble et montrent un doigt à chaque nombre (1 à 10). Hausser les épaules à « qui », faire un clin d’œil à « malices », à la fin ouvrir grand les bras et poser la main sur le cœur. Personne n’a à répondre ; l’enfant peut aussi seulement écouter.",
+    "sagen": [
+     "Un, deux, trois – qui vit avec toi ? / Quatre, cinq, six – qui te fait des malices ?",
+     "Sept, huit – qui te dit bonne nuit ?",
+     "Neuf, dix – chaque famille a sa place ici !"
+    ]
+   }
+  }
  },
  "s:sp-melusina:a0": {
   "rolle": [
@@ -15669,21 +15810,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Ein Ende des Schwungtuchs liegt auf einem Stuhl, die Fachkraft hält das andere: leise Wellen, starke Wellen, ganz still. Ruft die Fachkraft „Mélusina!“, taucht das Kind unter dem Tuch zur anderen Seite. Dann tauschen sie die Rollen.",
-   "sagen": [
-    "Der Fluss ist ruhig … jetzt kommen hohe Wellen!",
-    "Mélusina, tauch durch!"
-   ],
+   "text": "Die Fachkraft hält das Schwungtuch an einem Rand, der andere Rand liegt auf dem Boden: leise Wellen, starke Wellen, ganz still. Ruft die Fachkraft „Mélusina!“, hebt sie das Tuch an, und das Kind taucht darunter zur anderen Seite. Dann tauschen sie die Rollen.",
    "fr": {
-    "text": "Un bout du parachute repose sur une chaise, l’adulte tient l’autre : vagues douces, vagues fortes, tout calme. Quand l’adulte appelle « Mélusine ! », l’enfant se glisse sous le tissu jusqu’à l’autre côté. Puis ils échangent les rôles.",
-    "sagen": [
-     "La rivière est calme… voilà de grosses vagues !",
-     "Mélusine, glisse-toi dessous !"
-    ]
+    "text": "L’adulte tient le parachute par un bord, l’autre bord reste posé au sol : vagues douces, vagues fortes, tout calme. Quand l’adulte appelle « Mélusine ! », le tissu se lève et l’enfant se glisse dessous jusqu’à l’autre côté. Puis ils échangent les rôles."
    }
   },
   "merkmale": {},
-  "begruendung": "Schwungtuch-Fluss mit Namensruf wird Spiel zu zweit: Tuchende am Stuhl, Fachkraft hält, Kind taucht.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Stuhl (Möbel, nicht im Material) in der Einzelfassung durch Boden ersetzt",
   "von": "agent",
   "sicher": 0.8,
   "h": "fef71318"
@@ -17049,14 +17182,20 @@
   },
   "energie": 3,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {
    "laut": true
   },
-  "begruendung": "Laut stampfen, leise schleichen, bei Pause still stehen: Fachkraft trommelt. Laut; kein Gewaltbezug.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: Gruppenspiel (Kinder) und Trommel/Topf mit Kochlöffel stehen…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "7667fe91"
+  "h": "7667fe91",
+  "einzelvariante": {
+   "text": "Die Fachkraft klopft mit den Händen auf ihre Knie, das Kind bewegt sich dazu: kräftige Schläge – stampfen wie ein Elefant, leise Schläge – schleichen wie eine Katze. Hört das Klopfen auf, bleibt das Kind ganz still stehen und lauscht. Dann tauschen sie: Das Kind klopft, und die Fachkraft bewegt sich.",
+   "fr": {
+    "text": "L’adulte tape des mains sur ses genoux et l’enfant bouge au rythme : coups forts – marcher lourdement comme un éléphant, coups doux – se faufiler comme un chat. Quand les coups s’arrêtent, l’enfant reste immobile et écoute. Ensuite, on échange : l’enfant tape, l’adulte bouge."
+   }
+  }
  },
  "s:sp-ohren-auf:a4": {
   "rolle": [
@@ -17589,14 +17728,30 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Picknick-Reim: Stücke gerecht teilen (SOZ-16); Fachkraft und Kind teilen sich den Korb.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: „jedem Nachbarn“, „alle lachen“ (Gruppe) und Korb/Decke nicht im…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "12d7462e"
+  "h": "12d7462e",
+  "einzelvariante": {
+   "text": "Das Kind und die Fachkraft sprechen den Reim zusammen und spielen ihn mit gedachten Dingen: Beim Packen legen sie Sachen in einen großen Korb, beim Teilen reichen sie sich gegenseitig ein Stück, bei „Decke“ breiten beide die Arme aus. Am Ende lachen beide.",
+   "sagen": [
+    "Wir packen den Korb, wir packen ihn voll, das Picknick wird schön, das Picknick wird toll!",
+    "Ein Stück für dich, ein Stück für mich, wir teilen gerecht, so gehört es sich.",
+    "Dann sitzen wir still auf der Decke im Gras, wir essen und lachen – das macht uns Spaß."
+   ],
+   "fr": {
+    "text": "L’enfant et l’adulte disent la comptine ensemble et la jouent avec des objets imaginaires : en préparant, ils mettent des choses dans un grand panier, en partageant, ils se tendent un morceau, à « couverture » les deux ouvrent les bras. À la fin, les deux rient.",
+    "sagen": [
+     "On remplit le panier jusqu’en haut, le pique-nique sera beau !",
+     "Un morceau pour toi, un morceau pour moi, partager, c’est la joie !",
+     "Dans l’herbe, sur la couverture, on mange, on rit, quelle aventure !"
+    ]
+   }
+  }
  },
  "s:sp-plaetzchen-backen:a0": {
   "rolle": [
@@ -19134,21 +19289,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Schuhe des Kindes liegen mit ein paar anderen Schuhen (Fachkraft, weitere Erwachsene) gemischt in einer Ecke. Das Kind sucht seine beiden Schuhe, zieht sie an und stellt sich ans Ziel. Dann sucht die Fachkraft ihre Schuhe, und das Kind hilft: Passen links und rechts?",
-   "sagen": [
-    "Such deine beiden Schuhe und zieh sie an!",
-    "Hilfst du mir? Passen links und rechts?"
-   ],
+   "text": "Die Schuhe des Kindes liegen gemischt mit den Schuhen der Fachkraft in einer Ecke. Das Kind sucht seine beiden Schuhe, zieht sie an und stellt sich ans Ziel. Dann sucht die Fachkraft ihre Schuhe, und das Kind hilft: Passen links und rechts?",
    "fr": {
-    "text": "Les chaussures de l’enfant sont mélangées à d’autres chaussures (adulte, autres adultes) dans un coin. L’enfant cherche ses deux chaussures, les enfile et se place à l’arrivée. Puis l’adulte cherche les siennes et l’enfant l’aide : gauche et droite vont-ils ensemble ?",
-    "sagen": [
-     "Cherche tes deux chaussures et mets-les !",
-     "Tu m’aides ? La gauche et la droite vont ensemble ?"
-    ]
+    "text": "Les chaussures de l’enfant sont mélangées à celles de l’adulte dans un coin. L’enfant cherche ses deux chaussures, les enfile et se place à l’arrivée. Puis l’adulte cherche les siennes, et l’enfant l’aide : la gauche et la droite vont-elles ensemble ?"
    }
   },
   "merkmale": {},
-  "begruendung": "Schuhe der Klasse werden die des Kindes plus Schuhe von Erwachsenen; Helfen wird zur Fachkraft. Selbsthilfe (V-6).",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): FR „vont-ils“ falsch (chaussures: vont-elles); „weitere Erwachsene“ gibt es in…",
   "von": "agent",
   "sicher": 0.8,
   "h": "0cbeff3d"
@@ -19208,21 +19355,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Kind und Fachkraft halten das Schwungtuch am Rand und gehen im Kreis: langsam, schneller, wieder langsam. Bei „Halt“ heben beide das Tuch hoch und tauschen darunter die Plätze. Zwischendurch gibt es Pausen gegen Schwindel.",
-   "sagen": [
-    "Wir halten das Tuch zusammen: erst langsam, dann schneller. Bei „Halt“ heben wir es hoch.",
-    "Wenn dir schwindelig wird, sag Bescheid. Dann machen wir eine Pause."
-   ],
+   "text": "Kind und Fachkraft stehen sich gegenüber, halten das Schwungtuch am Rand und gehen gemeinsam im Kreis: langsam, schneller, wieder langsam. Das Kind sagt irgendwann „Halt“, dann heben beide das Tuch hoch und tauschen darunter die Plätze. Zwischendurch gibt es Pausen gegen Schwindel.",
    "fr": {
-    "text": "L’enfant et l’adulte tiennent le parachute par le bord et marchent en cercle : lentement, plus vite, de nouveau lentement. À « Stop », tous deux lèvent le tissu et échangent leurs places dessous. Des pauses sont prévues contre le vertige.",
-    "sagen": [
-     "On tient le tissu ensemble : d’abord doucement, puis plus vite. À « Stop », on le lève.",
-     "Si tu as le vertige, dis-le-moi. On fait une pause."
-    ]
+    "text": "L’enfant et l’adulte se tiennent face à face, prennent le parachute par le bord et tournent ensemble en rond : lentement, plus vite, de nouveau lentement. L’enfant dit « Stop » quand il veut ; alors tous deux lèvent le parachute et échangent leurs places dessous. On fait des pauses de temps en temps contre le vertige."
    }
   },
   "merkmale": {},
-  "begruendung": "Der Kreis der Gruppe wird zu zweit: gehen, bei „Halt“ Tuch heben und Plätze tauschen. Pausen gegen Schwindel.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): FR „en cercle“ ist ein Gruppenwort; unklar, wer „Halt“ ruft – jetzt das Kind",
   "von": "agent",
   "sicher": 0.85,
   "h": "f35345b5"
@@ -19410,14 +19549,28 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Karussell-Reim: sich drehen, 'brav warten' bis eins, zwei, drei (V-10); allein machbar.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Reim mit „Die Kinder ergänzen“ (Gruppenrest) – Einzelfassung mit Fachkraft und…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "f4038c11"
+  "h": "f4038c11",
+  "einzelvariante": {
+   "text": "Die Fachkraft spricht den Reim, das Kind macht die Bewegungen: erst langsam, dann schneller im Kreis drehen; bei „hoch“ die Arme heben und winken; bei „eins, zwei, drei“ still stehen, mitzählen und einen Schritt vortreten. Am Zeilenende hält die Fachkraft kurz inne, und das Kind ergänzt „Kreis“, „klein“ und „vorbei“.",
+   "sagen": [
+    "Das Karussell dreht sich ganz leis, / und immer schneller rund im Kreis. / Das Riesenrad fährt hoch und fein, / ich winke, und die Stadt ist klein.",
+    "Ich warte brav: eins, zwei, drei, / dann ist die Warterei vorbei."
+   ],
+   "fr": {
+    "text": "L’adulte dit la comptine, l’enfant fait les gestes : tourner lentement puis plus vite ; lever les bras comme une grande roue, faire coucou ; au « un, deux, trois », s’arrêter, compter, avancer d’un pas. À la fin du vers, l’adulte s’arrête un instant et l’enfant complète « riant », « tableau » et « moi ».",
+    "sagen": [
+     "Le manège tourne tout doucement, / puis plus vite, tout en riant. / La grande roue monte très haut, / je vois la ville comme un tableau.",
+     "J’attends mon tour : un, deux, trois, / et puis c’est moi, c’est à moi !"
+    ]
+   }
+  }
  },
  "s:sp-sommernacht:a0": {
   "rolle": [
@@ -19533,21 +19686,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Im dämmrigen Raum ist die Fachkraft ein Glühwürmchen mit einer kleinen LED-Lampe: Sie fliegt leise umher und lässt das Licht kurz blinken. Das Kind ist ein Nachtfalter und folgt dem Licht. Geht das Licht aus, bleiben beide still stehen. Dann tauschen sie die Rollen.",
-   "sagen": [
-    "Ich bin ein Glühwürmchen – folg meinem Licht!",
-    "Licht aus – wir bleiben ganz still stehen."
-   ],
+   "text": "Die Fachkraft ist ein Glühwürmchen: Sie schleicht leise durch den Raum und öffnet kurz die Faust – das ist ihr Licht, das aufblinkt. Das Kind ist ein Nachtfalter und fliegt leise hinterher. Schließt die Fachkraft die Faust, ist es dunkel, und beide bleiben still stehen. Dann tauschen sie die Rollen.",
    "fr": {
-    "text": "Dans la pénombre, l’adulte est un ver luisant avec une petite lampe LED : il vole doucement et fait clignoter sa lumière. L’enfant est un papillon de nuit et suit la lumière. Quand la lumière s’éteint, tous deux restent immobiles. Puis ils échangent les rôles.",
-    "sagen": [
-     "Je suis un ver luisant – suis ma lumière !",
-     "Lumière éteinte – on reste tout immobile."
-    ]
+    "text": "L’adulte est un ver luisant qui se déplace doucement dans la pièce et ouvre brièvement le poing : c’est sa lumière qui clignote. L’enfant est un papillon de nuit et suit le ver luisant en silence. Quand l’adulte ferme le poing, il fait nuit : tous deux restent immobiles. Puis ils échangent les rôles."
    }
   },
   "merkmale": {},
-  "begruendung": "Glühwürmchen und Nachtfalter spielen Fachkraft und Kind, dann Rollentausch; bei „Licht aus“ stehen beide still.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung benutzte LED-Lampen, die nicht im Material stehen – neu ohne…",
   "von": "agent",
   "sicher": 0.8,
   "h": "8ca4ce97"
@@ -19971,14 +20116,30 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Zählreim beim Warten, bis man dran ist (V-10), Zählen bis 10; zu zweit machbar.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: „Die Kinder zählen beim Warten oben“ (Warteschlange/Gruppe); neu…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "4ddbfd40"
+  "h": "4ddbfd40",
+  "einzelvariante": {
+   "text": "Das Kind und die Fachkraft stapfen auf der Stelle und sprechen den Reim zusammen; die Finger zählen mit. Bei „dran“ zeigen beide auf sich, bei „fahre an“ gehen beide in die Hocke und strecken die Arme nach vorn. Danach darf das Kind den Reim anführen.",
+   "sagen": [
+    "Eins, zwei, ich steh am Hang, drei, vier, ich warte schon so lang.",
+    "Fünf, sechs, gleich bin ich dran, sieben, acht, ich fahre an!",
+    "Neun, zehn, jetzt kommt die Zeit: Den Berg hinab – ich bin bereit!"
+   ],
+   "fr": {
+    "text": "L’enfant et l’adulte marchent sur place en disant la comptine ensemble et comptent sur les doigts. À « tour », les deux se montrent du doigt, à « bas » ils s’accroupissent et tendent les bras. Ensuite, l’enfant peut mener la comptine.",
+    "sagen": [
+     "Un, deux, je monte la pente, trois, quatre, quelle longue attente !",
+     "Cinq, six, je regarde autour, sept, huit, c’est bientôt mon tour !",
+     "Neuf, dix, je file vers le bas, et tout en bas… je ne tombe pas !"
+    ]
+   }
+  }
  },
  "s:sp-sprachen-geschichtensack:a0": {
   "rolle": [
@@ -20220,14 +20381,28 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Sack-Reim: Wort in verschiedenen Sprachen (Ball, balle, bola), das Kind nennt sein Wort.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: „Eine Person fragt, alle antworten“ (Gruppe) und „Sag es laut“…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "74cf8e35"
+  "h": "74cf8e35",
+  "einzelvariante": {
+   "text": "Die Fachkraft spricht den Reim, das Kind spricht mit, wo es mag. Beide greifen in einen gedachten Sack (Augen zu), formen mit den Händen einen kleinen Ball und geben ihn bei „Ball, balle, bola“ dreimal hin und her. Zum Schluss sagt das Kind das Wort in seiner Sprache, laut oder leise.",
+   "sagen": [
+    "Was ist im Sack? – Wir wissen’s nicht. Greif hinein, ganz ohne Sicht! Ist es rund? – Ja, rund und klein!",
+    "Ball, balle, bola – komm herein! Wie heißt es bei dir? – Sag es laut! Hier ist jede Sprache vertraut."
+   ],
+   "fr": {
+    "text": "L’adulte dit la comptine ; l’enfant peut se joindre à la comptine à tout moment. Les deux mettent la main dans un sac imaginaire (les yeux fermés), forment une petite balle avec les mains et se la passent trois fois à « Ball, balle, bola ». À la fin, l’enfant dit le mot de sa langue, à voix haute ou tout bas.",
+    "sagen": [
+     "Dans le sac, qu’est-ce qu’il y a ? – Mets ta main, mais ne regarde pas ! C’est tout rond ? – Oui, tout rond, tout petit !",
+     "Ball, balle, bola – la voici ! Chez toi, comment dit-on ? – Dis-le fort : chaque langue est un trésor."
+    ]
+   }
+  }
  },
  "s:sp-strasse-sicher:a0": {
   "rolle": [
@@ -20285,22 +20460,14 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Papierstreifen am Boden bilden einen Zebrastreifen, Klebeband die Straße. Die Fachkraft ist das Auto und fährt langsam heran; das Kind übt: am Rand stehen bleiben, schauen, zügig hinübergehen. Dann tauschen sie: Das Kind ist das Auto und sagt, ob die Fachkraft richtig gewartet hat.",
-   "sagen": [
-    "Ich bin das Auto und komme langsam. Bleib am Rand stehen und schau.",
-    "Wenn das Auto steht, gehst du zügig hinüber. Jetzt bist du das Auto."
-   ],
+   "text": "Papierstreifen am Boden bilden einen Zebrastreifen; der Boden daneben ist die Straße. Die Fachkraft ist das Auto und fährt langsam heran; das Kind übt: am Rand stehen bleiben, schauen, zügig hinübergehen. Dann tauschen sie: Das Kind ist das Auto und sagt, ob die Fachkraft richtig gewartet hat.",
    "fr": {
-    "text": "Des bandes de papier forment un passage piéton, du ruban adhésif la route. L’adulte est la voiture et approche lentement ; l’enfant s’exerce : s’arrêter au bord, regarder, traverser d’un bon pas. Puis ils échangent : l’enfant est la voiture et dit si l’adulte a bien attendu.",
-    "sagen": [
-     "Je suis la voiture et j’arrive lentement. Arrête-toi au bord et regarde.",
-     "Quand la voiture est arrêtée, tu traverses d’un bon pas. Maintenant, tu es la voiture."
-    ]
+    "text": "Des bandes de papier au sol forment un passage piéton ; le sol à côté est la route. L’adulte est la voiture et approche lentement ; l’enfant s’exerce : s’arrêter au bord, regarder, traverser d’un bon pas. Puis ils échangent : l’enfant est la voiture et dit si l’adulte a bien attendu."
    }
   },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Das Auto spielt die Fachkraft, dann tauschen die Rollen; Übung nur auf dem Boden, kein echter Verkehr.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung benutzte Klebeband, das nicht im Material steht (nur Papier)…",
   "von": "agent",
   "sicher": 0.85,
   "h": "b50d8e6e"
@@ -20733,12 +20900,26 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
-  "begruendung": "Spiel für zwei: Gefühl mit dem Gesicht zeigen, raten, nachmachen, sagen, woran man es erkennt. Ziel: Gefühle erkennen.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Gruppenspiel (Kind zieht, die anderen raten, alle) – Einzelfassung mit…",
   "von": "agent",
   "sicher": 0.85,
-  "h": "5deec9ab"
+  "h": "5deec9ab",
+  "einzelvariante": {
+   "text": "Das Kind zieht verdeckt eine Gefühlskarte und zeigt das Gefühl nur mit dem Gesicht. Die Fachkraft rät: froh, wütend oder ängstlich? Danach machen beide das Gesicht nach, und die Fachkraft sagt, woran sie es erkannt hat. Dann tauschen sie die Rollen. Mag das Kind nicht beginnen, zeigt zuerst die Fachkraft.",
+   "sagen": [
+    "Zieh eine Karte, ohne sie mir zu zeigen, und zeig mir das Gefühl nur mit deinem Gesicht.",
+    "Ich rate: froh, wütend oder ängstlich?"
+   ],
+   "fr": {
+    "text": "L’enfant tire en cachette une carte d’émotion et montre l’émotion seulement avec son visage. L’adulte devine : joie, colère ou peur ? Ensuite, tous deux imitent le visage, et l’adulte dit à quoi on a reconnu l’émotion. Puis on échange les rôles. Si l’enfant ne veut pas commencer, l’adulte montre d’abord.",
+    "sagen": [
+     "Tire une carte sans me la montrer, et montre-moi l’émotion seulement avec ton visage.",
+     "Je devine : joie, colère ou peur ?"
+    ]
+   }
+  }
  },
  "s:sp-theater:a1": {
   "rolle": [
@@ -21142,16 +21323,28 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {
    "laut": true
   },
   "sensibel": null,
-  "begruendung": "Rate-Reim: Fachkraft liest die Rätselzeilen, Kind ruft das Tier und macht es nach (K-9).",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassentext (alle raten/rufen, laut ohne Ausweg) – Einzelfassung mit lauter…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "13e32a31"
+  "h": "13e32a31",
+  "einzelvariante": {
+   "text": "Nach jedem Zeilenpaar rät das Kind das Tier und ruft es (Muh – Gack – Grunz).\nIch kaue Gras den ganzen Tag / und gebe Milch, so viel ich mag. / Ich scharre, picke, gack im Stroh / und lege Eier – ich bin froh. / Im Matsch, da wälz ich mich mit Lust / und grunze laut aus voller Brust.\nBewegungen: Kuh: Hände als Hörner, kauen; Huhn: Flügelarme, scharren; Schwein: auf der Stelle wälzen.",
+   "sagen": [
+    "Ich spreche den Reim. Rate das Tier und ruf es, laut oder ganz leise. Pass ist auch in Ordnung."
+   ],
+   "fr": {
+    "text": "Par couple de vers, l’enfant devine l’animal et le crie (meuh, cot cot, groin).\nJe mâche l’herbe toute la journée / et je donne du lait à volonté. / Je gratte la paille et je glousse bien fort, / puis je pose un œuf : c’est mon trésor. / Dans la boue je me roule avec bonheur / et je grogne fort du fond du cœur.\nGestes : vache, cornes et mâcher ; poule, ailes et gratter ; cochon, se rouler.",
+    "sagen": [
+     "Je dis la comptine. Devine l’animal et crie-le, fort ou tout bas. Tu peux aussi passer."
+    ]
+   }
+  }
  },
  "s:sp-tiere-fische:a0": {
   "rolle": [
@@ -22897,14 +23090,20 @@
   },
   "energie": 3,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {
    "laut": true
   },
-  "begruendung": "Zur Trommel als Elefant oder Affe bewegen, bei Pause schlafen: Die Fachkraft trommelt. Trommeln: laut bleibt markiert.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: Gruppenspiel (Kinder, alle Tiere) und Trommel/Tamburin nicht im…",
   "von": "agent",
   "sicher": 0.85,
-  "h": "04bea0a9"
+  "h": "04bea0a9",
+  "einzelvariante": {
+   "text": "Die Fachkraft klopft mit den Händen auf ihre Knie, das Kind bewegt sich dazu: langsame, schwere Schläge – Elefant; schnelle, leichte Schläge – Affe; Pause – das Tier schläft. Das Kind hört auf das Tempo und wechselt selbst die Bewegung. Dann tauschen sie: Das Kind klopft, die Fachkraft bewegt sich.",
+   "fr": {
+    "text": "L’adulte tape des mains sur ses genoux et l’enfant bouge au rythme : coups lents et lourds – éléphant ; coups rapides et légers – singe ; pause – l’animal dort. L’enfant écoute le tempo et change de mouvement sans qu’on le lui dise. Ensuite, on échange : l’enfant tape, l’adulte bouge."
+   }
+  }
  },
  "s:sp-tiere-zoo:a4": {
   "rolle": [
@@ -22951,16 +23150,32 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {
    "laut": true
   },
   "sensibel": null,
-  "begruendung": "Zoo-Rap mit Tierbewegungen (trampeln, hüpfen, watscheln) und Brüllen; ohne Lernziel.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Gruppenwörter („alle“/„tous“), „bis morgen früh“; FR „le singe grimpe“ passt…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "68d5942d"
+  "h": "68d5942d",
+  "einzelvariante": {
+   "text": "Fachkraft und Kind sprechen den Zoo-Rap zusammen im Takt und klopfen dazu auf die Oberschenkel. Pro Zeile machen sie die Tierbewegung: Elefant trampeln, Affe hüpfen, Giraffe strecken, Pinguin watscheln, Löwe brüllen (auch leise), Krokodil stillhalten. Bei „pst“ Finger auf die Lippen.",
+   "sagen": [
+    "Der Elefant, der trampelt schwer, / der Affe hüpft hin, hüpft her. / Die Giraffe reckt den Hals ganz lang, / der Pinguin geht im Watschelgang.",
+    "Der Löwe brüllt, die Mähne weht, / das Krokodil im Wasser steht.",
+    "Nun schlafen sie – pst, ganz still – / bis zum Morgen, wenn die Sonne will."
+   ],
+   "fr": {
+    "text": "L’adulte et l’enfant disent ensemble le rap du zoo en rythme et tapent sur leurs cuisses. À chaque vers, ils font le mouvement de l’animal : l’éléphant tape du pied, le singe saute, la girafe s’étire, le pingouin se dandine, le lion rugit (même doucement), le crocodile reste immobile. À « chut », doigt sur les lèvres.",
+    "sagen": [
+     "L’éléphant frappe le sol, lourd et fort, / le singe saute, sans effort. / La girafe étire son cou là-haut, / le pingouin se dandine comme un bateau.",
+     "Le lion rugit, la crinière au vent, / le crocodile se cache, patient.",
+     "Maintenant ils dorment, chut, sans bruit, / jusqu’au matin, quand le jour luit."
+    ]
+   }
+  }
  },
  "s:sp-unser-waldplatz:a0": {
   "rolle": [
@@ -23248,12 +23463,18 @@
   },
   "energie": 3,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
-  "begruendung": "Bewegen, bei Glocke Statue und still: geht mit einem Kind. Innehalten auf ein Signal (V-10).",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Gruppenspiel (Kinder, alle, ein Kind) – Einzelfassung; Glocke/Klangstab nicht…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "a0d23e98"
+  "h": "a0d23e98",
+  "einzelvariante": {
+   "text": "Beide bewegen sich frei durch den Raum und dürfen sprechen. Klatscht die Fachkraft zweimal leise, bleiben beide wie Statuen stehen und werden still. Nach drei Atemzügen gibt das Kind mit der Hand das Weiter-Zeichen. Danach darf das Kind das Signal geben. Das Signal immer gleich und freundlich einsetzen.",
+   "fr": {
+    "text": "Tous deux bougent librement dans la pièce et peuvent parler. Quand l’adulte frappe deux fois doucement dans ses mains, tous deux restent immobiles comme des statues et se taisent. Après trois respirations, l’enfant donne le signal de reprise de la main. Ensuite, l’enfant peut donner le signal à son tour. Toujours utiliser le signal de la même façon, gentiment."
+   }
+  }
  },
  "s:sp-unsere-regeln:a2": {
   "rolle": [
@@ -23493,22 +23714,14 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Drei Reifen liegen als Nester im Raum. Zur Musik fliegen Kind und Fachkraft herum; stoppt die Musik, fliegen beide in ein Nest. Jedes Mal fehlt ein Reifen mehr; zuletzt teilen sich beide den einen Reifen, ohne sich zu berühren (die Fachkraft stellt nur einen Fuß hinein). Niemand scheidet aus.",
-   "sagen": [
-    "Wir sind zwei Vögel. Wenn die Musik stoppt, fliegen wir in ein Nest.",
-    "Jetzt fehlt ein Nest. Wir rücken zusammen – aber ohne uns anzufassen."
-   ],
+   "text": "Drei Nester sind Stellen im Raum, die das Kind aussucht (eine Ecke, ein Fleck am Fenster, eine Stelle neben dem Tisch). Zur Musik fliegen Kind und Fachkraft herum und picken Futter; stoppt die Fachkraft die Musik, fliegen beide in ein Nest. Jedes Mal fällt ein Nest weg, bis beide im letzten sitzen – mit Abstand, ohne Berührung. Niemand scheidet aus.",
    "fr": {
-    "text": "Trois cerceaux font office de nids. Sur la musique, l’enfant et l’adulte volent ; quand elle s’arrête, tous deux rejoignent un nid. À chaque tour, un cerceau en moins ; à la fin, ils partagent le dernier sans se toucher (l’adulte n’y met qu’un pied). Personne n’est éliminé.",
-    "sagen": [
-     "Nous sommes deux oiseaux. Quand la musique s’arrête, nous volons dans un nid.",
-     "Il manque un nid. On se serre – mais sans se toucher."
-    ]
+    "text": "Trois nids sont des endroits de la pièce que l’enfant choisit (un coin, une place près de la fenêtre, un endroit près de la table). Sur la musique, l’enfant et l’adulte volent et picorent ; quand l’adulte arrête la musique, tous deux rejoignent un nid. À chaque tour, un nid disparaît, jusqu’à ce que les deux soient dans le dernier – à distance, sans se toucher. Personne n’est éliminé."
    }
   },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Reifenspiel für zwei: letzter Reifen wird ohne Berührung geteilt; niemand scheidet aus, Teilen und Zusammenrücken.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Material: „Reifen“ steht nicht im Material (nur Musik) – Nester jetzt Stellen…",
   "von": "agent",
   "sicher": 0.8,
   "h": "3ff012e2"
@@ -24719,23 +24932,15 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft spielt traurig und lässt den Kopf hängen. Das Kind setzt sich daneben und fragt: „Bist du traurig? Was brauchst du?“ Es bietet etwas an: ein Kissen holen, zusammen spielen oder, wenn die Fachkraft mag, die Hand halten. Dann tauschen die Rollen.",
-   "sagen": [
-    "Ich bin traurig. Setz dich zu mir.",
-    "Frag mich: Was brauchst du?"
-   ],
+   "text": "Die Fachkraft spielt traurig und lässt den Kopf hängen. Das Kind setzt sich daneben und fragt: „Bist du traurig? Was brauchst du?“ Dann bietet es etwas an: neben der Fachkraft sitzen bleiben, ein Lied summen, zusammen spielen oder, wenn beide mögen, die Hand halten. Danach tauschen die Rollen.",
    "fr": {
-    "text": "L’adulte joue le triste et baisse la tête. L’enfant s’assoit à côté et demande : « Tu es triste ? De quoi as-tu besoin ? » Il propose : apporter un coussin, jouer ensemble ou, si l’adulte veut, tenir la main. Puis on échange les rôles.",
-    "sagen": [
-     "Je suis triste. Assieds-toi près de moi.",
-     "Demande-moi : de quoi as-tu besoin ?"
-    ]
+    "text": "L’adulte fait semblant d’être triste et baisse la tête. L’enfant s’assoit à côté et demande : « Tu es triste ? De quoi as-tu besoin ? » Ensuite, l’enfant propose : rester assis à côté, fredonner une chanson, jouer ensemble ou, si les deux le veulent, se tenir la main. Puis on échange les rôles."
    }
   },
   "merkmale": {
    "koerperkontakt": true
   },
-  "begruendung": "Paarspiel mit der Fachkraft; Hand halten bleibt nur auf Wunsch, Kissen und Spielen sind kontaktfreie Angebote.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Material: „Kissen“ steht nicht im Material – ersetzt; FR „Il propose“…",
   "von": "agent",
   "sicher": 0.8,
   "h": "21a5e1b8"
@@ -24763,14 +24968,26 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Trost-Reim: Träne malen, Nähe, ausatmen; Fachkraft als tröstende Person. Kein Körperkontakt nötig.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassentext: „sich nah zu einem anderen Kind setzen“ – Einzelfassung, Nähe nur…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "a412455c"
+  "h": "a412455c",
+  "einzelvariante": {
+   "text": "Kullert eine Träne runter, / bin ich gar nicht froh und munter. / Dann setzt du dich ganz nah zu mir: / Ich bin nicht allein, du bist ja hier. / Du bleibst bei mir, ich atme aus, / und langsam kommt die Sonne raus.\nBewegungen: Träne über die Wange malen, Kopf und Schultern hängen lassen; bei „nah zu mir“ rückt die Fachkraft näher (so nah, wie das Kind mag); tief ausatmen; Arme als Sonne öffnen.",
+   "sagen": [
+    "Wir sprechen den Reim zusammen und machen die Bewegungen mit. Du sagst, wie nah ich rücken darf."
+   ],
+   "fr": {
+    "text": "Une larme roule, doucement, / mon cœur est lourd en ce moment. / Tu viens t’asseoir tout près de moi, / et mon cœur se réchauffe grâce à toi. / Je respire, je me sens mieux, / le soleil revient dans mes yeux.\nGestes : Tracer une larme sur la joue, laisser tomber tête et épaules ; à « tout près de moi », l’adulte se rapproche (si l’enfant le veut) ; respirer longuement ; ouvrir les bras en soleil.",
+    "sagen": [
+     "On dit la comptine ensemble et on fait les gestes. Tu me dis jusqu’où je peux me rapprocher."
+    ]
+   }
+  }
  },
  "s:sp-wenn-ich-wuetend-bin:a0": {
   "rolle": [
@@ -24847,12 +25064,18 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
-  "begruendung": "Schildkröte zieht sich in den Panzer zurück und atmet dreimal; das Kind macht nach. Geht mit einem Kind.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Gruppenspiel („Die Kinder machen es nach“) – Einzelfassung mit Fachkraft und…",
   "von": "agent",
   "sicher": 0.85,
-  "h": "1fc1f53c"
+  "h": "1fc1f53c",
+  "einzelvariante": {
+   "text": "Die Fachkraft lässt eine Schildkröten-Handpuppe (oder ein Tuch als Panzer) erzählen: „Wenn ich wütend werde, ziehe ich mich in meinen Panzer zurück, atme dreimal und denke nach.“ Dann macht das Kind es nach: hinhocken, Arme um die Knie, Kopf einziehen, dreimal atmen – und langsam wieder herauskommen. Die Fachkraft macht mit.",
+   "fr": {
+    "text": "L’adulte fait parler une marionnette tortue (ou un tissu en guise de carapace) : « Quand la colère monte, je rentre dans ma carapace, je respire trois fois et je réfléchis. » Ensuite, l’enfant fait comme la tortue : s’accroupir, bras autour des genoux, rentrer la tête, respirer trois fois – puis ressortir lentement. L’adulte le fait aussi."
+   }
+  }
  },
  "s:sp-wenn-ich-wuetend-bin:a3": {
   "rolle": [
@@ -24940,13 +25163,27 @@
   },
   "energie": 1,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Pusten mit eigenem Strohhalm geht mit Kind und Fachkraft; langes Ausatmen beruhigt, kein Wutablassen.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Gruppenspiel mit Kindern am Tisch; Strohhalme und Wattebälle fehlen im Material…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "cbbd77f7"
+  "h": "cbbd77f7",
+  "einzelvariante": {
+   "text": "Das Kind stellt sich einen Wattebausch auf der flachen Hand vor und pustet ihn weg: erst schnell und wütend in kurzen, kräftigen Stößen, dann langsam und lange, bis der Bausch ganz sanft davonschwebt. Die Fachkraft pustet mit. Danach spürt das Kind nach, was das lange Ausatmen mit der Wut macht.",
+   "sagen": [
+    "Stell dir einen Wattebausch auf deiner Hand vor. Puste ihn erst schnell und wütend weg.",
+    "Und jetzt noch einmal, ganz langsam und lang. Was macht das lange Ausatmen mit der Wut?"
+   ],
+   "fr": {
+    "text": "L’enfant imagine une boule de coton sur la paume de la main et la souffle : d’abord vite et avec colère, en petits souffles forts, puis lentement et longtemps, jusqu’à ce que la boule s’envole tout doucement. L’adulte souffle aussi. Ensuite, l’enfant sent ce que la longue expiration change dans la colère.",
+    "sagen": [
+     "Imagine une boule de coton sur ta main. Souffle-la d’abord vite et avec colère.",
+     "Et maintenant encore une fois, très lentement et longtemps. Qu’est-ce que la longue expiration fait à la colère ?"
+    ]
+   }
+  }
  },
  "s:sp-wenn-ich-wuetend-bin:reim": {
   "rolle": [
@@ -24972,14 +25209,30 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Fünf-Finger-Reim: Körpersignal, Stopp, Atmen; kein Rauslassen der Wut, also keine Katharsis.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassenreim – Einzelfassung für Kind und Fachkraft; FR-Reim an die…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "2eec5f65"
+  "h": "2eec5f65",
+  "einzelvariante": {
+   "text": "Kind und Fachkraft sprechen den Reim zusammen. Bei jeder Zahl zeigen sie die Zahl mit den Fingern und machen die Bewegung dazu: eins Hand auf den Bauch, zwei Fäuste ballen, drei Stopp-Hand, vier tief atmen, fünf die Hand öffnen. Zum Schluss lächeln. Der Reim geht auch ganz leise.",
+   "sagen": [
+    "Eins: Mein Bauch wird heiß und schwer. Zwei: Die Fäuste spür ich sehr.",
+    "Drei: Stopp! Ich halte ein. Vier: Ich atme tief und fein.",
+    "Fünf: Die Wut wird wieder klein, und dann darf’s wieder sonnig sein."
+   ],
+   "fr": {
+    "text": "L’enfant et l’adulte disent la comptine ensemble. À chaque chiffre, ils montrent le chiffre avec les doigts et font le geste : un, main sur le ventre ; deux, poings serrés ; trois, main stop ; quatre, respirer profondément ; cinq, ouvrir la main. À la fin, sourire. La comptine peut aussi se dire tout bas.",
+    "sagen": [
+     "Un : mon ventre gronde fort, deux : mes poings serrent encore.",
+     "Trois : stop ! Je lève la main, quatre : je respire, ça va bien.",
+     "Cinq : la colère est toute petite, et le soleil revient vite."
+    ]
+   }
+  }
  },
  "s:sp-willkommen:a0": {
   "rolle": [
@@ -25213,14 +25466,28 @@
   },
   "energie": 2,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Ankommens-Reim: Jacke aufhängen, Kuscheltier, Winken zum Abschied vom Fenster; Routine.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Material: Kuscheltier/Jacke/Schuhe stehen nicht im Material – Einzelfassung…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "28e8315d"
+  "h": "28e8315d",
+  "einzelvariante": {
+   "text": "Fachkraft und Kind sprechen den Reim zusammen und spielen ihn ohne Gegenstände nach: Jacke aufhängen und bei „hopp“ hüpfen, Schuhe abstellen und stillstehen, das Kuscheltier (nur in der Vorstellung) im Arm wiegen, am Fenster winken, zum Schluss Hände auf Herz und Bauch legen.",
+   "sagen": [
+    "Jacke an den Haken – hopp, / Schuhe in das Fach – und stopp. / Kuscheltier, du kommst mit rein, / hier musst du nicht alleine sein.",
+    "Ich wink am Fenster: „Äddi, bis gläich!“ / Mein Herz ist froh, mein Bauch ist weich."
+   ],
+   "fr": {
+    "text": "L’adulte et l’enfant disent la comptine ensemble et la jouent sans accessoires : accrocher le manteau et sauter à « hop », poser les chaussures et s’arrêter, bercer le doudou (seulement en imagination), faire coucou à la fenêtre, envoyer un bisou.",
+    "sagen": [
+     "Mon manteau au crochet, hop, / mes chaussures au casier, stop. / Mon doudou vient avec moi, / ici, il n’aura pas froid.",
+     "À la fenêtre, je fais coucou : / au revoir, à tout à l’heure, bisous."
+    ]
+   }
+  }
  },
  "s:sp-wind-und-wetter:a0": {
   "rolle": [
@@ -26081,14 +26348,30 @@
   },
   "energie": 3,
   "belastung": 0,
-  "einzeltauglich": "ja",
+  "einzeltauglich": "angepasst",
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Zug-Reim im Gehen: Fantasiespiel (SOZ-13); das Kind führt, die Fachkraft ist der Wagen.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Klassenreim mit „Zug-Kind führt die Reihe“ und „allen“ – Einzelfassung für Kind…",
   "von": "agent",
   "sicher": 0.8,
-  "h": "6b7b159b"
+  "h": "6b7b159b",
+  "einzelvariante": {
+   "text": "Kind und Fachkraft gehen hintereinander wie ein kleiner Zug durch den Raum und sprechen den Reim zusammen (auch flüsternd): Die Arme kreisen wie Räder, bei „tschuff“ wird leicht auf die Oberschenkel geklopft, bei „hei“ gewinkt, bei „Ziel“ bleiben beide stehen und öffnen die Arme. Danach darf das Kind die Lok sein und vorangehen.",
+   "sagen": [
+    "Tschuff, tschuff, tschuff, der Zug fährt los, wir sitzen drin, die Welt ist groß.",
+    "Er fährt am Wald und Bach vorbei, wir winken froh: hei, hei, hei!",
+    "Der Zug hält an, wir sind am Ziel – ob nah, ob fern, wir sehen viel."
+   ],
+   "fr": {
+    "text": "L’enfant et l’adulte avancent l’un derrière l’autre comme un petit train dans la pièce et disent la comptine ensemble (même en chuchotant) : les bras tournent comme des roues, à « tchou » on frappe doucement les cuisses, à « coucou » on fait signe, à « ici » on s’arrête et on ouvre les bras. Ensuite, l’enfant peut être la locomotive et mener.",
+    "sagen": [
+     "Tchou-tchou-tchou, le train s’en va, nous voyageons, hourra, hourra !",
+     "Il passe les champs et les bois, on fait signe : coucou, c’est moi !",
+     "Le train s’arrête : c’est ici ! Proche ou lointain, c’est joli."
+    ]
+   }
+  }
  },
  "s:sp-zaehne-putzen:a0": {
   "rolle": [
@@ -26454,24 +26737,16 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Das Kind übt den Trommelwirbel (leise, dann laut) und den Schlussakkord mit Topfdeckeln, die Fachkraft hat die Taschenlampe: Spot an, wenn die Trommel beginnt, Spot aus bei der Verbeugung. Dann tauschen sie die Rollen. Gehörschutz liegt bereit.",
-   "sagen": [
-    "Du trommelst, ich mache das Licht. Wenn du anfängst, geht mein Spot an.",
-    "Bei der Verbeugung macht der Spot aus. Jetzt tauschen wir: Du machst das Licht."
-   ],
+   "text": "Das Kind übt einen Trommelwirbel mit den Händen auf den Knien (erst leise, dann etwas lauter, leise bleiben ist auch in Ordnung), klatscht zum Schluss einmal und verbeugt sich. Die Fachkraft ist das Licht: Hände offen heißt Spot an, wenn der Wirbel beginnt, Hände zu heißt Spot aus bei der Verbeugung. Dann tauschen sie die Rollen.",
    "fr": {
-    "text": "L’enfant répète le roulement de tambour (doux, puis fort) et l’accord final avec des couvercles, l’adulte tient la lampe de poche : projecteur allumé quand le tambour commence, éteint au salut. Puis ils échangent les rôles. Des protections auditives sont prêtes.",
-    "sagen": [
-     "Tu tambourines, je fais la lumière. Quand tu commences, mon projecteur s’allume.",
-     "Au salut, le projecteur s’éteint. Maintenant on échange : c’est toi qui fais la lumière."
-    ]
+    "text": "L’enfant fait un roulement de tambour avec les mains sur les genoux (d’abord doucement, puis un peu plus fort, rester doux est aussi permis), frappe une fois dans les mains à la fin et salue. L’adulte est la lumière : mains ouvertes : projecteur allumé quand le roulement commence, mains fermées : projecteur éteint au salut. Puis ils échangent les rôles."
    }
   },
   "merkmale": {
    "laut": true
   },
   "sensibel": null,
-  "begruendung": "Musik- und Lichtgruppe werden Kind und Fachkraft mit Rollentausch; Einsatz auf das Trommelsignal bleibt. Trommel laut.",
+  "begruendung": "Einzelfassung (Rahmen-Prüfung 16.10.): Einzelfassung: Trommel, Topfdeckel, Taschenlampe, Gehörschutz stehen nicht im…",
   "von": "agent",
   "sicher": 0.8,
   "h": "d83b2d62"

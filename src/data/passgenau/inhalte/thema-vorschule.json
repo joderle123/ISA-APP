@@ -124,13 +124,13 @@
     },
     "fr": {
       "titel": "Marcher comme une émotion",
-      "text": "L’adulte traverse la pièce sans bruit, d’abord comme quelqu’un de content, puis de fatigué, puis de fier. L’enfant regarde et dit comment la personne se sent. Ensuite l’enfant marche une émotion et l’adulte devine.",
+      "text": "L’adulte traverse la pièce sans bruit, d’abord comme quelqu’un de content, puis de fatigué, puis de fier. L’enfant regarde et dit comment la personne se sent. Ensuite l’enfant marche en montrant une émotion et l’adulte devine.",
       "sagen": [
         "Aujourd’hui, on parle des émotions. On peut aussi les reconnaître à la façon de marcher.",
         "Comment se sent quelqu’un qui marche comme ça ?",
-        "Maintenant, tu marches une émotion et je devine."
+        "Maintenant, tu marches en montrant une émotion et je devine."
       ],
-      "wennEsKippt": "Assis, seuls les épaules, les bras et le visage montrent l’émotion. Si l’enfant ne veut pas mimer, il peut seulement deviner.",
+      "wennEsKippt": "Assis, seuls les épaules, les bras et le visage montrent l’émotion. Si l’enfant ne veut pas mimer, deviner suffit.",
       "kurz": "Marcher une émotion · l’enfant devine · puis on échange"
     },
     "kurz": "Gefühl durch den Raum gehen · Kind rät · dann tauschen"
@@ -679,7 +679,7 @@
       "titel": "Du lièvre à l’escargot",
       "text": "L’adulte et l’enfant trottinent doucement sur place, vite comme un lièvre. L’adulte dit « plus lentement » et tous deux ralentissent peu à peu : lièvre, chat, escargot. Avec l’escargot, ils s’arrêtent et expirent trois fois lentement. Ensuite l’enfant peut dire s’ils le refont encore une fois.",
       "sagen": [
-        "Aujourd’hui, on apprend à se calmer. On peut être vite et lent.",
+        "Aujourd’hui, on apprend à se calmer. On peut être rapide et lent.",
         "D’abord vite comme un lièvre. Maintenant plus lentement, comme un chat.",
         "Tout lentement comme un escargot. Et on s’arrête."
       ],
@@ -882,7 +882,7 @@
     },
     "fr": {
       "titel": "Coucou, bonjour !",
-      "text": "L’adulte tient un foulard comme un rideau entre lui et l’enfant, de sorte qu’ils ne se voient pas. Il chuchote « Bientôt, bientôt, bientôt » et laisse tomber le foulard après un instant ; ce n’est qu’alors que les deux disent « bonjour ». Ensuite, l’enfant tient le foulard et décide quand il tombe, et l’adulte attend tout autant.",
+      "text": "L’adulte tient un foulard comme un rideau entre les deux, de sorte qu’ils ne se voient pas. L’adulte chuchote « Bientôt, bientôt, bientôt » et laisse tomber le foulard après un instant ; ce n’est qu’alors que les deux disent « bonjour ». Ensuite, l’enfant tient le foulard et décide quand il tombe, et l’adulte attend tout autant.",
       "sagen": [
         "Aujourd’hui, on s’exerce à attendre et à s’arrêter. Ça commence déjà avec le bonjour.",
         "Je tiens le foulard. On attend qu’il tombe.",
@@ -1094,7 +1094,7 @@
         "Main stop. Inspire, expire.",
         "Et maintenant : au revoir !"
       ],
-      "wennEsKippt": "Si rester immobile est difficile, il suffit de garder la main posée un court instant. Si l’enfant ne veut pas, l’adulte fait sa main stop tout seul et fait ensuite un signe de la main.",
+      "wennEsKippt": "Si rester immobile est difficile, il suffit de garder la main posée un court instant. Si l’enfant ne veut pas, l’adulte fait sa main stop de son côté et fait ensuite un signe de la main.",
       "kurz": "Main à plat sur la table · inspirer, expirer · puis faire coucou"
     },
     "kurz": "Hand flach auf den Tisch · ein- und ausatmen · dann erst winken"
@@ -1250,7 +1250,7 @@
       "Was hörst du? Zeig mit dem Finger, wo es herkommt.",
       "Welches Geräusch magst du am liebsten? Das machen wir zusammen nach."
     ],
-    "wennEsKippt": "Mag das Kind die Augen nicht zumachen, schaut es auf einen Punkt am Boden. Hört das Kind nichts, macht die Fachkraft ein leises Geräusch, zum Beispiel mit dem Papier, und beide suchen noch eins.",
+    "wennEsKippt": "Mag das Kind die Augen nicht zumachen, schaut es auf einen Punkt am Boden. Hört das Kind nichts, macht die Fachkraft ein leises Geräusch, zum Beispiel durch Händereiben, und beide suchen noch eins.",
     "rolle": [
       "reflexion"
     ],
@@ -1300,7 +1300,7 @@
         "Qu’entends-tu ? Montre du doigt d’où ça vient.",
         "Quel bruit préfères-tu ? On le fait ensemble."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas fermer les yeux, il regarde un point au sol. S’il n’entend rien, l’adulte fait un petit bruit, par exemple avec le papier, et les deux en cherchent un autre.",
+      "wennEsKippt": "Si l’enfant ne veut pas fermer les yeux, il regarde un point au sol. S’il n’entend rien, l’adulte fait un petit bruit, par exemple en se frottant les mains, et les deux en cherchent un autre.",
       "kurz": "Yeux fermés, écoute brève · montrer d’où ça vient · imiter"
     },
     "kurz": "Augen zu, kurz lauschen · zeigen, woher es kam · nachmachen"
@@ -1577,13 +1577,13 @@
     },
     "fr": {
       "titel": "Monter l’escalier",
-      "text": "L’adulte a construit un escalier de trois marches avec des briques. Une petite brique est le randonneur : l’adulte parle pour lui et soupire devant les marches « Ouf, je suis fatigué ! » L’enfant dit « Encore un peu ! » et pousse le randonneur d’une marche, ou il dit « Pause », et le randonneur se repose un instant. En haut, les deux font un signe de la main au randonneur.",
+      "text": "L’adulte a construit un escalier de trois marches avec des briques. Une petite brique est le randonneur : l’adulte parle pour lui et soupire devant les marches « Ouf, je suis fatigué ! » L’enfant dit « Encore un peu ! » et pousse le randonneur d’une marche, ou l’enfant dit « Pause », et le randonneur se repose un instant. En haut, les deux font un signe de la main au randonneur.",
       "sagen": [
         "Persévérer, c’est comme monter un escalier : marche après marche. Le petit randonneur a bientôt besoin de ton aide.",
         "Ouf, je suis fatigué ! Peux-tu me dire comment continuer ?",
         "Merci, tu m’as aidé. C’est beau, là-haut."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas pousser le randonneur, il montre seulement la marche suivante. Si l’escalier est trop haut, deux marches suffisent.",
+      "wennEsKippt": "Si l’enfant ne veut pas pousser le randonneur, il suffit que l’enfant montre la marche suivante. Si l’escalier est trop haut, deux marches suffisent.",
       "kurz": "Escalier en briques · le randonneur est fatigué · continuer ou pause",
       "vorbereitung": "Construire un escalier de trois marches avec des briques"
     },
@@ -1597,7 +1597,7 @@
       "titel": "Themen-Rahmen"
     },
     "titel": "Ein Strich, der weitergeht",
-    "text": "Fachkraft und Kind malen gemeinsam einen langen Strich über das Papier, abwechselnd ein Stück. Bis zum Rand wird der Stift nicht abgesetzt. Zum Schluss schauen beide den langen Strich an und winken ihm Tschüss.",
+    "text": "Fachkraft und Kind malen gemeinsam einen langen Strich über das Papier, abwechselnd ein Stück. Jeder setzt genau dort an, wo der andere aufgehört hat, sodass der Strich ohne Lücke bis zum Rand reicht. Zum Schluss schauen beide den langen Strich an und winken ihm Tschüss.",
     "sagen": [
       "Zum Schluss ein Strich, der nicht aufhört. Dranbleiben geht auch beim Malen.",
       "Du malst ein Stück, ich male ein Stück.",
@@ -1649,7 +1649,7 @@
     },
     "fr": {
       "titel": "Un trait qui continue",
-      "text": "L’adulte et l’enfant dessinent ensemble un long trait sur la feuille, chacun à son tour un morceau. On ne lève pas le crayon avant d’arriver au bord. Pour finir, tous deux regardent le long trait et lui disent au revoir de la main.",
+      "text": "L’adulte et l’enfant dessinent ensemble un long trait sur la feuille, un morceau l’un après l’autre. On reprend toujours exactement là où l’autre s’est arrêté, si bien que le trait va sans interruption jusqu’au bord. Pour finir, tous deux regardent le long trait et lui disent au revoir de la main.",
       "sagen": [
         "Pour finir, un trait qui ne s’arrête pas. On peut persévérer aussi en dessinant.",
         "Tu dessines un morceau, je dessine un morceau.",
@@ -1931,7 +1931,7 @@
       "sagen": [
         "Ensemble, c’est mieux quand on se met d’accord. On s’entraîne avec « au revoir ».",
         "Un, deux, trois.",
-        "C’était un au revoir tous ensemble !"
+        "On a dit au revoir ensemble !"
       ],
       "wennEsKippt": "Si dire en même temps est difficile, l’enfant fait signe d’abord et l’adulte juste après. Si l’enfant ne veut pas, l’adulte dit au revoir tout seul.",
       "kurz": "Compter tout bas jusqu’à trois · saluer ensemble en même temps"
@@ -2054,9 +2054,7 @@
       "bewegung",
       "rollenspiel"
     ],
-    "material": [
-      "stuhl"
-    ],
+    "material": [],
     "ort": "raum",
     "anspruch": 0,
     "merkmale": {
@@ -2068,18 +2066,18 @@
     },
     "fr": {
       "titel": "Passage étroite, qui passe ?",
-      "text": "Deux chaises sont placées de façon à laisser un passage étroit entre elles. L’adulte et l’enfant s’approchent chacun d’un côté et se rencontrent au milieu, à distance. Tous deux réfléchissent un instant à la manière de passer sans dispute : l’un attend, l’un passe d’abord, ou ils passent à tour de rôle. Puis ils essaient la solution et échangent les côtés.",
+      "text": "Deux chaises sont placées de façon à laisser un passage étroit entre elles. L’adulte et l’enfant s’approchent des deux côtés et se rencontrent au milieu, à distance. Tous deux réfléchissent un instant à la manière de passer sans dispute : l’un attend, l’autre passe d’abord, ou ils passent tour à tour. Puis ils essaient la solution et échangent les côtés.",
       "sagen": [
         "Aujourd’hui, on s’entraîne à savoir quoi faire quand il y a un conflit. On joue un passage étroit.",
         "On veut passer tous les deux. Que fait-on ?",
         "Tu passes d’abord, ensuite moi. Ça marche."
       ],
-      "wennEsKippt": "Assis, deux doigts avancent chacun d’un côté sur un chemin étroit de la table et doivent se croiser. Si l’enfant n’a pas d’idée, l’adulte propose « à tour de rôle ».",
+      "wennEsKippt": "Assis, deux doigts avancent des deux côtés sur un chemin étroit de la table et doivent se croiser. Si l’enfant n’a pas d’idée, l’adulte propose « tour à tour ».",
       "kurz": "Passage étroit · se croiser · trouver une solution · échanger",
       "vorbereitung": "Placer deux chaises pour qu’une seule personne puisse passer"
     },
     "kurz": "Enger Durchgang · in der Mitte treffen · Lösung finden · tauschen",
-    "vorbereitung": "Zwei Stühle so stellen, dass nur eine Person durchpasst"
+    "vorbereitung": "Zwei Stühle so stellen, dass nur eine Person gleichzeitig durchpasst"
   },
   {
     "id": "th:konflikte-reflexion-vorschule",
@@ -2424,10 +2422,10 @@
       "text": "L’enfant dit un mot à la marionnette, par exemple sa couleur préférée. La marionnette se bouche les oreilles et demande « Quoi ? ». L’enfant montre à la marionnette comment on écoute : la main à l’oreille et le regard tourné vers la personne. Ensuite, la marionnette répète correctement le mot, et l’enfant prend la marionnette pendant que l’adulte dit un mot.",
       "sagen": [
         "Pour parler et écouter, on a besoin d’oreilles et d’yeux. Je te le montre tout de suite avec un petit jeu.",
-        "Dis un mot à la marionnette. Elle n’écoute pas bien – montre-lui comment faire : la main à l’oreille et regarde.",
+        "Dis un mot à la marionnette. Elle n’écoute pas bien – montre-lui comment faire : la main à l’oreille et les yeux tournés vers toi.",
         "Bravo, tu as bien écouté ! Maintenant, tu peux prendre la marionnette."
       ],
-      "wennEsKippt": "Si l’enfant ne veut rien dire, il chuchote le mot à la marionnette ou montre un objet. S’il ne montre pas les signes, l’adulte les fait d’abord et l’enfant les imite.",
+      "wennEsKippt": "Si l’enfant ne veut rien dire, chuchoter le mot à la marionnette ou montrer un objet suffit. Si l’enfant ne montre pas les signes, l’adulte les fait d’abord et l’enfant les imite.",
       "kurz": "Dire un mot · la marionnette n’écoute pas · montrer comment faire"
     },
     "kurz": "Wort sagen · Handpuppe hält Ohren zu · Kind zeigt, wie Zuhören geht"
@@ -2624,7 +2622,7 @@
     },
     "fr": {
       "titel": "Ma façon de marcher à moi",
-      "text": "L’enfant invente sa propre façon de marcher, par exemple grand, petit, en sautillant ou en rampant sans bruit, et traverse ainsi la pièce. L’adulte le suit et l’imite. Puis l’adulte montre sa façon de marcher et l’enfant l’imite. Pour finir, tous deux marchent côte à côte, chacun à sa façon.",
+      "text": "L’enfant invente sa propre façon de marcher, par exemple à grands pas, à petits pas, en sautillant ou à pas de loup, et traverse ainsi la pièce. L’adulte suit l’enfant et imite sa façon de marcher. Puis l’adulte montre sa façon de marcher et l’enfant l’imite. Pour finir, tous deux marchent côte à côte, l’un à sa façon, l’autre à la sienne.",
       "sagen": [
         "Aujourd’hui, on parle de toi : chacun est différent. Tu as ta propre façon de marcher.",
         "Montre-moi ta façon de marcher. Je la fais après toi.",
@@ -2765,11 +2763,11 @@
       "titel": "Mon propre au revoir",
       "text": "L’enfant invente son propre signe d’au revoir, par exemple une façon spéciale de faire signe ou un geste de la main. L’adulte le refait et dit au revoir. Puis l’adulte montre son propre signe et l’enfant peut le refaire.",
       "sagen": [
-        "Pour finir, tu peux inventer quelque chose que toi seul fais comme ça.",
+        "Pour finir, tu peux inventer quelque chose que personne d’autre ne fait comme ça.",
         "Comment fais-tu signe ? Montre-moi ton au revoir.",
         "Je fais signe comme ça. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte essaie deux signes et l’enfant en choisit un. S’il ne veut pas, tous deux font simplement signe de la main.",
+      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte essaie deux signes et l’enfant en choisit un. Si l’enfant ne veut pas, les deux font simplement signe de la main.",
       "kurz": "L’enfant invente un signe d’adieu · on l’imite"
     },
     "kurz": "Kind erfindet ein Winke-Zeichen · wird nachgemacht"
@@ -2891,7 +2889,6 @@
       "spiel"
     ],
     "material": [
-      "stuhl",
       "kissen",
       "decke"
     ],
@@ -2924,7 +2921,7 @@
       "titel": "Themen-Rahmen"
     },
     "titel": "Der Handpuppe helfen",
-    "text": "Die Fachkraft lässt die Handpuppe sagen, dass sie bei etwas nicht weiterkommt, zum Beispiel beim Schuhezubinden. Das Kind überlegt, was ihr helfen kann: nochmal probieren, langsam machen oder Hilfe holen. Dann sagt die Fachkraft, was ihr heute geholfen hat, und fragt das Kind, ob ihm auch etwas davon geholfen hat.",
+    "text": "Die Fachkraft lässt die Handpuppe sagen, dass sie bei etwas nicht weiterkommt, zum Beispiel beim Schuhezubinden. Das Kind überlegt, was ihr helfen kann: nochmal probieren, langsam machen oder Hilfe holen. Dann sagt die Fachkraft, was der Handpuppe heute geholfen hat, und fragt das Kind, ob ihm auch etwas davon geholfen hat.",
     "sagen": [
       "Es gibt kleine Wege, wie man etwas schafft. Dazu brauche ich gleich deine Ideen.",
       "Die Handpuppe schafft das nicht. Was kann ihr helfen?",
@@ -2976,11 +2973,11 @@
     },
     "fr": {
       "titel": "Aider la marionnette",
-      "text": "L’adulte fait dire à la marionnette qu’elle n’arrive pas à avancer dans quelque chose, par exemple pour faire ses lacets. L’enfant réfléchit à ce qui peut l’aider : réessayer, aller doucement ou aller chercher de l’aide. Ensuite l’adulte dit ce qui l’a aidé aujourd’hui et demande à l’enfant si quelque chose l’a aidé aussi.",
+      "text": "L’adulte fait dire à la marionnette qu’elle n’arrive pas à avancer dans quelque chose, par exemple pour faire ses lacets. L’enfant réfléchit à ce qui peut aider la marionnette : réessayer, aller doucement ou aller chercher de l’aide. Ensuite l’adulte dit ce qui a aidé la marionnette aujourd’hui et demande à l’enfant si quelque chose de tout cela lui a aussi servi.",
       "sagen": [
         "Il y a de petits chemins pour réussir quelque chose. J’ai besoin de tes idées tout de suite.",
         "La marionnette n’y arrive pas. Qu’est-ce qui peut l’aider ?",
-        "Quelque chose t’a aidé aujourd’hui ? Tu peux aussi dire « Je passe »."
+        "Et toi, est-ce que quelque chose t’a servi aujourd’hui ? Tu peux aussi dire « Je passe »."
       ],
       "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte montre trois signes : cercle avec le doigt (réessayer), main à plat vers le bas (doucement), main levée (aide). L’enfant en choisit un.",
       "kurz": "La marionnette est bloquée · l’enfant cherche de l’aide · et toi ?"
@@ -3104,8 +3101,7 @@
       "rollenspiel"
     ],
     "material": [
-      "socke",
-      "stuhl"
+      "socke"
     ],
     "ort": "raum",
     "anspruch": 0,
@@ -3118,13 +3114,13 @@
     },
     "fr": {
       "titel": "Tout à l’envers !",
-      "text": "L’adulte fait très sérieusement tout de travers : il met la chaussette sur sa tête et veut s’asseoir sur la table au lieu de la chaise. L’enfant dit « Non, pas comme ça ! » et montre ou dit où vont les choses, puis l’adulte le fait correctement. Ensuite, l’enfant peut inventer une bêtise, et l’adulte la remet en ordre.",
+      "text": "L’adulte fait très sérieusement tout de travers : l’adulte met la chaussette sur sa tête et veut s’asseoir sur la table au lieu de la chaise. L’enfant dit « Non, pas comme ça ! » et montre ou dit où vont les choses, puis l’adulte le fait correctement. Ensuite, l’enfant peut inventer une bêtise, et l’adulte la remet en ordre.",
       "sagen": [
         "Aujourd’hui, on parle du quotidien : chaque chose à sa place et dans le bon ordre. Je vais d’abord tout mélanger.",
         "Je mets la chaussette. Là, sur la tête.",
         "Ah, sur le pied ! Merci de me l’avoir montré."
       ],
-      "wennEsKippt": "Si l’enfant hésite, l’adulte rend l’erreur encore plus visible et demande « C’est bien comme ça ? ». Si l’enfant ne veut rien dire, il montre simplement du doigt la bonne place.",
+      "wennEsKippt": "Si l’enfant hésite, l’adulte rend l’erreur encore plus visible et demande « C’est bien comme ça ? ». Si l’enfant ne veut rien dire, il suffit de montrer du doigt la bonne place.",
       "kurz": "L’adulte fait tout de travers · l’enfant montre la bonne place"
     },
     "kurz": "Fachkraft macht alles falsch · Kind zeigt den richtigen Platz"
@@ -3259,7 +3255,7 @@
     },
     "fr": {
       "titel": "Aider à arrêter",
-      "text": "La marionnette tient un crayon et se plaint : « Je ne veux pas encore arrêter ! » À côté, il y a un panier et un foulard, et l’enfant choisit comment aider la marionnette à s’arrêter : ranger le crayon dans le panier ou le couvrir avec le foulard. L’enfant le fait lui-même, et la marionnette dit « Merci, ça m’a aidée ». À la fin, les deux font au revoir de la main.",
+      "text": "La marionnette tient un crayon et se plaint : « Je ne veux pas encore arrêter ! » À côté, il y a un panier et un foulard, et l’enfant choisit comment aider la marionnette à s’arrêter : ranger le crayon dans le panier ou le couvrir avec le foulard. L’enfant s’en charge, et la marionnette dit « Merci, ça m’a aidée ». À la fin, les deux font au revoir de la main.",
       "sagen": [
         "Aujourd’hui, on a parlé du quotidien, y compris d’arrêter et de ranger. La marionnette a bientôt besoin de ton aide.",
         "La marionnette ne veut pas arrêter. Qu’est-ce qui l’aide : le panier ou le foulard ?",
@@ -3402,7 +3398,7 @@
         "Comment sonnait cette voix ? Montre-le-moi avec ton visage.",
         "Les émotions, on les entend et on les voit. C’est justement de ça qu’on parle maintenant."
       ],
-      "wennEsKippt": "Si le dos tourné inquiète l’enfant, l’adulte parle face à lui, la main devant la bouche. Si l’enfant ne sait pas quoi montrer, l’adulte nomme lui-même l’émotion et fait le visage qui va avec.",
+      "wennEsKippt": "Si le dos tourné inquiète l’enfant, l’adulte parle face à l’enfant, la main devant la bouche. Si l’enfant ne sait pas quoi montrer, l’adulte nomme l’émotion et fait le visage qui va avec.",
       "kurz": "Même phrase, trois voix · l’enfant montre l’émotion"
     },
     "kurz": "Satz mit drei Stimmen · Kind zeigt das Gefühl im Gesicht"
@@ -3675,13 +3671,13 @@
     },
     "fr": {
       "titel": "Regarder couler le sable",
-      "text": "L’adulte pose un petit sablier (environ une minute) sur la table et le retourne. Les deux regardent en silence le sable qui coule. L’adulte chuchote à peine : « Le sable tombe, et moi, je ralentis. » Quand le dernier grain est tombé, l’adulte dit doucement : « Regarde, en regardant le sable, on peut devenir tout calme. » L’enfant peut retourner lui-même le sablier une fois de plus. Puis on passe à l’exercice.",
+      "text": "L’adulte pose un petit sablier (environ une minute) sur la table et le retourne. Les deux regardent en silence le sable qui coule. L’adulte chuchote à peine : « Le sable tombe, et moi, je ralentis. » Quand le dernier grain est tombé, l’adulte dit doucement : « Regarde, en regardant le sable, on peut devenir tout calme. » Ensuite, l’enfant peut retourner à son tour le sablier. Puis on passe à l’exercice.",
       "sagen": [
         "Aujourd’hui, on parle de comment devenir calme. Regarde ce que j’ai apporté.",
-        "Le sable coule tout doucement. On le regarde, et nous aussi, on ralentit.",
+        "Le sable coule tout doucement. On le regarde, et nous aussi, on devient silencieux.",
         "En regardant, on peut devenir tout calme. C’est justement de ça qu’on parle maintenant."
       ],
-      "wennEsKippt": "Si l’enfant s’agite avant la fin, l’adulte compte doucement « un, deux, trois… » et l’enfant compte sur ses doigts. Si l’enfant préfère tenir le sablier, il le prend et l’adulte regarde avec lui.",
+      "wennEsKippt": "Si l’enfant s’agite avant la fin, l’adulte compte doucement « un, deux, trois… » et l’enfant compte sur ses doigts. Si l’enfant préfère tenir le sablier, on le lui laisse et l’adulte regarde avec lui.",
       "kurz": "Retourner le sablier · regarder en silence jusqu’au bout"
     },
     "kurz": "Sanduhr drehen · still zuschauen, bis der Sand unten ist"
@@ -3749,7 +3745,7 @@
         "Et maintenant : mou comme de la gelée ! Tout peut trembler et pendre.",
         "On peut rendre son corps tout mou pour se calmer. C’est justement de ça qu’on parle maintenant."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas devenir dur, seul l’adulte fait la pierre et l’enfant se balance comme la gelée. Si l’enfant s’agite trop, l’adulte dit doucement « La gelée tremble lentement » et continue au ralenti.",
+      "wennEsKippt": "Si l’enfant ne veut pas faire la pierre, seul l’adulte la fait, et l’enfant se balance comme la gelée. Si l’enfant s’agite trop, l’adulte dit doucement « La gelée tremble lentement » et continue au ralenti.",
       "kurz": "Dur comme une pierre, mou comme de la gelée · deux fois"
     },
     "kurz": "Fest wie Stein, weich wie Pudding · zweimal im Wechsel"
@@ -3811,7 +3807,7 @@
     },
     "fr": {
       "titel": "Trois indices, puis je devine",
-      "text": "L’adulte pense à un animal, par exemple le chien, et donne trois indices l’un après l’autre : « Je suis un animal. » – « J’ai quatre pattes et des poils. » – « Je fais ouaf. » L’enfant ne devine qu’après le troisième indice. D’ici là, il garde la main devant la bouche pour que la réponse ne s’échappe pas, et la chuchote seulement dedans. Pour le deuxième animal, c’est l’enfant qui donne les indices, ou l’adulte en choisit un autre. Puis on passe à l’exercice.",
+      "text": "L’adulte pense à un animal, par exemple le chien, et donne trois indices l’un après l’autre : « Je suis un animal. » – « J’ai quatre pattes et des poils. » – « Je fais ouaf. » L’enfant ne devine qu’après le troisième indice. D’ici là, l’enfant garde la main devant la bouche pour que la réponse ne s’échappe pas, et la chuchote seulement dedans. Pour le deuxième animal, c’est l’enfant qui donne les indices, ou l’adulte en choisit un autre. Puis on passe à l’exercice.",
       "sagen": [
         "Aujourd’hui, on parle d’attendre et de s’arrêter. Je pense à un animal, et toi, tu devines.",
         "Pas encore ! Garde la réponse dans ta main jusqu’à ce que je dise « Maintenant ! »",
@@ -3885,7 +3881,7 @@
         "Bras en l’air ! Et toi ? Bras en bas ! Souvent, les mains veulent imiter, mais la tête peut les freiner.",
         "D’abord réfléchir, puis agir. C’est justement de ça qu’on parle maintenant."
       ],
-      "wennEsKippt": "Si l’enfant fait la même chose par erreur, l’adulte rit avec lui (« Les mains étaient plus rapides ! ») et recommence plus lentement. Si le contraire est trop difficile, on garde seulement bras en haut, bras en bas, très lentement.",
+      "wennEsKippt": "Si l’enfant fait la même chose par erreur, l’adulte rit avec l’enfant (« Les mains étaient plus rapides ! ») et recommence plus lentement. Si le contraire est trop difficile, on garde seulement bras en haut, bras en bas, très lentement.",
       "kurz": "L’adulte fait un geste · l’enfant fait le contraire"
     },
     "kurz": "Fachkraft macht etwas · Kind macht das Gegenteil"
@@ -4226,7 +4222,7 @@
     },
     "fr": {
       "titel": "Une balle, deux joueurs",
-      "text": "L’adulte et l’enfant s’assoient par terre, face à face, à deux pas l’un de l’autre, et se font rouler une balle molle. Avant chaque envoi, ils se regardent et hochent la tête : prêt ? Chacun fait rouler la balle pour que l’autre puisse bien l’attraper, tantôt lentement, tantôt un peu plus vite. Si elle part sur le côté, on va la chercher ensemble et on recommence. À la fin, ils la font rouler encore une fois sans un mot, juste avec le regard et un signe de tête. Puis on passe à l’exercice.",
+      "text": "L’adulte et l’enfant s’assoient par terre, face à face, à deux pas l’un de l’autre, et se font rouler une balle molle. Avant chaque envoi, ils se regardent et hochent la tête : prêt ? Tous deux font rouler la balle pour que l’autre puisse bien l’attraper, tantôt lentement, tantôt un peu plus vite. Si elle part sur le côté, on va la chercher ensemble et on recommence. À la fin, ils la font rouler encore une fois sans un mot, juste avec le regard et un signe de tête. Puis on passe à l’exercice.",
       "sagen": [
         "Aujourd’hui, on parle de jouer ensemble. Une balle, deux joueurs : on la fait rouler dans les deux sens.",
         "Fais-la rouler pour que je puisse bien l’attraper. D’abord on se regarde et on hoche la tête, puis elle roule.",
@@ -4294,13 +4290,13 @@
     },
     "fr": {
       "titel": "Une histoire à deux",
-      "text": "L’adulte commence : « Il était une fois un… » et montre l’enfant. L’enfant dit un mot, par exemple « dragon ». L’adulte continue d’un petit morceau : « Il avait… », et l’enfant complète à nouveau. Ainsi naît, à tour de rôle et morceau par morceau, une petite histoire, même si elle devient rigolote et un peu tordue. Après six à huit morceaux, les deux disent « Fin ! ». L’enfant peut aussi apporter un bruit ou un geste. Puis on passe à l’exercice.",
+      "text": "L’adulte commence : « Il était une fois un… » et montre l’enfant. L’enfant dit un mot, par exemple « dragon ». L’adulte continue d’un petit morceau : « Il avait… », et l’enfant complète à nouveau. Ainsi naît, tour à tour et morceau par morceau, une petite histoire, même si elle devient rigolote et un peu tordue. Après six à huit morceaux, les deux disent « Fin ! ». L’enfant peut aussi apporter un bruit ou un geste. Puis on passe à l’exercice.",
       "sagen": [
         "Aujourd’hui, on parle de faire des choses ensemble. On invente une histoire : un morceau pour moi, un morceau pour toi.",
         "Il était une fois un… À toi ! Qu’est-ce qui vient ensuite ?",
         "Cette histoire, on l’a faite à deux. C’est justement de ça qu’on parle maintenant."
       ],
-      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte propose deux choix : « Arrive-t-il un lapin ou un dragon ? » Si l’enfant ne veut pas parler, il apporte un bruit ou un geste, et l’adulte en fait un morceau d’histoire.",
+      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte propose deux choix : « Arrive-t-il un lapin ou un dragon ? » Si l’enfant ne veut pas parler, un bruit ou un geste de l’enfant suffit, et l’adulte en fait un morceau d’histoire.",
       "kurz": "Histoire à tour de rôle · un morceau chacun"
     },
     "kurz": "Geschichte abwechselnd weitererzählen · ein Stück jeder"

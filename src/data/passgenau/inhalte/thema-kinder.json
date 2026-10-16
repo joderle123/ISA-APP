@@ -80,7 +80,7 @@
       "Welches Gefühl geht da gerade durch den Raum?",
       "Woran hast du es erkannt?"
     ],
-    "wennEsKippt": "Im Sitzen: Das Gefühl nur mit Armen, Schultern und Gesicht auf dem Stuhl zeigen. Mag das Kind nicht vorgehen, rät es nur, und die Fachkraft geht alle Gefühle.",
+    "wennEsKippt": "Im Sitzen: Das Gefühl nur mit Armen, Schultern und Gesicht auf dem Stuhl zeigen. Mag das Kind nicht vorgehen, rät es nur, und die Fachkraft geht jedes Gefühl.",
     "rolle": [
       "bewegung"
     ],
@@ -124,13 +124,13 @@
     },
     "fr": {
       "titel": "La marche des émotions",
-      "text": "L’adulte traverse la pièce en montrant une émotion uniquement par son rythme et sa posture, par exemple la fatigue (lentement, épaules tombantes) ou la joie (léger et dansant). L’enfant devine l’émotion et dit à quoi il l’a reconnue : au rythme, aux bras ou au visage. Ensuite, l’enfant marche une émotion et l’adulte devine ; trois ou quatre tours, sans bruit.",
+      "text": "L’adulte traverse la pièce en montrant une émotion uniquement par son rythme et sa posture, par exemple la fatigue (lentement, épaules tombantes) ou la joie (léger et dansant). L’enfant devine l’émotion et explique à quoi elle se reconnaît : au rythme, aux bras ou au visage. Ensuite, l’enfant marche en montrant une émotion, et l’adulte devine ; trois ou quatre tours, sans bruit.",
       "sagen": [
-        "On reconnaît les émotions pas seulement au visage, mais aussi à la façon de marcher. On va l’essayer.",
+        "On ne reconnaît pas les émotions seulement au visage, mais aussi à la façon de marcher. On va l’essayer.",
         "Quelle émotion traverse la pièce en ce moment ?",
         "À quoi l’as-tu reconnue ?"
       ],
-      "wennEsKippt": "Assis : montrer l’émotion seulement avec les bras, les épaules et le visage sur la chaise. Si l’enfant ne veut pas marcher, il devine seulement et l’adulte joue toutes les émotions.",
+      "wennEsKippt": "Assis : montrer l’émotion seulement avec les bras, les épaules et le visage sur la chaise. Si l’enfant ne veut pas marcher, deviner suffit, et l’adulte joue chaque émotion.",
       "kurz": "Marcher une émotion · l’enfant devine et dit à quoi il l’a vu"
     },
     "kurz": "Gefühl durch Tempo und Haltung zeigen · Kind rät, woran"
@@ -401,13 +401,13 @@
     },
     "fr": {
       "titel": "Statues d’émotions",
-      "text": "L’adulte annonce une émotion (la joie, la fatigue, la fierté, la colère, le courage) ; en trois secondes, les deux prennent la pose d’une statue silencieuse avec le visage, les bras et la posture. Ensuite, l’enfant choisit l’émotion suivante et l’adulte l’imite. Pour finir, l’enfant montre trois statues à la suite, au ralenti, et l’adulte dit ce qu’il voit. Tout reste silencieux, même pour la colère.",
+      "text": "L’adulte annonce une émotion (la joie, la fatigue, la fierté, la colère, le courage) ; en trois secondes, les deux prennent la pose d’une statue silencieuse avec le visage, les bras et la posture. Ensuite, l’enfant choisit l’émotion suivante et l’adulte l’imite. Pour finir, l’enfant montre trois statues à la suite, au ralenti, et l’adulte dit ce qui se voit. Tout reste silencieux, même pour la colère.",
       "sagen": [
         "On peut montrer une émotion sans mots. On l’essaie avec le visage et la posture.",
         "Un, deux, trois : la fierté ! Stop.",
         "Je vois des épaules bien droites et un sourire."
       ],
-      "wennEsKippt": "Assis : la statue se fait avec le visage et les bras sur la chaise. Si l’enfant ne veut pas montrer d’émotion, il la choisit seulement et l’adulte la joue.",
+      "wennEsKippt": "Assis : la statue se fait avec le visage et les bras sur la chaise. Si l’enfant ne veut pas montrer d’émotion, il suffit de choisir l’émotion, et l’adulte la joue.",
       "kurz": "Une émotion · statue en 3 secondes · l’enfant choisit la suivante"
     },
     "kurz": "Gefühl rufen · in 3 Sekunden Standbild · Kind wählt das nächste"
@@ -475,7 +475,7 @@
         "Dis « Demain, il pleut » joyeux, fatigué ou grognon. Tu peux aussi dire « Je passe ».",
         "Quel ton t’a semblé le plus facile ?"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas jouer, l’adulte dit la phrase sur trois tons, et l’enfant montre celui qu’il préfère. « Je passe » est toujours permis.",
+      "wennEsKippt": "Si l’enfant ne veut pas jouer, l’adulte dit la phrase sur trois tons, et l’enfant montre celui qui lui plaît le plus. « Je passe » est toujours permis.",
       "kurz": "Phrase météo joyeux · fatigué · grognon · choisir la plus facile"
     },
     "kurz": "Wettersatz froh · müde · grummelig sagen · leichteste Stimmung wählen"
@@ -554,7 +554,7 @@
       "titel": "Themen-Rahmen"
     },
     "titel": "Mein Motor heute",
-    "text": "Die Fachkraft zeigt drei Gänge mit der Hand: Schnecke (flache Hand, ganz langsam), Auto (mittel) und Rakete (schnell, nach oben). Jeder zeigt, in welchem Gang sein Motor gerade läuft; die Fachkraft zeigt auch ihren. Danach atmen beide einmal lang aus und schalten einen Gang in Richtung Auto.",
+    "text": "Die Fachkraft zeigt drei Gänge mit der Hand: Schnecke (flache Hand, ganz langsam), Auto (mittel) und Rakete (schnell, nach oben). Das Kind zeigt, in welchem Gang sein Motor gerade läuft; die Fachkraft zeigt auch ihren. Danach atmen beide einmal lang aus und schalten einen Gang in Richtung Auto.",
     "sagen": [
       "Heute geht es darum, wie man sich selbst ruhiger oder wacher machen kann. Wir schauen erst auf den Motor.",
       "Schnecke, Auto oder Rakete: In welchem Gang läuft dein Motor?",
@@ -604,13 +604,13 @@
     },
     "fr": {
       "titel": "Mon moteur aujourd’hui",
-      "text": "L’adulte montre trois vitesses avec la main : l’escargot (main à plat, très lentement), la voiture (vitesse moyenne) et la fusée (rapide, vers le haut). Chacun montre à quelle vitesse tourne son moteur en ce moment ; l’adulte montre aussi le sien. Puis les deux expirent longuement une fois et passent une vitesse en direction de la voiture.",
+      "text": "L’adulte montre trois vitesses avec la main : l’escargot (main à plat, très lentement), la voiture (vitesse moyenne) et la fusée (rapide, vers le haut). L’enfant montre à quelle vitesse tourne son moteur en ce moment ; l’adulte montre aussi le sien. Puis les deux expirent longuement une fois et passent une vitesse en direction de la voiture.",
       "sagen": [
         "Aujourd’hui, on parle de la façon de devenir plus calme ou plus éveillé. On commence par regarder le moteur.",
         "Escargot, voiture ou fusée : à quelle vitesse tourne ton moteur ?",
         "Chez moi, c’est la fusée aujourd’hui. On respire et on passe une vitesse vers la voiture."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas montrer de vitesse, l’adulte montre seulement la sienne et expire une fois, seul. Si l’enfant dit « passe », il respire simplement avec l’adulte.",
+      "wennEsKippt": "Si l’enfant ne veut pas montrer de vitesse, l’adulte montre seulement la sienne et expire une fois sans l’enfant. Si l’enfant dit « je passe », les deux respirent simplement ensemble.",
       "kurz": "Montrer la vitesse : escargot · voiture · fusée · longue expiration"
     },
     "kurz": "Motor-Gang zeigen: Schnecke · Auto · Rakete · lang ausatmen"
@@ -1015,7 +1015,7 @@
     },
     "fr": {
       "titel": "Trois astuces pour attendre",
-      "text": "L’adulte montre trois astuces pour attendre : glisser les mains sous les jambes, compter jusqu’à trois dans sa tête, expirer lentement par la bouche. Il pose à l’enfant trois questions faciles, par exemple « Quel est ton animal préféré ? », et avant de répondre l’enfant essaie une autre astuce. Ensuite, l’enfant montre les mains, la tête ou la bouche, selon l’astuce qui lui a le mieux convenu, et l’adulte dit laquelle il préfère.",
+      "text": "L’adulte montre trois astuces pour attendre : coincer les mains sous les jambes, compter jusqu’à trois dans sa tête, expirer une fois lentement par la bouche. L’adulte pose à l’enfant trois questions faciles, par exemple « Quel est ton animal préféré ? », et avant de répondre l’enfant essaie une autre astuce. Ensuite, l’enfant montre les mains, la tête ou la bouche, selon l’astuce qui lui a le mieux convenu, et l’adulte dit à son tour laquelle lui plaît le plus.",
       "sagen": [
         "Aujourd’hui, on a parlé d’attendre un instant avant de dire ou de faire quelque chose. On essaie trois astuces.",
         "D’abord l’astuce, ensuite la réponse.",
@@ -1156,13 +1156,13 @@
     },
     "fr": {
       "titel": "Qu’est-ce qui a changé ?",
-      "text": "L’adulte pose trois objets du quotidien sur la table (par exemple un crayon, une cuillère et une chaussette) et laisse l’enfant bien regarder pendant dix secondes. L’enfant ferme les yeux, l’adulte échange ou retire un objet. L’enfant ouvre les yeux et dit ce qui a changé ; ensuite, il peut changer quelque chose lui-même.",
+      "text": "L’adulte pose trois objets du quotidien sur la table (par exemple un crayon, une cuillère et une chaussette) et laisse l’enfant bien regarder pendant dix secondes. L’enfant ferme les yeux, l’adulte échange ou retire un objet. L’enfant ouvre les yeux et dit ce qui a changé ; ensuite, l’enfant peut changer quelque chose à son tour.",
       "sagen": [
         "Aujourd’hui, on s’exerce à bien regarder et à bien écouter. On commence par un petit jeu de recherche.",
         "Regarde bien : qu’est-ce qu’il y a là ? Dix secondes.",
         "Yeux fermés… yeux ouverts : qu’est-ce qui a changé ?"
       ],
-      "wennEsKippt": "Si c’est trop difficile, l’adulte ne prend que deux objets. Si l’enfant n’a pas envie, l’adulte présente simplement les objets et l’enfant montre ce qu’il voit.",
+      "wennEsKippt": "Si c’est trop difficile, l’adulte ne prend que deux objets. Si l’enfant n’a pas envie, l’adulte présente simplement les objets et l’enfant montre du doigt ce qu’il y a.",
       "kurz": "Retenir 3 objets 10 s · yeux fermés · un objet est changé"
     },
     "kurz": "Drei Dinge 10 Sek. merken · Augen zu · ein Ding wird verändert"
@@ -1224,7 +1224,7 @@
     },
     "fr": {
       "titel": "La marche de recherche",
-      "text": "Les deux marchent lentement dans la pièce. L’adulte donne une caractéristique (« quelque chose de rond », « quelque chose de rouge », « quelque chose de doux ») ; tous les deux s’arrêtent et montrent du doigt quelque chose qui convient, sans y toucher ni courir. Puis chacun dit ce qu’il a trouvé ; plus tard, l’enfant donne la caractéristique.",
+      "text": "Les deux marchent lentement dans la pièce. L’adulte donne une caractéristique (« quelque chose de rond », « quelque chose de rouge », « quelque chose de doux ») ; tous les deux s’arrêtent et montrent du doigt quelque chose qui convient, sans y toucher ni courir. Puis les deux disent ce qu’ils ont trouvé ; plus tard, l’enfant donne la caractéristique.",
       "sagen": [
         "Aujourd’hui, on s’exerce à bien regarder. On part à la découverte dans la pièce.",
         "Montre-moi quelque chose de rond. Seulement montrer, pas toucher.",
@@ -1434,7 +1434,7 @@
     },
     "fr": {
       "titel": "La minute de la tour",
-      "text": "L’adulte retourne un sablier. Chacun construit sa propre tour avec des blocs, jusqu’à ce que le sable soit tombé. Si une tour tombe, on recommence tranquillement ; l’adulte dit alors calmement « Encore une fois ! ». On ne compare pas : à la fin, chacun montre seulement sa propre tour.",
+      "text": "L’adulte retourne un sablier. Tous deux construisent leur propre tour avec des blocs, jusqu’à ce que le sable soit tombé. Si une tour tombe, on recommence tranquillement ; l’adulte dit alors calmement « Encore une fois ! ». On ne compare pas : à la fin, l’enfant et l’adulte montrent seulement leur propre tour.",
       "sagen": [
         "Aujourd’hui, on s’exerce à persévérer, même quand c’est difficile. On construit pendant une minute.",
         "Si la tour tombe, on dit « Encore une fois ! » et on continue.",
@@ -1573,13 +1573,13 @@
     },
     "fr": {
       "titel": "Ma montagne",
-      "text": "L’adulte dessine un chemin avec une montagne sur une feuille. L’enfant fait une croix à l’endroit du chemin où il a trouvé quelque chose de pénible aujourd’hui, et dessine (ou dit) ce qui l’a aidé à continuer, par exemple « faire une pause » ou « un petit pas ». L’adulte dessine aussi sa croix et son aide.",
+      "text": "L’adulte dessine un chemin avec une montagne sur une feuille. L’enfant fait une croix à l’endroit du chemin où cela a été pénible aujourd’hui, et dessine (ou dit) ce qui l’a aidé à continuer, par exemple « faire une pause » ou « un petit pas ». L’adulte dessine aussi sa croix et son aide.",
       "sagen": [
         "Aujourd’hui, on a parlé de persévérer. Où était ta montagne aujourd’hui, et qu’est-ce qui t’a aidé à continuer ?",
         "Fais une croix à cet endroit. Tu peux aussi dire « passe ».",
         "Pour moi, une petite pause a aidé."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de montagne, il fait sa croix au sommet et dit ce qui était bien là-haut. Il peut aussi seulement montrer au lieu de dessiner.",
+      "wennEsKippt": "Si l’enfant ne trouve pas de montagne, la croix va au sommet, et l’enfant dit ce qui était bien là-haut. Montrer du doigt suffit aussi, sans dessiner.",
       "kurz": "Croix à l’endroit difficile du chemin · qu’est-ce qui a aidé ?",
       "vorbereitung": "Dessiner sur une feuille un chemin avec une montagne"
     },
@@ -1777,8 +1777,7 @@
     ],
     "material": [
       "tuch",
-      "ball",
-      "stuhl"
+      "ball"
     ],
     "ort": "raum",
     "anspruch": 0,
@@ -1791,7 +1790,7 @@
     },
     "fr": {
       "titel": "La balle sur le tissu",
-      "text": "L’adulte et l’enfant tiennent un tissu chacun par une extrémité et posent une balle au milieu. Ensemble, ils portent lentement la balle à travers la pièce sans qu’elle tombe, jusqu’à une chaise qui sert de but. L’enfant décide du rythme et du chemin ; si la balle tombe, les deux la reposent ensemble sur le tissu et recommencent.",
+      "text": "L’adulte et l’enfant tiennent un tissu, l’un à chaque bout, et posent une balle au milieu. Ensemble, ils portent lentement la balle à travers la pièce sans qu’elle tombe, jusqu’à une chaise qui sert de but. L’enfant décide du rythme et du chemin ; si la balle tombe, les deux la reposent ensemble sur le tissu et recommencent.",
       "sagen": [
         "Aujourd’hui, on parle de travailler ensemble. Avec le tissu, ça ne marche que si on fait attention l’un à l’autre.",
         "Doucement, on avance ensemble. Dis-moi si je vais trop vite.",
@@ -2008,7 +2007,7 @@
         "Je vois un neuf. Et toi, que vois-tu ?",
         "On a raison tous les deux, depuis notre place."
       ],
-      "wennEsKippt": "Si l’enfant pense que son chiffre est le seul bon, l’adulte l’invite à venir à côté de lui pour vérifier. Si aucun des deux ne veut se lever, l’adulte tourne lentement la feuille.",
+      "wennEsKippt": "Si l’enfant pense que son chiffre est le seul bon, l’adulte l’invite à se placer à ses côtés pour vérifier. Si aucun des deux ne veut se lever, l’adulte tourne lentement la feuille.",
       "kurz": "Chiffre entre les deux · six ou neuf ? · changer de place",
       "vorbereitung": "Écrire un grand 6 au gros feutre sur une feuille"
     },
@@ -2061,7 +2060,6 @@
       "rollenspiel"
     ],
     "material": [
-      "stuhl",
       "stifte"
     ],
     "ort": "raum",
@@ -2221,7 +2219,7 @@
         "À quoi ressemble ton signe de pause ? Je le refais.",
         "Pause, compris. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de signe, l’adulte en propose deux (main à plat, index croisés), et l’enfant en choisit un. Si l’enfant ne veut pas faire le test, il montre son signe une seule fois, et les deux disent « au revoir ».",
+      "wennEsKippt": "Si l’enfant ne trouve pas de signe, l’adulte en propose deux (main à plat, index croisés), et l’enfant en choisit un. Si l’enfant ne veut pas faire le test, son signe n’est montré qu’une seule fois, et les deux disent « au revoir ».",
       "kurz": "Inventer un signe « pause, s’il te plaît » · tester · au revoir"
     },
     "kurz": "Handzeichen „Pause, bitte“ erfinden · kurz testen · Tschüss"
@@ -2283,7 +2281,7 @@
     },
     "fr": {
       "titel": "Un mot, une phrase",
-      "text": "L’adulte pose une question de choix facile, par exemple « Qu’est-ce que tu préfères : l’été ou l’hiver ? ». Il y répond d’abord lui-même : d’abord par un seul mot, puis par une phrase entière avec « parce que ». Ensuite, c’est au tour de l’enfant.",
+      "text": "L’adulte pose une question de choix facile, par exemple « Qu’est-ce que tu préfères : l’été ou l’hiver ? ». L’adulte y répond d’abord : par un seul mot, puis par une phrase entière avec « parce que ». Ensuite, c’est au tour de l’enfant.",
       "sagen": [
         "Aujourd’hui, on parle de parler et d’écouter. On commence par un petit jeu avec des mots et des phrases.",
         "L’été ou l’hiver ? D’abord un mot, puis une phrase entière.",
@@ -2357,7 +2355,7 @@
       "sagen": [
         "Aujourd’hui, on parle de parler et d’écouter. Celui qui a la balle parle, l’autre écoute.",
         "Je dis une phrase et je te fais rouler la balle.",
-        "Raconte-moi en plus. Je t’écoute."
+        "Raconte-m’en un peu plus. Je t’écoute."
       ],
       "wennEsKippt": "Assis : la balle roule sur la table ou passe de main en main. Si l’enfant dit « passe », il fait seulement rouler la balle en retour et l’adulte continue à raconter.",
       "kurz": "Qui a la balle parle et la fait rouler · puis une question"
@@ -2490,13 +2488,13 @@
     },
     "fr": {
       "titel": "Le téléphone gobelet",
-      "text": "Les deux tiennent un gobelet comme un téléphone : le bord contre l’oreille ou devant la bouche. L’adulte chuchote un mot dans son gobelet, et l’enfant redit ce qu’il a entendu. Puis l’enfant chuchote un mot ou une courte phrase, l’adulte la redit ; pour finir, les deux chuchotent « au revoir » dans le gobelet.",
+      "text": "Les deux tiennent un gobelet comme un téléphone : le bord contre l’oreille ou devant la bouche. L’adulte chuchote un mot dans son gobelet, et l’enfant redit ce qui a été chuchoté. Puis l’enfant chuchote un mot ou une courte phrase, l’adulte la redit ; pour finir, les deux chuchotent « au revoir » dans le gobelet.",
       "sagen": [
         "Aujourd’hui, on a parlé de parler et d’écouter. Pour finir, on téléphone avec le gobelet : l’un chuchote, l’autre écoute.",
         "Je chuchote un mot. Redis-le-moi.",
         "Maintenant, tu chuchotes et je le redis. Au revoir !"
       ],
-      "wennEsKippt": "S’il n’y a qu’un gobelet, les deux se le passent. Si l’enfant ne trouve pas de mot, il chuchote simplement « au revoir », ou l’adulte propose trois mots.",
+      "wennEsKippt": "S’il n’y a qu’un gobelet, les deux se le passent. Si aucun mot ne vient à l’enfant, chuchoter simplement « au revoir », ou l’adulte propose trois mots.",
       "kurz": "Gobelet-téléphone · chuchoter un mot, le redire · échanger"
     },
     "kurz": "Becher als Telefon · Wort flüstern, zurücksagen · tauschen"
@@ -2557,13 +2555,13 @@
     },
     "fr": {
       "titel": "Ça, je sais déjà le faire",
-      "text": "L’adulte montre sans un mot quelque chose qu’il sait bien faire (par exemple nouer ses lacets), et l’enfant devine ce que c’est. Puis l’enfant montre sans un mot quelque chose qu’il sait bien faire, et l’adulte devine. Celui qui ne trouve rien prend une petite chose, par exemple siffler ou tourner une fois sur soi-même.",
+      "text": "L’adulte montre sans un mot quelque chose qu’on sait bien faire (par exemple nouer ses lacets), et l’enfant devine ce que c’est. Puis l’enfant montre sans un mot quelque chose qu’on sait bien faire, et l’adulte devine. Celui qui ne trouve rien prend une petite chose, par exemple siffler ou tourner une fois sur soi-même.",
       "sagen": [
         "Aujourd’hui, on parle de ce que je sais bien faire et de ce qui me caractérise. On commence par un jeu de mime.",
         "Je te montre quelque chose que je sais faire. Devine !",
         "Ah, maintenant je vois."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose trois petites choses à montrer (sauter, siffler, tourner au ralenti). Si l’enfant ne veut pas montrer, il devine seulement ou dit « passe ».",
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose trois petites choses à montrer (sauter, siffler, tourner au ralenti). Si l’enfant ne veut pas montrer, deviner suffit, ou dire « passe ».",
       "kurz": "Mimer quelque chose qu’on sait faire · l’autre devine"
     },
     "kurz": "Etwas Gekonntes pantomimisch zeigen · der andere rät"
@@ -2575,7 +2573,7 @@
       "titel": "Themen-Rahmen"
     },
     "titel": "Du zeigst, ich lerne",
-    "text": "Das Kind bringt der Fachkraft eine Bewegung bei, die es gut kann, zum Beispiel hüpfen, sich langsam drehen, auf einem Bein stehen (mit Festhalten am Stuhl) oder balancieren. Es zeigt sie vor und gibt Tipps; die Fachkraft macht sie nach, fragt „Wie genau?“ und macht absichtlich kleine Fehler, die das Kind verbessern darf. Danach zeigt das Kind eine zweite Bewegung, und die Fachkraft bedankt sich für das, was sie gelernt hat.",
+    "text": "Das Kind bringt der Fachkraft eine Bewegung bei, die es gut kann, zum Beispiel hüpfen, sich langsam drehen, auf einem Bein stehen (mit einer Hand an der Wand) oder balancieren. Es zeigt sie vor und gibt Tipps; die Fachkraft macht sie nach, fragt „Wie genau?“ und macht absichtlich kleine Fehler, die das Kind verbessern darf. Danach zeigt das Kind eine zweite Bewegung, und die Fachkraft bedankt sich für das, was sie gelernt hat.",
     "sagen": [
       "Heute geht es darum, was ich gut kann. Du darfst mir etwas beibringen, und ich lerne von dir.",
       "Zeig mir genau, wie das geht. Worauf muss ich achten?",
@@ -2625,7 +2623,7 @@
     },
     "fr": {
       "titel": "Tu montres, j’apprends",
-      "text": "L’enfant apprend à l’adulte un mouvement qu’il sait bien faire, par exemple sauter, tourner lentement, se tenir sur un pied (en se tenant à une chaise) ou garder l’équilibre. Il le montre et donne des conseils ; l’adulte l’imite, demande « Comment exactement ? » et fait exprès de petites erreurs que l’enfant peut corriger. Ensuite, l’enfant montre un deuxième mouvement et l’adulte le remercie pour ce qu’il a appris.",
+      "text": "L’enfant apprend à l’adulte un mouvement qu’il sait bien faire, par exemple sauter, tourner lentement, se tenir sur un pied (une main contre le mur) ou garder l’équilibre. L’enfant montre le mouvement et donne des conseils ; l’adulte l’imite, demande « Comment exactement ? » et fait exprès de petites erreurs que l’enfant peut corriger. Ensuite, l’enfant montre un deuxième mouvement, et l’adulte remercie l’enfant pour ce qu’il lui a appris.",
       "sagen": [
         "Aujourd’hui, on parle de ce que je sais bien faire. Tu peux m’apprendre quelque chose, et moi, j’apprends de toi.",
         "Montre-moi exactement comment ça marche. À quoi dois-je faire attention ?",
@@ -2701,13 +2699,13 @@
     },
     "fr": {
       "titel": "Ma boîte à moi",
-      "text": "Sur la table, il y a une boîte à chaussures et six petits objets qui représentent quelque chose : un crayon (dessiner), une balle (sport), un livre (lire), des briques (construire), des cartes (jeux), de la pâte à modeler (modeler). L’enfant met un ou deux objets dans la boîte, qui vont avec ce qu’il sait bien faire ou aime faire, et dit un mot ou le montre. L’adulte y met aussi un objet et dit un mot. À la fin, les deux regardent dans la boîte.",
+      "text": "Sur la table, il y a une boîte à chaussures et six petits objets qui représentent quelque chose : un crayon (dessiner), une balle (sport), un livre (lire), des briques (construire), des cartes (jeux), de la pâte à modeler (modeler). L’enfant met un ou deux objets dans la boîte, qui vont avec ce que l’enfant sait bien faire ou aime faire, et dit un mot ou le montre. L’adulte y met aussi un objet et dit un mot. À la fin, les deux regardent dans la boîte : voilà ce qu’il y a dedans aujourd’hui.",
       "sagen": [
         "Aujourd’hui, on a parlé de toi : ce que tu sais bien faire et ce qui te ressemble. On remplit une boîte à toi.",
         "Quel objet va avec quelque chose que tu sais bien faire ou que tu aimes faire ?",
         "Je mets le livre, parce que j’aime lire. Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte cite deux choses qu’il a remarquées chez l’enfant aujourd’hui, et l’enfant choisit un objet qui va avec ou dit « Je passe ». Il ne s’agit jamais de savoir faire quelque chose de spécial.",
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte cite deux choses remarquées chez l’enfant aujourd’hui, et l’enfant choisit un objet qui va avec ou dit « Je passe ». Il ne s’agit jamais de savoir faire quelque chose de spécial.",
       "kurz": "Mettre dans la boîte un objet qui me ressemble · un mot",
       "vorbereitung": "Poser une boîte à chaussures et six objets : crayon, balle, livre, briques, cartes à jouer, pâte à modeler"
     },
@@ -2770,7 +2768,7 @@
     },
     "fr": {
       "titel": "Je suis quelqu’un de…",
-      "text": "L’adulte propose quatre mots au choix : curieux, courageux, serviable, patient. L’enfant en choisit un et dit la phrase « Je suis quelqu’un de… » avec un exemple, ou invente un mot à lui. L’adulte dit aussi sa phrase, et les deux se disent au revoir.",
+      "text": "L’adulte propose quatre mots au choix : curieux, courageux, serviable, patient. L’enfant en choisit un et dit la phrase « Je suis quelqu’un de… » avec un exemple, ou invente un mot de son choix. L’adulte dit aussi sa phrase, et les deux se disent au revoir.",
       "sagen": [
         "Aujourd’hui, on a parlé de toi et de ce que tu sais bien faire. Pour finir, une phrase sur toi.",
         "Je suis quelqu’un de curieux. Et toi ?",
@@ -2977,15 +2975,15 @@
     },
     "fr": {
       "titel": "Mon escalier de l’apprentissage",
-      "text": "L’adulte dessine un escalier à quatre marches et écrit dessus : « Regarder », « Demander », « Essayer », « Essayer autrement ». L’enfant fait une croix sur la marche qui l’a le plus aidé aujourd’hui. Les deux racontent en une phrase quand ils ont utilisé cette marche pendant la séance.",
+      "text": "L’adulte dessine un escalier à quatre marches et écrit dessus : « Regarder », « Demander », « Essayer », « Essayer autrement ». L’enfant fait une croix sur la marche qui lui a été le plus utile aujourd’hui. Les deux racontent en une phrase quand ils ont utilisé cette marche pendant la séance.",
       "sagen": [
         "Aujourd’hui, on a parlé de la façon d’apprendre quelque chose. Sur quelle marche de l’escalier étais-tu souvent aujourd’hui ?",
-        "Fais une croix sur la marche qui t’a aidé. « Passe » est aussi permis.",
+        "Fais une croix sur la marche qui t’a été utile. « Passe » est aussi permis.",
         "Aujourd’hui, j’ai souvent essayé autrement."
       ],
       "wennEsKippt": "Si le choix est difficile, l’enfant fait deux croix ou montre seulement la marche. L’adulte peut donner deux exemples de la séance.",
       "kurz": "Croix sur la marche la plus utile · raconter un moment",
-      "vorbereitung": "Dessiner un escalier de 4 marches : observer · demander · essayer · refaire autrement"
+      "vorbereitung": "Dessiner un escalier de 4 marches : Regarder · Demander · Essayer · Essayer autrement"
     },
     "kurz": "Kreuz auf die hilfreichste Stufe · Moment dazu erzählen",
     "vorbereitung": "Treppe mit 4 Stufen zeichnen: Zuschauen · Fragen · Ausprobieren · Nochmal anders"
@@ -3186,7 +3184,7 @@
     },
     "fr": {
       "titel": "Mime du quotidien",
-      "text": "L’adulte montre au ralenti et sans un mot un geste du quotidien en petites étapes, par exemple enfiler sa veste : un bras dans la manche, l’autre bras, fermer la fermeture éclair. L’enfant devine de quoi il s’agit et fait les étapes avec lui. Ensuite, l’enfant montre un geste (par exemple faire son cartable, nouer ses lacets ou essuyer la table) dans le bon ordre, et l’adulte devine et le fait avec lui.",
+      "text": "L’adulte montre au ralenti et sans un mot un geste du quotidien en petites étapes, par exemple enfiler sa veste : un bras dans la manche, l’autre bras, fermer la fermeture éclair. L’enfant devine de quoi il s’agit et fait les étapes avec l’adulte. Ensuite, l’enfant montre un geste (par exemple faire son cartable, nouer ses lacets ou essuyer la table) dans le bon ordre, et l’adulte devine et le fait avec l’enfant.",
       "sagen": [
         "Aujourd’hui, on parle de ce qui arrive tous les jours et de l’ordre dans lequel on le fait. On l’essaie en mime.",
         "Qu’est-ce que je fais là ? D’abord ça, puis ça.",
@@ -3204,7 +3202,7 @@
       "titel": "Themen-Rahmen"
     },
     "titel": "Erst, dann, zuletzt",
-    "text": "Die Fachkraft nennt einen Übergang aus dem Schulalltag, zum Beispiel von der Pause zurück in die Klasse, und legt drei Zettel hin: „Jacke aufhängen“, „Material rausholen“, „hinsetzen“. Das Kind legt die Zettel in die Reihenfolge, die ihm am besten passt, und sagt, warum. Die Fachkraft zeigt ihre eigene Reihenfolge und sagt, dass es mehrere gute Wege gibt.",
+    "text": "Die Fachkraft nennt einen Übergang aus dem Schulalltag, zum Beispiel von der Pause zurück an den Platz, und legt drei Zettel hin: „Jacke aufhängen“, „Material rausholen“, „hinsetzen“. Das Kind legt die Zettel in die Reihenfolge, die ihm am besten passt, und sagt, warum. Die Fachkraft zeigt ihre eigene Reihenfolge und sagt, dass es mehrere gute Wege gibt.",
     "sagen": [
       "Heute ging es um den Alltag, um Reihenfolgen und Übergänge. Was machst du zuerst, was danach?",
       "Leg die Zettel in die Reihenfolge, die dir hilft.",
@@ -3257,7 +3255,7 @@
     },
     "fr": {
       "titel": "D’abord, ensuite, enfin",
-      "text": "L’adulte nomme un passage de la vie scolaire, par exemple le retour de la récréation en classe, et pose trois papiers : « Accrocher la veste », « Sortir ses affaires », « S’asseoir ». L’enfant range les papiers dans l’ordre qui lui convient le mieux et dit pourquoi. L’adulte montre son propre ordre et dit qu’il existe plusieurs bons chemins.",
+      "text": "L’adulte nomme un passage de la vie scolaire, par exemple le retour de la récréation à sa place, et pose trois papiers : « Accrocher la veste », « Sortir ses affaires », « S’asseoir ». L’enfant range les papiers dans l’ordre qui lui convient le mieux et dit pourquoi. L’adulte montre son propre ordre et dit qu’il existe plusieurs bons chemins.",
       "sagen": [
         "Aujourd’hui, on a parlé du quotidien et de l’ordre des choses. Qu’est-ce que tu fais d’abord, qu’est-ce que tu fais ensuite ?",
         "Place les papiers dans l’ordre qui t’aide.",
@@ -3265,7 +3263,7 @@
       ],
       "wennEsKippt": "Si c’est difficile de les ranger, l’adulte pose un premier papier et l’enfant complète les autres ; « passe » est aussi permis. Au lieu des papiers, l’enfant peut aussi montrer les étapes avec ses doigts.",
       "kurz": "Mettre trois papiers dans son ordre · justifier · comparer",
-      "vorbereitung": "Écrire 3 papiers : accrocher la veste · sortir le matériel · s’asseoir"
+      "vorbereitung": "Écrire 3 papiers : accrocher la veste · sortir ses affaires · s’asseoir"
     },
     "kurz": "Drei Zettel in eigene Reihenfolge legen · begründen · vergleichen",
     "vorbereitung": "3 Zettel schreiben: Jacke aufhängen · Material rausholen · hinsetzen"
@@ -3403,7 +3401,7 @@
         "Qu’est-ce que les yeux et les sourcils nous disent ? Quelle émotion ça pourrait être ?",
         "Et c’est ce qu’on va faire maintenant : reconnaître les émotions des autres et les siennes."
       ],
-      "wennEsKippt": "Si l’enfant ne devine pas, l’adulte propose deux émotions au choix (« surpris ou agacé ? »). S’il ne veut pas se montrer derrière la feuille, il ne fait que deviner, et l’adulte montre encore deux ou trois émotions.",
+      "wennEsKippt": "Si l’enfant ne devine pas, l’adulte propose deux émotions au choix (« surpris ou agacé ? »). Si l’enfant ne veut pas se montrer derrière la feuille, il ne fait que deviner, et l’adulte montre encore deux ou trois émotions.",
       "kurz": "Montrer seulement les yeux · l’enfant devine · puis la bouche"
     },
     "kurz": "Nur Augen zeigen · Kind rät das Gefühl · dann der Mund allein"
@@ -3471,7 +3469,7 @@
         "Mia est devant une porte. Elle a des papillons dans le ventre et les genoux qui tremblent. Que ressent Mia, à ton avis ?",
         "Et c’est ce qu’on va faire maintenant : reconnaître les émotions et bien observer."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas d’émotion, l’adulte en propose deux au choix (excitée ou inquiète ?). S’il ne veut pas deviner, l’adulte raconte lui-même les deux fins et l’enfant montre celle qu’il trouve la plus passionnante.",
+      "wennEsKippt": "Si l’enfant ne trouve pas d’émotion, l’adulte en propose deux au choix (excitée ou inquiète ?). Si l’enfant ne veut pas deviner, l’adulte raconte les deux fins et l’enfant montre celle qui lui semble la plus passionnante.",
       "kurz": "Mia devant la porte · papillons · deux émotions possibles"
     },
     "kurz": "Mia vor der Tür · Bauch kribbelt · zwei mögliche Gefühle"
@@ -3542,7 +3540,7 @@
         "Je suis un peu fatigué. Je suis assez fatigué. Je suis très fatigué. Tu vois la différence dans le gobelet ?",
         "Et c’est ce qu’on va faire maintenant : montrer ses émotions et les dire avec des mots."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas d’émotion, l’adulte en propose trois au choix (joyeux, fatigué, agacé). S’il ne veut pas parler, il remplit le gobelet en silence, et l’adulte dit la phrase qui va avec.",
+      "wennEsKippt": "Si l’enfant ne trouve pas d’émotion, l’adulte en propose trois au choix (joyeux, fatigué, agacé). Si l’enfant ne veut pas parler, il suffit de remplir le gobelet en silence ; l’adulte dit la phrase qui va avec.",
       "kurz": "Remplir le gobelet : un peu · assez · très"
     },
     "kurz": "Becher füllen: ein bisschen · ziemlich · total"
@@ -3612,7 +3610,7 @@
         "Fipps (doucement, la tête basse) : « Ça m’est égal. » Sa tour s’est écroulée. Que ressent vraiment Fipps ?",
         "Et c’est ce qu’on va faire maintenant : dire ce qu’on ressent pour que les autres comprennent."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de mot, l’adulte en propose trois (triste, déçu, fâché) et l’enfant choisit celui qui va à Fipps. S’il ne veut pas parler à la marionnette, il montre le mot ou hoche la tête, et l’adulte parle pour Fipps.",
+      "wennEsKippt": "Si l’enfant ne trouve pas de mot, l’adulte en propose trois (triste, déçu, fâché) et l’enfant choisit celui qui va à Fipps. Si l’enfant ne veut pas parler à la marionnette, il montre le mot ou hoche la tête, et l’adulte parle pour Fipps.",
       "kurz": "Marionnette : « ça m’est égal » · l’enfant trouve le vrai mot"
     },
     "kurz": "Handpuppe sagt „Ist egal“ · Kind findet das echte Wort"
@@ -3677,16 +3675,18 @@
     },
     "fr": {
       "titel": "La bande de papier qui danse",
-      "text": "L’adulte et l’enfant ont chacun une fine bande de papier. L’adulte tient la sienne par un bout, juste sous la bouche, de sorte qu’elle pende vers le bas, et souffle deux fois, court et fort : la bande s’agite dans tous les sens. Puis il expire lentement et doucement : la bande se soulève à peine. L’enfant essaie les deux avec sa propre bande, puis tente de la faire flotter doucement pendant toute une longue expiration. Il constate que son souffle guide la bande, et qu’une expiration longue et calme peut aussi apaiser celui qui souffle.",
+      "text": "Il y a deux fines bandes de papier, une pour l’adulte et une pour l’enfant. L’adulte tient la sienne par un bout, juste sous la bouche, de sorte qu’elle pende vers le bas, et souffle deux fois, court et fort : la bande s’agite follement. Puis l’adulte expire lentement et doucement : la bande se soulève à peine. L’enfant essaie les deux avec sa propre bande, puis tente de la faire flotter doucement pendant toute une longue expiration. L’enfant constate que son souffle guide la bande, et qu’une expiration longue et calme peut aussi apaiser celui qui souffle.",
       "sagen": [
         "Aujourd’hui, on cherche comment se calmer quand il se passe beaucoup de choses en nous. Je te montre une petite expérience.",
         "Quand on souffle fort et court, la bande s’agite. Et quand on expire très longtemps et très doucement ?",
         "Et c’est ce qu’on va faire maintenant : se calmer quand une émotion est forte."
       ],
-      "wennEsKippt": "Si l’expiration longue ne vient pas, l’adulte respire avec l’enfant et compte tout bas jusqu’à quatre. Si l’enfant ne veut pas souffler, il tient seulement la bande pendant que l’adulte souffle, et il dit ce que fait la bande.",
-      "kurz": "Bande de papier : souffler court, expirer long · l’enfant essaie"
+      "wennEsKippt": "Si l’expiration longue ne vient pas, l’adulte respire avec l’enfant et compte tout bas jusqu’à quatre. Si l’enfant ne veut pas souffler, il suffit de tenir la bande pendant que l’adulte souffle, et de dire ce que fait la bande.",
+      "kurz": "Bande de papier : souffler court, expirer long · l’enfant essaie",
+      "vorbereitung": "Déchirer deux fines bandes de papier (env. 3 × 20 cm)"
     },
-    "kurz": "Papierstreifen: kurz pusten, lang ausatmen · Kind probiert"
+    "kurz": "Papierstreifen: kurz pusten, lang ausatmen · Kind probiert",
+    "vorbereitung": "Zwei schmale Papierstreifen (ca. 3 × 20 cm) vom Papier abreißen"
   },
   {
     "id": "th:selbstregulation-einstieg-kinder-2",
@@ -3819,7 +3819,7 @@
         "Dis cinq fois de suite très vite « lait ». Et maintenant, vite : que boit la vache ?",
         "Et c’est ce qu’on va faire maintenant : d’abord s’arrêter, puis réfléchir, puis agir."
       ],
-      "wennEsKippt": "Si l’enfant s’agace du piège, l’adulte dit « Ça arrive à beaucoup de monde, même aux adultes » et donne la solution en riant. S’il ne veut pas deviner, l’adulte joue seul les deux devinettes et l’enfant dit quand il aurait fallu penser « Stop ».",
+      "wennEsKippt": "Si l’enfant s’agace du piège, l’adulte dit « Ça arrive à beaucoup de monde, même aux adultes » et donne la solution en riant. Si l’enfant ne veut pas deviner, l’adulte joue seul les deux devinettes et l’enfant dit quand il aurait fallu penser « Stop ».",
       "kurz": "Deux devinettes-pièges · s’arrêter avant de répondre"
     },
     "kurz": "Zwei Fangrätsel · erst stoppen, dann antworten"
@@ -3881,7 +3881,7 @@
     },
     "fr": {
       "titel": "Le jeu du contraire",
-      "text": "Ils se font face. L’adulte fait un geste et le dit à voix haute : « Je lève les bras. » L’enfant ne l’imite pas, il fait le contraire : il baisse les bras. Autres paires : hocher la tête et la secouer, un pas en avant et un pas en arrière, s’accroupir et se relever. Le premier réflexe, c’est d’imiter ; s’arrêter un instant pour réfléchir aide. Après quelques tours, l’enfant propose le geste et l’adulte fait le contraire (et a le droit de se tromper).",
+      "text": "Ils se font face. L’adulte fait un geste et le dit à voix haute : « Je lève les bras. » L’enfant ne l’imite pas, mais fait le contraire : baisser les bras. Autres paires : hocher la tête et la secouer, un pas en avant et un pas en arrière, s’accroupir et s’étirer vers le haut. Le premier réflexe, c’est d’imiter ; s’arrêter un instant pour réfléchir aide. Après quelques tours, l’enfant propose le geste et l’adulte fait le contraire (et a le droit de se tromper).",
       "sagen": [
         "Aujourd’hui, on apprend à ne pas se lancer tout de suite, mais à s’arrêter un instant pour réfléchir. On joue au jeu du contraire.",
         "Je lève les bras, et toi, tu fais le contraire. D’abord stop, puis je réfléchis, puis je fais.",
@@ -4090,13 +4090,13 @@
     },
     "fr": {
       "titel": "Combien de plis possibles ?",
-      "text": "L’enfant reçoit une feuille de papier, l’adulte aussi. Ils la plient en deux, puis encore en deux, aussi souvent que possible, et comptent à voix haute. Presque chaque pli est plus difficile que le précédent ; au cinquième ou au sixième, le paquet devient épais et dur à plier, et tous deux l’écrasent avec la paume. Presque aucune feuille ne se plie plus de six ou sept fois, et pourtant chaque pli compte. À la fin, un petit paquet bien dur est posé sur la table.",
+      "text": "L’enfant reçoit une feuille de papier, l’adulte aussi. Ils plient leur feuille en deux, puis encore en deux, aussi souvent que possible, et comptent à voix haute. Presque chaque pli est plus difficile que le précédent ; au cinquième ou au sixième, le paquet devient épais et dur à plier, et tous deux l’écrasent avec la paume. Presque aucune feuille ne se plie plus de six ou sept fois, et pourtant chaque pli compte. À la fin, un petit paquet bien dur est posé sur la table.",
       "sagen": [
         "Aujourd’hui, on s’exerce à persévérer, même quand ça devient plus difficile. On essaie avec une feuille de papier.",
         "Plie-la encore une fois en deux. Tu sens que c’est plus dur maintenant ? Un pli de plus !",
         "Et c’est ce qu’on va faire maintenant : ne pas abandonner quand ça résiste."
       ],
-      "wennEsKippt": "Si un pli devient trop difficile, l’enfant s’arrête au nombre atteint : « Voilà jusqu’où on est arrivés. » S’il s’agace parce que le papier résiste, l’adulte plie sa feuille devant lui et montre comment faire (écraser à plat, repasser avec l’ongle).",
+      "wennEsKippt": "Si un pli devient trop difficile, l’enfant s’arrête au nombre atteint : « Voilà jusqu’où on est arrivés. » Si l’enfant s’agace parce que le papier résiste, l’adulte plie sa feuille en montrant comment faire (écraser à plat, repasser avec l’ongle du pouce).",
       "kurz": "Plier la feuille aussi souvent que possible · compter"
     },
     "kurz": "Papier falten, so oft es geht · laut zählen"
@@ -4161,7 +4161,7 @@
       "text": "L’adulte raconte l’histoire d’une fourmi qui veut rapporter une énorme miette jusqu’à la fourmilière. L’enfant fait marcher son index et son majeur comme une fourmi sur la table et grimper sur son propre poing, qui sert de colline. Quand l’adulte dit « Glisse ! », la fourmi redescend un peu, et l’enfant dit « Encore une fois ! ». À la troisième tentative, la fourmi prend un autre chemin autour de la colline ; à la quatrième, elle arrive en haut. Elle n’y arrive pas parce que c’est facile, mais parce qu’elle continue.",
       "sagen": [
         "Aujourd’hui, on parle de persévérer, même quand ça ne marche pas tout de suite. Voici une petite histoire de fourmi.",
-        "La fourmi grimpe sur la colline… Ouh, elle glisse ! Qu’est-ce qu’elle dit maintenant, à ton avis ?",
+        "La fourmi grimpe sur la colline… Glisse ! Qu’est-ce qu’elle dit maintenant, à ton avis ?",
         "Et c’est ce qu’on va faire maintenant : continuer et réessayer autrement."
       ],
       "wennEsKippt": "Si l’enfant ne veut pas jouer avec les doigts, l’adulte joue la fourmi et l’enfant dit seulement « Encore une fois ! » aux bons moments. Si l’histoire devient trop longue, la fourmi arrive en haut dès la troisième tentative.",
@@ -4294,13 +4294,13 @@
     },
     "fr": {
       "titel": "Deux ânes, une corde",
-      "text": "L’adulte raconte : deux ânes sont attachés par une corde. L’un veut aller au tas de foin à gauche, l’autre au tas de foin à droite. Tous deux tirent, et aucun n’avance. L’enfant joue les ânes avec ses deux mains, qui tirent chacune de leur côté, et cherche ce que les ânes pourraient faire. À la fin, ils montrent la solution avec les mains : d’abord ensemble vers la gauche, puis ensemble vers la droite. Ainsi, les deux ânes sont rassasiés.",
+      "text": "L’adulte raconte : deux ânes sont attachés par une corde. L’un veut aller au tas de foin à gauche, l’autre au tas de foin à droite. Tous deux tirent, et aucun n’avance. L’enfant joue les ânes avec ses deux mains, qui tirent dans des directions opposées, et cherche ce que les ânes pourraient faire. À la fin, l’adulte et l’enfant montrent la solution avec les mains : d’abord ensemble vers la gauche, puis ensemble vers la droite. Ainsi, les deux ânes sont rassasiés.",
       "sagen": [
         "Aujourd’hui, on voit comment réussir quelque chose ensemble. Voici une petite histoire de deux ânes.",
         "Un âne veut aller à gauche, l’autre à droite, et tous les deux tirent. Ils n’avancent pas d’un pas. Que peuvent-ils faire ?",
         "Et c’est ce qu’on va faire maintenant : réussir quelque chose ensemble."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas la solution, l’adulte demande : « Et si les ânes allaient d’abord ensemble vers la gauche ? » S’il ne veut pas jouer avec ses mains, l’adulte continue l’histoire, et l’enfant dit seulement ce que les ânes devraient faire.",
+      "wennEsKippt": "Si l’enfant ne trouve pas la solution, l’adulte demande : « Et si les ânes allaient d’abord ensemble vers la gauche ? » Si l’enfant ne veut pas jouer avec ses mains, l’adulte continue l’histoire, et l’enfant dit seulement ce que les ânes devraient faire.",
       "kurz": "Deux ânes attachés tirent chacun de son côté · solution"
     },
     "kurz": "Zwei Esel am Seil ziehen auseinander · Kind findet die Lösung"
@@ -4364,13 +4364,13 @@
     },
     "fr": {
       "titel": "Phrases-murs, phrases-ponts",
-      "text": "L’adulte explique : dans une dispute, des phrases peuvent faire comme un mur ou comme un pont. L’adulte dit des phrases que Sami pourrait dire à Lea, et l’enfant décide à chaque fois : mur ou pont ? Pour un mur, il empile un cube sur la tour ; pour un pont, il pose un cube à plat dans la rangée du pont. Exemples : « Je ne joue plus jamais avec toi ! » (mur), « Je suis fâché parce que ma tour est tombée. » (pont), « Tu casses toujours tout ! » (mur), « On fait chacun son tour ? » (pont).",
+      "text": "L’adulte explique : dans une dispute, des phrases peuvent faire comme un mur ou comme un pont. L’adulte dit des phrases que Sami pourrait dire à Lea, et l’enfant décide à chaque fois : mur ou pont ? Pour un mur, l’enfant empile un cube sur la tour ; pour un pont, l’enfant pose un cube à plat dans la rangée du pont. Exemples : « Je ne joue plus jamais avec toi ! » (mur), « Je suis fâché parce que ma tour est tombée. » (pont), « Tu casses toujours tout ! » (mur), « On fait chacun son tour ? » (pont).",
       "sagen": [
         "Aujourd’hui, on cherche comment résoudre une dispute. Des phrases peuvent faire comme un mur ou comme un pont.",
         "Sami dit à Lea : « Je ne joue plus jamais avec toi ! » Est-ce un mur ou un pont ? Et « On fait chacun son tour ? »",
         "Et c’est ce qu’on va faire maintenant : résoudre une dispute en construisant des ponts."
       ],
-      "wennEsKippt": "Si l’enfant ne sait pas si une phrase est un mur ou un pont, l’adulte demande : « Après ça, l’autre se rapproche ou il s’en va ? » S’il ne veut pas construire, il dit seulement « mur » ou « pont », et l’adulte pose les cubes.",
+      "wennEsKippt": "Si l’enfant ne sait pas si une phrase est un mur ou un pont, l’adulte demande : « Après ça, l’autre se rapproche ou il s’en va ? » Si l’enfant ne veut pas construire, il dit seulement « mur » ou « pont », et l’adulte pose les cubes.",
       "kurz": "Trier des phrases : mur ou pont · avec des cubes"
     },
     "kurz": "Sätze sortieren: Mauer oder Brücke · mit Bausteinen legen"
@@ -4574,13 +4574,13 @@
     },
     "fr": {
       "titel": "Passe-moi le machin !",
-      "text": "Sur la table, il y a quatre objets, par exemple deux crayons (un long et un court), une cuillère et une gomme. L’adulte joue quelqu’un de très pressé et lance seulement : « Passe-moi le machin, là ! » L’enfant remarque qu’il ne sait pas ce qu’on lui demande et pose la question (« Lequel ? »). Ce n’est que lorsque l’adulte dit « Le long crayon, s’il te plaît » que ça marche. Ensuite, c’est au tour de l’enfant : il lance « Truc ! », et l’adulte demande jusqu’à ce que l’enfant dise clairement ce dont il a besoin.",
+      "text": "Sur la table, il y a quatre objets, par exemple deux crayons (un long et un court), une cuillère et une gomme. L’adulte joue quelqu’un de très pressé et lance seulement : « Passe-moi le machin, là ! » L’enfant remarque qu’il ne sait pas ce qu’on lui demande et pose la question (« Lequel ? »). Ce n’est que lorsque l’adulte dit « Le long crayon, s’il te plaît » que ça marche. Ensuite, c’est au tour de l’enfant : il lance « Machin ! », et l’adulte demande jusqu’à ce que l’enfant dise clairement ce dont il a besoin.",
       "sagen": [
         "Aujourd’hui, on s’exerce à dire clairement ce dont on a besoin et à bien écouter. Je joue quelqu’un qui est très pressé.",
         "Passe-moi le machin, là ! Vite, vite !",
         "Et c’est ce qu’on va faire maintenant : dire ce dont on a besoin et comprendre ce que l’autre veut dire."
       ],
-      "wennEsKippt": "Si l’enfant donne n’importe quoi, l’adulte joue la perplexité gentille (« Hum, ce n’était pas ça, mais je n’ai pas dit ce que je voulais »). S’il n’ose pas demander, l’adulte lui souffle la phrase « Lequel ? ».",
+      "wennEsKippt": "Si l’enfant donne n’importe quoi, l’adulte joue la perplexité gentille (« Hum, ce n’était pas ça, mais je n’ai pas dit ce que je voulais »). Si l’enfant n’ose pas demander, l’adulte lui souffle la phrase « Lequel ? ».",
       "kurz": "« Passe-moi le machin ! » · l’enfant demande · on échange"
     },
     "kurz": "„Gib mir das Dings!“ · Kind fragt nach · dann Rollentausch"
@@ -4644,13 +4644,13 @@
     },
     "fr": {
       "titel": "Pas deux pouces pareils",
-      "text": "L’adulte aplatit un morceau de pâte à modeler en galette, y enfonce fermement le pouce et le retire avec précaution. L’enfant fait la même chose dans sa propre galette. Ils regardent de près les fines lignes : arcs, boucles, tourbillons. Ils comparent les deux empreintes et trouvent des différences. L’adulte révèle : d’après ce qu’on sait, deux empreintes ne sont jamais identiques, même chez de vrais jumeaux. Chacune n’appartient qu’à une seule personne.",
+      "text": "L’adulte aplatit un morceau de pâte à modeler en galette, y enfonce fermement le pouce et le retire avec précaution. L’enfant fait la même chose dans sa propre galette. Ils regardent de près les fines lignes : arcs, boucles, tourbillons. Ils comparent les deux empreintes et trouvent des différences. L’adulte révèle : d’après ce qu’on sait, deux empreintes ne sont jamais identiques, même chez de vrais jumeaux. Une empreinte n’appartient qu’à une seule personne.",
       "sagen": [
         "Aujourd’hui, on parle de ce qui fait de toi quelqu’un d’unique. On commence avec une preuve que tu as toujours sur toi : ton pouce.",
         "Enfonce ton pouce dans la pâte à modeler et regarde les lignes. D’après ce qu’on sait, personne d’autre n’a exactement les mêmes.",
         "Et c’est ce qu’on va faire maintenant : se connaître et s’aimer tel qu’on est, avec tout ce qui nous rend unique."
       ],
-      "wennEsKippt": "Si l’enfant ne voit pas de lignes, il enfonce à nouveau son pouce plus fort, ou l’adulte montre sa propre empreinte. S’il ne veut pas toucher la pâte à modeler, ils regardent seulement leur pouce : on y voit aussi les lignes.",
+      "wennEsKippt": "Si l’enfant ne voit pas de lignes, enfoncer le pouce encore une fois plus fort, ou l’adulte montre sa propre empreinte. Si l’enfant ne veut pas toucher la pâte à modeler, ils regardent seulement leur pouce : on y voit aussi les lignes.",
       "kurz": "Empreinte de pouce dans la pâte à modeler · lignes uniques"
     },
     "kurz": "Daumenabdruck in Knete · Linien vergleichen · nur einmal da"
@@ -4712,13 +4712,13 @@
     },
     "fr": {
       "titel": "Deux façons de se parler",
-      "text": "L’adulte raconte : en dessinant, Sami casse la mine de son crayon et pense deux choses très différentes sur lui-même. D’abord, cela sonne comme une voix grincheuse (l’adulte parle d’un ton bougon) : « Typique ! Ça n’arrive qu’à moi ! » Puis cela sonne comme une voix amie (chaleureuse et calme) : « Oups, ça peut arriver. Je le taille et c’est reparti. » L’enfant dit quelle voix aide le mieux Sami et cherche une autre phrase pour la voix amie. On peut se parler à soi-même comme à un bon ami.",
+      "text": "L’adulte raconte : en dessinant, Sami casse la mine de son crayon et pense deux choses très différentes sur lui-même. D’abord, cela sonne comme une voix grincheuse (l’adulte parle d’un ton bougon) : « Typique ! Ça m’arrive toujours ! » Puis cela sonne comme une voix amie (chaleureuse et calme) : « Oups, ça peut arriver. Je le taille et c’est reparti. » L’enfant dit quelle voix aide le mieux Sami et cherche une autre phrase pour la voix amie. On peut se parler à soi-même comme à un bon ami.",
       "sagen": [
         "Aujourd’hui, on apprend à s’aimer et à se parler gentiment. Sami, lui, pense deux choses très différentes sur lui-même.",
-        "D’abord, Sami grogne contre lui-même : « Typique, ça n’arrive qu’à moi ! » Ensuite, il se parle gentiment : « Oups, ça arrive, je le taille. » Quelle phrase l’aide le plus ?",
+        "D’abord, Sami grogne contre lui-même : « Typique, ça m’arrive toujours ! » Ensuite, il se parle gentiment : « Oups, ça arrive, je le taille. » Quelle phrase l’aide le plus ?",
         "Et c’est ce qu’on va faire maintenant : bien se connaître et s’aimer."
       ],
-      "wennEsKippt": "Si l’enfant ne répond pas, l’adulte rejoue les deux voix et demande seulement : « Laquelle ressemble à un ami ? » S’il ne trouve pas de phrase, l’adulte en propose deux au choix (« La prochaine fois, ça ira mieux », « On a le droit de se tromper »).",
+      "wennEsKippt": "Si l’enfant ne répond pas, l’adulte rejoue les deux voix et demande seulement : « Laquelle ressemble à un ami ? » Si l’enfant ne trouve pas de phrase, l’adulte en propose deux au choix (« La prochaine fois, ça ira mieux », « On a le droit de se tromper »).",
       "kurz": "Voix grincheuse ou voix amie · l’enfant choisit une phrase"
     },
     "kurz": "Meckerstimme oder Freundstimme · Kind wählt, sucht Satz"
