@@ -1,1 +1,686 @@
-{}
+{
+ "V-1": {
+  "de": "Ich zeige, dass ich etwas sehe, höre oder spüre.",
+  "fr": "Je montre que je vois, entends ou sens quelque chose."
+ },
+ "V-2": {
+  "de": "Ich drehe mich zu dem hin, was ich höre oder sehe.",
+  "fr": "Je me tourne vers ce que j’entends ou ce que je vois."
+ },
+ "V-3": {
+  "de": "Ich schaue oder höre eine kleine Weile genau hin.",
+  "fr": "Je regarde ou j’écoute avec attention un petit moment."
+ },
+ "V-4": {
+  "de": "Ich bewege mich von selbst, wenn um mich etwas passiert.",
+  "fr": "Je bouge de moi-même quand il se passe quelque chose."
+ },
+ "V-5": {
+  "de": "Wenn jemand mit mir spricht oder spielt, mache ich mit.",
+  "fr": "Quand on me parle ou joue avec moi, je réponds par un geste."
+ },
+ "V-6": {
+  "de": "Ich lerne, Dinge im Alltag selbst zu machen.",
+  "fr": "J’apprends à faire moi-même les gestes de tous les jours."
+ },
+ "V-7": {
+  "de": "Ich probiere Spielsachen von selbst aus.",
+  "fr": "J’essaie les jouets et le matériel de moi-même."
+ },
+ "V-8": {
+  "de": "Ich weiß, was bei uns immer als Nächstes kommt.",
+  "fr": "Je sais ce qui vient ensuite, comme chaque jour."
+ },
+ "V-9": {
+  "de": "Ich gehe richtig mit Spielsachen um.",
+  "fr": "J’utilise les jeux et les jouets comme il faut."
+ },
+ "V-10": {
+  "de": "Ich warte von allein, auch wenn es etwas dauert.",
+  "fr": "J’attends de moi-même, même si ça dure un peu."
+ },
+ "V-11": {
+  "de": "Ich sitze am Tisch und mache mit.",
+  "fr": "Je reste à ma place et je participe."
+ },
+ "V-12": {
+  "de": "Ich mache mit, wenn wir uns bewegen.",
+  "fr": "Je participe quand on bouge ensemble."
+ },
+ "V-13": {
+  "de": "Ich mache von selbst mit, wenn wir etwas tun.",
+  "fr": "Je participe de moi-même à ce que nous faisons."
+ },
+ "V-14": {
+  "de": "Ich freue mich über Lob und bleibe dabei ruhig.",
+  "fr": "Je me réjouis d’un compliment et je reste calme."
+ },
+ "V-15": {
+  "de": "Ich mache eine kurze Aufgabe allein fertig.",
+  "fr": "Je termine une petite tâche par moi-même."
+ },
+ "V-16": {
+  "de": "Ich weiß, was ich tun soll und was nicht.",
+  "fr": "Je sais ce que je dois faire ou ne pas faire."
+ },
+ "V-17": {
+  "de": "Ich sage, warum es Regeln gibt.",
+  "fr": "Je dis pourquoi il y a des règles."
+ },
+ "V-18": {
+  "de": "Ich sage, was ich anders machen könnte.",
+  "fr": "Je dis ce que je pourrais faire autrement."
+ },
+ "V-19": {
+  "de": "Ich akzeptiere, was die anderen Kinder entscheiden.",
+  "fr": "J’accepte ce que les autres enfants ont décidé."
+ },
+ "V-20": {
+  "de": "Ich mache das Richtige, auch wenn andere Unsinn machen.",
+  "fr": "Je fais ce qui est bien, même si d’autres font des bêtises."
+ },
+ "V-21": {
+  "de": "Ich halte kurz an, bevor ich etwas tue.",
+  "fr": "Je m’arrête un instant avant d’agir."
+ },
+ "V-22": {
+  "de": "Ich merke, wo ich mich schon verbessert habe.",
+  "fr": "Je remarque où j’ai déjà fait des progrès."
+ },
+ "V-23": {
+  "de": "Wenn sich etwas ändert, komme ich damit klar.",
+  "fr": "Quand quelque chose change, je m’adapte."
+ },
+ "V-24": {
+  "de": "Ich probiere Neues aus und bleibe dabei ruhig.",
+  "fr": "J’essaie des choses nouvelles et je reste calme."
+ },
+ "V-25": {
+  "de": "Ich mache es anders, so wie wir es geübt haben.",
+  "fr": "Je fais autrement, comme nous l’avons appris ensemble."
+ },
+ "V-26": {
+  "de": "Ich bleibe ruhig, wenn mich jemand ärgert.",
+  "fr": "Je reste calme quand quelqu’un m’embête."
+ },
+ "V-27": {
+  "de": "Ich stehe dazu, wenn ich etwas falsch gemacht habe.",
+  "fr": "Je reconnais quand j’ai fait une bêtise."
+ },
+ "V-28": {
+  "de": "Wenn es ein Problem gibt, sage ich, was wir tun könnten.",
+  "fr": "S’il y a un problème, je propose une solution."
+ },
+ "V-29": {
+  "de": "Ich übe eine neue gute Gewohnheit.",
+  "fr": "Je prends une nouvelle bonne habitude."
+ },
+ "V-30": {
+  "de": "Ich suche mir eine gute Rolle bei den anderen Kindern.",
+  "fr": "Je me trouve un bon rôle parmi les autres enfants."
+ },
+ "V-31": {
+  "de": "Ich verstehe, warum es Regeln und Gesetze gibt.",
+  "fr": "Je comprends pourquoi il y a des règles et des lois."
+ },
+ "V-32": {
+  "de": "Ich halte mich an Regeln, damit es allen gut geht.",
+  "fr": "Je respecte les règles pour bien vivre ensemble."
+ },
+ "V-33": {
+  "de": "Ich überlege, was los ist, und finde selbst eine Lösung.",
+  "fr": "Je réfléchis à ce qui se passe et je trouve une solution."
+ },
+ "K-1": {
+  "de": "Ich mache Laute mit meiner Stimme.",
+  "fr": "Je fais des sons avec ma voix."
+ },
+ "K-2": {
+  "de": "Ich schaue die Person an, die mit mir spricht.",
+  "fr": "Je regarde la personne qui me parle."
+ },
+ "K-3": {
+  "de": "Ich reagiere, wenn mich jemand anspricht.",
+  "fr": "Je réagis quand quelqu’un me parle."
+ },
+ "K-4": {
+  "de": "Wenn man mich fragt, antworte ich mit Lauten oder Wörtern.",
+  "fr": "Je réponds avec un son ou un mot quand on me demande."
+ },
+ "K-5": {
+  "de": "Ich sage von mir aus etwas, ohne dass man mich fragt.",
+  "fr": "Je parle de moi-même, sans qu’on me demande."
+ },
+ "K-6": {
+  "de": "Ich sage einem Erwachsenen, was ich möchte.",
+  "fr": "Je dis à un adulte ce que je veux."
+ },
+ "K-7": {
+  "de": "Ich spreche mit einem anderen Kind, wenn ich etwas möchte.",
+  "fr": "Je parle à un autre enfant quand je veux quelque chose."
+ },
+ "K-8": {
+  "de": "Ich setze Wörter zu einem Satz zusammen.",
+  "fr": "Je mets des mots ensemble pour faire une phrase."
+ },
+ "K-9": {
+  "de": "Ich antworte genau auf das, was man mich fragt.",
+  "fr": "Je réponds à ce qu’on me demande."
+ },
+ "K-10": {
+  "de": "Ich verstehe viele Wörter und lerne neue dazu.",
+  "fr": "Je comprends beaucoup de mots et j’en apprends d’autres."
+ },
+ "K-11": {
+  "de": "Ich sage mit passenden Worten, was ich möchte.",
+  "fr": "Je dis avec les bons mots ce que je veux."
+ },
+ "K-12": {
+  "de": "Ich erzähle einem Erwachsenen etwas und frage ihn etwas.",
+  "fr": "Je raconte et je demande des choses à un adulte."
+ },
+ "K-13": {
+  "de": "Ich sage, wie ich bin und wie andere sind.",
+  "fr": "Je dis comment je suis et comment sont les autres."
+ },
+ "K-14": {
+  "de": "Ich erzähle einem anderen Kind etwas und frage es etwas.",
+  "fr": "Je raconte et je demande des choses à un autre enfant."
+ },
+ "K-15": {
+  "de": "Ich erzähle von etwas, das ich erlebt habe.",
+  "fr": "Je raconte quelque chose que j’ai vécu."
+ },
+ "K-16": {
+  "de": "Ich zeige meine Gefühle, ohne jemandem wehzutun.",
+  "fr": "Je montre mes émotions sans faire de mal aux autres."
+ },
+ "K-17": {
+  "de": "Ich rede mit, wenn mehrere miteinander sprechen.",
+  "fr": "Je participe quand plusieurs personnes discutent."
+ },
+ "K-18": {
+  "de": "Ich bin stolz auf das, was ich geschafft habe.",
+  "fr": "Je montre ce que j’ai réussi."
+ },
+ "K-19": {
+  "de": "Ich sage, was für ein Kind ich bin.",
+  "fr": "Je dis quel genre d’enfant je suis."
+ },
+ "K-20": {
+  "de": "Ich sage freundlich, wie andere sind.",
+  "fr": "Je décris les autres avec gentillesse."
+ },
+ "K-21": {
+  "de": "Ich erkenne, ob jemand froh oder traurig ist.",
+  "fr": "Je remarque comment les autres se sentent."
+ },
+ "K-22": {
+  "de": "Ich bin stolz auf das, was wir zusammen geschafft haben.",
+  "fr": "Je me réjouis de ce que nous avons réussi ensemble."
+ },
+ "K-23": {
+  "de": "Ich zeige meine Gefühle mit Malen, Musik oder Tanz.",
+  "fr": "Je montre mes émotions par le dessin, le chant ou la danse."
+ },
+ "K-24": {
+  "de": "Ich merke, was ich schon besser kann als früher.",
+  "fr": "Je remarque ce que je sais mieux faire qu’avant."
+ },
+ "K-25": {
+  "de": "Ich erkläre, wie andere auf das reagieren, was ich tue.",
+  "fr": "J’explique comment les autres réagissent à ce que je fais."
+ },
+ "K-26": {
+  "de": "Ich sage mit Worten, wie es mir geht.",
+  "fr": "Je dis avec des mots comment je me sens."
+ },
+ "K-27": {
+  "de": "Ich spreche nett mit anderen, damit wir Freunde werden.",
+  "fr": "Je parle gentiment aux autres pour que nous devenions amis."
+ },
+ "K-28": {
+  "de": "Ich lobe andere und mache ihnen Mut.",
+  "fr": "Je félicite les autres et je les encourage."
+ },
+ "K-29": {
+  "de": "Ich sage, warum etwas passiert und was danach kommt.",
+  "fr": "Je dis pourquoi ça arrive et ce qui se passe après."
+ },
+ "K-30": {
+  "de": "Ich erkläre auch schwierige Dinge mit meinen Worten.",
+  "fr": "J’explique aussi des choses difficiles avec mes mots."
+ },
+ "K-31": {
+  "de": "Ich finde Worte, die einen Streit beruhigen.",
+  "fr": "Je trouve des mots qui calment une dispute."
+ },
+ "K-32": {
+  "de": "Ich sehe, was andere beitragen, und sage Danke.",
+  "fr": "Je vois ce que les autres apportent et je les remercie."
+ },
+ "K-33": {
+  "de": "Ich sage, dass Menschen aus verschiedenen Gründen etwas tun.",
+  "fr": "Je dis que les gens agissent pour des raisons différentes."
+ },
+ "K-34": {
+  "de": "Ich sage, was mir wichtig ist.",
+  "fr": "Je dis ce qui est important pour moi."
+ },
+ "K-35": {
+  "de": "Ich kümmere mich um meine Freunde.",
+  "fr": "Je prends soin de mes amitiés."
+ },
+ "SOZ-1": {
+  "de": "Ich merke, wenn jemand bei mir ist.",
+  "fr": "Je remarque quand quelqu’un est près de moi."
+ },
+ "SOZ-2": {
+  "de": "Ich schaue zu, was andere machen.",
+  "fr": "Je regarde ce que font les autres."
+ },
+ "SOZ-3": {
+  "de": "Ich schaue hin, wenn jemand meinen Namen sagt.",
+  "fr": "Je me tourne quand quelqu’un dit mon prénom."
+ },
+ "SOZ-4": {
+  "de": "Ich spiele für mich allein, was mir Spaß macht.",
+  "fr": "Je joue par moi-même avec ce qui me plaît."
+ },
+ "SOZ-5": {
+  "de": "Ich zeige ohne Worte, was ich möchte.",
+  "fr": "Je montre sans mots ce que je veux, avec des gestes."
+ },
+ "SOZ-6": {
+  "de": "Wenn mich jemand ruft, komme ich.",
+  "fr": "Quand on m’appelle, je viens."
+ },
+ "SOZ-7": {
+  "de": "Ich tue, worum man mich bittet.",
+  "fr": "Je fais ce qu’on me demande."
+ },
+ "SOZ-8": {
+  "de": "Ich spreche mit einem Erwachsenen, wenn ich etwas möchte.",
+  "fr": "Je parle à un adulte quand je veux quelque chose."
+ },
+ "SOZ-9": {
+  "de": "Ich spreche von mir und weiß, wer ich bin.",
+  "fr": "Je parle de moi et je sais qui je suis."
+ },
+ "SOZ-10": {
+  "de": "Ich spiele neben anderen Kindern mit meinem eigenen Spiel.",
+  "fr": "Je joue à côté d’autres enfants avec mon propre jeu."
+ },
+ "SOZ-11": {
+  "de": "Ich sage einem anderen Kind, was ich möchte.",
+  "fr": "Je dis à un autre enfant ce que je veux."
+ },
+ "SOZ-12": {
+  "de": "Ich gehe von mir aus auf Erwachsene zu.",
+  "fr": "Je vais de moi-même vers les adultes."
+ },
+ "SOZ-13": {
+  "de": "Ich denke mir ein Spiel mit Fantasie aus.",
+  "fr": "J’invente un jeu avec mon imagination."
+ },
+ "SOZ-14": {
+  "de": "Ich warte von selbst, bis ich an der Reihe bin.",
+  "fr": "J’attends mon tour."
+ },
+ "SOZ-15": {
+  "de": "Ich gehe freundlich auf andere Kinder zu.",
+  "fr": "Je vais vers les autres enfants avec gentillesse."
+ },
+ "SOZ-16": {
+  "de": "Ich teile meine Sachen mit anderen.",
+  "fr": "Je partage mes affaires avec les autres."
+ },
+ "SOZ-17": {
+  "de": "Ich spiele mit anderen Kindern zusammen.",
+  "fr": "Je joue avec d’autres enfants."
+ },
+ "SOZ-18": {
+  "de": "Ich arbeite mit einem anderen Kind zusammen.",
+  "fr": "Je travaille avec un autre enfant."
+ },
+ "SOZ-19": {
+  "de": "Ich wechsle mich mit anderen ab und teile.",
+  "fr": "Je partage et je joue à tour de rôle avec les autres."
+ },
+ "SOZ-20": {
+  "de": "Ich mache nach, was andere gut machen.",
+  "fr": "Je reprends ce que les autres font de bien."
+ },
+ "SOZ-21": {
+  "de": "Ich sage, was ich von dem halte, was passiert ist.",
+  "fr": "Je dis ce que je pense de ce qui s’est passé."
+ },
+ "SOZ-22": {
+  "de": "Ich zeige anderen, wie es geht, und sage, was wir tun.",
+  "fr": "Je montre aux autres comment faire et je dis quoi faire."
+ },
+ "SOZ-23": {
+  "de": "Ich nehme einen Vorschlag von einem anderen Kind an.",
+  "fr": "J’accepte la proposition d’un autre enfant."
+ },
+ "SOZ-24": {
+  "de": "Ich erzähle der Reihe nach, was ich erlebt habe.",
+  "fr": "Je raconte dans l’ordre ce que j’ai vécu."
+ },
+ "SOZ-25": {
+  "de": "Ich gehe auf ein Kind zu, das ich besonders mag.",
+  "fr": "Je vais vers un enfant que j’aime bien."
+ },
+ "SOZ-26": {
+  "de": "Ich frage ein anderes Kind um Hilfe.",
+  "fr": "Je demande de l’aide à un autre enfant."
+ },
+ "SOZ-27": {
+  "de": "Ich erinnere andere nett an unsere Regeln.",
+  "fr": "Je rappelle gentiment nos règles aux autres."
+ },
+ "SOZ-28": {
+  "de": "Ich habe ein Vorbild, von dem ich etwas lerne.",
+  "fr": "Je prends exemple sur quelqu’un que j’admire."
+ },
+ "SOZ-29": {
+  "de": "Ich erzähle, was wir zusammen erlebt haben.",
+  "fr": "Je raconte ce que nous avons vécu ensemble."
+ },
+ "SOZ-30": {
+  "de": "Ich mache einen Vorschlag, was wir zusammen tun können.",
+  "fr": "Je propose ce que nous pouvons faire ensemble."
+ },
+ "SOZ-31": {
+  "de": "Ich sehe, dass wir alle verschieden sind.",
+  "fr": "Je vois que nous sommes tous différents."
+ },
+ "SOZ-32": {
+  "de": "Ich höre anderen zu und achte ihre Meinung.",
+  "fr": "J’écoute les autres et je respecte leur avis."
+ },
+ "SOZ-33": {
+  "de": "Ich frage andere, was sie darüber denken.",
+  "fr": "Je demande aux autres ce qu’ils en pensent."
+ },
+ "SOZ-34": {
+  "de": "Wenn es Streit gibt, mache ich einen guten Vorschlag.",
+  "fr": "S’il y a une dispute, je fais une bonne proposition."
+ },
+ "SOZ-35": {
+  "de": "Ich weiß, dass nicht jedem dasselbe wichtig ist.",
+  "fr": "Je sais que ce qui compte n’est pas pareil pour tous."
+ },
+ "SOZ-36": {
+  "de": "Nach einem Erlebnis mit anderen überlege ich, was ich lerne.",
+  "fr": "Je tire une leçon de ce que je vis avec les autres."
+ },
+ "SOZ-37": {
+  "de": "Ich verstehe, wie es anderen geht.",
+  "fr": "Je comprends ce que ressentent les autres."
+ },
+ "SOZ-38": {
+  "de": "Beim gemeinsamen Spiel übernehme ich verschiedene Rollen.",
+  "fr": "Dans un jeu à plusieurs, je prends différents rôles."
+ },
+ "SOZ-39": {
+  "de": "Ich entscheide mich nach dem, was mir wichtig ist.",
+  "fr": "Je décide selon ce qui est important pour moi."
+ },
+ "SOZ-40": {
+  "de": "Ich weiß, was ich gut kann und was ich noch üben muss.",
+  "fr": "Je sais ce que je fais bien et ce qui reste à apprendre."
+ },
+ "SOZ-41": {
+  "de": "Ich baue Freundschaften auf, die lange halten.",
+  "fr": "Je construis des amitiés qui durent."
+ },
+ "KOG-1": {
+  "de": "Ich reagiere, wenn ich etwas sehe, höre oder spüre.",
+  "fr": "Je réagis à ce que je vois, entends ou ressens."
+ },
+ "KOG-2": {
+  "de": "Ich achte einen Moment lang auf eine Sache.",
+  "fr": "Je fais attention à une chose pendant un moment."
+ },
+ "KOG-3": {
+  "de": "Ich erkenne bekannte Menschen und Dinge wieder.",
+  "fr": "Je reconnais les personnes et les choses que je connais."
+ },
+ "KOG-4": {
+  "de": "Ich mache nacheinander, was man mir sagt.",
+  "fr": "Je fais l’une après l’autre les choses qu’on me demande."
+ },
+ "KOG-5": {
+  "de": "Ich mache einfache Dinge nach, die man mir vormacht.",
+  "fr": "Je refais des gestes simples qu’on me montre."
+ },
+ "KOG-6": {
+  "de": "Ich mache einfache Bewegungen mit meinem Körper.",
+  "fr": "Je fais des mouvements simples avec mon corps."
+ },
+ "KOG-7": {
+  "de": "Ich verstehe, wie bekannte Dinge heißen.",
+  "fr": "Je comprends le nom des choses que je connais."
+ },
+ "KOG-8": {
+  "de": "Ich antworte mit Lauten oder Wörtern auf Fragen.",
+  "fr": "Je réponds par des sons ou des mots aux questions."
+ },
+ "KOG-9": {
+  "de": "Ich sage von selbst Wörter, ohne dass man mich fragt.",
+  "fr": "J’utilise des mots de moi-même, sans qu’on me le demande."
+ },
+ "KOG-10": {
+  "de": "Ich erkenne Formen und ordne sie zu.",
+  "fr": "Je reconnais les formes et je les associe."
+ },
+ "KOG-11": {
+  "de": "Ich zeige und benenne Teile von meinem Körper.",
+  "fr": "Je montre les parties de mon corps et je les nomme."
+ },
+ "KOG-12": {
+  "de": "Ich finde kleine Einzelheiten in Bildern.",
+  "fr": "Je trouve des détails dans les images."
+ },
+ "KOG-13": {
+  "de": "Ich sortiere Dinge nach dem, was sie gemeinsam haben.",
+  "fr": "Je trie les choses selon ce qu’elles ont en commun."
+ },
+ "KOG-14": {
+  "de": "Ich sage, was auf einem Bild zu sehen ist.",
+  "fr": "Je dis ce que je vois sur une image."
+ },
+ "KOG-15": {
+  "de": "Ich weiß, wofür man Dinge braucht.",
+  "fr": "Je sais à quoi servent les choses."
+ },
+ "KOG-16": {
+  "de": "Ich bewege mich sicher, zum Beispiel beim Rennen.",
+  "fr": "Je bouge avec assurance, par exemple en courant."
+ },
+ "KOG-17": {
+  "de": "Ich finde gleiche Bilder und lege sie zusammen.",
+  "fr": "Je trouve des images identiques et je les associe."
+ },
+ "KOG-18": {
+  "de": "Ich mache kleine, genaue Bewegungen mit den Fingern.",
+  "fr": "Je fais de petits mouvements précis avec mes doigts."
+ },
+ "KOG-19": {
+  "de": "Ich finde, was anders ist als die anderen.",
+  "fr": "Je trouve ce qui est différent des autres."
+ },
+ "KOG-20": {
+  "de": "Ich kenne Gegenteile, zum Beispiel groß und klein.",
+  "fr": "Je connais des contraires, comme grand et petit."
+ },
+ "KOG-21": {
+  "de": "Ich lege Dinge zusammen, die zur selben Sorte gehören.",
+  "fr": "Je range ensemble les choses de la même sorte."
+ },
+ "KOG-22": {
+  "de": "Ich zähle bis 4, um zu sagen, wie viele es sind.",
+  "fr": "Je compte jusqu’à 4 pour dire combien il y en a."
+ },
+ "KOG-23": {
+  "de": "Ich kenne Farben und Formen und sage, wie sie heißen.",
+  "fr": "Je reconnais les couleurs et les formes et je les nomme."
+ },
+ "KOG-24": {
+  "de": "Ich wechsle von einer Aufgabe zur nächsten.",
+  "fr": "Je passe d’une tâche à une autre."
+ },
+ "KOG-25": {
+  "de": "Ich zähle bis 10.",
+  "fr": "Je compte jusqu’à 10."
+ },
+ "KOG-26": {
+  "de": "Ich mache etwas mit den Händen und schaue genau hin.",
+  "fr": "Je fais quelque chose avec mes mains en regardant bien."
+ },
+ "KOG-27": {
+  "de": "Ich weiß, was eine Zahl ist und was ein Buchstabe.",
+  "fr": "Je fais la différence entre un chiffre et une lettre."
+ },
+ "KOG-28": {
+  "de": "Ich bewege mich geschickt, zum Beispiel beim Hüpfen.",
+  "fr": "Je bouge avec adresse, par exemple en sautant."
+ },
+ "KOG-29": {
+  "de": "Ich sehe auf einen Blick, wie viele es sind, bis 5.",
+  "fr": "Je vois d’un coup d’œil combien il y en a, jusqu’à 5."
+ },
+ "KOG-30": {
+  "de": "Ich sage Lieder oder Reime auswendig auf.",
+  "fr": "Je récite par cœur des chansons ou des comptines."
+ },
+ "KOG-31": {
+  "de": "Ich lege Bilder in die richtige Reihenfolge.",
+  "fr": "Je mets des images dans le bon ordre."
+ },
+ "KOG-32": {
+  "de": "Ich arbeite mit den Händen ganz genau.",
+  "fr": "Je travaille de mes mains avec précision."
+ },
+ "KOG-33": {
+  "de": "Ich bewege meinen ganzen Körper sicher und geschickt.",
+  "fr": "Je bouge tout mon corps avec assurance et adresse."
+ },
+ "KOG-34": {
+  "de": "Ich lese einfache Wörter.",
+  "fr": "Je lis des mots simples."
+ },
+ "KOG-35": {
+  "de": "Ich erkenne und schreibe die Zahlen bis 10.",
+  "fr": "Je reconnais et j’écris les nombres jusqu’à 10."
+ },
+ "KOG-36": {
+  "de": "Ich schreibe einfache Wörter.",
+  "fr": "J’écris des mots simples."
+ },
+ "KOG-37": {
+  "de": "Ich verstehe eine Geschichte, die ich höre.",
+  "fr": "Je comprends une histoire que j’entends."
+ },
+ "KOG-38": {
+  "de": "Ich sage, warum ein anderer etwas getan hat.",
+  "fr": "J’explique pourquoi quelqu’un a fait quelque chose."
+ },
+ "KOG-39": {
+  "de": "Ich verstehe die Sätze, die ich lese.",
+  "fr": "Je comprends les phrases que je lis."
+ },
+ "KOG-40": {
+  "de": "Ich rechne Plus und Minus bis 9.",
+  "fr": "Je fais des additions et des soustractions jusqu’à 9."
+ },
+ "KOG-41": {
+  "de": "Ich merke, wenn etwas nicht stimmen kann.",
+  "fr": "Je remarque quand quelque chose n’est pas logique."
+ },
+ "KOG-42": {
+  "de": "Ich schreibe meine Antwort in einem ganzen Satz.",
+  "fr": "J’écris mes réponses en phrases complètes."
+ },
+ "KOG-43": {
+  "de": "Ich kann bei Sport- und Bewegungsspielen gut mitmachen.",
+  "fr": "Je participe bien aux jeux de sport et de mouvement."
+ },
+ "KOG-44": {
+  "de": "Ich schreibe meine eigenen Sätze.",
+  "fr": "J’écris mes propres phrases."
+ },
+ "KOG-45": {
+  "de": "Ich rechne mit Uhrzeit und Geld.",
+  "fr": "Je calcule avec l’heure et l’argent."
+ },
+ "KOG-46": {
+  "de": "Ich kenne Maße wie Meter, Kilo und Liter.",
+  "fr": "Je connais des mesures comme le mètre, le kilo et le litre."
+ },
+ "KOG-47": {
+  "de": "Ich lese etwas und erzähle es mit eigenen Worten.",
+  "fr": "Je lis un texte et je le raconte avec mes mots."
+ },
+ "KOG-48": {
+  "de": "Ich rechne mit größeren Zahlen.",
+  "fr": "Je calcule avec de plus grands nombres."
+ },
+ "KOG-49": {
+  "de": "Ich schreibe auf, was ich anderen mitteilen will.",
+  "fr": "J’écris pour dire quelque chose aux autres."
+ },
+ "KOG-50": {
+  "de": "Ich löse Mal- und Geteiltaufgaben bis 100.",
+  "fr": "Je fais des multiplications et des divisions jusqu’à 100."
+ },
+ "KOG-51": {
+  "de": "Ich lese, um etwas Neues zu lernen.",
+  "fr": "Je lis pour apprendre des choses nouvelles."
+ },
+ "KOG-52": {
+  "de": "Ich rechne mit Geld bis 10 Euro.",
+  "fr": "Je calcule avec de l’argent jusqu’à 10 euros."
+ },
+ "KOG-53": {
+  "de": "Ich verstehe die Figuren in Geschichten.",
+  "fr": "Je comprends les personnages des histoires."
+ },
+ "KOG-54": {
+  "de": "Ich achte auf die richtige Grammatik.",
+  "fr": "Je fais attention à la grammaire."
+ },
+ "KOG-55": {
+  "de": "Ich merke, dass anderen manchmal etwas anderes wichtig ist.",
+  "fr": "Je remarque que ce qui compte change selon les personnes."
+ },
+ "KOG-56": {
+  "de": "Ich löse knifflige Denkaufgaben.",
+  "fr": "Je résous des problèmes de logique."
+ },
+ "KOG-57": {
+  "de": "Ich will wissen, was gerade in der Welt passiert.",
+  "fr": "Je veux savoir ce qui se passe dans le monde."
+ },
+ "KOG-58": {
+  "de": "Ich weiß, was stimmt und was nur eine Meinung ist.",
+  "fr": "Je fais la différence entre un fait et un avis."
+ },
+ "KOG-59": {
+  "de": "Ich merke, wenn jemand etwas sagt und das Gegenteil tut.",
+  "fr": "Je repère quand quelqu’un fait le contraire de ce qu’il dit."
+ },
+ "KOG-60": {
+  "de": "Ich löse schwierige Textaufgaben.",
+  "fr": "Je résous des problèmes de maths difficiles."
+ },
+ "KOG-61": {
+  "de": "Ich löse eine Aufgabe, indem ich gut nachdenke.",
+  "fr": "Je résous un problème en réfléchissant."
+ },
+ "KOG-62": {
+  "de": "Ich nutze mein Wissen im Alltag.",
+  "fr": "J’utilise ce que je sais dans la vie de tous les jours."
+ }
+}
