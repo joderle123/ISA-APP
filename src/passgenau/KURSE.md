@@ -20,6 +20,9 @@ Verlag an der Ruhr) – fachlich fundiert, konkret, ruhig, in der Sprache der Ki
 - Das Blatt der Sitzung bleibt ganz (nur bei wenig Schreiben gekürzt, außer bei der bildgestützten Variante).
 - Die Stunde: Ankommen (Ritual, 2–3 Min.) · Einstieg (2–4) · **Kern = die Kurs-Sitzung (10–14)** · Blatt (8) · Abschluss
   (Ritual, 3–4). Der Kern-Text beschreibt nur den Kern; was am Blatt geschieht, steht in `uebungsblatt.anleitung`.
+- **Tausch-Übungen** (Abschnitt 4a): je Sitzung zwei weitere Kern-Übungen mit anderer Methode. Der Planer nimmt sie nie von
+  selbst; die Fachkraft wählt sie unter „Andere Übung“ (gleich nach der anderen Variante). Blatt, Anleitung und Auftrag
+  bleiben die der Variante (`PlanSchritt.blattVon`).
 
 ## 2. Aufbau eines Kurses
 
@@ -105,9 +108,13 @@ Mal gleich, freiwillig, 1–3 Minuten, mit der Leitfigur verbunden; das Abschlus
   `zeichnen` (Höhe in mm; auf Kursblättern ab `hoehe: 32` ≈ 3 cm, ohne Angabe gut 4 cm), `minibuch` und `schneiden_kleben` (fast eine ganze Seite) – auf einem 1-Seiten-Blatt höchstens
   einer davon, das Minibuch gar nicht (das Ich-Buch entsteht aus den Blättern selbst und wird in Sitzung 6 gebunden).
 - **Bilder nur aus dem Bestand:** `motiv:<name>` (Liste: `MOTIV_NAMEN` in `src/blatt/motive.ts`), `figur:<name>[:<gefühl>[:<pose>]]`
-  mit Namen mia, noah, lea, sami, amira, tom, jana, ben (Gefühle wie bei `gefuehle`, Posen stehen, winken, verschraenkt,
-  zeigen, jubeln, melden, stopp, haende-gesicht, geben), `gesicht:<gefühl>`, `icon:<name>` (`src/blatt/bilder/icons.json`).
-  Kinderfiguren auf Jugendblättern sparsam (Jugend-Gestaltung: ruhig, sachlich).
+  – Kinder mia, noah, lea, sami, amira, tom; Jugendliche (ab 10) jana, ben, lina, yusuf, chloe, nele (Rollstuhl), finn
+  (Hörgerät); Erwachsene lehrerin, lehrer, mutter, vater, verkaeuferin, arzthelferin, chef (Gefühle wie bei `gefuehle`,
+  Posen stehen, winken, verschraenkt, zeigen, jubeln, melden, stopp, haende-gesicht, geben, handy, sitzen, gehen,
+  nachdenken, abwenden) –, `szene:<name>` (pausenhof, klassenzimmer, bus, kueche, kinderzimmer, park, flur, kantine,
+  umkleide, chat), `gesicht:<gefühl>`, `icon:<name>` (`src/blatt/bilder/icons.json`). Wachsende Motive: `turm-1` … `-5`,
+  `blume-1` … `-5`, `rucksack-1` … `-5`, `insel-1` … `-5`, `werkzeugkiste-1` … `-5`, `bruecke-1` … `-5`, `kresse-1` … `-3`.
+  Kinderfiguren auf Jugendblättern sparsam (Jugend-Gestaltung: ruhig, sachlich); Einzelheiten in `src/blatt/BLATT-STIL.md` §4.
 - **Anleitung** (`uebungsblatt.anleitung`): welche Aufgabe gemeinsam, welche allein, was die Fachkraft fragt (`sagen`), was hilft,
   wenn Schreiben oder Lesen schwerfällt (`wennEsKippt`).
 - Keine Codes, Testkürzel, „Sitzung 3“, „Einheit“, „Modul“ auf dem Kinderblatt; Nummer der Spur/Stufe des Modells ist gut.
@@ -120,6 +127,43 @@ Mal gleich, freiwillig, 1–3 Minuten, mit der Leitfigur verbunden; das Abschlus
   Blatt). Darum nicht in `text` oder `sagen` schreiben; das Blatt endet aber immer mit einem klaren kleinen Auftrag.
 - **Hintergrund für die Fachkraft:** je Kurs in `src/data/passgenau/kurs-hintergrund.json` (warum es wirkt, Achtung, Quellen;
   DE und FR) – steht auf dem Deckblatt der Kurs-Mappe.
+
+## 4a. Tausch-Übungen (austauschbare Bausteine)
+
+Je Sitzung **zwei Tausch-Übungen** (`-t1`, `-t2`): dieselbe Sitzung – dasselbe Werkzeug, dieselbe Leitfigur, derselbe
+rote Faden, dieselben Begriffe und Beispielfiguren –, aber mit einer **anderen Methode**. Wofür: ein Kind, dem die Methode
+der Variante nicht liegt (mag kein Rollenspiel, braucht Bewegung, ist heute müde), eine zweite Runde derselben Sitzung oder
+einfach Abwechslung. Das Blatt der Variante bleibt: Was auf dem Blatt vorkommt (Begriffe, Beispiele, Figuren, Skala), muss
+auch in der Tausch-Übung vorkommen, damit das Blatt danach genauso passt. Vorbild: `ki:kurs-gefuehle-7-9-s2-t1` (Statuen-Rätsel
+statt Pantomime hinter dem Blatt) und `-s2-t2` (Hinweis-Karten sortieren).
+
+```
+id            "ki:kurs-<thema>-<von>-<bis>-s<nr>-t1" bzw. "-t2"
+tausch        true            · kein uebungsblatt
+gleich wie -a quelle, rolle, bogen, thema, eldib, kompetenz, alter, dauer, sozialform, einzeltauglich, werkzeug, uebertragbar,
+              qualitaet, linie (id, nr, faden), ort  (tmp/auftraege/tausch-einfuegen.py übernimmt sie aus -a)
+titel         derselbe Anfang wie die Variante („Spur 2: …“, „Werkzeug 3: …“), dann der Name der Methode („Das Statuen-Rätsel“)
+text          4–7 Sätze, nur der Kern: der erste Satz knüpft wie in der Variante an die letzte Sitzung an; dann die Methode
+              Schritt für Schritt, mit Rollentausch, und zum Schluss derselbe Merksatz wie in der Variante. Nie „Blatt“ im
+              Sinn von Arbeitsblatt (der Planer hält die Übung sonst für einen Blattverweis und lässt sie weg).
+sagen         2–4 wörtliche Sätze · wennEsKippt 1–3 Sätze · imSpiel { de, fr } · fr { titel, text, sagen, wennEsKippt }
+format        mindestens ein Format, das keine Variante der Sitzung hat; t1 und t2 unterscheiden sich auch untereinander
+              (z. B. t1 bewegt – Spiel, Bewegung, Statuen, Ball –, t2 ruhig – Karten, Malen, Bauen, Figuren, Gespräch)
+material      nur aus inhalte/material.json, nur Alltägliches (papier, stifte, karten, ball, wuerfel, becher, knete, bausteine …)
+zugang        was die Methode verlangt: meist { lesen: 0, schreiben: 0, bild: 2 } (passt für alle Kinder); Fallkarten mit Text
+              für Ältere { lesen: 1, schreiben: 0, bild: 1 }
+energie, belastung, reiz   wie es die Methode verlangt (Bewegung: energie 3, reiz 1)
+```
+
+**Methoden-Vorrat** (je nach Alter): Statuen und Pantomime · Bewegungsspiel (Ball zuwerfen mit Frage, Würfel, Laufen zu
+Ecken des Raums, Aufstellen auf einer Skala am Boden) · Karten ziehen, sortieren, legen · Figuren oder Handpuppe spielen
+(bis 9 Jahre) · Bauen mit Bausteinen oder Knete · Malen, Zeichnen am Tisch · Suchspiel im Raum · Geschichte weitererzählen
+(die Fachkraft beginnt, das Kind entscheidet, wie es weitergeht) · Quiz, Schätzspiel, „Stimmt’s oder stimmt’s nicht?“ ·
+kleines Experiment (Sanduhr, Becher, Stoppuhr) · ab 10: Fallkarten, Chat-Verläufe umschreiben, Interview, Rangliste,
+Pro-und-Contra, Rolle tauschen („Du bist jetzt die Beraterin“).
+Alles bleibt für die Einzelstunde (Fachkraft als Spielpartner), schonend (eigene Beispiele freiwillig) und ohne Katharsis.
+Prüfregel 29 (`npm run -s passgenau:pruefen`) prüft die Felder; `passgenau:test` prüft, dass Blatt, Anleitung und Auftrag
+beim Tausch bleiben.
 
 ## 5. Fachliche Leitplanken
 
@@ -157,8 +201,12 @@ Bis 5 Jahre plant Passgenau sonst ohne Blatt – in einer Kurs-Folge gehört das
 3. `npx tsx --tsconfig tsconfig.scripts.json scripts/kurs-mappe.tsx <linie> tmp/kurs-mappe --blaetter` – alle Sitzungen ✓,
    Blätter im Umfang; die Bilder in `tmp/kurs-mappe/blaetter/` ansehen (mindestens je Variante Sitzung 1 und 6 auf Deutsch und
    eine auf Französisch) und nachbessern: zu voll, zu leer, Seitenumbruch, Bild fehlt?
+4. Tausch-Übungen schreiben (je Sitzung zwei, Abschnitt 4a) – als JSON-Array nur mit den eigenen Feldern und mit
+   `python3 tmp/auftraege/tausch-einfuegen.py <linie> <datei.json>` einfügen; `python3 tmp/auftraege/kurs-kompakt.py <linie>`
+   zeigt den Kurs kompakt (Varianten, Werkzeug, Blatt in Stichworten).
+5. Hintergrund für die Fachkraft in `kurs-hintergrund.json` (Prüfregel 28).
 
-## 8. Katalog (32 Kurse)
+## 8. Katalog (54 Kurse)
 
 Codes: Hauptziel(e) mit Gewicht 1, weitere mit 0.5 – in allen Sitzungen eines Kurses gleich. Die Titel der Sitzungen sind
 Vorschläge; Reihenfolge und Bogen gelten.
@@ -197,3 +245,33 @@ Vorschläge; Reihenfolge und Bogen gelten.
 | kurs-zusammen-7-9 | Regel-Profis | Regel-Profi-Ausweis mit fünf Stempeln | SOZ-27 1, V-17 1, V-16 .5, SOZ-20 .5 | kooperation · regeln | 1 Warum gibt es Regeln? · 2 Regeln und ihre Gründe · 3 Fair spielen: gewinnen und verlieren · 4 Abmachungen treffen · 5 Freundlich erinnern statt petzen · 6 Unser Regel-Vertrag |
 | kurs-zusammen-10-12 | Team-Player | Team-Puzzle (`icon:puzzle`) | V-27 1, SOZ-32 1, K-28 .5, SOZ-30 .5 | kooperation · regeln | 1 Was macht ein Team stark? · 2 Rollen im Team · 3 Ideen einbringen und annehmen · 4 Absprachen und Verantwortung · 5 Wenn im Team etwas schiefgeht · 6 Mein Beitrag fürs Team |
 | kurs-zusammen-13-16 | Rollen, Regeln, Verantwortung | Gruppen-Landkarte: meine Rolle · Regeln · Verantwortung · Haltung | V-30 1, V-31 1, SOZ-38 .5 | kooperation · regeln | 1 Meine Rolle in Gruppen · 2 Regeln und Fairness · 3 Verantwortung übernehmen · 4 Gruppendruck und eigene Haltung · 5 Mitbestimmen · 6 Mein Platz in der Gruppe |
+
+**Neu (Oktober 2026): sechs Themen für Lücken im Katalog** – Ziele, die noch kein Kurs als Hauptziel übte (ELDiB SOZ-26,
+K-12, K-25, K-29, SOZ-36, KOG-61, K-20, KOG-38, SOZ-31, SOZ-35, KOG-55, KOG-45, KOG-62, KOG-58, K-9, K-11, K-15, SOZ-24,
+K-17, K-30), und die Module des Skills-Kurses, die es als Einzelkurs noch nicht gab (Kommunikation & Grenzen, Resilienz
+und Hilfe, Entscheidungen, Vielfalt und Respekt, Selbstständig werden, Digitale Welt, Meinung und Mitbestimmung).
+
+| Linie | Kurs | Leitfigur / Leitmodell | ELDiB | Kompetenz · Thema | Sitzungen |
+|---|---|---|---|---|---|
+| kurs-grenzen-4-6 | Pinguin Pia sagt Stopp | Pinguin Pia (`motiv:pinguin`) und die Stopp-Hand (`motiv:stopp-hand`): Ja-Gefühl · Nein-Gefühl · Stopp! · Hilfe holen | K-12 1, SOZ-26 .5, K-16 .5 | kommunikation · mobbing | 1 Ja-Gefühl und Nein-Gefühl · 2 Das gehört mir: mein Körper, meine Sachen · 3 Laut und klar Stopp sagen · 4 Stopp gilt für alle: ein Stopp hören · 5 Hilfe holen: Wem sage ich es? · 6 Pias Stopp-Fest |
+| kurs-grenzen-7-9 | Mein Schutzschild | Schutzschild (`motiv:schutzschild`) mit fünf Feldern: Bauchgefühl · Grenze · Nein · Geheimnis-Regel · Hilfe-Hand | SOZ-26 1, K-12 1, V-18 .5, K-26 .5 | kommunikation · mobbing | 1 Das Bauchgefühl: Ja oder Nein? · 2 Meine Grenzen und deine Grenzen · 3 Nein sagen mit Stimme, Körper und Worten · 4 Gute und schlechte Geheimnisse – Hilfe holen ist kein Petzen · 5 Meine Hilfe-Hand: wem, wann, welcher Satz · 6 Mein Schutzschild |
+| kurs-grenzen-10-12 | Klar statt Schnecke oder Drache | Drei Arten zu reagieren: Schnecke (`motiv:schnecke`, zieht sich zurück) · Drache (`motiv:drache`, greift an) · klar (aufrechte Figur) – jede Sitzung ein Klar-Werkzeug | SOZ-26 1, K-25 .5, V-26 .5, SOZ-32 .5 | kommunikation · mobbing | 1 Schnecke, Drache oder klar? · 2 Meine Grenzen spüren und benennen · 3 Nein sagen – und dabei bleiben · 4 Wenn die Gruppe Druck macht · 5 Mobbing erkennen: Hilfe holen für mich und für andere · 6 Mein Klar-Plan |
+| kurs-grenzen-13-16 | Grenzen setzen, Druck widerstehen | Grenzen-Profil: meine Grenzen · klar kommunizieren · Druck standhalten · Hilfe holen und helfen | K-25 1, SOZ-39 1, SOZ-26 .5, V-26 .5 | kommunikation · mobbing | 1 Was sind meine Grenzen? · 2 Selbstsicher statt passiv oder aggressiv · 3 Nein unter Druck: Gruppe, Mutproben, Überreden · 4 Grenzen online: Fotos, Gruppenchats, Weiterleiten · 5 Hilfe holen und Zivilcourage · 6 Mein Grenzen-Profil |
+| kurs-probleme-4-6 | Momo hat eine Idee | Affe Momo (`motiv:affe`) und die Ideen-Glühbirne (`motiv:gluehbirne`): Was ist los? · Wie fühlt sich jeder? · Noch eine Idee! · Was passiert dann? | V-18 1, K-29 .5, K-9 .5 | konflikte · freundschaft | 1 Was ist das Problem? · 2 Wie fühlt sich jeder? · 3 Noch eine Idee! · 4 Was passiert dann? · 5 Eine gute Idee ausprobieren · 6 Momos Ideen-Fest |
+| kurs-probleme-7-9 | Die Ideen-Rakete | Rakete (`motiv:rakete`) mit Countdown 5 – 4 – 3 – 2 – 1: Problem · Ziel · Ideen · Prüfen · Start | K-29 1, V-18 .5, SOZ-36 .5 | konflikte · freundschaft | 1 Was ist das Problem? · 2 Was will ich erreichen? · 3 Viele Ideen sammeln · 4 Prüfen: sicher – fair – klappt es? · 5 Start: ein echtes Problem dieser Woche · 6 Meine Rakete hebt ab |
+| kurs-probleme-10-12 | Problem-Knacker | Schlüsselbund (`motiv:schluessel`) mit fünf Schlüsseln: genau beschreiben · Ursachen · Ideen · abwägen · ausprobieren und auswerten | SOZ-36 1, K-29 1, V-28 .5, KOG-56 .5 | konflikte · freundschaft | 1 Das Problem genau beschreiben · 2 Was steckt dahinter? · 3 Ideen ohne Schere im Kopf · 4 Vor- und Nachteile abwägen · 5 Plan, ausprobieren, auswerten · 6 Mein Schlüsselbund |
+| kurs-probleme-13-16 | Gute Entscheidungen | Entscheidungs-Werkzeug: Optionen · Folgen (10 – 10 – 10) · Risiko-Check · Werte · Plan B | KOG-61 1, SOZ-36 .5, KOG-58 .5, V-33 .5 | selbstregulation · – | 1 Wie ich entscheide: Bauch, Kopf, andere · 2 Mehr als zwei Möglichkeiten · 3 Folgen abschätzen: in 10 Minuten, 10 Wochen, 10 Monaten · 4 Riskant oder okay? · 5 Eine echte Entscheidung mit Plan B · 6 Mein Entscheidungs-Werkzeug |
+| kurs-vielfalt-4-6 | Jedes Zebra ist anders | Zebra Zara (`motiv:zebra`): jedes Zebra hat eigene Streifen – jede Sitzung ein Streifen mehr | K-20 1, K-13 .5, SOZ-15 .5 | kooperation · regeln | 1 Ich und du: gleich und anders · 2 Was wir gern mögen · 3 Viele Sprachen: Moien, Bonjour, Hallo · 4 Jeder kann etwas – auf seine Art · 5 Mitspielen lassen: niemand bleibt allein · 6 Zaras Streifen-Fest |
+| kurs-vielfalt-7-9 | Die Wir-Insel | Insel (`motiv:insel-1` … `insel-5`), auf der alle Platz haben – jede Sitzung kommt etwas dazu | KOG-38 1, K-20 1, SOZ-21 .5 | kooperation · regeln | 1 Gleich und verschieden · 2 Mit anderen Augen sehen · 3 Warum macht jemand das? · 4 Neugierig statt auslachen: Sprachen, Feste, Essen · 5 Wenn jemand ausgeschlossen wird: einladen und helfen · 6 Unsere Wir-Insel |
+| kurs-vielfalt-10-12 | Mit anderen Augen | Perspektiv-Brille (`motiv:brille`): Identität · Schubladen · Perspektive · Worte · Zivilcourage | SOZ-31 1, SOZ-35 1, KOG-38 .5, SOZ-32 .5 | kooperation · regeln | 1 Was mich ausmacht – viele Teile · 2 Schubladen im Kopf · 3 Die Perspektive wechseln · 4 Worte, die verletzen – Worte, die respektieren · 5 Wenn jemand ausgegrenzt wird: was ich tun kann · 6 Mein Respekt-Versprechen |
+| kurs-vielfalt-13-16 | Vielfalt und Respekt | Identitäts-Molekül: ich · meine Gruppen · Werte · Haltung · Handeln | SOZ-35 1, KOG-55 1, SOZ-31 .5, KOG-58 .5 | kooperation · regeln | 1 Identität: viele Teile · 2 Stereotype und Vorurteile – wie sie entstehen · 3 Werte: meine und die der anderen · 4 Sprache, Respekt und Hass im Netz · 5 Verbündete sein: Zivilcourage im Alltag · 6 Mein Standpunkt |
+| kurs-alltag-4-6 | Kiki kann das schon | Küken Kiki (`motiv:ei` → `motiv:kueken`) und die Ich-kann-das-Leiter | V-15 1, KOG-31 .5, V-9 .5 | alltag · – | 1 Was ich schon allein kann · 2 Anziehen Schritt für Schritt · 3 Hände waschen und Zähne putzen · 4 Aufräumen: alles hat seinen Platz · 5 Fragen, wenn es nicht klappt · 6 Kikis Groß-Fest |
+| kurs-alltag-7-9 | Meine Tages-Uhr | Uhr (`motiv:uhr`, `motiv:wecker`) mit fünf Feldern: Reihenfolge · Zeit · Morgen · Schultasche und Hausaufgaben · Woche | KOG-45 1, V-15 .5, V-29 .5 | alltag · – | 1 Mein Tag hat eine Reihenfolge · 2 Wie lange dauert das? Zeit schätzen · 3 Der Morgen mit Checkliste · 4 Schultasche packen und Hausaufgaben starten · 5 Mein Plan für eine echte Woche · 6 Meine Tages-Uhr |
+| kurs-alltag-10-12 | Ich hab’s im Griff | Kalender (`motiv:kalender`) als Cockpit mit fünf Anzeigen: Zeit · Ordnung · Geld · Wege · Hilfe | KOG-45 1, KOG-52 .5, V-29 .5, V-27 .5 | alltag · – | 1 Was ich schon selbst regle · 2 Zeit planen: Woche und Kalender · 3 Ordnung halten: Sachen, Schließfach, Zimmer · 4 Mit Geld umgehen: Taschengeld, sparen, wünschen · 5 Allein unterwegs: Bus, Weg, wenn etwas schiefgeht · 6 Mein Selbstständig-Plan |
+| kurs-alltag-13-16 | Selbstständig werden | Selbstständig-Landkarte: Termine · Geld · Energie · Hilfe · Erledigen | KOG-62 1, V-32 .5, V-29 .5 | alltag · – | 1 Was heißt selbstständig? · 2 Anrufen, schreiben, Termine machen · 3 Geld: Budget und Kostenfallen · 4 Schlaf, Energie und Gewohnheiten · 5 Eine echte Erledigung dieser Woche · 6 Mein Selbstständig-Plan |
+| kurs-medien-10-12 | Clever online | Handy-Führerschein (`motiv:handy`, `motiv:handy-chat`) mit fünf Feldern: Zeit · Chat · Privat · Hilfe · Pausen | K-25 1, SOZ-32 .5, V-29 .5 | selbstregulation · medien | 1 Mein Medien-Tag · 2 Fair im Chat · 3 Privat bleibt privat · 4 Wenn online etwas schiefgeht · 5 Meine Bildschirm-Regeln für diese Woche · 6 Mein Handy-Führerschein |
+| kurs-medien-13-16 | Digital klar | Digital-Check: Zeit · Aufmerksamkeit · Fakten · Respekt · Hilfe | KOG-58 1, K-25 .5, V-29 .5 | selbstregulation · medien | 1 Mein digitales Ich · 2 Wer will meine Aufmerksamkeit? · 3 Fake oder Fakt – auch bei KI · 4 Respekt und Grenzen in Gruppenchats · 5 Mein Medien-Experiment dieser Woche · 6 Mein Digital-Check |
+| kurs-sprechen-4-6 | Erzähl mal, Eli! | Elefant Eli (`motiv:elefant`) und die Erzähl-Kette: fragen · Wörter finden · zuhören · der Reihe nach · erzählen | K-9 1, K-11 1, K-12 .5, K-10 .5 | kommunikation · – | 1 Fragen und antworten · 2 Wörter für Dinge und Gefühle · 3 Zuhören und dran sein · 4 Eine Bildergeschichte erzählen: erst, dann, zum Schluss · 5 Von etwas Schönem erzählen · 6 Elis Erzähl-Fest |
+| kurs-sprechen-7-9 | Die Erzähl-Hand | Hand (`hand`) mit fünf Fingern: Wer? · Wo? · Was ist passiert? · Wie war es? · Wie ging es aus? | K-15 1, SOZ-24 1, K-14 .5, K-17 .5 | kommunikation · – | 1 Erzählen mit der Erzähl-Hand · 2 Zuhören und nachfragen · 3 Der Reihe nach: erst – dann – zum Schluss · 4 Gefühle beim Erzählen · 5 Von einem Erlebnis dieser Woche erzählen · 6 Meine Erzähl-Hand |
+| kurs-sprechen-10-12 | Mitreden | Mikrofon (`motiv:mikrofon`) mit fünf Gesprächs-Regeln: zuhören · einsteigen · klar sagen · nachfragen · zusammenfassen | K-17 1, K-30 .5, SOZ-33 .5, SOZ-22 .5 | kommunikation · – | 1 Wie gute Gespräche funktionieren · 2 Einsteigen statt reinrufen · 3 Klar und kurz sagen, was ich meine · 4 Nachfragen und zusammenfassen · 5 Mitreden in der Klasse diese Woche · 6 Mein Gesprächs-Mikrofon |
+| kurs-sprechen-13-16 | Meine Meinung zählt | Megafon (`motiv:megafon`): Meinung bilden · begründen · zuhören · fair widersprechen · mitbestimmen | K-30 1, KOG-58 .5, SOZ-32 .5, SOZ-22 .5 | kommunikation · – | 1 Meinung, Fakt, Gefühl · 2 Begründen: Behauptung – Grund – Beispiel · 3 Zuhören und fair widersprechen · 4 Überzeugen ohne Druck · 5 Mitbestimmen: ein eigenes Anliegen diese Woche · 6 Meine Stimme |
