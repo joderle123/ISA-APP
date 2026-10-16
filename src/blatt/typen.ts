@@ -133,7 +133,7 @@ export type Baustein =
   // --- Auswählen & Einschätzen ----------------------------------------------
   | { art: 'ankreuzen'; titel?: string; items: string[]; spalten?: 1 | 2 | 3; frei?: number }
   /** `klein`: kompakte Reihe (Piktogramm auf getöntem Kreis, Text daneben) – z. B. Alltagsbeispiele auf Mathe-Blättern. */
-  | { art: 'bilder'; bilder: { bild: BildId; text?: string }[]; spalten?: 2 | 3 | 4; modus?: 'einkreisen' | 'ankreuzen' | 'anmalen' | 'nur'; klein?: boolean }
+  | { art: 'bilder'; bilder: { bild: BildId; text?: string; heute?: boolean }[]; spalten?: 2 | 3 | 4; modus?: 'einkreisen' | 'ankreuzen' | 'anmalen' | 'nur'; klein?: boolean }
   | { art: 'wortspeicher'; titel?: string; items: string[] }
   | { art: 'skala'; frage?: string; von: string; bis: string; stufen?: 5 | 10 | 11; gesichter?: boolean }
   | { art: 'einschaetzung'; items: string[]; optionen: string[] }

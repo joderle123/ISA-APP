@@ -6,7 +6,7 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Die Ärger-Kurve",
-    "text": "Die Fachkraft zeigt die Ärger-Kurve auf dem Blatt: Anstieg, Gipfel, Abstieg. Ärger ist ein normales Signal; er kommt wie eine Welle und fällt von selbst wieder ab, solange er nicht neu angeheizt wird. Dann das Kurven-Zeigen: Die Fachkraft liest eine erfundene Szene in vier kurzen Schritten vor (Jana wird im Training ausgewechselt, ein Mitspieler lacht, der Trainer sagt nichts, Jana sitzt auf der Bank); nach jedem Schritt zeigt der oder die Jugendliche mit der Hand, wie hoch die Kurve jetzt steht (Tischkante = 0, Kopfhöhe = 10), und nennt die Zahl. Gemeinsam wird die Kurve auf dem Blatt eingetragen: Wie hoch ging sie, wie schnell stieg sie, was ließ sie fallen? Zweite Runde mit getauschten Rollen: Der oder die Jugendliche liest die Chat-Szene Schritt für Schritt vor, die Fachkraft zeigt und nennt ihre Zahl. Eigene Kurven nur, wenn er oder sie mag. Heute kommt der erste Ausstieg dazu: Merken, wo man auf der Kurve steht.",
+    "text": "Die Fachkraft zeigt die Ärger-Kurve auf dem Blatt: Anstieg, Gipfel, Abstieg. Ärger ist ein normales Signal; er kommt wie eine Welle und fällt von selbst wieder ab, solange er nicht neu angeheizt wird. Dann das Kurven-Zeigen mit einer erfundenen Szene in vier kurzen Schritten, die sie vorliest (Jana wird im Training ausgewechselt – ein Mitspieler lacht – der Trainer sagt nichts – Jana sitzt auf der Bank); nach jedem Schritt zeigt der oder die Jugendliche mit der Hand, wie hoch die Kurve jetzt steht (Tischkante = 0, Kopfhöhe = 10), und nennt die Zahl. Zweite Runde mit getauschten Rollen: Er oder sie liest die Chat-Szene vor (jemand schreibt im Gruppenchat über Ben „Typisch, der kann’s nicht“ – drei andere lachen mit – niemand widerspricht – Ben legt das Handy weg); die Fachkraft zeigt und nennt ihre Zahl und sagt, woran sie es merkt. Danach trägt er oder sie die Kurve auf dem Blatt ein; eigene Kurven nur, wenn er oder sie mag. Heute kommt der erste Ausstieg dazu: Merken, wo man auf der Kurve steht.",
     "sagen": [
       "Ärger ist ein normales Signal. Er kommt wie eine Welle: hoch, Gipfel, runter.",
       "Zeig mir mit der Hand, wie hoch die Kurve bei Jana jetzt steht – Tischkante ist null, Kopfhöhe ist zehn.",
@@ -117,8 +117,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Zeichne die Kurve ein: Wie hoch geht sie in den beiden Szenen, wie schnell steigt sie, was lässt sie fallen?",
-          "hinweis": "Szene 1 (durchgezogen): Jana wird im Training ausgewechselt, ein Mitspieler lacht. Szene 2 (gestrichelt): Im Gruppenchat schreibt jemand über Ben „Typisch, der kann’s nicht“, drei andere lachen mit."
+          "text": "Zeichne die Kurve ein: Janas Kurve in Szene 1, Bens Kurve in Szene 2. Wie hoch geht sie, wie schnell steigt sie, was lässt sie fallen?",
+          "hinweis": "Szene 1 (durchgezogen): Jana wird im Training ausgewechselt – ein Mitspieler lacht – der Trainer sagt nichts – Jana sitzt auf der Bank. Szene 2 (gestrichelt): Im Gruppenchat schreibt jemand über Ben „Typisch, der kann’s nicht“ – drei andere lachen mit – niemand widerspricht – Ben legt das Handy weg."
         },
         {
           "art": "kurve",
@@ -258,8 +258,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dessine la courbe : jusqu’où monte-t-elle dans les deux scènes, à quelle vitesse, et qu’est-ce qui la fait redescendre ?",
-          "hinweis": "Scène 1 (trait plein) : Jana est remplacée à l’entraînement, un coéquipier rit. Scène 2 (pointillés) : dans le chat de groupe, quelqu’un écrit sur Ben « Typique, il n’y arrive pas », trois autres rient avec lui."
+          "text": "Dessine la courbe : celle de Jana dans la scène 1, celle de Ben dans la scène 2. Jusqu’où monte-t-elle, à quelle vitesse, et qu’est-ce qui la fait redescendre ?",
+          "hinweis": "Scène 1 (trait plein) : Jana est remplacée à l’entraînement – un coéquipier rit – l’entraîneur ne dit rien – Jana s’assoit sur le banc. Scène 2 (pointillés) : dans le chat de groupe, quelqu’un écrit sur Ben « Classique, il n’y arrive pas » – trois autres rient – personne ne le défend – Ben pose son téléphone."
         },
         {
           "art": "kurve",
@@ -270,8 +270,8 @@
             "Descente",
             "Calme"
           ],
-          "oben": "10 – sommet : vision tunnel",
-          "mitte": "5 – vraiment énervé·e",
+          "oben": "10 – sommet : vision en tunnel",
+          "mitte": "5 – vraiment énervé(e)",
           "unten": "0 – calme",
           "hoehe": 160,
           "linien": [
@@ -370,7 +370,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest beide Szenen vor, beide tragen die Kurve ein – durchgezogen für Szene 1, gestrichelt für Szene 2 – und lesen sie ab: Wie hoch, wie schnell, was lässt sie fallen? In Aufgabe 2 kreuzt der oder die Jugendliche an, wo jede der vier Personen auf der Kurve steht, und sagt, woran er oder sie es erkennt. Aufgabe 3 ist freiwillig; eigene Erlebnisse gibt es nur, wenn er oder sie mag. Das Modell und der Auftrag gehören zum Mitnehmen: Die Stufe von heute wird farbig ausgemalt, der Auftrag geht mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft fasst beide Szenen kurz zusammen (sie stehen auf dem Blatt), beide tragen die Kurve ein – durchgezogen für Janas Szene, gestrichelt für Bens Chat – und lesen sie ab: Wie hoch, wie schnell, was lässt sie fallen? In Aufgabe 2 kreuzt der oder die Jugendliche an, wo jede der vier Personen auf der Kurve steht, und sagt, woran er oder sie es erkennt. Aufgabe 3 ist freiwillig; eigene Erlebnisse gibt es nur, wenn er oder sie mag. Das Modell und der Auftrag gehören zum Mitnehmen: Die Stufe von heute wird farbig ausgemalt, der Auftrag geht mit.",
           "sagen": [
             "Woran erkennst du, wo die Person auf der Kurve steht?",
             "Welche Zahl gibst du Szene 1 – und welche Szene 2?"
@@ -378,7 +378,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche die Antworten, und die Fachkraft schreibt mit; in der Kurve genügen drei Punkte. Ist die Zeit knapp, genügen die Aufgaben 1 und 2; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les deux scènes, les deux reportent la courbe – trait plein pour la scène 1, pointillés pour la scène 2 – et la lisent : jusqu’où, à quelle vitesse, qu’est-ce qui la fait redescendre ? À l’exercice 2, le ou la jeune coche où chaque personne se trouve sur la courbe et dit à quoi il ou elle le reconnaît. L’exercice 3 est facultatif ; une expérience personnelle n’est donnée que si le ou la jeune le souhaite. Le modèle et la tâche sont à emporter : l’étape du jour est coloriée, la tâche part avec le ou la jeune.",
+          "text": "Exercice 1 ensemble : l’adulte résume les deux scènes (elles figurent sur la fiche), les deux reportent la courbe – trait plein pour la scène de Jana, pointillés pour le chat de Ben – et la lisent : jusqu’où, à quelle vitesse, qu’est-ce qui la fait redescendre ? À l’exercice 2, le ou la jeune coche où chaque personne se trouve sur la courbe et dit à quoi il ou elle le reconnaît. L’exercice 3 est facultatif ; une expérience personnelle n’est donnée que si le ou la jeune le souhaite. Le modèle et la tâche sont à emporter : l’étape du jour est coloriée, la tâche part avec le ou la jeune.",
           "sagen": [
             "À quoi tu vois où la personne en est sur la courbe ?",
             "Quel chiffre donnes-tu à la scène 1 – et à la scène 2 ?"
@@ -389,7 +389,7 @@
     },
     "fr": {
       "titel": "La courbe de la colère",
-      "text": "L’adulte présente la courbe de la colère sur la fiche : montée, sommet, descente. La colère est un signal normal ; elle arrive comme une vague et retombe d’elle-même tant qu’on ne la rallume pas. Puis le jeu de la courbe : l’adulte lit une scène inventée en quatre petites étapes (Jana est remplacée à l’entraînement, un coéquipier rit, l’entraîneur ne dit rien, Jana s’assoit sur le banc) ; après chaque étape, le ou la jeune montre de la main à quelle hauteur est la courbe (bord de la table = 0, hauteur de la tête = 10) et dit le chiffre. Ensemble, on reporte la courbe sur la fiche : jusqu’où est-elle montée, à quelle vitesse, qu’est-ce qui l’a fait redescendre ? Deuxième tour en inversant les rôles : le ou la jeune lit la scène du chat étape par étape, l’adulte montre et donne son chiffre. Une courbe personnelle seulement si le ou la jeune le souhaite. Aujourd’hui s’ajoute la première issue : repérer où l’on en est sur la courbe.",
+      "text": "L’adulte présente la courbe de la colère sur la fiche : montée, sommet, descente. La colère est un signal normal ; elle arrive comme une vague et retombe d’elle-même tant qu’on ne la relance pas. Puis le jeu de la courbe avec une scène inventée en quatre petites étapes, que l’adulte lit à voix haute (Jana est remplacée à l’entraînement – un coéquipier rit – l’entraîneur ne dit rien – Jana s’assoit sur le banc) ; après chaque étape, le ou la jeune montre de la main à quelle hauteur est la courbe (bord de la table = 0, hauteur de la tête = 10) et dit le chiffre. Deuxième tour en inversant les rôles : il ou elle lit la scène du chat (quelqu’un écrit sur Ben dans le chat de groupe « Classique, il n’y arrive pas » – trois autres rient – personne ne le défend – Ben pose son téléphone) ; l’adulte montre et donne son chiffre, et dit à quoi elle le remarque. Ensuite, le ou la jeune reporte la courbe sur la fiche ; une courbe personnelle seulement s’il ou elle le souhaite. Aujourd’hui s’ajoute la première issue : repérer où l’on en est sur la courbe.",
       "sagen": [
         "La colère est un signal normal. Elle arrive comme une vague : elle monte, atteint un sommet et redescend.",
         "Montre-moi avec la main où en est la courbe de Jana : le bord de la table, c’est zéro ; à hauteur de la tête, c’est dix.",
@@ -410,7 +410,7 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Die Ärger-Kurve",
-    "text": "Die Fachkraft zeigt die Ärger-Kurve auf dem Blatt: Anstieg, Gipfel, Abstieg. Ärger ist ein normales Signal; er kommt wie eine Welle und fällt von selbst wieder ab, solange er nicht neu angeheizt wird. Dann das Kurven-Zeigen: Die Fachkraft liest eine erfundene Szene in vier kurzen Schritten vor (Jana wird im Training ausgewechselt, ein Mitspieler lacht, der Trainer sagt nichts, Jana sitzt auf der Bank); nach jedem Schritt zeigt der oder die Jugendliche mit der Hand, wie hoch die Kurve jetzt steht (Tischkante = 0, Kopfhöhe = 10), und nennt die Zahl. Gemeinsam wird die Kurve auf dem Blatt eingetragen: Wie hoch ging sie, wie schnell stieg sie, was ließ sie fallen? Zweite Runde mit getauschten Rollen: Der oder die Jugendliche liest die Chat-Szene Schritt für Schritt vor, die Fachkraft zeigt und nennt ihre Zahl. Eigene Kurven nur, wenn er oder sie mag. Heute kommt der erste Ausstieg dazu: Merken, wo man auf der Kurve steht.",
+    "text": "Die Fachkraft zeigt die Ärger-Kurve auf dem Blatt: Anstieg, Gipfel, Abstieg. Ärger ist ein normales Signal; er kommt wie eine Welle und fällt von selbst wieder ab, solange er nicht neu angeheizt wird. Dann das Kurven-Zeigen mit einer erfundenen Szene in vier kurzen Schritten, die sie vorliest (Jana wird im Training ausgewechselt – ein Mitspieler lacht – der Trainer sagt nichts – Jana sitzt auf der Bank); nach jedem Schritt zeigt der oder die Jugendliche mit der Hand, wie hoch die Kurve jetzt steht (Tischkante = 0, Kopfhöhe = 10), und nennt die Zahl. Zweite Runde mit getauschten Rollen: Er oder sie liest die Chat-Szene vor (jemand schreibt im Gruppenchat über Ben „Typisch, der kann’s nicht“ – drei andere lachen mit – niemand widerspricht – Ben legt das Handy weg); die Fachkraft zeigt und nennt ihre Zahl und sagt, woran sie es merkt. Danach trägt er oder sie die Kurve auf dem Blatt ein; eigene Kurven nur, wenn er oder sie mag. Heute kommt der erste Ausstieg dazu: Merken, wo man auf der Kurve steht.",
     "sagen": [
       "Ärger ist ein normales Signal. Er kommt wie eine Welle: hoch, Gipfel, runter.",
       "Zeig mir mit der Hand, wie hoch die Kurve bei Jana jetzt steht – Tischkante ist null, Kopfhöhe ist zehn.",
@@ -524,18 +524,32 @@
           "text": "Lies die Szene und zeichne Janas Kurve ein: Wie hoch geht sie, wie schnell steigt sie, was lässt sie fallen?"
         },
         {
-          "art": "gefuehle",
-          "modus": "nur",
-          "gefuehle": [
-            "ruhig",
-            "enttaeuscht",
-            "wuetend"
-          ],
+          "art": "comic",
           "spalten": 3,
-          "woerter": [
-            "Jana spielt gut.",
-            "Sie wird ausgewechselt, einer lacht.",
-            "Das ist unfair."
+          "felder": [
+            {
+              "figuren": [
+                "figur:jana:ruhig"
+              ],
+              "blase": "keine",
+              "untertitel": "Jana spielt gut."
+            },
+            {
+              "figuren": [
+                "figur:jana:enttaeuscht"
+              ],
+              "blase": "keine",
+              "untertitel": "Sie wird ausgewechselt, ein Mitspieler lacht."
+            },
+            {
+              "figuren": [
+                "figur:jana:wuetend"
+              ],
+              "blase": "denken",
+              "sprecher": 0,
+              "text": "Das ist unfair.",
+              "untertitel": "Der Trainer sagt nichts."
+            }
           ]
         },
         {
@@ -550,7 +564,7 @@
           "oben": "10 – Gipfel: Tunnelblick",
           "mitte": "5 – richtig verärgert",
           "unten": "0 – ruhig",
-          "hoehe": 140
+          "hoehe": 125
         },
         {
           "art": "aufgabe",
@@ -569,6 +583,9 @@
             "Gipfel",
             "Abstieg"
           ]
+        },
+        {
+          "art": "seitenumbruch"
         },
         {
           "art": "aufgabe",
@@ -673,18 +690,32 @@
           "text": "Lis la scène et dessine la courbe de Jana : jusqu’où monte-t-elle, à quelle vitesse, et qu’est-ce qui la fait redescendre ?"
         },
         {
-          "art": "gefuehle",
-          "modus": "nur",
-          "gefuehle": [
-            "ruhig",
-            "enttaeuscht",
-            "wuetend"
-          ],
+          "art": "comic",
           "spalten": 3,
-          "woerter": [
-            "Jana joue bien.",
-            "Elle est remplacée, quelqu’un rit.",
-            "C’est injuste."
+          "felder": [
+            {
+              "figuren": [
+                "figur:jana:ruhig"
+              ],
+              "blase": "keine",
+              "untertitel": "Jana joue bien."
+            },
+            {
+              "figuren": [
+                "figur:jana:enttaeuscht"
+              ],
+              "blase": "keine",
+              "untertitel": "Elle est remplacée, un coéquipier rit."
+            },
+            {
+              "figuren": [
+                "figur:jana:wuetend"
+              ],
+              "blase": "denken",
+              "sprecher": 0,
+              "text": "C’est injuste.",
+              "untertitel": "L’entraîneur ne dit rien."
+            }
           ]
         },
         {
@@ -696,10 +727,10 @@
             "Descente",
             "Calme"
           ],
-          "oben": "10 – sommet : vision tunnel",
-          "mitte": "5 – vraiment énervé·e",
+          "oben": "10 – sommet : vision en tunnel",
+          "mitte": "5 – vraiment énervé(e)",
           "unten": "0 – calme",
-          "hoehe": 140
+          "hoehe": 125
         },
         {
           "art": "aufgabe",
@@ -718,6 +749,9 @@
             "Sommet",
             "Descente"
           ]
+        },
+        {
+          "art": "seitenumbruch"
         },
         {
           "art": "aufgabe",
@@ -784,7 +818,7 @@
         {
           "art": "zielkarte",
           "titel": "D’ici la prochaine fois",
-          "text": "Je lis deux fois ma courbe.",
+          "text": "Je lis ma courbe deux fois.",
           "kaestchen": 2
         }
       ],
@@ -809,7 +843,7 @@
     },
     "fr": {
       "titel": "La courbe de la colère",
-      "text": "L’adulte présente la courbe de la colère sur la fiche : montée, sommet, descente. La colère est un signal normal ; elle arrive comme une vague et retombe d’elle-même tant qu’on ne la rallume pas. Puis le jeu de la courbe : l’adulte lit une scène inventée en quatre petites étapes (Jana est remplacée à l’entraînement, un coéquipier rit, l’entraîneur ne dit rien, Jana s’assoit sur le banc) ; après chaque étape, le ou la jeune montre de la main à quelle hauteur est la courbe (bord de la table = 0, hauteur de la tête = 10) et dit le chiffre. Ensemble, on reporte la courbe sur la fiche : jusqu’où est-elle montée, à quelle vitesse, qu’est-ce qui l’a fait redescendre ? Deuxième tour en inversant les rôles : le ou la jeune lit la scène du chat étape par étape, l’adulte montre et donne son chiffre. Une courbe personnelle seulement si le ou la jeune le souhaite. Aujourd’hui s’ajoute la première issue : repérer où l’on en est sur la courbe.",
+      "text": "L’adulte présente la courbe de la colère sur la fiche : montée, sommet, descente. La colère est un signal normal ; elle arrive comme une vague et retombe d’elle-même tant qu’on ne la relance pas. Puis le jeu de la courbe avec une scène inventée en quatre petites étapes, que l’adulte lit à voix haute (Jana est remplacée à l’entraînement – un coéquipier rit – l’entraîneur ne dit rien – Jana s’assoit sur le banc) ; après chaque étape, le ou la jeune montre de la main à quelle hauteur est la courbe (bord de la table = 0, hauteur de la tête = 10) et dit le chiffre. Deuxième tour en inversant les rôles : il ou elle lit la scène du chat (quelqu’un écrit sur Ben dans le chat de groupe « Classique, il n’y arrive pas » – trois autres rient – personne ne le défend – Ben pose son téléphone) ; l’adulte montre et donne son chiffre, et dit à quoi elle le remarque. Ensuite, le ou la jeune reporte la courbe sur la fiche ; une courbe personnelle seulement s’il ou elle le souhaite. Aujourd’hui s’ajoute la première issue : repérer où l’on en est sur la courbe.",
       "sagen": [
         "La colère est un signal normal. Elle arrive comme une vague : elle monte, atteint un sommet et redescend.",
         "Montre-moi avec la main où en est la courbe de Jana : le bord de la table, c’est zéro ; à hauteur de la tête, c’est dix.",
@@ -889,7 +923,7 @@
     "ort": "raum",
     "werkzeug": {
       "de": "Früh stoppen: das erste Körperzeichen bemerken und den Anstieg bremsen",
-      "fr": "Sortir tôt : repérer le premier signe dans le corps et freiner la montée"
+      "fr": "Stopper tôt : repérer le premier signe dans le corps et freiner la montée"
     },
     "uebertragbar": true,
     "qualitaet": "geprueft",
@@ -975,7 +1009,7 @@
             "ausgelacht oder bloßgestellt werden",
             "ungerecht behandelt werden (Note, Foul, Strafe)",
             "im Chat ignoriert werden",
-            "wenn jemand etwas ohne Fragen nimmt oder weiterschickt",
+            "wenn jemand etwas nimmt oder weiterschickt, ohne zu fragen",
             "dauernd korrigiert oder gedrängelt werden",
             "wenn über mich geredet wird"
           ]
@@ -1068,7 +1102,7 @@
               "punkte": [
                 "Montée – sommet – descente : voilà comment la colère évolue",
                 "Issue 1 : Repérer",
-                "Aujourd’hui, issue 2 : Sortir tôt – dès le premier signe"
+                "Aujourd’hui, issue 2 : Stopper tôt – dès le premier signe"
               ]
             },
             {
@@ -1111,7 +1145,7 @@
         {
           "art": "aufgabe",
           "text": "Qu’est-ce qui fait monter la courbe ? Coche ce qui fait monter la colère de beaucoup de jeunes – et la tienne, si tu veux.",
-          "hinweis": "Déclencheur plus forme du jour : quand tu es fatigué·e, que tu as faim ou que tu es stressé·e, la courbe monte plus vite et plus haut."
+          "hinweis": "Déclencheur plus forme du jour : quand tu es fatigué(e), que tu as faim ou que tu es stressé(e), la courbe monte plus vite et plus haut."
         },
         {
           "art": "ankreuzen",
@@ -1120,15 +1154,15 @@
           "items": [
             "se faire moquer ou humilier",
             "être traité injustement (note, faute, punition)",
-            "être ignoré·e dans le chat",
+            "être ignoré(e) dans le chat",
             "quand quelqu’un prend ou transmet quelque chose sans demander",
-            "être sans cesse corrigé·e ou pressé·e",
+            "être sans cesse corrigé(e) ou pressé(e)",
             "quand on parle de moi dans mon dos"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Sortir tôt : formule un plan « si… alors » pour ton premier signe.",
+          "text": "Stopper tôt : formule un plan « si… alors » pour ton premier signe.",
           "hinweis": "Aujourd’hui, un premier petit pas suffit. La pause viendra plus tard."
         },
         {
@@ -1153,7 +1187,7 @@
           "items": [
             {
               "titel": "Montée",
-              "text": "Repérer · Sortir tôt (aujourd’hui) · ?",
+              "text": "Repérer · Stopper tôt (aujourd’hui) · ?",
               "heute": true
             },
             {
@@ -1212,7 +1246,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche das Zeichen, und die Fachkraft schreibt es ein. Ein Zeichen und ein Plan genügen. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune colorie sur le corps où l’on sent la colère tôt et note le premier signe ; « je ne sens rien » est permis. À l’exercice 2, il ou elle coche ce qui fait monter la courbe chez beaucoup de jeunes, et l’adulte demande seulement : « À quoi tu le remarques ? » L’exercice 3 se fait seul·e : un plan « si… alors » ; l’exemple montre comment le comprendre. Une expérience personnelle n’est donnée que si le ou la jeune le souhaite. Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : le ou la jeune colorie sur le corps où l’on sent la colère tôt et note le premier signe ; « je ne sens rien » est permis. À l’exercice 2, il ou elle coche ce qui fait monter la courbe chez beaucoup de jeunes, et l’adulte demande seulement : « À quoi tu le remarques ? » L’exercice 3 se fait seul(e) : un plan « si… alors » ; l’exemple montre comment le comprendre. Une expérience personnelle n’est donnée que si le ou la jeune le souhaite. Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "À quoi tu le remarques ?",
             "Quel est ton premier signe – celui que tu remarques le plus tôt ?"
@@ -1223,7 +1257,7 @@
     },
     "fr": {
       "titel": "Déclencheurs et signes avant-coureurs",
-      "text": "La courbe connaît déjà l’issue Repérer ; aujourd’hui s’ajoute la deuxième : sortir tôt. L’adulte explique en deux phrases que la colère a un déclencheur et que le corps le signale bien avant qu’on élève la voix – mâchoire, poings, chaleur, battements du cœur, respiration plus courte. Puis l’exercice « radar d’alerte » : l’adulte joue un camarade qui lance trois petites piques inventées et sans gravité (« Encore en retard ? », « Typique de toi. ») ; le ou la jeune joue Ben, lève la main dès que Ben sentirait son premier signe et dit lequel. Deuxième tour en inversant les rôles : le ou la jeune lance les piques, l’adulte est Ben et nomme ses signes. Ensuite, sur la fiche, il ou elle colorie où l’on sent la colère dans le corps et cherche son propre premier signe – seulement s’il ou elle le souhaite.",
+      "text": "La courbe connaît déjà l’issue Repérer ; aujourd’hui s’ajoute la deuxième : stopper tôt. L’adulte explique en deux phrases que la colère a un déclencheur et que le corps le signale bien avant qu’on élève la voix – mâchoire, poings, chaleur, battements du cœur, respiration plus courte. Puis l’exercice « radar d’alerte » : l’adulte joue un camarade qui lance trois petites piques inventées et sans gravité (« Encore en retard ? », « C’est bien toi, ça. ») ; le ou la jeune joue Ben, lève la main dès que Ben sentirait son premier signe et dit lequel. Deuxième tour en inversant les rôles : le ou la jeune lance les piques, l’adulte est Ben et nomme ses signes. Ensuite, sur la fiche, il ou elle colorie où l’on sent la colère dans le corps et cherche son propre premier signe – seulement s’il ou elle le souhaite.",
       "sagen": [
         "La colère ne vient pas de nulle part. Il y a un déclencheur, et ton corps réagit en général avant ta bouche.",
         "Lève la main dès que Ben sentirait le premier signe – et dis lequel.",
@@ -1303,7 +1337,7 @@
     "ort": "raum",
     "werkzeug": {
       "de": "Früh stoppen: das erste Körperzeichen bemerken und den Anstieg bremsen",
-      "fr": "Sortir tôt : repérer le premier signe dans le corps et freiner la montée"
+      "fr": "Stopper tôt : repérer le premier signe dans le corps et freiner la montée"
     },
     "uebertragbar": true,
     "qualitaet": "geprueft",
@@ -1388,7 +1422,7 @@
             "ausgelacht oder bloßgestellt werden",
             "ungerecht behandelt werden (Note, Foul, Strafe)",
             "im Chat ignoriert werden",
-            "wenn jemand etwas ohne Fragen nimmt oder weiterschickt",
+            "wenn jemand etwas nimmt oder weiterschickt, ohne zu fragen",
             "dauernd korrigiert oder gedrängelt werden",
             "wenn über mich geredet wird"
           ]
@@ -1475,7 +1509,7 @@
               "punkte": [
                 "Montée – sommet – descente : voilà comment la colère évolue",
                 "Issue 1 : Repérer",
-                "Aujourd’hui, issue 2 : Sortir tôt – dès le premier signe"
+                "Aujourd’hui, issue 2 : Stopper tôt – dès le premier signe"
               ]
             },
             {
@@ -1517,7 +1551,7 @@
         {
           "art": "aufgabe",
           "text": "Qu’est-ce qui fait monter la courbe ? Coche ce qui fait monter la colère de beaucoup de jeunes – et la tienne, si tu veux.",
-          "hinweis": "Déclencheur plus forme du jour : quand tu es fatigué·e, que tu as faim ou que tu es stressé·e, la courbe monte plus vite et plus haut."
+          "hinweis": "Déclencheur plus forme du jour : quand tu es fatigué(e), que tu as faim ou que tu es stressé(e), la courbe monte plus vite et plus haut."
         },
         {
           "art": "ankreuzen",
@@ -1526,9 +1560,9 @@
           "items": [
             "se faire moquer ou humilier",
             "être traité injustement (note, faute, punition)",
-            "être ignoré·e dans le chat",
+            "être ignoré(e) dans le chat",
             "quand quelqu’un prend ou transmet quelque chose sans demander",
-            "être sans cesse corrigé·e ou pressé·e",
+            "être sans cesse corrigé(e) ou pressé(e)",
             "quand on parle de moi dans mon dos"
           ]
         },
@@ -1541,7 +1575,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Sortir tôt : que fais-tu en premier quand ton signe apparaît ? Coche ce que tu veux essayer."
+          "text": "Stopper tôt : que fais-tu en premier quand ton signe apparaît ? Coche ce que tu veux essayer."
         },
         {
           "art": "ankreuzen",
@@ -1564,7 +1598,7 @@
           "items": [
             {
               "titel": "Montée",
-              "text": "Repérer · Sortir tôt (aujourd’hui) · ?",
+              "text": "Repérer · Stopper tôt (aujourd’hui) · ?",
               "heute": true
             },
             {
@@ -1588,7 +1622,7 @@
           "items": [
             "Mon corps signale la colère tôt.",
             "Je connais mon premier signe.",
-            "Sortir tôt est plus facile qu’au sommet."
+            "Stopper tôt est plus facile qu’au sommet."
           ]
         },
         {
@@ -1623,7 +1657,7 @@
     },
     "fr": {
       "titel": "Déclencheurs et signes avant-coureurs",
-      "text": "La courbe connaît déjà l’issue Repérer ; aujourd’hui s’ajoute la deuxième : sortir tôt. L’adulte explique en deux phrases que la colère a un déclencheur et que le corps le signale bien avant qu’on élève la voix – mâchoire, poings, chaleur, battements du cœur, respiration plus courte. Puis l’exercice « radar d’alerte » : l’adulte joue un camarade qui lance trois petites piques inventées et sans gravité (« Encore en retard ? », « Typique de toi. ») ; le ou la jeune joue Ben, lève la main dès que Ben sentirait son premier signe et dit lequel. Deuxième tour en inversant les rôles : le ou la jeune lance les piques, l’adulte est Ben et nomme ses signes. Ensuite, sur la fiche, il ou elle colorie où l’on sent la colère dans le corps et cherche son propre premier signe – seulement s’il ou elle le souhaite.",
+      "text": "La courbe connaît déjà l’issue Repérer ; aujourd’hui s’ajoute la deuxième : stopper tôt. L’adulte explique en deux phrases que la colère a un déclencheur et que le corps le signale bien avant qu’on élève la voix – mâchoire, poings, chaleur, battements du cœur, respiration plus courte. Puis l’exercice « radar d’alerte » : l’adulte joue un camarade qui lance trois petites piques inventées et sans gravité (« Encore en retard ? », « C’est bien toi, ça. ») ; le ou la jeune joue Ben, lève la main dès que Ben sentirait son premier signe et dit lequel. Deuxième tour en inversant les rôles : le ou la jeune lance les piques, l’adulte est Ben et nomme ses signes. Ensuite, sur la fiche, il ou elle colorie où l’on sent la colère dans le corps et cherche son propre premier signe – seulement s’il ou elle le souhaite.",
       "sagen": [
         "La colère ne vient pas de nulle part. Il y a un déclencheur, et ton corps réagit en général avant ta bouche.",
         "Lève la main dès que Ben sentirait le premier signe – et dis lequel.",
@@ -1644,7 +1678,7 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Denkfallen prüfen",
-    "text": "Die Kurve kennt Merken und Früh stoppen; heute kommt Prüfen dazu. An einer kurzen Szene (Ben geht im Flur grußlos an Jana vorbei) zeigt die Fachkraft, dass zwischen Auslöser und Ärger ein Gedanke steckt: „Der ignoriert mich extra.“ Sie erklärt zwei Denkfallen, die die Kurve steiler machen – Absicht unterstellen und Gedanken lesen – und die drei Prüffragen: Was weiß ich sicher? Was vermute ich nur? Was könnte es sonst sein? Dann die Übung „Zwei Stimmen“: Der oder die Jugendliche spielt Jana und sagt den heißen Gedanken laut, die Fachkraft spielt die Prüf-Stimme und stellt die drei Fragen; Jana antwortet. Zweite Runde mit getauschten Rollen und einer neuen Szene (eine Nachricht bleibt unbeantwortet). Mag er oder sie nicht spielen, ordnet er oder sie auf dem Blatt die Sätze Fakt oder Vermutung zu.",
+    "text": "Die Kurve kennt Merken und Früh stoppen; heute kommt Prüfen dazu. An einer kurzen Szene (Ben geht im Flur grußlos an Jana vorbei) zeigt die Fachkraft, dass zwischen Auslöser und Ärger ein Gedanke steckt: „Der ignoriert mich extra.“ Sie erklärt drei Denkfallen, die die Kurve steiler machen – Absicht unterstellen, Gedanken lesen, „Immer und nie“ – und die drei Prüffragen: Was weiß ich sicher? Was vermute ich nur? Was könnte es sonst sein? Dann die Übung „Zwei Stimmen“: Der oder die Jugendliche spielt Jana und sagt den heißen Gedanken laut, die Fachkraft spielt die Prüf-Stimme und stellt die drei Fragen; Jana antwortet. Zweite Runde mit getauschten Rollen und einer neuen Szene (eine Nachricht bleibt unbeantwortet). Mag er oder sie nicht spielen, ordnet er oder sie auf dem Blatt die Sätze Fakt oder Vermutung zu.",
     "sagen": [
       "Zwischen dem, was passiert, und deinem Ärger sitzt ein Gedanke. Den schauen wir uns an.",
       "Drei Fragen an den heißen Gedanken: Was weiß ich sicher? Was vermute ich nur? Was könnte es sonst sein?",
@@ -1938,7 +1972,7 @@
               "titel": "Ta courbe de la colère",
               "punkte": [
                 "Montée – sommet – descente : voilà comment la colère évolue",
-                "Issues 1–2 : Repérer · Sortir tôt",
+                "Issues 1–2 : Repérer · Stopper tôt",
                 "Aujourd’hui, issue 3 : Vérifier – fait ou supposition ?"
               ]
             },
@@ -2081,7 +2115,7 @@
           "items": [
             {
               "titel": "Montée",
-              "text": "Repérer · Sortir tôt · Vérifier (aujourd’hui)",
+              "text": "Repérer · Stopper tôt · Vérifier (aujourd’hui)",
               "heute": true
             },
             {
@@ -2140,7 +2174,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, antwortet der oder die Jugendliche mündlich, und die Fachkraft schreibt Stichworte. Eine andere Erklärung und ein Plan genügen. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit la bande dessinée, le ou la jeune inscrit dans le tableau F (fait) ou S (supposition) ; la ligne d’exemple montre comment faire. L’encadré sur les pièges de pensée est discuté brièvement. À l’exercice 2, il ou elle écrit deux autres explications possibles du comportement de Ben ; plusieurs réponses sont justes. À l’exercice 3, il ou elle prépare seul·e un plan de vérification sous forme de phrase « si… alors ». Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : l’adulte lit la bande dessinée, le ou la jeune inscrit dans le tableau F (fait) ou S (supposition) ; la ligne d’exemple montre comment faire. L’encadré sur les pièges de pensée est discuté brièvement. À l’exercice 2, il ou elle écrit deux autres explications possibles du comportement de Ben ; plusieurs réponses sont justes. À l’exercice 3, il ou elle prépare seul(e) un plan de vérification sous forme de phrase « si… alors ». Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "À quoi tu vois que c’est un fait ?",
             "Qu’est-ce que ça pourrait être d’autre ?"
@@ -2151,13 +2185,13 @@
     },
     "fr": {
       "titel": "Vérifier ses pensées",
-      "text": "La courbe connaît Repérer et Sortir tôt ; aujourd’hui s’ajoute Vérifier. À l’aide d’une courte scène (Ben passe devant Jana dans le couloir sans la saluer), l’adulte montre qu’entre le déclencheur et la colère se glisse une pensée : « Il m’ignore exprès. » L’adulte présente deux pièges de pensée qui font monter la courbe plus vite – prêter une mauvaise intention et lire dans les pensées – et les trois questions de vérification : qu’est-ce que je sais avec certitude ? Qu’est-ce que je suppose seulement ? Qu’est-ce que ça pourrait être d’autre ? Puis l’exercice « deux voix » : le ou la jeune joue Jana et dit la pensée chaude à voix haute, l’adulte joue la voix qui vérifie et pose les trois questions ; Jana répond. Deuxième tour avec les rôles échangés et une nouvelle scène (un message reste sans réponse). Si le ou la jeune ne veut pas jouer, il ou elle classe sur la fiche les phrases en fait ou supposition.",
+      "text": "La courbe connaît Repérer et Stopper tôt ; aujourd’hui s’ajoute Vérifier. À l’aide d’une courte scène (Ben passe devant Jana dans le couloir sans la saluer), l’adulte montre qu’entre le déclencheur et la colère se glisse une pensée : « Il m’ignore exprès. » L’adulte présente trois pièges de pensée qui font monter la courbe plus vite – prêter une mauvaise intention, lire dans les pensées, « toujours et jamais » – et les trois questions de vérification : qu’est-ce que je sais avec certitude ? Qu’est-ce que je suppose seulement ? Qu’est-ce que ça pourrait être d’autre ? Puis l’exercice « deux voix » : le ou la jeune joue Jana et dit la pensée chaude à voix haute, l’adulte joue la voix qui vérifie et pose les trois questions ; Jana répond. Deuxième tour avec les rôles échangés et une nouvelle scène (un message reste sans réponse). Si le ou la jeune ne veut pas jouer, il ou elle classe sur la fiche les phrases en fait ou supposition.",
       "sagen": [
         "Entre ce qui se passe et ta colère, il y a une pensée. C’est elle qu’on regarde.",
         "Trois questions à la pensée chaude : qu’est-ce que je sais avec certitude ? Qu’est-ce que je suppose seulement ? Qu’est-ce que ça pourrait être d’autre ?",
         "Vérifier ne veut pas dire que l’autre a raison. Parfois la pensée est juste – alors on cherche comment le dire de façon juste."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve pas d’autre explication, l’adulte en propose trois au choix (dans ses pensées, mauvaise journée, n’a pas vu). S’il ou elle tient la pensée pour certaine, on ne cherche pas à l’en dissuader : l’adulte demande seulement « À quoi tu le vois ? » et note que ce cas relève plutôt de Dire. Deux scènes suffisent."
+      "wennEsKippt": "Si le ou la jeune ne trouve pas d’autre explication, l’adulte en propose trois au choix (perdu dans ses pensées, mauvaise journée, n’a pas vu). S’il ou elle tient la pensée pour certaine, on ne cherche pas à l’en dissuader : l’adulte demande seulement « À quoi tu le vois ? » et note que ce cas relève plutôt de Dire. Deux scènes suffisent."
     },
     "zugang": {
       "lesen": 2,
@@ -2172,7 +2206,7 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Denkfallen prüfen",
-    "text": "Die Kurve kennt Merken und Früh stoppen; heute kommt Prüfen dazu. An einer kurzen Szene (Ben geht im Flur grußlos an Jana vorbei) zeigt die Fachkraft, dass zwischen Auslöser und Ärger ein Gedanke steckt: „Der ignoriert mich extra.“ Sie erklärt zwei Denkfallen, die die Kurve steiler machen – Absicht unterstellen und Gedanken lesen – und die drei Prüffragen: Was weiß ich sicher? Was vermute ich nur? Was könnte es sonst sein? Dann die Übung „Zwei Stimmen“: Der oder die Jugendliche spielt Jana und sagt den heißen Gedanken laut, die Fachkraft spielt die Prüf-Stimme und stellt die drei Fragen; Jana antwortet. Zweite Runde mit getauschten Rollen und einer neuen Szene (eine Nachricht bleibt unbeantwortet). Mag er oder sie nicht spielen, ordnet er oder sie auf dem Blatt die Sätze Fakt oder Vermutung zu.",
+    "text": "Die Kurve kennt Merken und Früh stoppen; heute kommt Prüfen dazu. An einer kurzen Szene (Ben geht im Flur grußlos an Jana vorbei) zeigt die Fachkraft, dass zwischen Auslöser und Ärger ein Gedanke steckt: „Der ignoriert mich extra.“ Sie erklärt drei Denkfallen, die die Kurve steiler machen – Absicht unterstellen, Gedanken lesen, „Immer und nie“ – und die drei Prüffragen: Was weiß ich sicher? Was vermute ich nur? Was könnte es sonst sein? Dann die Übung „Zwei Stimmen“: Der oder die Jugendliche spielt Jana und sagt den heißen Gedanken laut, die Fachkraft spielt die Prüf-Stimme und stellt die drei Fragen; Jana antwortet. Zweite Runde mit getauschten Rollen und einer neuen Szene (eine Nachricht bleibt unbeantwortet). Mag er oder sie nicht spielen, ordnet er oder sie auf dem Blatt die Sätze Fakt oder Vermutung zu.",
     "sagen": [
       "Zwischen dem, was passiert, und deinem Ärger sitzt ein Gedanke. Den schauen wir uns an.",
       "Drei Fragen an den heißen Gedanken: Was weiß ich sicher? Was vermute ich nur? Was könnte es sonst sein?",
@@ -2445,7 +2479,7 @@
               "titel": "Ta courbe de la colère",
               "punkte": [
                 "Montée – sommet – descente : voilà comment la colère évolue",
-                "Issues 1–2 : Repérer · Sortir tôt",
+                "Issues 1–2 : Repérer · Stopper tôt",
                 "Aujourd’hui, issue 3 : Vérifier – fait ou supposition ?"
               ]
             },
@@ -2541,7 +2575,7 @@
           "spalten": 2,
           "frei": 1,
           "items": [
-            "Il était dans ses pensées.",
+            "Il était perdu dans ses pensées.",
             "Il ne m’a pas vue.",
             "Il avait passé une mauvaise journée.",
             "Il était pressé."
@@ -2578,7 +2612,7 @@
           "items": [
             {
               "titel": "Montée",
-              "text": "Repérer · Sortir tôt · Vérifier (aujourd’hui)",
+              "text": "Repérer · Stopper tôt · Vérifier (aujourd’hui)",
               "heute": true
             },
             {
@@ -2637,13 +2671,13 @@
     },
     "fr": {
       "titel": "Vérifier ses pensées",
-      "text": "La courbe connaît Repérer et Sortir tôt ; aujourd’hui s’ajoute Vérifier. À l’aide d’une courte scène (Ben passe devant Jana dans le couloir sans la saluer), l’adulte montre qu’entre le déclencheur et la colère se glisse une pensée : « Il m’ignore exprès. » L’adulte présente deux pièges de pensée qui font monter la courbe plus vite – prêter une mauvaise intention et lire dans les pensées – et les trois questions de vérification : qu’est-ce que je sais avec certitude ? Qu’est-ce que je suppose seulement ? Qu’est-ce que ça pourrait être d’autre ? Puis l’exercice « deux voix » : le ou la jeune joue Jana et dit la pensée chaude à voix haute, l’adulte joue la voix qui vérifie et pose les trois questions ; Jana répond. Deuxième tour avec les rôles échangés et une nouvelle scène (un message reste sans réponse). Si le ou la jeune ne veut pas jouer, il ou elle classe sur la fiche les phrases en fait ou supposition.",
+      "text": "La courbe connaît Repérer et Stopper tôt ; aujourd’hui s’ajoute Vérifier. À l’aide d’une courte scène (Ben passe devant Jana dans le couloir sans la saluer), l’adulte montre qu’entre le déclencheur et la colère se glisse une pensée : « Il m’ignore exprès. » L’adulte présente trois pièges de pensée qui font monter la courbe plus vite – prêter une mauvaise intention, lire dans les pensées, « toujours et jamais » – et les trois questions de vérification : qu’est-ce que je sais avec certitude ? Qu’est-ce que je suppose seulement ? Qu’est-ce que ça pourrait être d’autre ? Puis l’exercice « deux voix » : le ou la jeune joue Jana et dit la pensée chaude à voix haute, l’adulte joue la voix qui vérifie et pose les trois questions ; Jana répond. Deuxième tour avec les rôles échangés et une nouvelle scène (un message reste sans réponse). Si le ou la jeune ne veut pas jouer, il ou elle classe sur la fiche les phrases en fait ou supposition.",
       "sagen": [
         "Entre ce qui se passe et ta colère, il y a une pensée. C’est elle qu’on regarde.",
         "Trois questions à la pensée chaude : qu’est-ce que je sais avec certitude ? Qu’est-ce que je suppose seulement ? Qu’est-ce que ça pourrait être d’autre ?",
         "Vérifier ne veut pas dire que l’autre a raison. Parfois la pensée est juste – alors on cherche comment le dire de façon juste."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve pas d’autre explication, l’adulte en propose trois au choix (dans ses pensées, mauvaise journée, n’a pas vu). S’il ou elle tient la pensée pour certaine, on ne cherche pas à l’en dissuader : l’adulte demande seulement « À quoi tu le vois ? » et note que ce cas relève plutôt de Dire. Deux scènes suffisent."
+      "wennEsKippt": "Si le ou la jeune ne trouve pas d’autre explication, l’adulte en propose trois au choix (perdu dans ses pensées, mauvaise journée, n’a pas vu). S’il ou elle tient la pensée pour certaine, on ne cherche pas à l’en dissuader : l’adulte demande seulement « À quoi tu le vois ? » et note que ce cas relève plutôt de Dire. Deux scènes suffisent."
     },
     "zugang": {
       "lesen": 1,
@@ -2658,11 +2692,12 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Ausstiege: Pause, Atmen, Ortswechsel",
-    "text": "Die Kurve kennt Merken, Früh stoppen und Prüfen; heute kommt der vierte Ausstieg dazu: die Auszeit, die auch kurz vor dem Gipfel noch geht. Die Fachkraft erklärt, dass am Gipfel das Nachdenken schlecht klappt und nur Abstand hilft. Dann der Test: Der oder die Jugendliche stellt sich einen leichten Ärger vor (die Pause fällt aus, Gruppenarbeit mit jemandem, der nichts macht) und nennt seine oder ihre Zahl. Beide probieren drei Wege je etwa eine Minute – lang ausatmen (vier zählen ein, sechs aus), Ortswechsel (aufstehen, zum Fenster und zurück, Wasser holen), Pause mit Rückkehr – und er oder sie nennt nach jedem die Zahl. Rollenspiel zur Pause: Die Fachkraft sagt einen gereizten Satz („Jetzt hör endlich auf damit.“), der oder die Jugendliche antwortet mit dem Pausen-Satz (sagen, dass man geht, wie lange, und dass man wiederkommt); dann tauschen sie. Wer nicht spielen mag, wählt auf dem Blatt den besten Pausen-Satz.",
+    "text": "Die Kurve kennt Merken, Früh stoppen und Prüfen; heute kommt der vierte Ausstieg dazu: die Auszeit, die auch kurz vor dem Gipfel noch geht. Die Fachkraft erklärt, dass am Gipfel das Nachdenken schlecht klappt und nur Abstand hilft. Dann der Test: Der oder die Jugendliche stellt sich einen leichten Ärger vor (die Pause fällt aus, Gruppenarbeit mit jemandem, der nichts macht) und nennt seine oder ihre Zahl. Beide probieren drei Wege je etwa eine Minute – lang ausatmen (vier zählen ein, sechs aus), Ortswechsel (aufstehen, zum Fenster und zurück, Wasser holen), Pause mit Rückkehr – und er oder sie nennt nach jedem die Zahl (die Fachkraft notiert sie). Rollenspiel zur Pause: Die Fachkraft sagt einen gereizten Satz („Jetzt hör endlich auf damit.“), der oder die Jugendliche antwortet mit dem Pausen-Satz (sagen, dass man geht, wie lange, und dass man wiederkommt); dann tauschen sie. Wer nicht spielen mag, wählt auf dem Blatt den besten Pausen-Satz.",
     "sagen": [
       "Am Gipfel kommst du mit Nachdenken nicht weiter. Dann hilft nur Abstand.",
       "Wir testen drei Wege je eine Minute. Danach liest du deine Zahl ab: Ist sie gesunken?",
-      "Eine Pause ist keine Flucht, wenn du sagst, dass du gehst, wie lange, und dass du wiederkommst."
+      "Eine Pause ist keine Flucht, wenn du sagst, dass du gehst, wie lange, und dass du wiederkommst.",
+      "Losbrüllen oder auf etwas einschlagen hält die Kurve oben. Darum testen wir Wege, die sie wirklich runterbringen."
     ],
     "wennEsKippt": "Merkt der oder die Jugendliche bei einem Weg keinen Unterschied, ist das ein gültiges Ergebnis: Der Weg fällt aus der Wahl. Wird die Atemübung unangenehm (Schwindel, Druck), wird sofort normal geatmet und die Zahl ohne Atmen verglichen. Zwei getestete Wege und ein Favorit genügen.",
     "rolle": [
@@ -2770,8 +2805,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Teste drei Wege. Lies vorher deine Zahl ab, probiere den Weg eine Minute lang aus und lies nachher wieder ab.",
-          "hinweis": "Stell dir einen kleinen Ärger vor, zum Beispiel: Die Pause fällt aus."
+          "text": "Dein Test von eben: Trag deine Zahl vor und nach jedem Weg ein – und ob der Weg zu dir passt.",
+          "hinweis": "Gleiche Zahl vorher und nachher? Auch das ist ein Ergebnis."
         },
         {
           "art": "bilder",
@@ -2941,7 +2976,7 @@
               "titel": "Ta courbe de la colère",
               "punkte": [
                 "Montée – sommet – descente : voilà comment la colère évolue",
-                "Issues 1–3 : Repérer · Sortir tôt · Vérifier",
+                "Issues 1–3 : Repérer · Stopper tôt · Vérifier",
                 "Aujourd’hui, issue 4 : Prendre du recul – pause, respiration, autre lieu"
               ]
             },
@@ -2962,8 +2997,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Teste trois méthodes. Lis ton chiffre avant, essaie la méthode pendant une minute, puis relis-le après.",
-          "hinweis": "Imagine un petit énervement, par exemple : la récré est supprimée."
+          "text": "Ton test de tout à l’heure : note ton chiffre avant et après chaque méthode – et si elle te convient.",
+          "hinweis": "Le même chiffre avant et après ? C’est aussi un résultat."
         },
         {
           "art": "bilder",
@@ -3039,7 +3074,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quand t’arrêtes-tu ? Dessine deux fois la même courbe : sans pause, puis avec pause.",
+          "text": "À quel moment prends-tu du recul ? Dessine deux fois la même courbe : sans pause, puis avec pause.",
           "hinweis": "Prends du recul avant que la courbe soit tout en haut – au plus tard à 6."
         },
         {
@@ -3051,8 +3086,8 @@
             "Descente",
             "Calme"
           ],
-          "oben": "10 – sommet : vision tunnel",
-          "mitte": "5 – vraiment énervé·e",
+          "oben": "10 – sommet : vision en tunnel",
+          "mitte": "5 – vraiment énervé(e)",
           "unten": "0 – calme",
           "hoehe": 130,
           "linien": [
@@ -3070,7 +3105,7 @@
           "items": [
             {
               "titel": "Montée",
-              "text": "Repérer · Sortir tôt · Vérifier"
+              "text": "Repérer · Stopper tôt · Vérifier"
             },
             {
               "titel": "Sommet",
@@ -3124,7 +3159,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche liest die Zahl vorher ab, probiert mit der Fachkraft jeden Weg etwa eine Minute (beide machen mit) und trägt die Zahl nachher ein; bei „passt zu mir“ genügt ja oder nein. Bleibt die Zahl gleich, ist das ein gültiges Ergebnis. In Aufgabe 2 schreibt er oder sie in die Sprechblase den Pausen-Satz: ich gehe – so lange – ich komme wieder. In Aufgabe 3 wird dieselbe Kurve zweimal gezeichnet, ohne und mit Auszeit; die Fachkraft fragt, bei welcher Zahl die Auszeit spätestens starten sollte. Das Modell und der Auftrag gehen mit.",
+          "text": "Aufgabe 1 gemeinsam: Die drei Wege sind vorher schon getestet; der oder die Jugendliche trägt die Zahlen vorher und nachher ein (die Fachkraft hat sie notiert) und sagt bei „passt zu mir“ ja oder nein. Bleibt die Zahl gleich, ist das ein gültiges Ergebnis. In Aufgabe 2 schreibt er oder sie in die Sprechblase den Pausen-Satz: ich gehe – so lange – ich komme wieder. In Aufgabe 3 wird dieselbe Kurve zweimal gezeichnet, ohne und mit Auszeit; die Fachkraft fragt, bei welcher Zahl die Auszeit spätestens starten sollte. Das Modell und der Auftrag gehen mit.",
           "sagen": [
             "Welche Zahl hast du vorher? Und nachher?",
             "Bei welcher Zahl würdest du spätestens aussteigen?"
@@ -3132,7 +3167,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche die Zahlen, und die Fachkraft trägt sie ein. Zwei getestete Wege und ein Satz genügen. Wird eine Übung unangenehm, wird sie sofort abgebrochen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune lit son chiffre avant, essaie chaque méthode environ une minute avec l’adulte (les deux participent) et inscrit le chiffre après ; pour « me convient », oui ou non suffit. Si le chiffre reste le même, c’est un résultat valable. À l’exercice 2, il ou elle écrit dans la bulle la phrase de pause : je m’en vais – pour combien de temps – je reviens. À l’exercice 3, on dessine deux fois la même courbe, sans puis avec pause ; l’adulte demande à partir de quel chiffre la pause devrait au plus tard commencer. Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : les trois méthodes ont déjà été testées juste avant ; le ou la jeune inscrit les chiffres avant et après (l’adulte les a notés) et répond par oui ou non à « me convient ». Si le chiffre reste le même, c’est un résultat valable. À l’exercice 2, il ou elle écrit dans la bulle la phrase de pause : je m’en vais – pour combien de temps – je reviens. À l’exercice 3, on dessine deux fois la même courbe, sans puis avec pause ; l’adulte demande à partir de quel chiffre la pause devrait au plus tard commencer. Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "Quel chiffre avant ? Et après ?",
             "À partir de quel chiffre sortirais-tu au plus tard ?"
@@ -3143,11 +3178,12 @@
     },
     "fr": {
       "titel": "Issues : pause, respiration, changement de lieu",
-      "text": "La courbe connaît Repérer, Sortir tôt et Vérifier ; aujourd’hui s’ajoute la quatrième issue : prendre du recul, qui fonctionne encore près du sommet. L’adulte explique qu’au sommet, réfléchir marche mal et que seule la distance aide. Puis le test : le ou la jeune imagine une scène légèrement agaçante (la récré est supprimée, un travail de groupe avec quelqu’un qui ne fait rien) et donne son chiffre. Ils essaient ensemble trois méthodes d’environ une minute par méthode – expirer longuement (inspirer sur quatre temps, expirer sur six), changer d’endroit (se lever, aller à la fenêtre et revenir, chercher de l’eau), faire une pause avec retour – et le ou la jeune redonne son chiffre après chaque méthode. Jeu de rôle sur la pause : l’adulte dit une phrase irritée (« Arrête un peu avec ça. »), le ou la jeune répond avec la phrase de pause (dire qu’on s’en va, pour combien de temps et qu’on revient), puis on inverse. Si le ou la jeune ne veut pas jouer, il ou elle choisit la meilleure phrase de pause sur la fiche.",
+      "text": "La courbe connaît Repérer, Stopper tôt et Vérifier ; aujourd’hui s’ajoute la quatrième issue : prendre du recul, qui fonctionne encore près du sommet. L’adulte explique qu’au sommet, réfléchir marche mal et que seule la distance aide. Puis le test : le ou la jeune imagine une scène légèrement agaçante (la récré est supprimée, un travail de groupe avec quelqu’un qui ne fait rien) et donne son chiffre. Ils essaient ensemble trois méthodes d’environ une minute par méthode – expirer longuement (inspirer sur quatre temps, expirer sur six), changer d’endroit (se lever, aller à la fenêtre et revenir, chercher de l’eau), faire une pause avec retour – et le ou la jeune redonne son chiffre après chaque méthode (l’adulte le note). Jeu de rôle sur la pause : l’adulte dit une phrase irritée (« Arrête un peu avec ça. »), le ou la jeune répond avec la phrase de pause (dire qu’on s’en va, pour combien de temps et qu’on revient), puis on inverse. Si le ou la jeune ne veut pas jouer, il ou elle choisit la meilleure phrase de pause sur la fiche.",
       "sagen": [
         "Au sommet, réfléchir ne mène à rien. Seul le recul aide.",
         "On teste trois méthodes d’une minute par méthode. Ensuite tu relis ton chiffre : est-il descendu ?",
-        "Une pause n’est pas une fuite si tu dis que tu pars, pour combien de temps et que tu reviens."
+        "Une pause n’est pas une fuite si tu dis que tu pars, pour combien de temps et que tu reviens.",
+        "Crier à pleins poumons ou taper sur quelque chose garde la courbe en haut. On teste donc des méthodes qui la font vraiment descendre."
       ],
       "wennEsKippt": "Si le ou la jeune ne sent pas de différence avec une méthode, c’est un résultat valable : elle sort du choix. Si l’exercice de respiration devient désagréable (vertige, oppression), on respire aussitôt normalement et on compare le chiffre sans respiration. Deux méthodes testées et une préférée suffisent."
     },
@@ -3164,11 +3200,12 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Ausstiege: Pause, Atmen, Ortswechsel",
-    "text": "Die Kurve kennt Merken, Früh stoppen und Prüfen; heute kommt der vierte Ausstieg dazu: die Auszeit, die auch kurz vor dem Gipfel noch geht. Die Fachkraft erklärt, dass am Gipfel das Nachdenken schlecht klappt und nur Abstand hilft. Dann der Test: Der oder die Jugendliche stellt sich einen leichten Ärger vor (die Pause fällt aus, Gruppenarbeit mit jemandem, der nichts macht) und nennt seine oder ihre Zahl. Beide probieren drei Wege je etwa eine Minute – lang ausatmen (vier zählen ein, sechs aus), Ortswechsel (aufstehen, zum Fenster und zurück, Wasser holen), Pause mit Rückkehr – und er oder sie nennt nach jedem die Zahl. Rollenspiel zur Pause: Die Fachkraft sagt einen gereizten Satz („Jetzt hör endlich auf damit.“), der oder die Jugendliche antwortet mit dem Pausen-Satz (sagen, dass man geht, wie lange, und dass man wiederkommt); dann tauschen sie. Wer nicht spielen mag, wählt auf dem Blatt den besten Pausen-Satz.",
+    "text": "Die Kurve kennt Merken, Früh stoppen und Prüfen; heute kommt der vierte Ausstieg dazu: die Auszeit, die auch kurz vor dem Gipfel noch geht. Die Fachkraft erklärt, dass am Gipfel das Nachdenken schlecht klappt und nur Abstand hilft. Dann der Test: Der oder die Jugendliche stellt sich einen leichten Ärger vor (die Pause fällt aus, Gruppenarbeit mit jemandem, der nichts macht) und nennt seine oder ihre Zahl. Beide probieren drei Wege je etwa eine Minute – lang ausatmen (vier zählen ein, sechs aus), Ortswechsel (aufstehen, zum Fenster und zurück, Wasser holen), Pause mit Rückkehr – und er oder sie nennt nach jedem die Zahl (die Fachkraft notiert sie). Rollenspiel zur Pause: Die Fachkraft sagt einen gereizten Satz („Jetzt hör endlich auf damit.“), der oder die Jugendliche antwortet mit dem Pausen-Satz (sagen, dass man geht, wie lange, und dass man wiederkommt); dann tauschen sie. Wer nicht spielen mag, wählt auf dem Blatt den besten Pausen-Satz.",
     "sagen": [
       "Am Gipfel kommst du mit Nachdenken nicht weiter. Dann hilft nur Abstand.",
       "Wir testen drei Wege je eine Minute. Danach liest du deine Zahl ab: Ist sie gesunken?",
-      "Eine Pause ist keine Flucht, wenn du sagst, dass du gehst, wie lange, und dass du wiederkommst."
+      "Eine Pause ist keine Flucht, wenn du sagst, dass du gehst, wie lange, und dass du wiederkommst.",
+      "Losbrüllen oder auf etwas einschlagen hält die Kurve oben. Darum testen wir Wege, die sie wirklich runterbringen."
     ],
     "wennEsKippt": "Merkt der oder die Jugendliche bei einem Weg keinen Unterschied, ist das ein gültiges Ergebnis: Der Weg fällt aus der Wahl. Wird die Atemübung unangenehm (Schwindel, Druck), wird sofort normal geatmet und die Zahl ohne Atmen verglichen. Zwei getestete Wege und ein Favorit genügen.",
     "rolle": [
@@ -3276,8 +3313,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Teste drei Wege. Lies vorher deine Zahl ab und probiere jeden Weg eine Minute aus. Kreis deinen Favoriten ein.",
-          "hinweis": "Stell dir einen kleinen Ärger vor, zum Beispiel: Die Pause fällt aus."
+          "text": "Dein Test von eben: Welcher Weg hat am besten geholfen? Kreis deinen Favoriten ein.",
+          "hinweis": "Gleiche Zahl vorher und nachher? Auch das ist ein Ergebnis."
         },
         {
           "art": "bilder",
@@ -3407,7 +3444,7 @@
               "titel": "Ta courbe de la colère",
               "punkte": [
                 "Montée – sommet – descente : voilà comment la colère évolue",
-                "Issues 1–3 : Repérer · Sortir tôt · Vérifier",
+                "Issues 1–3 : Repérer · Stopper tôt · Vérifier",
                 "Aujourd’hui, issue 4 : Prendre du recul – pause, respiration, autre lieu"
               ]
             },
@@ -3428,8 +3465,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Teste trois méthodes. Lis ton chiffre avant et essaie chaque méthode pendant une minute. Entoure ta préférée.",
-          "hinweis": "Imagine un petit énervement, par exemple : la récré est supprimée."
+          "text": "Ton test de tout à l’heure : quelle méthode a le mieux aidé ? Entoure ta préférée.",
+          "hinweis": "Le même chiffre avant et après ? C’est aussi un résultat."
         },
         {
           "art": "bilder",
@@ -3479,7 +3516,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quand t’arrêtes-tu ? Dessine deux fois la même courbe : sans pause, puis avec pause.",
+          "text": "À quel moment prends-tu du recul ? Dessine deux fois la même courbe : sans pause, puis avec pause.",
           "hinweis": "Prends du recul avant que la courbe soit tout en haut – au plus tard à 6."
         },
         {
@@ -3491,8 +3528,8 @@
             "Descente",
             "Calme"
           ],
-          "oben": "10 – sommet : vision tunnel",
-          "mitte": "5 – vraiment énervé·e",
+          "oben": "10 – sommet : vision en tunnel",
+          "mitte": "5 – vraiment énervé(e)",
           "unten": "0 – calme",
           "hoehe": 130,
           "linien": [
@@ -3510,7 +3547,7 @@
           "items": [
             {
               "titel": "Montée",
-              "text": "Repérer · Sortir tôt · Vérifier"
+              "text": "Repérer · Stopper tôt · Vérifier"
             },
             {
               "titel": "Sommet",
@@ -3550,7 +3587,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche liest die Zahl vorher ab, probiert mit der Fachkraft jeden Weg etwa eine Minute (beide machen mit), kreist den Favoriten ein und kreuzt an, wie gut jeder Weg hilft. Bleibt die Zahl gleich, ist das ein gültiges Ergebnis. In Aufgabe 2 kreuzt er oder sie den Pausen-Satz an, der funktioniert, und sagt, woran man das merkt. In Aufgabe 3 wird dieselbe Kurve zweimal gezeichnet, ohne und mit Auszeit. Das Modell und der Auftrag gehen mit.",
+          "text": "Aufgabe 1 gemeinsam: Die drei Wege sind vorher schon getestet; der oder die Jugendliche kreist den Favoriten ein und kreuzt an, wie gut jeder Weg geholfen hat (die Fachkraft liest die notierten Zahlen vor). Bleibt die Zahl gleich, ist das ein gültiges Ergebnis. In Aufgabe 2 kreuzt er oder sie den Pausen-Satz an, der funktioniert, und sagt, woran man das merkt. In Aufgabe 3 wird dieselbe Kurve zweimal gezeichnet, ohne und mit Auszeit. Das Modell und der Auftrag gehen mit.",
           "sagen": [
             "Welche Zahl hast du vorher? Und nachher?",
             "Woran merkst du, dass dieser Satz eine gute Pause ist?"
@@ -3558,7 +3595,7 @@
           "wennEsKippt": "Fällt das Zeichnen schwer, genügen drei Punkte je Kurve, die die Fachkraft verbindet. Zwei getestete Wege und ein Kreuz bei den Sätzen genügen. Wird eine Übung unangenehm, wird sie sofort abgebrochen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune lit son chiffre avant, essaie chaque méthode environ une minute avec l’adulte (les deux participent), entoure sa préférée et coche dans quelle mesure chaque méthode aide. Si le chiffre reste le même, c’est un résultat valable. À l’exercice 2, il ou elle coche la phrase de pause qui fonctionne et dit à quoi on le voit. À l’exercice 3, on dessine deux fois la même courbe, sans puis avec pause. Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : les trois méthodes ont déjà été testées juste avant ; le ou la jeune entoure sa préférée et coche dans quelle mesure chaque méthode a aidé (l’adulte relit les chiffres notés). Si le chiffre reste le même, c’est un résultat valable. À l’exercice 2, il ou elle coche la phrase de pause qui fonctionne et dit à quoi on le voit. À l’exercice 3, on dessine deux fois la même courbe, sans puis avec pause. Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "Quel chiffre avant ? Et après ?",
             "À quoi tu vois que cette phrase fait une bonne pause ?"
@@ -3569,11 +3606,12 @@
     },
     "fr": {
       "titel": "Issues : pause, respiration, changement de lieu",
-      "text": "La courbe connaît Repérer, Sortir tôt et Vérifier ; aujourd’hui s’ajoute la quatrième issue : prendre du recul, qui fonctionne encore près du sommet. L’adulte explique qu’au sommet, réfléchir marche mal et que seule la distance aide. Puis le test : le ou la jeune imagine une scène légèrement agaçante (la récré est supprimée, un travail de groupe avec quelqu’un qui ne fait rien) et donne son chiffre. Ils essaient ensemble trois méthodes d’environ une minute par méthode – expirer longuement (inspirer sur quatre temps, expirer sur six), changer d’endroit (se lever, aller à la fenêtre et revenir, chercher de l’eau), faire une pause avec retour – et le ou la jeune redonne son chiffre après chaque méthode. Jeu de rôle sur la pause : l’adulte dit une phrase irritée (« Arrête un peu avec ça. »), le ou la jeune répond avec la phrase de pause (dire qu’on s’en va, pour combien de temps et qu’on revient), puis on inverse. Si le ou la jeune ne veut pas jouer, il ou elle choisit la meilleure phrase de pause sur la fiche.",
+      "text": "La courbe connaît Repérer, Stopper tôt et Vérifier ; aujourd’hui s’ajoute la quatrième issue : prendre du recul, qui fonctionne encore près du sommet. L’adulte explique qu’au sommet, réfléchir marche mal et que seule la distance aide. Puis le test : le ou la jeune imagine une scène légèrement agaçante (la récré est supprimée, un travail de groupe avec quelqu’un qui ne fait rien) et donne son chiffre. Ils essaient ensemble trois méthodes d’environ une minute par méthode – expirer longuement (inspirer sur quatre temps, expirer sur six), changer d’endroit (se lever, aller à la fenêtre et revenir, chercher de l’eau), faire une pause avec retour – et le ou la jeune redonne son chiffre après chaque méthode (l’adulte le note). Jeu de rôle sur la pause : l’adulte dit une phrase irritée (« Arrête un peu avec ça. »), le ou la jeune répond avec la phrase de pause (dire qu’on s’en va, pour combien de temps et qu’on revient), puis on inverse. Si le ou la jeune ne veut pas jouer, il ou elle choisit la meilleure phrase de pause sur la fiche.",
       "sagen": [
         "Au sommet, réfléchir ne mène à rien. Seul le recul aide.",
         "On teste trois méthodes d’une minute par méthode. Ensuite tu relis ton chiffre : est-il descendu ?",
-        "Une pause n’est pas une fuite si tu dis que tu pars, pour combien de temps et que tu reviens."
+        "Une pause n’est pas une fuite si tu dis que tu pars, pour combien de temps et que tu reviens.",
+        "Crier à pleins poumons ou taper sur quelque chose garde la courbe en haut. On teste donc des méthodes qui la font vraiment descendre."
       ],
       "wennEsKippt": "Si le ou la jeune ne sent pas de différence avec une méthode, c’est un résultat valable : elle sort du choix. Si l’exercice de respiration devient désagréable (vertige, oppression), on respire aussitôt normalement et on compare le chiffre sans respiration. Deux méthodes testées et une préférée suffisent."
     },
@@ -3590,7 +3628,7 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Ärger sagen ohne Eskalation – auch online",
-    "text": "Die Kurve hat vier Ausstiege; heute kommt der fünfte dazu: sagen, was los ist, ohne dass es eskaliert. Die Fachkraft zeigt den 4-Schritte-Satz (vereinfacht nach DEAR MAN): Was ist passiert (nur Fakten)? Was macht das mit mir (Ich-Satz)? Was brauche ich (eine konkrete Bitte)? Was hat der andere davon? Der oder die Jugendliche wählt eine Situation, die diese Woche wirklich ansteht – oder eine erfundene, die gut passen könnte – und plant: wer, wann, wo (oder in welchem Chat), welcher Satz. Dann das Rollenspiel in zwei Runden: Zuerst spielt er oder sie sich selbst und die Fachkraft die andere Person (erst freundlich, dann etwas abwehrend); danach tauschen die Rollen, und die Fachkraft spricht den Satz einmal gut und einmal schlecht, damit man den Unterschied hört. Für Nachrichten gilt: erst schreiben, nicht senden, Pause, noch einmal lesen; mag er oder sie nicht spielen, schreibt er oder sie den Satz als Entwurf, und die Fachkraft antwortet in der Rolle des Empfängers.",
+    "text": "Die Kurve hat vier Ausstiege; heute kommt der fünfte dazu: sagen, was los ist, ohne dass es eskaliert. Die Fachkraft zeigt den 4-Schritte-Satz (vereinfacht nach DEAR MAN): Was ist passiert (nur Fakten)? Was macht das mit mir (Ich-Satz)? Was brauche ich (eine konkrete Bitte)? Was hat der andere davon? Der oder die Jugendliche wählt eine Situation, die diese Woche wirklich ansteht – oder eine erfundene, die gut passen könnte – und überlegt mündlich: wer, wann, wo (oder in welchem Chat), welcher Satz – aufgeschrieben wird der Plan danach auf dem Blatt. Dann das Rollenspiel in zwei Runden: Zuerst spielt er oder sie sich selbst und die Fachkraft die andere Person (erst freundlich, dann etwas abwehrend); danach tauschen die Rollen, und die Fachkraft spricht den Satz einmal gut und einmal schlecht, damit man den Unterschied hört. Für Nachrichten gilt: erst schreiben, nicht senden, Pause, noch einmal lesen; mag er oder sie nicht spielen, schreibt er oder sie den Satz als Entwurf, und die Fachkraft antwortet in der Rolle des Empfängers.",
     "sagen": [
       "Wähle eine Situation, die diese Woche wirklich ansteht – oder eine, die gut passen könnte. Du entscheidest, wie nah sie an dir dran ist.",
       "Erst die Fakten, dann dein Gefühl, dann deine Bitte. Du sagst, was du brauchst, nicht, was der andere falsch macht.",
@@ -3769,7 +3807,7 @@
           "werte": [
             [
               "Wer?",
-              "Ben aus dem Training",
+              "Luca aus dem Training",
               ""
             ],
             [
@@ -3784,7 +3822,7 @@
             ],
             [
               "Mein Satz",
-              "„Dreimal kein Ball – das ärgert mich. Spiel mich bitte öfter an.“",
+              "„Dreimal kein Ball – das ärgert mich. Spiel mich bitte öfter an, dann spielen wir besser zusammen.“",
               ""
             ]
           ]
@@ -3873,7 +3911,7 @@
               "titel": "Ta courbe de la colère",
               "punkte": [
                 "Montée – sommet – descente : voilà comment la colère évolue",
-                "Issues 1–4 : Repérer · Sortir tôt · Vérifier · Prendre du recul",
+                "Issues 1–4 : Repérer · Stopper tôt · Vérifier · Prendre du recul",
                 "Aujourd’hui, issue 5 : Dire – sans escalade, aussi en ligne"
               ]
             },
@@ -3938,7 +3976,7 @@
             "Fait : que s’est-il passé ? (seulement ce qu’on peut constater de l’extérieur)",
             "Émotion : ça m’énerve parce que …",
             "Demande : j’aimerais que … / s’il te plaît …",
-            "Bénéfice : comme ça, … marchera mieux."
+            "Bénéfice : comme ça, … se passera mieux."
           ]
         },
         {
@@ -3962,7 +4000,7 @@
           "werte": [
             [
               "Qui ?",
-              "Ben, du club",
+              "Luca, du club",
               ""
             ],
             [
@@ -3977,7 +4015,7 @@
             ],
             [
               "Ma phrase",
-              "« Trois fois sans balle – ça m’énerve. Passe-moi plus souvent la balle, s’il te plaît. »",
+              "« Trois fois sans balle – ça m’énerve. Passe-moi plus souvent la balle : on jouera mieux ensemble. »",
               ""
             ]
           ]
@@ -4006,7 +4044,7 @@
           "items": [
             {
               "titel": "Montée",
-              "text": "Repérer · Sortir tôt · Vérifier"
+              "text": "Repérer · Stopper tôt · Vérifier"
             },
             {
               "titel": "Sommet",
@@ -4076,13 +4114,13 @@
     },
     "fr": {
       "titel": "Dire sa colère sans escalade – aussi en ligne",
-      "text": "La courbe a déjà quatre issues ; aujourd’hui s’ajoute la cinquième : dire ce qui ne va pas sans que ça dégénère. L’adulte présente la phrase en quatre étapes (version simplifiée de DEAR MAN) : que s’est-il passé (seulement les faits) ? Qu’est-ce que je ressens (un message-je) ? De quoi ai-je besoin (une demande concrète) ? Qu’est-ce que l’autre y gagne ? Le ou la jeune choisit une situation qui se présente vraiment cette semaine – ou une situation inventée qui pourrait convenir – et la prépare : qui, quand, où (ou dans quel chat), quelle phrase. Puis le jeu de rôle en deux tours : d’abord il ou elle joue son propre rôle et l’adulte joue l’autre personne (d’abord aimable, puis un peu sur la défensive) ; ensuite on inverse, et l’adulte dit la phrase une fois bien et une fois mal, pour qu’on entende la différence. Pour les messages : d’abord écrire, ne pas envoyer, faire une pause, relire ; si le ou la jeune ne veut pas jouer, il ou elle écrit la phrase comme brouillon et l’adulte répond dans le rôle du destinataire.",
+      "text": "La courbe a déjà quatre issues ; aujourd’hui s’ajoute la cinquième : dire ce qui ne va pas sans que ça dégénère. L’adulte présente la phrase en quatre étapes (version simplifiée de DEAR MAN) : que s’est-il passé (seulement les faits) ? Qu’est-ce que je ressens (un message-je) ? De quoi ai-je besoin (une demande concrète) ? Qu’est-ce que l’autre y gagne ? Le ou la jeune choisit une situation qui se présente vraiment cette semaine – ou une situation inventée qui pourrait convenir – et y réfléchit à voix haute : qui, quand, où (ou dans quel chat), quelle phrase – le plan est écrit ensuite sur la fiche. Puis le jeu de rôle en deux tours : d’abord il ou elle joue son propre rôle et l’adulte joue l’autre personne (d’abord aimable, puis un peu sur la défensive) ; ensuite on inverse, et l’adulte dit la phrase une fois bien et une fois mal, pour qu’on entende la différence. Pour les messages : d’abord écrire, ne pas envoyer, faire une pause, relire ; si le ou la jeune ne veut pas jouer, il ou elle écrit la phrase comme brouillon et l’adulte répond dans le rôle du destinataire.",
       "sagen": [
         "Choisis une situation qui se présente vraiment cette semaine – ou une qui pourrait convenir. Tu décides à quel point elle est proche de toi.",
         "D’abord les faits, puis ton émotion, puis ta demande. Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal.",
         "En ligne : d’abord écrire, envoyer plus tard. Relis après une pause."
       ],
-      "wennEsKippt": "Si aucune situation ne vient, l’adulte en propose une inventée (un coéquipier ne passe jamais la balle, un travail de groupe reste sur les épaules d’une seule personne). Si le ou la jeune ne veut pas jouer, la phrase écrite suffit et l’adulte y répond dans le rôle de l’autre. S’il s’agit de quelque chose de grave (menaces, exclusion qui dure), ce n’est plus un exercice : écouter, ne pas laisser seul·e et agir selon la procédure interne."
+      "wennEsKippt": "Si aucune situation ne vient, l’adulte en propose une inventée (un coéquipier ne passe jamais la balle, un travail de groupe reste sur les épaules d’une seule personne). Si le ou la jeune ne veut pas jouer, la phrase écrite suffit et l’adulte y répond dans le rôle de l’autre. S’il s’agit de quelque chose de grave (menaces, exclusion qui dure), ce n’est plus un exercice : écouter, ne pas laisser seul(e) et agir selon la procédure interne."
     },
     "zugang": {
       "lesen": 2,
@@ -4097,7 +4135,7 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Ärger sagen ohne Eskalation – auch online",
-    "text": "Die Kurve hat vier Ausstiege; heute kommt der fünfte dazu: sagen, was los ist, ohne dass es eskaliert. Die Fachkraft zeigt den 4-Schritte-Satz (vereinfacht nach DEAR MAN): Was ist passiert (nur Fakten)? Was macht das mit mir (Ich-Satz)? Was brauche ich (eine konkrete Bitte)? Was hat der andere davon? Der oder die Jugendliche wählt eine Situation, die diese Woche wirklich ansteht – oder eine erfundene, die gut passen könnte – und plant: wer, wann, wo (oder in welchem Chat), welcher Satz. Dann das Rollenspiel in zwei Runden: Zuerst spielt er oder sie sich selbst und die Fachkraft die andere Person (erst freundlich, dann etwas abwehrend); danach tauschen die Rollen, und die Fachkraft spricht den Satz einmal gut und einmal schlecht, damit man den Unterschied hört. Für Nachrichten gilt: erst schreiben, nicht senden, Pause, noch einmal lesen; mag er oder sie nicht spielen, schreibt er oder sie den Satz als Entwurf, und die Fachkraft antwortet in der Rolle des Empfängers.",
+    "text": "Die Kurve hat vier Ausstiege; heute kommt der fünfte dazu: sagen, was los ist, ohne dass es eskaliert. Die Fachkraft zeigt den 4-Schritte-Satz (vereinfacht nach DEAR MAN): Was ist passiert (nur Fakten)? Was macht das mit mir (Ich-Satz)? Was brauche ich (eine konkrete Bitte)? Was hat der andere davon? Der oder die Jugendliche wählt eine Situation, die diese Woche wirklich ansteht – oder eine erfundene, die gut passen könnte – und überlegt mündlich: wer, wann, wo (oder in welchem Chat), welcher Satz – aufgeschrieben wird der Plan danach auf dem Blatt. Dann das Rollenspiel in zwei Runden: Zuerst spielt er oder sie sich selbst und die Fachkraft die andere Person (erst freundlich, dann etwas abwehrend); danach tauschen die Rollen, und die Fachkraft spricht den Satz einmal gut und einmal schlecht, damit man den Unterschied hört. Für Nachrichten gilt: erst schreiben, nicht senden, Pause, noch einmal lesen; mag er oder sie nicht spielen, schreibt er oder sie den Satz als Entwurf, und die Fachkraft antwortet in der Rolle des Empfängers.",
     "sagen": [
       "Wähle eine Situation, die diese Woche wirklich ansteht – oder eine, die gut passen könnte. Du entscheidest, wie nah sie an dir dran ist.",
       "Erst die Fakten, dann dein Gefühl, dann deine Bitte. Du sagst, was du brauchst, nicht, was der andere falsch macht.",
@@ -4258,7 +4296,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Plane deine Situation: Kreuz an und schreib deinen Satz in drei Stichworten.",
+          "text": "Plane deine Situation: Kreuz an und schreib deinen Satz in Stichworten.",
           "hinweis": "Eine Situation, die diese Woche ansteht – oder eine erfundene. Du entscheidest, wie nah sie an dir dran ist."
         },
         {
@@ -4287,7 +4325,7 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Mein Satz (Fakt – Gefühl – Bitte):"
+            "Mein Satz (Fakt – Gefühl – Bitte – Nutzen):"
           ],
           "linien": 1
         },
@@ -4368,7 +4406,7 @@
               "titel": "Ta courbe de la colère",
               "punkte": [
                 "Montée – sommet – descente : voilà comment la colère évolue",
-                "Issues 1–4 : Repérer · Sortir tôt · Vérifier · Prendre du recul",
+                "Issues 1–4 : Repérer · Stopper tôt · Vérifier · Prendre du recul",
                 "Aujourd’hui, issue 5 : Dire – sans escalade, aussi en ligne"
               ]
             },
@@ -4434,12 +4472,12 @@
             "Fait : que s’est-il passé ? (seulement ce qu’on peut constater de l’extérieur)",
             "Émotion : ça m’énerve parce que …",
             "Demande : j’aimerais que … / s’il te plaît …",
-            "Bénéfice : comme ça, … marchera mieux."
+            "Bénéfice : comme ça, … se passera mieux."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Prépare ta situation : coche, puis note ta phrase en trois mots-clés.",
+          "text": "Prépare ta situation : coche, puis note ta phrase en mots-clés.",
           "hinweis": "Une situation qui se présente cette semaine – ou une situation inventée. Tu décides à quel point elle est proche de toi."
         },
         {
@@ -4450,7 +4488,7 @@
           "items": [
             "quelqu’un de ma classe",
             "quelqu’un de mon club ou de mon entraînement",
-            "un·e ami·e",
+            "un(e) ami(e)",
             "une personne dans le chat"
           ]
         },
@@ -4468,7 +4506,7 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Ma phrase (fait – émotion – demande) :"
+            "Ma phrase (fait – émotion – demande – bénéfice) :"
           ],
           "linien": 1
         },
@@ -4496,7 +4534,7 @@
           "items": [
             {
               "titel": "Montée",
-              "text": "Repérer · Sortir tôt · Vérifier"
+              "text": "Repérer · Stopper tôt · Vérifier"
             },
             {
               "titel": "Sommet",
@@ -4540,7 +4578,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die beiden Sätze, der oder die Jugendliche kreuzt an, nach welchem Jana eher zuhört. In Aufgabe 2 kreuzt er oder sie an, wer, wann und wo, und schreibt den Satz in drei Stichworten (Fakt – Gefühl – Bitte). Dann spielen beide die Situation in zwei Runden, und danach liest der oder die Jugendliche die Zahl auf der Kurve ab. Aufgabe 3 ist die Checkliste für Nachrichten. Das Modell und der Auftrag gehen mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die beiden Sätze, der oder die Jugendliche kreuzt an, nach welchem Jana eher zuhört. In Aufgabe 2 kreuzt er oder sie an, wer, wann und wo, und schreibt den Satz in Stichworten (Fakt – Gefühl – Bitte – Nutzen). Dann spielen beide die Situation in zwei Runden, und danach liest der oder die Jugendliche die Zahl auf der Kurve ab. Aufgabe 3 ist die Checkliste für Nachrichten. Das Modell und der Auftrag gehen mit.",
           "sagen": [
             "Wie hört sich dein Satz an, wenn du ihn laut sagst?",
             "Welche Zahl hast du nach dem Spielen – höher oder tiefer als vorher?"
@@ -4548,7 +4586,7 @@
           "wennEsKippt": "Fällt keine Situation ein, wählt die Fachkraft eine erfundene (Mitspieler passt nie zu, Gruppenarbeit bleibt an einem hängen). Drei Stichworte genügen; sie dürfen auch gesagt statt geschrieben werden. Mag der oder die Jugendliche nicht spielen, genügt der Satz in Stichworten."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les deux phrases, le ou la jeune coche après laquelle Jana écoute plus volontiers. À l’exercice 2, il ou elle coche qui, quand et où, et note la phrase en trois mots-clés (fait – émotion – demande). Ensuite, les deux jouent la situation en deux tours, puis le ou la jeune lit son chiffre sur la courbe. L’exercice 3 est la liste de contrôle pour les messages. Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : l’adulte lit les deux phrases, le ou la jeune coche après laquelle Jana écoute plus volontiers. À l’exercice 2, il ou elle coche qui, quand et où, et note la phrase en mots-clés (fait – émotion – demande – bénéfice). Ensuite, les deux jouent la situation en deux tours, puis le ou la jeune lit son chiffre sur la courbe. L’exercice 3 est la liste de contrôle pour les messages. Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "Comment sonne ta phrase quand tu la dis à voix haute ?",
             "Quel chiffre as-tu après le jeu de rôle – plus haut ou plus bas qu’avant ?"
@@ -4559,13 +4597,13 @@
     },
     "fr": {
       "titel": "Dire sa colère sans escalade – aussi en ligne",
-      "text": "La courbe a déjà quatre issues ; aujourd’hui s’ajoute la cinquième : dire ce qui ne va pas sans que ça dégénère. L’adulte présente la phrase en quatre étapes (version simplifiée de DEAR MAN) : que s’est-il passé (seulement les faits) ? Qu’est-ce que je ressens (un message-je) ? De quoi ai-je besoin (une demande concrète) ? Qu’est-ce que l’autre y gagne ? Le ou la jeune choisit une situation qui se présente vraiment cette semaine – ou une situation inventée qui pourrait convenir – et la prépare : qui, quand, où (ou dans quel chat), quelle phrase. Puis le jeu de rôle en deux tours : d’abord il ou elle joue son propre rôle et l’adulte joue l’autre personne (d’abord aimable, puis un peu sur la défensive) ; ensuite on inverse, et l’adulte dit la phrase une fois bien et une fois mal, pour qu’on entende la différence. Pour les messages : d’abord écrire, ne pas envoyer, faire une pause, relire ; si le ou la jeune ne veut pas jouer, il ou elle écrit la phrase comme brouillon et l’adulte répond dans le rôle du destinataire.",
+      "text": "La courbe a déjà quatre issues ; aujourd’hui s’ajoute la cinquième : dire ce qui ne va pas sans que ça dégénère. L’adulte présente la phrase en quatre étapes (version simplifiée de DEAR MAN) : que s’est-il passé (seulement les faits) ? Qu’est-ce que je ressens (un message-je) ? De quoi ai-je besoin (une demande concrète) ? Qu’est-ce que l’autre y gagne ? Le ou la jeune choisit une situation qui se présente vraiment cette semaine – ou une situation inventée qui pourrait convenir – et y réfléchit à voix haute : qui, quand, où (ou dans quel chat), quelle phrase – le plan est écrit ensuite sur la fiche. Puis le jeu de rôle en deux tours : d’abord il ou elle joue son propre rôle et l’adulte joue l’autre personne (d’abord aimable, puis un peu sur la défensive) ; ensuite on inverse, et l’adulte dit la phrase une fois bien et une fois mal, pour qu’on entende la différence. Pour les messages : d’abord écrire, ne pas envoyer, faire une pause, relire ; si le ou la jeune ne veut pas jouer, il ou elle écrit la phrase comme brouillon et l’adulte répond dans le rôle du destinataire.",
       "sagen": [
         "Choisis une situation qui se présente vraiment cette semaine – ou une qui pourrait convenir. Tu décides à quel point elle est proche de toi.",
         "D’abord les faits, puis ton émotion, puis ta demande. Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal.",
         "En ligne : d’abord écrire, envoyer plus tard. Relis après une pause."
       ],
-      "wennEsKippt": "Si aucune situation ne vient, l’adulte en propose une inventée (un coéquipier ne passe jamais la balle, un travail de groupe reste sur les épaules d’une seule personne). Si le ou la jeune ne veut pas jouer, la phrase écrite suffit et l’adulte y répond dans le rôle de l’autre. S’il s’agit de quelque chose de grave (menaces, exclusion qui dure), ce n’est plus un exercice : écouter, ne pas laisser seul·e et agir selon la procédure interne."
+      "wennEsKippt": "Si aucune situation ne vient, l’adulte en propose une inventée (un coéquipier ne passe jamais la balle, un travail de groupe reste sur les épaules d’une seule personne). Si le ou la jeune ne veut pas jouer, la phrase écrite suffit et l’adulte y répond dans le rôle de l’autre. S’il s’agit de quelque chose de grave (menaces, exclusion qui dure), ce n’est plus un exercice : écouter, ne pas laisser seul(e) et agir selon la procédure interne."
     },
     "zugang": {
       "lesen": 1,
@@ -4580,7 +4618,7 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Mein Plan für heiße Momente",
-    "text": "Die Kurve ist fast vollständig: Fünf Ausstiege sind da, heute kommt der sechste dazu, die Hilfe. Zuerst der Rückblick auf das ganze Modell: Die Fachkraft legt die Blätter der Mappe nebeneinander, der oder die Jugendliche zeigt bei jedem Ausstieg, wo auf der Kurve er hilft, und nennt ein Beispiel aus den Stunden. Dann entsteht der eigene Plan für heiße Momente: ein erstes Frühwarnzeichen, zwei Lieblings-Ausstiege und ein Satz. Zum Üben spielt die Fachkraft einen letzten kurzen Fall (ein Auslöser, eine Zahl), und der oder die Jugendliche sagt, an welcher Stelle der Kurve er oder sie aussteigt und womit; danach tauschen sie die Rollen. Zum Schluss: Wer hilft? Eine Vertrauensperson und die Nummern auf dem Blatt. Plan-Karte und Urkunde gehören dem oder der Jugendlichen.",
+    "text": "Die Kurve ist fast vollständig: Fünf Ausstiege sind da, heute kommt der sechste dazu, die Hilfe. Zuerst der Rückblick auf das ganze Modell: Die Fachkraft legt die Blätter der Mappe nebeneinander, der oder die Jugendliche zeigt bei jedem Ausstieg, wo auf der Kurve er hilft, und nennt ein Beispiel aus den Stunden. Dann entsteht der eigene Plan für heiße Momente: ein erstes Frühwarnzeichen, zwei Lieblings-Ausstiege und ein Satz. Zum Üben spielt die Fachkraft einen letzten kurzen Fall (ein Auslöser, eine Zahl), und der oder die Jugendliche sagt, an welcher Stelle der Kurve er oder sie aussteigt und womit; danach tauschen sie die Rollen. Zum Schluss: Wer hilft? Eine Vertrauensperson und die Nummern auf dem Blatt; einen Satz zum Ansprechen („Hast du kurz Zeit? Mir ist gerade alles zu viel.“) spricht er oder sie einmal laut aus. Plan-Karte und Urkunde gehören dem oder der Jugendlichen.",
     "sagen": [
       "Sieh dir die ganze Kurve an: Welcher Ausstieg hat bei dir in diesen Wochen am meisten gewirkt?",
       "Dein Plan muss kurz sein: ein Zeichen, zwei Ausstiege, ein Satz. Dann findest du ihn auch bei Zahl sieben.",
@@ -4742,7 +4780,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein Plan für heiße Momente: Füll die Lücken aus. Das ist dein Plan und deine Urkunde."
+          "text": "Dein Plan für heiße Momente: Füll die Lücken aus. Das ist dein Plan – mit deiner Unterschrift."
         },
         {
           "art": "vertrag",
@@ -4770,7 +4808,8 @@
             "mein erstes Zeichen früh bemerken",
             "einen heißen Gedanken prüfen",
             "eine Auszeit nehmen",
-            "Ärger fair sagen"
+            "Ärger fair sagen",
+            "mir Hilfe holen, wenn es zu viel wird"
           ],
           "optionen": [
             "noch nicht",
@@ -4780,7 +4819,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Nutze einen Ausstieg bewusst und hak ihn auf deiner Karte ab."
+          "text": "Bis zum nächsten Mal: Nutze mindestens einen Ausstieg bewusst und hak ihn auf deiner Karte ab."
         },
         {
           "art": "zielkarte",
@@ -4808,7 +4847,7 @@
               "titel": "Ta courbe de la colère",
               "punkte": [
                 "Montée – sommet – descente : voilà comment la colère évolue",
-                "Issues 1–5 : Repérer · Sortir tôt · Vérifier · Prendre du recul · Dire",
+                "Issues 1–5 : Repérer · Stopper tôt · Vérifier · Prendre du recul · Dire",
                 "Aujourd’hui, issue 6 : Aide – qui peut m’aider"
               ]
             },
@@ -4851,7 +4890,7 @@
               ""
             ],
             [
-              "2 Sortir tôt",
+              "2 Stopper tôt",
               "montée : premier signe",
               ""
             ],
@@ -4879,7 +4918,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ton plan pour les moments chauds : complète les blancs. C’est ton plan et ton diplôme."
+          "text": "Ton plan pour les moments chauds : complète les blancs. C’est ton plan, avec ta signature."
         },
         {
           "art": "vertrag",
@@ -4907,7 +4946,8 @@
             "remarquer tôt mon premier signe",
             "vérifier une pensée qui chauffe",
             "prendre du recul",
-            "dire ma colère de façon juste"
+            "dire ma colère de façon juste",
+            "demander de l’aide quand c’est trop"
           ],
           "optionen": [
             "pas encore",
@@ -4917,7 +4957,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : utilise une issue consciemment et coche-la sur ta carte."
+          "text": "D’ici la prochaine fois : utilise au moins une issue consciemment et coche-la sur ta carte."
         },
         {
           "art": "zielkarte",
@@ -4926,7 +4966,7 @@
           "kaestchen": 6,
           "tage": [
             "Repérer",
-            "Sortir tôt",
+            "Stopper tôt",
             "Vérifier",
             "Recul",
             "Dire",
@@ -4944,9 +4984,9 @@
           "wennEsKippt": "Fällt das Ausfüllen schwer, genügen ein Zeichen, ein Ausstieg und ein Satz. Mag der oder die Jugendliche keine Person eintragen, bleibt das Feld leer – die Nummern gelten trotzdem. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune passe en revue les six issues et note pour chaque issue un mot-clé sur ce qui l’a aidé ; l’adulte donne au besoin un exemple tiré des séances. À l’exercice 2, il ou elle complète seul·e les blancs du plan et signe. À l’exercice 3, il ou elle inscrit une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit brièvement les numéros. Le bilan et la carte sont facultatifs et viennent à la fin ; le dossier avec toutes les fiches fait partie de l’au revoir.",
+          "text": "Exercice 1 ensemble : le ou la jeune passe en revue les six issues et note pour chaque issue un mot-clé sur ce qui l’a aidé ; l’adulte donne au besoin un exemple tiré des séances. À l’exercice 2, il ou elle complète seul(e) les blancs du plan et signe. À l’exercice 3, il ou elle inscrit une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit brièvement les numéros. Le bilan et la carte sont facultatifs et viennent à la fin ; le dossier avec toutes les fiches fait partie de l’au revoir.",
           "sagen": [
-            "Quelle issue t’a le plus surpris·e ?",
+            "Quelle issue t’a le plus surpris(e) ?",
             "À quoi remarquerais-tu que tu sors assez tôt ?"
           ],
           "wennEsKippt": "Si compléter est difficile, un signe, une issue et une phrase suffisent. Si le ou la jeune ne veut pas noter de personne, le champ reste vide – les numéros valent quand même. Si le temps presse, les exercices 1 et 2 suffisent."
@@ -4955,13 +4995,13 @@
     },
     "fr": {
       "titel": "Mon plan pour les moments chauds",
-      "text": "La courbe est presque complète : cinq issues sont là, aujourd’hui s’ajoute la sixième, l’aide. D’abord le bilan du modèle entier : l’adulte étale les fiches du dossier, le ou la jeune montre pour chaque issue à quel endroit de la courbe elle aide et cite un exemple tiré des séances. Puis il ou elle prépare son propre plan pour les moments chauds : un premier signe avant-coureur, deux issues préférées et une phrase. Pour s’entraîner, l’adulte joue un dernier cas court (un déclencheur, un chiffre) et le ou la jeune dit à quel endroit de la courbe il ou elle sort, et avec quoi ; ensuite, on inverse les rôles. Pour finir : qui aide ? Une personne de confiance et les numéros sur la fiche. La carte du plan et le diplôme appartiennent au ou à la jeune.",
+      "text": "La courbe est presque complète : cinq issues sont là, aujourd’hui s’ajoute la sixième, l’aide. D’abord le bilan du modèle entier : l’adulte étale les fiches du dossier, le ou la jeune montre pour chaque issue à quel endroit de la courbe elle aide et cite un exemple tiré des séances. Puis il ou elle prépare son propre plan pour les moments chauds : un premier signe avant-coureur, deux issues préférées et une phrase. Pour s’entraîner, l’adulte joue un dernier cas court (un déclencheur, un chiffre) et le ou la jeune dit à quel endroit de la courbe il ou elle sort, et avec quoi ; ensuite, on inverse les rôles. Pour finir : qui aide ? Une personne de confiance et les numéros sur la fiche ; le ou la jeune dit une fois à voix haute une phrase pour l’aborder (« Tu as une minute ? Là, c’est trop pour moi. »). La carte du plan et le diplôme appartiennent au ou à la jeune.",
       "sagen": [
         "Regarde toute la courbe : quelle issue a le plus marché pour toi pendant ces séances ?",
         "Ton plan doit rester court : un signe, deux issues, une phrase. Comme ça, tu le retrouves même à sept.",
         "Qui, près de toi, pourrait t’aider quand c’est trop ? Tu n’as pas besoin de dire un nom."
       ],
-      "wennEsKippt": "Si le choix est difficile, un signe et une issue suffisent ; l’adulte donne un exemple tiré des séances. S’il ou elle ne veut pas jouer le cas, il ou elle montre l’endroit sur la courbe simplement du doigt. Si le ou la jeune ne veut pas noter de personne, le champ reste vide – les numéros valent quand même. S’il ou elle évoque quelque chose de lourd, il ne s’agit plus de la fiche : écouter, ne pas laisser seul·e et agir selon la procédure interne."
+      "wennEsKippt": "Si le choix est difficile, un signe et une issue suffisent ; l’adulte donne un exemple tiré des séances. S’il ou elle ne veut pas jouer le cas, il ou elle montre l’endroit sur la courbe simplement du doigt. Si le ou la jeune ne veut pas noter de personne, le champ reste vide – les numéros valent quand même. S’il ou elle évoque quelque chose de lourd, il ne s’agit plus de la fiche : écouter, ne pas laisser seul(e) et agir selon la procédure interne."
     },
     "zugang": {
       "lesen": 2,
@@ -4976,7 +5016,7 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Mein Plan für heiße Momente",
-    "text": "Die Kurve ist fast vollständig: Fünf Ausstiege sind da, heute kommt der sechste dazu, die Hilfe. Zuerst der Rückblick auf das ganze Modell: Die Fachkraft legt die Blätter der Mappe nebeneinander, der oder die Jugendliche zeigt bei jedem Ausstieg, wo auf der Kurve er hilft, und nennt ein Beispiel aus den Stunden. Dann entsteht der eigene Plan für heiße Momente: ein erstes Frühwarnzeichen, zwei Lieblings-Ausstiege und ein Satz. Zum Üben spielt die Fachkraft einen letzten kurzen Fall (ein Auslöser, eine Zahl), und der oder die Jugendliche sagt, an welcher Stelle der Kurve er oder sie aussteigt und womit; danach tauschen sie die Rollen. Zum Schluss: Wer hilft? Eine Vertrauensperson und die Nummern auf dem Blatt. Plan-Karte und Urkunde gehören dem oder der Jugendlichen.",
+    "text": "Die Kurve ist fast vollständig: Fünf Ausstiege sind da, heute kommt der sechste dazu, die Hilfe. Zuerst der Rückblick auf das ganze Modell: Die Fachkraft legt die Blätter der Mappe nebeneinander, der oder die Jugendliche zeigt bei jedem Ausstieg, wo auf der Kurve er hilft, und nennt ein Beispiel aus den Stunden. Dann entsteht der eigene Plan für heiße Momente: ein erstes Frühwarnzeichen, zwei Lieblings-Ausstiege und ein Satz. Zum Üben spielt die Fachkraft einen letzten kurzen Fall (ein Auslöser, eine Zahl), und der oder die Jugendliche sagt, an welcher Stelle der Kurve er oder sie aussteigt und womit; danach tauschen sie die Rollen. Zum Schluss: Wer hilft? Eine Vertrauensperson und die Nummern auf dem Blatt; einen Satz zum Ansprechen („Hast du kurz Zeit? Mir ist gerade alles zu viel.“) spricht er oder sie einmal laut aus. Plan-Karte und Urkunde gehören dem oder der Jugendlichen.",
     "sagen": [
       "Sieh dir die ganze Kurve an: Welcher Ausstieg hat bei dir in diesen Wochen am meisten gewirkt?",
       "Dein Plan muss kurz sein: ein Zeichen, zwei Ausstiege, ein Satz. Dann findest du ihn auch bei Zahl sieben.",
@@ -5155,14 +5195,18 @@
         },
         {
           "art": "aufgabe",
-          "text": "Rückblick: Wie sicher fühlst du dich mit deinem Plan?"
+          "text": "Rückblick: Wie fühlst du dich jetzt – im Vergleich zum Anfang?"
         },
         {
-          "art": "rueckblick"
+          "art": "skala",
+          "frage": "Wie sicher bist du mit deinem Plan?",
+          "von": "noch unsicher",
+          "bis": "sehr sicher",
+          "stufen": 5
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Nutze einen Ausstieg bewusst und hak ihn auf deiner Karte ab."
+          "text": "Bis zum nächsten Mal: Nutze mindestens einen Ausstieg bewusst und hak ihn auf deiner Karte ab."
         },
         {
           "art": "zielkarte",
@@ -5190,7 +5234,7 @@
               "titel": "Ta courbe de la colère",
               "punkte": [
                 "Montée – sommet – descente : voilà comment la colère évolue",
-                "Issues 1–5 : Repérer · Sortir tôt · Vérifier · Prendre du recul · Dire",
+                "Issues 1–5 : Repérer · Stopper tôt · Vérifier · Prendre du recul · Dire",
                 "Aujourd’hui, issue 6 : Aide – qui peut m’aider"
               ]
             },
@@ -5217,7 +5261,7 @@
           "art": "einschaetzung",
           "items": [
             "1 Repérer : lire le chiffre",
-            "2 Sortir tôt : premier signe",
+            "2 Stopper tôt : premier signe",
             "3 Vérifier : fait ou supposition",
             "4 Prendre du recul : pause, respiration, autre lieu",
             "5 Dire : fait – émotion – demande",
@@ -5252,7 +5296,7 @@
           "spalten": 3,
           "items": [
             "Repérer",
-            "Sortir tôt",
+            "Stopper tôt",
             "Vérifier",
             "Prendre du recul",
             "Dire",
@@ -5278,14 +5322,18 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bilan : à quel point te sens-tu sûr·e de ton plan ?"
+          "text": "Bilan : comment te sens-tu maintenant, par rapport au début ?"
         },
         {
-          "art": "rueckblick"
+          "art": "skala",
+          "frage": "À quel point es-tu sûr(e) de ton plan ?",
+          "von": "pas encore sûr(e)",
+          "bis": "très sûr(e)",
+          "stufen": 5
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : utilise une issue consciemment et coche-la sur ta carte."
+          "text": "D’ici la prochaine fois : utilise au moins une issue consciemment et coche-la sur ta carte."
         },
         {
           "art": "zielkarte",
@@ -5294,7 +5342,7 @@
           "kaestchen": 6,
           "tage": [
             "Repérer",
-            "Sortir tôt",
+            "Stopper tôt",
             "Vérifier",
             "Recul",
             "Dire",
@@ -5314,7 +5362,7 @@
         "fr": {
           "text": "Exercice 1 ensemble : le ou la jeune passe en revue les six issues et coche dans quelle mesure chaque issue l’aide ; l’adulte donne au besoin un exemple tiré des séances. À l’exercice 2, il ou elle coche le premier signe, deux issues et une phrase. À l’exercice 3, il ou elle inscrit une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit brièvement les numéros. Le bilan et la carte se font en cochant et viennent à la fin ; le dossier avec toutes les fiches fait partie de l’au revoir.",
           "sagen": [
-            "Quelle issue t’a le plus surpris·e ?",
+            "Quelle issue t’a le plus surpris(e) ?",
             "À quoi remarquerais-tu que tu sors assez tôt ?"
           ],
           "wennEsKippt": "Si le choix est difficile, un signe et une issue suffisent ; l’adulte donne un exemple tiré des séances. Si le ou la jeune ne veut pas noter de personne, le champ reste vide – les numéros valent quand même. Si le temps presse, les exercices 1 et 2 suffisent."
@@ -5323,13 +5371,13 @@
     },
     "fr": {
       "titel": "Mon plan pour les moments chauds",
-      "text": "La courbe est presque complète : cinq issues sont là, aujourd’hui s’ajoute la sixième, l’aide. D’abord le bilan du modèle entier : l’adulte étale les fiches du dossier, le ou la jeune montre pour chaque issue à quel endroit de la courbe elle aide et cite un exemple tiré des séances. Puis il ou elle prépare son propre plan pour les moments chauds : un premier signe avant-coureur, deux issues préférées et une phrase. Pour s’entraîner, l’adulte joue un dernier cas court (un déclencheur, un chiffre) et le ou la jeune dit à quel endroit de la courbe il ou elle sort, et avec quoi ; ensuite, on inverse les rôles. Pour finir : qui aide ? Une personne de confiance et les numéros sur la fiche. La carte du plan et le diplôme appartiennent au ou à la jeune.",
+      "text": "La courbe est presque complète : cinq issues sont là, aujourd’hui s’ajoute la sixième, l’aide. D’abord le bilan du modèle entier : l’adulte étale les fiches du dossier, le ou la jeune montre pour chaque issue à quel endroit de la courbe elle aide et cite un exemple tiré des séances. Puis il ou elle prépare son propre plan pour les moments chauds : un premier signe avant-coureur, deux issues préférées et une phrase. Pour s’entraîner, l’adulte joue un dernier cas court (un déclencheur, un chiffre) et le ou la jeune dit à quel endroit de la courbe il ou elle sort, et avec quoi ; ensuite, on inverse les rôles. Pour finir : qui aide ? Une personne de confiance et les numéros sur la fiche ; le ou la jeune dit une fois à voix haute une phrase pour l’aborder (« Tu as une minute ? Là, c’est trop pour moi. »). La carte du plan et le diplôme appartiennent au ou à la jeune.",
       "sagen": [
         "Regarde toute la courbe : quelle issue a le plus marché pour toi pendant ces séances ?",
         "Ton plan doit rester court : un signe, deux issues, une phrase. Comme ça, tu le retrouves même à sept.",
         "Qui, près de toi, pourrait t’aider quand c’est trop ? Tu n’as pas besoin de dire un nom."
       ],
-      "wennEsKippt": "Si le choix est difficile, un signe et une issue suffisent ; l’adulte donne un exemple tiré des séances. S’il ou elle ne veut pas jouer le cas, il ou elle montre l’endroit sur la courbe simplement du doigt. Si le ou la jeune ne veut pas noter de personne, le champ reste vide – les numéros valent quand même. S’il ou elle évoque quelque chose de lourd, il ne s’agit plus de la fiche : écouter, ne pas laisser seul·e et agir selon la procédure interne."
+      "wennEsKippt": "Si le choix est difficile, un signe et une issue suffisent ; l’adulte donne un exemple tiré des séances. S’il ou elle ne veut pas jouer le cas, il ou elle montre l’endroit sur la courbe simplement du doigt. Si le ou la jeune ne veut pas noter de personne, le champ reste vide – les numéros valent quand même. S’il ou elle évoque quelque chose de lourd, il ne s’agit plus de la fiche : écouter, ne pas laisser seul(e) et agir selon la procédure interne."
     },
     "zugang": {
       "lesen": 1,
@@ -5345,9 +5393,9 @@
       "titel": "Einzelkurs Ärger im Griff"
     },
     "titel": "Kurven-Check",
-    "text": "Zum Ankommen lesen die Fachkraft und der oder die Jugendliche ihre Ärger-Kurve ab: Beide nennen eine Zahl von 0 (ganz ruhig) bis 10 (Gipfel) und, wenn sie mögen, ein Wort für den Grund. Die Fachkraft beginnt und macht es kurz vor. Nachgefragt wird nicht, „Pass“ ist eine gültige Antwort. Das Ritual läuft jedes Mal gleich.",
+    "text": "Zum Ankommen lesen die Fachkraft und der oder die Jugendliche ihre Ärger-Kurve ab: Beide nennen eine Zahl von 0 (ganz ruhig) bis 10 (Gipfel) und, wenn sie mögen, ein Wort für den Grund. In der ersten Stunde ist die Kurve noch neu; dort genügt die Frage, wie hoch der Ärger gerade steht. Die Fachkraft beginnt und macht es kurz vor. Nachgefragt wird nicht, „Pass“ ist eine gültige Antwort. Das Ritual läuft jedes Mal gleich.",
     "sagen": [
-      "Kurven-Check: eine Zahl von 0 bis 10 und, wenn du magst, ein Wort dazu. Ich fange an: „Eine 3, viel zu tun.“",
+      "Kurven-Check: Wie hoch steht dein Ärger gerade? Null ist ganz ruhig, zehn ist der Gipfel. Sag eine Zahl und, wenn du magst, ein Wort dazu. Ich fange an: „Eine 3, viel zu tun.“",
       "Du kannst auch „Pass“ sagen. Dann starten wir einfach so."
     ],
     "wennEsKippt": "Fällt keine Zahl ein, genügt eine Handbewegung (von der Tischkante bis zur Kopfhöhe). „Pass“ ist eine gültige Antwort. Nennt der oder die Jugendliche eine 7 oder mehr, wird nicht nachgefragt: Die Fachkraft nimmt es ruhig als Information, beginnt mit einer Minute lang Ausatmen oder Gehen und fragt am Ende der Stunde noch einmal nach der Zahl.",
@@ -5381,9 +5429,9 @@
     "qualitaet": "geprueft",
     "fr": {
       "titel": "Point sur la courbe",
-      "text": "Pour arriver, l’adulte et le ou la jeune lisent leur courbe de la colère : tous deux donnent un chiffre de 0 (très calme) à 10 (sommet) et, s’ils le souhaitent, un mot pour la raison. L’adulte commence et montre l’exemple. On ne pose pas de questions ; « je passe » est une réponse valable. Le rituel se déroule chaque fois de la même façon.",
+      "text": "Pour arriver, l’adulte et le ou la jeune lisent leur courbe de la colère : tous deux donnent un chiffre de 0 (très calme) à 10 (sommet) et, s’ils le souhaitent, un mot pour la raison. À la première séance, la courbe est encore nouvelle : il suffit alors de demander à quelle hauteur est la colère en ce moment. L’adulte commence et montre l’exemple. On ne pose pas de questions ; « je passe » est une réponse valable. Le rituel se déroule chaque fois de la même façon.",
       "sagen": [
-        "Point sur la courbe : un chiffre de 0 à 10 et, si tu veux, un mot. Je commence : « Un 3, beaucoup à faire. »",
+        "Point sur la courbe : à quelle hauteur est ta colère en ce moment ? Zéro, c’est très calme ; dix, c’est le sommet. Dis un chiffre et, si tu veux, un mot. Je commence : « Un 3, beaucoup à faire. »",
         "Tu peux aussi dire « je passe ». Alors on commence simplement."
       ],
       "wennEsKippt": "Si aucun chiffre ne vient, un geste de la main suffit (du bord de la table à la hauteur de la tête). « Je passe » est une réponse valable. Si le ou la jeune donne un 7 ou plus, on ne pose pas de question : l’adulte le prend calmement comme une information, commence par une minute d’expiration lente ou de marche et redemande le chiffre à la fin de la séance."

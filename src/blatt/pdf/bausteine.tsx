@@ -649,6 +649,9 @@ function reihen<T>(liste: T[], sp: number): T[][] {
   return out
 }
 
+/** Bilderreihe als wachsendes Modell: das Bild von heute ist getönt und umrandet (Kurs-Kritik 16.10.) */
+const istHeute = (x: { text?: string; heute?: boolean }) => x.heute ?? HEUTE_RE.test(x.text ?? '')
+
 function Bilder({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'bilder' }> }) {
   const luecke = 10
   // in schmalen Spalten nicht mehr Bilder nebeneinander, als sinnvoll Platz haben (mind. ca. 70 pt je Karte)
@@ -662,7 +665,7 @@ function Bilder({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'bilder' }> }) {
         {reihen(b.bilder, sp).map((reihe, k) => (
           <View key={k} wrap={false} style={{ flexDirection: 'row' }}>
             {reihe.map((x, i) => (
-              <View key={i} style={{ width: kb, marginRight: i < sp - 1 ? luecke : 0, marginBottom: 6, flexDirection: 'row', alignItems: 'center' }}>
+              <View key={i} style={{ width: kb, marginRight: i < sp - 1 ? luecke : 0, marginBottom: 6, flexDirection: 'row', alignItems: 'center', ...(istHeute(x) ? { backgroundColor: c.p.zart, borderRadius: 999, borderWidth: 1.5, borderColor: c.p.tief, paddingRight: 6 } : {}) }}>
                 <Plakette c={c} id={x.bild} d={d} />
                 {x.text ? (
                   /[_[{#]/.test(x.text) && !farbTeile(x.text) ? (
@@ -690,7 +693,7 @@ function Bilder({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'bilder' }> }) {
       {reihen(b.bilder, sp).map((reihe, k) => (
         <View key={k} wrap={false} style={{ flexDirection: 'row' }}>
           {reihe.map((x, i) => (
-            <View key={i} style={{ width: kb, marginRight: i < sp - 1 ? luecke : 0, marginBottom: luecke, borderWidth: 1, borderColor: NEUTRAL.haarlinie, borderRadius: 12, alignItems: 'center', paddingVertical: 10, paddingHorizontal: 6 }}>
+            <View key={i} style={{ width: kb, marginRight: i < sp - 1 ? luecke : 0, marginBottom: luecke, borderWidth: istHeute(x) ? 2 : 1, borderColor: istHeute(x) ? c.p.tief : NEUTRAL.haarlinie, backgroundColor: istHeute(x) ? c.p.zart : undefined, borderRadius: 12, alignItems: 'center', paddingVertical: istHeute(x) ? 9 : 10, paddingHorizontal: istHeute(x) ? 5 : 6 }}>
               <View style={{ height: bildB * 0.95, justifyContent: 'center', alignItems: 'center' }}>
                 {x.bild.startsWith('icon:') && b.modus !== 'anmalen' ? (
                   <Plakette c={c} id={x.bild} d={bildB * 0.92} />
