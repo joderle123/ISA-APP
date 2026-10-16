@@ -27,23 +27,25 @@ export const GEFUEHLE: Gefuehl[] = [
   'neutral',
 ]
 
+/** Wörter unter den Gesichtern. Französisch als Nomen, wie in der Gefühlspädagogik üblich (« la joie, la colère … ») –
+ *  statt „joyeux·se“ (Kurs-Kritik 16.10.: Mittelpunkt-Formen sind für Kinder schwer zu lesen). */
 export const GEFUEHL_WORT: Record<Gefuehl, { de: string; fr: string }> = {
-  froh: { de: 'froh', fr: 'joyeux·se' },
-  traurig: { de: 'traurig', fr: 'triste' },
-  wuetend: { de: 'wütend', fr: 'en colère' },
-  aengstlich: { de: 'ängstlich', fr: 'effrayé·e' },
-  ueberrascht: { de: 'überrascht', fr: 'surpris·e' },
-  angeekelt: { de: 'angeekelt', fr: 'dégoûté·e' },
+  froh: { de: 'froh', fr: 'joie' },
+  traurig: { de: 'traurig', fr: 'tristesse' },
+  wuetend: { de: 'wütend', fr: 'colère' },
+  aengstlich: { de: 'ängstlich', fr: 'peur' },
+  ueberrascht: { de: 'überrascht', fr: 'surprise' },
+  angeekelt: { de: 'angeekelt', fr: 'dégoût' },
   ruhig: { de: 'ruhig', fr: 'calme' },
-  stolz: { de: 'stolz', fr: 'fier·ère' },
-  verlegen: { de: 'verlegen', fr: 'gêné·e' },
-  muede: { de: 'müde', fr: 'fatigué·e' },
-  nervoes: { de: 'nervös', fr: 'nerveux·se' },
-  enttaeuscht: { de: 'enttäuscht', fr: 'déçu·e' },
-  gelangweilt: { de: 'gelangweilt', fr: 'ennuyé·e' },
-  verwirrt: { de: 'verwirrt', fr: 'perdu·e' },
-  aufgeregt: { de: 'aufgeregt', fr: 'excité·e' },
-  besorgt: { de: 'besorgt', fr: 'inquiet·ète' },
+  stolz: { de: 'stolz', fr: 'fierté' },
+  verlegen: { de: 'verlegen', fr: 'gêne' },
+  muede: { de: 'müde', fr: 'fatigue' },
+  nervoes: { de: 'nervös', fr: 'nervosité' },
+  enttaeuscht: { de: 'enttäuscht', fr: 'déception' },
+  gelangweilt: { de: 'gelangweilt', fr: 'ennui' },
+  verwirrt: { de: 'verwirrt', fr: 'confusion' },
+  aufgeregt: { de: 'aufgeregt', fr: 'excitation' },
+  besorgt: { de: 'besorgt', fr: 'inquiétude' },
   neutral: { de: 'neutral', fr: 'neutre' },
 }
 

@@ -1216,11 +1216,11 @@ function Leiter({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'leiter' }> }) {
       ) : null}
       {reihe.map((i) => (
         <View key={i} style={{ flexDirection: 'row', alignItems: 'flex-end', height: stufeH, marginLeft: versatz * i }}>
-          <View style={{ flex: 1, height: stufeH - 4, flexDirection: 'row', alignItems: 'flex-end', borderBottomWidth: 3, borderBottomColor: c.p.tief, borderLeftWidth: 1, borderLeftColor: c.p.mittel, backgroundColor: i % 2 ? c.p.zart : '#FFFFFF', paddingLeft: 6, paddingBottom: 4 }}>
+          <View style={{ flex: 1, height: stufeH - 4, flexDirection: 'row', alignItems: 'flex-end', borderBottomWidth: 3, borderBottomColor: c.p.tief, borderLeftWidth: HEUTE_RE.test(b.beispiele?.[i] ?? '') ? 4 : 1, borderLeftColor: HEUTE_RE.test(b.beispiele?.[i] ?? '') ? c.p.tief : c.p.mittel, backgroundColor: i % 2 ? c.p.zart : '#FFFFFF', paddingLeft: 6, paddingBottom: 4 }}>
             <Nummer c={c} n={i + 1} d={c.m.nummer * 0.85} />
             <View style={{ flex: 1, marginLeft: 8, marginRight: 8, height: c.m.zeile * 0.8, justifyContent: 'flex-end', borderBottomWidth: b.beispiele?.[i] ? 0 : 0.8, borderBottomColor: NEUTRAL.linie }}>
               {b.beispiele?.[i] ? (
-                <Fliess c={c} klein farbe={NEUTRAL.leise}>
+                <Fliess c={c} klein fett={HEUTE_RE.test(b.beispiele[i])} farbe={HEUTE_RE.test(b.beispiele[i]) ? c.p.tief : NEUTRAL.leise}>
                   {t(c, b.beispiele[i])}
                 </Fliess>
               ) : null}
@@ -1355,15 +1355,20 @@ function Mindmap({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'mindmap' }> })
   )
 }
 
+/** „heute“ in einer Kette oder auf einer Leiter-Sprosse (Kurse: „Heute: …“, « aujourd’hui ») */
+const HEUTE_RE = /(^|[\s(–-])(heute|aujourd[’']hui)\b/i
+
 function Schritte({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'schritte' }> }) {
   const lin = b.linien ?? 1
   if (b.stil === 'kette' || b.stil === 'weg') {
     const n = b.items.length
+    // nur der Schritt von heute ist getönt (Kurs-Kritik 16.10.: abwechselnd getönte Kästchen sahen aus wie „schon erledigt“)
+    const heute = b.items.map((s) => s.heute ?? HEUTE_RE.test(`${s.titel} ${s.text ?? ''}`))
     return (
       <View wrap={false} style={{ flexDirection: 'row', alignItems: 'stretch' }}>
         {b.items.map((s, i) => (
           <View key={i} style={{ flexDirection: 'row', flex: 1, alignItems: 'center' }}>
-            <View style={{ flex: 1, alignSelf: 'stretch', borderRadius: 10, borderWidth: 1, borderColor: c.p.mittel, backgroundColor: i % 2 ? '#FFFFFF' : c.p.zart, padding: 8, paddingBottom: 3 }}>
+            <View style={{ flex: 1, alignSelf: 'stretch', borderRadius: 10, borderWidth: heute[i] ? 2 : 1, borderColor: heute[i] ? c.p.tief : c.p.mittel, backgroundColor: heute[i] ? c.p.zart : '#FFFFFF', padding: heute[i] ? 7 : 8, paddingBottom: 3 }}>
               <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 3 }}>
                 <Nummer c={c} n={i + 1} d={c.m.nummer * 0.8} />
                 <Fliess c={c} fett style={{ marginLeft: 6, flex: 1 }} groesse={c.m.basis * (n > 3 ? 0.9 : 1)}>

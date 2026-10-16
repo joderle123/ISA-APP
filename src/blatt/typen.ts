@@ -104,6 +104,8 @@ export type Kleidungsstueck =
 export interface Stufentext {
   titel: string
   text?: string
+  /** Kette/Weg: dieser Schritt ist heute dran (hervorgehoben); ohne Angabe gilt ein Titel oder Text mit „heute“/« aujourd’hui » */
+  heute?: boolean
 }
 
 export type Baustein =
@@ -136,7 +138,7 @@ export type Baustein =
   | { art: 'skala'; frage?: string; von: string; bis: string; stufen?: 5 | 10 | 11; gesichter?: boolean }
   | { art: 'einschaetzung'; items: string[]; optionen: string[] }
   | { art: 'zuordnen'; links: string[]; rechts: string[]; titel?: [string, string] }
-  /** `woerter`: eigene Wörter unter den Gesichtern (statt der Standardwörter, z. B. « content » statt « joyeux·se »). */
+  /** `woerter`: eigene Wörter unter den Gesichtern (statt der Standardwörter, z. B. « content » statt « joie »). */
   | { art: 'gefuehle'; gefuehle: Gefuehl[]; modus?: 'benennen' | 'einkreisen' | 'nur'; leer?: number; spalten?: number; woerter?: string[] }
   /** Gefühlsrad nach Willcox: innen Grundgefühle, außen genauere Wörter. Ohne `felder` gelten die
    *  Standardwörter; `aussenLeer` lässt den Außenring zum Selbstausfüllen frei. */
