@@ -347,6 +347,10 @@ function PlanSeite({ plan, nr, breite, onSchritt }: { plan: Plan; nr: number; br
     if (innen.current) setH(Math.max(297 * MM, innen.current.scrollHeight))
   })
   let t = 0
+  // Im Spiel üben: wie auf dem Planblatt unter dem ersten Bewegungs- oder Spielblock
+  const ims0 = pg.katalog && !leicht ? K.imSpielStelle(pg.katalog, plan, nr) : null
+  const imSpielI = ims0?.i ?? -1
+  const imSpiel = ims0?.text ?? null
   const material: string[] = []
   s.schritte.forEach((x) => {
     const e = pg.katalog ? K.eintrag(pg.katalog, x.ref) : undefined
@@ -388,6 +392,7 @@ function PlanSeite({ plan, nr, breite, onSchritt }: { plan: Plan; nr: number; br
           </thead>
           <tbody>
             {s.schritte.map((x, i) => {
+              const ims = i === imSpielI ? imSpiel : null
               const von = t
               t += x.min
               const e = pg.katalog ? K.eintrag(pg.katalog, x.ref) : undefined
@@ -412,6 +417,7 @@ function PlanSeite({ plan, nr, breite, onSchritt }: { plan: Plan; nr: number; br
                       <b>{tx?.titel ?? x.t ?? 'nicht mehr im Katalog'}</b> – {tx?.text}
                       {tx?.sagen?.[0] && <span className="s">„{tx.sagen[0]}“</span>}
                       {tx?.wennEsKippt && <span className="s">Wenn es kippt: {tx.wennEsKippt}</span>}
+                      {ims && <span className="s">{p.sprache.blatt === 'fr' ? 'S’exercer en jouant' : 'Im Spiel üben'}: {ims[p.sprache.blatt === 'fr' ? 'fr' : 'de']}</span>}
                       {extra?.achtung && <span className="a">Beachten: {extra.achtung.slice(0, 240)}</span>}
                       {!pg.druck.ohneWarum && x.warum?.length ? <span className="w">Warum: {warumListe(x.warum, wc, true).join(' · ')}</span> : null}
                     </button>

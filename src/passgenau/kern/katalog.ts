@@ -3,6 +3,7 @@
 import type { Baustein, NummeriertesBlatt, Sprache } from '../../blatt/typen'
 import { ELDIB_FR } from '../../blatt/eldib-fr'
 import ELDIB_ICH from '../../data/passgenau/eldib-ich.json'
+import EINHEITEN_FR from '../../data/passgenau/einheiten-fr.json'
 import type { Einheit as KursEinheit } from '../../kurs/typen'
 import type { Material } from '../../types/material'
 import type { KatalogEintrag, MikroBaustein, Rolle, Sozialform, Stufe, Stundenschritt, Wahlkarte } from '../typen'
@@ -556,7 +557,10 @@ export function quelleText(e: KatalogEintrag, sprache: Sprache = 'de'): string {
   }
   const name = PG_NAME[e.id]?.[sprache] ?? QUELLE_NAME[e.quelle.art]?.[sprache] ?? e.quelle.art
   if (e.quelle.art === 'freude' || e.quelle.art === 'ritual' || e.quelle.art === 'praxis' || !e.quelle.titel) return name
-  return `${name} · ${e.quelle.titel}`
+  // französischer Plan: der Titel der Einheit auf Französisch (Messung 5: „Préscolaire · Laternen und Lichter“, „Zirkus
+  // Spillschoul“ – deutsche Quellenangaben im französischen Text)
+  const titel = sprache === 'fr' ? ((EINHEITEN_FR as Record<string, string>)[e.quelle.titel] ?? e.quelle.titel) : e.quelle.titel
+  return `${name} · ${titel}`
 }
 
 /** Inhalt eines Bausteins (Sprache, sonst DE). */

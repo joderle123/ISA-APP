@@ -239,6 +239,10 @@
     "de": "Bei Ärger nicht eskalieren: Wege prüfen, neutral antworten, vor dem Senden pausieren",
     "fr": "Ne pas s’emporter : examiner les voies, répondre neutre, faire une pause avant d’envoyer"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel im Spiel nennt die Fachkraft einen kleinen erfundenen Ärger. Der oder die Jugendliche darf die drei Wege prüfen: schlimmer machen, neutral bleiben oder klug handeln.",
+   "fr": "Au milieu du jeu, l’adulte évoque une petite contrariété inventée. Le ou la jeune peut passer en revue trois voies : envenimer, rester neutre, agir avec intelligence."
   }
  },
  {
@@ -453,6 +457,10 @@
     "de": "Letztes Mal hast du drei Wege geprüft: schlimmer machen, neutral bleiben, klug handeln. Heute übst du den neutralen Weg, wenn jemand stichelt.",
     "fr": "La dernière fois, tu as examiné trois voies : envenimer, rester neutre, agir intelligemment. Aujourd’hui, tu t’exerces à rester neutre quand quelqu’un te pique."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt die Fachkraft einen harmlosen, erfundenen Spruch, etwa „Na, heute in Form?“ Der oder die Jugendliche antwortet kurz und neutral, dann geht es weiter; ein Stoppwort gilt.",
+   "fr": "Au milieu du jeu, l’adulte lance une pique inventée et inoffensive, par exemple « Alors, en forme ? » Le ou la jeune répond court et neutre, puis le jeu continue ; mot d’arrêt possible."
   }
  },
  {
@@ -683,6 +691,10 @@
     "versuch": "Cette semaine, trouve une phrase de sortie qui te ressemble et dis-la une fois – ou entraîne-toi juste dans ta tête. Tu choisis la situation.",
     "probe": "Pendant le tournoi de foot au centre de jeunes, Diogo devrait changer en cachette le score avec d’autres, « juste pour rire ». Tous le regardent en souriant. Que pourrait dire Diogo avec une phrase de sortie ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel macht die Fachkraft einen harmlosen Unsinn-Vorschlag, etwa „Wir hüpfen jetzt zehnmal.“ Der oder die Jugendliche steigt mit einem kurzen Satz aus, ohne als Spielverderber dazustehen.",
+   "fr": "Au moment d’un changement, l’adulte fait une proposition drôle et sans danger, par exemple « On saute dix fois. » Le ou la jeune se retire avec une courte phrase, sans faire le rabat-joie."
   }
  },
  {
@@ -906,6 +918,10 @@
     "de": "Du hast geübt, auf Sprüche kurz und neutral zu antworten. Heute geht es um Chatnachrichten: erst Pause, dann antworten.",
     "fr": "Tu as répété comment répondre court et neutre à une pique. Aujourd’hui, on passe aux messages : d’abord une pause, ensuite la réponse."
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel im Spiel nennt die Fachkraft eine erfundene, ärgerliche Chat-Nachricht. Der oder die Jugendliche macht eine kurze Pause – einmal tief ausatmen – und antwortet erst dann.",
+   "fr": "Au milieu du jeu, l’adulte annonce un message de chat inventé et agaçant. Le ou la jeune fait une courte pause, souffle une fois, et ne répond qu’ensuite."
   }
  },
  {
@@ -1140,6 +1156,10 @@
     "versuch": "Cette semaine, face à une tâche que tu repousses, réponds une fois à la voix : « D’abord dix minutes. » Ensuite tu peux décider autrement.",
     "probe": "Yanis doit écrire cinq pages pour son rapport de stage. La voix dit : « Pas aujourd’hui, j’ai encore le temps. » Que pourrait répondre Yanis à la voix du plus tard ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel spricht die Fachkraft einmal als Später-Stimme: „Ach, später vielleicht.“ Der oder die Jugendliche antwortet ehrlich und ohne Plakatspruch: „Erst zehn Minuten, dann sehen wir weiter.“",
+   "fr": "Au milieu du jeu, l’adulte dit une fois avec la voix du plus tard « Oh, plus tard. » Le ou la jeune répond honnêtement : « D’abord dix minutes, ensuite on voit. »"
   }
  },
  {
@@ -1355,6 +1375,10 @@
     "de": "Letztes Mal hast du Ablenker sortiert und ein Gegenmittel ausprobiert. Heute arbeitest du vier Minuten am Stück und machst bei jedem Abschweifen einen Strich.",
     "fr": "Tu as déjà trié tes distractions et testé un antidote. Aujourd’hui, tu travailles quatre minutes d’affilée et notes chaque décrochage d’un trait."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel bleibt der oder die Jugendliche eine Minute am Stück dabei; schweifen die Gedanken ab, macht er oder sie einen Fingerstrich aufs Knie und bleibt dran.",
+   "fr": "Au milieu du jeu, le ou la jeune reste une minute d’affilée dans ce qu’il ou elle fait ; si les pensées s’égarent, un trait du doigt sur le genou, puis il ou elle continue."
   }
  },
  {
@@ -1569,6 +1593,10 @@
     "versuch": "Cette semaine, choisis une chose que tu fais de toute façon et accroche-y une mini-habitude : « Après …, je … ». Essaie une fois.",
     "probe": "Mehdi voudrait jouer dix minutes de guitare plus souvent, mais il oublie. Chaque jour, il branche son portable sur le chargeur. Que pourrait faire Mehdi avec « Après …, je … » ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt der oder die Jugendliche einen Satz nach dem Muster „Nach …, mache ich …“ und dockt damit eine Mini-Gewohnheit an einen Moment des Tages an.",
+   "fr": "Pendant une courte pause, le ou la jeune dit une phrase sur le modèle « Après …, je fais … » et accroche ainsi une mini-habitude à quelque chose qui arrive déjà chaque jour."
   }
  },
  {
@@ -1810,6 +1838,10 @@
     "de": "Du hast einen Lernplan rückwärts gebaut. Heute prüfst du eine Lernregel: Hält sie auch an einem miesen Tag?",
     "fr": "Tu as construit un planning à l’envers. Aujourd’hui, tu testes une règle de travail : tient-elle aussi un mauvais jour ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft eine erfundene Lernregel. Beim Regel-Crashtest sagt der oder die Jugendliche, ob sie an einem miesen Tag hält, und macht sie sonst kleiner.",
+   "fr": "Au milieu du jeu, l’adulte cite une règle d’étude inventée. Pour tester une règle, le ou la jeune dit si elle tient un mauvais jour, sinon la rend plus petite."
   }
  },
  {
@@ -2029,6 +2061,10 @@
     "versuch": "Cette semaine, face à une petite gaffe, essaie une fois la phrase : « Ma part, c’était … La prochaine fois, je … ». Même juste pour toi.",
     "probe": "Diogo a oublié son sac de sport le jour du tournoi, et l’équipe doit commencer sans lui. Il dit : « Pas de chance ! » Que pourrait faire Diogo avec « hasard, autres, moi » ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel zeigt die Fachkraft „Mein Teil benennen“ an einer kleinen erfundenen Panne: Pech, andere, ich, nächstes Mal anders. Der oder die Jugendliche darf es einmal selbst versuchen.",
+   "fr": "Au milieu du jeu, l’adulte montre « Nommer ma part » sur une petite panne inventée : hasard, autres, moi, et la prochaine fois autrement. Le ou la jeune peut essayer une fois."
   }
  },
  {
@@ -2220,6 +2256,10 @@
     "versuch": "Si quelque chose t’énerve cette semaine, transforme la plainte en souhait puis en phrase : « Et si on essayait … ? » Tu peux la garder pour toi.",
     "probe": "En stage, Yanis en a marre que la radio de l’atelier passe toujours la même chose. Il râle juste dans sa barbe. Avec « Et si on essayait … ? », que pourrait dire Yanis ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel übt der oder die Jugendliche „Beschwerde, Wunsch, Vorschlag“: Aus einer kleinen Klage übers Wetter wird ein Wunsch, dann ein Vorschlag wie „Könnten wir ausprobieren, dass …?“",
+   "fr": "Au milieu du jeu, le ou la jeune s’exerce à « Plainte, souhait, proposition » : une plainte sur la météo devient un souhait, puis « Et si on essayait … ? »"
   }
  },
  {
@@ -2402,7 +2442,11 @@
    ]
   },
   "kurz": "Würfeln · Satz „Vor einem Jahr … heute …“ · Früher/Heute-Karte",
-  "vorbereitung": "Bereichskarten schreiben: Schule · Chat/Freunde · Sport/Hobby · Wege/Termine · Aufregung · frei; 1 leere Karte"
+  "vorbereitung": "Bereichskarten schreiben: Schule · Chat/Freunde · Sport/Hobby · Wege/Termine · Aufregung · frei; 1 leere Karte",
+  "imSpiel": {
+   "de": "Bei einem Wechsel sagt der oder die Jugendliche zu einer Kleinigkeit „Früher … – heute …“. Die Fachkraft fragt einmal: „Woran würde man das merken?“",
+   "fr": "Au moment d’un changement, le ou la jeune dit, d’une petite chose : « Avant … – maintenant … » ; l’adulte demande une fois : « À quoi le remarquerait-on ? »"
+  }
  },
  {
   "id": "j:die-kette-zurueckverfolgen",
@@ -2627,6 +2671,10 @@
     "versuch": "Cette semaine, repère les cinq maillons d’une situation qui se répète : déclencheur, pensée, émotion, action, suite. Des mots-clés suffisent.",
     "probe": "Le mardi, Mehdi arrive presque toujours en retard à l’atelier pendant son stage. Il ne sait pas pourquoi. Que pourrait faire Mehdi avec la recherche de la chaîne ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft einen kleinen erfundenen Alltagsmoment. Der oder die Jugendliche übt dazu „Die Kette suchen“: Auslöser, Gedanke, Gefühl, Handlung, Folge, je in wenigen Worten.",
+   "fr": "Pendant une courte pause, l’adulte raconte un petit moment de vie inventé. Le ou la jeune s’exerce à « Chercher la chaîne » : déclencheur, pensée, émotion, action, suite, en quelques mots seulement."
   }
  },
  {
@@ -2865,6 +2913,10 @@
     "de": "Beim Werfen hast du umgeschaltet, als sich die Regel geändert hat. Heute ändern sich Pläne öfter, und du suchst dir einen Umschalt-Satz.",
     "fr": "Pendant les lancers, tu as basculé quand la règle a changé. Aujourd’hui, les plans changent plus souvent, et tu cherches une phrase pour basculer."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel kündigt die Fachkraft eine kleine Planänderung an. Der oder die Jugendliche schaltet kurz um und sagt: „Okay, neuer Plan.“ Ein Versuch reicht.",
+   "fr": "Au milieu du jeu, l’adulte annonce un petit changement de plan. Le ou la jeune bascule vite et dit : « OK, nouveau plan. » Un essai suffit."
   }
  },
  {
@@ -3106,6 +3158,10 @@
     "de": "Umschalten, wenn Neues kommt oder sich Pläne ändern: ein Satz im Kopf hilft",
     "fr": "Basculer quand les plans changent : une phrase en tête aide"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel schlägt die Fachkraft etwas Neues vor. Der oder die Jugendliche macht es langsamer, fängt klein an und hat einen Satz im Kopf, etwa „Erst klein.“",
+   "fr": "Au milieu du jeu, l’adulte propose une petite nouveauté. Face au nouveau, le ou la jeune ralentit, commence petit et garde en tête une phrase, par exemple « D’abord petit. »"
   }
  },
  {
@@ -3340,6 +3396,10 @@
     "de": "Letztes Mal hast du bei unbekannten Regeln gewählt: beobachten, abwarten oder nachfragen. Heute geht es darum, wozu Regeln da sind und wen sie schützen.",
     "fr": "Face à une règle inconnue, tu as choisi : observer, attendre ou demander. Aujourd’hui : à quoi servent les règles, et qui protègent-elles ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel im Spiel macht die Fachkraft einen Regel-Check und fragt: „Wozu ist diese Regel da, und wen schützt sie?“ Ein Wort oder ein Schulterzucken genügt.",
+   "fr": "Lors d’un changement dans le jeu, l’adulte propose un test de la règle : à quoi sert-elle, et qui protège-t-elle ? Un mot ou un haussement d’épaules suffit."
   }
  },
  {
@@ -3576,6 +3636,10 @@
     "de": "Regeln erkennen, verstehen und ruhig verhandeln",
     "fr": "Reconnaître et comprendre les règles, puis les négocier calmement"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel führt die Fachkraft ohne Erklärung eine kleine neue Regel ein, etwa kurz zu nicken. Der oder die Jugendliche wählt: beobachten, abwarten, nachfragen – jedes ist in Ordnung.",
+   "fr": "Au milieu du jeu, l’adulte introduit sans explication une petite règle nouvelle, par exemple un signe de tête. Le ou la jeune choisit : observer, attendre, demander – chaque choix convient."
   }
  },
  {
@@ -3801,6 +3865,10 @@
     "versuch": "Cette semaine, choisis un rôle que tu aimerais prendre plus souvent dans un groupe (p. ex. médiateur) et fais un petit pas dans ce sens.",
     "probe": "Lara lit surtout sans rien écrire dans le chat de classe. À la prochaine sortie, elle voudrait participer davantage. Que pourrait faire Lara pour choisir un rôle exprès ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bevor es weitergeht, wählt der oder die Jugendliche bewusst eine Rolle, die er oder sie öfter einnehmen möchte, etwa Ruhepol oder Vermittler, und nennt einen kleinen Schritt dafür.",
+   "fr": "Avant que le jeu continue, le ou la jeune choisit exprès un rôle qu’il ou elle aimerait prendre plus souvent, par exemple calme ou médiateur, et nomme un petit pas dans ce sens."
   }
  },
  {
@@ -4030,6 +4098,10 @@
     "versuch": "Si une décision ne te plaît pas cette semaine, demande-toi une fois : qu’est-ce qui dépend encore de moi ? Puis fais-en un petit pas.",
     "probe": "Zoé apprend que la sortie de classe ira au musée plutôt qu’au parc d’attractions. C’est le prof qui a décidé. Que pourrait faire Zoé avec « qu’est-ce qui dépend encore de moi ? » ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel verkündet die Fachkraft eine kleine Entscheidung, etwa „Jetzt trinken wir Wasser.“ Der oder die Jugendliche widerspricht kurz, nimmt es an und sagt, was noch geht.",
+   "fr": "Au moment d’un changement, l’adulte annonce une petite décision, par exemple « Maintenant, on boit de l’eau. » Le ou la jeune contredit en une phrase, accepte et dit ce qui reste possible."
   }
  },
  {
@@ -4503,6 +4575,10 @@
     "versuch": "Cette semaine, face à un événement, cherche une fois deux mots d’émotion : « Je suis …, mais aussi …, parce que … ». Dans ta tête ou à voix haute.",
     "probe": "Mehdi peut jouer ce week-end pour la première fois avec la première équipe du club. Il sent qu’il n’y a pas que de la joie. Que pourrait dire Mehdi avec « Je suis …, mais aussi …, parce que … » ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel erzählt die Fachkraft von einem erfundenen Alltagsmoment (der Bus fährt weg). Der oder die Jugendliche findet zwei Gefühlswörter: „Ich bin …, aber auch …, weil …“",
+   "fr": "Au milieu du jeu, l’adulte raconte un moment inventé (le bus part). Le ou la jeune trouve deux mots d’émotion : « Je suis …, mais aussi …, parce que … »"
   }
  },
  {
@@ -4751,6 +4827,10 @@
     "de": "Letztes Mal hast du gesehen, wie ein Gedanke ein Gefühl auslöst. Heute schauen wir, wie sich Gedanke, Körper und Handlung hochschaukeln.",
     "fr": "Tu as vu comment une pensée déclenche une émotion. Aujourd’hui, on regarde comment pensée, corps et action se renforcent."
    }
+  },
+  "imSpiel": {
+   "de": "In einer kurzen Pause im Spiel zeigt die Fachkraft, wie man den Kreislauf bremsen kann, hier über den Körper: einmal langsam ausatmen. Der oder die Jugendliche darf mitatmen.",
+   "fr": "Pendant une courte pause du jeu, l’adulte montre comment freiner le cercle par le corps : souffler lentement une fois. Le ou la jeune peut souffler aussi."
   }
  },
  {
@@ -5008,6 +5088,10 @@
     "de": "Letztes Mal hast du genaue Gefühlswörter gesucht. Heute übst du, in einer Nachricht zu sagen, was dich nervt und was du brauchst.",
     "fr": "La dernière fois, tu as cherché des mots précis. Aujourd’hui, dans un message, tu dis ce qui t’énerve et ce dont tu as besoin."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft einen kleinen erfundenen Ärger. Der oder die Jugendliche probiert einmal „Nachricht kühl sagen“: ein Gefühl in einem Satz, eine Bitte, kein Vorwurf.",
+   "fr": "Au milieu du jeu, l’adulte invente une petite contrariété. Le ou la jeune essaie une fois « un message cool » : un ressenti en une phrase, une demande concrète, pas de reproche."
   }
  },
  {
@@ -5272,6 +5356,10 @@
     "de": "Streit zwischen zwei Seiten klären: zuhören, Lösungen für beide finden, selbst anders handeln",
     "fr": "Régler un conflit : écouter, trouver des solutions pour les deux, agir autrement"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel erzählt die Fachkraft von zwei erfundenen Leuten im Streit. Beim Schlichten benennt der oder die Jugendliche ein Gefühl, ergreift keine Partei und macht einen Vorschlag.",
+   "fr": "Au milieu du jeu, l’adulte parle de deux personnes inventées en dispute. Pour apaiser, le ou la jeune nomme une émotion, ne prend pas parti et fait une proposition."
   }
  },
  {
@@ -5477,6 +5565,10 @@
     "de": "Eigene Werte kennen, danach entscheiden und im Alltag leben",
     "fr": "Connaître mes valeurs, décider selon elles et les vivre au quotidien"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel verteilt der oder die Jugendliche zehn Finger auf zwei, drei Werte, etwa Freundschaft oder Ehrlichkeit. Das ist „Meine Werte verteilen“: Was ist wichtig, was weniger?",
+   "fr": "Au milieu du jeu, le ou la jeune répartit dix doigts sur deux ou trois valeurs, comme l’amitié ou l’honnêteté. Voilà « répartir mes valeurs » : ce qui compte le plus, ce qui compte moins."
   }
  },
  {
@@ -5710,6 +5802,10 @@
     "versuch": "Cette semaine, écris à quelqu’un un court message sincère qui rappelle quelque chose de commun, p. ex. un match ou une blague. Pas besoin de réponse.",
     "probe": "Depuis son changement d’école, Luca ne prend plus le même bus qu’Inês. Il a retrouvé une vieille photo de leur sortie. Que pourrait lui écrire Luca avec un message de contact ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel spricht der oder die Jugendliche einen Kontaktsatz an eine erfundene Person: kurz, echt, mit Bezug auf etwas Gemeinsames. Die Fachkraft antwortet als diese Person.",
+   "fr": "Pendant une courte pause, le ou la jeune dit un message de contact à une personne inventée : court, sincère, en lien avec quelque chose de commun. L’adulte répond dans le rôle de cette personne."
   }
  },
  {
@@ -5933,6 +6029,10 @@
     "de": "Du hast geübt, an Signalen zu erkennen, ob jetzt ein guter Moment zum Ansprechen ist. Heute steigst du in einen laufenden Chat ein.",
     "fr": "Tu as appris à repérer, grâce aux signaux, si c’est le bon moment pour aborder quelqu’un. Aujourd’hui, tu entres dans un chat qui a déjà commencé."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt die Fachkraft nebenbei etwas Kleines („Heute ist es warm.“). Der oder die Jugendliche macht den Einstieg ins Gespräch: anknüpfen oder eine echte Frage stellen.",
+   "fr": "Au milieu du jeu, l’adulte dit une petite chose en passant (« Il fait chaud aujourd’hui »). Le ou la jeune s’exerce à entrer dans l’échange : rebondir ou poser une vraie question."
   }
  },
  {
@@ -6140,6 +6240,10 @@
     "versuch": "Cette semaine, dis à quelqu’un en une phrase concrète ce qui était bien, p. ex. « Ton astuce m’a aidé parce que … ». Seulement ce qui est vrai.",
     "probe": "Yanis a passé plusieurs soirs sur une maquette pour le projet d’arts, et elle est vraiment réussie. Sofia voudrait lui dire plus que « top ». Que pourrait dire Sofia avec le compliment concret ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt der oder die Jugendliche der Fachkraft einmal konkret, was gerade gut war, statt nur „nice“. Die Fachkraft sagt kurz, wie das ankommt.",
+   "fr": "Au milieu du jeu, le ou la jeune dit une fois à l’adulte, de façon concrète, ce qui était bien à l’instant, pas juste « nice ». L’adulte dit brièvement ce que ça lui fait."
   }
  },
  {
@@ -6382,6 +6486,10 @@
     "de": "Wir haben zusammen Pässe gespielt und einen Turm gebaut. Heute schauen wir, wer was dazu beigetragen hat – auch das, was man kaum sieht.",
     "fr": "On a joué des passes ensemble et construit une tour. Aujourd’hui, on regarde qui a apporté quoi, même ce qui se voit à peine."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft mit „Ohne dich …“ einen kaum sichtbaren Beitrag des oder der Jugendlichen, konkret und kurz. Dann darf er oder sie einen nennen.",
+   "fr": "Au milieu du jeu, l’adulte nomme avec « Sans toi … » un apport peu visible du ou de la jeune, de façon concrète et brève. Puis le ou la jeune peut en nommer un."
   }
  },
  {
@@ -6613,6 +6721,10 @@
     "de": "Verstehen, wie Gedanken, Gefühle und Handlungen sich beeinflussen – bei mir und bei anderen",
     "fr": "Comprendre comment pensées, émotions et actions s’influencent – chez moi et chez les autres"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel erzählt die Fachkraft: Eine erfundene Nachricht bleibt unbeantwortet. Der oder die Jugendliche sammelt zwei, drei mögliche Gründe, bevor er oder sie einen glaubt.",
+   "fr": "Au milieu du jeu, l’adulte raconte : un message inventé reste sans réponse. Le ou la jeune cherche deux ou trois raisons possibles avant d’en croire une."
   }
  },
  {
@@ -6840,6 +6952,10 @@
     "de": "Letztes Mal hast du den Kreislauf aus Gedanke, Körper und Handlung gebremst. Heute fragst du: Was löst meine Handlung bei anderen aus?",
     "fr": "Tu as cherché comment freiner le cercle pensée, corps, action. Aujourd’hui, tu te demandes : qu’est-ce que mon geste déclenche chez les autres ?"
    }
+  },
+  "imSpiel": {
+   "de": "Vor einem Wechsel im Spiel sagt die Fachkraft laut, was sie gleich tun will, und fragt: „Was setzt das bei dir in Gang?“ Der oder die Jugendliche antwortet kurz.",
+   "fr": "Avant un changement dans le jeu, l’adulte dit à voix haute ce qu’il va faire, puis demande avant d’agir : « Qu’est-ce que ça déclenche chez toi ? » Le ou la jeune répond brièvement."
   }
  },
  {
@@ -7056,7 +7172,11 @@
    ]
   },
   "kurz": "Vier Wegkarten legen · Weg zu einem Können erzählen",
-  "vorbereitung": "4 Karten beschriften: Start · Der harte Teil · Was geholfen hat · Geschafft"
+  "vorbereitung": "4 Karten beschriften: Start · Der harte Teil · Was geholfen hat · Geschafft",
+  "imSpiel": {
+   "de": "Mitten im Spiel erzählt der oder die Jugendliche in vier Stichworten, wie etwas Kleines geklappt hat: Start, harter Teil, Hilfe, geschafft. Die Fachkraft fragt: „Was hat geholfen?“",
+   "fr": "Au milieu du jeu, le ou la jeune retrace en quatre mots comment une petite chose a réussi : départ, passage dur, aide, réussite. L’adulte demande : « Qu’est-ce qui a aidé ? »"
+  }
  },
  {
   "id": "j:ein-moment-in-drei-bildern",
@@ -7255,6 +7375,10 @@
     "de": "Gefühle ausdrücken: erst mit Farbe und Musik, dann mit genauen Worten, dann direkt sagen",
     "fr": "Exprimer ses émotions : couleur et musique d’abord, puis mots précis, puis dire directement"
    }
+  },
+  "imSpiel": {
+   "de": "In einer Pause im Spiel darf der oder die Jugendliche einen Moment zeigen, gern erfunden: mit einer Farbe, einem Geräusch oder Songtitel und höchstens vier Wörtern. Die Fachkraft rät.",
+   "fr": "Pendant une courte pause du jeu, le ou la jeune peut montrer un moment, même inventé : une couleur, un bruit ou un titre de chanson, et quatre mots au plus. L’adulte devine."
   }
  },
  {
@@ -7692,6 +7816,10 @@
     "de": "Letztes Mal hast du Eigenschaften jeweils mit einem Beispiel belegt. Heute schauen wir, wann dieselbe Eigenschaft hilft und wann sie nervt.",
     "fr": "La dernière fois, tu as appuyé chaque qualité sur un exemple. Aujourd’hui, on regarde quand un même trait aide et quand il agace."
    }
+  },
+  "imSpiel": {
+   "de": "In einer kurzen Pause im Spiel nennt die Fachkraft eine Eigenschaft, etwa „streng“. Der oder die Jugendliche nennt die zwei Seiten: Wann hilft sie, wann nervt sie?",
+   "fr": "Au milieu du jeu, l’adulte nomme un trait de caractère, par exemple « strict ». Le ou la jeune donne les deux faces : quand aide-t-il, quand agace-t-il ?"
   }
  },
  {
@@ -7945,6 +8073,10 @@
     "de": "Gefühle hinter Worten erkennen – und ruhig und ohne Vorwurf reagieren, auch im Chat",
     "fr": "Reconnaître les émotions derrière les mots et réagir calmement, même dans un chat"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt die Fachkraft „Ja, passt schon.“ mit einem Unterton. Der oder die Jugendliche achtet auf Ton und Signale und fragt im Zweifel nach, statt zu raten.",
+   "fr": "Au milieu du jeu, l’adulte dit « Oui, ça va » avec un sous-entendu. Le ou la jeune écoute l’intonation et les signes, et demande en cas de doute plutôt que de deviner."
   }
  },
  {
@@ -8186,6 +8318,10 @@
     "versuch": "Essaie une fois cette semaine de dire poliment « Non, je ne le fais pas » à une petite demande, sans expliquer pourquoi.",
     "probe": "Yanis demande encore à Inês, dans le bus, de lui prêter ses écouteurs pour tout le trajet. Elle n’en a pas envie. Que pourrait faire Inês avec le non aimable, sans se justifier ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel bittet die Fachkraft zweimal um etwas Erfundenes („Schenkst du mir deine Ferien?“). Der oder die Jugendliche bleibt freundlich beim Nein, ohne sich zu rechtfertigen.",
+   "fr": "Au milieu du jeu, l’adulte demande une fois quelque chose d’inventé (« Tu me donnes tes vacances ? ») et insiste une seconde fois. Le ou la jeune reste aimable dans son non, sans se justifier."
   }
  },
  {
@@ -8417,6 +8553,10 @@
     "versuch": "Essaie une fois cette semaine, devant une pensée qui tourne en boucle, de te demander : puis-je agir ou non ? Si oui, fais juste le plus petit pas.",
     "probe": "Lara attend la note de son interro de maths et se demande ce que la prof en pense. Elle n’a pas non plus de réponse à son inscription au club. Que pourrait faire Lara avec les cercles de soucis ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft eine kleine erfundene Sorge („Der Bus ist vielleicht weg“). Der oder die Jugendliche sagt, ob man darauf Einfluss hat oder nicht (Sorgen sortieren).",
+   "fr": "Pendant une courte pause, l’adulte nomme un petit souci inventé (« Le bus est peut-être parti »). Le ou la jeune dit si l’on a prise dessus ou non (Trier ses soucis)."
   }
  },
  {
@@ -8901,6 +9041,10 @@
     "de": "Du hast überlegt, was hinter Toms Verhalten stecken kann. Heute setzt du Kreuze auf eine Linie und fasst den Grund der anderen Seite zusammen.",
     "fr": "Tu as réfléchi à ce qui peut se cacher derrière le comportement de Tom. Aujourd’hui, tu places des croix sur une ligne et tu résumes la raison de l’autre côté."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft eine Vorliebe mit Grund („Ich mag Regen, weil es ruhig wird“). Der oder die Jugendliche fasst den Grund zusammen und antwortet erst dann.",
+   "fr": "Au milieu du jeu, l’adulte donne une préférence avec sa raison (« J’aime la pluie, parce que tout devient calme »). Le ou la jeune résume d’abord cette raison, puis répond."
   }
  },
  {
@@ -9126,6 +9270,10 @@
     "de": "Du hast den Grund der anderen Seite zusammengefasst. Heute gehst du weiter und vertrittst die Gegenseite mit den stärksten Gründen und dem Wert dahinter.",
     "fr": "Tu as résumé la raison de l’autre côté. Aujourd’hui, tu vas plus loin : tu défends le camp opposé avec ses meilleurs arguments et la valeur qui les porte."
    }
+  },
+  "imSpiel": {
+   "de": "Der oder die Jugendliche sagt eine kleine Alltagsmeinung, die Fachkraft hält kurz dagegen. Dann darf er oder sie die Gegenseite vertreten: stärkster Grund und der Wert dahinter.",
+   "fr": "Le ou la jeune donne une petite opinion du quotidien ; l’adulte la conteste brièvement. Puis le ou la jeune peut défendre l’autre camp : sa meilleure raison et la valeur derrière."
   }
  },
  {
@@ -9372,6 +9520,10 @@
     "de": "Letztes Mal hast du hinter einem Satz zwei mögliche Gefühle gehört. Heute liest du einen Chatstreit aus beiden Sichtweisen und schreibst ruhig zurück.",
     "fr": "Tu as cherché deux émotions possibles derrière une phrase. Aujourd’hui, tu lis une dispute de chat des deux côtés et tu réponds calmement."
    }
+  },
+  "imSpiel": {
+   "de": "In einer kurzen Pause im Spiel sagt die Fachkraft einen erfundenen Chat-Satz, etwa „Wie immer.“ Der oder die Jugendliche überlegt, was beide Seiten denken, und antwortet ruhig, ohne Vorwurf.",
+   "fr": "Pendant une courte pause du jeu, l’adulte dit un message de chat inventé, par exemple « Comme toujours. » Le ou la jeune pense aux deux côtés et répond calmement, sans reproche."
   }
  },
  {
@@ -9605,6 +9757,10 @@
     "de": "Letztes Mal hast du auf Ton und Signale geachtet und lieber nachgefragt als geraten. Heute hörst du hinter einem Satz zwei mögliche Gefühle.",
     "fr": "Tu as écouté le ton et les signes, et demandé plutôt que deviné. Aujourd’hui, tu cherches deux émotions possibles derrière une phrase."
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel im Spiel sagt die Fachkraft beiläufig „Mir doch egal.“ Der oder die Jugendliche nennt zwei Gefühle, die dahinterstecken könnten, und einen Satz, der jetzt guttäte.",
+   "fr": "Lors d’un changement dans le jeu, l’adulte lance en passant « Je m’en fiche. » Le ou la jeune nomme deux émotions possibles derrière cette phrase et dit une phrase qui ferait du bien."
   }
  },
  {
@@ -10049,6 +10205,10 @@
     "versuch": "Essaie une fois cette semaine de proposer dans un chat quelque chose de concret (heure, lieu, prix) ou de répondre à une idée par « Oui, et … ».",
     "probe": "Mia propose dans le chat du groupe : cinéma vendredi. Tom répond : « Bof, plutôt bowling. » Que pourrait répondre Mia avec « Oui, et … », et que pourrait proposer Tom de concret ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel macht die Fachkraft einen kleinen, albernen Vorschlag. Der oder die Jugendliche nimmt ihn mit „Ja, und …“ auf und macht dann einen konkreten eigenen Vorschlag dazu.",
+   "fr": "Au milieu du jeu, l’adulte fait une petite proposition farfelue. Le ou la jeune l’accueille avec « Oui, et … » puis ajoute sa propre proposition, bien concrète."
   }
  },
  {
@@ -10249,6 +10409,10 @@
     "versuch": "Essaie une fois cette semaine d’expliquer quelque chose de simple à quelqu’un : le montrer, avancer à petits pas, demander « C’est clair ? »",
     "probe": "Diogo doit montrer à Inês comment marche l’appli du club. Il explique tout d’un coup et très vite. Que pourrait faire Diogo autrement avec « expliquer comme un coach » ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel bringt der oder die Jugendliche der Fachkraft einen kleinen Handgriff bei (Etwas erklären): vormachen, kleine Schritte, einmal nachfragen. Die Fachkraft macht genau das, was gesagt wird.",
+   "fr": "Au milieu du jeu, le ou la jeune apprend un petit geste à l’adulte (Expliquer) : montrer, petits pas, demander une fois si c’est clair. L’adulte fait exactement ce qui est dit."
   }
  },
  {
@@ -10472,6 +10636,10 @@
     "de": "Letztes Mal hast du Situationen nach deinen Werten eingeordnet. Heute wählst du eine bewunderte Person und einen ihrer Werte für deinen Alltag.",
     "fr": "La dernière fois, tu as classé des situations selon tes valeurs. Aujourd’hui, tu choisis une personne admirée et une de ses valeurs à reprendre."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt der oder die Jugendliche einen Wert eines Vorbilds, zum Beispiel „bleibt ruhig“, und sagt, wann, wo und bei wem man ihn selbst übernehmen könnte.",
+   "fr": "Au milieu du jeu, le ou la jeune cite une valeur d’un modèle, par exemple « reste calme », et dit quand, où et avec qui on pourrait la reprendre."
   }
  },
  {
@@ -10681,6 +10849,10 @@
     "de": "Letztes Mal hast du Ideen gesucht, die für beide passen. Heute nimmst du eine Situation, die nicht gut lief, und suchst eine andere Reaktion.",
     "fr": "La dernière fois, tu as cherché des idées qui conviennent aux deux. Aujourd’hui, tu prends une situation mal passée et tu cherches une autre réaction."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel erzählt die Fachkraft kurz eine erfundene Szene, die schieflief. Der oder die Jugendliche darf die Szene zurückspulen und am Wendepunkt einen anderen Spielzug wählen.",
+   "fr": "Au milieu du jeu, l’adulte raconte brièvement une scène inventée qui tourne mal. Le ou la jeune peut rembobiner la scène et choisir, au tournant, un autre geste."
   }
  },
  {
@@ -10939,6 +11111,10 @@
     "versuch": "Essaie une fois cette semaine, dans un groupe, un rôle que tu évites d’habitude, par exemple faire le plan ou seulement écouter.",
     "probe": "Lea fait toujours le clown avec ses amis. Pour préparer la sortie, elle aimerait cette fois être la médiatrice. Comment Lea pourrait-elle commencer son changement de rôle sans que ça fasse bizarre ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bevor es weitergeht, fragt die Fachkraft, welche Rolle der oder die Jugendliche sonst meidet, etwa Vorschläge machen. Für einen kurzen Moment nimmt er oder sie diese Rolle bewusst ein.",
+   "fr": "Avant que le jeu continue, l’adulte demande quel rôle le ou la jeune évite d’habitude, par exemple proposer ou attendre. Pour changer de rôle exprès, il ou elle prend ce rôle un court moment."
   }
  },
  {
@@ -11194,6 +11370,10 @@
     "de": "Letztes Mal hast du in einem Streit zwischen zwei Freunden vermittelt. Heute prüfst du, wie ein Vorschlag für beide Seiten passt.",
     "fr": "La dernière fois, tu as apaisé une dispute entre deux amis. Aujourd’hui, tu vérifies comment une idée convient aux deux côtés."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft zwei erfundene Wünsche, die nicht zusammenpassen. Beim Beide-Seiten-Check fragt der oder die Jugendliche, was beiden wichtig ist, und nennt eine Idee für beide.",
+   "fr": "Au milieu du jeu, l’adulte énonce deux envies inventées incompatibles. Avec le test des deux côtés, le ou la jeune demande ce qui compte pour les deux, puis propose une idée."
   }
  },
  {
@@ -11405,6 +11585,10 @@
     "de": "Letztes Mal hast du zehn Chips auf deine Werte verteilt. Heute prüfst du an Beispielen, welcher Wert in einer Situation entscheidet.",
     "fr": "La dernière fois, tu as réparti dix jetons sur tes valeurs. Aujourd’hui, tu cherches, sur des exemples, quelle valeur décide dans chaque situation."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft eine kleine Situation, etwa „zu viel Wechselgeld behalten“. Der oder die Jugendliche entscheidet nach den eigenen Werten: gut, nicht gut oder kommt drauf an.",
+   "fr": "Au milieu du jeu, l’adulte cite une petite situation, par exemple « garder trop de monnaie rendue ». Le ou la jeune décide selon ses valeurs : bien, pas bien ou ça dépend."
   }
  },
  {
@@ -11631,6 +11815,10 @@
     "versuch": "Quand un post te surprend, demande-toi une fois cette semaine : peut-on le vérifier ? Qui le dit, et comment le sait-il ?",
     "probe": "Tom lit dans le chat : « L’entraînement de mercredi est annulé, la salle est fermée. » Il ne sait pas d’où ça vient. Que pourrait faire Tom avec les deux questions de contrôle avant d’en parler ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt die Fachkraft eine kleine Behauptung. Der oder die Jugendliche stellt die zwei Prüffragen: Lässt sich das nachprüfen? Wer sagt das, und woher weiß er es?",
+   "fr": "Au milieu du jeu, l’adulte dit une petite affirmation. Le ou la jeune pose les deux questions de contrôle : peut-on le vérifier ? Qui le dit, et comment le sait-il ?"
   }
  },
  {
@@ -11835,6 +12023,10 @@
     "de": "Verstehen, was hinter Verhalten und Meinungen steckt – Gründe und Werte der anderen Seite",
     "fr": "Comprendre ce qui se cache derrière un comportement ou une opinion : raisons et valeurs de l’autre"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt die Fachkraft „Ich bin ganz müde“ und springt auf. Der oder die Jugendliche nennt, was nicht zusammenpasst, und rät, was dahinterstecken könnte.",
+   "fr": "Au milieu du jeu, l’adulte dit « J’ai très sommeil » et se met à sauter. Le ou la jeune s’exerce à comparer dire et faire : ce qui ne colle pas, et pourquoi."
   }
  },
  {
@@ -12045,6 +12237,10 @@
     "de": "Letztes Mal hast du eine Karte mit Stärken und Beispielen gemacht. Heute prüfst du, welche Stärken du belegen kannst und wie andere dich sehen.",
     "fr": "La dernière fois, tu as fait une carte avec des exemples. Aujourd’hui, tu vérifies quels points forts tu peux prouver et comment on te voit."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt der oder die Jugendliche eine Stärke, aber nur mit Beweis: eine kleine Situation, in der diese Stärke sichtbar war. Die Fachkraft nickt.",
+   "fr": "Au milieu du jeu, le ou la jeune cite une force, mais seulement avec une preuve : une petite situation où cette force s’est vue. L’adulte fait un signe de tête."
   }
  },
  {
@@ -12275,6 +12471,10 @@
     "versuch": "Essaie une fois cette semaine de laisser quelqu’un finir et, si on te coupe, de dire gentiment : « Laisse-moi finir. »",
     "probe": "Ben et Mehdi parlent du prochain tournoi au club de jeunes. Mehdi coupe sans arrêt la parole à Ben. Que pourrait dire Ben avec « Laisse-moi finir » sans que ça tourne à la dispute ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel erzählt der oder die Jugendliche etwas, und die Fachkraft redet einmal absichtlich dazwischen. Freundlich und ohne zu belehren sagt er oder sie: „Lass mich kurz ausreden.“",
+   "fr": "Au milieu du jeu, le ou la jeune raconte quelque chose et l’adulte coupe la parole une fois, exprès. Gentiment et sans faire la leçon, il ou elle dit : « Laisse-moi finir. »"
   }
  },
  {
@@ -12509,6 +12709,10 @@
     "de": "Du hast verschiedene Einstiege in einen Chat getestet. Heute bereitest du den ersten Satz für jemanden vor, den du besser kennenlernen willst.",
     "fr": "Tu as testé plusieurs façons d’entrer dans un chat. Aujourd’hui, tu prépares la première phrase pour quelqu’un que tu aimerais mieux connaître."
    }
+  },
+  "imSpiel": {
+   "de": "In einer kurzen Pause im Spiel überlegt sich der oder die Jugendliche einen ersten Satz, eine kurze Frage zur Situation, sagt ihn der Fachkraft und beendet das Gespräch locker.",
+   "fr": "Pendant une courte pause du jeu, le ou la jeune s’exerce à préparer la première phrase : une courte question sur la situation, dite à l’adulte, puis une fin légère de l’échange."
   }
  },
  {
@@ -12736,6 +12940,10 @@
     "de": "Letztes Mal hast du den Zweck von Regeln untersucht. Heute verhandelst du eine Regel: erst den Grund nennen, dann ein Angebot machen.",
     "fr": "Tu as cherché à quoi servent les règles. Aujourd’hui, tu négocies une règle : d’abord son but, ensuite une offre."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel darf der oder die Jugendliche eine Spielregel ändern: erst den Grund nennen, dann ein Angebot machen. Die Fachkraft antwortet ehrlich: „Ja, wenn …“ oder „Nein, weil …“.",
+   "fr": "Au milieu du jeu, le ou la jeune peut changer une règle : dire d’abord à quoi elle sert, puis faire une offre. L’adulte répond franchement, par un oui ou un non avec une raison."
   }
  },
  {
@@ -13211,6 +13419,10 @@
     "de": "Ablenkungen erkennen und bremsen – und dann länger am Stück konzentriert arbeiten",
     "fr": "Reconnaître et freiner les distractions pour travailler plus longtemps sans décrocher"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel im Spiel darf der oder die Jugendliche einen Ablenker sortieren: Kommt er aus der Umgebung oder aus dem Kopf? Ein kleines Gegenmittel dazu, etwa einmal ausatmen.",
+   "fr": "Lors d’un changement dans le jeu, le ou la jeune peut trier les distractions du moment : viennent-elles du milieu ou de la tête ? Un petit antidote suffit, par exemple souffler une fois."
   }
  },
  {
@@ -13438,6 +13650,10 @@
     "de": "Letztes Mal hast du Striche beim Abschweifen gemacht und eine Bremse gewählt. Heute parkst du Störgedanken in drei Wörtern und arbeitest acht Minuten.",
     "fr": "Tu as déjà marqué tes décrochages et choisi un frein. Aujourd’hui, tu gares tes pensées parasites en trois mots et tu travailles huit minutes."
    }
+  },
+  "imSpiel": {
+   "de": "Bevor es im Spiel weitergeht, parkt der oder die Jugendliche einen Störgedanken, falls einer da ist, in höchstens drei Wörtern laut. Die Fachkraft nickt nur, dann geht es weiter.",
+   "fr": "Avant que le jeu reprenne, le ou la jeune gare à voix haute une pensée parasite, s’il y en a une, en trois mots au plus. L’adulte hoche simplement la tête, puis le jeu continue."
   }
  },
  {
@@ -13693,6 +13909,10 @@
     "de": "Letztes Mal hast du erst aus dem Kopf aufgeschrieben, statt nochmal zu lesen. Heute planst du rückwärts vom Prüfungstag, wann du was lernst.",
     "fr": "La dernière fois, tu as écrit de mémoire au lieu de relire. Aujourd’hui, tu planifies tes révisions à rebours depuis l’examen."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft einen erfundenen Termin in einer Woche. Der oder die Jugendliche zeigt mit den Fingern, wie rückwärts planen geht: zurück vom Termin, mit einem Puffertag.",
+   "fr": "Au milieu du jeu, l’adulte cite une date inventée dans une semaine. Le ou la jeune montre sur les doigts comment planifier à rebours : depuis cette date, avec un jour de marge."
   }
  },
  {
@@ -13910,6 +14130,10 @@
     "de": "Besser lernen: abfragen statt lesen, rückwärts planen, eine Lernregel testen",
     "fr": "Mieux apprendre : se tester au lieu de relire, planifier à rebours, tester une règle"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt der oder die Jugendliche aus dem Kopf, was er oder sie von einem Schulthema behalten hat (Abfragen statt nochmal lesen); Lücken sind in Ordnung.",
+   "fr": "Au milieu du jeu, le ou la jeune dit de mémoire ce qu’il ou elle a retenu d’un sujet scolaire (se tester plutôt que relire) ; les trous sont permis."
   }
  },
  {
@@ -14130,6 +14354,10 @@
     "versuch": "Essaie une fois cette semaine, quand tu bloques sur un exercice, d’expirer trois fois lentement et de passer au plus facile.",
     "probe": "Sofia fixe la première question de son contrôle de français, et sa tête est vide. Que pourrait faire Sofia, étape par étape, avec le plan anti-trou noir ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel stellt die Fachkraft zwei kleine Ratefragen. Bei einem Blackout atmet der oder die Jugendliche lang aus, nimmt die leichtere Frage zuerst und sagt ein paar Stichworte.",
+   "fr": "Pendant une courte pause, l’adulte pose deux petites devinettes. En cas de trou noir, le ou la jeune expire longuement, prend d’abord la question facile et dit quelques mots-clés."
   }
  },
  {
@@ -14359,6 +14587,10 @@
     "de": "Letztes Mal hast du verfolgt, was eine Handlung bei anderen auslöst. Heute suchst du den Satz, der jemandem vor einem Test wirklich hilft.",
     "fr": "Tu as suivi ce qu’une action déclenche chez les autres. Aujourd’hui, tu cherches la phrase qui aide vraiment quelqu’un avant un test."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel seufzt die Fachkraft: „Das klappt mir heute einfach nicht.“ Der oder die Jugendliche antwortet mit einem Satz, den er oder sie selbst glaubt: ehrlich, mit kleinem Anfang.",
+   "fr": "Au milieu du jeu, l’adulte soupire : « Ça ne me réussit pas aujourd’hui. » Le ou la jeune répond par une phrase qu’il ou elle croit vraiment : honnête, avec un petit début."
   }
  },
  {
@@ -14552,6 +14784,10 @@
     "versuch": "Essaie cette semaine une règle si-alors, par exemple : si je me suis brossé les dents, je pose mon portable sur le chargeur.",
     "probe": "Zoé regarde souvent des séries tard le soir et elle est fatiguée le matin. Chaque soir, elle se brosse les dents à dix heures. Quelle règle si-alors Zoé pourrait-elle relier à cette habitude fixe ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel formuliert der oder die Jugendliche eine Wenn-dann-Regel an eine feste Gewohnheit, etwa „Wenn ich Zähne geputzt habe, lege ich das Handy weg.“ Ein Versuch reicht.",
+   "fr": "Pendant une courte pause, le ou la jeune formule une règle si-alors reliée à une habitude fixe, par exemple « Après le brossage des dents, je pose mon téléphone. » Un essai suffit."
   }
  },
  {
@@ -14780,6 +15016,10 @@
     "versuch": "Essaie cette semaine une seule petite marche qui te semble faire environ 3 sur 10 – pas plus.",
     "probe": "Sami n’est plus allé à l’entraînement depuis longtemps et voudrait y retourner. Un entraînement entier, ça lui semble être un 9. Comment Sami pourrait-il commencer avec l’escalier de petites marches ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft eine erfundene schwere Aufgabe, etwa einen Berg besteigen. Der oder die Jugendliche nennt zwei kleine Stufen einer Treppe und wählt die nächste.",
+   "fr": "Pendant une courte pause, l’adulte nomme une tâche inventée qui semble difficile, comme gravir une montagne. Le ou la jeune cite deux petites marches d’un escalier et choisit la prochaine."
   }
  },
  {
@@ -14981,7 +15221,11 @@
    ]
   },
   "kurz": "Drei Spalten: sicher, mutig, verrückt · Gemeinsames · nächster Schritt",
-  "vorbereitung": "Blatt in drei Spalten teilen: sichere · mutige · verrückte Version von mir mit 22"
+  "vorbereitung": "Blatt in drei Spalten teilen: sichere · mutige · verrückte Version von mir mit 22",
+  "imSpiel": {
+   "de": "Bei einem Wechsel entwirft der oder die Jugendliche in je einem Satz drei Zukunftsbilder von sich mit 22: sicher, mutig, verrückt. Die Fachkraft fragt einmal: „Was haben die drei gemeinsam?“",
+   "fr": "Au moment d’un changement, le ou la jeune esquisse trois images d’avenir de soi à 22 ans : sûre, courageuse, folle. L’adulte demande une fois : « Qu’ont-elles en commun ? »"
+  }
  },
  {
   "id": "j:wunschberuf-check",
@@ -15214,6 +15458,10 @@
     "versuch": "Essaie cette semaine de marquer une phrase sur un métier avec S, P ou E – puis pose ta question à quelqu’un qui connaît le métier.",
     "probe": "Yanis a entendu dire qu’on gagne très peu comme soigneur animalier. Il pense à demander un stage. Comment pourrait-il vérifier avec « S, P ou E ? » ce qui est vrai, et quelle question poser ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt die Fachkraft etwas über einen Beruf. Der oder die Jugendliche sagt W (weiß ich), V (vermute ich) oder G (gehört) und stellt eine Frage dazu.",
+   "fr": "Au milieu du jeu, l’adulte dit quelque chose sur un métier. Le ou la jeune dit S (je sais), P (je présume) ou E (j’ai entendu dire) et pose une question."
   }
  },
  {
@@ -16711,6 +16959,10 @@
     "de": "Abwarten üben: von der gefühlten Minute bis zum Melden im Unterricht",
     "fr": "Savoir attendre : de la minute ressentie jusqu’à la prise de parole en cours"
    }
+  },
+  "imSpiel": {
+   "de": "Bevor es im Spiel weitergeht, darf der oder die Jugendliche einen Wartetrick wählen: Atemzüge zählen, einen Song im Kopf oder einen Punkt fixieren. Die Fachkraft wartet einfach mit.",
+   "fr": "Avant que le jeu reprenne, le ou la jeune peut choisir une astuce pour attendre : compter ses souffles, un morceau dans la tête ou un point à fixer. L’adulte attend simplement avec lui ou elle."
   }
  },
  {
@@ -16922,6 +17174,10 @@
     "de": "Letztes Mal hast du Warte-Tricks ausprobiert: Atemzüge zählen, Song im Kopf, Punkt fixieren. Heute geht es um ruhige Hände bei einem Kartentrick.",
     "fr": "La dernière fois, tu as testé des astuces pour attendre. Aujourd’hui : rester les mains calmes pendant un tour de cartes."
    }
+  },
+  "imSpiel": {
+   "de": "In einer kurzen Pause im Spiel übt der oder die Jugendliche das Abwarten: Hände ruhig, leise bis fünf mitzählen, langsam ausatmen. Die Fachkraft wartet einfach mit und sagt nichts.",
+   "fr": "Pendant une courte pause du jeu, le ou la jeune s’exerce à attendre : mains calmes, compter à voix basse jusqu’à cinq, souffler lentement. L’adulte attend simplement avec lui ou elle."
   }
  },
  {
@@ -17166,6 +17422,10 @@
     "de": "Beim Kartentrick hast du ruhig abgewartet. Heute geht es um das Gespräch: erst zu Ende hören, dann antworten.",
     "fr": "Pendant le tour de cartes, tu as attendu calmement. Aujourd’hui, il s’agit de la conversation : écouter jusqu’au bout, puis répondre."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel erzählt die Fachkraft einen Satz in zwei Teilen, dazwischen eine Pause. Der oder die Jugendliche hört erst zu Ende, merkt sich ein Stichwort, atmet aus und antwortet.",
+   "fr": "Au milieu du jeu, l’adulte raconte une phrase en deux parties, avec une pause au milieu. Le ou la jeune choisit d’écouter jusqu’au bout, retient un mot-clé, souffle, puis répond."
   }
  },
  {
@@ -17387,6 +17647,10 @@
     "de": "Du hast aus deinem Fachgebiet Fragen gestellt und erklärt. Heute machst du eine kurze Radiosendung: erst Stichworte, dann drei Minuten sprechen.",
     "fr": "Tu as posé des questions et expliqué dans ton domaine. Aujourd’hui, tu fais une courte émission de radio : d’abord des mots-clés, puis trois minutes de parole."
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel moderiert der oder die Jugendliche zwanzig Sekunden Radio: Thema wählen, zwei Stichworte im Kopf, ein fertiger erster Satz. Die Fachkraft hört einfach zu.",
+   "fr": "Pendant un changement, le ou la jeune anime vingt secondes de radio : il ou elle choisit un thème, garde deux mots-clés en tête et prépare une première phrase. L’adulte écoute simplement."
   }
  },
  {
@@ -17570,6 +17834,10 @@
     "versuch": "Remarque cette semaine quand tu attends qu’on te lance, et fais alors de toi-même le tout premier petit pas.",
     "probe": "Amira doit faire une affiche pour la journée sportive. Depuis des jours, elle attend qu’on lui dise par où commencer. Quel serait, avec « Se lancer de soi-même », le tout premier petit pas pour elle ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel wartet die Fachkraft still und fordert nichts. Der oder die Jugendliche legt von sich aus mit dem kleinsten ersten Schritt los, etwa mit einem Wort.",
+   "fr": "Au moment d’un changement, l’adulte attend sans rien demander. Pour se lancer de soi-même, le ou la jeune fait le tout premier petit pas, par exemple une phrase ou un geste."
   }
  },
  {
@@ -17818,6 +18086,10 @@
     "de": "Letztes Mal haben wir uns den Ball zugespielt und eine Serie gezählt. Heute bauen wir zusammen einen Papierturm: erst planen, dann abwechselnd bauen.",
     "fr": "On s’est passé le ballon en comptant une série. Aujourd’hui, on construit une tour en papier : planifier d’abord, puis construire en alternant."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel macht die Fachkraft einen kleinen Vorschlag. Der oder die Jugendliche nimmt ihn an und gibt die eigene Idee dazu, etwa mit „Ja, und …“.",
+   "fr": "Au milieu du jeu, l’adulte fait une petite proposition. Le ou la jeune l’accueille et y ajoute sa propre idée, par exemple avec « Oui, et … »."
   }
  },
  {
@@ -18031,6 +18303,10 @@
     "de": "Aus dem, was ich gut kann, sprechen – bis zur eigenen Meldung im Unterricht",
     "fr": "Parler de ce que je sais bien – jusqu’à ma propre prise de parole en cours"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel stellt der oder die Jugendliche der Fachkraft eine Frage aus dem eigenen Fachgebiet (Fußball, Musik, Skaten) und erklärt kurz die Antwort. Die Fachkraft fragt gern nach.",
+   "fr": "Au milieu du jeu, le ou la jeune pose à l’adulte une question de son domaine (football, musique, skate) et explique brièvement la réponse. L’adulte demande volontiers un détail."
   }
  },
  {
@@ -18205,7 +18481,11 @@
     }
    ]
   },
-  "kurz": "Rhythmus mit Becher nachspielen · eigenen vorgeben · gemeinsamer Beat"
+  "kurz": "Rhythmus mit Becher nachspielen · eigenen vorgeben · gemeinsamer Beat",
+  "imSpiel": {
+   "de": "Mitten im Spiel klatscht die Fachkraft vier Schläge vor. Der oder die Jugendliche übt „Den Takt halten“: erst langsam und mit lautem Mitzählen, dann einmal etwas schneller.",
+   "fr": "Au milieu du jeu, l’adulte frappe quatre temps dans les mains. Le ou la jeune s’exerce à « Tenir le rythme » : d’abord lentement en comptant à voix haute, puis une fois plus vite."
+  }
  },
  {
   "id": "j:die-wurfserie",
@@ -18446,6 +18726,10 @@
     "de": "Letztes Mal hast du etwas Neues ausprobiert und einen Satz gefunden, der hilft. Heute ändert sich mitten im Spiel die Regel, und du schaltest um.",
     "fr": "La dernière fois, tu as essayé du nouveau et trouvé une phrase qui aide. Aujourd’hui, la règle change en plein jeu, et tu bascules."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel ruft die Fachkraft „Regelwechsel“ und nennt eine kleine neue Regel, etwa „nur noch leise“. Der oder die Jugendliche schaltet in einem Atemzug um und macht weiter.",
+   "fr": "Au milieu du jeu, l’adulte lance « Changement de règle » et annonce une petite règle, par exemple « tout doucement ». Le ou la jeune bascule en une respiration et continue."
   }
  },
  {
@@ -18698,6 +18982,10 @@
     "versuch": "Essaie cette semaine de ne pas écarter un compliment : arrête-toi un instant, dis « merci », puis continue.",
     "probe": "Lea a marqué le but décisif au tournoi. Un coéquipier crie : « Beau but ! » Lea veut déjà répondre : « C’était de la chance. » Que pourrait-elle faire à la place avec « Accepter un compliment » ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel sagt die Fachkraft einmal ein kleines, ehrliches Lob. Der oder die Jugendliche übt „Lob annehmen“: kurz stoppen, Danke sagen, weiterspielen.",
+   "fr": "Au moment d’un changement, l’adulte fait une fois un petit compliment sincère. Le ou la jeune s’exerce à « Accepter un compliment » : s’arrêter un instant, dire merci, continuer à jouer."
   }
  },
  {
@@ -18921,6 +19209,10 @@
     "versuch": "Essaie cette semaine de répondre à une question dans le chat pour qu’on n’ait pas à redemander : oui ou non, plus quand ou où.",
     "probe": "Sofia écrit à Luca dans le chat : « Tu viens demain au basket ? » Luca répond juste « On verra ». Comment Luca pourrait-il répondre sans qu’on ait à redemander ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bevor es weitergeht, fragt die Fachkraft zum Beispiel „Gehst du später noch raus?“ Der oder die Jugendliche gibt eine Antwort ohne Rückfrage: Ja oder Nein, plus wann oder wo.",
+   "fr": "Avant que le jeu continue, l’adulte demande par exemple « Tu sors encore plus tard ? » Le ou la jeune s’exerce à répondre sans qu’on redemande : oui ou non, plus quand ou où."
   }
  },
  {
@@ -19112,6 +19404,10 @@
     "versuch": "Essaie cette semaine, pour un itinéraire ou une consigne, de décrire avec précision ou de demander : quelle taille ? à gauche ou à droite ?",
     "probe": "Diogo doit expliquer à Zoé laquelle des vestes du vestiaire est la sienne : « la foncée ». Zoé en trouve cinq. Comment peuvent-ils s’en sortir avec « Décrire avec précision et demander » ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel beschreibt der oder die Jugendliche einen Gegenstand im Raum so genau, dass die Fachkraft ihn findet. Sie fragt einmal nach: „Wie groß? Links oder rechts?“",
+   "fr": "Au moment d’un changement, le ou la jeune décrit un objet de la pièce avec précision. L’adulte le cherche et demande une fois : « Quelle taille ? À gauche ou à droite ? »"
   }
  },
  {
@@ -19330,6 +19626,10 @@
     "de": "Eigenschaften und Stärken benennen – und jedes Mal mit einem Beispiel belegen",
     "fr": "Nommer ses qualités et ses points forts – toujours avec un exemple"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft ein Wort mit Beispiel: „Geduld – ich habe gestern lange gewartet.“ Dann darf der oder die Jugendliche eins nennen.",
+   "fr": "Au milieu du jeu, l’adulte donne un mot, un exemple : « La patience – hier, j’ai attendu longtemps sans m’énerver. » Le ou la jeune en donne un à son tour."
   }
  },
  {
@@ -19549,6 +19849,10 @@
     "de": "Kontakt aufnehmen: den Moment erkennen, ins Gespräch einsteigen, den ersten Satz finden",
     "fr": "Aller vers les autres : saisir le bon moment, entrer dans la conversation, trouver la première phrase"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel wirkt die Fachkraft kurz beschäftigt, dann aufmerksam. Der oder die Jugendliche liest erst die Signale – „Jetzt“, „Gleich“ oder „Später“ – und spricht dann an.",
+   "fr": "Au milieu du jeu, l’adulte a l’air d’abord occupé, puis disponible. Le ou la jeune s’exerce à lire d’abord les signaux – maintenant, bientôt ou plus tard – puis à aborder l’adulte."
   }
  },
  {
@@ -19773,6 +20077,10 @@
     "de": "Du hast geübt, im Gespräch erst zu Ende zu hören. Heute geht es ums Einhaken im Unterricht: Zeichen geben, Satzende abwarten, kurz sagen.",
     "fr": "Tu as répété comment écouter jusqu’au bout. Aujourd’hui, tu t’exerces à prendre la parole en cours : faire un signe, attendre la fin, dire court."
    }
+  },
+  "imSpiel": {
+   "de": "Erzählt die Fachkraft mitten im Spiel etwas, übt der oder die Jugendliche einmal das Einhaken: Zeichen geben, Satzende abwarten, dann kurz sagen. Platzt es heraus, kommt ein ruhiges „Gleich“.",
+   "fr": "Quand l’adulte raconte quelque chose au milieu du jeu, le ou la jeune s’exerce une fois à prendre la parole : faire un signe, attendre la fin de la phrase, dire court."
   }
  },
  {
@@ -20003,6 +20311,10 @@
     "de": "Du hast mit Stichworten und einem ersten Satz gesprochen. Heute bereiten wir eine einzige Meldung für den Unterricht vor.",
     "fr": "Tu as parlé avec des mots-clés et une première phrase. Aujourd’hui, on prépare une seule prise de parole pour tes cours."
    }
+  },
+  "imSpiel": {
+   "de": "In einer kurzen Pause im Spiel übt der oder die Jugendliche einen Satz für eine einzige Meldung im Unterricht zweimal: einmal leise, einmal in normaler Lautstärke. Die Fachkraft nickt.",
+   "fr": "Pendant une pause du jeu, le ou la jeune dit deux fois une seule phrase pour une prise de parole en cours : doucement, puis à voix normale. L’adulte fait un signe de tête."
   }
  },
  {
@@ -20678,6 +20990,10 @@
     "de": "Letztes Mal hast du überlegt, was ein Song mit der Stimmung macht. Heute suchst du genaue Gefühlswörter und gibst ihnen Farbe und Klang.",
     "fr": "La dernière fois, tu as réfléchi à ce qu’une chanson fait à l’ambiance. Aujourd’hui, tu cherches des mots précis et leur donnes couleur et son."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sucht der oder die Jugendliche ein genaues Wort, etwa „gespannt“, und findet Farbe und Ton dazu. Über sich selbst muss nichts gesagt werden.",
+   "fr": "Au milieu du jeu, le ou la jeune peut chercher un mot précis, par exemple « tendu », et lui trouver une couleur et un son. Rien n’oblige à parler de soi."
   }
  },
  {
@@ -20883,6 +21199,10 @@
     "versuch": "Essaie cette semaine de poser deux versions de la même chose côte à côte et de trouver trois endroits qui sont différents maintenant.",
     "probe": "En septembre, Ben a dessiné un croquis de son vélo, et aujourd’hui un autre. Il trouve qu’ils se ressemblent beaucoup. Comment peut-il poser les deux versions côte à côte pour voir ce qui est différent ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel zeigt der oder die Jugendliche eine kleine Bewegung in zwei Fassungen: erst wie sonst, dann mit einem Kniff der Fachkraft. Beide sagen, was jetzt anders ist.",
+   "fr": "Pendant une courte pause, le ou la jeune montre un petit geste en deux versions : d’abord comme d’habitude, puis avec une astuce de l’adulte. Ensemble, ils disent ce qui est différent maintenant."
   }
  },
  {
@@ -21106,6 +21426,10 @@
     "de": "Letztes Mal hast du zu Eigenschaften die zwei Seiten gesucht. Heute belegst du deine eigenen Stärken mit Beispielen auf einer Karte.",
     "fr": "La dernière fois, tu as cherché les deux faces d’un trait. Aujourd’hui, tu illustres tes propres points forts par des exemples sur une carte."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt der oder die Jugendliche in drei Teilen etwas über ein Hobby: „Das geht schon – daran arbeite ich noch – mein Trick …“",
+   "fr": "Au milieu du jeu, le ou la jeune dit en trois temps quelque chose sur un loisir : « Ça, ça va déjà – ça, je le travaille encore – voilà mon astuce. »"
   }
  },
  {
@@ -21340,6 +21664,10 @@
     "de": "Gemeinsam etwas schaffen – und sehen, wer was dazu beigetragen hat",
     "fr": "Réussir quelque chose ensemble – et voir qui y a contribué"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel im Spiel nimmt der oder die Jugendliche Blickkontakt auf, sagt kurz „Jetzt!“ und übergibt die nächste Aktion weich an die Fachkraft (Zuspiel im Team).",
+   "fr": "Au moment d’un changement dans le jeu, le ou la jeune cherche le regard, dit brièvement « Maintenant ! » et passe l’action en douceur à l’adulte (jeu d’équipe)."
   }
  },
  {
@@ -21574,6 +21902,10 @@
     "versuch": "Remarque cette semaine ce que fait quelqu’un que tu trouves bien – et reprends une seule chose.",
     "probe": "Ben voit en cours de maths que Luca dit à voix haute : « Je n’ai pas encore compris, tu peux me montrer ? » et reçoit tout de suite de l’aide. Que fait Luca exactement ? Que pourrait reprendre Ben en s’inspirant de lui ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel macht die Fachkraft etwas Kleines vor, etwa ruhig durchatmen. Der oder die Jugendliche sagt, was die Fachkraft macht und was er oder sie davon übernehmen würde (Abgucken).",
+   "fr": "Au milieu du jeu, l’adulte fait un petit geste, par exemple respirer calmement avant de continuer. Le ou la jeune dit ce que fait l’adulte et ce qu’il ou elle en reprendrait (S’inspirer)."
   }
  },
  {
@@ -21799,6 +22131,10 @@
     "versuch": "Essaie cette semaine de calculer le prix total d’une offre : prix mensuel × nombre de mois + frais uniques.",
     "probe": "Mehdi veut acheter un casque : 120 € d’un coup en magasin, ou 10 € par mois pendant 12 mois plus 15 € de livraison en ligne. Comment trouve-t-il avec le « prix total » ce qui revient moins cher ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel nennt die Fachkraft ein erfundenes Angebot: fünf Euro im Monat, drei Monate, zehn Euro einmalig. Der oder die Jugendliche rechnet den Gesamtpreis im Kopf aus.",
+   "fr": "Au moment d’un changement, l’adulte annonce une offre inventée : cinq euros par mois, trois mois, dix euros une seule fois. Le ou la jeune calcule le prix total de tête ; sinon, le jeu continue."
   }
  },
  {
@@ -22036,6 +22372,10 @@
     "versuch": "Essaie cette semaine de poser les cinq questions à une info : qui, quoi, où, quand, pourquoi ?",
     "probe": "Sofia lit dans le chat de la classe : « Demain, la deuxième heure est supprimée, rendez-vous à l’aula. » Elle ne sait pas qui est concerné. Comment trouver ce qui vaut avec « Cinq questions à une info » ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel erzählt die Fachkraft eine erfundene Neuigkeit. Der oder die Jugendliche stellt dazu zwei der fünf Fragen (Wer, was, wo, wann, warum?), und die Fachkraft antwortet.",
+   "fr": "Au milieu du jeu, l’adulte raconte en une phrase une petite nouvelle inventée. Le ou la jeune pose deux des cinq questions (qui, quoi, où, quand, pourquoi ?) et l’adulte répond."
   }
  },
  {
@@ -22270,6 +22610,10 @@
     "versuch": "Essaie cette semaine de dessiner quelque chose de réel (une table, une étagère) à l’échelle de 1 carreau = 10 cm sur du papier quadrillé.",
     "probe": "Inês prépare pour la fête de l’école un stand dans un coin de 3 × 2 m : une table (120 × 60 cm) et deux étagères (80 × 30 cm chacune). Comment vérifie-t-elle avec l’« échelle » que tout rentre ?"
    }
+  },
+  "imSpiel": {
+   "de": "Bei einem Wechsel nennt die Fachkraft einen Maßstab: Im Plan bedeutet ein Finger zehn Zentimeter. Der oder die Jugendliche rechnet, wie viele Finger ein Bett von 200 Zentimetern braucht.",
+   "fr": "Au moment d’un changement, l’adulte donne une échelle : sur un plan imaginaire, un doigt vaut dix centimètres. Le ou la jeune calcule combien de doigts il faut pour un lit de 200 centimètres."
   }
  },
  {
@@ -22504,6 +22848,10 @@
     "versuch": "Remarque cette semaine qui est seul, assis ou debout, et essaie le premier pas : un regard, une place offerte, un sujet du moment.",
     "probe": "Mehdi est dans le bus avec deux amis quand Amira, arrivée lundi à l’école, monte et s’assoit seule près de la fenêtre. Comment Mehdi peut-il faire le premier pas avec « Faire de la place » ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel tut die Fachkraft so, als stünde jemand Neues abseits. Der oder die Jugendliche übt „Platz machen“: Blick, einen Platz anbieten, ein aktuelles Thema. Ein Versuch genügt.",
+   "fr": "Au milieu du jeu, l’adulte fait comme si quelqu’un de nouveau restait à l’écart. Le ou la jeune s’exerce à faire de la place : un regard, une place offerte, un sujet du moment."
   }
  },
  {
@@ -22744,6 +23092,10 @@
     "versuch": "Essaie cette semaine pour un exercice : estime un chiffre, essaie dix fois, cherche un conseil, puis recommence.",
     "probe": "Noah s’entraîne aux services au ping-pong. Il estime que cinq sur dix tombent sur la table. En essayant, il n’y en a que trois. Que pourrait faire Noah maintenant avec « S’entraîner avec des chiffres » ?"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel schätzt der oder die Jugendliche, wie oft von zehn eine kleine Bewegung klappt (Üben mit Zahlen), probiert sie und versucht sie nach einem Tipp nochmal.",
+   "fr": "Au milieu du jeu, le ou la jeune estime combien de fois sur dix un petit geste réussit (S’entraîner), l’essaie une fois et accepte volontiers un conseil pour un second essai."
   }
  },
  {
@@ -22979,6 +23331,10 @@
     "de": "Eigene Fortschritte erkennen und beschreiben – mit den drei Reglern",
     "fr": "Reconnaître et décrire ses progrès – avec les trois curseurs"
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft eine Veränderung: „Früher dreimal, heute einmal.“ Der oder die Jugendliche ordnet sie einem der drei Regler zu: wie oft, wie lange, wie stark?",
+   "fr": "Au milieu du jeu, l’adulte cite un changement inventé : « Avant, trois retards par semaine ; maintenant, un seul. » Le ou la jeune le range sur l’un des trois curseurs."
   }
  },
  {
@@ -23212,6 +23568,10 @@
     "de": "Du hast drei Regler kennengelernt: wie oft, wie lange, wie stark. Heute fragst du damit nach, bis eine Veränderung konkret wird.",
     "fr": "Tu as découvert les trois curseurs : combien de fois, combien de temps, quelle intensité. Aujourd’hui, tu poses des questions jusqu’à ce qu’un changement devienne concret."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt die Fachkraft: „Bei mir läuft es besser.“ Der oder die Jugendliche fragt mit den drei Reglern nach: wie oft, wie lange, wie stark?",
+   "fr": "Au milieu du jeu, l’adulte dit : « Ça va mieux pour moi. » Le ou la jeune pose des questions avec les trois curseurs : combien de fois, combien de temps, quelle intensité ?"
   }
  },
  {
@@ -23428,6 +23788,10 @@
     "de": "Du hast mit den drei Reglern nachgefragt. Heute prüfst du allein, was sich bei einer Veränderung bewegt hat – auch nach einem Rückschlag.",
     "fr": "Tu as posé des questions avec les trois curseurs. Aujourd’hui, tu vérifies par toi-même ce qui a bougé – même après un revers."
    }
+  },
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt der oder die Jugendliche eine kleine, auch erfundene Veränderung und schaut selbst an den drei Reglern nach, was sich trotz eines Rückschlags bewegt hat.",
+   "fr": "Au milieu du jeu, le ou la jeune cite un petit changement, même inventé, et cherche sur les trois curseurs ce qui a bougé malgré un revers, sans aide."
   }
  },
  {
@@ -23664,7 +24028,11 @@
     "fr": "Séparer les faits des opinions – avec le mot de jugement"
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt die Fachkraft „Heute ist der schönste Tag der Woche.“ Der oder die Jugendliche macht den Wertungswort-Check und nennt das Wertungswort.",
+   "fr": "Au milieu du jeu, l’adulte dit : « Aujourd’hui, c’est la plus belle journée de la semaine. » Le ou la jeune repère le mot de jugement : s’il y en a un, c’est une opinion."
+  }
  },
  {
   "id": "j:werbespot-zerlegen",
@@ -23918,7 +24286,11 @@
     "fr": "Tu as trié des phrases en faits et opinions avec le mot de jugement. Aujourd’hui, tu sépares aussi des phrases mixtes, où les deux se mélangent."
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt die Fachkraft „Das Café hat zwölf Sorten und das beste Eis.“ Beim Wertungswort-Check teilt der oder die Jugendliche den Satz in Fakt und Meinung.",
+   "fr": "Au milieu du jeu, l’adulte dit : « Le café a douze parfums et la meilleure glace. » Avec le mot de jugement, le ou la jeune sépare le fait de l’opinion dans la phrase."
+  }
  },
  {
   "id": "j:meinung-mit-fakt-belegen",
@@ -24150,7 +24522,11 @@
     "fr": "Tu as séparé des phrases mixtes. Aujourd’hui, tu examines seul ou seule un texte entier et tu appuies une opinion sur un fait."
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt der oder die Jugendliche eine kleine Meinung und stützt sie mit „weil …“ durch einen Fakt, so wie beim Wertungswort-Check. Die Fachkraft hört nur zu.",
+   "fr": "Au milieu du jeu, le ou la jeune donne une petite opinion et l’appuie sur un fait avec « parce que … », comme avec le mot de jugement. L’adulte se contente d’écouter."
+  }
  },
  {
   "id": "j:mir-ist-wichtig",
@@ -24379,7 +24755,11 @@
     "fr": "Dire ce qui compte pour moi – avec la phrase-valeur"
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt die Fachkraft einen kleinen Wichtig-Satz: Wert, Grund, was sie deshalb tut. Der oder die Jugendliche antwortet mit einem eigenen zu einem Wert nach Wahl.",
+   "fr": "Au milieu du jeu, l’adulte dit une petite phrase-valeur : la valeur, la raison, ce que l’on fait en conséquence. Le ou la jeune en dit une autre, sur une valeur de son choix."
+  }
  },
  {
   "id": "j:zwei-werte-auf-der-waage",
@@ -24610,7 +24990,11 @@
     "fr": "Tu as dit avec la phrase-valeur ce qui compte pour toi, pourquoi et ce que tu fais en conséquence. Aujourd’hui, tu mets deux valeurs en balance."
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "In einer kurzen Pause im Spiel nennt die Fachkraft zwei Werte, die manchmal auseinanderziehen, zum Beispiel Ehrlichkeit und Rücksicht. Der oder die Jugendliche wägt ab und sagt einen Wichtig-Satz.",
+   "fr": "Dans une courte pause du jeu, l’adulte nomme deux valeurs qui tirent parfois en sens contraire, par exemple l’honnêteté et la délicatesse. Le ou la jeune les pèse et dit une phrase-valeur."
+  }
  },
  {
   "id": "j:was-ist-dir-wichtig",
@@ -24841,7 +25225,11 @@
     "fr": "Tu as pesé deux valeurs et dit, avec « C’est pourquoi … », ce que tu fais. Aujourd’hui, tu dis la phrase-valeur (valeur, raison, ce que tu fais en conséquence) librement dans une conversation, sans carte."
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Bei einem Wechsel fragt die Fachkraft einmal: „Was ist dir im Umgang mit anderen wichtig?“ Der oder die Jugendliche antwortet frei mit dem Wichtig-Satz. Ein Satz genügt.",
+   "fr": "Au moment d’un changement, l’adulte demande une fois : « Qu’est-ce qui compte pour toi dans le contact avec les autres ? » Le ou la jeune répond librement par la phrase-valeur."
+  }
  },
  {
   "id": "j:einladung-in-drei-teilen",
@@ -25070,7 +25458,11 @@
     "fr": "Inviter quelqu’un gentiment – avec la phrase d’invitation"
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Bei einem Wechsel im Spiel lädt der oder die Jugendliche die Fachkraft mit dem Einladungs-Satz zu etwas Kleinem ein: Vorschlag, Frage, offener Ausweg. Die Fachkraft antwortet freundlich.",
+   "fr": "Au moment d’un changement, le ou la jeune invite l’adulte à quelque chose de petit avec la phrase d’invitation : proposition, question, porte ouverte. L’adulte répond aimablement."
+  }
  },
  {
   "id": "j:ja-nein-vielleicht",
@@ -25304,7 +25696,11 @@
     "fr": "Tu as construit des invitations en trois parties : proposition, question, porte ouverte. Aujourd’hui, tu t’entraînes à réagir gentiment à un oui, un non ou un peut-être."
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Der oder die Jugendliche lädt die Fachkraft mit dem Einladungs-Satz zu etwas Kleinem ein; die Fachkraft antwortet mit Ja, Nein oder „Mal sehen“, und er oder sie reagiert freundlich.",
+   "fr": "Le ou la jeune invite l’adulte à quelque chose de petit avec la phrase d’invitation ; l’adulte répond oui, non ou « on verra », et le ou la jeune réagit gentiment."
+  }
  },
  {
   "id": "j:eigene-einladung-schreiben",
@@ -25542,7 +25938,11 @@
     "fr": "Tu sais inviter et réagir gentiment aux réponses. Aujourd’hui, tu formules seul ou seule une invitation pour quelqu’un que tu aimes bien."
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Bei einem Wechsel formuliert der oder die Jugendliche selbst einen Einladungs-Satz für eine erfundene Person, ohne Namen, und sagt ihn laut. Die Fachkraft antwortet als diese Person.",
+   "fr": "Au moment d’un changement, le ou la jeune formule soi-même une phrase d’invitation pour une personne inventée, sans nom, et la dit à voix haute. L’adulte répond comme cette personne."
+  }
  },
  {
   "id": "j:ausrede-oder-reparatur",
@@ -25771,7 +26171,11 @@
     "fr": "Assumer mon comportement – avec la phrase de réparation"
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Nach einem kleinen Patzer im Spiel sagt die Fachkraft einen Reparatur-Satz: was sie tat, was es auslöste, was sie tut. Der oder die Jugendliche darf es einmal selbst versuchen.",
+   "fr": "Après un petit raté de l’adulte pendant le jeu, celui-ci dit une phrase de réparation : ce qu’il a fait, l’effet, ce qu’il répare. Le ou la jeune peut l’essayer une fois."
+  }
  },
  {
   "id": "j:folge-annehmen",
@@ -25993,7 +26397,11 @@
     "fr": "Tu as dit avec la phrase de réparation ce que tu as fait et ce que ça a causé. Aujourd’hui s’ajoute le fait d’accepter une conséquence."
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Mitten im Spiel nennt die Fachkraft einen erfundenen Patzer samt kleiner Folge. Der oder die Jugendliche antwortet mit dem Reparatur-Satz und nimmt die Folge ohne Ausrede an.",
+   "fr": "Au milieu du jeu, l’adulte cite un raté inventé avec une petite conséquence. Le ou la jeune répond par une phrase de réparation et accepte la conséquence, sans excuse."
+  }
  },
  {
   "id": "j:wenn-der-andere-noch-sauer-ist",
@@ -26236,6 +26644,10 @@
     "fr": "Tu as appris à accepter une conséquence sans excuse. Aujourd’hui, tu restes sur ta part, même si l’autre est encore fâché."
    }
   },
-  "tagesform": []
+  "tagesform": [],
+  "imSpiel": {
+   "de": "Mitten im Spiel sagt der oder die Jugendliche einen Reparatur-Satz zu einem erfundenen Patzer. Die Fachkraft antwortet spielerisch: „Das reicht mir nicht.“ Der oder die Jugendliche bleibt dabei.",
+   "fr": "Au milieu du jeu, le ou la jeune dit une phrase de réparation pour un raté inventé. L’adulte répond en plaisantant : « Ça ne suffit pas. » Le ou la jeune la redit calmement."
+  }
  }
 ]

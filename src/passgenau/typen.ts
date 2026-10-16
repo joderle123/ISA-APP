@@ -109,6 +109,10 @@ export interface Stundenschritt extends KatalogZusatz {
   /** Lernpfad (Stufe 4, 16.10.): Platz der Übung in einer Reihe von 3–4 Übungen, die auf einem Werkzeug aufbauen; `bruecke`
    *  ist der Satz zum Kind ab dem zweiten Schritt („Letztes Mal … Heute …“), `faden` sagt, worauf die Reihe hinausläuft */
   linie?: { id: string; nr: number; faden: { de: string; fr: string }; bruecke?: { de: string; fr: string } }
+  /** Im Spiel üben (Rahmen-Schritt, 16.10.): ein Satz an die Fachkraft, wie sie das Werkzeug ein- bis zweimal in irgendein
+   *  Spiel oder eine Bewegung einbaut – steht unter dem Bewegungs- oder Spielblock der Stunde (Messung 5: „Bewegung und Spiel
+   *  ohne Bezug zum Ziel“, „Füllblöcke beliebig“) */
+  imSpiel?: { de: string; fr: string }
   quelle: { art: SchrittQuelle; einheit?: string; titel: string }
   titel: string
   text: string

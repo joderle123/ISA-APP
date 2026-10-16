@@ -20,6 +20,8 @@ export interface DruckSchritt {
   text: string
   sagen: string[]
   wennEsKippt?: string
+  /** Im Spiel üben (Rahmen-Schritt 16.10.): wie das Werkzeug der Kern-Übung ein-, zweimal in diesen Bewegungs- oder Spielblock kommt */
+  imSpiel?: string
   quelle: string
   warum: string[]
   achtung?: string
@@ -205,6 +207,30 @@ const MATERIAL_IM_TEXT: [RegExp, string | { de: string; fr: string }][] = [
   [/Luftballon|ballon de baudruche/i, { de: 'Luftballon', fr: 'ballon de baudruche' }],
   [/Strohhalm|paille/i, { de: 'Strohhalme', fr: 'pailles' }],
   [/Wäscheklammer|pince à linge/i, { de: 'Wäscheklammern', fr: 'pinces à linge' }],
+  // Rahmen-Schritt 16.10. (Messung 5: „Topfdeckel, Taschenlampe, Gehörschutz fehlen im Material“, „drei Figuren-Karten, aber
+  // nichts vorzubereiten“, „der Becher fehlt“, „Büroklammern in keiner Liste“): Gegenstände ganzer Wörter, keine Möbel; nicht
+  // „murmelt“, „klingelt“, „Papierstreifen“ (Reifen), „Trommelwirbel“ auf dem Tisch, „Lichtkegel“, „ohne Musik“
+  [/[Dd]eckeln?(?!\p{L})|couvercles?/u, { de: 'Topfdeckel', fr: 'couvercles' }],
+  [/Taschenlampe|lampe de poche/i, { de: 'Taschenlampe', fr: 'lampe de poche' }],
+  [/Gehörschutz|protections? auditives?|casque anti-bruit/i, { de: 'Gehörschutz', fr: 'protections auditives' }],
+  [/Figuren-?[Kk]arten|Bildkarten|cartes?[- ]images?|cartes?[- ]personnages?/u, { de: 'Bildkarten', fr: 'cartes-images' }],
+  [/(?<![\p{L}-])(Karten|Karte|Kärtchen|Karteikarten|cartes?)(?![\p{L}-])/u, 'karten'],
+  [/(?<!\p{L})(Becher|gobelets?)(?!\p{L})/u, { de: 'Becher', fr: 'gobelets' }],
+  [/(?<!\p{L})(Zettel|Klebezettel|post-it|petits papiers)(?!\p{L})/iu, { de: 'Zettel', fr: 'petits papiers' }],
+  [/(?<!\p{L})(Kegel|Hütchen|quilles?|plots?)(?!\p{L})/u, { de: 'Kegel oder Hütchen', fr: 'quilles ou plots' }],
+  [/(?<!\p{L})Trommel(n)?(?!\p{L})|(?<!roulement de )tambour(?!\p{L})/u, { de: 'Trommel (oder ein Topf)', fr: 'tambour (ou une casserole)' }],
+  [/(?<!\p{L})(Korb|Körbchen|panier)(?!\p{L})/u, { de: 'Korb', fr: 'panier' }],
+  [/(?<!(ohne|sans|sans la) )(?<!\p{L})(Musik|musique)(?!\p{L})/u, 'musik'],
+  [/(?<!\p{L})(Reifen|cerceaux?)(?!\p{L})/u, { de: 'Reifen', fr: 'cerceaux' }],
+  [/(?<!\p{L})(Spielfiguren?|Holzfiguren?|Figuren)(?![\p{L}-])|figurines?/u, { de: 'kleine Figuren', fr: 'petites figurines' }],
+  [/(?<!\p{L})(Kissen|coussins?)(?!\p{L})/u, { de: 'Kissen', fr: 'coussin' }],
+  [/(?<!\p{L})(Glocke|Glöckchen|Klingel|clochette|grelot)(?!\p{L})/u, { de: 'Glöckchen', fr: 'clochette' }],
+  [/(?<!\p{L})(Murmeln|billes)(?!\p{L})/u, { de: 'Murmeln', fr: 'billes' }],
+  [/(?<!\p{L})(Löffel|cuillères?)(?!\p{L})/u, { de: 'Löffel', fr: 'cuillère' }],
+  [/Büroklammer|trombones?/u, { de: 'Büroklammern', fr: 'trombones' }],
+  [/(?<!\p{L})(Seil|Springseil|corde)(?!\p{L})/u, 'seil'],
+  [/(?<!\p{L})(Schere|ciseaux)(?!\p{L})/u, 'schere'],
+  [/(?<!\p{L})(Papier\p{L}*|feuilles? de papier|papier)(?!\p{L})/u, 'papier'],
 ]
 
 export function materialName(k: Katalog, m: string, sprache: Sprache): string {
@@ -386,6 +412,24 @@ function geuebteZiele(k: Katalog, plan: Plan, s: Plan['sitzungen'][number]): Set
   return es.length ? new Set(es.flatMap(codesVon)) : null
 }
 
+/** Im Spiel üben (Rahmen-Schritt 16.10.): der erste Bewegungs- oder Spielblock ab 3 Minuten nimmt das Werkzeug der Kern-Übung
+ *  ein-, zweimal mit – beim Übertragen das der übertragenen Übung, im Rückblick das der zuletzt geübten; nur in der
+ *  Einzelstunde (der Satz spricht von einem Kind), nicht in Atem- und Ruheübungen (die bleiben ruhig) und nicht, wenn der
+ *  Block selbst schon dieses Ziel übt. */
+export function imSpielStelle(k: Katalog, plan: Plan, nr: number): { i: number; text: { de: string; fr: string } } | null {
+  const s = plan.sitzungen.find((x) => x.nr === nr)
+  const kernX = s?.schritte.find((x) => x.rolle === 'kern')
+  if (!s || !kernX || (plan.auftrag?.sozialform ?? 'einzeln') !== 'einzeln') return null
+  const quelle = kernX.ref === 'pg:uebertragen' ? quellenDerUebertragung(k, plan, kernX)[0]
+    : kernX.ref === 'pg:folge-transfer'
+      ? plan.sitzungen.filter((y) => y.nr < nr).flatMap((y) => y.schritte.filter((z) => z.rolle === 'kern').map((z) => k.eintraege.get(z.ref))).reverse().find((e) => e?.typ === 'schritt' && !!e.imSpiel)
+      : k.eintraege.get(kernX.ref)
+  if (quelle?.typ !== 'schritt' || !quelle.imSpiel?.de || !quelle.imSpiel.fr) return null
+  const codes = new Set(quelle.eldib.filter((x) => x.gewicht === 1).map((x) => x.code))
+  const i = s.schritte.findIndex((x) => (x.rolle === 'bewegung' || x.rolle === 'spiel') && x.min >= 3 && x.ref !== 'pg:blatt' && x.ref !== 'pg:da-sein' && !(k.eintraege.get(x.ref)?.format ?? []).includes('atmen') && !(k.eintraege.get(x.ref)?.eldib ?? []).some((z) => codes.has(z.code)))
+  return i >= 0 ? { i, text: { de: quelle.imSpiel.de.trim(), fr: quelle.imSpiel.fr.trim() } } : null
+}
+
 /** Druckdaten einer Sitzung. */
 export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt: { sprache: Sprache; warum: boolean; karten?: boolean }): DruckSitzung {
   const s = plan.sitzungen.find((x) => x.nr === nr)!
@@ -478,6 +522,12 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
         if (schonZeit) mat.delete(m)
         schonZeit = true
       }
+    }
+    // was der Text nennt, steht oft schon genauer da („Karten“ neben „Bildkarten“, „Ball“ neben „weicher Ball“)
+    const liste = [...mat]
+    for (const m of liste) {
+      const kurz = m.trim().toLowerCase()
+      if (kurz.length >= 4 && liste.some((n) => n !== m && mat.has(n) && n.toLowerCase().includes(kurz))) mat.delete(m)
     }
   }
   const matSeite = materialSeite(k, p, plan, nr, sp)
@@ -638,6 +688,9 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       if (x.rolle === 'abschluss' && !ersetzt) d.sagen = [rueck, ...d.sagen].slice(0, 3)
     })
   }
+  // Im Spiel üben (Messung 5: „Bewegung und Spiel ohne Bezug zum Ziel“, „Füllblöcke beliebig“, „ruf-nahe Spiele“)
+  const ims = imSpielStelle(k, plan, nr)
+  if (ims && schritte[ims.i]) schritte[ims.i].imSpiel = name ? mitName(ims.text[sp], name, sp) : ims.text[sp]
   return {
     titel: plan.titel,
     zeile,

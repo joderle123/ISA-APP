@@ -55,6 +55,7 @@ function schrittHoehe(x: DruckSchritt, d: DruckSitzung, m: PlanMasse): number {
   h += zeilen(x.text, m.basis, SPALTE) * m.basis * m.lh
   if (x.sagen.length) h += 3 + x.sagen.slice(0, 3).reduce((n, s, i) => n + zeilen(`${i ? '' : tx.sagen + tx.dp + ' '}„${s}“`, m.sagen, SPALTE - 8) * m.sagen * 1.4, 0)
   if (x.wennEsKippt) h += 3 + zeilen(`${tx.kippt}${tx.dp} ${x.wennEsKippt}`, m.kippt, SPALTE) * m.kippt * 1.4
+  if (x.imSpiel) h += 3 + zeilen(`${tx.imSpiel}${tx.dp} ${x.imSpiel}`, m.kippt, SPALTE) * m.kippt * 1.4
   if (x.achtung) h += 4 + 10 + zeilen(`${tx.beachten}${tx.dp} ${x.achtung}`, m.achtung, SPALTE - 12.5) * m.achtung * 1.38
   if (x.hinweis) h += 3 + zeilen(x.hinweis, m.klein, SPALTE) * m.klein * 1.25
   if (x.blatt && d.blattTeile.length) h += 4 + d.blattTeile.reduce((n, b) => n + zeilen(`• ${b.titel}  (${b.quelle})${b.tipp ? `  ${tx.leichter}${tx.dp} ${b.tipp}` : ''}`, m.achtung, SPALTE) * m.achtung * 1.38, 0)
@@ -148,7 +149,7 @@ export function planMasse(d: DruckSitzung): PlanMasse {
 
 const T: Record<Sprache, Record<string, string>> = {
   de: {
-    reiter: 'Passgenau', fuer: 'für', ziele: 'Ziele', ablauf: 'Ablauf', min: 'Min.', sagen: 'Sagen', kippt: 'Wenn es kippt', warum: 'Warum',
+    reiter: 'Passgenau', fuer: 'für', ziele: 'Ziele', ablauf: 'Ablauf', min: 'Min.', sagen: 'Sagen', kippt: 'Wenn es kippt', imSpiel: 'Im Spiel üben', warum: 'Warum',
     material: 'Material', vorbereitung: 'Vorbereitung', notiz: 'Notiz nach der Stunde', datum: 'Datum', vertraulich: 'vertraulich – nicht fürs Kind',
     beachten: 'Beachten', eltern: 'Vorher: Eltern informiert (Hausregel)?', blatt: 'Das Blatt', leichter: 'leichter', wahl: 'Zur Wahl', dp: ':',
     hinweise: 'Hinweise', neu: 'neu ausprobiert', deckblatt: 'Folge', sitzung: 'Sitzung', phase: 'Phase', kern: 'Kern', alleMaterial: 'Material für die ganze Folge',
@@ -156,7 +157,7 @@ const T: Record<Sprache, Record<string, string>> = {
     beruhigt: 'hat sich beruhigt', dabei: 'war dabei', nurDa: 'wollte nur da sein', abgebrochen: 'abgebrochen', halten: 'gehalten', blattKurz: 'Blatt',
   },
   fr: {
-    reiter: 'Passgenau', fuer: 'pour', ziele: 'Objectifs', ablauf: 'Déroulement', min: 'min', sagen: 'Dire', kippt: 'Si ça bascule', warum: 'Pourquoi',
+    reiter: 'Passgenau', fuer: 'pour', ziele: 'Objectifs', ablauf: 'Déroulement', min: 'min', sagen: 'Dire', kippt: 'Si ça bascule', imSpiel: 'S’exercer en jouant', warum: 'Pourquoi',
     material: 'Matériel', vorbereitung: 'Préparation', notiz: 'Note après la séance', datum: 'Date', vertraulich: 'confidentiel – pas pour l’enfant',
     beachten: 'Attention', eltern: 'Avant : parents informés (règle de la maison) ?', blatt: 'La fiche', leichter: 'plus simple', wahl: 'Au choix', dp: '\u202f:',
     hinweise: 'Remarques', neu: 'nouvel essai', deckblatt: 'Série', sitzung: 'Séance', phase: 'Phase', kern: 'Cœur', alleMaterial: 'Matériel pour toute la série',
@@ -265,6 +266,12 @@ function SchrittZeile({ x, i, d, m, vorAus = 0 }: { x: DruckSchritt; i: number; 
               </Text>
             ))}
           </View>
+        ) : null}
+        {x.imSpiel ? (
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: m.kippt, lineHeight: 1.4, color: NEUTRAL.text, marginTop: 3 }}>
+            <Text style={{ fontWeight: 600, color: P.tief }}>{`${tx.imSpiel}${tx.dp} `}</Text>
+            {ty(x.imSpiel, sp)}
+          </Text>
         ) : null}
         {x.wennEsKippt ? (
           <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: m.kippt, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 3 }}>
