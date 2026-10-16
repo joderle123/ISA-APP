@@ -9,6 +9,7 @@ import { TIERE } from './motive-tiere'
 import { DINGE } from './motive-dinge'
 import { LERNEN } from './motive-lernen'
 import { ALLTAG } from './motive-alltag'
+import { NEU } from './motive-neu'
 
 const T = 'tinte'
 const WASSER = '#E3EEF7'
@@ -403,6 +404,7 @@ const MOTIVE: Record<string, () => Zeichnung> = {
   ...DINGE,
   ...LERNEN,
   ...ALLTAG,
+  ...NEU,
 }
 
 export const MOTIV_NAMEN = Object.keys(MOTIVE)
