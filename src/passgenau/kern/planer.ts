@@ -306,7 +306,9 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
         // Abwechslung über die Wochen: ein Kern im selben Format wie die Kerne der letzten drei Wochen zählt etwas weniger
         (kernArtig ? Math.min(0.1, 0.04 * (jungeKernFormate(c).get(e.format[0] ?? '') ?? 0)) : 0)
       const thema = rahmen && zumThema ? (e.typ === 'schritt' && e.nurZumThema ? 0.6 : 0.04) : 0
-      const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: (s.bevorzugt?.has(e.id) ? 1 : 0) - malus + thema })
+      // Einzelkurs (Kurs-Pilot 16.10.): eine als Ganzes geschriebene Folge mit eigenem Blatt je Sitzung geht vor einzelnen Übungen
+      const kurs = kernArtig && e.typ === 'schritt' && e.linie?.id.startsWith('kurs-') ? 0.3 : 0
+      const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: (s.bevorzugt?.has(e.id) ? 1 : 0) - malus + thema + kurs })
       // … außer eigene Übungen im Kern (Testlauf 13: Sitzung „üben“ nahm Kurs-Teile, weil die neue Jugend-Übung zum Ziel als
       // „wahrnehmen“ markiert ist)
       if (phaseSlot && locker < 1 && e.bogen && s.phase !== 'leicht' && b.f.phase < 0.3 && !(kernArtig && kuratiert(c, e.id))) continue
@@ -1070,6 +1072,9 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       // Übertragen und Rückblick: der eigene Einstieg, der die Übung beim Namen nennt und nach dem Versuch fragt – kein
       // Themen-Einstieg (Testlauf 16.10.: „Im Takt, ohne Worte“ zur Kooperation vor dem Übertragen einer Selbstbild-Übung)
       if (slot.rolle === 'einstieg' && kern?.id.startsWith('pg:')) auswahl = auswahl.filter((w) => !w.b.e.id.startsWith('th:'))
+      // … und vor einer Kurs-Sitzung: der Einstieg kündigt genau diese Sitzung an (Kurs-Pilot 16.10.: „Kribbeln im Bauch“ –
+      // Spur 2 – vor Spur 1 „Gesicht“)
+      if (slot.rolle === 'einstieg' && kern?.typ === 'schritt' && kern.linie?.id.startsWith('kurs-')) auswahl = auswahl.filter((w) => !w.b.e.id.startsWith('th:'))
       // … und ein Themen-Einstieg nur zur Hauptkompetenz der Stunde (Blind-Bewertung 13: „Zeichnen nach Ansage“ zur
       // Kommunikation vor einer Übung zu Werten – die Brücke „genau darum geht es jetzt weiter“ stimmte nicht)
       const haupt = [...kk][0]
@@ -1466,7 +1471,10 @@ function planTitelEinzeln(c: Kontext): string {
   // kein Thema im Titel, wenn Vorsicht gilt (Blind-Bewertung 10: „Traurigkeit: …“ bei Vorsicht Trauer, „Familie: …“ bei Vorsicht
   // Familie – das Planblatt liegt offen auf dem Tisch)
   if (c.vorsicht.size || (c.p.achtung ?? []).length) return t
-  return thema && feld && titelFeld(c) ? `${themaByKey.get(thema)?.name.split(' & ')[0] ?? ''}: ${t}`.replace(/^: /, '') : t
+  const vorne = thema ? themaByKey.get(thema)?.name.split(' & ')[0] ?? '' : ''
+  // nicht zweimal dasselbe („Gefühle erkennen: Gefühle erkennen“, Kurs-Pilot 16.10.)
+  if (vorne && t.toLowerCase().startsWith(vorne.toLowerCase())) return t
+  return thema && feld && titelFeld(c) ? `${vorne}: ${t}`.replace(/^: /, '') : t
 }
 
 /** Plan-Id aus Kind und Auftrag (ohne Datum, ohne ref) – derselbe Klick liefert denselben Plan (T-M7). */

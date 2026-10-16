@@ -244,7 +244,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     if (tm.has('draussen') && !(c.a.ort ?? []).includes('draussen')) return 'Ort'
     if (tm.has('kueche')) return 'Küche'
     if (tm.has('gaeste')) return 'Gäste'
-    if (tm.has('blattverweis') && e.typ === 'schritt') return 'Blatt der Quelle'
+    // (eine Übung mit eigenem Blatt darf darauf verweisen: „Aufgabe 1 und 2 des Blatts gemeinsam“ – Kurs-Pilot 16.10.)
+    if (tm.has('blattverweis') && e.typ === 'schritt' && !e.uebungsblatt) return 'Blatt der Quelle'
     if (tm.has('fuerleitung')) return 'für Erwachsene'
     if (tm.has('rueckbezug') && /^(k|f|m|c):/.test(e.id)) return 'braucht eine Stunde davor'
     if (tm.has('geraet') && locker < 3) return 'braucht ein Tablet'

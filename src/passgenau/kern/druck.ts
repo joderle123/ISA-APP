@@ -689,6 +689,14 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     })
   }
   // Im Spiel üben (Messung 5: „Bewegung und Spiel ohne Bezug zum Ziel“, „Füllblöcke beliebig“, „ruf-nahe Spiele“)
+  // Blatt-Schritt einer Kurs-Sitzung: die Anleitung zu genau diesem Blatt (welche Aufgabe gemeinsam, welche allein)
+  const anl = kernE?.typ === 'schritt' ? kernE.uebungsblatt?.anleitung?.[sp] : undefined
+  if (anl) s.schritte.forEach((x, i) => {
+    if (x.ref !== 'pg:blatt' || !schritte[i]) return
+    schritte[i].text = name ? mitName(anl.text, name, sp) : anl.text
+    if (anl.sagen?.length) schritte[i].sagen = anl.sagen
+    if (anl.wennEsKippt) schritte[i].wennEsKippt = name ? mitName(anl.wennEsKippt, name, sp) : anl.wennEsKippt
+  })
   const ims = imSpielStelle(k, plan, nr)
   if (ims && schritte[ims.i]) schritte[ims.i].imSpiel = name ? mitName(ims.text[sp], name, sp) : ims.text[sp]
   return {
