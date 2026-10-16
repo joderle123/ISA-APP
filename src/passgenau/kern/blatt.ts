@@ -640,7 +640,9 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
       if (b.art === 'zuordnen' && !b.titel && !vorher) liste.push({ art: 'aufgabe', text: fr ? 'Relie ce qui va ensemble.' : 'Verbinde, was zusammengehört.' })
       if (b.art === 'dialog' && !vorher && b.zeilen.some((z) => !z.text)) liste.push({ art: 'aufgabe', text: fr ? 'Écris dans les lignes vides ce que tu dirais.' : 'Schreib in die leeren Zeilen, was du sagen würdest.' })
       // Feldhöhe kommt in Millimetern (Übungsblätter), der Renderer rechnet in Zeilen
-      if (b.art === 'feld') liste.push({ ...b, hoehe: Math.max(b.zeichnen ? 6 : 3, Math.min(9, Math.round((b.hoehe ?? 36) / 8))) })
+      // (Kurs-Blätter dürfen ein kleineres Malfeld haben – Kurs-Prüfung 16.10.: auf einseitigen Vorschulblättern verdrängte das
+      // Malfeld mit mindestens 6 Zeilen die zweite Aufgabe)
+      if (b.art === 'feld') liste.push({ ...b, hoehe: Math.max(b.zeichnen ? (kursBlatt ? 4 : 6) : 3, Math.min(9, Math.round((b.hoehe ?? 36) / 8))) })
       else liste.push(o.wenigSchreiben && b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
     }
     const fertig = ohneLeereAufgaben(liste, o.wenigSchreiben)

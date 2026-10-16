@@ -102,7 +102,7 @@ Mal gleich, freiwillig, 1–3 Minuten, mit der Leitfigur verbunden; das Abschlus
   gefunden hast“) und der **Auftrag bis zum nächsten Mal** (eine kleine, machbare Beobachtung oder Handlung im Alltag).
   Sitzung 6: das ganze Modell, eine eigene Karte (`zielkarte`, `vertrag` oder `karten`) und eine Urkunde/ein Diplom-Satz.
 - **Umfang:** 4–6 Jahre 1 Seite, sonst höchstens 2 Seiten (prüft `scripts/kurs-mappe.tsx`). Platzfresser: `feld` mit
-  `zeichnen` (gut 7 cm), `minibuch` und `schneiden_kleben` (fast eine ganze Seite) – auf einem 1-Seiten-Blatt höchstens
+  `zeichnen` (Höhe in mm; auf Kursblättern ab `hoehe: 32` ≈ 3 cm, ohne Angabe gut 4 cm), `minibuch` und `schneiden_kleben` (fast eine ganze Seite) – auf einem 1-Seiten-Blatt höchstens
   einer davon, das Minibuch gar nicht (das Ich-Buch entsteht aus den Blättern selbst und wird in Sitzung 6 gebunden).
 - **Bilder nur aus dem Bestand:** `motiv:<name>` (Liste: `MOTIV_NAMEN` in `src/blatt/motive.ts`), `figur:<name>[:<gefühl>[:<pose>]]`
   mit Namen mia, noah, lea, sami, amira, tom, jana, ben (Gefühle wie bei `gefuehle`, Posen stehen, winken, verschraenkt,
@@ -128,9 +128,11 @@ Mal gleich, freiwillig, 1–3 Minuten, mit der Leitfigur verbunden; das Abschlus
 
 - **Kinderblatt:** spricht das Kind direkt an („Kreis ein …“, „Wir spielen …“, „Ich sage dir ein Gefühl“) – nie „die Fachkraft“
   (Fachsprache). Auf Französisch geht „l’adulte“.
-- **Wörter, bei denen der Planer eine Sitzung weglässt** (Schutzfilter für Einzelstunden, `src/passgenau/kern/einzel.ts`):
+- **Wörter, bei denen der Planer eine Sitzung weglässt** (Schutzfilter für Einzelstunden, `src/passgenau/kern/einzel.ts`; für
+  Kurs-Sitzungen gelockert: Orte wie Schulhof oder Spielplatz, „bis zum nächsten Mal“-Aufträge und Prüfungen als Anlass sind dort
+  erlaubt – die Liste gilt aber für Rituale und bleibt eine gute Richtschnur):
   „Prüfung“/„examen“ (gilt als Prüfungsangst-Thema), „jeden Tag“, „täglich“, „die ganze Woche“, „zu Hause ausprobieren“,
-  „bis zur nächsten Stunde“, „heute Abend“, „chaque jour“, „à la maison“, „ce soir“ (mehrtägig), „draußen“/„dehors“ (Ort),
+  „bis zur nächsten Stunde“, „heute Abend“, „chaque jour“, „à la maison“, „ce soir“ (mehrtägig), „draußen“, „Spielplatz“, „Hof“ als Ort der Übung/„dehors“ (Ort),
   „Film“; ab 12 Jahren kindliche Wörter wie „Sticker“, „Stempel“, „Smiley“, „Handpuppe“, „Kuscheltier“. Statt „bis zur
   nächsten Stunde“: „bis zum nächsten Mal“; statt „zu Hause ausprobieren“: „diese Woche ausprobieren“.
 - **Vorsicht-Filter gelten weiter:** Sitzungen, die nach Familie, Körperbild oder Trauer fragen, fallen bei Kindern mit dieser

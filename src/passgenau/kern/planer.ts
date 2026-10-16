@@ -411,14 +411,21 @@ function kursDerFolge(c: Kontext): string | null {
   let k = KURS_DER_FOLGE.get(c)
   if (k !== undefined) return k
   k = null
-  if (c.weg === 'gruendlich' && c.ziele.length)
+  // passt mehr als ein Kurs (Kurs-Prüfung 16.10.: SOZ-17 in „Hallo, spielst du mit?“ und „Wir spielen zusammen“), entscheidet das
+  // wichtigere Ziel des Kindes – und bei Gleichstand der Kurs, dessen erstes Ziel es ist
+  if (c.weg === 'gruendlich' && c.ziele.length) {
+    let best = 0
     for (const e of c.k.nachRolle.get('kern') ?? []) {
       if (e.typ !== 'schritt' || !e.linie?.id.startsWith('kurs-') || e.linie.nr !== 1) continue
+      let w = 0
+      c.ziele.forEach((z, i) => { const x = e.eldib.find((y) => y.code === z.code); if (x) w += (x.gewicht === 1 ? 1 : 0.2) / (i + 1) })
       if (!e.eldib.some((x) => x.gewicht === 1 && c.ziele.some((z) => z.code === x.code))) continue
-      if (pruefe(e, c, { rolle: 'kern' }) !== null) continue
+      if (e.eldib[0]?.code === c.ziele[0].code) w += 0.25
+      if (w <= best || pruefe(e, c, { rolle: 'kern' }) !== null) continue
+      best = w
       k = e.linie.id
-      break
     }
+  }
   KURS_DER_FOLGE.set(c, k)
   return k
 }

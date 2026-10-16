@@ -242,7 +242,10 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     // belastende Sätze („Ich bin dumm“, „Keiner mag mich“) nicht in Krisenlage
     if (tm.has('belastend') && krisenlage(c)) return 'belastend'
     if (tm.has('film')) return 'braucht einen Film'
-    if (tm.has('draussen') && !(c.a.ort ?? []).includes('draussen')) return 'Ort'
+    // Einzelkurs: Schulhof, Pause, „bis zum nächsten Mal“ und Prüfungen sind dort Orte und Anlässe der Übertragung, nicht der
+    // Stunde (Kurs-Prüfung 16.10.: „Spielplatz“ und „jeden Tag“ warfen Kurs-Sitzungen aus dem Plan) – Vorsicht gilt weiter
+    const kursText = e.typ === 'schritt' && (!!e.linie?.id.startsWith('kurs-') || !!e.kurs)
+    if (tm.has('draussen') && !kursText && !(c.a.ort ?? []).includes('draussen')) return 'Ort'
     if (tm.has('kueche')) return 'Küche'
     if (tm.has('gaeste')) return 'Gäste'
     // (eine Übung mit eigenem Blatt darf darauf verweisen: „Aufgabe 1 und 2 des Blatts gemeinsam“ – Kurs-Pilot 16.10.)
@@ -253,7 +256,7 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     if (tm.has('kuerzel')) return 'Platzhalter'
     if (tm.has('aktivierend') && c.heute.energie >= 4) return 'Energie'
     if (tm.has('wochentage') && e.typ === 'baustein') return 'mehrtägig'
-    if (tm.has('mehrtag') && ((o.rolle !== 'transfer' || o.blatt) || c.vorsicht.has('familie') || kinderschutz)) return 'mehrtägig'
+    if (tm.has('mehrtag') && (((o.rolle !== 'transfer' || o.blatt) && !kursText) || c.vorsicht.has('familie') || kinderschutz)) return 'mehrtägig'
     if (tm.has('heikel') && !c.heikelFrei.size) return 'heikel'
     if (tm.has('wutausleben')) return 'Katharsis'
     if (tm.has('trauer') && c.vorsicht.has('trauer')) return 'Vorsicht Trauer'
@@ -271,7 +274,7 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     // Wettbewerb und Zeitdruck nicht bei Wut, Angst, schwerem Tag oder Reizempfindlichkeit („Tast-Rallye“, „Rekord“)
     if (tm.has('mobbing') && krisenlage(c)) return 'belastend'
     if (tm.has('selbstbewertung') && krisenlage(c)) return 'Selbsteinschätzung in Krisenlage'
-    if (tm.has('pruefung') && !c.themen.has('pruefungsangst') && !(c.p.themen ?? []).some((t) => /pruef/.test(t.key))) return 'Prüfung ohne Anlass'
+    if (tm.has('pruefung') && !kursText && !c.themen.has('pruefungsangst') && !(c.p.themen ?? []).some((t) => /pruef/.test(t.key))) return 'Prüfung ohne Anlass'
     if (tm.has('atemAnhalten') && (c.vorsicht.has('trauma') || krisenlage(c) || c.tagesformen.some((t) => t === 'aengstlich' || t === 'aufgewuehlt'))) return 'Atem anhalten'
     if (tm.has('leistungsmessung') && (krisenlage(c) || c.heute.stimmung <= 2 || c.themen.has('pruefungsangst') || c.tagesformen.some((t) => t === 'aengstlich' || t === 'traurig'))) return 'Leistung messen'
     if (tm.has('raetsel') && c.weg === 'leicht' && c.tagesformen.some((t) => t === 'aengstlich' || t === 'rueckzug' || t === 'wuetend' || t === 'aufgewuehlt')) return 'Rätsel'
