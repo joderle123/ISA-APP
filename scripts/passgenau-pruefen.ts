@@ -303,6 +303,30 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
   regel(26, 'Verweis auf die Kursstruktur in einem Text für Plan, Blatt oder Oberfläche („Einheit 20“, „Modul 3“, „Kursjahr“) – Beschriftung `allgemein`', 'fehler', treffer)
 }
 
+// 27 Einzelkurse (src/passgenau/KURSE.md): Sitzungen 1…n lückenlos, je Sitzung dieselben Ziele, Blatt mit Anleitung in DE und
+// FR, zwei Kurs-Rituale (ankommen, abschluss); auf dem Kinderblatt nie „Fachkraft“ (Fachsprache – das Kind wird angesprochen)
+{
+  const kursE = schritte.filter((e) => e.linie?.id.startsWith('kurs-'))
+  const linien = [...new Set(kursE.map((e) => e.linie!.id))]
+  const t: string[] = []
+  for (const l of linien) {
+    const s = kursE.filter((e) => e.linie!.id === l)
+    const n = Math.max(...s.map((e) => e.linie!.nr))
+    for (let i = 1; i <= n; i++) if (!s.some((e) => e.linie!.nr === i)) t.push(`${l}: Sitzung ${i} fehlt`)
+    const codes = (e: (typeof s)[number]) => e.eldib.map((x) => `${x.code}:${x.gewicht}`).sort().join(',')
+    if (new Set(s.map(codes)).size > 1) t.push(`${l}: Sitzungen mit verschiedenen ELDiB-Zielen`)
+    for (const e of s) {
+      const ub = e.uebungsblatt
+      if (!ub || !ub.de?.length || !ub.fr?.length || !ub.anleitung?.de?.text || !ub.anleitung?.fr?.text) t.push(`${e.id}: Blatt oder Anleitung fehlt (DE/FR)`)
+      if (!e.fr || !e.imSpiel || !e.werkzeug || !e.zugang) t.push(`${e.id}: fr, imSpiel, werkzeug oder zugang fehlt`)
+      if (ub && /Fachkraft/.test(JSON.stringify(ub.de))) t.push(`${e.id}: „Fachkraft“ auf dem Kinderblatt`)
+    }
+    const rit = schritte.filter((e) => e.kurs === l)
+    for (const r of ['ankommen', 'abschluss'] as const) if (!rit.some((e) => e.rolle.includes(r))) t.push(`${l}: Kurs-Ritual „${r}“ fehlt`)
+  }
+  regel(27, 'Einzelkurs unvollständig oder „Fachkraft“ auf dem Kinderblatt', 'fehler', t)
+}
+
 // Ausgabe
 let fehler = 0
 for (const r of ergebnis.sort((a, b) => a.nr - b.nr)) {
