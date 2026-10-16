@@ -1,6 +1,7 @@
 // ---------------------------------------------------------------------------
-// Passgenau: Einzelstunden für ein Kind, aus dem, was der Hub schon weiß.
-//   #passgenau=<ref>[&weg=gruendlich|schnell|leicht][&ziel=V-21]
+// Passgenau: Einzelstunden für ein Kind, aus dem, was der CDSE-Hub schon weiß.
+//   #passgenau=<ref>[&weg=gruendlich|schnell|leicht][&ziel=V-21]      Start aus dem Hub (unverändert)
+//   #passgenau/<ansicht>                                             Ansichtswechsel ohne Hub (Verlaufseinträge, zustand.tsx)
 // Ohne Antwort des Hubs (1,5 s): „Ohne Kind planen“. Rechnen tut der Kern
 // (src/passgenau/kern über src/passgenau/ui/kern.ts), die Brücke zum Hub steckt in
 // src/passgenau/ui/hub.ts (Protokoll: src/passgenau/PROTOKOLL.md).
@@ -27,10 +28,11 @@ const PLANEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schnell
 function Kopfzeile() {
   const pg = usePg()
   const p = pg.profil
+  // „Aus der Praxis“ liegt im CDSE-Hub: ohne ihn gäbe der Reiter nur eine leere Seite – dann fehlt er
   const reiter: [Ansicht, string, string][] = [
     ['start', 'Planen', 'ziel'],
     ['gelernt', 'Vorlieben', 'birne'],
-    ...(pg.schalter.teilen ? ([['praxis', 'Aus der Praxis', 'gruppe']] as [Ansicht, string, string][]) : []),
+    ...(pg.schalter.teilen && pg.hubDa ? ([['praxis', 'Aus der Praxis', 'gruppe']] as [Ansicht, string, string][]) : []),
   ]
   const aktiv = (a: Ansicht) => (a === 'start' ? PLANEN.includes(pg.ansicht) : pg.ansicht === a)
   return (
@@ -61,16 +63,20 @@ function Kopfzeile() {
             )}
           </span>
         )}
-        <span className={'pg-hubchip' + (pg.hubDa ? ' an' : '')} title={pg.hubDa ? 'Mit dem Hub verbunden' : 'Ohne Hub – wird nicht beim Kind gespeichert'}>
-          <Ic n="hub" />
-          <span>{pg.hubDa ? 'Hub' : 'ohne Hub'}</span>
-        </span>
+        {/* Nur ein ruhiger Chip für den Hub, und nur wenn er da ist. „Ohne Hub, nichts wird gespeichert“ steht im Ergebnis als
+            Streifen „Noch nicht gespeichert“, wo es etwas ändert. */}
+        {pg.hubDa && (
+          <span className="pg-hubchip an" title="Mit dem CDSE-Hub verbunden">
+            <Ic n="hub" />
+            <span>CDSE-Hub</span>
+          </span>
+        )}
         {p && (
-          <button type="button" className="pg-kindchip" onClick={() => pg.setAnsicht(pg.ohneKind ? 'ohnekind' : 'wissen')} aria-label={pg.ohneKind ? 'Profil ohne Kind ändern' : `${pg.vorname}: Das weiß ich schon`}>
-            <span className="avatar" aria-hidden="true">
-              {pg.ohneKind ? '?' : pg.vorname.slice(0, 1)}
+          <button type="button" className="pg-kindchip" onClick={() => pg.setAnsicht(pg.ohneKind ? 'ohnekind' : 'wissen')} aria-label={pg.ohneKind ? 'Alter, Sprache und Ziele ändern' : `${pg.kind.nom}: Das weiß ich schon`}>
+            <span className={'avatar' + (pg.ohneKind ? ' neutral' : '')} aria-hidden="true">
+              {pg.ohneKind ? <Ic n="person" /> : pg.kind.nom.slice(0, 1)}
             </span>
-            <b>{pg.ohneKind ? 'Ohne Kind' : pg.vorname}</b>
+            <b>{pg.ohneKind ? 'Ohne Kind' : pg.kind.nom}</b>
             <small>
               {p.alterJahre} J. · {p.stufen.join(', ')}
             </small>
@@ -87,17 +93,24 @@ function Inhalt() {
   useEffect(() => {
     if (['ergebnis', 'vorschau', 'baukasten'].includes(pg.ansicht) && !pg.plan) pg.setAnsicht('start')
   }, [pg])
+  // Neuladen ohne Hub: der Entwurf aus diesem Tab ist wieder da – das sagt man einmal
+  useEffect(() => {
+    if (pg.entwurfWieder) {
+      pg.hinweisZeigen('Dein Entwurf von vorhin ist wieder da.', 'info')
+      pg.setEntwurfWieder(false)
+    }
+  }, [pg])
   if (pg.status === 'warten' || pg.status === 'verbinden' || !pg.katalog)
     return (
       <div className="pg-laden" role="status">
-        <span className="pg-spin" /> {pg.status === 'verbinden' ? 'Verbinde mit dem Hub …' : 'Passgenau wird geladen …'}
+        <span className="pg-spin" /> {pg.status === 'verbinden' ? 'Verbinde mit dem CDSE-Hub …' : 'Passgenau wird geladen …'}
       </div>
     )
   if (pg.status === 'abgeschaltet')
     return (
       <div className="pg-mitte">
         <h1>Passgenau ist ausgeschaltet</h1>
-        <p className="pg-lead">In diesem Hub ist Passgenau abgeschaltet (Einstellung der Verwaltung). Alle anderen Bereiche der Toolbox stehen wie gewohnt bereit.</p>
+        <p className="pg-lead">Im CDSE-Hub ist Passgenau abgeschaltet (Einstellung der Verwaltung). Alle anderen Bereiche der Toolbox stehen wie gewohnt bereit.</p>
       </div>
     )
   const a = pg.profil ? pg.ansicht : pg.ansicht === 'praxis' || pg.ansicht === 'gelernt' ? pg.ansicht : 'ohnekind'

@@ -31,11 +31,11 @@ export function Wissen() {
   const p = useProfil()
   const roh = pg.roh as Profil
   const k = pg.korr
-  const v = pg.vorname
+  const kd = pg.kind
   const [heikelFrage, setHeikelFrage] = useState<(typeof HEIKEL)[number] | null>(null)
   const quelle = (gruppe: string) => roh.wissen?.filter((w) => w.gruppe === gruppe).map((w) => w.text + (w.datum ? ` (${datumKurz(w.datum)})` : '') + (w.quelle && !w.text.includes(w.quelle) ? ` · ${w.quelle}` : ''))[0]
   const setZugang = (feld: 'lesen' | 'schreiben' | 'bild', w: number) =>
-    pg.korrektur((x) => ({ ...x, zugang: { ...x.zugang, [feld]: w }, zugangBestaetigt: heuteIso() }), 'Gemerkt – gilt bei ' + v + ', bis eine neue Quelle kommt.')
+    pg.korrektur((x) => ({ ...x, zugang: { ...x.zugang, [feld]: w }, zugangBestaetigt: heuteIso() }), 'Gemerkt – gilt bei ' + kd.dat + ', bis eine neue Quelle kommt.')
   const umschalten = (f: (x: Korrekturen) => Korrekturen, m?: string) => pg.korrektur(f, m)
   const testAbgeleitet = roh.zugang.quelle.some((q) => q.startsWith('test'))
   const bestaetigt = p.zugangBestaetigt
@@ -54,9 +54,9 @@ export function Wissen() {
     <>
       <section className="pg-kopf">
         <div>
-          <div className="pg-eyebrow">Passgenau · {v}</div>
+          <div className="pg-eyebrow">Passgenau · {kd.nom}</div>
           <h1>Das weiß ich schon</h1>
-          <p className="pg-lead">Alles kommt aus dem Dossier. Ein Klick korrigiert – die Korrektur bleibt bei {v} gespeichert, bis eine neue Quelle kommt.</p>
+          <p className="pg-lead">Alles kommt aus dem Dossier. Ein Klick korrigiert – die Korrektur bleibt bei {kd.dat} gespeichert, bis eine neue Quelle kommt.</p>
         </div>
         <div className="pg-btnrow">
           <button type="button" className="pg-btn" onClick={() => pg.setAnsicht(pg.herkunft === 'wissen' ? 'start' : pg.herkunft)}>
@@ -79,7 +79,7 @@ export function Wissen() {
           <Zeile label={`${roh.alterJahre} Jahre`} unter={quelle('alter') ?? 'Fiche de renseignement'}>
             <Pill>{p.stufen.join(', ')}</Pill>
           </Zeile>
-          <Zeile label="Stufe des Blatts" unter={p.stufen[0] !== stufeAlt ? `korrigiert (aus dem Hub: ${stufeAlt})` : 'aus Alter und Klasse'}>
+          <Zeile label="Stufe des Blatts" unter={p.stufen[0] !== stufeAlt ? `korrigiert (aus dem CDSE-Hub: ${stufeAlt})` : 'aus Alter und Klasse'}>
             <Seg
               label="Stufe"
               wert={p.stufen[0]}
@@ -107,14 +107,14 @@ export function Wissen() {
             <Ic n="buch" />
             Lesen, Schreiben, Bilder
           </h3>
-          <p className="pg-leise pg-klein pg-m0">{quelle('zugang') ?? (testAbgeleitet ? 'aus einem Testergebnis – die Werte bleiben im Hub' : 'aus Alter und Stufe')}</p>
+          <p className="pg-leise pg-klein pg-m0">{quelle('zugang') ?? (testAbgeleitet ? 'aus einem Testergebnis – die Werte bleiben im CDSE-Hub' : 'aus Alter und Stufe')}</p>
           {testAbgeleitet && !bestaetigt && (
             <div className="pg-hinweisbox gelb">
               <Ic n="info" />
               <div>
-                <b>Bitte einmal prüfen.</b> Aus einem Test abgeleitet – stimmt das für {v}? Erst nach deinem Klick wirkt es beim Planen.
+                <b>Bitte einmal prüfen.</b> Aus einem Test abgeleitet – stimmt das für {kd.akk}? Erst nach deinem Klick wirkt es beim Planen.
                 <div className="pg-btnrow pg-mt">
-                  <button type="button" className="pg-btn klein primaer" onClick={() => umschalten((x) => ({ ...x, zugangBestaetigt: heuteIso() }), 'Bestätigt – gespeichert bei ' + v + '.')}>
+                  <button type="button" className="pg-btn klein primaer" onClick={() => umschalten((x) => ({ ...x, zugangBestaetigt: heuteIso() }), 'Bestätigt – gespeichert bei ' + kd.dat + '.')}>
                     <Ic n="check" />
                     Stimmt so
                   </button>
@@ -153,7 +153,7 @@ export function Wissen() {
                     <Ic n="auf" />
                   </button>
                 )}
-                <Chip an={an} onClick={() => umschalten((x) => ({ ...x, ziele: { ...x.ziele, [z.code]: !an } }), `Korrektur gespeichert bei ${v}.`)}>
+                <Chip an={an} onClick={() => umschalten((x) => ({ ...x, ziele: { ...x.ziele, [z.code]: !an } }), `Korrektur gespeichert bei ${kd.dat}.`)}>
                   {an ? 'an' : 'aus'}
                 </Chip>
               </Zeile>
@@ -176,7 +176,7 @@ export function Wissen() {
             const an = k.themen?.[key] !== false
             const q = roh.themen.filter((t) => t.key === key).map((t) => `${THEMA_ART[t.art] ?? t.art} ${datumKurz(t.datum)}`).join(' · ')
             return (
-              <Zeile key={key} label={themaName(key)} unter={q + ' · lokal erkannt, der Text bleibt im Hub'}>
+              <Zeile key={key} label={themaName(key)} unter={q + ' · lokal erkannt, der Text bleibt im CDSE-Hub'}>
                 <Chip an={an} onClick={() => umschalten((x) => ({ ...x, themen: { ...x.themen, [key]: !an } }))}>
                   {an ? 'an' : 'aus'}
                 </Chip>
@@ -222,7 +222,7 @@ export function Wissen() {
         <div className="pg-card pg-pkarte">
           <h3>
             <Ic n="schild" />
-            Was {v} hilft
+            Was {kd.dat} hilft
           </h3>
           <p className="pg-leise pg-klein pg-m0">Nur du setzt das – nie automatisch aus Berichten.</p>
           {(
@@ -236,7 +236,7 @@ export function Wissen() {
             const an = (p.hilft ?? []).includes(key)
             return (
               <Zeile key={key} label={name} unter={text}>
-                <Chip an={an} onClick={() => umschalten((x) => ({ ...x, hilft: { ...x.hilft, [key]: !an } }), `${name}: ${an ? 'aus' : 'an'} – gespeichert bei ${v}.`)}>
+                <Chip an={an} onClick={() => umschalten((x) => ({ ...x, hilft: { ...x.hilft, [key]: !an } }), `${name}: ${an ? 'aus' : 'an'} – gespeichert bei ${kd.dat}.`)}>
                   {an ? 'an' : 'aus'}
                 </Chip>
               </Zeile>
@@ -249,7 +249,7 @@ export function Wissen() {
             <Ic n="herz" />
             Interessen
           </h3>
-          <p className="pg-leise pg-klein pg-m0">Einmal angeklickt, bleiben sie bei {v}. Sie dürfen aufs Blatt (Beispiele, Bilder).</p>
+          <p className="pg-leise pg-klein pg-m0">Einmal angeklickt, bleiben sie bei {kd.dat}. Sie dürfen aufs Blatt (Beispiele, Bilder).</p>
           <div className="pg-chips pg-mt">
             {INTERESSEN.map(([key, name]) => {
               const an = p.interessen.includes(key)
@@ -278,13 +278,13 @@ export function Wissen() {
               </Zeile>
             )
           })}
-          <Zeile label={`Was bei ${v} funktioniert`} unter="aus Rückmeldungen nach Stunden">
+          <Zeile label={`Was bei ${kd.dat} funktioniert`} unter="aus Rückmeldungen nach Stunden">
             <button type="button" className="pg-btn klein" onClick={() => pg.setAnsicht('gelernt')}>
               Ansehen
             </button>
           </Zeile>
-          <Zeile label={`Passgenau lernt bei ${v} mit`} unter={pg.schalter.lernen ? 'aus: keine Rückmeldungen und Vorlieben beim Kind – Plan und Notiz bleiben' : 'im Hub ausgeschaltet'}>
-            <Chip an={pg.lernenKind} disabled={!pg.schalter.lernen} onClick={() => umschalten((x) => ({ ...x, lernen: !pg.lernenKind }), pg.lernenKind ? `Passgenau lernt bei ${v} nicht mehr mit.` : `Passgenau lernt bei ${v} wieder mit.`)}>
+          <Zeile label={`Passgenau lernt bei ${kd.dat} mit`} unter={pg.schalter.lernen ? 'aus: keine Rückmeldungen und Vorlieben beim Kind – Plan und Notiz bleiben' : 'im CDSE-Hub ausgeschaltet'}>
+            <Chip an={pg.lernenKind} disabled={!pg.schalter.lernen} onClick={() => umschalten((x) => ({ ...x, lernen: !pg.lernenKind }), pg.lernenKind ? `Passgenau lernt bei ${kd.dat} nicht mehr mit.` : `Passgenau lernt bei ${kd.dat} wieder mit.`)}>
               {pg.lernenKind ? 'an' : 'aus'}
             </Chip>
           </Zeile>
@@ -302,7 +302,7 @@ export function Wissen() {
               „Mein Ziel“ aufs Blatt: {pg.druck.ziel && p.alterJahre < 12 ? 'an' : 'aus'}
             </Chip>
           </div>
-          <span className="pg-leise">Testwerte, Diagnosen, Familie und Notiztexte verlassen den Hub nie. Die Toolbox bekommt nur „eher wenig Text, viele Bilder“ – nicht warum.</span>
+          <span className="pg-leise">Testwerte, Diagnosen, Familie und Notiztexte verlassen den CDSE-Hub nie. Die Toolbox bekommt nur „eher wenig Text, viele Bilder“ – nicht warum.</span>
         </div>
       </div>
       {heikelFrage && (

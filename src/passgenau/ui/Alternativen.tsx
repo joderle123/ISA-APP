@@ -94,7 +94,7 @@ export function Alternativen({ ort }: { ort: Ort }) {
       unter={
         istBlatt
           ? `Gleiche Stelle im Blatt „${blattRef?.titel ?? ''}“, gleiches Ziel oder Thema, passt aufs Blatt.`
-          : `Gleiche Rolle (${schritt ? ROLLE_NAME[schritt.rolle] : ''}), gleiches Ziel oder Thema, ähnliche Dauer, passend für ${pg.vorname} (${p.alterJahre} J.).`
+          : `Gleiche Rolle (${schritt ? ROLLE_NAME[schritt.rolle] : ''}), gleiches Ziel oder Thema, ähnliche Dauer, passend für ${pg.kind.akk} (${p.alterJahre} J.).`
       }
       onClose={() => pg.setDlg(null)}
       breit

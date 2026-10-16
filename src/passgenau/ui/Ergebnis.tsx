@@ -1,14 +1,14 @@
 // Passgenau – Ergebnis (2.6): Folge-Leiste, Ablauf mit Rolle/Minuten/Quelle/Warum, Blatt als Liste und A4,
 // antippen → Alternativen, Daumen, ganze Sitzung tauschen, Speichern/PDF/Vorlage/Baukasten.
 import { useEffect, useRef, useState } from 'react'
-import type { KatalogEintrag, PlanSchritt } from '../typen'
+import type { KatalogEintrag, Plan, PlanSchritt } from '../typen'
 import * as K from './kern'
 import { teilenErlaubt, usePg, useProfil, type Ort } from './zustand'
 import { Ic } from './zeichen'
 import { Daumen, FettCodes, HeikelBanner, Pill, RolleBadge, VersionsBanner, Warum, useGekuerzt } from './Teile'
 import { BlattAnsicht } from './Vorschau'
 import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
-import { PHASE_NAME, ROLLE_NAME, TF_NAME, datumKurz, SOZIALFORM_NAME } from './texte'
+import { PHASE_NAME, ROLLE_NAME, TF_NAME, datumKurz, kindWort, SOZIALFORM_NAME } from './texte'
 import { ergebnisText } from './Start'
 
 function quelleIcon(e?: KatalogEintrag): string {
@@ -113,7 +113,7 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
         {s.min}
         <small>Min.</small>
       </div>
-      <button type="button" className="pg-schritt-haupt" onClick={oeffnen} aria-label={`${RolleLabel(s.rolle)}: ${titel}, ${s.min} Minuten – antippen für Alternativen`}>
+      <button type="button" className="pg-schritt-haupt" onClick={oeffnen} aria-label={`${RolleLabel(s.rolle)}: ${titel}, ${s.min} Minuten – antippen zum Tauschen`}>
         <span className="zeile1">
           <RolleBadge rolle={s.rolle} />
           {/* Die Quelle nur, wenn sie etwas Neues sagt: nicht noch einmal die Rolle („Einstieg“) und nicht „Ritual“ (steht als Pille daneben) */}
@@ -135,11 +135,14 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
         </span>
         {tx?.sagen?.[0] && <span className="sagen">„{tx.sagen[0]}“</span>}
       </button>
+      {/* Eine benannte Schaltfläche statt dreier Symbole: „Tauschen“. Die Daumen sind leise und zeigen sich erst beim Darüberfahren
+          oder Fokussieren (auf Touch-Geräten immer, aber blass). */}
       <div className="aktionen">
-        <Daumen schluessel={`${pg.plan?.id}:${nr}:s${i}:${s.ref}`} titel={titel} eintrag={e} ort={{ sitzung: nr }} rolle={s.rolle} onErsetzen={oeffnen} erkundung={s.erkundung} />
-        <button type="button" className="pg-ibtn" onClick={oeffnen} aria-label={`Ersetzen: ${titel}`} title="Ersetzen">
+        <button type="button" className="pg-btn klein tausch" onClick={oeffnen} aria-label={`Tauschen: ${titel}`}>
           <Ic n="tausch" />
+          Tauschen
         </button>
+        <Daumen schluessel={`${pg.plan?.id}:${nr}:s${i}:${s.ref}`} titel={titel} eintrag={e} ort={{ sitzung: nr }} rolle={s.rolle} onErsetzen={oeffnen} erkundung={s.erkundung} />
       </div>
       <div className="unten">
         {(gekuerzt || textOffen) && (
@@ -212,6 +215,33 @@ function BlattKarte({ s, nr }: { s: PlanSchritt; nr: number }) {
   )
 }
 
+/** „Noch nicht gespeichert“ – steht, bis der Plan gesichert ist (im CDSE-Hub oder als Datei), nicht nur vier Sekunden wie ein Hinweis.
+ *  Sagt dazu, warum: ohne CDSE-Hub liegt die Stunde nur in diesem Fenster. */
+function Speicherstreifen({ plan }: { plan: Plan }) {
+  const pg = usePg()
+  if (!pg.ungespeichert) return null
+  const gruppe = (pg.profil?.gruppe?.length ?? 0) > 1
+  const text = pg.darfSpeichern
+    ? 'Beim Drucken wird die Stunde beim Kind gespeichert – oder gleich jetzt.'
+    : pg.darfTresor
+      ? 'Beim Drucken landet die Stunde in deiner persönlichen Ablage im CDSE-Hub (nur du siehst sie) – oder sichere sie als Datei.'
+      : pg.hubDa
+        ? 'Dir fehlt das Recht, beim Kind zu speichern. Sichere die Stunde als Datei.'
+        : 'Nicht mit dem CDSE-Hub verbunden: Die Stunde liegt nur in diesem Fenster. Sichere sie als Datei, wenn du sie behalten willst.'
+  return (
+    <div className="pg-streifen" role="note">
+      <Ic n="info" />
+      <p>
+        <b>Noch nicht gespeichert.</b> {text}
+      </p>
+      <button type="button" className="pg-btn klein" onClick={() => pg.planSichern(plan, 'knopf')}>
+        <Ic n={pg.darfSpeichern ? 'speichern' : 'datei'} />
+        {pg.darfSpeichern ? (gruppe ? 'Bei allen Kindern speichern' : 'Beim Kind speichern') : 'Als Datei speichern'}
+      </button>
+    </div>
+  )
+}
+
 /** E-M14: Vorschläge statt Automatik – „Weniger Text?“ nach „nicht geklappt“, „Mehr zutrauen?“ nach 3 × geklappt */
 function ZugangVorschlag({ nr }: { nr: number }) {
   const pg = usePg()
@@ -224,7 +254,7 @@ function ZugangVorschlag({ nr }: { nr: number }) {
   let frage: string | null = null
   let delta = 0
   if (letzte?.ergebnis === 'nicht' && p.zugang.lesen > 0) {
-    frage = `Sitzung ${nr - 1} hat nicht geklappt. Weniger Text für ${pg.vorname}?`
+    frage = `Sitzung ${nr - 1} hat nicht geklappt. Weniger Text für ${pg.kind.akk}?`
     delta = -1
   } else if (dreiGut && p.zugang.lesen < 3) {
     frage = `Dreimal hat es geklappt. Etwas mehr zutrauen?`
@@ -294,15 +324,31 @@ export function Ergebnis() {
     pg.hinweisZeigen(`Sitzung ${s.nr} neu zusammengestellt – Rituale bleiben.`, 'ok', { label: 'Rückgängig', aktion: () => pg.setPlan(alt) })
   }
 
+  // Überschrift = das Thema (nicht „Stunde · Üben“): „Impulskontrolle für Mio · 20 Min.“; Art und Phase stehen in der Zeile darüber
+  const kd = kindWort(pg.roh?.vorname, plan.auftrag?.sozialform)
+  const minuten = minutenVon(s)
+  const titelTeile = /^([^:]{3,30}):\s+(.+)$/.exec(plan.titel)
+  const thema = titelTeile ? titelTeile[2] : plan.titel
+  const fuer = kd.name ? ` für ${kd.akk}` : ''
+  // Folge: Welche Sitzung es ist, gehört in die Überschrift (sie ist das, was man beim Blättern sucht); Phase und Minuten darüber
+  const ueberschrift = leicht
+    ? `Heute leicht – ${tfs.map((t) => TF_NAME[t]).join(' und ')} · ${minuten} Min.`
+    : plan.n > 1
+      ? `${plan.titel}${fuer} · Sitzung ${s.nr} von ${plan.n}`
+      : `${thema}${fuer} · ${minuten} Min.`
+  const eyebrow = leicht ? 'Weg 3 · Heute geht nicht viel' : plan.n > 1 ? `Folge · ${PHASE_NAME[s.phase]} · ${minuten} Min.` : `${titelTeile ? titelTeile[1] : 'Stunde'} · ${PHASE_NAME[s.phase]}`
+  const gesichert = !pg.ungespeichert ? (pg.gespeichert[plan.id] ? `gespeichert ${pg.gespeichert[plan.id]}` : pg.dateiZeit[plan.id] ? `als Datei gesichert ${pg.dateiZeit[plan.id]}` : null) : null
+
   return (
     <div ref={ref}>
       <div className="pg-ekopf">
         <div>
-          <div className="pg-eyebrow">{leicht ? 'Weg 3 · Heute geht nicht viel' : plan.n > 1 ? 'Folge · ' + plan.titel : plan.titel}</div>
-          <h2 className="pg-disp">{leicht ? 'Heute leicht – ' + tfs.map((t) => TF_NAME[t]).join(' und ') : plan.n > 1 ? `Sitzung ${s.nr} von ${plan.n} · ${PHASE_NAME[s.phase]}` : `Stunde · ${PHASE_NAME[s.phase]}`}</h2>
+          <div className="pg-eyebrow">{eyebrow}</div>
+          <h1 className="pg-disp">{ueberschrift}</h1>
           <div className="pg-meta">
             <span>
-              {pg.vorname} · {minutenVon(s)} Min. · {SOZIALFORM_NAME[plan.auftrag?.sozialform ?? 'einzeln']}
+              {kd.name ? kd.nom + ' · ' : ''}
+              {SOZIALFORM_NAME[plan.auftrag?.sozialform ?? 'einzeln']}
             </span>
             {leicht ? <Pill art="ok">ohne Förderziel</Pill> : plan.ziele.slice(0, 2).map((z) => <Pill key={z} art="akz">{z}</Pill>)}
             {h && (
@@ -311,7 +357,7 @@ export function Ergebnis() {
               </Pill>
             )}
             {s.status === 'angepasst' && <Pill art="warn">angepasst nach Sitzung {s.nr - 1}</Pill>}
-            {pg.gespeichert[plan.id] && <Pill art="ok" icon="check">gespeichert {pg.gespeichert[plan.id]}</Pill>}
+            {gesichert && <Pill art="ok" icon="check">{gesichert}</Pill>}
           </div>
         </div>
         <div className="pg-aktionen">
@@ -345,6 +391,7 @@ export function Ergebnis() {
           </div>
         </div>
       </div>
+      <Speicherstreifen plan={plan} />
       <VersionsBanner />
       <HeikelBanner />
       {(s.hinweise ?? []).map((t, i) => (
@@ -395,19 +442,22 @@ export function Ergebnis() {
           )}
           <div className="pg-legende">
             <Ic n="info" />
-            <span>Antippen ersetzt · Daumen bewerten{plan.n > 1 ? ' · Rituale bleiben in der Folge gleich' : ''}</span>
+            <span>„Tauschen“ ersetzt einen Schritt. Mit dem Daumen merkt sich Passgenau, was gut ankam.{plan.n > 1 ? ' Rituale bleiben in der Folge gleich.' : ''}</span>
           </div>
         </nav>
         <section className="pg-ablauf" aria-label="Ablauf der Sitzung">
           {s.schritte.map((x, i) => (istBlattSchritt(x) ? <BlattKarte key={i} s={x} nr={s.nr} /> : <SchrittKarte key={i + x.ref} s={x} i={i} nr={s.nr} />))}
           {!blattSchritt && s.blatt && <BlattKarte s={{ ref: 'blatt', h: '', rolle: 'uebung', min: 0 }} nr={s.nr} />}
           <div className="pg-ablauf-fuss">
-            {s.schritte.some((x) => x.erkundung) && <p className="pg-leise pg-klein">„Neu ausprobiert“: bewusst etwas Neues neben dem Kern (Erkundung {Math.round((pg.vor.ich.erkundung ?? 0.2) * 100)} %), damit sich nichts festfährt.</p>}
+            {s.schritte.some((x) => x.erkundung) && <p className="pg-leise pg-klein">„Neu ausprobiert“: bewusst etwas Neues neben dem Bewährten (etwa {Math.round((pg.vor.ich.erkundung ?? 0.2) * 100)} % der Stunde), damit sich nichts festfährt.</p>}
             <div className="pg-btnrow">
-              <button type="button" className="pg-btn klein" onClick={() => pg.planSichern(plan, 'knopf')}>
-                <Ic n={pg.ohneKind ? 'datei' : 'speichern'} />
-                {pg.ohneKind ? 'Als Datei speichern' : (pg.profil?.gruppe?.length ?? 0) > 1 ? 'Bei allen Kindern speichern' : 'Beim Kind speichern'}
-              </button>
+              {/* solange „Noch nicht gespeichert“ oben steht, hat der Streifen diesen Knopf – nicht zweimal derselbe */}
+              {!pg.ungespeichert && (
+                <button type="button" className="pg-btn klein" onClick={() => pg.planSichern(plan, 'knopf')}>
+                  <Ic n={pg.ohneKind ? 'datei' : 'speichern'} />
+                  {pg.ohneKind ? 'Als Datei speichern' : (pg.profil?.gruppe?.length ?? 0) > 1 ? 'Bei allen Kindern speichern' : 'Beim Kind speichern'}
+                </button>
+              )}
               <button type="button" className="pg-btn klein" onClick={pg.alsEigeneVorlage}>
                 <Ic n="kopie" />
                 Als eigene Vorlage

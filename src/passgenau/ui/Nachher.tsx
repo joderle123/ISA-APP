@@ -89,14 +89,14 @@ export function useRueckmeldung() {
       } catch (e) {
         pg.stapelZurueck(stapel)
         pg.setSpeicherStatus({ art: 'fehler', text: 'nicht gespeichert – erneut versuchen' })
-        pg.hinweisZeigen('Rückmeldung nicht gespeichert: ' + (e instanceof Error ? e.message : 'Hub antwortet nicht'), 'warn')
+        pg.hinweisZeigen('Rückmeldung nicht gespeichert: ' + (e instanceof Error ? e.message : 'Der CDSE-Hub antwortet nicht'), 'warn')
         return
       }
     }
     const weiter = naechste ? (angepasst ? ` · Sitzung ${nr + 1} wurde angepasst` : ` · Sitzung ${nr + 1} baut darauf auf`) : ''
     const teilen = r.ergebnis === 'geklappt' && pg.schalter.teilen && pg.hubDa && teilenErlaubt(neu, pg.getauscht[neu.id] ?? 0)
     pg.hinweisZeigen(
-      (gespeichert ? (notizId ? 'Notiz im Dossier gespeichert' : 'Rückmeldung gespeichert (ohne Schreibrecht keine Notiz)') : pg.ohneKind ? 'Ohne Hub: Rückmeldung nur in dieser Planung' : 'Rückmeldung nur in dieser Planung (kein Recht zur Rückmeldung)') + weiter + '.',
+      (gespeichert ? (notizId ? 'Notiz im Dossier gespeichert' : 'Rückmeldung gespeichert (ohne Schreibrecht keine Notiz)') : pg.ohneKind ? 'Ohne CDSE-Hub: Rückmeldung nur in dieser Planung' : 'Rückmeldung nur in dieser Planung (kein Recht zur Rückmeldung)') + weiter + '.',
       'ok',
       teilen ? { label: 'Fürs Team teilen', aktion: () => pg.setDlg({ art: 'teilen' }) } : undefined,
     )
@@ -185,7 +185,7 @@ export function Nachher({ nr }: { nr: number }) {
         ))}
       </div>
       {!krise && <p className="pg-leise pg-klein pg-m0">„Hat geklappt“ heißt: Die Stunde ist gut gelaufen. Ob das Ziel näher rückt, siehst du bei „je Ziel“.</p>}
-      {krise && <p className="pg-leise pg-klein pg-m0">An schweren Tagen zählt nichts davon negativ – weder für {pg.vorname} noch für dich.</p>}
+      {krise && <p className="pg-leise pg-klein pg-m0">An schweren Tagen zählt nichts davon negativ – weder für {pg.kind.akk} noch für dich.</p>}
       {zielListe.length > 0 && (
         <div>
           <b className="pg-klein-titel">Optional je Ziel</b>
@@ -215,10 +215,10 @@ export function Nachher({ nr }: { nr: number }) {
         </div>
       </div>
       <div>
-        <b className="pg-klein-titel">Stimme von {pg.vorname} (optional)</b>
+        <b className="pg-klein-titel">Stimme {pg.kind.von} (optional)</b>
         {wahlOptionen.length > 0 && (
           <div className="pg-zielreihe">
-            <span>{pg.vorname} hat gewählt:</span>
+            <span>{pg.kind.Nom} hat gewählt:</span>
             <div className="pg-chips">
               {wahlOptionen.map((w) => (
                 <Chip key={w} an={wahl === w} onClick={() => setWahl(wahl === w ? undefined : w)}>
@@ -229,7 +229,7 @@ export function Nachher({ nr }: { nr: number }) {
           </div>
         )}
         <div className="pg-zielreihe">
-          <span>Daumen von {pg.vorname} am Schluss:</span>
+          <span>Daumen {pg.kind.von} am Schluss:</span>
           <div className="pg-chips">
             <Chip an={daumen === 'hoch'} onClick={() => setDaumen(daumen === 'hoch' ? undefined : 'hoch')}>
               hoch
@@ -247,7 +247,7 @@ export function Nachher({ nr }: { nr: number }) {
         {r ? notiz : 'Erst ein Ergebnis wählen – dann steht hier die Notiz.'}
       </div>
       {!pg.darfRueckmelden && !pg.ohneKind && <p className="pg-leise pg-klein pg-m0">Ohne Recht zur Rückmeldung wird nichts ins Dossier geschrieben.</p>}
-      {!pg.lernenKind && !pg.ohneKind && <p className="pg-leise pg-klein pg-m0">Passgenau lernt bei {pg.vorname} nicht mit – die Notiz wird trotzdem gespeichert.</p>}
+      {!pg.lernenKind && !pg.ohneKind && <p className="pg-leise pg-klein pg-m0">Passgenau lernt bei {pg.kind.dat} nicht mit – die Notiz wird trotzdem gespeichert.</p>}
     </PgDialog>
   )
 }

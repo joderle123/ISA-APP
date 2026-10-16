@@ -287,7 +287,9 @@ export function korrekturenFuerHub(alt: Korrekturen, neu: Korrekturen, roh: Pick
 }
 
 /** Start der Toolbox aus dem Hub: #passgenau=<ref>&weg=schnell|leicht|gruendlich&ziel=V-21; Kleingruppe:
- *  #passgenau=<ref1>,<ref2>,… (2–6 Kinder) */
+ *  #passgenau=<ref1>,<ref2>,… (2–6 Kinder).
+ *  Kein Start-Hash ist `#passgenau/<ansicht>` (Verlaufseinträge ohne Hub, zustand.tsx `ansichtAusHash`): ihm fehlt das „=“, hier
+ *  ergibt er `ref: null` – und `seiteAusHash` in App.tsx beachtet ihn nicht. */
 export interface PassgenauStart {
   ref: string | null
   /** Kleingruppe: alle refs (das erste steht auch in `ref`) */

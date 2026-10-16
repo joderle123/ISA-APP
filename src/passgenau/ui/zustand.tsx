@@ -7,7 +7,7 @@ import * as hub from './hub'
 import { laden as vorliebenLaden, sichern as vorliebenSichern, type FachkraftVorlieben, alsVorlage } from './vorlieben'
 import { schalterLesen, SCHALTER_VORGABE, type Schalter } from './erweitert'
 import { altersbandFest, blobSpeichern, dateiname, istBlattSchritt, tagsVon, textDatei, uhrzeit } from './anzeige'
-import { LAYOUT_FUER_STUFE, heuteIso } from './texte'
+import { LAYOUT_FUER_STUFE, heuteIso, kindWort } from './texte'
 import { aktuellerNutzer } from '../../lib/nutzer'
 
 export type Ansicht = 'start' | 'wissen' | 'ohnekind' | 'gruendlich' | 'schnell' | 'leicht' | 'ergebnis' | 'vorschau' | 'baukasten' | 'gelernt' | 'praxis'
@@ -56,6 +56,57 @@ export interface Hinweis {
 }
 
 type ProfilRoh = hub.ProfilVomHub
+
+// --- Verlauf, Entwurf, Speicherstand --------------------------------------------------------------------------
+
+const ANSICHTEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schnell', 'leicht', 'ergebnis', 'vorschau', 'baukasten', 'gelernt', 'praxis']
+
+/** Ansicht aus `#passgenau/<ansicht>`. Der Start-Hash des CDSE-Hubs (`#passgenau=<ref>&weg=…`) enthält ein „=“ und ist hier nie gemeint. */
+export function ansichtAusHash(hash: string): Ansicht | null {
+  const m = /^#\/?passgenau\/([a-z]+)$/.exec(hash)
+  return m && (ANSICHTEN as string[]).includes(m[1]) ? (m[1] as Ansicht) : null
+}
+
+/** Inhalt eines Plans ohne das, was sich beim Drucken und Speichern von selbst ändert – damit „Noch nicht gespeichert“ nur
+ *  erscheint, wenn der Plan wirklich anders ist als der gesicherte */
+function planSchluessel(p: Plan): string {
+  return JSON.stringify(p, (k, v) => (k === 'gedruckt' || k === 'rev' ? undefined : v))
+}
+
+/** Entwurf ohne Hub: übersteht Neuladen und Zurück (sessionStorage, nur dieser Tab). Nie mit einem Kind aus dem CDSE-Hub. */
+const ENTWURF = 'cdse.passgenau.entwurf.v1'
+interface Entwurf {
+  v: 1
+  roh: ProfilRoh
+  plan: Plan | null
+  si: number
+  ansicht: Ansicht
+  sozialform: Auftrag['sozialform']
+  korr: Korrekturen
+  druck: Druck
+  heikel: NonNullable<Auftrag['heikel']>
+  getauscht: Record<string, number>
+  stand: Record<string, string>
+  datei: Record<string, string>
+}
+function entwurfLesen(): Entwurf | null {
+  try {
+    const t = window.sessionStorage.getItem(ENTWURF)
+    if (!t) return null
+    const d = JSON.parse(t) as Entwurf
+    return d && d.v === 1 && d.roh && typeof d.roh.alterJahre === 'number' && Array.isArray(d.roh.ziele) ? d : null
+  } catch {
+    return null
+  }
+}
+function entwurfSchreiben(e: Entwurf | null): void {
+  try {
+    if (e) window.sessionStorage.setItem(ENTWURF, JSON.stringify(e))
+    else window.sessionStorage.removeItem(ENTWURF)
+  } catch {
+    /* Speicher gesperrt oder voll: der Entwurf bleibt nur im Fenster */
+  }
+}
 
 const VORSICHT_ALLE = ['familie', 'trauer', 'koerper', 'heikel', 'reiz', 'trauma'] as const
 const HILFT_ALLE = ['stundenleiste', 'bewegungspausen', 'reizarm', 'bildplan'] as const
@@ -134,6 +185,12 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
   const [hinweis, setHinweisZustand] = useState<Hinweis | null>(null)
   const [praxis, setPraxis] = useState<{ laedt: boolean; liste: PraxisVorlage[]; zurueckgezogen: string[]; fehler: string | null; geladen: boolean }>({ laedt: false, liste: [], zurueckgezogen: [], fehler: null, geladen: false })
   const [rueckgaengig, setRueckgaengig] = useState<Plan[]>([])
+  /** Stand (Inhalt) des Plans bei der letzten Sicherung – im CDSE-Hub oder als Datei; je Plan */
+  const [speicherStand, setSpeicherStand] = useState<Record<string, string>>({})
+  /** Uhrzeit der letzten Sicherung als Datei, je Plan */
+  const [dateiZeit, setDateiZeit] = useState<Record<string, string>>({})
+  /** Ein Entwurf aus diesem Tab wurde wiederhergestellt (nur ohne Hub) */
+  const [entwurfWieder, setEntwurfWieder] = useState(false)
   const offen = useRef<Ereignis[]>([])
   const letzterFlush = useRef(0)
   const flushTimer = useRef<number | null>(null)
@@ -141,13 +198,15 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
   const nutzer = useMemo(() => aktuellerNutzer(), [])
   const hubDa = !!hallo && !ohneKind
   const profil = useMemo(() => (roh ? mitKorrekturen(roh, korr, druck.vorname) : null), [roh, korr, druck.vorname])
-  const vorname = roh?.vorname ?? (ohneKind ? 'das Kind' : 'das Kind')
+  /** Wie vom Kind gesprochen wird: Name oder „das Kind“/„die Gruppe“, in allen Fällen (siehe kindWort) */
+  const kind = useMemo(() => kindWort(roh?.vorname, sozialform), [roh?.vorname, sozialform])
+  const vorname = kind.nom
   const darfSpeichern = hubDa && !!ref && !!profil?.rechte.speichern && version.speichern
   const darfRueckmelden = hubDa && !!ref && !!profil?.rechte.rueckmelden && version.speichern
   const lernenKind = schalter.lernen && !ohneKind && profil?.lernen !== false
   const ich = { name: hallo?.ich?.name ?? (nutzer.name || 'ich'), team: hallo?.ich?.team ?? '' }
   const kuratieren = !!hallo?.rechte.kuratieren
-  /** gedruckt ohne Schreibrecht: der Hub legt den Plan in den persönlichen Tresor (P7) */
+  /** gedruckt ohne Schreibrecht: der CDSE-Hub legt den Plan in die persönliche Ablage der Fachkraft (P7, „Tresor“ im Protokoll) */
   const darfTresor = hubDa && !!ref && !!profil?.rechte.rueckmelden && version.speichern
 
   const refs = useWert({ vor, ref, plan, profil, roh, katalog, darfSpeichern, darfTresor, gespeichert, lernenKind })
@@ -197,10 +256,29 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       setHallo(null)
       setSchalter(schalterLesen(null))
       setOhneKind(true)
-      setRoh(null)
       setStartZiel(startHash?.ziel ?? null)
+      // Ohne Hub: ein Entwurf aus diesem Tab (Neuladen, Zurück) kommt wieder – außer der Start kommt mit eigenen Angaben
+      // (Brücke vom Blatt: Alter, Ziel, Weg)
+      const ent = !startHash?.ziel && startHash?.alter == null && !startHash?.weg ? entwurfLesen() : null
+      if (ent) {
+        setRoh(ent.roh)
+        setPlanZustand(ent.plan)
+        setSi(Math.max(0, Math.min(ent.si, (ent.plan?.sitzungen.length ?? 1) - 1)))
+        setSozialform(ent.sozialform)
+        setKorr(ent.korr ?? {})
+        setDruck(ent.druck ?? { vorname: false, ziel: false, ohneWarum: true })
+        setHeikel(ent.heikel ?? [])
+        setGetauscht(ent.getauscht ?? {})
+        setSpeicherStand(ent.stand ?? {})
+        setDateiZeit(ent.datei ?? {})
+        setEntwurfWieder(!!ent.plan)
+        const a = ansichtAusHash(window.location.hash) ?? ent.ansicht ?? 'start'
+        setAnsichtZustand(a === 'ohnekind' ? 'start' : a)
+      } else {
+        setRoh(null)
+        setAnsichtZustand('ohnekind')
+      }
       setStatus('bereit')
-      setAnsichtZustand('ohnekind')
     }
     if (!fenster) {
       ohne()
@@ -408,9 +486,8 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       window.scrollTo({ top: 0 })
       // Gespeichert wird nicht beim Bauen, sondern beim Drucken (planSichern 'druck'), mit „Beim Kind speichern“ oder nach „Stunde gehalten“;
       // ohne Schreibrecht legt der Druck den Plan in den persönlichen Tresor, ohne Hub bleibt nur die Datei.
-      const was = neu.n > 1 && a.weg === 'gruendlich' ? `Folge mit ${neu.n} Sitzungen gebaut.` : 'Stunde gebaut.'
-      const wie = refs.current.darfSpeichern ? 'Gespeichert wird beim Drucken.' : refs.current.darfTresor ? 'Beim Drucken landet sie in deinem Tresor.' : 'Zum Aufheben: „Als Datei speichern“.'
-      hinweisZeigen(`${was} ${wie}`)
+      // Wie es ums Speichern steht, sagt der Streifen „Noch nicht gespeichert“ im Ergebnis (bleibt, bis gespeichert ist)
+      hinweisZeigen(neu.n > 1 && a.weg === 'gruendlich' ? `Folge mit ${neu.n} Sitzungen gebaut.` : 'Stunde gebaut.')
       // Vorlieben merken: Dauer
       setVor((v) => ({ ...v, ich: { ...v.ich, dauer: a.dauer } as FachkraftVorlieben }))
     },
@@ -424,7 +501,9 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       if (!r.ref || ohneKind || !hallo || (!r.darfSpeichern && !tresor)) {
         if (grund === 'knopf') {
           textDatei(JSON.stringify({ v: 1, passgenau: 'plan', plan: p }, null, 1), `Passgenau-Plan-${p.n}-Sitzungen.json`)
-          hinweisZeigen(r.ref && !ohneKind ? 'Kein Schreibrecht: Plan als Datei gesichert (nur Verweise, ohne Kinddaten).' : 'Ohne Hub: Plan als Datei gesichert (nur Verweise, ohne Kinddaten).')
+          setSpeicherStand((g) => ({ ...g, [p.id]: planSchluessel(p) }))
+          setDateiZeit((g) => ({ ...g, [p.id]: uhrzeit() }))
+          hinweisZeigen(r.ref && !ohneKind ? 'Kein Schreibrecht: Plan als Datei gesichert (nur Verweise, ohne Kinddaten).' : 'Plan als Datei gesichert (nur Verweise, ohne Kinddaten).')
         }
         return false
       }
@@ -439,15 +518,16 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
         const erg = await hub.speichern(r.ref, senden, { gedruckt: grund === 'druck', ...(stapel.length ? { ereignisse: stapel } : {}), ...(r.lernenKind && r.darfSpeichern ? { vorlieben: r.vor.kind } : {}) })
         letzterFlush.current = Date.now()
         setGespeichert((g) => ({ ...g, [p.id]: uhrzeit() }))
+        setSpeicherStand((g) => ({ ...g, [p.id]: planSchluessel(p) }))
         // Änderungszähler des Hubs übernehmen (sonst hält der Hub den nächsten Stand für veraltet: „konflikt“)
         const mitRev = typeof erg.rev === 'number' ? { ...p, rev: erg.rev } : p
         if (typeof erg.rev === 'number') setPlanZustand((alt) => (alt && alt.id === p.id ? { ...alt, rev: erg.rev } : alt))
         setVerlauf((v) => ({ ...v, plaene: [mitRev, ...v.plaene.filter((x) => x.id !== p.id)] }))
-        setSpeicherStatus({ art: 'ok', text: (erg.ort === 'tresor' ? 'Im Tresor ' : 'Gespeichert ') + uhrzeit() })
+        setSpeicherStatus({ art: 'ok', text: (erg.ort === 'tresor' ? 'In deiner Ablage gespeichert ' : 'Gespeichert ') + uhrzeit() })
         if (!still)
           hinweisZeigen(
             erg.ort === 'tresor'
-              ? 'Gedruckt – ohne Schreibrecht liegt der Plan in deinem persönlichen Tresor im Hub.'
+              ? 'Gedruckt – ohne Schreibrecht liegt der Plan in deiner persönlichen Ablage im CDSE-Hub (nur du siehst ihn).'
               : grund === 'druck'
                 ? `Gedruckt und ${gruppe.length > 1 ? 'bei jedem Kind der Gruppe' : 'beim Kind'} gespeichert.`
                 : `${gruppe.length > 1 ? 'Bei jedem Kind der Gruppe' : 'Beim Kind'} gespeichert (verschlüsselt im Dossier).`,
@@ -457,7 +537,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       } catch (e) {
         offen.current.unshift(...stapel)
         setSpeicherStatus({ art: 'fehler', text: 'nicht gespeichert – erneut versuchen' })
-        hinweisZeigen('Speichern nicht möglich: ' + (e instanceof Error ? e.message : 'Hub antwortet nicht'), 'warn')
+        hinweisZeigen('Speichern nicht möglich: ' + (e instanceof Error ? e.message : 'Der CDSE-Hub antwortet nicht'), 'warn')
         return false
       }
     },
@@ -501,6 +581,77 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
     hinweisZeigen(`Als eigene Vorlage gesichert: „${r.plan.titel}“ (nur für dich, ohne Kind).`)
   }, [hinweisZeigen, refs])
 
+  // --- Speicherstand, Entwurf, Verlauf ----------------------------------------------------------------------------
+  /** Der angezeigte Plan ist anders als der zuletzt gesicherte (im CDSE-Hub oder als Datei) – oder noch nie gesichert */
+  const ungespeichert = useMemo(() => !!plan && speicherStand[plan.id] !== planSchluessel(plan), [plan, speicherStand])
+  /** Das Speichern im CDSE-Hub ist möglich (Schreibrecht oder persönliche Ablage); sonst bleibt nur die Datei */
+  const hubSpeichert = darfSpeichern || darfTresor
+
+  // Entwurf: nur ohne Hub und ohne Kind aus dem CDSE-Hub, nie mit Kinddaten
+  useEffect(() => {
+    if (!aktiv || status !== 'bereit' || !ohneKind || !roh) return
+    const t = window.setTimeout(() => {
+      entwurfSchreiben({ v: 1, roh, plan, si, ansicht, sozialform, korr, druck, heikel, getauscht, stand: speicherStand, datei: dateiZeit })
+    }, 300)
+    return () => window.clearTimeout(t)
+  }, [aktiv, status, ohneKind, roh, plan, si, ansicht, sozialform, korr, druck, heikel, getauscht, speicherStand, dateiZeit])
+
+  // Warnung beim Schließen oder Neuladen, solange ein Plan nur in diesem Fenster liegt
+  useEffect(() => {
+    if (!aktiv || !plan || !ungespeichert || hubSpeichert) return
+    const warnen = (e: BeforeUnloadEvent) => {
+      e.preventDefault()
+      e.returnValue = ''
+    }
+    window.addEventListener('beforeunload', warnen)
+    return () => window.removeEventListener('beforeunload', warnen)
+  }, [aktiv, plan, ungespeichert, hubSpeichert])
+
+  // Verlauf: jeder Ansichtswechsel ist ein Eintrag, die Zurück-Taste führt zur vorigen Ansicht (nicht aus der Toolbox hinaus).
+  // Ohne Hub steht die Ansicht im Hash (`#passgenau/ergebnis`); aus einem Hub-Link (`#passgenau=<ref>&…`) bleibt der Hash
+  // unverändert – er trägt die Verknüpfung zum Kind, die ein Neuladen braucht.
+  const ansichtAktuell = useRef<Ansicht>(ansicht)
+  ansichtAktuell.current = ansicht
+  const verlaufBereit = useRef(false)
+  const ausVerlauf = useRef(false)
+  const startAnsicht = useRef<Ansicht>('start')
+  const mitHubLink = !!startHash?.ref
+  useEffect(() => {
+    if (!aktiv || status !== 'bereit') {
+      verlaufBereit.current = false
+      return
+    }
+    try {
+      if (!verlaufBereit.current) {
+        verlaufBereit.current = true
+        startAnsicht.current = ansicht
+        window.history.replaceState({ ...(window.history.state as Record<string, unknown> | null), pg: ansicht }, '')
+        return
+      }
+      if (ausVerlauf.current) {
+        ausVerlauf.current = false
+        return
+      }
+      if ((window.history.state as { pg?: Ansicht } | null)?.pg === ansicht) return
+      window.history.pushState({ pg: ansicht }, '', mitHubLink ? window.location.href : '#passgenau/' + ansicht)
+    } catch {
+      /* Verlauf gesperrt (z. B. file:// in manchen Browsern): dann gibt es nur keine Einträge */
+    }
+  }, [aktiv, status, ansicht, mitHubLink])
+  useEffect(() => {
+    if (!aktiv) return
+    const zurueckVor = (e: PopStateEvent) => {
+      const a = (e.state as { pg?: Ansicht } | null)?.pg ?? ansichtAusHash(window.location.hash) ?? (window.location.hash.startsWith('#passgenau') ? startAnsicht.current : null)
+      if (!a || !ANSICHTEN.includes(a) || a === ansichtAktuell.current) return
+      ausVerlauf.current = true
+      setAnsichtZustand(a)
+      setDlg(null)
+      window.scrollTo({ top: 0 })
+    }
+    window.addEventListener('popstate', zurueckVor)
+    return () => window.removeEventListener('popstate', zurueckVor)
+  }, [aktiv])
+
   // --- Praxis ----------------------------------------------------------------------------------------------------
   const praxisLaden = useCallback(async () => {
     if (!hallo?.praxis || !schalter.teilen) {
@@ -530,13 +681,13 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
     status, hallo, hubDa, version, schalter, fehler, ref, ohneKind, setOhneKind, kuratieren, ich, nutzer,
     speicherStatus, setSpeicherStatus, flush, stapelNehmen, stapelZurueck, setGespeichert,
     // Kind
-    katalog, roh, setRoh, profil, korr, korrektur, vorname, darfSpeichern, darfRueckmelden, darfTresor, lernenKind, druck, setDruck,
+    katalog, roh, setRoh, profil, korr, korrektur, vorname, kind, darfSpeichern, darfRueckmelden, darfTresor, lernenKind, druck, setDruck,
     heikel, setHeikel, startZiel,
     // Vorlieben, Ereignisse
     vor, setVor, melde, verlauf, setVerlauf, sozialform, setSozialform, startAlter: startHash?.alter ?? null, startKey: JSON.stringify(startHash ?? {}),
     // Plan
     plan, setPlan, planAendern, zurueck, rueckgaengig, si, setSi, sitzung, planBauen, planSichern, pdfErzeugen, alsEigeneVorlage,
-    gespeichert, getauscht, setGetauscht, daumenStand, setDaumenStand,
+    gespeichert, getauscht, setGetauscht, daumenStand, setDaumenStand, ungespeichert, hubSpeichert, dateiZeit, entwurfWieder, setEntwurfWieder,
     // Ansicht, Dialoge, Hinweise
     ansicht, setAnsicht, herkunft, dlg, setDlg, hinweis, hinweisZeigen, setHinweis: setHinweisZustand,
     // Praxis

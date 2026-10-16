@@ -1,7 +1,7 @@
 // Passgenau – Bezeichnungen der Oberfläche (Rollen, Phasen, Formate, Tagesform, Interessen, Themen).
 // Nur Anzeige: Schlüssel kommen aus dem Vertrag (src/passgenau/typen.ts) und vom Hub.
 import type { Bogen, FormatWunsch, Layout, Profil, Rolle, Schwerpunkt, Stufe, Tagesform } from '../typen'
-import { eldibGoalById } from '../../data/taxonomy'
+import { eldibDomains, eldibGoalById } from '../../data/taxonomy'
 
 export const ROLLE_NAME: Record<Rolle | 'blatt' | 'wahl', string> = {
   ankommen: 'Ankommen',
@@ -217,3 +217,32 @@ export const QUELLE_ZIEL: Record<string, string> = {
 
 /** Sozialform (Aufgabe 151) */
 export const SOZIALFORM_NAME: Record<'einzeln' | 'zu-zweit' | 'kleingruppe', string> = { einzeln: 'Einzel', 'zu-zweit': 'zu zweit', kleingruppe: 'Kleingruppe' }
+
+/** Wie die Oberfläche vom Kind spricht – mit Namen (aus dem CDSE-Hub) oder ohne („das Kind“, „die Gruppe“). Die Fälle sind
+ *  getrennt, damit „mit dem Kind“ und „bei dem Kind“ nie als „mit das Kind“ im Satz stehen. `Nom` steht am Satzanfang. */
+export interface KindWort {
+  nom: string
+  Nom: string
+  dat: string
+  akk: string
+  gen: string
+  /** „von Mio“ / „des Kindes“ – für „Stimme …“, „Vorlieben …“ */
+  von: string
+  /** true = ein echter Vorname (Hub), false = „das Kind“ / „die Gruppe“ */
+  name: boolean
+}
+export function kindWort(vorname: string | null | undefined, sozialform: 'einzeln' | 'zu-zweit' | 'kleingruppe' = 'einzeln'): KindWort {
+  const v = (vorname ?? '').trim()
+  if (v) return { nom: v, Nom: v, dat: v, akk: v, gen: /[sßxz]$/i.test(v) ? v + '’' : v + 's', von: 'von ' + v, name: true }
+  if (sozialform === 'kleingruppe') return { nom: 'die Gruppe', Nom: 'Die Gruppe', dat: 'der Gruppe', akk: 'die Gruppe', gen: 'der Gruppe', von: 'der Gruppe', name: false }
+  if (sozialform === 'zu-zweit') return { nom: 'die beiden Kinder', Nom: 'Die beiden Kinder', dat: 'den beiden Kindern', akk: 'die beiden Kinder', gen: 'der beiden Kinder', von: 'der beiden Kinder', name: false }
+  return { nom: 'das Kind', Nom: 'Das Kind', dat: 'dem Kind', akk: 'das Kind', gen: 'des Kindes', von: 'des Kindes', name: false }
+}
+
+/** Ziele für „Selbst wählen“, nach Bereich gruppiert (V, K, SOZ) – mit der Farbe des Bereichs aus dem ELDiB-Katalog */
+export function zielGruppen(codes: string[]): { id: string; name: string; farbe: string; codes: string[] }[] {
+  const namen: Record<string, string> = { V: 'Verhalten', K: 'Kommunikation', SOZ: 'Zusammenleben', KOG: 'Denken und Lernen' }
+  return ['V', 'K', 'SOZ', 'KOG']
+    .map((id) => ({ id, name: namen[id] ?? id, farbe: eldibDomains.find((d) => d.id === id)?.color ?? '#2e3a9c', codes: codes.filter((c) => c.startsWith(id + '-')) }))
+    .filter((g) => g.codes.length > 0)
+}

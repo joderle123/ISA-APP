@@ -369,7 +369,7 @@ function PlanSeite({ plan, nr, breite, onSchritt }: { plan: Plan; nr: number; br
           </span>
         </div>
         <div className="pga-strich" />
-        <div className="ptitel">{leicht ? `Heute leicht${pg.vorname ? ' · ' + pg.vorname : ''}` : plan.n > 1 ? `${plan.titel} · Sitzung ${nr} von ${plan.n}` : plan.titel}</div>
+        <div className="ptitel">{leicht ? `Heute leicht${pg.kind.name ? ' · ' + pg.kind.nom : ''}` : plan.n > 1 ? `${plan.titel} · Sitzung ${nr} von ${plan.n}` : plan.titel}</div>
         <div className="pmeta">
           {minutenVon(s)} Min. · {SOZIALFORM_NAME[plan.auftrag?.sozialform ?? 'einzeln']} · {leicht ? 'ohne Förderziel' : 'Phase: ' + PHASE_NAME[s.phase]} · Rituale wie immer
         </div>

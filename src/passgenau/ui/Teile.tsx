@@ -157,11 +157,11 @@ export function Daumen({
     }
     pg.setDaumenStand((d) => ({ ...d, [schluessel]: 'hoch' }))
     pg.melde('daumen_hoch', { sitzung: ort.sitzung, baustein: eintrag?.id ?? null, h: eintrag?.h ?? null, tags: pg.tagsVon(eintrag, rolle), wert: 1, erkundung }, eintrag)
-    pg.hinweisZeigen('Gemerkt: mehr davon – gilt für alle deine Kinder.', 'ok', pg.lernenKind ? { label: `Passt gut zu ${pg.vorname}`, aktion: () => passtGut() } : undefined)
+    pg.hinweisZeigen('Gemerkt: mehr davon – gilt für alle deine Kinder.', 'ok', pg.lernenKind ? { label: `Passt gut zu ${pg.kind.dat}`, aktion: () => passtGut() } : undefined)
   }
   const passtGut = () => {
     pg.melde('daumen_hoch', { sitzung: ort.sitzung, baustein: eintrag?.id ?? null, h: eintrag?.h ?? null, tags: pg.tagsVon(eintrag, rolle), wert: 1, grund: 'passt-gut' }, eintrag)
-    pg.hinweisZeigen(`Gemerkt für ${pg.vorname}.`)
+    pg.hinweisZeigen(`Gemerkt für ${pg.kind.akk}.`)
   }
   const runter = () => {
     if (stand === 'runter') {
@@ -174,11 +174,11 @@ export function Daumen({
     setOffen(true)
   }
   const grundText: Record<string, string> = {
-    'zu-lang': `Gemerkt für ${pg.vorname}: kürzere Schritte bevorzugt.`,
-    'zu-kindlich': `Gemerkt für ${pg.vorname}: älter gestaltete Bausteine bevorzugt.`,
-    'zu-schwer': `Gemerkt für ${pg.vorname}: weniger Schreiben, leichtere Bausteine.`,
-    'zu-leicht': `Gemerkt für ${pg.vorname}: etwas mehr zutrauen.`,
-    'passt-nicht': `Gemerkt für ${pg.vorname} – gilt auch für Kolleginnen, die mit ${pg.vorname} planen.`,
+    'zu-lang': `Gemerkt für ${pg.kind.akk}: kürzere Schritte bevorzugt.`,
+    'zu-kindlich': `Gemerkt für ${pg.kind.akk}: älter gestaltete Bausteine bevorzugt.`,
+    'zu-schwer': `Gemerkt für ${pg.kind.akk}: weniger Schreiben, leichtere Bausteine.`,
+    'zu-leicht': `Gemerkt für ${pg.kind.akk}: etwas mehr zutrauen.`,
+    'passt-nicht': `Gemerkt für ${pg.kind.akk} – gilt auch für Kolleginnen, die mit ${pg.kind.dat} planen.`,
     'mag-nicht': 'Gemerkt für dich: kommt seltener (gilt für alle deine Kinder).',
   }
   const gruende: [DaumenGrund, string][] = [...DAUMEN_GRUENDE.slice(0, 3), ['zu-leicht' as DaumenGrund, 'zu leicht'], ...DAUMEN_GRUENDE.slice(3)]
@@ -301,7 +301,7 @@ export function HeikelBanner() {
     <div className="pg-banner warn" role="note">
       <Ic n="schild" />
       <div>
-        <b>Zu {pg.vorname} ist ein heikles Thema offen.</b> Passgenau ersetzt keine Abklärung. Hinweise stehen im Dossier unter Material.
+        <b>Zu {pg.kind.dat} ist ein heikles Thema offen.</b> Passgenau ersetzt keine Abklärung. Hinweise stehen im Dossier unter Material.
       </div>
     </div>
   )

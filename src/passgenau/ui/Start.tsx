@@ -5,7 +5,7 @@ import * as K from './kern'
 import { usePg, useProfil } from './zustand'
 import { Ic, type Zeichen } from './zeichen'
 import { Chip, HeikelBanner, Pill, Seg, VersionsBanner } from './Teile'
-import { LAYOUT_NAME, PHASE_NAME, SOZIALFORM_NAME, SPRACHE_NAME, ZIELE_OHNE_KIND, datumKurz, heuteIso, interesseName, themaName, zielKurz, zugangText } from './texte'
+import { LAYOUT_NAME, PHASE_NAME, SOZIALFORM_NAME, SPRACHE_NAME, ZIELE_OHNE_KIND, datumKurz, heuteIso, interesseName, themaName, zielGruppen, zielKurz, zugangText } from './texte'
 import { useRueckmeldung } from './Nachher'
 import { dauerVorgabe } from './Wege'
 import { quoteText } from './Praxis'
@@ -50,7 +50,8 @@ function useOffeneDrucke(): { plan: Plan; nr: number; titel: string; gedruckt: s
 export function Start() {
   const pg = usePg()
   const p = useProfil()
-  const v = pg.vorname
+  const k = pg.kind
+  const ohne = pg.ohneKind
   const f = p.folge
   const offene = useOffeneDrucke()
   const rm = useRueckmeldung()
@@ -73,18 +74,24 @@ export function Start() {
   const passend = pg.praxis.liste
     .filter((x) => (x.status === 'freigegeben' || x.status === 'offiziell') && x.ziele.some((z) => p.ziele.some((y) => y.code === z)))
     .slice(0, 2)
+  const zweiteKarte = (pg.schalter.teilen && pg.hubDa) || (pg.vor.ich.eigeneVorlagen?.length ?? 0) > 0
 
   return (
     <>
       <section className="pg-kopf">
         <div>
-          <div className="pg-eyebrow">Passgenau · aus dem Dossier geöffnet</div>
-          <h1>Was machst du heute mit {v}?</h1>
-          <p className="pg-lead">Der Hub kennt {v} schon – Alter, Sprachen, Förderziele, Notizen und frühere Stunden sind vorausgefüllt. Du klickst nur noch an, was stimmt.</p>
+          {/* Ohne Kind gibt es kein Dossier und kein „Kind“, von dem die Rede sein könnte: neutral schreiben */}
+          <div className="pg-eyebrow">{ohne ? 'Passgenau · ohne Kind' : 'Passgenau · aus dem Dossier geöffnet'}</div>
+          <h1>{ohne ? 'Was machst du heute?' : `Was machst du heute mit ${k.dat}?`}</h1>
+          <p className="pg-lead">
+            {ohne
+              ? 'Du planst ohne Kind. Alter, Sprache und Ziele hast du gewählt – such dir einen der drei Wege aus.'
+              : `Der CDSE-Hub kennt ${k.akk} schon – Alter, Sprachen, Förderziele, Notizen und frühere Stunden sind vorausgefüllt. Du klickst nur noch an, was stimmt.`}
+          </p>
         </div>
-        <button type="button" className="pg-btn" onClick={() => pg.setAnsicht('wissen')}>
-          <Ic n="person" />
-          Das weiß ich schon
+        <button type="button" className="pg-btn" onClick={() => pg.setAnsicht(ohne ? 'ohnekind' : 'wissen')}>
+          <Ic n={ohne ? 'stift' : 'person'} />
+          {ohne ? 'Auswahl ändern' : 'Das weiß ich schon'}
         </button>
       </section>
       <VersionsBanner />
@@ -176,41 +183,50 @@ export function Start() {
       <div className="pg-wege">
         <Weg titel="Gründlich planen" zeit="< 3 Min." farbe={['#ECEEFA', '#2E3A9C']} icon="liste" text="Ziele, Anzahl Sitzungen, Dauer und Schwerpunkt – eine aufbauende Folge mit Blättern." punkte={['Bogen: wahrnehmen → üben → übertragen', 'gleiche Rituale, wechselnde Inhalte', 'jede Sitzung mit eigenem Blatt']} onClick={() => pg.setAnsicht('gruendlich')} />
         <Weg titel="Schnell für heute" zeit="< 30 Sek." farbe={['#FDF3E7', '#9A4F0B']} icon="blitz" text="Drei Regler für heute, ein Klick – fertige Stunde mit Blatt." punkte={['Energie, Konzentration, Stimmung', f ? 'nächster Schritt der laufenden Folge' : 'wichtigstes Ziel zuerst', 'sofort als PDF']} onClick={() => pg.setAnsicht('schnell')} />
-        <Weg titel="Heute geht nicht viel" zeit="leicht" farbe={['#EAF2E7', '#3F6E3A']} icon="herz" text="Spiele, Bewegung, Kreatives, Beziehung – bewusst ohne Förderziel." punkte={[`ein Klick: Wie ist ${v} heute?`, 'Wahlkarte statt Befragung', 'Mitmach-Seite zum Drucken']} onClick={() => pg.setAnsicht('leicht')} />
+        <Weg titel="Heute geht nicht viel" zeit="leicht" farbe={['#EAF2E7', '#3F6E3A']} icon="herz" text="Spiele, Bewegung, Kreatives, Beziehung – bewusst ohne Förderziel." punkte={[`ein Klick: Wie ist ${k.nom} heute?`, 'Wahlkarte statt Befragung', 'Mitmach-Seite zum Drucken']} onClick={() => pg.setAnsicht('leicht')} />
       </div>
-      <div className="pg-zwei">
+      <div className={'pg-zwei' + (zweiteKarte ? '' : ' eine')}>
         <div className="pg-card">
           <h2>
-            Das weiß ich schon <Pill>vorausgefüllt</Pill>
+            {ohne ? (
+              'Deine Auswahl'
+            ) : (
+              <>
+                Das weiß ich schon <Pill>vorausgefüllt</Pill>
+              </>
+            )}
           </h2>
           <WissenKurz />
           <hr className="pg-fein" />
-          <button type="button" className="pg-btn klein" onClick={() => pg.setAnsicht('wissen')}>
+          <button type="button" className="pg-btn klein" onClick={() => pg.setAnsicht(ohne ? 'ohnekind' : 'wissen')}>
             <Ic n="stift" />
-            Ansehen und korrigieren
+            {ohne ? 'Auswahl ändern' : 'Ansehen und korrigieren'}
           </button>
         </div>
-        <div className="pg-card">
-          {pg.schalter.teilen && pg.hubDa ? (
-            <>
-              <h2>Aus der Praxis – passt zu {v}</h2>
-              {passend.length ? (
-                passend.map((x) => <PraxisZeile key={x.id} x={x} />)
-              ) : (
-                <p className="pg-leise">{pg.praxis.laedt ? 'Vorlagen werden geladen …' : 'Noch keine geprüfte Vorlage zu diesen Zielen.'}</p>
-              )}
-              <button type="button" className="pg-btn klein" onClick={() => pg.setAnsicht('praxis')}>
-                <Ic n="gruppe" />
-                Alle Vorlagen
-              </button>
-            </>
-          ) : (
-            <>
-              <h2>Eigene Vorlagen</h2>
-              <EigeneVorlagen />
-            </>
-          )}
-        </div>
+        {/* Die Karte „Eigene Vorlagen“ gibt es nur, wenn schon eine da ist – eine leere Karte sagt nichts */}
+        {zweiteKarte && (
+          <div className="pg-card">
+            {pg.schalter.teilen && pg.hubDa ? (
+              <>
+                <h2>Aus der Praxis – passt zu {k.dat}</h2>
+                {passend.length ? (
+                  passend.map((x) => <PraxisZeile key={x.id} x={x} />)
+                ) : (
+                  <p className="pg-leise">{pg.praxis.laedt ? 'Vorlagen werden geladen …' : 'Noch keine geprüfte Vorlage zu diesen Zielen.'}</p>
+                )}
+                <button type="button" className="pg-btn klein" onClick={() => pg.setAnsicht('praxis')}>
+                  <Ic n="gruppe" />
+                  Alle Vorlagen
+                </button>
+              </>
+            ) : (
+              <>
+                <h2>Eigene Vorlagen</h2>
+                <EigeneVorlagen />
+              </>
+            )}
+          </div>
+        )}
       </div>
     </>
   )
@@ -231,7 +247,6 @@ function PraxisZeile({ x }: { x: PraxisVorlage }) {
 function EigeneVorlagen() {
   const pg = usePg()
   const l = pg.vor.ich.eigeneVorlagen ?? []
-  if (!l.length) return <p className="pg-leise">Noch keine. Im Ergebnis: „Als eigene Vorlage“ – nur für dich, ohne Kind.</p>
   return (
     <ul className="pg-liste-einfach">
       {l.slice(0, 4).map((v) => (
@@ -273,8 +288,13 @@ export function WissenKurz() {
         Blatt {SPRACHE_NAME[p.sprache.blatt]}
         {p.sprache.woerter.length > 0 && ' · Wörter auch ' + p.sprache.woerter.map((w) => SPRACHE_NAME[w]).join(', ')}
       </dd>
-      <dt>Zugang</dt>
-      <dd>{zugangText(p.zugang)}</dd>
+      {/* Ohne Kind kommt der Zugang nur aus dem Alter – eine Angabe über das Kind ist das nicht */}
+      {!pg.ohneKind && (
+        <>
+          <dt>Zugang</dt>
+          <dd>{zugangText(p.zugang)}</dd>
+        </>
+      )}
       <dt>Förderziele</dt>
       <dd>
         {p.ziele.length
@@ -324,26 +344,31 @@ export function WissenKurz() {
   )
 }
 
-/** Schnellstart ohne Kind: häufige Anliegen als ein Klick (Ziele aus ZIELE_OHNE_KIND) */
-const REZEPTE: { titel: string; alter: number; ziele: string[]; sozialform: 'einzeln' | 'zu-zweit' | 'kleingruppe'; weg: 'schnell' | 'gruendlich' }[] = [
-  { titel: 'Wut im Griff', alter: 8, ziele: ['V-21', 'V-18'], sozialform: 'kleingruppe', weg: 'schnell' },
-  { titel: 'Gefühle benennen', alter: 6, ziele: ['K-26'], sozialform: 'kleingruppe', weg: 'schnell' },
-  { titel: 'Warten und abwechseln', alter: 5, ziele: ['SOZ-14', 'SOZ-19'], sozialform: 'kleingruppe', weg: 'schnell' },
-  { titel: 'Streit lösen', alter: 9, ziele: ['SOZ-34', 'SOZ-32'], sozialform: 'zu-zweit', weg: 'schnell' },
-  { titel: 'Sich in andere einfühlen', alter: 10, ziele: ['SOZ-37', 'K-26'], sozialform: 'kleingruppe', weg: 'gruendlich' },
-  { titel: 'Erwachsene ansprechen', alter: 7, ziele: ['K-12', 'K-17'], sozialform: 'einzeln', weg: 'schnell' },
-  { titel: 'Fortschritt sehen', alter: 13, ziele: ['V-22'], sozialform: 'einzeln', weg: 'gruendlich' },
-  { titel: 'Aufhören, wenn es Zeit ist', alter: 7, ziele: ['V-15', 'V-10'], sozialform: 'einzeln', weg: 'schnell' },
+/** Typische Anliegen ohne Kind: ein Klick, ein erklärender Satz (Ziele aus ZIELE_OHNE_KIND) */
+const REZEPTE: { titel: string; text: string; alter: number; ziele: string[]; sozialform: 'einzeln' | 'zu-zweit' | 'kleingruppe'; weg: 'schnell' | 'gruendlich' }[] = [
+  { titel: 'Wut im Griff', text: 'Wut früh bemerken, stoppen und etwas anderes tun.', alter: 8, ziele: ['V-21', 'V-18'], sozialform: 'kleingruppe', weg: 'schnell' },
+  { titel: 'Gefühle benennen', text: 'Gefühle erkennen und mit passenden Wörtern sagen.', alter: 6, ziele: ['K-26'], sozialform: 'kleingruppe', weg: 'schnell' },
+  { titel: 'Warten und abwechseln', text: 'Geduld üben: warten, bis man dran ist, und teilen.', alter: 5, ziele: ['SOZ-14', 'SOZ-19'], sozialform: 'kleingruppe', weg: 'schnell' },
+  { titel: 'Streit lösen', text: 'Einen Streit ruhig besprechen und gemeinsam eine Lösung finden.', alter: 9, ziele: ['SOZ-34', 'SOZ-32'], sozialform: 'zu-zweit', weg: 'schnell' },
+  { titel: 'Sich in andere einfühlen', text: 'Wahrnehmen, wie es anderen geht, und darauf reagieren.', alter: 10, ziele: ['SOZ-37', 'K-26'], sozialform: 'kleingruppe', weg: 'gruendlich' },
+  { titel: 'Erwachsene ansprechen', text: 'Sich trauen, um Hilfe zu bitten und Erwachsene anzusprechen.', alter: 7, ziele: ['K-12', 'K-17'], sozialform: 'einzeln', weg: 'schnell' },
+  { titel: 'Fortschritt sehen', text: 'Erkennen, was schon klappt – für Jugendliche, die sich selbst einschätzen.', alter: 13, ziele: ['V-22'], sozialform: 'einzeln', weg: 'gruendlich' },
+  { titel: 'Aufhören, wenn es Zeit ist', text: 'Ein Spiel oder eine Aufgabe beenden können, ohne Ärger.', alter: 7, ziele: ['V-15', 'V-10'], sozialform: 'einzeln', weg: 'schnell' },
 ]
 
 /** Ohne Hub: Profil per Chips (Alter, Sprache, Ziele) – gespeichert wird nur als Datei bzw. eigene Vorlage */
 export function OhneKind() {
   const pg = usePg()
-  const [alter, setAlter] = useState(pg.startAlter ?? 9)
-  const [sprache, setSprache] = useState<Sprache>('de')
-  const [ziele, setZiele] = useState<string[]>(() => (pg.startZiel ? [pg.startZiel] : []))
+  // Wer vom Plan hierher zurückkommt, findet seine Auswahl wieder
+  const bisher = pg.ohneKind ? pg.roh : null
+  const [alter, setAlter] = useState(bisher?.alterJahre ?? pg.startAlter ?? 9)
+  const [sprache, setSprache] = useState<Sprache>(bisher?.sprache.blatt ?? 'de')
+  const [ziele, setZiele] = useState<string[]>(() => (bisher ? bisher.ziele.map((z) => z.code).slice(0, 3) : pg.startZiel ? [pg.startZiel] : []))
+  const [selbst, setSelbst] = useState(!!bisher || !!pg.startZiel || pg.startAlter != null)
   // vom Blatt aus (Brücke, Aufgabe 154): dessen Ziel steht vorn, auch wenn es nicht zu den üblichen gehört
   const alle = pg.startZiel && !ZIELE_OHNE_KIND.includes(pg.startZiel) ? [pg.startZiel, ...ZIELE_OHNE_KIND] : ZIELE_OHNE_KIND
+  const gruppen = zielGruppen(alle)
+  const satz = (c: string) => (pg.katalog ? K.zielSatz(pg.katalog, { ziele: [] }, c, 'de') : undefined)
   const los = () => {
     const p = K.ohneKindProfil({ alterJahre: alter, sprache, ziele })
     pg.setRoh({ ...p, vorname: undefined })
@@ -359,73 +384,98 @@ export function OhneKind() {
     pg.setAnsicht(r.weg)
   }
   return (
-    <div className="pg-mitte">
-      <div className="pg-eyebrow">Passgenau · ohne Hub</div>
+    <div className="pg-mitte breit">
+      <div className="pg-eyebrow">Passgenau · ohne Kind</div>
       <h1>Ohne Kind planen</h1>
       <p className="pg-lead">
-        {pg.hallo ? 'Die Toolbox wurde ohne Kind geöffnet.' : 'Kein Hub verbunden.'} Wähle Alter, Sprache und bis zu drei Ziele – für ein Kind, zu zweit oder eine Kleingruppe (im nächsten Schritt). Gespeichert wird nichts beim Kind – nur als Datei oder als eigene Vorlage.
+        Wähle ein typisches Anliegen – oder stelle Alter, Sprache und Ziele selbst ein. Du planst für ein Kind, zu zweit oder eine Kleingruppe. Ohne CDSE-Hub wird nichts beim Kind gespeichert, nur als Datei oder eigene Vorlage.
       </p>
-      <div className="pg-fblock">
-        <h3>Schnellstart</h3>
-        <div className="pg-chips" role="group" aria-label="Schnellstart">
-          {REZEPTE.map((r) => (
-            <Chip key={r.titel} an={false} onClick={() => schnellstart(r)} titel={`${r.alter} J. · ${SOZIALFORM_NAME[r.sozialform]} · Ziele ${r.ziele.join(', ')}`}>
-              <b>{r.titel}</b>&nbsp;
-              <span className="pg-leise">
-                {r.alter} J. · {SOZIALFORM_NAME[r.sozialform]}
-              </span>
-            </Chip>
-          ))}
-        </div>
-        <p className="pg-leise pg-klein">Oder selbst wählen:</p>
-      </div>
       {pg.fehler && (
         <div className="pg-banner warn">
           <Ic n="info" />
           <div>Das Profil kam nicht an: {pg.fehler}</div>
         </div>
       )}
-      <div className="pg-card">
-        <div className="pg-fblock">
-          <h3>
-            <span className="nr">1</span>Alter
-          </h3>
-          <div className="pg-chips">
-            {Array.from({ length: 14 }, (_, i) => i + 3).map((a) => (
-              <Chip key={a} an={alter === a} onClick={() => setAlter(a)}>
-                {a === 16 ? '16+' : a} J.
-              </Chip>
-            ))}
-          </div>
-        </div>
-        <div className="pg-fblock">
-          <h3>
-            <span className="nr">2</span>Sprache des Blatts
-          </h3>
-          <Seg label="Sprache" wert={sprache} optionen={[['de', 'Deutsch'], ['fr', 'Français']]} onWahl={setSprache} />
-        </div>
-        <div className="pg-fblock">
-          <h3>
-            <span className="nr">3</span>Ziele <span className="pg-leise pg-klein">(bis zu drei, Reihenfolge = Priorität)</span>
-          </h3>
-          <div className="pg-chips">
-            {alle.map((c) => {
-              const i = ziele.indexOf(c)
-              return (
-                <Chip key={c} an={i >= 0} onClick={() => setZiele((l) => (i >= 0 ? l.filter((x) => x !== c) : l.length < 3 ? [...l, c] : l))}>
-                  {i >= 0 ? `${i + 1}. ` : ''}
-                  <b>{c}</b>&nbsp;{zielKurz(c)}
-                </Chip>
-              )
-            })}
-          </div>
-          <p className="pg-leise pg-klein">Ohne Ziel: „Worum soll es heute gehen?“ beim Planen.</p>
-        </div>
-        <button type="button" className="pg-btn primaer gross breit" onClick={los}>
-          <Ic n="pfeil" />
-          Weiter
-        </button>
+      <h2 className="pg-abschnitt">Typische Anliegen</h2>
+      <div className="pg-anliegen-raster">
+        {REZEPTE.map((r) => (
+          <button key={r.titel} type="button" className="pg-anliegen" onClick={() => schnellstart(r)}>
+            <b>{r.titel}</b>
+            <span>{r.text}</span>
+            <small>
+              {r.alter} J. · {SOZIALFORM_NAME[r.sozialform]} · {r.ziele.join(' · ')}
+            </small>
+          </button>
+        ))}
       </div>
+      <details className="pg-selbst" open={selbst} onToggle={(e) => setSelbst(e.currentTarget.open)}>
+        <summary>
+          <span>
+            <b>Selbst wählen</b>
+            <small>Alter, Sprache und Ziele einstellen</small>
+          </span>
+        </summary>
+        <div className="pg-card">
+          <div className="pg-fblock">
+            <h3>
+              <span className="nr">1</span>
+              <label htmlFor="pg-alter">Alter</label>
+            </h3>
+            <select id="pg-alter" className="pg-select" value={alter} onChange={(e) => setAlter(+e.target.value)}>
+              {Array.from({ length: 14 }, (_, i) => i + 3).map((a) => (
+                <option key={a} value={a}>
+                  {a === 16 ? '16 Jahre und älter' : `${a} Jahre`}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="pg-fblock">
+            <h3>
+              <span className="nr">2</span>Sprache des Blatts
+            </h3>
+            <Seg label="Sprache" wert={sprache} optionen={[['de', 'Deutsch'], ['fr', 'Français']]} onWahl={setSprache} />
+          </div>
+          <div className="pg-fblock">
+            <h3>
+              <span className="nr">3</span>Ziele <span className="pg-leise pg-klein">(bis zu drei – die Reihenfolge deiner Wahl ist die Priorität)</span>
+            </h3>
+            {gruppen.map((g) => (
+              <div key={g.id} className="pg-zielgruppe" style={{ ['--bereich' as string]: g.farbe }}>
+                <div className="pg-zielgruppe-name" id={`pg-zg-${g.id}`}>
+                  <i aria-hidden="true" />
+                  {g.name}
+                </div>
+                <div className="pg-chips" role="group" aria-labelledby={`pg-zg-${g.id}`}>
+                  {g.codes.map((c) => {
+                    const i = ziele.indexOf(c)
+                    return (
+                      <Chip key={c} an={i >= 0} titel={satz(c)} onClick={() => setZiele((l) => (i >= 0 ? l.filter((x) => x !== c) : l.length < 3 ? [...l, c] : l))}>
+                        {i >= 0 ? `${i + 1}. ` : ''}
+                        <b>{c}</b>&nbsp;{zielKurz(c)}
+                      </Chip>
+                    )
+                  })}
+                </div>
+              </div>
+            ))}
+            {ziele.length > 0 ? (
+              <ul className="pg-zielsaetze" aria-label="Das bedeuten deine Ziele">
+                {ziele.map((c) => (
+                  <li key={c}>
+                    <b>{c}</b> {satz(c)}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="pg-leise pg-klein pg-zielhinweis">Ohne Ziel fragt dich Passgenau beim Planen: „Worum soll es heute gehen?“</p>
+            )}
+          </div>
+          <button type="button" className="pg-btn primaer gross breit" onClick={los}>
+            <Ic n="pfeil" />
+            Weiter
+          </button>
+        </div>
+      </details>
     </div>
   )
 }

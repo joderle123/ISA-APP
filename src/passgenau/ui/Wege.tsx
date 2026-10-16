@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import type { Auftrag, FormatWunsch, Profil, Schwerpunkt, Tagesform } from '../typen'
 import { usePg, useProfil } from './zustand'
+import type { KindWort } from './texte'
 import { Ic } from './zeichen'
 import { Chip, HeikelBanner, VersionsBanner } from './Teile'
 import { BOGEN_ANZEIGE, FORMAT_WUNSCH, LAYOUT_NAME, PHASE_KURZ, PHASE_NAME, SCHWERPUNKTE, SOZIALFORM_NAME, TAGESFORM, THEMA_NAME, heuteIso, zielKurz } from './texte'
@@ -70,13 +71,14 @@ const THEMEN_DUENN = ['wut', 'angst', 'freundschaft', 'trauer', 'schule', 'selbs
 
 /** „Worum soll es heute gehen?“ (T-M5) – bei dünnen Daten statt eines Ziels */
 function WorumKarte({ thema, setThema, kennenlernen, setKennenlernen }: { thema: string[]; setThema: (t: string[]) => void; kennenlernen: boolean; setKennenlernen: (b: boolean) => void }) {
+  const ohneKind = usePg().ohneKind
   const umschalten = (t: string) => {
     setKennenlernen(false)
     setThema(thema.includes(t) ? thema.filter((x) => x !== t) : thema.length < 2 ? [...thema, t] : [thema[1], t])
   }
   return (
     <div>
-      <p className="pg-leise pg-klein">Noch keine Förderziele im Dossier. Wähle ein oder zwei Schwerpunkte – oder plane eine erste Stunde zum Kennenlernen.</p>
+      <p className="pg-leise pg-klein">{ohneKind ? 'Du hast kein Ziel gewählt.' : 'Noch keine Förderziele im Dossier.'} Wähle ein oder zwei Schwerpunkte – oder plane eine erste Stunde zum Kennenlernen.</p>
       <div className="pg-chips pg-mt">
         {KOMPETENZEN.map((k) => (
           <Chip key={k} an={thema.includes('kompetenz:' + k)} onClick={() => umschalten('kompetenz:' + k)}>
@@ -104,10 +106,10 @@ function WissenZeile() {
   const pg = usePg()
   const p = useProfil()
   return (
-    <button type="button" className="pg-wissenzeile" onClick={() => pg.setAnsicht('wissen')}>
-      <Ic n="person" />
+    <button type="button" className="pg-wissenzeile" onClick={() => pg.setAnsicht(pg.ohneKind ? 'ohnekind' : 'wissen')}>
+      <Ic n={pg.ohneKind ? 'stift' : 'person'} />
       <span>
-        <b>Das weiß ich schon:</b> {p.alterJahre} J., {p.sprache.blatt.toUpperCase()}
+        <b>{pg.ohneKind ? 'Deine Auswahl:' : 'Das weiß ich schon:'}</b> {p.alterJahre} J., {p.sprache.blatt.toUpperCase()}
         {p.ziele.length ? ', ' + p.ziele.slice(0, 3).map((z) => z.code).join(', ') : ''}
         {p.interessen.length ? ' …' : ''}
       </span>
@@ -119,7 +121,7 @@ function WissenZeile() {
 export function Gruendlich() {
   const pg = usePg()
   const p = useProfil()
-  const v = pg.vorname
+  const k = pg.kind
   const duenn = p.ziele.length === 0 || p.dichte === 'duenn'
   const letzteFolge = pg.verlauf.plaene.find((x) => x.n > 1)
   const [ziele, setZiele] = useState<string[]>(() => {
@@ -149,7 +151,7 @@ export function Gruendlich() {
       <section className="pg-kopf">
         <div>
           <div className="pg-eyebrow">Weg 1 · Gründlich planen</div>
-          <h1>Eine Folge für {v}</h1>
+          <h1>{pg.ohneKind ? 'Eine Folge planen' : `Eine Folge für ${k.akk}`}</h1>
           <p className="pg-lead">Alles ist vorausgefüllt – meistens reicht „Folge bauen“. Jede Sitzung baut auf der vorigen auf.</p>
         </div>
         <span className="pg-uhrhinweis">
@@ -169,7 +171,7 @@ export function Gruendlich() {
               <WorumKarte thema={thema} setThema={setThema} kennenlernen={kennenlernen} setKennenlernen={setKennenlernen} />
             ) : (
               <>
-                <p className="pg-leise pg-klein">Reihenfolge = Priorität. Vorausgewählt aus PEI und Themen der letzten 14 Tage.</p>
+                <p className="pg-leise pg-klein">{pg.ohneKind ? 'Reihenfolge = Priorität. Vorausgewählt aus deiner Auswahl.' : 'Reihenfolge = Priorität. Vorausgewählt aus PEI und Themen der letzten 14 Tage.'}</p>
                 <div className="pg-chips">
                   {p.ziele.map((z) => {
                     const i = ziele.indexOf(z.code)
@@ -231,7 +233,7 @@ export function Gruendlich() {
             <h3>
               <span className="nr">4</span>Formate-Mix
             </h3>
-            <p className="pg-leise pg-klein">Vorausgewählt aus dem, was bei {v} klappt.</p>
+            <p className="pg-leise pg-klein">{pg.ohneKind ? 'Was du gern mischen möchtest – Passgenau schlägt es vor, du entscheidest.' : `Vorausgewählt aus dem, was bei ${k.dat} klappt.`}</p>
             <div className="pg-chips">
               {FORMAT_WUNSCH.map(([f, t]) => (
                 <Chip key={f} an={formate.includes(f)} onClick={() => setFormate((l) => toggle(l, f))}>
@@ -247,7 +249,7 @@ export function Gruendlich() {
             <Chip an={heuteAn} onClick={() => setHeuteAn(!heuteAn)}>
               Tagesform für Sitzung 1 einstellen
             </Chip>
-            {heuteAn && <ReglerBlock heute={heute} setHeute={setHeute} vorname={v} />}
+            {heuteAn && <ReglerBlock heute={heute} setHeute={setHeute} kind={k} />}
           </div>
         </div>
         <div className="pg-card pg-sticky">
@@ -288,10 +290,11 @@ export function Gruendlich() {
   )
 }
 
+/** Fragen mit {nom} (Wer) und {dat} (Wem): „Wie geht es dem Kind heute?“, „Wie viel Energie hat das Kind heute?“ */
 const REGLER: [keyof Heute, string, string, string, string][] = [
-  ['energie', 'Energie', 'Wie viel Energie hat {v} heute?', 'sehr müde', 'sehr aufgedreht'],
-  ['konzentration', 'Konzentration', 'Wie lange kann {v} heute bei einer Sache bleiben?', 'kaum', 'lange'],
-  ['stimmung', 'Stimmung', 'Wie geht es {v} heute?', 'sehr schlecht', 'sehr gut'],
+  ['energie', 'Energie', 'Wie viel Energie hat {nom} heute?', 'sehr müde', 'sehr aufgedreht'],
+  ['konzentration', 'Konzentration', 'Wie lange kann {nom} heute bei einer Sache bleiben?', 'kaum', 'lange'],
+  ['stimmung', 'Stimmung', 'Wie geht es {dat} heute?', 'sehr schlecht', 'sehr gut'],
 ]
 type Heute = { energie: number; konzentration: number; stimmung: number }
 
@@ -322,25 +325,34 @@ function Regler({ k, titel, frage, links, rechts, wert, onWert }: { k: string; t
   )
 }
 
-function ReglerBlock({ heute, setHeute, vorname }: { heute: Heute; setHeute: (h: Heute) => void; vorname: string }) {
-  const VOR: [string, Heute][] = [
-    ['normal', { energie: 4, konzentration: 4, stimmung: 4 }],
-    ['müde', { energie: 3, konzentration: 3, stimmung: 3 }],
-    ['aufgewühlt', { energie: 6, konzentration: 2, stimmung: 2 }],
-    ['angespannt', { energie: 4, konzentration: 3, stimmung: 3 }],
-  ]
+/** „Wie ist der Tag heute?“ – die Voreinstellungen sind der Hauptweg (ein Tipp), die drei Regler sind das Feineinstellen. */
+const VOR: { key: string; name: string; text: string; h: Heute }[] = [
+  { key: 'normal', name: 'Alles normal', text: 'ein ganz gewöhnlicher Tag', h: { energie: 4, konzentration: 4, stimmung: 4 } },
+  { key: 'muede', name: 'Müde', text: 'wenig Energie, kurze Ausdauer', h: { energie: 3, konzentration: 3, stimmung: 3 } },
+  { key: 'aufgewuehlt', name: 'Aufgewühlt', text: 'viel Energie, schwer bei der Sache zu bleiben', h: { energie: 6, konzentration: 2, stimmung: 2 } },
+  { key: 'angespannt', name: 'Angespannt', text: 'etwas unruhig, die Stimmung ist gedrückt', h: { energie: 4, konzentration: 3, stimmung: 3 } },
+]
+
+function ReglerBlock({ heute, setHeute, kind }: { heute: Heute; setHeute: (h: Heute) => void; kind: KindWort }) {
+  const gleich = (h: Heute) => heute.energie === h.energie && heute.konzentration === h.konzentration && heute.stimmung === h.stimmung
+  // Das Feineinstellen ist zu, solange eine Voreinstellung gilt; es klappt nie von selbst zu, wenn man schon darin arbeitet
+  const [feinOffen, setFeinOffen] = useState(() => !VOR.some((x) => gleich(x.h)))
   return (
     <div className="pg-reglerblock">
-      <div className="pg-chips" role="group" aria-label="Voreinstellung">
-        {VOR.map(([t, h]) => (
-          <Chip key={t} an={heute.energie === h.energie && heute.konzentration === h.konzentration && heute.stimmung === h.stimmung} onClick={() => setHeute(h)}>
-            {t === 'normal' ? 'Alles normal' : t}
-          </Chip>
+      <div className="pg-vorwahl" role="group" aria-label="Wie ist der Tag heute?">
+        {VOR.map((x) => (
+          <button key={x.key} type="button" className={gleich(x.h) ? 'an' : ''} aria-pressed={gleich(x.h)} onClick={() => setHeute(x.h)}>
+            <b>{x.name}</b>
+            <small>{x.text}</small>
+          </button>
         ))}
       </div>
-      {REGLER.map(([k, titel, frage, l, r]) => (
-        <Regler key={k} k={k} titel={titel} frage={frage.replace('{v}', vorname)} links={l} rechts={r} wert={heute[k]} onWert={(n) => setHeute({ ...heute, [k]: n })} />
-      ))}
+      <details className="pg-fein-regler" open={feinOffen} onToggle={(e) => setFeinOffen(e.currentTarget.open)}>
+        <summary>Feineinstellen: Energie, Konzentration, Stimmung</summary>
+        {REGLER.map(([k, titel, frage, l, r]) => (
+          <Regler key={k} k={k} titel={titel} frage={frage.replace('{nom}', kind.nom).replace('{dat}', kind.dat)} links={l} rechts={r} wert={heute[k]} onWert={(n) => setHeute({ ...heute, [k]: n })} />
+        ))}
+      </details>
     </div>
   )
 }
@@ -348,7 +360,7 @@ function ReglerBlock({ heute, setHeute, vorname }: { heute: Heute; setHeute: (h:
 export function Schnell() {
   const pg = usePg()
   const p = useProfil()
-  const v = pg.vorname
+  const k = pg.kind
   const f = p.folge && p.folge.gehalten < p.folge.n ? p.folge : null
   const duenn = p.ziele.length === 0 || p.dichte === 'duenn'
   const [heute, setHeute] = useState<Heute>({ energie: 4, konzentration: 4, stimmung: 4 })
@@ -369,8 +381,8 @@ export function Schnell() {
   return (
     <div className="pg-mitte">
       <div className="pg-eyebrow">Weg 2 · Schnell für heute</div>
-      <h1>{v} heute</h1>
-      <p className="pg-lead pg-mb">Drei Regler, ein Klick. Der Rest kommt aus dem Dossier.</p>
+      <h1>{pg.ohneKind ? 'Wie ist der Tag heute?' : `${k.nom} heute`}</h1>
+      <p className="pg-lead pg-mb">{pg.ohneKind ? 'Tipp auf die Tagesform – der Rest kommt aus deiner Auswahl.' : 'Tipp auf die Tagesform – der Rest kommt aus dem Dossier.'}</p>
       <VersionsBanner />
       <WissenZeile />
       {duenn && (
@@ -380,7 +392,7 @@ export function Schnell() {
         </div>
       )}
       <div className="pg-card">
-        <ReglerBlock heute={heute} setHeute={setHeute} vorname={v} />
+        <ReglerBlock heute={heute} setHeute={setHeute} kind={k} />
         <hr className="pg-fein" />
         <div className="pg-chips" role="group" aria-label="Dauer">
           {DAUERN.map((d) => (
@@ -432,7 +444,7 @@ export function Schnell() {
 export function Leicht() {
   const pg = usePg()
   const p = useProfil()
-  const v = pg.vorname
+  const k = pg.kind
   const [tf, setTf] = useState<Tagesform[]>([])
   const [dauer, setDauer] = useState<Dauer>(() => (p.alterJahre <= 5 ? 10 : 20))
   const alle = TAGESFORM
@@ -443,9 +455,9 @@ export function Leicht() {
   return (
     <div className="pg-mitte">
       <div className="pg-eyebrow">Weg 3 · Heute geht nicht viel</div>
-      <h1>Wie ist {v} heute?</h1>
+      <h1>Wie ist {k.nom} heute?</h1>
       <p className="pg-lead pg-mb">
-        Leichte Stunde ohne Förderziel: Spiel, Bewegung, Kreatives, Beziehung. {v} wählt in der Stunde selbst – nichts wird abgefragt. Bis zu zwei Angaben.
+        Leichte Stunde ohne Förderziel: Spiel, Bewegung, Kreatives, Beziehung. Gewählt wird erst in der Stunde – nichts wird abgefragt. Bis zu zwei Angaben.
       </p>
       <HeikelBanner />
       <WissenZeile />

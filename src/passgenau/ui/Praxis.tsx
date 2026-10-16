@@ -39,7 +39,7 @@ function refsVon(i: VorlagenInhalt | undefined): string[] {
 export function Praxis() {
   const pg = usePg()
   const p = pg.profil
-  const v = pg.vorname
+  const kd = pg.kind
   const [ziel, setZiel] = useState('')
   const [band, setBand] = useState('')
   const [art, setArt] = useState<'' | 'einzel' | 'folge'>('')
@@ -88,7 +88,7 @@ export function Praxis() {
         <h1>Aus der Praxis</h1>
         <div className="pg-banner">
           <Ic n="info" />
-          <div>„Aus der Praxis“ ist in diesem Hub ausgeschaltet.</div>
+          <div>„Aus der Praxis“ ist im CDSE-Hub ausgeschaltet.</div>
         </div>
       </div>
     )
@@ -98,7 +98,7 @@ export function Praxis() {
         <div>
           <div className="pg-eyebrow">Toolbox · Aus der Praxis</div>
           <h1>Sitzungen, die im Team geklappt haben</h1>
-          <p className="pg-lead">Geteilt von Kolleginnen und Kollegen am selben Hub – anonymisiert, ohne Kinddaten. „Übernehmen“ passt eine Vorlage an {pg.ohneKind ? 'dein Profil' : v} an. Wer eine Vorlage einsetzt, bleibt fachlich verantwortlich.</p>
+          <p className="pg-lead">Geteilt von Kolleginnen und Kollegen im selben CDSE-Hub – anonymisiert, ohne Kinddaten. „Übernehmen“ passt eine Vorlage an {pg.ohneKind ? 'deine Auswahl' : kd.akk} an. Wer eine Vorlage einsetzt, bleibt fachlich verantwortlich.</p>
         </div>
         {pg.hubDa && (
           <button type="button" className="pg-btn" disabled={!teilenOk} title={teilenOk ? undefined : 'Erst eine Folge mit 3 gehaltenen Sitzungen oder eine Stunde mit eigenem Tausch'} onClick={() => pg.setDlg({ art: 'teilen' })}>
@@ -110,7 +110,12 @@ export function Praxis() {
       {!pg.hubDa ? (
         <div className="pg-banner">
           <Ic n="info" />
-          <div>„Aus der Praxis“ liegt verschlüsselt im Hub-Ordner. Öffne Passgenau aus dem Hub, um Vorlagen zu sehen und zu teilen.</div>
+          <div>
+            Die geteilten Stunden liegen im CDSE-Hub. Öffne Passgenau aus dem Dossier eines Kindes im CDSE-Hub – dann siehst du die Vorlagen deiner Kolleginnen und Kollegen und kannst eigene teilen.{' '}
+            <button type="button" className="pg-link" onClick={() => pg.setAnsicht('start')}>
+              Zurück zum Planen
+            </button>
+          </div>
         </div>
       ) : (
         <>
@@ -157,7 +162,7 @@ export function Praxis() {
                 <>
                   <span className="pg-trenner" />
                   <Chip an={passtSort} onClick={() => setPasstSort(!passtSort)}>
-                    passt zu {v} zuerst
+                    passt zu {kd.dat} zuerst
                   </Chip>
                 </>
               )}
@@ -175,7 +180,7 @@ export function Praxis() {
                   <div className="zeile1">
                     {passt(x) && (
                       <Pill art="akz" icon="check">
-                        passt zu {v}
+                        passt zu {kd.dat}
                       </Pill>
                     )}
                     <Pill art={stArt}>{st}</Pill>
@@ -238,7 +243,7 @@ export function Praxis() {
       )}
       <div className="pg-hinweisbox pg-mt2">
         <Ic n="schloss" />
-        <span>Gespeichert verschlüsselt im Hub-Ordner (gemeinsam/passgenau-vorlagen). Zwischen Annexe-Hub und CDSE-Hub: Export und Import als Datei. Prüfung durch Responsable oder Kuratorin, Melden und Ausblenden möglich.</span>
+        <span>Verschlüsselt im Ordner des CDSE-Hubs gespeichert (gemeinsam/passgenau-vorlagen). Zwischen zwei Standorten wandern Vorlagen als Datei (Export und Import). Geprüft werden sie von der Responsable oder der Kuratorin; Melden und Ausblenden sind möglich.</span>
       </div>
     </>
   )
@@ -351,7 +356,7 @@ export function Teilen() {
       pg.setVor((v) => ({ ...v, ich: { ...(v.ich as FachkraftVorlieben), geteilt: geteilt + 1 } }))
       pg.setPraxis((x) => ({ ...x, liste: [{ ...e, von: e.anonym ? null : `${pg.ich.name}${pg.ich.team ? ' · ' + pg.ich.team : ''}`, id: r.id, version: r.version, status: r.status, erstellt: new Date().toISOString().slice(0, 7), eigen: true }, ...x.liste] }))
       pg.setDlg(null)
-      pg.hinweisZeigen(r.status === 'eingereicht' ? 'Eingereicht – sichtbar nach der Prüfung durch die Kuratorin. Anonymisiert, ohne Kinddaten.' : 'Geteilt – für alle am Hub sichtbar.')
+      pg.hinweisZeigen(r.status === 'eingereicht' ? 'Eingereicht – sichtbar nach der Prüfung durch die Kuratorin. Anonymisiert, ohne Kinddaten.' : 'Geteilt – für alle im CDSE-Hub sichtbar.')
     } catch (e) {
       const tr = (e as hub.HubFehler)?.treffer
       if (tr?.length) {
@@ -363,7 +368,7 @@ export function Teilen() {
           return n
         })
       }
-      pg.hinweisZeigen('Teilen nicht möglich: ' + (e instanceof Error ? e.message : 'Hub antwortet nicht'), 'warn')
+      pg.hinweisZeigen('Teilen nicht möglich: ' + (e instanceof Error ? e.message : 'Der CDSE-Hub antwortet nicht'), 'warn')
     } finally {
       setLaeuft(false)
     }
@@ -384,7 +389,7 @@ export function Teilen() {
   return (
     <PgDialog
       titel="Fürs Team teilen"
-      unter="Aus der Praxis – sichtbar für alle am selben Hub, nach Prüfung durch die Kuratorin."
+      unter="Aus der Praxis – sichtbar für alle im selben CDSE-Hub, nach Prüfung durch die Kuratorin."
       onClose={() => pg.setDlg(null)}
       breit
       fuss={
@@ -476,7 +481,7 @@ export function Teilen() {
           <div className="pg-breit">
             <b>
               {eigene.length} eigene{eigene.length === 1 ? 'r' : ''} Text{eigene.length === 1 ? '' : 'e'}
-              {treffer === null ? ' – Prüfung im Hub läuft …' : treffer.length ? ` · Prüfung im Hub: ${treffer.length} Treffer` : ' · Prüfung im Hub: keine Treffer'}
+              {treffer === null ? ' – Prüfung läuft …' : treffer.length ? ` · Prüfung: ${treffer.length} Treffer` : ' · Prüfung: keine Treffer'}
             </b>
             {eigene.map((t) => {
               const e = entscheidung[t.pfad] ?? 'eigen'
@@ -560,11 +565,11 @@ export function Uebernehmen({ vorlage }: { vorlage: PraxisVorlage }) {
     pg.setSi(0)
     hub.praxisSignal(vorlage.id, 'genutzt').catch(() => {})
     pg.setAnsicht('baukasten')
-    pg.hinweisZeigen(`„${vorlage.titel}“ für ${pg.vorname} übernommen – alles bleibt änderbar.`)
+    pg.hinweisZeigen(`„${vorlage.titel}“ für ${pg.kind.akk} übernommen – alles bleibt änderbar.`)
   }
   return (
     <PgDialog
-      titel={`Für ${pg.vorname} übernehmen`}
+      titel={`Für ${pg.kind.akk} übernehmen`}
       unter={`„${vorlage.titel}“ · ${vorlage.n > 1 ? `Folge · ${vorlage.n} Sitzungen` : 'Einzelstunde'} · ${vorlage.von ? 'von ' + vorlage.von : 'anonym'}`}
       onClose={() => pg.setDlg(null)}
       schmal
@@ -591,7 +596,7 @@ export function Uebernehmen({ vorlage }: { vorlage: PraxisVorlage }) {
       {fremde.length > 0 && (
         <div className="pg-geteilt">
           <b>Texte der Autorin ({fremde.length})</b>
-          {gesperrt && <p className="pg-hinweisbox gelb klein">Texte der Autorin sind nicht auf die Vorsicht bei {pg.vorname} geprüft – es gelten die Originaltexte.</p>}
+          {gesperrt && <p className="pg-hinweisbox gelb klein">Texte der Autorin sind nicht auf die Vorsicht bei {pg.kind.dat} geprüft – es gelten die Originaltexte.</p>}
           {fremde.map((f) => (
             <div key={f.key} className="pg-diff">
               <div className="neu">
@@ -682,7 +687,7 @@ export function Kuratieren({ vorlage }: { vorlage: PraxisVorlage }) {
       pg.setDlg(null)
       pg.hinweisZeigen(a === 'freigeben' || a === 'einblenden' ? 'Geprüft – für alle sichtbar (diese Version).' : a === 'ausblenden' ? 'Ausgeblendet.' : 'Abgelehnt – die Urheberin kann eine neue Version teilen.')
     } catch (e) {
-      pg.hinweisZeigen('Nicht möglich: ' + (e instanceof Error ? e.message : 'Hub antwortet nicht'), 'warn')
+      pg.hinweisZeigen('Nicht möglich: ' + (e instanceof Error ? e.message : 'Der CDSE-Hub antwortet nicht'), 'warn')
     }
   }
   return (
