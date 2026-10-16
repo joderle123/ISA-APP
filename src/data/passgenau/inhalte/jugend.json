@@ -201,7 +201,37 @@
    ]
   },
   "kurz": "Würfeln · drei Wege nennen · klugen Satz genau formulieren",
-  "vorbereitung": "6 Szenen von 1–6 aufs Blatt: Absage · „Du schon wieder, lol“ · keine Antwort · Rempler im Bus"
+  "vorbereitung": "6 Szenen von 1–6 aufs Blatt: Absage · „Du schon wieder, lol“ · keine Antwort · Rempler im Bus",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Gruppenchat: scharfer Spruch",
+      "text": "Im Gruppenchat schreibt jemand unter deine Sprachnachricht „Typisch du, lol“, und du tippst schon eine scharfe Antwort."
+     },
+     {
+      "kurz": "Kantine: Platz besetzt",
+      "text": "In der Kantine setzt sich jemand auf den Platz, den du für dich und deinen Kumpel freigehalten hast, und es kocht in dir hoch."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal bei einem Ärgermoment die drei Wege im Kopf durchzugehen: schlimmer, neutral, klug. Dann entscheidest du.",
+    "probe": "Luca wartet auf den Bus, und Mehdi schreibt in den Gruppenchat, Luca sei „mal wieder zu spät“. Luca will sofort zurückschreiben. Was könnte Luca jetzt mit den drei Wegen tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat de groupe : pique",
+      "text": "Dans le groupe, quelqu’un écrit « Typique de toi, lol » sous ton message vocal, et tu es déjà en train de taper une réponse bien sèche."
+     },
+     {
+      "kurz": "Cantine : place prise",
+      "text": "À la cantine, quelqu’un s’assoit à la place que tu gardais pour toi et ton pote, et tu sens la moutarde te monter au nez."
+     }
+    ],
+    "versuch": "Cette semaine, quand tu t’énerves, essaie une fois de passer en revue les trois voies dans ta tête : envenimer, neutre, intelligent. Puis tu choisis.",
+    "probe": "Luca attend le bus, et Mehdi écrit dans le groupe que Luca est « encore en retard ». Luca veut répondre tout de suite. Que pourrait faire Luca avec les trois voies ?"
+   }
+  }
  },
  {
   "id": "j:sprueche-abprallen-lassen",
@@ -373,7 +403,37 @@
    ]
   },
   "kurz": "Stoppwort klären · Sticheleien kontern · Kontrolle 0–10 nennen",
-  "vorbereitung": "5 harmlose Sprüche auf Zettel schreiben, z. B. „Na, Streber, wieder alles gewusst?“"
+  "vorbereitung": "5 harmlose Sprüche auf Zettel schreiben, z. B. „Na, Streber, wieder alles gewusst?“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Flur: Streber-Spruch",
+      "text": "Vor dem Klassenraum ruft jemand grinsend: „Na, Streber, wieder alles gewusst?“, und du spürst, dass du etwas zurückgeben willst."
+     },
+     {
+      "kurz": "Training: Spruch nach Fehlpass",
+      "text": "Im Training sagt ein Teamkollege nach deinem Fehlpass: „Wow, Weltklasse!“ und schaut in die Runde, ob andere lachen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, auf einen Spruch nur „Kann sein.“ zu sagen und weiterzugehen. Danach schaust du, wie sich das angefühlt hat.",
+    "probe": "Zoé holt in der Cafeteria ein Sandwich, und hinter ihr sagt jemand: „Beeil dich, Majestät, wir haben nicht ewig Zeit.“ Was könnte Zoé jetzt mit „Sprüche abprallen lassen“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Couloir : pique de polard",
+      "text": "Avant le cours, quelqu’un lance en rigolant : « Alors, le polard, tu savais tout ? », et tu sens que tu voudrais répondre."
+     },
+     {
+      "kurz": "Entraînement : la passe ratée",
+      "text": "À l’entraînement, après ta passe ratée, un coéquipier lance : « Wow, niveau mondial ! » et regarde si les autres rigolent."
+     }
+    ],
+    "versuch": "Cette semaine, essaie une fois de répondre à une pique par « Peut-être. » et de continuer ton chemin. Regarde ensuite comment ça fait.",
+    "probe": "Zoé prend un sandwich à la cantine, et derrière elle quelqu’un lance : « Dépêche-toi, Majesté, on n’a pas toute la journée. » Que pourrait faire Zoé pour laisser glisser la pique ?"
+   }
+  }
  },
  {
   "id": "j:mitmachen-oder-raushalten",
@@ -573,7 +633,37 @@
    ]
   },
   "kurz": "Szenenkarten auf drei Stapel legen · Ausstiegssatz für zwei Karten",
-  "vorbereitung": "8 Karteikarten mit je einer Szene: Lästerchat · Foto weiterleiten · Ladendiebstahl · Streit anstacheln"
+  "vorbereitung": "8 Karteikarten mit je einer Szene: Lästerchat · Foto weiterleiten · Ladendiebstahl · Streit anstacheln",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Vertretung: alle machen Quatsch",
+      "text": "Vor der Vertretungsstunde heißt es: „Wir bringen den Typ alle zusammen aus dem Konzept – du bist dabei, ja?“"
+     },
+     {
+      "kurz": "Supermarkt: Kaugummi einstecken",
+      "text": "Im Supermarkt schiebt dir ein Kumpel eine Packung Kaugummi zu: „Steck ein, merkt keiner.“ Du willst nicht, aber auch nicht der Langweiler sein."
+     }
+    ],
+    "versuch": "Überleg dir diese Woche einen Ausstiegssatz, der zu dir passt, und sag ihn einmal – oder übe ihn nur im Kopf. Die Situation suchst du aus.",
+    "probe": "Diogo soll beim Fußballturnier im Jugendhaus mit anderen heimlich den Spielstand ändern, „nur als Gag“. Alle grinsen ihn an. Was könnte Diogo mit einem Ausstiegssatz sagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Remplaçant : tous ensemble",
+      "text": "Avant le cours avec le remplaçant, on te dit : « On le déstabilise tous ensemble, tu es de la partie, hein ? »"
+     },
+     {
+      "kurz": "Magasin : chewing-gum",
+      "text": "Au supermarché, un pote te glisse un chewing-gum : « Mets-le dans ta poche, personne ne verra. » Tu n’en as pas envie, mais tu ne veux pas faire le rabat-joie."
+     }
+    ],
+    "versuch": "Cette semaine, trouve une phrase de sortie qui te ressemble et dis-la une fois – ou entraîne-toi juste dans ta tête. Tu choisis la situation.",
+    "probe": "Pendant le tournoi de foot au centre de jeunes, Diogo devrait changer en cachette le score avec d’autres, « juste pour rire ». Tous le regardent en souriant. Que pourrait dire Diogo avec une phrase de sortie ?"
+   }
+  }
  },
  {
   "id": "j:erst-entwurf-dann-senden",
@@ -754,7 +844,37 @@
    ]
   },
   "kurz": "Wutantwort sofort schreiben · 3 Minuten Pause · zweite Antwort · Regel",
-  "vorbereitung": "Ärgerliche Chatnachricht aufs Blatt: „Schon wieder zu spät. Auf dich ist echt kein Verlass.“"
+  "vorbereitung": "Ärgerliche Chatnachricht aufs Blatt: „Schon wieder zu spät. Auf dich ist echt kein Verlass.“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: bissige Antwort",
+      "text": "Dein Kumpel hat dich im Chat versetzt, und du hast schon eine bissige Nachricht getippt. Der Senden-Knopf ist nur einen Daumen entfernt."
+     },
+     {
+      "kurz": "Praktikum: Kritik-Mail",
+      "text": "Im Praktikum bekommst du eine Mail mit Kritik an deinem Bericht und willst sofort zurückschreiben, dass das unfair ist."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, eine ärgerliche Nachricht drei Minuten liegen zu lassen: Handy weg, kurz aufstehen, dann entscheiden, ob du sie sendest.",
+    "probe": "Inês liest im Klassenchat: „Wer hat meinen Taschenrechner mitgenommen?“ Sie fühlt sich beschuldigt und hat schon eine scharfe Antwort getippt. Was könnte Inês mit der Drei-Minuten-Pause tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : réponse cinglante",
+      "text": "Un pote t’a posé un lapin, et tu as déjà tapé un message bien sec dans le chat. Il ne reste qu’à appuyer sur « Envoyer »."
+     },
+     {
+      "kurz": "Stage : mail de critique",
+      "text": "En stage, tu reçois un mail qui critique ton rapport, et tu veux répondre tout de suite que c’est injuste."
+     }
+    ],
+    "versuch": "Cette semaine, laisse une fois un message énervé reposer trois minutes : téléphone de côté, lève-toi un instant, puis décide si tu l’envoies.",
+    "probe": "Inês lit dans le chat de classe : « Qui a pris ma calculatrice ? » Elle se sent accusée et a déjà tapé une réponse cinglante. Que pourrait faire Inês avec la pause de trois minutes ?"
+   }
+  }
  },
  {
   "id": "j:die-aufschiebe-stimme",
@@ -958,7 +1078,37 @@
     }
    ]
   },
-  "kurz": "Aufschiebe-Sätze sammeln · Zwei-Stühle-Dialog · Rollen tauschen"
+  "kurz": "Aufschiebe-Sätze sammeln · Zwei-Stühle-Dialog · Rollen tauschen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Referat: Anfangen",
+      "text": "Das Referat ist erst in einer Woche fällig, und eine Stimme in deinem Kopf sagt: „Ach, das geht auch noch morgen.“"
+     },
+     {
+      "kurz": "Freistunde: Handy zuerst",
+      "text": "In der Freistunde liegt das Mathe-Blatt vor dir, und eine Stimme flüstert: „Erst noch kurz Handy, dann fang ich richtig an.“"
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einer Aufgabe, die du schiebst, der Stimme zu antworten: „Erst zehn Minuten.“ Danach darfst du neu entscheiden.",
+    "probe": "Yanis soll für den Praktikumsbericht fünf Seiten schreiben. Die Stimme sagt: „Heute nicht, ist ja noch Zeit.“ Was könnte Yanis der Später-Stimme jetzt antworten?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Exposé : s’y mettre",
+      "text": "L’exposé n’est dû que dans une semaine, et une voix dans ta tête dit : « Bof, ça peut attendre demain. »"
+     },
+     {
+      "kurz": "Heure de trou : portable",
+      "text": "Pendant une heure de trou, la feuille de maths est devant toi, et une voix souffle : « D’abord le portable deux minutes, après je m’y mets. »"
+     }
+    ],
+    "versuch": "Cette semaine, face à une tâche que tu repousses, réponds une fois à la voix : « D’abord dix minutes. » Ensuite tu peux décider autrement.",
+    "probe": "Yanis doit écrire cinq pages pour son rapport de stage. La voix dit : « Pas aujourd’hui, j’ai encore le temps. » Que pourrait répondre Yanis à la voix du plus tard ?"
+   }
+  }
  },
  {
   "id": "j:zehn-minuten-am-stueck",
@@ -1131,7 +1281,37 @@
     }
    ]
   },
-  "kurz": "4 Minuten Aufgabe · Striche bei Abschweifen · Bremse wählen · nochmal"
+  "kurz": "4 Minuten Aufgabe · Striche bei Abschweifen · Bremse wählen · nochmal",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Freistunde: Vokabeln lernen",
+      "text": "In der Freistunde willst du zehn Vokabeln lernen, aber dein Handy summt alle halbe Minute auf dem Tisch."
+     },
+     {
+      "kurz": "Praktikum: Bericht tippen",
+      "text": "Im Praktikum sollst du einen Absatz des Berichts tippen, und deine Gedanken wandern ständig zur Mittagspause und zum Chat."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einer Aufgabe vier Minuten am Stück zu bleiben und jedes Abschweifen mit einem Strich zu markieren. Mehr nicht.",
+    "probe": "Lara will vor dem Training noch fünf Matheaufgaben schaffen, schaut aber alle paar Sekunden aufs Handy. Was könnte Lara mit „Vier Minuten am Stück“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Heure de trou : vocabulaire",
+      "text": "Pendant une heure de trou, tu veux apprendre dix mots de vocabulaire, mais ton portable vibre toutes les trente secondes sur la table."
+     },
+     {
+      "kurz": "Stage : écrire le rapport",
+      "text": "En stage, tu dois taper un paragraphe du rapport, et tes pensées filent sans cesse vers la pause de midi et le chat."
+     }
+    ],
+    "versuch": "Cette semaine, essaie une fois de rester quatre minutes d’affilée sur une tâche et de marquer chaque décrochage d’un trait. Rien de plus.",
+    "probe": "Lara veut finir cinq exercices de maths avant l’entraînement, mais elle regarde son portable toutes les quelques secondes. Que pourrait faire Lara avec les quatre minutes d’affilée ?"
+   }
+  }
  },
  {
   "id": "j:gewohnheit-andocken",
@@ -1315,7 +1495,37 @@
    ]
   },
   "kurz": "Tag aus Karten legen · Mini-Gewohnheit andocken · Mini-Version testen",
-  "vorbereitung": "6 Karten schreiben: Wecker aus · Zähne putzen · Bus · Schuhe aus · Handy laden · Abendessen; dazu 2 leere"
+  "vorbereitung": "6 Karten schreiben: Wecker aus · Zähne putzen · Bus · Schuhe aus · Handy laden · Abendessen; dazu 2 leere",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Bus: Vokabeln üben",
+      "text": "Du willst öfter Vokabeln üben, vergisst es aber ständig – dabei steigst du jeden Morgen in denselben Bus."
+     },
+     {
+      "kurz": "Training: Flasche vergessen",
+      "text": "Du vergisst oft die Trinkflasche fürs Training, obwohl du jeden Tag deine Jacke an denselben Haken hängst."
+     }
+    ],
+    "versuch": "Such dir diese Woche eine Sache, die du sowieso tust, und häng eine Mini-Gewohnheit dran: „Nach … mache ich …“. Probier es einmal aus.",
+    "probe": "Mehdi will öfter zehn Minuten Gitarre üben, vergisst es aber. Jeden Tag steckt er sein Handy ans Ladekabel. Was könnte Mehdi mit „Nach …, mache ich …“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Bus : réviser le vocabulaire",
+      "text": "Tu voudrais réviser plus souvent ton vocabulaire, mais tu oublies tout le temps – alors que tu prends le même bus chaque matin."
+     },
+     {
+      "kurz": "Entraînement : gourde oubliée",
+      "text": "Tu oublies souvent ta gourde pour l’entraînement, alors que tu accroches ta veste au même crochet chaque jour."
+     }
+    ],
+    "versuch": "Cette semaine, choisis une chose que tu fais de toute façon et accroche-y une mini-habitude : « Après …, je … ». Essaie une fois.",
+    "probe": "Mehdi voudrait jouer dix minutes de guitare plus souvent, mais il oublie. Chaque jour, il branche son portable sur le chargeur. Que pourrait faire Mehdi avec « Après …, je … » ?"
+   }
+  }
  },
  {
   "id": "j:dein-eigener-trainer",
@@ -1514,7 +1724,37 @@
    ]
   },
   "kurz": "Lernregel · Störfälle würfeln · kleiner machen · Neustart-Zeile",
-  "vorbereitung": "Störfälle notieren: 1 müde · 2 Chat blinkt · 3 mieser Tag · 4 Kumpel will zocken · 5 spät · 6 nichts"
+  "vorbereitung": "Störfälle notieren: 1 müde · 2 Chat blinkt · 3 mieser Tag · 4 Kumpel will zocken · 5 spät · 6 nichts",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Lernregel: Lernen ohne Handy",
+      "text": "Du willst dir die Regel setzen: „Beim Lernen liegt das Handy in der Tasche.“ Hält sie noch, wenn du müde vom Training kommst?"
+     },
+     {
+      "kurz": "Praktikum: Zehn-Minuten-Regel",
+      "text": "Du hast dir fürs Praktikum die Regel „Immer zehn Minuten früher da“ gesetzt. Hält sie, wenn der Bus Verspätung hat oder du kaum geschlafen hast?"
+     }
+    ],
+    "versuch": "Teste diese Woche einmal eine Regel von dir an einem miesen Tag. Reißt sie, mach sie einfach kleiner oder genauer – ohne Vorwurf.",
+    "probe": "Zoé hat die Regel: „Jeden Tag 30 Minuten Vokabeln.“ Nach langen Schultagen reißt sie jedes Mal. Was könnte Zoé jetzt mit dem Regel-Crashtest tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Règle : travailler sans portable",
+      "text": "Tu veux te fixer la règle : « Pendant que je travaille, mon portable reste dans le sac. » Tiendrait-elle après une journée de cours épuisante ?"
+     },
+     {
+      "kurz": "Stage : règle de ponctualité",
+      "text": "Pour ton stage, tu as décidé : « Toujours dix minutes en avance. » Que devient la règle si le bus a du retard ou si tu as peu dormi ?"
+     }
+    ],
+    "versuch": "Cette semaine, teste une fois une de tes règles un mauvais jour. Si elle craque, rends-la plus petite ou plus précise – sans reproches.",
+    "probe": "Zoé s’est donné cette règle : « Trente minutes de vocabulaire par jour. » Après une longue journée de cours, elle craque à chaque fois. Que pourrait faire Zoé avec le crash-test de la règle ?"
+   }
+  }
  },
  {
   "id": "j:mein-stueck-vom-kuchen",
@@ -1703,7 +1943,37 @@
    ]
   },
   "kurz": "Drei Plätze am Boden · Sätze zuordnen · Mein-Teil-Satz",
-  "vorbereitung": "Blätter: Pech · Andere · Ich. Leo: Bus spät · Trainer nebenbei · Kumpel erinnert nicht · nicht notiert"
+  "vorbereitung": "Blätter: Pech · Andere · Ich. Leo: Bus spät · Trainer nebenbei · Kumpel erinnert nicht · nicht notiert",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Bus verpasst: mein Teil",
+      "text": "Du kommst zu spät zum Training, weil der Bus weg war. Der Trainer schaut auf die Uhr. Wie viel war Pech, wie viel andere, wie viel du?"
+     },
+     {
+      "kurz": "Projekt: Teil fehlt",
+      "text": "In der Projektarbeit ist dein Teil der Präsentation am Abgabetag nicht fertig, und dir fallen sofort Ausreden ein."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal bei einer kleinen Panne den Satz: „Mein Teil war … Nächstes Mal mache ich …“. Auch nur für dich selbst.",
+    "probe": "Diogo hat zum Turnier seine Sporttasche vergessen, und das Team muss ohne ihn anfangen. Er sagt: „Alles nur Pech!“ Was könnte Diogo mit „Pech, andere, ich“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Bus raté : ma part",
+      "text": "Tu arrives en retard à l’entraînement parce que ton bus est parti. Le coach regarde sa montre. Quelle part de hasard, des autres, de toi ?"
+     },
+     {
+      "kurz": "Projet : ma partie absente",
+      "text": "Le jour du rendu, ta partie de la présentation n’est pas prête, et des excuses te viennent tout de suite à l’esprit."
+     }
+    ],
+    "versuch": "Cette semaine, face à une petite gaffe, essaie une fois la phrase : « Ma part, c’était … La prochaine fois, je … ». Même juste pour toi.",
+    "probe": "Diogo a oublié son sac de sport le jour du tournoi, et l’équipe doit commencer sans lui. Il dit : « Pas de chance ! » Que pourrait faire Diogo avec « hasard, autres, moi » ?"
+   }
+  }
  },
  {
   "id": "j:vom-meckern-zum-vorschlag",
@@ -1880,7 +2150,37 @@
    ]
   },
   "kurz": "Beschwerde → Wunsch → Vorschlag · besten Satz kurz anspielen",
-  "vorbereitung": "Drei Spalten aufs Blatt zeichnen: Beschwerde · Wunsch · Vorschlag"
+  "vorbereitung": "Drei Spalten aufs Blatt zeichnen: Beschwerde · Wunsch · Vorschlag",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Verein: Trainingszeit",
+      "text": "Das Training im Verein ist immer um 20 Uhr, und du kommst dadurch spät ins Bett. Du ärgerst dich schon lange, gesagt hast du es noch nie."
+     },
+     {
+      "kurz": "Projekt: Aufgabenverteilung",
+      "text": "In der Projektarbeit macht immer dieselbe Person die Folien, und du ärgerst dich, dass keiner fragt, was du lieber machen würdest."
+     }
+    ],
+    "versuch": "Wenn dich diese Woche etwas nervt, mach daraus einen Wunsch und einen Satz: „Könnten wir ausprobieren, dass …?“ Sagen musst du ihn nicht.",
+    "probe": "Yanis nervt es im Praktikum, dass in der Werkstatt immer dasselbe Radioprogramm läuft. Er meckert nur leise. Was könnte Yanis mit „Könnten wir ausprobieren, dass …?“ sagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Club : heure d’entraînement",
+      "text": "L’entraînement au club est toujours à 20 h, et du coup tu te couches tard. Ça t’énerve depuis longtemps, mais tu ne l’as jamais dit."
+     },
+     {
+      "kurz": "Projet : qui fait quoi",
+      "text": "Dans le projet, c’est toujours la même personne qui fait les diapos, et ça t’agace que personne ne demande ce que tu préférerais faire."
+     }
+    ],
+    "versuch": "Si quelque chose t’énerve cette semaine, transforme la plainte en souhait puis en phrase : « Et si on essayait … ? » Tu peux la garder pour toi.",
+    "probe": "En stage, Yanis en a marre que la radio de l’atelier passe toujours la même chose. Il râle juste dans sa barbe. Avec « Et si on essayait … ? », que pourrait dire Yanis ?"
+   }
+  }
  },
  {
   "id": "j:vor-einem-jahr-und-heute",
@@ -2261,7 +2561,37 @@
    ]
   },
   "kurz": "Ein Mal in fünf Kästchen eintragen · schwächstes Glied finden",
-  "vorbereitung": "Fünf Kästchen nebeneinander zeichnen: Auslöser – Gedanke – Gefühl – Handlung – Folge"
+  "vorbereitung": "Fünf Kästchen nebeneinander zeichnen: Auslöser – Gedanke – Gefühl – Handlung – Folge",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Hausaufgaben: wieder nicht fertig",
+      "text": "Zum dritten Mal in zwei Wochen sind deine Französisch-Hausaufgaben nicht fertig. Du suchst die Stelle, an der es jedes Mal kippt."
+     },
+     {
+      "kurz": "Praktikum: Handy-Ermahnung",
+      "text": "Im Praktikum wurdest du schon zweimal wegen des Handys am Arbeitsplatz ermahnt und fragst dich, wie es dazu kam."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei etwas Wiederkehrendem die Kette zu suchen: Auslöser, Gedanke, Gefühl, Handlung, Folge. Stichworte reichen.",
+    "probe": "Mehdi kommt dienstags im Praktikum fast immer zu spät in die Werkstatt. Er weiß nicht, warum. Was könnte Mehdi mit der Ketten-Suche tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Devoirs : encore pas faits",
+      "text": "Pour la troisième fois en deux semaines, tes devoirs de français ne sont pas faits. Tu cherches l’endroit où ça dérape à chaque fois."
+     },
+     {
+      "kurz": "Stage : remarque, portable",
+      "text": "En stage, on t’a déjà fait deux fois une remarque à cause du portable au poste de travail, et tu te demandes comment on en est arrivé là."
+     }
+    ],
+    "versuch": "Cette semaine, repère les cinq maillons d’une situation qui se répète : déclencheur, pensée, émotion, action, suite. Des mots-clés suffisent.",
+    "probe": "Le mardi, Mehdi arrive presque toujours en retard à l’atelier pendant son stage. Il ne sait pas pourquoi. Que pourrait faire Mehdi avec la recherche de la chaîne ?"
+   }
+  }
  },
  {
   "id": "j:kartenhaus-neuer-plan",
@@ -2457,7 +2787,37 @@
    ]
   },
   "kurz": "8 Min. bauen · alle 2 Min. Planänderung · Umschalt-Satz · Transfer",
-  "vorbereitung": "4 Planänderungen auf Zettel: eine Hand · Turm umsetzen · 4 Karten weg · Zeit kürzen"
+  "vorbereitung": "4 Planänderungen auf Zettel: eine Hand · Turm umsetzen · 4 Karten weg · Zeit kürzen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Ausflug: Zug fällt aus",
+      "text": "Auf dem Klassenausflug fällt der Zug aus, und der Lehrer sagt: „Wir fahren jetzt mit dem Bus und machen das Museum kürzer.“"
+     },
+     {
+      "kurz": "Praktikum: Aufgabe wechselt",
+      "text": "Im Praktikum sagt dein Betreuer: „Lass die Aufgabe von vorhin, ich brauche dich jetzt im Lager.“ Du warst mitten drin."
+     }
+    ],
+    "versuch": "Wenn sich diese Woche ein Plan ändert, probier einmal den Satz „Okay, neuer Plan.“ – leise im Kopf oder laut. Schau, ob es etwas leichter macht.",
+    "probe": "Zoé wollte nach der Schule mit Inês zum Basketballplatz, aber Inês sagt kurz vorher ab. Zoé merkt, wie sie sich ärgert. Was könnte Zoé mit „Okay, neuer Plan.“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Sortie : train annulé",
+      "text": "Pendant la sortie de classe, le train est annulé, et le prof dit : « On prend le bus et on raccourcit le musée. »"
+     },
+     {
+      "kurz": "Stage : tâche qui change",
+      "text": "En stage, ton responsable dit : « Laisse tomber la tâche de tout à l’heure, j’ai besoin de toi au stock. » Et tu étais en plein dedans."
+     }
+    ],
+    "versuch": "Si un plan change cette semaine, essaie une fois la phrase « OK, nouveau plan. » – dans ta tête ou à voix haute. Regarde si ça aide un peu.",
+    "probe": "Zoé voulait aller au terrain de basket avec Inês après les cours, mais Inês annule juste avant. Zoé sent l’agacement monter. Que pourrait faire Zoé avec « OK, nouveau plan. » ?"
+   }
+  }
  },
  {
   "id": "j:neu-und-noch-wackelig",
@@ -2660,7 +3020,37 @@
    ]
   },
   "kurz": "Sockenjonglieren · zweimal stoppen: Gedanke, Gefühl · Satz finden",
-  "vorbereitung": "3 Paar Socken zu Bällen zusammenrollen"
+  "vorbereitung": "3 Paar Socken zu Bällen zusammenrollen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Praktikum: neue Maschine",
+      "text": "Am ersten Praktikumstag sollst du eine Maschine bedienen, die du noch nie gesehen hast, und alle anderen wirken routiniert."
+     },
+     {
+      "kurz": "Klettern: erster Versuch",
+      "text": "Du gehst zum ersten Mal zum Probetraining im Klettern, und die Wand sieht viel höher aus, als du gedacht hast."
+     }
+    ],
+    "versuch": "Probier diese Woche bei etwas Neuem einmal bewusst langsam zu starten, klein anzufangen und dir einen Satz zu merken, z. B. „Ich übe noch.“",
+    "probe": "Sofia soll in der Ausbildung zum ersten Mal eine Kundin am Telefon beraten. Sie ist nervös und würde am liebsten schnell auflegen. Was könnte Sofia mit „Langsam, klein, ein Satz“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Stage : machine inconnue",
+      "text": "Le premier jour de stage, tu dois utiliser une machine que tu n’as jamais vue, et tous les autres ont l’air d’avoir l’habitude."
+     },
+     {
+      "kurz": "Escalade : premier essai",
+      "text": "Tu fais ta première séance d’essai d’escalade, et le mur paraît bien plus haut que prévu."
+     }
+    ],
+    "versuch": "Cette semaine, face à du nouveau, essaie de commencer lentement, en petit, avec une phrase en tête, p. ex. « Je m’entraîne encore. »",
+    "probe": "En apprentissage, Sofia doit pour la première fois conseiller une cliente au téléphone. Elle est nerveuse et voudrait raccrocher vite. Que pourrait faire Sofia avec « lentement, petit, une phrase » ?"
+   }
+  }
  },
  {
   "id": "j:spiel-ohne-schiri",
@@ -2852,7 +3242,37 @@
     }
    ]
   },
-  "kurz": "Spiel ohne Regeln kommentieren · Stopp sagen · Regeln zurückholen"
+  "kurz": "Spiel ohne Regeln kommentieren · Stopp sagen · Regeln zurückholen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Schule: Handy im Rucksack",
+      "text": "In der Schule gilt: Handys bleiben im Rucksack. Du findest das nervig und fragst dich, wozu die Regel eigentlich da ist."
+     },
+     {
+      "kurz": "Turnhalle: Hallenschuhe Pflicht",
+      "text": "In der Turnhalle darfst du nur mit sauberen Hallenschuhen rein. Du hast sie vergessen und findest die Regel übertrieben."
+     }
+    ],
+    "versuch": "Such dir diese Woche eine Regel, die dich nervt, und frag dich einmal: Wozu ist sie da, und wen schützt sie? Gut finden musst du sie danach nicht.",
+    "probe": "Mehdi findet es unfair, dass im Jugendhaus der Kicker ab 18 Uhr aus sein muss. Was könnte Mehdi mit dem Regel-Check über diese Regel herausfinden?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Lycée : portables rangés",
+      "text": "Au lycée, les portables doivent rester dans le sac. Tu trouves ça pénible et tu te demandes à quoi sert vraiment cette règle."
+     },
+     {
+      "kurz": "Gymnase : chaussures propres",
+      "text": "Au gymnase, il faut des chaussures de salle propres. Tu as oublié les tiennes et tu trouves la règle exagérée."
+     }
+    ],
+    "versuch": "Cette semaine, prends une règle qui t’agace et demande-toi : à quoi sert-elle, et qui protège-t-elle ? Tu n’as pas à la trouver bien ensuite.",
+    "probe": "Mehdi trouve injuste qu’au centre de jeunes, on doive arrêter le babyfoot dès 18 h. Que pourrait découvrir Mehdi avec le test de la règle ?"
+   }
+  }
  },
  {
   "id": "j:ungeschriebene-regeln",
@@ -3046,7 +3466,37 @@
    ]
   },
   "kurz": "3 Szenenkarten · beobachten, abwarten oder nachfragen · Tipps für Neue",
-  "vorbereitung": "Szenen: Pause · Mach mal kurz · Handy · Anrede · pünktlich · Aufräumen; Handkarten: beobachten · abwarten · nachfragen"
+  "vorbereitung": "Szenen: Pause · Mach mal kurz · Handy · Anrede · pünktlich · Aufräumen; Handkarten: beobachten · abwarten · nachfragen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Praktikum: Pause und Anrede",
+      "text": "Am ersten Praktikumstag weißt du nicht, wo du in der Pause sitzen darfst und ob man den Chef duzt. Du kannst schauen, warten oder fragen."
+     },
+     {
+      "kurz": "Kantine: Tablett abstellen",
+      "text": "An deinem ersten Tag im neuen Lycée weißt du nicht, wo man in der Kantine das Tablett abstellt und ob man sich anstellen muss."
+     }
+    ],
+    "versuch": "Wenn dir diese Woche eine Regel unklar ist, such dir eins aus: erst beobachten, kurz abwarten oder nachfragen. Achte, was dir leichter fällt.",
+    "probe": "Inês kommt zum ersten Mal ins Jugendhaus. Keiner sagt ihr, ob man die Schuhe auszieht oder die Musik selbst wählen darf. Was könnte Inês mit „Beobachten, abwarten, nachfragen“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Stage : pause et tutoiement",
+      "text": "Le premier jour de stage, tu ne sais pas où t’asseoir pendant la pause ni si on tutoie le chef. Tu peux observer, attendre ou demander."
+     },
+     {
+      "kurz": "Cantine : le plateau",
+      "text": "Pour ton premier jour dans un nouveau lycée, tu ne sais pas où poser ton plateau à la cantine ni s’il faut faire la queue."
+     }
+    ],
+    "versuch": "Si une règle n’est pas claire cette semaine, choisis-en une : observer, attendre un peu ou demander. Regarde laquelle te convient le mieux.",
+    "probe": "Inês arrive pour la première fois au centre de jeunes. Personne ne lui dit s’il faut enlever ses chaussures ou si chacun peut choisir la musique. Que pourrait faire Inês : observer, attendre ou demander ?"
+   }
+  }
  },
  {
   "id": "j:welche-rolle-spielst-du",
@@ -3241,7 +3691,37 @@
    ]
   },
   "kurz": "Rollenkarten drei Orten zuordnen · Nutzen/Preis · Wunschrolle wählen",
-  "vorbereitung": "8 Karten schreiben: Antreiber · Clown · Ruhepol · Organisator · Kritiker · Vermittler · Mitläufer · Unsichtbarer"
+  "vorbereitung": "8 Karten schreiben: Antreiber · Clown · Ruhepol · Organisator · Kritiker · Vermittler · Mitläufer · Unsichtbarer",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Projekt: Rolle aussuchen",
+      "text": "Bei der Projektarbeit nächste Woche merkst du: Du übernimmst immer die Rolle, die übrig bleibt. Diesmal könntest du dir eine aussuchen."
+     },
+     {
+      "kurz": "Training: Neuer im Team",
+      "text": "Beim Training kommt ein neuer Spieler dazu. Du könntest die Rolle übernehmen, die ihm den Einstieg leichter macht."
+     }
+    ],
+    "versuch": "Such dir diese Woche eine Rolle aus, die du in einer Gruppe öfter haben möchtest (z. B. Vermittler), und mach dafür einen kleinen Schritt.",
+    "probe": "Lara liest im Klassenchat meist nur mit. Beim nächsten Ausflug möchte sie mehr dabei sein. Was könnte Lara mit der Rollenwahl tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Projet : choisir son rôle",
+      "text": "Pour le projet de la semaine prochaine, tu te rends compte que tu prends toujours le rôle qui reste. Cette fois, tu pourrais en choisir un."
+     },
+     {
+      "kurz": "Entraînement : un nouveau",
+      "text": "À l’entraînement, un nouveau joueur arrive. Tu pourrais prendre le rôle qui l’aide à bien s’intégrer."
+     }
+    ],
+    "versuch": "Cette semaine, choisis un rôle que tu aimerais prendre plus souvent dans un groupe (p. ex. médiateur) et fais un petit pas dans ce sens.",
+    "probe": "Lara lit surtout sans rien écrire dans le chat de classe. À la prochaine sortie, elle voudrait participer davantage. Que pourrait faire Lara pour choisir un rôle exprès ?"
+   }
+  }
  },
  {
   "id": "j:nicht-meine-entscheidung",
@@ -3440,7 +3920,37 @@
    ]
   },
   "kurz": "Karte ziehen · fair widersprechen · annehmen · Rollen tauschen",
-  "vorbereitung": "4 Karten: Bank · Wochenende ohne Frage · zugeteilter Partner · Test auf Montag"
+  "vorbereitung": "4 Karten: Bank · Wochenende ohne Frage · zugeteilter Partner · Test auf Montag",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Praktikum: Samstag eingeteilt",
+      "text": "Im Praktikum hängt der neue Plan: Du bist am Samstag eingeteilt, ohne dass jemand gefragt hat. Ändern kannst du es nicht, aber darauf reagieren."
+     },
+     {
+      "kurz": "Referat: Thema zugeteilt",
+      "text": "Für das Referat wird dir ein Thema zugeteilt, das du nicht magst, und alle anderen Themen sind schon vergeben."
+     }
+    ],
+    "versuch": "Wenn dir diese Woche eine Entscheidung nicht passt, frag dich einmal: Was liegt jetzt in meiner Hand? Und mach einen kleinen Schritt daraus.",
+    "probe": "Zoé erfährt, dass der Klassenausflug ins Museum geht statt in den Freizeitpark. Das hat der Lehrer entschieden. Was könnte Zoé mit „Was liegt in meiner Hand?“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Stage : samedi imposé",
+      "text": "En stage, le nouveau planning est affiché : tu travailles samedi, sans que personne t’ait demandé. Tu ne peux pas le changer, mais tu peux réagir."
+     },
+     {
+      "kurz": "Exposé : sujet imposé",
+      "text": "On t’impose pour l’exposé un sujet que tu n’aimes pas, et tous les autres sujets sont déjà pris."
+     }
+    ],
+    "versuch": "Si une décision ne te plaît pas cette semaine, demande-toi une fois : qu’est-ce qui dépend encore de moi ? Puis fais-en un petit pas.",
+    "probe": "Zoé apprend que la sortie de classe ira au musée plutôt qu’au parc d’attractions. C’est le prof qui a décidé. Que pourrait faire Zoé avec « qu’est-ce qui dépend encore de moi ? » ?"
+   }
+  }
  },
  {
   "id": "j:einmal-die-bremse-testen",
@@ -3885,7 +4395,37 @@
    ]
   },
   "kurz": "Gefühlswörter nach Stärke legen · Szenen mit zwei Karten benennen",
-  "vorbereitung": "4 Karten schreiben (froh, wütend, traurig, nervös) und 12 leere Karten für feinere Wörter bereitlegen"
+  "vorbereitung": "4 Karten schreiben (froh, wütend, traurig, nervös) und 12 leere Karten für feinere Wörter bereitlegen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Praktikum: Zusage",
+      "text": "Du bekommst die Zusage für das Praktikum in der Werkstatt, aber es ist weit weg und du kennst dort niemanden."
+     },
+     {
+      "kurz": "Konzert oder Training",
+      "text": "Ein Kumpel lädt dich zu einem Konzert ein, doch am selben Tag ist dein Training. Du freust dich und schwankst zugleich."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einem Ereignis zwei Gefühlswörter zu suchen: „Ich bin …, aber auch …, weil …“. Nur für dich oder laut.",
+    "probe": "Mehdi darf am Wochenende zum ersten Mal in der ersten Mannschaft mitspielen. Er merkt, dass er sich nicht nur freut. Was könnte Mehdi mit „Ich bin …, aber auch …, weil …“ sagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Stage : réponse positive",
+      "text": "Tu reçois la réponse positive pour le stage à l’atelier, mais c’est loin et tu n’y connais personne."
+     },
+     {
+      "kurz": "Concert ou entraînement",
+      "text": "Un pote t’invite à un concert, mais c’est le même jour que ton entraînement. Ça te fait plaisir, mais tu hésites aussi."
+     }
+    ],
+    "versuch": "Cette semaine, face à un événement, cherche une fois deux mots d’émotion : « Je suis …, mais aussi …, parce que … ». Dans ta tête ou à voix haute.",
+    "probe": "Mehdi peut jouer ce week-end pour la première fois avec la première équipe du club. Il sent qu’il n’y a pas que de la joie. Que pourrait dire Mehdi avec « Je suis …, mais aussi …, parce que … » ?"
+   }
+  }
  },
  {
   "id": "j:pruefungsangst-entwirren",
@@ -4091,7 +4631,37 @@
    ]
   },
   "kurz": "Vier Felder füllen · Pfeile zeichnen · Stelle für die Bremse suchen",
-  "vorbereitung": "Vier Felder aufs Blatt zeichnen: Körper · Gedanke · Gefühl · Handlung"
+  "vorbereitung": "Vier Felder aufs Blatt zeichnen: Körper · Gedanke · Gefühl · Handlung",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Test morgen: Nervosität steigt",
+      "text": "Morgen steht ein Französischtest an, und du schiebst das Lernen vor dir her, während du immer nervöser wirst."
+     },
+     {
+      "kurz": "Vorstellungsgespräch: Aufregung",
+      "text": "Am Donnerstag hast du ein Vorstellungsgespräch für die Lehrstelle, und schon beim Gedanken daran wird dir flau."
+     }
+    ],
+    "versuch": "Probier diese Woche vor etwas Wichtigem einmal eine Bremse: einen anderen Gedanken, eine Minute langsam ausatmen oder einen kleinen Schritt.",
+    "probe": "Lara hat morgen eine Mathearbeit. Sie denkt: „Das klappt bestimmt nicht“, hört auf zu lernen und wird noch nervöser. Wo könnte Lara mit „Kreislauf bremsen“ ansetzen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Interro demain : stress",
+      "text": "Demain, tu as une interro de français, et tu repousses les révisions tout en sentant le stress monter."
+     },
+     {
+      "kurz": "Entretien : stress",
+      "text": "Jeudi, tu as un entretien pour une place d’apprentissage, et rien que d’y penser, tu as l’estomac noué."
+     }
+    ],
+    "versuch": "Cette semaine, avant quelque chose d’important, essaie une fois un frein : une autre pensée, une minute d’expiration lente ou un petit pas.",
+    "probe": "Lara a un contrôle de maths demain. Elle pense : « Ça ne marchera pas », arrête de réviser et devient encore plus nerveuse. Où Lara pourrait-elle freiner le cercle ?"
+   }
+  }
  },
  {
   "id": "j:nachricht-entschaerfen",
@@ -4286,7 +4856,37 @@
    ]
   },
   "kurz": "Eine Nachricht heiß, warm, cool sagen · Reaktion hören · eine wählen",
-  "vorbereitung": "Lage notieren: Kumpel gibt Ladekabel nicht zurück · drei Fassungen: heiß · warm · cool"
+  "vorbereitung": "Lage notieren: Kumpel gibt Ladekabel nicht zurück · drei Fassungen: heiß · warm · cool",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: Notizen zurückfordern",
+      "text": "Eine Freundin hat seit einer Woche deine Mathe-Notizen und gibt sie nicht zurück. Du willst ihr eine heftige Nachricht schicken."
+     },
+     {
+      "kurz": "Praktikum: Pause verschoben",
+      "text": "Im Praktikum hat dein Betreuer zum zweiten Mal deine Pause verschoben, ohne zu fragen. Du willst sagen, was dich nervt, ohne dass es kracht."
+     }
+    ],
+    "versuch": "Wenn dich diese Woche etwas nervt, schreib die Nachricht einmal heiß und dann eine Stufe kühler: was nervt, was du brauchst. Senden musst du nicht.",
+    "probe": "Diogo wartet seit zwei Wochen darauf, dass Yanis ihm die geliehene Powerbank zurückgibt. Er ist genervt. Wie könnte Diogo seine Nachricht „eine Stufe kühler“ formulieren?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : notes à récupérer",
+      "text": "Une amie a tes notes de maths depuis une semaine et ne les rend pas. Tu as envie de lui envoyer un message bien musclé."
+     },
+     {
+      "kurz": "Stage : pause décalée",
+      "text": "En stage, ton responsable a décalé ta pause pour la deuxième fois sans te demander. Tu veux dire ce qui te dérange, sans que ça parte en dispute."
+     }
+    ],
+    "versuch": "Cette semaine, écris un message énervé d’abord « chaud », puis un cran plus cool : ce qui t’énerve, ce qu’il te faut. Pas besoin de l’envoyer.",
+    "probe": "Diogo attend depuis deux semaines que Yanis lui rende sa batterie externe. Il est agacé. Comment Diogo pourrait-il écrire son message un cran plus cool ?"
+   }
+  }
  },
  {
   "id": "j:zwischen-zwei-stuehlen",
@@ -4508,7 +5108,37 @@
    ]
   },
   "kurz": "Streit anhören · drei Satzarten testen · Rollen tauschen",
-  "vorbereitung": "Karte mit Pols Nachricht: „Der Reifen war vorher schon weich“; 3 Karten: Gefühl · beide Seiten · Vorschlag"
+  "vorbereitung": "Karte mit Pols Nachricht: „Der Reifen war vorher schon weich“; 3 Karten: Gefühl · beide Seiten · Vorschlag",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Jugendhaus: Streit um Playlist",
+      "text": "Im Jugendhaus streiten sich zwei deiner Freunde, wer die Playlist bestimmt, und beide schauen dich an: „Sag du mal!“"
+     },
+     {
+      "kurz": "Training: Streit ums Tor",
+      "text": "Vor dem Training streiten zwei Freunde, wer heute im Tor stehen darf, und beide wollen, dass du ihnen recht gibst."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal einen Schlichter-Satz, wenn zwei aneinandergeraten: das Gefühl benennen oder etwas vorschlagen, ohne Partei zu ergreifen.",
+    "probe": "Yanis und Zoé streiten im Bus um den letzten Fensterplatz, und beide schauen zu Sofia. Was könnte Sofia mit „Gefühl benennen, keine Partei ergreifen, Vorschlag machen“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Centre de jeunes : playlist",
+      "text": "Au centre de jeunes, deux de tes potes se disputent pour choisir la playlist, et tous les deux te regardent : « Dis-lui, toi ! »"
+     },
+     {
+      "kurz": "Entraînement : qui au but",
+      "text": "Avant l’entraînement, deux amis se disputent pour savoir qui joue dans les buts, et chacun veut que tu lui donnes raison."
+     }
+    ],
+    "versuch": "Si deux personnes se disputent cette semaine, essaie une phrase d’apaisement : nommer l’émotion ou proposer quelque chose, sans prendre parti.",
+    "probe": "Yanis et Zoé se disputent dans le bus pour la dernière place côté fenêtre, et tous les deux regardent Sofia. Que pourrait faire Sofia : nommer l’émotion, ne pas prendre parti, proposer ?"
+   }
+  }
  },
  {
   "id": "j:zehn-chips-fuer-meine-werte",
@@ -4908,7 +5538,37 @@
    ]
   },
   "kurz": "2 Wertekarten · Nachrichtenart wählen · Sprachnachricht testen",
-  "vorbereitung": "8 Karten: Humor · Zuhören · Ehrlichkeit · sich melden · Verlässlichkeit · Zeit zusammen · Hobbys · Geheimnisse bewahren"
+  "vorbereitung": "8 Karten: Humor · Zuhören · Ehrlichkeit · sich melden · Verlässlichkeit · Zeit zusammen · Hobbys · Geheimnisse bewahren",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: alter Kumpel",
+      "text": "Ein Kumpel aus deiner alten Klasse hat sich lange nicht gemeldet. Du siehst sein Profilbild und überlegst, ob du ihm schreibst."
+     },
+     {
+      "kurz": "Nach dem Praktikum: Kontakt",
+      "text": "Im Praktikum hast du jemanden kennengelernt, mit dem du gut lachen konntest. Jetzt ist es vorbei, und ihr schreibt euch nicht mehr."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal eine kurze, echte Nachricht, die an etwas Gemeinsames anknüpft (ein Spiel, ein Witz). Eine Antwort muss nicht kommen.",
+    "probe": "Luca fährt seit dem Schulwechsel nicht mehr im selben Bus wie Inês. Er hat ein altes Foto von ihrem Ausflug gefunden. Was könnte Luca ihr mit einem Kontaktsatz schreiben?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : un ancien pote",
+      "text": "Un pote de ton ancienne classe ne s’est plus manifesté depuis longtemps. Tu vois sa photo de profil et tu hésites à lui écrire."
+     },
+     {
+      "kurz": "Après le stage : écrire",
+      "text": "En stage, tu as rencontré quelqu’un avec qui tu rigolais bien. Le stage est fini, et vous ne vous écrivez plus."
+     }
+    ],
+    "versuch": "Cette semaine, écris à quelqu’un un court message sincère qui rappelle quelque chose de commun, p. ex. un match ou une blague. Pas besoin de réponse.",
+    "probe": "Depuis son changement d’école, Luca ne prend plus le même bus qu’Inês. Il a retrouvé une vieille photo de leur sortie. Que pourrait lui écrire Luca avec un message de contact ?"
+   }
+  }
  },
  {
   "id": "j:in-ein-gespraech-einsteigen",
@@ -5089,7 +5749,37 @@
    ]
   },
   "kurz": "Chat auf Karte lesen · drei Einstiege testen · Rollen tauschen",
-  "vorbereitung": "Chat auf Karte schreiben: Ana „Konzert: Wahnsinn!“ · Pol „Vorband schlimm, Schluss top“; zweite Karte leer"
+  "vorbereitung": "Chat auf Karte schreiben: Ana „Konzert: Wahnsinn!“ · Pol „Vorband schlimm, Schluss top“; zweite Karte leer",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Klassenchat: Spiel von gestern",
+      "text": "Im Klassenchat schreiben drei Leute über das Spiel von gestern Abend, und du hast auch etwas dazu zu sagen, bleibst aber still."
+     },
+     {
+      "kurz": "Kantine: Serien-Gespräch",
+      "text": "In der Kantine reden die anderen am Tisch über eine Serie, die du auch kennst. Du weißt nicht, wie du einsteigen sollst."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, in ein laufendes Gespräch einzusteigen: anknüpfen, eine echte Frage stellen oder etwas Eigenes sagen. Eins davon reicht.",
+    "probe": "Zoé sieht im Chat vom Verein, wie Mehdi und Diogo über ein neues Spiel schreiben, das sie auch kennt. Sie hat dort noch nie geschrieben. Was könnte Zoé mit dem Einstieg ins Gespräch tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : le match d’hier",
+      "text": "Dans le chat de classe, trois personnes parlent du match d’hier soir. Tu as aussi quelque chose à dire, mais tu ne dis rien."
+     },
+     {
+      "kurz": "Cantine : discussion série",
+      "text": "À la cantine, les autres parlent d’une série que tu connais aussi. Tu es là, à table, et tu ne sais pas comment te lancer."
+     }
+    ],
+    "versuch": "Cette semaine, essaie une fois de te lancer dans une conversation : rebondir, poser une vraie question ou dire quelque chose de toi. Un seul suffit.",
+    "probe": "Dans le chat du club, Zoé voit Mehdi et Diogo parler d’un nouveau jeu qu’elle connaît aussi. Elle n’a jamais écrit dans ce chat. Comment Zoé pourrait-elle entrer dans l’échange ?"
+   }
+  }
  },
  {
   "id": "j:lob-mit-inhalt",
@@ -5266,7 +5956,37 @@
    ]
   },
   "kurz": "Schwache Rückmeldungen lesen · vier Situationen, konkreter Satz",
-  "vorbereitung": "4 Karten schreiben: nice · gut gemacht · passt schon · wird schon wieder; 4 Situationen notieren"
+  "vorbereitung": "4 Karten schreiben: nice · gut gemacht · passt schon · wird schon wieder; 4 Situationen notieren",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Training: Pass gelungen",
+      "text": "Nach dem Training hat dein Mitspieler zum ersten Mal einen schwierigen Pass gespielt. Du willst nicht nur „nice“ sagen."
+     },
+     {
+      "kurz": "Praktikum: Telefonat gemeistert",
+      "text": "Im Praktikum hat eine andere Praktikantin eine Kundin am Telefon super beruhigt. Du willst ihr sagen, was genau gut war, nicht nur „gut gemacht“."
+     }
+    ],
+    "versuch": "Sag diese Woche einmal jemandem in einem Satz ganz konkret, was gut war, z. B. „Dein Tipp hat mir geholfen, weil …“. Sag nur, was stimmt.",
+    "probe": "Yanis hat mehrere Abende an einem Modell für das Kunstprojekt gebaut, und es ist wirklich gut geworden. Sofia will ihm mehr als „nice“ sagen. Was könnte Sofia mit dem konkreten Lob sagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Entraînement : belle passe",
+      "text": "Après l’entraînement, ton coéquipier a réussi pour la première fois une passe difficile. Tu ne veux pas juste dire « top »."
+     },
+     {
+      "kurz": "Stage : appel bien géré",
+      "text": "En stage, une autre stagiaire a super bien calmé une cliente au téléphone. Tu veux lui dire ce qui était bien, pas juste « bien joué »."
+     }
+    ],
+    "versuch": "Cette semaine, dis à quelqu’un en une phrase concrète ce qui était bien, p. ex. « Ton astuce m’a aidé parce que … ». Seulement ce qui est vrai.",
+    "probe": "Yanis a passé plusieurs soirs sur une maquette pour le projet d’arts, et elle est vraiment réussie. Sofia voudrait lui dire plus que « top ». Que pourrait dire Sofia avec le compliment concret ?"
+   }
+  }
  },
  {
   "id": "j:wer-hat-was-beigetragen",
@@ -5466,7 +6186,37 @@
     }
    ]
   },
-  "kurz": "Abspann aus Karten · sichtbar/unsichtbar sortieren · „Ohne dich …“"
+  "kurz": "Abspann aus Karten · sichtbar/unsichtbar sortieren · „Ohne dich …“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Schulfest: Wechselgeld",
+      "text": "Am Ende des Schulfests baut ihr den Stand ab. Einer hat den ganzen Tag das Wechselgeld organisiert, und kaum jemand hat es bemerkt."
+     },
+     {
+      "kurz": "Band: Proberaum organisiert",
+      "text": "Nach dem Konzert der Schulband sagen alle „Super gespielt!“. Aber ohne die Person, die den Proberaum organisiert hat, hätte es das nicht gegeben."
+     }
+    ],
+    "versuch": "Sag diese Woche einmal jemandem: „Ohne dich …“ und nenn dabei einen Beitrag, den sonst keiner sieht. Ein Satz reicht.",
+    "probe": "Luca und seine Gruppe haben die Präsentation fürs Schulfest geschafft. Mehdi hat vorher die ganze Musik rausgesucht und geschnitten, doch das hat keiner erwähnt. Was könnte Luca ihm mit dem Ohne-dich-Satz sagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Fête d’école : monnaie",
+      "text": "À la fin de la fête de l’école, vous démontez le stand. Quelqu’un s’est occupé de la monnaie toute la journée, et presque personne ne l’a remarqué."
+     },
+     {
+      "kurz": "Concert : salle réservée",
+      "text": "Après le concert du groupe de l’école, tout le monde dit « Bravo ! ». Mais sans la personne qui a réservé la salle de répétition, rien n’aurait eu lieu."
+     }
+    ],
+    "versuch": "Cette semaine, dis une fois à quelqu’un : « Sans toi … » en nommant un apport que personne ne voit. Une phrase suffit.",
+    "probe": "Luca et son groupe ont réussi la présentation pour la fête de l’école. Mehdi avait cherché et monté toute la musique avant, mais personne n’en parle. Que pourrait dire Luca à Mehdi avec « Sans toi … » ?"
+   }
+  }
  },
  {
   "id": "j:sechs-gruende-fuer-keine-antwort",
@@ -5659,7 +6409,37 @@
    ]
   },
   "kurz": "Sechs Gründe sammeln · würfeln · Gefühl und Reaktion durchspielen",
-  "vorbereitung": "Gründe 1–6 aufs Blatt: sauer · Lernstress · Akku leer · vergessen · weiß nichts zu schreiben · will Ruhe"
+  "vorbereitung": "Gründe 1–6 aufs Blatt: sauer · Lernstress · Akku leer · vergessen · weiß nichts zu schreiben · will Ruhe",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Praktikum: Betreuer grüßt nicht",
+      "text": "Dein Betreuer im Praktikum hat dich heute nicht gegrüßt und kaum angeschaut. Dein Kopf sagt schon: Er ist unzufrieden mit mir."
+     },
+     {
+      "kurz": "Bus: Kumpel setzt sich weg",
+      "text": "Im Bus setzt sich dein Kumpel plötzlich weiter hinten hin, obwohl neben dir noch Platz war. Du fragst dich, was das heißen soll."
+     }
+    ],
+    "versuch": "Wenn dir diese Woche jemand komisch vorkommt, sammle erst drei mögliche Gründe, bevor du einen glaubst. Aufschreiben oder im Kopf – wie du magst.",
+    "probe": "Inês schreibt Diogo wegen einer Matheaufgabe, und er antwortet nur mit „ok“. Sie denkt sofort, dass er sauer ist. Was könnte Inês mit „Mehrere Gründe sammeln“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Stage : pas de bonjour",
+      "text": "Ton responsable de stage ne t’a pas dit bonjour aujourd’hui et t’a à peine regardé. Dans ta tête, c’est déjà : il n’est pas content de moi."
+     },
+     {
+      "kurz": "Bus : il s’assoit ailleurs",
+      "text": "Dans le bus, ton pote s’assoit soudain plus loin, alors qu’il y avait de la place à côté de toi. Tu te demandes ce que ça veut dire."
+     }
+    ],
+    "versuch": "Si quelqu’un te paraît bizarre cette semaine, cherche d’abord trois raisons possibles avant d’en croire une. Dans ta tête ou sur papier.",
+    "probe": "Inês écrit à Diogo à propos d’un exercice de maths, et il répond juste « ok ». Elle pense tout de suite qu’il est fâché. Que pourrait faire Inês avec « collecter plusieurs raisons » ?"
+   }
+  }
  },
  {
   "id": "j:der-dominoeffekt",
@@ -5844,7 +6624,37 @@
    ]
   },
   "kurz": "Folgekarten legen · zweite Reihe mit anderem Start · vergleichen",
-  "vorbereitung": "Startkarten schreiben: „Genervt ins Training, Tasche hingeknallt“ und „Sorry, hatte einen miesen Tag“"
+  "vorbereitung": "Startkarten schreiben: „Genervt ins Training, Tasche hingeknallt“ und „Sorry, hatte einen miesen Tag“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Gruppenchat: genervte Sprachnachricht",
+      "text": "Im Chat vom Verein wird ohne dich der Termin geändert, und du willst sofort eine genervte Sprachnachricht schicken."
+     },
+     {
+      "kurz": "Kantine: Tablett hinknallen",
+      "text": "In der Kantine ist dein Lieblingsessen aus, und du willst das Tablett laut auf den Tresen knallen und kräftig schnauben."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, vor einer genervten Reaktion kurz zu fragen: Was setzt das bei den anderen in Gang?",
+    "probe": "Zoé hat eine schlechte Note bekommen und will ihrer Freundin im Bus gleich eine bissige Nachricht schreiben. Was könnte Zoé mit der Domino-Frage tun, bevor sie auf Senden drückt?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : vocal énervé",
+      "text": "Dans le chat du club, on change l’horaire sans te demander, et tu as envie d’envoyer tout de suite un vocal énervé."
+     },
+     {
+      "kurz": "Cantine : plateau claqué",
+      "text": "À la cantine, il n’y a plus ton plat préféré, et tu as envie de claquer ton plateau sur le comptoir en soufflant bruyamment."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, avant de réagir à chaud, de te demander : qu’est-ce que ça déclenche chez les autres ?",
+    "probe": "Zoé a eu une mauvaise note et, dans le bus, elle veut envoyer un message sec à sa copine. Que pourrait faire Zoé avec la question domino avant d’appuyer sur « envoyer » ?"
+   }
+  }
  },
  {
   "id": "j:was-ich-heute-kann",
@@ -6634,7 +7444,37 @@
    ]
   },
   "kurz": "Stempelwörter umdrehen · hilft/nervt notieren · Karte zu sich legen",
-  "vorbereitung": "6 Karten schreiben, Rückseite frei: stur · laut · still · chaotisch · streng · verträumt"
+  "vorbereitung": "6 Karten schreiben, Rückseite frei: stur · laut · still · chaotisch · streng · verträumt",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Gruppenarbeit: der Laute",
+      "text": "In der Gruppenarbeit redet ein Mitschüler dauernd laut dazwischen, und du denkst nur noch: Der nervt einfach."
+     },
+     {
+      "kurz": "Training: „Du bist chaotisch“",
+      "text": "Im Training sagt ein Teamkollege zu dir: „Du bist echt chaotisch.“ Du willst es wegwischen oder dich sofort verteidigen."
+     }
+    ],
+    "versuch": "Achte diese Woche einmal darauf, wenn dich jemandes Art nervt: Wann könnte genau diese Art auch helfen?",
+    "probe": "Sofia findet ihre Mitschülerin Lara „total still“ und denkt, mit ihr kann man nichts anfangen. Was könnte Sofia mit „Zwei Seiten“ herausfinden: Wann hilft Laras Ruhe, wann nervt sie?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Groupe : le bruyant",
+      "text": "Pendant un travail de groupe, un camarade parle fort sans arrêt et couvre les autres, et tu te dis : il m’énerve, c’est tout."
+     },
+     {
+      "kurz": "Au club : l’étiquette",
+      "text": "À l’entraînement, un coéquipier te lance : « Tu es vraiment brouillon. » Tu as envie de l’ignorer ou de te défendre tout de suite."
+     }
+    ],
+    "versuch": "Remarque une fois cette semaine, quand le comportement de quelqu’un t’agace : dans quel cas ce trait pourrait aussi aider ?",
+    "probe": "Sofia trouve sa camarade Lara « super silencieuse » et pense qu’on ne peut rien faire avec elle. Que pourrait voir Sofia avec « les deux faces » : quand le calme de Lara aide, quand il agace ?"
+   }
+  }
  },
  {
   "id": "j:zwischen-den-zeilen-hoeren",
@@ -6847,7 +7687,37 @@
    ]
   },
   "kurz": "Satz in vier Gefühlen sprechen · raten · Signal nennen · tauschen",
-  "vorbereitung": "4 Zettel mit Gefühlswörtern beschriften: erleichtert · verletzt · genervt · ironisch"
+  "vorbereitung": "4 Zettel mit Gefühlswörtern beschriften: erleichtert · verletzt · genervt · ironisch",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: knappes „Ok.“",
+      "text": "Du schreibst einer Freundin aus dem Verein, und sie antwortet nur mit „Ok.“. Du fragst dich, ob sie sauer auf dich ist."
+     },
+     {
+      "kurz": "Bus: „Passt schon“",
+      "text": "Im Bus sagt ein Freund „Passt schon“, schaut aber aus dem Fenster und antwortet kaum. Du weißt nicht, ob etwas ist."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einem unklaren „Passt schon“ nachzufragen: „Meinst du das so, oder ist etwas?“",
+    "probe": "Diogo bekommt von Mehdi im Chat nur „Mhm, mach, was du willst.“ und sieht ihn später mit verschränkten Armen. Was könnte Diogo mit „Nachfragen statt Raten“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : réponse sèche",
+      "text": "Tu écris à une copine du club et elle répond seulement « Ok. ». Tu te demandes si elle est fâchée contre toi."
+     },
+     {
+      "kurz": "Bus : un ami évasif",
+      "text": "Dans le bus, un ami dit « Ça va » mais regarde par la fenêtre et répond à peine. Tu ne sais pas s’il y a un souci."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, devant un « ça va » pas clair, de demander : « Tu le penses vraiment, ou il y a un souci ? »",
+    "probe": "Diogo reçoit de Mehdi seulement « Mouais, fais ce que tu veux. » dans le chat et le voit ensuite les bras croisés. Que pourrait faire Diogo avec « demander plutôt que deviner » ?"
+   }
+  }
  },
  {
   "id": "j:nein-sagen-ohne-einzuknicken",
@@ -7062,7 +7932,37 @@
    ]
   },
   "kurz": "Linie kleben · Antworten einordnen · Nein-Szene mit Stopp-Zeichen",
-  "vorbereitung": "Klebeband-Linie legen: zu weich · klar · zu hart; 3 Beispielantworten auf Zettel schreiben"
+  "vorbereitung": "Klebeband-Linie legen: zu weich · klar · zu hart; 3 Beispielantworten auf Zettel schreiben",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Umkleide: Geld leihen",
+      "text": "Vor dem Sport fragt dich ein Mitschüler zum dritten Mal, ob du ihm Geld für den Kiosk leihst. Du willst das nicht mehr."
+     },
+     {
+      "kurz": "Praktikum: Dienst übernehmen",
+      "text": "Im Praktikum bittet dich ein Kollege schon wieder, seinen Lagerdienst zu übernehmen, obwohl das nicht deine Aufgabe ist."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einer kleinen Bitte freundlich „Nein, das mache ich nicht“ zu sagen, ohne zu erklären, warum.",
+    "probe": "Yanis bittet Inês im Bus schon wieder, ihm für die ganze Fahrt ihre Kopfhörer zu leihen. Sie will nicht. Was könnte Inês mit dem Freundlichen Nein sagen, ohne sich zu rechtfertigen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Vestiaire : prêter de l’argent",
+      "text": "Avant le sport, un camarade te demande pour la troisième fois de lui prêter de l’argent pour le kiosque. Tu n’en as plus envie."
+     },
+     {
+      "kurz": "Stage : reprendre son service",
+      "text": "En stage, un collègue te demande encore de faire son service au dépôt, alors que ce n’est pas ta tâche."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de dire poliment « Non, je ne le fais pas » à une petite demande, sans expliquer pourquoi.",
+    "probe": "Yanis demande encore à Inês, dans le bus, de lui prêter ses écouteurs pour tout le trajet. Elle n’en a pas envie. Que pourrait faire Inês avec le non aimable, sans se justifier ?"
+   }
+  }
  },
  {
   "id": "j:sorgen-sortieren",
@@ -7267,7 +8167,37 @@
    ]
   },
   "kurz": "Sorgen auf Zettel · in zwei Kreise sortieren · kleinster Schritt",
-  "vorbereitung": "Zwei Kreise ineinander zeichnen: innen „kann ich beeinflussen“, außen „kann ich nicht beeinflussen“"
+  "vorbereitung": "Zwei Kreise ineinander zeichnen: innen „kann ich beeinflussen“, außen „kann ich nicht beeinflussen“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Studierzeit: Gedanken kreisen",
+      "text": "In der Studierzeit kreisen dir drei Dinge im Kopf: der Test übermorgen, ob es am Samstag regnet und ob der Trainer dich aufstellt."
+     },
+     {
+      "kurz": "Chat: keine Antwort",
+      "text": "Du hast einem Freund geschrieben, und er antwortet seit heute Morgen nicht. Im Bus gehen dir die Gedanken dazu im Kreis."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einem kreisenden Gedanken zu prüfen: Kann ich da etwas tun – oder nicht? Wenn ja, nur den kleinsten Schritt.",
+    "probe": "Lara wartet auf die Note ihrer Mathe-Arbeit und überlegt ständig, was die Lehrerin wohl denkt. Auf ihre Anmeldung im Verein hat sie auch noch keine Antwort. Was könnte Lara mit den Sorgen-Kreisen tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Étude : pensées en boucle",
+      "text": "À l’étude, trois choses tournent dans ta tête : le test d’après-demain, la pluie possible samedi et si l’entraîneur te fera jouer."
+     },
+     {
+      "kurz": "Chat : pas de réponse",
+      "text": "Tu as écrit à un ami et il ne répond plus depuis ce matin. Dans le bus, tes pensées tournent en rond."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, devant une pensée qui tourne en boucle, de te demander : puis-je agir ou non ? Si oui, fais juste le plus petit pas.",
+    "probe": "Lara attend la note de son interro de maths et se demande ce que la prof en pense. Elle n’a pas non plus de réponse à son inscription au club. Que pourrait faire Lara avec les cercles de soucis ?"
+   }
+  }
  },
  {
   "id": "j:ein-wort-genauer",
@@ -7705,7 +8635,37 @@
    ]
   },
   "kurz": "Aussage lesen · Kreuz setzen · Gegenposition nachsprechen",
-  "vorbereitung": "Linie quer aufs Blatt: „stimme gar nicht zu“ bis „stimme voll zu“; 3–4 Aussagen zum Vorlesen notieren"
+  "vorbereitung": "Linie quer aufs Blatt: „stimme gar nicht zu“ bis „stimme voll zu“; 3–4 Aussagen zum Vorlesen notieren",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Klassenrat: Handyregel",
+      "text": "Im Klassenrat sagt ein Mitschüler, Handys sollten in der Pause erlaubt sein. Du bist dagegen und willst sofort widersprechen."
+     },
+     {
+      "kurz": "Kantine: Streit ums Spiel",
+      "text": "In der Kantine will ein Freund unbedingt ein anderes Spiel zocken als du. Deine Antwort ist fertig, bevor er zu Ende gesprochen hat."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einer Meinungsverschiedenheit zuerst zu sagen: „Du meinst also …, weil …?“ Erst dann antworten.",
+    "probe": "Mehdi möchte, dass der Jugendtreff länger offen bleibt, Sofia sieht keinen Grund dafür. Ihre Antwort steht schon. Was könnte Sofia mit „Erst zusammenfassen“ tun, bevor sie antwortet?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Classe : règle du portable",
+      "text": "En heure de classe, un camarade dit que les portables devraient être permis à la récré. Tu n’es pas d’accord et tu veux répondre tout de suite."
+     },
+     {
+      "kurz": "Cantine : quel jeu ?",
+      "text": "À la cantine, un ami veut absolument jouer à un autre jeu que toi. Ta réponse est prête avant même qu’il ait fini sa phrase."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, dans un désaccord, de dire d’abord : « Tu penses donc que … parce que … ? » Réponds seulement après.",
+    "probe": "Mehdi veut que le club de jeunes reste ouvert plus longtemps, Sofia n’en voit pas l’intérêt. Elle a déjà sa réponse. Que pourrait faire Sofia avec « d’abord résumer » avant de répondre ?"
+   }
+  }
  },
  {
   "id": "j:staerkste-gegenseite",
@@ -7888,7 +8848,37 @@
    ]
   },
   "kurz": "Meinung in einem Satz · Gegenseite vertreten · Werte dahinter legen",
-  "vorbereitung": "Themen: Schule erst um neun · Noten abschaffen · Schuluniform; Werte: Freiheit · Sicherheit · Gerechtigkeit · Gesundheit"
+  "vorbereitung": "Themen: Schule erst um neun · Noten abschaffen · Schuluniform; Werte: Freiheit · Sicherheit · Gerechtigkeit · Gesundheit",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Klassendebatte: Hausaufgaben",
+      "text": "In der Klasse wird diskutiert, ob Hausaufgaben abgeschafft werden sollen. Du bist dafür und hörst bei den Gegenargumenten kaum zu."
+     },
+     {
+      "kurz": "Jugendtreff: Musik leiser",
+      "text": "Im Jugendtreff soll die Musik ab 19 Uhr leiser sein. Du findest das unfair und verdrehst schon die Augen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einer Meinung, die du blöd findest, zu fragen: Was ist den anderen dabei wohl wichtig?",
+    "probe": "Luca will im Jugendtreff mehr Turniere, Zoé mehr ruhige Treffen. Beide finden die Idee des anderen schwach. Was könnte Luca mit „Gegenseite stark machen“ tun, bevor er antwortet?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "En classe : devoirs supprimés",
+      "text": "En classe, on débat pour savoir si les devoirs doivent disparaître. Tu es pour et tu écoutes à peine les arguments contraires."
+     },
+     {
+      "kurz": "Club de jeunes : musique",
+      "text": "Au club de jeunes, la musique doit être plus basse dès 19 h. Tu trouves ça injuste et tu lèves déjà les yeux au ciel."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, devant un avis qui t’agace, de te demander : qu’est-ce qui compte pour l’autre dans cette idée ?",
+    "probe": "Luca veut plus de tournois au club de jeunes, Zoé plus de moments calmes. Chacun trouve l’idée de l’autre faible. Que pourrait faire Luca avec « défendre l’autre camp » avant de répondre ?"
+   }
+  }
  },
  {
   "id": "j:chatstreit-zwei-seiten",
@@ -8092,7 +9082,37 @@
    ]
   },
   "kurz": "Chat zweimal lesen · Unausgesprochenes notieren · Entschärfer",
-  "vorbereitung": "Kurzen Chat (5 Zeilen) schreiben: Einladung · „Ne, hab Besseres vor.“ · „Wie immer.“ · „Vergiss es.“"
+  "vorbereitung": "Kurzen Chat (5 Zeilen) schreiben: Einladung · „Ne, hab Besseres vor.“ · „Wie immer.“ · „Vergiss es.“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: Vorwurf einer Freundin",
+      "text": "Im Chat schreibt eine Freundin „Na toll, wieder abgesagt“, nachdem du einen Termin gecancelt hast. Du willst sofort zurückschreiben, was sie nie tut."
+     },
+     {
+      "kurz": "Referat-Chat: Vorwurf",
+      "text": "In der Chatgruppe fürs Referat schreibt jemand: „Ich mach wieder alles alleine.“ Du fühlst dich angegriffen und tippst schon los."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, eine ärgerliche Nachricht erst zu lesen, kurz zu warten und dann ohne Vorwurf zu antworten.",
+    "probe": "Noah schreibt Amira im Chat: „Du liest meine Nachrichten ja nie.“ Amira war aber den ganzen Tag beim Training. Was könnte Amira mit „Ruhig zurückschreiben“ antworten?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : reproche d’une amie",
+      "text": "Dans le chat, une amie écrit « Super, encore annulé » après que tu as annulé un rendez-vous. Tu as envie de lui renvoyer tout ce qu’elle ne fait jamais."
+     },
+     {
+      "kurz": "Projet : message sec",
+      "text": "Dans le groupe de chat pour l’exposé, quelqu’un écrit : « Je fais encore tout tout seul. » Tu te sens visé et tu tapes déjà ta réponse."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de lire un message agaçant, d’attendre un instant, puis de répondre sans reproche.",
+    "probe": "Noah écrit à Amira dans le chat : « Tu ne lis jamais mes messages. » Or Amira était à l’entraînement toute la journée. Que pourrait répondre Amira avec « répondre calmement » ?"
+   }
+  }
  },
  {
   "id": "j:was-steckt-hinter-dem-satz",
@@ -8287,7 +9307,37 @@
    ]
   },
   "kurz": "Würfeln · Szene erfinden · zwei Gefühle · hilfreichen Satz testen",
-  "vorbereitung": "6 Sätze 1–6 aufschreiben: „Mir doch egal“ · „Lass mich“ · „War nur Spaß“ · „Kein Bock“ · „Mach doch“ · „Alles gut“"
+  "vorbereitung": "6 Sätze 1–6 aufschreiben: „Mir doch egal“ · „Lass mich“ · „War nur Spaß“ · „Kein Bock“ · „Mach doch“ · „Alles gut“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Bus: „Lass mich einfach“",
+      "text": "Im Bus sagt eine Freundin „Lass mich einfach“, als du sie fragst, wie die Mathe-Arbeit war."
+     },
+     {
+      "kurz": "Praktikum: „Alles gut“",
+      "text": "Im Praktikum sagt eine Kollegin „Alles gut“, seufzt aber und räumt die Regale sehr hastig ein."
+     }
+    ],
+    "versuch": "Achte diese Woche einmal darauf, wenn jemand „Lass mich“ oder „Mir egal“ sagt: Welche zwei Gefühle könnten dahinterstecken?",
+    "probe": "Nach dem Spiel sagt Yanis zu Diogo nur „Dann spielt halt ohne mich“ und zieht die Kapuze hoch. Was könnte Diogo mit „Zwei Gefühle hören“ denken – und welcher Satz würde Yanis jetzt guttun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Bus : phrase sèche",
+      "text": "Dans le bus, une amie te dit « Laisse-moi tranquille » quand tu lui demandes comment s’est passé le devoir de maths."
+     },
+     {
+      "kurz": "Stage : collègue tendue",
+      "text": "En stage, une collègue dit « Tout va bien », mais elle soupire et range les rayons à toute vitesse."
+     }
+    ],
+    "versuch": "Remarque une fois cette semaine, quand quelqu’un dit « laisse-moi » ou « peu importe » : quelles deux émotions pourraient se cacher derrière ?",
+    "probe": "Après le match, Yanis dit à Diogo seulement « Alors jouez sans moi » et remonte sa capuche. Que pourrait penser Diogo avec « deux émotions derrière une phrase », et quelle phrase ferait du bien à Yanis ?"
+   }
+  }
  },
  {
   "id": "j:zeuge-im-chat",
@@ -8481,7 +9531,37 @@
    ]
   },
   "kurz": "Fall hören · drei Prüffragen · Schritte-Leiter · Ansprechperson",
-  "vorbereitung": "Fall notieren: Spottfotos im Gruppenchat, Lach-Emojis, Betroffene schreibt nichts mehr"
+  "vorbereitung": "Fall notieren: Spottfotos im Gruppenchat, Lach-Emojis, Betroffene schreibt nichts mehr",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Teamchat: fieser Witz",
+      "text": "Im Teamchat macht jemand Witze über den Fehlpass eines Mitspielers. Erst lachen alle, dann kommen immer fiesere Sprüche dazu."
+     },
+     {
+      "kurz": "Pause: Spottbild",
+      "text": "In der Pause zeigt jemand ein Spottbild über eine Mitschülerin herum, und die Umstehenden grinsen. Du merkst: Das ist nicht mehr lustig."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einem fiesen Witz im Chat nicht mitzulachen und kein Emoji zu schicken. Ein kleiner Schritt reicht.",
+    "probe": "Sami sieht im Klassenchat, wie Ben ein Foto von Lea mit einem gemeinen Kommentar postet und viele lachen. Was könnte Sami mit „Nicht mitlachen, Hilfe holen“ als kleinen und als größeren Schritt tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat d’équipe : blague cruelle",
+      "text": "Dans le chat de l’équipe, quelqu’un se moque de la passe ratée d’un coéquipier. Tout le monde rit d’abord, puis les remarques deviennent plus méchantes."
+     },
+     {
+      "kurz": "Récré : image moqueuse",
+      "text": "À la récré, quelqu’un fait circuler une image moqueuse sur une camarade, et ceux autour sourient. Tu sens que ce n’est plus drôle."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, devant une blague méchante dans un chat, de ne pas rire ni envoyer d’émoji. Un petit pas suffit.",
+    "probe": "Sami voit dans le chat de classe que Ben poste une photo de Lea avec un commentaire méchant, et beaucoup rient. Que pourrait faire Sami avec « ne pas rire, chercher de l’aide », un petit pas et un plus grand ?"
+   }
+  }
  },
  {
   "id": "j:samstag-planen-ja-und",
@@ -8673,7 +9753,37 @@
     }
    ]
   },
-  "kurz": "Konkret vorschlagen · fremde Idee mit „Ja, und …“ einbauen · tauschen"
+  "kurz": "Konkret vorschlagen · fremde Idee mit „Ja, und …“ einbauen · tauschen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: Wochenende offen",
+      "text": "Im Freundeschat steht seit Mittwoch nur „Und, was machen wir am Wochenende?“, aber keiner schlägt etwas vor."
+     },
+     {
+      "kurz": "Verein: zwei Ideen",
+      "text": "Beim Rausgehen aus der Halle sagt ein Kumpel „Pizza!“ und eine Freundin „Lieber an den See“. Du willst, dass beides irgendwie klappt."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, in einem Chat etwas Konkretes vorzuschlagen (Zeit, Ort, Preis) oder eine fremde Idee mit „Ja, und …“ aufzunehmen.",
+    "probe": "Mia schlägt im Gruppenchat vor: Kino am Freitag. Tom antwortet: „Nee, lieber Bowling.“ Was könnte Mia mit „Ja, und …“ antworten – und was könnte Tom konkret vorschlagen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : week-end vide",
+      "text": "Dans le chat des potes, depuis mercredi il n’y a que « Alors, on fait quoi ce week-end ? », mais personne ne propose rien."
+     },
+     {
+      "kurz": "Au club : deux idées",
+      "text": "En sortant de la salle, un pote lance « Pizza ! » et une amie « Plutôt au lac ». Tu voudrais que les deux idées puissent marcher."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de proposer dans un chat quelque chose de concret (heure, lieu, prix) ou de répondre à une idée par « Oui, et … ».",
+    "probe": "Mia propose dans le chat du groupe : cinéma vendredi. Tom répond : « Bof, plutôt bowling. » Que pourrait répondre Mia avec « Oui, et … », et que pourrait proposer Tom de concret ?"
+   }
+  }
  },
  {
   "id": "j:coach-fuer-zehn-minuten",
@@ -8845,7 +9955,37 @@
     }
    ]
   },
-  "kurz": "Etwas beibringen · Anfänger spielt unbeholfen mit · auswerten · Skala"
+  "kurz": "Etwas beibringen · Anfänger spielt unbeholfen mit · auswerten · Skala",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Training: Übung zeigen",
+      "text": "Im Verein ist ein Neuer dabei und kennt die Passübung nicht. Der Trainer bittet dich, sie ihm kurz zu zeigen."
+     },
+     {
+      "kurz": "Praktikum: Kasse erklären",
+      "text": "Im Praktikum soll eine Neue die Kasse bedienen. Deine Chefin sagt: „Zeig ihr das mal kurz.“"
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, jemandem etwas Kleines zu erklären: erst vormachen, dann in kleinen Schritten, zwischendurch fragen: „Klar so weit?“",
+    "probe": "Diogo soll Inês zeigen, wie die Vereins-App funktioniert. Er erklärt alles auf einmal und sehr schnell. Was könnte Diogo mit „Erklären wie ein Coach“ anders machen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Club : montrer une passe",
+      "text": "Au club, un nouveau ne connaît pas l’exercice de passes. L’entraîneur te demande de le lui montrer rapidement."
+     },
+     {
+      "kurz": "Stage : expliquer la caisse",
+      "text": "En stage, une nouvelle doit apprendre à utiliser la caisse. Ta cheffe te dit : « Montre-lui ça rapidement. »"
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine d’expliquer quelque chose de simple à quelqu’un : le montrer, avancer à petits pas, demander « C’est clair ? »",
+    "probe": "Diogo doit montrer à Inês comment marche l’appli du club. Il explique tout d’un coup et très vite. Que pourrait faire Diogo autrement avec « expliquer comme un coach » ?"
+   }
+  }
  },
  {
   "id": "j:spielerkarte-vorbild",
@@ -9026,7 +10166,37 @@
    ]
   },
   "kurz": "Vorbild wählen · Karte mit vier Verhaltenswerten · einen übertragen",
-  "vorbereitung": "Beispielkarte vorzeichnen mit Verhaltenswerten: ruhig unter Druck · steht zu Fehlern · hilft Neuen"
+  "vorbereitung": "Beispielkarte vorzeichnen mit Verhaltenswerten: ruhig unter Druck · steht zu Fehlern · hilft Neuen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Spiel: ruhig bleiben",
+      "text": "Im Spiel liegt ihr 0:1 zurück, und du merkst, wie du hektisch wirst. Eine Spielerin, die du bewunderst, bleibt in solchen Momenten ruhig."
+     },
+     {
+      "kurz": "Kantine: Neuer allein",
+      "text": "In der Kantine sitzt seit Montag jemand Neues aus deiner Klasse allein am Tisch, und du überlegst, ob du dich dazusetzt."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, einen Wert deines Vorbilds in einer kleinen Situation auszuprobieren, z. B. ruhig bleiben oder jemanden einladen.",
+    "probe": "Jana bewundert eine Rapperin, weil sie immer zu ihren Fehlern steht. Im Praktikum meldet Jana einen Fehler aber lieber nicht. Was könnte Jana mit „Wert vom Vorbild“ tun – wann, wo, bei wem?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Match : rester calme",
+      "text": "Pendant le match, vous êtes menés 0-1 et tu sens que tu t’agites. Une joueuse que tu admires reste calme dans ces moments."
+     },
+     {
+      "kurz": "Cantine : le nouveau",
+      "text": "À la cantine, une personne nouvelle de ta classe est seule à table depuis lundi, et tu hésites à t’asseoir avec elle."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de tester une valeur de ton modèle dans une petite situation, par exemple rester calme ou inviter quelqu’un.",
+    "probe": "Jana admire une rappeuse parce qu’elle assume toujours ses erreurs. En stage, Jana préfère pourtant taire une erreur. Que pourrait faire Jana avec « la valeur du modèle » : quand, où, avec qui ?"
+   }
+  }
  },
  {
   "id": "j:replay-wie-im-sport",
@@ -9189,7 +10359,37 @@
     }
    ]
   },
-  "kurz": "Situation in 4–6 Szenen legen · Wendepunkt finden · Wenn-dann-Regel"
+  "kurz": "Situation in 4–6 Szenen legen · Wendepunkt finden · Wenn-dann-Regel",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Ein Spruch zu viel",
+      "text": "Nach Mathe hast du einem Freund etwas Blödes hinterhergerufen, und er ist wortlos gegangen. Du fragst dich, wie es dazu kam."
+     },
+     {
+      "kurz": "Training: ausgewechselt",
+      "text": "Im Training hast du nach einem Foul zurückgemeckert und wurdest ausgewechselt. Du fragst dich, an welcher Stelle es gekippt ist."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, nach einer Szene, die nicht gut lief, kurz zurückzuspulen: Wo war der Wendepunkt? Was wäre ein anderer Zug gewesen?",
+    "probe": "Luca hat Mia im Chat geschrieben „Dann geh doch ohne mich“, und Mia antwortet nicht mehr. Was könnte Luca mit dem Replay tun: Wo ist der Wendepunkt, und welcher andere Zug wäre besser gewesen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Un mot de trop",
+      "text": "Après les maths, tu as lancé un truc bête à un ami, et il est parti sans un mot. Tu te demandes comment on en est arrivé là."
+     },
+     {
+      "kurz": "Entraînement : sur le banc",
+      "text": "À l’entraînement, tu as répliqué après une faute et on t’a fait sortir. Tu te demandes à quel moment ça a basculé."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, après une scène qui s’est mal passée, de rembobiner : où était le tournant ? Quel autre geste aurais-tu pu choisir ?",
+    "probe": "Luca a écrit à Mia dans le chat : « Alors vas-y sans moi. » Mia ne répond plus. Que pourrait faire Luca avec le replay : où est le tournant, et quel autre geste serait mieux ?"
+   }
+  }
  },
  {
   "id": "j:rollen-im-freundeskreis",
@@ -9417,7 +10617,37 @@
    ]
   },
   "kurz": "Rollenkarten ziehen · Spieleabend planen · Rolle des anderen benennen",
-  "vorbereitung": "6 Rollenkarten schreiben: Ideengeberin · Planer · Vermittlerin · Spaßvogel · Zuhörer · Bremse"
+  "vorbereitung": "6 Rollenkarten schreiben: Ideengeberin · Planer · Vermittlerin · Spaßvogel · Zuhörer · Bremse",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Referat: Wer plant?",
+      "text": "Für das Referat in Geschichte sucht ihr jemanden, der den Plan macht. Sonst hältst du dich zurück – diesmal könntest du es sein."
+     },
+     {
+      "kurz": "Schulfest: Leute ansprechen",
+      "text": "Am Stand deines Vereins beim Schulfest baust du sonst nur still auf. Diesmal könntest du die Leute am Stand ansprechen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal in einer Gruppe eine Rolle aus, die du sonst meidest, z. B. den Plan machen oder einmal nur zuhören.",
+    "probe": "Lea macht im Freundeskreis immer den Spaßvogel. Beim Planen des Ausflugs möchte sie diesmal die Vermittlerin sein. Wie könnte Lea mit dem Rollenwechsel anfangen, ohne dass es komisch wirkt?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Exposé : qui planifie ?",
+      "text": "Pour l’exposé d’histoire, il faut quelqu’un qui fasse le plan. D’habitude tu restes en retrait – cette fois, ce pourrait être toi."
+     },
+     {
+      "kurz": "Stand : accueillir les gens",
+      "text": "Au stand de ton club à la fête de l’école, tu montes d’habitude tout en silence. Cette fois, tu pourrais aborder les gens."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, dans un groupe, un rôle que tu évites d’habitude, par exemple faire le plan ou seulement écouter.",
+    "probe": "Lea fait toujours le clown avec ses amis. Pour préparer la sortie, elle aimerait cette fois être la médiatrice. Comment Lea pourrait-elle commencer son changement de rôle sans que ça fasse bizarre ?"
+   }
+  }
  },
  {
   "id": "j:loesungsfabrik",
@@ -9630,7 +10860,37 @@
    ]
   },
   "kurz": "Wünsche und Gründe tippen · Ideen zu beiden legen · Chat-Satz",
-  "vorbereitung": "2 Karten: vorn Nora „Konzert“, Ben „Heimspiel“; hinten „nicht allein hin“ und „letztes Spiel der Saison“"
+  "vorbereitung": "2 Karten: vorn Nora „Konzert“, Ben „Heimspiel“; hinten „nicht allein hin“ und „letztes Spiel der Saison“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Mittag: Basket oder Handy",
+      "text": "In der Mittagspause willst du Basketball spielen, dein Freund lieber am Handy zocken. Keiner will nachgeben."
+     },
+     {
+      "kurz": "Chat: Kino oder Skatepark",
+      "text": "Im Chat will deine Freundin am Samstag ins Kino, du wolltest eigentlich zum Skatepark. Ihr wollt trotzdem etwas zusammen machen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei zwei verschiedenen Wünschen zu fragen: Was ist dir wichtig, was mir? Dann such eine Idee für beide.",
+    "probe": "Amira will beim Schulfest einen Stand mit Musik, Noah lieber eine Spielecke. Es gibt nur einen Tisch. Was könnte Amira mit dem Beide-Seiten-Check tun, bevor sie Ideen sammelt?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Midi : basket ou jeu",
+      "text": "À midi, tu veux jouer au basket, ton ami préfère jouer sur son téléphone. Aucun de vous deux ne veut céder."
+     },
+     {
+      "kurz": "Chat : cinéma ou skatepark",
+      "text": "Dans le chat, ton amie veut aller au cinéma samedi, toi tu voulais aller au skatepark. Vous voulez quand même faire quelque chose ensemble."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, devant deux envies différentes, de demander : qu’est-ce qui compte pour chacun ? Puis cherche une idée pour les deux.",
+    "probe": "Amira veut un stand de musique à la fête de l’école, Noah plutôt un coin jeux. Il n’y a qu’une table. Que pourrait faire Amira avec le test des deux côtés avant de lancer des idées ?"
+   }
+  }
  },
  {
   "id": "j:richtig-falsch-kommt-drauf-an",
@@ -10027,7 +11287,37 @@
     }
    ]
   },
-  "kurz": "Posts sortieren · Prüffrage finden · Meinung als Fakt tarnen"
+  "kurz": "Posts sortieren · Prüffrage finden · Meinung als Fakt tarnen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Klassenchat: Gerücht",
+      "text": "Im Klassenchat schreibt jemand: „Morgen fällt die Schule aus, hat mir einer gesagt.“ Alle fragen, ob das stimmt."
+     },
+     {
+      "kurz": "Kurzvideo: Versprechen",
+      "text": "In einem Kurzvideo behauptet ein Streamer: „Mit diesen Schuhen läufst du garantiert schneller.“ Dein Kumpel will sie gleich bestellen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal bei einem Post, der dich überrascht, zu fragen: Kann man das nachprüfen? Wer sagt das – und woher weiß er es?",
+    "probe": "Tom liest im Chat: „Das Training am Mittwoch fällt aus, die Halle ist gesperrt.“ Er weiß nicht, von wem das kommt. Was könnte Tom mit den Zwei Prüffragen tun, bevor er es weitersagt?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat de classe : rumeur",
+      "text": "Dans le chat de classe, quelqu’un écrit : « Demain, pas d’école, on me l’a dit. » Tout le monde se demande si c’est vrai."
+     },
+     {
+      "kurz": "Vidéo courte : promesse",
+      "text": "Dans une vidéo courte, un streamer affirme : « Avec ces chaussures, tu cours forcément plus vite. » Ton pote veut les commander tout de suite."
+     }
+    ],
+    "versuch": "Quand un post te surprend, demande-toi une fois cette semaine : peut-on le vérifier ? Qui le dit, et comment le sait-il ?",
+    "probe": "Tom lit dans le chat : « L’entraînement de mercredi est annulé, la salle est fermée. » Il ne sait pas d’où ça vient. Que pourrait faire Tom avec les deux questions de contrôle avant d’en parler ?"
+   }
+  }
  },
  {
   "id": "j:sagen-und-tun",
@@ -10621,7 +11911,37 @@
     }
    ]
   },
-  "kurz": "5 Karten je · reden nur mit Karte · freundlich ins Wort-Stoppen üben"
+  "kurz": "5 Karten je · reden nur mit Karte · freundlich ins Wort-Stoppen üben",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Gruppenarbeit: ins Wort gefallen",
+      "text": "In der Gruppenarbeit fällt dir ein Mitschüler immer wieder ins Wort, noch bevor du deinen Satz beendet hast."
+     },
+     {
+      "kurz": "Training: eigene Geschichte",
+      "text": "Beim Training erzählt eine Teamkollegin etwas, und du hast sofort eine eigene Geschichte im Kopf. Du bist kurz davor, ihr ins Wort zu fallen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, jemanden ganz ausreden zu lassen – und wenn dich jemand unterbricht, freundlich zu sagen: „Lass mich kurz ausreden.“",
+    "probe": "Ben und Mehdi reden im Jugendtreff über das nächste Turnier. Mehdi fällt Ben dauernd ins Wort. Was könnte Ben mit „Lass mich kurz ausreden“ sagen, ohne dass es zum Streit wird?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Groupe : on te coupe",
+      "text": "Pendant le travail de groupe, un camarade te coupe sans cesse la parole avant que tu aies fini ta phrase."
+     },
+     {
+      "kurz": "Entraînement : histoire à raconter",
+      "text": "À l’entraînement, une coéquipière raconte quelque chose et tu as tout de suite ta propre histoire en tête. Tu vas presque lui couper la parole."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de laisser quelqu’un finir et, si on te coupe, de dire gentiment : « Laisse-moi finir. »",
+    "probe": "Ben et Mehdi parlent du prochain tournoi au club de jeunes. Mehdi coupe sans arrêt la parole à Ben. Que pourrait dire Ben avec « Laisse-moi finir » sans que ça tourne à la dispute ?"
+   }
+  }
  },
  {
   "id": "j:der-erste-satz",
@@ -10813,7 +12133,37 @@
    ]
   },
   "kurz": "Einstiegssätze von vorsichtig bis direkt legen · zwei üben",
-  "vorbereitung": "8 Einstiegssätze auf Zettel schreiben: „Bist du nicht auch bei …?“ · „Was hörst du da?“ · „Hey, ich bin …“"
+  "vorbereitung": "8 Einstiegssätze auf Zettel schreiben: „Bist du nicht auch bei …?“ · „Was hörst du da?“ · „Hey, ich bin …“",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Bus: jemanden ansprechen",
+      "text": "Im Bus sitzt öfter dieselbe Person aus deiner Schule in einem Vereins-Hoodie, den du auch kennst. Du würdest sie gern mal ansprechen."
+     },
+     {
+      "kurz": "Verein: jemand Neues",
+      "text": "Im Verein ist seit zwei Wochen jemand Neues dabei, mit dem du gern mehr reden würdest. Beim Aufwärmen steht ihr nebeneinander."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, jemanden mit einer kurzen Frage zur Situation anzusprechen, z. B. „Bist du auch bei …?“, und locker wieder aufzuhören.",
+    "probe": "Sami möchte jemanden aus der Parallelklasse ansprechen, den er aus dem Bus kennt. Er weiß nicht, was er zuerst sagen soll. Was könnte Sami mit „Der erste Satz“ vorbereiten, und wie kann er locker enden?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Bus : aborder quelqu’un",
+      "text": "Dans le bus, tu croises souvent la même personne de ton école, avec un sweat de club que tu connais aussi. Tu aimerais lui parler."
+     },
+     {
+      "kurz": "Club : quelqu’un de nouveau",
+      "text": "Au club, quelqu’un de nouveau est là depuis deux semaines, et tu aimerais discuter avec cette personne. À l’échauffement, vous êtes côte à côte."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine d’aborder quelqu’un avec une petite question sur la situation (« Tu es aussi à … ? »), puis de finir tranquillement.",
+    "probe": "Sami voudrait parler à une personne de la classe d’à côté qu’il croise dans le bus. Il ne sait pas quoi dire en premier. Que pourrait préparer Sami avec « la première phrase », et comment finir tranquillement ?"
+   }
+  }
  },
  {
   "id": "j:eine-regel-aendern",
@@ -10998,7 +12348,37 @@
    ]
   },
   "kurz": "Regelkarte wählen · Verhandlung gespielt · Vorschlag mit Angebot",
-  "vorbereitung": "5 Regelkarten schreiben: Handy aus · Jugendhaus zu um 20 Uhr · letzter Bus 22 Uhr · Kantine bis 13 Uhr · Kappen verboten"
+  "vorbereitung": "5 Regelkarten schreiben: Handy aus · Jugendhaus zu um 20 Uhr · letzter Bus 22 Uhr · Kantine bis 13 Uhr · Kappen verboten",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Studierzeit: Kopfhörer verboten",
+      "text": "In der Studierzeit sind Kopfhörer verboten, aber dir hilft leise Musik beim Konzentrieren. Du möchtest, dass die Aufsicht das erlaubt."
+     },
+     {
+      "kurz": "Praktikum: Arbeitsbeginn",
+      "text": "Im Praktikum beginnt der Tag um 7 Uhr, aber dein Bus kommt erst um 7:10. Du willst fragen, ob du später anfangen darfst."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einer Regel, die dich nervt, zu überlegen: Wozu ist sie da? Welches Angebot könnte ich machen?",
+    "probe": "Yanis möchte, dass der Sportplatz der Schule abends länger offen bleibt. Der Hausmeister schließt um 18 Uhr. Was könnte Yanis mit dem Regel-Angebot sagen: erst den Grund, dann sein Angebot?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Étude : écouteurs interdits",
+      "text": "À l’étude, les écouteurs sont interdits, mais de la musique douce t’aide à te concentrer. Tu voudrais que la personne qui surveille l’autorise."
+     },
+     {
+      "kurz": "Stage : horaire de début",
+      "text": "En stage, la journée commence à 7 h, mais ton bus n’arrive qu’à 7 h 10. Tu veux demander si tu peux commencer plus tard."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, devant une règle qui t’agace, de te demander : à quoi sert-elle ? Quelle offre pourrais-tu faire ?",
+    "probe": "Yanis voudrait que le terrain de sport de l’école reste ouvert plus tard. Le concierge ferme à 18 h. Que pourrait dire Yanis avec la règle-offre : d’abord à quoi elle sert, puis son offre ?"
+   }
+  }
  },
  {
   "id": "j:nachricht-mit-echter-frage",
@@ -11439,7 +12819,37 @@
    ]
   },
   "kurz": "Ablenkungen auf Streifen · zwei Haufen · Gegenmittel 10 Min. testen",
-  "vorbereitung": "Ca. 10 Papierstreifen schneiden; echte Hausaufgabe oder kurzen Zeitungsartikel für den Test bereitlegen"
+  "vorbereitung": "Ca. 10 Papierstreifen schneiden; echte Hausaufgabe oder kurzen Zeitungsartikel für den Test bereitlegen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Studierzeit: Handy brummt",
+      "text": "In der Studierzeit liegt dein Handy auf dem Tisch und brummt, und zwei Plätze weiter reden zwei laut. Du kommst nicht in die Aufgabe."
+     },
+     {
+      "kurz": "Bibliothek: Kopf woanders",
+      "text": "In der Bibliothek willst du für den Test lernen, aber du denkst die ganze Zeit an das Spiel am Abend."
+     }
+    ],
+    "versuch": "Such dir diese Woche einmal vor dem Lernen den stärksten Ablenker und wähle ein Gegenmittel, z. B. das Handy in die Tasche.",
+    "probe": "Mia will in der Mittagspause ein Referat vorbereiten. Ihr Handy leuchtet dauernd auf, und sie denkt ständig an das Konzert am Wochenende. Was könnte Mia mit dem Ablenker-Check tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Étude : le portable vibre",
+      "text": "À l’étude, ton portable vibre sur la table et, deux places plus loin, deux personnes parlent fort. Tu n’arrives pas à entrer dans l’exercice."
+     },
+     {
+      "kurz": "Bibliothèque : tête ailleurs",
+      "text": "À la bibliothèque, tu veux réviser pour le test, mais tu penses tout le temps au match du soir."
+     }
+    ],
+    "versuch": "Avant de réviser, cherche une fois cette semaine la distraction la plus forte et choisis un antidote, par exemple le portable dans ton sac.",
+    "probe": "Mia veut préparer un exposé pendant la pause de midi. Son portable s’allume sans arrêt et elle repense au concert du week-end. Que pourrait faire Mia avec le tri des distractions ?"
+   }
+  }
  },
  {
   "id": "j:parkplatz-fuer-gedanken",
@@ -11624,7 +13034,37 @@
    ]
   },
   "kurz": "8 Min. arbeiten · Störgedanken in 3 Wörtern parken · auswerten",
-  "vorbereitung": "Zweites Blatt „Parkplatz“ beschriften; echte Aufgabe oder Liste mit 10 Wörtern zum Abschreiben bereithalten"
+  "vorbereitung": "Zweites Blatt „Parkplatz“ beschriften; echte Aufgabe oder Liste mit 10 Wörtern zum Abschreiben bereithalten",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Studierzeit: Chat fällt ein",
+      "text": "In der Studierzeit fällt dir mitten in der Aufgabe ein: „Ich muss noch zurückschreiben.“ Du greifst schon zum Handy."
+     },
+     {
+      "kurz": "Praktikum: Gedanken springen",
+      "text": "Im Praktikum sollst du eine Lieferliste abarbeiten, aber dir schießt dauernd etwas anderes durch den Kopf: Mittagessen, Training, ein Chat."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, einen Störgedanken in drei Wörtern auf einen Zettel zu schreiben und gleich weiterzumachen.",
+    "probe": "Jana lernt in der Bibliothek Vokabeln. Alle zwei Minuten fällt ihr etwas anderes ein: Pizza, ein Spiel, eine Nachricht. Was könnte Jana mit dem Gedanken-Parkplatz tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Étude : penser au chat",
+      "text": "À l’étude, au milieu de l’exercice, tu penses : « Je dois encore répondre. » Ta main va déjà vers le portable."
+     },
+     {
+      "kurz": "Stage : esprit qui vagabonde",
+      "text": "En stage, tu dois cocher une liste de livraisons, mais autre chose te traverse l’esprit sans arrêt : le repas, l’entraînement, un chat."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine de noter une pensée parasite en trois mots sur un papier, puis de continuer tout de suite.",
+    "probe": "Jana révise son vocabulaire à la bibliothèque. Toutes les deux minutes, autre chose lui vient : une pizza, un jeu, un message. Que pourrait faire Jana avec le parking à pensées ?"
+   }
+  }
  },
  {
   "id": "j:lernplan-rueckwaerts",
@@ -11833,7 +13273,37 @@
    ]
   },
   "kurz": "Prüfungstag rechts · Stoff in Brocken · rückwärts auf Tage verteilen",
-  "vorbereitung": "Querblatt vorzeichnen: Prüfungstag rechts, 8 Tage nach links; Stoffbrocken (Vokabeln, Probetest) notieren"
+  "vorbereitung": "Querblatt vorzeichnen: Prüfungstag rechts, 8 Tage nach links; Stoffbrocken (Vokabeln, Probetest) notieren",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Geschichtsarbeit in zehn Tagen",
+      "text": "In zehn Tagen schreibst du die Geschichtsarbeit und weißt nicht, wo du anfangen sollst. Bisher hast du immer erst am Vorabend gelernt."
+     },
+     {
+      "kurz": "Projektarbeit: Abgabe naht",
+      "text": "In zwei Wochen ist die Abgabe deiner Projektarbeit, und neben Training und Praktikum wird die Zeit eng."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, für einen Termin rückwärts aufzuschreiben, was an welchem Tag dran ist, mit einem freien Puffertag.",
+    "probe": "Lara hat in elf Tagen eine Matheklausur und lernt immer erst am Vorabend. Dazu hat sie dreimal Training. Was könnte Lara mit dem Rückwärts-Plan als Erstes in ihren Kalender schreiben?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Interro dans dix jours",
+      "text": "Dans dix jours, tu as l’interro d’histoire et tu ne sais pas par où commencer. Jusqu’ici, tu as toujours révisé la veille."
+     },
+     {
+      "kurz": "Projet à rendre bientôt",
+      "text": "Dans deux semaines, tu dois rendre ton projet, et entre l’entraînement et le stage, le temps est serré."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, pour une échéance, de noter à rebours ce qui est prévu chaque jour, avec un jour libre de marge.",
+    "probe": "Lara a un contrôle de maths dans onze jours et ne révise que la veille. En plus, elle a trois entraînements. Que pourrait noter Lara en premier dans son agenda avec le planning à l’envers ?"
+   }
+  }
  },
  {
   "id": "j:abfragen-statt-lesen",
@@ -12012,7 +13482,37 @@
    ]
   },
   "kurz": "5 Min. lesen · Text umdrehen, notieren · 5 Fragekarten · abfragen",
-  "vorbereitung": "Lernstoff oder kurzen Zeitungsartikel (5 Min. Lesen) heraussuchen; 5 Papierstücke für Fragekarten zuschneiden"
+  "vorbereitung": "Lernstoff oder kurzen Zeitungsartikel (5 Min. Lesen) heraussuchen; 5 Papierstücke für Fragekarten zuschneiden",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Bus: Blatt nochmal lesen",
+      "text": "Im Bus zur Schule liest du zum dritten Mal dein Geschichtsblatt durch und denkst: Das kenne ich schon."
+     },
+     {
+      "kurz": "Bibliothek: Vokabelliste",
+      "text": "In der Bibliothek schaust du die Englisch-Vokabeln an und nickst bei jedem Wort. Wenn du die Liste zudeckst, fällt dir fast nichts ein."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, nach dem Lesen das Blatt umzudrehen und fünf Dinge aus dem Kopf aufzuschreiben.",
+    "probe": "Noah liest zum vierten Mal seine Zusammenfassung für den Biotest und fühlt sich sicher. Beim Ausprobieren fällt ihm fast nichts ein. Was könnte Noah mit „Erst aus dem Kopf“ anders machen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Bus : relire la fiche",
+      "text": "Dans le bus, tu relis pour la troisième fois ta fiche d’histoire en te disant : ça, je connais déjà."
+     },
+     {
+      "kurz": "Bibliothèque : liste de vocabulaire",
+      "text": "À la bibliothèque, tu regardes ton vocabulaire d’anglais en hochant la tête à chaque mot. Quand tu caches la liste, presque rien ne te revient."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, après avoir lu, de retourner la feuille et d’écrire cinq choses de mémoire.",
+    "probe": "Noah relit pour la quatrième fois son résumé de bio et se sent sûr de lui. En essayant, presque rien ne lui revient. Que pourrait faire Noah autrement avec « d’abord de mémoire » ?"
+   }
+  }
  },
  {
   "id": "j:blackout-plan",
@@ -12202,7 +13702,37 @@
    ]
   },
   "kurz": "Dreischritt-Karte schreiben · Blackout spielen · Karte durchgehen",
-  "vorbereitung": "Übungsfrage notieren, z. B. „Erkläre, wie ein Gesetz entsteht“; Papierkarte in Mäppchengröße zuschneiden"
+  "vorbereitung": "Übungsfrage notieren, z. B. „Erkläre, wie ein Gesetz entsteht“; Papierkarte in Mäppchengröße zuschneiden",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Klassenarbeit: leerer Kopf",
+      "text": "In der Klassenarbeit liest du die erste Frage, und dein Kopf ist leer, während die anderen schon schreiben."
+     },
+     {
+      "kurz": "Mathetest: festgefahren",
+      "text": "Im Mathetest hängst du an der zweiten Aufgabe fest, und die Zeit läuft. Dein Herz klopft, und du willst alles hinwerfen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, wenn du bei einer Aufgabe hängst, dreimal lang auszuatmen und zur leichtesten Aufgabe zu springen.",
+    "probe": "Sofia starrt in der Französischarbeit auf die erste Frage, und ihr Kopf ist leer. Was könnte Sofia mit dem Blackout-Plan Schritt für Schritt tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Contrôle : feuille vide",
+      "text": "En contrôle, tu lis la première question et ta tête est vide, alors que les autres écrivent déjà."
+     },
+     {
+      "kurz": "Test de maths : bloqué",
+      "text": "Au test de maths, tu bloques sur le deuxième exercice et le temps passe. Ton cœur bat fort et tu as envie de tout lâcher."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, quand tu bloques sur un exercice, d’expirer trois fois lentement et de passer au plus facile.",
+    "probe": "Sofia fixe la première question de son contrôle de français, et sa tête est vide. Que pourrait faire Sofia, étape par étape, avec le plan anti-trou noir ?"
+   }
+  }
  },
  {
   "id": "j:satz-vor-der-pruefung",
@@ -12389,7 +13919,37 @@
    ]
   },
   "kurz": "Sprachnachricht hören · vier Antworten testen · eigene Antwort",
-  "vorbereitung": "4 Karten: Du schaffst das locker · Welches Thema kannst du am besten? · Ist doch nur ein Test · Ich hab auch Panik"
+  "vorbereitung": "4 Karten: Du schaffst das locker · Welches Thema kannst du am besten? · Ist doch nur ein Test · Ich hab auch Panik",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: Freundin ist nervös",
+      "text": "Am Abend vor dem Test schreibt dir eine Freundin: „Ich hab null Plan, das wird nix.“ Du willst etwas zurückschreiben, das nicht leer klingt."
+     },
+     {
+      "kurz": "Vor dem Test: mein Satz",
+      "text": "Kurz vor dem Mathetest sagst du dir im Kopf „Ich schaff das locker“ und glaubst es keine Sekunde."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal vor einer Aufgabe, die dich nervös macht, einen Satz zu finden, den du dir glaubst, z. B. „Ich fange mit dem Ersten an.“",
+    "probe": "Mehdi schreibt Zoé am Abend vor dem Englischtest: „Ich hab null Bock und null Plan.“ Zoé antwortet erst: „Wird schon!“ Was könnte Zoé mit „Ein Satz, den ich glaube“ stattdessen schreiben?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : une amie stressée",
+      "text": "La veille du test, une amie t’écrit : « J’ai aucune idée, ça va être nul. » Tu veux répondre quelque chose qui ne sonne pas creux."
+     },
+     {
+      "kurz": "Ma phrase avant le test",
+      "text": "Juste avant le test de maths, tu te dis dans ta tête « Ça va être facile » et tu n’y crois pas une seconde."
+     }
+    ],
+    "versuch": "Essaie une fois cette semaine, avant une tâche qui te stresse, de trouver une phrase à laquelle tu crois, par exemple « Je commence par le premier. »",
+    "probe": "Mehdi écrit à Zoé la veille du test d’anglais : « J’ai zéro envie et zéro plan. » Zoé répond d’abord « Ça va aller ! ». Que pourrait écrire Zoé à la place, avec « une phrase que je crois » ?"
+   }
+  }
  },
  {
   "id": "j:abend-bis-zum-einschlafen",
@@ -12552,7 +14112,37 @@
     }
    ]
   },
-  "kurz": "Abend-Zeitleiste · Handy markieren · Kipp-Stelle · Wenn-dann-Regel"
+  "kurz": "Abend-Zeitleiste · Handy markieren · Kipp-Stelle · Wenn-dann-Regel",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Abend: Handy im Bett",
+      "text": "Du liegst im Bett und wolltest nur kurz aufs Handy schauen. Plötzlich ist es nach Mitternacht, und morgen früh ist Schule."
+     },
+     {
+      "kurz": "Sportzeug vergessen",
+      "text": "Morgen ist Sport, und deine Sportsachen liegen noch im Schrank. Abends denkst du daran, aber dann kommt der Chat dazwischen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal eine Wenn-dann-Regel aus, z. B.: Wenn ich die Zähne geputzt habe, lege ich das Handy aufs Ladekabel.",
+    "probe": "Zoé schaut abends oft noch bis spät Serien und ist morgens müde. Jeden Abend putzt sie um zehn die Zähne. Welche Wenn-dann-Regel könnte Zoé an diese feste Gewohnheit koppeln?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Le soir, portable au lit",
+      "text": "Tu es au lit et tu voulais juste regarder ton portable deux minutes. Tout à coup il est minuit passé, et demain il y a cours."
+     },
+     {
+      "kurz": "Affaires de sport oubliées",
+      "text": "Demain, il y a sport, et tes affaires sont encore dans l’armoire. Le soir, tu y penses, mais le chat du groupe t’accapare."
+     }
+    ],
+    "versuch": "Essaie cette semaine une règle si-alors, par exemple : si je me suis brossé les dents, je pose mon portable sur le chargeur.",
+    "probe": "Zoé regarde souvent des séries tard le soir et elle est fatiguée le matin. Chaque soir, elle se brosse les dents à dix heures. Quelle règle si-alors Zoé pourrait-elle relier à cette habitude fixe ?"
+   }
+  }
  },
  {
   "id": "j:zurueck-in-kleinen-stufen",
@@ -12750,7 +14340,37 @@
    ]
   },
   "kurz": "Stufenkarten legen · Schwere 0–10 · Stufe wählen · Antwort üben",
-  "vorbereitung": "5 Stufenkarten schreiben: Tasche packen · Schultor · 1 Stunde Lieblingsfach · ganzer Vormittag"
+  "vorbereitung": "5 Stufenkarten schreiben: Tasche packen · Schultor · 1 Stunde Lieblingsfach · ganzer Vormittag",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Basketball nach langer Pause",
+      "text": "Du willst nach langer Pause wieder zum Basketballtraining, aber ein ganzes Training auf einmal ist viel. Welche kleine Stufe käme zuerst?"
+     },
+     {
+      "kurz": "Allein mit dem Bus",
+      "text": "Du willst allein mit dem Bus in die Stadt fahren, traust dir die ganze Strecke aber noch nicht zu. Welche Stufe wäre die erste?"
+     }
+    ],
+    "versuch": "Probier diese Woche eine einzige kleine Stufe aus, die sich nach etwa 3 von 10 anfühlt – nicht mehr.",
+    "probe": "Sami hat lange nicht mehr im Verein trainiert und möchte wieder hin. Ein ganzes Training fühlt sich für ihn wie eine 9 an. Wie könnte Sami mit der Treppe aus kleinen Stufen anfangen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Reprendre le basket",
+      "text": "Tu veux retourner à l’entraînement de basket après une longue pause, mais un entraînement entier d’un coup, c’est beaucoup. Quelle petite marche d’abord ?"
+     },
+     {
+      "kurz": "Seul en bus en ville",
+      "text": "Tu veux aller en ville tout seul en bus, mais tout le trajet d’un coup, tu ne te le sens pas encore. Quelle serait la première marche ?"
+     }
+    ],
+    "versuch": "Essaie cette semaine une seule petite marche qui te semble faire environ 3 sur 10 – pas plus.",
+    "probe": "Sami n’est plus allé à l’entraînement depuis longtemps et voudrait y retourner. Un entraînement entier, ça lui semble être un 9. Comment Sami pourrait-il commencer avec l’escalier de petites marches ?"
+   }
+  }
  },
  {
   "id": "j:drei-versionen-mit-22",
@@ -13154,7 +14774,37 @@
     }
    ]
   },
-  "kurz": "Beruf wählen · Gewusstes notieren · W/V/G markieren · Frage stellen"
+  "kurz": "Beruf wählen · Gewusstes notieren · W/V/G markieren · Frage stellen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Chat: Gehalt im Beruf",
+      "text": "Im Chat schreibt ein Kumpel, ein Mechatroniker verdiene locker 4000 € im Monat. Du fragst dich: Weiß er das, oder hat er es nur gehört?"
+     },
+     {
+      "kurz": "Video: Traumjob Pilotin",
+      "text": "Auf TikTok sagt jemand, als Pilotin arbeite man nur zehn Tage im Monat. Das klingt super, aber stimmt das wirklich?"
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, einen Satz über einen Beruf mit W, V oder G zu markieren – und frag dann jemanden, der es wissen muss.",
+    "probe": "Yanis hat gehört, dass man als Tierpfleger kaum Geld verdient. Er überlegt, sich um ein Praktikum zu bewerben. Wie könnte er mit „W, V oder G?“ prüfen, was stimmt, und welche Frage könnte er stellen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Chat : salaire d’un métier",
+      "text": "Dans le chat, un pote écrit qu’un mécatronicien gagne facilement 4000 € par mois. Tu te demandes : il le sait vraiment, ou il l’a juste entendu dire ?"
+     },
+     {
+      "kurz": "Vidéo : rêve de pilote",
+      "text": "Sur TikTok, quelqu’un dit qu’une pilote ne travaille que dix jours par mois. Ça a l’air génial, mais est-ce que c’est vraiment vrai ?"
+     }
+    ],
+    "versuch": "Essaie cette semaine de marquer une phrase sur un métier avec S, P ou E – puis pose ta question à quelqu’un qui connaît le métier.",
+    "probe": "Yanis a entendu dire qu’on gagne très peu comme soigneur animalier. Il pense à demander un stage. Comment pourrait-il vérifier avec « S, P ou E ? » ce qui est vrai, et quelle question poser ?"
+   }
+  }
  },
  {
   "id": "j:was-lief-oder-pass",
@@ -14615,7 +16265,37 @@
     }
    ]
   },
-  "kurz": "Minute abschätzen · dreimal mit Warte-Trick · Alltags-Trick wählen"
+  "kurz": "Minute abschätzen · dreimal mit Warte-Trick · Alltags-Trick wählen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Haltestelle: Bus verspätet",
+      "text": "Dein Bus hat zehn Minuten Verspätung. Du stehst an der Haltestelle, und die Zeit zieht sich endlos."
+     },
+     {
+      "kurz": "Unterricht: Drankommen dauert",
+      "text": "Im Unterricht hast du die Hand oben, aber die Lehrerin ruft erst noch drei andere auf. Das Warten fühlt sich ewig an."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal beim Warten einen der drei Tricks aus: Atemzüge zählen, Song im Kopf oder einen Punkt fixieren.",
+    "probe": "Sofia wartet vor dem Kino auf ihre Freunde, die sich verspäten, und ihr Handy ist leer. Welchen Wartetrick könnte Sofia wählen: Atemzüge zählen, Song im Kopf oder Punkt fixieren?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Arrêt de bus : retard",
+      "text": "Ton bus a dix minutes de retard. Tu es à l’arrêt et le temps te paraît interminable."
+     },
+     {
+      "kurz": "Cours : attendre son tour",
+      "text": "En cours, tu as la main levée, mais la prof interroge encore trois autres élèves avant toi. L’attente te paraît longue."
+     }
+    ],
+    "versuch": "Essaie cette semaine, quand tu dois attendre, l’une des trois astuces : compter tes souffles, un morceau dans la tête ou fixer un point.",
+    "probe": "Sofia attend ses amis devant le cinéma. Ils ont du retard et son portable n’a plus de batterie. Quelle astuce pour attendre Sofia pourrait-elle choisir : compter ses souffles, un morceau dans la tête ou fixer un point ?"
+   }
+  }
  },
  {
   "id": "j:kartentrick-mit-pause",
@@ -14784,7 +16464,37 @@
    ]
   },
   "kurz": "Trick sehen · Hände ruhig lassen · Geheimnis erfahren · vorführen",
-  "vorbereitung": "Trick vorher üben: 9 Karten, 3 Spalten, gewählte Spalte beim Einsammeln in die Mitte legen"
+  "vorbereitung": "Trick vorher üben: 9 Karten, 3 Spalten, gewählte Spalte beim Einsammeln in die Mitte legen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Turnhalle: Übung wird erklärt",
+      "text": "In der Turnhalle erklärt der Trainer eine neue Übung. Du willst schon loslegen, aber er ist mit dem Erklären noch nicht fertig."
+     },
+     {
+      "kurz": "Pause: Zaubertrick verraten",
+      "text": "Ein Freund zeigt dir in der Pause einen Kartentrick. Du kennst ihn schon und willst am liebsten sofort verraten, wie er geht."
+     }
+    ],
+    "versuch": "Achte diese Woche einmal darauf, wenn du warten musst: Hände ruhig lassen, leise mitzählen, langsam ausatmen.",
+    "probe": "Mia steht mit Noah an der Kasse im Supermarkt. Vor ihnen zahlt jemand langsam mit Münzen, und Mia wird unruhig. Wie kann Mia mit Abwarten ruhig bleiben: Hände ruhig, leise mitzählen, ausatmen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Gym : explication de l’exercice",
+      "text": "Dans la salle de gym, l’entraîneur explique un nouvel exercice. Tu veux déjà commencer, mais il n’a pas fini d’expliquer."
+     },
+     {
+      "kurz": "Récré : tour de cartes",
+      "text": "À la récré, un copain te montre un tour de cartes. Tu le connais déjà et tu as envie de dire tout de suite comment il marche."
+     }
+    ],
+    "versuch": "Fais attention cette semaine quand tu dois attendre : garde les mains calmes, compte à voix basse, souffle lentement.",
+    "probe": "Mia est à la caisse du supermarché avec Noah. Devant eux, quelqu’un paie lentement en petite monnaie et Mia devient impatiente. Comment peut-elle rester calme avec « Attendre » : mains calmes, compter, souffler ?"
+   }
+  }
  },
  {
   "id": "j:erst-zu-ende-hoeren",
@@ -14986,7 +16696,37 @@
    ]
   },
   "kurz": "Nachricht in Teilen · Stichwort notieren · erst am Ende antworten",
-  "vorbereitung": "Nachricht in 3 Teilen notieren: Bus weg · Lina nimmt mich mit · früher da als der Bus"
+  "vorbereitung": "Nachricht in 3 Teilen notieren: Bus weg · Lina nimmt mich mit · früher da als der Bus",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Sprachnachricht: lange Story",
+      "text": "Eine Freundin schickt dir eine lange Sprachnachricht. Nach den ersten Sätzen willst du schon zurückschreiben."
+     },
+     {
+      "kurz": "Praktikum: Auftrag erklärt",
+      "text": "Im Praktikum erklärt dir die Chefin einen Auftrag. Du hast schon eine Frage im Kopf, obwohl sie noch gar nicht fertig ist."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einer langen Nachricht oder Erklärung erst ein Stichwort zu notieren, auszuatmen und dann zu antworten.",
+    "probe": "Mehdi bekommt von Sami eine lange Sprachnachricht über das Training. Nach dem ersten Satz hat er schon eine Antwort im Kopf. Wie kann Mehdi „Erst zu Ende hören“ anwenden?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Message vocal interminable",
+      "text": "Une copine t’envoie un long message vocal. Après les premières phrases, tu as déjà envie de répondre."
+     },
+     {
+      "kurz": "Stage : consigne en cours",
+      "text": "Pendant ton stage, ta cheffe t’explique une tâche. Tu as déjà une question en tête alors qu’elle n’a pas fini."
+     }
+    ],
+    "versuch": "Essaie cette semaine, face à un long message ou à une explication, de noter un mot-clé, de souffler, puis de répondre.",
+    "probe": "Mehdi reçoit de Sami un long message vocal sur l’entraînement. Dès la première phrase, il a déjà sa réponse en tête. Comment Mehdi peut-il appliquer « Écouter jusqu’au bout » ?"
+   }
+  }
  },
  {
   "id": "j:fuenf-minuten-auf-sendung",
@@ -15161,7 +16901,37 @@
    ]
   },
   "kurz": "Rolle und Thema wählen · 2 Min. Notizen · 3 Min. Sendung · tauschen",
-  "vorbereitung": "4 Rollenzettel schreiben: Moderation · Experte/Expertin · Reportage · Wetter und Verkehr"
+  "vorbereitung": "4 Rollenzettel schreiben: Moderation · Experte/Expertin · Reportage · Wetter und Verkehr",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Referat: erster Satz fehlt",
+      "text": "In Geschichte sollst du zwei Minuten etwas vortragen. Du weißt viel, aber wenn du vorne stehst, fällt dir der erste Satz nicht ein."
+     },
+     {
+      "kurz": "Anruf beim Verein",
+      "text": "Du willst dich für ein Probetraining anmelden und musst beim Verein anrufen. Du weißt nicht, was du als Erstes sagen sollst."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, vor einem Anruf oder Referat drei Stichworte und deinen ersten Satz auf einen Zettel zu schreiben.",
+    "probe": "Diogo soll im Praktikum bei der Besprechung kurz sagen, was er diese Woche gemacht hat. Er weiß nicht, wie er anfangen soll. Was könnte er mit Stichworten und fertigem erstem Satz tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Exposé : la première phrase",
+      "text": "En histoire, tu dois présenter un exposé de deux minutes. Tu sais plein de choses, mais devant la classe, ta première phrase ne vient pas."
+     },
+     {
+      "kurz": "Appeler le club",
+      "text": "Tu veux t’inscrire à un essai et tu dois appeler le club. Tu ne sais pas quoi dire en premier."
+     }
+    ],
+    "versuch": "Essaie cette semaine, avant un appel ou un exposé, d’écrire trois mots-clés et ta première phrase sur un papier.",
+    "probe": "Diogo doit dire quelques mots à la réunion de son stage sur ce qu’il a fait cette semaine. Il ne sait pas comment commencer. Que pourrait-il faire avec des mots-clés et une première phrase prête ?"
+   }
+  }
  },
  {
   "id": "j:der-wuerfel-schlaegt-vor",
@@ -15314,7 +17084,37 @@
    ]
   },
   "kurz": "Würfeln · Minuten-Aktion machen · Joker einmal · beide machen mit",
-  "vorbereitung": "4 Aktionen zu 1–6 notieren: 3 Lieblingssongs · Papierkugeln werfen · Sandwich skizzieren · Frage stellen"
+  "vorbereitung": "4 Aktionen zu 1–6 notieren: 3 Lieblingssongs · Papierkugeln werfen · Sandwich skizzieren · Frage stellen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Mathe: leeres Blatt",
+      "text": "In der Stillarbeit liegt das Aufgabenblatt vor dir. Du wartest darauf, dass die Lehrerin dir sagt, wo du anfangen sollst."
+     },
+     {
+      "kurz": "Praktikum: Aufgabe selbst nehmen",
+      "text": "Im Praktikum sagt dein Chef: „Nimm dir ruhig selbst etwas zu tun.“ Du stehst herum und wartest, dass dir jemand eine Aufgabe gibt."
+     }
+    ],
+    "versuch": "Achte diese Woche einmal darauf, wann du auf einen Anstoß wartest, und mach dann von dir aus den kleinsten ersten Schritt.",
+    "probe": "Amira soll ein Plakat für den Sporttag gestalten. Seit Tagen wartet sie, dass ihr jemand sagt, wo sie anfangen soll. Was wäre mit „Von mir aus loslegen“ der kleinste erste Schritt für Amira?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Maths : feuille blanche",
+      "text": "Pendant le travail en autonomie, la feuille d’exercices est devant toi. Tu attends que la prof te dise par où commencer."
+     },
+     {
+      "kurz": "Stage : prendre une tâche",
+      "text": "Pendant ton stage, ton chef te dit : « Prends-toi quelque chose à faire. » Tu restes planté là en attendant qu’on te donne une tâche."
+     }
+    ],
+    "versuch": "Remarque cette semaine quand tu attends qu’on te lance, et fais alors de toi-même le tout premier petit pas.",
+    "probe": "Amira doit faire une affiche pour la journée sportive. Depuis des jours, elle attend qu’on lui dise par où commencer. Quel serait, avec « Se lancer de soi-même », le tout premier petit pas pour elle ?"
+   }
+  }
  },
  {
   "id": "j:der-papierturm",
@@ -15516,7 +17316,37 @@
     }
    ]
   },
-  "kurz": "3 Min. planen · Turm bauen, Rollen wechseln · Zwischenhalt · messen"
+  "kurz": "3 Min. planen · Turm bauen, Rollen wechseln · Zwischenhalt · messen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Technik: zwei Pläne",
+      "text": "In Technik baut ihr zu zweit ein Vogelhaus. Dein Partner hat einen anderen Plan als du und fängt schon an, ihn zu erklären."
+     },
+     {
+      "kurz": "Chat: Skatepark oder Eis",
+      "text": "Im Chat schlägt jemand vor, nach der Schule zum Skatepark zu gehen. Du hättest lieber ein Eis gegessen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, auf einen Vorschlag mit „Ja, und …“ zu antworten und deine eigene Idee dazuzugeben.",
+    "probe": "Tom und Jana sollen zu zweit ein Quiz fürs Klassenfest bauen. Jana will mit Tierfragen starten, Tom hätte lieber Musik. Wie kann Tom Janas Vorschlag annehmen und seine eigene Idee dazugeben?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Atelier : deux plans",
+      "text": "À l’atelier, vous construisez un nichoir à deux. Ton partenaire a un autre plan que toi et commence déjà à l’expliquer."
+     },
+     {
+      "kurz": "Chat : skatepark ou glace",
+      "text": "Dans le chat, quelqu’un propose d’aller au skatepark après les cours. Toi, tu préférerais aller manger une glace."
+     }
+    ],
+    "versuch": "Essaie cette semaine de répondre à une proposition par « Oui, et … » et d’y ajouter ta propre idée.",
+    "probe": "Tom et Jana doivent préparer un quiz pour la fête de classe. Jana veut commencer par des questions sur les animaux, Tom préférerait la musique. Comment Tom peut-il accueillir la proposition de Jana et y ajouter son idée ?"
+   }
+  }
  },
  {
   "id": "j:quiz-aus-deinem-fachgebiet",
@@ -16104,7 +17934,37 @@
    ]
   },
   "kurz": "Von drei Linien werfen · Regel erfinden · mittendrin „Regelwechsel“",
-  "vorbereitung": "3 Klebeband-Linien kleben (nah, mittel, weit); 5 Blätter zu Papierkugeln knüllen"
+  "vorbereitung": "3 Klebeband-Linien kleben (nah, mittel, weit); 5 Blätter zu Papierkugeln knüllen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Sport: Regelwechsel mittendrin",
+      "text": "Mitten im Basketballspiel ruft die Sportlehrerin: „Ab jetzt zählt nur noch ein Korb mit links!“ Du hattest dich gerade auf das Spiel eingestellt."
+     },
+     {
+      "kurz": "Praktikum: Plan ändert sich",
+      "text": "Im Praktikum ändert die Chefin mitten im Auftrag den Plan: Die Bestellung wird jetzt doch anders sortiert. Du warst fast fertig."
+     }
+    ],
+    "versuch": "Achte diese Woche einmal darauf, wenn sich ein Plan oder eine Regel plötzlich ändert: einmal ausatmen, umstellen, weitermachen.",
+    "probe": "Mehdi spielt in der Pause Uno. Mitten in der Runde sagt Lara: „Ab jetzt darf man Plus-zwei-Karten stapeln!“ Mehdi hatte einen anderen Plan. Wie kann er umschalten und weitermachen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Sport : changement de règle",
+      "text": "En plein match de basket, la prof de sport crie : « Maintenant, seuls les paniers de la main gauche comptent ! » Tu venais de t’habituer au jeu."
+     },
+     {
+      "kurz": "Stage : le plan change",
+      "text": "Pendant ton stage, ta cheffe change le plan en cours de route : la commande doit finalement être triée autrement. Tu avais presque fini."
+     }
+    ],
+    "versuch": "Remarque cette semaine quand un plan ou une règle change d’un coup : respire un bon coup, change de cap, continue.",
+    "probe": "Mehdi joue à l’Uno à la récré. En pleine partie, Lara dit : « Maintenant, on peut cumuler les +2 ! » Mehdi avait un autre plan. Comment peut-il basculer et continuer ?"
+   }
+  }
  },
  {
   "id": "j:den-pass-annehmen",
@@ -16328,7 +18188,37 @@
     }
    ]
   },
-  "kurz": "Lob als Pass: annehmen, danke sagen · Ball zurück · echtes Lob testen"
+  "kurz": "Lob als Pass: annehmen, danke sagen · Ball zurück · echtes Lob testen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Mathe: Lehrerin lobt dich",
+      "text": "In Mathe sagt die Lehrerin: „Deine Lösung ist richtig.“ Du zuckst mit den Schultern und murmelst: „War nur Zufall.“"
+     },
+     {
+      "kurz": "Chat: Lob für meine Zeichnung",
+      "text": "Eine Freundin schreibt dir: „Dein Bild ist mega!“ Du willst schon zurückschreiben: „Ach, ist nur Gekritzel.“"
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, ein Lob nicht wegzuschieben: kurz stoppen, „Danke“ sagen und dann weitermachen.",
+    "probe": "Lea hat beim Turnier das entscheidende Tor geschossen. Ein Mitspieler ruft: „Starkes Tor!“ Lea will schon sagen: „Das war Glück.“ Was könnte Lea mit „Lob annehmen“ stattdessen tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Maths : un compliment",
+      "text": "En maths, la prof dit : « Ta solution est juste. » Tu hausses les épaules et marmonnes : « C’était juste de la chance. »"
+     },
+     {
+      "kurz": "Chat : ton dessin plaît",
+      "text": "Une copine t’écrit : « Ton dessin est trop bien ! » Tu as déjà envie de répondre : « Bof, c’est juste un gribouillis. »"
+     }
+    ],
+    "versuch": "Essaie cette semaine de ne pas écarter un compliment : arrête-toi un instant, dis « merci », puis continue.",
+    "probe": "Lea a marqué le but décisif au tournoi. Un coéquipier crie : « Beau but ! » Lea veut déjà répondre : « C’était de la chance. » Que pourrait-elle faire à la place avec « Accepter un compliment » ?"
+   }
+  }
  },
  {
   "id": "j:der-chatverlauf",
@@ -16521,7 +18411,37 @@
    ]
   },
   "kurz": "Chatfragen beantworten · Rückfragen erleben · tauschen und nachfragen",
-  "vorbereitung": "4 Chat-Fragen auf Zettel schreiben: Kicker später? · Treffpunkt? · Was mitbringen? · Wer kommt noch?"
+  "vorbereitung": "4 Chat-Fragen auf Zettel schreiben: Kicker später? · Treffpunkt? · Was mitbringen? · Wer kommt noch?",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Gruppenchat: Kommst du morgen?",
+      "text": "Im Gruppenchat fragt jemand: „Kommst du morgen zum Training?“ Du schreibst nur „mal sehen“, und die Frage kommt noch dreimal."
+     },
+     {
+      "kurz": "Praktikum: Chef fragt per Nachricht",
+      "text": "Dein Chef schreibt: „Kannst du am Donnerstag früher anfangen?“ Du antwortest nur „Hm, vielleicht“ – er muss noch einmal nachfragen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, auf eine Frage im Chat so zu antworten, dass niemand nachfragen muss: Ja oder Nein plus wann oder wo.",
+    "probe": "Sofia schreibt Luca im Chat: „Kommst du morgen zum Basketball?“ Luca antwortet nur „Mal sehen“. Wie könnte Luca mit „Antwort ohne Rückfrage“ antworten?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Groupe : tu viens demain",
+      "text": "Dans le chat du groupe, on te demande : « Tu viens demain à l’entraînement ? » Tu réponds juste « on verra », et la question revient trois fois."
+     },
+     {
+      "kurz": "Stage : le chef t’écrit",
+      "text": "Ton chef de stage t’écrit : « Tu peux commencer plus tôt jeudi ? » Tu réponds juste « Euh, peut-être » – il doit te redemander."
+     }
+    ],
+    "versuch": "Essaie cette semaine de répondre à une question dans le chat pour qu’on n’ait pas à redemander : oui ou non, plus quand ou où.",
+    "probe": "Sofia écrit à Luca dans le chat : « Tu viens demain au basket ? » Luca répond juste « On verra ». Comment Luca pourrait-il répondre sans qu’on ait à redemander ?"
+   }
+  }
  },
  {
   "id": "j:logo-diktat",
@@ -16684,7 +18604,37 @@
     }
    ]
   },
-  "kurz": "Sichtschutz: Logo beschreiben · nachzeichnen · vergleichen · tauschen"
+  "kurz": "Sichtschutz: Logo beschreiben · nachzeichnen · vergleichen · tauschen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Treffpunkt: welche Haltestelle?",
+      "text": "Du erklärst einem Freund im Chat, wo ihr euch trefft: „An der Haltestelle.“ Dort gibt es aber drei, und er weiß nicht, welche du meinst."
+     },
+     {
+      "kurz": "Werkstatt: Welche Zange?",
+      "text": "In der Werkstatt sagt der Ausbilder: „Hol mir mal die kleine Zange.“ Du siehst drei kleine Zangen und musst nachfragen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einer Wegbeschreibung oder einem Auftrag genau zu beschreiben oder nachzufragen: Wie groß? Links oder rechts?",
+    "probe": "Diogo soll Zoé erklären, welche Jacke an der Garderobe seine ist: „die dunkle“. Zoé findet fünf dunkle Jacken. Wie können die beiden mit „Genau beschreiben und nachfragen“ weiterkommen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Rendez-vous : quel arrêt ?",
+      "text": "Tu expliques à un pote dans le chat où vous vous retrouvez : « À l’arrêt de bus. » Mais il y en a trois, et il ne sait pas lequel tu veux dire."
+     },
+     {
+      "kurz": "Atelier : quelle pince ?",
+      "text": "À l’atelier, le formateur dit : « Passe-moi la petite pince. » Tu en vois trois petites, et tu dois donc redemander laquelle."
+     }
+    ],
+    "versuch": "Essaie cette semaine, pour un itinéraire ou une consigne, de décrire avec précision ou de demander : quelle taille ? à gauche ou à droite ?",
+    "probe": "Diogo doit expliquer à Zoé laquelle des vestes du vestiaire est la sienne : « la foncée ». Zoé en trouve cinq. Comment peuvent-ils s’en sortir avec « Décrire avec précision et demander » ?"
+   }
+  }
  },
  {
   "id": "j:drei-spalten-zwoelf-woerter",
@@ -17075,7 +19025,37 @@
    ]
   },
   "kurz": "4 stumme Szenen deuten · Jetzt/Gleich/Später legen · ansprechen",
-  "vorbereitung": "3 Karten beschriften: Jetzt · Gleich · Lieber später"
+  "vorbereitung": "3 Karten beschriften: Jetzt · Gleich · Lieber später",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Pause: Handy-Blick abwarten",
+      "text": "In der Pause willst du einen Klassenkameraden etwas fragen. Er tippt noch am Handy, schaut aber schon ab und zu auf."
+     },
+     {
+      "kurz": "Praktikum: Kollege mit Kopfhörern",
+      "text": "Im Praktikum musst du einen Kollegen etwas fragen. Er hat Kopfhörer auf und starrt konzentriert auf den Bildschirm."
+     }
+    ],
+    "versuch": "Achte diese Woche einmal darauf, woran du siehst, ob jemand „Jetzt“, „Gleich“ oder „Später“ sendet, bevor du ihn oder sie ansprichst.",
+    "probe": "Lara will Mehdi in der Kantine nach einem Mathe-Tipp fragen. Er hat Kopfhörer drin und isst schnell, schaut aber kurz auf. Welche Karte passt – Jetzt, Gleich oder Später – und was sagt Lara?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Récré : il tape encore",
+      "text": "À la récré, tu veux poser une question à un camarade. Il tape encore sur son portable, mais lève déjà de temps en temps les yeux."
+     },
+     {
+      "kurz": "Stage : collègue au casque",
+      "text": "En stage, tu dois poser une question à un collègue. Il a un casque sur les oreilles et fixe l’écran, très concentré."
+     }
+    ],
+    "versuch": "Remarque cette semaine à quoi tu vois si quelqu’un envoie « Maintenant », « Bientôt » ou « Plus tard » avant de l’aborder.",
+    "probe": "Lara veut demander un conseil en maths à Mehdi, à la cantine. Il a son casque et mange vite, mais lève brièvement les yeux. Quel signal lit-elle – Maintenant, Bientôt ou Plus tard – et que dit-elle ?"
+   }
+  }
  },
  {
   "id": "j:melden-im-gespielten-unterricht",
@@ -17257,7 +19237,37 @@
     }
    ]
   },
-  "kurz": "Podcast mit Fehlern hören · Finger heben, warten · Rollen tauschen"
+  "kurz": "Podcast mit Fehlern hören · Finger heben, warten · Rollen tauschen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Erdkunde: Lehrerin redet noch",
+      "text": "In Erdkunde weißt du etwas Wichtiges, aber die Lehrerin redet noch. Du hast Lust, sofort hineinzurufen."
+     },
+     {
+      "kurz": "Bus: alle reden durcheinander",
+      "text": "Im Bus erzählen deine Freunde durcheinander. Du hast etwas Wichtiges zu sagen und weißt nicht, wie du hineinkommst."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, Zeichen zu geben, das Satzende abzuwarten und dann kurz zu sagen, was du sagen willst.",
+    "probe": "Amira hat im Training eine Idee für die Aufstellung, aber der Trainer redet noch. Sie hat schon die Hand halb oben. Wie kann Amira mit „Einhaken“ vorgehen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Géographie : la prof parle",
+      "text": "En géographie, tu sais quelque chose d’important, mais la prof parle encore. Tu as envie de lancer ta réponse tout de suite."
+     },
+     {
+      "kurz": "Bus : tous parlent ensemble",
+      "text": "Dans le bus, tes copains parlent tous en même temps. Tu as quelque chose à dire et tu ne sais pas comment t’insérer."
+     }
+    ],
+    "versuch": "Essaie cette semaine de faire un signe, d’attendre la fin de la phrase, puis de dire court ce que tu veux dire.",
+    "probe": "Amira a une idée pour la composition de l’équipe pendant l’entraînement, mais l’entraîneur parle encore. Elle a déjà la main à moitié levée. Comment peut-elle s’y prendre avec « Prendre la parole » ?"
+   }
+  }
  },
  {
   "id": "j:eine-meldung-vorbereiten",
@@ -17445,7 +19455,37 @@
    ]
   },
   "kurz": "Fach wählen · eine Meldung auf Karte · zweimal laut üben · Mut-Treppe",
-  "vorbereitung": "Mut-Treppe mit 4 Stufen zeichnen: Hand heben · Frage stellen · Antwort geben · eigene Meinung sagen"
+  "vorbereitung": "Mut-Treppe mit 4 Stufen zeichnen: Hand heben · Frage stellen · Antwort geben · eigene Meinung sagen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Englisch: eine Frage stellen",
+      "text": "Morgen ist Englisch, und du möchtest dich einmal melden. Bisher hast du immer nur zugehört und weißt nicht, womit du anfangen sollst."
+     },
+     {
+      "kurz": "Klassenrat: ein Vorschlag",
+      "text": "Im Klassenrat möchtest du einmal einen Vorschlag für den Ausflug machen. Du hast ihn im Kopf, aber du weißt nicht, wie du ihn sagen sollst."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, genau eine Meldung vorzubereiten: einen Satz auf eine Karte schreiben und zweimal laut üben.",
+    "probe": "Zoé möchte in Französisch einmal eine Frage stellen, aber spontan fällt ihr nichts Passendes ein. Die Stunde ist morgen früh. Wie kann Zoé „Eine einzige Meldung vorbereiten“?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Anglais : poser une question",
+      "text": "Demain, tu as anglais et tu voudrais lever la main une fois. Jusqu’ici tu n’as fait qu’écouter, et tu ne sais pas par quoi commencer."
+     },
+     {
+      "kurz": "En classe : une idée",
+      "text": "Pendant le débat de classe, tu voudrais proposer une idée pour la sortie. Tu l’as en tête, mais tu ne sais pas comment la formuler."
+     }
+    ],
+    "versuch": "Essaie cette semaine de préparer une seule prise de parole : écris une phrase sur une carte et répète-la deux fois à voix haute.",
+    "probe": "Zoé aimerait poser une question en cours de français, mais rien ne lui vient sur le moment. Le cours est demain matin. Comment Zoé peut-elle « préparer une seule prise de parole » ?"
+   }
+  }
  },
  {
   "id": "j:bew-drei-gaenge",
@@ -18283,7 +20323,37 @@
     }
    ]
   },
-  "kurz": "5-Min.-Aufgabe · ein Kniff · zweite Fassung · 3 Unterschiede finden"
+  "kurz": "5-Min.-Aufgabe · ein Kniff · zweite Fassung · 3 Unterschiede finden",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Aufsatz: überarbeiteter Text",
+      "text": "Du hast deinen Text für Deutsch noch einmal überarbeitet. Die erste Fassung liegt noch im Heft, und du fragst dich, was jetzt wirklich anders ist."
+     },
+     {
+      "kurz": "Gitarre: zwei Aufnahmen",
+      "text": "Du hast dasselbe Stück auf der Gitarre vor drei Wochen und heute aufgenommen. Du willst hören, was sich verändert hat."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, zwei Fassungen derselben Sache nebeneinander zu legen und drei Stellen zu finden, die jetzt anders sind.",
+    "probe": "Ben hat im September eine Skizze von seinem Fahrrad gezeichnet und heute noch eine. Er findet, sie sehen „irgendwie gleich“ aus. Wie kann er die zwei Fassungen nebeneinander legen und sehen, was anders ist?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Rédaction : texte retravaillé",
+      "text": "Tu as retravaillé ton texte pour le cours de français. La première version est encore dans ton cahier, et tu te demandes ce qui a vraiment changé."
+     },
+     {
+      "kurz": "Guitare : deux enregistrements",
+      "text": "Tu as enregistré le même morceau à la guitare il y a trois semaines et aujourd’hui. Tu voudrais entendre ce qui a changé."
+     }
+    ],
+    "versuch": "Essaie cette semaine de poser deux versions de la même chose côte à côte et de trouver trois endroits qui sont différents maintenant.",
+    "probe": "En septembre, Ben a dessiné un croquis de son vélo, et aujourd’hui un autre. Il trouve qu’ils se ressemblent beaucoup. Comment peut-il poser les deux versions côte à côte pour voir ce qui est différent ?"
+   }
+  }
  },
  {
   "id": "j:karte-fuer-meine-taetigkeit",
@@ -18466,7 +20536,37 @@
    ]
   },
   "kurz": "Tätigkeit wählen · Karte: Name, 3 Stärken, 2 Baustellen, 1 Trick",
-  "vorbereitung": "Beispielkarte vorzeichnen: Name · 3 Dinge, die gehen · 2 Dinge zum Üben · 1 Trick"
+  "vorbereitung": "Beispielkarte vorzeichnen: Name · 3 Dinge, die gehen · 2 Dinge zum Üben · 1 Trick",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Probetraining: Was kannst du?",
+      "text": "Beim Probetraining im Verein fragt dich der Trainer, was du schon gut kannst und woran du arbeiten willst. Dir fällt auf Anhieb nichts ein."
+     },
+     {
+      "kurz": "Bewerbung: zwei Sätze zu mir",
+      "text": "Für die Bewerbung um ein Praktikum sollst du in zwei Sätzen sagen, was du schon kannst. Du weißt nicht, was du schreiben sollst."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, für eine Sache, die du magst, aufzuschreiben: was schon geht, woran du arbeitest und welcher Trick dir hilft.",
+    "probe": "Sami spielt seit einem Jahr Schlagzeug. Die Musiklehrerin fragt ihn, ob er in der Schulband mitmacht und was er schon kann. Wie kann Sami mit „Eine Karte“ sagen, was schon geht und woran er arbeitet?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Essai : que sais-tu déjà",
+      "text": "À l’essai au club, l’entraîneur te demande ce que tu sais déjà bien faire et sur quoi tu veux travailler. Sur le moment, rien ne te vient."
+     },
+     {
+      "kurz": "Candidature : deux phrases",
+      "text": "Pour ta candidature à un stage, tu dois dire en deux phrases ce que tu sais déjà faire. Tu ne sais pas quoi écrire."
+     }
+    ],
+    "versuch": "Essaie cette semaine de noter, pour une activité que tu aimes : ce qui va déjà, ce que tu travailles encore et quelle astuce t’aide.",
+    "probe": "Sami joue de la batterie depuis un an. La prof de musique lui demande s’il veut rejoindre le groupe de l’école et ce qu’il sait déjà faire. Comment Sami peut-il le dire avec « Une carte » ?"
+   }
+  }
  },
  {
   "id": "j:zehn-paesse-am-stueck",
@@ -18662,7 +20762,37 @@
     }
    ]
   },
-  "kurz": "Ball zuspielen · bis 10 zählen · Variante · Rekord-Satz"
+  "kurz": "Ball zuspielen · bis 10 zählen · Variante · Rekord-Satz",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Handball: Pass ohne Blick",
+      "text": "Im Sportunterricht passt du den Ball zu einer Mitspielerin, die gerade woanders hinschaut. Der Ball geht ins Leere."
+     },
+     {
+      "kurz": "Bolzplatz: Pass zu hart",
+      "text": "Beim Kicken nach der Schule spielst du den Ball zu hart zu einem Freund, und er kann ihn nicht kontrollieren."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal beim Ballspiel, vor dem Pass kurz Blickkontakt aufzunehmen und „Jetzt!“ zu rufen.",
+    "probe": "Luca spielt in der Pause Basketball. Yanis läuft frei, aber Luca wirft den Ball hart und ohne Ansage, und Yanis verpasst ihn. Was könnte Luca mit „Zuspiel im Team“ beim nächsten Mal anders machen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Handball : passe sans regard",
+      "text": "En sport, tu fais une passe à une coéquipière qui regarde ailleurs. Le ballon part dans le vide."
+     },
+     {
+      "kurz": "Foot : passe trop forte",
+      "text": "Au foot après les cours, tu envoies le ballon trop fort à un copain, qui n’arrive pas à le contrôler."
+     }
+    ],
+    "versuch": "Essaie cette semaine, dans un jeu de balle, de chercher le regard avant la passe et d’appeler « Maintenant ! ».",
+    "probe": "Luca joue au basket à la récré. Yanis est démarqué, mais Luca lance le ballon fort et sans prévenir, et Yanis le rate. Que pourrait faire Luca autrement avec « Jeu d’équipe » la prochaine fois ?"
+   }
+  }
  },
  {
   "id": "j:marie-macht-es-vor",
@@ -18866,7 +20996,37 @@
    ]
   },
   "kurz": "3 Szenen hören · nacherzählen · Marie-Verhalten wählen · spielen",
-  "vorbereitung": "Drei Szenen merken: Kundin schimpft · falsche Schraube · Neuer braucht Hilfe"
+  "vorbereitung": "Drei Szenen merken: Kundin schimpft · falsche Schraube · Neuer braucht Hilfe",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Praktikum: Kollegin bleibt ruhig",
+      "text": "Im Praktikum wird ein Kunde laut, und die Kollegin bleibt ruhig und fragt freundlich nach. Du merkst: So möchtest du das auch können."
+     },
+     {
+      "kurz": "Training: Ältere macht weiter",
+      "text": "Im Verein verschießt eine ältere Spielerin einen Elfmeter, lacht kurz und nimmt den nächsten Ball. Du überlegst, ob du dir das abguckst."
+     }
+    ],
+    "versuch": "Achte diese Woche einmal darauf, was jemand macht, den du gut findest – und übernimm eine einzige Sache davon.",
+    "probe": "Ben sieht in der Mathestunde, wie Luca laut sagt: „Das verstehe ich noch nicht, zeigst du es mir?“ und sofort Hilfe bekommt. Was macht Luca genau? Was könnte Ben davon mit „Abgucken“ übernehmen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Stage : une collègue calme",
+      "text": "En stage, un client s’énerve, et la collègue reste calme et pose des questions gentiment. Tu te dis : j’aimerais savoir faire pareil."
+     },
+     {
+      "kurz": "Club : l’aînée continue",
+      "text": "Au club, une joueuse plus âgée rate un penalty, rit un instant et prend le ballon suivant. Tu te demandes si tu pourrais t’en inspirer."
+     }
+    ],
+    "versuch": "Remarque cette semaine ce que fait quelqu’un que tu trouves bien – et reprends une seule chose.",
+    "probe": "Ben voit en cours de maths que Luca dit à voix haute : « Je n’ai pas encore compris, tu peux me montrer ? » et reçoit tout de suite de l’aide. Que fait Luca exactement ? Que pourrait reprendre Ben en s’inspirant de lui ?"
+   }
+  }
  },
  {
   "id": "j:tarif-check",
@@ -19061,7 +21221,37 @@
    ]
   },
   "kurz": "Tarife auf Karten · Gesamtpreis rechnen · GB in MB · Empfehlung",
-  "vorbereitung": "Tarifkarten: A 9 €/Monat · 5 GB · 24 Monate · 40 € einmalig; B 13 €/Monat · 20 GB · kündbar. Nach 12 Monaten: A 148 €, B 156 €"
+  "vorbereitung": "Tarifkarten: A 9 €/Monat · 5 GB · 24 Monate · 40 € einmalig; B 13 €/Monat · 20 GB · kündbar. Nach 12 Monaten: A 148 €, B 156 €",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Handyshop: Angebot checken",
+      "text": "Im Handyshop wirbt ein Angebot mit „nur 10 € im Monat“. Im Kleingedruckten stehen 24 Monate Laufzeit und 50 € Anschlussgebühr."
+     },
+     {
+      "kurz": "Spiel-Abo: Monat oder Jahr",
+      "text": "Dein Lieblingsspiel bietet ein Abo für 7 € im Monat oder 60 € für ein ganzes Jahr. Was ist billiger, wenn du es zwölf Monate nutzt?"
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, bei einem Angebot den Gesamtpreis auszurechnen: Monatspreis mal Monate plus Einmaliges.",
+    "probe": "Mehdi will Kopfhörer kaufen: im Laden 120 € auf einmal, online 10 € im Monat für 12 Monate plus 15 € Versand. Wie findet er mit dem „Gesamtpreis“ heraus, was billiger ist?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Boutique : vérifier l’offre",
+      "text": "Dans une boutique de téléphonie, une offre annonce « seulement 10 € par mois ». En petits caractères : 24 mois d’engagement et 50 € de frais de mise en service."
+     },
+     {
+      "kurz": "Abonnement : mois ou année",
+      "text": "Ton jeu préféré propose un abonnement à 7 € par mois ou 60 € pour une année. Lequel est le moins cher si tu l’utilises douze mois ?"
+     }
+    ],
+    "versuch": "Essaie cette semaine de calculer le prix total d’une offre : prix mensuel × nombre de mois + frais uniques.",
+    "probe": "Mehdi veut acheter un casque : 120 € d’un coup en magasin, ou 10 € par mois pendant 12 mois plus 15 € de livraison en ligne. Comment trouve-t-il avec le « prix total » ce qui revient moins cher ?"
+   }
+  }
  },
  {
   "id": "j:meldung-fuenf-fragen",
@@ -19268,7 +21458,37 @@
    ]
   },
   "kurz": "3 Meldungen · fünf Fragen · „Kurz gesagt“ · betrifft mich?",
-  "vorbereitung": "Drei kurze, unbelastende Meldungen dieser Woche aus Zeitung oder Nachrichtenseite bereitlegen"
+  "vorbereitung": "Drei kurze, unbelastende Meldungen dieser Woche aus Zeitung oder Nachrichtenseite bereitlegen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Eilmeldung: Busse fallen aus",
+      "text": "Auf dem Handy ploppt eine Meldung auf: „Mehrere Buslinien fallen morgen aus.“ Du überfliegst sie und weißt danach nicht, ob deine Linie dabei ist."
+     },
+     {
+      "kurz": "Kantine: Gerücht über Konzert",
+      "text": "Beim Essen erzählt ein Mitschüler aufgeregt: „Das Konzert wurde verschoben!“ Du weißt nicht: Welches? Wann? Warum?"
+     }
+    ],
+    "versuch": "Probier diese Woche einmal bei einer Meldung oder Info die fünf Fragen zu stellen: Wer, was, wo, wann, warum?",
+    "probe": "Sofia liest im Klassenchat: „Morgen fällt die zweite Stunde aus, Treffpunkt in der Aula.“ Sie weiß nicht, wer gemeint ist. Wie kann Sofia mit „Fünf Fragen an eine Meldung“ herausfinden, was gilt?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Alerte : des bus supprimés",
+      "text": "Une alerte s’affiche sur ton portable : « Plusieurs lignes de bus sont supprimées demain. » Tu la survoles et ne sais pas si ta ligne est concernée."
+     },
+     {
+      "kurz": "Cantine : rumeur de concert",
+      "text": "Pendant le repas, un camarade dit tout excité : « Le concert est reporté ! » Tu ne sais pas lequel, ni quand, ni pourquoi."
+     }
+    ],
+    "versuch": "Essaie cette semaine de poser les cinq questions à une info : qui, quoi, où, quand, pourquoi ?",
+    "probe": "Sofia lit dans le chat de la classe : « Demain, la deuxième heure est supprimée, rendez-vous à l’aula. » Elle ne sait pas qui est concerné. Comment trouver ce qui vaut avec « Cinq questions à une info » ?"
+   }
+  }
  },
  {
   "id": "j:passt-das-ins-zimmer",
@@ -19472,7 +21692,37 @@
    ]
   },
   "kurz": "Maßstab 1 Kästchen = 10 cm · Schritt messen · zeichnen · schneiden",
-  "vorbereitung": "Maße notieren: Zimmer 3 × 4 m (30 × 40 Kästchen) · Bett 90 × 200 (9 × 20) · Schreibtisch 120 × 60 (12 × 6) · Schrank 100 × 50 (10 × 5)"
+  "vorbereitung": "Maße notieren: Zimmer 3 × 4 m (30 × 40 Kästchen) · Bett 90 × 200 (9 × 20) · Schreibtisch 120 × 60 (12 × 6) · Schrank 100 × 50 (10 × 5)",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Jugendtreff: Passt der Kicker?",
+      "text": "Im Jugendtreff soll ein Kicker (140 × 75 cm) in den Raum. Du sollst vorher auf Karopapier prüfen, ob noch ein Weg frei bleibt."
+     },
+     {
+      "kurz": "Technik: Schrank im Maßstab",
+      "text": "In Technik sollst du einen Schrank (180 × 60 cm) auf Karopapier zeichnen: 1 Kästchen sind 10 cm. Du musst jedes Maß umrechnen."
+     }
+    ],
+    "versuch": "Probier diese Woche einmal, etwas Echtes (einen Tisch, ein Regal) im Maßstab 1 Kästchen = 10 cm auf Karopapier zu zeichnen.",
+    "probe": "Inês plant für das Schulfest einen Stand in einer Ecke von 3 × 2 m: ein Tisch (120 × 60 cm), zwei Regale (je 80 × 30 cm). Wie prüft sie mit dem „Maßstab“, ob alles hineinpasst?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Baby-foot : ça rentre ?",
+      "text": "Dans le centre de jeunes, on veut installer un baby-foot (140 × 75 cm). Avant, tu dois vérifier sur du papier quadrillé s’il reste un passage."
+     },
+     {
+      "kurz": "Technique : dessiner une armoire",
+      "text": "En technique, tu dois dessiner une armoire (180 × 60 cm) sur du papier quadrillé : 1 carreau vaut 10 cm. Tu dois convertir chaque mesure."
+     }
+    ],
+    "versuch": "Essaie cette semaine de dessiner quelque chose de réel (une table, une étagère) à l’échelle de 1 carreau = 10 cm sur du papier quadrillé.",
+    "probe": "Inês prépare pour la fête de l’école un stand dans un coin de 3 × 2 m : une table (120 × 60 cm) et deux étagères (80 × 30 cm chacune). Comment vérifie-t-elle avec l’« échelle » que tout rentre ?"
+   }
+  }
  },
  {
   "id": "j:platz-am-tisch",
@@ -19676,7 +21926,37 @@
    ]
   },
   "kurz": "Clique-Szene hören · als Luca nachziehen · als Inês ersten Satz sagen",
-  "vorbereitung": "Einen Stuhl etwas abseits vom Tisch hinstellen: Dort sitzt Sofia."
+  "vorbereitung": "Einen Stuhl etwas abseits vom Tisch hinstellen: Dort sitzt Sofia.",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Kantine: Platz neben dir",
+      "text": "In der Kantine sitzt jemand aus deiner Klasse allein am Tischende, und neben dir ist ein Platz frei."
+     },
+     {
+      "kurz": "Training: Neuer am Rand",
+      "text": "Beim Aufwärmen im Verein steht ein neuer Spieler allein am Rand. Du könntest ihm zunicken, Platz machen und etwas zum letzten Spiel sagen."
+     }
+    ],
+    "versuch": "Achte diese Woche einmal darauf, wer allein sitzt oder steht, und probier den ersten Schritt: Blick, Platz anbieten, ein aktuelles Thema.",
+    "probe": "Mehdi sitzt mit zwei Freunden im Bus, als Amira einsteigt, die erst seit Montag an der Schule ist, und sich allein ans Fenster setzt. Wie kann Mehdi mit „Platz machen“ den ersten Schritt machen?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Cantine : une place libre",
+      "text": "À la cantine, quelqu’un de ta classe est assis tout seul au bout de la table, et il y a une place libre à côté de toi."
+     },
+     {
+      "kurz": "Club : le nouveau, seul",
+      "text": "Pendant l’échauffement au club, un nouveau reste seul sur le côté. Tu pourrais lui faire un signe, lui faire de la place et parler du dernier match."
+     }
+    ],
+    "versuch": "Remarque cette semaine qui est seul, assis ou debout, et essaie le premier pas : un regard, une place offerte, un sujet du moment.",
+    "probe": "Mehdi est dans le bus avec deux amis quand Amira, arrivée lundi à l’école, monte et s’assoit seule près de la fenêtre. Comment Mehdi peut-il faire le premier pas avec « Faire de la place » ?"
+   }
+  }
  },
  {
   "id": "j:meine-trainingskarte",
@@ -19886,6 +22166,36 @@
    ]
   },
   "kurz": "3 Stationen · Zahl schätzen · probieren · Tipp · zweite Runde",
-  "vorbereitung": "Drei Stationen am Boden markieren: Standfläche · Korb in 2 m Abstand · freie Fläche zum Werfen"
+  "vorbereitung": "Drei Stationen am Boden markieren: Standfläche · Korb in 2 m Abstand · freie Fläche zum Werfen",
+  "transfer": {
+   "de": {
+    "szenen": [
+     {
+      "kurz": "Freiwürfe: schätzen und probieren",
+      "text": "Du willst beim Basketball besser werden, weißt aber nicht, ob du bei den Freiwürfen wirklich Fortschritte machst."
+     },
+     {
+      "kurz": "Fußball: Ball hochhalten",
+      "text": "Du übst, den Fußball mit dem Fuß hochzuhalten. Nach jedem Versuch weißt du nicht, ob es besser wird oder sich nur so anfühlt."
+     }
+    ],
+    "versuch": "Probier diese Woche bei einer Übung: eine Zahl schätzen, zehnmal probieren, einen Tipp suchen und noch einmal probieren.",
+    "probe": "Noah übt Tischtennis-Aufschläge. Er schätzt: Fünf von zehn landen auf der Platte. Beim Probieren sind es nur drei. Was könnte Noah jetzt mit „Üben mit Zahlen“ tun?"
+   },
+   "fr": {
+    "szenen": [
+     {
+      "kurz": "Lancers francs : estimer, essayer",
+      "text": "Tu veux progresser au basket, mais tu ne sais pas si tu t’améliores vraiment aux lancers francs."
+     },
+     {
+      "kurz": "Foot : jongler et compter",
+      "text": "Tu t’entraînes à jongler avec un ballon de foot. Après chaque essai, tu ne sais pas si tu progresses ou si tu as juste cette impression."
+     }
+    ],
+    "versuch": "Essaie cette semaine pour un exercice : estime un chiffre, essaie dix fois, cherche un conseil, puis recommence.",
+    "probe": "Noah s’entraîne aux services au ping-pong. Il estime que cinq sur dix tombent sur la table. En essayant, il n’y en a que trois. Que pourrait faire Noah maintenant avec « S’entraîner avec des chiffres » ?"
+   }
+  }
  }
 ]

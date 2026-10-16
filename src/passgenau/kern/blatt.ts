@@ -407,6 +407,9 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
   const titel = quellen.map((q) => textVon(q, sprache).titel)
   const werkzeug = quellen.map((q, i) => (q.typ === 'schritt' && q.werkzeug?.[sprache]) || titel[i])
   const zit = (t: string) => (fr ? `« ${t} »` : `„${t}“`)
+  // Alltags-Paket (Stufe 2): die zwei Szenen der Übung als Etiketten zum Ankreuzen statt allgemeiner Orte
+  const tr = quellen.map((q) => (q.typ === 'schritt' ? q.transfer?.[sprache] : undefined))
+  const szenen = tr[0] ? (tr[1] ? [tr[0].szenen[0], tr[1].szenen[0]] : tr[0].szenen.slice(0, 2)).map((x) => x.kurz) : []
   // Kinder bis 9 malen und kreisen ein; ab 10 die Wenn-dann-Fassung (Blind-Bewertung 10: „Mal dich, wie du ‚Miesmacher
   // entlarven‘ machst“ bei 11 Jahren kindlich und kaum zeichenbar)
   if ((o.alter ?? 12) < 10) {
@@ -414,8 +417,16 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
     // Lesen 1)
     const kurzW = werkzeugName(werkzeug[0], titel[0])
     const liste: Baustein[] = [
-      { art: 'aufgabe', text: fr ? `Où est-ce que tu peux essayer ${zit(kurzW)} ? Entoure.` : `Wo kannst du ${zit(kurzW)} ausprobieren? Kreis ein.` },
-      { art: 'bilder', bilder: orte.kinder, spalten: 4, modus: 'einkreisen' },
+      // ab 8 (liest) die zwei Szenen aus der Stunde zum Ankreuzen, darunter Bilder
+      ...((o.alter ?? 0) >= 8 && szenen.length
+        ? [
+            { art: 'aufgabe', text: fr ? `Où est-ce que ${zit(kurzW)} peut t’aider ? Coche.` : `Wo hilft dir ${zit(kurzW)}? Kreuz an.` } as Baustein,
+            { art: 'ankreuzen', items: [...szenen, fr ? 'ailleurs : …' : 'woanders: …'], spalten: 1 } as Baustein,
+          ]
+        : [
+            { art: 'aufgabe', text: fr ? `Où est-ce que tu peux essayer ${zit(kurzW)} ? Entoure.` : `Wo kannst du ${zit(kurzW)} ausprobieren? Kreis ein.` } as Baustein,
+            { art: 'bilder', bilder: orte.kinder, spalten: 4, modus: 'einkreisen' } as Baustein,
+          ]),
       { art: 'aufgabe', text: fr ? `Dessine-toi en train de faire ${zit(kurzW)}.` : `Mal dich, wie du ${zit(kurzW)} machst.` },
       { art: 'feld', hoehe: 7, zeichnen: true },
     ]
@@ -424,7 +435,7 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
   }
   const liste: Baustein[] = [
     { art: 'text', klein: true, text: fr ? 'Pour une situation des prochains jours – vraie ou inventée.' : 'Für eine Situation der nächsten Tage – echt oder erfunden.' },
-    { art: 'ankreuzen', titel: fr ? 'Où est-ce que ça pourrait servir ? Plusieurs réponses possibles.' : 'Wo könnte es passen? Mehrere gehen.', items: orte.jugend, spalten: 3 },
+    { art: 'ankreuzen', titel: fr ? 'Où est-ce que ça pourrait servir ? Plusieurs réponses possibles.' : 'Wo könnte es passen? Mehrere gehen.', items: szenen.length ? [...szenen, ...orte.jugend.slice(0, 3), orte.jugend[orte.jugend.length - 1]] : orte.jugend, spalten: szenen.length ? 2 : 3 },
     // nur der Name des Werkzeugs (Blind-Bewertung 11: „dann: Stärken erkennen: Was tut sie? Wie heißt das Wort dazu?“)
     ...werkzeug.slice(0, 2).map((w, i): Baustein => ({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si … (où, quand)' : 'Wenn … (wo, wann)', dann: fr ? `alors : ${werkzeugName(w, titel[i])}` : `dann: ${werkzeugName(w, titel[i])}` })),
   ]
@@ -439,6 +450,8 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
  *  Kinder: zeigen und malen, was sie mitnehmen. */
 function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlattOpt): Baustein[] {
   const fr = sprache === 'fr'
+  // Alltags-Paket: eine neue, erfundene Probe zur ersten Übung der Folge (Blind-Bewertung 13: „ein Kreuz und ein Abzeichen“)
+  const probe = folge.map((e) => (e.typ === 'schritt' ? e.transfer?.[sprache]?.probe : undefined)).find(Boolean)
   const titel = folge.slice(0, 6).map((e) => textVon(e, sprache).titel)
   // „der Plan für den Alltag“ nur bei Jugendlichen – Kinder spielen das Übertragen durch, einen Plan gab es nicht
   // (Blind-Bewertung 9: „verweist auf einen Plan für den Alltag, den es nicht gab“)
@@ -449,6 +462,7 @@ function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlatt
     else liste.push({ art: 'aufgabe', text: fr ? 'Comment c’était, nos séances ? Entoure.' : 'Wie war unsere Zeit? Kreis ein.' }, { art: 'gefuehle', gefuehle: ['froh', 'stolz', 'ruhig'], modus: 'einkreisen' })
     // was geholfen hat, in einem Satz (Blind-Bewertung 13: „zwei Kästchen und ein Abzeichen für 13 Minuten“)
     if ((o.alter ?? 0) >= 8 && !o.wenigSchreiben) liste.push({ art: 'satzanfaenge', items: [fr ? 'Ce qui m’a le plus aidé :' : 'Am meisten geholfen hat mir:'], linien: 1 })
+    if ((o.alter ?? 0) >= 8 && probe) liste.push({ art: 'frage', text: probe, linien: o.wenigSchreiben ? 1 : 2 })
     // die kleine Feier: ein eigenes Abzeichen (Blind-Bewertung 9: „Rückblick & Feiern ohne Feier“)
     // ohne Leistungsbehauptung (Blind-Bewertung 10: „Das kann ich jetzt“ bei einem Kind, das noch übt)
     liste.push({ art: 'aufgabe', text: fr ? 'Dessine ton badge : ce qu’on a fait ensemble.' : 'Mal dein Abzeichen: Das haben wir zusammen gemacht.' }, { art: 'feld', hoehe: 7, zeichnen: true, label: fr ? 'Mon badge' : 'Mein Abzeichen' })
@@ -461,7 +475,9 @@ function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlatt
   const werkzeuge = [...new Set(folge.slice(0, 6).map((e) => werkzeugName(e.typ === 'schritt' ? e.werkzeug?.[sprache] : undefined, textVon(e, sprache).titel)))]
   if (werkzeuge.length >= 2) liste.push({ art: 'ankreuzen', titel: fr ? 'Ce que j’emporte de la série – coche :' : 'Das nehme ich aus der Folge mit – kreuz an:', items: werkzeuge, spalten: 1 })
   liste.push({ art: 'satzanfaenge', items: [werkzeuge.length >= 2 ? (fr ? 'Ce qui m’a le plus aidé, et pourquoi :' : 'Am meisten geholfen hat, und warum:') : (fr ? 'Ce que j’emporte :' : 'Das nehme ich mit:'), fr ? 'Mon prochain petit pas, et où :' : 'Mein nächster kleiner Schritt, und wo:'], linien: 1 })
-  if (!o.wenigSchreiben) liste.push({ art: 'frage', text: fr ? 'Ce qui a changé depuis la première séance :' : 'Das hat sich seit der ersten Sitzung verändert:', linien: 2 })
+  // eine neue Probe statt „Das hat sich seit der ersten Sitzung verändert“ (Blind-Bewertung 13: „setzt Veränderung voraus“)
+  if (probe) liste.push({ art: 'frage', text: probe, linien: o.wenigSchreiben ? 1 : 2 })
+  else if (!o.wenigSchreiben) liste.push({ art: 'frage', text: fr ? 'Ce qui a changé depuis la première séance :' : 'Das hat sich seit der ersten Sitzung verändert:', linien: 2 })
   return liste
 }
 

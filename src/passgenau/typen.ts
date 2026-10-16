@@ -88,6 +88,9 @@ export interface MikroBaustein extends KatalogZusatz {
   ohneZiel?: boolean
 }
 
+/** Alltags-Paket einer Übung: Szenen in Du-Form (kurz: Etikett fürs Blatt), Versuch bis zum nächsten Mal, Probe mit erfundener Figur */
+export interface Transfer { szenen: { kurz: string; text: string }[]; versuch: string; probe: string }
+
 export type SchrittQuelle = 'kurs' | 'foerderfach' | 'material' | 'spielschule' | 'crew' | 'freude' | 'ritual' | 'praxis'
 
 /** Stundenschritt (Kurs 'k:', Förderfach 'f:', Material 'm:', Spielschule 's:', CREW 'c:', Freude 'fb:', Ritual 'r:') */
@@ -100,6 +103,9 @@ export interface Stundenschritt extends KatalogZusatz {
   werkzeug?: { de: string; fr: string }
   /** false: reine Rückblick-, Einschätz- oder Erkundungsübung – wird nicht in den Alltag übertragen */
   uebertragbar?: boolean
+  /** Alltags-Paket (Stufe 2, 16.10.): zwei konkrete Szenen, in denen genau dieses Werkzeug hilft, ein kleiner Versuch und
+   *  eine neue Probe für den Rückblick – Übertragen und Rückblick werden damit so konkret wie der Kern */
+  transfer?: { de: Transfer; fr?: Transfer }
   quelle: { art: SchrittQuelle; einheit?: string; titel: string }
   titel: string
   text: string
