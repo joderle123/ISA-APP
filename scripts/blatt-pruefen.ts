@@ -16,6 +16,7 @@ import { BEREICHE, THEMEN, STUFEN_REIHE } from '../src/blatt/katalog'
 import { hatIcon } from '../src/blatt/zeichnung'
 import { GEFUEHLE, gefuehlWort } from '../src/blatt/gesichter'
 import { FIGUREN, POSEN } from '../src/blatt/figuren'
+import { istSzene } from '../src/blatt/szenen'
 import { MOTIV_NAMEN } from '../src/blatt/motive'
 import { QUELLEN_TEXTE } from '../src/blatt/quellen'
 import { eldibGoalById } from '../src/data/taxonomy'
@@ -117,6 +118,7 @@ function bildOk(id: string): string | null {
   if (art === 'icon') return hatIcon(a ?? '') ? null : `Piktogramm „${a}“ gibt es nicht (Liste: src/blatt/bilder/icons.json)`
   if (art === 'gesicht') return (GEFUEHLE as string[]).includes(a ?? '') ? null : `Gefühl „${a}“ gibt es nicht`
   if (art === 'motiv') return MOTIV_NAMEN.includes(a ?? '') ? null : `Motiv „${a}“ gibt es nicht`
+  if (art === 'szene') return istSzene(a ?? '') ? null : `Szene „${a}“ gibt es nicht (Liste: src/blatt/szenen.ts)`
   if (art === 'figur') {
     if (!a || !FIGUREN[a]) return `Figur „${a}“ gibt es nicht`
     if (b && !(GEFUEHLE as string[]).includes(b)) return `Gefühl „${b}“ gibt es nicht`

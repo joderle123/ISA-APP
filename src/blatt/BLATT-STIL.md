@@ -489,10 +489,40 @@ und Satz der Woche), wenn `woche.elternbrief` da ist. Sie erscheinen in der Tool
 
 - **Piktogramme** `icon:<name>` – Liste in `src/blatt/bilder/icons.json` (375 Stück, z. B. angle, backpack, bed, book, bulb, clock, device-mobile, friends, heart, hourglass, lifebuoy, moon, music, palette, pillow, school, shield, sun, target, traffic-lights, volcano …).
 - **Gefühlsgesichter** `gesicht:<gefühl>` – froh, traurig, wuetend, aengstlich, ueberrascht, angeekelt, ruhig, stolz, verlegen, muede, nervoes, enttaeuscht, gelangweilt, verwirrt, aufgeregt, besorgt, neutral.
-- **Figuren** `figur:<name>[:<gefühl>[:<haltung>]]`
-  - Kinder: mia, noah, lea, sami, amira (Kopftuch), tom (Kappe); Jugendliche: jana, ben; Erwachsene: lehrerin, lehrer.
-  - Haltungen: stehen, winken, verschraenkt, zeigen, jubeln, melden, stopp, haende-gesicht, geben.
-  - Beispiel: `figur:sami:traurig`, `figur:lehrerin:ruhig:zeigen`.
+- **Figuren** `figur:<name>[:<gefühl>[:<haltung>]]` (`src/blatt/figuren.ts`; Raster 100 × 160, Füße bei y ≈ 152, alle Gefühle von `gesicht:`)
+  - Kinder (3 Kopfhöhen, runder Kopf): mia, noah, lea, sami, amira (Kopftuch), tom (Kappe). Für Bildgeschichten bis C3.
+  - Jugendliche (um 14: kleinerer Kopf, schlank, lange Beine, Kleidung statt Kinderhemd; für C4–ES, nichts Kindliches):
+    jana (lange Haare, Hoodie), ben (Tolle, Streifenpulli), lina (Hijab, Jacke), yusuf (dunkle Haut, Kurzlocken, T-Shirt),
+    chloe (Brille, Pferdeschwanz, Strickjacke), nele (sitzt im Rollstuhl – in jeder Haltung), finn (Hörgerät).
+    Vielfalt ist ein Merkmal der Figur, nicht ihr Thema: nele und finn für ganz normale Szenen einsetzen.
+  - Erwachsene im Alltag und Beruf: lehrerin, lehrer, mutter, vater (Bartstoppeln), verkaeuferin (Schürze, leeres Namensschild;
+    auch als Marktleiterin), arzthelferin (Kittel), chef (Hemd, Krawatte, Brille).
+  - Haltungen: stehen, winken, verschraenkt, zeigen, jubeln, melden, stopp, haende-gesicht, geben; dazu **handy** (hält ein
+    Handy mit leerem Bildschirm vor die Brust), **sitzen** (auf einem Stuhl, Beine zur Seite; die Figur sitzt tiefer, oben
+    bleibt Platz), **gehen** (Schrittstellung), **nachdenken** (Hand am Kinn), **abwenden** (halb weggedreht, die Haare
+    bedecken die Gesichtshälfte – für Ausgrenzung, Wegsehen). Die neuen Haltungen gibt es für alle Figuren; nele sitzt immer.
+  - Beispiel: `figur:sami:traurig`, `figur:lehrerin:ruhig:zeigen`, `figur:yusuf:nervoes:handy`, `figur:lina:traurig:abwenden`.
+  - Neue Figur: eine Zeile in `FIGUREN` (`figuren.ts`): `haar` (Frisur, `haarFarbe` gilt auch fürs Tuch), `haut`, `shirt`, `hose`,
+    `alter` (`kind`/`jugend`/`erwachsen` = Proportionen) und – nur ab `jugend` – `ober` (shirt, hoodie, pulli, hemd, kittel,
+    schuerze, jacke, strick, tshirt), `ober2` (zweite Farbe: Krawatte, Schürze, Innenshirt, Streifen), `brille`, `bart`, `bau`,
+    `hoergeraet`, `rollstuhl`. Die Anziehpuppe (`anziehpuppe`) nimmt nur Kinder.
+- **Szenen** `szene:<name>` – zarte Hintergründe, vor denen eine Figur gut sichtbar bleibt (`src/blatt/szenen.ts`, ohne Schrift,
+  im Schwarzweißdruck nur helle Grautöne; Vorhänge, Schränke, Decken tragen die Bereichsfarbe):
+  pausenhof (Schulhaus, Baum, Zaun, Hüpfkästchen), klassenzimmer (Tafel, Fenster, Pinnwand), bus (Fenster, Haltestange,
+  Schlaufen, Sitze am Rand), kueche (Oberschränke, Herd mit Topf, Fenster), kinderzimmer (Bett, Regal, Teppich), park (Baum,
+  Hügel, Weg, Bank), flur (Spinde, Aushang, Tür – Schulflur), kantine (Essensausgabe, Tisch mit Bänken), umkleide (Spinde, Bänke,
+  Tasche; ohne Personen oder Nacktheit), chat (Handy mit leeren Sprechblasen).
+  - **Schnittstelle für Bausteine:** `bildZeichnung('szene:bus')` liefert die Szene wie jede Zeichnung (`vb`, `formen`).
+    Alle Szenen sind **3 : 2** (viewBox 240 × 160), nur `chat` ist **3 : 4** (120 × 160, ein Handy hochkant).
+    Boden = y 132 (82,5 % der Höhe): dort stehen die Füße. Empfohlene Figur: **66 % der Szenenhöhe** hoch, Mitte bei **27 %**
+    der Breite (eine Figur) oder bei **27 % und 70 %** (zwei Figuren; Mitte und untere Hälfte sind frei).
+  - `szeneMitFiguren(name, [{ bild: 'figur:jana:traurig:stehen', x?: 0.27, hoehe?: 0.66, spiegeln?: false }, …])` setzt
+    Figuren (und `motiv:`-Bilder, Standardhöhe 30 %) in die Szene und liefert **eine** Zeichnung – sie wird wie jede andere mit
+    `Zeichnen`/`ZeichnungG` gezeichnet und in die Box eingepasst; spätere Einträge stehen vorne. `SZENEN[name]` nennt
+    Maße (`b`, `h`), Boden, empfohlene `figuren` und – bei `chat` – die leeren Sprechblasen (`blasen`: x, y, b, h, seite
+    `l` empfangen / `r` gesendet) für Text oder zum Selbstbeschriften.
+  - Vorschlag für die Anbindung: `comic`-Feld `szene` (Hintergrund je Bild), `geschichte.bild`/`bild` mit `szene:…` für das Leitbild,
+    `dialog` mit `chat` als Handy-Rahmen. Eine Figur mit Gefühl vor eine Szene zu stellen ersetzt keine Textaufgabe.
 - **Motive** `motiv:<name>` – vulkan, eisberg, batterie, batterie-leer, batterie-voll, ampel, waage, hand, koerper, schildkroete, schildkroete-panzer, baum, berg, insel, stopp, bruecke, ballon, werkzeugkiste, haus, wasserglas.
 - **Kinder-Motive: Tiere, Natur, Feste** `motiv:<name>` (farbig, für die Spielschule; `src/blatt/motive-tiere.ts`,
   erkennbar ab ca. 18 mm Bildhöhe, auch als Ausmalbild mit `modus: "anmalen"`):
