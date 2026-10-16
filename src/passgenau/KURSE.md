@@ -145,12 +145,14 @@ gleich wie -a quelle, rolle, bogen, thema, eldib, kompetenz, alter, dauer, sozia
 titel         derselbe Anfang wie die Variante („Spur 2: …“, „Werkzeug 3: …“), dann der Name der Methode („Das Statuen-Rätsel“)
 text          4–7 Sätze, nur der Kern: der erste Satz knüpft wie in der Variante an die letzte Sitzung an; dann die Methode
               Schritt für Schritt, mit Rollentausch, und zum Schluss derselbe Merksatz wie in der Variante. Nie „Blatt“ im
-              Sinn von Arbeitsblatt (der Planer hält die Übung sonst für einen Blattverweis und lässt sie weg).
+              Sinn von Arbeitsblatt (der Planer hält die Übung sonst für einen Blattverweis und lässt sie weg). Ebenso
+              verboten: „Fallkarte(n)“ (→ „Situationskarten“), „Vorlage“, „Laufzettel“, „Mission(en)“ und Nummern wie
+              „Station 1“, „Schritt 2“, „Teil 3“, „Aufgabe 1“ („Spur 2“, „Stufe 3“, „Werkzeug 4“ sind erlaubt).
 sagen         2–4 wörtliche Sätze · wennEsKippt 1–3 Sätze · imSpiel { de, fr } · fr { titel, text, sagen, wennEsKippt }
 format        mindestens ein Format, das keine Variante der Sitzung hat; t1 und t2 unterscheiden sich auch untereinander
               (z. B. t1 bewegt – Spiel, Bewegung, Statuen, Ball –, t2 ruhig – Karten, Malen, Bauen, Figuren, Gespräch)
 material      nur aus inhalte/material.json, nur Alltägliches (papier, stifte, karten, ball, wuerfel, becher, knete, bausteine …)
-zugang        was die Methode verlangt: meist { lesen: 0, schreiben: 0, bild: 2 } (passt für alle Kinder); Fallkarten mit Text
+zugang        was die Methode verlangt: meist { lesen: 0, schreiben: 0, bild: 2 } (passt für alle Kinder); Situationskarten mit Text
               für Ältere { lesen: 1, schreiben: 0, bild: 1 }
 energie, belastung, reiz   wie es die Methode verlangt (Bewegung: energie 3, reiz 1)
 ```
@@ -159,8 +161,12 @@ energie, belastung, reiz   wie es die Methode verlangt (Bewegung: energie 3, rei
 Ecken des Raums, Aufstellen auf einer Skala am Boden) · Karten ziehen, sortieren, legen · Figuren oder Handpuppe spielen
 (bis 9 Jahre) · Bauen mit Bausteinen oder Knete · Malen, Zeichnen am Tisch · Suchspiel im Raum · Geschichte weitererzählen
 (die Fachkraft beginnt, das Kind entscheidet, wie es weitergeht) · Quiz, Schätzspiel, „Stimmt’s oder stimmt’s nicht?“ ·
-kleines Experiment (Sanduhr, Becher, Stoppuhr) · ab 10: Fallkarten, Chat-Verläufe umschreiben, Interview, Rangliste,
+kleines Experiment (Sanduhr, Becher, Stoppuhr) · ab 10: Situationskarten, Chat-Verläufe umschreiben, Interview, Rangliste,
 Pro-und-Contra, Rolle tauschen („Du bist jetzt die Beraterin“).
+**Vielfalt im Kurs:** höchstens 2 der 12 Tausch-Übungen eines Kurses als Lauf-Spiel zu Ecken, Zetteln oder Stationen am
+Boden; je Kurs mindestens 6 verschiedene Methodenfamilien aus dem Vorrat. `text` höchstens etwa 950 Zeichen (4–7 klare Sätze,
+keine Semikolon-Ketten), Vorbereitung höchstens 2 Minuten, Bewegung auch in einem kleinen Raum möglich (`wennEsKippt` nennt
+eine ruhige Form im Sitzen).
 Alles bleibt für die Einzelstunde (Fachkraft als Spielpartner), schonend (eigene Beispiele freiwillig) und ohne Katharsis.
 Prüfregel 29 (`npm run -s passgenau:pruefen`) prüft die Felder; `passgenau:test` prüft, dass Blatt, Anleitung und Auftrag
 beim Tausch bleiben.

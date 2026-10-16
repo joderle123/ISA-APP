@@ -858,6 +858,215 @@
     }
   },
   {
+    "id": "ki:kurs-wut-13-16-s1-t1",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "wahrnehmen",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Kurve ablesen: Wo stehe ich gerade, 0 bis 10 – Anstieg, Gipfel oder Abstieg?",
+      "fr": "Lire sa courbe : où en suis-je, de 0 à 10 – montée, sommet ou descente ?"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 1,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Die Ärger-Kurve: Janas Standbilder",
+    "text": "Die Fachkraft zeigt die Ärger-Kurve: Anstieg, Gipfel, Abstieg. Ärger ist ein normales Signal: Er kommt wie eine Welle und fällt von selbst wieder ab. Dann liest sie Janas Szene in vier Schritten vor (Jana wird im Training ausgewechselt – ein Mitspieler lacht – der Trainer sagt nichts – Jana sitzt auf der Bank), und nach jedem Schritt zeigt der oder die Jugendliche ein Standbild, wie Jana jetzt dasteht, und nennt die Zahl von 0 bis 10. Aus den vier Zahlen zeichnet die Fachkraft Janas Kurve. Dasselbe folgt mit Bens Chat (jemand schreibt über Ben „Typisch, der kann’s nicht“ – drei lachen mit – niemand widerspricht – Ben legt das Handy weg). Zum Schluss tauschen sie: Die Fachkraft zeigt Standbilder für Mila (ärgert sich, kann noch normal reden), Luca (laut, hört kaum zu), Ben (atmet ruhiger) und Jana (heiße Hände), und er oder sie sagt jeweils Anstieg, Gipfel oder Abstieg. Heute kommt der erste Ausstieg dazu: Merken, wo man auf der Kurve steht.",
+    "sagen": [
+      "Ärger ist ein normales Signal. Er kommt wie eine Welle: hoch, Gipfel, runter.",
+      "Ich lese, was bei Jana passiert. Zeig mir ihr Standbild und sag die Zahl – null ist ruhig, zehn ist der Gipfel.",
+      "Wo steht Mila, wo Luca, wo Ben, wo Jana? Anstieg, Gipfel oder Abstieg?",
+      "Du musst nichts von dir erzählen. Wenn du magst, zeigst du auch eine eigene Kurve."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht posieren, zeigt er oder sie die Höhe im Sitzen mit der Hand (Tischkante = 0, Kopfhöhe = 10). Fällt das Einordnen schwer, genügen drei Punkte (Start, Gipfel, Ende), die die Fachkraft verbindet. „Bei mir gibt es das nicht“ ist eine Antwort: Es geht mit den erfundenen Figuren weiter, zwei Szenen genügen.",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bewegung",
+      "spiel"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Nach einem Fehler oder Pech im Spiel zeigt der oder die Jugendliche mit der Hand eine Höhe an (Tischkante = 0, Kopfhöhe = 10) und sagt dazu nur „Anstieg“, „Gipfel“ oder „Abstieg“. Das Spiel geht weiter.",
+      "fr": "Après une erreur ou un coup de malchance pendant le jeu, le ou la jeune montre une hauteur de la main (bord de la table = 0, hauteur de la tête = 10) et dit seulement « montée », « sommet » ou « descente ». Le jeu continue."
+    },
+    "zugang": {
+      "lesen": 0,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "La courbe de la colère : les arrêts sur image de Jana",
+      "text": "L’adulte montre la courbe de la colère : montée, sommet, descente. La colère est un signal normal : elle arrive comme une vague et retombe d’elle-même. Puis l’adulte lit la scène de Jana en quatre étapes (Jana est remplacée à l’entraînement – un coéquipier rit – l’entraîneur ne dit rien – Jana s’assoit sur le banc), et après chaque étape, le ou la jeune prend la pose de Jana à ce moment-là et donne un chiffre de 0 à 10. L’adulte dessine les quatre points en courbe, puis on fait pareil avec le chat de Ben (quelqu’un écrit sur Ben « Typique, il n’y arrive pas » – trois autres rient – personne ne le défend – Ben pose son téléphone). Pour finir, on échange : l’adulte prend la pose de Mila (agacée, peut encore parler normalement), de Luca (parle fort, n’écoute presque plus), de Ben (respire plus calmement) et de Jana (mains chaudes), et le ou la jeune dit chaque fois : montée, sommet ou descente. Aujourd’hui s’ajoute la première issue : repérer où l’on en est sur la courbe.",
+      "sagen": [
+        "La colère est un signal normal. Elle arrive comme une vague : elle monte, atteint un sommet et redescend.",
+        "Je lis ce qui arrive à Jana. Montre-moi sa pose et dis le chiffre – zéro, c’est calme, dix, c’est le sommet.",
+        "Où est Mila, où est Luca, où est Ben, où est Jana ? Montée, sommet ou descente ?",
+        "Tu n’as rien à raconter sur toi. Si tu veux, tu montres aussi une courbe à toi."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas prendre la pose, il ou elle montre la hauteur de la main, assis (bord de la table = 0, hauteur de la tête = 10). S’il est difficile de classer, trois points suffisent (départ, sommet, fin) et l’adulte les relie. « Chez moi, ça n’existe pas » est une réponse : on continue avec les personnages inventés, deux scènes suffisent."
+    }
+  },
+  {
+    "id": "ki:kurs-wut-13-16-s1-t2",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "wahrnehmen",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Kurve ablesen: Wo stehe ich gerade, 0 bis 10 – Anstieg, Gipfel oder Abstieg?",
+      "fr": "Lire sa courbe : où en suis-je, de 0 à 10 – montée, sommet ou descente ?"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 1,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Die Ärger-Kurve: Die Kurve aus Bausteinen",
+    "text": "Die Fachkraft zeigt die Ärger-Kurve: Anstieg, Gipfel, Abstieg. Ärger ist ein normales Signal: Er kommt wie eine Welle und fällt von selbst wieder ab. Auf dem Tisch liegen vier Papierstreifen mit dem Gruppenchat über Ben („Typisch, der kann’s nicht“ – drei lachen mit – niemand widerspricht – Ben legt das Handy weg) und ein Papier mit einer Achse von 0 bis 10. Der oder die Jugendliche gibt jedem Streifen eine Zahl, setzt einen Baustein auf die passende Höhe und verbindet sie mit dem Stift. Dann entsteht Janas Kurve (ausgewechselt, ein Mitspieler lacht, der Trainer schweigt, Jana sitzt auf der Bank), und er oder sie legt vier Karten an die passende Stelle: Mila (ärgert sich, kann noch normal reden), Luca (laut, hört kaum zu), Ben (atmet ruhiger), Jana (heiße Hände). Zum Schluss legt die Fachkraft eine Kurve mit einem Fehler, und er oder sie findet ihn. Heute kommt der erste Ausstieg dazu: Merken, wo man auf der Kurve steht.",
+    "sagen": [
+      "Ärger ist ein normales Signal. Er kommt wie eine Welle: hoch, Gipfel, runter.",
+      "Gib jedem Streifen aus dem Chat eine Zahl von null bis zehn und setz einen Baustein dorthin. Wie hoch geht Bens Kurve?",
+      "Was lässt die Kurve fallen? Und wo steht Luca, wo Mila – Anstieg, Gipfel oder Abstieg?",
+      "Du musst nichts von dir erzählen. Wenn du magst, baust du auch eine eigene Kurve."
+    ],
+    "wennEsKippt": "Fällt das Zahlengeben schwer, legt der oder die Jugendliche die Streifen nur nach „niedrig – mittel – hoch“ in eine Reihe, und die Fachkraft setzt die Bausteine. Mag er oder sie nicht bauen, zeigt er oder sie die Höhe mit der Hand. „Bei mir gibt es das nicht“ ist eine Antwort: Zwei Kurven der erfundenen Figuren genügen.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bauen",
+      "karten"
+    ],
+    "material": [
+      "bausteine",
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Bei einer Pause im Spiel legt der oder die Jugendliche einen Baustein ans Raster auf dem Tisch: so hoch steht die Kurve gerade, null bis zehn. Mehr braucht es nicht.",
+      "fr": "Pendant une pause du jeu, le ou la jeune pose un cube sur la grille de la table : voilà à quelle hauteur est la courbe en ce moment, de zéro à dix. Il n’en faut pas plus."
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "La courbe de la colère : la courbe en cubes",
+      "text": "L’adulte montre la courbe de la colère : montée, sommet, descente. La colère est un signal normal : elle arrive comme une vague et retombe d’elle-même. Sur la table, quatre bandes de papier avec le chat de groupe sur Ben (« Typique, il n’y arrive pas » – trois autres rient – personne ne le défend – Ben pose son téléphone) et une feuille avec un axe de 0 à 10. Le ou la jeune donne un chiffre à chaque bande, pose un cube à la bonne hauteur et les relie au stylo. Puis vient la courbe de Jana (remplacée, un coéquipier rit, l’entraîneur ne dit rien, Jana s’assoit sur le banc), et il ou elle pose quatre cartes à l’endroit qui convient : Mila (agacée, peut encore parler normalement), Luca (parle fort, n’écoute presque plus), Ben (respire plus calmement), Jana (mains chaudes). Pour finir, l’adulte pose une courbe avec une erreur, et le ou la jeune la trouve. Aujourd’hui s’ajoute la première issue : repérer où l’on en est sur la courbe.",
+      "sagen": [
+        "La colère est un signal normal. Elle arrive comme une vague : elle monte, atteint un sommet et redescend.",
+        "Donne un chiffre de zéro à dix à chaque bande du chat et pose un cube à cette hauteur. Jusqu’où monte la courbe de Ben ?",
+        "Qu’est-ce qui la fait redescendre ? Et où est Luca, où est Mila – montée, sommet ou descente ?",
+        "Tu n’as rien à raconter sur toi. Si tu veux, tu construis aussi une courbe à toi."
+      ],
+      "wennEsKippt": "S’il est difficile de donner un chiffre, le ou la jeune range les bandes seulement en « bas – moyen – haut » et l’adulte pose les cubes. S’il ou elle ne veut pas construire, il ou elle montre la hauteur de la main. « Chez moi, ça n’existe pas » est une réponse : deux courbes de personnages inventés suffisent."
+    }
+  },
+  {
     "id": "ki:kurs-wut-13-16-s2-a",
     "quelle": {
       "art": "praxis",
@@ -1669,6 +1878,212 @@
       "lesen": 1,
       "schreiben": 0,
       "bild": 2
+    }
+  },
+  {
+    "id": "ki:kurs-wut-13-16-s2-t1",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "verstehen",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Früh stoppen: das erste Körperzeichen bemerken und den Anstieg bremsen",
+      "fr": "Stopper tôt : repérer le premier signe dans le corps et freiner la montée"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 2,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Trigger und Frühwarnzeichen: Der Trigger-Ball",
+    "text": "Die Kurve kennt schon den Ausstieg Merken, heute kommt der zweite dazu: früh stoppen. Die Fachkraft sagt kurz, dass Ärger einen Auslöser (Trigger) hat und der Körper ihn früh meldet (Kiefer, Fäuste, Hitze, Herzschlag). Beide spielen sich einen Ball zu, und bei jedem Pass nennt die Fachkraft einen Auslöser (ausgelacht werden, ungerecht behandelt werden, im Chat ignoriert werden, dass jemand etwas ohne Fragen nimmt, dauernd korrigiert werden, dass über mich geredet wird). Wer fängt, nennt das erste Zeichen, das Ben oder Jana dabei im Körper spüren würde („Kiefer fest“), und sagt „Anstieg“. Nach sechs Pässen schauen beide, welche Zeichen mehrfach vorkamen, tauschen die Rollen und bauen einen Wenn-dann-Plan („Wenn mein Kiefer fest wird, sage ich mir ‚Anstieg‘ und atme lang aus“). Eigene Auslöser gibt es nur, wenn er oder sie mag. Je früher man das Zeichen bemerkt, desto leichter ist der Ausstieg.",
+    "sagen": [
+      "Ärger kommt nicht aus dem Nichts. Es gibt einen Auslöser, und dein Körper meldet sich meistens früher als dein Mund.",
+      "Ich spiele dir den Ball zu und sage einen Auslöser. Du sagst das erste Zeichen, das Ben im Körper spüren würde, und rufst: Anstieg.",
+      "Welches Zeichen kam öfter vor? Das ist ein guter Kandidat für deinen Plan.",
+      "Je früher du das Zeichen bemerkst, desto leichter ist der Ausstieg. Am Gipfel ist es am schwersten."
+    ],
+    "wennEsKippt": "Findet der oder die Jugendliche kein Zeichen, legt die Fachkraft drei Beispiele vor (Kiefer, Wärme im Gesicht, schnellerer Puls), und es genügt, eines zu wählen. „Spür ich nichts“ ist eine gültige Antwort: Dann zählt das Verhalten (lauter, schneller, wegschauen). Mag er oder sie nicht mit dem Ball spielen, geht dieselbe Übung im Sitzen mit vier Auslösern.",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "bewegung"
+    ],
+    "material": [
+      "ball"
+    ],
+    "imSpiel": {
+      "de": "Bei einem Spiel nennt die Fachkraft nach einer kleinen Stichelei („Na, das war wohl nichts.“) leise ihr eigenes erstes Zeichen („Kiefer fest.“) und spielt dem oder der Jugendlichen den Ball zu: „Und bei dir?“ Ein Wort genügt.",
+      "fr": "Pendant un jeu, après une petite pique (« Eh bien, ça n’a pas marché. »), l’adulte nomme à voix basse son propre premier signe (« Mâchoire serrée. ») et passe la balle au ou à la jeune : « Et toi ? » Un mot suffit."
+    },
+    "zugang": {
+      "lesen": 0,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Déclencheurs et signes avant-coureurs : le ballon des déclencheurs",
+      "text": "La courbe connaît déjà l’issue Repérer ; aujourd’hui s’ajoute la deuxième : stopper tôt. L’adulte explique en deux mots que la colère a un déclencheur et que le corps le signale tôt (mâchoire, poings, chaleur, battements du cœur). Les deux se lancent une balle, et à chaque passe l’adulte nomme un déclencheur (se faire moquer, être traité injustement, être ignoré dans le chat, que quelqu’un prenne quelque chose sans demander, être sans cesse corrigé, qu’on parle de moi dans mon dos). Celui ou celle qui attrape la balle nomme le premier signe que Ben ou Jana sentirait dans son corps (« mâchoire serrée ») et dit « montée ». Après six passes, les deux regardent quels signes sont revenus plusieurs fois, échangent les rôles et construisent un plan « si… alors » (« Si ma mâchoire se serre, je me dis “montée” et j’expire longuement »). Des déclencheurs personnels seulement s’il ou elle le souhaite. Plus tôt on remarque le signe, plus l’issue est facile.",
+      "sagen": [
+        "La colère ne vient pas de nulle part. Il y a un déclencheur, et ton corps réagit en général avant ta bouche.",
+        "Je te passe la balle et je dis un déclencheur. Tu dis le premier signe que Ben sentirait dans son corps, et tu cries : montée.",
+        "Quel signe est revenu plus souvent ? C’est un bon candidat pour ton plan.",
+        "Plus tôt tu remarques le signe, plus l’issue est facile. Au sommet, c’est le plus difficile."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de signe, l’adulte propose trois exemples (mâchoire, chaleur au visage, pouls plus rapide) et il suffit d’en choisir un. « Je ne sens rien » est une réponse valable : alors on regarde le comportement (voix plus forte, gestes plus rapides, regard qui se détourne). S’il ou elle ne veut pas jouer à la balle, le même exercice se fait assis avec quatre déclencheurs."
+    }
+  },
+  {
+    "id": "ki:kurs-wut-13-16-s2-t2",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "verstehen",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Früh stoppen: das erste Körperzeichen bemerken und den Anstieg bremsen",
+      "fr": "Stopper tôt : repérer le premier signe dans le corps et freiner la montée"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 2,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Trigger und Frühwarnzeichen: Die Rangliste",
+    "text": "Die Kurve kennt schon den Ausstieg Merken, heute kommt der zweite dazu: früh stoppen. Die Fachkraft sagt kurz, dass Ärger einen Auslöser (Trigger) hat und der Körper ihn früh meldet (Kiefer, Fäuste, Hitze, Herzschlag). Auf sechs Karten stehen die Auslöser (ausgelacht werden, ungerecht behandelt werden, im Chat ignoriert werden, dass jemand etwas ohne Fragen nimmt, dauernd korrigiert werden, dass über mich geredet wird). Der oder die Jugendliche legt eine Rangliste, oben das, was bei vielen Jugendlichen die Kurve am steilsten steigen lässt. Zu den zwei obersten zeigt er oder sie auf einem Körperumriss das erste Frühwarnzeichen und baut mit der Fachkraft einen Wenn-dann-Plan („Wenn mein Kiefer fest wird, sage ich mir ‚Anstieg‘ und atme lang aus“). Zum Schluss legt die Fachkraft ihre eigene Rangliste, und er oder sie fragt nach: „Woran merkst du das?“ Je früher man das Zeichen bemerkt, desto leichter ist der Ausstieg.",
+    "sagen": [
+      "Ärger kommt nicht aus dem Nichts. Es gibt einen Auslöser, und dein Körper meldet sich meistens früher als dein Mund.",
+      "Leg die Karten in eine Reihe: oben, was bei vielen Jugendlichen die Kurve am steilsten steigen lässt.",
+      "Wann macht Müdigkeit, Hunger oder Stress den größten Unterschied? Und was ist dann das erste Zeichen?",
+      "Je früher du das Zeichen bemerkst, desto leichter ist der Ausstieg."
+    ],
+    "wennEsKippt": "Sind sechs Karten zu viele, legt die Fachkraft vier hin. Fällt das Ordnen schwer, genügt die Frage: „Welche zwei lassen die Kurve am steilsten steigen?“ „Weiß nicht“ kommt in eine Spalte „noch offen“. Eine leere Karte gibt es für einen eigenen Auslöser, freiwillig. Ein Zeichen und ein Plan genügen.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "karten"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Wenn im Spiel eine Stichelei fällt, hebt die Fachkraft eine Auslöser-Karte hoch und fragt leise: „Wie weit oben läge das bei dir – oben, Mitte oder unten?“ Der oder die Jugendliche zeigt es mit der Hand.",
+      "fr": "Quand une pique fuse pendant le jeu, l’adulte lève une carte déclencheur et demande à voix basse : « Où se situerait-elle pour toi – en haut, au milieu ou en bas ? » Le ou la jeune le montre de la main."
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Déclencheurs et signes avant-coureurs : le classement",
+      "text": "La courbe connaît déjà l’issue Repérer ; aujourd’hui s’ajoute la deuxième : stopper tôt. L’adulte explique en deux mots que la colère a un déclencheur et que le corps le signale tôt (mâchoire, poings, chaleur, battements du cœur). Six cartes présentent les déclencheurs (se faire moquer, être traité injustement, être ignoré dans le chat, que quelqu’un prenne quelque chose sans demander, être sans cesse corrigé, qu’on parle de moi dans mon dos). Le ou la jeune fait un classement, en haut ce qui fait monter la courbe le plus raide chez beaucoup de jeunes. Pour les deux premières, il ou elle montre sur une silhouette le premier signe avant-coureur et construit avec l’adulte un plan « si… alors » (« Si ma mâchoire se serre, je me dis “montée” et j’expire longuement »). Pour finir, l’adulte pose son propre classement, et le ou la jeune demande : « À quoi tu le remarques ? » Plus tôt on remarque le signe, plus l’issue est facile.",
+      "sagen": [
+        "La colère ne vient pas de nulle part. Il y a un déclencheur, et ton corps réagit en général avant ta bouche.",
+        "Range les cartes en ligne : en haut, ce qui fait monter la courbe le plus raide chez beaucoup de jeunes.",
+        "Quand la fatigue, la faim ou le stress changent-ils le plus de choses ? Et quel est alors le premier signe ?",
+        "Plus tôt tu remarques le signe, plus l’issue est facile."
+      ],
+      "wennEsKippt": "Si six cartes, c’est trop, l’adulte n’en pose que quatre. S’il est difficile de classer, la question suffit : « Quelles deux cartes font monter la courbe le plus raide ? » Un « je ne sais pas » va dans une colonne « encore ouvert ». Une carte vide est prévue pour un déclencheur personnel, facultatif. Un signe et un plan suffisent."
     }
   },
   {
@@ -2686,6 +3101,215 @@
     }
   },
   {
+    "id": "ki:kurs-wut-13-16-s3-t1",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "ueben",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Drei Prüffragen: Was weiß ich sicher? Was vermute ich nur? Was könnte es sonst sein?",
+      "fr": "Trois questions : qu’est-ce que je sais ? Qu’est-ce que je suppose ? Autre explication ?"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 3,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Denkfallen prüfen: Das Fakt-Quiz",
+    "text": "Die Kurve kennt Merken und Früh stoppen, heute kommt Prüfen dazu. Ben geht im Flur grußlos an Jana vorbei, und zwischen Auslöser und Ärger steckt ein Gedanke („Der ignoriert mich extra.“). Dann das Quiz: Die Fachkraft liest sechs Sätze vor (Ben ist an mir vorbeigegangen. – Er macht das extra. – Er mag mich nicht mehr), und der oder die Jugendliche hält die F-Karte (Fakt) oder die V-Karte (Vermutung) hoch. Bei jeder Vermutung nennt er oder sie eine andere Erklärung (in Gedanken, schlechter Tag, hat es nicht gesehen) und die Denkfalle dahinter: Absicht unterstellen, Gedanken lesen oder Immer und nie. Zum Schluss tauschen sie: Er oder sie sagt einen heißen Gedanken, die Fachkraft hebt eine Karte und stellt die drei Prüffragen (Was weiß ich sicher? Was vermute ich nur? Was könnte es sonst sein?). Zwischen dem, was passiert, und dem Ärger sitzt ein Gedanke – Prüfen heißt nicht, dass der andere recht hat.",
+    "sagen": [
+      "Ich lese einen Satz, du zeigst: F für Fakt oder V für Vermutung.",
+      "Bei einer Vermutung sag: Es könnte auch sein, dass … Und welche Denkfalle steckt darin?",
+      "Drei Fragen an den heißen Gedanken: Was weiß ich sicher? Was vermute ich nur? Was könnte es sonst sein?",
+      "Prüfen heißt nicht, dass der andere recht hat. Manchmal stimmt der Gedanke – dann überlegen wir, wie du es fair sagst."
+    ],
+    "wennEsKippt": "Fällt keine andere Erklärung ein, legt die Fachkraft drei zur Wahl vor (in Gedanken, schlechter Tag, hat es nicht gesehen). Hält der oder die Jugendliche den Gedanken für sicher, wird er nicht ausgeredet: Die Fachkraft fragt nur „Woran siehst du das?“. Statt der Karten genügt die linke oder rechte Hand. Vier Sätze und eine andere Erklärung genügen.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "quiz",
+      "karten"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Wenn im Spiel etwas schiefgeht und eine Stichelei fällt („Das war doch Absicht.“), fragt die Fachkraft leise: „Fakt oder Vermutung?“ Der oder die Jugendliche zeigt mit der linken oder rechten Hand.",
+      "fr": "Quand quelque chose tourne mal dans le jeu et qu’une pique fuse (« C’était fait exprès. »), l’adulte demande à voix basse : « Fait ou supposition ? » Le ou la jeune montre la main gauche ou droite."
+    },
+    "zugang": {
+      "lesen": 0,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Vérifier ses pensées : le quiz des faits",
+      "text": "La courbe connaît Repérer et Stopper tôt ; aujourd’hui s’ajoute Vérifier. Ben passe devant Jana dans le couloir sans la saluer, et entre le déclencheur et la colère se glisse une pensée (« Il m’ignore exprès. »). Puis le quiz : l’adulte lit six phrases (Ben est passé devant moi. – Il le fait exprès. – Il ne m’aime plus), et le ou la jeune lève la carte F (fait) ou la carte S (supposition). Pour chaque supposition, il ou elle nomme une autre explication (perdu dans ses pensées, mauvaise journée, n’a pas vu) et le piège de pensée qui s’y cache : prêter une mauvaise intention, lire dans les pensées ou toujours et jamais. Pour finir, on échange : il ou elle dit une pensée chaude, l’adulte lève une carte et pose les trois questions (Qu’est-ce que je sais avec certitude ? Qu’est-ce que je suppose seulement ? Qu’est-ce que ça pourrait être d’autre ?). Entre ce qui se passe et la colère, il y a une pensée – vérifier ne veut pas dire que l’autre a raison.",
+      "sagen": [
+        "Je lis une phrase, tu montres : F pour fait ou S pour supposition.",
+        "Pour une supposition, dis : ça pourrait aussi être que… Et quel piège de pensée s’y cache ?",
+        "Trois questions à la pensée chaude : qu’est-ce que je sais avec certitude ? Qu’est-ce que je suppose seulement ? Qu’est-ce que ça pourrait être d’autre ?",
+        "Vérifier ne veut pas dire que l’autre a raison. Parfois la pensée est juste – alors on cherche comment le dire de façon juste."
+      ],
+      "wennEsKippt": "Si aucune autre explication ne vient, l’adulte en propose trois au choix (perdu dans ses pensées, mauvaise journée, n’a pas vu). Si le ou la jeune tient la pensée pour certaine, on ne cherche pas à l’en dissuader : l’adulte demande seulement « À quoi tu le vois ? ». À la place des cartes, la main gauche ou droite suffit. Quatre phrases et une autre explication suffisent."
+    }
+  },
+  {
+    "id": "ki:kurs-wut-13-16-s3-t2",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "ueben",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Drei Prüffragen: Was weiß ich sicher? Was vermute ich nur? Was könnte es sonst sein?",
+      "fr": "Trois questions : qu’est-ce que je sais ? Qu’est-ce que je suppose ? Autre explication ?"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 3,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Denkfallen prüfen: Pro und Contra",
+    "text": "Die Kurve kennt Merken und Früh stoppen, heute kommt Prüfen dazu. Ben geht im Flur grußlos an Jana vorbei, und zwischen Auslöser und Ärger steckt ein Gedanke („Der ignoriert mich extra.“). Auf einem Papier stehen zwei Spalten, „Das spricht dafür“ und „Das spricht dagegen“. Der oder die Jugendliche sammelt, die Fachkraft schreibt mit: was er oder sie sicher weiß (Ben ist vorbeigegangen und hat nichts gesagt), was nur vermutet ist und welche anderen Erklärungen es gibt. Dann legt er oder sie Bausteine auf beide Seiten, entscheidet, welche Seite schwerer wiegt, und ordnet dem Gedanken eine der drei Denkfallen zu: Absicht unterstellen, Gedanken lesen oder Immer und nie. Zum Schluss tauschen sie: Die Fachkraft bringt einen neuen Gedanken („Nie hört mir jemand zu“), er oder sie stellt die drei Prüffragen und formuliert einen Prüf-Plan als Wenn-dann-Satz. Zwischen dem, was passiert, und dem Ärger sitzt ein Gedanke – Prüfen heißt nicht, dass der andere recht hat.",
+    "sagen": [
+      "In die Mitte kommt der heiße Gedanke: Der ignoriert mich extra. Links, was dafür spricht, rechts, was dagegen spricht.",
+      "Was weißt du sicher, und was vermutest du nur? Was könnte es sonst sein?",
+      "Welche Seite wiegt schwerer? Und welche Denkfalle steckt im Gedanken?",
+      "Prüfen heißt nicht, dass der andere recht hat. Manchmal stimmt der Gedanke – dann überlegen wir, wie du es fair sagst."
+    ],
+    "wennEsKippt": "Fällt dem oder der Jugendlichen keine andere Erklärung ein, legt die Fachkraft drei zur Wahl vor (in Gedanken, schlechter Tag, hat es nicht gesehen). Hält er oder sie den Gedanken für sicher, wird er nicht ausgeredet: Die Fachkraft fragt nur „Woran siehst du das?“ und merkt sich, dass dieser Fall zu Sagen passt. Eine Spalte mit je zwei Einträgen genügt.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "karten"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "bausteine"
+    ],
+    "imSpiel": {
+      "de": "Fällt im Spiel eine Stichelei, fragt die Fachkraft leise: „Ein Argument dafür, ein Argument dagegen?“ Der oder die Jugendliche nennt je eines in wenigen Worten.",
+      "fr": "Quand une pique fuse pendant le jeu, l’adulte demande à voix basse : « Un argument pour, un argument contre ? » Le ou la jeune en donne un de chaque en quelques mots."
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Vérifier ses pensées : le pour et le contre",
+      "text": "La courbe connaît Repérer et Stopper tôt ; aujourd’hui s’ajoute Vérifier. Ben passe devant Jana dans le couloir sans la saluer, et entre le déclencheur et la colère se glisse une pensée (« Il m’ignore exprès. »). Sur une feuille, deux colonnes, « Ce qui parle pour » et « Ce qui parle contre ». Le ou la jeune rassemble, l’adulte note : ce qu’il ou elle sait avec certitude (Ben est passé devant et n’a rien dit), ce qui n’est que supposé et quelles autres explications existent. Puis il ou elle pose des cubes des deux côtés, décide quel côté pèse le plus lourd et attribue à la pensée l’un des trois pièges : prêter une mauvaise intention, lire dans les pensées ou toujours et jamais. Pour finir, on échange : l’adulte apporte une nouvelle pensée (« Personne ne m’écoute jamais »), le ou la jeune pose les trois questions et formule un plan de vérification sous forme de « si… alors ». Entre ce qui se passe et la colère, il y a une pensée – vérifier ne veut pas dire que l’autre a raison.",
+      "sagen": [
+        "Au milieu, la pensée chaude : il m’ignore exprès. À gauche, ce qui parle pour, à droite, ce qui parle contre.",
+        "Qu’est-ce que tu sais avec certitude, et qu’est-ce que tu supposes seulement ? Qu’est-ce que ça pourrait être d’autre ?",
+        "Quel côté pèse le plus lourd ? Et quel piège de pensée se cache dans cette pensée ?",
+        "Vérifier ne veut pas dire que l’autre a raison. Parfois la pensée est juste – alors on cherche comment le dire de façon juste."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne trouve pas d’autre explication, l’adulte en propose trois au choix (perdu dans ses pensées, mauvaise journée, n’a pas vu). S’il ou elle tient la pensée pour certaine, on ne cherche pas à l’en dissuader : l’adulte demande seulement « À quoi tu le vois ? » et note que ce cas relève plutôt de Dire. Une colonne avec deux entrées de chaque côté suffit."
+    }
+  },
+  {
     "id": "ki:kurs-wut-13-16-s4-a",
     "quelle": {
       "art": "praxis",
@@ -3619,6 +4243,215 @@
       "lesen": 1,
       "schreiben": 0,
       "bild": 2
+    }
+  },
+  {
+    "id": "ki:kurs-wut-13-16-s4-t1",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "ueben",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Auszeit mit Rückkehr: Pause, lang ausatmen oder Ort wechseln – früh genug",
+      "fr": "Pause avec retour : s’arrêter, expirer longuement ou changer d’endroit – assez tôt"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 4,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Ausstiege: Das Stoppuhr-Experiment",
+    "text": "Die Kurve kennt Merken, Früh stoppen und Prüfen, heute kommt der vierte Ausstieg dazu: die Auszeit, die auch kurz vor dem Gipfel noch geht. Der oder die Jugendliche stellt sich einen leichten Ärger vor (die Pause fällt aus) und nennt die Zahl. Durchgang A, ohne Auszeit: eine Minute sitzen bleiben und an den Auslöser denken, bei 20, 40 und 60 Sekunden zeigt er oder sie die Zahl mit den Fingern. Durchgang B, mit Auszeit bei 6: derselbe Auslöser, dann nacheinander drei Wege je eine Minute – lang ausatmen (vier ein, sechs aus), Ortswechsel (zum Fenster und zurück, Wasser holen) und Pause mit Rückkehr, dazu der Pausen-Satz auf „Jetzt hör endlich auf damit.“ –, jeweils mit der Zahl vorher und nachher. Die Fachkraft zeichnet beide Kurven, und beide sehen, welcher Weg passt. Zum Schluss macht die Fachkraft Durchgang B mit ihrer eigenen Zahl, und er oder sie liest ab. Am Gipfel kommst du mit Nachdenken nicht weiter – dann hilft nur Abstand.",
+    "sagen": [
+      "Wir machen ein Experiment mit der Stoppuhr. Erst eine Minute ohne Auszeit, dann mit drei Wegen. Ich frage dich nach der Zahl.",
+      "Hier fällt die Pause aus. Wie hoch steht deine Kurve – nur eine Zahl.",
+      "Lang ausatmen: vier zählen ein, sechs aus. Und jetzt: Ist die Zahl gesunken?",
+      "Eine Pause ist keine Flucht, wenn du sagst, dass du gehst, wie lange, und dass du wiederkommst."
+    ],
+    "wennEsKippt": "Merkt der oder die Jugendliche bei einem Weg keinen Unterschied, ist das ein gültiges Ergebnis: Der Weg fällt aus der Wahl. Wird die Atemübung unangenehm (Schwindel, Druck), wird sofort normal geatmet. Zwei getestete Wege, die Zahlen und ein Favorit genügen.",
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "atmen",
+      "sinne"
+    ],
+    "material": [
+      "uhr",
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Mitten im Spiel macht die Fachkraft eine Auszeit vor: „Ich brauche eine Minute, ich bin gleich wieder da.“ Sie atmet am Fenster lang aus, kommt zurück und sagt ihre Zahl vorher und nachher.",
+      "fr": "En plein jeu, l’adulte montre une pause : « J’ai besoin d’une minute, je reviens tout de suite. » Elle expire longuement à la fenêtre, revient et donne son chiffre avant et après."
+    },
+    "zugang": {
+      "lesen": 0,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Issues : l’expérience du chronomètre",
+      "text": "La courbe connaît Repérer, Stopper tôt et Vérifier ; aujourd’hui s’ajoute la quatrième issue : prendre du recul, qui fonctionne encore près du sommet. Le ou la jeune imagine une scène légèrement agaçante (la récré est supprimée) et donne son chiffre. Passage A, sans pause : rester assis une minute en pensant au déclencheur, à 20, 40 et 60 secondes, il ou elle montre le chiffre avec les doigts. Passage B, avec pause à 6 : le même déclencheur, puis trois méthodes l’une après l’autre, une minute chacune – expirer longuement (quatre temps pour inspirer, six pour expirer), changer d’endroit (aller à la fenêtre et revenir, chercher de l’eau) et pause avec retour, avec la phrase de pause en réponse à « Arrête un peu avec ça. » –, chaque fois avec le chiffre avant et après. L’adulte dessine les deux courbes, et les deux voient quelle méthode convient. Pour finir, l’adulte fait le passage B avec son propre chiffre, et le ou la jeune lit les résultats. Au sommet, réfléchir ne mène à rien – seul le recul aide.",
+      "sagen": [
+        "On fait une expérience avec le chronomètre. D’abord une minute sans pause, puis avec trois méthodes. Je te demande ton chiffre.",
+        "Ici, la récré est supprimée. À quelle hauteur est ta courbe – juste un chiffre.",
+        "Expire longuement : quatre pour inspirer, six pour expirer. Et maintenant : le chiffre est-il descendu ?",
+        "Une pause n’est pas une fuite si tu dis que tu pars, pour combien de temps et que tu reviens."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne sent pas de différence avec une méthode, c’est un résultat valable : elle sort du choix. Si l’exercice de respiration devient désagréable (vertige, oppression), on respire aussitôt normalement. Deux méthodes testées, les chiffres et une préférée suffisent."
+    }
+  },
+  {
+    "id": "ki:kurs-wut-13-16-s4-t2",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "ueben",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Auszeit mit Rückkehr: Pause, lang ausatmen oder Ort wechseln – früh genug",
+      "fr": "Pause avec retour : s’arrêter, expirer longuement ou changer d’endroit – assez tôt"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 4,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Ausstiege: Die Beratung",
+    "text": "Die Kurve kennt Merken, Früh stoppen und Prüfen, heute kommt der vierte Ausstieg dazu: die Auszeit, die auch kurz vor dem Gipfel noch geht. Dann Rollentausch: Der oder die Jugendliche ist heute Beraterin oder Berater, die Fachkraft spielt Luca, der sagt: „Wenn ich einmal drin bin, komme ich nicht mehr raus.“ Auf drei Karten stehen lang ausatmen (vier ein, sechs aus), Ortswechsel (zum Fenster und zurück, Wasser holen) und Pause mit Rückkehr, und er oder sie empfiehlt die zwei, die Luca am meisten helfen, und sagt, bei welcher Zahl Luca spätestens aussteigen sollte. Gemeinsam bauen sie den Pausen-Satz in drei Teilen (ich gehe – so lange – ich komme wieder), Luca probiert ihn bei Bens „Jetzt hör endlich auf damit.“, und die Beratung gibt Rückmeldung. Zum Schluss sagt er oder sie den Pausen-Satz selbst, und die Fachkraft fragt als Beraterin nach. Eine Pause ist keine Flucht, wenn man sagt, dass man geht, wie lange und dass man wiederkommt.",
+    "sagen": [
+      "Heute bist du Beraterin oder Berater. Ich bin Luca: Wenn ich einmal drin bin, komme ich nicht mehr raus.",
+      "Welche zwei Wege empfiehlst du ihm? Und bei welcher Zahl soll er spätestens aussteigen?",
+      "Hilf mir mit dem Satz: ich gehe – so lange – ich komme wieder.",
+      "Eine Pause ist keine Flucht, wenn du sagst, dass du gehst, wie lange, und dass du wiederkommst."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht spielen, ordnet er oder sie die Wege-Karten nur nach „hilft früh“ und „hilft kurz vor dem Gipfel“, und die Fachkraft liest den Pausen-Satz vor. Wird eine Atemübung unangenehm (Schwindel, Druck), wird sofort normal geatmet. Zwei Wege und ein Satz genügen.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "rollenspiel",
+      "karten"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Mitten im Spiel fragt die Fachkraft als „Luca“: „Wie komme ich hier raus, wenn ich schon bei sieben bin?“ Der oder die Jugendliche gibt in einem Satz seinen oder ihren Rat.",
+      "fr": "En plein jeu, l’adulte demande dans le rôle de « Luca » : « Comment je m’en sors si je suis déjà à sept ? » Le ou la jeune donne son conseil en une phrase."
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Issues : la séance de conseil",
+      "text": "La courbe connaît Repérer, Stopper tôt et Vérifier ; aujourd’hui s’ajoute la quatrième issue : prendre du recul, qui fonctionne encore près du sommet. Puis on échange les rôles : le ou la jeune est conseiller ou conseillère, l’adulte joue Luca, qui dit : « Quand je suis lancé, je n’arrive plus à en sortir. » Trois cartes présentent expirer longuement (quatre temps pour inspirer, six pour expirer), changer d’endroit (aller à la fenêtre et revenir, chercher de l’eau) et pause avec retour, et le ou la jeune recommande les deux qui aideront le plus Luca et dit à partir de quel chiffre Luca devrait sortir au plus tard. Ensemble, ils construisent la phrase de pause en trois parties (je m’en vais – pour combien de temps – je reviens), Luca l’essaie face à Ben qui dit « Arrête un peu avec ça. », et le conseiller ou la conseillère donne un retour. Pour finir, il ou elle dit lui-même la phrase de pause, et l’adulte pose des questions en conseillère. Une pause n’est pas une fuite si l’on dit qu’on part, pour combien de temps et qu’on revient.",
+      "sagen": [
+        "Aujourd’hui, tu es conseiller ou conseillère. Moi, je suis Luca : quand je suis lancé, je n’arrive plus à en sortir.",
+        "Quelles deux méthodes lui recommandes-tu ? Et à partir de quel chiffre doit-il sortir, au plus tard ?",
+        "Aide-moi avec la phrase : je m’en vais – pour combien de temps – je reviens.",
+        "Une pause n’est pas une fuite si tu dis que tu pars, pour combien de temps et que tu reviens."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas jouer, il ou elle classe seulement les cartes méthodes en « aide tôt » et « aide juste avant le sommet », et l’adulte lit la phrase de pause. Si un exercice de respiration devient désagréable (vertige, oppression), on respire aussitôt normalement. Deux méthodes et une phrase suffisent."
     }
   },
   {
@@ -4612,6 +5445,213 @@
     }
   },
   {
+    "id": "ki:kurs-wut-13-16-s5-t1",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "uebertragen",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "4-Schritte-Satz: Fakt, Gefühl, Bitte, Nutzen – im Gespräch und im Chat",
+      "fr": "Phrase en 4 étapes : fait, émotion, demande, bénéfice – à l’oral et par écrit"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 5,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Ärger sagen: Der Satz-Würfel",
+    "text": "Die Kurve hat vier Ausstiege, heute kommt der fünfte dazu: sagen, was los ist, ohne dass es eskaliert. Die Fachkraft zeigt den 4-Schritte-Satz (vereinfacht nach DEAR MAN): Fakt, Gefühl, Bitte, Nutzen. Ben hat Jana dreimal nicht angespielt, und auf dem Würfel steht 1 für Fakt, 2 für Gefühl, 3 für Bitte, 4 für Nutzen, bei 5 und 6 darf man wählen. Der oder die Jugendliche würfelt und sagt den gewürfelten Teil für Ben, bis alle vier gesagt sind, und hört dann den ganzen Satz („Dreimal kein Ball. Das ärgert mich. Spiel mich bitte öfter an. Dann klappt unser Spiel besser.“) im Vergleich zu Bens Vorwurf („Du spielst mich nie an. Du bist so egoistisch.“): Wie reagiert Jana jeweils? Zum Schluss tauschen sie: Die Fachkraft würfelt für eine zweite Situation und lässt einen Teil weg, und er oder sie ergänzt ihn. Für Nachrichten gilt: erst formulieren, zehn Minuten liegen lassen. Du sagst, was du brauchst, nicht, was der andere falsch macht.",
+    "sagen": [
+      "Wir würfeln den Satz: 1 ist Fakt, 2 Gefühl, 3 Bitte, 4 Nutzen, bei 5 und 6 darfst du wählen.",
+      "Ben hat Jana dreimal nicht angespielt. Sag den Teil, den der Würfel zeigt.",
+      "Wie reagiert Jana auf den Vorwurf, wie auf den Satz in vier Teilen?",
+      "Du sagst, was du brauchst, nicht, was der andere falsch macht."
+    ],
+    "wennEsKippt": "Fällt keine Situation ein, nimmt die Fachkraft eine erfundene (ein Mitspieler passt nie zu, eine Gruppenarbeit bleibt an einem hängen). Mag der oder die Jugendliche nicht würfeln, legt er oder sie die vier Teile in der Reihenfolge Fakt, Gefühl, Bitte, Nutzen. Geht es um etwas Ernstes (Bedrohung, ständige Ausgrenzung), ist es keine Übung mehr: zuhören, nicht allein lassen und nach dem internen Ablauf handeln.",
+    "energie": 1,
+    "belastung": 1,
+    "reiz": 0,
+    "format": [
+      "spiel",
+      "gespraech"
+    ],
+    "material": [
+      "wuerfel"
+    ],
+    "imSpiel": {
+      "de": "Nach einem kleinen Streitpunkt im Spiel sagt die Fachkraft einen Satz in drei Teilen („Zweimal hintereinander … das ärgert mich … ich möchte, dass wir gemeinsam zählen.“). Der oder die Jugendliche zeigt an den Fingern, welcher Teil gefehlt hat: Fakt, Gefühl, Bitte oder Nutzen.",
+      "fr": "Après un petit point de désaccord dans le jeu, l’adulte dit une phrase en trois parties (« Deux fois de suite… ça m’énerve… j’aimerais qu’on compte ensemble. »). Le ou la jeune montre sur ses doigts quelle partie manquait : fait, émotion, demande ou bénéfice."
+    },
+    "zugang": {
+      "lesen": 0,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Dire sa colère : le dé de la phrase",
+      "text": "La courbe a déjà quatre issues ; aujourd’hui s’ajoute la cinquième : dire ce qui ne va pas sans que ça dégénère. L’adulte présente la phrase en quatre étapes (version simplifiée de DEAR MAN) : fait, émotion, demande, bénéfice. Ben n’a pas passé la balle à Jana trois fois de suite, et sur le dé, 1 veut dire fait, 2 émotion, 3 demande, 4 bénéfice, à 5 et à 6 on choisit. Le ou la jeune lance le dé et dit la partie obtenue pour Ben, jusqu’à ce que les quatre soient dites, puis il ou elle entend la phrase entière (« Trois fois sans balle. Ça m’énerve. Passe-moi plus souvent la balle. Comme ça, notre jeu marchera mieux. ») en la comparant au reproche de Ben (« Tu ne me passes jamais la balle. Tu es tellement égoïste. ») : comment Jana réagit-elle chaque fois ? Pour finir, on échange : l’adulte lance le dé pour une deuxième situation et laisse une partie de côté, et le ou la jeune la complète. Pour les messages : d’abord formuler, laisser reposer dix minutes. Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal.",
+      "sagen": [
+        "On lance le dé pour construire la phrase : 1 est le fait, 2 l’émotion, 3 la demande, 4 le bénéfice, à 5 et à 6 tu choisis.",
+        "Ben n’a pas passé la balle à Jana trois fois de suite. Dis la partie que le dé montre.",
+        "Comment Jana réagit-elle au reproche, et à la phrase en quatre parties ?",
+        "Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal."
+      ],
+      "wennEsKippt": "Si aucune situation ne vient, l’adulte en propose une inventée (un coéquipier ne passe jamais la balle, un travail de groupe reste sur les épaules d’une seule personne). Si le ou la jeune ne veut pas lancer le dé, il ou elle pose les quatre parties dans l’ordre fait, émotion, demande, bénéfice. S’il s’agit de quelque chose de grave (menaces, exclusion qui dure), ce n’est plus un exercice : écouter, ne pas laisser seul(e) et agir selon la procédure interne."
+    }
+  },
+  {
+    "id": "ki:kurs-wut-13-16-s5-t2",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "uebertragen",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "4-Schritte-Satz: Fakt, Gefühl, Bitte, Nutzen – im Gespräch und im Chat",
+      "fr": "Phrase en 4 étapes : fait, émotion, demande, bénéfice – à l’oral et par écrit"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 5,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Ärger sagen: Den Chat umschreiben",
+    "text": "Die Kurve hat vier Ausstiege, heute kommt der fünfte dazu: sagen, was los ist, ohne dass es eskaliert. Die Fachkraft hat zwei Entwürfe von Ben an Jana auf Papierstreifen: „Du spielst mich nie an. Du bist so egoistisch.“ und „Dreimal kein Ball. Das ärgert mich. Spiel mich bitte öfter an.“ Der oder die Jugendliche sagt, wie Jana wahrscheinlich auf jeden reagiert, und die Fachkraft zeigt den 4-Schritte-Satz: Fakt, Gefühl, Bitte, Nutzen. Dann liest die Fachkraft einen neuen Vorwurf-Entwurf vor („Immer nimmst du meine Sachen, ohne zu fragen!“), und er oder sie schreibt oder diktiert ihn in vier Teilen um und hakt vor dem Senden die Checkliste ab (zehn Minuten liegen lassen, Fakten und Ich-Sätze, würde ich es auch sagen, wenn die Person vor mir stünde). Zum Schluss tauschen sie: Die Fachkraft liest Janas Antwort („Hab ich nicht gemerkt, sorry.“), und er oder sie sagt, wie Ben antworten könnte. Du sagst, was du brauchst, nicht, was der andere falsch macht.",
+    "sagen": [
+      "Hier sind zwei Entwürfe an Jana. Wie reagiert sie wahrscheinlich auf den ersten, wie auf den zweiten?",
+      "Jetzt bist du dran: Mach aus diesem Vorwurf einen Satz in vier Teilen – Fakt, Gefühl, Bitte, Nutzen.",
+      "Online gilt: erst formulieren, später senden. Lies es nach einer Pause noch einmal.",
+      "Du sagst, was du brauchst, nicht, was der andere falsch macht."
+    ],
+    "wennEsKippt": "Ist das Formulieren mühsam, genügen Stichworte oder nur die ersten zwei Teile (Fakt und Gefühl). Fällt keine Situation ein, nimmt die Fachkraft eine erfundene (ein Mitspieler passt nie zu). Geht es um etwas Ernstes (Bedrohung, ständige Ausgrenzung), ist es keine Übung mehr: zuhören, nicht allein lassen und nach dem internen Ablauf handeln.",
+    "energie": 1,
+    "belastung": 1,
+    "reiz": 0,
+    "format": [
+      "karten",
+      "gespraech"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Nach einem kleinen Streitpunkt im Spiel nennt die Fachkraft einen Vorwurf („Du bist immer so langsam.“). Der oder die Jugendliche macht daraus in einem Atemzug einen Satz mit Fakt und Gefühl.",
+      "fr": "Après un petit point de désaccord dans le jeu, l’adulte lance un reproche (« Tu es toujours si lent. »). Le ou la jeune en fait, d’une traite, une phrase avec un fait et une émotion."
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Dire sa colère : réécrire le message",
+      "text": "La courbe a déjà quatre issues ; aujourd’hui s’ajoute la cinquième : dire ce qui ne va pas sans que ça dégénère. L’adulte a préparé deux brouillons de Ben pour Jana sur des bandes de papier : « Tu ne me passes jamais la balle. Tu es tellement égoïste. » et « Trois fois sans balle. Ça m’énerve. Passe-moi plus souvent la balle. » Le ou la jeune dit comment Jana réagira probablement à chacun, et l’adulte montre la phrase en quatre étapes : fait, émotion, demande, bénéfice. Puis l’adulte lit un nouveau brouillon de reproche (« Tu prends toujours mes affaires sans demander ! »), et le ou la jeune le réécrit ou le dicte en quatre parties et coche avant d’envoyer la liste de contrôle (laisser reposer dix minutes, des faits et des messages-je, je le dirais aussi si la personne était devant moi). Pour finir, on échange : l’adulte lit la réponse de Jana (« Je n’avais pas remarqué, désolée. »), et le ou la jeune dit comment Ben pourrait répondre. Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal.",
+      "sagen": [
+        "Voici deux brouillons pour Jana. Comment réagit-elle probablement au premier, et au deuxième ?",
+        "À ton tour : fais de ce reproche une phrase en quatre parties – fait, émotion, demande, bénéfice.",
+        "En ligne : d’abord formuler, envoyer plus tard. Relis après une pause.",
+        "Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal."
+      ],
+      "wennEsKippt": "Si formuler est pénible, des mots-clés ou seulement les deux premières parties (fait et émotion) suffisent. Si aucune situation ne vient, l’adulte en propose une inventée (un coéquipier ne passe jamais la balle). S’il s’agit de quelque chose de grave (menaces, exclusion qui dure), ce n’est plus un exercice : écouter, ne pas laisser seul(e) et agir selon la procédure interne."
+    }
+  },
+  {
     "id": "ki:kurs-wut-13-16-s6-a",
     "quelle": {
       "art": "praxis",
@@ -5383,6 +6423,211 @@
       "lesen": 1,
       "schreiben": 0,
       "bild": 2
+    }
+  },
+  {
+    "id": "ki:kurs-wut-13-16-s6-t1",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "reflektieren",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Mein Plan: erstes Zeichen, zwei Ausstiege, ein Satz – und wer mir hilft",
+      "fr": "Mon plan : premier signe, deux issues, une phrase – et qui peut m’aider"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 6,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Mein Plan für heiße Momente: Die Geschichte von Luca",
+    "text": "Die Kurve ist fast vollständig: Fünf Ausstiege sind da, heute kommt der sechste dazu, die Hilfe. Die Fachkraft beginnt eine Geschichte: Luca steht beim Training schon bei Zahl 4, ein Mitspieler lacht über seinen Fehler. Der oder die Jugendliche erzählt weiter und entscheidet an jeder Stelle der Kurve, was Luca tut: Welches Frühwarnzeichen merkt er, wo steigt er aus und womit (Merken, Früh stoppen, Prüfen, Auszeit, Sagen), welchen Satz sagt er und wer könnte ihm helfen? Dann tauschen sie: Er oder sie beginnt eine zweite Geschichte, und die Fachkraft erzählt weiter und fragt nach. Aus beiden Geschichten sucht er oder sie den eigenen Plan für heiße Momente: ein erstes Frühwarnzeichen, zwei Lieblings-Ausstiege, ein Satz. Zum Schluss spricht er oder sie einen Satz zum Ansprechen („Hast du kurz Zeit? Mir ist gerade alles zu viel.“) einmal laut aus, und die Fachkraft liest die Nummern kurz vor. Früh merken, früh aussteigen.",
+    "sagen": [
+      "Ich beginne eine Geschichte, und du erzählst weiter: Luca steht bei Zahl vier, ein Mitspieler lacht über seinen Fehler. Was merkt er zuerst?",
+      "Wo steigt Luca aus, und womit? Du bestimmst, wie die Geschichte weitergeht.",
+      "Dein Plan muss kurz sein: ein Zeichen, zwei Ausstiege, ein Satz. Dann findest du ihn auch bei Zahl sieben.",
+      "Wer in deiner Nähe könnte dir helfen, wenn es zu viel wird? Du musst keinen Namen sagen."
+    ],
+    "wennEsKippt": "Fällt die Auswahl schwer, genügen ein Zeichen und ein Ausstieg, und die Fachkraft nennt ein Beispiel aus den Stunden. Mag der oder die Jugendliche nicht erzählen, wählt er oder sie für Luca aus drei Vorschlägen der Fachkraft. Nennt er oder sie etwas Belastendes oder gibt es Hinweise auf eine Gefährdung, geht es nicht mehr um die Geschichte: zuhören, nicht allein lassen und nach dem internen Ablauf handeln.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "geschichte",
+      "plan"
+    ],
+    "material": [],
+    "imSpiel": {
+      "de": "Am Ende eines Spiels beginnt die Fachkraft einen Satz („Luca bemerkt sein erstes Zeichen …“). Der oder die Jugendliche erzählt in einem Satz weiter, womit Luca aussteigt.",
+      "fr": "À la fin d’un jeu, l’adulte commence une phrase (« Luca remarque son premier signe… »). Le ou la jeune continue en une phrase : avec quoi Luca sort-il ?"
+    },
+    "zugang": {
+      "lesen": 0,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Mon plan pour les moments chauds : l’histoire de Luca",
+      "text": "La courbe est presque complète : cinq issues sont là, aujourd’hui s’ajoute la sixième, l’aide. L’adulte commence une histoire : à l’entraînement, Luca est déjà au chiffre 4, un coéquipier rit de son erreur. Le ou la jeune continue et décide à chaque endroit de la courbe ce que Luca fait : quel signe avant-coureur remarque-t-il, où sort-il et avec quoi (Repérer, Stopper tôt, Vérifier, Prendre du recul, Dire), quelle phrase dit-il et qui pourrait l’aider ? Puis on échange : il ou elle commence une deuxième histoire, et l’adulte continue et pose des questions. De ces deux histoires, il ou elle tire son propre plan pour les moments chauds : un premier signe avant-coureur, deux issues préférées, une phrase. Pour finir, il ou elle dit une fois à voix haute une phrase pour aborder quelqu’un (« Tu as une minute ? Là, c’est trop pour moi. »), et l’adulte lit brièvement les numéros. Repérer tôt, sortir tôt.",
+      "sagen": [
+        "Je commence une histoire, et tu continues : Luca est au chiffre quatre, un coéquipier rit de son erreur. Qu’est-ce qu’il remarque d’abord ?",
+        "Où Luca sort-il, et avec quoi ? C’est toi qui décides de la suite de l’histoire.",
+        "Ton plan doit rester court : un signe, deux issues, une phrase. Comme ça, tu le retrouves même à sept.",
+        "Qui, près de toi, pourrait t’aider quand c’est trop ? Tu n’as pas besoin de dire un nom."
+      ],
+      "wennEsKippt": "Si le choix est difficile, un signe et une issue suffisent, et l’adulte donne un exemple tiré des séances. Si le ou la jeune ne veut pas raconter, il ou elle choisit pour Luca parmi trois propositions de l’adulte. S’il ou elle évoque quelque chose de lourd ou s’il y a des signes de danger, il ne s’agit plus de l’histoire : écouter, ne pas laisser seul(e) et agir selon la procédure interne."
+    }
+  },
+  {
+    "id": "ki:kurs-wut-13-16-s6-t2",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "reflektieren",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Mein Plan: erstes Zeichen, zwei Ausstiege, ein Satz – und wer mir hilft",
+      "fr": "Mon plan : premier signe, deux issues, une phrase – et qui peut m’aider"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 6,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Mein Plan für heiße Momente: Das Interview",
+    "text": "Die Kurve ist fast vollständig: Fünf Ausstiege sind da, heute kommt der sechste dazu, die Hilfe. Die Fachkraft ist die Reporterin, der oder die Jugendliche Expertin oder Experte für die eigene Ärger-Kurve, und fünf Fragen stehen auf Karten (Welcher Ausstieg hat in diesen Wochen am meisten gewirkt, und woran merkst du das? Was ist dein erstes Frühwarnzeichen? Welche zwei Ausstiege nimmst du bei Zahl sieben? Wie beginnst du den Satz, wenn du etwas sagen willst? Wer könnte dir helfen?). Die Fachkraft notiert die Antworten in einem Plan mit Lücken, liest ihn vor, und er oder sie ändert, was nicht stimmt, und unterschreibt, wenn er oder sie mag. Eine Vertrauensperson trägt er oder sie nur ein, wenn er oder sie mag, und die Fachkraft liest die Nummern kurz vor. Zum Schluss tauschen sie: Er oder sie interviewt die Fachkraft zu zwei Fragen, und sie nennt dazu ein Beispiel aus den Stunden. Früh merken, früh aussteigen.",
+    "sagen": [
+      "Heute interviewe ich dich: Du bist Expertin oder Experte für deine Ärger-Kurve. Es gibt keine falschen Antworten.",
+      "Welcher Ausstieg hat bei dir in diesen Wochen am meisten gewirkt – und woran merkst du das?",
+      "Dein Plan muss kurz sein: ein Zeichen, zwei Ausstiege, ein Satz. Stimmt, was ich notiert habe?",
+      "Wer in deiner Nähe könnte dir helfen, wenn es zu viel wird? Du musst keinen Namen sagen."
+    ],
+    "wennEsKippt": "Fällt die Auswahl schwer, genügen ein Zeichen und ein Ausstieg; die Fachkraft nennt dazu ein Beispiel aus den Stunden. Mag der oder die Jugendliche keine Person eintragen, bleibt das Feld leer – die Nummern gelten trotzdem. Nennt er oder sie etwas Belastendes, geht es nicht mehr ums Interview: zuhören, nicht allein lassen und nach dem internen Ablauf handeln.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "gespraech",
+      "karten"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Am Ende eines Spiels hält die Fachkraft einen Stift wie ein Mikrofon hin und stellt eine der Fragen („Welcher Ausstieg war heute dran?“). Der oder die Jugendliche antwortet in einem Satz.",
+      "fr": "À la fin d’un jeu, l’adulte tend un stylo comme un micro et pose l’une des questions (« Quelle issue a servi aujourd’hui ? »). Le ou la jeune répond en une phrase."
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 0,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Mon plan pour les moments chauds : l’interview",
+      "text": "La courbe est presque complète : cinq issues sont là, aujourd’hui s’ajoute la sixième, l’aide. L’adulte est le reporter, le ou la jeune est expert ou experte de sa propre courbe de la colère, et cinq questions figurent sur des cartes (Quelle issue a le plus marché pendant ces séances, et à quoi tu le remarques ? Quel est ton premier signe avant-coureur ? Quelles deux issues prends-tu à sept ? Comment commences-tu la phrase quand tu veux dire quelque chose ? Qui pourrait t’aider ?). L’adulte note les réponses dans un plan à compléter, le lit à voix haute, et le ou la jeune change ce qui ne va pas et signe, s’il ou elle le souhaite. Une personne de confiance n’est notée que s’il ou elle en a envie, et l’adulte lit brièvement les numéros. Pour finir, on échange : le ou la jeune interviewe l’adulte sur deux questions, et l’adulte donne un exemple tiré des séances. Repérer tôt, sortir tôt.",
+      "sagen": [
+        "Aujourd’hui, c’est moi qui t’interviewe : tu es expert ou experte de ta courbe de la colère. Il n’y a pas de mauvaises réponses.",
+        "Quelle issue a le plus marché pour toi pendant ces séances – et à quoi tu le remarques ?",
+        "Ton plan doit rester court : un signe, deux issues, une phrase. Est-ce que ce que j’ai noté est juste ?",
+        "Qui, près de toi, pourrait t’aider quand c’est trop ? Tu n’as pas besoin de dire un nom."
+      ],
+      "wennEsKippt": "Si le choix est difficile, un signe et une issue suffisent ; l’adulte donne un exemple tiré des séances. Si le ou la jeune ne veut pas noter de personne, le champ reste vide – les numéros valent quand même. S’il ou elle évoque quelque chose de lourd, il ne s’agit plus de l’interview : écouter, ne pas laisser seul(e) et agir selon la procédure interne."
     }
   },
   {

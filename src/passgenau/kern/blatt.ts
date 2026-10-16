@@ -496,6 +496,22 @@ function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlatt
 const KURS_ICON: Record<string, string> = {
   gefuehle: 'icon:mood-smile', wut: 'icon:flame', freundschaft: 'icon:friends', streit: 'icon:scale', selbstwert: 'icon:star',
   mut: 'icon:shield', fokus: 'icon:target', zusammen: 'icon:puzzle',
+  grenzen: 'motiv:stopp-hand', probleme: 'motiv:gluehbirne', vielfalt: 'motiv:gruppe', alltag: 'motiv:wecker', medien: 'motiv:handy',
+  sprechen: 'motiv:sprechblasen',
+}
+/** … und vor dem Thema die Leitfigur bzw. das Leitmodell des Kurses selbst (Sichtprüfung 16.10.: bei neuen Kursen stand oben
+ *  rechts das allgemeine Kinderpaar statt Momo, Zara & Co.) */
+const KURS_BILD: Record<string, string> = {
+  'gefuehle-4-6': 'motiv:igel', 'gefuehle-7-9': 'motiv:eule', 'gefuehle-10-12': 'motiv:kompass',
+  'wut-4-6': 'motiv:schildkroete', 'wut-7-9': 'motiv:ampel', 'wut-10-12': 'motiv:werkzeugkiste',
+  'freundschaft-4-6': 'motiv:hase', 'freundschaft-7-9': 'motiv:bruecke', 'streit-10-12': 'motiv:waage', 'streit-13-16': 'motiv:eisberg',
+  'selbstwert-4-6': 'motiv:spiegel', 'selbstwert-10-12': 'motiv:turm-5', 'mut-4-6': 'motiv:loewe', 'mut-7-9': 'motiv:rucksack',
+  'fokus-4-6': 'motiv:fuchs', 'fokus-7-9': 'motiv:lupe', 'fokus-10-12': 'motiv:werkzeugkiste', 'zusammen-10-12': 'motiv:puzzle',
+  'grenzen-4-6': 'motiv:pinguin', 'grenzen-7-9': 'motiv:schutzschild', 'grenzen-13-16': 'motiv:schutzschild',
+  'probleme-4-6': 'motiv:affe', 'probleme-7-9': 'motiv:rakete', 'probleme-10-12': 'motiv:schluessel', 'probleme-13-16': 'motiv:werkzeugkiste',
+  'vielfalt-4-6': 'motiv:zebra', 'vielfalt-7-9': 'motiv:insel-5', 'vielfalt-10-12': 'motiv:brille',
+  'alltag-4-6': 'motiv:kueken', 'alltag-10-12': 'motiv:kalender', 'alltag-13-16': 'motiv:schluessel',
+  'sprechen-4-6': 'motiv:elefant', 'sprechen-7-9': 'motiv:hand-offen', 'sprechen-10-12': 'motiv:mikrofon', 'sprechen-13-16': 'motiv:megafon',
 }
 
 const KERNBLATT_BEREICH: Record<string, Bereich> = {
@@ -929,7 +945,8 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
   // Einzelkurs: ein Symbol zum Thema des Kurses (Kurs-Kritik 16.10.: oben rechts stand der Kompass des Bereichs auch beim
   // Selbstwert-Kurs)
   const kursE = kernRef ? k.eintraege.get(kernRef) : undefined
-  const kursBild = kursE?.typ === 'schritt' && kursE.linie?.id.startsWith('kurs-') ? KURS_ICON[kursE.linie.id.split('-')[1]] : undefined
+  const kursLinie = kursE?.typ === 'schritt' && kursE.linie?.id.startsWith('kurs-') ? kursE.linie.id.slice(5) : undefined
+  const kursBild = kursLinie ? (KURS_BILD[kursLinie] ?? KURS_ICON[kursLinie.split('-')[0]]) : undefined
   const jugendBild = kursBild ?? (alter >= 12 && (bereich === 'gefuehle' || bereich === 'selbstreflexion')
     ? kernRef === 'pg:uebertragen' ? 'icon:arrow-right' : kernRef === 'pg:folge-transfer' ? 'icon:flag' : 'icon:message-circle'
     : undefined)

@@ -61,7 +61,10 @@ export function haeufigsteZiele(k: Katalog, n = 30): string[] {
   for (const e of q.foerderfach) for (const s of e.de.schritte) if (s.blatt && s.phase !== 'pause') wennDa(q.blatt.get(s.blatt)?.eldib[0], `f:${e.id}`)
   for (const m of q.materialien) wennDa(m.eldibGoals.find((c) => /^(V|K|SOZ|KOG)-\d+$/.test(c)), `m:${m.id}`)
   for (const t of q.crew.themen) for (const s of t.spiele) wennDa(/(V|K|SOZ|KOG)-\d+/.exec(s.foerdert)?.[0], `c:${s.id}`)
-  for (const e of k.eintraege.values()) if (!/^[bkfmsc]:/.test(e.id)) for (const z of e.eldib) if (z.gewicht === 1) add(z.code, e.id.split(':').slice(0, 2).join(':'))
+  // ein Einzelkurs zählt als eine Quelle – nicht jede Variante und Tausch-Übung einzeln (sonst rückte z. B. K-25 durch zwei
+  // neue Kurse unter die häufigsten Ziele)
+  const quelleVon = (e: KatalogEintrag) => (e.typ === 'schritt' && e.linie?.id.startsWith('kurs-') ? `kurs:${e.linie.id}` : e.typ === 'schritt' && e.kurs ? `kurs:${e.kurs}` : e.id.split(':').slice(0, 2).join(':'))
+  for (const e of k.eintraege.values()) if (!/^[bkfmsc]:/.test(e.id)) for (const z of e.eldib) if (z.gewicht === 1) add(z.code, quelleVon(e))
   return [...einheiten.entries()].sort((a, b) => b[1].size - a[1].size || (a[0] < b[0] ? -1 : 1)).slice(0, n).map(([c]) => c)
 }
 
