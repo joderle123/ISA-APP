@@ -4206,6 +4206,112 @@
     }
   },
   {
+    "id": "ki:kurs-selbstwert-13-16-s4-t3",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Wer bin ich?"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "ueben",
+    "thema": [
+      "selbstwert"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-40",
+        "gewicht": 1
+      },
+      {
+        "code": "K-34",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-39",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-24",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Den Kritiker hören, prüfen und fair antworten: Was würde ich einem Freund sagen?",
+      "fr": "Entendre le critique, vérifier, répondre juste : que dirais-je à un ami ?"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-selbstwert-13-16",
+      "nr": 4,
+      "faden": {
+        "de": "Wer bin ich? Mit dem Selbstbild-Fenster: wie ich mich sehe · wie andere mich sehen · was mir wichtig ist · wohin ich will",
+        "fr": "Qui suis-je ? Avec la fenêtre sur moi : mon regard sur moi · le regard des autres · ce qui compte pour moi · où je veux aller"
+      }
+    },
+    "ort": "raum",
+    "titel": "Der innere Kritiker und ein fairer Blick: Die Beweis-Waage",
+    "text": "Das Fenster hat jetzt drei Felder, das dritte sind die Werte. Heute geht es zurück zum ersten Feld, wie ich mich sehe: Dort sitzt oft eine strenge innere Stimme, die Fehler größer macht als Erfolge. Nach einer Runde Quadrat-Atmen mit offenen Augen (das Halten darf kurz sein) legt die Fachkraft ein Lineal quer über einen umgedrehten Becher als Waage: links wiegt der Kritiker, rechts der faire Blick. Tiago hat beim Spiel einen Elfmeter verschossen; für jeden Kritiker-Satz („Typisch ich.“ – „Du kannst es einfach nicht.“) legt die Fachkraft links einen Baustein, und der oder die Jugendliche prüft ihn mit „Stimmt das ganz?“ und „Was würde ich einem guten Freund sagen?“ und legt für jeden Beleg (letzte Woche zwei Tore vorbereitet) rechts einen Baustein. Dann ordnet er oder sie drei harte Kritiker-Karten drei fairen Antworten zu (zum Beispiel „Ich war nervös. Das passiert vielen.“) und sagt, was an der fairen Antwort genauer ist. Beim Rollentausch spricht die Fachkraft als Tiago den Kritiker, und er oder sie antwortet als Freund oder Freundin mit dem fairen Blick; Tiagos Beispiel trägt er oder sie auf dem Zettel bei „Dein Beispiel“ ein. Fair heißt nicht schönreden, fair heißt genau hinschauen.",
+    "sagen": [
+      "Heute prüfen wir mit einer Waage, was der innere Kritiker über Tiago sagt – und ob es stimmt. Du entscheidest, welche Belege wir auflegen.",
+      "Frag bei jedem Satz: Stimmt das ganz? Was würde ich einem guten Freund in dieser Lage sagen?",
+      "Welche faire Antwort passt zu welchem Kritiker-Satz? Und was ist an ihr genauer?",
+      "Jetzt bist du Tiagos Freundin oder Freund. Ich sage den Kritiker-Satz, du antwortest fair: genau hinschauen, nicht schönreden."
+    ],
+    "wennEsKippt": "Wackelt die Waage, liegen zwei Karten als Spalten auf dem Tisch („Kritiker“ und „Belege“), und die Bausteine kommen daneben. Fällt die faire Antwort schwer, nennt die Fachkraft zwei Anfänge zur Wahl („Das war ein Fehler, aber …“ – „Das geht vielen so, und …“). Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Tiago zurück; ein Kritiker-Satz mit seiner fairen Antwort genügt.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bauen",
+      "karten"
+    ],
+    "material": [
+      "lineal",
+      "becher",
+      "bausteine",
+      "karten"
+    ],
+    "imSpiel": {
+      "de": "Geht im Spiel etwas schief, legt die Fachkraft links einen Baustein und sagt einen übertriebenen Kritiker-Satz für die Spielfigur („Das wird nie was!“). Der oder die Jugendliche legt rechts einen Baustein und sagt einen fairen Satz dazu.",
+      "fr": "Quand quelque chose tourne mal en plein jeu, l’adulte pose un cube à gauche et dit une phrase de critique exagérée pour le pion (« Ça ne marchera jamais ! »). Le ou la jeune pose un cube à droite et dit une phrase juste."
+    },
+    "zugang": {
+      "lesen": 2,
+      "schreiben": 2,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Le critique intérieur et un regard juste : la balance des preuves",
+      "text": "La fenêtre a maintenant trois champs, le troisième étant les valeurs. Aujourd’hui, on revient au premier champ, mon regard sur moi : il y a souvent là une voix intérieure sévère qui grossit les erreurs plus que les réussites. Après un tour de respiration en carré, les yeux ouverts (la pause peut être courte), l’adulte pose une règle en travers d’un gobelet retourné, comme une balance : à gauche pèse le critique, à droite le regard juste. Tiago a raté un penalty pendant le match ; pour chaque phrase du critique (« Typique de moi. » – « Tu n’y arrives tout simplement pas. »), l’adulte pose un cube à gauche, et le ou la jeune la vérifie avec « Est-ce entièrement vrai ? » et « Que dirais-je à un bon ami ? », puis pose à droite un cube pour chaque preuve (la semaine dernière, il a préparé deux buts). Ensuite, il ou elle associe trois cartes de critique dure à trois réponses justes (par exemple « J’étais nerveux·se. Ça arrive à beaucoup de monde. ») et dit ce qui est plus précis dans la réponse juste. En échangeant les rôles, l’adulte dit la phrase du critique dans le rôle de Tiago, et le ou la jeune répond en ami ou amie avec le regard juste ; il ou elle note l’exemple de Tiago sur la fiche sous « Ton exemple ». Juste ne veut pas dire enjoliver : juste veut dire regarder avec précision.",
+      "sagen": [
+        "Aujourd’hui, on vérifie avec une balance ce que le critique intérieur dit de Tiago – et si c’est vrai. C’est toi qui décides quelles preuves on pose.",
+        "À chaque phrase, demande-toi : est-ce entièrement vrai ? Que dirais-je à un bon ami dans cette situation ?",
+        "Quelle réponse juste va avec quelle phrase du critique ? Et qu’est-ce qui est plus précis dans la réponse ?",
+        "Maintenant, tu es l’ami ou l’amie de Tiago. Je dis la phrase du critique, tu réponds avec justesse : regarder avec précision, sans enjoliver."
+      ],
+      "wennEsKippt": "Si la balance bascule mal, deux cartes servent de colonnes sur la table (« Critique » et « Preuves »), et les cubes se posent à côté. Si la réponse juste est difficile, l’adulte propose deux débuts au choix (« C’était une erreur, mais … » – « Ça arrive à beaucoup de monde, et … »). Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Tiago ; une phrase du critique avec sa réponse juste suffit."
+    }
+  },
+  {
     "id": "ki:kurs-selbstwert-13-16-s5-a",
     "quelle": {
       "art": "praxis",

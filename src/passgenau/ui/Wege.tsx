@@ -5,6 +5,7 @@ import { usePg, useProfil } from './zustand'
 import type { KindWort } from './texte'
 import { Ic } from './zeichen'
 import { Chip, HeikelBanner, VersionsBanner } from './Teile'
+import { offeneVorschlaege } from './vorschlaege'
 import { BOGEN_ANZEIGE, FORMAT_WUNSCH, LAYOUT_NAME, PHASE_KURZ, PHASE_NAME, SCHWERPUNKTE, SOZIALFORM_NAME, TAGESFORM, THEMA_NAME, heuteIso, zielKurz } from './texte'
 
 type Dauer = Auftrag['dauer']
@@ -105,6 +106,8 @@ function WorumKarte({ thema, setThema, kennenlernen, setKennenlernen }: { thema:
 function WissenZeile() {
   const pg = usePg()
   const p = useProfil()
+  // offene Vorschläge aus dem Steckbrief (zwei echte Dossiers 17.10.2026: sonst blieben sie ungesehen)
+  const offen = pg.ohneKind || !pg.roh ? 0 : offeneVorschlaege(pg.roh as Profil, p, pg.korr).length
   return (
     <button type="button" className="pg-wissenzeile" onClick={() => pg.setAnsicht(pg.ohneKind ? 'ohnekind' : 'wissen')}>
       <Ic n={pg.ohneKind ? 'stift' : 'person'} />
@@ -112,9 +115,33 @@ function WissenZeile() {
         <b>{pg.ohneKind ? 'Deine Auswahl:' : 'Das weiß ich schon:'}</b> {p.alterJahre} J., {p.sprache.blatt.toUpperCase()}
         {p.ziele.length ? ', ' + p.ziele.slice(0, 3).map((z) => z.code).join(', ') : ''}
         {p.interessen.length ? ' …' : ''}
+        {offen > 0 && <b className="pg-vorschlag-zahl"> · {offen === 1 ? 'ein Vorschlag' : `${offen} Vorschläge`} aus dem Steckbrief prüfen</b>}
       </span>
-      <span className="pg-link">ändern</span>
+      <span className="pg-link">{offen > 0 ? 'prüfen' : 'ändern'}</span>
     </button>
+  )
+}
+
+/** Offene Vorschläge aus dem Steckbrief vor dem Planen (Gründlich): ohne sie plant Passgenau oft nur „Kennenlernen“ */
+function SteckbriefHinweis() {
+  const pg = usePg()
+  const p = useProfil()
+  const offen = pg.ohneKind || !pg.roh ? [] : offeneVorschlaege(pg.roh as Profil, p, pg.korr)
+  if (!offen.length) return null
+  const ziele = offen.filter((v) => v.art === 'ziel').map((v) => v.key.slice(5))
+  return (
+    <div className="pg-hinweisbox gelb pg-mb">
+      <Ic n="info" />
+      <div>
+        <b>{offen.length === 1 ? 'Ein Vorschlag' : `${offen.length} Vorschläge`} aus dem Steckbrief</b>
+        {ziele.length ? `, darunter ${ziele.length === 1 ? 'ein Förderziel' : 'Förderziele'} (${ziele.join(', ')})` : ''}. Sie gelten erst, wenn du sie übernimmst.
+        <div className="pg-btnrow pg-mt">
+          <button type="button" className="pg-btn klein primaer" onClick={() => pg.setAnsicht('wissen')}>
+            Vorschläge prüfen
+          </button>
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -160,6 +187,7 @@ export function Gruendlich() {
         </span>
       </section>
       <VersionsBanner />
+      <SteckbriefHinweis />
       <div className="pg-fgrid">
         <div className="pg-card">
           <div className="pg-fblock">
@@ -176,7 +204,7 @@ export function Gruendlich() {
                   {p.ziele.map((z) => {
                     const i = ziele.indexOf(z.code)
                     return (
-                      <Chip key={z.code} an={i >= 0} klein={z.quelle === 'pei' ? 'PEI' : z.quelle === 'vorgemerkt' ? 'vorgemerkt' : undefined} onClick={() => setZiele((l) => (i >= 0 ? l.filter((c) => c !== z.code) : l.length < 3 ? [...l, z.code] : l))}>
+                      <Chip key={z.code} an={i >= 0} klein={z.quelle === 'pei' ? 'PEI' : z.quelle === 'vorgemerkt' ? 'vorgemerkt' : z.quelle === 'steckbrief' ? 'Steckbrief' : undefined} onClick={() => setZiele((l) => (i >= 0 ? l.filter((c) => c !== z.code) : l.length < 3 ? [...l, z.code] : l))}>
                         {i >= 0 ? `${i + 1}. ` : ''}
                         <b>{z.code}</b>&nbsp;{zielKurz(z.code)}
                       </Chip>

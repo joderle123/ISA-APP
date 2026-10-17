@@ -4341,6 +4341,107 @@
     }
   },
   {
+    "id": "ki:kurs-zusammen-13-16-s4-t3",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Rollen, Regeln, Verantwortung"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "ueben",
+    "thema": [
+      "regeln"
+    ],
+    "eldib": [
+      {
+        "code": "V-30",
+        "gewicht": 1
+      },
+      {
+        "code": "V-31",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-38",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Stopp – Stand – Satz: Druck bemerken, fest stehen, klar Nein sagen",
+      "fr": "Stop – pieds au sol – phrase : repérer la pression, tenir bon, dire non"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-zusammen-13-16",
+      "nr": 4,
+      "faden": {
+        "de": "Rollen, Regeln, Verantwortung: mit der Gruppen-Landkarte (meine Rolle · Regeln · Verantwortung · Haltung) den eigenen Platz in Gruppen finden und gestalten",
+        "fr": "Rôles, règles, responsabilité : avec la carte du groupe (mon rôle · les règles · la responsabilité · ma position), trouver et façonner sa place dans les groupes"
+      }
+    },
+    "ort": "raum",
+    "titel": "Gruppendruck und eigene Haltung: Die Weiche",
+    "text": "Drei Gebiete der Gruppen-Landkarte sind erkundet; heute kommt die Haltung bei Gruppendruck dazu, mit dem Werkzeug „Stopp – Stand – Satz“. Die Fachkraft legt zwei Druck-Karten aus einem erfundenen Chat in eine Reihe (Mila: „Schick die Nachricht von Elias rein, die ist so lustig.“ – Pol: „Komm schon, alle machen mit.“) und zeichnet unter jede eine Weiche mit drei Wegen: mitmachen, ausweichen, Stopp – Stand – Satz. Der oder die Jugendliche zeigt in der Liste mit sechs Anzeichen, woran die gedrängte Person den Druck merkt, und entscheidet an jeder Weiche, welchen Weg sie nimmt; die Fachkraft sagt kurz, was folgt, und beim dritten Weg stehen beide auf (Füße hüftbreit, einmal lang ausatmen). Beim Rollentausch berät er oder sie die gedrängte Person und baut einen Nein-Satz, kurz, freundlich, ohne Roman, den die Fachkraft als diese Person sagt. Zum Schluss wählt er oder sie für den Fall, dass jemand im Chat vorgeführt wird, einen Weg von leise bis deutlich (nicht mitlachen, privat schreiben, gemeinsam widersprechen, eine Vertrauensperson einschalten); der Nein-Satz geht in den Auftrag auf dem Zettel. Ein Nein darf kurz sein – man muss es nicht begründen.",
+    "sagen": [
+      "Heute geht es um Stopp – Stand – Satz. Die Chat-Karten sind ausgedacht, und alles bleibt bei der ausgedachten Person.",
+      "Woran merkt die gedrängte Person den Druck – im Körper, in einem Gedanken, im Verhalten? Und welchen Weg nimmt sie an der Weiche?",
+      "Steh kurz auf, Füße hüftbreit, einmal lang ausatmen. Dann kommt der Satz: kurz, freundlich, ohne Roman.",
+      "Du bist jetzt die Beraterin oder der Berater. Ein Nein darf kurz sein – man muss es nicht begründen."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht aufstehen, bleibt der Stand im Sitzen (Füße fest auf dem Boden, einmal lang ausatmen). Fällt der Nein-Satz schwer, legt die Fachkraft zwei Satzkarten zur Wahl hin, und er oder sie wählt eine. Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zur ausgedachten Person zurück; eine Druck-Karte und ein Nein-Satz genügen.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "denkmodell",
+      "plan"
+    ],
+    "material": [
+      "karten",
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Mitten im Spiel legt die Fachkraft eine Druck-Karte für die Spielfigur hin („Komm schon, alle machen mit.“) und sagt: „Das ist nur ein Spiel.“ Der oder die Jugendliche gibt der Spielfigur einen kurzen Nein-Satz und sagt, woran man den Druck im Körper merken würde.",
+      "fr": "En plein jeu, l’adulte pose une carte de pression pour le pion (« Allez, tout le monde le fait. ») et dit : « C’est seulement un jeu. » Le ou la jeune donne au pion une courte phrase pour dire non et dit à quoi on remarquerait la pression dans le corps."
+    },
+    "zugang": {
+      "lesen": 2,
+      "schreiben": 2,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Pression du groupe et position personnelle : l’aiguillage",
+      "text": "Trois zones de la carte du groupe sont explorées ; aujourd’hui s’ajoute la position face à la pression du groupe, avec l’outil « Stop – Pieds au sol – Phrase ». L’adulte aligne deux cartes de pression d’un chat inventé (Mila : « Envoie le message d’Elias, il est trop drôle. » – Pol : « Allez, tout le monde le fait. ») et dessine sous chacune un aiguillage à trois chemins : suivre, éviter, Stop – Pieds au sol – Phrase. Le ou la jeune montre dans la liste de six signes à quoi la personne sous pression remarque la pression, et décide à chaque aiguillage quel chemin elle prend ; l’adulte dit brièvement ce qui suit, et au troisième chemin, les deux se lèvent (pieds écartés, expirer longuement une fois). En échangeant les rôles, il ou elle conseille la personne sous pression et construit une phrase pour dire non, brève, aimable, sans long discours, que l’adulte dit dans le rôle de cette personne. Pour finir, il ou elle choisit, au cas où quelqu’un serait ridiculisé dans le chat, une façon d’agir du plus discret au plus visible (ne pas rire, écrire en privé, réagir à deux, prévenir un adulte de confiance) ; la phrase pour dire non va dans la tâche à emporter sur la fiche. Un non peut être bref – on n’a pas à se justifier.",
+      "sagen": [
+        "Aujourd’hui, il s’agit de « Stop – Pieds au sol – Phrase ». Les cartes du chat sont inventées, et tout reste avec la personne inventée.",
+        "À quoi la personne sous pression remarque-t-elle la pression – dans le corps, dans une pensée, dans le comportement ? Et quel chemin prend-elle à l’aiguillage ?",
+        "Lève-toi un instant, pieds écartés, expire longuement une fois. Ensuite vient la phrase : brève, aimable, sans long discours.",
+        "Maintenant, tu es le conseiller ou la conseillère. Un non peut être bref – on n’a pas à se justifier."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas se lever, la posture se fait assis (pieds bien posés au sol, expirer longuement une fois). Si la phrase pour dire non est difficile, l’adulte pose deux cartes de phrases au choix, et le ou la jeune en choisit une. Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à la personne inventée ; une carte de pression et une phrase pour dire non suffisent."
+    }
+  },
+  {
     "id": "ki:kurs-zusammen-13-16-s5-a",
     "quelle": {
       "art": "praxis",

@@ -102,10 +102,13 @@ export function kontext(k: Katalog, p: Profil, a: Auftrag, v: Vorlieben, verlauf
   })
   for (const t of (a.thema ?? []).map(kompetenzCode)) if (t.startsWith('kompetenz:') && !ziele.some((z) => z.code === t)) ziele.push({ code: t, prio: ziele.length ? 0.6 : 1, feld: t.slice(10) as Kompetenz })
   const themen = new Map<string, { w: number; art?: string; datum?: string; gewaehlt?: boolean }>()
+  let sbNr = 0
   for (const t of p.themen) {
     const tage = tageZwischen(t.datum, datum)
-    if (tage < 0 || tage > 60) continue
-    const w = tage <= 14 ? 1 : tage <= 30 ? 0.7 : 0.4
+    // Themen aus dem Steckbrief beschreiben, worum es bei dem Kind geht – sie gelten bis zu 18 Monate (Prüfstand 17.10.2026).
+    // Der Hub schickt sie nach Häufigkeit: das erste zählt am meisten (Prüfstand: „Selbstwert“ verlor gegen „Lernen“ an dritter Stelle)
+    if (t.art === 'steckbrief' ? tage > 540 : tage < 0 || tage > 60) continue
+    const w = t.art === 'steckbrief' ? ([0.8, 0.75][sbNr++] ?? 0.7) : tage <= 14 ? 1 : tage <= 30 ? 0.7 : 0.4
     const alt = themen.get(t.key)
     if (!alt || alt.w < w || (alt.w === w && (alt.datum ?? '') < t.datum)) themen.set(t.key, { w, art: t.art, datum: t.datum })
   }
@@ -193,7 +196,7 @@ export function pruefe(e: KatalogEintrag, c: Kontext, o: Pruefung = {}): string 
 
 /** Krisenlage (A12): Stimmung ≤ 2, Vorsicht Trauma oder Trauer, Weg 3 mit belastender Tagesform – keine Gefühle abfragen. */
 /** Themen, die eine Übung nur trägt, wenn das Kind sie hat (nicht allgemein wie Gefühle, Selbstwert, Lernen). */
-const BESONDERE_THEMEN = new Set(['angst', 'schlaf', 'medien', 'mobbing', 'traurig', 'familie', 'gewalt'])
+export const BESONDERE_THEMEN = new Set(['angst', 'schlaf', 'medien', 'mobbing', 'traurig', 'familie', 'gewalt'])
 
 export function krisenlage(c: Kontext): boolean {
   return c.heute.stimmung <= 2 || c.vorsicht.has('trauma') || c.vorsicht.has('trauer') ||
@@ -497,8 +500,11 @@ function tagesformWert(e: KatalogEintrag, c: Kontext): number {
 
 function zugangWert(e: KatalogEintrag, c: Kontext): number {
   const z = c.p.zugang
-  // Kurs-Sitzungen bringen ihr Zugangsprofil mit (Varianten: am Tisch schreibend oder bildgestützt)
-  if (e.typ === 'schritt') return e.zugang ? Math.max(0, 1 - (Math.abs(e.zugang.lesen - z.lesen) + Math.abs(e.zugang.schreiben - z.schreiben) + Math.max(0, z.bild - e.zugang.bild)) / 6) : 1
+  // Kurs-Sitzungen bringen ihr Zugangsprofil mit (Varianten: am Tisch schreibend oder bildgestützt). Mehr verlangen, als das
+  // Kind kann, wiegt schwerer als weniger (zwei echte Dossiers 17.10.2026: bei „wenig Schreiben“ wegen LRS kam sonst die
+  // Schreib-Variante, weil sie im Lesen näher lag)
+  const abstand = (verlangt: number, kann: number) => (verlangt > kann ? 1.5 : 0.5) * Math.abs(verlangt - kann)
+  if (e.typ === 'schritt') return e.zugang ? Math.max(0, 1 - (abstand(e.zugang.lesen, z.lesen) + abstand(e.zugang.schreiben, z.schreiben) + Math.max(0, z.bild - e.zugang.bild)) / 6) : 1
   return Math.max(0, 1 - (Math.abs(e.lesemenge - z.lesen) + Math.abs(e.schreibmenge - z.schreiben) + Math.max(0, z.bild - e.bildanteil)) / 6)
 }
 
@@ -621,7 +627,7 @@ function datumKurz(iso?: string): string {
   return `${Number(d)}.${Number(m)}.`
 }
 
-const ZIEL_QUELLE: Record<string, string> = { pei: 'Förderziel aus dem PEI', eldib: 'ELDiB-Förderziel', vorgemerkt: 'vorgemerkt für das nächste PEI', andere: 'weiteres Ziel' }
+const ZIEL_QUELLE: Record<string, string> = { pei: 'Förderziel aus dem PEI', eldib: 'ELDiB-Förderziel', vorgemerkt: 'vorgemerkt für das nächste PEI', steckbrief: 'Vorschlag aus dem Steckbrief, von dir übernommen', andere: 'weiteres Ziel' }
 const THEMA_ART: Record<string, string> = { vorfall: 'Vorfall am', notiz: 'Notiz vom', beobachtung: 'Beobachtung vom', gespraech: 'Gespräch am', reunion: 'Réunion am', screening: 'Screening vom', klassenbuch: 'Klassenbuch,' }
 
 export function zielText(c: Kontext, z: ZielKontext, vermutet: boolean): string {

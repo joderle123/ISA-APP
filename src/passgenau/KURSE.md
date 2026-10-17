@@ -114,6 +114,7 @@ Mal gleich, freiwillig, 1–3 Minuten, mit der Leitfigur verbunden; das Abschlus
   nachdenken, abwenden) –, `szene:<name>` (pausenhof, klassenzimmer, bus, kueche, kinderzimmer, park, flur, kantine,
   umkleide, chat), `gesicht:<gefühl>`, `icon:<name>` (`src/blatt/bilder/icons.json`). Wachsende Motive: `turm-1` … `-5`,
   `blume-1` … `-5`, `rucksack-1` … `-5`, `insel-1` … `-5`, `werkzeugkiste-1` … `-5`, `bruecke-1` … `-5`, `kresse-1` … `-3`.
+  Weitere wachsende Motive (`src/blatt/motive-neu-wachsend2.ts`; Stufe n = n Teile, fehlende gestrichelt): `schutzschild-1` … `-5` (Wappen, auch ab 13), `stopp-hand-1` … `-6`, `zebra-1` … `-6`, `rakete-1` … `-5`, `schluesselbund-1` … `-5`, `tagesuhr-1` … `-5`; dazu `uhr-ziffern` (Uhr mit 12/3/6/9), `turm-umgefallen` (zu `turm-1` … `-5`) und `platzhalter` (leerer gestrichelter Kreis für Ketten, statt Fragezeichen).
   Kinderfiguren auf Jugendblättern sparsam (Jugend-Gestaltung: ruhig, sachlich); Einzelheiten in `src/blatt/BLATT-STIL.md` §4.
 - **Anleitung** (`uebungsblatt.anleitung`): welche Aufgabe gemeinsam, welche allein, was die Fachkraft fragt (`sagen`), was hilft,
   wenn Schreiben oder Lesen schwerfällt (`wennEsKippt`).
@@ -170,6 +171,16 @@ eine ruhige Form im Sitzen).
 Alles bleibt für die Einzelstunde (Fachkraft als Spielpartner), schonend (eigene Beispiele freiwillig) und ohne Katharsis.
 Prüfregel 29 (`npm run -s passgenau:pruefen`) prüft die Felder; `passgenau:test` prüft, dass Blatt, Anleitung und Auftrag
 beim Tausch bleiben.
+
+**Schonende Tausch-Übung `-t3`** (17.10.2026): Steht im Profil ein heikles Thema (Kinderschutz, Krise, belastende
+Erfahrungen), nimmt der Planer keine Übung mit `belastung` ≥ 1. Haben alle Varianten und t1/t2 einer Sitzung belastung 1, gibt
+es eine dritte Tausch-Übung `-t3` mit **belastung 0, reiz 0**: dasselbe Werkzeug und Blatt, aber nichts Eigenes – alles über
+die Figuren des Kurses und ausgedachte Situationen. Übertragen (Sitzung 5) bleibt, nach vorn gerichtet: drei harmlose
+Schul-Situationen zur Wahl, geplant für die Figur („jemand wie du“ nur, wenn das Kind will). Der Planer nimmt t3 dann von
+selbst (Warum: „Eine schonendere Übung …“), und die Blatt-Anleitung bekommt den Satz „Fragt das Blatt nach dem Kind selbst,
+darf es für die Figur oder die ausgedachte Situation antworten“. Jede Kurs-Sitzung hat so eine schonende Fassung; prüfen mit
+`tmp/auftraege/schonend-pruefen.tsx <linie> …` (mit `KRISE=1` zusätzlich belastende Erfahrungen – dort fallen Übungen, die
+Gefühle abfragen oder Leistung prüfen, mit Absicht weg).
 
 ## 5. Fachliche Leitplanken
 

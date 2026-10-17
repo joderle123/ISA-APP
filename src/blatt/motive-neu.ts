@@ -3,7 +3,7 @@
 // Dinge, die auf Karten und in Auswahlrastern oft vorkommen und bisher nur als
 // graues Piktogramm da waren, und „wachsende“ Motive für Kurse (Teil für Teil).
 // Die Zeichnungen liegen nach Thema in motive-neu-*.ts (dinge, zeichen, gesten, haus,
-// essen, tiere, natur, berufe, wachsend, weitere); gemeinsame Helfer in motive-neu-helfer.ts.
+// essen, tiere, natur, berufe, wachsend, wachsend2, weitere); gemeinsame Helfer in motive-neu-helfer.ts.
 // ICON_MOTIV: Piktogramm → farbiges Motiv mit derselben Bedeutung; die Bausteine
 // zeigen für junge Stufen statt des Piktogramms das Motiv.
 // Vorschau: scripts/motive-vorschau.tsx, Paare prüfen: scripts/motive-paare.tsx.
@@ -19,6 +19,7 @@ import { NEU_TIERE } from './motive-neu-tiere'
 import { NEU_NATUR } from './motive-neu-natur'
 import { NEU_BERUFE } from './motive-neu-berufe'
 import { NEU_WACHSEND } from './motive-neu-wachsend'
+import { NEU_WACHSEND2 } from './motive-neu-wachsend2'
 import { NEU_WEITERE } from './motive-neu-weitere'
 
 export const NEU: Record<string, () => Zeichnung> = {
@@ -31,6 +32,7 @@ export const NEU: Record<string, () => Zeichnung> = {
   ...NEU_NATUR,
   ...NEU_BERUFE,
   ...NEU_WACHSEND,
+  ...NEU_WACHSEND2,
   ...NEU_WEITERE,
 }
 

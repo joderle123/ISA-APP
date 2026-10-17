@@ -195,8 +195,19 @@ export interface Wahlkarte {
 // Profil (3.4) – Hub → Toolbox, nur abgeleitete Merkmale
 // ---------------------------------------------------------------------------------------------------------------
 
-export interface ProfilZiel { code: string; ich: string; quelle: 'pei' | 'eldib' | 'vorgemerkt' | 'andere'; seit?: string; prio: number }
-export interface ProfilThema { key: string; art: 'vorfall' | 'notiz' | 'beobachtung' | 'gespraech' | 'reunion' | 'screening' | 'klassenbuch'; datum: string }
+/** quelle `steckbrief`: Vorschlag aus dem Steckbrief (KI-Auswertung des Dossiers) – zählt erst, wenn die Fachkraft es einschaltet
+ *  (Korrekturen `ziele[code] = true`, im Hub `korrekturen.ziele.an`) */
+export interface ProfilZiel { code: string; ich: string; quelle: 'pei' | 'eldib' | 'vorgemerkt' | 'steckbrief' | 'andere'; seit?: string; prio: number }
+/** art `steckbrief`: Thema aus dem Steckbrief (Schwierigkeiten, Auslöser, Einschätzungen) – altert nicht nach 60 Tagen */
+export interface ProfilThema { key: string; art: 'vorfall' | 'notiz' | 'beobachtung' | 'gespraech' | 'reunion' | 'screening' | 'klassenbuch' | 'steckbrief'; datum: string }
+
+export interface ProfilVorschlaege {
+  zugang?: { lesen?: 0 | 1 | 2 | 3; schreiben?: 0 | 1 | 2 | 3; tempo?: 'ruhig' }
+  hilft?: ('stundenleiste' | 'bewegungspausen' | 'reizarm' | 'bildplan')[]
+  vorsicht?: ('familie' | 'trauer' | 'koerper' | 'reiz' | 'trauma')[]
+  interessen?: string[]
+  woerter?: ('lb' | 'pt')[]
+}
 
 export interface Profil {
   v: 1
@@ -236,6 +247,9 @@ export interface Profil {
   seed?: string
   /** Datenlage (T-M5): dünn = keine ELDiB-Ziele und keine Themen der letzten 60 Tage */
   dichte?: 'duenn' | 'mittel' | 'reich'
+  /** Vorschläge aus dem Steckbrief (Hub, nur feste Schlüssel): gelten erst, wenn die Fachkraft sie in „Das weiß ich schon“
+   *  übernimmt – fürs Planen zählt nur, was in `zugang`, `hilft`, `vorsicht`, `interessen` und `sprache` steht */
+  vorschlaege?: ProfilVorschlaege
   /** Kleingruppe (kern/gruppe.ts): je Kind, was sein Blatt braucht – das Profil selbst ist das der ganzen Gruppe */
   gruppe?: { ref: string; vorname?: string; anrede: string | null; alterJahre: number; stufen: Stufe[]; layout: Layout; sprache: { blatt: Sprache; woerter: ('lb' | 'pt')[] }; zugang: Profil['zugang']; ziele?: string[] }[]
 }
@@ -357,6 +371,9 @@ export interface Rueckmeldung {
   am: string
   /** Stimme des Kindes (E-M15): was es gewählt hat, sein Daumen am Schluss – zwei freiwillige Klicks der Fachkraft */
   kind?: { wahl?: string; daumen?: 'hoch' | 'runter' }
+  /** Selbsteinschätzung des Kindes je Ziel (1 noch nicht … 4 fast immer) – in Sitzung 1 und der letzten Sitzung einer Folge
+   *  (Wirkung, 17.10.2026; der Hub zeigt „Wirkt es?“) */
+  selbst?: Record<string, 1 | 2 | 3 | 4>
 }
 
 /** Eine Alternative beim Antippen (5.8) */

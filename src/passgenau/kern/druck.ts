@@ -78,9 +78,22 @@ export interface DruckFolge {
   /** Einzelkurs: Hintergrund für die Fachkraft – warum es wirkt, worauf achten, Quellen (Referenzmessung 16.10.: „Hintergrund,
    *  Quellen und Achtung-Hinweise fehlen im Vergleich zum Skills-Kurs“) */
   hintergrund?: { warum: string; achtung: string[]; quellen: string[] }
+  /** Einzelkurs: „Brücke in die Klasse“ – eine Seite für die Lehrkraft (17.10.2026: Einzelstunden wirken nur, wenn das Geübte in
+   *  die Klasse kommt) */
+  klasse?: KlassenKarte
   material: string[]
   datei: string
   sprache: Sprache
+}
+
+/** Karte für die Lehrkraft: Ziel, gemeinsames Stichwort, je Woche was dazukommt, wie erinnern und loben, was beobachten */
+export interface KlassenKarte {
+  ziel: string
+  stichwort: string
+  sitzungen: string[]
+  helfen: string[]
+  beobachten: string[]
+  nicht: string
 }
 
 const KURZ = 240
@@ -723,9 +736,14 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   // (Tausch-Übung als Kern: die Anleitung zum Blatt der Variante, die die Sitzung behält)
   const blattE = kernX?.blattVon ? k.eintraege.get(kernX.blattVon) ?? kernE : kernE
   const anl = blattE?.typ === 'schritt' ? blattE.uebungsblatt?.anleitung?.[sp] : undefined
+  // schonende Tausch-Übung statt einer belastenden Variante: das Blatt bleibt – was nach dem Kind selbst fragt, darf es für die
+  // Figur oder die ausgedachte Situation beantworten (Kurs-Lücke 17.10.2026: Sitzungen für Kinder mit einem heiklen Thema)
+  const schonend = kernE?.typ === 'schritt' && kernE.tausch && kernE.belastung === 0 && blattE !== kernE && (kernX?.warum ?? []).some((w) => w.startsWith('Eine schonendere Übung'))
+  const schonSatz = sp === 'fr' ? ' Si la fiche pose une question sur l’enfant, il peut répondre pour le personnage ou la situation inventée – rien de personnel ne doit figurer sur la fiche.'
+    : ' Fragt das Blatt nach dem Kind selbst, darf es für die Figur oder die ausgedachte Situation antworten – nichts Eigenes muss aufs Blatt.'
   if (anl) s.schritte.forEach((x, i) => {
     if (x.ref !== 'pg:blatt' || !schritte[i]) return
-    schritte[i].text = name ? mitName(anl.text, name, sp) : anl.text
+    schritte[i].text = (name ? mitName(anl.text, name, sp) : anl.text) + (schonend ? schonSatz : '')
     if (anl.sagen?.length) schritte[i].sagen = anl.sagen
     if (anl.wennEsKippt) schritte[i].wennEsKippt = name ? mitName(anl.wennEsKippt, name, sp) : anl.wennEsKippt
   })
@@ -896,9 +914,12 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
 
 /** Hintergrund eines Einzelkurses (src/data/passgenau/kurs-hintergrund.json) */
 export interface KursHintergrund {
+  /** Name des Kurses (Titel der Folge und der Mappe) */
+  name?: { de: string; fr: string }
   de: { warum: string; achtung: string[] }
   fr: { warum: string; achtung: string[] }
   quellen: string[]
+  klasse?: { de: KlassenKarte; fr: KlassenKarte }
 }
 
 export function druckFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache: Sprache; warum: boolean }): DruckFolge {
@@ -911,10 +932,12 @@ export function druckFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache: Sp
   const faden = reihe?.faden[opt.sprache]
   const h = reihe ? (HINTERGRUND as Record<string, KursHintergrund>)[reihe.id] : undefined
   const hintergrund = h?.[opt.sprache]?.warum ? { warum: h[opt.sprache].warum, achtung: h[opt.sprache].achtung ?? [], quellen: h.quellen ?? [] } : undefined
+  const klasse = h?.klasse?.[opt.sprache]
   return {
     titel: plan.titel,
     ...(faden ? { faden } : {}),
     ...(hintergrund ? { hintergrund } : {}),
+    ...(klasse?.ziel ? { klasse } : {}),
     sitzungen,
     bogen: plan.sitzungen.map((s) => {
       const kern = s.schritte.find((x) => x.rolle === 'kern')

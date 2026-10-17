@@ -55,6 +55,14 @@ Stand 2026-10-09 · `proto` 1 · `planV` 1 · `profilV` 1. Gilt für `src/passge
   „darf wieder“, Reihenfolge der Ziele). **Ausnahme:** abgewählte Ziele und Themen (`korrekturen.ziele.aus`,
   `korrekturen.themen.aus`) bleiben im Profil, damit die Toolbox sie wieder einschalten kann; die Toolbox wendet die Abwahl
   vor dem Planen an.
+- **Vorschläge aus dem Steckbrief** (KI-Auswertung des Dossiers, 17.10.2026) gelten erst nach dem Klick der Fachkraft:
+  - Ziele mit `quelle: 'steckbrief'` (ELDiB-Code aus dem Ich-Satz der KI, `ich` = Standard-Formulierung des Items, nie der Text
+    der KI; höchstens vier, nach den Zielen aus ELDiB, PEI und „vorgemerkt“). Die Toolbox plant mit ihnen nur, wenn
+    `korrekturen.ziele.an` den Code enthält (in der Oberfläche `ziele[code] = true`). `dichte` zählt sie nicht.
+  - `vorschlaege` (optional, nur feste Schlüssel): `{ zugang?: { lesen?, schreiben?, tempo?: 'ruhig' }, hilft?: [...],
+    vorsicht?: ('familie'|'trauer'|'koerper'|'reiz'|'trauma')[], interessen?: [...], woerter?: ('lb'|'pt')[] }` – nur, was
+    noch nicht gilt und nicht als „passt nicht“ markiert ist. „Übernehmen“ schreibt die übliche Korrektur (`lesen`,
+    `schreiben`, `tempo`, `hilft`, `vorsicht.an`, `woerter`, Interessen); „passt nicht“ schreibt `korrekturen.vorschlagAus`.
 - Nie im Profil: Nachname, Geburtsdatum, Matricule, Schule, Klasse im Klartext, Testwerte, Diagnosen, Medikation,
   Familienangaben, Notiztexte, Dossier-Kennung, Themenschlüssel heikler Themen (nur `achtung: ['krise'|'kinderschutz']`).
 
@@ -71,7 +79,8 @@ Stand 2026-10-09 · `proto` 1 · `planV` 1 · `profilV` 1. Gilt für `src/passge
 | `woerter` | `('lb'\|'pt')[]` | Wörterstreifen (leer = aus) |
 | `hilft` | Liste aus `hallo.hilft` | „Was dem Kind hilft“ |
 | `vorsicht` | `{ an: [...], aus: [...] }` | `reiz`/`trauma` nur hier; `heikel` nie abwählbar |
-| `ziele` | `{ aus: [Code], reihenfolge: [Code] }` | Abwahl (Toolbox), Reihenfolge (Hub) |
+| `ziele` | `{ aus: [Code], reihenfolge: [Code], an: [Code] }` | Abwahl (Toolbox), Reihenfolge (Hub), eingeschaltete Vorschläge aus dem Steckbrief |
+| `vorschlagAus` | `['lesen'\|'schreiben'\|'tempo'\|'hilft:<k>'\|'vorsicht:<k>'\|'interesse:<k>'\|'woerter:<k>'\|'ziel:<Code>']` | Vorschläge aus dem Steckbrief, die nicht passen – kommen nicht wieder |
 | `themen` | `{ aus: [Schlüssel] }` | Abwahl (Toolbox) |
 | `darfWieder` | `['blatt:<id>' \| Ref]` | „schon gemacht“ darf wieder vorkommen |
 

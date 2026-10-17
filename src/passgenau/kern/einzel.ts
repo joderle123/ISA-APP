@@ -52,7 +52,8 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   // Vorsicht trauer
   trauer: /\b(Tod|tot|gestorben|sterben|stirbt|Verlust|verloren|vermiss\w*|Abschied\w*|Trauer|trauer\w*|Friedhof|Beerdigung|Oma|Opa|Großmutter|Großvater|Trennung|Scheidung|traurig, weil)\b|\b(décès|mort|morte|deuil|perdu|manque|grand-mère|grand-père|séparation|divorce)\b/,
   // Vorsicht familie (und Kinderschutz): Fragen zu Familie oder Zuhause
-  familie: /\b(Familie\w*|Zuhause|zu Hause|daheim|Eltern\w*|Mutter|Vater|Mama|Papa|Geschwister|Bruder|Schwester|Herkunft|Heimat\w*)\b|\b(famille|maison|parents|mère|père|maman|papa|frère|sœur|origine)\b/,
+  // („maison“ nur als „à la maison“/„chez toi“ – „la maison des émotions“ des Gefühle-Kurses ist kein Zuhause; Prüfstand 17.10.2026)
+  familie: /\b(Familie\w*|Zuhause|zu Hause|daheim|Eltern\w*|Mutter|Vater|Mama|Papa|Geschwister|Bruder|Schwester|Herkunft|Heimat\w*)\b|(?:à|a) la maison|\bchez (toi|moi|vous|nous)\b|\b(famille|parents|mère|père|maman|papa|frère|sœur|origine)\b/,
   // Vorsicht koerper
   koerper: /\b(eigenen? Hand|Hand (nach|um)zeichnen|Umriss (deiner|der) Hand|ta propre main|contour de (ta|la) main|Aussehen|Körperbild|Strand\w*|Bikini|Badeanzug|Gewicht|Figur|dick|dünn|Spiegel\w*|Diät|Kalorien|Körper-Chip|mein Körper verändert)\b|\b(apparence|poids|maillot|plage|régime|miroir)\b/,
   // belastende Sätze (nur mit Hilfe-Zeile; bei offener Krise nie)
@@ -78,7 +79,8 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   // Prüfungen als Anlass (Blind-Bewertung 9: „Atem-Blatt ‚vor dem Prüfungsraum‘ ohne Prüfungsthema im Profil“)
   pruefung: /\b(Prüfung\w*|Prüfungsraum|Klassenarbeit|Test schreib\w*|examens?|salle d['’]examen|contrôle écrit)\b/i,
   // Atem anhalten (Blind-Bewertung 9: „Quadratatmung mit ‚Retenir – 4‘ bei Tagesform ängstlich und Vorsicht trauma“)
-  atemAnhalten: /\b((Luft|Atem) (an)?halten|halten\s*[–-]\s*\d|Atem anhalten|retenir( (le|son) souffle)?\s*[–-]?\s*\d?|bloquer (la|sa) respiration)\b/i,
+  // („retenir“ allein heißt „sich merken“ – „la phrase à retenir“ ist kein Atemanhalten; Prüfstand 17.10.2026)
+  atemAnhalten: /\b((Luft|Atem) (an)?halten|halten\s*[–-]\s*\d|Atem anhalten|retenir (le|son|ta) souffle|retiens (le|ton) souffle|bloquer (la|sa|ta) respiration)\b/i,
   // Leistung messen (Blind-Bewertung 9, A12: „Minuteur, Strichzählung und Rundenvergleich an echter Schularbeit bei
   // Stimmung 2“) – nicht in Krisenlage
   leistungsmessung: /\b(Strich(e)? (in|an|am|auf) (den|dem) (Blatt)?[Rr]and|Strichzahlen|Striche zählen|zählt die Striche|Runde \d und \d vergleich\w*|beide Runden vergleich\w*|un trait dans la marge|combien de traits|compter les traits|comparer les deux (séries|tours|manches)|zählt die Treffer|Treffer laut mit|Schaffen wir (gemeinsam )?\d+|compte ses paniers|compter les paniers|arrive ensemble à \d+)\b/i,

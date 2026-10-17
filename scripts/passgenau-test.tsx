@@ -29,6 +29,9 @@ import { KATHARSIS_RE, KURSVERWEIS_RE, VORB_GRUPPE_RE, VORLAUF_RE } from '../src
 import { ladeKatalogNode, ROOT } from './passgenau-quellen'
 import { pruefeBeschriftung, wendeBeschriftungAn, type Beschriftung, type EintragKontext } from '../src/passgenau/kern/beschriftung'
 import type { SchrittMeta } from '../src/passgenau/kern/format'
+import { mitKorrekturen, type Korrekturen } from '../src/passgenau/ui/zustand'
+import { offeneVorschlaege, passtNicht } from '../src/passgenau/ui/vorschlaege'
+import { korrekturenFuerHub } from '../src/passgenau/ui/hub'
 
 const SCHNELL = process.argv.includes('--schnell')
 registriereSchriften((d) => join(ROOT, 'src/assets/fonts/pdf', d))
@@ -244,8 +247,9 @@ await pruefung('Weg 1/2/3 für 5, 9 und 14 Jahre: Minuten, Bogen, Kern, Blatt, R
         soll((w?.wahl?.length ?? 0) + 1 <= 3, `${name}: mehr als drei Optionen`)
         soll(!s.schritte.some((x) => x.rolle === 'kern'), `${name}: Kern in Weg 3`)
       }
-      // Blatt: bis 5 Jahre ohne (Vorgabe), sonst mit; Weg 3 ohne
-      if (sz.weg === 'leicht' || p.alterJahre <= 5) soll(!s.blatt, `${name} S${s.nr}: Blatt, obwohl ohne vorgesehen`)
+      // Blatt: bis 5 Jahre ohne (Vorgabe) – außer in einem Einzelkurs (sein Bildblatt gehört dazu) –, sonst mit; Weg 3 ohne
+      const imKurs = s.schritte.some((x) => x.rolle === 'kern' && !!k.eintraege.get(x.ref)?.linie?.id.startsWith('kurs-'))
+      if (sz.weg === 'leicht' || (p.alterJahre <= 5 && !imKurs)) soll(!s.blatt, `${name} S${s.nr}: Blatt, obwohl ohne vorgesehen`)
       // ein einzelner Teil genügt, wenn er die Seite mindestens zur Hälfte füllt (Blatt aus einer Quelle, kurzer Slot)
       else soll(!!s.blatt && (s.blatt.bausteine.filter((b) => !b.ref.startsWith('pg:')).length >= 2 || (seitenFuellung(k, p, sz.plan, s.nr)[0] ?? 0) >= 0.5), `${name} S${s.nr}: Blatt fehlt oder zu dünn`)
     }
@@ -965,6 +969,35 @@ if (!SCHNELL) {
   })
 }
 
+// Zwei echte Dossiers (17.10.2026, anonym durchgespielt): Vorschläge aus dem Steckbrief kamen nie beim Planen an, bei LRS kam die
+// Schreib-Variante, und mit einem Sicherheitsthema fielen Kurs-Varianten still weg. Hier mit einem erfundenen Kind.
+await pruefung('Steckbrief-Vorschläge: gelten erst nach „Übernehmen“; wenig Schreiben → Kurs-Variante b; Sicherheitsthema → schonende Übung mit Begründung', async () => {
+  const roh = kind({
+    ref: 't-sb', vorname: 'Lina', alterJahre: 15, vorsicht: ['heikel'], achtung: ['krise'], dichte: 'duenn',
+    zugang: { lesen: 3, schreiben: 3, bild: 1, tempo: 'normal', struktur: 'normal', quelle: [] },
+    ziele: [{ code: 'V-26', ich: 'Wenn mich jemand provoziert, bleibe ich ruhig.', quelle: 'steckbrief', prio: 1 }],
+    vorschlaege: { zugang: { lesen: 2, schreiben: 1, tempo: 'ruhig' }, vorsicht: ['reiz'], interessen: ['musik'], woerter: ['lb'] },
+  })
+  const p0 = mitKorrekturen(roh, {}, false)
+  soll(p0.ziele.length === 0 && p0.zugang.schreiben === 3 && !p0.vorsicht.includes('reiz') && p0.interessen.length === 0 && p0.sprache.woerter.length === 0, 'ein Vorschlag gilt schon ohne Klick')
+  const offen = offeneVorschlaege(roh, p0, {})
+  const keys = offen.map((v) => v.key)
+  soll(['ziel:V-26', 'schreiben', 'lesen', 'tempo', 'vorsicht:reiz', 'woerter:lb', 'interesse:musik'].every((x) => keys.includes(x)), `offene Vorschläge: ${keys.join(', ')}`)
+  soll(!offeneVorschlaege(roh, p0, passtNicht({}, 'schreiben')).some((v) => v.key === 'schreiben'), '„passt nicht“ blendet nicht aus')
+  const korr = offen.reduce((a, v) => v.uebernehmen(a), {} as Korrekturen)
+  const p = mitKorrekturen(roh, korr, false)
+  soll(p.ziele[0]?.code === 'V-26' && p.zugang.schreiben === 1 && p.zugang.lesen === 2 && p.zugang.tempo === 'ruhig' && p.vorsicht.includes('reiz') && p.vorsicht.includes('heikel') && p.sprache.woerter.includes('lb') && p.interessen.includes('musik') && p.dichte === 'mittel', `nach „Alle übernehmen“: ${JSON.stringify({ z: p.ziele.map((x) => x.code), zg: p.zugang, v: p.vorsicht, d: p.dichte })}`)
+  soll(offeneVorschlaege(roh, p, korr).length === 0, 'nach „Alle übernehmen“ noch Vorschläge offen')
+  const zumHub = korrekturenFuerHub({}, korr, roh).korrekturen as Record<string, any> | undefined
+  soll(!!zumHub && zumHub.ziele?.an?.includes('V-26') && zumHub.schreiben === 1 && zumHub.vorsicht?.an?.includes('reiz') && JSON.stringify(zumHub.woerter) === '["lb"]', `an den Hub: ${JSON.stringify(zumHub)}`)
+  const plan = planen(k, p, auftrag(p, 'gruendlich', { ziele: ['V-26'], n: 6, dauer: 45 }), leer(), VERLAUF)
+  const kerne = plan.sitzungen.map((s) => s.schritte.find((x) => x.rolle === 'kern')!)
+  soll(kerne[0]?.ref === 'ki:kurs-wut-13-16-s1-b', `wenig Schreiben: Sitzung 1 ist ${kerne[0]?.ref}, nicht die Variante b`)
+  const tausch = kerne.filter((x) => (k.eintraege.get(x.ref) as { tausch?: boolean } | undefined)?.tausch)
+  soll(tausch.length > 0 && tausch.every((x) => /^Eine schonendere Übung/.test(x.warum?.[0] ?? '') && !!x.blattVon), `Tausch-Übungen ohne Begründung oder Blatt: ${tausch.map((x) => x.ref + ' ' + (x.warum?.[0] ?? '')).join(' | ')}`)
+  info(`Kerne: ${kerne.map((x) => x.ref.replace('ki:kurs-wut-13-16-', '')).join(' ')}`)
+})
+
 await pruefung('Einzelkurs: Tausch-Übungen nie von selbst, als Alternative nach den Varianten; Blatt, Anleitung und Auftrag bleiben', async () => {
   const alle = [...k.eintraege.values()]
   const tausch = alle.filter((e) => e.typ === 'schritt' && e.tausch && e.linie)
@@ -1005,7 +1038,8 @@ await pruefung('Einzelkurs: Tausch-Übungen nie von selbst, als Alternative nach
         soll(druck(neu) === anlVorher, `${id} S${nr}: Blatt-Anleitung ändert sich mit ${a.eintrag.id}`)
         // „Neu vorschlagen“ für die nächste Sitzung: der Auftrag vom Blatt bleibt derselbe (nur der Titel der letzten Übung ist neu)
         if (nr < plan.sitzungen.length) {
-          const titel = [k.eintraege.get(vorher.ref)!, a.eintrag].flatMap((e) => [textVon(e, 'de').titel, textVon(e, 'fr').titel])
+          // die längeren Titel zuerst („Katastrophen-Gedanken prüfen: Der Prüf-Würfel“ vor „Katastrophen-Gedanken prüfen“)
+          const titel = [k.eintraege.get(vorher.ref)!, a.eintrag].flatMap((e) => [textVon(e, 'de').titel, textVon(e, 'fr').titel]).sort((x, y) => y.length - x.length)
           const auf = (pl: Plan) => titel.reduce((s, t) => s.split(t).join('‹titel›'), JSON.stringify(sitzungNeu(k, p, pl, nr + 1, leer()).sitzungen[nr].schritte.filter((y) => y.rolle === 'einstieg' || y.rolle === 'kern').map((y) => y.ueber ?? null)))
           soll(auf(neu) === auf(plan), `${id} S${nr + 1}: Auftrag vom Blatt ändert sich nach dem Tausch`)
         }
@@ -1014,6 +1048,35 @@ await pruefung('Einzelkurs: Tausch-Übungen nie von selbst, als Alternative nach
     }
   }
   info(`${linien.length} Kurse mit Tausch-Übungen, ${geprueft} Tausche geprüft`)
+})
+
+await pruefung('Einzelkurs mit heiklem Thema: jede Sitzung bleibt im Kurs – schonend (belastung 0), Blatt der Variante, Satz „für die Figur antworten“', async () => {
+  // Kurs-Lücke 17.10.2026: 61 Sitzungen hatten nur belastende Fassungen – für Kinder mit Kinderschutz- oder Krisenthema fielen sie
+  // weg, drei Kurse ganz. Jetzt hat jede Sitzung eine schonende Fassung (-t3 oder eine Tausch-Übung mit belastung 0).
+  const linien = [...new Set([...k.eintraege.values()].filter((e) => e.typ === 'schritt' && e.linie?.id.startsWith('kurs-')).map((e) => e.linie!.id))].sort()
+  let sitzungen = 0, schonend = 0
+  for (const id of SCHNELL ? linien.filter((_, i) => i % 9 === 0) : linien) {
+    const kursE = [...k.eintraege.values()].filter((e) => e.typ === 'schritt' && e.linie?.id === id && !e.tausch)
+    const erste = kursE.filter((e) => e.linie!.nr === 1)
+    const alter = Math.round((erste[0].alter.von + erste[0].alter.bis) / 2)
+    const codes = [...new Set(erste.flatMap((e) => e.eldib.filter((x) => x.gewicht === 1).map((x) => x.code)))].slice(0, 2)
+    const n = Math.max(...kursE.map((e) => e.linie!.nr))
+    const p = kind({ ref: `t-schonend-${id}`, vorname: 'Lina', alterJahre: alter, ziele: codes.map((c, i) => z(c, '', i + 1)), vorsicht: ['heikel'] })
+    const plan = planen(k, p, auftrag(p, 'gruendlich', { ziele: codes, n, dauer: alter < 6 ? 20 : 30 }), leer(), VERLAUF)
+    for (const s of plan.sitzungen) {
+      sitzungen++
+      const x = s.schritte.find((y) => y.rolle === 'kern')
+      const e = k.eintraege.get(x?.ref ?? '')
+      if (!soll(e?.typ === 'schritt' && e.linie?.id === id, `${id} S${s.nr}: keine Kurs-Sitzung (${x?.ref})`) || e?.typ !== 'schritt') continue
+      soll(e.belastung === 0, `${id} S${s.nr}: ${e.id} mit belastung ${e.belastung}`)
+      if (!e.tausch || !x?.warum?.some((w) => w.startsWith('Eine schonendere Übung'))) continue
+      schonend++
+      soll(!!x.blattVon, `${id} S${s.nr}: schonende Übung ohne Blatt der Variante`)
+      const anl = druckSitzung(k, p, plan, s.nr, { sprache: 'de', warum: false }).schritte.find((_, i) => s.schritte[i]?.ref === 'pg:blatt')?.text ?? ''
+      soll(/für die Figur oder die ausgedachte Situation/.test(anl), `${id} S${s.nr}: Blatt-Anleitung ohne den Satz „für die Figur antworten“`)
+    }
+  }
+  info(`${sitzungen} Sitzungen, davon ${schonend} mit schonender Tausch-Übung`)
 })
 
 await pruefung('Tempo: planen < 200 ms nach geladenem Katalog (Median je Szenario)', () => {

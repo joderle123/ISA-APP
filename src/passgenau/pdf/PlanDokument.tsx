@@ -586,6 +586,11 @@ function Deckblatt({ f }: { f: DruckFolge }) {
   const sp = f.sprache
   const vorname = f.sitzungen[0]?.vorname
   const spalte = { fontFamily: SCHRIFT.titel, fontWeight: 800 as const, fontSize: 7.2, letterSpacing: 0.5, color: SCHWACH }
+  // langer Hintergrund (Sichtprüfung 16.10.: bei vier Achtung-Punkten oder fünf Quellen lief die Quellenzeile unter den Fuß):
+  // Bogen und Material rücken enger zusammen, damit das Deckblatt eine Seite bleibt
+  const h = f.hintergrund
+  const lang = h ? h.warum.length + h.achtung.reduce((n, a) => n + a.length + 40, 0) + 0.75 * h.quellen.join(' · ').length + 12 * f.material.length : 0
+  const eng = lang > 1150
   return (
     <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
       <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 14 }}>
@@ -625,7 +630,7 @@ function Deckblatt({ f }: { f: DruckFolge }) {
           const sitzung = f.sitzungen.find((x) => x.nr === b.nr)
           const minuten = sitzung ? sitzung.schritte.reduce((n, x) => n + x.min, 0) : 0
           return (
-            <View key={b.nr} style={{ flexDirection: 'row', borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie, paddingVertical: 9, alignItems: 'center' }}>
+            <View key={b.nr} style={{ flexDirection: 'row', borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie, paddingVertical: eng ? 5 : 9, alignItems: 'center' }}>
               <View style={{ width: 22, height: 22, borderRadius: 11, backgroundColor: P.zart, alignItems: 'center', justifyContent: 'center', marginRight: 10 }}>
                 <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: P.tief }}>{String(b.nr)}</Text>
               </View>
@@ -643,7 +648,7 @@ function Deckblatt({ f }: { f: DruckFolge }) {
           )
         })}
       </View>
-      <View style={{ marginTop: 18 }}>
+      <View style={{ marginTop: eng ? 10 : 18 }}>
         <Absatz titel={tx.alleMaterial}>
           <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
             {f.material.map((m, k) => (
@@ -682,11 +687,94 @@ function Deckblatt({ f }: { f: DruckFolge }) {
   )
 }
 
-/** Mappe einer Folge: Deckblatt mit Bogen und Material, dann je Sitzung Planblatt und Blatt. */
+/** „Brücke in die Klasse“: eine Seite für die Lehrkraft – Ziel, Stichwort, je Woche, erinnern und loben, beobachten. Ohne
+ *  Diagnosen und ohne Dossier; der Vorname nur, wenn „Vorname einsetzen“ an ist (sonst eine Linie zum Eintragen). */
+function KlassenKarteSeite({ f }: { f: DruckFolge }) {
+  const k = f.klasse
+  if (!k) return null
+  const sp = f.sprache
+  const fr = sp === 'fr'
+  const vorname = f.sitzungen[0]?.vorname
+  const punkt = (t: string, i: number) => (
+    <View key={i} style={{ flexDirection: 'row', marginBottom: 3 }}>
+      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 10, color: P.tief, width: 11 }}>•</Text>
+      <View style={{ flex: 1 }}><LText>{ty(t, sp)}</LText></View>
+    </View>
+  )
+  return (
+    <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
+      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+        <View style={{ backgroundColor: P.tief, borderRadius: 4, paddingHorizontal: 6, paddingVertical: 2.2 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, letterSpacing: 0.9, color: '#FFFFFF' }}>{fr ? 'POUR L’ENSEIGNANT·E' : 'FÜR DIE LEHRKRAFT'}</Text>
+        </View>
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: NEUTRAL.leise, letterSpacing: 0.3, marginLeft: 8 }}>{fr ? 'Le pont vers la classe · 6 semaines' : 'Brücke in die Klasse · 6 Wochen'}</Text>
+      </View>
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 21, color: NEUTRAL.text, marginBottom: 4 }}>{ty(f.titel, sp)}</Text>
+      <View style={{ flexDirection: 'row', alignItems: 'flex-end', marginBottom: 12 }}>
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.4, color: NEUTRAL.leise }}>{fr ? 'Pour : ' : 'Für: '}</Text>
+        {vorname ? <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: NEUTRAL.text }}>{vorname}</Text> : <View style={{ width: 150, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie, height: 11 }} />}
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.4, color: NEUTRAL.leise, marginLeft: 18 }}>{fr ? 'Contact : ' : 'Ansprechperson: '}</Text>
+        <View style={{ width: 150, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie, height: 11 }} />
+      </View>
+      <View style={{ backgroundColor: P.zart, borderRadius: 9, padding: 10, marginBottom: 12 }}>
+        <LText>{ty(k.ziel, sp)}</LText>
+        <View style={{ marginTop: 6 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7.4, letterSpacing: 0.6, color: P.tief, marginBottom: 1 }}>{fr ? 'MOT-CLÉ POUR RAPPELER' : 'STICHWORT ZUM ERINNERN'}</Text>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: k.stichwort.length > 60 ? 11 : 13, color: NEUTRAL.text }}>{ty(k.stichwort, sp)}</Text>
+        </View>
+      </View>
+      <Absatz titel={fr ? 'Semaine par semaine' : 'Woche für Woche'} abstand={8}>
+        {k.sitzungen.slice(0, 6).map((t, i) => (
+          <View key={i} style={{ flexDirection: 'row', borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie, paddingVertical: 4, alignItems: 'center' }}>
+            <View style={{ width: 18, height: 18, borderRadius: 9, backgroundColor: P.zart, alignItems: 'center', justifyContent: 'center', marginRight: 8 }}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.5, color: P.tief }}>{String(i + 1)}</Text>
+            </View>
+            <View style={{ flex: 1 }}><LText>{ty(t.replace(/^(Woche|Semaine)\s*\d+\s*:\s*/i, ''), sp)}</LText></View>
+          </View>
+        ))}
+      </Absatz>
+      <Absatz titel={fr ? 'Comment aider' : 'So helfen Sie'} abstand={8}>{k.helfen.map(punkt)}</Absatz>
+      <Absatz titel={fr ? 'À observer (volontiers noté dans le Klassenbuch)' : 'Bitte beobachten (gern im Klassenbuch notieren)'} abstand={8}>{k.beobachten.map(punkt)}</Absatz>
+      {k.nicht ? (
+        <View style={{ borderLeftWidth: 2.5, borderLeftColor: P.tief, paddingLeft: 9, marginTop: 2, marginBottom: 10 }}>
+          <Absatz titel={fr ? 'À éviter pendant ces semaines' : 'In diesen Wochen besser nicht'} farbe={P.tief} abstand={4}>
+            <LText>{ty(k.nicht, sp)}</LText>
+          </Absatz>
+        </View>
+      ) : null}
+      {/* Rückmeldung der Lehrkraft je Woche (ankreuzen, zurückgeben): die Beobachtung aus der Klasse kommt so zur Fachkraft – sie
+          trägt sie als Beobachtung mit Ziel ein, „Wirkt es?“ im Hub zeigt sie */}
+      {k.beobachten[0] ? (
+        <View wrap={false}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text, marginBottom: 2 }}>{fr ? 'Votre retour chaque semaine (à cocher et à rendre)' : 'Ihre Rückmeldung je Woche (ankreuzen und zurückgeben)'}</Text>
+          <LText klein farbe={NEUTRAL.leise}>{`${fr ? 'Observé :' : 'Beobachtet:'} ${ty(k.beobachten[0], sp)}`}</LText>
+          <View style={{ flexDirection: 'row', marginTop: 5, borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie, paddingBottom: 2 }}>
+            <View style={{ width: 60 }} />
+            {(fr ? ['souvent', 'parfois', 'pas encore', 'pas vu'] : ['oft', 'manchmal', 'noch nicht', 'nicht gesehen']).map((t) => (
+              <Text key={t} style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7.4, color: SCHWACH, width: 74, textAlign: 'center' }}>{t.toUpperCase()}</Text>
+            ))}
+          </View>
+          {[1, 2, 3, 4, 5, 6].map((w) => (
+            <View key={w} style={{ flexDirection: 'row', alignItems: 'center', borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie, paddingVertical: 3 }}>
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, color: NEUTRAL.text, width: 60 }}>{`${fr ? 'Semaine' : 'Woche'} ${w}`}</Text>
+              {[0, 1, 2, 3].map((i) => (
+                <View key={i} style={{ width: 74, alignItems: 'center' }}><Kaestchen g={9} /></View>
+              ))}
+            </View>
+          ))}
+        </View>
+      ) : null}
+      <Fuss sprache={sp} spielschule={false} />
+    </Page>
+  )
+}
+
+/** Mappe einer Folge: Deckblatt mit Bogen und Material, dann (Einzelkurs) die Seite für die Lehrkraft, dann je Sitzung Planblatt und Blatt. */
 export function FolgeDokument({ f }: { f: DruckFolge }) {
   return (
     <Document title={`Passgenau – ${f.titel}`} author={urheberschaft(undefined).name} creator="CDSE Toolbox" producer="CDSE Toolbox" language={f.sprache}>
       <Deckblatt f={f} />
+      <KlassenKarteSeite f={f} />
       {f.sitzungen.map((d) => (
         <SitzungSeiten key={d.nr} d={d} />
       ))}

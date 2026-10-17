@@ -1029,6 +1029,20 @@ button.pg-ph {
   flex: 1;
   min-width: 0;
 }
+/* offene Vorschläge aus dem Steckbrief (Zeile über den Wegen, Karte in „Das weiß ich schon“) */
+.pg-vorschlag-zahl {
+  color: var(--pg-warn);
+}
+.pg-pkarte.pg-vorschlaege {
+  border-color: var(--pg-warn-line);
+  background: var(--pg-warn-soft);
+}
+.pg-pkarte.pg-vorschlaege .pg-pzeile .pr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
+}
 .pg-reglerblock {
   display: flex;
   flex-direction: column;
@@ -4056,4 +4070,30 @@ dialog .pg-hinweise {
   .pg-alt {
     grid-template-columns: minmax(0, 1fr);
   }
+}
+
+/* „Warum diese Folge?“ im Ergebnis */
+.pg-warumfolge {
+  margin: 0 0 12px;
+  padding: 10px 14px;
+  border: 1px solid var(--line-2);
+  border-radius: 12px;
+  background: var(--surface-2);
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+.pg-warumfolge summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+}
+.pg-warumfolge ul {
+  margin: 6px 0;
+  padding-left: 20px;
+}
+.pg-warumfolge li {
+  margin: 2px 0;
 }

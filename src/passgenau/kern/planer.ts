@@ -5,11 +5,12 @@
 import type { Auftrag, Bogen, Ereignis, KatalogEintrag, Plan, PlanSchritt, Profil, Rolle, Sitzung, Sprache } from '../typen'
 import { hash01, hash8, stufeAusAlter, layoutAusStufe, istEldib, ohneEigenenNamen } from './hilfen'
 import { aktuellerKatalog, eldibKurz, ichSatz, intern, kurz, merkmaleVon, setzeTextModus, textVon, zielSatz, type Katalog } from './katalog'
-import { bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
+import { BESONDERE_THEMEN, bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
 import { alltagsOrte, baueBlatt, kernBlatt, werkzeugName } from './blatt'
 import { BLATT_SYSTEM } from './system'
 import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
 import { KOMPETENZ_NAME, NUR_DEUTSCH, feldEindeutig, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
+import HINTERGRUND from '../../data/passgenau/kurs-hintergrund.json'
 
 export interface Verlauf {
   plaene: Plan[]
@@ -425,21 +426,48 @@ function kursStand(c: Kontext, kurs: string, vorher?: Set<string>): number {
 const KURS_DER_FOLGE = new WeakMap<Kontext, { id: string; ab: number } | null>()
 /** Der Einzelkurs, den eine gründliche Folge nimmt: ein Kurs zum Hauptziel, dessen nächste Sitzung für das Kind passt. Hatte
  *  das Kind schon Sitzungen daraus (z. B. als einzelne Stunden), geht die Folge dort weiter (ab); ein fertiger Kurs zählt nicht. */
+/** Thema des Kurses → verwandte Themen des Kindes (Schlüssel aus dem Hub) und wie stark sie zählen */
+const KURS_VERWANDT: Record<string, readonly (readonly [string, number])[]> = {
+  gefuehle: [['traurig', 0.9], ['wut', 0.4], ['angst', 0.4]],
+  wut: [['gewalt', 0.9]],
+  aufmerksamkeit: [['lernen', 0.6]],
+  lernen: [['aufmerksamkeit', 0.6]],
+}
+const ALLGEMEINE_ZIELE = new Set(['V-25', 'V-15', 'K-12'])
 function kursWahl(c: Kontext): { id: string; ab: number } | null {
   let k = KURS_DER_FOLGE.get(c)
   if (k !== undefined) return k
   k = null
   // passt mehr als ein Kurs (Kurs-Prüfung 16.10.: SOZ-17 in „Hallo, spielst du mit?“ und „Wir spielen zusammen“), entscheidet das
   // wichtigere Ziel des Kindes – und bei Gleichstand der Kurs, dessen erstes Ziel es ist
-  if (c.weg === 'gruendlich' && c.ziele.length) {
+  // Prüfstand 17.10.2026 (24 erfundene Dossiers mit Gutachten): nur nach ELDiB-Codes gewählt bekam ein Fünfjähriger mit Wutanfällen
+  // den Grenzen-Kurs, weil eines seiner Ziele „Hilfe holen“ ist. Darum zählt das Thema des Kindes mit (aus Notizen, Réunion und
+  // Steckbrief): passt das Thema des Kurses, wiegt das wie ein wichtiges Ziel; ohne passendes Ziel reicht ein klares Thema.
+  // das Hauptthema des Kurses zählt voll, ein Nebenthema halb; besondere Themen (Medien, Angst, Mobbing …) etwas mehr als allgemeine
+  // verwandte Themen des Kindes zählen mit (Prüfstand: „traurig“ fand nie den Gefühle-Kurs, „Gewalt“ nie den Wut-Kurs)
+  const themaW = (e: KatalogEintrag) => Math.max(0, ...e.thema.flatMap((t, i) => [[t, 1] as const, ...(KURS_VERWANDT[t] ?? [])].map(([x, f]) => (c.themen.get(x)?.w ?? 0) * f * (i === 0 ? 1 : 0.5) * (BESONDERE_THEMEN.has(x) ? 1.2 : 1))))
+  if (c.weg === 'gruendlich' && (c.ziele.some((z) => istEldib(z.code)) || [...c.themen.values()].some((t) => t.w >= 0.7))) {
     let best = 0
     const kerne = c.k.nachRolle.get('kern') ?? []
     for (const e of kerne) {
       if (e.typ !== 'schritt' || !e.linie?.id.startsWith('kurs-') || e.linie.nr !== 1) continue
       let w = 0
-      c.ziele.forEach((z, i) => { const x = e.eldib.find((y) => y.code === z.code); if (x) w += (x.gewicht === 1 ? 1 : 0.2) / (i + 1) })
-      if (!e.eldib.some((x) => x.gewicht === 1 && c.ziele.some((z) => z.code === x.code))) continue
-      if (e.eldib[0]?.code === c.ziele[0].code) w += 0.25
+      // allgemeine Ziele („besprochene Verhaltensweisen anwenden“, „Aufgabe allein lösen“) passen zu vielen Kursen – sie zählen
+      // weniger und tragen einen Kurs nur mit passendem Thema (Prüfstand Runde 2: die KI wählte V-25 für Pausenkarte und
+      // Spielzeit – beide Kinder bekamen den Wut-Kurs)
+      // – außer beim Kurs, dessen Hauptziel es ist (Alltag 4–6, Fokus 10–12, Grenzen 4–6)
+      const haupt = e.eldib[0]?.code
+      const allgemein = (code: string) => ALLGEMEINE_ZIELE.has(code) && code !== haupt
+      c.ziele.forEach((z, i) => { const x = e.eldib.find((y) => y.code === z.code); if (x) w += (x.gewicht === 1 ? 1 : 0.2) * (allgemein(z.code) ? 0.4 : 1) / (i + 1) })
+      const tw = themaW(e)
+      const zielTrifft = e.eldib.some((x) => x.gewicht === 1 && c.ziele.some((z) => z.code === x.code) && (!allgemein(x.code) || tw >= 0.35))
+      if (!zielTrifft && tw < 0.7) continue
+      w += 0.75 * tw
+      // (ein allgemeines Ziel an erster Stelle gibt keinen Vorsprung – Prüfstand: „Hilfe holen“ zog ein trauerndes Kind in den
+      // Grenzen-Kurs des Nachbarbands)
+      if (c.ziele[0] && e.eldib[0]?.code === c.ziele[0].code && !ALLGEMEINE_ZIELE.has(c.ziele[0].code)) w += 0.25
+      // der Kurs aus dem eigenen Altersband vor dem Nachbarband (Prüfstand: ein Dreizehnjähriger bekam den Kurs für 10–12)
+      if (c.alter >= e.alter.von && c.alter <= e.alter.bis) w += 0.5
       if (w <= best) continue
       const id = e.linie.id
       const ab = kursStand(c, id)
@@ -515,6 +543,8 @@ export interface SitzungsAuftrag {
   fokus?: Map<string, number>
   /** Kerne der früheren Sitzungen dieser Folge (für den Rückblick der letzten Sitzung) */
   fruehereKerne?: string[]
+  /** dieselben, aber mit dem Blatt, das die Sitzung wirklich hatte (Tausch-Übung: das Blatt ihrer Variante) – für den Auftrag */
+  fruehereBlaetter?: string[]
   /** Jugend-Folge (Blind-Bewertung 7): das Ziel, dem der Kern dieser Sitzung folgt (roter Faden statt Zielwechsel) */
   kernZiel?: string
   /** Jugend-Folge: Art der Übertragung der vorigen Sitzung (zwei Übertragen-Sitzungen nie gleich) */
@@ -1229,7 +1259,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         // das zweite Ziel nur ankündigen, wenn der Kern es auch übt (Messung 2, 16.10.: „le deuxième objectif arrive“ vor einer
         // Übung zum ersten Ziel – es gab keine eigene Übung zum zweiten)
         const neu = o.neuesZiel && kern.eldib.some((x) => x.code === o.kernZiel) ? o.neuesZiel : undefined
-        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr, kernTitel, neu, vorher, nachVersuch, brueckeVon(c, o.fruehereKerne ?? [], kern), kursAuftrag(c, o.fruehereKerne ?? [], kern))
+        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr, kernTitel, neu, vorher, nachVersuch, brueckeVon(c, o.fruehereKerne ?? [], kern), kursAuftrag(c, o.fruehereBlaetter ?? o.fruehereKerne ?? [], kern))
         continue
       }
     }
@@ -1284,15 +1314,25 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     // Einzelkurs: Sitzung k der Folge ist Sitzung k des Kurses – die Variante, die zum Zugang des Kindes passt (Kurs-Prüfung
     // 16.10.: sonst rutschte eine Einzelübung dazwischen und der Kurs lief versetzt weiter). „Neu vorschlagen“ sperrt die
     // bisherige Variante – dann kommt die andere, sonst eine Übung außerhalb des Kurses.
+    let tauschGrund = ''
     if (slot.rolle === 'kern' && c.weg === 'gruendlich' && o.phase !== 'leicht' && kursHatSitzung(c, o.nr)) {
       const kurs = kursWahl(c)!
-      const dran = (c.k.nachRolle.get('kern') ?? [])
-        .filter((e) => e.typ === 'schritt' && e.linie?.id === kurs.id && e.linie.nr === o.nr + kurs.ab && pruefe(e, c, { rolle: 'kern', gesperrt: benutzt }) === null)
+      const alle = (c.k.nachRolle.get('kern') ?? []).filter((e) => e.typ === 'schritt' && e.linie?.id === kurs.id && e.linie.nr === o.nr + kurs.ab)
+      const dran = alle
+        .filter((e) => pruefe(e, c, { rolle: 'kern', gesperrt: benutzt }) === null)
         .map((e) => ({ b: bewerte(e, c, { phase: o.phase }), locker: 0 }) as Wahl)
         .sort((x, y) => rang(x.b, y.b, `${salz}|kurs`))
-      // Tausch-Übungen nur auf Wunsch – oder wenn „Neu vorschlagen“ beide Varianten gesperrt hat
+      // Tausch-Übungen nur auf Wunsch – oder wenn „Neu vorschlagen“ beide Varianten gesperrt hat bzw. keine Variante passt
       const varianten = dran.filter((x) => !(x.b.e.typ === 'schritt' && x.b.e.tausch))
       if (dran.length) auswahl = varianten.length ? varianten : dran
+      // warum eine Tausch-Übung statt der Variante (zwei echte Dossiers 17.10.2026: mit einem Sicherheitsthema fielen die
+      // belastenderen Varianten still weg – die Fachkraft soll sehen, dass das Absicht ist)
+      if (dran.length && !varianten.length) {
+        const gruende = alle.filter((e) => e.typ === 'schritt' && !e.tausch).map((e) => pruefe(e, c, { rolle: 'kern', gesperrt: benutzt }))
+        tauschGrund = gruende.includes('Vorsicht') ? 'Eine schonendere Übung statt der Kurs-Variante – wegen der Vorsicht im Profil (Blatt und Ziel der Sitzung bleiben)'
+          : gruende.every((g) => g === 'schon in der Folge') ? 'Andere Übung zur selben Sitzung (Blatt und Ziel bleiben)'
+          : 'Eine Übung, die besser passt als die Kurs-Varianten (Blatt und Ziel der Sitzung bleiben)'
+      }
     }
     const w = auswahl[0]
     if (!w) {
@@ -1302,7 +1342,11 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     const rolle: Rolle = slot.rolle === 'vertiefung' ? 'kern' : (slot.rolle as Rolle)
     ergebnis[i] = planSchritt(w.b, rolle, slot.min, c, { phase: o.phase, nr: o.nr, lockerText: w.lockerText })
     // Tausch-Übung als Kern: das Blatt der passenden Variante bleibt
-    if (slot.rolle === 'kern' && w.b.e.typ === 'schritt' && w.b.e.tausch) { const g = blattGeschwister(c, w.b.e); if (g && g !== w.b.e) ergebnis[i]!.blattVon = g.id }
+    if (slot.rolle === 'kern' && w.b.e.typ === 'schritt' && w.b.e.tausch) {
+      const g = blattGeschwister(c, w.b.e)
+      if (g && g !== w.b.e) ergebnis[i]!.blattVon = g.id
+      if (tauschGrund) ergebnis[i]!.warum = [tauschGrund, ...(ergebnis[i]!.warum ?? [])].slice(0, 4)
+    }
     // Themen-Einstieg ab Sitzung 2: erst kurz an die letzte Übung anknüpfen, dann der Einstieg (roter Faden wie beim eigenen
     // Einstieg)
     if (slot.rolle === 'einstieg' && w.b.e.id.startsWith('th:') && w.b.e.typ === 'schritt' && o.nr > 1) {
@@ -1310,7 +1354,10 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       const an = anknuepfen(c, o.nr, vorher, nachVersuch, brueckeVon(c, o.fruehereKerne ?? [], kern))
       // (FR: nach dem Doppelpunkt klein – „Ensuite : l’adulte …“, Blind-Bewertung 13; Namen bleiben groß)
       const klein = (t: string) => t.replace(/^(L’|Le |La |Les |Un |Une |On |Il |Elle |Ensemble |Pour |Sur |Avec )/, (m) => m.toLowerCase())
-      if (an.de) ergebnis[i]!.ueber = { ...ergebnis[i]!.ueber, text: `${an.de}Danach: ${w.b.e.text}`, ...(w.b.e.fr ? { 'fr.text': `${an.fr}Ensuite : ${klein(w.b.e.fr.text)}` } : {}) }
+      if (an.de) {
+        ergebnis[i]!.ueber = { ...ergebnis[i]!.ueber, text: `${an.de}Danach: ${w.b.e.text}`, ...(w.b.e.fr ? { 'fr.text': `${an.fr}Ensuite : ${klein(w.b.e.fr.text)}` } : {}) }
+        ergebnis[i]!.ueberHerkunft = { ...ergebnis[i]!.ueberHerkunft, text: 'plan', ...(w.b.e.fr ? { 'fr.text': 'plan' as const } : {}) }
+      }
     }
     gewaehlt.push({ b: w.b, slot, i })
     benutzt.add(w.b.e.id)
@@ -1400,12 +1447,32 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   const kursKern = schritte.find((x) => x.rolle === 'kern')
   const kursE = kursKern ? c.k.eintraege.get(kursKern.ref) : undefined
   if (kursKern && kursE && !schritte.some((x) => x.rolle === 'einstieg')) {
-    const auf = kursAuftrag(c, o.fruehereKerne ?? [], kursE)
+    const auf = kursAuftrag(c, o.fruehereBlaetter ?? o.fruehereKerne ?? [], kursE)
     const an = auf ? anknuepfen(c, o.nr, undefined, false, undefined, auf) : undefined
     if (an?.de) {
       const de = kursKern.ueber?.text ?? textVon(kursE, 'de').text
       const fr = kursKern.ueber?.['fr.text'] ?? (kursE.typ === 'schritt' && kursE.fr ? kursE.fr.text : de)
       kursKern.ueber = { ...(kursKern.ueber ?? {}), text: an.de + de, 'fr.text': an.fr + fr }
+      // vom Planer geschrieben: beim Teilen kein „eigener Text“ (UI-Test 17.10.: sonst sperrte er „Teilen“)
+      kursKern.ueberHerkunft = { ...(kursKern.ueberHerkunft ?? {}), text: kursKern.ueberHerkunft?.text ?? 'plan', 'fr.text': kursKern.ueberHerkunft?.['fr.text'] ?? 'plan' }
+    }
+  }
+  // Wirkung sichtbar machen (17.10.2026: nur 15 von 54 Kursen fragten am Anfang, nur 11 am Ende, wie gut es schon klappt):
+  // in Sitzung 1 und in der letzten Sitzung eines Einzelkurses dieselbe Frage zum Ziel – die Zahl trägt die Fachkraft bei
+  // „Stunde gehalten“ ein, der Hub zeigt daraus „Wirkt es?“
+  if (kursKern && kursE?.typ === 'schritt' && kursE.linie?.id.startsWith('kurs-') && c.weg === 'gruendlich' && o.phase !== 'leicht' && c.a.n > 1 && (o.nr === 1 || o.nr === c.a.n) && c.ziele[0]) {
+    const satz = { de: zielSatz(c.k, c.p, c.ziele[0].code, 'de'), fr: zielSatz(c.k, c.p, c.ziele[0].code, 'fr') }
+    if (satz.de) {
+      const de0 = kursKern.ueber?.text ?? textVon(kursE, 'de').text
+      const fr0 = kursKern.ueber?.['fr.text'] ?? (kursE.fr ? kursE.fr.text : de0)
+      const frS = satz.fr ?? satz.de
+      const neu = o.nr === 1
+        ? { de: `Zu Beginn eine kurze Frage zur Ausgangslage: „Wie gut klappt das schon: ${satz.de.replace(/[.!]$/, '')}?“ – 1 bis 4 Finger (1 noch nicht, 4 fast immer); die Zahl bei „Stunde gehalten“ eintragen. ${de0}`,
+            fr: `Au début, une petite question sur le point de départ : « Est-ce que ça marche déjà : ${frS.replace(/[.!]$/, '')} ? » – de 1 à 4 doigts (1 pas encore, 4 presque toujours) ; noter le chiffre dans « Séance tenue ». ${fr0}` }
+        : { de: `${de0} Zum Schluss dieselbe Frage wie in der ersten Sitzung („Wie gut klappt das jetzt?“, 1 bis 4 Finger) und gemeinsam vergleichen, was sich verändert hat; die Zahl bei „Stunde gehalten“ eintragen.`,
+            fr: `${fr0} Pour finir, la même question qu’à la première séance (« Est-ce que ça marche maintenant ? », de 1 à 4 doigts) et comparer ensemble ce qui a changé ; noter le chiffre dans « Séance tenue ».` }
+      kursKern.ueber = { ...(kursKern.ueber ?? {}), text: neu.de, 'fr.text': neu.fr }
+      kursKern.ueberHerkunft = { ...(kursKern.ueberHerkunft ?? {}), text: kursKern.ueberHerkunft?.text ?? 'plan', 'fr.text': kursKern.ueberHerkunft?.['fr.text'] ?? 'plan' }
     }
   }
   // Rituale nicht länger als gedacht (Blind-Bewertung 8: „6 Minuten Ankommen für ein Klopfzeichen“): der Rest geht an den Kern
@@ -1700,7 +1767,7 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
     // nur beim ersten Mal (Blind-Bewertung 10: „le deuxième objectif commence“ in einer späteren Sitzung noch einmal)
     const zweitesSchon = Array.from({ length: i }, (_, j) => kernZiel(j)).includes(zieleE[1])
     const neuesZiel = zweiBoegen && kz === zieleE[1] && !zweitesSchon && kernZiel(i - 1) === zieleE[0] && uebIdx.includes(i) ? { de: zielWort(zieleE[1], 'de'), fr: zielWort(zieleE[1], 'fr') } : undefined
-    const s = fuelleSitzung(c, { plan: id, nr: i + 1, phase, rituale: rit, gesperrt, vorher, kernFormate, variante, fokus, fruehereKerne: sitzungen.flatMap((x) => x.schritte.filter((y) => y.rolle === 'kern').map((y) => y.ref)), kernZiel: kz, vorigeUebertragung, uebertragen: uebertragenSchon, neuesZiel })
+    const s = fuelleSitzung(c, { plan: id, nr: i + 1, phase, rituale: rit, gesperrt, vorher, kernFormate, variante, fokus, fruehereKerne: sitzungen.flatMap((x) => x.schritte.filter((y) => y.rolle === 'kern').map((y) => y.ref)), fruehereBlaetter: sitzungen.flatMap((x) => x.schritte.filter((y) => y.rolle === 'kern').map((y) => y.blattVon ?? y.ref)), kernZiel: kz, vorigeUebertragung, uebertragen: uebertragenSchon, neuesZiel })
     const ue = s.schritte.find((x) => x.ref === 'pg:uebertragen')
     vorigeUebertragung = ue ? (/Plan in drei Schritten|einen kleinen Plan machen/.test(ue.ueber?.text ?? '') ? 'plan' : 'durchspielen') : undefined
     for (const x of s.schritte) vorher.add(x.ref)
@@ -1719,6 +1786,11 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
   // Einzelstunde: der Titel nennt, was der Kern übt (Blind-Bewertung 9: „Séance individuelle : Image de soi“ über einer
   // Konzentrationsübung) – das Kompetenzfeld des Hauptziels des Kerns
   let titel = planTitel(c)
+  // Einzelkurs: die Folge trägt den Namen des Kurses (Sichtprüfung 16.10.: „Dranbleiben“ über „Kiki kann das schon“,
+  // „Montrer et nommer ses émotions“ über „Die Erzähl-Hand“)
+  const kursF = c.weg === 'gruendlich' && (c.a.sozialform ?? 'einzeln') === 'einzeln' ? kursWahl(c) : null
+  const kursName = kursF ? (HINTERGRUND as Record<string, { name?: Record<'de' | 'fr', string> }>)[kursF.id]?.name?.[c.sprache === 'fr' ? 'fr' : 'de'] : undefined
+  if (kursName) titel = kursName
   if (c.weg === 'schnell' && sitzungen.length === 1) {
     const ke = sitzungen[0].schritte.find((x) => x.rolle === 'kern')
     const e = ke ? c.k.eintraege.get(ke.ref) : undefined
@@ -1835,7 +1907,8 @@ export function sitzungNeu(k: Katalog, p: Profil, plan: Plan, nr: number, v: Vor
   const vorher = new Set(plan.sitzungen.filter((s) => s.nr < nr).flatMap((s) => s.schritte.map((x) => x.ref)))
   // die Kerne davor wie beim Planen (Einzelkurs: Auftrag vom letzten Blatt, Lernpfad, Rückblick)
   const fruehereKerne = plan.sitzungen.filter((s) => s.nr < nr).flatMap((x) => x.schritte.filter((y) => y.rolle === 'kern').map((y) => y.ref))
-  const neu = fuelleSitzung(c, { plan: plan.id, nr, phase: alt.phase, rituale: rit, gesperrt, vorher, kernFormate: [], variante, fruehereKerne })
+  const fruehereBlaetter = plan.sitzungen.filter((s) => s.nr < nr).flatMap((x) => x.schritte.filter((y) => y.rolle === 'kern').map((y) => y.blattVon ?? y.ref))
+  const neu = fuelleSitzung(c, { plan: plan.id, nr, phase: alt.phase, rituale: rit, gesperrt, vorher, kernFormate: [], variante, fruehereKerne, fruehereBlaetter })
   if (alt.blatt?.ziel && neu.blatt) neu.blatt.ziel = true
   neu.status = alt.status === 'gehalten' ? alt.status : 'geplant'
   return { ...plan, variante, sitzungen: plan.sitzungen.map((s) => (s.nr === nr ? neu : s)) }

@@ -1,5 +1,6 @@
 // Passgenau – Ergebnis (2.6): Folge-Leiste, Ablauf mit Rolle/Minuten/Quelle/Warum, Blatt als Liste und A4,
 // antippen → Alternativen, Daumen, ganze Sitzung tauschen, Speichern/PDF/Vorlage/Baukasten.
+import { planGruende } from './warum'
 import { useEffect, useRef, useState } from 'react'
 import type { KatalogEintrag, Plan, PlanSchritt } from '../typen'
 import * as K from './kern'
@@ -394,6 +395,7 @@ export function Ergebnis() {
       <Speicherstreifen plan={plan} />
       <VersionsBanner />
       <HeikelBanner />
+      {plan.n > 1 && !leicht && pg.katalog && !pg.ohneKind && <WarumFolge />}
       {(s.hinweise ?? []).map((t, i) => (
         <div key={i} className="pg-banner gelb">
           <Ic n="info" />
@@ -530,5 +532,31 @@ export function Ergebnis() {
         </aside>
       </div>
     </div>
+  )
+}
+
+/** „Warum diese Folge?“ – woraus der Plan entstanden ist (Kurs, Ziele und ihre Herkunft, Variante, Vorsicht, Interessen) */
+function WarumFolge() {
+  const pg = usePg()
+  const p = useProfil()
+  if (!pg.plan || !pg.katalog) return null
+  const g = planGruende(pg.katalog, p, pg.plan)
+  if (!g.punkte.length && !g.luecke) return null
+  return (
+    <details className="pg-warumfolge" open={pg.si === 0}>
+      <summary>
+        <Ic n="info" />
+        Warum diese Folge?
+      </summary>
+      <ul>
+        {g.punkte.map((t) => (
+          <li key={t}>{t}</li>
+        ))}
+      </ul>
+      {g.luecke && <p className="pg-klein">{g.luecke}</p>}
+      <button type="button" className="pg-link" onClick={() => pg.setAnsicht('wissen')}>
+        Stimmt etwas nicht? In „Das weiß ich schon“ korrigieren
+      </button>
+    </details>
   )
 }

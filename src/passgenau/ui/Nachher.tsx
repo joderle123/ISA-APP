@@ -66,7 +66,7 @@ export function useRueckmeldung() {
       try {
         // Notiz, Haken und Protokoll schreibt der Hub (nur aus Geklicktem); der Plan geht mit (P7)
         const erg = await hub.rueckmeldung({
-          ref: pg.ref, planId: neu.id, sitzung: nr, ergebnis: r.ergebnis, ziele: (r.ziele ?? []).filter((z) => !g0?.ziele || g0.ziele.includes(z.code)), chips: r.chips ?? [], ...(r.kind && !g0 ? { kind: r.kind } : {}),
+          ref: pg.ref, planId: neu.id, sitzung: nr, ergebnis: r.ergebnis, ziele: (r.ziele ?? []).filter((z) => !g0?.ziele || g0.ziele.includes(z.code)), chips: r.chips ?? [], ...(r.kind && !g0 ? { kind: r.kind } : {}), ...(r.selbst && !g0 ? { selbst: r.selbst } : {}),
           ereignisse: stapel, plan: neu, ...(pg.lernenKind && pg.darfSpeichern ? { vorlieben: pg.vor.kind } : {}), am: r.am,
         })
         notizId = erg?.notizId ?? null
@@ -119,6 +119,7 @@ export function Nachher({ nr }: { nr: number }) {
   const [chips, setChips] = useState<string[]>([])
   const [wahl, setWahl] = useState<string | undefined>()
   const [daumen, setDaumen] = useState<'hoch' | 'runter' | undefined>()
+  const [selbst, setSelbst] = useState<Record<string, 1 | 2 | 3 | 4 | undefined>>({})
   const rm = useRueckmeldung()
   const titel = (ref: string) => K.schrittTitel(plan, nr, ref) || ref
   // Stimme des Kindes (E-M15): Weg 3 – die Optionen der Wahl (Schritt + `wahl`), sonst Spiel und Bewegung; Wert = Ref
@@ -135,6 +136,7 @@ export function Nachher({ nr }: { nr: number }) {
         ziele: Object.entries(ziele).filter(([, v]) => !!v).map(([code, richtung]) => ({ code, richtung: richtung! })),
         chips,
         ...(wahl || daumen ? { kind: { ...(wahl ? { wahl } : {}), ...(daumen ? { daumen } : {}) } } : {}),
+        ...(Object.values(selbst).some(Boolean) ? { selbst: Object.fromEntries(Object.entries(selbst).filter(([, v]) => !!v)) as Record<string, 1 | 2 | 3 | 4> } : {}),
       }
     : null
   const notiz = r ? K.notizText(p, plan, nr, r) : ''
@@ -199,6 +201,25 @@ export function Nachher({ nr }: { nr: number }) {
                 wert={ziele[code]}
                 optionen={[['gelingt', 'gelingt'], ['mit-hilfe', 'mit Hilfe'], ['noch-nicht', 'noch nicht']]}
                 onWahl={(v) => setZiele((z) => ({ ...z, [code]: z[code] === v ? undefined : v }))}
+              />
+            </div>
+          ))}
+        </div>
+      )}
+      {/* Selbsteinschätzung am Anfang und am Ende einer Folge: dieselbe Frage, damit sich zeigt, ob sich etwas verändert */}
+      {plan.n > 1 && (nr === 1 || nr === plan.n) && zielListe.length > 0 && (
+        <div>
+          <b className="pg-klein-titel">{nr === 1 ? 'Ausgangslage' : 'Am Ende'}: so schätzt {pg.kind.nom} sich ein (optional, 1–4 Finger)</b>
+          {zielListe.map((code) => (
+            <div key={code} className="pg-zielreihe">
+              <span>
+                <b>{code}</b> {zielKurz(code)}
+              </span>
+              <Seg
+                label={`Selbsteinschätzung ${code}`}
+                wert={selbst[code]}
+                optionen={[[1, '1 noch nicht'], [2, '2 manchmal'], [3, '3 oft'], [4, '4 fast immer']]}
+                onWahl={(v) => setSelbst((z) => ({ ...z, [code]: z[code] === v ? undefined : v }))}
               />
             </div>
           ))}

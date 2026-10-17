@@ -29,6 +29,10 @@ export interface Korrekturen {
   /** Datum der Bestätigung „Lesen · Schreiben · Bilder stimmt“ (P4) */
   zugangBestaetigt?: string
   lernen?: boolean
+  /** Vorschläge aus dem Steckbrief, die nicht passen ('schreiben', 'hilft:reizarm', 'ziel:V-26' …) – kommen nicht wieder */
+  vorschlagAus?: string[]
+  /** Wörterstreifen aus einem übernommenen Vorschlag (Erstsprache laut Steckbrief) */
+  woerterAn?: ('lb' | 'pt')[]
 }
 
 export interface Druck {
@@ -115,7 +119,8 @@ const HILFT_ALLE = ['stundenleiste', 'bewegungspausen', 'reizarm', 'bildplan'] a
 export function mitKorrekturen(p: Profil, k: Korrekturen, vorname: boolean): Profil {
   const reihe = k.reihe ?? p.ziele.map((z) => z.code)
   const ziele = [...p.ziele]
-    .filter((z) => k.ziele?.[z.code] !== false)
+    // Vorschläge aus dem Steckbrief gelten erst nach dem Klick der Fachkraft
+    .filter((z) => k.ziele?.[z.code] ?? z.quelle !== 'steckbrief')
     .sort((a, b) => (reihe.indexOf(a.code) + 1 || 99) - (reihe.indexOf(b.code) + 1 || 99))
     .map((z, i) => ({ ...z, prio: i + 1 }))
   const stufe = k.stufe
@@ -128,7 +133,7 @@ export function mitKorrekturen(p: Profil, k: Korrekturen, vorname: boolean): Pro
     anrede: vorname ? (p.vorname ?? p.anrede ?? null) : null,
     stufen: stufe ? [stufe] : p.stufen,
     layout: stufe ? (p.alterJahre >= 12 && LAYOUT_FUER_STUFE[stufe] !== 'jugend' ? 'jugend' : LAYOUT_FUER_STUFE[stufe]) : p.layout,
-    sprache: { blatt: k.sprache ?? p.sprache.blatt, woerter: k.woerter === false ? [] : p.sprache.woerter },
+    sprache: { blatt: k.sprache ?? p.sprache.blatt, woerter: k.woerter === false ? [] : [...new Set([...p.sprache.woerter, ...(k.woerterAn ?? [])])] },
     zugang,
     ziele,
     themen: p.themen.filter((t) => k.themen?.[t.key] !== false),
@@ -138,6 +143,8 @@ export function mitKorrekturen(p: Profil, k: Korrekturen, vorname: boolean): Pro
     hilft,
     lernen: k.lernen ?? p.lernen,
     zugangBestaetigt: !!k.zugangBestaetigt || p.zugangBestaetigt,
+    // übernommene Ziele aus dem Steckbrief: nicht mehr „dünn“ (der Hub zählt nur Ziele aus ELDiB und PEI)
+    dichte: p.dichte === 'duenn' && ziele.length ? 'mittel' : p.dichte,
   }
 }
 

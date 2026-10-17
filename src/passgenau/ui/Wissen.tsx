@@ -6,6 +6,7 @@ import * as K from './kern'
 import { blattById } from '../../data/blaetter'
 import { Ic } from './zeichen'
 import { Chip, HeikelBanner, Pill, PgDialog, Seg } from './Teile'
+import { offeneVorschlaege, passtNicht } from './vorschlaege'
 import { BILD, INTERESSEN, LAYOUT_NAME, LESEN, QUELLE_ZIEL, SCHREIBEN, SPRACHE_NAME, STUFEN, THEMA_ART, VORSICHT_NAME, datumKurz, heuteIso, themaName, zielKurz } from './texte'
 
 function Zeile({ label, unter, children }: { label: React.ReactNode; unter?: React.ReactNode; children: React.ReactNode }) {
@@ -49,6 +50,7 @@ export function Wissen() {
   const iStufe = STUFEN.indexOf(p.stufen[0])
   const themenKeys = [...new Set(roh.themen.map((t) => t.key))]
   const heikelOffen = (p.achtung?.length ?? 0) > 0 || roh.vorsicht.includes('heikel')
+  const offen = offeneVorschlaege(roh, p, k)
 
   return (
     <>
@@ -70,6 +72,47 @@ export function Wissen() {
         </div>
       </section>
       <HeikelBanner />
+      {offen.length > 0 && (
+        <div className="pg-card pg-pkarte pg-vorschlaege pg-mt">
+          <h3>
+            <Ic n="info" />
+            Aus dem Steckbrief – bitte kurz prüfen
+          </h3>
+          <p className="pg-leise pg-klein pg-m0">Die Auswertung des Dossiers schlägt das vor. Fürs Planen gilt es erst, wenn du es übernimmst – „passt nicht“ blendet es bei {kd.dat} aus.</p>
+          {offen.filter((v) => v.art !== 'interesse').map((v) => (
+            <Zeile key={v.key} label={v.titel} unter={v.unter}>
+              <button type="button" className="pg-btn klein primaer" onClick={() => umschalten(v.uebernehmen, `Übernommen: ${v.titel} – gespeichert bei ${kd.dat}.`)}>
+                <Ic n="check" />
+                Übernehmen
+              </button>
+              <button type="button" className="pg-btn klein" onClick={() => umschalten((x) => passtNicht(x, v.key))}>
+                passt nicht
+              </button>
+            </Zeile>
+          ))}
+          {offen.some((v) => v.art === 'interesse') && (
+            <div className="pg-pzeile spalte">
+              <span className="pl">
+                Interessen
+                <small>Klick übernimmt – sie dürfen aufs Blatt (Beispiele, Bilder)</small>
+              </span>
+              <div className="pg-chips">
+                {offen.filter((v) => v.art === 'interesse').map((v) => (
+                  <Chip key={v.key} an={false} onClick={() => umschalten(v.uebernehmen)}>
+                    {v.titel}
+                  </Chip>
+                ))}
+              </div>
+            </div>
+          )}
+          <div className="pg-btnrow pg-mt">
+            <button type="button" className="pg-btn klein primaer" onClick={() => umschalten((x) => offen.reduce((a, v) => v.uebernehmen(a), x), `Alle Vorschläge übernommen – gespeichert bei ${kd.dat}.`)}>
+              <Ic n="check" />
+              Alle übernehmen
+            </button>
+          </div>
+        </div>
+      )}
       <div className="pg-pgrid">
         <div className="pg-card pg-pkarte">
           <h3>
@@ -145,9 +188,9 @@ export function Wissen() {
           </h3>
           {ziele.length === 0 && <p className="pg-leise">Noch keine Förderziele im Dossier. Beim Planen: „Worum soll es heute gehen?“</p>}
           {ziele.map((z, i) => {
-            const an = k.ziele?.[z.code] !== false
+            const an = k.ziele?.[z.code] ?? z.quelle !== 'steckbrief'
             return (
-              <Zeile key={z.code} label={<><b>{z.code}</b> {zielKurz(z.code)}</>} unter={`${QUELLE_ZIEL[z.quelle] ?? z.quelle}${z.seit ? ', ' + datumKurz(z.seit) : ''}`}>
+              <Zeile key={z.code} label={<><b>{z.code}</b> {zielKurz(z.code)}</>} unter={`${QUELLE_ZIEL[z.quelle] ?? z.quelle}${z.quelle === 'steckbrief' && k.ziele?.[z.code] === undefined ? ' – erst nach deinem Klick' : ''}${z.seit ? ', ' + datumKurz(z.seit) : ''}`}>
                 {i > 0 && (
                   <button type="button" className="pg-ibtn" aria-label={`${z.code} nach vorn`} title="nach vorn (Priorität)" onClick={() => umschalten((x) => { const r = ziele.map((y) => y.code); r.splice(i, 1); r.splice(i - 1, 0, z.code); return { ...x, reihe: r } })}>
                     <Ic n="auf" />

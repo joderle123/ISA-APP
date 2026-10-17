@@ -5720,6 +5720,110 @@
     }
   },
   {
+    "id": "ki:kurs-streit-13-16-s5-t3",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Konflikte klären"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "uebertragen",
+    "thema": [
+      "regeln"
+    ],
+    "eldib": [
+      {
+        "code": "K-31",
+        "gewicht": 1
+      },
+      {
+        "code": "V-33",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-38",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Wiedergutmachen: den eigenen Teil benennen und einen konkreten Schritt anbieten",
+      "fr": "Réparer : nommer sa part et proposer un pas concret"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-streit-13-16",
+      "nr": 5,
+      "faden": {
+        "de": "Konflikte klären mit dem Eisberg: Stufen erkennen, unter die Oberfläche schauen, zuhören und spiegeln, verhandeln, Verantwortung übernehmen",
+        "fr": "Clarifier les conflits avec l’iceberg : repérer les degrés, regarder sous la surface, écouter et reformuler, négocier, assumer sa part de responsabilité"
+      }
+    },
+    "ort": "raum",
+    "titel": "Versöhnen und Verantwortung: Die Brücke",
+    "text": "Nach den Werkzeugen 1 bis 4 kommt heute das fünfte dazu: Verantwortung übernehmen und etwas wiedergutmachen. Zwei Karten, Ben und Jana, liegen mit einer Lücke dazwischen; Ben hat Janas Sprachnachricht im Klassenchat geteilt, und die Fachkraft liest drei Entschuldigungen vor („Sorry, aber du hast mich auch provoziert.“ – „Tut mir leid, wenn du dich verletzt fühlst.“ – „Es war nicht okay, dass ich deine Nachricht geteilt habe. Ich lösche sie.“). Der oder die Jugendliche ordnet jede zu (übernimmt Verantwortung, rechtfertigt sich mit „aber“, spricht nur von Janas Gefühl) und baut die Brücke, die nur mit zwei Bausteinen trägt: dem eigenen Teil und einem konkreten Schritt. Dann Rollentausch: Er oder sie berät Ben, wählt von drei Karten eine ausgedachte Situation (Ben drängelt in der Reihe, Ben verdirbt Jana ein Spiel, Ben nimmt Janas Stift) und plant mit der Fachkraft als Ben: mit wem, wann und wo, Bens Teil, was Jana braucht, welches der Werkzeuge 1 bis 4 zuerst dran ist, und den ersten Satz. Er oder sie spielt Jana, erst offen, dann abweisend („Dafür ist es zu spät.“), schätzt ein, ob Ben nur seinen Teil genannt und etwas angeboten hat, und trägt den Plan auf dem Zettel ein. Verantwortung übernehmen heißt, sagen, was ich getan habe – ohne „aber“.",
+    "sagen": [
+      "Heute bauen wir für Ben eine Brücke zu Jana. Sie trägt nur mit zwei Bausteinen: dem eigenen Teil und einem konkreten Schritt.",
+      "Ich lese drei Entschuldigungen. Welche übernimmt Verantwortung, welche rechtfertigt sich mit „aber“, welche spricht nur von Janas Gefühl?",
+      "Jetzt bist du Bens Beraterin oder Berater. Such dir eine der drei Situationen aus und plane mit mir, was Ben sagt.",
+      "Ich bin Ben, du bist Jana – erst offen, dann abweisend. Du kannst jederzeit Stopp sagen."
+    ],
+    "wennEsKippt": "Sind drei Entschuldigungen zu viel, genügt die dritte mit ihrer Brücke. Mag der oder die Jugendliche Jana nicht spielen, zeigt er oder sie auf einer Karte „offen“ oder „abweisend“, und die Fachkraft liest vor. Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Ben und Jana zurück; ein Satz mit „mein Teil“ genügt.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "bauen",
+      "karten"
+    ],
+    "material": [
+      "bausteine",
+      "karten"
+    ],
+    "imSpiel": {
+      "de": "Passiert beim Spielen ein kleines Missgeschick, übt die Fachkraft für Ben eine kurze Entschuldigung ohne „aber“ und fragt: „Was braucht Jana jetzt?“ Der oder die Jugendliche nennt in einem Satz einen konkreten Schritt.",
+      "fr": "Si un petit accident arrive pendant le jeu, l’adulte s’exerce pour Ben à une courte excuse sans « mais » et demande : « De quoi Jana a-t-elle besoin maintenant ? » Le ou la jeune propose en une phrase un pas concret."
+    },
+    "zugang": {
+      "lesen": 2,
+      "schreiben": 2,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Se réconcilier et assumer sa part : le pont",
+      "text": "Après les outils 1 à 4, s’ajoute aujourd’hui le cinquième : assumer sa part et réparer. Deux cartes, Ben et Jana, sont posées avec un vide entre elles ; Ben a partagé le message vocal de Jana dans le groupe de classe, et l’adulte lit trois excuses (« Désolé, mais tu m’as aussi provoqué. » – « Je suis désolé si tu te sens blessée. » – « Ce n’était pas OK de partager ton message. Je le supprime. »). Le ou la jeune classe chacune (assume sa part, se justifie avec « mais », parle seulement du ressenti de Jana) et construit le pont, qui ne tient qu’avec deux cubes : sa propre part et un pas concret. Puis on échange les rôles : il ou elle conseille Ben, choisit sur trois cartes une situation inventée (Ben double dans le rang, Ben gâche un jeu de Jana, Ben prend le stylo de Jana) et prépare avec l’adulte, dans le rôle de Ben : avec qui, quand et où, la part de Ben, ce dont Jana a besoin, lequel des outils 1 à 4 vient en premier, et la première phrase. Il ou elle joue Jana, d’abord ouverte, puis fermée (« Pour ça, il est trop tard. »), évalue si Ben a seulement nommé sa part et proposé quelque chose, et note le plan sur la fiche. Assumer sa part, c’est dire ce que j’ai fait – sans « mais ».",
+      "sagen": [
+        "Aujourd’hui, on construit pour Ben un pont vers Jana. Il ne tient qu’avec deux cubes : sa propre part et un pas concret.",
+        "Je lis trois excuses. Laquelle assume sa part, laquelle se justifie avec « mais », laquelle parle seulement du ressenti de Jana ?",
+        "Maintenant, tu es le conseiller ou la conseillère de Ben. Choisis une des trois situations et prépare avec moi ce que Ben dit.",
+        "Je suis Ben, tu es Jana – d’abord ouverte, puis fermée. Tu peux dire stop à tout moment."
+      ],
+      "wennEsKippt": "Si trois excuses, c’est trop, la troisième avec son pont suffit. Si le ou la jeune ne veut pas jouer Jana, il ou elle montre sur une carte « ouverte » ou « fermée », et l’adulte lit. Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Ben et Jana ; une phrase avec « ma part » suffit."
+    }
+  },
+  {
     "id": "ki:kurs-streit-13-16-s6-a",
     "quelle": {
       "art": "praxis",

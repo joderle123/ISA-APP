@@ -167,6 +167,8 @@ export interface RueckmeldungArg {
   ziele?: { code: string; richtung: 'gelingt' | 'mit-hilfe' | 'noch-nicht' }[]
   /** Schlüssel aus hallo.chips */
   chips?: string[]
+  /** Selbsteinschätzung des Kindes je Ziel (1–4), Sitzung 1 und letzte Sitzung einer Folge */
+  selbst?: Record<string, 1 | 2 | 3 | 4>
   /** Stimme des Kindes (E-M15): Ref des gewählten Schritts, Daumen am Schluss */
   kind?: { wahl?: string; daumen?: 'hoch' | 'runter' }
   ereignisse?: Ereignis[]
@@ -235,8 +237,8 @@ export function korrekturenAusHub(kind: KindAngaben | undefined): Korrekturen {
   const w = (key: string) => wertVon(roh[key])
   // Zugang, Bestätigung, Stufe, Sprache und Wörter hat der Hub im Profil schon angewandt (mit der Regel „bis eine neuere
   // Quelle kommt“) – sie hier noch einmal anzuwenden, könnte eine neuere Quelle überdecken.
-  const zi = w('ziele') as { aus?: string[]; reihenfolge?: string[] } | undefined
-  if (zi?.aus?.length) k.ziele = Object.fromEntries(zi.aus.map((c) => [c, false]))
+  const zi = w('ziele') as { aus?: string[]; reihenfolge?: string[]; an?: string[] } | undefined
+  if (zi?.aus?.length || zi?.an?.length) k.ziele = { ...Object.fromEntries((zi.an ?? []).map((c) => [c, true])), ...Object.fromEntries((zi.aus ?? []).map((c) => [c, false])) }
   if (zi?.reihenfolge?.length) k.reihe = zi.reihenfolge
   const th = w('themen') as { aus?: string[] } | undefined
   if (th?.aus?.length) k.themen = Object.fromEntries(th.aus.map((c) => [c, false]))
@@ -244,6 +246,8 @@ export function korrekturenAusHub(kind: KindAngaben | undefined): Korrekturen {
   if (vo && (vo.an?.length || vo.aus?.length)) k.vorsicht = { ...Object.fromEntries((vo.aus ?? []).map((x) => [x, false])), ...Object.fromEntries((vo.an ?? []).map((x) => [x, true])) }
   const hi = w('hilft')
   if (Array.isArray(hi)) k.hilft = Object.fromEntries(HILFT.map((h) => [h, hi.includes(h)]))
+  const va = w('vorschlagAus')
+  if (Array.isArray(va) && va.length) k.vorschlagAus = va.map(String)
   const dw = w('darfWieder')
   if (Array.isArray(dw) && dw.length) k.frei = Object.fromEntries(dw.map((x) => [String(x), true]))
   if (Array.isArray(kind?.interessen)) k.interessen = kind!.interessen!
@@ -253,10 +257,12 @@ export function korrekturenAusHub(kind: KindAngaben | undefined): Korrekturen {
 }
 
 /** Was sich an den Korrekturen geändert hat → Änderungen für „vorlieben“ (nur Geändertes; null löscht). */
-export function korrekturenFuerHub(alt: Korrekturen, neu: Korrekturen, roh: Pick<Profil, 'ziele' | 'hilft' | 'vorsicht'>): KindAenderungen {
+export function korrekturenFuerHub(alt: Korrekturen, neu: Korrekturen, roh: Pick<Profil, 'ziele' | 'hilft' | 'vorsicht'> & Partial<Pick<Profil, 'sprache'>>): KindAenderungen {
   const form = (k: Korrekturen): Record<string, unknown> => {
     const ziele: ProfilZiel[] = roh.ziele
     const aus = ziele.filter((z) => k.ziele?.[z.code] === false).map((z) => z.code)
+    // eingeschaltete Vorschläge aus dem Steckbrief (im Hub korrekturen.ziele.an)
+    const an = ziele.filter((z) => z.quelle === 'steckbrief' && k.ziele?.[z.code] === true).map((z) => z.code)
     return {
       lesen: k.zugang?.lesen ?? null,
       schreiben: k.zugang?.schreiben ?? null,
@@ -266,12 +272,13 @@ export function korrekturenFuerHub(alt: Korrekturen, neu: Korrekturen, roh: Pick
       zugangBestaetigt: k.zugangBestaetigt ? true : null,
       stufe: k.stufe ?? null,
       sprache: k.sprache ?? null,
-      woerter: k.woerter === false ? [] : null,
-      ziele: aus.length || k.reihe?.length ? { aus, reihenfolge: k.reihe ?? [] } : null,
+      woerter: k.woerter === false ? [] : k.woerterAn?.length ? [...new Set([...(roh.sprache?.woerter ?? []), ...k.woerterAn])] : null,
+      ziele: aus.length || an.length || k.reihe?.length ? { aus, reihenfolge: k.reihe ?? [], an } : null,
       themen: Object.values(k.themen ?? {}).some((x) => x === false) ? { aus: Object.keys(k.themen!).filter((x) => k.themen![x] === false) } : null,
       vorsicht: k.vorsicht && Object.keys(k.vorsicht).length ? { an: VORSICHT.filter((v) => k.vorsicht![v] === true), aus: VORSICHT.filter((v) => k.vorsicht![v] === false && v !== 'heikel') } : null,
       hilft: k.hilft && Object.keys(k.hilft).length ? HILFT.filter((h) => (k.hilft![h] !== undefined ? k.hilft![h] : (roh.hilft ?? []).includes(h))) : null,
       darfWieder: Object.keys(k.frei ?? {}).filter((x) => k.frei![x]).length ? Object.keys(k.frei!).filter((x) => k.frei![x]) : null,
+      vorschlagAus: k.vorschlagAus?.length ? k.vorschlagAus : null,
     }
   }
   const a = form(alt)

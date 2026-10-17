@@ -637,6 +637,7 @@ und Satz der Woche), wenn `woche.elternbrief` da ist. Sie erscheinen in der Tool
   - blume-1 … 5: Samen im Boden (mit Gießwasser) – Keimling – Pflanze mit Knospe – Knospe öffnet sich – Blume.
   - rucksack-1 … 5: leer und offen – Heft – Federmappe – Trinkflasche – zu mit Schnalle und Schlüsselanhänger, bereit.
   - insel-1 … 5: Insel – Palme – Hütte – Steg mit Boot – Leuchtturm; ruhige, flache Formen für Kurse ab 13 Jahren.
+  - Teil 2 (`src/blatt/motive-neu-wachsend2.ts`, fehlende Teile gestrichelt): schutzschild-1 … 5 (Wappen aus fünf Feldern, ruhig, auch ab 13), stopp-hand-1 … 6 (Daumen, vier Finger, zuletzt die Handfläche), zebra-1 … 6 (n bunte Streifen, Kopf und Körper gleich), rakete-1 … 5 (n Lampen leuchten, in 5 hebt sie ab), schluesselbund-1 … 5 (n verschiedene Schlüssel), tagesuhr-1 … 5 (fünf Segmente im Zifferblatt, Zeiger sichtbar); dazu uhr-ziffern (12 / 3 / 6 / 9 als Linienzüge – einzige Ausnahme von „ohne Schrift“), turm-umgefallen (Gegenstück zu turm-1 … 5), platzhalter (leerer gestrichelter Kreis statt Fragezeichen).
 - Vorschau und Prüfung der neuen Motive: `npx tsx --tsconfig tsconfig.scripts.json scripts/motive-vorschau.tsx <ordner> [--neu | --alle | name,name]`
   (Kontaktbogen mit Namen darunter in 40 mm und 18 mm, dazu Graustufen-PNG) und `scripts/motive-paare.tsx <ordner>`
   (Piktogramm neben Motiv für jedes Paar aus `ICON_MOTIV`; meldet fehlende Namen).

@@ -5891,6 +5891,112 @@
     }
   },
   {
+    "id": "ki:kurs-streit-10-12-s5-t3",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Konflikt-Lotsen"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "uebertragen",
+    "thema": [
+      "regeln"
+    ],
+    "eldib": [
+      {
+        "code": "V-28",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-34",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-32",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "konflikte"
+    ],
+    "alter": {
+      "von": 10,
+      "bis": 12
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Gute Entschuldigung: Was war – tut mir leid – wiedergutmachen – nächstes Mal",
+      "fr": "Bonne excuse : ce qui s’est passé – je regrette – réparer – la prochaine fois"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-streit-10-12",
+      "nr": 5,
+      "faden": {
+        "de": "Konflikte lösen wie ein Lotse: erst verstehen, worum es geht, beide Seiten sehen, ohne Vorwurf sprechen, faire Lösungen finden und wiedergutmachen",
+        "fr": "Résoudre les conflits comme un pilote : comprendre de quoi il s’agit, voir les deux côtés, parler sans reproche, trouver des solutions justes et réparer"
+      }
+    },
+    "ort": "raum",
+    "titel": "Entschuldigen und wiedergutmachen: Die Waage ausgleichen",
+    "text": "Das Kind kennt vier Werkzeuge; heute kommt das fünfte dazu, die gute Entschuldigung. Auf eine gezeichnete Waage legt die Fachkraft links einen Baustein: Ben hat einen peinlichen Screenshot von Sami in die Klassengruppe geschickt. Sie liest zwei schlechte Entschuldigungen vor („Sorry, war doch nur Spaß!“ · „Tut mir leid, aber du hast ja angefangen.“), und das Kind sagt, was fehlt. Dann legt es die vier Teile einer guten Entschuldigung als Karten rechts dazu und sagt zu jedem Bens Satz, bis die Waage im Gleichgewicht ist. Danach wählt es eine von drei ruhigen Situationskarten (ein Heft ist zerknickt, ein Stift ungefragt genommen, ein Ball trifft ein Mäppchen) und plant für Lea und Jana: wann und wo, erster Satz, passendes Werkzeug und was Lea tut, wenn Jana sagt „Ist mir egal“ – das trägt es später ein. Zum Schluss spielt die Fachkraft Lea, das Kind ist Jana und sagt, wie die Entschuldigung ankommt. Eine gute Entschuldigung hat vier Teile – was war, es tut mir leid, wiedergutmachen, nächstes Mal.",
+    "sagen": [
+      "Heute gleichen wir eine Waage aus: Ben hat einen Fehler gemacht, und du legst die Teile einer guten Entschuldigung dazu.",
+      "Eine gute Entschuldigung hat vier Teile: Was war – ohne „aber“. Es tut mir leid. Wiedergutmachen. Nächstes Mal.",
+      "Eine Entschuldigung kann man nicht erzwingen, und der andere muss sie nicht sofort annehmen.",
+      "Jetzt bist du Jana, und ich bin Lea. Wie kommt meine Entschuldigung bei dir an?"
+    ],
+    "wennEsKippt": "Mag das Kind nicht legen, zeigt es mit dem Finger, und die Fachkraft legt. Erzählt es von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und geht zu Ben und Sami zurück. Ein ehrlicher Satz für Ben genügt.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "karten",
+      "bauen"
+    ],
+    "material": [
+      "bausteine",
+      "karten",
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Mitten im Spiel stößt die Spielfigur der Fachkraft aus Versehen eine andere Figur um; das Kind sagt als Berater in drei Sätzen, wie sich die Spielfigur gut entschuldigt.",
+      "fr": "Au milieu du jeu, le personnage de l’adulte renverse par maladresse un autre personnage ; l’enfant dit, comme conseiller, en trois phrases, comment le personnage s’excuse bien."
+    },
+    "zugang": {
+      "lesen": 2,
+      "schreiben": 2,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "S’excuser et réparer : équilibrer la balance",
+      "text": "L’enfant connaît quatre outils ; aujourd’hui s’ajoute le cinquième, la bonne excuse. Sur une balance dessinée, l’adulte pose à gauche un cube : Ben a envoyé dans le groupe de la classe une capture d’écran gênante de Sami. Il lit deux mauvaises excuses (« Pardon, c’était pour rire ! » · « Désolé, mais c’est toi qui as commencé. »), et l’enfant dit ce qui manque. Ensuite, il pose à droite les quatre parties d’une bonne excuse sur des cartes et dit pour chacune la phrase de Ben, jusqu’à ce que la balance soit en équilibre. Puis il choisit une de trois cartes de situation calmes (un cahier est froissé, un stylo est pris sans demander, un ballon touche une trousse) et prépare pour Lea et Jana : quand et où, première phrase, outil qui convient et ce que Lea fait si Jana dit « Je m’en fiche » – il le notera ensuite. Pour finir, l’adulte joue Lea, l’enfant est Jana et dit comment l’excuse arrive. Une bonne excuse a quatre parties – ce qui s’est passé, je regrette, réparer, la prochaine fois.",
+      "sagen": [
+        "Aujourd’hui, on équilibre une balance : Ben a fait une erreur, et tu poses les parties d’une bonne excuse.",
+        "Une bonne excuse a quatre parties : ce qui s’est passé – sans « mais ». Je regrette. Réparer. La prochaine fois.",
+        "On ne peut pas forcer une excuse, et l’autre n’a pas à l’accepter tout de suite.",
+        "Maintenant, tu es Jana et je suis Lea. Comment mon excuse t’arrive-t-elle ?"
+      ],
+      "wennEsKippt": "Si l’enfant n’a pas envie de poser les cartes, il les montre du doigt et l’adulte les pose. S’il dit de lui-même quelque chose de pénible, l’adulte répond calmement : « Merci de me le dire. », ne pose pas de question et revient à Ben et Sami. Une phrase sincère pour Ben suffit."
+    }
+  },
+  {
     "id": "ki:kurs-streit-10-12-s6-a",
     "quelle": {
       "art": "praxis",

@@ -167,6 +167,7 @@ export const THEMA_ART: Record<string, string> = {
   reunion: 'Réunion',
   screening: 'Screening',
   klassenbuch: 'Klassenbuch',
+  steckbrief: 'Steckbrief',
 }
 
 export const VORSICHT_NAME: Record<string, [string, string]> = {
@@ -212,6 +213,7 @@ export const QUELLE_ZIEL: Record<string, string> = {
   pei: 'Förderziel aus dem PEI',
   eldib: 'aus der ELDiB-Einschätzung',
   vorgemerkt: 'vorgemerkt aus Beobachtungen',
+  steckbrief: 'Vorschlag aus dem Steckbrief',
   andere: 'anderes Ziel',
 }
 

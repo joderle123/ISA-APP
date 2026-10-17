@@ -6226,6 +6226,111 @@
     }
   },
   {
+    "id": "ki:kurs-wut-10-12-s5-t3",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Cool bleiben – der Wut-Werkzeugkasten"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "uebertragen",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-25",
+        "gewicht": 1
+      },
+      {
+        "code": "V-22",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-21",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 10,
+      "bis": 12
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "Schild-Satz: nicht anbeißen – ruhig antworten, weggehen oder Hilfe holen",
+      "fr": "Phrase-bouclier : répondre calmement, partir ou demander de l’aide"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-10-12",
+      "nr": 5,
+      "faden": {
+        "de": "Wut steuern mit dem Werkzeugkasten: Thermometer, Knöpfe, kühle Gedanken, Abkühl-Trick, Schild-Satz – und ein Plan für heiße Momente",
+        "fr": "Gérer sa colère avec une boîte à outils : thermomètre, boutons, pensées qui calment, astuce pour se calmer, phrase-bouclier – et un plan pour les moments chauds"
+      }
+    },
+    "ort": "raum",
+    "titel": "Werkzeug 5: Tom und das Schild",
+    "text": "Das Kind hat Thermometer, Knopf-Karte, kühle Gedanken und seinen Abkühl-Trick in der Kiste; heute geht es um den schwersten Knopf: Jemand reizt absichtlich. Die Fachkraft sagt, was kommt: die Figuren Tom und Noah, vier Wegkarten und drei kleine Schul-Situationen zur Wahl – es geht nur um Tom, und bei „Hand hoch“ ist Stopp. Sie erklärt kurz, warum Reizen funktioniert (wer anbeißt, tut, was der andere will), und legt die vier Wege hin: nichts zeigen, Schild-Satz, weggehen, Hilfe holen. Dann liest sie drei Sprüche von Noah vor (in der Reihe: „Na, schon wieder zu spät? Typisch.“ · nach dem Spiel: „Na, das war wohl nichts.“ · Noah nimmt Tom den Stift weg und grinst); das Kind wählt eine, stellt Tom auf den Weg, mit dem er anfängt, legt ihm einen Schild-Satz in den Mund („Kann sein.“ · „Okay.“ · „Das ist deine Meinung.“ · „Hör bitte auf.“ oder einen eigenen) und zeigt mit den Fingern Toms Thermometer vorher und nachher. Dazu plant es für Tom (und, wenn es will, für „jemand wie du“): wer reizt, wann und wo, welcher Satz, wer hilft, wenn es nicht klappt – am Zettel trägt es das später ein. Zum Tauschen sagt die Fachkraft als Tom ruhig eine Antwort, die anbeißt („Du nervst!“), und das Kind hilft ihm, sie in einen Schild-Satz umzubauen. Passiert es oft oder tut es weh, reicht ein Satz nicht – dann ist Hilfe holen kein Petzen, sondern Schutz.",
+    "sagen": [
+      "Gleich helfen wir Tom, nicht anzubeißen, mit Karten und Figuren. Es geht nur um Tom und Noah. Bei „Hand hoch“ machen wir Pause.",
+      "Wer reizt, will, dass man anbeißt. Wenn Tom ruhig bleibt, hat Noah sein Ziel nicht erreicht. Es gibt vier Wege.",
+      "Such dir eine der drei Situationen aus. Welchen Weg nimmt Tom zuerst – und welcher Schild-Satz klingt nach ihm?",
+      "Jetzt bin ich Tom und beiße an: „Du nervst!“ Du bist der Berater oder die Beraterin: Wie wird daraus ein Schild-Satz?"
+    ],
+    "wennEsKippt": "Wird eine Situation dem Kind zu nah, wechselt die Fachkraft zu einer leichteren und liest den Spruch leiser vor; ein Schild-Satz und ein Weg zu Hilfe genügen. Mag das Kind nichts planen, wählt es nur den Weg für Tom. Erzählt es von sich aus etwas Belastendes, sagt die Fachkraft ruhig: „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Tom zurück.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "figuren",
+      "plan"
+    ],
+    "material": [
+      "karten",
+      "papier",
+      "stifte"
+    ],
+    "imSpiel": {
+      "de": "Mitten im ruhigen Spiel sagt eine Spielfigur zur anderen einen kleinen Spruch („Na, das war wohl nichts“). Das Kind lässt die zweite Figur mit einem Schild-Satz antworten und spielt weiter.",
+      "fr": "Au milieu d’un jeu calme, un personnage lance une petite pique à un autre (« Tiens, c’était raté »). L’enfant fait répondre le second personnage avec une phrase-bouclier et continue à jouer."
+    },
+    "zugang": {
+      "lesen": 2,
+      "schreiben": 2,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Outil 5 : Tom et le bouclier",
+      "text": "L’enfant a le thermomètre, la carte des boutons, les pensées qui calment et son astuce dans la boîte ; aujourd’hui, il s’agit du bouton le plus difficile : quelqu’un provoque exprès. L’adulte dit ce qui va se passer : les figurines de Tom et de Noah, quatre cartes de façons de réagir et trois petites situations d’école au choix – il ne s’agit que de Tom, et « main levée » veut dire stop. Il explique brièvement pourquoi provoquer fonctionne (celui qui mord à l’hameçon fait ce que l’autre veut) et pose les quatre façons de réagir : ne rien montrer, phrase-bouclier, partir, demander de l’aide. Puis il lit trois piques de Noah (dans la file : « Tiens, encore en retard ? Typique. » · après le jeu : « Tiens, c’était raté. » · Noah prend le stylo de Tom et sourit) ; l’enfant en choisit une, place Tom sur la façon de réagir par laquelle il commence, lui met une phrase-bouclier dans la bouche (« Peut-être. » · « D’accord. » · « C’est ton avis. » · « Arrête, s’il te plaît. » ou une phrase à lui) et montre avec les doigts le thermomètre de Tom avant et après. L’enfant prépare aussi pour Tom (et, s’il veut, pour « quelqu’un comme toi ») : qui provoque, quand et où, quelle phrase, qui aide si ça ne marche pas – il le note plus tard sur la feuille. Pour échanger, l’adulte dit, en Tom, une réponse calme mais qui mord à l’hameçon (« Tu me saoules ! »), et l’enfant l’aide à la transformer en phrase-bouclier. Si ça arrive souvent ou si ça fait mal, une phrase ne suffit pas – demander de l’aide n’est alors pas rapporter, c’est se protéger.",
+      "sagen": [
+        "Tout à l’heure, nous aiderons Tom à ne pas mordre à l’hameçon, avec des cartes et des figurines. Il s’agit seulement de Tom et de Noah. À « main levée », on fait une pause.",
+        "Celui qui provoque veut que l’autre morde à l’hameçon. Si Tom reste calme, Noah n’a pas atteint son but. Il y a quatre façons de réagir.",
+        "Choisis une des trois situations. Quelle façon de réagir Tom prend-il d’abord – et quelle phrase-bouclier lui ressemble ?",
+        "Maintenant, je suis Tom et je mords à l’hameçon : « Tu me saoules ! » Tu es le conseiller ou la conseillère : comment en faire une phrase-bouclier ?"
+      ],
+      "wennEsKippt": "Si une situation touche l’enfant de trop près, l’adulte passe à une plus légère et lit la pique plus doucement ; une phrase-bouclier et un chemin vers l’aide suffisent. Si l’enfant ne veut rien planifier, il choisit seulement la façon de réagir pour Tom. Si l’enfant raconte de lui-même quelque chose qui le touche, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Tom."
+    }
+  },
+  {
     "id": "ki:kurs-wut-10-12-s6-a",
     "quelle": {
       "art": "praxis",

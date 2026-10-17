@@ -351,6 +351,27 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
   regel(29, 'Tausch-Übung passt nicht zu ihrer Kurs-Sitzung', 'fehler', t)
 }
 
+// 30 Einzelkurse: die erste Sitzung (mit Blatt-Anleitung und Tausch-Übungen) und die Kurs-Rituale setzen keine frühere Stunde
+// voraus (Test 17.10.: „in der letzten Stunde“ für das letzte Treffen las sich wie ein Rückgriff – besser „beim sechsten Treffen“)
+{
+  const t: string[] = []
+  const strings = (o: unknown, out: string[]) => {
+    if (typeof o === 'string') out.push(o)
+    else if (Array.isArray(o)) for (const x of o) strings(x, out)
+    else if (o && typeof o === 'object') for (const x of Object.values(o)) strings(x, out)
+  }
+  for (const e of schritte) {
+    if (!((e.linie?.id.startsWith('kurs-') && e.linie.nr === 1) || e.kurs)) continue
+    const s: string[] = []
+    strings([textVon(e, 'de'), textVon(e, 'fr'), e.uebungsblatt?.anleitung, e.imSpiel], s)
+    for (const x of s) {
+      const m = VORLAUF_RE.exec(x)
+      if (m) { t.push(`${e.id}: …${x.slice(Math.max(0, m.index - 40), m.index + 30)}…`); break }
+    }
+  }
+  regel(30, 'Einzelkurs: erste Sitzung oder Ritual setzt eine frühere Stunde voraus', 'fehler', t)
+}
+
 // 28 Einzelkurse: Hintergrund für die Fachkraft (warum es wirkt, Achtung, Quellen; DE und FR) – steht auf dem Deckblatt der
 // Kurs-Mappe (Referenzmessung 16.10.: „Hintergrund, Quellen und Achtung-Hinweise fehlen“)
 {

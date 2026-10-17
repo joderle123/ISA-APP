@@ -74,6 +74,15 @@ const PROFILE = {
     erreicht: ['V-13', 'V-15', 'K-17'], themen: [{ key: 'angst', art: 'reunion', datum: '2026-10-03' }], vorsicht: [], interessen: ['basketball', 'musik', 'gaming'], wochenziel: 'Vor der Probe mache ich meinen Skill.', gemacht: [], folge: null,
     vorlieben: null, rituale: { ankommen: 'k:j1-e01:1', abschluss: 'k:j1-e01:7' }, rechte: { speichern: true, rueckmelden: false }, achtung: ['krise'],
   },
+  // erfundenes Kind mit Vorschlägen aus dem Steckbrief (zwei echte Dossiers 17.10.2026, hier nachgestellt): Ziel nur als Vorschlag,
+  // wenig Schreiben, Reize, Interessen, Wörterstreifen – gilt erst nach „Übernehmen“
+  'pg-jonas16': {
+    v: 1, ref: 'pg-jonas16', erstellt: '2026-10-17T09:12:00', anrede: null, vorname: 'Jonas', alterJahre: 16, stufen: ['ES'], layout: 'jugend',
+    sprache: { blatt: 'de', woerter: [] }, zugang: { lesen: 3, schreiben: 3, bild: 1, tempo: 'normal', struktur: 'normal', quelle: [] },
+    ziele: [{ code: 'V-26', ich: 'Wenn mich jemand provoziert, bleibe ich ruhig.', quelle: 'steckbrief', prio: 1 }, { code: 'V-25', ich: 'Ich wende die besprochenen alternativen Verhaltensweisen an.', quelle: 'steckbrief', prio: 2 }],
+    erreicht: [], themen: [], vorsicht: ['heikel'], interessen: [], wochenziel: null, gemacht: [], folge: null, vorlieben: null, rechte: { speichern: true, rueckmelden: true }, achtung: ['krise'], dichte: 'duenn',
+    vorschlaege: { zugang: { lesen: 2, schreiben: 1, tempo: 'ruhig' }, hilft: ['stundenleiste'], vorsicht: ['reiz'], interessen: ['musik', 'theater', 'weltall'], woerter: ['lb'] },
+  },
   'pg-anouk01': {
     v: 1, ref: 'pg-anouk01', erstellt: '2026-10-09T09:12:00', anrede: null, vorname: 'Anouk', alterJahre: 7, stufen: ['C2'], layout: 'gross',
     sprache: { blatt: 'de', woerter: [] }, zugang: { lesen: 1, schreiben: 1, bild: 2, tempo: 'normal', struktur: 'normal', quelle: ['alter'] },
@@ -312,7 +321,8 @@ async function main() {
 
       // 5. Ersetzen im Ablauf
       const kern = tb.locator('.pg-schritt', { has: tb.locator('.r-kern') }).first()
-      const kernTitel = await kern.locator('h3').innerText()
+      // ganzer Schritt statt nur Titel: in einem Kurs ist die erste Alternative die andere Variante derselben Sitzung (gleicher Titel)
+      const kernTitel = await kern.innerText()
       await kern.locator('.pg-schritt-haupt').click()
       await dlg(tb).waitFor()
       const nAlt = await dlg(tb).locator('.pg-alt:not(.jetzt)').count()
@@ -321,9 +331,10 @@ async function main() {
       await foto(tb, '07-ersetzen-schritt', { voll: false })
       await dlg(tb).locator('.pg-alt:not(.jetzt) button', { hasText: 'Ersetzen' }).first().click()
       await tb.waitForTimeout(200)
-      const kernNeu = await tb.locator('.pg-schritt', { has: tb.locator('.r-kern') }).first().locator('h3').innerText()
+      const rueck = await tb.getByRole('button', { name: 'Rückgängig' }).first().waitFor({ timeout: 4000 }).then(() => true, () => false)
+      const kernNeu = await tb.locator('.pg-schritt', { has: tb.locator('.r-kern') }).first().innerText()
       pruefe(kernNeu !== kernTitel, 'Kern ersetzt')
-      pruefe(await tb.getByRole('button', { name: 'Rückgängig' }).first().isVisible(), 'Rückgängig nach Ersetzen')
+      pruefe(rueck, 'Rückgängig nach Ersetzen')
 
       // 6. Daumen runter mit Grund
       await tb.locator('.pg-schritt').nth(1).locator('button[aria-label^="Daumen runter"]').click()
@@ -619,6 +630,30 @@ async function main() {
       await tb.getByRole('button', { name: 'Stunde bauen' }).click()
       await tb.locator('.pg-schritt').first().waitFor()
       pruefe(true, 'dünne Daten: Stunde mit Schwerpunkt')
+      await tb.close()
+
+      // 16a. Vorschläge aus dem Steckbrief: Hinweis über den Wegen, Karte in „Das weiß ich schon“, „Alle übernehmen“ → Kurs
+      tb = await oeffne('pg-jonas16', 'gruendlich')
+      await tb.getByRole('heading', { name: 'Eine Folge für Jonas' }).waitFor({ timeout: 90000 })
+      pruefe(await tb.getByText(/Vorschläge aus dem Steckbrief/).first().isVisible(), 'Steckbrief: Hinweis „Vorschläge prüfen“ über dem Weg')
+      await tb.getByRole('button', { name: 'Vorschläge prüfen' }).click()
+      await tb.getByRole('heading', { name: 'Das weiß ich schon' }).waitFor()
+      const vkarte = tb.locator('.pg-vorschlaege')
+      pruefe(await vkarte.isVisible() && (await vkarte.locator('.pg-pzeile').count()) >= 7, 'Steckbrief: Karte mit den Vorschlägen (Ziele, Zugang, Hilft, Vorsicht, Wörter, Interessen)')
+      pruefe((await tb.locator('.pg-pzeile', { hasText: 'V-26' }).locator('.pg-chip', { hasText: 'aus' }).count()) >= 1, 'Steckbrief: Ziel-Vorschlag steht auf „aus“, bis die Fachkraft es übernimmt')
+      await foto(tb, '19b-steckbrief-vorschlaege')
+      const vorJ = (await ops()).length
+      await vkarte.getByRole('button', { name: 'Alle übernehmen' }).click()
+      await tb.waitForTimeout(1200)
+      pruefe(!(await tb.locator('.pg-vorschlaege').count()), 'Steckbrief: nach „Alle übernehmen“ keine offenen Vorschläge mehr')
+      const vj = await hub.evaluate((n) => window.__ops.slice(n).filter((o) => o.op === 'vorlieben').map((o) => o.arg.aenderungen), vorJ)
+      const kj = Object.assign({}, ...vj.map((a) => a.korrekturen || {}))
+      pruefe(kj.ziele && kj.ziele.an.includes('V-26') && kj.schreiben === 1 && kj.vorsicht && kj.vorsicht.an.includes('reiz') && JSON.stringify(kj.woerter) === '["lb"]', 'Steckbrief: Übernommenes geht als Korrektur ans Kind (ziele.an, schreiben, vorsicht.an, woerter)')
+      await tb.getByRole('button', { name: /Weiter: Gründlich planen/ }).click()
+      await tb.getByRole('button', { name: 'Folge bauen' }).click()
+      await tb.locator('.pg-schritt').first().waitFor()
+      pruefe(await tb.getByText('Ärger im Griff').first().isVisible(), 'Steckbrief: mit dem übernommenen Ziel V-26 plant Passgenau den Kurs „Ärger im Griff“')
+      await foto(tb, '19c-steckbrief-folge')
       await tb.close()
 
       // 16b. Gruppe (Aufgabe 151): zwei refs, ein Plan, gespeichert bei beiden, Blatt je Kind

@@ -5652,6 +5652,111 @@
     }
   },
   {
+    "id": "ki:kurs-wut-13-16-s5-t3",
+    "tausch": true,
+    "quelle": {
+      "art": "praxis",
+      "titel": "Einzelkurs Ärger im Griff"
+    },
+    "rolle": [
+      "kern"
+    ],
+    "bogen": "uebertragen",
+    "thema": [
+      "wut"
+    ],
+    "eldib": [
+      {
+        "code": "V-26",
+        "gewicht": 1
+      },
+      {
+        "code": "V-27",
+        "gewicht": 0.5
+      },
+      {
+        "code": "K-31",
+        "gewicht": 0.5
+      },
+      {
+        "code": "V-29",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "impulskontrolle"
+    ],
+    "alter": {
+      "von": 13,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 14
+    },
+    "sozialform": [
+      "einzeln"
+    ],
+    "einzeltauglich": "ja",
+    "werkzeug": {
+      "de": "4-Schritte-Satz: Fakt, Gefühl, Bitte, Nutzen – im Gespräch und im Chat",
+      "fr": "Phrase en 4 étapes : fait, émotion, demande, bénéfice – à l’oral et par écrit"
+    },
+    "uebertragbar": true,
+    "qualitaet": "geprueft",
+    "linie": {
+      "id": "kurs-wut-13-16",
+      "nr": 5,
+      "faden": {
+        "de": "Ärger im Griff mit der Ärger-Kurve: Anstieg, Gipfel, Abstieg – und ein Ausstieg mehr in jeder Stunde",
+        "fr": "Garder la maîtrise de sa colère avec la courbe de la colère : montée, sommet, descente – et une issue de plus à chaque séance"
+      }
+    },
+    "ort": "raum",
+    "titel": "Ärger sagen: Der Comic-Streifen",
+    "text": "Die Kurve hat vier Ausstiege, heute kommt der fünfte dazu: sagen, was los ist, ohne dass es eskaliert. Die Fachkraft zeigt den 4-Schritte-Satz (vereinfacht nach DEAR MAN): Fakt, Gefühl, Bitte, Nutzen. Auf einem Papier liegen zwei Comic-Streifen: Im ersten sagt Ben zu Jana „Du spielst mich nie an. Du bist so egoistisch.“, im zweiten „Dreimal kein Ball. Das ärgert mich. Spiel mich bitte öfter an.“, und der oder die Jugendliche zeichnet in beide Janas Sprechblase, wie sie wahrscheinlich reagiert. Dann Rollentausch: Er oder sie berät Ben, wählt von drei Karten eine ausgedachte Situation (Warten in der Reihe, ein Spiel läuft schlecht, jemand nimmt den Stift) und gestaltet einen dritten Streifen mit vier Feldern, je ein Teil von Bens Satz, dazu wer, wann und wo oder in welchem Chat. Die Fachkraft sagt den Satz als Ben, er oder sie prüft ihn mit der Checkliste vor dem Senden und schätzt Bens Zahl auf der Kurve vor und nach dem Satz. Den Plan trägt er oder sie bei „Plane deine Situation“ auf dem Zettel ein, für Ben oder, wenn er oder sie will, für jemanden wie sich selbst. Du sagst, was du brauchst, nicht, was der andere falsch macht.",
+    "sagen": [
+      "Heute zeichnen wir einen Comic zu Ben und Jana und bauen dann Bens Satz in vier Teilen. Du entscheidest, welche Situation.",
+      "Hier sind zwei Sätze von Ben. Zeichne in die Sprechblase, wie Jana wahrscheinlich reagiert.",
+      "Jetzt bist du Bens Beraterin oder Berater. Fakt, Gefühl, Bitte, Nutzen – ein Teil in jedes Feld.",
+      "Du sagst, was du brauchst, nicht, was der andere falsch macht. Du kannst jederzeit Stopp sagen."
+    ],
+    "wennEsKippt": "Mag der oder die Jugendliche nicht zeichnen, sagt er oder sie Janas Reaktion in einem Satz, und die Fachkraft notiert sie. Genügen vier Felder nicht, reichen die ersten zwei (Fakt und Gefühl). Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Ben und Jana zurück; ein Streifen mit einem Satz genügt.",
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "comic",
+      "plan"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "buntstifte"
+    ],
+    "imSpiel": {
+      "de": "Nach einem kleinen Streitpunkt im Spiel sagt die Fachkraft für Ben einen Satz in drei Teilen („Zweimal hintereinander … das ärgert mich … ich möchte, dass wir gemeinsam zählen.“). Der oder die Jugendliche zeigt an den Fingern, welcher Teil fehlt: Fakt, Gefühl, Bitte oder Nutzen.",
+      "fr": "Après un petit point de désaccord dans le jeu, l’adulte dit pour Ben une phrase en trois parties (« Deux fois de suite … ça m’énerve … j’aimerais qu’on compte ensemble. »). Le ou la jeune montre avec les doigts quelle partie manque : fait, émotion, demande ou bénéfice."
+    },
+    "zugang": {
+      "lesen": 2,
+      "schreiben": 2,
+      "bild": 1
+    },
+    "fr": {
+      "titel": "Dire sa colère : la bande dessinée",
+      "text": "La courbe a déjà quatre issues ; aujourd’hui s’ajoute la cinquième : dire ce qui ne va pas sans que ça dégénère. L’adulte présente la phrase en quatre étapes (version simplifiée de DEAR MAN) : fait, émotion, demande, bénéfice. Deux bandes dessinées sont posées sur une feuille : dans la première, Ben dit à Jana « Tu ne me passes jamais la balle. Tu es tellement égoïste. », dans la seconde « Trois fois sans balle. Ça m’énerve. Passe-moi plus souvent la balle. », et le ou la jeune dessine dans chacune la bulle de Jana, comme elle réagit probablement. Puis on échange les rôles : il ou elle conseille Ben, choisit sur trois cartes une situation inventée (faire la file, un jeu qui se passe mal, quelqu’un prend le stylo) et crée une troisième bande à quatre cases, une partie de la phrase de Ben dans chacune, avec qui, quand et où ou dans quel chat. L’adulte dit la phrase dans le rôle de Ben, le ou la jeune la vérifie avec la liste de contrôle avant d’envoyer et estime le chiffre de Ben sur la courbe avant et après la phrase. Il ou elle note le plan sur la fiche sous « Prépare ta situation », pour Ben ou, s’il ou elle le souhaite, pour quelqu’un comme lui ou elle. Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal.",
+      "sagen": [
+        "Aujourd’hui, on dessine une bande dessinée sur Ben et Jana, puis on construit la phrase de Ben en quatre parties. Tu décides de la situation.",
+        "Voici deux phrases de Ben. Dessine dans la bulle comment Jana réagit probablement.",
+        "Maintenant, tu es le conseiller ou la conseillère de Ben. Fait, émotion, demande, bénéfice : une partie dans chaque case.",
+        "Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal. Tu peux dire stop à tout moment."
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut pas dessiner, il ou elle dit la réaction de Jana en une phrase et l’adulte la note. Si quatre cases, c’est trop, les deux premières (fait et émotion) suffisent. Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Ben et Jana ; une bande avec une phrase suffit."
+    }
+  },
+  {
     "id": "ki:kurs-wut-13-16-s6-a",
     "quelle": {
       "art": "praxis",

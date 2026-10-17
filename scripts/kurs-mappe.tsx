@@ -5,7 +5,7 @@
 //   npx tsx --tsconfig tsconfig.scripts.json scripts/kurs-mappe.tsx <kurs-linie> [zielordner] [--png] [--blaetter] [--nur-de] [--dauer=30]
 // --blaetter: nur die Kinderblätter als Bilder (je Sitzung und Variante, zum Ansehen); die Seitenzahl je Blatt steht immer im Bericht.
 // Umfang: Blatt bis 7 Jahre (C1, C2) 1 Seite, sonst höchstens 2 Seiten – mehr gilt als Fehler.
-// Ohne Kurs-Linie: alle Kurse (Linien „kurs-…“), nur der Bericht ohne PDF.
+// Ohne Kurs-Linie: alle Kurse (Linien „kurs-…“), nur der Bericht ohne PDF (nur Deutsch; mit --fr auch Französisch).
 // Endet mit Fehler, wenn eine Sitzung nicht die erwartete Kurs-Sitzung hat.
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -60,7 +60,7 @@ for (const kurs of kurse) {
   const zugaenge = [...new Map(erste.map((e) => [JSON.stringify(e.zugang ?? null), e.zugang ?? null])).values()]
   console.log(`\n== ${kurs}: ${n} Sitzungen, ${sitzungen.length} Einträge, Alter ${von}–${bis} (Test: ${alter}), Ziele ${codes.join(', ')}, Rituale ${rituale.length}, Tausch-Übungen ${tausch.length}`)
   for (let nr = 1; nr <= n; nr++) if (!sitzungen.some((e) => e.linie!.nr === nr)) { console.log(`  ✗ Sitzung ${nr} fehlt`); fehler++ }
-  const sprachen: ('de' | 'fr')[] = flag('--nur-de') || nurBericht ? ['de'] : ['de', 'fr']
+  const sprachen: ('de' | 'fr')[] = flag('--nur-de') || (nurBericht && !flag('--fr')) ? ['de'] : ['de', 'fr']
   for (const z of zugaenge) {
     const variante = erste.find((e) => JSON.stringify(e.zugang ?? null) === JSON.stringify(z))!
     const v = variante.id.match(/-([a-z])$/)?.[1] ?? '?'
@@ -102,10 +102,11 @@ for (const kurs of kurse) {
         const rit = s.schritte.filter((x) => x.rolle === 'ankommen' || x.rolle === 'abschluss').map((x) => x.ref)
         const ritOk = !rituale.length || rituale.every((r) => rit.some((x) => x.endsWith(r.id) || x === r.id))
         const zuLang = blattSeiten[i] > maxSeiten
-        if (!ok || zuLang) fehler++
+        // fehlt ein Kurs-Ritual (z. B. weil ein Wort im Ritual-Text einen Filter auslöst), ist das ein Fehler
+        if (!ok || zuLang || !ritOk) fehler++
         /* warum die erwartete Sitzung nicht kam (Textmerkmal, Alter, Zugang …) */
         const grund = !ok && passend ? pruefe(k.eintraege.get(passend.id)!, kontext(k, p, a, leer() as never), { rolle: 'kern' }) : null
-        zeilen.push(`  ${ok && !zuLang ? '✓' : '✗'} S${s.nr}: ${hat ?? kern.join(', ') ?? '–'}${ok ? '' : `  (erwartet ${passend?.id ?? '?'}${grund ? ` – ausgeschlossen: ${grund}` : ''})`}${ritOk ? '' : '  · Rituale fehlen: ' + rit.join(', ')} · ${s.schritte.reduce((x, y) => x + y.min, 0)} Min.${s.blatt ? ` · Blatt ${blattSeiten[i]} S.${zuLang ? ` (höchstens ${maxSeiten})` : ''}` : ' · ohne Blatt'}`)
+        zeilen.push(`  ${ok && !zuLang && ritOk ? '✓' : '✗'} S${s.nr}: ${hat ?? kern.join(', ') ?? '–'}${ok ? '' : `  (erwartet ${passend?.id ?? '?'}${grund ? ` – ausgeschlossen: ${grund}` : ''})`}${ritOk ? '' : '  · Rituale fehlen: ' + rit.join(', ')} · ${s.schritte.reduce((x, y) => x + y.min, 0)} Min.${s.blatt ? ` · Blatt ${blattSeiten[i]} S.${zuLang ? ` (höchstens ${maxSeiten})` : ''}` : ' · ohne Blatt'}`)
       })
       console.log(`  Variante ${v} (${JSON.stringify(z)}) · ${sprache}:`)
       zeilen.forEach((x) => console.log(x))
