@@ -136,7 +136,7 @@ dem Baustein, zu dem sie gehört, und bleibt mit ihm auf einer Seite.
 ### Text & Struktur
 | Art | Felder | Wofür |
 |---|---|---|
-| `aufgabe` | `text`, `hinweis?`, `symbole?`, `niveau?` | Arbeitsauftrag. Kurz, klar, ein Verb. `symbole`: malen, schreiben, lesen, schneiden, kleben, ankreuzen, einkreisen, verbinden, sprechen, zuhoeren, nachdenken, zeigen, partner, gruppe (vor allem C1–C3). `niveau` (Spielschule): `einstieg` oder `stern`. |
+| `aufgabe` | `text`, `hinweis?`, `symbole?`, `niveau?` | Arbeitsauftrag. Kurz, klar, ein Verb. `symbole`: malen, schreiben, lesen, schneiden, kleben, ankreuzen, einkreisen, verbinden, sprechen, zuhoeren, nachdenken, zeigen, partner, gruppe, bewegen, atmen (vor allem C1–C3; ab C4 für sichtbare Zugänge außer Schreiben). `niveau` (Spielschule): `einstieg` oder `stern`. |
 | `text` | `text`, `klein?` | Kurzer Sachtext (v. a. ES). |
 | `info` | `titel?`, `text?`, `punkte?`, `symbol?` | Kasten: `wissen` (Gut zu wissen), `tipp`, `merke`, `achtung`, `hilfe`. |
 | `geschichte` | `titel?`, `text`, `bild?`, `szene?` | Kurze Alltagsgeschichte (C2: 3–5 Sätze, C3–C4: 4–7, ES: Fallvignette). Mit Figur links als Porträt (Kopf und Oberkörper groß; bei langem Text wächst der Rahmen mit). `szene` = die ganze Figur steht in einer Szene (pausenhof, klassenzimmer, bus, kueche, kinderzimmer, park, flur, kantine, umkleide; `src/blatt/szenen.ts`; Prüfskript meldet unbekannte). |

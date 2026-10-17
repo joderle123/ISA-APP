@@ -6,7 +6,7 @@ import type { KatalogEintrag, Plan, PlanSchritt } from '../typen'
 import * as K from './kern'
 import { teilenErlaubt, usePg, useProfil, type Ort } from './zustand'
 import { Ic } from './zeichen'
-import { Daumen, FettCodes, HeikelBanner, Pill, RolleBadge, VersionsBanner, Warum, useGekuerzt } from './Teile'
+import { Daumen, FettCodes, HeikelBanner, MehrMenue, Pill, RolleBadge, VersionsBanner, Warum, useGekuerzt } from './Teile'
 import { BlattAnsicht } from './Vorschau'
 import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
 import { PHASE_NAME, ROLLE_NAME, TF_NAME, datumKurz, kindWort, SOZIALFORM_NAME } from './texte'
@@ -155,7 +155,7 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
           <div className="pg-hinweisbox gelb klein">
             <Ic n="info" />
             <span>
-              Dieser Baustein wurde in der Toolbox überarbeitet.{' '}
+              Dieser Schritt wurde in der Toolbox überarbeitet.{' '}
               <button type="button" className="pg-link" onClick={() => pg.planAendern((pl) => ({ ...pl, sitzungen: pl.sitzungen.map((x) => (x.nr === nr ? { ...x, schritte: x.schritte.map((y, j) => (j === i ? { ...y, h: e.h } : y)) } : x)) }))}>
                 Neue Fassung nehmen
               </button>
@@ -190,7 +190,7 @@ function BlattKarte({ s, nr }: { s: PlanSchritt; nr: number }) {
         {s.min > 0 ? s.min : '–'}
         <small>{s.min > 0 ? 'Min.' : 'optional'}</small>
       </div>
-      <button type="button" className="pg-schritt-haupt" onClick={() => pg.setAnsicht('baukasten')} aria-label={`Blatt „${bl.titel}“ im Baukasten bearbeiten`}>
+      <button type="button" className="pg-schritt-haupt" onClick={() => pg.setAnsicht('baukasten')} aria-label={`Blatt „${bl.titel}“ anpassen`}>
         <span className="zeile1">
           <RolleBadge rolle="blatt" />
           <span className="pg-quelle">
@@ -199,9 +199,7 @@ function BlattKarte({ s, nr }: { s: PlanSchritt; nr: number }) {
           </span>
         </span>
         <h3>Blatt „{bl.titel}“</h3>
-        <span className="text">
-          {bl.bausteine.length} {bl.bausteine.length === 1 ? 'Baustein' : 'Bausteine'}: {arten.join(' · ')}
-        </span>
+        <span className="text">{bl.bausteine.length === 1 ? 'Blatt mit 1 Teil' : `Blatt mit ${bl.bausteine.length} Teilen: ${arten.join(' · ')}`}</span>
       </button>
       <div className="aktionen">
         <button type="button" className="pg-btn klein" onClick={() => pg.setAnsicht('baukasten')}>
@@ -216,28 +214,34 @@ function BlattKarte({ s, nr }: { s: PlanSchritt; nr: number }) {
   )
 }
 
-/** „Noch nicht gespeichert“ – steht, bis der Plan gesichert ist (im CDSE-Hub oder als Datei), nicht nur vier Sekunden wie ein Hinweis.
- *  Sagt dazu, warum: ohne CDSE-Hub liegt die Stunde nur in diesem Fenster. */
+/** Steht die ruhige Zeile „Die Stunde ist noch nicht gesichert“? Nur wenn etwas zu sichern ist, das sich lohnt: die Stunde lässt sich im
+ *  CDSE-Hub speichern, oder sie wurde verändert (getauscht, angepasst). Eine frische Stunde ohne CDSE-Hub braucht sie nicht –
+ *  die PDF ist dann das Ergebnis; „Als Datei sichern“ steht unten bei den Stunden-Knöpfen. */
+function speicherzeileNoetig(pg: ReturnType<typeof usePg>): boolean {
+  return pg.ungespeichert && (pg.hubSpeichert || pg.rueckgaengig.length > 0)
+}
+
+/** „Die Stunde ist noch nicht gesichert“ – eine ruhige graue Zeile (kein gelber Streifen), bis der Plan gesichert ist (im CDSE-Hub
+ *  oder als Datei). Sagt dazu in einem Satz, wo die Stunde gerade liegt. */
 function Speicherstreifen({ plan }: { plan: Plan }) {
   const pg = usePg()
-  if (!pg.ungespeichert) return null
+  if (!speicherzeileNoetig(pg)) return null
   const gruppe = (pg.profil?.gruppe?.length ?? 0) > 1
   const text = pg.darfSpeichern
-    ? 'Beim Drucken wird die Stunde beim Kind gespeichert – oder gleich jetzt.'
+    ? 'Beim Drucken wird sie beim Kind gespeichert – oder gleich jetzt.'
     : pg.darfTresor
-      ? 'Beim Drucken landet die Stunde in deiner persönlichen Ablage im CDSE-Hub (nur du siehst sie) – oder sichere sie als Datei.'
+      ? 'Beim Drucken landet sie in deiner persönlichen Ablage im CDSE-Hub (nur du siehst sie).'
       : pg.hubDa
-        ? 'Dir fehlt das Recht, beim Kind zu speichern. Sichere die Stunde als Datei.'
-        : 'Nicht mit dem CDSE-Hub verbunden: Die Stunde liegt nur in diesem Fenster. Sichere sie als Datei, wenn du sie behalten willst.'
+        ? 'Dir fehlt das Recht, beim Kind zu speichern.'
+        : 'Sie liegt nur in diesem Fenster.'
   return (
     <div className="pg-streifen" role="note">
-      <Ic n="info" />
       <p>
-        <b>Noch nicht gespeichert.</b> {text}
+        <b>Die Stunde ist noch nicht gesichert.</b> {text}
       </p>
       <button type="button" className="pg-btn klein" onClick={() => pg.planSichern(plan, 'knopf')}>
         <Ic n={pg.darfSpeichern ? 'speichern' : 'datei'} />
-        {pg.darfSpeichern ? (gruppe ? 'Bei allen Kindern speichern' : 'Beim Kind speichern') : 'Als Datei speichern'}
+        {pg.darfSpeichern ? (gruppe ? 'Bei allen Kindern speichern' : 'Beim Kind speichern') : 'Als Datei sichern'}
       </button>
     </div>
   )
@@ -337,7 +341,7 @@ export function Ergebnis() {
     : plan.n > 1
       ? `${plan.titel}${fuer} · Sitzung ${s.nr} von ${plan.n}`
       : `${thema}${fuer} · ${minuten} Min.`
-  const eyebrow = leicht ? 'Weg 3 · Heute geht nicht viel' : plan.n > 1 ? `Folge · ${PHASE_NAME[s.phase]} · ${minuten} Min.` : `${titelTeile ? titelTeile[1] : 'Stunde'} · ${PHASE_NAME[s.phase]}`
+  const eyebrow = leicht ? 'Heute geht nicht viel' : plan.n > 1 ? `Folge · ${PHASE_NAME[s.phase]} · ${minuten} Min.` : `${titelTeile ? titelTeile[1] : 'Stunde'} · ${PHASE_NAME[s.phase]}`
   const gesichert = !pg.ungespeichert ? (pg.gespeichert[plan.id] ? `gespeichert ${pg.gespeichert[plan.id]}` : pg.dateiZeit[plan.id] ? `als Datei gesichert ${pg.dateiZeit[plan.id]}` : null) : null
 
   return (
@@ -362,22 +366,24 @@ export function Ergebnis() {
           </div>
         </div>
         <div className="pg-aktionen">
+          {/* Vorschau und „Blatt anpassen“ braucht man selten: sie liegen unter „Mehr“. */}
           <div className="pg-aktgruppe sek">
-            <button type="button" className="pg-btn" onClick={() => pg.setAnsicht('baukasten')}>
-              <Ic n="stift" />
-              Baukasten
-            </button>
-            <button type="button" className="pg-btn" onClick={() => pg.setAnsicht('vorschau')}>
-              <Ic n="augen" />
-              Vorschau
-            </button>
+            <MehrMenue
+              rechts
+              punkte={[
+                { icon: 'augen', text: 'Vorschau', onClick: () => pg.setAnsicht('vorschau') },
+                { icon: 'stift', text: 'Blatt anpassen', onClick: () => pg.setAnsicht('baukasten') },
+                { icon: 'info', text: 'Hilfe', onClick: () => pg.setDlg({ art: 'hilfe' }) },
+              ]}
+            />
           </div>
-          {/* Vor der Stunde ist Drucken der nächste Schritt: „PDF drucken“ ist der Hauptknopf, „Stunde gehalten“ kommt danach
+          {/* Vor der Stunde ist Drucken der nächste Schritt: „PDF öffnen / drucken“ ist der Hauptknopf, „Stunde gehalten“ kommt danach
               (erst wenn gedruckt wurde, wird er hervorgehoben). Mobil steht diese Gruppe als feste Leiste unten. */}
           <div className="pg-aktgruppe haupt">
             <button type="button" className="pg-btn primaer" onClick={() => pg.pdfErzeugen(s.nr)}>
               <Ic n="drucken" />
-              PDF drucken
+              <span className="nur-gross">PDF öffnen / drucken</span>
+              <span className="nur-klein">PDF öffnen</span>
             </button>
             {s.status === 'gehalten' ? (
               <Pill art="ok" icon="check">
@@ -444,7 +450,7 @@ export function Ergebnis() {
           )}
           <div className="pg-legende">
             <Ic n="info" />
-            <span>„Tauschen“ ersetzt einen Schritt. Mit dem Daumen merkt sich Passgenau, was gut ankam.{plan.n > 1 ? ' Rituale bleiben in der Folge gleich.' : ''}</span>
+            <span>„Tauschen“ ersetzt einen Schritt.{plan.n > 1 ? ' Rituale bleiben in der Folge gleich.' : ''}</span>
           </div>
         </nav>
         <section className="pg-ablauf" aria-label="Ablauf der Sitzung">
@@ -453,11 +459,11 @@ export function Ergebnis() {
           <div className="pg-ablauf-fuss">
             {s.schritte.some((x) => x.erkundung) && <p className="pg-leise pg-klein">„Neu ausprobiert“: bewusst etwas Neues neben dem Bewährten (etwa {Math.round((pg.vor.ich.erkundung ?? 0.2) * 100)} % der Stunde), damit sich nichts festfährt.</p>}
             <div className="pg-btnrow">
-              {/* solange „Noch nicht gespeichert“ oben steht, hat der Streifen diesen Knopf – nicht zweimal derselbe */}
-              {!pg.ungespeichert && (
+              {/* solange die Zeile „noch nicht gesichert“ oben steht, hat sie diesen Knopf – nicht zweimal derselbe */}
+              {!speicherzeileNoetig(pg) && (
                 <button type="button" className="pg-btn klein" onClick={() => pg.planSichern(plan, 'knopf')}>
                   <Ic n={pg.ohneKind ? 'datei' : 'speichern'} />
-                  {pg.ohneKind ? 'Als Datei speichern' : (pg.profil?.gruppe?.length ?? 0) > 1 ? 'Bei allen Kindern speichern' : 'Beim Kind speichern'}
+                  {pg.ohneKind ? 'Als Datei sichern' : (pg.profil?.gruppe?.length ?? 0) > 1 ? 'Bei allen Kindern speichern' : 'Beim Kind speichern'}
                 </button>
               )}
               <button type="button" className="pg-btn klein" onClick={pg.alsEigeneVorlage}>
@@ -473,7 +479,7 @@ export function Ergebnis() {
               {plan.n > 1 && (
                 <button type="button" className="pg-btn klein" onClick={() => pg.pdfErzeugen('folge')}>
                   <Ic n="drucken" />
-                  Folge als PDF
+                  Ganze Folge als PDF
                 </button>
               )}
               {pg.schalter.teilen && pg.hubDa && (
@@ -522,10 +528,10 @@ export function Ergebnis() {
           ) : (
             <div className="pg-card">
               <h2>Ohne Blatt</h2>
-              <p className="pg-leise pg-klein">Diese Stunde kommt ohne Blatt aus. Im Baukasten kannst du trotzdem eins zusammenstellen.</p>
+              <p className="pg-leise pg-klein">Diese Stunde kommt ohne Blatt aus. Mit „Blatt anpassen“ kannst du trotzdem eins zusammenstellen.</p>
               <button type="button" className="pg-btn klein" onClick={() => pg.setAnsicht('baukasten')}>
                 <Ic n="stift" />
-                Baukasten
+                Blatt anpassen
               </button>
             </div>
           )}

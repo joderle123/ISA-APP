@@ -53,6 +53,7 @@ const P: Record<string, string> = {
   ohr: 'M6 8.5a6 6 0 1 1 12 0c0 2.5-1.5 3.5-3 5-1 1-1.5 2-1.5 3.5a3 3 0 0 1-5.5 1.5M9 9a3 3 0 0 1 6 0',
   kleber: 'M9 3h6v4H9zM8 7h8l1 14H7z',
   linie: 'M4 18h16M4 12h10',
+  unten: 'm6 9 6 6 6-6',
 }
 
 export type Zeichen = keyof typeof P | string

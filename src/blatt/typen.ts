@@ -71,6 +71,8 @@ export type Symbol =
   | 'zeigen'
   | 'partner'
   | 'gruppe'
+  | 'bewegen'
+  | 'atmen'
 
 /** Farbwörter für Legenden (Körper, Ampel …) und Farbpunkte im Text (`{rot}`, siehe BLATT-STIL.md). */
 export type Farbwort = 'rot' | 'orange' | 'gelb' | 'gruen' | 'blau' | 'lila' | 'grau' | 'braun' | 'schwarz' | 'weiss' | 'rosa' | 'hellblau'

@@ -3,7 +3,7 @@
 // Die laufende Folge von Mia plant vorab der echte Kern (scripts/passgenau-ui-folge.ts), wie sie der Hub mitschickt.
 //   node scripts/passgenau-ui-test.cjs            (startet `npx vite` auf Port 5181)
 //   PG_PORT=5182 PG_BILDER=/pfad node scripts/passgenau-ui-test.cjs
-// Prüft: ohne Hub („Ohne Kind planen“, auch nach 1,5 s ohne Antwort), Start mit Kind, „Das weiß ich schon“ mit
+// Prüft: ohne Hub („Stunde planen“ mit Anliegen, Alter und Sprache darüber, auch nach 1,5 s ohne Antwort), Start mit Kind, „Das weiß ich schon“ mit
 // Korrektur und Bestätigung, Weg 1/2/3, Ergebnis, Ersetzen (Liste, Ablauf, Vorschau), Daumen mit Grund, Baukasten
 // (Suche, Einfügen, Text, Platzhalter, Sortieren, Löschen + Rückgängig), PDF (= gespeichert), Nach der Stunde
 // (nichts vorbelegt, Krisentag), Gelernt, Aus der Praxis (Filter, Übernehmen mit Originaltexten, Melden, Prüfen),
@@ -13,6 +13,7 @@ const path = require('path')
 const fs = require('fs')
 const http = require('http')
 const { spawn, execFileSync } = require('child_process')
+const os = require('os')
 process.env.PLAYWRIGHT_BROWSERS_PATH = process.env.PLAYWRIGHT_BROWSERS_PATH || '/opt/pw-browsers'
 let chromium
 try {
@@ -21,6 +22,10 @@ try {
   ;({ chromium } = require('/opt/node22/lib/node_modules/playwright'))
 }
 
+// Auf einem stark belasteten Rechner (mehrere Läufe gleichzeitig) dauert alles länger: Wartezeiten und die Zeitgrenze für „Folge in
+// unter 3 s“ wachsen mit der Last (Lastfaktor 1 bis 6; auf einem freien Rechner bleibt es bei 90 s und 3 s)
+const LAST = Math.min(6, Math.max(1, os.loadavg()[0] / os.cpus().length))
+const LADEN_MS = Math.round(90000 * LAST)
 const PORT = +(process.env.PG_PORT || 5181)
 const BASIS = `http://127.0.0.1:${PORT}`
 const BILDER = process.env.PG_BILDER || path.join(__dirname, '..', 'tmp', 'passgenau-ui-bilder')
@@ -178,7 +183,13 @@ async function main() {
   const folge = JSON.parse(execFileSync('npx', ['tsx', '--tsconfig', 'tsconfig.scripts.json', 'scripts/passgenau-ui-folge.ts', JSON.stringify({ profil: mia, n: 6, gehalten: 2, id: 'pl-4k2', datum: '2026-10-02' })], { cwd: path.join(__dirname, '..'), encoding: 'utf8', maxBuffer: 1 << 26 }))
   mia.verlauf = { plaene: [folge] }
   mia.folge = { id: folge.id, titel: folge.titel, n: folge.n, gehalten: 2 }
-  const server = spawn('npx', ['vite', '--port', String(PORT), '--strictPort', '--host', '127.0.0.1'], { cwd: path.join(__dirname, '..'), stdio: ['ignore', 'pipe', 'pipe'], detached: true })
+  // Vite wie `npx vite`, nur ohne Dateibeobachtung für src/data und tmp: Schreibt während des Tests jemand dorthin, lädt die
+  // Hot-Reload-Kette Teile der Oberfläche neu, und `usePg` findet seinen Anbieter nicht mehr (zwei Fassungen von zustand.tsx).
+  const serverSkript = `import('vite').then(async ({ createServer }) => {
+    const s = await createServer({ server: { port: ${PORT}, strictPort: true, host: '127.0.0.1', watch: { ignored: ['**/src/data/**', '**/tmp/**'] } } })
+    await s.listen()
+  })`
+  const server = spawn(process.execPath, ['-e', serverSkript], { cwd: path.join(__dirname, '..'), stdio: ['ignore', 'pipe', 'pipe'], detached: true })
   let log = ''
   server.stdout.on('data', (d) => (log += d))
   server.stderr.on('data', (d) => (log += d))
@@ -198,6 +209,7 @@ async function main() {
     for (const breite of [1366, 390]) {
       console.log(`\n== Breite ${breite}`)
       ctx = await browser.newContext({ viewport: { width: breite, height: breite > 500 ? 860 : 844 }, deviceScaleFactor: 1, acceptDownloads: true, hasTouch: breite < 500, isMobile: breite < 500 })
+      ctx.setDefaultNavigationTimeout(120000)
       await ctx.route('**/__hub.html*', (r) => r.fulfill({ contentType: 'text/html; charset=utf-8', body: hubSeite() }))
       const hub = await ctx.newPage()
       ctx.on('page', (pg) => pg.on('pageerror', (e) => console.log('  Seitenfehler: ' + String(e.message || e).slice(0, 300))))
@@ -222,14 +234,60 @@ async function main() {
       }
       const ops = async () => hub.evaluate(() => window.__ops.map((o) => o.op))
       const dlg = (p) => p.locator('dialog.pg-dlg[open]')
+      // „Mehr ▾“ im Kopf des Ergebnisses (Vorschau, Blatt anpassen, Hilfe) und „Einstellungen ▾“ in der Leiste von Passgenau (Vorlieben, Hilfe)
+      const mehr = async (p, text) => {
+        await p.locator('.pg-ekopf').getByRole('button', { name: 'Mehr', exact: true }).click()
+        await p.locator('.pg-mehr-liste').getByRole('button', { name: text }).click()
+      }
+      const mehrLeiste = async (p, text) => {
+        await p.locator('.pg-unterreiter').getByRole('button', { name: 'Einstellungen', exact: true }).click()
+        await p.locator('.pg-mehr-liste').getByRole('button', { name: text }).click()
+      }
+      // „PDF öffnen / drucken“: öffnet die PDF in einem neuen Tab (Popup) und lässt den Hinweis mit Dateiname stehen
+      const pdfOeffnen = async (p) => {
+        const [popup] = await Promise.all([p.waitForEvent('popup', { timeout: 60000 }), p.locator('.pg-ekopf').getByRole('button', { name: /^PDF öffnen/ }).click()])
+        return popup
+      }
 
       // 1. Ohne Hub: direkt geöffnet
       if (breite > 500) {
-        const p0 = await ctx.newPage()
+        let p0 = await ctx.newPage()
         await p0.goto(`${BASIS}/#passgenau`)
-        await p0.getByRole('heading', { name: 'Ohne Kind planen' }).waitFor({ timeout: 90000 })
+        await p0.getByRole('heading', { name: 'Was möchtest du üben?' }).waitFor({ timeout: LADEN_MS })
         pruefe(true, 'ohne Hub')
+        // Ein Name für den Einstieg: nirgends „Ohne Kind“ (weder Überschrift noch Chip), Alter und Sprache über den Anliegen
+        pruefe(!(await p0.locator('main').innerText()).includes('Ohne Kind'), 'Einstieg: kein „Ohne Kind“ im Text')
+        pruefe((await p0.locator('.pg-angaben #pg-alter').count()) === 1 && (await p0.locator('.pg-angaben .pg-seg').count()) === 1, 'Alter und Sprache über den Anliegen')
+        pruefe(await p0.getByRole('button', { name: 'Hilfe finden' }).isVisible(), 'Link „Lieber beschreiben … Hilfe finden“ unter den Anliegen')
+        pruefe((await p0.locator('.pg-anliegen small').first().innerText()).startsWith('ab 8 J.'), 'Anliegen ohne gewähltes Alter: „ab 8 J.“ (Förderziele nur im Tooltip)')
         await foto(p0, '00-ohne-kind')
+        // Link „Hilfe finden“ → Seite Einheiten mit offenem Dialog; „Zyklus 3“ wird als Alter C3 verstanden
+        await p0.getByRole('button', { name: 'Hilfe finden' }).click()
+        await p0.locator('dialog[open]').getByRole('heading', { name: 'Hilfe finden' }).waitFor({ timeout: LADEN_MS })
+        await p0.locator('dialog[open] textarea').fill('Tom, 9 Jahre, Zyklus 3, Wutausbrüche bei Schreibaufgaben')
+        await p0.locator('dialog[open] textarea').press('Enter')
+        await p0.locator('dialog[open] .badge', { hasText: 'Alter: C3' }).first().waitFor({ timeout: 20000 })
+        pruefe(!(await p0.locator('dialog[open]').innerText()).includes('Interesse: zyklus'), 'Hilfe finden: „Zyklus 3“ ist ein Alter, kein Interesse')
+        await p0.locator('dialog[open]').getByRole('button', { name: 'Schließen', exact: true }).click()
+        await p0.goto(`${BASIS}/#passgenau`)
+        await p0.reload()
+        await p0.getByRole('heading', { name: 'Was möchtest du üben?' }).waitFor({ timeout: LADEN_MS })
+        // Tipp auf ein Anliegen nimmt das gewählte Alter mit (hier 9 statt der 8 der Karte „Wut im Griff“)
+        await p0.locator('#pg-alter').selectOption('9')
+        pruefe((await p0.locator('.pg-anliegen small').first().innerText()).startsWith('9 J.'), 'Anliegen zeigen das gewählte Alter')
+        await p0.locator('.pg-anliegen', { hasText: 'Wut im Griff' }).click()
+        await p0.locator('.pg-kindchip', { hasText: 'Alter: 9 Jahre' }).waitFor()
+        pruefe(true, 'Anliegen nimmt das Alter mit: Chip „Alter: 9 Jahre“')
+        await p0.close()
+        // Frisch: der Weg über „Eigene Ziele wählen“ (Alter und Sprache stehen schon oben)
+        const p1 = await ctx.newPage()
+        await p1.goto(`${BASIS}/#passgenau&ziel=V-21&alter=7`)
+        await p1.getByRole('heading', { name: 'Was möchtest du üben?' }).waitFor({ timeout: LADEN_MS })
+        pruefe((await p1.locator('#pg-alter').inputValue()) === '7', 'Link vom Blatt (alter=7): Alter vorbelegt (pg.startAlter gilt weiter)')
+        await p1.close()
+        p0 = await ctx.newPage()
+        await p0.goto(`${BASIS}/#passgenau`)
+        await p0.getByRole('heading', { name: 'Was möchtest du üben?' }).waitFor({ timeout: LADEN_MS })
         await p0.locator('.pg-selbst > summary').click()
         await p0.locator('#pg-alter').selectOption('10')
         await p0.locator('.pg-chip', { hasText: 'V-21' }).click()
@@ -238,25 +296,34 @@ async function main() {
         await p0.locator('.pg-weg', { hasText: 'Schnell für heute' }).click()
         await p0.getByRole('button', { name: 'Stunde bauen' }).click()
         await p0.locator('.pg-schritt').first().waitFor()
-        pruefe(await p0.getByRole('button', { name: 'Als Datei speichern' }).isVisible(), 'ohne Hub: „Als Datei speichern“')
+        pruefe(await p0.getByRole('button', { name: 'Als Datei sichern' }).isVisible(), 'ohne Hub: „Als Datei sichern“')
+        pruefe((await p0.locator('.pg-streifen').count()) === 0, 'ohne Hub, frische Stunde: keine Zeile „noch nicht gesichert“')
+        pruefe((await p0.locator('.pg-ekopf .pg-btn.primaer').count()) === 1, 'Ergebnis: ein Hauptknopf oben')
+        pruefe(await p0.locator('.pg-ekopf').getByRole('button', { name: /^PDF öffnen/ }).isVisible() && (await p0.locator('.pg-ekopf').getByRole('button', { name: 'Baukasten' }).count()) === 0, 'Ergebnis: „PDF öffnen / drucken“, kein „Baukasten“ oben')
+        await p0.locator('.pg-ekopf').getByRole('button', { name: 'Mehr', exact: true }).click()
+        pruefe((await p0.locator('.pg-mehr-liste button').allInnerTexts()).join('|').includes('Vorschau|Blatt anpassen'), '„Mehr“: Vorschau und Blatt anpassen')
+        await p0.keyboard.press('Escape')
+        pruefe((await p0.locator('.pg-mehr-liste').count()) === 0, '„Mehr“ schließt mit Escape')
         await p0.close()
         // 1b. Hub antwortet nicht → nach 1,5 s ohne Kind
         await hub.goto(`${BASIS}/__hub.html?ref=pg-mia7f3k9q2m&modus=rahmen&stumm=1`)
         const fr = hub.frameLocator('iframe')
         const t0 = Date.now()
-        await fr.getByRole('heading', { name: 'Ohne Kind planen' }).waitFor({ timeout: 90000 })
+        await fr.getByRole('heading', { name: 'Was möchtest du üben?' }).waitFor({ timeout: LADEN_MS })
         pruefe(Date.now() - t0 >= 1400, 'stummer Hub: erst nach ~1,5 s ohne Kind')
       }
 
       // 2. Mia, aus dem Hub im eigenen Tab (window.opener)
       let tb = await oeffne('pg-mia7f3k9q2m')
-      await tb.getByRole('heading', { name: /Was machst du heute mit Mia/ }).waitFor({ timeout: 90000 })
+      await tb.getByRole('heading', { name: /Was machst du heute mit Mia/ }).waitFor({ timeout: LADEN_MS })
       pruefe((await ops()).slice(0, 2).join() === 'hallo,profil', 'hallo, dann profil')
       const halloArg = await hub.evaluate(() => window.__ops[0].arg)
       pruefe(halloArg && halloArg.toolbox && halloArg.toolbox.proto === 1, 'hallo mit Version der Toolbox')
       pruefe(await tb.getByText('Laufende Folge').isVisible(), 'Folgeband „Laufende Folge“')
       pruefe(await tb.getByText(/kommen aus einem Test/).isVisible(), 'Hinweis: Test-Ableitung bestätigen')
       await ueberlauf(tb, 'Start')
+      pruefe(!/Weg [123]/.test(await tb.locator('.pg-main').innerText()) && (await tb.locator('.pg-weg .pg-pill').count()) === 0, 'keine „Weg 1/2/3“- und Zeitpillen auf den Wegkarten')
+      pruefe((await tb.locator('.pg-unterreiter').innerText()).indexOf('Vorlieben') < 0, 'Reiter „Vorlieben“ nicht mehr in der Leiste (liegt unter „Einstellungen“)')
       await foto(tb, '01-start')
 
       // 3. Das weiß ich schon
@@ -298,12 +365,22 @@ async function main() {
       pruefe(await tb.locator('.pg-chip.an', { hasText: 'ohne Blatt' }).isVisible() && (await tb.getByText(/Schreiben kam bei Mia/).isVisible()), 'ohne Blatt vorgewählt, mit Grund')
       await tb.locator('.pg-chip', { hasText: 'mit Blatt' }).click()
       await ueberlauf(tb, 'Gründlich')
+      pruefe((await tb.locator('.pg-mehrein').count()) === 1 && !(await tb.locator('.pg-mehrein').evaluate((d) => d.open)), 'Gründlich: Fokus, Stil und „Wie ist das Kind heute?“ hinter „Mehr einstellen“ (zu)')
+      await tb.locator('.pg-mehrein > summary').click()
+      pruefe(await tb.getByRole('heading', { name: 'Worauf soll der Fokus liegen?' }).isVisible() && (await tb.getByRole('heading', { name: 'Wie soll es sich anfühlen?' }).isVisible()), '„Mehr einstellen“ zeigt Fokus und Stil mit den neuen Wörtern')
+      await tb.locator('.pg-mehrein > summary').click()
       await foto(tb, '03-gruendlich')
       const t1 = Date.now()
       await tb.getByRole('button', { name: 'Folge bauen' }).click()
       await tb.locator('.pg-schritt').first().waitFor()
-      pruefe(Date.now() - t1 < 3000, 'Folge in unter 3 s')
+      pruefe(Date.now() - t1 < 3000 * LAST, `Folge in unter 3 s (Lastfaktor ${LAST.toFixed(1)})`)
       pruefe((await tb.locator('.pg-fs').count()) === 6, '6 Sitzungen in der Folge-Leiste')
+      pruefe(await tb.locator('.pg-streifen', { hasText: 'Die Stunde ist noch nicht gesichert' }).isVisible(), 'mit CDSE-Hub: ruhige Zeile „Die Stunde ist noch nicht gesichert“')
+      pruefe(!(await tb.locator('.pg-banner.gelb', { hasText: 'Noch nicht gespeichert' }).count()), 'kein gelber Streifen „Noch nicht gespeichert“')
+      pruefe(!(await tb.locator('.pg-legende').innerText()).includes('Daumen'), 'Daumen-Erklärung nicht mehr unter der Folge-Leiste')
+      await mehrLeiste(tb, 'Hilfe')
+      pruefe(await dlg(tb).getByRole('heading', { name: 'Daumen hoch und runter' }).isVisible(), 'Hilfe erklärt die Daumen')
+      await dlg(tb).getByRole('button', { name: 'Schließen', exact: true }).last().click()
       pruefe((await tb.locator('.pg-pill', { hasText: 'Ritual' }).count()) >= 2, 'Rituale markiert')
       pruefe(!(await tb.locator('.pg-main').innerText()).match(/k:j\d|j1-e\d/), 'keine Kurs-Ids in der Oberfläche')
       await ueberlauf(tb, 'Ergebnis')
@@ -353,7 +430,7 @@ async function main() {
       const bl0t = await bl0.locator('.bt').innerText()
       await bl0.locator('.haupt').click()
       await dlg(tb).waitFor()
-      pruefe(await dlg(tb).getByRole('heading', { name: 'Baustein ersetzen' }).isVisible(), 'Dialog „Baustein ersetzen“')
+      pruefe(await dlg(tb).getByRole('heading', { name: 'Teil des Blatts ersetzen' }).isVisible(), 'Dialog „Teil des Blatts ersetzen“')
       const blAlt = dlg(tb).locator('.pg-alt:not(.jetzt) button', { hasText: 'Ersetzen' })
       if (await blAlt.count()) {
         await blAlt.first().click()
@@ -366,7 +443,7 @@ async function main() {
       }
 
       // 8. Vorschau: Plan und Blatt, Antippen ersetzt
-      await tb.locator('.pg-ekopf').getByRole('button', { name: 'Vorschau' }).click()
+      await mehr(tb, 'Vorschau')
       await tb.getByRole('heading', { name: 'Plan und Blatt' }).waitFor()
       await tb.waitForTimeout(600)
       pruefe(await tb.locator('.pg-sbar').first().isVisible(), 'Seitenkontrolle als Balken')
@@ -381,7 +458,7 @@ async function main() {
       const vorherT = await tb.locator('.pg-tippflaeche[aria-label^="Blatt:"]').first().getAttribute('aria-label')
       await tb.locator('.pg-tippflaeche[aria-label^="Blatt:"]').first().click()
       await dlg(tb).waitFor()
-      pruefe(await dlg(tb).getByRole('heading', { name: 'Baustein ersetzen' }).isVisible(), 'Antippen im PDF öffnet „Baustein ersetzen“')
+      pruefe(await dlg(tb).getByRole('heading', { name: 'Teil des Blatts ersetzen' }).isVisible(), 'Antippen im PDF öffnet „Teil des Blatts ersetzen“')
       await foto(tb, '11-ersetzen-in-vorschau', { voll: false })
       const e2 = dlg(tb).locator('.pg-alt:not(.jetzt) button', { hasText: 'Ersetzen' })
       if (await e2.count()) {
@@ -398,15 +475,15 @@ async function main() {
       await tb.getByRole('button', { name: 'Zurück' }).click()
 
       // 9. Baukasten
-      await tb.locator('.pg-ekopf').getByRole('button', { name: 'Baukasten' }).click()
-      await tb.getByRole('heading', { name: 'Bausteine kombinieren' }).waitFor()
+      await mehr(tb, 'Blatt anpassen')
+      await tb.getByRole('heading', { name: 'Teile des Blatts ändern' }).waitFor()
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
       const vorher = await tb.locator('.pg-ed-liste .pg-er').count()
-      if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Bausteine' }).click()
+      if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Teile' }).click()
       await tb.locator('.pg-ed-spalte .pg-chip', { hasText: 'alle Arten' }).click()
       await tb.locator('.pg-ed-spalte .pg-chip', { hasText: 'passt aufs Blatt' }).click()
       const plus = tb.locator('.pg-sk button[aria-label^="Einfügen"]').first()
-      pruefe(await plus.count() > 0, 'Suche liefert Bausteine')
+      pruefe(await plus.count() > 0, 'Suche liefert Teile')
       await plus.click()
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
       pruefe((await tb.locator('.pg-ed-liste .pg-er').count()) === vorher + 1, 'Baustein eingefügt')
@@ -434,23 +511,51 @@ async function main() {
       await ueberlauf(tb, 'Baukasten')
       await tb.getByRole('button', { name: 'Fertig' }).click()
 
-      // 10. PDF = gespeichert (P7)
+      // 10. PDF öffnen / drucken = gespeichert (P7); die PDF öffnet sich in einem neuen Tab, der Hinweis bleibt mit Knopf und Dateiname
       const anzahlSpeichern = (await ops()).filter((o) => o === 'speichern').length
-      const [download] = await Promise.all([tb.waitForEvent('download', { timeout: 60000 }), tb.locator('.pg-ekopf').getByRole('button', { name: 'PDF' }).click()])
-      pruefe(/^Passgenau-Sitzung-\d+\.pdf$/.test(download.suggestedFilename()), 'neutraler Dateiname: ' + download.suggestedFilename())
+      const popup = await pdfOeffnen(tb)
+      pruefe(!!popup, 'PDF öffnet sich in einem neuen Tab')
+      await popup.close().catch(() => {})
+      const fertig = tb.locator('.pg-toast', { hasText: 'Die PDF ist fertig' })
+      await fertig.waitFor({ timeout: 15000 })
+      pruefe(await fertig.getByRole('button', { name: 'PDF öffnen' }).isVisible(), 'Hinweis „Die PDF ist fertig.“ mit Knopf „PDF öffnen“')
+      pruefe(/Passgenau-Sitzung-\d+\.pdf/.test(await fertig.innerText()), 'Hinweis nennt den neutralen Dateinamen: ' + (await fertig.innerText()).replace(/\n/g, ' '))
+      pruefe(!(await tb.locator('.pg-toast', { hasText: 'wird erstellt' }).count()), 'kein „PDF wird erstellt …“ mehr')
+      pruefe((await tb.locator('.pg-streifen').count()) === 0, 'nach dem Drucken (gespeichert): die Zeile „noch nicht gesichert“ ist weg')
       await tb.waitForTimeout(500)
       pruefe((await ops()).filter((o) => o === 'speichern').length === anzahlSpeichern + 1, 'PDF speichert den Plan')
       const gespeichert = await hub.evaluate(() => window.__ops.filter((o) => o.op === 'speichern').pop().arg)
+      // Knopf im Hinweis öffnet sie noch einmal
+      const [popup2] = await Promise.all([tb.waitForEvent('popup', { timeout: 20000 }), tb.locator('.pg-toast').getByRole('button', { name: 'PDF öffnen' }).click()])
+      pruefe(!!popup2, 'Hinweis-Knopf „PDF öffnen“ öffnet die PDF erneut')
+      await popup2.close().catch(() => {})
+      // Popup-Sperre: dann bleibt es beim Download mit dem neutralen Dateinamen
+      await tb.evaluate(() => { window.__open = window.open; window.open = () => null })
+      const [download] = await Promise.all([tb.waitForEvent('download', { timeout: 60000 }), tb.locator('.pg-ekopf').getByRole('button', { name: /^PDF öffnen/ }).click()])
+      pruefe(/^Passgenau-Sitzung-\d+\.pdf$/.test(download.suggestedFilename()), 'Popup gesperrt: Download mit neutralem Dateinamen: ' + download.suggestedFilename())
+      await tb.evaluate(() => { window.open = window.__open })
+      await tb.waitForTimeout(500)
       pruefe(gespeichert.plan.sitzungen.some((x) => x.gedruckt), 'Sitzung trägt „gedruckt“')
       pruefe(Array.isArray(gespeichert.ereignisse) && gespeichert.ereignisse.length >= 2, 'Ereignisse gebündelt mitgeschickt')
       pruefe(gespeichert.ereignisse.every((e) => e.kind === null && e.fachkraft === null), 'Ereignisse ohne Kind-Pseudonym')
 
-      // 11. Nach der Stunde: nichts vorbelegt
+      // 11. Nach der Stunde: ein Klick auf die Antwort speichert, „Mehr angeben“ ist zugeklappt, nichts vorbelegt
       await tb.getByRole('button', { name: 'Stunde gehalten' }).click()
       await dlg(tb).waitFor()
-      pruefe(await dlg(tb).getByRole('button', { name: 'Notiz speichern' }).isDisabled(), 'ohne Ergebnis kein Speichern')
+      pruefe((await dlg(tb).getByRole('button', { name: 'Notiz speichern' }).count()) === 0, 'kein Knopf „Notiz speichern“ mehr: der Klick auf die Antwort speichert')
       pruefe((await dlg(tb).locator('[aria-pressed="true"]').count()) === 0, 'nichts vorbelegt')
+      pruefe((await dlg(tb).locator('.pg-mehrangabe').count()) === 1 && !(await dlg(tb).locator('.pg-mehrangabe').evaluate((d) => d.open)), '„Mehr angeben (freiwillig)“ ist zugeklappt')
+      pruefe(await dlg(tb).getByRole('button', { name: 'Schließen', exact: true }).last().isVisible(), '„Schließen“ statt „Später“')
+      // Rückgängig: solange die Frist läuft, wird nichts geschrieben
+      const vorUndo = (await ops()).filter((o) => o === 'rueckmeldung').length
       await dlg(tb).getByRole('button', { name: 'Hat geklappt' }).click()
+      pruefe(await dlg(tb).getByText('Gespeichert.').isVisible(), 'Ein Klick: „Gespeichert.“')
+      await dlg(tb).getByRole('button', { name: 'Rückgängig' }).click()
+      pruefe((await dlg(tb).locator('[aria-pressed="true"]').count()) === 0 && !(await dlg(tb).getByText('Gespeichert.').count()), 'Rückgängig nimmt die Antwort zurück')
+      await tb.waitForTimeout(7500)
+      pruefe(await dlg(tb).isVisible() && (await ops()).filter((o) => o === 'rueckmeldung').length === vorUndo, 'Rückgängig: nichts an den Hub geschrieben, der Dialog bleibt')
+      await dlg(tb).getByRole('button', { name: 'Hat geklappt' }).click()
+      await dlg(tb).locator('.pg-mehrangabe > summary').click()
       const notiz1 = await dlg(tb).locator('.pg-notizvorschau').innerText()
       pruefe(!/gelingt|mitgemacht/.test(notiz1), 'Notiz enthält nur Geklicktes')
       await dlg(tb).locator('.pg-zielreihe', { hasText: 'V-21' }).getByRole('button', { name: 'mit Hilfe' }).click()
@@ -458,7 +563,7 @@ async function main() {
       await dlg(tb).locator('.pg-zielreihe', { hasText: 'Daumen von Mia' }).getByRole('button', { name: 'hoch' }).click()
       pruefe((await dlg(tb).locator('.pg-notizvorschau').innerText()).includes('gelingt mit Unterstützung'), 'Ziel-Richtung in der Notiz')
       await foto(tb, '12-stunde-gehalten', { voll: false })
-      await dlg(tb).getByRole('button', { name: 'Notiz speichern' }).click()
+      await dlg(tb).getByRole('button', { name: 'Fertig' }).click()
       await tb.waitForTimeout(400)
       const rm = await hub.evaluate(() => window.__ops.filter((o) => o.op === 'rueckmeldung').pop())
       pruefe(rm && rm.arg.ergebnis === 'geklappt' && rm.arg.plan && rm.arg.kind && rm.arg.kind.daumen === 'hoch', 'Rückmeldung mit Plan und Stimme des Kindes')
@@ -469,7 +574,7 @@ async function main() {
       await tb.getByRole('button', { name: /Weiter mit Sitzung 3/ }).click()
       await tb.locator('.pg-schritt').first().waitFor()
       pruefe(await tb.getByRole('heading', { name: /Sitzung 3 von 6/ }).isVisible(), 'Weiter mit Sitzung 3 von 6')
-      await tb.locator('.pg-ekopf').getByRole('button', { name: 'Baukasten' }).click()
+      await mehr(tb, 'Blatt anpassen')
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
       // den ersten Blatt-Teil, dessen „Text ändern“ wirklich Felder öffnet (Kinder-Kernblätter haben auch Teile ohne Text)
       const kandidaten3 = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).filter({ has: tb.locator('button[aria-label^="Text ändern"]') })
@@ -488,7 +593,7 @@ async function main() {
       await versuche3()
       // das eigene Blatt der Übung hat keine freien Textfelder: einen Baustein einfügen und den bearbeiten
       if (!geaendert3) {
-        if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Bausteine' }).click()
+        if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Teile' }).click()
         const plus3 = tb.locator('.pg-sk button[aria-label^="Einfügen"]').first()
         if (!(await plus3.count())) await tb.locator('.pg-ed-spalte .pg-chip', { hasText: 'alle Arten' }).click()
         await plus3.click()
@@ -497,9 +602,13 @@ async function main() {
       }
       pruefe(geaendert3, 'Sitzung 3: ein Blatt-Teil mit änderbarem Text')
       await tb.getByRole('button', { name: 'Fertig' }).click()
+      const vorEinKlick = (await ops()).filter((o) => o === 'rueckmeldung').length
       await tb.getByRole('button', { name: 'Stunde gehalten' }).click()
       await dlg(tb).getByRole('button', { name: 'Hat geklappt' }).click()
-      await dlg(tb).getByRole('button', { name: 'Notiz speichern' }).click()
+      // ein Klick genügt: nach der kurzen Frist schreibt der Dialog von selbst und schließt
+      await dlg(tb).waitFor({ state: 'hidden', timeout: 15000 })
+      await tb.waitForTimeout(400)
+      pruefe((await ops()).filter((o) => o === 'rueckmeldung').length === vorEinKlick + 1, 'Ein Klick speichert: genau eine Rückmeldung an den Hub')
       const teilenKnopf = tb.locator('.pg-toast button', { hasText: 'Fürs Team teilen' })
       await teilenKnopf.waitFor({ timeout: 5000 }).catch(() => {})
       pruefe(await teilenKnopf.isVisible(), 'Angebot „Fürs Team teilen“ nach „hat geklappt“ (3 gehalten)')
@@ -544,10 +653,10 @@ async function main() {
       await tb.getByRole('button', { name: 'Stunde gehalten' }).click()
       pruefe(await dlg(tb).getByRole('button', { name: 'Hat sich beruhigt' }).isVisible(), 'Krisentag: eigene Ergebnis-Chips')
       pruefe(await dlg(tb).getByRole('button', { name: 'Hat nicht geklappt' }).count() === 0, 'Krisentag: kein „hat nicht geklappt“')
-      await dlg(tb).getByRole('button', { name: 'Später' }).click()
+      await dlg(tb).getByRole('button', { name: 'Schließen', exact: true }).last().click()
 
       // 14. Gelernt
-      await tb.locator('.pg-unterreiter button', { hasText: 'Vorlieben' }).click()
+      await mehrLeiste(tb, 'Vorlieben')
       await tb.getByRole('heading', { name: 'Was Passgenau bei dir merkt' }).waitFor()
       pruefe((await tb.locator('.pg-vbalken').count()) >= 3, 'Vorlieben des Kindes sichtbar')
       await tb.locator('.pg-seg button', { hasText: 'wenig' }).click()
@@ -576,9 +685,9 @@ async function main() {
       // Mia hat „Vorsicht“ gesetzt: die Texte der Autorin kommen nicht mit (E-M7) – das steht im Dialog
       pruefe(await dlg(tb).getByText(/Texte der Autorin (nicht übernommen|\(1\))/).first().isVisible(), 'Übernehmen: Texte der Autorin gezeigt bzw. bei Vorsicht gesperrt')
       await foto(tb, '16-uebernehmen', { voll: false })
-      await dlg(tb).getByRole('button', { name: 'Im Baukasten öffnen' }).click()
-      await tb.getByRole('heading', { name: 'Bausteine kombinieren' }).waitFor()
-      pruefe(true, 'Vorlage im Baukasten')
+      await dlg(tb).getByRole('button', { name: 'Zum Anpassen öffnen' }).click()
+      await tb.getByRole('heading', { name: 'Teile des Blatts ändern' }).waitFor()
+      pruefe(true, 'Vorlage in „Blatt anpassen“')
       await tb.locator('.pg-unterreiter button', { hasText: 'Aus der Praxis' }).click()
       await tb.locator('.pg-pr').first().locator('button[aria-label^="Melden"]').click()
       await dlg(tb).locator('.pg-chip', { hasText: 'fachlich falsch' }).click()
@@ -598,7 +707,7 @@ async function main() {
 
       // 16. Ilyas (14 J., heikles Thema, ohne Recht zur Rückmeldung) und Noé (5 J.)
       tb = await oeffne('pg-ily5q0w3', 'gruendlich')
-      await tb.getByRole('heading', { name: 'Eine Folge für Ilyas' }).waitFor({ timeout: 90000 })
+      await tb.getByRole('heading', { name: 'Eine Folge für Ilyas' }).waitFor({ timeout: LADEN_MS })
       await tb.getByRole('button', { name: 'Folge bauen' }).click()
       await tb.locator('.pg-schritt').first().waitFor()
       pruefe(await tb.getByText(/heikles Thema offen/).isVisible(), 'Banner bei heiklem Thema')
@@ -613,7 +722,7 @@ async function main() {
       console.log(`  (Ilyas: ${(await tb.getByText(/Eltern informiert/).count()) ? 'mit' : 'ohne'} Hinweis „Elternbrief“ in der Folge)`)
       await tb.close()
       tb = await oeffne('pg-noe2b8x1', 'schnell')
-      await tb.getByRole('heading', { name: 'Noé heute' }).waitFor({ timeout: 90000 })
+      await tb.getByRole('heading', { name: 'Noé heute' }).waitFor({ timeout: LADEN_MS })
       pruefe(await tb.locator('.pg-chip.an', { hasText: '15 Min.' }).isVisible(), 'Dauer 15 Min. vorbelegt (5 J.)')
       pruefe(await tb.locator('.pg-chip.an', { hasText: 'ohne Blatt' }).isVisible(), 'ohne Blatt vorbelegt (5 J.)')
       await tb.locator('.pg-chip', { hasText: '30 Min.' }).click()
@@ -624,7 +733,7 @@ async function main() {
       await tb.close()
       // dünne Daten: „Worum soll es heute gehen?“
       tb = await oeffne('pg-anouk01', 'schnell')
-      await tb.getByRole('heading', { name: 'Worum soll es heute gehen?' }).waitFor({ timeout: 90000 })
+      await tb.getByRole('heading', { name: 'Worum soll es heute gehen?' }).waitFor({ timeout: LADEN_MS })
       // erste Stunde, wenig bekannt: „Kennenlernen“ ist vorgewählt, bauen geht sofort
       pruefe(await tb.locator('.pg-chip.an', { hasText: 'Kennenlernen' }).isVisible() && await tb.getByRole('button', { name: 'Stunde bauen' }).isEnabled(), 'dünne Daten: Kennenlernen vorgewählt')
       await tb.locator('.pg-chip', { hasText: 'Gefühle ausdrücken' }).click()
@@ -635,7 +744,7 @@ async function main() {
 
       // 16a. Vorschläge aus dem Steckbrief: Hinweis über den Wegen, Karte in „Das weiß ich schon“, „Alle übernehmen“ → Kurs
       tb = await oeffne('pg-jonas16', 'gruendlich')
-      await tb.getByRole('heading', { name: 'Eine Folge für Jonas' }).waitFor({ timeout: 90000 })
+      await tb.getByRole('heading', { name: 'Eine Folge für Jonas' }).waitFor({ timeout: LADEN_MS })
       pruefe(await tb.getByText(/Vorschläge aus dem Steckbrief/).first().isVisible(), 'Steckbrief: Hinweis „Vorschläge prüfen“ über dem Weg')
       await tb.getByRole('button', { name: 'Vorschläge prüfen' }).click()
       await tb.getByRole('heading', { name: 'Das weiß ich schon' }).waitFor()
@@ -659,26 +768,26 @@ async function main() {
 
       // 16b. Gruppe (Aufgabe 151): zwei refs, ein Plan, gespeichert bei beiden, Blatt je Kind
       tb = await oeffne('pg-mia7f3k9q2m,pg-anouk01', 'schnell')
-      await tb.getByRole('heading', { name: /Mia und Anouk heute/ }).waitFor({ timeout: 90000 })
+      await tb.getByRole('heading', { name: /Mia und Anouk heute/ }).waitFor({ timeout: LADEN_MS })
       pruefe((await ops()).filter((o) => o === 'profil').length >= 2, 'Gruppe: Profil je Kind geholt')
       if (await tb.getByRole('button', { name: 'Stunde bauen' }).isDisabled()) await tb.locator('.pg-chip', { hasText: 'Gefühle ausdrücken' }).click()
       await tb.getByRole('button', { name: 'Stunde bauen' }).click()
       await tb.locator('.pg-schritt').first().waitFor()
       await foto(tb, '20-gruppe-ergebnis')
       const vorG = (await hub.evaluate(() => window.__ops.length))
-      const [dlG] = await Promise.all([tb.waitForEvent('download', { timeout: 60000 }), tb.locator('.pg-ekopf').getByRole('button', { name: 'PDF' }).click()])
+      const popG = await pdfOeffnen(tb)
+      await popG.close().catch(() => {})
       await tb.waitForTimeout(800)
       const spG = await hub.evaluate((n) => window.__ops.slice(n).filter((o) => o.op === 'speichern').map((o) => ({ ref: o.arg.ref, rev: o.arg.plan.rev, sf: o.arg.plan.auftrag && o.arg.plan.auftrag.sozialform })), vorG)
       pruefe(spG.length === 2 && new Set(spG.map((x) => x.ref)).size === 2, 'Gruppe: PDF speichert bei beiden Kindern ' + JSON.stringify(spG))
       pruefe(spG.every((x) => x.rev === undefined && x.sf === 'zu-zweit'), 'Gruppe: ohne Änderungszähler, Sozialform zu zweit')
       pruefe(!(await hub.evaluate((n) => window.__ops.slice(n).some((o) => o.op === 'vorlieben'), vorG)), 'Gruppe: keine Korrekturen/Vorlieben ans Kind')
-      console.log('  (Gruppe: ' + dlG.suggestedFilename() + ')')
       await tb.close()
 
       // 17. Rahmen-Modus (window.parent)
       if (breite > 500) {
         await hub.goto(`${BASIS}/__hub.html?ref=pg-mia7f3k9q2m&modus=rahmen`)
-        await hub.frameLocator('iframe').getByRole('heading', { name: /Was machst du heute mit Mia/ }).waitFor({ timeout: 90000 })
+        await hub.frameLocator('iframe').getByRole('heading', { name: /Was machst du heute mit Mia/ }).waitFor({ timeout: LADEN_MS })
         pruefe(true, 'im Rahmen mit dem Hub verbunden')
       }
       await ctx.close()

@@ -467,7 +467,7 @@ export function Teilen() {
             Platzhalter bleiben: <span className="pg-ph">{'{NAME}'}</span> · <span className="pg-ph">{'{INTERESSE}'}</span> · <span className="pg-ph">{'{WOCHENZIEL}'}</span>
           </li>
           <li className="pg-leise">
-            weggelassen: <span className="pg-gestrichen">Begründungen</span>, <span className="pg-gestrichen">Rückmeldungen und Notizen</span>, <span className="pg-gestrichen">Daten und Tagesform</span>, <span className="pg-gestrichen">Vorname und Profil</span>
+            weggelassen: <span className="pg-gestrichen">Begründungen</span>, <span className="pg-gestrichen">Rückmeldungen und Notizen</span>, <span className="pg-gestrichen">Daten und Tagesangaben</span>, <span className="pg-gestrichen">Vorname und Profil</span>
           </li>
         </ul>
       </div>
@@ -580,7 +580,7 @@ export function Uebernehmen({ vorlage }: { vorlage: PraxisVorlage }) {
           </button>
           <button type="button" className="pg-btn primaer" onClick={oeffnen}>
             <Ic n="stift" />
-            Im Baukasten öffnen
+            Zum Anpassen öffnen
           </button>
         </>
       }
@@ -619,7 +619,7 @@ export function Uebernehmen({ vorlage }: { vorlage: PraxisVorlage }) {
           ))}
         </div>
       )}
-      <p className="pg-leise pg-klein pg-m0">Alles bleibt im Baukasten änderbar. Gespeichert wird ein eigener Plan mit Verweis auf die Vorlage (Version {vorlage.version}).</p>
+      <p className="pg-leise pg-klein pg-m0">Alles bleibt änderbar. Gespeichert wird ein eigener Plan mit Verweis auf die Vorlage (Version {vorlage.version}).</p>
     </PgDialog>
   )
 }

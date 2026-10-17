@@ -6,7 +6,7 @@ import * as K from './kern'
 import * as hub from './hub'
 import { laden as vorliebenLaden, sichern as vorliebenSichern, type FachkraftVorlieben, alsVorlage } from './vorlieben'
 import { schalterLesen, SCHALTER_VORGABE, type Schalter } from './erweitert'
-import { altersbandFest, blobSpeichern, dateiname, istBlattSchritt, tagsVon, textDatei, uhrzeit } from './anzeige'
+import { altersbandFest, dateiname, istBlattSchritt, pdfOeffnen, tagsVon, textDatei, uhrzeit } from './anzeige'
 import { LAYOUT_FUER_STUFE, heuteIso, kindWort } from './texte'
 import { aktuellerNutzer } from '../../lib/nutzer'
 
@@ -51,12 +51,15 @@ export type Dialog =
   | { art: 'melden'; vorlage: PraxisVorlage }
   | { art: 'kuratieren'; vorlage: PraxisVorlage }
   | { art: 'heikel' }
+  | { art: 'hilfe' }
 
 export interface Hinweis {
   id: number
   text: string
   art?: 'ok' | 'info' | 'warn'
   knopf?: { label: string; aktion: () => void }
+  /** kleine Zeile unter dem Text (z. B. der Dateiname) */
+  klein?: string
 }
 
 type ProfilRoh = hub.ProfilVomHub
@@ -163,7 +166,7 @@ function useWert<T>(v: T) {
 
 let hinweisId = 1
 
-function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolean) {
+function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolean, hilfeFinden?: () => void) {
   const [status, setStatus] = useState<'warten' | 'verbinden' | 'bereit' | 'abgeschaltet'>('warten')
   const [hallo, setHallo] = useState<hub.Hallo | null>(null)
   const [version, setVersion] = useState<{ ok: boolean; speichern: boolean; hinweis: string | null }>({ ok: true, speichern: true, hinweis: null })
@@ -222,9 +225,9 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
   const druckRef = useWert(druck)
   const [daumenStand, setDaumenStand] = useState<Record<string, 'hoch' | 'runter'>>({})
 
-  const hinweisZeigen = useCallback((text: string, art: Hinweis['art'] = 'ok', knopf?: Hinweis['knopf'], ms = 4500) => {
+  const hinweisZeigen = useCallback((text: string, art: Hinweis['art'] = 'ok', knopf?: Hinweis['knopf'], ms = 4500, klein?: string) => {
     const id = hinweisId++
-    setHinweisZustand({ id, text, art, knopf })
+    setHinweisZustand({ id, text, art, knopf, klein })
     window.setTimeout(() => setHinweisZustand((h) => (h?.id === id ? null : h)), knopf ? Math.max(ms, 10000) : ms)
   }, [])
 
@@ -562,7 +565,19 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       hinweisZeigen('PDF wird erstellt …', 'info')
       try {
         const blob = nr === 'folge' ? await K.pdfFolge(r.katalog, r.profil, plan, opt) : await K.pdfSitzung(r.katalog, r.profil, plan, nr, opt)
-        blobSpeichern(blob, dateiname(plan, nr === 'folge' ? undefined : nr))
+        const name = dateiname(plan, nr === 'folge' ? undefined : nr)
+        // Die PDF öffnet sich in einem neuen Tab (dort ist „Drucken“ ein Klick); sperrt der Browser das, wird sie heruntergeladen wie bisher.
+        // Der Hinweis bleibt stehen und sagt, was passiert ist – mit Knopf zum erneuten Öffnen.
+        const pdf = pdfOeffnen(blob, name)
+        const fertig = (wo?: string) =>
+          hinweisZeigen(
+            pdf.geoeffnet ? 'Die PDF ist fertig.' : 'Die PDF ist fertig – der Browser hat sie heruntergeladen.',
+            'ok',
+            { label: 'PDF öffnen', aktion: () => void pdf.nochmal() },
+            12000,
+            wo ? `${name} · ${wo}` : name,
+          )
+        fertig()
         const jetzt = new Date().toISOString().slice(0, 16)
         const neu: Plan = {
           ...plan,
@@ -571,8 +586,9 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
         }
         setPlanZustand(neu)
         melde('gedruckt', { sitzung: nr === 'folge' ? null : nr, wert: 0 })
-        // P7: gedruckt ist gespeichert
-        await planSichern(neu, 'druck')
+        // P7: gedruckt ist gespeichert – die Meldung dazu steht im Hinweis zur PDF (kein zweiter Hinweis, der ihn überschreibt)
+        const gruppe = (r.profil.gruppe?.length ?? 0) > 1
+        if (await planSichern(neu, 'druck', true)) fertig(!refs.current.darfSpeichern && refs.current.darfTresor ? 'in deiner persönlichen Ablage gesichert (nur du siehst sie)' : gruppe ? 'bei jedem Kind der Gruppe gespeichert' : 'beim Kind gespeichert')
       } catch (e) {
         hinweisZeigen('PDF nicht möglich: ' + (e instanceof Error ? e.message : String(e)), 'warn')
       }
@@ -585,7 +601,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
     if (!r.plan) return
     const v = alsVorlage(r.plan, r.plan.titel)
     setVor((x) => ({ ...x, ich: { ...x.ich, eigeneVorlagen: [v, ...(x.ich.eigeneVorlagen ?? [])].slice(0, 30) } }))
-    hinweisZeigen(`Als eigene Vorlage gesichert: „${r.plan.titel}“ (nur für dich, ohne Kind).`)
+    hinweisZeigen(`Als eigene Vorlage gesichert: „${r.plan.titel}“ (nur für dich).`)
   }, [hinweisZeigen, refs])
 
   // --- Speicherstand, Entwurf, Verlauf ----------------------------------------------------------------------------
@@ -700,15 +716,15 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
     // Praxis
     praxis, setPraxis, praxisLaden,
     // Hilfen
-    istBlattSchritt, tagsVon,
+    istBlattSchritt, tagsVon, hilfeFinden,
   }
 }
 
 export type Pg = ReturnType<typeof usePassgenauZustand>
 const Kontext = createContext<Pg | null>(null)
 
-export function PgAnbieter({ startHash, aktiv, children }: { startHash: hub.PassgenauStart | null; aktiv: boolean; children: ReactNode }) {
-  const pg = usePassgenauZustand(startHash, aktiv)
+export function PgAnbieter({ startHash, aktiv, onHilfeFinden, children }: { startHash: hub.PassgenauStart | null; aktiv: boolean; onHilfeFinden?: () => void; children: ReactNode }) {
+  const pg = usePassgenauZustand(startHash, aktiv, onHilfeFinden)
   return <Kontext.Provider value={pg}>{children}</Kontext.Provider>
 }
 

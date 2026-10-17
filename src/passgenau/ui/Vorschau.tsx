@@ -319,11 +319,11 @@ export function Seitenkontrolle({ plan, nr }: { plan: Plan; nr: number }) {
       })}
       {zuViel ? (
         <Pill art="bad" icon="info">
-          zu lang: höchstens {max} {max === 1 ? 'Seite' : 'Seiten'} – Linien kürzen oder einen kleineren Baustein tauschen
+          zu lang: höchstens {max} {max === 1 ? 'Seite' : 'Seiten'} – Linien kürzen oder einen kleineren Teil tauschen
         </Pill>
       ) : fuell.length > 1 && fuell[fuell.length - 1] < 0.35 ? (
         <Pill art="warn" icon="info">
-          letzte Seite fast leer – noch ein Baustein?
+          letzte Seite fast leer – noch ein Teil?
         </Pill>
       ) : (
         <Pill art="ok" icon="check">
@@ -551,7 +551,8 @@ export function Vorschau() {
           </div>
           <button type="button" className="pg-btn primaer" onClick={() => pg.pdfErzeugen(s.nr)}>
             <Ic n="drucken" />
-            PDF drucken
+            <span className="nur-gross">PDF öffnen / drucken</span>
+            <span className="nur-klein">PDF öffnen</span>
           </button>
         </div>
       </section>

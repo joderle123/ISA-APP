@@ -16,10 +16,12 @@ export function stufeAlter(s: string): string {
   return s === 'ES' ? `ab ${von} J.` : `${von}–${bis} J.`
 }
 
-/** „C3 · 8–9 J.“ – für Filter, Tooltips und Auswahl */
+/** Stufe in Worten für Filter und Auswahl: „3–5 J. (Spielschule)“, „6–7 J.“, „8–9 J.“, „10–11 J.“, „Jugendliche ab 12 J.“.
+ *  Das Kürzel (C1 … ES) sagt nur Eingeweihten etwas und steht darum nur im Tooltip (title). */
 export function stufeMitAlter(s: string): string {
   const a = stufeAlter(s)
-  return a ? `${s} · ${a}` : s
+  if (!a) return s
+  return s === 'ES' ? `Jugendliche ${a}` : s === 'C1' ? `${a} (Spielschule)` : a
 }
 
 /** Alter einer Stufenliste als ein Band: [C3, C4] → „8–11 J.“, [C4, ES] → „ab 10 J.“ */

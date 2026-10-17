@@ -69,7 +69,7 @@ const klasseToAge = (k: number): AgeLevel =>
   k <= 0 ? 'C1' : k <= 2 ? 'C2' : k <= 4 ? 'C3' : k <= 6 ? 'C4' : 'ES'
 
 const STOP = new Set(
-  'ich habe einen eine der die das den dem und oder aber mit für fuer auf in im an am zu zur zum von vom bei ist sind war wird man wir ihr sie du es als wie wenn dann auch nur noch schon sehr ganz alle alles mein meine meinen schüler schülerin schueler schuelerin schülern kind kinder klasse klassen jahre jahr alt arbeiten will möchte moechte suche brauche etwas passendes passende material materialien thema themen gruppe gruppen gerne eher lieber viel gut sich sein seine ihre einer eines diese dieser jeder jede jungen mädchen maedchen ganze ganzen ganzer neue neuer neues neuen schuljahr schulstufe kleingruppe kleingruppen gruppenarbeit einzelarbeit sozialform plenum arbeitsblatt arbeitsblätter arbeitsblaetter aktivität aktivitaet stunde stunden projekt projekte üben ueben'.split(
+  'ich habe einen eine der die das den dem und oder aber mit für fuer auf in im an am zu zur zum von vom bei ist sind war wird man wir ihr sie du es als wie wenn dann auch nur noch schon sehr ganz alle alles mein meine meinen schüler schülerin schueler schuelerin schülern kind kinder klasse klassen jahre jahr alt zyklus cyclus cycle arbeiten will möchte moechte suche brauche etwas passendes passende material materialien thema themen gruppe gruppen gerne eher lieber viel gut sich sein seine ihre einer eines diese dieser jeder jede jungen mädchen maedchen ganze ganzen ganzer neue neuer neues neuen schuljahr schulstufe kleingruppe kleingruppen gruppenarbeit einzelarbeit sozialform plenum arbeitsblatt arbeitsblätter arbeitsblaetter aktivität aktivitaet stunde stunden projekt projekte üben ueben'.split(
     /\s+/,
   ),
 )
@@ -79,6 +79,8 @@ function detectAges(t: string): AgeLevel[] {
   for (const m of t.matchAll(/\bc\s?-?([1-4])\b/g)) set.add(AGE_MAP['c' + m[1]])
   if (/\bes\b|sekundar|secondaire|lyc(é|e)e|gymnasium|oberstufe|teenager|jugendlich/.test(t)) set.add('ES')
   if (/pr(é|e)coce|spillschoul|kindergarten|vorschul|kita/.test(t)) set.add('C1')
+  // „Zyklus 3“, „Cycle 3“, „Cyclus 3“, „Zyklus-3“ – die Stufen C1 bis C4 der Luxemburger Grundschule
+  for (const m of t.matchAll(/\b(?:zyklus|cyclus|cycle)\s?-?([1-4])\b/g)) set.add(AGE_MAP['c' + m[1]])
   for (const m of t.matchAll(/(\d{1,2})\s*(?:\.|-)?\s*(?:klasse|schuljahr|schulstufe)/g)) set.add(klasseToAge(+m[1]))
   for (const m of t.matchAll(/(\d{1,2})\s*(?:-|bis)\s*(\d{1,2})\s*(?:jahre|j\b)/g)) {
     set.add(yearsToAge(+m[1])); set.add(yearsToAge(+m[2]))

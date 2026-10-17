@@ -1,4 +1,4 @@
-// Passgenau – Baukasten-Editor (7): Bausteine suchen · Sitzung/Blatt bearbeiten · Vorschau (am Handy drei Reiter).
+// Passgenau – Baukasten-Editor (7), in der Oberfläche „Blatt anpassen“: Teile suchen · Sitzung/Blatt bearbeiten · Vorschau (am Handy drei Reiter).
 // Text ändern nur in den Feldern aus `textfelder` (mit Längengrenze), sortieren, löschen mit Rückgängig, Platzhalter.
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import type { BlattTeil, KatalogEintrag, Plan, Rolle } from '../typen'
@@ -132,7 +132,7 @@ export function Baukasten() {
     pg.planAendern((pl) => teilAendern(pl, nr, (l) => l.filter((_, j) => j !== i)))
     setOffen(-1)
     if (e) pg.melde('geloescht', { sitzung: nr, baustein: e.id, h: e.h, tags: pg.tagsVon(e), wert: -0.5 }, e)
-    pg.hinweisZeigen(`Gelöscht: „${e ? K.textVon(e, p.sprache.blatt).titel : t.t}“${abhaengig.length ? ` – ${abhaengig.length} Baustein bezieht sich darauf` : ''}.`, 'ok', { label: 'Rückgängig', aktion: () => pg.setPlan(vorher) }, 10000)
+    pg.hinweisZeigen(`Gelöscht: „${e ? K.textVon(e, p.sprache.blatt).titel : t.t}“${abhaengig.length ? ` – ${abhaengig.length} ${abhaengig.length === 1 ? 'Teil bezieht' : 'Teile beziehen'} sich darauf` : ''}.`, 'ok', { label: 'Rückgängig', aktion: () => pg.setPlan(vorher) }, 10000)
   }
   const textSetzen = (i: number, pfad: string, wert: string) => {
     pg.planAendern(
@@ -188,8 +188,8 @@ export function Baukasten() {
     <>
       <section className="pg-kopf">
         <div>
-          <div className="pg-eyebrow">Baukasten · {plan.n > 1 ? `Sitzung ${nr} von ${plan.n}` : plan.titel}</div>
-          <h1>Bausteine kombinieren</h1>
+          <div className="pg-eyebrow">Blatt anpassen · {plan.n > 1 ? `Sitzung ${nr} von ${plan.n}` : plan.titel}</div>
+          <h1>Teile des Blatts ändern</h1>
           <p className="pg-lead">Aus verschiedenen Blättern zusammenstellen, Texte ändern, sortieren, tauschen. Du hast das letzte Wort.</p>
         </div>
         <div className="pg-btnrow">
@@ -214,7 +214,7 @@ export function Baukasten() {
       <div className="pg-tabs pg-mtabs" role="tablist" aria-label="Spalte">
         {(
           [
-            ['suche', 'Bausteine'],
+            ['suche', 'Teile'],
             ['bearbeiten', tab === 'blatt' ? 'Blatt' : 'Ablauf'],
             ['vorschau', 'Vorschau'],
           ] as [MTab, string][]
@@ -227,7 +227,7 @@ export function Baukasten() {
       <div className="pg-edgrid">
         <div className={'pg-ed-spalte' + (mtab === 'suche' ? ' mzeigen' : '')}>
           <div className="pg-card pg-suchkarte">
-            <h2>Bausteine suchen</h2>
+            <h2>Teile suchen</h2>
             {einfuegenBei !== null && (
               <div className="pg-hinweisbox klein">
                 <Ic n="plus" />
@@ -366,7 +366,7 @@ export function Baukasten() {
               })}
               {!treffer.length && (
                 <p className="pg-leise">
-                  {gesucht.text?.trim() ? `Nichts gefunden für „${gesucht.text.trim()}“ – weniger Wörter versuchen oder Filter lockern.` : 'Keine passenden Bausteine – Filter lockern.'}{' '}
+                  {gesucht.text?.trim() ? `Nichts gefunden für „${gesucht.text.trim()}“ – weniger Wörter versuchen oder Filter lockern.` : 'Keine passenden Teile – Filter lockern.'}{' '}
                   {zusatzFilter > 0 && (
                     <button type="button" className="pg-link" onClick={zusatzZurueck}>
                       Thema, Dauer … zurücksetzen
@@ -398,7 +398,7 @@ export function Baukasten() {
                   </div>
                 </div>
                 <div className="pg-ed-liste">
-                  {teile.length === 0 && <p className="pg-leise">Noch keine Bausteine – links suchen und mit „+“ einfügen.</p>}
+                  {teile.length === 0 && <p className="pg-leise">Noch keine Teile – links suchen und mit „+“ einfügen.</p>}
                   {teile.map((t, i) => {
                     const e = K.eintrag(k, t.ref)
                     const tx = teilText(k, t.ref, p.sprache.blatt, t.t)
@@ -441,7 +441,7 @@ export function Baukasten() {
                           </div>
                           {istOffen && e?.typ === 'baustein' && (
                             <div className="felder">
-                              {e.textfelder.length === 0 && <p className="pg-leise pg-klein">Dieser Baustein hat keine änderbaren Texte.</p>}
+                              {e.textfelder.length === 0 && <p className="pg-leise pg-klein">Dieser Teil hat keine änderbaren Texte.</p>}
                               {e.textfelder.map((f) => {
                                 const wert = t.ueber?.[f.pfad] ?? wertAnPfad(orig, f.pfad) ?? ''
                                 const id = `pg-tf-${i}-${f.pfad}`
@@ -485,7 +485,7 @@ export function Baukasten() {
                                   Original wiederherstellen
                                 </button>
                               )}
-                              {e.braucht?.length ? <small className="pg-leise">Bezieht sich auf einen anderen Baustein (z. B. eine Geschichte) – beim Verschieben zusammen lassen.</small> : null}
+                              {e.braucht?.length ? <small className="pg-leise">Bezieht sich auf einen anderen Teil (z. B. eine Geschichte) – beim Verschieben zusammen lassen.</small> : null}
                             </div>
                           )}
                         </div>
@@ -515,7 +515,7 @@ export function Baukasten() {
                                 <RolleBadge rolle={blatt ? 'blatt' : x.rolle} />
                               </span>
                               <b>{titel}</b>
-                              <small>{blatt ? 'aus Bausteinen' : e ? K.textVon(e, p.sprache.blatt).quelle : ''}</small>
+                              <small>{blatt ? 'aus Teilen' : e ? K.textVon(e, p.sprache.blatt).quelle : ''}</small>
                             </span>
                             <span className="knoepfe">
                               <button type="button" className="pg-ibtn" onClick={() => minuten(i, -1)} aria-label={`eine Minute weniger: ${titel}`}>
@@ -559,7 +559,7 @@ export function Baukasten() {
             <BlattAnsicht plan={deferredPlan} nr={nr} breite={breite} onTeil={(i) => { setTab('blatt'); setOffen(i); setMtab('bearbeiten') }} markiert={offen} />
           ) : (
             <div className="pg-card">
-              <p className="pg-leise">Noch kein Blatt. Links Bausteine suchen und mit „+“ einfügen{p.ziele[0] ? ` – zum Beispiel zu ${p.ziele[0].code} ${zielKurz(p.ziele[0].code)}` : ''}.</p>
+              <p className="pg-leise">Noch kein Blatt. Links Teile suchen und mit „+“ einfügen{p.ziele[0] ? ` – zum Beispiel zu ${p.ziele[0].code} ${zielKurz(p.ziele[0].code)}` : ''}.</p>
             </div>
           )}
           <p className="pg-leise pg-klein">Vorschau: {ROLLE_NAME.blatt} · Seiten wie im Druck {kleineStufe ? '(höchstens 1 Seite)' : '(höchstens 2 Seiten)'}</p>

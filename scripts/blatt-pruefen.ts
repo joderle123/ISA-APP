@@ -39,7 +39,7 @@ let fehler = 0
 let hinweise = 0
 const ids = new Map<string, string>()
 
-const SYMBOLE = ['malen', 'schreiben', 'lesen', 'schneiden', 'kleben', 'ankreuzen', 'einkreisen', 'verbinden', 'sprechen', 'zuhoeren', 'nachdenken', 'zeigen', 'partner', 'gruppe']
+const SYMBOLE = ['malen', 'schreiben', 'lesen', 'schneiden', 'kleben', 'ankreuzen', 'einkreisen', 'verbinden', 'sprechen', 'zuhoeren', 'nachdenken', 'zeigen', 'partner', 'gruppe', 'bewegen', 'atmen']
 const FARBWOERTER: string[] = ALLE_FARBEN
 
 /** Neue Gestaltungs-Optionen (Design-Umbau 16.10.2026): Typ und Wertebereich prüfen. */

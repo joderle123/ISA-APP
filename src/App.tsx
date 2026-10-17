@@ -130,6 +130,8 @@ export default function App() {
   // Willkommensleiste: nur beim ersten Besuch ohne Link (der Hub öffnet immer mit Hash)
   const [willkommen, setWillkommen] = useState(() => !window.location.hash.replace(/^#\/?/, '') && !willkommenGelesen())
   const [menue, setMenue] = useState(false)
+  // „Hilfe finden“ (Einheiten) von überall aus öffnen: ein neuer Zählerstand öffnet den Dialog dort
+  const [finderNr, setFinderNr] = useState(0)
   const bew = useBewertungen()
 
   // Seiten erst beim ersten Besuch bauen (die Blätter-Liste allein sind sonst ~20.000 Knoten im Baum)
@@ -210,6 +212,11 @@ export default function App() {
     [seite],
   )
 
+  const hilfeFinden = useCallback(() => {
+    setFinderNr((n) => n + 1)
+    wechseln('einheiten')
+  }, [wechseln])
+
   const zuBlaettern = useCallback((codes: string[]) => {
     setBlattFilter({ ...leererBlattFilter, eldib: codes })
     setStartBlatt(null)
@@ -240,9 +247,9 @@ export default function App() {
   const kurs = kursFrei()
   const reiter: { id: ReiterId; name: string; zusatz?: string; icon: IconName; n?: number }[] = [
     { id: 'passgenau', name: 'Stunde planen', zusatz: 'Passgenau', icon: 'compass' },
-    { id: 'bibliothek', name: 'Bibliothek', icon: 'book' },
-    ...(kurs ? [{ id: 'kurs' as const, name: 'Skills-Kurs', icon: 'stairs' as const }] : []),
-    { id: 'team', name: 'Team-Material', icon: 'folder', n: teamMaterial.length },
+    { id: 'bibliothek', name: 'Blätter', icon: 'book' },
+    ...(kurs ? [{ id: 'kurs' as const, name: 'Kurs', icon: 'stairs' as const }] : []),
+    { id: 'team', name: 'Team', icon: 'folder', n: teamMaterial.length },
   ]
   const aktivReiter: ReiterId = seite === 'blaetter' || seite === 'einheiten' ? 'bibliothek' : seite
   const waehle = (id: ReiterId) => wechseln(id === 'bibliothek' ? letzteBib.current : id)
@@ -328,10 +335,7 @@ export default function App() {
                     <Icon name="compass" />
                   </span>
                   <span className="min-w-0">
-                    <b>
-                      <span className="nur-gross">Stunde für ein Kind planen</span>
-                      <span className="nur-klein">Stunde planen</span>
-                    </b>
+                    <b>Stunde planen</b>
                     <small>Passgenau stellt dir aus Alter und Zielen eine fertige Stunde zusammen – als PDF zum Ausdrucken.</small>
                   </span>
                 </button>
@@ -344,7 +348,7 @@ export default function App() {
                       <span className="nur-gross">Arbeitsblatt suchen</span>
                       <span className="nur-klein">Blatt suchen</span>
                     </b>
-                    <small>{alleBlaetter.length} Blätter von der Spielschule bis zur Sekundarschule, jedes mit Seite für die Lehrperson.</small>
+                    <small>{alleBlaetter.length} Blätter von der Spielschule bis zur Sekundarschule, jedes mit Seite für Erwachsene.</small>
                   </span>
                 </button>
                 {kurs ? (
@@ -364,8 +368,8 @@ export default function App() {
                     </span>
                     <span className="min-w-0">
                       <b>
-                        <span className="nur-gross">Einheiten ansehen</span>
-                        <span className="nur-klein">Einheiten</span>
+                        <span className="nur-gross">Aktivitäten ansehen</span>
+                        <span className="nur-klein">Aktivitäten</span>
                       </b>
                       <small>Aktivitäten und Kursstunden aus der CDSE-Sammlung, nach Alter und Thema sortiert.</small>
                     </span>
@@ -384,17 +388,18 @@ export default function App() {
                 <span className="n">{alleBlaetter.length}</span>
               </button>
               <button type="button" aria-current={seite === 'einheiten' ? 'page' : undefined} onClick={() => wechseln('einheiten')}>
-                Einheiten
+                <span className="nur-gross">Aktivitäten &amp; Kursstunden</span>
+                <span className="nur-klein">Aktivitäten</span>
               </button>
             </nav>
           </div>
         ) : null}
 
-        {besucht.current.has('blaetter') && <Blaetter aktiv={seite === 'blaetter'} bew={bew} startFilter={blattFilter} startBlatt={startBlatt} onEinheitenZuEldib={zuEinheiten} />}
+        {besucht.current.has('blaetter') && <Blaetter aktiv={seite === 'blaetter'} bew={bew} startFilter={blattFilter} startBlatt={startBlatt} onEinheitenZuEldib={zuEinheiten} onHilfeFinden={hilfeFinden} />}
         {kurs && besucht.current.has('kurs') && <Kurs aktiv={seite === 'kurs'} bew={bew} />}
-        {besucht.current.has('einheiten') && <Einheiten aktiv={seite === 'einheiten'} bew={bew} teamMaterials={teamMaterial} onBlaetterZuEldib={zuBlaettern} />}
+        {besucht.current.has('einheiten') && <Einheiten aktiv={seite === 'einheiten'} bew={bew} teamMaterials={teamMaterial} onBlaetterZuEldib={zuBlaettern} finderNr={finderNr} />}
         {besucht.current.has('team') && <Team aktiv={seite === 'team'} material={teamMaterial} bew={bew} />}
-        {besucht.current.has('passgenau') && <Passgenau aktiv={seite === 'passgenau'} start={pgStart} />}
+        {besucht.current.has('passgenau') && <Passgenau aktiv={seite === 'passgenau'} start={pgStart} onHilfeFinden={hilfeFinden} />}
       </div>
 
       {/* Handy: feste Tableiste unten (in Passgenau ausgeblendet, siehe Menü oben) */}

@@ -64,7 +64,7 @@ export function StarRating({ value, onChange, size = 16, readOnly = false, label
             e.stopPropagation()
             onChange?.(value === n ? 0 : n)
           }}
-          className="grid min-h-6 min-w-6 place-items-center rounded-md p-[3px] transition-transform hover:scale-110"
+          className="grid min-h-10 min-w-10 place-items-center rounded-[var(--r-sm)] p-[3px] transition-transform hover:scale-110"
         >
           <Star filled={n <= shown} size={size} />
         </button>

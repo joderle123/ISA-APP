@@ -235,6 +235,8 @@ const SYMBOL_ICON: Record<Symbol, string> = {
   zeigen: 'icon:hand-finger',
   partner: 'icon:users',
   gruppe: 'icon:users-group',
+  bewegen: 'icon:run',
+  atmen: 'icon:wind',
 }
 
 const EIGENE_SYMBOLE: Record<string, Zeichnung> = {

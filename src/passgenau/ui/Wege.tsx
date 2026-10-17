@@ -88,7 +88,7 @@ function WorumKarte({ thema, setThema, kennenlernen, setKennenlernen, erstes }: 
       <p className="pg-leise pg-klein">
         {erstes
           ? 'Über das Kind ist noch wenig bekannt – darum ist eine erste Stunde zum Kennenlernen vorgewählt: was es mag, was es gut kann, was hilft. Mehr Wissen bringt die Auswertung der Unterlagen im CDSE-Hub (Steckbrief). Oder wähle ein oder zwei Schwerpunkte.'
-          : `${ohneKind ? 'Du hast kein Ziel gewählt.' : 'Noch keine Förderziele im Dossier.'} Wähle ein oder zwei Schwerpunkte – oder plane eine erste Stunde zum Kennenlernen.`}
+          : `${ohneKind ? 'Du hast kein Ziel gewählt.' : 'Noch keine Förderziele im Dossier.'} Wähle ein oder zwei Themen – oder plane eine erste Stunde zum Kennenlernen.`}
       </p>
       <div className="pg-chips pg-mt">
         {KOMPETENZEN.map((k) => (
@@ -106,7 +106,7 @@ function WorumKarte({ thema, setThema, kennenlernen, setKennenlernen, erstes }: 
       </div>
       <div className="pg-chips pg-mt">
         <Chip an={kennenlernen} onClick={() => { setKennenlernen(!kennenlernen); setThema([]) }}>
-          Ohne Schwerpunkt (erste Stunde zum Kennenlernen)
+          Erste Stunde zum Kennenlernen
         </Chip>
       </div>
     </div>
@@ -188,7 +188,7 @@ export function Gruendlich() {
     <>
       <section className="pg-kopf">
         <div>
-          <div className="pg-eyebrow">Weg 1 · Gründlich planen</div>
+          <div className="pg-eyebrow">Gründlich planen</div>
           <h1>{pg.ohneKind ? 'Eine Folge planen' : `Eine Folge für ${k.akk}`}</h1>
           <p className="pg-lead">Alles ist vorausgefüllt – meistens reicht „Folge bauen“. Jede Sitzung baut auf der vorigen auf.</p>
         </div>
@@ -255,41 +255,46 @@ export function Gruendlich() {
             </div>
             <SozialformWahl />
           </div>
-          <div className="pg-fblock">
-            <h3>
-              <span className="nr">3</span>Schwerpunkt
-            </h3>
-            <p className="pg-leise pg-klein">Aus den Zielen abgeleitet{ziele[0] ? ` (${ziele[0]} → ${schwerpunktAus(ziele).map((s) => SCHWERPUNKTE.find((x) => x[0] === s)?.[1]).join(' und ')})` : ''}.</p>
-            <div className="pg-chips">
-              {SCHWERPUNKTE.map(([s, t]) => (
-                <Chip key={s} an={schwerpunkt.includes(s)} onClick={() => setSchwerpunkt((l) => toggle(l, s))}>
-                  {t}
-                </Chip>
-              ))}
+          {/* Die Vorgaben stimmen meistens: Fokus, Stil und „Wie ist das Kind heute?“ liegen hinter „Mehr einstellen“ (Standard bleibt) */}
+          <details className="pg-selbst pg-mehrein">
+            <summary>
+              <span>
+                <b>Mehr einstellen</b>
+                <small>Fokus, Stil der Stunde und wie das Kind heute ist – meistens passt die Vorgabe</small>
+              </span>
+            </summary>
+            <div className="pg-fblock">
+              <h3>Worauf soll der Fokus liegen?</h3>
+              <p className="pg-leise pg-klein">Aus den Zielen abgeleitet{ziele[0] ? ` (${ziele[0]} → ${schwerpunktAus(ziele).map((s) => SCHWERPUNKTE.find((x) => x[0] === s)?.[1]).join(' und ')})` : ''}.</p>
+              <div className="pg-chips">
+                {SCHWERPUNKTE.map(([s, t]) => (
+                  <Chip key={s} an={schwerpunkt.includes(s)} onClick={() => setSchwerpunkt((l) => toggle(l, s))}>
+                    {t}
+                  </Chip>
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="pg-fblock">
-            <h3>
-              <span className="nr">4</span>Formate-Mix
-            </h3>
-            <p className="pg-leise pg-klein">{pg.ohneKind ? 'Was du gern mischen möchtest – Passgenau schlägt es vor, du entscheidest.' : `Vorausgewählt aus dem, was bei ${k.dat} klappt.`}</p>
-            <div className="pg-chips">
-              {FORMAT_WUNSCH.map(([f, t]) => (
-                <Chip key={f} an={formate.includes(f)} onClick={() => setFormate((l) => toggle(l, f))}>
-                  {t}
-                </Chip>
-              ))}
+            <div className="pg-fblock">
+              <h3>Wie soll es sich anfühlen?</h3>
+              <p className="pg-leise pg-klein">{pg.ohneKind ? 'Was du gern mischen möchtest – Passgenau schlägt es vor, du entscheidest.' : `Vorausgewählt aus dem, was bei ${k.dat} klappt.`}</p>
+              <div className="pg-chips">
+                {FORMAT_WUNSCH.map(([f, t]) => (
+                  <Chip key={f} an={formate.includes(f)} onClick={() => setFormate((l) => toggle(l, f))}>
+                    {t}
+                  </Chip>
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="pg-fblock">
-            <h3>
-              <span className="nr">5</span>Heute <span className="pg-leise pg-klein">(optional, für Sitzung 1)</span>
-            </h3>
-            <Chip an={heuteAn} onClick={() => setHeuteAn(!heuteAn)}>
-              Tagesform für Sitzung 1 einstellen
-            </Chip>
-            {heuteAn && <ReglerBlock heute={heute} setHeute={setHeute} kind={k} />}
-          </div>
+            <div className="pg-fblock">
+              <h3>
+                Wie ist das Kind heute? <span className="pg-leise pg-klein">(freiwillig, für Sitzung 1)</span>
+              </h3>
+              <Chip an={heuteAn} onClick={() => setHeuteAn(!heuteAn)}>
+                Für Sitzung 1 angeben
+              </Chip>
+              {heuteAn && <ReglerBlock heute={heute} setHeute={setHeute} kind={k} />}
+            </div>
+          </details>
         </div>
         <div className="pg-card pg-sticky">
           <h2>So wird die Folge</h2>
@@ -303,7 +308,7 @@ export function Gruendlich() {
             ))}
           </div>
           <dl className="pg-dl">
-            <dt>{duenn ? 'Schwerpunkt' : 'Ziele'}</dt>
+            <dt>{duenn ? 'Thema' : 'Ziele'}</dt>
             <dd>{duenn ? (kennenlernen ? 'Kennenlernen' : thema.map((t) => t.replace('kompetenz:', '')).map((t) => THEMA_NAME[t] ?? t).join(', ') || <span className="pg-leise">bitte eins wählen</span>) : ziele.length ? ziele.join(', ') : <span className="pg-leise">bitte eins wählen</span>}</dd>
             <dt>Umfang</dt>
             <dd>
@@ -322,7 +327,7 @@ export function Gruendlich() {
             <Ic n="liste" />
             Folge bauen
           </button>
-          <p className="pg-leise pg-klein pg-mt">Ohne KI, im Browser gerechnet – gleiche Angaben, gleicher Plan. Du kannst danach jeden Teil tauschen.</p>
+          <p className="pg-leise pg-klein pg-mt">Du kannst danach jeden Teil tauschen.</p>
         </div>
       </div>
     </>
@@ -364,7 +369,8 @@ function Regler({ k, titel, frage, links, rechts, wert, onWert }: { k: string; t
   )
 }
 
-/** „Wie ist der Tag heute?“ – die Voreinstellungen sind der Hauptweg (ein Tipp), die drei Regler sind das Feineinstellen. */
+/** „Wie ist das Kind heute?“ – die Voreinstellungen sind der Hauptweg (ein Tipp), die drei Regler (Energie, Konzentration, Stimmung)
+ *  liegen unter „Genauer einstellen“. */
 const VOR: { key: string; name: string; text: string; h: Heute }[] = [
   { key: 'normal', name: 'Alles normal', text: 'ein ganz gewöhnlicher Tag', h: { energie: 4, konzentration: 4, stimmung: 4 } },
   { key: 'muede', name: 'Müde', text: 'wenig Energie, kurze Ausdauer', h: { energie: 3, konzentration: 3, stimmung: 3 } },
@@ -378,7 +384,7 @@ function ReglerBlock({ heute, setHeute, kind }: { heute: Heute; setHeute: (h: He
   const [feinOffen, setFeinOffen] = useState(() => !VOR.some((x) => gleich(x.h)))
   return (
     <div className="pg-reglerblock">
-      <div className="pg-vorwahl" role="group" aria-label="Wie ist der Tag heute?">
+      <div className="pg-vorwahl" role="group" aria-label="Wie ist das Kind heute?">
         {VOR.map((x) => (
           <button key={x.key} type="button" className={gleich(x.h) ? 'an' : ''} aria-pressed={gleich(x.h)} onClick={() => setHeute(x.h)}>
             <b>{x.name}</b>
@@ -387,7 +393,7 @@ function ReglerBlock({ heute, setHeute, kind }: { heute: Heute; setHeute: (h: He
         ))}
       </div>
       <details className="pg-fein-regler" open={feinOffen} onToggle={(e) => setFeinOffen(e.currentTarget.open)}>
-        <summary>Feineinstellen: Energie, Konzentration, Stimmung</summary>
+        <summary>Genauer einstellen</summary>
         {REGLER.map(([k, titel, frage, l, r]) => (
           <Regler key={k} k={k} titel={titel} frage={frage.replace('{nom}', kind.nom).replace('{dat}', kind.dat)} links={l} rechts={r} wert={heute[k]} onWert={(n) => setHeute({ ...heute, [k]: n })} />
         ))}
@@ -420,9 +426,9 @@ export function Schnell() {
     )
   return (
     <div className="pg-mitte">
-      <div className="pg-eyebrow">Weg 2 · Schnell für heute</div>
-      <h1>{pg.ohneKind ? 'Wie ist der Tag heute?' : `${k.nom} heute`}</h1>
-      <p className="pg-lead pg-mb">{pg.ohneKind ? 'Tipp auf die Tagesform – der Rest kommt aus deiner Auswahl.' : 'Tipp auf die Tagesform – der Rest kommt aus dem Dossier.'}</p>
+      <div className="pg-eyebrow">Schnell für heute</div>
+      <h1>{pg.ohneKind ? 'Wie ist das Kind heute?' : `${k.nom} heute`}</h1>
+      <p className="pg-lead pg-mb">{pg.ohneKind ? 'Tippe an, wie es heute ist – der Rest kommt aus deiner Auswahl.' : 'Tippe an, wie es heute ist – der Rest kommt aus dem Dossier.'}</p>
       <VersionsBanner />
       <WissenZeile />
       {duenn && (
@@ -494,7 +500,7 @@ export function Leicht() {
     pg.planBauen({ weg: 'leicht', ziele: [], n: 1, dauer, sozialform: 'einzeln', tagesform: tf[0], tagesformen: tf, sprache: p.sprache.blatt, datum: heuteIso() })
   return (
     <div className="pg-mitte">
-      <div className="pg-eyebrow">Weg 3 · Heute geht nicht viel</div>
+      <div className="pg-eyebrow">Heute geht nicht viel</div>
       <h1>Wie ist {k.nom} heute?</h1>
       <p className="pg-lead pg-mb">
         Leichte Stunde ohne Förderziel: Spiel, Bewegung, Kreatives, Beziehung. Gewählt wird erst in der Stunde – nichts wird abgefragt. Bis zu zwei Angaben.
@@ -502,7 +508,7 @@ export function Leicht() {
       <HeikelBanner />
       <WissenZeile />
       <div className="pg-card">
-        <div className="pg-tfgrid" role="group" aria-label="Tagesform, bis zu zwei">
+        <div className="pg-tfgrid" role="group" aria-label="Wie ist das Kind heute? Bis zu zwei Angaben">
           {alle.map(([k, name, icon]) => (
             <button key={k} type="button" className={'pg-tf' + (tf.includes(k) ? ' an' : '')} aria-pressed={tf.includes(k)} onClick={() => waehle(k)}>
               <Ic n={icon} />

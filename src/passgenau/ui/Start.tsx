@@ -1,4 +1,4 @@
-// Passgenau – Start (2.1), laufende Folge, „gedruckt, ohne Rückmeldung“ (P7) und „Ohne Kind planen“.
+// Passgenau – Start (2.1), laufende Folge, „gedruckt, ohne Rückmeldung“ (P7) und der Einstieg „Stunde planen“ (ohne Hub).
 import { useEffect, useMemo, useState } from 'react'
 import type { Auftrag, Plan, PraxisVorlage, Sprache } from '../typen'
 import * as K from './kern'
@@ -10,15 +10,11 @@ import { useRueckmeldung } from './Nachher'
 import { dauerVorgabe } from './Wege'
 import { quoteText } from './Praxis'
 
-function Weg({ titel, zeit, farbe, icon, text, punkte, onClick }: { titel: string; zeit: string; farbe: [string, string]; icon: Zeichen; text: string; punkte: string[]; onClick: () => void }) {
+function Weg({ titel, farbe, icon, text, punkte, onClick }: { titel: string; farbe: [string, string]; icon: Zeichen; text: string; punkte: string[]; onClick: () => void }) {
   return (
     <button type="button" className="pg-weg" onClick={onClick}>
       <span className="wicon" style={{ background: farbe[0], color: farbe[1] }}>
         <Ic n={icon} />
-      </span>
-      <span className="pg-pill zeit">
-        <Ic n="uhr" />
-        {zeit}
       </span>
       <h3>{titel}</h3>
       <p>{text}</p>
@@ -81,17 +77,17 @@ export function Start() {
       <section className="pg-kopf">
         <div>
           {/* Ohne Kind gibt es kein Dossier und kein „Kind“, von dem die Rede sein könnte: neutral schreiben */}
-          <div className="pg-eyebrow">{ohne ? 'Passgenau · ohne Kind' : 'Passgenau · aus dem Dossier geöffnet'}</div>
+          <div className="pg-eyebrow">{ohne ? 'Stunde planen' : 'Passgenau · aus dem Dossier geöffnet'}</div>
           <h1>{ohne ? 'Was machst du heute?' : `Was machst du heute mit ${k.dat}?`}</h1>
           <p className="pg-lead">
             {ohne
-              ? 'Du planst ohne Kind. Alter, Sprache und Ziele hast du gewählt – such dir einen der drei Wege aus.'
+              ? 'Alter, Sprache und Ziele stehen. Such dir einen der drei Wege aus.'
               : `Der CDSE-Hub kennt ${k.akk} schon – Alter, Sprachen, Förderziele, Notizen und frühere Stunden sind vorausgefüllt. Du klickst nur noch an, was stimmt.`}
           </p>
         </div>
         <button type="button" className="pg-btn" onClick={() => pg.setAnsicht(ohne ? 'ohnekind' : 'wissen')}>
           <Ic n={ohne ? 'stift' : 'person'} />
-          {ohne ? 'Auswahl ändern' : 'Das weiß ich schon'}
+          {ohne ? 'Alter oder Ziele ändern' : 'Das weiß ich schon'}
         </button>
       </section>
       <VersionsBanner />
@@ -181,9 +177,9 @@ export function Start() {
         </div>
       )}
       <div className="pg-wege">
-        <Weg titel="Gründlich planen" zeit="< 3 Min." farbe={['#ECEEFA', '#2E3A9C']} icon="liste" text="Ziele, Anzahl Sitzungen, Dauer und Schwerpunkt – eine aufbauende Folge mit Blättern." punkte={['Bogen: wahrnehmen → üben → übertragen', 'gleiche Rituale, wechselnde Inhalte', 'jede Sitzung mit eigenem Blatt']} onClick={() => pg.setAnsicht('gruendlich')} />
-        <Weg titel="Schnell für heute" zeit="< 30 Sek." farbe={['#FDF3E7', '#9A4F0B']} icon="blitz" text="Drei Regler für heute, ein Klick – fertige Stunde mit Blatt." punkte={['Energie, Konzentration, Stimmung', f ? 'nächster Schritt der laufenden Folge' : 'wichtigstes Ziel zuerst', 'sofort als PDF']} onClick={() => pg.setAnsicht('schnell')} />
-        <Weg titel="Heute geht nicht viel" zeit="leicht" farbe={['#EAF2E7', '#3F6E3A']} icon="herz" text="Spiele, Bewegung, Kreatives, Beziehung – bewusst ohne Förderziel." punkte={[`ein Klick: Wie ist ${k.nom} heute?`, 'Wahlkarte statt Befragung', 'Mitmach-Seite zum Drucken']} onClick={() => pg.setAnsicht('leicht')} />
+        <Weg titel="Gründlich planen" farbe={['#ECEEFA', '#2E3A9C']} icon="liste" text="Ziele, Anzahl Sitzungen und Dauer – eine aufbauende Folge mit Blättern." punkte={['Bogen: wahrnehmen → üben → übertragen', 'gleiche Rituale, wechselnde Inhalte', 'jede Sitzung mit eigenem Blatt']} onClick={() => pg.setAnsicht('gruendlich')} />
+        <Weg titel="Schnell für heute" farbe={['#FDF3E7', '#9A4F0B']} icon="blitz" text="Drei Regler für heute, ein Klick – fertige Stunde mit Blatt." punkte={['Energie, Konzentration, Stimmung', f ? 'nächster Schritt der laufenden Folge' : 'wichtigstes Ziel zuerst', 'sofort als PDF']} onClick={() => pg.setAnsicht('schnell')} />
+        <Weg titel="Heute geht nicht viel" farbe={['#EAF2E7', '#3F6E3A']} icon="herz" text="Spiele, Bewegung, Kreatives, Beziehung – bewusst ohne Förderziel." punkte={[`ein Klick: Wie ist ${k.nom} heute?`, 'Wahlkarte statt Befragung', 'Mitmach-Seite zum Drucken']} onClick={() => pg.setAnsicht('leicht')} />
       </div>
       <div className={'pg-zwei' + (zweiteKarte ? '' : ' eine')}>
         <div className="pg-card">
@@ -200,7 +196,7 @@ export function Start() {
           <hr className="pg-fein" />
           <button type="button" className="pg-btn klein" onClick={() => pg.setAnsicht(ohne ? 'ohnekind' : 'wissen')}>
             <Ic n="stift" />
-            {ohne ? 'Auswahl ändern' : 'Ansehen und korrigieren'}
+            {ohne ? 'Alter oder Ziele ändern' : 'Ansehen und korrigieren'}
           </button>
         </div>
         {/* Die Karte „Eigene Vorlagen“ gibt es nur, wenn schon eine da ist – eine leere Karte sagt nichts */}
@@ -356,28 +352,30 @@ const REZEPTE: { titel: string; text: string; alter: number; ziele: string[]; so
   { titel: 'Aufhören, wenn es Zeit ist', text: 'Ein Spiel oder eine Aufgabe beenden können, ohne Ärger.', alter: 7, ziele: ['V-15', 'V-10'], sozialform: 'einzeln', weg: 'schnell' },
 ]
 
-/** Ohne Hub: Profil per Chips (Alter, Sprache, Ziele) – gespeichert wird nur als Datei bzw. eigene Vorlage */
+/** Ohne Hub: Anliegen antippen, Alter und Sprache darüber, eigene Ziele zugeklappt darunter – gespeichert wird nur als Datei
+ *  bzw. eigene Vorlage */
 export function OhneKind() {
   const pg = usePg()
-  // Wer vom Plan hierher zurückkommt, findet seine Auswahl wieder
+  // Wer vom Plan hierher zurückkommt, findet seine Auswahl wieder; vom Blatt aus (Brücke) ist das Alter vorbelegt (pg.startAlter)
   const bisher = pg.ohneKind ? pg.roh : null
-  const [alter, setAlter] = useState(bisher?.alterJahre ?? pg.startAlter ?? 9)
+  // null = nichts gewählt: dann gilt bei einem Anliegen sein eigenes Alter
+  const [alter, setAlter] = useState<number | null>(bisher?.alterJahre ?? pg.startAlter ?? null)
   const [sprache, setSprache] = useState<Sprache>(bisher?.sprache.blatt ?? 'de')
   const [ziele, setZiele] = useState<string[]>(() => (bisher ? bisher.ziele.map((z) => z.code).slice(0, 3) : pg.startZiel ? [pg.startZiel] : []))
-  const [selbst, setSelbst] = useState(!!bisher || !!pg.startZiel || pg.startAlter != null)
+  const [selbst, setSelbst] = useState(!!bisher || !!pg.startZiel)
   // vom Blatt aus (Brücke, Aufgabe 154): dessen Ziel steht vorn, auch wenn es nicht zu den üblichen gehört
   const alle = pg.startZiel && !ZIELE_OHNE_KIND.includes(pg.startZiel) ? [pg.startZiel, ...ZIELE_OHNE_KIND] : ZIELE_OHNE_KIND
   const gruppen = zielGruppen(alle)
   const satz = (c: string) => (pg.katalog ? K.zielSatz(pg.katalog, { ziele: [] }, c, 'de') : undefined)
   const los = () => {
-    const p = K.ohneKindProfil({ alterJahre: alter, sprache, ziele })
+    const p = K.ohneKindProfil({ alterJahre: alter ?? 9, sprache, ziele })
     pg.setRoh({ ...p, vorname: undefined })
     pg.setOhneKind(true)
     pg.setAnsicht('start')
   }
   // Schnellstart (Aufgabe 154): ein Klick – Profil, Sozialform und Weg stehen, Dauer und Blatt wählt man danach
   const schnellstart = (r: (typeof REZEPTE)[number]) => {
-    const p = K.ohneKindProfil({ alterJahre: r.alter, sprache, ziele: r.ziele })
+    const p = K.ohneKindProfil({ alterJahre: alter ?? r.alter, sprache, ziele: r.ziele })
     pg.setRoh({ ...p, vorname: undefined })
     pg.setOhneKind(true)
     pg.setSozialform(r.sozialform)
@@ -385,59 +383,62 @@ export function OhneKind() {
   }
   return (
     <div className="pg-mitte breit">
-      <div className="pg-eyebrow">Passgenau · ohne Kind</div>
-      <h1>Ohne Kind planen</h1>
-      <p className="pg-lead">
-        Wähle ein typisches Anliegen – oder stelle Alter, Sprache und Ziele selbst ein. Du planst für ein Kind, zu zweit oder eine Kleingruppe. Ohne CDSE-Hub wird nichts beim Kind gespeichert, nur als Datei oder eigene Vorlage.
-      </p>
+      <div className="pg-eyebrow">Stunde planen</div>
+      <h1>Was möchtest du üben?</h1>
+      <p className="pg-lead">Tippe auf ein Anliegen. Alter und Sprache stellst du gleich darunter ein.</p>
       {pg.fehler && (
         <div className="pg-banner warn">
           <Ic n="info" />
           <div>Das Profil kam nicht an: {pg.fehler}</div>
         </div>
       )}
+      <div className="pg-angaben">
+        <label className="pg-angabe" htmlFor="pg-alter">
+          Wie alt ist das Kind?
+        </label>
+        <select id="pg-alter" className="pg-select" value={alter ?? ''} onChange={(e) => setAlter(e.target.value === '' ? null : +e.target.value)}>
+          <option value="">Alter wählen</option>
+          {Array.from({ length: 14 }, (_, i) => i + 3).map((a) => (
+            <option key={a} value={a}>
+              {a === 16 ? '16 Jahre und älter' : `${a} Jahre`}
+            </option>
+          ))}
+        </select>
+        <Seg label="Sprache des Blatts" wert={sprache} optionen={[['de', 'Deutsch'], ['fr', 'Français']]} onWahl={setSprache} />
+      </div>
       <h2 className="pg-abschnitt">Typische Anliegen</h2>
       <div className="pg-anliegen-raster">
         {REZEPTE.map((r) => (
-          <button key={r.titel} type="button" className="pg-anliegen" onClick={() => schnellstart(r)}>
+          <button key={r.titel} type="button" className="pg-anliegen" onClick={() => schnellstart(r)} title={'Förderziele: ' + r.ziele.map((c) => `${c} ${zielKurz(c)}`.trim()).join(' · ')}>
             <b>{r.titel}</b>
             <span>{r.text}</span>
             <small>
-              {r.alter} J. · {SOZIALFORM_NAME[r.sozialform]} · {r.ziele.join(' · ')}
+              {alter != null ? `${alter} J.` : `ab ${r.alter} J.`} · {SOZIALFORM_NAME[r.sozialform]}
             </small>
           </button>
         ))}
       </div>
+      {pg.hilfeFinden && (
+        <p className="pg-hilfelink">
+          Lieber beschreiben, worum es geht?{' '}
+          <button type="button" className="pg-link" onClick={pg.hilfeFinden}>
+            <Ic n="lupe" />
+            Hilfe finden
+            <Ic n="pfeil" />
+          </button>
+        </p>
+      )}
       <details className="pg-selbst" open={selbst} onToggle={(e) => setSelbst(e.currentTarget.open)}>
         <summary>
           <span>
-            <b>Selbst wählen</b>
-            <small>Alter, Sprache und Ziele einstellen</small>
+            <b>Eigene Ziele wählen</b>
+            <small>Förderziele selbst auswählen</small>
           </span>
         </summary>
         <div className="pg-card">
           <div className="pg-fblock">
             <h3>
-              <span className="nr">1</span>
-              <label htmlFor="pg-alter">Alter</label>
-            </h3>
-            <select id="pg-alter" className="pg-select" value={alter} onChange={(e) => setAlter(+e.target.value)}>
-              {Array.from({ length: 14 }, (_, i) => i + 3).map((a) => (
-                <option key={a} value={a}>
-                  {a === 16 ? '16 Jahre und älter' : `${a} Jahre`}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className="pg-fblock">
-            <h3>
-              <span className="nr">2</span>Sprache des Blatts
-            </h3>
-            <Seg label="Sprache" wert={sprache} optionen={[['de', 'Deutsch'], ['fr', 'Français']]} onWahl={setSprache} />
-          </div>
-          <div className="pg-fblock">
-            <h3>
-              <span className="nr">3</span>Ziele <span className="pg-leise pg-klein">(bis zu drei – die Reihenfolge deiner Wahl ist die Priorität)</span>
+              Förderziele <span className="pg-leise pg-klein">(bis zu drei – die Reihenfolge deiner Wahl ist die Priorität)</span>
             </h3>
             {gruppen.map((g) => (
               <div key={g.id} className="pg-zielgruppe" style={{ ['--bereich' as string]: g.farbe }}>
@@ -470,6 +471,7 @@ export function OhneKind() {
               <p className="pg-leise pg-klein pg-zielhinweis">Ohne Ziel fragt dich Passgenau beim Planen: „Worum soll es heute gehen?“</p>
             )}
           </div>
+          {alter == null && <p className="pg-leise pg-klein">Ohne Altersangabe planen wir für 9 Jahre. Das Alter stellst du oben ein.</p>}
           <button type="button" className="pg-btn primaer gross breit" onClick={los}>
             <Ic n="pfeil" />
             Weiter

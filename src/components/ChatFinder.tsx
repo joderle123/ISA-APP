@@ -39,7 +39,7 @@ const EXAMPLES = [
 ]
 
 const GREETING =
-  'Beschreib mir in eigenen Worten die Situation – zum Beispiel Alter oder Klasse, Thema, ob Einzeln, Gruppe oder Klasse, Interessen und ob du ein Arbeitsblatt brauchst. Ich suche die passendsten Materialien heraus und sortiere sie nach Passung.'
+  'Beschreib mir in eigenen Worten die Situation – zum Beispiel Alter oder Klasse, Thema, ob Einzeln, Gruppe oder Klasse, Interessen und ob du ein Arbeitsblatt brauchst. Ich suche die passendsten Aktivitäten und Kursstunden heraus und sortiere sie nach Passung.'
 
 function MatchBar({ percent }: { percent: number }) {
   return (
@@ -169,13 +169,13 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
     <Dialog onClose={onClose} labelledBy={titleId} className="dlg-mid sm:h-[min(820px,calc(100dvh-48px))]">
       <header className="dlg-head items-center">
         <div className="grid h-10 w-10 shrink-0 place-items-center rounded-[var(--r-md)] bg-accent-soft text-accent">
-          <Icon name="compass" className="ic h-5 w-5" />
+          <Icon name="finder" className="ic h-5 w-5" />
         </div>
         <div className="min-w-0 flex-1">
           <h2 id={titleId} className="disp text-lg leading-tight">
-            Material-Finder
+            Hilfe finden
           </h2>
-          <p className="text-sm text-muted max-sm:hidden">Situation beschreiben – passende Materialien finden und vergleichen</p>
+          <p className="text-sm text-muted max-sm:hidden">Situation beschreiben – passende Aktivitäten und Kursstunden finden</p>
         </div>
         {hasAnySignal(signals) && (
           <button type="button" onClick={reset} className="btn btn-sm btn-quiet">

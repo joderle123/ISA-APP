@@ -50,7 +50,7 @@ export function Alternativen({ ort }: { ort: Ort }) {
           <div className="zeile1">
             {!a && <Pill>jetzt</Pill>}
             {istBlatt ? <Pill>{tx.text}</Pill> : schritt && <RolleBadge rolle={schritt.rolle} />}
-            <span className="pg-quelle">{istBlatt ? `aus „${tx.quelle}“` : tx.quelle}</span>
+            {istBlatt && <span className="pg-quelle">{`aus „${tx.quelle}“`}</span>}
             {nurDe && <Pill art="warn">nur DE</Pill>}
             {a?.kurs === 'gleich' && <Pill>gleiche Kurs-Sitzung, andere Variante</Pill>}
             {a?.kurs === 'tausch' && <Pill>gleiche Kurs-Sitzung, andere Übung – Blatt und roter Faden bleiben</Pill>}
@@ -91,7 +91,7 @@ export function Alternativen({ ort }: { ort: Ort }) {
 
   return (
     <PgDialog
-      titel={istBlatt ? 'Baustein ersetzen' : 'Gleichwertige Alternativen'}
+      titel={istBlatt ? 'Teil des Blatts ersetzen' : 'Anderer Vorschlag für diesen Schritt'}
       unter={
         istBlatt
           ? `Gleiche Stelle im Blatt „${blattRef?.titel ?? ''}“, gleiches Ziel oder Thema, passt aufs Blatt.`
@@ -101,7 +101,7 @@ export function Alternativen({ ort }: { ort: Ort }) {
       breit
       fuss={
         <>
-          <span className="links">{istBlatt ? 'Bausteine aus verschiedenen Blättern – kombinierbar' : 'Sortiert nach Passung, verschiedene Formate zuerst'}</span>
+          <span className="links">{istBlatt ? 'Teile aus verschiedenen Blättern – kombinierbar' : 'Sortiert nach Passung, verschiedene Formate zuerst'}</span>
           {!mehr && alle.length > 3 && (
             <button type="button" className="pg-btn" onClick={() => setMehr(true)}>
               Weitere zeigen ({Math.min(5, alle.length) - 3})
@@ -114,7 +114,7 @@ export function Alternativen({ ort }: { ort: Ort }) {
       }
     >
       {jetzt ? karte(jetzt) : <p className="pg-leise">Dieser Teil ist nicht mehr im Katalog: {schritt?.t ?? teil?.t}</p>}
-      {zeigen.length ? zeigen.map((a) => karte(a.eintrag, a)) : <p className="pg-leise">Keine gleichwertige Alternative im Katalog. Im Baukasten kannst du frei suchen.</p>}
+      {zeigen.length ? zeigen.map((a) => karte(a.eintrag, a)) : <p className="pg-leise">Keinen anderen Vorschlag gefunden. Mit „Blatt anpassen“ kannst du frei suchen.</p>}
     </PgDialog>
   )
 }

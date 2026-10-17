@@ -79,6 +79,26 @@ export function blobSpeichern(blob: Blob, name: string): void {
   window.setTimeout(() => URL.revokeObjectURL(url), 30000)
 }
 
+/** PDF in einem neuen Tab öffnen – dort ist „Drucken“ ein Klick. Sperrt der Browser das Fenster (Popup-Sperre), wird die Datei
+ *  wie bisher heruntergeladen. `geoeffnet` sagt, was passiert ist; `nochmal` öffnet (oder lädt) erneut, z. B. per Knopf im Hinweis.
+ *  Die Adresse der Datei lebt 15 Minuten, damit das erneute Öffnen geht. */
+export function pdfOeffnen(blob: Blob, name: string): { geoeffnet: boolean; nochmal: () => boolean } {
+  const url = URL.createObjectURL(blob)
+  window.setTimeout(() => URL.revokeObjectURL(url), 15 * 60 * 1000)
+  const auf = (): boolean => {
+    let fenster: Window | null = null
+    try {
+      fenster = window.open(url, '_blank')
+    } catch {
+      fenster = null
+    }
+    if (fenster) return true
+    blobSpeichern(blob, name)
+    return false
+  }
+  return { geoeffnet: auf(), nochmal: auf }
+}
+
 export function textDatei(inhalt: string, name: string, typ = 'application/json'): void {
   blobSpeichern(new Blob([inhalt], { type: typ + ';charset=utf-8' }), name)
 }

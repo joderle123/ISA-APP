@@ -79,7 +79,7 @@ export function MaterialDetail({
     <Dialog onClose={onClose} labelledBy={titleId} className="dlg-wide">
       <header className="dlg-head">
         <div className="min-w-0 flex-1">
-          <div className="eyebrow text-accent">{typeLabels(view)} · ISA-Material</div>
+          <div className="eyebrow text-accent">{typeLabels(view)} · Material</div>
           <h2 id={titleId} className="disp mt-1 text-xl leading-[1.18] text-ink sm:text-2xl">
             {view.title}
           </h2>
@@ -242,7 +242,7 @@ export function MaterialDetail({
             <h3 className="mb-3 text-base font-semibold text-ink">Zielsetzungen</h3>
             {view.etepStufen.length > 0 && (
               <div className="mb-3">
-                <div className="mb-1.5 text-xs font-semibold text-muted">ETEP-Stufen</div>
+                <div className="mb-1.5 text-xs font-semibold text-muted">Stufen</div>
                 <div className="flex flex-wrap gap-1">
                   {etepStufen
                     .filter((e) => view.etepStufen.includes(e.id))

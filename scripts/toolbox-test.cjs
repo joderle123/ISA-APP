@@ -4,7 +4,7 @@
 // Prüft: PDF-Knopf auf der Karte, unbekannter und wiederholter Blatt-Link, Wechsel zu den Einheiten
 // mit ELDiB-Ziel (auch nach Neuladen), Suche (kurze Wörter nur als Wort, Titel zuerst; Umlaute in
 // beide Richtungen, Akzente, ß, ELDiB-Codes und Stufen in jeder Schreibweise, Aufgabentexte),
-// Einzahl „1 Blatt“, Bereichs-Kacheln ohne Überlauf, Material-Finder (Zahl wie in der Liste, auch
+// Einzahl „1 Blatt“, Bereichs-Kacheln ohne Überlauf, Hilfe finden (Zahl wie in der Liste, auch
 // mit ELDiB-Code), Tipp für das Team („Gespeichert.“), Seitenumbruch W-03, Sprache DE/FR gemerkt
 // (Dialog, Karte, Mappe), voller Titel im Blatt-Dialog am Handy, Mappe (Sprache je Blatt,
 // Dateinamen, Titel, Ladekreis am geklickten Knopf, Hinweis über der Leiste, Leiste am Handy),
@@ -112,7 +112,7 @@ const URHEBER = (() => {
   await page.getByRole('button', { name: 'Auch Einheiten dazu ansehen' }).click()
   await page.waitForTimeout(400)
   const aufEinheiten = async (text) => {
-    pruefe((await sichtbarH1(page)) === 'Einheiten', `${text}: Seite „Einheiten“`)
+    pruefe((await sichtbarH1(page)) === 'Aktivitäten & Kursstunden', `${text}: Seite „Aktivitäten & Kursstunden“`)
     pruefe((await page.locator('.achip.eldib:visible', { hasText: 'V-21' }).count()) === 1, `${text}: Filter V-21 gesetzt`)
   }
   await aufEinheiten('„Auch Einheiten dazu ansehen“')
@@ -224,7 +224,7 @@ const URHEBER = (() => {
   pruefe(ziele.length === 1 && ziele[0] === 'KOG-28', `Filter „ELDiB-Ziele“: „kog 28“ findet genau KOG-28 (${ziele.join(', ')})`)
   await page.fill('input[placeholder="Ziel oder Code, z. B. V-13"]', '')
 
-  // Material-Finder: genannte Zahl = Zahl in der Bibliothek danach; nur Stichwörter → kein Knopf „Alle Treffer …“
+  // Hilfe finden: genannte Zahl = Zahl in der Bibliothek danach; nur Stichwörter → kein Knopf „Alle Treffer …“
   const finder = async (text) => {
     await page.locator('button[title^="Situation beschreiben"]').click()
     await page.fill('dialog[open] textarea', text)
@@ -236,13 +236,13 @@ const URHEBER = (() => {
   await page.locator('dialog[open] button', { hasText: 'Alle Treffer in der Bibliothek anzeigen' }).click()
   await page.waitForTimeout(400)
   const inListe = Number(/\d+/.exec(await page.evaluate(() => document.querySelector('main#ergebnisse h1').nextElementSibling.textContent))[0])
-  pruefe(genannt > 0 && genannt === inListe, `Material-Finder nennt dieselbe Zahl wie die Liste danach (${genannt}/${inListe})`)
+  pruefe(genannt > 0 && genannt === inListe, `Hilfe finden nennt dieselbe Zahl wie die Liste danach (${genannt}/${inListe})`)
   await finder('Interessiert sich für Dinosaurier')
-  pruefe((await page.locator('dialog[open] button', { hasText: 'Alle Treffer in der Bibliothek anzeigen' }).count()) === 0, 'Material-Finder: nur Stichwörter → kein Knopf, der die ganze Bibliothek zeigt')
+  pruefe((await page.locator('dialog[open] button', { hasText: 'Alle Treffer in der Bibliothek anzeigen' }).count()) === 0, 'Hilfe finden: nur Stichwörter → kein Knopf, der die ganze Bibliothek zeigt')
   await page.keyboard.press('Escape')
-  // Material-Finder versteht ELDiB-Codes; Zahl und Liste bleiben gleich
+  // Hilfe finden versteht ELDiB-Codes; Zahl und Liste bleiben gleich
   const kogGenannt = Number((/Ich habe (\d+)/.exec(await finder('Etwas zu kog 28')) || [])[1])
-  pruefe((await page.locator('dialog[open] .badge', { hasText: 'ELDiB: KOG-28' }).count()) > 0, 'Material-Finder: „kog 28“ als ELDiB-Ziel KOG-28 verstanden')
+  pruefe((await page.locator('dialog[open] .badge', { hasText: 'ELDiB: KOG-28' }).count()) > 0, 'Hilfe finden: „kog 28“ als ELDiB-Ziel KOG-28 verstanden')
   const alleTreffer = page.locator('dialog[open] button', { hasText: 'Alle Treffer in der Bibliothek anzeigen' })
   let kogListe = -1
   if (await alleTreffer.count()) {
@@ -250,7 +250,7 @@ const URHEBER = (() => {
     await page.waitForTimeout(400)
     kogListe = Number(/\d+/.exec(await page.evaluate(() => document.querySelector('main#ergebnisse h1').nextElementSibling.textContent))[0])
   } else await page.keyboard.press('Escape')
-  pruefe(kogGenannt > 0 && kogGenannt === kogListe, `Material-Finder mit ELDiB-Code: dieselbe Zahl wie die Liste (${kogGenannt}/${kogListe})`)
+  pruefe(kogGenannt > 0 && kogGenannt === kogListe, `Hilfe finden mit ELDiB-Code: dieselbe Zahl wie die Liste (${kogGenannt}/${kogListe})`)
 
   // Tipp für das Team: kurzer Hinweis „Gespeichert.“
   await page.goto('about:blank')
@@ -366,7 +366,7 @@ const URHEBER = (() => {
   let v = await vermerke('dialog[open] .urheber')
   pruefe(v.length === 1 && v[0].text === URHEBER.de && v[0].lang === 'de', `Blatt-Dialog DE: Vermerk „${v[0]?.text}“`)
   pruefe((await logosGeladen('dialog[open] .urheber')) === 1, 'Blatt-Dialog: CDSE-Logo neben dem Vermerk')
-  const blattDe = await laden(uh.locator('dialog[open] button', { hasText: 'Mit Lehrerseite' }))
+  const blattDe = await laden(uh.locator('dialog[open] button', { hasText: 'Mit Seite für Erwachsene' }))
   if (blattDe?.pdf) {
     pruefe(pdfVermerk(blattDe.pdf, ['de']) && blattDe.pdf.seiten.some((t) => t.includes('FÜR DIE LEHRPERSON')), `Blatt-PDF DE mit Lehrerseite: Vermerk auf allen ${blattDe.pdf.seiten.length} Seiten`)
     pruefe(blattDe.pdf.autor === URHEBER.name, `Blatt-PDF: Autor „${blattDe.pdf.autor}“`)
@@ -374,7 +374,7 @@ const URHEBER = (() => {
   await uh.locator('dialog[open] .seg button', { hasText: 'FR' }).click()
   v = await vermerke('dialog[open] .urheber')
   pruefe(v.length === 1 && v[0].text === URHEBER.fr && v[0].lang === 'fr', `Blatt-Dialog FR: Vermerk „${v[0]?.text}“`)
-  const blattFr = await laden(uh.locator('dialog[open] button', { hasText: 'Mit Lehrerseite' }))
+  const blattFr = await laden(uh.locator('dialog[open] button', { hasText: 'Mit Seite für Erwachsene' }))
   if (blattFr?.pdf) pruefe(pdfVermerk(blattFr.pdf, ['fr']) && blattFr.pdf.seiten.some((t) => t.includes('POUR L’ENSEIGNANT·E')), `Blatt-PDF FR mit Lehrerseite: französischer Vermerk auf allen ${blattFr.pdf.seiten.length} Seiten`)
   await uh.locator('dialog[open] button', { hasText: 'In die Mappe legen' }).click()
   await uh.locator('dialog[open] .seg button', { hasText: 'DE' }).click()

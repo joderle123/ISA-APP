@@ -51,7 +51,8 @@ const KARTEN_SEITE = 48
 /** Kurznamen für die Bereichsauswahl (die langen Namen bleiben in Tooltip und Screenreader-Name). */
 const BEREICH_KURZ: Partial<Record<Bereich, string>> = { lernen: 'Lernen', werkzeuge: 'Werkzeuge', selbstreflexion: 'Selbstreflexion' }
 
-/** Die Mappe wird beim ersten Mal mit Text erklärt („Zur Mappe“), danach genügt das Symbol. */
+/** Der Mappe-Knopf trägt immer Text („Zur Mappe“ / „In der Mappe“). Der Schlüssel wird weiter gesetzt, sobald ein Blatt in der
+ *  Mappe liegt (Speicherformat unverändert) – er entscheidet nur nicht mehr über den Text. */
 const MAPPE_BEKANNT_KEY = 'toolbox-mappe-bekannt'
 function mappeBekanntLesen(): boolean {
   try {
@@ -141,7 +142,7 @@ function Leitbild({ b, klein }: { b: NummeriertesBlatt; klein?: boolean }) {
   )
 }
 
-function BlattKarte({ b, bew, gewaehlt, sprache, mitText, onOeffnen, onWaehlen, onLaden, laedt }: { b: NummeriertesBlatt; bew: Bewertungen; gewaehlt: boolean; sprache: Sprache; mitText: boolean; onOeffnen: () => void; onWaehlen: () => void; onLaden: () => void; laedt: boolean }) {
+function BlattKarte({ b, bew, gewaehlt, sprache, onOeffnen, onWaehlen, onLaden, laedt }: { b: NummeriertesBlatt; bew: Bewertungen; gewaehlt: boolean; sprache: Sprache; onOeffnen: () => void; onWaehlen: () => void; onLaden: () => void; laedt: boolean }) {
   const bereich = bereichById.get(b.bereich)!
   return (
     <article className="bl-karte" style={{ ['--bc' as string]: bereich.farben.tief, ['--bz' as string]: bereich.farben.zart }}>
@@ -175,14 +176,14 @@ function BlattKarte({ b, bew, gewaehlt, sprache, mitText, onOeffnen, onWaehlen, 
         <span className="grow" />
         <button
           type="button"
-          className={`btn btn-sm raise bl-mappe-knopf ${gewaehlt ? 'an' : ''} ${mitText ? '' : 'nur-symbol'}`}
+          className={`btn btn-sm raise bl-mappe-knopf ${gewaehlt ? 'an' : ''}`}
           aria-pressed={gewaehlt}
           aria-label={`${gewaehlt ? 'Aus der Mappe nehmen' : 'Zur Mappe'}: ${b.de.titel}`}
           title={gewaehlt ? 'Aus der Mappe nehmen' : 'Zur Mappe: aus mehreren Blättern wird ein Heft'}
           onClick={onWaehlen}
         >
           <Icon name={gewaehlt ? 'check' : 'layers'} />
-          {mitText ? (gewaehlt ? 'In der Mappe' : 'Zur Mappe') : null}
+          {gewaehlt ? 'In der Mappe' : 'Zur Mappe'}
         </button>
         <button type="button" className="btn btn-sm raise" onClick={onLaden} disabled={laedt} aria-label={`PDF herunterladen: ${b.de.titel}${sprache === 'fr' ? ' (französisch)' : ''}`}>
           {laedt ? <span className="spin" /> : <Icon name="download" />}
@@ -408,7 +409,7 @@ export function BlattDetail({
     try {
       const m = await loadPdfModule()
       const zusatz = art !== 'schueler' && art !== 'lehrer' && art !== 'beide'
-      // Zusatzseiten und die Lehrerseite allein sehen in jeder Fassung gleich aus
+      // Zusatzseiten und die Seite für Erwachsene allein sehen in jeder Fassung gleich aus
       const name = await m.downloadBlatt(
         b,
         zusatz ? { sprache, nr: b.nr, schueler: false, lehrer: false, zusaetze: [art] } : { sprache, nr: b.nr, schueler: art !== 'lehrer', lehrer: art !== 'schueler' },
@@ -498,13 +499,13 @@ export function BlattDetail({
                   onClick={() => onWaehlen(sprache, fassung)}
                 >
                   <Icon name={gewaehlt ? 'check' : 'layers'} />
-                  <span className="max-[420px]:sr-only">{gewaehlt ? 'In der Mappe' : 'Zur Mappe'}</span>
+                  {gewaehlt ? 'In der Mappe' : 'Zur Mappe'}
                 </button>
               ) : null}
             </div>
             {/* zweitwichtigster Weg: die Brücke zum Hauptwerkzeug */}
             {b.eldib.length ? (
-              <a className="btn btn-gross justify-center" href={stundeDazu(b)} title={`Passgenau: eine Stunde zu ${b.eldib[0]} planen (ohne Kind, Alter ${alterFuer(b)} J.)`}>
+              <a className="btn btn-gross justify-center" href={stundeDazu(b)} title={`Eine Stunde zu ${b.eldib[0]} planen (Alter ${alterFuer(b)} Jahre)`}>
                 <Icon name="compass" />
                 Stunde dazu planen
               </a>
@@ -512,11 +513,11 @@ export function BlattDetail({
             <div className="grid grid-cols-2 gap-2">
               <button type="button" className="btn btn-sm justify-center" onClick={() => laden('beide')} disabled={!!laedt}>
                 {laedt === 'beide' ? <span className="spin" /> : <Icon name="file" />}
-                Mit Lehrerseite
+                Mit Seite für Erwachsene
               </button>
               <button type="button" className="btn btn-sm justify-center" onClick={() => laden('lehrer')} disabled={!!laedt}>
                 {laedt === 'lehrer' ? <span className="spin" /> : <Icon name="book" />}
-                Nur Lehrerseite
+                Nur Seite für Erwachsene
               </button>
             </div>
             {zusaetze.length ? (
@@ -572,7 +573,7 @@ export function BlattDetail({
           </dl>
 
           {diff && (diff.leichter || diff.schwerer) ? (
-            // Hinweis für die Fachkraft: die Differenzierung von der Lehrerseite (steht dort auch gedruckt)
+            // Hinweis für die Fachkraft: die Differenzierung von der Seite für Erwachsene (steht dort auch gedruckt)
             <section aria-labelledby="bl-diff-titel">
               <h3 id="bl-diff-titel" className="bew-label mb-1.5">
                 Anpassen an die Gruppe
@@ -746,6 +747,7 @@ export function Blaetter({
   startFilter,
   startBlatt,
   onEinheitenZuEldib,
+  onHilfeFinden,
 }: {
   aktiv: boolean
   bew: Bewertungen
@@ -753,6 +755,8 @@ export function Blaetter({
   /** Blatt aus einem Link (#blatt=…) – neues Objekt bei jedem Link, auch bei derselben id */
   startBlatt: { id: string } | null
   onEinheitenZuEldib: (codes: string[]) => void
+  /** „Hilfe finden“ öffnen (Seite Einheiten) – für den leeren Treffer-Zustand */
+  onHilfeFinden: () => void
 }) {
   const [filter, setFilter] = useState<BlattFilter>(startFilter)
   const [sort, setSort] = useState<Sortierung>('nummer')
@@ -900,10 +904,10 @@ export function Blaetter({
 
   // Aktive Filter als entfernbare Chips – das Filter-Fach ist meist zu, die Auswahl soll trotzdem sichtbar bleiben
   const themaDef = filter.thema ? (THEMEN.find((t) => t.id === filter.thema && t.bereich === filter.bereich) ?? THEMEN.find((t) => t.id === filter.thema)) : undefined
-  const chips: { key: string; label: string; remove: () => void }[] = [
-    ...filter.stufen.map((x) => ({ key: 's' + x, label: stufeMitAlter(x), remove: () => set({ stufen: filter.stufen.filter((y) => y !== x) }) })),
+  const chips: { key: string; label: string; title?: string; remove: () => void }[] = [
+    ...filter.stufen.map((x) => ({ key: 's' + x, label: stufeMitAlter(x), title: `Stufe ${x}`, remove: () => set({ stufen: filter.stufen.filter((y) => y !== x) }) })),
     ...(filter.thema ? [{ key: 'thema', label: `Thema: ${themaDef?.de ?? filter.thema}`, remove: () => set({ thema: '' }) }] : []),
-    ...(filter.nurFr ? [{ key: 'fr', label: 'Auch auf Französisch', remove: () => set({ nurFr: false }) }] : []),
+    ...(filter.nurFr ? [{ key: 'fr', label: 'Nur Blätter mit französischer Fassung', remove: () => set({ nurFr: false }) }] : []),
   ]
 
   const filterInhalt = (
@@ -915,7 +919,7 @@ export function Blaetter({
             const an = filter.stufen.includes(x)
             const n = zaehle({ stufen: [x] })
             return (
-              <button key={x} type="button" className="fchip" aria-pressed={an} disabled={!an && n === 0} onClick={() => set({ stufen: an ? filter.stufen.filter((y) => y !== x) : [...filter.stufen, x] })}>
+              <button key={x} type="button" className="fchip" title={`Stufe ${x}`} aria-pressed={an} disabled={!an && n === 0} onClick={() => set({ stufen: an ? filter.stufen.filter((y) => y !== x) : [...filter.stufen, x] })}>
                 {stufeMitAlter(x)}
                 <span className="n">{n}</span>
               </button>
@@ -926,38 +930,41 @@ export function Blaetter({
       <section>
         <label className="check-row">
           <input type="checkbox" checked={filter.nurFr} onChange={(e) => set({ nurFr: e.target.checked })} />
-          Auch auf Französisch
+          Nur Blätter mit französischer Fassung
         </label>
       </section>
       <section className="bl-filter-breit">
-        {/* nur geöffnet, wenn schon ein Bereich oder Thema gewählt ist: ohne Bereich wären es rund 100 Einträge */}
-        <details className="bl-thema-fach" open={!!filter.bereich || !!filter.thema}>
-          <summary>
-            Thema <span className="n">({themen.length})</span>
-            {!filter.bereich ? <span className="hinweis"> – erst einen Bereich wählen, dann wird die Liste kurz</span> : null}
-          </summary>
-          <div className="bl-themen">
-            {themen.map((t) => {
-              const n = zaehle({ thema: t.id, bereich: t.bereich })
-              if (!n && filter.thema !== t.id) return null
-              const an = filter.thema === t.id
-              return (
-                <button key={t.bereich + t.id} type="button" className={`bl-thema ${an ? 'an' : ''}`} aria-pressed={an} onClick={() => set({ thema: an ? '' : t.id, bereich: an ? filter.bereich : t.bereich })}>
-                  <span className="dot" style={{ background: bereichById.get(t.bereich)?.farben.tief }} />
-                  <span className="grow text-left">{t.de}</span>
-                  <span className="n">{n}</span>
-                </button>
-              )
-            })}
-          </div>
-        </details>
+        {/* Ohne Bereich wären es rund 100 Themen: dann nur ein Hinweis statt eines Fachs, das sich nicht öffnen lässt */}
+        {filter.bereich || filter.thema ? (
+          <details className="bl-thema-fach" open>
+            <summary>
+              Thema <span className="n">({themen.length})</span>
+            </summary>
+            <div className="bl-themen">
+              {themen.map((t) => {
+                const n = zaehle({ thema: t.id, bereich: t.bereich })
+                if (!n && filter.thema !== t.id) return null
+                const an = filter.thema === t.id
+                return (
+                  <button key={t.bereich + t.id} type="button" className={`bl-thema ${an ? 'an' : ''}`} aria-pressed={an} onClick={() => set({ thema: an ? '' : t.id, bereich: an ? filter.bereich : t.bereich })}>
+                    <span className="dot" style={{ background: bereichById.get(t.bereich)?.farben.tief }} />
+                    <span className="grow text-left">{t.de}</span>
+                    <span className="n">{n}</span>
+                  </button>
+                )
+              })}
+            </div>
+          </details>
+        ) : (
+          <p className="bl-thema-leer">Thema – wähle zuerst oben einen Bereich</p>
+        )}
       </section>
     </div>
   )
 
   const rasterKey = JSON.stringify(q) + sort
   const renderKarte = (b: NummeriertesBlatt) => (
-    <BlattKarte key={b.id} b={b} bew={bew} gewaehlt={inMappe(b.id)} sprache={spracheVon(b)} mitText={!mappeBekannt} onOeffnen={() => setOffen(b)} onWaehlen={() => umschalten(b.id, spracheVon(b))} onLaden={() => laden(b)} laedt={laedt === b.id} />
+    <BlattKarte key={b.id} b={b} bew={bew} gewaehlt={inMappe(b.id)} sprache={spracheVon(b)} onOeffnen={() => setOffen(b)} onWaehlen={() => umschalten(b.id, spracheVon(b))} onLaden={() => laden(b)} laedt={laedt === b.id} />
   )
 
   return (
@@ -968,7 +975,7 @@ export function Blaetter({
             <h1 className="disp text-xl leading-tight text-ink sm:text-2xl">Arbeitsblätter</h1>
             <p className="mt-1 text-base text-muted" aria-live="polite">
               <b className="font-semibold text-ink">{treffer.length}</b>
-              {treffer.length !== alleBlaetter.length ? ` von ${alleBlaetter.length} Blättern` : ' Blätter'} · Spielschule bis Sekundarschule · jedes mit Seite für die Lehrperson
+              {treffer.length !== alleBlaetter.length ? ` von ${alleBlaetter.length} Blättern` : ' Blätter'} · Spielschule bis Sekundarschule · jedes mit Seite für Erwachsene
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
@@ -1043,7 +1050,7 @@ export function Blaetter({
         {chips.length > 0 ? (
           <div className="mb-3 flex flex-wrap items-center gap-1.5" role="group" aria-label="Aktive Filter">
             {chips.map((c) => (
-              <span key={c.key} className="achip">
+              <span key={c.key} className="achip" title={c.title}>
                 <span>{c.label}</span>
                 <button type="button" onClick={c.remove} aria-label={`Filter entfernen: ${c.label}`} title="Filter entfernen">
                   <Icon name="x" />
@@ -1109,14 +1116,7 @@ export function Blaetter({
           {filter.bereich === 'spielschule' && mitExperiment.length ? <ForscherkarteiLeiste anzahl={mitExperiment.length} sprache={karteiSprache} laedt={laedt === 'kartei'} onLaden={karteiLaden} /> : null}
           {filter.bereich === 'spielschule' ? <JahresplanLeiste laedt={laedt === 'jahresplan'} onLaden={jahresplanLaden} /> : null}
           {treffer.length === 0 ? (
-            <div className="panel px-6 py-12 text-center">
-              <h2 className="disp text-xl text-ink">Kein passendes Arbeitsblatt</h2>
-              <p className="mx-auto mt-2 max-w-[520px] text-base text-muted">Entferne einzelne Filter oder suche nach einem anderen Stichwort.</p>
-              <button type="button" className="btn btn-primary mt-5" onClick={() => setFilter(leererBlattFilter)}>
-                <Icon name="reset" />
-                Alle Filter zurücksetzen
-              </button>
-            </div>
+            <KeinTreffer filter={q} onWort={(w) => set({ suche: w })} onHilfeFinden={onHilfeFinden} onZuruecksetzen={() => setFilter(leererBlattFilter)} />
           ) : (
             <>
               {treffer.length >= 2 && treffer.length <= 40 ? (
@@ -1165,6 +1165,49 @@ export function Blaetter({
 
       {mappeOffen && <MappeDialog onSchliessen={() => setMappeOffen(false)} />}
     </main>
+  )
+}
+
+/** Nichts gefunden: keine Sackgasse. Jedes Wort einer Suche muss im Blatt vorkommen – darum bieten wir die einzelnen Wörter an
+ *  (nur die, die allein etwas finden), dazu „Hilfe finden“ und das Zurücksetzen der Filter. */
+function KeinTreffer({ filter, onWort, onHilfeFinden, onZuruecksetzen }: { filter: BlattFilter; onWort: (w: string) => void; onHilfeFinden: () => void; onZuruecksetzen: () => void }) {
+  const suche = filter.suche.trim()
+  const woerter = useMemo(() => {
+    const l = [...new Set(suche.split(/\s+/).filter((w) => w.length >= 3))]
+    return l.length < 2 ? [] : l.map((w) => ({ w, n: alleBlaetter.filter((b) => trifft(b, { ...filter, suche: w })).length })).filter((x) => x.n > 0)
+  }, [filter, suche])
+  const mitFiltern = filter.bereich || filter.thema || filter.stufen.length || filter.nurFr || filter.eldib.length
+  return (
+    <div className="panel px-6 py-10 text-center" role="status">
+      <h2 className="disp text-xl text-ink">{suche ? `Nichts gefunden für „${suche}“` : 'Kein passendes Arbeitsblatt'}</h2>
+      {woerter.length > 0 ? (
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+          <span className="text-base text-muted">Probier ein Wort:</span>
+          {woerter.map((x) => (
+            <button key={x.w} type="button" className="fchip" onClick={() => onWort(x.w)}>
+              {x.w}
+              <span className="n">{x.n}</span>
+            </button>
+          ))}
+        </div>
+      ) : (
+        <p className="mx-auto mt-2 max-w-[520px] text-base text-muted">{mitFiltern ? 'Nimm einen Filter heraus oder suche nach einem anderen Wort.' : 'Suche nach einem anderen Wort, zum Beispiel einem Thema wie „Wut“ oder „Angst“.'}</p>
+      )}
+      <p className="mx-auto mt-4 max-w-[520px] text-base text-muted">
+        Oder beschreibe die Situation in{' '}
+        <button type="button" className="link-btn" onClick={onHilfeFinden}>
+          <Icon name="finder" />
+          Hilfe finden
+        </button>
+        .
+      </p>
+      {mitFiltern || suche ? (
+        <button type="button" className="btn mt-5" onClick={onZuruecksetzen}>
+          <Icon name="reset" />
+          Alle Filter zurücksetzen
+        </button>
+      ) : null}
+    </div>
   )
 }
 

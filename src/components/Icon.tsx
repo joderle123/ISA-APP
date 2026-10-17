@@ -28,6 +28,14 @@ const PATHS = {
       <path d="m15.6 8.4-2.1 5.1-5.1 2.1 2.1-5.1z" />
     </>
   ),
+  /** Hilfe finden: Lupe mit Funken (nicht der Kompass, der „Stunde planen“ gehört) */
+  finder: (
+    <>
+      <circle cx="10.5" cy="10.5" r="6.8" />
+      <path d="m20.5 20.5-5.2-5.2" />
+      <path d="M10.5 7.2l.8 2.5 2.5.8-2.5.8-.8 2.5-.8-2.5-2.5-.8 2.5-.8z" />
+    </>
+  ),
   sparkles: (
     <>
       <path d="M11 3.5 12.6 8l4.4 1.6-4.4 1.6L11 15.7l-1.6-4.5L5 9.6 9.4 8z" />

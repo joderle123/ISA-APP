@@ -1,6 +1,6 @@
-// Passgenau – Nach der Stunde (2.7): ein Klick, höchstens vier. Nichts ist vorbelegt (P6/E-M1); in die Notiz kommt nur,
-// was geklickt wurde. Krisentage und Weg 3 mit eigenen Ergebnissen, nie negativ (P10). Stimme des Kindes (E-M15).
-import { useState } from 'react'
+// Passgenau – Nach der Stunde (2.7): ein Klick, höchstens vier. Der Klick auf die Antwort speichert (mit kurzer Frist für
+// „Rückgängig“); „Mehr angeben“ ist zugeklappt. Nichts ist vorbelegt (P6/E-M1); in die Notiz kommt nur, was geklickt wurde. Krisentage und Weg 3 mit eigenen Ergebnissen, nie negativ (P10). Stimme des Kindes (E-M15).
+import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Plan, Rueckmeldung } from '../typen'
 import * as K from './kern'
 import * as hub from './hub'
@@ -107,6 +107,9 @@ export function useRueckmeldung() {
   }
 }
 
+/** Wie lange nach dem Klick auf die Antwort noch „Rückgängig“ geht, bevor die Rückmeldung wirklich geschrieben wird */
+const FRIST_MS = 6000
+
 export function Nachher({ nr }: { nr: number }) {
   const pg = usePg()
   const p = useProfil()
@@ -119,6 +122,9 @@ export function Nachher({ nr }: { nr: number }) {
   const [chips, setChips] = useState<string[]>([])
   const [wahl, setWahl] = useState<string | undefined>()
   const [daumen, setDaumen] = useState<'hoch' | 'runter' | undefined>()
+  // frei = nichts gewählt · wartet = Antwort geklickt, noch „Rückgängig“ möglich · fertig = geschrieben
+  const [stufe, setStufe] = useState<'frei' | 'wartet' | 'fertig'>('frei')
+  const [mehrOffen, setMehrOffen] = useState(false)
   const rm = useRueckmeldung()
   const titel = (ref: string) => K.schrittTitel(plan, nr, ref) || ref
   // Stimme des Kindes (E-M15): Weg 3 – die Optionen der Wahl (Schritt + `wahl`), sonst Spiel und Bewegung; Wert = Ref
@@ -138,114 +144,154 @@ export function Nachher({ nr }: { nr: number }) {
       }
     : null
   const notiz = r ? K.notizText(p, plan, nr, r) : ''
-  // Haken „gemacht“ setzt der Hub für jede Quelle b:<blatt>:<n> der Sitzung (Blatt und Schritte)
-  const quellen = new Set([...(s.blatt?.bausteine ?? []), ...s.schritte].map((b) => /^b:([^:]+):\d+$/.exec(b.ref)?.[1]).filter(Boolean))
   const beobachtung = !!r && ((r.ziele?.length ?? 0) > 0 || chips.length > 0)
   const ERG: [Ergebnis, string, Zeichen][] = krise
     ? [['beruhigt', 'Hat sich beruhigt', 'welle'], ['dabei', 'War dabei', 'person'], ['nur-da', 'Wollte nur da sein', 'herz'], ['abgebrochen', 'Abgebrochen', 'x']]
     : [['geklappt', 'Hat geklappt', 'hoch'], ['teils', 'Teils', 'tausch'], ['nicht', 'Hat nicht geklappt', 'runter']]
   const zielListe = leicht ? [] : plan.ziele.slice(0, 3)
+  const naechste = plan.sitzungen.find((x) => x.nr === nr + 1 && x.status !== 'gehalten')
+  const folgeText = !naechste || !ergebnis ? '' : ergebnis === 'teils' || ergebnis === 'nicht' ? `Sitzung ${nr + 1} wird angepasst.` : `Sitzung ${nr + 1} baut darauf auf.`
+
+  // Gespeichert wird einmal: beim Klick auf „Fertig“, nach Ablauf der Frist, beim Schließen – oder wenn der Dialog verschwindet
+  // (Zurück-Taste, Wechsel der Ansicht). Die Rückmeldung speist Vorlieben und CDSE-Hub; „Rückgängig“ geht darum nur, solange noch
+  // nichts geschrieben ist. Der Stand kommt aus einer Ref, damit die Frist nie mit alten Werten schreibt.
+  const stand = useRef({ rm, plan, nr, r })
+  stand.current = { rm, plan, nr, r }
+  const geschrieben = useRef(false)
+  const festhalten = useCallback((anzeigen: boolean): boolean => {
+    const x = stand.current
+    if (geschrieben.current || !x.r) return false
+    geschrieben.current = true
+    if (anzeigen) setStufe('fertig')
+    void x.rm.speichern(x.plan, x.nr, x.r)
+    return true
+  }, [])
+  useEffect(() => () => void festhalten(false), [festhalten])
+  const setDlg = pg.setDlg
+  useEffect(() => {
+    // solange „Mehr angeben“ offen ist, läuft keine Frist: wer Angaben macht, entscheidet selbst, wann er fertig ist
+    if (stufe !== 'wartet' || mehrOffen) return
+    const t = window.setTimeout(() => {
+      if (festhalten(true)) setDlg(null)
+    }, FRIST_MS)
+    return () => window.clearTimeout(t)
+  }, [stufe, mehrOffen, ergebnis, ziele, chips, wahl, daumen, festhalten, setDlg])
+  const waehlen = (e: Ergebnis) => {
+    setErgebnis(e)
+    setStufe('wartet')
+  }
+  const rueckgaengig = () => {
+    setErgebnis(null)
+    setStufe('frei')
+  }
+  const schliessen = () => {
+    festhalten(false)
+    pg.setDlg(null)
+  }
+  const fest = stufe === 'fertig'
   return (
     <PgDialog
       titel={(leicht ? 'Leichte Stunde' : plan.n > 1 ? `Sitzung ${nr}` : 'Stunde') + ' gehalten – wie war es?'}
-      unter="Ein Klick reicht. Alles darunter ist freiwillig."
-      onClose={() => pg.setDlg(null)}
+      unter="Ein Klick auf die Antwort genügt – er speichert. Alles andere ist freiwillig."
+      onClose={schliessen}
       schmal
       fuss={
         <>
-          <span className="links">
-            Haken „gemacht“ für {quellen.size} {quellen.size === 1 ? 'Quellblatt' : 'Quellblätter'}
-            {plan.n > 1 ? ' · nächste Sitzung passt sich an' : ''}
-          </span>
-          <button type="button" className="pg-btn" onClick={() => pg.setDlg(null)}>
-            Später
-          </button>
-          <button
-            type="button"
-            className="pg-btn primaer"
-            disabled={!r}
-            onClick={() => {
-              if (!r) return
-              pg.setDlg(null)
-              rm.speichern(plan, nr, r)
-            }}
-          >
-            <Ic n="check" />
-            Notiz speichern
+          <span className="links">{stufe !== 'frei' ? folgeText : ''}</span>
+          <button type="button" className={'pg-btn' + (stufe === 'frei' ? '' : ' primaer')} onClick={schliessen}>
+            {stufe === 'frei' ? 'Schließen' : 'Fertig'}
           </button>
         </>
       }
     >
       <div className={'pg-gross3' + (krise ? ' vier' : '')} role="group" aria-label="Wie war die Stunde?">
         {ERG.map(([e, t, icon]) => (
-          <button key={e} type="button" className={e + (ergebnis === e ? ' an' : '')} aria-pressed={ergebnis === e} onClick={() => setErgebnis(ergebnis === e ? null : e)}>
+          <button key={e} type="button" className={e + (ergebnis === e ? ' an' : '')} aria-pressed={ergebnis === e} disabled={fest && ergebnis !== e} onClick={() => waehlen(e)}>
             <Ic n={icon} />
             {t}
           </button>
         ))}
       </div>
-      {!krise && <p className="pg-leise pg-klein pg-m0">„Hat geklappt“ heißt: Die Stunde ist gut gelaufen. Ob das Ziel näher rückt, siehst du bei „je Ziel“.</p>}
-      {krise && <p className="pg-leise pg-klein pg-m0">An schweren Tagen zählt nichts davon negativ – weder für {pg.kind.akk} noch für dich.</p>}
-      {zielListe.length > 0 && (
-        <div>
-          <b className="pg-klein-titel">Optional je Ziel</b>
-          {zielListe.map((code) => (
-            <div key={code} className="pg-zielreihe">
-              <span>
-                <b>{code}</b> {zielKurz(code)}
-              </span>
-              <Seg
-                label={`Ziel ${code}`}
-                wert={ziele[code]}
-                optionen={[['gelingt', 'gelingt'], ['mit-hilfe', 'mit Hilfe'], ['noch-nicht', 'noch nicht']]}
-                onWahl={(v) => setZiele((z) => ({ ...z, [code]: z[code] === v ? undefined : v }))}
-              />
-            </div>
-          ))}
-        </div>
-      )}
-      <div>
-        <b className="pg-klein-titel">Beobachtet (optional)</b>
-        <div className="pg-chips pg-mt">
-          {chipListe.map(([c, text]) => (
-            <Chip key={c} an={chips.includes(c)} onClick={() => setChips((l) => (l.includes(c) ? l.filter((x) => x !== c) : [...l, c]))}>
-              {text}
-            </Chip>
-          ))}
-        </div>
+      <div className="pg-gespeichert" role="status" aria-live="polite">
+        {stufe !== 'frei' && (
+          <>
+            <Ic n="check" />
+            <b>Gespeichert.</b>
+            {stufe === 'wartet' && (
+              <button type="button" className="pg-link" onClick={rueckgaengig}>
+                Rückgängig
+              </button>
+            )}
+          </>
+        )}
       </div>
-      <div>
-        <b className="pg-klein-titel">Stimme {pg.kind.von} (optional)</b>
-        {wahlOptionen.length > 0 && (
-          <div className="pg-zielreihe">
-            <span>{pg.kind.Nom} hat gewählt:</span>
-            <div className="pg-chips">
-              {wahlOptionen.map((w) => (
-                <Chip key={w} an={wahl === w} onClick={() => setWahl(wahl === w ? undefined : w)}>
-                  {titel(w)}
+      {stufe === 'frei' && !krise && <p className="pg-leise pg-klein pg-m0">„Hat geklappt“ heißt: Die Stunde ist gut gelaufen. Ob das Ziel näher rückt, siehst du bei „je Ziel“.</p>}
+      {stufe === 'frei' && krise && <p className="pg-leise pg-klein pg-m0">An schweren Tagen zählt nichts davon negativ – weder für {pg.kind.akk} noch für dich.</p>}
+      {!fest && (
+        <details className="pg-mehrangabe" open={mehrOffen} onToggle={(e) => setMehrOffen(e.currentTarget.open)}>
+          <summary>Mehr angeben (freiwillig)</summary>
+          {zielListe.length > 0 && (
+            <div>
+              <b className="pg-klein-titel">Je Ziel</b>
+              {zielListe.map((code) => (
+                <div key={code} className="pg-zielreihe">
+                  <span>
+                    <b>{code}</b> {zielKurz(code)}
+                  </span>
+                  <Seg
+                    label={`Ziel ${code}`}
+                    wert={ziele[code]}
+                    optionen={[['gelingt', 'gelingt'], ['mit-hilfe', 'mit Hilfe'], ['noch-nicht', 'noch nicht']]}
+                    onWahl={(v) => setZiele((z) => ({ ...z, [code]: z[code] === v ? undefined : v }))}
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+          <div>
+            <b className="pg-klein-titel">Beobachtet</b>
+            <div className="pg-chips pg-mt">
+              {chipListe.map(([c, text]) => (
+                <Chip key={c} an={chips.includes(c)} onClick={() => setChips((l) => (l.includes(c) ? l.filter((x) => x !== c) : [...l, c]))}>
+                  {text}
                 </Chip>
               ))}
             </div>
           </div>
-        )}
-        <div className="pg-zielreihe">
-          <span>Daumen {pg.kind.von} am Schluss:</span>
-          <div className="pg-chips">
-            <Chip an={daumen === 'hoch'} onClick={() => setDaumen(daumen === 'hoch' ? undefined : 'hoch')}>
-              hoch
-            </Chip>
-            <Chip an={daumen === 'runter'} onClick={() => setDaumen(daumen === 'runter' ? undefined : 'runter')}>
-              runter
-            </Chip>
+          <div>
+            <b className="pg-klein-titel">Stimme {pg.kind.von}</b>
+            {wahlOptionen.length > 0 && (
+              <div className="pg-zielreihe">
+                <span>{pg.kind.Nom} hat gewählt:</span>
+                <div className="pg-chips">
+                  {wahlOptionen.map((w) => (
+                    <Chip key={w} an={wahl === w} onClick={() => setWahl(wahl === w ? undefined : w)}>
+                      {titel(w)}
+                    </Chip>
+                  ))}
+                </div>
+              </div>
+            )}
+            <div className="pg-zielreihe">
+              <span>Daumen {pg.kind.von} am Schluss:</span>
+              <div className="pg-chips">
+                <Chip an={daumen === 'hoch'} onClick={() => setDaumen(daumen === 'hoch' ? undefined : 'hoch')}>
+                  hoch
+                </Chip>
+                <Chip an={daumen === 'runter'} onClick={() => setDaumen(daumen === 'runter' ? undefined : 'runter')}>
+                  runter
+                </Chip>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="pg-notizvorschau" aria-live="polite">
-        <small>
-          {r ? `Notiz ins Dossier · Art „${beobachtung ? 'Beobachtung' : 'Notiz'}“${!leicht && plan.ziele[0] && r.ziele?.length ? ' · Bezug ' + r.ziele[0].code : ''}` : 'Notiz-Vorschau'}
-        </small>
-        {r ? notiz : 'Erst ein Ergebnis wählen – dann steht hier die Notiz.'}
-      </div>
+          <div className="pg-notizvorschau" aria-live="polite">
+            <small>
+              {r ? `Notiz ins Dossier · Art „${beobachtung ? 'Beobachtung' : 'Notiz'}“${!leicht && plan.ziele[0] && r.ziele?.length ? ' · Bezug ' + r.ziele[0].code : ''}` : 'Notiz-Vorschau'}
+            </small>
+            {r ? notiz : 'Erst ein Ergebnis wählen – dann steht hier die Notiz.'}
+          </div>
+        </details>
+      )}
       {!pg.darfRueckmelden && !pg.ohneKind && <p className="pg-leise pg-klein pg-m0">Ohne Recht zur Rückmeldung wird nichts ins Dossier geschrieben.</p>}
       {!pg.lernenKind && !pg.ohneKind && <p className="pg-leise pg-klein pg-m0">Passgenau lernt bei {pg.kind.dat} nicht mit – die Notiz wird trotzdem gespeichert.</p>}
     </PgDialog>

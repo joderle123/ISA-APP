@@ -133,7 +133,7 @@ export function MappeDialog({ onSchliessen }: { onSchliessen: () => void }) {
         <section className="flex flex-wrap items-start gap-x-8 gap-y-4">
           <div>
             <span className="bew-label mb-1 block" id="mp-lehrer-label">
-              Seiten für die Lehrperson
+              Seiten für Erwachsene
             </span>
             <div className="seg" role="group" aria-labelledby="mp-lehrer-label">
               {LEHRER_WAHL.map((w) => (

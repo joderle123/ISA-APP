@@ -18,7 +18,7 @@ import { MaterialCard } from '../components/MaterialCard'
 import { MaterialDetail, type DownloadKind } from '../components/MaterialDetail'
 import { ChatFinder } from '../components/ChatFinder'
 import { Icon } from '../components/Icon'
-import { stufeMitAlter } from '../components/stufe'
+import { stufeAlter } from '../components/stufe'
 import { teamSync } from '../lib/teamSync'
 import type { RatingMap } from '../lib/ratings'
 import type { Bewertungen } from '../lib/useBewertungen'
@@ -59,11 +59,14 @@ export function Einheiten({
   bew,
   teamMaterials,
   onBlaetterZuEldib,
+  finderNr,
 }: {
   aktiv: boolean
   bew: Bewertungen
   teamMaterials: Material[]
   onBlaetterZuEldib: (codes: string[]) => void
+  /** Zählt hoch, wenn „Hilfe finden“ von einer anderen Seite aus geöffnet wird (App.tsx) */
+  finderNr: number
 }) {
   const aktivRef = useRef(aktiv)
   aktivRef.current = aktiv
@@ -77,6 +80,9 @@ export function Einheiten({
   const [downloading, setDownloading] = useState<{ id: string; kind: DownloadKind } | null>(null)
   const ratings: RatingMap = bew.eigene
   const [finderOpen, setFinderOpen] = useState(false)
+  useEffect(() => {
+    if (finderNr > 0) setFinderOpen(true)
+  }, [finderNr])
   const [filtersOpen, setFiltersOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
 
@@ -211,7 +217,7 @@ export function Einheiten({
       <div className="mx-auto max-w-[1440px] px-4 pt-4 pb-16 sm:px-6 sm:pt-5">
         <div className="mb-3 flex flex-wrap items-end justify-between gap-x-4 gap-y-3">
           <div className="min-w-0">
-            <h1 className="disp text-xl leading-tight text-ink sm:text-2xl">Einheiten</h1>
+            <h1 className="disp text-xl leading-tight text-ink sm:text-2xl">Aktivitäten &amp; Kursstunden</h1>
             <p className="mt-1 text-base text-muted" aria-live="polite">
               <b className="font-semibold text-ink">{results.length}</b>
               {results.length !== library.length ? ` von ${library.length}` : ''} Materialien
@@ -233,7 +239,7 @@ export function Einheiten({
                     update({ search: '' })
                   }
                 }}
-                placeholder="Titel, Thema, Ziel-Code …"
+                placeholder="Titel, Thema, Förderziel (z. B. V-21) …"
                 autoComplete="off"
                 spellCheck={false}
               />
@@ -248,9 +254,9 @@ export function Einheiten({
               )}
               <Icon name={filtersOpen ? 'chevronUp' : 'chevronDown'} />
             </button>
-            <button type="button" className="btn" onClick={() => setFinderOpen(true)} title="Situation beschreiben – passende Materialien finden">
-              <Icon name="compass" />
-              <span className="max-sm:sr-only">Material-Finder</span>
+            <button type="button" className="btn" onClick={() => setFinderOpen(true)} title="Situation beschreiben – passende Aktivitäten und Kursstunden finden">
+              <Icon name="finder" />
+              Hilfe finden
             </button>
             <label className="flex items-center gap-2 text-sm text-muted">
               <span className="max-sm:sr-only">Sortieren</span>
@@ -399,7 +405,7 @@ function activeChips(f: FilterState, update: (p: Partial<FilterState>) => void):
       eldib: true,
     })
   for (const a of f.ageLevels)
-    out.push({ key: 'a' + a, label: `Alter ${stufeMitAlter(a)}`, remove: () => update({ ageLevels: without(f.ageLevels, a) }) })
+    out.push({ key: 'a' + a, label: `Alter: ${stufeAlter(a) || a}`, remove: () => update({ ageLevels: without(f.ageLevels, a) }) })
   for (const t of f.types)
     out.push({ key: 't' + t, label: materialTypeById.get(t)?.labelDe ?? t, remove: () => update({ types: without(f.types, t) }) })
   for (const p of f.participantModes)

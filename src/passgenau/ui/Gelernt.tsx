@@ -130,7 +130,7 @@ export function Gelernt() {
             <summary>So wird gerechnet (für Interessierte)</summary>
             <dl className="pg-dl">
               <dt>Zähler</dt>
-              <dd>je Merkmal „gut“ und „schlecht“ (Bewegung, Comic, lange Schritte, einzelner Baustein …)</dd>
+              <dd>je Merkmal „gut“ und „schlecht“ (Bewegung, Comic, lange Schritte, einzelner Teil …)</dd>
               <dt>Gewicht</dt>
               <dd>Kind 50 % · du 30 % · Team 20 %</dd>
               <dt>Deckel</dt>

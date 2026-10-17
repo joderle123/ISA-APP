@@ -2,7 +2,7 @@
 // Passgenau: Einzelstunden für ein Kind, aus dem, was der CDSE-Hub schon weiß.
 //   #passgenau=<ref>[&weg=gruendlich|schnell|leicht][&ziel=V-21]      Start aus dem Hub (unverändert)
 //   #passgenau/<ansicht>                                             Ansichtswechsel ohne Hub (Verlaufseinträge, zustand.tsx)
-// Ohne Antwort des Hubs (1,5 s): „Ohne Kind planen“. Rechnen tut der Kern
+// Ohne Antwort des Hubs (1,5 s): „Stunde planen“ ohne Kind (Anliegen antippen). Rechnen tut der Kern
 // (src/passgenau/kern über src/passgenau/ui/kern.ts), die Brücke zum Hub steckt in
 // src/passgenau/ui/hub.ts (Protokoll: src/passgenau/PROTOKOLL.md).
 // ---------------------------------------------------------------------------
@@ -11,7 +11,7 @@ import { Component, useEffect, type ReactNode } from 'react'
 import type { PassgenauStart } from '../passgenau/ui/hub'
 import { PgAnbieter, usePg, type Ansicht } from '../passgenau/ui/zustand'
 import { Ic } from '../passgenau/ui/zeichen'
-import { Hinweisleiste } from '../passgenau/ui/Teile'
+import { HilfeDialog, Hinweisleiste, MehrMenue } from '../passgenau/ui/Teile'
 import { OhneKind, Start } from '../passgenau/ui/Start'
 import { Wissen } from '../passgenau/ui/Wissen'
 import { Gruendlich, Leicht, Schnell } from '../passgenau/ui/Wege'
@@ -28,10 +28,10 @@ const PLANEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schnell
 function Kopfzeile() {
   const pg = usePg()
   const p = pg.profil
-  // „Aus der Praxis“ liegt im CDSE-Hub: ohne ihn gäbe der Reiter nur eine leere Seite – dann fehlt er
+  // „Aus der Praxis“ liegt im CDSE-Hub: ohne ihn gäbe der Reiter nur eine leere Seite – dann fehlt er.
+  // Die Vorlieben und die Hilfe brauchst du nie beim Planen: sie liegen unter „Einstellungen“ (das „Mehr“ im Ergebnis ist ein anderes Menü).
   const reiter: [Ansicht, string, string][] = [
     ['start', 'Planen', 'ziel'],
-    ['gelernt', 'Vorlieben', 'birne'],
     ...(pg.schalter.teilen && pg.hubDa ? ([['praxis', 'Aus der Praxis', 'gruppe']] as [Ansicht, string, string][]) : []),
   ]
   const aktiv = (a: Ansicht) => (a === 'start' ? PLANEN.includes(pg.ansicht) : pg.ansicht === a)
@@ -50,6 +50,13 @@ function Kopfzeile() {
             <span>Zum Plan</span>
           </button>
         )}
+        <MehrMenue
+          label="Einstellungen"
+          punkte={[
+            { icon: 'birne', text: 'Vorlieben', onClick: () => pg.setAnsicht('gelernt'), aktuell: pg.ansicht === 'gelernt' },
+            { icon: 'info', text: 'Hilfe', onClick: () => pg.setDlg({ art: 'hilfe' }) },
+          ]}
+        />
       </nav>
       <div className="pg-leiste-rechts">
         {pg.speicherStatus && (
@@ -72,14 +79,22 @@ function Kopfzeile() {
           </span>
         )}
         {p && (
-          <button type="button" className="pg-kindchip" onClick={() => pg.setAnsicht(pg.ohneKind ? 'ohnekind' : 'wissen')} aria-label={pg.ohneKind ? 'Alter, Sprache und Ziele ändern' : `${pg.kind.nom}: Das weiß ich schon`}>
+          <button
+            type="button"
+            className="pg-kindchip"
+            onClick={() => pg.setAnsicht(pg.ohneKind ? 'ohnekind' : 'wissen')}
+            aria-label={pg.ohneKind ? 'Alter, Sprache und Ziele ändern' : `${pg.kind.nom}: Das weiß ich schon`}
+            title={pg.ohneKind ? `Stufe ${p.stufen.join(', ')} – Alter, Sprache und Ziele ändern` : undefined}
+          >
             <span className={'avatar' + (pg.ohneKind ? ' neutral' : '')} aria-hidden="true">
               {pg.ohneKind ? <Ic n="person" /> : pg.kind.nom.slice(0, 1)}
             </span>
-            <b>{pg.ohneKind ? 'Ohne Kind' : pg.kind.nom}</b>
-            <small>
-              {p.alterJahre} J. · {p.stufen.join(', ')}
-            </small>
+            <b>{pg.ohneKind ? `Alter: ${p.alterJahre} Jahre` : pg.kind.nom}</b>
+            {!pg.ohneKind && (
+              <small>
+                {p.alterJahre} J. · {p.stufen.join(', ')}
+              </small>
+            )}
           </button>
         )}
       </div>
@@ -134,6 +149,7 @@ function Inhalt() {
       {d?.art === 'uebernehmen' && pg.profil && <Uebernehmen vorlage={d.vorlage} />}
       {d?.art === 'melden' && <Melden vorlage={d.vorlage} />}
       {d?.art === 'kuratieren' && <Kuratieren vorlage={d.vorlage} />}
+      {d?.art === 'hilfe' && <HilfeDialog />}
     </>
   )
 }
@@ -173,14 +189,14 @@ function MitAuffangen({ children }: { children: ReactNode }) {
   )
 }
 
-export function Passgenau({ aktiv, start }: { aktiv: boolean; start: PassgenauStart | null }) {
+export function Passgenau({ aktiv, start, onHilfeFinden }: { aktiv: boolean; start: PassgenauStart | null; onHilfeFinden?: () => void }) {
   // Schmaler Bildschirm: „Passgenau“ ist der letzte Hub-Reiter und liegt sonst außerhalb des Bildes
   useEffect(() => {
     if (aktiv) document.querySelector('.haupt-reiter [aria-current="page"]')?.scrollIntoView({ inline: 'center', block: 'nearest' })
   }, [aktiv])
   return (
     <div className={aktiv ? 'pg' : 'hidden'}>
-      <PgAnbieter startHash={start} aktiv={aktiv}>
+      <PgAnbieter startHash={start} aktiv={aktiv} onHilfeFinden={onHilfeFinden}>
         <Kopfzeile />
         <main className="pg-main">
           <MitAuffangen>

@@ -232,6 +232,84 @@ export function Daumen({
   )
 }
 
+/** „Mehr ▾“: ein kleines Menü für das, was man selten braucht. Öffnet und schließt per Knopf; Escape und ein Klick daneben schließen
+ *  ebenfalls (der Fokus geht dann zurück auf den Knopf). `aktuell` markiert den Eintrag, dessen Ansicht gerade offen ist. */
+export function MehrMenue({ punkte, label = 'Mehr', rechts }: { punkte: { icon?: Zeichen; text: string; onClick: () => void; aktuell?: boolean }[]; label?: string; rechts?: boolean }) {
+  const [offen, setOffen] = useState(false)
+  const box = useRef<HTMLDivElement>(null)
+  const knopf = useRef<HTMLButtonElement>(null)
+  const listeId = useId()
+  useEffect(() => {
+    if (!offen) return
+    const weg = (e: MouseEvent) => {
+      if (box.current && !box.current.contains(e.target as Node)) setOffen(false)
+    }
+    const esc = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return
+      setOffen(false)
+      knopf.current?.focus()
+    }
+    document.addEventListener('mousedown', weg)
+    document.addEventListener('keydown', esc)
+    return () => {
+      document.removeEventListener('mousedown', weg)
+      document.removeEventListener('keydown', esc)
+    }
+  }, [offen])
+  return (
+    <div className="pg-mehr" ref={box}>
+      <button ref={knopf} type="button" className="pg-btn" aria-expanded={offen} aria-controls={listeId} onClick={() => setOffen((o) => !o)}>
+        {label}
+        <Ic n="unten" />
+      </button>
+      {offen && (
+        <ul id={listeId} className={'pg-mehr-liste' + (rechts ? ' rechts' : '')}>
+          {punkte.map((p) => (
+            <li key={p.text}>
+              <button
+                type="button"
+                aria-current={p.aktuell ? 'page' : undefined}
+                onClick={() => {
+                  setOffen(false)
+                  p.onClick()
+                }}
+              >
+                {p.icon && <Ic n={p.icon} />}
+                {p.text}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
+}
+
+/** Hilfe zu Passgenau: das, was auf den Seiten selbst nicht stehen soll (Daumen, Speichern, PDF) */
+export function HilfeDialog() {
+  const pg = usePg()
+  return (
+    <PgDialog titel="Hilfe" unter="Kurz erklärt, was sich nicht von selbst versteht." onClose={() => pg.setDlg(null)} schmal>
+      <div className="pg-hilfe">
+        <h3>Schritte tauschen</h3>
+        <p>Mit „Tauschen“ ersetzt du einen Schritt durch einen anderen Vorschlag. Rituale bleiben in der ganzen Folge gleich.</p>
+        <h3>Daumen hoch und runter</h3>
+        <p>
+          Fährst du mit der Maus über einen Schritt, erscheinen zwei Daumen (am Tablet und Handy sind sie immer da). Passgenau merkt sich, was gut ankam – das gilt für alle deine Kinder. „Daumen runter“ fragt kurz nach dem Grund; das ändert nur, was Passgenau künftig vorschlägt.
+        </p>
+        <h3>PDF öffnen / drucken</h3>
+        <p>Die Stunde öffnet sich in einem neuen Tab – dort druckst du mit Strg+P. Sperrt dein Browser das neue Fenster, wird die Datei heruntergeladen.</p>
+        <h3>Speichern</h3>
+        <p>
+          {pg.hubDa
+            ? 'Mit dem CDSE-Hub wird die Stunde beim Drucken im Dossier gespeichert.'
+            : 'Ohne CDSE-Hub wird nichts beim Kind gespeichert. Wenn du die Stunde behalten willst, sichere sie als Datei oder als eigene Vorlage (ohne Kinddaten).'}
+        </p>
+      </div>
+    </PgDialog>
+  )
+}
+
 /** Dialog im Stil von Passgenau auf Basis des nativen <dialog> der Toolbox */
 export function PgDialog({ titel, unter, onClose, children, fuss, breit, schmal }: { titel: string; unter?: ReactNode; onClose: () => void; children: ReactNode; fuss?: ReactNode; breit?: boolean; schmal?: boolean }) {
   const id = useId()
@@ -267,7 +345,10 @@ export function Hinweisleiste() {
       {h && (
         <div className={'pg-toast ' + (h.art ?? '')} key={h.id}>
           <Ic n={h.art === 'warn' || h.art === 'info' ? 'info' : 'check'} />
-          <span>{h.text}</span>
+          <span className="pg-toast-text">
+            {h.text}
+            {h.klein && <small>{h.klein}</small>}
+          </span>
           {h.knopf && (
             <button
               type="button"

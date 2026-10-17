@@ -265,7 +265,7 @@ function Naechste({ gruppe, onOeffnen, onGehalten }: { gruppe: Gruppe; onOeffnen
           <Icon name="clock" /> {naechste.dauer} Min.
         </span>
         <span>
-          <Icon name="file" /> {bl.length} {bl.length === 1 ? 'Schülerblatt' : 'Schülerblätter'}
+          <Icon name="file" /> {bl.length === 1 ? '1 Blatt für die Gruppe' : `${bl.length} Blätter für die Gruppe`}
         </span>
         <span>
           <Icon name="check" /> {naechste.material.length} Dinge Material
@@ -283,7 +283,7 @@ function Naechste({ gruppe, onOeffnen, onGehalten }: { gruppe: Gruppe; onOeffnen
         {bl.length ? (
           <button type="button" className="btn" onClick={mappe} disabled={laedt}>
             {laedt ? <span className="spin" /> : <Icon name="download" />}
-            Schülerblätter (PDF)
+            Blätter für die Gruppe (PDF)
           </button>
         ) : null}
         <button type="button" className="btn btn-quiet" onClick={() => onGehalten(naechste.id)}>
@@ -293,6 +293,34 @@ function Naechste({ gruppe, onOeffnen, onGehalten }: { gruppe: Gruppe; onOeffnen
       </div>
       <Fortschritt gruppe={gruppe} />
     </section>
+  )
+}
+
+/** Langer Text auf einer Zeile; „Mehr“ klappt ihn auf (nur wenn wirklich etwas abgeschnitten ist). */
+function EinZeile({ text }: { text: string }) {
+  const [offen, setOffen] = useState(false)
+  const [gekuerzt, setGekuerzt] = useState(false)
+  const ref = useRef<HTMLParagraphElement>(null)
+  useEffect(() => {
+    const el = ref.current
+    if (!el || offen) return
+    const messen = () => setGekuerzt(el.scrollWidth > el.clientWidth + 1)
+    messen()
+    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(messen) : null
+    ro?.observe(el)
+    return () => ro?.disconnect()
+  }, [offen, text])
+  return (
+    <div className="ku-einzeile">
+      <p ref={ref} className={offen ? 'offen' : ''}>
+        {text}
+      </p>
+      {gekuerzt || offen ? (
+        <button type="button" className="link-btn" aria-expanded={offen} onClick={() => setOffen((o) => !o)}>
+          {offen ? 'Weniger' : 'Mehr'}
+        </button>
+      ) : null}
+    </div>
   )
 }
 
@@ -308,7 +336,7 @@ function Jahresweg({ jahrNr, gruppe, onOeffnen }: { jahrNr: number; gruppe: Grup
         <h2 id="ku-weg-titel" className="disp">
           Der Jahresweg
         </h2>
-        <p>{jahr.faden}</p>
+        <EinZeile text={jahr.faden} />
       </div>
       <ol className="ku-treppe">
         {module.map((m) => {
@@ -667,7 +695,7 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
             <Icon name="clock" /> {e.dauer} Min.
           </span>
           <span>
-            <Icon name="file" /> {bl.length === 1 ? '1 Schülerblatt' : `${bl.length} Schülerblätter`}
+            <Icon name="file" /> {bl.length === 1 ? '1 Blatt für die Gruppe' : `${bl.length} Blätter für die Gruppe`}
           </span>
           <span>
             <Icon name="check" /> {e.material.length} Dinge Material
@@ -682,7 +710,28 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
           <AblaufLeiste e={e} />
           <PhasenLegende e={e} />
         </div>
+        {/* Wer eine Einheit vorbereitet, druckt: „Einheit drucken“ ist der eine blaue Knopf. „Gehalten“ ist leise, bis es so weit ist. */}
         <div className="ku-einheit-aktionen">
+          <button type="button" className="btn btn-primary" onClick={() => drucken('voll')}>
+            <Icon name="printer" />
+            Einheit drucken
+          </button>
+          <button type="button" className="btn" onClick={() => drucken('kurz')} title="Eine Seite für die Hand: Ablauf, Impulse, Material">
+            <Icon name="file" />
+            Spickzettel (1 Seite)
+          </button>
+          {bl.length ? (
+            <>
+              <button type="button" className="btn" onClick={() => mappe(false)} disabled={!!laedt}>
+                {laedt === 'schueler' ? <span className="spin" /> : <Icon name="download" />}
+                Blätter für die Gruppe (PDF)
+              </button>
+              <button type="button" className="btn btn-quiet" onClick={() => mappe(true)} disabled={!!laedt}>
+                {laedt === 'lehrer' ? <span className="spin" /> : <Icon name="book" />}
+                Mit Seiten für Erwachsene
+              </button>
+            </>
+          ) : null}
           {erl ? (
             <span className="ku-gehalten">
               <Icon name="checkCircle" />
@@ -693,31 +742,11 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
               </button>
             </span>
           ) : (
-            <button type="button" className="btn btn-primary" onClick={() => gehalten(heute())}>
+            <button type="button" className="btn btn-quiet" onClick={() => gehalten(heute())}>
               <Icon name="checkCircle" />
               Heute gehalten
             </button>
           )}
-          <button type="button" className="btn" onClick={() => drucken('voll')}>
-            <Icon name="printer" />
-            Einheit drucken
-          </button>
-          <button type="button" className="btn" onClick={() => drucken('kurz')} title="Eine Seite für die Hand: Ablauf, Impulse, Material">
-            <Icon name="file" />
-            Spickzettel
-          </button>
-          {bl.length ? (
-            <>
-              <button type="button" className="btn" onClick={() => mappe(false)} disabled={!!laedt}>
-                {laedt === 'schueler' ? <span className="spin" /> : <Icon name="download" />}
-                Schülerblätter (PDF)
-              </button>
-              <button type="button" className="btn btn-quiet" onClick={() => mappe(true)} disabled={!!laedt}>
-                {laedt === 'lehrer' ? <span className="spin" /> : <Icon name="book" />}
-                Mit Lehrerseiten
-              </button>
-            </>
-          ) : null}
         </div>
       </header>
 
@@ -726,7 +755,7 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
           <summary>
             <Icon name="alert" />
             <b>Achtung</b>
-            <span>– darauf achtet die Leitung in dieser Einheit</span>
+            <span>– darauf achtet die Fachkraft in dieser Einheit</span>
           </summary>
           <p>{e.achtung}</p>
         </details>
@@ -823,6 +852,12 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
                 </li>
               ))}
             </ol>
+            {/* „Réckbléck“ ist luxemburgisch und kommt im ganzen Kurs vor: einmal erklären, wo der Ablauf steht */}
+            {e.schritte.some((s) => s.titel.includes('Réckbléck')) ? (
+              <p className="ku-wort">
+                <b>Réckbléck</b> heißt „Rückblick“ (luxemburgisch): die kurze Abschlussrunde.
+              </p>
+            ) : null}
           </nav>
           <div className="min-w-0">
             <ol className="ku-schritte">
@@ -1153,7 +1188,7 @@ function GrundlagenSeite({ aktiv }: { aktiv: boolean }) {
         ) : null}
       </nav>
       <header className="ku-einheit-kopf">
-        <p className="ku-held-kicker">Skills-Kurs · Für die Leitung</p>
+        <p className="ku-held-kicker">Skills-Kurs · Für die Fachkraft</p>
         <h1 id="ku-gl-titel" className="disp">
           Grundlagen und Methoden
         </h1>

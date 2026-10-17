@@ -24,7 +24,7 @@
   --pg-warn-line: #f1d9a2;
   --pg-bad: #a23b3b;
   --pg-bad-soft: #fbecec;
-  --pg-tipp: 36px;
+  --pg-tipp: 40px;
   --kind: 'CDSE Kinderschrift', 'Andika', 'Inter var', sans-serif;
   color: var(--ink);
 }
@@ -52,7 +52,7 @@
   font-family: var(--font-display);
   font-weight: 780;
   letter-spacing: -0.025em;
-  font-size: 27px;
+  font-size: var(--fs-2xl);
   line-height: 1.2;
   margin: 4px 0 6px;
 }
@@ -60,12 +60,12 @@
   font-family: var(--font-display);
   font-weight: 760;
   letter-spacing: -0.02em;
-  font-size: 18px;
+  font-size: var(--fs-lg);
   line-height: 1.3;
   margin: 0 0 10px;
 }
 .pg h3 {
-  font-size: 15px;
+  font-size: var(--fs-md);
   font-weight: 650;
   margin: 0;
 }
@@ -78,7 +78,7 @@
   color: var(--muted);
 }
 .pg-klein {
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
 }
 .pg-block {
   display: block;
@@ -106,7 +106,7 @@
   overflow: hidden;
 }
 .pg-eyebrow {
-  font-size: 11.5px;
+  font-size: var(--fs-xs);
   font-weight: 650;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -115,7 +115,7 @@
 .pg-lead {
   color: var(--muted);
   margin: 0;
-  font-size: 15px;
+  font-size: var(--fs-md);
   max-width: 760px;
 }
 .pg-main {
@@ -172,9 +172,9 @@
   min-height: var(--pg-tipp);
   border: 1px solid transparent;
   background: none;
-  border-radius: 9px;
+  border-radius: var(--r-md);
   padding: 6px 11px;
-  font-size: 13.5px;
+  font-size: var(--fs-sm);
   font-weight: 600;
   color: var(--ink-2);
   cursor: pointer;
@@ -198,7 +198,7 @@
   flex-wrap: wrap;
 }
 .pg-speicher {
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   color: var(--muted);
 }
 .pg-speicher.ok {
@@ -211,11 +211,11 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--muted);
   border: 1px dashed var(--line-2);
-  border-radius: 999px;
+  border-radius: var(--r-pill);
   padding: 3px 10px;
 }
 .pg-hubchip .ic {
@@ -234,11 +234,11 @@
   gap: 8px;
   min-height: var(--pg-tipp);
   border: 1px solid var(--line-2);
-  border-radius: 999px;
+  border-radius: var(--r-pill);
   padding: 3px 12px 3px 4px;
   background: var(--surface);
   cursor: pointer;
-  font-size: 13.5px;
+  font-size: var(--fs-sm);
 }
 .pg-kindchip:hover {
   border-color: var(--ink-2);
@@ -250,7 +250,7 @@
   display: grid;
   place-items: center;
   font-weight: 700;
-  font-size: 13px;
+  font-size: var(--fs-xs);
   color: #fff;
   background: #a33b5b;
 }
@@ -265,7 +265,7 @@
 }
 .pg-kindchip small {
   color: var(--muted);
-  font-size: var(--fs-xs, 12px);
+  font-size: var(--fs-xs);
   white-space: nowrap;
 }
 
@@ -273,7 +273,7 @@
 .pg-card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
+  border-radius: var(--r-lg);
   box-shadow: var(--shadow-1);
   padding: 18px;
   min-width: 0;
@@ -310,9 +310,9 @@
   min-height: var(--pg-tipp);
   border: 1px solid var(--line-2);
   background: var(--surface);
-  border-radius: 10px;
+  border-radius: var(--r-md);
   padding: 7px 14px;
-  font-size: 14px;
+  font-size: var(--fs-md);
   font-weight: 600;
   color: var(--ink-2);
   white-space: nowrap;
@@ -338,14 +338,14 @@
 .pg-btn.gross {
   min-height: 48px;
   padding: 11px 20px;
-  font-size: 15px;
-  border-radius: 12px;
+  font-size: var(--fs-md);
+  border-radius: var(--r-md);
 }
 .pg-btn.klein {
-  min-height: max(32px, var(--pg-tipp));
+  min-height: var(--pg-tipp);
   padding: 4px 11px;
-  font-size: 13px;
-  border-radius: 9px;
+  font-size: var(--fs-sm);
+  border-radius: var(--r-md);
 }
 .pg-btn.leer {
   border-color: transparent;
@@ -366,7 +366,7 @@
   place-items: center;
   border: 1px solid transparent;
   background: none;
-  border-radius: 9px;
+  border-radius: var(--r-md);
   color: var(--muted);
   cursor: pointer;
   flex: 0 0 auto;
@@ -403,9 +403,9 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  border-radius: 999px;
+  border-radius: var(--r-pill);
   padding: 2px 9px;
-  font-size: 12px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   background: var(--bg-2);
   color: var(--ink-2);
@@ -435,13 +435,8 @@
   background: #fff1cc;
   color: #6b4a00;
 }
-.pg-pill.zeit {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-}
 .pg-quelle {
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   color: var(--muted);
   display: inline-flex;
   align-items: center;
@@ -468,7 +463,7 @@ hr.pg-fein {
 .pg-mitte .pg-card .pg-chips[role='group'][aria-label]::before {
   content: attr(aria-label);
   flex: 0 0 100%;
-  font-size: 12px;
+  font-size: var(--fs-xs);
   font-weight: 650;
   letter-spacing: 0.02em;
   color: var(--muted);
@@ -486,9 +481,9 @@ hr.pg-fein {
   min-height: var(--pg-tipp);
   border: 1px solid var(--line-2);
   background: var(--surface);
-  border-radius: 999px;
+  border-radius: var(--r-pill);
   padding: 5px 13px;
-  font-size: 13.5px;
+  font-size: var(--fs-sm);
   font-weight: 540;
   color: var(--ink-2);
   line-height: 1.25;
@@ -511,7 +506,7 @@ hr.pg-fein {
 .pg-chip small {
   font-weight: 500;
   color: var(--muted);
-  font-size: 11.5px;
+  font-size: var(--fs-xs);
 }
 .pg-chip.an small {
   color: var(--accent-strong);
@@ -525,7 +520,7 @@ hr.pg-fein {
 .pg-seg {
   display: inline-flex;
   border: 1px solid var(--line-2);
-  border-radius: 10px;
+  border-radius: var(--r-md);
   overflow: hidden;
   background: var(--surface);
   flex-wrap: wrap;
@@ -535,7 +530,7 @@ hr.pg-fein {
   background: none;
   min-height: var(--pg-tipp);
   padding: 4px 11px;
-  font-size: 13px;
+  font-size: var(--fs-sm);
   font-weight: 560;
   color: var(--ink-2);
   border-right: 1px solid var(--line);
@@ -553,16 +548,16 @@ hr.pg-fein {
   gap: 4px;
   background: var(--bg-2);
   padding: 3px;
-  border-radius: 10px;
+  border-radius: var(--r-md);
   flex-wrap: wrap;
 }
 .pg-tabs button {
   border: 0;
   background: none;
-  min-height: max(34px, var(--pg-tipp));
+  min-height: var(--pg-tipp);
   padding: 4px 13px;
-  border-radius: 8px;
-  font-size: 13.5px;
+  border-radius: var(--r-sm);
+  font-size: var(--fs-sm);
   font-weight: 600;
   color: var(--muted);
   cursor: pointer;
@@ -579,7 +574,7 @@ hr.pg-fein {
   display: flex;
   gap: 10px;
   align-items: center;
-  font-size: 14px;
+  font-size: var(--fs-md);
   min-height: var(--pg-tipp);
   cursor: pointer;
 }
@@ -590,16 +585,16 @@ hr.pg-fein {
   flex: 0 0 auto;
 }
 .pg-check.klein {
-  font-size: 13px;
+  font-size: var(--fs-sm);
 }
 .pg-feld,
 .pg-suche input {
   width: 100%;
   min-height: 40px;
   font: inherit;
-  font-size: 14px;
+  font-size: var(--fs-md);
   border: 1px solid var(--line-2);
-  border-radius: 9px;
+  border-radius: var(--r-md);
   padding: 8px 10px;
   background: #fff;
   color: var(--ink);
@@ -624,23 +619,21 @@ hr.pg-fein {
   background: #e7f0ff;
   color: #23408e;
   border: 0;
-  border-radius: 6px;
+  border-radius: var(--r-sm);
   padding: 2px 7px;
   font-weight: 650;
   font-family: ui-monospace, Consolas, monospace;
-  font-size: 12px;
-  min-height: 26px;
+  font-size: var(--fs-xs);
+  min-height: var(--pg-tipp);
 }
 button.pg-ph {
   cursor: pointer;
-  min-height: max(28px, var(--pg-tipp));
+  min-height: var(--pg-tipp);
 }
-@media (pointer: coarse) {
-  /* Fließtext-Links („ändern“, „mehr“, „Ansehen und bestätigen“): Tippfläche größer als die Textzeile */
-  .pg-link {
-    padding: 11px 4px;
-    margin: -11px -4px;
-  }
+/* Fließtext-Links („ändern“, „mehr“, „Ansehen und bestätigen“): Klickfläche 40 px hoch, größer als die Textzeile */
+.pg-link {
+  padding: 11px 4px;
+  margin: -11px -4px;
 }
 .pg-gestrichen {
   text-decoration: line-through;
@@ -649,7 +642,7 @@ button.pg-ph {
 .pg-gelbmark {
   background: #ffe28a;
   color: inherit;
-  border-radius: 4px;
+  border-radius: var(--r-sm);
   padding: 0 3px;
 }
 .pg-trenner {
@@ -663,9 +656,9 @@ button.pg-ph {
   align-items: flex-start;
   background: var(--surface-2);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: var(--r-md);
   padding: 11px 14px;
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   color: var(--ink-2);
 }
 .pg-banner {
@@ -691,7 +684,7 @@ button.pg-ph {
   color: var(--pg-warn);
 }
 .pg-hinweisbox.klein {
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   padding: 8px 10px;
   margin: 6px 0;
 }
@@ -699,7 +692,7 @@ button.pg-ph {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   color: var(--muted);
 }
 
@@ -718,7 +711,7 @@ button.pg-ph {
   text-align: left;
   border: 1px solid var(--line);
   background: var(--surface);
-  border-radius: 16px;
+  border-radius: var(--r-lg);
   padding: 20px;
   box-shadow: var(--shadow-1);
   transition:
@@ -737,7 +730,7 @@ button.pg-ph {
 .pg-weg .wicon {
   width: 46px;
   height: 46px;
-  border-radius: 13px;
+  border-radius: var(--r-md);
   display: grid;
   place-items: center;
 }
@@ -747,20 +740,20 @@ button.pg-ph {
 }
 .pg-weg h3 {
   font-family: var(--font-display);
-  font-size: 19px;
+  font-size: var(--fs-xl);
   font-weight: 780;
   letter-spacing: -0.02em;
 }
 .pg-weg p {
   margin: 0;
   color: var(--muted);
-  font-size: 14px;
+  font-size: var(--fs-md);
 }
 .pg-weg ul {
   margin: 0;
   padding-left: 18px;
   color: var(--ink-2);
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   list-style: disc;
 }
 .pg-weg .los {
@@ -770,7 +763,7 @@ button.pg-ph {
   gap: 6px;
   font-weight: 650;
   color: var(--accent);
-  font-size: 14px;
+  font-size: var(--fs-md);
 }
 .pg-folgeband {
   display: flex;
@@ -779,7 +772,7 @@ button.pg-ph {
   flex-wrap: wrap;
   background: var(--surface);
   border: 1px solid var(--accent-line);
-  border-radius: 16px;
+  border-radius: var(--r-lg);
   padding: 16px 18px;
   box-shadow: var(--shadow-1);
   margin-bottom: 4px;
@@ -787,7 +780,7 @@ button.pg-ph {
 .pg-folgeband .fb-icon {
   width: 44px;
   height: 44px;
-  border-radius: 12px;
+  border-radius: var(--r-md);
   background: var(--accent-soft);
   color: var(--accent);
   display: grid;
@@ -798,7 +791,7 @@ button.pg-ph {
   min-width: 220px;
 }
 .pg-folgeband .fb-titel {
-  font-size: 16px;
+  font-size: var(--fs-lg);
 }
 .pg-folgeband .pg-pill {
   white-space: normal;
@@ -808,7 +801,7 @@ button.pg-ph {
   gap: 8px;
   flex-wrap: wrap;
   align-items: center;
-  font-size: 13px;
+  font-size: var(--fs-xs);
   color: var(--muted);
   margin-top: 4px;
 }
@@ -819,7 +812,7 @@ button.pg-ph {
 .pg-punkte i {
   width: 22px;
   height: 6px;
-  border-radius: 3px;
+  border-radius: var(--r-sm);
   background: var(--line-2);
   display: block;
 }
@@ -838,7 +831,7 @@ button.pg-ph {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   gap: 6px 14px;
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   margin: 0;
 }
 .pg-dl dt {
@@ -875,7 +868,7 @@ button.pg-ph {
 .pg-offen li .t small {
   display: block;
   color: var(--muted);
-  font-size: 12px;
+  font-size: var(--fs-xs);
 }
 .pg-liste-einfach {
   list-style: none;
@@ -923,14 +916,14 @@ button.pg-ph {
   align-items: flex-start;
 }
 .pg-pzeile .pl {
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   color: var(--ink-2);
   min-width: 0;
 }
 .pg-pzeile .pl small {
   display: block;
   color: var(--muted);
-  font-size: 12px;
+  font-size: var(--fs-xs);
 }
 .pg-pzeile .pr {
   display: flex;
@@ -966,7 +959,7 @@ button.pg-ph {
   border-radius: 50%;
   background: var(--accent);
   color: #fff;
-  font-size: 12px;
+  font-size: var(--fs-xs);
   display: grid;
   place-items: center;
   font-weight: 700;
@@ -983,21 +976,19 @@ button.pg-ph {
 }
 .pg-bogenleiste {
   display: flex;
-  gap: 4px;
+  gap: 3px;
   margin: 10px 0;
 }
 .pg-bogenleiste span {
   flex: 1;
   min-width: 0;
   text-align: center;
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 650;
-  padding: 6px 2px;
-  border-radius: 7px;
+  padding: 6px 0;
+  border-radius: var(--r-sm);
   background: var(--bg-2);
   color: var(--ink-2);
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 .pg-mitte {
@@ -1015,12 +1006,12 @@ button.pg-ph {
   width: 100%;
   min-height: var(--pg-tipp);
   border: 1px dashed var(--line-2);
-  border-radius: 12px;
+  border-radius: var(--r-md);
   background: var(--surface-2);
   padding: 8px 12px;
   margin-bottom: 12px;
   font: inherit;
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   color: var(--ink-2);
   text-align: left;
   cursor: pointer;
@@ -1057,54 +1048,49 @@ button.pg-ph {
 }
 .pg-regler label {
   font-weight: 620;
-  font-size: 14px;
+  font-size: var(--fs-md);
 }
 .pg-regler label small {
   display: block;
   color: var(--muted);
   font-weight: 500;
-  font-size: 12px;
+  font-size: var(--fs-xs);
 }
 .pg-regler output {
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--fs-lg);
   color: var(--accent);
   text-align: center;
 }
 .pg-regler input[type='range'] {
   width: 100%;
   accent-color: var(--accent);
-  height: 28px;
+  height: var(--pg-tipp);
   margin: 0;
 }
+/* jede Zahl ist ein echtes Feld in Klickgröße (40 px am PC, 44 px am Touch); der Rand zieht sich nach außen, damit die Zahlen
+   unter den Stellungen des Reglers stehen */
 .pg-regler .ticks {
   display: flex;
   justify-content: space-between;
-  padding: 0 2px;
+  margin: 0 -12px;
+  padding: 0;
 }
 .pg-regler .ticks button {
   position: relative;
   border: 0;
   background: none;
-  font-size: 11.5px;
+  font-size: var(--fs-sm);
   color: var(--muted);
-  width: 22px;
-  height: 22px;
-  border-radius: 6px;
+  width: var(--pg-tipp);
+  height: var(--pg-tipp);
+  border-radius: var(--r-md);
   cursor: pointer;
   padding: 0;
 }
 @media (pointer: coarse) {
-  /* Touch: jede Zahl ist ein echtes 44-×-44-Feld (vorher 22 px sichtbar, 44 px nur als unsichtbare Fläche, die sich überlappte) */
   .pg-regler .ticks {
     margin: 0 -14px;
-    padding: 0;
-  }
-  .pg-regler .ticks button {
-    width: 44px;
-    height: 44px;
-    font-size: var(--fs-sm, 13px);
-    border-radius: 10px;
   }
 }
 .pg-regler .ticks button.an {
@@ -1115,7 +1101,7 @@ button.pg-ph {
 .pg-regler .skalatext {
   display: flex;
   justify-content: space-between;
-  font-size: 11.5px;
+  font-size: var(--fs-xs);
   color: var(--muted);
 }
 .pg-tfgrid {
@@ -1131,11 +1117,11 @@ button.pg-ph {
   gap: 6px;
   min-height: 78px;
   border: 1px solid var(--line-2);
-  border-radius: 14px;
+  border-radius: var(--r-lg);
   padding: 12px 8px;
   background: var(--surface);
   font-weight: 600;
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   color: var(--ink-2);
   cursor: pointer;
   text-align: center;
@@ -1165,7 +1151,7 @@ button.pg-ph {
 }
 .pg-ekopf h1,
 .pg-ekopf h2 {
-  font-size: 26px;
+  font-size: var(--fs-2xl);
   margin: 2px 0 4px;
 }
 /* Aktionen im Kopf: links Baukasten/Vorschau, rechts der Hauptweg (PDF drucken, Stunde gehalten) */
@@ -1199,7 +1185,7 @@ button.pg-ph {
   text-align: left;
   border: 1px solid var(--line);
   background: var(--surface);
-  border-radius: 12px;
+  border-radius: var(--r-md);
   padding: 10px 12px;
   align-items: flex-start;
   cursor: pointer;
@@ -1220,7 +1206,7 @@ button.pg-ph {
   display: grid;
   place-items: center;
   font-weight: 700;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   background: var(--bg-2);
   color: var(--ink-2);
   flex: 0 0 auto;
@@ -1239,12 +1225,12 @@ button.pg-ph {
 }
 .pg-fs b {
   display: block;
-  font-size: 13px;
+  font-size: var(--fs-sm);
   font-weight: 650;
 }
 .pg-fs small {
   display: block;
-  font-size: 12px;
+  font-size: var(--fs-xs);
   color: var(--muted);
   line-height: 1.35;
 }
@@ -1261,7 +1247,7 @@ button.pg-ph {
   display: flex;
   gap: 8px;
   align-items: center;
-  font-size: 12px;
+  font-size: var(--fs-xs);
   color: var(--muted);
   margin-top: 6px;
 }
@@ -1278,7 +1264,7 @@ button.pg-ph {
   column-gap: 12px;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: var(--r-lg);
   padding: 12px 10px 12px 10px;
   box-shadow: var(--shadow-1);
   transition:
@@ -1300,7 +1286,7 @@ button.pg-ph {
   text-align: center;
   font-family: var(--font-display);
   font-weight: 780;
-  font-size: 22px;
+  font-size: var(--fs-xl);
   line-height: 1;
   padding-top: 6px;
   color: var(--ink-2);
@@ -1308,7 +1294,7 @@ button.pg-ph {
 .pg-schritt .zeit small {
   display: block;
   font-family: var(--font-ui);
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--muted);
   margin-top: 3px;
@@ -1324,7 +1310,7 @@ button.pg-ph {
   font: inherit;
   color: inherit;
   cursor: pointer;
-  border-radius: 9px;
+  border-radius: var(--r-md);
   min-width: 0;
 }
 .pg-schritt-haupt:hover h3 {
@@ -1338,12 +1324,12 @@ button.pg-ph {
   flex-wrap: wrap;
 }
 .pg-schritt h3 {
-  font-size: 15.5px;
+  font-size: var(--fs-md);
   margin: 5px 0 3px;
 }
 .pg-schritt .text {
   display: block;
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   color: var(--ink-2);
 }
 /* Anleitung höchstens vier Zeilen; „Ganzer Text“ (Ergebnis.tsx) klappt auf. Das Blatt-Teil (.blatt) bleibt vollständig. */
@@ -1361,14 +1347,16 @@ button.pg-ph {
   line-clamp: unset;
 }
 .pg-schritt .unten .pg-textmehr {
-  display: block;
-  margin: 0 0 6px;
-  font-size: 12.5px;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--pg-tipp);
+  margin: 0 0 4px;
+  font-size: var(--fs-sm);
 }
 .pg-schritt .sagen {
   display: block;
   margin: 5px 0 0;
-  font-size: 13px;
+  font-size: var(--fs-xs);
   color: var(--muted);
   font-style: italic;
 }
@@ -1390,8 +1378,8 @@ button.pg-ph {
   gap: 2px;
 }
 .pg-schritt .aktionen .pg-daumen .pg-ibtn {
-  width: max(32px, var(--pg-tipp));
-  height: max(32px, var(--pg-tipp));
+  width: var(--pg-tipp);
+  height: var(--pg-tipp);
   color: var(--muted);
 }
 .pg-schritt .aktionen .pg-daumen .pg-ibtn .ic {
@@ -1425,9 +1413,9 @@ button.pg-ph {
 .pg-rolle {
   display: inline-flex;
   align-items: center;
-  border-radius: 6px;
+  border-radius: var(--r-sm);
   padding: 1px 8px;
-  font-size: 11.5px;
+  font-size: var(--fs-xs);
   font-weight: 700;
   letter-spacing: 0.02em;
   color: #fff;
@@ -1474,11 +1462,11 @@ button.pg-ph {
   gap: 6px;
   align-items: flex-start;
   margin-top: 8px;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   color: var(--muted);
   background: var(--surface-2);
   border: 1px solid var(--line);
-  border-radius: 9px;
+  border-radius: var(--r-md);
   padding: 6px 9px;
 }
 .pg-warum .ic {
@@ -1496,7 +1484,7 @@ button.pg-ph {
   flex-direction: column;
   gap: 5px;
   margin-top: 8px;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   color: var(--ink-2);
 }
 .pg-beachten {
@@ -1504,7 +1492,7 @@ button.pg-ph {
   gap: 6px;
   background: var(--pg-warn-soft);
   border: 1px solid var(--pg-warn-line);
-  border-radius: 9px;
+  border-radius: var(--r-md);
   padding: 6px 9px;
 }
 .pg-beachten .ic {
@@ -1544,7 +1532,7 @@ button.pg-ph {
   align-items: center;
   gap: 4px;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: var(--r-md);
   padding: 3px 4px 3px 4px;
   background: var(--surface);
 }
@@ -1561,19 +1549,19 @@ button.pg-ph {
   background: none;
   padding: 4px 6px;
   font: inherit;
-  font-size: 13px;
+  font-size: var(--fs-xs);
   text-align: left;
   color: inherit;
   cursor: pointer;
   min-height: var(--pg-tipp);
-  border-radius: 8px;
+  border-radius: var(--r-sm);
 }
 .pg-bliste .art {
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 700;
   color: #8e3550;
   background: #f8ebf0;
-  border-radius: 5px;
+  border-radius: var(--r-sm);
   padding: 1px 6px;
   white-space: nowrap;
 }
@@ -1584,7 +1572,7 @@ button.pg-ph {
 .pg-bliste .bt small {
   display: block;
   color: var(--muted);
-  font-size: 11.5px;
+  font-size: var(--fs-xs);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1599,7 +1587,7 @@ button.pg-ph {
   top: calc(100% + 6px);
   background: var(--surface);
   border: 1px solid var(--line-2);
-  border-radius: 12px;
+  border-radius: var(--r-lg);
   box-shadow: var(--shadow-3);
   padding: 12px;
   width: 300px;
@@ -1607,13 +1595,13 @@ button.pg-ph {
 }
 .pg-popover h4 {
   margin: 0 0 8px;
-  font-size: 13.5px;
+  font-size: var(--fs-md);
 }
 .pg-popover .pg-chips {
   gap: 6px;
 }
 .pg-popover .pg-chip {
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   padding: 4px 10px;
 }
 .pg-popover .pg-btnrow {
@@ -1633,7 +1621,7 @@ button.pg-ph {
   position: relative;
   width: 100%;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--r-sm);
   overflow: hidden;
   background: #fff;
   box-shadow: 0 1px 3px rgba(20, 30, 50, 0.08);
@@ -1643,7 +1631,7 @@ button.pg-ph {
   display: grid;
   place-items: center;
   color: var(--muted);
-  font-size: 13px;
+  font-size: var(--fs-xs);
 }
 .pg-pdfplatz .pg-spin {
   margin-right: 8px;
@@ -1663,8 +1651,8 @@ button.pg-ph {
   min-height: 0;
   margin: 0;
   padding: 0;
-  border: 1.5px solid transparent;
-  border-radius: 5px;
+  border: 2px solid transparent;
+  border-radius: var(--r-sm);
   background: transparent;
   cursor: pointer;
 }
@@ -1690,7 +1678,7 @@ button.pg-ph {
   position: relative;
   width: 100%;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: var(--r-md);
   overflow: hidden;
   background: var(--surface-2);
 }
@@ -1708,16 +1696,16 @@ button.pg-ph {
   align-items: center;
   background: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--line);
-  border-radius: 9px;
+  border-radius: var(--r-md);
   padding: 6px 10px;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   color: var(--ink-2);
 }
 .pg-skizzehinweis {
   display: flex;
   gap: 6px;
   align-items: flex-start;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   color: var(--muted);
   margin: 0 0 8px;
 }
@@ -1731,7 +1719,7 @@ button.pg-ph {
   gap: 8px 14px;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 13px;
+  font-size: var(--fs-xs);
   margin-bottom: 12px;
 }
 .pg-sbar {
@@ -1742,7 +1730,7 @@ button.pg-ph {
 .pg-sbar .bahn {
   width: 110px;
   height: 8px;
-  border-radius: 4px;
+  border-radius: var(--r-sm);
   background: var(--bg-2);
   overflow: hidden;
 }
@@ -1750,7 +1738,7 @@ button.pg-ph {
   display: block;
   height: 100%;
   background: var(--pg-ok);
-  border-radius: 4px;
+  border-radius: var(--r-sm);
 }
 .pg-sbar.warn .bahn i {
   background: #d89423;
@@ -1779,7 +1767,7 @@ button.pg-ph {
   min-width: 0;
 }
 .pg-teileliste h3 {
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   margin: 4px 0 6px;
 }
 .pg-teileliste ul {
@@ -1797,11 +1785,11 @@ button.pg-ph {
   width: 100%;
   min-height: var(--pg-tipp);
   border: 1px solid var(--line);
-  border-radius: 9px;
+  border-radius: var(--r-md);
   background: var(--surface);
   padding: 5px 8px;
   font: inherit;
-  font-size: 13px;
+  font-size: var(--fs-xs);
   text-align: left;
   cursor: pointer;
   color: inherit;
@@ -1828,7 +1816,7 @@ button.pg-ph {
   min-width: 0;
 }
 .pg-ed-spalte h2 {
-  font-size: 16px;
+  font-size: var(--fs-lg);
 }
 .pg-suchliste {
   display: flex;
@@ -1840,7 +1828,7 @@ button.pg-ph {
 }
 .pg-sk {
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: var(--r-lg);
   padding: 10px 10px 10px 12px;
   background: var(--surface);
   display: flex;
@@ -1859,7 +1847,7 @@ button.pg-ph {
   gap: 3px;
 }
 .pg-sk .skt b {
-  font-size: 13.5px;
+  font-size: var(--fs-md);
 }
 .pg-sk .skt > .pg-pill {
   /* der ganze Bausteintext steht in dieser Pille: umbrechen und nach drei Zeilen kürzen statt über die Karte zu laufen */
@@ -1867,7 +1855,7 @@ button.pg-ph {
   white-space: normal;
   max-width: 100%;
   text-align: left;
-  border-radius: 9px;
+  border-radius: var(--r-md);
   padding: 4px 9px;
   line-height: 1.35;
   font-weight: 560;
@@ -1882,7 +1870,7 @@ button.pg-ph {
 .pg-sk .skt small {
   display: block;
   color: var(--muted);
-  font-size: 12px;
+  font-size: var(--fs-xs);
 }
 .pg-sk .skt small.ein {
   color: var(--accent-strong);
@@ -1894,7 +1882,7 @@ button.pg-ph {
 }
 .pg-er {
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: var(--r-lg);
   background: var(--surface);
 }
 .pg-er .erk-kopf {
@@ -1911,15 +1899,16 @@ button.pg-ph {
   text-align: left;
   font: inherit;
   color: inherit;
+  min-height: var(--pg-tipp);
   padding: 4px;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: var(--r-sm);
 }
 .pg-er .ertitel.statisch {
   cursor: default;
 }
 .pg-er .ertitel b {
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -1927,7 +1916,7 @@ button.pg-ph {
 }
 .pg-er .ertitel small {
   display: block;
-  font-size: 12px;
+  font-size: var(--fs-xs);
   color: var(--muted);
 }
 .pg-er .geaendert {
@@ -1943,7 +1932,7 @@ button.pg-ph {
 .pg-er .knoepfe .min {
   min-width: 50px;
   text-align: center;
-  font-size: 13px;
+  font-size: var(--fs-xs);
 }
 .pg-er .felder {
   border-top: 1px solid var(--line);
@@ -1952,14 +1941,14 @@ button.pg-ph {
   flex-direction: column;
   gap: 10px;
   background: var(--surface-2);
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 var(--r-lg) var(--r-lg);
 }
 .pg-er.offen > .felder:first-child {
   border-top: 0;
-  border-radius: 12px;
+  border-radius: var(--r-lg);
 }
 .pg-er .felder label {
-  font-size: 12px;
+  font-size: var(--fs-xs);
   font-weight: 620;
   color: var(--muted);
   display: flex;
@@ -1970,9 +1959,9 @@ button.pg-ph {
 .pg-er .felder textarea {
   width: 100%;
   font: inherit;
-  font-size: 14px;
+  font-size: var(--fs-md);
   border: 1px solid var(--line-2);
-  border-radius: 8px;
+  border-radius: var(--r-md);
   padding: 8px 10px;
   background: #fff;
   color: var(--ink);
@@ -1983,7 +1972,7 @@ button.pg-ph {
 }
 .pg-er .felder small.warn {
   color: var(--pg-warn);
-  font-size: 12px;
+  font-size: var(--fs-xs);
 }
 .pg-er.offen {
   border-color: var(--accent-line);
@@ -2000,10 +1989,10 @@ button.pg-ph {
   gap: 4px;
   border: 1px dashed var(--line-2);
   background: transparent;
-  border-radius: 8px;
+  border-radius: var(--r-md);
   padding: 2px 10px;
-  min-height: max(28px, var(--pg-tipp));
-  font-size: 12px;
+  min-height: var(--pg-tipp);
+  font-size: var(--fs-xs);
   color: var(--muted);
   cursor: pointer;
 }
@@ -2034,7 +2023,7 @@ button.pg-ph {
   align-items: center;
   padding: 6px 0;
   border-top: 1px dashed var(--line);
-  font-size: 13.5px;
+  font-size: var(--fs-md);
 }
 .pg-vbalken:first-child {
   border-top: 0;
@@ -2043,7 +2032,7 @@ button.pg-ph {
   position: relative;
   height: 10px;
   background: var(--bg-2);
-  border-radius: 5px;
+  border-radius: var(--r-sm);
 }
 .pg-vbalken .vbahn::before {
   content: '';
@@ -2058,7 +2047,7 @@ button.pg-ph {
   position: absolute;
   top: 0;
   bottom: 0;
-  border-radius: 5px;
+  border-radius: var(--r-sm);
 }
 .pg-vbalken .vbahn i.pos {
   left: 50%;
@@ -2077,7 +2066,7 @@ button.pg-ph {
 }
 .pg-rechnung summary {
   cursor: pointer;
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   font-weight: 650;
   color: var(--accent);
   min-height: var(--pg-tipp);
@@ -2114,7 +2103,7 @@ button.pg-ph {
 }
 .pg-pr h3 {
   font-family: var(--font-display);
-  font-size: 16.5px;
+  font-size: var(--fs-lg);
   font-weight: 760;
   letter-spacing: -0.015em;
 }
@@ -2122,16 +2111,16 @@ button.pg-ph {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   color: var(--muted);
 }
 .pg-pr .zahlen b {
   color: var(--ink);
-  font-size: 14px;
+  font-size: var(--fs-sm);
 }
 .pg-quote {
   height: 6px;
-  border-radius: 3px;
+  border-radius: var(--r-sm);
   background: var(--bg-2);
   overflow: hidden;
 }
@@ -2159,13 +2148,13 @@ dialog.pg-dlg {
   margin: auto;
   padding: 0;
   border: 0;
-  border-radius: 16px;
+  border-radius: var(--r-lg);
   background: var(--surface);
   color: var(--ink);
   box-shadow: var(--shadow-3);
   overflow: hidden;
-  font-size: 14.5px;
-  --pg-tipp: 36px;
+  font-size: var(--fs-md);
+  --pg-tipp: 40px;
   --pg-ok: #2f6b3a;
   --pg-ok-soft: #e8f3ea;
   --pg-warn: #7a4f00;
@@ -2211,12 +2200,12 @@ dialog.pg-dlg .ic {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 760;
-  font-size: 19px;
+  font-size: var(--fs-lg);
   letter-spacing: -0.02em;
 }
 .pg-dkopf p {
   margin: 3px 0 0;
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   color: var(--muted);
 }
 .pg-dkopf .pg-ibtn {
@@ -2242,7 +2231,7 @@ dialog.pg-dlg .ic {
 }
 .pg-dfuss .links {
   margin-right: auto;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   color: var(--muted);
   display: inline-flex;
   gap: 5px;
@@ -2250,7 +2239,7 @@ dialog.pg-dlg .ic {
 }
 .pg-alt {
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: var(--r-lg);
   padding: 12px 14px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -2274,12 +2263,12 @@ dialog.pg-dlg .ic {
   flex-wrap: wrap;
 }
 .pg-alt h3 {
-  font-size: 14.5px;
+  font-size: var(--fs-md);
   margin: 4px 0 2px;
 }
 .pg-alt p {
   margin: 0;
-  font-size: 13px;
+  font-size: var(--fs-xs);
   color: var(--ink-2);
 }
 .pg-alt p.pg-kurz {
@@ -2298,7 +2287,7 @@ dialog.pg-dlg .ic {
 .pg-alt .pg-textmehr {
   display: block;
   margin-top: 4px;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
 }
 .pg-gross3 {
   display: grid;
@@ -2309,12 +2298,12 @@ dialog.pg-dlg .ic {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .pg-gross3 button {
-  border: 1.5px solid var(--line-2);
+  border: 2px solid var(--line-2);
   background: var(--surface);
-  border-radius: 14px;
+  border-radius: var(--r-lg);
   padding: 14px 8px;
   font-weight: 700;
-  font-size: 14.5px;
+  font-size: var(--fs-md);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2357,32 +2346,32 @@ dialog.pg-dlg .ic {
   align-items: center;
   padding: 7px 0;
   border-top: 1px dashed var(--line);
-  font-size: 13.5px;
+  font-size: var(--fs-md);
 }
 .pg-klein-titel {
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   font-weight: 650;
 }
 .pg-notizvorschau {
   border: 1px solid var(--line);
   border-left: 4px solid #1f6b6f;
-  border-radius: 10px;
+  border-radius: var(--r-md);
   padding: 10px 12px;
   background: var(--surface-2);
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   color: var(--ink-2);
 }
 .pg-notizvorschau small {
   display: block;
   color: var(--muted);
-  font-size: 12px;
+  font-size: var(--fs-xs);
   margin-bottom: 3px;
 }
 .pg-geteilt {
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: var(--r-lg);
   padding: 12px 14px;
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   background: var(--surface-2);
 }
 .pg-geteilt ul {
@@ -2402,7 +2391,7 @@ dialog.pg-dlg .ic {
 }
 .pg-diff small {
   display: block;
-  font-size: 11.5px;
+  font-size: var(--fs-xs);
   color: var(--muted);
   font-weight: 600;
 }
@@ -2434,9 +2423,9 @@ dialog .pg-hinweise {
   max-width: min(600px, calc(100vw - 32px));
   background: #0e1628;
   color: #fff;
-  border-radius: 12px;
+  border-radius: var(--r-md);
   padding: 9px 8px 9px 14px;
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   box-shadow: var(--shadow-3);
 }
 .pg-toast .ic {
@@ -2456,9 +2445,9 @@ dialog .pg-hinweise {
   border: 0;
   background: none;
   color: rgba(255, 255, 255, 0.8);
-  width: max(32px, var(--pg-tipp));
-  height: max(32px, var(--pg-tipp));
-  border-radius: 8px;
+  width: var(--pg-tipp);
+  height: var(--pg-tipp);
+  border-radius: var(--r-md);
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -2521,7 +2510,7 @@ dialog .pg-hinweise {
   overflow: hidden;
   position: relative;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--r-md);
   background: #fff;
   margin-top: 6px;
 }
@@ -3482,7 +3471,7 @@ dialog .pg-hinweise {
    Größen und Radien nach der Skala des Berichts (--fs-*, --r-*), mit Rückfall, falls index.css sie noch nicht kennt.
    --------------------------------------------------------------------------- */
 .pg .pg-abschnitt {
-  font-size: var(--fs-lg, 17px);
+  font-size: var(--fs-lg);
   margin: 24px 0 10px;
 }
 .pg-fblock p.pg-zielhinweis {
@@ -3507,7 +3496,7 @@ dialog .pg-hinweise {
   color: var(--ink-2);
   background: var(--surface);
   border: 1px solid var(--line-2);
-  border-radius: var(--r-lg, 14px);
+  border-radius: var(--r-lg);
   cursor: pointer;
   transition:
     border-color 0.12s,
@@ -3519,19 +3508,19 @@ dialog .pg-hinweise {
 }
 .pg-anliegen b {
   font-family: var(--font-display);
-  font-size: var(--fs-md, 15px);
+  font-size: var(--fs-md);
   font-weight: 740;
   color: var(--ink);
 }
 .pg-anliegen span {
-  font-size: var(--fs-sm, 13px);
+  font-size: var(--fs-sm);
   line-height: 1.4;
   color: var(--ink-2);
 }
 .pg-anliegen small {
   margin-top: auto;
   padding-top: 5px;
-  font-size: var(--fs-xs, 12px);
+  font-size: var(--fs-xs);
   color: var(--muted);
 }
 
@@ -3546,7 +3535,7 @@ dialog .pg-hinweise {
   min-height: var(--pg-tipp);
   padding: 10px 14px;
   border: 1px dashed var(--line-2);
-  border-radius: var(--r-lg, 14px);
+  border-radius: var(--r-lg);
   background: var(--surface-2);
   cursor: pointer;
   list-style: none;
@@ -3570,12 +3559,12 @@ dialog .pg-hinweise {
 }
 .pg-selbst > summary b {
   display: block;
-  font-size: var(--fs-md, 15px);
+  font-size: var(--fs-md);
   color: var(--ink);
 }
 .pg-selbst > summary small {
   display: block;
-  font-size: var(--fs-sm, 13px);
+  font-size: var(--fs-sm);
   color: var(--muted);
 }
 .pg-selbst[open] > summary {
@@ -3586,11 +3575,11 @@ dialog .pg-hinweise {
   min-height: var(--pg-tipp);
   min-width: 190px;
   border: 1px solid var(--line-2);
-  border-radius: var(--r-md, 10px);
+  border-radius: var(--r-md);
   background: var(--surface);
   padding: 6px 12px;
   font: inherit;
-  font-size: var(--fs-md, 15px);
+  font-size: var(--fs-md);
   color: var(--ink);
 }
 .pg-zielgruppe {
@@ -3603,7 +3592,7 @@ dialog .pg-hinweise {
   align-items: center;
   gap: 7px;
   margin-bottom: 6px;
-  font-size: var(--fs-xs, 12px);
+  font-size: var(--fs-xs);
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--bereich, var(--muted));
@@ -3622,8 +3611,8 @@ dialog .pg-hinweise {
   gap: 4px;
   background: var(--surface-2);
   border: 1px solid var(--line);
-  border-radius: var(--r-md, 10px);
-  font-size: var(--fs-sm, 13px);
+  border-radius: var(--r-md);
+  font-size: var(--fs-sm);
   color: var(--ink-2);
 }
 .pg-zwei.eine {
@@ -3638,15 +3627,12 @@ dialog .pg-hinweise {
   flex-wrap: wrap;
   gap: 8px 14px;
   margin-bottom: 14px;
-  padding: 10px 14px;
-  background: var(--warn-bg, var(--pg-warn-soft));
-  border: 1px solid var(--warn-line, var(--pg-warn-line));
-  border-radius: var(--r-md, 10px);
-  font-size: var(--fs-sm, 13px);
-  color: var(--ink-2);
-}
-.pg-streifen .ic {
-  color: var(--warn-ink, var(--pg-warn));
+  padding: 6px 8px 6px 14px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  font-size: var(--fs-sm);
+  color: var(--muted);
 }
 .pg-streifen p {
   flex: 1 1 340px;
@@ -3655,7 +3641,8 @@ dialog .pg-hinweise {
   line-height: 1.45;
 }
 .pg-streifen b {
-  color: var(--warn-ink, var(--pg-warn));
+  font-weight: 650;
+  color: var(--ink-2);
 }
 
 /* Tagesform: die Voreinstellungen sind der Weg, die Regler das Feineinstellen */
@@ -3675,8 +3662,8 @@ dialog .pg-hinweise {
   font: inherit;
   color: var(--ink-2);
   background: var(--surface);
-  border: 1.5px solid var(--line-2);
-  border-radius: var(--r-lg, 14px);
+  border: 2px solid var(--line-2);
+  border-radius: var(--r-lg);
   cursor: pointer;
 }
 .pg-vorwahl button:hover {
@@ -3688,11 +3675,11 @@ dialog .pg-hinweise {
   color: var(--accent-strong);
 }
 .pg-vorwahl b {
-  font-size: var(--fs-md, 15px);
+  font-size: var(--fs-md);
   font-weight: 700;
 }
 .pg-vorwahl small {
-  font-size: var(--fs-xs, 12px);
+  font-size: var(--fs-xs);
   line-height: 1.35;
   color: var(--muted);
 }
@@ -3708,7 +3695,7 @@ dialog .pg-hinweise {
   gap: 8px;
   min-height: var(--pg-tipp);
   cursor: pointer;
-  font-size: var(--fs-sm, 13px);
+  font-size: var(--fs-sm);
   font-weight: 600;
   color: var(--accent);
   list-style: none;
@@ -3793,10 +3780,10 @@ dialog .pg-hinweise {
     display: inline-flex;
   }
   .pg h1 {
-    font-size: 22px;
+    font-size: var(--fs-xl);
   }
   .pg-lead {
-    font-size: 14px;
+    font-size: var(--fs-md);
   }
   .pg-wege,
   .pg-zwei,
@@ -3811,13 +3798,13 @@ dialog .pg-hinweise {
     gap: 10px;
     margin: 14px 0 16px;
   }
-  /* Weg-Karten als Zeilen (≈ 95 px statt 190 px): Symbol, Titel, Dauer, Beschreibung */
+  /* Weg-Karten als Zeilen (≈ 95 px statt 190 px): Symbol, Titel, Beschreibung */
   .pg-weg {
     display: grid;
-    grid-template-columns: 40px minmax(0, 1fr) auto;
+    grid-template-columns: 40px minmax(0, 1fr);
     grid-template-areas:
-      'icon titel zeit'
-      'icon text text';
+      'icon titel'
+      'icon text';
     column-gap: 12px;
     row-gap: 2px;
     align-items: center;
@@ -3831,15 +3818,11 @@ dialog .pg-hinweise {
   }
   .pg-weg h3 {
     grid-area: titel;
-    font-size: 17px;
-  }
-  .pg-weg .pg-pill.zeit {
-    grid-area: zeit;
-    position: static;
+    font-size: var(--fs-lg);
   }
   .pg-weg p {
     grid-area: text;
-    font-size: 13px;
+    font-size: var(--fs-xs);
   }
   .pg-weg ul,
   .pg-weg .los {
@@ -3882,7 +3865,7 @@ dialog .pg-hinweise {
     gap: 4px;
   }
   .pg-schritt .zeit {
-    font-size: 18px;
+    font-size: var(--fs-lg);
   }
   .pg-regler {
     grid-template-columns: minmax(0, 1fr) 34px;
@@ -3960,7 +3943,7 @@ dialog .pg-hinweise {
   }
   .pg-ekopf h1,
   .pg-ekopf h2 {
-    font-size: 22px;
+    font-size: var(--fs-xl);
   }
   /* Ergebnis: PDF drucken und Stunde gehalten als feste Leiste am unteren Rand */
   .pg-aktionen {
@@ -4077,9 +4060,9 @@ dialog .pg-hinweise {
   margin: 0 0 12px;
   padding: 10px 14px;
   border: 1px solid var(--line-2);
-  border-radius: 12px;
+  border-radius: var(--r-lg);
   background: var(--surface-2);
-  font-size: 13.5px;
+  font-size: var(--fs-md);
   color: var(--ink-2);
 }
 .pg-warumfolge summary {
@@ -4096,4 +4079,174 @@ dialog .pg-hinweise {
 }
 .pg-warumfolge li {
   margin: 2px 0;
+}
+
+/* ---------------------------------------------------------------------------
+   Glätten (Fachkraft um 16 Uhr): „Mehr“-Menü, Alter über den Anliegen, Hilfe, „Gespeichert.“, „Mehr einstellen“
+   --------------------------------------------------------------------------- */
+.pg-mehr {
+  position: relative;
+}
+.pg-mehr > button .ic {
+  width: 16px;
+  height: 16px;
+}
+.pg-mehr-liste {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 6px);
+  z-index: 40;
+  min-width: 240px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-3);
+}
+.pg-mehr-liste.rechts {
+  left: auto;
+  right: 0;
+}
+.pg-mehr-liste button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: var(--pg-tipp);
+  padding: 8px 12px;
+  border: 0;
+  border-radius: var(--r-sm);
+  background: none;
+  color: var(--ink);
+  font-size: var(--fs-md);
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.pg-mehr-liste button:hover {
+  background: var(--bg);
+}
+.pg-mehr-liste button[aria-current='page'] {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+/* Alter und Sprache stehen über den Anliegen: ein Tipp auf eine Karte nimmt sie mit */
+.pg-angaben {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  margin: 18px 0 0;
+  padding: 12px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+}
+.pg-angabe {
+  font-size: var(--fs-md);
+  font-weight: 650;
+  color: var(--ink);
+}
+.pg-hilfelink {
+  margin: 16px 0 0;
+  font-size: var(--fs-md);
+  color: var(--muted);
+}
+.pg-hilfelink .pg-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* „Mehr einstellen“ im Formular „Gründlich planen“: die Vorgaben stimmen meistens */
+.pg-selbst.pg-mehrein {
+  margin-top: 4px;
+}
+.pg-mehrein .pg-fblock {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.pg-mehrein .pg-fblock:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+/* „Stunde gehalten“: ein Klick speichert, alles andere ist zugeklappt */
+.pg-gespeichert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--fs-md);
+  color: var(--pg-ok);
+}
+.pg-gespeichert:not(:empty) {
+  margin-top: 4px;
+  min-height: var(--pg-tipp);
+}
+.pg-gespeichert b {
+  font-weight: 650;
+}
+.pg-mehrangabe {
+  margin-top: 6px;
+  border-top: 1px solid var(--line);
+}
+.pg-mehrangabe > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--pg-tipp);
+  cursor: pointer;
+  list-style: none;
+  font-size: var(--fs-md);
+  font-weight: 650;
+  color: var(--accent-strong);
+}
+.pg-mehrangabe > summary::-webkit-details-marker {
+  display: none;
+}
+.pg-mehrangabe > summary::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 0.12s;
+  flex: 0 0 auto;
+}
+.pg-mehrangabe[open] > summary::before {
+  transform: rotate(45deg);
+}
+.pg-mehrangabe > div {
+  margin-top: 12px;
+}
+
+/* Hilfe */
+.pg-hilfe h3 {
+  margin: 16px 0 4px;
+  font-size: var(--fs-md);
+  color: var(--ink);
+}
+.pg-hilfe h3:first-child {
+  margin-top: 0;
+}
+.pg-hilfe p {
+  margin: 0;
+  font-size: var(--fs-md);
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+/* Hinweis mit zweiter, kleiner Zeile (z. B. der Dateiname der PDF) */
+.pg-toast-text small {
+  display: block;
+  margin-top: 2px;
+  font-size: var(--fs-xs);
+  opacity: 0.8;
+  overflow-wrap: anywhere;
 }
