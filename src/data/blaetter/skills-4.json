@@ -238,7 +238,7 @@
               "text": "Parler, écouter et résoudre des problèmes fonctionnent. C’est le meilleur moment pour s’exercer aux skills. Chez moi, c’est comme ça :"
             },
             {
-              "titel": "Jaune (30–70) : ça se resserre",
+              "titel": "Orange (30–70) : ça se resserre",
               "text": "Je deviens irritable, agité ou je me referme. Ce qui aide : la distraction, les sens, la musique, le mouvement. Chez moi, c’est comme ça :"
             },
             {
@@ -255,7 +255,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mon évolution : à chaque tour d’humeur, note ton chiffre – et une fois de plus à la fin de la séance.",
+          "text": "Mon évolution : à chaque check-in, note ton chiffre – et une fois de plus à la fin de la séance.",
           "hinweis": "Ainsi, tu verras avec le temps ce qui fait bouger ton chiffre."
         },
         {
@@ -290,7 +290,7 @@
           "art": "einschaetzung",
           "optionen": [
             "Vert 0–30",
-            "Jaune 30–70",
+            "Orange 30–70",
             "Rouge 70–100"
           ],
           "items": [
@@ -358,20 +358,20 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
-          "text": "Au tour d’humeur, ton chiffre suffit. S’il est souvent très élevé, parle à la personne qui anime ou à quelqu’un en qui tu as confiance."
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Au check-in, ton chiffre suffit. S’il est souvent très élevé, parle à l’adulte qui anime ou à quelqu’un en qui tu as confiance."
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes découvrent l’échelle de tension de 0 à 100, décrivent leurs signes dans trois zones et évaluent des situations. Dès la séance 11, le chiffre fait partie de chaque tour d’humeur.",
+        "ziel": "Les jeunes découvrent l’échelle de tension de 0 à 100, décrivent leurs signes dans trois zones et évaluent des situations. Dès la séance 11, le chiffre fait partie de chaque check-in.",
         "ablauf": [
-          "Entrée (5 min) : remplir les zones au tableau avec le groupe. Montrer avec le modèle de la main pourquoi parler n’aide pas au rouge.",
+          "Entrée en matière (5 min) : remplir les zones au tableau avec le groupe. Montrer avec le modèle de la main pourquoi parler n’aide pas au rouge.",
           "Tâche 1 (5 min) : ses signes par zone ; aide : la carte des émotions (séance 9).",
           "Tâche 3 seul, puis sur la ligne au sol : lire les situations, chacun se place à son chiffre.",
           "Tâche 4 seul et en privé ; tâche 5 pendant la promenade sans paroles.",
-          "Tâche 2 dès maintenant à chaque tour d’humeur : chiffre au début et à la fin."
+          "Tâche 2 dès maintenant à chaque check-in : chiffre au début et à la fin."
         ],
-        "hintergrund": "L’entraînement aux skills de la thérapie comportementale dialectique (DBT) a été adapté aux adolescents (Rathus & Miller, 2015) ; l’échelle de 0 à 100 en est un outil de base (Fleischhaker et al., 2011). Elle sépare l’intensité de la tension de l’émotion et rend visible ce que décrit Linehan (2015) : à très forte excitation, les capacités qui supposent de réfléchir font défaut. D’où la règle : au vert, s’exercer et résoudre des problèmes ; au jaune, se distraire et utiliser les sens ; au rouge, d’abord faire baisser l’excitation par des skills corporels et sensoriels. Les limites à 30 et 70 sont des repères. Nommer régulièrement son chiffre aide à remarquer ses états plus tôt.",
+        "hintergrund": "L’entraînement aux skills de la thérapie comportementale dialectique (DBT) a été adapté aux adolescents (Rathus & Miller, 2015) ; l’échelle de 0 à 100 en est un outil de base (Fleischhaker et al., 2011). Elle sépare l’intensité de la tension de l’émotion et rend visible ce que décrit Linehan (2015) : à très forte excitation, les capacités qui supposent de réfléchir font défaut. D’où la règle : au vert, s’exercer et résoudre des problèmes ; à l’orange, se distraire et utiliser les sens ; au rouge, d’abord faire baisser l’excitation par des skills corporels et sensoriels. Les limites à 30 et 70 sont des repères. Nommer régulièrement son chiffre aide à remarquer ses états plus tôt.",
         "quellen": [
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
           "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
@@ -382,7 +382,7 @@
           "schwerer": "Pour chaque situation, noter la pensée qui fait monter le chiffre – préparation au module 4."
         },
         "impulse": [
-          "Qu’est-ce que vous remarquez en premier quand vous glissez vers le jaune ?",
+          "Qu’est-ce que vous remarquez en premier quand vous glissez vers l’orange ?",
           "Pourquoi la même situation a-t-elle un chiffre différent pour deux personnes ?"
         ],
         "tipps": [
@@ -1243,7 +1243,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Ton lieu t’appartient. Il peut être réel ou inventé – une plage, une cabane dans un arbre, une pièce d’un jeu vidéo. Personne n’est obligé de montrer son lieu."
         },
         {
@@ -1289,7 +1289,7 @@
           "titel": "Comment ton lieu devient un skill",
           "punkte": [
             "Visite-le d’abord quand ça va bien – quelques fois par semaine, une minute suffit.",
-            "Il marche alors aussi au jaune, par exemple avant un devoir en classe ou le soir au lit.",
+            "Il marche alors aussi à l’orange, par exemple avant un devoir en classe ou le soir au lit.",
             "Au rouge, il n’aide en général plus. Dans ce cas, d’abord un skill corporel ou sensoriel."
           ]
         }
@@ -1310,7 +1310,7 @@
           "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta."
         ],
         "differenzierung": {
-          "leichter": "Seulement dessiner, sans débuts de phrases ; trouver le mot-clé avec la personne qui anime.",
+          "leichter": "Seulement dessiner, sans débuts de phrases ; trouver le mot-clé avec l’adulte qui anime.",
           "schwerer": "Écrire une courte consigne personnelle pour le lieu et l’enregistrer en note vocale."
         },
         "impulse": [
@@ -1540,7 +1540,7 @@
     },
     "fr": {
       "titel": "Ma valise de skills et mon plan feu tricolore",
-      "untertitel": "Tes meilleurs skills au même endroit – et un plan de ce que tu fais au vert, au jaune et au rouge.",
+      "untertitel": "Tes meilleurs skills au même endroit – et un plan de ce que tu fais au vert, à l’orange et au rouge.",
       "bausteine": [
         {
           "art": "text",
@@ -1597,7 +1597,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "À quoi remarques-tu que tu glisses vers le jaune ? Coche tes signaux d’alarme.",
+          "text": "À quoi remarques-tu que tu glisses vers l’orange ? Coche tes signaux d’alerte.",
           "hinweis": "Ta carte des émotions de la séance 9 t’aide pour cela."
         },
         {
@@ -1625,7 +1625,7 @@
           "titel": "Quel skill va où ?",
           "punkte": [
             "Rouge : corps et sens – ils marchent même quand penser n’est plus possible.",
-            "Jaune : skills de tête, musique, mouvement, écrire à quelqu’un.",
+            "Orange : skills de tête, musique, mouvement, écrire à quelqu’un.",
             "Vert : les personnes et activités qui remplissent tes réservoirs – et du temps pour t’exercer aux skills."
           ]
         },
@@ -1643,8 +1643,8 @@
               "text": "Mes skills d’urgence pour le corps et les sens – et où je vais :"
             },
             {
-              "titel": "Jaune – ça monte (30–70)",
-              "text": "Mes signaux d’alarme – et les skills que j’utilise alors :"
+              "titel": "Orange – ça monte (30–70)",
+              "text": "Mes signaux d’alerte – et les skills que j’utilise alors :"
             },
             {
               "titel": "Vert – ça va bien (0–30)",
@@ -1681,15 +1681,15 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes réunissent leurs skills testés dans une valise de skills et fixent dans le plan feu tricolore ce qu’ils font au vert, au jaune et au rouge et vers qui ils peuvent aller.",
+        "ziel": "Les jeunes réunissent leurs skills testés dans une valise de skills et fixent dans le plan feu tricolore ce qu’ils font au vert, à l’orange et au rouge et vers qui ils peuvent aller.",
         "ablauf": [
           "Avant : préparer la feuille de test, le passeport Skills et la feuille du thermomètre ; pour le vert, les réservoirs de besoins de la séance 4.",
           "Valise (10 min) : dans chaque compartiment, deux ou trois skills qui ont bien marché au test.",
-          "Signaux d’alarme (5 min) : cocher ; aide : la carte des émotions de la séance 9.",
+          "Signaux d’alerte (5 min) : cocher ; aide : la carte des émotions de la séance 9.",
           "Plan feu tricolore (10 min) du vert au rouge ; au rouge, vérifier : est-ce que ça marche aussi sans réfléchir ?",
           "Noter au moins un adulte joignable ; emporter le plan et le photographier."
         ],
-        "hintergrund": "La valise de skills – souvent appelée valise d’urgence dans la pratique – rassemble des capacités et des objets éprouvés, immédiatement à portée de main en cas de forte tension ; elle suit l’entraînement aux skills de la DBT pour adolescents (Fleischhaker et al., 2011). Le feu tricolore les associe à la tension et à des signaux d’alarme précoces, pour agir avant d’atteindre le rouge (Rathus & Miller, 2015). Du plan de sécurité de Stanley & Brown (2012) viennent l’ordre allant de la gestion personnelle aux personnes de confiance puis aux numéros d’aide, et le principe de nommer concrètement des personnes joignables. Le vert se rattache au bocal des besoins.",
+        "hintergrund": "La valise de skills – souvent appelée valise d’urgence dans la pratique – rassemble des capacités et des objets éprouvés, immédiatement à portée de main en cas de forte tension ; elle suit l’entraînement aux skills de la DBT pour adolescents (Fleischhaker et al., 2011). Le feu tricolore les associe à la tension et à des signaux d’alerte précoces, pour agir avant d’atteindre le rouge (Rathus & Miller, 2015). Du plan de sécurité de Stanley & Brown (2012) viennent l’ordre allant de la gestion personnelle aux personnes de confiance puis aux numéros d’aide, et le principe de nommer concrètement des personnes joignables. Le vert se rattache au bocal des besoins.",
         "quellen": [
           "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
@@ -1697,7 +1697,7 @@
         ],
         "differenzierung": {
           "leichter": "Ne remplir que le rouge et une personne ; préparer la valise à l’oral.",
-          "schwerer": "Pour le jaune, formuler une phrase « si … alors » : « Si je remarque que …, alors … »"
+          "schwerer": "Pour l’orange, formuler une phrase « si … alors » : « Si je remarque que …, alors … »"
         },
         "impulse": [
           "Qu’y a-t-il au rouge qui marche aussi sans réfléchir ?",
@@ -2124,7 +2124,7 @@
           "items": [
             {
               "titel": "Quand aide-t-il ?",
-              "text": "au jaune, au rouge ou aux deux"
+              "text": "à l’orange, au rouge ou aux deux"
             },
             {
               "titel": "Montrer",
@@ -2158,7 +2158,7 @@
           "Carte d’urgence (10 min) : skills pour le rouge tirés du plan feu tricolore, au verso des personnes avec leur numéro de téléphone ; plastifier ensemble.",
           "Cartes (10 min) : découper celles qui conviennent, remplir les cartes vides avec ses propres skills.",
           "Tâche 3 (15 min) : chaque personne guide un skill avec sa carte préférée.",
-          "Garder les cartes restantes comme jeu de groupe – pour les tours d’humeur et les séances joker."
+          "Garder les cartes restantes comme jeu de groupe – pour les check-ins et les séances joker."
         ],
         "hintergrund": "À forte tension, beaucoup oublient justement ce qu’ils savent faire ; les skills ne servent que s’ils sont à portée de main. En thérapie cognitivo-comportementale, les cartes d’adaptation ont fait leurs preuves : de brefs rappels écrits que l’on porte sur soi (Beck, 2011). La carte d’urgence reprend des principes du plan de sécurité : peu d’étapes concrètes et des personnes vraiment joignables (Stanley & Brown, 2012). Guider soi-même un skill le consolide et fait vivre un sentiment de compétence, ce qui renforce le sentiment d’efficacité personnelle (Bandura, 1977).",
         "quellen": [
@@ -2167,8 +2167,8 @@
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
         ],
         "differenzierung": {
-          "leichter": "Ne créer que la carte d’urgence ; la personne qui anime écrit avec si on le souhaite.",
-          "schwerer": "Créer une deuxième carte pour le jaune : au recto le signal d’alarme, au verso le skill."
+          "leichter": "Ne créer que la carte d’urgence ; l’adulte qui anime écrit avec si on le souhaite.",
+          "schwerer": "Créer une deuxième carte pour l’orange : au recto le signal d’alerte, au verso le skill."
         },
         "impulse": [
           "Que doit-il y avoir sur la carte pour qu’elle t’aide encore à 90 ?",
@@ -2176,7 +2176,7 @@
         ],
         "tipps": [
           "Les pochettes de plastification au format carte de crédit coûtent peu ; sinon du ruban adhésif.",
-          "Jeu de groupe : au tour d’humeur, quelqu’un tire une carte et tout le monde fait le skill."
+          "Jeu de groupe : au check-in, quelqu’un tire une carte et tout le monde fait le skill."
         ],
         "achtung": "La carte d’urgence est personnelle : ne pas ramasser, ne pas lire à voix haute. Si des stratégies nocives y figurent ou si aucune personne joignable n’est notée : entretien individuel, informer la direction compétente (responsable) ; en cas de mise en danger, agir selon le concept de protection.",
         "material": "Papier épais, ciseaux, plastifieuse"

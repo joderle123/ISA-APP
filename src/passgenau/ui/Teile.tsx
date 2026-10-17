@@ -297,6 +297,16 @@ export function HeikelBanner() {
   if (!p) return null
   const heikel = (p.achtung?.length ?? 0) > 0 || p.vorsicht.includes('heikel')
   if (!heikel) return null
+  // Gruppe: das Kind nicht nennen, und sagen, was das für die Gruppenstunde heißt (Rückmeldung 18.10.2026)
+  if ((p.gruppe?.length ?? 0) > 1)
+    return (
+      <div className="pg-banner warn" role="note">
+        <Ic n="schild" />
+        <div>
+          <b>Bei einem Kind dieser Gruppe ist ein heikles Thema offen.</b> Passgenau plant für alle schonend – ohne Fragen nach Erlebtem, Familie oder Zuhause. Persönliches nicht in der Gruppe besprechen; für dieses Kind ist eine Einzelstunde oft besser. Passgenau ersetzt keine Abklärung.
+        </div>
+      </div>
+    )
   return (
     <div className="pg-banner warn" role="note">
       <Ic n="schild" />

@@ -5954,7 +5954,7 @@
     },
     "ort": "raum",
     "titel": "Entschuldigen und wiedergutmachen: Die Waage ausgleichen",
-    "text": "Das Kind kennt vier Werkzeuge; heute kommt das fünfte dazu, die gute Entschuldigung. Auf eine gezeichnete Waage legt die Fachkraft links einen Baustein: Ben hat einen peinlichen Screenshot von Sami in die Klassengruppe geschickt. Sie liest zwei schlechte Entschuldigungen vor („Sorry, war doch nur Spaß!“ · „Tut mir leid, aber du hast ja angefangen.“), und das Kind sagt, was fehlt. Dann legt es die vier Teile einer guten Entschuldigung als Karten rechts dazu und sagt zu jedem Bens Satz, bis die Waage im Gleichgewicht ist. Danach wählt es eine von drei ruhigen Situationskarten (ein Heft ist zerknickt, ein Stift ungefragt genommen, ein Ball trifft ein Mäppchen) und plant für Lea und Jana: wann und wo, erster Satz, passendes Werkzeug und was Lea tut, wenn Jana sagt „Ist mir egal“ – das trägt es später ein. Zum Schluss spielt die Fachkraft Lea, das Kind ist Jana und sagt, wie die Entschuldigung ankommt. Eine gute Entschuldigung hat vier Teile – was war, es tut mir leid, wiedergutmachen, nächstes Mal.",
+    "text": "Das Kind kennt vier Werkzeuge; heute kommt das fünfte dazu, die gute Entschuldigung. Auf eine gezeichnete Waage legt die Fachkraft links einen Baustein: Ben hat Samis Zeichnung für das Plakat verschmiert. Sie liest zwei schlechte Entschuldigungen vor („Sorry, war doch nur Spaß!“ · „Tut mir leid, aber du hast ja angefangen.“), und das Kind sagt, was fehlt. Dann legt es die vier Teile einer guten Entschuldigung als Karten rechts dazu und sagt zu jedem Bens Satz, bis die Waage im Gleichgewicht ist. Danach wählt es eine von drei ruhigen Situationskarten (ein Heft ist zerknickt, ein Stift ungefragt genommen, ein Ball trifft ein Mäppchen) und plant für Lea und Jana: wann und wo, erster Satz, passendes Werkzeug und was Lea tut, wenn Jana sagt „Ist mir egal“ – das trägt es später ein. Zum Schluss spielt die Fachkraft Lea, das Kind ist Jana und sagt, wie die Entschuldigung ankommt. Eine gute Entschuldigung hat vier Teile – was war, es tut mir leid, wiedergutmachen, nächstes Mal.",
     "sagen": [
       "Heute gleichen wir eine Waage aus: Ben hat einen Fehler gemacht, und du legst die Teile einer guten Entschuldigung dazu.",
       "Eine gute Entschuldigung hat vier Teile: Was war – ohne „aber“. Es tut mir leid. Wiedergutmachen. Nächstes Mal.",
@@ -5980,13 +5980,13 @@
       "fr": "Au milieu du jeu, le personnage de l’adulte renverse par maladresse un autre personnage ; l’enfant dit, comme conseiller, en trois phrases, comment le personnage s’excuse bien."
     },
     "zugang": {
-      "lesen": 2,
-      "schreiben": 2,
-      "bild": 1
+      "lesen": 1,
+      "schreiben": 0,
+      "bild": 2
     },
     "fr": {
       "titel": "S’excuser et réparer : équilibrer la balance",
-      "text": "L’enfant connaît quatre outils ; aujourd’hui s’ajoute le cinquième, la bonne excuse. Sur une balance dessinée, l’adulte pose à gauche un cube : Ben a envoyé dans le groupe de la classe une capture d’écran gênante de Sami. Il lit deux mauvaises excuses (« Pardon, c’était pour rire ! » · « Désolé, mais c’est toi qui as commencé. »), et l’enfant dit ce qui manque. Ensuite, il pose à droite les quatre parties d’une bonne excuse sur des cartes et dit pour chacune la phrase de Ben, jusqu’à ce que la balance soit en équilibre. Puis il choisit une de trois cartes de situation calmes (un cahier est froissé, un stylo est pris sans demander, un ballon touche une trousse) et prépare pour Lea et Jana : quand et où, première phrase, outil qui convient et ce que Lea fait si Jana dit « Je m’en fiche » – il le notera ensuite. Pour finir, l’adulte joue Lea, l’enfant est Jana et dit comment l’excuse arrive. Une bonne excuse a quatre parties – ce qui s’est passé, je regrette, réparer, la prochaine fois.",
+      "text": "L’enfant connaît quatre outils ; aujourd’hui s’ajoute le cinquième, la bonne excuse. Sur une balance dessinée, l’adulte pose à gauche un cube : Ben a fait une tache sur le dessin de Sami pour l’affiche. Il lit deux mauvaises excuses (« Pardon, c’était pour rire ! » · « Désolé, mais c’est toi qui as commencé. »), et l’enfant dit ce qui manque. Ensuite, il pose à droite les quatre parties d’une bonne excuse sur des cartes et dit pour chacune la phrase de Ben, jusqu’à ce que la balance soit en équilibre. Puis il choisit une de trois cartes de situation calmes (un cahier est froissé, un stylo est pris sans demander, un ballon touche une trousse) et prépare pour Lea et Jana : quand et où, première phrase, outil qui convient et ce que Lea fait si Jana dit « Je m’en fiche » – il le notera ensuite. Pour finir, l’adulte joue Lea, l’enfant est Jana et dit comment l’excuse arrive. Une bonne excuse a quatre parties – ce qui s’est passé, je regrette, réparer, la prochaine fois.",
       "sagen": [
         "Aujourd’hui, on équilibre une balance : Ben a fait une erreur, et tu poses les parties d’une bonne excuse.",
         "Une bonne excuse a quatre parties : ce qui s’est passé – sans « mais ». Je regrette. Réparer. La prochaine fois.",
@@ -5994,6 +5994,426 @@
         "Maintenant, tu es Jana et je suis Lea. Comment mon excuse t’arrive-t-elle ?"
       ],
       "wennEsKippt": "Si l’enfant n’a pas envie de poser les cartes, il les montre du doigt et l’adulte les pose. S’il dit de lui-même quelque chose de pénible, l’adulte répond calmement : « Merci de me le dire. », ne pose pas de question et revient à Ben et Sami. Une phrase sincère pour Ben suffit."
+    },
+    "uebungsblatt": {
+      "titel": {
+        "de": "Konflikt-Lotsen · Werkzeug 5: Die gute Entschuldigung",
+        "fr": "Pilotes de conflit · Outil 5 : la bonne excuse"
+      },
+      "de": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Die Lotsen-Waage",
+              "punkte": [
+                "Eine Lösung ist gut, wenn sie für beide Seiten passt – dann bleibt die Waage im Gleichgewicht.",
+                "Heute neu: Werkzeug 5, Gute Entschuldigung."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:waage",
+              "groesse": "m",
+              "text": "Die Lotsen-Waage",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Die gute Entschuldigung hat vier Teile",
+          "text": "Ben hat Samis Zeichnung für das Plakat verschmiert. So entschuldigt er sich:"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Was war",
+              "text": "Ich habe deine Zeichnung verschmiert."
+            },
+            {
+              "titel": "Es tut mir leid",
+              "text": "Das war ärgerlich für dich."
+            },
+            {
+              "titel": "Wiedergutmachen",
+              "text": "Ich male sie mit dir neu."
+            },
+            {
+              "titel": "Nächstes Mal",
+              "text": "Ich passe besser auf."
+            }
+          ],
+          "linien": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Entschuldigung ist gut? Kreuz an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Sorry, war doch nur Spaß!",
+            "Tut mir leid, aber du hast ja angefangen.",
+            "Ich habe deine Zeichnung verschmiert. Es tut mir leid. Ich male sie mit dir neu."
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lea und Jana: Welche Situationskarte hast du gewählt? Wann und wo passiert es? Welcher erste Satz passt zu Lea? Kreuz an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "bilder": [
+            {
+              "bild": "icon:notebook",
+              "text": "Heft zerknickt"
+            },
+            {
+              "bild": "icon:pencil",
+              "text": "Stift ungefragt genommen"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "Ball trifft ein Mäppchen"
+            }
+          ],
+          "spalten": 3,
+          "modus": "ankreuzen",
+          "klein": true
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Wann und wo?",
+          "items": [
+            "in der Pause",
+            "im Klassenzimmer",
+            "beim Sport"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Leas erster Satz:",
+          "items": [
+            "Ich möchte etwas klären: …",
+            "Es tut mir leid, dass …",
+            "Wie wäre es, wenn wir …?"
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Diese Werkzeuge braucht Lea:",
+          "items": [
+            "Konflikt-Check",
+            "Seitenwechsel",
+            "Ich-Botschaft",
+            "Ideen-Waage",
+            "Entschuldigung"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jana sagt: „Ist mir egal.“ Was tut Lea? Kreuz an.",
+          "hinweis": "Hilfe holen ist immer eine gute Antwort.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Später noch einmal fragen",
+            "Abstand halten, nicht diskutieren",
+            "Eine erwachsene Person um Hilfe bitten"
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Lotsen-Kasten wächst. Kreis das Werkzeug ein, das heute dazugekommen ist.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "bilder": [
+            {
+              "bild": "icon:search",
+              "text": "1 Konflikt-Check"
+            },
+            {
+              "bild": "icon:arrows-shuffle",
+              "text": "2 Seitenwechsel"
+            },
+            {
+              "bild": "icon:message-circle",
+              "text": "3 Ich-Botschaft"
+            },
+            {
+              "bild": "icon:scale",
+              "text": "4 Ideen-Waage"
+            },
+            {
+              "bild": "icon:heart-handshake",
+              "text": "5 Gute Entschuldigung – heute"
+            },
+            {
+              "bild": "icon:help-circle",
+              "text": "6 ?"
+            }
+          ],
+          "spalten": 3,
+          "klein": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lotsen-Auftrag bis zum nächsten Mal: Achte in einem Buch oder Film darauf, ob sich eine Figur gut entschuldigt. Du kannst auch Leas ersten Satz einmal in Gedanken üben."
+        },
+        {
+          "art": "zielkarte",
+          "titel": "Leas erster Satz",
+          "text": "Diese Woche beobachte ich eine Figur oder übe den Satz.",
+          "tage": [
+            "beobachtet",
+            "geübt"
+          ]
+        }
+      ],
+      "fr": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "La balance du pilote",
+              "punkte": [
+                "Une solution est bonne quand elle convient aux deux côtés – alors la balance reste en équilibre.",
+                "Nouveau aujourd’hui : outil 5, s’excuser et réparer."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:waage",
+              "groesse": "m",
+              "text": "La balance du pilote",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "La bonne excuse a quatre parties",
+          "text": "Ben a fait une tache sur le dessin de Sami pour l’affiche. Voilà comment il s’excuse :"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Ce qui s’est passé",
+              "text": "J’ai fait une tache sur ton dessin."
+            },
+            {
+              "titel": "Je regrette",
+              "text": "C’était embêtant pour toi."
+            },
+            {
+              "titel": "Réparer",
+              "text": "Je le refais avec toi."
+            },
+            {
+              "titel": "La prochaine fois",
+              "text": "Je ferai plus attention."
+            }
+          ],
+          "linien": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle excuse est bonne ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Pardon, c’était pour rire !",
+            "Désolé, mais c’est toi qui as commencé.",
+            "J’ai fait une tache sur ton dessin. Je regrette. Je le refais avec toi."
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lea et Jana : quelle carte de situation as-tu choisie ? Quand et où cela se passe-t-il ? Quelle première phrase va à Lea ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "bilder": [
+            {
+              "bild": "icon:notebook",
+              "text": "un cahier froissé"
+            },
+            {
+              "bild": "icon:pencil",
+              "text": "un stylo pris sans demander"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "un ballon touche une trousse"
+            }
+          ],
+          "spalten": 3,
+          "modus": "ankreuzen",
+          "klein": true
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Quand et où ?",
+          "items": [
+            "à la récré",
+            "en classe",
+            "en sport"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "La première phrase de Lea :",
+          "items": [
+            "Je voudrais qu’on en parle : …",
+            "Je regrette que …",
+            "Et si on … ?"
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Lea a besoin de ces outils :",
+          "items": [
+            "Repérer le conflit",
+            "Changer de côté",
+            "Message-je",
+            "Balance des idées",
+            "Excuse"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jana dit : « Je m’en fiche. » Que fait Lea ? Coche.",
+          "hinweis": "Demander de l’aide est toujours une bonne réponse.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Réessayer plus tard",
+            "Garder ses distances, ne pas discuter",
+            "Demander de l’aide à un adulte"
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta boîte à outils de pilote s’agrandit. Entoure l’outil qui s’est ajouté aujourd’hui.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "bilder": [
+            {
+              "bild": "icon:search",
+              "text": "1 Repérer le conflit"
+            },
+            {
+              "bild": "icon:arrows-shuffle",
+              "text": "2 Changer de côté"
+            },
+            {
+              "bild": "icon:message-circle",
+              "text": "3 Message-je"
+            },
+            {
+              "bild": "icon:scale",
+              "text": "4 Balance des idées"
+            },
+            {
+              "bild": "icon:heart-handshake",
+              "text": "5 S’excuser et réparer – aujourd’hui"
+            },
+            {
+              "bild": "icon:help-circle",
+              "text": "6 ?"
+            }
+          ],
+          "spalten": 3,
+          "klein": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mission de pilote jusqu’à la prochaine fois : dans un livre ou un film, repère si un personnage s’excuse bien. Tu peux aussi dire dans ta tête la première phrase de Lea."
+        },
+        {
+          "art": "zielkarte",
+          "titel": "La première phrase de Lea",
+          "text": "Cette semaine, j’observe un personnage ou je m’exerce à la dire.",
+          "tage": [
+            "observé",
+            "exercé"
+          ]
+        }
+      ],
+      "anleitung": {
+        "de": {
+          "text": "Aufgabe 1: Das Kind kreuzt die gute Entschuldigung an und sagt, was den anderen fehlt; die vier Teile im Kasten helfen, die Fachkraft liest bei Bedarf vor. Aufgabe 2 ist der Kern: Das Kind kreuzt an, welche Situationskarte es für Lea und Jana gewählt hat, wann und wo sie spielt, welchen ersten Satz Lea sagt und welche Werkzeuge sie braucht. Danach spielt die Fachkraft Lea, das Kind ist Jana und sagt, wie die Entschuldigung ankommt; bei „Stopp“ hören beide sofort auf, am Ende legen beide die Rollen ab. In Aufgabe 3 kreuzt das Kind an, was Lea tut, wenn Jana sagt „Ist mir egal“. Das Werkzeug von heute (Aufgabe 4) kreist es zum Schluss ein; der Lotsen-Auftrag (Aufgabe 5) ist neutral – eine Figur in einem Buch oder Film beobachten oder Leas Satz in Gedanken üben –, auf der Karte hakt es später ab, was geschafft ist. Nach Eigenem wird nicht gefragt.",
+          "sagen": [
+            "Welche Entschuldigung kommt bei Sami gut an?",
+            "Welcher erste Satz passt zu Lea?"
+          ],
+          "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alle Kreuz-Möglichkeiten vor. Mag das Kind nicht ankreuzen, zeigt es mit dem Finger, und die Fachkraft kreuzt für es an. Erzählt das Kind von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und geht zu Ben und Sami zurück."
+        },
+        "fr": {
+          "text": "Exercice 1 : l’enfant coche la bonne excuse et dit ce qui manque aux autres ; les quatre parties dans l’encadré aident, l’adulte lit si besoin. L’exercice 2 est le cœur : l’enfant coche quelle carte de situation il a choisie pour Lea et Jana, quand et où elle a lieu, quelle première phrase dit Lea et de quels outils elle a besoin. Ensuite, l’adulte joue Lea, l’enfant est Jana et dit comment l’excuse arrive ; à « Stop », tous deux s’arrêtent tout de suite, à la fin ils sortent du rôle. À l’exercice 3, l’enfant coche ce que fait Lea si Jana dit « Je m’en fiche ». À la fin, il entoure l’outil du jour (exercice 4) ; la mission de pilote (exercice 5) est neutre – observer un personnage de livre ou de film ou répéter la phrase de Lea dans sa tête – ; sur la carte, il coche plus tard ce qui est fait. On ne pose aucune question sur l’enfant.",
+          "sagen": [
+            "Quelle excuse arrive bien chez Sami ?",
+            "Quelle première phrase va à Lea ?"
+          ],
+          "wennEsKippt": "Si lire est difficile, l’adulte lit toutes les possibilités à cocher. Si l’enfant ne veut pas cocher, il montre du doigt et l’adulte coche pour lui. Si l’enfant dit de lui-même quelque chose de pénible, l’adulte répond calmement : « Merci de me le dire. », ne pose pas de question et revient à Ben et Sami."
+        }
+      }
     }
   },
   {

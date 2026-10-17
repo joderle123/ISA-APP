@@ -335,7 +335,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Au parcours : après chaque poste, coche si l’activité t’a donné ou coûté de l’énergie."
+          "text": "Au parcours : après chaque station, coche si l’activité t’a donné ou coûté de l’énergie."
         },
         {
           "art": "einschaetzung",
@@ -364,10 +364,10 @@
       "lehrer": {
         "ziel": "Les jeunes déterminent leurs intérêts professionnels dans six domaines d’après Holland, établissent leur code d’intérêts et le vérifient avec six courts essais pratiques.",
         "ablauf": [
-          "Exercice 1 individuel (10 min) : cocher ce qu’on aimerait faire – pas ce qu’on sait faire –, puis compter les croix par domaine.",
-          "Exercice 2 (5 min) : reporter les chiffres dans l’hexagone ; montrer au tableau que les voisins se ressemblent.",
-          "Exercice 3 (3 min) : code d’intérêts avec justification ; en cas d’égalité, trois domaines.",
-          "Exercice 4 au parcours : une croix après chaque poste, puis comparer le test et le parcours."
+          "Tâche 1 en individuel (10 min) : cocher ce qu’on aimerait faire – pas ce qu’on sait faire –, puis compter les croix par domaine.",
+          "Tâche 2 (5 min) : reporter les chiffres dans l’hexagone ; montrer au tableau que les voisins se ressemblent.",
+          "Tâche 3 (3 min) : code d’intérêts avec justification ; en cas d’égalité, trois domaines.",
+          "Tâche 4 au parcours : une croix après chaque station, puis comparer le test et le parcours."
         ],
         "hintergrund": "Holland (1997) décrit six types d’intérêts – pratique et technique, investigateur, artistique, social, entreprenant, organisateur – et les dispose en hexagone : les voisins se ressemblent, les opposés le moins. Qui trouve un travail en accord avec ses intérêts est plus souvent satisfait. Les domaines sont simplifiés pour les jeunes et ne remplacent pas un test standardisé. Selon Super (1980), les intérêts se précisent à 15 ans par l’exploration – c’est pourquoi l’essai au parcours suit les croix.",
         "quellen": [
@@ -375,7 +375,7 @@
           "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298."
         ],
         "differenzierung": {
-          "leichter": "L’enseignant lit les activités à voix haute, tout le monde coche en même temps ; seul le domaine avec le plus de croix compte.",
+          "leichter": "L’adulte lit les activités à voix haute, tout le monde coche en même temps ; seul le domaine avec le plus de croix compte.",
           "schwerer": "Former un code à trois domaines et chercher deux métiers qui relient les trois."
         },
         "impulse": [
@@ -387,7 +387,7 @@
           "Aborder les stéréotypes quand ils apparaissent : le code appartient à la personne, pas à son genre."
         ],
         "achtung": "Qui ne coche presque rien est souvent plus découragé que désintéressé. Ne pas le relever devant le groupe, poser la question en entretien individuel et, au besoin, associer la direction compétente (responsable).",
-        "material": "Planchettes, stylos, matériel du parcours"
+        "material": "Planchettes à pince, stylos, matériel du parcours"
       }
     }
   },
@@ -678,7 +678,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ce que le groupe voit en moi : recopie des phrases de ton courrier des points forts."
+          "text": "Ce que le groupe voit en moi : recopie des phrases de tes cartes de forces."
         },
         {
           "art": "satzanfaenge",
@@ -778,38 +778,38 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Le profil est à toi. Tu ne le montres qu’à qui tu veux – par exemple au SePAS ou lors d’un entretien sur ton stage."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes rassemblent ce qui les attire, ce qu’ils savent faire, ce que les autres voient en eux et ce qui compte pour eux au travail – et esquissent des métiers et un parcours possible.",
         "ablauf": [
-          "Séance 10 : exercice 1 après le test d’intérêts, exercice 2 avec un exemple de l’enseignant, exercice 3 après le courrier des points forts.",
-          "Séance 11 : exercices 4 et 5 au marché des métiers, exercice 6 après le schéma au tableau « Beaucoup de chemins ».",
+          "Séance 10 : tâche 1 après le test d’intérêts, tâche 2 avec un exemple de l’adulte, tâche 3 après les cartes de forces.",
+          "Séance 11 : tâches 4 et 5 au marché des métiers, tâche 6 après le schéma au tableau « Beaucoup de chemins ».",
           "Séance 12 : le profil fournit des exemples pour le CV et l’entretien d’embauche.",
           "Séance 13 : il est posé à côté du plan d’objectifs, puis, si la personne le souhaite, il va dans le carnet de skills."
         ],
-        "hintergrund": "Le schéma à quatre champs sépare aimer et savoir faire : Holland (1997) décrit comment intérêts et environnement de travail s’accordent ; exercer un métier avec succès dépend en outre des capacités, et celles-ci s’apprennent. Le champ d’apprentissage encourage donc. Le courrier des points forts exploite la « zone aveugle » de la fenêtre de Johari : les autres voient ce qu’on néglige soi-même (Luft & Ingham, 1955). Selon Super (1980), un souhait de métier est rarement abouti à 15 ans – l’échelle de l’exercice 6 rend l’ouverture explicitement normale.",
+        "hintergrund": "Le schéma à quatre champs sépare aimer et savoir faire : Holland (1997) décrit comment intérêts et environnement de travail s’accordent ; exercer un métier avec succès dépend en outre des capacités, et celles-ci s’apprennent. Le champ d’apprentissage encourage donc. Les cartes de forces exploitent la « zone aveugle » de la fenêtre de Johari : les autres voient ce qu’on néglige soi-même (Luft & Ingham, 1955). Selon Super (1980), un souhait de métier est rarement abouti à 15 ans – l’échelle de la tâche 6 rend l’ouverture explicitement normale.",
         "quellen": [
           "Holland, J. L. (1997). Making Vocational Choices (3rd ed.). Odessa, FL: Psychological Assessment Resources.",
           "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
           "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298."
         ],
         "differenzierung": {
-          "leichter": "L’enseignant fournit des cartes d’activités qu’il ne reste plus qu’à classer dans les quatre champs.",
+          "leichter": "L’adulte fournit des cartes d’activités qu’il ne reste plus qu’à classer dans les quatre champs.",
           "schwerer": "Noter, pour chaque force du champ de force, un exemple à raconter lors d’un entretien d’embauche."
         },
         "impulse": [
           "Qu’est-ce qui, dans ton champ d’apprentissage, aimerais-tu le plus essayer lors d’un stage ?",
-          "Quelle phrase du courrier des points forts correspond à un métier que tu pourrais imaginer ?"
+          "Quelle phrase des cartes de forces correspond à un métier que tu pourrais imaginer ?"
         ],
         "tipps": [
           "Le profil grandit de séance en séance – ne pas le faire terminer en une seule fois.",
           "Proposer une copie pour l’entretien avec le SePAS, si la personne le souhaite."
         ],
         "achtung": "Si le champ de force reste vide : refléter des observations en entretien individuel, pas devant le groupe. Ne pas interroger sur les métiers des parents ; en cas d’abattement persistant, associer la direction compétente (responsable).",
-        "material": "Dossier du module, courrier des points forts"
+        "material": "Dossier du module, cartes de forces"
       }
     }
   },
@@ -1007,7 +1007,7 @@
           "Que demanderais-tu en premier à un vrai pro ?"
         ],
         "tipps": [
-          "Au premier tour, l’enseignant joue lui-même un pro – on voit ainsi tout ce qu’on peut tirer d’une carte.",
+          "Au premier tour, l’adulte joue lui-même un pro – on voit ainsi tout ce qu’on peut tirer d’une carte.",
           "Plastifier les cartes ; elles servent aussi à s’exercer aux questions avant une visite d’entreprise ou un stage."
         ],
         "achtung": "Les détours peuvent rappeler des ruptures personnelles : aborder plus tard en tête à tête une personne qui semble touchée. En cas d’indices de danger, informer la direction compétente (responsable).",
@@ -1264,7 +1264,7 @@
           "titel": "Comment demander – poliment et avec assurance",
           "punkte": [
             "« Bonjour, je m’appelle … Je m’intéresse à votre métier. Auriez-vous un quart d’heure pour quelques questions ? »",
-            "Demande à des personnes que tu connais ou que l’enseignant t’a présentées. Ne rencontre jamais en tête à tête des inconnus rencontrés sur internet.",
+            "Demande à des personnes que tu connais ou que l’adulte t’a présentées. Ne rencontre jamais en tête à tête des inconnus rencontrés sur internet.",
             "Dis à un adulte quand et où tu fais ton interview.",
             "Remercie à la fin. Un petit message ensuite fait bonne impression."
           ]
@@ -1331,10 +1331,10 @@
       "lehrer": {
         "ziel": "Les jeunes préparent une interview avec une personne qui travaille, l’évaluent et se préparent avec des plans « si … alors » aux moments difficiles du stage.",
         "ablauf": [
-          "Avant le carrousel (3 min) : à l’exercice 1, cocher deux questions à essayer au carrousel.",
-          "Après le carrousel (10 min) : choisir cinq questions, remplir l’exercice 2, puis l’exercice 5 avec les conseils des pros.",
-          "Jusqu’à la séance 13, facultatif : mener l’interview, remplir l’exercice 3, brève présentation à la séance 13.",
-          "Avant un stage : passer ensemble l’exercice 4 et l’encadré « Ce qui compte en stage »."
+          "Avant le carrousel (3 min) : à la tâche 1, cocher deux questions à essayer au carrousel.",
+          "Après le carrousel (10 min) : choisir cinq questions, remplir la tâche 2, puis la tâche 5 avec les conseils des pros.",
+          "Jusqu’à la séance 13, facultatif : mener l’interview, remplir la tâche 3, brève présentation à la séance 13.",
+          "Avant un stage : passer ensemble la tâche 4 et l’encadré « Ce qui compte en stage »."
         ],
         "hintergrund": "Selon Super (1980), à la phase d’exploration, les adolescents recueillent des informations sur les métiers et sur eux-mêmes et confrontent leurs premières idées à la réalité. Les entretiens avec des professionnels apportent ce que les brochures ne donnent pas : le quotidien, les contraintes, les vrais parcours. Mener soi-même un tel entretien est une expérience de maîtrise qui renforce la confiance en soi (Bandura, 1977). Les plans « si … alors » relient d’avance une situation critique à une action et augmentent ainsi les chances de réussir au moment décisif (Gollwitzer, 1999).",
         "quellen": [
@@ -1343,7 +1343,7 @@
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "differenzierung": {
-          "leichter": "L’enseignant organise une interview dans l’établissement et accompagne les premières minutes.",
+          "leichter": "L’adulte organise une interview dans l’établissement et accompagne les premières minutes.",
           "schwerer": "Interroger deux personnes de métiers différents et comparer les réponses."
         },
         "impulse": [
@@ -1684,7 +1684,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Tu décides de ce que tu indiques.",
-          "text": "La santé, les diagnostics, le soutien scolaire ou ta situation familiale n’ont pas leur place dans un CV. Si tu hésites, demande à l’enseignant ou au SePAS."
+          "text": "La santé, les diagnostics, le soutien scolaire ou ta situation familiale n’ont pas leur place dans un CV. Si tu hésites, demande à l’adulte ou au SePAS."
         }
       ],
       "lehrer": {
@@ -1700,7 +1700,7 @@
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
         ],
         "differenzierung": {
-          "leichter": "L’enseignant écrit sous la dictée ; la personne ne complète elle-même que les langues et les points forts.",
+          "leichter": "L’adulte écrit sous la dictée ; la personne ne complète elle-même que les langues et les points forts.",
           "schwerer": "Ébaucher en plus les trois premières phrases de la lettre de motivation : pourquoi ce métier, pourquoi cette entreprise, ce que j’apporte."
         },
         "impulse": [
@@ -2067,17 +2067,17 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Tes réponses sont à toi. Dans le jeu de rôle, tu ne dis que ce que tu dirais aussi à une vraie entreprise."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes préparent leur présentation, des réponses avec exemple, la réponse sur le détour et un plan contre le trac, et s’exercent à l’entretien en jeu de rôle avec retour.",
         "ablauf": [
-          "Exercices 1 et 2 (10 min) avec le profil professionnel ; à deux, relancer : as-tu un exemple ?",
-          "Exercice 3 (5 min) : l’enseignant joue une réponse faible et une réponse forte sur le détour.",
-          "S’exercer aux skills de la salle d’attente, puis jeu de rôle à trois ; la personne qui observe remplit l’exercice 5 sur la feuille de la personne qui postule.",
-          "Pour finir : comparer la tension avant et après, exercice 4 comme plan « si … alors »."
+          "Tâches 1 et 2 (10 min) avec le profil professionnel ; à deux, relancer : as-tu un exemple ?",
+          "Tâche 3 (5 min) : l’adulte joue une réponse faible et une réponse forte sur le détour.",
+          "S’exercer aux skills de la salle d’attente, puis jeu de rôle à trois ; la personne qui observe remplit la tâche 5 sur la feuille de la personne qui postule.",
+          "Pour finir : comparer la tension avant et après, tâche 4 comme plan « si … alors »."
         ],
         "hintergrund": "S’exercer plusieurs fois dans un cadre protégé rend plus sûr, et le trac n’a pas besoin de disparaître pour cela : dans une étude, les personnes qui avaient appris à interpréter l’excitation physique comme une disposition à agir ont mieux réussi un test de mathématiques (Jamieson et al., 2010). Des exercices de respiration avec une expiration nettement allongée ont réduit l’excitation et amélioré l’humeur (Balban et al., 2023). S’adresser à soi-même par son prénom crée de la distance par rapport à l’agitation (Kross & Ayduk, 2017).",
         "quellen": [
@@ -2094,7 +2094,7 @@
           "Quelle réponse a le mieux fonctionné au jeu de rôle ?"
         ],
         "tipps": [
-          "Au premier tour, l’enseignant joue le chef ou la cheffe, pour que le rôle reste aimable mais ferme.",
+          "Au premier tour, l’adulte joue le chef ou la cheffe, pour que le rôle reste aimable mais ferme.",
           "Qui ne serre pas la main s’exerce à une alternative aimable : un signe de tête, la main sur le cœur, un « Bonjour » clair."
         ],
         "achtung": "Droit de dire stop ; personne n’est obligé de postuler, le rôle du chef reste aimable. Personne n’a à révéler diagnostics, soutien scolaire ni situation familiale. En cas de forte panique, laisser la personne se retirer et reprendre contact plus tard.",
@@ -2415,8 +2415,8 @@
         "ziel": "Avec WOOP, les jeunes font d’un souhait un objectif pour les mois à venir, le découpent en étapes et planifient revers, soutien et points d’étape.",
         "ablauf": [
           "Histoire de Yusuf (3 min) : pourquoi son obstacle est-il en lui et non chez l’entreprise ?",
-          "Exercices 1 et 2 (14 min) : une minute par étape, les yeux fermés pour s’imaginer, puis écrire ; ne pas faire lire à voix haute.",
-          "Après le jeu de balle sur les obstacles (7 min) : exercices 3 à 5 ; aux échelles, demander : pourquoi pas un chiffre plus bas ?",
+          "Tâches 1 et 2 (14 min) : une minute par étape, les yeux fermés pour s’imaginer, puis écrire ; ne pas faire lire à voix haute.",
+          "Après le jeu de balle sur les obstacles (7 min) : tâches 3 à 5 ; aux échelles, demander : pourquoi pas un chiffre plus bas ?",
           "Respecter les points d’étape lors du check-in ; dans le module final, le plan revient sur la table."
         ],
         "hintergrund": "Se contenter d’imaginer un objectif peut réduire l’effort ; le contraste mental est plus efficace : souhait, meilleur résultat, puis obstacle intérieur (Oettingen, 2014). WOOP y ajoute un plan « si … alors » qui relie une situation à une action (Gollwitzer, 1999) ; chez des adolescents, cette combinaison a renforcé l’autodiscipline dans les apprentissages (Duckworth et al., 2011). Des étapes proches renforcent la confiance plus qu’un objectif lointain seul (Bandura & Schunk, 1981), et un jour manqué ne nuit guère (Lally et al., 2010). La question « Pourquoi pas un chiffre plus bas ? » (entretien motivationnel) oriente vers les raisons qui plaident déjà en faveur de l’objectif (Miller & Rollnick, 2013).",
@@ -2429,7 +2429,7 @@
           "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Remplir seulement souhait, obstacle et plan ; l’enseignant écrit avec la personne si elle le souhaite.",
+          "leichter": "Remplir seulement souhait, obstacle et plan ; l’adulte écrit avec la personne si elle le souhaite.",
           "schwerer": "Formuler pour deux obstacles un plan « si … alors » chacun et les comparer après quatre semaines."
         },
         "impulse": [

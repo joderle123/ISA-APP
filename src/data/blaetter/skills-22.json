@@ -281,7 +281,7 @@
         "ziel": "Les jeunes reconnaissent les nombreuses formes de perte, comprennent le pendule du deuil et s’exercent à soutenir des amis en deuil.",
         "ablauf": [
           "Tâche 1 (8 min) : collecter au tableau, puis reporter sur la fiche – en termes généraux, sans rien tirer de sa propre vie.",
-          "Lire l’histoire, placer la semaine de Tiago sur la ligne du pendule (unité 17, étape 4).",
+          "Lire l’histoire, placer la semaine de Tiago sur la ligne du pendule (séance 17, étape 4).",
           "Tâche 2 (5 min) : deux idées par côté. Souligner : les deux côtés sont sains.",
           "Après le parcours de phrases et le jeu de rôle : lire l’encadré de conseils, tâche 3 seul (5 min).",
           "Lire l’encadré « Quand le deuil demande plus d’aide », montrer les services à contacter."
@@ -675,7 +675,7 @@
         "ablauf": [
           "Lire les encadrés (5 min) ; exemples proposés par le groupe, pas tirés de la vie personnelle.",
           "Tâche 1 (8 min). Solution : pour Yusuf, Aylin et Zoé, la honte est injustifiée ; pour Liam et Rafael, la culpabilité est justifiée.",
-          "Tâche 2 après la spirale au sol (unité 18, étape 6).",
+          "Tâche 2 après la spirale au sol (séance 18, étape 6).",
           "Tâche 3 après le jeu de rôle « Rembobiner » (5 min).",
           "Tâche 4 en silence et en privé ; ne pas lire à voix haute, ne pas ramasser."
         ],
@@ -1011,7 +1011,7 @@
           "Lire le texte (3 min) : le sentiment de solitude est un signal comme la faim, pas une tare.",
           "Tâche 1 (7 min) : expliquer le cercle sur l’exemple de Jang, recueillir des sorties.",
           "Tâche 2 (8 min) : vérifier deux pensées. Si l’une est réellement vraie, il faut protection et aide.",
-          "Tâche 3 après les stations (unité 19, étape 7).",
+          "Tâche 3 après les stations (séance 19, étape 7).",
           "Tâche 4 en silence et en privé ; lire l’encadré d’aide à voix haute."
         ],
         "hintergrund": "Le sentiment de solitude est un isolement social perçu : l’écart entre le lien souhaité et le lien vécu. Il est très répandu à l’adolescence (Qualter et al., 2015). Hawkley et Cacioppo (2010) y voient un signal qui pousse à renouer ; quand il dure, il s’entretient lui-même : on guette le rejet, on interprète négativement les signaux neutres, on se replie. Les aides qui agissent sur ces schémas de pensée sont les plus efficaces (Masi et al., 2011). Être exclu fait mal très vite (Williams, 2007) – les petits gestes d’inclusion comptent.",
@@ -1550,7 +1550,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Étape 1 – Mes signaux d’alarme : à quoi est-ce que je remarque que je vais vraiment mal ?",
+          "text": "Étape 1 – Mes signaux d’alerte : à quoi est-ce que je remarque que je vais vraiment mal ?",
           "hinweis": "Pensées, sentiments, corps, comportement – par exemple « Plus rien n’a de sens », ne plus dormir, ne plus répondre à personne."
         },
         {
@@ -1667,12 +1667,12 @@
         "ziel": "Chaque personne établit en privé un plan de sécurité pour les moments difficiles, qui s’appuie sur la valise de skills et le plan feu tricolore.",
         "ablauf": [
           "Avant (6 min) : présenter le plan comme une trousse de premiers secours. Tout le monde en fait un, personne n’a à le montrer.",
-          "Parcours du plan (25 min) : sept stations, seul avec une planchette (unité 20, étape 7).",
+          "Parcours du plan (25 min) : sept stations, seul avec une planchette à pince (séance 20, étape 7).",
           "Aider par des questions : « Qu’est-ce qui t’a déjà aidé par le passé ? » Ne lire avec la personne que si elle le propose.",
           "Étape 6 : expliquer seulement en termes généraux ; ne citer aucun moyen ni aucune méthode.",
           "Clarifier où le ranger, photographier le plan, le glisser librement dans le carnet de skills."
         ],
-        "hintergrund": "La Safety Planning Intervention de Stanley et Brown (2012) est une mesure brève et structurée pour les personnes en crise suicidaire ; avec des contacts de suivi, elle a nettement réduit les comportements suicidaires (Stanley et al., 2018). Le plan suit un ordre fixe, de l’intérieur vers l’extérieur : signaux d’alarme, gestion personnelle, personnes et lieux qui distraient, proches, services spécialisés et urgences, environnement plus sûr. Les crises venant souvent par vagues, un plan rédigé d’avance avec ses propres mots aide à passer le pic. Pour l’étape 2 conviennent les skills de tolérance au stress (Rathus & Miller, 2015). En groupe, le plan est une prévention pour tous ; il ne remplace pas un plan établi avec un professionnel.",
+        "hintergrund": "La Safety Planning Intervention de Stanley et Brown (2012) est une mesure brève et structurée pour les personnes en crise suicidaire ; avec des contacts de suivi, elle a nettement réduit les comportements suicidaires (Stanley et al., 2018). Le plan suit un ordre fixe, de l’intérieur vers l’extérieur : signaux d’alerte, gestion personnelle, personnes et lieux qui distraient, proches, services spécialisés et urgences, environnement plus sûr. Les crises venant souvent par vagues, un plan rédigé d’avance avec ses propres mots aide à passer le pic. Pour l’étape 2 conviennent les skills de tolérance au stress (Rathus & Miller, 2015). En groupe, le plan est une prévention pour tous ; il ne remplace pas un plan établi avec un professionnel.",
         "quellen": [
           "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
           "Stanley, B., Brown, G. K., Brenner, L. A., Galfalvy, H. C., Currier, G. W., Knox, K. L., Chaudhury, S. R., Bush, A. L. & Green, K. L. (2018). Comparison of the Safety Planning Intervention with follow-up vs usual care of suicidal patients treated in the emergency department. JAMA Psychiatry, 75(9), 894–900.",
@@ -1691,7 +1691,7 @@
           "En cas de crise aiguë : la fiche « Mon plan de sécurité » de la Toolbox."
         ],
         "achtung": "Ne pas ramasser, lire ni juger. Plan vide ou personne bouleversée : entretien individuel le jour même, demander directement, ne pas laisser la personne seule, concept de protection, informer le ou la responsable ; danger : 112.",
-        "material": "Planchettes, panneaux, skills"
+        "material": "Planchettes à pince, panneaux, skills"
       }
     }
   }

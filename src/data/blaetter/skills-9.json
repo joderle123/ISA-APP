@@ -286,9 +286,9 @@
       "lehrer": {
         "ziel": "Les jeunes suivent une émotion pendant tout le film, puis formulent son message : quelle émotion est aux commandes et quand, et à quoi sert la tristesse ?",
         "ablauf": [
-          "Rendez-vous 1, avant le film (5 min) : distribuer les émotions sur cartes, cocher à la tâche 1.",
+          "Séance 1, avant le film (5 min) : distribuer les émotions sur cartes, cocher à la tâche 1.",
           "Pendant le film et à la pause : mots-clés sur trois ou quatre scènes au plus (tâche 2).",
-          "Rendez-vous 2, après le film (10 min) : tâches 3 et 4 en individuel, puis comparer en cercle le parcours de Riley.",
+          "Séance 2, après le film (10 min) : tâches 3 et 4 en individuel, puis comparer en cercle le parcours de Riley.",
           "Tâche 5 facultative. Comparer les messages avec l’affiche de la séance 8."
         ],
         "hintergrund": "Le film montre les émotions comme des personnages qui orientent pensée et action. Keltner et Ekman, qui ont conseillé l’équipe du film, soulignent que la tristesse y apparaît comme un signal social : elle appelle réconfort et proximité (Keltner & Ekman, 2015). Les cinq personnages correspondent aux émotions de base d’Ekman (1992). La fin montre des souvenirs à la fois joyeux et tristes – que l’on puisse ressentir les deux à la fois, Larsen et al. (2001) l’ont montré. La consigne d’observation fait du visionnage une observation active.",
@@ -628,9 +628,9 @@
       "lehrer": {
         "ziel": "Les jeunes observent chez un personnage de film comment revers, pensées et sources de force sont liés, et appliquent à l’histoire d’un autre le travail sur les croyances.",
         "ablauf": [
-          "Rendez-vous 1, avant le film (5 min) : répartir les points d’attention (tâche 1), deux personnes par point.",
+          "Séance 1, avant le film (5 min) : répartir les points d’attention (tâche 1), deux personnes par point.",
           "Pendant le film : seulement des mots-clés, de préférence à la pause.",
-          "Rendez-vous 2, après le film (10 min) : tâches 2 à 4 en individuel, puis recueillir au tableau en trois colonnes.",
+          "Séance 2, après le film (10 min) : tâches 2 à 4 en individuel, puis recueillir au tableau en trois colonnes.",
           "Tâches 5 et 6 en discussion : quels skills Chris utilise-t-il, et le bonheur, est-ce la même chose que l’argent ? La dernière phrase reste privée."
         ],
         "hintergrund": "La résilience naît de sources ordinaires : relations fiables, maîtrise de soi, espoir et expérience de pouvoir agir sur les choses (Masten, 2014). Dans le film, le fils est pour Chris à la fois une raison d’avancer et une source de force. Le travail sur les pensées qui freinent et celles qui portent suit l’idée que ce n’est pas l’événement seul, mais son évaluation qui détermine ce que nous ressentons et faisons (Ellis, 1962). Qui pense que les capacités peuvent se développer voit plus volontiers dans un revers une occasion d’apprendre (Dweck, 2006). La question du bonheur évite de croire que tout ne tient qu’à la volonté.",
@@ -1631,10 +1631,10 @@
       "lehrer": {
         "ziel": "Le groupe planifie une courte pièce ou vidéo : message, quatre à six scènes, tâches devant et derrière la scène, et règles qui rendent le jeu sûr.",
         "ablauf": [
-          "Rendez-vous 1 (25 min) : choisir le thème et fixer le message en une phrase (tâche 1), l’écrire aussi en grand sur une affiche.",
-          "Rendez-vous 1 (30 min) : esquisser les scènes (tâche 2), répartir les tâches (tâche 3), jouer chaque scène à grands traits.",
+          "Séance 1 (25 min) : choisir le thème et fixer le message en une phrase (tâche 1), l’écrire aussi en grand sur une affiche.",
+          "Séance 1 (30 min) : esquisser les scènes (tâche 2), répartir les tâches (tâche 3), jouer chaque scène à grands traits.",
           "Avant le premier jeu : cocher et compléter ensemble les règles (tâche 4).",
-          "Rendez-vous 2 : répétitions, représentation ou tournage, puis théâtre-forum et question finale."
+          "Séance 2 : répétitions, représentation ou tournage, puis théâtre-forum et question finale."
         ],
         "hintergrund": "Celui ou celle qui joue lui-même un comportement et y réussit se vit comme efficace ; qui regarde apprend par le modèle (Bandura, 1977). Les programmes d’apprentissage socio-émotionnel agissent surtout par des exercices actifs (Durlak et al., 2011). Sur le harcèlement, regarder du côté des témoins est utile, car le harcèlement est un processus de groupe aux rôles répartis (Salmivalli et al., 1996). Qui prend volontairement un rôle pesant et le quitte consciemment à la fin ne reste pas collé au personnage.",
         "quellen": [
@@ -1878,7 +1878,7 @@
             "un exercice, souvent avec une fiche – puis une pause avec un goûter",
             "quelque chose d’actif : mouvement, jeu, souvent dehors",
             "un skill pour se calmer",
-            "Réckbléck : une phrase dans le Skills-Pass, avec un tampon à la clé"
+            "Réckbléck : une phrase dans le passeport Skills, avec un tampon à la clé"
           ]
         },
         {
@@ -1894,7 +1894,7 @@
           "items": [
             "la roue des émotions",
             "la tension de 0 à 100",
-            "le Skills-Pass",
+            "le passeport Skills",
             "le Réckbléck",
             "notre compagnon de l’année : arbre, boussole ou livre",
             "notre propre rituel : ______________",
@@ -1993,7 +1993,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Personne n’est obligé de dire pourquoi il ou elle est ici. Cela vaut pour toi comme pour tous les autres."
         }
       ],
@@ -2024,7 +2024,7 @@
           "Reprendre la fiche avec les deux personnes après trois ou quatre semaines."
         ],
         "achtung": "Ne pas demander la raison du changement et ne pas laisser le groupe la demander. En cas d’indices de surcharge ou de danger, ne pas approfondir dans le groupe, mais mener un entretien individuel et informer la direction compétente (responsable).",
-        "material": "Stylos, planchette à pince, Skills-Pass, compagnon de l’année"
+        "material": "Stylos, planchette à pince, passeport Skills, compagnon de l’année"
       }
     }
   },
@@ -2310,7 +2310,7 @@
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Faire seulement la tâche 1 et le tableau ; la personne qui anime aide à remplir.",
+          "leichter": "Faire seulement la tâche 1 et le tableau ; l’adulte qui anime aide à remplir.",
           "schwerer": "Réfléchir en plus à ce que l’on peut faire pour un ami ou une amie qui va plus mal – et quand faire appel à des adultes."
         },
         "impulse": [
@@ -2751,8 +2751,8 @@
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "differenzierung": {
-          "leichter": "Faire seulement les tâches 1 et 5 ; établir le plan de révision pour deux jours avec la personne qui anime.",
-          "schwerer": "Établir un plan de révision détaillé avec la fiche de la boîte à outils « Apprendre malin »."
+          "leichter": "Faire seulement les tâches 1 et 5 ; établir le plan de révision pour deux jours avec l’adulte qui anime.",
+          "schwerer": "Établir un plan de révision détaillé avec la fiche de la Toolbox « Apprendre malin »."
         },
         "impulse": [
           "Comment remarques-tu que tu passes de 50 à 80 ?",

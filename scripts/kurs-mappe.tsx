@@ -4,7 +4,8 @@
 // passende Kurs-Sitzung in der passenden Variante bekommt, ob die Kurs-Rituale dabei sind und wie viele Seiten jedes Blatt hat.
 //   npx tsx --tsconfig tsconfig.scripts.json scripts/kurs-mappe.tsx <kurs-linie> [zielordner] [--png] [--blaetter] [--nur-de] [--dauer=30]
 // --blaetter: nur die Kinderblätter als Bilder (je Sitzung und Variante, zum Ansehen); die Seitenzahl je Blatt steht immer im Bericht.
-// Umfang: Blatt bis 7 Jahre (C1, C2) 1 Seite, sonst höchstens 2 Seiten – mehr gilt als Fehler.
+// Umfang: Blatt bis 7 Jahre (C1, C2) 1 Seite, sonst höchstens 2 Seiten – mehr gilt als Fehler. Kurse ab 7: höchstens 2 Seiten,
+// auch für Siebenjährige (ALTER=7; ihr Blatt hat dann nur zwei Aufgaben).
 // Ohne Kurs-Linie: alle Kurse (Linien „kurs-…“), nur der Bericht ohne PDF (nur Deutsch; mit --fr auch Französisch).
 // Endet mit Fehler, wenn eine Sitzung nicht die erwartete Kurs-Sitzung hat.
 import { mkdirSync, writeFileSync } from 'node:fs'
@@ -54,7 +55,8 @@ for (const kurs of kurse) {
   const n = Math.max(...sitzungen.map((e) => e.linie!.nr))
   const erste = sitzungen.filter((e) => e.linie!.nr === 1)
   const { von, bis } = erste[0].alter ?? { von: 8, bis: 9 }
-  const alter = Math.round((von + bis) / 2)
+  // ALTER=7: ein anderes Testalter im Band (z. B. die Jüngsten eines Kurses für 7–9)
+  const alter = process.env.ALTER ? Math.min(bis, Math.max(von, +process.env.ALTER)) : Math.round((von + bis) / 2)
   const codes = [...new Set(erste.flatMap((e) => (e.eldib ?? []).filter((x) => x.gewicht === 1).map((x) => x.code)))].slice(0, 2)
   const rituale = alle.filter((e) => e.kurs === kurs)
   const zugaenge = [...new Map(erste.map((e) => [JSON.stringify(e.zugang ?? null), e.zugang ?? null])).values()]
@@ -92,7 +94,8 @@ for (const kurs of kurse) {
           execFileSync('pdftoppm', ['-png', '-r', '60', f, f.replace(/\.pdf$/, '')])
         }
       }
-      const maxSeiten = alter < 8 ? 1 : 2
+      // Kurse ab 7: auch Siebenjährige höchstens 2 Seiten (ihr Blatt hat dann nur zwei Aufgaben – blatt.ts)
+      const maxSeiten = alter < 8 && von < 7 ? 1 : 2
       plan.sitzungen.forEach((s, i) => {
         const kern = s.schritte.filter((x) => x.rolle === 'kern').map((x) => x.ref)
         // VORSICHT=heikel: auch die schonende Tausch-Übung (mit eigenem Blatt) ist richtig

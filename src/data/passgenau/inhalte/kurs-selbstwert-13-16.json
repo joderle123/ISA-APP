@@ -4269,7 +4269,7 @@
     },
     "ort": "raum",
     "titel": "Der innere Kritiker und ein fairer Blick: Die Beweis-Waage",
-    "text": "Das Fenster hat jetzt drei Felder, das dritte sind die Werte. Heute geht es zurück zum ersten Feld, wie ich mich sehe: Dort sitzt oft eine strenge innere Stimme, die Fehler größer macht als Erfolge. Nach einer Runde Quadrat-Atmen mit offenen Augen (das Halten darf kurz sein) legt die Fachkraft ein Lineal quer über einen umgedrehten Becher als Waage: links wiegt der Kritiker, rechts der faire Blick. Tiago hat beim Spiel einen Elfmeter verschossen; für jeden Kritiker-Satz („Typisch ich.“ – „Du kannst es einfach nicht.“) legt die Fachkraft links einen Baustein, und der oder die Jugendliche prüft ihn mit „Stimmt das ganz?“ und „Was würde ich einem guten Freund sagen?“ und legt für jeden Beleg (letzte Woche zwei Tore vorbereitet) rechts einen Baustein. Dann ordnet er oder sie drei harte Kritiker-Karten drei fairen Antworten zu (zum Beispiel „Ich war nervös. Das passiert vielen.“) und sagt, was an der fairen Antwort genauer ist. Beim Rollentausch spricht die Fachkraft als Tiago den Kritiker, und er oder sie antwortet als Freund oder Freundin mit dem fairen Blick; Tiagos Beispiel trägt er oder sie auf dem Zettel bei „Dein Beispiel“ ein. Fair heißt nicht schönreden, fair heißt genau hinschauen.",
+    "text": "Das Fenster hat jetzt drei Felder, das dritte sind die Werte. Heute geht es zurück zum ersten Feld, wie ich mich sehe: Dort sitzt oft eine strenge innere Stimme, die Fehler größer macht als Erfolge. Nach einer Runde Quadrat-Atmen mit offenen Augen (das Halten darf kurz sein) legt die Fachkraft ein Lineal quer über einen umgedrehten Becher als Waage: links wiegt der Kritiker, rechts der faire Blick. Tiago hat beim Spiel einen Elfmeter verschossen; für jeden Kritiker-Satz („Typisch ich.“ – „Du kannst es einfach nicht.“) legt die Fachkraft links einen Baustein, und der oder die Jugendliche prüft ihn mit „Stimmt das ganz?“ und „Was würde ich einem guten Freund sagen?“ und legt für jeden Beleg (letzte Woche zwei Tore vorbereitet) rechts einen Baustein. Dann ordnet er oder sie drei harte Kritiker-Karten drei fairen Antworten zu (zum Beispiel „Ich war nervös. Das passiert vielen.“) und sagt, was an der fairen Antwort genauer ist. Beim Rollentausch spricht die Fachkraft als Tiago den Kritiker, und er oder sie antwortet als Freund oder Freundin mit dem fairen Blick; Tiagos Beispiel trägt er oder sie auf dem Blatt ein. Fair heißt nicht schönreden, fair heißt genau hinschauen.",
     "sagen": [
       "Heute prüfen wir mit einer Waage, was der innere Kritiker über Tiago sagt – und ob es stimmt. Du entscheidest, welche Belege wir auflegen.",
       "Frag bei jedem Satz: Stimmt das ganz? Was würde ich einem guten Freund in dieser Lage sagen?",
@@ -4301,7 +4301,7 @@
     },
     "fr": {
       "titel": "Le critique intérieur et un regard juste : la balance des preuves",
-      "text": "La fenêtre a maintenant trois champs, le troisième étant les valeurs. Aujourd’hui, on revient au premier champ, mon regard sur moi : il y a souvent là une voix intérieure sévère qui grossit les erreurs plus que les réussites. Après un tour de respiration en carré, les yeux ouverts (la pause peut être courte), l’adulte pose une règle en travers d’un gobelet retourné, comme une balance : à gauche pèse le critique, à droite le regard juste. Tiago a raté un penalty pendant le match ; pour chaque phrase du critique (« Typique de moi. » – « Tu n’y arrives tout simplement pas. »), l’adulte pose un cube à gauche, et le ou la jeune la vérifie avec « Est-ce entièrement vrai ? » et « Que dirais-je à un bon ami ? », puis pose à droite un cube pour chaque preuve (la semaine dernière, il a préparé deux buts). Ensuite, il ou elle associe trois cartes de critique dure à trois réponses justes (par exemple « J’étais nerveux·se. Ça arrive à beaucoup de monde. ») et dit ce qui est plus précis dans la réponse juste. En échangeant les rôles, l’adulte dit la phrase du critique dans le rôle de Tiago, et le ou la jeune répond en ami ou amie avec le regard juste ; il ou elle note l’exemple de Tiago sur la fiche sous « Ton exemple ». Juste ne veut pas dire enjoliver : juste veut dire regarder avec précision.",
+      "text": "La fenêtre a maintenant trois champs, le troisième étant les valeurs. Aujourd’hui, on revient au premier champ, mon regard sur moi : il y a souvent là une voix intérieure sévère qui grossit les erreurs plus que les réussites. Après un tour de respiration en carré, les yeux ouverts (la pause peut être courte), l’adulte pose une règle en travers d’un gobelet retourné, comme une balance : à gauche pèse le critique, à droite le regard juste. Tiago a raté un penalty pendant le match ; pour chaque phrase du critique (« Typique de moi. » – « Tu n’y arrives tout simplement pas. »), l’adulte pose un cube à gauche, et le ou la jeune la vérifie avec « Est-ce entièrement vrai ? » et « Que dirais-je à un bon ami ? », puis pose à droite un cube pour chaque preuve (la semaine dernière, il a préparé deux buts). Ensuite, il ou elle associe trois cartes de critique dure à trois réponses justes (par exemple « J’étais nerveux·se. Ça arrive à beaucoup de monde. ») et dit ce qui est plus précis dans la réponse juste. En échangeant les rôles, l’adulte dit la phrase du critique dans le rôle de Tiago, et le ou la jeune répond en ami ou amie avec le regard juste ; il ou elle note l’exemple de Tiago sur la fiche. Juste ne veut pas dire enjoliver : juste veut dire regarder avec précision.",
       "sagen": [
         "Aujourd’hui, on vérifie avec une balance ce que le critique intérieur dit de Tiago – et si c’est vrai. C’est toi qui décides quelles preuves on pose.",
         "À chaque phrase, demande-toi : est-ce entièrement vrai ? Que dirais-je à un bon ami dans cette situation ?",
@@ -4309,6 +4309,334 @@
         "Maintenant, tu es l’ami ou l’amie de Tiago. Je dis la phrase du critique, tu réponds avec justesse : regarder avec précision, sans enjoliver."
       ],
       "wennEsKippt": "Si la balance bascule mal, deux cartes servent de colonnes sur la table (« Critique » et « Preuves »), et les cubes se posent à côté. Si la réponse juste est difficile, l’adulte propose deux débuts au choix (« C’était une erreur, mais … » – « Ça arrive à beaucoup de monde, et … »). Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Tiago ; une phrase du critique avec sa réponse juste suffit."
+    },
+    "uebungsblatt": {
+      "titel": {
+        "de": "Der innere Kritiker und ein fairer Blick",
+        "fr": "Le critique intérieur et un regard juste"
+      },
+      "de": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Das Selbstbild-Fenster",
+              "punkte": [
+                "Heute: Wie ich mich sehe – jetzt mit fairem Blick",
+                "Wie andere mich sehen – schon da",
+                "Was mir wichtig ist – meine Werte (schon da)",
+                "Wohin ich will – kommt noch"
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Zum ersten Feld gehört auch die Stimme im Kopf. Heute prüfst du mit Tiago, was seine innere Stimme sagt – genauer und fairer, ohne Schönreden."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:mikrofon",
+              "groesse": "m",
+              "text": "Welche Stimme spricht Tiago mit sich?",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tiago hat beim Spiel einen Elfmeter verschossen. Zwei Blicke auf denselben Fehler: Wie hart ist Tiagos Kritiker – und wie hart wäre ein guter Freund? Setz je ein Kreuz."
+        },
+        {
+          "art": "skala",
+          "frage": "Tiagos Kritiker zu Tiago:",
+          "von": "sehr freundlich",
+          "bis": "sehr hart",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "frage": "Ein guter Freund zu Tiago:",
+          "von": "sehr freundlich",
+          "bis": "sehr hart",
+          "stufen": 5
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Drei Fragen für den fairen Blick",
+          "punkte": [
+            "Stimmt das ganz? Was spricht dagegen?",
+            "Was würde ich einem guten Freund in dieser Lage sagen?",
+            "Was kann ich daraus lernen?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Kritiker sagt zu Tiago: „Du kannst es einfach nicht.“ Kreuz an, wie jede Antwort wirkt.",
+          "hinweis": "Fair heißt nicht schönreden."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "„Quatsch, du bist der Beste!“",
+            "„Ich war nervös. Das passiert vielen.“",
+            "„Stimmt. Ich kann es einfach nicht.“"
+          ],
+          "optionen": [
+            "schönreden",
+            "fair",
+            "hart"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Beweis-Waage: Was spricht gegen den Kritiker? Kreuz an, was als Beleg gilt. Mehrere gehen."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "items": [
+            "„Letzte Woche hat Tiago zwei Tore vorbereitet.“",
+            "„Ein Elfmeter ist für alle schwer, auch für Profis.“",
+            "„Tiago ist eben so einer.“",
+            "„Heute war Tiago sehr nervös.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das Werkzeug zum Runterfahren: das Quadrat. Atme eine Runde mit.",
+          "hinweis": "Jede Seite dauert vier Zähler: einatmen, halten (darf kurz sein), ausatmen, halten."
+        },
+        {
+          "art": "atmen",
+          "uebung": "quadrat"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das Fenster wächst: Das erste Feld hat jetzt einen fairen Blick. Was nimmst du mit?"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Wie ich mich sehe",
+              "text": "heute: fairer Blick",
+              "heute": true
+            },
+            {
+              "titel": "Wie andere mich sehen",
+              "text": "schon dabei"
+            },
+            {
+              "titel": "Was mir wichtig ist",
+              "text": "schon dabei"
+            },
+            {
+              "titel": "Wohin ich will",
+              "text": "? – kommt noch"
+            }
+          ],
+          "linien": 0
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Tiagos fairer Satz (einen wählen):",
+          "items": [
+            "„Das war ein Fehler, nicht ich als Ganzes.“",
+            "„Das geht vielen so. Ich übe weiter.“",
+            "„Was würde ich einem Freund sagen?“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bis zum nächsten Mal: Achte bei einer Figur in einem Buch oder Film darauf, wie sie mit sich spricht – schöngeredet, hart oder fair? Oder übe Tiagos fairen Satz in Gedanken."
+        },
+        {
+          "art": "zielkarte",
+          "titel": "Bis zum nächsten Mal",
+          "text": "Ich achte auf die Stimme einer Figur oder übe Tiagos fairen Satz in Gedanken.",
+          "kaestchen": 2,
+          "tage": [
+            "gefunden",
+            "geübt"
+          ]
+        }
+      ],
+      "fr": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "La fenêtre sur soi",
+              "punkte": [
+                "Aujourd’hui : mon regard sur moi – maintenant avec un regard juste",
+                "Le regard des autres – déjà là",
+                "Ce qui compte pour moi – mes valeurs (déjà là)",
+                "Où je veux aller – à venir"
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Au premier champ appartient aussi la voix dans la tête. Aujourd’hui, tu aides Tiago à examiner ce que dit sa voix intérieure – avec plus de précision et de justesse, sans enjoliver."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:mikrofon",
+              "groesse": "m",
+              "text": "Quelle voix Tiago utilise-t-il pour se parler ?",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tiago a raté un penalty pendant le match. Deux regards sur la même erreur : à quel point le critique de Tiago est-il dur – et à quel point un bon ami le serait-il ? Mets une croix pour chacun."
+        },
+        {
+          "art": "skala",
+          "frage": "Le critique de Tiago avec Tiago :",
+          "von": "très bienveillant",
+          "bis": "très dur",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "frage": "Un bon ami avec Tiago :",
+          "von": "très bienveillant",
+          "bis": "très dur",
+          "stufen": 5
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Trois questions pour un regard juste",
+          "punkte": [
+            "Est-ce entièrement vrai ? Qu’est-ce qui dit le contraire ?",
+            "Que dirais-je à un bon ami dans cette situation ?",
+            "Qu’est-ce que je peux en apprendre ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le critique dit à Tiago : « Tu n’y arrives tout simplement pas. » Coche l’effet de chaque réponse.",
+          "hinweis": "Juste ne veut pas dire enjoliver."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "« N’importe quoi, tu es le meilleur ! »",
+            "« J’étais nerveux. Ça arrive à beaucoup de monde. »",
+            "« C’est vrai. Je n’y arrive tout simplement pas. »"
+          ],
+          "optionen": [
+            "enjoliver",
+            "juste",
+            "dur"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La balance des preuves : qu’est-ce qui s’oppose au critique ? Coche ce qui compte comme preuve. Plusieurs réponses sont possibles."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "items": [
+            "« La semaine dernière, Tiago a préparé deux buts. »",
+            "« Un penalty est difficile pour tout le monde, même pour les pros. »",
+            "« Tiago est comme ça, c’est tout. »",
+            "« Aujourd’hui, Tiago était très nerveux. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "L’outil pour se calmer : le carré. Respire un tour.",
+          "hinweis": "Chaque côté dure quatre temps : inspirer, retenir (court si tu veux), expirer, retenir."
+        },
+        {
+          "art": "atmen",
+          "uebung": "quadrat"
+        },
+        {
+          "art": "aufgabe",
+          "text": "La fenêtre grandit : le premier champ a maintenant un regard juste. Qu’emportes-tu ?"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Mon regard sur moi",
+              "text": "aujourd’hui : regard juste",
+              "heute": true
+            },
+            {
+              "titel": "Le regard des autres",
+              "text": "déjà là"
+            },
+            {
+              "titel": "Ce qui compte pour moi",
+              "text": "déjà là"
+            },
+            {
+              "titel": "Où je veux aller",
+              "text": "? – à venir"
+            }
+          ],
+          "linien": 0
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "La phrase juste de Tiago (en choisir une) :",
+          "items": [
+            "« C’était une erreur, pas moi tout entier. »",
+            "« Ça arrive à beaucoup de monde. Je continue de m’entraîner. »",
+            "« Que dirais-je à un ami ? »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "D’ici la prochaine fois : dans un livre ou un film, repère comment un personnage se parle – en enjolivant, durement ou avec justesse ? Ou entraîne la phrase juste de Tiago dans ta tête."
+        },
+        {
+          "art": "zielkarte",
+          "titel": "D’ici la prochaine fois",
+          "text": "Je repère la voix d’un personnage ou j’entraîne la phrase juste de Tiago dans ma tête.",
+          "kaestchen": 2,
+          "tage": [
+            "trouvé",
+            "entraîné"
+          ]
+        }
+      ],
+      "anleitung": {
+        "de": {
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche setzt zwei Kreuze – wie hart Tiagos Kritiker zu Tiago ist und wie hart ein guter Freund wäre – und sagt, was ihm oder ihr auffällt. Der Kasten mit den drei Fragen wird kurz gelesen. In Aufgabe 2 kreuzt er oder sie an, ob jede der drei Antworten schönredet, fair ist oder hart; die Fachkraft fragt, woran man es merkt. In Aufgabe 3 sammelt er oder sie Belege für die Waage: ankreuzen, was wirklich gegen den Kritiker spricht. Aufgabe 4 ist das Quadrat aus dem Kern, eine Runde mit offenen Augen. Fenster und Auftrag sind zum Ankreuzen. Es geht nur um Tiago.",
+          "sagen": [
+            "Woran merkst du, ob eine Antwort fair ist?",
+            "Was würdest du Tiago raten, wenn sein Kritiker laut wird?"
+          ],
+          "wennEsKippt": "Fällt das Beurteilen schwer, liest die Fachkraft die Antworten mit unterschiedlicher Stimme vor, und der oder die Jugendliche zeigt. Fällt die Atemübung schwer, genügt eine lange Ausatmung. Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Tiago zurück. Ist die Zeit knapp, genügen die Aufgaben 1 bis 3."
+        },
+        "fr": {
+          "text": "Exercice 1 ensemble : le ou la jeune met deux croix – à quel point le critique de Tiago est dur avec Tiago et à quel point un bon ami le serait – et dit ce qu’il ou elle remarque. L’encadré avec les trois questions se lit brièvement. À l’exercice 2, il ou elle coche si chacune des trois réponses enjolive, est juste ou est dure ; l’adulte demande à quoi on le remarque. À l’exercice 3, il ou elle rassemble des preuves pour la balance : cocher ce qui s’oppose vraiment au critique. L’exercice 4 est le carré vu pendant la séance, un tour les yeux ouverts. La fenêtre et la mission se font en cochant. Il n’est question que de Tiago.",
+          "sagen": [
+            "À quoi remarques-tu qu’une réponse est juste ?",
+            "Que conseillerais-tu à Tiago quand son critique devient bruyant ?"
+          ],
+          "wennEsKippt": "Si juger est difficile, l’adulte lit les réponses avec des voix différentes et le ou la jeune montre. Si la respiration est difficile, une longue expiration suffit. Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Tiago. Si le temps manque, les exercices 1 à 3 suffisent."
+        }
+      }
     }
   },
   {

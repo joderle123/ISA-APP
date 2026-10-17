@@ -290,8 +290,8 @@
         "ablauf": [
           "Galerie (15 min) : les portraits d’une copie A3 sont affichés dans la salle. À deux, circuler et coller des notes adhésives sur deux portraits : qui s’occupe de qui ici ? Question : « Quelle est la famille normale ? »",
           "Recueil (5 min) : « De quoi les jeunes ont-ils besoin de la part des personnes avec qui ils vivent ? » Classer au tableau selon les huit cases de la banque de mots.",
-          "Exercice 2 à deux (8 min), puis bilan : qui donne quoi – et qui d’autre que les parents ?",
-          "Exercice 3 en silence et facultatif, à la fin de la séance ou à la maison. Ne pas ramasser, ne pas lire à voix haute ; montrer brièvement l’encadré d’aide."
+          "Tâche 2 à deux (8 min), puis bilan : qui donne quoi – et qui d’autre que les parents ?",
+          "Tâche 3 en silence et facultative, à la fin de la séance ou à la maison. Ne pas ramasser, ne pas lire à voix haute ; montrer brièvement l’encadré d’aide."
         ],
         "hintergrund": "Pour le développement des adolescents, la forme de la famille compte moins que la qualité des relations. Dans l’étude de Kauai, les enfants qui se sont bien développés malgré des conditions difficiles avaient le plus souvent au moins une personne de référence fiable – souvent aussi en dehors de la famille nucléaire, par exemple les grands-parents, des frères et sœurs plus âgés ou une enseignante (Werner & Smith, 1992). Masten (2014) parle donc de la résilience comme d’une force « ordinaire », qui naît de relations qui portent. La cible rend ce réseau visible sans que personne ait à dévoiler sa vie de famille.",
         "quellen": [
@@ -299,7 +299,7 @@
           "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Lire seulement trois portraits ; exercice 2 avec une ligne remplie ensemble au tableau.",
+          "leichter": "Lire seulement trois portraits ; tâche 2 avec une ligne remplie ensemble au tableau.",
           "schwerer": "Imaginer comment l’une des familles aura pu changer dans cinq ans – et ce qui peut rester pareil."
         },
         "impulse": [
@@ -308,7 +308,7 @@
         ],
         "tipps": [
           "Changer les prénoms si quelqu’un s’appelle ainsi ou si un portrait ressemble à une situation réelle.",
-          "Ne pas lire l’exercice 3 en passant – même par intérêt."
+          "Ne pas lire la tâche 3 en passant – même par intérêt."
         ],
         "achtung": "Pas de questions sur sa propre famille ; l’exercice 3 reste privé. En cas d’indices de violence ou de négligence : entretien individuel, ne rien promettre, informer la direction compétente (responsable).",
         "material": "Feuille, copie A3, notes adhésives"
@@ -541,7 +541,7 @@
               "text": "Montre que tu comprends l’autre : « Je sais que tu … »"
             },
             {
-              "titel": "Message en « je »",
+              "titel": "Message-je",
               "text": "Dis ce qui te dérange et pourquoi – sans reproche : « Ça me stresse quand …, parce que … »"
             },
             {
@@ -559,7 +559,7 @@
           "art": "satzanfaenge",
           "linien": 2,
           "items": [
-            "Ma phrase d’arrêt : …",
+            "Ma phrase de stop : …",
             "Voilà comment je redescends : …",
             "Quand je reviens, je dis : …"
           ]
@@ -586,19 +586,19 @@
       "lehrer": {
         "ziel": "Les jeunes repèrent ce qui compte derrière les disputes du quotidien, jugent si le moment s’y prête, écrivent la formule de la maison et fixent un plan pour redescendre.",
         "ablauf": [
-          "Lire l’histoire, exercice 1 à deux (8 min) : « Que veut vraiment la mère – et que veut Mila ? » Recueillir les deux côtés au tableau.",
-          "Exercice 2 seul (3 min), comparer, lire l’encadré conseil. Cas à discuter, le message : bon s’il prépare une conversation, pas s’il la remplace.",
-          "Exercice 3 (5 min) : présenter la formule au tableau, puis écrire ; faire lire quelques phrases à celles et ceux qui veulent.",
-          "Exercice 4 après le skill pour redescendre (5 min), seul, sans lecture à voix haute. Montrer l’encadré d’aide."
+          "Lire l’histoire, tâche 1 à deux (8 min) : « Que veut vraiment la mère – et que veut Mila ? » Recueillir les deux côtés au tableau.",
+          "Tâche 2 seul (3 min), comparer, lire l’encadré conseil. Cas à discuter, le message : bon s’il prépare une conversation, pas s’il la remplace.",
+          "Tâche 3 (5 min) : présenter la formule au tableau, puis écrire ; faire lire quelques phrases à celles et ceux qui veulent.",
+          "Tâche 4 après le skill pour redescendre (5 min), seul, sans lecture à voix haute. Montrer l’encadré d’aide."
         ],
-        "hintergrund": "Les conflits entre adolescents et parents portent surtout sur le quotidien : aider à la maison, heures de sortie, apparence, école ; la plupart des familles gardent une relation chaleureuse (Steinberg, 2001). Derrière chaque exigence, il y a des deux côtés des préoccupations légitimes – l’iceberg les rend visibles. Les messages en « je » désamorcent les luttes de pouvoir (Gordon, 1972) ; reconnaître d’abord le point de vue de l’autre aide à être entendu (Rathus & Miller, 2015). Sous forte tension, aucun argument ne passe : d’où le bon moment et le plan pour redescendre avec heure de retour.",
+        "hintergrund": "Les conflits entre adolescents et parents portent surtout sur le quotidien : aider à la maison, heures de sortie, apparence, école ; la plupart des familles gardent une relation chaleureuse (Steinberg, 2001). Derrière chaque exigence, il y a des deux côtés des préoccupations légitimes – l’iceberg les rend visibles. Les messages-je désamorcent les luttes de pouvoir (Gordon, 1972) ; reconnaître d’abord le point de vue de l’autre aide à être entendu (Rathus & Miller, 2015). Sous forte tension, aucun argument ne passe : d’où le bon moment et le plan pour redescendre avec heure de retour.",
         "quellen": [
           "Steinberg, L. (2001). We know some things: Parent–adolescent relationships in retrospect and prospect. Journal of Research on Adolescence, 11(1), 1–19.",
           "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "À l’exercice 3, écrire seulement les parties 1 et 3 ; l’adulte aide à formuler le message en « je ».",
+          "leichter": "À la tâche 3, écrire seulement les parties 1 et 3 ; l’adulte aide à formuler le message-je.",
           "schwerer": "Écrire la scène du point de vue de la mère : que pense-t-elle quand la porte claque ?"
         },
         "impulse": [
@@ -794,7 +794,7 @@
           "punkte": [
             "Toutes les situations sont inventées. Personne ne joue quelqu’un de sa propre famille ou de son propre foyer.",
             "La carte A est le rôle de l’ado, la carte B celui de l’adulte. Qui joue ne lit que sa propre carte.",
-            "Au début, c’est la personne qui anime le groupe qui joue l’adulte.",
+            "Au début, l’adulte qui anime le groupe joue le rôle de l’adulte.",
             "Qui dit « Stop » arrête la scène. Pas d’insultes, pas de contact physique.",
             "Après la scène : se lever, se secouer, dire son propre prénom."
           ]
@@ -888,11 +888,11 @@
         }
       ],
       "lehrer": {
-        "ziel": "Des situations du quotidien inventées, vues sous deux angles, pour le théâtre-forum (unité 19) et les négociations (unité 20). Chaque côté a ses propres préoccupations légitimes.",
+        "ziel": "Des situations du quotidien inventées, vues sous deux angles, pour le théâtre-forum (séance 19) et les négociations (séance 20). Chaque côté a ses propres préoccupations légitimes.",
         "ablauf": [
           "Préparation : imprimer sur du papier épais, découper, trier séparément les cartes A et B. Écarter les cartes trop proches de la situation d’une personne du groupe.",
-          "Unité 19 : Z1 à Z4. La personne qui anime joue la carte B, une personne volontaire la carte A ; d’abord comme cela se passe souvent, puis avec des « Stop » du public.",
-          "Unité 20 : Z1, Z3, Z5 ou Z6. Les binômes négocient avec la feuille de route, chacun ne connaît que sa carte ; ensuite, échanger les rôles.",
+          "Séance 19 : Z1 à Z4. L’adulte qui anime joue la carte B, une personne volontaire la carte A ; d’abord comme cela se passe souvent, puis avec des « Stop » du public.",
+          "Séance 20 : Z1, Z3, Z5 ou Z6. Les binômes négocient avec la feuille de route, chacun ne connaît que sa carte ; ensuite, échanger les rôles.",
           "Bilan : « Quelle préoccupation de l’autre carte n’aviez-vous pas imaginée ? »"
         ],
         "hintergrund": "Jouer la carte de l’autre côté, c’est vivre ses préoccupations de l’intérieur – un pas efficace vers le changement de perspective. Les cartes disent donc non seulement ce que quelqu’un veut, mais aussi ce qui compte pour lui : Fisher et Ury (1981) distinguent les positions des intérêts qui se cachent derrière et montrent que des solutions durables ne deviennent possibles qu’en passant par les intérêts. Les programmes d’apprentissage socio-émotionnel agissent surtout quand ils font pratiquer activement, par exemple en jeu de rôle (Durlak et al., 2011). Les cartes inventées protègent : personne n’a à représenter sa propre famille.",
@@ -909,7 +909,7 @@
           "Où les deux côtés étaient-ils plus proches l’un de l’autre qu’il n’y paraissait au début ?"
         ],
         "tipps": [
-          "Plastifier les cartes : elles servent dans deux unités.",
+          "Plastifier les cartes : elles servent dans deux séances.",
           "Z6 se passe volontairement dans un foyer : là aussi, on négocie."
         ],
         "achtung": "Ne jamais faire jouer de vraies personnes. Si une scène touche de trop près à des expériences vécues : l’interrompre, faire sortir du rôle et proposer un entretien individuel ; en cas d’indices de violence, informer la direction compétente (responsable).",
@@ -1218,10 +1218,10 @@
       "lehrer": {
         "ziel": "Les jeunes distinguent positions et intérêts, reconnaissent ce qui construit la confiance et négocient avec une feuille de route jusqu’à un accord avec période d’essai.",
         "ablauf": [
-          "Après l’expérience de l’orange (5 min) : lire l’encadré d’information, exercice 1 à deux ; collecter les solutions au tableau.",
-          "Exercice 2 individuellement (3 min), puis discuter l’encadré à retenir : « Qu’est-ce qui aide après un retrait ? »",
-          "Exercice 3 : utiliser la feuille de route dans l’arène de négociation, deux tours avec échange des rôles.",
-          "L’exercice 4 est une proposition facultative pour la maison ; ne pas le ramasser."
+          "Après l’expérience de l’orange (5 min) : lire l’encadré d’information, tâche 1 à deux ; collecter les solutions au tableau.",
+          "Tâche 2 individuellement (3 min), puis discuter l’encadré à retenir : « Qu’est-ce qui aide après un retrait ? »",
+          "Tâche 3 : utiliser la feuille de route dans l’arène de négociation, deux tours avec échange des rôles.",
+          "La tâche 4 est une proposition facultative pour la maison ; ne pas le ramasser."
         ],
         "hintergrund": "Les positions sont des exigences, les intérêts les raisons qui se cachent derrière. Fisher et Ury (1981) montrent que les négociations qui partent des intérêts mènent plus souvent à des solutions avec lesquelles les deux côtés peuvent vivre. Pour les familles : l’autonomie se développe au mieux dans des relations qui restent chaleureuses et adaptent les règles ensemble, pas à pas (Steinberg, 2001). Une période d’essai et un plan B rendent les accords vérifiables ; liés à des situations concrètes, ils sont plus souvent respectés (Gollwitzer, 1999).",
         "quellen": [
@@ -1230,7 +1230,7 @@
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "differenzierung": {
-          "leichter": "Exercice 1 à l’oral ; la personne qui anime écrit au tableau les intérêts du côté adulte.",
+          "leichter": "Tâche 1 à l’oral ; l’adulte qui anime écrit au tableau les intérêts du côté adulte.",
           "schwerer": "Trouver trois solutions où chaque côté obtient plus que la moitié."
         },
         "impulse": [
@@ -1547,10 +1547,10 @@
       "lehrer": {
         "ziel": "Les jeunes reconnaissent comment des traces isolées forment une image précise, vérifient leurs réglages de vie privée et construisent un mot de passe long avec la méthode de la phrase.",
         "ablauf": [
-          "Lire l’histoire, exercice 1 à deux (6 min) : « Vous êtes des détectives. » Rassembler les trouvailles au tableau.",
+          "Lire l’histoire, tâche 1 à deux (6 min) : « Vous êtes des détectives. » Rassembler les trouvailles au tableau.",
           "Lire l’encadré (2 min) : le positif fait aussi partie de l’empreinte.",
-          "Exercice 2 seul avec son propre téléphone, si le règlement intérieur l’autorise (6 min). Personne ne montre son écran.",
-          "Exercice 3 (5 min) : expliquer la méthode de la phrase, construire un mot de passe d’entraînement, vérifier à deux – long, impossible à deviner, utilisé une seule fois."
+          "Tâche 2 seul avec son propre téléphone, si le règlement intérieur l’autorise (6 min). Personne ne montre son écran.",
+          "Tâche 3 (5 min) : expliquer la méthode de la phrase, construire un mot de passe d’entraînement, vérifier à deux – long, impossible à deviner, utilisé une seule fois."
         ],
         "hintergrund": "Des informations isolées comme l’école, le club, l’horaire d’entraînement ou l’anniversaire paraissent inoffensives ; assemblées, elles révèlent où se trouve quelqu’un et quand, et donnent des indices sur les mots de passe et les questions de sécurité. BEE SECURE et klicksafe recommandent donc des comptes privés, la localisation désactivée, l’accord préalable avant d’être identifié, des mots de passe longs et différents pour chaque compte, ainsi que l’authentification à deux facteurs. La méthode de la phrase rend les mots de passe longs faciles à retenir. Le ton compte : le but n’est pas la peur, mais de décider soi-même de ce qui est visible.",
         "quellen": [
@@ -1558,7 +1558,7 @@
           "klicksafe – EU-Initiative für mehr Sicherheit im Netz: www.klicksafe.de"
         ],
         "differenzierung": {
-          "leichter": "Exercice 1 avec deux traces ; à l’exercice 2, seulement les quatre premiers points.",
+          "leichter": "Tâche 1 avec deux traces ; à la tâche 2, seulement les quatre premiers points.",
           "schwerer": "Écrire une liste de contrôle pour des frères et sœurs plus jeunes : cinq réglages dont chaque nouveau téléphone a besoin."
         },
         "impulse": [
@@ -1566,7 +1566,7 @@
           "Que conseilleriez-vous à Mila, sans lui interdire de poster ?"
         ],
         "tipps": [
-          "Clarifier d’abord le règlement sur le téléphone ; sans téléphone, l’exercice 2 se remplit comme plan pour la maison.",
+          "Clarifier d’abord le règlement sur le téléphone ; sans téléphone, la tâche 2 se remplit comme plan pour la maison.",
           "Ne pas montrer ni fouiller de vrais profils de l’école ou de l’entourage."
         ],
         "achtung": "Ne pas faire montrer les écrans, ne pas ramasser les téléphones. En cas de contacts avec des inconnus, de pression ou de chantage : entretien individuel, informer la direction compétente (responsable).",
@@ -1857,8 +1857,8 @@
         "ablauf": [
           "Après le feu des photos (2 min) : lire les trois règles. Question : « Qu’ont-elles en commun toutes les trois ? » – Il s’agit du consentement.",
           "Lire l’histoire, puis le relais d’aide (13 min) ; ensuite comparer les cinq étapes de la feuille avec le résultat des équipes.",
-          "Exercice 1 seul ou à deux (4 min) ; faire lire quelques réponses à Elias à celles et ceux qui veulent.",
-          "Exercice 2 après le skill de respiration, seul et sans lecture à voix haute (3 min). Montrer l’encadré d’aide."
+          "Tâche 1 seul ou à deux (4 min) ; faire lire quelques réponses à Elias à celles et ceux qui veulent.",
+          "Tâche 2 après le skill de respiration, seul et sans lecture à voix haute (3 min). Montrer l’encadré d’aide."
         ],
         "hintergrund": "Selon une méta-analyse, la grande majorité des adolescents n’a jamais envoyé de photo intime ; environ une personne sur huit en a toutefois déjà transféré une sans accord (Madigan et al., 2018). Dans les cas de chantage avec des photos, les victimes connaissent souvent les auteurs, et beaucoup ne se confient à personne par honte (Wolak et al., 2018). La feuille renforce donc les règles du consentement, nomme clairement la culpabilité et fait s’exercer à la première phrase pour demander de l’aide. Au Luxembourg, la BEE SECURE Helpline offre des conseils.",
         "quellen": [
@@ -1867,7 +1867,7 @@
           "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
         ],
         "differenzierung": {
-          "leichter": "Discuter les trois règles et les étapes 1 et 4 ; exercice 1 à l’oral.",
+          "leichter": "Discuter les trois règles et les étapes 1 et 4 ; tâche 1 à l’oral.",
           "schwerer": "Écrire un message à une amie dont la photo circule : que dis-tu, que fais-tu ?"
         },
         "impulse": [
@@ -1876,7 +1876,7 @@
         ],
         "tipps": [
           "Ne montrer aucune image, même floue ou dessinée.",
-          "Laisser au tableau la phrase d’exemple de l’exercice 2."
+          "Laisser au tableau la phrase d’exemple de la tâche 2."
         ],
         "achtung": "Ne regarder, accepter ou transférer aucune photo intime. En cas d’indices de chantage : entretien individuel, ne rien promettre, informer la direction compétente (responsable) le jour même ; en urgence, 112.",
         "material": "Feuille, cartes du relais d’aide"
@@ -2199,10 +2199,10 @@
       "lehrer": {
         "ziel": "Les jeunes distinguent opinion, insulte, discours de haine et menace, écrivent une réponse sans rabaisser et connaissent les étapes : sauvegarder, signaler, bloquer, demander de l’aide.",
         "ablauf": [
-          "Exercice 1 avec des cartes de vote (10 min), puis cocher. Solution : 1 opinion, 2 insulte, 3 haine, 4 haine (cas limite), 5 opinion, 6 menace, 7 insulte – répétée, donc cyberharcèlement.",
+          "Tâche 1 avec des cartes de vote (10 min), puis cocher. Solution : 1 opinion, 2 insulte, 3 haine, 4 haine (cas limite), 5 opinion, 6 menace, 7 insulte – répétée, donc cyberharcèlement.",
           "Lire les encadrés d’information et de conseil (5 min) : « Qui est vraiment touché par une réponse ? »",
-          "Exercice 2 après le mur de commentaires (5 min) : une réponse publique et une réponse privée, la banque de mots aide.",
-          "Exercice 3 (4 min) : discuter les étapes, puis compléter individuellement. Montrer l’encadré d’aide."
+          "Tâche 2 après le mur de commentaires (5 min) : une réponse publique et une réponse privée, la banque de mots aide.",
+          "Tâche 3 (4 min) : discuter les étapes, puis compléter individuellement. Montrer l’encadré d’aide."
         ],
         "hintergrund": "Le cyberharcèlement s’en prend de façon répétée à une personne ; en ligne, il pèse lourd parce que les publications se diffusent vite et que beaucoup de gens les lisent (Hinduja & Patchin, 2015). Le discours de haine rabaisse des personnes à cause de leur appartenance à un groupe. Sans contact visuel et souvent anonymement, on écrit en ligne ce qu’on ne dirait jamais en face – Suler (2004) parle de désinhibition en ligne. Qui se tait ou like renforce l’attaque ; qui contredit ou soutient les personnes visées l’affaiblit (Salmivalli et al., 1996). Le contre-discours s’adresse donc surtout aux personnes qui lisent. Au Luxembourg, la BEE SECURE Helpline propose des conseils.",
         "quellen": [
@@ -2212,7 +2212,7 @@
           "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
         ],
         "differenzierung": {
-          "leichter": "Trois catégories : opinion, blessant, menace. Exercice 2 seulement en privé.",
+          "leichter": "Trois catégories : opinion, blessant, menace. Tâche 2 seulement en privé.",
           "schwerer": "Écrire une réponse avec une question et un fait, sans faire la leçon."
         },
         "impulse": [
@@ -2528,11 +2528,11 @@
         "ziel": "Les jeunes mesurent ce que les jeux apportent, repèrent les procédés d’accroche, s’évaluent en privé et fixent une règle pour le temps et une pour l’argent.",
         "ablauf": [
           "Après le pitch du jeu (4 min) : côté gauche de la balance. Question : « Qu’est-ce qui est compétence, autonomie, appartenance ? »",
-          "Exercice 2 après « Dragon Rush » (5 min). Solution, depuis le haut : 1–3, 2–6, 3–5, 4–1, 5–4, 6–2.",
+          "Tâche 2 après « Dragon Rush » (5 min). Solution, depuis le haut : 1–3, 2–6, 3–5, 4–1, 5–4, 6–2.",
           "Après l’expérience des loot boxes : compléter le côté droit de la balance, lire l’encadré.",
-          "Après le parcours des 24 heures (6 min) : exercices 3 et 4 seul ; ne pas ramasser, ne pas lire à voix haute."
+          "Après le parcours des 24 heures (6 min) : tâches 3 et 4 seul ; ne pas ramasser, ne pas lire à voix haute."
         ],
-        "hintergrund": "Les jeux comblent les besoins de compétence, d’autodétermination et de lien (Deci & Ryan, 2000) et captivent justement ainsi (Przybylski, Rigby & Ryan, 2010) ; jouer avec modération ne nuit pas au bien-être (Przybylski & Weinstein, 2017). Beaucoup de jeux compliquent l’arrêt ; les spécialistes comparent les loot boxes aux jeux d’argent (King & Delfabbro, 2018), et qui dépense beaucoup pour cela présente plus souvent des signes de jeu problématique (Zendle & Cairns, 2018). L’exercice 3 s’inspire de signaux d’alerte connus – perte de contrôle, priorité sur le reste, poursuite malgré les inconvénients – et n’est pas un diagnostic.",
+        "hintergrund": "Les jeux comblent les besoins de compétence, d’autodétermination et de lien (Deci & Ryan, 2000) et captivent justement ainsi (Przybylski, Rigby & Ryan, 2010) ; jouer avec modération ne nuit pas au bien-être (Przybylski & Weinstein, 2017). Beaucoup de jeux compliquent l’arrêt ; les spécialistes comparent les loot boxes aux jeux d’argent (King & Delfabbro, 2018), et qui dépense beaucoup pour cela présente plus souvent des signes de jeu problématique (Zendle & Cairns, 2018). La tâche 3 s’inspire de signaux d’alerte connus – perte de contrôle, priorité sur le reste, poursuite malgré les inconvénients – et n’est pas un diagnostic.",
         "quellen": [
           "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
           "Przybylski, A. K., Rigby, C. S. & Ryan, R. M. (2010). A motivational model of video game engagement. Review of General Psychology, 14(2), 154–166.",
@@ -2541,7 +2541,7 @@
           "Zendle, D. & Cairns, P. (2018). Video game loot boxes are linked to problem gambling: Results of a large-scale survey. PLOS ONE, 13(11), e0206767."
         ],
         "differenzierung": {
-          "leichter": "Exercice 2 avec quatre procédés ; à l’exercice 4, une seule règle.",
+          "leichter": "Tâche 2 avec quatre procédés ; à la tâche 4, une seule règle.",
           "schwerer": "Trouver un procédé dans une appli sans rapport avec les jeux, et décrire un antidote."
         },
         "impulse": [

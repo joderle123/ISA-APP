@@ -462,7 +462,12 @@ function schreibAus(b: Baustein): number {
     case 'glaeser':
     case 'netz':
     case 'rueckblick':
+    case 'regler':
+    case 'jahr':
       return 1
+    case 'formfelder':
+    case 'personen':
+      return 2
     case 'spalten':
       return Math.max(0, ...[...b.links, ...b.rechts].map(schreibAus))
     default:
@@ -499,6 +504,9 @@ function bildAus(b: Baustein): number {
     case 'netz':
     case 'tageskreis':
     case 'bild':
+    case 'formfelder':
+    case 'personen':
+    case 'jahr':
       return 2
     case 'skala':
       return b.gesichter ? 2 : 1
@@ -574,6 +582,16 @@ function formateAus(e: Einheit0): string[] {
       case 'glaeser':
       case 'mindmap':
         f.add('denkmodell')
+        break
+      case 'formfelder':
+      case 'personen':
+        f.add('schreiben')
+        break
+      case 'regler':
+        f.add('ankreuzen')
+        break
+      case 'jahr':
+        f.add('malen')
         break
       case 'plan':
       case 'tagesplan':

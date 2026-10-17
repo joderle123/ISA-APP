@@ -12,6 +12,10 @@ const FEST_MM: Record<string, Record<Layout, number>> = {
   [BLATT_SYSTEM.kernblatt]: { bild: 190, gross: 180, mittel: 170, jugend: 160 },
 }
 
+/** Beim Kurs-Blatt steht die Hilfe-Zeile in der Fußzeile und braucht keinen Platz. */
+const hoeheIn = (k: Katalog, refs: string[], ref: string, layout: Layout) =>
+  ref === BLATT_SYSTEM.notfall && refs.includes(BLATT_SYSTEM.kernblatt) ? 0 : teilHoehe(k, ref, layout)
+
 /** Seitenmaße je Gestaltung (mm); Rückfall, wenn der Katalog noch nicht gemessen ist. */
 export function seitenMasse(k: Katalog, layout: Layout): { erste: number; folge: number; abstand: number } {
   return intern(k).seite[layout] ?? { erste: 228, folge: 250, abstand: 3.5 }
@@ -44,7 +48,7 @@ export function verteile(k: Katalog, refs: string[], layout: Layout): number[] {
   const benutzt = [0]
   const anzahl = [0]
   for (const ref of refs) {
-    const h = teilHoehe(k, ref, layout)
+    const h = hoeheIn(k, refs, ref, layout)
     const i = benutzt.length - 1
     const cap = i ? m.folge : m.erste
     const gap = anzahl[i] && !mitAufgabe(k, ref) ? m.abstand : anzahl[i] ? m.abstand * 0.4 : 0
@@ -67,7 +71,7 @@ export function knapp(k: Katalog, refs: string[], layout: Layout, rand = 0.03): 
   let anzahl = 0
   let seite = 0
   for (const ref of refs) {
-    const h = teilHoehe(k, ref, layout)
+    const h = hoeheIn(k, refs, ref, layout)
     const cap = seite ? m.folge : m.erste
     const gap = anzahl && !mitAufgabe(k, ref) ? m.abstand : anzahl ? m.abstand * 0.4 : 0
     const neu = benutzt + gap + h

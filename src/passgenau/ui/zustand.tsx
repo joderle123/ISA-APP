@@ -113,7 +113,7 @@ function entwurfSchreiben(e: Entwurf | null): void {
 }
 
 const VORSICHT_ALLE = ['familie', 'trauer', 'koerper', 'heikel', 'reiz', 'trauma'] as const
-const HILFT_ALLE = ['stundenleiste', 'bewegungspausen', 'reizarm', 'bildplan'] as const
+const HILFT_ALLE = ['stundenleiste', 'bewegungspausen', 'reizarm', 'bildplan', 'woertlich'] as const
 
 /** Profil mit den Korrekturen der Fachkraft */
 export function mitKorrekturen(p: Profil, k: Korrekturen, vorname: boolean): Profil {

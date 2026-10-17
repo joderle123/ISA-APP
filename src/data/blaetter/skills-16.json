@@ -669,7 +669,7 @@
           "Tâche 2 (4 min) : débuts de phrases ; qui veut compare à deux l’heure du creux.",
           "Encadré (4 min) : parler d’énergie longue ou brève, pas d’aliments sains ou malsains.",
           "Tâche 3 (6 min) avec des canettes vides, puis le piège de la caféine.",
-          "Tâche 4 (4 min) après le bilan d’énergie ; la phrase va aussi dans le Skills-Pass."
+          "Tâche 4 (4 min) après le bilan d’énergie ; la phrase va aussi dans le passeport Skills."
         ],
         "hintergrund": "La vigilance dépend du sommeil, de l’hydratation et de repas répartis sur la journée ; l’entraînement aux skills compte manger et dormir équilibrés parmi les skills contre les émotions fortes (Rathus & Miller, 2015). Un petit-déjeuner favorise à court terme l’attention en classe (Adolphus et al., 2013). La feuille évite calories, poids et aliments « bons » ou « mauvais » et exerce à percevoir soif et faim (Craig, 2002). Un message menaçant ne marche que si l’on sait quoi faire à la place (Peters, Ruiter & Kok, 2013).",
         "quellen": [
@@ -1390,7 +1390,7 @@
       "lehrer": {
         "ziel": "Les jeunes mesurent comment deux types de mouvement changent leur humeur et leur éveil, découvrent l’action opposée contre le piège du coup de mou et planifient leur propre idée de mouvement.",
         "ablauf": [
-          "Entrée en matière (2 min) : noter en silence les valeurs « avant » de la ligne 1, sans les dire à voix haute.",
+          "Check-in (2 min) : noter en silence les valeurs « avant » de la ligne 1, sans les dire à voix haute.",
           "Dehors (25 min) : douze minutes de marche rapide à deux, puis demi-tours aux plots ; noter avant et après chaque tour.",
           "Bilan (8 min) : tour de pouces, tâche 2, encadré.",
           "Piège du coup de mou (4 min) : lire la bande dessinée ; quand l’action opposée aide-t-elle sans surcharger ?",
@@ -1415,7 +1415,7 @@
           "Le mouvement intégré au quotidien (trajet scolaire, pause, escalier) est celui qui tient le mieux."
         ],
         "achtung": "Aucun commentaire sur les corps, la condition physique ou le poids. Se renseigner au préalable sur l’asthme et les blessures. Qui paraît abattu depuis des semaines a besoin d’un entretien : informer la direction compétente (responsable).",
-        "material": "Une feuille par personne, porte-blocs, plots"
+        "material": "Une feuille par personne, planchettes à pince, plots"
       }
     }
   },
@@ -1592,7 +1592,7 @@
     },
     "fr": {
       "titel": "Mon année en images",
-      "untertitel": "Six images pour une année de cours Skills – dessinées, collées ou sous forme de symbole",
+      "untertitel": "Six images pour une année de cours de skills – dessinées, collées ou sous forme de symbole",
       "bausteine": [
         {
           "art": "info",
@@ -2348,7 +2348,7 @@
           "titel": "Certificat",
           "text": "___ a participé, pendant l’année scolaire ___, au cours de skills « Solide au quotidien » et a exercé des skills pendant un an : pour l’école, la colère et l’amitié, pour la famille et le net, pour de bonnes décisions et pour sa propre santé.",
           "unterschriften": [
-            "Signature de la personne qui anime le cours"
+            "Signature de l’adulte qui anime le cours"
           ]
         },
         {
@@ -2398,17 +2398,17 @@
         },
         {
           "art": "feld",
-          "label": "Ce que je voudrais te dire – la personne qui a animé le cours",
+          "label": "Ce que je voudrais te dire – l’adulte qui a animé le cours",
           "hoehe": 3.4
         }
       ],
       "lehrer": {
-        "ziel": "Chaque personne reçoit à la fin de l’année de cours un certificat personnel avec ses skills les plus importants, ses forces vues par le groupe et une phrase de la personne qui anime.",
+        "ziel": "Chaque personne reçoit à la fin de l’année de cours un certificat personnel avec ses skills les plus importants, ses forces vues par le groupe et une phrase de l’adulte qui anime.",
         "ablauf": [
           "Avant : imprimer sur du papier épais, inscrire les noms et l’année scolaire, écrire la phrase de l’adulte – une observation concrète de l’année.",
           "Pendant la séance (4 min) : noter les skills de la boussole, les forces des cartes et le regard vers l’avenir.",
           "Remise (6 min) : appeler chaque personne individuellement, lire la phrase à voix haute ou la remettre en silence, signer ; le groupe applaudit.",
-          "Le certificat rentre à la maison avec le Pass, la boussole et les cartes de forces."
+          "Le certificat rentre à la maison avec le passeport, la boussole et les cartes de forces."
         ],
         "hintergrund": "Un certificat garde la trace de ce qui passerait sinon inaperçu : quelqu’un a persévéré pendant un an et exercé des compétences. De telles expériences de maîtrise sont la source principale du sentiment d’efficacité personnelle (Bandura, 1977). La reconnaissance agit quand elle est concrète et nomme un comportement observé (Hattie & Timperley, 2007). Le choix personnel, le retour du groupe et la phrase d’un adulte de référence renforcent deux facteurs de protection que décrit Masten (2014) : le sentiment de compétence et des relations fiables.",
         "quellen": [

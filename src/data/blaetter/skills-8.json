@@ -220,7 +220,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Cette fiche t’appartient. Si ton sac à dos reste très lourd pendant des semaines, parles-en à une personne en qui tu as confiance – ou appelle, de façon anonyme et gratuite, le Kanner- a Jugendtelefon : 116 111."
         }
       ],
@@ -248,7 +248,7 @@
         ],
         "tipps": [
           "Ne pas dépasser environ cinq kilos dans le sac et ne forcer personne à le porter.",
-          "L’échelle de la tâche 2 sert aussi de point de départ : quel poids pèse ton sac aujourd’hui ?"
+          "L’échelle de la tâche 2 sert aussi de check-in : quel poids pèse ton sac aujourd’hui ?"
         ],
         "achtung": "Beaucoup de croix, un sac durablement à 9 ou 10, des allusions à des soucis à la maison : ne pas questionner dans le groupe, proposer un entretien individuel, informer la direction compétente (responsable). En cas de danger, agir selon le concept de protection.",
         "material": "Sac à dos, quelques livres, affiche, stylos"
@@ -569,11 +569,11 @@
       "lehrer": {
         "ziel": "Les jeunes évaluent leur santé dans six domaines, choisissent une petite étape réalisable et la sécurisent avec un plan « si … alors », une échelle de confiance et une liste à cocher.",
         "ablauf": [
-          "Entrée (2 min) : « Qui a déjà oublié une résolution au bout d’une semaine ? » Aujourd’hui, on planifie pour que ça marche.",
+          "Entrée en matière (2 min) : « Qui a déjà oublié une résolution au bout d’une semaine ? » Aujourd’hui, on planifie pour que ça marche.",
           "Tâches 1 et 2 (6 min) en individuel, lire les idées à voix haute. Plus c’est petit, mieux c’est.",
           "Tâche 3 (5 min) : vérifier à deux les phrases « si … alors » : moment, lieu et action sont-ils clairs ?",
           "Tâche 4 (2 min) : confiance inférieure à 7 : réduire l’étape ensemble.",
-          "Tâche 5 (5 min) : choisir un binôme, noter l’étape dans le Skills-Pass, emporter la fiche. Tâche 6 après deux semaines."
+          "Tâche 5 (5 min) : choisir un binôme, noter l’étape dans le passeport Skills, emporter la fiche. Tâche 6 après deux semaines."
         ],
         "hintergrund": "Les résolutions échouent rarement par manque de savoir, mais au moment de passer à l’acte. Les plans « si … alors », qui fixent quand, où et comment agir, favorisent nettement la mise en pratique, même face aux obstacles (Gollwitzer, 1999). L’échelle de confiance de l’entretien motivationnel aide à dimensionner l’étape pour qu’elle réussisse (Miller & Rollnick, 2013). Repères : 8 à 10 heures de sommeil (Paruthi et al., 2016) et au moins 60 minutes d’activité physique par jour (World Health Organization, 2020). La mesure reste pourtant la première étape réalisable.",
         "quellen": [
@@ -595,7 +595,7 @@
           "Photographier le plan pour l’écran de verrouillage."
         ],
         "achtung": "Ne pas encourager les objectifs de poids ou de restriction alimentaire, mais réorienter avec tact ; si le comportement alimentaire semble perturbé, informer la direction compétente (responsable). Manque de nourriture ou de lit à la maison : entretien selon la procédure interne.",
-        "material": "Une fiche par personne, Skills-Pass ; en option : Bilan sommeil"
+        "material": "Une fiche par personne, passeport Skills ; en option : Bilan sommeil"
       }
     }
   },
@@ -745,7 +745,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Feuillette d’abord ton Skills-Pass et marque les trois phrases qui comptent le plus pour toi aujourd’hui."
+          "text": "Feuillette d’abord ton passeport Skills et marque les trois phrases qui comptent le plus pour toi aujourd’hui."
         },
         {
           "art": "aufgabe",
@@ -815,17 +815,17 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "La courbe et les réponses t’appartiennent. Dans le groupe, tu ne racontes que ce que tu as envie de raconter."
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes reviennent sur leur année avec le Skills-Pass et la courbe de l’année, nomment les hauts et les bas, et notent ce qu’ils ont appris et ce qui les rend fiers.",
+        "ziel": "Les jeunes reviennent sur leur année avec le passeport Skills et la courbe de l’année, nomment les hauts et les bas, et notent ce qu’ils ont appris et ce qui les rend fiers.",
         "ablauf": [
-          "Skills-Pass (5 min) : le feuilleter en silence et marquer trois phrases qui comptent encore aujourd’hui.",
+          "Passeport Skills (5 min) : le feuilleter en silence et marquer trois phrases qui comptent encore aujourd’hui.",
           "Courbe de l’année (4 min) : cocher une case par mois et relier les croix. Montrer d’abord au tableau une courbe d’exemple.",
           "Hauts et bas (3 min) : les noter dans le tableau – seulement ce que la personne veut écrire.",
-          "Débuts de phrases (3 min). Qui le souhaite raconte un moment fort à quelqu’un. La fiche rentre à la maison avec le Pass."
+          "Débuts de phrases (3 min). Qui le souhaite raconte un moment fort à quelqu’un. La fiche rentre à la maison avec le passeport."
         ],
         "hintergrund": "Les rétrospectives rendent visible une évolution qui se perd dans le quotidien. La courbe de l’année est une version simplifiée de la ligne de vie, répandue dans le travail biographique : elle montre qu’après les creux, d’autres périodes sont venues. Écrire sur ses expériences aide à les mettre en ordre (Pennebaker, 1997). Constater qu’on a traversé des phases difficiles, c’est faire l’expérience de sa propre capacité à y faire face – la source la plus importante du sentiment d’efficacité personnelle (Bandura, 1977) et un élément de la résilience (Masten, 2014).",
         "quellen": [
@@ -838,7 +838,7 @@
           "schwerer": "Pour chaque creux, noter quel skill ou quelle personne a aidé."
         },
         "impulse": [
-          "Quelle phrase de votre Skills-Pass vous surprend aujourd’hui ?",
+          "Quelle phrase de votre passeport Skills vous surprend aujourd’hui ?",
           "Que savez-vous aujourd’hui de vous que vous ne saviez pas encore en septembre ?"
         ],
         "tipps": [
@@ -846,7 +846,7 @@
           "Ne pas interpréter ni évaluer la courbe – elle appartient à la personne."
         ],
         "achtung": "Les creux peuvent rappeler des moments pénibles : ne pas poser de questions ; en cas de larmes ou d’hésitation, proposer un entretien après la séance. En cas d’indices de danger, agir selon le concept de protection et informer la direction compétente (responsable).",
-        "material": "Skills-Pass, une fiche par personne, crayons de couleur"
+        "material": "Passeport Skills, une fiche par personne, crayons de couleur"
       }
     }
   },
@@ -952,8 +952,8 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
-          "text": "La lettre est glissée dans une enveloppe fermée. Personne ne la lit – pas même la personne qui anime le groupe. Dans un an, tu la récupères."
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "La lettre est glissée dans une enveloppe fermée. Personne ne la lit – pas même l’adulte qui anime le groupe. Dans un an, tu la récupères."
         },
         {
           "art": "aufgabe",
@@ -984,7 +984,7 @@
         "ziel": "Les jeunes notent dans une lettre à eux-mêmes ce qu’ils retiennent de l’année et ce qu’ils se souhaitent. Dans un an, ils la relisent.",
         "ablauf": [
           "À clarifier avant, en équipe : qui garde les enveloppes, où (sous clé), quand elles sont rendues, et que se passe-t-il si quelqu’un quitte l’établissement ?",
-          "Poser le cadre (2 min) : personne ne lit les lettres, pas même la personne qui anime. Annoncer la date et le lieu de la remise.",
+          "Poser le cadre (2 min) : personne ne lit les lettres, pas même l’adulte qui anime. Annoncer la date et le lieu de la remise.",
           "Écrire (10 min) : musique douce ; les débuts de phrases sont une proposition, pas une obligation.",
           "Fermer (3 min) : plier la lettre, la glisser dans l’enveloppe, la coller ; écrire à l’extérieur le nom et la date de remise. Déposer les enveloppes, bien visibles, dans une boîte qui ferme à clé.",
           "Remise après un an : en personne, de préférence lors d’un bref entretien individuel – certaines lettres font naître des émotions."
@@ -1147,8 +1147,8 @@
         "ziel": "Les jeunes se donnent, pour se dire au revoir, des retours concrets et bienveillants, et repartent avec une feuille qui montre leurs forces vues par le groupe.",
         "ablauf": [
           "Inscrire les noms, lire les règles (2 min). Feutres ou stylos à bille, pas de marqueurs permanents.",
-          "Écrire (7 min) : fixer les feuilles dans le dos avec du ruban de masquage ; qui ne le souhaite pas pose sa feuille sur sa chaise. Musique douce. La personne qui anime écrit partout.",
-          "Relecture (1 min) : la personne qui anime ramasse les feuilles et les lit ; une phrase inappropriée est recouverte.",
+          "Écrire (7 min) : fixer les feuilles dans le dos avec du ruban de masquage ; qui ne le souhaite pas pose sa feuille sur sa chaise. Musique douce. L’adulte qui anime écrit partout.",
+          "Relecture (1 min) : l’adulte qui anime ramasse les feuilles et les lit ; une phrase inappropriée est recouverte.",
           "Lecture (5 min) : chacun lit en silence et entoure une phrase. Qui le souhaite la lit à voix haute."
         ],
         "hintergrund": "À l’adolescence, la reconnaissance des pairs pèse de plus en plus dans l’image de soi (Harter, 2012). Les retours du groupe agissent donc particulièrement – surtout quand ils nomment un comportement observé : c’est plus crédible et plus utile qu’un compliment général (Hattie & Timperley, 2007). Exprimer clairement sa gratitude profite aussi à celui ou celle qui l’exprime (Seligman et al., 2005). L’exercice prolonge la boîte aux trésors des forces de la séance 6 : les autres peuvent maintenant appuyer ces forces sur des moments vécus ensemble.",

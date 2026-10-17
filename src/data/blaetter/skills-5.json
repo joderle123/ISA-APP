@@ -414,7 +414,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Tu n’as à montrer ta situation à personne."
         }
       ],
@@ -1070,7 +1070,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "À la fin, la feuille est glissée dans une enveloppe que personne d’autre que toi n’ouvre. Lire à voix haute est facultatif – même une seule phrase."
         },
         {
@@ -1492,7 +1492,7 @@
           "En commun (5 min) : qui le souhaite cite une phrase, tous cherchent des preuves contraires. Sinon, travailler avec une carte.",
           "Page 2 (15 min) : verdict, nouvelle phrase selon les règles, ligne « si … alors ». Montrer d’abord l’exemple des maths."
         ],
-        "hintergrund": "La feuille adapte aux jeunes des techniques de la thérapie cognitivo-comportementale : examiner les preuves, questionner de façon socratique, évaluer la conviction avant et après (Beck, 2011). Des questions comme « Qu’en dirait une amie ? » créent de la distance, ce qui allège la charge quand on réfléchit à des sujets difficiles (Kross & Ayduk, 2017). Une nouvelle phrase ne tient que si elle est réaliste et parle d’apprentissage plutôt que de jugement définitif (Dweck, 2006). En DBT, la compétence voisine s’appelle « vérifier les faits » (Linehan, 2015).",
+        "hintergrund": "La feuille adapte aux jeunes des techniques de la thérapie cognitivo-comportementale : examiner les preuves, questionner de façon socratique, évaluer la conviction avant et après (Beck, 2011). Des questions comme « Qu’en dirait une amie ? » créent de la distance, ce qui allège la charge quand on réfléchit à des sujets difficiles (Kross & Ayduk, 2017). Une nouvelle phrase ne tient que si elle est réaliste et parle d’apprentissage plutôt que de jugement définitif (Dweck, 2006). En DBT, le skill voisin s’appelle « vérifier les faits » (Linehan, 2015).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
           "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",

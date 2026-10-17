@@ -174,6 +174,10 @@ Ruhige Liniengrafiken mit viel Weißraum – für Blätter, die zum Innehalten e
 | `kurve` | `x` (2–12), `oben`, `unten`, `mitte?`, `linien?` (2 Legendentexte), `hoehe?` | Leeres Diagramm zum Einzeichnen: Stimmung und Energie einer Woche, Lebenslinie. |
 | `tageskreis` | `titel` (1–2 Kreise), `legende` ([{farbe, text}], 2–8; `text: ''` = Linie) | 24-Stunden-Kreise zum Ausmalen: normaler Tag und Wunsch-Tag. |
 | `farbkalender` | `wochen?` (4–6), `legende` ([{farbe, text}], 2–8) | Kästchen-Kalender (Mo–So) zum Ausmalen, z. B. Stimmung pro Tag. |
+| `formfelder` | `form` (wolke, blase, band, herz), `items?` (Beschriftung oben in der Form, '' = leer, max. 60 Zeichen), `anzahl?` (Formen insgesamt, max. 12), `spalten?` (1–3; Standard: Band 1, Herz 3, sonst 2), `hoehe?` (in Zeilen) | Formen zum Beschreiben: Gedankenwolken (was ich denke, was andere denken könnten), Sprechblasen (Lob, Sätze), Bänder (lose Fäden, schöne Momente – je Zeile ein Band in einem anderen zarten Ton), Herzen (was mir guttut). Bis 2 Reihen (Bänder: 4) wandern sie als Ganzes auf die nächste Seite. |
+| `regler` | `paare` ([links, rechts], 2–16, je Pol max. 18 Zeichen), `stufen?` (5/7), `spalten?` (1/2; ab 7 Paaren 2) | Regler zwischen zwei Polen („leise – laut“): auf der Spur ankreuzen, wo man steht. Eigenschaften, Haltungen, Selbstbild/Fremdbild (zweite Farbe). Keine Bewertung in den Polen – beide Seiten sind in Ordnung. |
+| `jahr` | `legende` ([{farbe, text}], 2–7; `text: ''` = eigene Farbe) | Ein Jahr in Farben: je Tag ein Kästchen (12 Monate × 31 Tage, ungültige Tage grau), Legende rechts. Stimmung, Gewohnheit, Schlaf – füllt eine halbe Seite. |
+| `personen` | `felder` (2–7, max. 40 Zeichen), `anzahl?` (1–3) | Personen-Karten: ruhige Figur ohne Gesicht und Felder mit Linie („Name“, „Typische Sätze“, „Das verbindet uns“). Familie nie vorschreiben – „ein Mensch, der dir wichtig ist“. |
 
 ### Mathe (Bereich `mathe`, Voie préparatoire)
 Mathe-Blätter folgen dem Lehrplan (CNES-Référentiel, 5e PF), Aufgaben aus dem Alltag Jugendlicher (Geld, Handy, Sport,

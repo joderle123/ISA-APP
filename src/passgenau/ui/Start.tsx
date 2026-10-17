@@ -331,7 +331,7 @@ export function WissenKurz() {
       {(p.hilft?.length ?? 0) > 0 && (
         <>
           <dt>Was hilft</dt>
-          <dd>{p.hilft!.map((h) => ({ stundenleiste: 'Stundenleiste', bewegungspausen: 'Bewegungspausen', reizarm: 'leise/reizarm', bildplan: 'Bildplan' })[h]).join(' · ')}</dd>
+          <dd>{p.hilft!.map((h) => ({ stundenleiste: 'Stundenleiste', bewegungspausen: 'Bewegungspausen', reizarm: 'leise/reizarm', bildplan: 'Bildplan', woertlich: 'klar und wörtlich' })[h]).join(' · ')}</dd>
         </>
       )}
       {pg.heikel.length > 0 && (

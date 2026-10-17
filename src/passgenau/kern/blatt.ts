@@ -582,7 +582,7 @@ function ohneLeereAufgaben(liste: Baustein[], wenigSchreiben: boolean): Baustein
 
 const ANWEISUNG = new Set<Baustein['art']>(['text', 'aufgabe', 'bild', 'wortspeicher'])
 /** Aufgaben-Teile, die (fast) kein Schreiben brauchen: ankreuzen, einkreisen, malen, einschätzen */
-const WENIG_SCHREIBEN = new Set<Baustein['art']>(['ankreuzen', 'bilder', 'gefuehle', 'zuordnen', 'skala', 'thermometer', 'leiter'])
+const WENIG_SCHREIBEN = new Set<Baustein['art']>(['ankreuzen', 'bilder', 'gefuehle', 'zuordnen', 'skala', 'thermometer', 'leiter', 'regler', 'jahr'])
 
 /** Das Gerüst eines Übungsblatts (Grundgerüst 16.10.): Situation – Erkennen – Anwenden – „Und du?“. Jede Aufgabe ist eine Gruppe
  *  aus ihren Anweisungen (Text, Aufgabe, Bild) und dem Teil danach. Passt nicht alles in die Minuten, fällt die Mitte weg, nicht
@@ -653,8 +653,14 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     // Skala und freie Antworten in 11 Minuten“)
     // Einzelkurs (Kurs-Pilot 16.10.): das Blatt ist für die Sitzung geschrieben und bleibt ganz (nur bei wenig Schreiben gekürzt)
     const kursBlatt = kern.typ === 'schritt' && !!kern.linie?.id.startsWith('kurs-')
+    // schonende Tausch-Übung (belastung 0) mit eigenem Blatt: für wenig Schreiben gebaut und auf Figuren beschränkt – nie kürzen
+    // (Prüfung 10/2026: gekürzt kam der Füller „Und du? … (echt oder erfunden)“ dazu und fragte wieder nach Eigenem)
+    const schonend = kern.typ === 'schritt' && !!kern.tausch && kern.belastung === 0
+    // Siebenjährige (C2) in einem Kurs ab 7: das Blatt ist für die Schrift der Acht- und Neunjährigen gebaut – in der großen
+    // Schrift wurde es dreiseitig (Prüfung 10/2026); bis 7 Jahre gilt eine Seite, also die ersten zwei Aufgaben
+    const kleinerAlsKurs = kursBlatt && kern.typ === 'schritt' && (o.alter ?? 12) <= 7 && (kern.alter?.von ?? 0) >= 7
     // (die bildgestützte Variante, zugang.schreiben 0, ist schon für wenig Schreiben gebaut)
-    const hoechstens = kursBlatt && (!o.wenigSchreiben || (kern.typ === 'schritt' && kern.zugang?.schreiben === 0)) ? 99 : o.min && o.min <= 4 ? 1 : o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / ((o.alter ?? 0) >= 12 ? 3 : 2.5))) : 99
+    const hoechstens = kleinerAlsKurs ? 2 : kursBlatt && (!o.wenigSchreiben || schonend || (kern.typ === 'schritt' && kern.zugang?.schreiben === 0)) ? 99 : o.min && o.min <= 4 ? 1 : o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / ((o.alter ?? 0) >= 12 ? 3 : 2.5))) : 99
     for (const b of blattGeruest(fr ? eigen.fr : eigen.de, hoechstens, o)) {
       // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
       // … außer die Übung schreibt selbst eine Anweisung davor (Kinder-Blätter: „Was passt zusammen? Verbinde.“)
@@ -673,7 +679,12 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     if ((o.alter ?? 12) < 12 && zahl <= 2 && !fertig.some((b) => b.art === 'feld'))
       // … als „Und du?“ des Blatt-Gerüsts (Blind-Bewertung 13: „Mal hier, was du bei der Übung gemacht hast“ war ein immer
       // gleicher Füller ohne Bezug zum eigenen Leben)
-      fertig.push({ art: 'aufgabe', text: fr ? 'Et toi ? Dessine un moment où ça peut te servir (vrai ou inventé).' : 'Und du? Mal einen Moment, in dem du das brauchen kannst (echt oder erfunden).' }, { art: 'feld', hoehe: 6, zeichnen: true })
+      fertig.push(
+        schonend
+          ? { art: 'aufgabe', text: fr ? 'Dessine quelqu’un dans une histoire qui en a besoin.' : 'Mal jemanden in einer Geschichte, der das gut brauchen kann.' }
+          : { art: 'aufgabe', text: fr ? 'Et toi ? Dessine un moment où ça peut te servir (vrai ou inventé).' : 'Und du? Mal einen Moment, in dem du das brauchen kannst (echt oder erfunden).' },
+        { art: 'feld', hoehe: 6, zeichnen: true },
+      )
     return fertig
   }
   const F = (de: string, f: string, linien = 2): Baustein => ({ art: 'frage', text: fr ? f : de, linien })
@@ -846,6 +857,7 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
   const quellen: string[] = []
   let lehrerQuelle: BlattInhalt['lehrer'] | null = null
   const teileIds: (string | null)[] = []
+  let hilfeImFuss = false
   // jeden Baustein eines Teils mit der Kennung des Teils markieren: die Vorschau vereinigt ihre Rechtecke (T-M8)
   const markiere = (idx: number, n: number, id: string) => {
     while (teileIds.length < bausteine.length) teileIds.push(null)
@@ -855,6 +867,12 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
     const start = bausteine.length
     const teilId = `pg-teil:${nr}:blatt:${ti}`
     if (t.ref === BLATT_SYSTEM.notfall) {
+      // beim Kurs-Blatt in die Fußzeile: der Kasten (auch eine Zeile davon) schob volle Blätter heikler Kinder auf eine
+      // weitere Seite – 207 von 648 Blättern (Prüfung 10/2026)
+      if (s?.blatt?.bausteine.some((x) => x.ref === BLATT_SYSTEM.kernblatt)) {
+        hilfeImFuss = true
+        continue
+      }
       bausteine.push({ art: 'notfall' })
       markiere(start, 1, teilId)
       continue
@@ -968,6 +986,7 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
       // … und ohne „Bausteine aus einem Blatt“ (Blind-Bewertung 10: las sich wie ein Verweis auf ein fehlendes Blatt)
       herkunft: herkunft.length ? 'Passgenau · CDSE Toolbox' : undefined,
       teile: [...teileIds, ...Array(Math.max(0, bausteine.length - teileIds.length)).fill(null)],
+      ...(hilfeImFuss ? { hilfe: true } : {}),
     },
     de: sprache === 'de' ? inhalt : { ...inhalt },
     ...(sprache === 'fr' ? { fr: inhalt } : {}),

@@ -4400,7 +4400,7 @@
     },
     "ort": "raum",
     "titel": "Gruppendruck und eigene Haltung: Die Weiche",
-    "text": "Drei Gebiete der Gruppen-Landkarte sind erkundet; heute kommt die Haltung bei Gruppendruck dazu, mit dem Werkzeug „Stopp – Stand – Satz“. Die Fachkraft legt zwei Druck-Karten aus einem erfundenen Chat in eine Reihe (Mila: „Schick die Nachricht von Elias rein, die ist so lustig.“ – Pol: „Komm schon, alle machen mit.“) und zeichnet unter jede eine Weiche mit drei Wegen: mitmachen, ausweichen, Stopp – Stand – Satz. Der oder die Jugendliche zeigt in der Liste mit sechs Anzeichen, woran die gedrängte Person den Druck merkt, und entscheidet an jeder Weiche, welchen Weg sie nimmt; die Fachkraft sagt kurz, was folgt, und beim dritten Weg stehen beide auf (Füße hüftbreit, einmal lang ausatmen). Beim Rollentausch berät er oder sie die gedrängte Person und baut einen Nein-Satz, kurz, freundlich, ohne Roman, den die Fachkraft als diese Person sagt. Zum Schluss wählt er oder sie für den Fall, dass jemand im Chat vorgeführt wird, einen Weg von leise bis deutlich (nicht mitlachen, privat schreiben, gemeinsam widersprechen, eine Vertrauensperson einschalten); der Nein-Satz geht in den Auftrag auf dem Zettel. Ein Nein darf kurz sein – man muss es nicht begründen.",
+    "text": "Drei Gebiete der Gruppen-Landkarte sind erkundet; heute kommt die Haltung bei Gruppendruck dazu, mit dem Werkzeug „Stopp – Stand – Satz“. Die Fachkraft legt zwei Druck-Karten aus einem erfundenen Chat in eine Reihe (Mila: „Schick uns die Hausaufgabe rein, wir schreiben sie nur schnell ab.“ – Pol: „Komm schon, alle machen mit.“) und zeichnet unter jede eine Weiche mit drei Wegen: mitmachen, ausweichen, Stopp – Stand – Satz. Der oder die Jugendliche zeigt in der Liste mit sechs Anzeichen, woran die gedrängte Person den Druck merkt, und entscheidet an jeder Weiche, welchen Weg sie nimmt; die Fachkraft sagt kurz, was folgt, und beim dritten Weg stehen beide auf (Füße hüftbreit, einmal lang ausatmen). Beim Rollentausch berät er oder sie die gedrängte Person und baut einen Nein-Satz, kurz, freundlich, ohne Roman, den die Fachkraft als diese Person sagt. Zum Schluss wählt er oder sie für den Fall, dass der Druck bleibt, einen Weg von leise bis deutlich (nicht mitmachen, privat schreiben, gemeinsam widersprechen, Erwachsene einschalten); der Nein-Satz geht in den Auftrag auf dem Zettel. Ein Nein darf kurz sein – man muss es nicht begründen.",
     "sagen": [
       "Heute geht es um Stopp – Stand – Satz. Die Chat-Karten sind ausgedacht, und alles bleibt bei der ausgedachten Person.",
       "Woran merkt die gedrängte Person den Druck – im Körper, in einem Gedanken, im Verhalten? Und welchen Weg nimmt sie an der Weiche?",
@@ -4431,7 +4431,7 @@
     },
     "fr": {
       "titel": "Pression du groupe et position personnelle : l’aiguillage",
-      "text": "Trois zones de la carte du groupe sont explorées ; aujourd’hui s’ajoute la position face à la pression du groupe, avec l’outil « Stop – Pieds au sol – Phrase ». L’adulte aligne deux cartes de pression d’un chat inventé (Mila : « Envoie le message d’Elias, il est trop drôle. » – Pol : « Allez, tout le monde le fait. ») et dessine sous chacune un aiguillage à trois chemins : suivre, éviter, Stop – Pieds au sol – Phrase. Le ou la jeune montre dans la liste de six signes à quoi la personne sous pression remarque la pression, et décide à chaque aiguillage quel chemin elle prend ; l’adulte dit brièvement ce qui suit, et au troisième chemin, les deux se lèvent (pieds écartés, expirer longuement une fois). En échangeant les rôles, il ou elle conseille la personne sous pression et construit une phrase pour dire non, brève, aimable, sans long discours, que l’adulte dit dans le rôle de cette personne. Pour finir, il ou elle choisit, au cas où quelqu’un serait ridiculisé dans le chat, une façon d’agir du plus discret au plus visible (ne pas rire, écrire en privé, réagir à deux, prévenir un adulte de confiance) ; la phrase pour dire non va dans la tâche à emporter sur la fiche. Un non peut être bref – on n’a pas à se justifier.",
+      "text": "Trois zones de la carte du groupe sont explorées ; aujourd’hui s’ajoute la position face à la pression du groupe, avec l’outil « Stop – Pieds au sol – Phrase ». L’adulte aligne deux cartes de pression d’un chat inventé (Mila : « Envoie-nous les devoirs, on les copie juste vite fait. » – Pol : « Allez, tout le monde le fait. ») et dessine sous chacune un aiguillage à trois chemins : suivre, éviter, Stop – Pieds au sol – Phrase. Le ou la jeune montre dans la liste de six signes à quoi la personne sous pression remarque la pression, et décide à chaque aiguillage quel chemin elle prend ; l’adulte dit brièvement ce qui suit, et au troisième chemin, les deux se lèvent (pieds écartés, expirer longuement une fois). En échangeant les rôles, il ou elle conseille la personne sous pression et construit une phrase pour dire non, brève, aimable, sans long discours, que l’adulte dit dans le rôle de cette personne. Pour finir, il ou elle choisit, au cas où la pression reste, une façon d’agir du plus discret au plus visible (ne pas participer, écrire en privé, réagir à deux, prévenir des adultes) ; la phrase pour dire non va dans la tâche à emporter sur la fiche. Un non peut être bref – on n’a pas à se justifier.",
       "sagen": [
         "Aujourd’hui, il s’agit de « Stop – Pieds au sol – Phrase ». Les cartes du chat sont inventées, et tout reste avec la personne inventée.",
         "À quoi la personne sous pression remarque-t-elle la pression – dans le corps, dans une pensée, dans le comportement ? Et quel chemin prend-elle à l’aiguillage ?",
@@ -4439,6 +4439,374 @@
         "Maintenant, tu es le conseiller ou la conseillère. Un non peut être bref – on n’a pas à se justifier."
       ],
       "wennEsKippt": "Si le ou la jeune ne veut pas se lever, la posture se fait assis (pieds bien posés au sol, expirer longuement une fois). Si la phrase pour dire non est difficile, l’adulte pose deux cartes de phrases au choix, et le ou la jeune en choisit une. Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à la personne inventée ; une carte de pression et une phrase pour dire non suffisent."
+    },
+    "uebungsblatt": {
+      "titel": {
+        "de": "Gruppen-Landkarte · Gruppendruck und Haltung",
+        "fr": "Carte du groupe · Pression du groupe et position"
+      },
+      "de": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Die Gruppen-Landkarte",
+              "punkte": [
+                "Meine Rolle – Rollen erkennen und wählen",
+                "Regeln – Grund, Rechte und Pflichten prüfen",
+                "Verantwortung – Anteil, Folge, Wiedergutmachung",
+                "Haltung – heute: Druck erkennen, Nein sagen, Hilfe holen"
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Drei Gebiete sind erkundet. Heute kommt das vierte dazu: die Haltung, wenn die Gruppe Druck macht."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:insel",
+              "groesse": "m",
+              "text": "Gebiet 4: Haltung",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mila und Pol drängen eine Person im Klassenchat. Woran merkt die gedrängte Person den Druck? Kreuz an, was passen könnte."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Der Magen zieht sich zusammen.",
+            "Sie lacht mit, obwohl sie nicht will.",
+            "Sie schaut weg oder aufs Handy.",
+            "Sie denkt: „Was denken die anderen jetzt?“",
+            "Das Herz klopft schneller.",
+            "Sie sagt Ja, obwohl sie Nein meint."
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Stopp – Stand – Satz",
+              "punkte": [
+                "Stopp: Druck bemerken (Körper, Gedanke)",
+                "Stand: Füße fest, einmal lang ausatmen",
+                "Satz: klar und kurz Nein sagen – oder etwas anderes vorschlagen"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:stopp",
+              "groesse": "m",
+              "text": "Stopp – Stand – Satz",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "An der Weiche: Welchen Weg nimmt die gedrängte Person bei jeder Karte? Kreuz an."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Mila: „Schick uns die Hausaufgabe rein, wir schreiben sie nur schnell ab.“",
+            "Pol: „Komm schon, alle machen mit.“"
+          ],
+          "optionen": [
+            "mitmachen",
+            "ausweichen",
+            "Stopp – Stand – Satz"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die gedrängte Person braucht einen Nein-Satz. Welcher Satz passt? Kreuz an."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "items": [
+            "„Nein, das schicke ich nicht rein.“",
+            "„Ohne mich. Machen wir lieber etwas anderes?“",
+            "„Das finde ich nicht okay.“",
+            "„Nein. Und dabei bleibe ich.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn der Druck bleibt: Welche Wege hat die gedrängte Person? Vom leisen zum deutlichen Weg. Kreuz an.",
+          "hinweis": "Mehrere Wege gehen."
+        },
+        {
+          "art": "bilder",
+          "spalten": 4,
+          "modus": "ankreuzen",
+          "bilder": [
+            {
+              "bild": "icon:hand-stop",
+              "text": "Nicht mitmachen"
+            },
+            {
+              "bild": "icon:message-2",
+              "text": "Privat schreiben"
+            },
+            {
+              "bild": "icon:users",
+              "text": "Gemeinsam widersprechen"
+            },
+            {
+              "bild": "icon:user-heart",
+              "text": "Erwachsene einschalten"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das letzte Gebiet ist erkundet. Färbe es ein."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Meine Rolle",
+              "text": "Rollen wählen"
+            },
+            {
+              "titel": "Regeln",
+              "text": "Fairness-Check"
+            },
+            {
+              "titel": "Verantwortung",
+              "text": "Drei Schritte"
+            },
+            {
+              "titel": "Haltung",
+              "text": "heute neu"
+            }
+          ],
+          "linien": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bis zum nächsten Mal: Achte bei einer Figur in einem Buch oder Film darauf, wie sie unter Druck Nein sagt. Oder übe einen Nein-Satz für die gedrängte Person in Gedanken."
+        },
+        {
+          "art": "zielkarte",
+          "titel": "Bis zum nächsten Mal",
+          "text": "Ich achte auf ein Nein bei einer Figur oder übe einen Nein-Satz in Gedanken.",
+          "kaestchen": 2,
+          "tage": [
+            "gefunden",
+            "geübt"
+          ]
+        }
+      ],
+      "fr": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "La carte du groupe",
+              "punkte": [
+                "Mon rôle – reconnaître et choisir ses rôles",
+                "Les règles – raison, droits et devoirs",
+                "La responsabilité – ma part, la conséquence, réparer",
+                "Ma position – aujourd’hui : repérer la pression, dire non, demander de l’aide"
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Trois zones sont explorées. Aujourd’hui s’ajoute la quatrième : la position quand le groupe fait pression."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:insel",
+              "groesse": "m",
+              "text": "Zone 4 : la position",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mila et Pol font pression sur une personne dans le chat de la classe. À quoi la personne sous pression remarque-t-elle la pression ? Coche ce qui peut convenir."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Le ventre se serre.",
+            "Elle rit avec les autres, alors qu’elle ne veut pas.",
+            "Elle détourne le regard ou regarde son téléphone.",
+            "Elle pense : « Que vont penser les autres ? »",
+            "Le cœur bat plus vite.",
+            "Elle dit oui, alors qu’elle pense non."
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Stop – Pieds au sol – Phrase",
+              "punkte": [
+                "Stop : repérer la pression (corps, pensée)",
+                "Pieds au sol : bien s’ancrer, expirer longuement",
+                "Phrase : dire non clairement et brièvement – ou proposer autre chose"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:stopp",
+              "groesse": "m",
+              "text": "Stop – Pieds au sol – Phrase",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À l’aiguillage : quel chemin la personne sous pression prend-elle pour chaque carte ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Mila : « Envoie-nous les devoirs, on les recopie juste vite fait. »",
+            "Pol : « Allez, tout le monde le fait. »"
+          ],
+          "optionen": [
+            "suivre",
+            "éviter",
+            "Stop – Pieds au sol – Phrase"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La personne sous pression a besoin d’une phrase pour dire non. Quelle phrase convient ? Coche."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "items": [
+            "« Non, je ne l’envoie pas. »",
+            "« Sans moi. On fait autre chose ? »",
+            "« Je ne trouve pas ça cool. »",
+            "« Non. Et je maintiens. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Si la pression reste : quelles façons d’agir a la personne sous pression ? Du plus discret au plus visible. Coche.",
+          "hinweis": "Plusieurs chemins sont possibles."
+        },
+        {
+          "art": "bilder",
+          "spalten": 4,
+          "modus": "ankreuzen",
+          "bilder": [
+            {
+              "bild": "icon:hand-stop",
+              "text": "Ne pas participer"
+            },
+            {
+              "bild": "icon:message-2",
+              "text": "Écrire en privé"
+            },
+            {
+              "bild": "icon:users",
+              "text": "Réagir à deux"
+            },
+            {
+              "bild": "icon:user-heart",
+              "text": "Prévenir un adulte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La dernière zone est explorée. Colorie-la."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Mon rôle",
+              "text": "Choisir ses rôles"
+            },
+            {
+              "titel": "Les règles",
+              "text": "Test d’équité"
+            },
+            {
+              "titel": "La responsabilité",
+              "text": "Trois étapes"
+            },
+            {
+              "titel": "Ma position",
+              "text": "nouveau aujourd’hui"
+            }
+          ],
+          "linien": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "D’ici la prochaine fois : dans un livre ou un film, repère comment un personnage dit non sous pression. Ou entraîne dans ta tête une phrase pour dire non."
+        },
+        {
+          "art": "zielkarte",
+          "titel": "D’ici la prochaine fois",
+          "text": "Je repère un non chez un personnage ou j’entraîne une phrase pour dire non.",
+          "kaestchen": 2,
+          "tage": [
+            "trouvé",
+            "entraîné"
+          ]
+        }
+      ],
+      "anleitung": {
+        "de": {
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die sechs Anzeichen vor, der oder die Jugendliche kreuzt an, woran die gedrängte Person den Druck merkt; danach lesen beide den Kasten „Stopp – Stand – Satz“. In Aufgabe 2 entscheidet er oder sie für die gedrängte Person bei jeder Druck-Karte, welchen Weg sie nimmt; beim dritten Weg stehen beide auf (Füße hüftbreit, einmal lang ausatmen). In Aufgabe 3 kreuzt er oder sie den Nein-Satz an, der passt, und die Fachkraft sagt ihn als die gedrängte Person. Aufgabe 4 kreuzt er oder sie allein an; mehrere Wege sind möglich. Aufgabe 5 färbt er oder sie zum Schluss ein. Es geht nur um Mila, Pol, die gedrängte Person und ausgedachte Situationen; das Blatt kommt in die Gruppen-Mappe.",
+          "sagen": [
+            "Woran merkt die gedrängte Person den Druck?",
+            "Kurz und freundlich – ohne Roman."
+          ],
+          "wennEsKippt": "Mag der oder die Jugendliche nicht aufstehen, bleibt der Stand im Sitzen (Füße fest auf dem Boden, einmal lang ausatmen). Fällt der Nein-Satz schwer, legt die Fachkraft zwei Satzkarten zur Wahl hin. Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zur gedrängten Person zurück. Ist die Zeit knapp, reichen die Aufgaben 2 und 3."
+        },
+        "fr": {
+          "text": "Exercice 1 ensemble : l’adulte lit les six signes, le ou la jeune coche à quoi la personne sous pression remarque la pression ; ensuite, les deux lisent l’encadré « Stop – Pieds au sol – Phrase ». À l’exercice 2, il ou elle décide pour la personne sous pression, à chaque carte, quel chemin elle prend ; au troisième chemin, les deux se lèvent (pieds écartés, expirer longuement une fois). À l’exercice 3, il ou elle coche la phrase pour dire non qui convient, et l’adulte la dit dans le rôle de la personne sous pression. L’exercice 4, il ou elle le coche seul ; plusieurs chemins sont possibles. L’exercice 5, il ou elle le colorie à la fin. Il n’est question que de Mila, de Pol, de la personne sous pression et de situations inventées ; la fiche va dans le dossier du groupe.",
+          "sagen": [
+            "À quoi la personne sous pression remarque-t-elle la pression ?",
+            "Court et aimable – sans long discours."
+          ],
+          "wennEsKippt": "Si le ou la jeune ne veut pas se lever, la posture se fait assis (pieds bien posés au sol, expirer longuement une fois). Si la phrase pour dire non est difficile, l’adulte pose deux cartes de phrases au choix. Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à la personne sous pression. Si le temps manque, les exercices 2 et 3 suffisent."
+        }
+      }
     }
   },
   {

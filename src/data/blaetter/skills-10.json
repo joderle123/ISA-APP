@@ -257,13 +257,13 @@
         {
           "art": "aufgabe",
           "text": "À la fin de chaque thème : quel skill t’aide dans ce domaine – et quand l’utilises-tu ? Note les deux dans la case qui convient.",
-          "hinweis": "Feuillette pour cela ton Skills-Pass. Un skill peut être un exercice, une phrase que tu te dis ou quelque chose que tu fais."
+          "hinweis": "Feuillette pour cela ton passeport Skills. Un skill peut être un exercice, une phrase que tu te dis ou quelque chose que tu fais."
         },
         {
           "art": "wortspeicher",
           "titel": "Des skills que beaucoup connaissent de l’année 1 – eux aussi comptent",
           "items": [
-            "respiration carrée",
+            "respiration en carré",
             "respiration 4-7-8",
             "respiration avec les doigts",
             "contracter et relâcher",
@@ -273,8 +273,8 @@
             "compter à rebours",
             "bateaux de pensées",
             "lieu sûr",
-            "message je",
-            "phrase stop",
+            "message-je",
+            "phrase de stop",
             "phrase non",
             "d’abord se calmer, ensuite parler"
           ]
@@ -283,7 +283,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "À quoi peut ressembler une entrée",
-          "text": "Stress et école : respiration carrée avant de tourner la feuille. M’aide quand j’ai un trou pendant un contrôle."
+          "text": "Stress et école : respiration en carré avant de tourner la feuille. M’aide quand j’ai un trou pendant un contrôle."
         },
         {
           "art": "spalten",
@@ -412,7 +412,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "La boussole t’appartient et reste dans ta pochette. Dans le tour de table, il suffit de dire le nom de ton skill."
         }
       ],
@@ -420,9 +420,9 @@
         "ziel": "À la fin de chaque thème, les jeunes notent quel skill les aide dans ce domaine de leur quotidien, et quand. Cela donne un aperçu personnel de toute l’année.",
         "ablauf": [
           "Séance 1 (10 min) : distribuer la feuille, montrer les onze domaines. La valise de l’année 1 range les skills selon le niveau de tension, la boussole selon les domaines de vie.",
-          "À la fin de chaque thème (5 min, avant le Skills-Pass) : feuilleter le Skills-Pass en arrière. Question : « Quel skill t’aide dans ce domaine – et quand ? » Sans skill pour l’instant : écrire « encore ouvert ».",
+          "À la fin de chaque thème (5 min, avant le passeport Skills) : le feuilleter en arrière. Question : « Quel skill t’aide dans ce domaine – et quand ? » Sans skill pour l’instant : écrire « encore ouvert ».",
           "Court tour de table : chaque personne ne dit que le nom de son skill. Noter au tableau les skills identiques – cela montre ce qui porte tout le groupe.",
-          "Module 10 : remplir l’exercice 2 et la case « Mon skill le plus important cette année », puis faire un bilan ensemble."
+          "Module 10 : remplir la tâche 2 et la case « Mon skill le plus important cette année », puis faire un bilan ensemble."
         ],
         "hintergrund": "Les skills s’apprennent en groupe, mais c’est dans le quotidien qu’on en a besoin – ce transfert est le point le plus difficile de tout entraînement. Le training de skills DBT pour adolescents relie donc les skills à des situations concrètes (Rathus & Miller, 2015). Se rappeler soi-même ce qu’on a appris, au lieu de le relire, aide à mieux le retenir (Roediger & Karpicke, 2006) – l’entrée de fin de module est un tel rappel. Le lien entre skill et situation (« m’aide quand … ») agit comme un plan « si … alors » (Gollwitzer, 1999).",
         "quellen": [
@@ -443,7 +443,7 @@
           "Les personnes absentes complètent après coup. Les lacunes sont permises."
         ],
         "achtung": "Ne pas évaluer, ne pas ramasser. Si la boussole contient quelque chose de nocif (automutilation, alcool, par exemple) ou si quelqu’un ne trouve aucun skill utile : entretien individuel, informer la direction compétente (responsable), en cas de danger suivre la procédure de protection.",
-        "material": "Papier épais, recto verso ; Skills-Pass"
+        "material": "Papier épais ; passeport Skills"
       }
     }
   },
@@ -617,7 +617,7 @@
               "text": "Parler, écouter, résoudre des problèmes, s’exercer aux skills."
             },
             {
-              "titel": "Jaune (30–70) : ça se resserre",
+              "titel": "Orange (30–70) : ça se resserre",
               "text": "Irritable, agité ou silencieux. Aident : skills de tête, sens, musique, mouvement."
             },
             {
@@ -634,7 +634,7 @@
         {
           "art": "tabelle",
           "spalten": [
-            "Au tour d’humeur",
+            "Au check-in",
             "À la mi-temps",
             "Après la compétition",
             "Après le retour au calme"
@@ -663,7 +663,7 @@
             "Sens : un stimulus fort – parfum, balle antistress, froid",
             "Tête : jeu de l’alphabet – un mot pour chaque lettre",
             "Stop : main levée, regard, voix ferme, sans sourire",
-            "Message en « je » : Je me sens …, quand …, parce que …"
+            "Message-je : Je me sens …, quand …, parce que …"
           ]
         },
         {
@@ -681,8 +681,8 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
-          "text": "Tes chiffres et tes croix sont pour toi. Si ton chiffre dépasse souvent 70, parle à la personne qui anime."
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Tes chiffres et tes croix sont pour toi. Si ton chiffre dépasse souvent 70, parle à l’adulte qui anime."
         }
       ],
       "lehrer": {
@@ -966,14 +966,14 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
-          "text": "Si tes pensées sur toi-même sont souvent très dures, parle à quelqu’un en qui tu as confiance – la personne qui anime, le SePAS, ou de façon anonyme au Kanner- a Jugendtelefon (116 111)."
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Si tes pensées sur toi-même sont souvent très dures, parle à quelqu’un en qui tu as confiance – l’adulte qui anime, le SePAS, ou de façon anonyme au Kanner- a Jugendtelefon (116 111)."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes repèrent à quoi ils rattachent leur sentiment d’avoir de la valeur, distinguent sources fragiles et solides et formulent une phrase pour les mauvais jours.",
         "ablauf": [
-          "Entrée : le grand huit de Noah sur la ligne au sol (séance 3) ou en discussion – quelle valeur Noah ressent-il après 22 sur 60, et après le but gagnant ? Sa valeur a-t-elle changé ?",
+          "Entrée en matière : le grand huit de Noah sur la ligne au sol (séance 3) ou en discussion – quelle valeur Noah ressent-il après 22 sur 60, et après le but gagnant ? Sa valeur a-t-elle changé ?",
           "Lire le texte, tâche 1 seul et en silence (5 min). Ne pas lire à voix haute, ne pas ramasser.",
           "Lire l’encadré ensemble, classer des exemples de la journée de Noah, puis tâche 2 seul : compter, écrire une phrase.",
           "Iceberg (7 min) : au moins trois sources personnelles sous l’eau. Qui ne trouve rien reçoit des exemples, pas de pression.",
@@ -999,7 +999,7 @@
           "Qui vient de l’année 1 peut reprendre l’arbre des forces."
         ],
         "achtung": "Jugements durs sur soi : ne pas les reprendre en groupe. Si quelqu’un dit qu’il vaudrait mieux ne pas exister : en parler le jour même, demander s’il y a des idées suicidaires, concept de protection, informer le responsable ; danger aigu : 112.",
-        "material": "Crayons ; pour l’entrée, ruban de masquage"
+        "material": "Crayons ; pour l’entrée en matière, ruban de masquage"
       }
     }
   },
@@ -1241,7 +1241,7 @@
           "titel": "Comment se déroule la vente",
           "punkte": [
             "Chaque équipe a 1000 écus sur son compte. Il n’y en a pas plus, même en empruntant.",
-            "La personne qui anime met les lots aux enchères un par un. Mise de départ : 50 écus, on monte par paliers de 50.",
+            "L’adulte qui anime met les lots aux enchères un par un. Mise de départ : 50 écus, on monte par paliers de 50.",
             "On enchérit uniquement en levant la main. La plus haute mise remporte le lot et paie tout de suite."
           ]
         },
@@ -1399,10 +1399,10 @@
         "ziel": "Dans le jeu, les jeunes décident de ce qui leur importe et remarquent, en triant, quelles sources d’estime de soi vacillent et lesquelles tiennent – et qu’on ne peut en acheter aucune.",
         "ablauf": [
           "Avant : découper les lots une fois, prévoir un marteau ou une sonnette. Les équipes tiennent leur compte sur la feuille ; pas besoin d’argent de jeu.",
-          "Planification (3 min) : les équipes de deux ou trois choisissent trois lots et fixent des mises maximales (exercice 1).",
-          "Vente (10 min) : mettre les lots aux enchères dans n’importe quel ordre, vite et avec plaisir de l’exagération : « Une fois, deux fois, trois fois – adjugé. » Les équipes tiennent leur compte (exercice 2).",
-          "Tri (5 min) : tous les lots au milieu, les ranger ensemble dans deux cases (exercice 3).",
-          "Bilan (4 min) : « Qu’avez-vous acheté et pourquoi ? Quel lot peut-on vraiment acheter ? Lequel avez-vous peut-être déjà ? » Puis exercice 4."
+          "Planification (3 min) : les équipes de deux ou trois choisissent trois lots et fixent des mises maximales (tâche 1).",
+          "Vente (10 min) : mettre les lots aux enchères dans n’importe quel ordre, vite et avec plaisir de l’exagération : « Une fois, deux fois, trois fois – adjugé. » Les équipes tiennent leur compte (tâche 2).",
+          "Tri (5 min) : tous les lots au milieu, les ranger ensemble dans deux cases (tâche 3).",
+          "Bilan (4 min) : « Qu’avez-vous acheté et pourquoi ? Quel lot peut-on vraiment acheter ? Lequel avez-vous peut-être déjà ? » Puis tâche 4."
         ],
         "hintergrund": "Crocker et Wolfe (2001) montrent qu’une estime de soi liée à des conditions extérieures – apparence, reconnaissance, victoires – fluctue davantage que celle qui repose sur des valeurs et des relations solides. Deci et Ryan (2000) décrivent une différence voisine pour les buts de vie : en moyenne, celles et ceux qui visent surtout la célébrité, l’image et la richesse sont moins satisfaits que les personnes pour qui comptent les relations, la croissance personnelle et la communauté. La vente aux enchères rend cette distinction sensible sous forme de jeu – sans que personne ait à parler de soi.",
         "quellen": [
@@ -1656,7 +1656,7 @@
         {
           "art": "aufgabe",
           "text": "À deux, tirez une carte de situation de la page 2. Que diriez-vous ou que feriez-vous ? Jouez la scène en quelques phrases.",
-          "hinweis": "Le commentaire est dit par la personne qui anime. On ne joue que ce qui est écrit sur la carte.",
+          "hinweis": "Le commentaire est dit par l’adulte qui anime. On ne joue que ce qui est écrit sur la carte.",
           "symbole": [
             "partner",
             "sprechen"
@@ -1738,7 +1738,7 @@
           "Découper les cartes une fois. Les binômes tirent une carte et réfléchissent deux minutes.",
           "Scènes (15 min) : le commentaire est toujours dit par l’adulte, uniquement avec le texte de la carte. Le public dit quelle façon a été choisie et ce qui serait encore possible.",
           "Pour les cartes 5 et 6, clarifier pourquoi « Tu n’es pas gros, voyons » aide peu : cela confirme qu’être gros serait mauvais et reste centré sur le corps.",
-          "Exercice 3 en autonomie : ses propres phrases. Ensuite, sortir des rôles – secouer les mains, dire son propre prénom."
+          "Tâche 3 en autonomie : ses propres phrases. Ensuite, sortir des rôles – secouer les mains, dire son propre prénom."
         ],
         "hintergrund": "Comme l’apparence perçue est étroitement liée à l’estime de soi globale à l’adolescence (Harter, 2012), les commentaires sur le corps touchent particulièrement – même quand ils se veulent drôles. La recherche sur le harcèlement montre que les témoins jouent un rôle clé : rire avec les autres renforce, se ranger du côté de la personne visée peut changer le cours des choses (Salmivalli et al., 1996). Face à des propos dévalorisants sur son propre corps, la simple contradiction aide peu ; il vaut mieux demander quel sentiment se cache derrière. La personne se sent ainsi vue, et la conversation ne reste pas bloquée sur le corps.",
         "quellen": [
@@ -2121,7 +2121,7 @@
         {
           "art": "aufgabe",
           "text": "Ton test cette semaine : essaie la pause une fois et note comment c’était.",
-          "hinweis": "Un petit raté suffit. Qui fait le test en parle la prochaine fois au tour d’humeur – si on le souhaite."
+          "hinweis": "Un petit raté suffit. Qui fait le test en parle la prochaine fois au check-in – si on le souhaite."
         },
         {
           "art": "tabelle",
@@ -2146,13 +2146,13 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Quand le critique ne se tait pas",
-          "text": "Parfois, les pensées sur toi-même sont si dures et si fréquentes que la gentillesse seule ne suffit pas. Parle alors à quelqu’un en qui tu as confiance – la personne qui anime, le SePAS, ou de façon anonyme au Kanner- a Jugendtelefon (116 111)."
+          "text": "Parfois, les pensées sur toi-même sont si dures et si fréquentes que la gentillesse seule ne suffit pas. Parle alors à quelqu’un en qui tu as confiance – l’adulte qui anime, le SePAS, ou de façon anonyme au Kanner- a Jugendtelefon (116 111)."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes distinguent la voix de leur critique intérieur de celle d’un ami intérieur, s’exercent à la pause d’auto-compassion et repartent avec leur propre phrase pour les moments difficiles.",
         "ablauf": [
-          "Entrée (10 min) : l’exposé de Mila au tableau – que dit sa voix intérieure, que dit sa meilleure amie ? Parleriez-vous ainsi à une amie ?",
+          "Entrée en matière (10 min) : l’exposé de Mila au tableau – que dit sa voix intérieure, que dit sa meilleure amie ? Parleriez-vous ainsi à une amie ?",
           "Tâche 1 (3 min) : écrire l’ami intérieur de Nora ; lecture volontaire de deux ou trois phrases.",
           "Tâche 2 seul (7 min) : phrases du critique (les siennes ou de l’encadré) et réponse de l’ami intérieur. Ne pas lire à voix haute ni ramasser.",
           "Après le duel des entraîneurs : guider la tâche 3 sur un petit raté ; la main sur la poitrine est facultative.",

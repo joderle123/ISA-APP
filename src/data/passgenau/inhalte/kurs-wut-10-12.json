@@ -6289,7 +6289,7 @@
     },
     "ort": "raum",
     "titel": "Werkzeug 5: Tom und das Schild",
-    "text": "Das Kind hat Thermometer, Knopf-Karte, kühle Gedanken und seinen Abkühl-Trick in der Kiste; heute geht es um den schwersten Knopf: Jemand reizt absichtlich. Die Fachkraft sagt, was kommt: die Figuren Tom und Noah, vier Wegkarten und drei kleine Schul-Situationen zur Wahl – es geht nur um Tom, und bei „Hand hoch“ ist Stopp. Sie erklärt kurz, warum Reizen funktioniert (wer anbeißt, tut, was der andere will), und legt die vier Wege hin: nichts zeigen, Schild-Satz, weggehen, Hilfe holen. Dann liest sie drei Sprüche von Noah vor (in der Reihe: „Na, schon wieder zu spät? Typisch.“ · nach dem Spiel: „Na, das war wohl nichts.“ · Noah nimmt Tom den Stift weg und grinst); das Kind wählt eine, stellt Tom auf den Weg, mit dem er anfängt, legt ihm einen Schild-Satz in den Mund („Kann sein.“ · „Okay.“ · „Das ist deine Meinung.“ · „Hör bitte auf.“ oder einen eigenen) und zeigt mit den Fingern Toms Thermometer vorher und nachher. Dazu plant es für Tom (und, wenn es will, für „jemand wie du“): wer reizt, wann und wo, welcher Satz, wer hilft, wenn es nicht klappt – am Zettel trägt es das später ein. Zum Tauschen sagt die Fachkraft als Tom ruhig eine Antwort, die anbeißt („Du nervst!“), und das Kind hilft ihm, sie in einen Schild-Satz umzubauen. Passiert es oft oder tut es weh, reicht ein Satz nicht – dann ist Hilfe holen kein Petzen, sondern Schutz.",
+    "text": "Das Kind hat Thermometer, Knopf-Karte, kühle Gedanken und seinen Abkühl-Trick in der Kiste; heute geht es um den schwersten Knopf: Jemand reizt absichtlich. Die Fachkraft sagt, was kommt: die Figuren Tom und Noah, vier Wegkarten und drei kleine Schul-Situationen zur Wahl – es geht nur um Tom, und bei „Hand hoch“ ist Stopp. Sie erklärt kurz, warum Reizen funktioniert (wer anbeißt, tut, was der andere will), und legt die vier Wege hin: nichts zeigen, Schild-Satz, weggehen, Hilfe holen. Dann liest sie drei Sprüche von Noah vor (in der Reihe: „Na, schon wieder zu spät? Typisch.“ · nach dem Spiel: „Na, das war wohl nichts.“ · Noah nimmt Tom den Stift weg und grinst); das Kind wählt eine, stellt Tom auf den Weg, mit dem er anfängt, legt ihm einen Schild-Satz in den Mund („Kann sein.“ · „Okay.“ · „Das ist deine Meinung.“ · „Hör bitte auf.“ oder einen selbst ausgedachten) und zeigt mit den Fingern Toms Thermometer vorher und nachher. Dazu plant es für Tom: wer reizt, wann und wo, welcher Satz, wer hilft, wenn es nicht klappt – am Blatt trägt es das später für Tom ein. Zum Tauschen sagt die Fachkraft als Tom ruhig eine Antwort, die anbeißt („Du nervst!“), und das Kind hilft ihm, sie in einen Schild-Satz umzubauen. Passiert es oft oder tut es weh, reicht ein Satz nicht – dann ist Hilfe holen kein Petzen, sondern Schutz.",
     "sagen": [
       "Gleich helfen wir Tom, nicht anzubeißen, mit Karten und Figuren. Es geht nur um Tom und Noah. Bei „Hand hoch“ machen wir Pause.",
       "Wer reizt, will, dass man anbeißt. Wenn Tom ruhig bleibt, hat Noah sein Ziel nicht erreicht. Es gibt vier Wege.",
@@ -6314,13 +6314,13 @@
       "fr": "Au milieu d’un jeu calme, un personnage lance une petite pique à un autre (« Tiens, c’était raté »). L’enfant fait répondre le second personnage avec une phrase-bouclier et continue à jouer."
     },
     "zugang": {
-      "lesen": 2,
-      "schreiben": 2,
-      "bild": 1
+      "lesen": 1,
+      "schreiben": 0,
+      "bild": 2
     },
     "fr": {
       "titel": "Outil 5 : Tom et le bouclier",
-      "text": "L’enfant a le thermomètre, la carte des boutons, les pensées qui calment et son astuce dans la boîte ; aujourd’hui, il s’agit du bouton le plus difficile : quelqu’un provoque exprès. L’adulte dit ce qui va se passer : les figurines de Tom et de Noah, quatre cartes de façons de réagir et trois petites situations d’école au choix – il ne s’agit que de Tom, et « main levée » veut dire stop. Il explique brièvement pourquoi provoquer fonctionne (celui qui mord à l’hameçon fait ce que l’autre veut) et pose les quatre façons de réagir : ne rien montrer, phrase-bouclier, partir, demander de l’aide. Puis il lit trois piques de Noah (dans la file : « Tiens, encore en retard ? Typique. » · après le jeu : « Tiens, c’était raté. » · Noah prend le stylo de Tom et sourit) ; l’enfant en choisit une, place Tom sur la façon de réagir par laquelle il commence, lui met une phrase-bouclier dans la bouche (« Peut-être. » · « D’accord. » · « C’est ton avis. » · « Arrête, s’il te plaît. » ou une phrase à lui) et montre avec les doigts le thermomètre de Tom avant et après. L’enfant prépare aussi pour Tom (et, s’il veut, pour « quelqu’un comme toi ») : qui provoque, quand et où, quelle phrase, qui aide si ça ne marche pas – il le note plus tard sur la feuille. Pour échanger, l’adulte dit, en Tom, une réponse calme mais qui mord à l’hameçon (« Tu me saoules ! »), et l’enfant l’aide à la transformer en phrase-bouclier. Si ça arrive souvent ou si ça fait mal, une phrase ne suffit pas – demander de l’aide n’est alors pas rapporter, c’est se protéger.",
+      "text": "L’enfant a le thermomètre, la carte des boutons, les pensées qui calment et son astuce dans la boîte ; aujourd’hui, il s’agit du bouton le plus difficile : quelqu’un provoque exprès. L’adulte dit ce qui va se passer : les figurines de Tom et de Noah, quatre cartes de façons de réagir et trois petites situations d’école au choix – il ne s’agit que de Tom, et « main levée » veut dire stop. Il explique brièvement pourquoi provoquer fonctionne (celui qui mord à l’hameçon fait ce que l’autre veut) et pose les quatre façons de réagir : ne rien montrer, phrase-bouclier, partir, demander de l’aide. Puis il lit trois piques de Noah (dans la file : « Tiens, encore en retard ? Typique. » · après le jeu : « Tiens, c’était raté. » · Noah prend le stylo de Tom et sourit) ; l’enfant en choisit une, place Tom sur la façon de réagir par laquelle il commence, lui met une phrase-bouclier dans la bouche (« Peut-être. » · « D’accord. » · « C’est ton avis. » · « Arrête, s’il te plaît. » ou une phrase inventée) et montre avec les doigts le thermomètre de Tom avant et après. L’enfant prépare aussi pour Tom : qui provoque, quand et où, quelle phrase, qui aide si ça ne marche pas – il le note plus tard sur la feuille pour Tom. Pour échanger, l’adulte dit, en Tom, une réponse calme mais qui mord à l’hameçon (« Tu me saoules ! »), et l’enfant l’aide à la transformer en phrase-bouclier. Si ça arrive souvent ou si ça fait mal, une phrase ne suffit pas – demander de l’aide n’est alors pas rapporter, c’est se protéger.",
       "sagen": [
         "Tout à l’heure, nous aiderons Tom à ne pas mordre à l’hameçon, avec des cartes et des figurines. Il s’agit seulement de Tom et de Noah. À « main levée », on fait une pause.",
         "Celui qui provoque veut que l’autre morde à l’hameçon. Si Tom reste calme, Noah n’a pas atteint son but. Il y a quatre façons de réagir.",
@@ -6328,6 +6328,416 @@
         "Maintenant, je suis Tom et je mords à l’hameçon : « Tu me saoules ! » Tu es le conseiller ou la conseillère : comment en faire une phrase-bouclier ?"
       ],
       "wennEsKippt": "Si une situation touche l’enfant de trop près, l’adulte passe à une plus légère et lit la pique plus doucement ; une phrase-bouclier et un chemin vers l’aide suffisent. Si l’enfant ne veut rien planifier, il choisit seulement la façon de réagir pour Tom. Si l’enfant raconte de lui-même quelque chose qui le touche, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Tom."
+    },
+    "uebungsblatt": {
+      "titel": {
+        "de": "Cool bleiben · Schild-Satz",
+        "fr": "Rester cool · Phrase-bouclier"
+      },
+      "de": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Der Werkzeugkasten",
+              "punkte": [
+                "1 Wut-Thermometer",
+                "2 Knopf-Karte",
+                "3 Kühle Gedanken",
+                "4 Abkühl-Trick",
+                "5 Schild-Satz – heute neu"
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Wer anbeißt, tut, was der andere will."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:werkzeugkiste",
+              "groesse": "m",
+              "text": "Die Kiste füllt sich – heute: der Schild-Satz",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Manche reizen Tom mit Absicht. Nicht anbeißen: vier Wege, Tom fängt unten an. Verbinde: Welcher Weg passt?",
+          "symbole": [
+            "lesen",
+            "verbinden"
+          ]
+        },
+        {
+          "art": "leiter",
+          "stufen": 4,
+          "oben": "Wenn es nicht klappt: eine Stufe höher. Tut es weh: gleich Hilfe holen",
+          "unten": "Hier fängt Tom an",
+          "beispiele": [
+            "Nichts zeigen: ausatmen, ruhig bleiben",
+            "Schild-Satz sagen: kurz, ruhig, ohne Vorwurf",
+            "Weggehen: zu anderen, an einen anderen Ort",
+            "Hilfe holen: bei jemandem, dem man vertraut"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Situation",
+            "Das passt"
+          ],
+          "links": [
+            "In der Reihe sagt Noah einmal: „Na, schon wieder zu spät? Typisch.“",
+            "Nach dem Spiel sagt Noah: „Na, das war wohl nichts.“",
+            "Noah nimmt Tom heute schon zum dritten Mal den Stift weg und grinst."
+          ],
+          "rechts": [
+            "Hilfe holen",
+            "Nichts zeigen",
+            "Schild-Satz sagen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welcher Schild-Satz klingt nach Tom? Kreuz einen an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "„Kann sein.“",
+            "„Okay.“",
+            "„Das ist deine Meinung.“",
+            "„Hör bitte auf.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Toms Plan: Wo könnte es passieren? Wie heiß wäre Tom? Wer hilft, wenn es nicht klappt?",
+          "symbole": [
+            "einkreisen",
+            "ankreuzen"
+          ],
+          "hinweis": "Es geht nur um Tom."
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 2,
+          "modus": "einkreisen",
+          "bilder": [
+            {
+              "bild": "icon:chalkboard",
+              "text": "in der Klasse"
+            },
+            {
+              "bild": "icon:footsteps",
+              "text": "in der Reihe"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "nach dem Spiel"
+            },
+            {
+              "bild": "icon:run",
+              "text": "in der Pause"
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "stufen": 10,
+          "frage": "Dann ist Tom bei etwa …",
+          "von": "1 · ruhig",
+          "bis": "10 · Kochpunkt"
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Wer hilft Tom, wenn es nicht klappt?",
+          "spalten": 2,
+          "items": [
+            "Lehrerin oder Lehrer",
+            "Aufsicht in der Pause",
+            "Trainer oder Trainerin",
+            "Maison Relais"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Werkzeugkasten wächst: Das neue Werkzeug heißt „Schild-Satz“. Kreis es ein.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "modus": "einkreisen",
+          "bilder": [
+            {
+              "bild": "icon:temperature",
+              "text": "1 Thermometer"
+            },
+            {
+              "bild": "icon:hand-click",
+              "text": "2 Knopf-Karte"
+            },
+            {
+              "bild": "icon:snowflake",
+              "text": "3 Kühle Gedanken"
+            },
+            {
+              "bild": "icon:wind",
+              "text": "4 Abkühl-Trick"
+            },
+            {
+              "bild": "icon:shield",
+              "text": "5 Schild-Satz – NEU"
+            },
+            {
+              "bild": "icon:help-circle",
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Auftrag bis zum nächsten Mal: Sag Toms Schild-Satz einmal in Gedanken. Und achte bei einer Figur in einem Buch oder Film darauf, wie sie auf einen Spruch reagiert. Hak ab, was geschafft ist.",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "zielkarte",
+          "titel": "Toms Schild-Satz",
+          "text": "Diese Woche übe ich ihn in Gedanken.",
+          "tage": [
+            "geübt",
+            "beobachtet"
+          ]
+        }
+      ],
+      "fr": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "La boîte à outils",
+              "punkte": [
+                "1 Thermomètre de la colère",
+                "2 Carte des boutons",
+                "3 Pensées qui calment",
+                "4 Astuce pour se calmer",
+                "5 Phrase-bouclier – nouveau"
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Celui qui mord à l’hameçon fait ce que l’autre veut."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:werkzeugkiste",
+              "groesse": "m",
+              "text": "La boîte se remplit – aujourd’hui : la phrase-bouclier",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Certains provoquent Tom exprès. Ne pas mordre : quatre façons de réagir, Tom commence en bas. Relie : quelle façon convient ?",
+          "symbole": [
+            "lesen",
+            "verbinden"
+          ]
+        },
+        {
+          "art": "leiter",
+          "stufen": 4,
+          "oben": "Si ça ne marche pas : un niveau plus haut. Si ça fait mal : tout de suite de l’aide",
+          "unten": "Tom commence ici",
+          "beispiele": [
+            "Ne rien montrer : expirer, rester calme",
+            "Dire la phrase-bouclier : courte, calme, sans reproche",
+            "Partir : vers d’autres, ailleurs",
+            "Demander de l’aide : à quelqu’un de confiance"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Situation",
+            "Façon de réagir"
+          ],
+          "links": [
+            "Dans la file, Noah dit une fois : « Tiens, encore en retard ? Typique. »",
+            "Après le jeu, Noah dit : « Tiens, c’était raté. »",
+            "Noah prend le stylo de Tom pour la troisième fois aujourd’hui et sourit."
+          ],
+          "rechts": [
+            "Demander de l’aide",
+            "Ne rien montrer",
+            "Dire la phrase-bouclier"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle phrase-bouclier ressemble à Tom ? Coches-en une.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "« Peut-être. »",
+            "« D’accord. »",
+            "« C’est ton avis. »",
+            "« Arrête, s’il te plaît. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le plan de Tom : où cela pourrait-il arriver ? À combien Tom monterait-il ? Qui aide si ça ne marche pas ?",
+          "symbole": [
+            "einkreisen",
+            "ankreuzen"
+          ],
+          "hinweis": "Il s’agit seulement de Tom."
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 2,
+          "modus": "einkreisen",
+          "bilder": [
+            {
+              "bild": "icon:chalkboard",
+              "text": "en classe"
+            },
+            {
+              "bild": "icon:footsteps",
+              "text": "dans la file"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "après le jeu"
+            },
+            {
+              "bild": "icon:run",
+              "text": "à la récré"
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "stufen": 10,
+          "frage": "Alors Tom est à environ …",
+          "von": "1 · calme",
+          "bis": "10 · ébullition"
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Qui aide Tom si ça ne marche pas ?",
+          "spalten": 2,
+          "items": [
+            "enseignant ou enseignante",
+            "surveillant ou surveillante à la récré",
+            "entraîneur ou entraîneuse",
+            "Maison Relais"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La boîte à outils grandit : le nouvel outil s’appelle « Phrase-bouclier ». Entoure-le.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "modus": "einkreisen",
+          "bilder": [
+            {
+              "bild": "icon:temperature",
+              "text": "1 Thermomètre"
+            },
+            {
+              "bild": "icon:hand-click",
+              "text": "2 Carte des boutons"
+            },
+            {
+              "bild": "icon:snowflake",
+              "text": "3 Pensées qui calment"
+            },
+            {
+              "bild": "icon:wind",
+              "text": "4 Astuce pour se calmer"
+            },
+            {
+              "bild": "icon:shield",
+              "text": "5 Phrase-bouclier – NOUVEAU"
+            },
+            {
+              "bild": "icon:help-circle",
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mission d’ici la prochaine fois : dis une fois dans ta tête la phrase-bouclier de Tom. Et observe chez un personnage d’un livre ou d’un film comment il réagit à une pique. Coche ce qui est fait.",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "zielkarte",
+          "titel": "La phrase-bouclier de Tom",
+          "text": "Cette semaine, je m’entraîne dans ma tête.",
+          "tage": [
+            "entraîné",
+            "observé"
+          ]
+        }
+      ],
+      "anleitung": {
+        "de": {
+          "text": "Aufgabe 1 gemeinsam: Das Kind liest die vier Stufen und verbindet drei kleine Schul-Situationen mit dem Weg, der passt: ein einzelner Spruch in der Reihe, ein Spruch nach dem Spiel und etwas, das heute schon zum dritten Mal passiert; Hilfe holen geht sofort, wenn es wehtut. In Aufgabe 2 kreuzt es einen Schild-Satz für Tom an; eigene Worte sind besser, die Fachkraft fragt: „Wie sagt Tom das wirklich?“ Aufgabe 3 ist Toms Plan wie in der Übung: wo es passieren könnte, wie heiß Tom dann ist und wer hilft; es geht nur um Tom, und was das Kind ankreuzt, wird nicht kommentiert. Aufgabe 4 zeigt, wie der Werkzeugkasten wächst. Der Auftrag bleibt neutral (Toms Schild-Satz in Gedanken sagen oder eine Figur in einem Buch oder Film beobachten): nichts erzählen, keine echte Situation suchen; das Kind hakt später auf der Zielkarte ab, was geschafft ist.",
+          "sagen": [
+            "Auf welcher Stufe fängt Tom an?",
+            "Wie sagt Tom das wirklich?"
+          ],
+          "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Situationen und Sätze vor, und das Kind zeigt darauf. Ein Schild-Satz und eine Person, die Tom hilft, genügen. Erzählt das Kind von sich aus etwas Belastendes, sagt die Fachkraft ruhig: „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Tom zurück."
+        },
+        "fr": {
+          "text": "Exercice 1 ensemble : l’enfant lit les quatre niveaux et relie trois petites situations d’école à la façon de réagir qui convient : une pique isolée dans la file, une pique après le jeu et quelque chose qui arrive aujourd’hui pour la troisième fois ; demander de l’aide va tout de suite, si ça fait mal. À l’exercice 2, il coche une phrase-bouclier pour Tom ; des mots à soi sont mieux, l’adulte demande : « Comment Tom le dit-il vraiment ? » L’exercice 3 est le plan de Tom, comme dans l’exercice : où cela pourrait arriver, à combien Tom monte alors et qui aide ; il s’agit seulement de Tom, et ce que l’enfant coche n’est pas commenté. L’exercice 4 montre comment la boîte à outils grandit. La mission reste neutre (dire la phrase-bouclier de Tom dans sa tête ou observer un personnage dans un livre ou un film) : rien à raconter, pas de situation réelle à chercher ; l’enfant coche plus tard sur la carte ce qui est fait.",
+          "sagen": [
+            "Par quel niveau Tom commence-t-il ?",
+            "Comment Tom le dit-il vraiment ?"
+          ],
+          "wennEsKippt": "Si lire est difficile, l’adulte lit les situations et les phrases et l’enfant les montre. Une phrase-bouclier et une personne qui aide Tom suffisent. Si l’enfant raconte de lui-même quelque chose qui le touche, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Tom."
+        }
+      }
     }
   },
   {

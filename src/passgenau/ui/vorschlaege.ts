@@ -4,7 +4,7 @@ import type { Profil } from '../typen'
 import type { Korrekturen } from './zustand'
 import { INTERESSE_NAME, zielKurz } from './texte'
 
-export type VorschlagArt = 'zugang' | 'hilft' | 'vorsicht' | 'interesse' | 'woerter' | 'ziel'
+export type VorschlagArt = 'zugang' | 'hilft' | 'vorsicht' | 'interesse' | 'woerter' | 'sprache' | 'ziel'
 export interface Vorschlag {
   /** Schlüssel für „passt nicht“ (korrekturen.vorschlagAus): 'schreiben', 'hilft:reizarm', 'ziel:V-26' … */
   key: string
@@ -21,6 +21,7 @@ const HILFT: Record<string, [string, string]> = {
   bewegungspausen: ['Bewegungspausen', 'nach jedem Block über 8 Min. eine kurze Pause'],
   reizarm: ['leise/reizarm', 'keine lauten Spiele, ruhiger Raum'],
   bildplan: ['Bildplan', 'Plan mit Piktogrammen für das Kind'],
+  woertlich: ['klar und wörtlich', 'kurze Sätze, eine Anweisung nach der anderen, keine Redewendungen'],
 }
 const VORSICHT: Record<string, [string, string]> = {
   reiz: ['Vorsicht: Reize', 'leise, ohne Wettkampf und Berührung'],
@@ -54,6 +55,9 @@ export function offeneVorschlaege(roh: Profil, p: Profil, k: Korrekturen): Vorsc
     if (p.vorsicht.includes(s) || weg.has(`vorsicht:${s}`) || !VORSICHT[s]) continue
     l.push({ key: `vorsicht:${s}`, art: 'vorsicht', titel: VORSICHT[s][0], unter: VORSICHT[s][1], uebernehmen: (x) => ({ ...x, vorsicht: { ...x.vorsicht, [s]: true } }) })
   }
+  const b = v.blatt
+  if (b && p.sprache.blatt !== b && k.sprache === undefined && !weg.has(`blatt:${b}`))
+    l.push({ key: `blatt:${b}`, art: 'sprache', titel: `Blatt auf ${b === 'fr' ? 'Französisch' : 'Deutsch'}`, unter: b === 'fr' ? 'Deutsch noch schwach, Französisch stärker (Steckbrief)' : 'Französisch noch schwach, Deutsch stärker (Steckbrief)', uebernehmen: (x) => ({ ...x, sprache: b }) })
   for (const w of v.woerter ?? []) {
     if (p.sprache.woerter.includes(w) || weg.has(`woerter:${w}`)) continue
     l.push({ key: `woerter:${w}`, art: 'woerter', titel: `Wörterstreifen auch ${w === 'pt' ? 'Portugiesisch' : 'Luxemburgisch'}`, unter: 'Erstsprache laut Steckbrief', uebernehmen: (x) => ({ ...x, woerter: undefined, woerterAn: [...new Set([...(x.woerterAn ?? []), w])] }) })

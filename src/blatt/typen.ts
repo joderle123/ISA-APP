@@ -180,6 +180,15 @@ export type Baustein =
   | { art: 'tageskreis'; titel: string[]; legende: { farbe: Farbwort; text: string }[] }
   /** Kalender aus Kästchen (Wochentage als Spalten) zum Ausmalen, mit Farblegende. */
   | { art: 'farbkalender'; wochen?: number; legende: { farbe: Farbwort; text: string }[] }
+  /** Formen zum Beschreiben (Selbstreflexion 10/2026): Gedankenwolken, Sprechblasen, Bänder (eines je Zeile), Herzen. `items` steht
+   *  klein oben in der Form ('' = leer), `anzahl` = Formen insgesamt, `hoehe` in Zeilen. */
+  | { art: 'formfelder'; form: 'wolke' | 'blase' | 'band' | 'herz'; items?: string[]; anzahl?: number; spalten?: 1 | 2 | 3; hoehe?: number }
+  /** Regler zwischen zwei Polen („leise – laut“): auf der Spur markieren, wo man steht (Eigenschaften, Haltungen) */
+  | { art: 'regler'; paare: [string, string][]; stufen?: 5 | 7; spalten?: 1 | 2 }
+  /** Ein Jahr in Farben: je Tag ein Kästchen (12 Monate × 31 Tage), Legende rechts ({text: ''} = eigene Farbe) */
+  | { art: 'jahr'; legende: { farbe: Farbwort; text: string }[] }
+  /** Personen-Karten: ruhige Figur und Felder („Name“, „Typische Sätze“, „Das verbindet uns“) */
+  | { art: 'personen'; felder: string[]; anzahl?: 1 | 2 | 3 }
   // --- Mathe ----------------------------------------------------------------
   /** Schriftliche Rechnungen, Komma unter Komma (jede Ziffer in einem Kästchen). Ohne `ergebnis` bleibt die
    *  Ergebniszeile leer. `auffuellen`: fehlende Nachkommastellen als 0 in der Akzentfarbe zeigen (für Beispiele). */
@@ -646,7 +655,8 @@ export interface Blatt {
   /** Passgenau: zusammengesetztes Kinderblatt – „Mein Ziel“-Zeile unter dem Titel (statt des Untertitels) und die
    *  Herkunft der Bausteine im Fuß („Bausteine aus G-01, S-18“). Texte je Sprache. `teile`: je Baustein die Kennung
    *  des Teils, das dort beginnt (wird als Ziel im PDF gesetzt – für die antippbare Vorschau). */
-  passgenau?: { ziel?: Partial<Record<Sprache, string>>; herkunft?: string; teile?: (string | null)[] }
+  /** `hilfe`: Kinder-Telefon und Notruf in der Fußzeile statt des Titels (Kurs-Blätter für Kinder mit heiklem Thema) */
+  passgenau?: { ziel?: Partial<Record<Sprache, string>>; herkunft?: string; teile?: (string | null)[]; hilfe?: boolean }
   de: BlattInhalt
   fr?: BlattInhalt
 }

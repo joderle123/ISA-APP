@@ -82,7 +82,7 @@ const ARTEN = new Set([
   'aufgabe', 'text', 'info', 'geschichte', 'bild', 'spalten', 'abstand', 'seitenumbruch', 'linien', 'frage', 'satzanfaenge', 'feld', 'tabelle',
   'wennDann', 'dialog', 'vertrag', 'ankreuzen', 'bilder', 'wortspeicher', 'skala', 'einschaetzung', 'zuordnen', 'gefuehle', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'schritte', 'plan', 'tagesplan', 'atmen', 'comic',
-  'karten', 'rueckblick', 'notfall', 'gefuehlsrad', 'glaeser', 'netz', 'kurve', 'tageskreis', 'farbkalender', 'rechnungen', 'kaestchen', 'bon',
+  'karten', 'rueckblick', 'notfall', 'gefuehlsrad', 'glaeser', 'netz', 'kurve', 'tageskreis', 'farbkalender', 'formfelder', 'regler', 'jahr', 'personen', 'rechnungen', 'kaestchen', 'bon',
   'paeckchen', 'stellentafel', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
   'flaeche', 'temperatur',
   'diagramm', 'strichliste',
@@ -691,6 +691,27 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         b.items.forEach((x) => x.length > max && melde('H', w, `„${x}“ ist unter dem Glas zu lang (max. ${max} Zeichen)`))
         break
       }
+      case 'formfelder': {
+        const n = Math.max(b.items?.length ?? 0, b.anzahl ?? 0)
+        if (!['wolke', 'blase', 'band', 'herz'].includes(b.form)) melde('F', w, 'Formfelder: Form wolke, blase, band oder herz')
+        if (n > 12) melde('F', w, 'Formfelder: höchstens 12 Formen')
+        if (b.spalten && ![1, 2, 3].includes(b.spalten)) melde('F', w, 'Formfelder: 1–3 Spalten')
+        ;(b.items ?? []).forEach((x) => x.length > 60 && melde('H', w, `„${x.slice(0, 30)}…“ ist für eine Form zu lang (max. 60 Zeichen)`))
+        break
+      }
+      case 'regler':
+        if (b.paare.length < 2 || b.paare.length > 16) melde('F', w, 'Regler: 2–16 Paare')
+        if (b.stufen && ![5, 7].includes(b.stufen)) melde('F', w, 'Regler: 5 oder 7 Stufen')
+        b.paare.forEach((p) => p.some((x) => x.length > 18) && melde('H', w, `Pol „${p.join(' – ')}“ zu lang (max. 18 Zeichen)`))
+        break
+      case 'jahr':
+        if (b.legende.length < 2 || b.legende.length > 7) melde('F', w, 'Jahr: 2–7 Farben in der Legende')
+        break
+      case 'personen':
+        if (b.felder.length < 2 || b.felder.length > 7) melde('F', w, 'Personen: 2–7 Felder')
+        if (b.anzahl && ![1, 2, 3].includes(b.anzahl)) melde('F', w, 'Personen: 1–3 Karten')
+        b.felder.forEach((x) => x.length > 40 && melde('H', w, `Feld „${x}“ zu lang (max. 40 Zeichen)`))
+        break
       case 'netz':
         if (b.bereiche.length < 5 || b.bereiche.length > 10) melde('F', w, 'Netz: 5–10 Bereiche')
         if (b.stufen && ![5, 10].includes(b.stufen)) melde('F', w, 'Netz: 5 oder 10 Stufen')

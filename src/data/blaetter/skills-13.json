@@ -256,10 +256,10 @@
         "ziel": "Les jeunes connaissent cinq piliers d’une amitié solide, évaluent seuls une amitié avec le baromètre et planifient un petit pas pour l’entretenir.",
         "ablauf": [
           "Après l’exercice des petites annonces (3 min) : comparer l’encadré d’information avec les points affichés au mur.",
-          "Exercice 1 seul (5 min) : penser à une amitié sans la nommer.",
-          "Exercice 2 (2 min), puis lire l’encadré « À retenir ». En plénière, demander seulement : « Qui connaît le temps variable ? »",
-          "Exercice 3 (4 min) : on peut parler à deux de ce qu’on donne, ce dont on a besoin reste privé.",
-          "Exercice 4 à la fin de la séance (2 min) ; la semaine suivante, demander brièvement comment ça s’est passé."
+          "Tâche 1 seul (5 min) : penser à une amitié sans la nommer.",
+          "Tâche 2 (2 min), puis lire l’encadré « À retenir ». En plénière, demander seulement : « Qui connaît le temps variable ? »",
+          "Tâche 3 (4 min) : on peut parler à deux de ce qu’on donne, ce dont on a besoin reste privé.",
+          "Tâche 4 à la fin de la séance (2 min) ; la semaine suivante, demander brièvement comment ça s’est passé."
         ],
         "hintergrund": "Bagwell et Schmidt (2011) résument ce qui porte les amitiés à l’adolescence : du temps partagé, la confiance, le soutien, la loyauté et la capacité de résoudre les conflits. Selon une méta-analyse, les amitiés se distinguent des autres relations entre pairs par davantage d’activités communes, de proximité et de réciprocité, et par des conflits mieux résolus (Newcomb & Bagwell, 1995). La qualité de l’amitié compte plus que le nombre d’amis. Les êtres humains ont besoin à la fois de lien et d’autonomie (Deci & Ryan, 2000) ; le contrôle, la culpabilisation ou un non ignoré sont donc des signaux d’alerte à prendre au sérieux. Le baromètre traduit ces critères dans le langage de la météo : variable, c’est normal ; orageux en permanence, non.",
         "quellen": [
@@ -268,8 +268,8 @@
           "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
         ],
         "differenzierung": {
-          "leichter": "Seulement les exercices 1 et 2 ; l’adulte lit les affirmations à voix haute.",
-          "schwerer": "En complément, la feuille de la Toolbox « Ce qui compte pour moi en amitié »."
+          "leichter": "Seulement les tâches 1 et 2 ; l’adulte lit les affirmations à voix haute.",
+          "schwerer": "En complément, la fiche de la Toolbox « Ce qui compte pour moi en amitié »."
         },
         "impulse": [
           "Une amitié peut-elle être bonne même si vous vous disputez souvent ?",
@@ -618,9 +618,9 @@
         "ziel": "Les jeunes comprennent pourquoi les messages d’un chat arrivent souvent autrement que prévu, écoutent un message avec quatre oreilles et posent des questions au lieu de supposer.",
         "ablauf": [
           "Après l’expérience du chat : lire le chat en distribuant les rôles. Question : « Qui a tort ici ? »",
-          "Parcourir les quatre oreilles avec « Peux pas. » (4 min), puis exercices 1 et 2 à deux (6 min).",
+          "Parcourir les quatre oreilles avec « Peux pas. » (4 min), puis tâches 1 et 2 à deux (6 min).",
           "Résolution : Aylin doit garder son petit frère demain ; elle avait depuis longtemps convenu du skatepark avec Chiara, pour une heure après les cours. Question : « Comment Mila aurait-elle pu le découvrir ? »",
-          "Exercice 3 seul, exercice 4 comme plan pour la semaine (4 min)."
+          "Tâche 3 seul, tâche 4 comme plan pour la semaine (4 min)."
         ],
         "hintergrund": "Les messages écrits transmettent mal le ton. Kruger et al. (2005) ont montré que les expéditeurs surestiment nettement à quel point l’ironie ou le sérieux passe dans un message ; à l’oral, le ton est bien plus souvent reconnu correctement. Schulz von Thun (1981) décrit quatre côtés de tout message : le fond, la révélation de soi, la relation et l’appel. Quand on est blessé, on écoute surtout avec l’oreille de la relation et on lit un rejet là où il n’y en a pas. Même le silence est lu : on ne peut pas ne pas communiquer (Watzlawick et al., 1967).",
         "quellen": [
@@ -629,7 +629,7 @@
           "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton."
         ],
         "differenzierung": {
-          "leichter": "Seulement les exercices 2 et 3 ; les quatre oreilles restent au tableau.",
+          "leichter": "Seulement les tâches 2 et 3 ; les quatre oreilles restent au tableau.",
           "schwerer": "Reformuler la première réponse d’Aylin pour qu’elle ne soit pas mal comprise."
         },
         "impulse": [
@@ -875,7 +875,7 @@
               "text": "En tête à tête – pas dans le chat de groupe, pas devant un public."
             },
             {
-              "titel": "Dire « je » et demander",
+              "titel": "Message-je et question",
               "text": "« J’étais en colère parce que … Et toi, comment tu l’as vécu ? »"
             },
             {
@@ -996,15 +996,15 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes préparent une conversation de clarification entre amis, la jouent avec un message en « je » et une question, et cherchent un compromis avec lequel les deux côtés peuvent vivre.",
+        "ziel": "Les jeunes préparent une conversation de clarification entre amis, la jouent avec un message-je et une question, et cherchent un compromis avec lequel les deux côtés peuvent vivre.",
         "ablauf": [
           "Avant : imprimer la page 2 en un exemplaire de plus, découper les cartes et les poser face cachée.",
           "Présenter les quatre étapes (3 min) ; ceux qui connaissent l’année 1 reconnaissent l’escalier du conflit.",
           "Les binômes tirent une carte, préparent (2 min), jouent (3 min) et notent le compromis. Échanger les rôles.",
           "Deux binômes présentent leur compromis. Question : « Chaque côté peut-il vivre avec ça ? »",
-          "Exercice 3 dans le tour de clôture (2 min)."
+          "Tâche 3 dans le tour de clôture (2 min)."
         ],
-        "hintergrund": "Les quatre étapes transposent l’escalier du conflit de l’année 1 aux amitiés. Sous forte tension, aucune conversation équitable n’est possible, et devant un public ou dans le chat de groupe, il s’agit vite de sauver la face plutôt que de traiter le fond. Le message en « je » et la vraie question suivent la méthode sans perdant de Gordon (1972). Un compromis réussit plus facilement quand chacun distingue ce qui compte vraiment pour lui et ce à quoi il peut renoncer (Fisher & Ury, 1981). Ce n’est pas toujours la meilleure solution, mais souvent une solution équitable et rapide (Thomas & Kilmann, 1974).",
+        "hintergrund": "Les quatre étapes transposent l’escalier du conflit de l’année 1 aux amitiés. Sous forte tension, aucune conversation équitable n’est possible, et devant un public ou dans le chat de groupe, il s’agit vite de sauver la face plutôt que de traiter le fond. Le message-je et la vraie question suivent la méthode sans perdant de Gordon (1972). Un compromis réussit plus facilement quand chacun distingue ce qui compte vraiment pour lui et ce à quoi il peut renoncer (Fisher & Ury, 1981). Ce n’est pas toujours la meilleure solution, mais souvent une solution équitable et rapide (Thomas & Kilmann, 1974).",
         "quellen": [
           "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
           "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
@@ -1246,7 +1246,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Transforme cette phrase en message en « je » : « Si tu y vas avec eux samedi, tu n’as plus besoin de revenir. »"
+          "text": "Transforme cette phrase en message-je : « Si tu y vas avec eux samedi, tu n’as plus besoin de revenir. »"
         },
         {
           "art": "linien",
@@ -1276,9 +1276,9 @@
         "ziel": "Les jeunes comprennent quels besoins l’exclusion touche, trouvent des phrases et des gestes pour inclure et expriment la jalousie comme un sentiment plutôt que comme une pression.",
         "ablauf": [
           "Après le jeu de balle : relier l’encadré d’information aux observations (3 min).",
-          "Exercice 1 seul (4 min). Question : « Quelle situation touche le plus – et pourquoi ? »",
-          "Exercice 2 à deux (6 min) ; noter les phrases au tableau, elles serviront pour les scènes après la pause.",
-          "Après le relais du réaménagement, exercice 3 (3 min) ; dans le tour de clôture, exercice 4 (2 min)."
+          "Tâche 1 seul (4 min). Question : « Quelle situation touche le plus – et pourquoi ? »",
+          "Tâche 2 à deux (6 min) ; noter les phrases au tableau, elles serviront pour les scènes après la pause.",
+          "Après le relais du réaménagement, tâche 3 (3 min) ; dans le tour de clôture, tâche 4 (2 min)."
         ],
         "hintergrund": "Dans les études avec le jeu de balle Cyberball, quelques minutes sans que personne ne passe la balle suffisent à provoquer douleur et mauvaise humeur – même quand seul un ordinateur joue (Zadro et al., 2004) ; sont menacés l’appartenance, l’estime de soi, le contrôle et le sentiment de compter (Williams, 2007). Celui qui est exclu cherche à regagner ces besoins – par l’adaptation, la colère ou le repli. La jalousie a une racine proche : la peur de perdre l’appartenance. Les bonnes relations demandent à la fois du lien et de l’autonomie (Deci & Ryan, 2000) ; la pression et le contrôle retirent l’autonomie.",
         "quellen": [
@@ -1287,7 +1287,7 @@
           "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
         ],
         "differenzierung": {
-          "leichter": "Seulement trois situations ; pour l’exercice 2, débuts de phrases : « Tu veux … ? », « Viens donc … »",
+          "leichter": "Seulement trois situations ; pour la tâche 2, débuts de phrases : « Tu veux … ? », « Viens donc … »",
           "schwerer": "Inventer une situation où l’exclusion se fait discrètement, et une idée pour inclure."
         },
         "impulse": [
@@ -1637,17 +1637,17 @@
         "ziel": "À partir d’un personnage inventé, les jeunes décrivent l’amour naissant et le chagrin d’amour, appliquent le consentement au quotidien et s’exercent à accepter un non.",
         "ablauf": [
           "Avant : lettre aux parents, responsable informé, règles affichées, boîte à questions prête.",
-          "Lire l’histoire, exercices 1 et 2 individuellement (7 min). Souligner : il s’agit de Luca, pas de vous.",
-          "Après le parcours du feu tricolore : encadré à retenir, exercice 3 (4 min). Corrigé : 1 OK, 2 et 5 d’abord demander, 3 et 4 stop (personne n’outera les autres).",
-          "Après « Accepter un non » : exercice 4 (3 min), deux ou trois volontaires lisent. Pour finir : l’encadré d’aide."
+          "Lire l’histoire, tâches 1 et 2 individuellement (7 min). Souligner : il s’agit de Luca, pas de vous.",
+          "Après le parcours du feu tricolore : encadré à retenir, tâche 3 (4 min). Corrigé : 1 OK, 2 et 5 d’abord demander, 3 et 4 stop (personne n’outera les autres).",
+          "Après « Accepter un non » : tâche 4 (3 min), deux ou trois volontaires lisent. Pour finir : l’encadré d’aide."
         ],
-        "hintergrund": "Collins (2003) décrit les sentiments amoureux à l’adolescence comme répandus et importants pour le développement : émotions fortes, terrain d’entraînement à la proximité et au respect. Le chagrin d’amour est donc à prendre au sérieux. Le consentement s’exerce ici sur des situations du quotidien – câlin, photo, message, rumeur. Les programmes qui entraînent tôt ces compétences réduisent plus tard la violence dans les relations (Foshee et al., 2004). La fiche ne contient volontairement aucun contenu sexuel, qui suit en troisième année du cours.",
+        "hintergrund": "Collins (2003) décrit les sentiments amoureux à l’adolescence comme répandus et importants pour le développement : émotions fortes, terrain d’entraînement à la proximité et au respect. Le chagrin d’amour est donc à prendre au sérieux. Le consentement s’exerce ici sur des situations du quotidien – câlin, photo, message, rumeur. Les programmes qui entraînent tôt ces compétences réduisent plus tard la violence dans les relations (Foshee et al., 2004). La fiche ne contient volontairement aucun contenu sexuel, qui suit en troisième année de cours.",
         "quellen": [
           "Collins, W. A. (2003). More than myth: The developmental significance of romantic relationships during adolescence. Journal of Research on Adolescence, 13(1), 1–24.",
           "Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624."
         ],
         "differenzierung": {
-          "leichter": "Lire l’exercice 3 ensemble et évaluer à main levée.",
+          "leichter": "Lire la tâche 3 ensemble et évaluer à main levée.",
           "schwerer": "Écrire une situation « orange » et une façon de poser la question."
         },
         "impulse": [
@@ -1915,10 +1915,10 @@
       "lehrer": {
         "ziel": "Les jeunes comprennent pourquoi les amitiés changent et se terminent, distinguent une séparation correcte d’une séparation injuste et planifient un premier pas vers de nouveaux contacts.",
         "ablauf": [
-          "Après la courbe de l’amitié : lire l’histoire, exercice 1 individuellement (3 min).",
-          "Expliquer le pendule (2 min), puis exercice 2 individuellement (4 min).",
+          "Après la courbe de l’amitié : lire l’histoire, tâche 1 individuellement (3 min).",
+          "Expliquer le pendule (2 min), puis tâche 2 individuellement (4 min).",
           "Discuter des points sur lesquels le groupe n’est pas d’accord – par exemple ne plus répondre du jour au lendemain.",
-          "Après le double cercle : exercices 3 et 4 individuellement (7 min)."
+          "Après le double cercle : tâches 3 et 4 individuellement (7 min)."
         ],
         "hintergrund": "Les amitiés à l’adolescence durent souvent moins longtemps qu’on ne le ressent ; changements d’école, nouveaux centres d’intérêt et confiance brisée en terminent beaucoup (Bagwell & Schmidt, 2011). La perte peut provoquer un vrai deuil, souvent mêlé de colère, de culpabilité ou de soulagement. Selon Stroebe et Schut (1999), après une perte, les gens oscillent entre regard en arrière et nouveau départ ; les deux aident à surmonter l’épreuve. De petites étapes planifiées concrètement augmentent la probabilité qu’on aborde réellement de nouvelles personnes (Gollwitzer, 1999).",
         "quellen": [
@@ -1927,7 +1927,7 @@
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "differenzierung": {
-          "leichter": "Seulement les exercices 2 et 3 ; lire les échelons de l’échelle à voix haute.",
+          "leichter": "Seulement les tâches 2 et 3 ; lire les échelons de l’échelle à voix haute.",
           "schwerer": "Écrire une phrase d’adieu correcte pour Nora – sans reproche, sans vengeance."
         },
         "impulse": [

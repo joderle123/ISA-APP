@@ -244,9 +244,9 @@
       "lehrer": {
         "ziel": "Les jeunes distinguent relations saines, malsaines et violentes, reconnaissent le contrôle comme signal d’alerte et s’exercent à soutenir une amie ou un ami.",
         "ablauf": [
-          "Expliquer le feu au tableau, exercice 1 individuel (5 min) : exemples tirés de séries ou inventés, jamais du groupe.",
-          "Lire l’histoire, exercice 2 (7 min). Signaux d’alerte : position partagée sous la pression, flot de messages, ne pas aller chez une amie, mot de passe exigé, jalousie présentée comme preuve d’amour.",
-          "Après le jeu de rôle « Lena raconte » : exercice 3 (5 min). Bien : écouter, croire, proposer de l’aide, ne pas promettre le secret si Lena est en danger.",
+          "Expliquer le feu au tableau, tâche 1 en individuel (5 min) : exemples tirés de séries ou inventés, jamais du groupe.",
+          "Lire l’histoire, tâche 2 (7 min). Signaux d’alerte : position partagée sous la pression, flot de messages, ne pas aller chez une amie, mot de passe exigé, jalousie présentée comme preuve d’amour.",
+          "Après le jeu de rôle « Lena raconte » : tâche 3 (5 min). Bien : écouter, croire, proposer de l’aide, ne pas promettre le secret si Lena est en danger.",
           "Lire l’encadré « À retenir » et l’encadré d’aide ; chacun inscrit une personne de confiance."
         ],
         "hintergrund": "La violence dans les jeunes couples commence rarement par des coups, mais par le contrôle : vérifier le portable, exiger la localisation, dénigrer les amis – souvent prise pour de l’amour. Des programmes comme Safe Dates (Foshee et al., 2004) et Fourth R (Wolfe et al., 2009) travaillent sur les caractéristiques de relations saines, les signaux d’alerte et l’aide aux amis, et ont réduit la violence en couple pendant des années. Le feu décrit des comportements, pas des personnes : orange = en parler, rouge = chercher de l’aide.",
@@ -255,7 +255,7 @@
           "Wolfe, D. A., Crooks, C., Jaffe, P., Chiodo, D., Hughes, R., Ellis, W., Stitt, L. & Donner, A. (2009). A school-based program to prevent adolescent dating violence: A cluster randomized trial. Archives of Pediatrics & Adolescent Medicine, 163(8), 692–699."
         ],
         "differenzierung": {
-          "leichter": "Seulement les exercices 1 et 3 ; marquer ensemble les signaux d’alerte au tableau.",
+          "leichter": "Seulement les tâches 1 et 3 ; marquer ensemble les signaux d’alerte au tableau.",
           "schwerer": "Continuer l’histoire : que faudrait-il pour que tout redevienne vert ?"
         },
         "impulse": [
@@ -564,7 +564,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "R · Relation : vert, jaune ou rouge ? Décidez en équipe et justifiez.",
+          "text": "R · Relation : vert, orange ou rouge ? Décidez en équipe et justifiez.",
           "symbole": [
             "schneiden",
             "gruppe"
@@ -615,7 +615,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Cartes de signal à montrer assis : découpe-les et colorie-les en vert, jaune et rouge.",
+          "text": "Cartes de signal à montrer assis : découpe-les et colorie-les en vert, orange et rouge.",
           "hinweis": "Pour les cartes R, elles signifient sain, malsain, violence ; pour les cartes E : oui clair, pas clair, pas de consentement.",
           "symbole": [
             "schneiden",
@@ -633,7 +633,7 @@
               "bild": "icon:circle-check"
             },
             {
-              "titel": "Jaune",
+              "titel": "Orange",
               "text": "malsain · pas clair",
               "bild": "icon:alert-triangle"
             },
@@ -764,7 +764,7 @@
         "ziel": "Scènes inventées pour le module « Amour, sexualité et consentement » : relation (R, séance 27), consentement (E, séance 28), images sur Internet (N, séance 30).",
         "ablauf": [
           "Imprimer sur papier épais, découper, plastifier ; R1–R9 en double, cartes de signal une fois par personne. Retirer des cartes ou changer les noms si elles ressemblent à une situation vécue dans le groupe.",
-          "R (parcours des feux) : vert R2, R4, R9 – jaune R1, R7, R8 – rouge R3, R5, R6. Le jaune passe au rouge dès qu’interviennent la peur, la menace ou la contrainte.",
+          "R (parcours des feux) : vert R2, R4, R9 – orange R1, R7, R8 – rouge R3, R5, R6. L’orange passe au rouge dès qu’interviennent la peur, la menace ou la contrainte.",
           "E (ligne du oui) : oui clair seulement E9, jusqu’à ce qu’Ana revienne dessus – ensuite son non compte ; pas clair, donc demander : E4, E7 – pas de consentement : E1, E2, E3, E5, E6, E8. E1 : taper dans la main oui, accolade non.",
           "N (quatre coins) : options A à D et solutions dans la séance 30."
         ],
@@ -1129,10 +1129,10 @@
       "lehrer": {
         "ziel": "Les jeunes connaissent cinq caractéristiques d’un vrai oui, distinguent oui, doute et non, trouvent leurs propres phrases et savent ce qui aide après une limite franchie.",
         "ablauf": [
-          "Après la scène des vestes : exercice 1 (4 min). Solution : libre – sans pression ; clair – le silence ; retirable – stop ; esprit clair – ivre ; juste pour ça – photo.",
-          "Exercice 2 (5 min), discuter les différences. Oui clair : Mila, Elias (seulement pour la photo) ; pas clair, donc demander : Noah, Zoé ; pas un oui : Jang, Nora, Emma.",
-          "Exercice 3 à deux (4 min). Les bonnes réponses prennent l’hésitation au sérieux : « D’accord, alors pas ça. À demain. »",
-          "Exercice 4 après la ligne du oui (3 min), lecture à voix haute facultative ; lire ensemble les encadrés « À retenir » et d’aide."
+          "Après la scène des vestes : tâche 1 (4 min). Solution : libre – sans pression ; clair – le silence ; retirable – stop ; esprit clair – ivre ; juste pour ça – photo.",
+          "Tâche 2 (5 min), discuter les différences. Oui clair : Mila, Elias (seulement pour la photo) ; pas clair, donc demander : Noah, Zoé ; pas un oui : Jang, Nora, Emma.",
+          "Tâche 3 à deux (4 min). Les bonnes réponses prennent l’hésitation au sérieux : « D’accord, alors pas ça. À demain. »",
+          "Tâche 4 après la ligne du oui (3 min), lecture à voix haute facultative ; lire ensemble les encadrés « À retenir » et d’aide."
         ],
         "hintergrund": "Au quotidien, le consentement est rarement exprimé en mots ; on l’interprète à partir de regards, de proximité et du fait de suivre le mouvement (Beres, 2007) – ce qui favorise malentendus et excuses. D’où la règle simple : seul un oui clair est un oui, tout ce qui est flou signifie demander. Les cinq caractéristiques résument ce que prévoient pour cet âge les standards d’éducation sexuelle (WHO Regional Office for Europe & BZgA, 2010). La sidération est nommée expressément, car beaucoup de personnes concernées se reprochent ensuite de n’avoir rien dit.",
         "quellen": [
@@ -1140,7 +1140,7 @@
           "WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung."
         ],
         "differenzierung": {
-          "leichter": "Exercice 2 avec quatre scènes ; noter les caractéristiques au tableau avec des symboles simples.",
+          "leichter": "Tâche 2 avec quatre scènes ; noter les caractéristiques au tableau avec des symboles simples.",
           "schwerer": "Écrire une scène où quelqu’un retire un oui – et où l’on réagit bien."
         },
         "impulse": [
@@ -1490,10 +1490,10 @@
       "lehrer": {
         "ziel": "Les jeunes examinent des mythes répandus sur le corps, la sexualité et la contraception, clarifient des notions sur la diversité et évaluent des sources d’information.",
         "ablauf": [
-          "Exercice 1 individuel (5 min), puis vote avec le pouce et correction. Solution : 1 à 5 faux, 6 vrai, 7 faux (chacun a son propre rythme), 8 vrai.",
-          "Exercice 2 à deux (4 min). Solution : orientation – tomber amoureux ; identité – quel genre ; trans – inscrit à la naissance ; puberté – changement ; contraception – grossesse. Règle au tableau : nous ne devinons rien sur les autres, nous n’outons personne.",
-          "Après le parcours : exercice 3 (3 min). Fiables : Planning Familial, médecin scolaire ; en partie : amis, influenceurs, chatbots d’IA ; pas fiable : porno.",
-          "Exercice 4 individuel (2 min) ; puis faire inscrire dans l’encadré d’aide les coordonnées du Planning Familial."
+          "Tâche 1 en individuel (5 min), puis vote avec le pouce et correction. Solution : 1 à 5 faux, 6 vrai, 7 faux (chacun a son propre rythme), 8 vrai.",
+          "Tâche 2 à deux (4 min). Solution : orientation – tomber amoureux ; identité – quel genre ; trans – inscrit à la naissance ; puberté – changement ; contraception – grossesse. Règle au tableau : nous ne devinons rien sur les autres, nous n’outons personne.",
+          "Après le parcours : tâche 3 (3 min). Fiables : Planning Familial, médecin scolaire ; en partie : amis, influenceurs, chatbots d’IA ; pas fiable : porno.",
+          "Tâche 4 en individuel (2 min) ; puis faire inscrire dans l’encadré d’aide les coordonnées du Planning Familial."
         ],
         "hintergrund": "Les standards d’éducation sexuelle en Europe (WHO Regional Office for Europe & BZgA, 2010) prévoient pour cet âge des connaissances factuelles sur le corps, la contraception et les infections, sur l’orientation et l’identité ainsi que sur les lieux d’aide. Selon l’analyse des études par l’UNESCO (2018), une bonne éducation sexuelle ne conduit pas à des rapports plus précoces, mais plutôt à un début plus tardif et à une meilleure protection. Comme beaucoup de connaissances viennent du porno et de vidéos en ligne, la vérification des sources en fait partie.",
         "quellen": [
@@ -1501,7 +1501,7 @@
           "UNESCO (2018). International Technical Guidance on Sexuality Education: An Evidence-Informed Approach (revised ed.). Paris: UNESCO."
         ],
         "differenzierung": {
-          "leichter": "Exercice 1 avec cinq affirmations, lues à voix haute ; exercice 2 avec trois notions.",
+          "leichter": "Tâche 1 avec cinq affirmations, lues à voix haute ; tâche 2 avec trois notions.",
           "schwerer": "Écrire pour une affirmation une courte réponse telle qu’elle pourrait figurer dans la boîte à questions."
         },
         "impulse": [
@@ -2289,10 +2289,10 @@
       "lehrer": {
         "ziel": "Les jeunes décryptent les phrases de pression, disent non dans le chat, connaissent les étapes en cas de chantage avec des images et s’exercent à soutenir les personnes concernées sans reproche.",
         "ablauf": [
-          "Après la question d’estimation : exercice 1 à deux (4 min). Solution : tout le monde – la plupart non ; aimer – pas une preuve ; je l’efface – incontrôlable ; ça s’efface – capture d’écran ; moi aussi – personne ne doit une photo.",
-          "Exercice 2 individuel (5 min), lecture à voix haute facultative : bloquer est aussi une réponse.",
-          "Après les Quatre coins : exercice 3 (3 min). Juste : ne pas payer, sauvegarder, bloquer et signaler, personne de confiance, Helpline ; faux : payer, supprimer, régler seul.",
-          "Exercice 4 après « Soutenir plutôt que faire honte », exercice 5 pour conclure (3 min chacun) ; puis montrer l’encadré d’aide."
+          "Après la question d’estimation : tâche 1 à deux (4 min). Solution : tout le monde – la plupart non ; aimer – pas une preuve ; je l’efface – incontrôlable ; ça s’efface – capture d’écran ; moi aussi – personne ne doit une photo.",
+          "Tâche 2 en individuel (5 min), lecture à voix haute facultative : bloquer est aussi une réponse.",
+          "Après les Quatre coins : tâche 3 (3 min). Juste : ne pas payer, sauvegarder, bloquer et signaler, personne de confiance, Helpline ; faux : payer, supprimer, régler seul.",
+          "Tâche 4 après « Soutenir plutôt que faire honte », tâche 5 pour conclure (3 min chacun) ; puis montrer l’encadré d’aide."
         ],
         "hintergrund": "D’après une analyse de 39 études, environ une personne sur sept de moins de 18 ans a déjà envoyé une image intime, environ une sur huit en a transféré une sans consentement (Madigan et al., 2018). En cas de chantage, les mineurs connaissent souvent les auteurs, par exemple d’une relation passée ; d’autres sont contactés par des inconnus en ligne. Beaucoup n’en parlent à personne par honte (Wolak et al., 2018). D’où l’importance d’étapes claires, qui tiennent même dans la panique, et d’une attitude sans reproche.",
         "quellen": [
@@ -2301,7 +2301,7 @@
           "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
         ],
         "differenzierung": {
-          "leichter": "Exercice 1 avec trois phrases ; pour l’exercice 2, proposer des réponses au choix au tableau.",
+          "leichter": "Tâche 1 avec trois phrases ; pour la tâche 2, proposer des réponses au choix au tableau.",
           "schwerer": "Écrire un message pour le groupe de classe qui demande de ne pas transférer une image."
         },
         "impulse": [

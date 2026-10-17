@@ -349,11 +349,11 @@
       "lehrer": {
         "ziel": "Les jeunes connaissent les principaux effets de l’alcool, de la nicotine et du cannabis sur le cerveau jeune, testent huit affirmations et comparent leurs estimations aux vrais chiffres.",
         "ablauf": [
-          "Avant l’apport : exercice 1 seul, cocher (3 min), sans solution.",
-          "Exercice 2 en trois équipes d’experts (12 min) : « Le cerveau en travaux » et un autre encadré, à expliquer en trois phrases.",
-          "Après la pause : se placer sur la ligne info – incertain – intox, puis corriger l’exercice 1 au deuxième stylo. Solution : info 3, 5, 7 ; intox 1, 2, 4, 6, 8.",
-          "Exercice 3 sur la ligne d’estimation, puis chiffre de l’étude (ex. HBSC Luxembourg, cherché d’avance) en 2e couleur.",
-          "Exercice 4 pendant le Réckbléck, lecture facultative."
+          "Avant l’apport : tâche 1 seul, cocher (3 min), sans solution.",
+          "Tâche 2 en trois équipes d’experts (12 min) : « Le cerveau en travaux » et un autre encadré, à expliquer en trois phrases.",
+          "Après la pause : se placer sur la ligne info – incertain – intox, puis corriger la tâche 1 au deuxième stylo. Solution : info 3, 5, 7 ; intox 1, 2, 4, 6, 8.",
+          "Tâche 3 sur la ligne d’estimation, puis chiffre de l’étude (ex. HBSC Luxembourg, cherché d’avance) en 2e couleur.",
+          "Tâche 4 pendant le Réckbléck, lecture facultative."
         ],
         "hintergrund": "Le cerveau est en chantier jusqu’au milieu de la vingtaine ; beaucoup d’alcool et de cannabis vont alors de pair avec moins de mémoire et d’attention (Squeglia et al., 2009). Débuter jeune le cannabis rend bien plus souvent dépendant, environ une personne sur six (Volkow et al., 2014). Les vapes ne sont pas de la vapeur d’eau, et la nicotine rend vite dépendant (US Surgeon General, 2016). Croire que tous le font pousse à suivre ; rectifier les normes réduit la consommation (Perkins, 2002). Les images choc aident peu sans piste d’action (Peters, Ruiter & Kok, 2013).",
         "quellen": [
@@ -759,10 +759,10 @@
       "lehrer": {
         "ziel": "Les jeunes évaluent des situations de pression, formulent leur phrase pour dire non, établissent un plan B et connaissent la chaîne d’urgence avec la position latérale.",
         "ablauf": [
-          "Lire les situations, exercice 1 seul (3 min), sans lecture à voix haute ; puis discuter une situation par deux.",
-          "Rappeler les façons de dire non de l’année 1, exercice 2 seul ; exercice 3 : convenir à l’avance du mot de code et du retour avec un adulte.",
-          "Exercice 4 pendant l’exercice de premiers secours : montrer la position latérale sur la deuxième personne encadrante ou un mannequin, puis exercice volontaire.",
-          "Pour finir, exercice 5 : remplir la carte plan B, la découper, la coller."
+          "Lire les situations, tâche 1 seul (3 min), sans lecture à voix haute ; puis discuter une situation par deux.",
+          "Rappeler les façons de dire non de l’année 1, tâche 2 seul ; tâche 3 : convenir à l’avance du mot de code et du retour avec un adulte.",
+          "Tâche 4 pendant l’exercice de premiers secours : montrer la position latérale sur la deuxième personne encadrante ou un mannequin, puis exercice volontaire.",
+          "Pour finir, tâche 5 : remplir la carte plan B, la découper, la coller."
         ],
         "hintergrund": "Entre pairs, les adolescents prennent plus de risques (Gardner & Steinberg, 2005) ; la pression agit donc souvent discrètement. Les plans « si … alors » aident à agir comme prévu au moment décisif (Gollwitzer, 1999), et un plan B avec mot de code, récupération et accompagnement offre une sortie sans perte de face. En cas d’urgence, les témoins hésitent souvent, car la responsabilité se dilue (Latané & Darley, 1970) ; une chaîne d’urgence exercée montre ce que chacun peut faire. La position latérale suit les recommandations de l’European Resuscitation Council (Zideman et al., 2021) ; l’exercice ne remplace pas un cours de premiers secours.",
         "quellen": [
@@ -772,7 +772,7 @@
           "Zideman, D. A., Singletary, E. M., Borra, V., Cassan, P., Cimpoesu, C. D., De Buck, E., Djärv, T., Handley, A. J., Klaassen, B., Meyran, D., Oliver, E. & Poole, K. (2021). European Resuscitation Council Guidelines 2021: First aid. Resuscitation, 161, 270–290."
         ],
         "differenzierung": {
-          "leichter": "Seulement les exercices 1 et 3 et la carte ; phrases pour dire non au tableau.",
+          "leichter": "Seulement les tâches 1 et 3 et la carte ; phrases pour dire non au tableau.",
           "schwerer": "Écrire un plan B quand la pression vient de la meilleure amie."
         },
         "impulse": [
@@ -1143,12 +1143,12 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes comprennent ce que cherche la consommation, la comparent à des skills, se fixent un chemin pour les moments difficiles et connaissent les signes d’alerte et l’aide.",
+        "ziel": "Les jeunes comprennent ce que cherche la consommation, la comparent à des skills, se fixent un chemin pour les moments difficiles et connaissent les signaux d’alerte et l’aide.",
         "ablauf": [
-          "Exercice 1 à deux (5 min). Solution : Léa – courage, Samuel – appartenance, Diogo – curiosité, Nora – évacuer stress et émotions.",
-          "Schéma au tableau « Skill à effets secondaires », puis exercice 2 seul (8 min).",
-          "Après les quatre stations, exercice 3 (2 min).",
-          "Lire l’encadré « Quand ça devient trop », nommer le service spécialisé ; exercice 4 seul à la fin, sans lecture."
+          "Tâche 1 à deux (5 min). Solution : Léa – courage, Samuel – appartenance, Diogo – curiosité, Nora – évacuer stress et émotions.",
+          "Schéma au tableau « Skill à effets secondaires », puis tâche 2 seul (8 min).",
+          "Après les quatre stations, tâche 3 (2 min).",
+          "Lire l’encadré « Quand ça devient trop », nommer le service spécialisé ; tâche 4 seul à la fin, sans lecture."
         ],
         "hintergrund": "La consommation remplit des fonctions : curiosité, appartenance, désinhibition, atténuation des émotions. Boire pour atténuer ses émotions entraîne plus de difficultés (Cooper, 1994) ; la cause reste (Lazarus & Folkman, 1984). L’agitation qu’apaise une cigarette vient surtout du sevrage de nicotine (Parrott, 1999). Les skills répondent au même besoin sans nuire, tel le surf sur l’envie (Linehan, 2015), qui a aidé des fumeurs à fumer moins (Bowen & Marlatt, 2009). Les programmes de compétences valent mieux que la simple information (Faggiano et al., 2014).",
         "quellen": [
@@ -1160,7 +1160,7 @@
           "Faggiano, F., Minozzi, S., Versino, E. & Buscemi, D. (2014). Universal school-based prevention for illicit drug use. Cochrane Database of Systematic Reviews, (12), CD003020."
         ],
         "differenzierung": {
-          "leichter": "Exercice 1 à l’oral ; exercice 2 : seulement la première et la dernière colonne.",
+          "leichter": "Tâche 1 à l’oral ; tâche 2 : seulement la première et la dernière colonne.",
           "schwerer": "Noter comment des amis pourraient aider l’une des quatre personnes."
         },
         "impulse": [
@@ -1399,7 +1399,7 @@
         {
           "art": "info",
           "symbol": "wissen",
-          "titel": "Le feu des signes d’alerte",
+          "titel": "Le feu des signaux d’alerte",
           "punkte": [
             "Vert – une mauvaise journée : être là, écouter, demander.",
             "Orange – plus qu’un coup de mou : aborder le sujet et rester présent.",
@@ -1531,14 +1531,14 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes distinguent les signes d’alerte d’une mauvaise journée, connaissent quatre étapes pour aider une amie ou un ami et savent que chercher de l’aide n’est pas trahir.",
+        "ziel": "Les jeunes distinguent les signaux d’alerte d’une mauvaise journée, connaissent quatre étapes pour aider une amie ou un ami et savent que chercher de l’aide n’est pas trahir.",
         "ablauf": [
-          "Exercice 1 seul (4 min), puis se placer devant les panneaux du feu. Solution : vert 1 et 4, orange 2 et 5 (pour 5, rouge défendable), rouge 3, 6 et 7.",
-          "Exercice 2 et « Tu as le droit de demander directement » (8 min) : poser la question une fois, calmement.",
-          "Après le fishbowl – Jang n’est joué que par l’adulte qui anime – exercice 3 seul (4 min).",
-          "Exercice 4 et encadré d’aide (5 min) : inscrire un adulte joignable."
+          "Tâche 1 seul (4 min), puis se placer devant les panneaux du feu. Solution : vert 1 et 4, orange 2 et 5 (pour 5, rouge défendable), rouge 3, 6 et 7.",
+          "Tâche 2 et « Tu as le droit de demander directement » (8 min) : poser la question une fois, calmement.",
+          "Après le fishbowl – Jang n’est joué que par l’adulte qui anime – tâche 3 seul (4 min).",
+          "Tâche 4 et encadré d’aide (5 min) : inscrire un adulte joignable."
         ],
-        "hintergrund": "En crise, les adolescents se confient plutôt à leurs pairs qu’à des professionnels (Rickwood et al., 2005). La feuille suit les premiers secours en santé mentale : aborder, écouter sans juger, orienter vers l’aide professionnelle (Kitchener & Jorm, 2002) ; la version pour adolescents renforce l’envie d’aider et la confiance (Hart et al., 2018). Poser directement la question des pensées suicidaires ne les renforce pas (Dazzi et al., 2014). L’automutilation vise souvent à apaiser des émotions insupportables : signe d’alerte sérieux (Hawton et al., 2012). Pas de méthodes ni de cas (OMS, 2017).",
+        "hintergrund": "En crise, les adolescents se confient plutôt à leurs pairs qu’à des professionnels (Rickwood et al., 2005). La feuille suit les premiers secours en santé mentale : aborder, écouter sans juger, orienter vers l’aide professionnelle (Kitchener & Jorm, 2002) ; la version pour adolescents renforce l’envie d’aider et la confiance (Hart et al., 2018). Poser directement la question des pensées suicidaires ne les renforce pas (Dazzi et al., 2014). L’automutilation vise souvent à apaiser des émotions insupportables : signal d’alerte sérieux (Hawton et al., 2012). Pas de méthodes ni de cas (OMS, 2017).",
         "quellen": [
           "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
           "Kitchener, B. A. & Jorm, A. F. (2002). Mental health first aid training for the public: Evaluation of effects on knowledge, attitudes and helping behavior. BMC Psychiatry, 2, 10.",
@@ -1548,7 +1548,7 @@
           "World Health Organization (2017). Preventing Suicide: A Resource for Media Professionals (update 2017). Genf: WHO."
         ],
         "differenzierung": {
-          "leichter": "Exercice 1 avec quatre situations ; à l’exercice 3, choisir entre deux réponses.",
+          "leichter": "Tâche 1 avec quatre situations ; à la tâche 3, choisir entre deux réponses.",
           "schwerer": "Planifier ce qu’on fait si Elias écrit ça la nuit."
         },
         "impulse": [

@@ -613,12 +613,18 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   if (rollen) hinweise.unshift(rollen)
   if (p.vorsicht.includes('heikel') || (p.achtung ?? []).length)
     hinweise.unshift(
-      p.alterJahre >= 12
+      // Gruppe: kein Kind nennen, Persönliches nicht in der Gruppe
+      (p.gruppe?.length ?? 0) > 1
+        ? sp === 'fr' ? 'Un thème sensible est ouvert dans ce groupe. Ne pas aborder de sujets personnels en groupe ; en cas de signes de détresse, suivre ce qui a été convenu en équipe.' : 'In dieser Gruppe ist ein heikles Thema offen. Persönliches nicht in der Gruppe besprechen; bei Anzeichen von Belastung gilt, was im Team vereinbart ist.'
+        : p.alterJahre >= 12
         // ohne Verweis auf eine Unterlage außerhalb der Stunde (Blind-Bewertung 9: „‚voir le dossier‘ verweist auf etwas,
         // das nicht beiliegt“) – was zu tun ist, steht im Satz
         ? sp === 'fr' ? 'Un thème sensible est ouvert. Passgenau ne remplace pas une évaluation : en cas de signes de détresse, suivre ce qui a été convenu en équipe.' : 'Ein heikles Thema ist offen. Passgenau ersetzt keine Abklärung: Bei Anzeichen von Belastung gilt, was im Team vereinbart ist.'
         : sp === 'fr' ? 'Un thème sensible est ouvert pour cet enfant. Passgenau ne remplace pas une évaluation : en cas de signes de détresse, suivre ce qui a été convenu en équipe.' : 'Zu diesem Kind ist ein heikles Thema offen. Passgenau ersetzt keine Abklärung: Bei Anzeichen von Belastung gilt, was im Team vereinbart ist.',
     )
+  // klar und wörtlich (z. B. Autismus-Spektrum): wie die Fachkraft spricht – das Blatt bleibt gleich
+  if ((p.hilft ?? []).includes('woertlich'))
+    hinweise.push(sp === 'fr' ? 'Parler clairement et au sens propre : phrases courtes, une consigne à la fois, pas d’expressions imagées ni d’ironie ; montrer les émotions avec une image ou une carte.' : 'Klar und wörtlich sprechen: kurze Sätze, eine Anweisung nach der anderen, keine Redewendungen oder Ironie; Gefühle mit Bild oder Karte zeigen.')
   // Auf einen Blick: Ziel der Stunde, Werkzeug der Übung, erster Satz
   const kernX = s.schritte.find((x) => x.rolle === 'kern')
   const kernE = kernX ? k.eintraege.get(kernX.ref) : undefined

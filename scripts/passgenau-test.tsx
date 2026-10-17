@@ -904,7 +904,7 @@ await pruefung('Gruppe (151): Profile übereinander, gemeinsamer Kern, Blatt je 
 })
 
 if (!SCHNELL) {
-  await pruefung('Seiten (echtes Rendern): Kinderblatt C1/C2 eine Seite, sonst ≤ 2; Vorhersage = PDF', async () => {
+  await pruefung('Seiten (echtes Rendern): Kinderblatt C1/C2 eine Seite (Kurse ab 7: zwei), sonst ≤ 2; Vorhersage = PDF', async () => {
     const faelle: { name: string; p: Profil; plan: Plan; nr: number; blatt: Blatt }[] = []
     const noeMit = planen(k, KINDER.noe, auftrag(KINDER.noe, 'gruendlich', { blatt: 'mit', n: 2, dauer: 30 }), leer(), VERLAUF)
     const c2 = kind({ ref: 't-lucie', alterJahre: 7, ziele: [z('V-15', 'Ich bleibe bei einer Aufgabe.', 1)] })
@@ -916,7 +916,11 @@ if (!SCHNELL) {
     const infos = pdfInfo(dateien)
     let gleich = 0
     faelle.forEach((f, i) => {
-      const kurz = ['C1', 'C2'].includes(f.blatt.stufen[0])
+      // Kurs-Blatt eines Kurses ab 7: auch für Siebenjährige bis 2 Seiten (dann nur zwei Aufgaben – blatt.ts)
+      const kernRef = f.plan.sitzungen.find((x) => x.nr === f.nr)?.schritte.find((x) => x.rolle === 'kern')?.ref
+      const kernE = kernRef ? k.eintraege.get(kernRef) : undefined
+      const kursAb7 = kernE?.typ === 'schritt' && !!kernE.linie?.id.startsWith('kurs-') && (kernE.alter?.von ?? 0) >= 7
+      const kurz = ['C1', 'C2'].includes(f.blatt.stufen[0]) && !kursAb7
       soll(infos[i].seiten <= (kurz ? 1 : 2), `${f.name}: ${infos[i].seiten} Seiten (${f.blatt.stufen[0]})`)
       if (seitenFuellung(k, f.p, f.plan, f.nr).length === infos[i].seiten) gleich++
       else info(`${f.name}: Vorhersage ${seitenFuellung(k, f.p, f.plan, f.nr).length}, PDF ${infos[i].seiten}`)
@@ -976,25 +980,26 @@ await pruefung('Steckbrief-Vorschläge: gelten erst nach „Übernehmen“; weni
     ref: 't-sb', vorname: 'Lina', alterJahre: 15, vorsicht: ['heikel'], achtung: ['krise'], dichte: 'duenn',
     zugang: { lesen: 3, schreiben: 3, bild: 1, tempo: 'normal', struktur: 'normal', quelle: [] },
     ziele: [{ code: 'V-26', ich: 'Wenn mich jemand provoziert, bleibe ich ruhig.', quelle: 'steckbrief', prio: 1 }],
-    vorschlaege: { zugang: { lesen: 2, schreiben: 1, tempo: 'ruhig' }, vorsicht: ['reiz'], interessen: ['musik'], woerter: ['lb'] },
+    vorschlaege: { zugang: { lesen: 2, schreiben: 1, tempo: 'ruhig' }, vorsicht: ['reiz'], interessen: ['musik'], woerter: ['lb'], hilft: ['woertlich'], blatt: 'fr' },
   })
   const p0 = mitKorrekturen(roh, {}, false)
-  soll(p0.ziele.length === 0 && p0.zugang.schreiben === 3 && !p0.vorsicht.includes('reiz') && p0.interessen.length === 0 && p0.sprache.woerter.length === 0, 'ein Vorschlag gilt schon ohne Klick')
+  soll(p0.ziele.length === 0 && p0.zugang.schreiben === 3 && !p0.vorsicht.includes('reiz') && p0.interessen.length === 0 && p0.sprache.woerter.length === 0 && p0.sprache.blatt === 'de' && !(p0.hilft ?? []).length, 'ein Vorschlag gilt schon ohne Klick')
   const offen = offeneVorschlaege(roh, p0, {})
   const keys = offen.map((v) => v.key)
-  soll(['ziel:V-26', 'schreiben', 'lesen', 'tempo', 'vorsicht:reiz', 'woerter:lb', 'interesse:musik'].every((x) => keys.includes(x)), `offene Vorschläge: ${keys.join(', ')}`)
+  soll(['ziel:V-26', 'schreiben', 'lesen', 'tempo', 'vorsicht:reiz', 'woerter:lb', 'interesse:musik', 'hilft:woertlich', 'blatt:fr'].every((x) => keys.includes(x)), `offene Vorschläge: ${keys.join(', ')}`)
   soll(!offeneVorschlaege(roh, p0, passtNicht({}, 'schreiben')).some((v) => v.key === 'schreiben'), '„passt nicht“ blendet nicht aus')
   const korr = offen.reduce((a, v) => v.uebernehmen(a), {} as Korrekturen)
   const p = mitKorrekturen(roh, korr, false)
-  soll(p.ziele[0]?.code === 'V-26' && p.zugang.schreiben === 1 && p.zugang.lesen === 2 && p.zugang.tempo === 'ruhig' && p.vorsicht.includes('reiz') && p.vorsicht.includes('heikel') && p.sprache.woerter.includes('lb') && p.interessen.includes('musik') && p.dichte === 'mittel', `nach „Alle übernehmen“: ${JSON.stringify({ z: p.ziele.map((x) => x.code), zg: p.zugang, v: p.vorsicht, d: p.dichte })}`)
+  soll(p.ziele[0]?.code === 'V-26' && p.zugang.schreiben === 1 && p.zugang.lesen === 2 && p.zugang.tempo === 'ruhig' && p.vorsicht.includes('reiz') && p.vorsicht.includes('heikel') && p.sprache.woerter.includes('lb') && p.interessen.includes('musik') && p.dichte === 'mittel' && p.sprache.blatt === 'fr' && (p.hilft ?? []).includes('woertlich'), `nach „Alle übernehmen“: ${JSON.stringify({ z: p.ziele.map((x) => x.code), zg: p.zugang, v: p.vorsicht, d: p.dichte })}`)
   soll(offeneVorschlaege(roh, p, korr).length === 0, 'nach „Alle übernehmen“ noch Vorschläge offen')
   const zumHub = korrekturenFuerHub({}, korr, roh).korrekturen as Record<string, any> | undefined
-  soll(!!zumHub && zumHub.ziele?.an?.includes('V-26') && zumHub.schreiben === 1 && zumHub.vorsicht?.an?.includes('reiz') && JSON.stringify(zumHub.woerter) === '["lb"]', `an den Hub: ${JSON.stringify(zumHub)}`)
-  const plan = planen(k, p, auftrag(p, 'gruendlich', { ziele: ['V-26'], n: 6, dauer: 45 }), leer(), VERLAUF)
+  soll(!!zumHub && zumHub.ziele?.an?.includes('V-26') && zumHub.schreiben === 1 && zumHub.vorsicht?.an?.includes('reiz') && JSON.stringify(zumHub.woerter) === '["lb"]' && zumHub.sprache === 'fr' && (zumHub.hilft ?? []).includes('woertlich'), `an den Hub: ${JSON.stringify(zumHub)}`)
+  const pDe = { ...p, sprache: { ...p.sprache, blatt: 'de' as const } }
+  const plan = planen(k, pDe, auftrag(pDe, 'gruendlich', { ziele: ['V-26'], n: 6, dauer: 45 }), leer(), VERLAUF)
   const kerne = plan.sitzungen.map((s) => s.schritte.find((x) => x.rolle === 'kern')!)
   soll(kerne[0]?.ref === 'ki:kurs-wut-13-16-s1-b', `wenig Schreiben: Sitzung 1 ist ${kerne[0]?.ref}, nicht die Variante b`)
   const tausch = kerne.filter((x) => (k.eintraege.get(x.ref) as { tausch?: boolean } | undefined)?.tausch)
-  soll(tausch.length > 0 && tausch.every((x) => /^Eine schonendere Übung/.test(x.warum?.[0] ?? '') && !!x.blattVon), `Tausch-Übungen ohne Begründung oder Blatt: ${tausch.map((x) => x.ref + ' ' + (x.warum?.[0] ?? '')).join(' | ')}`)
+  soll(tausch.length > 0 && tausch.every((x) => /^Eine schonendere Übung/.test(x.warum?.[0] ?? '') && (!!x.blattVon || !!(k.eintraege.get(x.ref) as { uebungsblatt?: unknown } | undefined)?.uebungsblatt)), `Tausch-Übungen ohne Begründung oder Blatt: ${tausch.map((x) => x.ref + ' ' + (x.warum?.[0] ?? '')).join(' | ')}`)
   info(`Kerne: ${kerne.map((x) => x.ref.replace('ki:kurs-wut-13-16-', '')).join(' ')}`)
 })
 

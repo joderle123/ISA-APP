@@ -17,6 +17,7 @@ import { SCHRIFT, TEXTE, typo, type Masse } from './stil'
 import { FARBEN, farbTeile, type FarbTeil } from '../spielschule'
 import { Anziehpuppe, Bastelbogen, Faedelkarte, Klappbild, Labyrinth, Laufweg, Memory, Minibuch, PunkteVerbinden, SchneidenKleben, Suchbild } from './spielschule'
 import { Abhaken, Checkin, Stundenleiste, Wahlkarte, Zielkarte } from './passgenau'
+import { Formfelder, Jahr, Personen, Regler } from './reflexion'
 import { aufhellen, mischen, SEKTOR_TOENE, verlauf, WASSER, type Design } from './design'
 import { duotone, motivFuerIcon } from '../icon-motiv'
 import { istSzene, szeneMitFiguren } from '../szenen'
@@ -2770,6 +2771,14 @@ function EinBaustein({ c, b, grow }: { c: Ctx; b: Baustein; grow?: boolean }) {
       return <Tageskreis c={c} b={b} />
     case 'farbkalender':
       return <Farbkalender c={c} b={b} />
+    case 'formfelder':
+      return <Formfelder c={c} b={b} />
+    case 'regler':
+      return <Regler c={c} b={b} />
+    case 'jahr':
+      return <Jahr c={c} b={b} />
+    case 'personen':
+      return <Personen c={c} b={b} />
     case 'rechnungen':
       return <Rechnungen c={c} b={b} />
     case 'kaestchen':
@@ -2893,6 +2902,15 @@ function istFest(b: Baustein, layout: string): boolean {
       return b.text.length < 500
     case 'glaeser':
       return b.items.length + (b.leer ?? 0) <= (b.spalten ?? 5) * 2
+    // Selbstreflexion (10/2026): kleine Gruppen bleiben zusammen und wandern als Ganzes auf die nächste Seite
+    case 'formfelder':
+      return Math.ceil(Math.max(b.items?.length ?? 0, b.anzahl ?? 0) / (b.spalten ?? (b.form === 'band' ? 1 : b.form === 'herz' ? 3 : 2))) <= (b.form === 'band' ? 4 : 2)
+    case 'regler':
+      return b.paare.length <= 16
+    case 'jahr':
+      return true
+    case 'personen':
+      return (b.anzahl ?? 1) <= 2
     default:
       return false
   }

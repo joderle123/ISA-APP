@@ -277,7 +277,7 @@
         {
           "art": "aufgabe",
           "text": "Le feu des menus : montrez en même temps une carte pour chaque menu. On choisit le menu qui compte le moins de cartes rouges.",
-          "hinweis": "Vert veut dire avec plaisir, jaune veut dire ça va, rouge veut dire ça ne va pas pour moi. Qui montre rouge dit ce qui devrait changer.",
+          "hinweis": "Vert veut dire avec plaisir, orange veut dire ça va, rouge veut dire ça ne va pas pour moi. Qui montre rouge dit ce qui devrait changer.",
           "symbole": [
             "gruppe"
           ]
@@ -287,7 +287,7 @@
           "spalten": [
             "Menu",
             "Vert",
-            "Jaune",
+            "Orange",
             "Rouge",
             "Pour que tout le monde puisse manger"
           ],
@@ -446,7 +446,7 @@
         "ziel": "Le groupe planifie un repas auquel tout le monde peut participer : il clarifie allergies et règles alimentaires, choisit avec le feu des menus, rédige liste de courses et planning et connaît les règles de la cuisine.",
         "ablauf": [
           "Séance 1, conseil des menus (30 min) : lire les allergies sans noms (tâche 1), présenter quatre menus, feu (2), liste de courses (3).",
-          "Séance 1, postes de cuisine : lire les règles de la page 2 (tâche 5).",
+          "Séance 1, stations de cuisine : lire les règles de la page 2 (tâche 5).",
           "Séance 1, fin : les rôles « Recette » et « Temps » rédigent avec l’adulte le planning à l’envers (tâche 4).",
           "Séance 2 : afficher en A3 dans la cuisine la page 2 avec planning et règles."
         ],
@@ -774,7 +774,7 @@
               "text": "Poser le couteau, casserole hors du feu, expirer longuement une fois."
             },
             {
-              "titel": "Jaune : réfléchir",
+              "titel": "Orange : réfléchir",
               "text": "Quelle gravité, vraiment, de 0 à 10 ? Qu’est-ce qui peut être sauvé ? Qui peut aider ?"
             },
             {
@@ -1126,7 +1126,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Dispute dans l’équipe ?",
-          "text": "Rouge : tout le monde s’arrête. Jaune : chaque personne dit en une phrase ce qu’elle veut. Vert : vous décidez – compromis, tour de rôle ou, cette fois, l’autre idée."
+          "text": "Rouge : tout le monde s’arrête. Orange : chaque personne dit en une phrase ce qu’elle veut. Vert : vous décidez – compromis, tour de rôle ou, cette fois, l’autre idée."
         },
         {
           "art": "aufgabe",
@@ -1179,10 +1179,10 @@
           "Quelle mission était dans ta zone d’apprentissage – et laquelle presque dans la zone de panique ?"
         ],
         "tipps": [
-          "Emporter les feuilles sur des porte-blocs et dans des pochettes transparentes : par vent et pluie, tout reste lisible."
+          "Emporter les feuilles sur des planchettes à pince et dans des pochettes transparentes : par vent et pluie, tout reste lisible."
         ],
         "achtung": "Seulement avec l’accord des parents et selon le plan d’urgence de l’établissement. Si des jeunes vivent en chemin du rejet ou de la discrimination, en parler calmement.",
-        "material": "Feuille par équipe, page 2 par personne ; porte-blocs, plan de la zone, affiche (A2)"
+        "material": "Feuille par équipe, page 2 par personne ; planchettes à pince, plan de la zone, affiche (A2)"
       }
     }
   },
@@ -1477,7 +1477,7 @@
           "Séance 1, avant le film (5 min) : cartes de personnage tirées face cachée, tâche 1.",
           "Pendant le film et aux pauses : mots-clés sur trois scènes au plus (tâche 2).",
           "Séance 2, après le film (15 min) : iceberg en individuel (tâche 3), puis chaque personnage en deux phrases ; au tableau : dehors, dedans.",
-          "Après la ligne du courage : tâche 4 facultative, en individuel ; le précepte (tâche 5) peut aller dans le Skills-Pass."
+          "Après la ligne du courage : tâche 4 facultative, en individuel ; le précepte (tâche 5) peut aller dans le passeport Skills."
         ],
         "hintergrund": "« Wonder » (2017), d’après le roman de R. J. Palacio (2012), raconte sous plusieurs points de vue l’histoire d’Auggie, au visage différent. Allport (1954) a montré avec quelle rapidité on classe les autres d’après l’apparence ; le contact personnel réduit durablement les préjugés (Pettigrew & Tropp, 2006). Que l’exclusion dure dépend beaucoup des témoins (Salmivalli et al., 1996) – d’où les questions sur le courage. L’iceberg montre que presque chaque personnage cache quelque chose.",
         "quellen": [
@@ -1495,10 +1495,10 @@
           "Qu’est-ce qui aurait aidé Auggie le premier jour d’école ?"
         ],
         "tipps": [
-          "Poser les feuilles sur des porte-blocs : dans le noir, on écrit plus facilement."
+          "Poser les feuilles sur des planchettes à pince : dans le noir, on écrit plus facilement."
         ],
         "achtung": "Vérifier au préalable droits de projection et classification d’âge. Ne comparer personne à Auggie, ne désigner personne comme expert. Harcèlement actuel : pas en groupe, entretien individuel, informer la direction compétente (responsable).",
-        "material": "Porte-blocs, stylos, 9 cartes personnage"
+        "material": "Planchettes à pince, stylos, 9 cartes personnage"
       }
     }
   },
@@ -1773,7 +1773,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Quand la frustration monte",
-          "text": "Rouge : arrêter le jeu, mains loin du matériel. Jaune : une personne parle, tous les autres écoutent. Vert : nouvel essai avec un changement."
+          "text": "Rouge : arrêter le jeu, mains loin du matériel. Orange : une personne parle, tous les autres écoutent. Vert : nouvel essai avec un changement."
         },
         {
           "art": "aufgabe",

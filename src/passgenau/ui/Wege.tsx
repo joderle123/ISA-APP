@@ -71,7 +71,13 @@ const KOMPETENZEN = ['Gefühle erkennen', 'Gefühle ausdrücken', 'Selbstregulat
 const THEMEN_DUENN = ['wut', 'angst', 'freundschaft', 'trauer', 'schule', 'selbstwert', 'konzentration', 'medien', 'veraenderung']
 
 /** „Worum soll es heute gehen?“ (T-M5) – bei dünnen Daten statt eines Ziels */
-function WorumKarte({ thema, setThema, kennenlernen, setKennenlernen }: { thema: string[]; setThema: (t: string[]) => void; kennenlernen: boolean; setKennenlernen: (b: boolean) => void }) {
+/** Erste Stunde mit einem Kind, über das noch wenig bekannt ist (kein Ziel, noch keine Passgenau-Stunde): Kennenlernen ist
+ *  vorgewählt – ein Schwerpunkt bleibt einen Klick entfernt (Rückmeldung 18.10.2026: dünnes Dossier → zuerst kennenlernen). */
+function erstesMal(pg: ReturnType<typeof usePg>, p: Profil, duenn: boolean): boolean {
+  return duenn && !pg.ohneKind && !pg.verlauf.plaene.length && !(p.gemacht ?? []).length
+}
+
+function WorumKarte({ thema, setThema, kennenlernen, setKennenlernen, erstes }: { thema: string[]; setThema: (t: string[]) => void; kennenlernen: boolean; setKennenlernen: (b: boolean) => void; erstes?: boolean }) {
   const ohneKind = usePg().ohneKind
   const umschalten = (t: string) => {
     setKennenlernen(false)
@@ -79,7 +85,11 @@ function WorumKarte({ thema, setThema, kennenlernen, setKennenlernen }: { thema:
   }
   return (
     <div>
-      <p className="pg-leise pg-klein">{ohneKind ? 'Du hast kein Ziel gewählt.' : 'Noch keine Förderziele im Dossier.'} Wähle ein oder zwei Schwerpunkte – oder plane eine erste Stunde zum Kennenlernen.</p>
+      <p className="pg-leise pg-klein">
+        {erstes
+          ? 'Über das Kind ist noch wenig bekannt – darum ist eine erste Stunde zum Kennenlernen vorgewählt: was es mag, was es gut kann, was hilft. Mehr Wissen bringt die Auswertung der Unterlagen im CDSE-Hub (Steckbrief). Oder wähle ein oder zwei Schwerpunkte.'
+          : `${ohneKind ? 'Du hast kein Ziel gewählt.' : 'Noch keine Förderziele im Dossier.'} Wähle ein oder zwei Schwerpunkte – oder plane eine erste Stunde zum Kennenlernen.`}
+      </p>
       <div className="pg-chips pg-mt">
         {KOMPETENZEN.map((k) => (
           <Chip key={k} an={thema.includes('kompetenz:' + k)} onClick={() => umschalten('kompetenz:' + k)}>
@@ -156,8 +166,9 @@ export function Gruendlich() {
     if (pg.startZiel && p.ziele.some((z) => z.code === pg.startZiel)) return [pg.startZiel, ...l.filter((c) => c !== pg.startZiel)].slice(0, 3)
     return l
   })
+  const erstes = erstesMal(pg, p, duenn)
   const [thema, setThema] = useState<string[]>([])
-  const [kennenlernen, setKennenlernen] = useState(false)
+  const [kennenlernen, setKennenlernen] = useState(erstes)
   const [n, setN] = useState(letzteFolge?.n ?? (duenn ? 3 : 6))
   const [dauer, setDauer] = useState<Dauer>(() => dauerVorgabe(p, pg.hallo?.ich?.funktion, letzteFolge?.dauer))
   const [blatt, setBlatt] = useState<'mit' | 'ohne'>(() => blattVorgabe(p))
@@ -196,7 +207,7 @@ export function Gruendlich() {
               {duenn ? 'Worum soll es gehen?' : 'Ziele'}
             </h3>
             {duenn ? (
-              <WorumKarte thema={thema} setThema={setThema} kennenlernen={kennenlernen} setKennenlernen={setKennenlernen} />
+              <WorumKarte thema={thema} setThema={setThema} kennenlernen={kennenlernen} setKennenlernen={setKennenlernen} erstes={erstes} />
             ) : (
               <>
                 <p className="pg-leise pg-klein">{pg.ohneKind ? 'Reihenfolge = Priorität. Vorausgewählt aus deiner Auswahl.' : 'Reihenfolge = Priorität. Vorausgewählt aus PEI und Themen der letzten 14 Tage.'}</p>
@@ -396,8 +407,9 @@ export function Schnell() {
   const [dauer, setDauer] = useState<Dauer>(() => dauerVorgabe(p, pg.hallo?.ich?.funktion, letzte ?? pg.verlauf.plaene.find((x) => x.id === f?.id)?.dauer))
   const [blatt, setBlatt] = useState<'mit' | 'ohne'>(() => blattVorgabe(p))
   const [weiter, setWeiter] = useState(true)
+  const erstes = erstesMal(pg, p, duenn)
   const [thema, setThema] = useState<string[]>([])
-  const [kennenlernen, setKennenlernen] = useState(false)
+  const [kennenlernen, setKennenlernen] = useState(erstes)
   const tief = [heute.energie, heute.konzentration, heute.stimmung].filter((x) => x <= 2).length >= 2
   const bereit = !duenn || thema.length > 0 || kennenlernen
   const ziele = pg.startZiel && p.ziele.some((z) => z.code === pg.startZiel) ? [pg.startZiel] : []
@@ -416,7 +428,7 @@ export function Schnell() {
       {duenn && (
         <div className="pg-card pg-mb">
           <h2>Worum soll es heute gehen?</h2>
-          <WorumKarte thema={thema} setThema={setThema} kennenlernen={kennenlernen} setKennenlernen={setKennenlernen} />
+          <WorumKarte thema={thema} setThema={setThema} kennenlernen={kennenlernen} setKennenlernen={setKennenlernen} erstes={erstes} />
         </div>
       )}
       <div className="pg-card">

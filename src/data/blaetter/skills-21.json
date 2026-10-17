@@ -281,7 +281,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Ton propre plan reste pour toi. En groupe, on ne parle que d’Inês."
         },
         {
@@ -1020,7 +1020,7 @@
           "Vraie liaison (5 min) : la chercher dans l’appli, inscrire le rendez-vous avec deux rappels.",
           "Médecin (5 min) : tâche 2 uniquement avec un exemple anodin.",
           "Formulaires (10 min) : tâches 3 et 4. Solution 3 : nom de famille, prénom, date de naissance, numéro de sécurité sociale, parent ou tuteur légal, signature.",
-          "Tâche 5 dans la partie « skill » de l’unité."
+          "Tâche 5 dans la partie « skill » de la séance."
         ],
         "hintergrund": "Rendez-vous, trajets et formulaires font appel aux fonctions exécutives : anticiper, garder en tête les étapes intermédiaires, changer de tâche à temps (Diamond, 2013). Des appuis extérieurs comme un agenda avec rappel, un plan à rebours et un aide-mémoire déchargent la tête de ce travail et compensent des faiblesses de l’autorégulation (Barkley, 2012). Au Luxembourg s’ajoute la langue : beaucoup de formulaires sont en français, et les jeunes qui en connaissent les mots clés osent plus facilement les remplir eux-mêmes. Le plan « si … alors » final rend la mise en œuvre plus probable (Gollwitzer, 1999).",
         "quellen": [
@@ -2176,7 +2176,7 @@
           "Quiz en mouvement (8 min) : lire les affirmations, tout le monde va du côté « vrai » ou « faux ». Vrai : 2, 4, 7, 8 et 10 ; faux : 1, 3, 5, 6 et 9.",
           "Règles du couteau (2 min) : les montrer avec un vrai couteau.",
           "Tâche 2 (3 min). Solution : gluten, lait, céleri ; le sésame seulement comme trace possible.",
-          "Tâche 3 à la fin de l’unité ou à la maison."
+          "Tâche 3 à la fin de la séance ou à la maison."
         ],
         "hintergrund": "Beaucoup d’infections alimentaires à la maison viennent de quelques erreurs évitables : mains non lavées, viande crue sur la planche de la salade, volaille mal cuite, plats laissés longtemps au chaud. Les règles suivent les « cinq clés » de l’OMS (2006), complétées par la sécurité du couteau et de la cuisinière. Dans l’UE, les 14 allergènes principaux sont mis en évidence dans la liste des ingrédients, et les deux dates de conservation sont distinguées (règlement (UE) n° 1169/2011). Le quiz est voulu : retrouver une règle plutôt que la relire aide à la retenir (Roediger & Karpicke, 2006), et des exercices actifs rendent les programmes plus efficaces (Durlak et al., 2011).",
         "quellen": [
@@ -2194,7 +2194,7 @@
           "Que faites-vous déjà de la même manière chez vous ?"
         ],
         "tipps": [
-          "Convient aussi aux unités joker avec cuisine.",
+          "Convient aussi aux séances joker avec cuisine.",
           "Afficher les encadrés plastifiés en cuisine."
         ],
         "achtung": "Allergie grave connue : connaître le plan d’urgence. Gêne respiratoire ou gonflement : 112, ne pas laisser la personne seule.",
@@ -2478,7 +2478,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Dans le tour de table, un mot-clé suffit. Ce que tu écris reste pour toi."
         }
       ],
@@ -2506,7 +2506,7 @@
         ],
         "tipps": [
           "Discuter la phrase 7 en détail : c’est ainsi que les préjugés se déguisent.",
-          "Garder l’affiche pour l’unité 26."
+          "Garder l’affiche pour la séance 26."
         ],
         "achtung": "Pas de sujets liés à l’origine, à la religion ou à la famille. Indices de pression ou de mise en danger : entretien individuel, informer la direction compétente (responsable).",
         "material": "Feuille, affiche « Où vous écoute-t-on ? »"

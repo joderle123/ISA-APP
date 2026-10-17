@@ -350,17 +350,17 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
-          "text": "L’exercice 4 est à toi et ne sera pas lu à voix haute."
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "La tâche 4 est à toi et ne sera pas lue à voix haute."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes parcourent une décision en quatre étapes, pèsent le pour et le contre à court et à long terme et testent leur penchant avec le ventre, les valeurs et la question de l’amie.",
         "ablauf": [
           "Après le tour de table éclair (5 min) : lire l’encadré. Question : « Quand le ventre a-t-il suffi, quand pas ? »",
-          "Exercice 1 au tableau (8 min) : parcourir le cas de Mathis, chercher une troisième possibilité, par exemple une journée d’essai.",
-          "Exercices 2 et 3 seul ou à deux (7 min), pour Mathis ou pour un cas personnel.",
-          "À la fin de la séance (8 min) : test du ventre en position assise, puis exercice 4. La feuille n’est pas ramassée."
+          "Tâche 1 au tableau (8 min) : parcourir le cas de Mathis, chercher une troisième possibilité, par exemple une journée d’essai.",
+          "Tâches 2 et 3 seul ou à deux (7 min), pour Mathis ou pour un cas personnel.",
+          "À la fin de la séance (8 min) : test du ventre en position assise, puis tâche 4. La feuille n’est pas ramassée."
         ],
         "hintergrund": "Une démarche fixe crée de la distance, surtout quand les émotions montent ou que d’autres regardent. Les quatre champs viennent de l’entraînement aux compétences de la DBT pour adolescents : avantages et inconvénients des deux possibilités, séparés à court et à long terme (Rathus & Miller, 2015). Le « juste milieu » correspond à l’« esprit sage », où émotion et raison se rejoignent (Linehan, 2015). La question de l’amie recourt à la prise de distance : celui ou celle qui regarde sa propre situation comme de l’extérieur juge plus calmement et de façon plus équilibrée (Kross & Ayduk, 2017). On juge plus sagement les problèmes des autres que les siens ; avec du recul, la différence disparaît (Grossmann & Kross, 2014).",
         "quellen": [
@@ -370,7 +370,7 @@
           "Grossmann, I. & Kross, E. (2014). Exploring Solomon’s paradox: Self-distancing eliminates the self-other asymmetry in wise reasoning about close relationships in younger and older adults. Psychological Science, 25(8), 1571–1580."
         ],
         "differenzierung": {
-          "leichter": "Seulement les exercices 1 et 4 ; donner d’emblée les trois possibilités pour Mathis.",
+          "leichter": "Seulement les tâches 1 et 4 ; donner d’emblée les trois possibilités pour Mathis.",
           "schwerer": "Jouer une vraie décision et noter en plus quelle information manque encore."
         },
         "impulse": [
@@ -550,7 +550,7 @@
           "titel": "Comment fonctionne le conseil intérieur",
           "punkte": [
             "Tous les cas sont inventés. Personne ne joue une décision qui le ou la concerne vraiment.",
-            "Une personne se place au milieu, l’enseignant lit le cas. Quatre voix se tiennent dans les coins : le ventre, la tête, les valeurs, les autres.",
+            "Une personne se place au milieu, l’adulte lit le cas. Quatre voix se tiennent dans les coins : le ventre, la tête, les valeurs, les autres.",
             "À tour de rôle, chaque voix dit une phrase. La personne au milieu fait à chaque fois un pas vers la voix qui la convainc le plus à cet instant.",
             "Après deux tours arrive le rebondissement, puis un troisième tour.",
             "Pour finir, la personne décide à voix haute : « Je choisis …, parce que … Ma première étape est … »",
@@ -559,7 +559,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Découpe les cartes de cas. Le rebondissement n’est lu par l’enseignant qu’après le deuxième tour.",
+          "text": "Découpe les cartes de cas. Le rebondissement n’est lu par l’adulte qu’après le deuxième tour.",
           "symbole": [
             "schneiden",
             "gruppe"
@@ -646,7 +646,7 @@
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
         ],
         "differenzierung": {
-          "leichter": "Seulement deux voix, le ventre et la tête ; l’enseignant tient la voix des valeurs.",
+          "leichter": "Seulement deux voix, le ventre et la tête ; l’adulte tient la voix des valeurs.",
           "schwerer": "Avant la décision, résumer ce que chaque voix a dit et nommer une troisième possibilité."
         },
         "impulse": [
@@ -954,19 +954,19 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
-          "text": "L’exercice 4 est à toi. Si on te pousse à relever des défis dangereux ou si on te menace, y compris en ligne, cherche de l’aide : auprès d’une personne de confiance, du SePAS ou du Kanner- a Jugendtelefon (116 111)."
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "La tâche 4 est à toi. Si on te pousse à relever des défis dangereux ou si on te menace, y compris en ligne, cherche de l’aide : auprès d’une personne de confiance, du SePAS ou du Kanner- a Jugendtelefon (116 111)."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes comprennent pourquoi le risque attire à cet âge, distinguent courage et imprudence avec quatre questions, s’exercent au stop et formulent une phrase de sortie et un bon risque.",
         "ablauf": [
           "Après l’expérience des dés (3 min) : lire l’encadré « Accélérateur et frein » et le relier au vécu.",
-          "Exercice 1 à deux (6 min). Solution : les quatre affirmations valent pour Amira, aucune pour Luca. Discuter l’affirmation 1 : Luca veut appartenir au groupe – lui faut-il le saut pour cela ?",
-          "Exercice 2 individuel (2 min). Question : « Le message d’Amira n’est pas sans risque – pourquoi est-ce du courage ? »",
-          "Après l’entraînement au stop (5 min) : exercice 3. En fin de séance (3 min) : exercice 4, lecture à voix haute facultative."
+          "Tâche 1 à deux (6 min). Solution : les quatre affirmations valent pour Amira, aucune pour Luca. Discuter l’affirmation 1 : Luca veut appartenir au groupe – lui faut-il le saut pour cela ?",
+          "Tâche 2 en individuel (2 min). Question : « Le message d’Amira n’est pas sans risque – pourquoi est-ce du courage ? »",
+          "Après l’entraînement au stop (5 min) : tâche 3. En fin de séance (3 min) : tâche 4, lecture à voix haute facultative."
         ],
-        "hintergrund": "Steinberg (2014) décrit l’adolescence comme une période où le système de récompense est très sensible alors que le contrôle exercé par le lobe frontal mûrit jusqu’à l’âge adulte. Devant des pairs, les adolescents prennent plus de risques, les adultes à peine (Gardner & Steinberg, 2005), et leur système de récompense est plus actif (Chein et al., 2011). Cette ouverture est aussi une chance : qui distingue les bons risques des risques imprudents peut mettre cet élan à profit au lieu de le freiner. Les quatre étapes suivent la compétence STOP de la DBT (Linehan, 2015).",
+        "hintergrund": "Steinberg (2014) décrit l’adolescence comme une période où le système de récompense est très sensible alors que le contrôle exercé par le lobe frontal mûrit jusqu’à l’âge adulte. Devant des pairs, les adolescents prennent plus de risques, les adultes à peine (Gardner & Steinberg, 2005), et leur système de récompense est plus actif (Chein et al., 2011). Cette ouverture est aussi une chance : qui distingue les bons risques des risques imprudents peut mettre cet élan à profit au lieu de le freiner. Les quatre étapes suivent le skill STOP de la DBT (Linehan, 2015).",
         "quellen": [
           "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
           "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
@@ -1239,7 +1239,7 @@
           "art": "info",
           "symbol": "achtung",
           "titel": "Ce que dit la loi – en termes très généraux",
-          "text": "La personne qui anime la séance t’explique les règles exactes.",
+          "text": "L’adulte qui anime la séance t’explique les règles exactes.",
           "punkte": [
             "Des limites d’âge s’appliquent à l’alcool, au tabac et aux vapes. Le cannabis est interdit aux mineurs.",
             "Donner ou vendre des drogues est punissable – même entre amis.",
@@ -1282,9 +1282,9 @@
         "ziel": "Les jeunes passent des mythes sur les drogues au crible et retiennent trois messages : mélanger rend imprévisible ; ni conduire ni monter avec quelqu’un d’ivre ; sous l’effet de l’ivresse, pas de vrai oui.",
         "ablauf": [
           "Avant : inscrire le service de conseil ; vérifier la loi.",
-          "Exercice 1 individuel (5 min), puis quiz en équipes (15 min) : carte verte ou rouge levée, un à trois doigts pour dire la certitude de l’équipe.",
+          "Tâche 1 en individuel (5 min), puis quiz en équipes (15 min) : carte verte ou rouge levée, un à trois doigts pour dire la certitude de l’équipe.",
           "Solution : vrai – 1, 4, 6, 8 ; faux – 2, 3, 5, 7, 9. Justifier brièvement : les boissons énergisantes masquent l’ivresse (2), le THC peut aussi provoquer angoisse et panique (3), mélanger renforce les effets (5), les réactions faiblissent tôt (7), une personne impossible à réveiller est en danger (9).",
-          "Exercice 2 et encadrés (5 min) ; droit : rester général."
+          "Tâche 2 et encadrés (5 min) ; droit : rester général."
         ],
         "hintergrund": "Les messages menaçants et les images choc changent peu les comportements ; ils ne marchent que si l’on sait aussi quoi faire (Peters, Ruiter & Kok, 2013). Corriger les fausses normes est plus efficace : les jeunes surestiment la consommation de leurs pairs et s’y alignent (Perkins, 2002). Les faits suffisent : parmi celles et ceux qui commencent le cannabis à l’adolescence, environ une sur six devient dépendante, près d’une sur dix sur l’ensemble des consommateurs (Volkow et al., 2014).",
         "quellen": [
@@ -1584,7 +1584,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Poste A – la position latérale de sécurité : coche chaque étape quand tu l’as exercée.",
+          "text": "Station A – la position latérale de sécurité : coche chaque étape quand tu l’as exercée.",
           "hinweis": "Avec permission, sur l’épaule, le bras, la main, le genou – sinon sur le mannequin.",
           "symbole": [
             "ankreuzen",
@@ -1605,7 +1605,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Poste B – l’appel d’urgence : jouez l’appel à deux. Écris ce que tu dis.",
+          "text": "Station B – l’appel d’urgence : jouez l’appel à deux. Écris ce que tu dis.",
           "hinweis": "Situation : à une fête, Mila est allongée dans le jardin. Elle ne réagit pas, mais respire. Elle a beaucoup bu.",
           "symbole": [
             "partner",
@@ -1644,7 +1644,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Poste C – ton plan : que dis-tu, que fais-tu ?",
+          "text": "Station C – ton plan : que dis-tu, que fais-tu ?",
           "hinweis": "Plan B pour le retour : au Luxembourg, le bus et le train sont gratuits. Regarde avant à quelle heure part le dernier et fixe un mot de code avec quelqu’un en qui tu as confiance."
         },
         {
@@ -1672,7 +1672,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Ton plan est à toi. Mets-le dans ton carnet de skills, pour le retrouver quand ça compte."
         },
         {
@@ -1709,9 +1709,9 @@
       "lehrer": {
         "ziel": "Les jeunes reconnaissent une urgence liée à l’alcool ou aux drogues, s’exercent à la position latérale et à l’appel d’urgence et planifient un retour en sécurité.",
         "ablauf": [
-          "Avant : inscrire le service de conseil, installer trois postes, vérifier les étapes avec des consignes de secourisme à jour.",
-          "Entrée (3 min) : lire ensemble signes d’alerte et quatre étapes.",
-          "Postes (7 min chacun) : A position latérale, démontrée sur le mannequin, exercée seulement avec permission ; B appel d’urgence à deux, sans composer le 112 ; C retour à la maison.",
+          "Avant : inscrire le service de conseil, installer trois stations, vérifier les étapes avec des consignes de secourisme à jour.",
+          "Entrée en matière (3 min) : lire ensemble signaux d’alerte et quatre étapes.",
+          "Stations (7 min chacun) : A position latérale, démontrée sur le mannequin, exercée seulement avec permission ; B appel d’urgence à deux, sans composer le 112 ; C retour à la maison.",
           "Bilan (4 min) : « Qui pouvez-vous appeler pour qu’on vienne vous chercher ? » Présenter l’idée du mot de code."
         ],
         "hintergrund": "En cas d’urgence, aide celui ou celle qui sait quoi faire et s’en sent capable ; les gestes exercés renforcent cette conviction (Bandura, 1977). Les simples avertissements n’agissent pas ou provoquent un rejet (Peters, Ruiter & Kok, 2013). L’accent est mis sur l’action : une personne inconsciente peut s’étouffer avec ses vomissures ou se refroidir – appel, position latérale et présence sauvent des vies. Les gestes suivent les recommandations européennes de premiers secours (Zideman et al., 2021). Les plans « si … alors » aident à agir au moment décisif (Gollwitzer, 1999).",
@@ -1722,15 +1722,15 @@
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "differenzierung": {
-          "leichter": "Au poste B, répondre à l’oral ; au poste C, seulement les deux premières phrases.",
-          "schwerer": "Au poste B, la centrale demande des précisions : nom de la rue, quantité bue."
+          "leichter": "À la station B, répondre à l’oral ; à la station C, seulement les deux premières phrases.",
+          "schwerer": "À la station B, la centrale demande des précisions : nom de la rue, quantité bue."
         },
         "impulse": [
           "Qu’est-ce qui retient les jeunes d’appeler le 112 ?",
           "Qui pouvez-vous appeler la nuit sans que ça tourne au drame ?"
         ],
         "tipps": [
-          "Peu à l’aise en secourisme ? Inviter pour le poste A une personne formée aux premiers secours.",
+          "Peu à l’aise en secourisme ? Inviter pour la station A une personne formée aux premiers secours.",
           "La feuille va dans le carnet de skills – facile à retrouver quand ça compte."
         ],
         "achtung": "Contact seulement avec permission ; droit de dire stop. Après une urgence ou une agression : ne pas approfondir en groupe, entretien individuel, ne rien promettre, procédure de protection, informer la direction compétente (responsable) le jour même ; urgence : 112.",
@@ -2027,17 +2027,17 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
-          "text": "Les exercices 3 et 4 sont à toi et ne sont pas lus à voix haute. Si une erreur ne te lâche pas, parles-en avec une personne de confiance, au SePAS ou au Kanner- a Jugendtelefon (116 111)."
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Les tâches 3 et 4 sont à toi et ne sont pas lues à voix haute. Si une erreur ne te lâche pas, parles-en avec une personne de confiance, au SePAS ou au Kanner- a Jugendtelefon (116 111)."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes relient chaque erreur à une étape suivante, reformulent des phrases figées avec « encore », tirent le bilan d’une erreur et s’exercent à se parler avec bienveillance.",
         "ablauf": [
           "Après le schéma au tableau (5 min) : lire l’histoire de Chiara. Question : « Quelle sorte d’erreur, et qu’est-ce qui a aidé Chiara ? »",
-          "Exercice 1 à deux (3 min). Solution : étourderie – ralentir ; « pas encore » – poser des questions, s’entraîner ; courage – bilan, réessai ; conséquences – réparer.",
-          "Exercices 2 et 3 en individuel (9 min) ; l’exercice 3 n’est pas lu à voix haute, un personnage inventé est permis.",
-          "Après le jonglage (5 min) : guider calmement les trois phrases, puis exercice 4. L’exercice 5 est facultatif, à faire pour la prochaine fois."
+          "Tâche 1 à deux (3 min). Solution : étourderie – ralentir ; « pas encore » – poser des questions, s’entraîner ; courage – bilan, réessai ; conséquences – réparer.",
+          "Tâches 2 et 3 en individuel (9 min) ; la tâche 3 n’est pas lue à voix haute, un personnage inventé est permis.",
+          "Après le jonglage (5 min) : guider calmement les trois phrases, puis tâche 4. La tâche 5 est facultative, à faire pour la prochaine fois."
         ],
         "hintergrund": "Qui tient ses capacités pour figées cache ses erreurs et évite le difficile ; qui les croit développables cherche des causes et des stratégies (Dweck, 2006). De courts entraînements à cette attitude agissent peu seuls (Sisk et al., 2018) – il faut l’étape suivante concrète. Un retour aide quand il précise où l’on va, où l’on en est et la suite (Hattie & Timperley, 2007). Les trois phrases suivent l’autocompassion : pleine conscience, humanité partagée, bienveillance envers soi (Neff, 2003). Cela ne rend pas négligent : après un échec, ces personnes ont étudié plus longtemps pour l’essai suivant (Breines & Chen, 2012).",
         "quellen": [
@@ -2048,7 +2048,7 @@
           "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143."
         ],
         "differenzierung": {
-          "leichter": "Exercice 2 à l’oral ; à l’exercice 3, première et dernière ligne seulement.",
+          "leichter": "Tâche 2 à l’oral ; à la tâche 3, première et dernière ligne seulement.",
           "schwerer": "Pour une erreur de courage, écrire un plan de deuxième essai : que changer, qui aide, quand ?"
         },
         "impulse": [

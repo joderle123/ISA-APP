@@ -281,7 +281,7 @@
           "Si l’énergie est basse, jouer assis : les feuilles circulent et chaque personne s’inscrit là où la phrase lui correspond."
         ],
         "achtung": "Si une case devient prétexte à des moqueries (plat préféré, langue), rappeler aussitôt le contrat de groupe : on rit ensemble, pas les uns des autres.",
-        "material": "Une feuille par personne, supports rigides ou planchettes, stylos"
+        "material": "Une feuille par personne, supports rigides ou planchettes à pince, stylos"
       }
     }
   },
@@ -506,7 +506,7 @@
         "ziel": "Dehors, le groupe résout des tâches ensemble et vit qu’en équipe, on réussit davantage. La colonne « tous ensemble » déplace le regard du résultat vers la coopération.",
         "ablauf": [
           "Avant : parcourir le terrain, fixer limites et point de rendez-vous, convenir d’un signal de rassemblement.",
-          "Départ (3 min) : lire l’encadré « Règles du jeu », remettre la feuille sur un porte-bloc, annoncer 20 minutes.",
+          "Départ (3 min) : lire l’encadré « Règles du jeu », remettre la feuille sur une planchette à pince, annoncer 20 minutes.",
           "Défis (20 min) : l’adulte reste en retrait, prend les photos et observe comment les décisions se prennent. Après dix minutes, attirer l’attention sur la colonne « tous ensemble ».",
           "Clôture (7 min) : regarder, nommer et photographier l’œuvre, puis tâche 3 – elle nourrit le bilan de fin de séance.",
           "S’il pleut : mêmes tâches à l’intérieur, avec une caisse de matériel (gobelets, papier, pinces à linge, laine, bouchons)."
@@ -529,7 +529,7 @@
           "Relever sérieusement le défi lancé à l’adulte – c’est ce qui réjouit le plus les jeunes."
         ],
         "achtung": "Repérer le terrain avant (eau, routes, pentes), emporter la trousse de premiers secours, connaître les allergies (guêpes, pollen). Après les hautes herbes, penser aux tiques. On photographie des objets, pas des visages.",
-        "material": "Feuille sur porte-bloc, crayon, téléphone de l’adulte (photos), sifflet ; s’il pleut : caisse de matériel"
+        "material": "Feuille sur planchette à pince, crayon, téléphone de l’adulte (photos), sifflet ; s’il pleut : caisse de matériel"
       }
     }
   },
@@ -863,7 +863,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "La feuille reste dans ton classeur. Personne ne la ramasse ni ne la lit sans toi."
         }
       ],
@@ -883,7 +883,7 @@
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "differenzierung": {
-          "leichter": "Ne choisir que trois besoins et n’évaluer que le niveau de remplissage ; la personne qui anime aide pour l’étape.",
+          "leichter": "Ne choisir que trois besoins et n’évaluer que le niveau de remplissage ; l’adulte qui anime aide pour l’étape.",
           "schwerer": "Noter quelle émotion se manifeste quand le réservoir au plus grand écart est vide – comme chez Mila."
         },
         "impulse": [
@@ -1321,7 +1321,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Cette page n’appartient qu’à toi. Personne n’est obligé de lire à voix haute ce qui y est écrit."
         }
       ],
@@ -1340,7 +1340,7 @@
           "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California."
         ],
         "differenzierung": {
-          "leichter": "Ne traiter que les quatre premières lignes et discuter la page 2 oralement avec la personne qui anime.",
+          "leichter": "Ne traiter que les quatre premières lignes et discuter la page 2 oralement avec l’adulte qui anime.",
           "schwerer": "Choisir une ligne avec un grand écart entre la croix et les gommettes : dans quelles situations est-ce que je montre le côté que les autres voient ?"
         },
         "impulse": [

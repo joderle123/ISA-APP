@@ -244,14 +244,14 @@
         {
           "art": "aufgabe",
           "text": "Sommaire : note chaque fiche des séances que tu intègres à ton carnet.",
-          "hinweis": "Les pages de rubriques (page 2) n’ont pas besoin d’être notées ici – elles sont classées par module dans le carnet."
+          "hinweis": "Les pages de rubriques (page 2) n’ont pas besoin d’être notées ici – elles sont classées par thème dans le carnet."
         },
         {
           "art": "tabelle",
           "spalten": [
             "N°",
             "Fiche",
-            "du module",
+            "du thème",
             "Date"
           ],
           "breiten": [
@@ -274,13 +274,13 @@
         },
         {
           "art": "aufgabe",
-          "text": "À la fin de chaque module : que veux-tu encore savoir dans cinq ans ? Note-le ici.",
-          "hinweis": "Une nouvelle page est prévue pour chaque module. Tous les champs n’ont pas à être remplis – mieux vaut une bonne entrée que quatre à moitié vides."
+          "text": "À la fin de chaque thème : que veux-tu encore savoir dans cinq ans ? Note-le ici.",
+          "hinweis": "Une nouvelle page est prévue pour chaque thème. Tous les champs n’ont pas à être remplis – mieux vaut une bonne entrée que quatre à moitié vides."
         },
         {
           "art": "satzanfaenge",
           "items": [
-            "Module : …"
+            "Thème : …"
           ],
           "linien": 1
         },
@@ -1694,7 +1694,7 @@
       "lehrer": {
         "ziel": "Les jeunes décrivent avec la fleur d’identité ce qui, dans différents domaines de vie, fait partie d’eux, distinguent le donné du choisi, repèrent leurs rôles au fil de la journée et formulent qui ils veulent être.",
         "ablauf": [
-          "Introduction (10 min) : schéma au tableau avec la journée d’Aylin. Question : quelle Aylin est la vraie ?",
+          "Entrée en matière (10 min) : schéma au tableau avec la journée d’Aylin. Question : quelle Aylin est la vraie ?",
           "Tâches 1 et 2 en individuel (15 min), puis à deux : raconter un pétale de son choix (5 min).",
           "Tâche 3 en complément pour les plus rapides ou à la maison.",
           "Après la courte transition : tâche 4 (7 min), sans lecture à voix haute. La fleur va dans le carnet de skills."
@@ -1992,7 +1992,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Un mot pour les plus jeunes : écris le brouillon de ta carte pour quelqu’un qui commence tout juste la première année du cours.",
+          "text": "Un mot pour les plus jeunes : écris le brouillon de ta carte pour quelqu’un qui commence tout juste.",
           "hinweis": "Un conseil, un skill ou une phrase qui t’aurait servi à 12 ans. Avec ton prénom seulement, ou sans nom."
         },
         {

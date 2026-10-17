@@ -5783,7 +5783,7 @@
     },
     "ort": "raum",
     "titel": "Versöhnen und Verantwortung: Die Brücke",
-    "text": "Nach den Werkzeugen 1 bis 4 kommt heute das fünfte dazu: Verantwortung übernehmen und etwas wiedergutmachen. Zwei Karten, Ben und Jana, liegen mit einer Lücke dazwischen; Ben hat Janas Sprachnachricht im Klassenchat geteilt, und die Fachkraft liest drei Entschuldigungen vor („Sorry, aber du hast mich auch provoziert.“ – „Tut mir leid, wenn du dich verletzt fühlst.“ – „Es war nicht okay, dass ich deine Nachricht geteilt habe. Ich lösche sie.“). Der oder die Jugendliche ordnet jede zu (übernimmt Verantwortung, rechtfertigt sich mit „aber“, spricht nur von Janas Gefühl) und baut die Brücke, die nur mit zwei Bausteinen trägt: dem eigenen Teil und einem konkreten Schritt. Dann Rollentausch: Er oder sie berät Ben, wählt von drei Karten eine ausgedachte Situation (Ben drängelt in der Reihe, Ben verdirbt Jana ein Spiel, Ben nimmt Janas Stift) und plant mit der Fachkraft als Ben: mit wem, wann und wo, Bens Teil, was Jana braucht, welches der Werkzeuge 1 bis 4 zuerst dran ist, und den ersten Satz. Er oder sie spielt Jana, erst offen, dann abweisend („Dafür ist es zu spät.“), schätzt ein, ob Ben nur seinen Teil genannt und etwas angeboten hat, und trägt den Plan auf dem Zettel ein. Verantwortung übernehmen heißt, sagen, was ich getan habe – ohne „aber“.",
+    "text": "Nach den Werkzeugen 1 bis 4 kommt heute das fünfte dazu: Verantwortung übernehmen und etwas wiedergutmachen. Zwei Karten, Ben und Jana, liegen mit einer Lücke dazwischen; Ben hat Janas Stift genommen und nicht zurückgegeben, und die Fachkraft liest drei Entschuldigungen vor („Sorry, aber du hast mich auch geärgert.“ – „Tut mir leid, wenn du dich ärgerst.“ – „Es war nicht okay, dass ich deinen Stift genommen habe. Hier ist er wieder.“). Der oder die Jugendliche ordnet jede zu (übernimmt Verantwortung, rechtfertigt sich mit „aber“, spricht nur von Janas Gefühl) und baut die Brücke, die nur mit zwei Bausteinen trägt: dem eigenen Teil und einem konkreten Schritt. Dann Rollentausch: Er oder sie berät Ben, wählt von drei Karten eine ausgedachte Situation (Ben drängelt in der Reihe, Ben verdirbt Jana ein Spiel, Ben nimmt Janas Stift) und plant mit der Fachkraft als Ben: mit wem, wann und wo, Bens Teil, was Jana braucht, welches der Werkzeuge 1 bis 4 zuerst dran ist, und den ersten Satz. Er oder sie spielt Jana, erst offen, dann abweisend („Dafür ist es zu spät.“), schätzt ein, ob Ben nur seinen Teil genannt und etwas angeboten hat, und trägt den Plan auf dem Zettel ein. Verantwortung übernehmen heißt, sagen, was ich getan habe – ohne „aber“.",
     "sagen": [
       "Heute bauen wir für Ben eine Brücke zu Jana. Sie trägt nur mit zwei Bausteinen: dem eigenen Teil und einem konkreten Schritt.",
       "Ich lese drei Entschuldigungen. Welche übernimmt Verantwortung, welche rechtfertigt sich mit „aber“, welche spricht nur von Janas Gefühl?",
@@ -5813,7 +5813,7 @@
     },
     "fr": {
       "titel": "Se réconcilier et assumer sa part : le pont",
-      "text": "Après les outils 1 à 4, s’ajoute aujourd’hui le cinquième : assumer sa part et réparer. Deux cartes, Ben et Jana, sont posées avec un vide entre elles ; Ben a partagé le message vocal de Jana dans le groupe de classe, et l’adulte lit trois excuses (« Désolé, mais tu m’as aussi provoqué. » – « Je suis désolé si tu te sens blessée. » – « Ce n’était pas OK de partager ton message. Je le supprime. »). Le ou la jeune classe chacune (assume sa part, se justifie avec « mais », parle seulement du ressenti de Jana) et construit le pont, qui ne tient qu’avec deux cubes : sa propre part et un pas concret. Puis on échange les rôles : il ou elle conseille Ben, choisit sur trois cartes une situation inventée (Ben double dans le rang, Ben gâche un jeu de Jana, Ben prend le stylo de Jana) et prépare avec l’adulte, dans le rôle de Ben : avec qui, quand et où, la part de Ben, ce dont Jana a besoin, lequel des outils 1 à 4 vient en premier, et la première phrase. Il ou elle joue Jana, d’abord ouverte, puis fermée (« Pour ça, il est trop tard. »), évalue si Ben a seulement nommé sa part et proposé quelque chose, et note le plan sur la fiche. Assumer sa part, c’est dire ce que j’ai fait – sans « mais ».",
+      "text": "Après les outils 1 à 4, s’ajoute aujourd’hui le cinquième : assumer sa part et réparer. Deux cartes, Ben et Jana, sont posées avec un vide entre elles ; Ben a pris le stylo de Jana sans le rendre, et l’adulte lit trois excuses (« Désolé, mais toi aussi, tu m’as énervé. » – « Je suis désolé si tu t’énerves. » – « Ce n’était pas OK de prendre ton stylo. Le voilà. »). Le ou la jeune classe chacune (assume sa part, se justifie avec « mais », parle seulement du ressenti de Jana) et construit le pont, qui ne tient qu’avec deux cubes : sa propre part et un pas concret. Puis on échange les rôles : il ou elle conseille Ben, choisit sur trois cartes une situation inventée (Ben double dans le rang, Ben gâche un jeu de Jana, Ben prend le stylo de Jana) et prépare avec l’adulte, dans le rôle de Ben : avec qui, quand et où, la part de Ben, ce dont Jana a besoin, lequel des outils 1 à 4 vient en premier, et la première phrase. Il ou elle joue Jana, d’abord ouverte, puis fermée (« Pour ça, il est trop tard. »), évalue si Ben a seulement nommé sa part et proposé quelque chose, et note le plan sur la fiche. Assumer sa part, c’est dire ce que j’ai fait – sans « mais ».",
       "sagen": [
         "Aujourd’hui, on construit pour Ben un pont vers Jana. Il ne tient qu’avec deux cubes : sa propre part et un pas concret.",
         "Je lis trois excuses. Laquelle assume sa part, laquelle se justifie avec « mais », laquelle parle seulement du ressenti de Jana ?",
@@ -5821,6 +5821,432 @@
         "Je suis Ben, tu es Jana – d’abord ouverte, puis fermée. Tu peux dire stop à tout moment."
       ],
       "wennEsKippt": "Si trois excuses, c’est trop, la troisième avec son pont suffit. Si le ou la jeune ne veut pas jouer Jana, il ou elle montre sur une carte « ouverte » ou « fermée », et l’adulte lit. Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Ben et Jana ; une phrase avec « ma part » suffit."
+    },
+    "uebungsblatt": {
+      "titel": {
+        "de": "Konflikte klären: Verantwortung übernehmen",
+        "fr": "Clarifier les conflits : assumer sa part"
+      },
+      "de": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Der Konflikt-Eisberg",
+              "punkte": [
+                "Oben: Positionen – was gesagt wird",
+                "Unten: Interessen – worum es geht",
+                "Schon dabei: Werkzeug 1 bis 4",
+                "Heute neu: Werkzeug 5, Wiedergutmachen"
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Ein Konflikt endet nicht mit der Einigung: Zum Schluss geht es darum, was wieder in Ordnung kommt."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:eisberg",
+              "groesse": "m",
+              "text": "Der Konflikt-Eisberg",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ben hat Janas Stift genommen und nicht zurückgegeben. Verbinde jede Entschuldigung mit dem, was sie tut."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Entschuldigung",
+            "Sie …"
+          ],
+          "links": [
+            "„Sorry, aber du hast mich auch geärgert.“",
+            "„Tut mir leid, wenn du dich ärgerst.“",
+            "„Es war nicht okay, dass ich deinen Stift genommen habe. Hier ist er wieder.“"
+          ],
+          "rechts": [
+            "übernimmt Verantwortung",
+            "rechtfertigt sich mit „aber“",
+            "spricht nur von Janas Gefühl, nicht von seinem Tun"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Du bist Bens Beraterin oder Berater: Plane mit Ben ein Gespräch mit Jana. Such eine Situation aus; kreis ein oder kreuz an, was passt."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Bens Situation",
+          "spalten": 1,
+          "items": [
+            "Ben drängelt in der Reihe.",
+            "Ben verdirbt Jana ein Spiel.",
+            "Ben nimmt Janas Stift."
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "text",
+              "text": "Wann und wo sagt Ben es?"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bilder",
+              "spalten": 2,
+              "modus": "ankreuzen",
+              "klein": true,
+              "bilder": [
+                {
+                  "bild": "icon:bell-school",
+                  "text": "in der Pause"
+                },
+                {
+                  "bild": "icon:school",
+                  "text": "nach dem Unterricht"
+                },
+                {
+                  "bild": "icon:ball-football",
+                  "text": "nach dem Training"
+                },
+                {
+                  "bild": "icon:device-mobile-message",
+                  "text": "per Nachricht"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Zuerst nimmt Ben …",
+          "spalten": 2,
+          "items": [
+            "den Stufen-Check",
+            "die Taucherfrage",
+            "einen Spiegel-Satz",
+            "eine Abmachung"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Bens erster Satz beginnt mit …",
+          "spalten": 1,
+          "items": [
+            "„Es war nicht okay, dass ich …“",
+            "„Mich hat getroffen, dass …“",
+            "„Ich möchte etwas klären, damit …“"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ben bietet an oder Jana braucht …",
+          "spalten": 2,
+          "items": [
+            "eine Entschuldigung",
+            "etwas in Ordnung bringen",
+            "Abstand",
+            "ein Gespräch zu zweit"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rollenspiel: Du bist Jana – erst offen, dann abweisend. Ben sagt seinen ersten Satz. Schätz ein, wie es für Ben gelaufen ist."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ben hat nur seinen Teil benannt – ohne „aber“.",
+            "Ben hat etwas angeboten oder gefragt, was Jana braucht.",
+            "Ben hat ruhig reagiert, als Jana abgeblockt hat."
+          ],
+          "optionen": [
+            "noch nicht",
+            "teils",
+            "gelungen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Werkzeugkasten füllt sich. Kreis das Werkzeug ein, das heute dazugekommen ist."
+        },
+        {
+          "art": "bilder",
+          "spalten": 3,
+          "klein": true,
+          "bilder": [
+            {
+              "bild": "icon:stairs-up",
+              "text": "1 Stufen-Check"
+            },
+            {
+              "bild": "icon:search",
+              "text": "2 Tauchgang"
+            },
+            {
+              "bild": "icon:ear",
+              "text": "3 Spiegeln"
+            },
+            {
+              "bild": "icon:scale",
+              "text": "4 Verhandeln"
+            },
+            {
+              "bild": "icon:heart-handshake",
+              "text": "5 Wiedergutmachen – heute"
+            },
+            {
+              "bild": "icon:help-circle",
+              "text": "6 ?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bis zum nächsten Mal: Achte bei einer Figur in einem Buch oder Film darauf, ob sie sagt, was sie getan hat – ohne „aber“. Oder übe Bens ersten Satz in Gedanken."
+        },
+        {
+          "art": "zielkarte",
+          "titel": "Bis zum nächsten Mal",
+          "text": "Ich achte auf einen Satz mit „mein Teil“ oder übe Bens Satz in Gedanken.",
+          "kaestchen": 2,
+          "tage": [
+            "gefunden",
+            "geübt"
+          ]
+        }
+      ],
+      "fr": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "L’iceberg du conflit",
+              "punkte": [
+                "En haut : les positions – ce qui se dit",
+                "En bas : les intérêts – ce qui compte",
+                "Déjà acquis : outils 1 à 4",
+                "Nouveau aujourd’hui : outil 5, réparer"
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Un conflit ne s’arrête pas avec l’accord : à la fin, il s’agit de remettre en ordre ce qui peut l’être."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:eisberg",
+              "groesse": "m",
+              "text": "L’iceberg du conflit",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ben a pris le stylo de Jana et ne l’a pas rendu. Relie chaque excuse à ce qu’elle fait."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Excuse",
+            "Elle …"
+          ],
+          "links": [
+            "« Désolé, mais tu m’as aussi énervé. »",
+            "« Je suis désolé si tu es fâchée. »",
+            "« Ce n’était pas OK de prendre ton stylo. Le voilà. »"
+          ],
+          "rechts": [
+            "assume sa part",
+            "se justifie avec « mais »",
+            "parle seulement du ressenti de Jana, pas de son acte"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tu es le conseiller ou la conseillère de Ben : prépare avec Ben une discussion avec Jana. Choisis une situation ; entoure ou coche ce qui convient."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "La situation de Ben",
+          "spalten": 1,
+          "items": [
+            "Ben double dans le rang.",
+            "Ben gâche un jeu de Jana.",
+            "Ben prend le stylo de Jana."
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "text",
+              "text": "Quand et où Ben le dit-il ?"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bilder",
+              "spalten": 2,
+              "modus": "ankreuzen",
+              "klein": true,
+              "bilder": [
+                {
+                  "bild": "icon:bell-school",
+                  "text": "à la récré"
+                },
+                {
+                  "bild": "icon:school",
+                  "text": "après les cours"
+                },
+                {
+                  "bild": "icon:ball-football",
+                  "text": "après l’entraînement"
+                },
+                {
+                  "bild": "icon:device-mobile-message",
+                  "text": "par message"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ben prend d’abord …",
+          "spalten": 2,
+          "items": [
+            "les degrés",
+            "la question de plongée",
+            "une phrase de reformulation",
+            "un accord"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "La première phrase de Ben commence par …",
+          "spalten": 1,
+          "items": [
+            "« Ce n’était pas OK que je … »",
+            "« Ça m’a touché que … »",
+            "« Je voudrais clarifier quelque chose pour que … »"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ben propose ou Jana a besoin de …",
+          "spalten": 2,
+          "items": [
+            "des excuses",
+            "remettre quelque chose en ordre",
+            "de la distance",
+            "une discussion à deux"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jeu de rôle : tu es Jana – d’abord ouverte, puis fermée. Ben dit sa première phrase. Évalue comment ça s’est passé pour Ben."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ben a seulement nommé sa part – sans « mais ».",
+            "Ben a proposé quelque chose ou demandé ce dont Jana a besoin.",
+            "Ben a gardé son calme quand Jana s’est fermée."
+          ],
+          "optionen": [
+            "pas encore",
+            "en partie",
+            "réussi"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La boîte à outils se remplit. Entoure l’outil qui s’est ajouté aujourd’hui."
+        },
+        {
+          "art": "bilder",
+          "spalten": 3,
+          "klein": true,
+          "bilder": [
+            {
+              "bild": "icon:stairs-up",
+              "text": "1 Les degrés"
+            },
+            {
+              "bild": "icon:search",
+              "text": "2 La plongée"
+            },
+            {
+              "bild": "icon:ear",
+              "text": "3 Reformuler"
+            },
+            {
+              "bild": "icon:scale",
+              "text": "4 Négocier"
+            },
+            {
+              "bild": "icon:heart-handshake",
+              "text": "5 Réparer – aujourd’hui"
+            },
+            {
+              "bild": "icon:help-circle",
+              "text": "6 ?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "D’ici la prochaine fois : dans un livre ou un film, repère si un personnage dit ce qu’il a fait – sans « mais ». Ou entraîne la première phrase de Ben dans ta tête."
+        },
+        {
+          "art": "zielkarte",
+          "titel": "D’ici la prochaine fois",
+          "text": "Je repère une phrase « ma part » ou j’entraîne la phrase de Ben dans ma tête.",
+          "kaestchen": 2,
+          "tage": [
+            "trouvé",
+            "entraîné"
+          ]
+        }
+      ],
+      "anleitung": {
+        "de": {
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche bei Jana am besten ankommt. In Aufgabe 2 berät er oder sie Ben: die Situation ankreuzen, dazu wann und wo, erstes Werkzeug, erster Satz und Angebot. Danach das Rollenspiel: Die Fachkraft spielt Ben, der oder die Jugendliche spielt Jana, erst offen, dann abweisend, mit Stopp-Wort; die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind zum Ankreuzen. Es geht nur um Ben, Jana und ausgedachte Situationen.",
+          "sagen": [
+            "Wie fühlt sich jede Entschuldigung für Jana an?",
+            "Was würdest du Ben raten, wenn Jana abblockt?"
+          ],
+          "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Möglichkeiten vor, und der oder die Jugendliche zeigt darauf. Mag er oder sie Jana nicht spielen, zeigt er oder sie auf einer Karte „offen“ oder „abweisend“, und die Fachkraft liest vor. Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Ben und Jana zurück. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
+        },
+        "fr": {
+          "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle arrive le mieux chez Jana. À l’exercice 2, il ou elle conseille Ben : cocher la situation, puis quand et où, premier outil, première phrase et proposition. Ensuite, le jeu de rôle : l’adulte joue Ben, le ou la jeune joue Jana, d’abord ouverte, puis fermée, avec un mot d’arrêt ; l’évaluation suit tout de suite. La boîte à outils et la mission se cochent. Il n’est question que de Ben, de Jana et de situations inventées.",
+          "sagen": [
+            "Qu’est-ce que chaque excuse fait ressentir à Jana ?",
+            "Que conseillerais-tu à Ben si Jana se ferme ?"
+          ],
+          "wennEsKippt": "Si lire est difficile, l’adulte lit les possibilités et le ou la jeune les montre du doigt. S’il ou elle ne veut pas jouer Jana, il ou elle montre sur une carte « ouverte » ou « fermée », et l’adulte lit. Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Ben et Jana. Si le temps manque, les exercices 1 et 2 suffisent."
+        }
+      }
     }
   },
   {

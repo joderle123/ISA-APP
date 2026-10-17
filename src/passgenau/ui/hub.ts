@@ -224,7 +224,7 @@ export function praxisKuratieren(id: string, aktion: KuratierAktion, opt: { chec
 // --- Korrekturen: gespeicherte Form (Hub) ↔ Zustand der Oberfläche ---------------------------------------------
 
 const wertVon = (x: unknown): unknown => (x && typeof x === 'object' && !Array.isArray(x) && 'wert' in (x as object) ? (x as { wert: unknown }).wert : x)
-const HILFT = ['stundenleiste', 'bewegungspausen', 'reizarm', 'bildplan'] as const
+const HILFT = ['stundenleiste', 'bewegungspausen', 'reizarm', 'bildplan', 'woertlich'] as const
 const VORSICHT = ['familie', 'trauer', 'koerper', 'heikel', 'reiz', 'trauma'] as const
 
 /** Gespeicherte Korrekturen (d.passgenau.kind) → Zustand der Oberfläche. Der Hub hat sie im Profil schon angewandt; hier

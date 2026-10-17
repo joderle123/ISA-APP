@@ -207,6 +207,11 @@ export const THEMEN: ThemaDef[] = [
   T('selbstreflexion', 'rhythmus', 'Zeit & Tagesrhythmus', 'Temps et rythme de la journée'),
   T('selbstreflexion', 'einfluss', 'Einfluss & Gelassenheit', 'Influence et sérénité'),
   T('selbstreflexion', 'rueckblick', 'Rückblick & Verlauf', 'Bilan et évolution'),
+  T('selbstreflexion', 'selbstbild', 'Selbstbild & Stärken', 'Image de soi et forces'),
+  T('selbstreflexion', 'gedanken', 'Gedanken & innerer Kritiker', 'Pensées et critique intérieure'),
+  T('selbstreflexion', 'fuersorge', 'Selbstfürsorge & Energie', 'Prendre soin de soi et énergie'),
+  T('selbstreflexion', 'beziehungen', 'Beziehungen & Nähe', 'Relations et proximité'),
+  T('selbstreflexion', 'ziele', 'Ziele & Gewohnheiten', 'Objectifs et habitudes'),
 
   T('mathe', 'dezimalzahlen', 'Dezimalzahlen', 'Nombres décimaux'),
   T('mathe', 'brueche', 'Brüche', 'Fractions'),

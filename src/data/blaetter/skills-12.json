@@ -277,9 +277,9 @@
         "ziel": "Les jeunes reconnaissent que, sous une colère visible, il y a souvent de la honte, une vexation, un sentiment d’injustice, de la peur ou un réservoir vide, et en déduisent ce qui aide alors vraiment.",
         "ablauf": [
           "Entrée en matière (5 min) : lire l’histoire à voix haute. « Qu’est-ce que les autres ont vu ? Qu’est-ce qu’Elias a ressenti ? »",
-          "Apport (5 min) : retourner les cartes « sous l’eau », discuter l’encadré, exercice 1 seul.",
-          "Exercices 2 et 3 seul (8 min) : son propre iceberg. Ne pas lire à voix haute, ne pas ramasser.",
-          "Exercice 4 (2 min) : qui veut nomme seulement la phrase sur Elias."
+          "Apport (5 min) : retourner les cartes « sous l’eau », discuter l’encadré, tâche 1 seul.",
+          "Tâches 2 et 3 seul (8 min) : son propre iceberg. Ne pas lire à voix haute, ne pas ramasser.",
+          "Tâche 4 (2 min) : qui veut nomme seulement la phrase sur Elias."
         ],
         "hintergrund": "La colère naît quand on perçoit une situation comme une offense, une menace ou une injustice ; Novaco (1975) la décrit comme une réaction à une provocation perçue. Souvent, un sentiment plus vulnérable se cache en dessous. Le lien avec la honte est bien établi : celui qui se sent dévalorisé dans toute sa personne réagit souvent par de l’irritation et en rejetant la faute sur les autres (Tangney & Dearing, 2002). L’image de l’iceberg rend cette couche discutable sans que personne ait à raconter son vécu – et montre aux adultes quelle réaction aide.",
         "quellen": [
@@ -287,7 +287,7 @@
           "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Résoudre l’exercice 1 ensemble ; remplir l’iceberg d’un personnage de série.",
+          "leichter": "Résoudre la tâche 1 ensemble ; remplir l’iceberg d’un personnage de série.",
           "schwerer": "Remplir un deuxième iceberg, celui de la prof de l’histoire."
         },
         "impulse": [
@@ -575,7 +575,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Journal de la colère : observe-toi jusqu’à la prochaine séance. Une ligne suffit.",
+          "text": "Journal de la colère : observe-toi jusqu’à la prochaine fois. Une ligne suffit.",
           "hinweis": "Pas de noms, pas de détails – juste assez pour t’en souvenir."
         },
         {
@@ -621,15 +621,15 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "C’est toi qui décides de ce que tu partages.",
-          "text": "Le journal est pour toi. À la prochaine séance, tu nommes tout au plus ton premier signal – si tu veux."
+          "text": "Le journal est pour toi. La prochaine fois, tu nommes tout au plus ton premier signal – si tu veux."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes nomment leurs déclencheurs et leurs facteurs aggravants, dessinent l’ordre de leurs signaux d’alerte et s’observent pendant une semaine avec un court journal.",
         "ablauf": [
-          "Exercices 1 et 2 seul (3 min) ; les papiers de déclencheurs du check-in peuvent aider.",
-          "Exercice 3 (4 min) avec jaune, orange, rouge : « Qu’est-ce qui vient en premier chez toi ? »",
-          "Expliquer l’exercice 4 pendant le Réckbléck : lire la ligne d’exemple, mission jusqu’à la prochaine séance ; exercice 5 facultatif à la fin de la semaine.",
+          "Tâches 1 et 2 seul (3 min) ; les papiers de déclencheurs du check-in peuvent aider.",
+          "Tâche 3 (4 min) avec jaune, orange, rouge : « Qu’est-ce qui vient en premier chez toi ? »",
+          "Expliquer la tâche 4 pendant le Réckbléck : lire la ligne d’exemple, mission jusqu’à la prochaine séance ; tâche 5 facultative à la fin de la semaine.",
           "Séance 11 : le premier signal devient le signal du rouge dans le feu tricolore."
         ],
         "hintergrund": "La colère se manifeste dans le corps, souvent avant d’arriver dans la tête : dans les cartes corporelles de Nummenmaa et al. (2014), elle se sentait surtout dans la tête, la poitrine, les bras et les mains. Plus on intervient tôt dans le déroulement d’une émotion, plus c’est facile (Gross, 1998). Quand on est déjà tendu ou épuisé, on réagit plus facilement par de la colère (Novaco, 1975) – ici appelé « mèche courte ». Le journal s’appuie sur l’auto-observation de l’autogestion : en notant déclencheurs et réactions, on voit apparaître des schémas (Kanfer et al., 2012).",
@@ -640,7 +640,7 @@
           "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer."
         ],
         "differenzierung": {
-          "leichter": "Seulement les exercices 1 et 3 ; compléter le journal à l’oral.",
+          "leichter": "Seulement les tâches 1 et 3 ; compléter le journal à l’oral.",
           "schwerer": "Noter dans le journal quelle pensée a attisé la colère."
         },
         "impulse": [
@@ -994,7 +994,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Ton feu t’appartient. Si tu veux, prends-le en photo pour l’avoir sur ton téléphone."
         }
       ],
@@ -1002,9 +1002,9 @@
         "ziel": "Les jeunes connaissent les trois couleurs du feu tricolore, évaluent possibilités et conséquences et définissent leur propre feu.",
         "ablauf": [
           "Entrée en matière (15 min) : trois cercles au sol, parcourir une situation du rouge au vert, puis démonstration en pensant à voix haute.",
-          "Exercice 1 à deux (10 min) : « Qu’est-ce qu’Aylin veut vraiment ? » Exercice 2 individuellement (5 min).",
-          "Exercice 3 après le skill du rouge, à la fin de la séance (5 min). Ne pas ramasser.",
-          "L’exercice 4 est la mission de la semaine ; à la séance suivante, ne nommer que la couleur la plus difficile."
+          "Tâche 1 à deux (10 min) : « Qu’est-ce qu’Aylin veut vraiment ? » Tâche 2 individuellement (5 min).",
+          "Tâche 3 après le skill du rouge, à la fin de la séance (5 min). Ne pas ramasser.",
+          "La tâche 4 est la mission de la semaine ; à la séance suivante, ne nommer que la couleur la plus difficile."
         ],
         "hintergrund": "Le feu vient de programmes de résolution sociale de problèmes : le rouge signifie s’arrêter et se calmer, l’orange nommer le problème et le but, collecter des solutions et anticiper les conséquences, le vert essayer le meilleur plan (Goleman, 1995). Peser les possibilités et leurs conséquences est le cœur de l’approche de Shure (1992). Se calmer passe en premier, parce que, chez les adolescents, les impulsions s’imposent particulièrement facilement sous l’excitation et devant les pairs (Steinberg, 2014).",
         "quellen": [
@@ -1748,17 +1748,17 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
-          "text": "Si tu veux du soutien pour réparer une vraie situation, adresse-toi à la personne qui anime après la séance."
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Si tu veux du soutien pour réparer une vraie situation, adresse-toi à l’adulte qui anime après la séance."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes distinguent l’acte de la personne, reconnaissent les quatre parties de bonnes excuses, répondent aux questions de la réparation et planifient une réparation adaptée.",
         "ablauf": [
           "Entrée en matière (5 min) : lire l’histoire. « Qu’est-ce qui empêche Diogo de réparer ? »",
-          "Exercices 1 et 2 (10 min), puis fixer l’encadré à retenir au tableau.",
-          "Exercice 3 en deux moitiés (8 min) : l’adulte lit les questions, les deux côtés répondent à tour de rôle.",
-          "Exercice 4 individuellement (7 min) : pour Diogo ou une situation personnelle. Ne pas ramasser."
+          "Tâches 1 et 2 (10 min), puis fixer l’encadré à retenir au tableau.",
+          "Tâche 3 en deux moitiés (8 min) : l’adulte lit les questions, les deux côtés répondent à tour de rôle.",
+          "Tâche 4 individuellement (7 min) : pour Diogo ou une situation personnelle. Ne pas ramasser."
         ],
         "hintergrund": "Les approches restauratives comprennent le comportement inadéquat comme un dommage causé à des personnes et à des relations ; elles demandent ce dont les personnes concernées ont besoin et qui doit réparer quoi (Zehr, 2002). Les questions suivent les questions restauratives pour les deux côtés, telles que les décrit Wachtel (2016) : elles regardent vers l’avant plutôt que vers la faute et la punition. Un sentiment de culpabilité lié à l’acte va plutôt de pair avec l’empathie et la réparation, la honte portant sur toute la personne plutôt avec le repli, la défense et une nouvelle colère (Tangney & Dearing, 2002).",
         "quellen": [
@@ -1767,7 +1767,7 @@
           "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Seulement les exercices 2 et 4 ; écrire les quatre parties au tableau.",
+          "leichter": "Seulement les tâches 2 et 4 ; écrire les quatre parties au tableau.",
           "schwerer": "Travailler en complément la fiche de la Toolbox « Assumer ses actes »."
         },
         "impulse": [
@@ -2114,17 +2114,17 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
-          "text": "L’exercice 4 reste sur ta feuille. Personne n’a besoin de le lire à voix haute."
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "La tâche 4 reste sur ta feuille. Personne n’a besoin de le lire à voix haute."
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes distinguent catégorie, stéréotype, préjugé et discrimination, voient ce que fait une case et connaissent le test des cases et les conditions d’un contact utile.",
         "ablauf": [
-          "Entrée en matière (5 min) : expliquer la chaîne avec des préjugés sur les jeunes, puis exercice 1 seul.",
-          "Exercice 2 à deux (8 min) : « Que fait Rafael parce que tout le monde le voit ainsi ? » Puis le test des cases.",
-          "Exercice 3 après le jeu des groupes éclairs (5 min) : les quatre conditions, puis évaluer.",
-          "Exercice 4 seul, volontaire (3 min), sans lecture à voix haute."
+          "Entrée en matière (5 min) : expliquer la chaîne avec des préjugés sur les jeunes, puis tâche 1 seul.",
+          "Tâche 2 à deux (8 min) : « Que fait Rafael parce que tout le monde le voit ainsi ? » Puis le test des cases.",
+          "Tâche 3 après le jeu des groupes éclairs (5 min) : les quatre conditions, puis évaluer.",
+          "Tâche 4 seul, volontaire (3 min), sans lecture à voix haute."
         ],
         "hintergrund": "Allport (1954) a montré que les préjugés reposent sur un processus de pensée normal : on forme des catégories pour ordonner vite le monde. Le problème commence quand s’y ajoutent une image rigide de tous les membres, puis une dévalorisation, puis des actes. Même une répartition sans signification en deux groupes suffisait pour que des élèves de 14 et 15 ans favorisent leur groupe (Tajfel et al., 1971) – le jeu des groupes éclairs permet de le vivre. Qui est sans cesse rangé dans la même case finit souvent par agir comme on l’attend de lui. Selon l’hypothèse du contact d’Allport, la rencontre réduit les préjugés – confirmé par une méta-analyse de plus de 500 études, surtout dans les quatre conditions de la feuille (Pettigrew & Tropp, 2006).",
         "quellen": [
@@ -2133,8 +2133,8 @@
           "Pettigrew, T. F. & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. Journal of Personality and Social Psychology, 90(5), 751–783."
         ],
         "differenzierung": {
-          "leichter": "La chaîne avec un exemple du groupe ; exercice 3 à l’oral.",
-          "schwerer": "Exercice 3 : noter quelle condition manque et comment la créer."
+          "leichter": "La chaîne avec un exemple du groupe ; tâche 3 à l’oral.",
+          "schwerer": "Tâche 3 : noter quelle condition manque et comment la créer."
         },
         "impulse": [
           "Quelles idées toutes faites sur les jeunes sont justes – et pour qui ne le sont-elles pas ?",
@@ -2454,10 +2454,10 @@
       "lehrer": {
         "ziel": "Les jeunes reconnaissent avec Inês qu’une personne a plusieurs appartenances, créent leur portrait de langues, relient langues et émotions et trouvent une phrase apaisante.",
         "ablauf": [
-          "Entrée en matière (4 min) : lire l’histoire, exercice 1. « La question de la fin est-elle bien posée ? »",
-          "Exercice 2 (8 min) : les dialectes, la langue des signes, les langues de l’école et des vacances comptent, quelques mots suffisent.",
-          "Exercice 3 (3 min) ; qui veut montre une couleur à une personne de son choix.",
-          "Exercice 4 dans le skill à la fin de la séance (5 min). Ne pas afficher les portraits, ne pas les ramasser."
+          "Entrée en matière (4 min) : lire l’histoire, tâche 1. « La question de la fin est-elle bien posée ? »",
+          "Tâche 2 (8 min) : les dialectes, la langue des signes, les langues de l’école et des vacances comptent, quelques mots suffisent.",
+          "Tâche 3 (3 min) ; qui veut montre une couleur à une personne de son choix.",
+          "Tâche 4 dans le skill à la fin de la séance (5 min). Ne pas afficher les portraits, ne pas les ramasser."
         ],
         "hintergrund": "À l’adolescence, différentes appartenances – famille, langues, lieux, groupes d’amis – doivent s’assembler en une image de soi cohérente (Erikson, 1968). Le portrait de langues, issu de la didactique du plurilinguisme, rend visible tout le répertoire linguistique, y compris les langues qui comptent peu à l’école, et le relie aux émotions (Busch, 2012). Le manuel Repères du Conseil de l’Europe recommande de travailler la diversité par l’expérience et la réflexion (Conseil de l’Europe, 2012). Allport (1954) décrivait déjà que les préjugés s’affaiblissent quand on voit les gens comme des individus aux multiples facettes.",
         "quellen": [
@@ -2799,10 +2799,10 @@
       "lehrer": {
         "ziel": "Les jeunes reconnaissent la discrimination à trois critères, classent des exemples sur l’escalier de la dévalorisation et connaissent des façons de réagir et de chercher de l’aide.",
         "ablauf": [
-          "Exercice 1 après la ligne de positionnement (5 min) : discuter les cas limites – égal n’est pas toujours juste.",
-          "Exercice 2 après l’input sur l’escalier (5 min) : « Pourquoi vaut-il la peine de réagir en bas ? »",
-          "Encadré-conseil et exercice 3 après le théâtre-forum (8 min) : quelles façons avons-nous essayées ?",
-          "Exercice 4 et encadré d’aide (5 min) : inscrire une personne de confiance, montrer les services où trouver de l’aide."
+          "Tâche 1 après la ligne de positionnement (5 min) : discuter les cas limites – égal n’est pas toujours juste.",
+          "Tâche 2 après l’apport sur l’escalier (5 min) : « Pourquoi vaut-il la peine de réagir en bas ? »",
+          "Encadré-conseil et tâche 3 après le théâtre-forum (8 min) : quelles façons avons-nous essayées ?",
+          "Tâche 4 et encadré d’aide (5 min) : inscrire une personne de confiance, montrer les services où trouver de l’aide."
         ],
         "hintergrund": "La discrimination signifie que des personnes sont désavantagées, exclues ou rabaissées en raison d’un critère ; la Convention des Nations Unies relative aux droits de l’enfant en protège expressément chaque enfant (Nations Unies, 1989). Allport (1954) a décrit comment les préjugés peuvent s’intensifier, des propos dévalorisants à la violence, en passant par l’évitement et le désavantage. L’exclusion blesse le sentiment d’appartenance, l’estime de soi et le sentiment de contrôle (Williams, 2007). Les témoins n’interviennent souvent pas parce que la responsabilité se dilue (Latané & Darley, 1970) – des voies concrètes et sûres abaissent cet obstacle.",
         "quellen": [
@@ -2812,7 +2812,7 @@
           "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts."
         ],
         "differenzierung": {
-          "leichter": "Exercice 1 avec trois situations ; clarifier les critères à partir d’un exemple.",
+          "leichter": "Tâche 1 avec trois situations ; clarifier les critères à partir d’un exemple.",
           "schwerer": "Écrire un plan pour toute la classe : que peuvent faire dix témoins ?"
         },
         "impulse": [

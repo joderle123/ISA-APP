@@ -559,7 +559,7 @@
             {
               "art": "feld",
               "label": "Où je suis maintenant",
-              "beispiel": "classe au lycée, cours Skills le lundi",
+              "beispiel": "classe au lycée, cours de skills le lundi",
               "hoehe": 2.4
             }
           ],
@@ -1023,7 +1023,7 @@
           "Tâche 4 (2 min) : noter le premier bilan dans le téléphone, photographier le plan.",
           "Pas de plan de sécurité, ou envie de le compléter : rendez-vous individuel avant les vacances."
         ],
-        "hintergrund": "Après un changement, les personnes et routines qui portaient jusque-là manquent souvent ; les difficultés apparaissent d’abord dans le quotidien – sommeil, repli, absences – avant que quelqu’un les remarque. Le plan feu tricolore de la DBT relie des signes d’alerte précoces à des skills, pour agir tant que c’est encore orange (Rathus & Miller, 2015). Pour les crises aiguës, c’est le plan de sécurité de Stanley et Brown (2012) qui vaut ; au rouge, le plan y renvoie au lieu d’en créer un second. Les jeunes cherchant de l’aide auprès de personnes de confiance (Rickwood et al., 2005), l’orange comprend toujours une personne que l’on prévient.",
+        "hintergrund": "Après un changement, les personnes et routines qui portaient jusque-là manquent souvent ; les difficultés apparaissent d’abord dans le quotidien – sommeil, repli, absences – avant que quelqu’un les remarque. Le plan feu tricolore de la DBT relie des signaux d’alerte précoces à des skills, pour agir tant que c’est encore orange (Rathus & Miller, 2015). Pour les crises aiguës, c’est le plan de sécurité de Stanley et Brown (2012) qui vaut ; au rouge, le plan y renvoie au lieu d’en créer un second. Les jeunes cherchant de l’aide auprès de personnes de confiance (Rickwood et al., 2005), l’orange comprend toujours une personne que l’on prévient.",
         "quellen": [
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
           "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
@@ -1292,7 +1292,7 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes reviennent sur leur chemin de trois ans de cours Skills, nomment moments, skills et changements et transmettent leur expérience sous forme de conseil à un nouveau groupe.",
+        "ziel": "Les jeunes reviennent sur leur chemin de trois ans de cours de skills, nomment moments, skills et changements et transmettent leur expérience sous forme de conseil à un nouveau groupe.",
         "ablauf": [
           "Avant : étaler le chemin au sol, attribuer les souvenirs aux trois années, préparer la boîte à fente.",
           "Parcourir le chemin (8 min) : en silence, musique douce, à son rythme.",
@@ -1991,7 +1991,7 @@
           "Avant : clarifier l’entreprise, la date, les règles de sécurité, les autorisations et l’accompagnement.",
           "Séance 1 (15 min) : recueillir et trier les questions sur des post-it, puis tâches 1 et 2.",
           "Séance 1 (5 min) : lire l’encadré, tâche 3 avec lieu de rendez-vous, trajet et tenue.",
-          "Pendant la visite : tâche 4 en mots-clés sur le porte-bloc, les questions de la tâche 2 pendant l’interview.",
+          "Pendant la visite : tâche 4 en mots-clés sur la planchette à pince, les questions de la tâche 2 pendant l’interview.",
           "Ensuite (10 min) : tâche 5 seul, puis un tour de parole : qu’est-ce qui a surpris, quels skills faut-il là-bas ?"
         ],
         "hintergrund": "Dans la phase d’exploration professionnelle, les jeunes confrontent leurs représentations à la réalité (Super, 1980). L’adéquation entre intérêts et environnement de travail s’évalue mieux sur place que sur écran (Holland, 1997). Observer des professionnels au travail, c’est apprendre par modèle ; poser soi-même des questions et obtenir des réponses donne une expérience d’efficacité personnelle (Bandura, 1977). Choisir soi-même rôles et questions augmente l’implication (Deci & Ryan, 2000).",
@@ -2010,11 +2010,11 @@
           "Quels skills du cours sert-on là-bas chaque jour ?"
         ],
         "tipps": [
-          "Prendre des porte-blocs – debout, on écrit mal autrement.",
+          "Prendre des planchettes à pince – debout, on écrit mal autrement.",
           "Une carte de remerciement avec une phrase de chacun fait plaisir aux entreprises."
         ],
         "achtung": "Aucune information sur des jeunes à l’entreprise ; photos sans personnes. Si la visite fait peur : rôle sans prise de parole. Remarques dévalorisantes : cadrer calmement, en reparler.",
-        "material": "Porte-blocs, stylos, post-it, carte"
+        "material": "Planchettes à pince, stylos, post-it, carte"
       }
     }
   },
@@ -2842,7 +2842,7 @@
         "ziel": "Les jeunes préparent une position tirée au sort avec affirmation, raison et exemple, évaluent en tant que jury selon des critères, donnent un retour avec compliment et conseil et décident à l’avance comment réagir à une défaite.",
         "ablauf": [
           "Avant : vérifier les sujets, écrire au tableau le plan du tournoi selon la taille du groupe, copier la page 2 une fois par débat.",
-          "Input (10 min) : expliquer le déroulement à l’aide de l’encadré ; tâche 1 individuelle – le plan anti-frustration se fait avant le tournoi.",
+          "Apport (10 min) : expliquer le déroulement à l’aide de l’encadré ; tâche 1 individuelle – le plan anti-frustration se fait avant le tournoi.",
           "Préparation (20 min) : tirer les camps au sort, tâche 2 en équipe, répéter l’ouverture une fois à voix basse.",
           "Tournoi (30 min) : environ dix minutes par débat avec ligne d’opinion ; le jury utilise les tâches 3 et 4.",
           "Ensuite (5 min) : remise des prix, puis tâche 5 et mise en pratique du plan anti-frustration."

@@ -203,10 +203,12 @@ export interface ProfilThema { key: string; art: 'vorfall' | 'notiz' | 'beobacht
 
 export interface ProfilVorschlaege {
   zugang?: { lesen?: 0 | 1 | 2 | 3; schreiben?: 0 | 1 | 2 | 3; tempo?: 'ruhig' }
-  hilft?: ('stundenleiste' | 'bewegungspausen' | 'reizarm' | 'bildplan')[]
+  hilft?: ('stundenleiste' | 'bewegungspausen' | 'reizarm' | 'bildplan' | 'woertlich')[]
   vorsicht?: ('familie' | 'trauer' | 'koerper' | 'reiz' | 'trauma')[]
   interessen?: string[]
   woerter?: ('lb' | 'pt')[]
+  /** Sprache des Blatts, wenn die andere laut Steckbrief deutlich stärker ist */
+  blatt?: Sprache
 }
 
 export interface Profil {
@@ -236,7 +238,7 @@ export interface Profil {
   wissen?: { gruppe: string; text: string; quelle: string; datum?: string }[]
   rechte: { speichern: boolean; rueckmelden: boolean }
   /** „Was dem Kind hilft“ (P11) – nur die Fachkraft setzt es */
-  hilft?: ('stundenleiste' | 'bewegungspausen' | 'reizarm' | 'bildplan')[]
+  hilft?: ('stundenleiste' | 'bewegungspausen' | 'reizarm' | 'bildplan' | 'woertlich')[]
   /** offenes heikles Thema – nur die Art, nie Text oder Themenschlüssel (E-M2) */
   achtung?: ('krise' | 'kinderschutz')[]
   /** false = „Passgenau lernt bei diesem Kind nicht“ (E-M12): keine Kind-Ereignisse, keine Kind-Vorlieben */

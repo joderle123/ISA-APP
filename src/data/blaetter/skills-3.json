@@ -646,7 +646,7 @@
           "Quelle émotion voit-on rarement chez les autres ?"
         ],
         "tipps": [
-          "La personne qui anime joue elle-même le premier mime et exagère sans complexe.",
+          "L’adulte qui anime joue lui-même le premier mime et exagère sans complexe.",
           "Qui ne veut pas jouer seul devant le groupe joue à deux."
         ],
         "achtung": "Si une situation du memory évoque un vécu douloureux : reconnaître, poursuivre le jeu, proposer plus tard un entretien individuel ; informer au besoin la direction (responsable).",
@@ -905,7 +905,7 @@
           "Le film entier peut être projeté à la séance joker « Vice-versa »."
         ],
         "achtung": "Déménagement, mal du pays et disputes avec les parents peuvent toucher des jeunes qui ne vivent pas avec leur famille ou qui vivent une perte. Y penser à l’avance et rester disponible après le film.",
-        "material": "Extraits de films, projecteur, haut-parleurs, planchettes"
+        "material": "Extraits de films, projecteur, haut-parleurs, planchettes à pince"
       }
     }
   },
@@ -1140,7 +1140,7 @@
             },
             {
               "art": "aufgabe",
-              "text": "Qu’est-ce qui vient chez toi en premier ? C’est ton signal d’alarme.",
+              "text": "Qu’est-ce qui vient chez toi en premier ? C’est ton signal d’alerte.",
               "symbole": [
                 "schreiben"
               ]
@@ -1157,7 +1157,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois, fais attention : quand ton signal d’alarme s’est-il manifesté – et qu’as-tu fait alors ?",
+          "text": "D’ici la prochaine fois, fais attention : quand ton signal d’alerte s’est-il manifesté – et qu’as-tu fait alors ?",
           "symbole": [
             "nachdenken",
             "schreiben"
@@ -1175,9 +1175,9 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes perçoivent où ils ressentent colère, peur, joie et tristesse dans le corps et nomment leur premier signal d’alarme pour la colère et la peur – base du plan d’urgence du module 3.",
+        "ziel": "Les jeunes perçoivent où ils ressentent colère, peur, joie et tristesse dans le corps et nomment leur premier signal d’alerte pour la colère et la peur – base du plan d’urgence du module 3.",
         "ablauf": [
-          "Entrée (4 min) : « À quoi remarques-tu que tu te mets en colère – avant même de parler ? » Noter les réponses autour d’un contour de corps au tableau.",
+          "Entrée en matière (4 min) : « À quoi remarques-tu que tu te mets en colère – avant même de parler ? » Noter les réponses autour d’un contour de corps au tableau.",
           "Tâche 1 (8 min) : couleurs comme sur la roue des émotions ; laisser travailler au calme.",
           "Comparer (4 min) : qui veut pose sa feuille au milieu. Qu’avons-nous en commun, en quoi diffère-t-on ?",
           "Tâches 2 et 3 (4 min) ; la tâche 4 est une mission d’observation jusqu’à la séance suivante."
@@ -1196,7 +1196,7 @@
           "À quoi les autres voient-ils que tu t’énerves ?"
         ],
         "tipps": [
-          "Garder les feuilles : les signaux d’alarme servent à la séance 11 et au plan feu tricolore (séance 15).",
+          "Garder les feuilles : les signaux d’alerte servent à la séance 11 et au plan feu tricolore (séance 15).",
           "Un contour de corps sur papier kraft, où chacun colle des gommettes, montre les points communs sans mots."
         ],
         "achtung": "Porter l’attention sur le corps peut gêner ; personne n’est obligé de montrer sa feuille. En cas d’indices de blessures ou de violence : entretien individuel, informer la direction (responsable), agir selon le concept de protection.",

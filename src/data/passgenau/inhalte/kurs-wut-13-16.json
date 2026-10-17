@@ -5715,7 +5715,7 @@
     },
     "ort": "raum",
     "titel": "Ärger sagen: Der Comic-Streifen",
-    "text": "Die Kurve hat vier Ausstiege, heute kommt der fünfte dazu: sagen, was los ist, ohne dass es eskaliert. Die Fachkraft zeigt den 4-Schritte-Satz (vereinfacht nach DEAR MAN): Fakt, Gefühl, Bitte, Nutzen. Auf einem Papier liegen zwei Comic-Streifen: Im ersten sagt Ben zu Jana „Du spielst mich nie an. Du bist so egoistisch.“, im zweiten „Dreimal kein Ball. Das ärgert mich. Spiel mich bitte öfter an.“, und der oder die Jugendliche zeichnet in beide Janas Sprechblase, wie sie wahrscheinlich reagiert. Dann Rollentausch: Er oder sie berät Ben, wählt von drei Karten eine ausgedachte Situation (Warten in der Reihe, ein Spiel läuft schlecht, jemand nimmt den Stift) und gestaltet einen dritten Streifen mit vier Feldern, je ein Teil von Bens Satz, dazu wer, wann und wo oder in welchem Chat. Die Fachkraft sagt den Satz als Ben, er oder sie prüft ihn mit der Checkliste vor dem Senden und schätzt Bens Zahl auf der Kurve vor und nach dem Satz. Den Plan trägt er oder sie bei „Plane deine Situation“ auf dem Zettel ein, für Ben oder, wenn er oder sie will, für jemanden wie sich selbst. Du sagst, was du brauchst, nicht, was der andere falsch macht.",
+    "text": "Die Kurve hat vier Ausstiege, heute kommt der fünfte dazu: sagen, was los ist, ohne dass es eskaliert. Die Fachkraft zeigt den 4-Schritte-Satz (vereinfacht nach DEAR MAN): Fakt, Gefühl, Bitte, Nutzen. Auf einem Papier liegen zwei Comic-Streifen: Im ersten sagt Ben zu Jana „Du spielst mich nie an. Du bist so egoistisch.“, im zweiten „Dreimal kein Ball. Das ärgert mich. Spiel mich bitte öfter an.“, und der oder die Jugendliche zeichnet in beide Janas Sprechblase, wie sie wahrscheinlich reagiert. Dann Rollentausch: Er oder sie berät Ben, wählt von drei Karten eine ausgedachte Situation (Warten in der Reihe, ein Spiel läuft schlecht, jemand nimmt den Stift) und gestaltet einen dritten Streifen mit vier Feldern, je ein Teil von Bens Satz, dazu wer, wann und wo oder in welchem Chat. Die Fachkraft sagt den Satz als Ben, er oder sie prüft ihn mit der Checkliste vor dem Senden und schätzt Bens Zahl auf der Kurve vor und nach dem Satz. Den Plan für Ben trägt er oder sie auf dem Blatt ein. Du sagst, was du brauchst, nicht, was der andere falsch macht.",
     "sagen": [
       "Heute zeichnen wir einen Comic zu Ben und Jana und bauen dann Bens Satz in vier Teilen. Du entscheidest, welche Situation.",
       "Hier sind zwei Sätze von Ben. Zeichne in die Sprechblase, wie Jana wahrscheinlich reagiert.",
@@ -5746,7 +5746,7 @@
     },
     "fr": {
       "titel": "Dire sa colère : la bande dessinée",
-      "text": "La courbe a déjà quatre issues ; aujourd’hui s’ajoute la cinquième : dire ce qui ne va pas sans que ça dégénère. L’adulte présente la phrase en quatre étapes (version simplifiée de DEAR MAN) : fait, émotion, demande, bénéfice. Deux bandes dessinées sont posées sur une feuille : dans la première, Ben dit à Jana « Tu ne me passes jamais la balle. Tu es tellement égoïste. », dans la seconde « Trois fois sans balle. Ça m’énerve. Passe-moi plus souvent la balle. », et le ou la jeune dessine dans chacune la bulle de Jana, comme elle réagit probablement. Puis on échange les rôles : il ou elle conseille Ben, choisit sur trois cartes une situation inventée (faire la file, un jeu qui se passe mal, quelqu’un prend le stylo) et crée une troisième bande à quatre cases, une partie de la phrase de Ben dans chacune, avec qui, quand et où ou dans quel chat. L’adulte dit la phrase dans le rôle de Ben, le ou la jeune la vérifie avec la liste de contrôle avant d’envoyer et estime le chiffre de Ben sur la courbe avant et après la phrase. Il ou elle note le plan sur la fiche sous « Prépare ta situation », pour Ben ou, s’il ou elle le souhaite, pour quelqu’un comme lui ou elle. Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal.",
+      "text": "La courbe a déjà quatre issues ; aujourd’hui s’ajoute la cinquième : dire ce qui ne va pas sans que ça dégénère. L’adulte présente la phrase en quatre étapes (version simplifiée de DEAR MAN) : fait, émotion, demande, bénéfice. Deux bandes dessinées sont posées sur une feuille : dans la première, Ben dit à Jana « Tu ne me passes jamais la balle. Tu es tellement égoïste. », dans la seconde « Trois fois sans balle. Ça m’énerve. Passe-moi plus souvent la balle. », et le ou la jeune dessine dans chacune la bulle de Jana, comme elle réagit probablement. Puis on échange les rôles : il ou elle conseille Ben, choisit sur trois cartes une situation inventée (faire la file, un jeu qui se passe mal, quelqu’un prend le stylo) et crée une troisième bande à quatre cases, une partie de la phrase de Ben dans chacune, avec qui, quand et où ou dans quel chat. L’adulte dit la phrase dans le rôle de Ben, le ou la jeune la vérifie avec la liste de contrôle avant d’envoyer et estime le chiffre de Ben sur la courbe avant et après la phrase. Il ou elle note le plan de Ben sur la fiche. Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal.",
       "sagen": [
         "Aujourd’hui, on dessine une bande dessinée sur Ben et Jana, puis on construit la phrase de Ben en quatre parties. Tu décides de la situation.",
         "Voici deux phrases de Ben. Dessine dans la bulle comment Jana réagit probablement.",
@@ -5754,6 +5754,422 @@
         "Tu dis ce dont tu as besoin, pas ce que l’autre fait de mal. Tu peux dire stop à tout moment."
       ],
       "wennEsKippt": "Si le ou la jeune ne veut pas dessiner, il ou elle dit la réaction de Jana en une phrase et l’adulte la note. Si quatre cases, c’est trop, les deux premières (fait et émotion) suffisent. Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Ben et Jana ; une bande avec une phrase suffit."
+    },
+    "uebungsblatt": {
+      "titel": {
+        "de": "Ärger sagen ohne Eskalation – auch online",
+        "fr": "Dire sa colère sans escalade – aussi en ligne"
+      },
+      "de": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Die Ärger-Kurve",
+              "punkte": [
+                "Anstieg – Gipfel – Abstieg: so verläuft Ärger",
+                "Ausstiege 1–4: Merken · Früh stoppen · Prüfen · Auszeit",
+                "Heute, Ausstieg 5: Sagen – fair, auch online"
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Im Abstieg kann man wieder ruhig sprechen – dann lässt sich Ärger fair sagen."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:berg",
+              "groesse": "m",
+              "text": "Anstieg, Gipfel, Abstieg",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zwei Sätze von Ben, zwei Wirkungen: Lies beide. Was passiert wahrscheinlich als Nächstes?"
+        },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:wuetend",
+                "figur:jana:neutral"
+              ],
+              "blase": "sprechen",
+              "sprecher": 0,
+              "text": "Du spielst mich nie an. Du bist so egoistisch.",
+              "untertitel": "Satz 1"
+            },
+            {
+              "figuren": [
+                "figur:ben:ruhig",
+                "figur:jana:neutral"
+              ],
+              "blase": "sprechen",
+              "sprecher": 0,
+              "text": "Dreimal kein Ball. Das ärgert mich. Spiel mich bitte öfter an.",
+              "untertitel": "Satz 2"
+            }
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Nach welchem Satz hört Jana eher zu?",
+          "items": [
+            "Satz 1",
+            "Satz 2"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Der 4-Schritte-Satz",
+          "punkte": [
+            "Fakt: Was ist passiert? (nur, was alle sehen können)",
+            "Gefühl: Das ärgert mich, weil …",
+            "Bitte: Ich möchte, dass … / Bitte …",
+            "Nutzen: Dann klappt … besser."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Du bist Bens Beraterin oder Berater: Such eine Situation aus, kreuz an und schreib Bens Satz in Stichworten."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Bens Situation",
+          "spalten": 1,
+          "items": [
+            "Ben muss lange in der Reihe warten.",
+            "Bens Spiel läuft schlecht.",
+            "Jemand nimmt Bens Stift."
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Mit wem spricht Ben?",
+          "spalten": 2,
+          "items": [
+            "jemand aus der Klasse",
+            "jemand aus Training oder Verein",
+            "eine Freundin oder ein Freund",
+            "eine Person im Chat"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Wann und wo sagt Ben es?",
+          "spalten": 2,
+          "items": [
+            "in der Pause",
+            "nach Training oder Unterricht",
+            "nur zu zweit, an einem ruhigen Ort",
+            "im Chat – erst als Entwurf"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Bens Satz (Fakt – Gefühl – Bitte – Nutzen):"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Online ist ein Satz schneller gesendet als gemeint. Hak ab, was Ben vor dem Senden prüft."
+        },
+        {
+          "art": "abhaken",
+          "titel": "Bevor Ben auf Senden drückt:",
+          "items": [
+            "Ben hat den Text zehn Minuten liegen lassen.",
+            "Er enthält Fakten und Ich-Sätze, keine Vorwürfe.",
+            "Ben würde ihn auch sagen, wenn die Person vor ihm stünde.",
+            "Er wäre okay, wenn ihn auch andere lesen würden."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bens Zahl auf der Kurve: Wie hoch ist sie vor dem Satz – und wie hoch nach dem Satz?"
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Vor dem Satz",
+            "Nach dem Satz"
+          ],
+          "optionen": [
+            "niedrig",
+            "mittel",
+            "hoch"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das Modell wächst: Das ist schon da, das ist heute neu."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Anstieg",
+              "text": "Merken · Früh stoppen · Prüfen"
+            },
+            {
+              "titel": "Gipfel",
+              "text": "Auszeit"
+            },
+            {
+              "titel": "Abstieg",
+              "text": "Sagen (heute neu)",
+              "heute": true
+            },
+            {
+              "titel": "Jederzeit",
+              "text": "?"
+            }
+          ],
+          "linien": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bis zum nächsten Mal: Achte bei einer Figur in einem Buch oder Film darauf, ob sie sagt, was los ist, ohne zu beleidigen. Oder übe Bens Satz in Gedanken."
+        },
+        {
+          "art": "zielkarte",
+          "titel": "Bis zum nächsten Mal",
+          "text": "Ich achte auf einen fairen Satz oder übe Bens Satz in Gedanken.",
+          "kaestchen": 2,
+          "tage": [
+            "gefunden",
+            "geübt"
+          ]
+        }
+      ],
+      "fr": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "La courbe de la colère",
+              "punkte": [
+                "Montée – sommet – descente : voilà comment la colère évolue",
+                "Issues 1–4 : Repérer · Stopper tôt · Vérifier · Prendre du recul",
+                "Aujourd’hui, issue 5 : Dire – sans escalade, aussi en ligne"
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Dans la descente, on peut de nouveau parler calmement – c’est le bon moment pour dire les choses."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "motiv:berg",
+              "groesse": "m",
+              "text": "Montée, sommet, descente",
+              "ausrichtung": "mitte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deux phrases de Ben, deux effets : lis-les. Que se passe-t-il probablement ensuite ?"
+        },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:wuetend",
+                "figur:jana:neutral"
+              ],
+              "blase": "sprechen",
+              "sprecher": 0,
+              "text": "Tu ne me passes jamais la balle. Tu es tellement égoïste.",
+              "untertitel": "Phrase 1"
+            },
+            {
+              "figuren": [
+                "figur:ben:ruhig",
+                "figur:jana:neutral"
+              ],
+              "blase": "sprechen",
+              "sprecher": 0,
+              "text": "Trois fois sans balle. Ça m’énerve. Passe-moi plus souvent la balle.",
+              "untertitel": "Phrase 2"
+            }
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Après quelle phrase Jana écoute-t-elle plus volontiers ?",
+          "items": [
+            "Phrase 1",
+            "Phrase 2"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "La phrase en 4 étapes",
+          "punkte": [
+            "Fait : que s’est-il passé ? (seulement ce qu’on peut constater de l’extérieur)",
+            "Émotion : ça m’énerve parce que …",
+            "Demande : j’aimerais que … / s’il te plaît …",
+            "Bénéfice : comme ça, … se passera mieux."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Conseille Ben : choisis une situation, coche et note sa phrase en mots-clés."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "La situation de Ben",
+          "spalten": 1,
+          "items": [
+            "Ben doit attendre longtemps dans la file.",
+            "Le jeu de Ben se passe mal.",
+            "Quelqu’un prend le stylo de Ben."
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "À qui Ben parle-t-il ?",
+          "spalten": 2,
+          "items": [
+            "quelqu’un de la classe",
+            "quelqu’un du club ou de l’entraînement",
+            "un ami ou une amie",
+            "une personne dans le chat"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Quand et où Ben le dit-il ?",
+          "spalten": 2,
+          "items": [
+            "pendant la récré",
+            "après l’entraînement ou le cours",
+            "à deux, dans un endroit calme",
+            "dans le chat – d’abord en brouillon"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "La phrase de Ben (fait – émotion – demande – bénéfice) :"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "En ligne, on envoie plus vite qu’on ne pense. Coche ce que Ben vérifie avant d’envoyer."
+        },
+        {
+          "art": "abhaken",
+          "titel": "Avant que Ben appuie sur Envoyer :",
+          "items": [
+            "Ben a laissé le texte reposer dix minutes.",
+            "Il contient des faits et des messages-je, pas de reproches.",
+            "Ben le dirait aussi si la personne était devant lui.",
+            "Il serait acceptable si d’autres personnes le lisaient."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le chiffre de Ben sur la courbe : à quelle hauteur est-il avant la phrase – et après la phrase ?"
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Avant la phrase",
+            "Après la phrase"
+          ],
+          "optionen": [
+            "bas",
+            "moyen",
+            "haut"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le modèle grandit : voilà ce qui est déjà là, et ce qui est nouveau aujourd’hui."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Montée",
+              "text": "Repérer · Stopper tôt · Vérifier"
+            },
+            {
+              "titel": "Sommet",
+              "text": "Prendre du recul"
+            },
+            {
+              "titel": "Descente",
+              "text": "Dire (aujourd’hui)",
+              "heute": true
+            },
+            {
+              "titel": "À tout moment",
+              "text": "?"
+            }
+          ],
+          "linien": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "D’ici la prochaine fois : dans un livre ou un film, repère si un personnage dit ce qui ne va pas sans insulter. Ou entraîne la phrase de Ben dans ta tête."
+        },
+        {
+          "art": "zielkarte",
+          "titel": "D’ici la prochaine fois",
+          "text": "Je repère une phrase juste ou j’entraîne celle de Ben.",
+          "kaestchen": 2,
+          "tage": [
+            "trouvé",
+            "entraîné"
+          ]
+        }
+      ],
+      "anleitung": {
+        "de": {
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die beiden Sätze von Ben, der oder die Jugendliche kreuzt an, nach welchem Jana eher zuhört. In Aufgabe 2 berät er oder sie Ben: Situation, mit wem und wann und wo ankreuzen und Bens Satz in Stichworten schreiben (Fakt – Gefühl – Bitte – Nutzen). Dann sagt die Fachkraft den Satz als Ben, und in Aufgabe 3 prüft der oder die Jugendliche ihn mit der Checkliste vor dem Senden. In Aufgabe 4 schätzt er oder sie Bens Zahl vor und nach dem Satz ein. Das Modell zeigt, was heute neu ist; der Auftrag ist eine Zielkarte. Es geht nur um Ben, Jana und ausgedachte Situationen.",
+          "sagen": [
+            "Wie hört sich Bens Satz an, wenn er laut gesagt wird?",
+            "Welche Zahl hat Ben nach dem Satz – höher oder tiefer als vorher?"
+          ],
+          "wennEsKippt": "Fällt keine Situation ein, wählt die Fachkraft eine der drei Karten. Drei Stichworte genügen; sie dürfen auch gesagt statt geschrieben werden. Mag der oder die Jugendliche nicht beraten, liest die Fachkraft Bens Satz vor, und er oder sie zeigt auf die Teile. Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Ben und Jana zurück. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
+        },
+        "fr": {
+          "text": "Exercice 1 ensemble : l’adulte lit les deux phrases de Ben, le ou la jeune coche après laquelle Jana écoute plus volontiers. À l’exercice 2, il ou elle conseille Ben : cocher la situation, avec qui, quand et où, et noter la phrase de Ben en mots-clés (fait – émotion – demande – bénéfice). Ensuite l’adulte dit la phrase dans le rôle de Ben, et à l’exercice 3 le ou la jeune la vérifie avec la liste de contrôle avant d’envoyer. À l’exercice 4, il ou elle estime le chiffre de Ben avant et après la phrase. Le modèle montre ce qui est nouveau aujourd’hui ; la mission est une carte-objectif. Il n’est question que de Ben, de Jana et de situations inventées.",
+          "sagen": [
+            "Comment sonne la phrase de Ben quand on la dit à voix haute ?",
+            "Quel chiffre Ben a-t-il après la phrase – plus haut ou plus bas qu’avant ?"
+          ],
+          "wennEsKippt": "Si aucune situation ne vient, l’adulte en choisit une des trois cartes. Trois mots-clés suffisent ; ils peuvent aussi être dits au lieu d’être écrits. Si le ou la jeune ne veut pas conseiller, l’adulte lit la phrase de Ben et le ou la jeune montre les parties. Si le ou la jeune raconte de lui-même ou d’elle-même quelque chose de lourd, l’adulte dit calmement : « Merci de me le dire. », ne pose pas de questions et revient à Ben et Jana. Si le temps manque, les exercices 1 et 2 suffisent."
+        }
+      }
     }
   },
   {

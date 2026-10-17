@@ -274,6 +274,7 @@ export function Wissen() {
               ['bewegungspausen', 'Bewegungspausen', 'nach jedem Block über 8 Min. eine kurze Pause'],
               ['reizarm', 'leise/reizarm', 'keine lauten Spiele, ruhiger Raum'],
               ['bildplan', 'Bildplan', 'Plan mit Piktogrammen für das Kind'],
+              ['woertlich', 'klar und wörtlich', 'kurze Sätze, eine Anweisung nach der anderen, keine Redewendungen'],
             ] as const
           ).map(([key, name, text]) => {
             const an = (p.hilft ?? []).includes(key)

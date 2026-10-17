@@ -346,7 +346,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
+          "titel": "C’est toi qui décides de ce que tu partages.",
           "text": "Cette fiche t’appartient. Si ton baromètre reste des semaines sur « trop », parles-en à une personne de confiance, au SePAS ou, anonymement et gratuitement, au Kanner- a Jugendtelefon : 116 111."
         }
       ],
@@ -366,7 +366,7 @@
           "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895."
         ],
         "differenzierung": {
-          "leichter": "Ne remplir que deux niveaux du baromètre : bon stress et trop. La balance à l’oral avec la personne qui anime.",
+          "leichter": "Ne remplir que deux niveaux du baromètre : bon stress et trop. La balance à l’oral avec l’adulte qui anime.",
           "schwerer": "Noter pour chaque exigence si elle peut changer, et planifier une première étape pour l’une d’elles."
         },
         "impulse": [
@@ -634,7 +634,7 @@
         {
           "art": "aufgabe",
           "text": "Apprends chaque liste pendant trois minutes avec ta méthode. Ensuite, tu rends la liste.",
-          "hinweis": "La personne qui anime annonce le temps. Pas de photo, ne rien emporter.",
+          "hinweis": "L’adulte qui anime annonce le temps. Pas de photo, ne rien emporter.",
           "symbole": [
             "lesen"
           ]
@@ -824,7 +824,7 @@
           "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255."
         ],
         "differenzierung": {
-          "leichter": "N’apprendre et ne tester que les six premiers mots de chaque liste ; la personne qui anime prononce les mots une fois.",
+          "leichter": "N’apprendre et ne tester que les six premiers mots de chaque liste ; l’adulte qui anime prononce les mots une fois.",
           "schwerer": "Au post-test, inverser en plus le sens : du français vers le swahili."
         },
         "impulse": [
@@ -1311,7 +1311,7 @@
           "beispiel": [
             "p. ex.",
             "Lu, 17 h",
-            "Vocabulaire, unité 3",
+            "Vocabulaire, leçon 3",
             "Cahier fermé, écrire 20 mots, puis comparer"
           ]
         }
@@ -1339,7 +1339,7 @@
         ],
         "tipps": [
           "Qui veut comparer les résultats individuels devient responsable de l’expérience et calcule les totaux.",
-          "Pour une planification plus longue, la fiche « Apprendre malin » de la boîte à outils convient."
+          "Pour une planification plus longue, la fiche « Apprendre malin » de la Toolbox convient."
         ],
         "achtung": "Ne pas lire ni comparer les résultats individuels. Ne pas aborder devant le groupe les difficultés de lecture et d’écriture ; prononcer les mots, clarifier l’aide en entretien individuel.",
         "material": "Cartes de mots, enveloppe, minuteur, documents pour un test"
@@ -1715,7 +1715,7 @@
         ],
         "differenzierung": {
           "leichter": "Ne faire par écrit que les tâches 2 et 3 ; le cercle à l’oral au tableau.",
-          "schwerer": "Avec la fiche « Se concentrer malgré les distractions » de la boîte à outils, planifier et évaluer une semaine de révision entière en blocs de travail."
+          "schwerer": "Avec la fiche « Se concentrer malgré les distractions » de la Toolbox, planifier et évaluer une semaine de révision entière en blocs de travail."
         },
         "impulse": [
           "Quel sentiment arrive chez toi juste avant de commencer ?",

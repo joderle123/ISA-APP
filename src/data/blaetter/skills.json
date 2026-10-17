@@ -207,7 +207,7 @@
         {
           "art": "vertrag",
           "titel": "Nous nous y tenons",
-          "text": "Nous avons établi ces règles ensemble et nous nous les rappelons calmement. Ce qui est raconté ici reste ici – sauf si quelqu’un est en danger : alors la personne qui anime le groupe cherche de l’aide et dit avant ce qu’elle fait. Le ___, nous vérifierons si les règles conviennent encore.",
+          "text": "Nous avons établi ces règles ensemble et nous nous les rappelons calmement. Ce qui est raconté ici reste ici – sauf si quelqu’un est en danger : alors l’adulte qui anime le groupe cherche de l’aide et dit avant ce qu’elle fait. Le ___, nous vérifierons si les règles conviennent encore.",
           "unterschriften": [
             "",
             "",
@@ -215,7 +215,7 @@
             "",
             "",
             "",
-            "Animation"
+            "Adulte"
           ]
         }
       ],
@@ -225,7 +225,7 @@
           "Impulsion (3 min) : « De quoi avez-vous besoin pour vous sentir bien ici et pouvoir être honnêtes ? » Faire noter les réponses dans les deux cadres.",
           "Recueillir (7 min) : regrouper ce qui se ressemble. Prendre au sérieux les réponses pour rire et demander ce qui se cache derrière.",
           "Formuler (7 min) : écrire trois à cinq règles avec leur justification dans le tableau. Compléter les règles essentielles qui manquent : confidentialité, on a le droit de passer son tour, rire avec et non de l’autre, téléphones rangés, règle des pauses.",
-          "Contrat (3 min) : lire à voix haute la phrase sur la confidentialité et répondre honnêtement aux questions. Tout le monde signe, y compris la personne qui anime le groupe ; accrocher le contrat bien en vue."
+          "Contrat (3 min) : lire à voix haute la phrase sur la confidentialité et répondre honnêtement aux questions. Tout le monde signe, y compris l’adulte qui anime le groupe ; accrocher le contrat bien en vue."
         ],
         "hintergrund": "Les règles élaborées en commun sont plus souvent respectées que les règles imposées, car elles prennent au sérieux le besoin de participation et d’appartenance (Deci & Ryan, 2000). Pour des groupes de jeunes en situation difficile, un cadre clair et prévisible est en même temps une condition de protection : ce n’est que lorsque le groupe est sûr que les sujets personnels peuvent y avoir leur place. Les programmes qui développent les compétences socio-émotionnelles sont particulièrement efficaces lorsque les objectifs et les règles sont énoncés ouvertement (Durlak et al., 2011).",
         "quellen": [
@@ -785,15 +785,15 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "titel": "C’est toi qui décides ce que tu partages.",
-          "text": "Lors du tour d’humeur, il suffit de montrer un mot. Le « parce que » est facultatif."
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Lors du check-in, il suffit de montrer un mot. Le « parce que » est facultatif."
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes découvrent un outil pour nommer leurs émotions plus précisément. La roue est la base du tour d’humeur qui ouvre chaque séance.",
+        "ziel": "Les jeunes découvrent un outil pour nommer leurs émotions plus précisément. La roue est la base du check-in qui ouvre chaque séance.",
         "ablauf": [
           "Séance 1 (5 min) : poser la roue en format A3 au milieu – six émotions de base au centre, des mots plus précis autour. Question : quelle est la différence entre être agacé et être blessé ?",
-          "Chaque séance (5–10 min) : chacun montre un mot sur la roue et dit une phrase à ce sujet, à tour de rôle. La personne qui anime commence.",
+          "Chaque séance (5–10 min) : chacun montre un mot sur la roue et dit une phrase à ce sujet, à tour de rôle. L’adulte qui anime commence.",
           "Feuille individuelle : entourer des mots, compléter les débuts de phrases. La feuille n’est pas ramassée.",
           "À partir de la séance 11, la tension de 0 à 100 s’y ajoute."
         ],
@@ -804,7 +804,7 @@
           "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
         ],
         "differenzierung": {
-          "leichter": "N’utiliser que les six émotions de base au centre ; la personne qui anime lit les mots extérieurs à voix haute si besoin.",
+          "leichter": "N’utiliser que les six émotions de base au centre ; l’adulte qui anime lit les mots extérieurs à voix haute si besoin.",
           "schwerer": "Le groupe cherche des mots qui manquent sur la roue – par exemple stressé, gêné, soulagé – et les rattache à une émotion de base."
         },
         "impulse": [
