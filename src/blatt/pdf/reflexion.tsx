@@ -52,7 +52,7 @@ export function Formfelder({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'form
   const zellen = Array.from({ length: n }, (_, i) => items[i] ?? '')
   const reihen: string[][] = []
   for (let i = 0; i < zellen.length; i += sp) reihen.push(zellen.slice(i, i + sp))
-  const ton = (i: number) => (b.form === 'wolke' ? aufhellen(c.p.mittel, 0.9) : b.form === 'herz' ? '#FBE3EC' : aufhellen(SEKTOR_TOENE[i % SEKTOR_TOENE.length], 0.25))
+  const ton = (i: number) => (b.form === 'wolke' ? aufhellen(c.p.mittel, 0.38) : b.form === 'herz' ? '#FBE3EC' : aufhellen(SEKTOR_TOENE[i % SEKTOR_TOENE.length], 0.25))
   const rand = b.form === 'band' ? aufhellen(c.p.mittel, 0.35) : c.p.mittel
   // Schreiblinien in Wolke und Blase: zart, nur im unteren Teil der Schreibfläche
   const linien = b.form === 'wolke' || b.form === 'blase' ? Math.max(1, Math.floor(zeilen) - 1) : 0
@@ -72,7 +72,7 @@ export function Formfelder({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'form
                   <Path d={formPfad(b.form, w, h)} fill={ton(i)} stroke={rand} strokeWidth={1} />
                   {Array.from({ length: linien }, (_, li) => {
                     const y = h * o + innenH * ((li + 1) / (linien + 0.6))
-                    return <Line key={li} x1={w * l} y1={y} x2={w * (1 - r)} y2={y} stroke={aufhellen(c.p.mittel, 0.45)} strokeWidth={0.6} strokeDasharray="2 2.5" />
+                    return <Line key={li} x1={w * l} y1={y} x2={w * (1 - r)} y2={y} stroke={aufhellen(c.p.mittel, 0.9)} strokeWidth={0.6} strokeDasharray="2 2.5" />
                   })}
                 </Svg>
                 {text ? (
@@ -167,7 +167,7 @@ export function Jahr({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'jahr' }> }
               <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6, color: NEUTRAL.sehrLeise }}>{tag + 1}</Text>
             </View>
             {TAGE_IM_MONAT.map((n, m) => (
-              <View key={m} style={{ width: zelleB, height: zelleH, marginRight: gap, borderRadius: 2.5, borderWidth: tag < n ? 0.6 : 0, borderColor: aufhellen(c.p.mittel, 0.3), backgroundColor: tag < n ? '#FFFFFF' : NEUTRAL.flaeche }} />
+              <View key={m} style={{ width: zelleB, height: zelleH, marginRight: gap, borderRadius: 2.5, borderWidth: tag < n ? 0.7 : 0, borderColor: c.p.mittel, backgroundColor: tag < n ? '#FFFFFF' : NEUTRAL.flaeche }} />
             ))}
           </View>
         ))}
@@ -194,7 +194,7 @@ export function Jahr({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'jahr' }> }
 
 /** Ruhige Figur (Kopf und Schultern) als Platzhalter für einen Menschen – ohne Gesicht, damit jede Person passt */
 function Figur({ c, w, h, i }: { c: Ctx; w: number; h: number; i: number }) {
-  const ton = i % 2 ? aufhellen(SEKTOR_TOENE[(i * 3 + 4) % SEKTOR_TOENE.length], 0) : aufhellen(c.p.mittel, 0.66)
+  const ton = i % 2 ? SEKTOR_TOENE[(i * 3 + 4) % SEKTOR_TOENE.length] : aufhellen(c.p.mittel, 0.66)
   const rand = aufhellen(c.p.mittel, 0.2)
   const kopf = w * 0.24
   return (

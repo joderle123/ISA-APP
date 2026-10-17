@@ -1,0 +1,1993 @@
+[
+  {
+    "id": "sr-lose-faeden",
+    "bereich": "selbstreflexion",
+    "thema": "fuersorge",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-15",
+      "V-22",
+      "V-32",
+      "V-21"
+    ],
+    "schlagworte": [
+      "Unerledigtes",
+      "Gedankenkarussell",
+      "Entlastung",
+      "Loslassen",
+      "Aufschieben",
+      "Stress",
+      "Selbstorganisation",
+      "Wenn-dann-Plan"
+    ],
+    "verwandt": [
+      "lebensnetz",
+      "einfluss-kreise",
+      "tag-in-24-stunden",
+      "sr-wenn-stress"
+    ],
+    "bild": "icon:needle-thread",
+    "de": {
+      "titel": "Meine losen Fäden",
+      "untertitel": "Was hängt in meinem Kopf herum – und was davon darf gehen?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Im Kopf hängen oft lose Fäden: die Nachricht, die du noch beantworten wolltest, das Versprechen an einen Freund, das Projekt, das du anfangen wolltest. Jeder Faden braucht ein bisschen Platz, auch wenn du gerade gar nicht an ihn denkst. Hier legst du sie einmal alle vor dich hin und entscheidest, was mit ihnen passiert."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zu Beginn: Wie viel Platz ist gerade in deinem Kopf? Kreuz an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "kaum Platz",
+          "bis": "viel Platz",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib auf jedes Band einen losen Faden, der dich beschäftigt.",
+          "hinweis": "Das gehört hierher: Nachrichten, Versprechen, Projekte, Dinge, die du lernen oder ausprobieren wolltest. Das nicht: Hausaufgaben und Tests, die stehen schon im Heft. Band 1 ist ein Beispiel, fünf eigene reichen. Für jeden Faden, den du aufschreibst, machst du einen Knoten in deine Wolle.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": [
+            "1 · Beispiel: Tiago antworten, seit zwei Wochen offen",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was soll mit jedem Faden passieren: erledigen, loslassen oder später? Kreuz es an und mal das Kästchen in der Farbe aus.",
+          "hinweis": "Erledigen: Das kann ich in überschaubarer Zeit abschließen. Loslassen: Ich trage es nicht mehr mit mir herum – auch ein Nein ist eine Antwort. Später: Es ist wichtig, aber nicht jetzt. Löse jetzt die Knoten der Fäden, die du loslässt.",
+          "symbole": [
+            "ankreuzen",
+            "malen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "erledigen",
+            "loslassen",
+            "später"
+          ],
+          "kopffarben": [
+            "grau",
+            "gruen",
+            "blau",
+            "gelb"
+          ],
+          "nummern": 2,
+          "zeilen": 5,
+          "beispiel": [
+            "1",
+            "x",
+            "",
+            ""
+          ],
+          "breiten": [
+            0.6,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir einen Faden aus und plane einen ersten kleinen Schritt mit Datum.",
+          "hinweis": "Klein heißt: unter zehn Minuten. Nicht der ganze Faden, nur das erste Stück. Am besten ein Faden aus „erledigen“ oder „später“.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mein Faden",
+            "Erster kleiner Schritt",
+            "Wann (Datum)"
+          ],
+          "zeilen": 2,
+          "hoehe": 2,
+          "breiten": [
+            1,
+            1.8,
+            0.8
+          ],
+          "beispiel": [
+            "Tiago antworten",
+            "Kurze Nachricht: „Sorry, war im Stress. Wie läuft’s bei dir?“",
+            "Mi, 12.3."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Loslassen, ohne etwas zu verlieren",
+          "text": "Loslassen heißt nicht, dass etwas unwichtig war. Manchmal reicht ein Satz: „Das trage ich nicht mehr mit mir herum.“ Bei „später“ hilft ein Datum, an dem du wieder draufschaust. Dann muss dein Kopf den Faden nicht dauernd festhalten."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zum Schluss: Wie viel Platz ist jetzt? Kreuz die Skala von Seite 1 noch einmal an, mit einer anderen Farbe.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen benennen, was ihnen im Kopf nachhängt, sortieren es in erledigen, loslassen und später und planen einen ersten Schritt mit Datum.",
+        "ablauf": [
+          "Einstieg (5 Min.): Verknotetes Wollknäuel herumgeben, einen Knoten ertasten. Fragen: „Was passiert, wenn ein Faden lose hängt?“",
+          "Erklären (5 Min.): Ein Band an der Tafel vormachen („Nachricht an Tiago“, Kreuz bei erledigen). Keine Schulaufgaben. Wollfaden austeilen.",
+          "Einzelarbeit (20 Min.): Skala, Bänder schreiben (je ein Knoten), sortieren, Knoten loslassen, ersten Schritt planen. Leise Musik, nichts wird eingesammelt.",
+          "Austausch (10 Min.), freiwillig: Zu zweit nur den ersten Schritt nennen, nicht den Faden.",
+          "Abschluss (5 Min.): Skala noch einmal in anderer Farbe, Wolle einstecken. Eine Woche später offen nachfragen: „Wie lief dein Schritt?“"
+        ],
+        "hintergrund": "Was nicht abgeschlossen ist, beschäftigt den Kopf weiter. Nach Lazarus & Folkman (1984) entsteht Belastung, wenn Anforderungen die eigenen Möglichkeiten zu übersteigen scheinen; ungeordnetes Offenes lässt sie größer wirken. Das Blatt macht es sichtbar, sortiert es und schrumpft es auf einen ersten Schritt. Aufschreiben entlastet: Junge Erwachsene schliefen schneller ein, nachdem sie Offenes notiert hatten (Scullin et al., 2018). Ein Schritt mit Datum nutzt Wenn-dann-Pläne (Gollwitzer, 1999).",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Bänder; Farbe statt Tabelle.",
+          "schwerer": "Für „später“ ein Datum zur Neuentscheidung festlegen."
+        },
+        "impulse": [
+          "Welcher Faden ist leichter geworden, seit er aufgeschrieben ist?",
+          "Was hilft, einen Faden „später“ sein zu lassen?"
+        ],
+        "tipps": [
+          "Die Wolle wird zum Bändchen: Löst sich der Knoten, ist der Schritt gemacht.",
+          "Nach zwei, drei Wochen neu schreiben: Was ist neu, was weg?"
+        ],
+        "achtung": "Fäden zu Sorgen um Familie, Geld oder Gewalt oder dauerhafte Überforderung: nicht im Plenum nachfragen, Einzelgespräch anbieten, SePAS bzw. Responsable informieren. Bei Gefährdung sofort nach internem Ablauf handeln.",
+        "material": "Buntstifte; Wollfaden (ca. 40 cm) je Person"
+      }
+    },
+    "fr": {
+      "titel": "Mes fils en suspens",
+      "untertitel": "Qu’est-ce qui traîne dans ma tête – et qu’est-ce qui peut partir ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dans la tête, il y a souvent des fils qui traînent : le message auquel tu voulais encore répondre, la promesse faite à un ami, le projet que tu voulais commencer. Chaque fil prend un peu de place, même quand tu n’y penses pas. Ici, tu les poses tous devant toi une fois pour décider ce qu’ils deviennent."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pour commencer : combien de place y a-t-il en ce moment dans ta tête ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "très peu de place",
+          "bis": "beaucoup de place",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris sur chaque ruban un fil qui te préoccupe.",
+          "hinweis": "Ce qui a sa place ici : des messages, des promesses, des projets, des choses que tu voulais apprendre ou essayer. Ce qui n’en a pas : les devoirs et les contrôles, ils sont déjà dans ton agenda. Le ruban 1 est un exemple, cinq à toi suffisent. Pour chaque fil que tu écris, fais un nœud dans ta laine.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": [
+            "1 · Exemple : répondre à Tiago, depuis 2 semaines",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que doit devenir chaque fil : à régler, à lâcher ou à remettre à plus tard ? Mets une croix et colorie la case.",
+          "hinweis": "Régler : je peux le terminer en un temps raisonnable. Lâcher : je ne le porte plus avec moi – un non est aussi une réponse. Plus tard : c’est important, mais pas maintenant. Défais maintenant les nœuds des fils que tu lâches.",
+          "symbole": [
+            "ankreuzen",
+            "malen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "régler",
+            "lâcher",
+            "plus tard"
+          ],
+          "kopffarben": [
+            "grau",
+            "gruen",
+            "blau",
+            "gelb"
+          ],
+          "nummern": 2,
+          "zeilen": 5,
+          "beispiel": [
+            "1",
+            "x",
+            "",
+            ""
+          ],
+          "breiten": [
+            0.6,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis un fil et prévois un premier petit pas avec une date.",
+          "hinweis": "Petit, ça veut dire : moins de dix minutes. Pas tout le fil, seulement le premier bout. Le mieux est un fil de la colonne « régler » ou « plus tard ».",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mon fil",
+            "Premier petit pas",
+            "Quand (date)"
+          ],
+          "zeilen": 2,
+          "hoehe": 2,
+          "breiten": [
+            1,
+            1.8,
+            0.8
+          ],
+          "beispiel": [
+            "Répondre à Tiago",
+            "Un court message : « Pardon, grosse semaine. Ça va, toi ? »",
+            "mer. 12.3."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Lâcher sans rien perdre",
+          "text": "Lâcher ne veut pas dire que ce n’était pas important. Parfois, une phrase suffit : « Je ne porte plus ça avec moi. » Pour « plus tard », une date aide : tu sais quand tu y reviendras, et ta tête n’a plus besoin de retenir le fil en permanence."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pour finir : et maintenant ? Coche à nouveau l’échelle de la page 1, avec une autre couleur.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes nomment ce qui leur trotte dans la tête, le trient en « régler », « lâcher » et « plus tard » et prévoient un premier pas avec une date.",
+        "ablauf": [
+          "Entrée en matière (5 min) : faire circuler une pelote emmêlée, palper un nœud. Demander : « Que se passe-t-il quand un fil pend ? »",
+          "Expliquer (5 min) : montrer un ruban au tableau (« message à Tiago », croix sous « régler »). Pas de devoirs. Distribuer un fil de laine.",
+          "Travail individuel (20 min) : échelle, écrire les rubans (un nœud chacun), trier, défaire les nœuds lâchés, prévoir le premier pas. Musique douce, rien n’est ramassé.",
+          "Échange (10 min), facultatif : à deux, nommer seulement le premier pas, pas le fil.",
+          "Clôture (5 min) : recocher l’échelle d’une autre couleur, ranger la laine. Une semaine plus tard, demander : « Comment s’est passé ton pas ? »"
+        ],
+        "hintergrund": "Ce qui n’est pas terminé continue d’occuper la tête. Selon Lazarus et Folkman (1984), la charge naît quand les exigences semblent dépasser les moyens dont on dispose ; des points ouverts en vrac les font paraître plus grandes. La feuille les rend visibles, les trie et les réduit à un premier pas. Écrire soulage : de jeunes adultes s’endormaient plus vite après avoir noté ce qui restait à faire (Scullin et al., 2018). Un pas avec une date s’appuie sur les plans si-alors (Gollwitzer, 1999).",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Trois rubans seulement ; couleur au lieu du tableau.",
+          "schwerer": "Pour « plus tard », fixer une date de nouvelle décision."
+        },
+        "impulse": [
+          "Quel fil s’est allégé depuis qu’il est écrit ?",
+          "Qu’est-ce qui aide à laisser un fil pour « plus tard » ?"
+        ],
+        "tipps": [
+          "La laine devient bracelet : quand le nœud se défait, le pas est fait.",
+          "Après deux ou trois semaines, une nouvelle feuille : quoi de neuf, quoi de parti ?"
+        ],
+        "achtung": "Fils liés à des soucis familiaux, d’argent ou de violence, ou surcharge durable : pas de questions en plénière, entretien individuel, informer le SePAS ou le responsable. En cas de danger, agir immédiatement selon la procédure interne.",
+        "material": "Crayons de couleur ; fil de laine (env. 40 cm) par personne"
+      }
+    }
+  },
+  {
+    "id": "sr-auftank-liste",
+    "bereich": "selbstreflexion",
+    "thema": "fuersorge",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-35",
+      "V-29",
+      "SOZ-25",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Selbstfürsorge",
+      "Auftanken",
+      "Sinne",
+      "Entspannung",
+      "Energie",
+      "Stimmung",
+      "Wohlbefinden",
+      "Stress"
+    ],
+    "verwandt": [
+      "t1-mein-akku-heute",
+      "t4-energie-kreis",
+      "beduerfnis-glaeser",
+      "sr-wenn-stress"
+    ],
+    "bild": "icon:mug",
+    "de": {
+      "titel": "Meine Auftank-Liste",
+      "untertitel": "Was tut mir gut – für Tage, an denen nichts läuft?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "An guten Tagen weißt du, was dir guttut. An schlechten fällt einem oft nichts ein. Darum baust du dir jetzt eine Liste, die schon da ist, bevor du sie brauchst. Sie ist nach Sinnen sortiert: Augen, Ohren, Nase und Zunge, Haut und Körper."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib in jede Spalte, was dir guttut. Stichwörter reichen.",
+          "hinweis": "Alles zählt, was bei dir wirkt: ein Foto, ein Song, der Duft von Zimt, eine warme Dusche, einmal um den Block rennen. Es gibt kein Richtig oder Falsch, nur dein Gefühl. Spalten dürfen auch leer bleiben.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "sehen",
+            "hören",
+            "riechen / schmecken",
+            "spüren",
+            "bewegen"
+          ],
+          "kopffarben": [
+            "blau",
+            "lila",
+            "orange",
+            "rosa",
+            "gruen"
+          ],
+          "zeilen": 5,
+          "hoehe": 2,
+          "beispiel": [
+            "Fotos von meinem Hund",
+            "meine Lieblings-Playlist",
+            "Orangenschale, Pfefferminztee",
+            "warme Dusche, Wolldecke",
+            "30 Hampelmänner"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gleich in der Stunde: Probier aus jeder Spalte eine Sache aus. Kreuz auf dem Regler an, wie sie bei dir wirkt.",
+          "hinweis": "Deine Lehrperson bringt etwas mit. Beruhigt es dich eher, oder weckt es dich auf? Beides kann genau richtig sein, je nach Tag. Setz dein Kreuz dorthin, wo es für dich passt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Sehen: beruhigt",
+              "Sehen: weckt auf"
+            ],
+            [
+              "Hören: beruhigt",
+              "Hören: weckt auf"
+            ],
+            [
+              "Riechen: beruhigt",
+              "Riechen: weckt auf"
+            ],
+            [
+              "Spüren: beruhigt",
+              "Spüren: weckt auf"
+            ],
+            [
+              "Bewegen: beruhigt",
+              "Bewegen: weckt auf"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähl zwei Dinge aus deiner Liste für diese Woche und leg fest, an welchen Tagen sie dran sind.",
+          "hinweis": "Zwei reichen. Nimm eins, das schnell geht (unter fünf Minuten), und eins, das etwas mehr Zeit braucht. Zum Beispiel: Pfefferminztee nach dem Abendessen (Di, Do).",
+          "symbole": [
+            "schreiben",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "",
+            ""
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Die Liste griffbereit halten",
+          "text": "Mach ein Foto von deiner Liste oder schreib sie auf einen kleinen Zettel für die Federmappe. An schlechten Tagen musst du dann nicht überlegen, sondern suchst dir nur eine Zeile aus. Schwere Tage gibt es bei allen. Wenn sie sich aneinanderreihen und die Liste nicht mehr hilft, sprich mit einer Person, der du vertraust."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal dein Auftank-Bild: ein Ort, eine Farbe, ein Gegenstand, der dir guttut.",
+          "hinweis": "Wie ein Foto im Kopf: Wo bist du, was siehst und spürst du? Es muss nicht schön gezeichnet sein, Farben und Striche genügen.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mein Auftank-Bild",
+          "hoehe": 9,
+          "zeichnen": true
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen sammeln, was ihnen über die Sinne guttut, probieren aus jeder Spalte etwas aus und planen zwei Auftank-Momente.",
+        "ablauf": [
+          "Einstieg (5 Min.): Aufgeschnittene Orange herumgeben, Augen zu, riechen. Fragen: „Was macht der Duft mit euch?“",
+          "Erklären (5 Min.): Fünf Sinne, fünf Spalten; Beispielzeile lesen. Auftanken kann beruhigen oder aufwecken.",
+          "Einzelarbeit (20 Min.): Liste füllen, dann Stationen: Duft, Musik, Dehnen, Weiches in der Hand, Blick aus dem Fenster. Regler ankreuzen, Bild malen.",
+          "Austausch (5 Min.), freiwillig: Zu zweit: „Was hat dich überrascht?“",
+          "Abschluss (10 Min.): Zwei Dinge mit Tagen eintragen. Eine Woche später nachfragen: „Was hast du gemacht?“"
+        ],
+        "hintergrund": "Wer müde oder angespannt ist, findet schlecht Ideen, was ihm guttun könnte; eine Liste, die vorher entsteht, nimmt das Suchen ab. Die Sinne sind ein direkter Zugang: Musik wirkt über mehrere Mechanismen auf Stimmung und Erregung (Juslin & Västfjäll, 2008), und Bewegung gehört zu den gut belegten Wegen, das Wohlbefinden zu stützen (WHO, 2020). Was beruhigt und was aufweckt, ist von Person zu Person verschieden – darum probieren die Jugendlichen aus. Ein Plan mit Zeitpunkt erhöht die Chance, dass es stattfindet (Gollwitzer, 1999).",
+        "quellen": [
+          "Juslin, P. N. & Västfjäll, D. (2008). Emotional responses to music: The need to consider underlying mechanisms. Behavioral and Brain Sciences, 31(5), 559–575.",
+          "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Drei Spalten füllen, eine Station.",
+          "schwerer": "Auftank-Karte für die Federmappe mit den drei besten Einträgen."
+        },
+        "impulse": [
+          "Welcher Sinn fällt dir leicht, welcher schwer?",
+          "Was davon geht auch in der Schule, in zwei Minuten?"
+        ],
+        "tipps": [
+          "Düfte vorher auf Allergien abfragen; Alternativen anbieten.",
+          "Musik leise oder über Kopfhörer abspielen."
+        ],
+        "achtung": "Bleiben alle Spalten leer oder nennt jemand Alkohol oder Selbstverletzung als „Auftanken“: nicht verurteilen, nicht im Plenum nachfragen; Einzelgespräch, Vertrauensperson oder SePAS einbeziehen, nach internem Ablauf handeln.",
+        "material": "Orange oder Minze, Musik, Platz zum Dehnen"
+      }
+    },
+    "fr": {
+      "titel": "Ma liste pour me ressourcer",
+      "untertitel": "Qu’est-ce qui me fait du bien – pour les jours où rien ne va ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les bons jours, tu sais ce qui te fait du bien. Les mauvais jours, on ne trouve souvent rien. Alors tu te fais dès maintenant une liste qui existe avant que tu en aies besoin. Elle est classée par sens : les yeux, les oreilles, le nez et la langue, la peau et le corps."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris dans chaque colonne ce qui te fait du bien. Des mots-clés suffisent.",
+          "hinweis": "Tout compte, du moment que ça marche pour toi : une photo, une chanson, l’odeur de la cannelle, une douche chaude, un tour du pâté de maisons en courant. Il n’y a ni bonne ni mauvaise réponse, seulement ton ressenti. Des colonnes peuvent rester vides.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "voir",
+            "entendre",
+            "sentir / goûter",
+            "toucher",
+            "bouger"
+          ],
+          "kopffarben": [
+            "blau",
+            "lila",
+            "orange",
+            "rosa",
+            "gruen"
+          ],
+          "zeilen": 5,
+          "hoehe": 2,
+          "beispiel": [
+            "des photos de mon chien",
+            "ma playlist préférée",
+            "écorce d’orange, thé à la menthe",
+            "douche chaude, plaid",
+            "30 jumping jacks"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pendant le cours : essaie une chose par colonne. Coche sur le curseur l’effet qu’elle a sur toi.",
+          "hinweis": "Ta prof ou ton prof apporte de quoi essayer. Est-ce que ça t’apaise plutôt, ou ça te réveille ? Les deux peuvent être exactement ce qu’il faut, selon le jour. Mets ta croix là où ça te correspond.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Voir : apaise",
+              "Voir : réveille"
+            ],
+            [
+              "Écouter : apaise",
+              "Écouter : réveille"
+            ],
+            [
+              "Odeur : apaise",
+              "Odeur : réveille"
+            ],
+            [
+              "Toucher : apaise",
+              "Toucher : réveille"
+            ],
+            [
+              "Bouger : apaise",
+              "Bouger : réveille"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis deux choses dans ta liste pour cette semaine et fixe les jours où elles ont leur place.",
+          "hinweis": "Deux suffisent. Prends-en une rapide (moins de cinq minutes) et une qui demande un peu plus de temps. Par exemple : thé à la menthe après le dîner (ma., je.).",
+          "symbole": [
+            "schreiben",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "",
+            ""
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Garde ta liste à portée de main",
+          "text": "Prends ta liste en photo ou recopie-la sur un petit papier pour ta trousse. Les mauvais jours, tu n’as alors pas à réfléchir : tu choisis une ligne. Tout le monde a des jours difficiles. S’ils s’enchaînent et que la liste n’aide plus, parle à une personne en qui tu as confiance."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine ton image ressource : un lieu, une couleur, un objet qui te fait du bien.",
+          "hinweis": "Comme une photo dans ta tête : où es-tu, que vois-tu, que ressens-tu ? Il n’a pas besoin d’être joli, des couleurs et des traits suffisent.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mon image ressource",
+          "hoehe": 9,
+          "zeichnen": true
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes rassemblent ce qui leur fait du bien par les sens, essaient quelque chose pour chaque sens et planifient deux moments pour se ressourcer.",
+        "ablauf": [
+          "Entrée en matière (5 min) : faire circuler une orange coupée, yeux fermés, sentir. Demander : « Que fait cette odeur en vous ? »",
+          "Expliquer (5 min) : cinq sens, cinq colonnes ; lire la ligne d’exemple. Se ressourcer peut apaiser ou réveiller.",
+          "Travail individuel (20 min) : remplir la liste, puis les stations : odeur, musique, étirements, quelque chose de doux, la vue par la fenêtre. Curseurs, image à dessiner.",
+          "Échange (5 min), facultatif : à deux : « Qu’est-ce qui t’a surpris ? »",
+          "Clôture (10 min) : inscrire deux choses avec les jours. Une semaine plus tard : « Qu’as-tu fait ? »"
+        ],
+        "hintergrund": "Quand on est fatigué ou tendu, on trouve difficilement des idées de ce qui fait du bien ; une liste faite à l’avance évite de chercher. Les sens sont une porte d’entrée directe : la musique agit sur l’humeur et l’activation par plusieurs mécanismes (Juslin et Västfjäll, 2008), et le mouvement fait partie des moyens bien étayés de soutenir le bien-être (OMS, 2020). Ce qui apaise et ce qui réveille varie d’une personne à l’autre – les jeunes essaient donc. Un plan avec une échéance augmente les chances que cela ait lieu (Gollwitzer, 1999).",
+        "quellen": [
+          "Juslin, P. N. & Västfjäll, D. (2008). Emotional responses to music: The need to consider underlying mechanisms. Behavioral and Brain Sciences, 31(5), 559–575.",
+          "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Trois colonnes, une station.",
+          "schwerer": "Carte de poche avec les trois meilleures entrées."
+        },
+        "impulse": [
+          "Quel sens te vient facilement, lequel plus difficilement ?",
+          "Qu’est-ce qui marche aussi au lycée, en deux minutes ?"
+        ],
+        "tipps": [
+          "Demander d’abord les allergies aux odeurs ; proposer des alternatives.",
+          "Jouer la musique doucement ou au casque."
+        ],
+        "achtung": "Si toutes les colonnes restent vides ou si l’alcool ou l’automutilation sont cités comme « ressourcement » : ne pas condamner ni questionner en plénière ; entretien individuel, personne de confiance ou SePAS, agir selon la procédure interne.",
+        "material": "Orange ou menthe, musique, place pour s’étirer"
+      }
+    }
+  },
+  {
+    "id": "sr-wenn-stress",
+    "bereich": "selbstreflexion",
+    "thema": "fuersorge",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-21",
+      "V-18",
+      "K-26",
+      "V-20"
+    ],
+    "schlagworte": [
+      "Stress",
+      "Stressbewältigung",
+      "Emotionsregulation",
+      "Anspannung",
+      "Ablenkung",
+      "Wenn-dann-Plan",
+      "Selbstfürsorge",
+      "Hilfe holen"
+    ],
+    "verwandt": [
+      "einfluss-kreise",
+      "t1-mein-akku-heute",
+      "sr-auftank-liste",
+      "sr-schlaf-check"
+    ],
+    "bild": "icon:cloud-storm",
+    "de": {
+      "titel": "Wenn ich gestresst bin",
+      "untertitel": "Was tue ich dann – und was hilft mir wirklich?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Stress gehört dazu: vor Tests, bei Streit, wenn alles gleichzeitig kommt. Jeder Mensch hat Wege, damit umzugehen. Manche helfen sofort, manche erst später, und manche kosten am nächsten Tag etwas. Hier schaust du ohne Bewertung hin, was du tust, und prüfst, was dir wirklich guttut."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreuz an, was du tust, wenn der Stress steigt.",
+          "hinweis": "Mehrere Kreuze sind möglich. Es gibt nur ehrliche Antworten, keine falschen. Niemand sieht dein Blatt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "frei": 2,
+          "items": [
+            "Sport oder Bewegung",
+            "Musik hören",
+            "mit jemandem reden",
+            "tief atmen",
+            "zocken",
+            "essen oder naschen",
+            "mich zurückziehen",
+            "streiten",
+            "scrollen",
+            "an die frische Luft gehen",
+            "schlafen",
+            "Dinge aufschieben",
+            "malen, schreiben oder basteln",
+            "eine Serie schauen",
+            "laut werden",
+            "alles in mich hineinschlucken",
+            "duschen oder baden",
+            "aufräumen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, dass Stress da ist? Kreuz auf jedem Regler an, wo du stehst.",
+          "hinweis": "Beide Seiten sind in Ordnung. Auch die Mitte ist eine Antwort.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "ich werde still",
+              "ich werde laut"
+            ],
+            [
+              "allein sein",
+              "Leute um mich"
+            ],
+            [
+              "Kopf leer",
+              "Kopf voll"
+            ],
+            [
+              "Körper schlaff",
+              "Körper gespannt"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähl drei Wege aus Aufgabe 1. Was bringen sie gleich danach, was am nächsten Tag? Schreib + (hilft), – (hilft nicht) oder ± (kommt drauf an).",
+          "hinweis": "Es geht nicht darum, was „richtig“ ist, sondern was bei dir wirkt.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mein Weg",
+            "Gleich danach",
+            "Am nächsten Tag"
+          ],
+          "zeilen": 3,
+          "hoehe": 2,
+          "breiten": [
+            1.2,
+            1,
+            1.3
+          ],
+          "beispiel": [
+            "zocken",
+            "+  Kopf wird frei",
+            "±  müde, Aufgaben noch offen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hilft dir bei welcher Stärke von Stress? Schreib zu jeder Stufe einen Weg.",
+          "hinweis": "Was bei leichtem Stress reicht, reicht bei starkem oft nicht mehr. Du darfst bei jeder Stufe etwas anderes wählen.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "thermometer",
+          "stufen": [
+            {
+              "titel": "ruhig"
+            },
+            {
+              "titel": "leicht angespannt"
+            },
+            {
+              "titel": "unter Druck"
+            },
+            {
+              "titel": "kurz vor dem Überkochen"
+            }
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähl einen neuen Weg für nächste Woche: einen, den du ausprobieren oder öfter nutzen willst.",
+          "hinweis": "Mach ihn klein und konkret. Ein Wenn-dann-Satz hilft: Er verbindet den Moment mit dem Weg.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mein Herz vor einem Test schneller klopft,",
+              "dann": "atme ich viermal lang aus und trinke ein Glas Wasser. (Weg: Atmen)"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Kein Weg ist nur gut oder nur schlecht.",
+          "text": "Viele Wege helfen kurz und kosten später etwas, andere brauchen erst einen kleinen Anstoß. Mehrere Wege für verschiedene Situationen zu haben, ist ein gutes Zeichen. Wird der Druck so groß, dass du nicht mehr weiterweißt, sprich noch heute mit jemandem: mit einer Vertrauensperson, der SePAS oder über die Nummern unten."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen ihre Stress-Wege, schätzen ohne Wertung ein, was kurz- und langfristig hilft, und wählen einen neuen Weg.",
+        "ablauf": [
+          "Einstieg (5 Min.): Fäuste ballen, Schultern hoch, fünf Sekunden halten, mit einem Seufzer lösen. Fragen: „Wo spürt ihr Anspannung?“",
+          "Erklären (5 Min.): Stress ist normal, kein Weg ist verboten. Beispiel mit + und – (zocken) gemeinsam lesen: kurz gut, später müde.",
+          "Einzelarbeit (20 Min.): Aufgaben 1 bis 5, leise Musik, nichts wird eingesammelt.",
+          "Austausch (10 Min.), freiwillig: Linie aus Klebeband „hilft viel – wenig“; zu genannten Wegen (Musik, Sport …) stellt sich, wer mag.",
+          "Abschluss (5 Min.): Neuen Weg zu zweit laut sagen, auf die Nummern am Blattende hinweisen."
+        ],
+        "hintergrund": "Stress entsteht nach Lazarus & Folkman (1984), wenn eine Anforderung die eigenen Möglichkeiten zu übersteigen scheint; Coping umfasst alle Wege, damit umzugehen. Kein Weg ist an sich gut oder schlecht: Es zählen die Passung zur Situation und die Kosten auf Dauer. Menschen wählen bei starker Anspannung eher Ablenkung, bei schwacher eher Umdeuten (Sheppes et al., 2011); verschiedene Momente brauchen verschiedene Wege. Wenn-dann-Pläne machen den neuen Weg abrufbar (Gollwitzer, 1999).",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Sheppes, G., Scheibe, S., Suri, G. & Gross, J. J. (2011). Emotion-regulation choice. Psychological Science, 22(11), 1391–1396.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 5.",
+          "schwerer": "Situationsliste: Wann wähle ich welchen Weg?"
+        },
+        "impulse": [
+          "Welcher Weg hilft sofort, welcher erst später?",
+          "Welchen Weg bei anderen würdest du gern ausprobieren?"
+        ],
+        "tipps": [
+          "Genannte Wege nie bewerten; fragen: „Was bringt dir das in dem Moment?“",
+          "Eine Woche später offen nachfragen; „vergessen“ ist eine Antwort."
+        ],
+        "achtung": "Warnzeichen: wochenlanger Rückzug, Dauerzocken statt Schlaf, Alkohol, Cannabis, Essen als Trost, Verletzungen, Andeutungen von Selbstverletzung oder Suizid. Nicht im Plenum; Einzelgespräch, SePAS und Responsable, sofort nach internem Ablauf handeln.",
+        "material": "Stifte, Klebeband"
+      }
+    },
+    "fr": {
+      "titel": "Quand le stress monte",
+      "untertitel": "Que fais-je alors – et qu’est-ce qui m’aide vraiment ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Le stress fait partie de la vie : avant un contrôle, lors d’une dispute, quand tout arrive en même temps. Chaque personne a ses façons d’y faire face. Certaines aident tout de suite, d’autres plus tard, et certaines coûtent quelque chose le lendemain. Ici, tu regardes sans jugement ce que tu fais et tu vérifies ce qui t’aide vraiment."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Coche ce que tu fais quand le stress monte.",
+          "hinweis": "Plusieurs croix sont possibles. Il n’y a que des réponses honnêtes, pas de fausses. Personne ne voit ta feuille.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "frei": 2,
+          "items": [
+            "faire du sport ou bouger",
+            "écouter de la musique",
+            "en parler à quelqu’un",
+            "respirer profondément",
+            "jouer aux jeux vidéo",
+            "manger ou grignoter",
+            "me retirer dans mon coin",
+            "me disputer",
+            "faire défiler mon téléphone",
+            "prendre l’air",
+            "dormir",
+            "remettre à plus tard",
+            "dessiner, écrire ou bricoler",
+            "regarder une série",
+            "m’énerver",
+            "tout garder pour moi",
+            "douche ou bain",
+            "ranger"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi remarques-tu que le stress est là ? Mets une croix sur chaque curseur, là où tu te situes.",
+          "hinweis": "Les deux côtés sont possibles. Le milieu est aussi une réponse.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "je me tais",
+              "je parle fort"
+            ],
+            [
+              "rester seul",
+              "voir du monde"
+            ],
+            [
+              "tête vide",
+              "tête pleine"
+            ],
+            [
+              "corps mou",
+              "corps tendu"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis trois façons de la tâche 1. Qu’apportent-elles juste après, et le lendemain ? Écris + (ça aide), – (ça n’aide pas) ou ± (ça dépend).",
+          "hinweis": "Il ne s’agit pas de ce qui est « juste », mais de ce qui marche pour toi.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ma façon",
+            "Juste après",
+            "Le lendemain"
+          ],
+          "zeilen": 3,
+          "hoehe": 2,
+          "breiten": [
+            1.2,
+            1,
+            1.3
+          ],
+          "beispiel": [
+            "jouer aux jeux vidéo",
+            "+  ma tête se vide",
+            "±  fatigue, devoirs pas faits"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui t’aide selon la force du stress ? Écris une façon pour chaque niveau.",
+          "hinweis": "Ce qui suffit pour un stress léger ne suffit souvent plus pour un stress fort. Tu peux choisir autre chose à chaque niveau.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "thermometer",
+          "stufen": [
+            {
+              "titel": "calme"
+            },
+            {
+              "titel": "tension légère"
+            },
+            {
+              "titel": "sous pression"
+            },
+            {
+              "titel": "au bord de l’explosion"
+            }
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une nouvelle façon pour la semaine prochaine : une que tu veux essayer ou utiliser plus souvent.",
+          "hinweis": "Fais-la petite et concrète. Une phrase si-alors aide : elle relie le moment à la façon d’agir.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si mon cœur bat plus vite avant un contrôle,",
+              "dann": "j’expire longuement quatre fois et je bois un verre d’eau. (Façon : respirer)"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Aucune façon n’est seulement bonne ou mauvaise.",
+          "text": "Beaucoup de façons aident un moment et coûtent quelque chose plus tard ; d’autres demandent d’abord un petit coup de pouce. Avoir plusieurs façons pour des situations différentes, c’est bon signe. Si la pression devient telle que tu ne sais plus que faire, parles-en aujourd’hui même à quelqu’un : une personne de confiance, le SePAS ou les numéros ci-dessous."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent leurs façons de gérer le stress, évaluent sans jugement ce qui aide à court et long terme et choisissent une nouvelle façon.",
+        "ablauf": [
+          "Entrée en matière (5 min) : serrer les poings, hausser les épaules, tenir cinq secondes, relâcher en soupirant. Demander : « Où sentez-vous la tension ? »",
+          "Expliquer (5 min) : le stress est normal, aucune façon n’est interdite. Lire l’exemple +/– (jeux vidéo) : bien d’abord, fatigue ensuite.",
+          "Travail individuel (20 min) : tâches 1 à 5, musique douce, rien n’est ramassé.",
+          "Échange (10 min), facultatif : ligne de ruban adhésif « aide beaucoup – peu » ; pour chaque façon citée (musique, sport …), se place qui veut.",
+          "Clôture (5 min) : dire la nouvelle façon à deux ; renvoyer aux numéros en bas de la feuille."
+        ],
+        "hintergrund": "Selon Lazarus et Folkman (1984), le stress naît quand une exigence semble dépasser les moyens dont on dispose ; le coping désigne toutes les façons d’y faire face. Aucune n’est bonne ou mauvaise en soi : comptent l’adéquation à la situation et le coût à long terme. Face à une forte tension, on choisit plutôt la distraction, face à une faible tension plutôt la réévaluation (Sheppes et al., 2011) ; des moments différents demandent des façons différentes. Les plans si-alors rendent la nouvelle façon disponible (Gollwitzer, 1999).",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Sheppes, G., Scheibe, S., Suri, G. & Gross, J. J. (2011). Emotion-regulation choice. Psychological Science, 22(11), 1391–1396.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les tâches 1 et 5.",
+          "schwerer": "Liste de situations : quand choisir quelle façon ?"
+        },
+        "impulse": [
+          "Quelle façon aide tout de suite, laquelle plus tard ?",
+          "Quelle façon vue chez d’autres voudrais-tu essayer ?"
+        ],
+        "tipps": [
+          "Ne jamais juger une façon citée ; demander : « Qu’est-ce que ça t’apporte à ce moment-là ? »",
+          "Une semaine plus tard, demander ouvertement ; « oublié » est une réponse."
+        ],
+        "achtung": "Signes d’alerte : repli de plusieurs semaines, jeux au détriment du sommeil, alcool, cannabis, nourriture-consolation, blessures, allusions à l’automutilation ou au suicide. Pas en plénière ; entretien individuel, SePAS et responsable, agir tout de suite selon la procédure.",
+        "material": "Stylos, ruban adhésif"
+      }
+    }
+  },
+  {
+    "id": "sr-schlaf-check",
+    "bereich": "selbstreflexion",
+    "thema": "fuersorge",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-29",
+      "V-32",
+      "V-33",
+      "K-35"
+    ],
+    "schlagworte": [
+      "Schlaf",
+      "Müdigkeit",
+      "Schlafhygiene",
+      "Bildschirmzeit",
+      "Koffein",
+      "Gedankenkarussell",
+      "Gewohnheiten",
+      "Schlaf-Tagebuch"
+    ],
+    "verwandt": [
+      "tag-in-24-stunden",
+      "monat-in-farben",
+      "balance-finden",
+      "sr-wenn-stress"
+    ],
+    "bild": "icon:moon-stars",
+    "de": {
+      "titel": "Mein Schlaf-Check",
+      "untertitel": "Wie schlafe ich – und was kann ich ein Stück ändern?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "In deinem Alter braucht der Körper viel Schlaf, aber die innere Uhr tickt später als bei Kindern und Erwachsenen. Dazu kommen früher Unterricht, das Handy und Gedanken, die abends erst richtig laut werden. Das Blatt urteilt nicht: Du schaust eine Woche lang hin, was bei dir los ist, und änderst eine Kleinigkeit."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie ist das bei dir? Kreuz an.",
+          "hinweis": "Denk an die letzten zwei Wochen. Es gibt keine falsche Antwort, das Blatt wird nicht bewertet.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "teils",
+            "stimmt nicht"
+          ],
+          "items": [
+            "Ich habe im Bett Handy, Tablet oder Laptop an.",
+            "Abends trinke ich Energy-Drinks, Cola, Eistee oder Kaffee.",
+            "Ich gehe jeden Tag ungefähr zur gleichen Zeit schlafen.",
+            "Am Wochenende schlafe ich deutlich länger als unter der Woche.",
+            "Beim Einschlafen drehen sich meine Gedanken im Kreis.",
+            "Morgens fühle ich mich einigermaßen fit."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie sind deine Abende und Morgen? Kreuz auf jedem Regler an, wo du stehst.",
+          "hinweis": "Beide Seiten sind in Ordnung. Du siehst nur, wie es bei dir ist.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Abends aufgedreht",
+              "Abends müde"
+            ],
+            [
+              "Einschlafen leicht",
+              "Einschlafen schwer"
+            ],
+            [
+              "Morgens zäh",
+              "Morgens munter"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was könntest du ändern? Kreuz an, was dich anspricht.",
+          "hinweis": "Du musst nichts ändern. Nicht alles geht überall, etwa im geteilten Zimmer. Such, was bei dir passt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 0,
+          "items": [
+            "Handy 30 Minuten vor dem Schlafen weglegen",
+            "Handy zum Laden außerhalb des Betts lassen",
+            "Energy-Drinks, Cola und Kaffee nur bis mittags",
+            "eine feste Zeit zum Ins-Bett-Gehen",
+            "Gedanken vorher auf einen Zettel schreiben",
+            "Zimmer abdunkeln und lüften",
+            "abends dehnen oder ruhig atmen",
+            "Wecker statt Handy"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Sache aus und plane sie.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich um 22 Uhr die Zähne geputzt habe,",
+              "dann": "lege ich das Handy zum Laden in den Flur."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Führ eine Woche lang Tagebuch: Trag morgens ein, wann du im Bett warst, eingeschlafen und aufgewacht bist. Mal das Farbfeld aus.",
+          "hinweis": "Grün = fit, gelb = geht so, blau = müde. Schätzen reicht, es geht um ein Bild. So siehst du, ob deine Änderung etwas bringt. Die erste Zeile füllst du heute mit der letzten Nacht.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Tag",
+            "Im Bett um",
+            "Eingeschlafen",
+            "Aufgewacht",
+            "So fühle ich mich"
+          ],
+          "breiten": [
+            0.9,
+            1,
+            1.1,
+            1.1,
+            1.4
+          ],
+          "beispiel": [
+            "Beispiel",
+            "22:30",
+            "23:15",
+            "6:45",
+            "gelb"
+          ],
+          "werte": [
+            [
+              "Mo",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Di",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Mi",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Do",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Fr",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Sa",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "So",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn Gedanken kreisen",
+          "text": "Schreib fünf Minuten vor dem Licht-Aus auf einen Zettel, was dich beschäftigt und was du morgen erledigen willst. Der Zettel hält es für dich fest. Schläfst du über längere Zeit kaum oder fühlst du dich sehr belastet, sprich mit deiner Hausärztin, deinem Hausarzt oder einer Person, der du vertraust."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen ihren Schlaf ein, führen eine Woche ein Schlaf-Tagebuch in Farben und wählen eine Veränderung.",
+        "ablauf": [
+          "Einstieg (5 Min.): Licht dimmen, eine Minute Regenrauschen, Augen zu. Fragen: „Wie fühlt sich ein müder Körper an?“",
+          "Erklären (5 Min.): Keine Bewertung; Beispielzeile des Tagebuchs lesen. Richtwert 8 bis 10 Stunden (Paruthi et al., 2016) – keine Frage von Schuld.",
+          "Einzelarbeit (20 Min.): Aussagen, Regler, Änderung und Wenn-dann-Satz, erste Tagebuchzeile. Ruhige Musik.",
+          "Austausch (10 Min.), freiwillig: Zu zweit eine Änderung nennen; oder Linie im Raum „Einschlafen leicht – schwer“.",
+          "Abschluss (5 Min.): Satz laut sagen. Nach einer Woche Farben ansehen, privat."
+        ],
+        "hintergrund": "Jugendliche brauchen 8 bis 10 Stunden Schlaf (Paruthi et al., 2016). In der Pubertät verschiebt sich die innere Uhr nach hinten; früher Schulbeginn führt oft zu Schlafmangel (Carskadon, 2011). Bildschirmnutzung hängt mit späterem Zubettgehen und kürzerem Schlaf zusammen (Hale & Guan, 2015), Koffein am Abend kann das Einschlafen verzögern. Wer abends Aufgaben notiert, schläft schneller ein (Scullin et al., 2018). Das Blatt informiert und fördert Selbstbeobachtung, es stellt keine Diagnose.",
+        "quellen": [
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Hale, L. & Guan, S. (2015). Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58.",
+          "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aussagen und eine Änderung; Tagebuch drei Tage.",
+          "schwerer": "Nach der Woche Muster in den Farben suchen."
+        },
+        "impulse": [
+          "Was ist an Abenden anders, nach denen du fit bist?",
+          "Welche Änderung fiele dir am leichtesten?"
+        ],
+        "tipps": [
+          "Erste Tagebuchzeile in der Stunde füllen.",
+          "Vorschläge nie als Schuld formulieren: Nicht alle haben ein ruhiges Zimmer."
+        ],
+        "achtung": "Über normale Müdigkeit hinaus: wochenlang kaum Schlaf, starke Tagesmüdigkeit, nächtliche Angst oder Grübeln, Sorgen zu Hause. Nicht im Plenum nachfragen; Einzelgespräch, SePAS bzw. Responsable. Keine Diagnose.",
+        "material": "Buntstifte; Regenrauschen"
+      }
+    },
+    "fr": {
+      "titel": "Mon bilan sommeil",
+      "untertitel": "Comment je dors – et que puis-je changer un peu ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "À ton âge, le corps a besoin de beaucoup de sommeil, mais l’horloge interne se décale plus tard que chez les enfants et les adultes. S’y ajoutent les cours qui commencent tôt, le téléphone et les pensées qui deviennent bruyantes le soir. La feuille ne juge pas : pendant une semaine, tu regardes ce qui se passe chez toi et tu changes un petit détail."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment est-ce chez toi ? Coche.",
+          "hinweis": "Pense aux deux dernières semaines. Il n’y a pas de mauvaise réponse, la feuille n’est pas notée.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "en partie",
+            "faux"
+          ],
+          "items": [
+            "J’ai mon téléphone, ma tablette ou mon ordinateur dans le lit.",
+            "Le soir, je bois des boissons énergisantes, du cola, du thé glacé ou du café.",
+            "Je me couche à peu près à la même heure chaque jour.",
+            "Le week-end, je dors nettement plus longtemps qu’en semaine.",
+            "En m’endormant, mes pensées tournent en rond.",
+            "Le matin, je me sens à peu près en forme."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment sont tes soirs et tes matins ? Mets une croix sur chaque curseur, là où tu te situes.",
+          "hinweis": "Les deux côtés sont possibles. Tu vois seulement comment c’est chez toi.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Soir : énergie",
+              "Soir : fatigue"
+            ],
+            [
+              "Dormir : facile",
+              "Dormir : difficile"
+            ],
+            [
+              "Matin : lent",
+              "Matin : en forme"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que pourrais-tu changer ? Coche ce qui te parle.",
+          "hinweis": "Rien n’est obligatoire. Tout n’est pas possible partout, p. ex. en chambre partagée. Cherche ce qui te convient.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 0,
+          "items": [
+            "poser le téléphone 30 minutes avant de dormir",
+            "laisser le téléphone en charge hors du lit",
+            "boissons énergisantes, cola et café seulement jusqu’à midi",
+            "une heure fixe pour aller au lit",
+            "écrire mes pensées sur un papier avant de dormir",
+            "assombrir et aérer la chambre",
+            "m’étirer ou respirer calmement le soir",
+            "un réveil au lieu du téléphone"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une chose et planifie-la.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si j’ai fini de me brosser les dents à 22 heures,",
+              "dann": "je mets mon téléphone en charge dans le couloir."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tiens un journal pendant une semaine : note chaque matin l’heure du coucher, de l’endormissement et du réveil. Colorie la case.",
+          "hinweis": "Vert = en forme, jaune = ça va, bleu = fatigue. Estimer suffit : c’est une image. Tu vois ainsi si ton changement apporte quelque chose. Remplis la première ligne aujourd’hui avec la nuit dernière.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Jour",
+            "Au lit à",
+            "Endormissement",
+            "Réveil",
+            "Mon état"
+          ],
+          "breiten": [
+            0.9,
+            1,
+            1.2,
+            1,
+            1.3
+          ],
+          "beispiel": [
+            "Exemple",
+            "22 h 30",
+            "23 h 15",
+            "6 h 45",
+            "jaune"
+          ],
+          "werte": [
+            [
+              "Lun",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Mar",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Mer",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Jeu",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Ven",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Sam",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Dim",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand les pensées tournent",
+          "text": "Cinq minutes avant d’éteindre la lumière, écris sur un papier ce qui te préoccupe et ce que tu veux faire demain. Le papier le garde pour toi. Si tu dors très peu pendant longtemps ou que tu te sens très mal, parle à ton médecin traitant ou à une personne en qui tu as confiance."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes évaluent leur sommeil, tiennent une semaine un journal en couleurs et choisissent un changement.",
+        "ablauf": [
+          "Entrée en matière (5 min) : baisser la lumière, une minute de bruit de pluie, yeux fermés. Demander : « Comment se sent un corps fatigué ? »",
+          "Expliquer (5 min) : pas de jugement ; lire la ligne d’exemple. Repère : 8 à 10 heures (Paruthi et al., 2016) – aucune faute.",
+          "Travail individuel (20 min) : affirmations, curseurs, changement et phrase si-alors, première ligne du journal. Musique calme.",
+          "Échange (10 min), facultatif : à deux, nommer un changement ; ou ligne « dormir facile – difficile » dans la salle.",
+          "Clôture (5 min) : dire la phrase à voix haute. Après une semaine, regarder les couleurs, en privé."
+        ],
+        "hintergrund": "Les adolescents ont besoin de 8 à 10 heures de sommeil (Paruthi et al., 2016). À la puberté, l’horloge interne se décale vers le tard ; des cours précoces causent souvent un manque de sommeil (Carskadon, 2011). Les écrans vont de pair avec un coucher plus tardif et un sommeil plus court (Hale et Guan, 2015). Noter le soir ce qui reste à faire fait s’endormir plus vite (Scullin et al., 2018). Auto-observation, aucun diagnostic.",
+        "quellen": [
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Hale, L. & Guan, S. (2015). Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58.",
+          "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146."
+        ],
+        "differenzierung": {
+          "leichter": "Affirmations et un changement ; journal sur trois jours.",
+          "schwerer": "Chercher des schémas dans les couleurs."
+        },
+        "impulse": [
+          "Qu’est-ce qui change avant un bon réveil ?",
+          "Quel changement serait le plus facile ?"
+        ],
+        "tipps": [
+          "Première ligne du journal remplie en cours.",
+          "Ne jamais présenter une faute : tout le monde n’a pas une chambre calme."
+        ],
+        "achtung": "Au-delà de la fatigue normale : presque pas de sommeil pendant des semaines, forte somnolence, angoisse ou ruminations nocturnes, soucis à la maison. Pas en plénière ; entretien individuel, SePAS ou responsable.",
+        "material": "Crayons de couleur ; bruit de pluie"
+      }
+    }
+  },
+  {
+    "id": "sr-koerper-kann",
+    "bereich": "selbstreflexion",
+    "thema": "fuersorge",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-19",
+      "K-26",
+      "K-18",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Körperwertschätzung",
+      "Körperbild",
+      "Körperwahrnehmung",
+      "Dankbarkeit",
+      "Achtsamkeit",
+      "Selbstwert",
+      "Wohlbefinden",
+      "Pubertät"
+    ],
+    "verwandt": [
+      "beduerfnis-glaeser",
+      "koerperbild",
+      "t2-staerken-schatzkiste",
+      "sr-auftank-liste"
+    ],
+    "bild": "icon:yoga",
+    "de": {
+      "titel": "Was mein Körper alles kann",
+      "untertitel": "Danke sagen für das, was er für mich tut",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dein Körper arbeitet den ganzen Tag für dich, auch wenn du nicht daran denkst: Er trägt dich, lässt dich hören, lachen, rennen, einschlafen. Hier geht es um das, was er kann und dir möglich macht – an Tagen, an denen es leicht ist, und an Tagen, an denen es schwerer ist."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal die Stellen an, mit denen dein Körper dir etwas möglich macht. Jede Farbe steht für etwas anderes.",
+          "hinweis": "Eine Stelle darf mehrere Farben haben. Es zählt, was du erlebst, nicht, was auf dem Bild stimmt.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {
+              "farbe": "blau",
+              "text": "Sinne: sehen, hören, riechen, schmecken, spüren"
+            },
+            {
+              "farbe": "orange",
+              "text": "Bewegung: gehen, springen, tanzen, tragen"
+            },
+            {
+              "farbe": "gelb",
+              "text": "Schaffen: schreiben, bauen, kochen, spielen"
+            },
+            {
+              "farbe": "gruen",
+              "text": "Erholen: atmen, schlafen, heilen"
+            },
+            {
+              "farbe": "lila",
+              "text": "Gefühle spüren: Herzklopfen, Schmetterlinge im Bauch"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sammle: Was kann dein Körper? Schreib in jedes Herz, was dir zur Überschrift einfällt.",
+          "hinweis": "Ein Beispiel: „Sinne: An den Schritten auf der Treppe höre ich, wer kommt.“ Kurz darf es sein, auch Stichwörter.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "herz",
+          "items": [
+            "Sinne: Das nehme ich wahr …",
+            "Bewegung: Das schafft er …",
+            "Schaffen: Das mache ich mit meinen Händen …",
+            "Erholen: So sorgt er für sich …",
+            "Gefühle: So sagt er mir, was los ist …"
+          ],
+          "spalten": 3,
+          "hoehe": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Sache aus, die du heute bewusst tust. In der Stunde probierst du sie zwei Minuten lang aus.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "ein Glas Wasser langsam trinken und jeden Schluck spüren",
+            "zehn Atemzüge, eine Hand auf dem Bauch",
+            "barfuß stehen und den Boden spüren",
+            "beim Gehen auf jeden Schritt achten",
+            "die Hände reiben und die Wärme spüren",
+            "mich lang strecken und gähnen",
+            "Musik hören und mit dem Körper mitgehen",
+            "zwei Finger ans Handgelenk legen und den Puls spüren"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie fühlt sich dein Körper danach an? Kreuz auf jedem Regler an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Körper angespannt",
+              "Körper locker"
+            ],
+            [
+              "Körper müde",
+              "Körper wach"
+            ],
+            [
+              "Körper unruhig",
+              "Körper ruhig"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib deinem Körper einen Dank-Satz.",
+          "hinweis": "Ein Satz reicht. Er darf ernst sein, lustig oder leise.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mein Dank-Satz",
+          "hoehe": 3,
+          "beispiel": "Danke, Körper, dass du mich heute die Treppe hochgetragen hast, obwohl ich müde war."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Körper sind verschieden.",
+          "text": "Jeder Körper kann anderes, und an manchen Tagen weniger als sonst – bei Krankheit, Schmerzen oder Müdigkeit. Dann zählt, was er trotzdem tut: atmen, dich tragen, heilen, fühlen. Was auf deinem Blatt steht, gilt nur für dich. Wenn dich dein Körper gerade sehr beschäftigt oder belastet, sprich mit einer Person, der du vertraust."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen nehmen wahr, was ihr Körper für sie leistet, tun bewusst etwas mit ihm und formulieren einen Dank-Satz.",
+        "ablauf": [
+          "Einstieg (5 Min.): Augen zu, eine Minute auf drei Geräusche im Raum horchen, dann auf den Atem. Fragen: „Was hat dein Körper eben für dich getan?“",
+          "Erklären (5 Min.): Es geht um Funktionen, nie ums Aussehen. Beispiel: „Meine Beine tragen mich zum Bus.“ Keine Kommentare zu Körpern anderer.",
+          "Einzelarbeit (20 Min.): Ausmalen, Herzen füllen, eine Übung zwei Minuten ausprobieren, Regler, Dank-Satz.",
+          "Austausch (10 Min.), freiwillig: Im Stehen reihum „Mein Körper kann …“; Passen ist erlaubt.",
+          "Abschluss (5 Min.): Dank-Satz leise lesen oder einstecken. Niemand liest vor."
+        ],
+        "hintergrund": "Körperwertschätzung kann auf das zielen, was der Körper kann, statt auf sein Aussehen. Funktions-Übungen verbesserten in einer Studie das Körperbild – zunächst bei jungen Frauen untersucht (Alleva et al., 2015); für Jugendliche ist die Befundlage dünner. Das bewusste Spüren des Körpers (Interozeption) ist zugleich Grundlage für Gefühlswahrnehmung und Selbstregulation (Craig, 2002). Das Blatt vermeidet jede Aussage zu Aussehen, Gewicht oder Vergleich.",
+        "quellen": [
+          "Alleva, J. M., Martijn, C., Van Breukelen, G. J. P., Jansen, A. & Karos, K. (2015). Expand Your Horizon: A programme that improves body image and reduces self-objectification by training women to focus on body functionality. Body Image, 15, 81–89.",
+          "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666."
+        ],
+        "differenzierung": {
+          "leichter": "Zwei Farben, zwei Herzen.",
+          "schwerer": "Zu jeder Farbe ein Erlebnis der Woche notieren."
+        },
+        "impulse": [
+          "Was kann dein Körper, das du lange für selbstverständlich hieltest?",
+          "Welche Sinneswahrnehmung heute war schön?"
+        ],
+        "tipps": [
+          "Spür-Übungen mit Alternativen anbieten (Stehen oder Sitzen, Augen offen).",
+          "Den Dank-Satz darf man behalten."
+        ],
+        "achtung": "Körperbild und Essverhalten sind heikel: Auf abwertende Aussagen über den Körper, Essen oder Sport als Zwang, Gewichtsverlust, Rückzug achten. Nicht im Plenum vertiefen, keine Kommentare zu Körpern. Einzelgespräch, SePAS und Responsable informieren; bei Krise 112 oder KJT 116 111.",
+        "material": "Buntstifte (5 Farben)"
+      }
+    },
+    "fr": {
+      "titel": "Tout ce que mon corps sait faire",
+      "untertitel": "Dire merci pour ce qu’il fait pour moi",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ton corps travaille toute la journée pour toi, même quand tu n’y penses pas : il te porte, te laisse entendre, rire, courir, t’endormir. Ici, il s’agit de ce qu’il sait faire et de ce qu’il te rend possible – les jours où c’est facile et les jours où c’est plus dur."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Colorie les endroits par lesquels ton corps te rend quelque chose possible. Chaque couleur a un sens.",
+          "hinweis": "Un endroit peut avoir plusieurs couleurs. Ce qui compte, c’est ce que tu vis, pas ce qui est « juste » sur le dessin.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {
+              "farbe": "blau",
+              "text": "Sens : voir, entendre, sentir, goûter, toucher"
+            },
+            {
+              "farbe": "orange",
+              "text": "Mouvement : marcher, sauter, danser, porter"
+            },
+            {
+              "farbe": "gelb",
+              "text": "Créer : écrire, construire, cuisiner, jouer"
+            },
+            {
+              "farbe": "gruen",
+              "text": "Récupérer : respirer, dormir, guérir"
+            },
+            {
+              "farbe": "lila",
+              "text": "Ressentir : cœur qui bat, papillons dans le ventre"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rassemble : que sait faire ton corps ? Écris dans chaque cœur ce qui te vient à l’idée.",
+          "hinweis": "Un exemple : « Sens : à ses pas dans l’escalier, je sais qui arrive. » Court, c’est très bien, des mots-clés aussi.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "herz",
+          "items": [
+            "Sens : ce que je perçois …",
+            "Mouvement : ce qu’il réussit …",
+            "Créer : ce que je fais de mes mains …",
+            "Récupérer : comment il prend soin de lui …",
+            "Ressentir : comment il me dit ce qui se passe …"
+          ],
+          "spalten": 3,
+          "hoehe": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une chose que tu fais consciemment aujourd’hui. Pendant le cours, tu l’essaies deux minutes.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "boire un verre d’eau lentement en sentant chaque gorgée",
+            "dix respirations, une main sur le ventre",
+            "me tenir pieds nus et sentir le sol",
+            "faire attention à chaque pas en marchant",
+            "me frotter les mains et sentir la chaleur",
+            "m’étirer longuement et bâiller",
+            "écouter de la musique et bouger avec",
+            "poser deux doigts sur le poignet et sentir le pouls"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment ton corps se sent-il après ? Mets une croix sur chaque curseur.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "corps tendu",
+              "corps détendu"
+            ],
+            [
+              "corps fatigué",
+              "corps éveillé"
+            ],
+            [
+              "corps agité",
+              "corps calme"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris une phrase de remerciement à ton corps.",
+          "hinweis": "Une phrase suffit. Elle peut être sérieuse, drôle ou toute douce.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Ma phrase de merci",
+          "hoehe": 3,
+          "beispiel": "Merci, corps, de m’avoir fait monter l’escalier aujourd’hui, même quand j’étais à plat."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Les corps sont différents.",
+          "text": "Chaque corps sait faire autre chose, et certains jours moins que d’habitude – en cas de maladie, de douleur ou de fatigue. Alors compte ce qu’il fait malgré tout : respirer, te porter, guérir, ressentir. Ce qui est écrit sur ta feuille ne vaut que pour toi. Si ton corps te préoccupe ou te pèse beaucoup en ce moment, parles-en à une personne en qui tu as confiance."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes perçoivent ce que leur corps fait pour eux, font consciemment quelque chose avec lui et écrivent une phrase de merci.",
+        "ablauf": [
+          "Entrée en matière (5 min) : yeux fermés, écouter une minute trois bruits de la salle, puis la respiration. Demander : « Qu’a fait ton corps pour toi à l’instant ? »",
+          "Expliquer (5 min) : on parle de fonctions, jamais d’apparence. Exemple : « Mes jambes me portent jusqu’au bus. » Pas de commentaires sur le corps des autres.",
+          "Travail individuel (20 min) : colorier, remplir les cœurs, essayer un exercice deux minutes, curseurs, phrase de merci.",
+          "Échange (10 min), facultatif : debout, à tour de rôle « Mon corps sait … » ; passer est permis.",
+          "Clôture (5 min) : lire la phrase de merci en silence ou la garder. Personne ne lit à voix haute."
+        ],
+        "hintergrund": "Valoriser son corps pour ce qu’il sait faire place les fonctions plutôt que l’apparence au centre. De tels exercices ont amélioré l’image du corps dans une étude – menée d’abord auprès de jeunes femmes (Alleva et al., 2015) ; pour les adolescents, les données sont plus minces. Sentir consciemment son corps (intéroception) est aussi une base de la perception des émotions et de l’autorégulation (Craig, 2002). La feuille évite toute remarque sur l’apparence, le poids ou la comparaison.",
+        "quellen": [
+          "Alleva, J. M., Martijn, C., Van Breukelen, G. J. P., Jansen, A. & Karos, K. (2015). Expand Your Horizon: A programme that improves body image and reduces self-objectification by training women to focus on body functionality. Body Image, 15, 81–89.",
+          "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666."
+        ],
+        "differenzierung": {
+          "leichter": "Deux couleurs, deux cœurs.",
+          "schwerer": "Une expérience de la semaine par couleur."
+        },
+        "impulse": [
+          "Que sait faire ton corps que tu trouvais normal depuis longtemps ?",
+          "Quelle perception d’aujourd’hui était belle ?"
+        ],
+        "tipps": [
+          "Proposer des alternatives pour les exercices (debout ou assis, yeux ouverts).",
+          "La phrase de merci peut rester pour soi."
+        ],
+        "achtung": "Image du corps et alimentation : sujets sensibles. Attention aux propos dévalorisants sur son corps, à la nourriture ou au sport vécus comme contrainte, à la perte de poids, au repli. Pas en plénière, aucun commentaire sur les corps. Entretien individuel, SePAS et responsable ; en crise : 112 ou KJT 116 111.",
+        "material": "Crayons de couleur (5 couleurs)"
+      }
+    }
+  }
+]

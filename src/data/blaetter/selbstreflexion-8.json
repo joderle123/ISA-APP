@@ -1,0 +1,1960 @@
+[
+  {
+    "id": "sr-eine-stunde-mehr",
+    "bereich": "selbstreflexion",
+    "thema": "ziele",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40–45 Min.",
+    "eldib": [
+      "K-33",
+      "K-26",
+      "SOZ-40",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Zeit",
+      "Freizeit",
+      "Bedürfnisse",
+      "Selbstwahrnehmung",
+      "Selbstfürsorge",
+      "Gedankenspiel"
+    ],
+    "verwandt": [
+      "sr-guter-tag",
+      "beduerfnis-glaeser",
+      "tag-in-24-stunden"
+    ],
+    "bild": "icon:gift",
+    "de": {
+      "titel": "Eine Stunde geschenkt",
+      "untertitel": "Der Tag hat ab morgen 25 Stunden – die letzte gehört nur dir.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Stell dir vor, der Tag hat ab morgen 25 Stunden. Die Extra-Stunde gehört nur dir: Sie muss weder nützlich noch vernünftig sein. Was du wählst, verrät viel darüber, was du gerade brauchst – und es gibt kein Richtig und kein Falsch."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreuz an, was du mit der geschenkten Stunde machen würdest. Du darfst mehrere Dinge wählen. Setz einen Stern neben deine erste Wahl.",
+          "hinweis": "Denk nicht lange nach: Nimm, was dein Bauch zuerst sagt. Fehlt etwas, schreib es unten dazu.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Ausschlafen oder einfach daliegen",
+            "Draußen sein, frische Luft",
+            "Mich bewegen: Sport, Tanzen, Laufen",
+            "Musik hören, singen oder spielen",
+            "Zeichnen, Schreiben, Basteln, Bauen",
+            "Zocken, Serien oder Videos schauen",
+            "Mit Freunden quatschen, abhängen",
+            "Zeit mit einem Menschen, der mir wichtig ist",
+            "Etwas lernen, das mich wirklich interessiert",
+            "Aufräumen und Ordnung schaffen",
+            "Allein sein und nichts tun",
+            "Etwas ganz Neues ausprobieren"
+          ],
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie würde sich deine Stunde anfühlen? Mach auf jedem Regler ein Kreuz, dort, wo du stehst.",
+          "hinweis": "Beide Seiten sind in Ordnung. Dein Kreuz zeigt nur, was zu dir passt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "stufen": 5,
+          "spalten": 2,
+          "paare": [
+            [
+              "allein",
+              "mit anderen"
+            ],
+            [
+              "drinnen",
+              "draußen"
+            ],
+            [
+              "ruhig",
+              "in Bewegung"
+            ],
+            [
+              "geplant",
+              "spontan"
+            ],
+            [
+              "Kopf",
+              "Körper"
+            ],
+            [
+              "Neues",
+              "Vertrautes"
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau auf deine Sterne und Kreuze. Was brauchst du gerade vielleicht – und was würde dir die Stunde davon geben?",
+          "hinweis": "Beispiel: Wer „ausschlafen“ wählt, braucht oft Ruhe. Wer „Freunde“ wählt, sucht vielleicht Nähe oder Spaß. Die Wörter im Kasten helfen.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Das könnte dahinterstecken",
+          "items": [
+            "Ruhe",
+            "Bewegung",
+            "Nähe",
+            "Spaß",
+            "Freiraum",
+            "Anerkennung",
+            "Kreativität"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Meine Wahl",
+            "Was mir daran gefällt",
+            "Was ich dadurch bekomme"
+          ],
+          "zeilen": 2,
+          "breiten": [
+            1.1,
+            1.6,
+            1.3
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "Spazieren gehen",
+            "Niemand redet auf mich ein, die Luft ist frisch.",
+            "Ruhe und Freiraum"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal deine Stunde: Wie sieht sie aus, wie klingt sie, welche Farben hat sie? Du darfst malen, kritzeln oder Symbole setzen.",
+          "hinweis": "Ein Kunstwerk ist nicht nötig. Ein Kreis in deiner Lieblingsfarbe reicht schon.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Meine geschenkte Stunde",
+          "zeichnen": true,
+          "hoehe": 9,
+          "fuellen": false
+        },
+        {
+          "art": "aufgabe",
+          "text": "Du musst nicht auf die 25. Stunde warten. Wie holst du dir schon diese Woche ein kleines Stück davon?",
+          "hinweis": "Ein Stück heißt: zehn Minuten, nicht eine ganze Stunde. Und es darf etwas sein, das du allein schaffst."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich mittwochs aus dem Bus steige,",
+              "dann": "gehe ich das letzte Stück zu Fuß und höre ein Lied. (Ruhe)"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tipp: Kleiner als gedacht",
+          "text": "Oft reicht ein Teil des Wunsches: ein Lied statt eines Konzerts, eine Runde um den Block statt einer Wanderung. Was du hier aufschreibst, gehört dir – zeigen musst du nichts."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen im Gedankenspiel „25. Stunde“, welche Bedürfnisse hinter ihren Wünschen stehen, und planen ein kleines Stück davon für diese Woche.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sanduhr (60 Sekunden) in die Mitte stellen, alle schauen zu oder schließen die Augen. Danach: „Wie lang war diese Minute?“ Gedankenspiel vorstellen.",
+          "Erklären (5 Min.): Am eigenen Beispiel vormachen: ankreuzen, Stern setzen, Kreuz auf den Regler. Kein Richtig, kein Falsch; nichts wird eingesammelt.",
+          "Einzelarbeit (15 Min.): Aufgaben 1 bis 4, zum Schluss das Bild; leise Instrumentalmusik. Wer fertig ist, ergänzt eigene Ideen.",
+          "Austausch, freiwillig (10 Min.): Linie „allein – mit anderen“ auf den Boden kleben; alle stellen sich dorthin, wo ihre Stunde stattfände. Dann zu zweit: „Was würde dir dein Stern geben?“",
+          "Plan und Abschluss (10 Min.): Aufgabe 5 mit Wenn-dann-Plan; wer mag, liest ihn vor. Zum Schluss ein Wort, das man mitnimmt."
+        ],
+        "material": "Buntstifte, Sanduhr, Kreppband, leise Musik",
+        "differenzierung": {
+          "leichter": "Nur die Auswahl und vier Regler; Bedürfnisse mündlich zu zweit zuordnen.",
+          "schwerer": "Für ein Bedürfnis drei Wege sammeln, es zu erfüllen, und den einfachsten wählen."
+        },
+        "achtung": "Wünsche wie „nur schlafen“ oder „niemanden sehen“ können auf Erschöpfung oder Rückzug hinweisen. Nicht im Plenum nachfragen: Einzelgespräch, SePAS oder Vertrauensperson. Familie nie vorgeben. Bei Gefährdung sofort nach internem Ablauf handeln; Kanner- a Jugendtelefon 116 111.",
+        "hintergrund": "Wünsche für freie Zeit geben Hinweise auf Bedürfnisse. Die Selbstbestimmungstheorie nennt Autonomie, Kompetenz und soziale Eingebundenheit als psychologische Grundbedürfnisse (Deci & Ryan, 2000). Das Gedankenspiel macht es leicht, Wünsche auszusprechen, die im Schulalltag untergehen. Hinter jeder Wahl steht ein Bedürfnis, das sich oft auch auf kleinem Weg erfüllen lässt. Für die Umsetzung dient ein konkreter Wenn-dann-Plan (Gollwitzer, 1999). Kreuze und Regler sind ohne Wertung gebaut: ein Gesprächsangebot, kein Test.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "impulse": [
+          "Was hat dich überrascht?",
+          "Was wirkt schon in zehn Minuten?"
+        ],
+        "tipps": [
+          "Eigene Wahl vormachen, ruhig unspektakulär.",
+          "Nach Wochen erneut wählen lassen."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Une heure en cadeau",
+      "untertitel": "À partir de demain, la journée compte 25 heures – la dernière n’est qu’à toi.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Imagine que la journée compte 25 heures à partir de demain. L’heure en plus n’est qu’à toi : elle n’a pas besoin d’être utile ni raisonnable. Ce que tu choisis en dit long sur ce dont tu as besoin en ce moment – et il n’y a ni bonne ni mauvaise réponse."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Coche ce que tu ferais avec l’heure en cadeau. Tu peux choisir plusieurs choses. Mets une étoile à côté de ton premier choix.",
+          "hinweis": "Ne réfléchis pas trop : prends ce que ton ventre dit en premier. S’il manque quelque chose, ajoute-le en bas.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Dormir ou simplement rester allongé",
+            "Être dehors, prendre l’air",
+            "Bouger : sport, danse, course",
+            "Écouter de la musique, chanter, jouer",
+            "Dessiner, écrire, bricoler, construire",
+            "Jouer en ligne, regarder des séries",
+            "Discuter avec des amis ou sortir avec eux",
+            "Passer du temps avec quelqu’un qui compte",
+            "Apprendre ce qui m’intéresse vraiment",
+            "Ranger et mettre de l’ordre",
+            "Être seul et ne rien faire",
+            "Essayer quelque chose de jamais fait"
+          ],
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment se sentirait ton heure ? Mets une croix sur chaque curseur, là où tu te situes.",
+          "hinweis": "Les deux côtés sont bien. Ta croix montre seulement ce qui te correspond.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "stufen": 5,
+          "spalten": 2,
+          "paare": [
+            [
+              "seul",
+              "avec d’autres"
+            ],
+            [
+              "à l’intérieur",
+              "dehors"
+            ],
+            [
+              "au calme",
+              "en mouvement"
+            ],
+            [
+              "prévu",
+              "spontané"
+            ],
+            [
+              "tête",
+              "corps"
+            ],
+            [
+              "nouveauté",
+              "habitude"
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regarde tes étoiles et tes croix. De quoi as-tu peut-être besoin en ce moment – et que te donnerait cette heure ?",
+          "hinweis": "Exemple : qui choisit « dormir » a souvent besoin de calme. Qui choisit « les amis » cherche peut-être de la proximité ou du plaisir. Les mots de l’encadré t’aident.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Ce qui peut se cacher derrière",
+          "items": [
+            "calme",
+            "mouvement",
+            "proximité",
+            "plaisir",
+            "liberté",
+            "reconnaissance",
+            "aventure"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mon choix",
+            "Ce que j’aime là-dedans",
+            "Ce que cela m’apporte"
+          ],
+          "zeilen": 2,
+          "breiten": [
+            1.1,
+            1.6,
+            1.3
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "Me balader",
+            "Personne ne me parle, l’air est frais.",
+            "Calme et liberté"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine ton heure : à quoi ressemble-t-elle, quel son a-t-elle, quelles couleurs ? Tu peux dessiner, gribouiller ou poser des symboles.",
+          "hinweis": "Pas besoin d’une œuvre d’art. Un cercle dans ta couleur préférée suffit déjà.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mon heure en cadeau",
+          "zeichnen": true,
+          "hoehe": 9,
+          "fuellen": false
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tu n’as pas besoin d’attendre la 25e heure. Comment te procures-tu dès cette semaine un petit morceau de tout cela ?",
+          "hinweis": "Un morceau, cela veut dire dix minutes, pas une heure entière. Et cela peut être quelque chose que tu fais seul."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je descends du bus mercredi,",
+              "dann": "je fais le dernier bout à pied et j’écoute une chanson. (Calme)"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Astuce : plus petit que prévu",
+          "text": "Souvent, un morceau du souhait suffit : une chanson plutôt qu’un concert, un tour du pâté de maisons plutôt qu’une randonnée. Ce que tu écris ici t’appartient – tu n’as rien à montrer."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Grâce au jeu de la 25e heure, les jeunes repèrent les besoins qui se cachent derrière leurs envies et planifient un petit morceau pour cette semaine.",
+        "ablauf": [
+          "Entrée en matière (5 min) : poser un sablier (60 secondes) au centre ; tous regardent ou ferment les yeux. Puis : « Combien de temps cette minute a-t-elle duré ? » Présenter le jeu de pensée.",
+          "Expliquer (5 min) : faire un exemple personnel : cocher, mettre une étoile, croix sur un curseur. Ni bonne ni mauvaise réponse ; rien n’est ramassé.",
+          "Travail individuel (15 min) : tâches 1 à 4, le dessin en dernier ; musique instrumentale douce. Qui a fini ajoute ses propres idées.",
+          "Échange volontaire (10 min) : coller au sol une ligne « seul – avec d’autres » ; chacun se place là où son heure aurait lieu. Puis à deux : « Que te donnerait ton étoile ? »",
+          "Clôture (10 min) : tâche 5 avec le plan si-alors ; lecture à voix haute pour qui le souhaite. Pour finir, un mot que l’on emporte."
+        ],
+        "material": "Crayons de couleur, sablier, ruban adhésif, musique douce",
+        "differenzierung": {
+          "leichter": "Seulement le choix et quatre curseurs ; associer les besoins à l’oral, à deux.",
+          "schwerer": "Chercher trois façons de combler un besoin et choisir la plus simple."
+        },
+        "achtung": "Des souhaits comme « seulement dormir » ou « ne voir personne » peuvent signaler épuisement ou repli. Ne pas questionner en plénière : entretien individuel, SePAS ou personne de confiance. Ne jamais imposer la famille. En cas de danger, agir selon la procédure interne ; Kanner- a Jugendtelefon 116 111.",
+        "hintergrund": "Les souhaits pour le temps libre renseignent sur les besoins. La théorie de l’autodétermination désigne l’autonomie, la compétence et l’appartenance sociale comme besoins psychologiques fondamentaux (Deci & Ryan, 2000). Le jeu de pensée facilite l’expression de souhaits qui se perdent dans le quotidien scolaire. Derrière chaque choix se trouve un besoin, qu’on peut souvent combler à petite échelle. Pour la mise en œuvre, un plan si-alors concret (Gollwitzer, 1999). Croix et curseurs sont sans jugement : une invitation à parler, pas un test.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "impulse": [
+          "Qu’est-ce qui t’a surpris ?",
+          "Que ferait déjà effet en dix minutes ?"
+        ],
+        "tipps": [
+          "Faire son propre choix en exemple.",
+          "Refaire le choix des semaines plus tard."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sr-guter-tag",
+    "bereich": "selbstreflexion",
+    "thema": "ziele",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-29",
+      "V-32",
+      "K-33",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Tagesablauf",
+      "Alltag",
+      "Wohlbefinden",
+      "Ressourcen",
+      "Balance",
+      "Freizeit",
+      "Sinne"
+    ],
+    "verwandt": [
+      "sr-eine-stunde-mehr",
+      "tag-in-24-stunden",
+      "t4-energie-kreis"
+    ],
+    "bild": "icon:sun",
+    "de": {
+      "titel": "Ein guter Tag – mein Traumtag",
+      "untertitel": "Wie sieht ein guter Schultag aus – und wie ein Tag ganz nach deinem Kopf?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Nicht jeder Tag kann ein Traumtag sein, aber ein guter Tag ist öfter drin, als man denkt. Hier malst du zwei Tage nebeneinander: einen guten Tag mit Schule, wie er wirklich sein könnte, und einen Traumtag ohne jede Pflicht. Was ähnlich ist und was ganz anders, zeigt dir, worauf es dir ankommt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schließ kurz die Augen. Du wachst am Morgen deines Traumtags auf. Was hörst, riechst und siehst du? Schreib ein Stichwort in jede Wolke.",
+          "hinweis": "Nur du kennst deinen Traumtag. Er darf verrückt sein – oder ganz klein.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "wolke",
+          "items": [
+            "Ich höre …",
+            "Ich rieche …",
+            "Ich sehe …"
+          ],
+          "spalten": 3,
+          "hoehe": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal beide Tage aus. Jede Stunde bekommt die Farbe ihrer Tätigkeit.",
+          "hinweis": "Oben ist Mitternacht, unten Mittag. Links ein guter Tag mit Schule, rechts dein Traumtag ohne Pflichten. Für die graue Zeile wählst du selbst, was sie bedeuten soll.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "tageskreis",
+          "titel": [
+            "Ein guter Tag mit Schule",
+            "Mein Traumtag"
+          ],
+          "legende": [
+            {
+              "farbe": "blau",
+              "text": "Schlafen"
+            },
+            {
+              "farbe": "gelb",
+              "text": "Schule, Lernen"
+            },
+            {
+              "farbe": "gruen",
+              "text": "Menschen, die mir wichtig sind"
+            },
+            {
+              "farbe": "orange",
+              "text": "Essen, Kochen"
+            },
+            {
+              "farbe": "rot",
+              "text": "Bewegung, Sport"
+            },
+            {
+              "farbe": "lila",
+              "text": "Handy, Serien, Spiele"
+            },
+            {
+              "farbe": "rosa",
+              "text": "Hobbys, Kreatives"
+            },
+            {
+              "farbe": "grau",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Leg die Kreise nebeneinander: Wie weit sind die beiden Tage voneinander entfernt?"
+        },
+        {
+          "art": "skala",
+          "von": "fast gleich",
+          "bis": "ganz anders",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "In meinem Traumtag gibt es viel mehr …",
+            "In meinem guten Tag fehlt mir …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Teile deines Traumtags passen auch in einen normalen Tag – vielleicht kleiner, kürzer oder anders?",
+          "hinweis": "Bis mittags schlafen geht unter der Woche nicht. Zehn Minuten länger liegen bleiben schon.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Teil aus meinem Traumtag",
+            "So passt er in einen normalen Tag",
+            "Wann?"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            1.2,
+            1.9,
+            0.8
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "Bis mittags schlafen",
+            "Zehn Minuten länger liegen bleiben und dabei ein Lied hören",
+            "Mo bis Fr, früh"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tipp: Dein Traumtag ist ein Kompass",
+          "text": "Er zeigt die Richtung, nicht das Ziel. Spielt fast alles draußen oder mit Menschen, suchst du vielleicht Bewegung oder Nähe. Was du hier einträgst, gehört dir."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir ein Stück aus und bau es diese Woche in einen Tag ein."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich dienstags aus der Schule komme,",
+              "dann": "gehe ich zehn Minuten raus, bevor ich die Hausaufgaben anfange."
+            }
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen vergleichen einen guten Schultag mit einem Traumtag ohne Pflichten, erkennen, was ihnen darin wichtig ist, und holen ein Stück davon in einen normalen Tag.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein ruhiges Lied (1–2 Min., am besten ohne Text) abspielen; Augen schließen oder aus dem Fenster schauen. Danach: „Zu welcher Tageszeit passt es? Wie sieht der Tag dazu aus?“",
+          "Erklären (5 Min.): Beide Kreise zeigen, einen an der Tafel halb vormachen: Schlaf in Blau, Schule in Gelb. Graue Zeile = eigene Farbe. Kein Richtig, kein Falsch; nichts wird eingesammelt.",
+          "Einzelarbeit (15 Min.): Aufgabe 1 (3 Min., Wolken), Aufgabe 2 (12 Min., beide Kreise ausmalen). Das Lied leise weiterlaufen lassen.",
+          "Austausch, freiwillig (10 Min.): Zu zweit die Kreise nebeneinanderlegen: „Was ist gleich, was anders?“ Dann im Raum: Zettel „Ruhe“, „Bewegung“, „Menschen“ an den Wänden; alle stellen sich zum Wort, das im Traumtag am meisten steckt.",
+          "Abschluss (10 Min.): Aufgaben 3 bis 5 (Skala, Tabelle, Wenn-dann). Wer mag, nennt ein Stück, das er oder sie diese Woche in einen Tag holt."
+        ],
+        "material": "Buntstifte (8 Farben), Lied und Abspielgerät, drei Zettel, Kreppband",
+        "differenzierung": {
+          "leichter": "Nur den Traumtag ausmalen und drei übertragbare Stücke mündlich zu zweit finden.",
+          "schwerer": "Zu jedem Stück notieren, was es kostet (Zeit, Mut, Absprache)."
+        },
+        "achtung": "Zeigen die Kreise fast nur Schlafen und Bildschirm oder fehlen Essen und Menschen, kann das auf Rückzug hinweisen. Nicht im Plenum ansprechen: Einzelgespräch, SePAS oder Vertrauensperson. Traumtage ohne Familie nicht deuten. Bei Gefährdung sofort nach internem Ablauf handeln.",
+        "hintergrund": "Ein Traumtag macht sichtbar, was Menschen im Alltag antreibt, und lenkt den Blick vom Mangel auf Kraftquellen. Positive Erlebnisse weiten Aufmerksamkeit und Handlungsmöglichkeiten und bauen Ressourcen auf (Fredrickson, 2001). Wer Angenehmes bewusst wahrnimmt und auskostet, verlängert seine Wirkung; dieses Savoring lässt sich üben, auch in der Vorstellung (Bryant & Veroff, 2007). Deshalb beginnt das Blatt mit den Sinnen. Verglichen werden Wünsche, keine Leistungen.",
+        "quellen": [
+          "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.",
+          "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum."
+        ],
+        "impulse": [
+          "Was ist schon fast ein Traumtag?",
+          "Welche Farbe fehlt im normalen Tag?"
+        ],
+        "tipps": [
+          "Ein guter Tag darf unspektakulär sein.",
+          "Nach Wochen den Tag neu malen."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Une bonne journée – ma journée de rêve",
+      "untertitel": "À quoi ressemble une bonne journée de cours – et une journée de rêve, à ta façon ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Toutes les journées ne peuvent pas être de rêve, mais une bonne journée est plus souvent possible qu’on ne le pense. Ici, tu colories deux journées côte à côte : une bonne journée de lycée, telle qu’elle pourrait vraiment être, et une journée de rêve sans aucune obligation. Ce qui se ressemble et ce qui diffère te montre ce qui compte pour toi."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ferme les yeux. Tu te réveilles le matin de ta journée de rêve. Qu’entends-tu, que sens-tu, que vois-tu ? Écris un mot-clé par nuage.",
+          "hinweis": "Toi seul connais ta journée de rêve. Elle peut être folle – ou toute petite.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "wolke",
+          "items": [
+            "J’entends …",
+            "Ça sent …",
+            "Je vois …"
+          ],
+          "spalten": 3,
+          "hoehe": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Colorie les deux journées. Chaque heure prend la couleur de son activité.",
+          "hinweis": "En haut, c’est minuit ; en bas, midi. À gauche, une bonne journée avec cours ; à droite, ta journée de rêve sans obligations. Pour la ligne grise, tu décides toi-même de sa signification.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "tageskreis",
+          "titel": [
+            "Une bonne journée de lycée",
+            "Ma journée de rêve"
+          ],
+          "legende": [
+            {
+              "farbe": "blau",
+              "text": "Dormir"
+            },
+            {
+              "farbe": "gelb",
+              "text": "Cours, étudier"
+            },
+            {
+              "farbe": "gruen",
+              "text": "Personnes qui comptent"
+            },
+            {
+              "farbe": "orange",
+              "text": "Repas, cuisine"
+            },
+            {
+              "farbe": "rot",
+              "text": "Bouger, sport"
+            },
+            {
+              "farbe": "lila",
+              "text": "Téléphone, séries, jeux"
+            },
+            {
+              "farbe": "rosa",
+              "text": "Passions, créer"
+            },
+            {
+              "farbe": "grau",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pose les cercles côte à côte : à quelle distance sont les deux journées ?"
+        },
+        {
+          "art": "skala",
+          "von": "presque pareilles",
+          "bis": "très différentes",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Dans ma journée de rêve, il y a beaucoup plus de …",
+            "Dans ma bonne journée, il me manque …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelles parties de ta journée de rêve entrent aussi dans une journée normale – peut-être plus petites, plus courtes ou autrement ?",
+          "hinweis": "Dormir jusqu’à midi ne marche pas en semaine. Rester dix minutes de plus au lit, si.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Un morceau de ma journée de rêve",
+            "Comment il entre dans une journée normale",
+            "Quand ?"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            1.2,
+            1.9,
+            0.8
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "Dormir jusqu’à midi",
+            "Rester dix minutes de plus au lit en écoutant une chanson",
+            "lun.–ven., le matin"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Astuce : ta journée de rêve est une boussole",
+          "text": "Elle montre la direction, pas le but. Si presque tout se passe dehors ou avec des gens, tu cherches peut-être du mouvement ou de la proximité. Ce que tu écris ici t’appartient."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis un morceau et glisse-le cette semaine dans une journée."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je rentre du lycée mardi,",
+              "dann": "je sors dix minutes avant de commencer mes devoirs."
+            }
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comparent une bonne journée de cours à une journée de rêve sans obligations, repèrent ce qui compte pour eux et glissent un morceau de la seconde dans une journée normale.",
+        "ablauf": [
+          "Entrée en matière (5 min) : passer une chanson calme (1 à 2 min, de préférence sans paroles) ; fermer les yeux ou regarder par la fenêtre. Puis : « À quel moment du jour va-t-elle ? À quoi ressemble la journée ? »",
+          "Expliquer (5 min) : montrer les deux cercles, en commencer un au tableau : sommeil en bleu, cours en jaune. Ligne grise = couleur personnelle. Ni bonne ni mauvaise réponse ; rien n’est ramassé.",
+          "Travail individuel (15 min) : tâche 1 (3 min, nuages), tâche 2 (12 min, colorier les deux cercles). Laisser la chanson tourner doucement.",
+          "Échange volontaire (10 min) : à deux, poser les cercles côte à côte : « Qu’est-ce qui est pareil, qu’est-ce qui diffère ? » Puis dans la salle : papiers « Calme », « Mouvement », « Personnes » aux murs ; chacun va vers le mot le plus présent dans sa journée de rêve.",
+          "Clôture (10 min) : tâches 3 à 5 (échelle, tableau, si-alors). Qui le souhaite nomme un morceau qu’il glisse cette semaine dans une journée."
+        ],
+        "material": "Crayons de couleur (8 couleurs), chanson et lecteur, trois papiers, ruban adhésif",
+        "differenzierung": {
+          "leichter": "Colorier seulement la journée de rêve et trouver à l’oral, à deux, trois morceaux transposables.",
+          "schwerer": "Noter pour chaque morceau ce qu’il coûte (temps, courage, accord)."
+        },
+        "achtung": "Si les cercles montrent presque uniquement sommeil et écran, ou si repas et contacts manquent, cela peut signaler un repli. Pas de commentaire en plénière : entretien individuel, SePAS ou personne de confiance. Ne pas interpréter l’absence de famille. En cas de danger, agir selon la procédure interne.",
+        "hintergrund": "Une journée de rêve rend visible ce qui motive au quotidien et déplace le regard du manque vers les ressources. Les expériences positives élargissent l’attention et les possibilités d’action et construisent des ressources (Fredrickson, 2001). Qui perçoit et savoure consciemment l’agréable en prolonge l’effet ; ce savoring s’entraîne, même en imagination (Bryant & Veroff, 2007). C’est pourquoi la feuille commence par les sens. On compare des envies, pas des performances.",
+        "quellen": [
+          "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.",
+          "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum."
+        ],
+        "impulse": [
+          "Qu’est-ce qui est déjà presque un rêve ?",
+          "Quelle couleur manque le plus ?"
+        ],
+        "tipps": [
+          "Une bonne journée peut rester simple.",
+          "Quelques semaines plus tard, recolorier."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sr-todo-monster",
+    "bereich": "selbstreflexion",
+    "thema": "ziele",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-25",
+      "V-15",
+      "V-22",
+      "KOG-61"
+    ],
+    "schlagworte": [
+      "Ziele",
+      "Planen",
+      "Aufschieben",
+      "Prüfungsstress",
+      "Referat",
+      "Motivation",
+      "Meilensteine"
+    ],
+    "verwandt": [
+      "aufschieben-ueberlisten",
+      "woop-plan",
+      "ziel-treppe"
+    ],
+    "bild": "icon:ghost",
+    "de": {
+      "titel": "Das To-do-Monster zähmen",
+      "untertitel": "Wie du ein großes Vorhaben in Stücke schneidest, die du wirklich schaffst.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein Referat, eine Prüfung, das Projekt, die Führerschein-Theorie: Je größer das Vorhaben, desto größer wird das Monster im Kopf. Oft ist nicht die Arbeit das Problem, sondern dass man nicht weiß, wo man anfangen soll. Heute schneidest du dein Monster in Stücke, die du in einer Sitzung schaffst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir ein Vorhaben aus, das dich gerade beschäftigt. Mal sein Monster in den Rahmen – so groß und wild, wie es sich anfühlt.",
+          "hinweis": "Es darf zottelig sein, vieläugig oder witzig. Gib ihm einen Namen und schreib rechts dein Vorhaben auf.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mein Monster",
+              "zeichnen": true,
+              "hoehe": 8,
+              "fuellen": false
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Mein Vorhaben: …",
+                "Der Name des Monsters: …",
+                "Fertig bis: …",
+                "Fertig ist es, wenn …",
+                "So groß fühlt es sich an (0 bis 10): …"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Teil das Vorhaben in drei Meilensteine: Zwischenziele, bei denen du sagen kannst „geschafft“. Schreib zu jedem die kleinen Schritte auf.",
+          "hinweis": "Ein kleiner Schritt dauert höchstens 30 Minuten und beginnt mit einem Verb: suchen, schreiben, fragen, ordnen, üben. Hast du einen Schritt geschafft, streich ihn durch und mal ein Stück vom Monster aus – es wird kleiner.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Meilenstein",
+            "Kleine Schritte",
+            "Bis wann?"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            1.1,
+            2.4,
+            0.7
+          ],
+          "hoehe": 3,
+          "beispiel": [
+            "Referat: Stoff sammeln",
+            "Frage festlegen · drei Quellen finden · Stichworte ordnen",
+            "Fr"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was macht dir den Start leichter? Kreuz an, was du ausprobieren würdest.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Timer auf 25 Minuten stellen",
+            "Handy in ein anderes Zimmer legen",
+            "Musik ohne Text auflegen",
+            "Zu zweit anfangen",
+            "Den Arbeitsplatz zuerst aufräumen",
+            "Den ersten Schritt gut sichtbar aufschreiben",
+            "Danach etwas Schönes einplanen",
+            "Den Ort wechseln: Bibliothek, Küche, Garten"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der erste Schritt zählt. Wähl den kleinsten Schritt aus deiner Tabelle und leg Tag und Uhrzeit fest.",
+          "hinweis": "Schreib Datum und Uhrzeit in den Wenn-Teil. Sag ihn einer Person laut, wenn du magst – das macht ihn verbindlicher."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich am Mittwoch um 16 Uhr nach Hause komme,",
+              "dann": "öffne ich ein leeres Dokument und schreibe die Frage für mein Referat hinein. (15 Minuten)"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zum Schluss: Wie groß ist das Monster jetzt? Vergleich mit deiner Zahl von vorhin.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie groß fühlt sich das Monster jetzt an?",
+          "von": "winzig",
+          "bis": "riesig",
+          "stufen": 11
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tipp: Zehn Minuten reichen zum Anfangen",
+          "text": "Der Anfang ist das Schwerste. Wer zehn Minuten durchhält, macht oft weiter. Wenn nicht, ist der Schritt trotzdem geschafft. Dein Vorhaben gehört dir – du musst niemandem zeigen, worum es geht."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen zerlegen ein großes Vorhaben in Meilensteine und kleine Schritte und wählen einen ersten Schritt mit Datum.",
+        "ablauf": [
+          "Einstieg (5 Min.): Alle formen aus Knete oder zerknülltem Papier in 60 Sekunden schweigend ein „Monster“. Frage: „Wie fühlt sich ein großes Vorhaben an?“",
+          "Erklären (5 Min.): Beispiel „Referat in zehn Tagen“ an der Tafel: Monster, drei Meilensteine, kleine Schritte. Das Knetmonster in drei Teile reißen: jedes Stück ein Meilenstein.",
+          "Einzelarbeit (15 Min.): Aufgaben 1 bis 3, leise Musik. Vorhaben dürfen privat bleiben.",
+          "Austausch, freiwillig (10 Min.): Zu zweit den ersten Schritt laut sagen, mit Tag und Uhrzeit. Die zuhörende Person antwortet nur: „Ich erinnere dich“ oder „Ich drücke dir die Daumen“.",
+          "Abschluss (10 Min.): Aufgaben 4 und 5. Mit den Händen zeigen, wie groß das Monster jetzt ist. Eine Woche später nachfragen: „Wer hat den ersten Schritt gemacht?“"
+        ],
+        "material": "Buntstifte, Knete oder Papier, Timer, leise Musik",
+        "differenzierung": {
+          "leichter": "Kleineres Vorhaben (eine Hausaufgabe), nur ein Meilenstein, zwei Schritte.",
+          "schwerer": "Zu jedem Meilenstein eine Hürde und eine Gegenmaßnahme notieren; Plan in den Kalender übertragen."
+        },
+        "achtung": "Wer bei jedem Vorhaben erstarrt, sich abwertet („ich schaffe das nie“) oder Prüfungsangst mit Beschwerden beschreibt, braucht mehr als Planung: Einzelgespräch, SePAS oder Vertrauensperson. Nicht nach Noten fragen. Bei Gefährdung sofort nach internem Ablauf handeln.",
+        "hintergrund": "Große Vorhaben überwältigen, wenn der Anfang unklar bleibt. Nahe Teilziele stärken Selbstwirksamkeit und Interesse stärker als ein fernes Ziel (Bandura & Schunk, 1981). Aufschieben dient kurzfristig oft der Stimmungsregulation: Die unangenehme Aufgabe wird vermieden, um sich besser zu fühlen (Sirois & Pychyl, 2013). Ein erster Schritt mit Zeit und Ort erhöht die Chance, ihn zu tun (Gollwitzer, 1999). Das Monsterbild macht diffuses Unbehagen sichtbar und damit bearbeitbar.",
+        "quellen": [
+          "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.",
+          "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "impulse": [
+          "Was war der kleinste Schritt?",
+          "Was machte das Monster kleiner?"
+        ],
+        "tipps": [
+          "Prüfen: „Woran sehe ich: fertig?“",
+          "Nach einer Woche Schritte durchstreichen."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Apprivoiser mon monstre à tâches",
+      "untertitel": "Découper un grand projet en morceaux que tu peux vraiment réussir.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Un exposé, un examen, le projet de classe, le code de la route : plus la tâche est grosse, plus le monstre grandit dans ta tête. Souvent, le problème n’est pas le travail, mais de ne pas savoir par où commencer. Aujourd’hui, tu découpes ton monstre en morceaux que tu peux faire en une séance."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis un projet qui te préoccupe en ce moment. Dessine son monstre dans le cadre – aussi grand et sauvage qu’il te paraît.",
+          "hinweis": "Il peut être poilu, avoir plein d’yeux ou être drôle. Donne-lui un nom et écris ton projet à droite.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mon monstre",
+              "zeichnen": true,
+              "hoehe": 8,
+              "fuellen": false
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Mon projet : …",
+                "Le nom du monstre : …",
+                "À terminer pour le : …",
+                "C’est terminé quand …",
+                "Sa taille ressentie (0 à 10) : …"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpe ton projet en trois étapes clés : des objectifs intermédiaires dont tu peux dire « c’est fait ». Note les petits pas pour chacune.",
+          "hinweis": "Un petit pas dure 30 minutes au plus et commence par un verbe : chercher, écrire, demander, ordonner, s’entraîner. Quand tu as réussi un pas, barre-le et colorie un morceau du monstre : il rapetisse.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Étape clé",
+            "Petits pas",
+            "Pour le"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            1.1,
+            2.4,
+            0.7
+          ],
+          "hoehe": 3,
+          "beispiel": [
+            "Exposé : réunir la matière",
+            "Fixer la question · trouver trois sources · ordonner les mots-clés",
+            "ven."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te facilite le départ ? Coche ce que tu essaierais.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Régler un minuteur sur 25 minutes",
+            "Poser le téléphone dans une autre pièce",
+            "Mettre de la musique sans paroles",
+            "Commencer à deux",
+            "Ranger d’abord mon coin de travail",
+            "Écrire le premier pas bien en vue",
+            "Prévoir ensuite quelque chose d’agréable",
+            "Changer de lieu : bibliothèque, cuisine, jardin"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le premier pas compte. Choisis le plus petit pas de ton tableau et fixe le jour et l’heure.",
+          "hinweis": "Écris la date et l’heure dans la partie « Si ». Dis ton pas à voix haute à quelqu’un, si tu veux – cela t’engage davantage."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je rentre mercredi à 16 heures,",
+              "dann": "j’ouvre un document vide et j’y écris la question de mon exposé. (15 minutes)"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pour finir : quelle est la taille du monstre maintenant ? Compare avec ton chiffre de tout à l’heure.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Quelle taille a le monstre maintenant ?",
+          "von": "minuscule",
+          "bis": "géant",
+          "stufen": 11
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Astuce : dix minutes suffisent pour commencer",
+          "text": "Le début est le plus difficile. Qui tient dix minutes continue souvent. Sinon, le pas est quand même fait. Ton projet t’appartient – tu n’as à montrer à personne de quoi il s’agit."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes découpent un grand projet en étapes clés et petits pas et choisissent un premier pas daté.",
+        "ablauf": [
+          "Entrée en matière (5 min) : en 60 secondes, chacun façonne en silence un « monstre » en pâte à modeler ou en papier froissé. Question : « Comment se ressent un grand projet ? »",
+          "Expliquer (5 min) : exemple « exposé dans dix jours » au tableau : monstre, trois étapes clés, petits pas. Déchirer le monstre en trois : chaque morceau est une étape clé.",
+          "Travail individuel (15 min) : tâches 1 à 3, musique douce. Les projets peuvent rester privés.",
+          "Échange volontaire (10 min) : à deux, dire à voix haute le premier pas, avec jour et heure. L’autre répond seulement : « Je te le rappelle » ou « Je croise les doigts ».",
+          "Clôture (10 min) : tâches 4 et 5. Montrer avec les mains la taille actuelle du monstre. Une semaine plus tard : « Qui a fait son premier pas ? »"
+        ],
+        "material": "Crayons de couleur, pâte à modeler ou papier, minuteur, musique douce",
+        "differenzierung": {
+          "leichter": "Projet plus petit (un devoir), une seule étape clé, deux petits pas.",
+          "schwerer": "Noter pour chaque étape un obstacle et une parade ; reporter le plan dans l’agenda."
+        },
+        "achtung": "Qui se fige devant chaque projet, se dévalorise (« je n’y arriverai jamais ») ou décrit une peur des examens avec des plaintes physiques a besoin de plus qu’un plan : entretien individuel, SePAS ou personne de confiance. Ne pas interroger sur les notes. En cas de danger, agir selon la procédure interne.",
+        "hintergrund": "Les grands projets écrasent quand le début reste flou. Des sous-objectifs proches renforcent le sentiment d’efficacité et l’intérêt davantage qu’un objectif lointain (Bandura & Schunk, 1981). Remettre à plus tard sert souvent, à court terme, à réguler l’humeur : on évite la tâche désagréable pour se sentir mieux (Sirois & Pychyl, 2013). Un premier pas avec moment et lieu augmente les chances de le faire (Gollwitzer, 1999). L’image du monstre rend visible le malaise diffus et donc travaillable.",
+        "quellen": [
+          "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.",
+          "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "impulse": [
+          "Quel est le plus petit pas ?",
+          "Qu’a rapetissé ton monstre ?"
+        ],
+        "tipps": [
+          "Tester : « À quoi vois-je : terminé ? »",
+          "Une semaine plus tard, barrer les pas faits."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sr-jahr-in-farben",
+    "bereich": "selbstreflexion",
+    "thema": "ziele",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "Einführung 45 Min., danach täglich 1 Min.",
+    "eldib": [
+      "K-26",
+      "K-16",
+      "V-29",
+      "SOZ-36"
+    ],
+    "schlagworte": [
+      "Stimmung",
+      "Gewohnheiten",
+      "Selbstbeobachtung",
+      "Gefühle",
+      "Stimmungstagebuch",
+      "Schlaf",
+      "Rückblick"
+    ],
+    "verwandt": [
+      "monat-in-farben",
+      "wochen-kurve",
+      "tag-in-24-stunden"
+    ],
+    "bild": "icon:calendar",
+    "de": {
+      "titel": "Mein Jahr in Farben",
+      "untertitel": "Jeden Abend ein Kästchen – und am Ende siehst du dein Jahr.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein Kästchen ausmalen dauert eine Minute. Nach ein paar Wochen siehst du Muster, die dir im Alltag nie auffallen würden: Welche Tage leuchten, welche sind grau, was kommt zusammen vor? Du bestimmst, wofür deine Farben stehen – Stimmung, Schlaf, Bewegung oder eine Gewohnheit, die du aufbauen willst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was willst du festhalten? Kreuz an, wofür deine Farben dieses Jahr stehen sollen.",
+          "hinweis": "Nimm eins. Wer mehrere Dinge festhalten will, nimmt für jedes ein eigenes Blatt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Meine Stimmung am Abend",
+            "Wie gut ich geschlafen habe",
+            "Ob ich mich bewegt habe",
+            "Wie viel Zeit ich draußen war",
+            "Eine Gewohnheit, die ich aufbauen will"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Leg deine Farben fest: Schreib in die Legende, wofür jede Farbe steht. Gelb ist schon besetzt – es ist deine Farbe für „richtig gut“.",
+          "hinweis": "Mal die gelben Kästchen besonders schön aus, mit Gold- oder Glitzerstift, wenn du einen hast, und denk kurz daran, was heute richtig gut war. Zwei Farben in einem Kästchen sind erlaubt.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "jahr",
+          "legende": [
+            {
+              "farbe": "gelb",
+              "text": "richtig gut"
+            },
+            {
+              "farbe": "gruen",
+              "text": ""
+            },
+            {
+              "farbe": "blau",
+              "text": ""
+            },
+            {
+              "farbe": "orange",
+              "text": ""
+            },
+            {
+              "farbe": "rot",
+              "text": ""
+            },
+            {
+              "farbe": "lila",
+              "text": ""
+            },
+            {
+              "farbe": "grau",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Am Monatsende: Schau auf die letzten Kästchen und zähl deine Farben.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Farbe",
+            "Wie oft?",
+            "Typisch für diese Tage"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            0.9,
+            0.7,
+            2.6
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "gelb",
+            "5",
+            "Training, Pizza mit Freunden, früh im Bett"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was fällt dir auf? Gibt es Tage, Menschen oder Dinge, die bestimmte Farben mitbringen?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mir fällt auf, dass …",
+            "Meine gelben Tage haben oft gemeinsam, dass …",
+            "Eine Farbe, die ich öfter sehen möchte: …",
+            "Dafür probiere ich im nächsten Monat: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Ein leeres Kästchen ist kein Fehler.",
+          "text": "Wer einen Abend vergisst, malt am nächsten weiter: Gewohnheiten entstehen über Wochen, nicht an einem Abend. Dein Jahr gehört dir – du musst es niemandem zeigen. Tauchen über Wochen fast nur schwere Farben auf, sprich mit einer erwachsenen Person, der du vertraust, zum Beispiel im SePAS deines Lycée."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen legen fest, was sie ein Jahr lang in Farben festhalten, richten ihr Jahresblatt ein und lernen, nach einem Monat Muster zu erkennen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Farbkarten oder Buntstifte auslegen. Alle greifen die Farbe, die zum gestrigen Abend passt, und halten sie – ohne Erklärung.",
+          "Erklären (5 Min.): Legende am eigenen Beispiel festlegen, ein Kästchen ausmalen, die Farbe für „richtig gut“ hervorheben. Keine Farbe ist falsch; nichts wird eingesammelt.",
+          "Einzelarbeit (15 Min.): Aufgaben 1 und 2; die letzten sieben Tage aus der Erinnerung ausmalen. Leise Musik.",
+          "Austausch, freiwillig (10 Min.): Zu zweit nur die Legende zeigen, nicht die Kästchen: „Wofür steht deine Feier-Farbe?“",
+          "Abschluss (10 Min.): Abendritual planen: „Wo liegt das Blatt? Wann male ich?“ Nach etwa vier Wochen Folgestunde (20 Min.) für Aufgaben 3 und 4."
+        ],
+        "material": "Buntstifte, Glitzerstift, Farbkarten, Musik",
+        "differenzierung": {
+          "leichter": "Ein Thema, vier Farben; Legende gemeinsam an der Tafel.",
+          "schwerer": "Zwei Themen auf zwei Blättern vergleichen (Stimmung und Schlaf) und Zusammenhänge notieren."
+        },
+        "achtung": "Viele dunkle oder graue Tage über Wochen, Rückzug oder plötzliche Wechsel können auf starke Belastung hinweisen. Nicht im Plenum ansprechen, nichts einsammeln. Einzelgespräch, SePAS oder Vertrauensperson. Bei Selbstverletzung oder Suizidgedanken sofort handeln, nicht allein lassen: 112, 116 111, SOS Détresse 45 45 45.",
+        "hintergrund": "Wer Stimmung oder Verhalten regelmäßig festhält, erkennt Muster, die im Moment untergehen. Laut einer Alltagsstudie dauerte es im Durchschnitt 66 Tage, bis ein Verhalten automatisch wurde (Streuung 18 bis 254 Tage); ein ausgelassener Tag schadete kaum (Lally et al., 2010). Darum läuft das Blatt ein Jahr und verzeiht Lücken. Die Farbe für „richtig gut“ nutzt das Savoring (Bryant & Veroff, 2007).",
+        "quellen": [
+          "Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6), 998–1009.",
+          "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum."
+        ],
+        "impulse": [
+          "Welche Farbe gehört zu welchem Tag?",
+          "Was hilft dir, abends zu malen?"
+        ],
+        "tipps": [
+          "Blatt dorthin legen, wo man es sieht.",
+          "Folgestunde in den Kalender eintragen."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Mon année en couleurs",
+      "untertitel": "Chaque soir une case – et à la fin, tu vois ton année.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Colorier une case prend une minute. Au bout de quelques semaines, tu vois des motifs que tu ne remarquerais jamais dans le quotidien : quels jours brillent, lesquels sont gris, qu’est-ce qui va ensemble ? Tu décides à quoi servent tes couleurs – l’humeur, le sommeil, le mouvement ou une habitude que tu veux installer."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que veux-tu retenir ? Coche ce que tes couleurs doivent représenter cette année.",
+          "hinweis": "Choisis-en une seule. Si tu veux suivre plusieurs choses, prends une feuille pour chacune.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Mon humeur du soir",
+            "La qualité de mon sommeil",
+            "Si j’ai bougé",
+            "Le temps passé dehors",
+            "Une habitude que je veux installer"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fixe tes couleurs : écris dans la légende ce que chacune représente. Le jaune est déjà pris – c’est ta couleur pour « vraiment bien ».",
+          "hinweis": "Colorie les cases jaunes avec un soin particulier, au stylo doré ou à paillettes si tu en as un, et pense un instant à ce qui était vraiment bien aujourd’hui. Deux couleurs dans une case, c’est permis.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "jahr",
+          "legende": [
+            {
+              "farbe": "gelb",
+              "text": "vraiment bien"
+            },
+            {
+              "farbe": "gruen",
+              "text": ""
+            },
+            {
+              "farbe": "blau",
+              "text": ""
+            },
+            {
+              "farbe": "orange",
+              "text": ""
+            },
+            {
+              "farbe": "rot",
+              "text": ""
+            },
+            {
+              "farbe": "lila",
+              "text": ""
+            },
+            {
+              "farbe": "grau",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À la fin du mois : regarde les dernières cases et compte tes couleurs.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Couleur",
+            "Combien ?",
+            "Typique de ces jours"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            0.9,
+            0.7,
+            2.6
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "jaune",
+            "5",
+            "entraînement, pizza avec des amis, couché tôt"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce que tu remarques ? Y a-t-il des jours, des personnes ou des choses qui amènent certaines couleurs ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je remarque que …",
+            "Mes jours jaunes ont souvent en commun que …",
+            "Une couleur que je voudrais voir plus souvent : …",
+            "Pour cela, le mois prochain, j’essaie : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Une case vide n’est pas une erreur.",
+          "text": "Si tu oublies un soir, tu continues le lendemain : les habitudes se forment sur des semaines, pas en une soirée. Ton année t’appartient – tu n’as à la montrer à personne. Si, pendant des semaines, il n’y a presque que des couleurs lourdes, parles-en à un adulte en qui tu as confiance, par exemple au SePAS de ton lycée."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes décident ce qu’ils retiennent en couleurs pendant un an, préparent leur feuille annuelle et apprennent à repérer des motifs au bout d’un mois.",
+        "ablauf": [
+          "Entrée en matière (5 min) : étaler cartes de couleur ou crayons. Chacun prend la couleur qui va avec sa soirée d’hier et la tient en main – sans explication.",
+          "Expliquer (5 min) : fixer la légende avec un exemple personnel, colorier une case, mettre en valeur la couleur « vraiment bien ». Aucune couleur n’est fausse ; rien n’est ramassé.",
+          "Travail individuel (15 min) : tâches 1 et 2 ; colorier de mémoire les sept derniers jours. Musique douce.",
+          "Échange volontaire (10 min) : à deux, montrer seulement la légende, pas les cases : « À quoi sert ta couleur de fête ? »",
+          "Clôture (10 min) : planifier le rituel du soir : « Où est la feuille ? Quand je colorie ? » Environ quatre semaines plus tard, séance de suivi (20 min) pour les tâches 3 et 4."
+        ],
+        "material": "Crayons de couleur, stylo à paillettes, cartes de couleur, musique",
+        "differenzierung": {
+          "leichter": "Un thème, quatre couleurs ; légende discutée ensemble au tableau.",
+          "schwerer": "Comparer deux thèmes sur deux feuilles (humeur et sommeil) et noter les liens."
+        },
+        "achtung": "De nombreux jours sombres ou gris pendant des semaines, un repli ou des changements brusques peuvent signaler une forte détresse. Pas de commentaire en plénière, rien à ramasser. Entretien individuel, SePAS ou personne de confiance. En cas d’automutilation ou d’idées suicidaires, agir tout de suite, ne pas laisser seul : 112, 116 111, SOS Détresse 45 45 45.",
+        "hintergrund": "Qui note régulièrement son humeur ou son comportement repère des motifs qui échappent sur le moment. Selon une étude en conditions réelles, il faut en moyenne 66 jours pour qu’un comportement devienne automatique (18 à 254 jours) ; un jour manqué nuisait peu (Lally et al., 2010). La feuille court donc sur un an et pardonne les lacunes. La couleur « vraiment bien » utilise le savoring (Bryant & Veroff, 2007).",
+        "quellen": [
+          "Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6), 998–1009.",
+          "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum."
+        ],
+        "impulse": [
+          "Quelle couleur va avec quel jour ?",
+          "Qu’est-ce qui t’aide à colorier le soir ?"
+        ],
+        "tipps": [
+          "Poser la feuille bien en vue.",
+          "Noter la séance de suivi dans l’agenda."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sr-handy-und-ich",
+    "bereich": "selbstreflexion",
+    "thema": "ziele",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-21",
+      "V-29",
+      "V-32",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Handy",
+      "Bildschirmzeit",
+      "Medien",
+      "Schlaf",
+      "Konzentration",
+      "Selbststeuerung",
+      "Gewohnheiten"
+    ],
+    "verwandt": [
+      "mein-handy-und-ich",
+      "t3-schlaf-bildschirm",
+      "medien-tagebuch"
+    ],
+    "bild": "icon:device-mobile",
+    "de": {
+      "titel": "Mein Handy-Check",
+      "untertitel": "Erst schätzen, dann nachsehen – und dann entscheidest du.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dein Handy ist Kamera, Kino, Chat und Wecker in einem. Wie viel Zeit es braucht, merkt man selten. Du schätzt zuerst, siehst dann nach und entscheidest selbst, was du damit machst – ohne Vorwürfe."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schätze: Wie viele Stunden am Tag bist du im Schnitt am Handy? Mach ein Kreuz. Schau dann in der Bildschirmzeit nach und trag die echte Zahl ein.",
+          "hinweis": "Nimm den Durchschnitt der letzten sieben Tage. Du musst die Zahl niemandem zeigen.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Meine Schätzung: Stunden pro Tag",
+          "von": "0 Std.",
+          "bis": "10 Std.",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Die Einstellungen zeigen: … Stunden pro Tag.",
+            "Das überrascht mich …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wofür nutzt du das Handy? Schätze die Minuten pro Tag und sieh dann in den Einstellungen nach, wie sich die Zeit verteilt.",
+          "hinweis": "Nicht jede Zeit am Handy ist gleich: Ein Videoanruf mit einer Freundin fühlt sich anders an als eine Stunde Scrollen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wofür?",
+            "Geschätzt (Min.)",
+            "Echt (Min.)"
+          ],
+          "zeilen": 1,
+          "breiten": [
+            2,
+            1,
+            1
+          ],
+          "beispiel": [
+            "Musik und Podcasts",
+            "30",
+            "45"
+          ],
+          "werte": [
+            [
+              "Social Media",
+              "",
+              ""
+            ],
+            [
+              "Videos und Streaming",
+              "",
+              ""
+            ],
+            [
+              "Spiele",
+              "",
+              ""
+            ],
+            [
+              "Chats und Nachrichten",
+              "",
+              ""
+            ],
+            [
+              "Lernen und Schule",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie ist es ohne Handy? Denk an einen Moment, in dem es nicht da war: Akku leer, Ausflug, Essen. Mach auf jedem Regler ein Kreuz.",
+          "hinweis": "Beide Seiten sind in Ordnung. Es geht nur darum, was du bemerkst.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "stufen": 5,
+          "spalten": 2,
+          "paare": [
+            [
+              "gelassen",
+              "unruhig"
+            ],
+            [
+              "gelangweilt",
+              "erholt"
+            ],
+            [
+              "verbunden",
+              "abgeschnitten"
+            ],
+            [
+              "ich vermisse es",
+              "ich vergesse es"
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und Konzentration und Schlaf? Kreuz an, was auf dich zutrifft.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "teils",
+            "stimmt nicht"
+          ],
+          "items": [
+            "Beim Lernen greife ich öfter zum Handy, als ich will.",
+            "Ich merke erst später, dass ich schon wieder scrolle.",
+            "Abends bleibe ich länger dran, als ich vorhatte.",
+            "Nachts liegt das Handy in Reichweite.",
+            "Nach einer Pause ohne Handy kann ich mich besser konzentrieren."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ein Wunsch für deinen Umgang mit dem Handy – ganz allein deine Entscheidung. Es darf auch heißen: Ich lasse alles, wie es ist.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das soll bleiben: …",
+            "Das würde ich gern ändern: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich abends ins Bett gehe,",
+              "dann": "lege ich das Handy im Flur zum Laden und stelle einen Wecker."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tipp: Dein Handy, deine Regeln",
+          "text": "Keine Zahl ist „richtig“. Wichtig ist: Hast du hinterher gute Laune oder fühlst du dich leer? Haben Schlaf, Schule und Freunde Platz? Wenn dich etwas im Netz belastet, hilft die BEE SECURE Helpline: 8002 1234 (anonym, kostenlos)."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen vergleichen Schätzung und echte Bildschirmzeit, bemerken Nutzung, Gefühle ohne Handy und Folgen für Konzentration und Schlaf und formulieren einen eigenen Wunsch.",
+        "ablauf": [
+          "Einstieg (5 Min.): Handys mit dem Display nach unten 60 Sekunden in die Hand nehmen, ohne umzudrehen, still sitzen. Danach: „Was habt ihr gespürt?“",
+          "Erklären (5 Min.): Schätzen, nachsehen, entscheiden. Zeigen, wo die Bildschirmzeit zu finden ist. Zahlen bleiben privat, nichts wird eingesammelt.",
+          "Einzelarbeit (15 Min.): Aufgaben 1 bis 4. Wer das Handy nicht nutzen darf oder mag, schätzt nur und sieht zu Hause nach.",
+          "Austausch, freiwillig (10 Min.): Meinungslinie „0 Std.“ bis „10 Std.“ im Raum; alle stellen sich zu ihrer Schätzung. Dann zu zweit nur das Überraschende nennen, nicht die Zahl.",
+          "Abschluss (10 Min.): Aufgabe 5 mit Wunsch und Wenn-dann-Plan; wer mag, liest ihn vor. „Das nehme ich mit“ in einem Satz."
+        ],
+        "material": "Buntstifte, Handys (freiwillig), Kreppband",
+        "differenzierung": {
+          "leichter": "Nur Gesamtzeit und zwei Kategorien; Wunsch mündlich zu zweit.",
+          "schwerer": "Eine Woche lang abends die Bildschirmzeit notieren, Muster auswerten, Plan testen."
+        },
+        "achtung": "Ohne Panik: Zahlen weder vergleichen noch bewerten. Bei Kontrollverlust (Schulvermeidung, Schlafmangel, Rückzug), Cybermobbing oder Erpressung: Einzelgespräch, SePAS, Vertrauensperson; BEE SECURE 8002 1234, 116 111. Keine Diagnose „Sucht“; bei Gefährdung sofort nach internem Ablauf handeln.",
+        "hintergrund": "Große Studien finden nur einen kleinen Zusammenhang zwischen digitaler Technologie und Wohlbefinden Jugendlicher (Orben & Przybylski, 2019). Klarer ist der Zusammenhang mit Schlaf: Bildschirmnutzung geht mit späterem Einschlafen und kürzerer Schlafdauer einher (Hale & Guan, 2015). Deshalb gibt das Blatt keine Grenzwerte vor: Schätzen und Nachsehen macht Gewohnheiten bewusst, entschieden wird selbst.",
+        "quellen": [
+          "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
+          "Hale, L. & Guan, S. (2015). Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58."
+        ],
+        "impulse": [
+          "Wann legst du das Handy gern weg?",
+          "Was macht eine Pause leichter?"
+        ],
+        "tipps": [
+          "Eigene Schätzung offen vormachen.",
+          "Ohne Handy: Nachsehen als Hausaufgabe."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Mon bilan téléphone",
+      "untertitel": "D’abord estimer, puis vérifier – et ensuite, c’est toi qui décides.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ton téléphone est appareil photo, cinéma, messagerie et réveil à la fois. Le temps qu’il prend, on le remarque rarement. Tu estimes d’abord, tu vérifies ensuite et tu décides toi-même ce que tu en fais – sans reproches."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Estime : combien d’heures par jour passes-tu en moyenne sur ton téléphone ? Mets une croix. Vérifie ensuite le temps d’écran et note le vrai chiffre.",
+          "hinweis": "Prends la moyenne des sept derniers jours. Tu n’as à montrer ce chiffre à personne.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Mon estimation : heures par jour",
+          "von": "0 h",
+          "bis": "10 h",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Les réglages indiquent : … heures par jour.",
+            "Cela me surprend …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pour quoi utilises-tu ton téléphone ? Estime les minutes par jour, puis regarde dans les réglages comment le temps se répartit.",
+          "hinweis": "Tout le temps passé sur le téléphone ne se vaut pas : un appel vidéo avec une amie ne se ressent pas comme une heure de défilement.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Pour quoi ?",
+            "Estimé (min)",
+            "Réel (min)"
+          ],
+          "zeilen": 1,
+          "breiten": [
+            2,
+            1,
+            1
+          ],
+          "beispiel": [
+            "Musique et podcasts",
+            "30",
+            "45"
+          ],
+          "werte": [
+            [
+              "Réseaux sociaux",
+              "",
+              ""
+            ],
+            [
+              "Vidéos et streaming",
+              "",
+              ""
+            ],
+            [
+              "Jeux",
+              "",
+              ""
+            ],
+            [
+              "Chats et messages",
+              "",
+              ""
+            ],
+            [
+              "Cours et apprentissage",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et sans téléphone ? Pense à un moment où il n’était pas là : batterie vide, sortie, repas. Mets une croix sur chaque curseur.",
+          "hinweis": "Les deux côtés sont bien. Il s’agit seulement de ce que tu remarques.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "stufen": 5,
+          "spalten": 2,
+          "paare": [
+            [
+              "serein",
+              "agité"
+            ],
+            [
+              "ennuyé",
+              "reposé"
+            ],
+            [
+              "relié",
+              "coupé de tout"
+            ],
+            [
+              "il me manque",
+              "je l’oublie"
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et la concentration, le sommeil ? Coche ce qui est vrai pour toi.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "en partie",
+            "faux"
+          ],
+          "items": [
+            "En apprenant, je prends mon téléphone plus souvent que je ne veux.",
+            "Je remarque après coup que je défile déjà.",
+            "Le soir, je reste dessus plus longtemps que prévu.",
+            "La nuit, mon téléphone est à portée de main.",
+            "Après une pause sans téléphone, je me concentre mieux."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Un souhait pour ta façon d’utiliser ton téléphone – c’est entièrement ta décision. Cela peut aussi être : je laisse tout comme c’est.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui doit rester : …",
+            "Ce que j’aimerais changer : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Quand je vais me coucher,",
+              "dann": "je mets mon téléphone à charger dans le couloir et je règle un réveil."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Astuce : ton téléphone, tes règles",
+          "text": "Aucun chiffre n’est « juste ». Ce qui compte : es-tu de bonne humeur après, ou vidé ? Le sommeil, les cours et les amis ont-ils leur place ? Si quelque chose te pèse en ligne, la BEE SECURE Helpline t’aide : 8002 1234 (anonyme, gratuite)."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comparent estimation et vrai temps d’écran, remarquent usages, sensations sans téléphone et effets sur concentration et sommeil, et formulent un souhait personnel.",
+        "ablauf": [
+          "Entrée en matière (5 min) : tenir son téléphone, écran vers le bas, 60 secondes en main sans le retourner, en silence. Puis : « Qu’avez-vous ressenti ? »",
+          "Expliquer (5 min) : estimer, vérifier, décider. Montrer où trouver le temps d’écran. Les chiffres restent privés ; rien n’est ramassé.",
+          "Travail individuel (15 min) : tâches 1 à 4. Qui ne peut ou ne veut pas utiliser son téléphone estime seulement et vérifie à la maison.",
+          "Échange volontaire (10 min) : ligne d’opinion « 0 h » à « 10 h » dans la salle ; chacun se place à son estimation. Puis à deux, dire seulement ce qui surprend, pas le chiffre.",
+          "Clôture (10 min) : tâche 5 avec souhait et plan si-alors, lu à voix haute par qui le souhaite. « Ce que j’emporte » en une phrase."
+        ],
+        "material": "Crayons de couleur, téléphones (facultatif), ruban adhésif",
+        "differenzierung": {
+          "leichter": "Seulement le temps total et deux catégories ; souhait formulé à l’oral, à deux.",
+          "schwerer": "Noter le temps d’écran chaque soir pendant une semaine, analyser le motif, tester le plan."
+        },
+        "achtung": "Sans panique : ne pas comparer ni juger les chiffres. En cas de perte de contrôle (évitement scolaire, manque de sommeil, repli), de cyberharcèlement ou de chantage : entretien individuel, SePAS, personne de confiance ; BEE SECURE 8002 1234, 116 111. Pas de diagnostic de « dépendance » ; en cas de danger, agir selon la procédure interne.",
+        "hintergrund": "De grandes études ne trouvent qu’un faible lien entre technologie numérique et bien-être des adolescents (Orben & Przybylski, 2019). Le lien est plus net avec le sommeil : l’usage d’écrans va de pair avec un endormissement plus tardif et un sommeil plus court (Hale & Guan, 2015). La feuille ne fixe donc aucun seuil : estimer et vérifier rend conscientes des habitudes, chacun décide.",
+        "quellen": [
+          "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
+          "Hale, L. & Guan, S. (2015). Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58."
+        ],
+        "impulse": [
+          "Quand poses-tu volontiers ton téléphone ?",
+          "Qu’est-ce qui facilite une pause ?"
+        ],
+        "tipps": [
+          "Faire sa propre estimation à voix haute.",
+          "Sans téléphone : vérifier à la maison."
+        ]
+      }
+    }
+  }
+]

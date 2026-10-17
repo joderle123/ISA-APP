@@ -1,0 +1,1635 @@
+[
+  {
+    "id": "sr-zwei-brillen",
+    "bereich": "selbstreflexion",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-26",
+      "V-33",
+      "V-18",
+      "K-16"
+    ],
+    "schlagworte": [
+      "Gedanken",
+      "Gedanken und Gefühle",
+      "Denkmuster",
+      "Perspektivwechsel",
+      "Selbstwahrnehmung",
+      "Kopfkino",
+      "Missverständnis",
+      "Soziale Situationen"
+    ],
+    "verwandt": [
+      "skills-gedanke-gefuehl-verhalten",
+      "t4-gedanken-sind-nur-gedanken",
+      "t3-denkfallen"
+    ],
+    "bild": "icon:eyeglass",
+    "de": {
+      "titel": "Zwei Brillen",
+      "untertitel": "Dieselbe Szene, zwei Blickwinkel – und was jeder mit dir macht",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Zwei Menschen erleben dieselbe Szene und gehen trotzdem ganz verschieden aus ihr heraus. Der Unterschied steckt oft in dem, was sie sich dazu denken. Du probierst heute zwei Brillen aus: eine dunkle und eine freundliche. Es gibt kein Richtig oder Falsch – du schaust nur, was jede Brille mit dir macht."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Szene aus oder nimm eine eigene. Lies sie zweimal.",
+          "hinweis": "Nimm eine, die dich ein kleines bisschen kribbeln lässt – keine, die dich wirklich aufwühlt.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Du kommst in den Raum. Eine Gruppe lacht – und wird kurz leiser, als du dich setzt.",
+            "Du schreibst jemandem. Die Nachricht wird gelesen, aber stundenlang kommt nichts zurück."
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal die zwei Brillen aus. Lies die Szene dann mit der dunklen Brille noch einmal und schreib, was in dir passiert. Danach mit der freundlichen.",
+          "hinweis": "Beispiel: Im Bus tuscheln zwei aus deiner Klasse. Dunkle Brille: „Die reden über mich.“ – heiß im Gesicht – ich tue, als wäre ich am Handy. Freundliche Brille: „Vielleicht geht es um ein Video.“ – neugierig – ich setze mich dazu.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "bild",
+              "bild": "icon:sunglasses",
+              "groesse": "l",
+              "text": "Durchlauf 1 · dunkle Brille"
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ich denke: …",
+                "Ich fühle: …",
+                "Ich tue: …"
+              ],
+              "linien": 2
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "icon:eyeglass",
+              "groesse": "l",
+              "text": "Durchlauf 2 · freundliche Brille"
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ich denke: …",
+                "Ich fühle: …",
+                "Ich tue: …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie fühlt sich die Szene mit jeder Brille an? Mach auf jedem Regler zwei Kreuze – in der Farbe deiner dunklen und deiner freundlichen Brille.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "angespannt",
+              "entspannt"
+            ],
+            [
+              "unsicher",
+              "sicher"
+            ],
+            [
+              "allein",
+              "verbunden"
+            ],
+            [
+              "schwer",
+              "leicht"
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Steh auf und stell die Szene nach: erst mit der dunklen, dann mit der freundlichen Brille. Wie stehst du da? Kreuz an, was du bemerkst.",
+          "hinweis": "Allein oder zu zweit: Die Person, die zuschaut, sagt nur, was sie sieht – ohne zu bewerten.",
+          "symbole": [
+            "ankreuzen",
+            "partner"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "Dunkle Brille",
+              "items": [
+                "Schultern hochgezogen",
+                "Blick zum Boden",
+                "Arme verschränkt",
+                "Atem flach",
+                "Schritte klein"
+              ],
+              "frei": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Freundliche Brille",
+              "items": [
+                "Schultern locker",
+                "Blick geradeaus",
+                "Arme offen",
+                "Atem tiefer",
+                "Schritte ruhig"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hast du gemerkt?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mit der dunklen Brille habe ich gemerkt: …",
+            "Mit der freundlichen Brille war es anders: …",
+            "Was ich in dieser Szene gar nicht sicher weiß: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Eine Frage, die die Brille wechselt",
+          "text": "Du kannst nicht immer bestimmen, welcher Gedanke zuerst kommt. Aber du kannst fragen: „Was könnte es sonst noch sein?“ Drei andere Erklärungen reichen – auch wenn du keine davon sofort glaubst."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Antworten gehören dir. Niemand sammelt das Blatt ein."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erleben an einer Alltagsszene, dass derselbe Vorfall je nach Gedanke ganz anders wirkt und sich anders anfühlt. Sie üben, einen zweiten, freundlicheren Gedanken zu finden.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Sonnenbrille oder dunkle Folie herumgeben, durchs Fenster schauen: „Was verändert sich?“",
+          "Erklären (7 Min.): Szene wählen, Beispiel aus dem Hinweis vormachen (Gedanke – Gefühl – Tun). Die dunkle Brille ist kein Fehler, nur schnell.",
+          "Einzelarbeit (15 Min.): Brillen in zwei Farben ausmalen, beide Durchläufe schreiben, Regler in beiden Farben ankreuzen. Leise Musik.",
+          "Körper (8 Min.): Szene mit jeder Brille im Stehen nachstellen (je 30 Sek.), Haltung ankreuzen. Wer nicht mag, beobachtet.",
+          "Austausch (7 Min., freiwillig): Zu zweit: „Was hat sich zwischen den Brillen verändert?“ Im Plenum nur Haltungen.",
+          "Abschluss (3 Min.): Tipp-Kasten vorlesen, „Das nehme ich mit“ schreiben."
+        ],
+        "hintergrund": "Das kognitive Modell der Verhaltenstherapie geht davon aus, dass nicht die Situation allein, sondern ihre Deutung Gefühle und Verhalten prägt (Beck, 2011). Das Blatt übt die Kette Situation – Gedanke – Gefühl – Handeln an einer mehrdeutigen Szene (Stallard, 2019); die zweite Brille trainiert, Alternativen zu suchen, statt den ersten Gedanken für eine Tatsache zu halten. Der Körper gehört dazu, weil Haltung und Atem Teil der Reaktion sind. Ziel ist nicht „positives Denken“, sondern Abstand: Ein Gedanke ist eine Deutung, die man prüfen kann (vgl. Masuda et al., 2004).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die vorgegebene Szene; Satzanfänge mündlich zu zweit.",
+          "schwerer": "Eigene zweite Szene; „Was weiß ich sicher, was vermute ich?“ klären."
+        },
+        "impulse": [
+          "Woran merkst du, dass eine Brille schon auf der Nase sitzt?",
+          "Warum ist die dunkle Brille oft die schnellere?",
+          "Was hilft dir, die Brille zu wechseln?"
+        ],
+        "tipps": [
+          "Die zwei Brillen an der Tafel dienen später als Kürzel: „Welche Brille hast du gerade auf?“",
+          "Die freundliche Brille darf Sorgen nicht wegreden; Farben nicht vorgeben."
+        ],
+        "achtung": "Nur Szenen mit geringer Belastung wählen lassen. Bei Ausgrenzung oder Mobbing nicht im Plenum vertiefen: Einzelgespräch, SePAS oder Vertrauensperson; bei Gefährdung sofort nach dem internen Ablauf handeln.",
+        "material": "Buntstifte (2 Farben); Sonnenbrille oder dunkle Folie"
+      }
+    },
+    "fr": {
+      "titel": "Deux paires de lunettes",
+      "untertitel": "La même scène, deux regards – et ce que chacun change en toi",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Deux personnes vivent la même scène et n’en sortent pourtant pas de la même façon. La différence tient souvent à ce qu’elles se disent dans leur tête. Aujourd’hui, tu essaies deux paires de lunettes : une sombre et une bienveillante. Il n’y a ni bonne ni mauvaise réponse – tu regardes simplement ce que chaque paire fait de toi."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une scène ou prends la tienne. Lis-la deux fois.",
+          "hinweis": "Prends une scène qui te fait un petit frisson, pas une qui te bouleverse vraiment.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Tu entres dans la salle. Un groupe rit – et baisse la voix quand tu t’assieds.",
+            "Tu envoies un message à quelqu’un. Il est lu. Des heures plus tard, toujours pas de réponse."
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Colorie les deux paires de lunettes. Relis ensuite la scène avec la paire sombre et note ce qui se passe en toi. Puis avec la paire bienveillante.",
+          "hinweis": "Exemple : dans le bus, deux camarades chuchotent. Paire sombre : « Ils parlent de moi. » – le visage chaud – je fais semblant de regarder mon téléphone. Paire bienveillante : « C’est peut-être à propos d’une vidéo. » – curieux – je m’assois avec eux.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "bild",
+              "bild": "icon:sunglasses",
+              "groesse": "l",
+              "text": "Essai 1 · lunettes sombres"
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Je pense : …",
+                "Je ressens : …",
+                "Je fais : …"
+              ],
+              "linien": 2
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "icon:eyeglass",
+              "groesse": "l",
+              "text": "Essai 2 · lunettes bienveillantes"
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Je pense : …",
+                "Je ressens : …",
+                "Je fais : …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment la scène se ressent-elle avec chaque paire ? Sur chaque réglette, fais deux croix : une dans la couleur de chaque paire.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "tension",
+              "détente"
+            ],
+            [
+              "doute",
+              "assurance"
+            ],
+            [
+              "solitude",
+              "lien"
+            ],
+            [
+              "lourdeur",
+              "légèreté"
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lève-toi et rejoue la scène : d’abord avec les lunettes sombres, puis avec les bienveillantes. Comment te tiens-tu ? Coche ce que tu remarques.",
+          "hinweis": "Seul ou à deux : la personne qui regarde dit seulement ce qu’elle voit, sans juger.",
+          "symbole": [
+            "ankreuzen",
+            "partner"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "Lunettes sombres",
+              "items": [
+                "Épaules remontées",
+                "Regard vers le sol",
+                "Bras croisés",
+                "Respiration courte",
+                "Petits pas"
+              ],
+              "frei": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Lunettes bienveillantes",
+              "items": [
+                "Épaules relâchées",
+                "Regard droit devant",
+                "Bras ouverts",
+                "Respiration plus profonde",
+                "Pas tranquilles"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’as-tu remarqué ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Avec les lunettes sombres, j’ai remarqué : …",
+            "Avec les lunettes bienveillantes, c’était différent : …",
+            "Ce que je ne sais pas du tout dans cette scène : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Une question qui change de lunettes",
+          "text": "Tu ne choisis pas toujours quelle pensée arrive en premier. Mais tu peux demander : « Qu’est-ce que ça pourrait être d’autre ? » Trois autres explications suffisent – même si tu n’en crois aucune tout de suite."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Tes réponses t’appartiennent. Personne ne ramasse la feuille."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes constatent, sur une scène du quotidien, qu’un même événement se vit très différemment selon la pensée qui l’accompagne, et s’exercent à trouver une seconde pensée, plus bienveillante.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : lunettes de soleil qui circulent, regard par la fenêtre.",
+          "Expliquer (7 min) : choisir une scène, montrer l’exemple (pensée – ressenti – action). Les lunettes sombres ne sont pas une erreur, juste rapides.",
+          "Travail individuel (15 min) : colorier les lunettes (2 couleurs), écrire les essais, cocher les réglettes dans les 2 couleurs.",
+          "Corps (8 min) : rejouer la scène debout avec chaque paire (30 s), cocher la posture. Qui ne veut pas observe.",
+          "Échange (7 min, volontaire) : à deux : « Qu’est-ce qui a changé d’une paire à l’autre ? » En plénière, seulement les postures.",
+          "Clôture (3 min) : lire l’encadré conseil ; écrire « Ce que j’emporte »."
+        ],
+        "hintergrund": "Le modèle cognitif de la thérapie comportementale part du principe que ce n’est pas la situation seule, mais son interprétation qui façonne émotions et comportement (Beck, 2011). La feuille exerce l’enchaînement situation – pensée – émotion – action sur une scène ambiguë (Stallard, 2019) ; la seconde paire de lunettes entraîne à chercher des alternatives plutôt qu’à prendre la première pensée pour un fait. Le corps compte aussi : posture et respiration font partie de la réaction. Le but n’est pas de « penser positif », mais de prendre de la distance : une pensée est une interprétation que l’on peut vérifier (cf. Masuda et al., 2004).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement la scène proposée ; amorces de phrases à l’oral, à deux.",
+          "schwerer": "Deuxième scène personnelle ; clarifier : « Que sais-je, que suppose-je ? »"
+        },
+        "impulse": [
+          "Comment sais-tu qu’une paire est déjà sur ton nez ?",
+          "Pourquoi les sombres sont-elles souvent plus rapides ?",
+          "Qu’est-ce qui t’aide à changer de paire ?"
+        ],
+        "tipps": [
+          "Les deux paires dessinées au tableau servent ensuite de raccourci : « Quelles lunettes as-tu ? »",
+          "Les lunettes bienveillantes ne doivent pas minimiser une inquiétude ; ne rien imposer pour les couleurs."
+        ],
+        "achtung": "Ne laisser choisir que des scènes peu chargées. Exclusion ou harcèlement : pas de plénière, entretien individuel, SePAS ou personne de confiance ; danger : agir tout de suite selon la procédure interne.",
+        "material": "Crayons de couleur (2 couleurs) ; lunettes de soleil ou film sombre"
+      }
+    }
+  },
+  {
+    "id": "sr-innerer-kritiker",
+    "bereich": "selbstreflexion",
+    "thema": "gedanken",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-19",
+      "K-26",
+      "SOZ-40",
+      "V-33"
+    ],
+    "schlagworte": [
+      "Innerer Kritiker",
+      "Selbstwert",
+      "Selbstkritik",
+      "Selbstabwertung",
+      "Selbstgespräch",
+      "Perfektionismus",
+      "Selbstakzeptanz"
+    ],
+    "verwandt": [
+      "skills-innerer-freund",
+      "skills-meine-glaubenssaetze",
+      "t4-gedanken-sind-nur-gedanken"
+    ],
+    "bild": "icon:speakerphone",
+    "de": {
+      "titel": "Mein innerer Kritiker",
+      "untertitel": "Wie laut ist die Stimme in meinem Kopf – und was will sie eigentlich?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Fast jeder Mensch hat eine Stimme im Kopf, die kommentiert: „Das war peinlich.“ „Das schaffst du nie.“ Das ist normal. Oft will sie dich schützen – vor Fehlern, vor Blamage –, auch wenn sie hart klingt. Hier lernst du sie kennen, ohne gegen sie zu kämpfen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie klingt deine kritische Stimme? Kreuz an und stell die Regler ein.",
+          "hinweis": "Denk an die letzten zwei Wochen. Es gibt kein Richtig oder Falsch.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "selten",
+            "manchmal",
+            "oft"
+          ],
+          "items": [
+            "Wenn mir etwas misslingt, sagt sie: „Typisch ich.“",
+            "Ich vergleiche mich mit anderen und schneide schlechter ab.",
+            "Sie redet mit mir härter, als ich je mit einem Freund reden würde.",
+            "Wenn etwas klappt, sagt sie: „Das war nur Glück.“"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "leise",
+              "laut"
+            ],
+            [
+              "selten",
+              "dauernd"
+            ],
+            [
+              "sachlich",
+              "scharf"
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gib deinem Kritiker eine Gestalt und einen Namen. Mal ihn so, wie er in deinem Kopf wirkt.",
+          "hinweis": "Alles ist erlaubt: ein Tier, ein Schatten, ein Türsteher mit Klemmbrett, ein Wecker, der nie aufhört. Sieht er ein bisschen komisch aus, verliert er schon etwas von seiner Schärfe.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mein innerer Kritiker",
+          "hoehe": 6,
+          "zeichnen": true
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Er heißt: …",
+            "Sein Lieblingssatz: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was will er eigentlich? Vielleicht will er dich schützen.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Mein Kritiker will mich vielleicht …",
+          "spalten": 2,
+          "items": [
+            "vor einer Blamage bewahren",
+            "vor Enttäuschung schützen",
+            "antreiben, damit ich nichts verpatze",
+            "vor Ablehnung schützen",
+            "an etwas erinnern, das mir wichtig ist"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wann wird er laut? Schreib in jede Wolke eine Situation.",
+          "hinweis": "Beispiel: Wenn ich vor der Klasse etwas vorlesen muss, fängt er schon morgens an.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "wolke",
+          "items": [
+            "In der Klasse, wenn …",
+            "Mit anderen, wenn …",
+            "Online, wenn …",
+            "Ganz für mich, wenn …"
+          ],
+          "anzahl": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gib ihm eine faire Antwort – wahr und ruhig. Sprich dann beide Sätze laut: seinen scharf, deinen ruhig.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ],
+          "hinweis": "Unten: sein Lieblingssatz von oben – und deine faire Antwort darauf."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Kritiker",
+              "text": "Du hast dich total blamiert. Alle haben es gesehen."
+            },
+            {
+              "wer": "Ich",
+              "text": "Das war unangenehm, ja. Es kann trotzdem jedem passieren."
+            },
+            {
+              "wer": "Kritiker"
+            },
+            {
+              "wer": "Ich"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Fair heißt nicht „alles super“",
+          "text": "Eine faire Antwort ist wahr und ruhig. Sie gibt zu, was stimmt („Das war unangenehm“), und sagt dazu, was auch stimmt („Ich lerne das noch“). Sie muss nicht begeistert klingen. Es reicht, wenn du sie dir glauben kannst."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dieses Blatt gehört dir, niemand sammelt es ein. Wird die Stimme sehr hart, sprich mit einer Vertrauensperson oder dem SePAS deines Lycée."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Beim nächsten Mal sage ich ihm: …",
+            "Das nehme ich mit: …"
+          ],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen die innere kritische Stimme als Stimme, nicht als Wahrheit, schätzen ein, wie laut sie ist und wann sie auftaucht, und üben eine faire, ruhige Antwort.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: „Das war peinlich“ einmal laut und scharf, einmal leise und freundlich sprechen: „Was macht der Ton mit euch?“",
+          "Erklären (7 Min.): Die Stimme ist normal und will oft schützen; Ziel ist nicht, sie zum Schweigen zu bringen, sondern ihr nicht blind zu glauben. Dialog-Beispiel an der Tafel.",
+          "Einzelarbeit (20 Min.): Aufgaben 1 bis 5 in Ruhe; wer fertig ist, spricht die Antwort-Sätze leise vor sich hin. Ruhige Musik.",
+          "Austausch (8 Min., freiwillig): Zu zweit nur Gestalt zeigen und Namen nennen, ohne die Sätze. Im Plenum: „Welche Namen gab es?“ (nur Freiwillige).",
+          "Abschluss (5 Min.): Tipp-Kasten vorlesen; die faire Antwort noch einmal laut sprechen – ganz ruhig."
+        ],
+        "hintergrund": "Selbstkritik ist weit verbreitet. Sie kann antreiben, entmutigt aber oft; Selbstmitgefühl fördert nach Misserfolgen die Motivation, sich zu verbessern (Breines & Chen, 2012), und hängt bei Jugendlichen mit größerer Widerstandskraft zusammen (Neff & McGehee, 2010). Das Blatt nutzt Abstand: Wer einen Gedanken als Stimme mit Namen und Gestalt betrachtet, hält ihn weniger für eine Tatsache (Kross & Ayduk, 2017). Die Frage „Was will die Stimme?“ nimmt ihr den Kampfcharakter: Sie wird verstanden statt bekämpft.",
+        "quellen": [
+          "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143.",
+          "Neff, K. D. & McGehee, P. (2010). Self-compassion and psychological resilience among adolescents and young adults. Self and Identity, 9(3), 225–240.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und die Gestalt als Farbfläche; Antwort aus Vorschlägen wählen: „Das stimmt zum Teil.“ „Ich lerne noch.“",
+          "schwerer": "Aufschreiben, wann der Kritiker half und wann nicht; die Antwort mit dem eigenen Vornamen beginnen (Abstand)."
+        },
+        "impulse": [
+          "Wenn deine Stimme einen Lautstärkeregler hätte: Wo stünde er heute?",
+          "Wovor will sie dich vielleicht bewahren?"
+        ],
+        "tipps": [
+          "Wer mag, stellt einen kleinen Gegenstand als „Kritiker“ ans Tischende – der Abstand wird sichtbar.",
+          "Gezeichnete Gestalten nie bewerten; nichts einsammeln."
+        ],
+        "achtung": "Kritische Selbstgespräche sind normal. Bei „wertlos“, „eine Last“ oder Anklängen an Selbstverletzung oder Suizid: nicht im Plenum, Gespräch unter vier Augen, nicht allein lassen, sofort handeln (SePAS; 112; KJT 116 111).",
+        "material": "Buntstifte; optional kleiner Gegenstand als „Kritiker“"
+      }
+    },
+    "fr": {
+      "titel": "Mon critique intérieur",
+      "untertitel": "Quelle est la force de cette voix dans ma tête – et que veut-elle vraiment ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Presque tout le monde a dans la tête une voix qui commente : « C’était gênant. » « Tu n’y arriveras jamais. » C’est normal. Souvent, elle veut te protéger – des erreurs, de la honte –, même si elle est dure. Ici, tu apprends à la connaître, sans te battre contre elle."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi ressemble ta voix critique ? Coche, puis règle les réglettes.",
+          "hinweis": "Pense aux deux dernières semaines. Il n’y a ni bonne ni mauvaise réponse.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "rarement",
+            "parfois",
+            "souvent"
+          ],
+          "items": [
+            "Quand quelque chose rate, elle dit : « Typique de moi. »",
+            "Je me compare aux autres et je me trouve moins bien.",
+            "Elle me parle plus durement que je ne parlerais à un ami.",
+            "Quand ça marche, elle dit : « C’était juste de la chance. »"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "douce",
+              "forte"
+            ],
+            [
+              "rare",
+              "constante"
+            ],
+            [
+              "posée",
+              "cinglante"
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Donne une forme et un nom à ton critique. Dessine-le tel qu’il apparaît dans ta tête.",
+          "hinweis": "Tout est permis : un animal, une ombre, un videur avec un bloc-notes, un réveil qui ne s’arrête jamais. S’il a l’air un peu drôle, il perd déjà un peu de son tranchant.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mon critique intérieur",
+          "hoehe": 6,
+          "zeichnen": true
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Il s’appelle : …",
+            "Sa phrase préférée : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que veut-il vraiment ? Peut-être te protéger.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Mon critique veut peut-être …",
+          "spalten": 2,
+          "items": [
+            "m’éviter une humiliation",
+            "me protéger de la déception",
+            "me pousser pour que je ne rate rien",
+            "me protéger du rejet",
+            "me rappeler ce qui compte pour moi"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand devient-il fort ? Écris une situation dans chaque nuage.",
+          "hinweis": "Exemple : quand je dois lire à voix haute devant la classe, il commence déjà le matin.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "wolke",
+          "items": [
+            "En classe, quand …",
+            "Avec les autres, quand …",
+            "En ligne, quand …",
+            "Quand je suis seul·e, …"
+          ],
+          "anzahl": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Donne-lui une réponse juste : vraie et calme. Dis ensuite les deux phrases à voix haute – la sienne sèche, la tienne tranquille.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ],
+          "hinweis": "En bas : sa phrase préférée d’en haut – et ta réponse juste."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Critique",
+              "text": "Quelle honte. Tout le monde l’a vu."
+            },
+            {
+              "wer": "Moi",
+              "text": "C’était désagréable, oui. Ça peut arriver à n’importe qui."
+            },
+            {
+              "wer": "Critique"
+            },
+            {
+              "wer": "Moi"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Juste, ce n’est pas forcément joyeux",
+          "text": "Une réponse juste est vraie et calme. Elle reconnaît ce qui est vrai (« C’était désagréable ») et ajoute ce qui est vrai aussi (« J’apprends encore »). Elle n’a pas besoin d’être enthousiaste. Il suffit que tu puisses la croire."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Cette feuille t’appartient, personne ne la ramasse. Si la voix devient très dure, parles-en à une personne de confiance ou au SePAS de ton lycée."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "La prochaine fois, je lui dis : …",
+            "Ce que j’emporte : …"
+          ],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent la voix critique intérieure comme une voix, pas comme la vérité, estiment sa force et les moments où elle surgit, et s’exercent à lui répondre de façon juste et calme.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : dire « C’était gênant » une fois fort et sèchement, une fois doucement : « Qu’est-ce que le ton fait de vous ? »",
+          "Expliquer (7 min) : la voix est normale et veut souvent protéger ; le but n’est pas de la faire taire, mais de ne pas la croire aveuglément. Exemple du dialogue au tableau.",
+          "Travail individuel (20 min) : tâches 1 à 5 au calme ; qui a fini dit tout bas ses phrases de réponse. Musique douce.",
+          "Échange (8 min, volontaire) : à deux, montrer seulement la forme et dire le nom, sans les phrases. En plénière : « Quels noms y a-t-il eu ? » (volontaires).",
+          "Clôture (5 min) : lire l’encadré conseil ; redire la réponse juste à voix haute, cette fois avec calme."
+        ],
+        "hintergrund": "L’autocritique est très répandue. Elle peut motiver, mais décourage souvent ; l’autocompassion favorise, après un échec, la motivation à s’améliorer (Breines & Chen, 2012) et va, chez les adolescents, de pair avec une plus grande résistance psychique (Neff & McGehee, 2010). La feuille utilise la distance : qui regarde une pensée comme une voix dotée d’un nom et d’une forme la prend moins pour un fait (Kross & Ayduk, 2017). La question « Que veut cette voix ? » lui retire son caractère de combat : on la comprend au lieu de la combattre.",
+        "quellen": [
+          "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143.",
+          "Neff, K. D. & McGehee, P. (2010). Self-compassion and psychological resilience among adolescents and young adults. Self and Identity, 9(3), 225–240.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement la tâche 1 et la forme en tache de couleur ; choisir la réponse parmi : « C’est en partie vrai. » « J’apprends encore. »",
+          "schwerer": "Noter quand le critique a aidé et quand non ; commencer la réponse par son prénom pour prendre de la distance."
+        },
+        "impulse": [
+          "Si ta voix avait un bouton de volume, où serait-il aujourd’hui ?",
+          "De quoi veut-elle peut-être te préserver ?"
+        ],
+        "tipps": [
+          "Qui veut pose un petit objet « critique » au bout de la table : la distance devient visible.",
+          "Ne jamais juger les formes dessinées ; ne rien ramasser."
+        ],
+        "achtung": "L’autocritique est normale. Face à « nul », « un poids » ou à des idées d’automutilation ou de suicide : pas de plénière, entretien en tête à tête, ne pas laisser seul, agir tout de suite (SePAS ; 112 ; KJT 116 111).",
+        "material": "Crayons de couleur ; facultatif : petit objet « critique »"
+      }
+    }
+  },
+  {
+    "id": "sr-wie-mit-freundin",
+    "bereich": "selbstreflexion",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-26",
+      "K-28",
+      "SOZ-37",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Selbstmitgefühl",
+      "Selbstwert",
+      "Selbstkritik",
+      "Fehler",
+      "Prüfungsangst",
+      "Ausgrenzung",
+      "Selbstfürsorge",
+      "Freundlichkeit"
+    ],
+    "verwandt": [
+      "skills-innerer-freund",
+      "sr-innerer-kritiker",
+      "skills-selbstwert-quellen",
+      "beduerfnis-glaeser"
+    ],
+    "bild": "icon:user-heart",
+    "de": {
+      "titel": "Wie mit einer guten Freundin",
+      "untertitel": "Was du anderen schenkst, darfst du dir auch geben",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Wenn eine gute Freundin oder ein guter Freund etwas verbockt, sagst du nicht: „Du hast es wieder vermasselt.“ Du sagst eher: „Das passiert. Komm, das kriegen wir hin.“ Mit dir selbst sprichst du oft anders. Hier probierst du aus, wie es ist, dir so zu begegnen, wie du einem Menschen begegnest, der dir wichtig ist."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stell dir die vier Situationen vor. Was würdest du einer guten Freundin oder einem guten Freund sagen – und was sagst du dir selbst?",
+          "hinweis": "Sei ehrlich: Dein Satz an dich darf hart klingen. Du musst nicht alle Zeilen schaffen; die letzte ist für eine Situation, die du selbst kennst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Das sage ich einer guten Freundin / einem guten Freund",
+            "Das sage ich mir selbst"
+          ],
+          "breiten": [
+            1,
+            1.5,
+            1.5
+          ],
+          "hoehe": 2,
+          "zeilen": 1,
+          "beispiel": [
+            "Ich habe beim Training den entscheidenden Ball verloren.",
+            "„Das war ein blöder Moment. Du hast die ganze Zeit gekämpft.“",
+            "„Wegen dir haben wir verloren. Typisch.“"
+          ],
+          "werte": [
+            [
+              "Ich habe eine Prüfung verhauen.",
+              "",
+              ""
+            ],
+            [
+              "Alle sind zur Feier eingeladen – ich wurde vergessen.",
+              "",
+              ""
+            ],
+            [
+              "Ich mache einen Fehler vor der Klasse.",
+              "",
+              ""
+            ],
+            [
+              "Ich bin müde und gereizt und werde laut.",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie freundlich sind deine Sätze? Mach auf beiden Skalen ein Kreuz.",
+          "hinweis": "Gibt es einen Unterschied? Dann ist das völlig normal – viele reden mit sich strenger als mit anderen.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Meine Sätze an gute Freunde:",
+          "von": "0 – hart",
+          "bis": "10 – sehr freundlich",
+          "stufen": 11
+        },
+        {
+          "art": "skala",
+          "frage": "Meine Sätze an mich selbst:",
+          "von": "0 – hart",
+          "bis": "10 – sehr freundlich",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Was mir auffällt: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Zeile (oder eine eigene Situation) aus. Schreib dir einen freundlichen Satz – so, wie ihn eine gute Freundin sagen würde.",
+          "hinweis": "Beispiel: „Die Prüfung ist schiefgegangen, das tut weh. So geht es vielen. Ich darf trotzdem freundlich mit mir sein und morgen neu anfangen.“",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Drei Zutaten für einen freundlichen Satz",
+          "punkte": [
+            "Du nimmst wahr, dass es gerade schwer ist.",
+            "Du erinnerst dich: Das geht anderen auch so.",
+            "Du sagst dir etwas, das dich stützt."
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Mein freundlicher Satz an mich:"
+          ],
+          "anzahl": 1,
+          "spalten": 1,
+          "hoehe": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Hand aufs Herz: Leg eine Hand auf Arm oder Herz und spür die Wärme. Sag deinen Satz leise, atme dabei lang aus. Dann kreuz an, wie das war.",
+          "hinweis": "Such dir die Stelle, die sich gut anfühlt. Du kannst es auch lassen oder abbrechen – manchen fühlt es sich fremd an. Auch das ist eine Antwort.",
+          "symbole": [
+            "sprechen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das habe ich gemerkt",
+          "spalten": 2,
+          "items": [
+            "Es fühlt sich ungewohnt an",
+            "Es fühlt sich warm oder ruhig an",
+            "Ich werde traurig oder gerührt",
+            "Ich muss ein bisschen lachen",
+            "Nichts Besonderes",
+            "Ich wollte es lieber nicht machen"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das nehme ich mit: Schreib deinen Satz auf eine Karte, schneid sie aus und steck sie ein – Federmappe, Handyhülle, Spind.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "karten": [
+            {
+              "titel": "Mein Satz"
+            },
+            {
+              "titel": "Für jemanden, der es gerade schwer hat"
+            }
+          ],
+          "hoehe": 150
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen vergleichen, wie sie mit anderen und mit sich selbst sprechen, formulieren einen freundlichen Satz an sich und probieren eine beruhigende Geste aus.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Hände zehn Sekunden reiben, warm auf Wangen oder Arme legen: „Was spürt ihr?“",
+          "Erklären (7 Min.): Beispielzeile (Training) vorlesen. Der Satz an sich selbst darf ehrlich hart sein – es geht ums Hinschauen.",
+          "Einzelarbeit (14 Min.): Tabelle, Skalen, freundlicher Satz in der Sprechblase (Aufgaben 1 bis 3). Ruhige Musik.",
+          "Körper (8 Min.): Hand auf Arm oder Herz, Satz leise sprechen, drei lange Ausatmungen. Wer nicht mag, hält einen Stein.",
+          "Austausch (6 Min., freiwillig): Zu zweit nur: „Wie war es, den Satz zu sagen?“ – den Satz selbst nur, wenn man mag.",
+          "Abschluss (5 Min.): Karte schreiben und ausschneiden."
+        ],
+        "hintergrund": "Selbstmitgefühl heißt, sich in schweren Momenten wie einem guten Freund zu begegnen: das Schwere wahrnehmen, sich als Teil des gemeinsamen Menschseins sehen, freundlich zu sich sein (Neff, 2003). Bei Jugendlichen hängt es mit größerer Widerstandskraft zusammen (Neff & McGehee, 2010). Mit anderen sind wir oft milder als mit uns: Über fremde Probleme urteilen Menschen weiser als über eigene (Grossmann & Kross, 2014). Die Tabelle macht diesen Unterschied sichtbar.",
+        "quellen": [
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Neff, K. D. & McGehee, P. (2010). Self-compassion and psychological resilience among adolescents and young adults. Self and Identity, 9(3), 225–240.",
+          "Grossmann, I. & Kross, E. (2014). Exploring Solomon’s paradox: Self-distancing eliminates the self-other asymmetry in wise reasoning about close relationships in younger and older adults. Psychological Science, 25(8), 1571–1580."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Situationen; Satzbausteine an der Tafel.",
+          "schwerer": "Satz mit „du“ und mit eigenem Vornamen schreiben, vergleichen."
+        },
+        "impulse": [
+          "Was fällt dir leichter: jemand anderen zu trösten oder dich selbst?",
+          "Welche Sätze würdest du nie zu einer Freundin sagen – und doch zu dir?"
+        ],
+        "tipps": [
+          "Wer mag, nimmt die zweite Karte für jemanden mit, dem er etwas Gutes sagen will.",
+          "Berührung ist ein Angebot; Alternative: ein glatter Stein in der Hand."
+        ],
+        "achtung": "Freundlichkeit zu sich fühlt sich manchmal fremd an oder macht traurig: Berührung nie verlangen. Bei sehr harten Sätzen über sich oder Ausgrenzung: Einzelgespräch, SePAS oder Vertrauensperson; bei Selbstverletzung oder Suizidgedanken sofort handeln.",
+        "material": "Buntstifte, Schere; optional ein glatter Stein"
+      }
+    },
+    "fr": {
+      "titel": "Comme à une bonne amie",
+      "untertitel": "Ce que tu offres aux autres, tu peux aussi te l’offrir",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Quand une bonne amie ou un bon ami rate quelque chose, tu ne lui dis pas : « Tu as encore tout gâché. » Tu dis plutôt : « Ça arrive. Allez, on y arrive. » Avec toi-même, tu parles souvent tout autrement. Ici, tu essaies de te traiter comme tu traiterais quelqu’un qui compte pour toi."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Imagine les quatre situations. Que dirais-tu à une bonne amie ou à un bon ami – et que te dis-tu à toi-même ?",
+          "hinweis": "Sois sincère : ta phrase pour toi peut être dure. Tu n’as pas besoin de remplir toutes les lignes ; la dernière est pour une situation que tu connais.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Ce que je dis à un·e ami·e proche",
+            "Ce que je me dis"
+          ],
+          "breiten": [
+            1,
+            1.5,
+            1.5
+          ],
+          "hoehe": 2,
+          "zeilen": 1,
+          "beispiel": [
+            "J’ai raté la passe décisive à l’entraînement.",
+            "« C’était un mauvais moment. Tu as tout donné pendant tout le match. »",
+            "« À cause de toi, on a perdu. Typique. »"
+          ],
+          "werte": [
+            [
+              "J’ai raté un contrôle.",
+              "",
+              ""
+            ],
+            [
+              "Tout le monde est invité à la fête – on a oublié de m’inviter.",
+              "",
+              ""
+            ],
+            [
+              "Je me trompe devant toute la classe.",
+              "",
+              ""
+            ],
+            [
+              "Je manque de sommeil, je suis à cran et je m’emporte.",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quel point tes phrases sont-elles bienveillantes ? Fais une croix sur chaque échelle.",
+          "hinweis": "Y a-t-il une différence ? Alors c’est tout à fait normal – beaucoup de gens se parlent plus durement qu’ils ne parlent aux autres.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Mes phrases à de bons amis :",
+          "von": "0 – dures",
+          "bis": "10 – très bienveillantes",
+          "stufen": 11
+        },
+        {
+          "art": "skala",
+          "frage": "Mes phrases à moi-même :",
+          "von": "0 – dures",
+          "bis": "10 – très bienveillantes",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce que je remarque : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une ligne (ou une situation à toi). Écris-toi une phrase bienveillante – comme te la dirait une bonne amie.",
+          "hinweis": "Exemple : « Le contrôle s’est mal passé, ça fait mal. Ça arrive à beaucoup de monde. J’ai quand même le droit de me traiter avec douceur et de repartir demain. »",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Trois ingrédients pour une phrase bienveillante",
+          "punkte": [
+            "Tu reconnais que c’est difficile en ce moment.",
+            "Tu te rappelles que d’autres vivent ça aussi.",
+            "Tu te dis quelque chose qui te soutient."
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Ma phrase bienveillante pour moi :"
+          ],
+          "anzahl": 1,
+          "spalten": 1,
+          "hoehe": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Main sur le cœur : pose une main sur ton bras ou ton cœur, sens la chaleur. Dis ta phrase tout bas en expirant. Puis coche ce que tu remarques.",
+          "hinweis": "Choisis l’endroit où c’est agréable. Tu peux aussi ne pas le faire ou t’arrêter – pour certains, c’est étrange. C’est aussi une réponse.",
+          "symbole": [
+            "sprechen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’ai remarqué",
+          "spalten": 2,
+          "items": [
+            "C’est inhabituel",
+            "C’est chaud ou apaisant",
+            "Je deviens triste ou ému·e",
+            "J’ai envie de rire un peu",
+            "Rien de particulier",
+            "Je préférais ne pas le faire"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ce que j’emporte : écris ta phrase sur une carte, découpe-la et glisse-la dans ta trousse, ta coque de téléphone ou ton casier.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "karten": [
+            {
+              "titel": "Ma phrase"
+            },
+            {
+              "titel": "Pour quelqu’un qui a du mal en ce moment"
+            }
+          ],
+          "hoehe": 150
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comparent la façon dont ils parlent aux autres et à eux-mêmes, formulent une phrase bienveillante pour eux et essaient un geste apaisant.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : se frotter les mains dix secondes, les poser chaudes sur joues ou bras : « Que ressentez-vous ? »",
+          "Expliquer (7 min) : lire la ligne d’exemple (entraînement). La phrase à soi peut être franchement dure – il s’agit de regarder.",
+          "Travail individuel (14 min) : tableau, échelles, phrase bienveillante dans la bulle (tâches 1 à 3). Musique douce.",
+          "Corps (8 min) : main sur le bras ou le cœur, phrase dite tout bas, trois longues expirations. Qui ne veut pas tient une pierre.",
+          "Échange (6 min, volontaire) : à deux seulement : « Comment était-ce de dire la phrase ? » – la phrase si on veut.",
+          "Clôture (5 min) : écrire la carte et la découper."
+        ],
+        "hintergrund": "L’autocompassion consiste à se traiter, dans les moments difficiles, comme un bon ami : percevoir la difficulté, se voir comme partie de l’humanité commune et se montrer bienveillant envers soi (Neff, 2003). Chez les adolescents, elle va de pair avec une plus grande résistance psychique (Neff & McGehee, 2010). On est souvent plus indulgent avec les autres qu’avec soi-même : face aux problèmes d’autrui, on raisonne plus sagement que face aux siens (Grossmann & Kross, 2014). Le tableau rend cette différence visible.",
+        "quellen": [
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Neff, K. D. & McGehee, P. (2010). Self-compassion and psychological resilience among adolescents and young adults. Self and Identity, 9(3), 225–240.",
+          "Grossmann, I. & Kross, E. (2014). Exploring Solomon’s paradox: Self-distancing eliminates the self-other asymmetry in wise reasoning about close relationships in younger and older adults. Psychological Science, 25(8), 1571–1580."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement deux situations ; amorces au tableau.",
+          "schwerer": "Phrase avec « tu » et avec son prénom, comparer."
+        },
+        "impulse": [
+          "Qu’est-ce qui te semble plus facile : consoler quelqu’un d’autre ou toi-même ?",
+          "Quelles phrases ne dirais-tu jamais à une amie – et pourtant à toi ?"
+        ],
+        "tipps": [
+          "Qui veut prend la seconde carte pour la donner à quelqu’un qui a du mal.",
+          "Le contact est une proposition ; alternative : une pierre lisse dans la main."
+        ],
+        "achtung": "La bienveillance envers soi paraît parfois étrange ou rend triste : ne jamais exiger le contact. Phrases très dures sur soi ou exclusion : entretien individuel, SePAS ou personne de confiance ; automutilation ou idées suicidaires : agir tout de suite.",
+        "material": "Crayons de couleur, ciseaux ; facultatif : une pierre lisse"
+      }
+    }
+  },
+  {
+    "id": "sr-gedankenwolken",
+    "bereich": "selbstreflexion",
+    "thema": "gedanken",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-26",
+      "V-18",
+      "SOZ-36",
+      "SOZ-41"
+    ],
+    "schlagworte": [
+      "Gedanken",
+      "Soziale Unsicherheit",
+      "Realitäts-Check",
+      "Gedankenlesen",
+      "Selbstwert",
+      "Sorgen",
+      "Ausgrenzung",
+      "Dazugehören"
+    ],
+    "verwandt": [
+      "t3-gedanken-vor-gericht",
+      "skills-kritischer-detektiv",
+      "t3-denkfallen",
+      "sr-innerer-kritiker"
+    ],
+    "bild": "icon:cloud",
+    "de": {
+      "titel": "Was denken die anderen?",
+      "untertitel": "Gedankenwolken sammeln, prüfen – und die weiterziehen lassen, die nicht stimmen",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Manchmal fühlt es sich an, als könnte man die Gedanken der anderen hören: „Die finden mich komisch.“ Dabei kann niemand Gedanken lesen – wir malen sie uns aus, und oft sind es die unfreundlichsten. Hier sammelst du solche Gedankenwolken, prüfst sie und siehst, welche weiterziehen dürfen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was befürchtest du, dass andere über dich denken? Schreib in jede Wolke einen Gedanken.",
+          "hinweis": "Beispiel: „Alle merken, dass ich unsicher bin.“ Es geht um Befürchtungen, nicht um Tatsachen. Du musst nicht alle Wolken füllen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "wolke",
+          "items": [
+            "In der Klasse denken sie vielleicht …",
+            "Wenn ich etwas sage oder vorlese …",
+            "Online und im Chat …",
+            "Wenn ich neu irgendwo dazukomme …"
+          ],
+          "anzahl": 4,
+          "hoehe": 4.2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir die drei Wolken aus, die dich am meisten beschäftigen, und prüf sie. Schreib kurz hin, worum es geht.",
+          "hinweis": "Beispiel: Wolke „Alle merken, dass ich rot werde.“ Wahrscheinlichkeit: 3 von 10. Über andere denke ich das nicht. Dagegen spricht: Die meisten sind mit sich selbst beschäftigt.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Meine Wolke",
+            "Wie wahrscheinlich? (0–10)",
+            "Würde ich das über andere denken?",
+            "Was spricht dagegen?"
+          ],
+          "breiten": [
+            1.4,
+            0.8,
+            1.2,
+            1.5
+          ],
+          "hoehe": 2,
+          "zeilen": 3,
+          "beispiel": [
+            "„Alle merken, dass ich rot werde.“",
+            "3",
+            "Nein. Bei anderen fällt es mir kaum auf.",
+            "Die meisten sind mit sich selbst beschäftigt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Puste weg, was nicht stimmt: Streich unwahrscheinliche Wolken durch oder übermal sie hell. Atme dabei tief ein und puste kräftig aus.",
+          "symbole": [
+            "malen",
+            "ankreuzen"
+          ],
+          "hinweis": "Zum Übermalen passen Gelb oder Hellblau. Was einen wahren Kern hat, bleibt – aber nur dieser Kern. Kreuz unten an, was du gemacht hast."
+        },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:wind",
+              "text": "Weggepustet: stimmt kaum"
+            },
+            {
+              "bild": "icon:palette",
+              "text": "Hell übermalt: stimmt zum Teil"
+            },
+            {
+              "bild": "icon:cloud",
+              "text": "Bleibt: hat einen wahren Kern"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib einen Satz, der dich entlastet – so, wie ihn eine gute Freundin zu dir sagen würde.",
+          "hinweis": "Beispiel: „Ich kann nicht wissen, was die anderen denken. Wahrscheinlich sind sie mit sich selbst beschäftigt.“",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Der wahre Kern, falls es einen gibt: …",
+            "Wahrscheinlicher ist: …",
+            "Ein Satz, der mich entlastet: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Frag nach, statt zu raten",
+          "text": "Wenn dich eine Wolke nicht loslässt: Frag nach. „Ist alles okay zwischen uns?“ ist mutig und klärt oft in einer Minute, was man sonst wochenlang mit sich herumträgt."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Wolken gehören dir. Du musst sie niemandem zeigen, und niemand sammelt das Blatt ein. Belastet dich ein Gedanke sehr, sprich mit einer Person, der du vertraust – zum Beispiel im SePAS."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen sammeln Befürchtungen darüber, was andere über sie denken, prüfen sie mit drei Fragen und formulieren einen Satz, der sie entlastet.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Wattebausch von der flachen Hand wegpusten: „Was würdet ihr gern wegpusten?“ Überleiten zu den Wolken.",
+          "Erklären (7 Min.): Wolken sind Befürchtungen, keine Tatsachen. Beispiel an der Tafel, dazu die drei Prüffragen der Tabelle.",
+          "Einzelarbeit (20 Min.): Wolken füllen, prüfen, wegpusten (Strich oder hell übermalen), entlastenden Satz schreiben.",
+          "Austausch (8 Min., freiwillig): Zu zweit den entlastenden Satz vorlesen; die andere Person fragt nur „Woher weißt du das?“, ohne zu beruhigen.",
+          "Abschluss (5 Min.): Drei tiefe Atemzüge, Wolken beim Ausatmen ziehen lassen; Tipp-Kasten „Frag nach“ vorlesen."
+        ],
+        "hintergrund": "Die Angst vor negativer Bewertung beruht oft auf „Gedankenlesen“, einer typischen Denkverzerrung: Man glaubt zu wissen, was andere denken, und rechnet mit dem Schlimmsten (Beck, 2011). In der kognitiven Verhaltenstherapie werden solche Gedanken wie Vermutungen behandelt und mit Fragen geprüft: Wie wahrscheinlich ist es? Was spricht dagegen? Was würde ich einem Freund sagen? (Stallard, 2019). Wer Gedanken als vorüberziehende Ereignisse betrachtet, statt mit ihnen zu verschmelzen, erlebt sie als weniger belastend (Masuda et al., 2004) – das Wegpusten übt genau das. Zudem überschätzen wir meist, wie sehr andere auf uns achten („Spotlight-Effekt“).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Wolken; Wahrscheinlichkeit in Worten.",
+          "schwerer": "Zu jeder Wolke eine andere Erklärung finden."
+        },
+        "impulse": [
+          "Woher weißt du, was andere über dich denken?",
+          "Welche Wolke zieht schnell weiter, welche bleibt hängen?"
+        ],
+        "tipps": [
+          "Farben nicht vorgeben: Jede Art, eine Wolke hell zu machen, ist richtig.",
+          "Den Wattebausch am Platz lassen: Er erinnert beim Schreiben ans Wegpusten."
+        ],
+        "achtung": "Sorgen ums Urteil anderer gehören zum Jugendalter. Bei „Alle hassen mich“, Schulangst oder Rückzug: Einzelgespräch, SePAS oder Vertrauensperson. Trifft eine Wolke zu (echte Verletzung), ernst nehmen.",
+        "material": "Buntstifte (Gelb, Hellblau); Watte oder Papierstücke"
+      }
+    },
+    "fr": {
+      "titel": "Que pensent les autres ?",
+      "untertitel": "Rassembler des nuages de pensées, les vérifier – et laisser partir ceux qui ne sont pas vrais",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Parfois, on a l’impression d’entendre les pensées des autres : « Ils me trouvent bizarre. » Pourtant, personne ne lit dans les pensées – on les imagine, et ce sont souvent les moins sympathiques. Ici, tu rassembles ces nuages de pensées, tu les vérifies et tu vois lesquels peuvent s’en aller."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que crains-tu que les autres pensent de toi ? Écris une pensée dans chaque nuage.",
+          "hinweis": "Exemple : « Tout le monde voit que je suis mal à l’aise. » Ce sont des craintes, pas des faits. Tu n’as pas besoin de remplir tous les nuages.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "wolke",
+          "items": [
+            "En classe, ils pensent peut-être …",
+            "Quand je dis ou lis quelque chose …",
+            "En ligne et dans les chats …",
+            "Quand j’arrive dans un nouveau groupe …"
+          ],
+          "anzahl": 4,
+          "hoehe": 4.2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis les trois nuages qui t’occupent le plus et vérifie-les. Note en quelques mots de quoi il s’agit.",
+          "hinweis": "Exemple : nuage « Tout le monde voit que je rougis. » Probabilité : 3 sur 10. Je ne pense pas ça des autres. Contre : la plupart pensent surtout à eux-mêmes.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mon nuage",
+            "À quel point c’est probable ? (0–10)",
+            "Penserais-je ça d’un autre ?",
+            "Qu’est-ce qui dit le contraire ?"
+          ],
+          "breiten": [
+            1.4,
+            0.8,
+            1.2,
+            1.5
+          ],
+          "hoehe": 2,
+          "zeilen": 3,
+          "beispiel": [
+            "« Tout le monde voit que je rougis. »",
+            "3",
+            "Non. Chez les autres, je le remarque à peine.",
+            "La plupart pensent surtout à eux-mêmes."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Souffle ce qui n’est pas vrai : raye les nuages peu probables ou recouvre-les d’une couleur claire. Inspire profondément, puis souffle un bon coup.",
+          "symbole": [
+            "malen",
+            "ankreuzen"
+          ],
+          "hinweis": "Le jaune ou le bleu clair conviennent bien. Ce qui contient un fond de vérité reste – mais seulement ce fond. Coche en bas ce que tu as fait."
+        },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:wind",
+              "text": "Soufflé : peu vrai"
+            },
+            {
+              "bild": "icon:palette",
+              "text": "Recouvert de clair : en partie vrai"
+            },
+            {
+              "bild": "icon:cloud",
+              "text": "Reste : un fond de vérité"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris une phrase qui te soulage – comme te la dirait une bonne amie.",
+          "hinweis": "Exemple : « Je ne peux pas savoir ce que les autres pensent. Ils sont probablement occupés à penser à eux-mêmes. »",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Le fond de vérité, s’il y en a un : …",
+            "Ce qui est plus probable : …",
+            "Une phrase qui me soulage : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Demande plutôt que deviner",
+          "text": "Si un nuage ne te lâche pas, demande. « Tout va bien entre nous ? » demande du courage et éclaircit souvent en une minute ce qu’on traîne sinon pendant des semaines."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Tes nuages t’appartiennent. Tu n’as à les montrer à personne, et personne ne ramasse la feuille. Si une pensée te pèse beaucoup, parles-en à une personne de confiance – par exemple au SePAS."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes rassemblent leurs craintes sur ce que les autres pensent d’eux, les vérifient avec trois questions et formulent une phrase qui les soulage.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : souffler un bout de coton posé sur la paume : « Qu’aimeriez-vous souffler ? » Lien avec les nuages.",
+          "Expliquer (7 min) : les nuages sont des craintes, pas des faits. Exemple au tableau, avec les trois questions du tableau de vérification.",
+          "Travail individuel (20 min) : remplir, vérifier, souffler (un trait ou une couleur claire), écrire la phrase qui soulage.",
+          "Échange (8 min, volontaire) : à deux, lire la phrase qui soulage ; l’autre demande seulement « D’où le sais-tu ? », sans rassurer.",
+          "Clôture (5 min) : trois respirations profondes, laisser partir les nuages à l’expiration ; lire l’encadré « Demande plutôt que deviner »."
+        ],
+        "hintergrund": "La peur d’être jugé repose souvent sur la « lecture de pensée », une distorsion fréquente : on croit savoir ce que les autres pensent et on s’attend au pire (Beck, 2011). En thérapie cognitive et comportementale, ces pensées sont traitées comme des hypothèses et vérifiées par des questions : est-ce probable ? qu’est-ce qui dit le contraire ? que dirais-je à un ami ? (Stallard, 2019). Qui observe ses pensées comme des événements qui passent, au lieu de s’y fondre, les trouve moins pénibles (Masuda et al., 2004) – souffler l’exerce. On surestime aussi en général combien les autres nous observent (« effet de projecteur »).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement deux nuages ; probabilité en mots.",
+          "schwerer": "Une autre explication possible par nuage."
+        },
+        "impulse": [
+          "Comment sais-tu ce que les autres pensent de toi ?",
+          "Quel nuage passe vite, lequel reste accroché ?"
+        ],
+        "tipps": [
+          "Ne rien imposer pour les couleurs : toute façon d’éclaircir un nuage est bonne.",
+          "Laisser le coton sur la table : il rappelle le souffle pendant l’écriture."
+        ],
+        "achtung": "L’inquiétude du regard des autres fait partie de l’adolescence. Si « Tout le monde me déteste », peur de l’école ou repli : entretien individuel, SePAS ou personne de confiance. Si un nuage est exact (vraie blessure), le prendre au sérieux.",
+        "material": "Crayons de couleur (jaune, bleu clair) ; coton ou petits papiers"
+      }
+    }
+  }
+]

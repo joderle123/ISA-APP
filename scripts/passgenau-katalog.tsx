@@ -731,7 +731,10 @@ for (const blatt of q.blaetter) {
     let sensibel: MikroBaustein['sensibel'] = blatt.bereich === 'werkzeuge' && blatt.thema === 'krise' ? 'akut' : heikelAusText(deText)
     if (!sensibel && (/(korper gehort mir|beruhr|gutes geheimnis|schlechtes geheimnis|intimbereich)/.test(nt) || (blatt.bereich === 'alltag' && blatt.thema === 'koerper' && /(korper|pubertat|veranderung)/.test(nt)))) sensibel = 'koerper'
     if (!sensibel && /(familie|eltern|mama|papa|mutter|vater|geschwister|zu hause|zuhause|daheim|oma|opa)/.test(norm(aufgaben))) sensibel = 'familie'
-    const belastung: 0 | 1 | 2 = RE.belastung2.test(deText) ? 2 : ['angst', 'trauer'].includes(blatt.thema) || blatt.thema === 'resilienz' || RE.belastung1.test(aufgaben) ? 1 : 0
+    // Reflexion über Beziehungen und Gedanken (wer mir nah ist, was andere denken) fragt nach Eigenem – bei einem heiklen Thema
+    // nicht vorschlagen; Stärken, Selbstfürsorge und Ziele bleiben erlaubt (sie stärken gerade dann)
+    const reflexionPersoenlich = blatt.bereich === 'selbstreflexion' && ['beziehungen', 'gedanken'].includes(blatt.thema)
+    const belastung: 0 | 1 | 2 = RE.belastung2.test(deText) ? 2 : ['angst', 'trauer'].includes(blatt.thema) || blatt.thema === 'resilienz' || reflexionPersoenlich || RE.belastung1.test(aufgaben) ? 1 : 0
     const thema = themenAus(blattThemen, deText + ' ' + blattText)
     const formate = formateAus(e)
     const ohneZiel =

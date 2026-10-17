@@ -1,0 +1,1668 @@
+[
+  {
+    "id": "sr-lob-archiv",
+    "bereich": "selbstreflexion",
+    "thema": "selbstbild",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-32",
+      "K-18",
+      "K-19",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Selbstwert",
+      "Lob",
+      "Komplimente",
+      "Anerkennung",
+      "Selbstbild",
+      "Selbstmitgefühl",
+      "Wertschätzung"
+    ],
+    "verwandt": [
+      "sr-was-ich-kann",
+      "skills-staerken-ruecken",
+      "skills-innerer-freund",
+      "skills-selbstwert-quellen"
+    ],
+    "bild": "icon:message-circle",
+    "de": {
+      "titel": "Mein Lob-Archiv",
+      "untertitel": "Gute Sätze über dich – gesammelt, damit sie nicht verloren gehen.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein Lob fühlt sich gut an und ist am nächsten Tag oft schon vergessen, während böse Sätze lange hängen bleiben. Hier sammelst du die guten, damit du sie wiederfindest. Auch Kleines zählt – und es gibt kein Richtig oder Falsch."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib in die Blasen, was Menschen dir Nettes gesagt oder geschrieben haben – so wörtlich, wie du dich erinnerst.",
+          "hinweis": "Von wem, ist egal: aus der Schule, vom Training, aus dem Chat, von Menschen zu Hause. Wenn dir erst ein Lob einfällt, reicht das für den Anfang.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Beispiel: „Du erklärst das richtig gut.“ – Mila, Mathe",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "anzahl": 6,
+          "spalten": 2,
+          "hoehe": 4.5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such das Lob aus, das dir am meisten bedeutet. Umrande seine Blase in deiner Lieblingsfarbe und lies den Satz laut vor.",
+          "hinweis": "Ganz leise ist in Ordnung, oder du liest ihn dem Spiegel vor. Es darf sich komisch anfühlen. Achte darauf, was dein Körper dabei macht.",
+          "symbole": [
+            "malen",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Beim Vorlesen habe ich gemerkt:",
+          "items": [
+            "Es war warm im Bauch.",
+            "Ich musste lächeln.",
+            "Es war mir ein bisschen peinlich.",
+            "Ich konnte es nicht ganz glauben.",
+            "Ich habe mich aufgerichtet.",
+            "Ich habe kaum etwas gemerkt."
+          ],
+          "spalten": 2,
+          "frei": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie nimmst du Lob am liebsten an? Mach auf jedem Regler ein Kreuz.",
+          "hinweis": "Beide Seiten sind in Ordnung. So findest du heraus, was bei dir ankommt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "unter vier Augen",
+              "vor allen"
+            ],
+            [
+              "gesagt",
+              "geschrieben"
+            ],
+            [
+              "nebenbei",
+              "feierlich"
+            ],
+            [
+              "fürs Ergebnis",
+              "für den Einsatz"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und jetzt du: Was lobst du an dir selbst? Schreib es in die Blasen.",
+          "hinweis": "Fällt es dir schwer, stell dir vor, ein Mensch, der es gut mit dir meint, sagt es über dich. Er schaut freundlich auf dich, nicht streng.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Das kann ich gut, und ich freue mich darüber:",
+            "Das habe ich in letzter Zeit geschafft:"
+          ],
+          "anzahl": 2,
+          "spalten": 2,
+          "hoehe": 4.5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mach das Archiv zu einem Ritual: eine Blase pro Woche. Mal an, wann es geklappt hat.",
+          "hinweis": "An schweren Tagen liest du das Archiv durch und sagst dir ein Lob laut.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "plan",
+          "ziel": "Eine Blase pro Woche",
+          "tage": [
+            "Wo 1",
+            "Wo 2",
+            "Wo 3",
+            "Wo 4",
+            "Wo 5",
+            "Wo 6"
+          ],
+          "zeilen": [
+            "Neue Blase gefüllt",
+            "Archiv gelesen"
+          ],
+          "symbol": "stern"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Dein Archiv, deine Regeln.",
+          "text": "Dieses Blatt gehört dir und wird nicht eingesammelt. Zeig es nur, wenn du magst. Wichtige Sätze kannst du auch als Notiz ins Handy schreiben oder an die Pinnwand hängen."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit:",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen sammeln erhaltenes Lob, spüren beim Vorlesen, wie es wirkt, und finden freundliche Worte für sich selbst. Sie nehmen ein Wochenritual mit.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein selbst erhaltenes Lob vorlesen. Frage: „Wie lange bleibt so ein Satz hängen – und wie lange ein harter?“ Sammeln, nicht bewerten.",
+          "Erklären (5 Min.): Die Beispielblase vorlesen. Auch Kleines zählt (Nicken, Daumen im Chat). Nichts wird eingesammelt, niemand muss etwas zeigen.",
+          "Einzelarbeit (15 Min.): Aufgaben 1 bis 4 bei leiser Musik. Das liebste Lob farbig umranden und flüstern oder in Gedanken lesen.",
+          "Austausch, freiwillig (10 Min.): Zu zweit ein Lob ohne Namen nennen und sagen, wie es sich anfühlt, oder die Regler vergleichen. Selbstlob liest niemand vor.",
+          "Abschluss (10 Min.): Aufgabe 5: Wochenritual planen (Tag, Ort). Satz „Das nehme ich mit“, Abschlussrunde mit einem Wort."
+        ],
+        "material": "Buntstifte, leise Musik, ein eigenes Beispiel-Lob",
+        "differenzierung": {
+          "leichter": "Nur drei Blasen; Selbstlob mit Satzanfang „Ich bin gut darin, …“ oder Wortkarte (witzig, geduldig).",
+          "schwerer": "Notieren, was genau gelobt wurde (Ergebnis, Einsatz, Eigenschaft); ein Lob für andere formulieren."
+        },
+        "achtung": "Manche erinnern sich an kein Lob oder erleben es als Druck. Nicht nachfragen; Blasen dürfen leer bleiben. Bei sehr negativem Selbstbild, Rückzug oder Hinweisen auf Selbstverletzung oder Suizidgedanken: Einzelgespräch, SePAS, Vertrauensperson, Leitung; akut sofort handeln (KJT 116 111, 112).",
+        "hintergrund": "Erfahrungsgemäß bleibt Kritik länger im Gedächtnis als Lob. Positive Erlebnisse bewusst wieder aufzurufen und auszukosten („Savoring“) kann gute Gefühle verlängern (Bryant & Veroff, 2007). Rückmeldung wirkt für das Lernen am besten, wenn sie sich auf Aufgabe, Vorgehen und Einsatz bezieht; reines Personenlob bringt wenig (Hattie & Timperley, 2007) – die Regler zeigen, was bei den Jugendlichen ankommt. Das Selbstlob folgt dem Gedanken der Selbstfreundlichkeit: sich zu begegnen wie einem Menschen, den man mag (Neff, 2003).",
+        "quellen": [
+          "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+        ],
+        "impulse": [
+          "Welches Lob wehrst du schnell ab – und was denkst du dabei?",
+          "Wie klingt ein Lob, das bei dir ankommt?"
+        ],
+        "tipps": [
+          "Selbstlob ist ungewohnt: mit dem Blick eines wohlwollenden Menschen beginnen.",
+          "Das Archiv in einem Monat noch einmal ergänzen."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Mon archive de compliments",
+      "untertitel": "Les bons mots sur toi – gardés pour qu’ils ne se perdent pas.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Un compliment fait du bien sur le moment, puis il est souvent oublié dès le lendemain, alors que les mots blessants restent longtemps. Ici, tu gardes les bons mots pour pouvoir les retrouver. Même les petits comptent – et il n’y a ni bonne ni mauvaise réponse."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris dans les bulles ce que des gens t’ont dit ou écrit de gentil – aussi mot pour mot que tu t’en souviens.",
+          "hinweis": "Peu importe de qui : lycée, entraînement, messages, proches. Si un seul compliment te revient, c’est déjà un début.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Exemple : « Tu expliques vraiment bien. » – Mila, maths",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "anzahl": 6,
+          "spalten": 2,
+          "hoehe": 4.5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis le compliment qui compte le plus pour toi. Entoure sa bulle de ta couleur préférée et lis la phrase à voix haute.",
+          "hinweis": "Tout bas, c’est très bien – ou lis-la devant le miroir. Ça peut paraître bizarre. Observe ce que fait ton corps.",
+          "symbole": [
+            "malen",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "En lisant, j’ai remarqué :",
+          "items": [
+            "Ça faisait chaud au ventre.",
+            "J’ai dû sourire.",
+            "C’était un peu gênant.",
+            "J’avais du mal à y croire.",
+            "Je me suis redressé·e.",
+            "Je n’ai presque rien senti."
+          ],
+          "spalten": 2,
+          "frei": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment aimes-tu recevoir un compliment ? Fais une croix sur chaque curseur.",
+          "hinweis": "Les deux côtés sont bien. Tu découvres ainsi ce qui te touche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "en tête à tête",
+              "devant les autres"
+            ],
+            [
+              "dit",
+              "écrit"
+            ],
+            [
+              "en passant",
+              "en grande pompe"
+            ],
+            [
+              "pour le résultat",
+              "pour l’effort"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et maintenant, toi : qu’est-ce que tu apprécies chez toi ? Écris-le dans les bulles.",
+          "hinweis": "Si c’est difficile, imagine qu’une personne qui te veut du bien le dise de toi. Elle te regarde avec bienveillance, pas avec sévérité.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Ce que je fais bien et qui me fait plaisir :",
+            "Ce que j’ai réussi ces derniers temps :"
+          ],
+          "anzahl": 2,
+          "spalten": 2,
+          "hoehe": 4.5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fais de l’archive un rituel : une bulle par semaine. Colorie quand ça a marché.",
+          "hinweis": "Les jours difficiles, relis l’archive et dis-toi un compliment à voix haute.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "plan",
+          "ziel": "Une bulle par semaine",
+          "tage": [
+            "Sem 1",
+            "Sem 2",
+            "Sem 3",
+            "Sem 4",
+            "Sem 5",
+            "Sem 6"
+          ],
+          "zeilen": [
+            "Nouvelle bulle remplie",
+            "Archive relue"
+          ],
+          "symbol": "stern"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ton archive, tes règles.",
+          "text": "Cette feuille t’appartient et n’est pas ramassée. Ne la montre que si tu en as envie. Tu peux aussi copier les phrases importantes dans une note de ton téléphone ou les accrocher au-dessus de ton bureau."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte :",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes rassemblent les compliments reçus, ressentent leur effet en les lisant à voix haute et trouvent des mots bienveillants pour eux-mêmes. Ils repartent avec un rituel hebdomadaire.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire un compliment reçu par l’enseignant·e. Question : « Combien de temps une telle phrase reste-t-elle en tête – et une phrase dure ? » Recueillir, ne pas juger.",
+          "Expliquer (5 min) : lire la bulle exemple. Les petites choses comptent (hochement de tête, pouce dans un chat). Rien n’est ramassé, personne n’a rien à montrer.",
+          "Travail individuel (15 min) : tâches 1 à 4 avec une musique douce. Entourer le compliment préféré d’une couleur ; le chuchoter ou le lire dans sa tête.",
+          "Échange volontaire (10 min) : à deux, citer un compliment sans nom et dire ce qu’il fait ressentir, ou comparer les curseurs. Personne ne lit ses compliments à soi-même.",
+          "Clôture (10 min) : tâche 5 : planifier le rituel (jour, endroit). Phrase « Ce que j’emporte », tour de clôture en un mot."
+        ],
+        "material": "Crayons de couleur, musique douce, un compliment personnel en exemple",
+        "differenzierung": {
+          "leichter": "Seulement trois bulles ; pour le compliment à soi-même, début de phrase « Je suis bon·ne pour … » ou carte de mots.",
+          "schwerer": "Noter ce qui a été félicité (résultat, effort, qualité) ; formuler un compliment pour une autre personne."
+        },
+        "achtung": "Certains ne se rappellent aucun compliment ou le vivent comme une pression : ne pas insister, laisser les bulles vides. Repli, image de soi très négative, automutilation ou idées suicidaires : entretien individuel, SePAS, personne de confiance, direction ; en urgence, agir tout de suite (KJT 116 111, 112).",
+        "hintergrund": "On retient souvent la critique plus longtemps que le compliment. Revivre et savourer des expériences positives (« savoring ») peut prolonger les émotions agréables (Bryant & Veroff, 2007). Pour apprendre, un retour est plus utile s’il porte sur la tâche, la démarche et l’effort ; un simple éloge de la personne apporte peu (Hattie & Timperley, 2007) – les curseurs montrent ce qui touche les jeunes. Le compliment à soi-même s’inspire de la bienveillance envers soi : se traiter comme quelqu’un qu’on apprécie (Neff, 2003).",
+        "quellen": [
+          "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+        ],
+        "impulse": [
+          "Quel compliment repousses-tu vite – et que penses-tu alors ?",
+          "À quoi ressemble un compliment qui te touche ?"
+        ],
+        "tipps": [
+          "Le compliment à soi-même est inhabituel : partir du regard d’une personne bienveillante.",
+          "Compléter l’archive dans un mois."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sr-was-ich-kann",
+    "bereich": "selbstreflexion",
+    "thema": "selbstbild",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-19",
+      "SOZ-40",
+      "K-28",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Stärken",
+      "Selbstwert",
+      "Schwierigkeiten",
+      "Hilfe holen",
+      "Selbsteinschätzung",
+      "Ressourcen",
+      "Selbstwirksamkeit"
+    ],
+    "verwandt": [
+      "mein-staerkenprofil",
+      "sr-lob-archiv",
+      "skills-radar",
+      "t2-staerken-schatzkiste",
+      "lebensnetz"
+    ],
+    "bild": "icon:thumb-up",
+    "de": {
+      "titel": "Was ich kann – was mir schwerfällt",
+      "untertitel": "Zwei Seiten, ein Bild von dir: wo du stark bist und wo es holpert.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Jeder Mensch kann einiges richtig gut und tut sich mit anderem schwer. Auf Seite 1 sammelst du, was du kannst, auf Seite 2, was dir Mühe macht und wer dir hilft. Es gibt kein Richtig oder Falsch."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Daumen hoch: Was kannst du gut? Schreib zu jedem Bereich etwas auf.",
+          "hinweis": "Auch Kleines zählt: zuhören, Fahrrad reparieren, jemanden beruhigen. Unterstreich, was dir Spaß macht.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Bereich",
+            "Das kann ich gut"
+          ],
+          "zeilen": 0,
+          "breiten": [
+            1,
+            3
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "Beispiel",
+            "Ich kann etwas so erklären, dass andere es verstehen."
+          ],
+          "werte": [
+            [
+              "Schule",
+              ""
+            ],
+            [
+              "Freizeit",
+              ""
+            ],
+            [
+              "Mit anderen",
+              ""
+            ],
+            [
+              "Im Alltag",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie gehst du an etwas Neues heran? Mach auf jedem Regler ein Kreuz.",
+          "hinweis": "Beide Seiten sind Stärken. Sie sind nur verschieden.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "lieber allein",
+              "lieber im Team"
+            ],
+            [
+              "der Reihe nach",
+              "aus dem Bauch"
+            ],
+            [
+              "ruhig, gründlich",
+              "schnell, mutig"
+            ],
+            [
+              "erst zuschauen",
+              "gleich probieren"
+            ],
+            [
+              "mit Plan",
+              "spontan"
+            ],
+            [
+              "Details",
+              "Überblick"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Stärke von Seite 1 aus, die du nächste Woche bewusst einsetzt.",
+          "hinweis": "Beispiel: Zuhören – ich frage Pol in der großen Pause, wie sein Wochenende war.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Eine Stärke, die ich nächste Woche nutze …",
+            "Das mache ich dann (wo, wann, mit wem) …",
+            "Daran merke ich, dass es geklappt hat …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Dein Blick ist nicht der einzige.",
+          "text": "Andere sehen manchmal Stärken an dir, die du selbst nicht siehst. Frag, wenn du magst, einen Menschen, dem du vertraust: „Was kann ich gut?“ Du musst nicht."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Daumen zur Seite: Was fällt dir schwer oder macht dir Mühe? Schreib zu jedem Bereich etwas auf, wenn du magst.",
+          "hinweis": "Du musst nicht alle Felder füllen. Schwer heißt nicht schlecht, sondern: Hier brauchst du mehr Übung oder Unterstützung.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Bereich",
+            "Das macht mir Mühe"
+          ],
+          "zeilen": 0,
+          "breiten": [
+            1,
+            3
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "Beispiel",
+            "Mich zu melden, wenn ich nicht ganz sicher bin."
+          ],
+          "werte": [
+            [
+              "Schule",
+              ""
+            ],
+            [
+              "Freizeit",
+              ""
+            ],
+            [
+              "Mit anderen",
+              ""
+            ],
+            [
+              "Im Alltag",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Schwierigkeit aus. Wer oder was kann dir dabei helfen? Schreib an jeden Finger einen Helfer.",
+          "hinweis": "Helfer können Menschen sein, aber auch Orte, Dinge, Tricks oder ein Satz, den du dir sagst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "Ein Mensch",
+            "Ein Ort",
+            "Ein Ding",
+            "Ein Trick",
+            "Ein Satz"
+          ],
+          "mitte": "Meine Schwierigkeit"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit:",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen benennen, was sie können und was ihnen Mühe macht, wählen Helfer für eine Schwierigkeit und planen, eine Stärke nächste Woche zu nutzen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Daumen-Spiel: Tätigkeiten nennen (Rad fahren, vor der Klasse sprechen); alle zeigen den Daumen nach oben („kann ich“) oder zur Seite („holpert“). Ohne Kommentar.",
+          "Erklären (5 Min.): Zwei Seiten wie im Spiel. Beispielzeile vorlesen; unterstreichen, was Spaß macht. Schwer heißt nicht schlecht.",
+          "Einzelarbeit (20 Min.): Seite 1 mit Tabelle, Reglern und Satz für nächste Woche; Seite 2 mit Tabelle und Helfer-Hand. Leise Musik; nicht alles muss gefüllt werden.",
+          "Austausch, freiwillig (10 Min.): Zu zweit eine Stärke und den Plan für nächste Woche nennen; die andere Person fragt: „Was brauchst du dafür?“",
+          "Abschluss (5 Min.): Den Satz „Eine Stärke, die ich nächste Woche nutze …“ laut oder leise sprechen. Nichts wird eingesammelt."
+        ],
+        "material": "Buntstifte, leise Musik",
+        "differenzierung": {
+          "leichter": "Je Seite zwei Bereiche; Stärken aus einer Wortliste wählen (zuhören, Humor, Geduld, Mut).",
+          "schwerer": "Notieren, wann eine Stärke schon einmal geholfen hat; prüfen, welche Stärke eine Schwierigkeit abfedern könnte."
+        },
+        "achtung": "Wer kaum Gutes findet oder sich abwertet, ist vielleicht belastet: nicht im Plenum nachfragen, nichts vorlesen lassen. Aussehen gehört nicht in die Tabelle. Bei Hinweisen auf Selbstverletzung oder Suizidgedanken: Einzelgespräch, SePAS, Vertrauensperson; akut sofort handeln (KJT 116 111, 112).",
+        "hintergrund": "Die Charakterstärken (Peterson & Seligman, 2004) zeigen, dass Stärken über Schulnoten hinausgehen: Neugier, Freundlichkeit, Humor, Fairness gehören dazu. In einer Studie mit Erwachsenen nutzten Teilnehmende eine persönliche Stärke eine Woche lang auf neue Weise; danach waren sie glücklicher und weniger niedergeschlagen, der Effekt hielt Monate (Seligman et al., 2005). Daran knüpft der Satz für die nächste Woche an. Das Blatt blendet Schwierigkeiten nicht aus: Wer weiß, wo es holpert und wer hilft, geht gelassener damit um. Die Einschätzungen sind subjektiv, kein Test.",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "impulse": [
+          "Welche Stärke zeigst du, ohne dass es dir auffällt?",
+          "Was hilft dir, wenn etwas schwerfällt – und wer weiß davon?"
+        ],
+        "tipps": [
+          "Stärken sind mehr als Noten: Zuhören, Humor, Geduld zählen mit.",
+          "Nach einigen Wochen noch einmal ausfüllen und vergleichen."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Ce que je sais faire – ce qui me coûte",
+      "untertitel": "Deux pages, un portrait de toi : où tu te sens solide et où ça coince.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Chacun sait bien faire certaines choses et en trouve d’autres difficiles. Sur la page 1, tu notes ce que tu sais faire ; sur la page 2, ce qui te coûte et qui t’aide. Il n’y a ni bonne ni mauvaise réponse."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pouce en l’air : qu’est-ce que tu sais bien faire ? Note quelque chose pour chaque domaine.",
+          "hinweis": "Les petites choses comptent : écouter, réparer un vélo, calmer quelqu’un. Souligne ce que tu fais avec plaisir.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Domaine",
+            "Ce que je sais bien faire"
+          ],
+          "zeilen": 0,
+          "breiten": [
+            1,
+            3
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "Exemple",
+            "Je sais expliquer une chose pour que les autres la comprennent."
+          ],
+          "werte": [
+            [
+              "Lycée",
+              ""
+            ],
+            [
+              "Loisirs",
+              ""
+            ],
+            [
+              "Avec les autres",
+              ""
+            ],
+            [
+              "Au quotidien",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment abordes-tu quelque chose de nouveau ? Fais une croix sur chaque curseur.",
+          "hinweis": "Les deux côtés sont des forces. Elles sont juste différentes.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "seul·e",
+              "en équipe"
+            ],
+            [
+              "pas à pas",
+              "au feeling"
+            ],
+            [
+              "posé, précis",
+              "vite, audacieux"
+            ],
+            [
+              "observer",
+              "essayer direct"
+            ],
+            [
+              "avec un plan",
+              "spontané"
+            ],
+            [
+              "les détails",
+              "l’ensemble"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une force de la page 1 que tu utiliseras consciemment la semaine prochaine.",
+          "hinweis": "Exemple : écouter – je demande à Pol, à la grande récréation, comment s’est passé son week-end.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Une force que j’utiliserai la semaine prochaine : …",
+            "Je le ferai (où, quand, avec qui) : …",
+            "Je saurai que ça a marché quand …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ton regard n’est pas le seul.",
+          "text": "Les autres voient parfois des forces que tu ne vois pas toi-même. Si tu veux, demande à une personne de confiance : « Qu’est-ce que je sais bien faire ? » Rien ne t’y oblige."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pouce sur le côté : qu’est-ce qui te coûte ou te demande des efforts ? Note quelque chose pour chaque domaine, si tu veux.",
+          "hinweis": "Tu n’as pas besoin de tout remplir. Difficile ne veut pas dire mauvais : ici, il te faut plus d’entraînement ou de soutien.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Domaine",
+            "Ce qui me coûte"
+          ],
+          "zeilen": 0,
+          "breiten": [
+            1,
+            3
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "Exemple",
+            "Lever la main quand je ne suis pas tout à fait sûr·e."
+          ],
+          "werte": [
+            [
+              "Lycée",
+              ""
+            ],
+            [
+              "Loisirs",
+              ""
+            ],
+            [
+              "Avec les autres",
+              ""
+            ],
+            [
+              "Au quotidien",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une difficulté. Qui ou quoi peut t’aider ? Écris une aide sur chaque doigt.",
+          "hinweis": "Les aides peuvent être des personnes, mais aussi des lieux, des objets, des astuces ou une phrase que tu te dis.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "Une personne",
+            "Un lieu",
+            "Un objet",
+            "Une astuce",
+            "Une phrase"
+          ],
+          "mitte": "Ma difficulté"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte :",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes nomment ce qu’ils savent faire et ce qui leur coûte, choisissent des aides pour une difficulté et prévoient d’utiliser une force la semaine suivante.",
+        "ablauf": [
+          "Entrée en matière (5 min) : jeu des pouces : nommer des activités (faire du vélo, parler devant la classe) ; chacun montre le pouce en haut (« je sais ») ou sur le côté (« ça coince »). Sans commentaire.",
+          "Expliquer (5 min) : deux pages, comme dans le jeu. Lire la ligne exemple ; souligner ce qui fait plaisir. Difficile ne veut pas dire mauvais.",
+          "Travail individuel (20 min) : page 1 avec tableau, curseurs et phrase pour la semaine prochaine ; page 2 avec tableau et main des aides. Musique douce ; tout n’est pas à remplir.",
+          "Échange volontaire (10 min) : à deux, nommer une force et le plan pour la semaine prochaine ; l’autre demande : « De quoi as-tu besoin pour cela ? »",
+          "Clôture (5 min) : dire la phrase « Une force que j’utiliserai la semaine prochaine … » à voix haute ou dans sa tête. Rien n’est ramassé."
+        ],
+        "material": "Crayons de couleur, musique douce",
+        "differenzierung": {
+          "leichter": "Deux domaines par page ; choisir les forces dans une liste de mots (écouter, humour, patience, courage).",
+          "schwerer": "Noter quand une force a déjà aidé ; chercher quelle force pourrait atténuer une difficulté."
+        },
+        "achtung": "Qui trouve à peine du positif ou se dévalorise est peut-être en difficulté : ne pas questionner en plénière, ne rien faire lire à voix haute. L’apparence n’a pas sa place dans le tableau. Automutilation ou idées suicidaires : entretien individuel, SePAS, personne de confiance ; en urgence, agir tout de suite (KJT 116 111, 112).",
+        "hintergrund": "Les forces de caractère (Peterson & Seligman, 2004) dépassent les notes : curiosité, gentillesse, humour, équité en font partie. Dans une étude auprès d’adultes, des participants ont utilisé une force personnelle d’une manière nouvelle pendant une semaine ; ils étaient ensuite plus heureux et moins abattus, l’effet a duré des mois (Seligman et al., 2005). La phrase pour la semaine prochaine s’en inspire. La feuille n’occulte pas les difficultés : qui sait où ça coince et qui peut aider les aborde plus sereinement. Les évaluations sont subjectives, ce n’est pas un test.",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "impulse": [
+          "Quelle force montres-tu sans t’en rendre compte ?",
+          "Qu’est-ce qui t’aide quand c’est difficile – et qui le sait ?"
+        ],
+        "tipps": [
+          "Les forces, c’est plus que des notes : écouter, humour, patience comptent.",
+          "Refaire la feuille après quelques semaines et comparer."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sr-highlights",
+    "bereich": "selbstreflexion",
+    "thema": "selbstbild",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-26",
+      "K-18",
+      "K-16",
+      "V-21"
+    ],
+    "schlagworte": [
+      "Erinnerungen",
+      "Ressourcen",
+      "Selbstregulation",
+      "Stimmung",
+      "Stress",
+      "Traurigkeit",
+      "Sinne",
+      "Musik",
+      "Anker"
+    ],
+    "verwandt": [
+      "skills-gute-momente",
+      "monat-in-farben",
+      "sr-drei-gute-dinge",
+      "lebenslinie",
+      "t4-atem-anker"
+    ],
+    "bild": "icon:sparkles",
+    "de": {
+      "titel": "Meine Highlight-Bänder",
+      "untertitel": "Die schönsten Momente der letzten Monate – festgehalten für schwere Tage.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Schöne Momente gibt es mehr, als man im Alltag bemerkt: ein Abend mit Freunden, ein Tor, ein Lied im Bus, ein freier Tag. Auf den Bändern sammelst du deine aus den letzten Monaten. Einen davon hältst du mit allen Sinnen fest – er wird dein Anker für schwere Tage."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib auf die Bänder die schönsten Momente der letzten Monate – ein Stichwort oder ein Satz reicht.",
+          "hinweis": "Große und kleine Momente zählen gleich viel. Denk an Schule, Freizeit, Ferien, Menschen, Orte. Du musst nicht alle Bänder füllen.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": [
+            "Beispiel: Riesenrad auf der Schueberfouer, mit Lena",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "anzahl": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähl das Band, das dir am meisten bedeutet. Schließ die Augen und geh in den Moment zurück. Was nimmst du wahr?",
+          "hinweis": "Schreib zu jedem Sinn ein, zwei Stichwörter und mal an, wo du den Moment im Körper spürst. Fehlt ein Sinn, ist das in Ordnung. Beispiel: Ich sehe – orangefarbenes Licht und das Riesenrad.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ich sehe: …",
+                "Ich höre: …",
+                "Ich rieche: …",
+                "Ich spüre (Haut, Körper): …",
+                "Ich schmecke: …"
+              ],
+              "linien": 2
+            }
+          ],
+          "rechts": [
+            {
+              "art": "koerper",
+              "frage": "Wo spürst du den Moment?",
+              "legende": [
+                {
+                  "farbe": "gelb",
+                  "text": "warm"
+                },
+                {
+                  "farbe": "orange",
+                  "text": "kribbelig"
+                },
+                {
+                  "farbe": "gruen",
+                  "text": "ruhig"
+                },
+                {
+                  "farbe": "hellblau",
+                  "text": "leicht"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welcher Song passt zu deinem Moment? Hör ihn dir, wenn du kannst, kurz an und beschreib ihn.",
+          "hinweis": "Es muss nicht dein Lieblingssong sein. Er soll nur zu dem Gefühl von damals passen.",
+          "symbole": [
+            "zuhoeren",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "So klingt mein Moment:",
+          "items": [
+            "leise",
+            "laut",
+            "warm",
+            "hell",
+            "langsam",
+            "schnell"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Song: …",
+            "Wenn ich ihn höre, merke ich: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane deinen Anker für einen schweren Tag.",
+          "hinweis": "Der Anker macht ein schweres Gefühl nicht weg. Er öffnet ein kleines Fenster zu etwas, das auch da ist.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich abends traurig oder leer bin,",
+              "dann": "höre ich meinen Song, schließe die Augen und gehe die Sinne durch."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So nutzt du deinen Anker",
+          "punkte": [
+            "Song anmachen oder leise im Kopf summen.",
+            "Augen zu, drei ruhige Atemzüge.",
+            "Die Sinne durchgehen: sehen, hören, riechen, spüren.",
+            "Wird es schwerer statt leichter: aufhören, etwas tun, das dir guttut, oder mit jemandem reden."
+          ]
+        },
+        {
+          "art": "notfall"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit:",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen sammeln schöne Momente der letzten Monate und halten einen mit allen Sinnen und einem Song fest – als Anker für schwere Tage.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: eine Orange schälen und herumgeben (oder 30 Sekunden ruhige Musik). Frage: „Woran erinnert euch das?“ Zwei, drei Antworten, keine Details.",
+          "Erklären (5 Min.): Bänder und Beispiel zeigen, ein Stichwort reicht. Anker: eine Erinnerung, die man bei Bedarf aufruft; sie gibt Halt, löst aber nichts. Nichts wird eingesammelt.",
+          "Einzelarbeit (20 Min.): Bänder füllen; einen Moment wählen, zwei Minuten Stille mit geschlossenen Augen; Sinne, Körperbild, Song, Wenn-dann-Plan.",
+          "Austausch, freiwillig (10 Min.): Zu zweit nicht den Moment erzählen, sondern einen Sinneseindruck nennen (Geruch, Geräusch). Songs nur über Kopfhörer teilen.",
+          "Abschluss (5 Min.): Zurück ins Hier und Jetzt: fünf Dinge im Raum sehen, Füße auf den Boden, drei ruhige Atemzüge. Dann „Das nehme ich mit“."
+        ],
+        "material": "Buntstifte, Orange oder Tee, ruhige Musik, Kopfhörer",
+        "differenzierung": {
+          "leichter": "Nur drei Bänder; die Sinne mündlich erzählen; Körperbild weglassen.",
+          "schwerer": "Zwei Anker vergleichen: Welcher Sinn trägt am stärksten? Wenn-dann-Pläne für drei schwere Tage."
+        },
+        "achtung": "Erinnerungen können Trauer wecken (Verlust, kein Moment fällt ein). Nichts erzwingen; bei starken Gefühlen unterbrechen, Einzelgespräch, SePAS, Vertrauensperson. Selbstverletzung oder Suizidgedanken: nicht allein lassen, sofort handeln; Hilfenummern stehen auf dem Blatt.",
+        "hintergrund": "Positive Erlebnisse bewusst auszukosten, auch im Rückblick, nennt man „Savoring“; dazu gehört, die Sinne zu schärfen, damit das Gefühl lebendiger wird (Bryant & Veroff, 2007). Positive Gefühle erweitern, was wir wahrnehmen und denken, und bauen mit der Zeit Kräfte auf (Fredrickson, 2001). Der Anker greift das auf: Moment, Sinneseindruck und Song werden zur persönlichen Ressource für schwere Stunden. Ähnliche Ressourcenübungen nutzt die Therapie; sie ersetzen keine Behandlung.",
+        "quellen": [
+          "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum.",
+          "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
+        ],
+        "impulse": [
+          "Welcher Sinn bringt dich am schnellsten in einen Moment zurück?",
+          "Was brauchst du an einem schweren Tag: Ablenkung, Ruhe, jemand zum Reden?"
+        ],
+        "tipps": [
+          "Gerüche mit neutraler Bedeutung wählen, starke Parfüms vermeiden.",
+          "Den Anker nach einigen Wochen prüfen: Braucht er einen neuen Song?"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Mes rubans de moments forts",
+      "untertitel": "Les plus beaux moments des derniers mois – gardés pour les jours difficiles.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Il y a plus de beaux moments qu’on ne le remarque au quotidien : une soirée entre amis, un but, une chanson dans le bus, un jour de congé. Sur les rubans, tu rassembles les tiens des derniers mois. Tu en gardes un avec tous tes sens – il deviendra ton ancre pour les jours difficiles."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris sur les rubans les plus beaux moments des derniers mois – un mot-clé ou une phrase suffit.",
+          "hinweis": "Les grands et les petits moments comptent autant. Pense au lycée, aux loisirs, aux vacances, aux gens, aux lieux. Tu n’as pas besoin de remplir tous les rubans.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": [
+            "Exemple : grande roue à la Schueberfouer, avec Lena",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "anzahl": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis le ruban qui compte le plus pour toi. Ferme les yeux et retourne dans ce moment. Que perçois-tu ?",
+          "hinweis": "Note un ou deux mots pour chaque sens et colorie l’endroit où tu ressens ce moment dans ton corps. Si un sens manque, ce n’est pas grave. Exemple : je vois – une lumière orange et la grande roue.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Je vois : …",
+                "J’entends : …",
+                "Je sens (odeur) : …",
+                "Je ressens (peau, corps) : …",
+                "Je goûte : …"
+              ],
+              "linien": 2
+            }
+          ],
+          "rechts": [
+            {
+              "art": "koerper",
+              "frage": "Où ressens-tu ce moment ?",
+              "legende": [
+                {
+                  "farbe": "gelb",
+                  "text": "chaud"
+                },
+                {
+                  "farbe": "orange",
+                  "text": "qui picote"
+                },
+                {
+                  "farbe": "gruen",
+                  "text": "calme"
+                },
+                {
+                  "farbe": "hellblau",
+                  "text": "léger"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle chanson va avec ton moment ? Si tu peux, écoute-la un instant et décris-la.",
+          "hinweis": "Ce n’est pas forcément ta chanson préférée. Elle doit juste aller avec le sentiment de ce moment-là.",
+          "symbole": [
+            "zuhoeren",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "En musique, mon moment est :",
+          "items": [
+            "doux",
+            "fort",
+            "chaleureux",
+            "clair",
+            "lent",
+            "rapide"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma chanson : …",
+            "Quand je l’entends, je remarque : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prévois ton ancre pour un jour difficile.",
+          "hinweis": "L’ancre n’efface pas un sentiment lourd. Elle ouvre une petite fenêtre sur quelque chose qui existe aussi.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je suis triste ou vide le soir,",
+              "dann": "j’écoute ma chanson, je ferme les yeux et je repasse mes sens."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment utiliser ton ancre",
+          "punkte": [
+            "Mets ta chanson ou fredonne-la dans ta tête.",
+            "Yeux fermés, trois respirations calmes.",
+            "Repasse tes sens : voir, entendre, sentir, ressentir.",
+            "Si ça devient plus lourd au lieu de s’alléger : arrête, fais quelque chose qui te fait du bien ou parles-en à quelqu’un."
+          ]
+        },
+        {
+          "art": "notfall"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte :",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes rassemblent de beaux moments des derniers mois et en gardent un avec tous leurs sens et une chanson – une ancre pour les jours difficiles.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : éplucher une orange et la faire passer (ou 30 secondes de musique calme). Question : « Cela vous rappelle quoi ? » Deux ou trois réponses, sans détails.",
+          "Expliquer (5 min) : montrer rubans et exemple ; un mot-clé suffit. Ancre : un souvenir qu’on convoque au besoin ; elle donne un appui mais n’efface rien. Rien n’est ramassé.",
+          "Travail individuel (20 min) : remplir les rubans ; choisir un moment, deux minutes de silence yeux fermés ; sens, corps, chanson, plan si-alors.",
+          "Échange volontaire (10 min) : à deux, ne pas raconter le moment mais nommer une impression sensorielle (odeur, bruit). Chansons partagées seulement au casque.",
+          "Clôture (5 min) : retour à l’ici et maintenant : cinq choses visibles dans la pièce, pieds au sol, trois respirations calmes. Puis « Ce que j’emporte »."
+        ],
+        "material": "Crayons de couleur, orange ou thé, musique calme, casques",
+        "differenzierung": {
+          "leichter": "Seulement trois rubans ; raconter les sens à l’oral ; sans dessin du corps.",
+          "schwerer": "Comparer deux ancres : quel sens porte le plus ? Plans si-alors pour trois jours difficiles."
+        },
+        "achtung": "Les souvenirs peuvent réveiller la tristesse (perte, aucun moment ne vient). Ne rien forcer ; en cas d’émotions fortes, interrompre, entretien individuel, SePAS, personne de confiance. Automutilation ou idées suicidaires : ne pas laisser seul·e, agir tout de suite ; numéros sur la feuille.",
+        "hintergrund": "Savourer consciemment des expériences positives, aussi en les revivant, s’appelle « savoring » ; aiguiser ses sens rend le sentiment plus vivant (Bryant & Veroff, 2007). Les émotions positives élargissent ce que nous percevons et pensons et construisent des ressources avec le temps (Fredrickson, 2001). L’ancre reprend cette idée : moment, impression sensorielle et chanson deviennent une ressource personnelle pour les heures difficiles. Les approches thérapeutiques utilisent des exercices comparables ; ils ne remplacent aucun traitement.",
+        "quellen": [
+          "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum.",
+          "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
+        ],
+        "impulse": [
+          "Quel sens te ramène le plus vite dans un moment ?",
+          "De quoi as-tu besoin un jour difficile : te distraire, du calme, quelqu’un à qui parler ?"
+        ],
+        "tipps": [
+          "Choisir des odeurs neutres, éviter les parfums forts.",
+          "Revoir l’ancre après quelques semaines : faut-il une nouvelle chanson ?"
+        ]
+      }
+    }
+  },
+  {
+    "id": "sr-drei-gute-dinge",
+    "bereich": "selbstreflexion",
+    "thema": "selbstbild",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-29",
+      "K-26",
+      "K-33",
+      "K-16"
+    ],
+    "schlagworte": [
+      "Dankbarkeit",
+      "Gewohnheit",
+      "Wohlbefinden",
+      "Stimmung",
+      "Abendritual",
+      "Optimismus",
+      "Stress"
+    ],
+    "verwandt": [
+      "drei-gute-dinge",
+      "was-diese-woche-gut-war",
+      "skills-gute-momente",
+      "sr-highlights",
+      "wochen-kurve"
+    ],
+    "bild": "icon:hearts",
+    "de": {
+      "titel": "Drei gute Dinge",
+      "untertitel": "Sieben Abende, drei Sätze – und dein Blick fürs Gute wird schärfer.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Was schiefgeht, merken wir sofort. Was gut läuft, rutscht leicht durch. Sieben Abende lang schaust du bewusst auf das Gute und fragst dich, wie es dazu kam. Es müssen keine großen Dinge sein: ein warmes Brötchen oder ein Lachen im Bus zählen genauso."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mach den Abend zu einem kleinen Ritual. Was brauchst du, damit das Aufschreiben sich gut anfühlt? Kreuz an, was zu dir passt.",
+          "hinweis": "Ein Ritual hilft Körper und Kopf zu merken: Jetzt ist ruhige Zeit. Probier aus, was bei dir klappt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "gedimmtes Licht oder Kerze",
+            "ruhige Musik",
+            "Tee, Kakao oder Zitronenwasser",
+            "eine Decke",
+            "Handy auf lautlos",
+            "mein Lieblingsstift"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich schreibe um … Uhr an diesem Platz: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib sieben Abende lang drei gute Dinge auf, die heute passiert sind. Schreib dazu, warum sie passiert sind.",
+          "hinweis": "Stichwörter reichen. Ein Beispiel steht in der ersten Zeile. „Warum“ kann heißen: Ich habe etwas dafür getan. Oder: Es war Zufall, oder jemand war nett zu mir – das zählt auch.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Tag",
+            "Drei gute Dinge",
+            "Warum ist es passiert?"
+          ],
+          "zeilen": 0,
+          "breiten": [
+            0.6,
+            2,
+            1.7
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "Beispiel",
+            "1. Pol teilt sein Brötchen. 2. Sonne im Bus. 3. Matheaufgabe verstanden.",
+            "1. Ich hatte meins vergessen und habe gefragt. 2. Zufall. 3. Ich habe nachgefragt."
+          ],
+          "werte": [
+            [
+              "Tag 1",
+              "",
+              ""
+            ],
+            [
+              "Tag 2",
+              "",
+              ""
+            ],
+            [
+              "Tag 3",
+              "",
+              ""
+            ],
+            [
+              "Tag 4",
+              "",
+              ""
+            ],
+            [
+              "Tag 5",
+              "",
+              ""
+            ],
+            [
+              "Tag 6",
+              "",
+              ""
+            ],
+            [
+              "Tag 7",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal jeden Abend das Herz des Tages an: so viel und in der Farbe, wie sich der Tag gut angefühlt hat.",
+          "hinweis": "Auch ein halbes Herz ist ein Herz. An manchen Tagen darf es klein bleiben. Das letzte Herz ist für die ganze Woche.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "herz",
+          "items": [
+            "Tag 1",
+            "Tag 2",
+            "Tag 3",
+            "Tag 4",
+            "Tag 5",
+            "Tag 6",
+            "Tag 7",
+            "Meine Woche"
+          ],
+          "anzahl": 8
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies am Ende der Woche deine Zeilen durch. Beende dann die Sätze.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am meisten gefreut hat mich: …",
+            "Aufgefallen ist mir: Gute Dinge passieren oft, wenn …",
+            "Das möchte ich nächste Woche öfter: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Klein zählt.",
+          "text": "Fällt dir an einem Abend nichts ein, fang ganz klein an: ein warmes Getränk, ein Lied, fünf Minuten ohne Stress. Ein schlechter Tag macht die Übung nicht falsch. Wenn dich über längere Zeit fast nichts mehr freut, sprich mit einer Person, der du vertraust – zum Beispiel im SePAS."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit:",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen starten ein Abendritual für eine Woche: drei gute Dinge des Tages und ihre Gründe notieren. Sie lernen, auch Kleines zu bemerken.",
+        "ablauf": [
+          "Einstieg (5 Min.): Licht dimmen, LED-Kerze an, ein Teebeutel geht zum Riechen herum; eine Minute still. Frage: „Woran merkt ihr, dass der Tag zu Ende geht?“",
+          "Erklären (7 Min.): Beispielzeile erklären: drei Dinge, dazu „Warum?“ (eigener Beitrag, Zufall, ein anderer Mensch). Stichwörter reichen. Nichts wird eingesammelt.",
+          "Einzelarbeit (13 Min.): Ritual wählen (Aufgabe 1), die erste Zeile mit den guten Dingen von heute füllen. Ruhige Musik.",
+          "Austausch, freiwillig (10 Min.): Zu zweit ein kleines gutes Ding von heute nennen und sagen, wie es dazu kam. Niemand liest vor.",
+          "Abschluss (10 Min.): Wochenplan: Wann, wo, welches Ritual? Hürden sammeln (Vergessen, Müdigkeit). Das erste Herz ausmalen. Aufgabe 4 am Ende der Woche zu Hause."
+        ],
+        "material": "Buntstifte, LED-Kerze, Teebeutel, ruhige Musik",
+        "differenzierung": {
+          "leichter": "Ein gutes Ding pro Abend; Wortkarte mit Beispielen (Essen, Wetter, Musik, ein Lachen); „Warum“ weglassen.",
+          "schwerer": "Eigenen Beitrag notieren, am Ende der Woche Muster suchen (Orte, Personen, Tageszeiten)."
+        },
+        "achtung": "Findet jemand über Tage nichts Gutes, kann das Belastung zeigen: nicht im Plenum nachfragen, Einzelgespräch, SePAS, Vertrauensperson. Selbstverletzung oder Suizidgedanken: nicht allein lassen, sofort handeln (KJT 116 111, 112). Dankbarkeit nie erzwingen.",
+        "hintergrund": "Die Übung „Drei gute Dinge“ stammt aus der Positiven Psychologie: Teilnehmende notierten eine Woche lang abends drei gute Dinge und ihre Ursachen; sie waren danach glücklicher und weniger niedergeschlagen, auch Monate später (Seligman et al., 2005). Bei 11- bis 13-Jährigen erhöhte eine zweiwöchige Dankbarkeitsübung Zufriedenheit und Optimismus (Froh et al., 2008). Die Wirkungen sind meist bescheiden und nicht bei allen gleich: eine Stütze, keine Behandlung.",
+        "quellen": [
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233."
+        ],
+        "impulse": [
+          "Welche guten Dinge hättest du früher nicht bemerkt?",
+          "Was hast du selbst dazu beigetragen, dass etwas gut wurde?"
+        ],
+        "tipps": [
+          "Wer abends keine Ruhe hat, schaut morgens auf den Vortag zurück.",
+          "Gute Dinge anonym an der Tafel sammeln (Wortspeicher für Kleines)."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Trois bonnes choses",
+      "untertitel": "Sept soirs, trois phrases – et ton regard sur le positif s’affine.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ce qui va de travers, on le remarque tout de suite. Ce qui va bien, on le laisse facilement filer. Pendant sept soirs, tu regardes volontairement ce qui est bien et tu te demandes comment ça s’est produit. Pas besoin de grandes choses : un petit pain chaud ou un fou rire dans le bus comptent autant."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fais de ton soir un petit rituel. De quoi as-tu besoin pour que l’écriture soit agréable ? Coche ce qui te convient.",
+          "hinweis": "Un rituel aide le corps et la tête à comprendre : maintenant, c’est le moment du calme. Teste ce qui marche pour toi.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "lumière douce ou bougie",
+            "musique calme",
+            "thé, chocolat chaud ou eau citronnée",
+            "une couverture",
+            "téléphone en silencieux",
+            "mon stylo préféré"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "J’écris à … heures, à cet endroit : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pendant sept soirs, note trois bonnes choses qui se sont passées aujourd’hui. Écris aussi pourquoi elles se sont produites.",
+          "hinweis": "Des mots-clés suffisent. Un exemple figure sur la première ligne. « Pourquoi » peut vouloir dire : j’ai fait quelque chose pour ça. Ou : c’était un hasard, ou quelqu’un a été gentil avec moi – ça compte aussi.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Jour",
+            "Trois bonnes choses",
+            "Pourquoi c’est arrivé ?"
+          ],
+          "zeilen": 0,
+          "breiten": [
+            0.6,
+            2,
+            1.7
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "Exemple",
+            "1. Pol partage son sandwich. 2. Soleil dans le bus. 3. Exercice de maths compris.",
+            "1. J’avais oublié le mien et j’ai demandé. 2. Hasard. 3. J’ai posé une question."
+          ],
+          "werte": [
+            [
+              "Jour 1",
+              "",
+              ""
+            ],
+            [
+              "Jour 2",
+              "",
+              ""
+            ],
+            [
+              "Jour 3",
+              "",
+              ""
+            ],
+            [
+              "Jour 4",
+              "",
+              ""
+            ],
+            [
+              "Jour 5",
+              "",
+              ""
+            ],
+            [
+              "Jour 6",
+              "",
+              ""
+            ],
+            [
+              "Jour 7",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Chaque soir, colorie le cœur du jour : autant et de la couleur que la journée t’a fait du bien.",
+          "hinweis": "Un demi-cœur reste un cœur. Certains jours, il peut rester petit. Le dernier cœur est pour toute la semaine.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "herz",
+          "items": [
+            "Jour 1",
+            "Jour 2",
+            "Jour 3",
+            "Jour 4",
+            "Jour 5",
+            "Jour 6",
+            "Jour 7",
+            "Ma semaine"
+          ],
+          "anzahl": 8
+        },
+        {
+          "art": "aufgabe",
+          "text": "À la fin de la semaine, relis tes lignes. Puis termine les phrases.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui m’a fait le plus plaisir : …",
+            "J’ai remarqué : les bonnes choses arrivent souvent quand …",
+            "La semaine prochaine, je voudrais plus souvent : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Les petites choses comptent.",
+          "text": "Si rien ne te vient un soir, commence tout petit : une boisson chaude, une chanson, cinq minutes sans stress. Une mauvaise journée ne rend pas l’exercice raté. Si, pendant longtemps, presque plus rien ne te fait plaisir, parles-en à une personne de confiance – par exemple au SePAS."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte :",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes lancent pour une semaine un rituel du soir : noter trois bonnes choses de la journée et leurs raisons. Ils apprennent à remarquer aussi les petites choses.",
+        "ablauf": [
+          "Entrée en matière (5 min) : baisser la lumière, bougie LED, un sachet de thé à sentir ; une minute de silence. Question : « À quoi remarquez-vous que la journée touche à sa fin ? »",
+          "Expliquer (7 min) : expliquer la ligne exemple : trois choses et « pourquoi ? » (sa part, le hasard, quelqu’un d’autre). Des mots-clés suffisent. Rien n’est ramassé.",
+          "Travail individuel (13 min) : choisir son rituel (tâche 1), remplir la première ligne avec les bonnes choses d’aujourd’hui. Musique calme.",
+          "Échange volontaire (10 min) : à deux, nommer une petite bonne chose d’aujourd’hui et dire comment elle est arrivée. Personne ne lit à voix haute.",
+          "Clôture (10 min) : plan de la semaine : quand, où, quel rituel ? Recueillir les obstacles (oubli, fatigue). Colorier le premier cœur. Tâche 4 à la maison, en fin de semaine."
+        ],
+        "material": "Crayons de couleur, bougie LED, sachet de thé",
+        "differenzierung": {
+          "leichter": "Une bonne chose par soir ; carte de mots (repas, météo, musique, un rire) ; laisser « pourquoi » de côté.",
+          "schwerer": "Noter sa propre contribution, chercher des régularités en fin de semaine (lieux, personnes, moments)."
+        },
+        "achtung": "Rien de bon pendant des jours : peut-être une charge. Entretien individuel, SePAS, personne de confiance ; pas de questions en plénière. Automutilation ou idées suicidaires : ne pas laisser seul·e, agir tout de suite (KJT 116 111, 112). Gratitude jamais forcée.",
+        "hintergrund": "L’exercice « Trois bonnes choses » vient de la psychologie positive : pendant une semaine, des participants ont noté chaque soir trois bonnes choses et leurs causes ; ils étaient ensuite plus heureux et moins abattus, même des mois plus tard (Seligman et al., 2005). Chez les 11 à 13 ans, un exercice de gratitude de deux semaines a augmenté la satisfaction et l’optimisme (Froh et al., 2008). Les effets sont en général modestes et inégaux : un soutien, pas un traitement.",
+        "quellen": [
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233."
+        ],
+        "impulse": [
+          "Quelles bonnes choses n’aurais-tu pas remarquées avant ?",
+          "Qu’as-tu fait toi-même pour que quelque chose se passe bien ?"
+        ],
+        "tipps": [
+          "Qui n’a pas de calme le soir relit la veille le matin.",
+          "Recueillir au tableau, sans noms, des exemples de petites bonnes choses."
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,1433 @@
+[
+  {
+    "id": "sr-meine-kreise",
+    "bereich": "selbstreflexion",
+    "thema": "beziehungen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "SOZ-41",
+      "K-27",
+      "SOZ-29",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Beziehungen",
+      "Nähe",
+      "Freundschaft",
+      "Zugehörigkeit",
+      "Soziales Netz",
+      "Einsamkeit",
+      "Wohlbefinden"
+    ],
+    "verwandt": [
+      "mein-unterstuetzungsnetz",
+      "einfluss-kreise",
+      "lebensnetz",
+      "sr-drei-menschen"
+    ],
+    "bild": "icon:users-group",
+    "de": {
+      "titel": "Meine Kreise",
+      "untertitel": "Wer ist mir nah – und mit wem möchte ich mehr Zeit?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Nicht alle Menschen in deinem Leben sind dir gleich nah. Manche kennst du kaum, bei anderen kannst du ganz du selbst sein. Deine Kreise zeigen, wer wo steht – und ob sich das für dich gerade stimmig anfühlt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Male jeden Kreis in einer Farbe an, die zu seiner Nähe passt. Trag dann Menschen ein – mit Initialen oder Symbol, nie mit vollem Namen.",
+          "hinweis": "Familie darf vorkommen, muss aber nicht. Ein Kreis darf auch fast leer bleiben – es gibt kein Richtig oder Falsch. Mit Klebepunkten: ein Punkt für jeden Menschen, bei dem du dich besonders wohlfühlst.",
+          "symbole": [
+            "malen",
+            "kleben"
+          ]
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "Bekannte und Gruppen: Klasse, Verein, Leute aus dem Bus",
+            "Freundeskreis und Team: Menschen, mit denen du oft Zeit verbringst",
+            "Ganz nah: Menschen, bei denen du ganz du selbst bist"
+          ],
+          "mitte": "Ich",
+          "daneben": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie viel Zeit verbringst du mit jedem Kreis – und wie viel möchtest du?",
+          "hinweis": "Strich = so viel Zeit möchte ich. Ausmalen = so viel Zeit habe ich gerade. Beides darf niedrig sein: Manche Kreise brauchen wenig.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Ganz nah",
+            "Freunde und Team",
+            "Bekannte, Gruppen"
+          ],
+          "spalten": 3,
+          "legende": [
+            "Strich: so viel Zeit möchte ich",
+            "Ausmalen: so viel Zeit habe ich"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Kreise dürfen wandern",
+          "text": "Menschen rücken nach innen oder nach außen, das ist normal. Wenn dir ein Kreis zu groß oder zu klein vorkommt, musst du nichts sofort ändern. Dein Blatt gehört dir und wird nicht eingesammelt. Mach es in ein paar Monaten noch einmal – mit einer anderen Farbe."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo fühlst du dich wohl – und mit wem wünschst du dir mehr Zeit?",
+          "hinweis": "Schau auf deine Kreise und deine Gläser. Auch ein Mensch aus dem äußeren Kreis darf hier stehen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wer?",
+            "Hier fühle ich mich wohl, weil …",
+            "Das würde ich gern öfter tun"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            0.7,
+            1.7,
+            1.5
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "T.",
+            "Mit T. muss ich nichts erklären. Wir können auch schweigen.",
+            "samstags zusammen Fußball schauen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal ein Bild, ein Muster oder ein Symbol für einen Moment, in dem du dich bei Menschen ganz wohlfühlst.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mein Wohlfühl-Moment",
+          "hoehe": 7,
+          "zeichnen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das nehme ich mit",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Überrascht hat mich …",
+            "Ein Mensch, bei dem ich mich diese Woche melden möchte: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ordnen die Menschen in ihrem Leben nach Nähe, erkennen, wo sie sich wohlfühlen, und überlegen, mit wem sie mehr Zeit verbringen möchten.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: einen ruhigen Song (ca. 1 Min.) abspielen. „Mit wem würdest du das gern hören?“ – nur denken, nichts nennen.",
+          "Erklären (5 Min.): Drei Kreise an die Tafel zeichnen, Beschriftung vorlesen, ein Beispiel mit Initialen oder Symbolen vormachen. Familie darf vorkommen, muss nicht.",
+          "Einzelarbeit (20 Min.): Kreise farbig gestalten (Buntstifte, Klebepunkte), Menschen eintragen, Gläser, Tabelle und Wohlfühl-Bild bearbeiten. Ruhige Musik.",
+          "Freiwilliger Austausch (10 Min.): zu zweit oder im Plenum, nur was jemand teilen mag: „Welche Farbe hat dein innerer Kreis?“ Keine Namen.",
+          "Abschluss (5 Min.): Satzanfänge ergänzen; Freiwillige nennen einen Schritt für diese Woche."
+        ],
+        "hintergrund": "Im Jugendalter wird der Freundeskreis wichtiger; enge Freundschaften sind eine zentrale Quelle von Rückhalt (Bagwell & Schmidt, 2011). Die Kreise machen sichtbar, wie sich Nähe verteilt – Familie gehört nur dazu, wenn die Jugendlichen es wollen. Gläser und Tabelle fragen nach dem Wunsch, nicht nach der Zahl der Kontakte: Einsamkeit entsteht vor allem dort, wo gewünschte und erlebte Verbindung auseinanderklaffen (Hawkley & Cacioppo, 2010).",
+        "quellen": [
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Hawkley, L. C. & Cacioppo, J. T. (2010). Loneliness matters: A theoretical and empirical review of consequences and mechanisms. Annals of Behavioral Medicine, 40(2), 218–227."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Kreise; Gläser weglassen, Tabelle mündlich.",
+          "schwerer": "Aufschreiben, was einen Menschen in den Kreis geführt hat und was ihn wandern lassen könnte."
+        },
+        "impulse": [
+          "Woran merkst du, dass dir jemand nah ist?",
+          "Mit wem wäre ein kleiner Schritt nach innen möglich?"
+        ],
+        "tipps": [
+          "Kreise zuerst mit Bleistift füllen: Farben und Punkte folgen später.",
+          "Wer niemanden eintragen mag, malt nur die Farben – auch das gilt."
+        ],
+        "achtung": "Ein leerer innerer Kreis oder viel Einsamkeit können auf Belastung hinweisen. Nicht im Plenum nachfragen: Einzelgespräch anbieten, SePAS bzw. Vertrauensperson und Leitung (Responsable) einbeziehen. Bei Gefährdung sofort nach dem internen Ablauf handeln.",
+        "material": "Buntstifte, Klebepunkte, Musik"
+      }
+    },
+    "fr": {
+      "titel": "Mes cercles",
+      "untertitel": "Qui m’est proche – et avec qui ai-je envie de passer plus de temps ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Toutes les personnes de ta vie ne te sont pas aussi proches. Certaines, tu les connais à peine ; avec d’autres, tu peux être tout à fait toi-même. Tes cercles montrent qui se trouve où – et si cela te convient en ce moment."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Colorie chaque cercle dans la couleur de sa proximité. Inscris ensuite des personnes – initiales ou symbole, jamais le nom complet.",
+          "hinweis": "La famille peut y figurer, mais ce n’est pas obligatoire. Un cercle peut rester presque vide – il n’y a ni bonne ni mauvaise réponse. Avec des gommettes : une gommette pour chaque personne auprès de qui tu te sens particulièrement bien.",
+          "symbole": [
+            "malen",
+            "kleben"
+          ]
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "Connaissances et groupes : classe, club, gens du bus",
+            "Amis et équipe : les personnes avec qui tu passes souvent du temps",
+            "Tout près : les personnes avec qui tu peux être tout à fait toi-même"
+          ],
+          "mitte": "Moi",
+          "daneben": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Combien de temps passes-tu avec chaque cercle – et combien en voudrais-tu ?",
+          "hinweis": "Le trait = le temps que je voudrais. Colorier = le temps que j’ai en ce moment. Les deux peuvent être bas : certains cercles demandent peu.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Tout près",
+            "Amis et équipe",
+            "Connaissances"
+          ],
+          "spalten": 3,
+          "legende": [
+            "Trait : le temps que je voudrais",
+            "Colorier : le temps que j’ai"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Les cercles ont le droit de bouger",
+          "text": "Les personnes se rapprochent ou s’éloignent, c’est normal. Si un cercle te semble trop grand ou trop petit, tu n’as rien à changer tout de suite. Ta feuille t’appartient et n’est pas ramassée. Refais-la dans quelques mois – avec une autre couleur."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où te sens-tu bien – et avec qui voudrais-tu passer plus de temps ?",
+          "hinweis": "Regarde tes cercles et tes verres. Une personne du cercle extérieur peut aussi figurer ici.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Qui ?",
+            "Je m’y sens bien parce que …",
+            "Je voudrais le faire plus souvent"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            0.7,
+            1.7,
+            1.5
+          ],
+          "hoehe": 2,
+          "beispiel": [
+            "T.",
+            "Avec T., je n’ai rien à expliquer. On peut aussi se taire.",
+            "regarder le foot ensemble le samedi"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine une image, un motif ou un symbole pour un moment où tu te sens tout à fait bien avec des gens.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mon moment de bien-être",
+          "hoehe": 7,
+          "zeichnen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ce que j’emporte",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui m’a surpris : …",
+            "Une personne que j’aimerais contacter cette semaine : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes classent les personnes de leur vie selon la proximité, repèrent où ils se sentent bien et réfléchissent à celles avec qui ils aimeraient passer plus de temps.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : un morceau calme (env. 1 min). « Avec qui aimerais-tu l’écouter ? » – y penser, ne rien nommer.",
+          "Expliquer (5 min) : trois cercles au tableau, lire les légendes, montrer un exemple avec initiales ou symboles. La famille peut figurer, sans obligation.",
+          "Travail individuel (20 min) : colorier les cercles (crayons, gommettes), inscrire des personnes, remplir verres et tableau, dessiner l’image. Musique calme.",
+          "Échange facultatif (10 min) : à deux ou en plénière, seulement ce qu’on veut partager : « De quelle couleur est ton cercle intérieur ? » Pas de noms.",
+          "Clôture (5 min) : compléter les débuts de phrases ; les volontaires nomment un pas pour cette semaine."
+        ],
+        "hintergrund": "À l’adolescence, le cercle d’amis gagne en importance ; les amitiés proches sont une source centrale de soutien (Bagwell & Schmidt, 2011). Les cercles montrent comment la proximité se répartit – la famille n’y figure que si les jeunes le souhaitent. Les verres et le tableau interrogent le souhait, pas le nombre de contacts : la solitude naît surtout là où le lien désiré et le lien vécu divergent (Hawkley & Cacioppo, 2010).",
+        "quellen": [
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Hawkley, L. C. & Cacioppo, J. T. (2010). Loneliness matters: A theoretical and empirical review of consequences and mechanisms. Annals of Behavioral Medicine, 40(2), 218–227."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement deux cercles ; sans les verres, tableau à l’oral.",
+          "schwerer": "Noter ce qui a amené une personne dans le cercle et ce qui pourrait la faire bouger."
+        },
+        "impulse": [
+          "À quoi remarques-tu que quelqu’un t’est proche ?",
+          "Avec qui un petit pas vers l’intérieur serait-il possible ?"
+        ],
+        "tipps": [
+          "D’abord remplir les cercles au crayon à papier : couleurs et gommettes viennent après.",
+          "Qui ne veut inscrire personne colorie seulement les cercles – cela compte aussi."
+        ],
+        "achtung": "Un cercle intérieur vide ou beaucoup de solitude peuvent signaler une détresse. Ne pas questionner en plénière : proposer un entretien individuel, associer le SePAS ou la personne de confiance et la direction (responsable). En cas de danger, agir tout de suite selon la procédure interne.",
+        "material": "Crayons, gommettes, musique"
+      }
+    }
+  },
+  {
+    "id": "sr-drei-menschen",
+    "bereich": "selbstreflexion",
+    "thema": "beziehungen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-27",
+      "SOZ-38",
+      "K-20",
+      "K-32"
+    ],
+    "schlagworte": [
+      "Beziehungen",
+      "Vorbilder",
+      "Rollen",
+      "Freundschaft",
+      "Dankbarkeit",
+      "Selbstbild",
+      "Perspektivwechsel"
+    ],
+    "verwandt": [
+      "sr-meine-kreise",
+      "was-mir-in-freundschaften-wichtig-ist",
+      "sr-so-zeige-ich",
+      "mein-unterstuetzungsnetz"
+    ],
+    "bild": "icon:friends",
+    "de": {
+      "titel": "Drei wichtige Menschen",
+      "untertitel": "Wer spielt eine Rolle in meinem Leben – und was hat das mit mir zu tun?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "In deinem Alltag spielen Menschen eine Rolle, die nicht immer gleich auffallen: ein Freund, eine Trainerin, ein Lehrer, die Nachbarin von nebenan. Manche begleiten dich lange, andere nur ein Stück. Hier schaust du dir drei von ihnen genauer an – und was sie dir mitgegeben haben."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, wie du das Blatt nutzt.",
+          "text": "Denkst du an Menschen, die fehlen oder dir wehgetan haben? Dann nutz die Karten anders – etwa für jemanden, der dir guttut – oder lass das Blatt einfach aus. Niemand muss etwas zeigen oder vorlesen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir drei Menschen aus, die für dich eine Rolle spielen. Füll für jeden eine Karte aus und male die Figur in einer passenden Farbe an.",
+          "hinweis": "Frei wählbar: Freund, Trainerin, Lehrer, Nachbarin, Cousin … Eine Initiale oder die Rolle reicht. Beispiel: Coach T. – „Noch eine Runde, du schaffst das.“ – ruhig, fair, witzig – wir lieben beide Handball – ich habe gelernt, dass man sich nach einem Fehlpass wieder anbieten darf.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "personen",
+          "felder": [
+            "Rolle oder Initiale",
+            "Typische Sätze",
+            "Drei Eigenschaften",
+            "Das verbindet uns",
+            "Das habe ich gelernt"
+          ],
+          "anzahl": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sprich einen der typischen Sätze leise vor dich hin – mit der Stimme dieses Menschen. Wie klingt er? Kreuz an.",
+          "symbole": [
+            "sprechen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Der Satz klingt …",
+          "items": [
+            "warm",
+            "ruhig",
+            "aufmunternd",
+            "streng",
+            "witzig",
+            "drängend",
+            "müde",
+            "sanft",
+            "ehrlich"
+          ],
+          "spalten": 3,
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dreh den Blick um: Welche Rolle hast du für andere?",
+          "hinweis": "Du musst nicht alles wissen. Schreib, was du vermutest oder dir wünschst.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Für meine Freunde bin ich …",
+            "In der Klasse oder im Team bin ich …",
+            "Ich wäre gern jemand, der …",
+            "Wenn jemand Hilfe braucht, bin ich …"
+          ],
+          "spalten": 2,
+          "hoehe": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das nehme ich mit",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das möchte ich von diesen drei Menschen behalten: …",
+            "Bei einem von ihnen möchte ich mich bedanken oder melden: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "fuellen": false
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen betrachten Menschen, die in ihrem Leben eine Rolle spielen, erkennen, was sie von ihnen gelernt haben, und fragen sich, welche Rolle sie selbst für andere haben.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Gegenstände auf den Tisch (Trillerpfeife, Taschenlampe, Notizbuch, Fußball, Tasse). Alle nehmen einen in die Hand: „Welcher Mensch passt dazu?“ – nur denken.",
+          "Erklären (5 Min.): Beispielkarte „Coach T.“ lesen, den Satz mit verschiedenen Stimmen sprechen. Jede Rolle ist erlaubt, Familie muss nicht vorkommen. Kasten „Du entscheidest …“ vorlesen.",
+          "Einzelarbeit (20 Min.): drei Karten ausfüllen, Figuren anmalen, einen Satz leise sprechen, Sprechblasen ergänzen. Ruhige Musik.",
+          "Freiwilliger Austausch (10 Min.): zu zweit: „Von wem hast du etwas gelernt, das du heute noch brauchst?“ – mit Rolle statt Namen.",
+          "Abschluss (5 Min.): „Das nehme ich mit“ ergänzen; wer mag, nennt ein Wort in die Runde."
+        ],
+        "hintergrund": "Das Selbstbild entsteht im Austausch mit wichtigen anderen: Rückmeldungen von Freunden, Lehrkräften und Vorbildern prägen mit, wie Jugendliche sich sehen (Harter, 2012). Wer sich bewusst macht, was er von bestimmten Menschen gelernt hat, erkennt eigene Stärken und Quellen von Rückhalt. Auch Dankbarkeit tut gut: Wer regelmäßig aufschrieb, wofür er dankbar war, berichtete mehr Wohlbefinden (Emmons & McCullough, 2003).",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Emmons, R. A. & McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2), 377–389."
+        ],
+        "differenzierung": {
+          "leichter": "Nur eine Karte; Sprechblasen mündlich.",
+          "schwerer": "Zu einer Karte einen Brief entwerfen, der nicht abgeschickt wird."
+        },
+        "impulse": [
+          "Welche Eigenschaft eines Menschen hat dir schon einmal geholfen?",
+          "Wann hast du für jemanden eine Rolle gespielt, ohne es zu merken?"
+        ],
+        "tipps": [
+          "Vorab selbst eine Karte ausfüllen: Das Beispiel macht Mut.",
+          "Wer keinen Menschen findet, darf eine Figur aus Buch oder Film wählen."
+        ],
+        "achtung": "Fehlende oder verletzende Bezugspersonen (Verlust, Trennung, Gewalt) können starke Gefühle auslösen. Nicht im Plenum nachfragen: Einzelgespräch, SePAS bzw. Vertrauensperson, Leitung (Responsable). Bei Gefährdung sofort nach dem internen Ablauf handeln, nicht allein lassen; Hilfenummern stehen auf dem Blatt.",
+        "material": "Buntstifte, 4–6 Gegenstände"
+      }
+    },
+    "fr": {
+      "titel": "Trois personnes qui comptent",
+      "untertitel": "Qui joue un rôle dans ma vie – et qu’est-ce que cela dit de moi ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dans ton quotidien, des personnes jouent un rôle sans toujours se faire remarquer : un ami, une entraîneuse, un prof, la voisine d’à côté. Certaines t’accompagnent longtemps, d’autres juste un bout de chemin. Ici, tu en regardes trois de plus près – et ce qu’elles t’ont apporté."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides comment utiliser cette feuille.",
+          "text": "Si tu penses à des personnes qui manquent ou qui t’ont fait du mal, utilise les cartes autrement – par exemple pour quelqu’un qui te fait du bien – ou laisse simplement la feuille de côté. Personne n’a à montrer ou à lire quoi que ce soit."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis trois personnes qui comptent pour toi. Remplis une carte pour chacune et colorie la silhouette dans une couleur qui lui va.",
+          "hinweis": "Libre choix : un ami, une entraîneuse, un prof, une voisine, un cousin … Une initiale ou le rôle suffit. Exemple : coach T. – « Encore un tour, tu peux le faire. » – calme, juste, drôle – on adore tous les deux le handball – j’ai appris qu’on peut se proposer à nouveau après une mauvaise passe.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "personen",
+          "felder": [
+            "Rôle ou initiale",
+            "Phrases typiques",
+            "Trois qualités",
+            "Ce qui nous relie",
+            "Ce que j’ai appris"
+          ],
+          "anzahl": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dis à voix basse l’une des phrases typiques – avec la voix de cette personne. Comment sonne-t-elle ? Coche.",
+          "symbole": [
+            "sprechen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "La phrase sonne …",
+          "items": [
+            "chaleureuse",
+            "calme",
+            "encourageante",
+            "sévère",
+            "drôle",
+            "pressante",
+            "fatiguée",
+            "douce",
+            "franche"
+          ],
+          "spalten": 3,
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Inverse le regard : quel rôle as-tu pour les autres ?",
+          "hinweis": "Tu n’as pas à tout savoir. Écris ce que tu supposes ou ce que tu souhaites.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Pour mes amis, je suis …",
+            "En classe ou dans mon équipe, je suis …",
+            "J’aimerais être quelqu’un qui …",
+            "Quand quelqu’un a besoin d’aide, je suis …"
+          ],
+          "spalten": 2,
+          "hoehe": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ce que j’emporte",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce que je veux garder de ces trois personnes : …",
+            "Une personne à qui j’aimerais dire merci ou donner des nouvelles : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "fuellen": false
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes regardent des personnes qui jouent un rôle dans leur vie, repèrent ce qu’elles leur ont appris et se demandent quel rôle ils ont eux-mêmes pour les autres.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : objets sur la table (sifflet, lampe de poche, carnet, ballon, tasse). Chacun en prend un : « Quelle personne y correspond ? » – y penser seulement.",
+          "Expliquer (5 min) : lire l’exemple « coach T. », dire la phrase avec différentes voix. Tous les rôles sont permis, la famille n’est pas obligatoire. Lire l’encadré « Tu décides … ».",
+          "Travail individuel (20 min) : remplir trois cartes, colorier les silhouettes, dire une phrase à voix basse, compléter les bulles. Musique calme.",
+          "Échange facultatif (10 min) : à deux : « De qui as-tu appris quelque chose dont tu as encore besoin ? » – avec le rôle plutôt que le nom.",
+          "Clôture (5 min) : compléter « Ce que j’emporte » ; qui veut donne un mot au groupe."
+        ],
+        "hintergrund": "L’image de soi se construit dans l’échange avec des personnes importantes : les retours d’amis, d’enseignants et de modèles influencent la façon dont les jeunes se voient (Harter, 2012). Prendre conscience de ce que l’on a appris de certaines personnes aide à reconnaître ses forces et ses sources de soutien. La gratitude fait aussi du bien : qui notait régulièrement ce pour quoi il était reconnaissant rapportait plus de bien-être (Emmons & McCullough, 2003).",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Emmons, R. A. & McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2), 377–389."
+        ],
+        "differenzierung": {
+          "leichter": "Une seule carte ; bulles à l’oral.",
+          "schwerer": "Esquisser pour une carte une lettre qui ne sera pas envoyée."
+        },
+        "impulse": [
+          "Quelle qualité d’une personne t’a déjà aidé ?",
+          "Quand as-tu joué un rôle pour quelqu’un sans t’en rendre compte ?"
+        ],
+        "tipps": [
+          "Remplir soi-même une carte à l’avance : l’exemple encourage.",
+          "Qui ne trouve personne peut choisir un personnage de livre ou de film."
+        ],
+        "achtung": "Des personnes de référence absentes ou blessantes (perte, séparation, violence) peuvent réveiller de fortes émotions. Pas de questions en plénière : entretien individuel, SePAS ou personne de confiance, direction (responsable). En cas de danger, agir tout de suite selon la procédure interne ; numéros d’aide sur la feuille.",
+        "material": "Crayons, 4 à 6 objets"
+      }
+    }
+  },
+  {
+    "id": "sr-so-zeige-ich",
+    "bereich": "selbstreflexion",
+    "thema": "beziehungen",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-35",
+      "SOZ-37",
+      "K-21",
+      "SOZ-26"
+    ],
+    "schlagworte": [
+      "Freundschaft",
+      "Zuneigung",
+      "Kommunikation",
+      "Missverständnisse",
+      "Beziehungen",
+      "Empathie",
+      "Chat"
+    ],
+    "verwandt": [
+      "skills-freundschafts-barometer",
+      "skills-wie-war-das-gemeint",
+      "erst-du-dann-ich",
+      "was-mir-in-freundschaften-wichtig-ist",
+      "sr-drei-menschen"
+    ],
+    "bild": "icon:heart-handshake",
+    "de": {
+      "titel": "So zeige ich, dass ich jemanden mag",
+      "untertitel": "Woran merke ich es – und wie zeige ich es?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Freunde zeigen auf ganz verschiedene Arten, dass sie jemanden mögen: Die eine schreibt dir spätabends „Gute Nacht“, der andere hilft dir, ohne ein Wort zu sagen. Beides kann „Ich mag dich“ heißen. Hier findest du heraus, woran du es merkst – und wie du es zeigst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, dass dich jemand mag? Kreuz an, was für dich zählt.",
+          "hinweis": "Denk an deine Freundinnen und Freunde. Du darfst viel oder wenig ankreuzen – und unten eigene Ideen ergänzen.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ich merke es, wenn jemand …",
+          "items": [
+            "sich Zeit für mich nimmt",
+            "mir richtig zuhört",
+            "mir etwas Nettes sagt oder schreibt",
+            "mir hilft, ohne dass ich fragen muss",
+            "mir eine Kleinigkeit mitbringt",
+            "mit mir über denselben Quatsch lacht",
+            "sich an Dinge erinnert, die ich erzählt habe",
+            "nachfragt, wie es mir geht",
+            "mich in die Gruppe holt",
+            "etwas mit mir macht, das mir gefällt",
+            "da ist, wenn es mir nicht gut geht",
+            "mir einen Song oder ein Video schickt"
+          ],
+          "spalten": 2,
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und wie zeigst du es? Kreuz an, was du tust. Umkreise dann in beiden Listen die zwei Dinge, die dir am wichtigsten sind.",
+          "hinweis": "Du musst nicht alles können. Kreuz nur an, was wirklich zu dir passt.",
+          "symbole": [
+            "ankreuzen",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ich zeige es, indem ich …",
+          "items": [
+            "Zeit mit der Person verbringe",
+            "zuhöre und nachfrage",
+            "etwas Nettes sage oder schreibe",
+            "helfe, auch ungefragt",
+            "eine Kleinigkeit mitbringe",
+            "gemeinsam etwas unternehme",
+            "Quatsch mit der Person mache",
+            "mich an Erzähltes erinnere",
+            "da bin, wenn es schwer ist",
+            "sie oder ihn in die Gruppe hole",
+            "einen Song oder ein Video schicke",
+            "ein Geheimnis für mich behalte"
+          ],
+          "spalten": 2,
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Passt deine Sprache zu der deiner Freunde? Mach dein Kreuz in einer Farbe, das einer Freundin oder eines Freundes in einer zweiten.",
+          "hinweis": "Du schätzt ein, wie die andere Person es zeigt – oder du fragst sie, wenn du magst. Die Mitte ist auch eine Antwort. Es gibt kein Richtig oder Falsch.",
+          "symbole": [
+            "ankreuzen",
+            "partner"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "mit Worten",
+              "mit Taten"
+            ],
+            [
+              "im Chat",
+              "persönlich"
+            ],
+            [
+              "vor allen",
+              "unter vier Augen"
+            ],
+            [
+              "mit Witz",
+              "ernst"
+            ],
+            [
+              "Kleinigkeiten",
+              "Zeit schenken"
+            ],
+            [
+              "zuhören",
+              "Tipps geben"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was fällt dir auf? Ergänze die Sätze.",
+          "hinweis": "Beispiel: Ich schreibe Nele oft etwas Nettes. Sie antwortet kaum, bringt mir aber immer meinen Lieblingstee mit. Ich dachte lange, sie mag mich weniger.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Wir zeigen es ähnlich, nämlich …",
+            "Anders ist bei uns …",
+            "Das habe ich bisher vielleicht übersehen: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein kleiner Schritt für diese Woche: Was machst du, damit die andere Person merkt, dass du sie magst – auf eine Art, die zu ihr passt?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn Lena am Donnerstag nach dem Training allein zum Bus geht,",
+              "dann": "gehe ich mit und frage sie, wie ihre Prüfung lief."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Einfach fragen",
+          "text": "Du kannst eine Freundin oder einen Freund fragen: „Woran merkst du, dass ich dich mag?“ Das ist keine peinliche Frage. Und wenn dir jemand zu wenig zu zeigen scheint, heißt das nicht, dass die Person dich nicht mag – manchmal sprecht ihr nur verschiedene Sprachen."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, woran sie Zuneigung bemerken und wie sie sie selbst zeigen, vergleichen ihre Sprache mit der von Freunden und planen einen kleinen Schritt.",
+        "ablauf": [
+          "Einstieg (5 Min.): Bewegung im Raum: In vier Ecken hängen „Worte“, „Zeit“, „Hilfe“, „Kleinigkeiten“. „Woran merkst du am ehesten, dass dich jemand mag?“ Alle wählen eine Ecke.",
+          "Erklären (5 Min.): Beispiel „Nele“ lesen: Zwei Freundinnen zeigen Zuneigung verschieden und missverstehen sich. Merken und Zeigen sind zwei Listen.",
+          "Einzelarbeit (20 Min.): beide Listen ankreuzen, je zwei Dinge umkreisen, Regler in zwei Farben, Sätze, Wenn-dann-Plan. Ruhige Musik.",
+          "Freiwilliger Austausch (10 Min.): zu zweit die Regler vergleichen, nur wenn beide mögen. Wer allein bleibt, schätzt nur ein.",
+          "Abschluss (5 Min.): Freiwillige nennen ihren Schritt für diese Woche."
+        ],
+        "hintergrund": "Freundschaften im Jugendalter leben von Nähe, Verlässlichkeit und gegenseitiger Hilfe (Bagwell & Schmidt, 2011). Wie Zuneigung gezeigt und erkannt wird, ist verschieden – das Blatt stellt keine Art über die andere. Missverständnisse entstehen oft, weil Menschen überschätzen, wie gut ihre Absicht ankommt, besonders in Chats ohne Tonfall und Mimik (Kruger et al., 2005).",
+        "quellen": [
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936."
+        ],
+        "differenzierung": {
+          "leichter": "Nur eine Liste und drei Regler; Wenn-dann-Plan mündlich.",
+          "schwerer": "Regler für zwei Menschen in zwei Farben; Unterschiede aufschreiben."
+        },
+        "impulse": [
+          "Woran erkennst du, dass jemand dich mag, auch wenn er es nicht sagt?",
+          "Welche Art, Zuneigung zu zeigen, fällt dir schwer?"
+        ],
+        "tipps": [
+          "Selbst eine Liste ausfüllen und zeigen, wo einem etwas schwerfällt.",
+          "Im Chat wie im Gespräch: Nachfragen ist kein Misstrauen."
+        ],
+        "achtung": "Wer niemanden zum Einschätzen hat, braucht Schutz vor dem Vergleich: Blatt nicht einsammeln, Figur aus Buch oder Film zulassen. Bei Einsamkeit, Ausgrenzung oder Druck in einer Beziehung: Einzelgespräch, SePAS bzw. Vertrauensperson, Leitung (Responsable). Bei Gefährdung sofort nach dem internen Ablauf handeln.",
+        "material": "Buntstifte (2 Farben), Zettel"
+      }
+    },
+    "fr": {
+      "titel": "Montrer que j’apprécie quelqu’un",
+      "untertitel": "À quoi je le remarque – et comment je le montre ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les amis montrent de manières très différentes qu’ils apprécient quelqu’un : l’une t’écrit « bonne nuit » tard le soir, l’autre t’aide sans dire un mot. Les deux peuvent signifier « je t’aime bien ». Ici, tu découvres à quoi tu le remarques – et comment tu le montres."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi remarques-tu que quelqu’un t’apprécie ? Coche ce qui compte pour toi.",
+          "hinweis": "Pense à tes amies et amis. Tu peux cocher beaucoup ou peu – et ajouter tes propres idées en bas.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Je le remarque quand quelqu’un …",
+          "items": [
+            "prend du temps pour moi",
+            "m’écoute vraiment",
+            "me dit ou m’écrit un mot gentil",
+            "m’aide sans que je le demande",
+            "m’apporte une petite attention",
+            "rit avec moi des mêmes bêtises",
+            "se souvient de ce que j’ai raconté",
+            "demande comment je vais",
+            "m’intègre dans le groupe",
+            "fait avec moi quelque chose que j’aime",
+            "est là quand ça ne va pas",
+            "m’envoie un son ou une vidéo"
+          ],
+          "spalten": 2,
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et toi, comment le montres-tu ? Coche ce que tu fais. Entoure ensuite, dans les deux listes, les deux choses les plus importantes pour toi.",
+          "hinweis": "Tu n’as pas à tout savoir faire. Coche seulement ce qui te ressemble.",
+          "symbole": [
+            "ankreuzen",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Je le montre en …",
+          "items": [
+            "passant du temps avec la personne",
+            "écoutant et en posant des questions",
+            "disant ou écrivant un mot gentil",
+            "aidant, même sans qu’on me le demande",
+            "apportant une petite attention",
+            "faisant quelque chose ensemble",
+            "faisant des bêtises avec elle",
+            "me souvenant de ce qu’elle a raconté",
+            "étant là quand c’est dur",
+            "l’intégrant dans le groupe",
+            "envoyant un son ou une vidéo",
+            "gardant un secret pour moi"
+          ],
+          "spalten": 2,
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta façon de montrer va-t-elle avec celle de tes amis ? Ta croix dans une couleur, celle d’une amie ou d’un ami dans une autre.",
+          "hinweis": "Tu estimes comment l’autre personne le montre – ou tu le lui demandes, si tu veux. Le milieu est aussi une réponse. Il n’y a ni bonne ni mauvaise réponse.",
+          "symbole": [
+            "ankreuzen",
+            "partner"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "avec des mots",
+              "par des actes"
+            ],
+            [
+              "par message",
+              "en face"
+            ],
+            [
+              "devant tous",
+              "en tête à tête"
+            ],
+            [
+              "avec humour",
+              "avec sérieux"
+            ],
+            [
+              "petites attentions",
+              "donner du temps"
+            ],
+            [
+              "écouter",
+              "conseiller"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce que tu remarques ? Complète les phrases.",
+          "hinweis": "Exemple : j’écris souvent des mots gentils à Nele. Elle répond à peine, mais elle m’apporte toujours mon thé préféré. Pendant longtemps, j’ai pensé qu’elle m’aimait moins.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Nous le montrons de façon semblable, à savoir : …",
+            "Chez nous, c’est différent : …",
+            "Je ne l’avais peut-être pas vu jusqu’ici : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton petit pas pour cette semaine : que fais-tu pour que l’autre personne sente que tu l’apprécies – d’une manière qui lui convient ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si Lena rentre seule vers le bus jeudi après l’entraînement,",
+              "dann": "je l’accompagne et je lui demande comment s’est passé son examen."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Demande simplement",
+          "text": "Tu peux demander à une amie ou à un ami : « À quoi remarques-tu que je t’apprécie ? » Ce n’est pas une question gênante. Et si quelqu’un te semble montrer trop peu, cela ne veut pas dire qu’il ne t’apprécie pas – parfois, vous parlez simplement des langues différentes."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent à quoi ils remarquent l’affection et comment ils la montrent eux-mêmes, comparent leur langage avec celui de leurs amis et planifient un petit pas.",
+        "ablauf": [
+          "Entrée en matière (5 min) : mouvement dans la salle : dans quatre coins, « Mots », « Temps », « Aide », « Petites attentions ». « À quoi remarques-tu le plus facilement que quelqu’un t’apprécie ? » Chacun choisit un coin.",
+          "Expliquer (5 min) : lire l’exemple « Nele » : deux amies montrent leur affection différemment et se comprennent mal. Remarquer et montrer sont deux listes.",
+          "Travail individuel (20 min) : cocher les deux listes, entourer deux choses dans chacune, curseurs en deux couleurs, phrases, plan si-alors. Musique calme.",
+          "Échange facultatif (10 min) : comparer les curseurs à deux, seulement si les deux le veulent. Qui reste seul estime simplement.",
+          "Clôture (5 min) : les volontaires nomment leur pas pour cette semaine."
+        ],
+        "hintergrund": "À l’adolescence, les amitiés reposent sur la proximité, la fiabilité et l’aide réciproque (Bagwell & Schmidt, 2011). La manière de montrer et de reconnaître l’affection varie – la feuille ne place aucune façon au-dessus d’une autre. Les malentendus naissent souvent du fait que l’on surestime la clarté de son intention, surtout dans les messages, où le ton et la mimique manquent (Kruger et al., 2005).",
+        "quellen": [
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936."
+        ],
+        "differenzierung": {
+          "leichter": "Une seule liste et trois curseurs ; plan si-alors à l’oral.",
+          "schwerer": "Curseurs pour deux personnes en deux couleurs ; noter les différences."
+        },
+        "impulse": [
+          "À quoi reconnais-tu que quelqu’un t’apprécie, même s’il ne le dit pas ?",
+          "Quelle façon de montrer son affection te coûte le plus ?"
+        ],
+        "tipps": [
+          "Remplir soi-même une liste et montrer ce qui est difficile pour soi.",
+          "Dans le chat comme à l’oral : demander n’est pas se méfier."
+        ],
+        "achtung": "Qui n’a personne à estimer a besoin d’être protégé de la comparaison : ne pas ramasser la feuille, accepter un personnage de livre ou de film. Solitude, exclusion ou pression dans une relation : entretien individuel, SePAS ou personne de confiance, direction (responsable). En cas de danger, agir tout de suite selon la procédure interne.",
+        "material": "Crayons (2 couleurs), papiers"
+      }
+    }
+  },
+  {
+    "id": "sr-im-nachhinein",
+    "bereich": "selbstreflexion",
+    "thema": "beziehungen",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-26",
+      "K-16",
+      "V-21",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Konflikt",
+      "Kritik",
+      "Ausgrenzung",
+      "Gruppenchat",
+      "Emotionsregulation",
+      "Selbstbehauptung",
+      "Kränkung"
+    ],
+    "verwandt": [
+      "skills-wie-war-das-gemeint",
+      "skills-klaeren-statt-kippen",
+      "skills-drinnen-oder-draussen",
+      "sr-so-zeige-ich"
+    ],
+    "bild": "icon:messages",
+    "de": {
+      "titel": "Im Nachhinein",
+      "untertitel": "Was ich getan habe – und was ich im Nachhinein darüber denke",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Manchmal sagt jemand etwas, und du reagierst, bevor du nachdenken konntest. Erst später fällt dir ein, was du eigentlich sagen wolltest. Das geht fast allen so – und man kann es üben."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies die drei Situationen. Stell dir vor, du steckst mittendrin.",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "karten",
+          "karten": [
+            {
+              "nummer": 1,
+              "titel": "Im Gruppenchat",
+              "text": "Du schlägst eine Idee für den Ausflug vor. Jemand schreibt: „Klar, du weißt es ja immer besser.“ Drei Leute lachen mit."
+            },
+            {
+              "nummer": 2,
+              "titel": "Vor der Klasse",
+              "text": "Die Lehrerin gibt dir vor allen eine Rückmeldung: „Das hatten wir doch schon dreimal. Hast du wirklich nicht zugehört?“"
+            },
+            {
+              "nummer": 3,
+              "titel": "Ohne dich",
+              "text": "Auf einem Foto siehst du: Deine Freunde sind zusammen im Kino. Niemand hat dich gefragt."
+            }
+          ],
+          "spalten": 3,
+          "schneiden": false,
+          "hoehe": 112
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie reagierst du – und warum? Was denkst du im Nachhinein darüber? Füll die Tabelle aus.",
+          "hinweis": "Das Beispiel zeigt, wie es gemeint ist. Es gibt kein Richtig oder Falsch: Du beschreibst, was wirklich war – nicht, was du hättest tun sollen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "So reagiere ich – und warum",
+            "Im Nachhinein denke ich …"
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "breiten": [
+            0.55,
+            1.6,
+            1.6
+          ],
+          "hoehe": 4,
+          "beispiel": [
+            "Beispiel",
+            "Auf „Du bist immer so langsam“ habe ich nur „haha“ geschickt – ich wollte keinen Streit.",
+            "Eigentlich hat es wehgetan. Ich hätte sagen können: „Das mag ich nicht.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie würdest du gern reagieren? Schreib in die Sprechblase, was du sagen oder schreiben möchtest.",
+          "hinweis": "Es darf auch heißen: erst einmal nichts sagen – oder um etwas Zeit bitten.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "1  Das würde ich gern schreiben …",
+            "2  Das würde ich gern sagen …",
+            "3  Das würde ich gern tun oder sagen …"
+          ],
+          "spalten": 3,
+          "hoehe": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Probier es aus: Steh auf und sag deine Antwort einmal laut. Achte auf Füße, Schultern, Stimme – und setz danach auf jedem Regler ein Kreuz.",
+          "hinweis": "Wähle eine Situation. Du kannst es auch leise oder zu zweit ausprobieren: Eine Person spricht, die andere sagt danach, was sie gesehen und gehört hat. Niemand muss vorspielen.",
+          "symbole": [
+            "sprechen",
+            "partner"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "leise",
+              "laut"
+            ],
+            [
+              "langsam",
+              "schnell"
+            ],
+            [
+              "Blick zum Boden",
+              "Blick zur Person"
+            ],
+            [
+              "Schultern hoch",
+              "Schultern locker"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Sätze, die Zeit schaffen",
+          "text": "Du musst nicht sofort antworten. Diese Sätze verschaffen dir Zeit:",
+          "punkte": [
+            "„Moment, ich muss kurz überlegen.“",
+            "„Das ist bei mir gerade anders angekommen.“",
+            "„Können wir später darüber reden?“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das nehme ich mit",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Überrascht hat mich …",
+            "Beim nächsten Mal probiere ich …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen betrachten typische Situationen mit Spott, Kritik oder Ausgrenzung im Nachhinein, verstehen ihre eigene Reaktion und erproben eine Reaktion, die zu ihnen passt.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: aufstehen, Arme und Schultern ausschütteln, dreimal langsam ausatmen. „Wo im Körper merkst du, wenn dich ein Satz trifft?“ – nur denken.",
+          "Erklären (5 Min.): Situation 1 vorlesen, Beispielzeile zeigen. Es geht um das, was wirklich war – nicht um das, was man „hätte tun sollen“.",
+          "Einzelarbeit (15 Min.): Tabelle und Sprechblasen. Ruhige Musik. Situationen bleiben ohne Namen; keine realen Vorfälle der Klasse besprechen.",
+          "Ausprobieren (15 Min.): Aufgabe 4 im Stehen: gewünschte Antwort laut sagen, mit Füßen, Schultern, Stimme. Zu zweit: Eine Person spricht, die andere beschreibt, was sie sieht und hört. Vorspielen nur freiwillig.",
+          "Abschluss (5 Min.): Satzanfänge ergänzen; einen Satz aus dem Tipp-Kasten gemeinsam laut sprechen."
+        ],
+        "hintergrund": "Ausgrenzung und Spott tun schnell weh und bedrohen Grundbedürfnisse wie Zugehörigkeit und Selbstwert; erst in einer späteren Phase wird eingeordnet und bewältigt (Williams, 2007). Das Blatt nutzt diese zweite Phase: Wer eine Situation aus der Beobachterperspektive betrachtet, reagiert gefühlsmäßig weniger stark und findet leichter eine neue Sicht (Kross & Ayduk, 2017). Die Reaktion wird nicht bewertet, sondern verstanden.",
+        "quellen": [
+          "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Nur eine Situation; Sprechblase mit „Moment, ich muss kurz überlegen“ beginnen.",
+          "schwerer": "Eigene Situation ohne Namen aufschreiben, drei Reaktionen vergleichen."
+        },
+        "impulse": [
+          "Was hättest du gebraucht, um anders zu reagieren?",
+          "Wer könnte dir in so einer Situation zur Seite stehen?"
+        ],
+        "tipps": [
+          "Die Haltung zuerst in Zeitlupe, dann im normalen Tempo üben.",
+          "Selbst ein Beispiel aus der eigenen Schulzeit erzählen: Das nimmt Scham."
+        ],
+        "achtung": "Wiederholte Ausgrenzung, Spott im Chat oder Scham nach Kritik können auf Mobbing oder starke Belastung hinweisen. Nicht im Plenum vertiefen: Einzelgespräch, SePAS bzw. Vertrauensperson, Leitung (Responsable). Bei Gefährdung sofort nach dem internen Ablauf handeln, nicht allein lassen; Hilfenummern stehen auf dem Blatt.",
+        "material": "Stifte, Platz zum Stehen"
+      }
+    },
+    "fr": {
+      "titel": "Après coup",
+      "untertitel": "Ce que j’ai fait – et ce que j’en pense après coup",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Parfois, quelqu’un dit quelque chose et tu réagis avant d’avoir pu réfléchir. Ce n’est que plus tard que tu sais ce que tu voulais vraiment dire. Presque tout le monde connaît ça – et cela s’entraîne."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis les trois situations. Imagine que tu es en plein dedans.",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "karten",
+          "karten": [
+            {
+              "nummer": 1,
+              "titel": "Dans le chat de groupe",
+              "text": "Tu proposes une idée pour la sortie. Quelqu’un écrit : « Évidemment, tu sais toujours mieux que tout le monde. » Trois personnes rient avec lui."
+            },
+            {
+              "nummer": 2,
+              "titel": "Devant la classe",
+              "text": "La prof te fait une remarque devant tout le monde : « On en a déjà parlé trois fois. Tu n’as vraiment pas écouté ? »"
+            },
+            {
+              "nummer": 3,
+              "titel": "Sans toi",
+              "text": "Sur une photo, tu vois que tes amis sont ensemble au cinéma. Personne ne t’a demandé."
+            }
+          ],
+          "spalten": 3,
+          "schneiden": false,
+          "hoehe": 112
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment réagis-tu – et pourquoi ? Qu’en penses-tu après coup ? Remplis le tableau.",
+          "hinweis": "L’exemple montre comment faire. Il n’y a ni bonne ni mauvaise réponse : tu décris ce qui s’est vraiment passé – pas ce que tu aurais dû faire.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Je réagis – et pourquoi",
+            "Après coup, je pense …"
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "breiten": [
+            0.55,
+            1.6,
+            1.6
+          ],
+          "hoehe": 4,
+          "beispiel": [
+            "Exemple",
+            "À « Tu es toujours si lent », j’ai juste répondu « haha » – je ne voulais pas de dispute.",
+            "En fait, ça m’a blessé. J’aurais pu dire : « Je n’aime pas ça. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment aimerais-tu réagir ? Écris dans la bulle ce que tu voudrais dire ou écrire.",
+          "hinweis": "Cela peut aussi vouloir dire : d’abord ne rien dire – ou demander un peu de temps.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "1  Ce que j’aimerais écrire …",
+            "2  Ce que j’aimerais dire …",
+            "3  Ce que j’aimerais faire ou dire …"
+          ],
+          "spalten": 3,
+          "hoehe": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Essaie : lève-toi et dis ta réponse à voix haute. Observe pieds, épaules, voix – puis place une croix sur chaque curseur.",
+          "hinweis": "Choisis une situation. Tu peux aussi essayer à voix basse ou à deux : l’un parle, l’autre dit ensuite ce qu’il a vu et entendu. Personne n’a à jouer devant les autres.",
+          "symbole": [
+            "sprechen",
+            "partner"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "à voix basse",
+              "à voix haute"
+            ],
+            [
+              "lentement",
+              "vite"
+            ],
+            [
+              "regard au sol",
+              "regard sur l’autre"
+            ],
+            [
+              "épaules crispées",
+              "épaules relâchées"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Des phrases qui donnent du temps",
+          "text": "Tu n’as pas à répondre tout de suite. Ces phrases te donnent du temps :",
+          "punkte": [
+            "« Un instant, je dois réfléchir. »",
+            "« Ça m’est arrivé autrement. »",
+            "« On peut en reparler plus tard ? »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ce que j’emporte",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui m’a surpris : …",
+            "La prochaine fois, j’essaie : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes regardent après coup des situations typiques de moquerie, de critique ou d’exclusion, comprennent leur propre réaction et essaient une réaction qui leur ressemble.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : se lever, secouer bras et épaules, expirer lentement trois fois. « Où dans le corps sens-tu qu’une phrase te touche ? » – y penser.",
+          "Expliquer (5 min) : lire la situation 1, montrer la ligne d’exemple. Il s’agit de ce qui s’est vraiment passé – pas de ce qu’on « aurait dû faire ».",
+          "Travail individuel (15 min) : tableau et bulles. Musique calme. Situations sans noms ; ne pas traiter d’incidents réels de la classe.",
+          "Essayer (15 min) : tâche 4 debout : dire la réponse à voix haute (pieds, épaules, voix). À deux : l’un parle, l’autre décrit ce qu’il voit et entend. Jouer devant les autres : facultatif.",
+          "Clôture (5 min) : compléter les débuts de phrases ; dire ensemble à voix haute une phrase de l’encadré astuce."
+        ],
+        "hintergrund": "L’exclusion et la moquerie font vite mal et menacent des besoins fondamentaux comme l’appartenance et l’estime de soi ; ce n’est que plus tard que l’on interprète et que l’on fait face (Williams, 2007). La feuille utilise cette deuxième phase : regarder une situation en observateur diminue la réaction émotionnelle et aide à trouver une autre vision (Kross & Ayduk, 2017). La réaction n’est pas jugée, mais comprise.",
+        "quellen": [
+          "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Une seule situation ; commencer la bulle par « Un instant, je dois réfléchir ».",
+          "schwerer": "Noter une situation personnelle sans noms, comparer trois réactions."
+        },
+        "impulse": [
+          "De quoi aurais-tu eu besoin pour réagir autrement ?",
+          "Qui pourrait te soutenir dans une telle situation ?"
+        ],
+        "tipps": [
+          "Essayer la posture d’abord au ralenti, puis à vitesse normale.",
+          "Raconter un exemple de sa propre scolarité : cela enlève la honte."
+        ],
+        "achtung": "Exclusion répétée, moqueries dans le chat ou honte après une critique peuvent indiquer du harcèlement ou une forte détresse. Pas d’approfondissement en plénière : entretien individuel, SePAS ou personne de confiance, direction (responsable). Danger : agir tout de suite selon la procédure interne ; numéros d’aide sur la feuille.",
+        "material": "Stylos, de la place"
+      }
+    }
+  }
+]

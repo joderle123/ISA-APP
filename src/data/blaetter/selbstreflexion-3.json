@@ -1,0 +1,1549 @@
+[
+  {
+    "id": "sr-startpunkt",
+    "bereich": "selbstreflexion",
+    "thema": "selbstbild",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "SOZ-40",
+      "K-26",
+      "K-33",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Selbstreflexion",
+      "Einstieg",
+      "Ziele setzen",
+      "Motivation",
+      "Stimmung",
+      "Selbstwahrnehmung",
+      "Wohlbefinden",
+      "Selbstwirksamkeit",
+      "Planen"
+    ],
+    "verwandt": [
+      "sr-eigenschafts-regler",
+      "sr-ich-bin",
+      "lebensnetz",
+      "werte-glaeser"
+    ],
+    "bild": "icon:compass",
+    "de": {
+      "titel": "Mein Startpunkt",
+      "untertitel": "Was ich mir vom Nachdenken über mich wünsche – und wo ich gerade stehe",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Über dich nachzudenken ist kein Test. Hier gibt es kein Richtig und kein Falsch, nur dich und deine Antworten. Diese Seite hält fest, wo du heute beginnst – später kannst du sehen, was sich verändert hat."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Farbe passt zu deiner Stimmung heute? Mal das Feld damit aus.",
+          "hinweis": "So wild oder so zart, wie es sich richtig anfühlt: ganz gefüllt, in Streifen, in Wellen. Es gibt keine falsche Farbe.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Meine Farbe heute",
+              "hoehe": 4,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Wenn meine Farbe ein Wetter wäre: …",
+                "Ein Wort, das dazu passt: …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was erhoffst du dir vom Nachdenken über dich? Kreuz an, was zu dir passt.",
+          "hinweis": "So viele du willst. Kreis danach die zwei ein, die dir heute am wichtigsten sind.",
+          "symbole": [
+            "ankreuzen",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "mehr Ruhe im Kopf",
+            "mich besser kennen",
+            "Entscheidungen leichter treffen",
+            "meine Stärken sehen",
+            "besser mit Stress umgehen",
+            "mich weniger vergleichen",
+            "verstehen, warum ich so reagiere",
+            "klarer wissen, was ich will",
+            "netter zu mir selbst sein",
+            "Zeit nur für mich"
+          ],
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie sehr stimmen diese Sätze gerade für dich? Setz auf jeder Linie ein Kreuz.",
+          "hinweis": "Es geht um heute, nicht um immer. Jede Stelle auf der Linie ist in Ordnung.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Ich denke gern darüber nach, wie ich ticke.",
+          "von": "stimmt gar nicht",
+          "bis": "stimmt genau",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "frage": "Ich merke früh, wenn mir etwas zu viel wird.",
+          "von": "stimmt gar nicht",
+          "bis": "stimmt genau",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "frage": "Abends ist mein Kopf noch voll mit Gedanken.",
+          "von": "stimmt gar nicht",
+          "bis": "stimmt genau",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "frage": "Ich weiß, was ich gut kann.",
+          "von": "stimmt gar nicht",
+          "bis": "stimmt genau",
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein kleines Ziel: Was probierst du in den nächsten zwei Wochen aus, um dich besser kennenzulernen?",
+          "hinweis": "Klein und machbar ist besser als groß. Zum Beispiel: „Ich schreibe jeden Sonntag drei Sätze darüber, wie meine Woche war.“ Sprich deinen Satz einmal leise aus und mal dann, wie es aussieht, wenn du es geschafft hast.",
+          "symbole": [
+            "schreiben",
+            "sprechen",
+            "malen"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein kleines Ziel: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "feld",
+          "label": "Wenn ich es geschafft habe, sieht es so aus (mal oder zeichne)",
+          "hoehe": 5,
+          "zeichnen": true
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Gib deinem Ziel einen Platz",
+          "text": "Ein Ziel wird leichter, wenn es Ort und Zeit hat: „sonntags nach dem Abendessen“ oder „im Bus auf dem Heimweg“. Dieses Blatt gehört nur dir – du entscheidest, ob und mit wem du dein Ziel teilst."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen halten fest, was sie sich vom Nachdenken über sich erhoffen und wie sie heute starten. Sie formulieren ein kleines, machbares Ziel.",
+        "ablauf": [
+          "Einstieg mit Farben (7 Min.): Buntstifte in einer Schale in die Mitte legen. Wortlos den Stift wählen, der zur Stimmung passt, und kurz in der Hand halten. Farbe nennen, nicht begründen.",
+          "Erklären (5 Min.): Kein Richtig oder Falsch, nichts wird eingesammelt. Mit einem eigenen kleinen Ziel zeigen, was „klein und machbar“ heißt.",
+          "Einzelarbeit (20 Min.): Aufgaben 1 bis 4, leise Musik ohne Gesang. Das Ziel nach dem Schreiben einmal leise aussprechen.",
+          "Austausch, freiwillig (8 Min.): Kreppband-Linie am Boden „stimmt gar nicht“ bis „stimmt genau“; zu Satz 1 stellt sich auf die Linie, wer mag. Dann zu zweit einen Wunsch nennen.",
+          "Abschluss (5 Min.): Blatt in die Mappe legen, das Ziel noch einmal leise für sich sprechen."
+        ],
+        "hintergrund": "Zu Beginn einer Reihe hilft eine Standortbestimmung: Wer festhält, was er sich erhofft und wo er steht, kann später Veränderungen sehen. Kleine, nahe Ziele stärken das Vertrauen in die eigene Wirksamkeit stärker als ferne, große (Bandura & Schunk, 1981); mit Ort und Zeit werden sie häufiger umgesetzt (Gollwitzer, 1999). Die Farbwahl bietet einen wortlosen Einstieg, die Regler fragen nach dem Ausmaß statt nach Ja oder Nein.",
+        "quellen": [
+          "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 mit drei Wünschen; das Ziel zu zweit mündlich finden.",
+          "schwerer": "Zu jedem Wunsch notieren, woran man in vier Wochen merkt, dass er sich erfüllt; das Ziel mit Ort und Zeit formulieren."
+        },
+        "impulse": [
+          "Woran merkst du, dass dir das Nachdenken über dich guttut?",
+          "Woran erkennst du, dass dein Ziel klein genug ist?"
+        ],
+        "tipps": [
+          "Farbstifte vom Einstieg liegen lassen: Viele greifen noch einmal danach.",
+          "Blätter der Reihe in einer Mappe sammeln, die bei den Jugendlichen bleibt."
+        ],
+        "achtung": "Farbwahl ist kein Befund; Anspannung nicht vor der Klasse ansprechen. Einzelgespräch anbieten, bei Sorge SePAS oder Vertrauensperson. Bei Selbstverletzung oder Suizidgedanken sofort nach internem Ablauf handeln (112, KJT 116 111).",
+        "material": "Buntstifte, Kreppband, ruhige Musik ohne Gesang"
+      }
+    },
+    "fr": {
+      "titel": "Mon point de départ",
+      "untertitel": "Ce que j’attends de ma réflexion sur moi – et où j’en suis aujourd’hui",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Réfléchir à toi n’est pas un test. Il n’y a ni bonne ni mauvaise réponse, seulement toi et tes réponses. Cette page garde la trace de ton point de départ – plus tard, tu verras ce qui a changé."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle couleur correspond à ton humeur aujourd’hui ? Colorie le cadre avec elle.",
+          "hinweis": "Fort ou tout doux, comme tu le sens : tout rempli, en rayures, en vagues. Il n’y a pas de mauvaise couleur.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Ma couleur du jour",
+              "hoehe": 4,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Si ma couleur était un temps qu’il fait : …",
+                "Un mot qui va avec : …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’espères-tu de ta réflexion sur toi ? Coche ce qui te correspond.",
+          "hinweis": "Autant que tu veux. Entoure ensuite les deux qui comptent le plus pour toi aujourd’hui.",
+          "symbole": [
+            "ankreuzen",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "plus de calme dans la tête",
+            "mieux me connaître",
+            "décider plus facilement",
+            "voir mes forces",
+            "mieux gérer le stress",
+            "me comparer moins",
+            "comprendre pourquoi je réagis ainsi",
+            "savoir plus clairement ce que je veux",
+            "me traiter avec plus de douceur",
+            "du temps rien que pour moi"
+          ],
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quel point ces phrases te correspondent-elles en ce moment ? Mets une croix sur chaque ligne.",
+          "hinweis": "Il s’agit d’aujourd’hui, pas de toujours. Chaque endroit de la ligne est bon.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "J’aime réfléchir à ma façon d’être.",
+          "von": "pas du tout",
+          "bis": "tout à fait",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "frage": "Je remarque vite quand quelque chose devient trop pour moi.",
+          "von": "pas du tout",
+          "bis": "tout à fait",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "frage": "Le soir, ma tête est encore pleine de pensées.",
+          "von": "pas du tout",
+          "bis": "tout à fait",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "frage": "Je sais ce que je fais bien.",
+          "von": "pas du tout",
+          "bis": "tout à fait",
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton petit objectif : qu’essaies-tu ces deux prochaines semaines pour mieux te connaître ?",
+          "hinweis": "Petit et réalisable vaut mieux que grand. Par exemple : « Chaque dimanche, j’écris trois phrases sur ma semaine. » Dis ta phrase une fois à voix basse, puis dessine à quoi ça ressemble quand tu y arrives.",
+          "symbole": [
+            "schreiben",
+            "sprechen",
+            "malen"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon petit objectif : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "feld",
+          "label": "Quand je l’aurai réalisé, ça ressemblera à ça (colorie ou dessine)",
+          "hoehe": 5,
+          "zeichnen": true
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Donne une place à ton objectif",
+          "text": "Un objectif devient plus facile quand il a un lieu et un moment : « le dimanche après le dîner » ou « dans le bus, sur le chemin du retour ». Cette feuille n’appartient qu’à toi – tu décides si et avec qui tu partages ton objectif."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes notent ce qu’ils attendent de la réflexion sur eux-mêmes et comment ils démarrent aujourd’hui. Ils formulent un petit objectif réalisable.",
+        "ablauf": [
+          "Entrée en matière (7 min) : poser des crayons de couleur dans une coupelle. Chacun prend sans un mot celui qui correspond à son humeur et le tient un instant. Nommer la couleur, sans la justifier.",
+          "Expliquer (5 min) : ni bonne ni mauvaise réponse, rien n’est ramassé. Avec un petit objectif personnel, montrer ce que veut dire « petit et réalisable ».",
+          "Travail individuel (20 min) : tâches 1 à 4, musique douce sans paroles. Dire l’objectif une fois à voix basse après l’avoir écrit.",
+          "Échange facultatif (8 min) : ruban au sol, de « pas du tout » à « tout à fait » ; pour la phrase 1, se place sur la ligne qui veut. Puis à deux : citer un souhait.",
+          "Clôture (5 min) : ranger la feuille dans le classeur, redire l’objectif à voix basse pour soi."
+        ],
+        "hintergrund": "Au début d’une série, un état des lieux aide : qui note ce qu’il espère et où il en est verra plus tard ce qui a changé. Des objectifs petits et proches renforcent la confiance en sa propre efficacité davantage que des objectifs lointains et grands (Bandura & Schunk, 1981) ; avec un lieu et un moment, ils sont plus souvent réalisés (Gollwitzer, 1999). Le choix d’une couleur offre une entrée sans mots, les échelles demandent « dans quelle mesure » plutôt que « oui ou non ».",
+        "quellen": [
+          "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Tâche 2 avec trois souhaits ; trouver l’objectif à l’oral, à deux.",
+          "schwerer": "Pour chaque souhait, noter à quoi on voit dans quatre semaines qu’il se réalise ; formuler l’objectif avec lieu et moment."
+        },
+        "impulse": [
+          "À quoi remarques-tu que réfléchir à toi te fait du bien ?",
+          "À quoi vois-tu que ton objectif est assez petit ?"
+        ],
+        "tipps": [
+          "Laisser les crayons de l’entrée en matière : beaucoup les reprennent.",
+          "Rassembler les feuilles de la série dans un classeur qui reste aux jeunes."
+        ],
+        "achtung": "La couleur n’est pas un constat ; ne pas aborder une forte tension devant la classe. Proposer un entretien individuel, en cas d’inquiétude SePAS ou personne de confiance. En cas d’automutilation ou d’idées suicidaires, agir aussitôt selon la procédure interne (112, KJT 116 111).",
+        "material": "Crayons de couleur, ruban adhésif de masquage, musique douce sans paroles"
+      }
+    }
+  },
+  {
+    "id": "sr-eigenschafts-regler",
+    "bereich": "selbstreflexion",
+    "thema": "selbstbild",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-19",
+      "K-20",
+      "SOZ-40",
+      "SOZ-31"
+    ],
+    "schlagworte": [
+      "Selbstbild",
+      "Eigenschaften",
+      "Persönlichkeit",
+      "Vielfalt",
+      "Selbstakzeptanz",
+      "Selbstwert",
+      "Fremdbild",
+      "Freundschaft",
+      "Kommunikation",
+      "Stärken"
+    ],
+    "verwandt": [
+      "skills-laut-und-leise",
+      "sr-selbstbild-fremdbild",
+      "sr-ich-bin",
+      "mein-staerkenprofil"
+    ],
+    "bild": "icon:headphones",
+    "de": {
+      "titel": "Mein Mischpult",
+      "untertitel": "Wo stehst du zwischen zwei Polen – und was davon ist dir gerade wichtig?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Kein Mensch ist nur leise oder nur laut, nur vorsichtig oder nur mutig. Auf diesem Mischpult stellst du ein, wo du gerade stehst – so wie man an einem Regler die Lautstärke wählt. Beide Enden jeder Linie sind in Ordnung."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo stehst du? Setz auf jeder Linie ein Kreuz dorthin, wo es für dich passt.",
+          "hinweis": "Denk an dich, wie du meistens bist. Die Mitte ist ein guter Platz. Eine Linie, die gar nicht passt, streichst du durch.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "spalten": 1,
+          "stufen": 5,
+          "paare": [
+            [
+              "leise",
+              "laut"
+            ],
+            [
+              "spontan",
+              "überlegt"
+            ],
+            [
+              "gern allein",
+              "gern in Gruppen"
+            ],
+            [
+              "lieber abwarten",
+              "lieber loslegen"
+            ],
+            [
+              "alles geordnet",
+              "alles im Fluss"
+            ],
+            [
+              "Gefühle zeigen",
+              "Gefühle für mich"
+            ],
+            [
+              "höre lieber zu",
+              "rede lieber"
+            ],
+            [
+              "Gewohntes mag ich",
+              "Neues reizt mich"
+            ],
+            [
+              "denke zuerst",
+              "fühle zuerst"
+            ],
+            [
+              "achte auf Details",
+              "sehe das Ganze"
+            ],
+            [
+              "Frieden wahren",
+              "direkt sagen"
+            ],
+            [
+              "im Mittelpunkt",
+              "im Hintergrund"
+            ],
+            [
+              "morgens fit",
+              "abends fit"
+            ],
+            [
+              "gern drinnen",
+              "gern draußen"
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreis drei Linien ein, die dir gerade besonders wichtig sind – weil sie zu dir passen oder weil du darüber nachdenkst.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähle eine der drei Linien. Wann stehst du eher links, wann eher rechts?",
+          "hinweis": "Denk an Orte und Menschen: Klasse, Training, Chat, Freunde.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Linie",
+            "Da stehe ich eher links …",
+            "Da stehe ich eher rechts …"
+          ],
+          "breiten": [
+            1,
+            1.7,
+            1.7
+          ],
+          "zeilen": 1,
+          "hoehe": 3,
+          "beispiel": [
+            "leise – laut",
+            "wenn ich neue Leute treffe oder in der Klasse etwas sagen soll",
+            "mit meiner besten Freundin oder beim Sport"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gib beiden Enden deiner Linie eine Stimme. Was sagt die linke Seite, was die rechte? Sprich beide Sätze leise und laut.",
+          "hinweis": "Zum Beispiel bei „leise – laut“: links „Ich überlege erst, bevor ich etwas sage.“ – rechts „Ich sage einfach, was ich denke.“",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Die linke Seite sagt …",
+            "Die rechte Seite sagt …"
+          ],
+          "anzahl": 2,
+          "spalten": 2,
+          "hoehe": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nur wenn du magst: Eine Person, der du vertraust, markiert mit einer zweiten Farbe, wo sie dich sieht.",
+          "symbole": [
+            "partner",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Der Blick von außen",
+          "text": "Gib das Blatt mit einem anderen Stift weiter. Die Person setzt ein Kreuz dorthin, wo sie dich sieht. Danach schaut ihr, wenn ihr mögt, gemeinsam hin: Wo liegt ihr nah beieinander, wo weit auseinander? Ihr Blick ist kein Urteil, nur eine Sicht von außen."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Regler lassen sich verstellen",
+          "text": "Wer in der Klasse leise ist, kann im Training laut sein. Das ist kein Widerspruch, sondern Beweglichkeit. Manche Regler stellst du von allein, andere mit Absicht – und manche gar nicht, weil sie zu dir gehören."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ordnen sich auf 14 Linien zwischen zwei Polen ein, erkennen, dass beide Seiten in Ordnung sind, und beschreiben an einem Beispiel, wie sich ihr Auftreten je nach Situation verschiebt.",
+        "ablauf": [
+          "Einstieg mit Klang (7 Min.): Ein Musikstück einmal sehr leise, einmal sehr laut abspielen. Frage: „Wann passt leise, wann laut?“ Kreppband-Linie „leise – laut“: Wer mag, stellt sich hin, wo er heute steht.",
+          "Erklären (5 Min.): Mischpult an die Tafel zeichnen, ein Paar vormachen („gern allein – gern in Gruppen“). Beide Enden sind in Ordnung, die Mitte ist erlaubt.",
+          "Einzelarbeit (18 Min.): Aufgaben 1 bis 4, leise Musik ohne Gesang. Die Sätze der Sprechblasen einmal flüsternd, einmal laut sprechen lassen.",
+          "Austausch, freiwillig (10 Min.): Zu zweit nur das Beispiel aus Aufgabe 3 erzählen. Wer mag, gibt das Blatt mit einem zweiten Stift an eine Person weiter, die mitmachen will (Aufgabe 5).",
+          "Abschluss (5 Min.): „Das nehme ich mit“ ergänzen; ein Wort laut in die Runde, wer mag."
+        ],
+        "hintergrund": "Das Blatt arbeitet mit Polen statt Eigenschaftslisten: Wer sich auf einer Linie einordnet, muss nichts bewerten. Im Jugendalter wird das Selbstbild differenzierter; Jugendliche beschreiben sich je nach Beziehung und Situation unterschiedlich (Harter, 2012). Die Linien zeigen daher auch, wo man sich verschiebt. Leises und lautes Auftreten sind gleichwertig; Cain (2012) beschreibt, dass Schule und Arbeitswelt oft die laute Seite stärker beachten. Die zweite Farbe macht das Fremdbild sichtbar (vgl. Luft & Ingham, 1955).",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Cain, S. (2012). Quiet: The Power of Introverts in a World That Can’t Stop Talking. New York: Crown.",
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die ersten sieben Linien; das Beispiel aus Aufgabe 3 mündlich zu zweit.",
+          "schwerer": "Eine eigene Linie mit zwei Polen erfinden; notieren, wo man sich bewusst anders verhalten möchte."
+        },
+        "impulse": [
+          "Wann war dein Regler zuletzt anders eingestellt als sonst?",
+          "Wo ist es nützlich, einen Regler zu verschieben?"
+        ],
+        "tipps": [
+          "Zwei Farbstifte je Person: einer fürs Selbstbild, einer fürs Fremdbild.",
+          "Nach einem halben Jahr mit neuer Farbe wiederholen."
+        ],
+        "achtung": "Pole ohne Wertung; Fremdbild nur freiwillig, nichts wird vorgelesen. Einzelgespräch anbieten, bei Sorge SePAS oder Vertrauensperson. Bei Selbstverletzung oder Suizidgedanken sofort nach internem Ablauf handeln (112, KJT 116 111).",
+        "material": "Zwei Buntstifte je Person, Kreppband, Lautsprecher mit Musikstück"
+      }
+    },
+    "fr": {
+      "titel": "Ma table de mixage",
+      "untertitel": "Où te situes-tu entre deux pôles – et qu’est-ce qui compte pour toi en ce moment ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Personne n’est seulement discret ou seulement bruyant, seulement prudent ou seulement audacieux. Sur cette table de mixage, tu règles où tu te situes en ce moment – comme on règle le volume. Les deux bouts de chaque ligne sont très bien."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où te situes-tu ? Sur chaque ligne, mets une croix là où ça te correspond.",
+          "hinweis": "Pense à toi comme tu es le plus souvent. Le milieu est une bonne place. Une ligne qui ne te va pas du tout, tu la barres.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "spalten": 1,
+          "stufen": 5,
+          "paare": [
+            [
+              "discret",
+              "bruyant"
+            ],
+            [
+              "je fonce",
+              "je réfléchis"
+            ],
+            [
+              "temps à moi",
+              "temps en groupe"
+            ],
+            [
+              "d’abord observer",
+              "me lancer direct"
+            ],
+            [
+              "j’aime l’ordre",
+              "j’aime l’imprévu"
+            ],
+            [
+              "émotions visibles",
+              "émotions gardées"
+            ],
+            [
+              "j’écoute surtout",
+              "je parle surtout"
+            ],
+            [
+              "j’aime le connu",
+              "j’aime le nouveau"
+            ],
+            [
+              "je pense d’abord",
+              "je ressens d’abord"
+            ],
+            [
+              "les détails",
+              "l’ensemble"
+            ],
+            [
+              "garder la paix",
+              "dire franchement"
+            ],
+            [
+              "au centre",
+              "en retrait"
+            ],
+            [
+              "en forme le matin",
+              "en forme le soir"
+            ],
+            [
+              "plutôt dedans",
+              "plutôt dehors"
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entoure trois lignes qui comptent beaucoup pour toi en ce moment – parce qu’elles te ressemblent ou parce que tu y penses.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une des trois lignes. Quand es-tu plutôt à gauche, quand plutôt à droite ?",
+          "hinweis": "Pense aux lieux et aux personnes : la classe, l’entraînement, le chat, tes amis.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ligne",
+            "Là, je suis plutôt à gauche …",
+            "Là, je suis plutôt à droite …"
+          ],
+          "breiten": [
+            1,
+            1.7,
+            1.7
+          ],
+          "zeilen": 1,
+          "hoehe": 3,
+          "beispiel": [
+            "discret – bruyant",
+            "quand je rencontre des inconnus ou que je dois dire quelque chose en classe",
+            "avec ma meilleure amie ou pendant le sport"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Donne une voix aux deux bouts de ta ligne. Que dit la gauche, que dit la droite ? Dis les deux phrases doucement, puis fort.",
+          "hinweis": "Par exemple pour « discret – bruyant » : à gauche « Je réfléchis avant de parler. » – à droite « Je dis simplement ce que je pense. »",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Le côté gauche dit …",
+            "Le côté droit dit …"
+          ],
+          "anzahl": 2,
+          "spalten": 2,
+          "hoehe": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Seulement si tu veux : une personne de confiance marque avec une deuxième couleur où elle te voit.",
+          "symbole": [
+            "partner",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Le regard de l’extérieur",
+          "text": "Donne la feuille avec un autre stylo. La personne met une croix là où elle te voit. Ensuite, si vous en avez envie, regardez ensemble : où êtes-vous proches, où êtes-vous loin l’un de l’autre ? Son regard n’est pas un jugement, seulement une vue de l’extérieur."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Les curseurs se déplacent",
+          "text": "Qui est discret en classe peut être bruyant à l’entraînement. Ce n’est pas une contradiction, c’est de la souplesse. Certains curseurs, tu les bouges tout seul ; d’autres exprès – et certains pas du tout, parce qu’ils font partie de toi."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes se placent sur 14 lignes entre deux pôles, comprennent que les deux côtés sont très bien et décrivent, à l’aide d’un exemple, comment leur façon d’être se déplace selon la situation.",
+        "ablauf": [
+          "Entrée en matière avec le son (7 min) : passer un morceau une fois très doucement, une fois très fort. « Quand convient doucement, quand convient fort ? » Ruban au sol « discret – bruyant » : qui veut s’y place.",
+          "Expliquer (5 min) : dessiner une table de mixage au tableau, montrer une paire (« temps à moi – temps en groupe »). Les deux bouts sont bien, le milieu est permis.",
+          "Travail individuel (18 min) : tâches 1 à 4, musique douce sans paroles. Faire dire les phrases des bulles une fois en chuchotant, une fois à voix haute.",
+          "Échange facultatif (10 min) : à deux, raconter l’exemple de la tâche 3. Qui veut passe la feuille avec un deuxième stylo à une personne volontaire (tâche 5).",
+          "Clôture (5 min) : compléter « Ce que j’emporte » ; un mot à voix haute, pour qui le souhaite."
+        ],
+        "hintergrund": "La feuille travaille avec des pôles plutôt qu’avec des listes de qualités : on se place sans rien évaluer. À l’adolescence, l’image de soi se différencie ; les jeunes se décrivent différemment selon la relation et la situation (Harter, 2012). Les lignes montrent donc aussi où l’on se déplace. Être discret ou bruyant se vaut ; Cain (2012) décrit que l’école et le monde du travail remarquent souvent davantage le côté bruyant. La deuxième couleur rend visible le regard des autres (cf. Luft & Ingham, 1955).",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Cain, S. (2012). Quiet: The Power of Introverts in a World That Can’t Stop Talking. New York: Crown.",
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les sept premières lignes ; l’exemple de la tâche 3 à l’oral, à deux.",
+          "schwerer": "Inventer une ligne avec deux pôles ; noter où l’on voudrait se comporter autrement exprès."
+        },
+        "impulse": [
+          "Quand ton curseur était-il réglé autrement que d’habitude ?",
+          "Où est-il utile de déplacer un curseur ?"
+        ],
+        "tipps": [
+          "Deux crayons par personne : un pour l’image de soi, un pour le regard des autres.",
+          "Refaire la feuille après six mois avec une autre couleur."
+        ],
+        "achtung": "Pôles sans jugement ; regard des autres facultatif. Proposer un entretien individuel, en cas d’inquiétude SePAS ou personne de confiance. En cas d’automutilation ou d’idées suicidaires, agir aussitôt selon la procédure interne (112, KJT 116 111).",
+        "material": "Deux crayons par personne, ruban adhésif, haut-parleur avec un morceau de musique"
+      }
+    }
+  },
+  {
+    "id": "sr-ich-bin",
+    "bereich": "selbstreflexion",
+    "thema": "selbstbild",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-19",
+      "K-18",
+      "SOZ-40",
+      "SOZ-35"
+    ],
+    "schlagworte": [
+      "Identität",
+      "Selbstbild",
+      "Selbstwert",
+      "Werte",
+      "Veränderung",
+      "Wünsche",
+      "Freies Schreiben",
+      "Stärken",
+      "Selbstakzeptanz",
+      "Jahresrückblick"
+    ],
+    "verwandt": [
+      "sr-startpunkt",
+      "sr-selbstbild-fremdbild",
+      "skills-selbstwert-quellen",
+      "t2-staerken-schatzkiste"
+    ],
+    "bild": "icon:cloud",
+    "de": {
+      "titel": "Ich bin …",
+      "untertitel": "Zwei Minuten, ein Stift, deine Wörter",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Wer bist du? Darauf gibt es nicht eine Antwort, sondern ganz viele. Hier sammelst du sie schnell, ohne lange zu überlegen und ohne etwas zu bewerten. Dein Kopf darf einfach plappern."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stell einen Timer auf zwei Minuten. Schreib „Ich bin …“ und alles, was folgt, in die Wolke – ohne den Stift abzusetzen.",
+          "hinweis": "Rechtschreibung und Ordnung sind egal. Schreib groß, klein, schräg. Stockst du, schreib noch einmal „Ich bin …“. Zum Beispiel: Ich bin neugierig. Ich bin Tiagos Cousine. Ich bin müde. Ich bin jemand, der Pizza liebt.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "wolke",
+          "items": [
+            "Ich bin …"
+          ],
+          "anzahl": 1,
+          "spalten": 1,
+          "hoehe": 12
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies deine Wolke einmal flüsternd. Kreis dann mit zwei Farben ein, was dir gefällt – und was du gern ändern möchtest.",
+          "hinweis": "Ein Wort darf beide Farben haben, ein anderes keine. „Ändern“ heißt nicht, dass etwas schlecht ist – nur, dass du dir mehr oder etwas anderes wünschst.",
+          "symbole": [
+            "einkreisen",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Farbe (ausmalen)",
+            "Das bedeutet"
+          ],
+          "breiten": [
+            1,
+            3
+          ],
+          "zeilen": 0,
+          "hoehe": 1,
+          "werte": [
+            [
+              "",
+              "Das gefällt mir an mir."
+            ],
+            [
+              "",
+              "Das möchte ich gern ändern."
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau auf deine Farben. Was fällt dir auf? Schreib auf, was dir wichtig ist.",
+          "hinweis": "Zum Beispiel: „Das ist mir wichtig: dass meine Freunde sich auf mich verlassen können.“"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das ist mir wichtig: …",
+            "Am meisten überrascht mich: …",
+            "Bei etwas, das ich ändern möchte, hilft mir: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir ein Wort aus, das dir an dir gefällt. Mal ein kleines Bild oder Symbol dazu.",
+          "hinweis": "Es muss nicht schön sein: ein Strich, eine Farbe, ein Zeichen reichen.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mein Wort und sein Bild",
+          "hoehe": 5,
+          "zeichnen": true
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "In einem Jahr noch einmal",
+          "text": "Heb dieses Blatt gut auf. In einem Jahr machst du die Wolke noch einmal – mit anderen Farben – und legst beide nebeneinander. Was ist gleich geblieben? Was ist neu dazugekommen?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Heute ist der … Ich wiederhole die Wolke am …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Manchmal schreibt man auch harte Sätze über sich. Sie sind Gedanken, keine Wahrheit. Wenn dich etwas belastet, sprich mit einer erwachsenen Person, der du vertraust, oder mit dem SePAS deines Lycée."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen sammeln in zwei Minuten freie Aussagen über sich, markieren, was ihnen gefällt und was sie ändern möchten, und formulieren, was ihnen wichtig ist.",
+        "ablauf": [
+          "Einstieg mit Sanduhr (6 Min.): Sanduhr oder Handytimer herumgeben, jede Person hält sie kurz in der Hand. Regeln: Der Stift bleibt in Bewegung, nichts wird bewertet oder eingesammelt.",
+          "Erklären (5 Min.): An der Tafel eine Wolke vormachen, durcheinander und schräg. Zwei Farben, ein Wort darf beide haben. „Ändern“ heißt nicht „schlecht“.",
+          "Einzelarbeit (19 Min.): Aufgabe 1 mit Timer (2 Min.), Aufgabe 2 flüsternd lesen und markieren, Aufgaben 3 und 4. Leise Musik ohne Gesang.",
+          "Austausch, freiwillig (10 Min.): Zu zweit ein gefallendes Wort laut sagen und „Das ist mir wichtig“ vorlesen; wer nichts zeigen mag, erzählt vom Schreiben.",
+          "Abschluss (5 Min.): Datum eintragen, Blatt für die Wiederholung in einem Jahr in die Mappe legen. Alle atmen einmal tief aus."
+        ],
+        "hintergrund": "Das Blatt verbindet offene Selbstbeschreibung mit Markieren: Offene „Wer bin ich?“-Sätze lassen Jugendliche selbst wählen, was ihnen wichtig ist. Im Jugendalter wird die Selbstbeschreibung abstrakter und vielfältiger (Harter, 2012). „Gefällt mir“ und „möchte ich ändern“ knüpfen an mögliche Selbste an, also Bilder davon, wer man werden könnte oder möchte (Markus & Nurius, 1986). Die Wiederholung nach einem Jahr macht Entwicklung sichtbar, ein Kernthema der Identitätsbildung (Erikson, 1968).",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Markus, H. & Nurius, P. (1986). Possible selves. American Psychologist, 41(9), 954–969.",
+          "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton."
+        ],
+        "differenzierung": {
+          "leichter": "Satzanfänge an die Tafel („Ich mag …“, „Ich kann …“); drei Minuten Zeit.",
+          "schwerer": "Wörter nach Rollen, Eigenschaften und Gefühlen ordnen; einen ersten Schritt notieren."
+        },
+        "impulse": [
+          "Welches Wort hat dich überrascht?",
+          "Welches Wort möchtest du in einem Jahr noch sehen?"
+        ],
+        "tipps": [
+          "Wolken in einer Mappe sammeln, die bei den Jugendlichen bleibt.",
+          "Wer früh fertig ist, schreibt „Ich bin …“ weiter – Lücken sind erlaubt."
+        ],
+        "achtung": "Harte Sätze über sich nicht kommentieren. Einzelgespräch anbieten, bei Sorge SePAS oder Vertrauensperson. Bei Selbstverletzung oder Suizidgedanken sofort nach internem Ablauf handeln (112, KJT 116 111).",
+        "material": "Sanduhr oder Handytimer, zwei Buntstifte je Person, ruhige Musik ohne Gesang, Mappe"
+      }
+    },
+    "fr": {
+      "titel": "Je suis …",
+      "untertitel": "Deux minutes, un stylo, tes mots",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Qui es-tu ? Il n’y a pas une réponse, mais beaucoup. Ici, tu les rassembles vite, sans trop réfléchir et sans rien juger. Ta tête a le droit de papoter."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mets un minuteur sur deux minutes. Écris « Je suis … » et tout ce qui suit dans le nuage – sans lever le stylo.",
+          "hinweis": "L’orthographe et l’ordre n’ont aucune importance. Écris en grand, en petit, en travers. Si tu bloques, écris encore « Je suis … ». Par exemple : Je suis curieux·se. Je suis la cousine de Tiago. Je suis fatigué·e. Je suis quelqu’un qui adore la pizza.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "wolke",
+          "items": [
+            "Je suis …"
+          ],
+          "anzahl": 1,
+          "spalten": 1,
+          "hoehe": 12
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis ton nuage une fois en chuchotant. Entoure avec deux couleurs ce qui te plaît – et ce que tu aimerais changer.",
+          "hinweis": "Un mot peut avoir les deux couleurs, un autre aucune. « Changer » ne veut pas dire que c’est mal – seulement que tu souhaites plus ou autre chose.",
+          "symbole": [
+            "einkreisen",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Couleur (à colorier)",
+            "Ça veut dire"
+          ],
+          "breiten": [
+            1,
+            3
+          ],
+          "zeilen": 0,
+          "hoehe": 1,
+          "werte": [
+            [
+              "",
+              "Ça me plaît chez moi."
+            ],
+            [
+              "",
+              "J’aimerais le changer."
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regarde tes couleurs. Qu’est-ce que tu remarques ? Écris ce qui compte pour toi.",
+          "hinweis": "Par exemple : « Ce qui compte pour moi : que mes amis puissent compter sur moi. »"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui compte pour moi : …",
+            "Ce qui me surprend le plus : …",
+            "Pour ce que je voudrais changer, ça m’aide de : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis un mot que tu aimes chez toi. Dessine une petite image ou un symbole.",
+          "hinweis": "Pas besoin que ce soit beau : un trait, une couleur, un signe suffisent.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mon mot et son image",
+          "hoehe": 5,
+          "zeichnen": true
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Dans un an, refais-le",
+          "text": "Garde bien cette feuille. Dans un an, tu refais le nuage – avec d’autres couleurs – et tu poses les deux côte à côte. Qu’est-ce qui est resté pareil ? Qu’est-ce qui est nouveau ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Aujourd’hui, nous sommes le … Je refais le nuage le …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Parfois, on écrit aussi des phrases dures sur soi. Ce sont des pensées, pas la vérité. Si quelque chose te pèse, parles-en à un adulte en qui tu as confiance ou au SePAS de ton lycée."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes rassemblent en deux minutes des phrases libres sur eux, marquent ce qui leur plaît et ce qu’ils voudraient changer, et formulent ce qui compte pour eux.",
+        "ablauf": [
+          "Entrée en matière avec le sablier (6 min) : faire circuler un sablier ou un minuteur, chacun le tient un instant. Règles : le stylo reste en mouvement, rien n’est jugé ni ramassé.",
+          "Expliquer (5 min) : faire un nuage au tableau, en désordre et en travers. Deux couleurs, un mot peut avoir les deux. « Changer » ne veut pas dire « mauvais ».",
+          "Travail individuel (19 min) : tâche 1 avec minuteur (2 min), tâche 2 en chuchotant puis marquer, tâches 3 et 4. Musique douce sans paroles.",
+          "Échange facultatif (10 min) : à deux, dire à voix haute un mot qui plaît et lire « Ce qui compte pour moi » ; qui ne veut rien montrer raconte comment c’était d’écrire.",
+          "Clôture (5 min) : inscrire la date, garder la feuille dans le classeur pour la refaire dans un an. Chacun expire profondément."
+        ],
+        "hintergrund": "La feuille associe une description de soi ouverte au marquage : des phrases ouvertes du type « Qui suis-je ? » laissent les jeunes choisir ce qui compte pour eux. À l’adolescence, la description de soi devient plus abstraite et plus variée (Harter, 2012). « Ça me plaît » et « j’aimerais changer » rejoignent les soi possibles, c’est-à-dire des images de ce qu’on pourrait devenir ou souhaite devenir (Markus & Nurius, 1986). La répétition après un an rend le développement visible, un thème central de l’identité (Erikson, 1968).",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Markus, H. & Nurius, P. (1986). Possible selves. American Psychologist, 41(9), 954–969.",
+          "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton."
+        ],
+        "differenzierung": {
+          "leichter": "Débuts de phrases au tableau (« J’aime … », « Je sais … ») ; trois minutes.",
+          "schwerer": "Classer les mots par rôles, qualités et émotions ; noter un premier pas."
+        },
+        "impulse": [
+          "Quel mot t’a surpris ?",
+          "Quel mot aimerais-tu voir encore dans un an ?"
+        ],
+        "tipps": [
+          "Rassembler les nuages dans un classeur qui reste aux jeunes.",
+          "Qui finit tôt continue d’écrire « Je suis … » – les blancs sont permis."
+        ],
+        "achtung": "Ne pas commenter les phrases dures sur soi. Proposer un entretien individuel, en cas d’inquiétude SePAS ou personne de confiance. En cas d’automutilation ou d’idées suicidaires, agir aussitôt selon la procédure interne (112, KJT 116 111).",
+        "material": "Sablier ou minuteur, deux crayons par personne, musique douce sans paroles, classeur"
+      }
+    }
+  },
+  {
+    "id": "sr-selbstbild-fremdbild",
+    "bereich": "selbstreflexion",
+    "thema": "selbstbild",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-19",
+      "K-20",
+      "SOZ-40",
+      "SOZ-41"
+    ],
+    "schlagworte": [
+      "Selbstbild",
+      "Fremdbild",
+      "Feedback",
+      "Rückmeldung",
+      "Beziehung",
+      "Freundschaft",
+      "Vertrauen",
+      "Selbstwert",
+      "Kommunikation",
+      "Blinder Fleck"
+    ],
+    "verwandt": [
+      "sr-eigenschafts-regler",
+      "skills-laut-und-leise",
+      "sr-ich-bin",
+      "mein-staerkenprofil"
+    ],
+    "bild": "icon:eye",
+    "de": {
+      "titel": "So sehe ich mich – so sehen mich andere",
+      "untertitel": "Zwei Blickwinkel auf dieselbe Person – und was sie verbindet",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Du kennst dich von innen, andere sehen dich von außen – und bemerken manchmal etwas, das dir selbst kaum auffällt. Beide Blicke sind echt, keiner ist die ganze Wahrheit. Hier legst du sie nebeneinander."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie siehst du dich? Wähle vier Eigenschaften und schreib zu jeder ein Beispiel.",
+          "hinweis": "Das Beispiel zeigt, woran man die Eigenschaft merkt. Wörter zum Stöbern stehen unten, du darfst auch eigene nehmen.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Zum Stöbern",
+          "items": [
+            "neugierig",
+            "ruhig",
+            "hilfsbereit",
+            "witzig",
+            "ehrlich",
+            "ausdauernd",
+            "kreativ",
+            "vorsichtig",
+            "zuverlässig",
+            "gelassen",
+            "nachdenklich",
+            "gerecht"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Das bin ich",
+            "Daran merkt man es (Beispiel)"
+          ],
+          "breiten": [
+            1,
+            2.2
+          ],
+          "zeilen": 4,
+          "hoehe": 2,
+          "beispiel": [
+            "hilfsbereit",
+            "Ich erkläre Mila die Matheaufgaben, wenn sie nicht weiterkommt."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Zwei Blicke, ein Mensch",
+          "text": "Manches siehst nur du an dir, manches nur die anderen – das nennt man den blinden Fleck. Ein Blick von außen ist ein Hinweis, kein Urteil. Du entscheidest, wen du fragst und was du davon annimmst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Blick von außen: Trenne den Streifen unten auf Seite 2 ab und gib ihn einer Person, der du vertraust.",
+          "hinweis": "Frag sie vorher, ob sie mitmachen mag. Du willst niemanden fragen? Dann stell dir vor, wie dich deine beste Freundin oder ein guter Freund beschreiben würde, und schreib es selbst in den Streifen.",
+          "symbole": [
+            "schneiden",
+            "partner"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich gebe den Streifen an: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Leg beide Blicke nebeneinander. Trag ein, was sich bestätigt, was dich überrascht und was du gern nachfragen würdest.",
+          "hinweis": "Wenn ihr mögt, besprecht es zu zweit. Mit zwei Farben geht es leichter: eine für dein Selbstbild, eine für den Blick von außen.",
+          "symbole": [
+            "schreiben",
+            "sprechen",
+            "malen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Das bestätigt mich",
+            "Das überrascht mich",
+            "Das möchte ich nachfragen"
+          ],
+          "kopffarben": [
+            "gruen",
+            "gelb",
+            "grau"
+          ],
+          "zeilen": 3,
+          "hoehe": 2,
+          "beispiel": [
+            "Ich sehe mich als ruhig – Mila auch.",
+            "Mila schreibt, dass ich witzig bin. Das sehe ich selbst kaum.",
+            "Wann sie das gemerkt hat."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie ähnlich sind die beiden Bilder? Kreuz an.",
+          "hinweis": "Beides ist in Ordnung. Verschieden heißt nicht falsch.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Mein Blick auf mich und der Blick der anderen sind …",
+          "von": "ganz verschieden",
+          "bis": "fast gleich",
+          "stufen": 5
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das nehme ich mit: …",
+            "Eine Eigenschaft, die ich jetzt anders sehe: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 78,
+          "karten": [
+            {
+              "titel": "Für dich, liebe Vertrauensperson",
+              "text": "Danke, dass du mitmachst. Beschreibe mich mit vier Eigenschaften und gib zu jeder ein kleines Beispiel."
+            },
+            {
+              "titel": "So geht’s",
+              "text": "Nur beschreiben, nicht bewerten. Schreib auf, was du an mir siehst – freundlich und ehrlich."
+            }
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Das sehe ich an dir",
+            "Daran merke ich es (Beispiel)"
+          ],
+          "breiten": [
+            1,
+            2.2
+          ],
+          "zeilen": 4,
+          "hoehe": 1.5,
+          "kopffarben": [
+            "gelb",
+            "gelb"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beschreiben sich mit vier Eigenschaften und Beispielen, holen freiwillig den Blick einer Vertrauensperson ein und vergleichen beide Bilder: Was bestätigt sich, was überrascht?",
+        "ablauf": [
+          "Einstieg mit Gegenstand (6 Min.): Eine Tasse mit Aufdruck nur auf einer Seite hochhalten, zwei Personen beschreiben sie von gegenüber. „Wer hat recht?“ – beide. Auf Selbst- und Fremdbild übertragen.",
+          "Erklären (5 Min.): Beispielzeile besprechen: Eigenschaft plus beobachtbares Beispiel, keine Bewertung. Der Streifen ist freiwillig; ohne ihn: „Wie würde mich meine beste Freundin beschreiben?“",
+          "Einzelarbeit (14 Min.): Aufgabe 1 in Ruhe, Musik ohne Gesang. Zwei Farbstifte: eine Farbe fürs Selbstbild, eine fürs Fremdbild.",
+          "Austausch, freiwillig (14 Min.): Streifen abtrennen und weitergeben (oder selbst ausfüllen). Aufgaben 3 und 4 allein, dann zu zweit: „Was hat dich überrascht?“ – laut sagen, ohne Rechtfertigung.",
+          "Abschluss (6 Min.): „Das nehme ich mit“ ergänzen; freiwilliges Blitzlicht mit einem Wort."
+        ],
+        "hintergrund": "Selbstbild und Fremdbild stimmen nie ganz überein. Das Johari-Fenster ordnet, was man selbst und was andere über eine Person wissen, und nennt den Bereich, den nur andere sehen, den „blinden Fleck“ (Luft & Ingham, 1955). Im Jugendalter wird das Selbstbild differenzierter und hängt stark von Beziehungen und Situationen ab (Harter, 2012). Darum verlangt das Blatt zu jeder Eigenschaft ein Beispiel: Es beschreibt Verhalten, statt die Person zu bewerten. Der Blick von außen bleibt freiwillig.",
+        "quellen": [
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Zwei statt vier Eigenschaften aus dem Wortspeicher; Beispiele zu zweit mündlich sammeln.",
+          "schwerer": "Zu jeder Eigenschaft die Gegenseite ergänzen („manchmal auch …“); ein Johari-Fenster zeichnen."
+        },
+        "impulse": [
+          "Was kann ein Mensch über dich wissen, das du selbst kaum siehst?",
+          "Woran erkennst du, dass dir eine Rückmeldung nützt?"
+        ],
+        "tipps": [
+          "Beispiele einfordern: Ohne Beispiel bleibt eine Eigenschaft eine Behauptung.",
+          "Der Streifen darf auch außerhalb der Stunde ausgefüllt werden."
+        ],
+        "achtung": "Fremdbild nur freiwillig; Bloßstellendes stoppen, Aussehen kein Thema. Einzelgespräch anbieten, bei Sorge SePAS oder Vertrauensperson. Bei Selbstverletzung oder Suizidgedanken sofort nach internem Ablauf handeln (112, KJT 116 111).",
+        "material": "Zwei Farbstifte je Person, Schere, Tasse mit einseitigem Aufdruck, ruhige Musik; doppelseitig kopieren"
+      }
+    },
+    "fr": {
+      "titel": "Comment je me vois, comment on me voit",
+      "untertitel": "Deux regards sur la même personne – et ce qui les relie",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Tu te connais de l’intérieur, les autres te voient de l’extérieur – et remarquent parfois ce que tu vois à peine toi-même. Les deux regards sont vrais, aucun n’est toute la vérité. Ici, tu les poses côte à côte."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment te vois-tu ? Choisis quatre qualités et écris un exemple pour chacune.",
+          "hinweis": "L’exemple montre à quoi on remarque la qualité. Des mots à parcourir sont proposés ci-dessous, mais tu peux en prendre d’autres.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Pour t’inspirer",
+          "items": [
+            "calme",
+            "drôle",
+            "honnête",
+            "sympathique",
+            "sociable",
+            "optimiste",
+            "modeste",
+            "fiable",
+            "fidèle",
+            "juste",
+            "curieux·se",
+            "créatif·ve"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ce que je suis",
+            "À quoi on le remarque (exemple)"
+          ],
+          "breiten": [
+            1,
+            2.2
+          ],
+          "zeilen": 4,
+          "hoehe": 2,
+          "beispiel": [
+            "serviable",
+            "J’explique les maths à Mila quand elle bloque."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Deux regards, une personne",
+          "text": "Certaines choses, tu es la seule personne à les voir en toi ; d’autres, seuls les autres les voient – c’est l’angle mort. Le regard des autres est un indice, pas un jugement. Tu décides qui tu interroges et ce que tu en retiens."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le regard des autres : détache la bande en bas de la page 2 et donne-la à une personne en qui tu as confiance.",
+          "hinweis": "Demande-lui d’abord si elle veut bien. Tu ne veux demander à personne ? Alors imagine comment ta meilleure amie ou un bon ami te décrirait et écris-le toi-même sur la bande.",
+          "symbole": [
+            "schneiden",
+            "partner"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je donne la bande à : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pose les deux regards côte à côte. Note ce qui se confirme, ce qui te surprend et ce que tu voudrais demander.",
+          "hinweis": "Si vous voulez, parlez-en à deux. Avec deux couleurs, c’est plus facile : une pour ton image de toi, une pour le regard des autres.",
+          "symbole": [
+            "schreiben",
+            "sprechen",
+            "malen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ça se confirme",
+            "Ça me surprend",
+            "Je voudrais demander …"
+          ],
+          "kopffarben": [
+            "gruen",
+            "gelb",
+            "grau"
+          ],
+          "zeilen": 3,
+          "hoehe": 2,
+          "beispiel": [
+            "Je me vois calme – Mila aussi.",
+            "Mila écrit que je suis drôle. Je ne le vois presque pas.",
+            "Quand elle l’a remarqué."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dans quelle mesure les deux images se ressemblent-elles ? Coche.",
+          "hinweis": "Les deux sont bien. Différent ne veut pas dire faux.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Mon regard sur moi et celui des autres sont …",
+          "von": "très différents",
+          "bis": "presque pareils",
+          "stufen": 5
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce que j’emporte : …",
+            "Une qualité que je vois autrement maintenant : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 78,
+          "karten": [
+            {
+              "titel": "Pour toi, personne de confiance",
+              "text": "Merci de participer. Décris-moi avec quatre qualités et donne un petit exemple pour chacune."
+            },
+            {
+              "titel": "Comment faire",
+              "text": "Décris, ne juge pas. Écris ce que tu vois chez moi – avec bienveillance et honnêteté."
+            }
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ce que je vois chez toi",
+            "À quoi je le remarque (exemple)"
+          ],
+          "breiten": [
+            1,
+            2.2
+          ],
+          "zeilen": 4,
+          "hoehe": 1.5,
+          "kopffarben": [
+            "gelb",
+            "gelb"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes se décrivent avec quatre qualités, recueillent facultativement le regard d’une personne de confiance et comparent : qu’est-ce qui se confirme, qu’est-ce qui surprend ?",
+        "ablauf": [
+          "Entrée en matière (6 min) : montrer une tasse avec un motif d’un seul côté ; deux personnes la décrivent de places opposées. « Qui a raison ? » – les deux.",
+          "Expliquer (5 min) : commenter l’exemple : qualité plus exemple observable, sans jugement. Bande facultative ; sinon : « Comment ma meilleure amie me décrirait-elle ? »",
+          "Travail individuel (14 min) : tâche 1 au calme, musique sans paroles. Deux crayons : une couleur pour l’image de soi, une pour le regard des autres.",
+          "Échange facultatif (14 min) : détacher la bande et la donner (ou la remplir soi-même). Tâches 3 et 4, puis à deux : « Qu’est-ce qui t’a surpris ? »",
+          "Clôture (6 min) : compléter « Ce que j’emporte » ; tour de parole facultatif avec un mot."
+        ],
+        "hintergrund": "L’image de soi et le regard des autres ne coïncident jamais tout à fait. La fenêtre de Johari classe ce que la personne et les autres savent d’elle et nomme la zone que seuls les autres voient, l’« angle mort » (Luft & Ingham, 1955). À l’adolescence, l’image de soi se différencie et dépend fortement des relations et des situations (Harter, 2012). C’est pourquoi la feuille demande un exemple pour chaque qualité : il décrit un comportement au lieu de juger la personne.",
+        "quellen": [
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Deux qualités au lieu de quatre, prises dans la liste ; exemples à l’oral, à deux.",
+          "schwerer": "Ajouter à chaque qualité le côté opposé (« parfois aussi … ») ; dessiner une fenêtre de Johari."
+        },
+        "impulse": [
+          "Que peut savoir quelqu’un sur toi que tu vois à peine ?",
+          "À quoi vois-tu qu’un retour t’est utile ?"
+        ],
+        "tipps": [
+          "Exiger des exemples : sans exemple, une qualité reste une affirmation.",
+          "La bande peut être remplie en dehors du cours."
+        ],
+        "achtung": "Regard des autres facultatif ; arrêter ce qui expose, l’apparence n’est pas un sujet. Proposer un entretien individuel, en cas d’inquiétude SePAS ou personne de confiance. En cas d’automutilation ou d’idées suicidaires, agir aussitôt selon la procédure interne (112, KJT 116 111).",
+        "material": "Deux crayons, ciseaux, tasse à motif d’un seul côté, musique douce ; recto verso"
+      }
+    }
+  }
+]

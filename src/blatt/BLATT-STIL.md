@@ -79,6 +79,28 @@ Gestaltung nach Stufe (automatisch aus der niedrigsten Stufe):
 
 Stufen nicht zu breit mischen: gut sind `["C1"]`, `["C2"]`, `["C3","C4"]`, `["C4","ES"]`, `["ES"]`.
 
+### „Tiefer gehen“: die Art für Jugendliche (C4–ES, jedes Thema)
+Rückmeldung aus der Praxis (10/2026): Reflexionsblätter in dieser Art kommen bei Jugendlichen sehr gut an und gehen tiefer
+als reine Übungsblätter – sie verbinden ein Thema mit dem eigenen Leben. Die Art gilt für **jedes Thema** (Wut, Sorgen,
+Freundschaft, Lernen, Zukunft …), nicht nur für den Bereich `selbstreflexion`; das Blatt steht im Bereich seines Themas und
+trägt die ELDiB-Ziele dieses Themas.
+
+- **Warum zuerst:** 2–3 warme Sätze, warum es sich lohnt, darüber nachzudenken – nicht belehrend, mit „du“.
+- **Bedeutung statt Wissen:** „Wann fällt es *dir* schwer – und woran merkst du das?“ statt „Was ist …?“.
+- **Behälter, die die Schwelle senken:** Regler, Gläser, Wolken, Sprechblasen, Bänder, Netz, Kurve, Personen-Karten
+  (Abschnitt 3, Selbstreflexion) – auch wer wenig schreibt, kann antworten.
+- **Kein Richtig oder Falsch:** einmal sagen, dann nicht mehr bewerten; Pole der Regler ohne Wertung.
+- **Geführt, aber offen:** Satzanfänge, ein Beispiel oder eine vorgegebene erste Zeile; danach Raum.
+- **Vom Erkennen zum nächsten Schritt:** einschätzen – verstehen (Muster, Gründe) – ein kleiner, machbarer Schritt.
+- **Multisensorisch:** mindestens zwei Zugänge außer Schreiben (ausmalen, Farben wählen, Regler ankreuzen, malen, Körper/
+  Haltung, Musik, ein Gegenstand, laut/leise, zu zweit).
+- **Ein Tipp-Kasten** (`info`) mit einer kleinen Erkenntnis aus der Psychologie oder einer Erlaubnis („Nicht jede Frage
+  muss heute eine Antwort haben“).
+- **Wiederholbar:** wo es passt, der Hinweis, das Blatt in einigen Monaten noch einmal auszufüllen und zu vergleichen.
+- **Schutz:** nie zur Offenlegung zwingen, nichts einsammeln, Austausch freiwillig; Familie, Kindheit, Körper nur, wo das
+  Thema es verlangt, und dann behutsam (Abschnitt 8). Für Kinder mit heiklem Thema plant Passgenau solche Blätter nur mit
+  Figuren – das Blatt soll deshalb auch über eine Figur oder ein Beispiel funktionieren.
+
 ### Gestaltung „Blatt 2.0“ (automatisch – im Blatt steht nichts davon)
 
 Farbe, Motive und Raster ergeben sich aus der Stufe (Code: `src/blatt/pdf/design.ts`, `src/blatt/icon-motiv.ts`). Ein Blatt beschreibt
