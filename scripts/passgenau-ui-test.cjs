@@ -625,7 +625,8 @@ async function main() {
       // dünne Daten: „Worum soll es heute gehen?“
       tb = await oeffne('pg-anouk01', 'schnell')
       await tb.getByRole('heading', { name: 'Worum soll es heute gehen?' }).waitFor({ timeout: 90000 })
-      pruefe(await tb.getByRole('button', { name: 'Stunde bauen' }).isDisabled(), 'dünne Daten: erst Schwerpunkt wählen')
+      // erste Stunde, wenig bekannt: „Kennenlernen“ ist vorgewählt, bauen geht sofort
+      pruefe(await tb.locator('.pg-chip.an', { hasText: 'Kennenlernen' }).isVisible() && await tb.getByRole('button', { name: 'Stunde bauen' }).isEnabled(), 'dünne Daten: Kennenlernen vorgewählt')
       await tb.locator('.pg-chip', { hasText: 'Gefühle ausdrücken' }).click()
       await tb.getByRole('button', { name: 'Stunde bauen' }).click()
       await tb.locator('.pg-schritt').first().waitFor()
