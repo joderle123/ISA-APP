@@ -251,6 +251,225 @@
         "achtung": "Allergien schriftlich bei den Eltern klären, Notfallset bereithalten. Wer auffällig wenig isst, wird nicht vor der Gruppe angesprochen; die zuständige Leitung (Responsable) informieren.",
         "material": "Ampelkarten je Person, Blatt in A3"
       }
+    },
+    "fr": {
+      "titel": "Notre plan de cuisine",
+      "untertitel": "Un repas où personne ne reste sur sa faim – planifié avant d’allumer la cuisinière",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Un bon repas commence à table, pas aux fourneaux : avec un plan qui prend au sérieux les allergies, les règles alimentaires, le budget et le temps."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Voilà ce dont nous tenons compte : notez ce qui ne doit pas se retrouver dans le repas ou doit être servi à part – sans noms.",
+          "hinweis": "L’adulte lit la liste à voix haute. On ne vote pas sur les allergies ni sur les règles alimentaires.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Pas dans le repas, ou à part",
+          "hoehe": 2,
+          "beispiel": "pas de noix · pas de porc · une variante sans viande"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le feu des menus : montrez en même temps une carte pour chaque menu. On choisit le menu qui compte le moins de cartes rouges.",
+          "hinweis": "Vert veut dire avec plaisir, jaune veut dire ça va, rouge veut dire ça ne va pas pour moi. Qui montre rouge dit ce qui devrait changer.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Menu",
+            "Vert",
+            "Jaune",
+            "Rouge",
+            "Pour que tout le monde puisse manger"
+          ],
+          "breiten": [
+            2.1,
+            0.55,
+            0.55,
+            0.55,
+            2.6
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Pâtes à la sauce aux légumes",
+            "4",
+            "2",
+            "0",
+            "Fromage en plus dans un bol"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La liste de courses : qu’est-ce qui manque, en quelle quantité, et combien cela coûte-t-il à peu près ?",
+          "hinweis": "Vérifier d’abord à la cuisine le sel, l’huile et les épices. À la fin, comparer le total au budget : que laissons-nous de côté, que remplaçons-nous ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Ingrédient",
+                "Quantité",
+                "Euros env."
+              ],
+              "breiten": [
+                2,
+                1.1,
+                1
+              ],
+              "zeilen": 6,
+              "beispiel": [
+                "Pâtes",
+                "750 g",
+                "2"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Ingrédient",
+                "Quantité",
+                "Euros env."
+              ],
+              "breiten": [
+                2,
+                1.1,
+                1
+              ],
+              "zeilen": 7
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le planning à l’envers : écrivez l’heure du repas sur la première ligne, puis calculez à rebours : quoi commence quand, et qui s’en charge ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Heure",
+            "Que se passe-t-il ?",
+            "Qui ?"
+          ],
+          "breiten": [
+            0.9,
+            3.3,
+            1.5
+          ],
+          "zeilen": 6,
+          "beispiel": [
+            "16 h 40",
+            "Tout le monde est à table, nous commençons ensemble.",
+            "tous"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Les règles de la cuisine : lisez-les ensemble. Cette page est affichée dans la cuisine pendant qu’on cuisine.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Hygiène",
+              "punkte": [
+                "Se laver les mains 20 à 30 secondes avec du savon : avant de cuisiner, après les toilettes, après s’être mouché, après avoir touché de la viande crue ou des œufs.",
+                "Attacher les cheveux longs, enlever bagues et bracelets.",
+                "Ne se servir d’une cuillère à goûter qu’une seule fois.",
+                "Qui a mal au ventre ou de la fièvre aide aujourd’hui à table, pas à la préparation du repas."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "achtung",
+              "titel": "Chaleur",
+              "punkte": [
+                "Tourner les queues des casseroles vers l’intérieur.",
+                "Seulement des maniques sèches – mouillées, elles conduisent la chaleur.",
+                "Annoncer à voix haute « chaud devant » et « derrière toi ».",
+                "Si la graisse prend feu : jamais d’eau. Couvercle dessus, plaque éteinte, appeler l’adulte."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Couteaux",
+              "punkte": [
+                "Technique de la griffe : replier le bout des doigts, les phalanges guident la lame.",
+                "Technique du pont : la main forme un pont, on coupe en dessous.",
+                "La planche repose sur un torchon humide.",
+                "Ne jamais mettre un couteau dans l’eau de vaisselle. S’il tombe : reculer, ne pas le rattraper."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Allergies et respect",
+              "punkte": [
+                "Lire les listes d’ingrédients : les allergènes y sont mis en évidence.",
+                "Pour les plats sans allergène, des planches, cuillères et casseroles à part.",
+                "Goûter est facultatif.",
+                "On ne se moque pas de ce que mangent les autres – « ce n’est pas pour moi » suffit."
+              ]
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Le groupe planifie un repas auquel tout le monde peut participer : il clarifie allergies et règles alimentaires, choisit avec le feu des menus, rédige liste de courses et planning et connaît les règles de la cuisine.",
+        "ablauf": [
+          "Séance 1, conseil des menus (30 min) : lire les allergies sans noms (tâche 1), présenter quatre menus, feu (2), liste de courses (3).",
+          "Séance 1, postes de cuisine : lire les règles de la page 2 (tâche 5).",
+          "Séance 1, fin : les rôles « Recette » et « Temps » rédigent avec l’adulte le planning à l’envers (tâche 4).",
+          "Séance 2 : afficher en A3 dans la cuisine la page 2 avec planning et règles."
+        ],
+        "hintergrund": "Le feu des menus repose sur une idée simple : on ne choisit pas ce que la plupart préfèrent, mais ce avec quoi tout le monde peut vivre. Ainsi, les voix qui disparaîtraient dans un vote à la majorité comptent, et le groupe apprend à voir les différences – allergies, règles alimentaires religieuses, préférences – comme une tâche, non comme une gêne. La participation renforce la volonté de respecter les accords (Deci & Ryan, 2000). Planifier à l’envers soulage la mémoire de travail : le plan est au mur au lieu d’être gardé en tête (Diamond, 2013).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168."
+        ],
+        "differenzierung": {
+          "leichter": "L’adulte propose deux menus et une liste de courses prête ; le groupe complète les quantités et vérifie le budget.",
+          "schwerer": "Le groupe propose son menu, adapte les quantités au nombre de personnes et compare les prix dans le prospectus."
+        },
+        "impulse": [
+          "Existe-t-il un menu pour lequel personne ne montre rouge – et que nous coûte de le choisir ?",
+          "Quelle différence entre « je n’ai pas le droit de manger ça » et « je n’aime pas » ?"
+        ],
+        "tipps": [
+          "Copier la page 2 en A3 et la plastifier : elle sert pour plusieurs séances de cuisine.",
+          "Lire la liste des allergies sans noms ; qui le souhaite peut nommer sa propre allergie."
+        ],
+        "achtung": "Clarifier les allergies par écrit avec les parents, garder une trousse d’urgence à portée de main. Ne pas interpeller devant le groupe quelqu’un qui mange très peu ; informer la direction compétente (responsable).",
+        "material": "Cartes de feu par personne, feuille en A3"
+      }
     }
   },
   {
@@ -463,6 +682,183 @@
         "achtung": "Wer gerade sehr angespannt ist oder schon einmal mit Gegenständen gedroht hat, bekommt ohne Aufsehen eine Rolle ohne Messer. Frust-Pläne sind persönlich und werden nicht eingesammelt.",
         "material": "Seite 1 auf festem Papier, Schere, Laminierfolie, Wäscheklammern; Seite 2 je Person"
       }
+    },
+    "fr": {
+      "titel": "Rôles en cuisine et feu de la frustration",
+      "untertitel": "Qui fait quoi – et que faire quand quelque chose tourne mal en cuisine ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dans une bonne cuisine, chaque personne sait ce qu’elle a à faire. Et quand on a terminé, on demande : où puis-je aider ?"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cartes de rôle : à découper une fois. Chaque personne choisit un rôle et pose la carte à sa place.",
+          "hinweis": "Si vous êtes moins de six, quelqu’un prend deux rôles ; si vous êtes plus nombreux, on travaille à deux à la planche et aux fourneaux. À la prochaine cuisine, on échange.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "karten": [
+            {
+              "bild": "icon:clipboard-list",
+              "titel": "Recette et vue d’ensemble",
+              "text": "Lit la recette étape par étape à voix haute et dit ce qui vient ensuite. Quand ça coince : d’abord dire stop, puis expliquer, puis décider."
+            },
+            {
+              "bild": "icon:alarm",
+              "titel": "Temps",
+              "text": "Règle le minuteur, garde le planning à l’œil et annonce deux fois le stop de la cuisine. Quand ça coince : dire ce qui manque et demander ce qui peut être supprimé."
+            },
+            {
+              "bild": "icon:carrot",
+              "titel": "Découpe",
+              "text": "Lave et coupe les légumes avec la technique de la griffe ou du pont. Quand ça coince : poser le couteau avant de parler ou de s’énerver."
+            },
+            {
+              "bild": "icon:flame",
+              "titel": "Fourneaux",
+              "text": "Cuit, fait revenir et rectifie l’assaisonnement, à chaque fois avec une cuillère propre. Quand ça coince : casserole hors du feu, expirer, puis sauver ce qui peut l’être."
+            },
+            {
+              "bild": "icon:shield-check",
+              "titel": "Hygiène et sécurité",
+              "text": "Rappelle de se laver les mains et d’utiliser des planches séparées, sait où sont la trousse de secours et la couverture anti-feu. Quand ça coince : rappeler gentiment plutôt que contrôler."
+            },
+            {
+              "bild": "icon:table",
+              "titel": "Table et rangement",
+              "text": "Fait la vaisselle en cours de route, garde les surfaces dégagées, met la table et veille à ce que tout le monde commence ensemble. Quand ça coince : finir une chose, puis passer à la suivante."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te fait le plus vite passer au rouge en cuisine ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Quelque chose brûle ou déborde.",
+            "Quelqu’un prend ma tâche sans demander.",
+            "Je dois attendre et j’ai faim.",
+            "Quelqu’un critique ma façon de couper ou de cuisiner.",
+            "Je fais tout, les autres regardent.",
+            "Tout le monde parle en même temps, c’est la cohue."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le feu de la frustration en cuisine : lis ce qui aide à chaque niveau.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "ampel",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Rouge : stop",
+              "text": "Poser le couteau, casserole hors du feu, expirer longuement une fois."
+            },
+            {
+              "titel": "Jaune : réfléchir",
+              "text": "Quelle gravité, vraiment, de 0 à 10 ? Qu’est-ce qui peut être sauvé ? Qui peut aider ?"
+            },
+            {
+              "titel": "Vert : agir",
+              "text": "Sauver ce qui peut l’être, demander de l’aide – ou accepter ce qui s’est passé et continuer."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan anti-frustration : qu’est-ce qui pourrait t’énerver dans ton rôle – et que fais-tu alors ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si la sauce attache,",
+              "dann": "je retire la casserole du feu, j’expire et je demande : qu’est-ce qu’on sauve ?"
+            },
+            {
+              "wenn": "Si quelqu’un reprend ma tâche,",
+              "dann": "je dis : je préfère la finir moi-même – tu veux mettre la table ?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après le repas : le bilan de la cuisine. Comment ça s’est passé en équipe ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "en partie",
+            "faux"
+          ],
+          "items": [
+            "Chaque personne avait une tâche.",
+            "Nous avons aidé sans empiéter sur le travail des autres.",
+            "Quand quelque chose a mal tourné, nous avons gardé notre calme.",
+            "Nous avons respecté les règles de la cuisine.",
+            "Tout le monde a pu manger avec nous."
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Quel skill t’a servi aujourd’hui en cuisine – et où pourrais-tu encore en avoir besoin ?",
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Chaque personne prend un rôle clair en cuisine et dispose d’un plan pour les moments de frustration. Après le repas, le groupe évalue le déroulement de la collaboration.",
+        "ablauf": [
+          "Séance 1 (10 min) : faire lire les cartes de rôle ; chacun donne son rôle souhaité et un second choix, l’adulte équilibre et décide qui travaille avec les couteaux.",
+          "Séance 1 : tâches 2 à 4 en individuel – ce qui me fait passer au rouge, le feu de la frustration, son propre plan anti-frustration.",
+          "Séance 2, avant la cuisine : poser les cartes aux postes de travail ; le feu de la frustration est affiché à côté des règles de la cuisine.",
+          "Séance 2, après le rangement (7 min) : remplir le bilan en silence (tâche 5), puis tour de remerciements ; la dernière question est facultative."
+        ],
+        "hintergrund": "Des rôles clairs réduisent les frictions : quand on sait de quoi on est responsable, on n’a pas à se battre pour sa place, et l’aide devient une question plutôt qu’un empiétement. Chaque carte contient donc une phrase pour le moment où ça coince. Le feu de la frustration transpose le feu stop à la cuisine et ressemble au skill STOP que Linehan (2015) décrit pour les moments de crise : s’arrêter, prendre du recul, observer, agir en pleine conscience. Les plans « si … alors » rendent ces résolutions plus efficaces, car la situation elle-même devient le déclencheur (Gollwitzer, 1999).",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Avec peu de jeunes, quatre rôles : fusionner recette et temps, l’adulte prend l’hygiène ; commencer le plan anti-frustration par une ligne exemple.",
+          "schwerer": "Concevoir une nouvelle carte de rôle, par exemple pour la musique ou les photos, avec tâche et phrase pour le moment de frustration."
+        },
+        "impulse": [
+          "Quel rôle se remarque à peine – et sans lui, tout irait pourtant de travers ?",
+          "Comment aider sans enlever son travail à quelqu’un ?"
+        ],
+        "tipps": [
+          "Plastifier les cartes de rôle et les accrocher aux postes de travail avec des pinces à linge."
+        ],
+        "achtung": "Qui est très tendu en ce moment ou a déjà menacé avec des objets reçoit discrètement un rôle sans couteau. Les plans anti-frustration sont personnels et ne sont pas ramassés.",
+        "material": "Page 1 sur papier épais, ciseaux, film à plastifier, pinces à linge ; page 2 par personne"
+      }
     }
   },
   {
@@ -642,6 +1038,152 @@
         "achtung": "Nur mit Einverständnis der Eltern und nach dem Notfallplan des Hauses. Erleben Jugendliche unterwegs Ablehnung oder Diskriminierung, das in Ruhe aufgreifen.",
         "material": "Bogen je Team, Seite 2 je Person; Klemmbretter, Plan des Gebiets, Plakat (A2)"
       }
+    },
+    "fr": {
+      "titel": "Mission rallye",
+      "untertitel": "Six missions autour de notre maison – pour un guide qui aide les nouveaux à bien démarrer",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Votre mission : découvrir ce que doit savoir quelqu’un qui arrive ici – où trouver de l’aide, du calme, le bus. Chaque mission commence et se termine à la base."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lisez les règles, complétez les blancs et signez en équipe.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "vertrag",
+          "titel": "Notre façon de nous déplacer",
+          "text": "Nous restons ensemble, en équipe, tout le temps. Notre base est ___. Notre zone s’arrête ___. Après chaque mission, nous sommes de retour au bout de douze minutes au plus. Le numéro de l’adulte est ___. Le téléphone sert à appeler l’adulte, au 112 en cas d’urgence, aux horaires et aux photos sans inconnus ; nous ne publions rien. Les écouteurs restent dans le sac, et au rouge nous attendons, même sans voiture. Si quelque chose nous met mal à l’aise, nous retournons tout de suite à la base.",
+          "unterschriften": [
+            "",
+            "",
+            "",
+            "Adulte"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Répartissez les rôles. Après chaque mission, vous changez.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Rôles dans l’équipe",
+          "punkte": [
+            "Carte : connaît le chemin et guide.",
+            "Temps : veille au retour après douze minutes.",
+            "Parole : aborde les gens – qui préfère ne pas le faire demande à deux.",
+            "Écriture et photo : note les résultats, ne photographie jamais d’inconnus."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Les six missions : à la base, vous apprenez laquelle est la prochaine. Notez votre résultat en mots-clés.",
+          "hinweis": "L’adulte valide chaque résultat à la base.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Trouver de l’aide · Skill : demander",
+              "text": "Trouvez la pharmacie la plus proche et un endroit où l’on peut vous aider en cas de problème, par exemple une réception ou un magasin avec du personnel. Où exactement ?"
+            },
+            {
+              "titel": "Poser des questions · Skill : aborder",
+              "text": "Demandez à une personne qui travaille ici ce que les nouveaux devraient connaître dans le quartier. Demandez seulement si personne n’attend – et remerciez."
+            },
+            {
+              "titel": "Planifier un trajet · Skill : planifier",
+              "text": "Planifiez le trajet de la base à la destination indiquée par l’adulte : à pied ou en bus ? Arrêt, ligne, prochain départ, durée. Vous ne partez pas, vous planifiez."
+            },
+            {
+              "titel": "Lieu calme · Skill : se poser",
+              "text": "Trouvez un endroit où l’on se pose quand la tête est pleine. Testez-y un skill pendant deux minutes. Tension avant et après ?"
+            },
+            {
+              "titel": "Chasse aux langues · Skill : voir la diversité",
+              "text": "Trouvez des panneaux, affiches ou menus en cinq langues et photographiez-les sans personnes. Quelle langue revient le plus souvent ?"
+            },
+            {
+              "titel": "Lieu préféré · Skill : se mettre d’accord",
+              "text": "Mettez-vous d’accord sur l’endroit à recommander aux nouveaux – tout le monde doit être d’accord. Photographiez-y seulement vos ombres ou vos mains."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Dispute dans l’équipe ?",
+          "text": "Rouge : tout le monde s’arrête. Jaune : chaque personne dit en une phrase ce qu’elle veut. Vert : vous décidez – compromis, tour de rôle ou, cette fois, l’autre idée."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Aujourd’hui, était-ce facile pour toi ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "facile",
+            "moyen",
+            "difficile"
+          ],
+          "items": [
+            "aborder une personne inconnue",
+            "planifier un trajet ou une liaison en bus",
+            "nous mettre d’accord quand nous n’étions pas du même avis",
+            "rester calme quand quelque chose n’a pas marché",
+            "respecter les accords, même sans surveillance"
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Où auras-tu besoin d’un de ces skills la semaine prochaine ?",
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes appliquent dans leur environnement des skills de l’année de cours : aborder quelqu’un, planifier un trajet, s’entendre en équipe, se poser et savoir où trouver de l’aide. Les résultats donnent un guide pour les nouveaux jeunes.",
+        "ablauf": [
+          "Avant : parcourir la zone, fixer la base et la destination de la mission 3, obtenir l’accord des parents.",
+          "Départ (15 min) : équipes de deux ou trois, lire les règles, compléter, signer, répartir les rôles.",
+          "Rallye en étoile (70 min) : numéros de départ différents, douze minutes au maximum par mission, rapport et validation à la base.",
+          "Ensuite : affiche-guide à six cases (20 min), bilan avec la tâche 4 et points au tableau (20 min)."
+        ],
+        "hintergrund": "Les skills qu’on n’exerce que dans la salle de groupe y restent facilement. Le rallye les apporte dans le quotidien, mais avec un filet : la base n’est jamais loin. Les réussites personnelles sont la source la plus forte du sentiment d’efficacité personnelle (Bandura, 1977). On grandit là où c’est stimulant mais faisable (Senninger, 2000) ; c’est pourquoi les jeunes peuvent demander à deux et échanger les rôles. Des règles claires ne sont pas de la méfiance : entre pairs, les jeunes prennent plus de risques que seuls (Gardner & Steinberg, 2005).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia.",
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les missions 1, 2, 4 et 6 ; l’adulte accompagne l’équipe en gardant ses distances.",
+          "schwerer": "L’équipe conçoit une septième mission pour une autre équipe ; l’adulte vérifie sa sécurité."
+        },
+        "impulse": [
+          "Qu’auriez-vous aimé savoir le premier jour ici ?",
+          "Quelle mission était dans ta zone d’apprentissage – et laquelle presque dans la zone de panique ?"
+        ],
+        "tipps": [
+          "Emporter les feuilles sur des porte-blocs et dans des pochettes transparentes : par vent et pluie, tout reste lisible."
+        ],
+        "achtung": "Seulement avec l’accord des parents et selon le plan d’urgence de l’établissement. Si des jeunes vivent en chemin du rejet ou de la discrimination, en parler calmement.",
+        "material": "Feuille par équipe, page 2 par personne ; porte-blocs, plan de la zone, affiche (A2)"
+      }
     }
   },
   {
@@ -817,6 +1359,146 @@
         ],
         "achtung": "Vorführrechte und Altersfreigabe vorab klären lassen. Niemand wird mit Auggie verglichen oder zum Experten gemacht. Hinweise auf aktuelles Mobbing nicht in der Gruppe vertiefen, sondern ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
         "material": "Klemmbretter, Stifte, neun Figurenkarten"
+      }
+    },
+    "fr": {
+      "titel": "Mon regard sur « Wonder »",
+      "untertitel": "Fiche d’observation pour le film « Wonder » (2017) : un personnage, tout le film",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Le film raconte la même histoire du point de vue de plusieurs personnages. Tu suis un personnage tout au long du film et tu regardes avec ses yeux."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Coche ton personnage.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "Auggie",
+            "Via, sa sœur",
+            "Jack",
+            "Summer",
+            "Julian",
+            "Miranda",
+            "Isabel, la mère",
+            "Nate, le père",
+            "M. Browne, l’enseignant"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pendant le film ou à la pause : que vit ton personnage – et qu’est-ce qu’il fait ensuite ?",
+          "hinweis": "Des mots-clés suffisent. Dans le noir, personne n’a besoin d’écrire joliment.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Scène (mot-clé)",
+            "Que ressent le personnage ?",
+            "Que fait-il ?"
+          ],
+          "breiten": [
+            2.2,
+            1.6,
+            2.2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Auggie est seul à la cantine.",
+            "Summer : compassion",
+            "Elle s’assoit à côté de lui."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après le film : que montre ton personnage vers l’extérieur – et qu’y a-t-il en dessous ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "eisberg",
+          "oben": "Ce que voient les autres",
+          "unten": "Ce que le personnage ressent ou dont il a besoin",
+          "beispielOben": "Via dit que tout va bien pour elle.",
+          "beispielUnten": "Elle se sent mise de côté et sa grand-mère lui manque."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le courage dans le film et chez toi : complète les phrases.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Mon personnage a été courageux quand …",
+            "Il lui aurait fallu plus de courage quand …",
+            "Un petit pas courageux pour moi – à l’école, dans le bus ou en ligne – serait …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "M. Browne donne à sa classe des préceptes. Écris le tien.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mon précepte",
+          "hoehe": 3,
+          "beispiel": "D’abord demander, ensuite juger."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Ce que tu écris sur toi, personne ne le lit à voix haute si tu ne le veux pas."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes suivent un personnage tout au long du film, distinguent ce qu’il montre de ce qu’il cache et appliquent la question du courage et de la gentillesse à leur quotidien.",
+        "ablauf": [
+          "Séance 1, avant le film (5 min) : cartes de personnage tirées face cachée, tâche 1.",
+          "Pendant le film et aux pauses : mots-clés sur trois scènes au plus (tâche 2).",
+          "Séance 2, après le film (15 min) : iceberg en individuel (tâche 3), puis chaque personnage en deux phrases ; au tableau : dehors, dedans.",
+          "Après la ligne du courage : tâche 4 facultative, en individuel ; le précepte (tâche 5) peut aller dans le Skills-Pass."
+        ],
+        "hintergrund": "« Wonder » (2017), d’après le roman de R. J. Palacio (2012), raconte sous plusieurs points de vue l’histoire d’Auggie, au visage différent. Allport (1954) a montré avec quelle rapidité on classe les autres d’après l’apparence ; le contact personnel réduit durablement les préjugés (Pettigrew & Tropp, 2006). Que l’exclusion dure dépend beaucoup des témoins (Salmivalli et al., 1996) – d’où les questions sur le courage. L’iceberg montre que presque chaque personnage cache quelque chose.",
+        "quellen": [
+          "Palacio, R. J. (2012). Wonder. New York: Alfred A. Knopf.",
+          "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+          "Pettigrew, T. F. & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. Journal of Personality and Social Psychology, 90(5), 751–783.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les tâches 1, 2 et 5 ; après le film, l’adulte propose trois scènes clés.",
+          "schwerer": "Suivre un second personnage : où voient-ils la même scène très différemment ?"
+        },
+        "impulse": [
+          "Quel personnage a mené un combat que les autres n’ont pas vu ?",
+          "Qu’est-ce qui aurait aidé Auggie le premier jour d’école ?"
+        ],
+        "tipps": [
+          "Poser les feuilles sur des porte-blocs : dans le noir, on écrit plus facilement."
+        ],
+        "achtung": "Vérifier au préalable droits de projection et classification d’âge. Ne comparer personne à Auggie, ne désigner personne comme expert. Harcèlement actuel : pas en groupe, entretien individuel, informer la direction compétente (responsable).",
+        "material": "Porte-blocs, stylos, 9 cartes personnage"
       }
     }
   },
@@ -1003,6 +1685,161 @@
         ],
         "achtung": "Beim Fluss und beim Stab gibt es Nähe: vorher ankündigen, das Stopp-Recht betonen, kontaktarme Varianten anbieten. Luftballons nur ohne Latexallergie. Wird jemand zum Sündenbock gemacht, sofort unterbrechen.",
         "material": "Festes Papier, Schere, Laminierfolie; Spielmaterial laut Karten"
+      }
+    },
+    "fr": {
+      "titel": "Cartes de coopération",
+      "untertitel": "Six défis qu’un groupe ne réussit qu’ensemble",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Une personne tire une carte et la lit à voix haute. Vous avez deux minutes pour planifier, puis on y va. C’est tout le groupe qui gagne – ou personne."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découper les cartes une fois et, de préférence, les plastifier.",
+          "hinweis": "Pour l’adulte : les cartes vont dans la caisse de coopération ; le matériel est indiqué sur chaque carte.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "karten": [
+            {
+              "bild": "icon:ball-basketball",
+              "titel": "Jonglage collectif",
+              "text": "Lancez une balle en cercle jusqu’à ce que chaque personne l’ait eue une fois – toujours dans le même ordre, en disant le prénom avant. Ensuite, une deuxième balle s’ajoute. Manche record : en combien de temps une balle fait-elle le tour ? Matériel : balles souples, chronomètre."
+            },
+            {
+              "bild": "icon:droplet",
+              "titel": "La rivière",
+              "text": "Tout le monde doit traverser la rivière. Vous ne pouvez marcher que sur les pierres, et vous en avez une de moins que de personnes. Une pierre que personne ne touche à cet instant est emportée par le courant. Matériel : tapis ou cartons, deux cordes."
+            },
+            {
+              "bild": "icon:route",
+              "titel": "Le pipeline",
+              "text": "Amenez la bille du départ jusqu’au gobelet avec vos gouttières. Qui a la bille dans sa gouttière reste immobile. Si elle tombe, on reprend au départ. Matériel : gouttières, bille, gobelet."
+            },
+            {
+              "bild": "icon:hand-finger",
+              "titel": "Le bâton en lévitation",
+              "text": "Le bâton repose sur vos index tendus. Posez-le ensemble par terre – chaque doigt le touche toujours par en dessous, personne ne le retient. Matériel : bâton léger, de deux à trois mètres."
+            },
+            {
+              "bild": "icon:balloon",
+              "titel": "Pluie de ballons",
+              "text": "Gardez tous les ballons en l’air. Personne ne touche le même ballon deux fois de suite. Toutes les 30 secondes, un ballon s’ajoute. Combien en tenez-vous ? Matériel : ballons de baudruche, si personne n’est allergique au latex."
+            },
+            {
+              "bild": "icon:tools",
+              "titel": "La machine",
+              "text": "Une personne commence par un mouvement et un bruit. Peu à peu, tout le monde s’y raccroche jusqu’à ce qu’une machine tourne. L’adulte dirige : plus vite, plus lentement, panne de courant. Matériel : aucun."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après chaque jeu : trois questions, deux minutes.",
+          "symbole": [
+            "gruppe",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Qu’est-ce qui a marché ?",
+              "text": "Ce qui nous a aidés."
+            },
+            {
+              "titel": "Qu’est-ce qui a coincé ?",
+              "text": "Critiquer le plan, pas la personne."
+            },
+            {
+              "titel": "Que changeons-nous ?",
+              "text": "Une chose pour le prochain essai."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand la frustration monte",
+          "text": "Rouge : arrêter le jeu, mains loin du matériel. Jaune : une personne parle, tous les autres écoutent. Vert : nouvel essai avec un changement."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À la fin : comment as-tu été dans l’équipe aujourd’hui ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "en partie",
+            "pas encore"
+          ],
+          "items": [
+            "J’ai écouté quand d’autres avaient une idée.",
+            "J’ai proposé moi-même une idée.",
+            "J’ai gardé mon calme quand quelque chose n’a pas marché.",
+            "Je n’ai rejeté la faute sur personne.",
+            "J’ai encouragé quelqu’un."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Complète les phrases.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Une règle d’équipe que nous avons découverte nous-mêmes aujourd’hui : …",
+            "Ce qui m’a permis de me calmer aujourd’hui : …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Le groupe résout par des jeux de mouvement des défis qui ne se réussissent qu’ensemble, fait un bref bilan après chaque manche et note ce qui a aidé l’équipe.",
+        "ablauf": [
+          "Préparation : découper la page 1, la plastifier et la ranger avec le matériel dans la caisse de coopération ; page 2 par personne.",
+          "Selon l’ambiance, deux à trois cartes : beaucoup d’énergie, la rivière ou le jonglage collectif ; ambiance tendue, le pipeline et le jonglage collectif ; fatigue, la pluie de ballons ou la machine.",
+          "Après chaque jeu, les trois questions (tâche 2), deux minutes au plus.",
+          "À la fin : tâches 3 et 4 en individuel, puis règles d’équipe sur une affiche."
+        ],
+        "hintergrund": "Les jeux coopératifs viennent de la pédagogie de l’aventure : le défi n’est soluble qu’ensemble, et qui rejette la faute sur les autres perd avec eux. De tels buts communs avaient fait baisser l’hostilité entre deux groupes dans l’expérience de Robbers Cave (Sherif et al., 1961). Selon le modèle des zones d’apprentissage de Senninger (2000), les tâches doivent stimuler sans dépasser ; qui ne veut pas jouer observe ou chronomètre. Tuckman (1965) décrit les frictions comme une phase normale du développement d’un groupe, qu’il dépasse en apprenant à résoudre ensemble des tâches. Seul le bref bilan fait du jeu une expérience transférable.",
+        "quellen": [
+          "Sherif, M., Harvey, O. J., White, B. J., Hood, W. R. & Sherif, C. W. (1961). Intergroup Conflict and Cooperation: The Robbers Cave Experiment. Norman, OK: University Book Exchange.",
+          "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia.",
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer par la pluie de ballons et la machine ; bilan seulement avec pouce en haut, au milieu ou en bas.",
+          "schwerer": "À la deuxième manche, le groupe ne parle pas, il montre – ou une personne guide le jeu."
+        },
+        "impulse": [
+          "L’idée de qui a apporté la solution – et a-t-elle été entendue tout de suite ?",
+          "Qu’avez-vous fait quand la frustration est montée ?"
+        ],
+        "tipps": [
+          "Ranger la caisse déjà préparée : le joker est alors utilisable sans délai."
+        ],
+        "achtung": "À la rivière et au bâton, il y a de la proximité : l’annoncer, souligner le droit de dire stop, proposer des variantes sans contact. Ballons seulement sans allergie au latex. Si quelqu’un devient bouc émissaire, interrompre aussitôt.",
+        "material": "Papier épais, ciseaux, film à plastifier ; matériel de jeu selon les cartes"
       }
     }
   }

@@ -210,6 +210,185 @@
         "achtung": "Wer kaum etwas ankreuzt, ist oft eher mutlos als desinteressiert. Nicht vor der Gruppe darauf eingehen, im Einzelgespräch nachfragen und bei Bedarf die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Klemmbretter, Stifte, Parcours-Material"
       }
+    },
+    "fr": {
+      "titel": "Mes centres d’intérêt",
+      "untertitel": "Six domaines, un code – il montre ce qui t’attire, pas ce que tu sais déjà faire.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Tes intérêts montrent pour quelles activités le temps passe vite. Pour choisir un métier, c’est un bon premier indice. Coche honnêtement – personne n’évalue ton résultat."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Coche tout ce que tu aimerais faire – peu importe que tu saches déjà le faire. Compte ensuite les croix dans chaque domaine.",
+          "hinweis": "Ne réfléchis pas trop longtemps : la première impression est souvent la plus honnête."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "Manuel",
+              "items": [
+                "réparer un scooter ou un vélo",
+                "monter des meubles ou construire en bois",
+                "travailler dehors, par tous les temps",
+                "travailler avec des machines et des outils",
+                "travailler avec des animaux ou des plantes"
+              ]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Scientifique",
+              "items": [
+                "comprendre comment un appareil fonctionne",
+                "résoudre des énigmes et des problèmes difficiles",
+                "bidouiller à l’ordinateur ou programmer",
+                "faire des expériences",
+                "creuser une question jusqu’à ce que je comprenne"
+              ]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Créatif",
+              "items": [
+                "dessiner, peindre, concevoir des graffitis",
+                "faire de la musique ou composer des beats",
+                "prendre des photos ou des vidéos et les monter",
+                "créer des coiffures, des vêtements ou des intérieurs",
+                "écrire des textes ou des chansons"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Social",
+              "items": [
+                "expliquer quelque chose à quelqu’un jusqu’à ce que ça marche",
+                "garder des petits enfants",
+                "m’occuper de personnes malades ou âgées",
+                "écouter quelqu’un qui va mal",
+                "aider à régler une dispute"
+              ]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Entreprenant",
+              "items": [
+                "convaincre les autres d’une idée",
+                "vendre et négocier des prix",
+                "diriger un groupe",
+                "lancer ma propre petite entreprise",
+                "présenter quelque chose devant les autres"
+              ]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Organisé",
+              "items": [
+                "établir des listes, des tableaux ou des plans",
+                "calculer avec précision avec des chiffres et de l’argent",
+                "planifier des rendez-vous et garder une vue d’ensemble",
+                "mettre de l’ordre dans un entrepôt",
+                "remplir des formulaires avec soin"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Un indice, pas un jugement",
+          "text": "Les intérêts changent, et la plupart des métiers combinent deux ou trois domaines. Ce qui te convient vraiment, tu le sens en essayant – au parcours, en stage, en parlant avec des personnes qui exercent le métier."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Reporte le nombre de tes croix dans l’hexagone. Les domaines voisins se ressemblent.",
+          "hinweis": "Les domaines opposés vont plus rarement ensemble – mais cela existe, par exemple en kinésithérapie : social et manuel."
+        },
+        {
+          "art": "mindmap",
+          "mitte": "Mon code",
+          "aeste": [
+            "Manuel",
+            "Scientifique",
+            "Créatif",
+            "Social",
+            "Entreprenant",
+            "Organisé"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton code d’intérêts : ce sont tes deux domaines les plus forts. Est-ce que cela te ressemble ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon code d’intérêts : … et …",
+            "Cela me ressemble, parce que …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Au parcours : après chaque poste, coche si l’activité t’a donné ou coûté de l’énergie."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "donne de l’énergie",
+            "neutre",
+            "coûte de l’énergie"
+          ],
+          "items": [
+            "Manuel – pont en papier",
+            "Scientifique – trois énigmes",
+            "Créatif – un logo en trois minutes",
+            "Social – explique-le-moi",
+            "Entreprenant – 30 secondes",
+            "Organisé – chaos dans l’agenda"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Le test et le parcours concordent / ne concordent pas, parce que …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes déterminent leurs intérêts professionnels dans six domaines d’après Holland, établissent leur code d’intérêts et le vérifient avec six courts essais pratiques.",
+        "ablauf": [
+          "Exercice 1 individuel (10 min) : cocher ce qu’on aimerait faire – pas ce qu’on sait faire –, puis compter les croix par domaine.",
+          "Exercice 2 (5 min) : reporter les chiffres dans l’hexagone ; montrer au tableau que les voisins se ressemblent.",
+          "Exercice 3 (3 min) : code d’intérêts avec justification ; en cas d’égalité, trois domaines.",
+          "Exercice 4 au parcours : une croix après chaque poste, puis comparer le test et le parcours."
+        ],
+        "hintergrund": "Holland (1997) décrit six types d’intérêts – pratique et technique, investigateur, artistique, social, entreprenant, organisateur – et les dispose en hexagone : les voisins se ressemblent, les opposés le moins. Qui trouve un travail en accord avec ses intérêts est plus souvent satisfait. Les domaines sont simplifiés pour les jeunes et ne remplacent pas un test standardisé. Selon Super (1980), les intérêts se précisent à 15 ans par l’exploration – c’est pourquoi l’essai au parcours suit les croix.",
+        "quellen": [
+          "Holland, J. L. (1997). Making Vocational Choices (3rd ed.). Odessa, FL: Psychological Assessment Resources.",
+          "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298."
+        ],
+        "differenzierung": {
+          "leichter": "L’enseignant lit les activités à voix haute, tout le monde coche en même temps ; seul le domaine avec le plus de croix compte.",
+          "schwerer": "Former un code à trois domaines et chercher deux métiers qui relient les trois."
+        },
+        "impulse": [
+          "Quand le temps passe-t-il comme un éclair pour toi – et que fais-tu à ce moment-là ?",
+          "Un résultat t’a-t-il surpris – au test ou au parcours ?"
+        ],
+        "tipps": [
+          "Égalités et résultats plats sont fréquents. Aider alors par la question : de quel domaine aurais-tu le plus de mal à te passer ?",
+          "Aborder les stéréotypes quand ils apparaissent : le code appartient à la personne, pas à son genre."
+        ],
+        "achtung": "Qui ne coche presque rien est souvent plus découragé que désintéressé. Ne pas le relever devant le groupe, poser la question en entretien individuel et, au besoin, associer la direction compétente (responsable).",
+        "material": "Planchettes, stylos, matériel du parcours"
+      }
     }
   },
   {
@@ -440,6 +619,198 @@
         "achtung": "Bleibt das Kraftfeld leer: im Einzelgespräch Beobachtungen spiegeln, nicht in der Gruppe. Nicht nach Berufen der Eltern fragen; bei anhaltender Niedergeschlagenheit die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Modul-Mappe, Stärken-Post"
       }
+    },
+    "fr": {
+      "titel": "Mon profil professionnel",
+      "untertitel": "Ce que j’aime, ce que je sais faire, ce qui compte pour moi – et où cela pourrait mener.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ton profil se construit au fil de quatre séances. Tu en auras besoin pour chercher un stage, pour ton CV et pour l’entretien d’embauche."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ce qui m’attire : inscris ton code d’intérêts."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon code d’intérêts : … et …",
+            "Au parcours, ce qui m’a donné de l’énergie : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Aimer et savoir faire : classe des activités de l’école, des loisirs et du cours dans les quatre champs.",
+          "hinweis": "Plus précis, c’est mieux : pas « sport », mais « entraîner des enfants au club »."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "J’aime et je sais faire – mon champ de force",
+              "hoehe": 4,
+              "beispiel": "Expliquer des choses aux gens, réparer des vélos"
+            },
+            {
+              "art": "feld",
+              "label": "J’aime, je ne sais pas encore – mon champ d’apprentissage",
+              "hoehe": 4,
+              "beispiel": "Parler français, composer des beats"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Je sais faire, mais je n’aime pas – ça épuise",
+              "hoehe": 4,
+              "beispiel": "Ranger ma chambre, rester longtemps assis"
+            },
+            {
+              "art": "feld",
+              "label": "Ni l’un ni l’autre – pas mon domaine, du moins pas maintenant",
+              "hoehe": 4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ce que le groupe voit en moi : recopie des phrases de ton courrier des points forts."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Les autres voient chez moi : …",
+            "Cela m’a surpris : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ce qui compte pour moi dans un travail : coche les trois points les plus importants.",
+          "hinweis": "Tes valeurs de la séance 3 t’aident à choisir."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "frei": 3,
+          "items": [
+            "être en contact avec des gens",
+            "travailler de mes mains",
+            "être dehors",
+            "travailler en équipe",
+            "travailler au calme, en solo",
+            "beaucoup de variété",
+            "des horaires fixes",
+            "bien gagner sa vie",
+            "un emploi sûr",
+            "aider les autres",
+            "créer quelque chose de visible",
+            "utiliser mes langues"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Métiers qui éveillent ma curiosité : inscris-en jusqu’à trois."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Métier ou domaine professionnel",
+            "Ce qui m’attire",
+            "Ce que je veux encore découvrir"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Mécatronique automobile",
+            "Chercher les pannes, bricoler des moteurs",
+            "Quelle part de théorie à l’école ?"
+          ],
+          "breiten": [
+            1.3,
+            1.6,
+            1.7
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mon parcours possible : où en es-tu maintenant – et comment la suite pourrait-elle se dérouler ?",
+          "hinweis": "Les détours sont permis. Si tu ne connais pas encore une étape, mets un point d’interrogation et pose la question lors de l’interview."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Maintenant",
+              "text": "p. ex. 5G au lycée"
+            },
+            {
+              "titel": "Prochaine étape",
+              "text": "p. ex. stage dans un atelier"
+            },
+            {
+              "titel": "Ensuite",
+              "text": "p. ex. formation avec contrat d’apprentissage"
+            },
+            {
+              "titel": "Mon but",
+              "text": "p. ex. mécatronique automobile"
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Voilà à quel point mon souhait de métier est clair en ce moment :",
+          "von": "encore tout ouvert",
+          "bis": "tout à fait clair",
+          "stufen": 11
+        },
+        {
+          "art": "text",
+          "klein": true,
+          "text": "À 15 ans, « encore tout ouvert » est tout à fait normal. Ce qui compte, c’est la prochaine étape, pas le plan parfait."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Le profil est à toi. Tu ne le montres qu’à qui tu veux – par exemple au SePAS ou lors d’un entretien sur ton stage."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes rassemblent ce qui les attire, ce qu’ils savent faire, ce que les autres voient en eux et ce qui compte pour eux au travail – et esquissent des métiers et un parcours possible.",
+        "ablauf": [
+          "Séance 10 : exercice 1 après le test d’intérêts, exercice 2 avec un exemple de l’enseignant, exercice 3 après le courrier des points forts.",
+          "Séance 11 : exercices 4 et 5 au marché des métiers, exercice 6 après le schéma au tableau « Beaucoup de chemins ».",
+          "Séance 12 : le profil fournit des exemples pour le CV et l’entretien d’embauche.",
+          "Séance 13 : il est posé à côté du plan d’objectifs, puis, si la personne le souhaite, il va dans le carnet de skills."
+        ],
+        "hintergrund": "Le schéma à quatre champs sépare aimer et savoir faire : Holland (1997) décrit comment intérêts et environnement de travail s’accordent ; exercer un métier avec succès dépend en outre des capacités, et celles-ci s’apprennent. Le champ d’apprentissage encourage donc. Le courrier des points forts exploite la « zone aveugle » de la fenêtre de Johari : les autres voient ce qu’on néglige soi-même (Luft & Ingham, 1955). Selon Super (1980), un souhait de métier est rarement abouti à 15 ans – l’échelle de l’exercice 6 rend l’ouverture explicitement normale.",
+        "quellen": [
+          "Holland, J. L. (1997). Making Vocational Choices (3rd ed.). Odessa, FL: Psychological Assessment Resources.",
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+          "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298."
+        ],
+        "differenzierung": {
+          "leichter": "L’enseignant fournit des cartes d’activités qu’il ne reste plus qu’à classer dans les quatre champs.",
+          "schwerer": "Noter, pour chaque force du champ de force, un exemple à raconter lors d’un entretien d’embauche."
+        },
+        "impulse": [
+          "Qu’est-ce qui, dans ton champ d’apprentissage, aimerais-tu le plus essayer lors d’un stage ?",
+          "Quelle phrase du courrier des points forts correspond à un métier que tu pourrais imaginer ?"
+        ],
+        "tipps": [
+          "Le profil grandit de séance en séance – ne pas le faire terminer en une seule fois.",
+          "Proposer une copie pour l’entretien avec le SePAS, si la personne le souhaite."
+        ],
+        "achtung": "Si le champ de force reste vide : refléter des observations en entretien individuel, pas devant le groupe. Ne pas interroger sur les métiers des parents ; en cas d’abattement persistant, associer la direction compétente (responsable).",
+        "material": "Dossier du module, courrier des points forts"
+      }
     }
   },
   {
@@ -557,6 +928,90 @@
         ],
         "achtung": "Die Umwege können an eigene Brüche erinnern: Wer betroffen wirkt, wird später unter vier Augen angesprochen. Bei Hinweisen auf Gefährdung die zuständige Leitung (Responsable) informieren.",
         "material": "Festes Papier, Schere, Stoppuhr"
+      }
+    },
+    "fr": {
+      "titel": "Les pros racontent",
+      "untertitel": "Six personnes, six métiers, pas un seul chemin tout droit – pour le carrousel d’interviews",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Comment fonctionne le carrousel",
+          "punkte": [
+            "Cercle intérieur – les pros : lis ta carte pendant une minute, puis parle à la première personne.",
+            "Ce qui n’est pas sur la carte, tu peux l’inventer – comme cela pourrait se passer dans le vrai métier.",
+            "Cercle extérieur – les interviewers : pose des questions de la banque de questions et relance au moins une fois.",
+            "Après quatre minutes, le cercle extérieur avance d’une place ; après deux tours, on échange les rôles."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes. Au cercle intérieur, chacun tire une carte et devient ce pro.",
+          "symbole": [
+            "schneiden",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 150,
+          "karten": [
+            {
+              "titel": "Tiago, 23 ans · mécatronicien d’autos",
+              "text": "Je trouve les pannes que l’ordinateur de diagnostic ne voit pas. À l’école, j’étais assis au fond et je décrochais, j’ai redoublé une classe. Lors de mon premier stage, j’ai pu travailler sur un moteur au bout de deux jours – là, j’ai su. Ensuite, la formation (DAP) : école et atelier. Fatigant : les mains froides en hiver. Des stagiaires, j’attends : être à l’heure, laisser le portable dans le casier, demander avant de toucher quelque chose."
+            },
+            {
+              "titel": "Aylin, 26 ans · technicienne informatique",
+              "text": "J’installe des ordinateurs et des réseaux dans des entreprises et j’aide quand plus rien ne marche. Adolescente, je jouais des nuits entières – en fait, je voulais comprendre comment tout fonctionne. Après le lycée, j’ai fait des petits boulots pendant un an, sans plan. Puis la formation de technicienne, plus tard des cours en plus du travail. Fatigant : les gens qui me rendent responsable quand leur ordinateur déraille. Mon conseil : raconte ce que tu as trouvé toi-même."
+            },
+            {
+              "titel": "Mila, 22 ans · coiffeuse",
+              "text": "Je coupe, je colore et je conseille – chaque jour d’autres personnes, chaque jour quelque chose qui se voit. J’ai arrêté une formation dans la vente après un an, parce que je m’ennuyais. Un stage dans un salon a tout changé. Fatigant : être debout toute la journée, les clientes de mauvaise humeur. Des stagiaires, j’attends : être aimable avec les clientes, même quand tu ne fais que balayer."
+            },
+            {
+              "titel": "Samuel, 29 ans · aide-soignant en maison de retraite",
+              "text": "J’aide des personnes âgées à se lever, à se laver et à manger – et j’écoute. À 16 ans, je me disputais souvent à l’école et je n’avais pas de plan. J’ai trouvé trois stages affreux, et au quatrième, en maison de retraite, le déclic s’est fait. À 20 ans, j’ai commencé la formation. Fatigant : les horaires décalés et les adieux quand quelqu’un meurt. Mon conseil : on n’a pas à être toujours de bonne humeur, mais on doit être aimable."
+            },
+            {
+              "titel": "Diogo, 30 ans · chef de magasin",
+              "text": "Je planifie qui travaille quand, je commande la marchandise et je parle aux clients qui se plaignent. J’ai quitté l’école sans diplôme, à 17 ans je faisais des remplacements à la caisse. Mon chef a vu que je m’entendais bien avec les gens et m’a proposé une formation. Fatigant : deux personnes malades, le magasin plein. Des stagiaires, j’attends : mettre la main à la pâte et dire honnêtement quand tu ne sais pas quelque chose."
+            },
+            {
+              "titel": "Nora, 25 ans · employée de bureau dans une entreprise de construction",
+              "text": "J’écris des factures, je planifie des rendez-vous, je classe des bons de livraison et je téléphone en français, en allemand et en portugais. Au lycée, j’ai redoublé deux fois, puis je suis passée à la formation professionnelle – la meilleure décision de ma vie. Fatigant : quand tout arrive en même temps. Mon conseil : tes langues valent de l’or. Mets-les dans ton CV, même celles que tu ne parles qu’à la maison."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Des personnes fictives aux parcours sinueux rendent les métiers concrets. Dans le carrousel d’interviews, les jeunes s’exercent aux questions ouvertes et aux relances et constatent que les ruptures font partie d’un parcours.",
+        "ablauf": [
+          "Avant : imprimer sur du papier épais et découper ; deux jeux s’il y a plus de six jeunes.",
+          "Former un cercle intérieur et un cercle extérieur : à l’intérieur les pros, à l’extérieur les interviewers avec la banque de questions.",
+          "Deux tours de quatre minutes, puis échange des rôles avec de nouvelles cartes et deux autres tours.",
+          "Bilan (4 min) : qu’attendent les pros des stagiaires ? Quel détour a surpris ?"
+        ],
+        "hintergrund": "Quand on voit que quelqu’un aux conditions semblables y est arrivé, on se sent plus capable de le faire soi-même – Bandura (1977) parle d’expérience vicariante. Les cartes montrent donc des redoublements, des abandons et des débuts tardifs. De tels parcours ne sont pas une exception : dans l’étude longitudinale de Werner et Smith (1992), beaucoup de jeunes en grande difficulté ont trouvé leur place à l’âge adulte grâce à de secondes chances. Le carrousel entraîne en outre aux questions ouvertes et aux relances pour une vraie interview.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press."
+        ],
+        "differenzierung": {
+          "leichter": "Jouer un pro à deux : l’un lit, l’autre répond aux relances.",
+          "schwerer": "À la fin, les pros posent eux-mêmes une question en retour : « Et pourquoi mon métier t’intéresse-t-il ? »"
+        },
+        "impulse": [
+          "Quel détour sur les cartes t’a surpris ?",
+          "Que demanderais-tu en premier à un vrai pro ?"
+        ],
+        "tipps": [
+          "Au premier tour, l’enseignant joue lui-même un pro – on voit ainsi tout ce qu’on peut tirer d’une carte.",
+          "Plastifier les cartes ; elles servent aussi à s’exercer aux questions avant une visite d’entreprise ou un stage."
+        ],
+        "achtung": "Les détours peuvent rappeler des ruptures personnelles : aborder plus tard en tête à tête une personne qui semble touchée. En cas d’indices de danger, informer la direction compétente (responsable).",
+        "material": "Papier épais, ciseaux, chronomètre"
       }
     }
   },
@@ -746,6 +1201,161 @@
         ],
         "achtung": "Interviews nur mit bekannten oder vermittelten Personen, nie allein mit Fremden aus dem Netz. Nicht nach Arbeit in der Familie fragen. Erzählt jemand von Arbeit, die ihm schadet: Einzelgespräch, zuständige Leitung (Responsable) informieren.",
         "material": "Liste möglicher Interviewpartner im Haus"
+      }
+    },
+    "fr": {
+      "titel": "Les métiers de près",
+      "untertitel": "Comment un métier est vraiment, tu l’apprends auprès des personnes qui l’exercent – en interview et en stage.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Coche cinq questions que tu veux poser à un pro – ou ajoute les tiennes.",
+          "hinweis": "Au carrousel d’interviews, tu en essaies déjà deux."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "À quoi ressemble une journée de travail normale chez toi ?",
+            "Qu’est-ce que tu aimes le plus dans ton métier ?",
+            "Qu’est-ce qui est fatigant ou agaçant ?",
+            "Qu’est-ce qui t’a amené à ce métier ?",
+            "Y a-t-il eu des détours – et qu’en as-tu appris ?",
+            "Quelle école ou quelle formation faut-il ?",
+            "Qu’est-ce qu’il faut avoir pour être bon dans ce métier ?",
+            "Quelles langues utilises-tu au travail ?",
+            "Que ferais-tu autrement à 15 ans ?",
+            "Est-ce qu’on peut faire un stage chez vous ?"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Relancer, c’est ce qui rapporte le plus",
+          "text": "« Comment ça, exactement ? » – « Tu as un exemple ? » – « Et ensuite ? » Une relance transforme une réponse courte en histoire."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui pourrais-tu interroger ? Note deux personnes qui exercent un métier qui t’intéresse."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Personne",
+            "Métier",
+            "Comment et quand je demande"
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Entraîneur au club de foot",
+            "Électricien",
+            "après l’entraînement de jeudi"
+          ],
+          "breiten": [
+            1.4,
+            1.1,
+            2
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Comment demander – poliment et avec assurance",
+          "punkte": [
+            "« Bonjour, je m’appelle … Je m’intéresse à votre métier. Auriez-vous un quart d’heure pour quelques questions ? »",
+            "Demande à des personnes que tu connais ou que l’enseignant t’a présentées. Ne rencontre jamais en tête à tête des inconnus rencontrés sur internet.",
+            "Dis à un adulte quand et où tu fais ton interview.",
+            "Remercie à la fin. Un petit message ensuite fait bonne impression."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après l’interview : qu’en retiens-tu ?"
+        },
+        {
+          "art": "feld",
+          "label": "Voilà ce que j’ai appris",
+          "hoehe": 4
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui m’a surpris : …",
+            "Ce métier me correspond : oui / peut-être / plutôt non, parce que …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton stage : que veux-tu y découvrir ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "En stage, je veux découvrir si …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Ce qui compte en stage",
+          "punkte": [
+            "Mieux vaut dix minutes trop tôt qu’une minute trop tard.",
+            "Téléphone rangé, sauf si on te l’autorise.",
+            "Poser des questions est bienvenu – deviner non.",
+            "Malade ? Appeler l’entreprise avant le début du travail, ne pas seulement écrire.",
+            "Dire tout de suite quand on a fait une erreur. Cela montre qu’on prend ses responsabilités."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prépare-toi à deux moments difficiles en stage.",
+          "hinweis": "Les conseils des pros du carrousel t’aident."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si je remarque que je vais rater le bus,",
+              "dann": "j’appelle tout de suite l’entreprise et je dis à quelle heure j’arrive."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes préparent une interview avec une personne qui travaille, l’évaluent et se préparent avec des plans « si … alors » aux moments difficiles du stage.",
+        "ablauf": [
+          "Avant le carrousel (3 min) : à l’exercice 1, cocher deux questions à essayer au carrousel.",
+          "Après le carrousel (10 min) : choisir cinq questions, remplir l’exercice 2, puis l’exercice 5 avec les conseils des pros.",
+          "Jusqu’à la séance 13, facultatif : mener l’interview, remplir l’exercice 3, brève présentation à la séance 13.",
+          "Avant un stage : passer ensemble l’exercice 4 et l’encadré « Ce qui compte en stage »."
+        ],
+        "hintergrund": "Selon Super (1980), à la phase d’exploration, les adolescents recueillent des informations sur les métiers et sur eux-mêmes et confrontent leurs premières idées à la réalité. Les entretiens avec des professionnels apportent ce que les brochures ne donnent pas : le quotidien, les contraintes, les vrais parcours. Mener soi-même un tel entretien est une expérience de maîtrise qui renforce la confiance en soi (Bandura, 1977). Les plans « si … alors » relient d’avance une situation critique à une action et augmentent ainsi les chances de réussir au moment décisif (Gollwitzer, 1999).",
+        "quellen": [
+          "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "L’enseignant organise une interview dans l’établissement et accompagne les premières minutes.",
+          "schwerer": "Interroger deux personnes de métiers différents et comparer les réponses."
+        },
+        "impulse": [
+          "Quelle réponse t’intéresserait le plus ?",
+          "Qu’est-ce qui pourrait être difficile en stage – et que fais-tu alors ?"
+        ],
+        "tipps": [
+          "Sans contacts : chercher d’avance des adultes de l’établissement pour une interview.",
+          "L’interview peut se dérouler dans toute langue que les deux parlent."
+        ],
+        "achtung": "Interviews seulement avec des personnes connues ou présentées, jamais en tête à tête avec des inconnus du net. Pas de questions sur le travail en famille. Un travail qui nuit : entretien individuel, informer la direction compétente (responsable).",
+        "material": "Liste d’interlocuteurs possibles dans l’établissement"
       }
     }
   },
@@ -941,6 +1551,168 @@
         ],
         "achtung": "Lebensläufe enthalten persönliche Daten: nicht fotografieren, nicht im Gruppenchat teilen, nicht offen liegen lassen. Niemand muss Förderung, Diagnosen oder familiäre Umstände angeben; bei Unsicherheit im Einzelgespräch eine passende Formulierung finden.",
         "material": "Musterbewerbung einer erfundenen Person, Stifte, später Computer und Drucker"
+      }
+    },
+    "fr": {
+      "titel": "Mon premier CV",
+      "untertitel": "Un brouillon à remplir. Plus tard, tu le recopieras à l’ordinateur – clair, honnête, sur une page.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce qui fait partie d’une candidature",
+          "punkte": [
+            "La lettre de motivation : pourquoi ce métier, pourquoi cette entreprise, ce que tu apportes.",
+            "Le CV : informations sur toi, école, expériences, langues et points forts.",
+            "Des copies de tes derniers bulletins et des attestations de stage."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Informations sur toi : remplis les lignes.",
+          "hinweis": "Une adresse e-mail sérieuse comme prenom.nom@… vaut la peine – mieux vaut en créer une nouvelle."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Prénom et nom : …",
+                "Rue et numéro : …",
+                "Code postal et localité : …"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Date de naissance : …",
+                "Téléphone : …",
+                "E-mail : …"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "École : commence par l’école que tu fréquentes maintenant.",
+          "hinweis": "Seulement les écoles, les classes et les années – les raisons d’un changement ou d’un redoublement n’y ont pas leur place."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "De – à",
+            "École et lieu",
+            "Classe ou diplôme"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "2023 – aujourd’hui",
+            "Lycée à Esch-sur-Alzette",
+            "7G à 5G"
+          ],
+          "breiten": [
+            1,
+            2.2,
+            1.6
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stages, jobs et expériences : inscris-les.",
+          "hinweis": "Garder des enfants, aider au club ou un job de vacances comptent aussi."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quand",
+            "Où",
+            "Ce que j’ai fait"
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Juillet 2025, deux semaines",
+            "Boulangerie du village",
+            "Vente, caisse, remplissage des rayons"
+          ],
+          "breiten": [
+            1.2,
+            1.4,
+            2.2
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Langues : note-les toutes, même celles que tu parles à la maison.",
+          "hinweis": "Niveaux : langue maternelle – très bien – bien – notions de base."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Langue",
+            "Mon niveau"
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Portugais",
+            "Langue maternelle"
+          ],
+          "breiten": [
+            1.2,
+            2
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Points forts et intérêts : aide-toi de ton profil professionnel."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mes points forts : …",
+            "Compétences, par exemple en informatique ou un cours de premiers secours : …",
+            "Centres d’intérêt et loisirs : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu indiques.",
+          "text": "La santé, les diagnostics, le soutien scolaire ou ta situation familiale n’ont pas leur place dans un CV. Si tu hésites, demande à l’enseignant ou au SePAS."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent les éléments d’une candidature et rédigent un premier brouillon de CV qui rend visibles leurs expériences et leurs langues et protège la vie privée.",
+        "ablauf": [
+          "Entrée en matière (3 min) : montrer une candidature type d’une personne fictive et lire l’encadré.",
+          "Jeu « Dedans ou dehors ? » (7 min), indications à la séance 12.",
+          "Pendant la séance (5 min) : informations personnelles, école et langues ; le reste avec un soutien au quotidien.",
+          "Plus tard : taper le brouillon à l’ordinateur, le faire relire par un adulte, l’enregistrer en PDF."
+        ],
+        "hintergrund": "Un premier CV est pour des jeunes plus qu’un formulaire : en écrivant leurs expériences – du job de vacances au club –, ils voient noir sur blanc ce qu’ils savent déjà faire. Ces expériences de maîtrise sont la source la plus forte du sentiment d’efficacité personnelle (Bandura, 1977). Au Luxembourg, les langues jouent un grand rôle dans les candidatures ; les jeunes oublient souvent leurs langues familiales, alors qu’elles y ont explicitement leur place. Les ruptures dans le parcours scolaire ne sont pas justifiées dans le CV ; une réponse courte et honnête pour l’entretien se prépare avec la fiche « L’entretien d’embauche ».",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "L’enseignant écrit sous la dictée ; la personne ne complète elle-même que les langues et les points forts.",
+          "schwerer": "Ébaucher en plus les trois premières phrases de la lettre de motivation : pourquoi ce métier, pourquoi cette entreprise, ce que j’apporte."
+        },
+        "impulse": [
+          "Quelle expérience as-tu oubliée qui devrait pourtant figurer dans le CV ?",
+          "Laquelle de tes langues une entreprise aimerait-elle entendre ?"
+        ],
+        "tipps": [
+          "Ne pas ramasser le brouillon ; une copie ne reste dans le dossier qu’avec l’accord de la personne.",
+          "Pour le taper, un modèle sobre sans graphiques aide – il s’ouvre partout."
+        ],
+        "achtung": "Les CV contiennent des données personnelles : ne pas les photographier, ni les partager en groupe, ni les laisser traîner. Soutien scolaire, diagnostics, situation familiale : rien à indiquer ; en cas de doute, chercher une formulation en entretien individuel.",
+        "material": "Candidature type d’une personne fictive, stylos, plus tard ordinateur et imprimante"
       }
     }
   },
@@ -1153,6 +1925,181 @@
         "achtung": "Stopp-Recht; niemand muss sich bewerben, die Chef-Rolle bleibt freundlich. Diagnosen, Förderung und Familiäres muss niemand offenlegen. Bei starker Panik aussetzen lassen und später nachfragen.",
         "material": "Tisch, zwei Stühle, Wasser, Rollenkarten"
       }
+    },
+    "fr": {
+      "titel": "L’entretien d’embauche",
+      "untertitel": "Préparé, tu parais plus calme – même quand le cœur bat.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Présente-toi en trois phrases. Ton profil professionnel t’aide."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je m’appelle … et je suis en …",
+            "Je sais bien …, par exemple …",
+            "Je voudrais devenir …, parce que …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Un exemple plutôt qu’une affirmation",
+          "text": "« Je suis fiable », n’importe qui peut le dire. « Depuis deux ans, j’entraîne chaque samedi les petits au club » le montre."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis trois questions et prépare des réponses avec un exemple."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Questions typiques",
+          "items": [
+            "Parlez-nous de vous.",
+            "Pourquoi ce métier ?",
+            "Pourquoi chez nous ?",
+            "Quels sont vos points forts ?",
+            "Qu’est-ce qui vous est difficile ?",
+            "Quelles langues parlez-vous ?",
+            "Que faites-vous pendant votre temps libre ?",
+            "Comment venez-vous ici le matin ?",
+            "Avez-vous des questions pour nous ?"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Question",
+            "Ma réponse – avec un exemple"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Quels sont vos points forts ?",
+            "Je reste calme quand ça devient stressant. À la fête de l’école, j’ai géré la caisse sans aide."
+          ],
+          "breiten": [
+            1.2,
+            3
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La question du détour : « Pourquoi avez-vous redoublé votre classe ? » Construis ta réponse en trois étapes.",
+          "hinweis": "Ce qui est privé reste privé : « Il y avait à l’époque des raisons personnelles. Aujourd’hui … » suffit tout à fait."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Court et honnête",
+              "text": "« J’ai redoublé la 5e. »"
+            },
+            {
+              "titel": "Ce que j’ai appris",
+              "text": "« Avec un plan précis, j’arrive à beaucoup de choses. »"
+            },
+            {
+              "titel": "Ce que je veux maintenant",
+              "text": "« C’est pourquoi une formation avec beaucoup de pratique me convient. »"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan contre le trac : quel skill t’aide dans la salle d’attente, lequel pendant l’entretien ?"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Skills pour la salle d’attente",
+          "punkte": [
+            "Inspirer deux fois par le nez, puis expirer longuement par la bouche – trois à cinq fois.",
+            "Pieds bien posés au sol, laisser descendre les épaules.",
+            "T’encourager en te parlant par ton prénom : « Nora, tu as répété ça. »",
+            "Réinterpréter l’excitation : « Mon corps me prépare. »",
+            "Permis pendant l’entretien : « Puis-je réfléchir un instant ? »"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si, dans la salle d’attente, mon cœur s’emballe,",
+              "dann": "j’expire trois fois longuement et je me dis : Nora, tu as répété ça."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Retour sur le jeu de rôle : la personne qui observe coche et écrit deux phrases."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "ça réussit déjà",
+            "encore à travailler"
+          ],
+          "items": [
+            "Frappe à la porte, salue, se présente par son nom",
+            "Regarde la personne – le front suffit",
+            "Garde une position calme, les mains détendues",
+            "Parle assez fort et distinctement",
+            "Répond avec un exemple",
+            "Pose des questions quand quelque chose n’est pas clair",
+            "Pose une question à la fin",
+            "Remercie et dit au revoir"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "C’était fort : …",
+            "Mon conseil pour la prochaine fois : …",
+            "Personne qui postule – tension devant la porte : … sur 100 – après : … sur 100"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Tes réponses sont à toi. Dans le jeu de rôle, tu ne dis que ce que tu dirais aussi à une vraie entreprise."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes préparent leur présentation, des réponses avec exemple, la réponse sur le détour et un plan contre le trac, et s’exercent à l’entretien en jeu de rôle avec retour.",
+        "ablauf": [
+          "Exercices 1 et 2 (10 min) avec le profil professionnel ; à deux, relancer : as-tu un exemple ?",
+          "Exercice 3 (5 min) : l’enseignant joue une réponse faible et une réponse forte sur le détour.",
+          "S’exercer aux skills de la salle d’attente, puis jeu de rôle à trois ; la personne qui observe remplit l’exercice 5 sur la feuille de la personne qui postule.",
+          "Pour finir : comparer la tension avant et après, exercice 4 comme plan « si … alors »."
+        ],
+        "hintergrund": "S’exercer plusieurs fois dans un cadre protégé rend plus sûr, et le trac n’a pas besoin de disparaître pour cela : dans une étude, les personnes qui avaient appris à interpréter l’excitation physique comme une disposition à agir ont mieux réussi un test de mathématiques (Jamieson et al., 2010). Des exercices de respiration avec une expiration nettement allongée ont réduit l’excitation et amélioré l’humeur (Balban et al., 2023). S’adresser à soi-même par son prénom crée de la distance par rapport à l’agitation (Kross & Ayduk, 2017).",
+        "quellen": [
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212.",
+          "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Ne préparer que deux questions ; au jeu de rôle, l’antisèche peut rester sur la table.",
+          "schwerer": "Un deuxième tour avec une cheffe plus exigeante qui interroge sur une faiblesse."
+        },
+        "impulse": [
+          "Où était ta tension devant la porte – et où après deux minutes d’entretien ?",
+          "Quelle réponse a le mieux fonctionné au jeu de rôle ?"
+        ],
+        "tipps": [
+          "Au premier tour, l’enseignant joue le chef ou la cheffe, pour que le rôle reste aimable mais ferme.",
+          "Qui ne serre pas la main s’exerce à une alternative aimable : un signe de tête, la main sur le cœur, un « Bonjour » clair."
+        ],
+        "achtung": "Droit de dire stop ; personne n’est obligé de postuler, le rôle du chef reste aimable. Personne n’a à révéler diagnostics, soutien scolaire ni situation familiale. En cas de forte panique, laisser la personne se retirer et reprendre contact plus tard.",
+        "material": "Table, deux chaises, eau, cartes de rôle"
+      }
     }
   },
   {
@@ -1341,6 +2288,160 @@
         ],
         "achtung": "Ziele wie „weniger Streit zu Hause“ oder „weniger kiffen“ nicht in der Gruppe vertiefen; Einzelgespräch, bei Bedarf die Responsable einbeziehen.",
         "material": "Berufsprofil, Skills-Buch"
+      }
+    },
+    "fr": {
+      "titel": "Un objectif pour les mois à venir",
+      "untertitel": "Un objectif tient quand c’est le tien et que tu as un plan pour ton obstacle.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "L’objectif de Yusuf",
+          "bild": "figur:ben:ruhig",
+          "text": "Yusuf (15 ans) veut trouver d’ici les vacances de Pâques une place de stage dans un atelier. Le meilleur dans tout ça : montrer ce qu’il sait faire. Son obstacle intérieur : avant d’appeler des inconnus, il remet tout à plus tard. Son plan : « Quand je descends du bus le lundi, j’appelle une entreprise avant d’aller à l’entraînement. »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton WOOP : prends une minute par étape – d’abord imagine, puis écris."
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "W – Mon souhait pour le …",
+              "text": "Un défi, mais réalisable – et c’est le tien."
+            },
+            {
+              "titel": "O – Le meilleur résultat",
+              "text": "Comment te sens-tu quand tu y es arrivé ?"
+            },
+            {
+              "titel": "O – Mon obstacle intérieur",
+              "text": "Qu’est-ce qui, en toi, pourrait te freiner : une habitude, une pensée, une émotion ?"
+            },
+            {
+              "titel": "P – Mon plan",
+              "text": "Si … (ton obstacle arrive), alors … (ce que tu fais tout de suite)."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpe ton objectif en trois étapes. En bas, il y a le premier petit pas.",
+          "hinweis": "Chez Yusuf : finir le CV – choisir trois entreprises – en appeler une chaque lundi."
+        },
+        {
+          "art": "leiter",
+          "stufen": 3,
+          "unten": "Départ : cette semaine",
+          "oben": "Mon objectif"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plan B : que fais-tu si quelque chose tourne mal ?",
+          "hinweis": "Un revers n’est pas un échec. Ce qui compte, c’est que tu continues le lendemain."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je reçois un refus,",
+              "dann": "je m’énerve pendant une soirée – et le lendemain j’appelle l’entreprise suivante."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui t’aide – et quand vérifies-tu où tu en es ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Point d’étape",
+            "Qui regarde avec moi ?",
+            "Où j’en suis (0–10)"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "dans quatre semaines",
+            "mon éducatrice",
+            "3 – le CV est prêt"
+          ],
+          "breiten": [
+            1.2,
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle importance a ton objectif pour toi – et quelle confiance as-tu en toi ?"
+        },
+        {
+          "art": "skala",
+          "frage": "Voilà à quel point mon objectif compte pour moi :",
+          "von": "pas du tout",
+          "bis": "très important",
+          "stufen": 11
+        },
+        {
+          "art": "skala",
+          "frage": "Voilà quelle confiance j’ai en moi :",
+          "von": "pas du tout",
+          "bis": "une grande confiance",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je n’ai pas choisi un chiffre plus bas, parce que …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand ça coince",
+          "punkte": [
+            "Un jour raté ? Continue demain – cela compte plus qu’un départ parfait.",
+            "Adapter est permis : plus petit, plus précis, à une autre heure.",
+            "Parles-en avec la personne qui connaît ton objectif."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Avec WOOP, les jeunes font d’un souhait un objectif pour les mois à venir, le découpent en étapes et planifient revers, soutien et points d’étape.",
+        "ablauf": [
+          "Histoire de Yusuf (3 min) : pourquoi son obstacle est-il en lui et non chez l’entreprise ?",
+          "Exercices 1 et 2 (14 min) : une minute par étape, les yeux fermés pour s’imaginer, puis écrire ; ne pas faire lire à voix haute.",
+          "Après le jeu de balle sur les obstacles (7 min) : exercices 3 à 5 ; aux échelles, demander : pourquoi pas un chiffre plus bas ?",
+          "Respecter les points d’étape lors du check-in ; dans le module final, le plan revient sur la table."
+        ],
+        "hintergrund": "Se contenter d’imaginer un objectif peut réduire l’effort ; le contraste mental est plus efficace : souhait, meilleur résultat, puis obstacle intérieur (Oettingen, 2014). WOOP y ajoute un plan « si … alors » qui relie une situation à une action (Gollwitzer, 1999) ; chez des adolescents, cette combinaison a renforcé l’autodiscipline dans les apprentissages (Duckworth et al., 2011). Des étapes proches renforcent la confiance plus qu’un objectif lointain seul (Bandura & Schunk, 1981), et un jour manqué ne nuit guère (Lally et al., 2010). La question « Pourquoi pas un chiffre plus bas ? » (entretien motivationnel) oriente vers les raisons qui plaident déjà en faveur de l’objectif (Miller & Rollnick, 2013).",
+        "quellen": [
+          "Oettingen, G. (2014). Rethinking Positive Thinking. New York: Current.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Duckworth, A. L., Grant, H., Loew, B., Oettingen, G. & Gollwitzer, P. M. (2011). Self-regulation strategies improve self-discipline in adolescents: Benefits of mental contrasting and implementation intentions. Educational Psychology, 31(1), 17–26.",
+          "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.",
+          "Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6), 998–1009.",
+          "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Remplir seulement souhait, obstacle et plan ; l’enseignant écrit avec la personne si elle le souhaite.",
+          "schwerer": "Formuler pour deux obstacles un plan « si … alors » chacun et les comparer après quatre semaines."
+        },
+        "impulse": [
+          "À quoi remarques-tu en premier que ton obstacle arrive ?",
+          "Qui devrait connaître ton objectif – et qui plutôt pas ?"
+        ],
+        "tipps": [
+          "Pour des objectifs courts, la fiche de la Toolbox « Atteindre ses objectifs avec WOOP » convient.",
+          "Ne pas ramasser les objectifs ; noter, avec accord, quand reprendre contact."
+        ],
+        "achtung": "Objectifs sensibles (disputes, cannabis) : pas en groupe ; entretien individuel, au besoin direction compétente (responsable).",
+        "material": "Profil professionnel, carnet de skills"
       }
     }
   }

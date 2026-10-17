@@ -189,6 +189,163 @@
         "achtung": "Keine eigenen Beträge erfragen. Hinweise auf Schulden, Geldforderungen unter Druck oder Glücksspiel: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt für jede Person, Taschenrechner, drei Umschläge"
       }
+    },
+    "fr": {
+      "titel": "Mon budget du mois",
+      "untertitel": "Où va mon argent – et qui décide : moi ou la pub ?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "En ai-je besoin – ou en ai-je envie ? Coche. Certaines choses sont les deux à la fois."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "besoin",
+            "les deux",
+            "envie"
+          ],
+          "items": [
+            "Veste d’hiver",
+            "Baskets de marque",
+            "Crédit pour le téléphone",
+            "En-cas pour la récré",
+            "Skin pour un jeu vidéo",
+            "Cadeau pour ma sœur",
+            "Abonnement de streaming",
+            "Cahiers pour l’école"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Besoin ou envie ?",
+          "text": "Un besoin, c’est ce qui te manque quand tu ne l’as pas : manger, des vêtements chauds, être joignable, le matériel scolaire. Une envie rend la vie plus agréable, mais on peut s’en passer. Souvent, les deux se mêlent : une veste, il t’en faut une ; la veste de marque, tu en as envie."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Inês planifie son mois",
+          "bild": "figur:jana:verwirrt",
+          "text": "Inês a 15 ans. Chaque mois, elle reçoit 40 euros d’argent de poche et gagne environ 20 euros de plus en faisant du baby-sitting. Son crédit de téléphone lui coûte 10 euros par mois, sa part de l’abonnement de streaming de la famille, 5 euros. Elle met de l’argent de côté pour un casque audio à 60 euros. Le mois dernier, son argent avait disparu au bout de deux semaines – et elle ne savait pas trop où il était passé. (Tous les montants sont des exemples.)"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie le mois d’Inês avec les trois pots : d’abord les frais fixes, puis l’épargne, puis le quotidien.",
+          "hinweis": "Inês veut son casque dans quatre mois."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Pot 1 – frais fixes : … euros pour …",
+            "Pot 2 – épargne : … euros par mois, pour que …",
+            "Pot 3 – quotidien : … euros par mois, donc … euros par semaine"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Les trois pots",
+          "punkte": [
+            "Frais fixes : ce qui tombe à coup sûr chaque mois, on le prévoit en premier.",
+            "Épargne : on la met de côté dès le début du mois – pas à la fin, avec ce qui reste.",
+            "Quotidien : le reste se répartit sur les semaines. Quand on connaît son budget de la semaine, on remarque vite que ça devient juste."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Le prix par mois est trompeur",
+          "text": "Pour les abonnements, les contrats de téléphone et les achats à crédit, c’est le prix total qui compte : le prix mensuel multiplié par le nombre de mois, plus tout ce qu’on paie une seule fois. Un abonnement à 9,99 euros par mois coûte presque 120 euros par an."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton propre plan – rien que pour toi. Tu peux aussi planifier pour plus tard, par exemple pour ton premier salaire."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Revenus",
+            "Frais fixes",
+            "Épargne",
+            "Quotidien"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Argent de poche : 30",
+            "Téléphone : 10",
+            "Vélo : 5",
+            "15, soit 3,75 par semaine"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Ton propre plan reste pour toi. En groupe, on ne parle que d’Inês."
+        },
+        {
+          "art": "aufgabe",
+          "text": "La pause avant l’achat : prévois ce que tu feras la prochaine fois que tu auras envie d’acheter sur un coup de tête."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si j’ai envie de taper sur « Acheter » alors que ce n’est pas dans mon plan,",
+              "dann": "je laisse l’article dans le panier pendant une nuit et je me demande demain : en ai-je besoin – ou en ai-je envie ?"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand l’argent ne suffit pas",
+          "punkte": [
+            "Parles-en tôt : avec tes parents, une personne de confiance ou le SePAS.",
+            "Ne fais pas de nouvelles dettes pour payer les anciennes.",
+            "Si on te met la pression pour que tu envoies de l’argent ou des cartes prépayées : ne paie pas et préviens tout de suite un adulte de confiance."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Aide en cas de dettes au Luxembourg (notée par l’adulte qui anime) : …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent besoins et envies, planifient le budget mensuel d’un personnage fictif selon le principe des trois pots, l’appliquent à leur propre situation et fixent un plan « si … alors » contre les achats impulsifs.",
+        "ablauf": [
+          "Tâche 1 (5 min), après l’exercice sur la ligne au sol : cocher individuellement, puis comparer brièvement.",
+          "Inês (10 min) : lire l’histoire, montrer les trois pots avec des enveloppes, tâche 2 à deux. Solution : 15 euros de frais fixes, 15 euros d’épargne, 30 euros pour le quotidien, soit 7,50 euros par semaine.",
+          "Tâche 3 (5 min) : chacun pour soi et en privé ; ne pas ramasser les feuilles, ne pas faire lire à voix haute.",
+          "Tâche 4 dans la partie « skill » (5 min) : la pause avant l’achat sous forme de plan « si … alors » ; ceux qui le souhaitent le lisent à voix haute."
+        ],
+        "hintergrund": "L’éducation financière – établir un budget, repérer le coût total, épargner – va de pair avec moins de surendettement et davantage de réserves (Lusardi & Mitchell, 2014). Le principe des trois pots est volontairement simple : qui prévoit d’abord les frais fixes et l’épargne n’a pas à compter sur ce qui restera en fin de mois. Les adolescents réagissent particulièrement fort aux récompenses immédiates (Steinberg, 2014). La pause avant l’achat y oppose une stratégie concrète de report (Mischel, 2014), formulée comme un plan « si … alors » pour qu’elle soit disponible au moment voulu (Gollwitzer, 1999).",
+        "quellen": [
+          "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Mischel, W. (2014). The Marshmallow Test. New York: Little, Brown.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Les montants sont écrits au tableau ; on ne calcule que le pot du quotidien et le budget de la semaine.",
+          "schwerer": "Au troisième mois, l’écran du téléphone d’Inês se casse : 90 euros. Qu’est-ce qui change ?"
+        },
+        "impulse": [
+          "Pourquoi l’argent a-t-il souvent disparu au bout de deux semaines, alors qu’on n’a rien acheté de gros ?",
+          "Quels sentiments vous donnent envie d’acheter ?"
+        ],
+        "tipps": [
+          "Chercher d’avance un service luxembourgeois de conseil en endettement ; il ira dans l’encadré d’aide.",
+          "Adapter les montants d’exemple au groupe ; le calcul reste le même."
+        ],
+        "achtung": "Ne pas demander de montants personnels. En cas d’indices de dettes, de demandes d’argent sous pression ou de jeux d’argent : entretien individuel, informer la direction compétente (responsable).",
+        "material": "Une feuille par personne, calculatrice, trois enveloppes"
+      }
     }
   },
   {
@@ -377,6 +534,161 @@
         ],
         "achtung": "Nur mit dem Beispielbudget spielen. Hinweise auf echte Schulden oder Geldforderungen: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
         "material": "Karten auf festem Papier, Schere, Spielgeld, Taschenrechner"
+      }
+    },
+    "fr": {
+      "titel": "Parcours de l’argent : un mois en accéléré",
+      "untertitel": "Cartes événement et livre de caisse – quatre semaines, 120 euros, vos décisions",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Règles du jeu",
+          "punkte": [
+            "Vous jouez à deux et vous avez 120 euros pour tout le mois. Il n’y en aura pas plus, sauf si une carte le dit.",
+            "Toutes les équipes avancent ensemble de semaine en semaine. À chaque station, vous lisez les cartes de la semaine, vous décidez, vous payez à l’adulte qui anime et vous notez tout dans le livre de caisse.",
+            "Quand il faut calculer, calculez avant de payer.",
+            "Si vous passez dans le rouge, il vous faut une solution : y renoncer, vendre quelque chose, convenir d’un paiement échelonné ou emprunter – avec toutes les conséquences.",
+            "Tous les montants sont des exemples."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cartes événement : découpez-les et posez-les par semaine aux quatre stations.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "karten": [
+            {
+              "titel": "Semaine 1 · L’offre de téléphone",
+              "text": "A : nouveau téléphone à 1 euro, plus 30 euros par mois, contrat de 24 mois. B : téléphone d’occasion à 180 euros, plus une carte prépayée à 10 euros par mois. Combien coûte chaque option en deux ans ? Ou vous gardez votre ancien téléphone."
+            },
+            {
+              "titel": "Semaine 1 · Anniversaire",
+              "text": "Ta meilleure amie fête ses 16 ans. Les autres font une cagnotte : 10 euros par personne. Ou tu fabriques toi-même un cadeau – ça prend du temps, mais presque pas d’argent."
+            },
+            {
+              "titel": "Semaine 2 · Aujourd’hui seulement",
+              "text": "Les baskets que tu regardes depuis des semaines : aujourd’hui 60 euros au lieu de 100. L’offre se termine à minuit. Acheter, ou faire la pause avant l’achat ?"
+            },
+            {
+              "titel": "Semaine 2 · L’abonnement d’essai",
+              "text": "Il y a un mois, tu as testé une appli gratuitement. Aujourd’hui, 12 euros ont été prélevés parce que tu n’as pas résilié. Payer et résilier – ou laisser courir ?"
+            },
+            {
+              "titel": "Semaine 3 · La console",
+              "text": "La console coûte 480 euros – ou 12 mensualités de 45 euros, la première tout de suite. Combien payes-tu en tout ? Si vous achetez, la mensualité figure dès maintenant chaque mois dans le livre de caisse."
+            },
+            {
+              "titel": "Semaine 3 · La boutique miracle",
+              "text": "Une boutique sur les réseaux sociaux vend des vestes de marque à 25 euros au lieu de 200. Paiement uniquement par virement à l’avance, pas de mentions légales, aucun avis sur d’autres sites. Acheter ?"
+            },
+            {
+              "titel": "Semaine 4 · Écran cassé",
+              "text": "Ton téléphone tombe, l’écran est fissuré. La réparation coûte 90 euros. Ou tu vis avec la fissure jusqu’à ce qu’il y ait de nouveau de l’argent."
+            },
+            {
+              "titel": "Semaine 4 · Tu peux me dépanner ?",
+              "text": "Un ami te demande si tu peux lui prêter 20 euros. Il te les rendra en début de mois prochain, dit-il. Que fais-tu – et comment gardez-vous une trace de ce prêt ?"
+            },
+            {
+              "titel": "Semaine 4 · Coup de chance",
+              "text": "Ta mamie te glisse 20 euros. Les dépenser tout de suite, les mettre dans le pot d’épargne ou boucher un trou dans le budget ?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tenez votre livre de caisse. Chaque paiement et chaque rentrée d’argent a sa propre ligne."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Semaine",
+            "Carte",
+            "Notre décision",
+            "Plus / moins",
+            "Solde"
+          ],
+          "breiten": [
+            0.7,
+            1.4,
+            2.4,
+            1,
+            0.9
+          ],
+          "zeilen": 9,
+          "beispiel": [
+            "Début",
+            "Argent du mois",
+            "–",
+            "+ 120",
+            "120"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après le jeu : refaites les calculs et répondez aux questions."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Le téléphone A coûte … euros en deux ans, le téléphone B … euros.",
+            "La console à crédit coûte … euros, soit … euros de plus qu’au comptant.",
+            "Une offre qui avait l’air bon marché et qui coûtait cher : …",
+            "Le plus difficile à décider a été …, parce que …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Avant d’acheter ou de signer",
+          "punkte": [
+            "Calculer le prix total : prix mensuel multiplié par la durée, plus tout ce qu’on paie une seule fois.",
+            "Vérifier la durée et la résiliation : combien de temps dure l’engagement, et comment en sortir ?",
+            "Avant 18 ans, il faut en général la signature des parents pour un contrat.",
+            "Achat en ligne chez un commerçant de l’UE : en général 14 jours pour se rétracter. Ce n’est pas le cas pour un achat à un particulier.",
+            "Boutique inconnue ? Cherche d’abord sur d’autres sites qui se cache derrière – et n’accepte jamais un paiement à l’avance comme seule option."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes vivent en simulation comment offres, contrats, paiements échelonnés et abonnements pèsent sur un budget, calculent des prix totaux et repèrent une fausse boutique en ligne.",
+        "ablauf": [
+          "Préparation : imprimer les cartes sur papier épais, les poser par semaine aux quatre stations ; 120 euros de jeu par équipe.",
+          "Départ (3 min) : lire les règles, équipes de deux, distribuer l’argent.",
+          "Stations (16 min) : 4 min par semaine ; l’adulte tient la caisse et demande seulement : « Besoin ou envie ? »",
+          "Bilan (6 min) : cartes de calcul au tableau, puis tâche 3.",
+          "Solutions : téléphone A 721 euros, B 420 euros, ancien téléphone avec carte prépayée 240 euros. Console 540 euros, soit 60 de plus qu’au comptant. La boutique miracle est fausse : les 25 euros sont perdus."
+        ],
+        "hintergrund": "Contrats, paiements échelonnés et abonnements repoussent les coûts : on voit le petit prix mensuel, pas le prix total. Qui comprend comment les montants s’additionnent s’endette moins souvent (Lusardi & Mitchell, 2014). Les adolescents sont sensibles aux récompenses immédiates et à leurs pairs (Steinberg, 2014) : « aujourd’hui seulement » et la pression du groupe sont des leviers de vente. Achat en ligne chez un commerçant de l’UE : en général 14 jours pour se rétracter, pas chez un particulier (directive 2011/83/UE). Boutique inconnue : vérifier auprès de sources indépendantes (Wineburg & McGrew, 2019) ; escroquerie en ligne : BEE SECURE Helpline (8002 1234).",
+        "quellen": [
+          "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Richtlinie 2011/83/EU des Europäischen Parlaments und des Rates vom 25. Oktober 2011 über die Rechte der Verbraucher. Amtsblatt der EU, L 304, 64–88.",
+          "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Semaines 1, 2 et 4 seulement ; l’adulte résout les cartes de calcul avec l’équipe.",
+          "schwerer": "Fixer d’abord un objectif d’épargne et dire à la fin pourquoi il a été tenu ou non."
+        },
+        "impulse": [
+          "Où le temps vous a-t-il poussés à acheter ?",
+          "Comment éviter le rouge ?"
+        ],
+        "tipps": [
+          "De l’argent de jeu suffit.",
+          "Dévoiler la fausse boutique au bilan."
+        ],
+        "achtung": "Jouer seulement avec le budget d’exemple. Indices de dettes réelles ou de demandes d’argent : entretien individuel, informer la direction compétente (responsable).",
+        "material": "Cartes, ciseaux, argent de jeu, calculatrice"
       }
     }
   },
@@ -571,6 +883,165 @@
         ],
         "achtung": "Keine echten Adressen, Geburtsdaten oder Matricules vor der Gruppe. Hinweise, dass jemand nötige Arztbesuche nicht bekommt: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt, Handys mit Fahrplan-App oder Ausdruck"
+      }
+    },
+    "fr": {
+      "titel": "Gérer mon quotidien",
+      "untertitel": "Rendez-vous, trajets, formulaires et visite chez le médecin – tu t’en occupes toi-même",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Le rendez-vous de Jang",
+          "bild": "figur:ben:nervoes",
+          "text": "Jang a rendez-vous jeudi à 14 h 30 chez le dentiste dans la commune voisine – pour la première fois, il y va seul. Le bus passe à 13 h 15, 13 h 45 et 14 h 15 et met 25 minutes. De l’arrêt de la commune voisine au cabinet, il y a 10 minutes à pied ; de chez lui à son arrêt, 5 minutes. Jang veut arriver 10 minutes avant le rendez-vous."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie à rebours : quel bus Jang prend-il, et à quelle heure doit-il partir au plus tard ?",
+          "hinweis": "Commence par le rendez-vous et remonte étape par étape."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Heure",
+            "Que se passe-t-il ?"
+          ],
+          "breiten": [
+            1,
+            4.4
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "14 h 30",
+            "Le rendez-vous commence."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Bien gérer ses rendez-vous",
+          "punkte": [
+            "Note-les tout de suite, avec l’adresse – l’appli de cartes te montre alors le chemin.",
+            "Prévois deux rappels : la veille au soir et une heure avant de partir.",
+            "Note un plan B : le bus suivant et la personne à appeler si tu es en retard.",
+            "Bus, tram et train en 2e classe sont gratuits au Luxembourg. Une appli d’horaires, par exemple mobiliteit.lu, indique les liaisons.",
+            "À emporter chez le médecin : ta carte de sécurité sociale, ta pièce d’identité, la liste de tes médicaments et de tes allergies."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Aide-mémoire pour le médecin : que dit Jang au cabinet ? Prends un exemple, comme un mal de gorge depuis trois jours."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Qu’est-ce qui ne va pas, et où ? …",
+            "Depuis quand, et quelle intensité de 0 à 10 ? …",
+            "Qu’est-ce que j’ai déjà essayé ? …",
+            "Ma question pour le ou la médecin : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mots de formulaire : au Luxembourg, beaucoup de formulaires sont en français, avec des mots qu’on n’utilise pas tous les jours. Relie.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Sur le formulaire",
+            "Ce qu’il faut y mettre"
+          ],
+          "links": [
+            "nom",
+            "prénom",
+            "date de naissance",
+            "matricule",
+            "représentant légal",
+            "signature"
+          ],
+          "rechts": [
+            "Ton nom écrit à la main, en bas",
+            "Ton nom de famille, par exemple Da Silva",
+            "Un parent ou un tuteur légal",
+            "Ton prénom, par exemple Jang",
+            "Le jour, le mois et l’année de ta naissance",
+            "Ton numéro de sécurité sociale (13 chiffres)"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Remplis l’inscription à un cours d’été. Tu peux utiliser des données inventées.",
+          "hinweis": "En lettres majuscules, au stylo à bille, date au format JJ/MM/AAAA : jour, mois, année."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Nom et prénom (en majuscules)",
+            "Date de naissance (JJ/MM/AAAA)",
+            "Adresse, code postal, localité",
+            "Téléphone et courriel",
+            "Signature du représentant légal"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Pièges des formulaires",
+          "punkte": [
+            "D’abord tout lire, ensuite écrire.",
+            "Avant 18 ans, un parent ou un tuteur légal signe souvent aussi.",
+            "Ne pas deviner, mais demander – et prendre une photo avant de rendre le formulaire."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle démarche as-tu à faire ces deux prochaines semaines ? Fais-toi un plan."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si lundi à 16 h je suis à la maison,",
+              "dann": "j’appelle d’abord le cabinet pour prendre rendez-vous – avant même d’ouvrir mes applis."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes planifient un rendez-vous à rebours, comprennent les mots des formulaires en français, remplissent un formulaire et préparent une consultation médicale avec un aide-mémoire.",
+        "ablauf": [
+          "Jang (8 min) à deux. Solution : au cabinet à 14 h 20, donc descendre du bus à 14 h 10 au plus tard ; le bus de 13 h 45 arrive juste à temps, celui de 13 h 15 laisse de la marge. Départ de la maison à 13 h 40 au plus tard.",
+          "Vraie liaison (5 min) : la chercher dans l’appli, inscrire le rendez-vous avec deux rappels.",
+          "Médecin (5 min) : tâche 2 uniquement avec un exemple anodin.",
+          "Formulaires (10 min) : tâches 3 et 4. Solution 3 : nom de famille, prénom, date de naissance, numéro de sécurité sociale, parent ou tuteur légal, signature.",
+          "Tâche 5 dans la partie « skill » de l’unité."
+        ],
+        "hintergrund": "Rendez-vous, trajets et formulaires font appel aux fonctions exécutives : anticiper, garder en tête les étapes intermédiaires, changer de tâche à temps (Diamond, 2013). Des appuis extérieurs comme un agenda avec rappel, un plan à rebours et un aide-mémoire déchargent la tête de ce travail et compensent des faiblesses de l’autorégulation (Barkley, 2012). Au Luxembourg s’ajoute la langue : beaucoup de formulaires sont en français, et les jeunes qui en connaissent les mots clés osent plus facilement les remplir eux-mêmes. Le plan « si … alors » final rend la mise en œuvre plus probable (Gollwitzer, 1999).",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Barkley, R. A. (2012). Executive Functions: What They Are, How They Work, and Why They Evolved. New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Écrire les mots de formulaire avec leur explication au tableau ; dans le formulaire, seulement le nom, la date et la signature.",
+          "schwerer": "Remplir un vrai formulaire d’un club ou d’une association, en français, avec des données inventées."
+        },
+        "impulse": [
+          "Quelle démarche voulez-vous faire vous-mêmes la prochaine fois ?",
+          "Quel est votre plan B si le bus ne vient pas ?"
+        ],
+        "tipps": [
+          "Ceux qui parlent français à la maison peuvent aider à traduire.",
+          "Recopier l’encadré « Bien gérer ses rendez-vous » dans le carnet de skills."
+        ],
+        "achtung": "Pas d’adresses, de dates de naissance ni de matricules réels devant le groupe. Indices qu’un jeune n’obtient pas les consultations médicales nécessaires : entretien individuel, informer la direction compétente (responsable).",
+        "material": "Feuille, téléphones avec appli d’horaires ou version imprimée"
       }
     }
   },
@@ -810,6 +1281,209 @@
         "achtung": "Niemand wird zum Anruf vor der Gruppe gedrängt; zuschauen und die Gegenseite spielen zählen als Mitmachen. Bleibt die Angst sehr hoch: Einzelgespräch, mit der zuständigen Leitung (Responsable) klären.",
         "material": "Karten auf festem Papier, Schere, Stühle"
       }
+    },
+    "fr": {
+      "titel": "S’entraîner à téléphoner",
+      "untertitel": "Pour les appels qu’on aimerait bien éviter",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Ton aide-mémoire : remplis-le avant l’appel. Ainsi, la première phrase est déjà prête."
+        },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Saluer et dire son nom",
+              "text": "Bonjour, je m’appelle … (prénom et nom)."
+            },
+            {
+              "titel": "Le motif en une phrase",
+              "text": "Je vous appelle parce que …"
+            },
+            {
+              "titel": "Écouter et noter",
+              "text": "Date, heure, lieu, ce que je dois apporter."
+            },
+            {
+              "titel": "Répéter",
+              "text": "Donc le … à … h. C’est bien cela ?"
+            },
+            {
+              "titel": "Prendre congé",
+              "text": "Merci beaucoup, au revoir."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Quand ça se complique",
+              "punkte": [
+                "Tu n’as pas compris ? « Pourriez-vous répéter, s’il vous plaît ? »",
+                "Trop vite ? « Pourriez-vous parler plus lentement, s’il vous plaît ? »",
+                "En allemand : « Entschuldigung, können Sie das bitte wiederholen? »"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "D’abord respirer, ensuite composer le numéro",
+              "punkte": [
+                "Une minute de respiration en carré : inspirer 4, retenir 4, expirer 4, retenir 4.",
+                "Dire une fois la première phrase à mi-voix.",
+                "Appeler tant que le chiffre baisse – sans attendre qu’il soit à 0."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mesure ta tension avant et après chaque appel, de 0 à 100."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Tour",
+            "Avant",
+            "Après",
+            "Qu’est-ce qui a aidé ?"
+          ],
+          "breiten": [
+            0.8,
+            0.9,
+            0.9,
+            3.4
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "beispiel": [
+            "p. ex.",
+            "70",
+            "40",
+            "La première phrase était sur l’aide-mémoire."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cartes de rôle : à découper. Celui ou celle qui appelle reçoit une carte T, l’autre joue la carte P qui lui correspond.",
+          "symbole": [
+            "schneiden",
+            "partner"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 92,
+          "karten": [
+            {
+              "titel": "T1 · Rendez-vous médical",
+              "text": "Tu as mal à la gorge depuis trois jours et il te faut un rendez-vous chez ton médecin généraliste, de préférence cette semaine après l’école."
+            },
+            {
+              "titel": "T2 · Absence pour maladie",
+              "text": "Tu es malade et tu ne peux pas aller demain à ton stage au supermarché. Appelle ta tutrice de stage."
+            },
+            {
+              "titel": "T3 · Déplacer un rendez-vous",
+              "text": "Tu as demain à 10 h un rendez-vous chez l’opticien, mais tu as un test à ce moment-là. Déplace le rendez-vous."
+            },
+            {
+              "titel": "T4 · Objets trouvés",
+              "text": "Hier, tu as oublié ton sac à dos dans le bus : noir, avec un porte-clés. Tu connais à peu près la ligne et l’heure."
+            },
+            {
+              "titel": "T5 · Se renseigner",
+              "text": "Tu veux t’inscrire dans un club de sport et tu demandes quels documents il te faut et combien ça coûte."
+            },
+            {
+              "titel": "T6 · Rappeler",
+              "text": "Sur ta messagerie, un cabinet demande à être rappelé. Il ne dit pas de quoi il s’agit."
+            },
+            {
+              "titel": "P1 · Cabinet médical",
+              "text": "Cette semaine, tout est complet : le premier créneau est mardi prochain à 8 h 15. Obstacle : demande le numéro de matricule."
+            },
+            {
+              "titel": "P2 · Supermarché",
+              "text": "Tu es aimable et tu demandes combien de temps dure la maladie. Obstacle : parle d’abord en allemand."
+            },
+            {
+              "titel": "P3 · Opticien",
+              "text": "Tu proposes deux nouveaux rendez-vous, tous les deux pendant les heures de cours. Obstacle : parle très vite."
+            },
+            {
+              "titel": "P4 · Objets trouvés",
+              "text": "Il te faut la couleur, la marque, le contenu, la ligne et l’heure. Obstacle : dis « Veuillez patienter un instant » et mets l’appelant en attente."
+            },
+            {
+              "titel": "P5 · Club de sport",
+              "text": "Cite trois documents : formulaire, photo, signature des parents. Obstacle : demande qu’on t’épelle le nom."
+            },
+            {
+              "titel": "P6 · Cabinet médical",
+              "text": "Le rendez-vous de vendredi est annulé et doit être déplacé. Obstacle : demande d’abord le nom et la date de naissance."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Observer : coche ce que tu as remarqué chez la personne qui appelle."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "oui",
+            "en partie",
+            "pas encore"
+          ],
+          "items": [
+            "A dit son nom et le motif de l’appel dès le début",
+            "A parlé fort et clairement",
+            "A redemandé quand quelque chose n’était pas clair",
+            "A répété la date et l’heure",
+            "A pris des notes",
+            "A pris congé aimablement"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’exercent, avec l’aide-mémoire et des cartes de rôle, à des appels typiques du quotidien, constatent que la tension baisse avec l’entraînement et se donnent un retour grâce à une liste de contrôle.",
+        "ablauf": [
+          "Préparation : découper les cartes ; les cartes P contiennent des obstacles et ne sont pas montrées.",
+          "Tour 1 (6 min) : aide-mémoire, noter le chiffre, appel sans obstacle, échanger les rôles.",
+          "Tours 2 et 3 (12 min) : nouvelle carte, d’abord un, puis deux obstacles.",
+          "Démonstration (5 min) : deux volontaires, l’adulte qui anime joue l’interlocuteur. Question : « Quelle phrase a aidé ? »"
+        ],
+        "hintergrund": "Beaucoup d’adolescents évitent le téléphone : un message se prépare, un appel non. L’évitement entretient l’anxiété, l’entraînement progressif la fait baisser – c’est pourquoi les obstacles augmentent d’un tour à l’autre. Les expériences de réussite personnelles sont la source la plus forte du sentiment d’efficacité personnelle (Bandura, 1977) ; le chiffre avant et après les rend visibles. L’aide-mémoire soulage la mémoire de travail, qui atteint vite ses limites sous l’effet de l’émotion (Diamond, 2013), et une expiration lente avant de composer le numéro apaise de façon démontrée (Zaccaro et al., 2018).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement T5 ou T1 sans obstacle ; la première phrase peut être lue.",
+          "schwerer": "Mener l’appel en allemand ou écrire sa propre carte."
+        },
+        "impulse": [
+          "Qu’est-ce qui était plus difficile : la première phrase ou la question inattendue ?",
+          "De combien votre chiffre a-t-il baissé ?"
+        ],
+        "tipps": [
+          "Téléphoner debout : la voix est plus ferme.",
+          "Plastifier les cartes pour qu’elles tiennent plusieurs tours."
+        ],
+        "achtung": "Personne n’est poussé à appeler devant le groupe ; regarder et jouer l’interlocuteur comptent comme participer. Si l’anxiété reste très élevée : entretien individuel, en parler avec la direction compétente (responsable).",
+        "material": "Cartes sur papier épais, ciseaux, chaises"
+      }
     }
   },
   {
@@ -994,6 +1668,156 @@
         ],
         "achtung": "Die Allergie- und Essensliste vor dem Einkauf prüfen; niemand muss eine Allergie oder Essensregel vor der Gruppe begründen.",
         "material": "Blatt, Kassenbon, Taschenrechner, Packungen"
+      }
+    },
+    "fr": {
+      "titel": "On cuisine : plan et courses",
+      "untertitel": "Un plat pour le groupe, un budget fixé, des rôles clairs – et une recette rien que pour toi",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "L’adulte qui anime a choisi un plat qui convient à tout le monde dans le groupe, en tenant compte aussi des allergies et des règles alimentaires. Vous planifiez, vous calculez et vous répartissez le travail."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Notre liste de courses pour tout le groupe : notez les ingrédients et vérifiez les allergènes sur chaque emballage.",
+          "hinweis": "La ligne d’exemple compte six personnes, ses prix sont des exemples. Les vrais prix sont donnés par l’adulte qui anime ou par le ticket de caisse."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ingrédient",
+            "Quantité",
+            "Allergènes",
+            "Marque distributeur",
+            "Grande marque"
+          ],
+          "breiten": [
+            1.7,
+            0.9,
+            1.5,
+            1,
+            0.9
+          ],
+          "zeilen": 7,
+          "beispiel": [
+            "Pâtes",
+            "600 g",
+            "Gluten (blé)",
+            "1,00 euro",
+            "2,30 euros"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Total avec marques distributeur : … euros – avec grandes marques : … euros",
+            "Notre budget : … euros. Nous restons dans le budget si …",
+            "Par personne, notre repas coûte : … euros"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comparer le prix au kilo",
+          "text": "Sur l’étiquette du rayon figure souvent le prix au kilo ou au litre. C’est le seul moyen de comparer équitablement des emballages de tailles différentes – le grand paquet n’est pas toujours le moins cher."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui fait quoi – et dans quel ordre ?",
+          "hinweis": "Ce qui dure le plus longtemps commence en premier : l’eau pour les pâtes met environ dix minutes à bouillir."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Rôle",
+            "Qui ?",
+            "Quoi exactement ?",
+            "Début"
+          ],
+          "breiten": [
+            1.2,
+            1,
+            2.8,
+            0.8
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Cuisson",
+            "Mathis",
+            "Mettre l’eau à chauffer, puis la sauce",
+            "en premier"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ma recette pour un soir en solo : un plat simple que tu cuisinerais vraiment.",
+          "hinweis": "Elle ira dans ton carnet de skills."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Idées qui marchent presque toujours",
+          "items": [
+            "Œufs brouillés avec du pain",
+            "Pâtes à la sauce tomate",
+            "Wrap aux légumes et au fromage",
+            "Riz aux légumes et à l’œuf",
+            "Omelette",
+            "Salade de couscous",
+            "Soupe de lentilles",
+            "Pommes de terre au four et fromage blanc"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Mon plat : …",
+            "Ma liste de courses : …",
+            "Ça coûte environ : … euros",
+            "Voici comment faire en trois étapes : …"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Recette de base : sauce tomate pour deux",
+          "text": "Émincer finement 1 oignon et 1 gousse d’ail et les faire suer dans 1 cuillère à soupe d’huile jusqu’à ce qu’ils soient translucides. Ajouter 1 poivron ou 1 courgette en dés et faire revenir 3 minutes. Verser 500 g de passata, assaisonner de sel, de poivre et d’origan et laisser mijoter 10 minutes. Faire cuire 200 g de pâtes selon les indications du paquet."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes planifient un plat pour le groupe avec liste de courses, contrôle des allergènes et budget, répartissent les rôles et l’ordre des tâches et notent leur propre recette pour une soirée en solo.",
+        "ablauf": [
+          "Avant : comparer la recette avec la liste des allergies et des règles alimentaires, faire les courses, garder le ticket de caisse. Éprouvé : pâtes à la sauce tomate et aux légumes, ou wraps aux légumes avec du poulet ou des falafels.",
+          "Tâche 1 (8 min) à deux : ingrédients, allergènes, prix ; comparer avec le ticket de caisse.",
+          "Tâche 2 (5 min) : fixer les rôles et l’ordre.",
+          "Tâche 3 (5 min) au moment de l’inscription dans le carnet de skills."
+        ],
+        "hintergrund": "Qui sait planifier, acheter et cuisiner un repas simple dépend moins des plats préparés et des autres. La planification réunit trois compétences : calculer avec un budget et le prix au kilo, vérifier les allergènes dans les ingrédients – dans l’UE, les principaux allergènes sont mis en évidence dans la liste des ingrédients (règlement (UE) n° 1169/2011) – et ordonner les étapes de travail. Faire vraiment est plus efficace qu’expliquer : les expériences de réussite personnelles renforcent le sentiment d’efficacité personnelle (Bandura, 1977), et c’est dans des décisions d’argent proches du quotidien que se montre l’éducation financière (Lusardi & Mitchell, 2014).",
+        "quellen": [
+          "Verordnung (EU) Nr. 1169/2011 des Europäischen Parlaments und des Rates vom 25. Oktober 2011 betreffend die Information der Verbraucher über Lebensmittel. Amtsblatt der EU, L 304, 18–63.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44."
+        ],
+        "differenzierung": {
+          "leichter": "La liste d’ingrédients est préremplie ; il reste à compléter les prix et les allergènes.",
+          "schwerer": "Replanifier le plat pour 2 euros par personne : qu’est-ce qui est remplacé ?"
+        },
+        "impulse": [
+          "Marque distributeur ou grande marque : où sent-on la différence ?",
+          "Que cuisinez-vous quand il ne reste plus que 5 euros ?"
+        ],
+        "tipps": [
+          "Remplacer les prix d’exemple par ceux du ticket de caisse.",
+          "Sans cuisine : wraps aux falafels ou salade de couscous."
+        ],
+        "achtung": "Vérifier la liste des allergies et des règles alimentaires avant les courses ; personne n’a à justifier une allergie ou une règle alimentaire devant le groupe.",
+        "material": "Feuille, ticket de caisse, calculatrice, emballages"
       }
     }
   },
@@ -1203,6 +2027,179 @@
         "achtung": "Bei bekannter schwerer Allergie vorher den Notfallplan und den Ort des Notfallsets kennen. Bei Atemnot oder Schwellungen sofort 112, die Person nicht allein lassen.",
         "material": "Blatt, Messer und Brett, eine Lebensmittelpackung"
       }
+    },
+    "fr": {
+      "titel": "En cuisine, en sécurité",
+      "untertitel": "Hygiène, couteaux, allergènes et conservation – l’essentiel avant le premier coup de couteau",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Vrai ou faux ? Coche. La correction se fait en groupe."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "faux"
+          ],
+          "items": [
+            "Le poulet cru se lave avant d’être cuit.",
+            "Pour la viande crue, on utilise une planche à part.",
+            "Un yaourt est gâté dès que sa date de durabilité minimale est passée.",
+            "Après la date limite de consommation, on ne mange plus de viande hachée.",
+            "En cas d’allergie aux noix, il suffit de retirer les noix du plat.",
+            "On éteint de la graisse qui brûle avec de l’eau.",
+            "Un couteau qui tombe, on ne le rattrape pas.",
+            "Dans l’UE, les allergènes doivent être mis en évidence dans la liste des ingrédients.",
+            "Sur une brûlure, on met tout de suite de la glace.",
+            "Se laver les mains dure aussi longtemps que fredonner deux fois « Joyeux anniversaire »."
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Hygiène",
+              "punkte": [
+                "Se laver les mains au moins 20 secondes avec du savon – avant et après avoir touché de la viande crue.",
+                "Attacher les cheveux longs, enlever les bagues.",
+                "Une planche et un couteau à part pour la viande crue.",
+                "Goûter seulement avec une cuillère propre."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "achtung",
+              "titel": "Couteaux et cuisinière",
+              "punkte": [
+                "Prise en griffe : les bouts des doigts rentrés.",
+                "Poser le couteau à plat, jamais dans l’eau de vaisselle.",
+                "Ne pas rattraper un couteau qui tombe.",
+                "Tourner les queues des casseroles vers l’intérieur.",
+                "Graisse en feu : mettre le couvercle, éteindre le feu."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand il arrive quelque chose",
+          "punkte": [
+            "Petite coupure : appuyer avec un chiffon propre, mettre un pansement et un gant à usage unique, prévenir l’adulte qui anime.",
+            "Brûlure : mettre tout de suite sous l’eau courante tiède – pas de glace.",
+            "Difficulté à respirer ou gonflement du visage après un repas : appeler tout de suite le 112 et ne pas laisser la personne seule."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trouver les allergènes : quels allergènes se cachent dans cette pâte à pizza ? Coche."
+        },
+        {
+          "art": "text",
+          "text": "Ingrédients : FARINE DE BLÉ, eau, tomates, huile de tournesol, fromage (LAIT), sucre, sel, CÉLERI, levure. Peut contenir des traces de SÉSAME."
+        },
+        {
+          "art": "text",
+          "klein": true,
+          "text": "Les allergènes sont mis en évidence dans la liste des ingrédients – ici en majuscules, sur les emballages le plus souvent en gras."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "Gluten",
+            "Lait",
+            "Œuf",
+            "Céleri",
+            "Moutarde",
+            "Fruits à coque",
+            "Sésame (en traces)",
+            "Soja",
+            "Poisson"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Les 14 allergènes principaux à signaler dans l’UE",
+          "items": [
+            "céréales contenant du gluten",
+            "crustacés",
+            "œufs",
+            "poisson",
+            "arachides",
+            "soja",
+            "lait (lactose comprise)",
+            "fruits à coque",
+            "céleri",
+            "moutarde",
+            "sésame",
+            "anhydride sulfureux et sulfites",
+            "lupin",
+            "mollusques"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Deux dates sur l’emballage",
+          "punkte": [
+            "« À consommer de préférence avant » : après cette date, beaucoup d’aliments sont encore bons – regarder, sentir, goûter. Jeter est souvent inutile.",
+            "« À consommer jusqu’au », par exemple pour la viande hachée ou le poisson frais : après cette date, on ne mange plus.",
+            "Mettre les restes couverts au réfrigérateur et les finir vite."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle règle de cuisine emportes-tu à la maison ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "À la maison, je ferai désormais attention à …",
+            "Voici ce que j’explique à quelqu’un qui cuisine avec moi : …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent les principales règles d’hygiène, de couteau et de cuisinière, repèrent les allergènes dans une liste d’ingrédients, distinguent les deux dates de conservation et savent quoi faire en cas de petit accident.",
+        "ablauf": [
+          "Quiz en mouvement (8 min) : lire les affirmations, tout le monde va du côté « vrai » ou « faux ». Vrai : 2, 4, 7, 8 et 10 ; faux : 1, 3, 5, 6 et 9.",
+          "Règles du couteau (2 min) : les montrer avec un vrai couteau.",
+          "Tâche 2 (3 min). Solution : gluten, lait, céleri ; le sésame seulement comme trace possible.",
+          "Tâche 3 à la fin de l’unité ou à la maison."
+        ],
+        "hintergrund": "Beaucoup d’infections alimentaires à la maison viennent de quelques erreurs évitables : mains non lavées, viande crue sur la planche de la salade, volaille mal cuite, plats laissés longtemps au chaud. Les règles suivent les « cinq clés » de l’OMS (2006), complétées par la sécurité du couteau et de la cuisinière. Dans l’UE, les 14 allergènes principaux sont mis en évidence dans la liste des ingrédients, et les deux dates de conservation sont distinguées (règlement (UE) n° 1169/2011). Le quiz est voulu : retrouver une règle plutôt que la relire aide à la retenir (Roediger & Karpicke, 2006), et des exercices actifs rendent les programmes plus efficaces (Durlak et al., 2011).",
+        "quellen": [
+          "World Health Organization (2006). Five Keys to Safer Food Manual. Genf: WHO.",
+          "Verordnung (EU) Nr. 1169/2011 des Europäischen Parlaments und des Rates vom 25. Oktober 2011 betreffend die Information der Verbraucher über Lebensmittel. Amtsblatt der EU, L 304, 18–63.",
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les affirmations 1 à 6 ; lire les encadrés ensemble.",
+          "schwerer": "Vérifier un vrai emballage pour une personne allergique aux fruits à coque."
+        },
+        "impulse": [
+          "Quelle règle était nouvelle pour vous ?",
+          "Que faites-vous déjà de la même manière chez vous ?"
+        ],
+        "tipps": [
+          "Convient aussi aux unités joker avec cuisine.",
+          "Afficher les encadrés plastifiés en cuisine."
+        ],
+        "achtung": "Allergie grave connue : connaître le plan d’urgence. Gêne respiratoire ou gonflement : 112, ne pas laisser la personne seule.",
+        "material": "Feuille, couteau, planche, emballage"
+      }
     }
   },
   {
@@ -1375,6 +2372,144 @@
         ],
         "achtung": "Keine Themen zu Herkunft, Religion oder Familie. Hinweise auf Druck oder Gefährdung: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt, Plakat „Wo werdet ihr gehört?“"
+      }
+    },
+    "fr": {
+      "titel": "Fait ou opinion ?",
+      "untertitel": "Ce qu’on peut vérifier, ce qu’on doit justifier – et comment te forger ta propre opinion",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Fait ou opinion ?",
+          "punkte": [
+            "Une affirmation de fait peut être vérifiée. Elle est vraie ou fausse – même si on ne le sait pas pour le moment.",
+            "Une opinion est un jugement de valeur : bien, mal, mieux, devrait. On ne peut pas la prouver, mais on peut la justifier de façon plus ou moins solide.",
+            "Prudence avec les phrases du type « Tous les … sont … » : elles ressemblent à des opinions, mais ce sont des affirmations vérifiables – et le plus souvent fausses."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Affirmation de fait ou opinion ? Coche. Pour certaines phrases, un deuxième regard s’impose."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "fait",
+            "opinion"
+          ],
+          "items": [
+            "Au Luxembourg, les bus, les trams et les trains en 2e classe sont gratuits.",
+            "Le bus est le meilleur moyen de transport.",
+            "Les boissons énergisantes contiennent beaucoup de caféine.",
+            "Les boissons énergisantes devraient être interdites aux jeunes de moins de 16 ans.",
+            "Les adolescents ont besoin de plus de sommeil que les adultes.",
+            "L’école devrait commencer seulement à 9 h.",
+            "Tous les gamers sont agressifs.",
+            "Le nouvel album est ennuyeux.",
+            "La Convention des Nations unies relative aux droits de l’enfant s’applique aussi au Luxembourg.",
+            "Le Luxembourg a plus d’habitants que la Belgique."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le test de l’opinion : choisis un sujet et suis les quatre étapes.",
+          "hinweis": "Sujets : les téléphones pendant la récré, l’école à partir de 9 h, un budget propre à chaque classe – ou ton propre sujet."
+        },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Rassembler des faits",
+              "text": "Qu’est-ce que je sais avec certitude – et comment le sais-je ?"
+            },
+            {
+              "titel": "Écouter les différents points de vue",
+              "text": "Que disent les autres ? Qui est concerné, et pourquoi voient-ils les choses autrement ?"
+            },
+            {
+              "titel": "Me questionner",
+              "text": "Qu’est-ce qui compte pour moi ? Quel sentiment se cache derrière mon opinion ?"
+            },
+            {
+              "titel": "Me faire une opinion – provisoire",
+              "text": "Je pense que …, parce que …"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Changer d’avis, ce n’est pas tourner casaque",
+          "text": "Qui change d’avis parce qu’un meilleur argument se présente réfléchit. Qui en change seulement parce que tous les autres sont ailleurs ferait bien de se demander un instant : qu’est-ce qui m’a vraiment convaincu ?"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ton droit d’être entendu",
+          "punkte": [
+            "Article 12 de la Convention relative aux droits de l’enfant : tu as le droit d’exprimer ton opinion sur toute question qui te concerne. Les adultes doivent la prendre au sérieux et – selon ton âge et ta maturité – en tenir compte.",
+            "Article 13 : tu peux t’informer et exprimer librement ton opinion, à l’oral, par écrit ou en images, tant que tu respectes les droits et la réputation des autres."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où t’écoute-t-on déjà – et où aimerais-tu avoir davantage ton mot à dire ?"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Ici, on m’écoute",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ici, j’aimerais avoir plus mon mot à dire",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Dans le tour de table, un mot-clé suffit. Ce que tu écris reste pour toi."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent les affirmations de fait des opinions, se forgent en quatre étapes une opinion provisoire et connaissent les articles 12 et 13 de la Convention relative aux droits de l’enfant.",
+        "ablauf": [
+          "Tableau (3 min) : opposer deux phrases sur les boissons énergisantes – vérifiable ou jugement de valeur ?",
+          "Tâche 1 (7 min) : seul, puis à deux. Affirmations de fait : 1, 3, 5, 7, 9, 10 – dont fausses : 7 (jugement global) et 10. Opinions : 2, 4, 6, 8.",
+          "Tâche 2 (12 min) : un exemple au tableau, puis seul avec son propre sujet.",
+          "Après la ligne d’opinion : lire les articles 12 et 13, tâche 3 seul ; ceux qui le souhaitent donnent un mot-clé pour l’affiche."
+        ],
+        "hintergrund": "Pour juger une information, il faut distinguer si une phrase est vérifiable ou si elle contient un jugement de valeur. Les jugements globaux ressemblent à des opinions, mais ce sont de fausses affirmations de fait. Les vérificateurs expérimentés cherchent des sources indépendantes (Wineburg & McGrew, 2019). La formation de l’opinion est en outre sociale : beaucoup alignent leur jugement sur celui d’une majorité, même quand il est manifestement faux (Asch, 1956) ; le contrôle en quatre étapes freine cet entraînement. Le droit d’être entendu figure à l’article 12 de la Convention (Nations unies, 1989).",
+        "quellen": [
+          "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+          "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+          "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen."
+        ],
+        "differenzierung": {
+          "leichter": "Tâche 1 avec les phrases 1 à 6 ; pour le test, un sujet imposé.",
+          "schwerer": "Noter pour chaque fait où on peut le vérifier ; pour chaque opinion, le contre-argument le plus fort."
+        },
+        "impulse": [
+          "Quand « c’est juste ton opinion » devient-il une excuse ?",
+          "Qu’est-ce qui vous a fait bouger sur la ligne ?"
+        ],
+        "tipps": [
+          "Discuter la phrase 7 en détail : c’est ainsi que les préjugés se déguisent.",
+          "Garder l’affiche pour l’unité 26."
+        ],
+        "achtung": "Pas de sujets liés à l’origine, à la religion ou à la famille. Indices de pression ou de mise en danger : entretien individuel, informer la direction compétente (responsable).",
+        "material": "Feuille, affiche « Où vous écoute-t-on ? »"
       }
     }
   },
@@ -2392,6 +3527,144 @@
         "achtung": "Keine Beschwerden über namentlich genannte Personen im Plenum. Wird über wichtige Dinge im Leben eines Jugendlichen ohne ihn entschieden: Einzelgespräch, bei Bedarf die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Blatt, Malerkrepp, Situationskarten"
       }
+    },
+    "fr": {
+      "titel": "L’échelle de la participation",
+      "untertitel": "Quand participes-tu vraiment – et quand est-ce seulement de la façade ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Le chercheur Roger Hart a décrit la participation comme une échelle. En bas, on a l’impression que les jeunes décident, mais rien ne change. Plus on monte, plus les jeunes ont leur mot à dire dans les décisions."
+        },
+        {
+          "art": "leiter",
+          "stufen": 6,
+          "oben": "vraie codécision",
+          "unten": "pas de vraie participation",
+          "beispiele": [
+            "Participation de façade : être utilisé, servir de décor, parler sans effet.",
+            "Désigné, mais informé : une tâche, et vous savez à quoi elle sert.",
+            "Consulté et informé : vous apprenez ce qu’est devenu votre avis.",
+            "Décidé ensemble : les adultes lancent, tout le monde décide.",
+            "Lancé et dirigé par vous : votre idée, vous la réalisez.",
+            "Lancé par vous, décidé ensemble : avec des adultes."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sur quel échelon cela se place-t-il ? Coche le numéro."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "items": [
+            "L’enseignante propose une sortie ; le conseil de classe décide avec elle de la destination et du programme.",
+            "L’école fait un sondage sur la cour de récréation. Personne ne voit jamais les résultats, la cour reste telle quelle.",
+            "Des jeunes ont l’idée d’un espace de calme et décident avec la direction des règles et de l’aménagement.",
+            "La commune demande aux jeunes ce qui manque à la maison des jeunes, puis montre quelles idées sont réalisées et pourquoi.",
+            "Trois jeunes organisent un tournoi de foot pendant la récré ; l’école fournit seulement le terrain.",
+            "La classe aide à ranger le jardin de l’école ; avant, l’enseignante explique à quoi il sert."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et pour toi ? Où en es-tu à l’école, pendant tes loisirs ou dans ce groupe ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Où ?",
+            "De quoi s’agit-il ?",
+            "Échelon",
+            "Que faudrait-il pour monter d’un échelon ?"
+          ],
+          "breiten": [
+            0.9,
+            1.8,
+            0.8,
+            2.6
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Classe",
+            "Plan de classe",
+            "1",
+            "La classe propose des variantes et choisit avec l’enseignante."
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Faut-il toujours être tout en haut ?",
+              "text": "Non. Toutes les décisions n’exigent pas l’échelon 6, et chacun ne veut pas avoir son mot à dire partout. Mais tu devrais savoir où tu te situes – et savoir reconnaître la participation de façade."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Où tu peux participer aux décisions",
+              "punkte": [
+                "au conseil de classe",
+                "comme délégué ou déléguée de classe",
+                "au Comité des élèves du lycée",
+                "dans la commune et à la maison des jeunes",
+                "dans ce groupe"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Quatre questions contre la participation de façade",
+          "punkte": [
+            "Est-ce que je sais de quoi il s’agit et à quoi ça sert ?",
+            "Est-ce que je sais qui décide – et pourquoi ainsi ?",
+            "Mon avis a-t-il des conséquences, ou me demande-t-on seulement ?",
+            "Est-ce que je participe volontairement, après qu’on m’a tout expliqué ?"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent l’échelle de la participation de Hart dans une version simplifiée, classent des situations, reconnaissent la participation de façade et examinent où ils participent eux-mêmes aux décisions.",
+        "ablauf": [
+          "Échelle au sol (8 min) : six échelons ; tirer des cartes de situation et se placer sur l’échelon qui convient.",
+          "Tâche 1 (4 min). Solution dans l’ordre des phrases : 4, 1, 6, 3, 5, 2.",
+          "Tâche 2 (5 min) seul ; ceux qui le souhaitent donnent un exemple et disent ce qu’il faudrait pour monter d’un échelon.",
+          "Compléter l’encadré « Où tu peux participer aux décisions » avec les personnes de contact dans les écoles des jeunes."
+        ],
+        "hintergrund": "Hart (1992) décrit la participation comme une échelle à huit échelons. Les trois du bas – manipulation, décoration et participation alibi – il les désigne expressément comme non-participation ; sur la fiche, ils sont regroupés en un seul échelon, le plus bas. Au-dessus, l’information, la parole et le pouvoir de décision augmentent jusqu’aux projets que les jeunes lancent eux-mêmes et décident avec des adultes. Toutes les situations n’exigent pas l’échelon le plus haut ; l’important est que les jeunes puissent choisir et que la participation de façade soit évitée. Sur le plan juridique, la participation s’appuie sur l’article 12 de la Convention des Nations unies relative aux droits de l’enfant (Nations unies, 1989).",
+        "quellen": [
+          "Hart, R. A. (1992). Children’s Participation: From Tokenism to Citizenship. Florenz: UNICEF International Child Development Centre.",
+          "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen."
+        ],
+        "differenzierung": {
+          "leichter": "Tâche 1 avec trois situations seulement ; lire d’abord l’échelle ensemble.",
+          "schwerer": "Inventer une participation de façade et la transformer pour qu’elle atteigne l’échelon 3."
+        },
+        "impulse": [
+          "À quoi reconnaît-on une question alibi ?",
+          "Que faudrait-il à votre école pour monter d’un échelon ?"
+        ],
+        "tipps": [
+          "Laisser l’échelle au sol pour le conseil de groupe.",
+          "Reformuler en questions de fond les plaintes visant des personnes."
+        ],
+        "achtung": "Pas de plaintes sur des personnes nommées en plénière. Si l’on décide de choses importantes de la vie d’un jeune sans lui : entretien individuel, au besoin associer la direction compétente (responsable).",
+        "material": "Feuille, ruban de masquage, cartes de situation"
+      }
     }
   },
   {
@@ -2552,6 +3825,131 @@
         ],
         "achtung": "Anliegen, die auf Konflikte mit Personen, Mobbing oder Gewalt hinweisen, nicht im Plenum besprechen: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt für jede Person"
+      }
+    },
+    "fr": {
+      "titel": "Ma demande",
+      "untertitel": "De la râlerie à la proposition : comment porter ta demande là où l’on décide",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "La demande d’Aylin",
+          "bild": "figur:jana:ruhig:zeigen",
+          "text": "Depuis des semaines, Aylin est agacée : au deuxième étage de son lycée, il n’y a qu’un distributeur de boissons, et l’eau y est payante. D’abord, elle râle avec son amie. Puis elle écrit ce qu’elle veut exactement : une fontaine à eau au deuxième étage. Elle demande à sa déléguée de classe qui en décide et porte la demande au conseil de classe. Deux semaines plus tard, elle arrive sur la table du Comité des élèves."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prépare ta demande : quelque chose de petit qui pourrait vraiment changer."
+        },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Quoi exactement ?",
+              "text": "Pas « tout doit aller mieux », mais : qu’est-ce qui doit changer, où, à partir de quand ?"
+            },
+            {
+              "titel": "Pourquoi ?",
+              "text": "Quel intérêt se cache derrière ? Qui est concerné à part toi ?"
+            },
+            {
+              "titel": "Qui décide ?",
+              "text": "Un enseignant, le conseil de classe, la direction, le Comité des élèves, la commune, ce groupe ?"
+            },
+            {
+              "titel": "Qui me faut-il ?",
+              "text": "Qui te soutient ? Qui pourrait être contre – et pourquoi ?"
+            },
+            {
+              "titel": "Ma proposition",
+              "text": "Une phrase que tu peux dire ou écrire."
+            },
+            {
+              "titel": "Ma première étape",
+              "text": "Que fais-tu d’ici quand – et auprès de qui ?"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment formuler une demande",
+          "punkte": [
+            "« J’ai remarqué que … »",
+            "« Cela concerne …, parce que … »",
+            "« Je propose que … »",
+            "« Qui peut en décider, et d’ici quand aurai-je une réponse ? »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vérifiez à deux : la demande est-elle assez concrète ?"
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "oui",
+            "pas encore"
+          ],
+          "items": [
+            "On comprend en une phrase ce qui doit changer.",
+            "Il s’agit d’une chose, pas d’une attaque contre une personne.",
+            "Je sais qui en décide.",
+            "Il y a une proposition, pas seulement une plainte.",
+            "La première étape a une date."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fixe le moment de ta première étape."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si jeudi le conseil de classe commence,",
+              "dann": "je lève la main en premier et je lis ma proposition."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand il s’agit d’une personne",
+          "text": "S’il s’agit du comportement d’une personne précise, par exemple d’un enseignant ou d’un camarade, ce n’est pas une affaire pour le conseil de classe, mais pour un entretien avec une personne de confiance, le SePAS ou le ou la responsable."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes formulent leur propre demande comme une proposition concrète, clarifient qui décide et de qui ils ont besoin, la vérifient avec une liste de contrôle et fixent une première étape datée.",
+        "ablauf": [
+          "Lire l’histoire (2 min). Question : « Qu’est-ce qu’Aylin a fait autrement que râler ? »",
+          "Tâche 1 (6 min) seul ; l’adulte aide à transformer les plaintes en propositions.",
+          "Tâche 2 (3 min) à deux, améliorer quand la réponse est « pas encore ».",
+          "Tâche 3 dans la partie « skill » ; ceux qui le souhaitent disent leur proposition d’une voix assurée.",
+          "Quelques semaines plus tard : demander ce que sont devenues les demandes."
+        ],
+        "hintergrund": "Une participation efficace demande plus que du courage : un objectif concret, la bonne adresse et une proposition qui tient compte des intérêts des autres. Le plan reprend pour cela la pensée en intérêts plutôt qu’en positions (Fisher & Ury, 1981). La première étape datée agit comme un plan « si … alors » et rend la mise en œuvre plus probable (Gollwitzer, 1999). Qui fait l’expérience qu’une demande a des suites gagne en sentiment d’efficacité personnelle (Bandura, 1977) ; la participation de façade décourage au contraire.",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Choisir une demande pour ce groupe ; les étapes 1, 3, 5 et 6 suffisent.",
+          "schwerer": "Formuler la demande sous forme d’un court message à la personne compétente."
+        },
+        "impulse": [
+          "Qu’est-ce qui distingue une plainte d’une demande ?",
+          "Qui décide dans votre école de la cour de récréation ?"
+        ],
+        "tipps": [
+          "Une photo du plan a sa place dans le carnet de skills.",
+          "Reprendre tout de suite en conseil de groupe les demandes pour le groupe."
+        ],
+        "achtung": "Les demandes qui indiquent des conflits avec des personnes, du harcèlement ou de la violence ne se traitent pas en plénière : entretien individuel, informer la direction compétente (responsable).",
+        "material": "Une feuille par personne"
       }
     }
   }

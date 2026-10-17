@@ -143,6 +143,116 @@
         "achtung": "Viele Kreuze, ein Rucksack dauerhaft bei 9 oder 10, Andeutungen über Sorgen zu Hause: nicht in der Gruppe nachfragen, Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren. Bei Gefährdung nach dem internen Schutzkonzept handeln.",
         "material": "Rucksack, einige Bücher, Plakat, Stifte"
       }
+    },
+    "fr": {
+      "titel": "Mon sac à dos de stress",
+      "untertitel": "Qu’est-ce qui le rend lourd – et qu’est-ce qui l’allège ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi un sac à dos ?",
+          "text": "Chaque jour, tu portes un sac à dos invisible. Les contrôles, les disputes, le manque de sommeil ou les soucis le rendent plus lourd. Quand il est plein, un rien suffit et la tension passe au rouge. Mais tu peux aussi en sortir des choses : avec des skills pour le moment présent et avec ce qui te fait du bien sur la durée."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’y a-t-il en ce moment dans ton sac à dos ? Coche et complète.",
+          "hinweis": "Rien que pour toi – n’écris que ce que tu as envie d’écrire."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Contrôles et notes",
+            "Devoirs et échéances",
+            "Disputes entre amis",
+            "Stress à la maison",
+            "Manque de sommeil",
+            "Téléphone jusque tard dans la nuit",
+            "Pression pour faire partie du groupe",
+            "Tensions avec des profs",
+            "Inquiétude pour quelqu’un",
+            "Commentaires en ligne"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel poids pèse ton sac à dos cette semaine ? Entoure un chiffre."
+        },
+        {
+          "art": "skala",
+          "von": "léger comme une plume",
+          "bis": "presque impossible à porter",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui allège ton sac ? Note ce qui t’aide.",
+          "hinweis": "Pour cela, regarde dans ta valise de skills de la séance 15."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Tout de suite – quand ça devient aigu",
+              "hoehe": 4.5,
+              "beispiel": "eau froide, 5-4-3-2-1, musique"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Sur la durée – pour qu’il reste plus léger",
+              "hoehe": 4.5,
+              "beispiel": "dormir plus tôt, sport le mercredi"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "La valise et le sac à dos",
+          "text": "La valise de skills t’aide quand la tension devient aiguë. Le sommeil, le mouvement, les repas, les pauses et les personnes qui te font du bien évitent que le sac à dos ne devienne si lourd."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "Cette fiche t’appartient. Si ton sac à dos reste très lourd pendant des semaines, parles-en à une personne en qui tu as confiance – ou appelle, de façon anonyme et gratuite, le Kanner- a Jugendtelefon : 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes nomment ce qui les charge et ce qui les soulage, évaluent leur niveau de charge et distinguent les skills pour les moments aigus de ce qui soulage sur la durée.",
+        "ablauf": [
+          "Le sac à dos en groupe (7 min) : pour chaque charge citée, un livre entre dans un vrai sac à dos et le mot-clé est noté à gauche sur l’affiche. Une personne le porte pendant un tour de salle.",
+          "Alléger (3 min) : pour chaque idée utile, on retire quelque chose du sac et le mot-clé est noté à droite sur l’affiche.",
+          "Travail individuel (5 min) : remplir les tâches 1 à 3 en silence, avec les valises de skills de la séance 15 à portée de main. Ne pas ramasser.",
+          "Transition : dans le champ de droite, les jeunes choisissent aussitôt leur étape pour le plan santé."
+        ],
+        "hintergrund": "Le stress apparaît quand les exigences semblent dépasser ses propres moyens ; ce qui compte, c’est l’évaluation de la situation et les ressources disponibles pour y faire face (Lazarus & Folkman, 1984). Le sac à dos rend ce bilan visible. La salutogenèse pose en plus la question de ce qui maintient en bonne santé : le sommeil, le mouvement et des relations fiables agissent comme des ressources de résistance (Antonovsky, 1987). Dans l’entraînement aux skills pour adolescents, prendre soin de son corps, de son sommeil et de son alimentation constitue un module à part entière, qui réduit la vulnérabilité aux émotions intenses (Rathus & Miller, 2015).",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Ne faire par écrit que les tâches 1 et 2 et recueillir les idées d’allègement à l’oral.",
+          "schwerer": "Pour chaque charge, noter si elle est modifiable, en partie ou pas du tout. Pour une charge modifiable, prévoir une première étape."
+        },
+        "impulse": [
+          "Qu’est-ce qui pèse le plus à votre âge – et qu’est-ce qui, parmi tout cela, ne se voit pas de l’extérieur ?",
+          "Qu’est-ce qui allège le plus vite votre sac ?"
+        ],
+        "tipps": [
+          "Ne pas dépasser environ cinq kilos dans le sac et ne forcer personne à le porter.",
+          "L’échelle de la tâche 2 sert aussi de point de départ : quel poids pèse ton sac aujourd’hui ?"
+        ],
+        "achtung": "Beaucoup de croix, un sac durablement à 9 ou 10, des allusions à des soucis à la maison : ne pas questionner dans le groupe, proposer un entretien individuel, informer la direction compétente (responsable). En cas de danger, agir selon le concept de protection.",
+        "material": "Sac à dos, quelques livres, affiche, stylos"
+      }
     }
   },
   {
@@ -333,6 +443,160 @@
         "achtung": "Ziele rund um Gewicht oder weniger Essen nicht bestärken, sondern behutsam umlenken; bei Hinweisen auf gestörtes Essverhalten die zuständige Leitung (Responsable) informieren. Fehlt es zu Hause an Essen oder Schlafplatz: Gespräch nach dem internen Ablauf.",
         "material": "Blatt je Person, Skills-Pass; optional Schlaf-Check"
       }
+    },
+    "fr": {
+      "titel": "Mon plan santé",
+      "untertitel": "Une petite étape pour les deux prochaines semaines – si petite qu’elle fonctionne vraiment",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Comment ça se passe en ce moment pour toi ? Coche dans chaque ligne."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "ça va bien",
+            "moyen",
+            "à améliorer"
+          ],
+          "items": [
+            "Sommeil",
+            "Activité physique",
+            "Repas et boissons",
+            "Téléphone et écrans",
+            "Pauses et détente",
+            "Personnes qui me font du bien"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis un domaine et une petite étape – ou invente la tienne."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Idées de petites étapes",
+          "punkte": [
+            "Sommeil : mettre le téléphone à charger dans la cuisine à 22 h.",
+            "Activité physique : descendre un arrêt plus tôt et finir à pied.",
+            "Repas et boissons : glisser une bouteille d’eau dans le cartable.",
+            "Téléphone et écrans : poser le téléphone pendant les repas.",
+            "Pauses : sortir dix minutes à la grande récréation.",
+            "Personnes : une fois par semaine, faire quelque chose avec quelqu’un qui me fait du bien."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fixe ton étape avec précision – et ton plan pour le plus gros obstacle.",
+          "hinweis": "Première ligne : quand et où tu le fais. Deuxième ligne : ce que tu fais si quelque chose se met en travers."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "S’il est 22 h,",
+              "dann": "je mets mon téléphone à charger dans la cuisine."
+            },
+            {
+              "wenn": "Si quelqu’un m’écrit encore à ce moment-là,",
+              "dann": "je réponds demain matin dans le bus."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dans quelle mesure crois-tu y arriver ? Entoure un chiffre.",
+          "hinweis": "Moins de 7 ? Alors rends l’étape plus petite – si petite qu’elle réussira presque à coup sûr."
+        },
+        {
+          "art": "skala",
+          "von": "aucune certitude",
+          "bis": "certitude totale",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Coche chaque jour où ton étape a fonctionné.",
+          "hinweis": "Un jour manqué n’est pas un échec. Reprends simplement le lendemain."
+        },
+        {
+          "art": "plan",
+          "ziel": "",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "Semaine 1",
+            "Semaine 2"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon binôme dans le groupe : …",
+            "Le …, on se demande mutuellement comment ça se passe."
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après deux semaines : comment ça s’est passé ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui m’a aidé : …",
+            "Ce qui était difficile : …",
+            "Ce que je continue : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Si ça ne marche pas",
+          "text": "Alors l’étape était trop grande – pas toi trop faible. Rends-la plus petite et recommence. Les grandes résolutions tiennent rarement ; de petites étapes bien planifiées deviennent des habitudes."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes évaluent leur santé dans six domaines, choisissent une petite étape réalisable et la sécurisent avec un plan « si … alors », une échelle de confiance et une liste à cocher.",
+        "ablauf": [
+          "Entrée (2 min) : « Qui a déjà oublié une résolution au bout d’une semaine ? » Aujourd’hui, on planifie pour que ça marche.",
+          "Tâches 1 et 2 (6 min) en individuel, lire les idées à voix haute. Plus c’est petit, mieux c’est.",
+          "Tâche 3 (5 min) : vérifier à deux les phrases « si … alors » : moment, lieu et action sont-ils clairs ?",
+          "Tâche 4 (2 min) : confiance inférieure à 7 : réduire l’étape ensemble.",
+          "Tâche 5 (5 min) : choisir un binôme, noter l’étape dans le Skills-Pass, emporter la fiche. Tâche 6 après deux semaines."
+        ],
+        "hintergrund": "Les résolutions échouent rarement par manque de savoir, mais au moment de passer à l’acte. Les plans « si … alors », qui fixent quand, où et comment agir, favorisent nettement la mise en pratique, même face aux obstacles (Gollwitzer, 1999). L’échelle de confiance de l’entretien motivationnel aide à dimensionner l’étape pour qu’elle réussisse (Miller & Rollnick, 2013). Repères : 8 à 10 heures de sommeil (Paruthi et al., 2016) et au moins 60 minutes d’activité physique par jour (World Health Organization, 2020). La mesure reste pourtant la première étape réalisable.",
+        "quellen": [
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO."
+        ],
+        "differenzierung": {
+          "leichter": "L’adulte propose deux ou trois étapes ; le ou la jeune choisit.",
+          "schwerer": "Écrire un deuxième plan pour un autre obstacle et évaluer ensuite ce qui a aidé."
+        },
+        "impulse": [
+          "Quelle étape serait si petite qu’elle paraît presque ridicule – et changerait pourtant quelque chose ?",
+          "Qui ou quoi te rappelle ton plan ?"
+        ],
+        "tipps": [
+          "Ne pas moraliser : demander ce qui est faisable en ce moment plutôt que donner des conseils.",
+          "Photographier le plan pour l’écran de verrouillage."
+        ],
+        "achtung": "Ne pas encourager les objectifs de poids ou de restriction alimentaire, mais réorienter avec tact ; si le comportement alimentaire semble perturbé, informer la direction compétente (responsable). Manque de nourriture ou de lit à la maison : entretien selon la procédure interne.",
+        "material": "Une fiche par personne, Skills-Pass ; en option : Bilan sommeil"
+      }
     }
   },
   {
@@ -474,6 +738,116 @@
         "achtung": "Tiefpunkte können an Schweres erinnern: nicht nachfragen, bei Tränen oder Stocken ein Gespräch nach der Einheit anbieten. Bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln, die zuständige Leitung (Responsable) informieren.",
         "material": "Skills-Pass, Blatt je Person, Buntstifte"
       }
+    },
+    "fr": {
+      "titel": "Mon année",
+      "untertitel": "Une année de cours de skills : ce qui s’est passé, ce qui reste",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Feuillette d’abord ton Skills-Pass et marque les trois phrases qui comptent le plus pour toi aujourd’hui."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine la courbe de ton année : pour chaque mois, place une croix selon ton état, puis relie les croix par une ligne."
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "sept.",
+            "oct.",
+            "nov.",
+            "déc.",
+            "janv.",
+            "févr.",
+            "mars",
+            "avr.",
+            "mai",
+            "juin",
+            "juil."
+          ],
+          "zeilen": [
+            "très bien",
+            "bien",
+            "mitigé",
+            "difficile",
+            "très difficile"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis deux ou trois hauts et bas. Que s’est-il passé – et qu’en as-tu appris ?",
+          "hinweis": "N’écris que ce que tu as envie d’écrire."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mois",
+            "Que s’est-il passé ?",
+            "Qu’en ai-je appris ?"
+          ],
+          "breiten": [
+            0.7,
+            2.2,
+            2.2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "nov.",
+            "beaucoup de disputes en classe",
+            "D’abord se calmer, ensuite parler."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Complète les phrases."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma plus grande fierté cette année : …",
+            "Mon skill le plus important – et un moment où il m’a aidé : …",
+            "Ce que je sais de moi aujourd’hui et que j’ignorais en septembre : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "La courbe et les réponses t’appartiennent. Dans le groupe, tu ne racontes que ce que tu as envie de raconter."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reviennent sur leur année avec le Skills-Pass et la courbe de l’année, nomment les hauts et les bas, et notent ce qu’ils ont appris et ce qui les rend fiers.",
+        "ablauf": [
+          "Skills-Pass (5 min) : le feuilleter en silence et marquer trois phrases qui comptent encore aujourd’hui.",
+          "Courbe de l’année (4 min) : cocher une case par mois et relier les croix. Montrer d’abord au tableau une courbe d’exemple.",
+          "Hauts et bas (3 min) : les noter dans le tableau – seulement ce que la personne veut écrire.",
+          "Débuts de phrases (3 min). Qui le souhaite raconte un moment fort à quelqu’un. La fiche rentre à la maison avec le Pass."
+        ],
+        "hintergrund": "Les rétrospectives rendent visible une évolution qui se perd dans le quotidien. La courbe de l’année est une version simplifiée de la ligne de vie, répandue dans le travail biographique : elle montre qu’après les creux, d’autres périodes sont venues. Écrire sur ses expériences aide à les mettre en ordre (Pennebaker, 1997). Constater qu’on a traversé des phases difficiles, c’est faire l’expérience de sa propre capacité à y faire face – la source la plus importante du sentiment d’efficacité personnelle (Bandura, 1977) et un élément de la résilience (Masten, 2014).",
+        "quellen": [
+          "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Ne marquer que trois mois : le meilleur, le plus difficile, le mois actuel. Débuts de phrases à l’oral.",
+          "schwerer": "Pour chaque creux, noter quel skill ou quelle personne a aidé."
+        },
+        "impulse": [
+          "Quelle phrase de votre Skills-Pass vous surprend aujourd’hui ?",
+          "Que savez-vous aujourd’hui de vous que vous ne saviez pas encore en septembre ?"
+        ],
+        "tipps": [
+          "Les jeunes arrivés en cours d’année commencent par leur premier mois dans le groupe.",
+          "Ne pas interpréter ni évaluer la courbe – elle appartient à la personne."
+        ],
+        "achtung": "Les creux peuvent rappeler des moments pénibles : ne pas poser de questions ; en cas de larmes ou d’hésitation, proposer un entretien après la séance. En cas d’indices de danger, agir selon le concept de protection et informer la direction compétente (responsable).",
+        "material": "Skills-Pass, une fiche par personne, crayons de couleur"
+      }
     }
   },
   {
@@ -569,6 +943,71 @@
         ],
         "achtung": "Die Briefe bleiben ungelesen; das vorher klar sagen und einhalten. Wird jemand beim Schreiben sehr traurig oder deutet an, in einem Jahr „nicht mehr da“ sein zu wollen, das ernst nehmen: noch am selben Tag das Gespräch suchen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt je Person, Umschläge, Stifte, verschließbare Box, leise Musik"
+      }
+    },
+    "fr": {
+      "titel": "Lettre à moi-même",
+      "untertitel": "À ouvrir dans un an",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "La lettre est glissée dans une enveloppe fermée. Personne ne la lit – pas même la personne qui anime le groupe. Dans un an, tu la récupères."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris-toi une lettre. Les débuts de phrases sont là pour t’aider – tu peux t’en passer."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Salut …, nous sommes le …",
+            "En ce moment, je pense beaucoup à …",
+            "Cette année, j’ai appris …",
+            "Ma fierté : …",
+            "Ce skill doit t’accompagner : …",
+            "Quand ça devient difficile, souviens-toi : …",
+            "Dans un an, je te souhaite …"
+          ],
+          "linien": 3
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Amicalement, moi – de cet été"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes notent dans une lettre à eux-mêmes ce qu’ils retiennent de l’année et ce qu’ils se souhaitent. Dans un an, ils la relisent.",
+        "ablauf": [
+          "À clarifier avant, en équipe : qui garde les enveloppes, où (sous clé), quand elles sont rendues, et que se passe-t-il si quelqu’un quitte l’établissement ?",
+          "Poser le cadre (2 min) : personne ne lit les lettres, pas même la personne qui anime. Annoncer la date et le lieu de la remise.",
+          "Écrire (10 min) : musique douce ; les débuts de phrases sont une proposition, pas une obligation.",
+          "Fermer (3 min) : plier la lettre, la glisser dans l’enveloppe, la coller ; écrire à l’extérieur le nom et la date de remise. Déposer les enveloppes, bien visibles, dans une boîte qui ferme à clé.",
+          "Remise après un an : en personne, de préférence lors d’un bref entretien individuel – certaines lettres font naître des émotions."
+        ],
+        "hintergrund": "Une lettre à son moi futur relie rétrospective et perspective : le vécu est mis en mots et le regard se tourne vers les souhaits et les valeurs. Écrire sur des expériences personnelles aide à les mettre en ordre et à les digérer (Pennebaker, 1997). La perspective d’un moi futur crée de la distance ; avec ce recul, il est plus facile de se parler avec lucidité et bienveillance (Kross & Ayduk, 2017). Quand la lettre arrive un an plus tard, ce qui a été appris est rappelé une fois encore – à un moment où le cours est depuis longtemps terminé.",
+        "quellen": [
+          "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Ne choisir que trois débuts de phrases. Qui n’aime pas écrire glisse des mots-clés et un dessin dans l’enveloppe.",
+          "schwerer": "Écrire librement, sans débuts de phrases, et poser à la fin trois questions au moi futur, auxquelles il devra répondre en lisant."
+        },
+        "impulse": [
+          "Qu’aimeriez-vous qu’on vous dise dans un an ?",
+          "Quel skill doit passer dans l’année scolaire suivante ?"
+        ],
+        "tipps": [
+          "Noter tout de suite la date de remise dans l’agenda de l’équipe pour qu’elle ne passe pas à la trappe.",
+          "À la remise, ne pousser personne à ouvrir la lettre devant les autres – elle est privée."
+        ],
+        "achtung": "Les lettres restent non lues ; le dire clairement d’avance et s’y tenir. Si un ou une jeune devient très triste en écrivant ou laisse entendre qu’il ou elle ne veut plus « être là » dans un an, le prendre au sérieux : chercher l’entretien le jour même, agir selon le concept de protection et informer la direction compétente (responsable).",
+        "material": "Une fiche par personne, enveloppes, stylos, boîte fermant à clé, musique douce"
       }
     }
   },
@@ -666,6 +1105,72 @@
         ],
         "achtung": "Die Leitung liest jedes Blatt, bevor es zurückkommt. Abwertende oder zweideutige Sätze überkleben und später mit der Person klären, die sie geschrieben hat – nicht in der Gruppe.",
         "material": "Malerkrepp, Filzstifte, Musik, Klarsichthüllen"
+      }
+    },
+    "fr": {
+      "titel": "Ce qu’on apprécie chez toi",
+      "untertitel": "Des mots dans le dos pour se dire au revoir",
+      "bausteine": [
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Pour :"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment écrire",
+          "punkte": [
+            "Une phrase qui encourage : une force que tu as remarquée chez la personne, ou un merci.",
+            "Concret : pas seulement « tu es sympa », mais quand et comment.",
+            "Rien sur l’apparence, pas de blagues aux dépens de la personne.",
+            "Avec ou sans ton nom – comme tu veux."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écrivez à la personne une phrase qui encourage.",
+          "hinweis": "Par exemple : J’ai aimé la façon dont tu … · Merci d’avoir … · J’ai remarqué chez toi que …"
+        },
+        {
+          "art": "feld",
+          "hoehe": 19
+        },
+        {
+          "art": "aufgabe",
+          "text": "Détache ta feuille et lis-la tranquillement. Entoure la phrase que tu veux retenir."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes se donnent, pour se dire au revoir, des retours concrets et bienveillants, et repartent avec une feuille qui montre leurs forces vues par le groupe.",
+        "ablauf": [
+          "Inscrire les noms, lire les règles (2 min). Feutres ou stylos à bille, pas de marqueurs permanents.",
+          "Écrire (7 min) : fixer les feuilles dans le dos avec du ruban de masquage ; qui ne le souhaite pas pose sa feuille sur sa chaise. Musique douce. La personne qui anime écrit partout.",
+          "Relecture (1 min) : la personne qui anime ramasse les feuilles et les lit ; une phrase inappropriée est recouverte.",
+          "Lecture (5 min) : chacun lit en silence et entoure une phrase. Qui le souhaite la lit à voix haute."
+        ],
+        "hintergrund": "À l’adolescence, la reconnaissance des pairs pèse de plus en plus dans l’image de soi (Harter, 2012). Les retours du groupe agissent donc particulièrement – surtout quand ils nomment un comportement observé : c’est plus crédible et plus utile qu’un compliment général (Hattie & Timperley, 2007). Exprimer clairement sa gratitude profite aussi à celui ou celle qui l’exprime (Seligman et al., 2005). L’exercice prolonge la boîte aux trésors des forces de la séance 6 : les autres peuvent maintenant appuyer ces forces sur des moments vécus ensemble.",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "differenzierung": {
+          "leichter": "Écrire en grand au tableau les trois débuts de phrases de la tâche 1.",
+          "schwerer": "Pour chaque force, citer un moment vécu pendant l’année."
+        },
+        "impulse": [
+          "Quelle phrase vous a surpris ?",
+          "Quelle force emportez-vous dans l’année suivante ?"
+        ],
+        "tipps": [
+          "Fixer un ordre (tout le monde avance dans le sens des aiguilles d’une montre) pour que personne ne soit oublié.",
+          "Remettre la feuille dans une pochette transparente – beaucoup la gardent longtemps."
+        ],
+        "achtung": "La personne qui anime lit chaque feuille avant qu’elle soit rendue. Recouvrir les phrases dévalorisantes ou ambiguës et en parler plus tard avec la personne qui les a écrites – pas devant le groupe.",
+        "material": "Ruban de masquage, feutres, musique, pochettes transparentes"
       }
     }
   }

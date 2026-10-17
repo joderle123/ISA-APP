@@ -167,8 +167,6 @@ export interface RueckmeldungArg {
   ziele?: { code: string; richtung: 'gelingt' | 'mit-hilfe' | 'noch-nicht' }[]
   /** Schlüssel aus hallo.chips */
   chips?: string[]
-  /** Selbsteinschätzung des Kindes je Ziel (1–4), Sitzung 1 und letzte Sitzung einer Folge */
-  selbst?: Record<string, 1 | 2 | 3 | 4>
   /** Stimme des Kindes (E-M15): Ref des gewählten Schritts, Daumen am Schluss */
   kind?: { wahl?: string; daumen?: 'hoch' | 'runter' }
   ereignisse?: Ereignis[]

@@ -371,9 +371,6 @@ export interface Rueckmeldung {
   am: string
   /** Stimme des Kindes (E-M15): was es gewählt hat, sein Daumen am Schluss – zwei freiwillige Klicks der Fachkraft */
   kind?: { wahl?: string; daumen?: 'hoch' | 'runter' }
-  /** Selbsteinschätzung des Kindes je Ziel (1 noch nicht … 4 fast immer) – in Sitzung 1 und der letzten Sitzung einer Folge
-   *  (Wirkung, 17.10.2026; der Hub zeigt „Wirkt es?“) */
-  selbst?: Record<string, 1 | 2 | 3 | 4>
 }
 
 /** Eine Alternative beim Antippen (5.8) */

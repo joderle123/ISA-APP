@@ -172,6 +172,145 @@
         "achtung": "Der Film berührt Umzug, Verlust und Heimweh, Teil 2 zeigt eine Panikattacke. Wer sich stark mit Kummer oder Zweifel identifiziert, wird nicht vor der Gruppe befragt; ein Einzelgespräch anbieten. Vorführrechte und Altersfreigabe vorab klären lassen.",
         "material": "Klemmbretter, Stifte, Gefühlskarten aus Einheit 8"
       }
+    },
+    "fr": {
+      "titel": "Mon émotion fil rouge",
+      "untertitel": "Fiche d’observation pour tout le film « Vice-versa » (1 ou 2)",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "À la séance 8, vous avez vu des extraits. Maintenant, tu suis une émotion pendant tout le film : ton émotion fil rouge."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Coche ton émotion fil rouge.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "Joie",
+            "Tristesse",
+            "Peur",
+            "Colère",
+            "Dégoût",
+            "Anxiété (film 2)",
+            "Envie (film 2)",
+            "Embarras (film 2)",
+            "Ennui (film 2)"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pendant le film ou à la pause : quand ton émotion est-elle aux commandes – et que fait Riley alors ?",
+          "hinweis": "Des mots-clés suffisent. Dans le noir, nul besoin d’écrire joliment.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Scène (mot-clé)",
+            "Qui est aux commandes ?",
+            "Que fait Riley alors ?"
+          ],
+          "breiten": [
+            2.2,
+            1.4,
+            2.2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Riley se présente dans sa nouvelle classe.",
+            "Tristesse",
+            "Elle se met à pleurer devant tout le monde."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le parcours de Riley dans le film : qui est aux commandes au début, au milieu et à la fin ?",
+          "hinweis": "Écris dans chaque case une émotion et un mot-clé sur la scène.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Au début",
+              "text": "Tout roule pour Riley."
+            },
+            {
+              "titel": "Au milieu",
+              "text": "Tout se dérègle."
+            },
+            {
+              "titel": "À la fin",
+              "text": "Quelque chose a changé."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Joie veut tenir longtemps une autre émotion loin de la console. Laquelle – et pourquoi en a-t-on quand même besoin à la fin ?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton émotion et toi : complète les phrases.",
+          "hinweis": "Ce que tu écris sur toi, personne ne le lit à voix haute si tu ne le veux pas.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon émotion aide Riley quand …",
+            "Ça devient difficile quand elle est seule aux commandes, parce que …",
+            "Le message le plus important de tout le film, pour moi : …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes suivent une émotion pendant tout le film, puis formulent son message : quelle émotion est aux commandes et quand, et à quoi sert la tristesse ?",
+        "ablauf": [
+          "Rendez-vous 1, avant le film (5 min) : distribuer les émotions sur cartes, cocher à la tâche 1.",
+          "Pendant le film et à la pause : mots-clés sur trois ou quatre scènes au plus (tâche 2).",
+          "Rendez-vous 2, après le film (10 min) : tâches 3 et 4 en individuel, puis comparer en cercle le parcours de Riley.",
+          "Tâche 5 facultative. Comparer les messages avec l’affiche de la séance 8."
+        ],
+        "hintergrund": "Le film montre les émotions comme des personnages qui orientent pensée et action. Keltner et Ekman, qui ont conseillé l’équipe du film, soulignent que la tristesse y apparaît comme un signal social : elle appelle réconfort et proximité (Keltner & Ekman, 2015). Les cinq personnages correspondent aux émotions de base d’Ekman (1992). La fin montre des souvenirs à la fois joyeux et tristes – que l’on puisse ressentir les deux à la fois, Larsen et al. (2001) l’ont montré. La consigne d’observation fait du visionnage une observation active.",
+        "quellen": [
+          "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696."
+        ],
+        "differenzierung": {
+          "leichter": "Faire seulement les tâches 1 et 3 ; après le film, l’adulte propose trois scènes clés au choix.",
+          "schwerer": "Suivre aussi une deuxième émotion et la comparer à la sienne."
+        },
+        "impulse": [
+          "De quelle émotion Riley avait-elle besoin dans cette scène ?",
+          "Que se passe-t-il quand plus rien ne marche à la console ?"
+        ],
+        "tipps": [
+          "Fiches sur planchettes à pince ; dans une salle tamisée, on écrit plus facilement."
+        ],
+        "achtung": "Le film aborde déménagement, perte et mal du pays ; le film 2 montre une crise de panique. Qui s’identifie fortement à la tristesse ou à l’anxiété n’est pas interrogé devant le groupe ; proposer un entretien individuel. Vérifier d’avance droits de projection et âge minimum.",
+        "material": "Planchettes à pince, stylos, cartes d’émotions (séance 8)"
+      }
     }
   },
   {
@@ -359,6 +498,161 @@
         "achtung": "Der Film zeigt Armut, Wohnungslosigkeit und die Trennung der Eltern. Alle Aufgaben beziehen sich auf die Filmfigur; niemand wird nach eigenen Erfahrungen gefragt. Wirkt jemand betroffen, ein Einzelgespräch anbieten.",
         "material": "Klemmbretter, Stifte"
       }
+    },
+    "fr": {
+      "titel": "Ce qui le fait tenir",
+      "untertitel": "Fiche d’observation pour le film « À la recherche du bonheur »",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Chris perd presque tout – et continue pourtant. Tu découvres ce qui le freine et ce qui le porte."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Coche ce à quoi tu fais particulièrement attention pendant le film.",
+          "hinweis": "Tu remplis les autres tâches après le film.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "Les revers",
+            "Les pensées et les croyances",
+            "Les sources de force : personnes et choses"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quels revers Chris subit-il ? Que ressent-il, et que fait-il alors ?",
+          "hinweis": "La roue des émotions aide à nommer les émotions avec précision.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Revers",
+            "Ce qu’il ressent",
+            "Ce qu’il fait alors"
+          ],
+          "breiten": [
+            2.1,
+            1.5,
+            2.2
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Il doit quitter l’appartement avec son fils.",
+            "Honte, peur",
+            "Il cherche aussitôt un nouvel endroit où dormir."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui donne de la force à Chris – et qu’est-ce qui lui en prend ?"
+        },
+        {
+          "art": "batterie",
+          "laden": "Ce qui lui donne de la force",
+          "leeren": "Ce qui lui en prend",
+          "linien": 3
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelles pensées Chris pourrait-il avoir dans les moments difficiles ? Pour chaque pensée qui freine, trouves-en une qui porte."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Moment du film",
+            "Pensée qui freine",
+            "Pensée qui porte"
+          ],
+          "breiten": [
+            1.8,
+            1.9,
+            2.1
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "La nuit, dans une station de métro avec son fils.",
+            "« Je suis un mauvais père. »",
+            "« Cette nuit, on est ensemble. Demain, je continue de chercher. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quels skills Chris utilise-t-il ? Coche ce que tu as vu dans le film et complète.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "transformer une mauvaise nuit en jeu",
+            "organiser son temps avec précision, avoir un plan",
+            "accepter de l’aide, par exemple dans un hébergement d’urgence",
+            "continuer malgré la peur",
+            "laisser venir les émotions – même pleurer",
+            "rester calme quand on le traite injustement"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le film s’appelle « À la recherche du bonheur ». Et pour toi ? Complète les phrases.",
+          "hinweis": "La dernière phrase est rien que pour toi. Personne n’a besoin de la lire à voix haute.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "À la fin du film, le bonheur, pour Chris, c’est …",
+            "Pour moi, le bonheur, c’est …",
+            "Un jour où ça va mal, ce qui me fait tenir : …"
+          ],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes observent chez un personnage de film comment revers, pensées et sources de force sont liés, et appliquent à l’histoire d’un autre le travail sur les croyances.",
+        "ablauf": [
+          "Rendez-vous 1, avant le film (5 min) : répartir les points d’attention (tâche 1), deux personnes par point.",
+          "Pendant le film : seulement des mots-clés, de préférence à la pause.",
+          "Rendez-vous 2, après le film (10 min) : tâches 2 à 4 en individuel, puis recueillir au tableau en trois colonnes.",
+          "Tâches 5 et 6 en discussion : quels skills Chris utilise-t-il, et le bonheur, est-ce la même chose que l’argent ? La dernière phrase reste privée."
+        ],
+        "hintergrund": "La résilience naît de sources ordinaires : relations fiables, maîtrise de soi, espoir et expérience de pouvoir agir sur les choses (Masten, 2014). Dans le film, le fils est pour Chris à la fois une raison d’avancer et une source de force. Le travail sur les pensées qui freinent et celles qui portent suit l’idée que ce n’est pas l’événement seul, mais son évaluation qui détermine ce que nous ressentons et faisons (Ellis, 1962). Qui pense que les capacités peuvent se développer voit plus volontiers dans un revers une occasion d’apprendre (Dweck, 2006). La question du bonheur évite de croire que tout ne tient qu’à la volonté.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Faire seulement les tâches 2 et 3 ; l’adulte propose trois revers au choix.",
+          "schwerer": "Vérifier et améliorer une pensée qui porte à l’aide des six règles de la séance 18."
+        },
+        "impulse": [
+          "À la fin du film, le bonheur est-il la même chose que l’argent ?",
+          "Qui a aidé Chris – et y serait-il arrivé seul ?"
+        ],
+        "tipps": [
+          "Les pensées qui portent doivent sonner de façon que Chris puisse y croire – pas comme une phrase de calendrier."
+        ],
+        "achtung": "Le film montre la pauvreté, le sans-abrisme et la séparation des parents. Toutes les tâches portent sur le personnage ; personne n’est interrogé sur son propre vécu. Si quelqu’un semble touché, proposer un entretien individuel.",
+        "material": "Planchettes à pince, stylos"
+      }
     }
   },
   {
@@ -542,6 +836,155 @@
         ],
         "achtung": "Niemand muss Handy oder Accounts zeigen. Den Abschnitt zu Selbstverletzung und Suizid vorher sichten, bei belasteten Gruppen weglassen. Bei Hinweisen auf Cybermobbing ein Einzelgespräch führen und die Leitung (Responsable) informieren.",
         "material": "Stifte, Themenkarten"
+      }
+    },
+    "fr": {
+      "titel": "Ce que l’appli fait de moi",
+      "untertitel": "Fiche d’arrêts pour le documentaire « Derrière nos écrans de fumée »",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Le documentaire mêle interviews de personnes qui ont créé des applis et scènes jouées. Repère aussi où il crée lui-même une ambiance, avec de la musique et des scènes jouées."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Arrêt 1 : que sait de toi l’appli que tu utilises le plus ?",
+          "hinweis": "À gauche, ce que tu indiques volontairement ; à droite, ce qu’elle collecte au passage.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Ce que j’indique volontairement",
+              "beispiel": "nom, date de naissance, mes photos",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ce qu’elle collecte au passage",
+              "beispiel": "où je suis, quand je suis en ligne, combien de temps je reste sur une vidéo",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Arrêt 2 : quelles astuces te retiennent dans une appli ? Coche celles qui marchent sur toi.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "le défilement sans fin",
+            "les vidéos qui s’enchaînent toutes seules",
+            "les séries de jours ou flammes à ne pas perdre",
+            "les notifications avec le nom d’amis",
+            "les likes qui arrivent au compte-gouttes",
+            "les publications qui disparaissent après 24 h"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Arrêt 3 : lis comment se forme une bulle d’opinions."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Je regarde plus longtemps",
+              "text": "Une vidéo me captive."
+            },
+            {
+              "titel": "L’appli le remarque",
+              "text": "Elle m’en montre plus."
+            },
+            {
+              "titel": "Toujours la même chose",
+              "text": "D’autres sujets se font rares."
+            },
+            {
+              "titel": "La bulle est formée",
+              "text": "Tout le monde semble voir le monde comme moi."
+            }
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Que peux-tu faire pour que ta bulle ne devienne pas trop étroite ?",
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Arrêt 4 : ta prochaine expérience avec le téléphone, pour une semaine – en phrase « si … alors ».",
+          "hinweis": "Qu’est devenu ton plan de la séance 27 ? Tu en parleras au prochain check-in.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si c’est l’heure d’aller me coucher,",
+              "dann": "je mets mon téléphone à charger dans la cuisine."
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Aide en cas de problème sur internet",
+          "eintraege": [
+            {
+              "name": "BEE SECURE Helpline (anonyme, gratuit) : cyberharcèlement, chantage avec des images",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "À quatre arrêts du documentaire, les jeunes examinent comment les applis collectent des données, captent l’attention et fabriquent des bulles d’opinions, et planifient une expérience d’une semaine avec leur téléphone.",
+        "ablauf": [
+          "Avant l’extrait 1 : consigne d’observation – « Où le documentaire informe-t-il, où crée-t-il une ambiance ? »",
+          "Arrêts 1 et 2 (5 min chacun) : remplir seul, puis échanger des exemples en plénière ou à deux.",
+          "Après l’extrait 3, un tour de papiers anonyme, volontairement pas sur la fiche ; arrêt 3 après le jeu de la bulle.",
+          "Arrêt 4 (5 min) : regarder brièvement le plan de la séance 27, puis écrire une nouvelle expérience sous forme de phrase « si … alors » ; en reparler au prochain check-in."
+        ],
+        "hintergrund": "Le documentaire est parlant, mais accentue les traits. De grandes analyses ne trouvent qu’un lien faible entre l’usage des médias numériques et le bien-être des adolescents (Orben & Przybylski, 2019). Se comparer à des images retouchées peut toutefois nuire à l’humeur et à l’image du corps (Fardouly et al., 2015). L’accompagnement et des règles personnelles fonctionnent mieux que les interdits (Livingstone & Blum-Ross, 2020) – c’est pourquoi la fiche se termine sur une expérience choisie par soi-même.",
+        "quellen": [
+          "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
+          "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press."
+        ],
+        "differenzierung": {
+          "leichter": "Arrêts 1 et 2 à l’oral ; seule l’expérience avec le téléphone est écrite.",
+          "schwerer": "Examiner comment le documentaire crée lui-même une ambiance : qui prend la parole, qui non, quelle musique passe quand ?"
+        },
+        "impulse": [
+          "Qui gagne de l’argent si vous restez plus longtemps ?",
+          "Que garderiez-vous dans votre appli préférée si vous pouviez la réinventer ?"
+        ],
+        "tipps": [
+          "Les téléphones restent dans la poche pendant que l’on remplit la fiche ; ces astuces, tout le monde les connaît sur le bout des doigts."
+        ],
+        "achtung": "Personne n’a à montrer son téléphone ni ses comptes. Visionner d’avance le passage sur l’automutilation et le suicide et le supprimer pour les groupes fragilisés. En cas d’indices de cyberharcèlement, mener un entretien individuel et informer la direction compétente (responsable).",
+        "material": "Stylos, cartes thématiques"
       }
     }
   },
@@ -732,6 +1175,163 @@
         "achtung": "Barfußgehen, Augenschließen und Liegen sind freiwillig. Die Barfußstrecke vorher prüfen, Allergien und Notfallmedikamente klären, nach dem Tag auf Zecken absuchen lassen. Fotos zeigen nur Natur.",
         "material": "Klarsichthüllen, Klemmbretter, Stifte, Würfel, Decken, Kamera der Einrichtung"
       }
+    },
+    "fr": {
+      "titel": "Parcours de pleine conscience",
+      "untertitel": "Six stations en plein air – à chacune, un sens est au centre",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "À chaque station, l’un ou l’une d’entre vous lit la carte à voix haute. Puis vous faites l’exercice sans parler. On ne parle qu’après."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cartes de stations : à découper une fois et à poser aux stations.",
+          "hinweis": "Pour l’adulte : les glisser dans des pochettes transparentes et les lester avec une pierre.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "karten": [
+            {
+              "bild": "icon:footsteps",
+              "titel": "1 · Chemin pieds nus",
+              "text": "Enlevez vos chaussures. Avancez lentement sur l’herbe, la mousse, la terre et le sable. Où est-ce froid, doux, piquant ? Qui le souhaite ferme les yeux et se laisse guider par le bras."
+            },
+            {
+              "bild": "icon:ear",
+              "titel": "2 · Carte sonore",
+              "text": "Asseyez-vous, yeux fermés, et écoutez seulement pendant deux minutes. Puis chacun dessine une croix pour soi et note tous les bruits autour : proches, lointains, à gauche, à droite."
+            },
+            {
+              "bild": "icon:dice-5",
+              "titel": "3 · Dé des sens",
+              "text": "Lancez le dé : 1 voir, 2 entendre, 3 sentir une odeur, 4 toucher avec les mains, 5 ressentir avec les pieds, 6 au choix. Trois minutes sur ce seul sens, puis relancez le dé."
+            },
+            {
+              "bild": "icon:tree",
+              "titel": "4 · Un arbre de près",
+              "text": "Choisissez un arbre. Comment l’écorce est-elle au toucher, quelle odeur a-t-elle ? Quelles couleurs, quels petits animaux découvrez-vous en vous approchant tout près ?"
+            },
+            {
+              "bild": "icon:camera",
+              "titel": "5 · Photo du calme",
+              "text": "Prenez, avec l’appareil du groupe, une photo qui montre à quoi ressemble le calme pour vous. Pas de personnes sur l’image. Regardez longtemps d’abord, puis déclenchez une seule fois."
+            },
+            {
+              "bild": "icon:cloud",
+              "titel": "6 · Nuages ou feuillage",
+              "text": "Allongez-vous sur la couverture et regardez en l’air pendant trois minutes. Qu’est-ce qui bouge, qu’est-ce qui change ? Gardez les yeux ouverts."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel est ton niveau de calme avant le départ – et à la fin de la journée ?",
+          "hinweis": "Coche à chaque fois un chiffre : 0 = pas du tout calme, 10 = très calme.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Avant le parcours",
+          "von": "pas du tout calme",
+          "bis": "très calme",
+          "stufen": 11
+        },
+        {
+          "art": "skala",
+          "frage": "À la fin de la journée",
+          "von": "pas du tout calme",
+          "bis": "très calme",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après chaque station : qu’as-tu perçu ? Un mot-clé suffit.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Station",
+            "Ce que j’ai perçu",
+            "Ce qui m’a surpris"
+          ],
+          "breiten": [
+            0.8,
+            2.4,
+            2.4
+          ],
+          "zeilen": 6,
+          "nummern": 1,
+          "beispiel": [
+            "p. ex.",
+            "La mousse était plus chaude que l’herbe.",
+            "Le nombre d’oiseaux qu’on entend quand on se tait."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel exercice emportes-tu dans ton quotidien ? Écris un plan « si … alors ».",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si j’ai la tête pleine après les cours,",
+              "dann": "je m’assieds deux minutes sur un banc et je compte tous les bruits."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi dehors ?",
+          "text": "La nature attire doucement l’attention, sans l’épuiser. La tête peut ainsi récupérer – beaucoup le remarquent déjà au bout de dix minutes."
+        }
+      ],
+      "lehrer": {
+        "ziel": "À six stations, les jeunes dirigent leur attention sur un sens à la fois, comparent leur calme avant et après le parcours et choisissent un exercice pour le quotidien.",
+        "ablauf": [
+          "Préparation : imprimer la page 1 une fois, découper les cartes et les poser dans des pochettes transparentes ; page 2 pour chaque personne.",
+          "Départ (5 min) : premier chiffre de calme, former des binômes, répartir les stations de départ.",
+          "Parcours (60 min) : environ neuf minutes par station, changement au signal, puis une ligne dans le tableau.",
+          "À la fin de la journée : deuxième chiffre de calme et plan « si … alors ». « Quelle station fonctionne aussi dans la cour de récréation ? »"
+        ],
+        "hintergrund": "Selon la théorie de la restauration de l’attention, la nature attire doucement l’attention sans la solliciter ; la concentration volontaire peut ainsi récupérer (Kaplan, 1995). La pleine conscience consiste à percevoir le moment de façon intentionnelle et sans jugement (Kabat-Zinn, 1990) ; placer tour à tour un sens au centre rend cela concret. Les programmes de pleine conscience à l’école montrent des effets positifs, surtout sur la concentration et la gestion du stress (Zenner et al., 2014). Les deux chiffres de calme rendent l’effet visible pour les jeunes eux-mêmes.",
+        "quellen": [
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.",
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+          "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+        ],
+        "differenzierung": {
+          "leichter": "Quatre stations seulement ; le tableau à l’oral plutôt qu’à l’écrit.",
+          "schwerer": "Diriger soi-même l’exercice du groupe à une station."
+        },
+        "impulse": [
+          "À quelle station était-ce le plus difficile de rester silencieux ?",
+          "Où trouves-tu, dans ton quotidien, un endroit pour un tel exercice ?"
+        ],
+        "tipps": [
+          "S’il pleut, supprimer la station allongée : compter les gouttes sous un arbre et décrire l’odeur de la terre mouillée."
+        ],
+        "achtung": "Marcher pieds nus, fermer les yeux et s’allonger sont facultatifs. Vérifier le chemin pieds nus à l’avance, clarifier allergies et médicaments d’urgence, faire vérifier l’absence de tiques après la journée. Les photos ne montrent que la nature.",
+        "material": "Pochettes transparentes, planchettes à pince, stylos, dé, couvertures, appareil photo de l’établissement"
+      }
     }
   },
   {
@@ -908,6 +1508,153 @@
         ],
         "achtung": "Keine echten Vorfälle oder Personen nachspielen. Wer selbst Mobbing erlebt, wird nicht in die Rolle der Betroffenen gedrängt. Filmen nur mit Einverständnis, auf Geräten der Einrichtung; nichts hochladen.",
         "material": "Szenenplan in A3, Stifte, Plakat"
+      }
+    },
+    "fr": {
+      "titel": "Notre pièce",
+      "untertitel": "Plan de scènes pour une pièce de théâtre ou une vidéo sur un thème du cours",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Fixez le thème et le message.",
+          "hinweis": "Le message tient en une phrase. Chaque scène doit y correspondre.",
+          "symbole": [
+            "gruppe",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Notre thème : …",
+            "Notre message en une phrase : …",
+            "Après la pièce, le public devrait …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifiez vos scènes : une case par scène. Dessinez des bonshommes ou notez des mots-clés, et dessous la phrase la plus importante.",
+          "hinweis": "Quatre à six scènes suffisent.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "leer": true,
+              "untertitel": ""
+            },
+            {
+              "leer": true,
+              "untertitel": ""
+            },
+            {
+              "leer": true,
+              "untertitel": ""
+            },
+            {
+              "leer": true,
+              "untertitel": ""
+            },
+            {
+              "leer": true,
+              "untertitel": ""
+            },
+            {
+              "leer": true,
+              "untertitel": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Répartissez les tâches – devant et derrière la scène ou la caméra.",
+          "hinweis": "La mise en scène, la caméra, le son, les accessoires et la voix off comptent autant que les rôles."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Rôle ou tâche",
+            "Que veut le personnage ? Que faut-il faire ?",
+            "Qui ?"
+          ],
+          "breiten": [
+            1.6,
+            3,
+            1.1
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "Amie d’Ana",
+            "Elle veut faire partie du groupe – et ose enfin dire stop à la fin.",
+            "Léa"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nos règles pour jouer et filmer : cochez et complétez.",
+          "symbole": [
+            "gruppe",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "frei": 1,
+          "items": [
+            "Personne ne joue son propre rôle ni celui d’une vraie personne de l’école.",
+            "Qui a un rôle difficile peut le rendre à tout moment.",
+            "La violence est seulement suggérée – au ralenti ou en image fixe.",
+            "Contact physique seulement après accord. Stop veut dire stop.",
+            "Les enregistrements restent dans l’établissement et ne sont pas partagés.",
+            "Après avoir joué, nous sortons consciemment de nos rôles."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Le théâtre-forum, mode d’emploi",
+          "text": "Après la représentation, une scène est rejouée. Quand une personne du public crie « Stop ! », elle propose ce qu’un personnage pourrait faire autrement – ou le joue directement. On remplace les témoins et les amis dans la scène, jamais la personne attaquée."
+        },
+        {
+          "art": "frage",
+          "text": "Après la représentation : qu’est-ce qui est arrivé jusqu’au public – et à quoi l’avez-vous remarqué ?",
+          "linien": 3
+        }
+      ],
+      "lehrer": {
+        "ziel": "Le groupe planifie une courte pièce ou vidéo : message, quatre à six scènes, tâches devant et derrière la scène, et règles qui rendent le jeu sûr.",
+        "ablauf": [
+          "Rendez-vous 1 (25 min) : choisir le thème et fixer le message en une phrase (tâche 1), l’écrire aussi en grand sur une affiche.",
+          "Rendez-vous 1 (30 min) : esquisser les scènes (tâche 2), répartir les tâches (tâche 3), jouer chaque scène à grands traits.",
+          "Avant le premier jeu : cocher et compléter ensemble les règles (tâche 4).",
+          "Rendez-vous 2 : répétitions, représentation ou tournage, puis théâtre-forum et question finale."
+        ],
+        "hintergrund": "Celui ou celle qui joue lui-même un comportement et y réussit se vit comme efficace ; qui regarde apprend par le modèle (Bandura, 1977). Les programmes d’apprentissage socio-émotionnel agissent surtout par des exercices actifs (Durlak et al., 2011). Sur le harcèlement, regarder du côté des témoins est utile, car le harcèlement est un processus de groupe aux rôles répartis (Salmivalli et al., 1996). Qui prend volontairement un rôle pesant et le quitte consciemment à la fin ne reste pas collé au personnage.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+        ],
+        "differenzierung": {
+          "leichter": "Au lieu d’une pièce, trois images fixes : avant – le moment de la décision – après.",
+          "schwerer": "Montrer une scène deux fois : comme cela se passe souvent, et avec un skill du cours."
+        },
+        "impulse": [
+          "Quelle scène doit absolument figurer pour que l’on comprenne le message ?",
+          "Qui, dans le public, doit se sentir interpellé ?"
+        ],
+        "tipps": [
+          "Dire explicitement que les tâches derrière la caméra comptent autant – les personnes réservées y trouvent ainsi leur place."
+        ],
+        "achtung": "Ne pas rejouer d’incidents ni de personnes réels. Qui subit soi-même du harcèlement n’est pas poussé dans le rôle de la victime. Filmer seulement avec accord, sur des appareils de l’établissement ; ne rien mettre en ligne.",
+        "material": "Plan de scènes en A3, stylos, affiche"
       }
     }
   },
@@ -1112,6 +1859,173 @@
         "achtung": "Nicht nach dem Grund für den Wechsel fragen und auch die Gruppe nicht fragen lassen. Gibt es Hinweise auf Belastungen oder eine Gefährdung, nicht in der Gruppe vertiefen, sondern ein Einzelgespräch führen und die zuständige Leitung (Responsable) informieren.",
         "material": "Stifte, Klemmbrett, Skills-Pass, Jahresbegleiter"
       }
+    },
+    "fr": {
+      "titel": "Bienvenue dans le groupe",
+      "untertitel": "Pour toi et ton parrain ou ta marraine : voici comment ça se passe ici",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Tu arrives dans un groupe qui se connaît déjà. Au début, c’est inhabituel – pour toi comme pour les autres. Ton parrain ou ta marraine passe cette fiche en revue avec toi."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Comment se déroule une séance",
+          "punkte": [
+            "Check-in : un mot sur la roue des émotions, plus tard aussi la tension de 0 à 100",
+            "bref retour sur la dernière fois, puis le thème du jour",
+            "un exercice, souvent avec une fiche – puis une pause avec un goûter",
+            "quelque chose d’actif : mouvement, jeu, souvent dehors",
+            "un skill pour se calmer",
+            "Réckbléck : une phrase dans le Skills-Pass, avec un tampon à la clé"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le groupe t’explique ses rituels. Coche ce que tu as compris.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "la roue des émotions",
+            "la tension de 0 à 100",
+            "le Skills-Pass",
+            "le Réckbléck",
+            "notre compagnon de l’année : arbre, boussole ou livre",
+            "notre propre rituel : ______________",
+            "notre contrat de groupe",
+            "« Je passe » est toujours permis."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris dans tes mots les trois règles les plus importantes du groupe.",
+          "hinweis": "Ton parrain ou ta marraine t’explique à quoi les règles ressemblent au quotidien.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "Règle",
+            "Chez nous, ça donne ça"
+          ],
+          "breiten": [
+            0.45,
+            2.3,
+            2.6
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "beispiel": [
+            "p. ex.",
+            "Ce qui est raconté ici reste ici.",
+            "Dehors, nous ne répétons pas qui a dit quoi."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que veux-tu savoir ? Et que peuvent savoir les autres sur toi ?",
+          "hinweis": "Un loisir ou ton plat préféré suffit tout à fait. Tu n’as pas à raconter pourquoi tu es ici.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mes questions au groupe",
+              "hoehe": 4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ce que les autres peuvent savoir sur moi",
+              "hoehe": 4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quel point te sens-tu à ta place ici ? Coche aujourd’hui – et de nouveau dans trois semaines.",
+          "hinweis": "Ton parrain ou ta marraine te posera alors la question.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Aujourd’hui",
+          "von": "tout est encore étranger",
+          "bis": "déjà chez moi",
+          "stufen": 11
+        },
+        {
+          "art": "skala",
+          "frage": "Dans trois semaines",
+          "von": "tout est encore étranger",
+          "bis": "déjà chez moi",
+          "stufen": 11
+        },
+        {
+          "art": "vertrag",
+          "titel": "Notre parrainage",
+          "text": "___ est mon parrain ou ma marraine pendant les premières semaines. Nous nous asseyons ensemble au goûter, et je peux tout demander. Le ___, nous verrons si j’ai encore besoin du parrainage.",
+          "unterschriften": [
+            "Nouveau ou nouvelle dans le groupe",
+            "Parrain ou marraine"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "Personne n’est obligé de dire pourquoi il ou elle est ici. Cela vaut pour toi comme pour tous les autres."
+        }
+      ],
+      "lehrer": {
+        "ziel": "La nouvelle personne découvre déroulement, rituels et règles du groupe sans rien dévoiler de personnel et reçoit un parrain ou une marraine comme personne de référence.",
+        "ablauf": [
+          "Avant la séance (10 min) : parcourir la fiche avec la nouvelle personne, expliquer le déroulement, recueillir les premières questions.",
+          "Pendant la séance, le groupe explique ses rituels ; la nouvelle personne coche (tâche 1).",
+          "Après le contrat de groupe : noter à deux, dans ses mots, les trois règles les plus importantes (tâche 2).",
+          "À la pause : tâche 3 à deux ; on ne lit à voix haute que ce que la nouvelle personne veut partager.",
+          "Pour finir, tâche 4 et parrainage ; après trois semaines, remplir ensemble la deuxième échelle."
+        ],
+        "hintergrund": "Un nouveau membre change le groupe : selon Tuckman (1965), les groupes développent leur capacité de travail par des phases de découverte, de friction et d’élaboration de normes, et une nouvelle arrivée remet, d’expérience, rôles et règles en mouvement. L’appartenance est un besoin psychologique fondamental (Deci & Ryan, 2000) ; une personne de référence parmi les pairs facilite l’arrivée. La fiche distingue volontairement ce que la nouvelle personne veut savoir de ce qu’elle révèle sur elle : c’est elle qui fixe le rythme.",
+        "quellen": [
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Le parrain ou la marraine écrit ; la nouvelle personne dicte ou montre seulement.",
+          "schwerer": "Après deux semaines, la nouvelle personne ajoute une règle ou une habitude qu’elle a remarquée dans le groupe."
+        },
+        "impulse": [
+          "Qu’est-ce qui vous a aidés à vous sentir arrivés, au début ?",
+          "À quoi une personne nouvelle remarque-t-elle qu’elle est la bienvenue ?"
+        ],
+        "tipps": [
+          "Pour parrain ou marraine, mieux vaut une personne fiable que la plus à l’aise à l’oral.",
+          "Reprendre la fiche avec les deux personnes après trois ou quatre semaines."
+        ],
+        "achtung": "Ne pas demander la raison du changement et ne pas laisser le groupe la demander. En cas d’indices de surcharge ou de danger, ne pas approfondir dans le groupe, mais mener un entretien individuel et informer la direction compétente (responsable).",
+        "material": "Stylos, planchette à pince, Skills-Pass, compagnon de l’année"
+      }
     }
   },
   {
@@ -1277,6 +2191,137 @@
         ],
         "achtung": "Das Blatt ersetzt keine Krisenintervention. Äußert jemand Gedanken, nicht mehr leben zu wollen, oder gibt es Hinweise auf Gewalt oder Gefährdung, sofort nach dem internen Schutzkonzept handeln, die Person nicht allein lassen und die zuständige Leitung (Responsable) informieren.",
         "material": "Stifte; Liste der Anlaufstellen im Haus"
+      }
+    },
+    "fr": {
+      "titel": "Ce qui m’aide maintenant",
+      "untertitel": "Après un événement difficile : ton plan pour les prochains jours",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Après un événement difficile, chacun réagit à sa manière",
+          "text": "Ce sont des réactions normales à quelque chose qui n’est pas normal. En général, elles s’atténuent au bout de quelques jours ou semaines.",
+          "punkte": [
+            "devoir y repenser sans cesse",
+            "avoir du mal à s’endormir ou se réveiller la nuit",
+            "être irritable ou pleurer facilement",
+            "se sentir engourdi, ne rien ressentir du tout",
+            "rire et se sentir mal ensuite",
+            "se faire du souci pour les autres"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui t’aide quand ça te rattrape ? Coche et complète.",
+          "hinweis": "Prends ce qui t’a déjà aidé avant. Dans ta valise de skills, tu trouveras d’autres idées.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "bouger : marcher, faire du vélo, du sport",
+            "5-4-3-2-1 : voir, entendre, ressentir",
+            "expirer plus longtemps qu’inspirer",
+            "de l’eau froide sur les mains",
+            "une musique qui me fait du bien",
+            "faire quelque chose avec les mains : dessiner, modeler, construire",
+            "parler avec quelqu’un – ou simplement être ensemble",
+            "faire quelque chose de normal : cuisiner, jouer aux jeux vidéo, les devoirs",
+            "écrire ce qui me traverse la tête",
+            "éviter un moment les infos et les vidéos à ce sujet"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prépare un moment difficile des prochains jours.",
+          "hinweis": "Par exemple la soirée au lit, le trajet vers l’école ou le moment où tout le monde en parle.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si, le soir au lit, tout recommence à me tourner dans la tête,",
+              "dann": "j’écoute ma playlist calme et j’inspire sur quatre temps, j’expire sur six."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui est là pour toi ? Inscris au moins une personne adulte.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Personne",
+            "Ce qu’elle fait pour moi",
+            "Comment la joindre"
+          ],
+          "breiten": [
+            1.5,
+            2.3,
+            1.7
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "mon grand frère",
+            "sortir avec moi quand je ne veux pas parler",
+            "l’appeler ou frapper à sa porte"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Quand demander plus d’aide",
+          "text": "Parle à une personne adulte de confiance ou au SePAS, ou appelle l’un des numéros ci-dessous, si …",
+          "punkte": [
+            "ça ne va pas mieux au bout de quelques semaines,",
+            "tu n’arrives presque plus à dormir, à manger ou à aller à l’école,",
+            "tu penses ne plus vouloir vivre – alors tout de suite, aujourd’hui même."
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes apprennent que leurs réactions à un événement éprouvant sont normales, choisissent des skills pour les moments difficiles des prochains jours et inscrivent des personnes joignables.",
+        "ablauf": [
+          "Après la conversation silencieuse, lire ensemble l’encadré sur les réactions normales (3 min) : « Peut-être que vous vous reconnaissez dans un point, peut-être dans aucun. Les deux sont normaux. »",
+          "Tâche 1 en individuel (5 min) ; qui le souhaite essaie un skill tout de suite.",
+          "Tâches 2 et 3 en individuel (7 min) ; passer dans les rangs et veiller à ce que chaque personne inscrive un adulte joignable.",
+          "Montrer les numéros d’aide ; qui veut les enregistre dans son téléphone. La fiche rentre à la maison, sans être ramassée."
+        ],
+        "hintergrund": "Après des événements éprouvants, aident surtout la sécurité, l’apaisement, le lien aux autres, le sentiment de pouvoir agir soi-même et l’espoir. La plupart des enfants et des adolescents se rétablissent grâce à des facteurs de protection ordinaires, comme des relations fiables et des routines (Masten, 2014). Le poids d’un événement dépend aussi des possibilités de faire face que l’on s’accorde (Lazarus & Folkman, 1984). La fiche rend ces possibilités concrètes : skills de tolérance au stress du cours (Rathus & Miller, 2015), plan pour des moments difficiles prévisibles, personnes joignables.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Faire seulement la tâche 1 et le tableau ; la personne qui anime aide à remplir.",
+          "schwerer": "Réfléchir en plus à ce que l’on peut faire pour un ami ou une amie qui va plus mal – et quand faire appel à des adultes."
+        },
+        "impulse": [
+          "Qu’est-ce qui t’a déjà aidé par le passé, quand il s’est passé quelque chose de difficile ?",
+          "Qui remarquerait que tu ne vas pas bien ?"
+        ],
+        "tipps": [
+          "Faire essayer brièvement les skills avant de remplir ; on coche ce qui a fait ses preuves, pas ce qui sonne bien."
+        ],
+        "achtung": "La fiche ne remplace pas une intervention de crise. Si quelqu’un exprime l’idée de ne plus vouloir vivre, ou en cas d’indices de violence ou de danger, agir aussitôt selon le concept de protection, ne pas laisser la personne seule et informer la direction compétente (responsable).",
+        "material": "Stylos ; liste des contacts de l’établissement"
       }
     }
   },
@@ -1515,6 +2560,209 @@
         ],
         "achtung": "Nicht nach Noten oder Reaktionen der Eltern fragen. Wirkt die Angst über Wochen lähmend, ein Einzelgespräch anbieten und auf SePAS oder Klassenlehrkraft hinweisen; bei Hinweisen auf eine Gefährdung die zuständige Leitung (Responsable) informieren.",
         "material": "Stifte, Prüfungstermine der Jugendlichen"
+      }
+    },
+    "fr": {
+      "titel": "Mon compte à rebours avant l’examen",
+      "untertitel": "Du plan de révision au plan anti-trou noir : traverser calmement le prochain examen",
+      "bausteine": [
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon examen (matière et date) : …"
+          ],
+          "linien": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment la tension agit-elle chez toi ? Pour chaque zone, inscris un skill.",
+          "hinweis": "Tu connais l’échelle grâce au cours : 0 = totalement calme, 100 = le maximum.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "thermometer",
+          "linien": 1,
+          "stufen": [
+            {
+              "titel": "0–30 : la tête est claire",
+              "text": "Parfois, il manque juste le déclic pour commencer. Voilà ce qui m’aide à démarrer :"
+            },
+            {
+              "titel": "30–70 : en alerte, un peu tendu",
+              "text": "Bien pour réviser, jusqu’à ce que les pensées se resserrent. Voilà ce qui m’aide alors :"
+            },
+            {
+              "titel": "70–100 : risque de trou noir",
+              "text": "La tête est vide, le corps prend le relais. Mon skill d’urgence :"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie à rebours à partir du jour de l’examen. Chaque séance de révision commence par un autotest.",
+          "hinweis": "Plusieurs courtes séances sur des jours différents rapportent plus qu’une longue soirée la veille.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Jour",
+            "Ce que j’apprends",
+            "Comment je me teste",
+            "Fait"
+          ],
+          "breiten": [
+            1,
+            2,
+            2.4,
+            0.8
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Lu, 4 jours avant",
+            "Vocabulaire chapitre 3",
+            "Cahier fermé, écrire 20 mots, puis comparer",
+            ""
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton compte à rebours pour les dernières heures : lis les conseils et écris dans chaque case ce que tu fais toi-même.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "La veille au soir",
+              "text": "Préparer le sac, ranger le téléphone, se coucher à temps."
+            },
+            {
+              "titel": "Le matin",
+              "text": "Prendre un petit-déjeuner, partir assez tôt."
+            },
+            {
+              "titel": "Devant la salle",
+              "text": "Ne pas parler de la matière si ça rend nerveux."
+            },
+            {
+              "titel": "Pendant l’examen",
+              "text": "Tout parcourir d’abord, commencer par un exercice facile."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Teste une pensée d’examen comme un détective.",
+          "hinweis": "Une bonne pensée contraire est réaliste et regarde ce que tu peux influencer.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Pensée d’examen",
+            "Qu’est-ce qui la contredit ?",
+            "Ma phrase utile"
+          ],
+          "breiten": [
+            1.7,
+            2.2,
+            2.1
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "« Je vais rater de toute façon. »",
+            "Au dernier devoir, j’avais 34 sur 60 – et cette fois, je m’y mets plus tôt.",
+            "« Je n’ai pas besoin de tout savoir. Je montre ce que je sais faire. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ton plan anti-trou noir pour l’examen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je sèche sur un exercice,",
+              "dann": "j’expire deux fois longuement, je marque l’exercice et je passe au suivant."
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon skill invisible dans la salle d’examen : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après l’examen : ne complète les phrases qu’une fois l’examen passé.",
+          "hinweis": "Au check-in, on demande ce qui a aidé – pas la note.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Voilà ce que je me dis, quelle que soit la façon dont ça s’est passé : …",
+            "Ce qui m’a aidé : …",
+            "La prochaine fois, je ferai autrement : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand la peur devient trop grande",
+          "text": "Si tu n’arrives presque plus à dormir ou à réviser à cause des examens, parles-en au SePAS, à ton ou ta titulaire de classe – ou appelle le Kanner- a Jugendtelefon : 116 111, anonyme et gratuit."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes situent leur tension d’examen sur l’échelle du cours, planifient les révisions à rebours avec des autotests, testent une pensée d’examen et fixent un plan anti-trou noir.",
+        "ablauf": [
+          "Au début, inscrire matière et date ; tâche 1 après l’apport sur la tension (5 min).",
+          "Tâches 2 et 3 (15 min) : planifier à rebours jusqu’aux dernières heures ; aider individuellement à découper les gros morceaux.",
+          "Tâche 4 après le relais des pensées (5 min) : tester une pensée personnelle.",
+          "Tâche 5 après la répétition du trou noir et les skills invisibles (5 min) ; tâche 6 seulement après l’examen."
+        ],
+        "hintergrund": "La peur des examens se compose de pensées inquiètes et d’agitation corporelle ; ce sont surtout les inquiétudes qui mobilisent l’attention, qui manque alors pour les exercices (Zeidner, 1998). La fiche relie donc skills corporels et examen des pensées. Pour les révisions, une grande synthèse recommande surtout deux méthodes : se tester soi-même et répartir les révisions dans le temps (Dunlosky et al., 2013). Les plans « si … alors » sont plus faciles à rappeler au moment décisif que de bonnes résolutions (Gollwitzer, 1999).",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Faire seulement les tâches 1 et 5 ; établir le plan de révision pour deux jours avec la personne qui anime.",
+          "schwerer": "Établir un plan de révision détaillé avec la fiche de la boîte à outils « Apprendre malin »."
+        },
+        "impulse": [
+          "Comment remarques-tu que tu passes de 50 à 80 ?",
+          "Que te dis-tu quand un examen ne s’est pas bien passé ?"
+        ],
+        "tipps": [
+          "Photographier le plan anti-trou noir ou le glisser sur une petite carte dans la trousse."
+        ],
+        "achtung": "Ne pas demander les notes ni les réactions des parents. Si la peur paralyse pendant des semaines, proposer un entretien individuel et orienter vers le SePAS ou le ou la titulaire de classe ; en cas d’indices de danger, informer la direction compétente (responsable).",
+        "material": "Stylos, dates d’examen des jeunes"
       }
     }
   }

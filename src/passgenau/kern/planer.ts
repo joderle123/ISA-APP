@@ -653,7 +653,8 @@ function vorigeUebung(c: Kontext, fruehere: string[], kernTitel: unknown): { vor
 /** Einzelkurs: zu einer Tausch-Übung die Variante derselben Sitzung mit Blatt, die zum Kind passt (deren Blatt, Anleitung und
  *  Auftrag gelten weiter); sonst der Eintrag selbst */
 function blattGeschwister(c: Kontext, e: KatalogEintrag | undefined): KatalogEintrag | undefined {
-  if (e?.typ !== 'schritt' || !e.tausch || !e.linie) return e
+  // eine schonende Tausch-Übung mit eigenem Blatt (18.10.2026: das Blatt der Variante fragte nach Eigenem) behält ihr Blatt
+  if (e?.typ !== 'schritt' || !e.tausch || !e.linie || e.uebungsblatt) return e
   const id = e.linie.id, nr = e.linie.nr
   const l = (c.k.nachRolle.get('kern') ?? []).filter((x) => x.typ === 'schritt' && !x.tausch && !!x.uebungsblatt && x.linie?.id === id && x.linie.nr === nr)
     .map((x) => bewerte(x, c, {})).sort((a, b) => rang(a, b, 'blatt'))
@@ -1454,24 +1455,6 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       const fr = kursKern.ueber?.['fr.text'] ?? (kursE.typ === 'schritt' && kursE.fr ? kursE.fr.text : de)
       kursKern.ueber = { ...(kursKern.ueber ?? {}), text: an.de + de, 'fr.text': an.fr + fr }
       // vom Planer geschrieben: beim Teilen kein „eigener Text“ (UI-Test 17.10.: sonst sperrte er „Teilen“)
-      kursKern.ueberHerkunft = { ...(kursKern.ueberHerkunft ?? {}), text: kursKern.ueberHerkunft?.text ?? 'plan', 'fr.text': kursKern.ueberHerkunft?.['fr.text'] ?? 'plan' }
-    }
-  }
-  // Wirkung sichtbar machen (17.10.2026: nur 15 von 54 Kursen fragten am Anfang, nur 11 am Ende, wie gut es schon klappt):
-  // in Sitzung 1 und in der letzten Sitzung eines Einzelkurses dieselbe Frage zum Ziel – die Zahl trägt die Fachkraft bei
-  // „Stunde gehalten“ ein, der Hub zeigt daraus „Wirkt es?“
-  if (kursKern && kursE?.typ === 'schritt' && kursE.linie?.id.startsWith('kurs-') && c.weg === 'gruendlich' && o.phase !== 'leicht' && c.a.n > 1 && (o.nr === 1 || o.nr === c.a.n) && c.ziele[0]) {
-    const satz = { de: zielSatz(c.k, c.p, c.ziele[0].code, 'de'), fr: zielSatz(c.k, c.p, c.ziele[0].code, 'fr') }
-    if (satz.de) {
-      const de0 = kursKern.ueber?.text ?? textVon(kursE, 'de').text
-      const fr0 = kursKern.ueber?.['fr.text'] ?? (kursE.fr ? kursE.fr.text : de0)
-      const frS = satz.fr ?? satz.de
-      const neu = o.nr === 1
-        ? { de: `Zu Beginn eine kurze Frage zur Ausgangslage: „Wie gut klappt das schon: ${satz.de.replace(/[.!]$/, '')}?“ – 1 bis 4 Finger (1 noch nicht, 4 fast immer); die Zahl bei „Stunde gehalten“ eintragen. ${de0}`,
-            fr: `Au début, une petite question sur le point de départ : « Est-ce que ça marche déjà : ${frS.replace(/[.!]$/, '')} ? » – de 1 à 4 doigts (1 pas encore, 4 presque toujours) ; noter le chiffre dans « Séance tenue ». ${fr0}` }
-        : { de: `${de0} Zum Schluss dieselbe Frage wie in der ersten Sitzung („Wie gut klappt das jetzt?“, 1 bis 4 Finger) und gemeinsam vergleichen, was sich verändert hat; die Zahl bei „Stunde gehalten“ eintragen.`,
-            fr: `${fr0} Pour finir, la même question qu’à la première séance (« Est-ce que ça marche maintenant ? », de 1 à 4 doigts) et comparer ensemble ce qui a changé ; noter le chiffre dans « Séance tenue ».` }
-      kursKern.ueber = { ...(kursKern.ueber ?? {}), text: neu.de, 'fr.text': neu.fr }
       kursKern.ueberHerkunft = { ...(kursKern.ueberHerkunft ?? {}), text: kursKern.ueberHerkunft?.text ?? 'plan', 'fr.text': kursKern.ueberHerkunft?.['fr.text'] ?? 'plan' }
     }
   }

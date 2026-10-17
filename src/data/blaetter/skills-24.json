@@ -151,6 +151,124 @@
         "achtung": "Niemand wird nach eigenen Beziehungen gefragt. Bei Hinweisen auf Gewalt oder Erpressung die Person nach der Einheit ruhig ansprechen, nichts versprechen, nach dem Schutzkonzept handeln, die Responsable am selben Tag informieren; bei akuter Gefahr 112.",
         "material": "Blatt für jede Person, Tafel"
       }
+    },
+    "fr": {
+      "titel": "Le feu tricolore des relations",
+      "untertitel": "Ce qui rend une relation saine – et à quoi tu reconnais les signaux d’alerte",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Amitié ou amour : dans une bonne relation, tu peux être toi-même, avoir tes propres amis et dire non. Une relation amoureuse devrait faire au moins autant de bien qu’une bonne amitié."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris un exemple pour chaque couleur – tiré d’une série, d’un film ou inventé.",
+          "hinweis": "Le feu décrit des comportements, pas des personnes.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ampel",
+          "linien": 2,
+          "stufen": [
+            {
+              "titel": "Rouge – violence : chercher de l’aide",
+              "text": "menacer, frapper, contraindre, humilier, faire chanter avec des images"
+            },
+            {
+              "titel": "Orange – malsain : en parler",
+              "text": "jalousie qui enferme, contrôler le portable, pression, bouderie silencieuse"
+            },
+            {
+              "titel": "Vert – sain : c’est comme ça que ça peut être",
+              "text": "respect, confiance, ses propres amis, disputes équitables, un non, ça compte"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis l’histoire et souligne chaque signal d’alerte.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Lena et Mathis",
+          "bild": "figur:jana:nervoes",
+          "text": "Lena et Mathis sont ensemble depuis quatre mois. Au début, tout était facile. Depuis, Mathis veut toujours savoir où est Lena ; il lui a montré comment partager sa position avec lui. Quand elle ne répond pas tout de suite, dix messages arrivent d’affilée. À l’anniversaire de sa meilleure amie, Lena n’est pas allée, parce que Mathis boudait. Hier, il a dit : « Si tu n’as rien à cacher, donne-moi ton mot de passe. » À ses amies, Lena explique : « Il est juste jaloux. Ça montre bien qu’il m’aime. »"
+        },
+        {
+          "art": "frage",
+          "text": "Pourquoi le contrôle ressemble-t-il à de l’amour pour Lena – et qu’est-ce qui ne va pas là-dedans ?",
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lena te raconte tout ça. Que lui réponds-tu ? Écris dans les cases vides.",
+          "hinweis": "Tu n’as pas à la sauver. Écouter, la croire et proposer de l’aide suffit.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Lena",
+              "text": "« Mathis lit aussi mes messages maintenant. Il s’inquiète, c’est tout. »"
+            },
+            {
+              "wer": "Toi"
+            },
+            {
+              "wer": "Lena",
+              "text": "« Mais ne dis rien à personne, d’accord ? »"
+            },
+            {
+              "wer": "Toi"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "La jalousie n’est pas une preuve d’amour.",
+          "text": "Beaucoup de gens connaissent la jalousie. Mais quand on aime, on laisse de l’air à l’autre : ses propres amis, son propre portable, son propre temps. Et quand on est en danger, on a besoin d’aide – chercher de l’aide n’est pas une trahison."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent relations saines, malsaines et violentes, reconnaissent le contrôle comme signal d’alerte et s’exercent à soutenir une amie ou un ami.",
+        "ablauf": [
+          "Expliquer le feu au tableau, exercice 1 individuel (5 min) : exemples tirés de séries ou inventés, jamais du groupe.",
+          "Lire l’histoire, exercice 2 (7 min). Signaux d’alerte : position partagée sous la pression, flot de messages, ne pas aller chez une amie, mot de passe exigé, jalousie présentée comme preuve d’amour.",
+          "Après le jeu de rôle « Lena raconte » : exercice 3 (5 min). Bien : écouter, croire, proposer de l’aide, ne pas promettre le secret si Lena est en danger.",
+          "Lire l’encadré « À retenir » et l’encadré d’aide ; chacun inscrit une personne de confiance."
+        ],
+        "hintergrund": "La violence dans les jeunes couples commence rarement par des coups, mais par le contrôle : vérifier le portable, exiger la localisation, dénigrer les amis – souvent prise pour de l’amour. Des programmes comme Safe Dates (Foshee et al., 2004) et Fourth R (Wolfe et al., 2009) travaillent sur les caractéristiques de relations saines, les signaux d’alerte et l’aide aux amis, et ont réduit la violence en couple pendant des années. Le feu décrit des comportements, pas des personnes : orange = en parler, rouge = chercher de l’aide.",
+        "quellen": [
+          "Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624.",
+          "Wolfe, D. A., Crooks, C., Jaffe, P., Chiodo, D., Hughes, R., Ellis, W., Stitt, L. & Donner, A. (2009). A school-based program to prevent adolescent dating violence: A cluster randomized trial. Archives of Pediatrics & Adolescent Medicine, 163(8), 692–699."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les exercices 1 et 3 ; marquer ensemble les signaux d’alerte au tableau.",
+          "schwerer": "Continuer l’histoire : que faudrait-il pour que tout redevienne vert ?"
+        },
+        "impulse": [
+          "À partir de quand la jalousie n’est-elle plus normale ?",
+          "Pourquoi défend-on parfois la personne qui nous contrôle ?"
+        ],
+        "tipps": [
+          "Penser aux couples ou ex-couples du groupe et choisir les exemples en conséquence.",
+          "Laisser le feu affiché ; il revient aux séances 28 et 30."
+        ],
+        "achtung": "Personne n’est interrogé sur ses relations. Indices de violence ou de chantage : aborder la personne calmement après la séance, ne rien promettre, procédure de protection, informer la direction compétente (responsable) le jour même ; danger aigu : 112.",
+        "material": "Une feuille par personne, tableau"
+      }
     }
   },
   {
@@ -872,6 +990,170 @@
         "achtung": "Keine Übergriffe spielen oder schildern. Deutet jemand an, selbst betroffen zu sein: nach der Einheit ruhig ansprechen, nichts versprechen, nach dem Schutzkonzept handeln, die Responsable am selben Tag informieren; bei akuter Gefahr 112.",
         "material": "Blatt für jede Person, Tafel"
       }
+    },
+    "fr": {
+      "titel": "Oui, c’est oui",
+      "untertitel": "Comment reconnaître un vrai oui – et que faire quand il manque",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Il y a consentement quand tout le monde veut ce qui se passe. Cela vaut pour les câlins, les baisers et les caresses comme pour les photos et les messages. Seul un oui est un oui."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui fait un vrai oui ? Relie chaque caractéristique à la phrase qui convient.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Un vrai oui est …",
+            "Cela signifie"
+          ],
+          "links": [
+            "libre",
+            "clair",
+            "retirable à tout moment",
+            "donné avec l’esprit clair",
+            "valable seulement pour ça"
+          ],
+          "rechts": [
+            "Quelqu’un de très ivre ne peut pas consentir.",
+            "Un oui pour la photo n’est pas un oui pour la transférer.",
+            "sans pression, sans insistance, sans menace",
+            "Qui a dit oui peut dire stop à tout moment.",
+            "Le silence ou le regard détourné n’est pas un oui."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "C’est un oui ? Coche pour chaque scène.",
+          "hinweis": "Pas clair veut dire : demander – et d’ici là, ne rien faire.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "oui clair",
+            "pas clair",
+            "pas un oui"
+          ],
+          "items": [
+            "Mila dit : « Oui, avec plaisir » et sourit.",
+            "Noah ne dit rien et regarde son portable.",
+            "Zoé a dit oui hier. Aujourd’hui, elle se tait.",
+            "Jang dit : « Bon, d’accord … avant que tu boudes encore. »",
+            "Nora est tellement ivre qu’elle tient à peine debout.",
+            "Emma se fige et rit nerveusement.",
+            "Elias dit : « Oui – mais la photo reste chez toi. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Diogo demande, Léa hésite. Que répond Diogo maintenant ? Écris sa réponse dans la bulle vide.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:froh:winken",
+                "figur:jana:neutral"
+              ],
+              "sprecher": 0,
+              "text": "Je peux te faire un câlin d’au revoir ?"
+            },
+            {
+              "figuren": [
+                "figur:ben:froh",
+                "figur:jana:verlegen:verschraenkt"
+              ],
+              "sprecher": 1,
+              "text": "Hm … je ne sais pas."
+            },
+            {
+              "figuren": [
+                "figur:ben:ruhig",
+                "figur:jana:neutral"
+              ],
+              "sprecher": 0
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tes propres phrases – comme tu parles vraiment.",
+          "hinweis": "Personne n’est obligé de lire ses phrases à voix haute.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Voilà comment je demande : …",
+            "Voilà comment j’accepte un non : …",
+            "Voilà comment je dis non moi-même : …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "C’est la personne qui franchit une limite qui est responsable.",
+          "text": "Pas la personne à qui cela arrive – même si elle n’a rien dit, ne s’est pas défendue ou avait bu."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand une limite a été franchie",
+          "punkte": [
+            "Va dans un endroit sûr ou reste auprès d’une personne de confiance.",
+            "Raconte-le à une personne de confiance – même quelques jours plus tard, c’est encore possible.",
+            "En cas de danger ou de blessure : appel d’urgence 112. Police : 113.",
+            "Conseil : SePAS, médecin scolaire, Planning Familial."
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent cinq caractéristiques d’un vrai oui, distinguent oui, doute et non, trouvent leurs propres phrases et savent ce qui aide après une limite franchie.",
+        "ablauf": [
+          "Après la scène des vestes : exercice 1 (4 min). Solution : libre – sans pression ; clair – le silence ; retirable – stop ; esprit clair – ivre ; juste pour ça – photo.",
+          "Exercice 2 (5 min), discuter les différences. Oui clair : Mila, Elias (seulement pour la photo) ; pas clair, donc demander : Noah, Zoé ; pas un oui : Jang, Nora, Emma.",
+          "Exercice 3 à deux (4 min). Les bonnes réponses prennent l’hésitation au sérieux : « D’accord, alors pas ça. À demain. »",
+          "Exercice 4 après la ligne du oui (3 min), lecture à voix haute facultative ; lire ensemble les encadrés « À retenir » et d’aide."
+        ],
+        "hintergrund": "Au quotidien, le consentement est rarement exprimé en mots ; on l’interprète à partir de regards, de proximité et du fait de suivre le mouvement (Beres, 2007) – ce qui favorise malentendus et excuses. D’où la règle simple : seul un oui clair est un oui, tout ce qui est flou signifie demander. Les cinq caractéristiques résument ce que prévoient pour cet âge les standards d’éducation sexuelle (WHO Regional Office for Europe & BZgA, 2010). La sidération est nommée expressément, car beaucoup de personnes concernées se reprochent ensuite de n’avoir rien dit.",
+        "quellen": [
+          "Beres, M. A. (2007). ‘Spontaneous’ sexual consent: An analysis of sexual consent literature. Feminism & Psychology, 17(1), 93–108.",
+          "WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 2 avec quatre scènes ; noter les caractéristiques au tableau avec des symboles simples.",
+          "schwerer": "Écrire une scène où quelqu’un retire un oui – et où l’on réagit bien."
+        },
+        "impulse": [
+          "Pourquoi dire non est-il plus difficile avec quelqu’un qu’on aime bien ?",
+          "Comment demander sans que ça sonne bizarre ?"
+        ],
+        "tipps": [
+          "Clarifier aussi les mots dans les langues familiales, par exemple « consentement ».",
+          "La feuille appartient à la personne et n’est pas ramassée."
+        ],
+        "achtung": "Ne jouer ni décrire aucune agression. Si une personne laisse entendre qu’elle est elle-même concernée : en parler calmement après la séance, ne rien promettre, appliquer la procédure de protection, informer la direction compétente (responsable) le jour même ; danger aigu : 112.",
+        "material": "Une feuille par personne, tableau"
+      }
     }
   },
   {
@@ -1070,6 +1352,168 @@
         ],
         "achtung": "Niemanden nach Orientierung, Identität oder Erfahrung fragen, niemanden outen, Abwertungen sofort stoppen. Bei Hinweisen auf Übergriffe oder eine ungewollte Schwangerschaft nach der Einheit ansprechen, Schutzkonzept anwenden, die Responsable am selben Tag informieren.",
         "material": "Blatt für jede Person"
+      }
+    },
+    "fr": {
+      "titel": "Bien s’informer",
+      "untertitel": "Savoir ce qu’il faut sur le corps, le sexe et la diversité – et où trouver des réponses fiables",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Sur l’amour, le corps et le sexe circulent beaucoup de demi-vérités – entre amis, dans des vidéos et dans le porno. Ici, tu vérifies ce qui est vrai et tu apprends où trouver des réponses fiables."
+        },
+        {
+          "art": "aufgabe",
+          "text": "C’est vrai ? Coche.",
+          "hinweis": "« Je ne sais pas » est une bonne réponse. On corrige ensemble.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "faux",
+            "je ne sais pas"
+          ],
+          "items": [
+            "La puberté commence à peu près au même âge pour tout le monde.",
+            "La première fois, on ne peut pas tomber enceinte.",
+            "La pilule protège aussi du VIH et d’autres infections.",
+            "Le porno montre comment est le sexe dans la vraie vie.",
+            "On voit à une personne si elle est gay, lesbienne, bi ou hétéro.",
+            "On ne choisit pas son orientation sexuelle.",
+            "Quand on n’a pas encore eu de rapports à 16 ans, on est en retard.",
+            "Même dans une relation stable, on peut dire non à tout moment."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Relie chaque notion à l’explication qui convient.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Notion",
+            "Explication"
+          ],
+          "links": [
+            "orientation sexuelle",
+            "identité de genre",
+            "trans",
+            "puberté",
+            "contraception"
+          ],
+          "rechts": [
+            "période où le corps et les sentiments changent beaucoup",
+            "quel est son propre genre",
+            "empêche une grossesse",
+            "de qui on tombe amoureux ou amoureuse",
+            "quand son propre genre ne correspond pas à celui inscrit à la naissance"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "La diversité est normale.",
+          "text": "Les gens aiment de façons différentes, et le genre est divers. On ne le voit à personne, et personne n’a à s’exprimer à ce sujet. Deviner pour les autres ou outer quelqu’un fait mal."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À qui peux-tu faire confiance pour des questions sur l’amour, le corps et le sexe ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "fiable",
+            "en partie",
+            "pas fiable"
+          ],
+          "items": [
+            "Le porno",
+            "Les vidéos d’influenceurs",
+            "Les amies et les amis",
+            "Les chatbots d’IA",
+            "Planning Familial",
+            "Le médecin scolaire"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan : où demander quand une question te met mal à l’aise ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Quand une question me gêne, je peux …",
+            "Une source en qui je croirai moins à partir de maintenant : …"
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Ici, tu trouves des réponses fiables et de l’aide",
+          "eintraege": [
+            {
+              "name": "Planning Familial – conseil sur l’amour, le corps, la contraception et la grossesse",
+              "nummer": "__________"
+            },
+            {
+              "name": "Médecin scolaire et SePAS",
+              "nummer": "au lycée"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Urgences : secours et pompiers",
+              "nummer": "112"
+            },
+            {
+              "name": "Police",
+              "nummer": "113"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes examinent des mythes répandus sur le corps, la sexualité et la contraception, clarifient des notions sur la diversité et évaluent des sources d’information.",
+        "ablauf": [
+          "Exercice 1 individuel (5 min), puis vote avec le pouce et correction. Solution : 1 à 5 faux, 6 vrai, 7 faux (chacun a son propre rythme), 8 vrai.",
+          "Exercice 2 à deux (4 min). Solution : orientation – tomber amoureux ; identité – quel genre ; trans – inscrit à la naissance ; puberté – changement ; contraception – grossesse. Règle au tableau : nous ne devinons rien sur les autres, nous n’outons personne.",
+          "Après le parcours : exercice 3 (3 min). Fiables : Planning Familial, médecin scolaire ; en partie : amis, influenceurs, chatbots d’IA ; pas fiable : porno.",
+          "Exercice 4 individuel (2 min) ; puis faire inscrire dans l’encadré d’aide les coordonnées du Planning Familial."
+        ],
+        "hintergrund": "Les standards d’éducation sexuelle en Europe (WHO Regional Office for Europe & BZgA, 2010) prévoient pour cet âge des connaissances factuelles sur le corps, la contraception et les infections, sur l’orientation et l’identité ainsi que sur les lieux d’aide. Selon l’analyse des études par l’UNESCO (2018), une bonne éducation sexuelle ne conduit pas à des rapports plus précoces, mais plutôt à un début plus tardif et à une meilleure protection. Comme beaucoup de connaissances viennent du porno et de vidéos en ligne, la vérification des sources en fait partie.",
+        "quellen": [
+          "WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung.",
+          "UNESCO (2018). International Technical Guidance on Sexuality Education: An Evidence-Informed Approach (revised ed.). Paris: UNESCO."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 1 avec cinq affirmations, lues à voix haute ; exercice 2 avec trois notions.",
+          "schwerer": "Écrire pour une affirmation une courte réponse telle qu’elle pourrait figurer dans la boîte à questions."
+        },
+        "impulse": [
+          "Quelle affirmation vous a surpris ?",
+          "D’où vient l’essentiel de ce que vous savez sur le sexe ?"
+        ],
+        "tipps": [
+          "Clarifier les termes spécialisés dans les langues du groupe.",
+          "Pour des problèmes de santé personnels, renvoyer vers le Planning Familial ou le médecin scolaire."
+        ],
+        "achtung": "Ne demander à personne son orientation, son identité ou son expérience, n’outer personne, arrêter aussitôt les propos dévalorisants. En cas d’indices d’agressions ou de grossesse non désirée : en parler après la séance, appliquer la procédure de protection, informer la direction compétente (responsable) le jour même.",
+        "material": "Une feuille par personne"
       }
     }
   },
@@ -1687,6 +2131,189 @@
         ],
         "achtung": "Intime Bilder nie ansehen, weiterleiten, speichern oder ausdrucken, auch nicht als Beweis; die Responsable sofort informieren, Schutzkonzept anwenden. Erpressung kann eine akute Krise auslösen: Betroffene nicht allein lassen, bei Suizidgedanken oder Gefahr 112.",
         "material": "Blatt für jede Person, Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Nudes, pression et chantage – que faire ?",
+      "untertitel": "Reconnaître la pression, dire non, agir comme il faut – pour toi et pour les autres",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "La plupart des jeunes n’envoient pas de photos de nu. Pourtant, beaucoup subissent une pression pour le faire – ou voient circuler des images d’autres personnes. Ici, il s’agit de ce qui aide alors."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’y a-t-il derrière la phrase de pression ? Relie chaque phrase à la bonne réponse.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Phrase de pression",
+            "Ce qui est vrai"
+          ],
+          "links": [
+            "« Tout le monde le fait. »",
+            "« Si tu m’aimes, alors … »",
+            "« Je l’efface tout de suite. »",
+            "« Ça s’efface tout seul au bout de quelques secondes. »",
+            "« Moi aussi, je t’en ai envoyé une. »"
+          ],
+          "rechts": [
+            "Une capture d’écran prend une seconde.",
+            "Tu ne dois une photo à personne.",
+            "C’est faux : la plupart n’en envoient pas.",
+            "L’amour n’a pas besoin de preuve.",
+            "Ce qui est envoyé, tu ne peux plus le contrôler."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zoé met la pression à Yusuf. Écris les réponses de Yusuf dans les cases vides.",
+          "hinweis": "Un non n’a pas besoin de justification. Bloquer est aussi une réponse.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Zoé",
+              "text": "« Envoie-moi une photo. Tu sais, une de celles-là. Rien que pour moi. »"
+            },
+            {
+              "wer": "Yusuf"
+            },
+            {
+              "wer": "Zoé",
+              "text": "« Allez, ne fais pas ton difficile. Je l’efface aussi tout de suite. »"
+            },
+            {
+              "wer": "Yusuf"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Luca est victime d’un chantage avec une image. Que devrait-il faire ? Coche tout ce qui aide.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "payer pour que ça s’arrête",
+            "ne pas payer et ne plus rien envoyer",
+            "tout supprimer pour que personne ne trouve rien",
+            "sauvegarder le chat, le nom de profil et la demande",
+            "bloquer et signaler sur la plateforme",
+            "régler ça tout seul – c’est quand même gênant",
+            "le dire tout de suite à une personne de confiance",
+            "appeler la BEE SECURE Helpline"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Quand l’image de quelqu’un d’autre apparaît",
+          "punkte": [
+            "Ne pas la transférer, ne pas l’enregistrer, ne pas faire de capture d’écran – pas même comme preuve.",
+            "Écrire dans le chat : « Supprimez ça. »",
+            "Dire à un enseignant ou une enseignante, ou au SePAS, où l’image est apparue.",
+            "Transférer fait mal – et c’est punissable."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Une image de Samuel circule. Il dit : « Je suis tellement bête. » Que lui dis-tu ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Ce n’est pas ta faute, parce que …",
+            "Je peux avec toi …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan pour un moment où quelqu’un te met la pression.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si quelqu’un m’écrit : « Paie, sinon je fais circuler ta photo »,",
+              "dann": "je ne paie pas, je sauvegarde le chat sans l’image, je bloque et j’appelle la BEE SECURE Helpline."
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "eintraege": [
+            {
+              "name": "BEE SECURE Helpline – problèmes en ligne, y compris le chantage avec des images",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Police",
+              "nummer": "113"
+            },
+            {
+              "name": "Urgences : secours et pompiers",
+              "nummer": "112"
+            },
+            {
+              "name": "SOS Détresse – aide par téléphone",
+              "nummer": "45 45 45"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes décryptent les phrases de pression, disent non dans le chat, connaissent les étapes en cas de chantage avec des images et s’exercent à soutenir les personnes concernées sans reproche.",
+        "ablauf": [
+          "Après la question d’estimation : exercice 1 à deux (4 min). Solution : tout le monde – la plupart non ; aimer – pas une preuve ; je l’efface – incontrôlable ; ça s’efface – capture d’écran ; moi aussi – personne ne doit une photo.",
+          "Exercice 2 individuel (5 min), lecture à voix haute facultative : bloquer est aussi une réponse.",
+          "Après les Quatre coins : exercice 3 (3 min). Juste : ne pas payer, sauvegarder, bloquer et signaler, personne de confiance, Helpline ; faux : payer, supprimer, régler seul.",
+          "Exercice 4 après « Soutenir plutôt que faire honte », exercice 5 pour conclure (3 min chacun) ; puis montrer l’encadré d’aide."
+        ],
+        "hintergrund": "D’après une analyse de 39 études, environ une personne sur sept de moins de 18 ans a déjà envoyé une image intime, environ une sur huit en a transféré une sans consentement (Madigan et al., 2018). En cas de chantage, les mineurs connaissent souvent les auteurs, par exemple d’une relation passée ; d’autres sont contactés par des inconnus en ligne. Beaucoup n’en parlent à personne par honte (Wolak et al., 2018). D’où l’importance d’étapes claires, qui tiennent même dans la panique, et d’une attitude sans reproche.",
+        "quellen": [
+          "Madigan, S., Ly, A., Rash, C. L., Van Ouytsel, J. & Temple, J. R. (2018). Prevalence of multiple forms of sexting behavior among youth: A systematic review and meta-analysis. JAMA Pediatrics, 172(4), 327–335.",
+          "Wolak, J., Finkelhor, D., Walsh, W. & Treitman, L. (2018). Sextortion of minors: Characteristics and dynamics. Journal of Adolescent Health, 62(1), 72–79.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 1 avec trois phrases ; pour l’exercice 2, proposer des réponses au choix au tableau.",
+          "schwerer": "Écrire un message pour le groupe de classe qui demande de ne pas transférer une image."
+        },
+        "impulse": [
+          "Pourquoi se tait-on sous le chantage ?",
+          "Que peut faire une classe pour qu’une image ne circule pas plus loin ?"
+        ],
+        "tipps": [
+          "Présenter les chiffres comme un soulagement, pas comme un avertissement.",
+          "Écrire le numéro de la Helpline en grand au tableau."
+        ],
+        "achtung": "Ne jamais regarder, transférer, enregistrer ni imprimer d’images intimes, même comme preuve ; informer aussitôt la direction compétente (responsable), procédure de protection. Le chantage peut déclencher une crise aiguë : ne pas laisser la personne seule ; idées suicidaires, danger : 112.",
+        "material": "Une feuille par personne, stylos"
       }
     }
   }

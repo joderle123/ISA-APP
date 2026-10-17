@@ -208,6 +208,182 @@
         "achtung": "Eigene Entscheidungen werden nicht vorgelesen. Deutet eine auf Druck, Gewalt oder eine Notlage hin: Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt, Tafel"
       }
+    },
+    "fr": {
+      "titel": "Bien décider",
+      "untertitel": "Quatre étapes, quatre champs et une question qui aide presque toujours",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les petites décisions, le ventre les prend en quelques secondes – et c’est très bien ainsi. Pour les grandes, il vaut la peine de demander aussi son avis à la tête. Le mieux, c’est que les deux puissent s’exprimer et que tu saches à la fin pourquoi tu as choisi."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Le ventre, la tête et le juste milieu",
+          "punkte": [
+            "Le ventre signale vite ce qui semble juste ou faux. Il se trompe facilement quand la colère, la peur ou l’avis de tous s’en mêlent.",
+            "La tête examine les faits et les conséquences. Elle se trompe quand elle embellit tout ou n’arrive jamais à conclure.",
+            "Le juste milieu écoute les deux et demande : qu’est-ce qui me correspond, à moi et à mes valeurs ?"
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Le stage",
+          "bild": "figur:ben:verwirrt",
+          "text": "Mathis (15 ans) doit choisir d’ici vendredi son stage de deux semaines. Dans le garage de son oncle, il connaît tout le monde, le trajet est court et son oncle serait content. À l’hôtel en ville, il pourrait aider en cuisine – ça l’intéresse vraiment. Mais il n’y connaît personne et il lui faut presque une heure en bus. Depuis des jours, Mathis repousse sa décision."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Suis avec Mathis le chemin de la décision. Note un mot-clé sous chaque étape.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "weg",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Clarifier",
+              "text": "De quoi s’agit-il exactement – et pour quand ?"
+            },
+            {
+              "titel": "Rassembler les possibilités",
+              "text": "Au moins trois. Pas seulement oui ou non."
+            },
+            {
+              "titel": "Peser le pour et le contre",
+              "text": "Le pour et le contre, maintenant et plus tard. Puis interroger le ventre et les valeurs."
+            },
+            {
+              "titel": "Décider et se lancer",
+              "text": "Choisir, fixer la première étape, regarder plus tard où on en est."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Les quatre champs : qu’est-ce qui plaide pour et contre chaque possibilité ? Souligne ce qui comptera encore dans un an.",
+          "hinweis": "Pour Mathis ou pour une décision à toi. A est la possibilité vers laquelle tu penches en ce moment."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "A – ce qui plaide pour …",
+              "hoehe": 3,
+              "beispiel": "Hôtel : la cuisine m’intéresse vraiment."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "A – ce qui plaide contre …",
+              "hoehe": 3,
+              "beispiel": "Hôtel : presque une heure de bus"
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "B – ce qui plaide pour …",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "B – ce qui plaide contre …",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le test : examine la possibilité vers laquelle tu penches.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "oui",
+            "en partie",
+            "non"
+          ],
+          "items": [
+            "Mon ventre se détend plutôt qu’il ne se serre.",
+            "Cela correspond à mes trois valeurs les plus importantes.",
+            "Dans un an, je me féliciterai probablement de ce choix.",
+            "Je déciderais pareil si personne ne l’apprenait.",
+            "Je donnerais le même conseil à ma meilleure amie ou à mon meilleur ami."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "Plusieurs fois « en partie » ou « non » ? Alors cela vaut la peine d’y revenir – ou de dormir dessus. S’il te manque une information, demande à quelqu’un qui s’y connaît."
+        },
+        {
+          "art": "aufgabe",
+          "text": "La question de l’amie : pense à une petite décision qui t’attend. Que conseillerais-tu à une amie ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Ma décision : …",
+            "À une amie, je conseillerais : …",
+            "Je choisis …, parce que …",
+            "Ma première étape – et le moment où je regarderai où j’en suis : …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "L’exercice 4 est à toi et ne sera pas lu à voix haute."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes parcourent une décision en quatre étapes, pèsent le pour et le contre à court et à long terme et testent leur penchant avec le ventre, les valeurs et la question de l’amie.",
+        "ablauf": [
+          "Après le tour de table éclair (5 min) : lire l’encadré. Question : « Quand le ventre a-t-il suffi, quand pas ? »",
+          "Exercice 1 au tableau (8 min) : parcourir le cas de Mathis, chercher une troisième possibilité, par exemple une journée d’essai.",
+          "Exercices 2 et 3 seul ou à deux (7 min), pour Mathis ou pour un cas personnel.",
+          "À la fin de la séance (8 min) : test du ventre en position assise, puis exercice 4. La feuille n’est pas ramassée."
+        ],
+        "hintergrund": "Une démarche fixe crée de la distance, surtout quand les émotions montent ou que d’autres regardent. Les quatre champs viennent de l’entraînement aux compétences de la DBT pour adolescents : avantages et inconvénients des deux possibilités, séparés à court et à long terme (Rathus & Miller, 2015). Le « juste milieu » correspond à l’« esprit sage », où émotion et raison se rejoignent (Linehan, 2015). La question de l’amie recourt à la prise de distance : celui ou celle qui regarde sa propre situation comme de l’extérieur juge plus calmement et de façon plus équilibrée (Kross & Ayduk, 2017). On juge plus sagement les problèmes des autres que les siens ; avec du recul, la différence disparaît (Grossmann & Kross, 2014).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Grossmann, I. & Kross, E. (2014). Exploring Solomon’s paradox: Self-distancing eliminates the self-other asymmetry in wise reasoning about close relationships in younger and older adults. Psychological Science, 25(8), 1571–1580."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les exercices 1 et 4 ; donner d’emblée les trois possibilités pour Mathis.",
+          "schwerer": "Jouer une vraie décision et noter en plus quelle information manque encore."
+        },
+        "impulse": [
+          "Pour quelles décisions votre ventre peut-il décider seul ?",
+          "Pourquoi est-il plus facile de conseiller les autres que soi-même ?"
+        ],
+        "tipps": [
+          "Nommer le piège du oui ou non : la troisième possibilité est souvent la meilleure.",
+          "Souligner rend visible ce qui comptera encore dans un an."
+        ],
+        "achtung": "Les décisions personnelles ne sont pas lues à haute voix. Si l’une d’elles évoque une pression, de la violence ou une situation de détresse : proposer un entretien individuel et informer la direction compétente (responsable).",
+        "material": "Feuille, tableau"
+      }
     }
   },
   {
@@ -362,6 +538,127 @@
         ],
         "achtung": "Nur mit den erfundenen Fällen spielen. Belastet ein Fall jemanden, Karte wechseln und später unter vier Augen nachfragen; bei Hinweisen auf Druck oder Gewalt die zuständige Leitung (Responsable) informieren.",
         "material": "Festes Papier, Schere, Klebeband"
+      }
+    },
+    "fr": {
+      "titel": "Atelier de la décision",
+      "untertitel": "Six cas avec rebondissement et quatre voix pour le conseil intérieur – à découper",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Comment fonctionne le conseil intérieur",
+          "punkte": [
+            "Tous les cas sont inventés. Personne ne joue une décision qui le ou la concerne vraiment.",
+            "Une personne se place au milieu, l’enseignant lit le cas. Quatre voix se tiennent dans les coins : le ventre, la tête, les valeurs, les autres.",
+            "À tour de rôle, chaque voix dit une phrase. La personne au milieu fait à chaque fois un pas vers la voix qui la convainc le plus à cet instant.",
+            "Après deux tours arrive le rebondissement, puis un troisième tour.",
+            "Pour finir, la personne décide à voix haute : « Je choisis …, parce que … Ma première étape est … »",
+            "Chaque voix veut aider la personne – chacune à sa manière."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpe les cartes de cas. Le rebondissement n’est lu par l’enseignant qu’après le deuxième tour.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 112,
+          "karten": [
+            {
+              "titel": "E1 · Le job du samedi",
+              "text": "Inês (15 ans) pourrait donner un coup de main le samedi au supermarché du village. Elle économise pour un scooter. Mais elle devrait arrêter le foot, car l’entraînement a lieu le samedi. Rebondissement : l’entraîneuse dit qu’Inês pourrait intégrer la première équipe la saison prochaine."
+            },
+            {
+              "titel": "E2 · Le concert",
+              "text": "Tiago (16 ans) peut aller avec des amis au concert de son groupe préféré – le dimanche soir. Le lundi, il a un devoir en maths, et le billet coûte presque toutes ses économies. Rebondissement : le dernier train pour rentrer part avant la fin du concert."
+            },
+            {
+              "titel": "E3 · Le groupe de classe",
+              "text": "Depuis des jours, on dit du mal d’une camarade dans le groupe de discussion de la classe. Samuel (15 ans) trouve ça inadmissible. S’il écrit quelque chose, il sera peut-être le prochain. Rebondissement : la camarade écrit en privé à Samuel : « Tu lis tout ça, toi aussi ? »"
+            },
+            {
+              "titel": "E4 · L’école buissonnière",
+              "text": "La meilleure amie de Léa (15 ans) sèche depuis deux semaines les premières heures chaque lundi et falsifie les justificatifs. « Tu ne vas pas me balancer, hein ? » Rebondissement : la titulaire de classe demande à Léa si elle sait ce qui se passe avec son amie."
+            },
+            {
+              "titel": "E5 · Le portable",
+              "text": "Le portable de Rafael (16 ans) est cassé, il a 300 euros d’économies. Une connaissance lui propose un modèle neuf pour 150 euros – sans boîte, sans facture. Rebondissement : quand Rafael demande la facture, la connaissance répond : « Ne pose pas de questions, sinon je le propose à quelqu’un d’autre. »"
+            },
+            {
+              "titel": "E6 · La formation",
+              "text": "Nora (16 ans) peut commencer une formation de coiffeuse. Ses parents voudraient qu’elle continue l’école. Nora n’est pas sûre que coiffeuse soit vraiment son métier. Rebondissement : le salon dit que la place n’est libre que jusqu’à vendredi."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpe les pancartes des voix et accroche-les dans les quatre coins. Les phrases aident à se lancer.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 250,
+          "karten": [
+            {
+              "titel": "Le ventre",
+              "bild": "icon:heart",
+              "text": "Je sens ce que tu veux et ce qui te fait peur. « J’en ai vraiment envie. » – « Ça me met mal à l’aise. »"
+            },
+            {
+              "titel": "La tête",
+              "bild": "icon:brain",
+              "text": "Je pose des questions sur les faits et les conséquences. « Ça coûte combien ? » – « Qu’est-ce qui se passe lundi – et dans un an ? »"
+            },
+            {
+              "titel": "Les valeurs",
+              "bild": "icon:compass",
+              "text": "Je te rappelle ce qui compte pour toi. « Tu voulais être honnête. » – « Qu’est-ce qui correspond à tes trois valeurs principales ? »"
+            },
+            {
+              "titel": "Les autres",
+              "bild": "icon:users",
+              "text": "Je dis ce que pensent les amis, la famille ou la classe. « Tout le monde le fait. » – « Ta mère serait déçue. »"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Avec des cas inventés et quatre voix, les jeunes vivent en jeu de rôle comment les émotions, les faits, les valeurs et les autres tirent sur une décision.",
+        "ablauf": [
+          "Avant : imprimer une fois sur du papier épais et découper ; écarter les cartes qui ressemblent à une situation actuelle du groupe.",
+          "Mise en place (3 min) : pancartes dans les coins, une personne au milieu, quatre voix ; les autres observent.",
+          "Par cas (6 min) : deux tours, rebondissement, troisième tour, puis décision à voix haute avec la phrase de décision.",
+          "Après chaque cas, demander : quelle voix l’a emporté, laquelle a été trop peu entendue ? Jouer trois à quatre cas."
+        ],
+        "hintergrund": "Le jeu de rôle rend visibles les arbitrages intérieurs : ce qui se passe d’habitude en même temps dans la tête se répartit entre quatre personnes. Le ventre et la tête correspondent à l’état émotionnel et à l’état rationnel qui se rejoignent dans l’« esprit sage » (Linehan, 2015) ; la voix « Les autres » représente l’influence des pairs, particulièrement forte à l’adolescence (Steinberg, 2014). Le rebondissement montre que changer d’avis n’est pas un échec. Les formes d’exercice actives, comme le jeu de rôle, rendent les programmes d’apprentissage socio-émotionnel plus efficaces (Durlak et al., 2011).",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement deux voix, le ventre et la tête ; l’enseignant tient la voix des valeurs.",
+          "schwerer": "Avant la décision, résumer ce que chaque voix a dit et nommer une troisième possibilité."
+        },
+        "impulse": [
+          "Quelle voix est la plus forte chez vous au quotidien ?",
+          "Quand la voix « Les autres » aide-t-elle – et quand non ?"
+        ],
+        "tipps": [
+          "Les voix ont le droit d’exagérer ; cela fait bien ressortir les différences.",
+          "Plastifier les cartes – elles serviront aussi pour des séances ultérieures."
+        ],
+        "achtung": "Jouer uniquement avec les cas inventés. Si un cas pèse à quelqu’un, changer de carte et reprendre la discussion plus tard en tête à tête ; en cas d’indices de pression ou de violence, informer la direction compétente (responsable).",
+        "material": "Papier épais, ciseaux, ruban adhésif"
       }
     }
   },
@@ -545,6 +842,152 @@
         "achtung": "Nicht nach eigenen Mutproben fragen. Bringt sich jemand wiederholt in Gefahr oder wird zu Mutproben gedrängt: ruhig ansprechen, Schutzkonzept anwenden, Responsable am selben Tag informieren; akut 112.",
         "material": "Blatt, Stifte"
       }
+    },
+    "fr": {
+      "titel": "Courage ou imprudence ?",
+      "untertitel": "Quatre questions avant que l’adrénaline monte – et une phrase pour t’en sortir",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Accélérateur et frein",
+          "text": "À 15 et 16 ans, le cerveau réagit particulièrement fort à la nouveauté, à l’excitation et à la reconnaissance – c’est l’accélérateur. Le frein, qui planifie et arrête, mûrit plus lentement, jusqu’au milieu de la vingtaine environ. Quand d’autres regardent, l’accélérateur appuie encore plus fort. Ce n’est pas une faiblesse : le même accélérateur te permet d’apprendre du nouveau et de te croire capable de certaines choses."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Sur le pont",
+          "bild": "figur:ben:nervoes",
+          "text": "Samedi, au bord de la Sûre. Luca (15 ans) est sur un pont avec cinq autres jeunes. Deux ont déjà sauté dans l’eau, quelqu’un filme. Personne ne sait quelle est la profondeur de la rivière aujourd’hui – il n’a presque pas plu depuis des semaines. « À toi ! », crie quelqu’un. Tout le monde regarde Luca."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Dans le groupe de classe",
+          "bild": "figur:jana:besorgt",
+          "text": "Une photo d’Elias apparaît dans le groupe de discussion de la classe : il s’est endormi à la cantine, et en dessous, il y a des remarques méchantes. Tout le monde envoie des smileys qui rient. Amira (15 ans) se demande si elle doit écrire : « Supprimez ça. Ce n’est pas OK. » Peut-être qu’elle sera la prochaine."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le test du courage : pour qui l’affirmation est-elle vraie – pour Luca, pour Amira, pour les deux ou pour aucun des deux ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Luca",
+            "Amira",
+            "les deux",
+            "aucun"
+          ],
+          "items": [
+            "Il s’agit de quelque chose de vraiment important.",
+            "Il ou elle le ferait aussi si personne ne regardait.",
+            "Le risque est connu et on peut agir dessus.",
+            "Si ça tourne mal, on peut réparer les dégâts."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Le courage sert quelque chose qui compte pour toi, et tu connais le risque. L’imprudence joue gros pour peu – souvent seulement pour l’instant ou pour le public."
+        },
+        {
+          "art": "aufgabe",
+          "text": "L’échelle du risque : à quel point le saut de Luca est-il risqué, et le message d’Amira ? Écris L et A au-dessus du chiffre qui convient."
+        },
+        {
+          "art": "skala",
+          "frage": "À quel point est-ce risqué ?",
+          "von": "aucun risque",
+          "bis": "danger de mort",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta phrase de sortie : comment sortir d’une situation qui s’échauffe sans perdre la face ?",
+          "hinweis": "D’abord le frein, ensuite la phrase. Courte, honnête ou drôle : « Sans moi, j’ai entraînement demain. » – « Non merci, j’ai encore besoin de mes os. »"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Stop",
+              "text": "Se figer. Ne rien dire, ne rien faire."
+            },
+            {
+              "titel": "Un pas en arrière",
+              "text": "Reculer d’un pas, expirer longuement."
+            },
+            {
+              "titel": "Observer",
+              "text": "Que se passe-t-il ici ? Qu’est-ce que je veux ?"
+            },
+            {
+              "titel": "Poursuivre sagement",
+              "text": "Dire la phrase de sortie ou partir."
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Ma phrase de sortie : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Un bon risque : qu’aimerais-tu oser, parce que c’est important pour toi ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Quelque chose de courageux qui compte pour moi : …",
+            "Mon premier petit pas : …",
+            "Qui peut m’aider : …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "L’exercice 4 est à toi. Si on te pousse à relever des défis dangereux ou si on te menace, y compris en ligne, cherche de l’aide : auprès d’une personne de confiance, du SePAS ou du Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent pourquoi le risque attire à cet âge, distinguent courage et imprudence avec quatre questions, s’exercent au stop et formulent une phrase de sortie et un bon risque.",
+        "ablauf": [
+          "Après l’expérience des dés (3 min) : lire l’encadré « Accélérateur et frein » et le relier au vécu.",
+          "Exercice 1 à deux (6 min). Solution : les quatre affirmations valent pour Amira, aucune pour Luca. Discuter l’affirmation 1 : Luca veut appartenir au groupe – lui faut-il le saut pour cela ?",
+          "Exercice 2 individuel (2 min). Question : « Le message d’Amira n’est pas sans risque – pourquoi est-ce du courage ? »",
+          "Après l’entraînement au stop (5 min) : exercice 3. En fin de séance (3 min) : exercice 4, lecture à voix haute facultative."
+        ],
+        "hintergrund": "Steinberg (2014) décrit l’adolescence comme une période où le système de récompense est très sensible alors que le contrôle exercé par le lobe frontal mûrit jusqu’à l’âge adulte. Devant des pairs, les adolescents prennent plus de risques, les adultes à peine (Gardner & Steinberg, 2005), et leur système de récompense est plus actif (Chein et al., 2011). Cette ouverture est aussi une chance : qui distingue les bons risques des risques imprudents peut mettre cet élan à profit au lieu de le freiner. Les quatre étapes suivent la compétence STOP de la DBT (Linehan, 2015).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+          "Chein, J., Albert, D., O’Brien, L., Uckert, K. & Steinberg, L. (2011). Peers increase adolescent risk taking by enhancing activity in the brain’s reward circuitry. Developmental Science, 14(2), F1–F10.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Faire le test du courage ensemble à voix haute ; proposer des phrases de sortie au tableau.",
+          "schwerer": "Écrire pour Amira un plan qui réduit le risque : qui fait-elle venir, que doit-elle écrire ?"
+        },
+        "impulse": [
+          "Qu’est-ce qui transforme un risque en courage ?",
+          "Quand arrêter est-il plus courageux que continuer ?"
+        ],
+        "tipps": [
+          "Valoriser les bons risques : postuler, donner son avis, aborder quelqu’un.",
+          "Collecter des phrases de sortie et les photocopier pour tous."
+        ],
+        "achtung": "Ne pas interroger sur ses propres défis. Si quelqu’un se met en danger à répétition ou est poussé à des défis : en parler calmement, appliquer la procédure de protection, informer la direction compétente (responsable) le jour même ; urgence : 112.",
+        "material": "Feuille, stylos"
+      }
     }
   },
   {
@@ -719,6 +1162,150 @@
         ],
         "achtung": "Keine Konsumgeschichten abfragen. Bei Hinweisen auf gefährlichen Konsum oder einen Übergriff: nach der Einheit ruhig ansprechen, nichts versprechen, Schutzkonzept anwenden, Responsable am selben Tag informieren; bei akuter Gefahr 112, nicht allein lassen.",
         "material": "Blatt, grüne und rote Karten"
+      }
+    },
+    "fr": {
+      "titel": "Vrai ou faux : ivresse et risques",
+      "untertitel": "Qu’est-ce qui est vrai à propos de l’alcool, du cannabis et des autres drogues – et qu’est-ce qui n’est qu’un mythe ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "On entend beaucoup de phrases fausses sur l’alcool, le cannabis et les autres drogues. Quand on connaît les faits, on se laisse moins embobiner – et on sait quoi faire quand quelqu’un va mal."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vrai ou faux ? Coche d’abord par toi-même, avant de corriger ensemble les affirmations.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "faux",
+            "je ne sais pas"
+          ],
+          "items": [
+            "La plupart des jeunes de ton âge ne fument pas de cannabis.",
+            "Avec une boisson énergisante en plus, l’alcool est moins dangereux.",
+            "Fumer du cannabis détend toujours.",
+            "Quand on supporte beaucoup d’alcool, c’est qu’on s’y est habitué – un signal d’alerte.",
+            "Mélanger ne pose pas de problème si on ne prend qu’un peu de chaque.",
+            "On ne voit pas à une pilule ou à une poudre ce qu’elle contient ni en quelle quantité.",
+            "Quand on se sent encore en forme après quelques bières, on peut aussi conduire.",
+            "En état d’ivresse, il n’y a pas de vrai oui – ni pour des baisers, ni pour du sexe.",
+            "Quand on n’arrive plus à réveiller quelqu’un, le mieux est de le laisser dormir pour que l’ivresse passe."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle réponse t’a surpris ? Écris la bonne réponse avec tes propres mots."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Mélanger rend imprévisible",
+              "text": "L’alcool avec du cannabis, des boissons énergisantes, des médicaments ou d’autres drogues : les effets se renforcent ou se masquent. On remarque moins la quantité déjà consommée, et le corps atteint plus vite sa limite."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Ne pas conduire, ne pas monter",
+              "text": "L’alcool et le cannabis ralentissent les réactions et le jugement, souvent avant qu’on s’en aperçoive. Ne monte pas dans le véhicule si la personne au volant ou au guidon a bu ou fumé – pas même sur un scooter. Au Luxembourg, le bus et le train sont gratuits."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "En état d’ivresse, il n’y a pas de vrai oui",
+          "text": "Embrasser, toucher, avoir des rapports sexuels : il n’y a consentement que s’il y a un oui clair et libre de la part d’une personne pleinement lucide. Une personne très ivre ou sous l’effet de drogues ne peut pas le donner. Si tu as un doute sur la lucidité de l’autre, arrête. L’alcool n’est pas une excuse – profiter de l’ivresse de quelqu’un est une infraction pénale. Le Planning Familial répond aussi à tes questions à ce sujet."
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Ce que dit la loi – en termes très généraux",
+          "text": "La personne qui anime la séance t’explique les règles exactes.",
+          "punkte": [
+            "Des limites d’âge s’appliquent à l’alcool, au tabac et aux vapes. Le cannabis est interdit aux mineurs.",
+            "Donner ou vendre des drogues est punissable – même entre amis.",
+            "Conduire en état d’ivresse est punissable.",
+            "Partager des photos ou des vidéos de personnes ivres ou sans défense porte atteinte à leurs droits et peut être punissable."
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Aide et conseils",
+          "eintraege": [
+            {
+              "name": "Urgences : secours – en cas de perte de connaissance, de difficultés respiratoires ou de convulsions",
+              "nummer": "112"
+            },
+            {
+              "name": "Police",
+              "nummer": "113"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – aide par téléphone (anonyme)",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "SePAS, médecin scolaire",
+              "nummer": "au lycée"
+            },
+            {
+              "name": "Conseil sur l’alcool et les drogues (à compléter par la personne qui anime) : ______________________",
+              "nummer": "______________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes passent des mythes sur les drogues au crible et retiennent trois messages : mélanger rend imprévisible ; ni conduire ni monter avec quelqu’un d’ivre ; sous l’effet de l’ivresse, pas de vrai oui.",
+        "ablauf": [
+          "Avant : inscrire le service de conseil ; vérifier la loi.",
+          "Exercice 1 individuel (5 min), puis quiz en équipes (15 min) : carte verte ou rouge levée, un à trois doigts pour dire la certitude de l’équipe.",
+          "Solution : vrai – 1, 4, 6, 8 ; faux – 2, 3, 5, 7, 9. Justifier brièvement : les boissons énergisantes masquent l’ivresse (2), le THC peut aussi provoquer angoisse et panique (3), mélanger renforce les effets (5), les réactions faiblissent tôt (7), une personne impossible à réveiller est en danger (9).",
+          "Exercice 2 et encadrés (5 min) ; droit : rester général."
+        ],
+        "hintergrund": "Les messages menaçants et les images choc changent peu les comportements ; ils ne marchent que si l’on sait aussi quoi faire (Peters, Ruiter & Kok, 2013). Corriger les fausses normes est plus efficace : les jeunes surestiment la consommation de leurs pairs et s’y alignent (Perkins, 2002). Les faits suffisent : parmi celles et ceux qui commencent le cannabis à l’adolescence, environ une sur six devient dépendante, près d’une sur dix sur l’ensemble des consommateurs (Volkow et al., 2014).",
+        "quellen": [
+          "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31.",
+          "Perkins, H. W. (2002). Social norms and the prevention of alcohol misuse in collegiate contexts. Journal of Studies on Alcohol, Supplement 14, 164–172.",
+          "Volkow, N. D., Baler, R. D., Compton, W. M. & Weiss, S. R. B. (2014). Adverse health effects of marijuana use. New England Journal of Medicine, 370(23), 2219–2227."
+        ],
+        "differenzierung": {
+          "leichter": "Affirmations 1 à 6 seulement ; expliquer d’abord THC et polyconsommation.",
+          "schwerer": "Formuler et vérifier une autre affirmation souvent entendue – sans expérience personnelle."
+        },
+        "impulse": [
+          "Pourquoi les mythes sur les drogues sont-ils si tenaces ?",
+          "À quoi reconnaît-on des informations fiables ?"
+        ],
+        "tipps": [
+          "Chiffres sur la consommation des jeunes au Luxembourg : uniquement avec une source vérifiée.",
+          "Quantités, approvisionnement : ne pas répondre, parler des risques et de l’aide."
+        ],
+        "achtung": "Ne pas faire raconter de consommations. Indices de consommation dangereuse ou d’agression : en parler calmement après la séance, ne rien promettre, procédure de protection, informer la direction compétente (responsable) le jour même ; urgence : 112.",
+        "material": "Feuille, cartes vertes et rouges"
       }
     }
   },
@@ -950,6 +1537,205 @@
         "achtung": "Berührung nur mit Erlaubnis; Stopp-Recht gilt. Hat jemand einen Notfall oder Übergriff erlebt: nicht in der Gruppe vertiefen, nach der Einheit Einzelgespräch, nichts versprechen, Schutzkonzept anwenden, Responsable am selben Tag informieren; akut 112.",
         "material": "Blatt, Decken, Übungspuppe, Handy"
       }
+    },
+    "fr": {
+      "titel": "Quand quelqu’un va mal",
+      "untertitel": "Reconnaître l’urgence, agir correctement, rentrer en sécurité",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "C’est une urgence – 112 tout de suite",
+          "text": "Dans le doute, appelle toujours. La centrale 112 te dit au téléphone ce que tu dois faire.",
+          "punkte": [
+            "La personne est impossible à réveiller ou ne réagit presque pas.",
+            "Elle respire très lentement, de façon irrégulière ou avec un bruit rauque.",
+            "Elle vomit et répond à peine.",
+            "La peau est froide, pâle ou bleuâtre.",
+            "Crise convulsive, grande confusion, douleurs dans la poitrine ou panique qui ne passe pas."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Les quatre étapes en cas d’urgence : grave-les dans ta mémoire."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Interpeller",
+              "text": "Parler fort, secouer les épaules. Respire-t-elle normalement ?"
+            },
+            {
+              "titel": "Appeler le 112",
+              "text": "Appeler ou désigner quelqu’un : « Tu appelles le 112. »"
+            },
+            {
+              "titel": "Position latérale",
+              "text": "Respiration normale : position latérale. Sinon, le 112 te guide."
+            },
+            {
+              "titel": "Rester",
+              "text": "Couvrir, vérifier la respiration, ne pas la laisser seule."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Poste A – la position latérale de sécurité : coche chaque étape quand tu l’as exercée.",
+          "hinweis": "Avec permission, sur l’épaule, le bras, la main, le genou – sinon sur le mannequin.",
+          "symbole": [
+            "ankreuzen",
+            "partner"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "items": [
+            "S’agenouiller à côté de la personne, placer le bras le plus proche à angle droit vers le haut.",
+            "Poser l’autre bras sur la poitrine, maintenir le dos de la main contre sa joue.",
+            "Plier la jambe la plus éloignée jusqu’à ce que le pied soit posé au sol.",
+            "Tourner la personne vers soi en tirant sur le genou, poser la jambe du dessus à angle droit.",
+            "Incliner légèrement la tête en arrière, ouvrir la bouche pour que les vomissures s’écoulent.",
+            "Couvrir et vérifier régulièrement la respiration jusqu’à l’arrivée des secours."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Poste B – l’appel d’urgence : jouez l’appel à deux. Écris ce que tu dis.",
+          "hinweis": "Situation : à une fête, Mila est allongée dans le jardin. Elle ne réagit pas, mais respire. Elle a beaucoup bu.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Centrale 112",
+              "text": "Urgences 112. Où êtes-vous exactement, et que s’est-il passé ?"
+            },
+            {
+              "wer": "Toi"
+            },
+            {
+              "wer": "Centrale 112",
+              "text": "La personne est-elle réveillée ? Respire-t-elle ? Qu’a-t-elle pris ?"
+            },
+            {
+              "wer": "Toi"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Ne raccroche pas avant que la centrale ne te le dise – elle t’explique ce que tu dois faire. Un appel d’urgence sert à sauver quelqu’un, pas à s’attirer des ennuis. Dis honnêtement ce que la personne a bu ou pris. Aller chercher de l’aide n’est pas une trahison."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Quand quelqu’un panique",
+          "text": "Parler calmement et lentement, aller dans un endroit tranquille, ne pas laisser la personne seule, expirer lentement ensemble. Ne plus la laisser rien prendre. En cas de douleurs dans la poitrine, de difficultés à respirer, de convulsions ou de grande confusion : 112."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Poste C – ton plan : que dis-tu, que fais-tu ?",
+          "hinweis": "Plan B pour le retour : au Luxembourg, le bus et le train sont gratuits. Regarde avant à quelle heure part le dernier et fixe un mot de code avec quelqu’un en qui tu as confiance."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "La personne qui veut conduire a bu ou fumé. Je dis : …",
+            "À la place, je rentre comme ça : …"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Une amie tient à peine debout, et un garçon plus âgé veut sortir seul avec elle. Je …"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Notre mot de code pour « Viens me chercher s’il te plaît, questions plus tard » : …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Ton plan est à toi. Mets-le dans ton carnet de skills, pour le retrouver quand ça compte."
+        },
+        {
+          "art": "notfall",
+          "text": "Aide et conseils",
+          "eintraege": [
+            {
+              "name": "Urgences : secours – en cas de perte de connaissance, de difficultés respiratoires ou de convulsions",
+              "nummer": "112"
+            },
+            {
+              "name": "Police",
+              "nummer": "113"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – aide par téléphone (anonyme)",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "SePAS, médecin scolaire",
+              "nummer": "au lycée"
+            },
+            {
+              "name": "Conseil sur l’alcool et les drogues (à compléter par la personne qui anime) : ______________________",
+              "nummer": "______________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent une urgence liée à l’alcool ou aux drogues, s’exercent à la position latérale et à l’appel d’urgence et planifient un retour en sécurité.",
+        "ablauf": [
+          "Avant : inscrire le service de conseil, installer trois postes, vérifier les étapes avec des consignes de secourisme à jour.",
+          "Entrée (3 min) : lire ensemble signes d’alerte et quatre étapes.",
+          "Postes (7 min chacun) : A position latérale, démontrée sur le mannequin, exercée seulement avec permission ; B appel d’urgence à deux, sans composer le 112 ; C retour à la maison.",
+          "Bilan (4 min) : « Qui pouvez-vous appeler pour qu’on vienne vous chercher ? » Présenter l’idée du mot de code."
+        ],
+        "hintergrund": "En cas d’urgence, aide celui ou celle qui sait quoi faire et s’en sent capable ; les gestes exercés renforcent cette conviction (Bandura, 1977). Les simples avertissements n’agissent pas ou provoquent un rejet (Peters, Ruiter & Kok, 2013). L’accent est mis sur l’action : une personne inconsciente peut s’étouffer avec ses vomissures ou se refroidir – appel, position latérale et présence sauvent des vies. Les gestes suivent les recommandations européennes de premiers secours (Zideman et al., 2021). Les plans « si … alors » aident à agir au moment décisif (Gollwitzer, 1999).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31.",
+          "Zideman, D. A., Singletary, E. M., Borra, V., Cassan, P., Cimpoesu, C. D., De Buck, E., Djärv, T., Handley, A. J., Klaassen, B., Meyran, D., Oliver, E. & Poole, K. (2021). European Resuscitation Council Guidelines 2021: First aid. Resuscitation, 161, 270–290.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Au poste B, répondre à l’oral ; au poste C, seulement les deux premières phrases.",
+          "schwerer": "Au poste B, la centrale demande des précisions : nom de la rue, quantité bue."
+        },
+        "impulse": [
+          "Qu’est-ce qui retient les jeunes d’appeler le 112 ?",
+          "Qui pouvez-vous appeler la nuit sans que ça tourne au drame ?"
+        ],
+        "tipps": [
+          "Peu à l’aise en secourisme ? Inviter pour le poste A une personne formée aux premiers secours.",
+          "La feuille va dans le carnet de skills – facile à retrouver quand ça compte."
+        ],
+        "achtung": "Contact seulement avec permission ; droit de dire stop. Après une urgence ou une agression : ne pas approfondir en groupe, entretien individuel, ne rien promettre, procédure de protection, informer la direction compétente (responsable) le jour même ; urgence : 112.",
+        "material": "Couverture, mannequin, portable"
+      }
     }
   },
   {
@@ -1129,6 +1915,152 @@
         ],
         "achtung": "Eigene Fehler werden nicht vorgelesen. Wirkt jemand sehr niedergeschlagen, nach der Einheit nachfragen; bei Hinweisen auf Selbstverletzung oder Suizidgedanken Schutzkonzept anwenden, Responsable am selben Tag informieren.",
         "material": "Blatt, Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Rebondir après une erreur",
+      "untertitel": "Quatre sortes d’erreurs, le petit mot « encore » et trois phrases qui n’enfoncent pas",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Quand on apprend quelque chose de nouveau, on fait des erreurs – en jonglant, dans une nouvelle langue, lors du premier stage. L’important n’est pas de savoir si tu fais des erreurs, mais ce que tu fais ensuite."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Deuxième essai",
+          "bild": "figur:jana:enttaeuscht",
+          "text": "Chiara (16 ans) voulait absolument devenir cuisinière. Lors de son premier stage, elle est arrivée trois fois en retard, et l’évaluation était mauvaise. Sa première pensée : « Je ne suis tout simplement pas faite pour ça. » Sa tante a seulement demandé : « Qu’est-ce qui s’est passé, exactement ? » Ensemble, elles ont trouvé : le bus était trop juste, et Chiara n’avait pas osé poser de questions en cuisine. Au stage suivant, elle a pris le bus d’avant et a demandé quand elle ne savait pas. À la fin, on lui a proposé une place d’apprentissage."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quatre sortes d’erreurs : relie chaque sorte à l’étape suivante qui convient le mieux.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Sorte d’erreur",
+            "Étape suivante"
+          ],
+          "links": [
+            "Erreur d’étourderie : je savais le faire, mais j’allais trop vite.",
+            "Erreur du « pas encore » : il me manquait des connaissances ou de l’entraînement.",
+            "Erreur de courage : j’ai osé quelque chose de nouveau.",
+            "Erreur aux conséquences : quelqu’un d’autre en a subi un dommage."
+          ],
+          "rechts": [
+            "Assumer sa responsabilité, s’excuser, réparer",
+            "Ralentir et vérifier à la fin",
+            "Faire le bilan, ajuster, réessayer",
+            "Poser des questions, s’entraîner, me faire expliquer"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le petit mot « encore » : reformule les phrases pour qu’elles montrent un chemin vers l’avant.",
+          "hinweis": "Exemple : « Je suis nul en maths. » devient « Les fractions, je ne les maîtrise pas encore. Demain, je pose la question. »"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "« Je n’arrive tout simplement pas à parler devant les gens. » – mieux : …",
+            "« Le français, ce n’est pas pour moi. » – mieux : …",
+            "« De toute façon, je fais toujours tout de travers. » – mieux : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fais d’une erreur une étape suivante – avec une erreur à toi ou celle d’un personnage inventé."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Que s’est-il passé ? …",
+            "De quelle sorte d’erreur s’agissait-il ? …",
+            "Qu’est-ce que j’en retiens ? …",
+            "Mon étape suivante – et pour quand : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La phrase après l’erreur : que te dis-tu quand quelque chose tourne mal ?"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Regarder en face",
+              "text": "« Ça, c’était une erreur, et ça m’énerve. »"
+            },
+            {
+              "titel": "Ça arrive à tous",
+              "text": "« Des choses comme ça arrivent à tout le monde. »"
+            },
+            {
+              "titel": "Avancer avec bienveillance",
+              "text": "« Qu’est-ce qui m’aiderait maintenant – et quelle est mon étape suivante ? »"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Ma propre phrase après une erreur : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Si tu veux : demande à une personne adulte en qui tu as confiance quand elle a échoué un jour – et comment ça s’est passé ensuite.",
+          "hinweis": "Parents, entraîneuse, oncle, voisin : presque tout le monde a une histoire comme ça. Note ce qui a aidé cette personne."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Les exercices 3 et 4 sont à toi et ne sont pas lus à voix haute. Si une erreur ne te lâche pas, parles-en avec une personne de confiance, au SePAS ou au Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes relient chaque erreur à une étape suivante, reformulent des phrases figées avec « encore », tirent le bilan d’une erreur et s’exercent à se parler avec bienveillance.",
+        "ablauf": [
+          "Après le schéma au tableau (5 min) : lire l’histoire de Chiara. Question : « Quelle sorte d’erreur, et qu’est-ce qui a aidé Chiara ? »",
+          "Exercice 1 à deux (3 min). Solution : étourderie – ralentir ; « pas encore » – poser des questions, s’entraîner ; courage – bilan, réessai ; conséquences – réparer.",
+          "Exercices 2 et 3 en individuel (9 min) ; l’exercice 3 n’est pas lu à voix haute, un personnage inventé est permis.",
+          "Après le jonglage (5 min) : guider calmement les trois phrases, puis exercice 4. L’exercice 5 est facultatif, à faire pour la prochaine fois."
+        ],
+        "hintergrund": "Qui tient ses capacités pour figées cache ses erreurs et évite le difficile ; qui les croit développables cherche des causes et des stratégies (Dweck, 2006). De courts entraînements à cette attitude agissent peu seuls (Sisk et al., 2018) – il faut l’étape suivante concrète. Un retour aide quand il précise où l’on va, où l’on en est et la suite (Hattie & Timperley, 2007). Les trois phrases suivent l’autocompassion : pleine conscience, humanité partagée, bienveillance envers soi (Neff, 2003). Cela ne rend pas négligent : après un échec, ces personnes ont étudié plus longtemps pour l’essai suivant (Breines & Chen, 2012).",
+        "quellen": [
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+          "Sisk, V. F., Burgoyne, A. P., Sun, J., Butler, J. L. & Macnamara, B. N. (2018). To what extent and under which circumstances are growth mind-sets important to academic achievement? Two meta-analyses. Psychological Science, 29(4), 549–571.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 2 à l’oral ; à l’exercice 3, première et dernière ligne seulement.",
+          "schwerer": "Pour une erreur de courage, écrire un plan de deuxième essai : que changer, qui aide, quand ?"
+        },
+        "impulse": [
+          "Quelle erreur est en réalité un bon signe ?",
+          "Comment les adultes que vous connaissez réagissent-ils aux erreurs ?"
+        ],
+        "tipps": [
+          "Raconter une histoire d’échec personnelle, plutôt légère.",
+          "Afficher bien en vue le mot « encore »."
+        ],
+        "achtung": "Les erreurs personnelles ne sont pas lues à voix haute. Si quelqu’un paraît très abattu, reprendre contact après la séance ; indices d’automutilation ou d’idées suicidaires : procédure de protection, informer la direction compétente (responsable) le jour même.",
+        "material": "Feuille, stylos"
       }
     }
   }

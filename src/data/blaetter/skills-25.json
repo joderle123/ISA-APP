@@ -192,6 +192,165 @@
         "achtung": "Sätze wie „Ich halte das nicht mehr aus“ oder „Es wäre besser, wenn ich nicht da wäre“ nicht in der Gruppe aufgreifen: nach der Einheit ruhig ansprechen, noch am selben Tag nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Skills-Buch, Scheren, festeres Papier"
       }
+    },
+    "fr": {
+      "titel": "Des phrases pour la poche",
+      "untertitel": "Les phrases les plus fortes de ton carnet de skills – vérifiées, et assez petites pour les emporter.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Pendant un an, tu as rassemblé dans ton carnet de skills, sous « Phrases qui portent », ce que tu peux te dire dans les moments difficiles. Place à la finition : quelles phrases tiennent vraiment – et quelles sont les trois que tu emportes quand le carnet reste à la maison ?"
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Quatre questions pour une phrase qui porte",
+          "punkte": [
+            "Courte : tu peux encore la penser quand la tension est à 80 sur 100.",
+            "Vraie : elle ne promet rien que personne ne puisse tenir.",
+            "À toi : elle te ressemble, elle ne sonne pas comme une phrase de calendrier.",
+            "Bienveillante : tu parlerais ainsi à un bon ami ou à une bonne amie."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Feuillette la rubrique « Phrases qui portent » de ton carnet de skills. Note les phrases les plus fortes et vérifie-les avec les quatre questions.",
+          "hinweis": "Une croix pour chaque question que la phrase réussit. Pas assez de phrases à toi ? La boîte à mots en dessous t’aide.",
+          "symbole": [
+            "schreiben",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ma phrase",
+            "courte",
+            "vraie",
+            "à moi",
+            "bienveillante"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            3.3,
+            0.62,
+            0.62,
+            0.72,
+            0.9
+          ],
+          "beispiel": [
+            "« Je n’ai pas à décider ça maintenant. »",
+            "x",
+            "x",
+            "x",
+            "x"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Des phrases qui ont aidé d’autres personnes",
+          "items": [
+            "« C’est une émotion, pas un ordre. »",
+            "« D’abord redescendre, ensuite parler. »",
+            "« Je n’y arrive pas. Pas encore. »",
+            "« Faire une erreur, ce n’est pas être une erreur. »",
+            "« J’ai déjà surmonté plus difficile. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Atelier de phrases : une phrase échoue ou te tire vers le bas ? Retravaille-la jusqu’à ce qu’elle porte.",
+          "hinweis": "Le détective critique de l’année 1 demande : est-ce vraiment vrai ? Que dirais-tu à un ami ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Comment la phrase sonne maintenant",
+            "Comment elle porte"
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "« Je suis trop bête pour cet examen. »",
+            "« J’ai révisé. Je commence par l’exercice que je sais faire. »"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tes phrases pour la poche : écris tes trois phrases les plus fortes sur les cartes et découpe-les.",
+          "hinweis": "Trois cartes ont déjà un titre, tu nommes les trois autres toi-même – pour une phrase de plus ou une deuxième copie. Une carte dans le porte-monnaie, une dans la coque du téléphone ; les phrases vont aussi sur la vue d’ensemble au début de ton carnet de skills.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 150,
+          "karten": [
+            {
+              "titel": "Quand ça se corse"
+            },
+            {
+              "titel": "Quand je doute de moi"
+            },
+            {
+              "titel": "Quand j’ose quelque chose de nouveau"
+            },
+            {
+              "titel": "Quand …"
+            },
+            {
+              "titel": "Quand …"
+            },
+            {
+              "titel": "Ma phrase pour …"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Tes phrases t’appartiennent. Et si un jour plus aucune phrase ne porte, ce n’est pas un échec – c’est le moment de se tourner vers des personnes : ta personne de confiance, le SePAS ou le Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes vérifient avec quatre questions les phrases de la rubrique « Phrases qui portent » de leur carnet de skills, retravaillent une phrase dévalorisante et emportent les trois plus fortes sous forme de cartes.",
+        "ablauf": [
+          "Entrée en matière (2 min) : écrire au tableau « Tout ira bien. » et « C’est dur, et j’ai déjà surmonté plus difficile. » Laquelle porte le mieux – et pourquoi ?",
+          "Lire l’encadré, puis tâche 1 seul (4 min) : choisir des phrases dans le carnet de skills et les vérifier.",
+          "Tâche 2 (2 min) : qui a une phrase qui échoue la retravaille. Lecture à voix haute facultative.",
+          "Tâche 3 (2 min) : écrire et découper les cartes de la page 2, reporter les phrases sur la vue d’ensemble du carnet.",
+          "Dans le skill « Ma phrase en expirant », on s’exerce tout de suite avec sa propre phrase."
+        ],
+        "hintergrund": "Le dialogue intérieur oriente le comportement : qui se guide à voix basse dans les moments difficiles agit plus posément (Meichenbaum & Goodman, 1971). Le ton compte : des phrases bienveillantes et réalistes soutiennent mieux que des slogans ; l’auto-compassion va avec moins de ruminations et plus de stabilité (Neff, 2003). Se parler comme à un ami donne du recul (Kross & Ayduk, 2017). Le carnet collecte toute l’année ; la feuille choisit et rend les meilleures phrases transportables.",
+        "quellen": [
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Choisir deux phrases de la boîte à mots et les écrire sur les cartes ; l’atelier à l’oral avec l’adulte.",
+          "schwerer": "Noter pour chaque carte dans quelle situation la phrase a déjà aidé."
+        },
+        "impulse": [
+          "Quelle phrase te porte sans être joyeuse ?",
+          "Que dis-tu à un ami qui doute – et à toi ?"
+        ],
+        "tipps": [
+          "Papier épais pour la page 2 ; plastifier une carte.",
+          "Proposer sans imposer : la phrase doit sonner juste."
+        ],
+        "achtung": "Phrases du type « Je n’en peux plus » ou « Ce serait mieux sans moi » : pas en groupe ; parler à la personne après la séance, agir le jour même (concept de protection), informer la direction compétente (responsable).",
+        "material": "Carnets, ciseaux, papier épais"
+      }
     }
   },
   {
@@ -375,6 +534,152 @@
         ],
         "achtung": "Nicht einsammeln, nicht vorlesen. Fehlt jede erreichbare Person oder wirkt jemand hoffnungslos: Einzelgespräch, Responsable informieren, bei Gefährdung Schutzkonzept.",
         "material": "Anlaufstellen, „Mein Netz“, Skills-Buch"
+      }
+    },
+    "fr": {
+      "titel": "Mon pont",
+      "untertitel": "D’ici à là-bas : ce qui change, qui te porte et ce que tu fais ensuite.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dans un nouveau lieu, tu ne repars jamais de zéro : skills, expériences et personnes viennent avec toi. Un pont tient quand ses piliers portent."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tes deux rives : où es-tu maintenant, et où vas-tu après l’été ?",
+          "hinweis": "Tu ne le sais pas encore ? Écris : « découvrir comment ça continue ». C’est un vrai objectif.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Où je suis maintenant",
+              "beispiel": "classe au lycée, cours Skills le lundi",
+              "hoehe": 2.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Où je vais",
+              "beispiel": "apprentissage d’électricien, entreprise et école",
+              "hoehe": 2.4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui change – et qu’est-ce qui reste ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ce qui change",
+            "Ce qui reste",
+            "Ce que j’emporte consciemment"
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "me lever plus tôt, de nouvelles personnes, un chef",
+            "Léa, le foot du samedi, mon humour",
+            "respiration en carré avant les contrôles"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tes piliers : mets ton réseau de la séance 22 à jour pour l’après-été.",
+          "hinweis": "Avec une deuxième couleur : qui reste, qui disparaît, qui s’ajoute dans le nouveau lieu ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma personne-pont, qui me connaît déjà et reste joignable : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan pour les prochains mois : un pas par étape.",
+          "hinweis": "Petit et faisable. Note tout de suite l’étape « après six semaines » dans l’agenda de ton téléphone."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Pendant l’été",
+              "text": "p. ex. faire une fois le trajet jusqu’à l’école"
+            },
+            {
+              "titel": "La première semaine",
+              "text": "p. ex. repérer où se trouve le SePAS"
+            },
+            {
+              "titel": "Après six semaines",
+              "text": "p. ex. bilan feu tricolore : où j’en suis ?"
+            },
+            {
+              "titel": "D’ici Noël",
+              "text": "p. ex. une activité dans le nouveau lieu"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le premier obstacle : qu’est-ce qui pourrait te freiner – et que fais-tu alors ?"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je me retrouve à l’écart pendant la récré,",
+              "dann": "j’adresse la parole à quelqu’un de ma classe."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Ton pont t’appartient. Il devient le dernier chapitre de ton carnet de skills."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes planifient leur prochain passage : ils décrivent point de départ et d’arrivée, distinguent ce qui change et ce qui reste, ancrent une personne-pont de leur réseau et fixent des étapes pour les premiers mois.",
+        "ablauf": [
+          "Avant : chercher, pour chaque personne, les contacts au nouveau lieu – SePAS, titulaire de classe, formateur ou formatrice, orientation professionnelle.",
+          "Entrée en matière (5 min) : lire les quatre passages de la séance ; noter ce qui change et ce qui reste.",
+          "Tâches 1 et 2 seul (6 min). Qui n’a pas encore de place écrit « découvrir comment ça continue ».",
+          "Tâches 4 et 5 (5 min) : quatre étapes et une phrase « si … alors » pour le premier obstacle.",
+          "Ensuite tâche 3 (7 min) avec la feuille « Mon réseau » de la séance 22 : mettre à jour plutôt que refaire."
+        ],
+        "hintergrund": "Les transitions cumulent les exigences : nouveaux trajets, nouvelles règles, nouvelles personnes – et souvent des repères familiers disparaissent. Ce qui protège alors, ce sont surtout des relations fiables et l’expérience d’avoir déjà surmonté des difficultés (Masten, 2014). Les jeunes demandent plus volontiers de l’aide à des personnes qu’ils connaissent (Rickwood et al., 2005) : le réseau existant est donc prolongé, et une personne-pont accompagne le changement. Les phrases « si … alors » rendent plus probable l’application d’une résolution au moment critique (Gollwitzer, 1999).",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les rives, la personne-pont et un pas pour la première semaine ; le reste à l’oral.",
+          "schwerer": "Écrire une phrase « si … alors » pour chaque étape et demander à la personne-pont avant les vacances."
+        },
+        "impulse": [
+          "Qu’emportes-tu – et que laisses-tu ici ?",
+          "Ta confiance, de 0 à 10 – et que changerait un point de plus ?"
+        ],
+        "tipps": [
+          "Compléter les contacts avec de vrais noms, salles et trajets – « le SePAS » seul n’aide guère.",
+          "Copie possible pour la nouvelle personne de référence."
+        ],
+        "achtung": "Ne pas ramasser, ne pas faire lire. Aucune personne joignable ou désespoir apparent : entretien individuel, informer la direction compétente (responsable) ; mise en danger : concept de protection.",
+        "material": "Contacts, « Mon réseau »"
       }
     }
   },
@@ -576,6 +881,169 @@
         "achtung": "Nicht einsammeln, nicht vorlesen. Bei Hinweisen auf Selbstverletzung, Suizidgedanken oder gefährlichen Konsum: am selben Tag ansprechen, Schutzkonzept anwenden; bei akuter Gefahr 112.",
         "material": "Ampelplan aus Jahr 1, Handy"
       }
+    },
+    "fr": {
+      "titel": "Bien repartir : mon feu tricolore",
+      "untertitel": "Remarquer tôt quand le nouveau quotidien dérape – et agir tant que c’est encore orange.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ton plan feu tricolore de l’année 1 était fait pour les moments où la tension monte. Après un changement, ça bascule rarement en un jour – le plus souvent, ça glisse sur des semaines. Avec ce plan, tu le remarques tôt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi remarques-tu que ton nouveau quotidien commence à déraper ? Coche tes signes avant-coureurs.",
+          "hinweis": "Pense aussi aux signes que les autres voient en premier.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "mal dormir",
+            "avoir du mal à se lever",
+            "rester à l’écart pendant les récrés",
+            "rester tard sur le téléphone la nuit",
+            "accumuler les absences",
+            "s’énerver vite",
+            "presque plus manger, ou beaucoup plus",
+            "laisser tomber ses loisirs",
+            "« Je m’en fiche. »"
+          ],
+          "frei": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton feu tricolore pour les premiers mois : que fais-tu à quelle couleur ?",
+          "hinweis": "Commence en bas, par le vert. À l’orange, ce qui compte : agir tôt et prévenir quelqu’un."
+        },
+        {
+          "art": "ampel",
+          "linien": 3,
+          "stufen": [
+            {
+              "titel": "Rouge – ça va vraiment mal",
+              "text": "Alors mon plan de sécurité de la séance 20 s’applique. Il se trouve ici :"
+            },
+            {
+              "titel": "Orange – ça dérape",
+              "text": "Voilà ce que je fais – et c’est cette personne que je préviens :"
+            },
+            {
+              "titel": "Vert – je prends mes marques",
+              "text": "Voilà ce que je garde : le sommeil, le mouvement, les gens, quelque chose qui n’appartient qu’à moi."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fais de l’orange un plan « si … alors » : à quel signe fais-tu quoi ?",
+          "hinweis": "Plus le signe est précis, plus tu as de chances de le remarquer à temps.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je dors mal pendant une semaine et que je reste à l’écart pendant les récrés,",
+              "dann": "j’écris à ma personne-pont et je retourne à l’entraînement."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton bilan feu tricolore : coche chaque dimanche des six premières semaines où tu en es.",
+          "hinweis": "Orange deux fois de suite : lancer le plan pour l’orange et prévenir quelqu’un.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Semaine 1",
+            "Semaine 2",
+            "Semaine 3",
+            "Semaine 4",
+            "Semaine 5",
+            "Semaine 6"
+          ],
+          "zeilen": [
+            "Vert – je prends mes marques",
+            "Orange – ça dérape",
+            "Rouge – vraiment mal"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Une photo ou une copie de ce plan va à : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Plan feu tricolore ou plan de sécurité ?",
+          "text": "Le plan feu tricolore sert à ton quotidien : il t’aide à remarquer tôt quand ça dérape. Le plan de sécurité sert aux moments où tu vas vraiment mal. Il reste privé – tu peux le compléter seul, avec l’adulte qui anime le cours ou au SePAS."
+        },
+        {
+          "art": "notfall",
+          "eintraege": [
+            {
+              "name": "Appel d’urgence : secours – en cas de danger immédiat, 24 h sur 24",
+              "nummer": "112"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – aide par téléphone (anonyme)",
+              "nummer": "45 45 45"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes renouvellent leur plan feu tricolore pour les premiers mois après un changement – avec signes avant-coureurs, phrase « si … alors » et bilan. Au rouge, il renvoie au plan de sécurité de la séance 20.",
+        "ablauf": [
+          "Entrée en matière (2 min) : rappeler vert, orange, rouge de l’année 1. Nouveau : le regard porte sur des semaines plutôt que sur des moments.",
+          "Tâches 1 et 2 (6 min) : cocher les signes, puis le feu du vert vers l’orange. Au rouge, noter seulement où se trouve le plan de sécurité.",
+          "Tâche 3 (2 min) : l’orange en phrase « si … alors » – avec un signe qu’on remarque vraiment.",
+          "Tâche 4 (2 min) : noter le premier bilan dans le téléphone, photographier le plan.",
+          "Pas de plan de sécurité, ou envie de le compléter : rendez-vous individuel avant les vacances."
+        ],
+        "hintergrund": "Après un changement, les personnes et routines qui portaient jusque-là manquent souvent ; les difficultés apparaissent d’abord dans le quotidien – sommeil, repli, absences – avant que quelqu’un les remarque. Le plan feu tricolore de la DBT relie des signes d’alerte précoces à des skills, pour agir tant que c’est encore orange (Rathus & Miller, 2015). Pour les crises aiguës, c’est le plan de sécurité de Stanley et Brown (2012) qui vaut ; au rouge, le plan y renvoie au lieu d’en créer un second. Les jeunes cherchant de l’aide auprès de personnes de confiance (Rickwood et al., 2005), l’orange comprend toujours une personne que l’on prévient.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251."
+        ],
+        "differenzierung": {
+          "leichter": "Remplir seulement vert et orange et nommer une personne joignable ; le reste à l’oral.",
+          "schwerer": "Demander à la personne-pont si elle peut prendre des nouvelles lors du bilan de la semaine 3."
+        },
+        "impulse": [
+          "À quoi les autres verraient-ils que tu es à l’orange ?",
+          "Qui est joignable cet été – et comment le sais-tu ?"
+        ],
+        "tipps": [
+          "Faire photographier le plan ; une copie à une personne de confiance.",
+          "Ne jamais faire remplir le plan de sécurité en groupe – y renvoyer seulement."
+        ],
+        "achtung": "Ne pas ramasser, ne pas faire lire. Indices d’automutilation, d’idées suicidaires ou de consommation dangereuse : en parler le jour même, concept de protection ; danger aigu : 112.",
+        "material": "Plan de l’année 1, téléphone"
+      }
     }
   },
   {
@@ -732,6 +1200,127 @@
         "achtung": "Tiefpunkte können an Schweres erinnern: nicht nachfragen, bei Tränen oder Stocken später ein Gespräch anbieten. Anonyme Karten nicht zuordnen. Bei Hinweisen auf Gefährdung: Schutzkonzept, Responsable.",
         "material": "Weg am Boden, Erinnerungsstücke, Scheren, Box"
       }
+    },
+    "fr": {
+      "titel": "Mon chemin sur trois ans",
+      "untertitel": "Reparcours ton chemin – et emporte ce que tu trouves.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Trois ans, beaucoup de séances, un chemin. Si tu as rejoint le groupe plus tard, ton chemin commence là où tu es arrivé."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis, sur le chemin, pour chaque année un moment et un skill.",
+          "hinweis": "N’écris que ce que tu as envie d’écrire.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Année",
+            "Un moment qui est resté",
+            "Un skill que j’utilise encore aujourd’hui"
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "breiten": [
+            0.55,
+            2.3,
+            2.1
+          ],
+          "beispiel": [
+            "p. ex.",
+            "Foot à l’aveugle sur la pelouse mouillée",
+            "5-4-3-2-1 quand j’ai la tête pleine"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Avant – maintenant : qu’est-ce qui a changé ?",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Au début du cours, je pensais de moi : …",
+            "Aujourd’hui, je sais : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Aujourd’hui, je fais ça autrement qu’avant : …",
+            "Ma plus grande fierté : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Un conseil pour les nouveaux : que devrait savoir un groupe qui commence en septembre ? Découpe les cartes et glisse-les dans la boîte.",
+          "hinweis": "Les cartes sont anonymes. La carte pour l’adulte qui anime est facultative.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 124,
+          "karten": [
+            {
+              "titel": "Conseil aux nouveaux",
+              "text": "Voilà ce que vous devriez savoir sur ce cours :\n\n\n\n\n"
+            },
+            {
+              "titel": "Conseil à l’adulte qui anime",
+              "text": "Ça doit rester – et voilà ce que je changerais :\n\n\n\n\n"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "La feuille t’appartient. Dans le cercle, tu ne racontes que ce que tu as envie de raconter."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reviennent sur leur chemin de trois ans de cours Skills, nomment moments, skills et changements et transmettent leur expérience sous forme de conseil à un nouveau groupe.",
+        "ablauf": [
+          "Avant : étaler le chemin au sol, attribuer les souvenirs aux trois années, préparer la boîte à fente.",
+          "Parcourir le chemin (8 min) : en silence, musique douce, à son rythme.",
+          "Tâches 1 et 2 (8 min) au bord du chemin ou assis. Ne pas faire lire à voix haute.",
+          "Tâche 3 (4 min) à la station « Ce qui vient » : découper les cartes et les glisser dans la boîte.",
+          "Tour de parole (5 min) : qui veut raconte un moment ; l’adulte en raconte un aussi."
+        ],
+        "hintergrund": "Un retour sur trois ans rend visible un développement qui se perd dans le quotidien. Reconnaître qu’on a surmonté des périodes difficiles est une expérience de maîtrise – la source la plus importante du sentiment d’efficacité personnelle (Bandura, 1977) et un élément de la résilience (Masten, 2014). La comparaison « avant – maintenant » crée une distance dans le temps ; de là, il est plus facile de se regarder avec bienveillance et lucidité (Kross & Ayduk, 2017). Avec le conseil à un nouveau groupe, les jeunes changent de rôle : ce sont eux, maintenant, qui ont l’expérience.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement la tâche 1, avec une année au choix, et un début de phrase de la tâche 2.",
+          "schwerer": "Noter pour chaque année quelle personne a compté ; écrire le conseil aux nouveaux sous forme de court courrier."
+        },
+        "impulse": [
+          "Que ne saviez-vous pas le premier jour, que vous savez aujourd’hui ?",
+          "Que devrait savoir un jeune de douze ans avant de commencer ce cours ?"
+        ],
+        "tipps": [
+          "Qui a rejoint le groupe plus tard reçoit une carte « Ici, j’ai embarqué ».",
+          "Lire le conseil aux nouveaux à la première séance du prochain groupe."
+        ],
+        "achtung": "Les points bas peuvent raviver des choses lourdes : ne pas questionner, proposer un entretien plus tard. Ne pas identifier les cartes anonymes. Mise en danger : concept de protection, direction compétente (responsable).",
+        "material": "Chemin, souvenirs, ciseaux, boîte"
+      }
     }
   },
   {
@@ -877,6 +1466,118 @@
         ],
         "achtung": "Die Leitung liest jede Karte, bevor die Beutel übergeben werden. Abwertende oder zweideutige Karten herausnehmen und später unter vier Augen klären, nicht in der Gruppe. Kein Beutel darf dünner sein als die anderen.",
         "material": "Kartensätze, Papiertüten, Stifte, Musik"
+      }
+    },
+    "fr": {
+      "titel": "Provisions pour la route",
+      "untertitel": "Des cartes d’adieu : une pour chaque personne du groupe – à ouvrir en chemin.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment écrire",
+          "punkte": [
+            "Concret : pas seulement « tu es sympa », mais ce que tu as vécu avec cette personne, et quand.",
+            "Un vœu qui correspond à son chemin – pour l’apprentissage, le nouveau lycée, l’été.",
+            "Rien sur l’apparence, pas de blagues aux dépens de la personne.",
+            "Avec ou sans nom – comme tu veux."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris pour chaque personne du groupe une carte et glisse-la dans son sachet de provisions.",
+          "hinweis": "Si tu as besoin d’un début : J’ai vu comment tu … · Merci d’avoir … · Je te souhaite …",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 222,
+          "karten": [
+            {
+              "titel": "Provisions pour …",
+              "text": "Voilà ce que j’ai vu chez toi :\n\n\n\n\nVoilà ce que je te souhaite pour ton chemin :\n\n\n\n"
+            },
+            {
+              "titel": "Provisions pour …",
+              "text": "Voilà ce que j’ai vu chez toi :\n\n\n\n\nVoilà ce que je te souhaite pour ton chemin :\n\n\n\n"
+            },
+            {
+              "titel": "Provisions pour …",
+              "text": "Voilà ce que j’ai vu chez toi :\n\n\n\n\nVoilà ce que je te souhaite pour ton chemin :\n\n\n\n"
+            },
+            {
+              "titel": "Provisions pour …",
+              "text": "Voilà ce que j’ai vu chez toi :\n\n\n\n\nVoilà ce que je te souhaite pour ton chemin :\n\n\n\n"
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 222,
+          "karten": [
+            {
+              "titel": "Provisions pour …",
+              "text": "Voilà ce que j’ai vu chez toi :\n\n\n\n\nVoilà ce que je te souhaite pour ton chemin :\n\n\n\n"
+            },
+            {
+              "titel": "Provisions pour …",
+              "text": "Voilà ce que j’ai vu chez toi :\n\n\n\n\nVoilà ce que je te souhaite pour ton chemin :\n\n\n\n"
+            },
+            {
+              "titel": "Provisions pour …",
+              "text": "Voilà ce que j’ai vu chez toi :\n\n\n\n\nVoilà ce que je te souhaite pour ton chemin :\n\n\n\n"
+            },
+            {
+              "titel": "Provisions pour …",
+              "text": "Voilà ce que j’ai vu chez toi :\n\n\n\n\nVoilà ce que je te souhaite pour ton chemin :\n\n\n\n"
+            },
+            {
+              "titel": "Provisions pour …",
+              "text": "Voilà ce que j’ai vu chez toi :\n\n\n\n\nVoilà ce que je te souhaite pour ton chemin :\n\n\n\n"
+            },
+            {
+              "titel": "Provisions pour l’adulte qui anime",
+              "text": "Voilà ce que j’emporte de ces trois ans :\n\n\n\n\nVoilà ce que je te souhaite :\n\n\n\n"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes écrivent, en guise d’adieu, à chaque personne du groupe une carte avec une observation concrète et un vœu pour son chemin ; chacun repart avec un sachet plein de retours.",
+        "ablauf": [
+          "Avant : découper un jeu de cartes par personne, écrire les noms sur les sachets, rédiger ses propres cartes.",
+          "Lire les règles (2 min) et annoncer que l’adulte relit rapidement avant la remise des sachets.",
+          "Écriture (10 min) : chacun écrit une carte pour chaque autre personne et la glisse dans son sachet.",
+          "Relecture (3 min) : l’adulte survole et retire les cartes inappropriées.",
+          "Remise pendant le rituel d’adieu ; on ouvre après la séance – tout de suite ou le premier jour au nouveau lieu."
+        ],
+        "hintergrund": "À l’adolescence, la reconnaissance des pairs pèse de plus en plus dans l’image de soi (Harter, 2012). Un retour agit surtout quand il nomme un comportement observé : c’est plus crédible et plus utile qu’un éloge général (Hattie & Timperley, 2007). Exprimer sa gratitude et sa reconnaissance profite aussi à soi-même (Seligman et al., 2005). Le vœu pour le chemin relie le bilan à ce qui vient – et la carte reste quand le groupe s’est depuis longtemps dispersé.",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "differenzierung": {
+          "leichter": "Écrire en grand au tableau les débuts de phrase de la consigne ; une phrase par carte suffit.",
+          "schwerer": "Citer sur chaque carte un moment vécu ensemble pendant les trois ans."
+        },
+        "impulse": [
+          "Quand as-tu vu cette personne réussir quelque chose ?",
+          "Que lui souhaites-tu pour les premières semaines après l’été ?"
+        ],
+        "tipps": [
+          "Écrire ses cartes avec un soin particulier pour les jeunes arrivés tard ou souvent absents.",
+          "Ordre fixe pour n’oublier personne ; compter les cartes par sachet."
+        ],
+        "achtung": "L’adulte lit chaque carte avant la remise. Retirer les cartes dévalorisantes ou ambiguës, en parler plus tard en tête à tête, pas en groupe. Aucun sachet ne doit être plus mince que les autres.",
+        "material": "Cartes, sachets, stylos, musique"
       }
     }
   },
@@ -1115,6 +1816,206 @@
         "achtung": "Keine Informationen über einzelne Jugendliche an den Betrieb; Fotos nur mit Erlaubnis und ohne Personen. Bei Angst vor dem Besuch eine Rolle ohne Sprechen anbieten. Abwertende Bemerkungen ruhig begrenzen und nachbesprechen.",
         "material": "Klemmbretter, Stifte, Klebezettel, Dankeskarte"
       }
+    },
+    "fr": {
+      "titel": "Visite en entreprise : notre mission d’enquête",
+      "untertitel": "Sur internet, on lit ce qu’est un métier. Comment il se vit, tu ne le vois que sur place.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Avant la visite : choisis ton rôle et ta mission d’observation.",
+          "hinweis": "Chaque rôle est utile. Qui n’aime pas parler est parfait pour le compte rendu, le chronométrage ou le remerciement.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "Mon rôle",
+              "items": [
+                "Interview : pose la première question",
+                "Compte rendu : note les réponses",
+                "Chronométrage : garde l’œil sur l’heure",
+                "Remerciement : remet la carte à la fin",
+                "Photos : seulement les postes de travail, seulement avec autorisation"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Ma mission d’observation",
+              "items": [
+                "Sécurité et vêtements",
+                "Outils et appareils",
+                "Ambiance dans l’équipe",
+                "Langues dans l’entreprise",
+                "Horaires, rythme, pauses",
+                "Voies d’accès au métier"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tes deux questions – et une relance chacune, si la réponse est courte.",
+          "hinweis": "Une bonne question ne se répond pas par oui ou non.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ma question",
+            "Réponse en mots-clés",
+            "Ma relance"
+          ],
+          "zeilen": 2,
+          "breiten": [
+            2,
+            1.8,
+            1.7
+          ],
+          "beispiel": [
+            "Que se passe-t-il quand un apprenti fait une erreur ?",
+            "(à noter dans l’entreprise)",
+            "Quelle a été votre plus grande erreur au début ?"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "En chemin et dans l’entreprise",
+          "punkte": [
+            "Nous restons ensemble. Qui doit s’éloigner le dit à un des adultes.",
+            "Les règles de sécurité de l’entreprise s’appliquent : ce qu’on ne doit pas toucher, on ne le touche pas.",
+            "Téléphone dans la poche. Photos seulement avec autorisation et jamais de personnes.",
+            "Nous sommes invités : saluer, écouter, laisser finir de parler, remercier."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rendez-vous et trajet : note ce que tu dois savoir pour le jour de la visite.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Lieu et heure de rendez-vous : …",
+            "Bus ou train, ligne et arrêt : …",
+            "Ce que je mets : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pendant la visite : note ce que tu vois et entends.",
+          "hinweis": "Des mots-clés suffisent. Fais surtout attention à ta mission d’observation.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Poste de travail, outils, vêtements",
+              "hoehe": 6.8
+            },
+            {
+              "art": "feld",
+              "label": "Comment les gens se parlent",
+              "hoehe": 6.8
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ce qui est fatigant dans ce travail",
+              "hoehe": 6.8
+            },
+            {
+              "art": "feld",
+              "label": "Ce qui me plaît",
+              "hoehe": 6.8
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Le trajet jusqu’à l’entreprise a duré : …",
+            "Pour y faire un apprentissage, je devrais partir le matin à : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après la visite : est-ce que ça te correspond ?",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "À quel point peux-tu t’imaginer faire un stage ici ?",
+          "von": "pas du tout",
+          "bis": "très bien",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui m’a surpris : …",
+            "Les skills dont on a besoin ici, même s’ils ne figurent sur aucun bulletin : …",
+            "Mon prochain pas : …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes préparent une visite en entreprise avec des rôles, leurs propres questions et une mission d’observation, notent sur place ce qu’ils voient et entendent, puis vérifient si le métier leur convient.",
+        "ablauf": [
+          "Avant : clarifier l’entreprise, la date, les règles de sécurité, les autorisations et l’accompagnement.",
+          "Séance 1 (15 min) : recueillir et trier les questions sur des post-it, puis tâches 1 et 2.",
+          "Séance 1 (5 min) : lire l’encadré, tâche 3 avec lieu de rendez-vous, trajet et tenue.",
+          "Pendant la visite : tâche 4 en mots-clés sur le porte-bloc, les questions de la tâche 2 pendant l’interview.",
+          "Ensuite (10 min) : tâche 5 seul, puis un tour de parole : qu’est-ce qui a surpris, quels skills faut-il là-bas ?"
+        ],
+        "hintergrund": "Dans la phase d’exploration professionnelle, les jeunes confrontent leurs représentations à la réalité (Super, 1980). L’adéquation entre intérêts et environnement de travail s’évalue mieux sur place que sur écran (Holland, 1997). Observer des professionnels au travail, c’est apprendre par modèle ; poser soi-même des questions et obtenir des réponses donne une expérience d’efficacité personnelle (Bandura, 1977). Choisir soi-même rôles et questions augmente l’implication (Deci & Ryan, 2000).",
+        "quellen": [
+          "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+          "Holland, J. L. (1997). Making Vocational Choices (3rd ed.). Odessa, FL: Psychological Assessment Resources.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Reprendre une question de la collecte au tableau et ne traiter qu’une mission d’observation.",
+          "schwerer": "Après la visite, rédiger un court mail à l’entreprise : remerciement et une question sur le stage."
+        },
+        "impulse": [
+          "Qu’avez-vous vu que personne ne vous avait expliqué ?",
+          "Quels skills du cours sert-on là-bas chaque jour ?"
+        ],
+        "tipps": [
+          "Prendre des porte-blocs – debout, on écrit mal autrement.",
+          "Une carte de remerciement avec une phrase de chacun fait plaisir aux entreprises."
+        ],
+        "achtung": "Aucune information sur des jeunes à l’entreprise ; photos sans personnes. Si la visite fait peur : rôle sans prise de parole. Remarques dévalorisantes : cadrer calmement, en reparler.",
+        "material": "Porte-blocs, stylos, post-it, carte"
+      }
     }
   },
   {
@@ -1334,6 +2235,194 @@
         ],
         "achtung": "Allergien schriftlich sammeln, Zutatenlisten prüfen, Kreuzkontakt vermeiden; bei schweren Allergien vorher mit der Familie sprechen. Keine Bemerkungen über Portionen oder Gewicht. Bei Hinweisen auf Essprobleme oder familiäre Belastung: Einzelgespräch, Responsable informieren.",
         "material": "A3-Kopie, Rezepte, Taschenrechner"
+      }
+    },
+    "fr": {
+      "titel": "Notre menu pour nos invités",
+      "untertitel": "Planifier, calculer, cuisiner, recevoir – en tenant compte des allergies et d’un budget fixe.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Nos invités : notez qui vient et ce qu’il faut savoir pour le repas.",
+          "hinweis": "Les informations figurent sur les coupons-réponse des invitations.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Invité",
+            "Allergies et intolérances",
+            "Règles alimentaires"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            1.5,
+            2.2,
+            1.6
+          ],
+          "beispiel": [
+            "L’éducateur Samuel",
+            "noisettes",
+            "végétarien"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ces 14 allergènes doivent être signalés dans l’UE",
+          "text": "Céréales contenant du gluten, crustacés, œufs, poisson, arachides, soja, lait, fruits à coque (noix), céleri, moutarde, sésame, anhydride sulfureux et sulfites, lupin, mollusques. Sur les emballages, ils sont mis en évidence dans la liste des ingrédients, la plupart du temps en gras."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Notre menu : planifiez trois plats, faisables en 40 minutes et mangeables par tous les invités."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Partie du repas",
+            "Notre recette",
+            "Contient des allergènes",
+            "Pour tous ?"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            1.1,
+            2,
+            1.6,
+            1.3
+          ],
+          "beispiel": [
+            "Dessert",
+            "Salade de fruits au yaourt",
+            "lait",
+            "oui – un bol sans yaourt"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Règles de cuisine",
+          "punkte": [
+            "Se laver les mains : avant de cuisiner, après les toilettes, après de la viande ou des œufs crus.",
+            "Cheveux attachés, bijoux retirés, petites plaies couvertes d’un pansement et d’un gant.",
+            "Viande et poisson crus sur une planche à part ; acheter les produits frais en dernier et les mettre tout de suite au frais.",
+            "Couper en éloignant la lame de soi. Graisse en feu : mettre le couvercle, éteindre – jamais d’eau."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Budget et liste de courses : d’abord estimer, puis noter les vrais prix.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quoi ?",
+            "Quantité",
+            "estimé",
+            "réel",
+            "Qui achète ?"
+          ],
+          "zeilen": 5,
+          "breiten": [
+            1.9,
+            0.9,
+            0.9,
+            0.9,
+            1.2
+          ],
+          "beispiel": [
+            "Pâtes",
+            "1,5 kg",
+            "3 euros",
+            "2,70 euros",
+            "Ana et Liam"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Notre budget : … euros  ·  Notre total : … euros"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rôles et planning à rebours : calculez à partir de l’arrivée des invités."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Minute",
+            "Que se passe-t-il ?",
+            "Qui ?"
+          ],
+          "zeilen": 5,
+          "breiten": [
+            0.8,
+            3,
+            1.4
+          ],
+          "beispiel": [
+            "45",
+            "Les invités arrivent – accueil à la porte",
+            "Aylin et Ben"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Phrases d’hôte : que dis-tu à tes invités ?",
+          "symbole": [
+            "sprechen"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Pour l’accueil : …",
+            "Ainsi, je présente un plat : …",
+            "Quand un invité ne peut pas manger quelque chose : …",
+            "Pour les adieux : …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Le groupe planifie, pour des invités, un menu qui tient compte des allergies et des règles alimentaires, calcule avec un budget fixe, répartit les rôles, construit un planning à rebours et prépare des phrases d’hôte.",
+        "ablauf": [
+          "Avant : exploiter les réponses des invités ; photocopier la feuille en A3 pour le groupe.",
+          "Séance 1, tâches 1 et 2 (20 min) : reporter la liste d’allergies, discuter des allergènes cachés, vérifier chaque plat.",
+          "Tâche 3 (10 min plus détectives des prix) : quantités, prix estimés, prix réels, total.",
+          "Tâche 4 (10 min) : répartir les rôles, planning à rebours ; la feuille A3 est affichée dans la cuisine le jour de la cuisine.",
+          "Séance 2 : l’équipe hygiène lit les règles de cuisine ; répéter la tâche 5 avant l’accueil."
+        ],
+        "hintergrund": "Un menu pour des invités réunit planification, calcul, coopération et attention aux autres dans une tâche réelle au résultat visible. Les tâches choisies, l’expérience de compétence et l’appartenance à un groupe nourrissent la motivation (Deci & Ryan, 2000) ; réussir devant des invités est une expérience de maîtrise, la source la plus forte de sentiment d’efficacité personnelle (Bandura, 1977). La culture financière est liée à de meilleures décisions d’argent et souvent faible chez les jeunes (Lusardi & Mitchell, 2014) – un vrai budget rend le calcul concret.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44."
+        ],
+        "differenzierung": {
+          "leichter": "Planifier seulement deux plats ; compléter la liste de courses avec des quantités et des prix donnés.",
+          "schwerer": "Prévoir aussi une variante pour une allergie et calculer le coût par personne."
+        },
+        "impulse": [
+          "Chaque invité peut-il tout manger – et comment le savez-vous ?",
+          "Où économiseriez-vous sans que les invités le remarquent ?"
+        ],
+        "tipps": [
+          "Confier le rôle d’accueil à deux volontaires.",
+          "Lire chaque liste d’ingrédients – même pour des produits qu’on croit connaître."
+        ],
+        "achtung": "Allergies par écrit, listes d’ingrédients vérifiées, pas de contamination croisée ; allergie grave : parler d’abord à la famille. Aucune remarque sur les portions ou le poids. Troubles alimentaires, charge familiale : entretien, direction compétente (responsable).",
+        "material": "Copie A3, recettes, calculatrice"
       }
     },
     "verwandt": [

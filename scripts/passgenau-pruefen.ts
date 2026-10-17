@@ -338,7 +338,9 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
     const geschw = kursE.filter((x) => !x.tausch && x.linie!.id === e.linie!.id && x.linie!.nr === e.linie!.nr)
     if (!geschw.length) { t.push(`${e.id}: keine Variante derselben Sitzung`); continue }
     const v = geschw[0]
-    if (e.uebungsblatt) t.push(`${e.id}: Tausch-Übung mit eigenem Blatt (das Blatt der Sitzung bleibt)`)
+    // eigenes Blatt nur für die schonende Fassung -t3 (belastung 0): das Blatt der Variante fragte nach Eigenem
+    if (e.uebungsblatt && !(e.id.endsWith('-t3') && e.belastung === 0)) t.push(`${e.id}: Tausch-Übung mit eigenem Blatt (das Blatt der Sitzung bleibt; nur die schonende -t3 darf eins haben)`)
+    if (e.uebungsblatt && !e.uebungsblatt.anleitung) t.push(`${e.id}: schonendes Blatt ohne Anleitung (de/fr)`)
     if (!e.rolle.includes('kern')) t.push(`${e.id}: Rolle „kern“ fehlt`)
     if (e.bogen !== v.bogen) t.push(`${e.id}: anderer Bogen als die Sitzung`)
     if (JSON.stringify(e.werkzeug) !== JSON.stringify(v.werkzeug)) t.push(`${e.id}: anderes Werkzeug als die Sitzung`)

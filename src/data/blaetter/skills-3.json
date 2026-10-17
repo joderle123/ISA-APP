@@ -475,6 +475,183 @@
         "achtung": "Klingt eine Situation im Memory nach eigenem belastendem Erleben: würdigen, weiterspielen und später ein Einzelgespräch anbieten; bei Bedarf die zuständige Leitung (Responsable) informieren.",
         "material": "Festes Papier, Schere, Pappwürfel, Kleber"
       }
+    },
+    "fr": {
+      "titel": "Cartes des émotions",
+      "untertitel": "Cartes à découper – pour le mime, le memory et le dé des émotions",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Façons de jouer",
+          "punkte": [
+            "Mime : tirer une carte face cachée et montrer l’émotion sans mots. Les autres devinent.",
+            "Memory : jouer avec deux jeux de cartes de cette page. Qui trouve une paire cite une situation où l’on ressent cela.",
+            "Dé des émotions : coller les six émotions de base des deux premières rangées sur un dé."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes le long des pointillés.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 118,
+          "karten": [
+            {
+              "bild": "gesicht:froh",
+              "titel": "Joie"
+            },
+            {
+              "bild": "gesicht:traurig",
+              "titel": "Tristesse"
+            },
+            {
+              "bild": "gesicht:wuetend",
+              "titel": "Colère"
+            },
+            {
+              "bild": "gesicht:aengstlich",
+              "titel": "Peur"
+            },
+            {
+              "bild": "gesicht:ueberrascht",
+              "titel": "Surprise"
+            },
+            {
+              "bild": "gesicht:angeekelt",
+              "titel": "Dégoût"
+            },
+            {
+              "bild": "gesicht:stolz",
+              "titel": "Fierté"
+            },
+            {
+              "bild": "gesicht:verlegen",
+              "titel": "Honte"
+            },
+            {
+              "bild": "gesicht:enttaeuscht",
+              "titel": "Déception"
+            },
+            {
+              "bild": "gesicht:gelangweilt",
+              "titel": "Ennui"
+            },
+            {
+              "bild": "gesicht:nervoes",
+              "titel": "Nervosité"
+            },
+            {
+              "bild": "gesicht:ruhig",
+              "titel": "Contentement"
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pour aller plus loin : ces émotions sont plus difficiles à montrer. L’explication aide à jouer. Sur les cartes vides, écrivez vos propres mots.",
+          "symbole": [
+            "schneiden",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 112,
+          "karten": [
+            {
+              "titel": "Envie",
+              "text": "Je veux avoir ce que quelqu’un d’autre a."
+            },
+            {
+              "titel": "Jalousie",
+              "text": "J’ai peur de perdre quelqu’un au profit d’autres personnes."
+            },
+            {
+              "titel": "Culpabilité",
+              "text": "J’ai fait quelque chose qui a fait du tort à quelqu’un."
+            },
+            {
+              "titel": "Espoir",
+              "text": "J’ai confiance : ça va s’arranger."
+            },
+            {
+              "titel": "Curiosité",
+              "text": "Je veux savoir ce qu’il y a derrière."
+            },
+            {
+              "titel": "Gratitude",
+              "text": "Quelqu’un a fait quelque chose de bien pour moi."
+            },
+            {
+              "titel": "Solitude",
+              "text": "Je me sens seul·e, même quand il y a du monde autour."
+            },
+            {
+              "titel": "Doute",
+              "text": "Je me demande si c’est vrai ou si ça va marcher."
+            },
+            {
+              "titel": "Confiance",
+              "text": "Avec cette personne, je me sens en sécurité."
+            },
+            {
+              "titel": "Compassion",
+              "text": "Je ressens ce que vit quelqu’un d’autre."
+            },
+            {
+              "titel": "Soulagement",
+              "text": "Le plus dur est passé."
+            },
+            {
+              "titel": "Amour",
+              "text": "J’aime beaucoup quelqu’un et je veux que tout aille bien pour cette personne."
+            },
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent les émotions sur le visage et dans la posture, les jouent et enrichissent leur vocabulaire émotionnel. Le jeu sert au mime (séance 7), au memory (séance 8) et au dé des émotions (séance 10).",
+        "ablauf": [
+          "Préparer : copier la page 1 en deux exemplaires, la page 2 en un, sur papier épais ; découper, plastifier si besoin.",
+          "Mime (20 min) : à tour de rôle, tirer une carte et montrer l’émotion d’abord en statue, puis en mouvement. Question : à quoi l’avez-vous reconnue ? Page 2 seulement en seconde moitié.",
+          "Pupitre (séance 8) : disposer joie, tristesse, peur, colère et dégoût en demi-cercle ; pour chaque situation, chacun se place près de l’émotion qui serait au pupitre chez soi.",
+          "Memory (15 min) : poser les deux jeux de la page 1 face cachée. Qui trouve une paire cite une situation où l’on ressent cela.",
+          "Dé des émotions : coller les six émotions de base sur un dé en carton ou une boîte d’au moins 7 cm d’arête – ou tirer les cartes face cachée.",
+          "Remplir les cartes vides avec des mots de la carte mentale du groupe."
+        ],
+        "hintergrund": "Reconnaître les émotions sur le visage et le corps est une base de l’empathie. Ekman (1992) décrit pour les émotions de base des expressions faciales comprises dans de nombreuses cultures. Le mime permet non seulement de reconnaître les émotions, mais de les jouer : le lien entre émotion, mimique et posture devient perceptible. Un vocabulaire émotionnel riche aide à percevoir plus finement ce qui se passe en soi et à mieux réagir (Brackett, 2019). La page 2 réunit donc des émotions qui restent souvent sans nom au quotidien.",
+        "quellen": [
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les six émotions de base ; pour deviner, questions oui/non permises.",
+          "schwerer": "Tirer deux cartes et jouer un mélange, par exemple fierté et honte."
+        },
+        "impulse": [
+          "À quoi avez-vous reconnu l’émotion ?",
+          "Quelle émotion voit-on rarement chez les autres ?"
+        ],
+        "tipps": [
+          "La personne qui anime joue elle-même le premier mime et exagère sans complexe.",
+          "Qui ne veut pas jouer seul devant le groupe joue à deux."
+        ],
+        "achtung": "Si une situation du memory évoque un vécu douloureux : reconnaître, poursuivre le jeu, proposer plus tard un entretien individuel ; informer au besoin la direction (responsable).",
+        "material": "Papier épais, ciseaux, dé en carton, colle"
+      }
     }
   },
   {
@@ -619,6 +796,116 @@
         ],
         "achtung": "Umzug, Heimweh und Streit mit den Eltern können Jugendliche treffen, die nicht bei ihrer Familie leben oder einen Verlust erleben. Vorher überlegen, wen es betrifft, und nach dem Film ansprechbar sein.",
         "material": "Filmausschnitte, Beamer, Lautsprecher, Klemmbretter"
+      }
+    },
+    "fr": {
+      "titel": "Qui est aux commandes ?",
+      "untertitel": "Fiche d’observation pour les films « Vice-versa » 1 et 2",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dans la tête de Riley, cinq émotions se relaient au pupitre : Joie, Tristesse, Peur, Colère, Dégoût. Celle qui y est décide de la réaction de Riley. Dans le film 2, Riley a 13 ans – et quatre nouvelles arrivent."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pendant les scènes : l’émotion est-elle agréable, désagréable – ou ça dépend ? Coche.",
+          "hinweis": "Tu coches seulement. Tu pourras écrire après le film.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Joie",
+            "Tristesse",
+            "Peur",
+            "Colère",
+            "Dégoût",
+            "Anxiété (film 2)",
+            "Envie (film 2)",
+            "Embarras (film 2)",
+            "Ennui (film 2)"
+          ],
+          "optionen": [
+            "agréable",
+            "désagréable",
+            "ça dépend"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après les scènes : choisis deux émotions désagréables du film. À quoi servent-elles pour Riley ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Émotion",
+            "Que fait-elle dans le film ?",
+            "À quoi sert-elle ?"
+          ],
+          "breiten": [
+            1,
+            2.4,
+            2.2
+          ],
+          "beispiel": [
+            "Peur",
+            "Elle veille à ce que la petite Riley ne se blesse pas.",
+            "Elle protège des dangers."
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et toi ? Complète les phrases.",
+          "hinweis": "C’est toi qui décides ce que tu en racontes au groupe.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Le plus drôle, c’était …, parce que …",
+            "Je me reconnais surtout dans …, parce que …",
+            "Chez moi, c’est souvent … qui est aux commandes, par exemple quand …"
+          ],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent les émotions dans des scènes de film, distinguent agréable et désagréable et expliquent à quoi servent aussi les émotions désagréables. Le pupitre devient une image commune pour le cours.",
+        "ablauf": [
+          "Avant : faire clarifier les droits de projection, vérifier l’âge minimal des deux films, choisir les scènes (liste à la séance 8).",
+          "Avant le film (2 min) : expliquer la tâche 1 – pendant les scènes, on coche seulement.",
+          "Scènes (15–20 min) ; après chacune : qui était au pupitre ? Qu’a fait Riley en conséquence ?",
+          "Comparer la tâche 1 (3 min) : quand la peur est-elle agréable, quand la joie désagréable ?",
+          "Tâche 2 à deux, tâche 3 en solo (8 min) ; partage volontaire."
+        ],
+        "hintergrund": "Pour « Vice-versa », Pixar a consulté les chercheurs Dacher Keltner et Paul Ekman. Ils soulignent deux idées que le film rend visibles : les émotions ne gênent pas la pensée, elles l’organisent, et elles règlent la vie en commun – la tristesse montre qu’on a besoin de réconfort (Keltner & Ekman, 2015). Les cinq personnages correspondent à cinq émotions de base selon Ekman (1992). Les scènes de film créent de la distance : parler des émotions de Riley est plus facile que des siennes – et beaucoup s’y reconnaissent pourtant.",
+        "quellen": [
+          "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les cinq émotions du film 1 ; tâche 2 en commun au tableau.",
+          "schwerer": "Décrire une scène du quotidien comme une scène de pupitre : qui est au pupitre, qui veut y accéder ?"
+        },
+        "impulse": [
+          "Pourquoi Joie écarte-t-elle Tristesse du pupitre – est-ce une bonne idée ?",
+          "Que se passerait-il si seule Joie était au pupitre ?"
+        ],
+        "tipps": [
+          "Les noms des émotions varient selon la langue du film (allemand : Kummer pour Tristesse) : écrire les deux au tableau.",
+          "Le film entier peut être projeté à la séance joker « Vice-versa »."
+        ],
+        "achtung": "Déménagement, mal du pays et disputes avec les parents peuvent toucher des jeunes qui ne vivent pas avec leur famille ou qui vivent une perte. Y penser à l’avance et rester disponible après le film.",
+        "material": "Extraits de films, projecteur, haut-parleurs, planchettes"
       }
     }
   },
@@ -785,6 +1072,135 @@
         ],
         "achtung": "Aufmerksamkeit auf den Körper kann Unbehagen auslösen; niemand muss sein Blatt zeigen. Bei Hinweisen auf Verletzungen oder Gewalt: Einzelgespräch, die zuständige Leitung (Responsable) informieren, nach dem Schutzkonzept handeln.",
         "material": "Buntstifte in Rot, Lila, Gelb, Blau"
+      }
+    },
+    "fr": {
+      "titel": "Ma carte des émotions",
+      "untertitel": "Où ressens-je la colère, la peur, la joie et la tristesse – et qu’est-ce que je remarque en premier ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les émotions ne se passent pas seulement dans la tête. Souvent, c’est le corps qui remarque le premier que quelque chose se passe : le cœur bat fort, le ventre se serre, le visage devient chaud."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où ressens-tu la colère, la peur, la joie et la tristesse ? Colorie les endroits avec la couleur qui correspond.",
+          "hinweis": "Pense à un vrai moment, par exemple la dernière dispute ou le dernier très bon jour. Les zones peuvent se chevaucher.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "koerper",
+              "legende": [
+                {
+                  "farbe": "rot",
+                  "text": "Colère"
+                },
+                {
+                  "farbe": "lila",
+                  "text": "Peur"
+                },
+                {
+                  "farbe": "gelb",
+                  "text": "Joie"
+                },
+                {
+                  "farbe": "blau",
+                  "text": "Tristesse"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "text": "À quoi remarques-tu que tu te mets en colère – avant même de dire ou de faire quoi que ce soit ?",
+              "symbole": [
+                "ankreuzen"
+              ]
+            },
+            {
+              "art": "ankreuzen",
+              "items": [
+                "Mon cœur bat plus vite.",
+                "Mon visage devient chaud.",
+                "Je serre les poings.",
+                "Ma mâchoire se crispe.",
+                "Je respire vite et court.",
+                "Mon ventre se contracte.",
+                "Ma voix devient plus forte.",
+                "Je n’arrive plus à tenir en place."
+              ],
+              "frei": 1
+            },
+            {
+              "art": "aufgabe",
+              "text": "Qu’est-ce qui vient chez toi en premier ? C’est ton signal d’alarme.",
+              "symbole": [
+                "schreiben"
+              ]
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Quand je suis en colère, je remarque d’abord …",
+                "Quand j’ai peur, je remarque d’abord …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "D’ici la prochaine fois, fais attention : quand ton signal d’alarme s’est-il manifesté – et qu’as-tu fait alors ?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Ton système d’alerte précoce",
+          "text": "Quand on remarque le premier signal, on a plus de temps pour décider quoi faire. À partir de la séance 11, tu cherches des skills qui aident justement à ce moment-là. Tu n’as à montrer ta feuille à personne."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes perçoivent où ils ressentent colère, peur, joie et tristesse dans le corps et nomment leur premier signal d’alarme pour la colère et la peur – base du plan d’urgence du module 3.",
+        "ablauf": [
+          "Entrée (4 min) : « À quoi remarques-tu que tu te mets en colère – avant même de parler ? » Noter les réponses autour d’un contour de corps au tableau.",
+          "Tâche 1 (8 min) : couleurs comme sur la roue des émotions ; laisser travailler au calme.",
+          "Comparer (4 min) : qui veut pose sa feuille au milieu. Qu’avons-nous en commun, en quoi diffère-t-on ?",
+          "Tâches 2 et 3 (4 min) ; la tâche 4 est une mission d’observation jusqu’à la séance suivante."
+        ],
+        "hintergrund": "Les émotions sont des états du corps entier : rythme cardiaque, respiration et tension musculaire changent. Nummenmaa et al. (2014) ont fait dessiner à plus de 700 personnes où elles ressentent quelque chose pour différentes émotions. Les cartes corporelles différaient nettement selon l’émotion et se ressemblaient en Europe occidentale et en Asie orientale – la colère apparaissait dans la tête, la poitrine et les bras. Ces signaux précèdent souvent la pensée « Je suis en colère » ; plus on intervient tôt, plus la régulation est facile (Gross, 1998).",
+        "quellen": [
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+        ],
+        "differenzierung": {
+          "leichter": "Ne colorier que la colère et la joie.",
+          "schwerer": "Ajouter une cinquième couleur pour le calme : où sens-tu que tu vas bien ?"
+        },
+        "impulse": [
+          "Quel signal arrive le plus tôt chez toi ?",
+          "À quoi les autres voient-ils que tu t’énerves ?"
+        ],
+        "tipps": [
+          "Garder les feuilles : les signaux d’alarme servent à la séance 11 et au plan feu tricolore (séance 15).",
+          "Un contour de corps sur papier kraft, où chacun colle des gommettes, montre les points communs sans mots."
+        ],
+        "achtung": "Porter l’attention sur le corps peut gêner ; personne n’est obligé de montrer sa feuille. En cas d’indices de blessures ou de violence : entretien individuel, informer la direction (responsable), agir selon le concept de protection.",
+        "material": "Crayons de couleur rouge, violet, jaune, bleu"
       }
     }
   },

@@ -157,6 +157,131 @@
         "achtung": "Berichtet jemand von Kontrolle, Drohungen oder Gewalt in einer Freundschaft: ein Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und nach dem Schutzkonzept handeln.",
         "material": "Blatt für jede Person"
       }
+    },
+    "fr": {
+      "titel": "Le baromètre de l’amitié",
+      "untertitel": "Une amitié n’a pas toujours un temps radieux. Ici, tu regardes de plus près – rien que pour toi.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce qui porte une amitié",
+          "punkte": [
+            "Du temps et du plaisir : vous faites des choses ensemble et vous riez ensemble.",
+            "La confiance : ce que tu racontes reste entre vous.",
+            "Le soutien : vous êtes là l’un pour l’autre quand c’est dur.",
+            "Donner et recevoir : tantôt l’un donne plus, tantôt l’autre – avec le temps, ça s’équilibre.",
+            "Traverser les disputes : vous pouvez vous disputer et vous retrouver."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pense à une amitié – tu n’as à dire à personne laquelle. Coche ce qui est vrai le plus souvent, parfois ou rarement.",
+          "hinweis": "Tu peux aussi penser à une amitié dans une série ou dans un livre."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "le plus souvent",
+            "parfois",
+            "rarement"
+          ],
+          "items": [
+            "Je peux être comme je suis.",
+            "Ce que je raconte reste entre nous.",
+            "On s’écoute.",
+            "Donner et recevoir sont à peu près équilibrés.",
+            "Quand ça ne va pas, la personne est là pour moi.",
+            "Quand je dis non, c’est accepté.",
+            "J’ai aussi le droit d’avoir d’autres amis.",
+            "Après une dispute, on se retrouve."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel temps fait-il en ce moment dans cette amitié ? Entoure."
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:sun",
+              "text": "ensoleillé : le plus souvent bien"
+            },
+            {
+              "bild": "icon:cloud",
+              "text": "variable : tantôt comme ci, tantôt comme ça"
+            },
+            {
+              "bild": "icon:cloud-storm",
+              "text": "orageux : souvent pesant"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Variable, c’est normal",
+          "text": "Presque toute amitié a ses nuages. Il faut faire attention quand il y a souvent de l’orage : quand ton non ne compte pas, quand on te contrôle, quand des secrets circulent ou quand tu te sens le plus souvent mal après vous être vus. Parles-en alors à une personne en qui tu as confiance."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Donner et recevoir : que donnes-tu dans tes amitiés – et de quoi as-tu toi-même besoin ?"
+        },
+        {
+          "art": "waage",
+          "links": "Ce que je donne",
+          "rechts": "Ce dont j’ai besoin",
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton petit pas pour cette semaine : comment prends-tu soin d’une amitié qui compte pour toi ?",
+          "hinweis": "Par exemple : demander comment s’est passé un test, ou emmener quelqu’un à l’entraînement."
+        },
+        {
+          "art": "linien",
+          "anzahl": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "La feuille reste chez toi. Personne n’a à dire de quelle amitié il est question."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent cinq piliers d’une amitié solide, évaluent seuls une amitié avec le baromètre et planifient un petit pas pour l’entretenir.",
+        "ablauf": [
+          "Après l’exercice des petites annonces (3 min) : comparer l’encadré d’information avec les points affichés au mur.",
+          "Exercice 1 seul (5 min) : penser à une amitié sans la nommer.",
+          "Exercice 2 (2 min), puis lire l’encadré « À retenir ». En plénière, demander seulement : « Qui connaît le temps variable ? »",
+          "Exercice 3 (4 min) : on peut parler à deux de ce qu’on donne, ce dont on a besoin reste privé.",
+          "Exercice 4 à la fin de la séance (2 min) ; la semaine suivante, demander brièvement comment ça s’est passé."
+        ],
+        "hintergrund": "Bagwell et Schmidt (2011) résument ce qui porte les amitiés à l’adolescence : du temps partagé, la confiance, le soutien, la loyauté et la capacité de résoudre les conflits. Selon une méta-analyse, les amitiés se distinguent des autres relations entre pairs par davantage d’activités communes, de proximité et de réciprocité, et par des conflits mieux résolus (Newcomb & Bagwell, 1995). La qualité de l’amitié compte plus que le nombre d’amis. Les êtres humains ont besoin à la fois de lien et d’autonomie (Deci & Ryan, 2000) ; le contrôle, la culpabilisation ou un non ignoré sont donc des signaux d’alerte à prendre au sérieux. Le baromètre traduit ces critères dans le langage de la météo : variable, c’est normal ; orageux en permanence, non.",
+        "quellen": [
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Newcomb, A. F. & Bagwell, C. L. (1995). Children’s friendship relations: A meta-analytic review. Psychological Bulletin, 117(2), 306–347.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les exercices 1 et 2 ; l’adulte lit les affirmations à voix haute.",
+          "schwerer": "En complément, la feuille de la Toolbox « Ce qui compte pour moi en amitié »."
+        },
+        "impulse": [
+          "Une amitié peut-elle être bonne même si vous vous disputez souvent ?",
+          "Où s’arrête la loyauté, où commence le contrôle ?"
+        ],
+        "tipps": [
+          "Ne pas ramasser la feuille ; elle appartient aux jeunes.",
+          "Laisser l’affiche des piliers accrochée – elle revient régulièrement jusqu’à la séance 17."
+        ],
+        "achtung": "Si quelqu’un parle de contrôle, de menaces ou de violence dans une amitié : proposer un entretien individuel, informer la direction compétente (responsable) et agir selon le concept de protection.",
+        "material": "Une feuille par personne"
+      }
     }
   },
   {
@@ -354,6 +479,169 @@
         ],
         "achtung": "Berichtet jemand von Beleidigungen, Drohungen oder Bloßstellung im Chat: ein Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und auf die BEE SECURE Helpline 8002 1234 hinweisen.",
         "material": "Blatt für jede Person, Tafel"
+      }
+    },
+    "fr": {
+      "titel": "Qu’est-ce que ça voulait dire ?",
+      "untertitel": "Dans un chat, il manque la voix et le regard. Le reste, c’est la tête qui l’ajoute – souvent avec sa propre humeur.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Mardi, 16 h 10. Mila écrit à son amie Aylin."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Mila",
+              "text": "Tu viens au cinéma demain ? On y va à quatre heures."
+            },
+            {
+              "wer": "Aylin",
+              "text": "Peux pas."
+            },
+            {
+              "wer": "Mila",
+              "text": "Ok."
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Deux heures plus tard, Mila voit dans la story d’Aylin une photo du skatepark – avec Chiara."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Mila",
+              "text": "Ah. Peux pas. Bien sûr."
+            },
+            {
+              "wer": "Aylin",
+              "text": "C’est quoi ton problème ?"
+            },
+            {
+              "wer": "Mila",
+              "text": "Demande à Chiara."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que lit Mila dans les messages – et que voulait peut-être dire Aylin ? Remplis le tableau."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Message",
+            "Ce que Mila lit",
+            "Ce qu’Aylin veut peut-être dire"
+          ],
+          "breiten": [
+            1.3,
+            2,
+            2
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "« Peux pas. »",
+            "« Elle n’a pas envie de me voir. »",
+            "« Je n’ai pas le temps demain. »"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Un message – quatre oreilles",
+          "text": "On peut entendre chaque message avec quatre oreilles. Quand on est blessé, on n’écoute presque qu’avec l’oreille de la relation.",
+          "punkte": [
+            "Oreille du fond : quelle est l’information ?",
+            "Oreille de la révélation de soi : que dit le message de la personne qui écrit ?",
+            "Oreille de la relation : que pense-t-elle de moi ?",
+            "Oreille de l’appel : qu’est-ce que je dois faire ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Au lieu de « Ah. Peux pas. Bien sûr. » : écris pour Mila un message qui pose une question au lieu de supposer."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Mila"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Dans une expérience, des gens envoyaient des phrases qui étaient sérieuses ou ironiques. Les expéditeurs étaient sûrs que presque tout arrivait correctement. En réalité, le ton était souvent mal compris. Quand les mêmes phrases étaient dites à voix haute, ça marchait bien mieux."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tes règles de chat pour les disputes : coche ce qui t’aiderait et complète."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Demander : « Tu veux dire quoi ? »",
+            "En cas de dispute, appeler ou se voir au lieu d’écrire",
+            "Ne rien régler dans le chat de groupe",
+            "Ne pas faire suivre de captures d’écran",
+            "Répondre seulement quand je suis sous 70",
+            "Écrire d’abord ma réponse furieuse dans mes notes",
+            "Un message vocal quand le ton compte",
+            "Ne pas lire chaque réponse courte comme un refus"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan pour le prochain message qui t’énerve."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Quand un message m’énerve,",
+              "dann": "je pose mon téléphone, j’expire trois fois longuement et je demande ensuite ce que la personne voulait dire."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent pourquoi les messages d’un chat arrivent souvent autrement que prévu, écoutent un message avec quatre oreilles et posent des questions au lieu de supposer.",
+        "ablauf": [
+          "Après l’expérience du chat : lire le chat en distribuant les rôles. Question : « Qui a tort ici ? »",
+          "Parcourir les quatre oreilles avec « Peux pas. » (4 min), puis exercices 1 et 2 à deux (6 min).",
+          "Résolution : Aylin doit garder son petit frère demain ; elle avait depuis longtemps convenu du skatepark avec Chiara, pour une heure après les cours. Question : « Comment Mila aurait-elle pu le découvrir ? »",
+          "Exercice 3 seul, exercice 4 comme plan pour la semaine (4 min)."
+        ],
+        "hintergrund": "Les messages écrits transmettent mal le ton. Kruger et al. (2005) ont montré que les expéditeurs surestiment nettement à quel point l’ironie ou le sérieux passe dans un message ; à l’oral, le ton est bien plus souvent reconnu correctement. Schulz von Thun (1981) décrit quatre côtés de tout message : le fond, la révélation de soi, la relation et l’appel. Quand on est blessé, on écoute surtout avec l’oreille de la relation et on lit un rejet là où il n’y en a pas. Même le silence est lu : on ne peut pas ne pas communiquer (Watzlawick et al., 1967).",
+        "quellen": [
+          "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936.",
+          "Schulz von Thun, F. (1981). Miteinander reden 1: Störungen und Klärungen. Reinbek: Rowohlt.",
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les exercices 2 et 3 ; les quatre oreilles restent au tableau.",
+          "schwerer": "Reformuler la première réponse d’Aylin pour qu’elle ne soit pas mal comprise."
+        },
+        "impulse": [
+          "Quand un message vocal vaut-il mieux qu’un texte ?",
+          "Que dit-on quand on lit un message et qu’on ne répond pas ?"
+        ],
+        "tipps": [
+          "Demander comment « Ok. », « k » ou un pouce levé sont reçus – les jeunes connaissent mieux les codes.",
+          "Ne pas faire montrer de vrais chats, même sans noms."
+        ],
+        "achtung": "Si quelqu’un parle d’insultes, de menaces ou d’humiliation dans le chat : proposer un entretien individuel, informer la direction compétente (responsable) et renvoyer vers la BEE SECURE Helpline 8002 1234.",
+        "material": "Une feuille par personne, tableau"
       }
     }
   },
@@ -564,6 +852,179 @@
         "achtung": "Karten weglassen, die einem aktuellen Streit in der Gruppe ähneln. Bei Bedrohung, Erpressung oder Gewalt ist ein Klärungsgespräch das falsche Werkzeug: schützen und die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt für jede Person, Seite 2 einmal extra, Schere"
       }
+    },
+    "fr": {
+      "titel": "Régler sans casser",
+      "untertitel": "Une dispute entre amis peut se régler équitablement – au bon moment, avec des phrases claires et un compromis.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les disputes entre amis, c’est normal. Que quelque chose soit cassé après dépend souvent de quand, où et comment vous les réglez."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Redescendre",
+              "text": "D’abord sous 70. Sortir un instant est permis."
+            },
+            {
+              "titel": "Choisir le moment",
+              "text": "En tête à tête – pas dans le chat de groupe, pas devant un public."
+            },
+            {
+              "titel": "Dire « je » et demander",
+              "text": "« J’étais en colère parce que … Et toi, comment tu l’as vécu ? »"
+            },
+            {
+              "titel": "Chercher un compromis",
+              "text": "Chacun lâche quelque chose et garde ce qui compte vraiment."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tirez à deux une carte de la page 2. Préparez la conversation et jouez-la.",
+          "hinweis": "Qui aborde le sujet ? Où et quand ? Quelle est la première phrase ?",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "On règle ça ici et à ce moment-là : …",
+            "Notre première phrase : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cherchez un compromis : qu’est-ce qui compte vraiment pour chacun – et où chacun peut-il céder ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Qui",
+            "Ça compte vraiment",
+            "Là, on peut céder"
+          ],
+          "breiten": [
+            1.3,
+            2,
+            2
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "« Le samedi » : moi",
+            "Du temps avec mon amie",
+            "cinéma ou skatepark"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Notre compromis : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand l’autre se ferme",
+          "text": "Ne pas insister. Dis que cette amitié compte pour toi et propose une nouvelle discussion : « Je veux qu’on règle ça. Dis-moi quand ça te convient. »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta phrase pour la prochaine vraie dispute : comment commences-tu ?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "text",
+          "text": "Cartes de situation : à découper, à poser face cachée et à tirer à deux. Toutes les situations sont inventées."
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "karten": [
+            {
+              "titel": "Le secret",
+              "text": "Tu as confié à ton meilleur ami que tu risques de redoubler. Maintenant, trois personnes de la classe le savent."
+            },
+            {
+              "titel": "Toujours en retard",
+              "text": "Ton amie arrive pour la troisième fois avec une demi-heure de retard. Aujourd’hui, à cause de ça, vous avez raté le bus."
+            },
+            {
+              "titel": "Le samedi",
+              "text": "Vous voulez faire quelque chose ensemble samedi. Toi, tu veux aller au cinéma, ton amie au skatepark."
+            },
+            {
+              "titel": "Les devoirs",
+              "text": "Un ami copie tes devoirs chaque matin. Hier, la prof l’a remarqué et vous avez eu des ennuis tous les deux."
+            },
+            {
+              "titel": "La photo",
+              "text": "Ton amie a publié une photo de toi que tu trouves affreuse. Quarante personnes l’ont déjà vue."
+            },
+            {
+              "titel": "Le chat vocal",
+              "text": "Vous jouez en ligne en équipe. Ton ami te crie dessus parce que tu as fait une erreur. Tout le monde l’a entendu."
+            },
+            {
+              "titel": "L’annulation",
+              "text": "Ton ami a annulé votre soirée cinéma parce qu’il serait malade. Le soir, tu le vois dans une story, à une fête."
+            },
+            {
+              "titel": "Le surnom",
+              "text": "Un ami t’appelle devant d’autres par un surnom que tu n’aimes pas. Lui, il le trouve drôle."
+            },
+            {
+              "titel": "L’argent",
+              "text": "Il y a un mois, tu as prêté 20 euros à ton amie. Depuis, elle n’en a plus jamais parlé."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes préparent une conversation de clarification entre amis, la jouent avec un message en « je » et une question, et cherchent un compromis avec lequel les deux côtés peuvent vivre.",
+        "ablauf": [
+          "Avant : imprimer la page 2 en un exemplaire de plus, découper les cartes et les poser face cachée.",
+          "Présenter les quatre étapes (3 min) ; ceux qui connaissent l’année 1 reconnaissent l’escalier du conflit.",
+          "Les binômes tirent une carte, préparent (2 min), jouent (3 min) et notent le compromis. Échanger les rôles.",
+          "Deux binômes présentent leur compromis. Question : « Chaque côté peut-il vivre avec ça ? »",
+          "Exercice 3 dans le tour de clôture (2 min)."
+        ],
+        "hintergrund": "Les quatre étapes transposent l’escalier du conflit de l’année 1 aux amitiés. Sous forte tension, aucune conversation équitable n’est possible, et devant un public ou dans le chat de groupe, il s’agit vite de sauver la face plutôt que de traiter le fond. Le message en « je » et la vraie question suivent la méthode sans perdant de Gordon (1972). Un compromis réussit plus facilement quand chacun distingue ce qui compte vraiment pour lui et ce à quoi il peut renoncer (Fisher & Ury, 1981). Ce n’est pas toujours la meilleure solution, mais souvent une solution équitable et rapide (Thomas & Kilmann, 1974).",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom."
+        ],
+        "differenzierung": {
+          "leichter": "Écrire des débuts de phrases au tableau : « J’étais en colère parce que … », « Et toi, comment tu l’as vécu ? »",
+          "schwerer": "Jouer la carte avec un rebondissement : l’autre se ferme d’abord."
+        },
+        "impulse": [
+          "Quand un côté cède-t-il trop dans un compromis ?",
+          "Que fais-tu quand l’autre ne veut pas du tout parler ?"
+        ],
+        "tipps": [
+          "Plastifier les cartes ; elles conviennent aussi aux disputes en équipe ou en famille.",
+          "Après chaque scène, sortir du rôle : se lever, se secouer, dire son propre prénom."
+        ],
+        "achtung": "Écarter les cartes qui ressemblent à une dispute actuelle dans le groupe. En cas de menace, de chantage ou de violence, la conversation de clarification est le mauvais outil : protéger et informer la direction compétente (responsable).",
+        "material": "Une feuille par personne, page 2 en un exemplaire de plus, ciseaux"
+      }
     }
   },
   {
@@ -719,6 +1180,126 @@
         ],
         "achtung": "Nicht nach eigenen Erfahrungen fragen. Bei Hinweisen auf Mobbing, Isolation oder Kontrolle in Freundschaften: Einzelgespräch, die zuständige Leitung (Responsable) informieren, nach dem Schutzkonzept handeln.",
         "material": "Blatt für jede Person"
+      }
+    },
+    "fr": {
+      "titel": "Dedans ou dehors ?",
+      "untertitel": "Être mis à l’écart fait mal. Faire entrer quelqu’un, il suffit souvent d’une seule phrase.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que l’exclusion atteint",
+          "text": "Quand on est exclu, on le ressent tout de suite – même pour des broutilles. Quatre besoins sont touchés :",
+          "punkte": [
+            "Appartenance : je suis dehors.",
+            "Estime de soi : il y a un problème chez moi.",
+            "Contrôle : je ne peux rien y faire.",
+            "Compter : je suis invisible."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quels besoins sont touchés ici ? Coche – souvent, il y en a plusieurs."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Appartenance",
+            "Estime de soi",
+            "Contrôle",
+            "Compter"
+          ],
+          "items": [
+            "Mila voit dans une story que toute sa bande est à un anniversaire. Elle n’était pas invitée.",
+            "À la récré, le groupe ne parle que luxembourgeois. Inês est dans le pays depuis l’été et comprend peu.",
+            "Chaque fois que Samuel écrit quelque chose dans le chat de groupe, personne ne répond.",
+            "Pour le travail de groupe, tous les groupes sont déjà complets. Elias reste sur le côté.",
+            "Les amies d’Amira rient d’une blague que seules elles comprennent et ne la lui expliquent pas."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Inclure quelqu’un tient souvent à une phrase et à un geste. Que pourrais-tu dire ou faire dans ces situations ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Ce que je pourrais dire ou faire"
+          ],
+          "breiten": [
+            1.3,
+            3
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Inês à la récré",
+            "Passer au français : « Tu viens avec nous ? » et faire de la place dans le cercle."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "La jalousie sans pression",
+          "text": "La jalousie, c’est souvent la peur de perdre quelqu’un. Dis le sentiment, pas la menace : au lieu de « Choisis : elle ou moi », dis plutôt « J’ai peur de ne plus compter autant pour toi. On fait quelque chose ce week-end ? »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Transforme cette phrase en message en « je » : « Si tu y vas avec eux samedi, tu n’as plus besoin de revenir. »"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta mission « inclure » pour cette semaine – sans nom, juste la situation."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Quand je vois à la cantine que quelqu’un est assis tout seul,",
+              "dann": "je demande si on peut s’asseoir avec la personne ou je lui fais signe de venir à notre table."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Si tu es souvent mis à l’écart toi-même ou si on te met la pression dans une amitié, parles-en à quelqu’un en qui tu as confiance – par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent quels besoins l’exclusion touche, trouvent des phrases et des gestes pour inclure et expriment la jalousie comme un sentiment plutôt que comme une pression.",
+        "ablauf": [
+          "Après le jeu de balle : relier l’encadré d’information aux observations (3 min).",
+          "Exercice 1 seul (4 min). Question : « Quelle situation touche le plus – et pourquoi ? »",
+          "Exercice 2 à deux (6 min) ; noter les phrases au tableau, elles serviront pour les scènes après la pause.",
+          "Après le relais du réaménagement, exercice 3 (3 min) ; dans le tour de clôture, exercice 4 (2 min)."
+        ],
+        "hintergrund": "Dans les études avec le jeu de balle Cyberball, quelques minutes sans que personne ne passe la balle suffisent à provoquer douleur et mauvaise humeur – même quand seul un ordinateur joue (Zadro et al., 2004) ; sont menacés l’appartenance, l’estime de soi, le contrôle et le sentiment de compter (Williams, 2007). Celui qui est exclu cherche à regagner ces besoins – par l’adaptation, la colère ou le repli. La jalousie a une racine proche : la peur de perdre l’appartenance. Les bonnes relations demandent à la fois du lien et de l’autonomie (Deci & Ryan, 2000) ; la pression et le contrôle retirent l’autonomie.",
+        "quellen": [
+          "Zadro, L., Williams, K. D. & Richardson, R. (2004). How low can you go? Ostracism by a computer is sufficient to lower self-reported levels of belonging, control, self-esteem, and meaningful existence. Journal of Experimental Social Psychology, 40(4), 560–567.",
+          "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement trois situations ; pour l’exercice 2, débuts de phrases : « Tu veux … ? », « Viens donc … »",
+          "schwerer": "Inventer une situation où l’exclusion se fait discrètement, et une idée pour inclure."
+        },
+        "impulse": [
+          "Quand est-il normal de rester entre soi – et quand cela devient-il de l’exclusion ?",
+          "Qu’est-ce qui rend difficile de faire entrer quelqu’un quand son propre groupe n’en veut pas ?"
+        ],
+        "tipps": [
+          "Au Luxembourg, la langue est souvent la clé : passer au français ou à l’allemand peut déjà être une façon d’inclure.",
+          "Reprendre brièvement les missions à la séance suivante."
+        ],
+        "achtung": "Ne pas interroger sur les expériences personnelles. En cas d’indices de harcèlement, d’isolement ou de contrôle dans des amitiés : entretien individuel, informer la direction compétente (responsable), agir selon le concept de protection.",
+        "material": "Une feuille par personne"
       }
     }
   },

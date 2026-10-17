@@ -71,7 +71,7 @@ for (const kurs of kurse) {
         /* Testkind zur Variante: zur schreibenden ein Kind, das gut liest und schreibt (2/2/1), sonst genau der Zugang der Variante */
         zugang: { ...((z?.schreiben ?? 2) >= 1 ? { lesen: 2, schreiben: 2, bild: 1 } : { lesen: z!.lesen, schreiben: z!.schreiben, bild: Math.max(1, z!.bild) }), tempo: 'normal', struktur: 'normal', quelle: ['stufe'] } as Profil['zugang'],
         ziele: codes.map((code, i) => ({ code, ich: '', quelle: 'pei', seit: '2026-09-15', prio: i + 1 })),
-        erreicht: [], themen: [], vorsicht: [], interessen: [], wochenziel: null, gemacht: [], folge: null, vorlieben: null,
+        erreicht: [], themen: [], vorsicht: process.env.VORSICHT ? [process.env.VORSICHT] : [], interessen: [], wochenziel: null, gemacht: [], folge: null, vorlieben: null,
         rechte: { speichern: true, rueckmelden: true }, seed: `kurs-${kurs}-${v}`, dichte: 'mittel', achtung: [],
       } as unknown as Profil
       const a: Auftrag = { weg: 'gruendlich', ziele: codes, n, dauer: Number(wert('--dauer') ?? (alter < 6 ? 20 : 30)) as 30, sozialform: 'einzeln', schwerpunkt: [], formate: [], heute: { energie: 4, konzentration: 4, stimmung: 4 } as Auftrag['heute'], sprache, datum: '2026-10-12' }
@@ -95,10 +95,11 @@ for (const kurs of kurse) {
       const maxSeiten = alter < 8 ? 1 : 2
       plan.sitzungen.forEach((s, i) => {
         const kern = s.schritte.filter((x) => x.rolle === 'kern').map((x) => x.ref)
-        const erwartet = sitzungen.filter((e) => e.linie!.nr === i + 1)
+        // VORSICHT=heikel: auch die schonende Tausch-Übung (mit eigenem Blatt) ist richtig
+        const erwartet = (process.env.VORSICHT ? sitzungen.concat(tausch) : sitzungen).filter((e) => e.linie!.nr === i + 1)
         const passend = erwartet.find((e) => JSON.stringify(e.zugang ?? null) === JSON.stringify(z)) ?? erwartet[0]
         const hat = kern.find((r) => erwartet.some((e) => r.endsWith(e.id) || r === e.id))
-        const ok = !!hat && (!passend || hat.endsWith(passend.id) || hat === passend.id)
+        const ok = !!hat && (!!process.env.VORSICHT || !passend || hat.endsWith(passend.id) || hat === passend.id)
         const rit = s.schritte.filter((x) => x.rolle === 'ankommen' || x.rolle === 'abschluss').map((x) => x.ref)
         const ritOk = !rituale.length || rituale.every((r) => rit.some((x) => x.endsWith(r.id) || x === r.id))
         const zuLang = blattSeiten[i] > maxSeiten

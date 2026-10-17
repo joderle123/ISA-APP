@@ -208,6 +208,178 @@
         "achtung": "Die Waage nicht vorlesen, nicht einsammeln. Bei anhaltender Überlastung, Rückzug oder Sorgen zu Hause: Einzelgespräch, SePAS, zuständige Leitung (Responsable). Bei Gefährdung Schutzkonzept.",
         "material": "Karten in Rot und Grün, Timer"
       }
+    },
+    "fr": {
+      "titel": "Mon baromètre du stress",
+      "untertitel": "Un peu de pression rend alerte, trop de pression bloque. À quoi remarques-tu où tu en es – et qu’est-ce qui te donne de la force ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Le stress est la réponse de ton corps à une exigence : le cœur bat plus vite, les muscles se tendent, le regard se rétrécit. Ça te prépare. Le problème, c’est quand c’est trop, ou trop long."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi vois-tu à quel niveau tu es ? Écris dans chaque niveau ce qui se passe alors chez toi.",
+          "hinweis": "Pense au corps, aux pensées et au comportement. Le tableau du mini-test t’aide.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "thermometer",
+          "linien": 1,
+          "stufen": [
+            {
+              "titel": "Calme : presque pas de pression",
+              "text": "Se reposer fait du bien. Mais quand quelque chose est à faire, rien n’avance souvent. Chez moi :"
+            },
+            {
+              "titel": "Bon stress : alerte et prêt",
+              "text": "Le cœur un peu plus vite, la tête claire, je suis à fond dans ce que je fais. Chez moi :"
+            },
+            {
+              "titel": "Ça se resserre",
+              "text": "Irritable, les pensées tournent, je remets à plus tard ou je hausse le ton. Chez moi :"
+            },
+            {
+              "titel": "Trop : plus rien ne passe",
+              "text": "Tête vide ou vision en tunnel, mal au ventre, mauvais sommeil, envie de fuir. Chez moi :"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Sur l’échelle de tension de 0 à 100, mon bon stress bascule vers : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta balance du stress cette semaine : qu’est-ce qui te met sous pression, qu’est-ce qui te donne de la force ?",
+          "hinweis": "Rien que pour toi. N’écris que ce que tu as envie d’écrire.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "waage",
+          "links": "Ce qui me met sous pression",
+          "rechts": "Ce qui me donne de la force",
+          "zeilen": 3
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Deux côtés, deux voies",
+          "text": "Le stress bascule quand le côté gauche pèse plus que le droit. Tu peux agir des deux côtés : alléger les exigences – planifier, découper, demander de l’aide – et renforcer les sources de force : sommeil, mouvement, personnes, skills."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Test de skill : la respiration-soupir. Estime ta tension avant et après.",
+          "hinweis": "Inspire deux fois par le nez, expire longuement par la bouche. L’expiration dure plus longtemps que l’inspiration."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Chiffre avant",
+            "Durée",
+            "Chiffre après",
+            "Où l’utiliser"
+          ],
+          "breiten": [
+            1,
+            1.2,
+            1,
+            3
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "55",
+            "3 minutes",
+            "40",
+            "avant un devoir, dans le bus après une dispute"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta semaine baromètre jusqu’à la prochaine rencontre : chaque soir, coche le niveau de ta journée.",
+          "hinweis": "Au prochain check-in, on te demandera comment était ta semaine – un niveau suffit. En dessous, coche les jours où tu as pratiqué la respiration-soupir.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Lundi",
+            "Mardi",
+            "Mercredi",
+            "Jeudi",
+            "Vendredi",
+            "Samedi",
+            "Dimanche"
+          ],
+          "optionen": [
+            "calme",
+            "bon stress",
+            "tendu",
+            "trop"
+          ]
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "Respiration-soupir pratiquée"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "Cette fiche t’appartient. Si ton baromètre reste des semaines sur « trop », parles-en à une personne de confiance, au SePAS ou, anonymement et gratuitement, au Kanner- a Jugendtelefon : 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes décrivent leur réaction de stress sur quatre niveaux, déterminent à partir de quand le bon stress bascule chez eux en trop, mettent en balance exigences et sources de force, et testent la respiration-soupir.",
+        "ablauf": [
+          "Après le mini-test : recueillir les signes au tableau en trois colonnes – corps, pensées, comportement.",
+          "Tâche 1 (6 min) : baromètre au tableau, le remplir avec des exemples, puis en individuel. Question : « À quel chiffre ça bascule chez toi ? »",
+          "Tâche 2 (8 min) : écrire en secret des cartes rouges et vertes, les lire à voix haute, les coller sur la balance ; puis sa propre balance en individuel.",
+          "Après le jonglage en groupe : dessiner la courbe « trop peu – juste ce qu’il faut – trop » et la relier au baromètre.",
+          "Tâche 3 pendant la phase de skill ; tâche 4 comme mission de la semaine jusqu’à la séance 7."
+        ],
+        "hintergrund": "Selon le modèle transactionnel du stress, le stress apparaît quand une personne juge une exigence plus grande que ses moyens ; si les moyens suffisent, la même situation est plutôt vécue comme un défi (Lazarus & Folkman, 1984). Le baromètre distingue donc le bon stress du trop-plein, et la balance rend visibles les deux côtés de l’évaluation. Ce qui se trouve du côté droit, la salutogenèse l’appelle ressources de résistance (Antonovsky, 1987). La respiration-soupir – deux inspirations, une longue expiration – a amélioré l’humeur et abaissé la fréquence respiratoire au repos plus que la méditation de pleine conscience, avec cinq minutes de pratique par jour pendant un mois (Balban et al., 2023).",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895."
+        ],
+        "differenzierung": {
+          "leichter": "Ne remplir que deux niveaux du baromètre : bon stress et trop. La balance à l’oral avec la personne qui anime.",
+          "schwerer": "Noter pour chaque exigence si elle peut changer, et planifier une première étape pour l’une d’elles."
+        },
+        "impulse": [
+          "À quoi remarquez-vous en premier que le bon stress bascule ?",
+          "Qu’y a-t-il du côté droit de votre balance que vous utilisez trop rarement ?"
+        ],
+        "tipps": [
+          "Le baromètre sert de check-in aux séances 7 à 9.",
+          "Faire pratiquer la respiration-soupir tous les jours – elle servira à la séance 9."
+        ],
+        "achtung": "Ne pas lire la balance à voix haute, ne pas la ramasser. En cas de surcharge persistante, de repli ou de soucis à la maison : entretien individuel, SePAS, direction compétente (responsable). En cas de danger, concept de protection.",
+        "material": "Cartes rouges et vertes, minuteur"
+      }
     }
   },
   {
@@ -453,6 +625,218 @@
         ],
         "achtung": "Wer schlecht liest, bekommt die Wörter einmal vorgesprochen. Ergebnisse bleiben privat; an die Tafel kommen nur Summen der Gruppe.",
         "material": "Schere oder Schneidemaschine, großer Umschlag, Timer"
+      }
+    },
+    "fr": {
+      "titel": "Cartes de mots pour l’expérience",
+      "untertitel": "Vingt mots de swahili, deux listes, deux méthodes. Apprends chaque liste exactement comme c’est indiqué sur ton protocole.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Apprends chaque liste pendant trois minutes avec ta méthode. Ensuite, tu rends la liste.",
+          "hinweis": "La personne qui anime annonce le temps. Pas de photo, ne rien emporter.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Relecture",
+              "text": "Relis la liste encore et encore, à voix basse ou à mi-voix. Ne rien cacher, ne rien écrire."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Autotest",
+              "text": "Lis la liste pendant une demi-minute. Plie ensuite la partie française vers l’arrière, dis-toi chaque signification, déplie et vérifie. Recommence depuis le début."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "text",
+              "text": "Liste 1 – à gauche swahili, à droite français"
+            },
+            {
+              "art": "karten",
+              "spalten": 2,
+              "hoehe": 40,
+              "karten": [
+                {
+                  "titel": "kisu"
+                },
+                {
+                  "titel": "couteau"
+                },
+                {
+                  "titel": "mlango"
+                },
+                {
+                  "titel": "porte"
+                },
+                {
+                  "titel": "jicho"
+                },
+                {
+                  "titel": "œil"
+                },
+                {
+                  "titel": "ndizi"
+                },
+                {
+                  "titel": "banane"
+                },
+                {
+                  "titel": "wingu"
+                },
+                {
+                  "titel": "nuage"
+                },
+                {
+                  "titel": "kiti"
+                },
+                {
+                  "titel": "chaise"
+                },
+                {
+                  "titel": "maziwa"
+                },
+                {
+                  "titel": "lait"
+                },
+                {
+                  "titel": "upepo"
+                },
+                {
+                  "titel": "vent"
+                },
+                {
+                  "titel": "mbwa"
+                },
+                {
+                  "titel": "chien"
+                },
+                {
+                  "titel": "kijiko"
+                },
+                {
+                  "titel": "cuillère"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "text",
+              "text": "Liste 2 – à gauche swahili, à droite français"
+            },
+            {
+              "art": "karten",
+              "spalten": 2,
+              "hoehe": 40,
+              "karten": [
+                {
+                  "titel": "viatu"
+                },
+                {
+                  "titel": "chaussures"
+                },
+                {
+                  "titel": "mkate"
+                },
+                {
+                  "titel": "pain"
+                },
+                {
+                  "titel": "sikio"
+                },
+                {
+                  "titel": "oreille"
+                },
+                {
+                  "titel": "nyota"
+                },
+                {
+                  "titel": "étoile"
+                },
+                {
+                  "titel": "mvua"
+                },
+                {
+                  "titel": "pluie"
+                },
+                {
+                  "titel": "mti"
+                },
+                {
+                  "titel": "arbre"
+                },
+                {
+                  "titel": "chakula"
+                },
+                {
+                  "titel": "nourriture"
+                },
+                {
+                  "titel": "jiwe"
+                },
+                {
+                  "titel": "pierre"
+                },
+                {
+                  "titel": "paka"
+                },
+                {
+                  "titel": "chat"
+                },
+                {
+                  "titel": "barabara"
+                },
+                {
+                  "titel": "route"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Matériel pour l’expérience d’apprentissage de la séance 7 : deux listes de même difficulté avec chacune dix paires de mots swahili–français. Chaque personne apprend une liste par relecture et une par autotest.",
+        "ablauf": [
+          "Avant : imprimer en recto seul et couper entre la liste 1 et la liste 2. Un jeu par personne et un de réserve.",
+          "Former deux moitiés : la moitié A apprend la liste 1 par relecture et la liste 2 par autotest, la moitié B l’inverse ; chacun le coche sur le protocole.",
+          "Démontrer les deux méthodes au tableau, surtout le pliage de l’autotest.",
+          "Distribuer la liste 1, trois minutes au minuteur, ramasser. Puis la liste 2 de même. Les deux listes dans une enveloppe.",
+          "Après le test, rendre brièvement les listes pour vérifier, les ramasser à nouveau et les garder dans l’enveloppe pour le post-test de la séance 8."
+        ],
+        "hintergrund": "Le swahili a été choisi parce que presque personne dans le groupe n’a de connaissances préalables. Les mots n’ont pas de parents connus en allemand, en français, en portugais ni en anglais ; les mots connus par des films manquent volontairement. Les deux listes ont une longueur similaire et mêlent quotidien, nature, corps et animaux. Comme chaque personne utilise les deux méthodes et que les moitiés échangent les listes, les différences entre les listes se compensent. Le dispositif suit Roediger et Karpicke (2006) : relecture répétée contre rappel répété, testés juste après l’apprentissage et une semaine plus tard.",
+        "quellen": [
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255."
+        ],
+        "differenzierung": {
+          "leichter": "N’apprendre et ne tester que les six premiers mots de chaque liste ; la personne qui anime prononce les mots une fois.",
+          "schwerer": "Au post-test, inverser en plus le sens : du français vers le swahili."
+        },
+        "impulse": [
+          "Pourquoi la moitié d’entre vous apprend-elle les listes dans l’autre sens ?",
+          "Quelle méthode a semblé plus facile pendant l’apprentissage – et pourquoi n’est-ce pas une preuve ?"
+        ],
+        "tipps": [
+          "Ne pas distribuer les listes à l’avance ni les laisser traîner à la pause.",
+          "Qui parle ou comprend le swahili devient responsable de l’expérience : prendre le temps, ramasser les listes, calculer les totaux."
+        ],
+        "achtung": "Qui lit difficilement reçoit les mots prononcés une fois. Les résultats restent privés ; au tableau, seuls les totaux du groupe.",
+        "material": "Ciseaux ou massicot, grande enveloppe, minuteur"
       }
     }
   },
@@ -727,6 +1111,239 @@
         "achtung": "Einzelergebnisse nicht vorlesen oder vergleichen. Lese- und Schreibschwierigkeiten nicht vor der Gruppe ansprechen; Wörter vorsprechen, Hilfe im Einzelgespräch klären.",
         "material": "Wortkarten, Umschlag, Timer, Unterlagen für einen Test"
       }
+    },
+    "fr": {
+      "titel": "L’expérience d’apprentissage",
+      "untertitel": "Relecture ou autotest – qu’est-ce qui reste après une demi-heure, qu’est-ce qui reste après une semaine ?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Tes méthodes : coche comment tu apprends les deux listes.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "items": [
+            "Moitié A : liste 1 par relecture, liste 2 par autotest",
+            "Moitié B : liste 1 par autotest, liste 2 par relecture"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta prévision : avec quelle méthode sauras-tu le plus de mots ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "après la pause",
+            "dans une semaine"
+          ],
+          "optionen": [
+            "Relecture",
+            "Autotest",
+            "autant"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Trois règles qui restent",
+          "punkte": [
+            "Cahier fermé : rappeler plutôt que relire.",
+            "Répartir plutôt que bachoter : trois fois 20 minutes sur trois jours plutôt qu’une heure la veille.",
+            "Un lieu d’étude sans téléphone, si possible toujours la même place."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Test après la pause : écris la signification de chaque mot. Devine sans hésiter si tu n’es pas sûr.",
+          "hinweis": "Tu as quatre minutes. Ensuite, tu vérifies avec les listes et tu comptes tes bonnes réponses.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "paka",
+                "wingu",
+                "mkate",
+                "kiti",
+                "jiwe",
+                "kisu",
+                "nyota",
+                "maziwa",
+                "sikio",
+                "mbwa"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "barabara",
+                "jicho",
+                "mvua",
+                "kijiko",
+                "chakula",
+                "mlango",
+                "viatu",
+                "upepo",
+                "mti",
+                "ndizi"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mes bonnes réponses : relecture … sur 10 · autotest … sur 10",
+            "Tout le groupe : relecture … · autotest …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Post-test dans une semaine : écris à nouveau la signification de chaque mot – sans réviser avant.",
+          "hinweis": "Les mêmes mots, dans un autre ordre.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "mlango",
+                "sikio",
+                "kiti",
+                "chakula",
+                "upepo",
+                "paka",
+                "ndizi",
+                "mkate",
+                "jicho",
+                "mvua"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "kisu",
+                "viatu",
+                "wingu",
+                "nyota",
+                "maziwa",
+                "jiwe",
+                "mbwa",
+                "barabara",
+                "kijiko",
+                "mti"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mes bonnes réponses : relecture … sur 10 · autotest … sur 10",
+            "Tout le groupe : relecture … · autotest …",
+            "Ma conclusion après une semaine : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan de révision pour le prochain test : trois courtes séances sur trois jours, chacune avec un autotest.",
+          "hinweis": "Idées d’autotests : fiches, cahier fermé en écrivant ce que tu sais encore, expliquer à quelqu’un, refaire d’anciens exercices sans corrigé.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon test (matière et date) : …",
+            "Mon lieu d’étude : … · Mon téléphone sera alors : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Tour",
+            "Quand ?",
+            "Qu’est-ce que j’apprends ?",
+            "Comment je me teste"
+          ],
+          "breiten": [
+            0.7,
+            1.3,
+            1.8,
+            2.4
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "beispiel": [
+            "p. ex.",
+            "Lu, 17 h",
+            "Vocabulaire, unité 3",
+            "Cahier fermé, écrire 20 mots, puis comparer"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comparent relecture et autotest dans une vraie expérience, vérifient leur prévision après la pause et après une semaine, et en tirent trois séances de révision.",
+        "ablauf": [
+          "Séance 7 (5 min) : tâches 1 et 2, puis apprentissage avec les cartes de mots ; les règles de l’encadré « À retenir » après le test de la pièce.",
+          "Après la pause (8 min) : tâche 3 en quatre minutes, vérifier avec les listes ; au tableau, seulement les totaux du groupe.",
+          "Fin de la séance 7 (7 min) : tâche 5 avec ses propres documents. Le protocole reste dans le classeur.",
+          "Séance 8 (8 min) : tâche 4 sans apprendre avant, vérifier, comparer, conclusion en une phrase."
+        ],
+        "hintergrund": "La relecture crée un sentiment de familiarité qui se confond facilement avec le savoir. Roediger et Karpicke (2006) ont constaté que, juste après l’apprentissage, la relecture était aussi bonne ou meilleure ; au bout d’une semaine, les personnes qui s’étaient interrogées elles-mêmes en savaient nettement plus – alors que celles qui avaient relu estimaient mieux leur performance. Dunlosky et al. (2013) jugent le rappel et l’étalement des révisions les plus efficaces parmi dix méthodes répandues. L’expérience du groupe est petite : elle donne un indice, pas une preuve – c’est aussi un apprentissage.",
+        "quellen": [
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+        ],
+        "differenzierung": {
+          "leichter": "Travailler avec les six premiers mots de chaque liste ; dans le plan de révision, ne planifier précisément qu’une séance.",
+          "schwerer": "Calculer les moyennes du groupe et les dessiner en colonnes au tableau."
+        },
+        "impulse": [
+          "Pourquoi la relecture semble-t-elle plus sûre qu’elle ne l’est ?",
+          "Que faudrait-il pour que vous fassiez vraiment l’autotest à la maison ?"
+        ],
+        "tipps": [
+          "Qui veut comparer les résultats individuels devient responsable de l’expérience et calcule les totaux.",
+          "Pour une planification plus longue, la fiche « Apprendre malin » de la boîte à outils convient."
+        ],
+        "achtung": "Ne pas lire ni comparer les résultats individuels. Ne pas aborder devant le groupe les difficultés de lecture et d’écriture ; prononcer les mots, clarifier l’aide en entretien individuel.",
+        "material": "Cartes de mots, enveloppe, minuteur, documents pour un test"
+      }
     }
   },
   {
@@ -937,6 +1554,179 @@
         ],
         "achtung": "Hinter dauerhaftem Aufschieben können Niedergeschlagenheit, Überforderung oder Versagensangst stehen: Einzelgespräch, bei Bedarf SePAS und Responsable einbeziehen.",
         "material": "Mitgebrachte Aufgaben, Timer, Kiste für die Handys"
+      }
+    },
+    "fr": {
+      "titel": "Mon plan de départ",
+      "untertitel": "Remettre à plus tard, ce n’est pas de la paresse mais une façon d’éviter un sentiment désagréable. Un petit départ rend ce sentiment plus petit.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Dimanche, 16 h",
+          "bild": "figur:ben:besorgt",
+          "text": "Diogo doit faire un exposé demain en cours de français. Il ouvre son ordinateur, voit la diapositive vide et sent un nœud au ventre. « D’abord finir cette vidéo. » Une vidéo devient sept. À 21 h, la pression est énorme, et l’exposé lui paraît encore pire qu’à 16 h."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Voici comment tourne le cercle de la procrastination. Note à quoi il ressemble chez toi.",
+          "hinweis": "Après la quatrième étape, ça recommence – et la tâche paraît chaque fois plus grande.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Tâche",
+              "text": "Diogo : exposé pour demain. Chez moi :"
+            },
+            {
+              "titel": "Sentiment désagréable",
+              "text": "Incertain, pas envie, peur que ce soit mauvais. Chez moi :"
+            },
+            {
+              "titel": "Éviter",
+              "text": "« Encore une vidéo. » Chez moi :"
+            },
+            {
+              "titel": "Mieux, puis la pression",
+              "text": "Soulagement, plus tard mauvaise conscience. Chez moi :"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Pas envie, c’est un sentiment, pas un ordre.",
+          "text": "Le sentiment avant de commencer est le plus souvent plus grand que le travail lui-même. C’est pourquoi ce n’est pas la pression qui aide, mais un départ si petit qu’il demande à peine d’effort."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta tâche en étapes : rends la première étape si petite qu’elle est faite en cinq minutes.",
+          "hinweis": "Exemples de premières étapes : ouvrir le cahier et lire l’exercice, noter trois mots-clés, créer la première diapositive avec le titre.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "La tâche que je repousse : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "leiter",
+          "stufen": 4,
+          "unten": "Étape 1 : faite en cinq minutes",
+          "oben": "Réussi"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton départ sous forme de plan « si … alors » : quand, où et avec quoi commences-tu ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je rentre du sport samedi à 11 h,",
+              "dann": "je pose mon téléphone dans la cuisine et j’écris le titre sur la première diapositive."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deux phrases pour toi : une pour commencer, une pour repartir si tu as quand même remis à plus tard.",
+          "hinweis": "Par exemple : « Seulement dix minutes, ensuite tu peux arrêter. » Ou, pour repartir : « Ça arrive à presque tout le monde. Quelle est la plus petite prochaine étape ? »",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma phrase de départ, issue du couloir de la conscience : …",
+            "Ma phrase pour repartir : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tours avec minuteur : quelle est ta réticence face à la tâche avant, et après ?",
+          "hinweis": "0 = aucune, 10 = presque insupportable. Un tour : 25 minutes sur une seule chose, téléphone rangé, puis 5 minutes de pause. Pour débuter, 10 minutes suffisent.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Jour",
+            "Minutes",
+            "Réticence avant",
+            "Réticence après",
+            "Ce que j’ai réussi"
+          ],
+          "breiten": [
+            0.8,
+            0.9,
+            1,
+            1.1,
+            2.6
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "aujourd’hui",
+            "10",
+            "7",
+            "3",
+            "Titre et premiers mots-clés"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand plus rien ne va",
+          "text": "Si remettre à plus tard te bloque pendant des semaines ou que tout te semble absurde, parles-en à une personne de confiance ou au SePAS. Le Kanner- a Jugendtelefon aide de façon anonyme et gratuite : 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent la procrastination comme une façon d’éviter des émotions, trouvent une étape de cinq minutes, planifient le départ avec « si … alors » et testent un tour avec minuteur.",
+        "ablauf": [
+          "Après le post-test (12 min) : lire l’histoire à voix haute, remplir le cercle au tableau, tâche 1 en individuel.",
+          "Tâches 2 et 3 (15 min) avec la tâche apportée ; vérifier à deux : quand, où, avec quoi ?",
+          "Après le couloir de la conscience : noter la phrase de départ (tâche 4, première ligne).",
+          "Tour d’essai (15 min) : réticence avant, travailler dix minutes, réticence après (tâche 5).",
+          "Pendant le skill, noter la phrase pour repartir. Le tableau continue comme mission de la semaine."
+        ],
+        "hintergrund": "La procrastination est le report volontaire d’une action prévue malgré des inconvénients prévisibles ; elle est liée surtout au caractère désagréable de la tâche, à la distance avant la récompense et à l’impulsivité (Steel, 2007). Sirois et Pychyl (2013) la décrivent comme une réparation de l’humeur à court terme – c’est précisément ce que montre le cercle. Sont utiles : une toute petite première étape, des plages de travail fixes de 25 minutes (Cirillo, 2018) et des plans « si … alors » qui lient le départ à une situation (Gollwitzer, 1999). La réticence avant et après montre à beaucoup que commencer est la partie la plus difficile.",
+        "quellen": [
+          "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+          "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+          "Cirillo, F. (2018). The Pomodoro Technique. New York: Currency.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Ne faire par écrit que les tâches 2 et 3 ; le cercle à l’oral au tableau.",
+          "schwerer": "Avec la fiche « Se concentrer malgré les distractions » de la boîte à outils, planifier et évaluer une semaine de révision entière en blocs de travail."
+        },
+        "impulse": [
+          "Quel sentiment arrive chez toi juste avant de commencer ?",
+          "Qu’est-ce qui était différent de ce que tu attendais après le tour d’essai ?"
+        ],
+        "tipps": [
+          "La première étape est bien choisie quand les jeunes en rient.",
+          "La prochaine fois, demander ce qui a marché – sans juger ce qui n’a pas été fait."
+        ],
+        "achtung": "Derrière une procrastination durable peuvent se cacher abattement, surcharge ou peur d’échouer : entretien individuel, impliquer si besoin le SePAS et le ou la responsable.",
+        "material": "Tâches apportées, minuteur, caisse pour les téléphones"
       }
     }
   },
@@ -1160,6 +1950,191 @@
         ],
         "achtung": "Nicht nach Noten fragen, eigene Gedanken nicht vorlesen lassen. Bei Panik, Schulvermeidung oder Niedergeschlagenheit: Einzelgespräch, SePAS, Responsable. Bei Gefährdung Schutzkonzept.",
         "material": "Scheren, Blätter aus Einheit 7 und 8"
+      }
+    },
+    "fr": {
+      "titel": "Mon plan pour l’examen",
+      "untertitel": "L’émotion fait partie des examens. Avec un plan, elle devient de l’énergie plutôt que de la panique.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Les deux volets de la peur des examens",
+          "text": "Les soucis dans la tête, comme « Je n’y arriverai jamais », occupent une place qui manque ensuite pour les exercices. L’agitation dans le corps – cœur qui bat, respiration rapide – est en revanche de l’énergie. Elle n’a pas à disparaître. Ce sont les soucis qui doivent diminuer."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Teste une pensée d’examen avec trois questions. Sous la troisième image, écris ce qu’Inês pourrait penser – puis ta pensée dans le tableau.",
+          "hinweis": "Quelle est la pire chose qui puisse réalistement arriver – et comment la gérerais-tu ? Qu’est-ce qui arrive le plus probablement ? Que dirais-tu à un ami ou une amie ?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:jana:besorgt:haende-gesicht"
+              ],
+              "blase": "denken",
+              "text": "Si je rate le devoir, je ne réussirai pas l’année.",
+              "untertitel": "Inês la veille du devoir de maths"
+            },
+            {
+              "figuren": [
+                "figur:ben:ruhig",
+                "figur:jana:besorgt"
+              ],
+              "sprecher": 0,
+              "text": "Et si c’était ta meilleure amie qui pensait ça ?",
+              "untertitel": "La question de l’amie"
+            },
+            {
+              "figuren": [
+                "figur:jana:ruhig"
+              ],
+              "blase": "denken",
+              "untertitel": ""
+            }
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ma pensée d’examen",
+            "Ce qui arrive le plus probablement",
+            "Ma phrase, celle que je peux croire"
+          ],
+          "breiten": [
+            2,
+            2,
+            2.2
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "« Tous les autres ont plus révisé. »",
+            "Certains plus, d’autres moins. J’ai fait trois tours avec autotest.",
+            "« Je regarde ma feuille, pas celle des autres. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Réinterpréter les battements de cœur : écris ta phrase d’énergie.",
+          "hinweis": "Exemple : « C’est de l’énergie. Mon corps me prépare. » Prends des mots qui te correspondent.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma phrase d’énergie : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton scénario pour le prochain examen : lis les conseils et écris ce que tu fais toi-même.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon prochain examen (matière et date) : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "schritte",
+          "stil": "liste",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Les jours avant",
+              "text": "Trois courtes séances de révision avec autotest, le départ avec un plan « si … alors ». Mes dates :"
+            },
+            {
+              "titel": "La veille au soir",
+              "text": "Préparer le sac, ne plus s’interroger que brièvement, rien de nouveau, téléphone rangé à temps. Moi :"
+            },
+            {
+              "titel": "Le matin",
+              "text": "Prendre un petit-déjeuner que tu supportes, plutôt de l’eau qu’une boisson énergisante, partir assez tôt. Moi :"
+            },
+            {
+              "titel": "Devant la salle",
+              "text": "Garder ses distances avec ceux qui rendent tout le monde nerveux, soupirer deux fois, phrase d’énergie. Moi :"
+            },
+            {
+              "titel": "Pendant l’examen",
+              "text": "Tout parcourir, commencer par un exercice facile. En cas de blocage : marquer, continuer, y revenir plus tard. Moi :"
+            },
+            {
+              "titel": "Après",
+              "text": "Ne pas comparer toutes les réponses tout de suite, se faire du bien, se demander : qu’est-ce qui m’a aidé ? Moi :"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tes deux skills pour l’examen – un pour le corps, un pour la tête. Écris-les sur la carte et découpe-la.",
+          "hinweis": "Idées : respiration-soupir, appuyer fort les pieds dans le sol, serrer fort le stylo puis relâcher, ta phrase d’énergie, ta phrase de la tâche 1.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Ma carte d’examen – skill du corps, skill de la tête, ma phrase",
+          "hoehe": 3.5,
+          "zeichnen": true
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand la peur devient trop grande",
+          "text": "Si, avant les examens, tu dors ou manges à peine pendant des jours, ou si la pression te semble insupportable, parles-en au SePAS, à ton ou ta titulaire de classe – ou, de façon anonyme et gratuite, au Kanner- a Jugendtelefon : 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes testent une pensée d’examen, réinterprètent l’agitation comme de l’énergie, planifient le jour de l’examen et choisissent deux skills. La fiche clôt le module « Stress et école ».",
+        "ablauf": [
+          "Après l’apport (15 min) : tâche 1 – la bande dessinée ensemble, sa propre pensée en individuel.",
+          "Après l’exercice de mouvement : tâche 2, écrire la phrase d’énergie.",
+          "Tâche 3 (8 min) pour un vrai examen, avec le plan de révision et le plan de départ des séances 7 et 8.",
+          "Tâche 4 (4 min) : remplir la carte, la découper, l’utiliser à la répétition générale ; puis un skill dans la boussole des skills."
+        ],
+        "hintergrund": "La peur des examens a un volet mental (soucis) et un volet corporel (agitation) ; ce sont surtout les soucis qui diminuent la performance, parce qu’ils mobilisent l’attention (Zeidner, 1998). Les trois questions testent les pensées catastrophistes sur leur probabilité et sur la capacité d’y faire face, comme en thérapie cognitivo-comportementale (Beck, 2011) ; la question de l’amie crée de la distance avec son propre problème (Kross & Ayduk, 2017). Jamieson et al. (2010) ont montré que des étudiants à qui l’on avait expliqué que l’agitation peut améliorer la performance réussissaient mieux un examen de mathématiques.",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212."
+        ],
+        "differenzierung": {
+          "leichter": "Ne traiter la tâche 1 qu’avec la bande dessinée ; dans le scénario, choisir trois étapes.",
+          "schwerer": "Pour chaque étape, écrire une phrase « si … alors » pour le cas où quelque chose tourne mal, par exemple si le bus ne vient pas."
+        },
+        "impulse": [
+          "Quel souci vient le plus fort t’interrompre pendant les examens ?",
+          "Comment sont les battements de cœur quand tu les appelles énergie ?"
+        ],
+        "tipps": [
+          "Coller la carte d’examen sur du papier solide ; elle a sa place dans la trousse.",
+          "Après la période d’examens, demander quel skill a aidé – pas la note."
+        ],
+        "achtung": "Ne pas demander les notes, ne pas faire lire les pensées personnelles. En cas de panique, d’évitement scolaire ou d’abattement : entretien individuel, SePAS, responsable. En cas de danger, concept de protection.",
+        "material": "Ciseaux, fiches des séances 7 et 8"
       }
     }
   }

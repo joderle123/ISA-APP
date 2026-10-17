@@ -755,6 +755,69 @@
         "achtung": "Zeigt jemand immer wieder auf hilflos, einsam oder überfordert: nicht in der Gruppe nachfragen, sondern ein Einzelgespräch anbieten.",
         "material": "Rad in A3 (laminiert), Blatt in A4 je Person, Wäscheklammern"
       }
+    },
+    "fr": {
+      "titel": "La roue des émotions",
+      "untertitel": "Au centre, les émotions de base ; autour, les mots plus précis",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "« Ça ne va pas » peut cacher bien des choses : de la déception, une blessure, de la nervosité ou simplement de la fatigue. Plus tu nommes précisément une émotion, mieux tu peux la gérer."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entoure ce que tu ressens en ce moment. Tu peux choisir deux ou trois mots.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "gefuehlsrad"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "En ce moment, je me sens …",
+            "C’est peut-être parce que …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "Lors du tour d’humeur, il suffit de montrer un mot. Le « parce que » est facultatif."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes découvrent un outil pour nommer leurs émotions plus précisément. La roue est la base du tour d’humeur qui ouvre chaque séance.",
+        "ablauf": [
+          "Séance 1 (5 min) : poser la roue en format A3 au milieu – six émotions de base au centre, des mots plus précis autour. Question : quelle est la différence entre être agacé et être blessé ?",
+          "Chaque séance (5–10 min) : chacun montre un mot sur la roue et dit une phrase à ce sujet, à tour de rôle. La personne qui anime commence.",
+          "Feuille individuelle : entourer des mots, compléter les débuts de phrases. La feuille n’est pas ramassée.",
+          "À partir de la séance 11, la tension de 0 à 100 s’y ajoute."
+        ],
+        "hintergrund": "La roue des émotions remonte à Gloria Willcox (1982) : au centre se trouvent quelques émotions de base, les mots se précisent vers l’extérieur. Mettre une émotion en mots atténue de façon mesurable la réaction du cerveau face aux stimuli éprouvants (Lieberman et al., 2007). Un vocabulaire émotionnel riche fait partie de la compétence émotionnelle et aide les jeunes à agir de façon adaptée plutôt que de simplement réagir (Brackett, 2019). Comme chez Willcox, « fatigué » et « ennuyé » se trouvent sous l’émotion de base « triste » : ce sont deux états de faible énergie.",
+        "quellen": [
+          "Willcox, G. (1982). The Feeling Wheel: A tool for expanding awareness of emotions and increasing spontaneity and intimacy. Transactional Analysis Journal, 12(4), 274–276.",
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "N’utiliser que les six émotions de base au centre ; la personne qui anime lit les mots extérieurs à voix haute si besoin.",
+          "schwerer": "Le groupe cherche des mots qui manquent sur la roue – par exemple stressé, gêné, soulagé – et les rattache à une émotion de base."
+        },
+        "impulse": [
+          "Agacé ou irrité : où voyez-vous la différence ?",
+          "Quelle émotion manque sur la roue selon vous ?"
+        ],
+        "tipps": [
+          "Plastifier la roue en A3 : chaque personne fixe une pince à linge sur son mot, et l’ambiance du groupe se voit d’un coup d’œil.",
+          "Accepter les réponses du type « bof » ou « peu importe » et demander tout au plus quel mot de la roue s’en rapproche le plus."
+        ],
+        "achtung": "Si une personne montre sans cesse « impuissant », « seul » ou « dépassé », ne pas poser de questions dans le groupe, mais proposer un entretien individuel.",
+        "material": "Roue en A3 (plastifiée), feuille A4 par personne, pinces à linge"
+      }
     }
   }
 ]

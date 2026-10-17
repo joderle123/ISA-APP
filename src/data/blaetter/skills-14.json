@@ -173,6 +173,146 @@
         "achtung": "Keine Fragen zur eigenen Familie; Aufgabe 3 bleibt privat. Bei Hinweisen auf Gewalt oder Vernachlässigung: Einzelgespräch, nichts versprechen, die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt, A3-Kopie, Haftnotizen"
       }
+    },
+    "fr": {
+      "titel": "Six familles, six chez-soi",
+      "untertitel": "Ce que les familles peuvent donner – et qui d’autre aide à porter",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Le chez-soi ne se ressemble pas pour tout le monde : chez les deux parents, chez un seul parent, chez les grands-parents, dans une famille d’accueil ou dans un foyer. Les six jeunes de cette feuille sont inventés."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis les portraits. Souligne qui s’occupe de qui dans chaque famille.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 132,
+          "karten": [
+            {
+              "titel": "Noah, 14 ans",
+              "text": "Vit avec sa mère et sa petite sœur à Esch. Après l’école, il est chez sa grand-mère jusqu’à ce que sa mère rentre du travail. Son père habite au Portugal ; le dimanche, ils se parlent en visio."
+            },
+            {
+              "titel": "Aylin, 13 ans",
+              "text": "A deux chez-soi : en semaine chez sa mère et le compagnon de celle-ci, un week-end sur deux chez son père à Ettelbruck. Là-bas, son demi-frère de trois ans l’attend."
+            },
+            {
+              "titel": "Léa, 14 ans",
+              "text": "Vit depuis deux ans dans un foyer, avec six autres jeunes. Avec Samuel, son éducateur, elle révise les maths. Certains week-ends, elle est chez sa tante."
+            },
+            {
+              "titel": "Ben, 14 ans",
+              "text": "Vit avec ses deux mères et son grand frère. La famille compte aussi un chien, dont Ben s’occupe chaque soir."
+            },
+            {
+              "titel": "Amira, 15 ans",
+              "text": "Habite avec ses parents, ses trois frères et sœurs plus jeunes et sa grand-mère dans un appartement de quatre pièces. Chez le médecin, elle traduit souvent pour son père."
+            },
+            {
+              "titel": "Mathis, 13 ans",
+              "text": "Vit depuis son sixième anniversaire dans une famille d’accueil, avec deux autres enfants accueillis. Il voit sa mère biologique une fois par mois."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que reçoivent les jeunes – et de qui ? Choisis trois portraits.",
+          "hinweis": "Léa est déjà notée comme exemple. Les mots dans l’encadré t’aident."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Ce que les familles peuvent donner",
+          "items": [
+            "Prise en charge",
+            "Protection",
+            "Réconfort",
+            "Cadre et règles",
+            "Soutien",
+            "Appartenance",
+            "Liberté",
+            "Temps partagé"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Personne",
+            "Ce que la personne reçoit",
+            "De qui ?"
+          ],
+          "breiten": [
+            0.8,
+            2,
+            1.6
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Léa",
+            "Soutien : aide en maths",
+            "Samuel, éducateur au foyer"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Personne ne peut tout donner",
+          "text": "Il est bon d’avoir plusieurs personnes autour de soi – dans la famille et en dehors : grands-parents, une tante, une coach, un éducateur, des amies et des amis. Et chaque enfant a droit à la protection, à une prise en charge et à être entendu."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rien que pour toi : sur qui ou sur quoi peux-tu t’appuyer ? Inscris ce que tu veux – au centre, ceux qui te sont très proches.",
+          "hinweis": "Les personnes de la famille et de l’extérieur comptent, de même que les lieux, les animaux ou la musique."
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "Ça me fait du bien : lieux, animaux, choses",
+            "Ces personnes m’aident",
+            "Ces personnes me sont proches"
+          ],
+          "mitte": "moi"
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "La feuille reste chez toi. Et si c’est dur à la maison : tu n’as pas à porter ça sans soutien. Parles-en à une personne de confiance, au SePAS ou au Kanner- a Jugendtelefon au 116 111 – anonyme et gratuit. En cas de danger : numéro d’urgence 112."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes découvrent à travers six familles inventées différentes formes de familles, nomment ce que les familles peuvent donner et reconnaissent que des personnes extérieures à la famille aident aussi à porter.",
+        "ablauf": [
+          "Galerie (15 min) : les portraits d’une copie A3 sont affichés dans la salle. À deux, circuler et coller des notes adhésives sur deux portraits : qui s’occupe de qui ici ? Question : « Quelle est la famille normale ? »",
+          "Recueil (5 min) : « De quoi les jeunes ont-ils besoin de la part des personnes avec qui ils vivent ? » Classer au tableau selon les huit cases de la banque de mots.",
+          "Exercice 2 à deux (8 min), puis bilan : qui donne quoi – et qui d’autre que les parents ?",
+          "Exercice 3 en silence et facultatif, à la fin de la séance ou à la maison. Ne pas ramasser, ne pas lire à voix haute ; montrer brièvement l’encadré d’aide."
+        ],
+        "hintergrund": "Pour le développement des adolescents, la forme de la famille compte moins que la qualité des relations. Dans l’étude de Kauai, les enfants qui se sont bien développés malgré des conditions difficiles avaient le plus souvent au moins une personne de référence fiable – souvent aussi en dehors de la famille nucléaire, par exemple les grands-parents, des frères et sœurs plus âgés ou une enseignante (Werner & Smith, 1992). Masten (2014) parle donc de la résilience comme d’une force « ordinaire », qui naît de relations qui portent. La cible rend ce réseau visible sans que personne ait à dévoiler sa vie de famille.",
+        "quellen": [
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Lire seulement trois portraits ; exercice 2 avec une ligne remplie ensemble au tableau.",
+          "schwerer": "Imaginer comment l’une des familles aura pu changer dans cinq ans – et ce qui peut rester pareil."
+        },
+        "impulse": [
+          "Qu’ont en commun les six familles ?",
+          "Qui d’autre que les parents peut devenir important pour les jeunes ?"
+        ],
+        "tipps": [
+          "Changer les prénoms si quelqu’un s’appelle ainsi ou si un portrait ressemble à une situation réelle.",
+          "Ne pas lire l’exercice 3 en passant – même par intérêt."
+        ],
+        "achtung": "Pas de questions sur sa propre famille ; l’exercice 3 reste privé. En cas d’indices de violence ou de négligence : entretien individuel, ne rien promettre, informer la direction compétente (responsable).",
+        "material": "Feuille, copie A3, notes adhésives"
+      }
     }
   },
   {
@@ -340,6 +480,137 @@
         ],
         "achtung": "Die Formel ist für Alltagsstreit gedacht. Bei Hinweisen auf Gewalt, Drohungen oder Angst vor dem Nachhausegehen: Einzelgespräch, nichts versprechen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren.",
         "material": "Blatt für jede Person, Tafel"
+      }
+    },
+    "fr": {
+      "titel": "Mieux se disputer à la maison",
+      "untertitel": "De quoi il s’agit vraiment, le bon moment et un plan pour redescendre",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "22 h",
+          "bild": "figur:jana:wuetend:verschraenkt",
+          "text": "Jeudi, un peu après 22 h. Mila, 14 ans, est au lit et discute avec ses amies : samedi, c’est la fête, et tout le monde est en train de décider qui apporte quoi. La règle à la maison est claire : à 22 h, le téléphone va dans la cuisine. Sa mère est dans l’encadrement de la porte : « Téléphone. Maintenant. » Mila : « Tu gâches toujours tout ! » La porte claque. Ensuite, elles restent longtemps éveillées toutes les deux."
+        },
+        {
+          "art": "aufgabe",
+          "text": "De quoi s’agit-il vraiment ? En haut, ce dont on se dispute ; en bas, ce qui compte pour Mila et pour sa mère."
+        },
+        {
+          "art": "eisberg",
+          "oben": "Ce dont on se dispute",
+          "unten": "Ce qui compte pour les deux",
+          "beispielOben": "le téléphone à 22 h",
+          "beispielUnten": "Mère : que Mila dorme assez …"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bon moment pour une conversation difficile ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "plutôt bon",
+            "plutôt pas"
+          ],
+          "items": [
+            "Sa mère rentre à l’instant, fatiguée, de son service du soir.",
+            "Samedi matin au petit-déjeuner, personne n’est pressé.",
+            "Pendant le dîner, les frères et sœurs écoutent.",
+            "Juste après que la porte a claqué.",
+            "En se promenant ou pendant un trajet en voiture.",
+            "Par message : « On peut en parler demain après l’école ? »"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un bon moment",
+          "text": "Les deux sont sous 50, personne n’est pressé, personne ne regarde. Côte à côte – en marchant, en voiture, en cuisinant – on parle souvent plus facilement que face à face."
+        },
+        {
+          "art": "aufgabe",
+          "text": "La formule de la maison : que pourrait dire Mila le lendemain ? Écris une phrase pour chaque partie."
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Montrer qu’on comprend",
+              "text": "Montre que tu comprends l’autre : « Je sais que tu … »"
+            },
+            {
+              "titel": "Message en « je »",
+              "text": "Dis ce qui te dérange et pourquoi – sans reproche : « Ça me stresse quand …, parce que … »"
+            },
+            {
+              "titel": "Proposition",
+              "text": "Fais une offre ou demande-en une : « On pourrait … ? »"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mon plan pour redescendre : que fais-tu quand ton chiffre dépasse 70 ?",
+          "hinweis": "Rien que pour toi. Disparaître, ce n’est pas la même chose que redescendre : quand on redescend, on dit quand on revient."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Ma phrase d’arrêt : …",
+            "Voilà comment je redescends : …",
+            "Quand je reviens, je dis : …"
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Se disputer, c’est normal – la violence, non. Il y a de l’aide ici :",
+          "eintraege": [
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Police",
+              "nummer": "113"
+            },
+            {
+              "name": "Urgences : secours et pompiers",
+              "nummer": "112"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent ce qui compte derrière les disputes du quotidien, jugent si le moment s’y prête, écrivent la formule de la maison et fixent un plan pour redescendre.",
+        "ablauf": [
+          "Lire l’histoire, exercice 1 à deux (8 min) : « Que veut vraiment la mère – et que veut Mila ? » Recueillir les deux côtés au tableau.",
+          "Exercice 2 seul (3 min), comparer, lire l’encadré conseil. Cas à discuter, le message : bon s’il prépare une conversation, pas s’il la remplace.",
+          "Exercice 3 (5 min) : présenter la formule au tableau, puis écrire ; faire lire quelques phrases à celles et ceux qui veulent.",
+          "Exercice 4 après le skill pour redescendre (5 min), seul, sans lecture à voix haute. Montrer l’encadré d’aide."
+        ],
+        "hintergrund": "Les conflits entre adolescents et parents portent surtout sur le quotidien : aider à la maison, heures de sortie, apparence, école ; la plupart des familles gardent une relation chaleureuse (Steinberg, 2001). Derrière chaque exigence, il y a des deux côtés des préoccupations légitimes – l’iceberg les rend visibles. Les messages en « je » désamorcent les luttes de pouvoir (Gordon, 1972) ; reconnaître d’abord le point de vue de l’autre aide à être entendu (Rathus & Miller, 2015). Sous forte tension, aucun argument ne passe : d’où le bon moment et le plan pour redescendre avec heure de retour.",
+        "quellen": [
+          "Steinberg, L. (2001). We know some things: Parent–adolescent relationships in retrospect and prospect. Journal of Research on Adolescence, 11(1), 1–19.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "À l’exercice 3, écrire seulement les parties 1 et 3 ; l’adulte aide à formuler le message en « je ».",
+          "schwerer": "Écrire la scène du point de vue de la mère : que pense-t-elle quand la porte claque ?"
+        },
+        "impulse": [
+          "Qu’aurait pu faire Mila autrement, sans renoncer à ce qui lui tient à cœur ?",
+          "À quoi voyez-vous que quelqu’un n’est pas dans un bon moment ?"
+        ],
+        "tipps": [
+          "Afficher la formule de la maison en grand ; elle resservira à la séance 20.",
+          "Plan pour redescendre : exiger l’heure de retour – sans elle, redescendre devient vite claquer la porte."
+        ],
+        "achtung": "La formule vaut pour les disputes du quotidien. En cas d’indices de violence, de menaces ou de peur de rentrer chez soi : entretien individuel, ne rien promettre, agir selon le concept de protection et informer la direction compétente (responsable) le jour même.",
+        "material": "Une feuille par personne, tableau"
       }
     }
   },
@@ -1155,6 +1426,152 @@
         "achtung": "Keine Displays zeigen lassen, keine Handys einsammeln. Bei Kontakten zu Fremden, Druck oder Erpressung: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt, Handys nach Hausregel"
       }
+    },
+    "fr": {
+      "titel": "Mes données sous contrôle",
+      "untertitel": "Repérer ses traces en ligne, vérifier ses réglages, construire des mots de passe",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Le profil de Mila",
+          "bild": "figur:jana:froh:winken",
+          "text": "Mila, 14 ans, a un profil public sous le nom mila.balou. Dans la description, on lit « Esch · Handball · 14 ». La photo de profil la montre en maillot de club, logo visible. Parmi ses derniers posts : un selfie devant son lycée, avec le panneau bien lisible ; une photo avec son chien Balou ; « Enfin 14 ans » avec un gâteau, publié le 12 mars ; une story de l’entraînement mardi à 18 h, avec la localisation."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que peut découvrir une personne inconnue sur Mila ? Note au moins trois traces.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Trace dans le profil",
+            "Ce qu’elle révèle"
+          ],
+          "breiten": [
+            1.6,
+            2
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Story de l’entraînement avec localisation",
+            "où Mila est le mardi à 18 h"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ton empreinte numérique",
+          "text": "Tout ce que tu postes, likes ou commentes laisse des traces. Même les stories qui disparaissent après 24 heures peuvent être enregistrées par capture d’écran. Prises une à une, les traces sont le plus souvent inoffensives – ensemble, elles forment une image. Il y a aussi du positif : c’est toi qui décides de ce qui est visible."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Trois questions avant de poster",
+          "punkte": [
+            "Qui peut voir ça – et qui pourrait le faire suivre ?",
+            "Qu’est-ce que ça révèle sur moi : lieu, école, heure, habitudes ?",
+            "Est-ce que ça m’irait si quelqu’un le retrouvait dans un an ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Contrôle de la vie privée : vérifie tes réglages. Les réponses restent chez toi."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "fait",
+            "je m’en occupe",
+            "je ne sais pas"
+          ],
+          "items": [
+            "Mon compte est privé : les inconnus ne voient pas mes posts.",
+            "Ma localisation est désactivée – dans les stories, les photos et les applis de cartes.",
+            "Seules les personnes que je connais peuvent m’envoyer des messages.",
+            "Avant que quelqu’un me tague, je dois donner mon accord.",
+            "Mon téléphone a un verrouillage d’écran.",
+            "L’authentification à deux facteurs est activée pour les comptes importants.",
+            "Je n’utilise pas partout le même mot de passe."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "La méthode de la phrase",
+          "text": "Invente une phrase que personne d’autre ne connaît et prends les initiales, les chiffres et la ponctuation : de « Samedi, je mange 3 crêpes avec ma tante Ana et Pol. » on obtient « Sjm3camtAeP. » Long, c’est fort. Un mot de passe différent pour chaque compte – et ne le dis à personne."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Construis un mot de passe d’entraînement avec la méthode de la phrase – pas ton vrai.",
+          "hinweis": "Ne prends jamais un exemple trouvé sur internet ou sur cette feuille comme vrai mot de passe."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Ma phrase inventée : …",
+            "Ça donne : …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand il arrive quelque chose quand même",
+          "punkte": [
+            "Compte piraté : changer tout de suite le mot de passe – partout où c’était le même – et prévenir ses amis.",
+            "Des inconnus t’écrivent, veulent des photos ou un rendez-vous : ne pas répondre, faire une capture d’écran, bloquer, le dire à un adulte."
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Aide en cas de problème en ligne",
+          "eintraege": [
+            {
+              "name": "BEE SECURE Helpline (anonyme, gratuite) : questions, comptes piratés, cyberharcèlement",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Police",
+              "nummer": "113"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent comment des traces isolées forment une image précise, vérifient leurs réglages de vie privée et construisent un mot de passe long avec la méthode de la phrase.",
+        "ablauf": [
+          "Lire l’histoire, exercice 1 à deux (6 min) : « Vous êtes des détectives. » Rassembler les trouvailles au tableau.",
+          "Lire l’encadré (2 min) : le positif fait aussi partie de l’empreinte.",
+          "Exercice 2 seul avec son propre téléphone, si le règlement intérieur l’autorise (6 min). Personne ne montre son écran.",
+          "Exercice 3 (5 min) : expliquer la méthode de la phrase, construire un mot de passe d’entraînement, vérifier à deux – long, impossible à deviner, utilisé une seule fois."
+        ],
+        "hintergrund": "Des informations isolées comme l’école, le club, l’horaire d’entraînement ou l’anniversaire paraissent inoffensives ; assemblées, elles révèlent où se trouve quelqu’un et quand, et donnent des indices sur les mots de passe et les questions de sécurité. BEE SECURE et klicksafe recommandent donc des comptes privés, la localisation désactivée, l’accord préalable avant d’être identifié, des mots de passe longs et différents pour chaque compte, ainsi que l’authentification à deux facteurs. La méthode de la phrase rend les mots de passe longs faciles à retenir. Le ton compte : le but n’est pas la peur, mais de décider soi-même de ce qui est visible.",
+        "quellen": [
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu",
+          "klicksafe – EU-Initiative für mehr Sicherheit im Netz: www.klicksafe.de"
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 1 avec deux traces ; à l’exercice 2, seulement les quatre premiers points.",
+          "schwerer": "Écrire une liste de contrôle pour des frères et sœurs plus jeunes : cinq réglages dont chaque nouveau téléphone a besoin."
+        },
+        "impulse": [
+          "Quelle trace de Mila vous a le plus surpris ?",
+          "Que conseilleriez-vous à Mila, sans lui interdire de poster ?"
+        ],
+        "tipps": [
+          "Clarifier d’abord le règlement sur le téléphone ; sans téléphone, l’exercice 2 se remplit comme plan pour la maison.",
+          "Ne pas montrer ni fouiller de vrais profils de l’école ou de l’entourage."
+        ],
+        "achtung": "Ne pas faire montrer les écrans, ne pas ramasser les téléphones. En cas de contacts avec des inconnus, de pression ou de chantage : entretien individuel, informer la direction compétente (responsable).",
+        "material": "Feuille, téléphones selon le règlement"
+      }
     }
   },
   {
@@ -1327,6 +1744,142 @@
         ],
         "achtung": "Keine intimen Bilder ansehen, annehmen oder weiterleiten. Bei Hinweisen auf Erpressung: Einzelgespräch, nichts versprechen, die zuständige Leitung (Responsable) am selben Tag informieren; akut 112.",
         "material": "Blatt, Karten der Hilfe-Staffel"
+      }
+    },
+    "fr": {
+      "titel": "Photos : accord, pression, chantage",
+      "untertitel": "Ce qui vaut pour les photos – et ce qui aide quand quelqu’un menace de les diffuser",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Trois règles pour les photos",
+          "punkte": [
+            "Ne poster ou transférer les photos d’autres personnes qu’avec leur accord. Un non est un non.",
+            "Personne n’a le droit de te pousser à envoyer des photos intimes – ni par amour, ni comme preuve, ni comme défi. Dire non est toujours juste.",
+            "Ne jamais transférer, enregistrer ou montrer les photos intimes d’autres personnes. Ça blesse et c’est puni par la loi. Préviens un adulte."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Une heure",
+          "bild": "figur:ben:aengstlich:haende-gesicht",
+          "text": "Elias, 15 ans, discute depuis deux semaines avec un profil nommé « sunny_16 ». Elle est gentille, fait des compliments, envoie des photos. À un moment, elle lui demande une photo intime de lui, et il en envoie une. Peu après, le ton change : « Paie 200 euros, sinon tous tes amis recevront la photo. Tu as une heure. » Elias tremble. Il a tellement honte qu’il ne veut le dire à personne."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Elias t’écrit. Que lui réponds-tu en tant qu’ami ou amie ?"
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Elias",
+              "text": "J’ai fait une bêtise. Je ne peux le dire à personne, c’est trop la honte."
+            },
+            {
+              "wer": "Toi"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Quand quelqu’un menace avec des photos, voici ce qui aide – dans cet ordre :"
+        },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Ne pas payer, ne plus rien envoyer",
+              "text": "Quand on paie, on reçoit le plus souvent de nouvelles exigences. Ne pas répondre aux menaces."
+            },
+            {
+              "titel": "Sécuriser les preuves",
+              "text": "Captures d’écran du chat, du profil et de l’exigence – pas de la photo."
+            },
+            {
+              "titel": "Bloquer et signaler",
+              "text": "D’abord sécuriser, puis bloquer le contact et le signaler dans l’appli."
+            },
+            {
+              "titel": "En parler tout de suite à un adulte de confiance",
+              "text": "Tu n’as pas à gérer ça sans aide. La honte est normale – et ce n’est pas une raison de se taire."
+            },
+            {
+              "titel": "Chercher de l’aide",
+              "text": "BEE SECURE Helpline 8002 1234 ; avec l’adulte de confiance, aussi la police, 113."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Ce n’est pas ta faute",
+          "text": "Le coupable, c’est celui ou celle qui fait pression, diffuse ou fait du chantage – jamais la personne sur la photo."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand ça arrive à une amie ou à un ami",
+          "punkte": [
+            "Écouter, ne pas se moquer, ne pas faire de reproches – pas de « c’est bien fait pour toi » non plus.",
+            "Ne pas regarder la photo, ne pas l’enregistrer, ne pas la transférer.",
+            "Chercher ensemble un adulte de confiance. Tu n’as pas à gérer ça sans aide.",
+            "As-tu toi-même transféré quelque chose ? Arrête maintenant et préviens un adulte. Il n’est jamais trop tard pour faire ce qui est juste."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta première phrase : à qui te confierais-tu – et comment commencerais-tu ?",
+          "hinweis": "Rien que pour toi. Par exemple : « Il m’est arrivé quelque chose de gênant et j’ai besoin d’aide. S’il te plaît, écoute d’abord. »"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Je le raconterais à … ."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Ma première phrase : …"
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent trois règles pour les photos, savent ce qui aide en cas de chantage avec des photos et déterminent à qui ils se confieraient et comment ils commenceraient.",
+        "ablauf": [
+          "Après le feu des photos (2 min) : lire les trois règles. Question : « Qu’ont-elles en commun toutes les trois ? » – Il s’agit du consentement.",
+          "Lire l’histoire, puis le relais d’aide (13 min) ; ensuite comparer les cinq étapes de la feuille avec le résultat des équipes.",
+          "Exercice 1 seul ou à deux (4 min) ; faire lire quelques réponses à Elias à celles et ceux qui veulent.",
+          "Exercice 2 après le skill de respiration, seul et sans lecture à voix haute (3 min). Montrer l’encadré d’aide."
+        ],
+        "hintergrund": "Selon une méta-analyse, la grande majorité des adolescents n’a jamais envoyé de photo intime ; environ une personne sur huit en a toutefois déjà transféré une sans accord (Madigan et al., 2018). Dans les cas de chantage avec des photos, les victimes connaissent souvent les auteurs, et beaucoup ne se confient à personne par honte (Wolak et al., 2018). La feuille renforce donc les règles du consentement, nomme clairement la culpabilité et fait s’exercer à la première phrase pour demander de l’aide. Au Luxembourg, la BEE SECURE Helpline offre des conseils.",
+        "quellen": [
+          "Madigan, S., Ly, A., Rash, C. L., Van Ouytsel, J. & Temple, J. R. (2018). Prevalence of multiple forms of sexting behavior among youth: A systematic review and meta-analysis. JAMA Pediatrics, 172(4), 327–335.",
+          "Wolak, J., Finkelhor, D., Walsh, W. & Treitman, L. (2018). Sextortion of minors: Characteristics and dynamics. Journal of Adolescent Health, 62(1), 72–79.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Discuter les trois règles et les étapes 1 et 4 ; exercice 1 à l’oral.",
+          "schwerer": "Écrire un message à une amie dont la photo circule : que dis-tu, que fais-tu ?"
+        },
+        "impulse": [
+          "Pourquoi est-il si difficile de prévenir quelqu’un dans une telle situation ?",
+          "Que peut faire un ami ou une amie pour que ce soit plus facile ?"
+        ],
+        "tipps": [
+          "Ne montrer aucune image, même floue ou dessinée.",
+          "Laisser au tableau la phrase d’exemple de l’exercice 2."
+        ],
+        "achtung": "Ne regarder, accepter ou transférer aucune photo intime. En cas d’indices de chantage : entretien individuel, ne rien promettre, informer la direction compétente (responsable) le jour même ; en urgence, 112.",
+        "material": "Feuille, cartes du relais d’aide"
       }
     }
   },
@@ -1855,6 +2408,152 @@
         ],
         "achtung": "Spielzeiten und Ausgaben bleiben privat. Bei starkem Kontrollverlust, Schulden oder Kontakten zu Fremden: Einzelgespräch, keine Diagnose, die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt, Spielchips, Beutel mit Losen"
+      }
+    },
+    "fr": {
+      "titel": "Mon bilan gaming",
+      "untertitel": "Ce que les jeux donnent, comment ils retiennent – et qui décide quand c’est fini",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Que te donnent les jeux – ou un autre loisir ? Et que te coûtent-ils ?",
+          "hinweis": "Tu remplis le côté droit après l’expérience des loot boxes."
+        },
+        {
+          "art": "waage",
+          "links": "Ce que les jeux me donnent",
+          "rechts": "Ce que les jeux me coûtent",
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Procédés d’accroche : relie chaque procédé à son effet.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Procédé",
+            "Effet"
+          ],
+          "links": [
+            "Récompense quotidienne",
+            "Compte à rebours dans la boutique",
+            "Loot box",
+            "Cristaux au lieu d’euros",
+            "L’équipe attend",
+            "Pas de dernier niveau"
+          ],
+          "rechts": [
+            "On remarque à peine combien d’argent réel est parti.",
+            "Il n’y a jamais de moment où c’est terminé.",
+            "Tu joues pour que la série ne s’arrête pas.",
+            "S’arrêter donne l’impression de lâcher les autres.",
+            "Comme à la machine à sous : le gain rare attire.",
+            "Pression du temps : acheter vite avant que ce soit parti."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Loot boxes et PEGI",
+          "text": "Les loot boxes sont des coffres au contenu aléatoire. Le hasard décide si un achat vaut le coup – c’est pourquoi les spécialistes les comparent aux jeux d’argent. Le logo PEGI sur les jeux indique à partir de quel âge un jeu convient, et avertit des achats intégrés."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand est-ce trop ? Évalue honnêtement – rien que pour toi."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "souvent",
+            "parfois",
+            "jamais"
+          ],
+          "items": [
+            "Je joue plus longtemps que prévu.",
+            "Je m’énerve quand je dois m’arrêter.",
+            "Je joue pour ne pas sentir les mauvaises émotions.",
+            "Le sommeil, l’école ou les amis passent après.",
+            "Je dépense plus d’argent que prévu.",
+            "Je mens quand on me demande combien de temps j’ai joué."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "L’évaluation reste chez toi. Si plusieurs points reviennent souvent, parles-en à une personne en qui tu as confiance – ce n’est pas un jugement sur toi, mais un bon prochain pas."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mes règles : une pour le temps, une pour l’argent."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Quand il est 21 h un jour d’école,",
+              "dann": "je finis la partie et je pose la manette dans le salon."
+            },
+            {
+              "wenn": "Quand je veux acheter quelque chose dans le jeu,",
+              "dann": "j’attends 24 heures et je me demande ensuite si j’en ai encore envie."
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Quand le gaming devient un problème",
+          "eintraege": [
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "BEE SECURE Helpline (questions sur le net et les jeux)",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Service spécialisé au Luxembourg (à compléter par l’adulte) :",
+              "nummer": "________________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes mesurent ce que les jeux apportent, repèrent les procédés d’accroche, s’évaluent en privé et fixent une règle pour le temps et une pour l’argent.",
+        "ablauf": [
+          "Après le pitch du jeu (4 min) : côté gauche de la balance. Question : « Qu’est-ce qui est compétence, autonomie, appartenance ? »",
+          "Exercice 2 après « Dragon Rush » (5 min). Solution, depuis le haut : 1–3, 2–6, 3–5, 4–1, 5–4, 6–2.",
+          "Après l’expérience des loot boxes : compléter le côté droit de la balance, lire l’encadré.",
+          "Après le parcours des 24 heures (6 min) : exercices 3 et 4 seul ; ne pas ramasser, ne pas lire à voix haute."
+        ],
+        "hintergrund": "Les jeux comblent les besoins de compétence, d’autodétermination et de lien (Deci & Ryan, 2000) et captivent justement ainsi (Przybylski, Rigby & Ryan, 2010) ; jouer avec modération ne nuit pas au bien-être (Przybylski & Weinstein, 2017). Beaucoup de jeux compliquent l’arrêt ; les spécialistes comparent les loot boxes aux jeux d’argent (King & Delfabbro, 2018), et qui dépense beaucoup pour cela présente plus souvent des signes de jeu problématique (Zendle & Cairns, 2018). L’exercice 3 s’inspire de signaux d’alerte connus – perte de contrôle, priorité sur le reste, poursuite malgré les inconvénients – et n’est pas un diagnostic.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Przybylski, A. K., Rigby, C. S. & Ryan, R. M. (2010). A motivational model of video game engagement. Review of General Psychology, 14(2), 154–166.",
+          "Przybylski, A. K. & Weinstein, N. (2017). A large-scale test of the Goldilocks hypothesis: Quantifying the relations between digital-screen use and the mental well-being of adolescents. Psychological Science, 28(2), 204–215.",
+          "King, D. L. & Delfabbro, P. H. (2018). Internet Gaming Disorder: Theory, Assessment, Treatment, and Prevention. London: Academic Press.",
+          "Zendle, D. & Cairns, P. (2018). Video game loot boxes are linked to problem gambling: Results of a large-scale survey. PLOS ONE, 13(11), e0206767."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 2 avec quatre procédés ; à l’exercice 4, une seule règle.",
+          "schwerer": "Trouver un procédé dans une appli sans rapport avec les jeux, et décrire un antidote."
+        },
+        "impulse": [
+          "Quel procédé agit le plus fort chez vous ?",
+          "À quoi voyez-vous qu’un jeu vous prend plus qu’il ne donne ?"
+        ],
+        "tipps": [
+          "Ne pas dévaloriser le gaming : ici, les jeunes sont les spécialistes.",
+          "Compléter le service spécialisé avant de photocopier."
+        ],
+        "achtung": "Temps de jeu et dépenses restent privés. Si perte de contrôle marquée, dettes ou contacts avec des inconnus : entretien individuel, pas de diagnostic, informer la direction compétente (responsable).",
+        "material": "Feuille, jetons, billets de tirage"
       }
     }
   }

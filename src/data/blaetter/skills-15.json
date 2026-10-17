@@ -206,6 +206,178 @@
         "achtung": "Keine Konsumerfahrungen abfragen. Bei Hinweisen auf gefährlichen Konsum oder Sucht in der Familie: Einzelgespräch, die zuständige Leitung (Responsable) am selben Tag informieren.",
         "material": "Blatt, zwei Stiftfarben, Schilder"
       }
+    },
+    "fr": {
+      "titel": "Info ou intox ?",
+      "untertitel": "Ce que l’alcool, la nicotine et le cannabis font au corps et au cerveau des jeunes",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "On entend beaucoup de choses sur l’alcool, les vapes et le cannabis – en soirée, sur internet, de la part des plus âgés. Certaines sont vraies, beaucoup ne le sont pas. Ici, tu vérifies ce qu’il en est."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Info ou intox ? Coche ce que tu penses.",
+          "hinweis": "Après la solution, tu corriges avec une autre couleur. Se tromper fait partie du jeu."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Info",
+            "Intox"
+          ],
+          "items": [
+            "1  Les vapes, c’est juste de la vapeur d’eau aromatisée.",
+            "2  Un café ou une douche froide font vite redevenir sobre.",
+            "3  Les jeunes supportent en général moins d’alcool que les adultes.",
+            "4  Le cannabis est une plante, donc inoffensif.",
+            "5  Quand on commence jeune le cannabis, on devient plus facilement dépendant que quand on commence plus tard.",
+            "6  La plupart des jeunes de mon âge boivent de l’alcool tous les week-ends.",
+            "7  La nicotine crée vite une dépendance, encore plus vite chez les jeunes.",
+            "8  Au Luxembourg, le cannabis est désormais autorisé pour tout le monde."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Équipes d’experts : lis « Le cerveau en travaux » et l’encadré de ton équipe. Souligne la phrase que tu veux retenir."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Le cerveau en travaux",
+              "punkte": [
+                "Jusqu’au milieu de la vingtaine, le cerveau est remanié. Le frein derrière le front – planifier, peser, s’arrêter – est le dernier à être terminé.",
+                "Le système de récompense réagit particulièrement fort à l’adolescence. Les sensations fortes et la reconnaissance se ressentent plus intensément.",
+                "L’alcool, la nicotine et le cannabis agissent exactement là. Un cerveau jeune s’y habitue donc plus vite."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Nicotine : cigarette, vape, snus",
+              "punkte": [
+                "La nicotine crée vite une dépendance, encore plus vite chez les jeunes.",
+                "La plupart des vapes contiennent de la nicotine, souvent beaucoup. La « vapeur » n’est pas de la vapeur d’eau, mais un brouillard de nicotine, d’arômes et d’autres substances.",
+                "Le snus et les sachets de nicotine se placent sous la lèvre. La nicotine passe par la bouche dans le sang et crée aussi une dépendance."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Alcool",
+              "punkte": [
+                "Détend d’abord, puis ralentit, rend hésitant et imprudent. Les réflexes et le jugement se dégradent.",
+                "Les jeunes supportent moins que les adultes. Une intoxication alcoolique peut venir vite – jusqu’à la perte de connaissance.",
+                "Seul le temps élimine l’alcool. Boire souvent beaucoup peut nuire à la mémoire et à la concentration."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Cannabis",
+              "punkte": [
+                "Le THC, la substance active, perturbe la mémoire, l’attention et les réflexes, souvent encore des heures plus tard.",
+                "Plus on commence jeune, plus on devient facilement dépendant : environ une personne sur six parmi celles qui commencent à l’adolescence.",
+                "Le cannabis peut déclencher une forte angoisse et, chez les personnes prédisposées, une psychose. Le cannabis d’aujourd’hui est souvent bien plus fort qu’avant."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Estime un peu : sur 10 jeunes de ton âge, combien ont, au cours des 30 derniers jours …",
+          "hinweis": "Coche ton estimation (sur 10). Le chiffre de l’étude, tu le marques ensuite avec l’autre couleur."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "0–2",
+            "3–4",
+            "5–6",
+            "7–8",
+            "9–10"
+          ],
+          "items": [
+            "… bu de l’alcool ?",
+            "… fumé ou vapoté ?",
+            "… consommé du cannabis ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Une phrase que je ne crois plus à partir d’aujourd’hui :"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Les autres en font moins que tu ne le crois.",
+          "text": "La plupart des jeunes de ton âge ne fument pas, ne vapotent pas et ne consomment pas de cannabis, et la plupart ne boivent pas ou rarement. Quand on croit que tout le monde le fait, on se sent plus vite sous pression – et on suit plus facilement."
+        },
+        {
+          "art": "notfall",
+          "text": "Des questions ou des soucis ? Voici où trouver de l’aide",
+          "eintraege": [
+            {
+              "name": "Urgences : secours – en cas de perte de connaissance ou d’intoxication",
+              "nummer": "112"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SePAS du lycée, médecin scolaire",
+              "nummer": "au lycée"
+            },
+            {
+              "name": "Service addictions au Luxembourg (à compléter) : ______________",
+              "nummer": "______________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent les principaux effets de l’alcool, de la nicotine et du cannabis sur le cerveau jeune, testent huit affirmations et comparent leurs estimations aux vrais chiffres.",
+        "ablauf": [
+          "Avant l’apport : exercice 1 seul, cocher (3 min), sans solution.",
+          "Exercice 2 en trois équipes d’experts (12 min) : « Le cerveau en travaux » et un autre encadré, à expliquer en trois phrases.",
+          "Après la pause : se placer sur la ligne info – incertain – intox, puis corriger l’exercice 1 au deuxième stylo. Solution : info 3, 5, 7 ; intox 1, 2, 4, 6, 8.",
+          "Exercice 3 sur la ligne d’estimation, puis chiffre de l’étude (ex. HBSC Luxembourg, cherché d’avance) en 2e couleur.",
+          "Exercice 4 pendant le Réckbléck, lecture facultative."
+        ],
+        "hintergrund": "Le cerveau est en chantier jusqu’au milieu de la vingtaine ; beaucoup d’alcool et de cannabis vont alors de pair avec moins de mémoire et d’attention (Squeglia et al., 2009). Débuter jeune le cannabis rend bien plus souvent dépendant, environ une personne sur six (Volkow et al., 2014). Les vapes ne sont pas de la vapeur d’eau, et la nicotine rend vite dépendant (US Surgeon General, 2016). Croire que tous le font pousse à suivre ; rectifier les normes réduit la consommation (Perkins, 2002). Les images choc aident peu sans piste d’action (Peters, Ruiter & Kok, 2013).",
+        "quellen": [
+          "Squeglia, L. M., Jacobus, J. & Tapert, S. F. (2009). The influence of substance use on adolescent brain development. Clinical EEG and Neuroscience, 40(1), 31–38.",
+          "Volkow, N. D., Baler, R. D., Compton, W. M. & Weiss, S. R. B. (2014). Adverse health effects of marijuana use. New England Journal of Medicine, 370(23), 2219–2227.",
+          "U.S. Department of Health and Human Services (2016). E-Cigarette Use Among Youth and Young Adults: A Report of the Surgeon General. Atlanta, GA: Centers for Disease Control and Prevention.",
+          "Perkins, H. W. (2002). Social norms and the prevention of alcohol misuse in collegiate contexts. Journal of Studies on Alcohol, Supplement 14, 164–172.",
+          "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31."
+        ],
+        "differenzierung": {
+          "leichter": "Affirmations 1 à 4 et un encadré ; l’adulte lit à voix haute.",
+          "schwerer": "Pour une intox, trouver d’où elle vient et à qui elle profite."
+        },
+        "impulse": [
+          "Quelle intox résiste le mieux – et pourquoi ?",
+          "D’où viennent vos estimations ?"
+        ],
+        "tipps": [
+          "Pas d’images d’organes malades ni de personnes ivres : les faits valent mieux que la peur.",
+          "Inscrire d’abord le service spécialisé."
+        ],
+        "achtung": "Pas de questions sur la consommation. Consommation dangereuse ou dépendance en famille : entretien, direction compétente (responsable) informée le jour même.",
+        "material": "Feuille, 2 stylos, panneaux"
+      }
     }
   },
   {
@@ -429,6 +601,191 @@
         "achtung": "Keine Partygeschichten abfragen; Berührung nur freiwillig. Hinweise auf Übergriffe oder gefährlichen Konsum: die zuständige Leitung (Responsable) am selben Tag informieren.",
         "material": "Blatt, Schere, Klebefolie, Matten"
       }
+    },
+    "fr": {
+      "titel": "Mon plan B",
+      "untertitel": "Dire non, s’en sortir – et aider en cas d’urgence",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "La pression arrive rarement avec un préavis. Souvent, il suffit d’un gobelet dans la main ou d’une vape qui circule en rond. Quand on sait d’avance ce qu’on dira et comment s’en sortir, on y va plus sereinement."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ce serait difficile comment pour toi ? Coche pour chaque situation.",
+          "hinweis": "C’est toi qui décides de ce que tu partages. La feuille n’est pas ramassée."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "facile",
+            "moyen",
+            "difficile"
+          ],
+          "items": [
+            "Anniversaire chez Mila : quelqu’un te met dans la main un gobelet d’alcool. « Fais pas d’histoires. »",
+            "Vendredi soir au parc : une vape circule en rond. C’est à toi, et tout le monde regarde.",
+            "Chat de groupe : « Samedi chez Liam, il amène de quoi fumer un joint. Qui en est ? » Sept ont déjà dit oui.",
+            "À la kermesse : des amis plus âgés de ton cousin te tendent un joint. « À 14 ans, moi aussi j’en étais. »",
+            "Après la fête, ton amie veut rentrer seule à pied. Elle a mal au cœur, elle titube : « Ça va aller. »"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Quatre façons de dire non",
+          "punkte": [
+            "Le disque rayé : répéter calmement la même phrase – « Non, merci. »",
+            "Non plus proposition : « Non. Mais je me prends un Coca – tu viens ? »",
+            "Avec humour : « Laisse tomber, j’ai encore besoin de mes neurones pour l’interro de maths. »",
+            "Simplement partir : tu n’as pas à te justifier. Un vrai ami accepte un non."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta phrase pour la situation qui serait la plus difficile pour toi."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Quand, à une fête, quelqu’un me met un gobelet dans la main,",
+              "dann": "je dis « Non, j’ai déjà quelque chose », je le pose et je prends un Coca."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trois façons de s’en sortir : entoure ce que tu veux utiliser et note ce que tu dois clarifier avant."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Mot de code",
+              "text": "Un mot que seuls toi et une personne de confiance connaissez. Quand tu l’envoies, elle vient te chercher – les questions viendront demain."
+            },
+            {
+              "titel": "Se faire chercher",
+              "text": "Convenir d’avance de qui vient te chercher, même tard. Téléphone chargé, numéro enregistré."
+            },
+            {
+              "titel": "Arriver et partir à deux",
+              "text": "Avec une amie ou un ami : on veille l’un sur l’autre, personne ne rentre seul."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Chaîne d’urgence : lis ce que tu fais quand quelqu’un est très ivre ou ne réagit plus.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Interpeller",
+              "text": "Interpeller à voix haute, secouer doucement par les épaules. Pas de réaction ? Appeler à l’aide à voix haute."
+            },
+            {
+              "titel": "Appeler le 112",
+              "text": "Dire où vous êtes et ce qui se passe. Rester au téléphone jusqu’à savoir quoi faire."
+            },
+            {
+              "titel": "Position latérale",
+              "text": "Si la personne respire normalement, tu la tournes sur le côté. Ainsi, les voies respiratoires restent dégagées."
+            },
+            {
+              "titel": "Rester là",
+              "text": "Couvrir, surveiller la respiration, ne jamais laisser seule – jusqu’à l’arrivée des secours."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Ça n’aide pas :",
+          "text": "douche froide, café, air frais, faire vomir ou laisser la personne dormir seule. Et : appeler le 112, c’est faire ce qu’il faut – même si quelque chose a mal tourné avant."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta carte plan B : la remplir, découper les deux moitiés, les coller dos à dos et l’avoir toujours sur toi."
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 138,
+          "karten": [
+            {
+              "titel": "Mon plan B",
+              "text": "Mot de code : ______________\nQui vient me chercher : ______________\nNuméro : ______________\nJ’y vais avec : ______________"
+            },
+            {
+              "titel": "En cas d’urgence",
+              "text": "1  Interpeller, secouer doucement par les épaules\n2  Appeler le 112\n3  La personne respire ? Position latérale :\nbras en l’air, main contre la joue, genou plié,\nla tourner vers soi, tête en arrière\n4  Rester là, couvrir, ne jamais laisser seule"
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Aide – en cas d’urgence et en cas de soucis",
+          "eintraege": [
+            {
+              "name": "Urgences : secours – en cas de perte de connaissance ou d’intoxication",
+              "nummer": "112"
+            },
+            {
+              "name": "Police – en cas de violence ou de menace",
+              "nummer": "113"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Service addictions au Luxembourg (à compléter) : ______________",
+              "nummer": "______________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes évaluent des situations de pression, formulent leur phrase pour dire non, établissent un plan B et connaissent la chaîne d’urgence avec la position latérale.",
+        "ablauf": [
+          "Lire les situations, exercice 1 seul (3 min), sans lecture à voix haute ; puis discuter une situation par deux.",
+          "Rappeler les façons de dire non de l’année 1, exercice 2 seul ; exercice 3 : convenir à l’avance du mot de code et du retour avec un adulte.",
+          "Exercice 4 pendant l’exercice de premiers secours : montrer la position latérale sur la deuxième personne encadrante ou un mannequin, puis exercice volontaire.",
+          "Pour finir, exercice 5 : remplir la carte plan B, la découper, la coller."
+        ],
+        "hintergrund": "Entre pairs, les adolescents prennent plus de risques (Gardner & Steinberg, 2005) ; la pression agit donc souvent discrètement. Les plans « si … alors » aident à agir comme prévu au moment décisif (Gollwitzer, 1999), et un plan B avec mot de code, récupération et accompagnement offre une sortie sans perte de face. En cas d’urgence, les témoins hésitent souvent, car la responsabilité se dilue (Latané & Darley, 1970) ; une chaîne d’urgence exercée montre ce que chacun peut faire. La position latérale suit les recommandations de l’European Resuscitation Council (Zideman et al., 2021) ; l’exercice ne remplace pas un cours de premiers secours.",
+        "quellen": [
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts.",
+          "Zideman, D. A., Singletary, E. M., Borra, V., Cassan, P., Cimpoesu, C. D., De Buck, E., Djärv, T., Handley, A. J., Klaassen, B., Meyran, D., Oliver, E. & Poole, K. (2021). European Resuscitation Council Guidelines 2021: First aid. Resuscitation, 161, 270–290."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les exercices 1 et 3 et la carte ; phrases pour dire non au tableau.",
+          "schwerer": "Écrire un plan B quand la pression vient de la meilleure amie."
+        },
+        "impulse": [
+          "Qu’est-ce qui aide à dire non en premier ?",
+          "Pourquoi, dans un grand groupe, personne n’appelle-t-il souvent ?"
+        ],
+        "tipps": [
+          "La carte plan B a la taille d’une carte bancaire ; plastifiée, elle dure.",
+          "Exercer la position latérale avec consentement ; démonstration sur la deuxième personne encadrante ou un mannequin, jamais sur des jeunes."
+        ],
+        "achtung": "Ne pas interroger sur les histoires de fête ; contact physique volontaire seulement. Indices d’agression ou de consommation dangereuse : informer la direction compétente (responsable) le jour même.",
+        "material": "Feuille, ciseaux, film adhésif, tapis"
+      }
     }
   },
   {
@@ -642,6 +999,181 @@
         "achtung": "Aufgabe 4 nicht einsammeln. Hinweise auf regelmäßigen Konsum oder Sucht in der Familie: Einzelgespräch, die zuständige Leitung (Responsable) am selben Tag informieren.",
         "material": "Blatt, Material für vier Stationen"
       }
+    },
+    "fr": {
+      "titel": "Un skill à effets secondaires",
+      "untertitel": "Ce qu’on cherche en consommant – et ce qui apporte la même chose sans nuire",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Personne ne boit, ne fume ou ne prend du cannabis sans raison. Le plus souvent, on cherche quelque chose : du calme, du courage, un sentiment d’appartenance, de la nouveauté. La substance le fournit vite – mais elle fait payer un prix."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que cherchent les quatre ? Relie chaque personne à sa raison.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Qui ?",
+            "Que cherche la personne ?"
+          ],
+          "links": [
+            "Léa boit deux verres avant de danser. À jeun, elle n’ose pas.",
+            "Samuel vapote à chaque récré depuis qu’il est dans la nouvelle classe – comme sa bande.",
+            "Diogo a tant entendu parler du cannabis qu’il veut savoir ce que ça fait.",
+            "Nora fume en cachette le soir à la fenêtre, quand c’est de nouveau bruyant chez elle."
+          ],
+          "rechts": [
+            "Curiosité",
+            "Évacuer le stress et les émotions",
+            "Prendre du courage",
+            "Appartenir au groupe"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Compare pour l’une des quatre personnes : qu’apporte la substance – et qu’est-ce qui apporte la même chose sans effets secondaires ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ce que la personne cherche",
+            "Ce qu’apporte la substance",
+            "Ce que ça coûte",
+            "Un skill qui apporte la même chose"
+          ],
+          "breiten": [
+            1.3,
+            1.1,
+            1.5,
+            1.5
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Nora : du calme quand il y a du bruit à la maison",
+            "Elle se calme un court instant.",
+            "La nicotine crée une nouvelle agitation, coûte de l’argent, la dispute reste.",
+            "Casque sur les oreilles, sortir prendre l’air, écrire à sa tante"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Pourquoi consommer n’est pas un bon skill",
+          "punkte": [
+            "Ça agit vite, mais seulement un court moment. Ensuite, le sentiment revient souvent plus fort.",
+            "Le problème reste, et souvent d’autres s’y ajoutent : ennuis, argent, école, santé.",
+            "Le corps s’habitue : il en faut plus pour le même effet.",
+            "Un skill s’améliore avec l’entraînement. La consommation agit de moins en moins."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle station garderais-tu ? Coche et ajoute tes propres idées."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Pack froid, puis inspirer 4, expirer 6",
+            "une chanson qui me réconforte",
+            "sentir ses pieds, expirer, parler à quelqu’un",
+            "rester avec les autres : « Je viens, mais sans. »",
+            "goûter du nouveau, les yeux fermés",
+            "surfer sur l’envie : l’observer sans y céder"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton chemin à la place de la consommation : un plan pour un moment que tu connais.",
+          "hinweis": "C’est toi qui décides de ce que tu partages. La feuille t’appartient et n’est pas ramassée."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Quand, après une dispute à la maison, je veux juste décrocher,",
+              "dann": "je fais un tour avec mon casque et j’écris ensuite à ma cousine."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Quand ça devient trop",
+          "text": "Ces signes valent pour les amis, les frères et sœurs, les adultes – et pour toi-même :",
+          "punkte": [
+            "Il en faut de plus en plus pour que ça agisse.",
+            "On y pense souvent et on organise sa journée autour.",
+            "On consomme seul ou en cachette pour faire disparaître des émotions.",
+            "L’école, les amis ou les loisirs en souffrent – et on n’arrête pas pour autant."
+          ]
+        },
+        {
+          "art": "text",
+          "text": "En parler avec quelqu’un, ce n’est pas une trahison, mais un premier pas – même quand il s’agit de ta mère, de ton père ou de tes frères et sœurs."
+        },
+        {
+          "art": "notfall",
+          "text": "Aide – pour toi et si tu t’inquiètes pour quelqu’un",
+          "eintraege": [
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SePAS du lycée – tu peux prendre rendez-vous toi-même",
+              "nummer": "au lycée"
+            },
+            {
+              "name": "Service addictions, aussi pour les proches (à compléter) : ____________",
+              "nummer": "______________"
+            },
+            {
+              "name": "Urgences : secours – en cas de perte de connaissance ou d’intoxication",
+              "nummer": "112"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent ce que cherche la consommation, la comparent à des skills, se fixent un chemin pour les moments difficiles et connaissent les signes d’alerte et l’aide.",
+        "ablauf": [
+          "Exercice 1 à deux (5 min). Solution : Léa – courage, Samuel – appartenance, Diogo – curiosité, Nora – évacuer stress et émotions.",
+          "Schéma au tableau « Skill à effets secondaires », puis exercice 2 seul (8 min).",
+          "Après les quatre stations, exercice 3 (2 min).",
+          "Lire l’encadré « Quand ça devient trop », nommer le service spécialisé ; exercice 4 seul à la fin, sans lecture."
+        ],
+        "hintergrund": "La consommation remplit des fonctions : curiosité, appartenance, désinhibition, atténuation des émotions. Boire pour atténuer ses émotions entraîne plus de difficultés (Cooper, 1994) ; la cause reste (Lazarus & Folkman, 1984). L’agitation qu’apaise une cigarette vient surtout du sevrage de nicotine (Parrott, 1999). Les skills répondent au même besoin sans nuire, tel le surf sur l’envie (Linehan, 2015), qui a aidé des fumeurs à fumer moins (Bowen & Marlatt, 2009). Les programmes de compétences valent mieux que la simple information (Faggiano et al., 2014).",
+        "quellen": [
+          "Cooper, M. L. (1994). Motivations for alcohol use among adolescents: Development and validation of a four-factor model. Psychological Assessment, 6(2), 117–128.",
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Parrott, A. C. (1999). Does cigarette smoking cause stress? American Psychologist, 54(10), 817–820.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Bowen, S. & Marlatt, A. (2009). Surfing the urge: Brief mindfulness-based intervention for college student smokers. Psychology of Addictive Behaviors, 23(4), 666–671.",
+          "Faggiano, F., Minozzi, S., Versino, E. & Buscemi, D. (2014). Universal school-based prevention for illicit drug use. Cochrane Database of Systematic Reviews, (12), CD003020."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 1 à l’oral ; exercice 2 : seulement la première et la dernière colonne.",
+          "schwerer": "Noter comment des amis pourraient aider l’une des quatre personnes."
+        },
+        "impulse": [
+          "Quel besoin se cache derrière ces raisons ?",
+          "Que diriez-vous à Nora si elle était votre amie ?"
+        ],
+        "tipps": [
+          "Inscrire le service spécialisé avant de photocopier.",
+          "Crédible : la consommation apporte un peu sur le moment et coûte cher à la longue."
+        ],
+        "achtung": "Ne pas ramasser l’exercice 4. Consommation régulière ou dépendance en famille : entretien individuel, direction compétente (responsable) informée le jour même.",
+        "material": "Feuille, matériel pour quatre stations"
+      }
     }
   },
   {
@@ -854,6 +1386,181 @@
         ],
         "achtung": "Keine Methoden, keine Medienfälle. Bei Suizidgedanken oder Selbstverletzung: direkt nachfragen, nicht allein lassen, sofort die zuständige Leitung (Responsable) und den SePAS informieren; akute Gefahr: 112.",
         "material": "Blatt, Ampel-Schilder, Plakat"
+      }
+    },
+    "fr": {
+      "titel": "Quand tu t’inquiètes pour quelqu’un",
+      "untertitel": "Regarder, aborder, écouter – et faire venir un adulte",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Souvent, ce sont les amis qui remarquent les premiers que quelqu’un va vraiment mal. Tu n’as pas à gérer ça sans aide. Mais tu peux beaucoup : regarder, aborder, écouter – et chercher de l’aide."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Le feu des signes d’alerte",
+          "punkte": [
+            "Vert – une mauvaise journée : être là, écouter, demander.",
+            "Orange – plus qu’un coup de mou : aborder le sujet et rester présent.",
+            "Rouge – danger : chercher un adulte aujourd’hui encore ; en cas de danger immédiat, le 112."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mauvaise journée ou plus ? Coche une couleur pour chaque situation."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Vert",
+            "Orange",
+            "Rouge"
+          ],
+          "items": [
+            "Mathis a perdu la finale et est de mauvaise humeur toute la soirée. Le lendemain, il rigole de nouveau à l’entraînement.",
+            "Zoé annule tous les rendez-vous depuis des semaines, reste seule à la récré et a l’air constamment fatiguée.",
+            "Elias écrit la nuit dans le chat : « De toute façon, tout est absurde. Bientôt, ça vous sera égal. »",
+            "Sofia s’est séparée de son copain et pleure à la récré. Le soir, elle en parle avec sa sœur.",
+            "Luca mange à peine, ses notes chutent, et il dit souvent : « De toute façon, personne ne peut m’aider. »",
+            "Aylin te raconte qu’elle se fait parfois du mal quand tout devient trop. Tu ne dois le dire à personne.",
+            "Rafael donne ses affaires préférées et dit : « J’en ai plus besoin, de toute façon. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quatre étapes quand tu t’inquiètes : lis-les et réfléchis à celle qui te coûte le plus."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Aborder",
+              "text": "« J’ai remarqué que tu … Comment ça va, vraiment ? »"
+            },
+            {
+              "titel": "Écouter",
+              "text": "Laisser parler, ne pas juger, ne pas donner tout de suite des conseils. « Depuis quand c’est comme ça ? »"
+            },
+            {
+              "titel": "Chercher de l’aide",
+              "text": "Aller ensemble voir un adulte – en cas de rouge, aujourd’hui encore."
+            },
+            {
+              "titel": "Rester présent",
+              "text": "Reprendre des nouvelles quelques jours plus tard. Tu restes un ami ou une amie – pour le reste, des professionnels sont là."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Tu as le droit de demander directement.",
+          "text": "« Est-ce que tu penses à te faire du mal ? » Cette question ne donne l’idée à personne. Elle montre : je peux l’entendre si tu réponds oui. Si la réponse est oui, reste auprès de la personne et fais venir tout de suite un adulte."
+        },
+        {
+          "art": "aufgabe",
+          "text": "La conversation la plus difficile : Jang veut une promesse. Que réponds-tu ?",
+          "hinweis": "Tu n’as rien à promettre que tu ne pourras pas tenir."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Jang",
+              "text": "Je vais te dire quelque chose. Mais promets-moi de ne le dire à personne."
+            },
+            {
+              "wer": "Toi"
+            },
+            {
+              "wer": "Jang",
+              "text": "Alors je n’aurais pas dû t’en parler."
+            },
+            {
+              "wer": "Toi"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Chercher de l’aide, ce n’est pas trahir.",
+          "text": "Un secret qui met quelqu’un en danger est trop lourd à porter pour toi. Tu peux dire : « Je ne peux pas garder ça pour moi, parce que tu comptes pour moi. Mais je ne te laisse pas tomber – on y va ensemble. »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vers qui irais-tu ? Note un adulte que tu peux vraiment joindre."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Un adulte vers qui j’irais : …",
+            "Comment je peux le ou la joindre : …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Et si c’est toi qui te sens ainsi ?",
+          "text": "Alors les mêmes étapes valent pour toi : tu as le droit de chercher de l’aide – auprès d’une personne de confiance, au SePAS ou au téléphone. C’est toi qui décides de ce que tu partages ; cette feuille t’appartient."
+        },
+        {
+          "art": "notfall",
+          "text": "Aide – aussi si tu t’inquiètes pour quelqu’un",
+          "eintraege": [
+            {
+              "name": "Urgences – si quelqu’un est en danger immédiat",
+              "nummer": "112"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – aide au téléphone en cas de crise, anonyme",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "SePAS du lycée – tu peux prendre rendez-vous toi-même",
+              "nummer": "au lycée"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent les signes d’alerte d’une mauvaise journée, connaissent quatre étapes pour aider une amie ou un ami et savent que chercher de l’aide n’est pas trahir.",
+        "ablauf": [
+          "Exercice 1 seul (4 min), puis se placer devant les panneaux du feu. Solution : vert 1 et 4, orange 2 et 5 (pour 5, rouge défendable), rouge 3, 6 et 7.",
+          "Exercice 2 et « Tu as le droit de demander directement » (8 min) : poser la question une fois, calmement.",
+          "Après le fishbowl – Jang n’est joué que par l’adulte qui anime – exercice 3 seul (4 min).",
+          "Exercice 4 et encadré d’aide (5 min) : inscrire un adulte joignable."
+        ],
+        "hintergrund": "En crise, les adolescents se confient plutôt à leurs pairs qu’à des professionnels (Rickwood et al., 2005). La feuille suit les premiers secours en santé mentale : aborder, écouter sans juger, orienter vers l’aide professionnelle (Kitchener & Jorm, 2002) ; la version pour adolescents renforce l’envie d’aider et la confiance (Hart et al., 2018). Poser directement la question des pensées suicidaires ne les renforce pas (Dazzi et al., 2014). L’automutilation vise souvent à apaiser des émotions insupportables : signe d’alerte sérieux (Hawton et al., 2012). Pas de méthodes ni de cas (OMS, 2017).",
+        "quellen": [
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Kitchener, B. A. & Jorm, A. F. (2002). Mental health first aid training for the public: Evaluation of effects on knowledge, attitudes and helping behavior. BMC Psychiatry, 2, 10.",
+          "Hart, L. M., Morgan, A. J., Rossetto, A., Kelly, C. M., Mackinnon, A. & Jorm, A. F. (2018). Helping adolescents to better support their peers with a mental health problem: A cluster-randomised crossover trial of teen Mental Health First Aid. Australian & New Zealand Journal of Psychiatry, 52(7), 638–651.",
+          "Dazzi, T., Gribble, R., Wessely, S. & Fear, N. T. (2014). Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361–3363.",
+          "Hawton, K., Saunders, K. E. A. & O’Connor, R. C. (2012). Self-harm and suicide in adolescents. The Lancet, 379(9834), 2373–2382.",
+          "World Health Organization (2017). Preventing Suicide: A Resource for Media Professionals (update 2017). Genf: WHO."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 1 avec quatre situations ; à l’exercice 3, choisir entre deux réponses.",
+          "schwerer": "Planifier ce qu’on fait si Elias écrit ça la nuit."
+        },
+        "impulse": [
+          "Qu’est-ce qui rend si difficile d’aborder quelqu’un ?",
+          "Qui vous aide quand aider devient trop ?"
+        ],
+        "tipps": [
+          "L’allusion au suicide : toujours l’adulte qui anime.",
+          "Faire enregistrer les numéros dans le téléphone."
+        ],
+        "achtung": "Ni méthodes ni cas médiatisés. Suicide ou automutilation : demander directement, ne pas laisser seul, informer aussitôt la direction compétente (responsable) et le SePAS ; urgence : 112.",
+        "material": "Feuille, panneaux du feu, affiche"
       }
     }
   }

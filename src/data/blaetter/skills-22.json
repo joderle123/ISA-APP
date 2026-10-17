@@ -169,6 +169,144 @@
         "achtung": "Nicht nach eigenen Verlusten fragen. Bei anhaltendem Rückzug, Drogen oder Sätzen wie „Ich will bei ihm sein“: am selben Tag Einzelgespräch, nichts versprechen, die zuständige Leitung (Responsable) informieren, Schutzkonzept; bei akuter Gefahr 112, nicht allein lassen.",
         "material": "Plakat, Malerkrepp, Satzkarten"
       }
+    },
+    "fr": {
+      "titel": "Quand quelque chose manque",
+      "untertitel": "Une perte peut prendre bien des formes – et chacun traverse le deuil à sa manière.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Que peuvent perdre des personnes de ton âge ? Complète la collecte du groupe.",
+          "hinweis": "Tu n’as rien à noter de ta propre vie."
+        },
+        {
+          "art": "mindmap",
+          "mitte": "Perte",
+          "aeste": [
+            "une personne meurt",
+            "les parents se séparent",
+            "déménagement dans un autre pays",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Chacune de ces pertes peut faire naître du chagrin. Personne n’a à prouver que sa perte est « assez grande »."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Tiago",
+          "text": "Cet été, l’avô de Tiago est mort, son grand-père au Portugal. Tiago (15 ans) n’a pas pu aller à l’enterrement, parce que l’école avait déjà repris. Dans la classe, presque personne ne le sait. Tiago va à l’entraînement, fait des blagues, révise pour le devoir de maths. Dans le bus, il écoute les anciens messages vocaux de son avô – toujours les mêmes. Parfois, il rit à l’entraînement et se sent mal ensuite.",
+          "bild": "figur:ben:traurig"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Le pendule du deuil",
+          "text": "Les personnes en deuil oscillent entre deux côtés : le manque et le quotidien. Les deux font partie du chemin. Qui ne fait que ressentir le manque s’épuise. Qui ne fait que continuer repousse son deuil. Rire n’est pas une trahison – c’est une pause."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui pourrait faire du bien à Tiago de chaque côté ? Écris deux idées pour chacun."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Le manque",
+              "beispiel": "poser une photo de son avô",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Le quotidien",
+              "beispiel": "aller à l’entraînement avec Léa",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ce qui aide le plus souvent les personnes en deuil",
+          "punkte": [
+            "être là, même sans trouver les bons mots : « Je ne sais pas quoi dire – mais je suis là. »",
+            "demander plutôt que deviner : « Tu as envie d’en parler – ou plutôt de faire autre chose ? »",
+            "une aide petite et concrète : accompagner, réviser ensemble, faire quelque chose de normal",
+            "rester présent – même après des semaines et les jours difficiles comme les anniversaires"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Léa vient d’apprendre ce qui s’est passé. Écris son premier message à Tiago – et sa réponse au sien.",
+          "hinweis": "Court et sincère suffit. Un bon message ne pousse pas Tiago à répondre tout de suite."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Léa"
+            },
+            {
+              "wer": "Tiago",
+              "text": "Merci. C’est vraiment dur en ce moment."
+            },
+            {
+              "wer": "Léa"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Quand le deuil demande plus d’aide",
+          "text": "Le deuil n’est pas une maladie. Mais personne n’a à le porter seul. Parle à un adulte si quelqu’un …",
+          "punkte": [
+            "dort, mange ou va à l’école à peine pendant des semaines,",
+            "prend de l’alcool ou des drogues pour ne plus rien ressentir,",
+            "dit vouloir ne plus vivre ou rejoindre la personne décédée – dans ce cas, tout de suite."
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent les nombreuses formes de perte, comprennent le pendule du deuil et s’exercent à soutenir des amis en deuil.",
+        "ablauf": [
+          "Tâche 1 (8 min) : collecter au tableau, puis reporter sur la fiche – en termes généraux, sans rien tirer de sa propre vie.",
+          "Lire l’histoire, placer la semaine de Tiago sur la ligne du pendule (unité 17, étape 4).",
+          "Tâche 2 (5 min) : deux idées par côté. Souligner : les deux côtés sont sains.",
+          "Après le parcours de phrases et le jeu de rôle : lire l’encadré de conseils, tâche 3 seul (5 min).",
+          "Lire l’encadré « Quand le deuil demande plus d’aide », montrer les services à contacter."
+        ],
+        "hintergrund": "Selon le modèle du processus dual de Stroebe et Schut (1999), les personnes en deuil oscillent entre la perte (ressentir le manque, se souvenir, laisser venir la douleur) et la restauration (quotidien, nouveaux rôles, pauses dans le deuil). Ce qui est sain, c’est le mouvement entre les deux côtés, non une suite fixe de phases. Worden (2009) décrit le deuil comme des tâches – jusqu’à trouver un lien durable et continuer à vivre. À l’adolescence, les pairs sont souvent les premières personnes vers qui l’on se tourne (Bagwell & Schmidt, 2011) ; c’est pourquoi la fiche exerce un soutien concret.",
+        "quellen": [
+          "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
+          "Worden, J. W. (2009). Grief Counseling and Grief Therapy (4th ed.). New York: Springer.",
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Tâche 2 à l’oral ; pour la tâche 3, reprendre une phrase de l’encadré de conseils.",
+          "schwerer": "Décrire à quoi ressemble le pendule après un déménagement."
+        },
+        "impulse": [
+          "Pourquoi rire donne-t-il souvent mauvaise conscience après coup ?",
+          "De quoi les personnes en deuil ont-elles encore besoin après des semaines ?"
+        ],
+        "tipps": [
+          "Les dates anniversaires sont difficiles : un message aide.",
+          "Chacun vit le deuil à sa façon ; toutes les façons sont légitimes."
+        ],
+        "achtung": "Ne pas interroger sur ses pertes. Repli durable, drogues ou « Je veux être avec lui » : entretien individuel le jour même, ne rien promettre, informer le ou la responsable (concept de protection) ; danger aigu : 112, ne pas laisser la personne seule.",
+        "material": "Affiche, ruban, cartes de phrases"
+      }
     }
   },
   {
@@ -383,6 +521,186 @@
         "achtung": "Scham hängt oft an Gewalt, Übergriffen, Mobbing oder Armut. Nichts Persönliches erfragen. Bei Andeutungen: Einzelgespräch, nichts versprechen, die zuständige Leitung (Responsable) am selben Tag informieren, Schutzkonzept; bei akuter Gefahr 112, nicht allein lassen.",
         "material": "Malerkrepp, Gedankenkarten, leere Karten"
       }
+    },
+    "fr": {
+      "titel": "Honte ou culpabilité ?",
+      "untertitel": "La culpabilité dit : j’ai mal agi. La honte dit : je suis une mauvaise personne. La différence décide de la suite.",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Culpabilité : « J’ai … »",
+              "punkte": [
+                "Le regard porte sur l’acte",
+                "Sentiment : agitation, mauvaise conscience",
+                "Élan : s’excuser, réparer",
+                "Conséquence : clarification, confiance"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Honte : « Je suis … »",
+              "punkte": [
+                "Le regard porte sur toute la personne",
+                "Sentiment : visage brûlant, envie de disparaître",
+                "Élan : se cacher – ou attaquer",
+                "Conséquence : repli, encore plus de honte"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Le sentiment correspond-il aux faits ?",
+          "punkte": [
+            "J’ai vraiment fait du tort à quelqu’un : la culpabilité est justifiée. Ce qui aide alors, c’est réparer – pas m’accabler.",
+            "On se moque de moi, on m’humilie ou on me blesse, mais je n’ai rien fait de mal : la honte n’est pas justifiée, la faute est du côté des autres. Ce qui aide alors : se redresser, ne pas se cacher, en parler à quelqu’un.",
+            "Une erreur ne fait pas de moi une mauvaise personne."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ici, la culpabilité est-elle justifiée – ou est-ce la honte qui ne l’est pas ? Coche ce qui aide la personne."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Culpabilité justifiée : réparer",
+            "Honte injustifiée : se redresser"
+          ],
+          "items": [
+            "Yusuf se fait moquer à cause de son accent et a honte.",
+            "Liam a insulté la mère d’Elias pendant une dispute et le regrette.",
+            "Aylin a honte parce que sa famille a peu d’argent.",
+            "Rafael a été pris en train de copier et a honte.",
+            "Zoé trébuche sur scène, une vidéo circule."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La spirale de la honte : voici comment elle tourne chez Mathis. Où pourrait-il en sortir ? Écris deux sorties."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Quelque chose tourne mal",
+              "text": "Mathis publie dans le groupe de la classe un chat privé avec Zoé."
+            },
+            {
+              "titel": "« Je suis nul. »",
+              "text": "De « j’ai fait » on passe à « je suis »."
+            },
+            {
+              "titel": "Se cacher, attaquer",
+              "text": "« C’était juste pour rire. » Il bloque Zoé."
+            },
+            {
+              "titel": "Encore plus seul",
+              "text": "Tout le monde parle de lui, la honte grandit."
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Sortie 1 : …",
+            "Sortie 2 : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie la réparation de Mathis en quatre étapes.",
+          "hinweis": "Une bonne excuse ne contient ni « mais » ni « si »."
+        },
+        {
+          "art": "schritte",
+          "stil": "liste",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Nommer",
+              "text": "Qu’est-ce que j’ai fait exactement ?"
+            },
+            {
+              "titel": "Reconnaître",
+              "text": "Qu’est-ce que cela a provoqué chez Zoé ?"
+            },
+            {
+              "titel": "Réparer",
+              "text": "Que fais-je concrètement – et d’ici quand ?"
+            },
+            {
+              "titel": "Faire autrement",
+              "text": "Que ferai-je la prochaine fois ?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et pour toi : une phrase que tu peux te dire quand la honte arrive.",
+          "hinweis": "Cela reste privé. Pense à la façon dont tu parlerais à un ami ou à une amie proche."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "J’ai peut-être fait une erreur, mais …",
+            "Ce que je dirais maintenant à un ami ou à une amie : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "La honte qui ne t’appartient pas",
+          "text": "Si quelqu’un t’humilie, te menace ou te fait du mal, la faute revient à cette personne, pas à toi. En parler est difficile, mais ça aide : avec une personne de confiance, le SePAS ou, de façon anonyme, le Kanner- a Jugendtelefon."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent culpabilité et honte, vérifient si un sentiment correspond aux faits et planifient une réparation plutôt qu’une dévalorisation de soi.",
+        "ablauf": [
+          "Lire les encadrés (5 min) ; exemples proposés par le groupe, pas tirés de la vie personnelle.",
+          "Tâche 1 (8 min). Solution : pour Yusuf, Aylin et Zoé, la honte est injustifiée ; pour Liam et Rafael, la culpabilité est justifiée.",
+          "Tâche 2 après la spirale au sol (unité 18, étape 6).",
+          "Tâche 3 après le jeu de rôle « Rembobiner » (5 min).",
+          "Tâche 4 en silence et en privé ; ne pas lire à voix haute, ne pas ramasser."
+        ],
+        "hintergrund": "Selon Tangney et Dearing (2002), la culpabilité porte sur un acte, la honte sur toute la personne. La culpabilité favorise l’empathie et la réparation ; la honte pousse à se cacher, à nier ou à contre-attaquer. L’entraînement aux skills DBT demande si un sentiment correspond aux faits ; quand la honte ne correspond pas, l’action opposée à l’élan aide – se redresser plutôt que se cacher (Linehan, 2015). L’auto-compassion réduit la dévalorisation de soi sans estomper la responsabilité (Neff, 2003). Les étapes de la réparation suivent la pratique restaurative (Zehr, 2002).",
+        "quellen": [
+          "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books."
+        ],
+        "differenzierung": {
+          "leichter": "Tâche 1 à deux ; pour la tâche 3, seulement deux étapes.",
+          "schwerer": "Décrire une spirale de la honte tirée d’une série."
+        },
+        "impulse": [
+          "Pourquoi les gens attaquent-ils quand ils ont honte ?",
+          "Qu’est-ce qui rend une excuse sincère ?"
+        ],
+        "tipps": [
+          "L’adulte qui anime joue toujours la version « honte ».",
+          "« Désolé si … » n’est pas une excuse."
+        ],
+        "achtung": "La honte est souvent liée à la violence, aux agressions, au harcèlement ou à la pauvreté. Ne rien demander de personnel. En cas d’allusions : entretien individuel, ne rien promettre, informer le jour même la direction compétente (responsable), concept de protection ; en cas de danger aigu, 112, ne pas laisser la personne seule.",
+        "material": "Ruban de masquage, cartes de pensées, cartes vierges"
+      }
     }
   },
   {
@@ -568,6 +886,156 @@
         "achtung": "Niemanden fragen, ob er einsam ist. Bei anhaltendem Rückzug oder Sätzen wie „Mich würde eh keiner vermissen“: am selben Tag ansprechen, nichts versprechen, die zuständige Leitung (Responsable) informieren, Schutzkonzept; bei akuter Gefahr 112, nicht allein lassen.",
         "material": "Malerkrepp, Stationskarten, Plakat"
       }
+    },
+    "fr": {
+      "titel": "Être seul, se sentir seul",
+      "untertitel": "Être seul est une situation, se sentir seul est un sentiment. Les deux peuvent changer – pour toi et pour les autres.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Le sentiment de solitude, c’est l’impression que manque la proximité qu’on souhaite. On peut se sentir seul au milieu de la classe – et être très bien seul au bord d’un lac. Ce sentiment est un signal, comme la faim : il dit que nous avons besoin des autres. Ce n’est pas une tare, et presque tout le monde le connaît."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le cercle vicieux de la solitude : voici comment il tourne chez Jang. Où Jang pourrait-il en sortir ? Écris une idée pour deux étapes.",
+          "hinweis": "On peut en sortir par la pensée (« Ils rient peut-être d’autre chose ») ou par le comportement (« Enlever le casque »)."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Je me sens seul",
+              "text": "À l’école, presque personne ne parle à Jang."
+            },
+            {
+              "titel": "Je guette le rejet",
+              "text": "« Ils rient sûrement de moi. »"
+            },
+            {
+              "titel": "Je me replie",
+              "text": "Casque sur les oreilles, regard sur le téléphone."
+            },
+            {
+              "titel": "Les autres viennent moins",
+              "text": "Le sentiment se confirme."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vérifier les pensées de solitude : choisis deux pensées. Qu’est-ce qui pourrait aussi être vrai – et quel serait un petit pas ?"
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Pensées de solitude typiques",
+          "items": [
+            "« Personne ne veut avoir affaire à moi. »",
+            "« Ils rient sûrement de moi. »",
+            "« Si je demande, ils diront non de toute façon. »",
+            "« Je ne suis pas comme les autres. »",
+            "« Les autres vont tous mieux que moi. »"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Pensée de solitude",
+            "Qu’est-ce qui pourrait aussi être vrai ?",
+            "Un petit pas"
+          ],
+          "breiten": [
+            1.7,
+            1.7,
+            1.9
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Personne ne veut avoir affaire à moi.",
+            "Les autres ne me connaissent pas encore vraiment.",
+            "Demander à Yusuf s’il va aussi au basket."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Pour en sortir – les petits pas comptent",
+          "punkte": [
+            "aller là où des gens font quelque chose ensemble : club, maison des jeunes, chorale, journal du lycée",
+            "poser une vraie question à quelqu’un – et rebondir sur sa réponse",
+            "écrire à quelqu’un qu’on a perdu de vue",
+            "garder le contact en ligne, mais proposer aussi de se voir",
+            "dire à un adulte qu’on se sent seul"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Phrases-ponts : écris deux phrases avec lesquelles tu inviterais quelqu’un à se joindre à vous.",
+          "hinweis": "Tu trouveras des idées sur l’affiche des stations."
+        },
+        {
+          "art": "feld",
+          "label": "Mes phrases-ponts",
+          "hoehe": 3.5,
+          "beispiel": "« Cette place est libre ? »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mon petit pas pour la semaine prochaine – pour moi ou pour quelqu’un d’autre.",
+          "hinweis": "Petit et faisable. Cela reste privé."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si mardi, à la cantine,",
+              "dann": "je demande à Elias s’il veut s’asseoir avec nous."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand la solitude dure",
+          "text": "Si le sentiment de solitude dure des semaines, si le désespoir s’y ajoute ou la pensée « De toute façon, je ne manquerais à personne », parle à quelqu’un en qui tu as confiance – l’adulte qui anime, le SePAS ou, de façon anonyme, le Kanner- a Jugendtelefon. Tu décides de ce que tu partages."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent le sentiment de solitude comme un signal, reconnaissent le cercle vicieux de la solitude, vérifient des pensées de solitude et planifient de petits pas.",
+        "ablauf": [
+          "Lire le texte (3 min) : le sentiment de solitude est un signal comme la faim, pas une tare.",
+          "Tâche 1 (7 min) : expliquer le cercle sur l’exemple de Jang, recueillir des sorties.",
+          "Tâche 2 (8 min) : vérifier deux pensées. Si l’une est réellement vraie, il faut protection et aide.",
+          "Tâche 3 après les stations (unité 19, étape 7).",
+          "Tâche 4 en silence et en privé ; lire l’encadré d’aide à voix haute."
+        ],
+        "hintergrund": "Le sentiment de solitude est un isolement social perçu : l’écart entre le lien souhaité et le lien vécu. Il est très répandu à l’adolescence (Qualter et al., 2015). Hawkley et Cacioppo (2010) y voient un signal qui pousse à renouer ; quand il dure, il s’entretient lui-même : on guette le rejet, on interprète négativement les signaux neutres, on se replie. Les aides qui agissent sur ces schémas de pensée sont les plus efficaces (Masi et al., 2011). Être exclu fait mal très vite (Williams, 2007) – les petits gestes d’inclusion comptent.",
+        "quellen": [
+          "Hawkley, L. C. & Cacioppo, J. T. (2010). Loneliness matters: A theoretical and empirical review of consequences and mechanisms. Annals of Behavioral Medicine, 40(2), 218–227.",
+          "Qualter, P., Vanhalst, J., Harris, R., Van Roekel, E., Lodder, G., Bangee, M., Maes, M. & Verhagen, M. (2015). Loneliness across the life span. Perspectives on Psychological Science, 10(2), 250–264.",
+          "Masi, C. M., Chen, H.-Y., Hawkley, L. C. & Cacioppo, J. T. (2011). A meta-analysis of interventions to reduce loneliness. Personality and Social Psychology Review, 15(3), 219–266.",
+          "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452."
+        ],
+        "differenzierung": {
+          "leichter": "Tâche 2 avec une seule pensée, ensemble au tableau.",
+          "schwerer": "Recueillir des idées pour qu’un lycée accueille mieux les nouveaux."
+        },
+        "impulse": [
+          "Pourquoi presque personne n’avoue-t-il se sentir seul ?",
+          "Qu’est-ce qui aide à venir s’asseoir avec les autres ?"
+        ],
+        "tipps": [
+          "Tirer les binômes au sort : personne ne reste seul.",
+          "Laisser l’affiche « Phrases-ponts » accrochée."
+        ],
+        "achtung": "Ne questionner personne sur sa solitude. Repli durable ou « Je ne manquerais à personne » : en parler le jour même, ne rien promettre, informer le ou la responsable (concept de protection) ; danger aigu : 112, ne pas laisser seul.",
+        "material": "Ruban, cartes de stations, affiche"
+      }
     }
   },
   {
@@ -739,6 +1207,143 @@
         ],
         "achtung": "Hinweise auf eigene Betroffenheit am selben Tag unter vier Augen aufgreifen: direkt nachfragen, nichts versprechen, nicht allein lassen, Schutzkonzept anwenden, Responsable informieren; akut 112.",
         "material": "Plakat mit Anlaufstellen, Fragenbox"
+      }
+    },
+    "fr": {
+      "titel": "Parler, ça aide",
+      "untertitel": "Les pensées suicidaires et l’automutilation existent – même chez des personnes chez qui on ne le voit pas. Et il existe de l’aide.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Parfois, les sentiments deviennent si lourds que des personnes pensent à se faire du mal ou à ne plus vouloir vivre. En parler est difficile. Mais se taire ne protège pas – parler et chercher de l’aide, si."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Est-ce vrai ? Coche. La correction se fait ensemble."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "c’est vrai",
+            "c’est faux"
+          ],
+          "items": [
+            "Qui parle de suicide ne le fera pas.",
+            "Demander directement à quelqu’un s’il pense au suicide, c’est lui en donner l’idée.",
+            "Qui se fait du mal à soi-même veut seulement attirer l’attention.",
+            "Les pensées suicidaires existent aussi chez des personnes chez qui on ne le voit pas.",
+            "Qui a un jour voulu ne plus vivre se sentira toujours ainsi.",
+            "Chercher de l’aide n’est pas une trahison – même si j’ai promis de ne rien dire.",
+            "Les amis ne peuvent rien faire, seuls les professionnels le peuvent."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "L’essentiel",
+          "punkte": [
+            "En parler ne fait pas de mal – cela soulage.",
+            "Les crises viennent souvent par vagues et passent. L’aide fonctionne.",
+            "Un secret qui met quelqu’un en danger, tu n’as pas à le porter seul."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Si tu t’inquiètes pour quelqu’un : lis les quatre étapes. Écris ensuite la suite de la conversation avec Nora.",
+          "hinweis": "Les étapes t’aident. Tu n’as pas à tout dire parfaitement – l’important est que tu demandes et que tu ailles chercher de l’aide."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Aborder le sujet",
+              "text": "« Je m’inquiète pour toi. Comment vas-tu vraiment ? »"
+            },
+            {
+              "titel": "Écouter",
+              "text": "prendre au sérieux, ne pas juger, ne pas interroger"
+            },
+            {
+              "titel": "Faire venir des adultes",
+              "text": "même si tu as promis de ne rien dire"
+            },
+            {
+              "titel": "En cas de danger : 112",
+              "text": "appeler et rester auprès de la personne"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Poser la question directement est permis",
+          "text": "Si tu t’inquiètes beaucoup, tu peux demander directement : « Est-ce que tu penses à mettre fin à tes jours ? » Cette question ne donne l’idée à personne. Ensuite, tu n’as pas à gérer la réponse sans aide : fais venir tout de suite un adulte."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Toi"
+            },
+            {
+              "wer": "Nora",
+              "text": "Ça va aller. C’est juste beaucoup en ce moment."
+            },
+            {
+              "wer": "Toi"
+            },
+            {
+              "wer": "Nora",
+              "text": "Parfois, je n’ai simplement plus envie de continuer."
+            },
+            {
+              "wer": "Toi"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Et si c’est toi qui vas mal ?",
+          "text": "Dans ce cas, tu n’es pas la seule personne à le vivre, et ce n’est pas un signe de faiblesse. Dis-le à quelqu’un : une personne en qui tu as confiance, l’adulte qui anime, le SePAS – ou appelle de façon anonyme. Tu décides de ce que tu partages."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes corrigent des idées fausses sur les pensées suicidaires et l’automutilation et revoient ce qu’ils font quand ils s’inquiètent pour quelqu’un.",
+        "ablauf": [
+          "Auparavant, clarifier le cadre : rien de personnel, pas de méthodes ni de cas individuels.",
+          "Tâche 1 (12 min) : lire à voix haute, évaluer en silence, montrer le pouce, corriger.",
+          "Solution : 1 faux – prendre les allusions au sérieux ; 2 faux – demander soulage ; 3 faux – signe de détresse ; 4 vrai ; 5 faux – les crises passent ; 6 vrai ; 7 faux – les amis peuvent beaucoup.",
+          "Tâche 2 (7 min), par exemple : « Merci de me le dire. Est-ce que tu penses à mettre fin à tes jours ? Je reste avec toi – on va ensemble au SePAS. »",
+          "Lire l’encadré « Et si c’est toi qui vas mal ? », montrer les services à contacter."
+        ],
+        "hintergrund": "L’automutilation et les pensées suicidaires ne sont pas rares chez les adolescents ; peu d’entre eux entrent en contact avec des professionnels (Hawton et al., 2012). Ils se confient d’abord aux pairs, qui ont besoin de repères clairs. Demander directement s’il y a des pensées suicidaires n’augmente pas le risque (Dazzi et al., 2014). Les étapes suivent les premiers secours en santé mentale (Kitchener & Jorm, 2002). Les méthodes et les cas individuels ne sont jamais discutés (OMS, 2017) ; les récits de crises surmontées allaient de pair avec moins de suicides (Niederkrotenthaler et al., 2010).",
+        "quellen": [
+          "Hawton, K., Saunders, K. E. A. & O’Connor, R. C. (2012). Self-harm and suicide in adolescents. The Lancet, 379(9834), 2373–2382.",
+          "Dazzi, T., Gribble, R., Wessely, S. & Fear, N. T. (2014). Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361–3363.",
+          "Kitchener, B. A. & Jorm, A. F. (2002). Mental health first aid training for the public: Evaluation of effects on knowledge, attitudes and helping behavior. BMC Psychiatry, 2, 10.",
+          "World Health Organization (2017). Preventing Suicide: A Resource for Media Professionals (update 2017). Genf: WHO.",
+          "Niederkrotenthaler, T., Voracek, M., Herberth, A., Till, B., Strauss, M., Etzersdorfer, E., Eisenwort, B. & Sonneck, G. (2010). Role of media reports in completed and prevented suicide: Werther v. Papageno effects. British Journal of Psychiatry, 197(3), 234–243."
+        ],
+        "differenzierung": {
+          "leichter": "Phrases 2, 3 et 6 seulement ; première réponse seulement.",
+          "schwerer": "Recenser les moyens d’aider plus tôt à l’école."
+        },
+        "impulse": [
+          "Pourquoi dit-on si rarement qu’on va mal ?",
+          "Qu’est-ce qui aide à faire venir des adultes ?"
+        ],
+        "tipps": [
+          "Dire « suicide », pas « commettre un suicide ».",
+          "Reprendre la boîte à questions."
+        ],
+        "achtung": "Atteinte personnelle : en parler le jour même en tête à tête, demander directement, ne rien promettre, ne pas laisser seul, concept de protection, informer le ou la responsable ; urgence : 112.",
+        "material": "Affiche des services, boîte à questions"
       }
     }
   },
@@ -931,6 +1536,162 @@
         ],
         "achtung": "Nicht einsammeln, nicht vorlesen, nicht bewerten. Bleibt der Plan leer oder wirkt jemand aufgewühlt: am selben Tag Einzelgespräch, direkt nachfragen, nicht allein lassen, Schutzkonzept anwenden, Responsable informieren; bei Gefahr 112.",
         "material": "Klemmbretter, Stationsschilder, Skills"
+      }
+    },
+    "fr": {
+      "titel": "Mon plan de sécurité",
+      "untertitel": "Pour les moments où ça devient vraiment dur. Tu le prépares quand tu vas bien – pour qu’il soit prêt le jour où tu en as besoin.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Ce plan t’appartient.",
+          "text": "Personne n’a à le voir. Écris avec tes propres mots – court, et de façon à pouvoir le lire même dans un mauvais moment. Suis les étapes dans l’ordre ; si l’une n’aide pas, passe à la suivante. Si tu es en danger, appelle tout de suite le 112."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Étape 1 – Mes signaux d’alarme : à quoi est-ce que je remarque que je vais vraiment mal ?",
+          "hinweis": "Pensées, sentiments, corps, comportement – par exemple « Plus rien n’a de sens », ne plus dormir, ne plus répondre à personne."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Étape 2 – Ce que je peux faire moi-même pour que la vague passe",
+          "hinweis": "Des skills qui t’aident quand tu es dans le rouge – par exemple le froid, monter des escaliers en courant, la musique, 5-4-3-2-1 ou des idées de ta valise de skills."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Étape 3 – Personnes et lieux qui me changent les idées",
+          "hinweis": "Où et avec qui puis-je simplement être, sans devoir tout raconter ?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Étape 4 – Personnes à qui je peux demander de l’aide",
+          "hinweis": "Au moins un adulte. Pense aussi au soir et au week-end."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nom",
+            "Téléphone",
+            "Quand joignable ?"
+          ],
+          "breiten": [
+            2,
+            1.4,
+            1.6
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "ma tante",
+            "portable",
+            "le soir et le week-end"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Étape 5 – Professionnels et numéros d’urgence",
+          "hinweis": "SePAS au lycée, psychologue, médecin. Enregistre aussi les numéros dans ton téléphone."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Service, nom",
+            "Téléphone",
+            "Quand joignable ?"
+          ],
+          "breiten": [
+            2,
+            1.4,
+            1.6
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Étape 6 – Rendre mon environnement plus sûr",
+          "hinweis": "Ce que je ne fais pas sans soutien dans un moment difficile – et ce que je mets de côté ou confie à quelqu’un. Qui m’aide pour cela ?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "feld",
+          "label": "Ce qui me donne un appui – ce qui vaut la peine",
+          "hoehe": 4,
+          "beispiel": "ma petite sœur, mon chien, l’été chez ma mamie"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon plan est ici – et en photo dans mon téléphone : …",
+            "Voici qui est au courant (si je le veux) : …",
+            "Je le relis le : …"
+          ]
+        },
+        {
+          "art": "notfall",
+          "eintraege": [
+            {
+              "name": "Urgences : secours – en cas de danger immédiat, 24 h sur 24",
+              "nummer": "112"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – aide par téléphone (anonyme)",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "Police",
+              "nummer": "113"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Chaque personne établit en privé un plan de sécurité pour les moments difficiles, qui s’appuie sur la valise de skills et le plan feu tricolore.",
+        "ablauf": [
+          "Avant (6 min) : présenter le plan comme une trousse de premiers secours. Tout le monde en fait un, personne n’a à le montrer.",
+          "Parcours du plan (25 min) : sept stations, seul avec une planchette (unité 20, étape 7).",
+          "Aider par des questions : « Qu’est-ce qui t’a déjà aidé par le passé ? » Ne lire avec la personne que si elle le propose.",
+          "Étape 6 : expliquer seulement en termes généraux ; ne citer aucun moyen ni aucune méthode.",
+          "Clarifier où le ranger, photographier le plan, le glisser librement dans le carnet de skills."
+        ],
+        "hintergrund": "La Safety Planning Intervention de Stanley et Brown (2012) est une mesure brève et structurée pour les personnes en crise suicidaire ; avec des contacts de suivi, elle a nettement réduit les comportements suicidaires (Stanley et al., 2018). Le plan suit un ordre fixe, de l’intérieur vers l’extérieur : signaux d’alarme, gestion personnelle, personnes et lieux qui distraient, proches, services spécialisés et urgences, environnement plus sûr. Les crises venant souvent par vagues, un plan rédigé d’avance avec ses propres mots aide à passer le pic. Pour l’étape 2 conviennent les skills de tolérance au stress (Rathus & Miller, 2015). En groupe, le plan est une prévention pour tous ; il ne remplace pas un plan établi avec un professionnel.",
+        "quellen": [
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Stanley, B., Brown, G. K., Brenner, L. A., Galfalvy, H. C., Currier, G. W., Knox, K. L., Chaudhury, S. R., Bush, A. L. & Green, K. L. (2018). Comparison of the Safety Planning Intervention with follow-up vs usual care of suicidal patients treated in the emergency department. JAMA Psychiatry, 75(9), 894–900.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Étapes 1, 2, 4 et 5 seulement ; écrire avec la personne si elle le souhaite.",
+          "schwerer": "Montrer le plan à une personne de confiance."
+        },
+        "impulse": [
+          "Qu’est-ce qui pourrait t’empêcher d’utiliser le plan ?",
+          "Où est ton plan quand tu en as besoin la nuit ?"
+        ],
+        "tipps": [
+          "Garder une copie à un deuxième endroit.",
+          "En cas de crise aiguë : la fiche « Mon plan de sécurité » de la Toolbox."
+        ],
+        "achtung": "Ne pas ramasser, lire ni juger. Plan vide ou personne bouleversée : entretien individuel le jour même, demander directement, ne pas laisser la personne seule, concept de protection, informer le ou la responsable ; danger : 112.",
+        "material": "Planchettes, panneaux, skills"
       }
     }
   }

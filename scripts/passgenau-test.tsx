@@ -1031,6 +1031,8 @@ await pruefung('Einzelkurs: Tausch-Übungen nie von selbst, als Alternative nach
       const druck = (pl: Plan) => druckSitzung(k, p, pl, nr, { sprache: 'de', warum: false }).schritte.find((x, i) => pl.sitzungen[nr - 1].schritte[i]?.ref === 'pg:blatt')?.text
       const anlVorher = druck(plan)
       for (const a of t) {
+        // die schonende Fassung -t3 darf ein eigenes Blatt haben (18.10.2026) – dann gilt ihr Blatt
+        if (a.eintrag.typ === 'schritt' && a.eintrag.uebungsblatt) { geprueft++; continue }
         const neu = ersetzen(plan, ort, a.eintrag)
         const x = kernVon(neu, nr)!
         soll(x.ref === a.eintrag.id && x.blattVon === vorher.ref, `${id} S${nr}: blattVon ${x.blattVon} statt ${vorher.ref}`)
@@ -1071,9 +1073,10 @@ await pruefung('Einzelkurs mit heiklem Thema: jede Sitzung bleibt im Kurs – sc
       soll(e.belastung === 0, `${id} S${s.nr}: ${e.id} mit belastung ${e.belastung}`)
       if (!e.tausch || !x?.warum?.some((w) => w.startsWith('Eine schonendere Übung'))) continue
       schonend++
-      soll(!!x.blattVon, `${id} S${s.nr}: schonende Übung ohne Blatt der Variante`)
+      // eigenes schonendes Blatt – oder das Blatt der Variante mit dem Satz „für die Figur antworten“
+      soll(!!x.blattVon || !!e.uebungsblatt, `${id} S${s.nr}: schonende Übung ohne Blatt`)
       const anl = druckSitzung(k, p, plan, s.nr, { sprache: 'de', warum: false }).schritte.find((_, i) => s.schritte[i]?.ref === 'pg:blatt')?.text ?? ''
-      soll(/für die Figur oder die ausgedachte Situation/.test(anl), `${id} S${s.nr}: Blatt-Anleitung ohne den Satz „für die Figur antworten“`)
+      if (!e.uebungsblatt) soll(/für die Figur oder die ausgedachte Situation/.test(anl), `${id} S${s.nr}: Blatt-Anleitung ohne den Satz „für die Figur antworten“`)
     }
   }
   info(`${sitzungen} Sitzungen, davon ${schonend} mit schonender Tausch-Übung`)

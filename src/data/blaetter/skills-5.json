@@ -240,6 +240,213 @@
         "achtung": "Nennt jemand bei der eigenen Situation etwas Belastendes, nicht im Plenum vertiefen, sondern ein Einzelgespräch anbieten. Bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt je Person, Tafel oder Flipchart"
       }
+    },
+    "fr": {
+      "titel": "Une pensée change tout",
+      "untertitel": "Une même situation peut tourner de façons très différentes, selon la pensée qui te traverse à ce moment-là.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Entre ce qui se passe et ce que tu ressens, il y a une pensée. Elle va souvent si vite que tu la remarques à peine. Pourtant, elle influence beaucoup la suite."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Situation",
+              "text": "Ce qui se passe, tel qu’une caméra le filmerait"
+            },
+            {
+              "titel": "Pensée",
+              "text": "Ce qui me traverse la tête à ce moment-là"
+            },
+            {
+              "titel": "Émotion",
+              "text": "Ce que je ressens, dans la tête et dans le corps"
+            },
+            {
+              "titel": "Comportement",
+              "text": "Ce que je fais alors – ou ne fais pas"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Même situation, deux pensées différentes : que ressent Ben à chaque fois, et que fait-il ensuite ?",
+          "hinweis": "Ben a écrit à Mila dans l’après-midi. Le soir, il voit : vu. Pas de réponse.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:neutral"
+              ],
+              "requisit": "icon:device-mobile-message",
+              "blase": "denken",
+              "text": "Vu et pas de réponse. Elle en a marre de moi."
+            },
+            {
+              "figuren": [
+                "figur:ben:neutral"
+              ],
+              "requisit": "icon:device-mobile-message",
+              "blase": "denken",
+              "text": "Vu, pas de réponse. Elle est sûrement encore à l’entraînement."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Émotion :",
+                "Comportement :"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Émotion :",
+                "Comportement :"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La prof appelle Yusuf au tableau. Quelle pensée mène à quoi ? Relie.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Yusuf pense …",
+            "… ressent et fait"
+          ],
+          "links": [
+            "« Tout le monde attend que je me ridiculise. »",
+            "« Encore moi. La prof m’en veut. »",
+            "« Ce n’est qu’un exercice. Si je bloque, je demande. »"
+          ],
+          "rechts": [
+            "en colère – reste assis et marmonne : « Toujours moi. »",
+            "un peu nerveux – va au tableau et commence",
+            "anxieux, rougit – dit « Je ne sais pas », alors qu’il sait"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelqu’un rit quand tu entres dans la classe. Une pensée est déjà là. Trouves-en deux autres et vois où elles mènent."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Pensée",
+            "Émotion",
+            "Comportement"
+          ],
+          "breiten": [
+            1.6,
+            1,
+            1.5
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "« Ils rient de moi. »",
+            "honte, colère",
+            "baisse les yeux et s’assoit vite"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et pour toi ? Prends une situation de ces derniers jours et remplis les quatre cases.",
+          "hinweis": "La situation peut être très ordinaire : bus, récréation, téléphone, entraînement.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 4,
+          "items": [
+            {
+              "titel": "Situation"
+            },
+            {
+              "titel": "Pensée"
+            },
+            {
+              "titel": "Émotion"
+            },
+            {
+              "titel": "Comportement"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Une autre pensée qui pourrait aussi convenir :"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Les pensées sont des suppositions, pas des faits",
+          "text": "Certaines suppositions sont justes, d’autres non. La pensée qui te vient en premier dépend aussi de phrases que tu crois sur toi depuis longtemps : tes croyances. Quand on pense tout au fond de soi « Personne ne m’aime », on voit plus vite un rejet dans un message resté sans réponse."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "Tu n’as à montrer ta situation à personne."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent le modèle situation – pensée – émotion – comportement et constatent qu’une même situation peut se dérouler très différemment selon la pensée.",
+        "ablauf": [
+          "Modèle (2 min) : expliquer les quatre cases du haut – d’abord ce qui se passe, tel qu’une caméra le verrait, puis ce qui se passe dans la tête.",
+          "Tâche 1 en commun (4 min) : dessiner les cases au tableau, y noter la situation et les pensées de Ben ; le groupe complète l’émotion et le comportement. Question : « Qu’est-ce qui change si seule la pensée est différente ? »",
+          "Tâche 2 à deux (2 min), tâches 3 et 4 individuellement (6 min). La situation personnelle n’est pas lue à voix haute, sauf si quelqu’un le souhaite.",
+          "Conclusion (1 min) : lire l’encadré et faire le lien avec les croyances."
+        ],
+        "hintergrund": "La feuille suit le modèle ABC d’Ellis (1962) : ce n’est pas l’événement (A) qui déclenche l’émotion et le comportement (C), mais la façon dont on l’interprète (B). Beck (2011) décrit la même chaîne comme un modèle cognitif, où les pensées automatiques sont teintées par des convictions plus profondes – les croyances, au cœur du module. Les manuels de thérapie cognitivo-comportementale pour enfants et adolescents introduisent le modèle à partir de situations quotidiennes et anodines, avant d’aborder des thèmes personnels (Stallard, 2019).",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Résoudre la tâche 3 à l’oral à deux ; l’adulte prend des notes.",
+          "schwerer": "Pour la situation personnelle, trouver une troisième pensée qui soit réaliste et qui aide tout de même."
+        },
+        "impulse": [
+          "Quelle pensée vous vient en premier face à un message resté sans réponse ?",
+          "À quoi remarque-t-on qu’une pensée prend les commandes ?"
+        ],
+        "tipps": [
+          "Commencer par des exemples anodins ; les thèmes personnels viennent dans les séances suivantes.",
+          "Faire nommer les émotions avec les mots de la roue des émotions."
+        ],
+        "achtung": "Si quelqu’un évoque une situation pénible dans son exemple personnel, ne pas approfondir en plénière mais proposer un entretien individuel. En cas d’indices de mise en danger, agir selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Une feuille par personne, tableau ou paperboard"
+      }
     }
   },
   {
@@ -492,6 +699,221 @@
         "achtung": "Einzelne Sätze können Jugendliche treffen, die gerade Ausgrenzung erleben: auf Rückzug oder auffällige Witze achten und ein Einzelgespräch anbieten. Bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Festes Papier (160 g), Scheren, Umschlag zum Aufbewahren"
       }
+    },
+    "fr": {
+      "titel": "Cartes de croyances",
+      "untertitel": "Des phrases que des gens croient sur eux-mêmes – à découper, à trier et à réutiliser",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et classez-les dans trois zones : ça aide – ça dépend – ça freine.",
+          "hinweis": "Certaines cartes ne sont pas évidentes. Quand on pose une carte, on dit en deux mots pourquoi.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 62,
+          "karten": [
+            {
+              "titel": "Je ne suis pas assez bien."
+            },
+            {
+              "titel": "Il y a des gens qui m’aiment bien."
+            },
+            {
+              "titel": "Je n’ai besoin de personne."
+            },
+            {
+              "titel": "J’essaie. Si j’ai besoin d’aide, je demande."
+            },
+            {
+              "titel": "Je suis bête."
+            },
+            {
+              "titel": "Mes émotions comptent autant que celles des autres."
+            },
+            {
+              "titel": "Personne ne m’aime."
+            },
+            {
+              "titel": "Je fais de mon mieux. Les erreurs en font partie."
+            },
+            {
+              "titel": "Les autres sont meilleurs que moi."
+            },
+            {
+              "titel": "Tout m’est égal."
+            },
+            {
+              "titel": "Je suis bien comme je suis – et je continue d’apprendre."
+            },
+            {
+              "titel": "C’est toujours ma faute."
+            },
+            {
+              "titel": "J’ai déjà réussi pas mal de choses."
+            },
+            {
+              "titel": "Si je dis non, plus personne ne m’aimera."
+            },
+            {
+              "titel": "Il y a des choses que je trouve difficiles, d’autres que je fais bien."
+            },
+            {
+              "titel": "De toute façon, je n’y arriverai pas."
+            },
+            {
+              "titel": "Une fois, ça n’a pas marché. Ça ne dit rien de la suite."
+            },
+            {
+              "titel": "Mes émotions ne sont pas importantes."
+            },
+            {
+              "titel": "Je prends ma part de responsabilité."
+            },
+            {
+              "titel": "Je suis à part, pas comme les autres."
+            },
+            {
+              "titel": "De toute façon, personne ne m’aide."
+            },
+            {
+              "titel": "Je dois tout faire à la perfection."
+            },
+            {
+              "titel": "Chacun a ses points forts – moi aussi."
+            },
+            {
+              "titel": "Je suis trop faible."
+            },
+            {
+              "titel": "Je peux aller chercher de l’aide."
+            },
+            {
+              "titel": "Je ne serai jamais en couple."
+            },
+            {
+              "titel": "De vrais amis acceptent qu’on dise non."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Posez ces trois cartes comme zones sur le sol ou sur une grande table.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 150,
+          "karten": [
+            {
+              "titel": "Ça aide",
+              "text": "donne confiance et dit vrai",
+              "bild": "icon:thumb-up"
+            },
+            {
+              "titel": "Ça dépend",
+              "text": "aide parfois, freine parfois",
+              "bild": "icon:arrows-shuffle"
+            },
+            {
+              "titel": "Ça freine",
+              "text": "rabaisse et retient",
+              "bild": "icon:hand-stop"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "D’où pourrait venir une phrase qui freine ? Posez à côté l’une de ces cartes."
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 88,
+          "karten": [
+            {
+              "titel": "Une seule situation",
+              "text": "Une fois, ça a mal tourné – et c’est devenu « toujours »."
+            },
+            {
+              "titel": "Des remarques des autres",
+              "text": "Quelqu’un l’a répété assez souvent."
+            },
+            {
+              "titel": "Les comparaisons",
+              "text": "Les autres ont l’air de tout faire mieux."
+            },
+            {
+              "titel": "Réseaux sociaux",
+              "text": "Des images parfaites, des vies parfaites – mais seulement un extrait."
+            },
+            {
+              "titel": "Des expériences répétées",
+              "text": "C’est arrivé plusieurs fois de façon semblable."
+            },
+            {
+              "titel": "Autrefois une protection",
+              "text": "La phrase t’a un jour évité une déception."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écrivez vos propres phrases sur les cartes vides – qui freinent ou qui aident."
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 62,
+          "karten": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les cartes rendent les croyances concrètes : les classer, chercher leur origine, trouver des pendants – puis jeu d’arrêt des pensées et arbre des croyances.",
+        "ablauf": [
+          "Préparation : imprimer sur papier épais et découper. La page 1 contient 12 phrases qui freinent, leurs 12 pendants qui aident et 3 phrases à discuter.",
+          "Séance 16 (15 min) : poser les cartes-zones au sol. À tour de rôle, tirer une carte, la lire, la poser et la justifier en deux mots. Déplacer une carte est permis, avec justification.",
+          "Prendre ensuite deux ou trois cartes qui freinent : « D’où pourrait venir une telle phrase ? » Poser les cartes d’origine à côté.",
+          "Pour finir, associer les pendants. Suite : retour à la séance 17, jeu d’arrêt des pensées à la 18, arbre des croyances à la 19."
+        ],
+        "hintergrund": "Les croyances sont des suppositions généralisées sur soi, sur les autres et sur le monde ; elles naissent d’expériences et agissent souvent à notre insu comme un filtre sur les nouvelles expériences (Beck, 2011). Sur des cartes, elles deviennent un objet dont on peut parler sans rien dévoiler de personnel. Les phrases à discuter (« Tout m’est égal ») sonnent fort et freinent pourtant – souvent, elles ont protégé autrefois. À l’adolescence, la comparaison avec les camarades façonne particulièrement l’image de soi (Harter, 2012) ; les cartes d’origine rendent ces influences visibles.",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Jouer avec huit cartes-phrases et seulement deux zones : ça aide, ça freine.",
+          "schwerer": "Pour chaque carte de la zone « Ça dépend », trouver une situation où elle aide et une où elle freine."
+        },
+        "impulse": [
+          "Quelle phrase était la plus difficile à classer ?",
+          "Pourquoi les gens croient-ils des phrases qui ne leur font pas de bien ?"
+        ],
+        "tipps": [
+          "Imprimer deux fois : un jeu pour la partie, un pour l’affiche de la séance 19.",
+          "En posant les cartes, parler uniquement des phrases, jamais des personnes."
+        ],
+        "achtung": "Certaines phrases peuvent toucher des jeunes qui vivent de l’exclusion : rester attentif au repli ou aux blagues qui sonnent faux et proposer un entretien individuel. En cas d’indices de mise en danger, agir selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Papier épais (160 g), ciseaux, enveloppe pour ranger les cartes"
+      }
     }
   },
   {
@@ -639,6 +1061,119 @@
         ],
         "achtung": "Fallen Sätze wie „Ich bin nichts wert“ oder „Es wäre besser, wenn es mich nicht gäbe“ – auf dem Blatt oder im Gespräch –, noch in der Einheit ein Einzelgespräch führen, die Person nicht allein lassen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Umschlag je Person, Stifte, leise Musik (optional)"
+      }
+    },
+    "fr": {
+      "titel": "Mes croyances",
+      "untertitel": "Rien que pour toi – personne n’est obligé de lire ce que tu écris ici.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "À la fin, la feuille est glissée dans une enveloppe que personne d’autre que toi n’ouvre. Lire à voix haute est facultatif – même une seule phrase."
+        },
+        {
+          "art": "text",
+          "text": "Les croyances sont des phrases que tu penses sur toi – souvent depuis si longtemps qu’elles ressemblent à des faits. Beaucoup viennent d’une seule expérience ou de remarques entendues souvent. Certaines te protégeaient autrefois. Sont-elles encore vraies aujourd’hui ? C’est une autre question."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Note jusqu’à cinq phrases que tu penses parfois sur toi et qui te freinent. Réponds aux questions par des mots-clés.",
+          "hinweis": "Tu peux prendre tes propres phrases ou en emprunter une dans l’encadré.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Des phrases que beaucoup connaissent",
+          "items": [
+            "Je ne suis pas assez bien.",
+            "De toute façon, je n’y arriverai pas.",
+            "Les autres sont meilleurs que moi.",
+            "Je dois tout faire à la perfection.",
+            "Personne ne me comprend.",
+            "C’est toujours ma faute.",
+            "Si je dis non, plus personne ne m’aimera.",
+            "De toute façon, personne ne m’aide."
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ma croyance",
+            "D’où vient-elle ? Depuis quand ?",
+            "Encore vraie aujourd’hui ? (0–100 %)",
+            "Où me freine-t-elle ?"
+          ],
+          "breiten": [
+            1.3,
+            1.35,
+            0.95,
+            1.3
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "Les langues, ce n’est pas pour moi.",
+            "Depuis qu’on a ri de moi quand je lisais à voix haute, au cycle 3.",
+            "50 % – en anglais, je m’en sors bien maintenant.",
+            "Je ne lève jamais la main en français."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle phrase te freine le plus ? Regarde sous la surface de l’eau.",
+          "hinweis": "Les autres ne voient que ce que tu fais. Ce qu’il y a en dessous, c’est toi qui le sais."
+        },
+        {
+          "art": "eisberg",
+          "oben": "Ce que les autres voient : comment je me comporte quand la phrase est là",
+          "unten": "Ce que personne ne voit : ce que je ressens alors – et ce que la phrase me fait croire",
+          "beispielOben": "Je ne dis presque rien en classe.",
+          "beispielUnten": "J’ai vite honte. La phrase me dit : « Si tu te trompes, tout le monde va rire. »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Imagine que ta meilleure amie ou ton meilleur ami se dise la même phrase. Que lui répondrais-tu ?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "notfall",
+          "text": "Quand une phrase te pèse beaucoup : voici où trouver de l’aide"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes notent leurs propres croyances qui freinent, s’interrogent sur leur origine, estiment si elles sont encore vraies aujourd’hui et repèrent où elles les freinent. La feuille reste privée.",
+        "ablauf": [
+          "Cadre avant la distribution : « Ce que vous écrivez vous appartient. Je ne le lis pas, sauf si vous me le montrez. » Dire aussi où s’arrête la confidentialité.",
+          "Tâche 1 (15 min) : lire à voix haute la ligne d’exemple. Des mots-clés suffisent, une seule ligne, c’est déjà beaucoup. N’aider que sur demande.",
+          "La tâche 2 (7 min) est une proposition. La tâche 3 (5 min) est faite par tous – elle se termine par un regard bienveillant sur soi-même.",
+          "Feuille dans l’enveloppe, nom dessus, fermer, ranger dans le dossier personnel. À la séance 18, les enveloppes sont redistribuées."
+        ],
+        "hintergrund": "En thérapie cognitivo-comportementale, de telles phrases correspondent aux croyances fondamentales : des suppositions apprises tôt et très généralisées, par exemple être impuissant, indigne d’être aimé ou sans valeur, qui ne sont plus guère remises en question par la suite (Beck, 2011). L’origine et le pourcentage créent de la distance : d’un fait, on fait une supposition qu’on peut vérifier. À l’adolescence, l’image de soi devient plus abstraite et souvent plus autocritique (Harter, 2012). Les exercices d’écriture privés aident à mettre de l’ordre dans ce qui pèse, sans le dévoiler (Pennebaker, 1997).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166."
+        ],
+        "differenzierung": {
+          "leichter": "Prendre une ou deux phrases dans l’encadré ; discuter des questions à voix basse avec l’adulte.",
+          "schwerer": "Pour chaque phrase, noter qui la confirme encore aujourd’hui – et qui la contredit."
+        },
+        "impulse": [
+          "Quelle question était la plus difficile ?",
+          "Quelque chose a-t-il changé en écrivant – la phrase, le sentiment ?"
+        ],
+        "tipps": [
+          "Places individuelles et musique douce ; personne ne s’assoit de façon à ce que d’autres puissent lire.",
+          "Qui ne veut pas écrire ne travaille que la tâche 3."
+        ],
+        "achtung": "Si des phrases comme « Je ne vaux rien » ou « Ce serait mieux si je n’existais pas » apparaissent – sur la feuille ou à l’oral –, mener un entretien individuel dès la séance, ne pas laisser la personne seule, agir selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Une enveloppe par personne, stylos, musique douce (facultatif)"
       }
     }
   },
@@ -827,6 +1362,158 @@
         "achtung": "Hat ein Satz einen wahren Kern, etwa bei echter Ausgrenzung, nicht wegdiskutieren, sondern ernst nehmen und im Einzelgespräch klären, wer helfen kann. Bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Zwei Blätter je Person, Umschläge aus Einheit 17, Tafel"
       }
+    },
+    "fr": {
+      "titel": "Le détective sceptique",
+      "untertitel": "Est-ce vraiment vrai ? Un bon détective ne croit rien sous prétexte que quelqu’un l’affirme – pas même sa voix intérieure.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Écris la phrase suspecte. À quel point la crois-tu en ce moment ?",
+          "hinweis": "Prends une phrase de ta feuille « Mes croyances » ou une carte du jeu de tri."
+        },
+        {
+          "art": "feld",
+          "label": "La phrase suspecte",
+          "hoehe": 2
+        },
+        {
+          "art": "skala",
+          "von": "0 – pas du tout",
+          "bis": "10 – complètement",
+          "stufen": 11,
+          "frage": "Avant d’examiner les preuves, je la crois à ce point :"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rassemble des preuves pour les deux côtés – même si le second côté ne te convainc pas encore.",
+          "hinweis": "Une preuve, c’est quelque chose qui s’est vraiment passé. Un sentiment ou une supposition ne compte pas."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Questions de détective",
+          "punkte": [
+            "Y a-t-il eu une situation où la phrase n’était pas vraie ?",
+            "Qu’en dirait une bonne amie ou un bon ami ?",
+            "Dirais-je la même chose de quelqu’un que j’apprécie ?",
+            "La phrase est-elle vraie toujours – ou seulement parfois, dans un seul domaine ?",
+            "Est-ce un fait ou un sentiment ?"
+          ]
+        },
+        {
+          "art": "waage",
+          "links": "Preuves qu’elle est vraie",
+          "rechts": "Preuves qu’elle n’est pas (toujours) vraie",
+          "zeilen": 5
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton verdict de détective : qu’est-ce qui est vraiment vrai ?",
+          "hinweis": "Souvent, seule une petite partie est vraie – par exemple pas « Je suis bête », mais « Les maths, c’est difficile pour moi »."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "La phrase est vraie …",
+          "spalten": 3,
+          "items": [
+            "toujours",
+            "parfois",
+            "rarement ou jamais"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Plus précisément, seul ceci est vrai :"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "skala",
+          "von": "0 – pas du tout",
+          "bis": "10 – complètement",
+          "stufen": 11,
+          "frage": "À ce point, je crois maintenant l’ancienne phrase :"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Construis une nouvelle phrase réaliste en suivant les six règles. Coche ce que ta phrase remplit déjà.",
+          "hinweis": "La règle 1 est déjà faite : tu as reconnu l’ancienne phrase et tu l’as écrite.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "2 · Rester réaliste : je peux croire cette phrase. Personne ne croit « Je fais tout parfaitement ».",
+            "3 · Positive et active : elle dit ce que je fais – pas ce que je ne suis pas.",
+            "4 · Qui dépend de moi : elle parle de quelque chose que je peux influencer moi-même.",
+            "5 · Au présent : « J’apprends … » plutôt que « Un jour, je serai … »",
+            "6 · Progrès : elle laisse de la place pour s’améliorer."
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Ma nouvelle phrase",
+          "hoehe": 4,
+          "beispiel": "« Je suis une catastrophe en maths » devient « Les maths me sont difficiles, mais si je m’entraîne et que je demande de l’aide, je progresse. »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment te comporterais-tu si tu croyais cette nouvelle phrase ? Prévois une situation concrète."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si, en maths, je ne comprends pas quelque chose,",
+              "dann": "je lève la main et je demande, au lieu de décrocher."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Et ensuite ?",
+          "text": "Ta nouvelle phrase va sur une petite carte, avec tes cartes de skills. Comme ça, tu l’as sur toi quand l’ancienne phrase se manifeste."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes examinent comme un détective une de leurs croyances qui freinent, la réévaluent ensuite et formulent, selon six règles, une phrase réaliste et utile.",
+        "ablauf": [
+          "Deux feuilles par personne, une par phrase. Montrer d’abord (5 min) : avec la carte « Je suis bête », remplir la balance au tableau. 22 points sur 60 sont un fait ; « bête » est un jugement.",
+          "Page 1 individuellement (10 min) : les questions de détective aident si le côté droit reste vide.",
+          "En commun (5 min) : qui le souhaite cite une phrase, tous cherchent des preuves contraires. Sinon, travailler avec une carte.",
+          "Page 2 (15 min) : verdict, nouvelle phrase selon les règles, ligne « si … alors ». Montrer d’abord l’exemple des maths."
+        ],
+        "hintergrund": "La feuille adapte aux jeunes des techniques de la thérapie cognitivo-comportementale : examiner les preuves, questionner de façon socratique, évaluer la conviction avant et après (Beck, 2011). Des questions comme « Qu’en dirait une amie ? » créent de la distance, ce qui allège la charge quand on réfléchit à des sujets difficiles (Kross & Ayduk, 2017). Une nouvelle phrase ne tient que si elle est réaliste et parle d’apprentissage plutôt que de jugement définitif (Dweck, 2006). En DBT, la compétence voisine s’appelle « vérifier les faits » (Linehan, 2015).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement la page 1 ; formuler la nouvelle phrase avec l’adulte.",
+          "schwerer": "Prévoir où la nouvelle phrase devra faire ses preuves la semaine suivante."
+        },
+        "impulse": [
+          "Qu’est-ce qui était plus facile à trouver : des preuves pour ou contre ?",
+          "Ta nouvelle phrase sonne-t-elle comme toi – ou comme une affiche ?"
+        ],
+        "tipps": [
+          "Examiner ses pensées fonctionne dans la zone verte ; au-delà de 70, d’abord un skill pour le corps.",
+          "Ne pas sauter au contraire : « Je suis au top » ne convainc personne."
+        ],
+        "achtung": "Si une phrase contient une part de vérité (exclusion réelle, par exemple), ne pas la balayer : la prendre au sérieux et chercher en entretien individuel qui peut aider. En cas d’indices de mise en danger, agir selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Deux feuilles par personne, enveloppes de la séance 17, tableau"
+      }
     }
   },
   {
@@ -963,6 +1650,109 @@
         ],
         "achtung": "Bestätigt die Woche den alten Satz, etwa durch anhaltende Ausgrenzung, nicht auf Durchhalten drängen: im Einzelgespräch nachfragen, bei Bedarf SePAS oder Responsable einbeziehen.",
         "material": "Blatt je Person"
+      }
+    },
+    "fr": {
+      "titel": "Mon défi des preuves",
+      "untertitel": "Une nouvelle phrase devient plus forte quand tu la vis au quotidien. Pendant une semaine, collecte des preuves qu’elle est vraie.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Écris ta nouvelle phrase.",
+          "hinweis": "Prends la phrase de ta petite carte qui compte le plus pour toi en ce moment."
+        },
+        {
+          "art": "feld",
+          "label": "Ma nouvelle phrase",
+          "hoehe": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où peux-tu tester cette phrase cette semaine ? Prévois une situation.",
+          "hinweis": "Plus c’est précis, mieux c’est : quand, où, avec qui."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si, mardi, je ne sais plus comment continuer en maths,",
+              "dann": "je me dis : « J’essaie, se tromper n’est pas grave » – et je demande."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rassemble chaque jour une preuve : une situation où ta nouvelle phrase s’est avérée vraie. Même une petite compte."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Jour",
+            "Que s’est-il passé ?",
+            "Qu’est-ce que ça me montre ?"
+          ],
+          "breiten": [
+            0.55,
+            2.4,
+            2
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "Lu",
+            "En maths, c’était mon tour. J’ai d’abord bloqué, puis j’ai demandé – à la fin, la solution était juste.",
+            "Demander, c’est possible. J’ai parfois seulement besoin d’une explication de plus."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quel point crois-tu ta nouvelle phrase ? Coche aujourd’hui – et encore une fois après une semaine.",
+          "hinweis": "La prochaine fois, tu pourras commencer par raconter une preuve – ou ce qui t’a freiné. Cela aussi est une observation."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "0–2",
+            "3–4",
+            "5–6",
+            "7–8",
+            "9–10"
+          ],
+          "items": [
+            "Aujourd’hui, je la crois à ce point :",
+            "Après une semaine, je la crois à ce point :"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes transposent leur nouvelle croyance dans le quotidien : prévoir une situation, collecter des preuves pendant une semaine et remarquer si leur conviction change.",
+        "ablauf": [
+          "Séance 19 (10 min) : recopier une nouvelle phrase depuis la petite carte et lire à voix haute l’exemple de plan « si … alors ». Question : « Quand exactement ta phrase sera-t-elle utile cette semaine ? »",
+          "Ne prévoir qu’une seule situation, puis cocher l’estimation d’aujourd’hui. La feuille est emportée à la maison.",
+          "Pendant la semaine : une preuve par jour, même petite. Les notes dans le téléphone sont permises.",
+          "Séance 20, au début : qui le souhaite raconte une preuve. On demande des observations, pas des réussites."
+        ],
+        "hintergrund": "Les convictions changent plus par l’expérience que par les arguments : les expériences de maîtrise vécues sont la source la plus forte du sentiment d’efficacité personnelle (Bandura, 1977). Une croyance qui freine oriente le regard vers ce qui la confirme ; les preuves contraires passent facilement inaperçues (Beck, 2011) – le défi inverse cette tendance. Un plan concret « si … alors » augmente les chances qu’une résolution soit mise en pratique (Gollwitzer, 1999). Dans une étude, noter chaque jour de bonnes expériences a accru le bien-être pendant plusieurs mois (Seligman et al., 2005).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "differenzierung": {
+          "leichter": "Ne collecter que trois jours ; les preuves peuvent aussi être racontées à l’oral.",
+          "schwerer": "Noter quand l’ancienne phrase s’est manifestée et ce qui a aidé à ne pas la suivre."
+        },
+        "impulse": [
+          "Quand as-tu eu besoin de ta phrase cette semaine ?",
+          "Quelle a été la plus petite preuve – et pourquoi compte-t-elle quand même ?"
+        ],
+        "tipps": [
+          "Ne jamais évaluer les preuves – ce sont justement les petites qui sont le but.",
+          "Qui n’a rien trouvé cherche avec l’adulte des moments passés inaperçus."
+        ],
+        "achtung": "Si la semaine confirme l’ancienne phrase, par exemple à cause d’une exclusion qui dure, ne pas pousser à tenir bon : poser la question en entretien individuel et, si nécessaire, associer le SePAS ou le ou la responsable.",
+        "material": "Une feuille par personne"
       }
     }
   }

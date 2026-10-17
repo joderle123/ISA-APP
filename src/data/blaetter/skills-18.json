@@ -199,6 +199,161 @@
         "achtung": "Persönlich: nicht einsammeln, nicht vorlesen, nicht bewerten. Bei Hinweisen auf Selbstverletzung, Gewalt oder Suizidgedanken: Einzelgespräch, Responsable informieren, Schutzkonzept.",
         "material": "Ringbuch A4, Klarsichthüllen"
       }
+    },
+    "fr": {
+      "titel": "Mon carnet de skills",
+      "untertitel": "Ce qui marche vraiment pour toi – rassemblé pour l’après-cours. Chaque module ajoute une page.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dans le cours de skills, tu essaies beaucoup de choses. Dans ce carnet, tu ne mets que ce qui marche vraiment pour toi – en quatre rubriques : skills préférés, plans, phrases qui portent et personnes qui aident. Ainsi, tu le retrouves même après le cours : au lycée, en formation, à la maison."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Crée ta page de couverture : donne un nom à ton carnet et dessine un signe qui te ressemble et qui correspond à ton chemin.",
+          "hinweis": "Un symbole, un mot, un motif ou une photo collée – il suffit que ça te plaise. La phrase de juin, tu ne l’écris que pour toi."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mon signe",
+              "zeichnen": true,
+              "hoehe": 6.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Mon carnet s’appelle : …"
+              ],
+              "linien": 2
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "En juin, je veux pouvoir dire : …"
+              ],
+              "linien": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sommaire : note chaque fiche des séances que tu intègres à ton carnet.",
+          "hinweis": "Les pages de rubriques (page 2) n’ont pas besoin d’être notées ici – elles sont classées par module dans le carnet."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "Fiche",
+            "du module",
+            "Date"
+          ],
+          "breiten": [
+            0.45,
+            2.7,
+            1.6,
+            0.85
+          ],
+          "zeilen": 9,
+          "nummern": 1,
+          "beispiel": [
+            "p. ex.",
+            "Mon radar de skills et deux objectifs",
+            "Arriver",
+            "sept."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "À la fin de chaque module : que veux-tu encore savoir dans cinq ans ? Note-le ici.",
+          "hinweis": "Une nouvelle page est prévue pour chaque module. Tous les champs n’ont pas à être remplis – mieux vaut une bonne entrée que quatre à moitié vides."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Module : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Skills préférés – ce qui m’aide vraiment et comment ça marche",
+              "beispiel": "Respiration en carré : 4 secondes pour inspirer, 4 pour retenir, 4 pour expirer, 4 pour retenir. M’aide avant les contrôles.",
+              "hoehe": 10.4
+            },
+            {
+              "art": "feld",
+              "label": "Phrases qui portent – ce que je me dis dans les moments difficiles",
+              "beispiel": "Un moment difficile n’est pas une vie difficile.",
+              "hoehe": 10.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Plans – Si …, alors … pour les moments que je connais",
+              "beispiel": "Si quelqu’un me critique devant tout le monde pendant mon stage, j’expire et je demande ce que je peux faire autrement.",
+              "hoehe": 10.4
+            },
+            {
+              "art": "feld",
+              "label": "Personnes qui aident – qui, pour quoi et comment les joindre",
+              "beispiel": "Tante Sofia, quand ça chauffe à la maison : l’appeler, même le soir. Kanner- a Jugendtelefon : 116 111",
+              "hoehe": 10.4
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Ton carnet t’appartient. L’adulte ne lit que ce que tu lui montres. Jusqu’en juin, il reste dans la salle pour que rien ne se perde."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes tiennent, pendant la dernière année de cours, un carnet de skills qu’ils complètent à chaque module : skills, plans, phrases et personnes qui les accompagnent au-delà du cours.",
+        "ablauf": [
+          "Séance 1 (15 min) : distribuer les classeurs, montrer le carnet de l’adulte, créer la page 1. Ne pas faire lire la phrase de juin.",
+          "Commencer la première page de rubriques : un skill qui aide déjà. Les nouveaux notent ce qui les aide hors cours.",
+          "À chaque fin de module (10 min) : recopier et remplir la page 2. Pas besoin de remplir toutes les rubriques.",
+          "Les fiches à garder s’ajoutent et figurent au sommaire, page 1.",
+          "Module final : parcourir le carnet, combler les lacunes, l’emporter."
+        ],
+        "hintergrund": "Ce qu’on apprend doit être mobilisable au quotidien, sinon cela s’efface à la fin du groupe. La DBT pour adolescents consigne donc les skills par écrit et en demande régulièrement l’usage (Rathus & Miller, 2015). La rubrique « Plans » utilise des plans « si … alors », qui améliorent nettement la mise en œuvre (Gollwitzer, 1999). « Personnes qui aident » suit le plan de sécurité de Stanley et Brown (2012) : une aide concrète, avec nom et chemin. Remplir soi-même son carnet, c’est voir noir sur blanc ce qu’on sait déjà faire – source d’efficacité personnelle (Bandura, 1977).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Une seule rubrique par module ; qui écrit peu dicte ou colle des cartes.",
+          "schwerer": "Noter pour chaque skill jusqu’à quel niveau de tension (0–100) il agit."
+        },
+        "impulse": [
+          "Que veux-tu encore savoir de ce module dans cinq ans ?",
+          "Quelle phrase t’a vraiment servi dernièrement ?"
+        ],
+        "tipps": [
+          "Page 1 sur papier épais, page 2 recopiée à chaque module ; pochettes transparentes utiles.",
+          "L’adulte tient lui-même un carnet – entrées vraies, pas parfaites."
+        ],
+        "achtung": "Personnel : ne pas ramasser, lire à voix haute ni évaluer. Indices d’automutilation, de violence ou d’idées suicidaires : entretien individuel, informer la direction compétente (responsable), plan de protection.",
+        "material": "Classeur A4, pochettes"
+      }
     }
   },
   {
@@ -416,6 +571,185 @@
         "achtung": "Sehr niedrige Werte oder Selbstabwertung nur unter vier Augen ansprechen. Verletzendes sofort stoppen. Bei anhaltender Niedergeschlagenheit SePAS oder Responsable einbeziehen.",
         "material": "Stifte in zwei Farben"
       }
+    },
+    "fr": {
+      "titel": "Mon radar de skills",
+      "untertitel": "Où j’en suis – et où je veux arriver d’ici juin",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Le radar montre ton profil : où tu es déjà à l’aise et où tu peux encore progresser. Personne n’est à 5 partout. C’est un instantané, pas un bulletin."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dans quelle mesure y arrives-tu en ce moment ? Mets une croix sur chaque ligne et relie les croix par une ligne.",
+          "hinweis": "Pense aux dernières semaines, pas à ton meilleur ou à ton pire jour. 1 = j’y arrive à peine, 5 = j’y arrive presque toujours."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "items": [
+            "Reconnaître mes émotions : je remarque tôt ce que je ressens et je trouve un mot pour le dire.",
+            "Redescendre : quand c’est trop, je fais retomber ma tension par moi-même.",
+            "Examiner mes pensées : une pensée méchante sur moi, je la vérifie au lieu de la croire.",
+            "Dire ce dont j’ai besoin : je le dis clairement et calmement, sans reproche.",
+            "Dire non : je m’en tiens à mon non, même quand les autres insistent.",
+            "Régler un conflit : j’aborde un conflit sans qu’il s’envenime.",
+            "Prendre soin de moi : sommeil, repas, pauses et mouvement, j’y arrive la plupart du temps.",
+            "Demander de l’aide : quand je n’y arrive pas par moi-même, je demande à quelqu’un."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regard extérieur : donne ta feuille à une personne du groupe. Elle dessine une étoile à côté des deux domaines où elle voit tes forces.",
+          "hinweis": "Seulement des forces, pas de critique. Si la personne ne te connaît pas depuis longtemps, elle écrit ce qu’elle a remarqué chez toi aujourd’hui."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "J’ai vu comment tu …"
+          ],
+          "linien": 3
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Forces et axes de progrès : que remarques-tu en regardant ta ligne et les étoiles ?"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mes forces – ici, je suis déjà à l’aise",
+              "beispiel": "Redescendre : je sors avant d’élever la voix.",
+              "hoehe": 5.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Mes axes de progrès – ici, je veux grandir",
+              "beispiel": "Dire non, surtout avec les copains",
+              "hoehe": 5.4
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Un objectif qui tient la route …",
+          "punkte": [
+            "dépend de toi – pas du fait que les autres changent,",
+            "dit ce que tu veux faire, pas ce que tu veux arrêter,",
+            "est assez concret pour qu’on voie si ça marche,",
+            "est réalisable d’ici juin si tu t’y tiens."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deux objectifs pour ton année : un tiré de tes axes de progrès, un du parcours de l’année.",
+          "hinweis": "Par exemple : demander des précisions en stage quand je ne comprends pas quelque chose – ou gérer mon argent pendant un mois."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Objectif 1 – d’ici juin, je veux …"
+              ],
+              "linien": 3
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Je le verrai à ceci : …",
+                "Mon premier pas : …"
+              ],
+              "linien": 2
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ce qui m’aide : …"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Objectif 2 – d’ici juin, je veux …"
+              ],
+              "linien": 3
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Je le verrai à ceci : …",
+                "Mon premier pas : …"
+              ],
+              "linien": 2
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ce qui m’aide : …"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Ton radar t’appartient. Garde-le dans ton carnet de skills – à la fin de l’année, un second regard vaut la peine."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’évaluent dans huit domaines de skills, reçoivent un regard extérieur sur leurs forces, nomment forces et axes de progrès et formulent deux objectifs pour l’année de cours.",
+        "ablauf": [
+          "Introduction (6 min) : expliquer les huit domaines avec des exemples, montrer son propre radar – avec un 2 sincère.",
+          "Tâche 1 (8 min) seul. Les nouveaux pensent à l’école, à la famille et aux amis plutôt qu’au cours.",
+          "Tâche 2 (5 min) à deux : l’adulte forme les paires, seulement des forces. Avec un nouveau, l’adulte prend le relais.",
+          "Tâche 3 (4 min) : comparer la ligne et les étoiles.",
+          "Après le radar au sol : tâche 4 (8 min). Vérifier : dépend-il de toi ? Peut-on le voir ? Réalisable d’ici juin ?"
+        ],
+        "hintergrund": "Un état des lieux en début d’année rend les progrès visibles plus tard et rattache les objectifs à de vrais axes de progrès. L’image de soi et celle que donnent les autres divergent souvent ; la fenêtre de Johari explique pourquoi les autres voient des facettes qu’on ne voit pas soi-même (Luft & Ingham, 1955). Le regard extérieur n’admet volontairement que des forces : un retour fonctionne s’il porte sur un comportement observable et aide peu s’il juge la personne (Hattie & Timperley, 2007). Des objectifs choisis librement sont poursuivis plus longtemps (Deci & Ryan, 2000), et un premier pas fixé à l’avance augmente la probabilité de se mettre en route (Gollwitzer, 1999).",
+        "quellen": [
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Évaluer seulement les quatre domaines les plus importants ; un objectif au lieu de deux.",
+          "schwerer": "Noter pour chaque objectif un obstacle intérieur et un plan « si … alors » (fiche de la Toolbox « Atteindre ses objectifs avec WOOP »)."
+        },
+        "impulse": [
+          "Dans quel domaine tes amis te donneraient-ils une note plus élevée que toi ?",
+          "Quel domaine t’aiderait le plus en stage ?"
+        ],
+        "tipps": [
+          "Faire reformuler les objectifs qui visent à changer les autres : que peux-tu faire toi-même ?",
+          "La feuille va dans le carnet de skills ; en juin, un second radar permet la comparaison."
+        ],
+        "achtung": "N’aborder les valeurs très basses ou la dévalorisation de soi qu’en tête-à-tête. Arrêter aussitôt toute remarque blessante. En cas d’abattement durable, impliquer le SePAS ou la direction compétente (responsable).",
+        "material": "Stylos de deux couleurs"
+      }
     }
   },
   {
@@ -556,6 +890,115 @@
         ],
         "achtung": "Geld kann ein wunder Punkt sein: nicht nach echten Wünschen oder Verhältnissen fragen. Lösen „Familie“ oder „Gesund bleiben“ etwas aus, später ein Gespräch anbieten; bei Hinweisen auf Belastung Responsable informieren.",
         "material": "Flipchart für die Bank, Kochlöffel"
+      }
+    },
+    "fr": {
+      "titel": "Les enchères des valeurs",
+      "untertitel": "1000 écus, douze lots – pour quoi enchéris-tu, et à quoi renonces-tu ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Comment se déroulent les enchères",
+          "punkte": [
+            "Tu as 1000 écus. Pas plus : pas de crédit, pas de mise en commun.",
+            "Chaque lot démarre à 50 écus. On enchérit par paliers de 50 – se lever et annoncer à voix haute.",
+            "Qui enchérit le plus remporte le lot. La banque déduit le prix de ton compte."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis les douze lots. Coche les trois que tu veux absolument avoir.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "1 · Une amitié qui dure toute la vie",
+            "2 · Voyager pendant un an, où tu veux",
+            "3 · Exceller dans un domaine – et que tout le monde le sache",
+            "4 · 500 000 euros sur ton compte",
+            "5 · Une famille sur qui tu peux toujours compter",
+            "6 · Un monde sans racisme ni exclusion",
+            "7 · Un an à ne faire que ce dont tu as envie",
+            "8 · Décider toi-même de ce que tu apprends et de la façon dont tu vis",
+            "9 · Transmettre les fêtes, la langue et les coutumes de ta famille",
+            "10 · Ne jamais avoir d’ennuis – avec l’école, tes parents ou ton employeur",
+            "11 · 100 000 abonnés qui célèbrent chaque publication",
+            "12 · Rester en bonne santé – toi et tous ceux que tu aimes"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie ton argent : combien offres-tu au maximum pour tes trois lots ?",
+          "hinweis": "1000 écus au maximum en tout. Réfléchis aussi : que fais-tu si un autre lot devient soudain bon marché ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Lot",
+            "Maximum",
+            "Remporté ? Pour combien ?"
+          ],
+          "breiten": [
+            0.8,
+            1.2,
+            2.4
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "N° 8",
+            "400 écus",
+            "oui, pour 350 écus"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après les enchères : regarde ton résultat."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "J’ai enchéri le plus pour …",
+            "J’ai dû renoncer à …",
+            "Ce que j’ai découvert de surprenant sur moi : …",
+            "Derrière mon enchère la plus élevée se trouve la valeur …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Dans un jeu à budget limité, les jeunes vivent ce pour quoi ils se décident et ce à quoi ils renoncent, et reconnaissent les valeurs derrière leurs enchères.",
+        "ablauf": [
+          "Désigner d’avance une banque : paperboard, tous les noms, 1000 écus chacun.",
+          "Planifier (3 min) : tâches 1 et 2 en silence ; les plans restent secrets.",
+          "Enchérir (12 min) : mise de départ 50, paliers de 50, debout. Laisser chaque lot agir un instant.",
+          "Bilan (6 min) : tâche 3 seul, puis tour de table : qu’a-t-on acheté, à quoi a-t-on renoncé ?",
+          "Solution : 1 Bienveillance, 2 Variété, 3 Réussite, 4 Pouvoir, 5 Sécurité, 6 Justice, 7 Plaisir, 8 Autodétermination, 9 Tradition, 10 Conformité, 11 Pouvoir, 12 Sécurité."
+        ],
+        "hintergrund": "Les valeurs se voient moins dans ce qu’on dit que dans ce pour quoi on engage des ressources limitées : avec 1000 écus, chaque enchère est aussi un choix contre autre chose. Selon la clarification des valeurs, une valeur ne devient sienne que par un libre choix entre alternatives, l’adhésion et l’action (Simon, Howe & Kirschenbaum, 1972) ; les enchères imposent ce choix. Les lots couvrent les dix valeurs de Schwartz (1992) ; pouvoir et sécurité reviennent deux fois, car argent, prestige et santé préoccupent surtout les jeunes. Un lot relève souvent de deux valeurs – matière à discussion. Pour Erikson (1968), s’engager envers ses propres valeurs plutôt que de les reprendre relève du développement de l’identité.",
+        "quellen": [
+          "Simon, S. B., Howe, L. W. & Kirschenbaum, H. (1972). Values Clarification: A Handbook of Practical Strategies for Teachers and Students. New York: Hart.",
+          "Schwartz, S. H. (1992). Universals in the content and structure of values: Theoretical advances and empirical tests in 20 countries. Advances in Experimental Social Psychology, 25, 1–65.",
+          "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement huit lots aux enchères ; l’adulte explique chaque lot.",
+          "schwerer": "Le groupe invente un treizième lot, l’associe à une valeur et le met aux enchères à la fin."
+        },
+        "impulse": [
+          "As-tu enchéri parce que tu voulais le lot – ou parce que tu voulais gagner ?",
+          "Quel lot l’aurait emporté chez toi il y a trois ans ?"
+        ],
+        "tipps": [
+          "Cuillère en bois en guise de marteau ; jouer le commissaire-priseur avec brio.",
+          "À deux jeunes seulement, l’adulte enchérit aussi, avec son propre compte."
+        ],
+        "achtung": "L’argent peut être un point sensible : ne pas questionner sur les souhaits ni la situation réels. Si « famille » ou « rester en bonne santé » touche quelqu’un, proposer un entretien ; indices de souffrance : informer la direction compétente (responsable).",
+        "material": "Paperboard (banque), cuillère en bois"
       }
     }
   },
@@ -789,6 +1232,205 @@
         "achtung": "Die Reihenfolge ist privat. Abwertendes über Religion oder Herkunft sofort stoppen. Bei Hinweisen auf Zwang oder Gewalt in der Familie: Schutzkonzept, Responsable informieren.",
         "material": "Scheren, Umschläge"
       }
+    },
+    "fr": {
+      "titel": "Mes valeurs",
+      "untertitel": "Dix valeurs présentes dans presque toutes les cultures – et lesquelles sont en tête chez toi",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les valeurs ne se voient pas. On voit seulement pour quoi quelqu’un investit du temps, de l’argent et du courage. Chaque personne porte les dix en elle – avec des intensités différentes."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpe les cartes et aligne-les : en haut la valeur qui compte le plus pour toi, en bas celle qui compte le moins.",
+          "hinweis": "Sur les cartes vides, tu peux écrire des valeurs qui te manquent – par exemple l’humour ou la foi.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 118,
+          "karten": [
+            {
+              "titel": "Autodétermination",
+              "text": "décider soi-même, suivre sa propre voie",
+              "bild": "icon:arrow-fork"
+            },
+            {
+              "titel": "Variété",
+              "text": "vivre du nouveau, oser, l’aventure",
+              "bild": "icon:rocket"
+            },
+            {
+              "titel": "Plaisir",
+              "text": "s’amuser, profiter de la vie",
+              "bild": "icon:confetti"
+            },
+            {
+              "titel": "Réussite",
+              "text": "exceller dans un domaine, atteindre ses objectifs",
+              "bild": "icon:trophy"
+            },
+            {
+              "titel": "Pouvoir",
+              "text": "influence, argent, prestige, diriger",
+              "bild": "icon:crown"
+            },
+            {
+              "titel": "Sécurité",
+              "text": "un foyer sûr, la santé, l’ordre",
+              "bild": "icon:shield"
+            },
+            {
+              "titel": "Conformité",
+              "text": "respecter les règles, être attentionné, ne pas faire de vagues",
+              "bild": "icon:traffic-lights"
+            },
+            {
+              "titel": "Tradition",
+              "text": "honorer et transmettre coutumes, croyances et origines",
+              "bild": "icon:candle"
+            },
+            {
+              "titel": "Bienveillance",
+              "text": "être là pour sa famille et ses amis, honnête et fidèle",
+              "bild": "icon:heart-handshake"
+            },
+            {
+              "titel": "Justice",
+              "text": "mêmes droits pour tous, protéger la nature, tolérance",
+              "bild": "icon:world"
+            },
+            {
+              "titel": "Ma valeur"
+            },
+            {
+              "titel": "Ma valeur"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Le cercle des valeurs",
+          "text": "Les dix valeurs forment un cercle. Les voisines s’entendent bien, les opposées tirent dans des directions différentes : « Ouvert à la nouveauté » contre « Préserver », « Être fort » contre « Être là pour les autres ».",
+          "punkte": [
+            "Ouvert à la nouveauté : autodétermination, variété, plaisir",
+            "Être fort : réussite, pouvoir",
+            "Préserver : sécurité, conformité, tradition",
+            "Être là pour les autres : bienveillance, justice"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton top 3 : quelles trois valeurs sont tout en haut ? À quoi les reconnaît-on dans ton quotidien ?",
+          "hinweis": "Écris ce que tu fais – pas ce que tu trouves bien."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "Ma valeur",
+            "À quoi on la reconnaît chez moi"
+          ],
+          "breiten": [
+            0.45,
+            1.3,
+            3.6
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "beispiel": [
+            "p. ex.",
+            "Bienveillance",
+            "J’accompagne mon petit frère au bus chaque matin, même quand je suis en retard."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma phrase de valeurs pour le carnet de skills : ce qui compte pour moi, c’est que …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand deux valeurs se disputent : pense à un dilemme que tu connais.",
+          "hinweis": "Par exemple : fête ou promesse ? Copains ou justice ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ces deux valeurs tirent chez moi dans des directions différentes : …",
+            "Alors la question qui m’aide : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Semaine des valeurs : quand agis-tu selon l’une de tes trois valeurs ? Colorie une étoile pour ce jour-là.",
+          "hinweis": "Les petits moments comptent : aider quelqu’un, être honnête, essayer quelque chose de nouveau."
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "",
+            "",
+            ""
+          ],
+          "symbol": "stern"
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Ton classement t’appartient. Les cartes et ton top 3 vont dans ton carnet de skills."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes découvrent les dix valeurs fondamentales de Schwartz, les classent selon leur propre importance, nomment leur top 3 avec des exemples du quotidien et observent pendant une semaine quand ils agissent en conséquence.",
+        "ablauf": [
+          "Copier la page 1 en recto seul. Pendant qu’on explique le cercle des valeurs, tout le monde découpe les cartes.",
+          "Après les enchères (4 min) : aligner les cartes et comparer avec les enchères.",
+          "Tâche 2 (6 min) : top 3 avec exemples – que fais-tu, à quoi le voit-on ?",
+          "Tâche 3 en complément ; la tâche 4 court jusqu’à la prochaine séance.",
+          "Cartes dans une enveloppe, dans le carnet de skills."
+        ],
+        "hintergrund": "Schwartz (1992) décrit dix valeurs fondamentales qui reviennent dans des enquêtes menées dans 20 pays et forment un cercle : les valeurs voisines se complètent, les valeurs opposées sont en tension. Les cartes traduisent dans un langage proche des jeunes : variété pour stimulation, plaisir pour hédonisme, autodétermination pour autonomie, justice pour universalisme. Comprendre les valeurs comme des directions choisies sur lesquelles on aligne son action vient de la thérapie d’acceptation et d’engagement (Hayes et al., 2012).",
+        "quellen": [
+          "Schwartz, S. H. (1992). Universals in the content and structure of values: Theoretical advances and empirical tests in 20 countries. Advances in Experimental Social Psychology, 25, 1–65.",
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Ne chercher que le top 3 ; trouver les exemples en discutant avec l’adulte.",
+          "schwerer": "Comparer l’alignement, les enchères et une décision de la semaine passée : ce qu’on dit et ce qu’on fait vont-ils ensemble ?"
+        },
+        "impulse": [
+          "Quelle valeur aurait été en tête chez toi il y a trois ans ?",
+          "À quoi quelqu’un qui t’accompagnerait une semaine reconnaîtrait-il ton top 3 ?"
+        ],
+        "tipps": [
+          "L’adulte montre son propre alignement – avec une valeur qui lui est difficile.",
+          "Le plaisir se place dans le cercle entre « Ouvert à la nouveauté » et « Être fort »."
+        ],
+        "achtung": "Le classement est privé. Arrêter aussitôt toute remarque dévalorisante sur la religion ou l’origine. En cas d’indices de contrainte ou de violence dans la famille : plan de protection, informer la direction compétente (responsable).",
+        "material": "Ciseaux, enveloppes"
+      }
     }
   },
   {
@@ -951,6 +1593,134 @@
         ],
         "achtung": "Nichts vorlesen, einsammeln oder nachfragen. Bei Hinweisen auf Diskriminierung, Gewalt oder Hoffnungslosigkeit: Einzelgespräch, Responsable informieren, Schutzkonzept.",
         "material": "Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "Ma fleur d’identité",
+      "untertitel": "Qui suis-je – au lycée, à la maison, en ligne, dans plusieurs langues ? Et qui je veux devenir ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "L’identité est la réponse à la question : qui suis-je ? À 15 ou 16 ans, elle n’est pas terminée – tu essaies, tu choisis, tu rejettes. Au lycée, tu te montres autrement qu’à la maison ou en ligne, et pourtant tu restes toujours toi."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta fleur d’identité : écris dans chaque pétale ce qui, dans ce domaine, fait partie de toi.",
+          "hinweis": "Des mots-clés suffisent. Les pétales sont des propositions – laisse vide ce que tu ne veux pas remplir."
+        },
+        {
+          "art": "mindmap",
+          "mitte": "Moi",
+          "aeste": [
+            "Langues et cultures",
+            "Personnes qui font partie de ma vie",
+            "Lycée, travail, stage",
+            "Cercle d’amis",
+            "En ligne",
+            "Ce que j’aime faire"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui fait encore partie de moi : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Donné ou choisi ? Qu’est-ce qu’on t’a transmis – et qu’as-tu choisi toi-même ?",
+          "hinweis": "Certaines choses sont les deux : ta langue vient de ta famille – ta façon de l’utiliser, c’est toi qui la décides."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Transmis",
+              "beispiel": "mes langues, mon nom, le village de mes grands-parents",
+              "hoehe": 6.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Choisi par moi",
+              "beispiel": "le basket, ma musique, ma façon de m’habiller",
+              "hoehe": 6.4
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Un jour, plusieurs rôles : qui es-tu à quel moment – et dans quelle langue ?",
+          "hinweis": "Prends une journée de classe ordinaire. Le symbole dans la case, tu peux le dessiner toi-même."
+        },
+        {
+          "art": "tagesplan",
+          "zeilen": [
+            {
+              "zeit": "7 h",
+              "bild": "icon:home",
+              "text": "Exemple : grande sœur dans la cuisine – portugais"
+            }
+          ],
+          "leer": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui veux-tu être ? Complète les phrases."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui doit rester ainsi chez moi : …",
+            "Ce qui doit grandir chez moi : …",
+            "À 21 ans, je voudrais être quelqu’un qui …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Ta fleur t’appartient. Tu ne racontes que ce que tu veux raconter – un pétale vide est aussi une réponse."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes décrivent avec la fleur d’identité ce qui, dans différents domaines de vie, fait partie d’eux, distinguent le donné du choisi, repèrent leurs rôles au fil de la journée et formulent qui ils veulent être.",
+        "ablauf": [
+          "Introduction (10 min) : schéma au tableau avec la journée d’Aylin. Question : quelle Aylin est la vraie ?",
+          "Tâches 1 et 2 en individuel (15 min), puis à deux : raconter un pétale de son choix (5 min).",
+          "Tâche 3 en complément pour les plus rapides ou à la maison.",
+          "Après la courte transition : tâche 4 (7 min), sans lecture à voix haute. La fleur va dans le carnet de skills."
+        ],
+        "hintergrund": "Selon Erikson (1968), la quête d’identité est la tâche centrale de l’adolescence : essayer des rôles, examiner des valeurs, s’engager. Harter (2012) décrit que les jeunes se vivent différemment selon le milieu, et que ces contradictions déstabilisent à mi-adolescence. « Donné ou choisi ? » reprend Marcia (1966) : engagements repris ou explorés soi-même. La tâche 4 s’appuie sur les « soi possibles » qui orientent l’action (Markus & Nurius, 1986). Plusieurs langues et cultures font partie de la vie de nombreux jeunes au Luxembourg ; les exercices sur les appartenances multiples sont courants en éducation aux droits humains (Council of Europe, 2012).",
+        "quellen": [
+          "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Marcia, J. E. (1966). Development and validation of ego-identity status. Journal of Personality and Social Psychology, 3(5), 551–558.",
+          "Markus, H. & Nurius, P. (1986). Possible selves. American Psychologist, 41(9), 954–969.",
+          "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Quatre pétales seulement, des mots-clés plutôt que des phrases ; l’adulte écrit avec la personne qui le souhaite.",
+          "schwerer": "Pour deux pétales, noter leur évolution depuis trois ans."
+        },
+        "impulse": [
+          "Quel pétale montrerais-tu en premier à une nouvelle connaissance – et lequel en dernier ?",
+          "Dans quelle langue es-tu le plus toi-même ?"
+        ],
+        "tipps": [
+          "L’adulte montre sa propre fleur avec un pétale vide : cela autorise les lacunes.",
+          "Ouvrir expressément « Personnes qui font partie de ma vie » aux amis, éducateurs et animaux de compagnie."
+        ],
+        "achtung": "Ne rien faire lire, ramasser ni questionner. Indices de discrimination, de violence ou de désespoir : entretien individuel, informer la direction compétente (responsable), plan de protection.",
+        "material": "Crayons de couleur"
       }
     }
   },
@@ -1126,6 +1896,145 @@
         ],
         "achtung": "Einen leeren inneren Ring nur unter vier Augen ansprechen. Folgt jemand Accounts mit Gewalt, Hass oder Extrem-Diäten oder wird online von Erwachsenen umworben: Gespräch, Responsable, Schutzkonzept.",
         "material": "Profilkarten, Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Modèles : vrais ou mis en scène ?",
+      "untertitel": "Qui t’influence, que prends-tu chez eux – et pour qui es-tu toi-même un modèle ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Un modèle n’est pas parfait. Un modèle, c’est quelqu’un chez qui tu prends quelque chose : une attitude, une phrase, une façon de gérer le stress. Certains, tu les connais personnellement, d’autres seulement par l’écran."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui t’influence ? Note des noms dans les cercles : au centre, les personnes que tu connais, à l’extérieur celles que tu ne connais que par les médias.",
+          "hinweis": "Des initiales ou des surnoms suffisent. Le cercle du milieu est pour les personnes que tu ne connais que de vue."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "zielscheibe",
+              "ringe": [
+                "je les connais par les médias",
+                "je les connais de vue",
+                "je les connais personnellement"
+              ],
+              "mitte": "moi"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "text": "Que prends-tu chez deux de ces personnes ?"
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Chez …, je m’inspire de la façon dont …",
+                "Chez …, je m’inspire de la façon dont …"
+              ],
+              "linien": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le test du modèle : prends un modèle du cercle extérieur et vérifie ce que tu sais vraiment de cette personne."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "oui",
+            "en partie",
+            "non",
+            "je ne sais pas"
+          ],
+          "items": [
+            "Je connais aussi la personne dans des situations réelles, pas seulement par des clips.",
+            "Elle montre aussi ses erreurs, ses efforts et ses mauvais jours – pas seulement des résultats.",
+            "Elle ne gagne pas d’argent parce que je la suis : pas de pub, pas de codes promo, pas de formations.",
+            "Ce qu’elle dit correspond à ce qu’elle fait.",
+            "Après l’avoir regardée, j’ai plutôt envie d’avancer que le sentiment de ne pas être à la hauteur.",
+            "Elle traite les autres avec respect – même ceux qui la contredisent."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton bilan : que continues-tu à prendre chez ce modèle – et que préfères-tu laisser ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce que je continue à prendre : …",
+            "Ce que je laisse plutôt : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Être soi-même un modèle : qui s’inspire de toi – et de quoi ?",
+          "hinweis": "Frères, sœurs, cousins et cousines, plus jeunes au club ou dans le bus, nouveaux venus dans le cours – que tu le veuilles ou non."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ceux qui me regardent : …",
+            "Je veux être un modèle en cela : …",
+            "Voilà comment je le montre cette semaine : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Un mot pour les plus jeunes : écris le brouillon de ta carte pour quelqu’un qui commence tout juste la première année du cours.",
+          "hinweis": "Un conseil, un skill ou une phrase qui t’aurait servi à 12 ans. Avec ton prénom seulement, ou sans nom."
+        },
+        {
+          "art": "feld",
+          "label": "Mon brouillon",
+          "beispiel": "Si quelque chose t’énerve dans le cours, reste quand même. La respiration en carré, je la trouvais gênante au début, aujourd’hui elle m’aide avant chaque examen. Noah, 16 ans",
+          "hoehe": 5.2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Quelqu’un te met la pression en ligne, veut te prendre de l’argent ou te fait peur ? Parle à une personne de confiance ou contacte la BEE SECURE Helpline (8002 1234, gratuit) ou le Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes classent les personnes qui les influencent selon leur proximité, examinent des modèles issus des médias avec six questions et décident de quoi ils veulent eux-mêmes être un modèle.",
+        "ablauf": [
+          "Tâches 1 et 2 (12 min) : les initiales suffisent ; en groupe, dire seulement dans quel cercle se trouvent le plus de noms.",
+          "Test du modèle (15 min) : s’exercer à deux sur une fiche de profil inventée, puis tâches 3 et 4 seul sur un modèle personnel.",
+          "Tâches 5 et 6 (10 min) : être soi-même un modèle, puis le mot pour les plus jeunes ; l’adulte lit les cartes avant de les transmettre.",
+          "La fiche va dans le carnet de skills ; les personnes du cercle intérieur vont avec « Personnes qui aident »."
+        ],
+        "hintergrund": "Selon Bandura (1977), l’expérience vicariante – voir une personne semblable réussir quelque chose – est une source importante d’efficacité personnelle. Des relations fiables avec des adultes compétents font partie des facteurs de protection du quotidien (Masten, 2014). Les modèles des réseaux sociaux, eux, montrent une sélection ; les comparaisons avec des publications idéalisées peuvent peser sur l’humeur et l’image de soi (Fardouly et al., 2015). Le test du modèle ne mise donc pas sur l’interdiction, mais oriente le regard vers ce qui manque : efforts, erreurs, intérêts commerciaux.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement la tâche 1 et les trois premières questions du test ; l’adulte lit à voix haute.",
+          "schwerer": "Inventer un profil qui réussit les six questions – et un autre qui échoue partout."
+        },
+        "impulse": [
+          "Que ferait ton modèle si aucune caméra ne tournait ?",
+          "Qui t’a appris quelque chose sans le savoir ?"
+        ],
+        "tipps": [
+          "Ne pas argumenter contre les idoles des jeunes ; la question de ce qu’on prend chez elles mène plus loin.",
+          "L’adulte cite lui-même un modèle du cercle intérieur."
+        ],
+        "achtung": "N’aborder un cercle intérieur vide qu’en tête-à-tête. Si quelqu’un suit des comptes de violence, de haine ou de régimes extrêmes, ou est approché en ligne par des adultes : entretien, informer la direction compétente (responsable), plan de protection.",
+        "material": "Fiches de profil, stylos"
       }
     }
   }

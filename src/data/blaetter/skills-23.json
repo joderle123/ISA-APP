@@ -170,6 +170,144 @@
         "achtung": "Wer sich in einer Geschichte wiedererkennt, muss das nicht zeigen: nicht nachfragen, Einzelgespräch anbieten. Bei Hinweisen auf Gewalt oder eine Krise Schutzkonzept anwenden, Responsable informieren.",
         "material": "Blatt je Person, Textmarker, Tafel"
       }
+    },
+    "fr": {
+      "titel": "Quatre histoires pour rebondir",
+      "untertitel": "Quatre jeunes, quatre périodes difficiles – et ce qui leur a permis de se relever",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ces histoires sont inventées. Pourtant, des jeunes vivent des situations de ce genre au Luxembourg tous les jours. Aucune des quatre personnes n’est une héroïne ou un héros – c’est justement ce qui compte."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lisez votre histoire et surlignez tout ce qui a aidé la personne.",
+          "hinweis": "Repérez aussi les petits détails : une phrase, un lieu, une tâche, une habitude.",
+          "symbole": [
+            "lesen",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Rafael, 16 ans",
+          "bild": "icon:ball-football",
+          "text": "Rafael avait douze ans quand il est arrivé du Brésil à Esch, avec sa mère et sa petite sœur. En classe, il comprenait à peine ce qui se disait ; à la récréation, il restait souvent seul. Sa mère travaillait en horaires décalés, alors c’est lui qui allait chercher sa sœur l’après-midi et lui préparait à manger. Un jour, l’entraîneur du club de futsal lui a demandé s’il voulait aider à l’entraînement des enfants. Là, Rafael s’est aperçu qu’il savait bien expliquer – avec les mains, les pieds et ses premiers mots d’allemand. Aujourd’hui, il dit : « Ma sœur avait besoin de moi. C’est ce qui me faisait me lever chaque matin. »"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Zoé, 15 ans",
+          "bild": "icon:backpack",
+          "text": "Depuis la séparation de ses parents, Zoé vit une semaine chez sa mère à Ettelbruck, une semaine chez son père en ville. Il manque toujours quelque chose : le chargeur, le cahier de français, les chaussures de sport. Ses notes ont tellement baissé qu’elle a dû redoubler. À la maison, elle ne voulait peser sur personne. C’est sa grand-mère qui l’a remarqué la première, en cuisinant avec elle chaque mercredi, et qui l’a encouragée à prendre rendez-vous au SePAS. Là, Zoé a établi un plan : des moments de travail fixes chez chacun de ses parents et une liste pour son sac. Aujourd’hui, elle dit : « Redoubler, ce n’était pas une chute. C’était un nouveau départ – avec un plan. »"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Mathis, 17 ans",
+          "bild": "icon:bandage",
+          "text": "Mathis jouait au handball depuis l’âge de sept ans, et ses amis, c’était son équipe. À quinze ans, il s’est rompu les ligaments croisés à l’entraînement. Huit mois sans sport, trois semaines de béquilles, et les autres partaient en tournoi sans lui. Il s’est replié sur lui-même et était souvent irritable. Son grand frère l’emmenait quand même à chaque match à domicile. La kinésithérapeute lui fixait de petits objectifs, et Mathis tenait une liste de tous ses progrès. Un jour, l’entraîneuse lui a demandé s’il voulait tenir les statistiques pendant les matchs. Aujourd’hui, il dit : « J’ai compris que je fais partie de l’équipe même sans ballon. »"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Nora, 15 ans",
+          "bild": "icon:notebook",
+          "text": "La mère de Nora est souvent malade depuis deux ans. Les mauvais jours, elle reste au lit, et Nora prépare le petit-déjeuner de son petit frère et l’emmène à l’école. Elle n’en a parlé à personne – par honte et par peur que tout change. En classe, elle était souvent fatiguée. Un jour, après le cours, sa titulaire de classe lui a demandé : « Et toi, comment vas-tu, en vrai ? » Pour la première fois, Nora a dit la vérité. Depuis, sa tante prend son frère le week-end, et Nora va le vendredi à la maison des jeunes, où elle peut simplement avoir quinze ans. Elle écrit des paroles de chansons dans un carnet. Aujourd’hui, elle dit : « Le plus dur, c’était la première phrase. »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Notez ce qui a aidé : d’abord pour votre personnage, puis, pendant les présentations, pour les autres.",
+          "hinweis": "J’ai : des personnes et des lieux. Je suis : des qualités. Je sais : des compétences et des skills. Tournant : le moment à partir duquel les choses ont commencé à aller mieux.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Personne",
+            "J’ai …",
+            "Je suis …",
+            "Je sais …",
+            "Tournant"
+          ],
+          "breiten": [
+            0.8,
+            1.35,
+            1.0,
+            1.15,
+            1.2
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Les enfants de Kauai",
+            "une grand-mère ou un prof qui me soutient",
+            "aimable, curieux·se",
+            "quelque chose dont je suis fier·ère",
+            "une seconde chance"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comparez : qu’est-ce qui revient dans les quatre histoires ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Dans les quatre histoires, il y a …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Ce que montre la recherche",
+          "punkte": [
+            "La résilience n’est pas une dureté innée. Elle naît de choses ordinaires : des personnes, des compétences, de bons lieux, de l’espoir.",
+            "Souvent, il suffit d’une seule personne sur qui on peut compter. Ce n’est pas forcément quelqu’un de la famille.",
+            "Il n’est jamais trop tard : beaucoup trouvent leur voie seulement à l’âge de jeune adulte, grâce à une seconde chance."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rien que pour toi : quelle phrase de ces histoires te reste en tête ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui me reste en tête : …",
+            "Parce que …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes cherchent, dans quatre études de cas inventées, ce qui a aidé des adolescents à traverser des périodes difficiles, et font le lien avec les résultats de la recherche sur la résilience.",
+        "ablauf": [
+          "Avant (10 min) : raconter l’étude de Kauai et noter au tableau les sources de force des enfants de Kauai.",
+          "Tâche 1 (8 min) : former au hasard des binômes ou des trios, une histoire chacun. Lire, surligner, remplir sa propre ligne.",
+          "Présentations (8 min) : une minute par personne ; les autres complètent le tableau, l’adulte qui anime rassemble les réponses au tableau.",
+          "Tâche 3 (4 min) : qu’est-ce qui revient partout ? Attendre la réponse du groupe, puis lire l’encadré. La tâche 4 reste privée."
+        ],
+        "hintergrund": "Les histoires transposent les résultats de l’étude de Kauai dans le quotidien de jeunes au Luxembourg. Werner et Smith (1992) ont retrouvé, chez des enfants qui se développaient bien malgré de nombreux risques, les mêmes facteurs de protection : une personne de référence fiable, souvent hors de la famille, une compétence source de fierté, l’expérience d’être utile, des communautés comme l’école ou un club. Masten (2014) décrit la résilience comme quelque chose d’ordinaire, qui naît des relations, de l’autorégulation, du sentiment d’efficacité et de l’espoir. Les colonnes « J’ai – Je suis – Je sais » reprennent Grotberg (1995) : soutiens extérieurs, forces intérieures, compétences. Les études de cas permettent de parler d’une épreuve sans rien révéler de soi.",
+        "quellen": [
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Grotberg, E. H. (1995). A Guide to Promoting Resilience in Children: Strengthening the Human Spirit. Den Haag: Bernard van Leer Foundation."
+        ],
+        "differenzierung": {
+          "leichter": "L’adulte lit l’histoire à voix haute ; le groupe ne remplit que « J’ai » et le tournant.",
+          "schwerer": "Écrire une cinquième histoire inventée, avec un tournant."
+        },
+        "impulse": [
+          "Qu’est-ce que la personne avait déjà en elle, et qu’a-t-elle trouvé en chemin ?",
+          "Qui a remarqué que ça n’allait pas – et à quoi l’a-t-on vu ?"
+        ],
+        "tipps": [
+          "À repérer : Rafael – entraîneur, sœur ; Zoé – grand-mère, SePAS, plan ; Mathis – frère, petits objectifs ; Nora – titulaire de classe, tante, maison des jeunes.",
+          "La première phrase de Nora prépare la séance suivante."
+        ],
+        "achtung": "Se reconnaître n’oblige à rien : ne pas questionner, proposer un entretien. Violence ou crise : concept de protection, direction compétente (responsable) informée.",
+        "material": "Feuilles, surligneurs, tableau"
+      }
     }
   },
   {
@@ -342,6 +480,143 @@
         ],
         "achtung": "Nicht einsammeln, nicht vorlesen. Bei Hinweisen auf Gewalt, Selbstverletzung oder Suizidgedanken: am selben Tag das Gespräch suchen, Schutzkonzept anwenden, Responsable informieren; akut 112.",
         "material": "Blatt je Person, Plakate der Staffel"
+      }
+    },
+    "fr": {
+      "titel": "Mes sources de force",
+      "untertitel": "Ce qui me soutient quand c’est dur – des personnes, des lieux, des activités et moi-même",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Cette feuille t’appartient. Personne ne la ramasse, et tu ne lis à voix haute que ce que tu veux."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui ou quoi te donne de la force ? Écris dans chaque case ce qui te vient à l’esprit.",
+          "hinweis": "Les affiches de la salle sont une banque d’idées. Les petites choses comptent : une chanson, une odeur, une place près de la fenêtre.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Personnes (et animaux)",
+              "beispiel": "ma cousine, l’entraîneur, mon chien",
+              "hoehe": 6.4
+            },
+            {
+              "art": "feld",
+              "label": "Activités",
+              "beispiel": "basket, dessiner, cuisiner, écouter de la musique à fond",
+              "hoehe": 6.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Lieux",
+              "beispiel": "le banc au bord de la rivière, ma chambre, la maison des jeunes",
+              "hoehe": 6.4
+            },
+            {
+              "art": "feld",
+              "label": "Moi-même",
+              "beispiel": "mon humour, je ne lâche pas, ma foi",
+              "hoehe": 6.4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pense à une période difficile qui est derrière toi. Qu’est-ce qui t’a aidé à tenir à ce moment-là ?",
+          "hinweis": "Rien que pour toi. Quelques mots-clés ou des signes que personne d’autre ne comprend suffisent."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui m’a aidé à tenir : …",
+            "La force dont j’ai fait preuve : …",
+            "Ce que je referais de la même façon aujourd’hui : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quelle fréquence utilises-tu tes sources de force en ce moment ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Personnes – parler, rire, passer du temps avec quelqu’un",
+            "Lieux – être à un endroit qui me fait du bien",
+            "Activités – faire quelque chose qui me plaît ou qui me défoule",
+            "Moi-même – me rappeler mes forces"
+          ],
+          "optionen": [
+            "souvent",
+            "parfois",
+            "rarement"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une source de force que tu as un peu négligée. Quand vas-tu l’utiliser la semaine prochaine ?"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si, jeudi, je sors du lycée sous pression,",
+              "dann": "je sors d’abord vingt minutes avec le chien avant de regarder mon téléphone."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Les sources de force, ça se développe",
+          "text": "Personne n’a toutes ses sources de force en même temps. On peut en trouver de nouvelles : essayer un club, demander à quelqu’un, s’entraîner à un skill. Si rien ne te vient à l’esprit en ce moment, c’est une bonne raison d’en parler avec quelqu’un – pas le signe que quelque chose ne va pas chez toi."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes notent leurs sources de force dans quatre domaines, se rappellent comment ils ont fait face par le passé et prévoient d’utiliser consciemment une source de force la semaine suivante.",
+        "ablauf": [
+          "Après le relais des sources de force (10 min) : laisser les affiches comme banque d’idées, tâche 1 en autonomie, musique douce.",
+          "Tâche 2 uniquement pour soi ; dire explicitement que rien ne sera lu à voix haute ni ramassé.",
+          "Tâches 3 et 4 : où y en a-t-il peu en ce moment ? Planifier une source de force sous forme de phrase « si … alors ».",
+          "À la séance 22, la feuille sert de base à « Mon réseau »."
+        ],
+        "hintergrund": "Le travail axé sur les ressources oriente d’abord le regard vers ce qui soutient (Reddemann, 2001). Les quatre champs correspondent aux systèmes de protection décrits par Masten (2014) : relations, bons lieux et communautés, activités et compétences propres, forces intérieures comme l’humour, l’espoir ou la foi. Se rappeler une période difficile surmontée renforce le sentiment d’efficacité personnelle, dont l’expérience de réussite est la source principale (Bandura, 1977). Un plan « si … alors » relie l’intention à une situation précise et rend sa réalisation plus probable (Gollwitzer, 1999).",
+        "quellen": [
+          "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement deux champs et la phrase « si … alors » ; reprendre des idées des affiches.",
+          "schwerer": "Noter pour chaque source de force comment l’atteindre même un mauvais jour."
+        },
+        "impulse": [
+          "Quelle source de force est toujours accessible – même la nuit ou dans le bus ?",
+          "Quelle source de force as-tu reprise aujourd’hui à quelqu’un d’autre ?"
+        ],
+        "tipps": [
+          "Si le champ « Personnes » reste vide, proposer un court entretien individuel avant la séance 22.",
+          "Faire photographier la feuille : sur le téléphone, elle est toujours à portée de main."
+        ],
+        "achtung": "Ne pas ramasser ni faire lire. Violence, automutilation, idées suicidaires : parler le jour même, concept de protection, direction compétente (responsable) ; urgence : 112.",
+        "material": "Feuilles, affiches du relais"
       }
     }
   },
@@ -589,6 +864,216 @@
         "achtung": "Nur die Übungssituationen spielen. Braucht jemand selbst gerade Hilfe: ruhig zuhören, nichts versprechen, Schutzkonzept anwenden, Responsable am selben Tag informieren; bei akuter Gefahr 112, nicht allein lassen.",
         "material": "Blatt je Person, Rollenkarten, Scheren"
       }
+    },
+    "fr": {
+      "titel": "La première phrase",
+      "untertitel": "Pourquoi il est si difficile de demander de l’aide – et comment commencer la conversation",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Presque tout le monde connaît ça : on ne va pas bien, et pourtant on n’en parle à personne. Ce n’est que rarement parce qu’il n’y a personne. Souvent, c’est une pensée qui barre le chemin."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelles pensées connais-tu ? Coche – rien que pour toi.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "« Ce n’est pas si grave. D’autres ont de vrais problèmes. »",
+            "« Je ne veux être un poids pour personne. »",
+            "« Je dois y arriver par moi-même. »",
+            "« Si je dis quelque chose, tout le monde le saura bientôt. »",
+            "« Je ne sais pas comment commencer. »",
+            "« Je ne sais pas à qui m’adresser. »",
+            "« De toute façon, personne ne peut m’aider. »",
+            "« La dernière fois, ça n’a rien changé non plus. »"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Le chemin vers l’aide compte quatre étapes",
+          "text": "On peut rester bloqué à chaque étape – et à chacune, un pont permet de passer."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Remarquer",
+              "text": "Quelque chose ne va pas, et ça ne passe pas tout seul."
+            },
+            {
+              "titel": "Mettre des mots",
+              "text": "Que se passe-t-il ? Comment je vais ? De quoi ai-je besoin ?"
+            },
+            {
+              "titel": "Savoir où aller",
+              "text": "Qui aide pour quoi ? C’est dans ton réseau."
+            },
+            {
+              "titel": "Oser",
+              "text": "Une première phrase suffit. Le reste vient pendant la conversation."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis l’obstacle que tu connais le mieux. Quel pont te permettrait de le franchir ?",
+          "hinweis": "Un pont, c’est une pensée ou un petit pas. Exemple : « Ce n’est pas si grave » devient « Je n’ai pas à attendre que ça devienne grave. »"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon obstacle : …",
+            "Mon pont : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Construis une première phrase en trois parties : que se passe-t-il ? Comment te sens-tu ? De quoi as-tu besoin ?",
+          "hinweis": "Pour le jeu de rôle, choisis une des situations d’entraînement de la page 2."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Que se passe-t-il ?",
+            "Comment je me sens ?",
+            "De quoi ai-je besoin ?"
+          ],
+          "breiten": [
+            1,
+            1,
+            1.25
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "À la maison, ça se dispute tout le temps en ce moment.",
+            "J’ai du mal à me concentrer en classe.",
+            "On peut parler un moment aujourd’hui ? Je veux juste que quelqu’un m’écoute."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "À quoi peut ressembler un début",
+          "punkte": [
+            "Tu as une minute ? Ça ne va pas très bien en ce moment.",
+            "Je ne sais pas trop comment commencer, mais …",
+            "Tu n’as rien à résoudre. J’ai juste envie de le raconter à quelqu’un.",
+            "Est-ce que ça reste entre nous, ou est-ce que vous devriez le transmettre ?"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Situations d’entraînement pour le jeu de rôle",
+          "text": "On ne joue que ces situations – jamais ses propres problèmes.",
+          "punkte": [
+            "Depuis des semaines, tu ne comprends plus rien en maths et tu n’oses pas demander.",
+            "Dans le chat de groupe, on se moque de toi.",
+            "À la maison, il y a beaucoup de disputes en ce moment et tu dors mal.",
+            "Une amie s’isole et tu t’inquiètes pour elle.",
+            "Pendant le stage, tu as fait une erreur et tu préférerais ne plus y retourner.",
+            "Depuis des jours, tu n’as envie de rien et tu ne sais pas pourquoi."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Si ça ne marche pas tout de suite : que pourrait répondre Nora ? Écris dans la bulle vide.",
+          "hinweis": "« Pas maintenant » ne veut pas dire « jamais ». Si la première personne n’a pas le temps : demander un rendez-vous, redemander plus tard, s’adresser à quelqu’un d’autre, ou écrire au lieu de parler."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Nora",
+              "text": "Madame, vous avez une minute ? Ça ne va pas très bien en ce moment."
+            },
+            {
+              "wer": "L’enseignante",
+              "text": "Ce n’est pas le bon moment, je dois rejoindre ma prochaine classe."
+            },
+            {
+              "wer": "Nora"
+            },
+            {
+              "wer": "L’enseignante",
+              "text": "Demain, à la grande pause, en salle des profs. Ça te va ?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Des cartes pour la poche : découpe une carte ou écris la tienne.",
+          "hinweis": "Si parler est trop difficile en ce moment, tu peux montrer la carte ou envoyer la phrase par message.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 96,
+          "karten": [
+            {
+              "bild": "icon:message-circle",
+              "text": "Ça ne va pas très bien en ce moment. On peut parler un moment ?"
+            },
+            {
+              "bild": "icon:message-circle",
+              "text": "J’ai besoin d’aide et je ne sais pas comment commencer."
+            },
+            {
+              "bild": "icon:message-circle",
+              "text": "Puis-je vous parler après le cours ? C’est important pour moi."
+            },
+            {
+              "bild": "icon:pencil",
+              "text": "Ma phrase :"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent leurs propres obstacles pour demander de l’aide, trouvent des ponts pour les franchir, construisent une première phrase pour une conversation et s’exercent à ne pas lâcher après un « pas maintenant ».",
+        "ablauf": [
+          "Obstacles (15 min) : lire les huit phrases à voix haute, lever la main les yeux fermés, puis tâche 1 en silence. Dessiner le chemin au tableau, chercher des ponts, tâche 2.",
+          "Après la pause (3 min) : tâche 3 – chacun construit sa première phrase pour une situation d’entraînement.",
+          "Carrousel de jeux de rôle (15 min) : cercle intérieur, demander de l’aide ; cercle extérieur, réagir selon la carte de rôle ; changer de partenaire toutes les deux minutes. Ensuite (4 min) : tâche 4 et, en exemple, un appel au Kanner- a Jugendtelefon.",
+          "À la fin de la séance : tâche 5, découper la carte et l’emporter."
+        ],
+        "hintergrund": "Rickwood et al. (2005) décrivent la recherche d’aide comme un chemin par étapes : remarquer une difficulté, l’exprimer, connaître des aides, oser se confier. Obstacles fréquents : honte, envie de s’en sortir seul, crainte pour la confidentialité, méconnaissance des offres, expériences décevantes (Gulliver et al., 2010). Les relations de confiance et la capacité de nommer émotions et besoins aident. D’où la première phrase en trois temps – situation, sentiment, demande –, comme dans l’entraînement DBT pour adolescents (Rathus & Miller, 2015).",
+        "quellen": [
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Gulliver, A., Griffiths, K. M. & Christensen, H. (2010). Perceived barriers and facilitators to mental health help-seeking in young people: A systematic review. BMC Psychiatry, 10, 113.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement la tâche 1 ; recopier sur la carte une phrase de l’encadré « À quoi peut ressembler un début ».",
+          "schwerer": "Formuler et jouer une première phrase pour un appel au Kanner- a Jugendtelefon."
+        },
+        "impulse": [
+          "Quel obstacle est le plus haut – et qu’est-ce qui l’abaisserait ?",
+          "À quoi voyez-vous que quelqu’un écoute vraiment ?"
+        ],
+        "tipps": [
+          "La première scène est jouée par l’adulte, une fois maladroitement, une fois avec succès.",
+          "Autoriser « Ça reste entre nous ? » et répondre honnêtement, limite en cas de danger comprise."
+        ],
+        "achtung": "Jouer seulement les situations d’entraînement. Besoin d’aide réel : écouter, ne rien promettre, concept de protection, direction compétente (responsable) le jour même ; danger aigu : 112.",
+        "material": "Feuilles, cartes de rôle, ciseaux"
+      }
     }
   },
   {
@@ -784,6 +1269,164 @@
         ],
         "achtung": "Nicht einsammeln, nicht vergleichen. Bleibt der mittlere Ring leer, zeitnah Einzelgespräch. Bei Hinweisen auf Gefährdung Schutzkonzept, Responsable am selben Tag; akut 112.",
         "material": "Blatt je Person, „Meine Kraftquellen“, Kontakt des SePAS"
+      }
+    },
+    "fr": {
+      "titel": "Mon réseau",
+      "untertitel": "Des personnes, des lieux et des skills qui me soutiennent – notés avant d’en avoir besoin",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Ton réseau t’appartient, tu n’as à le montrer à personne. Une photo sur ton téléphone, c’est une bonne idée."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris dans les cercles qui est là pour toi.",
+          "hinweis": "Cercle intérieur : les personnes qui te sont proches. Cercle du milieu : des adultes que tu peux vraiment joindre – au moins une personne. Cercle extérieur : les services spécialisés et les numéros de l’encadré de la page 2.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "Services spécialisés et numéros",
+            "Adultes que je peux joindre",
+            "Personnes qui me sont proches"
+          ],
+          "mitte": "Moi"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te soutient en dehors des personnes ? Prends ta feuille « Mes sources de force »."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Lieux où je me calme",
+              "beispiel": "ma chambre avec de la musique, le banc derrière le lycée",
+              "hoehe": 3.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Skills qui m’aident",
+              "beispiel": "monter des escaliers en courant, respiration en carré, 5-4-3-2-1",
+              "hoehe": 3.4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trois personnes de ton réseau en détail : pour quoi t’aident-elles, et comment les joindre ?",
+          "hinweis": "Plus c’est précis, plus le premier pas est facile quand ça compte."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Personne",
+            "En quoi elle m’aide",
+            "Comment et quand la joindre"
+          ],
+          "breiten": [
+            1.1,
+            1.5,
+            1.5
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Éducatrice à l’Annexe",
+            "une oreille attentive quand ça chauffe au lycée",
+            "le matin au bureau ou par message"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton premier pas quand ça ne va pas :"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si quelque chose me tracasse depuis plusieurs jours,",
+              "dann": "j’écris à ma tante et je demande un rendez-vous au SePAS."
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Aides au Luxembourg – qui aide pour quoi ?",
+          "eintraege": [
+            {
+              "name": "SePAS : conseil en cas de soucis, de stress et de conflits – confidentiel",
+              "nummer": "au lycée"
+            },
+            {
+              "name": "Médecin scolaire : questions sur le corps et la santé",
+              "nummer": "au lycée"
+            },
+            {
+              "name": "Planning Familial : conseil sur l’amour, la sexualité et la contraception",
+              "nummer": "__________"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon : pour tous les soucis, anonyme et gratuit",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse : aide par téléphone en cas de crise, anonyme",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "BEE SECURE Helpline : problèmes en ligne, images, cyberharcèlement",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Police : violence, menace",
+              "nummer": "113"
+            },
+            {
+              "name": "Urgences : danger immédiat, accident, secours",
+              "nummer": "112"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes notent leur réseau de personnes, de lieux et de skills, connaissent les points de contact au Luxembourg et fixent un premier pas pour les jours difficiles.",
+        "ablauf": [
+          "Séance 22, carte des aides (15 min) : lire des situations à voix haute, chacun va vers le panneau qui convient ; puis lire l’encadré « Qui aide pour quoi ? ».",
+          "Après le jeu de rôle (8 min) : tâches 1 à 4 en autonomie, « Mes sources de force » à côté. L’adulte qui anime veille à ce que le cercle du milieu comporte un adulte joignable.",
+          "Séance 23 : compléter les lieux et les skills, reporter les personnes dans le carnet de skills.",
+          "La feuille va dans le carnet de skills ; recommander une photo sur le téléphone."
+        ],
+        "hintergrund": "Des relations fiables comptent parmi les facteurs de protection les plus forts à l’adolescence (Masten, 2014). Le réseau classe le soutien selon la proximité : personnes de confiance, adultes joignables, services spécialisés. L’ordre et le principe – noter concrètement personnes et moyens de les joindre – viennent du plan de sécurité (Stanley & Brown, 2012), découvert à la séance 20. Comme les jeunes se tournent d’abord vers amis et famille et connaissent mal les services spécialisés, la feuille intègre expressément les points de contact (Rickwood et al., 2005). Lieux et skills donnent un appui, même quand personne n’est joignable.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement le cercle intérieur, le cercle du milieu et la phrase « si … alors ».",
+          "schwerer": "Pour chaque personne du tableau, noter un deuxième moyen de la joindre, au cas où elle ne serait pas joignable."
+        },
+        "impulse": [
+          "Qui pourrais-tu joindre le week-end – et qui le soir ?",
+          "Quel service de l’encadré était nouveau pour toi ?"
+        ],
+        "tipps": [
+          "Repérer à l’avance la salle et les coordonnées du SePAS de son propre lycée et les écrire au tableau.",
+          "Relire le réseau avant les vacances : est-il toujours d’actualité ?"
+        ],
+        "achtung": "Ne pas ramasser ni comparer. Cercle du milieu vide : entretien individuel rapide. Mise en danger : concept de protection, direction compétente (responsable) le jour même ; danger aigu : 112.",
+        "material": "Feuilles, « Mes sources de force »"
       }
     }
   },
@@ -1009,6 +1652,196 @@
         ],
         "achtung": "Niemand muss vorlesen. Über Wochen nichts Gutes oder starke Selbstabwertung: Gespräch suchen, Responsable informieren.",
         "material": "Blatt, Scheren, Schraubgläser"
+      }
+    },
+    "fr": {
+      "titel": "Collectionner les bons moments",
+      "untertitel": "Une contrariété reste collée, un bon moment glisse vite – sauf si tu le retiens.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi le négatif colle",
+          "text": "Le cerveau prête plus d’attention aux contrariétés et aux dangers qu’aux bonnes choses. Pourtant, il y a des bons moments chaque jour – ils demandent juste plus d’attention. Quand on les remarque, on voit de nouveau plus de possibilités, on va plus facilement vers les autres et on se construit peu à peu de nouvelles sources de force."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trois bonnes choses de ces derniers jours – et pourquoi elles sont arrivées.",
+          "hinweis": "Les petites choses comptent. Demande-toi chaque fois : quelle a été ma part – et qui ou quoi d’autre a aidé ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "C’était quoi, de bien ?",
+            "Pourquoi c’est arrivé ?",
+            "Quel sentiment ?"
+          ],
+          "breiten": [
+            1.35,
+            1.6,
+            0.9
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "L’exposé en histoire s’est bien passé.",
+            "J’ai répété deux fois, et Ana m’a donné du courage avant.",
+            "fierté, soulagement"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À qui as-tu envie de dire merci ? Écris un court mot de remerciement.",
+          "hinweis": "Par message ou sur une carte. C’est toi qui décides si tu l’envoies."
+        },
+        {
+          "art": "feld",
+          "label": "Mon merci",
+          "beispiel": "Salut Diogo, merci de m’avoir envoyé les devoirs quand j’étais malade. Ça m’a sauvé la soirée.",
+          "hoehe": 3.4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Chasse aux bons moments dehors : trouve cinq petites bonnes choses et retiens-les – en photo sans personnes, ou ici en mots-clés.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Quelque chose qui me fait sourire : …",
+            "Quelque chose de beau devant lequel je passe d’habitude sans le voir : …",
+            "Quelque chose qui sent bon ou qui est agréable au toucher : …",
+            "Ce pour quoi je dis merci : …",
+            "Quelque chose de drôle ou de surprenant : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Des petits papiers pour ton bocal à bons moments : découpe-les. Chaque soir, écris un bon moment et glisse-le dans le bocal.",
+          "hinweis": "Les débuts de phrases t’aident quand tu n’as pas d’idée. Tu peux découper d’autres petits papiers dans n’importe quelle feuille.",
+          "symbole": [
+            "schneiden",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 84,
+          "karten": [
+            {
+              "text": "Aujourd’hui, j’ai ri de …"
+            },
+            {
+              "text": "C’était bon : …"
+            },
+            {
+              "text": "Quelqu’un a été gentil avec moi : …"
+            },
+            {
+              "text": "Ma fierté du jour : …"
+            },
+            {
+              "text": "Dehors, c’était beau : …"
+            },
+            {
+              "text": "Cette chanson tombait à pic : …"
+            },
+            {
+              "text": "J’ai aidé quelqu’un : …"
+            },
+            {
+              "text": "Mon bon moment : …"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Prolonger un bon moment",
+          "punkte": [
+            "S’arrêter : remarque qu’en ce moment, quelque chose est bien.",
+            "Ressentir : qu’est-ce que tu vois, entends, goûtes ? Où le sens-tu dans ton corps ?",
+            "Retenir : une photo dans la tête, un petit papier pour le bocal, ou le raconter à quelqu’un."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pendant deux semaines : colorie une étoile quand un petit papier a rejoint le bocal le soir."
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "Semaine 1",
+            "Semaine 2"
+          ],
+          "symbol": "stern"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après deux semaines : vide ton bocal et lis les petits papiers. Qu’est-ce que tu remarques ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui revenait le plus : …",
+            "Ce qui m’a surpris : …",
+            "Ce que je veux faire plus souvent : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand il n’y a rien de bon en ce moment",
+          "text": "Les bons moments n’effacent pas ce qui est difficile ; les deux ont le droit de coexister. Si pendant des semaines tu ne trouves rien de bon, dis-le à quelqu’un de ton réseau. Ce n’est pas un échec, mais un signal important."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent pourquoi le positif passe facilement inaperçu, notent trois bonnes choses et un remerciement, et tiennent pendant deux semaines un bocal à bons moments.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer une feuille blanche avec un petit point noir, « Que voyez-vous ? », puis l’encadré d’information.",
+          "Tâche 1 (8 min) seul ; l’exemple montre des causes personnelles et extérieures. Tâche 2 (6 min) : écrire le remerciement, l’envoyer est facultatif.",
+          "Chasse aux bons moments (20 min) : tâche 3 dehors, en photo sans personnes ou en mots-clés. Ensuite, étiqueter les bocaux, découper et remplir les petits papiers (tâche 4).",
+          "Pendant deux semaines, tâche 5, puis tâche 6 ; lors du check-in, raconter si on le souhaite."
+        ],
+        "hintergrund": "Le négatif pèse plus que le positif (Baumeister et al., 2001) ; les bons moments demandent donc une attention délibérée. Les émotions positives élargissent l’attention et le champ d’action et construisent des ressources (Fredrickson, 2001). Noter sa gratitude rendait plus optimiste (Emmons & McCullough, 2003) et, chez les jeunes, plus satisfait de l’école (Froh et al., 2008). Noter trois bonnes choses et leurs causes a accru le bien-être jusqu’à six mois (Seligman et al., 2005). Prolonger, retenir ou partager un bon moment, c’est savourer (Bryant & Veroff, 2007).",
+        "quellen": [
+          "Baumeister, R. F., Bratslavsky, E., Finkenauer, C. & Vohs, K. D. (2001). Bad is stronger than good. Review of General Psychology, 5(4), 323–370.",
+          "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.",
+          "Emmons, R. A. & McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2), 377–389.",
+          "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum."
+        ],
+        "differenzierung": {
+          "leichter": "Une seule bonne chose suffit ; le remerciement peut rester oral.",
+          "schwerer": "Pour chaque bonne chose, noter comment prolonger le moment."
+        },
+        "impulse": [
+          "Qu’aurais-tu oublié de ta semaine sans cette tâche ?",
+          "Où était ta part – et où as-tu eu de la chance ?"
+        ],
+        "tipps": [
+          "L’adulte prépare lui-même un bocal et en parle.",
+          "Pas de pression : trois soirs, déjà une réussite."
+        ],
+        "achtung": "Personne n’a à lire à voix haute. Rien de bon pendant des semaines ou forte dévalorisation de soi : chercher le dialogue, informer la direction compétente (responsable).",
+        "material": "Feuille, ciseaux, bocaux"
       }
     }
   },
@@ -1321,6 +2154,282 @@
         "achtung": "Tiago und Mila sind Figuren; niemand muss eigene Vorlieben verraten. Die Drama-Karten nicht mit echten Vorfällen aus der Schule verknüpfen.",
         "material": "Seite 2 zweimal auf festem Papier, Scheren, etwa 60 Chips, Kreppband"
       }
+    },
+    "fr": {
+      "titel": "Deux feeds, un seul monde",
+      "untertitel": "Un jeu sans téléphone : comment les mêmes publications donnent deux feeds très différents",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Vous êtes l’algorithme. Votre seule règle : montrez davantage ce sur quoi quelqu’un s’attarde."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tiago et Mila : lisez votre carte. Pendant le jeu, vous réagissez comme le ferait ce personnage – pas comme vous-mêmes.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 92,
+          "karten": [
+            {
+              "titel": "Tiago, 15 ans",
+              "text": "Les clips de foot, tu les regardes jusqu’au bout et tu les commentes. Les disputes et les clashs, tu t’y attardes, même si ça t’agace. La musique, tu la fais défiler la plupart du temps, les infos tout de suite."
+            },
+            {
+              "titel": "Mila, 15 ans",
+              "text": "Les vidéos d’animaux, tu les regardes deux fois et tu les likes. Les recettes, tu les enregistres. Les vidéos de disputes, tu trouves ça fatigant : suivant. Les infos, tu ne les regardes que brièvement, et seulement si ça parle du Luxembourg."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Équipes algorithme : voici comment vous calculez à chaque tour.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Montrer",
+              "text": "Poser cinq cartes comme feed sur l’écran au sol."
+            },
+            {
+              "titel": "Réagir",
+              "text": "Tiago ou Mila longe les cartes et dit pour chacune : suivant, regardé, like ou commenté."
+            },
+            {
+              "titel": "Poser les jetons",
+              "text": "suivant 0, regardé 1, like 2, commenté 3 – à côté de la pile du thème."
+            },
+            {
+              "titel": "Retrier",
+              "text": "3 cartes du thème le plus fort, 1 du deuxième, 1 pour découvrir."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Règles du jeu",
+          "punkte": [
+            "Tour 1 : cinq cartes tirées au hasard, de cinq thèmes différents.",
+            "La carte à découvrir vient du thème qui a le moins de jetons. En cas d’égalité, l’équipe choisit. Les cartes montrées retournent sur leur pile.",
+            "Au tour 5, Tiago et Mila tirent chacun une carte de contre-stratégie ; leur équipe l’applique."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Contre-stratégies pour le tour 5 : chaque équipe découpe un jeu de cartes et le pose face cachée.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 84,
+          "karten": [
+            {
+              "titel": "Ça ne m’intéresse pas",
+              "text": "Le thème le plus fort perd tous ses jetons."
+            },
+            {
+              "titel": "Chercher soi-même",
+              "text": "Un thème de ton choix reçoit 5 jetons."
+            },
+            {
+              "titel": "Mes abonnements",
+              "text": "Le feed suivant : cinq cartes de cinq thèmes différents."
+            },
+            {
+              "titel": "Suivre un nouveau compte",
+              "text": "Le thème qui a le moins de jetons reçoit 3 jetons."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Après le tour 4 : posez les deux feeds côte à côte",
+          "punkte": [
+            "Que ne voit presque plus que Tiago – et que ne voit presque plus que Mila ?",
+            "Quelle carte aucun des deux n’a plus vue, alors qu’elle les concerne tous les deux ?",
+            "Qui a décidé : Tiago, Mila ou la règle ?"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "text",
+          "text": "Les publications : un jeu de cartes pour chaque équipe, trié par thèmes en six piles.",
+          "klein": true
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 106,
+          "karten": [
+            {
+              "titel": "Foot",
+              "text": "Le but du mois du championnat luxembourgeois – sous cinq angles",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "Foot",
+              "text": "Trois transversales d’affilée : qui y arrive ?",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "Foot",
+              "text": "Rumeur de transfert : l’attaquant part-il à Paris ?",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "Foot",
+              "text": "Comment les pros travaillent leur démarrage",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "Animaux",
+              "text": "Un chiot découvre la neige pour la première fois",
+              "bild": "icon:paw"
+            },
+            {
+              "titel": "Animaux",
+              "text": "Chat contre concombre – la vidéo originale",
+              "bild": "icon:paw"
+            },
+            {
+              "titel": "Animaux",
+              "text": "Le refuge près de chez toi cherche des gens pour promener les chiens",
+              "bild": "icon:paw"
+            },
+            {
+              "titel": "Animaux",
+              "text": "Pourquoi les vaches ont une meilleure amie",
+              "bild": "icon:paw"
+            },
+            {
+              "titel": "Musique",
+              "text": "Nouveau morceau – extrait de 30 secondes",
+              "bild": "icon:headphones"
+            },
+            {
+              "titel": "Musique",
+              "text": "Fabriquer un beat sur son téléphone en cinq minutes",
+              "bild": "icon:headphones"
+            },
+            {
+              "titel": "Musique",
+              "text": "Concert samedi : billets dès vendredi",
+              "bild": "icon:headphones"
+            },
+            {
+              "titel": "Musique",
+              "text": "Apprendre la guitare : le premier accord",
+              "bild": "icon:headphones"
+            },
+            {
+              "titel": "Cuisine",
+              "text": "Des pâtes en dix minutes – avec trois ingrédients",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "Cuisine",
+              "text": "Des Gromperekichelcher comme chez mamie",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "Cuisine",
+              "text": "Le casse-croûte de la récré qui rend tout le monde jaloux",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "Cuisine",
+              "text": "Un gâteau sans four",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "Clash",
+              "text": "Un influenceur pète les plombs en live",
+              "bild": "icon:flame"
+            },
+            {
+              "titel": "Clash",
+              "text": "Dispute dans le bus – qui a commencé ?",
+              "bild": "icon:flame"
+            },
+            {
+              "titel": "Clash",
+              "text": "Elle l’a vraiment dit : les captures d’écran",
+              "bild": "icon:flame"
+            },
+            {
+              "titel": "Clash",
+              "text": "Scandale de l’arbitre : c’est incroyable",
+              "bild": "icon:flame"
+            },
+            {
+              "titel": "Infos",
+              "text": "Nouveaux horaires de bus dès lundi – aussi pour ton lycée",
+              "bild": "icon:world"
+            },
+            {
+              "titel": "Infos",
+              "text": "Alerte météo pour demain après-midi",
+              "bild": "icon:world"
+            },
+            {
+              "titel": "Infos",
+              "text": "Ta commune prévoit un skatepark : sondage jusqu’à vendredi",
+              "bild": "icon:world"
+            },
+            {
+              "titel": "Infos",
+              "text": "Jobs de vacances pour les jeunes : inscriptions ouvertes",
+              "bild": "icon:world"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes vivent dans une simulation comment un algorithme de recommandation construit un feed à partir de réactions, comparent deux feeds ainsi obtenus et testent l’effet de contre-stratégies.",
+        "ablauf": [
+          "Avant : imprimer la page 2 en deux exemplaires sur papier épais et découper ; prévoir six piles de thèmes par équipe. Coller au sol, avec du ruban de masquage, deux écrans (environ 60 sur 150 cm).",
+          "Rôles (3 min) : deux volontaires jouent Tiago et Mila, les autres forment deux équipes. Lire les règles.",
+          "Tours 1 à 4 (12 min) : montrer, réagir, poser les jetons, retrier, remettre les cartes.",
+          "Comparaison (5 min) avec les questions de l’encadré, puis tour 5 (4 min) avec les contre-stratégies."
+        ],
+        "hintergrund": "Les systèmes de recommandation apprennent du comportement : ce qui est regardé longtemps, répété, partagé ou commenté apparaît plus souvent ; le reste disparaît. Pariser (2011) a nommé la conséquence bulle de filtres : une sélection personnelle dont on ne voit pas les limites. La simulation rend le cycle visible : après quelques tours, les feeds diffèrent fortement et les thèmes qui concernent les deux disparaissent. Les contre-stratégies montrent que les utilisateurs orientent le système par leurs signaux. La carte « Mes abonnements » représente un tri sans profil personnel, que les très grandes plateformes doivent proposer dans l’UE (règlement sur les services numériques, 2022). Jouer soi-même les techniques d’influence rend plus résistant (Roozenbeek & van der Linden, 2019).",
+        "quellen": [
+          "Pariser, E. (2011). The Filter Bubble: What the Internet Is Hiding from You. New York: Penguin Press.",
+          "Verordnung (EU) 2022/2065 des Europäischen Parlaments und des Rates vom 19. Oktober 2022 über einen Binnenmarkt für digitale Dienste (Gesetz über digitale Dienste). Amtsblatt der EU, L 277, 1–102.",
+          "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65."
+        ],
+        "differenzierung": {
+          "leichter": "Jouer seulement trois tours ; écrire en grand la règle des jetons au tableau.",
+          "schwerer": "Inventer une règle qui récompense la diversité et jouer un sixième tour."
+        },
+        "impulse": [
+          "Qui décide : Tiago ou la règle ?",
+          "Quelle carte commune aux deux a disparu ?"
+        ],
+        "tipps": [
+          "Les horaires de bus disparaissent presque toujours des deux feeds – retenir ce moment.",
+          "Plastifier les cartes."
+        ],
+        "achtung": "Tiago et Mila sont des personnages : personne n’a à révéler ses préférences. Ne pas relier les cartes « Clash » à de vrais incidents du lycée.",
+        "material": "Page 2 en double, ciseaux, 60 jetons, ruban"
+      }
     }
   },
   {
@@ -1498,6 +2607,148 @@
         ],
         "achtung": "Niemand zeigt sein Handy oder nennt Zahlen. Bei Verstörendem, Cybermobbing, Erpressung oder Bedrängen durch Fremde: Einzelgespräch, Responsable informieren.",
         "material": "Blatt je Person, Handys freiwillig"
+      }
+    },
+    "fr": {
+      "titel": "Mon feed à la loupe",
+      "untertitel": "Que me montre mon appli – et est-ce que ça correspond à ce qui compte pour moi ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Comment un feed trie",
+          "text": "Un feed mesure combien de temps tu regardes, si tu vas jusqu’au bout, si tu likes, commentes ou partages – et ce qu’aiment les gens qui cliquent comme toi. Il en déduit ce qui te retient. Que ce soit vrai, important ou bon pour toi, il ne le mesure pas. Son but, c’est ton attention : plus tu restes, plus tu vois de publicités."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Inventaire du feed : regarde les 15 premières publications de ton feed « Pour toi ». Fais un trait par publication, à côté du thème.",
+          "hinweis": "Ne like rien, ne commente rien. Sans téléphone, note ce qui est passé hier. Les chiffres restent chez toi.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Thème",
+            "Traits",
+            "Importance pour moi (0–10)"
+          ],
+          "breiten": [
+            1.6,
+            1.4,
+            1.4
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "Foot",
+            "IIII I",
+            "6"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon feed montre surtout : …",
+            "Il n’y a presque rien, ou rien du tout, sur : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quels signaux envoies-tu ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "souvent",
+            "parfois",
+            "jamais"
+          ],
+          "items": [
+            "Je regarde les vidéos jusqu’au bout, même si elles m’énervent.",
+            "Je commente quand quelque chose me met en colère.",
+            "Je tape sur « Ça ne m’intéresse pas » quand quelque chose m’agace.",
+            "Je cherche moi-même des thèmes au lieu de seulement scroller.",
+            "Je suis des comptes qui pensent autrement que moi.",
+            "J’utilise la vue « Abonnements » plutôt que « Pour toi »."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Bulle de filtres",
+          "text": "Les spécialistes parlent de bulle de filtres : chaque personne reçoit sa propre sélection, et ce qui n’y rentre pas disparaît sans qu’on le remarque. Le degré d’étanchéité de ces bulles fait débat. Une chose est sûre : tes propres signaux comptent. Tu peux donc reprendre la main."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton expérience de feed : coche deux contre-stratégies que tu testes pendant une semaine."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Taper sur « Ça ne m’intéresse pas » quand quelque chose ne me fait pas de bien",
+            "Passer tout de suite les vidéos qui m’énervent",
+            "Chercher volontairement un nouveau thème",
+            "Suivre un compte qui a un autre point de vue",
+            "Utiliser la vue « Abonnements »",
+            "Lire les infos directement sur une source sérieuse",
+            "Désactiver la lecture automatique des vidéos",
+            "Réinitialiser l’historique ou les centres d’intérêt dans les paramètres"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si on me montre une vidéo où des gens se crient dessus,",
+              "dann": "je passe à la suivante et je tape sur « Ça ne m’intéresse pas »."
+            }
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Un point de vue qui manque dans mon feed – et où je pourrais le trouver :",
+          "linien": 2
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent selon quels signaux un feed trie, comparent les thèmes de leur feed à leurs centres d’intérêt et planifient une expérience de feed avec deux contre-stratégies.",
+        "ablauf": [
+          "Apport (14 min) : classer dix cartes-signaux à deux, corriger ; encadré d’information et schéma au tableau « Ce que le feed mesure – et ce qu’il ne mesure pas ».",
+          "Tâche 1 (8 min) : inventaire du feed, avec le téléphone ou de mémoire, au choix ; ne rien liker, ne rien montrer.",
+          "Tâche 2 (3 min) : évaluer les signaux, puis lire l’encadré « Bulle de filtres ».",
+          "Après le jeu des feeds (5 min) : tâche 3 – deux contre-stratégies et une phrase « si … alors ». Reprendre brièvement la fois suivante."
+        ],
+        "hintergrund": "Les feeds apprennent, à partir du temps passé, des réactions et du comportement d’utilisateurs semblables, ce qui retient l’attention. Pariser (2011) a mis en garde contre des bulles de filtres invisibles ; leur force réelle fait débat (Zuiderveen Borgesius et al., 2016). Sur Facebook, le choix personnel réduisait plus la diversité que l’algorithme (Bakshy et al., 2015) – qui connaît ses signaux peut les changer ; Livingstone et Blum-Ross (2020) conseillent d’accompagner les jeunes. Un plan « si … alors » rend l’expérience plus probable (Gollwitzer, 1999).",
+        "quellen": [
+          "Pariser, E. (2011). The Filter Bubble: What the Internet Is Hiding from You. New York: Penguin Press.",
+          "Zuiderveen Borgesius, F. J., Trilling, D., Möller, J., Bodó, B., de Vreese, C. H. & Helberger, N. (2016). Should we worry about filter bubbles? Internet Policy Review, 5(1).",
+          "Bakshy, E., Messing, S. & Adamic, L. A. (2015). Exposure to ideologically diverse news and opinion on Facebook. Science, 348(6239), 1130–1132.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Inventaire avec cinq publications et trois thèmes ; une seule contre-stratégie suffit.",
+          "schwerer": "Refaire l’inventaire après une semaine et comparer."
+        },
+        "impulse": [
+          "Que dirait ton feed de toi – et est-ce vrai ?",
+          "Quel thème compte pour toi mais n’apparaît jamais ?"
+        ],
+        "tipps": [
+          "L’adulte fait l’inventaire avec son propre feed.",
+          "Repérer d’avance « Abonnements » et « Ça ne m’intéresse pas » dans l’appli."
+        ],
+        "achtung": "Personne ne montre son téléphone ni ne donne de chiffres. Contenus choquants, cyberharcèlement, chantage, pressions d’inconnus : entretien individuel, direction compétente (responsable).",
+        "material": "Feuilles, téléphones (facultatif)"
       }
     }
   },
@@ -1698,6 +2949,170 @@
         ],
         "achtung": "Niemand muss sagen, wofür er KI nutzt. Keine Deepfakes echter Personen. Gefälschte oder intime Bilder nicht im Plenum vertiefen, Responsable informieren.",
         "material": "Blatt je Person, Blatt „KI-Werkstatt“"
+      }
+    },
+    "fr": {
+      "titel": "Utiliser l’IA avec discernement",
+      "untertitel": "Les chatbots sonnent toujours sûrs d’eux. Être malin, c’est savoir quand on peut leur faire confiance – et quand non.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Comment répond un chatbot",
+          "text": "Un chatbot ne cherche pas dans une encyclopédie. Il calcule, mot après mot, ce qui a le plus de chances de venir ensuite. C’est pourquoi presque tout sonne fluide et convaincant, même ce qui est inventé. Les spécialistes disent : l’IA hallucine."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le contrôle IA : vérifiez les trois réponses avec ces trois questions.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Des faits ?",
+              "text": "Vérifier les chiffres, les noms et les dates avec une deuxième source sérieuse."
+            },
+            {
+              "titel": "Des sources ?",
+              "text": "La source citée existe-t-elle vraiment ? Va voir toi-même."
+            },
+            {
+              "titel": "Ça me concerne ?",
+              "text": "Santé, droit, émotions : en parler avec une personne qui s’y connaît."
+            }
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Réponse A",
+          "text": "Question : Quelles sont les langues officielles du Luxembourg ? – IA : Le Luxembourg a trois langues officielles : le luxembourgeois, le français et le néerlandais. On entend surtout le néerlandais dans le nord du pays."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Réponse B",
+          "text": "Question : De combien de sommeil les ados ont-ils besoin ? – IA : Selon une étude de l’Institut du sommeil Nordstern de 2019, les adolescents ont besoin d’exactement sept heures de sommeil. Dormir davantage rend plutôt fatigué."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Réponse C",
+          "text": "Question : Que veut dire « trotzdem » ? – IA : « Trotzdem » veut dire « pourtant » ou « malgré tout ». Exemple : Es regnete, trotzdem gingen wir hinaus. – Il pleuvait, nous sommes pourtant sortis."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "faux",
+            "à vérifier d’abord"
+          ],
+          "items": [
+            "Réponse A",
+            "Réponse B",
+            "Réponse C"
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "À quoi aurais-tu pu repérer les erreurs – et où aurais-tu vérifié ?",
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Limite claire pour les deepfakes",
+          "text": "Créer ou partager des deepfakes de personnes réelles les blesse et peut être puni par la loi – même pour rire. Faire circuler des images intimes d’autres personnes est puni par la loi."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Aide à l’apprentissage plutôt que solution : à la station 3, construisez une requête pour que l’IA vous aide à apprendre au lieu de faire l’exercice.",
+          "hinweis": "Exemple : « Tu es mon prof particulier de maths. Explique-moi avec des mots simples comment simplifier une fraction. Ne me donne pas les solutions. Pose-moi trois questions d’entraînement et dis-moi seulement ensuite ce qui était juste. »",
+          "symbole": [
+            "partner",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Notre requête pour apprendre",
+          "hoehe": 3.4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vert, orange, rouge : voici comment utiliser l’IA honnêtement pour les devoirs.",
+          "hinweis": "Les consignes de ton enseignant passent toujours avant."
+        },
+        {
+          "art": "ampel",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Rouge – tricher",
+              "text": "L’IA fait l’exercice, et je le rends comme étant le mien. Pendant les devoirs en classe et les examens, je n’utilise pas d’IA."
+            },
+            {
+              "titel": "Orange – seulement avec autorisation et en le signalant",
+              "text": "Rassembler des idées, proposer un plan, ou faire traduire un texte que j’ai écrit moi-même."
+            },
+            {
+              "titel": "Vert – aide à l’apprentissage",
+              "text": "Me faire expliquer quelque chose, me faire interroger, faire repérer les erreurs dans mon texte et les corriger moi-même."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mes règles pour l’IA – pour moi et pour le carnet de skills"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je vérifie une réponse avant de …",
+            "Ce que je ne saisis jamais dans une IA : …",
+            "Pour les devoirs, j’utilise l’IA ainsi : …",
+            "Quand je vois un deepfake, …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent pourquoi les chatbots sonnent convaincants même quand ils se trompent, vérifient des réponses d’IA avec trois questions, construisent une requête d’apprentissage et formulent leurs propres règles pour l’IA.",
+        "ablauf": [
+          "Après le jeu de la phrase à compléter (10 min) : encadré, contrôle IA à deux sur les réponses A à C, correction.",
+          "Solutions : A faux (allemand, et non néerlandais). B faux : source inventée, les adolescents ont besoin de 8 à 10 heures de sommeil (Paruthi et al., 2016). C est juste.",
+          "Atelier IA, station 3 (6 min) : tâche 2 ; si l’adulte présente un chatbot, il est seul à taper, sans données personnelles.",
+          "Pour finir (8 min) : tâches 3 et 4, la règle la plus importante dans le carnet de skills."
+        ],
+        "hintergrund": "Les modèles de langage produisent du texte à partir de probabilités et fournissent donc aussi de faux faits et des sources inventées dans un langage convaincant – on parle d’hallucinations (Ji et al., 2023). L’UNESCO (2023) recommande : vérifier les résultats, protéger les données, respecter les limites d’âge, soutenir la réflexion au lieu de la remplacer. Le savoir s’ancre surtout par la récupération active (Roediger & Karpicke, 2006) : une requête qui pose des questions plutôt que de livrer des solutions est donc l’usage le plus efficace. Les trois questions de vérification prolongent la lecture latérale.",
+        "quellen": [
+          "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38.",
+          "UNESCO (2023). Guidance for Generative AI in Education and Research. Paris: UNESCO.",
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786."
+        ],
+        "differenzierung": {
+          "leichter": "Vérifier seulement les réponses A et B ; choisir ses règles parmi des phrases données.",
+          "schwerer": "Comparer une réponse de chatbot à une source sérieuse et l’évaluer."
+        },
+        "impulse": [
+          "Quand l’IA vous rend-elle plus malins – et quand seulement plus rapides ?",
+          "Comment savoir que vous avez vraiment appris ?"
+        ],
+        "tipps": [
+          "Se renseigner sur les règles du lycée en matière d’IA et les citer au feu tricolore.",
+          "Ne montrer qu’un service autorisé par l’école."
+        ],
+        "achtung": "Personne n’a à dire à quoi il utilise l’IA. Pas de deepfakes de personnes réelles. Images falsifiées ou intimes : pas en plénière, informer la direction compétente (responsable).",
+        "material": "Feuilles, fiche « Atelier IA »"
       }
     }
   },
@@ -1905,6 +3320,178 @@
         ],
         "achtung": "Keine echten Fälle aus der Schule nachspielen. Berichtet jemand von einem Deepfake oder intimen Bildern einer realen Person: nichts zeigen oder weiterleiten lassen, Responsable informieren, Schutzkonzept.",
         "material": "Blatt einmal auf festem Papier, Scheren, farbiges Papier, Klebezettel"
+      }
+    },
+    "fr": {
+      "titel": "Atelier IA",
+      "untertitel": "Devoirs, données, deepfakes : où est la limite ?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Station 1 – Vert, orange ou rouge ? Posez chaque carte sur une couleur. Vous pouvez la déplacer, mais seulement en justifiant.",
+          "hinweis": "Vert : aide honnête à l’apprentissage. Orange : seulement avec l’autorisation de l’enseignant et en le signalant. Rouge : tricher.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 100,
+          "karten": [
+            {
+              "text": "Noah se fait expliquer comment fonctionne la photosynthèse, puis écrit lui-même son devoir."
+            },
+            {
+              "text": "Léa copie la rédaction écrite par l’IA et la rend comme étant la sienne."
+            },
+            {
+              "text": "Yusuf se fait interroger par l’IA avant le devoir en classe."
+            },
+            {
+              "text": "Chiara se fait proposer un plan pour son exposé."
+            },
+            {
+              "text": "Ben fait traduire son texte allemand par l’IA pour son devoir de français."
+            },
+            {
+              "text": "Sofia fait repérer les erreurs de son texte et les corrige elle-même."
+            },
+            {
+              "text": "Liam interroge en cachette le chatbot sur son téléphone pendant le devoir en classe de maths."
+            },
+            {
+              "text": "Amira se fait donner dix idées pour un projet d’art et en choisit une."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station 2 – Ça reste privé. Triez : ça va – seulement sans noms ni photos – jamais.",
+          "hinweis": "Ce que tu tapes ou télécharges peut être enregistré et analysé.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 100,
+          "karten": [
+            {
+              "text": "« Explique-moi la différence entre météo et climat. »"
+            },
+            {
+              "text": "Mon nom complet, mon adresse et mon école"
+            },
+            {
+              "text": "Une photo de ma classe, pour que l’IA transforme tout le monde de façon drôle"
+            },
+            {
+              "text": "Ma rédaction sur les vacances, pour que l’IA trouve les fautes"
+            },
+            {
+              "text": "Mon mot de passe, pour que l’IA vérifie s’il est sûr"
+            },
+            {
+              "text": "Une capture d’écran du chat de classe"
+            },
+            {
+              "text": "Ma maladie et mes médicaments, avec mon nom"
+            },
+            {
+              "text": "« Que puis-je faire contre un chagrin d’amour ? »"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Station 3 – Aide à l’apprentissage plutôt que solution",
+          "text": "Cette station se trouve sur votre feuille « Utiliser l’IA avec discernement », tâche 2 : construisez à deux une requête dans laquelle l’IA explique et pose des questions au lieu de résoudre l’exercice."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le cas pour tous : lisez l’histoire. Qu’est-ce qui aide Elias, qu’est-ce qui lui nuit ? Mettez les cartes utiles dans un ordre.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Dans le chat de classe",
+          "bild": "figur:ben:traurig",
+          "text": "Dimanche soir, 21 heures : une vidéo apparaît dans le chat de classe. On y voit Elias insulter soi-disant la prof de français – la voix et le visage ont l’air vrais. Au bout d’une heure, vingt personnes l’ont vue, certaines ont envoyé des emojis qui rient. Elias écrit : « Ce n’est pas moi. Je n’ai jamais dit ça. » Lundi, il doit aller au lycée."
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 92,
+          "karten": [
+            {
+              "text": "Transférer la vidéo pour que tout le monde soit au courant"
+            },
+            {
+              "text": "Ne pas la transférer et ne rien commenter"
+            },
+            {
+              "text": "Signaler la publication dans l’appli"
+            },
+            {
+              "text": "Écrire à Elias que tu le crois"
+            },
+            {
+              "text": "En parler à un adulte de confiance"
+            },
+            {
+              "text": "Écrire un commentaire furieux"
+            },
+            {
+              "text": "Découvrir qui l’a fait et humilier cette personne"
+            },
+            {
+              "text": "Fabriquer soi-même une vidéo pour se venger"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Aide en cas de deepfakes et d’images en ligne",
+          "text": "BEE SECURE Helpline 8002 1234 – gratuit, aussi pour les parents et les enseignants. En cas de menaces : police 113. Ne rien transférer, même « comme preuve »."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes fixent, à des stations, des limites pour un usage honnête de l’IA dans les devoirs et pour la protection des données, et discutent ensemble de la manière d’aider plutôt que de nuire face à un deepfake.",
+        "ablauf": [
+          "Cas du deepfake (8 min, avant la pause) : lire l’histoire, mettre les huit cartes au centre, trier ensemble et ordonner les cartes utiles.",
+          "Stations (18 min) : station 1 avec trois feuilles de couleur, station 2 avec trois panneaux ; binômes par tranches de six minutes, déplacer une carte seulement avec une justification sur un post-it.",
+          "Bilan (4 min) : discuter des cartes controversées, puis citer les règles du lycée.",
+          "Solutions : station 1 vert – Noah, Yusuf, Sofia ; orange – Chiara, Amira ; rouge – Léa, Liam, Ben. Station 2 : ça va – météo, chagrin d’amour ; sans noms – rédaction ; le reste, jamais."
+        ],
+        "hintergrund": "L’UNESCO (2023) recommande de rendre les élèves capables d’un usage responsable de l’IA générative : indiquer à quoi l’IA a servi, ne pas déléguer sa propre réflexion, protéger les données personnelles et respecter la dignité des autres. Le feu tricolore sépare l’aide qui soutient l’entraînement personnel de l’usage qui remplace l’apprentissage ; l’orange désigne les cas où la règle de l’enseignant tranche. Dans le cas du deepfake, ce sont les témoins qui sont au centre : comme pour le harcèlement, leur comportement détermine si le dommage s’aggrave ou reste limité (Salmivalli et al., 1996).",
+        "quellen": [
+          "UNESCO (2023). Guidance for Generative AI in Education and Research. Paris: UNESCO.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Seulement quatre cartes par station ; placer ensemble les deux premières.",
+          "schwerer": "Pour chaque carte orange, formuler une condition sous laquelle elle passerait au vert."
+        },
+        "impulse": [
+          "Quelle carte était la plus controversée – et pourquoi ?",
+          "Qu’est-ce qui aiderait Elias lundi au lycée ?"
+        ],
+        "tipps": [
+          "Ben est le meilleur cas litigieux : en cours de français, la traduction est justement l’exercice.",
+          "Plastifier les cartes et les réutiliser."
+        ],
+        "achtung": "Ne pas rejouer de vrais cas du lycée. Deepfake ou images intimes d’une personne réelle : ne rien montrer ni faire transférer, informer la direction compétente (responsable), appliquer le concept de protection.",
+        "material": "Feuille sur papier épais, ciseaux, papier de couleur, post-it"
       }
     }
   }

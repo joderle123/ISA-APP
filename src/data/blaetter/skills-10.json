@@ -599,6 +599,122 @@
         "achtung": "Teams mischen, Auslachen kostet Punkte. Bei der Stopp-Station geht nur die Leitung auf Jugendliche zu; wer erstarrt, bricht ab und bekommt später ein Gespräch. Düfte nur auf Riechstreifen, vorher nach Asthma und Allergien fragen.",
         "material": "Federn, Riechstreifen, Tastbeutel, Ampelkarten, Stoppuhr, Flipchart"
       }
+    },
+    "fr": {
+      "titel": "Mon passeport olympique",
+      "untertitel": "Les points vont à l’équipe. Au final, ce qui compte, c’est quel skill te convient.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Échelle de tension de 0 à 100 : lis les trois zones. Où est ton chiffre en ce moment ?"
+        },
+        {
+          "art": "thermometer",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Vert (0–30) : je peux penser clairement",
+              "text": "Parler, écouter, résoudre des problèmes, s’exercer aux skills."
+            },
+            {
+              "titel": "Jaune (30–70) : ça se resserre",
+              "text": "Irritable, agité ou silencieux. Aident : skills de tête, sens, musique, mouvement."
+            },
+            {
+              "titel": "Rouge (70–100) : le corps prend le relais",
+              "text": "Aident : skills corporels et sensoriels, sortir, chercher de l’aide. D’abord redescendre, puis parler."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tes chiffres d’aujourd’hui : note-les aux quatre points de mesure.",
+          "hinweis": "La compétition fait monter le chiffre, même quand elle est amusante. Les skills le font redescendre."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Au tour d’humeur",
+            "À la mi-temps",
+            "Après la compétition",
+            "Après le retour au calme"
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "p. ex. 35",
+            "50",
+            "70",
+            "40"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après chaque discipline : ce skill te convient-il ? Coche aussitôt – « plutôt pas » compte aussi."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "convient",
+            "moyen",
+            "plutôt pas"
+          ],
+          "items": [
+            "Souffle : respiration en carré (4 – 4 – 4 – 4)",
+            "Sens : un stimulus fort – parfum, balle antistress, froid",
+            "Tête : jeu de l’alphabet – un mot pour chaque lettre",
+            "Stop : main levée, regard, voix ferme, sans sourire",
+            "Message en « je » : Je me sens …, quand …, parce que …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton bilan après l’olympiade"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Ce qui m’a le mieux fait redescendre : …",
+            "Mon joker quand j’arrive dans un nouveau groupe : …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "Tes chiffres et tes croix sont pour toi. Si ton chiffre dépasse souvent 70, parle à la personne qui anime."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Pendant la compétition, les jeunes révisent l’échelle de tension et cinq skills de l’année 1 et testent lequel leur convient. Les nouveaux apprennent les skills auprès de jeunes de leur âge.",
+        "ablauf": [
+          "Échelle (15 min) : thermomètre au paperboard, modèle de la main, situations sur la ligne au sol ; premier chiffre à la tâche 2.",
+          "Ouverture (5 min) : équipes mêlant anciens et nouveaux, noms d’équipe, règles du fair-play au paperboard.",
+          "Chaque discipline (6 min) : faire expliquer (2 points bonus si les nouveaux montrent le skill), essayer, compétition, deux questions de quiz, croix à la tâche 3.",
+          "Disciplines : épreuve de la plume, parfums et sac tactile, ABC sous perturbation, le stop qui passe, bureau de traduction. Notation et quiz : séance 2.",
+          "Retour au calme (8 min) : chiffre après la compétition, 3 min de skill préféré, chiffre après ; puis tâche 4 et boussole de skills."
+        ],
+        "hintergrund": "Après les vacances, les skills ne sont pas oubliés, mais moins accessibles. Rappeler et appliquer activement ce qu’on a appris le fixe mieux que répéter (Roediger & Karpicke, 2006). L’échelle de 0 à 100 est un outil de base de l’entraînement aux skills de la DBT pour adolescents (Fleischhaker et al., 2011) : à forte excitation, les skills agissent par le corps et les sens, à excitation moyenne aussi par la tête. Expliquer et montrer un skill donne un sentiment de compétence et renforce l’efficacité personnelle (Bandura, 1977).",
+        "quellen": [
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement trois disciplines (souffle, sens, stop) ; quiz au pouce levé ou baissé plutôt qu’avec des cartes.",
+          "schwerer": "Les équipes inventent pour une discipline une règle de compétition et expliquent pourquoi elle entraîne le skill."
+        },
+        "impulse": [
+          "À quelle discipline votre chiffre a-t-il monté – et pourquoi ?",
+          "Quel skill passerait inaperçu dans le bus ou en classe ?"
+        ],
+        "tipps": [
+          "Inscrire les points tout de suite et en gros au paperboard : tout le monde reste dans le jeu.",
+          "Prix spéciaux pour les explications et le fair-play : la plus rapide ne gagne pas toujours."
+        ],
+        "achtung": "Mélanger les équipes ; se moquer coûte des points. Au poste Stop, seule la personne qui anime s’approche des jeunes ; qui se fige arrête, entretien plus tard. Parfums seulement sur bandelettes ; demander asthme et allergies.",
+        "material": "Plumes, bandelettes, sac tactile, cartes feu tricolore, chronomètre, paperboard"
+      }
     }
   },
   {
@@ -759,6 +875,131 @@
         ],
         "achtung": "Harte Selbsturteile nicht in der Gruppe aufgreifen. Sagt jemand, es wäre besser, es gäbe ihn nicht: am selben Tag ansprechen, nach Suizidgedanken fragen, Schutzkonzept, Responsable informieren; akute Gefahr: 112.",
         "material": "Stifte; für den Einstieg Malerkrepp"
+      }
+    },
+    "fr": {
+      "titel": "Sur quoi repose mon estime de soi ?",
+      "untertitel": "Ta valeur en tant que personne ne dépend pas d’une note. Le sentiment de cette valeur, parfois si – selon ce sur quoi il repose.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "L’estime de soi, c’est le sentiment d’être quelqu’un de bien et de précieux. Beaucoup la rattachent à des choses qui vacillent vite : notes, likes, apparence, victoires. Elle monte et descend alors à chaque devoir en classe et à chaque post. Elle devient plus stable quand elle repose sur plusieurs sources – et sur des sources qu’un mauvais jour ne peut pas t’enlever."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quel point ton sentiment d’avoir de la valeur dépend-il de ces choses ? Coche honnêtement.",
+          "hinweis": "La feuille t’appartient. Personne ne la ramasse, personne n’a à lire quoi que ce soit à voix haute."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "beaucoup",
+            "un peu",
+            "à peine"
+          ],
+          "items": [
+            "de bonnes notes et des compliments à l’école",
+            "les likes, les commentaires, les abonnés",
+            "mon apparence",
+            "gagner ou être meilleur que les autres",
+            "le fait que les autres me trouvent cool",
+            "des personnes avec qui je peux être comme je suis",
+            "ma façon de me comporter avec les autres – équitable, honnête, serviable",
+            "ce que j’aime faire et ce en quoi je progresse",
+            "le fait d’assumer ce qui compte pour moi"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce qui vacille, ce qui porte",
+          "text": "Les cinq premières sources dépendent surtout du jugement des autres ou de la comparaison. On peut te les enlever en une seule journée. Les quatre dernières dépendent plus de toi : de ce que tu fais, de ce qui compte pour toi, et de personnes qui ne te classent pas par notes. Bonnes notes et victoires peuvent te réjouir – elles ne devraient simplement pas être la seule chose sur laquelle tu t’appuies."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Compte : combien de fois as-tu coché « beaucoup » pour les sources fragiles et combien de fois pour les sources solides ? Qu’est-ce que tu remarques ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Sources fragiles (1–5) : « beaucoup »",
+            "Sources solides (6–9) : « beaucoup »",
+            "Ce que je remarque"
+          ],
+          "breiten": [
+            1.2,
+            1.2,
+            2.4
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "3 fois",
+            "1 fois",
+            "Chez moi, beaucoup dépend des notes et des likes."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton iceberg de l’estime de soi : en haut, ce que tout le monde voit et juge. En bas, écris ce qui te porte – au moins trois choses."
+        },
+        {
+          "art": "eisberg",
+          "oben": "Ce que tout le monde voit et juge",
+          "beispielOben": "notes, apparence, likes, victoires",
+          "unten": "Ce qui me porte – même les mauvais jours",
+          "beispielUnten": "mon humour, ma grand-mère, soutenir mes amis, jouer de la guitare"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta phrase pour un mauvais jour : que te dis-tu quand une source fragile s’effondre ?"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si je récupère un 22 sur 60 et que je pense : « Je suis vraiment trop bête »,",
+              "dann": "je me dis : la note évalue un travail, pas moi. Et je demande à Tiago s’il peut m’expliquer l’exercice."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages.",
+          "text": "Si tes pensées sur toi-même sont souvent très dures, parle à quelqu’un en qui tu as confiance – la personne qui anime, le SePAS, ou de façon anonyme au Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent à quoi ils rattachent leur sentiment d’avoir de la valeur, distinguent sources fragiles et solides et formulent une phrase pour les mauvais jours.",
+        "ablauf": [
+          "Entrée : le grand huit de Noah sur la ligne au sol (séance 3) ou en discussion – quelle valeur Noah ressent-il après 22 sur 60, et après le but gagnant ? Sa valeur a-t-elle changé ?",
+          "Lire le texte, tâche 1 seul et en silence (5 min). Ne pas lire à voix haute, ne pas ramasser.",
+          "Lire l’encadré ensemble, classer des exemples de la journée de Noah, puis tâche 2 seul : compter, écrire une phrase.",
+          "Iceberg (7 min) : au moins trois sources personnelles sous l’eau. Qui ne trouve rien reçoit des exemples, pas de pression.",
+          "Phrase « si … alors » pour un mauvais jour ; qui le souhaite la reporte dans le passeport Skills."
+        ],
+        "hintergrund": "Crocker et Wolfe (2001) décrivent comment on rattache son estime de soi à des conditions – apparence, reconnaissance, résultats scolaires, compétition, mais aussi valeurs ou soutien familial ; Crocker et al. (2003) en mesurent sept domaines par questionnaire. Plus elle dépend de conditions extérieures, plus elle fluctue avec succès et échecs. À l’adolescence, l’image de soi se divise en nombreux domaines d’importance variable (Harter, 2012). Pour Rosenberg (1965), c’est l’attitude de se respecter – non la conviction d’être meilleur que les autres.",
+        "quellen": [
+          "Crocker, J. & Wolfe, C. T. (2001). Contingencies of self-worth. Psychological Review, 108(3), 593–623.",
+          "Crocker, J., Luhtanen, R. K., Cooper, M. L. & Bouvrette, A. (2003). Contingencies of self-worth in college students: Theory and measurement. Journal of Personality and Social Psychology, 85(5), 894–908.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Rosenberg, M. (1965). Society and the Adolescent Self-Image. Princeton, NJ: Princeton University Press."
+        ],
+        "differenzierung": {
+          "leichter": "Tâche 1 seulement avec les cinq premières affirmations ; remplir l’iceberg à l’oral.",
+          "schwerer": "Pour une source fragile, noter quelle source solide prend le relais si elle disparaît un jour."
+        },
+        "impulse": [
+          "Qu’est-ce qu’un seul mauvais jour peut t’enlever – et qu’est-ce qu’il ne peut pas ?",
+          "Qui t’apprécie même quand tu perds ?"
+        ],
+        "tipps": [
+          "Nommer soi-même une source solide – quelque chose d’ordinaire, rien d’héroïque.",
+          "Qui vient de l’année 1 peut reprendre l’arbre des forces."
+        ],
+        "achtung": "Jugements durs sur soi : ne pas les reprendre en groupe. Si quelqu’un dit qu’il vaudrait mieux ne pas exister : en parler le jour même, demander s’il y a des idées suicidaires, concept de protection, informer le responsable ; danger aigu : 112.",
+        "material": "Crayons ; pour l’entrée, ruban de masquage"
       }
     }
   },
@@ -1747,6 +1988,198 @@
         ],
         "achtung": "Hoffnungslose Sätze („Ohne mich wären alle besser dran“) sind ein Warnsignal: am selben Tag ansprechen, nach Suizidgedanken fragen, Schutzkonzept, Responsable informieren; akute Gefahr: 112.",
         "material": "Schere; Laminierfolie (optional)"
+      }
+    },
+    "fr": {
+      "titel": "Mon ami intérieur",
+      "untertitel": "Presque tout le monde se parle plus durement qu’à n’importe qui d’autre. Cela peut changer – avec le ton que tu réserverais à une amie.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Quand quelque chose tourne mal, le critique intérieur se manifeste souvent : « Comme d’habitude. Tu n’arrives à rien. » Il veut te protéger des erreurs – mais il exagère et te rabaisse. L’ami intérieur voit le même raté. Il dit la vérité, mais gentiment : « C’est embêtant. Qu’est-ce qui t’aide maintenant ? »"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nora a oublié ses affaires de sport pour la deuxième fois. Que dirait son ami intérieur ? Écris-le dans la bulle vide."
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:jana:verlegen",
+                "figur:lehrer:neutral"
+              ],
+              "sprecher": 1,
+              "text": "Encore sans affaires de sport, Nora ?",
+              "untertitel": "Le raté"
+            },
+            {
+              "figuren": [
+                "figur:jana:traurig:haende-gesicht"
+              ],
+              "blase": "denken",
+              "text": "Comme d’habitude. Tu n’arrives vraiment à rien.",
+              "untertitel": "Le critique intérieur"
+            },
+            {
+              "figuren": [
+                "figur:jana:ruhig"
+              ],
+              "blase": "denken",
+              "untertitel": "L’ami intérieur"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton critique, ton ami : écris deux phrases de ton critique – les tiennes ou celles de l’encadré – et ce que ton ami intérieur répond.",
+          "hinweis": "Rien de tout cela n’est lu à voix haute, sauf si tu le souhaites."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Phrases que beaucoup de critiques disent",
+          "items": [
+            "Comme d’habitude.",
+            "Tous les autres y arrivent.",
+            "Quelle honte.",
+            "Ça ne marchera jamais.",
+            "Arrête de faire des histoires.",
+            "Tout le monde rit de toi.",
+            "Tu aurais dû le savoir."
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mon critique dit …",
+            "Mon ami intérieur répond …"
+          ],
+          "breiten": [
+            1,
+            1.3
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "« Tous les autres ont compris, sauf toi. »",
+            "« Tu n’as pas encore compris. Demande à Tiago ou à la prof – d’autres le font aussi. »"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Gentil ne veut pas dire enjoliver.",
+          "text": "L’ami intérieur ne dit pas « C’était parfait ». Il dit : « C’était dur, et tu as essayé. » Et il demande ce qui t’aide maintenant."
+        },
+        {
+          "art": "aufgabe",
+          "text": "La pause d’auto-compassion : essaie les trois étapes sur un petit raté – dans le bus, avant un devoir en classe, après un message stupide."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "C’est dur en ce moment.",
+              "text": "Remarquer ce qui se passe – sans le repousser, sans l’exagérer."
+            },
+            {
+              "titel": "Beaucoup connaissent ça.",
+              "text": "Les ratés font partie de la vie – pas seulement de la tienne."
+            },
+            {
+              "titel": "De quoi ai-je besoin ?",
+              "text": "Se parler comme à une bonne amie."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta phrase pour les moments difficiles : écris-la sur la carte, découpe-la et garde-la sur toi.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 112,
+          "karten": [
+            {
+              "titel": "Ma phrase pour les moments difficiles",
+              "text": "_______________________________________________\n\n_______________________________________________"
+            },
+            {
+              "titel": "La pause en trois étapes",
+              "text": "C’est dur en ce moment. – Beaucoup connaissent ça. – De quoi ai-je besoin ?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton test cette semaine : essaie la pause une fois et note comment c’était.",
+          "hinweis": "Un petit raté suffit. Qui fait le test en parle la prochaine fois au tour d’humeur – si on le souhaite."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quand et où ?",
+            "Mon critique disait …",
+            "Mon ami intérieur disait …"
+          ],
+          "breiten": [
+            1,
+            1.3,
+            1.5
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Mardi, après le devoir de maths",
+            "« Encore raté. Tu n’apprendras jamais. »",
+            "« C’est embêtant. Je demande ce que j’ai fait de travers. »"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand le critique ne se tait pas",
+          "text": "Parfois, les pensées sur toi-même sont si dures et si fréquentes que la gentillesse seule ne suffit pas. Parle alors à quelqu’un en qui tu as confiance – la personne qui anime, le SePAS, ou de façon anonyme au Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent la voix de leur critique intérieur de celle d’un ami intérieur, s’exercent à la pause d’auto-compassion et repartent avec leur propre phrase pour les moments difficiles.",
+        "ablauf": [
+          "Entrée (10 min) : l’exposé de Mila au tableau – que dit sa voix intérieure, que dit sa meilleure amie ? Parleriez-vous ainsi à une amie ?",
+          "Tâche 1 (3 min) : écrire l’ami intérieur de Nora ; lecture volontaire de deux ou trois phrases.",
+          "Tâche 2 seul (7 min) : phrases du critique (les siennes ou de l’encadré) et réponse de l’ami intérieur. Ne pas lire à voix haute ni ramasser.",
+          "Après le duel des entraîneurs : guider la tâche 3 sur un petit raté ; la main sur la poitrine est facultative.",
+          "Tâches 4 et 5 : sa phrase sur la carte, découper, ranger ; expliquer le test de la semaine."
+        ],
+        "hintergrund": "Selon Neff (2003), l’auto-compassion consiste à se traiter dans les moments difficiles comme un bon ami : avec bienveillance plutôt que jugement, en sachant qu’échouer est humain, avec pleine conscience plutôt que ruminations. Chez les adolescents, elle va de pair avec moins d’anxiété et d’abattement (Neff & McGehee, 2010). Elle ne suppose pas d’être meilleur que les autres et n’encourage pas la facilité : qui se traite avec bienveillance après un échec veut plus s’améliorer (Breines & Chen, 2012). La question de l’ami sert aussi en TCC (Beck, 2011) ; se parler à la deuxième personne ou par son prénom crée de la distance (Kross & Ayduk, 2017).",
+        "quellen": [
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Neff, K. D. & McGehee, P. (2010). Self-compassion and psychological resilience among adolescents and young adults. Self and Identity, 9(3), 225–240.",
+          "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement la tâche 1 et la carte ; au tableau : « C’est embêtant, mais … », « La prochaine fois … ».",
+          "schwerer": "Donner un nom à son critique, noter de quoi il veut protéger – et comment il pourrait le dire plus gentiment."
+        },
+        "impulse": [
+          "De quoi le critique veut-il en réalité vous protéger ?",
+          "Diriez-vous une chose pareille à un ami ?"
+        ],
+        "tipps": [
+          "Ne pas diaboliser le critique : il a de bonnes intentions et s’y prend mal.",
+          "S’exercer d’abord à la pause sur de petits ratés : elle sera prête pour les grands."
+        ],
+        "achtung": "Phrases désespérées (« Sans moi, ce serait mieux ») : en parler le jour même, demander s’il y a des idées suicidaires, concept de protection, informer le responsable ; danger aigu : 112.",
+        "material": "Ciseaux ; pochette de plastification (facultatif)"
       }
     }
   }

@@ -193,6 +193,164 @@
         "achtung": "Anhaltende Schlafprobleme, Grübeln oder große Tagesmüdigkeit können auf Belastungen hinweisen: Einzelgespräch, Schulärztin, Schularzt oder SePAS einbeziehen, die zuständige Leitung (Responsable) informieren. Keine Schlafmittel empfehlen.",
         "material": "Blatt je Person"
       }
+    },
+    "fr": {
+      "titel": "Mon expérience sommeil",
+      "untertitel": "Un changement le soir, un chiffre le matin, pendant une semaine. Tu es à la fois sujet d’expérience et équipe de recherche.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi la fatigue arrive tard à l’adolescence",
+          "text": "À l’adolescence, l’horloge interne se décale. La mélatonine, l’hormone du sommeil, arrive plus tard le soir et la fatigue ne se fait sentir que tard : c’est de la biologie, pas de la paresse. Le réveil, lui, sonne quand même tôt. Entre 13 et 18 ans, il faut de 8 à 10 heures de sommeil ; beaucoup en dorment nettement moins en semaine."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Es-tu plutôt alouette ou hibou ? Entoure ce qui te ressemble le plus."
+        },
+        {
+          "art": "skala",
+          "von": "Alouette : en forme tôt le matin, fatigue tôt le soir",
+          "bis": "Hibou : éveillé tard le soir, lever très difficile le matin",
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Calcule à rebours : à quelle heure faudrait-il éteindre la lumière ?",
+          "hinweis": "Pars de 9 heures de sommeil et compte environ 15 minutes pour t’endormir."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Les jours de classe, mon réveil sonne à …",
+            "Pour dormir 9 heures, il faudrait éteindre la lumière à …",
+            "En ce moment, les jours de classe, je m’endors le plus souvent vers …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis un seul changement pour tes soirées et décide quand et comment tu le fais.",
+          "hinweis": "Un seul changement : ainsi, tu verras à la fin si c’est bien lui qui change quelque chose."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Charger le téléphone la nuit hors de la chambre",
+            "Activer « Ne pas déranger » à heure fixe",
+            "Rester sans écran la dernière demi-heure",
+            "Après 16 h, ni boisson énergisante ni cola",
+            "Noter ses pensées sur un papier avant de dormir",
+            "Une routine fixe pour décompresser : douche, sac prêt, lecture",
+            "Aller à la lumière du jour dès le matin : ouvrir le volet, sortir un instant",
+            "Le week-end, se lever au plus deux heures plus tard"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je me suis brossé les dents le soir,",
+              "dann": "j’écris sur un papier, à côté du lit, ce qui me trotte encore dans la tête."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "À partir de demain, note chaque matin si ton plan a marché et à quel point tu es en forme.",
+          "hinweis": "Batterie du matin : 0 = complètement à plat, 10 = parfaitement réveillé. Les jours sans plan ne sont pas un échec : ils te servent de comparaison."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma valeur de départ – ma forme ce matin à 8 h (0–10) : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Jour",
+            "Plan suivi ?",
+            "Lumière éteinte",
+            "Lever",
+            "Batterie du matin (0–10)"
+          ],
+          "breiten": [
+            0.7,
+            1.3,
+            1.2,
+            1.2,
+            1.6
+          ],
+          "zeilen": 7,
+          "beispiel": [
+            "Lu",
+            "oui",
+            "22 h 30",
+            "6 h 40",
+            "6"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Au bout d’une semaine : compare les jours avec et sans plan.",
+          "hinweis": "Une estimation suffit : où se situait ta batterie le plus souvent ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Les jours avec plan, ma batterie était le plus souvent à …",
+            "Les jours sans plan, elle était à …",
+            "Mon résultat en une phrase : …",
+            "Ce que je garde : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Cette feuille t’appartient. Si tu mets souvent très longtemps à trouver le sommeil pendant des semaines ou si la fatigue ne te quitte pas, parles-en à une personne de confiance, par exemple à la médecine scolaire ou au SePAS."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent pourquoi leur sommeil se décale à l’adolescence, choisissent un changement pour leurs soirées et vérifient en une semaine, à leur forme au réveil, s’il agit.",
+        "ablauf": [
+          "Encadré et tâche 1 (4 min) : alouette ou hibou ? S’endormir tard est normal à cet âge.",
+          "Tâche 2 (4 min) : l’adulte fait son calcul au tableau ; ne pas comparer les résultats.",
+          "Tâche 3 (8 min) : un changement en phrase « si … alors » ; à deux, vérifier que moment et action sont clairs.",
+          "Tâche 4 (1 min par jour) : la feuille rentre à la maison ; en cas d’oubli, noter le chiffre dans le téléphone.",
+          "Séance suivante (5 min) : tâche 5, tour de pouces, résultat en une phrase."
+        ],
+        "hintergrund": "À l’adolescence, la mélatonine arrive plus tard le soir et la pression de sommeil monte plus lentement ; avec une école qui commence tôt et le téléphone dans la chambre, c’est la « tempête parfaite » (Carskadon, 2011). On recommande 8 à 10 heures de sommeil aux jeunes (Paruthi et al., 2016) ; le temps d’écran va souvent de pair avec un sommeil plus tardif et plus court (Hale & Guan, 2015). Comparer les jours avec et sans plan permet d’apprendre même d’un jour « raté ». La phrase « si … alors » rend la mise en pratique plus probable (Gollwitzer, 1999).",
+        "quellen": [
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Hale, L. & Guan, S. (2015). Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les tâches 3 et 4 ; trois jours de relevé suffisent.",
+          "schwerer": "Estimer l’endormissement et calculer les moyennes avec et sans plan."
+        },
+        "impulse": [
+          "Que fais-tu en dernier le soir, avant de t’endormir ?",
+          "Quel changement tient aussi lors d’une soirée stressante ?"
+        ],
+        "tipps": [
+          "Participer soi-même et donner son résultat, même mitigé.",
+          "Ne pas questionner sur la chambre ou les soirées à la maison : tout le monde n’en décide pas."
+        ],
+        "achtung": "Troubles du sommeil persistants, ruminations ou forte fatigue en journée peuvent révéler une souffrance : entretien individuel, impliquer la médecine scolaire ou le SePAS, informer la direction compétente (responsable). Ne pas recommander de somnifères.",
+        "material": "Feuille par personne"
+      }
     }
   },
   {
@@ -382,6 +540,158 @@
         ],
         "achtung": "Keine Bemerkungen zu Körper, Gewicht oder Portionen. Hinweise auf gestörtes Essverhalten nicht in der Gruppe ansprechen: Einzelgespräch, die zuständige Leitung (Responsable) am selben Tag informieren. Hunger aus Geldmangel diskret aufgreifen.",
         "material": "Blatt je Person, leere Dosen"
+      }
+    },
+    "fr": {
+      "titel": "Mon énergie au fil de la journée",
+      "untertitel": "Quand ta batterie est-elle pleine, quand est-elle vide, et quel rapport avec le sommeil, la boisson et les repas ?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Dessine ton énergie lors d’une journée de classe ordinaire : une croix par heure, puis relie les croix pour former une courbe.",
+          "hinweis": "Dans la dernière ligne, note un M si tu manges à ce moment-là et un B si tu bois."
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "7 h",
+            "9 h",
+            "11 h",
+            "13 h",
+            "15 h",
+            "17 h",
+            "19 h",
+            "21 h"
+          ],
+          "zeilen": [
+            "pleine",
+            "bonne",
+            "moyenne",
+            "faible",
+            "vide",
+            "M = mangé, B = bu"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regarde ta courbe et complète les phrases."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon plus gros creux arrive en général vers … h.",
+            "Dans les deux heures qui précèdent, j’ai en général …",
+            "J’ai le plus d’énergie …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce qui recharge ta batterie",
+          "punkte": [
+            "Le sommeil, c’est la charge de base. Ce qui manque la nuit, aucun snack ne le rattrape.",
+            "La soif ressemble souvent à de la fatigue ou à un mal de tête. Une gourde dans le sac aide.",
+            "Si tu n’arrives pas à manger le matin, emporte quelque chose pour la première pause.",
+            "Le sucre donne vite de l’énergie, mais seul il ne tient pas longtemps. Avec du pain, du yaourt ou un fruit, elle dure plus longtemps.",
+            "Quelques minutes dehors et en mouvement réveillent souvent plus qu’on ne le pense."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Contrôle de canette : lis les petites lignes sur une canette de boisson énergisante."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Caféine pour 100 ml : …",
+            "Caféine dans toute la canette : …",
+            "Cet avertissement figure sur la canette : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Le piège de la caféine",
+          "text": "La caféine t’avance de l’énergie – et tu la rembourses le soir. Tu peux sortir du cercle à n’importe quel moment : avec de l’eau, de la lumière du jour et du mouvement pendant la journée, et sans caféine à partir de l’après-midi."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Fatigue le matin",
+              "text": "La nuit a été trop courte."
+            },
+            {
+              "titel": "Boisson énergisante",
+              "text": "Un réveil bref, souvent de l’agitation."
+            },
+            {
+              "titel": "Bien éveillé le soir",
+              "text": "La caféine agit encore des heures."
+            },
+            {
+              "titel": "Trop peu de sommeil",
+              "text": "Et fatigue de nouveau le matin."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan énergie : que fais-tu en premier au prochain creux ?",
+          "hinweis": "Interroge d’abord ton corps : soif ? faim ? fatigue ? trop longtemps assis ? stress ? Recharge ensuite de la bonne façon."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si j’ai un coup de mou à la troisième heure de cours,",
+              "dann": "je bois d’abord de l’eau et je sors cinq minutes à la pause."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Il ne s’agit pas de bien ou mal manger, mais de ce qui te donne de l’énergie. Ce que tu écris reste pour toi."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes dessinent leur énergie sur une journée de classe, repèrent les liens avec sommeil, boisson, repas et caféine et décident de leur première action au prochain creux.",
+        "ablauf": [
+          "Tâche 1 (6 min) : l’adulte dessine sa courbe au tableau, puis chacun dessine en silence.",
+          "Tâche 2 (4 min) : débuts de phrases ; qui veut compare à deux l’heure du creux.",
+          "Encadré (4 min) : parler d’énergie longue ou brève, pas d’aliments sains ou malsains.",
+          "Tâche 3 (6 min) avec des canettes vides, puis le piège de la caféine.",
+          "Tâche 4 (4 min) après le bilan d’énergie ; la phrase va aussi dans le Skills-Pass."
+        ],
+        "hintergrund": "La vigilance dépend du sommeil, de l’hydratation et de repas répartis sur la journée ; l’entraînement aux skills compte manger et dormir équilibrés parmi les skills contre les émotions fortes (Rathus & Miller, 2015). Un petit-déjeuner favorise à court terme l’attention en classe (Adolphus et al., 2013). La feuille évite calories, poids et aliments « bons » ou « mauvais » et exerce à percevoir soif et faim (Craig, 2002). Un message menaçant ne marche que si l’on sait quoi faire à la place (Peters, Ruiter & Kok, 2013).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Adolphus, K., Lawton, C. L. & Dye, L. (2013). The effects of breakfast on behavior and academic performance in children and adolescents. Frontiers in Human Neuroscience, 7, 425.",
+          "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666.",
+          "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement la courbe et la phrase « si … alors » ; canette en groupe.",
+          "schwerer": "Dessiner une seconde courbe pour un jour de week-end et comparer."
+        },
+        "impulse": [
+          "À quoi remarques-tu la fatigue, la faim ou la soif ?",
+          "Qu’est-ce qui te sort vraiment d’un creux, et qu’est-ce qui n’aide que brièvement ?"
+        ],
+        "tipps": [
+          "Apporter des canettes vides et rincées et en lire les mentions au préalable.",
+          "Ne commenter l’alimentation de personne : les jeunes n’en décident souvent pas."
+        ],
+        "achtung": "Aucune remarque sur le corps, le poids ou les portions. Troubles alimentaires : pas en groupe, entretien individuel, informer le jour même la direction compétente (responsable). Aborder discrètement la faim par manque d’argent.",
+        "material": "Feuille par personne, canettes vides"
       }
     }
   },
@@ -920,6 +1230,192 @@
         ],
         "achtung": "Keine Kommentare zu Körpern, Fitness oder Gewicht. Asthma und Verletzungen vorher erfragen. Wer über Wochen niedergeschlagen wirkt, braucht ein Gespräch: die zuständige Leitung (Responsable) informieren.",
         "material": "Blatt je Person, Klemmbretter, Hütchen"
+      }
+    },
+    "fr": {
+      "titel": "Mon expérience mouvement",
+      "untertitel": "Qu’est-ce que le mouvement change à ton humeur et à ta tête ? Mesure-le toi-même – avant et après.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Note juste avant et juste après chaque séance ton humeur et ton niveau d’éveil.",
+          "hinweis": "Les deux de 0 à 10. Les lignes 3 et 4 sont pour ta propre idée de mouvement de la semaine."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "Mouvement",
+            "Humeur avant → après",
+            "Éveil avant → après"
+          ],
+          "breiten": [
+            0.45,
+            2.1,
+            1.6,
+            1.6
+          ],
+          "zeilen": 4,
+          "nummern": 1,
+          "beispiel": [
+            "p. ex.",
+            "3 min d’escaliers en courant",
+            "4 → 6",
+            "3 → 7"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fais le bilan : qu’est-ce qui a eu le plus d’effet sur toi ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui a le plus changé, c’est …",
+            "Ce qui m’a surpris, c’est …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le piège du coup de mou : tu connais ? Quelle serait ton action opposée ?",
+          "hinweis": "Quand tout en toi dit « reste couché », faire le contraire aide souvent – pas toujours, mais plus souvent qu’on ne le croit."
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:jana:muede:verschraenkt"
+              ],
+              "requisit": "icon:device-mobile",
+              "blase": "denken",
+              "text": "Plus d’énergie. Je reste ici.",
+              "untertitel": "L’impulsion : rester assis, scroller."
+            },
+            {
+              "figuren": [
+                "figur:jana:neutral:stehen"
+              ],
+              "requisit": "icon:shoe",
+              "blase": "denken",
+              "text": "Bon, d’accord. Dix minutes autour du pâté de maisons.",
+              "untertitel": "Faire le contraire : sortir, même sans envie."
+            },
+            {
+              "figuren": [
+                "figur:jana:ruhig"
+              ],
+              "requisit": "icon:sun",
+              "blase": "denken",
+              "text": "Pas génial. Mais mieux que tout à l’heure.",
+              "untertitel": "Ensuite : humeur de 3 à 5."
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je connais le piège du coup de mou quand …",
+            "Mon action opposée : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que le mouvement fait à la tête",
+          "text": "Des chercheurs ont réuni de nombreuses études : après avoir bougé, on est souvent de meilleure humeur, moins anxieux et on se concentre mieux. L’effet n’est pas énorme, mais il revient sans cesse. Pas besoin de faire du sport pour cela : marcher d’un bon pas, danser, faire du vélo ou monter des escaliers comptent aussi."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis pour la semaine une idée de mouvement qui te plaît et décide quand tu la fais.",
+          "hinweis": "Sur la deuxième ligne, note ton plan pour le plus gros obstacle, par exemple : s’il pleut à verse, je monte trois fois l’escalier en courant chez moi."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Descendre un arrêt plus tôt et marcher",
+            "Aller à l’école à vélo ou à pied",
+            "À la grande pause, faire un tour de cour",
+            "Danser le temps de trois chansons après les devoirs",
+            "Prendre l’escalier plutôt que l’ascenseur ou l’escalator",
+            "Aller marcher avec quelqu’un plutôt que s’écrire",
+            "Jouer au basket, au foot ou au ping-pong à la pause",
+            "Dix minutes d’étirements avant de dormir"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si le bus s’arrête à la poste le lundi,",
+              "dann": "je descends et je fais le reste du chemin à pied jusqu’à l’école."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Coche chaque jour où tu as réalisé ton idée.",
+          "hinweis": "Une fois par semaine, tu mesures avant et après et tu le notes en haut, à la ligne 3 ou 4."
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "Idée réalisée",
+            "Ensuite, je me sentais mieux"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Bouger ne remplace pas l’aide.",
+          "text": "Si tu as le moral bas depuis des semaines, parle à une personne de confiance ou appelle le Kanner- a Jugendtelefon au 116 111 (anonyme, gratuit)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes mesurent comment deux types de mouvement changent leur humeur et leur éveil, découvrent l’action opposée contre le piège du coup de mou et planifient leur propre idée de mouvement.",
+        "ablauf": [
+          "Entrée en matière (2 min) : noter en silence les valeurs « avant » de la ligne 1, sans les dire à voix haute.",
+          "Dehors (25 min) : douze minutes de marche rapide à deux, puis demi-tours aux plots ; noter avant et après chaque tour.",
+          "Bilan (8 min) : tour de pouces, tâche 2, encadré.",
+          "Piège du coup de mou (4 min) : lire la bande dessinée ; quand l’action opposée aide-t-elle sans surcharger ?",
+          "Tâches 4 et 5 (12 min) : choisir une idée avec une phrase « si … alors », puis remplir le tableau de la semaine ; qui ne se sent pas capable de réaliser son idée la rend plus petite."
+        ],
+        "hintergrund": "Une synthèse de nombreuses revues de la littérature a trouvé, chez les enfants et les jeunes, de petits effets favorables du mouvement sur les symptômes dépressifs, ainsi que des indices d’une anxiété moindre, d’une meilleure estime de soi et d’une meilleure concentration (Biddle & Asare, 2011). L’OMS (2020) recommande aux jeunes en moyenne 60 minutes d’activité physique par jour et souligne que bouger, quelle que soit la forme, vaut toujours mieux que ne pas bouger. L’action opposée vient de l’entraînement aux skills : en cas d’abattement, devenir actif alors que l’impulsion pousse au repli (Linehan, 2015).",
+        "quellen": [
+          "Biddle, S. J. H. & Asare, M. (2011). Physical activity and mental health in children and adolescents: A review of reviews. British Journal of Sports Medicine, 45(11), 886–895.",
+          "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les lignes 1 et 2 et une idée de la liste.",
+          "schwerer": "Tester deux idées personnelles et les comparer aux lignes 3 et 4."
+        },
+        "impulse": [
+          "Quel mouvement aimes-tu au point de ne même pas le remarquer comme du mouvement ?",
+          "Quand as-tu connu le piège du coup de mou pour la dernière fois ?"
+        ],
+        "tipps": [
+          "Mesurer soi-même et donner ses propres chiffres, même si rien n’a changé.",
+          "Le mouvement intégré au quotidien (trajet scolaire, pause, escalier) est celui qui tient le mieux."
+        ],
+        "achtung": "Aucun commentaire sur les corps, la condition physique ou le poids. Se renseigner au préalable sur l’asthme et les blessures. Qui paraît abattu depuis des semaines a besoin d’un entretien : informer la direction compétente (responsable).",
+        "material": "Une feuille par personne, porte-blocs, plots"
       }
     }
   },
@@ -1490,6 +1986,230 @@
         "achtung": "Die Leitung liest jede Karte, bevor die Tüten verteilt werden. Abwertende oder zweideutige Karten nimmt sie heraus und klärt sie später mit der Person, die sie geschrieben hat – nicht in der Gruppe. Niemand darf leer ausgehen.",
         "material": "Seite 2 auf festem Papier je Person, Scheren, Stifte, Papiertüten mit Namen, Malerkrepp"
       }
+    },
+    "fr": {
+      "titel": "Cartes de forces à offrir",
+      "untertitel": "Pour chaque personne du groupe, une force que tu as observée chez elle – avec une phrase pour dire quand c’était.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Découpe les cartes de la page 2. Pour chaque personne du groupe, choisis une force que tu as observée chez elle.",
+          "hinweis": "Au dos, écris quand c’était : « Je l’ai remarqué quand tu … » Ensuite, la carte va dans son sachet.",
+          "symbole": [
+            "schneiden",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment écrire vos cartes",
+          "punkte": [
+            "Du concret plutôt que du général : pas « tu es sympa », mais ce que la personne a fait.",
+            "Rien sur l’apparence, pas de blagues aux dépens de la personne.",
+            "Avec ton nom ou sans – comme tu veux.",
+            "Si rien ne te vient à propos de quelqu’un, demande à l’adulte du groupe un souvenir de l’année."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand tu as reçu ton sachet : lis les cartes tranquillement. Quelles trois forces emportes-tu ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Force",
+            "Ce que quelqu’un a observé chez moi"
+          ],
+          "breiten": [
+            1.1,
+            3
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Humour",
+            "J’ai fait rire tout le monde quand le ballon est resté coincé dans l’arbre."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et une force que tu vois toi-même chez toi – même si personne ne te l’a offerte :"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma force : …",
+            "Je le remarque à ceci : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides de ce que tu partages.",
+          "text": "Tes cartes t’appartiennent. Dans le cercle, tu ne lis à voix haute que ce que tu as envie de lire."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 112,
+          "karten": [
+            {
+              "titel": "Courage",
+              "text": "Tu oses, même quand tu as le trac.",
+              "bild": "icon:shield"
+            },
+            {
+              "titel": "Persévérance",
+              "text": "Tu t’accroches quand ça devient pénible.",
+              "bild": "icon:mountain"
+            },
+            {
+              "titel": "Honnêteté",
+              "text": "Tu dis ce qui est vrai, même quand c’est inconfortable.",
+              "bild": "icon:circle-check"
+            },
+            {
+              "titel": "Humour",
+              "text": "Tu fais rire les autres sans te moquer de personne.",
+              "bild": "icon:mood-happy"
+            },
+            {
+              "titel": "Équité",
+              "text": "Tu veilles à ce que chacun ait sa chance.",
+              "bild": "motiv:waage"
+            },
+            {
+              "titel": "Entraide",
+              "text": "Tu mets la main à la pâte sans qu’on ait à te le demander.",
+              "bild": "icon:heart-handshake"
+            },
+            {
+              "titel": "Écoute",
+              "text": "Avec toi, on se sent compris.",
+              "bild": "icon:ear"
+            },
+            {
+              "titel": "Sérénité",
+              "text": "Tu restes calme quand tout s’agite.",
+              "bild": "icon:feather"
+            },
+            {
+              "titel": "Esprit d’équipe",
+              "text": "Avec toi, un groupe devient une équipe.",
+              "bild": "icon:users-group"
+            },
+            {
+              "titel": "Créativité",
+              "text": "Tu as des idées auxquelles personne d’autre ne pense.",
+              "bild": "icon:bulb"
+            },
+            {
+              "titel": "Curiosité",
+              "text": "Tu poses des questions et tu veux comprendre à fond.",
+              "bild": "icon:search"
+            },
+            {
+              "titel": "Empathie",
+              "text": "Tu remarques quand quelqu’un ne va pas bien.",
+              "bild": "icon:user-heart"
+            },
+            {
+              "titel": "Fiabilité",
+              "text": "On peut compter sur toi.",
+              "bild": "icon:shield-check"
+            },
+            {
+              "titel": "Espoir",
+              "text": "Tu crois que ça va aller mieux.",
+              "bild": "icon:sunrise"
+            },
+            {
+              "titel": "Maîtrise de soi",
+              "text": "Tu te freines avant que ça explose.",
+              "bild": "icon:traffic-lights"
+            },
+            {
+              "titel": "Pardon",
+              "text": "Tu donnes une seconde chance aux autres.",
+              "bild": "icon:hearts"
+            },
+            {
+              "titel": "Gratitude",
+              "text": "Tu vois ce que les autres font pour toi, et tu le dis.",
+              "bild": "icon:gift"
+            },
+            {
+              "titel": "Enthousiasme",
+              "text": "Tu entraînes les autres avec ton énergie.",
+              "bild": "icon:rocket"
+            },
+            {
+              "titel": "Ouverture",
+              "text": "Tu vas volontiers vers les nouveaux venus et la nouveauté.",
+              "bild": "icon:door-enter"
+            },
+            {
+              "titel": "Leadership",
+              "text": "Tu mets un groupe en marche et tu gardes une vue d’ensemble.",
+              "bild": "icon:flag"
+            },
+            {
+              "titel": "Courage civique",
+              "text": "Tu dis stop quand quelqu’un se fait harceler.",
+              "bild": "icon:hand-stop"
+            },
+            {
+              "titel": "Patience",
+              "text": "Tu sais attendre et tu expliques volontiers deux fois.",
+              "bild": "icon:hourglass"
+            },
+            {
+              "titel": "Responsabilité",
+              "text": "Tu assumes tes erreurs et tu les répares.",
+              "bild": "icon:bandage"
+            },
+            {
+              "titel": "Sens du beau",
+              "text": "Tu vois ce qui est particulier dans la musique, la nature ou les images.",
+              "bild": "icon:flower"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’offrent mutuellement des forces observées au cours de l’année, les appuient sur une observation concrète et notent les forces qu’ils emportent.",
+        "ablauf": [
+          "Avant : imprimer la page 2 par personne sur papier épais coloré et découper ; accrocher au mur un sachet en papier au nom de chacun.",
+          "Règles (3 min) et exemple : « Je t’offre la patience, car tu m’as donné trois fois un coup de main pour calculer mon heure de coucher. »",
+          "Écriture (12 min) : musique douce ; une carte par personne avec une phrase au dos, dans son sachet. L’adulte écrit pour tous.",
+          "Contrôle (2 min) : l’adulte parcourt chaque sachet et complète les cartes manquantes.",
+          "Lecture (6 min) : distribuer les sachets, lire en silence, tâches 2 et 3. Qui veut lit une carte à voix haute."
+        ],
+        "hintergrund": "Peterson et Seligman (2004) décrivent 24 forces de caractère, comme le courage, l’équité, l’humour et la persévérance, qui se voient dans le comportement et se développent ; les cartes les traduisent en langage de jeunes. À l’adolescence, la reconnaissance des pairs pèse particulièrement sur l’image de soi (Harter, 2012). Elle est crédible si elle nomme un comportement observé plutôt qu’un éloge général (Hattie & Timperley, 2007) : chaque carte porte donc un moment concret.",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112."
+        ],
+        "differenzierung": {
+          "leichter": "Des mots-clés au dos suffisent ; l’adulte aide à formuler.",
+          "schwerer": "Pour chaque force offerte, citer un moment de l’automne et un du printemps."
+        },
+        "impulse": [
+          "Quelle carte t’a surpris ?",
+          "Quelle force veux-tu montrer plus souvent l’année prochaine ?"
+        ],
+        "tipps": [
+          "À deux ou trois seulement, chaque personne écrit deux cartes pour chacune des autres.",
+          "Remettre les cartes dans une enveloppe : beaucoup les gardent longtemps."
+        ],
+        "achtung": "L’adulte lit chaque carte avant de distribuer les sachets. Il retire les cartes dévalorisantes ou ambiguës et en parle plus tard avec leur auteur, jamais devant le groupe. Personne ne doit repartir les mains vides.",
+        "material": "Page 2 sur papier épais par personne, ciseaux, stylos, sachets nominatifs, ruban de masquage"
+      }
     }
   },
   {
@@ -1617,6 +2337,99 @@
         ],
         "achtung": "Wer die Übergabe vor der Gruppe nicht möchte, bekommt das Zertifikat ohne Aufruf. Der Satz der Leitung bleibt wertschätzend, ohne Hinweis auf Probleme oder Förderbedarf. Kein offizielles Dokument.",
         "material": "Zertifikat je Person, festes Papier"
+      }
+    },
+    "fr": {
+      "titel": "Certificat de la deuxième année",
+      "untertitel": "Cours de skills « Solide au quotidien » : ce que tu as exercé et ce que les autres voient en toi",
+      "bausteine": [
+        {
+          "art": "vertrag",
+          "titel": "Certificat",
+          "text": "___ a participé, pendant l’année scolaire ___, au cours de skills « Solide au quotidien » et a exercé des skills pendant un an : pour l’école, la colère et l’amitié, pour la famille et le net, pour de bonnes décisions et pour sa propre santé.",
+          "unterschriften": [
+            "Signature de la personne qui anime le cours"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tes trois skills les plus importants de cette année – regarde pour cela dans ta boussole de skills.",
+          "hinweis": "Par exemple : feu stop – m’aide quand ma colère passe au rouge."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Skill",
+            "Il m’aide quand …"
+          ],
+          "breiten": [
+            1.3,
+            3
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trois forces que le groupe voit en toi – tirées de tes cartes de forces.",
+          "hinweis": "Par exemple : patience – quand j’ai aidé Ana à calculer à rebours pour le sommeil."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Force",
+            "Observée quand …"
+          ],
+          "breiten": [
+            1.3,
+            3
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton regard vers l’avenir : qu’as-tu envie d’essayer l’année scolaire prochaine ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "L’année scolaire prochaine, je veux …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "feld",
+          "label": "Ce que je voudrais te dire – la personne qui a animé le cours",
+          "hoehe": 3.4
+        }
+      ],
+      "lehrer": {
+        "ziel": "Chaque personne reçoit à la fin de l’année de cours un certificat personnel avec ses skills les plus importants, ses forces vues par le groupe et une phrase de la personne qui anime.",
+        "ablauf": [
+          "Avant : imprimer sur du papier épais, inscrire les noms et l’année scolaire, écrire la phrase de l’adulte – une observation concrète de l’année.",
+          "Pendant la séance (4 min) : noter les skills de la boussole, les forces des cartes et le regard vers l’avenir.",
+          "Remise (6 min) : appeler chaque personne individuellement, lire la phrase à voix haute ou la remettre en silence, signer ; le groupe applaudit.",
+          "Le certificat rentre à la maison avec le Pass, la boussole et les cartes de forces."
+        ],
+        "hintergrund": "Un certificat garde la trace de ce qui passerait sinon inaperçu : quelqu’un a persévéré pendant un an et exercé des compétences. De telles expériences de maîtrise sont la source principale du sentiment d’efficacité personnelle (Bandura, 1977). La reconnaissance agit quand elle est concrète et nomme un comportement observé (Hattie & Timperley, 2007). Le choix personnel, le retour du groupe et la phrase d’un adulte de référence renforcent deux facteurs de protection que décrit Masten (2014) : le sentiment de compétence et des relations fiables.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "L’adulte note les forces après concertation.",
+          "schwerer": "Pour chaque skill, noter quand il servira l’an prochain."
+        },
+        "impulse": [
+          "À qui montrerais-tu volontiers ce certificat ?",
+          "Quel skill doit venir avec toi dans l’année suivante ?"
+        ],
+        "tipps": [
+          "Ni notes, ni taux de présence : tout le monde reçoit le même certificat.",
+          "Signer à la main ; clarifier au préalable si un tampon de l’établissement s’y ajoute."
+        ],
+        "achtung": "Qui ne souhaite pas la remise devant le groupe reçoit son certificat sans être appelé. La phrase de l’adulte reste valorisante, sans allusion à des problèmes ou à des besoins de soutien. Ce n’est pas un document officiel.",
+        "material": "Un certificat par personne, papier épais"
       }
     }
   }
