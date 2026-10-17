@@ -1,0 +1,1488 @@
+[
+  {
+    "id": "tg-zukunfts-kompass",
+    "bereich": "alltag",
+    "thema": "uebergaenge",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "SOZ-40",
+      "V-24",
+      "V-23",
+      "V-29"
+    ],
+    "schlagworte": [
+      "Orientierung",
+      "Zukunft",
+      "Berufswahl",
+      "Interessen",
+      "Stärken",
+      "Werte",
+      "Übergang",
+      "Schnuppertag",
+      "SePAS"
+    ],
+    "verwandt": [
+      "neustart",
+      "skills-berufsprofil",
+      "skills-interessen-check",
+      "wechsel-in-eine-neue-schule"
+    ],
+    "bild": "icon:compass",
+    "de": {
+      "titel": "Mein Zukunfts-Kompass",
+      "untertitel": "Was dich anzieht, was du kannst, was dir wichtig ist – und ein erster kleiner Schritt",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Du musst heute nicht wissen, was du später machen willst. Aber es hilft zu spüren, was zu dir passt. Ein Kompass sagt nicht, wohin du gehen musst – nur, wo Norden liegt. So suchst du hier Richtungen, keine Antwort. Es gibt kein Richtig oder Falsch. Niemand sammelt das Blatt ein, und was du schreibst, darf sich später ändern."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was zieht dich an – und was kannst du schon? Kreuz an, was du gern tun würdest, und schreib in die Blasen, wofür dich andere um Rat fragen.",
+          "hinweis": "Mehr als sechs Kreuze? Kreis die drei ein, auf die du dich am meisten freuen würdest. Beispiel für eine Blase: „Du erklärst das so, dass man es versteht.“ Fällt dir nichts ein? Lass sie leer.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Bauen und reparieren",
+            "Tiere und Pflanzen",
+            "Anderen helfen",
+            "Gestalten und Musik",
+            "Technik und Computer",
+            "Sport und Bewegung",
+            "Kochen und backen",
+            "Erforschen und tüfteln",
+            "Erklären und unterrichten",
+            "Draußen in der Natur",
+            "Planen und organisieren",
+            "Überzeugen und verkaufen"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Das haben andere schon zu mir gesagt: …",
+            "Dafür fragt man mich: …",
+            "Das lerne ich schnell: …"
+          ],
+          "anzahl": 3,
+          "spalten": 3,
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was ist dir wichtig? Der Strich zeigt, wie viel davon später in deinem Alltag stecken soll. Mal das Glas so voll, wie viel jetzt schon da ist.",
+          "hinweis": "Gläser dürfen voll oder leer bleiben. Es zählt nur, was für dich stimmt.",
+          "symbole": [
+            "malen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Sicherheit",
+            "Freiheit",
+            "Anderen helfen",
+            "Kreativität",
+            "Neues lernen",
+            "Geld verdienen"
+          ],
+          "spalten": 6,
+          "legende": [
+            "Strich: so viel soll später da sein",
+            "Ausmalen: so viel ist jetzt da"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie würdest du gern arbeiten? Ein Kreuz auf jedem Regler, dort, wo du dich wohlfühlst. Beide Seiten sind in Ordnung.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "drinnen",
+              "draußen"
+            ],
+            [
+              "mit Menschen",
+              "mit Dingen"
+            ],
+            [
+              "allein",
+              "im Team"
+            ],
+            [
+              "feste Abläufe",
+              "Abwechslung"
+            ],
+            [
+              "mit den Händen",
+              "mit dem Kopf"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Kompass: Schreib in jede Himmelsrichtung ein Stichwort aus deinen Antworten. Gib jeder Richtung eine eigene Farbe.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "mindmap",
+          "mitte": "Ich",
+          "aeste": [
+            "Das zieht mich an",
+            "Das kann ich",
+            "Das ist mir wichtig",
+            "So arbeite ich gern"
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Zwei, drei Richtungen: Was passt zu deinem Kompass? Ein Bereich reicht, es muss kein Beruf sein – zum Beispiel: Tiere, draußen, mit den Händen – Richtung Tierpflege, Landwirtschaft oder Forst. Gestalte rechts eine Pinnwand dazu: Bilder, Farben, Wörter – zeichnen, kleben, schreiben."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Richtung 1: …",
+                "Richtung 2: …",
+                "Richtung 3 (darf leer sein): …"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Meine Pinnwand",
+              "hoehe": 4,
+              "zeichnen": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein nächster Schritt: Kreuz an, was du in den nächsten Wochen ausprobierst. Ein Schritt reicht.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Schnuppertag oder Praktikum",
+            "SePAS / Orientierung fragen",
+            "Ein Video über Arbeit ansehen",
+            "Nach dem Arbeitstag fragen",
+            "Etwas selbst ausprobieren"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein nächster Schritt – und bis wann: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nicht jede Frage braucht heute eine Antwort",
+          "text": "Interessen und Pläne ändern sich in deinem Alter oft – auch ein Kompass zittert, wenn man sich bewegt. Füll das Blatt in einem halben Jahr noch einmal aus und vergleiche."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen sammeln, was sie anzieht, was sie können, was ihnen wichtig ist und wie sie gern arbeiten würden – daraus entstehen Richtungen und ein kleiner Schritt, keine Berufswahl.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Pinnwand mit 15–20 Berufsbildern (Werkstatt, Tiere, Küche, Bühne, Labor …). Schweigend vorbeigehen, drei Klebepunkte setzen.",
+          "Erklären (4 Min.): Der Kompass gibt Richtung, kein Ziel. Das Beispiel aus dem Hinweis vormachen. Heute keine Berufswahl, nichts wird eingesammelt.",
+          "Einzelarbeit (24 Min.): Ankreuzen, Sprechblasen, Gläser, Regler; Kompass beschriften und einfärben (leise Musik); Richtungen und Pinnwand gestalten.",
+          "Austausch (6 Min., freiwillig): Zu zweit: „Welche Richtung hat dich überrascht?“ Wer mag, zeigt die Pinnwand. Im Plenum nur Richtungen.",
+          "Abschluss (6 Min.): Schritt ankreuzen, Datum notieren, Tipp-Kasten vorlesen, auf das SePAS hinweisen."
+        ],
+        "hintergrund": "Laufbahnmodelle sehen das Jugendalter als Phase des Erkundens: Interessen, Fähigkeiten und Werte werden ausprobiert und dürfen sich ändern (Super, 1980). Bilder davon, wer man werden könnte („mögliche Selbste“), geben dem Handeln Richtung (Markus & Nurius, 1986). Das Blatt sammelt darum Hinweise aus vier Quellen und führt zu Richtungen statt zu einer Entscheidung. Der letzte Schritt ist klein und konkret; Pläne mit Zeitpunkt werden eher umgesetzt (Gollwitzer, 1999).",
+        "quellen": [
+          "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+          "Markus, H. & Nurius, P. (1986). Possible selves. American Psychologist, 41(9), 954–969.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Kompass für eine erfundene Person; oder nur Interessen und ein Schritt.",
+          "schwerer": "Je Richtung: „Was müsste ich lernen? Wen kann ich fragen?“"
+        },
+        "impulse": [
+          "Welche Richtung hat dich überrascht?",
+          "Was würdest du an einem Schnuppertag gern genauer ansehen?",
+          "Was ist dir wichtiger als Geld, was weniger?"
+        ],
+        "tipps": [
+          "Pinnwand-Bilder breit wählen (Handwerk, Pflege, Technik, Kunst, Natur, Büro), ohne Klischees.",
+          "Den Kompass nach einem halben Jahr vergleichen."
+        ],
+        "achtung": "Keine Berufswahl erzwingen. Erwartungen der Familie und Geld machen Druck: nicht im Plenum vertiefen. Bei Hoffnungslosigkeit: Einzelgespräch, SePAS oder Vertrauensperson; bei Gefährdung sofort handeln (112, KJT 116 111).",
+        "material": "Bilder für die Pinnwand, Klebepunkte, Buntstifte, leise Musik"
+      }
+    },
+    "fr": {
+      "titel": "Ma boussole d’avenir",
+      "untertitel": "Ce qui t’attire, ce que tu sais faire, ce qui compte pour toi – et un premier petit pas",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Tu n’as pas besoin de savoir aujourd’hui ce que tu feras plus tard. Mais cela aide de sentir ce qui te correspond. Une boussole ne te dit pas où aller, seulement où se trouve le nord. Tu cherches ici des directions, pas une réponse. Il n’y a ni bonne ni mauvaise réponse. Personne ne ramasse la feuille, et ce que tu écris peut changer plus tard."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui t’attire – et que sais-tu déjà faire ? Coche ce que tu aimerais faire et écris dans les bulles pour quoi on te demande conseil.",
+          "hinweis": "Plus de six croix ? Entoure les trois dont tu te réjouirais le plus. Exemple de bulle : « Tu expliques si bien que tout le monde comprend. » Rien ne te vient ? Laisse-la vide.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Construire, réparer",
+            "Animaux et plantes",
+            "Aider les autres",
+            "Créer, musique, image",
+            "Technique, ordinateur",
+            "Sport et mouvement",
+            "Cuisiner, pâtisser",
+            "Explorer, bricoler",
+            "Expliquer, enseigner",
+            "Dehors, dans la nature",
+            "Organiser, planifier",
+            "Convaincre, vendre"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Ce qu’on m’a déjà dit : …",
+            "On me demande de l’aide pour : …",
+            "J’apprends vite : …"
+          ],
+          "anzahl": 3,
+          "spalten": 3,
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui compte pour toi ? Le trait montre la place que cela doit avoir plus tard. Colorie le verre à hauteur de ce que tu as déjà.",
+          "hinweis": "Les verres peuvent rester pleins ou vides. Seul compte ce qui est vrai pour toi.",
+          "symbole": [
+            "malen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Sécurité",
+            "Liberté",
+            "Entraide",
+            "Créativité",
+            "Apprendre",
+            "Gagner sa vie"
+          ],
+          "spalten": 6,
+          "legende": [
+            "Trait : place voulue plus tard",
+            "Colorié : place actuelle"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment aimerais-tu travailler ? Une croix sur chaque curseur, là où tu te sens bien. Les deux côtés se valent.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "à l’intérieur",
+              "dehors"
+            ],
+            [
+              "avec des gens",
+              "avec des objets"
+            ],
+            [
+              "seul·e",
+              "en équipe"
+            ],
+            [
+              "routine",
+              "variété"
+            ],
+            [
+              "avec les mains",
+              "avec la tête"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta boussole : écris dans chaque direction un mot-clé tiré de tes réponses. Donne à chaque direction sa propre couleur.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "mindmap",
+          "mitte": "Moi",
+          "aeste": [
+            "Ce qui m’attire",
+            "Ce que je sais faire",
+            "Ce qui compte",
+            "Comment je travaille"
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Deux ou trois directions : qu’est-ce qui correspond à ta boussole ? Un domaine suffit, pas besoin d’un métier – par exemple : animaux, dehors, avec les mains – direction soins aux animaux, agriculture ou forêt. Crée à droite un tableau d’images : images, couleurs, mots – dessiner, coller, écrire."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Direction 1 : …",
+                "Direction 2 : …",
+                "Direction 3 (peut rester vide) : …"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Mon tableau d’images",
+              "hoehe": 4,
+              "zeichnen": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton prochain pas : coche ce que tu essaies ces prochaines semaines. Un seul pas suffit.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Journée découverte ou stage",
+            "SePAS ou orientation",
+            "Vidéo sur un métier",
+            "Questionner sur son travail",
+            "Essayer par moi-même"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon prochain pas – et d’ici quand : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Toutes les questions n’ont pas besoin de réponse aujourd’hui",
+          "text": "À ton âge, intérêts et projets changent souvent – même une boussole tremble quand on bouge. Remplis cette feuille à nouveau dans six mois et compare."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes rassemblent ce qui les attire, ce qu’ils savent faire, ce qui compte pour eux et comment ils aimeraient travailler – il en ressort des directions et un petit pas, pas un choix de métier.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : panneau de 15 à 20 images de métiers (atelier, animaux, cuisine, scène, laboratoire …). Passer en silence, coller trois gommettes.",
+          "Expliquer (4 min) : la boussole donne une direction, pas un but. Montrer l’exemple de la consigne. Pas de choix de métier aujourd’hui, rien n’est ramassé.",
+          "Travail individuel (24 min) : cocher, bulles, verres, curseurs ; écrire et colorier la boussole (musique douce) ; directions et tableau d’images.",
+          "Échange (6 min, volontaire) : à deux : « Quelle direction t’a surpris·e ? » Qui veut montre son tableau. En plénière, seulement les directions.",
+          "Clôture (6 min) : cocher le pas, noter la date, lire l’encadré conseil, rappeler le SePAS."
+        ],
+        "hintergrund": "Les modèles de carrière voient l’adolescence comme une phase d’exploration : intérêts, capacités et valeurs sont essayés et peuvent changer (Super, 1980). Les images de ce qu’on pourrait devenir (« soi possibles ») donnent une direction à l’action (Markus et Nurius, 1986). La feuille mène donc à des directions plutôt qu’à une décision. Le dernier pas est petit et concret ; un plan avec une échéance est plus souvent mené à bien (Gollwitzer, 1999).",
+        "quellen": [
+          "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+          "Markus, H. & Nurius, P. (1986). Possible selves. American Psychologist, 41(9), 954–969.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Boussole d’une personne inventée ; ou seulement intérêts et un pas.",
+          "schwerer": "Par direction : « Que devrais-je apprendre ? Qui puis-je interroger ? »"
+        },
+        "impulse": [
+          "Quelle direction t’a surpris·e ?",
+          "Que voudrais-tu observer de plus près lors d’une journée découverte ?",
+          "Qu’est-ce qui compte plus que l’argent pour toi, et qu’est-ce qui compte moins ?"
+        ],
+        "tipps": [
+          "Choisir des images variées (artisanat, soins, technique, art, nature, bureau), sans clichés.",
+          "Comparer la boussole après six mois."
+        ],
+        "achtung": "Ne pas imposer de choix de métier. Attentes de la famille et argent font pression : pas d’approfondissement en plénière. En cas de découragement : entretien individuel, SePAS ou personne de confiance ; en cas de danger, agir tout de suite (112, KJT 116 111).",
+        "material": "Images pour le panneau, gommettes, crayons de couleur, musique douce"
+      }
+    }
+  },
+  {
+    "id": "tg-online-ich",
+    "bereich": "alltag",
+    "thema": "medien",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "SOZ-40",
+      "K-26",
+      "K-29",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Social Media",
+      "Online-Ich",
+      "Selbstdarstellung",
+      "Privatsphäre",
+      "Handy",
+      "Scrollen",
+      "Selbstbild",
+      "eigene Regeln"
+    ],
+    "verwandt": [
+      "mein-handy-und-ich",
+      "medien-tagebuch",
+      "sr-handy-und-ich"
+    ],
+    "bild": "icon:device-mobile-message",
+    "de": {
+      "titel": "Mein Online-Ich",
+      "untertitel": "Wie du dich zeigst, was du für dich behältst – und wie es dir nach dem Scrollen geht",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Online zeigst du dich oft ein bisschen anders als im Klassenzimmer – ausgesuchter, lustiger, vorsichtiger. Das ist normal; offline bist du bei den Großeltern auch nicht dieselbe wie auf dem Pausenhof. Hier schaust du nur hin. Es gibt kein Richtig oder Falsch und keine Verbote."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ein Mensch, zwei Figuren: Wie wirkst du offline – und online? Schreib Stichwörter.",
+          "hinweis": "Beispiel: Mila, 15. Offline: ruhig, hört zu. Online: witzige Stories, antwortet schnell. Zu nah? Nimm Mila statt dich.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "bild",
+              "bild": "icon:user",
+              "groesse": "s",
+              "text": "Ich offline"
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "So wirke ich: …",
+                "Das zeige ich gern: …",
+                "Das zeige ich selten: …"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "icon:device-mobile-message",
+              "groesse": "s",
+              "text": "Ich online"
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "So wirke ich: …",
+                "Das zeige ich gern: …",
+                "Das zeige ich selten: …"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal dein Profilbild als Symbol, nicht als Foto: ein Ding, ein Tier, eine Farbe. Was zeigt dein Online-Ich?",
+          "hinweis": "Zum Beispiel: eine Sonnenbrille, ein Fuchs, ein bunter Kreis. Farben und Striche genügen.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mein Profilbild-Symbol",
+              "hoehe": 5,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Mein Symbol steht für: …",
+                "Das fehlt darin: …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was teilst du, was nicht? Kreuz bei jedem Punkt eine Farbe an: grün = teile ich gern, gelb = kommt darauf an, rot = bleibt bei mir.",
+          "hinweis": "Beispiel: „Wo ich gerade bin“ – gelb: Freund:innen dürfen es wissen, Fremde nicht.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ein Selfie",
+            "Wo ich gerade bin",
+            "Wie es mir gerade wirklich geht",
+            "Ein Screenshot aus einem privaten Chat",
+            "Meine Schule und mein Wohnort"
+          ],
+          "optionen": [
+            "teile ich gern",
+            "kommt darauf an",
+            "bleibt bei mir"
+          ],
+          "kopffarben": [
+            "gruen",
+            "gelb",
+            "rot"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie geht es dir nach dem Scrollen? Denk an gestern Abend oder einen normalen Tag und mach auf jedem Regler ein blaues Kreuz.",
+          "hinweis": "Handy-Pause: Auf ein Zeichen liegt dein Handy drei Minuten mit dem Bildschirm nach unten oder in der Tasche. Schau aus dem Fenster, hör auf die Geräusche im Raum. Dann ein zweites, oranges Kreuz: Wie geht es dir jetzt? Ändert sich nichts, ist auch das eine Antwort.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "müde",
+              "wach"
+            ],
+            [
+              "ruhig",
+              "aufgedreht"
+            ],
+            [
+              "allein",
+              "verbunden"
+            ],
+            [
+              "schwer",
+              "leicht"
+            ],
+            [
+              "neugierig",
+              "gelangweilt"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Beim Scrollen merke ich: …",
+            "Zwischen Blau und Orange hat sich verändert: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Eine Regel, die du dir selbst gibst: kein Verbot, kein Muss – nur etwas, das du ausprobieren willst. Auch „Alles bleibt, wie es ist“ ist erlaubt.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich mich nach dem Scrollen leer fühle,",
+              "dann": "lege ich das Handy weg und gehe fünf Minuten nach draußen."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Jede Seite ist eine Auswahl",
+          "text": "Du zeigst online nur einen Ausschnitt von dir – und alle anderen auch. Im Feed siehst du oft die besten Momente, nicht den ganzen Tag. Wie das Handy auf dich wirkt, ist bei jedem anders. Wenn dich etwas runterzieht, darfst du ändern, wem du folgst – nicht nur, wie lange du scrollst."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn dir online etwas Angst macht",
+          "text": "Jemand droht dir, setzt dich unter Druck oder verbreitet Bilder von dir? Du bist nicht schuld. Sprich mit einer Person, der du vertraust, oder ruf BEE SECURE an: 8002 1234."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen betrachten, wie sie sich online und offline zeigen, was sie teilen oder behalten und wie sie sich nach dem Scrollen fühlen. Sie formulieren eine eigene Regel – ohne Verbote, ohne Bewertung.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Benachrichtigungston abspielen, dann zehn Sekunden Stille. Fragen: „Was macht der Ton mit eurem Körper – und die Stille?“",
+          "Erklären (5 Min.): Beispielfigur Mila: offline ruhig, online witzig. Beides gehört zu ihr. Nichts wird eingesammelt; wer mag, nimmt Mila statt sich.",
+          "Einzelarbeit (18 Min.): Figuren beschreiben, Profilbild-Symbol malen, Ampel ankreuzen, erstes (blaues) Kreuz auf den Reglern.",
+          "Handy-Pause (4 Min.): Handys drei Minuten mit dem Bildschirm nach unten oder in der Tasche; aus dem Fenster schauen. Dann das orange Kreuz.",
+          "Austausch (6 Min., freiwillig): Zu zweit: „Was hat sich zwischen Blau und Orange verändert – oder nichts?“ Im Plenum nur Beobachtungen.",
+          "Abschluss (7 Min.): Eigene Regel schreiben, Tipp-Kasten vorlesen, „Das nehme ich mit“."
+        ],
+        "hintergrund": "Im Netz sinkt oft die Hemmschwelle: Menschen zeigen und sagen online Dinge, die sie im direkten Kontakt nicht tun würden (Suler, 2004). Der Zusammenhang zwischen Handynutzung und Wohlbefinden ist bei Jugendlichen insgesamt klein und hängt davon ab, wie das Handy genutzt wird (Orben & Przybylski, 2019). Das Blatt verzichtet auf Zeitlimits und Verbote: Es lässt beobachten, und die Pause macht den Unterschied spürbar. Eine Wenn-dann-Regel ist konkret genug zum Ausprobieren (Gollwitzer, 1999).",
+        "quellen": [
+          "Suler, J. (2004). The online disinhibition effect. CyberPsychology & Behavior, 7(3), 321–326.",
+          "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Figuren und Ampel; Regel mündlich zu zweit.",
+          "schwerer": "Regel mit Wann, Wo und Plan B."
+        },
+        "impulse": [
+          "Was zeigst du online gern, was lieber nicht?",
+          "Woran merkst du, dass dir etwas guttut – oder nicht?",
+          "Welche Regel würdest du dir selbst geben?"
+        ],
+        "tipps": [
+          "Mila statt „ich“ anbieten – so geht es auch für Jugendliche mit Ärger im Netz.",
+          "Handy-Pause nicht als Strafe: Die Handys bleiben bei den Jugendlichen."
+        ],
+        "achtung": "Heikles Thema: keine Bildschirmzeiten oder Profile vergleichen. Bei Cybermobbing, Erpressung mit Bildern oder Druck zu Nacktbildern: Einzelgespräch, SePAS, BEE SECURE 8002 1234. Bei Krise sofort handeln (112, KJT 116 111).",
+        "material": "Buntstifte (Blau, Orange), Benachrichtigungston, Uhr"
+      }
+    },
+    "fr": {
+      "titel": "Mon moi en ligne",
+      "untertitel": "Comment tu te montres, ce que tu gardes pour toi – et comment tu te sens après avoir fait défiler ton fil",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "En ligne, tu te montres souvent un peu différemment qu’en classe : plus choisi·e, plus drôle, plus prudent·e. C’est normal ; hors ligne aussi, tu n’es pas la même avec tes grands-parents que dans la cour de récréation. Ici, tu regardes simplement. Il n’y a ni bonne ni mauvaise réponse, ni interdiction."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Une personne, deux figures : comment apparais-tu hors ligne et en ligne ?",
+          "hinweis": "Exemple : Mila, 15 ans. Hors ligne : calme, écoute. En ligne : stories drôles, répond vite. Trop proche ? Prends Mila.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "bild",
+              "bild": "icon:user",
+              "groesse": "s",
+              "text": "Moi hors ligne"
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Je donne l’impression d’être : …",
+                "Ce que je montre volontiers : …",
+                "Ce que je montre rarement : …"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "icon:device-mobile-message",
+              "groesse": "s",
+              "text": "Moi en ligne"
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Je donne l’impression d’être : …",
+                "Ce que je montre volontiers : …",
+                "Ce que je montre rarement : …"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine ta photo de profil en symbole, pas en photo : un objet, un animal, une couleur. Que montre ton moi en ligne ?",
+          "hinweis": "Par exemple : des lunettes de soleil, un renard, un cercle coloré. Des couleurs et des traits suffisent.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mon symbole de profil",
+              "hoehe": 5,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Mon symbole représente : …",
+                "Ce qui y manque : …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que partages-tu, que gardes-tu ? Coche une couleur par point : vert = je partage, jaune = ça dépend, rouge = je garde pour moi.",
+          "hinweis": "Exemple : « Où je suis en ce moment » – jaune : mes ami·e·s peuvent le savoir, pas les inconnus.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Un selfie",
+            "Où je suis en ce moment",
+            "Comment je vais vraiment",
+            "Une capture d’écran d’un chat privé",
+            "Mon lycée et l’endroit où j’habite"
+          ],
+          "optionen": [
+            "je partage",
+            "ça dépend",
+            "je garde"
+          ],
+          "kopffarben": [
+            "gruen",
+            "gelb",
+            "rot"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment te sens-tu après avoir fait défiler ton fil ? Pense à hier soir ou à une journée normale et fais une croix bleue sur chaque curseur.",
+          "hinweis": "Pause sans téléphone : au signal, ton téléphone reste trois minutes face contre table ou dans ta poche. Regarde par la fenêtre, écoute les bruits de la salle. Puis fais une deuxième croix, orange : comment te sens-tu maintenant ? Si rien ne change, c’est aussi une réponse.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "fatigué·e",
+              "éveillé·e"
+            ],
+            [
+              "calme",
+              "agité·e"
+            ],
+            [
+              "seul·e",
+              "en lien"
+            ],
+            [
+              "lourd·e",
+              "léger·ère"
+            ],
+            [
+              "curieux·se",
+              "ennuyé·e"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "En faisant défiler, je remarque : …",
+            "Entre le bleu et l’orange, ce qui a changé : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Une règle que tu te donnes : ni interdiction ni obligation, juste quelque chose à essayer. « Tout reste comme c’est » est permis.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Quand je me sens vidé·e après avoir fait défiler,",
+              "dann": "je pose mon téléphone et je sors cinq minutes dehors."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Chaque page est un choix",
+          "text": "En ligne, tu ne montres qu’un extrait de toi – et tous les autres aussi. Dans le fil, tu vois souvent les meilleurs moments, pas la journée entière. L’effet du téléphone est différent pour chacun. Si quelque chose te tire vers le bas, tu peux changer les comptes que tu suis – pas seulement le temps que tu passes à défiler."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Si quelque chose te fait peur en ligne",
+          "text": "Quelqu’un te menace, te met la pression ou diffuse des photos de toi ? Ce n’est pas ta faute. Parle à une personne de confiance ou appelle BEE SECURE : 8002 1234."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes regardent comment ils se montrent en ligne et hors ligne, ce qu’ils partagent et comment ils se sentent après le fil. Ils formulent leur propre règle – sans interdiction ni jugement.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : un son de notification, puis dix secondes de silence. « Qu’est-ce que chacun fait à votre corps ? »",
+          "Expliquer (5 min) : Mila, calme hors ligne, drôle en ligne – les deux sont elle. Rien n’est ramassé ; qui veut prend Mila à sa place.",
+          "Travail individuel (18 min) : figures, symbole de profil, feu, première croix (bleue) sur les curseurs.",
+          "Pause sans téléphone (4 min) : trois minutes, téléphone face contre table ou en poche ; regarder dehors. Puis la croix orange.",
+          "Échange (6 min, volontaire) : à deux : « Qu’est-ce qui a changé entre le bleu et l’orange ? » En plénière, seulement des observations.",
+          "Clôture (7 min) : écrire sa règle, lire l’encadré conseil, « Ce que j’emporte »."
+        ],
+        "hintergrund": "En ligne, le seuil d’inhibition baisse souvent : on montre et on dit des choses qu’on ne ferait pas en contact direct (Suler, 2004). Le lien entre usage du téléphone et bien-être est globalement faible chez les jeunes et dépend de la manière d’utiliser (Orben et Przybylski, 2019). La feuille observe sans limites ni interdictions ; la pause rend la différence perceptible. Une règle « si – alors » est assez concrète pour être testée (Gollwitzer, 1999).",
+        "quellen": [
+          "Suler, J. (2004). The online disinhibition effect. CyberPsychology & Behavior, 7(3), 321–326.",
+          "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Figures et feu seulement ; règle à l’oral.",
+          "schwerer": "Règle avec quand, où et plan B."
+        },
+        "impulse": [
+          "Que montres-tu volontiers, que gardes-tu ?",
+          "Qu’est-ce qui te fait du bien ?",
+          "Quelle règle te donnerais-tu ?"
+        ],
+        "tipps": [
+          "Proposer Mila plutôt que « je » : possible aussi pour les jeunes qui ont vécu des problèmes en ligne.",
+          "Ne pas présenter la pause comme une punition : les téléphones restent chez les jeunes."
+        ],
+        "achtung": "Thème sensible : ne pas comparer temps d’écran ni profils. Cyberharcèlement, chantage ou pression pour des photos intimes : entretien individuel, SePAS, BEE SECURE 8002 1234. En cas de crise : agir tout de suite (112).",
+        "material": "Crayons de couleur (bleu, orange), son de notification, montre"
+      }
+    }
+  },
+  {
+    "id": "tg-das-kann-ich-allein",
+    "bereich": "alltag",
+    "thema": "selbststaendig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-22",
+      "V-32",
+      "SOZ-40",
+      "KOG-62"
+    ],
+    "schlagworte": [
+      "Selbstständigkeit",
+      "Alltag",
+      "Weg",
+      "Termine",
+      "Geld",
+      "Kochen",
+      "Wäsche",
+      "um Hilfe bitten",
+      "Übungsplan"
+    ],
+    "verwandt": [
+      "bus-linie-und-haltestellen",
+      "einkaufen-stueck-fuer-stueck",
+      "kochen-schritt-fuer-schritt",
+      "skills-monatsbudget"
+    ],
+    "bild": "icon:key",
+    "de": {
+      "titel": "Das schaffe ich allein",
+      "untertitel": "Was ich schon kann, was ich als Nächstes lerne – und wer mir dabei hilft",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Allein zurechtkommen heißt nicht, alles allein zu machen. Es heißt: wissen, was du schon kannst, was du als Nächstes lernen willst – und wen du fragen kannst. Vielleicht kannst du schon viel mehr, als dir auffällt. Es gibt kein Richtig oder Falsch, und niemand kann mit 14 schon alles."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo stehst du heute? Ein Kreuz pro Regler: links brauchst du noch Hilfe, rechts machst du es allein.",
+          "hinweis": "Beispiel: Den Weg zum Training findest du allein, bei Zugverbindungen fragst du noch nach – dein Kreuz bei „Weg“ steht eher rechts. „Anrufe“ heißt z. B.: beim Arzt anrufen, ein Formular ausfüllen.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Weg: mit Hilfe",
+              "Weg: allein"
+            ],
+            [
+              "Termine: mit Hilfe",
+              "Termine: allein"
+            ],
+            [
+              "Geld: mit Hilfe",
+              "Geld: allein"
+            ],
+            [
+              "Kochen: mit Hilfe",
+              "Kochen: allein"
+            ],
+            [
+              "Wäsche: mit Hilfe",
+              "Wäsche: allein"
+            ],
+            [
+              "Anrufe: mit Hilfe",
+              "Anrufe: allein"
+            ],
+            [
+              "Fragen: schwer",
+              "Fragen: leicht"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Feiern, was klappt: Schau auf die Regler, bei denen dein Kreuz rechts steht. Das hast du gelernt – auch wenn es dir normal vorkommt.",
+          "hinweis": "Beispiel: zum ersten Mal allein zum Zahnarzt gefahren – geholfen hat, dass ich den Weg vorher einmal mit meiner Schwester gegangen bin.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": [
+            "Das habe ich zum ersten Mal allein geschafft: …",
+            "Dabei hat mir geholfen: …"
+          ],
+          "anzahl": 2,
+          "hoehe": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was willst du als Nächstes lernen? Such dir einen Bereich, bei dem dein Kreuz noch links steht und der dir wichtig ist.",
+          "hinweis": "Nimm nicht den schwersten. Ein Bereich, bei dem es fast klappt, ist ideal.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das möchte ich als Nächstes allein können: …",
+            "Dann kann ich zum Beispiel: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Fehler gehören zum Lernen",
+          "text": "Wer allein losfährt, verpasst manchmal den Bus. Das heißt nicht, dass du es nicht kannst – es heißt, dass du übst. Am meisten lernst du bei Dingen, die fast klappen. Such dir darum kleine Schritte, die dich ein bisschen fordern, aber nicht überfordern."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Übungsplan: Wer hilft dir – ein Mensch, bei dem du dich traust zu fragen? Plane mit ihr oder ihm vier Stufen: unten zusammen, oben allein.",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ],
+          "hinweis": "Das kann jemand aus der Familie sein, ein:e Freund:in, ein Trainer, eine Lehrerin, ein:e Éducateur:rice."
+        },
+        {
+          "art": "leiter",
+          "stufen": 4,
+          "unten": "Start: zusammen",
+          "oben": "Ich allein",
+          "beispiele": [
+            "Beispiel (Bus): Wir fahren zusammen, ich sage die Haltestellen an.",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Hilfsperson: …",
+            "So kann sie oder er mir helfen: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jetzt gleich praktisch: Wähl eine Station und löse sie. Wer mag, macht beide.",
+          "hinweis": "Hat deine Lehrperson einen echten Fahrplan oder einen Prospekt dabei, nimm den.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Station A · Fahrplan lesen",
+              "text": "Linie 14 fährt von der Haltestelle „Gare“ zum Lycée. Der Unterricht beginnt um 8:00 Uhr."
+            },
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Abfahrt",
+                "Linie",
+                "Ankunft"
+              ],
+              "zeilen": 0,
+              "werte": [
+                [
+                  "7:12",
+                  "14",
+                  "7:31"
+                ],
+                [
+                  "7:27",
+                  "14",
+                  "7:46"
+                ],
+                [
+                  "7:42",
+                  "14",
+                  "8:01"
+                ],
+                [
+                  "7:57",
+                  "14",
+                  "8:16"
+                ]
+              ]
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ich nehme den Bus um … Uhr und bin um … Uhr da.",
+                "Ich habe … Minuten Puffer."
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Station B · Einkaufszettel",
+              "text": "Du hast 10 € für einen Filmabend mit zwei Freund:innen. Popcorn 2,50 € · Chips 1,90 € · Limo 1,60 € · Schokolade 1,20 € · Eis 3,20 €."
+            },
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Das kaufe ich",
+                "Preis"
+              ],
+              "zeilen": 4
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Summe: … € · Übrig: … €"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen ein, was sie im Alltag schon allein können, wählen einen nächsten Lernschritt und planen mit einer Hilfsperson vier Übungsstufen. Praktisch üben sie an Fahrplan oder Budget.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Schlüsselbund oder Busfahrkarte herumgeben. „Wann hast du das zum ersten Mal allein benutzt?“",
+          "Erklären (5 Min.): Regler vormachen: links Hilfe, rechts allein, beides ist normal. Leiter an der Tafel: erst zusammen, am Ende allein.",
+          "Einzelarbeit (20 Min.): Regler, Gelingendes, nächster Lernbereich, Übungsplan; dann eine Station: Fahrplan oder Einkaufszettel (7 Min.).",
+          "Austausch (8 Min., freiwillig): Zu zweit: „Was klappt schon?“ – Antwort nur „Stark.“ und Daumen. Im Plenum Stationslösungen vergleichen.",
+          "Abschluss (7 Min.): Tipp-Kasten vorlesen, Hilfsperson festlegen. Eine Woche später: „Welche Stufe hast du geschafft?“"
+        ],
+        "hintergrund": "Selbstwirksamkeit, das Vertrauen, etwas selbst bewältigen zu können, wächst am stärksten durch eigene gelungene Erfahrungen (Bandura, 1977). Nahe, überschaubare Teilziele steigern Können und Interesse stärker als ein fernes Gesamtziel (Bandura & Schunk, 1981). Gelernt wird am besten knapp über dem, was schon allein geht, mit Unterstützung, die nach und nach zurückgenommen wird (Vygotsky, 1978). Die Leiter bildet das ab: von „zusammen“ zu „allein“.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.",
+          "Vygotsky, L. S. (1978). Mind in Society: The Development of Higher Psychological Processes. Cambridge, MA: Harvard University Press."
+        ],
+        "differenzierung": {
+          "leichter": "Regler für eine erfundene Person; Station A; Plan mündlich.",
+          "schwerer": "Eigene Strecke mit Umstieg; Budget mit Prospekt."
+        },
+        "impulse": [
+          "Was kannst du, was früher nicht ging?",
+          "Wen fragst du zuerst, wenn du nicht weiterweißt?",
+          "Was würde dir die erste Stufe leichter machen?"
+        ],
+        "tipps": [
+          "Hilfspersonen müssen nicht die Eltern sein: Geschwister, Trainer:innen, Freund:innen zählen auch.",
+          "Echtes Material (mobiliteit.lu, Prospekt) wirkt besser."
+        ],
+        "achtung": "Nicht alle schaffen gleich viel allein (Beeinträchtigung, Sprache, Familie): keine Vergleiche. Wer fast überall „mit Hilfe“ ankreuzt: Einzelgespräch, SePAS oder Vertrauensperson. Bei Gefährdung sofort handeln (112).",
+        "material": "Fahrplan oder Prospekte, Taschenrechner, Schlüsselbund"
+      }
+    },
+    "fr": {
+      "titel": "Je me débrouille seul·e",
+      "untertitel": "Ce que je sais déjà faire, ce que j’apprends ensuite – et qui m’aide",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Se débrouiller seul·e ne veut pas dire tout faire seul·e. Cela veut dire : savoir ce que tu sais déjà faire, ce que tu veux apprendre ensuite – et qui tu peux demander. Peut-être sais-tu déjà bien plus que tu ne le remarques. Il n’y a ni bonne ni mauvaise réponse, et personne ne sait tout faire à 14 ans."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où en es-tu aujourd’hui ? Une croix par curseur : à gauche, tu as encore besoin d’aide ; à droite, tu le fais seul·e.",
+          "hinweis": "Exemple : tu trouves seul·e le chemin du sport, mais pour les horaires de train tu demandes encore – ta croix « Trajets » est plutôt à droite. « Démarches » : téléphoner au médecin, remplir un formulaire.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Trajets : aide",
+              "Trajets : seul·e"
+            ],
+            [
+              "Agenda : aide",
+              "Agenda : seul·e"
+            ],
+            [
+              "Argent : aide",
+              "Argent : seul·e"
+            ],
+            [
+              "Cuisine : aide",
+              "Cuisine : seul·e"
+            ],
+            [
+              "Linge : aide",
+              "Linge : seul·e"
+            ],
+            [
+              "Démarches : aide",
+              "Démarches : seul·e"
+            ],
+            [
+              "Demander : dur",
+              "Demander : facile"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fêter ce qui marche : regarde les curseurs où ta croix est à droite. Tu l’as appris – même si cela te paraît normal.",
+          "hinweis": "Exemple : j’ai pris le bus seul·e pour aller chez le dentiste – ça m’a aidé de faire le trajet une fois avant avec ma sœur.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": [
+            "Ce que j’ai réussi seul·e pour la première fois : …",
+            "Ce qui m’a aidé : …"
+          ],
+          "anzahl": 2,
+          "hoehe": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que veux-tu apprendre ensuite ? Choisis un domaine où ta croix est encore à gauche et qui compte pour toi.",
+          "hinweis": "Ne prends pas le plus difficile. Un domaine où ça marche presque est idéal.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce que je veux savoir faire seul·e ensuite : …",
+            "Alors je pourrai par exemple : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Se tromper fait partie de l’apprentissage",
+          "text": "Quand on part seul·e, il arrive de rater le bus. Cela ne veut pas dire que tu en es incapable – cela veut dire que tu t’entraînes. Tu apprends le plus avec ce qui marche presque. Cherche donc de petits pas qui te demandent un peu d’effort, sans te dépasser."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan d’entraînement : qui t’aide – une personne à qui tu oses demander ? Prévois avec elle quatre marches : en bas ensemble, en haut seul·e.",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ],
+          "hinweis": "Ce peut être quelqu’un de ta famille, un·e ami·e, un entraîneur, une prof, un·e éducateur·rice."
+        },
+        {
+          "art": "leiter",
+          "stufen": 4,
+          "unten": "Départ : ensemble",
+          "oben": "Moi, seul·e",
+          "beispiele": [
+            "Exemple (bus) : on prend le bus ensemble, je dis les arrêts.",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma personne d’aide : …",
+            "Voici comment elle peut m’aider : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Maintenant, passe à la pratique : choisis une station et résous-la. Qui veut peut faire les deux.",
+          "hinweis": "Si ta prof ou ton prof a un vrai horaire ou un prospectus, prends-le.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Station A · Lire un horaire",
+              "text": "La ligne 14 va de l’arrêt « Gare » au lycée. Les cours commencent à 8 h 00."
+            },
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Départ",
+                "Ligne",
+                "Arrivée"
+              ],
+              "zeilen": 0,
+              "werte": [
+                [
+                  "7 h 12",
+                  "14",
+                  "7 h 31"
+                ],
+                [
+                  "7 h 27",
+                  "14",
+                  "7 h 46"
+                ],
+                [
+                  "7 h 42",
+                  "14",
+                  "8 h 01"
+                ],
+                [
+                  "7 h 57",
+                  "14",
+                  "8 h 16"
+                ]
+              ]
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Je prends le bus de … h et j’arrive à … h.",
+                "J’ai … minutes de marge."
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Station B · Liste de courses",
+              "text": "Tu as 10 € pour une soirée cinéma avec deux ami·e·s. Pop-corn 2,50 € · chips 1,90 € · limonade 1,60 € · chocolat 1,20 € · glace 3,20 €."
+            },
+            {
+              "art": "tabelle",
+              "spalten": [
+                "J’achète",
+                "Prix"
+              ],
+              "zeilen": 4
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Total : … € · Il me reste : … €"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes évaluent ce qu’ils savent déjà faire seuls au quotidien, choisissent une prochaine étape et prévoient avec une personne d’aide quatre marches d’entraînement. Ils s’exercent concrètement sur un horaire ou un budget.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : faire circuler un trousseau de clés ou un ticket de bus. « Quand l’as-tu utilisé seul·e pour la première fois ? »",
+          "Expliquer (5 min) : montrer les curseurs : à gauche l’aide, à droite seul·e, les deux sont normaux. Échelle au tableau : d’abord ensemble, à la fin seul·e.",
+          "Travail individuel (20 min) : curseurs, ce qui marche, prochain domaine, plan d’entraînement ; puis une station : horaire ou liste de courses (7 min).",
+          "Échange (8 min, volontaire) : à deux : « Qu’est-ce qui marche déjà ? » – réponse seulement « Bravo. » et pouce levé. En plénière, comparer les solutions.",
+          "Clôture (7 min) : lire l’encadré conseil, fixer la personne d’aide. Une semaine plus tard : « Quelle marche as-tu franchie ? »"
+        ],
+        "hintergrund": "Le sentiment d’efficacité personnelle, la confiance de pouvoir y arriver seul, se renforce surtout par des expériences réussies (Bandura, 1977). Des buts proches et accessibles augmentent compétence et intérêt davantage qu’un but lointain (Bandura et Schunk, 1981). On apprend le mieux juste au-dessus de ce qu’on fait déjà seul, avec un soutien retiré peu à peu (Vygotsky, 1978). L’échelle le reflète : d’« ensemble » à « seul·e ».",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.",
+          "Vygotsky, L. S. (1978). Mind in Society: The Development of Higher Psychological Processes. Cambridge, MA: Harvard University Press."
+        ],
+        "differenzierung": {
+          "leichter": "Curseurs d’une personne inventée ; station A ; plan à l’oral.",
+          "schwerer": "Trajet avec correspondance ; budget avec prospectus."
+        },
+        "impulse": [
+          "Que sais-tu faire qui était difficile avant ?",
+          "Qui demandes-tu en premier ?",
+          "Qu’est-ce qui faciliterait la 1re marche ?"
+        ],
+        "tipps": [
+          "La personne d’aide n’est pas forcément un parent : frère, sœur, entraîneur·se, ami·e comptent aussi.",
+          "Du matériel réel (mobiliteit.lu, prospectus) vaut mieux."
+        ],
+        "achtung": "Tous ne peuvent pas faire autant seuls (handicap, langue, famille) : pas de comparaisons. Si quelqu’un coche « aide » presque partout : entretien individuel, SePAS ou personne de confiance. En cas de danger, agir tout de suite (112).",
+        "material": "Horaire ou prospectus, calculatrice, trousseau de clés"
+      }
+    }
+  }
+]

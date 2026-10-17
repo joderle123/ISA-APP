@@ -1,0 +1,853 @@
+[
+  {
+    "id": "tg-wut-landkarte",
+    "bereich": "gefuehle",
+    "thema": "wut",
+    "stufen": ["C4", "ES"],
+    "layout": "jugend",
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["K-26", "V-21", "V-18", "V-33"],
+    "schlagworte": ["Wut", "Auslöser", "Körpersignale", "Frühwarnzeichen", "Selbstwahrnehmung", "Orte und Situationen", "Gefühle unter der Wut", "Selbstkontrolle"],
+    "verwandt": ["wutvulkan", "skills-wut-signale", "skills-wut-eisberg", "wut-verstehen"],
+    "bild": "icon:map",
+    "de": {
+      "titel": "Meine Wut-Landkarte",
+      "untertitel": "Wo wird deine Wut groß – und was merkst du, bevor sie kocht?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Wut ist nicht überall gleich groß. An manchen Orten bleibst du ruhig, an anderen kocht es schnell – und meistens gibt es dafür einen Grund. Heute zeichnest du eine Karte deiner Wut: wo sie groß wird, woran du es früh merkst und was oft darunter liegt. Es gibt kein Richtig oder Falsch. Wut ist ein Gefühl, kein Fehler."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal deine Wut-Landkarte aus: In jedem Feld färbst du die Ringe von innen nach außen – so weit, wie die Wut dort wächst.",
+          "hinweis": "Die Farbe passt zur Hitze: blau – grün – gelb – orange – rot. Beispiel: Schulbus = 4 Ringe in Orange, Training = 1 Ring in Blau. Ein Feld darf leer bleiben, in „mein eigener Ort“ schreibst du selbst hinein. Die zarten Hintergrundfarben bedeuten nichts.",
+          "symbole": ["malen", "nachdenken"]
+        },
+        {
+          "art": "netz",
+          "bereiche": ["Klasse und Unterricht", "Pause und Gänge", "Schulbus oder Weg", "zu Hause", "online und Handy", "Training oder Verein", "unter Freunden", "mein eigener Ort"],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du die Wut im Körper – und wie früh? Kreuz an: Meldet sich das Signal gleich oder erst, wenn es schon heiß ist?",
+          "hinweis": "Ein Signal, das du nicht kennst, lässt du frei. Beispiel: Bei Mehmet ist es zuerst der Kiefer (ganz links), das Herz klopft erst viel später (rechts).",
+          "symbole": ["ankreuzen"]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            ["Herz: sofort", "Herz: später"],
+            ["Hitze: sofort", "Hitze: später"],
+            ["Kiefer: sofort", "Kiefer: später"],
+            ["Fäuste: sofort", "Fäuste: später"],
+            ["Bauch: sofort", "Bauch: später"],
+            ["Atem: sofort", "Atem: später"]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Probier es aus: Ball beide Fäuste, spann Kiefer und Schultern an, zähl bis fünf. Dann ausatmen und alles lösen. Kreuz an, was du bemerkst.",
+          "hinweis": "Du musst dabei an nichts Wütendes denken. Wenn du magst, stell dir kurz ein kleines Stück deines heißesten Ortes vor. Wem Anspannen unangenehm ist, spürt nur das Lösen.",
+          "symbole": ["ankreuzen"]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "Beim Anspannen",
+              "items": ["Schultern hoch", "Kiefer fest", "Hände zur Faust", "Atem flach"]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Beim Lösen",
+              "items": ["Schultern sinken", "Hände weich", "Atem tiefer", "Haltung offener"]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wut ist oft der laute Teil. Was liegt bei dir manchmal darunter? Kreuz an, was zu deinem heißesten Ort passt.",
+          "hinweis": "Mehrere Kreuze sind erlaubt.",
+          "symbole": ["ankreuzen", "nachdenken"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Kränkung – ich werde klein gemacht",
+            "Ungerechtigkeit – so ist es nicht fair",
+            "Müdigkeit oder Hunger",
+            "Angst, etwas zu verlieren oder zu versagen",
+            "Niemand hört mir zu",
+            "Zu viel auf einmal",
+            "Scham",
+            "Enttäuschung"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreis deinen heißesten Ort auf der Karte ein. Welches Frühwarnzeichen meldet sich dort – und was wäre ein erster Schritt?",
+          "hinweis": "Wenn dir dein eigener Ort zu nah ist, nimm Ben: Im Bus drückt ihn jemand zur Seite, er ballt die Faust. Beispiel: Mein Kiefer wird fest – dann Hände öffnen, ausatmen, Kopfhörer auf.",
+          "symbole": ["einkreisen", "schreiben"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Mein Frühwarnzeichen dort: …", "Mein erster Schritt, wenn ich es merke: …"],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Früh merken heißt: mehr Auswahl",
+          "text": "Am Anfang reicht oft ein Atemzug, ein Schritt zur Seite oder ein Schluck Wasser. Wenn die Wut schon kocht, ist alles schwerer – das liegt am Körper, nicht an dir. Nicht jede Frage braucht heute eine Antwort. Füll die Karte in ein paar Monaten noch einmal aus."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Karte gehört dir. Niemand sammelt das Blatt ein."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, wo ihre Wut wächst, woran sie es früh im Körper merken und was oft darunter liegt. Für ihren heißesten Ort wählen sie ein Frühwarnzeichen und einen ersten Schritt.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Fäuste ballen, bis fünf zählen, lösen. Farbkarten rot und blau: „Wo ist es eher rot, wo eher blau?“",
+          "Erklären (7 Min.): Karte an der Tafel oder mit Ben vormachen: Ring für Ring, die Farbe passt zur Hitze. Kein Richtig oder Falsch.",
+          "Einzelarbeit (18 Min.): Karte ausmalen (leise Musik), Regler, Körper-Versuch, Gefühle unter der Wut, Frühwarnzeichen und erster Schritt.",
+          "Austausch (10 Min., freiwillig): Zu zweit: „Welches Frühwarnzeichen beachtest du zuerst?“ Im Plenum keine Orte, keine Personen.",
+          "Abschluss (5 Min.): Tipp-Kasten vorlesen, „Das nehme ich mit“ schreiben, Fäuste noch einmal lösen."
+        ],
+        "hintergrund": "Wut entsteht aus dem Zusammenspiel von Auslöser, Bewertung und Anspannung (Novaco, 1975): Dieselbe Person bleibt an einem Ort gelassen und wird an einem anderen schnell gereizt. Die Karte macht das sichtbar, ohne Schuld zuzuweisen. Wut ist im Körper früh spürbar, vor allem in Kopf, Brust, Armen und Händen (Nummenmaa et al., 2014). In der Dialektisch-Behavioralen Therapie gilt sie oft als Zweitgefühl, das Kränkung, Angst oder Scham überdecken kann (Linehan, 2015).",
+        "quellen": [
+          "Novaco, R. W. (1975). Anger Control: The Development and Evaluation of an Experimental Treatment. Lexington, MA: Lexington Books.",
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Felder; Regler zu zweit mündlich; ersten Schritt aus einer Liste wählen.",
+          "schwerer": "Zwei Orte vergleichen und für jeden Ring einen anderen ersten Schritt planen."
+        },
+        "impulse": [
+          "Was ist an deinem ruhigsten Ort anders?",
+          "Welches Körpersignal meldet sich zuerst?",
+          "Was liegt oft unter deiner Wut?"
+        ],
+        "tipps": [
+          "Farben nicht bewerten: Rot kann Kraft heißen.",
+          "Stilles Frühwarnzeichen für die Klasse vereinbaren (Hand auf die Faust)."
+        ],
+        "achtung": "Keine Orte oder Personen nennen lassen; Gruppen nie abwerten. Bei Hinweisen auf Gewalt: Einzelgespräch, SePAS oder Vertrauensperson; bei Gefährdung sofort handeln (Baustein „notfall“).",
+        "material": "Buntstifte (blau bis rot); zwei Farbkarten (rot, blau)"
+      }
+    },
+    "fr": {
+      "titel": "Ma carte de la colère",
+      "untertitel": "Où ta colère monte-t-elle – et que remarques-tu avant qu’elle bouille ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "La colère n’a pas partout la même taille. À certains endroits, tu restes calme ; ailleurs, ça chauffe vite – et il y a presque toujours une raison. Aujourd’hui, tu dessines une carte de ta colère : où elle grandit, à quoi tu le remarques tôt et ce qui se cache souvent dessous. Il n’y a ni bonne ni mauvaise réponse. La colère est une émotion, pas un défaut."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Colorie ta carte de la colère : dans chaque case, remplis les anneaux de l’intérieur vers l’extérieur – aussi loin que la colère monte à cet endroit.",
+          "hinweis": "La couleur suit la chaleur : bleu – vert – jaune – orange – rouge. Exemple : bus scolaire = 4 anneaux en orange, entraînement = 1 anneau en bleu. Une case peut rester vide ; dans « mon propre endroit », tu écris toi-même. Les couleurs pâles du fond ne signifient rien.",
+          "symbole": ["malen", "nachdenken"]
+        },
+        {
+          "art": "netz",
+          "bereiche": ["Classe et cours", "Récré et couloirs", "Bus scolaire ou trajet", "À la maison", "En ligne et téléphone", "Entraînement ou club", "Entre amis", "Mon propre endroit"],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où sens-tu la colère dans le corps – et quand ? Mets une croix : le signal arrive-t-il tout de suite ou seulement quand ça bout déjà ?",
+          "hinweis": "Un signal que tu ne connais pas, tu le laisses vide. Exemple : chez Mehmet, c’est d’abord la mâchoire (tout à gauche) ; le cœur ne s’emballe que bien plus tard (à droite).",
+          "symbole": ["ankreuzen"]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            ["Cœur : tôt", "Cœur : tard"],
+            ["Chaleur : tôt", "Chaleur : tard"],
+            ["Mâchoire : tôt", "Mâchoire : tard"],
+            ["Poings : tôt", "Poings : tard"],
+            ["Ventre : tôt", "Ventre : tard"],
+            ["Souffle : tôt", "Souffle : tard"]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Essaie : serre les deux poings, contracte la mâchoire et les épaules, compte jusqu’à cinq. Puis expire et relâche tout. Coche ce que tu remarques.",
+          "hinweis": "Tu n’as pas besoin de penser à quelque chose qui te met en colère. Si tu veux, imagine un instant un petit bout de ton endroit le plus chaud. Si contracter est désagréable, ne ressens que le relâchement.",
+          "symbole": ["ankreuzen"]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "En contractant",
+              "items": ["Épaules remontées", "Mâchoire serrée", "Mains en poings", "Respiration courte"]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "En relâchant",
+              "items": ["Épaules qui descendent", "Mains souples", "Respiration plus profonde", "Posture plus ouverte"]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La colère est souvent la partie bruyante. Qu’y a-t-il parfois dessous, chez toi ? Coche ce qui correspond à ton endroit le plus chaud.",
+          "hinweis": "Plusieurs croix sont permises.",
+          "symbole": ["ankreuzen", "nachdenken"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Vexation – on me rabaisse",
+            "Injustice – ce n’est pas juste",
+            "Fatigue ou faim",
+            "Peur de perdre ou d’échouer",
+            "Personne ne m’écoute",
+            "Trop de choses à la fois",
+            "Honte",
+            "Déception"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entoure ton endroit le plus chaud sur la carte. Quel signal d’alerte se manifeste là-bas – et quel serait un premier pas ?",
+          "hinweis": "Si ton propre endroit est trop proche, prends Ben : dans le bus, quelqu’un le pousse sur le côté, il serre le poing. Exemple : ma mâchoire se serre – alors j’ouvre les mains, j’expire, je mets mes écouteurs.",
+          "symbole": ["einkreisen", "schreiben"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Mon signal d’alerte là-bas : …", "Mon premier pas quand je le remarque : …"],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Remarquer tôt, c’est avoir plus de choix",
+          "text": "Au début, une respiration, un pas de côté ou une gorgée d’eau suffisent souvent. Quand la colère bout déjà, tout est plus difficile – c’est une affaire de corps, pas de caractère. Chaque question n’a pas besoin d’une réponse aujourd’hui. Remplis la carte dans quelques mois."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Ta carte t’appartient. Personne ne ramasse la feuille."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent où leur colère monte, à quoi ils le remarquent tôt dans le corps et ce qui se cache souvent dessous. Pour leur endroit le plus chaud, ils choisissent un signal d’alerte et un premier pas.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : serrer les poings, compter jusqu’à cinq, relâcher. Cartes rouge et bleue : « Où est-ce plutôt rouge, où plutôt bleu ? »",
+          "Expliquer (7 min) : montrer la carte au tableau ou avec Ben : anneau par anneau, couleur selon la chaleur. Ni bonne ni mauvaise réponse.",
+          "Travail individuel (18 min) : colorier la carte (musique douce), réglettes, essai corporel, ce qui se cache sous la colère, signal d’alerte et premier pas.",
+          "Échange (10 min, volontaire) : à deux : « Quel signal d’alerte remarques-tu en premier ? » En plénière, ni lieux ni personnes.",
+          "Clôture (5 min) : lire l’encadré conseil, écrire « Ce que j’emporte », relâcher encore les poings."
+        ],
+        "hintergrund": "La colère naît de l’interaction entre déclencheur, évaluation et tension (Novaco, 1975) : la même personne reste sereine à un endroit et s’énerve vite à un autre. La carte le rend visible sans désigner de coupable. La colère se ressent tôt dans le corps, surtout dans la tête, la poitrine, les bras et les mains (Nummenmaa et al., 2014). Dans la thérapie comportementale dialectique, elle est souvent comprise comme une émotion secondaire qui peut recouvrir vexation, peur ou honte (Linehan, 2015).",
+        "quellen": [
+          "Novaco, R. W. (1975). Anger Control: The Development and Evaluation of an Experimental Treatment. Lexington, MA: Lexington Books.",
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement quatre cases ; réglettes à l’oral, à deux ; choisir le premier pas dans une liste.",
+          "schwerer": "Comparer deux lieux et planifier un autre premier pas pour chaque anneau."
+        },
+        "impulse": [
+          "Qu’est-ce qui change dans ton endroit le plus calme ?",
+          "Quel signal du corps se manifeste en premier ?",
+          "Qu’y a-t-il souvent sous ta colère ?"
+        ],
+        "tipps": [
+          "Ne pas juger les couleurs : le rouge peut signifier la force.",
+          "Convenir d’un signal discret pour la classe (main posée sur le poing)."
+        ],
+        "achtung": "Ne pas faire nommer de lieux ni de personnes ; ne jamais dévaloriser un groupe. En cas de violence : entretien individuel, SePAS ou personne de confiance ; en cas de danger, agir tout de suite (bloc « notfall »).",
+        "material": "Crayons de couleur (bleu à rouge) ; deux cartes de couleur (rouge, bleu)"
+      }
+    }
+  },
+  {
+    "id": "tg-sorgen-kompass",
+    "bereich": "gefuehle",
+    "thema": "angst",
+    "stufen": ["C4", "ES"],
+    "layout": "jugend",
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["K-26", "V-25", "V-29", "V-32"],
+    "schlagworte": ["Sorgen", "Grübeln", "Kontrolle", "Loslassen", "Sorgenzeit", "Atmen", "Problemlösen", "Angst"],
+    "verwandt": ["t3-sorgenzeit", "t2-denkfallen-erkennen", "angst-verstehen", "t3-angstkurve"],
+    "bild": "icon:compass",
+    "de": {
+      "titel": "Mein Sorgen-Kompass",
+      "untertitel": "Welche Sorgen kannst du lenken – und welche darfst du loslassen?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Sorgen kreisen im Kopf, bis alle gleich groß und gleich schwer wirken. Ein Kompass hilft dir, die Richtung zu finden: Bei manchen Sorgen kannst du selbst etwas tun, bei anderen nicht. Heute sammelst und sortierst du sie. Du musst keine Sorge lösen und keine verraten. Es gibt kein Richtig oder Falsch – jede Sorge darf da sein."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sammle deine Sorgen in den Wolken (eine pro Wolke, Stichworte genügen). Leg dann eine davon als Zettel in das Glas auf dem Tisch.",
+          "hinweis": "Auch kleine zählen: eine Note, ein Streit, eine Nachricht ohne Antwort, die Zukunft, die Welt. Wolke A zeigt ein Beispiel. Schreib eine Sorge auf einen Zettel, falte ihn und leg ihn ins Glas – dort darf sie warten. Sind dir deine eigenen Sorgen zu nah, nimm die einer erfundenen Person.",
+          "symbole": ["schreiben", "nachdenken"]
+        },
+        {
+          "art": "formfelder",
+          "form": "wolke",
+          "items": ["A · z. B. Mathe-Arbeit", "B", "C", "D", "E", "F"],
+          "spalten": 3,
+          "hoehe": 2.9
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sortiere mit dem Kompass: Schreib die Buchstaben deiner Wolken in den Ring, der am besten passt.",
+          "hinweis": "Frag dich bei jeder Sorge: Kann ich etwas dazu beitragen – ganz, teilweise oder gar nicht? Eine Sorge darf auch zwischen zwei Ringen stehen.",
+          "symbole": ["schreiben", "nachdenken"]
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": ["Gar nicht in meiner Hand", "Teilweise in meiner Hand", "In meiner Hand"],
+          "mitte": "Ich",
+          "daneben": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Sorge aus dem inneren Ring. Welcher kleine Schritt liegt in deiner Hand – klein genug für diese Woche?",
+          "hinweis": "Beispiel: Sorge: Ob ich die Mathe-Arbeit schaffe. Schritt: Am Dienstag zehn Minuten nur üben, was ich noch nicht kann. Ich gehe ihn, wenn ich am Schreibtisch sitze. Ist der Ring leer, nimm den mittleren.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Meine Sorge und mein kleiner Schritt (unter zehn Minuten): …", "Ich gehe ihn, wenn …"],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Sorge aus dem äußeren Ring. Du kannst sie nicht ändern, aber du kannst üben, sie nicht den ganzen Tag mitzutragen.",
+          "hinweis": "Beispiel für einen Satz zum Loslassen: „Das liegt nicht bei mir. Ich lege es jetzt ab.“ Kommt eine Sorge vor der Sorgenzeit, schreib ein Stichwort auf. In der Sorgenzeit holst du die Zettel aus dem Glas.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Mein Satz zum Loslassen: …", "Meine Sorgenzeit (zehn Minuten am Tag): um … Uhr, an diesem Ort: …"],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Atme zum Loslassen 4-7-8: ein (bis 4 zählen), halten (bis 7), langsam aus (bis 8). Dreimal. Kreuz vorher und nachher an.",
+          "hinweis": "Zwei Farben: eine für vorher, eine für nachher. Ist Anhalten unangenehm oder wird dir schwindlig: 4 ein, 6 aus, ohne Anhalten. Wer nicht mag, schaut nur zu.",
+          "symbole": ["ankreuzen", "nachdenken"]
+        },
+        {
+          "art": "regler",
+          "paare": [["angespannt", "entspannt"], ["Kopf voll", "Kopf frei"], ["Bauch eng", "Bauch weit"]],
+          "stufen": 5
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wegdrücken klappt selten",
+          "text": "Wer versucht, an etwas nicht zu denken, denkt oft erst recht daran. Hilfreicher ist es, der Sorge einen Platz und eine Zeit zu geben – wie dem Zettel im Glas. Nicht jede Sorge muss heute gelöst werden."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Sorgen gehören dir. Niemand sammelt das Blatt ein. Wenn eine Sorge sehr groß ist, such dir einen Menschen, dem du vertraust, oder sprich mit dem SePAS."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen sortieren ihre Sorgen danach, was sie beeinflussen können. Sie wählen einen kleinen Schritt, einen Satz zum Loslassen und eine feste Sorgenzeit.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Steine verschiedener Größe herumgeben: „Welcher Stein wäre eine Sorge? Wo spürst du das Gewicht?“",
+          "Erklären (7 Min.): Kompass mit drei Ringen an die Tafel, Beispiel Mathe-Arbeit gemeinsam sortieren. Eine erfundene Person ist erlaubt.",
+          "Einzelarbeit (18 Min.): Wolken füllen, Zettel ins Glas, sortieren, Schritt und Loslassen-Satz schreiben, 4-7-8 atmen.",
+          "Austausch (10 Min., freiwillig): Zu zweit: „Welcher kleine Schritt wäre für dich machbar?“ Im Plenum keine Sorgen nennen.",
+          "Abschluss (5 Min.): Tipp-Kasten vorlesen, Sorgenzeit festlegen. Nach einer Woche nachfragen: „Was hat sich verändert?“"
+        ],
+        "hintergrund": "Sorgen auf eine feste Zeit zu verschieben und sonst nur kurz zu notieren ist ein Baustein der kognitiven Verhaltenstherapie. Gedanken zu unterdrücken verstärkt sie oft (Wegner et al., 1987). Die Frage „Kann ich etwas tun?“ führt zum Problemlösen (Kendall & Hedtke, 2006); für Unlösbares übt der Satz zum Loslassen Abstand. Langsames Atmen mit langer Ausatmung wird mit mehr Entspannung verbunden (Zaccaro et al., 2018).",
+        "quellen": [
+          "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Wolken und Kompass; mit einer erfundenen Person; Atmen: 4 ein, 6 aus.",
+          "schwerer": "Wenn-dann-Plan für jeden Schritt; Sorgenzeit eine Woche testen."
+        },
+        "impulse": [
+          "Welche Sorge wird kleiner, wenn du sie aufschreibst?",
+          "Was liegt im mittleren Ring doch in deiner Hand?",
+          "Was rätst du jemandem mit derselben Sorge?"
+        ],
+        "tipps": [
+          "Zettel im Glas werden nicht gelesen oder eingesammelt.",
+          "4-7-8 locker üben; bei Schwindel normal atmen."
+        ],
+        "achtung": "Keine Sorgen vorlesen lassen. Bei Gewalt, Hoffnungslosigkeit oder hartnäckigem Grübeln: Einzelgespräch, SePAS oder Vertrauensperson; bei Gefährdung sofort handeln (Baustein „notfall“).",
+        "material": "Glas oder Schachtel mit Deckel; kleine Zettel; 3–4 Steine"
+      }
+    },
+    "fr": {
+      "titel": "Ma boussole des soucis",
+      "untertitel": "Quels soucis peux-tu orienter – et lesquels as-tu le droit de lâcher ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les soucis tournent dans la tête jusqu’à paraître tous aussi gros et aussi lourds. Une boussole t’aide à trouver la direction : pour certains soucis, tu peux agir toi-même, pour d’autres non. Aujourd’hui, tu les rassembles et tu les tries. Tu n’as à résoudre aucun souci ni à en révéler un seul. Il n’y a ni bonne ni mauvaise réponse – chaque souci a le droit d’exister."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rassemble tes soucis dans les nuages (un par nuage, des mots-clés suffisent). Écris-en un sur un papier et glisse-le dans le bocal de la table.",
+          "hinweis": "Les petits comptent aussi : une note, une dispute, un message sans réponse, l’avenir, le monde. Le nuage A donne un exemple. Écris un souci sur un papier, plie-le et dépose-le dans le bocal – il peut y attendre. Si tes propres soucis sont trop proches, prends ceux d’une personne inventée.",
+          "symbole": ["schreiben", "nachdenken"]
+        },
+        {
+          "art": "formfelder",
+          "form": "wolke",
+          "items": ["A · p. ex. devoir de maths", "B", "C", "D", "E", "F"],
+          "spalten": 3,
+          "hoehe": 2.9
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trie avec la boussole : écris les lettres de tes nuages dans l’anneau qui convient le mieux.",
+          "hinweis": "Demande-toi pour chaque souci : puis-je y contribuer – entièrement, en partie ou pas du tout ? Un souci peut aussi se placer entre deux anneaux.",
+          "symbole": ["schreiben", "nachdenken"]
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": ["Pas du tout entre mes mains", "En partie entre mes mains", "Entre mes mains"],
+          "mitte": "Moi",
+          "daneben": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis un souci de l’anneau intérieur. Quel petit pas dépend de toi – assez petit pour cette semaine ?",
+          "hinweis": "Exemple : souci : réussir le devoir de maths. Pas : mardi, dix minutes à m’exercer seulement sur ce que je ne maîtrise pas encore. Je le fais quand je suis à mon bureau. Si l’anneau est vide, prends celui du milieu.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Mon souci et mon petit pas (moins de dix minutes) : …", "Je le fais quand … : …"],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis un souci de l’anneau extérieur. Tu ne peux pas le changer, mais tu peux t’entraîner à ne pas le porter toute la journée.",
+          "hinweis": "Exemple de phrase pour lâcher prise : « Ça ne dépend pas de moi. Je le dépose. » Si un souci arrive avant ton moment pour les soucis, note un mot-clé. À ce moment-là, tu sors les papiers du bocal.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Ma phrase pour lâcher prise : …", "Mon moment pour les soucis (dix minutes par jour) : à … h, à cet endroit : …"],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Respire en 4-7-8 pour lâcher prise : inspire (jusqu’à 4), retiens (jusqu’à 7), expire lentement (jusqu’à 8). Trois fois. Coche avant et après.",
+          "hinweis": "Deux couleurs : une pour avant, une pour après. Si retenir ton souffle est désagréable ou te donne le vertige : inspire 4, expire 6, sans retenir. Qui ne veut pas regarde seulement.",
+          "symbole": ["ankreuzen", "nachdenken"]
+        },
+        {
+          "art": "regler",
+          "paare": [["tension", "détente"], ["tête pleine", "tête libre"], ["ventre noué", "ventre détendu"]],
+          "stufen": 5
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Refouler marche rarement",
+          "text": "Celui qui essaie de ne pas penser à quelque chose y pense souvent encore plus. Mieux vaut donner au souci une place et une heure – comme le papier dans le bocal. Pas besoin de résoudre chaque souci aujourd’hui."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Tes soucis t’appartiennent. Personne ne ramasse la feuille. Si un souci est très gros, cherche une personne en qui tu as confiance ou parle au SePAS."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes trient leurs soucis selon ce qu’ils peuvent influencer. Ils choisissent un petit pas, une phrase pour lâcher prise et un moment fixe pour les soucis.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : faire circuler des pierres de tailles différentes : « Quelle pierre serait un souci ? Où sens-tu le poids ? »",
+          "Expliquer (7 min) : boussole à trois anneaux au tableau, trier ensemble l’exemple du devoir de maths. Une personne inventée est permise.",
+          "Travail individuel (18 min) : remplir les nuages, papier dans le bocal, trier, écrire le pas et la phrase pour lâcher prise, respirer en 4-7-8.",
+          "Échange (10 min, volontaire) : à deux : « Quel petit pas serait faisable pour toi ? » En plénière, ne nommer aucun souci.",
+          "Clôture (5 min) : lire l’encadré conseil, fixer le moment pour les soucis. Une semaine plus tard : « Qu’est-ce qui a changé ? »"
+        ],
+        "hintergrund": "Reporter les soucis à un moment fixe et ne les noter que brièvement est un élément de la thérapie cognitivo-comportementale. Réprimer ses pensées tend à les renforcer (Wegner et al., 1987). La question « Puis-je faire quelque chose ? » mène à la résolution de problèmes (Kendall & Hedtke, 2006) ; pour ce qui ne se résout pas, la phrase pour lâcher prise entraîne la distance. Une respiration lente avec expiration longue est associée à plus de détente (Zaccaro et al., 2018).",
+        "quellen": [
+          "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement nuages et boussole ; avec une personne inventée ; respirer : inspirer 4, expirer 6.",
+          "schwerer": "Plan « si… alors… » pour chaque pas ; tester le moment pour les soucis une semaine."
+        },
+        "impulse": [
+          "Quel souci devient plus petit quand tu l’écris ?",
+          "Qu’est-ce qui, au milieu, dépend tout de même de toi ?",
+          "Que conseilles-tu à quelqu’un qui a le même souci ?"
+        ],
+        "tipps": [
+          "Les papiers du bocal ne sont ni lus ni ramassés.",
+          "Pratiquer le 4-7-8 doucement ; en cas de vertige, respirer normalement."
+        ],
+        "achtung": "Ne pas faire lire de soucis à voix haute. En cas de violence, de désespoir ou de ruminations : entretien individuel, SePAS ou personne de confiance ; en cas de danger, agir (bloc « notfall »).",
+        "material": "Bocal ou boîte ; papiers ; pierres"
+      }
+    }
+  },
+  {
+    "id": "tg-stimmungs-wetter",
+    "bereich": "gefuehle",
+    "thema": "stimmung",
+    "stufen": ["C4", "ES"],
+    "layout": "jugend",
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["K-26", "K-29", "KOG-61", "V-29"],
+    "schlagworte": ["Stimmung", "Muster", "Selbstbeobachtung", "Schlaf", "Bewegung", "Handy", "Musik", "Wohlbefinden"],
+    "verwandt": ["was-meine-stimmung-beeinflusst", "meine-gefuehlswoche", "t1-gefuehle-thermometer"],
+    "bild": "icon:rainbow",
+    "de": {
+      "titel": "Mein Stimmungs-Wetter",
+      "untertitel": "Zwei Wochen Wetterbericht – und was dein Wetter verändert",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Deine Stimmung ist wie das Wetter: Sie wechselt, und nicht jeder Tag ist sonnig. Wer genauer hinschaut, entdeckt Muster: Was bringt Wolken, was bringt Sonne? Heute schreibst du deinen Wetterbericht für zwei Wochen und suchst dein Sonnen-Rezept. Es gibt kein Richtig oder Falsch."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau auf die letzten 14 Tage zurück. Mal für jeden Tag ein Wetter in das Feld oder färbe es: oben die vorletzte, unten die letzte Woche.",
+          "hinweis": "Kalender, Handy-Fotos und Stundenplan helfen beim Erinnern. Tage ohne Erinnerung bleiben leer. Die Zeichen darunter sind Vorschläge, du darfst eigene erfinden. Ist dir das zu nah, male das Wetter einer erfundenen Person.",
+          "symbole": ["malen", "nachdenken"]
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "modus": "nur",
+          "bilder": [
+            { "bild": "icon:sun", "text": "gut drauf" },
+            { "bild": "icon:cloud", "text": "ruhig, ein bisschen grau" },
+            { "bild": "icon:cloud-rain", "text": "gedrückt, traurig" },
+            { "bild": "icon:cloud-storm", "text": "gereizt, wütend" },
+            { "bild": "icon:wind", "text": "unruhig, aufgewühlt" },
+            { "bild": "icon:rainbow", "text": "gemischt, wird besser" }
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
+          "zeilen": 2,
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was beeinflusst dein Wetter? Kreuz auf jedem Regler an, wie es in diesen zwei Wochen war.",
+          "hinweis": "Eher Regen oder eher Sonne? Die Mitte heißt: mal so, mal so – oder kein Einfluss. Es gibt keine falsche Antwort.",
+          "symbole": ["ankreuzen"]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            ["Schlaf: Regen", "Schlaf: Sonne"],
+            ["Leute: Regen", "Leute: Sonne"],
+            ["Handy: Regen", "Handy: Sonne"],
+            ["Sport: Regen", "Sport: Sonne"],
+            ["Essen: Regen", "Essen: Sonne"],
+            ["Schule: Regen", "Schule: Sonne"]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entdecke Muster: Was war an den sonnigen Tagen anders als an den regnerischen?",
+          "hinweis": "Beispiel: Alle drei sonnigen Tage hatten Training oder einen Spaziergang. An den Regentagen habe ich lange am Handy gesessen und wenig geschlafen.",
+          "symbole": ["schreiben", "nachdenken"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["An meinen Sonnentagen war oft: …", "An meinen Regentagen war oft: …"],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such zwei Songs aus: einen für Regentage und einen für Sonnentage. Hör jeweils 30 Sekunden hinein und spür nach: Was macht der Song mit dir?",
+          "hinweis": "Der Regentage-Song muss nicht fröhlich sein. Er kann trösten, beruhigen oder dir helfen, alles rauszulassen. Kopfhörer sind erlaubt.",
+          "symbole": ["zuhoeren", "schreiben"]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": ["Mein Regentage-Song:", "Mein Sonnentage-Song:"],
+          "anzahl": 2,
+          "spalten": 1,
+          "hoehe": 1.6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib dein Sonnen-Rezept: drei Zutaten, die dein Wetter freundlicher machen, und wann du sie dazugibst.",
+          "hinweis": "Klein und machbar: lieber eine Viertelstunde draußen als ein großer Plan.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Zutat", "Wie oft", "Wann"],
+          "zeilen": 3,
+          "beispiel": ["Zehn Minuten raus an die Luft", "dreimal pro Woche", "nach der Schule"],
+          "breiten": [3, 2, 2],
+          "hoehe": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Regen gehört dazu",
+          "text": "Aus dem Bauch zurückzuschauen täuscht leicht: Ein schlimmer Tag färbt oft die ganze Woche grau. Ein Wetterbericht zeigt, wie es wirklich war. Ein Rezept muss nicht jeden Tag klappen. Wenn die Regentage wochenlang anhalten und nichts mehr hilft, sprich mit jemandem, dem du vertraust."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dein Wetterbericht gehört dir. Niemand sammelt das Blatt ein. Wenn du magst, führ ihn zwei Wochen weiter, jeden Abend eine Minute."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen halten zwei Wochen Stimmung als Wetter fest, entdecken Zusammenhänge mit Schlaf, Leuten, Handy, Sport, Essen und Schule und formulieren ein eigenes Sonnen-Rezept.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: zwei Klangproben (Regen, dann ein fröhliches Lied, je 20 Sek.): „Welches Wetter ist heute in dir?“",
+          "Erklären (5 Min.): Wetter-Zeichen an die Tafel, einen Tag als Beispiel vormachen. Auch Regen ist in Ordnung; eine erfundene Person ist erlaubt.",
+          "Einzelarbeit (20 Min.): Zwei Wochen als Wetter malen, Regler, Muster entdecken, zwei Songs je 30 Sek. hören, Sonnen-Rezept schreiben.",
+          "Austausch (10 Min., freiwillig): Zu zweit eine Zutat erzählen. Im Plenum Zutaten ohne Namen sammeln: das Sonnen-Rezept der Klasse.",
+          "Abschluss (5 Min.): Tipp-Kasten vorlesen, „Das nehme ich mit“ schreiben. Idee: in zwei Wochen weitermalen und vergleichen."
+        ],
+        "hintergrund": "Stimmung schwankt im Alltag und hängt mit Gewohnheiten zusammen, die Jugendliche teils selbst lenken können. Jugendliche brauchen viel Schlaf, ihre innere Uhr verschiebt sich nach hinten (Carskadon, 2011). Bewegung geht mit besserer psychischer Gesundheit einher (Biddle & Asare, 2011), Musik verändert Stimmung und Erregung über mehrere Mechanismen (Juslin & Västfjäll, 2008). Das Wetter-Protokoll nutzt die Selbstbeobachtung der Verhaltenstherapie: Wer Stimmung und Aktivitäten festhält, erkennt Muster (Beck, 2011). Es stellt keine Diagnose.",
+        "quellen": [
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Biddle, S. J. H. & Asare, M. (2011). Physical activity and mental health in children and adolescents: A review of reviews. British Journal of Sports Medicine, 45(11), 886–895.",
+          "Juslin, P. N. & Västfjäll, D. (2008). Emotional responses to music: The need to consider underlying mechanisms. Behavioral and Brain Sciences, 31(5), 559–575.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur eine Woche malen; Regler und Muster zu zweit mündlich.",
+          "schwerer": "Zwei Wochen als Tagebuch weiterführen und in der nächsten Stunde auswerten."
+        },
+        "impulse": [
+          "Welche Zutat gehört in jedes Rezept?",
+          "Was verändert sich nach einer guten Nacht?",
+          "Was tröstet dich an einem Regentag?"
+        ],
+        "tipps": [
+          "Wetter-Zeichen nicht deuten: Grau ist keine Diagnose.",
+          "Klassen-Rezepte als Plakat aufhängen, ohne Namen."
+        ],
+        "achtung": "Bei Hoffnungslosigkeit, Rückzug oder Selbstverletzung: nicht im Plenum vertiefen; Einzelgespräch, SePAS oder Vertrauensperson. Bei Suizidgedanken sofort handeln, nicht allein lassen (Baustein „notfall“).",
+        "material": "Buntstifte; Handy für zwei Klangproben; Kalender zum Erinnern"
+      }
+    },
+    "fr": {
+      "titel": "Ma météo de l’humeur",
+      "untertitel": "Deux semaines de bulletin météo – et ce qui fait varier ton humeur",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ton humeur ressemble à la météo : elle change, et tous les jours ne sont pas ensoleillés. Quand on regarde de plus près, on découvre des schémas : qu’est-ce qui amène des nuages, qu’est-ce qui amène du soleil ? Aujourd’hui, tu écris ton bulletin météo de deux semaines et tu cherches ta recette du soleil. Il n’y a ni bonne ni mauvaise réponse."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regarde 14 jours en arrière. Dessine la météo de ton humeur chaque jour, ou colorie la case : en haut l’avant-dernière semaine, en bas la dernière.",
+          "hinweis": "Le calendrier, les photos du téléphone et l’emploi du temps aident à se souvenir. Les jours oubliés restent vides. Les signes ci-dessous sont des idées ; tu peux en inventer. Si c’est trop proche, dessine la météo d’une personne inventée.",
+          "symbole": ["malen", "nachdenken"]
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "modus": "nur",
+          "bilder": [
+            { "bild": "icon:sun", "text": "de bonne humeur" },
+            { "bild": "icon:cloud", "text": "calme, un peu gris" },
+            { "bild": "icon:cloud-rain", "text": "tristesse, coup de blues" },
+            { "bild": "icon:cloud-storm", "text": "énervement, colère" },
+            { "bild": "icon:wind", "text": "agitation" },
+            { "bild": "icon:rainbow", "text": "mélange, ça s’améliore" }
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Lu", "Ma", "Me", "Je", "Ve", "Sa", "Di"],
+          "zeilen": 2,
+          "hoehe": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui influence ta météo ? Sur chaque réglette, marque comment c’était ces deux semaines.",
+          "hinweis": "Plutôt pluie ou plutôt soleil ? Le milieu veut dire : tantôt l’un, tantôt l’autre – ou aucune influence. Il n’y a pas de mauvaise réponse.",
+          "symbole": ["ankreuzen"]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            ["Sommeil : pluie", "Sommeil : soleil"],
+            ["Autres : pluie", "Autres : soleil"],
+            ["Écran : pluie", "Écran : soleil"],
+            ["Sport : pluie", "Sport : soleil"],
+            ["Repas : pluie", "Repas : soleil"],
+            ["Lycée : pluie", "Lycée : soleil"]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découvre des schémas : qu’est-ce qui était différent les jours de soleil par rapport aux jours de pluie ?",
+          "hinweis": "Exemple : les trois jours de soleil comptaient un entraînement ou une promenade. Les jours de pluie, j’ai passé beaucoup de temps sur mon téléphone et peu dormi.",
+          "symbole": ["schreiben", "nachdenken"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Les jours de soleil, il y avait souvent : …", "Les jours de pluie, il y avait souvent : …"],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis deux chansons : une pour les jours de pluie, une pour les jours de soleil. Écoute 30 secondes de chacune : que fait-elle de toi ?",
+          "hinweis": "La chanson des jours de pluie n’a pas besoin d’être joyeuse. Elle peut consoler, apaiser ou te laisser tout sortir. Les écouteurs sont permis.",
+          "symbole": ["zuhoeren", "schreiben"]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": ["Ma chanson des jours de pluie :", "Ma chanson des jours de soleil :"],
+          "anzahl": 2,
+          "spalten": 1,
+          "hoehe": 1.6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ta recette du soleil : trois ingrédients qui adoucissent ta météo, et quand tu les ajoutes.",
+          "hinweis": "Petit et faisable : mieux vaut un quart d’heure dehors qu’un grand plan.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Ingrédient", "À quelle fréquence", "Quand"],
+          "zeilen": 3,
+          "beispiel": ["Dix minutes de grand air", "3 fois par semaine", "après les cours"],
+          "breiten": [3, 2, 2],
+          "hoehe": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "La pluie fait partie du temps",
+          "text": "Se fier à son impression trompe facilement : une mauvaise journée peut griser toute la semaine. Un bulletin météo montre comment c’était vraiment. Une recette n’a pas besoin de marcher tous les jours. Si la pluie dure des semaines et que plus rien n’aide, parle à quelqu’un en qui tu as confiance."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Ton bulletin météo t’appartient. Personne ne ramasse la feuille. Si tu veux, continue-le pendant deux semaines, une minute chaque soir."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes notent deux semaines d’humeur sous forme de météo, repèrent des liens avec le sommeil, l’entourage, le téléphone, le sport, les repas et le lycée, et formulent leur recette du soleil.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : deux extraits sonores (pluie, puis une chanson joyeuse, 20 s chacun) : « Quel temps fait-il en toi aujourd’hui ? »",
+          "Expliquer (5 min) : signes météo au tableau, montrer un jour en exemple. La pluie aussi est permise ; une personne inventée aussi.",
+          "Travail individuel (20 min) : peindre deux semaines en météo, réglettes, repérer des schémas, écouter deux chansons 30 s chacune, écrire la recette du soleil.",
+          "Échange (10 min, volontaire) : à deux, raconter un ingrédient. En plénière, collecter les ingrédients sans noms : la recette du soleil de la classe.",
+          "Clôture (5 min) : lire l’encadré conseil, écrire « Ce que j’emporte ». Idée : continuer deux semaines et comparer."
+        ],
+        "hintergrund": "L’humeur varie au quotidien et dépend d’habitudes que les jeunes peuvent en partie orienter. Les adolescents ont besoin de beaucoup de sommeil et leur horloge interne se décale vers le soir (Carskadon, 2011). L’activité physique va de pair avec une meilleure santé psychique (Biddle & Asare, 2011) ; la musique modifie humeur et activation (Juslin et Västfjäll, 2008). Le relevé météo reprend l’auto-observation de la thérapie comportementale : noter humeur et activités fait apparaître des schémas (Beck, 2011). Il ne pose aucun diagnostic.",
+        "quellen": [
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Biddle, S. J. H. & Asare, M. (2011). Physical activity and mental health in children and adolescents: A review of reviews. British Journal of Sports Medicine, 45(11), 886–895.",
+          "Juslin, P. N. & Västfjäll, D. (2008). Emotional responses to music: The need to consider underlying mechanisms. Behavioral and Brain Sciences, 31(5), 559–575.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Peindre une seule semaine ; réglettes et schémas à l’oral, à deux.",
+          "schwerer": "Continuer deux semaines comme journal et faire le bilan à la séance suivante."
+        },
+        "impulse": [
+          "Quel ingrédient fait partie de toute recette ?",
+          "Qu’est-ce qui change après une bonne nuit ?",
+          "Qu’est-ce qui te console un jour de pluie ?"
+        ],
+        "tipps": [
+          "Ne pas interpréter les signes : le gris n’est pas un diagnostic.",
+          "Afficher les recettes de la classe en poster, sans noms."
+        ],
+        "achtung": "En cas de désespoir, de repli ou d’automutilation : ne pas approfondir en plénière ; entretien individuel, SePAS ou personne de confiance. En cas d’idées suicidaires, agir tout de suite (bloc « notfall »).",
+        "material": "Crayons ; téléphone ; calendrier"
+      }
+    }
+  }
+]

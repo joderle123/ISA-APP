@@ -1,0 +1,1785 @@
+[
+  {
+    "id": "tg-freundschaft",
+    "bereich": "miteinander",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-34",
+      "K-35",
+      "SOZ-41",
+      "K-27"
+    ],
+    "schlagworte": [
+      "Freundschaft",
+      "Werte",
+      "Selbstbild",
+      "Beziehungen pflegen",
+      "Gläser",
+      "Freundschaftsband",
+      "Selbstreflexion"
+    ],
+    "verwandt": [
+      "was-mir-in-freundschaften-wichtig-ist",
+      "skills-freundschafts-barometer",
+      "freundschafts-rezept",
+      "skills-wenn-freundschaften-enden"
+    ],
+    "bild": "icon:friends",
+    "de": {
+      "titel": "Was Freundschaft für mich heißt",
+      "untertitel": "Was dir wichtig ist, was dir guttut – und ein kleiner Schritt",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Freundschaften verändern sich: Manche halten jahrelang, andere schlafen ein, neue kommen dazu. Was dir in einer Freundschaft wichtig ist, spürst du oft eher, als dass du es sagen könntest. Hier bekommt dieses Gefühl Platz – für dich, ohne Namen. Es gibt kein Richtig oder Falsch."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was ist dir in Freundschaften wichtig? Zieh in jedem Glas einen Strich: so voll wünschst du es dir. Mal es so voll aus, wie du es gerade erlebst.",
+          "hinweis": "Ein Glas darf fast leer bleiben, ein anderes ganz voll sein. Fehlt dir etwas Wichtiges, zum Beispiel „Humor“ oder „Ruhe“? Schreib es an den Rand.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Vertrauen",
+            "Spaß",
+            "Ehrlichkeit",
+            "Zeit zusammen",
+            "Unterstützung",
+            "gleiche Hobbys"
+          ],
+          "spalten": 6,
+          "legende": [
+            "Strich: so wichtig ist es mir",
+            "Ausmalen: so viel erlebe ich gerade"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, dass dir eine Freundschaft guttut – und woran, dass sie dich Kraft kostet? Schreib Stichwörter, ohne Namen.",
+          "hinweis": "Denk an eine echte Freundschaft, an eine frühere oder an ein Paar aus einer Serie oder einem Film – wie es für dich passt. Es geht um dein Gefühl, nicht um die Person.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Das tut mir gut",
+            "Das kostet mich Kraft"
+          ],
+          "kopffarben": [
+            "gruen",
+            "orange"
+          ],
+          "zeilen": 2,
+          "hoehe": 2,
+          "beispiel": [
+            "Nach dem Treffen bin ich ruhiger.",
+            "Ich überlege vorher, was ich lieber nicht sage."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Freundin, welcher Freund bist du? Füll die Karte für dich aus – so, wie eine Person es sagen würde, die dich mag.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "personen",
+          "felder": [
+            "Ein Wort, das zu mir passt",
+            "Das kann ich für andere sein",
+            "Das fällt mir in Freundschaften schwer",
+            "Ein Satz, den ich oft sage",
+            "Das brauche ich von anderen"
+          ],
+          "anzahl": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gestalte dein Freundschafts-Band: Mal jedes Band in einer Farbe aus, die für etwas Verbindendes steht, und schreib ein Wort hinein.",
+          "hinweis": "Beispiel: Gelb für „Wir lachen über denselben Quatsch“, Blau für „Bei ihr kann ich mich ausheulen“. Wenn die Farbe reicht, brauchst du keine Wörter.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": [
+            "Diese Farbe steht für …",
+            "Diese Farbe steht für …",
+            "Diese Farbe steht für …"
+          ],
+          "anzahl": 3,
+          "spalten": 1,
+          "hoehe": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zu zweit, wenn du magst: Stellt euch gegenseitig eine Frage. Antworten ist freiwillig, „Pass“ gilt immer. Du hörst nur zu.",
+          "symbole": [
+            "partner",
+            "zuhoeren"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Meine Frage heute",
+          "items": [
+            "Was war dein schönster Freundschafts-Moment in diesem Schuljahr?",
+            "Woran merkst du, dass dir jemand wirklich zuhört?",
+            "Was brauchst du von einer Freundin oder einem Freund, wenn es dir schlecht geht?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ein kleiner Schritt: Wo ist der Abstand zwischen Strich und Farbe groß – und wichtig für dich? Was tust du diese Woche dafür?",
+          "hinweis": "Beispiel: Glas „Zeit zusammen“ – ich frage Inês, ob wir am Mittwoch zusammen zum Bus gehen. Klein reicht: Es soll in unter zehn Minuten gehen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ein Glas, das ich gern voller hätte: …",
+            "Mein kleiner Schritt: …",
+            "Wann ich ihn mache: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Geben und Nehmen darf schwanken",
+          "text": "In einer guten Freundschaft gibst nicht immer du gleich viel. Auf Dauer sollte es sich ungefähr ausgleichen – und du musst dich nicht verbiegen. Wenn eine Freundschaft dir oft wehtut, sprich mit jemandem, dem du vertraust."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Antworten gehören dir, niemand sammelt das Blatt ein. Füll es in einigen Monaten noch einmal aus und schau, was sich verändert hat."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen klären, was ihnen in Freundschaften wichtig ist und woran sie merken, dass eine Freundschaft guttut. Sie beschreiben sich als Freund oder Freundin und planen einen Schritt.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Wollfäden in vielen Farben in die Mitte legen; alle wählen still eine Farbe für „Freundschaft“.",
+          "Erklären (5 Min.): Gläser vormachen (Strich = so wichtig, Ausmalen = so erlebe ich es), Beispiel „Zeit“. Keine Namen.",
+          "Einzelarbeit (20 Min.): Gläser, Tabelle, Personen-Karte, Band in Farben. Leise Musik. Wer mag, denkt an eine Serienfigur.",
+          "Austausch (8 Min., freiwillig): Zu zweit eine Frage stellen, 1 Min. antworten lassen, nur zuhören, tauschen. „Pass“ gilt immer.",
+          "Abschluss (7 Min.): Kleinen Schritt aufschreiben, Tipp-Kasten vorlesen. Blatt in einigen Monaten wiederholen."
+        ],
+        "hintergrund": "Im Jugendalter erwarten Freunde voneinander zunehmend Offenheit, Loyalität und Unterstützung (Bagwell & Schmidt, 2011). Freundschaften unterscheiden sich von anderen Beziehungen unter Gleichaltrigen durch mehr positive Zuwendung, Nähe und gegenseitige Hilfe (Newcomb & Bagwell, 1995). Das Blatt lässt Jugendliche eigene Maßstäbe festlegen (Gläser), Beziehungen daran prüfen (Tabelle) und sich selbst als Freund oder Freundin ansehen. Der kleine Schritt folgt dem Prinzip konkreter Pläne mit Zeitpunkt (Gollwitzer, 1999).",
+        "quellen": [
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Newcomb, A. F. & Bagwell, C. L. (1995). Children’s friendship relations: A meta-analytic review. Psychological Bulletin, 117(2), 306–347.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Gläser und Band; Tabelle mündlich.",
+          "schwerer": "Zwei Zeitpunkte vergleichen: vor einem Jahr, heute."
+        },
+        "impulse": [
+          "Woran merkst du, dass dir eine Freundschaft guttut?",
+          "Was passiert, wenn ein Glas fast leer bleibt?",
+          "Welcher kleine Schritt bedeutet viel?"
+        ],
+        "tipps": [
+          "Fäden dürfen mitgenommen werden. Nichts aushängen.",
+          "Gläser nicht vergleichen lassen."
+        ],
+        "achtung": "Nichts einsammeln oder vorlesen lassen. Wer wenige Freundschaften hat, nimmt eine gewünschte oder ausgedachte. Bei Ausgrenzung, Kontrolle oder Druck: Einzelgespräch, SePAS, Vertrauensperson; bei Krise Baustein „Notfall“ (116 111).",
+        "material": "Buntstifte; Wollfäden oder Bänder; Musik"
+      }
+    },
+    "fr": {
+      "titel": "Ce que l’amitié veut dire pour moi",
+      "untertitel": "Ce qui compte pour toi, ce qui te fait du bien – et un petit pas",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les amitiés changent : certaines durent des années, d’autres s’endorment, de nouvelles arrivent. Ce qui compte pour toi dans une amitié, tu le sens souvent mieux que tu ne saurais le dire. Ici, ce ressenti a de la place – pour toi, sans noms. Il n’y a ni bonne ni mauvaise réponse."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui compte pour toi dans l’amitié ? Trace un trait par verre : à ce niveau, tu le souhaites. Colorie à la hauteur de ce que tu vis.",
+          "hinweis": "Un verre peut rester presque vide, un autre être tout plein. Il te manque quelque chose d’important, par exemple « humour » ou « calme » ? Écris-le dans la marge.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Confiance",
+            "Plaisir",
+            "Franchise",
+            "Temps ensemble",
+            "Soutien",
+            "Goûts communs"
+          ],
+          "spalten": 6,
+          "legende": [
+            "Trait : à quel point c’est important",
+            "Coloriage : ce que je vis en ce moment"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi remarques-tu qu’une amitié te fait du bien – et à quoi, qu’elle te prend de l’énergie ? Écris des mots-clés, sans noms.",
+          "hinweis": "Pense à une amitié réelle, à une amitié passée ou à un duo d’une série ou d’un film – comme tu préfères. Il s’agit de ton ressenti, pas de la personne.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ça me fait du bien",
+            "Ça me prend de l’énergie"
+          ],
+          "kopffarben": [
+            "gruen",
+            "orange"
+          ],
+          "zeilen": 2,
+          "hoehe": 2,
+          "beispiel": [
+            "Après, je suis plus calme.",
+            "Je réfléchis d’abord à ce que je ferais mieux de ne pas dire."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel ami, quelle amie es-tu ? Remplis la carte pour toi, comme le dirait une personne qui t’apprécie.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "personen",
+          "felder": [
+            "Un mot qui me va bien",
+            "Ce que je peux être pour les autres",
+            "Ce qui m’est difficile en amitié",
+            "Une phrase que je dis souvent",
+            "Ce dont j’ai besoin des autres"
+          ],
+          "anzahl": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Crée ton bracelet d’amitié : colorie chaque ruban d’une couleur qui représente ce qui vous lie, et écris un mot dedans.",
+          "hinweis": "Exemple : jaune pour « On rit des mêmes bêtises », bleu pour « Avec elle, je peux pleurer ». Si la couleur suffit, pas besoin de mots.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": [
+            "Cette couleur représente …",
+            "Cette couleur représente …",
+            "Cette couleur représente …"
+          ],
+          "anzahl": 3,
+          "spalten": 1,
+          "hoehe": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "À deux, si tu veux : posez-vous une question. Répondre est facultatif, « Je passe » est toujours permis. Toi, tu écoutes seulement.",
+          "symbole": [
+            "partner",
+            "zuhoeren"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ma question aujourd’hui",
+          "items": [
+            "Quel a été ton plus beau moment d’amitié cette année scolaire ?",
+            "À quoi remarques-tu que quelqu’un t’écoute vraiment ?",
+            "Qu’attends-tu d’un ami ou d’une amie quand tu vas mal ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Un petit pas : où l’écart entre le trait et la couleur est-il grand – et important pour toi ? Que fais-tu cette semaine ?",
+          "hinweis": "Exemple : verre « Temps ensemble » – je demande à Inês si on prend le bus ensemble mercredi. Petit suffit : en moins de dix minutes.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Un verre que j’aimerais plus plein : …",
+            "Mon petit pas : …",
+            "Quand je le fais : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Donner et recevoir peuvent varier",
+          "text": "Dans une bonne amitié, tu ne donnes pas toujours autant. À la longue, cela devrait s’équilibrer à peu près – et tu n’as pas à te plier. Si une amitié te fait souvent mal, parles-en à quelqu’un en qui tu as confiance."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Tes réponses t’appartiennent, personne ne ramasse la feuille. Remplis-la à nouveau dans quelques mois et regarde ce qui a changé."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes clarifient ce qui compte pour eux dans l’amitié et ce qui leur fait du bien. Ils se décrivent comme ami ou amie et planifient un petit pas.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : fils de laine de toutes les couleurs au centre ; chacun choisit une couleur pour « amitié ».",
+          "Expliquer (5 min) : montrer les verres (trait = importance, coloriage = ce que je vis), exemple « Temps ». Pas de noms.",
+          "Travail individuel (20 min) : verres, tableau, carte de personne, bracelet en couleurs. Musique douce. Possible : penser à un personnage de série.",
+          "Échange (8 min, facultatif) : à deux, une question, 1 min de réponse, écouter seulement, échanger. « Je passe » est permis.",
+          "Clôture (7 min) : écrire le petit pas, lire l’encadré conseil. Refaire la feuille dans quelques mois."
+        ],
+        "hintergrund": "À l’adolescence, les amis attendent de plus en plus franchise, loyauté et soutien (Bagwell et Schmidt, 2011). Les amitiés se distinguent des autres relations entre pairs par plus d’attention positive, de proximité et d’entraide (Newcomb et Bagwell, 1995). La feuille fait fixer ses critères (verres), vérifier ses relations (tableau) et se regarder comme ami ou amie. Le petit pas final suit le principe des plans concrets avec une échéance (Gollwitzer, 1999).",
+        "quellen": [
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Newcomb, A. F. & Bagwell, C. L. (1995). Children’s friendship relations: A meta-analytic review. Psychological Bulletin, 117(2), 306–347.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement verres et bracelet ; tableau à l’oral.",
+          "schwerer": "Comparer deux moments : il y a un an, aujourd’hui."
+        },
+        "impulse": [
+          "À quoi remarques-tu qu’une amitié te fait du bien ?",
+          "Que se passe-t-il si un verre reste presque vide ?",
+          "Quel petit pas coûte peu et compte beaucoup ?"
+        ],
+        "tipps": [
+          "Les fils peuvent être emportés. Rien d’affiché.",
+          "Ne pas comparer les verres."
+        ],
+        "achtung": "Ne rien ramasser ni faire lire. Peu d’amis : penser à une amitié souhaitée ou inventée. Exclusion, contrôle ou pression : entretien individuel, SePAS, personne de confiance ; crise : bloc « Urgence » (116 111).",
+        "material": "Crayons ; fils de laine ou rubans ; musique"
+      }
+    }
+  },
+  {
+    "id": "tg-nach-dem-streit",
+    "bereich": "miteinander",
+    "thema": "konflikte",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-26",
+      "K-33",
+      "K-31",
+      "SOZ-34"
+    ],
+    "schlagworte": [
+      "Streit",
+      "Konflikt",
+      "Perspektivwechsel",
+      "Wiedergutmachung",
+      "Versöhnung",
+      "Gefühle und Bedürfnisse",
+      "Selbstreflexion"
+    ],
+    "verwandt": [
+      "konflikt-bruecke",
+      "t2-streit-klaeren-ich-botschaft",
+      "drei-sichtweisen",
+      "skills-konflikt-treppe"
+    ],
+    "bild": "icon:needle-thread",
+    "de": {
+      "titel": "Nach dem Streit",
+      "untertitel": "Ein Streit, zwei Blickwinkel – und was du zur Reparatur beitragen kannst",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Nach einem Streit bleibt oft etwas zurück: ein Knoten im Bauch, ein Schweigen, ein Gedanke, der immer wiederkommt. Es hilft, den Streit noch einmal anzuschauen, wenn er nicht mehr so heiß ist – von deiner Seite und von der anderen. Es geht nicht darum, wer recht hatte. Nimm einen Streit, der schon etwas her ist. Ein ausgedachter oder ein Beispiel funktioniert genauso."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir einen Streit aus und kreuz an.",
+          "hinweis": "Wähl keinen, der dich gerade noch aufwühlt – ein kleiner Streit von früher reicht. Du schreibst keine Namen auf.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Ein eigener Streit, der schon vorbei ist.",
+            "Ein ausgedachter Streit, zum Beispiel aus einer Serie oder einem Buch.",
+            "Das Beispiel: Léa hat Pols Geheimnis in der Klassengruppe weitererzählt. Am nächsten Tag hat Pol sie vor allen angeschnauzt: „Du bist so falsch.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau den Streit von zwei Seiten an. Links bist du, rechts die andere Person: Was wurde gesagt, gedacht, gebraucht?",
+          "hinweis": "Wechsle dazwischen den Stuhl und sei die andere Person. Du kannst nicht wissen, was sie wirklich dachte – rate mit Wohlwollen. Gebraucht werden zum Beispiel Ruhe, Respekt, Gehörtwerden, Fairness. Beim Beispiel: links Pol, rechts Léa.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "bild",
+              "bild": "figur:lea:neutral",
+              "groesse": "m",
+              "text": "Ich"
+            },
+            {
+              "art": "formfelder",
+              "form": "blase",
+              "items": [
+                "Das habe ich gesagt …"
+              ],
+              "anzahl": 1,
+              "spalten": 1,
+              "hoehe": 3
+            },
+            {
+              "art": "formfelder",
+              "form": "wolke",
+              "items": [
+                "Das habe ich gedacht …"
+              ],
+              "anzahl": 1,
+              "spalten": 1,
+              "hoehe": 3
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Das habe ich gebraucht: …"
+              ],
+              "linien": 2
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "figur:tom:neutral",
+              "groesse": "m",
+              "text": "Die andere Person"
+            },
+            {
+              "art": "formfelder",
+              "form": "blase",
+              "items": [
+                "Das hat sie oder er vielleicht gesagt …"
+              ],
+              "anzahl": 1,
+              "spalten": 1,
+              "hoehe": 3
+            },
+            {
+              "art": "formfelder",
+              "form": "wolke",
+              "items": [
+                "Das hat sie oder er vielleicht gedacht …"
+              ],
+              "anzahl": 1,
+              "spalten": 1,
+              "hoehe": 3
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Das hat sie oder er vielleicht gebraucht: …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie groß ist der Riss zwischen euch – heute? Kreuz auf den Reglern an.",
+          "hinweis": "Beide Seiten sind in Ordnung: Auch ein Streit, der offen ist, darf offen bleiben.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Haarriss",
+              "tiefer Graben"
+            ],
+            [
+              "vergessen",
+              "beschäftigt mich"
+            ],
+            [
+              "wir reden normal",
+              "wir meiden uns"
+            ],
+            [
+              "ist okay so",
+              "will ich klären"
+            ]
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was könntest du zur Reparatur beitragen? Kreuz an, was zu dir und zu diesem Streit passt. Auch „nichts“ ist eine Antwort.",
+          "hinweis": "Wähl so viele, wie du magst – auch nur eine.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "mit der Person reden",
+            "eine Nachricht schreiben",
+            "Zeit lassen",
+            "Hilfe holen (Vertrauensperson, SePAS)",
+            "etwas Kleines tun (Hallo sagen, Platz machen)",
+            "eine dritte Person vermitteln lassen",
+            "meinen Teil klar sagen",
+            "den Riss erst einmal lassen"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Probier einen Satz für einen ersten Schritt aus. Schreib ihn zu Ende, dann sag ihn laut: leise für dich, im Stehen oder zu zweit.",
+          "hinweis": "Beispiel: „Als du das Geheimnis weitererzählt hast, war ich wütend – und auch traurig. Ich wünsche mir, dass wir morgen kurz reden.“ Sag den Satz zweimal: einmal schnell, einmal langsam. Welcher fühlt sich besser an?",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Als … passiert ist, habe ich … gefühlt.",
+            "Ich habe gebraucht, dass …",
+            "Ich wünsche mir, dass …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Reparieren heißt nicht, sich zu entschuldigen",
+          "text": "Manchmal braucht ein Riss zuerst Zeit. Manchmal reicht ein kleiner Schritt: Hallo sagen, Platz machen, nachfragen. Du darfst deinen Teil sagen, ohne alles gutzuheißen, was passiert ist. Und du darfst Abstand halten, wenn dich jemand verletzt hat."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Antworten gehören dir. Niemand sammelt das Blatt ein. Wenn dich ein Streit nicht loslässt oder jemand dir Angst macht, sprich mit einer Person, der du vertraust, oder mit dem SePAS deines Lycée."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen betrachten einen vergangenen Streit aus zwei Blickwinkeln und schätzen ein, wie groß der Riss heute ist. Sie wählen einen kleinen Beitrag zur Reparatur – ohne Pflicht zur Entschuldigung.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Papier langsam zerreißen (hören), Teile zusammenlegen: „Wann ist ein Riss heil – wann bleibt eine Naht?“",
+          "Erklären (6 Min.): Beispiel Pol und Léa lesen, an der Tafel zwei Spalten: gesagt, gedacht, gebraucht. Raten mit Wohlwollen.",
+          "Einzelarbeit (17 Min.): Streit wählen, Blasen füllen, dazwischen den Stuhl wechseln (je 2 Min.), Regler, Reparatur, Satz.",
+          "Laut probieren (10 Min., freiwillig): Satz zu zweit sprechen, erst leise, dann zur Person; sie hört nur zu und sagt, was sie gehört hat.",
+          "Abschluss (7 Min.): Tipp-Kasten vorlesen, „Das nehme ich mit“. Freiwillig: „Welcher kleinste Schritt?“"
+        ],
+        "hintergrund": "Nach einem Konflikt hilft es, einen Schritt zurückzutreten: Wer eine Situation wie von außen betrachtet, verarbeitet sie meist ruhiger und ordnet sie besser ein (Kross & Ayduk, 2017). Der Stuhlwechsel macht diesen Abstand körperlich erlebbar. Gesagt, gedacht, gebraucht trennt Beobachtung, Gefühl und Bedürfnis (Rosenberg, 2001). Die Auswahl der Beiträge folgt dem Gedanken der Wiedergutmachung: Wer ist betroffen, was braucht es, wer kann was tun (Zehr, 2002). Eine Entschuldigung ist ein möglicher Weg, kein Muss.",
+        "quellen": [
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books."
+        ],
+        "differenzierung": {
+          "leichter": "Nur das Beispiel Pol und Léa; Blasen mündlich zu zweit.",
+          "schwerer": "Dritte Perspektive (wer hat zugesehen?); Satz als Ich-Botschaft mit Bedürfnis und Bitte."
+        },
+        "impulse": [
+          "Was hat sich verändert, als du auf dem anderen Stuhl saßt?",
+          "Woran merkst du, dass ein Streit „fertig“ ist?",
+          "Wann ist Abstand besser als ein Gespräch?"
+        ],
+        "tipps": [
+          "Die andere Seite muss nicht „stimmen“; Raten genügt. „Ich weiß es nicht“ ist erlaubt.",
+          "Eine Entschuldigung nie verlangen."
+        ],
+        "achtung": "Nur vergangene, wenig belastende Streits wählen lassen. Bei Gewalt, Ausgrenzung oder Mobbing nicht im Plenum vertiefen: Einzelgespräch, SePAS oder Vertrauensperson; bei Gefährdung sofort nach dem internen Ablauf handeln (Kanner- a Jugendtelefon 116 111).",
+        "material": "Buntstifte; Papier zum Zerreißen; zweiter Stuhl oder Platz"
+      }
+    },
+    "fr": {
+      "titel": "Après la dispute",
+      "untertitel": "Une dispute, deux points de vue – et ce que tu peux faire pour réparer",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Après une dispute, il reste souvent quelque chose : un nœud au ventre, un silence, une pensée qui revient sans cesse. Cela aide de regarder la dispute à nouveau, quand elle brûle moins – de ton côté et de l’autre. Il ne s’agit pas de savoir qui avait raison. Prends une dispute qui date un peu. Une dispute inventée ou un exemple fonctionnent tout aussi bien."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une dispute et coche.",
+          "hinweis": "N’en prends pas une qui te remue encore : un petit désaccord d’avant suffit. Tu n’écris aucun nom.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Une dispute à moi, déjà passée.",
+            "Une dispute inventée, par exemple tirée d’une série ou d’un livre.",
+            "L’exemple : Léa a répété le secret de Pol dans le groupe de la classe. Le lendemain, Pol l’a rembarrée devant tout le monde : « Tu es tellement fausse. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regarde la dispute des deux côtés. À gauche, c’est toi, à droite l’autre personne : qu’a-t-on dit, pensé – et de quoi avait-on besoin ?",
+          "hinweis": "Change de chaise entre les deux et deviens l’autre personne. Tu ne peux pas savoir ce qu’elle pensait vraiment – devine avec bienveillance. Besoins possibles : calme, respect, être écouté·e, équité. Pour l’exemple : à gauche Pol, à droite Léa.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "bild",
+              "bild": "figur:lea:neutral",
+              "groesse": "m",
+              "text": "Moi"
+            },
+            {
+              "art": "formfelder",
+              "form": "blase",
+              "items": [
+                "Ce que j’ai dit …"
+              ],
+              "anzahl": 1,
+              "spalten": 1,
+              "hoehe": 3
+            },
+            {
+              "art": "formfelder",
+              "form": "wolke",
+              "items": [
+                "Ce que j’ai pensé …"
+              ],
+              "anzahl": 1,
+              "spalten": 1,
+              "hoehe": 3
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ce dont j’avais besoin : …"
+              ],
+              "linien": 2
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bild",
+              "bild": "figur:tom:neutral",
+              "groesse": "m",
+              "text": "L’autre personne"
+            },
+            {
+              "art": "formfelder",
+              "form": "blase",
+              "items": [
+                "Ce qu’elle a peut-être dit …"
+              ],
+              "anzahl": 1,
+              "spalten": 1,
+              "hoehe": 3
+            },
+            {
+              "art": "formfelder",
+              "form": "wolke",
+              "items": [
+                "Ce qu’elle a peut-être pensé …"
+              ],
+              "anzahl": 1,
+              "spalten": 1,
+              "hoehe": 3
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ce dont elle avait peut-être besoin : …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle est la taille de la fissure entre vous – aujourd’hui ? Marque une croix sur chaque curseur.",
+          "hinweis": "Les deux côtés se valent : même une dispute encore ouverte a le droit de rester ouverte.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "fissure fine",
+              "gouffre profond"
+            ],
+            [
+              "déjà oublié",
+              "me travaille"
+            ],
+            [
+              "on se parle bien",
+              "on s’évite"
+            ],
+            [
+              "ça va comme ça",
+              "je veux clarifier"
+            ]
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que pourrais-tu faire pour réparer ? Coche ce qui te correspond et correspond à cette dispute. « Rien » est aussi une réponse.",
+          "hinweis": "Choisis-en autant que tu veux – même un seul.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "parler avec la personne",
+            "écrire un message",
+            "laisser du temps",
+            "demander de l’aide (personne de confiance, SePAS)",
+            "faire un petit geste (dire bonjour, faire de la place)",
+            "passer par une tierce personne",
+            "dire clairement ma part",
+            "laisser la fissure telle quelle pour l’instant"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Essaie une phrase pour un premier pas. Termine-la par écrit, puis dis-la à voix haute : doucement pour toi, debout ou à deux.",
+          "hinweis": "Exemple : « Quand tu as répété le secret, j’étais en colère – et aussi triste. J’aimerais qu’on en parle demain, brièvement. » Dis la phrase deux fois : une fois vite, une fois lentement. Laquelle te semble mieux ?",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Quand … est arrivé, j’ai ressenti …",
+            "J’avais besoin que …",
+            "J’aimerais que …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Réparer ne veut pas dire s’excuser",
+          "text": "Parfois, une fissure a d’abord besoin de temps. Parfois, un petit pas suffit : dire bonjour, faire de la place, redemander. Tu peux dire ta part sans approuver tout ce qui s’est passé. Et tu peux garder de la distance si quelqu’un t’a blessé·e."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Tes réponses t’appartiennent. Personne ne ramasse la feuille. Si une dispute ne te lâche pas ou si quelqu’un te fait peur, parles-en à une personne de confiance ou au SePAS de ton lycée."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes regardent une dispute passée sous deux angles et évaluent la taille de la fissure aujourd’hui. Ils choisissent une petite contribution à la réparation – sans obligation de s’excuser.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : déchirer une feuille, rassembler les morceaux : « Quand reste-t-il une couture ? »",
+          "Expliquer (6 min) : lire l’exemple de Pol et Léa, deux colonnes au tableau : dit, pensé, besoin. Deviner avec bienveillance.",
+          "Travail individuel (17 min) : choisir la dispute, remplir les bulles, changer de chaise entre les deux, curseurs, réparation, phrase.",
+          "À voix haute (10 min, facultatif) : dire la phrase à deux, d’abord doucement, puis à la personne, qui écoute et dit ce qu’elle a entendu.",
+          "Clôture (7 min) : lire l’encadré conseil, « Ce que j’emporte ». Facultatif : « Quel tout petit pas ? »"
+        ],
+        "hintergrund": "Après un conflit, prendre du recul aide : regarder une situation comme de l’extérieur permet souvent de la vivre plus calmement et de mieux la situer (Kross et Ayduk, 2017). Changer de chaise rend cette distance perceptible. Les questions « dit, pensé, besoin » séparent observation, sentiment et besoin (Rosenberg, 2001). Le choix des contributions suit l’idée de réparation : qui est touché, de quoi y a-t-il besoin, qui peut faire quoi (Zehr, 2002). S’excuser est une voie possible, pas une obligation.",
+        "quellen": [
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement l’exemple de Pol et Léa ; bulles à l’oral.",
+          "schwerer": "Troisième point de vue ; phrase en message-je."
+        },
+        "impulse": [
+          "Qu’est-ce qui a changé sur l’autre chaise ?",
+          "À quoi remarques-tu qu’une dispute est « finie » ?",
+          "Quand la distance vaut-elle mieux qu’une discussion ?"
+        ],
+        "tipps": [
+          "L’autre côté n’a pas à être « juste » ; deviner suffit. « Je ne sais pas » est permis.",
+          "Ne jamais exiger d’excuses."
+        ],
+        "achtung": "Ne laisser choisir que des disputes passées et peu chargées. Violence, exclusion ou harcèlement : pas de plénière ; entretien individuel, SePAS ou personne de confiance ; danger : agir tout de suite selon la procédure interne (Kanner- a Jugendtelefon 116 111).",
+        "material": "Crayons ; papier à déchirer ; deuxième chaise"
+      }
+    }
+  },
+  {
+    "id": "tg-gruppendruck",
+    "bereich": "miteinander",
+    "thema": "grenzen",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "SOZ-39",
+      "V-26",
+      "V-32",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Gruppendruck",
+      "Nein sagen",
+      "Grenzen",
+      "Stopp-Satz",
+      "Haltung",
+      "Ausstiegs-Plan",
+      "Selbstreflexion"
+    ],
+    "verwandt": [
+      "nein-unter-druck",
+      "grenzen-spueren",
+      "skills-nein-sagen",
+      "mein-nein-ist-okay"
+    ],
+    "bild": "icon:hand-stop",
+    "de": {
+      "titel": "Wenn alle mitmachen",
+      "untertitel": "Nein sagen, wenn die anderen Ja sagen – üben, bevor es ernst wird",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "In der Gruppe fällt ein Nein schwerer als allein. Das ist normal: Dazuzugehören ist dir wichtig, und dein Kopf rechnet schnell aus, was es kosten könnte, nicht mitzumachen. Hier übst du in Ruhe, was dir in so einem Moment helfen kann. Es gibt kein Richtig oder Falsch – nur Wege, die zu dir passen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vier Situationen, in denen eine Gruppe Druck macht. Lies sie und stell dir vor, du stehst mittendrin.",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "schneiden": false,
+          "karten": [
+            {
+              "nummer": 1,
+              "titel": "Mutprobe",
+              "text": "Auf dem Schulhof sollen alle nacheinander über die hohe Mauer springen. Jetzt bist du dran."
+            },
+            {
+              "nummer": 2,
+              "titel": "Gruppenchat",
+              "text": "Alle schicken Lachgesichter unter ein peinliches Foto von einem Mitschüler. Du sollst auch eins schicken."
+            },
+            {
+              "nummer": 3,
+              "titel": "Vape",
+              "text": "Im Park hält dir jemand einen Vape hin: „Probier mal, alle haben schon.“"
+            },
+            {
+              "nummer": 4,
+              "titel": "Alle schwänzen",
+              "text": "Vor der letzten Stunde sagt einer: „Wir hauen ab.“ Du hast morgen einen Test."
+            }
+          ],
+          "hoehe": 62
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie leicht fällt dir hier ein Nein? Kreuz auf jedem Regler an, wo du stehst.",
+          "hinweis": "Dass ein Nein schwerfällt, sagt nichts über dich: Allein ist es leichter als zu zehnt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Mutprobe: schwer",
+              "Mutprobe: leicht"
+            ],
+            [
+              "Chat-Spott: schwer",
+              "Chat-Spott: leicht"
+            ],
+            [
+              "Vape: schwer",
+              "Vape: leicht"
+            ],
+            [
+              "Schwänzen: schwer",
+              "Schwänzen: leicht"
+            ]
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hilft dir, bei deinem Nein zu bleiben? Schreib in jede Spalte Ideen – gern mehr als eine.",
+          "hinweis": "Eine Ausrede ist kein Verbrechen: Manchmal ist sie der leichteste Weg aus der Situation. Ein Grund darf kurz sein.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Gründe (ehrlich)",
+            "Ausreden (erlaubt)",
+            "Verbündete (wer hilft?)"
+          ],
+          "kopffarben": [
+            "blau",
+            "gelb",
+            "gruen"
+          ],
+          "zeilen": 2,
+          "hoehe": 3,
+          "beispiel": [
+            "Das ist mir zu riskant.",
+            "Ich muss gleich heim, meine Mutter wartet.",
+            "Ana – sie macht oft auch nicht mit."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Drei Stopp-Sätze für dich: kurz, klar, in deinen Worten. Schreib sie in die Sprechblasen.",
+          "hinweis": "Zum Beispiel: „Lass mal.“ – „Ich bin raus. Macht ihr mal.“ – „Frag nicht noch einmal. Meine Antwort bleibt Nein.“ Je klarer, desto weniger Diskussion.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Freundlich: …",
+            "Klar: …",
+            "Wenn sie nachbohren: …"
+          ],
+          "anzahl": 3,
+          "spalten": 3,
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Probier einen Stopp-Satz zu zweit aus: erst im Sitzen, leise, Blick nach unten – dann im Stehen, fest und gerade. Danach tauschen.",
+          "hinweis": "Eine Person fragt zweimal nach („Komm schon.“), die andere bleibt bei ihrem Satz. Im Stehen: beide Füße fest, Blick zur Person, ruhige feste Stimme. Allein? Probier es vor dem Spiegel.",
+          "symbole": [
+            "sprechen",
+            "partner"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Sitzen: wackelig",
+              "Sitzen: fest"
+            ],
+            [
+              "Stehen: wackelig",
+              "Stehen: fest"
+            ]
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Ausstiegs-Plan: Wie kommst du aus so einer Situation, wenn es eng wird? Schreib einen Plan, den du wirklich machen würdest.",
+          "hinweis": "Zum Beispiel ein Codewort: Du schickst „Hast du meine Jacke?“ an eine Person, der du vertraust – sie ruft an und holt dich raus, ohne Fragen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Jemand hält mir einen Vape hin und alle schauen.",
+              "dann": "Sage ich „Lass mal“ und gehe zu Ana an die Bank."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Du bist mit deinem Nein nicht allein",
+          "text": "Wenn eine Person Nein sagt, wird es für die zweite leichter. Schon eine Stimme, die anders antwortet, nimmt der Gruppe viel von ihrem Druck. Du kannst die Erste sein – oder die Zweite, die sich dazustellt."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn es mehr ist als Druck",
+          "text": "Wirst du bedroht, erpresst oder zu etwas gedrängt, das dir schadet – auch online –, sprich mit einer Person, der du vertraust, oder mit dem SePAS. Das ist kein Verrat. BEE SECURE Helpline: 8002 1234 · Kanner- a Jugendtelefon: 116 111."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen ein, wie leicht ihnen ein Nein unter Gruppendruck fällt, sammeln Gründe, Ausreden und Verbündete, üben Stopp-Sätze mit festem Stand und planen einen Ausstieg.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: alle klatschen im Takt, eine Person hört auf: „Wie ist es, aus dem Takt zu fallen? Und zu zweit?“",
+          "Erklären (6 Min.): Vier Karten lesen, eine Situation gemeinsam durchgehen. Gruppendruck ist normal, kein Charakterfehler. Beispiel-Sätze zeigen.",
+          "Einzelarbeit (16 Min.): Regler, Gründe-Ausreden-Verbündete, drei Stopp-Sätze, Ausstiegs-Plan. Leise Musik.",
+          "Haltung üben (12 Min., freiwillig): Zu zweit Stopp-Satz erst sitzend leise, dann stehend fest; nachbohren („Komm schon.“), tauschen.",
+          "Abschluss (6 Min.): Tipp-Kasten vorlesen, Codewort-Idee besprechen, „Das nehme ich mit“."
+        ],
+        "hintergrund": "Im Jugendalter wiegt die Meinung Gleichaltriger schwer: In Experimenten gingen Jugendliche in Anwesenheit Gleichaltriger mehr Risiken ein als allein (Gardner & Steinberg, 2005). Anpassung lässt sich abschwächen: Schon eine Person, die anders antwortet, senkt den Gruppendruck in Aschs Versuchen deutlich (Asch, 1956). Das Blatt stärkt deshalb Gründe, Verbündete und fertige Sätze. Stopp-Sätze und Ausstiegs-Plan folgen dem Prinzip „Wenn X, dann Y“ (Gollwitzer, 1999).",
+        "quellen": [
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+          "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Situationen; Stopp-Sätze aus den Beispielen wählen.",
+          "schwerer": "Eigene Situation; Rollenspiel zu dritt mit einer beobachtenden Person."
+        },
+        "impulse": [
+          "Warum ist ein Nein in der Gruppe schwerer?",
+          "Was ändert sich, wenn eine Zweite mitmacht?",
+          "Wann ist ein Ausstieg die mutigere Wahl?"
+        ],
+        "tipps": [
+          "Keine echten Gegenstände im Rollenspiel (kein Vape).",
+          "Stopp-Sätze nicht bewerten: Ziel ist Klarheit, nicht „cool“."
+        ],
+        "achtung": "Konsum oder Erpressung können echt sein: nicht nachfragen, nicht moralisieren. Bei Zwang, Bedrohung, Selbstgefährdung oder Mobbing: Einzelgespräch, SePAS, Vertrauensperson, Baustein „Notfall“.",
+        "material": "Buntstifte; Platz zum Aufstehen; Spiegel (freiwillig)"
+      }
+    },
+    "fr": {
+      "titel": "Quand tout le monde suit",
+      "untertitel": "Dire non quand les autres disent oui – s’entraîner avant que ce soit sérieux",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "En groupe, un non est plus difficile que tout seul. C’est normal : appartenir au groupe compte pour toi, et ta tête calcule vite ce que cela pourrait coûter de ne pas suivre. Ici, tu t’entraînes au calme à ce qui peut t’aider dans un tel moment. Il n’y a ni bonne ni mauvaise réponse – seulement des chemins qui te correspondent."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quatre situations où un groupe met la pression. Lis-les et imagine-toi en plein milieu.",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "schneiden": false,
+          "karten": [
+            {
+              "nummer": 1,
+              "titel": "Défi",
+              "text": "Dans la cour, tout le monde doit sauter par-dessus le haut muret, l’un après l’autre. C’est ton tour."
+            },
+            {
+              "nummer": 2,
+              "titel": "Groupe de chat",
+              "text": "Tous envoient des smileys qui rient sous une photo gênante d’un camarade. Tu dois en envoyer un aussi."
+            },
+            {
+              "nummer": 3,
+              "titel": "Vape",
+              "text": "Au parc, quelqu’un te tend une vape : « Essaie, tous ont déjà goûté. »"
+            },
+            {
+              "nummer": 4,
+              "titel": "Tous sèchent",
+              "text": "Avant la dernière heure, quelqu’un dit : « On file. » Tu as un test demain."
+            }
+          ],
+          "hoehe": 62
+        },
+        {
+          "art": "aufgabe",
+          "text": "Un non te vient-il facilement ? Marque une croix sur chaque curseur, là où tu en es.",
+          "hinweis": "Si le non est difficile, cela ne dit rien sur toi : seul, c’est plus facile qu’à dix.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Défi : difficile",
+              "Défi : facile"
+            ],
+            [
+              "Chat : difficile",
+              "Chat : facile"
+            ],
+            [
+              "Vape : difficile",
+              "Vape : facile"
+            ],
+            [
+              "Sécher : difficile",
+              "Sécher : facile"
+            ]
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui t’aide à rester sur ton non ? Écris des idées dans chaque colonne – plusieurs si tu veux.",
+          "hinweis": "Une excuse n’est pas un crime : parfois, c’est le chemin le plus facile pour sortir de la situation. Une raison peut être courte.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Raisons (franches)",
+            "Excuses (permises)",
+            "Alliés (qui aide ?)"
+          ],
+          "kopffarben": [
+            "blau",
+            "gelb",
+            "gruen"
+          ],
+          "zeilen": 2,
+          "hoehe": 3,
+          "beispiel": [
+            "C’est trop risqué pour moi.",
+            "Je dois rentrer, ma mère m’attend.",
+            "Ana – elle ne suit souvent pas non plus."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trois phrases-stop pour toi : courtes, claires, avec tes mots. Écris-les dans les bulles.",
+          "hinweis": "Par exemple : « Laisse tomber. » – « Moi, je passe. Amusez-vous. » – « Ne redemande pas. Ma réponse reste non. » Plus c’est clair, moins il y a de discussion.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Aimable : …",
+            "Clair : …",
+            "Quand ils insistent : …"
+          ],
+          "anzahl": 3,
+          "spalten": 3,
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Essaie une phrase-stop à deux : d’abord assis·e, doucement, regard baissé – puis debout, dos droit, voix ferme. Ensuite, échangez.",
+          "hinweis": "Une personne insiste deux fois (« Allez, viens. »), l’autre reste sur sa phrase. Debout : pieds ancrés, regard vers la personne, voix calme et ferme. Seul·e ? Essaie devant le miroir.",
+          "symbole": [
+            "sprechen",
+            "partner"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Assis : fragile",
+              "Assis : ferme"
+            ],
+            [
+              "Debout : fragile",
+              "Debout : ferme"
+            ]
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan de sortie : comment sors-tu d’une telle situation quand ça se resserre ? Écris un plan que tu ferais vraiment.",
+          "hinweis": "Par exemple un mot de code : tu envoies « Tu as ma veste ? » à une personne de confiance – elle appelle et vient te chercher, sans poser de questions.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Quelqu’un me tend une vape et tout le monde regarde.",
+              "dann": "Je dis « Laisse tomber » et je vais rejoindre Ana au banc."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tu n’es pas seul·e avec ton non",
+          "text": "Quand une personne dit non, c’est plus facile pour la deuxième. Une seule voix différente enlève au groupe une bonne partie de sa pression. Tu peux être la première – ou la deuxième, qui se met à côté."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand c’est plus que de la pression",
+          "text": "Si on te menace, te fait chanter ou te pousse à quelque chose qui te nuit – y compris en ligne –, parles-en à une personne de confiance ou au SePAS. Ce n’est pas une trahison. BEE SECURE Helpline : 8002 1234 · Kanner- a Jugendtelefon : 116 111."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes évaluent la facilité d’un non sous la pression du groupe, rassemblent raisons, excuses et alliés, s’exercent aux phrases-stop avec un maintien ferme et planifient une sortie.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : tous frappent au même rythme, une personne s’arrête : « Que ressent-on en sortant du rythme ? »",
+          "Expliquer (6 min) : lire les quatre cartes, parcourir une situation. La pression du groupe est normale, pas un défaut. Montrer des phrases d’exemple.",
+          "Travail individuel (16 min) : curseurs, raisons-excuses-alliés, trois phrases-stop, plan de sortie. Musique douce.",
+          "Maintien (12 min, facultatif) : à deux, phrase-stop d’abord assis et doucement, puis debout et ferme ; insister, échanger. Qui ne veut pas observe.",
+          "Clôture (6 min) : lire l’encadré conseil, parler du mot de code, « Ce que j’emporte »."
+        ],
+        "hintergrund": "À l’adolescence, l’avis des pairs pèse lourd : dans des expériences, des jeunes prenaient plus de risques en présence de pairs que seuls (Gardner et Steinberg, 2005). Le conformisme peut diminuer : une seule personne qui répond autrement réduit nettement la pression du groupe dans les expériences d’Asch (Asch, 1956). La feuille renforce donc raisons, alliés et phrases toutes prêtes. Phrases-stop et plan de sortie suivent le principe « si X, alors Y » (Gollwitzer, 1999).",
+        "quellen": [
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+          "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement deux situations ; phrases-stop choisies dans les exemples.",
+          "schwerer": "Situation personnelle ; jeu de rôle à trois avec observateur."
+        },
+        "impulse": [
+          "Pourquoi un non est-il plus dur en groupe ?",
+          "Que change une deuxième personne qui ne suit pas ?",
+          "Quand partir est-il le choix le plus courageux ?"
+        ],
+        "tipps": [
+          "Pas d’objets réels dans le jeu de rôle (pas de vape).",
+          "Ne pas évaluer les phrases-stop : viser la clarté, pas le « cool »."
+        ],
+        "achtung": "Consommation, défis, chantage ou moqueries en ligne peuvent être réels : ne pas interroger, ne pas moraliser. Contrainte, menace, mise en danger ou harcèlement : entretien individuel, SePAS, personne de confiance ; crise : bloc « Urgence ».",
+        "material": "Crayons de couleur ; place pour se lever ; miroir (facultatif)"
+      }
+    }
+  },
+  {
+    "id": "tg-schubladen",
+    "bereich": "miteinander",
+    "thema": "empathie",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "SOZ-37",
+      "SOZ-31",
+      "SOZ-32",
+      "K-33"
+    ],
+    "schlagworte": [
+      "Schubladen",
+      "Etiketten",
+      "Vorurteile",
+      "Perspektivwechsel",
+      "Empathie",
+      "Eisberg",
+      "Selbstreflexion"
+    ],
+    "verwandt": [
+      "in-den-schuhen-des-anderen",
+      "drei-sichtweisen",
+      "skills-schubladen",
+      "sr-selbstbild-fremdbild"
+    ],
+    "bild": "icon:package",
+    "de": {
+      "titel": "Schubladen im Kopf",
+      "untertitel": "Etiketten, die man bekommt, Etiketten, die man gibt – und was darunter steckt",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Fast jeder Mensch wurde schon in eine Schublade gesteckt – und hat selbst welche vergeben. Das geht schnell, denn der Kopf sortiert gern. Meist stimmt an einem Etikett ein kleines Stück, der Rest fehlt. Heute schaust du auf Etiketten, die du bekommst oder vergibst – und auf das, was darunter steckt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib Etiketten, die du kennst, in die freien Streifen oder auf Haftnotizen. Kleb sie in die passende Schublade – oder schreib sie hinein.",
+          "hinweis": "Drei Beispiele stehen schon darauf. Streifen, die nicht passen, bleiben leer. Zu nah? Denk an eine Serienfigur.",
+          "symbole": [
+            "schreiben",
+            "kleben"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "karten": [
+            {
+              "titel": "der Streber"
+            },
+            {
+              "titel": "die Sportliche"
+            },
+            {
+              "titel": "der Neue"
+            },
+            {
+              "titel": ""
+            },
+            {
+              "titel": ""
+            },
+            {
+              "titel": ""
+            },
+            {
+              "titel": ""
+            },
+            {
+              "titel": ""
+            }
+          ],
+          "hoehe": 44,
+          "schneiden": false
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Damit wurde ich schon bezeichnet",
+              "hoehe": 4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Damit bezeichne ich manchmal andere – auch nur im Kopf",
+              "hoehe": 4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was steckt hinter einem Etikett? Füll den Eisberg für „der Neue“ oder für eins deiner Etiketten: oben, was man sieht, unten, was nicht.",
+          "hinweis": "Für „der Neue“ steht ein Beispiel schon darin. Denk an Gefühle, Interessen, Sorgen und Dinge, die du gut kannst.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "eisberg",
+          "oben": "Was man sieht",
+          "unten": "Was man nicht sieht",
+          "beispielOben": "„der Neue“: sitzt allein, sagt wenig",
+          "beispielUnten": "vermisst seine alte Klasse · zeichnet gern · spricht drei Sprachen · hat Angst, etwas Falsches zu sagen"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie fühlt sich ein Etikett an? Nimm eins, das du bekommen hast – oder eins aus den Beispielen, als wärst du diese Person. Kreuz auf den Reglern an.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "passt zu mir",
+              "passt nicht zu mir"
+            ],
+            [
+              "gut zu tragen",
+              "drückt"
+            ],
+            [
+              "lässt mir Raum",
+              "legt mich fest"
+            ]
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zu zweit, wenn du magst: Sag drei Dinge über dich, die man dir nicht ansieht. Die andere Person hört nur zu, dann tauscht ihr.",
+          "hinweis": "Du suchst aus, was du erzählst – „Ich spiele Posaune“ reicht. Mit jemandem, den du kaum kennst, klappt es oft besonders gut.",
+          "symbole": [
+            "partner",
+            "zuhoeren"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Man sieht mir nicht an, dass …",
+            "Man sieht mir auch nicht an: …",
+            "Und noch etwas: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Schau-hin-Satz: Schreib einen Satz, der dir nächstes Mal hilft, genauer hinzuschauen.",
+          "hinweis": "Beispiel: „Ich kenne erst ein Stück von ihr. Was weiß ich noch nicht?“",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Wenn ich merke, dass ich jemanden einsortiere, sage ich mir: …",
+            "Statt zu raten, frage ich: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Der Kopf sortiert – du kannst nachfragen",
+          "text": "Schubladen sparen Zeit, darum bildet der Kopf sie von selbst. Du kannst sie aufmachen: nachfragen, zuhören, jemanden bei einer gemeinsamen Aufgabe kennenlernen. Je besser du einen Menschen kennst, desto weniger passt ein Etikett."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Antworten gehören dir. Niemand sammelt das Blatt ein; Haftnotizen darfst du abziehen und wegwerfen. Verletzt dich ein Etikett, das andere dir geben, sprich mit einer Person, der du vertraust, oder dem SePAS."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen Etiketten, die sie bekommen und vergeben, spüren, wie sich ein Etikett anfühlt, und sehen, was dahinter steckt. Sie nehmen sich einen Satz zum genaueren Hinschauen vor.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Schachtel „die Sportliche“ herumgeben, schütteln, raten; öffnen: Kopfhörer, Buch, Ball. „Was verrät das Etikett?“",
+          "Erklären (6 Min.): Alle sortieren, das ist normal. Eisberg „der Neue“ lesen, Streifen vorstellen.",
+          "Einzelarbeit (17 Min.): Etiketten auf Haftnotizen schreiben und in die Schubladen kleben; Eisberg; Regler; Satz. Leise Musik.",
+          "Austausch (10 Min., freiwillig): Zu zweit je 2 Min.: drei Dinge, die man nicht sieht; die andere Person hört nur zu.",
+          "Abschluss (7 Min.): Tipp-Kasten vorlesen; ungewollte Haftnotizen abziehen und wegwerfen; „Das nehme ich mit“."
+        ],
+        "hintergrund": "Menschen ordnen andere schnell in Kategorien ein; das ist normal und spart Aufmerksamkeit (Allport, 1954). Schon willkürliche Einteilungen führen dazu, dass die eigene Gruppe bevorzugt wird (Tajfel et al., 1971). Vorurteile gehen zurück, wenn Menschen einander persönlich kennenlernen (Pettigrew & Tropp, 2006). Das Blatt macht dies erlebbar: Etikett bekommen, Etikett geben, das Unsichtbare dahinter. Der Austausch zu zweit nutzt die Wirkung von Kontakt im Kleinen.",
+        "quellen": [
+          "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+          "Tajfel, H., Billig, M. G., Bundy, R. P. & Flament, C. (1971). Social categorization and intergroup behaviour. European Journal of Social Psychology, 1(2), 149–178.",
+          "Pettigrew, T. F. & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. Journal of Personality and Social Psychology, 90(5), 751–783."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Beispiel-Etiketten und der Eisberg „der Neue“; Satz mündlich.",
+          "schwerer": "Zweiter Eisberg zu einem selbst vergebenen Etikett."
+        },
+        "impulse": [
+          "Wann hat ein Etikett dir etwas erleichtert?",
+          "Was macht ein Etikett mit einem Menschen?",
+          "Was steckt hinter deinem Etikett?"
+        ],
+        "tipps": [
+          "Etiketten neutral halten; keine Gruppen, Herkunft, Religion, Aussehen, Beleidigungen.",
+          ""
+        ],
+        "achtung": "Wer ein verletzendes Etikett trägt, kann getroffen sein. Nicht im Plenum vertiefen, nichts vorlesen lassen. Einzelgespräch, SePAS, Vertrauensperson, Baustein „Notfall“ (116 111).",
+        "material": "Stifte, Haftnotizen; Schachtel mit Gegenständen"
+      }
+    },
+    "fr": {
+      "titel": "Des cases dans la tête",
+      "untertitel": "Les étiquettes qu’on reçoit, celles qu’on donne – et ce qu’il y a dessous",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Presque tout le monde a déjà été mis dans une case – et en a déjà attribué. Cela va vite, car la tête aime trier. Le plus souvent, une étiquette ne dit qu’un petit bout de la vérité, le reste manque. Aujourd’hui, tu regardes les étiquettes que tu reçois ou donnes – et ce qu’il y a dessous."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris des étiquettes que tu connais dans les bandes libres ou sur des post-it. Colle-les dans la bonne case – ou écris-les dedans.",
+          "hinweis": "Trois exemples sont déjà écrits. Les bandes qui ne conviennent pas restent vides. Trop proche ? Pense à un personnage de série.",
+          "symbole": [
+            "schreiben",
+            "kleben"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "karten": [
+            {
+              "titel": "le premier de la classe"
+            },
+            {
+              "titel": "la sportive"
+            },
+            {
+              "titel": "le nouveau"
+            },
+            {
+              "titel": ""
+            },
+            {
+              "titel": ""
+            },
+            {
+              "titel": ""
+            },
+            {
+              "titel": ""
+            },
+            {
+              "titel": ""
+            }
+          ],
+          "hoehe": 44,
+          "schneiden": false
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Étiquettes qu’on m’a déjà données",
+              "hoehe": 4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Étiquettes que je donne parfois – même seulement dans ma tête",
+              "hoehe": 4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’y a-t-il derrière une étiquette ? Remplis l’iceberg pour « le nouveau » ou une des tiennes : visible en haut, caché en bas.",
+          "hinweis": "Pour « le nouveau », un exemple est déjà là. Pense à des sentiments, des centres d’intérêt, des soucis, des choses que tu sais faire.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "eisberg",
+          "oben": "Ce qu’on voit",
+          "unten": "Ce qu’on ne voit pas",
+          "beispielOben": "« le nouveau » : s’assied seul, parle peu",
+          "beispielUnten": "regrette son ancienne classe · aime dessiner · parle trois langues · a peur de dire une bêtise"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment une étiquette se ressent-elle ? Prends-en une reçue – ou un exemple, en te mettant à la place de la personne. Coche les curseurs.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "me va bien",
+              "ne me va pas"
+            ],
+            [
+              "facile à porter",
+              "pèse lourd"
+            ],
+            [
+              "me laisse de l’air",
+              "m’enferme"
+            ]
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "À deux, si tu veux : dis trois choses sur toi qu’on ne voit pas. L’autre écoute seulement, puis vous échangez.",
+          "hinweis": "Tu choisis ce que tu racontes – « Je joue du trombone » suffit. Avec quelqu’un que tu connais à peine, cela marche souvent très bien.",
+          "symbole": [
+            "partner",
+            "zuhoeren"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "On ne voit pas que …",
+            "On ne voit pas non plus : …",
+            "Et encore : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta phrase pour mieux regarder : écris une phrase qui t’aidera, la prochaine fois, à regarder de plus près.",
+          "hinweis": "Exemple : « Je ne connais qu’un petit bout d’elle. Qu’est-ce que je ne sais pas encore ? »",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Quand je remarque que je mets quelqu’un dans une case, je me dis : …",
+            "Au lieu de deviner, je demande : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "La tête trie – toi, tu peux demander",
+          "text": "Les cases font gagner du temps, c’est pourquoi la tête les forme toute seule. Tu peux les rouvrir : demander, écouter, faire connaissance en travaillant ensemble. Plus tu connais quelqu’un, moins l’étiquette lui va."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Tes réponses t’appartiennent. Personne ne ramasse la feuille ; tu peux décoller les post-it et les jeter. Si une étiquette qu’on te donne te blesse, parles-en à une personne de confiance ou au SePAS."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent les étiquettes qu’ils reçoivent et donnent, ressentent ce qu’une étiquette fait et voient ce qu’il y a derrière. Ils se choisissent une phrase pour mieux regarder.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : boîte « la sportive » qui circule, secouer, deviner ; l’ouvrir : casque, livre, balle.",
+          "Expliquer (6 min) : tout le monde trie, c’est normal. Lire l’iceberg « le nouveau », présenter les bandes.",
+          "Travail individuel (17 min) : écrire les étiquettes sur des post-it et les coller ; iceberg ; curseurs ; phrase. Musique douce.",
+          "Échange (10 min, facultatif) : à deux, 2 min chacun : trois choses qu’on ne voit pas ; l’autre écoute seulement.",
+          "Clôture (7 min) : lire l’encadré conseil ; décoller les post-it non désirés et les jeter ; « Ce que j’emporte »."
+        ],
+        "hintergrund": "Les gens rangent vite les autres dans des catégories ; c’est normal et cela économise de l’attention (Allport, 1954). Même des répartitions arbitraires suffisent pour favoriser son propre groupe (Tajfel et al., 1971). Les préjugés reculent quand les personnes font personnellement connaissance (Pettigrew et Tropp, 2006). La feuille le fait vivre : recevoir une étiquette, en donner une, voir l’invisible derrière. L’échange à deux utilise en petit l’effet du contact.",
+        "quellen": [
+          "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+          "Tajfel, H., Billig, M. G., Bundy, R. P. & Flament, C. (1971). Social categorization and intergroup behaviour. European Journal of Social Psychology, 1(2), 149–178.",
+          "Pettigrew, T. F. & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. Journal of Personality and Social Psychology, 90(5), 751–783."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les exemples et l’iceberg « le nouveau ».",
+          "schwerer": "Deuxième iceberg sur une étiquette donnée."
+        },
+        "impulse": [
+          "Quand une étiquette t’a-t-elle facilité ou compliqué les choses ?",
+          "Que devient quelqu’un qui garde longtemps une étiquette ?",
+          "Qu’y a-t-il derrière ton étiquette ?"
+        ],
+        "tipps": [
+          "Étiquettes neutres ; ni groupes, origine, religion, apparence, ni insultes.",
+          ""
+        ],
+        "achtung": "Qui porte une étiquette blessante peut être touché. Pas de plénière, ne pas demander les étiquettes, aucune bande collée sur une personne. Entretien individuel, SePAS, personne de confiance ; crise : bloc « Urgence ».",
+        "material": "Crayons, post-it ; boîte avec objets"
+      }
+    }
+  }
+]

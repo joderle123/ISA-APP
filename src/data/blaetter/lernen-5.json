@@ -1,0 +1,1426 @@
+[
+  {
+    "id": "tg-ich-als-lerner",
+    "bereich": "lernen",
+    "thema": "strategien",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-29",
+      "V-32",
+      "V-25",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Lernstrategien",
+      "Lern-Profil",
+      "Selbstwahrnehmung",
+      "Lernort",
+      "Wenn-dann-Plan",
+      "Ausprobieren",
+      "Sinne",
+      "Selbstreflexion"
+    ],
+    "verwandt": [
+      "clever-lernen",
+      "ich-sage-mir-selbst",
+      "aufschieben-ueberlisten",
+      "skills-lern-experiment"
+    ],
+    "bild": "icon:bulb",
+    "de": {
+      "titel": "So lerne ich",
+      "untertitel": "Mein Lern-Profil, ein richtig guter Lern-Moment und eine Idee zum Ausprobieren",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Zwei Leute lernen dasselbe Kapitel und machen dabei etwas ganz anderes: Die eine braucht Stille und einen aufgeräumten Tisch, der andere Kopfhörer und das Sofa. Keins davon ist besser. Heute findest du heraus, wie du lernst, wann es bei dir richtig gut lief und was du zwei Wochen lang ausprobieren willst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo stehst du beim Lernen? Mach auf jedem Regler ein Kreuz.",
+          "hinweis": "Beide Enden sind in Ordnung. Die Mitte heißt: kommt drauf an. Es gibt kein Richtig oder Falsch, nur dich.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "allein",
+              "zusammen"
+            ],
+            [
+              "Stille",
+              "Musik"
+            ],
+            [
+              "morgens",
+              "abends"
+            ],
+            [
+              "lesen",
+              "hören"
+            ],
+            [
+              "zusehen",
+              "selbst tun"
+            ],
+            [
+              "kurz und oft",
+              "lang am Stück"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Erinnere dich an einen Lern-Moment, der richtig gut war. Geh mit allen Sinnen zurück.",
+          "hinweis": "Schließ kurz die Augen. Es muss kein Schulfach gewesen sein: ein Lied, ein Trick, ein Spiel. Die Beispielzeile zeigt, wie es gemeint ist.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Was war es?",
+            "Was sah ich?",
+            "Was hörte ich?",
+            "Was spürte ich?",
+            "Was half?"
+          ],
+          "kopffarben": [
+            "blau",
+            "lila",
+            "orange",
+            "rosa",
+            "gruen"
+          ],
+          "zeilen": 1,
+          "hoehe": 2,
+          "beispiel": [
+            "Vokabeln für Englisch",
+            "Karten auf dem Küchentisch",
+            "Radio leise, Geschirr klappert",
+            "Warm, Tee in der Hand",
+            "Ich habe sie meiner Schwester erklärt"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das hat diesen Moment gut gemacht: …",
+            "Das könnte ich öfter herstellen: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zeichne den Ort, an dem du am besten lernst, oder den, den du dir wünschst.",
+          "hinweis": "Tisch, Licht, Geräusche, was in Reichweite liegt: Eine einfache Skizze genügt. Beschrifte, was dir wichtig ist.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mein Lernort",
+              "hoehe": 10,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Das hilft mir hier: …",
+                "Das lenkt mich hier ab: …",
+                "Das ändere ich als Erstes: …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Teste jetzt in der Stunde fünf Minuten lang eine Strategie. Kreuz an, welche.",
+          "hinweis": "Nimm ein kleines Stück aus einem Fach: zehn Vokabeln, eine Formel. Ob eine Strategie zu dir passt, merkst du erst beim Ausprobieren.",
+          "symbole": [
+            "ankreuzen",
+            "partner"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Laut erklären, zu zweit oder mir selbst",
+            "Zudecken und aufschreiben, was ich noch weiß",
+            "Eine Skizze oder Mindmap statt Text",
+            "Zehn Minuten mit Timer, danach Pause",
+            "Mir selbst Fragen stellen, wie auf Karteikarten"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "anstrengend",
+              "leicht"
+            ],
+            [
+              "zäh",
+              "lebendig"
+            ],
+            [
+              "danach unklar",
+              "danach klar"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nimm die Strategie, die dir am besten gefallen hat, und plane zwei Wochen damit. Schreib einen Wenn-dann-Plan.",
+          "hinweis": "Eine feste Situation, eine kleine Handlung. Je genauer, desto eher klappt es.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich nach dem Abendessen die Vokabeln wiederholen will,",
+              "dann": "decke ich die Liste ab und sage jedes Wort laut, bevor ich nachschaue."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Zwei Wochen, dann urteilen",
+          "text": "Eine neue Strategie fühlt sich am Anfang oft holpriger an als die gewohnte. Gib ihr mehrere Versuche, bevor du entscheidest. Dich selbst abfragen und über mehrere Tage verteilt lernen gehört zu dem, was bei vielen gut wirkt. Füll die Regler in ein paar Monaten mit einer anderen Farbe noch einmal aus: Was hat sich verschoben?"
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Antworten gehören dir. Niemand sammelt das Blatt ein. Wenn dir etwas zu nah ist, füll es für eine erfundene Person aus, zum Beispiel für Ben, der morgen einen Test schreibt."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beschreiben ohne Wertung, wie sie lernen, erinnern einen guten Lern-Moment mit allen Sinnen, testen eine Strategie und planen sie für zwei Wochen mit einem Wenn-dann-Plan.",
+        "ablauf": [
+          "Einstieg (5 Min.): Raumlinie „allein“ – „zusammen“: alle stellen sich hin. Dann 20 Sek. leise Musik, 20 Sek. Stille: „Wo konntest du besser denken?“",
+          "Erklären (5 Min.): Beispiel: Mila lernt abends mit Musik, Pol morgens in Stille. Keine Wertung.",
+          "Einzelarbeit (20 Min.): Regler, guter Lern-Moment (Augen zu), Lernort skizzieren; dann eine Strategie fünf Minuten an echtem Stoff testen.",
+          "Austausch (5 Min., freiwillig): Zu zweit: „Was war bei deinem guten Moment anders?“ Im Plenum nur die Strategie.",
+          "Abschluss (10 Min.): Wenn-dann-Plan, „Das nehme ich mit“. Nach zwei Wochen fragen: „Was hat gehalten?“"
+        ],
+        "hintergrund": "Selbstreguliertes Lernen heißt: Ziel setzen, Strategie wählen, prüfen, ob sie wirkt, nachsteuern (Zimmerman, 2002). Das Blatt geht diese Schleife durch. Die Regler zeigen Vorlieben, keine „Lerntypen“: Daraus lässt sich nicht ableiten, wer wie lernen müsse. Sich selbst abfragen und über Tage verteilt lernen gehören zu den am besten belegten Techniken, Unterstreichen und Wiederlesen bringen weniger (Dunlosky et al., 2013). Ein Wenn-dann-Plan erhöht die Chance, dass die Strategie angewendet wird (Gollwitzer, 1999).",
+        "quellen": [
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Regler und Lernort; Strategie vorgegeben (laut erklären), zu zweit testen.",
+          "schwerer": "Zwei Strategien vergleichen; im Plan festhalten, woran man nach zwei Wochen merkt, dass es wirkt."
+        },
+        "impulse": [
+          "Was überrascht dich an deinem Profil?",
+          "Welche Bedingung kannst du morgen selbst herstellen?"
+        ],
+        "tipps": [
+          "Profile nicht einsammeln oder vergleichen: Es gibt Vorlieben, keine „Typen“.",
+          "Kurzen echten Stoff für den Test bereithalten (zehn Vokabeln)."
+        ],
+        "achtung": "Schreibt jemand, Lernen gelinge „nie“, oder fehlt zu Hause Ruhe: Einzelgespräch, SePAS oder Vertrauensperson, nicht im Plenum. Bei Krise sofort nach internem Ablauf handeln (Baustein „notfall“).",
+        "material": "Buntstifte; Musik; Testmaterial; Timer"
+      }
+    },
+    "fr": {
+      "titel": "Ma façon d’apprendre",
+      "untertitel": "Mon profil d’apprentissage, un très bon moment et une idée à essayer",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Deux personnes révisent le même chapitre et s’y prennent très différemment : l’une a besoin de silence et d’un bureau rangé, l’autre d’un casque et du canapé. Aucune des deux n’a tort. Aujourd’hui, tu découvres comment tu apprends, quand ça a très bien marché et ce que tu veux essayer pendant deux semaines."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où te situes-tu quand tu apprends ? Fais une croix sur chaque réglette.",
+          "hinweis": "Les deux extrémités sont bien. Le milieu veut dire : ça dépend. Il n’y a ni bonne ni mauvaise réponse, il y a toi.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "seul",
+              "à plusieurs"
+            ],
+            [
+              "silence",
+              "musique"
+            ],
+            [
+              "le matin",
+              "le soir"
+            ],
+            [
+              "lire",
+              "écouter"
+            ],
+            [
+              "regarder",
+              "faire moi-même"
+            ],
+            [
+              "court et souvent",
+              "long d’une traite"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Souviens-toi d’un moment où apprendre s’est très bien passé. Retourne-y avec tous tes sens.",
+          "hinweis": "Ferme un instant les yeux. Ça n’a pas besoin d’être une matière scolaire : une chanson, une astuce, un jeu. La ligne d’exemple montre comment faire.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "C’était quoi ?",
+            "Ce que je voyais",
+            "Ce que j’entendais",
+            "Ce que je ressentais",
+            "Ce qui m’a aidé"
+          ],
+          "kopffarben": [
+            "blau",
+            "lila",
+            "orange",
+            "rosa",
+            "gruen"
+          ],
+          "zeilen": 1,
+          "hoehe": 2,
+          "beispiel": [
+            "Vocabulaire d’anglais",
+            "Des cartes sur la table de la cuisine",
+            "La radio en sourdine, de la vaisselle",
+            "Chaud, une tasse de thé en main",
+            "Je l’ai expliqué à ma sœur"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui a rendu ce moment bon : …",
+            "Ce que je pourrais recréer plus souvent : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine l’endroit où tu apprends le mieux, ou celui dont tu rêves.",
+          "hinweis": "Table, lumière, bruits, ce qui est à portée de main : un croquis simple suffit. Écris ce qui compte pour toi.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mon lieu d’apprentissage",
+              "hoehe": 10,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ici, ça m’aide : …",
+                "Ici, ça me distrait : …",
+                "Ce que je change en premier : …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Teste maintenant une stratégie pendant cinq minutes, ici en classe. Coche laquelle.",
+          "hinweis": "Prends un petit morceau d’une matière : dix mots de vocabulaire, une formule. Tu ne sais si une stratégie te convient qu’en l’essayant.",
+          "symbole": [
+            "ankreuzen",
+            "partner"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "L’expliquer à voix haute, à deux ou à moi-même",
+            "Cacher le texte et noter ce dont je me souviens",
+            "Un croquis ou une carte mentale au lieu de texte",
+            "Dix minutes au minuteur, puis une pause",
+            "Me poser des questions, comme sur des fiches"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "fatigant",
+              "facile"
+            ],
+            [
+              "pénible",
+              "vivant"
+            ],
+            [
+              "flou ensuite",
+              "clair ensuite"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis la stratégie qui t’a le plus plu et planifie-la sur deux semaines. Écris un plan « si … alors ».",
+          "hinweis": "Une situation précise, une petite action. Plus c’est précis, plus ça marche.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si je veux réviser le vocabulaire après le dîner,",
+              "dann": "je cache la liste et je dis chaque mot à voix haute avant de vérifier."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Deux semaines, puis un bilan",
+          "text": "Une nouvelle stratégie paraît souvent plus laborieuse que l’ancienne. Laisse-lui plusieurs essais avant de décider. Se tester soi-même et répartir ses révisions sur plusieurs jours fait partie de ce qui fonctionne bien pour beaucoup. Remplis les réglettes dans quelques mois avec une autre couleur : qu’est-ce qui a bougé ?"
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Tes réponses t’appartiennent. Personne ne ramasse la feuille. Si quelque chose est trop proche de toi, remplis-la pour un personnage inventé, par exemple Ben, qui a un test demain."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes décrivent sans jugement comment ils apprennent, se rappellent un bon moment avec tous leurs sens, testent une stratégie et la planifient sur deux semaines avec un plan « si … alors ».",
+        "ablauf": [
+          "Entrée en matière (5 min) : ligne « seul » – « à plusieurs » : tous se placent. Puis 20 s de musique douce, 20 s de silence : « Quand pouvais-tu mieux réfléchir ? »",
+          "Expliquer (5 min) : exemple : Mila révise le soir avec de la musique, Pol le matin dans le silence. Pas de jugement.",
+          "Travail individuel (20 min) : réglettes, bon moment (yeux fermés), croquis du lieu ; puis tester une stratégie 5 min sur un vrai extrait.",
+          "Échange (5 min), facultatif : à deux : « Qu’y avait-il de différent dans ton bon moment ? » En plénière, seulement la stratégie.",
+          "Clôture (10 min) : plan « si … alors », « Ce que j’emporte ». Deux semaines plus tard : « Qu’est-ce qui a tenu ? »"
+        ],
+        "hintergrund": "L’apprentissage autorégulé : se fixer un but, choisir une stratégie, vérifier qu’elle marche, ajuster (Zimmerman, 2002). La feuille parcourt cette boucle. Les réglettes montrent des préférences, pas des « profils d’apprenant » : on n’en déduit pas qui doit apprendre comment. Se tester et répartir les révisions sur plusieurs jours comptent parmi les techniques les mieux étayées ; surligner et relire rapportent moins (Dunlosky et al., 2013). Un plan « si … alors » augmente les chances que la stratégie soit appliquée (Gollwitzer, 1999).",
+        "quellen": [
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement réglettes et lieu ; stratégie imposée (expliquer à voix haute), testée à deux.",
+          "schwerer": "Comparer deux stratégies ; noter à quoi l’on verra, après deux semaines, que ça marche."
+        },
+        "impulse": [
+          "Qu’est-ce qui te surprend dans ton profil ?",
+          "Quelle condition peux-tu créer toi-même demain ?"
+        ],
+        "tipps": [
+          "Ne pas ramasser ni comparer les profils : des préférences, pas des « types ».",
+          "Prévoir un court extrait réel pour le test (dix mots de vocabulaire)."
+        ],
+        "achtung": "Si quelqu’un écrit qu’apprendre « n’arrive jamais » ou manque de calme chez lui : entretien individuel, SePAS ou personne de confiance, pas en plénière. En cas de crise : agir tout de suite selon la procédure interne (bloc « notfall »).",
+        "material": "Crayons ; musique ; matériel de test ; minuteur"
+      }
+    }
+  },
+  {
+    "id": "tg-vor-der-pruefung",
+    "bereich": "lernen",
+    "thema": "pruefungen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-26",
+      "V-24",
+      "V-33",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Prüfung",
+      "Prüfungsstress",
+      "Anspannung",
+      "Gedanken",
+      "Lernplan",
+      "Ruhe-Ritual",
+      "Atmen",
+      "Mutmacher"
+    ],
+    "verwandt": [
+      "vor-der-probe",
+      "pruefungsangst",
+      "skills-pruefungs-countdown",
+      "t4-atem-anker"
+    ],
+    "bild": "icon:hourglass",
+    "de": {
+      "titel": "Vor der Prüfung",
+      "untertitel": "Meine Stress-Kurve, meine Gedanken, mein Plan und mein Ruhe-Ritual für den Morgen",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Vor einer Prüfung macht der ganze Körper mit: Herz, Bauch, Gedanken. Das ist normal, und ein Teil davon lässt sich beeinflussen. Heute schaust du dir deinen Stress an, hörst auf deine Gedanken und baust dir einen Plan und ein Ritual für den Morgen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zeichne die Stress-Kurve deiner letzten Prüfung: von einer Woche davor bis zum Tag danach.",
+          "hinweis": "Setz an jedem Punkt ein Kreuz und verbinde die Kreuze zu einer Linie. Beispiel: Jana lernt erst am Abend davor, schläft schlecht, ist am Morgen sehr angespannt und danach erleichtert.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "kurve",
+          "x": [
+            "7 Tage davor",
+            "3 Tage davor",
+            "Abend davor",
+            "Morgen",
+            "Prüfung",
+            "Abend danach",
+            "Tag danach"
+          ],
+          "oben": "sehr gestresst",
+          "mitte": "geht so",
+          "unten": "ganz ruhig",
+          "linien": [
+            "Stress",
+            "Zuversicht"
+          ],
+          "hoehe": 140
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am höchsten war mein Stress, als …",
+            "Mein Körper hat mir gesagt: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was denkst du vor einer Prüfung? Schreib es in eine Wolke, antworte in der Blase.",
+          "hinweis": "Hilfreicher heißt nicht schöngeredet. Beispiel: „Ich schaffe das nie.“ – „Ich habe Angst, und ich habe schon vieles geschafft.“",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "formfelder",
+              "form": "wolke",
+              "items": [
+                "Mein Gedanke: …",
+                "Mein Gedanke: …"
+              ],
+              "anzahl": 2,
+              "spalten": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "formfelder",
+              "form": "blase",
+              "items": [
+                "Meine hilfreichere Antwort: …",
+                "Meine hilfreichere Antwort: …"
+              ],
+              "anzahl": 2,
+              "spalten": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Atme dreimal (Hand auf den Bauch, 4 ein, 6 aus). Je ein Kreuz vorher und nachher.",
+          "hinweis": "Zwei Farben: Kreuz 1 davor, Kreuz 2 danach. Wird dir schwindlig, atme normal. Kaum Veränderung ist auch okay.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Bauch eng",
+              "Bauch weit"
+            ],
+            [
+              "Kopf voll",
+              "Kopf klar"
+            ],
+            [
+              "Herz schnell",
+              "Herz ruhig"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane deine nächste Prüfung rückwärts: kleine Schritte, jeder höchstens 20 Minuten.",
+          "hinweis": "Fang beim Prüfungstag an und geh zurück. Kleine Schritte sind leichter zu starten als „lernen“. Die farbige Zeile ist ein Beispiel.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wann",
+            "Kleiner Schritt",
+            "Dauer"
+          ],
+          "breiten": [
+            1.4,
+            3,
+            0.8
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Tag vor der Prüfung",
+            "Alles einmal abfragen, nur die Fehler noch einmal ansehen",
+            "20 Min."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Baue dein Ruhe-Ritual für den Prüfungsmorgen. Kreuz drei Bausteine an oder erfinde eigene.",
+          "hinweis": "Ein Ritual ist ein fester Ablauf, der dem Körper sagt: Jetzt geht es los. Probier ihn schon vor der nächsten Prüfung aus, dann ist er vertraut.",
+          "symbole": [
+            "ankreuzen",
+            "malen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Glas Wasser und etwas essen",
+            "Hand auf den Bauch, dreimal lang ausatmen",
+            "Ein Lied auf dem Schulweg",
+            "Zehn Minuten frische Luft",
+            "Mutmacher-Gegenstand einstecken",
+            "Füße fest auf den Boden, Schultern kreisen"
+          ],
+          "spalten": 2,
+          "frei": 1
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mein Mutmacher-Gegenstand",
+              "hoehe": 4,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Er erinnert mich an: …",
+                "Mein Satz für den Morgen: …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Aufregung ist auch Energie",
+          "text": "Herzklopfen heißt: Dein Körper macht sich bereit. Wer sich sagt „Mein Herz klopft, und das hilft mir“, kommt mit der Anspannung oft besser zurecht."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Antworten gehören dir, niemand sammelt das Blatt ein. Ist dir eine echte Prüfung zu nah, füll es für Jana aus (Mathe-Arbeit am Freitag). Wird der Druck so groß, dass du kaum noch schläfst oder isst, sprich mit dem SePAS oder einer Person, der du vertraust."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, wie sich Anspannung in Körper und Gedanken zeigt, probieren Atmen als Anker aus und planen die nächste Prüfung in kleinen Schritten mit eigenem Ruhe-Ritual.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: glatten Stein herumgeben, Augen zu, 20 Sek. halten: „Was spürst du in Hand und Bauch?“",
+          "Erklären (5 Min.): Körper – Gedanken – Handeln. Beispiel Jana an der Tafel: Gipfel am Prüfungsmorgen. Wer mag, füllt das Blatt für Jana aus.",
+          "Einzelarbeit (17 Min.): Stress-Kurve, Wolken mit hilfreicherer Antwort, Plan rückwärts. Leise Musik.",
+          "Körper (8 Min.): Hand auf den Bauch, 4 ein, 6 aus, dreimal; Regler vorher und nachher. Dann Ritual und Mutmacher-Gegenstand.",
+          "Austausch (5 Min., freiwillig): Zu zweit: „Welcher Baustein im Ritual passt zu dir?“ Im Plenum nur Rituale.",
+          "Abschluss (5 Min.): „Das nehme ich mit“; das Ritual vor der nächsten Prüfung einmal üben."
+        ],
+        "hintergrund": "Prüfungsangst verbindet körperliche Anspannung, sorgenvolle Gedanken und die Sorge, nicht zu genügen; Sorgen binden Aufmerksamkeit, die beim Denken fehlt (Zeidner, 1998). Das Blatt trennt deshalb Körper (Kurve, Atmen), Gedanken (Wolke, Antwort) und Handeln (Plan, Ritual). Wer Anspannung als Energie deutet, kann in Prüfungen besser abschneiden (Jamieson et al., 2010). Langsames Atmen ist ein einfacher Zugang zum Körper (Zaccaro et al., 2018).",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Kurve, Atmen und Ritual; Wolken mündlich zu zweit.",
+          "schwerer": "Zweite Kurve mit Plan zeichnen, Unterschied benennen."
+        },
+        "impulse": [
+          "Was meldete dein Körper vor der letzten Prüfung zuerst?",
+          "Welcher Baustein deines Rituals dauert unter zwei Minuten?"
+        ],
+        "tipps": [
+          "Wem die eigene Prüfung zu nah ist, arbeitet mit Jana weiter.",
+          "Atmen freiwillig, Augen dürfen offen bleiben."
+        ],
+        "achtung": "Anhaltende Schlaflosigkeit, Rückzug oder Sätze wie „Ich bin nichts wert“: Einzelgespräch, SePAS oder Vertrauensperson. Bei Selbstverletzung oder Suizidgedanken sofort nach internem Ablauf handeln, nicht allein lassen („notfall“).",
+        "material": "Buntstifte (2 Farben); glatter Stein"
+      }
+    },
+    "fr": {
+      "titel": "Avant l’examen",
+      "untertitel": "Ma courbe de stress, mes pensées, mon plan et mon rituel du matin",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Avant un examen, tout le corps participe : le cœur, le ventre, les pensées. C’est normal, et une partie de tout cela peut s’influencer. Aujourd’hui, tu regardes ton stress de près, tu écoutes tes pensées et tu construis un plan et un rituel pour le matin."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine la courbe de stress de ton dernier examen : de la semaine d’avant au lendemain.",
+          "hinweis": "Fais une croix à chaque point, puis relie-les en une ligne. Exemple : Jana révise seulement la veille au soir, dort mal, est très tendue le matin et soulagée après.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "kurve",
+          "x": [
+            "J-7",
+            "J-3",
+            "Veille soir",
+            "Matin",
+            "Examen",
+            "Soir après",
+            "Lendemain"
+          ],
+          "oben": "beaucoup de stress",
+          "mitte": "moyen",
+          "unten": "très calme",
+          "linien": [
+            "Stress",
+            "Confiance"
+          ],
+          "hoehe": 140
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon stress était au plus haut quand …",
+            "Mon corps me disait : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que penses-tu avant un examen ? Écris-le dans un nuage, réponds dans la bulle.",
+          "hinweis": "Plus utile ne veut pas dire enjolivé. Exemple : « Je n’y arriverai jamais. » – « J’ai peur, et j’ai déjà réussi bien des choses. »",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "formfelder",
+              "form": "wolke",
+              "items": [
+                "Ma pensée : …",
+                "Ma pensée : …"
+              ],
+              "anzahl": 2,
+              "spalten": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "formfelder",
+              "form": "blase",
+              "items": [
+                "Ma réponse plus utile : …",
+                "Ma réponse plus utile : …"
+              ],
+              "anzahl": 2,
+              "spalten": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Respire trois fois (main sur le ventre, 4 en inspirant, 6 en expirant). Une croix avant, une après.",
+          "hinweis": "Deux couleurs : croix 1 avant, croix 2 après. Si tu as le vertige, respire normalement. Peu de changement, c’est aussi bien.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "ventre serré",
+              "ventre libre"
+            ],
+            [
+              "tête pleine",
+              "tête claire"
+            ],
+            [
+              "cœur rapide",
+              "cœur calme"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie ton prochain examen à rebours : de petites étapes, chacune de 20 minutes au plus.",
+          "hinweis": "Pars du jour de l’examen et remonte le temps. De petites étapes sont plus faciles à commencer que « réviser ». La ligne en couleur est un exemple.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quand",
+            "Petite étape",
+            "Durée"
+          ],
+          "breiten": [
+            1.4,
+            3,
+            0.8
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "La veille de l’examen",
+            "Tout me faire réciter une fois, revoir seulement les erreurs",
+            "20 min"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Compose ton rituel de calme pour le matin de l’examen. Coche trois éléments ou invente les tiens.",
+          "hinweis": "Un rituel est un enchaînement fixe qui dit à ton corps : c’est parti. Essaie-le avant le prochain examen, il te sera alors familier.",
+          "symbole": [
+            "ankreuzen",
+            "malen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Un verre d’eau et un petit déjeuner",
+            "Main sur le ventre, trois longues expirations",
+            "Une chanson sur le chemin de l’école",
+            "Dix minutes d’air frais",
+            "Prendre un objet qui me donne du courage",
+            "Pieds bien posés, rouler les épaules"
+          ],
+          "spalten": 2,
+          "frei": 1
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mon objet qui donne du courage",
+              "hoehe": 4,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Il me rappelle : …",
+                "Ma phrase pour le matin : …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "L’agitation, c’est aussi de l’énergie",
+          "text": "Un cœur qui bat, c’est ton corps qui se prépare. Se dire « Mon cœur bat vite, et ça m’aide » permet souvent de mieux gérer la tension."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Tes réponses t’appartiennent, personne ne ramasse la feuille. Si un vrai examen est trop proche de toi, remplis-la pour Jana (devoir de maths vendredi). Si la pression devient telle que tu dors ou manges à peine, parles-en au SePAS ou à une personne en qui tu as confiance."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent comment la tension se manifeste dans le corps et les pensées, essaient la respiration comme ancrage et planifient le prochain examen en petites étapes avec leur propre rituel de calme.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : faire circuler une pierre lisse, yeux fermés, 20 s : « Que sens-tu dans la main et dans le ventre ? »",
+          "Expliquer (5 min) : corps – pensées – action. Exemple de Jana au tableau : sommet le matin de l’examen. Qui veut remplit la feuille pour Jana.",
+          "Travail individuel (17 min) : courbe de stress, nuages avec réponse plus utile, plan à rebours. Musique douce.",
+          "Corps (8 min) : main sur le ventre, 4 en inspirant, 6 en expirant, trois fois ; réglettes avant et après. Puis rituel et objet qui donne du courage.",
+          "Échange (5 min), facultatif : à deux : « Quel élément du rituel te convient ? » En plénière, seulement les rituels.",
+          "Clôture (5 min) : « Ce que j’emporte » ; essayer le rituel une fois avant le prochain examen."
+        ],
+        "hintergrund": "Le stress d’examen associe tension corporelle, pensées inquiètes et crainte de ne pas être à la hauteur ; les soucis occupent une attention qui manque ensuite pour réfléchir (Zeidner, 1998). La feuille sépare donc le corps (courbe, respiration), les pensées (nuage, réponse) et l’action (plan, rituel). Qui interprète la tension comme de l’énergie peut mieux réussir aux examens (Jamieson et al., 2010). Respirer lentement est un accès simple au corps (Zaccaro et al., 2018).",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement courbe, respiration et rituel ; nuages à l’oral, à deux.",
+          "schwerer": "Dessiner une seconde courbe avec un plan et nommer la différence."
+        },
+        "impulse": [
+          "Qu’est-ce que ton corps a signalé en premier avant ton dernier examen ?",
+          "Quel élément de ton rituel prend moins de deux minutes ?"
+        ],
+        "tipps": [
+          "Pour qui son examen est trop proche : continuer avec Jana.",
+          "Respiration facultative, yeux ouverts permis."
+        ],
+        "achtung": "Insomnie persistante, repli ou phrases comme « Je ne vaux rien » : entretien individuel, SePAS ou personne de confiance. En cas d’automutilation ou d’idées suicidaires : agir tout de suite selon la procédure interne, ne pas laisser seul (« notfall »).",
+        "material": "Crayons (2 couleurs) ; pierre lisse"
+      }
+    }
+  },
+  {
+    "id": "tg-was-mich-antreibt",
+    "bereich": "lernen",
+    "thema": "motivation",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-32",
+      "V-15",
+      "V-25",
+      "K-24"
+    ],
+    "schlagworte": [
+      "Motivation",
+      "Antrieb",
+      "Neugier",
+      "Belohnung",
+      "Mini-Ziel",
+      "Durchhalten",
+      "Hobby",
+      "Energie"
+    ],
+    "verwandt": [
+      "motivations-plan",
+      "aufschieben-ueberlisten",
+      "woop-plan",
+      "beduerfnis-glaeser"
+    ],
+    "bild": "icon:rocket",
+    "de": {
+      "titel": "Was mich antreibt",
+      "untertitel": "Von innen oder von außen: Woher meine Motivation kommt und was ich daraus mache",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Manchmal läuft Lernen fast von selbst, manchmal kostet schon das Aufschlagen des Hefts Kraft. Oft hängt das davon ab, woher der Antrieb kommt: von innen (Neugier, Freude, das Gefühl, dass es Sinn hat) oder von außen (Noten, Lob, Druck). Beides gibt es bei allen. Heute schaust du, was dich antreibt, und nimmst eine Idee für ein schweres Fach mit."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woher kommt dein Antrieb? Male jedes Glas so voll, wie es bei dir gerade ist.",
+          "hinweis": "Links drei Gläser: Antrieb von innen. Rechts drei: Antrieb von außen. Mit dem Strich markierst du, wie voll es sein dürfte. Kein Glas muss voll sein.",
+          "symbole": [
+            "malen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Neugier",
+            "Freude",
+            "Sinn",
+            "Noten",
+            "Lob",
+            "Druck"
+          ],
+          "spalten": 6,
+          "legende": [
+            "Strich: so voll hätte ich es gern",
+            "Ausmalen: so voll ist es jetzt"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das fällt mir an meinen Gläsern auf: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo läuft es von selbst, wo nur mit Mühe? Trag drei Fächer oder Dinge ein und such den Grund.",
+          "hinweis": "Es müssen keine Schulfächer sein: Training, Musik, Backen, Zocken. Die Zahl: 1 = nur mit Mühe, 5 = läuft von selbst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Fach oder Sache",
+            "Läuft (1–5)",
+            "Was treibt mich an oder bremst mich?"
+          ],
+          "breiten": [
+            1.3,
+            0.8,
+            2.6
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Basketball",
+            "5",
+            "Ich sehe, dass ich besser werde, und wir sind ein Team."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Spiel deine Lieblingsaktivität 20 Sekunden ohne Worte vor. Kreuz an, was du bemerkst.",
+          "hinweis": "Am Platz oder zu zweit. Wer nicht vorspielen mag, stellt sich die Aktivität vor und schaut, was im Körper passiert.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Ich war ganz bei der Sache",
+            "Die Zeit verging schnell",
+            "Ich habe gelächelt",
+            "Ich wollte weitermachen"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was von deiner Sache kannst du in ein schweres Fach mitnehmen? Übersetze es.",
+          "hinweis": "Die farbige Zeile zeigt ein Beispiel. Es geht um eine Zutat, nicht darum, das Fach plötzlich zu lieben.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Das tue ich bei meiner Sache …",
+            "… das könnte ich im schweren Fach tun"
+          ],
+          "zeilen": 1,
+          "hoehe": 2,
+          "beispiel": [
+            "Ich übe einen Trick dreißigmal und feiere jeden Fortschritt.",
+            "Ich übe einen Aufgabentyp und hake jede gelöste Aufgabe ab."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Male deine Energie-Batterie für eine normale Schulwoche aus. Was lädt sie, was leert sie?",
+          "hinweis": "Fünf Felder: voll heißt, du hast Kraft für alles. Sei ehrlich statt schön.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "batterie",
+          "laden": "Das lädt mich auf",
+          "leeren": "Das leert mich",
+          "linien": 2,
+          "leer": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Setz dir ein Mini-Ziel für diese Woche und such dir eine Belohnung dazu.",
+          "hinweis": "Klein heißt: in zwei Tagen machbar. Die Belohnung wählst du selbst, und sie kommt erst nach dem Schritt. Beispiel: drei Aufgaben im Mathebuch lösen, dann einen Kakao holen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Mini-Ziel: …",
+            "Das schaffe ich bis: …",
+            "Daran merke ich, dass es geschafft ist: …",
+            "Meine Belohnung: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "skala",
+          "frage": "Wie sicher bist du, dass du es schaffst? Liegst du unter 7, mach das Ziel noch kleiner.",
+          "von": "unsicher",
+          "bis": "sicher",
+          "stufen": 11
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Von außen kann nach innen wandern",
+          "text": "Was als Druck beginnt, kann zu deinem eigenen Ziel werden: wenn du mitentscheiden darfst, besser wirst und dich zugehörig fühlst. Dann ist eine Belohnung ein kleines Fest, keine Bezahlung."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Antworten gehören dir, niemand sammelt das Blatt ein. Ist dir etwas zu nah, füll es für Mila aus: Sie hat in Physik nie Lust, tanzt aber jeden Abend."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen sehen, woher ihr Antrieb kommt, finden Gründe, warum manches von selbst läuft, übertragen eine Zutat aus einem Hobby auf ein schweres Fach und setzen sich ein Mini-Ziel mit Belohnung.",
+        "ablauf": [
+          "Einstieg (5 Min.): Körper-Impuls: aufstehen, 20 Sek. „Ich muss“ zeigen (zusammengesunken), dann „Ich will“ (aufrecht): „Was ändert sich in Atem und Schultern?“",
+          "Erklären (5 Min.): Beispiel: Pol lernt Geschichte, weil es ihn packt; Mila Physik wegen der Note. Beides kommt vor, beides zählt.",
+          "Einzelarbeit (20 Min.): Gläser, Tabelle; Lieblingsaktivität 20 Sek. vorspielen (am Platz oder zu zweit); Hobby-Übersetzer; Batterie ausmalen.",
+          "Austausch (7 Min., freiwillig): Zu zweit: „Was nimmst du aus deiner Sache mit?“ Im Plenum nur Übersetzungen, keine Gläser.",
+          "Abschluss (8 Min.): Mini-Ziel, Belohnung, Skala; „Das nehme ich mit“. Eine Woche später fragen: „Was hast du geschafft?“"
+        ],
+        "hintergrund": "Die Selbstbestimmungstheorie sieht Motivation auf einem Band zwischen „von außen“ und „von innen“: Äußere Gründe können zu eigenen werden, wenn man mitbestimmt und sich fähig und zugehörig erlebt (Deci & Ryan, 2000). Belohnungen können Interesse verdrängen, wenn sie als Kontrolle wirken; hier wählen die Jugendlichen sie selbst. Nahe, erreichbare Ziele stärken das Kompetenzgefühl und das Interesse am Tun (Bandura & Schunk, 1981).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Gläser, eine Tabellenzeile, Mini-Ziel; Hobby-Übersetzer mündlich zu zweit.",
+          "schwerer": "Gläser nach einer Woche erneut ausmalen und vergleichen; Mini-Ziel mit Wenn-dann-Plan absichern."
+        },
+        "impulse": [
+          "Welches Glas überrascht dich, welches hast du erwartet?",
+          "Wie bleibt eine Belohnung ein Fest und wird kein Druck?"
+        ],
+        "tipps": [
+          "Beide Seiten würdigen: Noten und Lob sind kein „schlechter“ Antrieb; Gläser nicht vergleichen.",
+          "Vorspielen freiwillig: Wer nicht mag, beschreibt oder schaut zu."
+        ],
+        "achtung": "Ein sehr volles Glas „Druck“ oder Sätze wie „Zu Hause gibt es Ärger, wenn ich schlecht bin“: Einzelgespräch, SePAS oder Vertrauensperson, nicht im Plenum. Bei Gewalt oder Selbstverletzung sofort nach internem Ablauf handeln („notfall“).",
+        "material": "Buntstifte; Platz zum Aufstehen"
+      }
+    },
+    "fr": {
+      "titel": "Ce qui me motive",
+      "untertitel": "De l’intérieur ou de l’extérieur : d’où vient ma motivation et ce que j’en fais",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Parfois, apprendre roule presque tout seul, parfois ouvrir le cahier coûte déjà de l’énergie. Cela dépend souvent d’où vient la motivation : de l’intérieur (curiosité, plaisir, sens) ou de l’extérieur (notes, compliments, pression). Les deux existent chez tout le monde. Aujourd’hui, tu regardes ce qui te motive et tu repars avec une idée pour une matière difficile."
+        },
+        {
+          "art": "aufgabe",
+          "text": "D’où vient ta motivation ? Colorie chaque verre à la hauteur où il est en ce moment.",
+          "hinweis": "À gauche, trois verres : de l’intérieur. À droite, trois : de l’extérieur. Le trait marque le niveau souhaité.",
+          "symbole": [
+            "malen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Curiosité",
+            "Plaisir",
+            "Sens",
+            "Notes",
+            "Compliments",
+            "Pression"
+          ],
+          "spalten": 6,
+          "legende": [
+            "Trait : niveau souhaité",
+            "Colorié : niveau actuel"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce que je remarque dans mes verres : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où ça roule tout seul, où faut-il se forcer ? Note trois matières ou activités et cherche pourquoi.",
+          "hinweis": "Pas besoin de matières scolaires : sport, musique, cuisine. Chiffre : 1 = avec effort, 5 = tout seul.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Matière ou activité",
+            "Ça roule (1–5)",
+            "Qu’est-ce qui me motive ou me freine ?"
+          ],
+          "breiten": [
+            1.3,
+            0.8,
+            2.6
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Basket",
+            "5",
+            "Je vois que je progresse, et nous formons une équipe."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mime ton activité préférée pendant 20 secondes, sans mots. Coche ce que tu remarques.",
+          "hinweis": "À ta place ou à deux. Si tu ne veux pas la mimer, imagine l’activité et regarde ce qui se passe dans ton corps.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "J’étais totalement dedans",
+            "Le temps a passé vite",
+            "J’ai souri",
+            "J’avais envie de continuer"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que peux-tu emporter de ton activité vers une matière difficile ? Traduis-le.",
+          "hinweis": "La ligne en couleur donne un exemple. Il s’agit d’un ingrédient, pas d’aimer soudain la matière.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ce que je fais dans mon activité …",
+            "… ce que je pourrais faire dans la matière difficile"
+          ],
+          "zeilen": 1,
+          "hoehe": 2,
+          "beispiel": [
+            "Je répète une figure trente fois et je fête chaque progrès.",
+            "Je m’entraîne sur un type d’exercice et je coche chaque réussite."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Colorie ta batterie d’énergie pour une semaine d’école ordinaire. Qu’est-ce qui la recharge, qu’est-ce qui la vide ?",
+          "hinweis": "Cinq cases : pleine veut dire que tu as de la force pour tout. Mieux vaut un dessin honnête qu’un joli dessin.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "batterie",
+          "laden": "Ce qui me recharge",
+          "leeren": "Ce qui me vide",
+          "linien": 2,
+          "leer": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fixe-toi un mini-objectif pour cette semaine et choisis une récompense.",
+          "hinweis": "Petit veut dire : faisable en deux jours. Tu choisis la récompense toi-même, et elle vient après l’étape. Exemple : faire trois exercices de maths, puis boire un chocolat chaud.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon mini-objectif : …",
+            "Je le fais d’ici : …",
+            "Je saurai que c’est fait quand : …",
+            "Ma récompense : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "skala",
+          "frage": "Quelle est ta certitude d’y arriver ? En dessous de 7, rends l’objectif encore plus petit.",
+          "von": "doute",
+          "bis": "certitude",
+          "stufen": 11
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ce qui vient de l’extérieur peut passer à l’intérieur",
+          "text": "Ce qui commence comme une pression peut devenir ton propre objectif : si tu as ton mot à dire, si tu progresses et si tu te sens à ta place. Une récompense devient alors une petite fête, pas un salaire."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Tes réponses t’appartiennent, personne ne ramasse la feuille. Si quelque chose est trop proche de toi, remplis-la pour Mila : elle n’a jamais envie en physique, mais elle danse tous les soirs."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte",
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes voient d’où vient leur motivation, pourquoi certaines choses roulent toutes seules, transposent un ingrédient d’une activité à une matière difficile et se fixent un mini-objectif.",
+        "ablauf": [
+          "Entrée en matière (5 min) : se lever, montrer « Je dois » 20 s (affaissé), puis « Je veux » (droit) : « Qu’est-ce qui change ? »",
+          "Expliquer (5 min) : Pol étudie l’histoire parce que ça le passionne, Mila la physique pour la note. Les deux comptent.",
+          "Travail individuel (20 min) : verres, tableau ; mimer l’activité préférée 20 s ; traduction vers la matière difficile ; batterie.",
+          "Échange (7 min), facultatif : à deux : « Qu’emportes-tu de ton activité ? » En plénière, pas les verres.",
+          "Clôture (8 min) : mini-objectif, récompense, échelle ; « Ce que j’emporte ». Une semaine après : « Qu’as-tu réussi ? »"
+        ],
+        "hintergrund": "La théorie de l’autodétermination place la motivation sur un continuum entre « extérieur » et « intérieur » : des raisons extérieures peuvent devenir personnelles quand on a son mot à dire et qu’on se sent compétent et accepté (Deci et Ryan, 2000). Des récompenses peuvent évincer l’intérêt si elles sont vécues comme un contrôle ; ici, les jeunes les choisissent. Des objectifs proches renforcent le sentiment de compétence et l’intérêt pour la tâche (Bandura et Schunk, 1981).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement verres, tableau à une ligne et mini-objectif ; traduction à l’oral, à deux.",
+          "schwerer": "Recolorier les verres une semaine plus tard et comparer ; sécuriser le mini-objectif par un plan « si … alors »."
+        },
+        "impulse": [
+          "Quel verre te surprend, lequel attendais-tu ?",
+          "Comment une récompense reste-t-elle une fête et non une pression ?"
+        ],
+        "tipps": [
+          "Notes et compliments ne sont pas un mauvais moteur ; ne pas comparer les verres.",
+          "Mimer reste facultatif : sinon, décrire ou observer."
+        ],
+        "achtung": "Un verre « pression » très plein ou des phrases comme « À la maison, c’est la dispute si je suis mauvais » : entretien individuel, SePAS ou personne de confiance. En cas de violence ou d’automutilation : agir tout de suite selon la procédure interne (« notfall »).",
+        "material": "Crayons de couleur ; place pour se lever"
+      }
+    }
+  }
+]

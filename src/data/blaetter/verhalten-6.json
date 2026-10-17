@@ -1,0 +1,1279 @@
+[
+  {
+    "id": "tg-zwischen-reiz-und-reaktion",
+    "bereich": "verhalten",
+    "thema": "impulse",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-21",
+      "V-26",
+      "V-18",
+      "V-33"
+    ],
+    "schlagworte": [
+      "Impulse",
+      "Pausetaste",
+      "Selbststeuerung",
+      "Körpersignale",
+      "Wenn-dann-Plan",
+      "Atmen",
+      "Reaktion"
+    ],
+    "verwandt": [
+      "erst-die-pause",
+      "t2-stopp-erst-atmen",
+      "stopp-denken-handeln",
+      "sr-wenn-stress"
+    ],
+    "bild": "icon:player-pause",
+    "de": {
+      "titel": "Zwischen Reiz und Reaktion",
+      "untertitel": "Die eine Sekunde, in der du noch wählen kannst",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Manchmal ist es passiert, bevor du nachdenken konntest: Der Satz ist raus, die Tür knallt, die Nachricht ist abgeschickt. Dazwischen liegt nur eine Sekunde – und die kannst du dir länger machen. Heute suchst du heraus, wie – es gibt kein Richtig oder Falsch, nur das, was bei dir wirkt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wann handelst du schneller, als du denkst? Kreuz an – gern auch eigene Momente.",
+          "hinweis": "Ist dir ein Moment gerade zu nah? Nimm Jana (15): Im Gruppenchat steht ein Witz über sie, und ihr Daumen tippt schon die Antwort. Du kannst das ganze Blatt für Jana ausfüllen.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Jemand sagt etwas Fieses, und ich kontere sofort.",
+            "Eine Nachricht macht mich sauer, und ich tippe sofort zurück.",
+            "Beim Zocken oder Sport läuft es schief, und ich werfe etwas hin.",
+            "Jemand kritisiert mich, und ich mache dicht oder gehe.",
+            "Jemand fragt „Kommst du mit?“, und ich sage Ja, ohne nachzudenken.",
+            "Ich bin müde, und es kommt schärfer raus, als ich es meine."
+          ],
+          "spalten": 1,
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was passiert in dieser einen Sekunde in dir? Mal an, wo du es im Körper spürst.",
+          "hinweis": "Beispiel Jana: heiß im Gesicht, Druck in der Brust, Finger zucken. Im Kopf: „Das lasse ich nicht stehen.“",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "koerper",
+              "legende": [
+                {
+                  "farbe": "rot",
+                  "text": "Hitze"
+                },
+                {
+                  "farbe": "lila",
+                  "text": "Druck, Enge"
+                },
+                {
+                  "farbe": "orange",
+                  "text": "Unruhe, Zittern"
+                },
+                {
+                  "farbe": "hellblau",
+                  "text": "Kälte, Leere"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "In meinem Kopf läuft: …",
+                "Mein Körper will: …",
+                "Und dann tue ich: …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Warum die Pause so klein sein darf",
+          "text": "Bei Jugendlichen ist das Gefühlssystem im Gehirn oft schneller als das Bremssystem, besonders bei Aufregung. Das ist normal und wird mit Übung besser."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Steh auf und probier drei Pause-Ideen aus, je 10 Sekunden. Kreuz danach an, wie stark jede bei dir wirkt.",
+          "hinweis": "Du brauchst nur einen Platz zum Stehen. Die Karten kannst du ausschneiden und in die Federmappe stecken. Eine Idee, die du nicht probiert hast, lässt du leer.",
+          "symbole": [
+            "ankreuzen",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "karten": [
+            {
+              "nummer": 1,
+              "titel": "Atmen",
+              "text": "Durch die Nase ein, doppelt so lang durch den Mund aus. Dreimal.",
+              "bild": "icon:wind"
+            },
+            {
+              "nummer": 2,
+              "titel": "Hände drücken",
+              "text": "Handflächen 10 Sekunden fest zusammendrücken, dann lösen.",
+              "bild": "icon:hand-stop"
+            },
+            {
+              "nummer": 3,
+              "titel": "Wasser trinken",
+              "text": "Ein paar Schlucke, ganz langsam. Spüren, wie es kühl hinunterläuft.",
+              "bild": "icon:droplet"
+            },
+            {
+              "nummer": 4,
+              "titel": "Weggehen",
+              "text": "Drei Schritte vom Platz weg und zurück. Oder kurz vor die Tür.",
+              "bild": "icon:footsteps"
+            }
+          ],
+          "spalten": 4,
+          "schneiden": true
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Atmen: wenig",
+              "Atmen: viel"
+            ],
+            [
+              "Hände: wenig",
+              "Hände: viel"
+            ],
+            [
+              "Wasser: wenig",
+              "Wasser: viel"
+            ],
+            [
+              "Gehen: wenig",
+              "Gehen: viel"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bau deine Pausetaste: Mal ein Zeichen für die Idee, die bei dir am besten wirkt.",
+          "hinweis": "Ein Knopf, ein Symbol, eine Farbe, ein Wort – was dich in der Sekunde erinnert. Mal es so deutlich, dass du es im Kopf wieder vor dir siehst.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Meine Pausetaste",
+          "hoehe": 4,
+          "zeichnen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib einen Wenn-dann-Plan für den Moment, den du oben angekreuzt hast.",
+          "hinweis": "Das Wenn ist dein Signal im Körper oder in der Situation, das Dann deine Pausetaste. Danach darfst du sagen oder tun, was du willst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mein Gesicht heiß wird und der Daumen schon tippt,",
+              "dann": "lege ich das Handy weg und atme dreimal lang aus."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Niemand sammelt das Blatt ein. Wenn dir manche Momente zu schwer vorkommen, sprich mit einer Person, der du vertraust."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen Momente, in denen sie schneller handeln als denken, bemerken Körpersignale, probieren Pause-Ideen aus und halten einen Wenn-dann-Plan fest.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: aufstehen, Handflächen 10 Sekunden fest gegeneinanderdrücken (Stoppuhr), lösen. „Was merkst du jetzt in Händen und Atem?“",
+          "Erklären (5 Min.): Beispiel Jana vormachen: Auslöser – Körpersignal – Gedanke – Tun. Die Sekunde dazwischen ist das Thema.",
+          "Einzelarbeit (15 Min.): Aufgaben 1 und 2: Momente ankreuzen, Körper ausmalen, Sätze ergänzen. Ruhige Musik. Wem das zu nah ist, arbeitet mit Jana.",
+          "Ausprobieren (10 Min.): Aufgabe 3 im Stehen, je Idee 10 Sekunden in Stille; Regler; Pausetaste malen.",
+          "Austausch (5 Min., freiwillig): Zu zweit: „Welche Idee wirkt bei dir am stärksten?“ Im Plenum nur Ideen.",
+          "Abschluss (5 Min.): Wenn-dann-Plan, Pausekarte einstecken, „Das nehme ich mit“. Nach einer Woche nachfragen."
+        ],
+        "hintergrund": "Im Jugendalter reagiert das Gefühlssystem des Gehirns früher und stärker als das Kontrollsystem, besonders bei Aufregung oder vor Gleichaltrigen (Steinberg, 2014). Impulsives Handeln ist kein Charakterfehler, sondern lässt sich üben. Das Blatt macht die Lücke zwischen Auslöser und Handlung sichtbar: Körpersignale als Frühwarnung, eine selbst gewählte Pause als Bremse. Ein Wenn-dann-Plan verknüpft das Signal mit der Handlung und erleichtert es, im Moment wirklich zu bremsen (Gollwitzer, 1999).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Jana als Figur; eine Pause-Idee probieren; Sätze mündlich zu zweit.",
+          "schwerer": "Zwei Momente vergleichen; eigene Pause-Idee erfinden und eine Woche testen."
+        },
+        "impulse": [
+          "Was merkst du zuerst, wenn es schnell geht?",
+          "Was macht die Pause leichter – was schwerer?",
+          "Wo wäre eine Pausetaste besonders nützlich?"
+        ],
+        "tipps": [
+          "Pausetaste als Kürzel nutzen („Hast du gedrückt?“), nie als Vorwurf.",
+          "Stille kurz halten (10 Sekunden), damit sich niemand ausgestellt fühlt."
+        ],
+        "achtung": "Bei heftiger Wut, Schlägen oder Selbstverletzung nicht im Plenum nachfragen: Einzelgespräch, SePAS oder Vertrauensperson, Responsable; bei Gefährdung sofort nach dem internen Ablauf handeln (112, KJT 116 111). Stille kann Unruhe auslösen: Alternativen anbieten.",
+        "material": "Stoppuhr, Buntstifte, Schere, Wasser und Becher, ruhige Musik"
+      }
+    },
+    "fr": {
+      "titel": "Entre le déclencheur et la réaction",
+      "untertitel": "La seconde où tu peux encore choisir",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Parfois, c’est déjà fait avant que tu aies pu réfléchir : la phrase est sortie, la porte claque, le message est envoyé. Entre les deux, il n’y a qu’une seconde – et tu peux la rendre plus longue. Aujourd’hui, tu cherches comment – il n’y a ni bonne ni mauvaise réponse, seulement ce qui marche pour toi."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand agis-tu plus vite que tu ne penses ? Coche – et ajoute tes propres moments.",
+          "hinweis": "Un moment est trop proche pour l’instant ? Prends Jana (15 ans) : dans le chat de groupe, une blague sur elle, et son pouce tape déjà la réponse. Tu peux remplir toute la feuille pour Jana.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Quelqu’un dit un truc méchant, et je réplique tout de suite.",
+            "Un message m’énerve, et je réponds aussitôt.",
+            "En jouant ou au sport, ça tourne mal, et je jette quelque chose.",
+            "Quelqu’un me critique, et je me ferme ou je m’en vais.",
+            "On me demande « Tu viens ? », et je dis oui sans réfléchir.",
+            "Je suis fatigué·e, et ça sort plus sec que je ne le veux."
+          ],
+          "spalten": 1,
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que se passe-t-il en toi pendant cette seconde ? Colorie où tu le sens dans le corps.",
+          "hinweis": "Exemple Jana : visage chaud, pression dans la poitrine, doigts qui bougent. Dans sa tête : « Je ne vais pas laisser passer ça. »",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "koerper",
+              "legende": [
+                {
+                  "farbe": "rot",
+                  "text": "Chaleur"
+                },
+                {
+                  "farbe": "lila",
+                  "text": "Pression, oppression"
+                },
+                {
+                  "farbe": "orange",
+                  "text": "Agitation, tremblements"
+                },
+                {
+                  "farbe": "hellblau",
+                  "text": "Froid, vide"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Dans ma tête, ça dit : …",
+                "Mon corps veut : …",
+                "Et alors, je fais : …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Pourquoi la pause peut être si courte",
+          "text": "À l’adolescence, le système des émotions est souvent plus rapide que le système de freinage du cerveau, surtout quand ça s’emballe. C’est normal, et ça s’améliore avec l’entraînement."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lève-toi et essaie trois idées de pause, 10 secondes chacune. Coche leur effet sur toi, de faible à fort.",
+          "hinweis": "Il te faut seulement une place pour rester debout. Tu peux découper les cartes et les glisser dans ta trousse. Pour une idée que tu n’as pas essayée, laisse vide.",
+          "symbole": [
+            "ankreuzen",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "karten": [
+            {
+              "nummer": 1,
+              "titel": "Respirer",
+              "text": "Inspirer par le nez, expirer deux fois plus longtemps par la bouche. Trois fois.",
+              "bild": "icon:wind"
+            },
+            {
+              "nummer": 2,
+              "titel": "Presser les mains",
+              "text": "Presser fort les paumes l’une contre l’autre 10 secondes, puis relâcher.",
+              "bild": "icon:hand-stop"
+            },
+            {
+              "nummer": 3,
+              "titel": "Boire de l’eau",
+              "text": "Quelques gorgées, très lentement. Sentir la fraîcheur descendre.",
+              "bild": "icon:droplet"
+            },
+            {
+              "nummer": 4,
+              "titel": "S’éloigner",
+              "text": "Trois pas loin de ta place et retour. Ou un instant dehors.",
+              "bild": "icon:footsteps"
+            }
+          ],
+          "spalten": 4,
+          "schneiden": true
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Respirer : peu",
+              "Respirer : fort"
+            ],
+            [
+              "Mains : peu",
+              "Mains : fort"
+            ],
+            [
+              "Eau : peu",
+              "Eau : fort"
+            ],
+            [
+              "Sortir : peu",
+              "Sortir : fort"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Construis ta touche pause : dessine un signe pour l’idée qui marche le mieux pour toi.",
+          "hinweis": "Un bouton, un symbole, une couleur, un mot – ce qui te rappelle de freiner. Dessine-le assez nettement pour le revoir dans ta tête.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Ma touche pause",
+          "hoehe": 4,
+          "zeichnen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris un plan « si… alors » pour le moment que tu as coché plus haut.",
+          "hinweis": "Le « si » est ton signal dans le corps ou dans la situation, le « alors » ta touche pause. Ensuite, tu peux dire ou faire ce que tu veux.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si mon visage devient chaud et que mon pouce tape déjà,",
+              "dann": "je pose mon téléphone et j’expire trois fois longuement."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Personne ne ramasse la feuille. Si certains moments te pèsent trop, parles-en à une personne en qui tu as confiance."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent des moments où ils agissent plus vite qu’ils ne pensent, remarquent les signaux du corps, essaient des idées de pause et notent un plan « si… alors ».",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : se lever, presser les paumes l’une contre l’autre 10 secondes (chronomètre), relâcher. « Que remarques-tu dans tes mains et ta respiration ? »",
+          "Expliquer (5 min) : montrer l’exemple de Jana : déclencheur – signal du corps – pensée – action. La seconde entre les deux est le sujet.",
+          "Travail individuel (15 min) : tâches 1 et 2 : cocher des moments, colorier le corps, compléter les phrases. Musique calme. Qui est trop proche de son vécu travaille avec Jana.",
+          "Essayer (10 min) : tâche 3 debout, 10 secondes par idée en silence ; curseurs ; dessiner la touche pause.",
+          "Échange (5 min), facultatif : à deux : « Quelle idée marche le mieux pour toi ? » En plénière, seulement les idées.",
+          "Clôture (5 min) : plan « si… alors », glisser la carte dans la trousse, « Ce que j’emporte ». Une semaine plus tard, demander."
+        ],
+        "hintergrund": "À l’adolescence, le système des émotions du cerveau réagit plus tôt et plus fort que le système de contrôle, surtout dans l’excitation ou devant les pairs (Steinberg, 2014). Agir sur l’impulsion n’est pas un défaut de caractère : cela s’exerce. La feuille rend visible l’écart entre déclencheur et action : les signaux du corps comme alerte précoce, une pause choisie comme frein. Un plan « si… alors » relie le signal à l’action et aide à freiner réellement sur le moment (Gollwitzer, 1999).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement Jana comme figure ; une seule idée de pause ; phrases à l’oral, à deux.",
+          "schwerer": "Comparer deux moments ; inventer sa propre idée de pause et la tester une semaine."
+        },
+        "impulse": [
+          "Que remarques-tu d’abord quand ça va vite ?",
+          "Qu’est-ce qui facilite la pause – ou la complique ?",
+          "Où une touche pause serait-elle utile ?"
+        ],
+        "tipps": [
+          "Touche pause comme mot-clé (« As-tu appuyé ? »), jamais comme reproche.",
+          "Garder le silence court (10 secondes), pour que personne ne se sente exposé."
+        ],
+        "achtung": "Colères violentes, coups ou automutilation : ne pas questionner en plénière ; entretien individuel, SePAS ou personne de confiance, responsable ; en cas de danger, agir tout de suite (112, KJT 116 111). Le silence peut agiter : proposer des alternatives.",
+        "material": "Chronomètre, crayons de couleur, ciseaux, eau et gobelets, musique calme"
+      }
+    }
+  },
+  {
+    "id": "tg-wieder-gut-machen",
+    "bereich": "verhalten",
+    "thema": "wiedergutmachung",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-27",
+      "SOZ-37",
+      "K-21",
+      "K-31"
+    ],
+    "schlagworte": [
+      "Wiedergutmachung",
+      "Entschuldigung",
+      "Verantwortung",
+      "Mitgefühl",
+      "Perspektivwechsel",
+      "Konflikt",
+      "Reparieren"
+    ],
+    "verwandt": [
+      "verantwortung-uebernehmen",
+      "skills-wiedergutmachen",
+      "was-ist-passiert",
+      "sr-im-nachhinein"
+    ],
+    "bild": "icon:heart-handshake",
+    "de": {
+      "titel": "Wieder gut machen",
+      "untertitel": "Du hast jemanden verletzt oder etwas kaputt gemacht – und jetzt?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Fast jeder hat schon einmal jemanden verletzt oder etwas kaputt gemacht – mit einem Satz, einer Handlung, manchmal aus Versehen. Danach bleibt oft ein flaues Gefühl, und man weiß nicht, was man tun soll. Heute schaust du dir so eine Situation in Ruhe an – ohne Zwang zur Entschuldigung und ohne Richtig oder Falsch."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Situation aus. Kreuz an, worum es ging.",
+          "hinweis": "Du hast jemanden verletzt oder etwas kaputt gemacht. Nimm etwas Kleines oder Mittelgroßes, nichts, was dich sehr aufwühlt. Oder nimm Tiago: Im Streit wirft er Mehmets Kopfhörer vom Tisch, ein Bügel bricht. Mehmet sagt nichts mehr.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Ich habe etwas Verletzendes gesagt oder geschrieben.",
+            "Ich habe jemanden ausgelacht, ausgeschlossen oder bloßgestellt.",
+            "Ich habe etwas von jemandem kaputt gemacht.",
+            "Ich habe eine Abmachung oder ein Versprechen nicht gehalten.",
+            "Ich habe etwas weitererzählt, das geheim bleiben sollte.",
+            "Ich war körperlich zu grob."
+          ],
+          "spalten": 2,
+          "frei": 1
+        },
+        {
+          "art": "feld",
+          "label": "Was ist passiert? Zwei, drei Sätze, ohne Namen",
+          "hoehe": 3,
+          "beispiel": "Im Streit habe ich Mehmets Kopfhörer vom Tisch gefegt. Ein Bügel ist gebrochen. (Tiago)"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie geht es der anderen Person? Stell dir vor, du wärst sie. Füll die Karte aus und mal die Figur in ihrer Stimmung an.",
+          "hinweis": "Du darfst raten. Beispiel Mehmet: Er sieht den gebrochenen Bügel, spürt Ärger und Enttäuschung und braucht vielleicht Abstand und ein ehrliches Wort.",
+          "symbole": [
+            "nachdenken",
+            "malen"
+          ]
+        },
+        {
+          "art": "personen",
+          "felder": [
+            "Wer ist es? (Initiale oder Rolle)",
+            "Das hat die Person gesehen und gehört",
+            "Das hat die Person vermutlich gespürt",
+            "Das braucht die Person jetzt vielleicht"
+          ],
+          "anzahl": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was tut dir leid – und was nicht? Beides darf stehen.",
+          "hinweis": "Ehrlich ist besser als schön. Auch „Ich bin immer noch sauer“ darf hier stehen.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Leid tut mir: …",
+            "Nicht leid tut mir: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie könntest du es wieder gut machen? Schreib zu jedem der vier Wege eine Idee.",
+          "hinweis": "Beispiel Tiago: Reden – „Das war nicht okay von mir. Wie geht es dir damit?“ Reparieren – den Bügel kleben oder beim Ersetzen helfen. Zeit lassen – Mehmet erst am nächsten Tag ansprechen. Wege dürfen leer bleiben.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Reden: Das könnte ich sagen oder fragen …",
+            "Reparieren: Das könnte ich in Ordnung bringen …",
+            "Helfen: Dabei könnte ich anpacken …",
+            "Zeit lassen: So gebe ich Raum …"
+          ],
+          "spalten": 2,
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gestalte ein Zeichen für die andere Person und sag deinen wichtigsten Satz einmal laut. Kreuz an, wie er sich anfühlt.",
+          "hinweis": "Mal eine Karte oder ein Symbol, oder schreib den Satz schön auf – nur für dich oder zum Geben. Ein Satz, der trägt: sagen, was war, ohne „aber“; sagen, wie es für die andere Person gewesen sein könnte; anbieten, was du tun kannst.",
+          "symbole": [
+            "malen",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mein Zeichen (Vorderseite einer Karte)",
+          "hoehe": 4,
+          "zeichnen": true
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Stimme leise",
+              "Stimme laut"
+            ],
+            [
+              "Satz holprig",
+              "Satz glatt"
+            ],
+            [
+              "Körper steif",
+              "Körper locker"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Die Tat ist nicht die Person",
+          "text": "Die Tat war nicht okay – das macht dich nicht zu einem schlechten Menschen. Wer sich nur schämt, will oft verschwinden. Wer die Tat anschaut, kann etwas tun. Und die andere Person darf Nein sagen oder Zeit brauchen."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Eine Entschuldigung lässt sich nicht erzwingen, bei dir nicht und bei anderen nicht. Niemand sammelt das Blatt ein. Wenn dich die Situation sehr beschäftigt, sprich mit einer Person, der du vertraust."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen betrachten eine Situation, in der sie jemanden verletzt oder etwas kaputt gemacht haben, versetzen sich in die andere Person und sammeln freiwillig Wege der Wiedergutmachung.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: Papier zerknüllen, glattstreichen, Falten ertasten. „Was ist wieder gut – und was bleibt sichtbar?“",
+          "Erklären (5 Min.): Beispiel Tiago und Mehmet vorlesen; vier Wege: reden, reparieren, helfen, Zeit lassen. Die Tat war nicht okay, die Person ist nicht schlecht.",
+          "Einzelarbeit (20 Min.): Aufgaben 1 bis 4, Personen-Karte ausmalen, Wege in die Blasen. Ruhige Musik. Wem das zu nah ist, arbeitet mit Tiago und Mehmet.",
+          "Zeichen und Satz (8 Min.): Aufgabe 5: Zeichen gestalten, Satz einmal laut sagen (auch leise oder zu zweit), Regler.",
+          "Austausch (4 Min., freiwillig): Zu zweit: „Welcher Weg wäre für dich der leichteste?“ Im Plenum nur Wege.",
+          "Abschluss (3 Min.): Tipp-Kasten lesen, „Das nehme ich mit“."
+        ],
+        "hintergrund": "Das Blatt folgt der wiederherstellenden Praxis: Im Mittelpunkt steht nicht die Strafe, sondern die Frage, wer wie betroffen ist, was diese Person braucht und wer dazu beitragen kann (Zehr, 2002). Verantwortung gilt der Tat, nicht der ganzen Person: Wer sich auf die Tat bezieht (Schuld), zeigt eher Mitgefühl und Bereitschaft zu handeln; wer sich als ganzer Mensch verurteilt (Scham), zieht sich eher zurück oder wehrt ab (Tangney & Dearing, 2002). Darum bleibt Wiedergutmachung freiwillig, und Zeit lassen ist ein gleichwertiger Weg.",
+        "quellen": [
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+          "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Tiago und Mehmet bearbeiten; Sätze mündlich zu zweit; zwei Wege wählen.",
+          "schwerer": "Dieselbe Situation aus Sicht der anderen Person schreiben; einen Schritt in der nächsten Woche umsetzen."
+        },
+        "impulse": [
+          "Was braucht ein verletzter Mensch zuerst?",
+          "Woran erkennst du eine echte Entschuldigung?",
+          "Tat oder Person: Was ist der Unterschied?"
+        ],
+        "tipps": [
+          "Die vier Wege als Plakat aufhängen.",
+          "Bei „aber“ fragen: „Was sagt der Satz ohne ‚aber‘?“"
+        ],
+        "achtung": "Scham ist möglich: keine realen Vorfälle besprechen, Entschuldigung nie erzwingen. Bei Selbstabwertung, Mobbing, Gewalt oder Selbstverletzung nicht im Plenum vertiefen: Einzelgespräch, SePAS oder Vertrauensperson, Responsable; bei Gefährdung sofort handeln (112, KJT 116 111).",
+        "material": "Buntstifte, Papier, ruhige Musik"
+      }
+    },
+    "fr": {
+      "titel": "Réparer",
+      "untertitel": "Tu as blessé quelqu’un ou cassé quelque chose – et maintenant ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Presque tout le monde a déjà blessé quelqu’un ou cassé quelque chose – par une phrase, un geste, parfois sans le vouloir. Ensuite, il reste souvent un malaise, et on ne sait pas quoi faire. Aujourd’hui, tu regardes une telle situation tranquillement – sans obligation de t’excuser et sans bonne ou mauvaise réponse."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une situation. Coche de quoi il s’agissait.",
+          "hinweis": "Tu as blessé quelqu’un ou cassé quelque chose. Prends quelque chose de petit ou de moyen, rien qui te bouleverse. Ou prends Tiago : pendant une dispute, il fait tomber le casque de Mehmet de la table, l’arceau casse. Mehmet ne dit plus rien.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "J’ai dit ou écrit quelque chose de blessant.",
+            "J’ai ridiculisé ou exclu quelqu’un.",
+            "J’ai cassé quelque chose qui appartenait à quelqu’un.",
+            "Je n’ai pas tenu une promesse ou un accord.",
+            "J’ai répété quelque chose qui devait rester secret.",
+            "J’ai été trop brusque physiquement."
+          ],
+          "spalten": 2,
+          "frei": 1
+        },
+        {
+          "art": "feld",
+          "label": "Que s’est-il passé ? Deux, trois phrases, sans nom",
+          "hoehe": 3,
+          "beispiel": "Pendant la dispute, j’ai balayé le casque de Mehmet de la table. L’arceau s’est cassé. (Tiago)"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment va l’autre personne ? Mets-toi à sa place. Remplis la carte et colorie la silhouette selon son humeur.",
+          "hinweis": "Tu peux deviner. Exemple Mehmet : il voit l’arceau cassé, ressent de la colère et de la déception, et a peut-être besoin de distance et d’un mot sincère.",
+          "symbole": [
+            "nachdenken",
+            "malen"
+          ]
+        },
+        {
+          "art": "personen",
+          "felder": [
+            "Qui est-ce ? (initiale ou rôle)",
+            "Ce que la personne a vu et entendu",
+            "Ce qu’elle a sans doute ressenti",
+            "Ce dont elle a peut-être besoin"
+          ],
+          "anzahl": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce que tu regrettes – et qu’est-ce que tu ne regrettes pas ? Les deux ont leur place.",
+          "hinweis": "Mieux vaut être honnête que joli. Même « Je suis toujours en colère » a sa place ici.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce que je regrette : …",
+            "Ce que je ne regrette pas : …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment pourrais-tu réparer ? Note une idée pour chacune des quatre voies.",
+          "hinweis": "Exemple Tiago : parler – « Ce n’était pas OK de ma part. Comment tu te sens ? » Réparer – coller l’arceau ou aider à le remplacer. Laisser du temps – ne lui parler que le lendemain. Des voies peuvent rester vides.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "items": [
+            "Parler : ce que je pourrais dire ou demander …",
+            "Réparer : ce que je pourrais remettre en ordre …",
+            "Aider : ce que je pourrais prendre en charge …",
+            "Laisser du temps : comment je laisse de l’espace …"
+          ],
+          "spalten": 2,
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Crée un signe pour l’autre personne et dis ta phrase la plus importante à voix haute, une fois. Coche ce que tu ressens.",
+          "hinweis": "Dessine une carte ou un symbole, ou écris la phrase joliment – pour toi ou pour la donner. Une phrase qui porte : dire ce qui s’est passé, sans « mais » ; dire comment cela a pu être pour l’autre ; proposer ce que tu peux faire.",
+          "symbole": [
+            "malen",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mon signe (recto d’une carte)",
+          "hoehe": 4,
+          "zeichnen": true
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "Voix basse",
+              "Voix forte"
+            ],
+            [
+              "Phrase hésitante",
+              "Phrase fluide"
+            ],
+            [
+              "Corps raide",
+              "Corps souple"
+            ]
+          ],
+          "stufen": 5
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "L’acte n’est pas la personne",
+          "text": "Cet acte n’était pas OK – cela ne fait pas de toi une mauvaise personne. Qui ne ressent que de la honte veut souvent disparaître. Qui regarde l’acte peut agir. Et l’autre personne a le droit de dire non ou de prendre du temps."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "On ne peut pas forcer des excuses, ni chez toi ni chez les autres. Personne ne ramasse la feuille. Si la situation te préoccupe beaucoup, parles-en à une personne en qui tu as confiance."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes regardent une situation où ils ont blessé quelqu’un ou cassé quelque chose, se mettent à la place de l’autre et rassemblent librement des voies de réparation.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : froisser du papier, le lisser, sentir les plis. « Qu’est-ce qui est de nouveau en ordre – et qu’est-ce qui reste visible ? »",
+          "Expliquer (5 min) : lire l’exemple de Tiago et Mehmet ; quatre voies : parler, réparer, aider, laisser du temps. L’acte n’était pas OK, la personne n’est pas mauvaise.",
+          "Travail individuel (20 min) : tâches 1 à 4, colorier la carte de la personne, voies dans les bulles. Musique calme. Qui est trop proche travaille avec Tiago et Mehmet.",
+          "Signe et phrase (8 min) : tâche 5 : créer le signe, dire la phrase une fois (aussi à voix basse ou à deux), curseurs.",
+          "Échange (4 min), facultatif : à deux : « Quelle voie serait la plus facile pour toi ? » En plénière, seulement les voies.",
+          "Clôture (3 min) : lire l’encadré conseil, « Ce que j’emporte »."
+        ],
+        "hintergrund": "La feuille suit la pratique restaurative : au centre, pas la sanction, mais les questions de savoir qui est touché et comment, ce dont cette personne a besoin et qui peut y contribuer (Zehr, 2002). La responsabilité porte sur l’acte, pas sur toute la personne : qui se réfère à l’acte (culpabilité) montre plutôt de l’empathie et l’envie d’agir ; qui se condamne en entier (honte) se retire ou se défend plutôt (Tangney et Dearing, 2002). C’est pourquoi la réparation reste libre, et laisser du temps est une voie à part entière.",
+        "quellen": [
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+          "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement Tiago et Mehmet ; phrases à l’oral, à deux ; choisir deux voies.",
+          "schwerer": "Écrire la même situation du point de vue de l’autre ; mettre en œuvre une étape la semaine suivante."
+        },
+        "impulse": [
+          "De quoi une personne blessée a-t-elle besoin d’abord ?",
+          "À quoi reconnais-tu des excuses sincères ?",
+          "Acte ou personne : quelle différence ?"
+        ],
+        "tipps": [
+          "Afficher les quatre voies.",
+          "Devant un « mais », demander : « Que dit la phrase sans “mais” ? »"
+        ],
+        "achtung": "La honte est possible : pas d’incidents réels, jamais d’excuses forcées. Dévalorisation, harcèlement, violence ou automutilation : pas d’approfondissement en plénière ; entretien individuel, SePAS ou personne de confiance, responsable ; en cas de danger, agir tout de suite (112, KJT 116 111).",
+        "material": "Crayons de couleur, papier, musique calme"
+      }
+    }
+  },
+  {
+    "id": "tg-was-hinter-meinem-verhalten-steckt",
+    "bereich": "verhalten",
+    "thema": "selbstbeobachtung",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "K-26",
+      "K-29",
+      "SOZ-40",
+      "V-33"
+    ],
+    "schlagworte": [
+      "Selbstbeobachtung",
+      "Auslöser",
+      "Gedanken",
+      "Gefühle",
+      "Bedürfnisse",
+      "Verhalten verstehen",
+      "Muster"
+    ],
+    "verwandt": [
+      "t3-abc-modell",
+      "selbstcheck",
+      "beduerfnis-glaeser",
+      "t4-was-ich-brauche"
+    ],
+    "bild": "icon:search",
+    "de": {
+      "titel": "Was steckt dahinter?",
+      "untertitel": "Eine Situation, die sich wiederholt – und was du dabei eigentlich brauchst",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Hinter fast jedem Verhalten steckt ein Grund, auch wenn man ihn in der Sekunde nicht sieht. Wer ihn kennt, versteht sich besser – ohne sich zu verurteilen. Heute nimmst du eine Situation auseinander, die sich bei dir wiederholt, und schaust, was du darin brauchst – es gibt kein Richtig oder Falsch."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Situation, die sich bei dir wiederholt. Kreuz an oder schreib eine eigene.",
+          "hinweis": "Nimm eine Situation, die dich nur ein bisschen kribbeln lässt. Oder arbeite mit Pol: Die Lehrerin nennt vor allen seine Fehler, er sagt „Das ist unfair“ und macht nicht mehr mit.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Ich sage in der Gruppe nichts, obwohl ich etwas sagen möchte.",
+            "Ich werde laut, wenn etwas ungerecht wirkt.",
+            "Ich schiebe eine Aufgabe weg und scrolle oder zocke stattdessen.",
+            "Ich ziehe mich zurück, wenn andere über mich lachen.",
+            "Ich widerspreche sofort, wenn mir jemand sagt, was ich tun soll.",
+            "Ich mache Witze, wenn es ernst wird."
+          ],
+          "spalten": 2,
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bau die Kette: Schreib Stichwörter in jedes Band, mal den Rand in einer passenden Farbe.",
+          "hinweis": "Beispiel Pol: Auslöser – die Lehrerin nennt vor allen seine Fehler. Gedanke – „Alle halten mich für dumm.“ Gefühl – heiß im Gesicht, Scham. Ich tue – „Das ist unfair“, macht nicht mehr mit. Danach – sie wird streng.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": [
+            "1  Auslöser: Was ist kurz vorher passiert?",
+            "2  Gedanke: Was ging mir durch den Kopf?",
+            "3  Gefühl: Was habe ich gespürt, wo im Körper?",
+            "4  Ich tue: Was habe ich gesagt oder gemacht?",
+            "5  Danach: Was kam daraus – für mich, für andere?"
+          ],
+          "spalten": 1,
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welches Bedürfnis steckt vielleicht dahinter? Mal die Gläser so voll, wie sie in der Situation waren.",
+          "hinweis": "Der Strich zeigt, wie voll es sein soll. Der größte Abstand ist ein Hinweis, kein Beweis (bei Pol: Anerkennung). Das leere Glas ist für ein Bedürfnis, das hier fehlt.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Ruhe",
+            "Anerkennung",
+            "Gerechtigkeit",
+            "Dazugehören",
+            "Kontrolle"
+          ],
+          "leer": 1,
+          "spalten": 6,
+          "legende": [
+            "Strich: so voll soll es sein",
+            "Ausmalen: so voll war es dort"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am leersten war: …",
+            "Mit meinem Verhalten wollte ich eigentlich: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such einen anderen Weg zum selben Bedürfnis. Wie könnte er klingen oder aussehen?",
+          "hinweis": "Der neue Weg muss dir nicht gefallen, nur möglich sein. Das Beispiel zeigt, wie es gemeint ist.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Bedürfnis",
+            "Anderer Weg: so könnte es klingen",
+            "Was das bringen könnte"
+          ],
+          "zeilen": 1,
+          "hoehe": 2,
+          "breiten": [
+            0.9,
+            1.7,
+            1.4
+          ],
+          "beispiel": [
+            "Anerkennung",
+            "Nach der Stunde fragen: „Können Sie mir kurz zeigen, was ich falsch gemacht habe?“",
+            "Er wird ernst genommen und lernt etwas."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Probier den neuen Weg zu zweit aus: Du sprichst, dein Gegenüber antwortet als die andere Person. Dann tauscht ihr.",
+          "hinweis": "Allein? Sag den Satz laut und antworte selbst als die andere Person. Kreuz an, wie es war.",
+          "symbole": [
+            "sprechen",
+            "partner"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "fremd",
+              "vertraut"
+            ],
+            [
+              "schwer",
+              "leicht"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Das Bedürfnis ist in Ordnung – der Weg ist wählbar",
+          "text": "Fast jedes Bedürfnis ist okay: Ruhe, Anerkennung, Gerechtigkeit und Dazugehören brauchen alle. Schwierig wird es meist beim Weg dorthin. Du musst dein Verhalten nicht gut finden, um dein Bedürfnis ernst zu nehmen."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Niemand sammelt das Blatt ein. Wenn dich eine Situation sehr belastet, sprich mit einer Person, der du vertraust. In einigen Wochen kannst du das Blatt mit einer neuen Situation wiederholen."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen zerlegen eine wiederkehrende Situation in ihre Glieder, erkennen ein mögliches Bedürfnis dahinter und finden einen zweiten Weg zum selben Bedürfnis.",
+        "ablauf": [
+          "Einstieg (5 Min.): Sinnes-Impuls: eine Kette aus Büroklammern herumgeben, ein Glied lösen. „Was passiert mit der Kette?“ Verhalten hat eine Vorgeschichte.",
+          "Erklären (5 Min.): Beispiel Pol an der Tafel in fünf Farben aufbauen. Das Bedürfnis wird nur vermutet, nie festgelegt.",
+          "Einzelarbeit (20 Min.): Situation wählen (oder Pol), Kette in den Bändern füllen und umranden, Gläser ausmalen, anderen Weg eintragen. Ruhige Musik.",
+          "Zu zweit (10 Min., freiwillig): Rollentausch: neuen Satz laut sprechen, Gegenüber antwortet als die andere Person, dann tauschen. Wer nicht mag, bearbeitet nur das Beispiel.",
+          "Abschluss (5 Min.): Regler, Tipp-Kasten, „Das nehme ich mit“. Blatt behalten, in einigen Wochen mit neuer Situation wiederholen."
+        ],
+        "hintergrund": "Die Kette Situation – Gedanke – Gefühl – Verhalten – Folge ist ein Grundmodell der kognitiven Verhaltenstherapie: Derselbe Auslöser führt je nach Gedanke zu anderen Gefühlen und Handlungen (Stallard, 2019). Die Gläser beruhen auf der Idee, dass Verhalten oft ein Versuch ist, ein Bedürfnis zu erfüllen oder zu schützen (Rosenberg, 2001); der Blick darauf öffnet Alternativen, ohne das Verhalten zu rechtfertigen. Das Blatt beschreibt, es bewertet nicht: Die Jugendlichen vermuten ein Bedürfnis, ihnen wird keines zugeschrieben.",
+        "quellen": [
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Pol durchgehen; drei Bänder füllen; Gläser mündlich zu zweit.",
+          "schwerer": "Zweite Situation vergleichen: Kehrt dasselbe Bedürfnis wieder? Zwei neue Wege prüfen."
+        },
+        "impulse": [
+          "Woran merkst du, dass ein Muster anläuft?",
+          "Welches Bedürfnis kommt bei dir oft zu kurz?",
+          "Was verändert der Blick auf das Bedürfnis?"
+        ],
+        "tipps": [
+          "Bänderfarben als Kürzel nutzen: „In welchem Glied ist Spielraum?“",
+          "Rollentausch nur mit erfundenen Personen oder dem Beispiel."
+        ],
+        "achtung": "Muster können mit Belastungen oder Mobbing zusammenhängen: nichts verlangen, Bedürfnisse nur vermuten. Bei Aggression, Rückzug oder Selbstverletzung nicht im Plenum nachfragen: Einzelgespräch, SePAS oder Vertrauensperson, Responsable; bei Gefährdung sofort handeln (112, KJT 116 111).",
+        "material": "Büroklammern, Buntstifte, ruhige Musik, Tafel"
+      }
+    },
+    "fr": {
+      "titel": "Qu’est-ce qui se cache derrière ?",
+      "untertitel": "Une situation qui se répète – et ce dont tu as vraiment besoin",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Derrière presque chaque comportement se cache une raison, même si on ne la voit pas sur le moment. Quand on la connaît, on se comprend mieux – sans se condamner. Aujourd’hui, tu décortiques une situation qui se répète chez toi et tu regardes ce dont tu as besoin – il n’y a ni bonne ni mauvaise réponse."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis une situation qui se répète chez toi. Coche ou écris la tienne.",
+          "hinweis": "Prends-en une qui te fait juste un peu frissonner. Ou travaille avec Pol : la prof énumère ses erreurs devant tous, il dit « C’est injuste » et ne participe plus.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Je ne dis rien dans le groupe, alors que j’aimerais parler.",
+            "Je hausse le ton quand quelque chose me paraît injuste.",
+            "Je repousse une tâche et je scrolle ou je joue à la place.",
+            "Je me replie quand d’autres rient de moi.",
+            "Je contredis tout de suite quand on me dit quoi faire.",
+            "Je fais des blagues quand ça devient sérieux."
+          ],
+          "spalten": 2,
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Construis la chaîne : mots-clés dans chaque bande, bord colorié d’une couleur qui convient.",
+          "hinweis": "Exemple Pol : déclencheur – la prof énumère ses erreurs devant tous. Pensée – « Tout le monde me trouve nul. » Émotion – visage chaud, honte. Je fais – « C’est injuste », ne participe plus. Ensuite – elle devient sévère.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "band",
+          "items": [
+            "1  Déclencheur : que s’est-il passé juste avant ?",
+            "2  Pensée : qu’est-ce qui m’est passé par la tête ?",
+            "3  Émotion : qu’ai-je ressenti, où dans le corps ?",
+            "4  Je fais : qu’ai-je dit ou fait ?",
+            "5  Ensuite : qu’est-ce que ça a donné ?"
+          ],
+          "spalten": 1,
+          "hoehe": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel besoin se cache peut-être derrière ? Colorie les verres : à quel point ils étaient pleins dans la situation.",
+          "hinweis": "Le trait montre à quel point il devrait être plein. Le plus grand écart est un indice, pas une preuve (pour Pol : la reconnaissance). Le verre vide est pour un besoin qui manque ici.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Calme",
+            "Reconnaissance",
+            "Justice",
+            "Appartenance",
+            "Contrôle"
+          ],
+          "leer": 1,
+          "spalten": 6,
+          "legende": [
+            "Trait : à quel point il devrait être plein",
+            "Colorier : à quel point il l’était alors"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Le plus vide était : …",
+            "Par mon comportement, je voulais en fait : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cherche une autre voie vers le même besoin. À quoi pourrait-elle ressembler ?",
+          "hinweis": "La nouvelle voie n’a pas besoin de te plaire, seulement d’être possible. L’exemple montre comment faire.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Besoin",
+            "Autre voie : comment ça pourrait sonner",
+            "Ce que ça pourrait apporter"
+          ],
+          "zeilen": 1,
+          "hoehe": 2,
+          "breiten": [
+            0.9,
+            1.7,
+            1.4
+          ],
+          "beispiel": [
+            "Reconnaissance",
+            "Demander après le cours : « Pouvez-vous me montrer rapidement ce que j’ai raté ? »",
+            "Il est pris au sérieux et apprend quelque chose."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Essaie la nouvelle voie à deux : tu parles, l’autre répond dans le rôle de l’autre personne. Puis vous échangez.",
+          "hinweis": "Seul·e ? Dis la phrase à voix haute et réponds toi-même en tant que l’autre personne. Coche comment c’était.",
+          "symbole": [
+            "sprechen",
+            "partner"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "étrange",
+              "familier"
+            ],
+            [
+              "difficile",
+              "facile"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Le besoin est légitime – la voie se choisit",
+          "text": "Presque tous les besoins sont légitimes : calme, reconnaissance, justice et appartenance, tout le monde en a besoin. Le plus difficile est souvent la voie pour y arriver. Tu n’as pas à trouver ton comportement bien pour prendre ton besoin au sérieux."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Personne ne ramasse la feuille. Si une situation te pèse beaucoup, parles-en à une personne en qui tu as confiance. Dans quelques semaines, tu peux la refaire avec une autre situation."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes décomposent une situation qui se répète en ses maillons, reconnaissent un besoin possible derrière et trouvent une seconde voie vers le même besoin.",
+        "ablauf": [
+          "Entrée en matière (5 min) : impulsion sensorielle : faire circuler une chaîne de trombones, détacher un maillon. « Que devient la chaîne ? » Un comportement a une histoire.",
+          "Expliquer (5 min) : construire l’exemple de Pol au tableau en cinq couleurs. Le besoin est une hypothèse, jamais une certitude.",
+          "Travail individuel (20 min) : choisir la situation (ou Pol), remplir la chaîne dans les bandes et encadrer, colorier les verres, noter une autre voie. Musique calme.",
+          "À deux (10 min), facultatif : jeu de rôles inversé : dire la nouvelle phrase, l’autre répond en tant que l’autre personne, puis on échange. Qui ne veut pas travaille seulement l’exemple.",
+          "Clôture (5 min) : curseurs, encadré conseil, « Ce que j’emporte ». Garder la feuille, la refaire dans quelques semaines avec une autre situation."
+        ],
+        "hintergrund": "La chaîne situation – pensée – émotion – comportement – conséquence est un modèle de base de la thérapie cognitivo-comportementale : un même déclencheur mène à d’autres émotions et actions selon la pensée (Stallard, 2019). Les verres reposent sur l’idée que le comportement est souvent une tentative de satisfaire ou de protéger un besoin (Rosenberg, 2001) ; le regarder ouvre des alternatives, sans justifier le comportement. La feuille décrit sans évaluer : les jeunes supposent un besoin, on ne leur en attribue pas.",
+        "quellen": [
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "differenzierung": {
+          "leichter": "Parcourir seulement Pol ; remplir trois bandes ; verres à l’oral, à deux.",
+          "schwerer": "Comparer une seconde situation : le même besoin revient-il ? Tester deux nouvelles voies."
+        },
+        "impulse": [
+          "À quoi remarques-tu qu’un schéma démarre ?",
+          "Quel besoin est souvent laissé de côté chez toi ?",
+          "Que change le regard sur le besoin ?"
+        ],
+        "tipps": [
+          "Couleurs des bandes comme mots-clés : « Dans quel maillon as-tu de la marge ? »",
+          "Jeu de rôles seulement avec des personnes inventées ou l’exemple."
+        ],
+        "achtung": "Des schémas peuvent être liés à des difficultés ou au harcèlement : ne rien exiger, formuler des hypothèses. Agressivité, repli ou automutilation : pas de questions en plénière ; entretien individuel, SePAS ou personne de confiance, responsable ; en cas de danger, agir tout de suite (112, KJT 116 111).",
+        "material": "Trombones, crayons de couleur, musique calme, tableau"
+      }
+    }
+  }
+]
