@@ -118,7 +118,11 @@
         {
           "art": "aufgabe",
           "text": "Zeichne die Kurve ein: Janas Kurve in Szene 1, Bens Kurve in Szene 2. Wie hoch geht sie, wie schnell steigt sie, was lässt sie fallen?",
-          "hinweis": "Szene 1 (durchgezogen): Jana wird im Training ausgewechselt – ein Mitspieler lacht – der Trainer sagt nichts – Jana sitzt auf der Bank. Szene 2 (gestrichelt): Im Gruppenchat schreibt jemand über Ben „Typisch, der kann’s nicht“ – drei andere lachen mit – niemand widerspricht – Ben legt das Handy weg."
+          "hinweis": "Szene 1 (durchgezogen): Jana wird im Training ausgewechselt – ein Mitspieler lacht – der Trainer sagt nichts – Jana sitzt auf der Bank. Szene 2 (gestrichelt): Im Gruppenchat schreibt jemand über Ben „Typisch, der kann’s nicht“ – drei andere lachen mit – niemand widerspricht – Ben legt das Handy weg.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "kurve",
@@ -140,7 +144,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Merken: Wo auf der Kurve steht jede der vier Personen? Kreuz an."
+          "text": "Merken: Wo auf der Kurve steht jede der vier Personen? Kreuz an.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -158,7 +166,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deine Kurve – nur, wenn du magst: echt oder erfunden, groß oder klein."
+          "text": "Deine Kurve – nur, wenn du magst: echt oder erfunden, groß oder klein.",
+          "symbole": [
+            "nachdenken"
+          ]
         },
         {
           "art": "satzanfaenge",
@@ -167,6 +178,12 @@
             "So hoch ging die Kurve (0–10), und das hat sie fallen lassen:"
           ],
           "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ärger ist ein Signal",
+          "text": "Er zeigt dir, dass dir etwas wichtig ist – und er fällt wieder ab. Du entscheidest, was du aufschreibst."
         },
         {
           "art": "aufgabe",
@@ -259,7 +276,11 @@
         {
           "art": "aufgabe",
           "text": "Dessine la courbe : celle de Jana dans la scène 1, celle de Ben dans la scène 2. Jusqu’où monte-t-elle, à quelle vitesse, et qu’est-ce qui la fait redescendre ?",
-          "hinweis": "Scène 1 (trait plein) : Jana est remplacée à l’entraînement – un coéquipier rit – l’entraîneur ne dit rien – Jana s’assoit sur le banc. Scène 2 (pointillés) : dans le chat de groupe, quelqu’un écrit sur Ben « Classique, il n’y arrive pas » – trois autres rient – personne ne le défend – Ben pose son téléphone."
+          "hinweis": "Scène 1 (trait plein) : Jana est remplacée à l’entraînement – un coéquipier rit – l’entraîneur ne dit rien – Jana s’assoit sur le banc. Scène 2 (pointillés) : dans le chat de groupe, quelqu’un écrit sur Ben « Classique, il n’y arrive pas » – trois autres rient – personne ne le défend – Ben pose son téléphone.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "kurve",
@@ -281,7 +302,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Repérer : où en est chaque personne sur la courbe ? Coche."
+          "text": "Repérer : où en est chaque personne sur la courbe ? Coche.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -299,7 +324,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta courbe – seulement si tu veux : vécue ou inventée, grande ou petite."
+          "text": "Ta courbe – seulement si tu veux : vécue ou inventée, grande ou petite.",
+          "symbole": [
+            "nachdenken"
+          ]
         },
         {
           "art": "satzanfaenge",
@@ -308,6 +336,12 @@
             "Jusqu’où la courbe est montée (0–10), et ce qui l’a fait redescendre :"
           ],
           "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "La colère est un signal",
+          "text": "Elle te montre que quelque chose compte pour toi – et elle retombe. Tu décides de ce que tu écris."
         },
         {
           "art": "aufgabe",
@@ -370,7 +404,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft fasst beide Szenen kurz zusammen (sie stehen auf dem Blatt), beide tragen die Kurve ein – durchgezogen für Janas Szene, gestrichelt für Bens Chat – und lesen sie ab: Wie hoch, wie schnell, was lässt sie fallen? In Aufgabe 2 kreuzt der oder die Jugendliche an, wo jede der vier Personen auf der Kurve steht, und sagt, woran er oder sie es erkennt. Aufgabe 3 ist freiwillig; eigene Erlebnisse gibt es nur, wenn er oder sie mag. Das Modell und der Auftrag gehören zum Mitnehmen: Die Stufe von heute wird farbig ausgemalt, der Auftrag geht mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft fasst beide Szenen kurz zusammen (sie stehen auf dem Blatt), beide tragen die Kurve ein – durchgezogen für Janas Szene, gestrichelt für Bens Chat – und lesen sie ab: Wie hoch, wie schnell, was lässt sie fallen? In Aufgabe 2 kreuzt der oder die Jugendliche an, wo jede der vier Personen auf der Kurve steht, und sagt, woran er oder sie es erkennt. Bei Aufgabe 2 zeigt er oder sie zuerst mit der Hand, wie hoch die Kurve steht (Tischkante = 0, Kopfhöhe = 10). Aufgabe 3 ist freiwillig; eigene Erlebnisse gibt es nur, wenn er oder sie mag. Das Modell und der Auftrag gehören zum Mitnehmen: Die Stufe von heute wird farbig ausgemalt, der Auftrag geht mit.",
           "sagen": [
             "Woran erkennst du, wo die Person auf der Kurve steht?",
             "Welche Zahl gibst du Szene 1 – und welche Szene 2?"
@@ -378,7 +412,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche die Antworten, und die Fachkraft schreibt mit; in der Kurve genügen drei Punkte. Ist die Zeit knapp, genügen die Aufgaben 1 und 2; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte résume les deux scènes (elles figurent sur la fiche), les deux reportent la courbe – trait plein pour la scène de Jana, pointillés pour le chat de Ben – et la lisent : jusqu’où, à quelle vitesse, qu’est-ce qui la fait redescendre ? À l’exercice 2, le ou la jeune coche où chaque personne se trouve sur la courbe et dit à quoi il ou elle le reconnaît. L’exercice 3 est facultatif ; une expérience personnelle n’est donnée que si le ou la jeune le souhaite. Le modèle et la tâche sont à emporter : l’étape du jour est coloriée, la tâche part avec le ou la jeune.",
+          "text": "Exercice 1 ensemble : l’adulte résume les deux scènes (elles figurent sur la fiche), les deux reportent la courbe – trait plein pour la scène de Jana, pointillés pour le chat de Ben – et la lisent : jusqu’où, à quelle vitesse, qu’est-ce qui la fait redescendre ? À l’exercice 2, le ou la jeune coche où chaque personne se trouve sur la courbe et dit à quoi il ou elle le reconnaît. À l’exercice 2, il ou elle montre d’abord de la main à quelle hauteur est la courbe (bord de la table = 0, hauteur de la tête = 10). L’exercice 3 est facultatif ; une expérience personnelle n’est donnée que si le ou la jeune le souhaite. Le modèle et la tâche sont à emporter : l’étape du jour est coloriée, la tâche part avec le ou la jeune.",
           "sagen": [
             "À quoi tu vois où la personne en est sur la courbe ?",
             "Quel chiffre donnes-tu à la scène 1 – et à la scène 2 ?"
@@ -521,7 +555,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Lies die Szene und zeichne Janas Kurve ein: Wie hoch geht sie, wie schnell steigt sie, was lässt sie fallen?"
+          "text": "Lies die Szene und zeichne Janas Kurve ein: Wie hoch geht sie, wie schnell steigt sie, was lässt sie fallen?",
+          "symbole": [
+            "lesen",
+            "malen"
+          ]
         },
         {
           "art": "comic",
@@ -568,7 +606,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Merken: Wo auf der Kurve steht jede der vier Personen? Kreuz an."
+          "text": "Merken: Wo auf der Kurve steht jede der vier Personen? Kreuz an.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -589,7 +631,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deine Kurve – nur, wenn du magst: echt oder erfunden, groß oder klein."
+          "text": "Deine Kurve – nur, wenn du magst: echt oder erfunden, groß oder klein.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "skala",
@@ -607,6 +652,12 @@
             "langsam"
           ],
           "spalten": 3
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ärger ist ein Signal",
+          "text": "Er zeigt dir, dass dir etwas wichtig ist – und er fällt wieder ab. Du entscheidest, was du ankreuzt."
         },
         {
           "art": "aufgabe",
@@ -687,7 +738,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Lis la scène et dessine la courbe de Jana : jusqu’où monte-t-elle, à quelle vitesse, et qu’est-ce qui la fait redescendre ?"
+          "text": "Lis la scène et dessine la courbe de Jana : jusqu’où monte-t-elle, à quelle vitesse, et qu’est-ce qui la fait redescendre ?",
+          "symbole": [
+            "lesen",
+            "malen"
+          ]
         },
         {
           "art": "comic",
@@ -734,7 +789,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Repérer : où en est chaque personne sur la courbe ? Coche."
+          "text": "Repérer : où en est chaque personne sur la courbe ? Coche.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -755,7 +814,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta courbe – seulement si tu veux : vécue ou inventée, grande ou petite."
+          "text": "Ta courbe – seulement si tu veux : vécue ou inventée, grande ou petite.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "skala",
@@ -773,6 +835,12 @@
             "lentement"
           ],
           "spalten": 3
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "La colère est un signal",
+          "text": "Elle te montre que quelque chose compte pour toi – et elle retombe. Tu décides de ce que tu coches."
         },
         {
           "art": "aufgabe",
@@ -824,7 +892,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die Szene zu den Bildern vor, der oder die Jugendliche zeichnet Janas Kurve ein und liest sie ab: Wie hoch, wie schnell, was lässt sie fallen? In Aufgabe 2 kreuzt er oder sie an, wo jede der vier Personen auf der Kurve steht, und sagt, woran er oder sie es erkennt. Aufgabe 3 ist freiwillig und besteht aus Kreuzen auf der Skala und bei der Geschwindigkeit. Das Modell und der Auftrag gehören zum Mitnehmen: Die Stufe von heute wird farbig ausgemalt, der Auftrag geht mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die Szene zu den Bildern vor, der oder die Jugendliche zeichnet Janas Kurve ein und liest sie ab: Wie hoch, wie schnell, was lässt sie fallen? In Aufgabe 2 kreuzt er oder sie an, wo jede der vier Personen auf der Kurve steht, und sagt, woran er oder sie es erkennt. Bei Aufgabe 2 zeigt er oder sie zuerst mit der Hand, wie hoch die Kurve steht (Tischkante = 0, Kopfhöhe = 10). Aufgabe 3 ist freiwillig und besteht aus Kreuzen auf der Skala und bei der Geschwindigkeit. Das Modell und der Auftrag gehören zum Mitnehmen: Die Stufe von heute wird farbig ausgemalt, der Auftrag geht mit.",
           "sagen": [
             "Woran erkennst du, wo die Person auf der Kurve steht?",
             "Wie hoch geht Janas Kurve – und was lässt sie fallen?"
@@ -832,7 +900,7 @@
           "wennEsKippt": "Fällt das Zeichnen schwer, genügen drei Punkte (Start, Gipfel, Ende), die die Fachkraft verbindet. Auch die Antworten dürfen mündlich kommen. Ist die Zeit knapp, genügen die Aufgaben 1 und 2; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit la scène des images, le ou la jeune dessine la courbe de Jana et la lit : jusqu’où, à quelle vitesse, qu’est-ce qui la fait redescendre ? À l’exercice 2, il ou elle coche où chaque personne se trouve sur la courbe et dit à quoi il ou elle le reconnaît. L’exercice 3 est facultatif et se fait avec des croix sur l’échelle et pour la vitesse. Le modèle et la tâche sont à emporter : l’étape du jour est coloriée, la tâche part avec le ou la jeune.",
+          "text": "Exercice 1 ensemble : l’adulte lit la scène des images, le ou la jeune dessine la courbe de Jana et la lit : jusqu’où, à quelle vitesse, qu’est-ce qui la fait redescendre ? À l’exercice 2, il ou elle coche où chaque personne se trouve sur la courbe et dit à quoi il ou elle le reconnaît. À l’exercice 2, il ou elle montre d’abord de la main à quelle hauteur est la courbe (bord de la table = 0, hauteur de la tête = 10). L’exercice 3 est facultatif et se fait avec des croix sur l’échelle et pour la vitesse. Le modèle et la tâche sont à emporter : l’étape du jour est coloriée, la tâche part avec le ou la jeune.",
           "sagen": [
             "À quoi tu vois où la personne en est sur la courbe ?",
             "Jusqu’où monte la courbe de Jana – et qu’est-ce qui la fait redescendre ?"
@@ -1185,7 +1253,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Frühwarnzeichen: Mal im Körper an, wo du Ärger früh merkst."
+          "text": "Frühwarnzeichen: Mal im Körper an, wo du Ärger früh merkst.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "koerper",
@@ -1208,7 +1279,10 @@
         {
           "art": "aufgabe",
           "text": "Was schiebt die Kurve an? Kreuz an, was bei vielen Jugendlichen die Kurve steigen lässt – und bei dir, wenn du magst.",
-          "hinweis": "Trigger plus Tagesform: Wenn du müde, hungrig oder gestresst bist, steigt die Kurve schneller und höher."
+          "hinweis": "Trigger plus Tagesform: Wenn du müde, hungrig oder gestresst bist, steigt die Kurve schneller und höher.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -1225,8 +1299,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Früh stoppen: Formuliere einen Wenn-dann-Plan für dein erstes Zeichen.",
-          "hinweis": "Heute reicht der erste kleine Schritt. Die Pause kommt später."
+          "text": "Früh stoppen: Formuliere einen Wenn-dann-Plan für dein erstes Zeichen – und sag ihn laut.",
+          "hinweis": "Heute reicht der erste kleine Schritt. Die Pause kommt später.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
         },
         {
           "art": "wennDann",
@@ -1239,6 +1317,12 @@
               "dann": "Ich sage mir „Anstieg“, atme einmal lang aus und lasse die Schultern fallen."
             }
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Der Körper ist schneller als der Kopf",
+          "text": "Das erste Zeichen kommt oft, bevor du es denkst. Du entscheidest, was du zeigst."
         },
         {
           "art": "aufgabe",
@@ -1331,7 +1415,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Signes avant-coureurs : colorie sur le corps les endroits où tu sens monter la colère."
+          "text": "Signes avant-coureurs : colorie sur le corps les endroits où tu sens monter la colère.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "koerper",
@@ -1354,7 +1441,10 @@
         {
           "art": "aufgabe",
           "text": "Qu’est-ce qui fait monter la courbe ? Coche ce qui fait monter la colère de beaucoup de jeunes – et la tienne, si tu veux.",
-          "hinweis": "Déclencheur plus forme du jour : quand tu es fatigué(e), que tu as faim ou que tu es stressé(e), la courbe monte plus vite et plus haut."
+          "hinweis": "Déclencheur plus forme du jour : quand tu es fatigué(e), que tu as faim ou que tu es stressé(e), la courbe monte plus vite et plus haut.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -1371,8 +1461,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Stopper tôt : formule un plan « si… alors » pour ton premier signe.",
-          "hinweis": "Aujourd’hui, un premier petit pas suffit. La pause viendra plus tard."
+          "text": "Stopper tôt : formule un plan « si… alors » pour ton premier signe – et dis-le à voix haute.",
+          "hinweis": "Aujourd’hui, un premier petit pas suffit. La pause viendra plus tard.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
         },
         {
           "art": "wennDann",
@@ -1385,6 +1479,12 @@
               "dann": "Je me dis « montée », j’expire longuement une fois et je relâche les épaules."
             }
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Le corps est plus rapide que la tête",
+          "text": "Le premier signe arrive souvent avant que tu y penses. Tu décides de ce que tu montres."
         },
         {
           "art": "aufgabe",
@@ -1447,7 +1547,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche malt im Körper an, wo Ärger früh zu spüren ist, und notiert das erste Zeichen; „spür ich nichts“ ist erlaubt. In Aufgabe 2 kreuzt er oder sie an, was die Kurve bei vielen steigen lässt, und die Fachkraft fragt nur: „Woran merkst du das?“ Aufgabe 3 schreibt er oder sie allein: einen Wenn-dann-Plan; das Beispiel zeigt, wie er gemeint ist. Eigene Erlebnisse gibt es nur, wenn er oder sie mag. Das Modell und der Auftrag gehen mit.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche malt im Körper an, wo Ärger früh zu spüren ist, und notiert das erste Zeichen; „spür ich nichts“ ist erlaubt. In Aufgabe 2 kreuzt er oder sie an, was die Kurve bei vielen steigen lässt, und die Fachkraft fragt nur: „Woran merkst du das?“ Den Plan sagt er oder sie zuerst laut. Aufgabe 3 schreibt er oder sie allein: einen Wenn-dann-Plan; das Beispiel zeigt, wie er gemeint ist. Eigene Erlebnisse gibt es nur, wenn er oder sie mag. Das Modell und der Auftrag gehen mit.",
           "sagen": [
             "Woran merkst du das?",
             "Was ist dein erstes Zeichen – das, das du am frühesten bemerkst?"
@@ -1455,7 +1555,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche das Zeichen, und die Fachkraft schreibt es ein. Ein Zeichen und ein Plan genügen. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune colorie sur le corps où l’on sent la colère tôt et note le premier signe ; « je ne sens rien » est permis. À l’exercice 2, il ou elle coche ce qui fait monter la courbe chez beaucoup de jeunes, et l’adulte demande seulement : « À quoi tu le remarques ? » L’exercice 3 se fait seul(e) : un plan « si… alors » ; l’exemple montre comment le comprendre. Une expérience personnelle n’est donnée que si le ou la jeune le souhaite. Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : le ou la jeune colorie sur le corps où l’on sent la colère tôt et note le premier signe ; « je ne sens rien » est permis. À l’exercice 2, il ou elle coche ce qui fait monter la courbe chez beaucoup de jeunes, et l’adulte demande seulement : « À quoi tu le remarques ? » Il ou elle dit d’abord le plan à voix haute. L’exercice 3 se fait seul(e) : un plan « si… alors » ; l’exemple montre comment le comprendre. Une expérience personnelle n’est donnée que si le ou la jeune le souhaite. Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "À quoi tu le remarques ?",
             "Quel est ton premier signe – celui que tu remarques le plus tôt ?"
@@ -1599,7 +1699,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Frühwarnzeichen: Mal im Körper an, wo du Ärger früh merkst."
+          "text": "Frühwarnzeichen: Mal im Körper an, wo du Ärger früh merkst.",
+          "symbole": [
+            "malen"
+          ],
+          "hinweis": "Beispiel: Bei Ben wird zuerst der Kiefer fest – dort malt er orange."
         },
         {
           "art": "koerper",
@@ -1621,7 +1725,10 @@
         {
           "art": "aufgabe",
           "text": "Was schiebt die Kurve an? Kreuz an, was bei vielen Jugendlichen die Kurve steigen lässt – und bei dir, wenn du magst.",
-          "hinweis": "Trigger plus Tagesform: Wenn du müde, hungrig oder gestresst bist, steigt die Kurve schneller und höher."
+          "hinweis": "Trigger plus Tagesform: Wenn du müde, hungrig oder gestresst bist, steigt die Kurve schneller und höher.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -1645,7 +1752,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Früh stoppen: Was tust du als Erstes, wenn dein Zeichen kommt? Kreuz an, was du ausprobieren willst."
+          "text": "Früh stoppen: Was tust du als Erstes, wenn dein Zeichen kommt? Kreuz an, was du ausprobieren willst.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -1657,6 +1767,12 @@
             "Hände öffnen",
             "innerlich „Stopp, Anstieg“ sagen"
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Der Körper ist schneller als der Kopf",
+          "text": "Das erste Zeichen kommt oft, bevor du es denkst. Du entscheidest, was du zeigst."
         },
         {
           "art": "aufgabe",
@@ -1738,7 +1854,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Signes avant-coureurs : colorie sur le corps les endroits où tu sens monter la colère."
+          "text": "Signes avant-coureurs : colorie sur le corps les endroits où tu sens monter la colère.",
+          "symbole": [
+            "malen"
+          ],
+          "hinweis": "Exemple : chez Ben, la mâchoire se serre d’abord – il la colorie en orange."
         },
         {
           "art": "koerper",
@@ -1760,7 +1880,10 @@
         {
           "art": "aufgabe",
           "text": "Qu’est-ce qui fait monter la courbe ? Coche ce qui fait monter la colère de beaucoup de jeunes – et la tienne, si tu veux.",
-          "hinweis": "Déclencheur plus forme du jour : quand tu es fatigué(e), que tu as faim ou que tu es stressé(e), la courbe monte plus vite et plus haut."
+          "hinweis": "Déclencheur plus forme du jour : quand tu es fatigué(e), que tu as faim ou que tu es stressé(e), la courbe monte plus vite et plus haut.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -1784,7 +1907,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Stopper tôt : que fais-tu en premier quand ton signe apparaît ? Coche ce que tu veux essayer."
+          "text": "Stopper tôt : que fais-tu en premier quand ton signe apparaît ? Coche ce que tu veux essayer.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -1796,6 +1922,12 @@
             "ouvrir les mains",
             "me dire intérieurement « stop, montée »"
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Le corps est plus rapide que la tête",
+          "text": "Le premier signe arrive souvent avant que tu y penses. Tu décides de ce que tu montres."
         },
         {
           "art": "aufgabe",
@@ -2205,7 +2337,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Eine Szene, zwei Sichtweisen: Lies den Comic. Was ist Fakt, was nur Vermutung?"
+          "text": "Eine Szene, zwei Sichtweisen: Lies den Comic. Was ist Fakt, was nur Vermutung?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
         },
         {
           "art": "comic",
@@ -2281,7 +2417,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Prüfen: Welche anderen Erklärungen wären möglich?"
+          "text": "Prüfen: Welche anderen Erklärungen wären möglich? Sag sie laut und schreib sie auf.",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
         },
         {
           "art": "info",
@@ -2294,16 +2434,23 @@
           ]
         },
         {
-          "art": "satzanfaenge",
+          "art": "formfelder",
+          "form": "wolke",
           "items": [
             "Vielleicht hat Ben …",
             "Oder er …"
           ],
-          "linien": 1
+          "anzahl": 2,
+          "spalten": 2,
+          "hoehe": 3
         },
         {
           "art": "aufgabe",
-          "text": "Dein Prüf-Plan: Was fragst du dich, wenn ein heißer Gedanke kommt?"
+          "text": "Dein Prüf-Plan – nur, wenn du magst: Was fragst du dich, wenn ein heißer Gedanke kommt?",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
         },
         {
           "art": "wennDann",
@@ -2408,7 +2555,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Une scène, deux points de vue : lis la bande dessinée. Qu’est-ce qui est un fait, qu’est-ce qui n’est qu’une supposition ?"
+          "text": "Une scène, deux points de vue : lis la bande dessinée. Qu’est-ce qui est un fait, qu’est-ce qui n’est qu’une supposition ?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
         },
         {
           "art": "comic",
@@ -2484,7 +2635,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Vérifier : quelles autres explications seraient possibles ?"
+          "text": "Vérifier : quelles autres explications seraient possibles ? Dis-les à voix haute et écris-les.",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
         },
         {
           "art": "info",
@@ -2497,16 +2652,23 @@
           ]
         },
         {
-          "art": "satzanfaenge",
+          "art": "formfelder",
+          "form": "wolke",
           "items": [
             "Peut-être que Ben …",
             "Ou alors il …"
           ],
-          "linien": 1
+          "anzahl": 2,
+          "spalten": 2,
+          "hoehe": 3
         },
         {
           "art": "aufgabe",
-          "text": "Ton plan de vérification : que te demandes-tu quand une pensée chaude arrive ?"
+          "text": "Ton plan de vérification – seulement si tu veux : que te demandes-tu quand une pensée chaude arrive ?",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
         },
         {
           "art": "wennDann",
@@ -2581,7 +2743,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest den Comic vor, der oder die Jugendliche trägt in die Tabelle F (Fakt) oder V (Vermutung) ein; die Beispielzeile zeigt, wie es gemeint ist. Der Kasten zu den Denkfallen wird kurz besprochen. In Aufgabe 2 schreibt er oder sie zwei andere mögliche Erklärungen für Bens Verhalten; mehrere Antworten stimmen. In Aufgabe 3 entsteht allein ein Prüf-Plan als Wenn-dann-Satz. Das Modell und der Auftrag gehen mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest den Comic vor, der oder die Jugendliche trägt in die Tabelle F (Fakt) oder V (Vermutung) ein; die Beispielzeile zeigt, wie es gemeint ist. Der Kasten zu den Denkfallen wird kurz besprochen. In Aufgabe 2 schreibt er oder sie zwei andere mögliche Erklärungen für Bens Verhalten; mehrere Antworten stimmen. Die anderen Erklärungen sagt er oder sie zuerst laut; sie kommen in die Gedankenwolken. In Aufgabe 3 entsteht allein ein Prüf-Plan als Wenn-dann-Satz. Das Modell und der Auftrag gehen mit.",
           "sagen": [
             "Woran siehst du, dass das ein Fakt ist?",
             "Was könnte es sonst noch sein?"
@@ -2589,7 +2751,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, antwortet der oder die Jugendliche mündlich, und die Fachkraft schreibt Stichworte. Eine andere Erklärung und ein Plan genügen. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit la bande dessinée, le ou la jeune inscrit dans le tableau F (fait) ou S (supposition) ; la ligne d’exemple montre comment faire. L’encadré sur les pièges de pensée est discuté brièvement. À l’exercice 2, il ou elle écrit deux autres explications possibles du comportement de Ben ; plusieurs réponses sont justes. À l’exercice 3, il ou elle prépare seul(e) un plan de vérification sous forme de phrase « si… alors ». Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : l’adulte lit la bande dessinée, le ou la jeune inscrit dans le tableau F (fait) ou S (supposition) ; la ligne d’exemple montre comment faire. L’encadré sur les pièges de pensée est discuté brièvement. À l’exercice 2, il ou elle écrit deux autres explications possibles du comportement de Ben ; plusieurs réponses sont justes. Il ou elle dit d’abord les autres explications à voix haute ; elles vont dans les nuages de pensée. À l’exercice 3, il ou elle prépare seul(e) un plan de vérification sous forme de phrase « si… alors ». Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "À quoi tu vois que c’est un fait ?",
             "Qu’est-ce que ça pourrait être d’autre ?"
@@ -2791,7 +2953,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Prüfen: Welche andere Erklärung wäre möglich? Kreuz an – mehrere gehen."
+          "text": "Prüfen: Welche andere Erklärung wäre möglich? Sag sie laut, dann kreuz an – mehrere gehen.",
+          "symbole": [
+            "sprechen",
+            "ankreuzen"
+          ],
+          "hinweis": "Es geht um Ben und Jana. Du entscheidest, ob du eine eigene Situation dazunimmst."
         },
         {
           "art": "info",
@@ -2816,7 +2983,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Welche Denkfalle ist das? Verbinde."
+          "text": "Welche Denkfalle ist das? Verbinde.",
+          "symbole": [
+            "verbinden"
+          ]
         },
         {
           "art": "zuordnen",
@@ -2973,7 +3143,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Vérifier : quelle autre explication serait possible ? Coche – plusieurs réponses sont possibles."
+          "text": "Vérifier : quelle autre explication serait possible ? Dis-la à voix haute, puis coche – plusieurs réponses sont possibles.",
+          "symbole": [
+            "sprechen",
+            "ankreuzen"
+          ],
+          "hinweis": "Il s’agit de Ben et Jana. Tu décides si tu ajoutes une situation à toi."
         },
         {
           "art": "info",
@@ -2998,7 +3173,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "De quel piège de pensée s’agit-il ? Relie."
+          "text": "De quel piège de pensée s’agit-il ? Relie.",
+          "symbole": [
+            "verbinden"
+          ]
         },
         {
           "art": "zuordnen",
@@ -3067,7 +3245,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest den Comic vor, der oder die Jugendliche kreuzt bei jedem Satz Fakt oder Vermutung an. Der Kasten zu den Denkfallen wird kurz besprochen. In Aufgabe 2 kreuzt er oder sie die möglichen anderen Erklärungen an; mehrere Antworten stimmen. In Aufgabe 3 verbindet er oder sie jeden heißen Gedanken mit der passenden Denkfalle. Das Modell und der Auftrag gehen mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest den Comic vor, der oder die Jugendliche kreuzt bei jedem Satz Fakt oder Vermutung an. Der Kasten zu den Denkfallen wird kurz besprochen. In Aufgabe 2 kreuzt er oder sie die möglichen anderen Erklärungen an; mehrere Antworten stimmen. Die anderen Erklärungen sagt er oder sie erst laut. In Aufgabe 3 verbindet er oder sie jeden heißen Gedanken mit der passenden Denkfalle. Das Modell und der Auftrag gehen mit.",
           "sagen": [
             "Woran siehst du, dass das ein Fakt ist?",
             "Was könnte es sonst noch sein?"
@@ -3075,7 +3253,7 @@
           "wennEsKippt": "Fällt das Verbinden schwer, liest die Fachkraft die Gedanken vor, und der oder die Jugendliche zeigt. Zwei Kreuze in Aufgabe 2 genügen. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit la bande dessinée, le ou la jeune coche pour chaque phrase fait ou supposition. L’encadré sur les pièges de pensée est discuté brièvement. À l’exercice 2, il ou elle coche les autres explications possibles ; plusieurs réponses sont justes. À l’exercice 3, il ou elle relie chaque pensée chaude au piège de pensée qui convient. Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : l’adulte lit la bande dessinée, le ou la jeune coche pour chaque phrase fait ou supposition. L’encadré sur les pièges de pensée est discuté brièvement. À l’exercice 2, il ou elle coche les autres explications possibles ; plusieurs réponses sont justes. Il ou elle dit d’abord les autres explications à voix haute. À l’exercice 3, il ou elle relie chaque pensée chaude au piège de pensée qui convient. Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "À quoi tu vois que c’est un fait ?",
             "Qu’est-ce que ça pourrait être d’autre ?"
@@ -3430,7 +3608,11 @@
         {
           "art": "aufgabe",
           "text": "Dein Test von eben: Trag deine Zahl vor und nach jedem Weg ein – und ob der Weg zu dir passt.",
-          "hinweis": "Gleiche Zahl vorher und nachher? Auch das ist ein Ergebnis."
+          "hinweis": "Gleiche Zahl vorher und nachher? Auch das ist ein Ergebnis.",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ]
         },
         {
           "art": "bilder",
@@ -3489,8 +3671,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Der Pausen-Satz: Schreib, was du sagst, wenn du aussteigst.",
-          "hinweis": "Drei Teile: ich gehe – so lange – ich komme wieder."
+          "text": "Der Pausen-Satz: Sag und schreib, was du sagst, wenn du aussteigst.",
+          "hinweis": "Drei Teile: ich gehe – so lange – ich komme wieder.",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
         },
         {
           "art": "dialog",
@@ -3507,7 +3693,10 @@
         {
           "art": "aufgabe",
           "text": "Wann steigst du aus? Zeichne dieselbe Kurve zweimal: ohne Auszeit und mit Auszeit.",
-          "hinweis": "Starte die Auszeit, bevor die Kurve ganz oben ist – spätestens bei 6."
+          "hinweis": "Starte die Auszeit, bevor die Kurve ganz oben ist – spätestens bei 6.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "kurve",
@@ -3526,6 +3715,12 @@
             "Ohne Auszeit",
             "Mit Auszeit bei 6"
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nicht jeder Weg passt zu jedem",
+          "text": "Bleibt die Zahl gleich, ist das auch ein Ergebnis. Du entscheidest, welchen Weg du behältst."
         },
         {
           "art": "aufgabe",
@@ -3622,7 +3817,11 @@
         {
           "art": "aufgabe",
           "text": "Ton test de tout à l’heure : note ton chiffre avant et après chaque méthode – et si elle te convient.",
-          "hinweis": "Le même chiffre avant et après ? C’est aussi un résultat."
+          "hinweis": "Le même chiffre avant et après ? C’est aussi un résultat.",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ]
         },
         {
           "art": "bilder",
@@ -3681,8 +3880,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "La phrase de pause : écris ce que tu dis quand tu t’éloignes.",
-          "hinweis": "Trois parties : je m’en vais – pendant combien de temps – je reviens."
+          "text": "La phrase de pause : dis et écris ce que tu dis quand tu t’éloignes.",
+          "hinweis": "Trois parties : je m’en vais – pendant combien de temps – je reviens.",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
         },
         {
           "art": "dialog",
@@ -3699,7 +3902,10 @@
         {
           "art": "aufgabe",
           "text": "À quel moment prends-tu du recul ? Dessine deux fois la même courbe : sans pause, puis avec pause.",
-          "hinweis": "Prends du recul avant que la courbe soit tout en haut – au plus tard à 6."
+          "hinweis": "Prends du recul avant que la courbe soit tout en haut – au plus tard à 6.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "kurve",
@@ -3718,6 +3924,12 @@
             "Sans pause",
             "Avec pause à 6"
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tous les chemins ne conviennent pas à tout le monde",
+          "text": "Si le chiffre reste le même, c’est aussi un résultat. Tu décides quel chemin tu gardes."
         },
         {
           "art": "aufgabe",
@@ -3783,7 +3995,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die drei Wege sind vorher schon getestet; der oder die Jugendliche trägt die Zahlen vorher und nachher ein (die Fachkraft hat sie notiert) und sagt bei „passt zu mir“ ja oder nein. Bleibt die Zahl gleich, ist das ein gültiges Ergebnis. In Aufgabe 2 schreibt er oder sie in die Sprechblase den Pausen-Satz: ich gehe – so lange – ich komme wieder. In Aufgabe 3 wird dieselbe Kurve zweimal gezeichnet, ohne und mit Auszeit; die Fachkraft fragt, bei welcher Zahl die Auszeit spätestens starten sollte. Das Modell und der Auftrag gehen mit.",
+          "text": "Aufgabe 1 gemeinsam: Die drei Wege sind vorher schon getestet; der oder die Jugendliche trägt die Zahlen vorher und nachher ein (die Fachkraft hat sie notiert) und sagt bei „passt zu mir“ ja oder nein. Bleibt die Zahl gleich, ist das ein gültiges Ergebnis. Den Pausen-Satz sagt er oder sie erst laut. In Aufgabe 2 schreibt er oder sie in die Sprechblase den Pausen-Satz: ich gehe – so lange – ich komme wieder. In Aufgabe 3 wird dieselbe Kurve zweimal gezeichnet, ohne und mit Auszeit; die Fachkraft fragt, bei welcher Zahl die Auszeit spätestens starten sollte. Das Modell und der Auftrag gehen mit.",
           "sagen": [
             "Welche Zahl hast du vorher? Und nachher?",
             "Bei welcher Zahl würdest du spätestens aussteigen?"
@@ -3791,7 +4003,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche die Zahlen, und die Fachkraft trägt sie ein. Zwei getestete Wege und ein Satz genügen. Wird eine Übung unangenehm, wird sie sofort abgebrochen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : les trois méthodes ont déjà été testées juste avant ; le ou la jeune inscrit les chiffres avant et après (l’adulte les a notés) et répond par oui ou non à « me convient ». Si le chiffre reste le même, c’est un résultat valable. À l’exercice 2, il ou elle écrit dans la bulle la phrase de pause : je m’en vais – pour combien de temps – je reviens. À l’exercice 3, on dessine deux fois la même courbe, sans puis avec pause ; l’adulte demande à partir de quel chiffre la pause devrait au plus tard commencer. Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : les trois méthodes ont déjà été testées juste avant ; le ou la jeune inscrit les chiffres avant et après (l’adulte les a notés) et répond par oui ou non à « me convient ». Si le chiffre reste le même, c’est un résultat valable. Il ou elle dit d’abord la phrase de pause à voix haute. À l’exercice 2, il ou elle écrit dans la bulle la phrase de pause : je m’en vais – pour combien de temps – je reviens. À l’exercice 3, on dessine deux fois la même courbe, sans puis avec pause ; l’adulte demande à partir de quel chiffre la pause devrait au plus tard commencer. Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "Quel chiffre avant ? Et après ?",
             "À partir de quel chiffre sortirais-tu au plus tard ?"
@@ -3938,7 +4150,11 @@
         {
           "art": "aufgabe",
           "text": "Dein Test von eben: Welcher Weg hat am besten geholfen? Kreis deinen Favoriten ein.",
-          "hinweis": "Gleiche Zahl vorher und nachher? Auch das ist ein Ergebnis."
+          "hinweis": "Gleiche Zahl vorher und nachher? Auch das ist ein Ergebnis. Beispiel: Bei Ben ging die Zahl von 6 auf 4 – Atmen hat geholfen.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ]
         },
         {
           "art": "bilder",
@@ -3974,7 +4190,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Welcher Pausen-Satz funktioniert? Kreuz an."
+          "text": "Welcher Pausen-Satz funktioniert? Sag die Sätze laut, dann kreuz an.",
+          "symbole": [
+            "sprechen",
+            "ankreuzen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -3989,7 +4209,10 @@
         {
           "art": "aufgabe",
           "text": "Wann steigst du aus? Zeichne dieselbe Kurve zweimal: ohne Auszeit und mit Auszeit.",
-          "hinweis": "Starte die Auszeit, bevor die Kurve ganz oben ist – spätestens bei 6."
+          "hinweis": "Starte die Auszeit, bevor die Kurve ganz oben ist – spätestens bei 6.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "kurve",
@@ -4008,6 +4231,12 @@
             "Ohne Auszeit",
             "Mit Auszeit bei 6"
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nicht jeder Weg passt zu jedem",
+          "text": "Bleibt die Zahl gleich, ist das auch ein Ergebnis. Du entscheidest, welchen Weg du behältst."
         },
         {
           "art": "aufgabe",
@@ -4090,7 +4319,11 @@
         {
           "art": "aufgabe",
           "text": "Ton test de tout à l’heure : quelle méthode a le mieux aidé ? Entoure ta préférée.",
-          "hinweis": "Le même chiffre avant et après ? C’est aussi un résultat."
+          "hinweis": "Le même chiffre avant et après ? C’est aussi un résultat. Exemple : chez Ben, le chiffre est passé de 6 à 4 – respirer a aidé.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ]
         },
         {
           "art": "bilder",
@@ -4126,7 +4359,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quelle phrase de pause fonctionne ? Coche."
+          "text": "Quelle phrase de pause fonctionne ? Dis les phrases à voix haute, puis coche.",
+          "symbole": [
+            "sprechen",
+            "ankreuzen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -4141,7 +4378,10 @@
         {
           "art": "aufgabe",
           "text": "À quel moment prends-tu du recul ? Dessine deux fois la même courbe : sans pause, puis avec pause.",
-          "hinweis": "Prends du recul avant que la courbe soit tout en haut – au plus tard à 6."
+          "hinweis": "Prends du recul avant que la courbe soit tout en haut – au plus tard à 6.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "kurve",
@@ -4160,6 +4400,12 @@
             "Sans pause",
             "Avec pause à 6"
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tous les chemins ne conviennent pas à tout le monde",
+          "text": "Si le chiffre reste le même, c’est aussi un résultat. Tu décides quel chemin tu gardes."
         },
         {
           "art": "aufgabe",
@@ -4211,7 +4457,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die drei Wege sind vorher schon getestet; der oder die Jugendliche kreist den Favoriten ein und kreuzt an, wie gut jeder Weg geholfen hat (die Fachkraft liest die notierten Zahlen vor). Bleibt die Zahl gleich, ist das ein gültiges Ergebnis. In Aufgabe 2 kreuzt er oder sie den Pausen-Satz an, der funktioniert, und sagt, woran man das merkt. In Aufgabe 3 wird dieselbe Kurve zweimal gezeichnet, ohne und mit Auszeit. Das Modell und der Auftrag gehen mit.",
+          "text": "Aufgabe 1 gemeinsam: Die drei Wege sind vorher schon getestet; der oder die Jugendliche kreist den Favoriten ein und kreuzt an, wie gut jeder Weg geholfen hat (die Fachkraft liest die notierten Zahlen vor). Bleibt die Zahl gleich, ist das ein gültiges Ergebnis. Die Sätze sagt er oder sie erst laut. In Aufgabe 2 kreuzt er oder sie den Pausen-Satz an, der funktioniert, und sagt, woran man das merkt. In Aufgabe 3 wird dieselbe Kurve zweimal gezeichnet, ohne und mit Auszeit. Das Modell und der Auftrag gehen mit.",
           "sagen": [
             "Welche Zahl hast du vorher? Und nachher?",
             "Woran merkst du, dass dieser Satz eine gute Pause ist?"
@@ -4219,7 +4465,7 @@
           "wennEsKippt": "Fällt das Zeichnen schwer, genügen drei Punkte je Kurve, die die Fachkraft verbindet. Zwei getestete Wege und ein Kreuz bei den Sätzen genügen. Wird eine Übung unangenehm, wird sie sofort abgebrochen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : les trois méthodes ont déjà été testées juste avant ; le ou la jeune entoure sa préférée et coche dans quelle mesure chaque méthode a aidé (l’adulte relit les chiffres notés). Si le chiffre reste le même, c’est un résultat valable. À l’exercice 2, il ou elle coche la phrase de pause qui fonctionne et dit à quoi on le voit. À l’exercice 3, on dessine deux fois la même courbe, sans puis avec pause. Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : les trois méthodes ont déjà été testées juste avant ; le ou la jeune entoure sa préférée et coche dans quelle mesure chaque méthode a aidé (l’adulte relit les chiffres notés). Si le chiffre reste le même, c’est un résultat valable. Il ou elle dit d’abord les phrases à voix haute. À l’exercice 2, il ou elle coche la phrase de pause qui fonctionne et dit à quoi on le voit. À l’exercice 3, on dessine deux fois la même courbe, sans puis avec pause. Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "Quel chiffre avant ? Et après ?",
             "À quoi tu vois que cette phrase fait une bonne pause ?"
@@ -4572,7 +4818,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Zwei Sätze, zwei Wirkungen: Lies beide. Was passiert wahrscheinlich als Nächstes?"
+          "text": "Zwei Sätze, zwei Wirkungen: Lies beide. Was passiert wahrscheinlich als Nächstes?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
         },
         {
           "art": "comic",
@@ -4621,8 +4871,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Plane deine Situation: Wer, wann, wo – und welcher Satz?",
-          "hinweis": "Eine Situation, die diese Woche ansteht – oder eine erfundene. Du entscheidest, wie nah sie an dir dran ist."
+          "text": "Plane deine Situation: Wer, wann, wo – und welcher Satz? Sag ihn dir erst laut.",
+          "hinweis": "Eine Situation, die diese Woche ansteht – oder eine erfundene. Du entscheidest, wie nah sie an dir dran ist.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
         },
         {
           "art": "tabelle",
@@ -4673,6 +4927,12 @@
             "Ich würde ihn auch sagen, wenn die Person vor mir stünde.",
             "Er wäre okay, wenn ihn auch andere lesen würden."
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ärger sagen ist Übung",
+          "text": "Ein vorher geübter Satz klappt besser. Du entscheidest, was du aufschreibst."
         },
         {
           "art": "aufgabe",
@@ -4765,7 +5025,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deux phrases, deux effets : lis-les. Que se passe-t-il probablement ensuite ?"
+          "text": "Deux phrases, deux effets : lis-les. Que se passe-t-il probablement ensuite ?",
+          "symbole": [
+            "lesen",
+            "nachdenken"
+          ]
         },
         {
           "art": "comic",
@@ -4814,8 +5078,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Prépare ta situation : qui, quand, où – et quelle phrase ?",
-          "hinweis": "Une situation qui se présente cette semaine – ou une situation inventée. Tu décides à quel point elle est proche de toi."
+          "text": "Prépare ta situation : qui, quand, où – et quelle phrase ? Dis-la d’abord à voix haute.",
+          "hinweis": "Une situation qui se présente cette semaine – ou une situation inventée. Tu décides à quel point elle est proche de toi.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
         },
         {
           "art": "tabelle",
@@ -4866,6 +5134,12 @@
             "Je le dirais aussi si la personne était devant moi.",
             "Il serait acceptable si d’autres personnes le lisaient."
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Dire sa colère, ça s’entraîne",
+          "text": "Une phrase déjà exercée marche mieux. Tu décides de ce que tu écris."
         },
         {
           "art": "aufgabe",
@@ -4928,7 +5202,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die beiden Sätze, der oder die Jugendliche schreibt, wie Jana wahrscheinlich reagiert. Aufgabe 2 ist der Plan: wer, wann, wo und der Satz in vier Teilen (Fakt – Gefühl – Bitte – Nutzen); die Beispielzeilen zeigen, wie es gemeint ist. Dann spielen beide die Situation in zwei Runden, und danach liest der oder die Jugendliche die Zahl auf der Kurve ab. Aufgabe 3 ist die Checkliste für Nachrichten. Das Modell und der Auftrag gehen mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die beiden Sätze, der oder die Jugendliche schreibt, wie Jana wahrscheinlich reagiert. Aufgabe 2 ist der Plan: wer, wann, wo und der Satz in vier Teilen (Fakt – Gefühl – Bitte – Nutzen); die Beispielzeilen zeigen, wie es gemeint ist. Den Satz sagt er oder sie erst laut. Dann spielen beide die Situation in zwei Runden, und danach liest der oder die Jugendliche die Zahl auf der Kurve ab. Aufgabe 3 ist die Checkliste für Nachrichten. Das Modell und der Auftrag gehen mit.",
           "sagen": [
             "Wie hört sich dein Satz an, wenn du ihn laut sagst?",
             "Welche Zahl hast du nach dem Spielen – höher oder tiefer als vorher?"
@@ -4936,7 +5210,7 @@
           "wennEsKippt": "Fällt keine Situation ein, wählt die Fachkraft eine erfundene (Mitspieler passt nie zu, Gruppenarbeit bleibt an einem hängen). Ist Schreiben mühsam, genügen Stichworte. Mag der oder die Jugendliche nicht spielen, genügt der geschriebene Satz."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les deux phrases, le ou la jeune écrit comment Jana réagit probablement. L’exercice 2 est le plan : qui, quand, où et la phrase en quatre parties (fait – émotion – demande – bénéfice) ; les lignes d’exemple montrent comment faire. Ensuite, les deux jouent la situation en deux tours, puis le ou la jeune lit son chiffre sur la courbe. L’exercice 3 est la liste de contrôle pour les messages. Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : l’adulte lit les deux phrases, le ou la jeune écrit comment Jana réagit probablement. L’exercice 2 est le plan : qui, quand, où et la phrase en quatre parties (fait – émotion – demande – bénéfice) ; les lignes d’exemple montrent comment faire. Il ou elle dit d’abord la phrase à voix haute. Ensuite, les deux jouent la situation en deux tours, puis le ou la jeune lit son chiffre sur la courbe. L’exercice 3 est la liste de contrôle pour les messages. Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "Comment sonne ta phrase quand tu la dis à voix haute ?",
             "Quel chiffre as-tu après le jeu de rôle – plus haut ou plus bas qu’avant ?"
@@ -5079,7 +5353,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Zwei Sätze, zwei Wirkungen: Lies beide. Was passiert wahrscheinlich als Nächstes?"
+          "text": "Zwei Sätze, zwei Wirkungen: Lies beide. Was passiert wahrscheinlich als Nächstes?",
+          "symbole": [
+            "lesen",
+            "ankreuzen"
+          ]
         },
         {
           "art": "comic",
@@ -5129,8 +5407,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Plane deine Situation: Kreuz an und schreib deinen Satz in Stichworten.",
-          "hinweis": "Eine Situation, die diese Woche ansteht – oder eine erfundene. Du entscheidest, wie nah sie an dir dran ist."
+          "text": "Plane deine Situation: Kreuz an, sag deinen Satz laut und schreib ihn in Stichworten.",
+          "hinweis": "Eine Situation, die diese Woche ansteht – oder eine erfundene. Du entscheidest, wie nah sie an dir dran ist.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -5175,6 +5457,12 @@
             "Ich würde ihn auch sagen, wenn die Person vor mir stünde.",
             "Er wäre okay, wenn ihn auch andere lesen würden."
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ärger sagen ist Übung",
+          "text": "Ein vorher geübter Satz klappt besser. Du entscheidest, was du ankreuzt."
         },
         {
           "art": "aufgabe",
@@ -5260,7 +5548,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deux phrases, deux effets : lis-les. Que se passe-t-il probablement ensuite ?"
+          "text": "Deux phrases, deux effets : lis-les. Que se passe-t-il probablement ensuite ?",
+          "symbole": [
+            "lesen",
+            "ankreuzen"
+          ]
         },
         {
           "art": "comic",
@@ -5310,8 +5602,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Prépare ta situation : coche, puis note ta phrase en mots-clés.",
-          "hinweis": "Une situation qui se présente cette semaine – ou une situation inventée. Tu décides à quel point elle est proche de toi."
+          "text": "Prépare ta situation : coche, dis ta phrase à voix haute et note-la en mots-clés.",
+          "hinweis": "Une situation qui se présente cette semaine – ou une situation inventée. Tu décides à quel point elle est proche de toi.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -5356,6 +5652,12 @@
             "Je le dirais aussi si la personne était devant moi.",
             "Il serait acceptable si d’autres personnes le lisaient."
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Dire sa colère, ça s’entraîne",
+          "text": "Une phrase déjà exercée marche mieux. Tu décides de ce que tu coches."
         },
         {
           "art": "aufgabe",
@@ -5411,7 +5713,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die beiden Sätze, der oder die Jugendliche kreuzt an, nach welchem Jana eher zuhört. In Aufgabe 2 kreuzt er oder sie an, wer, wann und wo, und schreibt den Satz in Stichworten (Fakt – Gefühl – Bitte – Nutzen). Dann spielen beide die Situation in zwei Runden, und danach liest der oder die Jugendliche die Zahl auf der Kurve ab. Aufgabe 3 ist die Checkliste für Nachrichten. Das Modell und der Auftrag gehen mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die beiden Sätze, der oder die Jugendliche kreuzt an, nach welchem Jana eher zuhört. In Aufgabe 2 kreuzt er oder sie an, wer, wann und wo, und schreibt den Satz in Stichworten (Fakt – Gefühl – Bitte – Nutzen). Den Satz sagt er oder sie erst laut. Dann spielen beide die Situation in zwei Runden, und danach liest der oder die Jugendliche die Zahl auf der Kurve ab. Aufgabe 3 ist die Checkliste für Nachrichten. Das Modell und der Auftrag gehen mit.",
           "sagen": [
             "Wie hört sich dein Satz an, wenn du ihn laut sagst?",
             "Welche Zahl hast du nach dem Spielen – höher oder tiefer als vorher?"
@@ -5419,7 +5721,7 @@
           "wennEsKippt": "Fällt keine Situation ein, wählt die Fachkraft eine erfundene (Mitspieler passt nie zu, Gruppenarbeit bleibt an einem hängen). Drei Stichworte genügen; sie dürfen auch gesagt statt geschrieben werden. Mag der oder die Jugendliche nicht spielen, genügt der Satz in Stichworten."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les deux phrases, le ou la jeune coche après laquelle Jana écoute plus volontiers. À l’exercice 2, il ou elle coche qui, quand et où, et note la phrase en mots-clés (fait – émotion – demande – bénéfice). Ensuite, les deux jouent la situation en deux tours, puis le ou la jeune lit son chiffre sur la courbe. L’exercice 3 est la liste de contrôle pour les messages. Le modèle et la tâche pour la prochaine fois sont emportés.",
+          "text": "Exercice 1 ensemble : l’adulte lit les deux phrases, le ou la jeune coche après laquelle Jana écoute plus volontiers. À l’exercice 2, il ou elle coche qui, quand et où, et note la phrase en mots-clés (fait – émotion – demande – bénéfice). Il ou elle dit d’abord la phrase à voix haute. Ensuite, les deux jouent la situation en deux tours, puis le ou la jeune lit son chiffre sur la courbe. L’exercice 3 est la liste de contrôle pour les messages. Le modèle et la tâche pour la prochaine fois sont emportés.",
           "sagen": [
             "Comment sonne ta phrase quand tu la dis à voix haute ?",
             "Quel chiffre as-tu après le jeu de rôle – plus haut ou plus bas qu’avant ?"
@@ -5842,12 +6144,16 @@
         },
         {
           "art": "aufgabe",
-          "text": "Du bist Bens Beraterin oder Berater: Such eine Situation aus, kreuz an und schreib Bens Satz in Stichworten."
+          "text": "Du bist Bens Beraterin oder Berater: Such eine Situation aus, kreuz an, sag Bens Satz laut und schreib ihn in Stichworten.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "ankreuzen",
           "titel": "Bens Situation",
-          "spalten": 1,
+          "spalten": 3,
           "items": [
             "Ben muss lange in der Reihe warten.",
             "Bens Spiel läuft schlecht.",
@@ -5914,6 +6220,12 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ärger sagen ist Übung",
+          "text": "Ein vorher geübter Satz klappt besser. Du entscheidest, was du ankreuzt."
+        },
+        {
           "art": "aufgabe",
           "text": "Das Modell wächst: Das ist schon da, das ist heute neu."
         },
@@ -5940,6 +6252,16 @@
             }
           ],
           "linien": 0
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit:",
+          "items": [
+            "Erst Fakten, dann Gefühl, dann Bitte.",
+            "Online: erst schreiben, später senden.",
+            "Ein vorher geübter Satz klappt besser."
+          ],
+          "spalten": 3
         },
         {
           "art": "aufgabe",
@@ -6038,12 +6360,16 @@
         },
         {
           "art": "aufgabe",
-          "text": "Conseille Ben : choisis une situation, coche et note sa phrase en mots-clés."
+          "text": "Conseille Ben : choisis une situation, coche, dis la phrase de Ben à voix haute et note-la en mots-clés.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "ankreuzen",
           "titel": "La situation de Ben",
-          "spalten": 1,
+          "spalten": 3,
           "items": [
             "Ben doit attendre longtemps dans la file.",
             "Le jeu de Ben se passe mal.",
@@ -6110,6 +6436,12 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Dire sa colère, ça s’entraîne",
+          "text": "Une phrase déjà exercée marche mieux. Tu décides de ce que tu coches."
+        },
+        {
           "art": "aufgabe",
           "text": "Le modèle grandit : voilà ce qui est déjà là, et ce qui est nouveau aujourd’hui."
         },
@@ -6138,6 +6470,16 @@
           "linien": 0
         },
         {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte :",
+          "items": [
+            "D’abord les faits, puis l’émotion, puis la demande.",
+            "En ligne : d’abord écrire, envoyer plus tard.",
+            "Une phrase préparée à l’avance marche mieux."
+          ],
+          "spalten": 3
+        },
+        {
           "art": "aufgabe",
           "text": "D’ici la prochaine fois : dans un livre ou un film, repère si un personnage dit ce qui ne va pas sans insulter. Ou entraîne la phrase de Ben dans ta tête."
         },
@@ -6154,7 +6496,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die beiden Sätze von Ben, der oder die Jugendliche kreuzt an, nach welchem Jana eher zuhört. In Aufgabe 2 berät er oder sie Ben: Situation, mit wem und wann und wo ankreuzen und Bens Satz in Stichworten schreiben (Fakt – Gefühl – Bitte – Nutzen). Dann sagt die Fachkraft den Satz als Ben, und in Aufgabe 3 prüft der oder die Jugendliche ihn mit der Checkliste vor dem Senden. In Aufgabe 4 schätzt er oder sie Bens Zahl vor und nach dem Satz ein. Das Modell zeigt, was heute neu ist; der Auftrag ist eine Zielkarte. Es geht nur um Ben, Jana und ausgedachte Situationen.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die beiden Sätze von Ben, der oder die Jugendliche kreuzt an, nach welchem Jana eher zuhört. In Aufgabe 2 berät er oder sie Ben: Situation, mit wem und wann und wo ankreuzen und Bens Satz in Stichworten schreiben (Fakt – Gefühl – Bitte – Nutzen). Bens Satz sagt der oder die Jugendliche zuerst laut. Dann sagt die Fachkraft den Satz als Ben, und in Aufgabe 3 prüft der oder die Jugendliche ihn mit der Checkliste vor dem Senden. In Aufgabe 4 schätzt er oder sie Bens Zahl vor und nach dem Satz ein. Das Modell zeigt, was heute neu ist; der Auftrag ist eine Zielkarte. Es geht nur um Ben, Jana und ausgedachte Situationen.",
           "sagen": [
             "Wie hört sich Bens Satz an, wenn er laut gesagt wird?",
             "Welche Zahl hat Ben nach dem Satz – höher oder tiefer als vorher?"
@@ -6162,7 +6504,7 @@
           "wennEsKippt": "Fällt keine Situation ein, wählt die Fachkraft eine der drei Karten. Drei Stichworte genügen; sie dürfen auch gesagt statt geschrieben werden. Mag der oder die Jugendliche nicht beraten, liest die Fachkraft Bens Satz vor, und er oder sie zeigt auf die Teile. Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Ben und Jana zurück. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les deux phrases de Ben, le ou la jeune coche après laquelle Jana écoute plus volontiers. À l’exercice 2, il ou elle conseille Ben : cocher la situation, avec qui, quand et où, et noter la phrase de Ben en mots-clés (fait – émotion – demande – bénéfice). Ensuite l’adulte dit la phrase dans le rôle de Ben, et à l’exercice 3 le ou la jeune la vérifie avec la liste de contrôle avant d’envoyer. À l’exercice 4, il ou elle estime le chiffre de Ben avant et après la phrase. Le modèle montre ce qui est nouveau aujourd’hui ; la mission est une carte-objectif. Il n’est question que de Ben, de Jana et de situations inventées.",
+          "text": "Exercice 1 ensemble : l’adulte lit les deux phrases de Ben, le ou la jeune coche après laquelle Jana écoute plus volontiers. À l’exercice 2, il ou elle conseille Ben : cocher la situation, avec qui, quand et où, et noter la phrase de Ben en mots-clés (fait – émotion – demande – bénéfice). Le ou la jeune dit d’abord la phrase de Ben à voix haute. Ensuite l’adulte dit la phrase dans le rôle de Ben, et à l’exercice 3 le ou la jeune la vérifie avec la liste de contrôle avant d’envoyer. À l’exercice 4, il ou elle estime le chiffre de Ben avant et après la phrase. Le modèle montre ce qui est nouveau aujourd’hui ; la mission est une carte-objectif. Il n’est question que de Ben, de Jana et de situations inventées.",
           "sagen": [
             "Comment sonne la phrase de Ben quand on la dit à voix haute ?",
             "Quel chiffre Ben a-t-il après la phrase – plus haut ou plus bas qu’avant ?"
@@ -6291,7 +6633,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deine ganze Kurve: Was hilft dir bei welchem Ausstieg? Trag ein Stichwort ein."
+          "text": "Deine ganze Kurve: Was hilft dir bei welchem Ausstieg? Trag ein Stichwort ein.",
+          "hinweis": "Beispiel: Bei „Auszeit“ hilft mir: aufstehen und Wasser holen.",
+          "symbole": [
+            "zeigen",
+            "schreiben"
+          ]
         },
         {
           "art": "tabelle",
@@ -6353,30 +6700,51 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wer hilft dir, wenn es zu viel wird? Trag eine Person ein, der du vertraust – nur, wenn du magst. Die Nummern sind für alle da."
+          "text": "Wer hilft dir, wenn es zu viel wird? Trag eine Person ein, der du vertraust – nur, wenn du magst. Die Nummern sind für alle da.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ],
+          "hinweis": "Einen Satz zum Ansprechen übst du einmal laut: „Hast du kurz Zeit? Mir ist gerade alles zu viel.“"
         },
         {
           "art": "notfall"
         },
         {
-          "art": "aufgabe",
-          "text": "Rückblick: Wie sicher bist du bei diesen Ausstiegen?"
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Du musst nicht alles können",
+          "text": "Zwei Ausstiege, die dir helfen, reichen. Du entscheidest, wem du es sagst."
         },
         {
-          "art": "einschaetzung",
-          "items": [
-            "merken, wo ich auf der Kurve stehe",
-            "mein erstes Zeichen früh bemerken",
-            "einen heißen Gedanken prüfen",
-            "eine Auszeit nehmen",
-            "Ärger fair sagen",
-            "mir Hilfe holen, wenn es zu viel wird"
-          ],
-          "optionen": [
-            "noch nicht",
-            "manchmal",
-            "oft"
+          "art": "aufgabe",
+          "text": "Rückblick: Wie sicher bist du bei diesen Ausstiegen? Mal die Gläser aus.",
+          "symbole": [
+            "malen"
           ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Merken",
+            "Früh stoppen",
+            "Prüfen",
+            "Auszeit",
+            "Sagen",
+            "Hilfe"
+          ],
+          "spalten": 6,
+          "legende": [
+            "So sicher will ich werden.",
+            "So sicher bin ich jetzt."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Für meine Kurve nehme ich mit:"
+          ],
+          "linien": 1
         },
         {
           "art": "aufgabe",
@@ -6429,7 +6797,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta courbe complète : qu’est-ce qui t’aide pour chaque issue ? Note un mot-clé."
+          "text": "Ta courbe complète : qu’est-ce qui t’aide pour chaque issue ? Note un mot-clé.",
+          "hinweis": "Exemple : pour « Prendre du recul », ce qui m’aide : me lever et aller chercher de l’eau.",
+          "symbole": [
+            "zeigen",
+            "schreiben"
+          ]
         },
         {
           "art": "tabelle",
@@ -6491,30 +6864,51 @@
         },
         {
           "art": "aufgabe",
-          "text": "Qui peut t’aider quand c’est trop ? Note une personne en qui tu as confiance – seulement si tu veux. Les numéros sont à ta disposition."
+          "text": "Qui peut t’aider quand c’est trop ? Note une personne en qui tu as confiance – seulement si tu veux. Les numéros sont à ta disposition.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ],
+          "hinweis": "Une phrase pour aborder quelqu’un, tu l’essaies une fois à voix haute : « Tu as un instant ? Là, tout est trop pour moi. »"
         },
         {
           "art": "notfall"
         },
         {
-          "art": "aufgabe",
-          "text": "Bilan : à quel point te sens-tu à l’aise avec ces issues ?"
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tu n’as pas besoin de tout savoir faire",
+          "text": "Deux issues qui t’aident suffisent. Tu décides à qui tu en parles."
         },
         {
-          "art": "einschaetzung",
-          "items": [
-            "repérer où j’en suis sur la courbe",
-            "remarquer tôt mon premier signe",
-            "vérifier une pensée qui chauffe",
-            "prendre du recul",
-            "dire ma colère de façon juste",
-            "demander de l’aide quand c’est trop"
-          ],
-          "optionen": [
-            "pas encore",
-            "parfois",
-            "souvent"
+          "art": "aufgabe",
+          "text": "Bilan : à quel point te sens-tu à l’aise avec ces issues ? Colorie les verres.",
+          "symbole": [
+            "malen"
           ]
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Repérer",
+            "Stopper tôt",
+            "Vérifier",
+            "Recul",
+            "Dire",
+            "Aide"
+          ],
+          "spalten": 6,
+          "legende": [
+            "Je veux en arriver là.",
+            "J’en suis là."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Pour ma courbe, j’emporte :"
+          ],
+          "linien": 1
         },
         {
           "art": "aufgabe",
@@ -6537,7 +6931,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche geht die sechs Ausstiege durch und trägt zu jedem ein Stichwort ein, was ihm oder ihr geholfen hat; die Fachkraft nennt bei Bedarf ein Beispiel aus den Stunden. In Aufgabe 2 füllt er oder sie die Lücken im Plan allein aus und unterschreibt. In Aufgabe 3 trägt er oder sie eine Vertrauensperson ein – nur, wenn er oder sie mag; die Nummern liest die Fachkraft kurz vor. Rückblick und Karte sind freiwillig und kommen zum Schluss; die Mappe mit allen Blättern geht in die Verabschiedung.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche geht die sechs Ausstiege durch und trägt zu jedem ein Stichwort ein, was ihm oder ihr geholfen hat; die Fachkraft nennt bei Bedarf ein Beispiel aus den Stunden. Bei jedem Ausstieg zeigt er oder sie zuerst, wo auf der Kurve er hilft. In Aufgabe 2 füllt er oder sie die Lücken im Plan allein aus und unterschreibt. In Aufgabe 3 trägt er oder sie eine Vertrauensperson ein – nur, wenn er oder sie mag; die Nummern liest die Fachkraft kurz vor. In Aufgabe 3 sagt er oder sie den Satz zum Ansprechen einmal laut. Beim Rückblick malt er oder sie die Gläser aus. Rückblick und Karte sind freiwillig und kommen zum Schluss; die Mappe mit allen Blättern geht in die Verabschiedung.",
           "sagen": [
             "Welcher Ausstieg war für dich der überraschendste?",
             "Woran würdest du merken, dass du früh genug aussteigst?"
@@ -6545,7 +6939,7 @@
           "wennEsKippt": "Fällt das Ausfüllen schwer, genügen ein Zeichen, ein Ausstieg und ein Satz. Mag der oder die Jugendliche keine Person eintragen, bleibt das Feld leer – die Nummern gelten trotzdem. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune passe en revue les six issues et note pour chaque issue un mot-clé sur ce qui l’a aidé ; l’adulte donne au besoin un exemple tiré des séances. À l’exercice 2, il ou elle complète seul(e) les blancs du plan et signe. À l’exercice 3, il ou elle inscrit une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit brièvement les numéros. Le bilan et la carte sont facultatifs et viennent à la fin ; le dossier avec toutes les fiches fait partie de l’au revoir.",
+          "text": "Exercice 1 ensemble : le ou la jeune passe en revue les six issues et note pour chaque issue un mot-clé sur ce qui l’a aidé ; l’adulte donne au besoin un exemple tiré des séances. Pour chaque issue, il ou elle montre d’abord où elle aide sur la courbe. À l’exercice 2, il ou elle complète seul(e) les blancs du plan et signe. À l’exercice 3, il ou elle inscrit une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit brièvement les numéros. À l’exercice 3, il ou elle dit une fois à voix haute la phrase pour aborder quelqu’un. Pour le bilan, il ou elle colorie les verres. Le bilan et la carte sont facultatifs et viennent à la fin ; le dossier avec toutes les fiches fait partie de l’au revoir.",
           "sagen": [
             "Quelle issue t’a le plus surpris(e) ?",
             "À quoi remarquerais-tu que tu sors assez tôt ?"
@@ -6689,7 +7083,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deine ganze Kurve: Wie gut hilft dir jeder Ausstieg? Kreuz an."
+          "text": "Deine ganze Kurve: Wie gut hilft dir jeder Ausstieg? Kreuz an.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -6709,7 +7107,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein Plan für heiße Momente: Kreuz an."
+          "text": "Dein Plan für heiße Momente: Kreuz an.",
+          "hinweis": "Beispiel: erstes Zeichen: Kiefer fest – Ausstiege: Auszeit und Sagen."
         },
         {
           "art": "ankreuzen",
@@ -6749,10 +7148,21 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wer hilft dir, wenn es zu viel wird? Trag eine Person ein, der du vertraust – nur, wenn du magst. Die Nummern sind für alle da."
+          "text": "Wer hilft dir, wenn es zu viel wird? Trag eine Person ein, der du vertraust – nur, wenn du magst. Die Nummern sind für alle da.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ],
+          "hinweis": "Einen Satz zum Ansprechen übst du einmal laut: „Hast du kurz Zeit? Mir ist gerade alles zu viel.“"
         },
         {
           "art": "notfall"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Du musst nicht alles können",
+          "text": "Zwei Ausstiege, die dir helfen, reichen. Du entscheidest, wem du es sagst."
         },
         {
           "art": "aufgabe",
@@ -6764,6 +7174,16 @@
           "von": "noch unsicher",
           "bis": "sehr sicher",
           "stufen": 5
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit:",
+          "items": [
+            "Ich habe sechs Ausstiege.",
+            "Zwei davon sind meine.",
+            "Ich weiß, wer mir hilft."
+          ],
+          "spalten": 1
         },
         {
           "art": "aufgabe",
@@ -6816,7 +7236,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta courbe complète : dans quelle mesure chaque issue t’aide-t-elle ? Coche."
+          "text": "Ta courbe complète : dans quelle mesure chaque issue t’aide-t-elle ? Coche.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -6836,7 +7260,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ton plan pour les moments chauds : coche."
+          "text": "Ton plan pour les moments chauds : coche.",
+          "hinweis": "Exemple : premier signe : mâchoire serrée – issues : prendre du recul et dire."
         },
         {
           "art": "ankreuzen",
@@ -6876,10 +7301,21 @@
         },
         {
           "art": "aufgabe",
-          "text": "Qui peut t’aider quand c’est trop ? Note une personne en qui tu as confiance – seulement si tu veux. Les numéros sont à ta disposition."
+          "text": "Qui peut t’aider quand c’est trop ? Note une personne en qui tu as confiance – seulement si tu veux. Les numéros sont à ta disposition.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ],
+          "hinweis": "Une phrase pour aborder quelqu’un, tu l’essaies une fois à voix haute : « Tu as un instant ? Là, tout est trop pour moi. »"
         },
         {
           "art": "notfall"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tu n’as pas besoin de tout savoir faire",
+          "text": "Deux issues qui t’aident suffisent. Tu décides à qui tu en parles."
         },
         {
           "art": "aufgabe",
@@ -6891,6 +7327,16 @@
           "von": "pas encore sûr(e)",
           "bis": "très sûr(e)",
           "stufen": 5
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte :",
+          "items": [
+            "J’ai six issues.",
+            "Deux d’entre elles sont les miennes.",
+            "Je sais qui peut m’aider."
+          ],
+          "spalten": 1
         },
         {
           "art": "aufgabe",
@@ -6913,7 +7359,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche geht die sechs Ausstiege durch und kreuzt an, wie gut jeder ihm oder ihr hilft; die Fachkraft nennt bei Bedarf ein Beispiel aus den Stunden. In Aufgabe 2 kreuzt er oder sie das erste Zeichen, zwei Ausstiege und einen Satz an. In Aufgabe 3 trägt er oder sie eine Vertrauensperson ein – nur, wenn er oder sie mag; die Nummern liest die Fachkraft kurz vor. Rückblick und Karte sind zum Ankreuzen und kommen zum Schluss; die Mappe mit allen Blättern geht in die Verabschiedung.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche geht die sechs Ausstiege durch und kreuzt an, wie gut jeder ihm oder ihr hilft; die Fachkraft nennt bei Bedarf ein Beispiel aus den Stunden. Bei jedem Ausstieg zeigt er oder sie zuerst, wo auf der Kurve er hilft. In Aufgabe 2 kreuzt er oder sie das erste Zeichen, zwei Ausstiege und einen Satz an. In Aufgabe 3 trägt er oder sie eine Vertrauensperson ein – nur, wenn er oder sie mag; die Nummern liest die Fachkraft kurz vor. In Aufgabe 3 sagt er oder sie den Satz zum Ansprechen einmal laut. Rückblick und Karte sind zum Ankreuzen und kommen zum Schluss; die Mappe mit allen Blättern geht in die Verabschiedung.",
           "sagen": [
             "Welcher Ausstieg war für dich der überraschendste?",
             "Woran würdest du merken, dass du früh genug aussteigst?"
@@ -6921,7 +7367,7 @@
           "wennEsKippt": "Fällt die Auswahl schwer, genügen ein Zeichen und ein Ausstieg; die Fachkraft nennt dazu ein Beispiel aus den Stunden. Mag der oder die Jugendliche keine Person eintragen, bleibt das Feld leer – die Nummern gelten trotzdem. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune passe en revue les six issues et coche dans quelle mesure chaque issue l’aide ; l’adulte donne au besoin un exemple tiré des séances. À l’exercice 2, il ou elle coche le premier signe, deux issues et une phrase. À l’exercice 3, il ou elle inscrit une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit brièvement les numéros. Le bilan et la carte se font en cochant et viennent à la fin ; le dossier avec toutes les fiches fait partie de l’au revoir.",
+          "text": "Exercice 1 ensemble : le ou la jeune passe en revue les six issues et coche dans quelle mesure chaque issue l’aide ; l’adulte donne au besoin un exemple tiré des séances. Pour chaque issue, il ou elle montre d’abord où elle aide sur la courbe. À l’exercice 2, il ou elle coche le premier signe, deux issues et une phrase. À l’exercice 3, il ou elle inscrit une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit brièvement les numéros. À l’exercice 3, il ou elle dit une fois à voix haute la phrase pour aborder quelqu’un. Le bilan et la carte se font en cochant et viennent à la fin ; le dossier avec toutes les fiches fait partie de l’au revoir.",
           "sagen": [
             "Quelle issue t’a le plus surpris(e) ?",
             "À quoi remarquerais-tu que tu sors assez tôt ?"

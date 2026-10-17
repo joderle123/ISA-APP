@@ -249,6 +249,12 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Eine Zahl ist keine Note",
+          "text": "Es gibt keine richtige oder falsche Zahl. Du entscheidest, was du aufschreibst."
+        },
+        {
           "art": "aufgabe",
           "text": "Dein Werkzeugkasten wächst: Das neue Werkzeug heißt „Wut-Thermometer“. Schreib dazu, wann du es brauchst.",
           "symbole": [
@@ -291,7 +297,7 @@
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
-            "Ich brauche es, wenn …"
+            "Das nehme ich mit – ich brauche es, wenn …"
           ]
         },
         {
@@ -483,6 +489,12 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un chiffre n’est pas une note",
+          "text": "Il n’y a pas de bon ou de mauvais chiffre. Tu décides de ce que tu écris."
+        },
+        {
           "art": "aufgabe",
           "text": "Ta boîte à outils grandit : le nouvel outil s’appelle « Thermomètre de la colère ». Écris quand tu en as besoin.",
           "symbole": [
@@ -525,7 +537,7 @@
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
-            "J’en ai besoin quand …"
+            "Ce que j’emporte – j’en ai besoin quand …"
           ]
         },
         {
@@ -847,8 +859,14 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Eine Zahl ist keine Note",
+          "text": "Es gibt keine richtige oder falsche Zahl. Du entscheidest, was du ankreuzt."
+        },
+        {
           "art": "aufgabe",
-          "text": "Dein Werkzeugkasten wächst: Das neue Werkzeug heißt „Wut-Thermometer“. Kreis es ein.",
+          "text": "Dein Werkzeugkasten wächst. Das nehme ich mit: das neue Werkzeug „Wut-Thermometer“. Kreis es ein.",
           "symbole": [
             "einkreisen"
           ]
@@ -1068,8 +1086,14 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un chiffre n’est pas une note",
+          "text": "Il n’y a pas de bon ou de mauvais chiffre. Tu décides de ce que tu coches."
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta boîte à outils grandit : le nouvel outil s’appelle « Thermomètre de la colère ». Entoure-le.",
+          "text": "Ta boîte à outils grandit. Ce que j’emporte : le nouvel outil « Thermomètre de la colère ». Entoure-le.",
           "symbole": [
             "einkreisen"
           ]
@@ -1568,6 +1592,12 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Jeder hat andere Knöpfe",
+          "text": "Ein Knopf ist nichts Schlechtes – er zeigt, was dir wichtig ist. Du entscheidest, welchen du nennst."
+        },
+        {
           "art": "aufgabe",
           "text": "Dein Werkzeugkasten wächst: Das neue Werkzeug heißt „Knopf-Karte“. Schreib dazu, wann du es brauchst.",
           "symbole": [
@@ -1610,7 +1640,7 @@
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
-            "Ich brauche es, wenn …"
+            "Das nehme ich mit – ich brauche es, wenn …"
           ]
         },
         {
@@ -1759,6 +1789,12 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Chacun a ses boutons",
+          "text": "Un bouton n’a rien de mauvais – il montre ce qui compte pour toi. Tu décides lequel tu nommes."
+        },
+        {
           "art": "aufgabe",
           "text": "Ta boîte à outils grandit : le nouvel outil s’appelle « Carte des boutons ». Écris quand tu en as besoin.",
           "symbole": [
@@ -1801,7 +1837,7 @@
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
-            "J’en ai besoin quand …"
+            "Ce que j’emporte – j’en ai besoin quand …"
           ]
         },
         {
@@ -2090,8 +2126,14 @@
           "bis": "10 · Kochpunkt"
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Jeder hat andere Knöpfe",
+          "text": "Ein Knopf ist nichts Schlechtes – er zeigt, was dir wichtig ist. Du entscheidest, welchen du zeigst."
+        },
+        {
           "art": "aufgabe",
-          "text": "Dein Werkzeugkasten wächst: Das neue Werkzeug heißt „Knopf-Karte“. Kreis es ein.",
+          "text": "Dein Werkzeugkasten wächst. Das nehme ich mit: das neue Werkzeug „Knopf-Karte“. Kreis es ein.",
           "symbole": [
             "einkreisen"
           ]
@@ -2285,8 +2327,14 @@
           "bis": "10 · ébullition"
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Chacun a ses boutons",
+          "text": "Un bouton n’a rien de mauvais – il montre ce qui compte pour toi. Tu décides lequel tu montres."
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta boîte à outils grandit : le nouvel outil s’appelle « Carte des boutons ». Entoure-le.",
+          "text": "Ta boîte à outils grandit. Ce que j’emporte : le nouvel outil « Carte des boutons ». Entoure-le.",
           "symbole": [
             "einkreisen"
           ]
@@ -2802,12 +2850,27 @@
           ]
         },
         {
-          "art": "satzanfaenge",
-          "linien": 2,
+          "art": "formfelder",
+          "form": "blase",
           "items": [
-            "Wenn ich merke, dass es heiß wird, sage ich mir: …",
+            "Wenn ich merke, dass es heiß wird, sage ich mir: …"
+          ],
+          "anzahl": 1,
+          "spalten": 1,
+          "hoehe": 3
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
             "Das hilft mir, weil …"
-          ]
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Kühle Gedanken sind Übung",
+          "text": "Mit jedem Mal fällt es leichter. Du entscheidest, welcher Satz zu dir passt."
         },
         {
           "art": "aufgabe",
@@ -2852,7 +2915,7 @@
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
-            "Ich brauche es, wenn …"
+            "Das nehme ich mit – ich brauche es, wenn …"
           ]
         },
         {
@@ -3002,12 +3065,27 @@
           ]
         },
         {
-          "art": "satzanfaenge",
-          "linien": 2,
+          "art": "formfelder",
+          "form": "blase",
           "items": [
-            "Quand je sens que ça chauffe, je me dis : …",
+            "Quand je sens que ça chauffe, je me dis : …"
+          ],
+          "anzahl": 1,
+          "spalten": 1,
+          "hoehe": 3
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
             "Ça m’aide parce que …"
-          ]
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Les pensées qui calment, ça s’entraîne",
+          "text": "Plus tu t’exerces, plus c’est facile. Tu décides quelle phrase te convient."
         },
         {
           "art": "aufgabe",
@@ -3052,7 +3130,7 @@
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
-            "J’en ai besoin quand …"
+            "Ce que j’emporte – j’en ai besoin quand …"
           ]
         },
         {
@@ -3323,8 +3401,14 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Kühle Gedanken sind Übung",
+          "text": "Mit jedem Mal fällt es leichter. Du entscheidest, welcher Satz zu dir passt."
+        },
+        {
           "art": "aufgabe",
-          "text": "Dein Werkzeugkasten wächst: Das neue Werkzeug heißt „Kühle Gedanken“. Kreis es ein.",
+          "text": "Dein Werkzeugkasten wächst. Das nehme ich mit: das neue Werkzeug „Kühle Gedanken“. Kreis es ein.",
           "symbole": [
             "einkreisen"
           ]
@@ -3503,8 +3587,14 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Les pensées qui calment, ça s’entraîne",
+          "text": "Plus tu t’exerces, plus c’est facile. Tu décides quelle phrase te convient."
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta boîte à outils grandit : le nouvel outil s’appelle « Pensées qui calment ». Entoure-le.",
+          "text": "Ta boîte à outils grandit. Ce que j’emporte : le nouvel outil « Pensées qui calment ». Entoure-le.",
           "symbole": [
             "einkreisen"
           ]
@@ -3928,7 +4018,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deine Testreihe: Stell dir vor, die Pause fällt aus – dabei hattest du dich so gefreut. Trag für jeden Trick, den ihr getestet habt, die Zahl vorher und nachher ein.",
+          "text": "Deine Testreihe: Die Pause fällt aus – dabei hattest du dich so gefreut. Trag für jeden getesteten Trick die Zahl vorher und nachher ein.",
           "symbole": [
             "schreiben"
           ]
@@ -3989,7 +4079,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein Trick für die Kiste: Such den aus, der bei dir am besten hilft und zu deinem Alltag passt.",
+          "text": "Dein Trick für die Kiste: Such den aus, der bei dir am besten hilft und zu deinem Alltag passt. Kreuz an, wie er ist.",
           "symbole": [
             "schreiben"
           ],
@@ -4002,6 +4092,20 @@
             "Mein Trick: …",
             "Ich starte ihn schon bei einer …"
           ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "auffällig",
+              "unauffällig"
+            ],
+            [
+              "braucht Platz",
+              "geht überall"
+            ]
+          ],
+          "stufen": 5
         },
         {
           "art": "aufgabe",
@@ -4019,6 +4123,12 @@
               "dann": "lege ich das Handy weg und atme dreimal lang aus."
             }
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nicht jeder Trick passt",
+          "text": "Was bei anderen hilft, hilft dir vielleicht nicht – das ist okay. Du entscheidest, welchen du behältst."
         },
         {
           "art": "aufgabe",
@@ -4063,7 +4173,7 @@
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
-            "Ich brauche es, wenn …"
+            "Das nehme ich mit – ich brauche es, wenn …"
           ]
         },
         {
@@ -4125,7 +4235,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta série de tests : imagine que la récré est annulée alors que tu t’en réjouissais tant. Pour chaque astuce testée, note le chiffre avant et le chiffre après.",
+          "text": "Ta série de tests : la récré est annulée alors que tu t’en réjouissais tant. Pour chaque astuce testée, note le chiffre avant et après.",
           "symbole": [
             "schreiben"
           ]
@@ -4186,7 +4296,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ton astuce pour la boîte : choisis celle qui t’aide le mieux et qui va avec ton quotidien.",
+          "text": "Ton astuce pour la boîte : choisis celle qui t’aide le mieux et qui va avec ton quotidien. Coche comment elle est.",
           "symbole": [
             "schreiben"
           ],
@@ -4199,6 +4309,20 @@
             "Mon astuce : …",
             "Je la commence dès que je suis à …"
           ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "voyante",
+              "discrète"
+            ],
+            [
+              "prend de la place",
+              "marche partout"
+            ]
+          ],
+          "stufen": 5
         },
         {
           "art": "aufgabe",
@@ -4216,6 +4340,12 @@
               "dann": "je pose le téléphone et j’expire trois fois longuement."
             }
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tous les trucs ne conviennent pas",
+          "text": "Ce qui aide les autres ne t’aide peut-être pas – c’est normal. Tu décides lequel tu gardes."
         },
         {
           "art": "aufgabe",
@@ -4260,7 +4390,7 @@
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
-            "J’en ai besoin quand …"
+            "Ce que j’emporte – j’en ai besoin quand …"
           ]
         },
         {
@@ -4289,7 +4419,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Für die drei Tricks, die das Kind im Kern getestet hat, trägt es die Zahl vorher und nachher ein und schreibt in der letzten Spalte „ja“ oder „nein“; die anderen Zeilen bleiben leer, und wenn Zeit bleibt, probiert das Kind mit der Fachkraft noch einen davon eine Minute aus. Bei einem Trick, der nicht hilft, ist „nachher“ gleich „vorher“ – auch das ist ein gültiges Ergebnis. In Aufgabe 2 schreibt das Kind seinen Trick und die Zahl, ab der es startet, in Aufgabe 3 einen Wenn-dann-Plan; die Beispielzeile zeigt, wie es gemeint ist. Aufgabe 4 zeigt, was schon im Werkzeugkasten liegt; den Auftrag (Aufgabe 5) nimmt das Kind mit, die Fachkraft liest ihn kurz mit ihm durch.",
+          "text": "Aufgabe 1 gemeinsam: Für die drei Tricks, die das Kind im Kern getestet hat, trägt es die Zahl vorher und nachher ein und schreibt in der letzten Spalte „ja“ oder „nein“; die anderen Zeilen bleiben leer, und wenn Zeit bleibt, probiert das Kind mit der Fachkraft noch einen davon eine Minute aus. Bei einem Trick, der nicht hilft, ist „nachher“ gleich „vorher“ – auch das ist ein gültiges Ergebnis. In Aufgabe 2 schreibt das Kind seinen Trick und die Zahl, ab der es startet, in Aufgabe 3 einen Wenn-dann-Plan; die Beispielzeile zeigt, wie es gemeint ist. Bei Aufgabe 2 kreuzt es auf den Reglern an, wie sein Trick ist. Aufgabe 4 zeigt, was schon im Werkzeugkasten liegt; den Auftrag (Aufgabe 5) nimmt das Kind mit, die Fachkraft liest ihn kurz mit ihm durch.",
           "sagen": [
             "Welche Zahl hast du vorher? Und nachher?",
             "Kein Trick hilft allen – welcher hilft dir?"
@@ -4297,7 +4427,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Zahlen, und die Fachkraft trägt sie ein; „ja“ und „nein“ dürfen auch gezeigt werden. Drei getestete Tricks und ein Plan genügen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : pour les trois astuces que l’enfant a testées dans la première partie, il note le chiffre avant et après et écrit dans la dernière colonne « oui » ou « non » ; les autres lignes restent vides, et s’il reste du temps, l’enfant en essaie encore une avec l’adulte pendant une minute. Si une astuce n’aide pas, « après » reste égal à « avant » – c’est aussi un résultat valable. À l’exercice 2, l’enfant écrit son astuce et le chiffre à partir duquel il commence, à l’exercice 3 un plan « si … alors … » ; la ligne d’exemple montre comment faire. L’exercice 4 montre ce qui est déjà dans la boîte à outils ; l’enfant emporte la mission (exercice 5), l’adulte la lit rapidement avec lui.",
+          "text": "Exercice 1 ensemble : pour les trois astuces que l’enfant a testées dans la première partie, il note le chiffre avant et après et écrit dans la dernière colonne « oui » ou « non » ; les autres lignes restent vides, et s’il reste du temps, l’enfant en essaie encore une avec l’adulte pendant une minute. Si une astuce n’aide pas, « après » reste égal à « avant » – c’est aussi un résultat valable. À l’exercice 2, l’enfant écrit son astuce et le chiffre à partir duquel il commence, à l’exercice 3 un plan « si … alors … » ; la ligne d’exemple montre comment faire. À l’exercice 2, il coche sur les curseurs comment est son astuce. L’exercice 4 montre ce qui est déjà dans la boîte à outils ; l’enfant emporte la mission (exercice 5), l’adulte la lit rapidement avec lui.",
           "sagen": [
             "Quel chiffre avant ? Et après ?",
             "Aucune astuce n’aide tout le monde – laquelle t’aide, toi ?"
@@ -4450,10 +4580,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Das sind sechs Abkühl-Tricks. Ihr probiert drei davon je eine Minute aus. Hat der Trick geholfen? Kreuz an.",
+          "text": "Das sind sechs Abkühl-Tricks. Ihr probiert drei davon je eine Minute aus. Hat der Trick geholfen? Zeig es, dann kreuz an.",
           "symbole": [
+            "zeigen",
             "ankreuzen"
-          ]
+          ],
+          "hinweis": "Beispiel: Bei Tom war es vorher eine 6, nachher eine 4 – der Trick hat geholfen."
         },
         {
           "art": "bilder",
@@ -4555,8 +4687,14 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nicht jeder Trick passt",
+          "text": "Was bei anderen hilft, hilft dir vielleicht nicht – das ist okay. Du entscheidest, welchen du behältst."
+        },
+        {
           "art": "aufgabe",
-          "text": "Dein Werkzeugkasten wächst: Das neue Werkzeug heißt „Abkühl-Trick“. Kreis es ein.",
+          "text": "Dein Werkzeugkasten wächst. Das nehme ich mit: das neue Werkzeug „Abkühl-Trick“. Kreis es ein.",
           "symbole": [
             "einkreisen"
           ]
@@ -4646,10 +4784,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Voici six astuces pour se calmer. Vous en essayez trois, une minute chacune. L’astuce t’a-t-elle aidé ? Coche.",
+          "text": "Voici six astuces pour se calmer. Vous en essayez trois, une minute chacune. L’astuce t’a-t-elle aidé ? Montre-le, puis coche.",
           "symbole": [
+            "zeigen",
             "ankreuzen"
-          ]
+          ],
+          "hinweis": "Exemple : chez Tom, c’était 6 avant, 4 après – l’astuce l’a aidé."
         },
         {
           "art": "bilder",
@@ -4751,8 +4891,14 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tous les trucs ne conviennent pas",
+          "text": "Ce qui aide les autres ne t’aide peut-être pas – c’est normal. Tu décides lequel tu gardes."
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta boîte à outils grandit : le nouvel outil s’appelle « Astuce pour se calmer ». Entoure-le.",
+          "text": "Ta boîte à outils grandit. Ce que j’emporte : le nouvel outil « Astuce pour se calmer ». Entoure-le.",
           "symbole": [
             "einkreisen"
           ]
@@ -4809,7 +4955,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind kreuzt in der Tabelle für die drei getesteten Tricks an, ob sie helfen; die anderen Zeilen bleiben leer (bleibt Zeit: einen weiteren Trick eine Minute testen). In Aufgabe 2 macht es mit seinem Lieblings-Trick ein Kreuz vor und eins nach dem Trick; steht das zweite Kreuz nicht tiefer, ist das auch ein gültiges Ergebnis. In Aufgabe 3 kreist es ein, wo sein Trick passt. Aufgabe 4 zeigt, was schon im Werkzeugkasten liegt; der Auftrag (Aufgabe 5) besteht nur aus einem Kreuz.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind kreuzt in der Tabelle für die drei getesteten Tricks an, ob sie helfen; die anderen Zeilen bleiben leer (bleibt Zeit: einen weiteren Trick eine Minute testen). Es zeigt zuerst auf „hilft“, „ein bisschen“ oder „hilft nicht“. In Aufgabe 2 macht es mit seinem Lieblings-Trick ein Kreuz vor und eins nach dem Trick; steht das zweite Kreuz nicht tiefer, ist das auch ein gültiges Ergebnis. In Aufgabe 3 kreist es ein, wo sein Trick passt. Aufgabe 4 zeigt, was schon im Werkzeugkasten liegt; der Auftrag (Aufgabe 5) besteht nur aus einem Kreuz.",
           "sagen": [
             "Welche Zahl hast du vorher? Und nachher?",
             "Kein Trick hilft allen – welcher hilft dir?"
@@ -4817,7 +4963,7 @@
           "wennEsKippt": "Fällt Lesen schwer, zeigt die Fachkraft die Bilder und macht den Trick vor; das Kind zeigt auf „hilft“, „ein bisschen“ oder „hilft nicht“. Drei getestete Tricks und ein Favorit genügen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant coche dans le tableau, pour les trois astuces testées, si elles aident ; les autres lignes restent vides (s’il reste du temps : tester une autre astuce une minute). À l’exercice 2, il fait avec son astuce préférée une croix avant et une après ; si la deuxième croix n’est pas plus basse, c’est aussi un résultat valable. À l’exercice 3, il entoure où son astuce convient. L’exercice 4 montre ce qui est déjà dans la boîte à outils ; la mission (exercice 5) ne demande qu’une croix.",
+          "text": "Exercice 1 ensemble : l’enfant coche dans le tableau, pour les trois astuces testées, si elles aident ; les autres lignes restent vides (s’il reste du temps : tester une autre astuce une minute). Il montre d’abord « ça aide », « un peu » ou « ça n’aide pas ». À l’exercice 2, il fait avec son astuce préférée une croix avant et une après ; si la deuxième croix n’est pas plus basse, c’est aussi un résultat valable. À l’exercice 3, il entoure où son astuce convient. L’exercice 4 montre ce qui est déjà dans la boîte à outils ; la mission (exercice 5) ne demande qu’une croix.",
           "sagen": [
             "Quel chiffre avant ? Et après ?",
             "Aucune astuce n’aide tout le monde – laquelle t’aide, toi ?"
@@ -5245,6 +5391,12 @@
           "titel": "Wenn es nicht klappt, hole ich Hilfe bei:"
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nicht jeder Spruch braucht eine Antwort",
+          "text": "Weggehen ist auch eine Antwort. Du entscheidest, was du aufschreibst."
+        },
+        {
           "art": "aufgabe",
           "text": "Dein Werkzeugkasten wächst: Das neue Werkzeug heißt „Schild-Satz“. Schreib dazu, wann du es brauchst.",
           "symbole": [
@@ -5287,7 +5439,7 @@
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
-            "Ich brauche es, wenn …"
+            "Das nehme ich mit – ich brauche es, wenn …"
           ]
         },
         {
@@ -5408,6 +5560,12 @@
           "titel": "Si ça ne marche pas, je demande de l’aide à :"
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tous les propos ne méritent pas de réponse",
+          "text": "S’éloigner est aussi une réponse. Tu décides de ce que tu écris."
+        },
+        {
           "art": "aufgabe",
           "text": "Ta boîte à outils grandit : le nouvel outil s’appelle « Phrase-bouclier ». Écris quand tu en as besoin.",
           "symbole": [
@@ -5450,7 +5608,7 @@
           "art": "satzanfaenge",
           "linien": 1,
           "items": [
-            "J’en ai besoin quand …"
+            "Ce que j’emporte – j’en ai besoin quand …"
           ]
         },
         {
@@ -5668,7 +5826,8 @@
           "text": "Dein Schild-Satz: Welcher klingt nach dir? Kreuz einen an.",
           "symbole": [
             "ankreuzen"
-          ]
+          ],
+          "hinweis": "Beispiel: Tom sagt „Kann sein.“ – und geht weiter."
         },
         {
           "art": "ankreuzen",
@@ -5692,7 +5851,7 @@
         {
           "art": "bilder",
           "klein": true,
-          "spalten": 2,
+          "spalten": 4,
           "modus": "einkreisen",
           "bilder": [
             {
@@ -5732,8 +5891,14 @@
           "spalten": 2
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nicht jeder Spruch braucht eine Antwort",
+          "text": "Weggehen ist auch eine Antwort. Du entscheidest, was du ankreuzt."
+        },
+        {
           "art": "aufgabe",
-          "text": "Dein Werkzeugkasten wächst: Das neue Werkzeug heißt „Schild-Satz“. Kreis es ein.",
+          "text": "Dein Werkzeugkasten wächst. Das nehme ich mit: das neue Werkzeug „Schild-Satz“. Kreis es ein.",
           "symbole": [
             "einkreisen"
           ]
@@ -5862,7 +6027,8 @@
           "text": "Ta phrase-bouclier : laquelle te ressemble ? Coches-en une.",
           "symbole": [
             "ankreuzen"
-          ]
+          ],
+          "hinweis": "Exemple : Tom dit « Peut-être. » – et continue son chemin."
         },
         {
           "art": "ankreuzen",
@@ -5886,7 +6052,7 @@
         {
           "art": "bilder",
           "klein": true,
-          "spalten": 2,
+          "spalten": 4,
           "modus": "einkreisen",
           "bilder": [
             {
@@ -5926,8 +6092,14 @@
           "spalten": 2
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tous les propos ne méritent pas de réponse",
+          "text": "S’éloigner est aussi une réponse. Tu décides de ce que tu coches."
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta boîte à outils grandit : le nouvel outil s’appelle « Phrase-bouclier ». Entoure-le.",
+          "text": "Ta boîte à outils grandit. Ce que j’emporte : le nouvel outil « Phrase-bouclier ». Entoure-le.",
           "symbole": [
             "einkreisen"
           ]
@@ -6405,10 +6577,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Welcher Schild-Satz klingt nach Tom? Kreuz einen an.",
+          "text": "Welcher Schild-Satz klingt nach Tom? Kreuz einen an und sag ihn laut.",
           "symbole": [
-            "ankreuzen"
-          ]
+            "ankreuzen",
+            "sprechen"
+          ],
+          "hinweis": "Beispiel: Tom sagt „Kann sein.“ – und geht weiter."
         },
         {
           "art": "ankreuzen",
@@ -6432,7 +6606,7 @@
         {
           "art": "bilder",
           "klein": true,
-          "spalten": 2,
+          "spalten": 4,
           "modus": "einkreisen",
           "bilder": [
             {
@@ -6472,8 +6646,14 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nicht jeder Spruch braucht eine Antwort",
+          "text": "Weggehen ist auch eine Antwort. Du entscheidest, was du ankreuzt."
+        },
+        {
           "art": "aufgabe",
-          "text": "Der Werkzeugkasten wächst: Das neue Werkzeug heißt „Schild-Satz“. Kreis es ein.",
+          "text": "Der Werkzeugkasten wächst. Das nehme ich mit: das neue Werkzeug „Schild-Satz“. Kreis es ein.",
           "symbole": [
             "einkreisen"
           ]
@@ -6598,10 +6778,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quelle phrase-bouclier ressemble à Tom ? Coches-en une.",
+          "text": "Quelle phrase-bouclier ressemble à Tom ? Coche-en une et dis-la à voix haute.",
           "symbole": [
-            "ankreuzen"
-          ]
+            "ankreuzen",
+            "sprechen"
+          ],
+          "hinweis": "Exemple : Tom dit « Peut-être. » – et continue son chemin."
         },
         {
           "art": "ankreuzen",
@@ -6625,7 +6807,7 @@
         {
           "art": "bilder",
           "klein": true,
-          "spalten": 2,
+          "spalten": 4,
           "modus": "einkreisen",
           "bilder": [
             {
@@ -6665,8 +6847,14 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tous les propos ne méritent pas de réponse",
+          "text": "S’éloigner est aussi une réponse. Tu décides de ce que tu coches."
+        },
+        {
           "art": "aufgabe",
-          "text": "La boîte à outils grandit : le nouvel outil s’appelle « Phrase-bouclier ». Entoure-le.",
+          "text": "La boîte à outils grandit. Ce que j’emporte : le nouvel outil « Phrase-bouclier ». Entoure-le.",
           "symbole": [
             "einkreisen"
           ]
@@ -6722,7 +6910,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind liest die vier Stufen und verbindet drei kleine Schul-Situationen mit dem Weg, der passt: ein einzelner Spruch in der Reihe, ein Spruch nach dem Spiel und etwas, das heute schon zum dritten Mal passiert; Hilfe holen geht sofort, wenn es wehtut. In Aufgabe 2 kreuzt es einen Schild-Satz für Tom an; eigene Worte sind besser, die Fachkraft fragt: „Wie sagt Tom das wirklich?“ Aufgabe 3 ist Toms Plan wie in der Übung: wo es passieren könnte, wie heiß Tom dann ist und wer hilft; es geht nur um Tom, und was das Kind ankreuzt, wird nicht kommentiert. Aufgabe 4 zeigt, wie der Werkzeugkasten wächst. Der Auftrag bleibt neutral (Toms Schild-Satz in Gedanken sagen oder eine Figur in einem Buch oder Film beobachten): nichts erzählen, keine echte Situation suchen; das Kind hakt später auf der Zielkarte ab, was geschafft ist.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind liest die vier Stufen und verbindet drei kleine Schul-Situationen mit dem Weg, der passt: ein einzelner Spruch in der Reihe, ein Spruch nach dem Spiel und etwas, das heute schon zum dritten Mal passiert; Hilfe holen geht sofort, wenn es wehtut. In Aufgabe 2 kreuzt es einen Schild-Satz für Tom an; eigene Worte sind besser, die Fachkraft fragt: „Wie sagt Tom das wirklich?“ Den Schild-Satz sagt das Kind dann laut. Aufgabe 3 ist Toms Plan wie in der Übung: wo es passieren könnte, wie heiß Tom dann ist und wer hilft; es geht nur um Tom, und was das Kind ankreuzt, wird nicht kommentiert. Aufgabe 4 zeigt, wie der Werkzeugkasten wächst. Der Auftrag bleibt neutral (Toms Schild-Satz in Gedanken sagen oder eine Figur in einem Buch oder Film beobachten): nichts erzählen, keine echte Situation suchen; das Kind hakt später auf der Zielkarte ab, was geschafft ist.",
           "sagen": [
             "Auf welcher Stufe fängt Tom an?",
             "Wie sagt Tom das wirklich?"
@@ -6730,7 +6918,7 @@
           "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Situationen und Sätze vor, und das Kind zeigt darauf. Ein Schild-Satz und eine Person, die Tom hilft, genügen. Erzählt das Kind von sich aus etwas Belastendes, sagt die Fachkraft ruhig: „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Tom zurück."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant lit les quatre niveaux et relie trois petites situations d’école à la façon de réagir qui convient : une pique isolée dans la file, une pique après le jeu et quelque chose qui arrive aujourd’hui pour la troisième fois ; demander de l’aide va tout de suite, si ça fait mal. À l’exercice 2, il coche une phrase-bouclier pour Tom ; des mots à soi sont mieux, l’adulte demande : « Comment Tom le dit-il vraiment ? » L’exercice 3 est le plan de Tom, comme dans l’exercice : où cela pourrait arriver, à combien Tom monte alors et qui aide ; il s’agit seulement de Tom, et ce que l’enfant coche n’est pas commenté. L’exercice 4 montre comment la boîte à outils grandit. La mission reste neutre (dire la phrase-bouclier de Tom dans sa tête ou observer un personnage dans un livre ou un film) : rien à raconter, pas de situation réelle à chercher ; l’enfant coche plus tard sur la carte ce qui est fait.",
+          "text": "Exercice 1 ensemble : l’enfant lit les quatre niveaux et relie trois petites situations d’école à la façon de réagir qui convient : une pique isolée dans la file, une pique après le jeu et quelque chose qui arrive aujourd’hui pour la troisième fois ; demander de l’aide va tout de suite, si ça fait mal. À l’exercice 2, il coche une phrase-bouclier pour Tom ; des mots à soi sont mieux, l’adulte demande : « Comment Tom le dit-il vraiment ? » L’enfant dit ensuite la phrase à voix haute. L’exercice 3 est le plan de Tom, comme dans l’exercice : où cela pourrait arriver, à combien Tom monte alors et qui aide ; il s’agit seulement de Tom, et ce que l’enfant coche n’est pas commenté. L’exercice 4 montre comment la boîte à outils grandit. La mission reste neutre (dire la phrase-bouclier de Tom dans sa tête ou observer un personnage dans un livre ou un film) : rien à raconter, pas de situation réelle à chercher ; l’enfant coche plus tard sur la carte ce qui est fait.",
           "sagen": [
             "Par quel niveau Tom commence-t-il ?",
             "Comment Tom le dit-il vraiment ?"
@@ -6912,6 +7100,27 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Du musst nicht alles können",
+          "text": "Zwei Werkzeuge, die dir helfen, reichen. Du entscheidest, welche du behältst."
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Thermometer",
+            "Knopf-Karte",
+            "Kühle Gedanken",
+            "Abkühl-Trick",
+            "Schild-Satz"
+          ],
+          "spalten": 5,
+          "legende": [
+            "So sicher will ich werden.",
+            "So sicher bin ich jetzt."
+          ]
+        },
+        {
           "art": "aufgabe",
           "text": "Meine Karte: Das ist dein Plan für heiße Momente. Trag ein, was zu dir passt, und kreuz an, wer hilft.",
           "symbole": [
@@ -7083,6 +7292,27 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tu n’as pas besoin de tout savoir faire",
+          "text": "Deux outils qui t’aident suffisent. Tu décides lesquels tu gardes."
+        },
+        {
+          "art": "glaeser",
+          "items": [
+            "Thermomètre",
+            "Carte des boutons",
+            "Pensées qui calment",
+            "Astuce – se calmer",
+            "Phrase-bouclier"
+          ],
+          "spalten": 5,
+          "legende": [
+            "Je veux en arriver là.",
+            "J’en suis là."
+          ]
+        },
+        {
           "art": "aufgabe",
           "text": "Ma carte : voici ton plan pour les moments chauds. Écris ce qui te convient et coche qui aide.",
           "symbole": [
@@ -7174,7 +7404,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind betrachtet die sechs Werkzeuge, kreist das ein, das ihm bisher am meisten geholfen hat, und schreibt zwei Sätze dazu: was ihm hilft und was es noch übt. In Aufgabe 2 füllt es seine Karte aus – sie nimmt es mit – und kreuzt an, wer helfen kann; was es im freien Feld einträgt, wird nicht nachgefragt. Dann schreibt es seinen Namen auf die Urkunde, die Fachkraft unterschreibt daneben (Aufgabe 3) und kreuzt an, welche zwei Werkzeuge es als Erstes in den Alltag mitnimmt (Aufgabe 4). Die Werkzeug-Mappe mit allen Blättern darf das Kind heute mitnehmen.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind betrachtet die sechs Werkzeuge, kreist das ein, das ihm bisher am meisten geholfen hat, und schreibt zwei Sätze dazu: was ihm hilft und was es noch übt. Danach malt es die Gläser aus: so sicher fühlt es sich mit jedem Werkzeug. In Aufgabe 2 füllt es seine Karte aus – sie nimmt es mit – und kreuzt an, wer helfen kann; was es im freien Feld einträgt, wird nicht nachgefragt. Dann schreibt es seinen Namen auf die Urkunde, die Fachkraft unterschreibt daneben (Aufgabe 3) und kreuzt an, welche zwei Werkzeuge es als Erstes in den Alltag mitnimmt (Aufgabe 4). Die Werkzeug-Mappe mit allen Blättern darf das Kind heute mitnehmen.",
           "sagen": [
             "Welches Werkzeug hat dir am meisten geholfen?",
             "Wen kannst du ansprechen? Ich bin auch eine Person, die du fragen darfst."
@@ -7182,7 +7412,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt das Kind die Sätze, und die Fachkraft schreibt Stichworte. Auf der Karte genügen drei Einträge, bei der Urkunde Name und Unterschrift; „Am besten hilft mir“ darf auch gesagt werden. Wird die Zeit knapp, entfällt Aufgabe 4; die Fachkraft fragt mündlich, welche zwei Werkzeuge das Kind mitnimmt."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant observe les six outils, entoure celui qui l’a le plus aidé jusqu’ici et écrit deux phrases : ce qui l’aide et ce qu’il s’entraîne encore à faire. À l’exercice 2, il remplit sa carte – il l’emporte – et coche qui peut aider ; on ne demande rien sur ce qu’il écrit dans le champ libre. Ensuite, il écrit son nom sur le certificat, l’adulte signe à côté (exercice 3) et coche les deux outils qu’il emporte en premier au quotidien (exercice 4). L’enfant peut emporter aujourd’hui la chemise des outils avec toutes les fiches.",
+          "text": "Exercice 1 ensemble : l’enfant observe les six outils, entoure celui qui l’a le plus aidé jusqu’ici et écrit deux phrases : ce qui l’aide et ce qu’il s’entraîne encore à faire. Ensuite, il colorie les verres : à quel point il se sent à l’aise avec chaque outil. À l’exercice 2, il remplit sa carte – il l’emporte – et coche qui peut aider ; on ne demande rien sur ce qu’il écrit dans le champ libre. Ensuite, il écrit son nom sur le certificat, l’adulte signe à côté (exercice 3) et coche les deux outils qu’il emporte en premier au quotidien (exercice 4). L’enfant peut emporter aujourd’hui la chemise des outils avec toutes les fiches.",
           "sagen": [
             "Quel outil t’a le plus aidé ?",
             "À qui peux-tu t’adresser ? Moi aussi, tu peux me demander."
@@ -7371,12 +7601,28 @@
           ]
         },
         {
+          "art": "glaeser",
+          "items": [
+            "Thermometer",
+            "Knopf-Karte",
+            "Kühle Gedanken",
+            "Abkühl-Trick",
+            "Schild-Satz"
+          ],
+          "spalten": 5,
+          "legende": [
+            "So sicher will ich werden.",
+            "So sicher bin ich jetzt."
+          ]
+        },
+        {
           "art": "aufgabe",
           "text": "Meine Karte: Kreis ein oder kreuz an – dein größter Knopf, dein Abkühl-Trick, dein Schild-Satz und wer dir hilft.",
           "symbole": [
             "einkreisen",
             "ankreuzen"
-          ]
+          ],
+          "hinweis": "Beispiel: Mein größter Knopf: unfair. Mein Abkühl-Trick: lang ausatmen."
         },
         {
           "art": "text",
@@ -7413,6 +7659,12 @@
               "text": "Sachen angefasst"
             }
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Du musst nicht alles können",
+          "text": "Zwei Werkzeuge, die dir helfen, reichen. Du entscheidest, welche du behältst."
         },
         {
           "art": "text",
@@ -7468,7 +7720,7 @@
         {
           "art": "bilder",
           "klein": true,
-          "spalten": 2,
+          "spalten": 4,
           "modus": "einkreisen",
           "bilder": [
             {
@@ -7514,7 +7766,7 @@
         },
         {
           "art": "ankreuzen",
-          "spalten": 2,
+          "spalten": 3,
           "items": [
             "1 Wut-Thermometer",
             "2 Knopf-Karte",
@@ -7597,12 +7849,28 @@
           ]
         },
         {
+          "art": "glaeser",
+          "items": [
+            "Thermomètre",
+            "Carte des boutons",
+            "Pensées qui calment",
+            "Astuce – se calmer",
+            "Phrase-bouclier"
+          ],
+          "spalten": 5,
+          "legende": [
+            "Je veux en arriver là.",
+            "J’en suis là."
+          ]
+        },
+        {
           "art": "aufgabe",
           "text": "Ma carte : entoure ou coche – ton plus gros bouton, ton astuce pour te calmer, ta phrase-bouclier et qui t’aide.",
           "symbole": [
             "einkreisen",
             "ankreuzen"
-          ]
+          ],
+          "hinweis": "Exemple : mon plus gros bouton : l’injustice. Mon astuce : expirer longuement."
         },
         {
           "art": "text",
@@ -7639,6 +7907,12 @@
               "text": "affaires touchées"
             }
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tu n’as pas besoin de tout savoir faire",
+          "text": "Deux outils qui t’aident suffisent. Tu décides lesquels tu gardes."
         },
         {
           "art": "text",
@@ -7694,7 +7968,7 @@
         {
           "art": "bilder",
           "klein": true,
-          "spalten": 2,
+          "spalten": 4,
           "modus": "einkreisen",
           "bilder": [
             {
@@ -7740,7 +8014,7 @@
         },
         {
           "art": "ankreuzen",
-          "spalten": 2,
+          "spalten": 3,
           "items": [
             "1 Thermomètre de la colère",
             "2 Carte des boutons",
@@ -7752,7 +8026,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Das Kind betrachtet die sechs Werkzeuge, kreist das ein, das ihm bisher am meisten geholfen hat, und sagt, warum. In Aufgabe 2 stellt es seine Karte zusammen: Es kreist seinen größten Knopf und seinen Abkühl-Trick ein, kreuzt einen Schild-Satz an und kreist die Menschen ein, die helfen können; was es wählt, wird nicht nachgefragt. Dann schreibt es seinen Namen auf die Urkunde, die Fachkraft unterschreibt daneben (Aufgabe 3) und kreuzt an, welche zwei Werkzeuge es als Erstes in den Alltag mitnimmt (Aufgabe 4). Die Werkzeug-Mappe mit allen Blättern darf das Kind heute mitnehmen.",
+          "text": "Aufgabe 1 gemeinsam: Das Kind betrachtet die sechs Werkzeuge, kreist das ein, das ihm bisher am meisten geholfen hat, und sagt, warum. Danach malt es die Gläser aus: so sicher fühlt es sich mit jedem Werkzeug. In Aufgabe 2 stellt es seine Karte zusammen: Es kreist seinen größten Knopf und seinen Abkühl-Trick ein, kreuzt einen Schild-Satz an und kreist die Menschen ein, die helfen können; was es wählt, wird nicht nachgefragt. Dann schreibt es seinen Namen auf die Urkunde, die Fachkraft unterschreibt daneben (Aufgabe 3) und kreuzt an, welche zwei Werkzeuge es als Erstes in den Alltag mitnimmt (Aufgabe 4). Die Werkzeug-Mappe mit allen Blättern darf das Kind heute mitnehmen.",
           "sagen": [
             "Welches Werkzeug hat dir am meisten geholfen?",
             "Wen kannst du ansprechen? Ich bin auch eine Person, die du fragen darfst."
@@ -7760,7 +8034,7 @@
           "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Werkzeuge und Sätze vor, und das Kind zeigt darauf. Auf der Karte genügen drei Kreise; bei der Urkunde reichen Name und Unterschrift. Wird die Zeit knapp, entfällt Aufgabe 4; die Fachkraft fragt mündlich, welche zwei Werkzeuge das Kind mitnimmt."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’enfant observe les six outils, entoure celui qui l’a le plus aidé jusqu’ici et dit pourquoi. À l’exercice 2, il compose sa carte : il entoure son plus gros bouton et son astuce pour se calmer, coche une phrase-bouclier et entoure les personnes qui peuvent aider ; on ne demande rien sur ce qu’il choisit. Ensuite, il écrit son nom sur le certificat, l’adulte signe à côté (exercice 3) et coche les deux outils qu’il emporte en premier au quotidien (exercice 4). L’enfant peut emporter aujourd’hui la chemise des outils avec toutes les fiches.",
+          "text": "Exercice 1 ensemble : l’enfant observe les six outils, entoure celui qui l’a le plus aidé jusqu’ici et dit pourquoi. Ensuite, il colorie les verres : à quel point il se sent à l’aise avec chaque outil. À l’exercice 2, il compose sa carte : il entoure son plus gros bouton et son astuce pour se calmer, coche une phrase-bouclier et entoure les personnes qui peuvent aider ; on ne demande rien sur ce qu’il choisit. Ensuite, il écrit son nom sur le certificat, l’adulte signe à côté (exercice 3) et coche les deux outils qu’il emporte en premier au quotidien (exercice 4). L’enfant peut emporter aujourd’hui la chemise des outils avec toutes les fiches.",
           "sagen": [
             "Quel outil t’a le plus aidé ?",
             "À qui peux-tu t’adresser ? Moi aussi, tu peux me demander."

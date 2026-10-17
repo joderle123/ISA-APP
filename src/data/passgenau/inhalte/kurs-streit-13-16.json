@@ -174,7 +174,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jana und Ben halten zusammen ein Referat, und ihr Streit wird Stufe für Stufe heißer. Lies die Stufen von unten nach oben und setz ein Kreuz an die Stufe, auf der du spätestens aussteigen würdest."
+          "text": "Jana und Ben streiten über ihr Referat, Stufe für Stufe heißer. Lies von unten nach oben und kreuz die Stufe an, auf der du spätestens aussteigst.",
+          "symbole": [
+            "ankreuzen",
+            "zeigen"
+          ],
+          "hinweis": "Geh dafür die Stufenkarten ab – bei jeder Szene eine Stufe höher."
         },
         {
           "art": "leiter",
@@ -267,6 +272,22 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Aussteigen ist keine Niederlage",
+          "text": "Je früher du eine Stufe erkennst, desto leichter ist der Ausstieg. Ab Stufe vier holst du Hilfe – das ist stark, nicht schwach."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst – für Jana und Ben darfst du immer schreiben."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        },
+        {
           "art": "aufgabe",
           "text": "Bis zum nächsten Mal: Beobachte einen Streit – in der Klasse, beim Sport, online oder in einer Serie – und bestimme die Stufe."
         },
@@ -322,7 +343,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jana et Ben présentent un exposé ensemble, et leur dispute chauffe degré après degré. Lis les degrés de bas en haut et mets une croix au degré où tu sortirais au plus tard."
+          "text": "Jana et Ben se disputent à propos de leur exposé, degré après degré. Lis de bas en haut et coche le degré où tu sortirais au plus tard.",
+          "symbole": [
+            "ankreuzen",
+            "zeigen"
+          ],
+          "hinweis": "Parcours pour cela les cartes des degrés – à chaque scène, un degré de plus."
         },
         {
           "art": "leiter",
@@ -413,6 +439,22 @@
           ],
           "spalten": 3,
           "klein": true
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Sortir, ce n’est pas perdre",
+          "text": "Plus tôt tu reconnais un degré, plus il est facile d’en sortir. À partir du degré quatre, on va chercher de l’aide – c’est fort, pas faible."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages – pour Jana et Ben, tu peux toujours écrire."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
         },
         {
           "art": "aufgabe",
@@ -599,7 +641,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jana und Ben halten zusammen ein Referat, und ihr Streit wird Stufe für Stufe heißer. Lies die Stufen von unten nach oben und setz ein Kreuz an die Stufe, auf der du spätestens aussteigen würdest."
+          "text": "Jana und Ben streiten über ihr Referat, Stufe für Stufe heißer. Lies von unten nach oben und kreuz die Stufe an, auf der du spätestens aussteigst.",
+          "symbole": [
+            "ankreuzen",
+            "zeigen"
+          ],
+          "hinweis": "Geh dafür die Stufenkarten ab – bei jeder Szene eine Stufe höher."
         },
         {
           "art": "leiter",
@@ -699,6 +746,27 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Aussteigen ist keine Niederlage",
+          "text": "Je früher du eine Stufe erkennst, desto leichter ist der Ausstieg. Ab Stufe vier holst du Hilfe – das ist stark, nicht schwach."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst – für Jana und Ben darfst du immer schreiben."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit (mehrere möglich):",
+          "spalten": 1,
+          "items": [
+            "Ein Streit klettert in Stufen – ich kann aussteigen.",
+            "Ab Stufe vier hole ich Hilfe.",
+            "Je früher ich es merke, desto leichter der Ausstieg."
+          ]
+        },
+        {
           "art": "aufgabe",
           "text": "Bis zum nächsten Mal: Beobachte einen Streit – in der Klasse, beim Sport, online oder in einer Serie – und bestimme die Stufe."
         },
@@ -745,7 +813,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jana et Ben présentent un exposé ensemble, et leur dispute chauffe degré après degré. Lis les degrés de bas en haut et mets une croix au degré où tu sortirais au plus tard."
+          "text": "Jana et Ben se disputent à propos de leur exposé, degré après degré. Lis de bas en haut et coche le degré où tu sortirais au plus tard.",
+          "symbole": [
+            "ankreuzen",
+            "zeigen"
+          ],
+          "hinweis": "Parcours pour cela les cartes des degrés – à chaque scène, un degré de plus."
         },
         {
           "art": "leiter",
@@ -843,6 +916,27 @@
           ],
           "spalten": 3,
           "klein": true
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Sortir, ce n’est pas perdre",
+          "text": "Plus tôt tu reconnais un degré, plus il est facile d’en sortir. À partir du degré quatre, on va chercher de l’aide – c’est fort, pas faible."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages – pour Jana et Ben, tu peux toujours écrire."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte (plusieurs réponses possibles) :",
+          "spalten": 1,
+          "items": [
+            "Une dispute monte par degrés – je peux en sortir.",
+            "À partir du degré quatre, je demande de l’aide.",
+            "Plus tôt je le remarque, plus c’est facile d’en sortir."
+          ]
         },
         {
           "art": "aufgabe",
@@ -1254,7 +1348,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Drei Positionen aus dem Alltag. Vermute ein Interesse dahinter und schreib die Frage auf, die du stellen würdest. Die erste Zeile ist ein Beispiel."
+          "text": "Drei Positionen aus dem Alltag. Vermute ein Interesse dahinter und schreib die Frage auf, die du stellen würdest. Die erste Zeile ist ein Beispiel.",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ],
+          "hinweis": "Probier die Frage danach laut im Rollenspiel – dein Gegenüber nennt die Position."
         },
         {
           "art": "tabelle",
@@ -1350,8 +1449,13 @@
           "klein": true
         },
         {
+          "art": "linien",
+          "anzahl": 1,
+          "label": "Das nehme ich mit"
+        },
+        {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Hör bei einem Wunsch oder Streit – in der Schule, im Sport oder in einer Serie – genau hin und vermute das Interesse hinter der Position. Wenn es passt, stell einmal die Taucherfrage."
+          "text": "Bis zum nächsten Mal: Hör bei einem Wunsch oder Streit genau hin und vermute das Interesse hinter der Position. Wenn es passt, stell die Taucherfrage."
         },
         {
           "art": "tabelle",
@@ -1432,7 +1536,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Trois positions de la vie quotidienne. Suppose un intérêt derrière et écris la question que tu poserais. La première ligne est un exemple."
+          "text": "Trois positions de la vie quotidienne. Suppose un intérêt derrière et écris la question que tu poserais. La première ligne est un exemple.",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ],
+          "hinweis": "Essaie ensuite la question à voix haute en jeu de rôle – la personne en face nomme la position."
         },
         {
           "art": "tabelle",
@@ -1528,8 +1637,13 @@
           "klein": true
         },
         {
+          "art": "linien",
+          "anzahl": 1,
+          "label": "Ce que j’emporte"
+        },
+        {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : écoute attentivement un souhait ou une dispute – à l’école, au sport ou dans une série – et suppose l’intérêt derrière la position. Si ça s’y prête, pose une fois la question de plongée."
+          "text": "D’ici la prochaine fois : écoute attentivement un souhait ou une dispute et suppose l’intérêt derrière la position. Si ça s’y prête, pose la question de plongée."
         },
         {
           "art": "tabelle",
@@ -1550,7 +1664,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest Janas Satz vor, der oder die Jugendliche trägt unten ein, was sie brauchen könnte, und die Fachkraft fragt: „Woran erkennst du das?“ Danach dasselbe kurz für Ben. In Aufgabe 2 vermutet der oder die Jugendliche zu zwei Positionen ein Interesse und schreibt die Frage dazu; die Taucherfragen im Kasten dürfen abgeschrieben werden. Aufgabe 3 ist allein und freiwillig; der Wortspeicher hilft. Das Blatt kommt in die Mappe, der Auftrag geht mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest Janas Satz vor, der oder die Jugendliche trägt unten ein, was sie brauchen könnte, und die Fachkraft fragt: „Woran erkennst du das?“ Danach dasselbe kurz für Ben. In Aufgabe 2 vermutet der oder die Jugendliche zu zwei Positionen ein Interesse und schreibt die Frage dazu; die Taucherfragen im Kasten dürfen abgeschrieben werden. Danach probiert er oder sie die Taucherfrage im kurzen Rollenspiel, die Fachkraft nennt die Position. Aufgabe 3 ist allein und freiwillig; der Wortspeicher hilft. Das Blatt kommt in die Mappe, der Auftrag geht mit.",
           "sagen": [
             "Ist das eine Vermutung – oder weißt du es?",
             "Wie würdest du fragen, damit es nicht nach Verhör klingt?"
@@ -1558,7 +1672,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche das Interesse, und die Fachkraft schreibt ein Wort in den Eisberg. Eine Zeile je Aufgabe genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 2; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit la phrase de Jana, le ou la jeune note en bas ce dont elle pourrait avoir besoin, et l’adulte demande : « À quoi tu le vois ? » Ensuite, la même chose rapidement pour Ben. À l’exercice 2, le ou la jeune suppose un intérêt pour deux positions et écrit la question qui va avec ; les questions de plongée de l’encadré peuvent être recopiées. L’exercice 3 se fait seul et librement ; la boîte à mots aide. La fiche va dans le dossier, la mission est emportée.",
+          "text": "Exercice 1 ensemble : l’adulte lit la phrase de Jana, le ou la jeune note en bas ce dont elle pourrait avoir besoin, et l’adulte demande : « À quoi tu le vois ? » Ensuite, la même chose rapidement pour Ben. À l’exercice 2, le ou la jeune suppose un intérêt pour deux positions et écrit la question qui va avec ; les questions de plongée de l’encadré peuvent être recopiées. Ensuite, il ou elle essaie la question de plongée en un court jeu de rôle, l’adulte nomme la position. L’exercice 3 se fait seul et librement ; la boîte à mots aide. La fiche va dans le dossier, la mission est emportée.",
           "sagen": [
             "C’est une supposition – ou tu le sais ?",
             "Comment tu poserais la question pour que ça ne sonne pas comme un interrogatoire ?"
@@ -1705,7 +1819,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Tauch in den Fall von Jana und Ben. Jana verlangt: „Ben gibt bis Freitag seinen Teil ab, sonst mache ich alles allein.“ Kreis ein, was sie unten brauchen könnte.",
+          "text": "Tauch in den Fall: Jana verlangt: „Ben gibt bis Freitag seinen Teil ab, sonst mache ich alles allein.“ Kreis ein, was sie unten brauchen könnte.",
           "hinweis": "Mehrere Antworten sind möglich. Es sind Vermutungen."
         },
         {
@@ -1792,7 +1906,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Drei Positionen aus dem Alltag. Verbinde jede mit einem möglichen Interesse dahinter."
+          "text": "Drei Positionen aus dem Alltag. Verbinde jede mit einem möglichen Interesse dahinter.",
+          "symbole": [
+            "verbinden",
+            "partner"
+          ],
+          "hinweis": "Beispiel: „Ich sitze am Fenster. Basta.“ passt zu „Mir wird im Bus schnell schlecht.“ Probier danach die Taucherfrage im Rollenspiel."
         },
         {
           "art": "zuordnen",
@@ -1866,8 +1985,23 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst – für Jana und Ben darfst du immer schreiben."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit (mehrere möglich):",
+          "spalten": 1,
+          "items": [
+            "Hinter jeder Position steckt ein Interesse.",
+            "Das sind Vermutungen – ich frage nach.",
+            "Die Taucherfrage: „Wozu ist dir das wichtig?“"
+          ]
+        },
+        {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Hör bei einem Wunsch oder Streit – in der Schule, im Sport oder in einer Serie – genau hin und vermute das Interesse hinter der Position. Wenn es passt, stell einmal die Taucherfrage."
+          "text": "Bis zum nächsten Mal: Hör bei einem Wunsch oder Streit genau hin und vermute das Interesse hinter der Position. Wenn es passt, stell die Taucherfrage."
         },
         {
           "art": "zielkarte",
@@ -1913,7 +2047,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Plonge dans le cas de Jana et Ben. Jana exige : « Ben rend sa partie vendredi, sinon je fais tout seule. » Entoure ce dont elle pourrait avoir besoin en bas.",
+          "text": "Plonge dans le cas : Jana exige : « Ben rend sa partie vendredi, sinon je fais tout seule. » Entoure ce dont elle pourrait avoir besoin en bas.",
           "hinweis": "Plusieurs réponses sont possibles. Ce sont des suppositions."
         },
         {
@@ -2000,7 +2134,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Trois positions de la vie quotidienne. Relie chacune à un intérêt possible derrière."
+          "text": "Trois positions de la vie quotidienne. Relie chacune à un intérêt possible derrière.",
+          "symbole": [
+            "verbinden",
+            "partner"
+          ],
+          "hinweis": "Exemple : « Je m’assois côté fenêtre. Point barre. » va avec « J’ai vite mal au cœur dans le bus. » Essaie ensuite la question de plongée en jeu de rôle."
         },
         {
           "art": "zuordnen",
@@ -2074,8 +2213,23 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages – pour Jana et Ben, tu peux toujours écrire."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte (plusieurs réponses possibles) :",
+          "spalten": 1,
+          "items": [
+            "Derrière chaque position, il y a un intérêt.",
+            "Ce sont des suppositions – je demande.",
+            "La question de plongée : « Qu’est-ce qui compte pour toi ? »"
+          ]
+        },
+        {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : écoute attentivement un souhait ou une dispute – à l’école, au sport ou dans une série – et suppose l’intérêt derrière la position. Si ça s’y prête, pose une fois la question de plongée."
+          "text": "D’ici la prochaine fois : écoute attentivement un souhait ou une dispute et suppose l’intérêt derrière la position. Si ça s’y prête, pose la question de plongée."
         },
         {
           "art": "zielkarte",
@@ -2515,7 +2669,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Rollenspiel: Dein Gegenüber spielt eine Person mit einem Ärger, du spiegelst. Danach tauscht ihr. Schätz ein, wie es gelaufen ist."
+          "text": "Rollenspiel: Dein Gegenüber spielt eine Person mit einem Ärger, du spiegelst. Danach tauscht ihr. Schätz ein, wie es gelaufen ist.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ],
+          "hinweis": "Vorher: dreimal lang ausatmen, Schultern fallen lassen – und ein Stopp-Wort ausmachen."
         },
         {
           "art": "einschaetzung",
@@ -2530,6 +2689,28 @@
             "teils",
             "gelungen"
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie war es im Körper? Kreuz auf jedem Regler an.",
+          "symbole": [
+            "ankreuzen"
+          ],
+          "hinweis": "Beide Seiten sind in Ordnung – es gibt kein Richtig oder Falsch."
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "angespannt",
+              "entspannt"
+            ],
+            [
+              "bei mir",
+              "beim anderen"
+            ]
+          ],
+          "stufen": 5
         },
         {
           "art": "aufgabe",
@@ -2567,8 +2748,24 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Spiegeln ist kein Zustimmen",
+          "text": "Wer spiegelt, sagt nicht „Du hast recht“, sondern „Ich habe dich gehört“. Du musst nichts bewerten – und du entscheidest, wie viel du von dir zeigst."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst – für Jana und Ben darfst du immer schreiben."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        },
+        {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Spiegle in einem echten Gespräch einmal einen Satz („Du meinst also …?“) und achte darauf, wie die andere Person reagiert."
+          "text": "Bis zum nächsten Mal: Spiegle, wenn du magst, in einem echten Gespräch einmal einen Satz („Du meinst also …?“) und achte auf die Reaktion."
         },
         {
           "art": "satzanfaenge",
@@ -2675,7 +2872,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jeu de rôle : la personne en face de toi joue quelqu’un de contrarié, tu reformules. Ensuite, vous échangez les rôles. Évalue comment ça s’est passé."
+          "text": "Jeu de rôle : la personne en face de toi joue quelqu’un de contrarié, tu reformules. Ensuite, vous échangez les rôles. Évalue comment ça s’est passé.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ],
+          "hinweis": "Avant : expirer trois fois longuement, relâcher les épaules – et convenir d’un mot d’arrêt."
         },
         {
           "art": "einschaetzung",
@@ -2690,6 +2892,28 @@
             "en partie",
             "réussi"
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment était-ce dans le corps ? Mets une croix sur chaque curseur.",
+          "symbole": [
+            "ankreuzen"
+          ],
+          "hinweis": "Les deux côtés sont bien – il n’y a ni bonne ni mauvaise réponse."
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "tension",
+              "détente"
+            ],
+            [
+              "près de moi",
+              "près de l’autre"
+            ]
+          ],
+          "stufen": 5
         },
         {
           "art": "aufgabe",
@@ -2727,8 +2951,24 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Reformuler n’est pas approuver",
+          "text": "Celui ou celle qui reformule ne dit pas « Tu as raison », mais « Je t’ai entendu ». Tu n’as rien à juger – et tu décides combien tu montres de toi."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages – pour Jana et Ben, tu peux toujours écrire."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        },
+        {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : reformule une fois une phrase dans une vraie conversation (« Tu veux dire que … ? ») et observe comment l’autre personne réagit."
+          "text": "D’ici la prochaine fois : si tu veux, reformule une fois une phrase dans une vraie conversation (« Tu veux dire que … ? ») et observe la réaction."
         },
         {
           "art": "satzanfaenge",
@@ -2741,7 +2981,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest Milas Satz und die vier Antworten (in einem Ton, der zur Antwort passt) vor, der oder die Jugendliche verbindet jede mit ihrer Wirkung und sagt, welche er oder sie am liebsten bekäme. In Aufgabe 2 schreibt er oder sie zu zwei Sätzen einen Spiegel-Satz; danach folgt das Rollenspiel in zwei Runden mit Stopp-Wort. Aufgabe 3 füllt er oder sie nach dem Spielen aus: ehrlich, aber fair zu sich selbst. Der Auftrag geht mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest Milas Satz und die vier Antworten (in einem Ton, der zur Antwort passt) vor, der oder die Jugendliche verbindet jede mit ihrer Wirkung und sagt, welche er oder sie am liebsten bekäme. In Aufgabe 2 schreibt er oder sie zu zwei Sätzen einen Spiegel-Satz; danach folgt das Rollenspiel in zwei Runden mit Stopp-Wort. Aufgabe 3 füllt er oder sie nach dem Spielen aus: ehrlich, aber fair zu sich selbst. Vor dem Rollenspiel atmen beide eine Minute lang aus; danach kreuzt er oder sie auf den Reglern an, wie es sich im Körper angefühlt hat. Der Auftrag geht mit.",
           "sagen": [
             "Welche Antwort hättest du an Milas Stelle gern bekommen?",
             "Woran hast du gemerkt, dass der Spiegel-Satz gepasst hat?"
@@ -2749,7 +2989,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche den Spiegel-Satz laut, und die Fachkraft schreibt ihn mit. Mag er oder sie nicht spielen, genügt die Auswahl auf dem Blatt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit la phrase de Mila et les quatre réponses (sur un ton qui correspond à chaque réponse), le ou la jeune relie chacune à son effet et dit laquelle il ou elle aimerait le mieux recevoir. À l’exercice 2, il ou elle écrit une phrase de reformulation pour deux phrases ; ensuite vient le jeu de rôle en deux manches avec un mot d’arrêt. L’exercice 3 se remplit après le jeu : honnêtement, sans se juger trop durement. La mission est emportée.",
+          "text": "Exercice 1 ensemble : l’adulte lit la phrase de Mila et les quatre réponses (sur un ton qui correspond à chaque réponse), le ou la jeune relie chacune à son effet et dit laquelle il ou elle aimerait le mieux recevoir. À l’exercice 2, il ou elle écrit une phrase de reformulation pour deux phrases ; ensuite vient le jeu de rôle en deux manches avec un mot d’arrêt. L’exercice 3 se remplit après le jeu : honnêtement, sans se juger trop durement. Avant le jeu de rôle, tous deux expirent une minute ; ensuite, il ou elle coche sur les curseurs comment c’était dans le corps. La mission est emportée.",
           "sagen": [
             "Quelle réponse aurais-tu aimé recevoir, à la place de Mila ?",
             "À quoi as-tu vu que la phrase de reformulation convenait ?"
@@ -2927,7 +3167,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Welcher Spiegel-Satz passt? Kreuz einen an."
+          "text": "Welcher Spiegel-Satz passt? Kreuz einen an.",
+          "hinweis": "Beispiel: „Du hast viel Zeit investiert und möchtest, dass man das sieht?“"
         },
         {
           "art": "ankreuzen",
@@ -2941,7 +3182,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Rollenspiel: Dein Gegenüber spielt eine Person mit einem Ärger, du spiegelst. Danach tauscht ihr. Schätz ein, wie es gelaufen ist."
+          "text": "Rollenspiel: Dein Gegenüber spielt eine Person mit einem Ärger, du spiegelst. Danach tauscht ihr. Schätz ein, wie es gelaufen ist.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ],
+          "hinweis": "Vorher: dreimal lang ausatmen, Schultern fallen lassen – und ein Stopp-Wort ausmachen."
         },
         {
           "art": "einschaetzung",
@@ -2956,6 +3202,28 @@
             "teils",
             "gelungen"
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie war es im Körper? Kreuz auf jedem Regler an.",
+          "symbole": [
+            "ankreuzen"
+          ],
+          "hinweis": "Beide Seiten sind in Ordnung – es gibt kein Richtig oder Falsch."
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "angespannt",
+              "entspannt"
+            ],
+            [
+              "bei mir",
+              "beim anderen"
+            ]
+          ],
+          "stufen": 5
         },
         {
           "art": "aufgabe",
@@ -2993,8 +3261,23 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Spiegeln heißt nicht zustimmen – es heißt: Ich habe dich gehört."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit (mehrere möglich):",
+          "spalten": 1,
+          "items": [
+            "Spiegeln heißt: Ich habe dich gehört.",
+            "Nicht bewerten, nicht beraten.",
+            "Nachfragen: „Stimmt das so?“"
+          ]
+        },
+        {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Spiegle in einem echten Gespräch einmal einen Satz („Du meinst also …?“) und achte darauf, wie die andere Person reagiert."
+          "text": "Bis zum nächsten Mal: Spiegle, wenn du magst, in einem echten Gespräch einmal einen Satz („Du meinst also …?“) und achte auf die Reaktion."
         },
         {
           "art": "zielkarte",
@@ -3073,7 +3356,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quelle phrase de reformulation convient ? Coche-en une."
+          "text": "Quelle phrase de reformulation convient ? Coche-en une.",
+          "hinweis": "Exemple : « Tu as investi beaucoup de temps et tu voudrais que ça se voie ? »"
         },
         {
           "art": "ankreuzen",
@@ -3087,7 +3371,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jeu de rôle : la personne en face de toi joue quelqu’un de contrarié, tu reformules. Ensuite, vous échangez les rôles. Évalue comment ça s’est passé."
+          "text": "Jeu de rôle : la personne en face de toi joue quelqu’un de contrarié, tu reformules. Ensuite, vous échangez les rôles. Évalue comment ça s’est passé.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ],
+          "hinweis": "Avant : expirer trois fois longuement, relâcher les épaules – et convenir d’un mot d’arrêt."
         },
         {
           "art": "einschaetzung",
@@ -3102,6 +3391,28 @@
             "en partie",
             "réussi"
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment était-ce dans le corps ? Mets une croix sur chaque curseur.",
+          "symbole": [
+            "ankreuzen"
+          ],
+          "hinweis": "Les deux côtés sont bien – il n’y a ni bonne ni mauvaise réponse."
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "tension",
+              "détente"
+            ],
+            [
+              "près de moi",
+              "près de l’autre"
+            ]
+          ],
+          "stufen": 5
         },
         {
           "art": "aufgabe",
@@ -3139,8 +3450,23 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Reformuler n’est pas approuver – ça veut dire : je t’ai entendu."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte (plusieurs réponses possibles) :",
+          "spalten": 1,
+          "items": [
+            "Reformuler veut dire : je t’ai entendu.",
+            "Ni juger, ni conseiller.",
+            "Vérifier : « C’est bien ça ? »"
+          ]
+        },
+        {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : reformule une fois une phrase dans une vraie conversation (« Tu veux dire que … ? ») et observe comment l’autre personne réagit."
+          "text": "D’ici la prochaine fois : si tu veux, reformule une fois une phrase dans une vraie conversation (« Tu veux dire que … ? ») et observe la réaction."
         },
         {
           "art": "zielkarte",
@@ -3155,7 +3481,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest Milas Satz und die vier Antworten (in einem Ton, der zur Antwort passt) vor, der oder die Jugendliche verbindet jede mit ihrer Wirkung und sagt, welche er oder sie am liebsten bekäme. In Aufgabe 2 kreuzt er oder sie zu Bens Satz den passenden Spiegel-Satz an und spiegelt mündlich Janas Satz; danach folgt das Rollenspiel in zwei Runden mit Stopp-Wort. Aufgabe 3 füllt er oder sie nach dem Spielen aus: ehrlich, aber fair zu sich selbst. Der Auftrag geht mit.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest Milas Satz und die vier Antworten (in einem Ton, der zur Antwort passt) vor, der oder die Jugendliche verbindet jede mit ihrer Wirkung und sagt, welche er oder sie am liebsten bekäme. In Aufgabe 2 kreuzt er oder sie zu Bens Satz den passenden Spiegel-Satz an und spiegelt mündlich Janas Satz; danach folgt das Rollenspiel in zwei Runden mit Stopp-Wort. Aufgabe 3 füllt er oder sie nach dem Spielen aus: ehrlich, aber fair zu sich selbst. Vor dem Rollenspiel atmen beide eine Minute lang aus; danach kreuzt er oder sie auf den Reglern an, wie es sich im Körper angefühlt hat. Der Auftrag geht mit.",
           "sagen": [
             "Welche Antwort hättest du an Milas Stelle gern bekommen?",
             "Woran hast du gemerkt, dass der Spiegel-Satz gepasst hat?"
@@ -3163,7 +3489,7 @@
           "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Antworten vor, und der oder die Jugendliche zeigt darauf. Mag er oder sie nicht spielen, genügt die Auswahl auf dem Blatt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit la phrase de Mila et les quatre réponses (sur un ton qui correspond à chaque réponse), le ou la jeune relie chacune à son effet et dit laquelle il ou elle aimerait le mieux recevoir. À l’exercice 2, il ou elle coche la phrase de reformulation qui convient à la phrase de Ben et reformule à l’oral celle de Jana ; ensuite vient le jeu de rôle en deux manches avec un mot d’arrêt. L’exercice 3 se remplit après le jeu : honnêtement, sans se juger trop durement. La mission est emportée.",
+          "text": "Exercice 1 ensemble : l’adulte lit la phrase de Mila et les quatre réponses (sur un ton qui correspond à chaque réponse), le ou la jeune relie chacune à son effet et dit laquelle il ou elle aimerait le mieux recevoir. À l’exercice 2, il ou elle coche la phrase de reformulation qui convient à la phrase de Ben et reformule à l’oral celle de Jana ; ensuite vient le jeu de rôle en deux manches avec un mot d’arrêt. L’exercice 3 se remplit après le jeu : honnêtement, sans se juger trop durement. Avant le jeu de rôle, tous deux expirent une minute ; ensuite, il ou elle coche sur les curseurs comment c’était dans le corps. La mission est emportée.",
           "sagen": [
             "Quelle réponse aurais-tu aimé recevoir, à la place de Mila ?",
             "À quoi as-tu vu que la phrase de reformulation convenait ?"
@@ -3539,7 +3865,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jana kennt Bens Eisberg, Ben kennt Janas. Sammle Optionen für das Referat – so viele wie möglich, noch ohne zu bewerten."
+          "text": "Jana kennt Bens Eisberg, Ben kennt Janas. Sammle Optionen für das Referat – so viele wie möglich, noch ohne zu bewerten.",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ],
+          "hinweis": "Der erste Ast ist ein Beispiel. Absurde Ideen sind erlaubt."
         },
         {
           "art": "mindmap",
@@ -3571,7 +3902,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Rollenspiel: Verhandelt den Fall in den vier Schritten – du als Jana, dein Gegenüber als Ben. Haltet das Ergebnis fest. Wenn Zeit bleibt: danach umgekehrt."
+          "text": "Rollenspiel: Verhandelt in vier Schritten – du als Jana, dein Gegenüber als Ben. Haltet das Ergebnis fest. Wenn Zeit bleibt: Rollen tauschen.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
         },
         {
           "art": "vertrag",
@@ -3618,8 +3953,24 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Erst viele Optionen, dann wählen",
+          "text": "Absurde Ideen sind erlaubt. Fair ist eine Lösung, wenn beide sie ohne Druck tragen können."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst – für Jana und Ben darfst du immer schreiben."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
+        },
+        {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Such dir eine kleine Verhandlung im Alltag (Musik, Trainingszeit, Sitzplatz, Aufgabenverteilung) und schlag zwei Optionen vor: „Wir könnten A oder B.“"
+          "text": "Bis zum nächsten Mal: Such dir eine kleine Verhandlung im Alltag (Musik, Sitzplatz, Aufgaben) und schlag zwei Optionen vor: „Wir könnten A oder B.“"
         },
         {
           "art": "satzanfaenge",
@@ -3686,7 +4037,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jana connaît l’iceberg de Ben, Ben connaît celui de Jana. Rassemble des options pour l’exposé – autant que possible, sans encore juger."
+          "text": "Jana connaît l’iceberg de Ben, Ben connaît celui de Jana. Rassemble des options pour l’exposé – autant que possible, sans encore juger.",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ],
+          "hinweis": "La première branche est un exemple. Les idées absurdes sont permises."
         },
         {
           "art": "mindmap",
@@ -3718,7 +4074,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jeu de rôle : négociez le cas en quatre étapes – toi en Jana, la personne en face de toi en Ben. Notez le résultat. S’il reste du temps : on inverse les rôles."
+          "text": "Jeu de rôle : négociez le cas en quatre étapes – toi en Jana, la personne en face de toi en Ben. Notez le résultat. S’il reste du temps : échangez les rôles.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
         },
         {
           "art": "vertrag",
@@ -3765,8 +4125,24 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "D’abord beaucoup d’options, ensuite choisir",
+          "text": "Les idées absurdes sont permises. Une solution est juste quand les deux peuvent la porter sans pression."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages – pour Jana et Ben, tu peux toujours écrire."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        },
+        {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : cherche une petite négociation dans ta vie quotidienne (musique, horaire d’entraînement, place assise, répartition des tâches) et propose deux options : « On pourrait faire A ou B. »"
+          "text": "D’ici la prochaine fois : cherche une petite négociation du quotidien (musique, place, tâches) et propose deux options : « On pourrait faire A ou B. »"
         },
         {
           "art": "satzanfaenge",
@@ -3957,7 +4333,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Optionen für das Referat: Kreuz drei an, die für beide passen könnten."
+          "text": "Optionen für das Referat: Kreuz drei an, die für beide passen könnten.",
+          "hinweis": "Beispiel: Zwischenstand am Mittwoch. Wenn du magst, nenne mündlich weitere."
         },
         {
           "art": "bilder",
@@ -4007,7 +4384,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Rollenspiel: Verhandelt den Fall in den vier Schritten – du als Jana, dein Gegenüber als Ben. Kreuz an, was geklappt hat. Wenn Zeit bleibt: danach umgekehrt."
+          "text": "Rollenspiel: Verhandelt in vier Schritten – du als Jana, dein Gegenüber als Ben. Kreuz an, was geklappt hat. Wenn Zeit bleibt: Rollen tauschen.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -4056,8 +4437,23 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Absurde Ideen sind erlaubt – fair ist, was beide ohne Druck tragen."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit (mehrere möglich):",
+          "spalten": 1,
+          "items": [
+            "Erst Optionen, dann Kriterien.",
+            "Fair heißt: Beide können es tragen.",
+            "Die Abmachung hat „wer, was, bis wann“ – und einen Plan B."
+          ]
+        },
+        {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Such dir eine kleine Verhandlung im Alltag (Musik, Trainingszeit, Sitzplatz, Aufgabenverteilung) und schlag zwei Optionen vor: „Wir könnten A oder B.“"
+          "text": "Bis zum nächsten Mal: Such dir eine kleine Verhandlung im Alltag (Musik, Sitzplatz, Aufgaben) und schlag zwei Optionen vor: „Wir könnten A oder B.“"
         },
         {
           "art": "zielkarte",
@@ -4126,7 +4522,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Options pour l’exposé : coche-en trois qui pourraient convenir aux deux."
+          "text": "Options pour l’exposé : coche-en trois qui pourraient convenir aux deux.",
+          "hinweis": "Exemple : point d’étape le mercredi. Si tu veux, cite-en d’autres à l’oral."
         },
         {
           "art": "bilder",
@@ -4176,7 +4573,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jeu de rôle : négociez le cas en quatre étapes – toi en Jana, la personne en face de toi en Ben. Coche ce qui a marché. S’il reste du temps : on inverse les rôles."
+          "text": "Jeu de rôle : négociez le cas en quatre étapes – toi en Jana, la personne en face de toi en Ben. Coche ce qui a marché. S’il reste du temps : échangez les rôles.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -4225,8 +4626,23 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Les idées absurdes sont permises – une solution est juste si les deux la portent sans pression."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte (plusieurs réponses possibles) :",
+          "spalten": 1,
+          "items": [
+            "D’abord les options, ensuite les critères.",
+            "Juste veut dire : les deux peuvent le porter.",
+            "L’accord dit « qui, quoi, pour quand » – et un plan B."
+          ]
+        },
+        {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : cherche une petite négociation dans ta vie quotidienne (musique, horaire d’entraînement, place assise, répartition des tâches) et propose deux options : « On pourrait faire A ou B. »"
+          "text": "D’ici la prochaine fois : cherche une petite négociation du quotidien (musique, place, tâches) et propose deux options : « On pourrait faire A ou B. »"
         },
         {
           "art": "zielkarte",
@@ -4668,7 +5084,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Rollenspiel: Sag deinen ersten Satz – dein Gegenüber reagiert erst offen, dann abweisend. Wenn Zeit bleibt, tauscht ihr. Schätz ein, wie es gelaufen ist."
+          "text": "Rollenspiel: Sag deinen ersten Satz – dein Gegenüber reagiert erst offen, dann abweisend. Wenn Zeit bleibt, tauscht ihr. Schätz ein, wie es war.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ],
+          "hinweis": "Vorher: dreimal lang ausatmen und ein Stopp-Wort ausmachen."
         },
         {
           "art": "einschaetzung",
@@ -4717,6 +5138,22 @@
           ],
           "spalten": 3,
           "klein": true
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Verantwortung heißt nicht Schuld",
+          "text": "Du benennst deinen Teil – nicht mehr und nicht weniger. Das Gespräch kannst du auch erst üben, bevor du es führst."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst – für Jana und Ben darfst du immer schreiben."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das nehme ich mit"
         },
         {
           "art": "aufgabe",
@@ -4830,7 +5267,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jeu de rôle : dis ta première phrase – la personne en face de toi réagit d’abord de façon ouverte, puis fermée. S’il reste du temps, vous échangez les rôles. Évalue comment ça s’est passé."
+          "text": "Jeu de rôle : dis ta première phrase – l’autre réagit d’abord de façon ouverte, puis fermée. S’il reste du temps, échangez les rôles. Évalue comment c’était.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ],
+          "hinweis": "Avant : expirer trois fois longuement et convenir d’un mot d’arrêt."
         },
         {
           "art": "einschaetzung",
@@ -4881,6 +5323,22 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Assumer, ce n’est pas se sentir coupable",
+          "text": "Tu nommes ta part – ni plus, ni moins. Tu peux aussi d’abord t’exercer avant d’avoir la discussion."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "C’est toi qui décides ce que tu partages – pour Jana et Ben, tu peux toujours écrire."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ce que j’emporte"
+        },
+        {
           "art": "aufgabe",
           "text": "D’ici la prochaine fois : mets ton plan en œuvre – ou dis ta première phrase une fois à voix haute, pour toi seul ou seule."
         },
@@ -4898,7 +5356,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche er oder sie selbst gern hören würde. Aufgabe 2 ist der Kern: Situation wählen (erfunden oder echt, eine echte ist freiwillig) und den Plan in Stichworten in die Tabelle schreiben; „eine Freundin“ genügt, ein Name muss nicht sein. Danach das Rollenspiel in zwei Runden mit Stopp-Wort (getauscht wird nur, wenn Zeit bleibt); die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind allein.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche er oder sie selbst gern hören würde. Aufgabe 2 ist der Kern: Situation wählen (erfunden oder echt, eine echte ist freiwillig) und den Plan in Stichworten in die Tabelle schreiben; „eine Freundin“ genügt, ein Name muss nicht sein. Vorher eine Minute runterfahren: dreimal lang ausatmen. Danach das Rollenspiel in zwei Runden mit Stopp-Wort (getauscht wird nur, wenn Zeit bleibt); die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind allein.",
           "sagen": [
             "Wie fühlt sich jede Entschuldigung an, wenn du sie bekommst?",
             "Was würde dir helfen, wenn die andere Person abblockt?"
@@ -4906,7 +5364,7 @@
           "wennEsKippt": "Ist selbst das Notieren zu viel, sagt der oder die Jugendliche den Satz laut, und die Fachkraft schreibt drei Wörter. Geht es um etwas Schweres, bleibt es bei der erfundenen Situation mit Ben und Jana. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle il ou elle aimerait entendre soi-même. L’exercice 2 est le cœur : choisir une situation (inventée ou réelle, une situation réelle est facultative) et écrire le plan en mots-clés dans le tableau ; « une amie » suffit, un prénom n’est pas nécessaire. Ensuite, le jeu de rôle en deux manches avec un mot d’arrêt (on n’échange les rôles que s’il reste du temps) ; l’évaluation suit tout de suite. La boîte à outils et la mission se font seul.",
+          "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle il ou elle aimerait entendre soi-même. L’exercice 2 est le cœur : choisir une situation (inventée ou réelle, une situation réelle est facultative) et écrire le plan en mots-clés dans le tableau ; « une amie » suffit, un prénom n’est pas nécessaire. Avant, une minute pour se calmer : expirer trois fois longuement. Ensuite, le jeu de rôle en deux manches avec un mot d’arrêt (on n’échange les rôles que s’il reste du temps) ; l’évaluation suit tout de suite. La boîte à outils et la mission se font seul.",
           "sagen": [
             "Comment chaque excuse te fait-elle ressentir quand tu la reçois ?",
             "Qu’est-ce qui t’aiderait si l’autre personne se ferme ?"
@@ -5183,7 +5641,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Rollenspiel: Sag deinen ersten Satz – dein Gegenüber reagiert erst offen, dann abweisend. Wenn Zeit bleibt, tauscht ihr. Schätz ein, wie es gelaufen ist."
+          "text": "Rollenspiel: Sag deinen ersten Satz – dein Gegenüber reagiert erst offen, dann abweisend. Wenn Zeit bleibt, tauscht ihr. Schätz ein, wie es war.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ],
+          "hinweis": "Vorher: dreimal lang ausatmen und ein Stopp-Wort ausmachen."
         },
         {
           "art": "einschaetzung",
@@ -5232,6 +5695,21 @@
           ],
           "spalten": 3,
           "klein": true
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Verantwortung heißt nicht Schuld – du benennst nur deinen Teil."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit (mehrere möglich):",
+          "spalten": 1,
+          "items": [
+            "Ich benenne meinen Teil – ohne „aber“.",
+            "Ich biete einen konkreten Schritt an.",
+            "Ich darf das Gespräch erst üben."
+          ]
         },
         {
           "art": "aufgabe",
@@ -5412,7 +5890,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jeu de rôle : dis ta première phrase – la personne en face de toi réagit d’abord de façon ouverte, puis fermée. S’il reste du temps, vous échangez les rôles. Évalue comment ça s’est passé."
+          "text": "Jeu de rôle : dis ta première phrase – l’autre réagit d’abord de façon ouverte, puis fermée. S’il reste du temps, échangez les rôles. Évalue comment c’était.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ],
+          "hinweis": "Avant : expirer trois fois longuement et convenir d’un mot d’arrêt."
         },
         {
           "art": "einschaetzung",
@@ -5463,6 +5946,21 @@
           "klein": true
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Assumer, ce n’est pas se sentir coupable – tu ne nommes que ta part."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte (plusieurs réponses possibles) :",
+          "spalten": 1,
+          "items": [
+            "Je nomme ma part – sans « mais ».",
+            "Je propose un pas concret.",
+            "Je peux d’abord m’exercer à la discussion."
+          ]
+        },
+        {
           "art": "aufgabe",
           "text": "D’ici la prochaine fois : mets ton plan en œuvre – ou dis ta première phrase une fois à voix haute, pour toi seul ou seule."
         },
@@ -5480,7 +5978,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche er oder sie selbst gern hören würde. Aufgabe 2 ist der Kern: Situation wählen (erfunden oder echt, eine echte ist freiwillig) und ankreuzen: mit wem, wann und wo, erstes Werkzeug, erster Satz, Angebot. Danach das Rollenspiel in zwei Runden mit Stopp-Wort (getauscht wird nur, wenn Zeit bleibt); die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind zum Ankreuzen.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche er oder sie selbst gern hören würde. Aufgabe 2 ist der Kern: Situation wählen (erfunden oder echt, eine echte ist freiwillig) und ankreuzen: mit wem, wann und wo, erstes Werkzeug, erster Satz, Angebot. Vorher eine Minute runterfahren: dreimal lang ausatmen. Danach das Rollenspiel in zwei Runden mit Stopp-Wort (getauscht wird nur, wenn Zeit bleibt); die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind zum Ankreuzen.",
           "sagen": [
             "Wie fühlt sich jede Entschuldigung an, wenn du sie bekommst?",
             "Was würde dir helfen, wenn die andere Person abblockt?"
@@ -5488,7 +5986,7 @@
           "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Möglichkeiten vor, und der oder die Jugendliche zeigt darauf. Geht es um etwas Schweres, bleibt es bei der erfundenen Situation mit Ben und Jana. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle il ou elle aimerait entendre soi-même. L’exercice 2 est le cœur : choisir une situation (inventée ou réelle, une situation réelle est facultative) et cocher : avec qui, quand et où, premier outil, première phrase, proposition. Ensuite, le jeu de rôle en deux manches avec un mot d’arrêt (on n’échange les rôles que s’il reste du temps) ; l’évaluation suit tout de suite. La boîte à outils et la mission se cochent.",
+          "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle il ou elle aimerait entendre soi-même. L’exercice 2 est le cœur : choisir une situation (inventée ou réelle, une situation réelle est facultative) et cocher : avec qui, quand et où, premier outil, première phrase, proposition. Avant, une minute pour se calmer : expirer trois fois longuement. Ensuite, le jeu de rôle en deux manches avec un mot d’arrêt (on n’échange les rôles que s’il reste du temps) ; l’évaluation suit tout de suite. La boîte à outils et la mission se cochent.",
           "sagen": [
             "Comment chaque excuse te fait-elle ressentir quand tu la reçois ?",
             "Qu’est-ce qui t’aiderait si l’autre personne se ferme ?"
@@ -5881,7 +6379,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Du bist Bens Beraterin oder Berater: Plane mit Ben ein Gespräch mit Jana. Such eine Situation aus; kreis ein oder kreuz an, was passt."
+          "text": "Du bist Bens Beraterin oder Berater: Plane mit Ben ein Gespräch mit Jana. Such eine Situation aus; kreis ein oder kreuz an, was passt.",
+          "hinweis": "Alles ist ausgedacht – es geht nur um Ben und Jana."
         },
         {
           "art": "ankreuzen",
@@ -5963,7 +6462,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Rollenspiel: Du bist Jana – erst offen, dann abweisend. Ben sagt seinen ersten Satz. Schätz ein, wie es für Ben gelaufen ist."
+          "text": "Rollenspiel: Du bist Jana – erst offen, dann abweisend. Ben sagt seinen ersten Satz. Schätz ein, wie es für Ben gelaufen ist.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ],
+          "hinweis": "Vorher: dreimal lang ausatmen und ein Stopp-Wort ausmachen."
         },
         {
           "art": "einschaetzung",
@@ -6014,8 +6518,23 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Verantwortung heißt nicht Schuld – du benennst nur deinen Teil."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit (mehrere möglich):",
+          "spalten": 1,
+          "items": [
+            "Man benennt seinen Teil – ohne „aber“.",
+            "Man bietet einen konkreten Schritt an.",
+            "Ein Gespräch darf man erst üben."
+          ]
+        },
+        {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Achte bei einer Figur in einem Buch oder Film darauf, ob sie sagt, was sie getan hat – ohne „aber“. Oder übe Bens ersten Satz in Gedanken."
+          "text": "Bis zum nächsten Mal: Achte in Buch oder Film darauf, ob eine Figur sagt, was sie getan hat – ohne „aber“. Oder übe Bens ersten Satz in Gedanken."
         },
         {
           "art": "zielkarte",
@@ -6082,7 +6601,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Tu es le conseiller ou la conseillère de Ben : prépare avec Ben une discussion avec Jana. Choisis une situation ; entoure ou coche ce qui convient."
+          "text": "Tu es le conseiller ou la conseillère de Ben : prépare avec Ben une discussion avec Jana. Choisis une situation ; entoure ou coche ce qui convient.",
+          "hinweis": "Tout est inventé – il n’est question que de Ben et de Jana."
         },
         {
           "art": "ankreuzen",
@@ -6164,7 +6684,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Jeu de rôle : tu es Jana – d’abord ouverte, puis fermée. Ben dit sa première phrase. Évalue comment ça s’est passé pour Ben."
+          "text": "Jeu de rôle : tu es Jana – d’abord ouverte, puis fermée. Ben dit sa première phrase. Évalue comment ça s’est passé pour Ben.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ],
+          "hinweis": "Avant : expirer trois fois longuement et convenir d’un mot d’arrêt."
         },
         {
           "art": "einschaetzung",
@@ -6215,6 +6740,21 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Assumer, ce n’est pas se sentir coupable – tu ne nommes que ta part."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte (plusieurs réponses possibles) :",
+          "spalten": 1,
+          "items": [
+            "On nomme sa part – sans « mais ».",
+            "On propose un pas concret.",
+            "On a le droit de s’exercer d’abord à la discussion."
+          ]
+        },
+        {
           "art": "aufgabe",
           "text": "D’ici la prochaine fois : dans un livre ou un film, repère si un personnage dit ce qu’il a fait – sans « mais ». Ou entraîne la première phrase de Ben dans ta tête."
         },
@@ -6231,7 +6771,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche bei Jana am besten ankommt. In Aufgabe 2 berät er oder sie Ben: die Situation ankreuzen, dazu wann und wo, erstes Werkzeug, erster Satz und Angebot. Danach das Rollenspiel: Die Fachkraft spielt Ben, der oder die Jugendliche spielt Jana, erst offen, dann abweisend, mit Stopp-Wort; die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind zum Ankreuzen. Es geht nur um Ben, Jana und ausgedachte Situationen.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die drei Entschuldigungen vor, der oder die Jugendliche verbindet jede mit dem, was sie tut, und sagt, welche bei Jana am besten ankommt. In Aufgabe 2 berät er oder sie Ben: die Situation ankreuzen, dazu wann und wo, erstes Werkzeug, erster Satz und Angebot. Vorher eine Minute runterfahren: dreimal lang ausatmen. Danach das Rollenspiel: Die Fachkraft spielt Ben, der oder die Jugendliche spielt Jana, erst offen, dann abweisend, mit Stopp-Wort; die Einschätzung folgt gleich danach. Werkzeugkasten und Auftrag sind zum Ankreuzen. Es geht nur um Ben, Jana und ausgedachte Situationen.",
           "sagen": [
             "Wie fühlt sich jede Entschuldigung für Jana an?",
             "Was würdest du Ben raten, wenn Jana abblockt?"
@@ -6239,7 +6779,7 @@
           "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft die Möglichkeiten vor, und der oder die Jugendliche zeigt darauf. Mag er oder sie Jana nicht spielen, zeigt er oder sie auf einer Karte „offen“ oder „abweisend“, und die Fachkraft liest vor. Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zu Ben und Jana zurück. Ist die Zeit knapp, genügen die Aufgaben 1 und 2."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle arrive le mieux chez Jana. À l’exercice 2, il ou elle conseille Ben : cocher la situation, puis quand et où, premier outil, première phrase et proposition. Ensuite, le jeu de rôle : l’adulte joue Ben, le ou la jeune joue Jana, d’abord ouverte, puis fermée, avec un mot d’arrêt ; l’évaluation suit tout de suite. La boîte à outils et la mission se cochent. Il n’est question que de Ben, de Jana et de situations inventées.",
+          "text": "Exercice 1 ensemble : l’adulte lit les trois excuses, le ou la jeune relie chacune à ce qu’elle fait et dit laquelle arrive le mieux chez Jana. À l’exercice 2, il ou elle conseille Ben : cocher la situation, puis quand et où, premier outil, première phrase et proposition. Avant, une minute pour se calmer : expirer trois fois longuement. Ensuite, le jeu de rôle : l’adulte joue Ben, le ou la jeune joue Jana, d’abord ouverte, puis fermée, avec un mot d’arrêt ; l’évaluation suit tout de suite. La boîte à outils et la mission se cochent. Il n’est question que de Ben, de Jana et de situations inventées.",
           "sagen": [
             "Qu’est-ce que chaque excuse fait ressentir à Jana ?",
             "Que conseillerais-tu à Ben si Jana se ferme ?"
@@ -6374,7 +6914,11 @@
         {
           "art": "aufgabe",
           "text": "Dein Konflikt-Profil: Mal in jedem Stück so viele Ringe aus, wie es dir heute gelingt.",
-          "hinweis": "Innen heißt wenig, außen viel. Ehrlich und fair zu dir: Ein kleiner Ring ist ein Startpunkt."
+          "hinweis": "Innen heißt wenig, außen viel. Ehrlich und fair zu dir: Ein kleiner Ring ist ein Startpunkt.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "netz",
@@ -6388,8 +6932,19 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ein kleiner Schritt genügt – wähle einen, der heute machbar ist.",
+          "spalten": 2
+        },
+        {
           "art": "aufgabe",
-          "text": "Deine Kompass-Karte: Was tust du, wenn ein Konflikt heiß wird?"
+          "text": "Deine Kompass-Karte: Was tust du, wenn ein Konflikt heiß wird?",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ],
+          "hinweis": "Beispiel: „Meine Stimme wird laut – ich atme aus.“ Zeig danach ein Werkzeug im Rollenspiel."
         },
         {
           "art": "satzanfaenge",
@@ -6448,7 +7003,7 @@
           "items": [
             "Am Anfang dachte ich über Streit:",
             "Heute sehe ich das so:",
-            "Das bleibt bei mir:"
+            "Das nehme ich mit:"
           ],
           "linien": 1
         },
@@ -6503,7 +7058,11 @@
         {
           "art": "aufgabe",
           "text": "Ton profil de conflit : colorie dans chaque part autant d’anneaux que tu y arrives aujourd’hui.",
-          "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Sois honnête et juste envers toi : un petit anneau est un point de départ."
+          "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Sois honnête et juste envers toi : un petit anneau est un point de départ.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "netz",
@@ -6517,8 +7076,19 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un petit pas suffit – choisis-en un qui est faisable aujourd’hui.",
+          "spalten": 2
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta carte-boussole : que fais-tu quand un conflit chauffe ?"
+          "text": "Ta carte-boussole : que fais-tu quand un conflit chauffe ?",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ],
+          "hinweis": "Exemple : « Ma voix devient forte – j’expire. » Montre ensuite un outil en jeu de rôle."
         },
         {
           "art": "satzanfaenge",
@@ -6577,7 +7147,7 @@
           "items": [
             "Au début, je pensais des disputes :",
             "Aujourd’hui, je vois ça ainsi :",
-            "Ce que je garde :"
+            "Ce que j’emporte :"
           ],
           "linien": 1
         },
@@ -6600,7 +7170,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt das Konflikt-Profil ein, ehrlich und fair zu sich selbst, und sagt zu zwei Stücken, woran er oder sie es merkt; die Fachkraft fragt nach einem Beispiel aus den Stunden und blättert dazu die Blätter der Mappe durch. In Aufgabe 2 schreibt er oder sie die Kompass-Karte, klein und konkret. In Aufgabe 3 trägt er oder sie eine Vertrauensperson ein – nur, wenn er oder sie mag; die Nummern liest die Fachkraft kurz vor. Werkzeugkasten, Rückblick und Auftrag kommen zum Schluss; die Blätter aus der Mappe darf der oder die Jugendliche zum Abschied mitnehmen.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt das Konflikt-Profil ein, ehrlich und fair zu sich selbst, und sagt zu zwei Stücken, woran er oder sie es merkt; die Fachkraft fragt nach einem Beispiel aus den Stunden und blättert dazu die Blätter der Mappe durch. In Aufgabe 2 schreibt er oder sie die Kompass-Karte, klein und konkret. Zu einem Werkzeug zeigt er oder sie danach eine Minute Rollenspiel. In Aufgabe 3 trägt er oder sie eine Vertrauensperson ein – nur, wenn er oder sie mag; die Nummern liest die Fachkraft kurz vor. Werkzeugkasten, Rückblick und Auftrag kommen zum Schluss; die Blätter aus der Mappe darf der oder die Jugendliche zum Abschied mitnehmen.",
           "sagen": [
             "Woran würdest du merken, dass ein Stück größer geworden ist?",
             "Welcher Schritt würde dir in der nächsten Woche wirklich helfen?"
@@ -6608,7 +7178,7 @@
           "wennEsKippt": "Fällt das Einschätzen schwer, genügen zwei oder drei Stücke, und die Fachkraft nennt ein Beispiel aus den Stunden. Mag der oder die Jugendliche keine Person eintragen, bleibt das Feld leer – die Nummern gelten trotzdem. Ist die Zeit knapp, genügen die Aufgaben 1 und 2; zwei Zeilen der Karte reichen."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune colorie le profil de conflit, honnêtement et avec justesse envers soi, et dit pour deux parts à quoi il ou elle le remarque ; l’adulte demande un exemple tiré des séances et feuillette avec lui ou elle les fiches du dossier. À l’exercice 2, il ou elle écrit la carte-boussole, petite et concrète. À l’exercice 3, il ou elle note une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit rapidement les numéros. La boîte à outils, le retour en arrière et la mission viennent à la fin ; le ou la jeune peut emporter les fiches du dossier en partant.",
+          "text": "Exercice 1 ensemble : le ou la jeune colorie le profil de conflit, honnêtement et avec justesse envers soi, et dit pour deux parts à quoi il ou elle le remarque ; l’adulte demande un exemple tiré des séances et feuillette avec lui ou elle les fiches du dossier. À l’exercice 2, il ou elle écrit la carte-boussole, petite et concrète. Ensuite, il ou elle montre un outil en une minute de jeu de rôle. À l’exercice 3, il ou elle note une personne de confiance – seulement s’il ou elle le souhaite ; l’adulte lit rapidement les numéros. La boîte à outils, le retour en arrière et la mission viennent à la fin ; le ou la jeune peut emporter les fiches du dossier en partant.",
           "sagen": [
             "À quoi remarquerais-tu qu’une part a grandi ?",
             "Quel pas t’aiderait vraiment la semaine prochaine ?"
@@ -6759,7 +7329,11 @@
         {
           "art": "aufgabe",
           "text": "Dein Konflikt-Profil: Wie gut gelingt dir jedes Werkzeug heute? Kreuz in jeder Zeile an.",
-          "hinweis": "Ehrlich und fair zu dir: „noch üben“ ist ein Startpunkt."
+          "hinweis": "Ehrlich und fair zu dir: „noch üben“ ist ein Startpunkt. Du entscheidest, was du ankreuzt.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -6778,7 +7352,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deine Kompass-Karte: Was tust du, wenn ein Konflikt heiß wird? Kreis ein oder kreuz an."
+          "text": "Deine Kompass-Karte: Was tust du, wenn ein Konflikt heiß wird? Kreis ein oder kreuz an. Zeig danach ein Werkzeug im Rollenspiel.",
+          "symbole": [
+            "ankreuzen",
+            "partner"
+          ]
         },
         {
           "art": "spalten",
@@ -6928,6 +7506,12 @@
           "spalten": 2
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ein kleiner Schritt genügt – wähle einen, der heute machbar ist.",
+          "spalten": 2
+        },
+        {
           "art": "ankreuzen",
           "items": [
             "Ein Konflikt hat Stufen – ich kann aussteigen.",
@@ -6989,7 +7573,11 @@
         {
           "art": "aufgabe",
           "text": "Ton profil de conflit : dans quelle mesure chaque outil te réussit-il aujourd’hui ? Coche dans chaque ligne.",
-          "hinweis": "Sois honnête et juste envers toi : « à travailler » est un point de départ."
+          "hinweis": "Sois honnête et juste envers toi : « à travailler » est un point de départ. C’est toi qui décides ce que tu coches.",
+          "symbole": [
+            "ankreuzen",
+            "nachdenken"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -7008,7 +7596,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta carte-boussole : que fais-tu quand un conflit chauffe ? Entoure ou coche."
+          "text": "Ta carte-boussole : que fais-tu quand un conflit chauffe ? Entoure ou coche. Montre ensuite un outil en jeu de rôle.",
+          "symbole": [
+            "ankreuzen",
+            "partner"
+          ]
         },
         {
           "art": "spalten",
@@ -7155,6 +7747,12 @@
             "convenir d’un accord"
           ],
           "titel": "Par rapport au début, je sais mieux (plusieurs réponses possibles) :",
+          "spalten": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un petit pas suffit – choisis-en un qui est faisable aujourd’hui.",
           "spalten": 2
         },
         {

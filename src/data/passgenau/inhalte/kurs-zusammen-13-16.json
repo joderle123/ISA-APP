@@ -116,7 +116,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Welche Rolle steckt in jeder Szene? Verbinde."
+          "text": "Welche Rolle steckt in jeder Szene? Verbinde – und sag, woran du es erkennst.",
+          "symbole": [
+            "verbinden",
+            "sprechen"
+          ]
         },
         {
           "art": "zuordnen",
@@ -185,16 +189,28 @@
           "text": "Welche Rolle würdest du gern öfter spielen – und was würde sich dann ändern?"
         },
         {
-          "art": "satzanfaenge",
+          "art": "formfelder",
+          "form": "wolke",
           "items": [
             "Gern würde ich öfter …",
             "Dann würde sich in der Gruppe ändern, dass …"
           ],
-          "linien": 1
+          "anzahl": 2,
+          "spalten": 2,
+          "hoehe": 3
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Eine Rolle ist kein Urteil",
+          "text": "Du darfst sie wechseln – und manchmal reicht es, sie nur zu bemerken."
         },
         {
           "art": "aufgabe",
-          "text": "Deine Landkarte wächst: Färbe das Gebiet ein, das du heute erkundet hast."
+          "text": "Deine Landkarte wächst: Färbe das Gebiet ein, das du heute erkundet hast.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -241,6 +257,11 @@
             "Jemand hat alles zusammengefasst",
             "Wir waren schneller fertig"
           ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Das nehme ich mit"
         }
       ],
       "fr": [
@@ -276,7 +297,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quel rôle se cache dans chaque scène ? Relie."
+          "text": "Quel rôle se cache dans chaque scène ? Relie – et dis à quoi tu le reconnais.",
+          "symbole": [
+            "verbinden",
+            "sprechen"
+          ]
         },
         {
           "art": "zuordnen",
@@ -345,16 +370,28 @@
           "text": "Quel rôle aimerais-tu jouer plus souvent – et qu’est-ce que cela changerait ?"
         },
         {
-          "art": "satzanfaenge",
+          "art": "formfelder",
+          "form": "wolke",
           "items": [
             "J’aimerais plus souvent …",
             "Dans le groupe, cela changerait que …"
           ],
-          "linien": 1
+          "anzahl": 2,
+          "spalten": 2,
+          "hoehe": 3
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un rôle n’est pas un jugement",
+          "text": "Tu peux en changer – et parfois, il suffit de le remarquer."
         },
         {
           "art": "aufgabe",
-          "text": "Ta carte grandit : colorie la zone que tu as explorée aujourd’hui."
+          "text": "Ta carte grandit : colorie la zone que tu as explorée aujourd’hui.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -401,11 +438,16 @@
             "Quelqu’un a tout résumé",
             "On a fini plus vite"
           ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Ce que j’emporte"
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche verbindet jede Szene mit einer Rolle und sagt dazu, woran er oder sie sie erkannt hat; der Wortspeicher zeigt weitere Rollen. Aufgabe 2 trägt er oder sie allein ein, eigene Gruppen nur, wenn er oder sie mag (erfundene gehen auch); die erste Zeile ist ein Beispiel. In Aufgabe 3 genügt ein Satz. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche verbindet jede Szene mit einer Rolle und sagt dazu, woran er oder sie sie erkannt hat; der Wortspeicher zeigt weitere Rollen. Aufgabe 2 trägt er oder sie allein ein, eigene Gruppen nur, wenn er oder sie mag (erfundene gehen auch); die erste Zeile ist ein Beispiel. In Aufgabe 3 genügt ein Satz. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ genügt ein Stichwort; er oder sie entscheidet, was er oder sie aufschreibt.",
           "sagen": [
             "Woran hast du die Rolle erkannt?",
             "Rollen sind keine Schublade – du kannst wechseln."
@@ -413,7 +455,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche die Rolle, und die Fachkraft trägt sie in die Tabelle ein. Eine Zeile genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 2; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune relie chaque scène à un rôle et dit à quoi il ou elle l’a reconnu ; la boîte à mots montre d’autres rôles. L’exercice 2, il ou elle le remplit seul ; ses propres groupes seulement s’il ou elle le souhaite (des groupes inventés conviennent aussi) ; la première ligne est un exemple. À l’exercice 3, une phrase suffit. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : le ou la jeune relie chaque scène à un rôle et dit à quoi il ou elle l’a reconnu ; la boîte à mots montre d’autres rôles. L’exercice 2, il ou elle le remplit seul ; ses propres groupes seulement s’il ou elle le souhaite (des groupes inventés conviennent aussi) ; la première ligne est un exemple. À l’exercice 3, une phrase suffit. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », un mot suffit ; il ou elle décide de ce qu’il ou elle écrit.",
           "sagen": [
             "À quoi tu as reconnu le rôle ?",
             "Un rôle n’est pas une étiquette – tu peux en changer."
@@ -556,7 +598,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Welche Rolle passt zu jeder Szene? Kreuz an."
+          "text": "Welche Rolle passt zu jeder Szene? Kreuz an und sag, woran du es erkennst.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -581,7 +627,7 @@
         {
           "art": "aufgabe",
           "text": "In welchen Gruppen bist du, und welche Rolle hast du dort meistens? Kreuz an.",
-          "hinweis": "Nur, wenn du magst – oder für eine erfundene Person."
+          "hinweis": "Beispiel: Fußballtraining – Stimmung. Nur, wenn du magst – oder für eine erfundene Person."
         },
         {
           "art": "einschaetzung",
@@ -648,8 +694,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Eine Rolle ist kein Urteil",
+          "text": "Du darfst sie wechseln – und manchmal reicht es, sie nur zu bemerken."
+        },
+        {
           "art": "aufgabe",
-          "text": "Deine Landkarte wächst: Färbe das Gebiet ein, das du heute erkundet hast."
+          "text": "Deine Landkarte wächst: Färbe das Gebiet ein, das du heute erkundet hast.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -689,6 +744,12 @@
             "Jemand sorgt für gute Stimmung.",
             "Jemand hört vor allem zu."
           ]
+        },
+        {
+          "art": "feld",
+          "label": "Das nehme ich mit",
+          "hoehe": 4,
+          "zeichnen": true
         }
       ],
       "fr": [
@@ -724,7 +785,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quel rôle va avec chaque scène ? Coche."
+          "text": "Quel rôle va avec chaque scène ? Coche et dis à quoi tu le reconnais.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -749,7 +814,7 @@
         {
           "art": "aufgabe",
           "text": "Dans quels groupes es-tu, et quel rôle y as-tu le plus souvent ? Coche.",
-          "hinweis": "Seulement si tu veux – ou pour une personne inventée."
+          "hinweis": "Exemple : entraînement de foot – ambiance. Seulement si tu veux – ou pour une personne inventée."
         },
         {
           "art": "einschaetzung",
@@ -816,8 +881,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un rôle n’est pas un jugement",
+          "text": "Tu peux en changer – et parfois, il suffit de le remarquer."
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta carte grandit : colorie la zone que tu as explorée aujourd’hui."
+          "text": "Ta carte grandit : colorie la zone que tu as explorée aujourd’hui.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -857,11 +931,17 @@
             "Quelqu’un remonte le moral.",
             "Quelqu’un écoute surtout."
           ]
+        },
+        {
+          "art": "feld",
+          "label": "Ce que j’emporte",
+          "hoehe": 4,
+          "zeichnen": true
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt je Szene eine Rolle an und sagt, woran er oder sie sie erkannt hat; mehrere Antworten können stimmen. Aufgabe 2 kreuzt er oder sie allein an, eigene Gruppen nur, wenn er oder sie mag (erfundene gehen auch). In Aufgabe 3 kreist er oder sie eine Rollenkarte ein; ein Satz dazu ist freiwillig. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt je Szene eine Rolle an und sagt, woran er oder sie sie erkannt hat; mehrere Antworten können stimmen. Aufgabe 2 kreuzt er oder sie allein an, eigene Gruppen nur, wenn er oder sie mag (erfundene gehen auch). In Aufgabe 3 kreist er oder sie eine Rollenkarte ein; ein Satz dazu ist freiwillig. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ schreibt oder malt er oder sie ein Wort oder ein Bild; das Feld darf auch leer bleiben.",
           "sagen": [
             "Woran hast du die Rolle erkannt?",
             "Rollen sind keine Schublade – du kannst wechseln."
@@ -869,7 +949,7 @@
           "wennEsKippt": "Fällt das Ankreuzen schwer, liest die Fachkraft die Szenen vor, und der oder die Jugendliche zeigt. Eine Szene pro Aufgabe genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune coche un rôle par scène et dit à quoi il ou elle l’a reconnu ; plusieurs réponses peuvent être justes. L’exercice 2, il ou elle le coche seul ; ses propres groupes seulement s’il ou elle le souhaite (des groupes inventés conviennent aussi). À l’exercice 3, il ou elle entoure une carte de rôle ; une phrase à ce sujet est facultative. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : le ou la jeune coche un rôle par scène et dit à quoi il ou elle l’a reconnu ; plusieurs réponses peuvent être justes. L’exercice 2, il ou elle le coche seul ; ses propres groupes seulement s’il ou elle le souhaite (des groupes inventés conviennent aussi). À l’exercice 3, il ou elle entoure une carte de rôle ; une phrase à ce sujet est facultative. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », il ou elle écrit ou dessine un mot ou une image ; le cadre peut aussi rester vide.",
           "sagen": [
             "À quoi tu as reconnu le rôle ?",
             "Un rôle n’est pas une étiquette – tu peux en changer."
@@ -1278,7 +1358,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Recht und Pflicht gehören zusammen. Verbinde."
+          "text": "Recht und Pflicht gehören zusammen. Verbinde – und sag, warum.",
+          "symbole": [
+            "verbinden",
+            "sprechen"
+          ]
         },
         {
           "art": "zuordnen",
@@ -1302,7 +1386,11 @@
         {
           "art": "aufgabe",
           "text": "Prüfe diese Regel mit dem Fairness-Check und mach einen Vorschlag.",
-          "hinweis": "Regel: Im Klassenchat darf nur die Klassensprecherin schreiben. Die anderen dürfen nicht antworten."
+          "hinweis": "Regel: Im Klassenchat darf nur die Klassensprecherin schreiben. Die anderen dürfen nicht antworten.",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -1325,8 +1413,17 @@
           "linien": 2
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nachfragen ist kein Widerstand",
+          "text": "So prüfst du, ob eine Regel trägt – und wem sie nützt."
+        },
+        {
           "art": "aufgabe",
-          "text": "Weiter auf der Landkarte: Färbe das zweite Gebiet ein."
+          "text": "Weiter auf der Landkarte: Färbe das zweite Gebiet ein.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -1353,7 +1450,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Such eine Regel, deren Grund du nicht kennst (Schule, Verein, Chat). Überleg oder frag nach: Wozu ist sie da?"
+          "text": "Bis zum nächsten Mal: Such eine Regel, deren Grund du nicht kennst (Schule, Verein, Chat). Überleg oder frag nach: Wozu ist sie da?",
+          "hinweis": "Wenn du magst – oder eine Regel aus einem Buch oder Film."
         },
         {
           "art": "tabelle",
@@ -1373,6 +1471,11 @@
             "Mehr Platz für alle",
             "ja"
           ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Das nehme ich mit"
         }
       ],
       "fr": [
@@ -1474,7 +1577,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Droit et devoir vont ensemble. Relie."
+          "text": "Droit et devoir vont ensemble. Relie – et dis pourquoi.",
+          "symbole": [
+            "verbinden",
+            "sprechen"
+          ]
         },
         {
           "art": "zuordnen",
@@ -1498,7 +1605,11 @@
         {
           "art": "aufgabe",
           "text": "Vérifie cette règle avec le test d’équité et fais une proposition.",
-          "hinweis": "Règle : dans le chat de la classe, seule la déléguée de classe a le droit d’écrire. Les autres ne peuvent pas répondre."
+          "hinweis": "Règle : dans le chat de la classe, seule la déléguée de classe a le droit d’écrire. Les autres ne peuvent pas répondre.",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -1521,8 +1632,17 @@
           "linien": 2
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Poser une question, ce n’est pas résister",
+          "text": "C’est ainsi que tu vérifies si une règle tient – et à qui elle sert."
+        },
+        {
           "art": "aufgabe",
-          "text": "On avance sur la carte : colorie la deuxième zone."
+          "text": "On avance sur la carte : colorie la deuxième zone.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -1549,7 +1669,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : trouve une règle dont tu ne connais pas la raison (école, club, chat). Réfléchis ou demande : à quoi sert-elle ?"
+          "text": "D’ici la prochaine fois : trouve une règle dont tu ne connais pas la raison (école, club, chat). Réfléchis ou demande : à quoi sert-elle ?",
+          "hinweis": "Si tu veux – ou une règle d’un livre ou d’un film."
         },
         {
           "art": "tabelle",
@@ -1569,11 +1690,16 @@
             "Plus de place pour tous",
             "oui"
           ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Ce que j’emporte"
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche liest die Beispielzeile und trägt dann zu den anderen Regeln Grund und Nutznießer ein; mehrere Gründe können stimmen. Aufgabe 2 verbindet er oder sie allein und sagt, warum ein Recht die passende Pflicht braucht. In Aufgabe 3 wendet er oder sie den Fairness-Check (Kasten) auf die Chat-Regel an und schreibt einen Vorschlag; das Gespräch darüber ist wichtiger als der Text. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche liest die Beispielzeile und trägt dann zu den anderen Regeln Grund und Nutznießer ein; mehrere Gründe können stimmen. Aufgabe 2 verbindet er oder sie allein und sagt, warum ein Recht die passende Pflicht braucht. In Aufgabe 3 wendet er oder sie den Fairness-Check (Kasten) auf die Chat-Regel an und schreibt einen Vorschlag; das Gespräch darüber ist wichtiger als der Text. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ genügt ein Stichwort; er oder sie entscheidet, was er oder sie aufschreibt.",
           "sagen": [
             "Wozu ist die Regel da – und wer hat etwas davon?",
             "Was würde sie fairer machen?"
@@ -1581,7 +1707,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche den Grund, und die Fachkraft schreibt ihn in die Tabelle. Eine Regel pro Aufgabe genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune lit la ligne d’exemple, puis note pour les autres règles la raison et qui en profite ; plusieurs raisons peuvent être justes. L’exercice 2, il ou elle le relie seul et dit pourquoi un droit appelle le devoir qui va avec. À l’exercice 3, il ou elle applique le test d’équité (encadré) à la règle du chat et écrit une proposition ; la discussion compte plus que le texte. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : le ou la jeune lit la ligne d’exemple, puis note pour les autres règles la raison et qui en profite ; plusieurs raisons peuvent être justes. L’exercice 2, il ou elle le relie seul et dit pourquoi un droit appelle le devoir qui va avec. À l’exercice 3, il ou elle applique le test d’équité (encadré) à la règle du chat et écrit une proposition ; la discussion compte plus que le texte. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », un mot suffit ; il ou elle décide de ce qu’il ou elle écrit.",
           "sagen": [
             "À quoi sert la règle – et qui en profite ?",
             "Qu’est-ce qui la rendrait plus juste ?"
@@ -1722,7 +1848,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wozu ist die Regel da? Kreuz den Grund an."
+          "text": "Wozu ist die Regel da? Kreuz den Grund an und sag, woran du ihn erkennst.",
+          "hinweis": "Beispiel: „Kein Foul von hinten“ – Schutz.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -1770,7 +1901,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Recht und Pflicht gehören zusammen. Verbinde."
+          "text": "Recht und Pflicht gehören zusammen. Verbinde – und sag, warum.",
+          "symbole": [
+            "verbinden",
+            "sprechen"
+          ]
         },
         {
           "art": "zuordnen",
@@ -1822,8 +1957,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nachfragen ist kein Widerstand",
+          "text": "So prüfst du, ob eine Regel trägt – und wem sie nützt."
+        },
+        {
           "art": "aufgabe",
-          "text": "Weiter auf der Landkarte: Färbe das zweite Gebiet ein."
+          "text": "Weiter auf der Landkarte: Färbe das zweite Gebiet ein.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -1850,7 +1994,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Such eine Regel, deren Grund du nicht kennst. Kreuz an, wo du sie gefunden hast."
+          "text": "Bis zum nächsten Mal: Such eine Regel, deren Grund du nicht kennst. Kreuz an, wo du sie gefunden hast.",
+          "hinweis": "Wenn du magst – oder eine Regel aus einem Buch oder Film."
         },
         {
           "art": "ankreuzen",
@@ -1862,6 +2007,12 @@
             "im Gruppenchat",
             "bei einem Spiel"
           ]
+        },
+        {
+          "art": "feld",
+          "label": "Das nehme ich mit",
+          "hoehe": 4,
+          "zeichnen": true
         }
       ],
       "fr": [
@@ -1897,7 +2048,12 @@
         },
         {
           "art": "aufgabe",
-          "text": "À quoi sert la règle ? Coche la raison."
+          "text": "À quoi sert la règle ? Coche la raison et dis à quoi tu la reconnais.",
+          "hinweis": "Exemple : « pas de faute par derrière » – protection.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -1945,7 +2101,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Droit et devoir vont ensemble. Relie."
+          "text": "Droit et devoir vont ensemble. Relie – et dis pourquoi.",
+          "symbole": [
+            "verbinden",
+            "sprechen"
+          ]
         },
         {
           "art": "zuordnen",
@@ -1997,8 +2157,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Poser une question, ce n’est pas résister",
+          "text": "C’est ainsi que tu vérifies si une règle tient – et à qui elle sert."
+        },
+        {
           "art": "aufgabe",
-          "text": "On avance sur la carte : colorie la deuxième zone."
+          "text": "On avance sur la carte : colorie la deuxième zone.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -2025,7 +2194,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : trouve une règle dont tu ne connais pas la raison. Coche où tu l’as trouvée."
+          "text": "D’ici la prochaine fois : trouve une règle dont tu ne connais pas la raison. Coche où tu l’as trouvée.",
+          "hinweis": "Si tu veux – ou une règle d’un livre ou d’un film."
         },
         {
           "art": "ankreuzen",
@@ -2037,11 +2207,17 @@
             "dans le chat de groupe",
             "pendant un jeu"
           ]
+        },
+        {
+          "art": "feld",
+          "label": "Ce que j’emporte",
+          "hoehe": 4,
+          "zeichnen": true
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt zu jeder Regel einen Grund an und sagt, woran er oder sie ihn erkannt hat; mehrere Gründe können stimmen. Aufgabe 2 verbindet er oder sie allein und sagt, warum ein Recht die passende Pflicht braucht. In Aufgabe 3 kreuzt er oder sie die drei Fairness-Fragen zur Chat-Regel an und wählt, was sie fairer machen würde; das Gespräch darüber ist wichtiger als das Kreuz. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt zu jeder Regel einen Grund an und sagt, woran er oder sie ihn erkannt hat; mehrere Gründe können stimmen. Aufgabe 2 verbindet er oder sie allein und sagt, warum ein Recht die passende Pflicht braucht. In Aufgabe 3 kreuzt er oder sie die drei Fairness-Fragen zur Chat-Regel an und wählt, was sie fairer machen würde; das Gespräch darüber ist wichtiger als das Kreuz. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ schreibt oder malt er oder sie ein Wort oder ein Bild; das Feld darf auch leer bleiben.",
           "sagen": [
             "Wozu ist die Regel da – und wer hat etwas davon?",
             "Was würde sie fairer machen?"
@@ -2049,7 +2225,7 @@
           "wennEsKippt": "Fällt das Ankreuzen schwer, liest die Fachkraft die Regel vor, und der oder die Jugendliche zeigt auf den Grund. Eine Regel pro Aufgabe genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune coche une raison pour chaque règle et dit à quoi il ou elle l’a reconnue ; plusieurs raisons peuvent être justes. L’exercice 2, il ou elle le relie seul et dit pourquoi un droit appelle le devoir qui va avec. À l’exercice 3, il ou elle coche les trois questions du test à propos de la règle du chat et choisit ce qui la rendrait plus juste ; la discussion compte plus que la croix. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : le ou la jeune coche une raison pour chaque règle et dit à quoi il ou elle l’a reconnue ; plusieurs raisons peuvent être justes. L’exercice 2, il ou elle le relie seul et dit pourquoi un droit appelle le devoir qui va avec. À l’exercice 3, il ou elle coche les trois questions du test à propos de la règle du chat et choisit ce qui la rendrait plus juste ; la discussion compte plus que la croix. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », il ou elle écrit ou dessine un mot ou une image ; le cadre peut aussi rester vide.",
           "sagen": [
             "À quoi sert la règle – et qui en profite ?",
             "Qu’est-ce qui la rendrait plus juste ?"
@@ -2399,7 +2575,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ausrede oder Verantwortung? Kreuz an."
+          "text": "Ausrede oder Verantwortung? Kreuz an und sag, woran du es merkst.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -2425,13 +2605,16 @@
           "hinweis": "Anteil – Folge – Wiedergutmachung. Der Text darf kurz sein."
         },
         {
-          "art": "satzanfaenge",
+          "art": "formfelder",
+          "form": "blase",
           "items": [
             "1  Das war mein Anteil: …",
             "2  Das heißt für euch: …",
             "3  Das mache ich jetzt: …"
           ],
-          "linien": 1
+          "anzahl": 3,
+          "spalten": 3,
+          "hoehe": 4
         },
         {
           "art": "aufgabe",
@@ -2449,8 +2632,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Verantwortung ist kein Fertigmachen",
+          "text": "Ein ehrlicher Satz und ein kleiner Schritt reichen."
+        },
+        {
           "art": "aufgabe",
-          "text": "Das dritte Gebiet kommt dazu. Färbe es ein."
+          "text": "Das dritte Gebiet kommt dazu. Färbe es ein.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -2477,7 +2669,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Halte eine Zusage ein, die du gemacht hast – auch eine kleine."
+          "text": "Bis zum nächsten Mal: Halte eine Zusage ein, die du gemacht hast – auch eine kleine.",
+          "hinweis": "Wenn du magst – oder eine Zusage für Rafael. Du musst sie niemandem zeigen."
         },
         {
           "art": "satzanfaenge",
@@ -2485,6 +2678,11 @@
             "Meine Zusage:"
           ],
           "linien": 1
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Das nehme ich mit"
         }
       ],
       "fr": [
@@ -2526,7 +2724,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Prétexte ou responsabilité ? Coche."
+          "text": "Prétexte ou responsabilité ? Coche et dis à quoi tu le remarques.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -2552,13 +2754,16 @@
           "hinweis": "Ma part – la conséquence – réparer. Le texte peut être court."
         },
         {
-          "art": "satzanfaenge",
+          "art": "formfelder",
+          "form": "blase",
           "items": [
             "1  Voilà ma part : …",
             "2  Pour vous, cela veut dire : …",
             "3  Voilà ce que je fais maintenant : …"
           ],
-          "linien": 1
+          "anzahl": 3,
+          "spalten": 3,
+          "hoehe": 4
         },
         {
           "art": "aufgabe",
@@ -2576,8 +2781,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Responsabilité ne veut pas dire s’accabler",
+          "text": "Une phrase honnête et un petit pas suffisent."
+        },
+        {
           "art": "aufgabe",
-          "text": "La troisième zone s’ajoute. Colorie-la."
+          "text": "La troisième zone s’ajoute. Colorie-la.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -2604,7 +2818,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : tiens une promesse que tu as faite – même une petite."
+          "text": "D’ici la prochaine fois : tiens une promesse que tu as faite – même une petite.",
+          "hinweis": "Si tu veux – ou une promesse pour Rafael. Tu n’as à la montrer à personne."
         },
         {
           "art": "satzanfaenge",
@@ -2612,11 +2827,16 @@
             "Ma promesse :"
           ],
           "linien": 1
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Ce que j’emporte"
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche liest Rafaels Geschichte und kreuzt an, welche Sätze Ausrede und welche Verantwortung sind, und sagt, woran er oder sie es merkt. In Aufgabe 2 schreibt er oder sie Rafaels Nachricht in drei kurzen Sätzen neu; das Gespräch darüber ist wichtiger als der Text. Aufgabe 3 kreuzt er oder sie an: was Jil wirklich helfen würde (mehrere Antworten stimmen). Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche liest Rafaels Geschichte und kreuzt an, welche Sätze Ausrede und welche Verantwortung sind, und sagt, woran er oder sie es merkt. In Aufgabe 2 schreibt er oder sie Rafaels Nachricht in drei kurzen Sätzen neu; das Gespräch darüber ist wichtiger als der Text. Aufgabe 3 kreuzt er oder sie an: was Jil wirklich helfen würde (mehrere Antworten stimmen). Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ genügt ein Stichwort; er oder sie entscheidet, was er oder sie aufschreibt.",
           "sagen": [
             "Was an dieser Antwort trägt nicht?",
             "Was würde Jil wirklich helfen?"
@@ -2624,7 +2844,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche die drei Sätze, und die Fachkraft schreibt sie auf. Ein Satz pro Schritt genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 2; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune lit l’histoire de Rafael, coche quelles phrases sont des prétextes et lesquelles de la responsabilité, et dit à quoi il ou elle le remarque. À l’exercice 2, il ou elle réécrit le message de Rafael en trois phrases courtes ; la discussion compte plus que le texte. À l’exercice 3, il ou elle coche ce qui aiderait vraiment Jil (plusieurs réponses sont justes). L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : le ou la jeune lit l’histoire de Rafael, coche quelles phrases sont des prétextes et lesquelles de la responsabilité, et dit à quoi il ou elle le remarque. À l’exercice 2, il ou elle réécrit le message de Rafael en trois phrases courtes ; la discussion compte plus que le texte. À l’exercice 3, il ou elle coche ce qui aiderait vraiment Jil (plusieurs réponses sont justes). L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », un mot suffit ; il ou elle décide de ce qu’il ou elle écrit.",
           "sagen": [
             "Qu’est-ce qui ne tient pas dans cette réponse ?",
             "Qu’est-ce qui aiderait vraiment Jil ?"
@@ -2787,7 +3007,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ausrede oder Verantwortung? Kreuz an."
+          "text": "Ausrede oder Verantwortung? Kreuz an und sag, woran du es merkst.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -2841,8 +3065,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Verantwortung ist kein Fertigmachen",
+          "text": "Ein ehrlicher Satz und ein kleiner Schritt reichen."
+        },
+        {
           "art": "aufgabe",
-          "text": "Das dritte Gebiet kommt dazu. Färbe es ein."
+          "text": "Das dritte Gebiet kommt dazu. Färbe es ein.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -2869,7 +3102,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Halte eine Zusage ein, die du gemacht hast – auch eine kleine. Kreuz an, wo sie liegt."
+          "text": "Bis zum nächsten Mal: Halte eine Zusage ein, die du gemacht hast – auch eine kleine. Kreuz an, wo sie liegt.",
+          "hinweis": "Wenn du magst – oder eine Zusage für Rafael. Du musst sie niemandem zeigen."
         },
         {
           "art": "ankreuzen",
@@ -2881,6 +3115,12 @@
             "Freunde",
             "Ein Termin"
           ]
+        },
+        {
+          "art": "feld",
+          "label": "Das nehme ich mit",
+          "hoehe": 4,
+          "zeichnen": true
         }
       ],
       "fr": [
@@ -2938,7 +3178,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Prétexte ou responsabilité ? Coche."
+          "text": "Prétexte ou responsabilité ? Coche et dis à quoi tu le remarques.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -2992,8 +3236,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Responsabilité ne veut pas dire s’accabler",
+          "text": "Une phrase honnête et un petit pas suffisent."
+        },
+        {
           "art": "aufgabe",
-          "text": "La troisième zone s’ajoute. Colorie-la."
+          "text": "La troisième zone s’ajoute. Colorie-la.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -3020,7 +3273,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : tiens une promesse que tu as faite – même une petite. Coche où elle se situe."
+          "text": "D’ici la prochaine fois : tiens une promesse que tu as faite – même une petite. Coche où elle se situe.",
+          "hinweis": "Si tu veux – ou une promesse pour Rafael. Tu n’as à la montrer à personne."
         },
         {
           "art": "ankreuzen",
@@ -3032,11 +3286,17 @@
             "Amis",
             "Un rendez-vous"
           ]
+        },
+        {
+          "art": "feld",
+          "label": "Ce que j’emporte",
+          "hoehe": 4,
+          "zeichnen": true
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche schaut die Bildfolge an, kreuzt an, welche Sätze Ausrede und welche Verantwortung sind, und sagt, woran er oder sie es merkt. In Aufgabe 2 verbindet er oder sie jeden der drei Schritte mit dem passenden Satz. Aufgabe 3 kreuzt er oder sie an: was Jil helfen würde (mehrere Antworten stimmen). Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche schaut die Bildfolge an, kreuzt an, welche Sätze Ausrede und welche Verantwortung sind, und sagt, woran er oder sie es merkt. In Aufgabe 2 verbindet er oder sie jeden der drei Schritte mit dem passenden Satz. Aufgabe 3 kreuzt er oder sie an: was Jil helfen würde (mehrere Antworten stimmen). Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ schreibt oder malt er oder sie ein Wort oder ein Bild; das Feld darf auch leer bleiben.",
           "sagen": [
             "Was an dieser Antwort trägt nicht?",
             "Was würde Jil wirklich helfen?"
@@ -3044,7 +3304,7 @@
           "wennEsKippt": "Fällt das Verbinden schwer, liest die Fachkraft die Sätze vor, und der oder die Jugendliche zeigt. Ein Schritt nach dem anderen genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 2; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune regarde la série d’images, coche quelles phrases sont des prétextes et lesquelles de la responsabilité, et dit à quoi il ou elle le remarque. À l’exercice 2, il ou elle relie chacune des trois étapes à la phrase qui convient. À l’exercice 3, il ou elle coche ce qui aiderait Jil (plusieurs réponses sont justes). L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : le ou la jeune regarde la série d’images, coche quelles phrases sont des prétextes et lesquelles de la responsabilité, et dit à quoi il ou elle le remarque. À l’exercice 2, il ou elle relie chacune des trois étapes à la phrase qui convient. À l’exercice 3, il ou elle coche ce qui aiderait Jil (plusieurs réponses sont justes). L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », il ou elle écrit ou dessine un mot ou une image ; le cadre peut aussi rester vide.",
           "sagen": [
             "Qu’est-ce qui ne tient pas dans cette réponse ?",
             "Qu’est-ce qui aiderait vraiment Jil ?"
@@ -3387,7 +3647,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Woran merkst du Druck? Kreuz an, was du kennst."
+          "text": "Woran merkst du Druck? Kreuz an, was du kennst.",
+          "hinweis": "Nur, wenn du magst – oder für eine erfundene Person."
         },
         {
           "art": "ankreuzen",
@@ -3428,9 +3689,19 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ein Nein darf kurz sein",
+          "text": "Du musst es nicht begründen – und du darfst es wiederholen."
+        },
+        {
           "art": "aufgabe",
-          "text": "Schreib deine Antworten in den Chat.",
-          "hinweis": "Mila und Pol drängen dich, die Sprachnachricht von Elias in die Klassengruppe zu schicken."
+          "text": "Schreib deine Antworten in den Chat und sprich sie im Stehen.",
+          "hinweis": "Mila und Pol drängen dich, die Sprachnachricht von Elias in die Klassengruppe zu schicken.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
         },
         {
           "art": "dialog",
@@ -3453,6 +3724,37 @@
         },
         {
           "art": "aufgabe",
+          "text": "Sprich deinen Nein-Satz laut im Stehen. Wie klingt er? Kreuz auf jedem Regler an.",
+          "symbole": [
+            "sprechen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "leise",
+              "laut"
+            ],
+            [
+              "zögernd",
+              "klar"
+            ],
+            [
+              "lang erklärt",
+              "kurz"
+            ],
+            [
+              "Schultern hoch",
+              "Schultern locker"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
           "text": "Jemand wird im Chat vorgeführt. Was ist für dich möglich? Kreuz an.",
           "hinweis": "Vom leisen zum deutlichen Weg. Du entscheidest, was du dir zutraust."
         },
@@ -3469,7 +3771,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Das letzte Gebiet ist erkundet. Färbe es ein."
+          "text": "Das letzte Gebiet ist erkundet. Färbe es ein.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -3504,6 +3809,11 @@
             "Mein Nein-Satz:"
           ],
           "linien": 1
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Das nehme ich mit"
         }
       ],
       "fr": [
@@ -3539,7 +3849,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "À quoi remarques-tu la pression ? Coche ce que tu connais."
+          "text": "À quoi remarques-tu la pression ? Coche ce que tu connais.",
+          "hinweis": "Seulement si tu veux – ou pour une personne inventée."
         },
         {
           "art": "ankreuzen",
@@ -3580,9 +3891,19 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un non peut être court",
+          "text": "Tu n’as pas à le justifier – et tu peux le répéter."
+        },
+        {
           "art": "aufgabe",
-          "text": "Écris tes réponses dans le chat.",
-          "hinweis": "Mila et Pol insistent pour que tu envoies le message vocal d’Elias dans le groupe de la classe."
+          "text": "Écris tes réponses dans le chat et dis-les debout.",
+          "hinweis": "Mila et Pol insistent pour que tu envoies le message vocal d’Elias dans le groupe de la classe.",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
         },
         {
           "art": "dialog",
@@ -3605,6 +3926,37 @@
         },
         {
           "art": "aufgabe",
+          "text": "Dis ta phrase pour dire non à voix haute, debout. Comment sonne-t-elle ? Coche sur chaque curseur.",
+          "symbole": [
+            "sprechen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "regler",
+          "paare": [
+            [
+              "à voix basse",
+              "à voix haute"
+            ],
+            [
+              "avec hésitation",
+              "avec assurance"
+            ],
+            [
+              "longue explication",
+              "court"
+            ],
+            [
+              "épaules crispées",
+              "épaules relâchées"
+            ]
+          ],
+          "stufen": 5,
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
           "text": "Quelqu’un est ridiculisé dans le chat. Qu’est-ce qui te semble possible ? Coche.",
           "hinweis": "Du plus discret au plus visible. C’est toi qui décides de ce que tu te sens capable de faire."
         },
@@ -3621,7 +3973,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "La dernière zone est explorée. Colorie-la."
+          "text": "La dernière zone est explorée. Colorie-la.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -3656,11 +4011,16 @@
             "Ma phrase pour dire non :"
           ],
           "linien": 1
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Ce que j’emporte"
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt an, woran er oder sie Druck bemerkt (oder bei einer erfundenen Person bemerken würde); das Gespräch geht in den Kasten „Stopp – Stand – Satz“ über, den beide laut lesen. In Aufgabe 2 schreibt er oder sie die Antworten in den Chat, kurz und ohne Rechtfertigung; danach spricht er oder sie sie im Stehen. Aufgabe 3 kreuzt er oder sie allein an; mehrere Wege sind möglich. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt an, woran er oder sie Druck bemerkt (oder bei einer erfundenen Person bemerken würde); das Gespräch geht in den Kasten „Stopp – Stand – Satz“ über, den beide laut lesen. In Aufgabe 2 schreibt er oder sie die Antworten in den Chat, kurz und ohne Rechtfertigung; danach spricht er oder sie sie im Stehen. Aufgabe 3 kreuzt er oder sie allein an; mehrere Wege sind möglich. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe. Den Nein-Satz spricht er oder sie im Stehen laut und schätzt auf den Reglern ein, wie er klingt; es gibt kein Richtig oder Falsch. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ genügt ein Stichwort; er oder sie entscheidet, was er oder sie aufschreibt.",
           "sagen": [
             "Wo merkst du es zuerst?",
             "Kurz und freundlich – ohne Roman."
@@ -3668,7 +4028,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche den Satz, und die Fachkraft schreibt ihn in die Blase. Ein Nein-Satz genügt. Ist die Zeit knapp, reichen die Aufgaben 2 und 3; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune coche à quoi il ou elle remarque la pression (ou le remarquerait chez une personne inventée) ; la discussion passe à l’encadré « Stop – Pieds au sol – Phrase » que les deux lisent à voix haute. À l’exercice 2, il ou elle écrit les réponses dans le chat, brèves et sans justification ; ensuite il ou elle les dit debout. L’exercice 3, il ou elle le coche seul ; plusieurs façons sont possibles. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : le ou la jeune coche à quoi il ou elle remarque la pression (ou le remarquerait chez une personne inventée) ; la discussion passe à l’encadré « Stop – Pieds au sol – Phrase » que les deux lisent à voix haute. À l’exercice 2, il ou elle écrit les réponses dans le chat, brèves et sans justification ; ensuite il ou elle les dit debout. L’exercice 3, il ou elle le coche seul ; plusieurs façons sont possibles. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe. Il ou elle dit sa phrase debout à voix haute et estime sur les curseurs comment elle sonne ; il n’y a ni bonne ni mauvaise réponse. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », un mot suffit ; il ou elle décide de ce qu’il ou elle écrit.",
           "sagen": [
             "Où le remarques-tu en premier ?",
             "Court et aimable – sans long discours."
@@ -3812,7 +4172,7 @@
         {
           "art": "aufgabe",
           "text": "Wo spürst du Druck? Mal die Stellen an.",
-          "hinweis": "Nur, wenn du magst – oder für eine erfundene Person."
+          "hinweis": "Beispiel: Bauch rot, Hände gelb. Nur, wenn du magst – oder für eine erfundene Person."
         },
         {
           "art": "koerper",
@@ -3853,9 +4213,19 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ein Nein darf kurz sein",
+          "text": "Du musst es nicht begründen – und du darfst es wiederholen."
+        },
+        {
           "art": "aufgabe",
-          "text": "Welchen Satz sagst du? Kreuz an.",
-          "hinweis": "Mila und Pol drängen dich, die Sprachnachricht von Elias in die Klassengruppe zu schicken."
+          "text": "Welchen Satz sagst du? Kreuz an und sprich ihn im Stehen.",
+          "hinweis": "Mila und Pol drängen dich, die Sprachnachricht von Elias in die Klassengruppe zu schicken.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -3905,7 +4275,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Das letzte Gebiet ist erkundet. Färbe es ein."
+          "text": "Das letzte Gebiet ist erkundet. Färbe es ein.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -3939,6 +4312,16 @@
           "titel": "Bis zum nächsten Mal",
           "text": "Ich sage meinen Nein-Satz einmal laut.",
           "kaestchen": 1
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit",
+          "items": [
+            "Druck merkt man im Körper.",
+            "Ein Nein darf kurz sein.",
+            "Es gibt leise und deutliche Wege."
+          ],
+          "spalten": 3
         }
       ],
       "fr": [
@@ -3975,7 +4358,7 @@
         {
           "art": "aufgabe",
           "text": "Où sens-tu la pression ? Colorie les endroits.",
-          "hinweis": "Seulement si tu veux – ou pour une personne inventée."
+          "hinweis": "Exemple : ventre en rouge, mains en jaune. Seulement si tu veux – ou pour une personne inventée."
         },
         {
           "art": "koerper",
@@ -4016,9 +4399,19 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un non peut être court",
+          "text": "Tu n’as pas à le justifier – et tu peux le répéter."
+        },
+        {
           "art": "aufgabe",
-          "text": "Quelle phrase dis-tu ? Coche.",
-          "hinweis": "Mila et Pol insistent pour que tu envoies le message vocal d’Elias dans le groupe de la classe."
+          "text": "Quelle phrase dis-tu ? Coche et dis-la debout.",
+          "hinweis": "Mila et Pol insistent pour que tu envoies le message vocal d’Elias dans le groupe de la classe.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -4068,7 +4461,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "La dernière zone est explorée. Colorie-la."
+          "text": "La dernière zone est explorée. Colorie-la.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -4102,11 +4498,21 @@
           "titel": "D’ici la prochaine fois",
           "text": "Je dis ma phrase pour dire non une fois à voix haute.",
           "kaestchen": 1
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte",
+          "items": [
+            "La pression se sent dans le corps.",
+            "Un non peut être court.",
+            "Il y a des façons discrètes et visibles."
+          ],
+          "spalten": 3
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche malt an, wo er oder sie Druck spürt (oder bei einer erfundenen Person spüren würde); das Gespräch geht in den Kasten „Stopp – Stand – Satz“ über, den beide laut lesen. In Aufgabe 2 kreuzt er oder sie den Nein-Satz an, der passt, und spricht ihn im Stehen; die Skala zeigt, wie leicht oder schwer es ihm oder ihr fällt. Aufgabe 3 kreuzt er oder sie allein an; mehrere Wege sind möglich. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche malt an, wo er oder sie Druck spürt (oder bei einer erfundenen Person spüren würde); das Gespräch geht in den Kasten „Stopp – Stand – Satz“ über, den beide laut lesen. In Aufgabe 2 kreuzt er oder sie den Nein-Satz an, der passt, und spricht ihn im Stehen; die Skala zeigt, wie leicht oder schwer es ihm oder ihr fällt. Aufgabe 3 kreuzt er oder sie allein an; mehrere Wege sind möglich. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ schreibt oder malt er oder sie ein Wort oder ein Bild; das Feld darf auch leer bleiben.",
           "sagen": [
             "Wo merkst du es zuerst?",
             "Kurz und freundlich – ohne Roman."
@@ -4114,7 +4520,7 @@
           "wennEsKippt": "Mag der oder die Jugendliche nicht malen, zeigt er oder sie mit dem Finger auf den Körper, und die Fachkraft malt nach Ansage. Ein Nein-Satz genügt. Ist die Zeit knapp, reichen die Aufgaben 2 und 3; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune colorie où il ou elle sent la pression (ou la sentirait chez une personne inventée) ; la discussion passe à l’encadré « Stop – Pieds au sol – Phrase » que les deux lisent à voix haute. À l’exercice 2, il ou elle coche la phrase pour dire non qui convient et la dit debout ; l’échelle montre si c’est facile ou difficile pour lui ou elle. L’exercice 3, il ou elle le coche seul ; plusieurs façons sont possibles. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : le ou la jeune colorie où il ou elle sent la pression (ou la sentirait chez une personne inventée) ; la discussion passe à l’encadré « Stop – Pieds au sol – Phrase » que les deux lisent à voix haute. À l’exercice 2, il ou elle coche la phrase pour dire non qui convient et la dit debout ; l’échelle montre si c’est facile ou difficile pour lui ou elle. L’exercice 3, il ou elle le coche seul ; plusieurs façons sont possibles. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », il ou elle écrit ou dessine un mot ou une image ; le cadre peut aussi rester vide.",
           "sagen": [
             "Où le remarques-tu en premier ?",
             "Court et aimable – sans long discours."
@@ -4478,7 +4884,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mila und Pol drängen eine Person im Klassenchat. Woran merkt die gedrängte Person den Druck? Kreuz an, was passen könnte."
+          "text": "Mila und Pol drängen eine Person im Klassenchat. Woran merkt die gedrängte Person den Druck? Kreuz an, was passen könnte.",
+          "hinweis": "Beispiel: Sie lacht mit, obwohl sie nicht will."
         },
         {
           "art": "ankreuzen",
@@ -4516,6 +4923,12 @@
               "ausrichtung": "mitte"
             }
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Es geht um die Figuren",
+          "text": "Hier ist alles freiwillig. Du musst nichts von dir erzählen – und ein Nein darf kurz sein."
         },
         {
           "art": "aufgabe",
@@ -4577,7 +4990,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Das letzte Gebiet ist erkundet. Färbe es ein."
+          "text": "Das letzte Gebiet ist erkundet. Färbe es ein.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -4604,7 +5020,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bis zum nächsten Mal: Achte bei einer Figur in einem Buch oder Film darauf, wie sie unter Druck Nein sagt. Oder übe einen Nein-Satz für die gedrängte Person in Gedanken."
+          "text": "Bis zum nächsten Mal: Achte in Buch oder Film darauf, wie eine Figur unter Druck Nein sagt – oder übe einen Nein-Satz in Gedanken."
         },
         {
           "art": "zielkarte",
@@ -4615,6 +5031,16 @@
             "gefunden",
             "geübt"
           ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit",
+          "items": [
+            "Druck merkt man im Körper, im Gedanken oder im Verhalten.",
+            "Ein Nein darf kurz sein.",
+            "Es gibt leise und deutliche Wege einzugreifen."
+          ],
+          "spalten": 1
         }
       ],
       "fr": [
@@ -4650,7 +5076,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mila et Pol font pression sur une personne dans le chat de la classe. À quoi la personne sous pression remarque-t-elle la pression ? Coche ce qui peut convenir."
+          "text": "Mila et Pol font pression sur une personne dans le chat de la classe. À quoi la personne sous pression remarque-t-elle la pression ? Coche ce qui peut convenir.",
+          "hinweis": "Exemple : elle rit avec les autres sans en avoir envie."
         },
         {
           "art": "ankreuzen",
@@ -4688,6 +5115,12 @@
               "ausrichtung": "mitte"
             }
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Il s’agit des personnages",
+          "text": "Ici, tout est facultatif. Tu n’as rien à raconter de toi – et un non peut être court."
         },
         {
           "art": "aufgabe",
@@ -4749,7 +5182,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "La dernière zone est explorée. Colorie-la."
+          "text": "La dernière zone est explorée. Colorie-la.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -4776,7 +5212,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "D’ici la prochaine fois : dans un livre ou un film, repère comment un personnage dit non sous pression. Ou entraîne dans ta tête une phrase pour dire non."
+          "text": "D’ici la prochaine fois : repère, dans un livre ou un film, comment un personnage dit non sous pression – ou répète une phrase dans ta tête."
         },
         {
           "art": "zielkarte",
@@ -4787,11 +5223,21 @@
             "trouvé",
             "entraîné"
           ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte",
+          "items": [
+            "On remarque la pression dans le corps, dans une pensée ou dans le comportement.",
+            "Un non peut être court.",
+            "Il y a des façons discrètes et visibles d’intervenir."
+          ],
+          "spalten": 1
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die sechs Anzeichen vor, der oder die Jugendliche kreuzt an, woran die gedrängte Person den Druck merkt; danach lesen beide den Kasten „Stopp – Stand – Satz“. In Aufgabe 2 entscheidet er oder sie für die gedrängte Person bei jeder Druck-Karte, welchen Weg sie nimmt; beim dritten Weg stehen beide auf (Füße hüftbreit, einmal lang ausatmen). In Aufgabe 3 kreuzt er oder sie den Nein-Satz an, der passt, und die Fachkraft sagt ihn als die gedrängte Person. Aufgabe 4 kreuzt er oder sie allein an; mehrere Wege sind möglich. Aufgabe 5 färbt er oder sie zum Schluss ein. Es geht nur um Mila, Pol, die gedrängte Person und ausgedachte Situationen; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Die Fachkraft liest die sechs Anzeichen vor, der oder die Jugendliche kreuzt an, woran die gedrängte Person den Druck merkt; danach lesen beide den Kasten „Stopp – Stand – Satz“. In Aufgabe 2 entscheidet er oder sie für die gedrängte Person bei jeder Druck-Karte, welchen Weg sie nimmt; beim dritten Weg stehen beide auf (Füße hüftbreit, einmal lang ausatmen). In Aufgabe 3 kreuzt er oder sie den Nein-Satz an, der passt, und die Fachkraft sagt ihn als die gedrängte Person. Aufgabe 4 kreuzt er oder sie allein an; mehrere Wege sind möglich. Aufgabe 5 färbt er oder sie zum Schluss ein. Es geht nur um Mila, Pol, die gedrängte Person und ausgedachte Situationen; das Blatt kommt in die Gruppen-Mappe. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ kreuzt er oder sie an, was ihm oder ihr wichtig war; es geht nur um die Figuren.",
           "sagen": [
             "Woran merkt die gedrängte Person den Druck?",
             "Kurz und freundlich – ohne Roman."
@@ -4799,7 +5245,7 @@
           "wennEsKippt": "Mag der oder die Jugendliche nicht aufstehen, bleibt der Stand im Sitzen (Füße fest auf dem Boden, einmal lang ausatmen). Fällt der Nein-Satz schwer, legt die Fachkraft zwei Satzkarten zur Wahl hin. Erzählt er oder sie von sich aus etwas Belastendes, sagt die Fachkraft ruhig „Danke, dass du mir das sagst.“, fragt nicht nach und kehrt zur gedrängten Person zurück. Ist die Zeit knapp, reichen die Aufgaben 2 und 3."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : l’adulte lit les six signes, le ou la jeune coche à quoi la personne sous pression remarque la pression ; ensuite, les deux lisent l’encadré « Stop – Pieds au sol – Phrase ». À l’exercice 2, il ou elle décide pour la personne sous pression, à chaque carte, quel chemin elle prend ; au troisième chemin, les deux se lèvent (pieds écartés, expirer longuement une fois). À l’exercice 3, il ou elle coche la phrase pour dire non qui convient, et l’adulte la dit dans le rôle de la personne sous pression. L’exercice 4, il ou elle le coche seul ; plusieurs chemins sont possibles. L’exercice 5, il ou elle le colorie à la fin. Il n’est question que de Mila, de Pol, de la personne sous pression et de situations inventées ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : l’adulte lit les six signes, le ou la jeune coche à quoi la personne sous pression remarque la pression ; ensuite, les deux lisent l’encadré « Stop – Pieds au sol – Phrase ». À l’exercice 2, il ou elle décide pour la personne sous pression, à chaque carte, quel chemin elle prend ; au troisième chemin, les deux se lèvent (pieds écartés, expirer longuement une fois). À l’exercice 3, il ou elle coche la phrase pour dire non qui convient, et l’adulte la dit dans le rôle de la personne sous pression. L’exercice 4, il ou elle le coche seul ; plusieurs chemins sont possibles. L’exercice 5, il ou elle le colorie à la fin. Il n’est question que de Mila, de Pol, de la personne sous pression et de situations inventées ; la fiche va dans le dossier du groupe. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », il ou elle coche ce qui lui a semblé important ; il ne s’agit que des personnages.",
           "sagen": [
             "À quoi la personne sous pression remarque-t-elle la pression ?",
             "Court et aimable – sans long discours."
@@ -4926,7 +5372,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wähle eine echte Situation dieser Woche, in der du mitreden möchtest."
+          "text": "Wähle eine echte Situation dieser Woche, in der du mitreden möchtest.",
+          "hinweis": "Eine erfundene Situation geht auch."
         },
         {
           "art": "ankreuzen",
@@ -4940,18 +5387,25 @@
         },
         {
           "art": "aufgabe",
-          "text": "Baue deinen Vorschlag in vier Sätzen.",
-          "hinweis": "Beispiel: Mir geht es um den Trainingsbeginn. Ich schlage vor, eine Stunde früher anzufangen. Dann kommen alle pünktlich. Was meint ihr?"
+          "text": "Baue deinen Vorschlag in vier Sätzen und sprich ihn einmal laut.",
+          "hinweis": "Beispiel: Mir geht es um den Trainingsbeginn. Ich schlage vor, eine Stunde früher anzufangen. Dann kommen alle pünktlich. Was meint ihr?",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
         },
         {
-          "art": "satzanfaenge",
+          "art": "formfelder",
+          "form": "blase",
           "items": [
             "Mir geht es um …",
             "Ich schlage vor, …",
             "Alle haben etwas davon, weil …",
             "Was meint ihr? / Was braucht es noch?"
           ],
-          "linien": 1
+          "anzahl": 4,
+          "spalten": 2,
+          "hoehe": 2
         },
         {
           "art": "aufgabe",
@@ -4992,8 +5446,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ein Nein ist kein Scheitern",
+          "text": "Klar gefragt zu haben zählt – und du kannst nachfragen, was noch fehlt."
+        },
+        {
           "art": "aufgabe",
-          "text": "Alle vier Gebiete sind unterwegs. Welches hilft dir bei deinem Vorschlag am meisten? Färbe es ein."
+          "text": "Alle vier Gebiete sind unterwegs. Welches hilft dir bei deinem Vorschlag am meisten? Färbe es ein.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -5031,6 +5494,11 @@
             "Sagen",
             "Merken"
           ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Das nehme ich mit"
         }
       ],
       "fr": [
@@ -5066,7 +5534,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Choisis une vraie situation de cette semaine où tu aimerais avoir ton mot à dire."
+          "text": "Choisis une vraie situation de cette semaine où tu aimerais avoir ton mot à dire.",
+          "hinweis": "Une situation inventée convient aussi."
         },
         {
           "art": "ankreuzen",
@@ -5080,18 +5549,25 @@
         },
         {
           "art": "aufgabe",
-          "text": "Construis ta proposition en quatre phrases.",
-          "hinweis": "Exemple : Ça concerne le début de l’entraînement. Je propose de commencer une heure plus tôt. Comme ça, tout le monde arrive à l’heure. Qu’en pensez-vous ?"
+          "text": "Construis ta proposition en quatre phrases et dis-la une fois à voix haute.",
+          "hinweis": "Exemple : Ça concerne le début de l’entraînement. Je propose de commencer une heure plus tôt. Comme ça, tout le monde arrive à l’heure. Qu’en pensez-vous ?",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
         },
         {
-          "art": "satzanfaenge",
+          "art": "formfelder",
+          "form": "blase",
           "items": [
             "Ce qui me tient à cœur : …",
             "Je propose de …",
             "Tout le monde y gagne, parce que …",
             "Qu’en pensez-vous ? / Que faut-il encore ?"
           ],
-          "linien": 1
+          "anzahl": 4,
+          "spalten": 2,
+          "hoehe": 2
         },
         {
           "art": "aufgabe",
@@ -5132,8 +5608,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un non n’est pas un échec",
+          "text": "Avoir bien posé la question compte déjà – tu peux demander ce qui manque."
+        },
+        {
           "art": "aufgabe",
-          "text": "Les quatre zones sont en route. Laquelle t’aide le plus pour ta proposition ? Colorie-la."
+          "text": "Les quatre zones sont en route. Laquelle t’aide le plus pour ta proposition ? Colorie-la.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -5171,11 +5656,16 @@
             "Dire",
             "Retenir"
           ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 3,
+          "label": "Ce que j’emporte"
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt die Situation an, die er oder sie im Rollenspiel gewählt hat (echt oder erfunden). In Aufgabe 2 baut er oder sie den Vorschlag in vier Sätzen; das Beispiel zeigt die Länge. Aufgabe 3 plant er oder sie mit der Fachkraft: mit wem, wann, wo, der erste Satz und die Antwort auf einen Einwand. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt die Situation an, die er oder sie im Rollenspiel gewählt hat (echt oder erfunden). In Aufgabe 2 baut er oder sie den Vorschlag in vier Sätzen; das Beispiel zeigt die Länge. Aufgabe 3 plant er oder sie mit der Fachkraft: mit wem, wann, wo, der erste Satz und die Antwort auf einen Einwand. Aufgabe 4 färbt er oder sie zum Schluss ein. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ genügt ein Stichwort; er oder sie entscheidet, was er oder sie aufschreibt.",
           "sagen": [
             "Wer ist zuständig, und wann passt es?",
             "Was ist dein erster Satz?"
@@ -5183,7 +5673,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche die vier Sätze, und die Fachkraft schreibt sie auf. Ein Plan mit erstem Satz genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune coche la situation choisie pendant le jeu de rôle (réelle ou inventée). À l’exercice 2, il ou elle construit la proposition en quatre phrases ; l’exemple montre la longueur. L’exercice 3, il ou elle le planifie avec l’adulte : avec qui, quand, où, la première phrase et la réponse à une objection. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : le ou la jeune coche la situation choisie pendant le jeu de rôle (réelle ou inventée). À l’exercice 2, il ou elle construit la proposition en quatre phrases ; l’exemple montre la longueur. L’exercice 3, il ou elle le planifie avec l’adulte : avec qui, quand, où, la première phrase et la réponse à une objection. L’exercice 4, il ou elle le colorie à la fin. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », un mot suffit ; il ou elle décide de ce qu’il ou elle écrit.",
           "sagen": [
             "Qui est responsable, et quand est-ce que ça tombe bien ?",
             "Quelle est ta première phrase ?"
@@ -5326,7 +5816,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wähle eine echte Situation dieser Woche, in der du mitreden möchtest."
+          "text": "Wähle eine echte Situation dieser Woche, in der du mitreden möchtest.",
+          "hinweis": "Eine erfundene Situation geht auch."
         },
         {
           "art": "bilder",
@@ -5353,7 +5844,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Welcher Satz gehört zu welchem Schritt des Vorschlags? Verbinde."
+          "text": "Welcher Satz gehört zu welchem Schritt des Vorschlags? Verbinde und sprich ihn laut.",
+          "symbole": [
+            "verbinden",
+            "sprechen"
+          ]
         },
         {
           "art": "zuordnen",
@@ -5423,8 +5918,17 @@
           ]
         },
         {
-          "art": "text",
-          "text": "Deine Landkarte: Alle vier Gebiete sind erkundet. Färbe das Gebiet ein, das dir bei deinem Vorschlag am meisten hilft."
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ein Nein ist kein Scheitern",
+          "text": "Klar gefragt zu haben zählt – und du kannst nachfragen, was noch fehlt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Landkarte: Alle vier Gebiete sind erkundet. Färbe das Gebiet ein, das dir bei deinem Vorschlag am meisten hilft.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -5462,6 +5966,12 @@
             "Sagen",
             "Merken"
           ]
+        },
+        {
+          "art": "feld",
+          "label": "Das nehme ich mit",
+          "hoehe": 4,
+          "zeichnen": true
         }
       ],
       "fr": [
@@ -5497,7 +6007,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Choisis une vraie situation de cette semaine où tu aimerais avoir ton mot à dire."
+          "text": "Choisis une vraie situation de cette semaine où tu aimerais avoir ton mot à dire.",
+          "hinweis": "Une situation inventée convient aussi."
         },
         {
           "art": "bilder",
@@ -5524,7 +6035,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quelle phrase va avec quelle étape de la proposition ? Relie."
+          "text": "Quelle phrase va avec quelle étape de la proposition ? Relie et dis-la à voix haute.",
+          "symbole": [
+            "verbinden",
+            "sprechen"
+          ]
         },
         {
           "art": "zuordnen",
@@ -5594,8 +6109,17 @@
           ]
         },
         {
-          "art": "text",
-          "text": "Ta carte : les quatre zones sont explorées. Colorie celle qui t’aide le plus pour ta proposition."
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un non n’est pas un échec",
+          "text": "Avoir bien posé la question compte déjà – tu peux demander ce qui manque."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta carte : les quatre zones sont explorées. Colorie celle qui t’aide le plus pour ta proposition.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -5633,11 +6157,17 @@
             "Dire",
             "Retenir"
           ]
+        },
+        {
+          "art": "feld",
+          "label": "Ce que j’emporte",
+          "hoehe": 4,
+          "zeichnen": true
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt die Situation an, die er oder sie im Rollenspiel gewählt hat (echt oder erfunden). In Aufgabe 2 verbindet er oder sie die Sätze mit den vier Schritten des Vorschlags. Aufgabe 3 plant er oder sie mit der Fachkraft in Stichworten, in Aufgabe 4 kreuzt er oder sie den ersten Satz und die Rückfrage an. Zum Schluss färbt er oder sie das Gebiet ein, das am meisten hilft. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche kreuzt die Situation an, die er oder sie im Rollenspiel gewählt hat (echt oder erfunden). In Aufgabe 2 verbindet er oder sie die Sätze mit den vier Schritten des Vorschlags. Aufgabe 3 plant er oder sie mit der Fachkraft in Stichworten, in Aufgabe 4 kreuzt er oder sie den ersten Satz und die Rückfrage an. Zum Schluss färbt er oder sie das Gebiet ein, das am meisten hilft. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe. Der Tipp-Kasten wird gemeinsam gelesen. Beim „Das nehme ich mit“ schreibt oder malt er oder sie ein Wort oder ein Bild; das Feld darf auch leer bleiben.",
           "sagen": [
             "Wer ist zuständig, und wann passt es?",
             "Welcher erste Satz klingt nach dir?"
@@ -5645,7 +6175,7 @@
           "wennEsKippt": "Fällt das Verbinden schwer, liest die Fachkraft die Sätze vor, und der oder die Jugendliche zeigt. Ein Plan mit erstem Satz genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune coche la situation choisie pendant le jeu de rôle (réelle ou inventée). À l’exercice 2, il ou elle relie les phrases aux quatre étapes de la proposition. L’exercice 3, il ou elle le planifie avec l’adulte en mots-clés ; à l’exercice 4, il ou elle coche la première phrase et la question en retour. Pour finir, il ou elle colorie la zone qui aide le plus. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe.",
+          "text": "Exercice 1 ensemble : le ou la jeune coche la situation choisie pendant le jeu de rôle (réelle ou inventée). À l’exercice 2, il ou elle relie les phrases aux quatre étapes de la proposition. L’exercice 3, il ou elle le planifie avec l’adulte en mots-clés ; à l’exercice 4, il ou elle coche la première phrase et la question en retour. Pour finir, il ou elle colorie la zone qui aide le plus. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe. L’encadré « astuce » est lu ensemble. Pour « Ce que j’emporte », il ou elle écrit ou dessine un mot ou une image ; le cadre peut aussi rester vide.",
           "sagen": [
             "Qui est responsable, et quand est-ce que ça tombe bien ?",
             "Quelle première phrase te ressemble ?"
@@ -5990,7 +6520,11 @@
         {
           "art": "aufgabe",
           "text": "Dein Gruppen-Profil: Färbe in jedem Stück so viele Ringe, wie dir das heute gelingt.",
-          "hinweis": "Innen heißt wenig, außen viel. Ehrlich mit dir selbst: Ein kleiner Ring ist ein Startpunkt, keine Note."
+          "hinweis": "Innen heißt wenig, außen viel. Ehrlich mit dir selbst: Ein kleiner Ring ist ein Startpunkt, keine Note.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "netz",
@@ -6006,7 +6540,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deine Landkarte ist vollständig. Färbe alle vier Gebiete ein."
+          "text": "Deine Landkarte ist vollständig. Färbe alle vier Gebiete ein.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -6032,20 +6569,34 @@
           "linien": 0
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "Du entscheidest, was du zeigst – und was nicht."
+        },
+        {
           "art": "aufgabe",
-          "text": "Deine Gruppen-Karte: Ergänze die Sätze. Sie passt auf eine Karte für die Handyhülle oder den Geldbeutel."
+          "text": "Deine Gruppen-Karte: Ergänze die Sätze. Sie passt auf eine Karte für die Handyhülle oder den Geldbeutel.",
+          "hinweis": "Beispiel: In Gruppen übernehme ich gern die Rolle Vermittler, weil …",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
         },
         {
           "art": "vertrag",
           "titel": "Meine Gruppen-Karte",
-          "text": "In Gruppen übernehme ich gern die Rolle ___\nFair ist es für mich, wenn ___\nVerantwortung heißt für mich: ___\nWenn der Druck steigt, sage ich ___\nDas übe ich weiter: ___",
+          "text": "In Gruppen übernehme ich gern die Rolle ___\nFair ist es für mich, wenn ___\nVerantwortung heißt für mich: ___\nWenn der Druck steigt, sage ich ___\nDas übe ich weiter: ___\nDas nehme ich mit: ___",
           "unterschriften": [
             "Ich"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Wer hilft dir, wenn eine Gruppe zu schwierig wird? Trag eine Person ein, der du vertraust. Die Nummern sind für alle da."
+          "text": "Wer hilft dir, wenn eine Gruppe zu schwierig wird? Trag eine Person ein, der du vertraust. Die Nummern sind für alle da.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
         },
         {
           "art": "notfall"
@@ -6095,7 +6646,11 @@
         {
           "art": "aufgabe",
           "text": "Ton profil de groupe : colorie dans chaque part autant d’anneaux que tu y arrives aujourd’hui.",
-          "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Sois honnête avec toi-même : un petit anneau est un point de départ, pas une note."
+          "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Sois honnête avec toi-même : un petit anneau est un point de départ, pas une note.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "netz",
@@ -6111,7 +6666,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta carte est complète. Colorie les quatre zones."
+          "text": "Ta carte est complète. Colorie les quatre zones.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -6137,20 +6695,34 @@
           "linien": 0
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "C’est toi qui décides de ce que tu montres – ou non."
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta carte du groupe : complète les phrases. Elle tient sur une carte pour la coque du portable ou le porte-monnaie."
+          "text": "Ta carte du groupe : complète les phrases. Elle tient sur une carte pour la coque du portable ou le porte-monnaie.",
+          "hinweis": "Exemple : dans un groupe, je prends volontiers le rôle de médiateur, parce que …",
+          "symbole": [
+            "schreiben",
+            "sprechen"
+          ]
         },
         {
           "art": "vertrag",
           "titel": "Ma carte du groupe",
-          "text": "Dans un groupe, j’aime avoir le rôle de ___\nPour moi, c’est juste quand ___\nPour moi, responsabilité veut dire : ___\nQuand la pression monte, je dis ___\nJe continue à m’entraîner à ___",
+          "text": "Dans un groupe, j’aime avoir le rôle de ___\nPour moi, c’est juste quand ___\nPour moi, responsabilité veut dire : ___\nQuand la pression monte, je dis ___\nJe continue à m’entraîner à ___\nCe que j’emporte : ___",
           "unterschriften": [
             "Moi"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Qui t’aide quand un groupe devient trop difficile ? Note une personne en qui tu as confiance. Les numéros sont là pour tout le monde."
+          "text": "Qui t’aide quand un groupe devient trop difficile ? Note une personne en qui tu as confiance. Les numéros sont là pour tout le monde.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
         },
         {
           "art": "notfall"
@@ -6168,7 +6740,7 @@
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt im Profil ein, wie gut jedes Stück schon gelingt – ehrlich mit sich selbst; ein kleiner Ring ist ein Startpunkt. In Aufgabe 2 färbt er oder sie die Landkarte ein. In Aufgabe 3 ergänzt er oder sie die Sätze der Gruppen-Karte (was bleibt und was er oder sie weiter übt), die Fachkraft hilft nur beim Formulieren, und unterschreibt. Aufgabe 4 trägt er oder sie allein ein; die Nummern sind für alle da. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe, die Karte darf mit.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt im Profil ein, wie gut jedes Stück schon gelingt – ehrlich mit sich selbst; ein kleiner Ring ist ein Startpunkt. In Aufgabe 2 färbt er oder sie die Landkarte ein. In Aufgabe 3 ergänzt er oder sie die Sätze der Gruppen-Karte (was bleibt und was er oder sie weiter übt), die Fachkraft hilft nur beim Formulieren, und unterschreibt. Aufgabe 4 trägt er oder sie allein ein; die Nummern sind für alle da. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe, die Karte darf mit. Der Tipp-Kasten wird gemeinsam gelesen. Eine Vertrauensperson trägt er oder sie nur ein, wenn er oder sie mag; Familie wird nicht vorgeschrieben. Die letzte Zeile der Gruppen-Karte ist das „Das nehme ich mit“; ein Stichwort genügt.",
           "sagen": [
             "Ehrlich mit dir selbst: Wo stehst du gerade?",
             "Welcher Satz soll auf deine Karte?"
@@ -6176,7 +6748,7 @@
           "wennEsKippt": "Ist Schreiben mühsam, sagt der oder die Jugendliche die Sätze, und die Fachkraft schreibt sie in die Karte. Ein Satz genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune colorie dans le profil à quel point chaque part réussit déjà – sans se flatter ; un petit anneau est un point de départ. À l’exercice 2, il ou elle colorie la carte. À l’exercice 3, il ou elle complète les phrases de la carte du groupe (ce qui reste et ce qu’il ou elle continue de s’entraîner à faire), l’adulte aide seulement à formuler, et il ou elle signe. L’exercice 4, il ou elle le remplit seul ; les numéros sont là pour tout le monde. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe, la carte peut partir avec lui ou elle.",
+          "text": "Exercice 1 ensemble : le ou la jeune colorie dans le profil à quel point chaque part réussit déjà – sans se flatter ; un petit anneau est un point de départ. À l’exercice 2, il ou elle colorie la carte. À l’exercice 3, il ou elle complète les phrases de la carte du groupe (ce qui reste et ce qu’il ou elle continue de s’entraîner à faire), l’adulte aide seulement à formuler, et il ou elle signe. L’exercice 4, il ou elle le remplit seul ; les numéros sont là pour tout le monde. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe, la carte peut partir avec lui ou elle. L’encadré « astuce » est lu ensemble. Il ou elle ne note une personne de confiance que s’il ou elle le souhaite ; la famille n’est pas imposée. La dernière ligne de la carte du groupe est le « ce que j’emporte » ; un mot suffit.",
           "sagen": [
             "Honnête avec toi-même : où en es-tu en ce moment ?",
             "Quelle phrase doit figurer sur ta carte ?"
@@ -6320,7 +6892,11 @@
         {
           "art": "aufgabe",
           "text": "Dein Gruppen-Profil: Färbe in jedem Stück so viele Ringe, wie dir das heute gelingt.",
-          "hinweis": "Innen heißt wenig, außen viel. Ehrlich mit dir selbst: Ein kleiner Ring ist ein Startpunkt, keine Note."
+          "hinweis": "Innen heißt wenig, außen viel. Ehrlich mit dir selbst: Ein kleiner Ring ist ein Startpunkt, keine Note.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "netz",
@@ -6336,7 +6912,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deine Landkarte ist vollständig. Färbe alle vier Gebiete ein."
+          "text": "Deine Landkarte ist vollständig. Färbe alle vier Gebiete ein.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -6362,8 +6941,18 @@
           "linien": 0
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "Du entscheidest, was du zeigst – und was nicht."
+        },
+        {
           "art": "aufgabe",
-          "text": "Deine Gruppen-Karte: Wähle den Satz, der dir in einer schwierigen Gruppe am meisten helfen würde, und kreuze das Gebiet an, das du weiter übst."
+          "text": "Deine Gruppen-Karte: Wähle den Satz, der dir in einer schwierigen Gruppe am meisten helfen würde, und kreuze das Gebiet an, das du weiter übst.",
+          "hinweis": "Beispiel: Mein Satz: „Ich bleibe bei meinem Nein.“ – weiter üben: Haltung.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -6390,7 +6979,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wer hilft dir, wenn eine Gruppe zu schwierig wird? Trag eine Person ein, der du vertraust. Die Nummern sind für alle da."
+          "text": "Wer hilft dir, wenn eine Gruppe zu schwierig wird? Trag eine Person ein, der du vertraust. Die Nummern sind für alle da.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
         },
         {
           "art": "notfall"
@@ -6409,6 +7002,16 @@
             "im Gruppenchat",
             "mit Freunden"
           ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Das nehme ich mit",
+          "items": [
+            "Ich darf meinen Platz wählen.",
+            "Fair prüfen, Verantwortung zeigen, Nein sagen.",
+            "Ich muss nicht alles allein lösen."
+          ],
+          "spalten": 3
         }
       ],
       "fr": [
@@ -6445,7 +7048,11 @@
         {
           "art": "aufgabe",
           "text": "Ton profil de groupe : colorie dans chaque part autant d’anneaux que tu y arrives aujourd’hui.",
-          "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Sois honnête avec toi-même : un petit anneau est un point de départ, pas une note."
+          "hinweis": "Au centre, c’est peu ; à l’extérieur, beaucoup. Sois honnête avec toi-même : un petit anneau est un point de départ, pas une note.",
+          "symbole": [
+            "malen",
+            "nachdenken"
+          ]
         },
         {
           "art": "netz",
@@ -6461,7 +7068,10 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta carte est complète. Colorie les quatre zones."
+          "text": "Ta carte est complète. Colorie les quatre zones.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "schritte",
@@ -6487,8 +7097,18 @@
           "linien": 0
         },
         {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "C’est toi qui décides de ce que tu montres – ou non."
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta carte du groupe : choisis la phrase qui t’aiderait le plus dans un groupe difficile, et coche la zone que tu continues à travailler."
+          "text": "Ta carte du groupe : choisis la phrase qui t’aiderait le plus dans un groupe difficile, et coche la zone que tu continues à travailler.",
+          "hinweis": "Exemple : ma phrase : « Je reste sur mon non. » – à continuer : ma position.",
+          "symbole": [
+            "ankreuzen",
+            "sprechen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -6515,7 +7135,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Qui t’aide quand un groupe devient trop difficile ? Note une personne en qui tu as confiance. Les numéros sont là pour tout le monde."
+          "text": "Qui t’aide quand un groupe devient trop difficile ? Note une personne en qui tu as confiance. Les numéros sont là pour tout le monde.",
+          "symbole": [
+            "schreiben",
+            "nachdenken"
+          ]
         },
         {
           "art": "notfall"
@@ -6534,11 +7158,21 @@
             "dans le chat de groupe",
             "avec des amis"
           ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Ce que j’emporte",
+          "items": [
+            "Je peux choisir ma place.",
+            "Vérifier l’équité, assumer, dire non.",
+            "Je n’ai pas à tout résoudre seul."
+          ],
+          "spalten": 3
         }
       ],
       "anleitung": {
         "de": {
-          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt im Profil ein, wie gut jedes Stück schon gelingt – ehrlich mit sich selbst; ein kleiner Ring ist ein Startpunkt. In Aufgabe 2 färbt er oder sie die Landkarte ein. In Aufgabe 3 kreuzt er oder sie den Satz an, der auf die Karte soll, und das Gebiet, das er oder sie weiter übt. Aufgabe 4 trägt er oder sie allein ein (eine Person, der er oder sie vertraut); die Nummern sind für alle da. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe, die Karte darf mit.",
+          "text": "Aufgabe 1 gemeinsam: Der oder die Jugendliche färbt im Profil ein, wie gut jedes Stück schon gelingt – ehrlich mit sich selbst; ein kleiner Ring ist ein Startpunkt. In Aufgabe 2 färbt er oder sie die Landkarte ein. In Aufgabe 3 kreuzt er oder sie den Satz an, der auf die Karte soll, und das Gebiet, das er oder sie weiter übt. Aufgabe 4 trägt er oder sie allein ein (eine Person, der er oder sie vertraut); die Nummern sind für alle da. Den Auftrag nimmt er oder sie mit; das Blatt kommt in die Gruppen-Mappe, die Karte darf mit. Der Tipp-Kasten wird gemeinsam gelesen. Eine Vertrauensperson trägt er oder sie nur ein, wenn er oder sie mag; Familie wird nicht vorgeschrieben. Beim „Das nehme ich mit“ kreuzt er oder sie an, was ihm oder ihr wichtig war; mehrere Kreuze sind erlaubt.",
           "sagen": [
             "Ehrlich mit dir selbst: Wo stehst du gerade?",
             "Welcher Satz soll auf deine Karte?"
@@ -6546,7 +7180,7 @@
           "wennEsKippt": "Fällt das Ankreuzen schwer, liest die Fachkraft die Sätze vor, und der oder die Jugendliche zeigt. Ein Kreuz pro Aufgabe genügt. Ist die Zeit knapp, reichen die Aufgaben 1 und 3; der Rest geht mit."
         },
         "fr": {
-          "text": "Exercice 1 ensemble : le ou la jeune colorie dans le profil à quel point chaque part réussit déjà – sans se flatter ; un petit anneau est un point de départ. À l’exercice 2, il ou elle colorie la carte. À l’exercice 3, il ou elle coche la phrase qui doit figurer sur la carte et la zone qu’il ou elle continue de travailler. L’exercice 4, il ou elle le remplit seul (une personne en qui il ou elle a confiance) ; les numéros sont là pour tout le monde. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe, la carte peut partir avec lui ou elle.",
+          "text": "Exercice 1 ensemble : le ou la jeune colorie dans le profil à quel point chaque part réussit déjà – sans se flatter ; un petit anneau est un point de départ. À l’exercice 2, il ou elle colorie la carte. À l’exercice 3, il ou elle coche la phrase qui doit figurer sur la carte et la zone qu’il ou elle continue de travailler. L’exercice 4, il ou elle le remplit seul (une personne en qui il ou elle a confiance) ; les numéros sont là pour tout le monde. Il ou elle emporte la mission ; la fiche va dans le dossier du groupe, la carte peut partir avec lui ou elle. L’encadré « astuce » est lu ensemble. Il ou elle ne note une personne de confiance que s’il ou elle le souhaite ; la famille n’est pas imposée. Pour « Ce que j’emporte », il ou elle coche ce qui lui a semblé important ; plusieurs croix sont permises.",
           "sagen": [
             "Honnête avec toi-même : où en es-tu en ce moment ?",
             "Quelle phrase doit figurer sur ta carte ?"
