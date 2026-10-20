@@ -2055,6 +2055,136 @@
     color: var(--muted);
   }
 
+  /* Vorschlag zum Blatt (components/BlattVorschlag.tsx) */
+  .vor-blatt {
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    padding: 12px 16px 14px;
+    background: var(--surface);
+  }
+  .vor-kopf {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .vor-leise {
+    margin-top: 6px;
+    font-size: var(--fs-xs);
+    color: var(--muted);
+    line-height: 1.45;
+  }
+  .vor-liste {
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+  }
+  .vor-liste li {
+    border-left: 3px solid #8fa4d8;
+    padding: 2px 0 2px 10px;
+  }
+  .vor-art {
+    display: inline-block;
+    font-size: var(--fs-xs);
+    font-weight: 650;
+    color: #2e3a9c;
+  }
+  .vor-art-fehler {
+    color: #8e2a1b;
+  }
+  .vor-art-schwer,
+  .vor-art-leicht {
+    color: #7a4b00;
+  }
+  .vor-text {
+    font-size: var(--fs-sm);
+    color: var(--ink);
+    line-height: 1.45;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+  }
+  .vor-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px 10px;
+    margin-top: 2px;
+    font-size: var(--fs-xs);
+    color: var(--muted);
+  }
+  .vor-knopf {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    min-height: 32px;
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-2);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .vor-knopf[aria-pressed='true'] {
+    background: #e4f2e8;
+    border-color: #9ccbaa;
+    color: #1d6b3a;
+  }
+  .vor-knopf:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+  .vor-form {
+    margin-top: 10px;
+    display: grid;
+    gap: 8px;
+  }
+  .vor-arten {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .vor-wahl {
+    min-height: 34px;
+    padding: 5px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-2);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .vor-wahl.an {
+    background: #2e3a9c;
+    border-color: #2e3a9c;
+    color: #fff;
+  }
+  .vor-feld {
+    min-height: 84px;
+    resize: vertical;
+  }
+  .vor-namen {
+    border: 1px solid #f0cf8f;
+    background: #fff6e6;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: var(--fs-sm);
+    color: #5c3a00;
+    display: grid;
+    gap: 6px;
+    justify-items: start;
+  }
+  .vor-knoepfe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
   /* Team-Material */
   .team-schritt {
     display: flex;

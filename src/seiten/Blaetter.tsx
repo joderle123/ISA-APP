@@ -25,6 +25,7 @@ import { urheberschaft } from '../lib/urheber'
 import { Urheber } from '../components/Urheber'
 import type { Bewertungen } from '../lib/useBewertungen'
 import { BewertungKurz, BewertungVoll } from '../components/Bewertung'
+import { BlattVorschlag } from '../components/BlattVorschlag'
 import { Dialog } from '../components/Dialog'
 import { Icon, type IconName } from '../components/Icon'
 import { alterText, stufeMitAlter, stufenKurz } from '../components/stufe'
@@ -636,6 +637,9 @@ export function BlattDetail({
             onBewerten={(n) => bew.bewerten(b.id, n)}
             onNotiz={(t) => bew.notieren(b.id, t)}
           />
+
+          {/* Vorschlag zum Blatt: was fehlt oder besser sein könnte – der Hub sammelt es für die Verwaltung (lib/blattVorschlag.ts) */}
+          <BlattVorschlag kennung={{ blatt: b.id, titel: b.de.titel, bereich: bereich.de, nr: b.nr }} />
 
           {verwandt.length > 0 && (
             <section>

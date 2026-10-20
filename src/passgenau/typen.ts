@@ -439,6 +439,8 @@ export interface DossierPassgenau {
 export type HubOp =
   | 'hallo' | 'profil' | 'speichern' | 'rueckmeldung' | 'vorlieben'
   | 'praxis-liste' | 'praxis-pruefen' | 'praxis-teilen' | 'praxis-signal' | 'praxis-kuratieren'
+  // Vorschläge zu Arbeitsblättern (src/lib/blattVorschlag.ts) – gehören nicht zu Passgenau, nutzen nur dieselbe Brücke
+  | 'blatt-vorschlaege' | 'blatt-vorschlag' | 'blatt-vorschlag-plus' | 'blatt-vorschlag-weg'
 export interface HubFrage { cdsePassgenau: 1; n: number; op: HubOp; arg?: unknown }
 export interface HubAntwort { cdsePassgenau: 1; antwort: true; n: number; ok: boolean; erg?: unknown; grund?: string }
 
