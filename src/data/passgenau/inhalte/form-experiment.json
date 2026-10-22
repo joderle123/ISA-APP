@@ -1,0 +1,3300 @@
+[
+ {
+  "id": "fo:exp-herzklopfen-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Forscherfrage: Was verrät das Herz?",
+  "text": "Die Fachkraft klopft mit einem Löffel einen Herzschlag auf den Tisch, erst langsam, dann schnell, und fragt, was dieser Mensch wohl gerade gemacht oder erlebt hat. Das Kind sammelt Ideen, und die Fachkraft nimmt jede an. Dann legt das Kind eine Hand flach auf die Brust, etwas links von der Mitte, bis es das eigene Herz spürt; zwei Finger innen am Handgelenk gehen auch. Die Fachkraft stellt die Forscherfrage: „Kann man am Herzschlag ablesen, was ein Mensch fühlt?“ Das Kind wählt seine Vermutung – ja, nein oder manchmal –, und die Fachkraft schreibt sie auf.",
+  "sagen": [
+   "Hör mal: So klingt ein Herz. Was hat dieser Mensch wohl gerade gemacht?",
+   "Such dein eigenes Herz. Leg die Hand flach hierhin und warte einen Moment.",
+   "Unsere Forscherfrage: Kann man am Herzschlag ablesen, was jemand fühlt? Was vermutest du?"
+  ],
+  "wennEsKippt": "Findet das Kind den Herzschlag nicht, hilft ein kurzer Hüpfer auf der Stelle, danach klopft es deutlicher. Mag es die Hand nicht auf die Brust legen, sucht es den Puls am Handgelenk oder hört einfach dem Löffel-Herz zu.",
+  "kurz": "Löffel-Herz klopfen · eigenes Herz finden · Vermutung wählen",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 6
+  },
+  "thema": [
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "eldib": [
+   {
+    "code": "K-21",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "sinne"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "loeffel",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "La question : que nous dit le cœur ?",
+   "text": "L’adulte tapote un battement de cœur sur la table avec une cuillère, d’abord lentement, puis vite, et demande ce que cette personne vient de faire ou de vivre. L’enfant propose des idées, et l’adulte les accueille toutes. Puis l’enfant pose une main à plat sur sa poitrine, un peu à gauche du milieu, jusqu’à sentir son cœur ; deux doigts à l’intérieur du poignet, ça marche aussi. L’adulte pose la question de recherche : « Est-ce qu’on peut lire dans les battements du cœur ce que ressent une personne ? » L’enfant choisit son hypothèse – oui, non ou parfois – et l’adulte la note.",
+   "sagen": [
+    "Écoute : voilà comment bat un cœur. À ton avis, qu’est-ce que cette personne vient de faire ?",
+    "Cherche ton cœur. Pose la main à plat ici et attends un petit moment.",
+    "Notre question : est-ce qu’on peut lire dans le cœur ce que quelqu’un ressent ? Qu’en penses-tu ?"
+   ],
+   "wennEsKippt": "Si l’enfant ne trouve pas son cœur, un petit saut sur place aide : ensuite, il bat plus fort. S’il ne veut pas poser la main sur sa poitrine, il cherche le pouls au poignet ou écoute simplement le cœur-cuillère.",
+   "kurz": "Cœur à la cuillère · trouver son cœur · choisir son hypothèse"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Löffel klopft ein Herz auf den Tisch – erst wie im Schlaf, dann wie nach einem Sprint. Was ist mit diesem Menschen passiert?",
+    "vorbereitung": [
+     "Löffel, Papier und Stift bereitlegen",
+     "Aufs Papier schreiben: Meine Vermutung – ja / nein / manchmal"
+    ],
+    "beobachten": [
+     "Das Kind nennt mindestens eine Idee, warum ein Herz schneller schlägt.",
+     "Es findet den eigenen Herzschlag an Brust oder Handgelenk."
+    ],
+    "gruppe": "Mit mehreren: Alle suchen ihr Herz und heben den Daumen, sobald sie es spüren. Die Vermutungen werden auf drei Zetteln am Boden gesammelt (ja, nein, manchmal), und jedes Kind stellt sich zu seiner."
+   },
+   "fr": {
+    "haken": "Une cuillère tapote un cœur sur la table – d’abord comme pendant le sommeil, puis comme après un sprint. Qu’est-il arrivé à cette personne ?",
+    "vorbereitung": [
+     "Préparer une cuillère, du papier et un crayon",
+     "Écrire sur la feuille : Mon hypothèse – oui / non / parfois"
+    ],
+    "beobachten": [
+     "L’enfant donne au moins une idée de ce qui fait battre le cœur plus vite.",
+     "Il trouve son propre battement sur la poitrine ou au poignet."
+    ],
+    "gruppe": "En groupe : chacun cherche son cœur et lève le pouce dès qu’il le sent. Les hypothèses se rassemblent sur trois feuilles posées au sol (oui, non, parfois), et chaque enfant se place près de la sienne."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-herzklopfen-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Versuch: Das Herzklopfen-Labor",
+  "text": "Das Kind misst seinen Herzschlag in Ruhe: Hand auf die Brust, die Fachkraft sagt „los“ und nach 15 Sekunden „stopp“, das Kind zählt die Schläge, und die Fachkraft schreibt die Zahl auf. Dann macht das Kind 20 Hampelmänner oder läuft 30 Sekunden auf der Stelle und misst sofort wieder; danach sitzt es eine Minute still, atmet langsam und misst ein drittes Mal. Gemeinsam legen sie die drei Zahlen nebeneinander: Was hat das Herz schneller gemacht, was wieder langsamer? Nun liest die Fachkraft Signal-Karten vor, auf denen immer dasselbe Körpersignal mit einer anderen Lage steht („Herzklopfen: Lina packt gleich ihr Geschenk aus“, „Herzklopfen: Ein großer Hund bellt Tom an“), und das Kind zeigt mit Gesicht und Körper, welches Gefühl dazu passt, und sagt das Wort. Zum Schluss halten beide das Ergebnis fest: Das Herz zeigt, wie stark gerade etwas los ist – welches Gefühl es ist, verrät erst, was passiert ist.",
+  "sagen": [
+   "Hand auf die Brust. Los! … Stopp! Wie viele Schläge waren es?",
+   "Jetzt 20 Hampelmänner – und gleich danach messen wir wieder.",
+   "Herzklopfen bei Lina und Herzklopfen bei Tom. Fühlen die beiden dasselbe?",
+   "Was haben wir herausgefunden? Das Herz sagt, wie stark. Was passiert ist, sagt, welches Gefühl."
+  ],
+  "wennEsKippt": "Ist Zählen zu schwer, tippt das Kind jeden Schlag mit dem Finger auf den Tisch, und die Fachkraft zählt halblaut mit. Mag es nicht hüpfen, reichen 20 schnelle Armkreise. Wird es zu wild, kommt sofort der dritte Teil: hinsetzen, langsam atmen, messen – das gehört ja zum Versuch.",
+  "kurz": "Puls in Ruhe · nach Hampelmännern · nach Ausruhen · Signal-Karten",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 16
+  },
+  "thema": [
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "eldib": [
+   {
+    "code": "K-21",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "experiment",
+   "bewegung",
+   "sinne"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "uhr",
+   "papier",
+   "stifte",
+   "karten"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Körpersignal plus Lage – erst dann weiß ich, welches Gefühl es ist",
+   "fr": "Signal du corps + situation – alors je sais quelle émotion c’est"
+  },
+  "achtung": "Platz zum Hüpfen freiräumen. Kinder mit Herz- oder Atembeschwerden (etwa Asthma) machen statt Hampelmännern Armkreise im Sitzen. Den Puls nur an Brust oder Handgelenk messen, nicht am Hals drücken.",
+  "vorbereitung": "Timer auf 15 Sekunden stellen, Papier mit drei Feldern (Ruhe – nach dem Hüpfen – nach dem Ausruhen), Signal-Karten zum Vorlesen.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "L’expérience : le labo du cœur qui bat",
+   "text": "L’enfant mesure son cœur au repos : main sur la poitrine, l’adulte dit « top » puis, après 15 secondes, « stop » ; l’enfant compte les battements et l’adulte note le nombre. Ensuite, l’enfant fait 20 sauts en étoile ou court 30 secondes sur place, puis mesure tout de suite ; après, il reste assis une minute, respire lentement et mesure une troisième fois. Ensemble, ils posent les trois nombres côte à côte : qu’est-ce qui a accéléré le cœur, qu’est-ce qui l’a ralenti ? L’adulte lit ensuite des cartes-signaux où le même signal du corps apparaît dans une autre situation (« Cœur qui bat fort : Lina va ouvrir son cadeau », « Cœur qui bat fort : un gros chien aboie sur Tom ») ; l’enfant montre avec son visage et son corps l’émotion qui va avec, et dit le mot. Pour finir, tous deux notent le résultat : le cœur montre la force de ce qui se passe – quelle émotion c’est, on le sait seulement en regardant ce qui est arrivé.",
+   "sagen": [
+    "Main sur la poitrine. Top ! … Stop ! Combien de battements ?",
+    "Maintenant, 20 sauts en étoile – et juste après, on mesure encore.",
+    "Le cœur de Lina bat fort, celui de Tom aussi. Est-ce qu’ils ressentent la même chose ?",
+    "Qu’est-ce qu’on a découvert ? Le cœur dit « combien ». Ce qui s’est passé dit « quelle émotion »."
+   ],
+   "wennEsKippt": "Si compter est trop difficile, l’enfant tapote chaque battement du doigt sur la table et l’adulte compte à mi-voix. S’il ne veut pas sauter, 20 moulinets rapides des bras suffisent. Si ça devient trop agité, on passe tout de suite à la troisième partie : s’asseoir, respirer lentement, mesurer – ça fait partie de l’expérience.",
+   "kurz": "Pouls au repos · après les sauts · après le repos · cartes-signaux",
+   "achtung": "Libérer de la place pour sauter. Les enfants qui ont des problèmes de cœur ou de respiration (par exemple de l’asthme) font des moulinets de bras assis au lieu des sauts. Mesurer le pouls seulement sur la poitrine ou au poignet, ne pas appuyer sur le cou.",
+   "vorbereitung": "Régler un minuteur sur 15 secondes, préparer une feuille à trois cases (repos – après les sauts – après le repos) et les cartes-signaux à lire."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Jedes Kind hat ein echtes Messgerät dabei: das eigene Herz. Wir messen es dreimal und schauen, was es verrät.",
+    "vorbereitung": [
+     "Uhr oder Timer auf 15 Sekunden",
+     "Papier mit drei Feldern: Ruhe – nach dem Hüpfen – nach dem Ausruhen",
+     "Freier Platz für 20 Hampelmänner",
+     "Signal-Karten ausdrucken oder vorlesen (siehe Karten)"
+    ],
+    "aufbau": "Gemessen wird am Tisch, gehüpft daneben auf einem freien Fleck. Die drei Zahlen stehen groß nebeneinander, damit das Kind den Unterschied sofort sieht.",
+    "karten": [
+     {
+      "titel": "Signal-Karten: ein Signal, viele Gefühle",
+      "karten": [
+       "Herzklopfen: Lina packt gleich ihr Geburtstagsgeschenk aus.",
+       "Herzklopfen: Ein großer Hund bellt Tom am Zaun an.",
+       "Herzklopfen: Sami wird beim Fußball gefoult, und der Schiri pfeift nicht.",
+       "Heißes Gesicht: Amira verliest sich beim Vorlesen, und jemand kichert.",
+       "Heißes Gesicht: Noah ist gerade drei Runden gerannt.",
+       "Heißes Gesicht: Mia wird beim Anstellen einfach weggedrängt.",
+       "Zittern: Lea steht im Schwimmbad oben auf dem Sprungbrett.",
+       "Zittern: Tom wartet an der Bushaltestelle, und es ist eiskalt.",
+       "Bauchkribbeln: Sami fährt morgen auf die Schueberfouer.",
+       "Bauchkribbeln: Amira soll gleich vor allen etwas vortragen.",
+       "Feuchte Hände: Noah bekommt gleich sein Zeugnis.",
+       "Feuchte Hände: Mia hat beim Basteln Kleber an die Finger bekommen."
+      ]
+     }
+    ],
+    "leichter": "Nur zwei Messungen (Ruhe und nach dem Hüpfen) und 10 Sekunden zählen; die Fachkraft zählt halblaut mit. Bei den Karten nur zwei Gefühle zur Wahl: froh oder ängstlich?",
+    "schwerer": "Das Kind schätzt vorher, wie hoch die Zahl nach dem Hüpfen wird, und prüft seine Schätzung. Ältere rechnen auf eine Minute hoch (mal 4) und überlegen: Könnte ein Messgerät merken, ob sich jemand freut oder Angst hat?",
+    "gruppe": "Mit mehreren: In Paaren misst ein Kind, das andere schreibt auf, dann wird gewechselt. Alle Zahlen kommen an die Tafel – jedes Herz schlägt anders schnell, aber alle werden nach dem Hüpfen schneller. Die Signal-Karten werden gezogen, und die Gruppe zeigt das passende Gefühl mit dem Gesicht.",
+    "beobachten": [
+     "Das Kind erklärt mit eigenen Worten, warum das Herz nach dem Hüpfen schneller schlägt.",
+     "Es ordnet demselben Körpersignal je nach Lage verschiedene Gefühle zu (Freude, Angst, Wut).",
+     "Es sagt von sich aus: Man muss schauen, was passiert ist – oder nachfragen."
+    ],
+    "warum": "Körpersignale zeigen vor allem, wie stark gerade etwas los ist; welches Gefühl es ist, lässt sich am Körper allein kaum ablesen (Siegel et al., 2018). Gefühle über Hinweise aus Gesicht, Körper und Situation zu erkennen, ist ein Kern wirksamer Programme wie PATHS (Greenberg et al., 1995)."
+   },
+   "fr": {
+    "haken": "Chaque enfant a sur lui un vrai appareil de mesure : son propre cœur. On le mesure trois fois et on regarde ce qu’il nous apprend.",
+    "vorbereitung": [
+     "Montre ou minuteur réglé sur 15 secondes",
+     "Feuille à trois cases : repos – après les sauts – après le repos",
+     "Un espace libre pour 20 sauts en étoile",
+     "Imprimer ou lire les cartes-signaux (voir cartes)"
+    ],
+    "aufbau": "On mesure à la table et on saute juste à côté, sur un espace dégagé. Les trois nombres sont écrits en grand, côte à côte, pour que l’enfant voie tout de suite la différence.",
+    "karten": [
+     {
+      "titel": "Cartes-signaux : un signal, plusieurs émotions",
+      "karten": [
+       "Cœur qui bat fort : Lina va ouvrir son cadeau d’anniversaire.",
+       "Cœur qui bat fort : un gros chien aboie sur Tom derrière la clôture.",
+       "Cœur qui bat fort : Sami se fait faucher au foot et l’arbitre ne siffle pas.",
+       "Visage tout chaud : Amira se trompe en lisant à voix haute et quelqu’un ricane.",
+       "Visage tout chaud : Noah vient de courir trois tours.",
+       "Visage tout chaud : Mia se fait pousser hors de la file.",
+       "Tremblements : Lea est tout en haut du plongeoir à la piscine.",
+       "Tremblements : Tom attend le bus et il fait glacial.",
+       "Papillons dans le ventre : demain, Sami va à la Schueberfouer.",
+       "Papillons dans le ventre : Amira doit bientôt présenter quelque chose devant tous.",
+       "Mains moites : Noah va recevoir son bulletin.",
+       "Mains moites : Mia a de la colle plein les doigts."
+      ]
+     }
+    ],
+    "leichter": "Seulement deux mesures (repos et après les sauts) et compter pendant 10 secondes ; l’adulte compte à mi-voix. Pour les cartes, proposer seulement deux émotions : content ou inquiet ?",
+    "schwerer": "L’enfant estime d’abord le nombre après les sauts, puis vérifie. Les plus grands calculent pour une minute (fois 4) et se demandent : une machine pourrait-elle savoir si quelqu’un est content ou a peur ?",
+    "gruppe": "En groupe : par deux, un enfant mesure, l’autre note, puis on échange. Tous les nombres vont au tableau – chaque cœur bat à sa vitesse, mais tous accélèrent après les sauts. On tire les cartes-signaux, et le groupe montre l’émotion avec le visage.",
+    "beobachten": [
+     "L’enfant explique avec ses mots pourquoi le cœur bat plus vite après les sauts.",
+     "Il associe au même signal du corps des émotions différentes selon la situation (joie, peur, colère).",
+     "Il dit de lui-même : il faut regarder ce qui s’est passé – ou demander."
+    ],
+    "warum": "Les signaux du corps montrent surtout la force de ce qui se passe ; quelle émotion c’est, le corps seul le dit mal (Siegel et al., 2018). Reconnaître les émotions à partir d’indices du visage, du corps et de la situation est au cœur de programmes efficaces comme PATHS (Greenberg et al., 1995)."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-herzklopfen-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Was heißt das für uns? Erst schauen, dann fragen",
+  "text": "Die Fachkraft holt die Vermutung vom Anfang hervor, und das Kind vergleicht sie mit dem Ergebnis des Versuchs. Dann spielt die Fachkraft ein Signal vor: Sie atmet schnell und legt die Hände an die heißen Wangen. Das Kind nennt nicht sofort ein Gefühl, sondern stellt zuerst eine Frage nach der Lage („Was ist passiert?“), und die Fachkraft verrät sie. Danach wird getauscht: Das Kind spielt ein Signal vor, die Fachkraft fragt nach. Zum Schluss wählt das Kind einen Merksatz, zum Beispiel „Erst schauen, was passiert ist – dann fragen“.",
+  "sagen": [
+   "Deine Vermutung war … Und was sagt der Versuch?",
+   "Mein Gesicht ist heiß, ich atme schnell. Bevor du sagst, was ich fühle: Was willst du mich fragen?",
+   "Wenn du bei jemandem ein rotes Gesicht siehst – wie findest du heraus, ob er wütend ist, sich schämt oder nur gerannt ist?"
+  ],
+  "wennEsKippt": "Mag das Kind nicht vorspielen, zeigt nur die Fachkraft Signale, und das Kind stellt die Fragen. Fällt ihm keine Frage ein, helfen drei Vorschläge: Was ist passiert? Bist du gerannt? Alles in Ordnung?",
+  "kurz": "Vermutung prüfen · Signal vorspielen · erst fragen, dann deuten",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 8
+  },
+  "thema": [
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "eldib": [
+   {
+    "code": "K-21",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "rollenspiel",
+   "gespraech"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Et pour nous ? D’abord regarder, puis demander",
+   "text": "L’adulte reprend l’hypothèse du début, et l’enfant la compare au résultat de l’expérience. Puis l’adulte joue un signal : respiration rapide, mains posées sur les joues brûlantes. L’enfant ne nomme pas tout de suite une émotion ; il pose d’abord une question sur la situation (« Qu’est-ce qui s’est passé ? »), et l’adulte la lui révèle. Ensuite, on échange les rôles : l’enfant joue un signal, l’adulte pose la question. Pour finir, l’enfant choisit une phrase à retenir, par exemple « D’abord regarder ce qui s’est passé – puis demander ».",
+   "sagen": [
+    "Ton hypothèse, c’était … Et que dit l’expérience ?",
+    "J’ai le visage tout chaud et je respire vite. Avant de dire ce que je ressens : qu’est-ce que tu veux me demander ?",
+    "Si tu vois quelqu’un tout rouge, comment savoir s’il est en colère, s’il a honte ou s’il vient juste de courir ?"
+   ],
+   "wennEsKippt": "Si l’enfant ne veut pas jouer, seul l’adulte montre des signaux et l’enfant pose les questions. S’il ne trouve pas de question, trois idées l’aident : Qu’est-ce qui s’est passé ? Tu as couru ? Tout va bien ?",
+   "kurz": "Vérifier l’hypothèse · jouer un signal · demander, puis interpréter"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Fachkraft hat plötzlich ein knallrotes Gesicht – aber warum?",
+    "beobachten": [
+     "Das Kind vergleicht Vermutung und Ergebnis, auch wenn die Vermutung nicht stimmte.",
+     "Es stellt eine Frage nach der Lage, bevor es ein Gefühl nennt.",
+     "Es wählt einen eigenen Merksatz."
+    ],
+    "gruppe": "Mit mehreren: Ein Kind spielt ein Signal vor, die anderen dürfen nur Fragen stellen, bis die Lage klar ist; erst dann sagt die Gruppe, welches Gefühl passt.",
+    "warum": "Wer Beobachtung (rotes Gesicht) und Deutung (wütend) trennt und nachfragt, liest Gefühle anderer treffender und reagiert seltener feindselig auf Missverständnisse (Crick & Dodge, 1994)."
+   },
+   "fr": {
+    "haken": "L’adulte a soudain le visage tout rouge – mais pourquoi ?",
+    "beobachten": [
+     "L’enfant compare l’hypothèse et le résultat, même si l’hypothèse était fausse.",
+     "Il pose une question sur la situation avant de nommer une émotion.",
+     "Il choisit sa propre phrase à retenir."
+    ],
+    "gruppe": "En groupe : un enfant joue un signal, les autres ont seulement le droit de poser des questions jusqu’à ce que la situation soit claire ; ensuite seulement, le groupe dit quelle émotion va avec.",
+    "warum": "Qui sépare l’observation (visage rouge) de l’interprétation (en colère) et pose la question lit mieux les émotions des autres et réagit moins souvent avec hostilité aux malentendus (Crick & Dodge, 1994)."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-luegendetektor-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Forscherfrage: Kann man Lügen sehen?",
+  "text": "Die Fachkraft sagt drei kurze, harmlose Sätze über sich, zum Beispiel „Ich war schon auf der Burg in Vianden“, „Ich kann nicht Fahrrad fahren“, „Ich esse am liebsten Oliven“ – einer davon ist erfunden. Der oder die Jugendliche tippt auf den erfundenen Satz und sagt, woran er oder sie es festmacht: Blick, Lächeln, Pause, Hände, Stimme. Die Fachkraft verrät die Lösung. Dann stellt sie die Forscherfrage: „Verraten Körpersignale, ob jemand lügt – oder zeigen sie etwas anderes?“ Der oder die Jugendliche notiert eine Vermutung in einem Satz.",
+  "sagen": [
+   "Drei Sätze über mich, einer ist erfunden. Welcher – und woran machst du das fest?",
+   "Lügendetektoren gibt es wirklich. Was messen die wohl?",
+   "Schreib deine Vermutung auf: Wer lügt, zeigt …"
+  ],
+  "wennEsKippt": "Wirkt das Spiel zu persönlich, nimmt die Fachkraft Sätze über Luxemburg („Die Mosel fließt durch Esch“). Mag der oder die Jugendliche nicht schreiben, sagt er oder sie die Vermutung, und die Fachkraft notiert.",
+  "kurz": "3 Sätze, einer erfunden · Signale nennen · Vermutung notieren",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 6
+  },
+  "thema": [
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-37",
+    "gewicht": 1
+   },
+   {
+    "code": "K-21",
+    "gewicht": 1
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 10,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "spiel"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "La question : peut-on voir un mensonge ?",
+   "text": "L’adulte dit trois phrases courtes et sans enjeu sur soi, par exemple « J’ai déjà visité le château de Vianden », « Je ne sais pas faire du vélo », « Mon plat préféré, ce sont les olives » – l’une d’elles est inventée. Le ou la jeune parie sur la phrase inventée et explique sur quoi il ou elle se base : regard, sourire, pause, mains, voix. L’adulte donne la solution. Puis vient la question de recherche : « Est-ce que les signaux du corps montrent si quelqu’un ment – ou autre chose ? » Le ou la jeune note son hypothèse en une phrase.",
+   "sagen": [
+    "Trois phrases sur moi, une est inventée. Laquelle – et sur quoi tu te bases ?",
+    "Les détecteurs de mensonge existent vraiment. À ton avis, qu’est-ce qu’ils mesurent ?",
+    "Note ton hypothèse : quelqu’un qui ment montre …"
+   ],
+   "wennEsKippt": "Si le jeu semble trop personnel, l’adulte prend des phrases sur le Luxembourg (« La Moselle traverse Esch »). Si le ou la jeune ne veut pas écrire, il ou elle dit son hypothèse et l’adulte la note.",
+   "kurz": "3 phrases, une inventée · nommer les signaux · noter l’hypothèse"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "„Im Krimi schaut der Täter weg und schwitzt – also lügt er.“ Stimmt das? Ein Selbstversuch zeigt es.",
+    "vorbereitung": [
+     "Drei eigene Sätze überlegen, einer davon erfunden",
+     "Papier und Stift für die Vermutung"
+    ],
+    "beobachten": [
+     "Der oder die Jugendliche nennt die Signale, auf die er oder sie sich stützt.",
+     "Er oder sie formuliert eine überprüfbare Vermutung."
+    ],
+    "gruppe": "Mit mehreren: Alle tippen still mit den Fingern (1, 2 oder 3) auf den erfundenen Satz, erst dann wird aufgelöst. Die Vermutungen kommen gesammelt an die Tafel."
+   },
+   "fr": {
+    "haken": "« Dans les polars, le coupable détourne le regard et transpire – donc il ment. » Vrai ? Une expérience va le montrer.",
+    "vorbereitung": [
+     "Préparer trois phrases sur soi, dont une inventée",
+     "Papier et crayon pour l’hypothèse"
+    ],
+    "beobachten": [
+     "Le ou la jeune nomme les signaux sur lesquels il ou elle s’appuie.",
+     "Il ou elle formule une hypothèse vérifiable."
+    ],
+    "gruppe": "En groupe : chacun parie en silence avec les doigts (1, 2 ou 3) sur la phrase inventée, puis on révèle. Les hypothèses sont rassemblées au tableau."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-luegendetektor-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Versuch: Der Lügendetektor-Check",
+  "text": "Beide zeichnen ein Beobachtungsraster: drei Spalten für drei Sätze, darunter Blick, Lächeln, Pause, Hände, Stimme. Der oder die Jugendliche sagt nun selbst drei harmlose Sätze über sich – Sport, Essen, Musik, Orte, nichts Privates –, einer davon erfunden; die Fachkraft kreuzt an, was sie sieht, und tippt. Dann wird getauscht, zwei bis drei Durchgänge in jede Richtung, und beide notieren ihre Treffer. Die Fachkraft legt die Forschung daneben: Zufall wäre einer von drei Treffern, und in über 200 Studien erkannten Menschen Lügen kaum besser als beim Münzwurf (Bond & DePaulo, 2006). Gemeinsam sortieren sie, was die angekreuzten Signale wirklich zeigen – Aufregung, Anstrengung, Verlegenheit, Spaß –, also dass etwas los ist, aber nicht, ob jemand lügt, und nicht, welches Gefühl dahintersteckt. Der oder die Jugendliche fasst das Ergebnis in einem Satz zusammen, etwa: „Ein Signal zeigt, dass etwas los ist – was, verrät erst die Situation oder eine Frage.“",
+  "sagen": [
+   "Drei Sätze über dich, einer erfunden – nur Dinge, die du gern erzählst.",
+   "Bei deinem zweiten Satz habe ich ein Lächeln und eine Pause gesehen. Heißt das, du lügst – oder kann es etwas anderes sein?",
+   "Wenn ein Signal keine Lüge verrät – was zeigt es dann?"
+  ],
+  "wennEsKippt": "Fällt dem oder der Jugendlichen nichts ein, liegen Satzkarten bereit (siehe Karten), und er oder sie entscheidet nur, welcher Satz erfunden wird. Wird es zu persönlich oder zu albern, beobachtet nur der oder die Jugendliche, und die Fachkraft spricht.",
+  "kurz": "Raster zeichnen · je 3 Sätze, einer erfunden · Treffer · deuten",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 16
+  },
+  "thema": [
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-37",
+    "gewicht": 1
+   },
+   {
+    "code": "K-21",
+    "gewicht": 1
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 10,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "spiel",
+   "gespraech"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "papier",
+   "stifte",
+   "karten"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Signal sehen – Situation prüfen – nachfragen",
+   "fr": "Voir le signal – regarder la situation – demander"
+  },
+  "achtung": "Nur harmlose Sätze (Sport, Essen, Musik, Orte), nichts aus Familie oder Privatleben. Niemand wird als Lügner bezeichnet: Es geht um Signale, nicht um Ehrlichkeit.",
+  "vorbereitung": "Satzkarten als Ideen bereitlegen, falls dem oder der Jugendlichen nichts einfällt.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "L’expérience : le test du détecteur de mensonge",
+   "text": "Tous deux dessinent une grille d’observation : trois colonnes pour trois phrases, et en dessous regard, sourire, pause, mains, voix. Le ou la jeune dit maintenant trois phrases sans enjeu sur soi – sport, nourriture, musique, lieux, rien de privé –, dont une inventée ; l’adulte coche ce qui se voit et fait son pari. Puis on inverse, deux ou trois manches dans chaque sens, et tous deux notent leurs bonnes réponses. L’adulte apporte ce que dit la recherche : le hasard donnerait une bonne réponse sur trois, et dans plus de 200 études, les gens ont reconnu les mensonges à peine mieux qu’à pile ou face (Bond & DePaulo, 2006). Ensemble, ils trient ce que montrent vraiment les signaux cochés – excitation, effort, gêne, amusement : ils montrent qu’il se passe quelque chose, mais pas si quelqu’un ment, ni quelle émotion il y a derrière. Le ou la jeune résume le résultat en une phrase, par exemple : « Un signal montre qu’il se passe quelque chose – quoi, seule la situation ou une question le dit. »",
+   "sagen": [
+    "Trois phrases sur toi, dont une inventée – seulement des choses que tu racontes volontiers.",
+    "À ta deuxième phrase, j’ai vu un sourire et une pause. Ça veut dire que tu mens – ou ça peut être autre chose ?",
+    "Si un signal ne trahit pas un mensonge – qu’est-ce qu’il montre alors ?"
+   ],
+   "wennEsKippt": "Si le ou la jeune ne trouve rien, des cartes-phrases sont prêtes (voir cartes) ; il ou elle décide seulement laquelle sera inventée. Si ça devient trop personnel ou trop agité, seul le ou la jeune observe et l’adulte parle.",
+   "kurz": "Grille · 3 phrases dont une inventée · bonnes réponses · interpréter",
+   "achtung": "Seulement des phrases sans enjeu (sport, nourriture, musique, lieux), rien sur la vie privée. Personne n’est traité de menteur : on parle de signaux, pas d’honnêteté.",
+   "vorbereitung": "Préparer les cartes-phrases comme idées, au cas où le ou la jeune ne trouve rien."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Lügendetektor-Test zu zweit: Wer erkennt die erfundenen Sätze – und was sagt die Forschung dazu?",
+    "vorbereitung": [
+     "Zwei Raster: Spalten Satz 1–3, Zeilen Blick, Lächeln, Pause, Hände, Stimme",
+     "Satzkarten ausdrucken (siehe Karten), falls nichts einfällt",
+     "Eigene Sätze für zwei bis drei Durchgänge überlegen",
+     "Zettel für die Treffer beider Seiten"
+    ],
+    "aufbau": "Gegenüber sitzen, die Hände sichtbar auf dem Tisch. Jede Seite hat ein Raster und einen Stift, der Trefferzettel liegt in der Mitte.",
+    "karten": [
+     {
+      "titel": "Satzkarten (wahr sagen oder erfinden)",
+      "karten": [
+       "Ich war schon im Riesenrad auf der Schueberfouer.",
+       "Ich kann einen Handstand.",
+       "Ich habe schon mal ein Tor in einem echten Spiel geschossen.",
+       "Ich mag Kniddelen lieber als Pizza.",
+       "Ich kann in vier Sprachen bis zehn zählen.",
+       "Ich bin schon mit dem Zug bis nach Trier gefahren.",
+       "Ich habe schon ein Konzert in der Rockhal gesehen.",
+       "Ich kann pfeifen, ohne die Finger zu nehmen.",
+       "Ich habe schon mal einen Igel gesehen.",
+       "Ich spiele ein Instrument.",
+       "Ich bin schon mit der Tram bis zum Kirchberg gefahren.",
+       "Ich habe schon mal Sushi gegessen."
+      ]
+     }
+    ],
+    "leichter": "Nur eine Richtung: Die Fachkraft spricht, der oder die Jugendliche beobachtet mit drei Zeilen im Raster (Blick, Lächeln, Hände).",
+    "schwerer": "Eine Bedingung verändern und vergleichen: Hände unter dem Tisch oder die Sätze nur mit geschlossenen Augen hören – trifft man dann besser oder schlechter? Dazu recherchieren, warum Lügendetektoren in vielen Ländern vor Gericht nicht als Beweis zählen.",
+    "gruppe": "Mit mehreren: Eine Person spricht, die anderen beobachten mit Raster und tippen still per Handzeichen; die Treffer kommen an die Tafel. Zweite Forscherfrage: Trifft die Gruppe nach kurzer Beratung besser als jede einzelne Person?",
+    "beobachten": [
+     "Der oder die Jugendliche nennt mindestens zwei andere Gründe für ein Signal als Lügen (Aufregung, Verlegenheit, Konzentration).",
+     "Er oder sie trennt Beobachtung („du hast weggeschaut“) und Deutung („du lügst“).",
+     "Er oder sie schlägt vor, bei Unsicherheit nachzufragen statt zu urteilen."
+    ],
+    "warum": "Menschen erkennen Lügen kaum besser als der Zufall (54 % in über 200 Studien, Bond & DePaulo, 2006), weil Signale wie Wegschauen nur Erregung zeigen. Wer das selbst erlebt, trennt Beobachtung und Deutung und fragt nach, statt Gefühle anderer vorschnell zu deuten."
+   },
+   "fr": {
+    "haken": "Un test du détecteur de mensonge à deux : qui repère les phrases inventées – et que dit la recherche ?",
+    "vorbereitung": [
+     "Deux grilles : colonnes phrase 1 à 3, lignes regard, sourire, pause, mains, voix",
+     "Imprimer les cartes-phrases (voir cartes) au cas où",
+     "Préparer ses propres phrases pour deux ou trois manches",
+     "Une feuille pour les bonnes réponses des deux côtés"
+    ],
+    "aufbau": "Assis face à face, les mains visibles sur la table. Chacun a une grille et un crayon, la feuille des bonnes réponses est au milieu.",
+    "karten": [
+     {
+      "titel": "Cartes-phrases (vraie ou inventée)",
+      "karten": [
+       "Je suis déjà monté·e dans la grande roue de la Schueberfouer.",
+       "Je sais faire le poirier.",
+       "J’ai déjà marqué un but dans un vrai match.",
+       "Je préfère les Kniddelen à la pizza.",
+       "Je sais compter jusqu’à dix dans quatre langues.",
+       "Je suis déjà allé·e en train jusqu’à Trèves.",
+       "J’ai déjà vu un concert à la Rockhal.",
+       "Je sais siffler sans les doigts.",
+       "J’ai déjà vu un hérisson.",
+       "Je joue d’un instrument.",
+       "J’ai déjà pris le tram jusqu’au Kirchberg.",
+       "J’ai déjà mangé des sushis."
+      ]
+     }
+    ],
+    "leichter": "Un seul sens : l’adulte parle, le ou la jeune observe avec trois lignes dans la grille (regard, sourire, mains).",
+    "schwerer": "Changer une condition et comparer : mains sous la table, ou écouter les phrases les yeux fermés – repère-t-on mieux ou moins bien ? Chercher aussi pourquoi, dans beaucoup de pays, le détecteur de mensonge ne compte pas comme preuve au tribunal.",
+    "gruppe": "En groupe : une personne parle, les autres observent avec la grille et parient en silence d’un signe de la main ; les bonnes réponses vont au tableau. Deuxième question : après une courte discussion, le groupe trouve-t-il mieux que chaque personne seule ?",
+    "beobachten": [
+     "Le ou la jeune cite au moins deux autres raisons qu’un mensonge pour un signal (excitation, gêne, concentration).",
+     "Il ou elle distingue l’observation (« tu as détourné le regard ») et l’interprétation (« tu mens »).",
+     "Il ou elle propose de demander plutôt que de juger quand c’est flou."
+    ],
+    "warum": "On reconnaît le mensonge à peine mieux que le hasard (54 % dans plus de 200 études, Bond & DePaulo, 2006), car des signaux comme détourner le regard montrent seulement une activation. L’avoir vécu aide à séparer observation et interprétation, et à demander au lieu d’interpréter trop vite les émotions des autres."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-luegendetektor-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Was heißt das für uns? Beobachten statt urteilen",
+  "text": "Die Fachkraft holt die Vermutung vom Anfang hervor, und der oder die Jugendliche vergleicht sie mit dem Ergebnis. Dann liest sie kurze Alltagsszenen vor, etwa: „Yusuf schaut im Bus auf den Boden und antwortet nicht, als Chloé ihn anspricht.“ Zu jeder Szene nennt der oder die Jugendliche zwei mögliche Gefühle und eine Frage, mit der man es herausfinden könnte, ohne zu urteilen. Zum Schluss wählt er oder sie einen Satz, der bleibt, etwa: „Ich sehe ein Signal – ich weiß noch nicht, was es heißt.“",
+  "sagen": [
+   "Deine Vermutung am Anfang war … Was sagt der Versuch dazu?",
+   "Yusuf schaut auf den Boden. Was könnte in ihm los sein? Nenn mir zwei Möglichkeiten.",
+   "Welche Frage würde dir mehr verraten als jedes Signal?"
+  ],
+  "wennEsKippt": "Fällt keine Frage ein, wählt der oder die Jugendliche aus drei Vorschlägen: „Alles okay?“, „Ist was passiert?“, „Soll ich dich kurz in Ruhe lassen?“ Wer nicht reden mag, ordnet den Szenen nur Gefühlswörter zu.",
+  "kurz": "Vermutung prüfen · Szenen: 2 Gefühle + 1 Frage · Satz, der bleibt",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 8
+  },
+  "thema": [
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-37",
+    "gewicht": 1
+   },
+   {
+    "code": "K-21",
+    "gewicht": 1
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 10,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "gespraech"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "karten"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Et pour nous ? Observer plutôt que juger",
+   "text": "L’adulte reprend l’hypothèse du début, et le ou la jeune la compare au résultat. Puis l’adulte lit de courtes scènes du quotidien, par exemple : « Dans le bus, Yusuf fixe le sol et ne répond pas quand Chloé lui parle. » Pour chaque scène, le ou la jeune propose deux émotions possibles et une question qui permettrait de le savoir sans juger. Pour finir, il ou elle choisit une phrase à garder, par exemple : « Je vois un signal – je ne sais pas encore ce qu’il veut dire. »",
+   "sagen": [
+    "Ton hypothèse au début, c’était … Qu’en dit l’expérience ?",
+    "Yusuf fixe le sol. Qu’est-ce qui pourrait se passer pour lui ? Donne-moi deux possibilités.",
+    "Quelle question t’en apprendrait plus que n’importe quel signal ?"
+   ],
+   "wennEsKippt": "Si aucune question ne vient, le ou la jeune choisit parmi trois propositions : « Ça va ? », « Il s’est passé quelque chose ? », « Tu veux que je te laisse tranquille un moment ? » Sans envie de parler, il ou elle associe seulement des mots d’émotion aux scènes.",
+   "kurz": "Vérifier l’hypothèse · scènes : 2 émotions + 1 question · phrase-clé"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Yusuf schaut auf den Boden. Lügt er? Ist er traurig, müde, genervt?",
+    "karten": [
+     {
+      "titel": "Alltagsszenen",
+      "karten": [
+       "Yusuf schaut im Bus auf den Boden und antwortet nicht, als Chloé ihn anspricht.",
+       "Jana lacht laut, als sie ihre Arbeit zurückbekommt.",
+       "Finn wippt nach dem Training die ganze Zeit mit dem Fuß.",
+       "Nele schreibt im Gruppenchat seit gestern nur noch „ok“.",
+       "Ben wird rot, als sein Name aufgerufen wird.",
+       "Lina verschränkt die Arme, als die anderen ohne sie einen Plan machen."
+      ]
+     }
+    ],
+    "beobachten": [
+     "Der oder die Jugendliche nennt zu einer Szene zwei verschiedene mögliche Gefühle.",
+     "Er oder sie formuliert eine offene, nicht wertende Frage.",
+     "Er oder sie vergleicht Vermutung und Ergebnis sachlich."
+    ],
+    "gruppe": "Mit mehreren: Jede Szene geht an ein Paar, das zwei Gefühle und eine Frage findet; danach stellen die Paare vor, und die Gruppe prüft, ob die Frage urteilt oder öffnet."
+   },
+   "fr": {
+    "haken": "Yusuf fixe le sol. Il ment ? Il est triste, fatigué, agacé ?",
+    "karten": [
+     {
+      "titel": "Scènes du quotidien",
+      "karten": [
+       "Dans le bus, Yusuf fixe le sol et ne répond pas quand Chloé lui parle.",
+       "Jana rit fort quand on lui rend son devoir.",
+       "Après l’entraînement, Finn n’arrête pas de bouger le pied.",
+       "Depuis hier, Nele n’écrit plus que « ok » dans la discussion de groupe.",
+       "Ben rougit quand on appelle son nom.",
+       "Lina croise les bras quand les autres font un plan sans elle."
+      ]
+     }
+    ],
+    "beobachten": [
+     "Le ou la jeune propose deux émotions possibles différentes pour une scène.",
+     "Il ou elle formule une question ouverte, sans jugement.",
+     "Il ou elle compare hypothèse et résultat avec calme."
+    ],
+    "gruppe": "En groupe : chaque scène va à un duo qui trouve deux émotions et une question ; puis les duos présentent, et le groupe vérifie si la question juge ou ouvre."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-sprudelflasche-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Forscherfrage: Was macht Druck in der Flasche?",
+  "text": "Die Fachkraft stellt eine verschlossene kleine Flasche Sprudelwasser auf den Tisch, und das Kind schaut sich die Bläschen an. Dann schüttelt die Fachkraft die Flasche kräftig, hält den Deckel fest und fragt: „Was passiert, wenn ich jetzt aufdrehe?“ Das Kind vermutet. Die Fachkraft stellt die Forscherfrage: „Kann man eine geschüttelte Flasche öffnen, ohne dass sie überschäumt?“ Das Kind sagt seine Idee, und die Fachkraft hält sie auf einem Zettel fest – dazu ein Satz, der neugierig macht: „Manchmal fühlt sich Ärger an wie diese Flasche.“",
+  "sagen": [
+   "Schau mal: Die Bläschen sitzen ganz ruhig im Wasser. Und jetzt …",
+   "Was passiert, wenn ich jetzt den Deckel aufdrehe?",
+   "Unsere Forscherfrage: Geht die Flasche auf, ohne überzuschäumen? Was ist deine Idee?"
+  ],
+  "wennEsKippt": "Will das Kind die Flasche sofort aufdrehen, wird es zum Deckel-Wächter: Es hält die Flasche gut fest, bis der Versuch beginnt. Hat es keine Idee, bietet die Fachkraft zwei an: schnell aufdrehen oder langsam aufdrehen.",
+  "kurz": "Sprudel schütteln · Was passiert? · Forscherfrage und Idee",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 6
+  },
+  "thema": [
+   "wut"
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "V-20",
+    "gewicht": 1
+   },
+   {
+    "code": "V-21",
+    "gewicht": 1
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "experiment",
+   "sinne"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "alltagsdinge",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "La question : qu’est-ce qui met la pression dans la bouteille ?",
+   "text": "L’adulte pose sur la table une petite bouteille d’eau gazeuse fermée, et l’enfant observe les bulles. Puis l’adulte secoue fort la bouteille, tient bien le bouchon et demande : « Qu’est-ce qui va se passer si j’ouvre maintenant ? » L’enfant fait une hypothèse. L’adulte pose la question de recherche : « Peut-on ouvrir une bouteille secouée sans que ça déborde ? » L’enfant donne son idée, l’adulte la note sur un papier et ajoute une phrase qui intrigue : « Parfois, la colère, c’est un peu comme cette bouteille. »",
+   "sagen": [
+    "Regarde : les bulles sont toutes calmes dans l’eau. Et maintenant …",
+    "Qu’est-ce qui se passe si je dévisse le bouchon maintenant ?",
+    "Notre question : est-ce que la bouteille peut s’ouvrir sans déborder ? C’est quoi, ton idée ?"
+   ],
+   "wennEsKippt": "Si l’enfant veut ouvrir tout de suite, il devient gardien du bouchon : il tient bien la bouteille jusqu’au début de l’expérience. S’il n’a pas d’idée, l’adulte en propose deux : ouvrir vite ou ouvrir lentement.",
+   "kurz": "Secouer l’eau gazeuse · que va-t-il se passer ? · question et idée"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Eine Flasche, die gleich losspritzen könnte – und die Frage, ob man sie zähmen kann.",
+    "vorbereitung": [
+     "Kleine Plastikflasche Sprudel (0,5 l), nicht gekühlt",
+     "Schüssel oder Eimer und Lappen",
+     "Zettel und Stift für die Idee des Kindes"
+    ],
+    "beobachten": [
+     "Das Kind stellt eine Vermutung auf, was beim Öffnen passiert.",
+     "Es nennt eine eigene Idee, wie die Flasche ruhig bleiben könnte."
+    ],
+    "gruppe": "Mit mehreren: Die Flasche geht von Hand zu Hand, jedes Kind schüttelt einmal und nennt etwas, das im Alltag Druck macht. Ideen zum ruhigen Öffnen kommen an die Tafel."
+   },
+   "fr": {
+    "haken": "Une bouteille prête à gicler – et la question : peut-on l’apprivoiser ?",
+    "vorbereitung": [
+     "Petite bouteille en plastique d’eau gazeuse (0,5 l), pas trop froide",
+     "Bassine ou seau et chiffon",
+     "Papier et crayon pour l’idée de l’enfant"
+    ],
+    "beobachten": [
+     "L’enfant fait une hypothèse sur ce qui se passera à l’ouverture.",
+     "Il propose une idée pour que la bouteille reste calme."
+    ],
+    "gruppe": "En groupe : la bouteille passe de main en main, chaque enfant la secoue une fois et nomme quelque chose qui met la pression au quotidien. Les idées pour ouvrir calmement vont au tableau."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-sprudelflasche-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Versuch: Die Sprudelflasche bleibt ruhig",
+  "text": "Zwei gleiche Sprudelflaschen stehen in einer Schüssel, beschriftet mit A und B. Die Fachkraft liest Ärger-Karten vor („Jemand nimmt dir den Ball weg“, „Dein Turm wird umgeworfen“), und bei jeder Karte schüttelt das Kind beide Flaschen einmal – so steigt in beiden gleich viel Druck. Flasche A öffnet die Fachkraft sofort, den Deckel vom Gesicht weg: Sie schäumt über. Mit Flasche B macht das Kind den Ruhe-Weg: Stopp – Flasche abstellen – drei langsame Atemzüge, dann den Deckel nur ein kleines Stück drehen, bis es zischt, wieder zu, und so weiter, bis sie offen ist. Gemeinsam vergleichen beide die Pfützen in der Schüssel und übersetzen: Das Schütteln sind die Ärger-Momente, das Abstellen und Atmen ist die Pause, und das kleine Zischen sind ruhige Worte wie „Stopp, das will ich nicht“.",
+  "sagen": [
+   "Bei jeder Ärger-Karte schüttelst du beide Flaschen einmal. Spürst du, wie fest sie werden?",
+   "Flasche A mache ich sofort auf – Achtung, Schüssel!",
+   "Flasche B bekommt den Ruhe-Weg: Stopp. Abstellen. Drei langsame Atemzüge. Jetzt nur ein kleines Stück aufdrehen.",
+   "Welche Flasche hat die kleinere Pfütze gemacht – und warum?"
+  ],
+  "wennEsKippt": "Schüttelt das Kind sehr wild, schüttelt nur noch die Fachkraft, und das Kind zählt laut mit. Mag es keine nassen Hände, öffnet die Fachkraft beide Flaschen, und das Kind gibt die Kommandos: „Stopp – abstellen – atmen – ein Stück drehen.“",
+  "kurz": "Ärger-Karten: A und B schütteln · A sofort auf · B mit Ruhe-Weg",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 16
+  },
+  "thema": [
+   "wut"
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "V-20",
+    "gewicht": 1
+   },
+   {
+    "code": "V-21",
+    "gewicht": 1
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "experiment",
+   "sinne"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "alltagsdinge",
+   "korb",
+   "klebeband",
+   "karten"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Ruhe-Weg: Stopp – abstellen – atmen – in kleinen Schritten sagen",
+   "fr": "Chemin du calme : stop – poser – respirer – dire petit à petit"
+  },
+  "achtung": "Nur Sprudelwasser in kleinen Plastikflaschen (0,5 l), keine Glasflaschen. Beim Öffnen den Deckel immer vom Gesicht weg halten, über einer Schüssel oder einem Eimer. Lappen bereitlegen.",
+  "vorbereitung": "Zwei gleiche 0,5-l-Plastikflaschen Sprudel (nicht gekühlt), mit Kreppband A und B beschriften; Schüssel oder Eimer, Lappen, Ärger-Karten.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "L’expérience : la bouteille qui reste calme",
+   "text": "Deux bouteilles d’eau gazeuse identiques, marquées A et B, sont posées dans une bassine. L’adulte lit des cartes-colère (« Quelqu’un te prend ton ballon », « On renverse ta tour ») et, à chaque carte, l’enfant secoue une fois les deux bouteilles – la pression monte autant dans l’une que dans l’autre. L’adulte ouvre la bouteille A tout de suite, bouchon tourné loin du visage : elle déborde. Avec la bouteille B, l’enfant suit le chemin du calme : stop – poser la bouteille – trois respirations lentes, puis tourner le bouchon juste un petit peu jusqu’à ce que ça siffle, refermer, et recommencer jusqu’à ce qu’elle soit ouverte. Ensemble, ils comparent les flaques dans la bassine et traduisent : secouer, ce sont les moments de colère ; poser et respirer, c’est la pause ; le petit « pschitt », ce sont des mots calmes comme « Stop, je ne veux pas ça ».",
+   "sagen": [
+    "À chaque carte-colère, tu secoues une fois les deux bouteilles. Tu sens comme elles deviennent dures ?",
+    "La bouteille A, je l’ouvre tout de suite – attention, la bassine !",
+    "La bouteille B a droit au chemin du calme : stop. Poser. Trois respirations lentes. Maintenant, tourne juste un petit peu.",
+    "Quelle bouteille a fait la plus petite flaque – et pourquoi ?"
+   ],
+   "wennEsKippt": "Si l’enfant secoue trop fort, seul l’adulte secoue et l’enfant compte à voix haute. S’il n’aime pas avoir les mains mouillées, l’adulte ouvre les deux bouteilles et l’enfant donne les ordres : « Stop – poser – respirer – tourner un peu. »",
+   "kurz": "Cartes-colère : secouer A et B · A ouverte d’un coup · B en douceur",
+   "achtung": "Seulement de l’eau gazeuse en petites bouteilles en plastique (0,5 l), jamais de verre. Ouvrir toujours le bouchon tourné loin du visage, au-dessus d’une bassine ou d’un seau. Garder un chiffon à portée de main.",
+   "vorbereitung": "Deux bouteilles identiques d’eau gazeuse de 0,5 l (pas trop froides), marquées A et B au ruban adhésif ; bassine ou seau, chiffon, cartes-colère."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Zwei Flaschen, gleich viel Druck – eine spritzt los, die andere bleibt ruhig. Das Kind zähmt sie selbst.",
+    "vorbereitung": [
+     "Zwei gleiche 0,5-l-Plastikflaschen Sprudel, nicht gekühlt (schäumt stärker)",
+     "Mit Kreppband A und B beschriften",
+     "Schüssel oder Eimer, Lappen oder Papiertücher",
+     "Ärger-Karten ausdrucken oder vorlesen (siehe Karten)"
+    ],
+    "aufbau": "Die Flaschen stehen in der Schüssel auf dem Tisch, der Lappen daneben. Das Kind sitzt oder steht so, dass beim Öffnen niemand vor dem Flaschenhals ist.",
+    "karten": [
+     {
+      "titel": "Ärger-Karten",
+      "karten": [
+       "Jemand nimmt dir den Ball weg.",
+       "Dein Turm wird umgeworfen.",
+       "Du darfst beim Spiel nicht mitmachen.",
+       "Jemand lacht, als du dich verrechnest.",
+       "Du musst schon wieder warten, bis du dran bist.",
+       "Dein Lieblingsstift ist kaputt.",
+       "Der Bus fährt dir vor der Nase weg.",
+       "Jemand drängelt sich in der Schlange vor.",
+       "Dein Bild wird verschmiert.",
+       "Du sollst aufhören zu spielen, gerade als es spannend wird."
+      ]
+     }
+    ],
+    "leichter": "Nur drei Ärger-Karten; die Fachkraft öffnet beide Flaschen, und das Kind gibt bei Flasche B die Kommandos.",
+    "schwerer": "Eine dritte Flasche C wird nur abgestellt und eine Minute nicht berührt, dann normal geöffnet: Hilft Warten allein schon? Ältere vergleichen die Pfützen mit einem Messbecher und erklären, warum die Bläschen beim Warten nach oben steigen.",
+    "gruppe": "Mit mehreren: Je Paar eine Flasche; ein Kind liest eine Ärger-Karte vor, das andere schüttelt, dann wird gewechselt. Zum Schluss öffnen zwei Paare vor der Gruppe – eins sofort, eins mit Ruhe-Weg –, die anderen beobachten und vergleichen die Pfützen.",
+    "beobachten": [
+     "Das Kind macht den Ruhe-Weg in der richtigen Reihenfolge (Stopp, abstellen, atmen, Stück für Stück).",
+     "Es erklärt, warum Flasche B weniger überschäumt.",
+     "Es nennt einen ruhigen Satz für einen Ärger-Moment."
+    ],
+    "warum": "Kurz stoppen, abkühlen und dann in Worten sagen, was los ist, senkt Ärger und Aggression; Stopp-Signale wie die Schildkröten-Technik sind gut belegt (Schneider & Robin, 1976), Ausagieren dagegen steigert Ärger eher (Bushman, 2002)."
+   },
+   "fr": {
+    "haken": "Deux bouteilles, autant de pression – l’une gicle, l’autre reste calme. C’est l’enfant qui l’apprivoise.",
+    "vorbereitung": [
+     "Deux bouteilles en plastique d’eau gazeuse de 0,5 l, pas froides (ça mousse plus)",
+     "Les marquer A et B au ruban adhésif",
+     "Bassine ou seau, chiffon ou essuie-tout",
+     "Imprimer ou lire les cartes-colère (voir cartes)"
+    ],
+    "aufbau": "Les bouteilles sont dans la bassine sur la table, le chiffon à côté. L’enfant se place de façon à ce que personne ne soit devant le goulot à l’ouverture.",
+    "karten": [
+     {
+      "titel": "Cartes-colère",
+      "karten": [
+       "Quelqu’un te prend ton ballon.",
+       "On renverse ta tour.",
+       "Tu n’as pas le droit de jouer avec les autres.",
+       "Quelqu’un rit parce que tu t’es trompé dans un calcul.",
+       "Tu dois encore attendre ton tour.",
+       "Ton crayon préféré est cassé.",
+       "Le bus part juste sous ton nez.",
+       "Quelqu’un te passe devant dans la file.",
+       "On gribouille sur ton dessin.",
+       "Tu dois arrêter de jouer juste quand ça devient passionnant."
+      ]
+     }
+    ],
+    "leichter": "Seulement trois cartes-colère ; l’adulte ouvre les deux bouteilles et l’enfant donne les ordres pour la bouteille B.",
+    "schwerer": "Une troisième bouteille C est seulement posée et laissée une minute sans la toucher, puis ouverte normalement : attendre suffit-il déjà ? Les plus grands mesurent les flaques avec un verre doseur et expliquent pourquoi les bulles montent quand on attend.",
+    "gruppe": "En groupe : une bouteille par duo ; un enfant lit une carte-colère, l’autre secoue, puis on échange. Pour finir, deux duos ouvrent devant le groupe – l’un tout de suite, l’autre avec le chemin du calme –, les autres observent et comparent les flaques.",
+    "beobachten": [
+     "L’enfant suit le chemin du calme dans le bon ordre (stop, poser, respirer, petit à petit).",
+     "Il explique pourquoi la bouteille B déborde moins.",
+     "Il trouve une phrase calme pour un moment de colère."
+    ],
+    "warum": "S’arrêter, se calmer, puis dire avec des mots ce qui se passe fait baisser la colère et l’agressivité ; les signaux d’arrêt comme la technique de la tortue sont bien étudiés (Schneider & Robin, 1976), alors qu’extérioriser violemment la colère l’augmente plutôt (Bushman, 2002)."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-sprudelflasche-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Was heißt das für uns? Mein Ruhe-Weg",
+  "text": "Die Flaschen sind weggeräumt, jetzt ist der Körper dran. Die Fachkraft liest noch eine Ärger-Karte vor, und das Kind macht den Ruhe-Weg ohne Flasche: Hände flach auf den Tisch (Stopp), drei langsame Atemzüge, dann ein ruhiger Satz wie „Stopp, gib mir den Ball zurück.“ Wenn das Kind mag, erzählt es von einem echten Moment, in dem es sich wie die geschüttelte Flasche gefühlt hat, und überlegt, wo der Ruhe-Weg dort gepasst hätte. Zum Schluss malt das Kind seine Flasche mit den vier Schritten auf ein kleines Papier und nimmt es mit.",
+  "sagen": [
+   "Jetzt ohne Flasche: Ich lese eine Karte, und du machst deinen Ruhe-Weg.",
+   "Kennst du einen Moment, in dem du dich wie die geschüttelte Flasche gefühlt hast? Du musst nichts erzählen.",
+   "Wo hätte dein Ruhe-Weg da geholfen?"
+  ],
+  "wennEsKippt": "Will das Kind nichts Eigenes erzählen, nimmt die Fachkraft ein ausgedachtes Beispiel („Sami beim Fußball“). Ist das Kind noch aufgedreht, machen beide den Ruhe-Weg zusammen und ganz langsam, bevor gesprochen wird.",
+  "kurz": "Ruhe-Weg ohne Flasche · eigener Moment (freiwillig) · Flasche malen",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 8
+  },
+  "thema": [
+   "wut"
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "V-20",
+    "gewicht": 1
+   },
+   {
+    "code": "V-21",
+    "gewicht": 1
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "rollenspiel",
+   "malen"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "papier",
+   "buntstifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Et pour nous ? Mon chemin du calme",
+   "text": "Les bouteilles sont rangées, maintenant c’est au tour du corps. L’adulte lit encore une carte-colère, et l’enfant fait le chemin du calme sans bouteille : mains à plat sur la table (stop), trois respirations lentes, puis une phrase calme comme « Stop, rends-moi le ballon. » Si l’enfant en a envie, il raconte un vrai moment où il s’est senti comme la bouteille secouée, et réfléchit à l’endroit où le chemin du calme aurait pu aider. Pour finir, l’enfant dessine sa bouteille avec les quatre étapes sur un petit papier et l’emporte.",
+   "sagen": [
+    "Maintenant sans bouteille : je lis une carte et tu fais ton chemin du calme.",
+    "Tu connais un moment où tu t’es senti comme la bouteille secouée ? Tu n’es pas obligé de raconter.",
+    "Où est-ce que ton chemin du calme aurait aidé ?"
+   ],
+   "wennEsKippt": "Si l’enfant ne veut rien raconter de personnel, l’adulte prend l’exemple d’un personnage inventé (« Sami au foot »). Si l’enfant est encore agité, tous deux font le chemin du calme ensemble, très lentement, avant de parler.",
+   "kurz": "Chemin du calme sans bouteille · un moment vécu (libre) · dessiner"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Jetzt wird das Kind selbst zur Flasche – und zeigt, dass es den Deckel im Griff hat.",
+    "leichter": "Statt zu erzählen, zeigt das Kind auf einer von drei Ärger-Karten, wo der Ruhe-Weg am meisten helfen würde.",
+    "gruppe": "Mit mehreren: Die Gruppe macht den Ruhe-Weg gemeinsam im Takt der Fachkraft; danach sagt, wer mag, einen ruhigen Satz. Eigene Erlebnisse nur, wenn ein Kind von sich aus erzählt.",
+    "beobachten": [
+     "Das Kind macht den Ruhe-Weg ohne Flasche und ohne Hilfe.",
+     "Es findet einen ruhigen Satz, der zur Ärger-Karte passt.",
+     "Es verbindet den Versuch mit einer Situation aus dem eigenen Alltag oder dem einer Figur."
+    ]
+   },
+   "fr": {
+    "haken": "Maintenant, c’est l’enfant qui devient la bouteille – et qui montre qu’il garde le bouchon en main.",
+    "leichter": "Au lieu de raconter, l’enfant montre parmi trois cartes-colère celle où le chemin du calme aiderait le plus.",
+    "gruppe": "En groupe : le groupe fait le chemin du calme ensemble au rythme de l’adulte ; ensuite, qui veut dit une phrase calme. Les expériences personnelles seulement si un enfant en parle de lui-même.",
+    "beobachten": [
+     "L’enfant fait le chemin du calme sans bouteille et sans aide.",
+     "Il trouve une phrase calme qui va avec la carte-colère.",
+     "Il relie l’expérience à une situation de sa vie ou de celle d’un personnage."
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:exp-aergerkurve-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Forscherfrage: Wie verläuft Ärger?",
+  "text": "Die Fachkraft stellt ein hohes Glas mit einem Teelöffel Natron auf einen Teller und hält einen Becher Essig bereit. Sie fragt: „Wenn ich alles auf einmal hineingieße – wie hoch steigt der Schaum, und wie lange bleibt er oben?“ Der oder die Jugendliche zeichnet die Vermutung als Kurve auf Karopapier: nach rechts die Zeit bis etwa eine Minute, nach oben die Schaumhöhe. Dann folgt die Forscherfrage: „Kann man beeinflussen, wie hoch so eine Kurve steigt und wie lange sie oben bleibt?“ Zum Schluss stellt die Fachkraft die Verbindung her: Auch Ärger hat eine Kurve mit Anstieg, Gipfel und Abstieg.",
+  "sagen": [
+   "Natron und Essig – was passiert, wenn alles auf einmal reinkommt?",
+   "Zeichne deine Vermutung: Wie hoch, wie schnell, wie lange?",
+   "Ärger verläuft auch in einer Kurve. Heute schauen wir, was die Kurve oben hält – und was sie fallen lässt."
+  ],
+  "wennEsKippt": "Mag der oder die Jugendliche nicht zeichnen, zeigt er oder sie die Kurve mit der Hand in der Luft, und die Fachkraft zeichnet mit. Fragt jemand „Was hat das mit mir zu tun?“, reicht: „Erst der Versuch – dann entscheidest du, ob er etwas mit Ärger zu tun hat.“",
+  "kurz": "Natron und Essig: Kurve vermuten · Forscherfrage · Ärger hat Kurven",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 6
+  },
+  "thema": [
+   "wut"
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "V-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-29",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 10,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "denkmodell"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "glas",
+   "karopapier",
+   "stifte",
+   "alltagsdinge"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "La question : comment évolue la colère ?",
+   "text": "L’adulte pose sur une assiette un verre haut avec une cuillère à café de bicarbonate, et garde un gobelet de vinaigre à portée de main. Question : « Si je verse tout d’un coup, jusqu’où la mousse va-t-elle monter, et combien de temps va-t-elle rester en haut ? » Le ou la jeune dessine son hypothèse sous forme de courbe sur du papier quadrillé : vers la droite le temps, jusqu’à environ une minute, vers le haut la hauteur de la mousse. Vient ensuite la question de recherche : « Peut-on influencer la hauteur d’une telle courbe et le temps qu’elle reste en haut ? » Pour finir, l’adulte fait le lien : la colère aussi a une courbe, avec une montée, un sommet et une descente.",
+   "sagen": [
+    "Bicarbonate et vinaigre – que se passe-t-il si tout arrive d’un coup ?",
+    "Dessine ton hypothèse : à quelle hauteur, à quelle vitesse, combien de temps ?",
+    "La colère aussi suit une courbe. Aujourd’hui, on regarde ce qui la maintient en haut – et ce qui la fait redescendre."
+   ],
+   "wennEsKippt": "Si le ou la jeune ne veut pas dessiner, il ou elle montre la courbe avec la main en l’air et l’adulte la trace. Si la question tombe « Quel rapport avec moi ? », il suffit de dire : « D’abord l’expérience – ensuite, c’est toi qui décides si ça a un rapport avec la colère. »",
+   "kurz": "Bicarbonate et vinaigre : prévoir la courbe · question · la colère"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Glas, das gleich überläuft – und die Frage, warum mancher Ärger nach einer Minute vorbei ist und anderer stundenlang bleibt.",
+    "vorbereitung": [
+     "Hohes, schmales Glas auf einem Teller",
+     "Natron und Haushaltsessig (5 %), Teelöffel",
+     "Karopapier mit zwei Achsen: Zeit und Schaumhöhe"
+    ],
+    "beobachten": [
+     "Der oder die Jugendliche zeichnet eine Vermutung mit Anstieg und Abstieg.",
+     "Er oder sie lässt sich auf die Forscherfrage ein."
+    ],
+    "gruppe": "Mit mehreren: Alle zeichnen ihre Vermutungskurve, dann werden die Kurven nebeneinandergelegt – wer vermutet einen steilen Gipfel, wer eine lange Welle?"
+   },
+   "fr": {
+    "haken": "Un verre qui va déborder – et la question : pourquoi certaines colères passent en une minute et d’autres durent des heures ?",
+    "vorbereitung": [
+     "Un verre haut et étroit sur une assiette",
+     "Bicarbonate et vinaigre ménager (5 %), cuillère à café",
+     "Papier quadrillé avec deux axes : temps et hauteur de mousse"
+    ],
+    "beobachten": [
+     "Le ou la jeune dessine une hypothèse avec une montée et une descente.",
+     "Il ou elle entre dans la question de recherche."
+    ],
+    "gruppe": "En groupe : chacun dessine sa courbe, puis on les pose côte à côte – qui prévoit un pic raide, qui une longue vague ?"
+   }
+  }
+ },
+ {
+  "id": "fo:exp-aergerkurve-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Versuch: Die Ärger-Kurve im Glas",
+  "text": "Lauf 1, alles auf einmal: Der oder die Jugendliche gießt 100 ml Essig auf einen Teelöffel Natron und liest am senkrecht gehaltenen Lineal die Schaumhöhe ab – zuerst den höchsten Stand, dann jedes Mal, wenn die Fachkraft alle zehn Sekunden „jetzt“ sagt; die Werte kommen als Punkte aufs Karopapier. Lauf 2, nachfüttern: Neues Glas, wieder ein Teelöffel Natron, aber nur 30 ml Essig – und immer, wenn der Schaum fällt, kommen noch einmal 30 ml dazu, zweimal. Beide Kurven werden verbunden und verglichen: Die erste steigt steil und fällt von selbst, die zweite bleibt oben, solange nachgefüttert wird. Gemeinsam übersetzen beide: Was ist bei Ärger das Nachfüttern (den Chat noch mal lesen, die Szene im Kopf wiederholen, es allen erzählen), und was lässt die Kurve fallen (Handy weg, Ort wechseln, lange ausatmen, Musik)? Der oder die Jugendliche markiert auf der Kurve zwei Ausstiege, die für ihn oder sie wirklich machbar sind.",
+  "sagen": [
+   "Lauf 1: alles auf einmal. Lies zuerst den höchsten Stand ab, dann bei jedem „jetzt“.",
+   "Lauf 2: Immer, wenn der Schaum fällt, kommt Nachschub. Was macht die Kurve?",
+   "Was ist bei dir das Nachfüttern, wenn du dich ärgerst – und was lässt die Kurve fallen?"
+  ],
+  "wennEsKippt": "Ist das Ablesen zu fummelig, schätzt der oder die Jugendliche die Höhe in drei Stufen (hoch, mittel, flach). Kommt beim Übersetzen nichts, legt die Fachkraft Beispielkarten hin (siehe Karten), und der oder die Jugendliche sortiert sie in „füttert nach“ und „lässt fallen“.",
+  "kurz": "Lauf 1 alles auf einmal · Lauf 2 nachfüttern · Kurven vergleichen",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 18
+  },
+  "thema": [
+   "wut"
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "V-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-29",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 10,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "experiment",
+   "denkmodell",
+   "karten"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "glas",
+   "becher",
+   "loeffel",
+   "lineal",
+   "karopapier",
+   "stifte",
+   "uhr",
+   "alltagsdinge",
+   "karten"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Nicht nachfüttern: Handy weg, Ort wechseln, lange ausatmen",
+   "fr": "Ne pas remettre d’huile sur le feu : téléphone posé, changer d’endroit, expirer"
+  },
+  "achtung": "Nur Haushaltsessig (höchstens 5 %), keine Essigessenz. Nicht über das Glas beugen und Essig von den Augen fernhalten; bei Spritzern mit Wasser ausspülen. Alles auf einem Teller oder Tablett, Papiertücher bereit, nichts davon trinken.",
+  "vorbereitung": "Zwei hohe Gläser auf Tellern, Natron, etwa 200 ml Haushaltsessig, Becher mit Strich bei 30 ml und 100 ml, Lineal, Karopapier mit Zeitachse, Uhr mit Sekunden.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "L’expérience : la courbe de la colère dans un verre",
+   "text": "Essai 1, tout d’un coup : le ou la jeune verse 100 ml de vinaigre sur une cuillère à café de bicarbonate et lit la hauteur de la mousse sur une règle tenue droite – d’abord le niveau le plus haut, puis à chaque « maintenant » que l’adulte annonce toutes les dix secondes ; les valeurs deviennent des points sur le papier quadrillé. Essai 2, remettre du carburant : nouveau verre, de nouveau une cuillère à café de bicarbonate, mais seulement 30 ml de vinaigre – et chaque fois que la mousse retombe, on rajoute 30 ml, deux fois. Les deux courbes sont reliées et comparées : la première monte en flèche et retombe toute seule, la deuxième reste en haut tant qu’on en rajoute. Ensemble, ils traduisent : dans la colère, qu’est-ce qui remet du carburant (relire la conversation, rejouer la scène dans sa tête, la raconter à tous), et qu’est-ce qui fait redescendre la courbe (poser le téléphone, changer d’endroit, expirer longuement, de la musique) ? Le ou la jeune marque sur la courbe deux façons de décrocher vraiment faisables pour lui ou pour elle.",
+   "sagen": [
+    "Essai 1 : tout d’un coup. Lis d’abord le niveau le plus haut, puis à chaque « maintenant ».",
+    "Essai 2 : chaque fois que la mousse retombe, on en rajoute. Que fait la courbe ?",
+    "Quand tu es en colère, qu’est-ce qui remet du carburant – et qu’est-ce qui fait redescendre la courbe ?"
+   ],
+   "wennEsKippt": "Si la lecture est trop délicate, le ou la jeune estime la hauteur en trois niveaux (haut, moyen, plat). Si rien ne vient pour la traduction, l’adulte pose des cartes d’exemples (voir cartes), et le ou la jeune les trie en « remet du carburant » et « fait redescendre ».",
+   "kurz": "Essai 1 tout d’un coup · essai 2 on rajoute · comparer les courbes",
+   "achtung": "Seulement du vinaigre ménager (5 % maximum), jamais de vinaigre concentré. Ne pas se pencher au-dessus du verre et protéger les yeux ; en cas d’éclaboussure, rincer à l’eau. Tout se fait sur une assiette ou un plateau, avec de l’essuie-tout, et on ne boit rien.",
+   "vorbereitung": "Deux verres hauts sur des assiettes, du bicarbonate, environ 200 ml de vinaigre ménager, un gobelet marqué à 30 ml et 100 ml, une règle, du papier quadrillé avec l’axe du temps, une montre avec les secondes."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Glas, das überläuft – und die Frage, warum mancher Ärger nach einer Minute vorbei ist und anderer stundenlang bleibt.",
+    "vorbereitung": [
+     "Natron (Päckchen aus dem Supermarkt) und Haushaltsessig, etwa 200 ml",
+     "Zwei hohe, schmale Gläser auf Tellern oder einem Tablett",
+     "Becher mit Strich bei 30 ml und bei 100 ml",
+     "Lineal, Karopapier mit Achsen: Zeit (0–90 s) und Höhe",
+     "Uhr mit Sekundenanzeige, Papiertücher"
+    ],
+    "aufbau": "Alles steht auf einem Tablett am Tisch, das Glas vor dem oder der Jugendlichen, das Lineal senkrecht daneben. Die Fachkraft hat die Uhr und sagt die Messzeitpunkte an.",
+    "karten": [
+     {
+      "titel": "Füttert nach oder lässt fallen?",
+      "karten": [
+       "Den Chat noch mal von oben lesen",
+       "Einen Screenshot an drei Leute schicken",
+       "Im Kopf durchspielen, was ich hätte sagen sollen",
+       "Kopfhörer rein, ein Lied",
+       "Kurz raus aus dem Raum, Wasser trinken",
+       "Mit jemandem reden, der mich runterbringt",
+       "In der Pause allen erzählen, wie unfair das war",
+       "Handy umdrehen und weglegen",
+       "Dreimal lange ausatmen",
+       "Rache planen",
+       "Im Bus auf dem Heimweg alles noch mal durchgehen",
+       "Eine Runde Rad fahren"
+      ]
+     }
+    ],
+    "leichter": "Beschreiben statt messen: Der oder die Jugendliche sagt, was passiert, und die Fachkraft zeichnet die zwei Kurven.",
+    "schwerer": "Lauf 3 mit einem halben Teelöffel Natron: Wie verändert ein kleinerer Auslöser die Kurve? Dazu die Ausstiege nach dem Zeitpunkt ordnen: Was hilft schon am Anfang des Anstiegs, was erst nach dem Gipfel?",
+    "gruppe": "Mit mehreren: Zwei Tische, einer macht Lauf 1, einer Lauf 2, gleichzeitig; je eine Person gießt, eine misst, eine schreibt. Danach hängen beide Kurven nebeneinander, und die Gruppe sortiert die Karten.",
+    "beobachten": [
+     "Der oder die Jugendliche beschreibt den Unterschied der Kurven mit Anstieg, Gipfel und Abstieg.",
+     "Er oder sie nennt ein eigenes Beispiel für Nachfüttern (etwa den Chat noch mal lesen).",
+     "Er oder sie wählt zwei realistische Ausstiege für sich."
+    ],
+    "warum": "Ärger klingt ab, wenn er nicht nachgefüttert wird: Grübeln und Wiederholen halten ihn hoch (Denson, 2013), Ausagieren steigert ihn eher (Bushman, 2002). Wer seine Ärger-Kurve und frühe Ausstiege kennt, reagiert auf Provokationen kontrollierter.",
+    "links": [
+     {
+      "titel": "Kanner-Jugendtelefon 116 111: anonym reden, auch über Ärger",
+      "url": "https://www.kjt.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "Un verre qui déborde – et la question : pourquoi certaines colères passent en une minute et d’autres durent des heures ?",
+    "vorbereitung": [
+     "Bicarbonate (sachet du supermarché) et vinaigre ménager, environ 200 ml",
+     "Deux verres hauts et étroits sur des assiettes ou un plateau",
+     "Un gobelet marqué à 30 ml et à 100 ml",
+     "Règle, papier quadrillé avec axes : temps (0–90 s) et hauteur",
+     "Montre avec les secondes, essuie-tout"
+    ],
+    "aufbau": "Tout est posé sur un plateau à la table, le verre devant le ou la jeune, la règle droite à côté. L’adulte tient la montre et annonce les moments de mesure.",
+    "karten": [
+     {
+      "titel": "Remet du carburant ou fait redescendre ?",
+      "karten": [
+       "Relire la conversation depuis le début",
+       "Envoyer une capture d’écran à trois personnes",
+       "Rejouer dans sa tête ce qu’on aurait dû dire",
+       "Mettre ses écouteurs, une chanson",
+       "Quitter la pièce un moment, boire de l’eau",
+       "Parler à quelqu’un qui me calme",
+       "Raconter à tout le monde à la pause combien c’était injuste",
+       "Retourner le téléphone et le poser",
+       "Expirer longuement trois fois",
+       "Préparer une vengeance",
+       "Tout repasser dans sa tête dans le bus du retour",
+       "Faire un tour à vélo"
+      ]
+     }
+    ],
+    "leichter": "Décrire au lieu de mesurer : le ou la jeune dit ce qui se passe et l’adulte dessine les deux courbes.",
+    "schwerer": "Essai 3 avec une demi-cuillère de bicarbonate : comment un déclencheur plus petit change-t-il la courbe ? Classer aussi les façons de décrocher selon le moment : qu’est-ce qui aide dès le début de la montée, qu’est-ce qui aide seulement après le sommet ?",
+    "gruppe": "En groupe : deux tables, l’une fait l’essai 1, l’autre l’essai 2, en même temps ; une personne verse, une mesure, une note. Ensuite, les deux courbes sont affichées côte à côte et le groupe trie les cartes.",
+    "beobachten": [
+     "Le ou la jeune décrit la différence des courbes avec montée, sommet et descente.",
+     "Il ou elle donne un exemple personnel de carburant (par exemple relire la conversation).",
+     "Il ou elle choisit deux façons réalistes de décrocher."
+    ],
+    "warum": "La colère retombe si on ne l’alimente pas : ruminer et ressasser la maintiennent (Denson, 2013), l’extérioriser violemment l’augmente plutôt (Bushman, 2002). Qui connaît sa courbe de colère et ses façons de décrocher tôt réagit avec plus de contrôle aux provocations.",
+    "links": [
+     {
+      "titel": "Kanner-Jugendtelefon 116 111 : parler anonymement, aussi de la colère",
+      "url": "https://www.kjt.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:exp-aergerkurve-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Was heißt das für uns? Meine heißen Momente",
+  "text": "Die Fachkraft legt die beiden Kurven nebeneinander und bittet um einen typischen Ärger-Moment, der nicht zu persönlich ist, etwa beim Gaming, im Bus oder im Training. Der oder die Jugendliche skizziert dazu eine eigene Kurve und markiert drei Stellen: Wo beginnt der Anstieg, woran merkt der Körper es zuerst? Was hat damals nachgefüttert? Wo wäre ein Ausstieg möglich gewesen? Zum Schluss formuliert er oder sie einen Wenn-dann-Satz für den nächsten heißen Moment, etwa: „Wenn ich merke, dass mein Kiefer fest wird, lege ich das Handy weg und gehe kurz raus.“",
+  "sagen": [
+   "Nimm einen Ärger-Moment, über den du reden magst – beim Gaming, im Bus, im Training.",
+   "Wo hat deine Kurve angefangen zu steigen? Was hat dein Körper gemacht?",
+   "Mach daraus einen Wenn-dann-Satz für das nächste Mal."
+  ],
+  "wennEsKippt": "Will der oder die Jugendliche nichts Eigenes nehmen, gilt die Kurve für eine erfundene Person: Ben wird im Gaming-Chat beschuldigt, das Spiel absichtlich vermasselt zu haben. Wer keinen Satz formulieren will, wählt einen Ausstieg von den Karten und ergänzt nur „Wenn ich merke, dass …“.",
+  "kurz": "Eigene Ärger-Kurve · Nachfüttern finden · Wenn-dann-Satz",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 8
+  },
+  "thema": [
+   "wut"
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "V-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-29",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 10,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "denkmodell",
+   "gespraech"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "karopapier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Et pour nous ? Mes moments brûlants",
+   "text": "L’adulte pose les deux courbes côte à côte et demande un moment de colère typique, pas trop personnel, par exemple en jouant en ligne, dans le bus ou à l’entraînement. Le ou la jeune esquisse sa propre courbe et y marque trois endroits : où commence la montée, à quoi le corps le remarque-t-il en premier ? Qu’est-ce qui a remis du carburant ce jour-là ? Où aurait-on pu décrocher ? Pour finir, il ou elle formule une phrase « si… alors… » pour le prochain moment brûlant, par exemple : « Si je sens que ma mâchoire se serre, je pose le téléphone et je quitte la pièce un moment. »",
+   "sagen": [
+    "Prends un moment de colère dont tu veux bien parler – en jouant en ligne, dans le bus, à l’entraînement.",
+    "Où ta courbe a-t-elle commencé à monter ? Qu’a fait ton corps ?",
+    "Fais-en une phrase « si… alors… » pour la prochaine fois."
+   ],
+   "wennEsKippt": "Si le ou la jeune ne veut rien prendre de personnel, la courbe vaut pour une personne inventée : dans le chat du jeu, on accuse Ben d’avoir fait rater la partie exprès. Sans envie de formuler une phrase, il ou elle choisit une façon de décrocher sur les cartes et complète seulement « Si je sens que… ».",
+   "kurz": "Sa propre courbe · trouver le carburant · phrase « si… alors… »"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die eigene Ärger-Kurve sehen – und genau die Stelle finden, an der man aussteigen kann.",
+    "gruppe": "Mit mehreren: Die Kurven bleiben privat; wer mag, liest den eigenen Wenn-dann-Satz vor. Die Gruppe sammelt Ausstiege an der Tafel, ohne die Situationen zu bewerten.",
+    "beobachten": [
+     "Der oder die Jugendliche nennt ein frühes Körperzeichen für Ärger.",
+     "Er oder sie benennt, was den Ärger damals nachgefüttert hat.",
+     "Er oder sie formuliert einen konkreten Wenn-dann-Satz."
+    ],
+    "warum": "Wenn-dann-Pläne verknüpfen ein Warnzeichen mit einer festen Handlung und erhöhen deutlich die Chance, im heißen Moment wirklich so zu handeln (Gollwitzer & Sheeran, 2006)."
+   },
+   "fr": {
+    "haken": "Voir sa propre courbe de colère – et trouver l’endroit exact où l’on peut décrocher.",
+    "gruppe": "En groupe : les courbes restent privées ; qui veut lit sa phrase « si… alors… ». Le groupe rassemble les façons de décrocher au tableau, sans juger les situations.",
+    "beobachten": [
+     "Le ou la jeune nomme un premier signal du corps pour la colère.",
+     "Il ou elle nomme ce qui a alimenté la colère ce jour-là.",
+     "Il ou elle formule une phrase « si… alors… » concrète."
+    ],
+    "warum": "Les plans « si… alors… » relient un signal d’alerte à une action précise et augmentent nettement la probabilité d’agir vraiment ainsi dans le moment chaud (Gollwitzer & Sheeran, 2006)."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-truebes-glas-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Forscherfrage: Wie wird trübes Wasser klar?",
+  "text": "Die Fachkraft zeigt ein durchsichtiges Schraubglas mit Wasser, unten liegt eine Schicht Sand, oben ist alles klar. Das Kind prüft, ob der Deckel fest zu ist, und schüttelt das Glas kräftig – das Wasser wird trüb. Die Fachkraft stellt die Forscherfrage: „Was macht das Wasser am schnellsten wieder klar: weiter schütteln, umrühren oder in Ruhe lassen?“ Das Kind legt seine Vermutung fest, und die Fachkraft schreibt sie auf. Dann verbindet sie mit dem Thema: „Manchmal ist es in uns auch so trüb – wenn ganz viel auf einmal los ist.“",
+  "sagen": [
+   "Schau: unten Sand, oben klar. Deckel fest? Dann schüttel mal kräftig!",
+   "Was meinst du: Was macht das Wasser am schnellsten wieder klar?",
+   "Kennst du das, wenn im Kopf alles durcheinanderwirbelt?"
+  ],
+  "wennEsKippt": "Schüttelt das Kind sehr wild, hält die Fachkraft das Glas mit und zählt bis drei – dann ist Schluss. Hat es keine Vermutung, zeigt es auf eine von drei Möglichkeiten, die die Fachkraft mit den Händen vormacht: schütteln, rühren, stillhalten.",
+  "kurz": "Glas schütteln · trüb! · Was macht es wieder klar? Vermutung",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 6
+  },
+  "thema": [
+   "angst",
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "K-16",
+    "gewicht": 1
+   },
+   {
+    "code": "V-25",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "sinne"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "glas",
+   "alltagsdinge",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "La question : comment l’eau trouble redevient-elle claire ?",
+   "text": "L’adulte montre un bocal transparent rempli d’eau, avec une couche de sable au fond ; en haut, tout est clair. L’enfant vérifie que le couvercle est bien fermé et secoue fort le bocal – l’eau devient trouble. L’adulte pose la question de recherche : « Qu’est-ce qui rend l’eau claire le plus vite : continuer à secouer, remuer ou la laisser tranquille ? » L’enfant choisit son hypothèse, et l’adulte la note. Puis l’adulte fait le lien avec le thème : « Parfois, c’est aussi trouble en nous – quand il se passe plein de choses en même temps. »",
+   "sagen": [
+    "Regarde : du sable en bas, de l’eau claire en haut. Le couvercle est fermé ? Alors secoue fort !",
+    "À ton avis, qu’est-ce qui rend l’eau claire le plus vite ?",
+    "Tu connais ça, quand tout tourbillonne dans la tête ?"
+   ],
+   "wennEsKippt": "Si l’enfant secoue trop fort, l’adulte tient le bocal avec lui et compte jusqu’à trois – ensuite, c’est fini. S’il n’a pas d’hypothèse, il montre une des trois possibilités que l’adulte mime avec les mains : secouer, remuer, laisser tranquille.",
+   "kurz": "Secouer le bocal · trouble ! · qu’est-ce qui le rend clair ?"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Glas Wasser verwandelt sich in eine Schneekugel aus Sand – und wird nur mit einem Trick wieder klar.",
+    "vorbereitung": [
+     "Durchsichtiges Schraubglas, am besten aus Kunststoff, mit festem Deckel",
+     "Zwei Esslöffel feinen Sand hinein, fast voll mit Wasser auffüllen",
+     "Vorher testen: Nach dem Schütteln etwa eine halbe Minute trüb"
+    ],
+    "beobachten": [
+     "Das Kind stellt eine Vermutung auf und kann sie begründen.",
+     "Es zeigt Neugier, wie das Wasser wieder klar wird."
+    ],
+    "gruppe": "Mit mehreren: Das Glas geht herum, jedes Kind schüttelt einmal. Die Vermutungen werden mit Handzeichen gesammelt: schütteln, rühren oder in Ruhe lassen."
+   },
+   "fr": {
+    "haken": "Un bocal d’eau se transforme en boule à neige de sable – et ne redevient clair qu’avec une astuce.",
+    "vorbereitung": [
+     "Bocal transparent, de préférence en plastique, qui ferme bien",
+     "Deux cuillères à soupe de sable fin, puis presque plein d’eau",
+     "Tester avant : l’eau reste trouble environ une demi-minute"
+    ],
+    "beobachten": [
+     "L’enfant fait une hypothèse et peut la justifier.",
+     "Il montre de la curiosité pour comprendre comment l’eau redevient claire."
+    ],
+    "gruppe": "En groupe : le bocal circule, chaque enfant le secoue une fois. Les hypothèses se recueillent par des gestes : secouer, remuer ou laisser tranquille."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-truebes-glas-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Versuch: Das trübe Glas wird klar",
+  "text": "Hinter dem Glas steht ein Papier mit einem dicken gemalten Stern, und das Kind probiert nach jedem Schütteln einen anderen Weg aus. Weg 1: Deckel ab und mit dem Löffel weiterrühren. Weg 2: das Glas abstellen und in Ruhe lassen, die Hände in den Schoß; das Kind atmet dabei langsam durch die Nase ein und lange durch den Mund aus, und die Fachkraft zählt die Atemzüge, bis der Stern wieder zu sehen ist. Weg 3: abstellen, aber immer wieder an das Glas tippen. Gemeinsam vergleichen beide, bei welchem Weg das Wasser am schnellsten klar wurde, und entdecken: Das Glas braucht keine Hilfe, nur Ruhe – das Atmen hilft dem Kind, die Ruhe auszuhalten. Danach spürt das Kind nach, was beim langsamen Atmen im Körper ruhiger geworden ist (Schultern, Bauch, Herz), und gibt dem Weg einen Namen, zum Beispiel „Glas-Pause“.",
+  "sagen": [
+   "Weg 1: Deckel ab und rühren. Wird es klar?",
+   "Weg 2: Glas abstellen, Hände in den Schoß. Ein durch die Nase … und laaang aus. Ich zähle mit.",
+   "Siehst du den Stern wieder? Wie viele Atemzüge waren das?",
+   "Was ist in deinem Körper ruhiger geworden – Schultern, Bauch oder Herz?"
+  ],
+  "wennEsKippt": "Ist langsames Atmen ungewohnt, pustet das Kind beim Ausatmen ganz sanft gegen eine ausgedachte Kerze, ohne dass sie ausgeht. Wird es ungeduldig, zählt es die Atemzüge an den Fingern mit oder schaut nur, wie der Sand nach unten rieselt.",
+  "kurz": "3 Wege testen: rühren · in Ruhe lassen und atmen · tippen",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 16
+  },
+  "thema": [
+   "angst",
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "K-16",
+    "gewicht": 1
+   },
+   {
+    "code": "V-25",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "atmen",
+   "sinne"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "glas",
+   "loeffel",
+   "alltagsdinge",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Glas-Pause: abstellen, Hände still, lange ausatmen",
+   "fr": "Pause-bocal : poser, mains calmes, longue expiration"
+  },
+  "achtung": "Am besten ein Schraubglas aus Kunststoff nehmen; bei echtem Glas schüttelt nur die Fachkraft. Den Deckel vor dem Schütteln fest zuschrauben. Das Wasser nicht trinken.",
+  "vorbereitung": "Schraubglas mit zwei Esslöffeln feinem Sand und Wasser füllen und einmal testen; Papier mit einem dicken Stern, Löffel, Papiertuch.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "L’expérience : le bocal trouble redevient clair",
+   "text": "Derrière le bocal se trouve une feuille avec une grosse étoile dessinée, et après chaque secousse, l’enfant essaie un autre chemin. Chemin 1 : enlever le couvercle et continuer à remuer avec la cuillère. Chemin 2 : poser le bocal et le laisser tranquille, les mains sur les genoux ; l’enfant inspire lentement par le nez et expire longuement par la bouche, et l’adulte compte les respirations jusqu’à ce que l’étoile réapparaisse. Chemin 3 : poser le bocal, mais tapoter dessus de temps en temps. Ensemble, ils comparent avec quel chemin l’eau est redevenue claire le plus vite, et découvrent : le bocal n’a pas besoin d’aide, seulement de calme – la respiration aide l’enfant à supporter ce calme. Ensuite, l’enfant remarque ce qui s’est calmé dans son corps pendant la respiration lente (épaules, ventre, cœur) et donne un nom à ce chemin, par exemple « pause-bocal ».",
+   "sagen": [
+    "Chemin 1 : on enlève le couvercle et on remue. Est-ce que ça devient clair ?",
+    "Chemin 2 : on pose le bocal, les mains sur les genoux. On inspire par le nez … et on expiiire longtemps. Je compte avec toi.",
+    "Tu vois de nouveau l’étoile ? Combien de respirations ?",
+    "Qu’est-ce qui s’est calmé dans ton corps – les épaules, le ventre ou le cœur ?"
+   ],
+   "wennEsKippt": "Si la respiration lente est inhabituelle, l’enfant souffle tout doucement en expirant sur une bougie imaginaire, sans l’éteindre. S’il s’impatiente, il compte les respirations sur ses doigts ou regarde simplement le sable descendre.",
+   "kurz": "3 chemins : remuer · laisser tranquille et respirer · tapoter",
+   "achtung": "De préférence un bocal en plastique ; avec du verre, seul l’adulte secoue. Bien visser le couvercle avant de secouer. Ne pas boire l’eau.",
+   "vorbereitung": "Remplir un bocal avec deux cuillères à soupe de sable fin et de l’eau, et le tester une fois ; feuille avec une grosse étoile, cuillère, essuie-tout."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Eine Schneekugel aus Sand, ein versteckter Stern – und die Frage, welcher Weg ihn am schnellsten wieder sichtbar macht.",
+    "vorbereitung": [
+     "Schraubglas aus Kunststoff mit festem Deckel",
+     "Zwei Esslöffel feinen Sand hinein, fast voll mit Wasser",
+     "Vorher testen: nach dem Schütteln etwa eine halbe Minute trüb",
+     "Papier mit einem dicken gemalten Stern",
+     "Löffel und Papiertuch"
+    ],
+    "aufbau": "Das Glas steht in der Mitte des Tisches, der Stern dahinter an einen Becher gelehnt. Das Kind sitzt so, dass es durch das Glas auf den Stern schaut.",
+    "leichter": "Nur zwei Wege vergleichen: rühren und in Ruhe lassen. Die Fachkraft atmet sichtbar mit, und das Kind zählt die Atemzüge an den Fingern.",
+    "schwerer": "Das Kind erfindet einen vierten Weg und testet ihn. Ältere zählen Sekunden statt Atemzüge und prüfen: Wird das Glas schneller klar, wenn man dabei atmet? (Nein – das Glas braucht nur Ruhe. Das Atmen hilft dem Menschen daneben.)",
+    "gruppe": "Mit mehreren: Je Paar ein Glas; ein Kind schüttelt und probiert einen Weg, das andere zählt die Atemzüge, dann wird getauscht. Die Ergebnisse der drei Wege kommen an die Tafel.",
+    "beobachten": [
+     "Das Kind erkennt: Weiterrühren hält das Wasser trüb, Ruhe macht es klar.",
+     "Es atmet mindestens dreimal deutlich länger aus als ein.",
+     "Es nennt eine Stelle im Körper, die ruhiger geworden ist."
+    ],
+    "warum": "Langsames Atmen mit langem Ausatmen stärkt den beruhigenden Teil des Nervensystems und senkt Anspannung (Zaccaro et al., 2018); das trübe Glas macht greifbar, dass sich Aufregung legt, wenn man sie nicht weiter anheizt."
+   },
+   "fr": {
+    "haken": "Une boule à neige de sable, une étoile cachée – et la question : quel chemin la fait réapparaître le plus vite ?",
+    "vorbereitung": [
+     "Bocal en plastique avec un couvercle qui ferme bien",
+     "Deux cuillères à soupe de sable fin, presque plein d’eau",
+     "Tester avant : environ une demi-minute de trouble après secousse",
+     "Feuille avec une grosse étoile dessinée",
+     "Cuillère et essuie-tout"
+    ],
+    "aufbau": "Le bocal est au milieu de la table, l’étoile derrière, appuyée contre un gobelet. L’enfant est assis de façon à voir l’étoile à travers le bocal.",
+    "leichter": "Comparer seulement deux chemins : remuer et laisser tranquille. L’adulte respire de façon visible avec l’enfant, qui compte les respirations sur ses doigts.",
+    "schwerer": "L’enfant invente un quatrième chemin et le teste. Les plus grands comptent les secondes au lieu des respirations et vérifient : le bocal devient-il clair plus vite si l’on respire ? (Non – le bocal a seulement besoin de calme. La respiration aide la personne à côté.)",
+    "gruppe": "En groupe : un bocal par duo ; un enfant secoue et essaie un chemin, l’autre compte les respirations, puis on échange. Les résultats des trois chemins vont au tableau.",
+    "beobachten": [
+     "L’enfant comprend : remuer garde l’eau trouble, le calme la rend claire.",
+     "Il expire au moins trois fois nettement plus longtemps qu’il n’inspire.",
+     "Il nomme un endroit du corps qui s’est calmé."
+    ],
+    "warum": "Respirer lentement avec une longue expiration renforce la partie apaisante du système nerveux et diminue la tension (Zaccaro et al., 2018) ; le bocal trouble rend concret le fait que l’agitation se dépose quand on ne l’attise plus."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-truebes-glas-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Was heißt das für uns? Wann brauche ich eine Glas-Pause?",
+  "text": "Die Fachkraft fragt, wann es bei Kindern im Alltag im Kopf so trüb wird wie im Glas, und sammelt mit dem Kind zwei, drei Momente, etwa im vollen Bus, vor einem Diktat oder wenn es in der Pause sehr laut ist. Das Kind wählt einen Moment und probiert die Glas-Pause dafür im Sitzen: Hände still, drei lange Ausatmer, dabei an das klare Glas denken. Danach malt es sein Glas – unten den Sand, oben klar – und sagt oder schreibt dazu, wann es die Glas-Pause ausprobieren will. Wenn es mag, nimmt es die Zeichnung als Erinnerung mit.",
+  "sagen": [
+   "Wann wird es bei Kindern in deinem Alter im Kopf so trüb wie im Glas?",
+   "Such dir einen Moment aus. Wir probieren die Glas-Pause gleich dafür.",
+   "Wann willst du deine Glas-Pause ausprobieren?"
+  ],
+  "wennEsKippt": "Fällt dem Kind kein Moment ein, bietet die Fachkraft drei an (voller Bus, laute Pause, Streit beim Spiel), und das Kind zeigt auf einen. Mag es nicht malen, reicht es, den Moment und die Glas-Pause einmal laut zu sagen.",
+  "kurz": "Trübe Momente sammeln · Glas-Pause üben · Glas malen",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 8
+  },
+  "thema": [
+   "angst",
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "K-16",
+    "gewicht": 1
+   },
+   {
+    "code": "V-25",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "atmen",
+   "malen"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "papier",
+   "buntstifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Et pour nous ? Quand ai-je besoin d’une pause-bocal ?",
+   "text": "L’adulte demande quand, au quotidien, ça devient aussi trouble dans la tête des enfants que dans le bocal, et rassemble avec l’enfant deux ou trois moments, par exemple dans un bus bondé, avant une dictée ou quand la pause est très bruyante. L’enfant choisit un moment et essaie la pause-bocal pour ce moment, assis : mains calmes, trois longues expirations, en pensant au bocal redevenu clair. Ensuite, il dessine son bocal – le sable en bas, l’eau claire en haut – et dit ou écrit quand il veut essayer sa pause-bocal. S’il le souhaite, il emporte son dessin pour s’en souvenir.",
+   "sagen": [
+    "Quand est-ce que ça devient aussi trouble dans la tête des enfants de ton âge que dans le bocal ?",
+    "Choisis un moment. On essaie tout de suite la pause-bocal pour ce moment-là.",
+    "Quand veux-tu essayer ta pause-bocal ?"
+   ],
+   "wennEsKippt": "Si aucun moment ne vient, l’adulte en propose trois (bus bondé, pause bruyante, dispute pendant un jeu) et l’enfant en montre un. S’il ne veut pas dessiner, il suffit de dire une fois à voix haute le moment et la pause-bocal.",
+   "kurz": "Trouver les moments troubles · pause-bocal · dessiner le bocal"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Das Kind sucht die trüben Momente in seinem Alltag – und probiert gleich, wie es sie klar bekommt.",
+    "leichter": "Die Fachkraft malt das Glas vor, das Kind malt nur den Sand und einen Moment dazu.",
+    "gruppe": "Mit mehreren: Die Momente werden gemeinsam gesammelt, ohne Namen; dann macht die Gruppe die Glas-Pause zusammen, und jedes Kind malt sein eigenes Glas.",
+    "beobachten": [
+     "Das Kind nennt mindestens einen Alltagsmoment, in dem es im Kopf trüb wird.",
+     "Es macht die Glas-Pause mit drei langen Ausatmern ohne Hilfe.",
+     "Es sagt, wann es die Glas-Pause ausprobieren will."
+    ]
+   },
+   "fr": {
+    "haken": "L’enfant cherche les moments troubles de son quotidien – et essaie tout de suite de les rendre clairs.",
+    "leichter": "L’adulte dessine le bocal, l’enfant ajoute seulement le sable et un moment.",
+    "gruppe": "En groupe : on rassemble les moments ensemble, sans noms ; puis le groupe fait la pause-bocal ensemble, et chaque enfant dessine son propre bocal.",
+    "beobachten": [
+     "L’enfant nomme au moins un moment du quotidien où sa tête devient trouble.",
+     "Il fait la pause-bocal avec trois longues expirations sans aide.",
+     "Il dit quand il veut essayer la pause-bocal."
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:exp-runterfahren-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Forscherfrage: Was fährt den Körper am schnellsten runter?",
+  "text": "Die Fachkraft zeigt dem oder der Jugendlichen, wie man den Puls am Handgelenk findet (zwei Finger auf der Daumenseite), und er oder sie misst 15 Sekunden in Ruhe; mal vier ergibt den Ruhepuls pro Minute. Dann fragt sie, was er oder sie sonst tut, um nach einem Spiel, vor einem Vortrag oder nach einem Streit runterzukommen, und schreibt die Ideen auf. Daraus wählt der oder die Jugendliche drei Methoden für einen Test, etwa lange ausatmen, aufs Handy schauen, einfach sitzen. Die Forscherfrage lautet: „Welche Methode bringt meinen Puls nach einer Belastung am schnellsten zurück?“ Er oder sie tippt auf eine Siegerin.",
+  "sagen": [
+   "Zwei Finger hierhin, auf die Daumenseite. Spürst du ihn? Ich sage los.",
+   "Was machst du, wenn du richtig aufgedreht bist und runterkommen willst?",
+   "Drei Methoden, ein Test. Welche bringt deinen Puls am schnellsten runter – was tippst du?"
+  ],
+  "wennEsKippt": "Findet der oder die Jugendliche den Puls am Handgelenk nicht, geht es mit der flachen Hand auf der Brust. Fallen keine Methoden ein, schlägt die Fachkraft drei vor: lange ausatmen, kaltes Wasser über die Handgelenke, nur sitzen.",
+  "kurz": "Ruhepuls messen · eigene Methoden sammeln · drei wählen, tippen",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 6
+  },
+  "thema": [
+   "angst",
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "V-25",
+    "gewicht": 1
+   },
+   {
+    "code": "V-29",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 10,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "gespraech"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "uhr",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "La question : qu’est-ce qui fait redescendre le corps le plus vite ?",
+   "text": "L’adulte montre au ou à la jeune comment trouver le pouls au poignet (deux doigts du côté du pouce), et il ou elle mesure 15 secondes au repos ; fois quatre, cela donne le pouls de repos par minute. Puis l’adulte demande ce que le ou la jeune fait d’habitude pour redescendre après un match, avant un exposé ou après une dispute, et note les idées. Le ou la jeune en choisit trois pour un test, par exemple expirer longuement, regarder son téléphone, rester simplement assis. La question de recherche : « Quelle méthode ramène le plus vite mon pouls à la normale après un effort ? » Il ou elle parie sur la gagnante.",
+   "sagen": [
+    "Deux doigts ici, du côté du pouce. Tu le sens ? Je dis top.",
+    "Qu’est-ce que tu fais quand tu es vraiment à fond et que tu veux redescendre ?",
+    "Trois méthodes, un test. Laquelle fait redescendre ton pouls le plus vite – tu paries sur quoi ?"
+   ],
+   "wennEsKippt": "Si le ou la jeune ne trouve pas le pouls au poignet, la main à plat sur la poitrine marche aussi. Si aucune méthode ne vient, l’adulte en propose trois : expirer longuement, eau froide sur les poignets, rester assis.",
+   "kurz": "Pouls de repos · rassembler ses méthodes · en choisir trois, parier"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Selbstversuch wie im Sportlabor: Der eigene Körper ist das Messgerät.",
+    "vorbereitung": [
+     "Uhr oder Handy mit Sekundenanzeige",
+     "Papier für Ideen und Ruhepuls"
+    ],
+    "beobachten": [
+     "Der oder die Jugendliche findet den eigenen Puls und misst 15 Sekunden.",
+     "Er oder sie nennt eigene Methoden, um runterzukommen."
+    ],
+    "gruppe": "Mit mehreren: Alle messen gleichzeitig ihren Ruhepuls; die Ideen werden an der Tafel gesammelt, und jede Person wählt drei Methoden."
+   },
+   "fr": {
+    "haken": "Une auto-expérience comme dans un labo sportif : son propre corps est l’appareil de mesure.",
+    "vorbereitung": [
+     "Montre ou téléphone avec les secondes",
+     "Papier pour les idées et le pouls de repos"
+    ],
+    "beobachten": [
+     "Le ou la jeune trouve son pouls et le mesure pendant 15 secondes.",
+     "Il ou elle cite ses propres méthodes pour redescendre."
+    ],
+    "gruppe": "En groupe : tout le groupe mesure son pouls de repos en même temps ; les idées sont rassemblées au tableau et chaque personne choisit trois méthodes."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-runterfahren-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Versuch: Der Runterfahr-Test",
+  "text": "Für jede der drei Methoden läuft dieselbe Runde: 30 Sekunden zügig auf der Stelle laufen oder Kniebeugen, sofort 15 Sekunden Puls messen, eine Minute die Methode anwenden, wieder 15 Sekunden messen. Der oder die Jugendliche trägt beide Werte in eine kleine Tabelle ein und rechnet aus, um wie viele Schläge der Puls gefallen ist. Bei der Methode „lange ausatmen“ zählt die Fachkraft leise vor: vier ein, sechs aus. Nach drei Runden vergleichen beide die Unterschiede und besprechen ehrlich, was das Ergebnis taugt: Eine einzelne Messung ist noch kein Beweis, Reihenfolge und Zählfehler spielen mit. Zum Schluss wählt der oder die Jugendliche die Methode, die er oder sie im Alltag nutzen will – auch dann, wenn es nicht die Siegerin des Tests ist.",
+  "sagen": [
+   "Gleiche Runde für jede Methode: 30 Sekunden Gas geben, dann sofort messen.",
+   "Jetzt eine Minute deine Methode. Ich sage dir, wann die Minute um ist.",
+   "Um wie viele Schläge ist dein Puls gefallen? Trag es ein.",
+   "Würdest du dem Ergebnis nach einer einzigen Messung schon glauben?"
+  ],
+  "wennEsKippt": "Ist Rechnen lästig, reicht der Vergleich der beiden 15-Sekunden-Zahlen. Mag sich der oder die Jugendliche nicht bewegen, ist die Belastung eine knifflige Kopfrechenaufgabe von 30 Sekunden – auch das hebt den Puls oft ein wenig.",
+  "kurz": "Je Methode: 30 s Belastung · messen · 1 Min. Methode · messen",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 18
+  },
+  "thema": [
+   "angst",
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "V-25",
+    "gewicht": 1
+   },
+   {
+    "code": "V-29",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 10,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "experiment",
+   "bewegung",
+   "atmen"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "uhr",
+   "papier",
+   "stifte",
+   "karten"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Meine Runterfahr-Methode: eine Minute, selbst getestet",
+   "fr": "Ma méthode pour redescendre : une minute, testée par moi"
+  },
+  "achtung": "Wer Herz- oder Atembeschwerden hat oder sich unwohl fühlt, macht statt Laufen oder Kniebeugen Armkreisen im Sitzen. Es gibt keinen Wettbewerb um den höchsten Puls. Beim Atmen nichts erzwingen; wird jemandem schwindelig, normal weiteratmen und sitzen bleiben.",
+  "vorbereitung": "Uhr mit Sekunden; Tabelle mit vier Spalten: Methode – Puls nach Belastung – Puls nach einer Minute – Unterschied; freier Platz zum Laufen auf der Stelle.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "L’expérience : le test pour redescendre",
+   "text": "Pour les trois méthodes, le tour est le même : 30 secondes de course rapide sur place ou de flexions, mesurer tout de suite le pouls pendant 15 secondes, appliquer la méthode une minute, mesurer de nouveau 15 secondes. Le ou la jeune inscrit les deux valeurs dans un petit tableau et calcule de combien de battements le pouls a baissé. Pour la méthode « expirer longuement », l’adulte compte doucement : quatre pour inspirer, six pour expirer. Après trois tours, tous deux regardent les différences et discutent honnêtement de ce que vaut le résultat : une seule mesure n’est pas une preuve, l’ordre des tours et les erreurs de comptage jouent aussi. Pour finir, le ou la jeune choisit la méthode qu’il ou elle veut utiliser au quotidien – même si ce n’est pas la gagnante du test.",
+   "sagen": [
+    "Le même tour pour les trois méthodes : 30 secondes à fond, puis on mesure tout de suite.",
+    "Maintenant, une minute de ta méthode. Je te dis quand la minute est finie.",
+    "De combien de battements ton pouls a-t-il baissé ? Note-le.",
+    "Tu croirais déjà ce résultat après une seule mesure ?"
+   ],
+   "wennEsKippt": "Si calculer agace, il suffit de comparer les deux nombres sur 15 secondes. Si le ou la jeune ne veut pas bouger, l’effort devient un calcul mental difficile de 30 secondes – cela fait souvent monter un peu le pouls aussi.",
+   "kurz": "Par méthode : 30 s d’effort · mesurer · 1 min de méthode · mesurer",
+   "achtung": "En cas de problèmes de cœur ou de respiration, ou de malaise, faire des moulinets de bras assis au lieu de courir ou de faire des flexions. Pas de compétition pour le pouls le plus haut. Ne rien forcer en respirant ; en cas de vertige, respirer normalement et rester assis.",
+   "vorbereitung": "Montre avec les secondes ; tableau à quatre colonnes : méthode – pouls après l’effort – pouls après une minute – différence ; un espace libre pour courir sur place."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Selbstversuch wie im Sportlabor: Welche Methode holt den eigenen Puls am schnellsten zurück – und stimmt das mit dem eigenen Tipp überein?",
+    "vorbereitung": [
+     "Uhr oder Handy mit Sekundenanzeige",
+     "Tabelle: Methode – Puls nach Belastung – Puls nach 1 Minute – Unterschied",
+     "Freier Platz für 30 Sekunden Laufen auf der Stelle",
+     "Methodenkarten ausdrucken (siehe Karten)",
+     "Ein Glas Wasser bereitstellen"
+    ],
+    "aufbau": "Am Tisch liegen Tabelle und Uhr, daneben ist ein freier Platz. Der oder die Jugendliche bestimmt die Reihenfolge der Methoden selbst.",
+    "karten": [
+     {
+      "titel": "Methoden zum Testen",
+      "karten": [
+       "Lange ausatmen: vier ein, sechs aus",
+       "Einfach sitzen und nichts tun",
+       "Aufs Handy schauen",
+       "Kaltes Wasser über die Handgelenke",
+       "Langsam ein Glas Wasser trinken",
+       "Fünf blaue Dinge im Raum suchen",
+       "Schultern hochziehen und fallen lassen",
+       "Ein ruhiges Lied hören",
+       "Mit der Faust einen weichen Ball drücken und loslassen",
+       "Die Füße fest in den Boden drücken und spüren"
+      ]
+     }
+    ],
+    "leichter": "Nur zwei Methoden testen (lange ausatmen gegen einfach sitzen); die Fachkraft rechnet und trägt ein.",
+    "schwerer": "Jede Methode zweimal in anderer Reihenfolge testen und den Mittelwert bilden. Dazu überlegen: Was müsste man ändern, damit der Test fair ist (gleiche Belastung, gleiche Zeit, Pause zwischen den Runden)?",
+    "gruppe": "Mit mehreren: Jede Person testet eine andere Methode mit derselben Belastung; alle Ergebnisse kommen in eine gemeinsame Tabelle. Je mehr Messungen, desto verlässlicher – ein guter Moment, über Stichproben zu sprechen.",
+    "beobachten": [
+     "Der oder die Jugendliche misst sorgfältig und hält sich an den Ablauf.",
+     "Er oder sie wendet mindestens eine Methode eine volle Minute ruhig an.",
+     "Er oder sie wählt begründet eine Methode für den Alltag."
+    ],
+    "warum": "Langsames Atmen mit langem Ausatmen stärkt die beruhigende Seite des Nervensystems (Zaccaro et al., 2018); wer im Selbstversuch erlebt, dass er den eigenen Körper beeinflussen kann, setzt die Methode eher in echten Stressmomenten ein (Selbstwirksamkeit, Bandura, 1997).",
+    "links": [
+     {
+      "titel": "Kanner-Jugendtelefon 116 111: reden, wenn Stress zu viel wird",
+      "url": "https://www.kjt.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "Une auto-expérience comme dans un labo sportif : quelle méthode ramène le plus vite son propre pouls – et est-ce que ça correspond à son pari ?",
+    "vorbereitung": [
+     "Montre ou téléphone avec les secondes",
+     "Tableau : méthode – pouls après l’effort – pouls après 1 minute – différence",
+     "Un espace libre pour 30 secondes de course sur place",
+     "Imprimer les cartes-méthodes (voir cartes)",
+     "Prévoir un verre d’eau"
+    ],
+    "aufbau": "Sur la table, le tableau et la montre ; à côté, un espace libre. Le ou la jeune décide lui-même ou elle-même de l’ordre des méthodes.",
+    "karten": [
+     {
+      "titel": "Méthodes à tester",
+      "karten": [
+       "Expirer longuement : quatre pour inspirer, six pour expirer",
+       "Rester assis sans rien faire",
+       "Regarder son téléphone",
+       "Eau froide sur les poignets",
+       "Boire lentement un verre d’eau",
+       "Chercher cinq objets bleus dans la pièce",
+       "Monter les épaules et les laisser tomber",
+       "Écouter une chanson calme",
+       "Serrer une balle molle dans le poing, puis relâcher",
+       "Appuyer fort les pieds dans le sol et les sentir"
+      ]
+     }
+    ],
+    "leichter": "Tester seulement deux méthodes (expirer longuement contre rester assis) ; l’adulte calcule et note.",
+    "schwerer": "Tester chaque méthode deux fois dans un autre ordre et calculer la moyenne. Réfléchir aussi : que faudrait-il changer pour que le test soit juste (même effort, même durée, pause entre les tours) ?",
+    "gruppe": "En groupe : chaque personne teste une autre méthode avec le même effort ; tous les résultats vont dans un tableau commun. Plus il y a de mesures, plus c’est fiable – un bon moment pour parler d’échantillons.",
+    "beobachten": [
+     "Le ou la jeune mesure avec soin et respecte le déroulement.",
+     "Il ou elle applique au moins une méthode calmement pendant une minute entière.",
+     "Il ou elle choisit une méthode pour le quotidien et explique pourquoi."
+    ],
+    "warum": "Respirer lentement avec une longue expiration renforce le côté apaisant du système nerveux (Zaccaro et al., 2018) ; qui constate dans une auto-expérience qu’il peut influencer son corps utilise plus volontiers la méthode dans de vrais moments de stress (sentiment d’efficacité personnelle, Bandura, 1997).",
+    "links": [
+     {
+      "titel": "Kanner-Jugendtelefon 116 111 : parler quand le stress devient trop lourd",
+      "url": "https://www.kjt.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:exp-runterfahren-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Was heißt das für uns? Herzklopfen ist Energie",
+  "text": "Die Fachkraft fragt, wo der Puls des oder der Jugendlichen im echten Leben hochgeht, etwa vor einem Vortrag, beim Elfmeter oder vor einem schwierigen Gespräch. Sie erzählt kurz von einer Studie: Wer Herzklopfen vor einer Aufgabe als Energie deutet („mein Körper macht sich bereit“) statt als Gefahr, bei dem arbeitet das Herz-Kreislauf-System günstiger (Jamieson et al., 2012). Der oder die Jugendliche baut für eine eigene Situation einen Plan aus zwei Teilen: einen Satz zum Umdeuten und die getestete Runterfahr-Methode. Zum Schluss sagt er oder sie den Plan einmal laut, als würde der Moment gleich beginnen.",
+  "sagen": [
+   "Wo geht dein Puls im echten Leben hoch?",
+   "Vor einem Vortrag klopft dein Herz, weil dein Körper Energie bereitstellt – nicht, weil etwas kaputt ist.",
+   "Dein Plan: Welcher Satz, welche Methode?"
+  ],
+  "wennEsKippt": "Fällt keine eigene Situation ein, nimmt der oder die Jugendliche eine erfundene: Jana soll beim Schulfest ihr Lied singen. Wer nicht laut sprechen mag, schreibt den Plan nur auf.",
+  "kurz": "Eigene Puls-Momente · Herzklopfen = Energie · Plan: Satz und Methode",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 8
+  },
+  "thema": [
+   "angst",
+   "gefuehle"
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "eldib": [
+   {
+    "code": "V-25",
+    "gewicht": 1
+   },
+   {
+    "code": "V-29",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 10,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "gespraech",
+   "plan"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Et pour nous ? Le cœur qui bat, c’est de l’énergie",
+   "text": "L’adulte demande où le pouls du ou de la jeune monte dans la vraie vie, par exemple avant un exposé, au moment d’un penalty ou avant une conversation difficile. L’adulte parle brièvement d’une étude : chez les personnes qui voient le cœur qui bat avant une tâche comme de l’énergie (« mon corps se prépare ») plutôt que comme un danger, le système cardiovasculaire réagit de façon plus favorable (Jamieson et al., 2012). Le ou la jeune construit, pour une situation à soi, un plan en deux parties : une phrase pour voir les choses autrement et la méthode testée pour redescendre. Pour finir, il ou elle dit le plan une fois à voix haute, comme si le moment allait commencer.",
+   "sagen": [
+    "Où ton pouls monte-t-il dans la vraie vie ?",
+    "Avant un exposé, ton cœur bat fort parce que ton corps prépare de l’énergie – pas parce que quelque chose ne va pas.",
+    "Ton plan : quelle phrase, quelle méthode ?"
+   ],
+   "wennEsKippt": "Si aucune situation personnelle ne vient, le ou la jeune en prend une inventée : Jana doit chanter sa chanson à la fête de l’école. Sans envie de parler à voix haute, il ou elle écrit seulement le plan.",
+   "kurz": "Ses moments de pouls · cœur qui bat = énergie · phrase + méthode"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Was, wenn das Herzklopfen vor dem Elfmeter gar kein Feind ist?",
+    "gruppe": "Mit mehreren: Die Situationen werden anonym auf Zettel geschrieben und gemischt; jede Person baut einen Plan für einen fremden Zettel und stellt ihn vor.",
+    "beobachten": [
+     "Der oder die Jugendliche nennt eine eigene Situation mit hohem Puls.",
+     "Er oder sie formuliert einen Satz zum Umdeuten in eigenen Worten.",
+     "Er oder sie verbindet den Satz mit der getesteten Methode zu einem Plan."
+    ],
+    "warum": "Wer Erregung vor einer Aufgabe als Energie statt als Gefahr deutet, zeigt eine günstigere Herz-Kreislauf-Reaktion (Jamieson et al., 2012); zusammen mit einer erprobten Beruhigungsmethode entsteht ein Plan, der im Ernstfall abrufbar ist.",
+    "links": [
+     {
+      "titel": "Kanner-Jugendtelefon 116 111: reden, wenn Stress zu viel wird",
+      "url": "https://www.kjt.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "Et si le cœur qui bat avant un penalty n’était pas un ennemi ?",
+    "gruppe": "En groupe : les situations sont écrites anonymement sur des papiers et mélangées ; chaque personne construit un plan pour le papier de quelqu’un d’autre et le présente.",
+    "beobachten": [
+     "Le ou la jeune nomme une situation personnelle où le pouls monte.",
+     "Il ou elle formule avec ses mots une phrase pour voir les choses autrement.",
+     "Il ou elle relie cette phrase à la méthode testée pour en faire un plan."
+    ],
+    "warum": "Voir l’activation avant une tâche comme de l’énergie plutôt que comme un danger s’accompagne d’une réaction cardiovasculaire plus favorable (Jamieson et al., 2012) ; avec une méthode d’apaisement testée, cela donne un plan utilisable le moment venu.",
+    "links": [
+     {
+      "titel": "Kanner-Jugendtelefon 116 111 : parler quand le stress devient trop lourd",
+      "url": "https://www.kjt.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:exp-becher-telefon-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Forscherfrage: Kann man über einen Faden reden?",
+  "text": "Auf dem Tisch liegen zwei Becher, die mit einem langen Faden verbunden sind. Die Fachkraft gibt dem Kind einen Becher ans Ohr, flüstert in den anderen, während der Faden locker durchhängt, und fragt, ob etwas ankommt. Dann stellt sie die Forscherfrage: „Wann trägt der Faden unsere Stimme – und was müssen wir beide dafür tun?“ Das Kind vermutet, und die Fachkraft schreibt die Vermutung auf. Sie sagt dazu: „Dieses Telefon klappt nur, wenn wir zusammenarbeiten – mal sehen, wie.“",
+  "sagen": [
+   "Halt den Becher ans Ohr. Ich sage etwas … Kam etwas an?",
+   "Unsere Forscherfrage: Wann trägt der Faden die Stimme? Was glaubst du?",
+   "Allein geht das nicht. Das finden wir nur zusammen heraus."
+  ],
+  "wennEsKippt": "Will das Kind den Becher nicht ans Ohr halten, darf es zuerst hineinsprechen, und die Fachkraft hört. Ist es sehr unruhig, hält es den Becher und hebt nur die Hand, wenn es etwas hört.",
+  "kurz": "Becher-Telefon mit lockerem Faden · Forscherfrage · Vermutung",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 6
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-18",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 1
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "spiel"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "becher",
+   "alltagsdinge",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "La question : peut-on parler à travers un fil ?",
+   "text": "Sur la table, il y a deux gobelets reliés par un long fil. L’adulte donne à l’enfant un gobelet à mettre contre l’oreille, chuchote dans l’autre pendant que le fil pend mollement, et demande si quelque chose arrive. Puis l’adulte pose la question de recherche : « Quand est-ce que le fil transporte notre voix – et qu’est-ce que nous devons faire tous les deux pour ça ? » L’enfant fait une hypothèse, et l’adulte la note. L’adulte ajoute : « Ce téléphone ne marche que si on travaille ensemble – voyons comment. »",
+   "sagen": [
+    "Mets le gobelet contre ton oreille. Je dis quelque chose … Ça arrive ?",
+    "Notre question : quand est-ce que le fil transporte la voix ? Qu’en penses-tu ?",
+    "Tout seul, ça ne marche pas. On ne peut le découvrir qu’ensemble."
+   ],
+   "wennEsKippt": "Si l’enfant ne veut pas mettre le gobelet contre son oreille, il peut d’abord parler dedans et l’adulte écoute. S’il est très agité, il tient le gobelet et lève seulement la main quand il entend quelque chose.",
+   "kurz": "Téléphone à gobelets, fil mou · question · hypothèse"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Telefon ohne Strom und ohne Akku – aus zwei Bechern und einem Faden.",
+    "vorbereitung": [
+     "Becher-Telefon vorher bauen und einmal testen (siehe Kern)",
+     "Papier und Stift für die Vermutung"
+    ],
+    "beobachten": [
+     "Das Kind stellt eine Vermutung auf, wann der Faden die Stimme trägt.",
+     "Es zeigt Interesse, es gemeinsam herauszufinden."
+    ],
+    "gruppe": "Mit mehreren: Zwei Kinder probieren das Telefon vor der Gruppe mit lockerem Faden; die anderen sammeln Vermutungen, was man ändern muss."
+   },
+   "fr": {
+    "haken": "Un téléphone sans électricité ni batterie – avec deux gobelets et un fil.",
+    "vorbereitung": [
+     "Fabriquer le téléphone à l’avance et le tester une fois (voir cœur de séance)",
+     "Papier et crayon pour l’hypothèse"
+    ],
+    "beobachten": [
+     "L’enfant fait une hypothèse sur le moment où le fil transporte la voix.",
+     "Il montre de l’intérêt pour le découvrir à deux."
+    ],
+    "gruppe": "En groupe : deux enfants essaient le téléphone devant le groupe avec le fil mou ; les autres rassemblent des hypothèses sur ce qu’il faut changer."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-becher-telefon-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Versuch: Das Becher-Telefon",
+  "text": "Fachkraft und Kind gehen mit ihren Bechern auseinander, bis der Faden gespannt ist, und testen nacheinander: Faden gespannt, Faden locker, Faden mit einem Finger berührt, beide sprechen gleichzeitig. Nach jedem Test sagt das Kind, was ankam, und die Fachkraft hält das Ergebnis mit Plus oder Minus fest. Weil das Telefon nur zu zweit klappt, treffen beide Absprachen: Wer spricht, wer hört, wie zeigen wir „du bist dran“ (zum Beispiel zweimal am Faden zupfen), und wie fest ziehen wir? Dann schicken sie sich abwechselnd Geheimbotschaften aus drei Wörtern, etwa „Bus – Banane – Mond“, und wer hört, sagt sie zurück. Zum Schluss nennt das Kind die Absprache, die am meisten geholfen hat.",
+  "sagen": [
+   "Wir gehen rückwärts, bis der Faden gerade ist. Nicht zu fest – sonst rutscht dir der Becher weg.",
+   "Test: Ich lege einen Finger auf den Faden. Hörst du mich noch?",
+   "Wie zeigen wir uns, wer dran ist? Erfinde ein Zeichen.",
+   "Geheimbotschaft: drei Wörter. Sag sie mir zurück."
+  ],
+  "wennEsKippt": "Zerrt das Kind am Faden, bekommt es die Aufgabe, ihn „so gerade wie ein Lineal“ zu halten, und die Fachkraft lobt jedes gute Halten. Klappt das Hören nicht, wird der Faden kürzer gemacht oder ein Becher mit festerem Boden genommen.",
+  "kurz": "4 Tests am Faden · Absprachen treffen · Geheimbotschaften",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 10,
+   "max": 16
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-18",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 1
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "experiment",
+   "spiel",
+   "sinne"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "becher",
+   "alltagsdinge",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Absprechen – abwechseln – aufeinander achten",
+   "fr": "Se mettre d’accord – alterner – faire attention à l’autre"
+  },
+  "achtung": "Das Loch in den Becherboden sticht die Fachkraft vorher mit einem Bleistift oder einer Schere. Den Faden nie um Hals oder Finger wickeln. Genug Platz lassen, damit beim Rückwärtsgehen niemand stolpert.",
+  "vorbereitung": "Becher-Telefon bauen: zwei Pappbecher, je ein Loch im Boden, 3 bis 5 m Schnur durchziehen und innen an einer Büroklammer verknoten; einmal testen.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "L’expérience : le téléphone à gobelets",
+   "text": "L’adulte et l’enfant s’éloignent avec leurs gobelets jusqu’à ce que le fil soit tendu, puis testent l’un après l’autre : fil tendu, fil mou, fil touché avec un doigt, les deux qui parlent en même temps. Après chaque test, l’enfant dit ce qui est arrivé, et l’adulte note le résultat avec un plus ou un moins. Comme le téléphone ne marche qu’à deux, ils se mettent d’accord : qui parle, qui écoute, comment montrer « c’est à toi » (par exemple tirer deux fois sur le fil), et à quel point tirer ? Ensuite, ils s’envoient en alternance des messages secrets de trois mots, par exemple « bus – banane – lune », et celui qui écoute les répète. Pour finir, l’enfant dit quel accord a le plus aidé.",
+   "sagen": [
+    "On recule jusqu’à ce que le fil soit droit. Pas trop fort – sinon le gobelet t’échappe.",
+    "Test : je pose un doigt sur le fil. Tu m’entends encore ?",
+    "Comment on se montre qui a la parole ? Invente un signe.",
+    "Message secret : trois mots. Répète-les-moi."
+   ],
+   "wennEsKippt": "Si l’enfant tire trop sur le fil, il reçoit la tâche de le garder « droit comme une règle », et l’adulte le félicite chaque fois qu’il le tient bien. Si on n’entend rien, on raccourcit le fil ou on prend un gobelet au fond plus rigide.",
+   "kurz": "4 tests sur le fil · se mettre d’accord · messages secrets",
+   "achtung": "L’adulte perce à l’avance le fond des gobelets avec un crayon ou des ciseaux. Ne jamais enrouler le fil autour du cou ou des doigts. Laisser assez de place pour que personne ne trébuche en reculant.",
+   "vorbereitung": "Fabriquer le téléphone : deux gobelets en carton, un trou dans chaque fond, 3 à 5 m de ficelle passée dedans et nouée à l’intérieur autour d’un trombone ; le tester une fois."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Telefon ohne Strom – aber nur, wenn zwei Menschen richtig zusammenarbeiten.",
+    "vorbereitung": [
+     "Zwei Pappbecher, in jeden Boden ein kleines Loch (Bleistift)",
+     "3–5 m Schnur (Paketschnur oder Nähgarn) durchziehen",
+     "Innen an je einer Büroklammer verknoten",
+     "Einmal vorher testen",
+     "Papier für Plus und Minus"
+    ],
+    "aufbau": "Ein Flur oder eine freie Raumseite von mindestens drei Metern. Die Ergebnistabelle liegt auf dem Tisch: gespannt – locker – Finger – gleichzeitig.",
+    "karten": [
+     {
+      "titel": "Geheimbotschaften",
+      "karten": [
+       "Bus – Banane – Mond",
+       "Katze – Regen – Schuh",
+       "Pizza – Ball – Stern",
+       "Zug – Apfel – Hut",
+       "Moien – Merci – Äddi",
+       "Drache – Kuchen – Fenster",
+       "Fisch – Lampe – Tor",
+       "Bonjour – Hallo – Hello",
+       "Igel – Trampolin – Schokolade",
+       "Rakete – Socke – Blitz"
+      ]
+     }
+    ],
+    "leichter": "Nur zwei Tests (gespannt und locker) und Botschaften aus einem Wort. Das Zeichen für „du bist dran“ gibt die Fachkraft vor.",
+    "schwerer": "Weitere Tests erfinden: längerer Faden, Faden um eine Stuhlecke geführt, nasser Faden. Ältere erklären in eigenen Worten, warum nur der gespannte Faden die Stimme trägt (er schwingt mit).",
+    "gruppe": "Mit mehreren: Paare mit je einem Telefon. Zwei Telefone lassen sich über Kreuz verbinden (die Fäden in der Mitte verknoten) – dann müssen sich vier Kinder absprechen, wer spricht.",
+    "beobachten": [
+     "Das Kind hält den Faden gespannt, ohne zu zerren, und passt sich an die Fachkraft an.",
+     "Es hält sich an das vereinbarte Zeichen und wartet, bis es dran ist.",
+     "Es nennt eine Absprache, die geholfen hat."
+    ],
+    "warum": "Aufgaben, die nur gemeinsam gelingen (positive Abhängigkeit), fördern Absprachen, Abwechseln und Hilfsbereitschaft stärker als Einzelarbeit (Johnson & Johnson, 2009); der Faden macht sofort hörbar, ob die Zusammenarbeit klappt."
+   },
+   "fr": {
+    "haken": "Un téléphone sans électricité – qui ne marche que si deux personnes travaillent vraiment ensemble.",
+    "vorbereitung": [
+     "Deux gobelets en carton, un petit trou dans chaque fond (crayon)",
+     "Y passer 3 à 5 m de ficelle (ficelle à colis ou fil à coudre)",
+     "Nouer à l’intérieur autour d’un trombone de chaque côté",
+     "Tester une fois avant",
+     "Papier pour les plus et les moins"
+    ],
+    "aufbau": "Un couloir ou un côté libre de la pièce d’au moins trois mètres. Le tableau des résultats est sur la table : tendu – mou – doigt – en même temps.",
+    "karten": [
+     {
+      "titel": "Messages secrets",
+      "karten": [
+       "bus – banane – lune",
+       "chat – pluie – chaussure",
+       "pizza – ballon – étoile",
+       "train – pomme – chapeau",
+       "Moien – Merci – Äddi",
+       "dragon – gâteau – fenêtre",
+       "poisson – lampe – but",
+       "Bonjour – Hallo – Hello",
+       "hérisson – trampoline – chocolat",
+       "fusée – chaussette – éclair"
+      ]
+     }
+    ],
+    "leichter": "Seulement deux tests (tendu et mou) et des messages d’un seul mot. L’adulte propose le signe pour « c’est à toi ».",
+    "schwerer": "Inventer d’autres tests : fil plus long, fil passant autour d’un coin de chaise, fil mouillé. Les plus grands expliquent avec leurs mots pourquoi seul le fil tendu transporte la voix (il vibre).",
+    "gruppe": "En groupe : un téléphone par duo. Deux téléphones peuvent être reliés en croix (nouer les fils au milieu) – quatre enfants doivent alors se mettre d’accord sur qui parle.",
+    "beobachten": [
+     "L’enfant garde le fil tendu sans tirer et s’adapte à l’adulte.",
+     "Il respecte le signe convenu et attend que ce soit à lui.",
+     "Il nomme un accord qui a aidé."
+    ],
+    "warum": "Les tâches qui ne réussissent qu’ensemble (interdépendance positive) favorisent les accords, l’alternance et l’entraide plus que le travail seul (Johnson & Johnson, 2009) ; le fil fait entendre tout de suite si la collaboration marche."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-becher-telefon-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Was heißt das für uns? Unsere Zusammenarbeits-Regel",
+  "text": "Die Fachkraft legt die Becher beiseite und fragt, was das Telefon über Zusammenarbeit verraten hat: Was passierte, wenn einer zu fest zog oder beide gleichzeitig redeten? Gemeinsam übertragen sie die Absprachen auf andere Gelegenheiten, etwa beim Bauen mit einem Freund oder beim Fangenspielen in der Pause: abwechseln, ein Zeichen ausmachen, auf den anderen achten. Das Kind wählt eine Regel, die es beim nächsten gemeinsamen Spiel ausprobieren will, und malt dazu zwei Becher mit Faden. Zum Schluss schicken sich beide über das Telefon eine letzte Botschaft: ein Lob für die Zusammenarbeit.",
+  "sagen": [
+   "Was ist passiert, wenn einer zu fest gezogen hat?",
+   "Wo brauchst du so eine Absprache noch – beim Bauen, beim Fußball, beim Spielen?",
+   "Letzte Botschaft durchs Telefon: Was hat gut geklappt?"
+  ],
+  "wennEsKippt": "Fällt dem Kind keine Regel ein, wählt es aus drei Zeichen, die die Fachkraft malt: zwei Becher (abwechseln), eine Hand (Zeichen ausmachen), ein Auge (auf den anderen achten). Mag es nicht malen, sagt es die Regel nur durchs Telefon.",
+  "kurz": "Was hat das Telefon gezeigt? · eigene Regel · Lob durchs Telefon",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 8
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-18",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 1
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "gespraech",
+   "malen"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "becher",
+   "papier",
+   "buntstifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Et pour nous ? Notre règle pour travailler ensemble",
+   "text": "L’adulte pose les gobelets de côté et demande ce que le téléphone a révélé sur le travail à deux : que s’est-il passé quand l’un tirait trop fort ou quand on parlait en même temps ? Ensemble, ils transposent les accords à d’autres moments, par exemple construire avec un copain ou jouer à chat pendant la pause : alterner, se mettre d’accord sur un signe, faire attention à l’autre. L’enfant choisit une règle qu’il veut essayer au prochain jeu à plusieurs et dessine deux gobelets reliés par un fil. Pour finir, tous deux s’envoient un dernier message par le téléphone : un compliment pour le travail ensemble.",
+   "sagen": [
+    "Qu’est-ce qui s’est passé quand quelqu’un a tiré trop fort ?",
+    "Où as-tu besoin d’un accord comme ça – pour construire, au foot, pour jouer ?",
+    "Dernier message par le téléphone : qu’est-ce qui a bien marché ?"
+   ],
+   "wennEsKippt": "Si aucune règle ne vient, l’enfant choisit parmi trois signes que l’adulte dessine : deux gobelets (alterner), une main (se mettre d’accord sur un signe), un œil (faire attention à l’autre). S’il ne veut pas dessiner, il dit seulement la règle dans le téléphone.",
+   "kurz": "Ce que le téléphone a montré · sa règle · compliment par le fil"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Zum Schluss geht die wichtigste Botschaft durch den Faden: ein Lob.",
+    "gruppe": "Mit mehreren: Jedes Paar nennt seine wichtigste Absprache; daraus entsteht ein Plakat mit drei Regeln für gemeinsames Spielen. Das Lob geht reihum durch die Telefone.",
+    "beobachten": [
+     "Das Kind beschreibt, was passierte, wenn die Absprache fehlte.",
+     "Es überträgt eine Absprache auf eine Spielsituation im Alltag.",
+     "Es gibt der Fachkraft ein konkretes Lob."
+    ],
+    "warum": "Was Kinder aus eigener Erfahrung als Regel ableiten und gleich auf konkrete Situationen übertragen, wenden sie eher an; Übung mit Übertragung ist ein Kern wirksamer Programme (Durlak et al., 2011)."
+   },
+   "fr": {
+    "haken": "Pour finir, le message le plus important passe par le fil : un compliment.",
+    "gruppe": "En groupe : chaque duo nomme son accord le plus important ; on en fait une affiche avec trois règles pour jouer ensemble. Le compliment fait le tour par les téléphones.",
+    "beobachten": [
+     "L’enfant décrit ce qui s’est passé quand l’accord manquait.",
+     "Il transpose un accord à une situation de jeu du quotidien.",
+     "Il fait un compliment concret à l’adulte."
+    ],
+    "warum": "Ce que les enfants tirent eux-mêmes de leur expérience comme règle et transposent tout de suite à des situations concrètes, ils l’appliquent plus volontiers ; s’exercer et transférer est au cœur des programmes efficaces (Durlak et al., 2011)."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-einweg-zweiweg-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Forscherfrage: Hilft Nachfragen oder bremst es?",
+  "text": "Die Fachkraft erzählt eine Szene: Zwei Leute bauen über Sprachnachrichten dasselbe Modell aus Bausteinen, die eine hat die Anleitung, der andere die Steine. Sie fragt: „Klappt das besser, wenn der Bauende zwischendurch nachfragen darf – oder bremst Nachfragen nur?“ Der oder die Jugendliche gibt eine Vermutung zu drei Punkten ab: Was geht schneller, was wird genauer, was fühlt sich für beide besser an? Die Fachkraft notiert die Vermutungen und kündigt den Versuch an: zwei Runden Bild-Diktat, einmal ohne, einmal mit Fragen.",
+  "sagen": [
+   "Einer hat den Plan, der andere die Hände. Darf der mit den Händen nachfragen – oder bremst das?",
+   "Tipp ab: Was ist schneller, was genauer, was fühlt sich besser an?",
+   "Wir testen das in zwei Runden."
+  ],
+  "wennEsKippt": "Mag der oder die Jugendliche keine drei Vermutungen abgeben, reicht ein Kreuz bei „mit Fragen besser“ oder „ohne Fragen besser“. Ist er oder sie skeptisch, geht es sofort mit dem Zeichnen los.",
+  "kurz": "Szene mit Sprachnachrichten · Vermutung: schneller, genauer, besser?",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 6
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-38",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "gespraech"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "La question : poser des questions, ça aide ou ça freine ?",
+   "text": "L’adulte raconte une scène : deux personnes construisent le même modèle en briques par messages vocaux ; l’une a le plan, l’autre les briques. Question : « Est-ce que ça marche mieux si la personne qui construit a le droit de poser des questions – ou est-ce que les questions freinent ? » Le ou la jeune fait une hypothèse sur trois points : qu’est-ce qui va plus vite, qu’est-ce qui est plus juste, qu’est-ce qui est plus agréable pour les deux ? L’adulte note les hypothèses et annonce l’expérience : deux manches de dessin dicté, une sans questions, une avec.",
+   "sagen": [
+    "L’un a le plan, l’autre les mains. Celui qui a les mains peut-il poser des questions – ou ça freine ?",
+    "Parie : qu’est-ce qui est plus rapide, plus juste, plus agréable ?",
+    "On teste ça en deux manches."
+   ],
+   "wennEsKippt": "Si le ou la jeune ne veut pas faire trois hypothèses, une croix sur « mieux avec questions » ou « mieux sans questions » suffit. En cas de scepticisme, on commence tout de suite à dessiner.",
+   "kurz": "Scène des messages vocaux · hypothèse : plus vite, plus juste, mieux ?"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Klassiker der Kommunikationsforschung zum Selbermachen – das Ergebnis überrascht viele, die Fragen für Zeitverschwendung halten.",
+    "vorbereitung": [
+     "Zettel mit drei Spalten: schneller – genauer – besser für beide",
+     "Stift"
+    ],
+    "beobachten": [
+     "Der oder die Jugendliche gibt zu allen drei Punkten eine Vermutung ab.",
+     "Er oder sie begründet mindestens eine Vermutung."
+    ],
+    "gruppe": "Mit mehreren: Die Vermutungen aller werden per Handzeichen an der Tafel gesammelt, bevor der Versuch beginnt."
+   },
+   "fr": {
+    "haken": "Un classique de la recherche sur la communication, à faire soi-même – le résultat surprend souvent ceux qui pensent que les questions font perdre du temps.",
+    "vorbereitung": [
+     "Feuille à trois colonnes : plus rapide – plus juste – mieux pour les deux",
+     "Crayon"
+    ],
+    "beobachten": [
+     "Le ou la jeune fait une hypothèse sur les trois points.",
+     "Il ou elle justifie au moins une hypothèse."
+    ],
+    "gruppe": "En groupe : les hypothèses de tout le groupe sont recueillies à main levée au tableau avant l’expérience."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-einweg-zweiweg-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Versuch: Einweg oder Zweiweg?",
+  "text": "Der oder die Jugendliche bekommt Bild A (fünf einfache Formen) und beschreibt es Rücken an Rücken; die Fachkraft zeichnet nach und darf weder fragen noch etwas zeigen, die Zeit wird gestoppt. In Runde 2 beschreibt er oder sie Bild B, und die Fachkraft darf jetzt nachfragen („Wie groß?“, „Berührt das Dreieck den Kreis?“). Danach werden beide Zeichnungen mit den Originalen verglichen: Wie viele Formen stimmen in Lage und Größe, wie lange hat es gedauert, wie sicher waren beide? Wenn Zeit ist, tauschen sie die Rollen für eine dritte Runde mit Fragen. Gemeinsam deuten sie das Ergebnis und halten fest, was gute Zusammenarbeit beim Erklären ausmacht: klar beschreiben, Rückfragen zulassen, mit eigenen Worten bestätigen.",
+  "sagen": [
+   "Runde 1: Ich zeichne, du beschreibst. Ich darf nichts fragen, und du siehst meine Zeichnung nicht.",
+   "Runde 2: Jetzt darf ich nachfragen. Achte darauf, wie sich das für dich anfühlt.",
+   "Was war schneller, was genauer – und wie sicher warst du jeweils?"
+  ],
+  "wennEsKippt": "Ist das Beschreiben zu schwer, kommt ein einfacheres Bild mit drei Formen. Werden Rückfragen als nervig erlebt, wird genau das zum Thema: Wie kann man so nachfragen, dass es nicht nach Kritik klingt?",
+  "kurz": "Runde 1 ohne Fragen · Runde 2 mit Fragen · vergleichen · Regeln",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 18
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-38",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "gespraech",
+   "malen"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "papier",
+   "stifte",
+   "radiergummi",
+   "uhr",
+   "karten",
+   "stuhl"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Klar beschreiben – Rückfragen zulassen – mit eigenen Worten bestätigen",
+   "fr": "Décrire clairement – accepter les questions – reformuler"
+  },
+  "vorbereitung": "Bild A und Bild B aus je fünf einfachen Formen auf Karteikarten zeichnen (Beispiele siehe Karten) und verdeckt hinlegen; zwei Stühle Rücken an Rücken.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "L’expérience : à sens unique ou dans les deux sens ?",
+   "text": "Le ou la jeune reçoit le dessin A (cinq formes simples) et le décrit dos à dos ; l’adulte dessine sans avoir le droit de poser de questions ni de montrer quoi que ce soit, et on chronomètre. Dans la deuxième manche, il ou elle décrit le dessin B, et l’adulte peut maintenant poser des questions (« Grand comment ? », « Le triangle touche-t-il le cercle ? »). Ensuite, les deux dessins sont comparés aux originaux : combien de formes sont justes en position et en taille, combien de temps cela a pris, à quel point tous deux étaient sûrs d’eux ? S’il reste du temps, ils échangent les rôles pour une troisième manche avec questions. Ensemble, ils interprètent le résultat et retiennent ce qui fait une bonne collaboration quand on explique : décrire clairement, accepter les questions, reformuler avec ses propres mots.",
+   "sagen": [
+    "Manche 1 : je dessine, tu décris. Je n’ai pas le droit de poser de questions, et tu ne vois pas mon dessin.",
+    "Manche 2 : maintenant, je peux poser des questions. Fais attention à l’effet que ça te fait.",
+    "Qu’est-ce qui était plus rapide, plus juste – et à quel point étais-tu sûr ou sûre de toi à chaque fois ?"
+   ],
+   "wennEsKippt": "Si décrire est trop difficile, on prend un dessin plus simple à trois formes. Si les questions agacent, cela devient justement le sujet : comment poser une question sans que ça sonne comme une critique ?",
+   "kurz": "Manche 1 sans questions · manche 2 avec · comparer · règles",
+   "vorbereitung": "Dessiner les dessins A et B, de cinq formes simples, sur des fiches (exemples dans les cartes) et les poser face cachée ; deux chaises dos à dos."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Zeichnen nach Diktat, einmal stumm, einmal mit Fragen – ein Versuch, der zeigt, ob Nachfragen nervt oder hilft.",
+    "vorbereitung": [
+     "Bild A und B auf je eine Karteikarte zeichnen (siehe Karten), verdeckt",
+     "Zwei Stühle Rücken an Rücken",
+     "Papier, Bleistift, Radiergummi und eine feste Unterlage",
+     "Uhr mit Stoppfunktion",
+     "Tabelle: Runde – Zeit – richtige Formen – wie sicher?"
+    ],
+    "aufbau": "Stühle Rücken an Rücken; die zeichnende Person hat eine feste Unterlage auf den Knien oder einen eigenen Tisch. Die Bilder liegen verdeckt bei der beschreibenden Person.",
+    "karten": [
+     {
+      "titel": "Bilder zum Vorzeichnen (je etwa 10 cm breit)",
+      "karten": [
+       "Bild A: Quadrat in der Mitte; Kreis an seiner Ecke rechts oben; Dreieck darunter; kleiner Kreis links; Linie quer",
+       "Bild B: großes Dreieck; kleiner Kreis darin; Quadrat rechts daneben, auf der Spitze; zwei kurze Linien oben links",
+       "Bild C: drei Quadrate als Treppe nach rechts oben; Kreis auf der obersten Stufe; Pfeil von links unten",
+       "Leichtes Bild: Kreis, darunter ein Quadrat, rechts davon ein Dreieck"
+      ]
+     }
+    ],
+    "leichter": "Bilder mit drei Formen; in Runde 1 darf die zeichnende Person wenigstens „Stopp“ und „weiter“ sagen.",
+    "schwerer": "Eine dritte Bedingung testen: nur Ja-Nein-Fragen erlaubt. Dazu überlegen, wo im Alltag Einweg-Kommunikation herrscht (Durchsagen im Bus, Nachrichten im Gruppenchat, Anleitungen) und was dort hilft.",
+    "gruppe": "Mit mehreren: Eine Person beschreibt, alle anderen zeichnen; Runde 1 ohne, Runde 2 mit Fragen. Die Ergebnisse aller (richtige Formen, Zeit) kommen an die Tafel – mit mehr Zeichnenden wird der Unterschied sehr deutlich. Eine Person beobachtet zusätzlich, wie die beschreibende Person auf Fragen reagiert.",
+    "beobachten": [
+     "Der oder die Jugendliche beschreibt mit Lage, Größe und Reihenfolge („zuerst … dann … rechts daneben“).",
+     "Er oder sie reagiert auf Rückfragen ruhig und ergänzt, statt sich zu ärgern.",
+     "Er oder sie nennt am Ende eine Regel für gute Zusammenarbeit beim Erklären."
+    ],
+    "warum": "Im klassischen Versuch von Leavitt und Mueller (1951) war Zweiweg-Kommunikation langsamer, aber deutlich genauer, und die Empfänger waren sicherer; wer das selbst erlebt, sieht Rückfragen als Beitrag zur Zusammenarbeit statt als Störung."
+   },
+   "fr": {
+    "haken": "Dessiner sous la dictée, une fois en silence, une fois avec des questions – une expérience qui montre si les questions agacent ou aident.",
+    "vorbereitung": [
+     "Dessiner A et B sur une fiche chacun (voir cartes), face cachée",
+     "Deux chaises dos à dos",
+     "Papier, crayon, gomme et un support rigide",
+     "Montre avec chronomètre",
+     "Tableau : manche – temps – formes justes – à quel point sûr ?"
+    ],
+    "aufbau": "Chaises dos à dos ; la personne qui dessine a un support rigide sur les genoux ou sa propre table. Les dessins sont posés face cachée près de la personne qui décrit.",
+    "karten": [
+     {
+      "titel": "Dessins à préparer (environ 10 cm de large)",
+      "karten": [
+       "Dessin A : carré au milieu ; cercle sur son coin haut droit ; triangle dessous ; petit cercle à gauche ; un trait",
+       "Dessin B : grand triangle ; petit cercle dedans ; carré sur la pointe à droite ; deux petits traits en haut à gauche",
+       "Dessin C : trois carrés en escalier vers le haut à droite ; cercle sur la dernière marche ; flèche d’en bas à gauche",
+       "Dessin facile : cercle, carré en dessous, triangle à droite"
+      ]
+     }
+    ],
+    "leichter": "Des dessins à trois formes ; dans la première manche, la personne qui dessine peut au moins dire « stop » et « continue ».",
+    "schwerer": "Tester une troisième condition : seulement des questions fermées (oui ou non). Réfléchir aussi aux situations du quotidien à sens unique (annonces dans le bus, messages dans un groupe de discussion, modes d’emploi) et à ce qui aide alors.",
+    "gruppe": "En groupe : une personne décrit, toutes les autres dessinent ; manche 1 sans, manche 2 avec questions. Les résultats de tous (formes justes, temps) vont au tableau – avec plus de dessinateurs, la différence devient très nette. Une personne observe en plus comment la personne qui décrit réagit aux questions.",
+    "beobachten": [
+     "Le ou la jeune décrit avec la position, la taille et l’ordre (« d’abord … ensuite … juste à droite »).",
+     "Il ou elle réagit calmement aux questions et complète au lieu de s’énerver.",
+     "Il ou elle nomme à la fin une règle pour bien collaborer quand on explique."
+    ],
+    "warum": "Dans l’expérience classique de Leavitt et Mueller (1951), la communication dans les deux sens était plus lente, mais nettement plus juste, et les récepteurs étaient plus sûrs d’eux ; qui le vit soi-même voit les questions comme une contribution à la collaboration plutôt que comme une gêne."
+   }
+  }
+ },
+ {
+  "id": "fo:exp-einweg-zweiweg-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Experiment"
+  },
+  "titel": "Was heißt das für uns? Nachfragen hilft beiden",
+  "text": "Die Fachkraft vergleicht mit dem oder der Jugendlichen die Vermutungen vom Anfang mit den Messwerten. Dann geht es um echte Situationen, in denen zwei etwas zusammen hinbekommen müssen – Partnerarbeit in der Schule, Absprachen im Training, ein Projekt im Jugendhaus: Wo läuft es dort wie in Runde 1? Der oder die Jugendliche formuliert zwei Sätze: einen, mit dem er oder sie nachfragt, ohne dass es nach Kritik klingt, und einen, mit dem er oder sie andere zum Fragen einlädt („Sag Bescheid, wenn ich zu schnell bin“). Zum Schluss probieren beide die Sätze in einer kurzen Szene aus.",
+  "sagen": [
+   "Wo erlebst du Zusammenarbeit wie in Runde 1 – einer redet, keiner fragt?",
+   "Wie kannst du nachfragen, ohne dass es nach Kritik klingt?",
+   "Und wie lädst du andere ein, dich zu fragen?"
+  ],
+  "wennEsKippt": "Fällt kein Satz ein, wählt der oder die Jugendliche aus Beispielen: „Meinst du links von dir oder von mir aus?“, „Kannst du das noch mal anders sagen?“, „Unterbrich mich ruhig.“ Wer keine Szene spielen will, liest die Sätze nur vor.",
+  "kurz": "Vermutung und Messwerte · Alltag · 2 Sätze: nachfragen, einladen",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 8
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-38",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "experiment",
+   "gespraech",
+   "rollenspiel"
+  ],
+  "formen": [
+   "experiment"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Et pour nous ? Poser des questions aide les deux",
+   "text": "L’adulte compare avec le ou la jeune les hypothèses du début et les mesures. Puis on parle de vraies situations où deux personnes doivent réussir quelque chose ensemble – un travail à deux à l’école, des accords à l’entraînement, un projet au centre de loisirs : où est-ce que ça se passe comme dans la première manche ? Le ou la jeune formule deux phrases : une pour poser une question sans que ça sonne comme une critique, et une pour inviter les autres à poser des questions (« Dis-moi si je vais trop vite »). Pour finir, tous deux essaient les phrases dans une courte scène.",
+   "sagen": [
+    "Où vis-tu une collaboration comme dans la première manche – l’un parle, personne ne pose de question ?",
+    "Comment poser une question sans que ça sonne comme une critique ?",
+    "Et comment inviter les autres à te poser des questions ?"
+   ],
+   "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit parmi des exemples : « Tu veux dire à ta gauche ou à la mienne ? », « Tu peux le dire autrement ? », « N’hésite pas à m’interrompre. » Sans envie de jouer une scène, il ou elle lit seulement les phrases.",
+   "kurz": "Hypothèses et mesures · quotidien · 2 phrases : demander, inviter"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Wo im eigenen Alltag läuft Zusammenarbeit wie in Runde 1 – und was würde sich ändern, wenn mehr gefragt würde?",
+    "gruppe": "Mit mehreren: Die Gruppe sammelt Rückfragen ohne Vorwurf und einladende Sätze an der Tafel; in Paaren werden zwei davon in einer kurzen Szene geprobt.",
+    "beobachten": [
+     "Der oder die Jugendliche vergleicht Vermutungen und Messwerte sachlich.",
+     "Er oder sie formuliert eine Rückfrage ohne Vorwurf.",
+     "Er oder sie formuliert einen einladenden Satz und probiert ihn in der Szene aus."
+    ],
+    "warum": "Wer Rückfragen als normale Zutat guter Zusammenarbeit erlebt und passende Sätze vorher übt, setzt sie in echten Situationen eher ein; Üben mit Übertragung in den Alltag ist ein Kern wirksamer Programme (Durlak et al., 2011)."
+   },
+   "fr": {
+    "haken": "Où, dans son quotidien, la collaboration se passe-t-elle comme dans la première manche – et qu’est-ce qui changerait avec plus de questions ?",
+    "gruppe": "En groupe : le groupe rassemble au tableau des questions sans reproche et des phrases qui invitent ; par deux, on en essaie deux dans une courte scène.",
+    "beobachten": [
+     "Le ou la jeune compare hypothèses et mesures avec calme.",
+     "Il ou elle formule une question sans reproche.",
+     "Il ou elle formule une phrase qui invite et l’essaie dans la scène."
+    ],
+    "warum": "Qui vit les questions comme un ingrédient normal d’une bonne collaboration et s’entraîne à l’avance avec des phrases adaptées les utilise plus volontiers dans de vraies situations ; s’exercer et transférer au quotidien est au cœur des programmes efficaces (Durlak et al., 2011)."
+   }
+  }
+ }
+]

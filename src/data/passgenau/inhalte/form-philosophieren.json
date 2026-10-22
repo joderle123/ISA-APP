@@ -1,0 +1,3289 @@
+[
+ {
+  "id": "fo:phi-echter-freund-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Denkanstoß: Ist das ein echter Freund?",
+  "text": "Die Fachkraft klebt mit Kreppband eine Denk-Linie auf den Boden, an einem Ende „Ja“, am anderen „Nein“, in der Mitte „Kommt drauf an“. Sie erzählt: „Noah sagt in der Pause zu Sami: Wenn du mir deine Glitzer-Sammelkarte gibst, bin ich ab heute dein Freund.“ Das Kind stellt sich zur Frage „Wäre Noah dann ein echter Freund?“ an die Stelle der Linie, die für es passt, und sagt einen Satz mit „weil“. Dann erklärt die Fachkraft die drei Denk-Regeln: Wer den Ball hat, spricht; wir sagen „weil“; seine Meinung zu ändern ist klug, nicht peinlich.",
+  "sagen": [
+   "Hier ist unsere Denk-Linie: Ja, Nein und in der Mitte Kommt drauf an.",
+   "Wäre Noah dann ein echter Freund? Stell dich dahin, wo du stehst – und sag mir: weil …",
+   "Beim Philosophieren gibt es keine falschen Antworten. Nur Gedanken, die wir zusammen prüfen."
+  ],
+  "wennEsKippt": "Mag das Kind nicht aufstehen, zeigt es mit dem Finger auf eine Linie, die auf Papier gemalt ist. Fällt ihm kein „weil“ ein, darf es zuerst die Fachkraft fragen, wo sie steht und warum.",
+  "kurz": "Denk-Linie kleben · Noah und die Sammelkarte · Platz mit „weil“",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 7
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "eldib": [
+   {
+    "code": "K-27",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-21",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "bewegung",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "klebeband",
+   "ball",
+   "papier"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Le déclic : est-ce un vrai ami ?",
+   "text": "L’adulte colle au sol une ligne de réflexion avec du ruban adhésif : à un bout « oui », à l’autre « non », au milieu « ça dépend ». L’adulte raconte : « À la pause, Noah dit à Sami : si tu me donnes ta carte brillante à collectionner, je serai ton ami à partir d’aujourd’hui. » À la question « Noah serait-il alors un vrai ami ? », l’enfant se place à l’endroit de la ligne qui lui correspond et dit une phrase avec « parce que ». Puis l’adulte explique les trois règles pour penser ensemble : qui a la balle parle ; on dit « parce que » ; changer d’avis, c’est intelligent, pas gênant.",
+   "sagen": [
+    "Voici notre ligne de réflexion : oui, non, et au milieu ça dépend.",
+    "Noah serait-il un vrai ami ? Mets-toi là où tu en es – et dis-moi : parce que …",
+    "Quand on philosophe, il n’y a pas de mauvaise réponse. Seulement des idées qu’on examine ensemble."
+   ],
+   "wennEsKippt": "Si l’enfant ne veut pas se lever, il montre du doigt une ligne dessinée sur une feuille. S’il ne trouve pas de « parce que », il peut d’abord demander à l’adulte où il se place et pourquoi.",
+   "kurz": "Coller la ligne · Noah et la carte · se placer avec « parce que »"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Eine Linie auf dem Boden, eine Sammelkarte und eine Frage, bei der auch Erwachsene ins Grübeln kommen.",
+    "vorbereitung": [
+     "Kreppband für eine Linie von etwa 2 m",
+     "Drei Zettel: Ja – Kommt drauf an – Nein",
+     "Weicher Ball als Gedanken-Ball"
+    ],
+    "beobachten": [
+     "Das Kind bezieht Stellung und nennt einen Grund mit „weil“.",
+     "Es hört zu, wenn die Fachkraft den Ball hat."
+    ],
+    "gruppe": "Mit mehreren: Alle stellen sich gleichzeitig auf die Linie; zwei Kinder von verschiedenen Stellen sagen ihren Grund, danach dürfen alle ihren Platz wechseln."
+   },
+   "fr": {
+    "haken": "Une ligne au sol, une carte à collectionner et une question qui fait réfléchir même les adultes.",
+    "vorbereitung": [
+     "Ruban adhésif pour une ligne d’environ 2 m",
+     "Trois papiers : oui – ça dépend – non",
+     "Une balle molle comme balle à idées"
+    ],
+    "beobachten": [
+     "L’enfant prend position et donne une raison avec « parce que ».",
+     "Il écoute quand l’adulte a la balle."
+    ],
+    "gruppe": "En groupe : tous se placent en même temps sur la ligne ; deux enfants à des endroits différents disent leur raison, puis chacun peut changer de place."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-echter-freund-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Gemeinsam nachdenken: Was macht einen echten Freund aus?",
+  "text": "Das Kind darf zuerst eine eigene Frage zur Freundschaft stellen; die Fachkraft schreibt sie auf (etwa „Kann man mit jemandem befreundet sein, den man doof findet?“). Dann zieht das Kind Freund-oder-nicht-Karten („Ein Hund“, „Jemand, mit dem du dich streitest und wieder verträgst“, „Jemand, der dir nur etwas schenkt, damit du mitspielst“) und legt jede an die passende Stelle der Denk-Linie. Zu jeder Karte wirft die Fachkraft ihm mit dem Ball eine Denk-Frage zu: „Warum?“, „Hast du ein Beispiel?“, „Gibt es einen Fall, in dem es anders ist?“ Manchmal vertritt sie bewusst eine andere Meinung, damit das Kind begründen kann. Aus den Gründen sammeln beide drei Merkmale eines echten Freundes auf einem großen Papier und prüfen sie zum Schluss an der Frage des Kindes.",
+  "sagen": [
+   "Was möchtest du über Freundschaft gern herausfinden? Deine Frage kommt aufs Papier.",
+   "Ein Hund – Freund oder nicht? Leg die Karte hin und sag mir, warum.",
+   "Ich sehe das mal anders: Ein echter Freund gibt dir immer recht. Was sagst du dazu?",
+   "Welche drei Dinge machen einen echten Freund aus – nach allem, was wir gedacht haben?"
+  ],
+  "wennEsKippt": "Wird das Hin und Her zu viel, nimmt die Fachkraft nur drei Karten und lässt das Kind zwischen zwei Stellen wählen. Erzählt das Kind von einem echten Streit mit einem Freund, hört die Fachkraft kurz zu und führt dann sanft zur allgemeinen Frage zurück: „Was meinst du, gilt das für alle Freundschaften?“",
+  "kurz": "Eigene Frage · Freund-oder-nicht-Karten auf die Linie · 3 Merkmale",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 20
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "eldib": [
+   {
+    "code": "K-27",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-21",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech",
+   "karten"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "klebeband",
+   "ball",
+   "karten",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Denken mit „weil“: Grund, Beispiel, Gegenbeispiel",
+   "fr": "Penser avec « parce que » : raison, exemple, contre-exemple"
+  },
+  "vorbereitung": "Freund-oder-nicht-Karten vorbereiten, die Denk-Linie liegen lassen, ein großes Papier für drei Merkmale bereitlegen.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Penser ensemble : qu’est-ce qui fait un vrai ami ?",
+   "text": "L’enfant pose d’abord sa propre question sur l’amitié ; l’adulte l’écrit (par exemple « Peut-on être ami avec quelqu’un qu’on trouve bête ? »). Puis l’enfant tire des cartes ami-ou-pas (« Un chien », « Quelqu’un avec qui tu te disputes et te réconcilies », « Quelqu’un qui te fait un cadeau seulement pour que tu joues avec lui ») et pose chaque carte à l’endroit qui convient sur la ligne. Pour chaque carte, l’adulte lui lance la balle avec une question pour penser : « Pourquoi ? », « Tu as un exemple ? », « Y a-t-il un cas où c’est différent ? » Parfois, l’adulte défend exprès un autre avis, pour que l’enfant puisse argumenter. À partir des raisons, tous deux rassemblent trois caractéristiques d’un vrai ami sur une grande feuille et les vérifient à la fin avec la question de l’enfant.",
+   "sagen": [
+    "Qu’est-ce que tu aimerais découvrir sur l’amitié ? Ta question va sur le papier.",
+    "Un chien – ami ou pas ? Pose la carte et dis-moi pourquoi.",
+    "Moi, je vois ça autrement : un vrai ami te donne toujours raison. Qu’en dis-tu ?",
+    "Quelles sont les trois choses qui font un vrai ami – après tout ce qu’on a pensé ?"
+   ],
+   "wennEsKippt": "Si les allers-retours deviennent trop, l’adulte prend seulement trois cartes et laisse l’enfant choisir entre deux places. Si l’enfant raconte une vraie dispute avec un ami, l’adulte écoute un moment, puis revient doucement à la question générale : « À ton avis, c’est vrai pour toutes les amitiés ? »",
+   "kurz": "Sa question · cartes ami-ou-pas sur la ligne · 3 caractéristiques",
+   "vorbereitung": "Préparer les cartes ami-ou-pas, laisser la ligne de réflexion au sol, prévoir une grande feuille pour les trois caractéristiques."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ist ein Hund ein Freund? Und jemand, der dir nur etwas schenkt? Die Karten bringen sofort Bewegung ins Denken.",
+    "vorbereitung": [
+     "Freund-oder-nicht-Karten ausdrucken (siehe Karten)",
+     "Denk-Linie aus dem Einstieg liegen lassen",
+     "Weicher Ball als Gedanken-Ball",
+     "Großes Papier und dicker Stift für die drei Merkmale"
+    ],
+    "aufbau": "Die Denk-Linie liegt frei im Raum, das große Papier auf dem Tisch daneben. Fachkraft und Kind stehen sich an der Linie gegenüber, damit der Ball hin und her fliegen kann.",
+    "karten": [
+     {
+      "titel": "Freund oder nicht?",
+      "karten": [
+       "Ein Hund",
+       "Jemand, mit dem du dich streitest und wieder verträgst",
+       "Jemand, der dir nur etwas schenkt, damit du mitspielst",
+       "Jemand, den du nur aus einem Spiel im Internet kennst",
+       "Jemand, der eine andere Sprache spricht als du",
+       "Jemand, der immer bestimmt, was gespielt wird",
+       "Jemand, der dein Geheimnis weitererzählt",
+       "Jemand, der dich tröstet, wenn du hingefallen bist",
+       "Ein Kuscheltier",
+       "Jemand, der viel älter ist als du",
+       "Jemand, der dich nur mitspielen lässt, wenn sonst keiner da ist",
+       "Jemand, den du nur in der Pause triffst"
+      ]
+     }
+    ],
+    "leichter": "Nur vier Karten und zwei Stellen (Freund – kein Freund). Die Fachkraft gibt Satzanfänge: „Ein Freund ist jemand, der …“",
+    "schwerer": "Das Kind sucht zu jedem Merkmal ein Gegenbeispiel („Ein Freund hilft immer – aber was, wenn er beim Schummeln helfen soll?“) und verbessert das Merkmal.",
+    "gruppe": "Mit mehreren (Philosophieren nach Lipman): Alle sitzen im Kreis, der Gedanken-Ball geht an die, die sich melden, und wer spricht, knüpft an die Person davor an: „Ich stimme … zu, weil …“ oder „Ich sehe das anders, weil …“. Die Gruppe wählt per Handzeichen, welche Kinderfrage zuerst besprochen wird.",
+    "beobachten": [
+     "Das Kind begründet seinen Platz mit „weil“ und nennt ein Beispiel.",
+     "Es geht auf eine andere Meinung ein, statt sie nur abzulehnen.",
+     "Es nennt mindestens zwei Merkmale echter Freundschaft (zum Beispiel zuhören, helfen, sich wieder vertragen)."
+    ],
+    "warum": "Philosophische Gespräche nach Lipman (Philosophy for Children) fördern Begründen, Zuhören und Perspektivwechsel (Trickey & Topping, 2004); wer Merkmale von Freundschaft selbst erarbeitet, versteht Beziehungen differenzierter (Selman, 1980) und gestaltet sie bewusster."
+   },
+   "fr": {
+    "haken": "Un chien, c’est un ami ? Et quelqu’un qui te fait seulement un cadeau ? Les cartes mettent tout de suite la pensée en mouvement.",
+    "vorbereitung": [
+     "Imprimer les cartes ami-ou-pas (voir cartes)",
+     "Laisser au sol la ligne de réflexion du début",
+     "Une balle molle comme balle à idées",
+     "Grande feuille et gros feutre pour les trois caractéristiques"
+    ],
+    "aufbau": "La ligne de réflexion est libre dans la pièce, la grande feuille sur la table à côté. L’adulte et l’enfant se tiennent face à face près de la ligne pour que la balle puisse passer de l’un à l’autre.",
+    "karten": [
+     {
+      "titel": "Ami ou pas ?",
+      "karten": [
+       "Un chien",
+       "Quelqu’un avec qui tu te disputes et te réconcilies",
+       "Quelqu’un qui te fait un cadeau seulement pour que tu joues avec lui",
+       "Quelqu’un que tu connais seulement par un jeu sur Internet",
+       "Quelqu’un qui parle une autre langue que toi",
+       "Quelqu’un qui décide toujours à quoi on joue",
+       "Quelqu’un qui répète ton secret",
+       "Quelqu’un qui te console quand tu es tombé",
+       "Une peluche",
+       "Quelqu’un de beaucoup plus âgé que toi",
+       "Quelqu’un qui te laisse jouer seulement quand il n’y a personne d’autre",
+       "Quelqu’un que tu vois seulement à la pause"
+      ]
+     }
+    ],
+    "leichter": "Seulement quatre cartes et deux places (ami – pas ami). L’adulte donne des débuts de phrase : « Un ami, c’est quelqu’un qui … »",
+    "schwerer": "L’enfant cherche un contre-exemple pour chaque caractéristique (« Un ami aide toujours – mais s’il doit aider à tricher ? ») et améliore la caractéristique.",
+    "gruppe": "En groupe (philosophie pour enfants selon Lipman) : tous sont assis en cercle, la balle à idées va à ceux qui lèvent la main, et chacun s’appuie sur la personne d’avant : « Je suis d’accord avec … parce que … » ou « Je vois ça autrement parce que … ». Le groupe choisit à main levée la question d’enfant à discuter en premier.",
+    "beobachten": [
+     "L’enfant justifie sa place avec « parce que » et donne un exemple.",
+     "Il répond à un autre avis au lieu de seulement le rejeter.",
+     "Il nomme au moins deux caractéristiques d’une vraie amitié (par exemple écouter, aider, se réconcilier)."
+    ],
+    "warum": "Les discussions philosophiques selon Lipman (philosophie pour enfants) favorisent l’argumentation, l’écoute et le changement de perspective (Trickey & Topping, 2004) ; élaborer soi-même ce qui fait une amitié aide à comprendre les relations plus finement (Selman, 1980) et à les vivre plus consciemment."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-echter-freund-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Mein Gedanke heute: Freund sein",
+  "text": "Das Kind stellt sich noch einmal auf die Denk-Linie zur Geschichte vom Anfang: Wo steht es jetzt bei Noah und der Sammelkarte – und hat sich etwas verändert? Die Fachkraft fragt nach dem Grund, und das Kind beendet den Satz „Mein Gedanke heute: Ein echter Freund ist jemand, der …“. Dann kommt die Brücke ins Leben: Welches der drei Merkmale will das Kind selbst als Freund oder Freundin zeigen, etwa in der Pause oder im Verein? Die Fachkraft schreibt den Satz auf einen Zettel, den das Kind mitnimmt.",
+  "sagen": [
+   "Wo stehst du jetzt bei Noah? Bist du am selben Platz wie am Anfang?",
+   "Mein Gedanke heute: Ein echter Freund ist jemand, der … Mach den Satz fertig.",
+   "Welches Merkmal willst du selbst zeigen – und wo?"
+  ],
+  "wennEsKippt": "Fällt dem Kind kein Satz ein, wählt es eines der drei Merkmale vom großen Papier. Will es nichts über sich sagen, reicht der Satz über Noah und Sami.",
+  "kurz": "Zurück auf die Linie · Gedanke heute · ein Merkmal, das ich zeige",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 9
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "eldib": [
+   {
+    "code": "K-27",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-21",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech",
+   "bewegung"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "klebeband",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Ma pensée du jour : être un ami",
+   "text": "L’enfant se replace sur la ligne de réflexion pour l’histoire du début : où en est-il maintenant avec Noah et la carte – et est-ce que quelque chose a changé ? L’adulte demande la raison, et l’enfant termine la phrase « Ma pensée du jour : un vrai ami, c’est quelqu’un qui … ». Puis vient le lien avec la vie : laquelle des trois caractéristiques l’enfant veut-il montrer lui-même comme ami ou amie, par exemple à la pause ou au club ? L’adulte écrit la phrase sur un papier que l’enfant emporte.",
+   "sagen": [
+    "Où en es-tu maintenant avec Noah ? Es-tu à la même place qu’au début ?",
+    "Ma pensée du jour : un vrai ami, c’est quelqu’un qui … Termine la phrase.",
+    "Quelle caractéristique veux-tu montrer toi-même – et où ?"
+   ],
+   "wennEsKippt": "Si aucune phrase ne vient, l’enfant choisit une des trois caractéristiques sur la grande feuille. S’il ne veut rien dire sur lui, la phrase sur Noah et Sami suffit.",
+   "kurz": "Retour sur la ligne · pensée du jour · une qualité que je montre"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Zurück an den Start: Steht das Kind noch am selben Platz auf der Linie?",
+    "gruppe": "Mit mehreren: Alle stellen sich noch einmal auf die Linie; wer den Platz gewechselt hat, darf erzählen, warum. Jedes Kind sagt seinen Satz „Mein Gedanke heute …“, ohne dass die anderen ihn kommentieren.",
+    "beobachten": [
+     "Das Kind bemerkt, ob und warum sich seine Meinung verändert hat.",
+     "Es formuliert einen eigenen Satz über Freundschaft.",
+     "Es nennt ein Verhalten, das es selbst als Freund oder Freundin zeigen will."
+    ],
+    "warum": "Wer am Ende benennt, wie sich das eigene Denken verändert hat, festigt das Gelernte; der Schritt zum eigenen Verhalten macht aus dem Gespräch ein kleines Ziel für den Alltag."
+   },
+   "fr": {
+    "haken": "Retour au départ : l’enfant est-il toujours à la même place sur la ligne ?",
+    "gruppe": "En groupe : tous se replacent sur la ligne ; qui a changé de place peut expliquer pourquoi. Chaque enfant dit sa phrase « Ma pensée du jour … » sans que les autres la commentent.",
+    "beobachten": [
+     "L’enfant remarque si et pourquoi son avis a changé.",
+     "Il formule sa propre phrase sur l’amitié.",
+     "Il nomme un comportement qu’il veut montrer lui-même comme ami ou amie."
+    ],
+    "warum": "Nommer à la fin comment sa pensée a changé consolide ce qui a été appris ; le pas vers son propre comportement transforme la discussion en un petit objectif pour le quotidien."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-freundschaft-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Denkanstoß: 500 Freunde oder 5?",
+  "text": "Die Fachkraft schreibt groß „500“ und „5“ auf ein Papier und erzählt: Ein Profil zeigt 500 Freunde, der Forscher Robin Dunbar schätzt dagegen, dass die meisten Menschen etwa fünf sehr enge Freunde haben. Sie fragt: „Wer hat recht – oder meinen die beiden mit ‚Freund‘ etwas Verschiedenes?“ Der oder die Jugendliche antwortet spontan, und die Fachkraft hält die Antwort fest. Dann stellt sie die Gesprächsregeln für das Philosophieren vor: Wir prüfen Gedanken, nicht Personen; wir begründen; Meinung ändern ist erlaubt; Persönliches bleibt im Raum.",
+  "sagen": [
+   "500 oder 5 – wie viele Freunde hat ein Mensch?",
+   "Meinen die beiden mit ‚Freund‘ dasselbe?",
+   "Hier prüfen wir Gedanken, nicht Personen. Und Meinung ändern ist kein Fehler, sondern Denken."
+  ],
+  "wennEsKippt": "Antwortet der oder die Jugendliche nur „keine Ahnung“, bietet die Fachkraft zwei Positionen zur Wahl an: „Freund ist Freund“ oder „Es gibt verschiedene Arten“. Wirkt das Thema zu persönlich, bleibt das Gespräch bei Menschen im Allgemeinen, nicht bei den eigenen Freunden.",
+  "kurz": "500 oder 5? · Was meinen wir mit ‚Freund‘? · Gesprächsregeln",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 7
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-41",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Le déclic : 500 amis ou 5 ?",
+   "text": "L’adulte écrit en grand « 500 » et « 5 » sur une feuille et raconte : un profil affiche 500 amis, alors que le chercheur Robin Dunbar estime que la plupart des gens ont environ cinq amis très proches. Question : « Qui a raison – ou est-ce qu’ils ne veulent pas dire la même chose par “ami” ? » Le ou la jeune répond spontanément, et l’adulte note la réponse. Puis l’adulte présente les règles de la discussion philosophique : on examine des idées, pas des personnes ; on justifie ; changer d’avis est permis ; ce qui est personnel reste dans la pièce.",
+   "sagen": [
+    "500 ou 5 – combien d’amis a une personne ?",
+    "Est-ce qu’ils veulent dire la même chose par « ami » ?",
+    "Ici, on examine des idées, pas des personnes. Et changer d’avis, ce n’est pas une erreur, c’est penser."
+   ],
+   "wennEsKippt": "Si le ou la jeune répond seulement « aucune idée », l’adulte propose deux positions au choix : « un ami, c’est un ami » ou « il y a différentes sortes d’amis ». Si le sujet semble trop proche, la discussion reste sur les gens en général, pas sur ses propres amis.",
+   "kurz": "500 ou 5 ? · qu’entend-on par « ami » ? · règles de discussion"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Zwei Zahlen auf einem Papier – und plötzlich ist nicht mehr klar, was das Wort „Freund“ eigentlich bedeutet.",
+    "vorbereitung": [
+     "Papier mit „500“ und „5“",
+     "Die vier Gesprächsregeln auf einem Zettel"
+    ],
+    "beobachten": [
+     "Der oder die Jugendliche bezieht spontan Stellung.",
+     "Er oder sie merkt, dass ein Wort verschiedene Bedeutungen haben kann."
+    ],
+    "gruppe": "Mit mehreren: Zuerst schätzen alle still auf einem Zettel, wie viele echte Freunde ein Mensch haben kann; die Zahlen werden nebeneinandergelegt – die Spannweite ist der Einstieg ins Gespräch."
+   },
+   "fr": {
+    "haken": "Deux nombres sur une feuille – et soudain, on ne sait plus très bien ce que veut dire le mot « ami ».",
+    "vorbereitung": [
+     "Feuille avec « 500 » et « 5 »",
+     "Les quatre règles de discussion sur un papier"
+    ],
+    "beobachten": [
+     "Le ou la jeune prend position spontanément.",
+     "Il ou elle remarque qu’un mot peut avoir plusieurs sens."
+    ],
+    "gruppe": "En groupe : chacun estime d’abord en silence, sur un papier, combien de vrais amis une personne peut avoir ; on pose les nombres côte à côte – l’écart lance la discussion."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-freundschaft-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Gemeinsam nachdenken: Nutzen, Spaß oder mehr?",
+  "text": "Die Fachkraft stellt die Idee von Aristoteles vor: Es gibt Freundschaften aus Nutzen (man hilft sich), aus Spaß (man hat eine gute Zeit) und Freundschaften, in denen man den anderen um seiner selbst willen mag. Der oder die Jugendliche sortiert Situationskarten in drei Felder („Wir zocken oft zusammen online“, „Sie lässt mich abschreiben“, „Er war da, als es mir schlecht ging“) und begründet jede Entscheidung. Dann formuliert er oder sie eine eigene Frage, etwa „Ist eine Nutzen-Freundschaft schlechter?“, und beide denken sie mit Begründung, Beispiel und Gegenbeispiel durch. Zum Schluss bringt die Fachkraft ein Dilemma ein: „Ein guter Freund bittet dich, für ihn zu lügen – ist es Freundschaft, Ja zu sagen, oder Nein?“ Der oder die Jugendliche bezieht Stellung, und die Fachkraft hält bewusst dagegen, damit Gründe entstehen.",
+  "sagen": [
+   "Nutzen, Spaß oder um des anderen willen – wohin gehört diese Karte, und warum?",
+   "Was ist deine Frage dazu? Formulier sie so, dass man darüber streiten kann.",
+   "Ich halte mal dagegen: Ein echter Freund lügt für dich. Überzeug mich vom Gegenteil – oder gib mir recht, mit Grund."
+  ],
+  "wennEsKippt": "Ist die Sortierung zu abstrakt, legt die Fachkraft zu jedem Feld ein Beispiel vor. Wird das Dilemma zu persönlich, wechselt sie zu erfundenen Personen: „Lina bittet Ben, für sie zu lügen …“",
+  "kurz": "Aristoteles: Nutzen, Spaß, um des anderen willen · Karten · Dilemma",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 20
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-41",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech",
+   "karten"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "karten",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Begründen, Beispiel, Gegenbeispiel – Gedanken prüfen, nicht Personen",
+   "fr": "Justifier, exemple, contre-exemple – examiner des idées, pas des personnes"
+  },
+  "vorbereitung": "Situationskarten ausdrucken; drei Felder auf Papier: Nutzen – Spaß – um des anderen willen.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Penser ensemble : utilité, plaisir ou plus ?",
+   "text": "L’adulte présente l’idée d’Aristote : il y a des amitiés d’utilité (on s’aide), de plaisir (on passe un bon moment) et des amitiés où l’on aime l’autre pour lui-même. Le ou la jeune trie des cartes-situations dans trois cases (« On joue souvent ensemble en ligne », « Elle me laisse copier », « Il était là quand j’allais mal ») et justifie chaque choix. Puis il ou elle formule sa propre question, par exemple « Une amitié d’utilité vaut-elle moins ? », et tous deux y réfléchissent avec des raisons, des exemples et des contre-exemples. Pour finir, l’adulte apporte un dilemme : « Un bon ami te demande de mentir pour lui – est-ce de l’amitié de dire oui, ou de dire non ? » Le ou la jeune prend position, et l’adulte défend exprès l’avis contraire pour faire naître des raisons.",
+   "sagen": [
+    "Utilité, plaisir ou pour l’autre lui-même – où va cette carte, et pourquoi ?",
+    "Quelle est ta question là-dessus ? Formule-la de façon à ce qu’on puisse en débattre.",
+    "Je défends l’avis contraire : un vrai ami ment pour toi. Convaincs-moi du contraire – ou donne-moi raison, avec une raison."
+   ],
+   "wennEsKippt": "Si le tri est trop abstrait, l’adulte pose un exemple dans chaque case. Si le dilemme devient trop personnel, l’adulte passe à des personnes inventées : « Lina demande à Ben de mentir pour elle … »",
+   "kurz": "Aristote : utilité, plaisir, l’autre pour lui-même · cartes · dilemme",
+   "vorbereitung": "Imprimer les cartes-situations ; trois cases sur une feuille : utilité – plaisir – pour l’autre lui-même."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Gedanke, über 2300 Jahre alt, und er passt trotzdem auf den Gruppenchat von heute: Aristoteles’ drei Arten von Freundschaft.",
+    "vorbereitung": [
+     "Situationskarten ausdrucken (siehe Karten)",
+     "Drei Felder auf Papier: Nutzen – Spaß – um des anderen willen",
+     "Leere Karten für eigene Situationen",
+     "Stift für die eigene Frage"
+    ],
+    "aufbau": "Die drei Felder liegen nebeneinander auf dem Tisch, die Karten verdeckt als Stapel. Beide sitzen über Eck, damit es nicht wie ein Verhör wirkt.",
+    "karten": [
+     {
+      "titel": "Situationskarten Freundschaft",
+      "karten": [
+       "Wir zocken oft zusammen online, sonst reden wir kaum.",
+       "Sie lässt mich abschreiben, und ich helfe ihr in Mathe.",
+       "Er war da, als es mir richtig schlecht ging.",
+       "Wir kennen uns nur aus dem Training.",
+       "Wir haben uns gestritten und trotzdem wieder vertragen.",
+       "Sie folgt mir überall, aber wir haben nie wirklich geredet.",
+       "Wir lachen viel, aber über Ernstes sprechen wir nie.",
+       "Er sagt mir ehrlich, wenn ich Mist baue.",
+       "Wir sind seit der Grundschule befreundet, haben heute aber wenig gemeinsam.",
+       "Ich bin mit ihr befreundet, weil sie beliebt ist.",
+       "Wir schreiben uns ständig, haben uns aber nie getroffen.",
+       "Er teilt alles mit mir – auch meine Geheimnisse mit anderen."
+      ]
+     }
+    ],
+    "leichter": "Nur zwei Felder (Freundschaft mit Vorteil – Freundschaft um des anderen willen) und fünf Karten; das Dilemma als Entweder-oder-Frage.",
+    "schwerer": "Den Gedanken von Aristoteles prüfen: Er hielt nur die dritte Art für dauerhaft. Stimmt das – mit Beispielen und Gegenbeispielen? Dazu eine eigene vierte Art von Freundschaft erfinden und begründen.",
+    "gruppe": "Mit mehreren (forschende Gemeinschaft nach Lipman): Die Gruppe sammelt Fragen zur Freundschaft, wählt per Handzeichen eine aus und denkt sie gemeinsam durch; wer spricht, bezieht sich auf die Person davor. Eine Person achtet als Denk-Beobachterin darauf, ob Gründe genannt werden.",
+    "beobachten": [
+     "Der oder die Jugendliche ordnet Situationen begründet zu und erkennt Mischformen.",
+     "Er oder sie hört eine Gegenposition an und antwortet darauf mit einem Grund.",
+     "Er oder sie formuliert eine eigene, offene Frage."
+    ],
+    "warum": "Philosophieren in der Gemeinschaft (Philosophy for Children) stärkt Begründen und Zuhören (Trickey & Topping, 2004); über Arten von Freundschaft nachzudenken hilft, eigene Beziehungen bewusster zu wählen und zu pflegen."
+   },
+   "fr": {
+    "haken": "Une idée vieille de plus de 2300 ans, qui colle pourtant au groupe de discussion d’aujourd’hui : les trois sortes d’amitié d’Aristote.",
+    "vorbereitung": [
+     "Imprimer les cartes-situations (voir cartes)",
+     "Trois cases sur une feuille : utilité – plaisir – pour l’autre lui-même",
+     "Des cartes vierges pour ses propres situations",
+     "Un crayon pour sa propre question"
+    ],
+    "aufbau": "Les trois cases sont côte à côte sur la table, les cartes en pile, face cachée. Tous deux sont assis en angle, pour que ça ne ressemble pas à un interrogatoire.",
+    "karten": [
+     {
+      "titel": "Cartes-situations : l’amitié",
+      "karten": [
+       "On joue souvent ensemble en ligne, sinon on se parle à peine.",
+       "Elle me laisse copier, et je l’aide en maths.",
+       "Il était là quand j’allais vraiment mal.",
+       "On se connaît seulement par l’entraînement.",
+       "On s’est disputés et on s’est quand même réconciliés.",
+       "Elle me suit partout en ligne, mais on n’a jamais vraiment parlé.",
+       "On rit beaucoup, mais on ne parle jamais de choses sérieuses.",
+       "Il me dit franchement quand je fais une bêtise.",
+       "On est amis depuis l’école primaire, mais on a peu en commun aujourd’hui.",
+       "Je suis amie avec elle parce qu’elle est populaire.",
+       "On s’écrit sans arrêt, mais on ne s’est jamais vus.",
+       "Il partage tout avec moi – et aussi mes secrets avec d’autres."
+      ]
+     }
+    ],
+    "leichter": "Seulement deux cases (amitié avec avantage – amitié pour l’autre lui-même) et cinq cartes ; le dilemme sous forme de question « ou bien … ou bien ».",
+    "schwerer": "Examiner l’idée d’Aristote : pour lui, seule la troisième sorte est durable. Est-ce vrai – avec exemples et contre-exemples ? Inventer aussi une quatrième sorte d’amitié et la justifier.",
+    "gruppe": "En groupe (communauté de recherche selon Lipman) : le groupe rassemble des questions sur l’amitié, en choisit une à main levée et y réfléchit ensemble ; qui parle s’appuie sur la personne d’avant. Une personne observe la pensée et vérifie si des raisons sont données.",
+    "beobachten": [
+     "Le ou la jeune classe les situations en justifiant et repère les cas mixtes.",
+     "Il ou elle écoute une position contraire et y répond avec une raison.",
+     "Il ou elle formule sa propre question ouverte."
+    ],
+    "warum": "Philosopher en communauté (philosophie pour enfants) renforce l’argumentation et l’écoute (Trickey & Topping, 2004) ; réfléchir aux sortes d’amitié aide à choisir et entretenir ses relations plus consciemment."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-freundschaft-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Mein Gedanke heute: Was ich in Freundschaften will",
+  "text": "Die Fachkraft holt die Zahlen 500 und 5 vom Anfang zurück und fragt, ob der oder die Jugendliche die Frage jetzt anders beantwortet. Er oder sie ergänzt den Satz „Mein Gedanke heute: Ein echter Freund ist …“ und, wenn er oder sie mag, einen zweiten: „Was ich selbst in Freundschaften geben will: …“. Gemeinsam überlegen beide, woran man das in nächster Zeit merken könnte, etwa im Chat, im Training oder in der Pause. Der Zettel bleibt bei dem oder der Jugendlichen; vorlesen ist freiwillig.",
+  "sagen": [
+   "500 oder 5 – was sagst du jetzt?",
+   "Mein Gedanke heute: Ein echter Freund ist … Und was willst du selbst geben?",
+   "Woran würde man das merken – im Chat, im Training, in der Pause?"
+  ],
+  "wennEsKippt": "Fällt kein Satz ein, wählt der oder die Jugendliche die Situationskarte, die am besten zu einer echten Freundschaft passt, und sagt, warum. Wer nichts über sich sagen will, bleibt beim allgemeinen Satz.",
+  "kurz": "500 oder 5? · Gedanke heute · was ich selbst geben will",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 9
+  },
+  "thema": [
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-41",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Ma pensée du jour : ce que je veux dans l’amitié",
+   "text": "L’adulte reprend les nombres 500 et 5 du début et demande si le ou la jeune répond maintenant autrement. Il ou elle complète la phrase « Ma pensée du jour : un vrai ami, c’est … » et, au choix, une deuxième : « Ce que je veux moi-même donner en amitié : … ». Ensemble, ils réfléchissent à la façon dont on pourrait le remarquer prochainement, par exemple dans le chat, à l’entraînement ou à la pause. Le papier reste chez le ou la jeune ; le lire à voix haute est libre.",
+   "sagen": [
+    "500 ou 5 – qu’en dis-tu maintenant ?",
+    "Ma pensée du jour : un vrai ami, c’est … Et toi, que veux-tu donner ?",
+    "À quoi est-ce qu’on le remarquerait – dans le chat, à l’entraînement, à la pause ?"
+   ],
+   "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit la carte-situation qui correspond le mieux à une vraie amitié et dit pourquoi. Sans envie de parler de soi, la phrase générale suffit.",
+   "kurz": "500 ou 5 ? · pensée du jour · ce que je veux donner"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Frage vom Anfang noch einmal – und der Moment, in dem man merkt, dass sich das eigene Denken bewegt hat.",
+    "gruppe": "Mit mehreren: Alle schreiben ihren Satz still auf; wer mag, liest vor. Die Gruppe sammelt ohne Namen, was Menschen in Freundschaften geben wollen.",
+    "beobachten": [
+     "Der oder die Jugendliche benennt, ob und warum sich die eigene Sicht verändert hat.",
+     "Er oder sie formuliert einen eigenen Satz über echte Freundschaft.",
+     "Er oder sie nennt etwas, das er oder sie selbst in Freundschaften geben will."
+    ]
+   },
+   "fr": {
+    "haken": "La question du début, une deuxième fois – et le moment où l’on remarque que sa propre pensée a bougé.",
+    "gruppe": "En groupe : chacun écrit sa phrase en silence ; qui veut la lit. Le groupe rassemble, sans noms, ce que les gens veulent donner en amitié.",
+    "beobachten": [
+     "Le ou la jeune dit si et pourquoi son point de vue a changé.",
+     "Il ou elle formule sa propre phrase sur la vraie amitié.",
+     "Il ou elle nomme quelque chose qu’il ou elle veut donner en amitié."
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:phi-gerecht-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Denkanstoß: Neun Kekse, drei Kinder",
+  "text": "Die Fachkraft legt neun Bausteine als Kekse auf den Tisch und erzählt: „Mia, Sami und Tom bekommen neun Kekse. Mia hat beim Tischdecken geholfen, Sami hat heute noch nichts gegessen, und Tom ist der Jüngste.“ Das Kind verteilt die Kekse auf drei Zettel mit den Namen und erklärt, warum es so verteilt. Die Fachkraft legt mit Kreppband eine Denk-Linie (Ja – Kommt drauf an – Nein) auf den Boden und fragt: „Ist gleich viel für alle immer gerecht?“ Das Kind stellt sich an seinen Platz und sagt einen Satz mit „weil“.",
+  "sagen": [
+   "Neun Kekse, drei Kinder. Wie verteilst du sie – und warum so?",
+   "Ist gleich viel für alle immer gerecht? Stell dich auf die Linie.",
+   "Sag mir deinen Grund: weil …"
+  ],
+  "wennEsKippt": "Ist dem Kind die Geschichte zu lang, erzählt die Fachkraft nur von zwei Kindern und sechs Keksen. Mag es nicht aufstehen, legt es einen Baustein auf eine gemalte Linie.",
+  "kurz": "9 Baustein-Kekse verteilen · Ist gleich immer gerecht? · Denk-Linie",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 7
+  },
+  "thema": [
+   "regeln",
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-21",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "spiel",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "bausteine",
+   "papier",
+   "stifte",
+   "klebeband"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Le déclic : neuf biscuits, trois enfants",
+   "text": "L’adulte pose neuf cubes sur la table comme des biscuits et raconte : « Mia, Sami et Tom reçoivent neuf biscuits. Mia a aidé à mettre la table, Sami n’a encore rien mangé aujourd’hui, et Tom est le plus petit. » L’enfant répartit les biscuits sur trois papiers avec les prénoms et explique pourquoi il les répartit ainsi. L’adulte colle au sol une ligne de réflexion (oui – ça dépend – non) avec du ruban adhésif et demande : « Est-ce que la même chose pour tous, c’est toujours juste ? » L’enfant se place et dit une phrase avec « parce que ».",
+   "sagen": [
+    "Neuf biscuits, trois enfants. Comment les répartis-tu – et pourquoi comme ça ?",
+    "La même chose pour tous, c’est toujours juste ? Place-toi sur la ligne.",
+    "Dis-moi ta raison : parce que …"
+   ],
+   "wennEsKippt": "Si l’histoire est trop longue pour l’enfant, l’adulte parle seulement de deux enfants et six biscuits. S’il ne veut pas se lever, il pose un cube sur une ligne dessinée.",
+   "kurz": "Répartir 9 biscuits-cubes · pareil = juste ? · ligne de réflexion"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Neun Kekse, drei Kinder, drei gute Gründe – und keine Verteilung, die alle gleich zufrieden macht.",
+    "vorbereitung": [
+     "Neun Bausteine als Kekse",
+     "Drei Zettel mit Mia, Sami, Tom",
+     "Kreppband für die Denk-Linie, weicher Ball"
+    ],
+    "beobachten": [
+     "Das Kind verteilt und nennt einen Grund für seine Verteilung.",
+     "Es bezieht auf der Denk-Linie Stellung."
+    ],
+    "gruppe": "Mit mehreren: In Paaren verteilen die Kinder die Kekse und vergleichen dann ihre Verteilungen; danach stellen sich alle auf die Linie."
+   },
+   "fr": {
+    "haken": "Neuf biscuits, trois enfants, trois bonnes raisons – et aucune répartition qui contente tout le monde de la même façon.",
+    "vorbereitung": [
+     "Neuf cubes comme biscuits",
+     "Trois papiers avec Mia, Sami, Tom",
+     "Ruban adhésif pour la ligne, balle molle"
+    ],
+    "beobachten": [
+     "L’enfant répartit et donne une raison pour sa répartition.",
+     "Il prend position sur la ligne de réflexion."
+    ],
+    "gruppe": "En groupe : par deux, les enfants répartissent les biscuits puis comparent leurs répartitions ; ensuite, tous se placent sur la ligne."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-gerecht-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Gemeinsam nachdenken: Gleich, nach Bedarf oder nach Einsatz?",
+  "text": "Die Fachkraft zeigt drei Arten zu verteilen, jede mit einem Zeichen auf einem Zettel: gleich viel für alle (=), wer mehr braucht, bekommt mehr (Herz), wer mehr getan hat, bekommt mehr (Hand). Das Kind probiert jede Art mit den Baustein-Keksen aus und sagt, wer sich dabei freut und wer sich ärgern könnte. Dann kommen Situationskarten („Nur Sami braucht eine Brille – bekommen alle eine?“, „Tom ist kleiner – darf er beim Wettrennen etwas weiter vorne starten?“), und das Kind legt jeweils das passende Zeichen dazu und begründet. Die Fachkraft wirft mit dem Ball Denk-Fragen zu („Was wäre, wenn …?“, „Für wen ist das unfair?“) und vertritt manchmal bewusst eine andere Meinung. Zum Schluss stellt das Kind eine eigene Frage, etwa „Ist es gerecht, wenn die Lehrerin nur einem hilft?“, und beide denken sie gemeinsam durch.",
+  "sagen": [
+   "Gleich viel, nach Bedarf oder nach Einsatz – probier alle drei mit den Keksen aus.",
+   "Wer freut sich bei dieser Verteilung, und wer ärgert sich?",
+   "Nur Sami braucht eine Brille. Bekommen alle eine? Welches Zeichen passt?",
+   "Was wäre, wenn alle immer genau gleich viel bekämen – auch gleich viel Hilfe?"
+  ],
+  "wennEsKippt": "Sind drei Zeichen zu viel, arbeitet die Fachkraft nur mit „gleich“ und „nach Bedarf“. Fällt dem Kind etwas Ungerechtes ein, das es selbst erlebt hat, hört die Fachkraft zu und fragt dann: „Welches Zeichen hätte dort gepasst?“",
+  "kurz": "3 Arten verteilen (=, Herz, Hand) · Situationskarten · eigene Frage",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 20
+  },
+  "thema": [
+   "regeln",
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-21",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech",
+   "spiel"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "bausteine",
+   "ball",
+   "karten",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Fragen, was gerecht ist: gleich, nach Bedarf oder nach Einsatz?",
+   "fr": "Se demander ce qui est juste : pareil, selon le besoin ou selon l’effort ?"
+  },
+  "vorbereitung": "Drei Zettel mit den Zeichen =, Herz und Hand; Situationskarten ausdrucken; Baustein-Kekse und Ball bereitlegen.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Penser ensemble : pareil, selon le besoin ou selon l’effort ?",
+   "text": "L’adulte montre trois façons de répartir, avec pour chaque façon un signe sur un papier : la même chose pour tous (=), celui qui a plus besoin reçoit plus (cœur), celui qui a fait plus reçoit plus (main). L’enfant essaie les trois façons avec les biscuits-cubes et dit qui serait content et qui pourrait se fâcher. Viennent ensuite des cartes-situations (« Seul Sami a besoin de lunettes – est-ce que tous en reçoivent ? », « Tom est plus petit – peut-il partir un peu plus loin devant à la course ? ») ; l’enfant pose le signe qui convient et justifie. L’adulte lance la balle avec des questions pour penser (« Et si … ? », « Pour qui est-ce injuste ? ») et défend parfois exprès un autre avis. Pour finir, l’enfant pose sa propre question, par exemple « Est-ce juste si la maîtresse n’aide qu’un seul enfant ? », et tous deux y réfléchissent ensemble.",
+   "sagen": [
+    "Pareil, selon le besoin ou selon l’effort – essaie les trois avec les biscuits.",
+    "Avec cette répartition, qui est content, et qui se fâche ?",
+    "Seul Sami a besoin de lunettes. Est-ce que tous en reçoivent ? Quel signe va avec ?",
+    "Et si tous recevaient toujours la même chose – même la même aide ?"
+   ],
+   "wennEsKippt": "Si trois signes, c’est trop, l’adulte travaille seulement avec « pareil » et « selon le besoin ». Si l’enfant pense à une injustice qu’il a vécue, l’adulte écoute, puis demande : « Quel signe aurait convenu là ? »",
+   "kurz": "3 façons de répartir (=, cœur, main) · cartes-situations · sa question",
+   "vorbereitung": "Trois papiers avec les signes =, cœur et main ; imprimer les cartes-situations ; préparer les biscuits-cubes et la balle."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Drei Zeichen – gleich, Herz, Hand – und plötzlich sieht man, warum zwei Kinder beim selben Streit beide recht haben können.",
+    "vorbereitung": [
+     "Drei Zettel mit =, Herz und Hand",
+     "Situationskarten ausdrucken (siehe Karten)",
+     "Neun Bausteine als Kekse",
+     "Weicher Ball als Gedanken-Ball"
+    ],
+    "aufbau": "Die drei Zeichen liegen nebeneinander auf dem Tisch, die Karten als Stapel daneben. Die Denk-Linie vom Einstieg bleibt am Boden.",
+    "karten": [
+     {
+      "titel": "Situationskarten: Was ist gerecht?",
+      "karten": [
+       "Nur Sami braucht eine Brille. Bekommen alle eine?",
+       "Tom ist kleiner. Darf er beim Wettrennen etwas weiter vorne starten?",
+       "Amira hat den ganzen Tisch aufgeräumt, Noah nur seinen Platz. Bekommen beide gleich viel Spielzeit?",
+       "Lea spricht noch wenig Deutsch. Darf sie bei der Aufgabe ein Bildwörterbuch benutzen?",
+       "Im Bus gibt es fünf Sitzplätze und sechs Kinder. Wer steht?",
+       "Mia hat Geburtstag. Darf sie heute das Spiel aussuchen?",
+       "Noah hat sein Pausenbrot vergessen. Sollen die anderen teilen?",
+       "Sami schießt die meisten Tore. Darf er immer anstoßen?",
+       "Zwei Kinder wollen dasselbe Buch. Wie wird es gerecht?",
+       "Tom hat einen Gips am Arm. Muss er trotzdem beim Aufräumen helfen?"
+      ]
+     }
+    ],
+    "leichter": "Nur zwei Zeichen (= und Herz) und vier Karten; das Kind legt zuerst, die Fachkraft fragt nur „Warum?“.",
+    "schwerer": "Das Kind sucht eine Situation, in der keines der drei Zeichen passt, und erfindet ein viertes. Ältere prüfen: Gibt es Fälle, in denen „gleich“ ungerecht und „nach Bedarf“ gerecht ist – und umgekehrt?",
+    "gruppe": "Mit mehreren (Philosophieren nach Lipman): Die Gruppe sammelt eigene Fragen zur Gerechtigkeit und wählt eine aus; wer spricht, bezieht sich auf die Person davor („Ich stimme … zu, weil …“). Die Situationskarten werden in Paaren gelegt und dann verglichen.",
+    "beobachten": [
+     "Das Kind unterscheidet mindestens zwei Arten von Gerechtigkeit (gleich, nach Bedarf, nach Einsatz).",
+     "Es begründet, warum eine Verteilung für jemanden unfair sein könnte.",
+     "Es denkt über eine Meinung nach, die nicht seine ist, und antwortet darauf."
+    ],
+    "warum": "Kinder entwickeln sich vom Prinzip „alle gleich“ zu Gerechtigkeit nach Bedarf und Einsatz (Damon, 1977); wer diese Sichtweisen im Gespräch prüft, versteht, warum andere einen Streit anders sehen, und findet fairere Lösungen."
+   },
+   "fr": {
+    "haken": "Trois signes – pareil, cœur, main – et soudain on voit pourquoi deux enfants peuvent avoir raison tous les deux dans la même dispute.",
+    "vorbereitung": [
+     "Trois papiers avec =, cœur et main",
+     "Imprimer les cartes-situations (voir cartes)",
+     "Neuf cubes comme biscuits",
+     "Une balle molle comme balle à idées"
+    ],
+    "aufbau": "Les trois signes sont côte à côte sur la table, les cartes en pile à côté. La ligne de réflexion du début reste au sol.",
+    "karten": [
+     {
+      "titel": "Cartes-situations : qu’est-ce qui est juste ?",
+      "karten": [
+       "Seul Sami a besoin de lunettes. Est-ce que tous en reçoivent ?",
+       "Tom est plus petit. Peut-il partir un peu plus loin devant à la course ?",
+       "Amira a rangé toute la table, Noah seulement sa place. Ont-ils autant de temps de jeu ?",
+       "Lea parle encore peu le français. Peut-elle utiliser un dictionnaire en images ?",
+       "Dans le bus, il y a cinq places assises et six enfants. Qui reste debout ?",
+       "C’est l’anniversaire de Mia. Peut-elle choisir le jeu aujourd’hui ?",
+       "Noah a oublié son goûter. Les autres doivent-ils partager ?",
+       "Sami marque le plus de buts. Peut-il toujours donner le coup d’envoi ?",
+       "Deux enfants veulent le même livre. Comment faire pour que ce soit juste ?",
+       "Tom a un plâtre au bras. Doit-il quand même aider à ranger ?"
+      ]
+     }
+    ],
+    "leichter": "Seulement deux signes (= et cœur) et quatre cartes ; l’enfant pose d’abord, l’adulte demande seulement « Pourquoi ? ».",
+    "schwerer": "L’enfant cherche une situation où aucun des trois signes ne convient et en invente un quatrième. Les plus grands vérifient : y a-t-il des cas où « pareil » est injuste et « selon le besoin » juste – et inversement ?",
+    "gruppe": "En groupe (philosophie pour enfants selon Lipman) : le groupe rassemble ses questions sur la justice et en choisit une ; qui parle s’appuie sur la personne d’avant (« Je suis d’accord avec … parce que … »). Les cartes-situations sont posées par deux, puis comparées.",
+    "beobachten": [
+     "L’enfant distingue au moins deux sortes de justice (pareil, selon le besoin, selon l’effort).",
+     "Il explique pourquoi une répartition pourrait être injuste pour quelqu’un.",
+     "Il réfléchit à un avis qui n’est pas le sien et y répond."
+    ],
+    "warum": "Les enfants passent du principe « tous pareil » à une justice selon le besoin et l’effort (Damon, 1977) ; examiner ces points de vue en discutant aide à comprendre pourquoi d’autres voient une dispute autrement, et à trouver des solutions plus justes."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-gerecht-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Mein Gedanke heute: Gerecht im Streit",
+  "text": "Das Kind stellt sich noch einmal auf die Denk-Linie zur Frage „Ist gleich viel für alle immer gerecht?“ und vergleicht mit seinem Platz vom Anfang. Dann kommt die Brücke zum Streit: Die Fachkraft beschreibt einen kleinen Streit, etwa zwei Kinder und eine Schaukel in der Pause, und das Kind sucht mit den drei Zeichen eine Lösung, die beide fair finden könnten. Zum Schluss beendet es den Satz „Mein Gedanke heute: Gerecht ist, wenn …“, und die Fachkraft schreibt ihn auf.",
+  "sagen": [
+   "Wo stehst du jetzt auf der Linie – und warum?",
+   "Zwei Kinder, eine Schaukel. Welches Zeichen hilft hier, damit es für beide fair ist?",
+   "Mein Gedanke heute: Gerecht ist, wenn … Mach den Satz fertig."
+  ],
+  "wennEsKippt": "Fällt keine Lösung ein, bietet die Fachkraft zwei an (abwechseln mit der Sanduhr – wer länger gewartet hat, fängt an), und das Kind wählt und begründet. Will es nicht schreiben, sagt es den Satz nur.",
+  "kurz": "Zurück auf die Linie · Streit um die Schaukel · Gedanke heute",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 9
+  },
+  "thema": [
+   "regeln",
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-21",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-34",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech",
+   "bewegung"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "klebeband",
+   "papier",
+   "stifte",
+   "sanduhr"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Ma pensée du jour : être juste dans une dispute",
+   "text": "L’enfant se replace sur la ligne de réflexion pour la question « La même chose pour tous, c’est toujours juste ? » et compare avec sa place du début. Puis vient le lien avec les disputes : l’adulte décrit une petite dispute, par exemple deux enfants et une balançoire à la pause, et l’enfant cherche avec les trois signes une solution que les deux pourraient trouver juste. Pour finir, il termine la phrase « Ma pensée du jour : c’est juste quand … », et l’adulte l’écrit.",
+   "sagen": [
+    "Où es-tu maintenant sur la ligne – et pourquoi ?",
+    "Deux enfants, une balançoire. Quel signe aide ici, pour que ce soit juste pour les deux ?",
+    "Ma pensée du jour : c’est juste quand … Termine la phrase."
+   ],
+   "wennEsKippt": "Si aucune solution ne vient, l’adulte en propose deux (alterner avec le sablier – celui qui a attendu le plus longtemps commence), et l’enfant choisit et justifie. S’il ne veut pas écrire, il dit seulement la phrase.",
+   "kurz": "Retour sur la ligne · dispute pour la balançoire · pensée du jour"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein echter Pausen-Klassiker: zwei Kinder, eine Schaukel – und jetzt hat das Kind drei Werkzeuge, um ihn zu lösen.",
+    "gruppe": "Mit mehreren: Die Gruppe spielt den Schaukel-Streit kurz vor; die Zuschauenden schlagen mit den drei Zeichen Lösungen vor. Am Ende sagt jedes Kind seinen Satz „Gerecht ist, wenn …“.",
+    "beobachten": [
+     "Das Kind bemerkt, ob und warum sich sein Platz auf der Linie verändert hat.",
+     "Es schlägt für den Streit eine Lösung vor und nennt das passende Zeichen.",
+     "Es formuliert einen eigenen Satz über Gerechtigkeit."
+    ]
+   },
+   "fr": {
+    "haken": "Un grand classique de la pause : deux enfants, une balançoire – et maintenant l’enfant a trois outils pour régler ça.",
+    "gruppe": "En groupe : le groupe joue rapidement la dispute de la balançoire ; ceux qui regardent proposent des solutions avec les trois signes. À la fin, chaque enfant dit sa phrase « C’est juste quand … ».",
+    "beobachten": [
+     "L’enfant remarque si et pourquoi sa place sur la ligne a changé.",
+     "Il propose une solution pour la dispute et nomme le signe qui va avec.",
+     "Il formule sa propre phrase sur la justice."
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:phi-gerecht-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Denkanstoß: Gleich oder gerecht?",
+  "text": "Die Fachkraft skizziert drei Strichmännchen unterschiedlicher Größe hinter einem Zaun, die ein Fußballspiel sehen wollen, und darunter zwei Varianten: Jeder bekommt gleich viele Kisten zum Draufstellen – oder so viele, wie er braucht, um über den Zaun zu sehen. Sie fragt: „Welches Bild ist gerecht?“ Der oder die Jugendliche antwortet und begründet. Dann legt die Fachkraft nach: „Und wenn nur der Größte eine Eintrittskarte bezahlt hat?“ Zum Schluss nennt sie die Gesprächsregeln: Gedanken prüfen, nicht Personen; begründen; Meinung ändern ist erlaubt.",
+  "sagen": [
+   "Drei Leute, ein Zaun, ein Spiel. Welches Bild ist gerecht?",
+   "Und wenn nur der Größte bezahlt hat – ändert das etwas?",
+   "Hier prüfen wir Gedanken, nicht Personen. Meinung ändern ist erlaubt."
+  ],
+  "wennEsKippt": "Antwortet der oder die Jugendliche nur „egal“, fragt die Fachkraft: „Für wen wäre es nicht egal?“ Wirkt die Skizze zu verspielt, beschreibt sie die Lage nur mit Worten.",
+  "kurz": "Zaun-Skizze · gleich oder nach Bedarf? · und wenn einer bezahlt hat?",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 7
+  },
+  "thema": [
+   "regeln",
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-35",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Le déclic : égal ou juste ?",
+   "text": "L’adulte esquisse trois bonshommes de tailles différentes derrière une palissade, qui veulent voir un match de foot, et en dessous deux variantes : tous reçoivent le même nombre de caisses pour monter dessus – ou autant de caisses qu’il en faut pour que les trois voient par-dessus. Question : « Quelle image est juste ? » Le ou la jeune répond et justifie. Puis l’adulte ajoute : « Et si seul le plus grand avait payé son billet ? » Pour finir, l’adulte présente les règles de discussion : examiner des idées, pas des personnes ; justifier ; changer d’avis est permis.",
+   "sagen": [
+    "Trois personnes, une palissade, un match. Quelle image est juste ?",
+    "Et si seul le plus grand avait payé – est-ce que ça change quelque chose ?",
+    "Ici, on examine des idées, pas des personnes. Changer d’avis est permis."
+   ],
+   "wennEsKippt": "Si le ou la jeune répond seulement « peu importe », l’adulte demande : « Pour qui est-ce que ça compterait ? » Si l’esquisse semble trop enfantine, l’adulte décrit la situation seulement avec des mots.",
+   "kurz": "Palissade · égal ou selon le besoin ? · et si un seul a payé ?"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Drei Strichmännchen, ein Zaun, zwei Bilder – und die Frage, ob gleich wirklich gerecht ist.",
+    "vorbereitung": [
+     "Papier und Stift für die Skizze",
+     "Die drei Gesprächsregeln auf einem Zettel"
+    ],
+    "beobachten": [
+     "Der oder die Jugendliche begründet, welches Bild er oder sie gerecht findet.",
+     "Er oder sie lässt sich von der neuen Information (bezahlt) zum Nachdenken bringen."
+    ],
+    "gruppe": "Mit mehreren: Alle entscheiden sich still für ein Bild und zeigen es gleichzeitig mit einer Hand (links oder rechts); zwei Personen mit verschiedener Wahl begründen zuerst."
+   },
+   "fr": {
+    "haken": "Trois bonshommes, une palissade, deux images – et la question : est-ce qu’égal veut vraiment dire juste ?",
+    "vorbereitung": [
+     "Papier et crayon pour l’esquisse",
+     "Les trois règles de discussion sur un papier"
+    ],
+    "beobachten": [
+     "Le ou la jeune justifie quelle image il ou elle trouve juste.",
+     "Il ou elle se laisse faire réfléchir par la nouvelle information (le billet payé)."
+    ],
+    "gruppe": "En groupe : chacun choisit en silence une image et la montre en même temps d’une main (gauche ou droite) ; deux personnes qui ont choisi différemment justifient en premier."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-gerecht-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Gemeinsam nachdenken: Hinter dem Schleier",
+  "text": "Die Fachkraft stellt ein Gedankenexperiment des Philosophen John Rawls vor: Man legt Regeln fest, ohne zu wissen, wer man selbst später in der Situation sein wird – wie hinter einem Schleier. Der oder die Jugendliche wählt eine Situation, etwa Spielzeit im Fußballverein oder mehr Zeit bei einer Arbeit in der Schule, und schreibt eine Regel, die gerecht sein soll. Dann zieht er oder sie verdeckt Rollenkarten („neu in Luxemburg, lernt gerade Französisch“, „beste Spielerin im Verein“, „sitzt im Rollstuhl“) und prüft jedes Mal: Wäre ich als diese Person mit meiner Regel einverstanden? Die Regel darf verbessert werden, und beide benennen, ob sie auf Gleichheit, Bedarf oder Leistung beruht. Zum Schluss formuliert der oder die Jugendliche eine eigene Frage, etwa „Ist es unfair, wenn jemand mehr Hilfe bekommt?“, und beide denken sie mit Gründen und Gegenbeispielen durch.",
+  "sagen": [
+   "Du machst die Regel – aber du weißt nicht, wer du danach bist. Was schreibst du?",
+   "Jetzt bist du diese Person. Wärst du mit deiner Regel einverstanden?",
+   "Beruht deine Regel auf Gleichheit, auf Bedarf oder auf Leistung – oder auf einer Mischung?",
+   "Ich halte mal dagegen: Wer mehr Hilfe bekommt, hat einen unfairen Vorteil. Was sagst du?"
+  ],
+  "wennEsKippt": "Ist das Gedankenexperiment zu abstrakt, nimmt die Fachkraft nur eine Situation und drei Rollenkarten. Passt eine Rolle zur eigenen Lage und wird dadurch zu persönlich, kann der oder die Jugendliche sie ohne Begründung zurücklegen.",
+  "kurz": "Schleier des Nichtwissens · Regel schreiben · Rollen ziehen · prüfen",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 20
+  },
+  "thema": [
+   "regeln",
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-35",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech",
+   "karten"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "karten",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Regel prüfen: Wäre ich in jeder Rolle einverstanden?",
+   "fr": "Tester une règle : serais-je d’accord dans chaque rôle ?"
+  },
+  "vorbereitung": "Situations- und Rollenkarten ausdrucken, Papier für die Regel, drei Zettel: Gleichheit – Bedarf – Leistung.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Penser ensemble : derrière le voile",
+   "text": "L’adulte présente une expérience de pensée du philosophe John Rawls : on fixe des règles sans savoir qui l’on sera soi-même ensuite dans la situation – comme derrière un voile. Le ou la jeune choisit une situation, par exemple le temps de jeu dans un club de foot ou plus de temps pour un devoir en classe, et écrit une règle qui doit être juste. Puis il ou elle tire des cartes-rôles face cachée (« nouvelle au Luxembourg, apprend encore l’allemand », « meilleure joueuse du club », « se déplace en fauteuil roulant ») et vérifie à chaque fois : serais-je d’accord avec ma règle si j’étais cette personne ? La règle peut être améliorée, et tous deux disent si elle repose sur l’égalité, le besoin ou le mérite. Pour finir, le ou la jeune formule sa propre question, par exemple « Est-ce injuste que quelqu’un reçoive plus d’aide ? », et tous deux y réfléchissent avec des raisons et des contre-exemples.",
+   "sagen": [
+    "Tu fais la règle – mais tu ne sais pas qui tu seras ensuite. Qu’est-ce que tu écris ?",
+    "Maintenant, tu es cette personne. Serais-tu d’accord avec ta règle ?",
+    "Ta règle repose-t-elle sur l’égalité, le besoin ou le mérite – ou sur un mélange ?",
+    "Je défends l’avis contraire : qui reçoit plus d’aide a un avantage injuste. Qu’en dis-tu ?"
+   ],
+   "wennEsKippt": "Si l’expérience de pensée est trop abstraite, l’adulte prend une seule situation et trois cartes-rôles. Si un rôle correspond à sa propre situation et devient trop personnel, le ou la jeune peut le reposer sans explication.",
+   "kurz": "Voile d’ignorance · écrire une règle · tirer des rôles · vérifier",
+   "vorbereitung": "Imprimer les cartes-situations et les cartes-rôles, papier pour la règle, trois papiers : égalité – besoin – mérite."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Du darfst die Regeln machen – aber erst danach erfährst du, wer du bist. Ein Gedankenexperiment, das Streit um Fairness plötzlich klar macht.",
+    "vorbereitung": [
+     "Situationskarten und Rollenkarten ausdrucken (siehe Karten)",
+     "Papier und Stift für die Regel",
+     "Drei Zettel: Gleichheit – Bedarf – Leistung"
+    ],
+    "aufbau": "Die Situationen liegen offen auf dem Tisch, die Rollenkarten verdeckt als Stapel. Beide sitzen über Eck.",
+    "karten": [
+     {
+      "titel": "Situationen",
+      "karten": [
+       "Spielzeit im Fußballverein: Spielen immer die Besten?",
+       "Mehr Zeit bei einer Arbeit in der Schule – für wen?",
+       "Handyzeit im Jugendhaus: gleich für alle?",
+       "Wer darf zuerst an die Konsole im Jugendhaus?",
+       "Plätze im Sommercamp: Wer sich zuerst anmeldet?",
+       "Gruppenarbeit: Bekommen alle dieselbe Note?",
+       "Ein Preisgeld für ein Schulprojekt: Wie wird es geteilt?"
+      ]
+     },
+     {
+      "titel": "Rollenkarten",
+      "karten": [
+       "neu in Luxemburg, lernt gerade Französisch",
+       "beste Spielerin im Verein",
+       "sitzt im Rollstuhl",
+       "sehr schüchtern, meldet sich nie",
+       "hat am meisten für das Projekt gearbeitet",
+       "kommt oft zu spät, weil der Bus aus dem Dorf selten fährt",
+       "kann sich gut durchsetzen",
+       "jüngste Person in der Runde",
+       "hat keinen ruhigen Platz zum Lernen",
+       "spielt seit Jahren, aber nicht besonders gut"
+      ]
+     }
+    ],
+    "leichter": "Nur eine Situation und drei Rollenkarten; die Fachkraft gibt einen Regel-Anfang vor: „Wer …, bekommt …“",
+    "schwerer": "Zwei Regeln vergleichen, die beide hinter dem Schleier entstanden sind: Welche würde eine ganze Gruppe eher annehmen? Dazu nachlesen, wie Rawls begründet, dass Ungleichheit nur erlaubt ist, wenn sie den am schlechtesten Gestellten nützt.",
+    "gruppe": "Mit mehreren: Kleingruppen schreiben je eine Regel hinter dem Schleier, dann werden Rollenkarten ausgeteilt, und jede Person prüft die Regel der anderen Gruppe aus ihrer Rolle. Danach wählt die Gruppe eine eigene Frage zur Gerechtigkeit und denkt sie als forschende Gemeinschaft nach Lipman durch.",
+    "beobachten": [
+     "Der oder die Jugendliche prüft eine Regel aus mindestens drei Perspektiven.",
+     "Er oder sie unterscheidet Gleichheit, Bedarf und Leistung als Gründe.",
+     "Er oder sie verändert die eigene Regel begründet, wenn eine Rolle benachteiligt wird."
+    ],
+    "warum": "Rawls’ Schleier des Nichtwissens zwingt dazu, eine Regel aus allen Perspektiven zu prüfen (Rawls, 1971); wer Gleichheit, Bedarf und Leistung als verschiedene Gerechtigkeitsprinzipien kennt, versteht, warum im Streit beide Seiten recht haben können (Deutsch, 1975)."
+   },
+   "fr": {
+    "haken": "Tu as le droit de faire les règles – mais tu apprends seulement après qui tu es. Une expérience de pensée qui éclaire d’un coup les disputes sur ce qui est juste.",
+    "vorbereitung": [
+     "Imprimer les cartes-situations et les cartes-rôles (voir cartes)",
+     "Papier et crayon pour la règle",
+     "Trois papiers : égalité – besoin – mérite"
+    ],
+    "aufbau": "Les situations sont posées face visible sur la table, les cartes-rôles en pile, face cachée. Tous deux sont assis en angle.",
+    "karten": [
+     {
+      "titel": "Situations",
+      "karten": [
+       "Temps de jeu au club de foot : les meilleurs jouent-ils toujours ?",
+       "Plus de temps pour un devoir en classe – pour qui ?",
+       "Temps d’écran au centre de jeunes : pareil pour tous ?",
+       "Qui a le droit d’aller en premier sur la console du centre de jeunes ?",
+       "Places au camp d’été : premier inscrit, premier servi ?",
+       "Travail de groupe : tous reçoivent-ils la même note ?",
+       "Un prix en argent pour un projet d’école : comment le partager ?"
+      ]
+     },
+     {
+      "titel": "Cartes-rôles",
+      "karten": [
+       "nouvelle au Luxembourg, apprend encore l’allemand",
+       "meilleure joueuse du club",
+       "se déplace en fauteuil roulant",
+       "très timide, ne lève jamais la main",
+       "a le plus travaillé pour le projet",
+       "arrive souvent en retard, car le bus du village passe rarement",
+       "sait bien s’imposer",
+       "la plus jeune personne du groupe",
+       "n’a pas d’endroit calme pour apprendre",
+       "joue depuis des années, mais pas très bien"
+      ]
+     }
+    ],
+    "leichter": "Une seule situation et trois cartes-rôles ; l’adulte donne un début de règle : « Celui qui …, reçoit … »",
+    "schwerer": "Comparer deux règles nées toutes deux derrière le voile : laquelle un groupe entier accepterait-il plus facilement ? Lire aussi comment Rawls justifie que l’inégalité n’est permise que si elle profite aux plus défavorisés.",
+    "gruppe": "En groupe : des petits groupes écrivent chacun une règle derrière le voile, puis on distribue les cartes-rôles et chaque personne teste la règle de l’autre groupe depuis son rôle. Ensuite, le groupe choisit sa propre question sur la justice et y réfléchit comme communauté de recherche selon Lipman.",
+    "beobachten": [
+     "Le ou la jeune teste une règle depuis au moins trois points de vue.",
+     "Il ou elle distingue égalité, besoin et mérite comme raisons.",
+     "Il ou elle modifie sa règle en justifiant quand un rôle est désavantagé."
+    ],
+    "warum": "Le voile d’ignorance de Rawls oblige à examiner une règle depuis tous les points de vue (Rawls, 1971) ; qui connaît l’égalité, le besoin et le mérite comme principes de justice différents comprend pourquoi, dans une dispute, les deux côtés peuvent avoir raison (Deutsch, 1975)."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-gerecht-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Mein Gedanke heute: Fair streiten",
+  "text": "Die Fachkraft fragt nach einem typischen Streit unter Jugendlichen, bei dem es eigentlich um Gerechtigkeit geht, etwa wer im Verein spielen darf oder wer im Gruppenchat entscheidet. Der oder die Jugendliche überlegt, welches Prinzip jede Seite im Kopf haben könnte – Gleichheit, Bedarf oder Leistung – und wie ein Satz klingen würde, der das offen anspricht („Du meinst gleich viel für alle, ich meine nach Einsatz – können wir das mischen?“). Zum Schluss beendet er oder sie den Satz „Mein Gedanke heute: Gerecht ist …“ und sagt, ob sich die Meinung vom Anfang bewegt hat.",
+  "sagen": [
+   "Bei welchem Streit geht es eigentlich um Gerechtigkeit?",
+   "Welches Prinzip hat jede Seite im Kopf – Gleichheit, Bedarf oder Leistung?",
+   "Mein Gedanke heute: Gerecht ist … Und hat sich deine Meinung vom Anfang bewegt?"
+  ],
+  "wennEsKippt": "Fällt kein Streit ein, nimmt die Fachkraft einen erfundenen: Yusuf und Chloé streiten, wer im Projekt die Präsentation halten darf. Will der oder die Jugendliche nichts über sich sagen, reicht der allgemeine Satz.",
+  "kurz": "Streit = zwei Gerechtigkeiten? · Satz, der es anspricht · Gedanke",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 9
+  },
+  "thema": [
+   "regeln",
+   "freundschaft"
+  ],
+  "kompetenz": [
+   "konflikte"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-35",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Ma pensée du jour : se disputer de façon juste",
+   "text": "L’adulte demande une dispute typique entre jeunes où il s’agit au fond de justice, par exemple qui a le droit de jouer au club ou qui décide dans le groupe de discussion. Le ou la jeune réfléchit au principe que chaque côté pourrait avoir en tête – égalité, besoin ou mérite – et à une phrase qui le dirait ouvertement (« Tu penses pareil pour tous, moi je pense selon l’effort – on peut mélanger ? »). Pour finir, il ou elle termine la phrase « Ma pensée du jour : c’est juste quand … » et dit si son avis du début a bougé.",
+   "sagen": [
+    "Dans quelle dispute s’agit-il au fond de justice ?",
+    "Quel principe chaque côté a-t-il en tête – égalité, besoin ou mérite ?",
+    "Ma pensée du jour : c’est juste quand … Et ton avis du début a-t-il bougé ?"
+   ],
+   "wennEsKippt": "Si aucune dispute ne vient, l’adulte en prend une inventée : Yusuf et Chloé se disputent pour savoir qui présente le projet. Sans envie de parler de soi, la phrase générale suffit.",
+   "kurz": "Dispute = deux justices ? · une phrase pour le dire · pensée du jour"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Viele Streits sind eigentlich ein Streit zwischen zwei Gerechtigkeiten – wer das erkennt, kann anders streiten.",
+    "gruppe": "Mit mehreren: Die Gruppe sammelt typische Streitfälle ohne Namen; zu jedem schreibt ein Paar den Satz, der die zwei Gerechtigkeiten offen anspricht. Am Ende sagt jede Person ihren Satz „Gerecht ist …“.",
+    "beobachten": [
+     "Der oder die Jugendliche erkennt in einem Streit verschiedene Gerechtigkeitsprinzipien.",
+     "Er oder sie formuliert einen Satz, der beide Sichtweisen anerkennt.",
+     "Er oder sie benennt, ob sich die eigene Meinung verändert hat."
+    ],
+    "warum": "Wer im Streit die Sicht der anderen Seite in Worte fassen kann, bevor er die eigene vertritt, macht eine Einigung wahrscheinlicher; Perspektivübernahme ist ein Kern konstruktiver Konfliktlösung."
+   },
+   "fr": {
+    "haken": "Beaucoup de disputes sont en fait une dispute entre deux idées de la justice – qui le voit peut se disputer autrement.",
+    "gruppe": "En groupe : le groupe rassemble des disputes typiques sans noms ; pour chacune, un duo écrit la phrase qui nomme ouvertement les deux justices. À la fin, chaque personne dit sa phrase « C’est juste quand … ».",
+    "beobachten": [
+     "Le ou la jeune reconnaît différents principes de justice dans une dispute.",
+     "Il ou elle formule une phrase qui reconnaît les deux points de vue.",
+     "Il ou elle dit si son propre avis a changé."
+    ],
+    "warum": "Pouvoir mettre en mots le point de vue de l’autre côté avant de défendre le sien rend un accord plus probable ; prendre la perspective de l’autre est au cœur d’une résolution constructive des conflits."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-mut-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Denkanstoß: Lea auf dem Sprungbrett",
+  "text": "Die Fachkraft erzählt eine Geschichte mit offenem Ende: „Lea steht im Schwimmbad oben auf dem Drei-Meter-Brett. Ihre Knie zittern, ihr Bauch kribbelt. Unten ruft Tom: Spring doch, du Angsthase!“ Die Fachkraft hält inne und fragt: „Was soll Lea tun?“, und das Kind erzählt, wie es weitergehen könnte. Dann legt sie mit Kreppband die Denk-Linie (Ja – Kommt drauf an – Nein) und stellt die Frage: „Kann man mutig sein und gleichzeitig Angst haben?“ Das Kind stellt sich an seinen Platz und sagt einen Satz mit „weil“.",
+  "sagen": [
+   "Lea steht ganz oben. Ihre Knie zittern. Was soll sie tun?",
+   "Kann man mutig sein und gleichzeitig Angst haben? Stell dich auf die Linie.",
+   "Sag mir deinen Grund: weil …"
+  ],
+  "wennEsKippt": "Macht die Geschichte dem Kind selbst Angst, spielt sie auf einem Turm aus Bauklötzen mit einer kleinen Spielfigur statt im Schwimmbad. Mag es nicht aufstehen, zeigt es auf eine gemalte Linie.",
+  "kurz": "Lea auf dem Sprungbrett · Mut und Angst zugleich? · Denk-Linie",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 7
+  },
+  "thema": [
+   "angst"
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "gefuehle-ausdruecken"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "geschichte",
+   "bewegung"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "klebeband",
+   "papier"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Le déclic : Lea sur le plongeoir",
+   "text": "L’adulte raconte une histoire à la fin ouverte : « À la piscine, Lea est tout en haut du plongeoir de trois mètres. Ses genoux tremblent, son ventre picote. En bas, Tom crie : Saute, trouillarde ! » L’adulte s’arrête et demande : « Que doit faire Lea ? », et l’enfant raconte comment l’histoire pourrait continuer. Puis l’adulte colle la ligne de réflexion (oui – ça dépend – non) avec du ruban adhésif et pose la question : « Peut-on être courageux et avoir peur en même temps ? » L’enfant se place et dit une phrase avec « parce que ».",
+   "sagen": [
+    "Lea est tout en haut. Ses genoux tremblent. Que doit-elle faire ?",
+    "Peut-on être courageux et avoir peur en même temps ? Place-toi sur la ligne.",
+    "Dis-moi ta raison : parce que …"
+   ],
+   "wennEsKippt": "Si l’histoire fait peur à l’enfant, elle se joue sur une tour de cubes avec une petite figurine plutôt qu’à la piscine. S’il ne veut pas se lever, il montre une ligne dessinée.",
+   "kurz": "Lea sur le plongeoir · courage et peur à la fois ? · ligne"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Eine Geschichte, die mitten im spannendsten Moment stoppt – und das Kind entscheidet, wie es weitergeht.",
+    "vorbereitung": [
+     "Kreppband für die Denk-Linie",
+     "Drei Zettel: Ja – Kommt drauf an – Nein"
+    ],
+    "beobachten": [
+     "Das Kind denkt sich ein Ende für Lea aus.",
+     "Es bezieht auf der Linie Stellung und nennt einen Grund."
+    ],
+    "gruppe": "Mit mehreren: Jedes Kind darf kurz ein Ende für Lea vorschlagen; dann stellen sich alle auf die Linie, und zwei Kinder von verschiedenen Stellen begründen."
+   },
+   "fr": {
+    "haken": "Une histoire qui s’arrête au moment le plus palpitant – et c’est l’enfant qui décide de la suite.",
+    "vorbereitung": [
+     "Ruban adhésif pour la ligne de réflexion",
+     "Trois papiers : oui – ça dépend – non"
+    ],
+    "beobachten": [
+     "L’enfant imagine une fin pour Lea.",
+     "Il prend position sur la ligne et donne une raison."
+    ],
+    "gruppe": "En groupe : chaque enfant peut proposer brièvement une fin pour Lea ; ensuite, tous se placent sur la ligne, et deux enfants à des endroits différents justifient."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-mut-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Gemeinsam nachdenken: Wer ist mutig?",
+  "text": "Die Fachkraft liest drei Enden vor: Lea springt mit zitternden Knien; Lea klettert hinunter und sagt: „Heute übe ich erst vom Ein-Meter-Brett“; Lea springt nur, damit Tom nicht mehr lacht. Dazu kommt Sami, der ganz ohne Angst springt. Das Kind verteilt Mut-Steine (Bauklötze, null bis drei pro Person) und begründet jede Entscheidung, während die Fachkraft mit dem Ball Denk-Fragen zuwirft: „Braucht Mut Angst?“, „Ist Runterklettern feige oder klug?“ Dann folgt ein Gedankenexperiment: „Wenn es einen Trank gäbe, der jede Angst wegmacht – wäre Lea dann mutiger?“ Zum Schluss stellt das Kind eine eigene Frage, und beide finden zusammen einen Satz: „Mutig ist, wer …“.",
+  "sagen": [
+   "Drei Enden für Lea – und dazu Sami, der gar keine Angst hat. Wer bekommt wie viele Mut-Steine?",
+   "Braucht man für Mut eigentlich Angst?",
+   "Ist Runterklettern feige – oder kann das auch klug und mutig sein?",
+   "Wenn ein Trank jede Angst wegmacht – wäre Lea dann mutiger?"
+  ],
+  "wennEsKippt": "Sind vier Personen zu viel, vergleicht das Kind nur Lea, die mit zitternden Knien springt, und Sami ohne Angst. Erzählt das Kind von eigener Angst, hört die Fachkraft zu, ohne zu bewerten, und fragt: „Was wäre da ein kleiner mutiger Schritt?“",
+  "kurz": "Drei Enden für Lea · Mut-Steine verteilen · Trank-Gedanke · Satz",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 20
+  },
+  "thema": [
+   "angst"
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "gefuehle-ausdruecken"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech",
+   "spiel"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "bausteine",
+   "ball",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Mut heißt: trotz Angst einen Schritt machen, der mir wichtig ist",
+   "fr": "Le courage : faire un pas malgré la peur, pour quelque chose d’important"
+  },
+  "vorbereitung": "Zwölf Bauklötze als Mut-Steine, vier Zettel (Lea springt, Lea klettert, Lea springt wegen Tom, Sami), weicher Ball.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Penser ensemble : qui est courageux ?",
+   "text": "L’adulte lit trois fins : Lea saute avec les genoux qui tremblent ; Lea redescend et dit : « Aujourd’hui, je m’entraîne d’abord au plongeoir d’un mètre » ; Lea saute seulement pour que Tom arrête de rire. S’y ajoute Sami, qui saute sans aucune peur. L’enfant distribue des pierres de courage (des cubes, de zéro à trois par personne) et justifie chaque choix, pendant que l’adulte lui lance la balle avec des questions pour penser : « Le courage a-t-il besoin de la peur ? », « Redescendre, c’est lâche ou malin ? » Vient ensuite une expérience de pensée : « S’il existait une potion qui enlève toute peur – Lea serait-elle plus courageuse ? » Pour finir, l’enfant pose sa propre question, et tous deux trouvent ensemble une phrase : « Être courageux, c’est … ».",
+   "sagen": [
+    "Trois fins pour Lea – et Sami, qui n’a pas peur du tout. Qui reçoit combien de pierres de courage ?",
+    "Est-ce qu’on a besoin d’avoir peur pour être courageux ?",
+    "Redescendre, c’est lâche – ou est-ce que ça peut aussi être malin et courageux ?",
+    "Si une potion enlevait toute peur – Lea serait-elle plus courageuse ?"
+   ],
+   "wennEsKippt": "Si quatre personnes, c’est trop, l’enfant compare seulement Lea qui saute en tremblant et Sami sans peur. Si l’enfant parle de sa propre peur, l’adulte écoute sans juger et demande : « Quel serait là un petit pas courageux ? »",
+   "kurz": "Trois fins pour Lea · pierres de courage · potion · une phrase",
+   "vorbereitung": "Douze cubes comme pierres de courage, quatre papiers (Lea saute, Lea redescend, Lea saute à cause de Tom, Sami), une balle molle."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Wer ist am mutigsten: die, die zittert und springt, die, die runterklettert – oder der, der gar keine Angst hat? Kinder haben dazu überraschend kluge Gedanken.",
+    "vorbereitung": [
+     "Zwölf Bauklötze als Mut-Steine",
+     "Vier Zettel: Lea springt – Lea klettert – Lea springt wegen Tom – Sami",
+     "Weicher Ball als Gedanken-Ball",
+     "Papier für den gemeinsamen Satz"
+    ],
+    "aufbau": "Die vier Zettel liegen nebeneinander auf dem Tisch, die Mut-Steine als Häufchen davor. Die Denk-Linie vom Einstieg bleibt am Boden.",
+    "karten": [
+     {
+      "titel": "Weitere Mut-Fragen",
+      "karten": [
+       "Ist es mutig, sich zu entschuldigen?",
+       "Ist es mutig, Nein zu sagen, wenn alle mitmachen?",
+       "Kann ein Tier mutig sein?",
+       "Ist es mutig, um Hilfe zu bitten?",
+       "Ist es mutig, etwas Gefährliches zu tun, nur damit andere staunen?",
+       "Braucht man Mut, um etwas Neues zu probieren?",
+       "Kann man auch leise mutig sein?",
+       "Ist man feige, wenn man wegläuft?"
+      ]
+     }
+    ],
+    "leichter": "Nur Lea, die zittert und springt, und Sami ohne Angst vergleichen; die Fachkraft gibt den Satzanfang „Mutig ist, wer …“ vor.",
+    "schwerer": "Das Kind legt die weiteren Mut-Fragen (siehe Karten) auf die Denk-Linie und sucht ein Beispiel, bei dem Weglaufen klug ist.",
+    "gruppe": "Mit mehreren (Philosophieren nach Lipman): Jedes Kind verteilt seine Mut-Steine geheim, dann werden die Ergebnisse verglichen und die größten Unterschiede besprochen. Wer spricht, knüpft an die Person davor an.",
+    "beobachten": [
+     "Das Kind unterscheidet zwischen keine Angst haben und mutig sein.",
+     "Es begründet, warum Runterklettern auch klug sein kann.",
+     "Es formuliert mit Hilfe einen eigenen Satz, was Mut ist."
+    ],
+    "warum": "Mut heißt in der Psychologie, trotz Angst zu handeln (Rachman, 1990); Kinder, die das verstehen, sehen ihre Angst nicht als Versagen und trauen sich eher kleine Schritte zu, wie sie die gestufte Annäherung bei Angst nutzt (Kendall, 1994)."
+   },
+   "fr": {
+    "haken": "Qui est le plus courageux : celle qui tremble et saute, celle qui redescend – ou celui qui n’a pas peur du tout ? Les enfants ont là-dessus des idées étonnamment fines.",
+    "vorbereitung": [
+     "Douze cubes comme pierres de courage",
+     "Quatre papiers : Lea saute – Lea redescend – Lea saute à cause de Tom – Sami",
+     "Une balle molle comme balle à idées",
+     "Papier pour la phrase commune"
+    ],
+    "aufbau": "Les quatre papiers sont côte à côte sur la table, les pierres de courage en petit tas devant. La ligne de réflexion du début reste au sol.",
+    "karten": [
+     {
+      "titel": "Autres questions sur le courage",
+      "karten": [
+       "Est-ce courageux de s’excuser ?",
+       "Est-ce courageux de dire non quand tous les autres participent ?",
+       "Un animal peut-il être courageux ?",
+       "Est-ce courageux de demander de l’aide ?",
+       "Est-ce courageux de faire quelque chose de dangereux juste pour épater les autres ?",
+       "Faut-il du courage pour essayer quelque chose de nouveau ?",
+       "Peut-on être courageux sans bruit ?",
+       "Est-on lâche quand on s’enfuit ?"
+      ]
+     }
+    ],
+    "leichter": "Comparer seulement Lea qui tremble et saute, et Sami sans peur ; l’adulte donne le début de phrase « Être courageux, c’est … ».",
+    "schwerer": "L’enfant place les autres questions sur le courage (voir cartes) sur la ligne de réflexion et cherche un exemple où s’enfuir est malin.",
+    "gruppe": "En groupe (philosophie pour enfants selon Lipman) : chaque enfant distribue ses pierres de courage en secret, puis on compare les résultats et on discute des plus grandes différences. Qui parle s’appuie sur la personne d’avant.",
+    "beobachten": [
+     "L’enfant distingue « ne pas avoir peur » et « être courageux ».",
+     "Il explique pourquoi redescendre peut aussi être malin.",
+     "Il formule avec de l’aide sa propre phrase sur le courage."
+    ],
+    "warum": "En psychologie, le courage, c’est agir malgré la peur (Rachman, 1990) ; les enfants qui le comprennent ne voient plus leur peur comme un échec et osent plus facilement de petits pas, comme dans l’approche graduelle de la peur (Kendall, 1994)."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-mut-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Mein Gedanke heute: Mein kleiner mutiger Schritt",
+  "text": "Das Kind stellt sich noch einmal auf die Denk-Linie: Kann man mutig sein und Angst haben – steht es noch am selben Platz? Dann überlegt es, wo es selbst gern ein bisschen mutiger wäre, etwa in der Pause jemanden ansprechen, im Verein etwas Neues probieren oder Nein sagen, und die Fachkraft hilft, einen ganz kleinen ersten Schritt zu finden. Das Kind malt den Schritt als unterste Stufe einer kleinen Treppe und sagt dazu: „Mein Gedanke heute: Mutig ist …“.",
+  "sagen": [
+   "Wo stehst du jetzt auf der Linie?",
+   "Wo wärst du gern ein bisschen mutiger? Du musst nichts erzählen, was du nicht willst.",
+   "Was wäre der allerkleinste Schritt dafür?"
+  ],
+  "wennEsKippt": "Fällt dem Kind nichts Eigenes ein, plant es den kleinen Schritt für Lea: Was macht sie beim nächsten Mal im Schwimmbad? Mag es nicht malen, reicht der Satz.",
+  "kurz": "Zurück auf die Linie · mein kleiner Schritt · Stufe malen",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 9
+  },
+  "thema": [
+   "angst"
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "gefuehle-ausdruecken"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "malen",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "klebeband",
+   "papier",
+   "buntstifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Ma pensée du jour : mon petit pas courageux",
+   "text": "L’enfant se replace sur la ligne de réflexion : peut-on être courageux et avoir peur – est-il toujours à la même place ? Puis il réfléchit à un domaine où il aimerait être un peu plus courageux, par exemple aborder quelqu’un à la pause, essayer quelque chose de nouveau au club ou dire non, et l’adulte l’aide à trouver un tout petit premier pas. L’enfant dessine ce pas comme la première marche d’un petit escalier et dit : « Ma pensée du jour : être courageux, c’est … ».",
+   "sagen": [
+    "Où es-tu maintenant sur la ligne ?",
+    "Où aimerais-tu être un peu plus courageux ? Tu ne dois rien raconter que tu ne veux pas.",
+    "Quel serait le tout petit pas pour ça ?"
+   ],
+   "wennEsKippt": "Si rien de personnel ne vient, l’enfant prévoit le petit pas pour Lea : que fera-t-elle la prochaine fois à la piscine ? S’il ne veut pas dessiner, la phrase suffit.",
+   "kurz": "Retour sur la ligne · mon petit pas · dessiner la marche"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Aus einer Geschichte wird ein eigener kleiner Plan – nur eine Stufe, aber die erste.",
+    "gruppe": "Mit mehreren: Jedes Kind malt seine Stufe still für sich; wer mag, zeigt sie. Die Fachkraft sammelt ohne Namen, wo Kinder gern mutiger wären.",
+    "beobachten": [
+     "Das Kind bemerkt, ob sich sein Platz auf der Linie verändert hat.",
+     "Es nennt eine Situation, in der es gern mutiger wäre, oder plant für Lea.",
+     "Es beschreibt einen kleinen, machbaren ersten Schritt."
+    ],
+    "warum": "Ein kleiner, konkreter erster Schritt ist der Kern gestufter Annäherung: Wer ihn schafft, erlebt, dass Angst nachlässt, und traut sich den nächsten zu (Kendall, 1994)."
+   },
+   "fr": {
+    "haken": "Une histoire devient un petit plan à soi – une seule marche, mais la première.",
+    "gruppe": "En groupe : chaque enfant dessine sa marche en silence ; qui veut la montre. L’adulte rassemble, sans noms, les situations où les enfants aimeraient être plus courageux.",
+    "beobachten": [
+     "L’enfant remarque si sa place sur la ligne a changé.",
+     "Il nomme une situation où il aimerait être plus courageux, ou prévoit pour Lea.",
+     "Il décrit un petit premier pas faisable."
+    ],
+    "warum": "Un petit premier pas concret est au cœur de l’approche graduelle : qui le réussit sent la peur diminuer et ose le pas suivant (Kendall, 1994)."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-mut-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Denkanstoß: Die Pille gegen Angst",
+  "text": "Die Fachkraft stellt ein Gedankenexperiment vor: „Stell dir vor, es gibt eine Pille ohne Nebenwirkungen, die jede Angst für einen Tag ausschaltet. Wer sie nimmt und dann vom Zehn-Meter-Turm springt – ist das mutig?“ Der oder die Jugendliche antwortet spontan und sagt, ob er oder sie die Pille nehmen würde. Die Fachkraft notiert beide Antworten und nennt die Gesprächsregeln: Gedanken prüfen, nicht Personen; begründen; Meinung ändern ist erlaubt.",
+  "sagen": [
+   "Eine Pille, die jede Angst ausschaltet. Würdest du sie nehmen?",
+   "Wer ohne Angst springt – ist das noch Mut?",
+   "Hier prüfen wir Gedanken, nicht Personen."
+  ],
+  "wennEsKippt": "Wirkt die Pille zu weit weg, nimmt die Fachkraft ein Alltagsbeispiel: jemand, der einen Vortrag hält und gar nicht nervös ist. Ob er oder sie die Pille nehmen würde, muss der oder die Jugendliche nicht verraten.",
+  "kurz": "Gedankenexperiment Angst-Pille · Mut ohne Angst? · Gesprächsregeln",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 7
+  },
+  "thema": [
+   "angst"
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "gefuehle-ausdruecken"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-39",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Le déclic : la pilule contre la peur",
+   "text": "L’adulte présente une expérience de pensée : « Imagine qu’il existe une pilule sans effets secondaires qui supprime toute peur pendant une journée. Quelqu’un qui la prend et saute ensuite du plongeoir de dix mètres – est-ce du courage ? » Le ou la jeune répond spontanément et dit s’il ou elle prendrait la pilule. L’adulte note les deux réponses et présente les règles de discussion : examiner des idées, pas des personnes ; justifier ; changer d’avis est permis.",
+   "sagen": [
+    "Une pilule qui supprime toute peur. Tu la prendrais ?",
+    "Sauter sans peur – est-ce encore du courage ?",
+    "Ici, on examine des idées, pas des personnes."
+   ],
+   "wennEsKippt": "Si la pilule semble trop loin de la réalité, l’adulte prend un exemple du quotidien : quelqu’un qui fait un exposé sans être nerveux du tout. Le ou la jeune n’est pas obligé de dire s’il ou elle prendrait la pilule.",
+   "kurz": "Expérience de pensée : la pilule · courage sans peur ? · règles"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Eine Pille, die Angst ausschaltet – würdest du sie nehmen? Fast alle zögern, und genau dort beginnt das Denken.",
+    "vorbereitung": [
+     "Papier und Stift",
+     "Die drei Gesprächsregeln auf einem Zettel"
+    ],
+    "beobachten": [
+     "Der oder die Jugendliche bezieht spontan Stellung.",
+     "Er oder sie nennt einen ersten Grund für die eigene Antwort."
+    ],
+    "gruppe": "Mit mehreren: Erst entscheidet jede Person still auf einem Zettel (Pille ja oder nein), dann wird ausgezählt; die Minderheit begründet zuerst."
+   },
+   "fr": {
+    "haken": "Une pilule qui supprime la peur – tu la prendrais ? Presque tout le monde hésite, et c’est là que la réflexion commence.",
+    "vorbereitung": [
+     "Papier et crayon",
+     "Les trois règles de discussion sur un papier"
+    ],
+    "beobachten": [
+     "Le ou la jeune prend position spontanément.",
+     "Il ou elle donne une première raison pour sa réponse."
+    ],
+    "gruppe": "En groupe : chaque personne décide d’abord en silence sur un papier (pilule oui ou non), puis on compte ; la minorité justifie en premier."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-mut-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Gemeinsam nachdenken: Feige, mutig, tollkühn",
+  "text": "Die Fachkraft legt mit Kreppband eine Linie mit drei Punkten aus – feige, mutig, tollkühn – nach Aristoteles, für den Mut die Mitte zwischen zu wenig und zu viel Wagemut ist. Der oder die Jugendliche zieht Situationskarten („über die Bahngleise laufen, weil die anderen es tun“, „im Chat schreiben: Das ist nicht okay“, „Nein sagen zu einer Mutprobe“) und legt jede an die passende Stelle, mit Begründung. Die Fachkraft fragt nach: „Braucht man für Mut Angst?“, „Braucht Mut einen guten Grund?“, „Wer bestimmt, was mutig ist – du oder die anderen?“ Aus den Antworten bauen beide eine eigene Beschreibung von Mut, etwa: „Mut ist, trotz Angst etwas zu tun, das mir wichtig ist.“ Zum Schluss stellt der oder die Jugendliche eine eigene Frage, und beide denken sie mit Beispielen und Gegenbeispielen durch.",
+  "sagen": [
+   "Feige, mutig, tollkühn – wohin gehört diese Karte?",
+   "Braucht man für Mut eigentlich Angst?",
+   "Ich halte mal dagegen: Wer bei einer Mutprobe Nein sagt, ist feige. Überzeug mich vom Gegenteil."
+  ],
+  "wennEsKippt": "Ist die Linie mit drei Punkten zu schwierig, beginnt die Fachkraft mit zwei eindeutigen Karten und legt erst dann die schwierigen dazu. Erzählt der oder die Jugendliche von einer eigenen Mutprobe, hört die Fachkraft zu, bewertet nicht und fragt: „Wo würdest du sie heute hinlegen?“",
+  "kurz": "Linie feige – mutig – tollkühn · Situationskarten · eigene Definition",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 20
+  },
+  "thema": [
+   "angst"
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "gefuehle-ausdruecken"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-39",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech",
+   "bewegung"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "klebeband",
+   "karten",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Mut prüfen: Gibt es Angst – und einen guten Grund?",
+   "fr": "Tester le courage : y a-t-il de la peur – et une bonne raison ?"
+  },
+  "vorbereitung": "Kreppband-Linie mit drei Zetteln (feige – mutig – tollkühn), Situationskarten ausdrucken.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Penser ensemble : lâche, courageux, téméraire",
+   "text": "L’adulte colle au sol une ligne avec trois points – lâche, courageux, téméraire – d’après Aristote, pour qui le courage est le juste milieu entre trop peu et trop d’audace. Le ou la jeune tire des cartes-situations (« traverser les voies ferrées parce que les autres le font », « écrire dans le chat : ce n’est pas ok », « dire non à un défi ») et pose chaque carte au bon endroit, avec une raison. L’adulte relance : « Faut-il avoir peur pour être courageux ? », « Le courage a-t-il besoin d’une bonne raison ? », « Qui décide de ce qui est courageux – toi ou les autres ? » À partir des réponses, tous deux construisent leur propre définition du courage, par exemple : « Le courage, c’est faire malgré la peur quelque chose qui compte pour moi. » Pour finir, le ou la jeune pose sa propre question, et tous deux y réfléchissent avec des exemples et des contre-exemples.",
+   "sagen": [
+    "Lâche, courageux, téméraire – où va cette carte ?",
+    "Faut-il vraiment avoir peur pour être courageux ?",
+    "Je défends l’avis contraire : dire non à un défi, c’est lâche. Convaincs-moi du contraire."
+   ],
+   "wennEsKippt": "Si la ligne à trois points est trop difficile, l’adulte commence avec deux cartes claires et ajoute seulement ensuite les difficiles. Si le ou la jeune parle d’un défi vécu, l’adulte écoute sans juger et demande : « Où le poserais-tu aujourd’hui ? »",
+   "kurz": "Ligne lâche – courageux – téméraire · cartes · sa définition",
+   "vorbereitung": "Ligne au ruban adhésif avec trois papiers (lâche – courageux – téméraire), imprimer les cartes-situations."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Über die Gleise laufen, weil alle es tun – mutig oder dumm? Die Linie zwischen feige und tollkühn macht Unterschiede sichtbar, die im Alltag oft verschwimmen.",
+    "vorbereitung": [
+     "Kreppband für eine Linie von etwa 3 m",
+     "Drei Zettel: feige – mutig – tollkühn",
+     "Situationskarten ausdrucken (siehe Karten)",
+     "Papier für die eigene Definition"
+    ],
+    "aufbau": "Die Linie liegt frei im Raum, die Karten als Stapel daneben. Beide stehen an der Linie, damit Bewegung ins Denken kommt.",
+    "karten": [
+     {
+      "titel": "Situationskarten Mut",
+      "karten": [
+       "Über die Bahngleise laufen, weil die anderen es tun",
+       "Im Gruppenchat schreiben: „Das ist nicht okay.“",
+       "Nein sagen zu einer Mutprobe",
+       "Zum ersten Mal allein mit dem Zug nach Trier fahren",
+       "Sich bei jemandem entschuldigen",
+       "Ohne Helm mit dem E-Scooter den Berg hinunter",
+       "Beim Vortrag stecken bleiben und weitermachen",
+       "Einem Kumpel sagen, dass er zu weit gegangen ist",
+       "Vom Zehn-Meter-Turm springen",
+       "Um Hilfe bitten, wenn man nicht weiterweiß",
+       "Einen Fehler zugeben, bevor er auffällt",
+       "Sich in einer neuen Gruppe neben jemanden setzen, den man nicht kennt"
+      ]
+     }
+    ],
+    "leichter": "Nur zwei Punkte (feige – mutig) und sechs Karten; die Fachkraft hilft mit den Fragen: „Gab es hier Angst? Gab es einen guten Grund?“",
+    "schwerer": "Die eigene Definition an drei schwierigen Karten testen und verbessern. Dazu überlegen: Ist Zivilcourage eine besondere Form von Mut – und was braucht sie zusätzlich?",
+    "gruppe": "Mit mehreren: Jede Person bekommt zwei Karten und legt sie auf die Linie; die Gruppe darf Karten verschieben, aber nur mit Begründung. Danach wählt die Gruppe eine eigene Frage zum Mut und denkt sie als forschende Gemeinschaft nach Lipman durch.",
+    "beobachten": [
+     "Der oder die Jugendliche unterscheidet Mut mit Gründen von Leichtsinn und von Feigheit.",
+     "Er oder sie erkennt Nein-Sagen unter Druck als mögliche Form von Mut.",
+     "Er oder sie formuliert eine eigene Definition von Mut."
+    ],
+    "warum": "Mut heißt in der Psychologie, trotz Angst zu handeln (Rachman, 1990), und Aristoteles sah ihn als Mitte zwischen Feigheit und Tollkühnheit; wer das unterscheidet, kann Mutproben und Gruppendruck klarer einschätzen und sich gezielt an Angstmachendes heranwagen."
+   },
+   "fr": {
+    "haken": "Traverser les voies parce que tout le monde le fait – courageux ou bête ? La ligne entre lâche et téméraire rend visibles des différences souvent floues au quotidien.",
+    "vorbereitung": [
+     "Ruban adhésif pour une ligne d’environ 3 m",
+     "Trois papiers : lâche – courageux – téméraire",
+     "Imprimer les cartes-situations (voir cartes)",
+     "Papier pour sa propre définition"
+    ],
+    "aufbau": "La ligne est libre dans la pièce, les cartes en pile à côté. Tous deux se tiennent près de la ligne, pour mettre la réflexion en mouvement.",
+    "karten": [
+     {
+      "titel": "Cartes-situations : le courage",
+      "karten": [
+       "Traverser les voies ferrées parce que les autres le font",
+       "Écrire dans le groupe de discussion : « Ce n’est pas ok. »",
+       "Dire non à un défi",
+       "Prendre seul le train jusqu’à Trèves pour la première fois",
+       "S’excuser auprès de quelqu’un",
+       "Descendre la côte en trottinette électrique sans casque",
+       "Bloquer pendant un exposé et continuer",
+       "Dire à un copain qu’il est allé trop loin",
+       "Sauter du plongeoir de dix mètres",
+       "Demander de l’aide quand on ne sait plus quoi faire",
+       "Avouer une erreur avant qu’on la remarque",
+       "S’asseoir à côté de quelqu’un qu’on ne connaît pas dans un nouveau groupe"
+      ]
+     }
+    ],
+    "leichter": "Seulement deux points (lâche – courageux) et six cartes ; l’adulte aide avec les questions : « Y avait-il de la peur ? Y avait-il une bonne raison ? »",
+    "schwerer": "Tester sa définition sur trois cartes difficiles et l’améliorer. Réfléchir aussi : le courage civique est-il une forme particulière de courage – et de quoi a-t-il besoin en plus ?",
+    "gruppe": "En groupe : chaque personne reçoit deux cartes et les pose sur la ligne ; le groupe peut déplacer des cartes, mais seulement en justifiant. Ensuite, le groupe choisit sa propre question sur le courage et y réfléchit comme communauté de recherche selon Lipman.",
+    "beobachten": [
+     "Le ou la jeune distingue avec des raisons le courage de l’imprudence et de la lâcheté.",
+     "Il ou elle reconnaît le fait de dire non sous pression comme une forme possible de courage.",
+     "Il ou elle formule sa propre définition du courage."
+    ],
+    "warum": "En psychologie, le courage, c’est agir malgré la peur (Rachman, 1990), et Aristote le voyait comme le milieu entre lâcheté et témérité ; qui fait la différence évalue plus clairement les défis et la pression du groupe, et ose s’approcher pas à pas de ce qui fait peur."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-mut-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Mein Gedanke heute: Mein Mut",
+  "text": "Die Fachkraft holt die Pille vom Anfang zurück: Würde der oder die Jugendliche sie jetzt noch nehmen, und wäre Springen mit der Pille mutig? Dann kommt die Brücke zum eigenen Leben: Er oder sie nennt etwas, das ein bisschen Angst macht und trotzdem wichtig wäre, etwa im Training etwas Neues probieren, jemanden ansprechen oder Nein sagen. Gemeinsam suchen beide den kleinsten machbaren Schritt dafür. Zum Schluss beendet er oder sie den Satz „Mein Gedanke heute: Mut ist …“.",
+  "sagen": [
+   "Und jetzt: Würdest du die Pille noch nehmen?",
+   "Was wäre für dich ein mutiger Schritt – etwas, das dir wichtig ist, auch wenn es ein bisschen Angst macht?",
+   "Mein Gedanke heute: Mut ist … Mach den Satz fertig."
+  ],
+  "wennEsKippt": "Will der oder die Jugendliche nichts Eigenes nennen, wählt er oder sie eine Situationskarte, bei der sich Mut lohnen würde, und plant den kleinsten Schritt für eine erfundene Person.",
+  "kurz": "Pille, zweiter Blick · mein mutiger Schritt · Gedanke heute",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 9
+  },
+  "thema": [
+   "angst"
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "gefuehle-ausdruecken"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-39",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech",
+   "plan"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Ma pensée du jour : mon courage",
+   "text": "L’adulte reprend la pilule du début : le ou la jeune la prendrait-il ou elle encore, et sauter avec la pilule, serait-ce du courage ? Puis vient le lien avec sa propre vie : il ou elle nomme quelque chose qui fait un peu peur et qui serait pourtant important, par exemple essayer quelque chose de nouveau à l’entraînement, aborder quelqu’un ou dire non. Ensemble, ils cherchent le plus petit pas faisable. Pour finir, il ou elle termine la phrase « Ma pensée du jour : le courage, c’est … ».",
+   "sagen": [
+    "Et maintenant : tu prendrais encore la pilule ?",
+    "Quel serait pour toi un pas courageux – quelque chose d’important pour toi, même si ça fait un peu peur ?",
+    "Ma pensée du jour : le courage, c’est … Termine la phrase."
+   ],
+   "wennEsKippt": "Si le ou la jeune ne veut rien nommer de personnel, il ou elle choisit une carte-situation où le courage en vaudrait la peine et prévoit le plus petit pas pour une personne inventée.",
+   "kurz": "La pilule, deuxième regard · mon pas courageux · pensée du jour"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Zurück zur Pille – und dann die Frage, wofür sich der eigene Mut lohnt.",
+    "gruppe": "Mit mehreren: Die Pillen-Frage wird noch einmal still auf Zetteln beantwortet und mit dem Anfang verglichen. Mutige Schritte schreibt jede Person nur für sich auf; vorlesen ist freiwillig.",
+    "beobachten": [
+     "Der oder die Jugendliche benennt, ob und warum sich die eigene Antwort verändert hat.",
+     "Er oder sie nennt etwas Wichtiges, das ein wenig Angst macht.",
+     "Er oder sie plant einen kleinen, machbaren ersten Schritt."
+    ],
+    "warum": "Ein kleiner, selbst gewählter Schritt auf etwas Angstmachendes zu ist der Kern gestufter Annäherung; wer ihn mit einem eigenen Wert verbindet, geht ihn eher wirklich."
+   },
+   "fr": {
+    "haken": "Retour à la pilule – puis la question : pour quoi mon courage vaut-il la peine ?",
+    "gruppe": "En groupe : la question de la pilule est de nouveau répondue en silence sur des papiers et comparée au début. Chaque personne écrit ses pas courageux pour elle seule ; les lire est libre.",
+    "beobachten": [
+     "Le ou la jeune dit si et pourquoi sa réponse a changé.",
+     "Il ou elle nomme quelque chose d’important qui fait un peu peur.",
+     "Il ou elle prévoit un petit premier pas faisable."
+    ],
+    "warum": "Un petit pas choisi soi-même vers ce qui fait peur est au cœur de l’approche graduelle ; le relier à une valeur personnelle augmente les chances de vraiment le faire."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-wer-bin-ich-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Denkanstoß: Raupe oder Schmetterling?",
+  "text": "Die Fachkraft malt eine Raupe und einen Schmetterling und fragt: „Ist das dasselbe Tier?“ Dann reibt das Kind eine Fingerkuppe über eine kräftig gemalte Bleistiftfläche, drückt den Finger auf ein Stück durchsichtiges Klebeband und klebt es auf weißes Papier – so wird der Fingerabdruck sichtbar. Die Fachkraft erklärt, dass dieses Muster schon vor der Geburt entstanden ist und ein Leben lang gleich bleibt; es wird nur größer. Sie stellt die Frage: „Bist du noch derselbe Mensch wie vor fünf Jahren?“ Das Kind stellt sich auf die Denk-Linie aus Kreppband (Ja – Kommt drauf an – Nein) und sagt einen Satz mit „weil“.",
+  "sagen": [
+   "Raupe und Schmetterling – ist das dasselbe Tier?",
+   "Schau dir deinen Fingerabdruck an: Dieses Muster hattest du schon vor deiner Geburt.",
+   "Bist du noch derselbe Mensch wie vor fünf Jahren? Stell dich auf die Linie."
+  ],
+  "wennEsKippt": "Klappt der Abdruck nicht, schaut das Kind die Linien auf der Fingerkuppe einfach ganz nah an. Mag es keinen Bleistift an den Fingern, zeigt die Fachkraft ihren eigenen Abdruck.",
+  "kurz": "Raupe und Schmetterling · Fingerabdruck · derselbe wie vor 5 Jahren?",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 7
+  },
+  "thema": [
+   "selbstwert"
+  ],
+  "kompetenz": [
+   "selbstbild"
+  ],
+  "eldib": [
+   {
+    "code": "K-19",
+    "gewicht": 1
+   },
+   {
+    "code": "K-24",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "basteln",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "papier",
+   "stifte",
+   "alltagsdinge",
+   "klebeband"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Le déclic : chenille ou papillon ?",
+   "text": "L’adulte dessine une chenille et un papillon et demande : « Est-ce le même animal ? » Puis l’enfant frotte le bout d’un doigt sur une surface bien noircie au crayon, appuie le doigt sur un morceau de ruban adhésif transparent et le colle sur une feuille blanche – l’empreinte digitale apparaît. L’adulte explique que ce motif s’est formé avant la naissance et reste le même toute la vie ; il devient seulement plus grand. Puis vient la question : « Es-tu encore la même personne qu’il y a cinq ans ? » L’enfant se place sur la ligne de réflexion en ruban adhésif (oui – ça dépend – non) et dit une phrase avec « parce que ».",
+   "sagen": [
+    "Chenille et papillon – est-ce le même animal ?",
+    "Regarde ton empreinte : ce motif, tu l’avais déjà avant ta naissance.",
+    "Es-tu encore la même personne qu’il y a cinq ans ? Place-toi sur la ligne."
+   ],
+   "wennEsKippt": "Si l’empreinte ne marche pas, l’enfant regarde simplement de très près les lignes au bout de son doigt. S’il ne veut pas de crayon sur les doigts, l’adulte montre sa propre empreinte.",
+   "kurz": "Chenille et papillon · empreinte · la même personne qu’il y a 5 ans ?"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Fingerabdruck, der schon vor der Geburt da war – und die große Frage, ob man trotzdem ein anderer geworden ist.",
+    "vorbereitung": [
+     "Weicher Bleistift (2B oder weicher), weißes Papier",
+     "Durchsichtiges Klebeband",
+     "Denk-Linie aus Kreppband: Ja – Kommt drauf an – Nein"
+    ],
+    "beobachten": [
+     "Das Kind staunt über den eigenen Fingerabdruck und beschreibt sein Muster.",
+     "Es bezieht auf der Linie Stellung und nennt einen Grund."
+    ],
+    "gruppe": "Mit mehreren: Alle machen ihren Fingerabdruck und vergleichen – keiner gleicht dem anderen, nicht einmal bei Zwillingen. Dann stellen sich alle auf die Linie."
+   },
+   "fr": {
+    "haken": "Une empreinte digitale qui existait déjà avant la naissance – et la grande question : est-on quand même devenu quelqu’un d’autre ?",
+    "vorbereitung": [
+     "Crayon à papier tendre (2B ou plus), papier blanc",
+     "Ruban adhésif transparent",
+     "Ligne de réflexion au sol : oui – ça dépend – non"
+    ],
+    "beobachten": [
+     "L’enfant s’étonne de sa propre empreinte et décrit son motif.",
+     "Il prend position sur la ligne et donne une raison."
+    ],
+    "gruppe": "En groupe : tous font leur empreinte et comparent – aucune ne ressemble à une autre, même pas chez des jumeaux. Ensuite, tous se placent sur la ligne."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-wer-bin-ich-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Gemeinsam nachdenken: Was bleibt, was wächst?",
+  "text": "Das Kind sortiert Ich-Karten auf zwei Papiere: „Bleibt gleich“ und „Hat sich verändert“ – etwa Name, Fingerabdruck, Schuhgröße, Lieblingsessen, was ich gut kann, Sprachen, Freunde, Lieblingsspiel. Bei Karten, die in beide passen, fragt die Fachkraft: „Was genau bleibt, und was genau ändert sich?“ Dann kommt ein Gedankenexperiment: „Wenn du morgen alles vergessen hättest, was du je erlebt hast – wärst du dann noch du?“ Das Kind stellt eine eigene Frage dazu, und beide denken mit Gründen und Beispielen darüber nach; die Fachkraft hält manchmal bewusst dagegen. Zum Schluss sucht das Kind seinen roten Faden, der es mit dem Kind von vor fünf Jahren verbindet, und legt dafür eine Schnur zwischen die beiden Papiere.",
+  "sagen": [
+   "Name, Schuhgröße, Lieblingsessen – bleibt das gleich, oder ändert es sich?",
+   "Diese Karte passt in beide? Was genau bleibt – und was ändert sich?",
+   "Wenn du morgen alles vergessen hättest, was du je erlebt hast – wärst du dann noch du?",
+   "Was ist dein roter Faden – was verbindet dich mit dem Kind von vor fünf Jahren?"
+  ],
+  "wennEsKippt": "Ist das Gedankenexperiment zu groß, bleibt die Fachkraft bei Raupe und Schmetterling: „Was ist bei der Raupe gleich geblieben?“ Fällt dem Kind über sich nichts ein, sortiert es die Karten für ein erfundenes Kind.",
+  "kurz": "Ich-Karten: bleibt / verändert · Gedankenexperiment · roter Faden",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 20
+  },
+  "thema": [
+   "selbstwert"
+  ],
+  "kompetenz": [
+   "selbstbild"
+  ],
+  "eldib": [
+   {
+    "code": "K-19",
+    "gewicht": 1
+   },
+   {
+    "code": "K-24",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "karten",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "karten",
+   "papier",
+   "stifte",
+   "alltagsdinge"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Ich verändere mich – und manches bleibt: mein roter Faden",
+   "fr": "Je change – et certaines choses restent : mon fil rouge"
+  },
+  "vorbereitung": "Ich-Karten ausdrucken, zwei Papiere beschriften (Bleibt gleich – Hat sich verändert), eine Schnur von etwa 50 cm bereitlegen.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Penser ensemble : qu’est-ce qui reste, qu’est-ce qui grandit ?",
+   "text": "L’enfant trie des cartes-moi sur deux feuilles : « reste pareil » et « a changé » – par exemple prénom, empreinte digitale, pointure, plat préféré, ce que je sais bien faire, langues, amis, jeu préféré. Pour les cartes qui vont des deux côtés, l’adulte demande : « Qu’est-ce qui reste, au juste, et qu’est-ce qui change ? » Vient ensuite une expérience de pensée : « Si demain tu avais oublié tout ce que tu as vécu – serais-tu encore toi ? » L’enfant pose sa propre question là-dessus, et tous deux y réfléchissent avec des raisons et des exemples ; parfois, l’adulte défend exprès l’avis contraire. Pour finir, l’enfant cherche son fil rouge, ce qui le relie à l’enfant d’il y a cinq ans, et pose pour cela une ficelle entre les deux feuilles.",
+   "sagen": [
+    "Prénom, pointure, plat préféré – est-ce que ça reste pareil, ou est-ce que ça change ?",
+    "Cette carte va des deux côtés ? Qu’est-ce qui reste – et qu’est-ce qui change ?",
+    "Si demain tu avais oublié tout ce que tu as vécu – serais-tu encore toi ?",
+    "Quel est ton fil rouge – qu’est-ce qui te relie à l’enfant d’il y a cinq ans ?"
+   ],
+   "wennEsKippt": "Si l’expérience de pensée est trop grande, l’adulte reste avec la chenille et le papillon : « Qu’est-ce qui est resté pareil chez la chenille ? » Si l’enfant ne trouve rien sur lui, il trie les cartes pour un enfant inventé.",
+   "kurz": "Cartes-moi : reste / a changé · expérience de pensée · fil rouge",
+   "vorbereitung": "Imprimer les cartes-moi, écrire sur deux feuilles (reste pareil – a changé), préparer une ficelle d’environ 50 cm."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Was ist gleich geblieben, seit du ein Kindergartenkind warst? Das Kind wird Forscher in eigener Sache – nur mit dem, was es zeigen will.",
+    "vorbereitung": [
+     "Ich-Karten ausdrucken (siehe Karten)",
+     "Zwei Papiere: Bleibt gleich – Hat sich verändert",
+     "Schnur von etwa 50 cm als roter Faden",
+     "Leere Karten für eigene Ideen"
+    ],
+    "aufbau": "Die zwei Papiere liegen mit etwas Abstand auf dem Tisch, die Karten als Stapel daneben, der Fingerabdruck vom Einstieg in der Mitte.",
+    "karten": [
+     {
+      "titel": "Ich-Karten",
+      "karten": [
+       "Mein Name",
+       "Mein Fingerabdruck",
+       "Meine Schuhgröße",
+       "Mein Lieblingsessen",
+       "Was ich gut kann",
+       "Die Sprachen, die ich spreche",
+       "Meine Freunde",
+       "Mein Lieblingsspiel",
+       "Meine Stimme",
+       "Was mich zum Lachen bringt",
+       "Was mir wichtig ist",
+       "Was ich mal werden will",
+       "Meine Lieblingsfarbe",
+       "Mein Mut"
+      ]
+     }
+    ],
+    "leichter": "Nur sechs Karten und die zwei Papiere; statt des Gedankenexperiments fragt die Fachkraft: „Was konntest du früher noch nicht?“",
+    "schwerer": "Das Kind erfindet eine eigene Karte, die in beide Felder passt, und erklärt, warum. Ältere denken das Gedankenexperiment weiter: Was wäre, wenn sich jemand an alles erinnert, aber ganz anders handelt als früher?",
+    "gruppe": "Mit mehreren (Philosophieren nach Lipman): Jedes Kind sortiert drei Karten für sich, dann sammelt die Gruppe, welche Karten bei allen „bleibt gleich“ sind. Das Gedankenexperiment wird gemeinsam besprochen; wer spricht, knüpft an die Person davor an.",
+    "beobachten": [
+     "Das Kind beschreibt Eigenschaften und Fähigkeiten an sich, nicht nur Äußeres.",
+     "Es erkennt, dass sich manches verändert und manches bleibt.",
+     "Es nennt etwas, das es heute kann und früher noch nicht konnte."
+    ],
+    "warum": "Kinder beschreiben sich mit zunehmendem Alter über Fähigkeiten, Vorlieben und Beziehungen statt nur über Äußeres (Harter, 2012); über Wandel und Beständigkeit nachzudenken stärkt ein stabiles, realistisches Selbstbild und den Blick auf eigene Fortschritte."
+   },
+   "fr": {
+    "haken": "Qu’est-ce qui est resté pareil depuis que tu étais à l’école maternelle ? L’enfant devient chercheur sur lui-même – seulement avec ce qu’il veut montrer.",
+    "vorbereitung": [
+     "Imprimer les cartes-moi (voir cartes)",
+     "Deux feuilles : reste pareil – a changé",
+     "Une ficelle d’environ 50 cm comme fil rouge",
+     "Des cartes vierges pour ses propres idées"
+    ],
+    "aufbau": "Les deux feuilles sont posées un peu à distance sur la table, les cartes en pile à côté, l’empreinte digitale du début au milieu.",
+    "karten": [
+     {
+      "titel": "Cartes-moi",
+      "karten": [
+       "Mon prénom",
+       "Mon empreinte digitale",
+       "Ma pointure",
+       "Mon plat préféré",
+       "Ce que je sais bien faire",
+       "Les langues que je parle",
+       "Mes amis",
+       "Mon jeu préféré",
+       "Ma voix",
+       "Ce qui me fait rire",
+       "Ce qui compte pour moi",
+       "Ce que j’aimerais faire plus tard",
+       "Ma couleur préférée",
+       "Mon courage"
+      ]
+     }
+    ],
+    "leichter": "Seulement six cartes et les deux feuilles ; au lieu de l’expérience de pensée, l’adulte demande : « Qu’est-ce que tu ne savais pas encore faire avant ? »",
+    "schwerer": "L’enfant invente sa propre carte qui va des deux côtés et explique pourquoi. Les plus grands prolongent l’expérience de pensée : et si quelqu’un se souvenait de tout, mais agissait tout autrement qu’avant ?",
+    "gruppe": "En groupe (philosophie pour enfants selon Lipman) : chaque enfant trie trois cartes pour lui, puis le groupe rassemble les cartes qui « restent pareilles » chez tous. L’expérience de pensée est discutée ensemble ; qui parle s’appuie sur la personne d’avant.",
+    "beobachten": [
+     "L’enfant décrit des qualités et des capacités, pas seulement l’apparence.",
+     "Il comprend que certaines choses changent et que d’autres restent.",
+     "Il nomme quelque chose qu’il sait faire aujourd’hui et pas encore avant."
+    ],
+    "warum": "En grandissant, les enfants se décrivent davantage par leurs capacités, leurs goûts et leurs relations plutôt que par leur seule apparence (Harter, 2012) ; réfléchir à ce qui change et à ce qui reste renforce une image de soi stable et réaliste, et le regard sur ses progrès."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-wer-bin-ich-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Mein Gedanke heute: Ich bin immer noch ich",
+  "text": "Das Kind stellt sich noch einmal auf die Denk-Linie zur Frage „Bist du noch derselbe Mensch wie vor fünf Jahren?“ und sagt, ob sich sein Platz verändert hat. Dann malt es einen Zeitstrahl mit drei Punkten: das Kind von vor fünf Jahren, das Kind heute, das Kind in fünf Jahren – und sagt oder schreibt zu jedem Punkt etwas, das es konnte, kann oder können möchte. Zum Schluss beendet es den Satz „Mein Gedanke heute: Ich bin immer noch ich, weil …“, und die Fachkraft klebt den Fingerabdruck daneben.",
+  "sagen": [
+   "Wo stehst du jetzt auf der Linie?",
+   "Was konntest du vor fünf Jahren noch nicht, was kannst du heute – und was vielleicht in fünf Jahren?",
+   "Mein Gedanke heute: Ich bin immer noch ich, weil …"
+  ],
+  "wennEsKippt": "Fällt dem Kind zu früher nichts ein oder weicht es aus, bleibt es bei „heute“ und „in fünf Jahren“; nach früher fragt die Fachkraft dann nicht weiter. Mag es nicht malen, sagt es die drei Punkte nur.",
+  "kurz": "Zurück auf die Linie · Zeitstrahl früher – heute – später · mein Satz",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 9
+  },
+  "thema": [
+   "selbstwert"
+  ],
+  "kompetenz": [
+   "selbstbild"
+  ],
+  "eldib": [
+   {
+    "code": "K-19",
+    "gewicht": 1
+   },
+   {
+    "code": "K-24",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "malen",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "papier",
+   "buntstifte",
+   "klebeband"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Ma pensée du jour : je suis toujours moi",
+   "text": "L’enfant se replace sur la ligne de réflexion pour la question « Es-tu encore la même personne qu’il y a cinq ans ? » et dit si sa place a changé. Puis il dessine une ligne du temps avec trois points : l’enfant d’il y a cinq ans, l’enfant d’aujourd’hui, l’enfant dans cinq ans – et dit ou écrit pour chaque point quelque chose qu’il savait faire, sait faire ou aimerait savoir faire. Pour finir, il termine la phrase « Ma pensée du jour : je suis toujours moi, parce que … », et l’adulte colle l’empreinte digitale à côté.",
+   "sagen": [
+    "Où es-tu maintenant sur la ligne ?",
+    "Qu’est-ce que tu ne savais pas faire il y a cinq ans, que sais-tu faire aujourd’hui – et quoi peut-être dans cinq ans ?",
+    "Ma pensée du jour : je suis toujours moi, parce que …"
+   ],
+   "wennEsKippt": "Si rien ne vient pour autrefois ou si l’enfant évite le sujet, il reste à « aujourd’hui » et « dans cinq ans » ; l’adulte ne pose alors pas d’autres questions sur le passé. S’il ne veut pas dessiner, il dit seulement les trois points.",
+   "kurz": "Retour sur la ligne · ligne du temps avant – maintenant – plus tard"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Zeitstrahl mit drei Ichs – und ein Fingerabdruck, der alle drei verbindet.",
+    "leichter": "Nur zwei Punkte auf dem Zeitstrahl: heute und in fünf Jahren.",
+    "gruppe": "Mit mehreren: Jedes Kind malt seinen eigenen Zeitstrahl; wer mag, stellt einen Punkt vor. Die Fingerabdrücke kommen zum Schluss nebeneinander an die Wand – alle verschieden.",
+    "beobachten": [
+     "Das Kind nennt einen eigenen Fortschritt (etwas, das es heute kann).",
+     "Es formuliert einen Satz darüber, was an ihm gleich bleibt.",
+     "Es bemerkt, ob sich sein Platz auf der Linie verändert hat."
+    ]
+   },
+   "fr": {
+    "haken": "Une ligne du temps avec trois « moi » – et une empreinte digitale qui les relie tous les trois.",
+    "leichter": "Seulement deux points sur la ligne du temps : aujourd’hui et dans cinq ans.",
+    "gruppe": "En groupe : chaque enfant dessine sa propre ligne du temps ; qui veut présente un point. À la fin, les empreintes sont affichées côte à côte au mur – toutes différentes.",
+    "beobachten": [
+     "L’enfant nomme un progrès personnel (quelque chose qu’il sait faire aujourd’hui).",
+     "Il formule une phrase sur ce qui reste pareil chez lui.",
+     "Il remarque si sa place sur la ligne a changé."
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:phi-wer-bin-ich-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Denkanstoß: Das Schiff des Theseus",
+  "text": "Die Fachkraft baut aus zehn Bausteinen ein kleines Schiff und erzählt ein Gedankenexperiment aus der Antike: Das Schiff des Theseus wurde Planke für Planke repariert, bis kein einziges altes Teil mehr übrig war. Während sie erzählt, tauscht der oder die Jugendliche Stein für Stein gegen andersfarbige aus. Die Fachkraft fragt: „Ist es noch dasselbe Schiff?“ – und dann, mit einer Wendung des Philosophen Thomas Hobbes: „Und wenn jemand aus den alten Teilen das Schiff wieder zusammenbaut: Welches ist das echte?“ Der oder die Jugendliche bezieht Stellung, und die Fachkraft nennt die Gesprächsregeln: Gedanken prüfen, nicht Personen; begründen; Meinung ändern ist erlaubt.",
+  "sagen": [
+   "Planke für Planke wird ausgetauscht. Ist es am Ende noch dasselbe Schiff?",
+   "Und wenn jemand aus den alten Teilen das Schiff neu baut – welches ist das echte?",
+   "Hier prüfen wir Gedanken, nicht Personen. Meinung ändern ist erlaubt."
+  ],
+  "wennEsKippt": "Wirkt das Bauen zu verspielt, legt die Fachkraft zehn Papierstreifen als Planken hin und tauscht sie aus. Antwortet der oder die Jugendliche „Ist doch egal“, fragt sie: „Wäre es dir egal, wenn es um dein Fahrrad oder dein Handy ginge?“",
+  "kurz": "Schiff aus 10 Steinen · Stein für Stein tauschen · dasselbe Schiff?",
+  "rolle": [
+   "einstieg"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 7
+  },
+  "thema": [
+   "selbstwert"
+  ],
+  "kompetenz": [
+   "selbstbild"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-40",
+    "gewicht": 1
+   },
+   {
+    "code": "K-34",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "bauen",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "bausteine",
+   "papier"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Le déclic : le bateau de Thésée",
+   "text": "L’adulte construit un petit bateau avec dix cubes et raconte une expérience de pensée de l’Antiquité : le bateau de Thésée a été réparé planche par planche, jusqu’à ce qu’il ne reste plus une seule ancienne pièce. Pendant le récit, le ou la jeune remplace les cubes un à un par des cubes d’une autre couleur. L’adulte demande : « Est-ce encore le même bateau ? » – puis, avec un rebondissement du philosophe Thomas Hobbes : « Et si quelqu’un reconstruisait le bateau avec les anciennes pièces : lequel est le vrai ? » Le ou la jeune prend position, et l’adulte présente les règles de discussion : examiner des idées, pas des personnes ; justifier ; changer d’avis est permis.",
+   "sagen": [
+    "Planche après planche, tout est remplacé. À la fin, est-ce encore le même bateau ?",
+    "Et si quelqu’un reconstruisait le bateau avec les anciennes pièces – lequel est le vrai ?",
+    "Ici, on examine des idées, pas des personnes. Changer d’avis est permis."
+   ],
+   "wennEsKippt": "Si construire semble trop enfantin, l’adulte pose dix bandes de papier comme planches et les remplace. Si le ou la jeune répond « on s’en fiche », l’adulte demande : « Et s’il s’agissait de ton vélo ou de ton téléphone ? »",
+   "kurz": "Bateau de 10 cubes · remplacer pièce par pièce · le même bateau ?"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Gedankenexperiment aus der Antike, über das Philosophen bis heute streiten – und das gleich auch etwas über einen selbst verrät.",
+    "vorbereitung": [
+     "20 Bausteine in zwei Farben (10 und 10)",
+     "Die drei Gesprächsregeln auf einem Zettel"
+    ],
+    "beobachten": [
+     "Der oder die Jugendliche bezieht Stellung zur Schiffsfrage.",
+     "Er oder sie nennt einen Grund und erkennt, dass auch die Gegenantwort Gründe hat."
+    ],
+    "gruppe": "Mit mehreren: Nach jedem dritten Stein zeigt die Gruppe per Handzeichen, ob es noch dasselbe Schiff ist; der Moment, in dem die Mehrheit kippt, ist der Einstieg ins Gespräch."
+   },
+   "fr": {
+    "haken": "Une expérience de pensée de l’Antiquité, dont les philosophes débattent encore – et qui en dit tout de suite un peu sur soi.",
+    "vorbereitung": [
+     "20 cubes de deux couleurs (10 et 10)",
+     "Les trois règles de discussion sur un papier"
+    ],
+    "beobachten": [
+     "Le ou la jeune prend position sur la question du bateau.",
+     "Il ou elle donne une raison et voit que la réponse opposée a aussi des raisons."
+    ],
+    "gruppe": "En groupe : tous les trois cubes, le groupe montre à main levée s’il s’agit encore du même bateau ; le moment où la majorité bascule lance la discussion."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-wer-bin-ich-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Gemeinsam nachdenken: Dieselbe Person wie vor fünf Jahren?",
+  "text": "Der oder die Jugendliche schreibt auf Karten die eigenen „Planken“ – etwa Musik, Freunde, Sprachen, Hobbys, Humor, was mir wichtig ist – und legt sie in zwei Reihen: in den letzten fünf Jahren ausgetauscht oder geblieben. Die Fachkraft ergänzt eine Tatsache gegen einen bekannten Mythos: Der Körper erneuert viele Zellen, aber nicht alle – die meisten Nervenzellen der Großhirnrinde bleiben ein Leben lang; einen „komplett neuen Körper alle sieben Jahre“ gibt es also nicht. Dann stellt sie drei Antworten aus der Philosophie vor: Ich bin mein Körper; ich bin meine Erinnerungen (John Locke); ich bin die Geschichte, die ich über mich erzähle. Der oder die Jugendliche prüft jede mit einem Gegenbeispiel, wählt die überzeugendste oder eine eigene Mischung und formuliert eine eigene Frage, etwa „Kann man sich so sehr verändern, dass man ein anderer Mensch wird?“ Beide denken sie mit Gründen durch, und die Fachkraft hält bewusst dagegen.",
+  "sagen": [
+   "Was sind deine Planken? Schreib fünf bis acht auf – nur, was du sagen willst.",
+   "Welche hast du in den letzten fünf Jahren ausgetauscht, welche sind geblieben?",
+   "Körper, Erinnerungen oder Geschichte – was macht dich zu dir? Ich halte gleich dagegen.",
+   "Gibt es eine Planke, ohne die du nicht mehr du wärst?"
+  ],
+  "wennEsKippt": "Will der oder die Jugendliche nichts über sich aufschreiben, arbeitet er oder sie mit einer erfundenen Person (Finn, 15, früher Fußball, heute Musik). Kommt eine große Veränderung zur Sprache, etwa ein Umzug, nimmt die Fachkraft sie ernst, hört zu und lässt die Karte auf Wunsch weg.",
+  "kurz": "Planken: getauscht oder geblieben · Körper, Erinnerung, Geschichte",
+  "rolle": [
+   "kern"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 20
+  },
+  "thema": [
+   "selbstwert"
+  ],
+  "kompetenz": [
+   "selbstbild"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-40",
+    "gewicht": 1
+   },
+   {
+    "code": "K-34",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech",
+   "karten"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "karten",
+   "papier",
+   "stifte",
+   "bausteine"
+  ],
+  "ort": "raum",
+  "werkzeug": {
+   "de": "Mein roter Faden: was sich ändert, was bleibt, was mich ausmacht",
+   "fr": "Mon fil rouge : ce qui change, ce qui reste, ce qui fait que je suis moi"
+  },
+  "vorbereitung": "Leere Karteikarten für die Planken, zwei Reihen auf dem Tisch markieren (ausgetauscht – geblieben), die drei Philosophen-Sätze auf Zettel schreiben.",
+  "uebertragbar": true,
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Penser ensemble : la même personne qu’il y a cinq ans ?",
+   "text": "Le ou la jeune écrit sur des cartes ses propres « planches » – par exemple musique, amis, langues, loisirs, humour, ce qui compte pour moi – et les pose en deux rangées : remplacées ces cinq dernières années ou restées. L’adulte ajoute un fait contre un mythe connu : le corps renouvelle beaucoup de cellules, mais pas toutes – la plupart des neurones du cortex restent toute la vie ; un « corps entièrement neuf tous les sept ans », ça n’existe donc pas. Puis l’adulte présente trois réponses de la philosophie : je suis mon corps ; je suis mes souvenirs (John Locke) ; je suis l’histoire que je raconte sur moi. Le ou la jeune teste ces trois réponses avec un contre-exemple, choisit la plus convaincante ou son propre mélange, et formule sa propre question, par exemple « Peut-on changer au point de devenir quelqu’un d’autre ? » Tous deux y réfléchissent avec des raisons, et l’adulte défend exprès l’avis contraire.",
+   "sagen": [
+    "Quelles sont tes planches ? Écris-en cinq à huit – seulement ce que tu veux dire.",
+    "Lesquelles as-tu remplacées ces cinq dernières années, lesquelles sont restées ?",
+    "Corps, souvenirs ou histoire – qu’est-ce qui fait que tu es toi ? Je vais te contredire.",
+    "Y a-t-il une planche sans laquelle tu ne serais plus toi ?"
+   ],
+   "wennEsKippt": "Si le ou la jeune ne veut rien écrire sur soi, il ou elle travaille avec une personne inventée (Finn, 15 ans, avant le foot, aujourd’hui la musique). Si un grand changement est évoqué, par exemple un déménagement, l’adulte le prend au sérieux, écoute et laisse la carte de côté si le ou la jeune le souhaite.",
+   "kurz": "Ses planches : remplacées ou restées · corps, souvenirs, histoire",
+   "vorbereitung": "Des fiches vierges pour les planches, deux rangées marquées sur la table (remplacées – restées), les trois phrases de philosophes sur des papiers."
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Vom Bausteinschiff zum eigenen Leben: Welche Planken von dir sind neu – und welche würdest du nie austauschen?",
+    "vorbereitung": [
+     "Leere Karteikarten für die eigenen Planken",
+     "Zwei Reihen auf dem Tisch markieren: ausgetauscht – geblieben",
+     "Die drei Sätze auf Zettel: Körper – Erinnerungen – Geschichte",
+     "Das Bausteinschiff vom Einstieg"
+    ],
+    "aufbau": "Das Schiff steht am Rand des Tisches, die zwei Reihen in der Mitte. Beide sitzen über Eck; was der oder die Jugendliche schreibt, bleibt bei ihm oder ihr.",
+    "karten": [
+     {
+      "titel": "Ideen für Planken",
+      "karten": [
+       "Musik, die ich höre",
+       "Meine engsten Freunde",
+       "Die Sprachen, die ich spreche",
+       "Mein Sport oder Hobby",
+       "Mein Humor",
+       "Was mir wichtig ist",
+       "Mein Name",
+       "Mein Stil",
+       "Meine Ziele",
+       "Was mich wütend macht",
+       "Worauf ich stolz bin",
+       "Meine Lieblingsorte in Luxemburg"
+      ]
+     }
+    ],
+    "leichter": "Nur fünf Planken und die Frage nach Körper oder Erinnerungen; die Fachkraft gibt Satzanfänge: „Geblieben ist …, ausgetauscht habe ich …“",
+    "schwerer": "Das Gedankenexperiment zuspitzen (nach Derek Parfit): Ein Teleporter zerlegt dich in Luxemburg und baut dich in Lissabon exakt nach – bist das noch du? Dazu die drei Philosophen-Sätze an diesem Fall prüfen.",
+    "gruppe": "Mit mehreren: Alle schreiben ihre Planken für sich; geteilt wird nur, was jemand teilen will. Die Gruppe stellt sich zu den drei Antworten (Körper, Erinnerungen, Geschichte) in drei Ecken des Raums und denkt als forschende Gemeinschaft nach Lipman weiter.",
+    "beobachten": [
+     "Der oder die Jugendliche beschreibt Veränderungen und Beständiges an sich realistisch.",
+     "Er oder sie prüft eine philosophische Position mit einem Gegenbeispiel.",
+     "Er oder sie benennt etwas, das ihm oder ihr wirklich wichtig ist."
+    ],
+    "warum": "In der Jugend entsteht die Fähigkeit, das eigene Leben als zusammenhängende Geschichte zu erzählen (Habermas & Bluck, 2000); wer Veränderung und Beständigkeit bei sich benennt, entwickelt ein realistischeres Selbstbild und klarere Werte."
+   },
+   "fr": {
+    "haken": "Du bateau de cubes à sa propre vie : quelles planches sont nouvelles chez toi – et lesquelles ne changerais-tu jamais ?",
+    "vorbereitung": [
+     "Des fiches vierges pour ses propres planches",
+     "Marquer deux rangées sur la table : remplacées – restées",
+     "Les trois phrases sur des papiers : corps – souvenirs – histoire",
+     "Le bateau de cubes du début"
+    ],
+    "aufbau": "Le bateau est au bord de la table, les deux rangées au milieu. Tous deux sont assis en angle ; ce que le ou la jeune écrit reste chez lui ou chez elle.",
+    "karten": [
+     {
+      "titel": "Idées de planches",
+      "karten": [
+       "La musique que j’écoute",
+       "Mes amis les plus proches",
+       "Les langues que je parle",
+       "Mon sport ou mon loisir",
+       "Mon humour",
+       "Ce qui compte pour moi",
+       "Mon prénom",
+       "Mon style",
+       "Mes objectifs",
+       "Ce qui me met en colère",
+       "Ce dont je suis fier ou fière",
+       "Mes endroits préférés au Luxembourg"
+      ]
+     }
+    ],
+    "leichter": "Seulement cinq planches et la question corps ou souvenirs ; l’adulte donne des débuts de phrase : « Ce qui est resté, c’est …, j’ai remplacé … »",
+    "schwerer": "Pousser l’expérience de pensée (d’après Derek Parfit) : un téléporteur te décompose au Luxembourg et te reconstruit à l’identique à Lisbonne – est-ce encore toi ? Tester les trois phrases de philosophes sur ce cas.",
+    "gruppe": "En groupe : chacun écrit ses planches pour soi ; on ne partage que ce qu’on veut partager. Le groupe se répartit dans trois coins de la pièce selon les trois réponses (corps, souvenirs, histoire) et continue à réfléchir comme communauté de recherche selon Lipman.",
+    "beobachten": [
+     "Le ou la jeune décrit de façon réaliste ce qui a changé et ce qui est resté chez lui ou chez elle.",
+     "Il ou elle teste une position philosophique avec un contre-exemple.",
+     "Il ou elle nomme quelque chose qui compte vraiment pour lui ou pour elle."
+    ],
+    "warum": "À l’adolescence apparaît la capacité de raconter sa vie comme une histoire cohérente (Habermas & Bluck, 2000) ; nommer ce qui change et ce qui reste chez soi aide à construire une image de soi plus réaliste et des valeurs plus claires."
+   }
+  }
+ },
+ {
+  "id": "fo:phi-wer-bin-ich-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Philosophieren"
+  },
+  "titel": "Mein Gedanke heute: Mein roter Faden",
+  "text": "Die Fachkraft stellt das Bausteinschiff noch einmal hin und fragt, ob der oder die Jugendliche die Frage nach dem echten Schiff jetzt anders beantwortet. Dann wählt er oder sie eine Planke, die bleiben soll, und eine, die sich in den nächsten Jahren verändern darf, und sagt, warum. Zum Schluss beendet er oder sie den Satz „Mein Gedanke heute: Ich bin dieselbe Person wie früher, weil … – und anders, weil …“.",
+  "sagen": [
+   "Und das Schiff – welches ist für dich jetzt das echte?",
+   "Welche Planke soll bleiben, welche darf sich ändern?",
+   "Mein Gedanke heute: Ich bin dieselbe Person, weil … – und anders, weil …"
+  ],
+  "wennEsKippt": "Fällt kein Satz ein, wählt der oder die Jugendliche einen der drei Philosophen-Sätze und sagt nur, ob er passt. Wer nichts Persönliches sagen will, beantwortet die Frage für das Schiff.",
+  "kurz": "Das Schiff, zweiter Blick · eine Planke, die bleibt · Gedanke heute",
+  "rolle": [
+   "reflexion"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 9
+  },
+  "thema": [
+   "selbstwert"
+  ],
+  "kompetenz": [
+   "selbstbild"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-40",
+    "gewicht": 1
+   },
+   {
+    "code": "K-34",
+    "gewicht": 0.5
+   }
+  ],
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 12,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "philosophieren",
+   "gespraech"
+  ],
+  "formen": [
+   "philosophieren"
+  ],
+  "material": [
+   "bausteine",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "qualitaet": "geprueft",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "fr": {
+   "titel": "Ma pensée du jour : mon fil rouge",
+   "text": "L’adulte remet le bateau de cubes sur la table et demande si le ou la jeune répond maintenant autrement à la question du vrai bateau. Puis il ou elle choisit une planche qui doit rester et une qui a le droit de changer dans les prochaines années, et dit pourquoi. Pour finir, il ou elle termine la phrase « Ma pensée du jour : je suis la même personne qu’avant, parce que … – et différente, parce que … ».",
+   "sagen": [
+    "Et le bateau – lequel est le vrai pour toi maintenant ?",
+    "Quelle planche doit rester, laquelle a le droit de changer ?",
+    "Ma pensée du jour : je suis la même personne, parce que … – et différente, parce que …"
+   ],
+   "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit une des trois phrases de philosophes et dit seulement si elle lui correspond. Sans envie de dire quelque chose de personnel, il ou elle répond à la question pour le bateau.",
+   "kurz": "Le bateau, deuxième regard · une planche qui reste · pensée du jour"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Zurück zum Schiff – und die Entdeckung, dass die eigene Antwort jetzt vielleicht anders ausfällt.",
+    "gruppe": "Mit mehreren: Jede Person schreibt ihren Satz still auf; wer mag, liest ihn vor. Die Gruppe sammelt ohne Namen Planken, die vielen wichtig sind.",
+    "beobachten": [
+     "Der oder die Jugendliche nennt eine Planke, die bleiben soll, und begründet sie.",
+     "Er oder sie nimmt Veränderung als Teil von sich an.",
+     "Er oder sie formuliert einen eigenen Satz über die eigene Identität."
+    ],
+    "warum": "Ein eigener Satz über Wandel und Beständigkeit hilft, Veränderungen anzunehmen, ohne den roten Faden zu verlieren – ein Kern gesunder Identitätsentwicklung in der Jugend (Habermas & Bluck, 2000)."
+   },
+   "fr": {
+    "haken": "Retour au bateau – et la découverte que sa propre réponse a peut-être changé.",
+    "gruppe": "En groupe : chaque personne écrit sa phrase en silence ; qui veut la lit. Le groupe rassemble, sans noms, les planches importantes pour beaucoup.",
+    "beobachten": [
+     "Le ou la jeune nomme une planche qui doit rester et la justifie.",
+     "Il ou elle accepte le changement comme une partie de soi.",
+     "Il ou elle formule sa propre phrase sur son identité."
+    ],
+    "warum": "Une phrase à soi sur ce qui change et ce qui reste aide à accepter les changements sans perdre son fil rouge – un point central d’un développement sain de l’identité à l’adolescence (Habermas & Bluck, 2000)."
+   }
+  }
+ }
+]
