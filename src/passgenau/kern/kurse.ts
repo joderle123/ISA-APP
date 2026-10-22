@@ -145,6 +145,25 @@ export const KURS_THEMEN: Record<string, { de: string; fr: string; motiv: string
   probleme: { de: 'Probleme lösen', fr: 'Résoudre des problèmes', motiv: 'werkzeugkiste', farbe: ['#6B5B1E', '#F5F0DD'] },
   vielfalt: { de: 'Vielfalt & Respekt', fr: 'Diversité et respect', motiv: 'regenbogen', farbe: ['#8E3B6E', '#F6E7F0'] },
   alltag: { de: 'Alltag & Selbstständigkeit', fr: 'Quotidien et autonomie', motiv: 'tagesuhr-1', farbe: ['#4A6B8A', '#E8EFF6'] },
+  // Welle 3 (KURSE.md Abschnitt 10)
+  socialmedia: { de: 'Social Media', fr: 'Réseaux sociaux', motiv: 'handy-chat', farbe: ['#2B5DA8', '#E6EEFA'] },
+  fakenews: { de: 'Fake News', fr: 'Fausses infos', motiv: 'megafon', farbe: ['#6B3FA0', '#F0E9F8'] },
+  gaming: { de: 'Gaming', fr: 'Jeux vidéo', motiv: 'controller', farbe: ['#355E3B', '#E5F0E6'] },
+  comeback: { de: 'Comeback in die Schule', fr: 'Retour à l’école', motiv: 'schule', farbe: ['#B5541C', '#FBEDE3'] },
+  motivation: { de: 'Motivation & Ziele', fr: 'Motivation et objectifs', motiv: 'rakete', farbe: ['#2E3A9C', '#ECEEFA'] },
+  stress: { de: 'Stress & Prüfungsangst', fr: 'Stress et trac', motiv: 'thermometer', farbe: ['#A23B2A', '#FBE9E7'] },
+  koerper: { de: 'Körper & Gesundheit', fr: 'Corps et santé', motiv: 'apfel', farbe: ['#3F7D3A', '#EAF4E7'] },
+  mobbing: { de: 'Mobbing & Zivilcourage', fr: 'Harcèlement et courage', motiv: 'schutzschild', farbe: ['#33465F', '#E7ECF3'] },
+  mitbestimmen: { de: 'Mitbestimmen', fr: 'Participer', motiv: 'hand-offen', farbe: ['#1D5C8C', '#E4EEF7'] },
+  identitaet: { de: 'Wer bin ich?', fr: 'Qui suis-je ?', motiv: 'spiegel', farbe: ['#8E3B6E', '#F6E7F0'] },
+  familie: { de: 'Familie & Veränderung', fr: 'Famille et changements', motiv: 'familie', farbe: ['#9A6A12', '#FBF2DE'] },
+  trauer: { de: 'Trauer & Abschied', fr: 'Deuil et adieu', motiv: 'kerze', farbe: ['#4A5568', '#EDEFF3'] },
+  zukunft: { de: 'Zukunft & Beruf', fr: 'Avenir et métier', motiv: 'kompass', farbe: ['#1F6E8C', '#E3F2F7'] },
+  geld: { de: 'Geld & Konsum', fr: 'Argent et consommation', motiv: 'muenzen', farbe: ['#7A6A12', '#F7F2DA'] },
+  selbstfuersorge: { de: 'Gut für mich sorgen', fr: 'Prendre soin de soi', motiv: 'tasse', farbe: ['#5B4BA8', '#ECE9F8'] },
+  deeskalation: { de: 'Ruhig bleiben, wenn es kracht', fr: 'Rester calme quand ça chauffe', motiv: 'eiswuerfel', farbe: ['#1F6E8C', '#E3F2F7'] },
+  liebe: { de: 'Freundschaft, Liebe & Grenzen', fr: 'Amitié, amour et limites', motiv: 'herzklopfen', farbe: ['#B83A5E', '#FBE8EE'] },
+  achtsamkeit: { de: 'Ruhe & Achtsamkeit', fr: 'Calme et pleine conscience', motiv: 'klangschale', farbe: ['#4A6B8A', '#E8EFF6'] },
 }
 
 export function kursThema(t: string): { de: string; fr: string; motiv: string; farbe: [string, string] } {

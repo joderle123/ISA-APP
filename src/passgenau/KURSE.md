@@ -292,3 +292,74 @@ und Hilfe, Entscheidungen, Vielfalt und Respekt, Selbstständig werden, Digitale
 | kurs-sprechen-7-9 | Die Erzähl-Hand | Hand (`hand`) mit fünf Fingern: Wer? · Wo? · Was ist passiert? · Wie war es? · Wie ging es aus? | K-15 1, SOZ-24 1, K-14 .5, K-17 .5 | kommunikation · – | 1 Erzählen mit der Erzähl-Hand · 2 Zuhören und nachfragen · 3 Der Reihe nach: erst – dann – zum Schluss · 4 Gefühle beim Erzählen · 5 Von einem Erlebnis dieser Woche erzählen · 6 Meine Erzähl-Hand |
 | kurs-sprechen-10-12 | Mitreden | Mikrofon (`motiv:mikrofon`) mit fünf Gesprächs-Regeln: zuhören · einsteigen · klar sagen · nachfragen · zusammenfassen | K-17 1, K-30 .5, SOZ-33 .5, SOZ-22 .5 | kommunikation · – | 1 Wie gute Gespräche funktionieren · 2 Einsteigen statt reinrufen · 3 Klar und kurz sagen, was ich meine · 4 Nachfragen und zusammenfassen · 5 Mitreden in der Klasse diese Woche · 6 Mein Gesprächs-Mikrofon |
 | kurs-sprechen-13-16 | Meine Meinung zählt | Megafon (`motiv:megafon`): Meinung bilden · begründen · zuhören · fair widersprechen · mitbestimmen | K-30 1, KOG-58 .5, SOZ-32 .5, SOZ-22 .5 | kommunikation · – | 1 Meinung, Fakt, Gefühl · 2 Begründen: Behauptung – Grund – Beispiel · 3 Zuhören und fair widersprechen · 4 Überzeugen ohne Druck · 5 Mitbestimmen: ein eigenes Anliegen diese Woche · 6 Meine Stimme |
+
+## 9. Weltklasse-Standard (Welle 3, ab 23.10.2026)
+
+Maßstab ist nicht „besser als vorher“, sondern: **Was fehlt, damit es das Beste ist, was es dazu gibt?** Jeder Kurs wird so
+geschrieben, als säßen eine Fachperson des Themas (z. B. Social Media, Kommunikation) und eine Weltklasse-Pädagogin zusammen.
+
+**Für wen.** Kinder und Jugendliche, die keine Lust haben – manche waren lange nicht in der Schule. Sie müssen in der ersten
+Minute neugierig werden und am Ende der ersten Sitzung etwas können, das sie vorher nicht konnten.
+
+1. **Haken in der ersten Minute** (`hilfen.haken`): ein Rätsel, ein echter Gegenstand, eine überraschende Frage, ein kleines
+   Experiment, eine Geschichte mit offenem Ende – nie „Heute lernen wir …“.
+2. **Früher Erfolg, echte Wahl, echtes Leben:** jede Sitzung mit einem schnellen Erfolgserlebnis und einer Wahl (zwei Wege,
+   selbst entscheiden); Beispiele aus dem Leben der Zielgruppe in Luxemburg (Bus, Pause, Verein, Chat, mehrere Sprachen);
+   Wettbewerb nur freiwillig.
+3. **Aus einem Guss:** eine **Kurs-Welt** (Ort, 2–3 Figuren verschiedener Herkunft und Geschlechter, ein Problem, das sich durch
+   alle Sitzungen zieht) in `kurs-hintergrund.json` → `welt` (`{ de, fr }`, 3–5 Sätze); jede Sitzung knüpft an (`linie.bruecke`)
+   und endet mit einem kleinen offenen Faden zur nächsten. Man darf nie merken, dass Sitzungen einzeln geschrieben wurden.
+4. **Dramaturgie nach Ziel, belegt** – der Bogen „wahrnehmen → … → reflektieren“ ist kein Muss. Wähle, was für das Ziel wirkt,
+   und begründe es im `warum` des Hintergrunds:
+   - Fertigkeiten (Nein sagen, Ich-Botschaft, Streit lösen): Erklären – Vormachen – Üben im Rollenspiel – Rückmeldung –
+     Übertragen (Behavioral Skills Training; SAFE-Kriterien nach Durlak et al., 2011).
+   - Motivation, Ambivalenz, Schulrückkehr: motivierende Gesprächsführung (Miller & Rollnick), Wahl und Kompetenzerleben
+     (Selbstbestimmungstheorie, Ryan & Deci), sehr kleine Schritte.
+   - Angst und Stress: Psychoedukation, Körper herunterfahren, Gedanken prüfen, gestufte Annäherung (KVT).
+   - Medien und Fake News: forschendes Lernen, selbst prüfen (seitliches Lesen, SIFT; Wineburg & McGrew), keine Verbote.
+   - Konflikte und Mobbing: Perspektivwechsel, Wiedergutmachung, Zivilcourage in sicheren Schritten.
+   Das Feld `bogen` bleibt (der Planer braucht es); Sitzung 5 überträgt in den Alltag, die letzte Sitzung schaut zurück.
+   Kurse haben 6 Sitzungen.
+5. **Fertiges Produkt je Sitzung** – Feld `hilfen` (`{ de, fr }`, Typ `HilfenText` in `typen.ts`, Prüfregel 17), vollständig:
+   `haken` · `vorbereitung` (Checkliste, ≤ 6 Punkte, in 10 Minuten machbar) · `aufbau` · `karten` (Druckmaterial außer dem Blatt:
+   Szenen-, Rollen-, Frage- oder Spielkarten, je Satz ≤ 24 Karten) · `leichter` · `schwerer` · `gruppe` · `beobachten`
+   (2–3 beobachtbare Zeichen, nah am ELDiB-Ziel) · `warum` (Mechanismus in einem Satz mit Kurzquelle) · `links`
+   (nur geprüfte https-Seiten, Luxemburg zuerst, z. B. BEE SECURE, Kanner-Jugendtelefon; jede Adresse vorher nachweislich
+   geprüft – lieber kein Link als ein erfundener).
+6. **Multisensorisch:** in jeder Sitzung mindestens zwei Kanäle außer Lesen und Schreiben (bewegen, anfassen, hören/sprechen,
+   sehen/zeichnen, Rollenspiel). Audio als Vorlese-Skript im Text, kein Film nötig.
+7. **Fachlich korrekt:** jede Tatsache stimmt (Zahlen mit Quelle in `quellen`); keine Mythen (Lernstile, Katharsis,
+   „Handysucht“-Etikett, „10 % des Gehirns“); Notfallnummern nur aus offiziellen Quellen.
+8. **Sicher:** Abschnitt 5 gilt; heikle Themen (Liebe/Sexualität, Trauer, Familie) mit `sensibel` bzw. so geschrieben, dass
+   die Vorsicht-Filter greifen; nie Eigenes ausfragen.
+
+**Raster der Kritiker** (je 0–10; Phase 1 alle ≥ 8, Phase 2 alle ≥ 9): Haken · Lebensnähe · Wahl und früher Erfolg ·
+Multisensorik · fachliche Richtigkeit und Belege · Kohärenz der Welt · fertiges Produkt (Hilfen, Blatt, Karten) · Sicherheit ·
+Sprache (kindgerecht, DE und FR gleich gut) · Machbarkeit für eine müde Fachkraft (≤ 10 Min. Vorbereitung, Material aus der
+Grundausstattung).
+
+## 10. Katalog Welle 3 (neue Themen, Arbeitstitel)
+
+ELDiB-Codes wählt die Kursarchitektur aus `src/data/passgenau/eldib.json` (2 Hauptziele mit Gewicht 1, 1–2 weitere mit 0.5),
+Kompetenz und Thema aus dem Vokabular (`kern/vokabular.ts`). Linie `kurs-<thema>-<von>-<bis>`.
+
+| Thema (Linie) | Alter | Worum es geht |
+|---|---|---|
+| socialmedia | 10–12, 13–16 | Online-Ich, Likes und Vergleich, Privatsphäre, Cybermobbing erkennen und handeln |
+| fakenews | 10–12, 13–16 | Meinung und Fakt, Quellen prüfen, KI-Bilder, Gerüchte stoppen |
+| gaming | 7–9, 10–12, 13–16 | Spielzeit selbst steuern, Tricks der Spiele, aufhören können, Spiel und Freundschaft |
+| comeback | 7–9, 10–12, 13–16 | wieder in die Schule: Ängste klein machen, kleine Schritte, Verbündete, Rückschläge |
+| motivation | 7–9, 10–12, 13–16 | eigene Ziele, dranbleiben, Aufschieben überlisten |
+| stress | 7–9, 10–12, 13–16 | Stress und Prüfungsangst verstehen und senken |
+| koerper | 4–6, 7–9, 10–12, 13–16 | Schlaf, Bewegung, Essen, Körpersignale – gut für mich sorgen |
+| mobbing | 7–9, 10–12, 13–16 | Ausgrenzung erkennen, sich schützen, Zivilcourage, Hilfe holen |
+| mitbestimmen | 4–6, 7–9, 10–12, 13–16 | Regeln aushandeln, Meinung sagen, gemeinsam entscheiden (Partizipation) |
+| identitaet | 7–9, 10–12, 13–16 | Wer bin ich? Herkunft, Sprachen, Luxemburg, Zugehörigkeit |
+| familie | 4–6, 7–9, 10–12, 13–16 | Veränderung in der Familie (Umzug, Trennung, Geschwister) – schonend |
+| trauer | 4–6, 7–9, 10–12, 13–16 | Abschied und Trauer – schonend, ohne Ausfragen |
+| zukunft | 10–12, 13–16 | Stärken, Berufe entdecken, nächste Schritte (Orientierung) |
+| geld | 7–9, 10–12, 13–16 | Taschengeld, Wünsche und Werbung, Konsum |
+| selbstfuersorge | 10–12, 13–16 | Pausen, Grenzen, Hilfe annehmen, Energie einteilen |
+| deeskalation | 10–12, 13–16 | wenn es kracht: ruhig bleiben, aussteigen, Gewalt vermeiden |
+| liebe | 13–16 | Freundschaft, Verliebtsein, Grenzen und Einvernehmen (heikel: nur freigeschaltet) |
+| achtsamkeit | 4–6, 7–9, 10–12, 13–16 | zur Ruhe kommen, Sinne, Aufmerksamkeit lenken |
