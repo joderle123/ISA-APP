@@ -32,6 +32,8 @@ export interface KursInfo {
   ziel?: Zwei
   /** Werkzeug oder Leitsatz des Kurses */
   stichwort?: Zwei
+  /** Welt des Kurses: Ort, Figuren, roter Faden (Welle 3, KURSE.md Abschnitt 9) */
+  welt?: Zwei
   warum?: Zwei
   achtung: { de: string[]; fr: string[] }
   quellen: string[]
@@ -49,6 +51,7 @@ type Hintergrund = {
   de?: { warum?: string; achtung?: string[] }
   fr?: { warum?: string; achtung?: string[] }
   quellen?: string[]
+  welt?: Zwei
   klasse?: { de?: { ziel?: string; stichwort?: string; sitzungen?: string[] }; fr?: { ziel?: string; stichwort?: string; sitzungen?: string[] } }
 }
 
@@ -112,6 +115,7 @@ export function kursListe(k: Katalog): KursInfo[] {
       name: h.name ?? { de: id, fr: id },
       ziel: zwei(h.klasse?.de?.ziel, h.klasse?.fr?.ziel),
       stichwort: zwei(h.klasse?.de?.stichwort, h.klasse?.fr?.stichwort),
+      welt: h.welt?.de ? zwei(h.welt.de, h.welt.fr) : undefined,
       warum: zwei(h.de?.warum, h.fr?.warum),
       achtung: { de: h.de?.achtung ?? [], fr: h.fr?.achtung ?? [] },
       quellen: h.quellen ?? [],

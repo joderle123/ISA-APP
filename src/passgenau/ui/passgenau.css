@@ -5186,3 +5186,17 @@ p.pg-kb-tausch {
 .pg-hb-dl dd {
   margin: 0;
 }
+.pg-kb-welt {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 10px 0 0;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+  max-width: 70ch;
+}
+.pg-kb-welt .ic {
+  flex: none;
+  margin-top: 2px;
+  color: var(--kb-t);
+}

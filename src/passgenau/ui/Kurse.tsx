@@ -188,6 +188,12 @@ function KursSeite({ k, zurueck }: { k: K.KursInfo; zurueck: () => void }) {
           <h1>{k.name[sp]}</h1>
           {sp === 'de' && k.name.fr !== k.name.de && <p className="pg-leise pg-kb-fr">{k.name.fr}</p>}
           {k.ziel && <p className="pg-kb-held-ziel">{k.ziel[sp]}</p>}
+          {k.welt && (
+            <p className="pg-kb-welt">
+              <Ic n="stern" />
+              <span>{k.welt[sp]}</span>
+            </p>
+          )}
           {k.stichwort && (
             <p className="pg-kb-werkzeug">
               <Ic n="griff" />
