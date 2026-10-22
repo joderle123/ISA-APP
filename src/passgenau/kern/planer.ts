@@ -11,6 +11,7 @@ import { BLATT_SYSTEM } from './system'
 import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
 import { KOMPETENZ_NAME, NUR_DEUTSCH, feldEindeutig, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
 import HINTERGRUND from '../../data/passgenau/kurs-hintergrund.json'
+import { formSlots, formTreffer, formVon, type Unterrichtsform } from './formen'
 
 export interface Verlauf {
   plaene: Plan[]
@@ -33,7 +34,7 @@ export const BOGEN: Record<number, Bogen[]> = {
 
 /** 'vertiefung': eine zweite, andere Übung zum Ziel des Kerns (60 Minuten – statt eine Übung über ihre Dauer zu strecken) */
 export type SlotRolle = Rolle | 'wahl' | 'pause' | 'vertiefung'
-export interface Slot { rolle: SlotRolle; min: number }
+export interface Slot { rolle: SlotRolle; min: number; /** Abschnitt im Bogen einer Unterrichtsform */ name?: { de: string; fr: string } }
 
 /** Die Slot-Tabelle: Minuten je Rolle und Dauer, Weg 1/2 und Weg 3. Summe = Dauer. */
 export const SLOTS: Record<'normal' | 'leicht', Record<number, [SlotRolle, number][]>> = {
@@ -75,6 +76,13 @@ function vorlage(c: Kontext): Slot[] {
   const leicht = c.weg === 'leicht'
   const tab = SLOTS[leicht ? 'leicht' : 'normal']
   const d = c.a.dauer
+  // Unterrichtsform (Planen nach Aktivität): der Bogen der Form zwischen Ankommen und Abschluss – die Fachkraft hat die Form
+  // bewusst gewählt, darum ohne die Umbauten nach Energie und Konzentration
+  const form = !leicht ? formVon(c.a.form) : undefined
+  if (form) {
+    const tab = (c.alter >= 12 ? SLOTS_JUGEND[d] : undefined) ?? SLOTS.normal[d] ?? SLOTS.normal[30]
+    return formSlots(form, d, tab[0]?.[1] ?? 3, tab[tab.length - 1]?.[1] ?? 3, blattModus(c) === 'mit')
+  }
   const basis = (!leicht && c.alter >= 12 ? SLOTS_JUGEND[d] : undefined) ?? tab[d] ?? (leicht ? tab[d <= 10 ? 10 : d <= 20 ? 20 : 30] : tab[30])
   const v: Slot[] = basis.map(([rolle, min]) => ({ rolle, min }))
   if (leicht) {
@@ -220,6 +228,9 @@ export interface SlotAuftrag {
   zielCode?: string
   /** Kompetenzen des Kerns dieser Sitzung (Themen-Rahmen: Bewegung, Reflexion … zum Thema) */
   themaK?: string[]
+  /** Unterrichtsform der Stunde: passende Schritte zählen mehr; `formStreng` nimmt nur sie (Kern) */
+  form?: Unterrichtsform
+  formStreng?: boolean
 }
 
 /** Kompetenzen, zu denen die Rahmenteile einer Sitzung passen sollen: die des Kerns, die auch ein Ziel trägt – sonst die ersten
@@ -307,6 +318,9 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
       if (kernArtig && s.kernFormate?.length === 2 && s.kernFormate[0] === s.kernFormate[1] && e.format[0] === s.kernFormate[0]) continue
       if (s.zielCode && kernArtig && !e.eldib.some((x) => x.code === s.zielCode)) continue
       if (s.rolle === 'bewegung' && c.heute.energie >= 6 && e.energie < 2) continue
+      const ft = s.form ? formTreffer(e, s.form) : 0
+      // streng: nur Schritte der Form (ein weiteres Format der Form erst bei Lockerung)
+      if (s.formStreng && (ft === 0 || (ft < 1 && locker < 2))) continue
       // Phasen aus Material-Einheiten sind Teile längerer Stunden: als kurzes Spiel oder Pause weniger passend
       const malus = (e.id.startsWith('m:') && (s.rolle === 'spiel' || s.rolle === 'bewegung' || s.rolle === 'regulation' || s.rolle === 'wahl') ? 0.08 : 0) +
         // Abwechslung über die Wochen: ein Kern im selben Format wie die Kerne der letzten drei Wochen zählt etwas weniger
@@ -315,12 +329,13 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
       // Einzelkurs (Kurs-Pilot 16.10.): eine als Ganzes geschriebene Folge mit eigenem Blatt je Sitzung geht vor einzelnen Übungen
       // – aber nur zu einem Hauptziel des Kurses (sonst begann nach dem Wut-Kurs der Fokus-Kurs, weil er V-21 nebenbei führt)
       const kurs = kernArtig && e.typ === 'schritt' && e.linie?.id.startsWith('kurs-') && e.eldib.some((x) => x.gewicht === 1 && c.ziele.some((z) => z.code === x.code)) ? 0.3 : 0
-      const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: (s.bevorzugt?.has(e.id) ? 1 : 0) - malus + thema + kurs })
+      const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: (s.bevorzugt?.has(e.id) ? 1 : 0) - malus + thema + kurs + 0.25 * ft })
       // … außer eigene Übungen im Kern (Testlauf 13: Sitzung „üben“ nahm Kurs-Teile, weil die neue Jugend-Übung zum Ziel als
       // „wahrnehmen“ markiert ist)
       if (phaseSlot && locker < 1 && e.bogen && s.phase !== 'leicht' && b.f.phase < 0.3 && !(kernArtig && kuratiert(c, e.id))) continue
       // Kern: genau das Ziel (ELDiB-Code des Ziels, primär oder sekundär) – ein Nachbar-Code im selben Bereich erst bei
       // Lockerung (Blind-Bewertung 9.10.: Kerne einer Folge drifteten zu Chat-Ton, Schulden, Gaming bei Ziel „warten“)
+      // auch mit Unterrichtsform: der Kern übt das ELDiB-Ziel (Rückmeldung 22.10.: „die ELDiB-Ziele beibehalten“)
       if (zielSlot && kernArtig && c.ziele.length) {
         if (!(b.f.ziel >= (locker >= 2 ? 0.25 : 0.4) || (locker >= 3 && b.f.thema > 0))) continue
       } else if (zielSlot && !(b.f.ziel >= (locker >= 2 ? 0.15 : 0.25) || b.f.thema > 0)) continue

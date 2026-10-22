@@ -167,6 +167,8 @@ export interface Stundenschritt extends KatalogZusatz {
   nurZumThema?: boolean
   /** Tagesform-Chips aus Weg 3, zu denen der Schritt besonders passt */
   tagesform?: Tagesform[]
+  /** Unterrichtsformen (kern/formen.ts), zu denen der Schritt gehört – ausdrücklich, wo das Format allein es nicht sagt */
+  formen?: string[]
   /** heikel je Schritt (T-M1): nur mit ausdrücklich freigeschaltetem Thema; familie/koerper nach `vorsicht` */
   sensibel?: 'kinderschutz' | 'akut' | 'familie' | 'koerper'
   qualitaet: 'geprueft' | 'entwurf'
@@ -280,8 +282,10 @@ export interface Auftrag {
   sprache: Sprache
   /** Datum der Planung (ISO), Teil des festen Zufallswerts */
   datum: string
-  /** Ort/Material außerhalb des Standards erlaubt */
-  ort?: ('turnhalle' | 'draussen')[]
+  /** Ort/Material außerhalb des Standards erlaubt (Küche: Form „Kochen & Alltag“) */
+  ort?: ('turnhalle' | 'draussen' | 'kueche')[]
+  /** Unterrichtsform (Planen nach Aktivität, 22.10.2026; kern/formen.ts): bestimmt Ablauf und Kern der Stunde */
+  form?: string
   /** „Worum soll es heute gehen?“ (T-M5, S2): Themen-Schlüssel wie material.js und/oder 'kompetenz:<Feld>' – bei dünnen
    *  Daten statt eines Ziels, sonst als Schwerpunkt für Kern und Blatt */
   thema?: string[]
@@ -312,6 +316,8 @@ export interface PlanSchritt {
   wahlkarte?: string
   /** Lockerung (T-M3) oder Hinweis zur Einzelstunde („Gruppenaktivität, so mit einem Kind“) */
   hinweis?: string
+  /** Name des Abschnitts im Bogen einer Unterrichtsform („Forscherfrage“, „Versuch“) statt des Rollennamens */
+  etikett?: { de: string; fr: string }
   /** Teil wurde über die Lockerungsleiter gewählt (T-M3); der Grund steht in `hinweis` */
   gelockert?: boolean
 }
