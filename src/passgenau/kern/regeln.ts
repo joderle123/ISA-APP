@@ -5,7 +5,7 @@ import type { Auftrag, Bogen, Heute, KatalogEintrag, Layout, Plan, Profil, Rolle
 import { hash01, layoutAusStufe, norm, stufeAusAlter, stufenAbstand, tageZwischen, istEldib } from './hilfen'
 import { intern, eldibKurz, eldibStufe, merkmaleVon, type Katalog } from './katalog'
 import { kaltstart, V, vorliebe, type Vorlieben } from './vorlieben'
-import { FORMAT_NAME, INTERESSEN, KOMPETENZ_NAME, TAGESFORM_FORMATE, TAGESFORM_NAME, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
+import { FORMAT_NAME, INTERESSEN, KOMPETENZ_NAME, TAGESFORM_FORMATE, TAGESFORM_NAME, THEMA_ALIAS, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
 import { formVon } from './formen'
 
 /** Gewichte der Bewertung (5.3) – Version V1; eine Änderung bekommt eine neue Version. */
@@ -114,6 +114,11 @@ export function kontext(k: Katalog, p: Profil, a: Auftrag, v: Vorlieben, verlauf
     if (!alt || alt.w < w || (alt.w === w && (alt.datum ?? '') < t.datum)) themen.set(t.key, { w, art: t.art, datum: t.datum })
   }
   for (const t of a.thema ?? []) if (!t.startsWith('kompetenz:')) themen.set(t, { w: 1.2, gewaehlt: true })
+  // Themen unter anderem Schlüssel im Katalog (THEMA_ALIAS) zählen auch unter diesem – das Original bleibt (Filter fragen danach)
+  for (const [t, v] of [...themen]) {
+    const x = !themaByKey.has(t) ? THEMA_ALIAS[t] : undefined
+    if (x && (themen.get(x)?.w ?? 0) < v.w) themen.set(x, v)
+  }
   // Ganz ohne Ziel und Thema (dünne Daten, keine Wahl): Stunde zum Kennenlernen – Stärken und Vorlieben (T-M5)
   if (!ziele.length && !themen.size && a.weg !== 'leicht') ziele.push({ code: 'kompetenz:selbstbild', prio: 0.6, quelle: 'kennenlernen', feld: 'selbstbild' })
   const gemacht = new Map<string, number>()

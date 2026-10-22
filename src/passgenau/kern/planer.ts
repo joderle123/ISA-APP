@@ -9,7 +9,7 @@ import { BESONDERE_THEMEN, bewerte, kontext, krisenlage, pruefe, rang, warum, ty
 import { alltagsOrte, baueBlatt, kernBlatt, werkzeugName } from './blatt'
 import { BLATT_SYSTEM } from './system'
 import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
-import { KOMPETENZ_NAME, NUR_DEUTSCH, feldEindeutig, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
+import { KOMPETENZ_NAME, NUR_DEUTSCH, THEMA_ALIAS, feldEindeutig, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
 import HINTERGRUND from '../../data/passgenau/kurs-hintergrund.json'
 import { formSlots, formTreffer, formVon, type Unterrichtsform } from './formen'
 
@@ -1373,6 +1373,11 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
           : 'Eine Übung, die besser passt als die Kurs-Varianten (Blatt und Ziel der Sitzung bleiben)'
       }
     }
+    // Form-Stunde (fo:): auch Station 2 und 3 bzw. Spiel und Ruhe aus dem eigenen Paket, solange es Teile dafür hat
+    if (kernQuelle?.startsWith('fo:') && slot.rolle !== 'kern') {
+      const paket = liste.filter((x) => quelleEinheit(x.b.e.id) === kernQuelle && !benutzt.has(x.b.e.id))
+      if (paket.length) auswahl = paket
+    }
     const w = auswahl[0]
     if (!w) {
       if (slot.rolle === 'kern') hinweise.push(`Hier fehlt Material: kein passender Kern für ${c.ziele[0]?.code ?? 'dieses Kind'} – im Baukasten suchen.`)
@@ -1532,7 +1537,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   // Dünne Daten (T-M5): ohne ELDiB-Ziel sagen, woran sich die Stunde orientiert
   if (c.weg !== 'leicht' && !c.ziele.some((z) => istEldib(z.code))) {
     const feld = c.ziele.find((z) => z.feld && z.quelle !== 'kennenlernen')?.feld
-    const thema = (c.a.thema ?? []).filter((t) => !t.startsWith('kompetenz:')).map((t) => themaByKey.get(t)?.name ?? t)
+    const thema = (c.a.thema ?? []).filter((t) => !t.startsWith('kompetenz:')).map((t) => themaByKey.get(t)?.name ?? themaByKey.get(THEMA_ALIAS[t] ?? '')?.name ?? t)
     const schwerpunkt = [...(feld ? [KOMPETENZ_NAME[feld]?.de ?? feld] : []), ...thema].join(', ')
     hinweise.push(schwerpunkt ? `Schwerpunkt: ${schwerpunkt} (noch kein ELDiB-Ziel) – ELDiB-Einschätzung fehlt.` : 'Noch kein ELDiB-Ziel – Stunde zum Kennenlernen. ELDiB-Einschätzung fehlt.')
   }

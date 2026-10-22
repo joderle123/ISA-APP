@@ -1,0 +1,3224 @@
+[
+  {
+    "id": "fo:pro-spielbrett-kinder:1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Ein Spiel, das es noch nicht gibt",
+    "text": "Auf dem Tisch liegen ein großes leeres Blatt, ein Würfel und zwei Stifte in deutlich verschiedenen Farben. Die Fachkraft kündigt an: Bis zum Schluss entsteht hier ein Brettspiel, das es noch nirgends gibt, und andere Kinder dürfen es später spielen. Sie legt fünf Aufgaben-Karten offen hin; das Kind wählt zuerst eine Karte, dann die Fachkraft, abwechselnd, bis alle Karten verteilt sind. Beide nehmen je eine Stiftfarbe, damit man am Ende sieht, wer was gemacht hat. Zum Schluss vereinbaren beide die Abstimm-Regel: Bevor etwas aufs Brett kommt, fragt man „Passt das für dich?“.",
+    "sagen": [
+      "Hier entsteht gleich ein Spiel, das es auf der ganzen Welt noch nicht gibt. Wir zwei sind die Erfinder.",
+      "Du darfst zuerst eine Aufgabe aussuchen. Welche nimmst du?",
+      "Unsere Regel: Bevor etwas aufs Brett kommt, fragen wir: Passt das für dich?"
+    ],
+    "wennEsKippt": "Will das Kind keine Karte wählen, legt die Fachkraft zwei Karten hin und fragt: „Diese oder diese?“ Mag es nicht zeichnen, nimmt es die Karten zum Ausdenken und Basteln.",
+    "kurz": "Leeres Brett zeigen · Aufgaben-Karten wählen · Abstimm-Regel",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-18",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-23",
+        "gewicht": 1
+      }
+    ],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 6,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "spiel"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "wuerfel",
+      "karten"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Un jeu qui n’existe pas encore",
+      "text": "Sur la table : une grande feuille vide, un dé et deux feutres de couleurs bien différentes. L’adulte annonce qu’à la fin, il y aura ici un jeu de plateau qui n’existe encore nulle part, et que d’autres enfants pourront y jouer plus tard. Il pose cinq cartes-tâches face visible ; l’enfant en choisit une en premier, puis l’adulte, et ainsi de suite jusqu’à ce que toutes soient distribuées. Les deux prennent une couleur de feutre, pour qu’on voie à la fin qui a fait quoi. Pour finir, ils se mettent d’accord sur la règle : avant d’ajouter quelque chose au plateau, on demande « Ça te va ? ».",
+      "sagen": [
+        "Ici va naître un jeu qui n’existe encore nulle part au monde. Nous deux, on est les inventeurs.",
+        "Tu choisis une tâche en premier. Laquelle tu prends ?",
+        "Notre règle : avant d’ajouter quelque chose au plateau, on demande : ça te va ?"
+      ],
+      "wennEsKippt": "Si l’enfant ne veut pas choisir, l’adulte pose deux cartes et demande : « Celle-ci ou celle-là ? » S’il n’aime pas dessiner, il prend les cartes où l’on invente et bricole.",
+      "kurz": "Montrer le plateau vide · choisir les tâches · règle de l’accord"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Ein leeres Spielbrett mit Würfel und der Satz: „Hier entsteht ein Spiel, das es noch nicht gibt – und andere dürfen es spielen.“",
+        "vorbereitung": [
+          "Großes Blatt (A3 oder zwei A4 zusammengeklebt) und ein Würfel",
+          "Zwei Stifte in deutlich verschiedenen Farben",
+          "Fünf Aufgaben-Karten auf Karteikarten schreiben (siehe Karten)"
+        ],
+        "aufbau": "Beide sitzen über Eck am selben Tisch, das leere Blatt liegt quer dazwischen, die Aufgaben-Karten offen daneben.",
+        "karten": [
+          {
+            "titel": "Aufgaben-Karten",
+            "karten": [
+              "Spielweg zeichnen: 20 bis 30 Felder von Start bis Ziel",
+              "Start und Ziel gestalten: Wo beginnt die Reise, wo endet sie?",
+              "Ereignisfelder ausdenken: 3 bis 5 Felder, auf denen etwas passiert",
+              "Spielfiguren basteln: zwei Figuren aus Papier oder Knete",
+              "Name und Regeln: Wie heißt das Spiel, wer fängt an, wann ist es aus?"
+            ]
+          }
+        ],
+        "beobachten": [
+          "Das Kind wählt eine Aufgabe und nimmt seine Farbe an.",
+          "Es wiederholt die Frage „Passt das für dich?“ oder nutzt sie von sich aus."
+        ],
+        "gruppe": "Mit 3–6 Kindern bekommt jedes Kind eine eigene Stiftfarbe und mindestens eine Aufgaben-Karte. Ab fünf Kindern zwei Spielbretter, die am Ende getauscht und gegenseitig getestet werden."
+      },
+      "fr": {
+        "haken": "Un plateau vide avec un dé et la phrase : « Ici va naître un jeu qui n’existe pas encore – et d’autres pourront y jouer. »",
+        "vorbereitung": [
+          "Une grande feuille (A3 ou deux A4 collées) et un dé",
+          "Deux feutres de couleurs bien différentes",
+          "Écrire cinq cartes-tâches sur des fiches bristol (voir cartes)"
+        ],
+        "aufbau": "Les deux sont assis en angle à la même table, la feuille vide posée en travers, les cartes-tâches visibles à côté.",
+        "karten": [
+          {
+            "titel": "Cartes-tâches",
+            "karten": [
+              "Dessiner le parcours : 20 à 30 cases du départ à l’arrivée",
+              "Créer le départ et l’arrivée : où commence le voyage, où finit-il ?",
+              "Inventer des cases spéciales : 3 à 5 cases où il se passe quelque chose",
+              "Bricoler les pions : deux pions en papier ou en pâte à modeler",
+              "Nom et règles : comment s’appelle le jeu, qui commence, quand est-ce fini ?"
+            ]
+          }
+        ],
+        "beobachten": [
+          "L’enfant choisit une tâche et accepte sa couleur.",
+          "Il reprend la question « Ça te va ? » ou l’utilise de lui-même."
+        ],
+        "gruppe": "Avec 3 à 6 enfants, chaque enfant reçoit sa propre couleur et au moins une carte-tâche. À partir de cinq enfants, deux plateaux qu’on échange et qu’on teste mutuellement à la fin."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-spielbrett-kinder:2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Zwei Farben, ein Spielbrett",
+    "text": "Beide arbeiten gleichzeitig an ihren Aufgaben, jeder Strich in der eigenen Farbe. Etwa alle drei Minuten ruft die Fachkraft „Abstimm-Stopp!“: Beide zeigen kurz, was entstanden ist, und fragen „Passt das für dich?“. Einmal macht die Fachkraft bewusst einen Vorschlag, der nicht ganz passt (etwa ein Feld „Zurück zum Start“), damit das Kind üben kann, eine eigene Idee freundlich einzubringen oder einen Vorschlag anzunehmen. Die Ereignisfelder belohnen Zusammenarbeit im Spiel, zum Beispiel „Du hilfst jemandem: 2 Felder vor“. Sobald Weg, Ziel und Figuren fertig sind, spielen beide eine Proberunde und bessern zusammen aus, was hakt.",
+    "sagen": [
+      "Abstimm-Stopp! Zeig mal, was du gemacht hast. Passt das für dich, was ich gemacht habe?",
+      "Ich hätte gern ein Feld „Zurück zum Start“. Was meinst du dazu?",
+      "Du hast meine Idee noch besser gemacht. Genau so arbeiten Erfinder zusammen."
+    ],
+    "wennEsKippt": "Streiten beide über eine Idee, gilt der Kompromiss-Trick: Beide Ideen kommen aufs Brett, jede auf ein anderes Feld. Wird es dem Kind zu viel, zeichnet die Fachkraft den Weg vor und das Kind gestaltet nur die Ereignisfelder.",
+    "kurz": "In zwei Farben arbeiten · Abstimm-Stopps · Proberunde spielen",
+    "rolle": [
+      "kern"
+    ],
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-18",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-23",
+        "gewicht": 1
+      }
+    ],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 25
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 6,
+      "differenzierbar": true
+    },
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 1,
+    "format": [
+      "projekt",
+      "spiel",
+      "malen"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "buntstifte",
+      "wuerfel",
+      "schere",
+      "knete",
+      "karten"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Deux couleurs, un plateau",
+      "text": "Les deux travaillent en même temps à leurs tâches, chaque trait dans sa propre couleur. Environ toutes les trois minutes, l’adulte annonce « Pause-accord ! » : les deux montrent brièvement ce qu’ils ont fait et demandent « Ça te va ? ». Une fois, l’adulte fait exprès une proposition qui ne convient pas tout à fait (par exemple une case « Retour au départ »), pour que l’enfant s’entraîne à apporter gentiment sa propre idée ou à accepter une proposition. Les cases spéciales récompensent l’entraide dans le jeu, par exemple « Tu aides quelqu’un : avance de 2 cases ». Dès que le parcours, l’arrivée et les pions sont prêts, les deux jouent une partie d’essai et corrigent ensemble ce qui coince.",
+      "sagen": [
+        "Pause-accord ! Montre-moi ce que tu as fait. Ce que j’ai fait, ça te va ?",
+        "J’aimerais bien une case « Retour au départ ». Qu’est-ce que tu en penses ?",
+        "Tu as rendu mon idée encore meilleure. C’est comme ça que les inventeurs travaillent ensemble."
+      ],
+      "wennEsKippt": "Si les deux ne sont pas d’accord sur une idée, on applique l’astuce du compromis : les deux idées vont sur le plateau, l’une sur une case, l’autre ailleurs. Si c’est trop pour l’enfant, l’adulte trace le parcours et l’enfant ne crée que les cases spéciales.",
+      "kurz": "Travailler en deux couleurs · pauses-accord · partie d’essai"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Am Ende wird das eigene Spiel wirklich gespielt – das Kind erlebt noch in derselben Stunde, dass seine Ideen funktionieren.",
+        "vorbereitung": [
+          "Großes Blatt, Würfel, zwei Farbstifte, Buntstifte",
+          "Kinderschere und Papier oder Knete für die Spielfiguren",
+          "Zettel „Abstimm-Stopp“ als Erinnerung für die Fachkraft",
+          "Uhr oder Sanduhr für die Stopps etwa alle drei Minuten"
+        ],
+        "aufbau": "Beide sitzen über Eck, das Spielbrett liegt quer zwischen ihnen, damit beide gleich gut daran arbeiten. Aufgaben-Karten und Bastelsachen liegen in Reichweite.",
+        "karten": [
+          {
+            "titel": "Ideen für Ereignisfelder",
+            "karten": [
+              "Du hilfst jemandem: 2 Felder vor.",
+              "Zusammen-Feld: Beide Figuren rücken 1 Feld vor.",
+              "Tausch-Feld: Die Figuren tauschen die Plätze.",
+              "Brücke: Du darfst hinüber, wenn du deinem Mitspieler einen Tipp gibst.",
+              "Pause-Feld: einmal aussetzen und dabei etwas Nettes sagen.",
+              "Abkürzung: Nur wer vorher „Darf ich?“ fragt, darf sie nehmen."
+            ]
+          }
+        ],
+        "leichter": "Weg mit 15 Feldern und nur zwei Ereignisfeldern. Die Fachkraft zeichnet den Weg mit Bleistift vor, das Kind fährt ihn in seiner Farbe nach und gestaltet Start und Ziel.",
+        "schwerer": "Zusätzlich ein Feld erfinden, das man nur zu zweit überqueren kann, und eine Spielanleitung in drei Sätzen schreiben, die jemand ohne Erklärung versteht.",
+        "gruppe": "Mit 3–6 Kindern: Aufgaben-Karten verteilen, jede Farbe gehört einem Kind, die Fachkraft ruft die Abstimm-Stopps für alle. Bei zwei Brettern testen die Kinder am Ende gegenseitig ihre Spiele und sagen, was Spaß gemacht hat.",
+        "beobachten": [
+          "Das Kind fragt mindestens einmal von sich aus: „Passt das für dich?“",
+          "Es bringt eine eigene Idee freundlich ein oder nimmt einen Vorschlag an, statt die andere Farbe zu übermalen.",
+          "Auf dem Brett sind am Ende beide Farben an vielen Stellen zu sehen."
+        ],
+        "warum": "Eine gemeinsame Sache mit verteilten Aufgaben macht beide voneinander abhängig; das fördert Absprechen, Annehmen und Helfen deutlich mehr als bloßes Nebeneinander-Arbeiten (positive Interdependenz; Johnson & Johnson, 2009)."
+      },
+      "fr": {
+        "haken": "À la fin, on joue vraiment à son propre jeu : l’enfant constate dans la même heure que ses idées fonctionnent.",
+        "vorbereitung": [
+          "Grande feuille, dé, deux feutres de couleur, crayons de couleur",
+          "Ciseaux à bouts ronds, papier ou pâte à modeler pour les pions",
+          "Un papier « Pause-accord » comme aide-mémoire pour l’adulte",
+          "Montre ou sablier pour les pauses environ toutes les trois minutes"
+        ],
+        "aufbau": "Les deux sont assis en angle, le plateau en travers entre eux pour que les deux y travaillent aussi bien. Cartes-tâches et matériel de bricolage à portée de main.",
+        "karten": [
+          {
+            "titel": "Idées de cases spéciales",
+            "karten": [
+              "Tu aides quelqu’un : avance de 2 cases.",
+              "Case ensemble : les deux pions avancent d’une case.",
+              "Case échange : les pions échangent leur place.",
+              "Pont : tu peux traverser si tu donnes une astuce à l’autre joueur.",
+              "Case pause : passe un tour et dis quelque chose de gentil.",
+              "Raccourci : seul celui qui demande « Je peux ? » a le droit de le prendre."
+            ]
+          }
+        ],
+        "leichter": "Parcours de 15 cases et seulement deux cases spéciales. L’adulte trace le parcours au crayon, l’enfant le repasse dans sa couleur et décore le départ et l’arrivée.",
+        "schwerer": "Inventer en plus une case qu’on ne peut franchir qu’à deux, et écrire une règle du jeu en trois phrases que quelqu’un comprend sans explication.",
+        "gruppe": "Avec 3 à 6 enfants : distribuer les cartes-tâches, chaque couleur appartient à un enfant, l’adulte annonce les pauses-accord pour tous. Avec deux plateaux, les enfants testent à la fin le jeu des autres et disent ce qui leur a plu.",
+        "beobachten": [
+          "L’enfant demande au moins une fois de lui-même : « Ça te va ? »",
+          "Il apporte gentiment sa propre idée ou accepte une proposition, au lieu de colorier par-dessus l’autre couleur.",
+          "À la fin, les deux couleurs se voient à de nombreux endroits du plateau."
+        ],
+        "warum": "Un projet commun avec des tâches réparties rend les deux partenaires dépendants l’un de l’autre ; cela favorise la concertation, l’acceptation et l’entraide bien plus que le simple travail côte à côte (interdépendance positive ; Johnson & Johnson, 2009)."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-spielbrett-kinder:3",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Unser Spiel: Wer hat was gemacht?",
+    "text": "Beide schauen das fertige Spielbrett an. Das Kind sucht drei Stellen: eine nur in seiner Farbe, eine nur in der Farbe der Fachkraft und eine, an der beide Farben zusammenkommen. Dann legt die Fachkraft drei Karten hin („Aufgaben verteilen“, „Fragen: Passt das für dich?“, „Eine fremde Idee übernehmen“), und das Kind zeigt, was heute beim Zusammenarbeiten am meisten geholfen hat. Zum Schluss bestimmt das Kind den nächsten Schritt: den Namen des Spiels aufs Brett schreiben, einen Platz dafür aussuchen und festlegen, wer es als Nächstes mitspielen darf.",
+    "sagen": [
+      "Zeig mir eine Stelle, an der unsere beiden Farben zusammenkommen.",
+      "Was hat uns beim Zusammenarbeiten am meisten geholfen?",
+      "Wo soll unser Spiel wohnen, und mit wem spielst du es als Nächstes?"
+    ],
+    "wennEsKippt": "Fällt dem Kind nichts ein, erinnert die Fachkraft an einen Moment aus der Stunde („Als du gefragt hast, ob mir die Brücke gefällt …“), und das Kind zeigt nur noch auf eine Karte.",
+    "kurz": "Farben suchen · was half beim Zusammenarbeiten? · Platz fürs Spiel",
+    "rolle": [
+      "reflexion"
+    ],
+    "nurZumThema": true,
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-18",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-23",
+        "gewicht": 1
+      }
+    ],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 6,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "karten",
+      "stifte"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Notre jeu : qui a fait quoi ?",
+      "text": "Les deux regardent le plateau terminé. L’enfant cherche trois endroits : un seulement dans sa couleur, un seulement dans la couleur de l’adulte et un où les deux couleurs se rejoignent. Puis l’adulte pose trois cartes (« Répartir les tâches », « Demander : ça te va ? », « Reprendre l’idée de l’autre ») et l’enfant montre ce qui a le plus aidé aujourd’hui pour travailler ensemble. Pour finir, l’enfant décide de la suite : écrire le nom du jeu sur le plateau, lui choisir une place et dire avec qui il y jouera la prochaine fois.",
+      "sagen": [
+        "Montre-moi un endroit où nos deux couleurs se rejoignent.",
+        "Qu’est-ce qui nous a le plus aidés à travailler ensemble ?",
+        "Où va habiter notre jeu, et avec qui tu y joues la prochaine fois ?"
+      ],
+      "wennEsKippt": "Si rien ne vient, l’adulte rappelle un moment de l’heure (« Quand tu m’as demandé si le pont me plaisait … ») et l’enfant montre simplement une carte.",
+      "kurz": "Chercher les couleurs · ce qui a aidé · une place pour le jeu"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Die Farben auf dem Brett machen sichtbar, dass das Spiel nur zu zweit so geworden ist.",
+        "vorbereitung": [
+          "Drei Karteikarten: „Aufgaben verteilen“, „Passt das für dich?“, „Fremde Idee übernehmen“"
+        ],
+        "beobachten": [
+          "Das Kind benennt eine konkrete Sache, die beim Zusammenarbeiten geholfen hat.",
+          "Es spricht von „unserem Spiel“ und zeigt Freude am gemeinsamen Ergebnis."
+        ],
+        "gruppe": "Mit mehreren Kindern sucht jedes Kind eine Stelle in seiner Farbe und eine, an der es mit einem anderen Kind zusammen gearbeitet hat. Danach legen die Kinder gemeinsam fest, wo das Spiel aufbewahrt wird."
+      },
+      "fr": {
+        "haken": "Les couleurs sur le plateau montrent que ce jeu n’a pu naître qu’à deux.",
+        "vorbereitung": [
+          "Trois fiches : « Répartir les tâches », « Ça te va ? », « Reprendre l’idée de l’autre »"
+        ],
+        "beobachten": [
+          "L’enfant nomme une chose concrète qui a aidé à travailler ensemble.",
+          "Il parle de « notre jeu » et montre de la joie face au résultat commun."
+        ],
+        "gruppe": "Avec plusieurs enfants, chaque enfant cherche un endroit dans sa couleur et un autre où il a travaillé avec un autre enfant. Ensuite, les enfants décident ensemble où le jeu sera rangé."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-raetselbox-jugend:1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Die Rätselbox: Auftrag und Rollen",
+    "text": "Die Fachkraft stellt einen Schuhkarton mit der Aufschrift „Nur für Profis“ auf den Tisch und öffnet ihn: Er ist leer. Bis zum Schluss bauen beide daraus eine Rätselbox, an der später jemand anderes zehn Minuten knobeln soll. Die Fachkraft legt drei Rollen-Karten hin (Story, Rätselbau, Testen) und nennt die einzige feste Regel: Die Lösung jedes Rätsels ist der Schlüssel zum nächsten. Der oder die Jugendliche wählt zuerst eine Rolle und eine von drei Story-Ideen oder erfindet eine eigene. Dann legen beide fest, wer welches der drei Rätsel baut und an welchen Stellen sie sich absprechen.",
+    "sagen": [
+      "Diese Box ist leer. Am Ende soll jemand zehn Minuten daran knobeln – und sie lösen können.",
+      "Welche Rolle nimmst du: Story, Rätselbau oder Testen?",
+      "Es gibt nur eine feste Regel: Jede Lösung öffnet das nächste Rätsel. Das klappt nur, wenn wir uns absprechen."
+    ],
+    "wennEsKippt": "Wirkt die Aufgabe zu groß, wählt der oder die Jugendliche nur die Story und die Rolle; die Fachkraft schlägt die Verteilung der Rätsel vor, und er oder sie sagt nur Ja oder ändert eine Sache.",
+    "kurz": "Leere Box zeigen · Rollen und Story wählen · Übergaben planen",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-38",
+        "gewicht": 1
+      },
+      {
+        "code": "K-32",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "spiel"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "schuhkarton",
+      "karten",
+      "stifte"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "La boîte à énigmes : le défi et les rôles",
+      "text": "L’adulte pose sur la table une boîte à chaussures marquée « Réservé aux pros » et l’ouvre : elle est vide. D’ici la fin, les deux vont en faire une boîte à énigmes sur laquelle quelqu’un d’autre devra réfléchir dix minutes. L’adulte pose trois cartes-rôles (Scénario, Construction, Test) et donne la seule règle fixe : la solution de chaque énigme est la clé de la suivante. Le ou la jeune choisit en premier un rôle et l’une des trois idées de scénario, ou en invente une. Ensuite, les deux décident qui construit laquelle des trois énigmes et à quels moments ils se mettent d’accord.",
+      "sagen": [
+        "Cette boîte est vide. À la fin, quelqu’un devra y réfléchir dix minutes – et pouvoir la résoudre.",
+        "Quel rôle tu prends : Scénario, Construction ou Test ?",
+        "Il n’y a qu’une règle fixe : chaque solution ouvre l’énigme suivante. Ça ne marche que si on se met d’accord."
+      ],
+      "wennEsKippt": "Si la tâche paraît trop grande, le ou la jeune choisit seulement le scénario et le rôle ; l’adulte propose la répartition des énigmes, et il ou elle dit oui ou change une seule chose.",
+      "kurz": "Montrer la boîte vide · rôles et scénario · prévoir les passages"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Eine leere Box mit „Nur für Profis“ und der Auftrag, dass jemand anderes wirklich daran knobeln wird: ein echtes Ergebnis, das benutzt wird.",
+        "vorbereitung": [
+          "Schuhkarton mit der Aufschrift „Nur für Profis“",
+          "Rollen-Karten und Story-Karten (siehe Karten beim Kern)",
+          "Karteikarten und Stifte"
+        ],
+        "beobachten": [
+          "Der oder die Jugendliche entscheidet sich für eine Rolle und begründet die Wahl kurz.",
+          "Er oder sie fragt nach, wie die Übergabe zwischen zwei Rätseln aussehen soll."
+        ],
+        "gruppe": "Mit 3–8 Jugendlichen: Kleingruppen zu dritt oder viert, jede Rolle mindestens einmal besetzt. Zwei Gruppen bauen je eine Box und tauschen sie am Ende zum Testen."
+      },
+      "fr": {
+        "haken": "Une boîte vide « Réservé aux pros » et l’annonce que quelqu’un d’autre va s’y casser la tête : un vrai résultat, pour de vrais joueurs.",
+        "vorbereitung": [
+          "Boîte à chaussures marquée « Réservé aux pros »",
+          "Cartes-rôles et cartes-scénarios (voir cartes du cœur de séance)",
+          "Fiches bristol et feutres"
+        ],
+        "beobachten": [
+          "Le ou la jeune choisit un rôle et justifie brièvement son choix.",
+          "Il ou elle demande comment se fera le passage d’une énigme à l’autre."
+        ],
+        "gruppe": "Avec 3 à 8 jeunes : petits groupes de trois ou quatre, chaque rôle occupé au moins une fois. Deux groupes construisent chacun une boîte et les échangent à la fin pour les tester."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-raetselbox-jugend:2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Drei Rätsel, eine Kette",
+    "text": "Beide bauen parallel: der oder die Jugendliche ein Rätsel, die Fachkraft ein zweites, das dritte entsteht gemeinsam (Rätsel-Typen auf den Karten). An jeder Übergabe sprechen sich beide ab: Die Lösung des einen Rätsels ist der Schlüssel zum nächsten, also klären sie, welches Wort oder welche Zahl übergeben wird. Danach tauschen sie und lösen das Rätsel des anderen als Testperson: Wer testet, denkt laut und sagt, wo es hakt; wer gebaut hat, hört erst zu und bessert dann nach. Zum Schluss kommt alles in die Box, mit einer Startkarte obendrauf, die die Story erzählt.",
+    "sagen": [
+      "Was übergibt dein Rätsel an meins – ein Wort oder eine Zahl?",
+      "Jetzt bist du die Testperson. Sag laut, was du denkst. Ich darf nur zuhören.",
+      "Was ist an meinem Rätsel gut, und was würdest du ändern?"
+    ],
+    "wennEsKippt": "Stockt der Rätselbau, wählt der oder die Jugendliche einen Rätsel-Typ von der Karte und füllt ihn nur noch aus. Wird die Rückmeldung beim Testen zu persönlich, erinnert die Fachkraft an die Regel: über das Rätsel sprechen, nicht über die Person.",
+    "kurz": "Rätsel parallel bauen · Übergaben klären · gegenseitig testen",
+    "rolle": [
+      "kern"
+    ],
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-38",
+        "gewicht": 1
+      },
+      {
+        "code": "K-32",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 25
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 1,
+    "format": [
+      "projekt",
+      "spiel",
+      "basteln"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "schuhkarton",
+      "papier",
+      "karten",
+      "stifte",
+      "schere",
+      "klebeband",
+      "becher"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Trois énigmes, une chaîne",
+      "text": "Les deux construisent en parallèle : le ou la jeune une énigme, l’adulte une deuxième, la troisième se fait ensemble (types d’énigmes sur les cartes). À chaque passage, les deux se mettent d’accord : la solution d’une énigme est la clé de la suivante, donc ils précisent quel mot ou quel nombre est transmis. Ensuite, ils échangent et résolvent l’énigme de l’autre en tant que testeur : celui qui teste pense à voix haute et dit où ça coince ; celui qui a construit écoute d’abord, puis améliore. Pour finir, tout va dans la boîte, avec une carte de départ sur le dessus qui raconte le scénario.",
+      "sagen": [
+        "Qu’est-ce que ton énigme transmet à la mienne – un mot ou un nombre ?",
+        "Maintenant, c’est toi qui testes. Dis à voix haute ce que tu penses. Moi, j’ai seulement le droit d’écouter.",
+        "Qu’est-ce qui est bien dans mon énigme, et qu’est-ce que tu changerais ?"
+      ],
+      "wennEsKippt": "Si la construction bloque, le ou la jeune choisit un type d’énigme sur la carte et se contente de le remplir. Si le retour pendant le test devient trop personnel, l’adulte rappelle la règle : on parle de l’énigme, pas de la personne.",
+      "kurz": "Construire en parallèle · régler les passages · tester"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Die eigene Box wird sofort getestet: Der oder die Jugendliche sieht live, wie jemand an seinem oder ihrem Rätsel knobelt.",
+        "vorbereitung": [
+          "Schuhkarton, Papier, Karteikarten, Stifte, Schere, Kreppband",
+          "Becher und ein paar Stifte als Zähl-Gegenstände für ein Zahlen-Rätsel",
+          "Rätsel-Typen, Story-Ideen und Rollen auf Karteikarten (siehe Karten)",
+          "Uhr für den Probelauf"
+        ],
+        "aufbau": "Beide sitzen sich gegenüber, damit sie beim Bauen nicht ins Rätsel des anderen schauen. Die Box steht in der Mitte, die Karten liegen offen daneben.",
+        "karten": [
+          {
+            "titel": "Rätsel-Typen",
+            "karten": [
+              "Buchstaben-Code: A=1, B=2 … Eine Zahlenreihe ergibt das Lösungswort.",
+              "Zahlen-Schloss: Die Lösung ist eine Zahl, die man im Raum oder in der Box zählt.",
+              "Rückwärts-Text: Ein Satz, von hinten nach vorn geschrieben, verrät ein Versteck.",
+              "Bilderfolge: Vier gezeichnete Dinge – ihre Anfangsbuchstaben ergeben ein Wort.",
+              "Falsch-Finder: Eine kurze Geschichte mit einem Fehler; der Fehler ist der Hinweis."
+            ]
+          },
+          {
+            "titel": "Story-Ideen",
+            "karten": [
+              "Agentur 352: Der Code muss geknackt sein, bevor der letzte Bus fährt.",
+              "Das Geheimnis der Roten Brücke: Wer hat die Nachricht am Kirchberg versteckt?",
+              "Der verschwundene Schlüssel: Der Raum muss bis Schluss wieder offen sein."
+            ]
+          },
+          {
+            "titel": "Rollen",
+            "karten": [
+              "Story: hält die Geschichte zusammen und schreibt die Startkarte.",
+              "Rätselbau: baut ein Rätsel und klärt die Übergabe zum nächsten.",
+              "Testen: löst laut denkend und sagt, wo es hakt – über das Rätsel, nicht über die Person."
+            ]
+          }
+        ],
+        "leichter": "Nur zwei Rätsel statt drei, beide vom Typ Buchstaben-Code und Zahlen-Schloss; die Fachkraft schreibt die Startkarte.",
+        "schwerer": "Ein viertes Rätsel, das nur lösbar ist, wenn man zwei frühere Lösungen kombiniert, und eine Hinweis-Karte für Testpersonen, die feststecken.",
+        "gruppe": "Mit 3–8 Jugendlichen bauen Kleingruppen mit festen Rollen je eine Box; jedes Rätsel hat eine verantwortliche Person, die Übergaben klären die Gruppen an einem gemeinsamen Absprache-Punkt. Zum Schluss tauschen zwei Gruppen ihre Boxen und testen gegenseitig.",
+        "beobachten": [
+          "Der oder die Jugendliche klärt eine Übergabe von sich aus („Mein Lösungswort ist …, passt das zu deinem Start?“).",
+          "Beim Testen nimmt er oder sie Rückmeldung an und bessert nach, ohne sich lange zu rechtfertigen.",
+          "Er oder sie würdigt einen Beitrag der Fachkraft konkret („Dein Zahlen-Schloss ist gut versteckt“)."
+        ],
+        "warum": "Klare, voneinander abhängige Rollen und eine echte Übergabe zwischen den Teilen machen Absprache und Anerkennung nötig; das stärkt Kooperation mehr als lose Zusammenarbeit (Johnson & Johnson, 2009; Puzzle-Prinzip nach Aronson, 1978)."
+      },
+      "fr": {
+        "haken": "La boîte est testée tout de suite : le ou la jeune voit en direct quelqu’un réfléchir sur son énigme.",
+        "vorbereitung": [
+          "Boîte à chaussures, papier, fiches bristol, feutres, ciseaux, ruban adhésif",
+          "Un gobelet et quelques crayons à compter pour une énigme à chiffres",
+          "Types d’énigmes, idées de scénario et rôles sur fiches (voir cartes)",
+          "Une montre pour l’essai"
+        ],
+        "aufbau": "Les deux sont assis face à face, pour ne pas voir l’énigme de l’autre pendant la construction. La boîte est au milieu, les cartes visibles à côté.",
+        "karten": [
+          {
+            "titel": "Types d’énigmes",
+            "karten": [
+              "Code-lettres : A=1, B=2 … Une suite de nombres donne le mot-solution.",
+              "Cadenas à chiffres : la solution est un nombre qu’on compte dans la pièce ou la boîte.",
+              "Texte à l’envers : une phrase écrite de la fin au début révèle une cachette.",
+              "Suite d’images : quatre objets dessinés, leurs initiales forment un mot.",
+              "Cherche l’erreur : une courte histoire avec une erreur ; l’erreur est l’indice."
+            ]
+          },
+          {
+            "titel": "Idées de scénario",
+            "karten": [
+              "Agence 352 : le code doit être craqué avant le départ du dernier bus.",
+              "Le secret du Pont Rouge : qui a caché le message au Kirchberg ?",
+              "La clé disparue : la salle doit être rouverte avant la fin."
+            ]
+          },
+          {
+            "titel": "Rôles",
+            "karten": [
+              "Scénario : tient l’histoire ensemble et écrit la carte de départ.",
+              "Construction : construit une énigme et règle le passage vers la suivante.",
+              "Test : résout en pensant à voix haute et dit où ça coince – sur l’énigme, pas sur la personne."
+            ]
+          }
+        ],
+        "leichter": "Seulement deux énigmes au lieu de trois, de type code-lettres et cadenas à chiffres ; l’adulte écrit la carte de départ.",
+        "schwerer": "Une quatrième énigme qu’on ne résout qu’en combinant deux solutions précédentes, et une carte-indice pour les testeurs bloqués.",
+        "gruppe": "Avec 3 à 8 jeunes, des petits groupes aux rôles fixes construisent chacun une boîte ; chaque énigme a un responsable, et les groupes règlent les passages à un point de concertation commun. À la fin, deux groupes échangent leurs boîtes et se testent mutuellement.",
+        "beobachten": [
+          "Le ou la jeune règle un passage de lui-même ou d’elle-même (« Mon mot-solution est …, ça colle avec ton départ ? »).",
+          "Pendant le test, il ou elle accepte le retour et améliore, sans longue justification.",
+          "Il ou elle reconnaît concrètement une contribution de l’adulte (« Ton cadenas à chiffres est bien caché »)."
+        ],
+        "warum": "Des rôles clairs et interdépendants et un vrai passage entre les parties rendent la concertation et la reconnaissance nécessaires ; cela renforce la coopération plus qu’un travail commun lâche (Johnson & Johnson, 2009 ; principe du puzzle d’après Aronson, 1978)."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-raetselbox-jugend:3",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Box zu: Was hat uns stark gemacht?",
+    "text": "Die Box ist zu, die Startkarte liegt obendrauf. Beide schauen zurück: Welche Rolle lag dem oder der Jugendlichen am meisten, und an welcher Übergabe hat die Absprache wirklich etwas gerettet? Er oder sie nennt einen Beitrag der Fachkraft, der geholfen hat, und die Fachkraft nennt danach einen von ihm oder ihr – konkret, mit Beispiel. Zum Schluss entscheidet der oder die Jugendliche, wer die Box als Erstes lösen darf und ob „Entwickelt von …“ auf den Deckel kommt.",
+    "sagen": [
+      "Welche Rolle lag dir am meisten – und woran hast du das gemerkt?",
+      "Wo hat unsere Absprache etwas gerettet?",
+      "Nenn mir einen Beitrag von mir, der dir geholfen hat. Danach sag ich dir einen von dir."
+    ],
+    "wennEsKippt": "Fällt keine Antwort ein, legt die Fachkraft die drei Rollen-Karten hin und der oder die Jugendliche zeigt nur auf eine. Die Würdigung darf auch ein Satz sein, den die Fachkraft anbietet und den er oder sie bestätigt oder ändert.",
+    "kurz": "Rolle, die lag · Absprache, die rettete · Beiträge würdigen",
+    "rolle": [
+      "reflexion"
+    ],
+    "nurZumThema": true,
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-38",
+        "gewicht": 1
+      },
+      {
+        "code": "K-32",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kooperation"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "karten",
+      "stifte"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Boîte fermée : qu’est-ce qui nous a rendus forts ?",
+      "text": "La boîte est fermée, la carte de départ posée dessus. Les deux font le point : quel rôle convenait le mieux au ou à la jeune, et à quel passage la concertation a-t-elle vraiment sauvé quelque chose ? Il ou elle cite une contribution de l’adulte qui a aidé, puis l’adulte en cite une du ou de la jeune – concrète, avec un exemple. Pour finir, le ou la jeune décide qui aura le droit de résoudre la boîte en premier et si « Conçu par … » sera écrit sur le couvercle.",
+      "sagen": [
+        "Quel rôle te convenait le mieux – et à quoi tu l’as remarqué ?",
+        "À quel moment notre concertation a sauvé quelque chose ?",
+        "Cite-moi une contribution de ma part qui t’a aidé. Ensuite, je t’en dis une de toi."
+      ],
+      "wennEsKippt": "Si rien ne vient, l’adulte pose les trois cartes-rôles et le ou la jeune en montre simplement une. La reconnaissance peut aussi être une phrase proposée par l’adulte, que le ou la jeune confirme ou modifie.",
+      "kurz": "Le rôle qui convenait · l’accord qui a sauvé · se reconnaître"
+    },
+    "hilfen": {
+      "de": {
+        "beobachten": [
+          "Der oder die Jugendliche benennt einen konkreten Beitrag der Fachkraft, statt nur „war gut“ zu sagen.",
+          "Er oder sie beschreibt die eigene Rolle mit einem Beispiel aus der Stunde."
+        ],
+        "gruppe": "In der Gruppe würdigt jede Person den Beitrag einer anderen Rolle, und jede Gruppe nennt eine Übergabe, die nur durch Absprache geklappt hat. Die Gruppen tauschen danach die Boxen für den ersten echten Lauf."
+      },
+      "fr": {
+        "beobachten": [
+          "Le ou la jeune nomme une contribution concrète de l’adulte, au lieu de dire seulement « c’était bien ».",
+          "Il ou elle décrit son propre rôle avec un exemple tiré de l’heure."
+        ],
+        "gruppe": "En groupe, chacun reconnaît l’apport d’un autre rôle, et chaque groupe cite un passage qui n’a marché que grâce à la concertation. Ensuite, les groupes échangent leurs boîtes pour le premier vrai essai."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-koennen-museum-kinder:1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Ein Museum, das noch leer ist",
+    "text": "Die Fachkraft stellt drei einmal gefaltete Karteikarten wie kleine Museumsschilder auf den Tisch und legt ein Schild „Museum von …“ dazu. Sie erklärt: Bis zum Schluss entsteht hier ein Mini-Museum mit drei Ausstellungsstücken, die zeigen, was das Kind kann. Dann breitet sie die Können-Karten aus (etwas bauen, falten, zeichnen, einen Trick vormachen, etwas erklären, ein Wort in einer anderen Sprache beibringen). Das Kind wählt drei Karten; das erste Stück soll etwas sein, das es sofort hier am Tisch machen kann. Den Namen des Museums trägt das Kind selbst ein.",
+    "sagen": [
+      "Hier eröffnet gleich ein Museum. Es heißt wie du – nur die Ausstellungsstücke fehlen noch.",
+      "Such dir drei Sachen aus, die du kannst. Eine davon machst du gleich hier am Tisch.",
+      "In einem Museum steht immer dabei, wie etwas entstanden ist. Das schreiben wir auch dazu."
+    ],
+    "wennEsKippt": "Fällt dem Kind nichts ein, nennt die Fachkraft zwei Dinge, die sie schon bei ihm gesehen hat, und das Kind sucht sich eins aus. „Weiß nicht“ ist erlaubt: Dann beginnt das Museum mit einem Stück, das jetzt gleich entsteht.",
+    "kurz": "Leere Museumsschilder · Können-Karten wählen · Museum benennen",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [
+      "selbstwert"
+    ],
+    "eldib": [
+      {
+        "code": "K-18",
+        "gewicht": 1
+      },
+      {
+        "code": "K-19",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "karten",
+      "stifte"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Un musée encore vide",
+      "text": "L’adulte pose sur la table trois fiches bristol pliées en deux, comme de petits cartels de musée, avec une fiche « Musée de … ». Il explique : d’ici la fin, il y aura ici un mini-musée avec trois pièces qui montrent ce que l’enfant sait faire. Puis il étale les cartes « Je sais faire » (construire, plier, dessiner, montrer un tour, expliquer quelque chose, apprendre un mot dans une autre langue). L’enfant choisit trois cartes ; la première pièce doit être quelque chose qu’il peut faire tout de suite à la table. L’enfant écrit lui-même le nom du musée.",
+      "sagen": [
+        "Ici, un musée va ouvrir. Il porte ton nom – seules les pièces exposées ne sont pas encore là.",
+        "Choisis trois choses que tu sais faire. L’une d’elles, tu la fais tout de suite ici.",
+        "Dans un musée, on écrit toujours comment une œuvre est née. On va l’écrire aussi."
+      ],
+      "wennEsKippt": "Si rien ne vient, l’adulte nomme deux choses qu’il a déjà vu l’enfant réussir, et l’enfant en choisit une. « Je ne sais pas » est permis : le musée commence alors avec une pièce qu’on crée maintenant.",
+      "kurz": "Cartels vides · choisir les cartes « Je sais faire » · nommer"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Ein Schild „Museum von …“ und leere Ausstellungsschilder: Das Kind erfährt, dass gleich es selbst ausgestellt wird.",
+        "vorbereitung": [
+          "Drei bis vier Karteikarten, einmal gefaltet, als Museumsschilder",
+          "Eine Karteikarte „Museum von …“",
+          "Können-Karten auf Karteikarten (siehe Karten)"
+        ],
+        "karten": [
+          {
+            "titel": "Können-Karten",
+            "karten": [
+              "Etwas bauen: mit Bauklötzen oder Knete",
+              "Etwas falten: Papierflieger, Schiff, Himmel und Hölle",
+              "Etwas zeichnen, das ich gut kann",
+              "Einen Trick vormachen: Zungenbrecher, Fingerspiel, Kartentrick",
+              "Etwas erklären, das ich weiß: über Tiere, ein Spiel, einen Sport",
+              "Ein Wort beibringen: auf Lëtzebuergesch, Portugiesisch, Französisch …",
+              "Etwas aus Sport oder Spiel zeigen: vormachen oder zeichnen"
+            ]
+          }
+        ],
+        "beobachten": [
+          "Das Kind wählt drei Dinge, die es kann, ohne sie sofort kleinzureden.",
+          "Es schreibt oder sagt seinen Namen für das Museum mit sichtbarer Freude."
+        ],
+        "gruppe": "Mit 3–8 Kindern bekommt jedes Kind eine eigene Vitrine (ein Blatt oder eine Schachtel) und wählt zwei Können-Karten; der Raum wird zu einem gemeinsamen Museum mit vielen Vitrinen."
+      },
+      "fr": {
+        "haken": "Une fiche « Musée de … » et des cartels vides : l’enfant découvre que c’est lui qui va être exposé.",
+        "vorbereitung": [
+          "Trois ou quatre fiches bristol pliées en deux comme cartels",
+          "Une fiche « Musée de … »",
+          "Cartes « Je sais faire » sur fiches bristol (voir cartes)"
+        ],
+        "karten": [
+          {
+            "titel": "Cartes « Je sais faire »",
+            "karten": [
+              "Construire quelque chose : avec des cubes ou de la pâte à modeler",
+              "Plier quelque chose : avion en papier, bateau, cocotte",
+              "Dessiner quelque chose que je réussis bien",
+              "Montrer un tour : virelangue, jeu de doigts, tour de cartes",
+              "Expliquer quelque chose que je sais : les animaux, un jeu, un sport",
+              "Apprendre un mot : en luxembourgeois, portugais, allemand …",
+              "Montrer quelque chose de mon sport ou de mon jeu : en le faisant ou en le dessinant"
+            ]
+          }
+        ],
+        "beobachten": [
+          "L’enfant choisit trois choses qu’il sait faire, sans les minimiser aussitôt.",
+          "Il écrit ou dit son nom pour le musée avec une joie visible."
+        ],
+        "gruppe": "Avec 3 à 8 enfants, chaque enfant reçoit sa propre vitrine (une feuille ou une boîte) et choisit deux cartes ; la salle devient un musée commun avec de nombreuses vitrines."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-koennen-museum-kinder:2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Ausstellungsstücke mit Schild",
+    "text": "Das Kind stellt seine drei Ausstellungsstücke her oder holt sie als Zeichnung ins Museum: ein Knete-Tier, einen Papierflieger, eine Zeichnung vom Fußballtrick, ein Wort auf Lëtzebuergesch. Zu jedem Stück füllt es ein Museumsschild mit drei Zeilen aus: Name des Stücks, „Das kann ich:“ und „So habe ich es gelernt:“ (geübt, abgeschaut, oft probiert, jemand hat es mir gezeigt). Die Fachkraft fragt als neugierige Museumsführerin nach dem Weg, nicht nach dem Talent, und schreibt auf Wunsch mit. Am Ende stellt das Kind die drei Stücke mit ihren Schildern auf und bestimmt die Reihenfolge.",
+    "sagen": [
+      "Erzähl mir: Wie hast du das gelernt?",
+      "Wie oft hast du es probiert, bis es geklappt hat?",
+      "Das ist kein Glück – das hast du dir erarbeitet. Das kommt aufs Schild."
+    ],
+    "wennEsKippt": "Klappt ein Stück nicht gleich, wird genau das ausgestellt: „Noch in Arbeit – so weit bin ich schon“. Mag das Kind nicht schreiben, diktiert es, und die Fachkraft schreibt in seine Schild-Zeilen.",
+    "kurz": "Drei Stücke herstellen · Schild: Das kann ich / So gelernt",
+    "rolle": [
+      "kern"
+    ],
+    "thema": [
+      "selbstwert"
+    ],
+    "eldib": [
+      {
+        "code": "K-18",
+        "gewicht": 1
+      },
+      {
+        "code": "K-19",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 25
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "basteln",
+      "malen"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "knete",
+      "papier",
+      "buntstifte",
+      "stifte",
+      "karten",
+      "bausteine"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Des pièces exposées avec leur cartel",
+      "text": "L’enfant fabrique ses trois pièces ou les fait entrer au musée sous forme de dessin : un animal en pâte à modeler, un avion en papier, un dessin de son geste au foot, un mot en luxembourgeois. Pour chaque pièce, il remplit un cartel de trois lignes : le nom de la pièce, « Je sais faire : » et « Je l’ai appris comme ça : » (en m’entraînant, en regardant, en essayant souvent, quelqu’un me l’a montré). L’adulte, en guide de musée curieux, pose des questions sur le chemin parcouru, pas sur le talent, et écrit si l’enfant le souhaite. À la fin, l’enfant installe les trois pièces avec leurs cartels et décide de l’ordre.",
+      "sagen": [
+        "Raconte-moi : comment tu as appris ça ?",
+        "Combien de fois tu as essayé avant que ça marche ?",
+        "Ce n’est pas de la chance – tu l’as travaillé. Ça va sur le cartel."
+      ],
+      "wennEsKippt": "Si une pièce ne réussit pas tout de suite, on expose justement cela : « En cours – voilà où j’en suis déjà ». Si l’enfant n’aime pas écrire, il dicte et l’adulte écrit sur ses lignes.",
+      "kurz": "Fabriquer trois pièces · cartel : je sais faire / appris comme ça"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Das erste Stück entsteht in zwei Minuten am Tisch: Das Kind hält sofort einen Beweis für sein Können in der Hand.",
+        "vorbereitung": [
+          "Knete, Papier, Buntstifte, ein paar Bauklötze",
+          "6 bis 9 Karteikarten als Museumsschilder, einmal gefaltet",
+          "Schild „Museum von …“ aus dem Einstieg",
+          "Eine freie Fläche: Fensterbank, Regal oder Tischecke"
+        ],
+        "aufbau": "Arbeitstisch in der Mitte, die freie Ausstellungsfläche gleich daneben, damit fertige Stücke sofort ins Museum umziehen können.",
+        "karten": [
+          {
+            "titel": "Museumsschild (je Stück)",
+            "karten": [
+              "Ausstellungsstück: …",
+              "Das kann ich: …",
+              "So habe ich es gelernt: geübt · abgeschaut · oft probiert · jemand hat es mir gezeigt"
+            ]
+          },
+          {
+            "titel": "Fragen der Museumsführerin",
+            "karten": [
+              "Wie hast du das gelernt?",
+              "Was war am Anfang schwierig?",
+              "Wer hat dir dabei geholfen?",
+              "Was kannst du heute, was du früher nicht konntest?"
+            ]
+          }
+        ],
+        "leichter": "Nur ein oder zwei Stücke; die Zeile „So habe ich es gelernt“ zum Ankreuzen (geübt · abgeschaut · oft probiert).",
+        "schwerer": "Ein viertes Stück „Noch in Arbeit“ mit dem Satz „Als Nächstes übe ich …“ und eine kleine Führung von einer Minute, die das Kind vorbereitet.",
+        "gruppe": "Mit 3–8 Kindern gestaltet jedes Kind eine Vitrine mit zwei Stücken. Zum Schluss Museumsrundgang von Vitrine zu Vitrine: Jedes Kind legt bei einer anderen Vitrine eine Karte „Das hat mich beeindruckt: …“ ab.",
+        "beobachten": [
+          "Das Kind beschreibt bei mindestens einem Stück, wie es das gelernt hat (üben, ausprobieren, abschauen).",
+          "Es stellt seine Stücke sichtbar auf, statt sie wegzuschieben oder kleinzureden.",
+          "Es nimmt eine Anerkennung an, ohne sie abzuwehren."
+        ],
+        "warum": "Eigene Erfolge mit sichtbarem Beleg und Lob für den Weg statt für das Talent stärken Kompetenzerleben und die Bereitschaft, weiter zu üben (Meisterungserfahrungen, Bandura, 1997; Prozesslob, Mueller & Dweck, 1998)."
+      },
+      "fr": {
+        "haken": "La première pièce naît en deux minutes à la table : l’enfant tient tout de suite en main une preuve de ce qu’il sait faire.",
+        "vorbereitung": [
+          "Pâte à modeler, papier, crayons de couleur, quelques cubes",
+          "6 à 9 fiches bristol pliées en deux comme cartels",
+          "Fiche « Musée de … » de l’entrée en matière",
+          "Une surface libre : rebord de fenêtre, étagère ou coin de table"
+        ],
+        "aufbau": "La table de travail au milieu, la surface d’exposition juste à côté, pour que les pièces terminées puissent aussitôt entrer au musée.",
+        "karten": [
+          {
+            "titel": "Cartel (pour chaque pièce)",
+            "karten": [
+              "Pièce exposée : …",
+              "Je sais faire : …",
+              "Je l’ai appris comme ça : en m’entraînant · en regardant · en essayant souvent · quelqu’un me l’a montré"
+            ]
+          },
+          {
+            "titel": "Questions du guide de musée",
+            "karten": [
+              "Comment tu as appris ça ?",
+              "Qu’est-ce qui était compliqué au début ?",
+              "Qui t’a aidé ?",
+              "Qu’est-ce que tu sais faire aujourd’hui que tu ne savais pas faire avant ?"
+            ]
+          }
+        ],
+        "leichter": "Seulement une ou deux pièces ; la ligne « Je l’ai appris comme ça » à cocher (en m’entraînant · en regardant · en essayant souvent).",
+        "schwerer": "Une quatrième pièce « En cours » avec la phrase « La prochaine chose que je vais travailler, c’est … » et une petite visite guidée d’une minute préparée par l’enfant.",
+        "gruppe": "Avec 3 à 8 enfants, chaque enfant crée une vitrine avec deux pièces. Pour finir, visite du musée de vitrine en vitrine : chaque enfant dépose dans une autre vitrine une carte « Ce qui m’a impressionné : … ».",
+        "beobachten": [
+          "Pour au moins une pièce, l’enfant décrit comment il l’a apprise (s’entraîner, essayer, regarder).",
+          "Il expose ses pièces bien en vue au lieu de les écarter ou de les minimiser.",
+          "Il accepte une reconnaissance sans la repousser."
+        ],
+        "warum": "Des réussites personnelles avec une preuve visible, et des compliments sur le chemin plutôt que sur le talent, renforcent le sentiment de compétence et l’envie de continuer à s’entraîner (expériences de maîtrise, Bandura, 1997 ; éloge du processus, Mueller & Dweck, 1998)."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-koennen-museum-kinder:3",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Das Museum öffnet",
+    "text": "Das Kind führt die Fachkraft durch sein Museum und erzählt zu jedem Stück, was auf dem Schild steht. Die Fachkraft sagt zu einem Stück ganz konkret, was sie beeindruckt, und fragt dann, auf welches Stück das Kind am meisten stolz ist und warum. Das Kind malt einen Stern auf das Schild dieses Stücks. Zum Schluss bestimmt das Kind den nächsten Schritt: wo das Museum ein paar Tage stehen bleibt, wem es gezeigt werden darf und welches Stück als Nächstes dazukommen könnte.",
+    "sagen": [
+      "Willkommen im Museum! Führst du mich herum?",
+      "Bei diesem Stück beeindruckt mich, dass du so lange drangeblieben bist.",
+      "Auf welches Stück bist du am meisten stolz – und warum?"
+    ],
+    "wennEsKippt": "Ist dem Kind die Führung unangenehm, zeigt es nur mit dem Finger, und die Fachkraft liest die Schilder vor. Stolz darf auch leise sein: Ein Stern auf dem Schild genügt.",
+    "kurz": "Führung durchs Museum · Stern fürs stolzeste Stück · nächster Platz",
+    "rolle": [
+      "reflexion"
+    ],
+    "nurZumThema": true,
+    "thema": [
+      "selbstwert"
+    ],
+    "eldib": [
+      {
+        "code": "K-18",
+        "gewicht": 1
+      },
+      {
+        "code": "K-19",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "stifte"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Le musée ouvre ses portes",
+      "text": "L’enfant fait visiter son musée à l’adulte et raconte, pour chaque pièce, ce qui est écrit sur le cartel. L’adulte dit très concrètement ce qui l’impressionne dans une pièce, puis demande de quelle pièce l’enfant est le plus fier et pourquoi. L’enfant dessine une étoile sur le cartel de cette pièce. Pour finir, l’enfant décide de la suite : où le musée reste quelques jours, à qui on peut le montrer et quelle pièce pourrait s’y ajouter.",
+      "sagen": [
+        "Bienvenue au musée ! Tu me fais la visite ?",
+        "Dans cette pièce, ce qui m’impressionne, c’est que tu as persévéré si longtemps.",
+        "De quelle pièce tu es le plus fier – et pourquoi ?"
+      ],
+      "wennEsKippt": "Si la visite gêne l’enfant, il montre seulement du doigt et l’adulte lit les cartels. La fierté peut aussi être discrète : une étoile sur le cartel suffit.",
+      "kurz": "Visite du musée · étoile pour la pièce la plus fière · suite"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Die Führung macht das Kind zum Experten für sein eigenes Können.",
+        "beobachten": [
+          "Das Kind nennt ein Stück, auf das es stolz ist, mit einem Grund („weil ich es oft geübt habe“).",
+          "Es zeigt sein Museum gern her oder bestimmt selbst, wem es gezeigt wird."
+        ],
+        "gruppe": "In der Gruppe führt jedes Kind ein anderes Kind durch seine Vitrine; danach nennt jedes Kind sein stolzestes Stück und liest die Karte vor, die jemand bei ihm hinterlassen hat."
+      },
+      "fr": {
+        "haken": "La visite fait de l’enfant l’expert de ce qu’il sait faire.",
+        "beobachten": [
+          "L’enfant nomme une pièce dont il est fier, avec une raison (« parce que je me suis souvent entraîné »).",
+          "Il montre volontiers son musée ou décide lui-même à qui il sera montré."
+        ],
+        "gruppe": "En groupe, chaque enfant fait visiter sa vitrine à un autre enfant ; ensuite, chacun nomme sa pièce la plus fière et lit la carte qu’on lui a laissée."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-profi-guide-jugend:1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Bring’s mir bei – in drei Minuten",
+    "text": "Die Fachkraft fragt ohne Umweg: „Was kannst du, was ich überhaupt nicht kann?“ und legt als Hilfe eine Ideenliste hin (ein Trick in einem Spiel, ein Move im Sport, Zöpfe flechten, ein Fahrrad-Handgriff, ein paar Sätze Portugiesisch oder Lëtzebuergesch, ein Zeichenstil). Der oder die Jugendliche wählt eine Sache und bringt sie der Fachkraft in drei Minuten bei; die Fachkraft ist eine ehrliche, etwas ungeschickte Anfängerin und fragt nach. Danach kündigt sie das Projekt an: Aus diesem Können entsteht ein Profi-Guide, ein gefaltetes Faltblatt, das Anfänger wirklich benutzen können. Gemeinsam schauen beide die sechs Felder des Faltblatts an, und der oder die Jugendliche entscheidet, womit er oder sie anfängt.",
+    "sagen": [
+      "Was kannst du, was ich überhaupt nicht kann? Bring es mir bei – du hast drei Minuten.",
+      "Moment, das ging zu schnell. Wie hast du das am Anfang gemacht?",
+      "Daraus machen wir einen Profi-Guide. Von dir, für Leute, die gerade anfangen."
+    ],
+    "wennEsKippt": "Fällt nichts ein, wählt der oder die Jugendliche von der Ideenliste etwas, das er oder sie „ein bisschen“ kann: Profi heißt hier nur, weiter zu sein als die Fachkraft. Will er oder sie nichts vormachen, wird nur erklärt.",
+    "kurz": "Was kannst du, was ich nicht kann? · 3 Min. beibringen · Guide planen",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [
+      "selbstwert"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-40",
+        "gewicht": 1
+      },
+      {
+        "code": "K-24",
+        "gewicht": 1
+      }
+    ],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "karten",
+      "papier"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Apprends-le-moi – en trois minutes",
+      "text": "L’adulte demande sans détour : « Qu’est-ce que tu sais faire et que je ne sais pas faire du tout ? » et pose une liste d’idées pour aider (une astuce dans un jeu, un geste en sport, faire des tresses, un réglage de vélo, quelques phrases en portugais ou en luxembourgeois, un style de dessin). Le ou la jeune choisit une chose et l’apprend à l’adulte en trois minutes ; l’adulte joue un débutant honnête, un peu maladroit, qui pose des questions. Ensuite, l’adulte annonce le projet : de ce savoir-faire va naître un guide de pro, un dépliant plié que des débutants pourront vraiment utiliser. Ensemble, ils regardent les six volets du dépliant, et le ou la jeune décide par où commencer.",
+      "sagen": [
+        "Qu’est-ce que tu sais faire et que je ne sais pas faire du tout ? Apprends-le-moi – tu as trois minutes.",
+        "Attends, c’était trop rapide. Comment tu faisais, au début ?",
+        "On va en faire un guide de pro. Fait par toi, pour ceux qui débutent."
+      ],
+      "wennEsKippt": "Si rien ne vient, le ou la jeune choisit dans la liste quelque chose qu’il ou elle sait faire « un peu » : être pro, ici, veut seulement dire en savoir plus que l’adulte. S’il ou elle ne veut rien montrer, on se contente d’expliquer.",
+      "kurz": "Ce que tu sais et pas moi · l’apprendre en 3 min · prévoir le guide"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Rollentausch in der ersten Minute: Der oder die Jugendliche ist der Profi, die Fachkraft die Anfängerin, die nachfragen muss.",
+        "vorbereitung": [
+          "Ideenliste auf einer Karteikarte (siehe Karten beim Kern)",
+          "Ein A4-Blatt, schon zweimal gefaltet, als Muster für den Guide"
+        ],
+        "beobachten": [
+          "Der oder die Jugendliche wählt ein eigenes Können und erklärt es Schritt für Schritt.",
+          "Er oder sie reagiert geduldig auf die Fragen der Anfängerin."
+        ],
+        "gruppe": "Mit 3–8 Jugendlichen in Paaren: Jede Person bringt der anderen in drei Minuten etwas bei, dann wird getauscht. Danach plant jede Person ihren eigenen Guide."
+      },
+      "fr": {
+        "haken": "Inversion des rôles dès la première minute : le ou la jeune est le pro, l’adulte le débutant qui doit poser des questions.",
+        "vorbereitung": [
+          "Liste d’idées sur une fiche (voir cartes du cœur de séance)",
+          "Une feuille A4 déjà pliée en trois, comme modèle du guide"
+        ],
+        "beobachten": [
+          "Le ou la jeune choisit un savoir-faire personnel et l’explique étape par étape.",
+          "Il ou elle répond avec patience aux questions du débutant."
+        ],
+        "gruppe": "Avec 3 à 8 jeunes, en binômes : chacun apprend quelque chose à l’autre en trois minutes, puis on échange. Ensuite, chacun prépare son propre guide."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-profi-guide-jugend:2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Der Profi-Guide",
+    "text": "Ein A4-Blatt wird zweimal gefaltet, so entstehen sechs Felder: Titel („Lerne von mir: …“), Was du brauchst, Die drei wichtigsten Schritte, Typische Anfängerfehler, Mein Weg (am Anfang – geübt – heute) und Profi-Tipp. Der oder die Jugendliche füllt die Felder mit Stichworten und kleinen Skizzen, die Fachkraft fragt nach, wo es genauer werden muss. Das Feld „Mein Weg“ ist das Herzstück: Wie gut ging es am Anfang, was wurde geübt, was klappt heute? Zum Schluss probiert die Fachkraft einen Schritt nur nach dem Guide aus, und der oder die Jugendliche bessert die Stelle nach, an der sie hängen bleibt.",
+    "sagen": [
+      "Was würdest du jemandem als Erstes sagen, damit er nicht gleich aufgibt?",
+      "Wie war es bei dir am Anfang – und was hast du geübt, bis es lief?",
+      "Ich probier es jetzt nur mit deinem Guide. Wo hänge ich?"
+    ],
+    "wennEsKippt": "Stockt das Schreiben, diktiert der oder die Jugendliche, und die Fachkraft schreibt; Skizzen dürfen ganze Felder ersetzen. Fällt „Mein Weg“ schwer, hilft die Frage: Was konntest du vor einem Jahr darin noch nicht?",
+    "kurz": "Faltblatt mit sechs Feldern · Mein Weg · Fachkraft testet den Guide",
+    "rolle": [
+      "kern"
+    ],
+    "thema": [
+      "selbstwert"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-40",
+        "gewicht": 1
+      },
+      {
+        "code": "K-24",
+        "gewicht": 1
+      }
+    ],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 25
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "schreiben",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "buntstifte",
+      "lineal"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Le guide de pro",
+      "text": "Une feuille A4 est pliée deux fois, ce qui donne six volets : Titre (« Apprends avec moi : … »), Ce qu’il te faut, Les trois étapes clés, Les erreurs typiques des débutants, Mon parcours (au début – entraîné – aujourd’hui) et Astuce de pro. Le ou la jeune remplit les volets avec des mots-clés et de petits croquis, l’adulte demande des précisions là où c’est flou. Le volet « Mon parcours » est le cœur : comment ça allait au début, qu’est-ce qui a été travaillé, qu’est-ce qui marche aujourd’hui ? Pour finir, l’adulte essaie une étape uniquement d’après le guide, et le ou la jeune corrige l’endroit où l’adulte bloque.",
+      "sagen": [
+        "Qu’est-ce que tu dirais en premier à quelqu’un pour qu’il n’abandonne pas tout de suite ?",
+        "C’était comment pour toi au début – et qu’est-ce que tu as travaillé jusqu’à ce que ça marche ?",
+        "J’essaie maintenant seulement avec ton guide. Où est-ce que je bloque ?"
+      ],
+      "wennEsKippt": "Si l’écriture bloque, le ou la jeune dicte et l’adulte écrit ; des croquis peuvent remplacer des volets entiers. Si « Mon parcours » est difficile, cette question aide : qu’est-ce que tu ne savais pas encore faire il y a un an ?",
+      "kurz": "Dépliant à six volets · mon parcours · l’adulte teste le guide"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Der Guide wird sofort getestet: Die Fachkraft bleibt ehrlich an einer unklaren Stelle hängen, und der oder die Jugendliche ist der Profi, der hilft.",
+        "vorbereitung": [
+          "A4-Papier (ein Blatt für den Guide, eins zum Probieren)",
+          "Stifte, Buntstifte, Lineal",
+          "Feld-Liste auf einer Karteikarte (siehe Karten)",
+          "Wenn möglich ein Gegenstand zum Thema (Ball, Spielkarten, Haargummi)"
+        ],
+        "aufbau": "Nebeneinander am Tisch, das Faltblatt liegt beim oder bei der Jugendlichen; die Fachkraft sitzt so, dass sie mitlesen kann, ohne mitzuschreiben.",
+        "karten": [
+          {
+            "titel": "Felder des Profi-Guides",
+            "karten": [
+              "Titel: Lerne von mir: …",
+              "Was du brauchst: Dinge, Zeit, Geduld",
+              "Die drei wichtigsten Schritte",
+              "Typische Anfängerfehler – und wie man sie vermeidet",
+              "Mein Weg: am Anfang … – geübt habe ich … – heute kann ich …",
+              "Profi-Tipp: das, was in keiner Anleitung steht"
+            ]
+          },
+          {
+            "titel": "Ideen, was man können kann",
+            "karten": [
+              "Ein Trick in einem Spiel",
+              "Ein Move im Fußball, Basketball oder beim Tanzen",
+              "Zöpfe flechten oder einen Knoten binden",
+              "Ein Handgriff am Fahrrad oder Skateboard",
+              "Ein paar Sätze auf Lëtzebuergesch, Portugiesisch oder Arabisch",
+              "Ein Zeichenstil, eine Schrift, ein Origami"
+            ]
+          }
+        ],
+        "leichter": "Nur vier Felder (Titel, drei Schritte, Mein Weg, Profi-Tipp) und Skizzen statt Sätzen.",
+        "schwerer": "Zusätzlich ein Feld „Wenn es nicht klappt“ mit zwei Lösungen; der Guide wird so geschrieben, dass eine Zehnjährige ihn ohne Hilfe versteht.",
+        "gruppe": "Mit 3–8 Jugendlichen gestaltet jede Person einen eigenen Guide. Danach Tauschbörse: Je zwei tauschen ihre Guides, probieren einen Schritt aus und geben Rückmeldung (Was war klar? Wo hing ich?). Zusammen ergeben die Guides eine kleine Wissensbibliothek der Gruppe.",
+        "beobachten": [
+          "Der oder die Jugendliche beschreibt im Feld „Mein Weg“ einen konkreten Fortschritt (vorher – nachher).",
+          "Er oder sie nennt Können und typische Fehler realistisch, ohne sich groß- oder kleinzureden.",
+          "Er oder sie bessert den Guide nach der Probe sachlich nach."
+        ],
+        "warum": "Wer anderen etwas erklärt, erlebt die eigene Kompetenz und vertieft sie (Lernen durch Lehren; Fiorella & Mayer, 2013); der sichtbare Vergleich „am Anfang – heute“ macht Fortschritt bewusst und stützt ein realistisches Selbstbild (Meisterungserfahrungen; Bandura, 1997)."
+      },
+      "fr": {
+        "haken": "Le guide est testé tout de suite : l’adulte bloque honnêtement à un endroit flou, et le ou la jeune est le pro qui aide.",
+        "vorbereitung": [
+          "Papier A4 (une feuille pour le guide, une pour essayer)",
+          "Feutres, crayons de couleur, règle",
+          "Liste des volets sur une fiche (voir cartes)",
+          "Si possible un objet lié au thème (ballon, cartes à jouer, élastique)"
+        ],
+        "aufbau": "Côte à côte à la table, le dépliant chez le ou la jeune ; l’adulte s’assoit de façon à pouvoir lire sans écrire.",
+        "karten": [
+          {
+            "titel": "Volets du guide de pro",
+            "karten": [
+              "Titre : Apprends avec moi : …",
+              "Ce qu’il te faut : objets, temps, patience",
+              "Les trois étapes clés",
+              "Les erreurs typiques des débutants – et comment les éviter",
+              "Mon parcours : au début … – je me suis entraîné à … – aujourd’hui je sais …",
+              "Astuce de pro : ce qui n’est écrit dans aucun mode d’emploi"
+            ]
+          },
+          {
+            "titel": "Idées de savoir-faire",
+            "karten": [
+              "Une astuce dans un jeu",
+              "Un geste au foot, au basket ou en danse",
+              "Faire des tresses ou un nœud",
+              "Un réglage sur un vélo ou un skateboard",
+              "Quelques phrases en luxembourgeois, portugais ou arabe",
+              "Un style de dessin, une écriture, un origami"
+            ]
+          }
+        ],
+        "leichter": "Seulement quatre volets (titre, trois étapes, mon parcours, astuce de pro) et des croquis au lieu de phrases.",
+        "schwerer": "Un volet de plus « Si ça ne marche pas » avec deux solutions ; le guide est écrit pour qu’une enfant de dix ans le comprenne sans aide.",
+        "gruppe": "Avec 3 à 8 jeunes, chacun crée son propre guide. Ensuite, bourse d’échange : par deux, on échange les guides, on essaie une étape et on fait un retour (Qu’est-ce qui était clair ? Où ai-je bloqué ?). Ensemble, les guides forment une petite bibliothèque de savoirs du groupe.",
+        "beobachten": [
+          "Dans le volet « Mon parcours », le ou la jeune décrit un progrès concret (avant – après).",
+          "Il ou elle nomme ses savoir-faire et les erreurs typiques de façon réaliste, sans se surestimer ni se rabaisser.",
+          "Après l’essai, il ou elle corrige le guide de façon posée."
+        ],
+        "warum": "Expliquer quelque chose aux autres fait vivre sa propre compétence et l’approfondit (apprendre en enseignant ; Fiorella & Mayer, 2013) ; la comparaison visible « au début – aujourd’hui » rend le progrès conscient et soutient une image de soi réaliste (expériences de maîtrise ; Bandura, 1997)."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-profi-guide-jugend:3",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Was der Guide über dich verrät",
+    "text": "Beide legen den fertigen Guide in die Mitte. Die Fachkraft fragt, was jemand, der den oder die Jugendliche nicht kennt, aus diesem Guide über ihn oder sie erfährt. Der oder die Jugendliche nennt eine Eigenschaft, die man darin sieht (etwa Geduld, genaues Hinschauen, Humor), und zeigt die Stelle als Beleg. Danach geht es um den nächsten Schritt: wo der Guide landet (Wissensregal, Pinnwand, eigene Mappe), wem er helfen könnte und was er oder sie in diesem Können als Nächstes lernen will.",
+    "sagen": [
+      "Jemand, der dich nicht kennt, liest diesen Guide. Was erfährt er über dich?",
+      "Zeig mir die Stelle, die das beweist.",
+      "Wem könnte der Guide helfen – und was willst du darin als Nächstes lernen?"
+    ],
+    "wennEsKippt": "Ist eine Eigenschaft für sich selbst zu groß, nennt die Fachkraft zuerst eine mit Beleg („Du hast drei Anfängerfehler erklärt, das zeigt Geduld“), und der oder die Jugendliche nimmt sie an oder ändert sie.",
+    "kurz": "Was verrät der Guide über dich? · Beleg zeigen · nächster Schritt",
+    "rolle": [
+      "reflexion"
+    ],
+    "nurZumThema": true,
+    "thema": [
+      "selbstwert"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-40",
+        "gewicht": 1
+      },
+      {
+        "code": "K-24",
+        "gewicht": 1
+      }
+    ],
+    "kompetenz": [
+      "selbstbild"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Ce que le guide dit de toi",
+      "text": "Les deux posent le guide terminé au milieu. L’adulte demande ce qu’une personne qui ne connaît pas le ou la jeune apprendrait sur lui ou elle grâce à ce guide. Le ou la jeune nomme une qualité qu’on y voit (par exemple la patience, l’œil pour le détail, l’humour) et montre l’endroit qui le prouve. Ensuite, on parle de la suite : où le guide va atterrir (étagère à savoirs, tableau d’affichage, classeur personnel), à qui il pourrait servir et ce qu’il ou elle veut apprendre ensuite dans ce domaine.",
+      "sagen": [
+        "Quelqu’un qui ne te connaît pas lit ce guide. Qu’est-ce qu’il apprend sur toi ?",
+        "Montre-moi l’endroit qui le prouve.",
+        "À qui ce guide pourrait servir – et qu’est-ce que tu veux apprendre ensuite dans ce domaine ?"
+      ],
+      "wennEsKippt": "Si une qualité semble trop grande à s’attribuer, l’adulte en nomme d’abord une avec preuve (« Tu as expliqué trois erreurs de débutant, ça montre de la patience »), et le ou la jeune l’accepte ou la modifie.",
+      "kurz": "Ce que le guide dit de toi · montrer la preuve · étape suivante"
+    },
+    "hilfen": {
+      "de": {
+        "beobachten": [
+          "Der oder die Jugendliche nennt eine eigene Stärke mit Beleg aus dem Guide.",
+          "Er oder sie formuliert ein realistisches nächstes Lernziel in diesem Können."
+        ],
+        "gruppe": "In der Gruppe liest je eine andere Person einen Guide und sagt, welche Eigenschaft sie darin sieht – mit Stelle als Beleg. Danach entscheidet die Gruppe, wo die Wissensbibliothek steht."
+      },
+      "fr": {
+        "beobachten": [
+          "Le ou la jeune nomme une force personnelle avec une preuve tirée du guide.",
+          "Il ou elle formule un prochain objectif d’apprentissage réaliste dans ce domaine."
+        ],
+        "gruppe": "En groupe, une autre personne lit chaque guide et dit quelle qualité elle y voit – avec l’endroit qui le prouve. Ensuite, le groupe décide où placer la bibliothèque de savoirs."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-erklaer-plakat-kinder:1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Ein Plakat, das keiner versteht",
+    "text": "Die Fachkraft zeigt ein absichtlich schlechtes Plakat: winzige Schrift, viel zu viele Wörter, kein Bild, alles durcheinander. Sie fragt: Ein Kind mit fünf Jahren soll das verstehen – klappt das? Das Kind sagt, was alles nicht passt; das gelingt meist sofort und macht Spaß. Dann wählt es aus drei Botschaft-Karten, was sein eigenes Plakat erklären soll: „So fragst du, ob du mitspielen darfst“, „So holst du Hilfe, wenn etwas nicht klappt“ oder „So geht mein Lieblingsspiel“. Zum Schluss legen beide fest, für wen das Plakat ist und wo es später hängen könnte.",
+    "sagen": [
+      "Schau mal, mein Plakat. Ein Kind mit fünf Jahren soll das verstehen. Klappt das?",
+      "Was müsste ich besser machen? Du bist hier der Profi.",
+      "Jetzt machst du ein Plakat, das wirklich jemand versteht. Was soll es erklären?"
+    ],
+    "wennEsKippt": "Findet das Kind keinen Fehler, zeigt die Fachkraft auf die winzige Schrift und fragt: Kannst du das von der Tür aus lesen? Gefällt keine der drei Botschaften, darf das Kind eine eigene vorschlagen.",
+    "kurz": "Schlechtes Plakat zeigen · Fehler finden · Botschaft wählen",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-22",
+        "gewicht": 1
+      },
+      {
+        "code": "K-9",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 6,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "karten"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Une affiche que personne ne comprend",
+      "text": "L’adulte montre une affiche volontairement ratée : écriture minuscule, beaucoup trop de mots, aucune image, tout en désordre. Il demande : un enfant de cinq ans doit comprendre ça – ça marche ? L’enfant dit tout ce qui ne va pas ; en général, il y arrive tout de suite et ça l’amuse. Puis il choisit parmi trois cartes-messages ce que son affiche va expliquer : « Comment demander si tu peux jouer avec les autres », « Comment demander de l’aide quand quelque chose ne marche pas » ou « Comment se joue mon jeu préféré ». Pour finir, les deux décident pour qui est l’affiche et où elle pourrait être accrochée.",
+      "sagen": [
+        "Regarde mon affiche. Un enfant de cinq ans doit la comprendre. Ça marche ?",
+        "Qu’est-ce que je devrais faire mieux ? Ici, c’est toi le pro.",
+        "Maintenant, tu fais une affiche que quelqu’un comprend vraiment. Qu’est-ce qu’elle doit expliquer ?"
+      ],
+      "wennEsKippt": "Si l’enfant ne trouve pas d’erreur, l’adulte montre l’écriture minuscule et demande : tu arrives à lire ça depuis la porte ? Si aucun des trois messages ne plaît, l’enfant peut en proposer un.",
+      "kurz": "Montrer l’affiche ratée · trouver les erreurs · choisir le message"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Ein absichtlich misslungenes Plakat: Das Kind ist sofort Experte und findet Fehler – ein früher Erfolg ohne Risiko.",
+        "vorbereitung": [
+          "Ein schlechtes Muster-Plakat: A4 voll kleiner Schrift, ohne Bild (2 Minuten)",
+          "Drei Botschaft-Karten (siehe Karten)"
+        ],
+        "karten": [
+          {
+            "titel": "Botschaft-Karten",
+            "karten": [
+              "So fragst du, ob du mitspielen darfst",
+              "So holst du Hilfe, wenn etwas nicht klappt",
+              "So geht mein Lieblingsspiel"
+            ]
+          }
+        ],
+        "beobachten": [
+          "Das Kind nennt mindestens zwei Dinge, die das schlechte Plakat schwer verständlich machen.",
+          "Es wählt eine Botschaft und sagt, für wen das Plakat gedacht ist."
+        ],
+        "gruppe": "Mit 3–6 Kindern sammeln alle zusammen die Fehler am schlechten Plakat; danach wählt die Gruppe eine Botschaft, oder kleine Paare wählen je eine eigene."
+      },
+      "fr": {
+        "haken": "Une affiche volontairement ratée : l’enfant est tout de suite l’expert et trouve les erreurs – une réussite rapide, sans risque.",
+        "vorbereitung": [
+          "Une mauvaise affiche modèle : A4 pleine de petite écriture, sans image (2 minutes)",
+          "Trois cartes-messages (voir cartes)"
+        ],
+        "karten": [
+          {
+            "titel": "Cartes-messages",
+            "karten": [
+              "Comment demander si tu peux jouer avec les autres",
+              "Comment demander de l’aide quand quelque chose ne marche pas",
+              "Comment se joue mon jeu préféré"
+            ]
+          }
+        ],
+        "beobachten": [
+          "L’enfant nomme au moins deux choses qui rendent la mauvaise affiche difficile à comprendre.",
+          "Il choisit un message et dit à qui l’affiche est destinée."
+        ],
+        "gruppe": "Avec 3 à 6 enfants, tout le groupe cherche les erreurs de la mauvaise affiche ; ensuite, le groupe choisit un message, ou des binômes en choisissent chacun un."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-erklaer-plakat-kinder:2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Vier Bilder, ein Satz pro Bild",
+    "text": "Das Kind gestaltet sein Plakat als Bildergeschichte in vier Feldern: in jedem Feld ein großes Bild und höchstens ein kurzer Satz, der sagt, was man tut. Die Fachkraft hilft mit den Plakat-Regeln für Kleine: groß, wenig Wörter, ein Schritt pro Bild, Pfeile für die Reihenfolge. Nach der Hälfte spielt die Fachkraft ein fünfjähriges Kind, das nur auf die Bilder schaut und laut sagt, was es versteht; wo sie etwas falsch macht, bessert das Kind nach. Zum Schluss erklärt das Kind sein Plakat, als stünde ein jüngeres Kind davor, und beantwortet eine Nachfrage der Fachkraft.",
+    "sagen": [
+      "Ich bin jetzt fünf und kann noch nicht lesen. Ich schaue nur auf die Bilder … Soll ich das Spielzeug einfach nehmen?",
+      "Was musst du ändern, damit ein Kleines es richtig macht?",
+      "Erklär es mir so, dass ich es beim ersten Mal verstehe."
+    ],
+    "wennEsKippt": "Fällt das Zeichnen schwer, zeichnet das Kind Strichmännchen oder schneidet Bilder aus einer Zeitschrift aus; die Fachkraft schreibt die Sätze nach Diktat. Bei wenig Zeit genügen drei Felder.",
+    "kurz": "Plakat in vier Bildern · Fachkraft spielt Fünfjährige · nachbessern",
+    "rolle": [
+      "kern"
+    ],
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-22",
+        "gewicht": 1
+      },
+      {
+        "code": "K-9",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 25
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 6,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "malen",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "buntstifte",
+      "stifte",
+      "lineal",
+      "zeitschrift",
+      "schere",
+      "kleber"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Quatre images, une phrase par image",
+      "text": "L’enfant réalise son affiche comme une histoire en quatre cases : dans chaque case, une grande image et au plus une phrase courte qui dit ce qu’on fait. L’adulte aide avec les règles d’une affiche pour les petits : en grand, peu de mots, une étape par image, des flèches pour l’ordre. À mi-chemin, l’adulte joue un enfant de cinq ans qui ne regarde que les images et dit à voix haute ce qu’il comprend ; là où il se trompe, l’enfant corrige. Pour finir, l’enfant explique son affiche comme si un enfant plus jeune était devant, et répond à une question de l’adulte.",
+      "sagen": [
+        "Maintenant, j’ai cinq ans et je ne sais pas encore lire. Je regarde seulement les images … Je dois prendre le jouet, comme ça ?",
+        "Qu’est-ce que tu dois changer pour qu’un petit fasse juste ?",
+        "Explique-le-moi pour que je comprenne du premier coup."
+      ],
+      "wennEsKippt": "Si dessiner est difficile, l’enfant dessine des bonshommes bâtons ou découpe des images dans un magazine ; l’adulte écrit les phrases sous la dictée. S’il y a peu de temps, trois cases suffisent.",
+      "kurz": "Affiche en quatre images · l’adulte joue un enfant de 5 ans · corriger"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Die Fachkraft spielt ein fünfjähriges Kind und versteht absichtlich etwas falsch: Das Kind wird zum Erklär-Profi und merkt selbst, warum klare Botschaften zählen.",
+        "vorbereitung": [
+          "A3-Papier oder zwei A4, Buntstifte, ein dicker Stift",
+          "Lineal für die vier Felder",
+          "Alte Zeitschrift, Kinderschere, Kleber (falls Zeichnen schwerfällt)",
+          "Karte mit den Plakat-Regeln (siehe Karten)"
+        ],
+        "aufbau": "Das Plakat liegt vor dem Kind. Beim Testen setzt sich die Fachkraft ein Stück entfernt hin, wie ein jüngeres Kind, das von weitem schaut.",
+        "karten": [
+          {
+            "titel": "Plakat-Regeln für Kleine",
+            "karten": [
+              "Groß: von der Tür aus erkennbar",
+              "Wenig Wörter: höchstens ein kurzer Satz pro Bild",
+              "Ein Schritt pro Bild",
+              "Pfeile zeigen die Reihenfolge",
+              "Freundlich: zeigen, was man tun soll, nicht nur, was verboten ist"
+            ]
+          },
+          {
+            "titel": "Beispiel: So fragst du, ob du mitspielen darfst",
+            "karten": [
+              "Hingehen und kurz zuschauen.",
+              "Fragen: Darf ich mitspielen?",
+              "Ja? Mitspielen! Nein? Später noch mal fragen oder etwas anderes spielen.",
+              "Danke sagen."
+            ]
+          }
+        ],
+        "leichter": "Drei Felder statt vier; die Fachkraft zeichnet die Felder vor und schreibt die Sätze nach Diktat.",
+        "schwerer": "Eine zweite Fassung auf Französisch oder Lëtzebuergesch, damit mehr Kinder in der Einrichtung sie verstehen, und ein Feld „Wenn es nicht klappt …“.",
+        "gruppe": "Mit 3–6 Kindern übernimmt jedes Kind ein Feld derselben Botschaft; vorher einigen sich die Kinder auf Farben und Figuren. Beim Testen spielt ein Kind das Fünfjährige, die anderen bessern nach.",
+        "beobachten": [
+          "Das Kind erklärt Schritt für Schritt in der richtigen Reihenfolge.",
+          "Es bessert nach, wenn die Fachkraft etwas falsch versteht, statt nur zu sagen „Das ist doch klar“.",
+          "Es passt Wörter und Bilder an das Alter der Kleinen an."
+        ],
+        "warum": "Sprechen, das auf die Zuhörenden zugeschnitten ist (audience design; Clark & Murphy, 1982), übt Perspektivübernahme; Erklären für andere mit sofortiger Rückmeldung festigt klare, geordnete Sprache (Fiorella & Mayer, 2013)."
+      },
+      "fr": {
+        "haken": "L’adulte joue un enfant de cinq ans et comprend exprès de travers : l’enfant devient le pro de l’explication et voit lui-même pourquoi un message clair compte.",
+        "vorbereitung": [
+          "Papier A3 ou deux A4, crayons de couleur, un gros feutre",
+          "Règle pour les quatre cases",
+          "Vieux magazine, ciseaux à bouts ronds, colle (si dessiner est difficile)",
+          "Carte avec les règles de l’affiche (voir cartes)"
+        ],
+        "aufbau": "L’affiche est devant l’enfant. Pour le test, l’adulte s’assoit un peu plus loin, comme un enfant plus jeune qui regarde de loin.",
+        "karten": [
+          {
+            "titel": "Règles d’une affiche pour les petits",
+            "karten": [
+              "En grand : lisible depuis la porte",
+              "Peu de mots : au plus une phrase courte par image",
+              "Une étape par image",
+              "Des flèches montrent l’ordre",
+              "Gentil : montrer ce qu’on doit faire, pas seulement ce qui est interdit"
+            ]
+          },
+          {
+            "titel": "Exemple : comment demander si tu peux jouer",
+            "karten": [
+              "S’approcher et regarder un moment.",
+              "Demander : je peux jouer avec vous ?",
+              "Oui ? On joue ! Non ? Redemander plus tard ou jouer à autre chose.",
+              "Dire merci."
+            ]
+          }
+        ],
+        "leichter": "Trois cases au lieu de quatre ; l’adulte trace les cases et écrit les phrases sous la dictée.",
+        "schwerer": "Une deuxième version en allemand ou en luxembourgeois, pour que plus d’enfants de la structure la comprennent, et une case « Si ça ne marche pas … ».",
+        "gruppe": "Avec 3 à 6 enfants, chaque enfant prend une case du même message ; avant, les enfants se mettent d’accord sur les couleurs et les personnages. Pour le test, un enfant joue l’enfant de cinq ans, les autres corrigent.",
+        "beobachten": [
+          "L’enfant explique étape par étape, dans le bon ordre.",
+          "Il corrige quand l’adulte comprend de travers, au lieu de dire seulement « C’est évident ».",
+          "Il adapte les mots et les images à l’âge des petits."
+        ],
+        "warum": "Parler en fonction de ceux qui écoutent (audience design ; Clark & Murphy, 1982) exerce la prise de perspective ; expliquer pour les autres avec un retour immédiat consolide un langage clair et ordonné (Fiorella & Mayer, 2013)."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-erklaer-plakat-kinder:3",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Kommt die Botschaft an?",
+    "text": "Das fertige Plakat wird aufgehängt oder an den Platz gelegt, den beide ausgesucht haben. Das Kind sagt in einem Satz, was sein Plakat erklärt, und die Fachkraft fragt, was es geändert hat, damit ein Kind mit fünf Jahren es versteht. Dann zeigt das Kind auf eine der drei Karten „groß“, „wenig Wörter“, „Reihenfolge“: Was war beim Erklären am wichtigsten? Zum Schluss überlegen beide den nächsten Schritt: wem das Kind das Plakat als Erstes zeigt und was es dazu sagt.",
+    "sagen": [
+      "Sag in einem Satz: Was erklärt dein Plakat?",
+      "Was hast du geändert, damit ein Kind mit fünf Jahren es versteht?",
+      "Wem zeigst du dein Plakat als Erstes – und was sagst du dazu?"
+    ],
+    "wennEsKippt": "Fällt die Antwort schwer, zeigt das Kind nur auf eine Karte, und die Fachkraft bietet einen Satz an, den das Kind bestätigt oder ändert.",
+    "kurz": "Plakat aufhängen · in einem Satz erklären · wem zeige ich es?",
+    "rolle": [
+      "reflexion"
+    ],
+    "nurZumThema": true,
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-22",
+        "gewicht": 1
+      },
+      {
+        "code": "K-9",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 6,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "karten",
+      "klebeband"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Le message passe-t-il ?",
+      "text": "L’affiche terminée est accrochée ou posée à l’endroit choisi ensemble. L’enfant dit en une phrase ce que son affiche explique, et l’adulte demande ce qu’il a changé pour qu’un enfant de cinq ans la comprenne. Puis l’enfant montre une des trois cartes « en grand », « peu de mots », « dans l’ordre » : qu’est-ce qui a été le plus important pour bien expliquer ? Pour finir, les deux réfléchissent à la suite : à qui l’enfant montre l’affiche en premier et ce qu’il dira.",
+      "sagen": [
+        "Dis-le en une phrase : qu’est-ce que ton affiche explique ?",
+        "Qu’est-ce que tu as changé pour qu’un enfant de cinq ans la comprenne ?",
+        "À qui tu montres ton affiche en premier – et qu’est-ce que tu lui dis ?"
+      ],
+      "wennEsKippt": "Si répondre est difficile, l’enfant montre seulement une carte, et l’adulte propose une phrase que l’enfant confirme ou modifie.",
+      "kurz": "Accrocher l’affiche · l’expliquer en une phrase · à qui la montrer ?"
+    },
+    "hilfen": {
+      "de": {
+        "vorbereitung": [
+          "Drei Karteikarten: „groß“, „wenig Wörter“, „Reihenfolge“",
+          "Kreppband zum Aufhängen (vorher klären, wo es hängen darf)"
+        ],
+        "beobachten": [
+          "Das Kind fasst seine Botschaft in einem verständlichen Satz zusammen.",
+          "Es nennt eine Änderung, die es für die Kleinen gemacht hat."
+        ],
+        "gruppe": "In der Gruppe stellt jedes Paar sein Plakat in einem Satz vor; die anderen sagen, welches Bild ihnen sofort klar war. Danach entscheiden die Kinder gemeinsam, wo die Plakate hängen."
+      },
+      "fr": {
+        "vorbereitung": [
+          "Trois fiches : « en grand », « peu de mots », « dans l’ordre »",
+          "Ruban adhésif pour accrocher (vérifier avant où c’est permis)"
+        ],
+        "beobachten": [
+          "L’enfant résume son message en une phrase compréhensible.",
+          "Il nomme un changement qu’il a fait pour les petits."
+        ],
+        "gruppe": "En groupe, chaque binôme présente son affiche en une phrase ; les autres disent quelle image était tout de suite claire. Ensuite, les enfants décident ensemble où accrocher les affiches."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-kampagne-jugend:1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Zwei Zettel, eine Botschaft",
+    "text": "Die Fachkraft legt zwei Zettel mit derselben Botschaft nebeneinander: „HÖRT ENDLICH AUF, HIER ALLES ZU VERMÜLLEN!!!“ und „Hier chillt man gern. Wer seinen Müll mitnimmt, findet morgen einen sauberen Platz.“ Sie fragt, bei welchem Zettel der oder die Jugendliche Lust hätte mitzumachen und warum. Er oder sie erklärt den Unterschied: Ton, Vorwurf, das Bild, das im Kopf entsteht. Dann kündigt die Fachkraft das Projekt an: ein eigenes Kampagnen-Plakat für die Einrichtung, das in fünf Sekunden ankommt. Der oder die Jugendliche wählt das Thema von der Ideenliste oder bringt ein eigenes mit.",
+    "sagen": [
+      "Gleiche Botschaft, zwei Zettel. Bei welchem hättest du Lust mitzumachen?",
+      "Was genau macht den Unterschied?",
+      "Jetzt baust du ein Plakat, das in fünf Sekunden ankommt. Welches Thema nervt oder bewegt dich hier?"
+    ],
+    "wennEsKippt": "Fällt kein Thema ein, wählt der oder die Jugendliche eins von der Ideenliste. Zielt das Thema auf eine bestimmte Person, lenkt die Fachkraft auf das Verhalten um: Plakate sprechen über Situationen, nicht über Menschen.",
+    "kurz": "Zwei Zettel vergleichen · Ton erkennen · Thema wählen",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "K-25",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-33",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "karten"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Deux affichettes, un message",
+      "text": "L’adulte pose côte à côte deux papiers avec le même message : « ARRÊTEZ ENFIN DE TOUT SALIR ICI !!! » et « Ici, on aime se poser. Celui qui reprend ses déchets trouve une place propre demain. » Il demande avec lequel le ou la jeune aurait envie de jouer le jeu, et pourquoi. Il ou elle explique la différence : le ton, le reproche, l’image qui se forme dans la tête. Puis l’adulte annonce le projet : une affiche de campagne pour la structure, qui passe en cinq secondes. Le ou la jeune choisit un thème dans la liste d’idées ou en apporte un.",
+      "sagen": [
+        "Même message, deux papiers. Avec lequel tu aurais envie de jouer le jeu ?",
+        "Qu’est-ce qui fait vraiment la différence ?",
+        "Maintenant, tu crées une affiche qui passe en cinq secondes. Quel sujet t’énerve ou te tient à cœur ici ?"
+      ],
+      "wennEsKippt": "Si aucun thème ne vient, le ou la jeune en choisit un dans la liste. Si le thème vise une personne précise, l’adulte ramène vers le comportement : une affiche parle de situations, pas de personnes.",
+      "kurz": "Comparer deux papiers · repérer le ton · choisir le thème"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Zwei Zettel mit gleicher Botschaft, aber anderem Ton: Der oder die Jugendliche spürt selbst, welcher Ton zum Mitmachen einlädt.",
+        "vorbereitung": [
+          "Die zwei Zettel (Vorwurf und Einladung) groß beschriften",
+          "Ideenliste auf einer Karteikarte (siehe Karten)"
+        ],
+        "karten": [
+          {
+            "titel": "Ideen für Kampagnen-Themen",
+            "karten": [
+              "Lautstärke und Kopfhörer im Aufenthaltsraum",
+              "Müll und Ordnung in der Chill-Ecke",
+              "Respekt im Chat der Einrichtung",
+              "Neue willkommen heißen",
+              "Bildschirm aus beim Essen?",
+              "Eine leise Ecke für Hausaufgaben"
+            ]
+          }
+        ],
+        "beobachten": [
+          "Der oder die Jugendliche beschreibt, wie der Vorwurf-Ton auf Lesende wirkt.",
+          "Er oder sie wählt ein Thema, das ein Verhalten betrifft, nicht eine Person."
+        ],
+        "gruppe": "Mit 3–8 Jugendlichen stimmt die Gruppe zuerst ab, welcher Zettel mehr wirkt, und begründet es; danach wählen Paare je ein Thema."
+      },
+      "fr": {
+        "haken": "Deux papiers au même message mais au ton différent : le ou la jeune sent lui-même quel ton donne envie de participer.",
+        "vorbereitung": [
+          "Écrire en grand les deux papiers (reproche et invitation)",
+          "Liste d’idées sur une fiche (voir cartes)"
+        ],
+        "karten": [
+          {
+            "titel": "Idées de thèmes de campagne",
+            "karten": [
+              "Volume et écouteurs dans la salle commune",
+              "Déchets et rangement dans le coin détente",
+              "Le respect dans le chat de la structure",
+              "Bien accueillir les nouveaux",
+              "Écrans éteints pendant le repas ?",
+              "Un coin calme pour les devoirs"
+            ]
+          }
+        ],
+        "beobachten": [
+          "Le ou la jeune décrit l’effet du ton de reproche sur ceux qui lisent.",
+          "Il ou elle choisit un thème qui concerne un comportement, pas une personne."
+        ],
+        "gruppe": "Avec 3 à 8 jeunes, le groupe décide d’abord quel papier fonctionne le mieux et justifie ; ensuite, des binômes choisissent chacun un thème."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-kampagne-jugend:2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Das Fünf-Sekunden-Plakat",
+    "text": "Der oder die Jugendliche plant das Plakat mit drei Fragen: Wer soll es lesen? Was sollen diese Leute danach tun? Welcher Satz sagt das in höchstens acht Wörtern? Dann entsteht ein Entwurf mit einer großen Kernbotschaft, einem einfachen Bild oder Symbol und einem Ton ohne Vorwurf (Wir- oder Ich-Form statt Befehl). Jetzt kommt der Fünf-Sekunden-Test: Die Fachkraft schaut fünf Sekunden auf den Entwurf, dreht ihn um und sagt, was sie verstanden hat und wie der Ton bei ihr ankommt. Der oder die Jugendliche vergleicht das mit der eigenen Absicht und überarbeitet das Plakat zur Endfassung.",
+    "sagen": [
+      "Wer soll das lesen – und was sollen die Leute danach tun?",
+      "Fünf-Sekunden-Test: Ich schau kurz drauf und sag dir, was bei mir ankommt.",
+      "Bei mir kam an: … War das deine Absicht? Was änderst du?"
+    ],
+    "wennEsKippt": "Ist die Kernbotschaft zu lang, streichen beide gemeinsam Wort für Wort, bis höchstens acht übrig sind. Mag der oder die Jugendliche nicht zeichnen, reicht ein großes Symbol oder ein Ausschnitt aus einer Zeitschrift.",
+    "kurz": "Wer, was, acht Wörter · Entwurf · Fünf-Sekunden-Test",
+    "rolle": [
+      "kern"
+    ],
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "K-25",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-33",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 25
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "malen",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "buntstifte",
+      "zeitschrift",
+      "schere",
+      "kleber",
+      "uhr"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "L’affiche des cinq secondes",
+      "text": "Le ou la jeune prépare l’affiche avec trois questions : qui doit la lire ? Que doivent faire ces personnes ensuite ? Quelle phrase le dit en huit mots maximum ? Puis naît une ébauche avec un grand message central, une image ou un symbole simple et un ton sans reproche (forme en « nous » ou en « je » plutôt qu’un ordre). Vient alors le test des cinq secondes : l’adulte regarde l’ébauche cinq secondes, la retourne et dit ce qu’il a compris et comment le ton lui arrive. Le ou la jeune compare avec son intention et retravaille l’affiche jusqu’à la version finale.",
+      "sagen": [
+        "Qui doit lire ça – et que doivent faire ces personnes ensuite ?",
+        "Test des cinq secondes : je regarde un instant et je te dis ce qui m’arrive.",
+        "Moi, j’ai compris : … C’était ton intention ? Qu’est-ce que tu changes ?"
+      ],
+      "wennEsKippt": "Si le message central est trop long, les deux barrent ensemble mot après mot jusqu’à ce qu’il en reste huit au plus. Si le ou la jeune n’aime pas dessiner, un grand symbole ou une découpe de magazine suffit.",
+      "kurz": "Qui, quoi, huit mots · ébauche · test des cinq secondes"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Der Fünf-Sekunden-Test ist ehrlich und schnell: Der oder die Jugendliche sieht sofort, ob die eigene Botschaft so ankommt wie gemeint.",
+        "vorbereitung": [
+          "A3-Papier oder zwei A4, dicke Stifte, Buntstifte",
+          "Alte Zeitschriften, Schere, Kleber",
+          "Karte mit den Planungsfragen (siehe Karten)",
+          "Uhr für den Fünf-Sekunden-Test"
+        ],
+        "aufbau": "Entwurf am Tisch. Für den Test hält der oder die Jugendliche das Plakat in etwa zwei Metern Abstand hoch, die Fachkraft schaut von dort.",
+        "karten": [
+          {
+            "titel": "Planungsfragen",
+            "karten": [
+              "Wer soll es lesen? (Alter, Lage, Laune)",
+              "Was sollen diese Leute danach tun?",
+              "Welcher Satz sagt das in höchstens acht Wörtern?",
+              "Welcher Ton: einladend, witzig, ernst – aber ohne Vorwurf?"
+            ]
+          },
+          {
+            "titel": "Vorwurf oder Einladung? (Beispiele)",
+            "karten": [
+              "„Hört endlich auf zu brüllen!“ → „Leise Ecke: Hier hört man seine eigene Musik.“",
+              "„Wer Müll liegen lässt, nervt alle!“ → „Dein Platz, dein Müll. Danke fürs Mitnehmen.“",
+              "„Handys weg!!!“ → „Beim Essen: Bildschirm aus, Leute an.“"
+            ]
+          }
+        ],
+        "leichter": "Die Kernbotschaft wird aus drei Satzanfängen gebaut („Hier …“, „Danke, dass du …“, „Wir …“); ein Symbol statt einer Zeichnung.",
+        "schwerer": "Zwei Fassungen für zwei Zielgruppen (Zwölfjährige und Erwachsene im Haus) oder auf Französisch und Deutsch; der Fünf-Sekunden-Test entscheidet, welche hängt.",
+        "gruppe": "Mit 3–8 Jugendlichen arbeiten Paare an je einem Plakat. Der Fünf-Sekunden-Test läuft als Galerie: Jedes Paar hält sein Plakat hoch, die anderen sagen nach fünf Sekunden, was bei ihnen ankam.",
+        "beobachten": [
+          "Der oder die Jugendliche erklärt, wie Vorwurf und Einladung auf Lesende wirken.",
+          "Er oder sie fragt nach, was bei der Fachkraft angekommen ist, und hört bis zum Ende zu.",
+          "Er oder sie überarbeitet das Plakat aufgrund der Rückmeldung."
+        ],
+        "warum": "Botschaften wirken, wenn sie kurz, auf die Lesenden zugeschnitten und ohne Vorwurf sind; wer die Wirkung der eigenen Worte am Gegenüber testet, lernt, wie Ton andere beeinflusst (Ich-Botschaften statt Vorwürfen, Gordon, 1970; Rückmeldung als Lernhebel, Hattie & Timperley, 2007)."
+      },
+      "fr": {
+        "haken": "Le test des cinq secondes est honnête et rapide : le ou la jeune voit tout de suite si son message arrive comme prévu.",
+        "vorbereitung": [
+          "Papier A3 ou deux A4, gros feutres, crayons de couleur",
+          "Vieux magazines, ciseaux, colle",
+          "Carte avec les questions de préparation (voir cartes)",
+          "Une montre pour le test des cinq secondes"
+        ],
+        "aufbau": "Ébauche à la table. Pour le test, le ou la jeune tient l’affiche à environ deux mètres, l’adulte regarde de là.",
+        "karten": [
+          {
+            "titel": "Questions de préparation",
+            "karten": [
+              "Qui doit la lire ? (âge, situation, humeur)",
+              "Que doivent faire ces personnes ensuite ?",
+              "Quelle phrase le dit en huit mots maximum ?",
+              "Quel ton : accueillant, drôle, sérieux – mais sans reproche ?"
+            ]
+          },
+          {
+            "titel": "Reproche ou invitation ? (exemples)",
+            "karten": [
+              "« Arrêtez de crier ! » → « Coin calme : ici, on entend sa propre musique. »",
+              "« Ceux qui laissent traîner leurs déchets, c’est nul ! » → « Ta place, tes déchets. Merci de les reprendre. »",
+              "« Portables rangés !!! » → « Au repas : écrans éteints, les gens allumés. »"
+            ]
+          }
+        ],
+        "leichter": "Le message central se construit à partir de trois débuts de phrase (« Ici … », « Merci de … », « Nous … ») ; un symbole au lieu d’un dessin.",
+        "schwerer": "Deux versions pour deux publics cibles (des jeunes de douze ans et les adultes de la maison) ou en français et en allemand ; le test des cinq secondes décide laquelle sera affichée.",
+        "gruppe": "Avec 3 à 8 jeunes, des binômes créent chacun une affiche. Le test des cinq secondes se fait en galerie : chaque binôme lève son affiche, les autres disent après cinq secondes ce qu’ils ont compris.",
+        "beobachten": [
+          "Le ou la jeune explique l’effet du reproche et de l’invitation sur ceux qui lisent.",
+          "Il ou elle demande ce que l’adulte a compris et écoute jusqu’au bout.",
+          "Il ou elle retravaille l’affiche à partir du retour."
+        ],
+        "warum": "Un message fonctionne quand il est court, adapté à ses lecteurs et sans reproche ; tester l’effet de ses mots sur quelqu’un apprend comment le ton influence les autres (messages-je plutôt que reproches, Gordon, 1970 ; le retour comme levier d’apprentissage, Hattie & Timperley, 2007)."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-kampagne-jugend:3",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Was macht eine Botschaft stark?",
+    "text": "Das fertige Plakat liegt vor beiden. Der oder die Jugendliche nennt drei Entscheidungen, die die Botschaft stark gemacht haben, und eine, die nach dem Fünf-Sekunden-Test geändert wurde. Die Fachkraft fragt nach dem Alltag: Wo hilft dieselbe Regel noch – im Chat, beim Gespräch mit einer Lehrerin, wenn einen etwas nervt? Zum Schluss legt er oder sie den nächsten Schritt fest: wo das Plakat hängen soll, wen er oder sie vorher um Erlaubnis fragt und woran man merken würde, dass es wirkt.",
+    "sagen": [
+      "Welche drei Entscheidungen haben dein Plakat stark gemacht?",
+      "Was hast du nach dem Test geändert – und warum?",
+      "Wo im Alltag hilft dir dieselbe Regel: kurz, klar, ohne Vorwurf?"
+    ],
+    "wennEsKippt": "Fallen keine drei Entscheidungen ein, legt die Fachkraft die Planungsfragen-Karten hin, und der oder die Jugendliche zeigt auf die, die am meisten geholfen hat.",
+    "kurz": "Drei starke Entscheidungen · Änderung nach Test · Platz finden",
+    "rolle": [
+      "reflexion"
+    ],
+    "nurZumThema": true,
+    "thema": [
+      "freundschaft"
+    ],
+    "eldib": [
+      {
+        "code": "K-25",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-33",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "karten"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Qu’est-ce qui rend un message fort ?",
+      "text": "L’affiche terminée est posée devant les deux. Le ou la jeune nomme trois décisions qui ont rendu le message fort, et une qui a été modifiée après le test des cinq secondes. L’adulte fait le lien avec le quotidien : où cette règle aide-t-elle encore – dans un chat, en parlant à une enseignante, quand quelque chose énerve ? Pour finir, il ou elle fixe la suite : où l’affiche doit être accrochée, à qui demander la permission avant et à quoi on verrait qu’elle fonctionne.",
+      "sagen": [
+        "Quelles trois décisions ont rendu ton affiche forte ?",
+        "Qu’est-ce que tu as changé après le test – et pourquoi ?",
+        "Où, au quotidien, cette même règle t’aide : court, clair, sans reproche ?"
+      ],
+      "wennEsKippt": "Si trois décisions ne viennent pas, l’adulte pose les cartes des questions de préparation, et le ou la jeune montre celle qui a le plus aidé.",
+      "kurz": "Trois décisions fortes · changement après test · trouver la place"
+    },
+    "hilfen": {
+      "de": {
+        "beobachten": [
+          "Der oder die Jugendliche überträgt die Regel „kurz, klar, ohne Vorwurf“ auf eine eigene Alltagssituation.",
+          "Er oder sie begründet, warum der gewählte Ton bei der Zielgruppe besser ankommt."
+        ],
+        "gruppe": "In der Gruppe nennt jedes Paar eine Entscheidung, die sein Plakat stark gemacht hat; gemeinsam entsteht eine kurze Liste „Was Botschaften stark macht“, die neben den Plakaten hängt."
+      },
+      "fr": {
+        "beobachten": [
+          "Le ou la jeune transpose la règle « court, clair, sans reproche » à une situation de son quotidien.",
+          "Il ou elle explique pourquoi le ton choisi passe mieux auprès du public visé."
+        ],
+        "gruppe": "En groupe, chaque binôme nomme une décision qui a rendu son affiche forte ; ensemble naît une courte liste « Ce qui rend un message fort », accrochée à côté des affiches."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-ideen-plakat-kinder:1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Einen Tag Chefin oder Chef",
+    "text": "Die Fachkraft legt eine Karte „Chefin oder Chef für einen Tag“ hin und fragt: Wenn du hier bei uns eine Sache verbessern dürftest – eine, die wirklich machbar ist –, welche wäre das? Damit die Ideen kommen, gehen beide mit Papier und Stift auf Ideen-Jagd durch den Raum und den Flur (oder stellen sich den Weg durchs Haus vor: Garderobe, Essensraum, Spielecke, Ruheecke) und notieren drei Ideen. Das Kind wählt die Idee, die ihm am wichtigsten ist. Die Fachkraft sagt ehrlich, wie es weitergeht: Die Idee wird ausgearbeitet und an die Leitung oder die Kinderkonferenz weitergegeben, und das Kind bekommt eine Antwort.",
+    "sagen": [
+      "Stell dir vor, du bist einen Tag lang Chefin oder Chef hier. Was würdest du verbessern – etwas, das wirklich geht?",
+      "Komm, wir gehen kurz auf Ideen-Jagd. Was fällt dir auf?",
+      "Versprochen ist: Deine Idee wird gehört, und du bekommst eine Antwort. Ob sie klappt, entscheiden wir nicht allein."
+    ],
+    "wennEsKippt": "Fällt dem Kind nichts ein, nennt die Fachkraft drei Beispiele (eine Leseecke mit Decken, ein neues Spiel für die Pause, ein Ruhe-Schild), und das Kind wählt eins aus oder ändert es. Mag es nicht herumgehen, sammeln beide am Tisch.",
+    "kurz": "Chef für einen Tag · Ideen-Jagd · eine Idee wählen",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [
+      "regeln"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-34",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-30",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 2,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "bewegung",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "karten",
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Chef pour une journée",
+      "text": "L’adulte pose une carte « Chef pour une journée » et demande : si tu pouvais améliorer une chose ici, dans notre structure – une chose vraiment faisable –, laquelle ce serait ? Pour trouver des idées, les deux partent avec papier et crayon à la chasse aux idées dans la salle et le couloir (ou imaginent le chemin à travers la maison : vestiaire, salle à manger, coin jeux, coin calme) et notent trois idées. L’enfant choisit l’idée la plus importante pour lui. L’adulte dit honnêtement la suite : l’idée sera développée et transmise à la direction ou à la conférence des enfants, et l’enfant recevra une réponse.",
+      "sagen": [
+        "Imagine que tu es le chef ici pendant une journée. Qu’est-ce que tu améliorerais – quelque chose qui est vraiment possible ?",
+        "Viens, on part un moment à la chasse aux idées. Qu’est-ce que tu remarques ?",
+        "C’est promis : ton idée sera écoutée et tu auras une réponse. Si elle se réalise, ce n’est pas nous seuls qui décidons."
+      ],
+      "wennEsKippt": "Si rien ne vient, l’adulte donne trois exemples (un coin lecture avec des couvertures, un nouveau jeu pour la pause, un panneau « calme »), et l’enfant en choisit un ou le modifie. S’il n’a pas envie de se déplacer, les deux cherchent à la table.",
+      "kurz": "Chef pour un jour · chasse aux idées · choisir une idée"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "„Wenn du einen Tag Chefin oder Chef wärst …“: Das Kind wird ernst genommen, und die Fachkraft sagt ehrlich zu, dass die Idee weitergegeben wird und eine Antwort kommt.",
+        "vorbereitung": [
+          "Karte „Chefin oder Chef für einen Tag“",
+          "Unterlage, Papier und Stift für die Ideen-Jagd",
+          "Mit der Leitung klären, wohin Kinder-Ideen gehen und wann eine Antwort kommt"
+        ],
+        "beobachten": [
+          "Das Kind nennt mindestens eine Idee, die etwas verbessern soll, statt nur zu meckern.",
+          "Es wählt selbst eine Idee aus und begründet die Wahl kurz."
+        ],
+        "gruppe": "Mit 3–8 Kindern Ideen-Jagd in Paaren; danach hängen alle Ideen an der Wand, und jedes Kind klebt zwei Punkte zu den Ideen, die es am wichtigsten findet. Die Idee mit den meisten Punkten wird gemeinsam ausgearbeitet."
+      },
+      "fr": {
+        "haken": "« Si tu étais le chef pendant une journée … » : l’enfant est pris au sérieux, et l’adulte promet honnêtement que l’idée sera transmise et qu’une réponse viendra.",
+        "vorbereitung": [
+          "Carte « Chef pour une journée »",
+          "Support, papier et crayon pour la chasse aux idées",
+          "Vérifier avec la direction où vont les idées des enfants et quand vient une réponse"
+        ],
+        "beobachten": [
+          "L’enfant nomme au moins une idée pour améliorer quelque chose, au lieu de seulement se plaindre.",
+          "Il choisit lui-même une idée et justifie brièvement son choix."
+        ],
+        "gruppe": "Avec 3 à 8 enfants, chasse aux idées en binômes ; ensuite, toutes les idées sont affichées au mur et chaque enfant colle deux gommettes sur celles qu’il trouve les plus importantes. L’idée qui a le plus de gommettes est développée ensemble."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-ideen-plakat-kinder:2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Das Ideen-Plakat mit Ampel-Check",
+    "text": "Das Kind arbeitet seine Idee auf einem Plakat mit vier Feldern aus: Was ist meine Idee? Warum ist sie gut, und für wen? Was braucht man dafür? Wer könnte helfen? Danach kommt der Ampel-Check mit drei Fragen: Kostet es viel? Gibt es den Platz? Wer kümmert sich darum? Bei Rot sucht das Kind eine kleinere Start-Idee (aus einem eigenen Spielzimmer wird zum Beispiel eine Spielecke mit Teppich), die große bleibt als Traum-Idee stehen. Zum Schluss übt es, die Idee in drei Sätzen vorzustellen; die Fachkraft spielt die Leitung und stellt eine freundliche, echte Rückfrage.",
+    "sagen": [
+      "Warum ist deine Idee gut – und für wen?",
+      "Ampel-Check: Kostet es viel? Gibt es den Platz? Wer kümmert sich?",
+      "Ich bin jetzt die Leitung. Erzähl mir deine Idee in drei Sätzen."
+    ],
+    "wennEsKippt": "Ist das Plakat zu viel, malt das Kind nur ein großes Bild der Idee, und die Fachkraft schreibt die Antworten auf die vier Fragen daneben. Ist das Kind bei Rot enttäuscht, hilft der Satz: Viele große Ideen haben klein angefangen.",
+    "kurz": "Plakat: Idee, warum, was, wer · Ampel-Check · drei Sätze üben",
+    "rolle": [
+      "kern"
+    ],
+    "thema": [
+      "regeln"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-34",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-30",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 25
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "malen",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "buntstifte",
+      "karten"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "L’affiche à idée avec le test du feu tricolore",
+      "text": "L’enfant développe son idée sur une affiche à quatre cases : quelle est mon idée ? Pourquoi est-elle bonne, et pour qui ? De quoi a-t-on besoin ? Qui pourrait aider ? Vient ensuite le test du feu tricolore avec trois questions : est-ce que ça coûte cher ? Y a-t-il la place ? Qui s’en occupe ? Au rouge, l’enfant cherche une idée de départ plus petite (une salle de jeux à soi devient par exemple un coin jeux avec un tapis), et la grande reste écrite comme idée-rêve. Pour finir, il s’entraîne à présenter son idée en trois phrases ; l’adulte joue la direction et pose une question bienveillante et sincère.",
+      "sagen": [
+        "Pourquoi ton idée est bonne – et pour qui ?",
+        "Test du feu tricolore : est-ce que ça coûte cher ? Y a-t-il la place ? Qui s’en occupe ?",
+        "Maintenant, je suis la direction. Raconte-moi ton idée en trois phrases."
+      ],
+      "wennEsKippt": "Si l’affiche est trop, l’enfant dessine seulement une grande image de l’idée, et l’adulte écrit à côté les réponses aux quatre questions. Si l’enfant est déçu au rouge, cette phrase aide : beaucoup de grandes idées ont commencé petit.",
+      "kurz": "Affiche : idée, pourquoi, quoi, qui · feu tricolore · trois phrases"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Die Fachkraft spielt die Leitung und hört wirklich zu: Das Kind erlebt, dass seine Idee ein echtes Gegenüber hat.",
+        "vorbereitung": [
+          "A3-Papier oder zwei A4 mit vier Feldern",
+          "Buntstifte und ein dicker Stift",
+          "Drei Ampel-Karten: rot, gelb, grün",
+          "Vorher mit der Leitung klären, wie und bis wann das Kind eine Antwort bekommt"
+        ],
+        "aufbau": "Das Plakat liegt vor dem Kind; für die Probe stehen beide auf, das Kind hält sein Plakat, die Fachkraft sitzt wie die Leitung am Tisch.",
+        "karten": [
+          {
+            "titel": "Vier Felder des Ideen-Plakats",
+            "karten": [
+              "Meine Idee: …",
+              "Darum ist sie gut – für wen?",
+              "Das braucht man dafür: …",
+              "Das könnte helfen: …"
+            ]
+          },
+          {
+            "titel": "Ampel-Check",
+            "karten": [
+              "Kostet es viel Geld?",
+              "Gibt es dafür den Platz?",
+              "Wer kümmert sich darum?",
+              "Rot? Dann eine kleinere Start-Idee suchen – die Traum-Idee bleibt stehen."
+            ]
+          },
+          {
+            "titel": "Drei Sätze zum Vorstellen",
+            "karten": [
+              "Meine Idee ist …",
+              "Sie ist gut, weil …",
+              "Ich wünsche mir, dass …"
+            ]
+          }
+        ],
+        "leichter": "Nur zwei Felder (die Idee als Bild und „Darum ist sie gut“) und ein Satz zum Vorstellen; die Fachkraft schreibt nach Diktat.",
+        "schwerer": "Eine kleine Umfrage planen: drei Fragen, mit denen das Kind andere zu seiner Idee befragen kann, und ein Feld „Was ich sage, wenn jemand dagegen ist“.",
+        "gruppe": "Mit 3–8 Kindern arbeiten Paare an je einer Idee oder alle an der Idee mit den meisten Punkten. Die Kinder verteilen die Felder und üben die drei Sätze nacheinander; die Fachkraft oder ein Kind spielt die Leitung.",
+        "beobachten": [
+          "Das Kind begründet seine Idee mit einem Nutzen für andere („damit man …“).",
+          "Es macht bei Rot einen kleineren, machbaren Vorschlag, statt aufzugeben.",
+          "Es stellt die Idee in drei Sätzen vor und hört die Rückfrage an."
+        ],
+        "warum": "Kinder erleben Mitbestimmung als wirksam, wenn sie Raum, Stimme, ein echtes Gegenüber und eine Antwort bekommen (UN-Kinderrechtskonvention, Art. 12; Lundy, 2007); einen machbaren Vorschlag auszuarbeiten übt konstruktives Problemlösen.",
+        "links": [
+          {
+            "titel": "OKAJU – Ombudsman fir Kanner a Jugendlecher",
+            "url": "https://www.okaju.lu"
+          },
+          {
+            "titel": "UNICEF Lëtzebuerg – Kinderrechte",
+            "url": "https://www.unicef.lu"
+          }
+        ]
+      },
+      "fr": {
+        "haken": "L’adulte joue la direction et écoute vraiment : l’enfant constate que son idée a un vrai interlocuteur.",
+        "vorbereitung": [
+          "Papier A3 ou deux A4 avec quatre cases",
+          "Crayons de couleur et un gros feutre",
+          "Trois cartes feu tricolore : rouge, orange, vert",
+          "Vérifier avant avec la direction comment et quand l’enfant aura une réponse"
+        ],
+        "aufbau": "L’affiche est devant l’enfant ; pour l’essai, les deux se lèvent, l’enfant tient son affiche, l’adulte s’assoit à la table comme la direction.",
+        "karten": [
+          {
+            "titel": "Les quatre cases de l’affiche à idée",
+            "karten": [
+              "Mon idée : …",
+              "Elle est bonne parce que … – pour qui ?",
+              "Ce qu’il faut pour ça : …",
+              "Qui pourrait aider : …"
+            ]
+          },
+          {
+            "titel": "Test du feu tricolore",
+            "karten": [
+              "Est-ce que ça coûte beaucoup d’argent ?",
+              "Y a-t-il la place pour ça ?",
+              "Qui s’en occupe ?",
+              "Rouge ? Alors chercher une idée de départ plus petite – l’idée-rêve reste écrite."
+            ]
+          },
+          {
+            "titel": "Trois phrases pour présenter",
+            "karten": [
+              "Mon idée, c’est …",
+              "Elle est bonne parce que …",
+              "Je souhaite que …"
+            ]
+          }
+        ],
+        "leichter": "Seulement deux cases (l’idée en image et « Elle est bonne parce que ») et une phrase pour présenter ; l’adulte écrit sous la dictée.",
+        "schwerer": "Préparer un petit sondage : trois questions pour demander l’avis d’autres personnes sur l’idée, et une case « Ce que je dis si quelqu’un n’est pas d’accord ».",
+        "gruppe": "Avec 3 à 8 enfants, des binômes travaillent chacun sur une idée, ou tous sur l’idée qui a le plus de gommettes. Les enfants se répartissent les cases et s’entraînent aux trois phrases l’un après l’autre ; l’adulte ou un enfant joue la direction.",
+        "beobachten": [
+          "L’enfant justifie son idée par un avantage pour les autres (« pour qu’on puisse … »).",
+          "Au rouge, il fait une proposition plus petite et faisable au lieu d’abandonner.",
+          "Il présente son idée en trois phrases et écoute la question posée."
+        ],
+        "warum": "Pour un enfant, la participation devient efficace quand il a un espace, une voix, un vrai interlocuteur et une réponse (Convention relative aux droits de l’enfant, art. 12 ; Lundy, 2007) ; élaborer une proposition faisable entraîne la résolution constructive de problèmes.",
+        "links": [
+          {
+            "titel": "OKAJU – Ombudsman pour enfants et jeunes",
+            "url": "https://www.okaju.lu"
+          },
+          {
+            "titel": "UNICEF Luxembourg – droits de l’enfant",
+            "url": "https://www.unicef.lu"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "fo:pro-ideen-plakat-kinder:3",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Meine Idee ist unterwegs",
+    "text": "Beide schauen auf das fertige Ideen-Plakat. Das Kind sagt, was beim Ausarbeiten am wichtigsten war: einen Grund finden, kleiner denken oder die Idee gut sagen. Dann planen beide genau, wie es weitergeht: wer das Plakat zur Leitung oder in die Kinderkonferenz bringt, wann ungefähr eine Antwort kommt und wer sie dem Kind sagt. Das Kind malt oder schreibt einen kleinen Zettel „Meine Idee ist unterwegs“, den es behält.",
+    "sagen": [
+      "Was war heute am wichtigsten: einen Grund finden, kleiner denken oder es gut sagen?",
+      "Wohin geht dein Plakat, und wann ungefähr hörst du etwas?",
+      "Egal, wie die Antwort ausfällt: Du hast etwas vorgeschlagen, das andere weiterbringt."
+    ],
+    "wennEsKippt": "Ist das Kind unsicher, ob es die Idee wirklich abgeben will, bleibt das Plakat erst einmal bei der Fachkraft, und das Kind entscheidet später.",
+    "kurz": "Was war wichtig? · Weg der Idee planen · Zettel „unterwegs“",
+    "rolle": [
+      "reflexion"
+    ],
+    "nurZumThema": true,
+    "thema": [
+      "regeln"
+    ],
+    "eldib": [
+      {
+        "code": "SOZ-34",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-30",
+        "gewicht": 0.5
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 6,
+      "bis": 11
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "stifte"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Mon idée est en route",
+      "text": "Les deux regardent l’affiche terminée. L’enfant dit ce qui a été le plus important pendant le travail : trouver une raison, penser plus petit ou bien présenter l’idée. Puis les deux planifient la suite en détail : qui apporte l’affiche à la direction ou à la conférence des enfants, quand une réponse arrivera à peu près et qui la donnera à l’enfant. L’enfant dessine ou écrit un petit papier « Mon idée est en route », qu’il garde.",
+      "sagen": [
+        "Qu’est-ce qui a été le plus important aujourd’hui : trouver une raison, penser plus petit ou bien le dire ?",
+        "Où va ton affiche, et quand à peu près tu auras des nouvelles ?",
+        "Quelle que soit la réponse : tu as proposé quelque chose qui fait avancer les autres."
+      ],
+      "wennEsKippt": "Si l’enfant n’est pas sûr de vouloir vraiment transmettre son idée, l’affiche reste d’abord chez l’adulte, et l’enfant décide plus tard.",
+      "kurz": "Ce qui comptait · le chemin de l’idée · papier « en route »"
+    },
+    "hilfen": {
+      "de": {
+        "beobachten": [
+          "Das Kind benennt einen Schritt, der beim Vorschlagen geholfen hat.",
+          "Es weiß, wohin seine Idee geht, und akzeptiert, dass andere mitentscheiden."
+        ],
+        "gruppe": "In der Gruppe bestimmen die Kinder zwei Botschafter, die das Plakat zusammen mit der Fachkraft zur Leitung oder in die Kinderkonferenz bringen; alle schreiben ihren Namen als Unterstützer darunter."
+      },
+      "fr": {
+        "beobachten": [
+          "L’enfant nomme une étape qui l’a aidé à faire sa proposition.",
+          "Il sait où va son idée et accepte que d’autres participent à la décision."
+        ],
+        "gruppe": "En groupe, les enfants désignent deux ambassadeurs qui apportent l’affiche avec l’adulte à la direction ou à la conférence des enfants ; tous signent en dessous comme soutiens."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-brief-gemeinde-jugend:1",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Post an die Gemeinde",
+    "text": "Die Fachkraft legt einen leeren Briefumschlag hin, adressiert „An den Schöffenrat der Gemeinde …“, und fragt: Was würdest du in deinem Ort ändern, wenn die Gemeinde dir zuhören müsste? Dazu nennt sie eine wenig bekannte Tatsache: In Luxemburg darf man Behörden auf Lëtzebuergesch, Französisch oder Deutsch schreiben, und die Verwaltung soll nach Möglichkeit in derselben Sprache antworten (Sprachengesetz von 1984). Der oder die Jugendliche sammelt in zwei Minuten drei Dinge im Ort, die stören oder fehlen, und wählt eins aus. Gemeinsam klären beide, wer darüber entscheidet und an wen der Brief deshalb geht.",
+    "sagen": [
+      "Wenn die Gemeinde dir zuhören müsste – was würdest du in deinem Ort ändern?",
+      "Übrigens: Du darfst der Gemeinde auf Lëtzebuergesch, Französisch oder Deutsch schreiben. Welche Sprache nimmst du?",
+      "Wer entscheidet darüber? Dann wissen wir, an wen der Brief geht."
+    ],
+    "wennEsKippt": "Fällt nichts zum Ort ein, darf das Anliegen auch die Einrichtung oder die Schule betreffen; dann geht der Brief an die Leitung statt an die Gemeinde. Will der oder die Jugendliche nichts Eigenes einbringen, wählt er oder sie ein Thema von der Ideenliste.",
+    "kurz": "Umschlag an die Gemeinde · drei Anliegen sammeln · Empfänger klären",
+    "rolle": [
+      "einstieg"
+    ],
+    "thema": [
+      "regeln"
+    ],
+    "eldib": [
+      {
+        "code": "K-30",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-34",
+        "gewicht": 1
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "karten"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Du courrier pour la commune",
+      "text": "L’adulte pose une enveloppe vide adressée « Au collège des bourgmestre et échevins de la commune de … » et demande : qu’est-ce que tu changerais dans ta localité si la commune devait t’écouter ? Il ajoute un fait peu connu : au Luxembourg, on peut écrire aux administrations en luxembourgeois, en français ou en allemand, et l’administration doit répondre dans la mesure du possible dans la même langue (loi sur les langues de 1984). Le ou la jeune note en deux minutes trois choses de sa localité qui gênent ou qui manquent, et en choisit une. Ensemble, les deux clarifient qui décide et donc à qui la lettre est adressée.",
+      "sagen": [
+        "Si la commune devait t’écouter – qu’est-ce que tu changerais dans ta localité ?",
+        "D’ailleurs : tu as le droit d’écrire à la commune en luxembourgeois, en français ou en allemand. Quelle langue tu prends ?",
+        "Qui décide de ça ? Comme ça, on sait à qui la lettre est adressée."
+      ],
+      "wennEsKippt": "Si rien ne vient pour la localité, la demande peut aussi concerner la structure ou l’école ; la lettre va alors à la direction plutôt qu’à la commune. Si le ou la jeune ne veut rien apporter de personnel, il ou elle choisit un thème dans la liste d’idées.",
+      "kurz": "Enveloppe pour la commune · trois demandes · trouver le destinataire"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Ein adressierter, leerer Umschlag an den Schöffenrat: Der oder die Jugendliche merkt, dass hier ein echter Brief an echte Entscheider entsteht.",
+        "vorbereitung": [
+          "Briefumschlag, adressiert an den Schöffenrat der Wohngemeinde",
+          "Ideenliste auf einer Karteikarte (siehe Karten)",
+          "Wenn möglich: Adresse und Name der Bürgermeisterin oder des Bürgermeisters"
+        ],
+        "karten": [
+          {
+            "titel": "Ideen für Anliegen im Ort",
+            "karten": [
+              "Bushaltestelle ohne Dach oder Sitzplatz",
+              "Weg zur Schule ohne Licht",
+              "Jugendhaus: kein WLAN oder zu kurze Öffnungszeiten",
+              "Zu wenige Fahrradständer",
+              "Fehlende oder kaputte Rampe",
+              "Ein Treffpunkt für Jugendliche, der fehlt"
+            ]
+          }
+        ],
+        "beobachten": [
+          "Der oder die Jugendliche wählt ein Anliegen, das ein Problem beschreibt, und denkt schon an eine Lösung.",
+          "Er oder sie überlegt mit, wer zuständig ist."
+        ],
+        "gruppe": "Mit 3–8 Jugendlichen sammelt die Gruppe Anliegen auf Karten, sortiert sie nach „Gemeinde“, „Einrichtung“, „Schule“ und wählt ein oder zwei Anliegen für gemeinsame Briefe."
+      },
+      "fr": {
+        "haken": "Une enveloppe vide, déjà adressée au collège échevinal : le ou la jeune comprend qu’une vraie lettre va naître ici, pour de vrais décideurs.",
+        "vorbereitung": [
+          "Enveloppe adressée au collège des bourgmestre et échevins de la commune",
+          "Liste d’idées sur une fiche (voir cartes)",
+          "Si possible : adresse et nom de la bourgmestre ou du bourgmestre"
+        ],
+        "karten": [
+          {
+            "titel": "Idées de demandes pour la localité",
+            "karten": [
+              "Arrêt de bus sans abri ni banc",
+              "Chemin de l’école sans éclairage",
+              "Maison des jeunes : pas de wifi ou horaires trop courts",
+              "Trop peu de range-vélos",
+              "Rampe absente ou cassée",
+              "Un lieu de rencontre pour les jeunes qui fait défaut"
+            ]
+          }
+        ],
+        "beobachten": [
+          "Le ou la jeune choisit une demande qui décrit un problème et pense déjà à une solution.",
+          "Il ou elle réfléchit à qui est compétent."
+        ],
+        "gruppe": "Avec 3 à 8 jeunes, le groupe note les demandes sur des cartes, les trie en « commune », « structure », « école » et choisit une ou deux demandes pour des lettres communes."
+      }
+    }
+  },
+  {
+    "id": "fo:pro-brief-gemeinde-jugend:2",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Ein Brief, der etwas bewegt",
+    "text": "Der Brief entsteht aus sechs Bausteinen: Anrede, wer ich bin (Vorname, Alter, Ort; als Antwortadresse die Einrichtung), Anliegen in einem Satz, Begründung mit einer Tatsache und einem Beispiel, konkreter Vorschlag und die Bitte um eine Antwort bis zu einem Datum. Der oder die Jugendliche schreibt zuerst frei, dann prüfen beide jeden Baustein mit der Frage: Würde jemand im Schöffenrat das nach dem ersten Lesen verstehen und ernst nehmen? Die Fachkraft liest den Entwurf als „Gemeinde“ laut vor und bringt einen möglichen Einwand (etwa „Das kostet zu viel“); der oder die Jugendliche ergänzt eine sachliche Antwort darauf. Zum Schluss entsteht die Endfassung, und er oder sie entscheidet, ob und wie der Brief abgeschickt wird.",
+    "sagen": [
+      "Sag dein Anliegen in einem Satz – so, dass es im Rathaus jemand sofort versteht.",
+      "Ich bin jetzt die Gemeinde: Das kostet zu viel. Was antwortest du?",
+      "Der Brief gehört dir. Willst du ihn abschicken, und wenn ja, wie?"
+    ],
+    "wennEsKippt": "Stockt das Schreiben, spricht der oder die Jugendliche Satz für Satz, und die Fachkraft schreibt mit; danach wird gemeinsam gekürzt. Bei wenig Zeit reichen drei Bausteine: Anliegen, Begründung, Vorschlag.",
+    "kurz": "Sechs Bausteine · Einwand der Gemeinde beantworten · Endfassung",
+    "rolle": [
+      "kern"
+    ],
+    "thema": [
+      "regeln"
+    ],
+    "eldib": [
+      {
+        "code": "K-30",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-34",
+        "gewicht": 1
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 8,
+      "typ": 10,
+      "max": 25
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "schreiben",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "papier",
+      "stifte",
+      "karten"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Une lettre qui fait bouger les choses",
+      "text": "La lettre se construit en six briques : formule d’appel, qui je suis (prénom, âge, localité ; comme adresse de réponse, la structure), la demande en une phrase, la justification avec un fait et un exemple, une proposition concrète et la demande d’une réponse dans un délai donné. Le ou la jeune écrit d’abord librement, puis les deux vérifient chaque brique avec la question : quelqu’un du collège échevinal comprendrait-il dès la première lecture, et prendrait-il cela au sérieux ? L’adulte lit le brouillon à voix haute en jouant « la commune » et avance une objection possible (par exemple « Ça coûte trop cher ») ; le ou la jeune ajoute une réponse posée. Pour finir, la version définitive est écrite, et il ou elle décide si la lettre sera envoyée, et comment.",
+      "sagen": [
+        "Dis ta demande en une phrase – pour qu’à la mairie, quelqu’un la comprenne tout de suite.",
+        "Je suis maintenant la commune : ça coûte trop cher. Qu’est-ce que tu réponds ?",
+        "Cette lettre t’appartient. Tu veux l’envoyer, et si oui, comment ?"
+      ],
+      "wennEsKippt": "Si l’écriture bloque, le ou la jeune dit les phrases une à une et l’adulte écrit ; ensuite, on raccourcit ensemble. S’il y a peu de temps, trois briques suffisent : la demande, la justification, la proposition.",
+      "kurz": "Six briques · répondre à l’objection · version définitive"
+    },
+    "hilfen": {
+      "de": {
+        "haken": "Die Fachkraft spielt die Gemeinde und bringt einen echten Einwand: Der Brief muss etwas aushalten, wie im echten Leben.",
+        "vorbereitung": [
+          "Papier, Stifte und der Briefumschlag aus dem Einstieg",
+          "Bausteine des Briefs auf Karteikarten (siehe Karten)",
+          "Mit der Leitung klären: Darf die Einrichtung als Antwortadresse dienen?",
+          "Adresse der Gemeinde von der Website der Gemeinde"
+        ],
+        "aufbau": "Nebeneinander am Tisch; die Baustein-Karten liegen in der richtigen Reihenfolge oben, der Entwurf darunter.",
+        "karten": [
+          {
+            "titel": "Bausteine des Briefs",
+            "karten": [
+              "Anrede: Sehr geehrte Mitglieder des Schöffenrats, …",
+              "Wer ich bin: Vorname, Alter, Ort (Antwortadresse: die Einrichtung)",
+              "Mein Anliegen in einem Satz",
+              "Warum: eine Tatsache und ein Beispiel aus meinem Alltag",
+              "Mein Vorschlag: was genau, wo, ungefähr wie",
+              "Bitte: Ich freue mich über eine Antwort bis zum …"
+            ]
+          },
+          {
+            "titel": "Mögliche Einwände der Gemeinde",
+            "karten": [
+              "Das kostet zu viel.",
+              "Dafür sind wir nicht zuständig.",
+              "Das wollen nur wenige.",
+              "Das geht frühestens nächstes Jahr."
+            ]
+          }
+        ],
+        "leichter": "Ein Lückenbrief mit den sechs Bausteinen als Satzanfängen; der oder die Jugendliche füllt nur die Lücken.",
+        "schwerer": "Zwei Belege sammeln (etwa ein Foto der Bushaltestelle ohne Personen und eine kleine Umfrage unter fünf Gleichaltrigen) und den Brief zusätzlich in einer zweiten Landessprache schreiben.",
+        "gruppe": "Mit 3–8 Jugendlichen entsteht ein gemeinsamer Brief mit verteilten Bausteinen oder mehrere Briefe zu verschiedenen Anliegen. Eine Person spielt die Gemeinde und bringt Einwände, die anderen beantworten sie. Unterschreiben alle, die den Brief mittragen.",
+        "beobachten": [
+          "Der oder die Jugendliche formuliert das Anliegen in einem klaren, vollständigen Satz und begründet es mit Tatsache und Beispiel.",
+          "Er oder sie beantwortet einen Einwand sachlich mit einem Vorschlag, statt beleidigt aufzugeben.",
+          "Er oder sie entscheidet selbst, ob der Brief abgeschickt wird."
+        ],
+        "warum": "Beteiligung wirkt, wenn junge Menschen Raum, Stimme, ein zuständiges Gegenüber und eine Antwort bekommen (Lundy, 2007); echte Mitwirkung statt Alibi-Beteiligung stärkt das Gefühl, etwas bewirken zu können (Hart, 1992), und das Schreiben an einen echten Empfänger mit Einwand-Probe übt begründetes Argumentieren.",
+        "links": [
+          {
+            "titel": "Jugendparlament Luxemburg",
+            "url": "https://www.jugendparlament.lu"
+          },
+          {
+            "titel": "OKAJU Young Advisors (13–17 Jahre)",
+            "url": "https://www.okaju.lu/oya/"
+          },
+          {
+            "titel": "ZpB – Zentrum fir politesch Bildung",
+            "url": "https://zpb.lu"
+          }
+        ]
+      },
+      "fr": {
+        "haken": "L’adulte joue la commune et avance une vraie objection : la lettre doit tenir le coup, comme dans la vraie vie.",
+        "vorbereitung": [
+          "Papier, feutres et l’enveloppe de l’entrée en matière",
+          "Les briques de la lettre sur fiches (voir cartes)",
+          "Vérifier avec la direction : la structure peut-elle servir d’adresse de réponse ?",
+          "Adresse de la commune, sur le site de la commune"
+        ],
+        "aufbau": "Côte à côte à la table ; les cartes-briques posées en haut dans le bon ordre, le brouillon en dessous.",
+        "karten": [
+          {
+            "titel": "Les briques de la lettre",
+            "karten": [
+              "Formule d’appel : Mesdames et Messieurs les membres du collège échevinal, …",
+              "Qui je suis : prénom, âge, localité (adresse de réponse : la structure)",
+              "Ma demande en une phrase",
+              "Pourquoi : un fait et un exemple de mon quotidien",
+              "Ma proposition : quoi au juste, où, à peu près comment",
+              "Demande : Je vous remercie de me répondre avant le …"
+            ]
+          },
+          {
+            "titel": "Objections possibles de la commune",
+            "karten": [
+              "Ça coûte trop cher.",
+              "Ce n’est pas de notre compétence.",
+              "Peu de gens le demandent.",
+              "Ce n’est pas possible avant l’an prochain."
+            ]
+          }
+        ],
+        "leichter": "Une lettre à trous avec les six briques en débuts de phrase ; le ou la jeune remplit seulement les trous.",
+        "schwerer": "Réunir deux preuves (par exemple une photo de l’arrêt de bus sans personne dessus et un petit sondage auprès de cinq jeunes du même âge) et écrire aussi la lettre dans une deuxième langue du pays.",
+        "gruppe": "Avec 3 à 8 jeunes, on écrit une lettre commune avec des briques réparties ou plusieurs lettres sur différentes demandes. Une personne joue la commune et avance des objections, les autres y répondent. Signent tous ceux qui soutiennent la lettre.",
+        "beobachten": [
+          "Le ou la jeune formule sa demande en une phrase claire et complète et la justifie par un fait et un exemple.",
+          "Il ou elle répond à une objection de façon posée, avec une proposition, au lieu d’abandonner vexé.",
+          "Il ou elle décide seul ou seule si la lettre est envoyée."
+        ],
+        "warum": "La participation fonctionne quand les jeunes ont un espace, une voix, un interlocuteur compétent et une réponse (Lundy, 2007) ; une vraie participation plutôt qu’une participation alibi renforce le sentiment de pouvoir agir (Hart, 1992), et écrire à un vrai destinataire en testant les objections entraîne l’argumentation.",
+        "links": [
+          {
+            "titel": "Parlement des jeunes (Luxembourg)",
+            "url": "https://www.jugendparlament.lu"
+          },
+          {
+            "titel": "OKAJU Young Advisors (13–17 ans)",
+            "url": "https://www.okaju.lu/oya/"
+          },
+          {
+            "titel": "ZpB – Zentrum fir politesch Bildung",
+            "url": "https://zpb.lu"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "fo:pro-brief-gemeinde-jugend:3",
+    "quelle": {
+      "art": "praxis",
+      "titel": "Form-Stunde Projekt"
+    },
+    "titel": "Abgeschickt – und dann?",
+    "text": "Der Brief liegt fertig im Umschlag. Der oder die Jugendliche sagt, welcher Satz im Brief am stärksten ist und warum. Die Fachkraft fragt nach dem Plan B, falls keine Antwort oder ein Nein kommt: nachfragen, Unterstützer suchen, einen kleineren Vorschlag machen oder sich an das Jugendparlament oder die Jugendkommission der Gemeinde wenden, falls es eine gibt. Zum Schluss notiert er oder sie auf dem Umschlag oder im Kalender das Datum, an dem nachgefasst wird, und wer dabei hilft.",
+    "sagen": [
+      "Welcher Satz in deinem Brief ist der stärkste?",
+      "Und wenn keine Antwort kommt oder ein Nein – was ist dann dein Plan B?",
+      "An welchem Datum fragst du nach, und wer hilft dir dabei?"
+    ],
+    "wennEsKippt": "Will der oder die Jugendliche den Brief doch nicht abschicken, ist das in Ordnung: Er bleibt als Entwurf in der Mappe, und die Fachkraft fragt nur, was es bräuchte, um ihn später abzuschicken.",
+    "kurz": "Stärkster Satz · Plan B bei Nein · Datum zum Nachfassen",
+    "rolle": [
+      "reflexion"
+    ],
+    "nurZumThema": true,
+    "thema": [
+      "regeln"
+    ],
+    "eldib": [
+      {
+        "code": "K-30",
+        "gewicht": 1
+      },
+      {
+        "code": "SOZ-34",
+        "gewicht": 1
+      }
+    ],
+    "kompetenz": [
+      "kommunikation"
+    ],
+    "alter": {
+      "von": 12,
+      "bis": 16
+    },
+    "dauer": {
+      "min": 3,
+      "typ": 5,
+      "max": 10
+    },
+    "sozialform": [
+      "einzeln",
+      "zu-zweit",
+      "gruppe"
+    ],
+    "einzeltauglich": "ja",
+    "gruppe": {
+      "min": 2,
+      "max": 8,
+      "differenzierbar": true
+    },
+    "energie": 1,
+    "belastung": 0,
+    "reiz": 0,
+    "format": [
+      "projekt",
+      "gespraech"
+    ],
+    "formen": [
+      "projekt"
+    ],
+    "material": [
+      "stifte",
+      "mappe"
+    ],
+    "ort": "raum",
+    "qualitaet": "geprueft",
+    "fr": {
+      "titel": "Envoyée – et après ?",
+      "text": "La lettre est prête dans son enveloppe. Le ou la jeune dit quelle phrase de la lettre est la plus forte et pourquoi. L’adulte demande le plan B si aucune réponse ou un non arrive : relancer, chercher des soutiens, faire une proposition plus petite ou s’adresser au Parlement des jeunes ou à la commission de la jeunesse de la commune, s’il y en a une. Pour finir, il ou elle note sur l’enveloppe ou dans son agenda le jour de la relance et qui l’aidera.",
+      "sagen": [
+        "Quelle phrase de ta lettre est la plus forte ?",
+        "Et si aucune réponse n’arrive, ou un non – quel est ton plan B ?",
+        "Quel jour tu relances, et qui t’aide ?"
+      ],
+      "wennEsKippt": "Si le ou la jeune ne veut finalement pas envoyer la lettre, c’est d’accord : elle reste comme brouillon dans le classeur, et l’adulte demande seulement ce qu’il faudrait pour l’envoyer plus tard.",
+      "kurz": "Phrase la plus forte · plan B si non · jour de relance"
+    },
+    "hilfen": {
+      "de": {
+        "beobachten": [
+          "Der oder die Jugendliche nennt einen sachlichen Plan B für den Fall eines Neins.",
+          "Er oder sie legt ein konkretes Datum zum Nachfassen fest."
+        ],
+        "gruppe": "In der Gruppe liest jede Person ihren stärksten Satz vor; gemeinsam entsteht ein Plan B, und zwei Personen übernehmen das Nachfassen zum vereinbarten Datum."
+      },
+      "fr": {
+        "beobachten": [
+          "Le ou la jeune nomme un plan B posé en cas de refus.",
+          "Il ou elle fixe une date concrète de relance."
+        ],
+        "gruppe": "En groupe, chacun lit sa phrase la plus forte ; ensemble naît un plan B, et deux personnes se chargent de la relance à la date convenue."
+      }
+    }
+  }
+]
