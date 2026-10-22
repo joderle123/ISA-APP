@@ -454,6 +454,12 @@ function kursWahl(c: Kontext): { id: string; ab: number } | null {
   let k = KURS_DER_FOLGE.get(c)
   if (k !== undefined) return k
   k = null
+  // in der Kurs-Bibliothek gewählt: genau dieser Kurs, ab der nächsten Sitzung, die das Kind noch nicht hatte
+  if (c.a.kurs && c.weg === 'gruendlich') {
+    k = { id: c.a.kurs, ab: kursStand(c, c.a.kurs) }
+    KURS_DER_FOLGE.set(c, k)
+    return k
+  }
   // passt mehr als ein Kurs (Kurs-Prüfung 16.10.: SOZ-17 in „Hallo, spielst du mit?“ und „Wir spielen zusammen“), entscheidet das
   // wichtigere Ziel des Kindes – und bei Gleichstand der Kurs, dessen erstes Ziel es ist
   // Prüfstand 17.10.2026 (24 erfundene Dossiers mit Gutachten): nur nach ELDiB-Codes gewählt bekam ein Fünfjähriger mit Wutanfällen
@@ -1706,7 +1712,7 @@ function planTitelEinzeln(c: Kontext): string {
 /** Plan-Id aus Kind und Auftrag (ohne Datum, ohne ref) – derselbe Klick liefert denselben Plan (T-M7). */
 export function planId(c: Kontext, variante = 0): string {
   const a = c.a
-  const teile = [c.seed, a.weg, a.ziele.join(','), a.n, a.dauer, a.sozialform, (a.schwerpunkt ?? []).join(','), (a.formate ?? []).join(','), a.heute ? `${a.heute.energie}${a.heute.konzentration}${a.heute.stimmung}` : '', c.tagesformen.join(','), a.sprache, a.blatt ?? '', (a.thema ?? []).join(','), variante]
+  const teile = [c.seed, a.weg, a.ziele.join(','), a.n, a.dauer, a.sozialform, (a.schwerpunkt ?? []).join(','), (a.formate ?? []).join(','), a.heute ? `${a.heute.energie}${a.heute.konzentration}${a.heute.stimmung}` : '', c.tagesformen.join(','), a.sprache, a.blatt ?? '', (a.thema ?? []).join(','), variante, ...(a.kurs ? [a.kurs] : []), ...(a.form ? [a.form, (a.ort ?? []).join(',')] : [])]
   return 'pl-' + hash8(teile.join('|'))
 }
 
@@ -1868,7 +1874,7 @@ function weiterMitFolge(c: Kontext, folge: Plan): Plan {
 export function planen(k: Katalog, p: Profil, a: Auftrag, v: Vorlieben, verlauf: Verlauf): Plan {
   setzeTextModus((a.sozialform ?? 'einzeln') !== 'einzeln')
   const c = kontext(k, p, a, v, verlauf)
-  if (a.weg === 'schnell' && p.folge) {
+  if (a.weg === 'schnell' && p.folge && !a.form) {
     const folge = verlauf.plaene.find((pl) => pl.id === p.folge!.id)
     if (folge) return weiterMitFolge(c, folge)
   }

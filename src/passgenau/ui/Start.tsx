@@ -9,6 +9,7 @@ import { LAYOUT_NAME, PHASE_NAME, SOZIALFORM_NAME, SPRACHE_NAME, ZIELE_OHNE_KIND
 import { useRueckmeldung } from './Nachher'
 import { dauerVorgabe } from './Wege'
 import { quoteText } from './Praxis'
+import { KursHinweis } from './Kurse'
 
 function Weg({ titel, farbe, icon, text, punkte, onClick }: { titel: string; farbe: [string, string]; icon: Zeichen; text: string; punkte: string[]; onClick: () => void }) {
   return (
@@ -181,6 +182,7 @@ export function Start() {
         <Weg titel="Schnell für heute" farbe={['#FDF3E7', '#9A4F0B']} icon="blitz" text="Drei Regler für heute, ein Klick – fertige Stunde mit Blatt." punkte={['Energie, Konzentration, Stimmung', f ? 'nächster Schritt der laufenden Folge' : 'wichtigstes Ziel zuerst', 'sofort als PDF']} onClick={() => pg.setAnsicht('schnell')} />
         <Weg titel="Heute geht nicht viel" farbe={['#EAF2E7', '#3F6E3A']} icon="herz" text="Spiele, Bewegung, Kreatives, Beziehung – bewusst ohne Förderziel." punkte={[`ein Klick: Wie ist ${k.nom} heute?`, 'Wahlkarte statt Befragung', 'Mitmach-Seite zum Drucken']} onClick={() => pg.setAnsicht('leicht')} />
       </div>
+      <KursHinweis />
       <div className={'pg-zwei' + (zweiteKarte ? '' : ' eine')}>
         <div className="pg-card">
           <h2>
@@ -406,6 +408,7 @@ export function OhneKind() {
         </select>
         <Seg label="Sprache des Blatts" wert={sprache} optionen={[['de', 'Deutsch'], ['fr', 'Français']]} onWahl={setSprache} />
       </div>
+      <KursHinweis />
       <h2 className="pg-abschnitt">Typische Anliegen</h2>
       <div className="pg-anliegen-raster">
         {REZEPTE.map((r) => (

@@ -4636,3 +4636,429 @@ dialog .pg-hinweise {
     padding: 14px 12px;
   }
 }
+
+/* ==== Kurs-Bibliothek (22.10.2026) ==== */
+.pg-kb-bild {
+  display: inline-grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid;
+  flex: none;
+}
+.pg-kb-bild svg {
+  width: 74%;
+  height: 74%;
+}
+.pg-kb-bild.gross {
+  width: 132px;
+  height: 132px;
+  border-width: 3px;
+}
+.pg-kb-filter {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.pg-kb-suche {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  max-width: 520px;
+}
+.pg-kb-suche input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-size: var(--fs-md);
+  background: transparent;
+}
+.pg-kb-themen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pg-kb-thema {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 3px 14px 3px 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  font: inherit;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.pg-kb-thema .pg-kb-bild {
+  width: 36px;
+  height: 36px;
+  border-width: 1.5px;
+}
+.pg-kb-thema-alle {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--surface-2);
+}
+.pg-kb-thema.an {
+  border-color: var(--accent);
+  background: var(--accent-soft, #eceefa);
+  color: var(--ink);
+  box-shadow: 0 0 0 2px var(--accent-line);
+}
+.pg-kb-raster {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.pg-kb-karte {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  overflow: hidden;
+  cursor: pointer;
+  font: inherit;
+  box-shadow: var(--shadow-1);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.pg-kb-karte:hover,
+.pg-kb-karte:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -12px rgba(20, 30, 60, 0.35);
+}
+.pg-kb-deckel {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 118px;
+}
+.pg-kb-deckel .pg-kb-bild {
+  width: 92px;
+  height: 92px;
+  background: #fff !important;
+}
+.pg-kb-band {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--ink);
+}
+.pg-kb-text {
+  display: grid;
+  gap: 5px;
+  padding: 12px 14px 14px;
+}
+.pg-kb-text small {
+  font-size: var(--fs-xs);
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.pg-kb-text b {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  line-height: 1.25;
+  color: var(--ink);
+}
+.pg-kb-ziel {
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pg-kb-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}
+.pg-kb-meta .ic {
+  width: 14px;
+  height: 14px;
+}
+.pg-kb-zurueck {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  margin-bottom: 8px;
+}
+.pg-kb-held {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 22px;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, var(--kb-z) 0%, #ffffff 75%);
+  margin-bottom: 20px;
+}
+.pg-kb-held h1 {
+  margin: 4px 0 2px;
+}
+.pg-kb-held-text {
+  min-width: 0;
+  flex: 1;
+}
+.pg-kb-fr {
+  margin: 0;
+  font-style: italic;
+}
+.pg-kb-held-ziel {
+  margin: 10px 0 0;
+  font-size: var(--fs-md);
+  color: var(--ink);
+  max-width: 70ch;
+}
+.pg-kb-werkzeug {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 10px 0 0;
+  padding: 8px 12px;
+  border-radius: var(--r-md);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px dashed var(--kb-t);
+  font-weight: 600;
+  color: var(--kb-t);
+  max-width: 70ch;
+}
+.pg-kb-werkzeug .ic {
+  flex: none;
+  margin-top: 3px;
+}
+.pg-kb-zwei {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+.pg-kb-sitzungen {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.pg-kb-sitzungen li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--kb-t);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.pg-kb-sitzungen b {
+  font-size: var(--fs-md);
+  color: var(--ink);
+}
+.pg-kb-sitzungen p {
+  margin: 4px 0 0;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+}
+.pg-kb-nr {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--kb-z);
+  color: var(--kb-t);
+  font-weight: 800;
+  font-size: var(--fs-lg);
+}
+.pg-kb-zeile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.pg-kb-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+}
+.pg-kb-chip .ic {
+  width: 14px;
+  height: 14px;
+}
+p.pg-kb-tausch {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}
+.pg-kb-seite {
+  display: grid;
+  gap: 14px;
+}
+.pg-kb-seite h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 6px;
+  font-size: var(--fs-md);
+}
+.pg-kb-liste {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 5px;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+}
+.pg-kb-absatz {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+  line-height: 1.5;
+}
+.pg-kb-quellen {
+  margin-top: 8px;
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}
+.pg-kb-quellen summary {
+  cursor: pointer;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.pg-kb-quellen ul {
+  margin: 4px 0 0;
+  padding-left: 16px;
+  display: grid;
+  gap: 4px;
+}
+.pg-kb-achtung {
+  background: #fff8ec;
+  border-color: #efd9a8;
+}
+/* Startseite: Karte „Fertige Kurse“ */
+.pg-kb-hinweis {
+  margin: 18px 0;
+  padding: 16px 18px;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--accent-line);
+  background: linear-gradient(120deg, #f3f4fd 0%, #fff8f1 100%);
+}
+.pg-kb-hinweis-kopf {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.pg-kb-hinweis-kopf > div {
+  flex: 1;
+  min-width: 200px;
+}
+.pg-kb-hinweis h2 {
+  margin: 0;
+  font-size: var(--fs-lg);
+}
+.pg-kb-hinweis p {
+  margin: 2px 0 0;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+}
+.pg-kb-stapel {
+  display: inline-flex;
+}
+.pg-kb-stapel .pg-kb-bild {
+  width: 48px;
+  height: 48px;
+  background: #fff !important;
+}
+.pg-kb-stapel .pg-kb-bild + .pg-kb-bild {
+  margin-left: -14px;
+}
+.pg-kb-mini {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.pg-kb-minikarte {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 8px 12px 8px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+.pg-kb-minikarte:hover {
+  border-color: var(--accent);
+}
+.pg-kb-minikarte .pg-kb-bild {
+  width: 44px;
+  height: 44px;
+}
+.pg-kb-minikarte span {
+  display: grid;
+  min-width: 0;
+}
+.pg-kb-minikarte b {
+  font-size: var(--fs-sm);
+  color: var(--ink);
+}
+.pg-kb-minikarte small {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}
+@media (max-width: 900px) {
+  .pg-kb-zwei {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .pg-kb-held {
+    flex-direction: column;
+    padding: 16px;
+  }
+  .pg-kb-held .pg-kb-bild.gross {
+    width: 96px;
+    height: 96px;
+  }
+  .pg-kb-raster {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -10,7 +10,7 @@ import { altersbandFest, dateiname, istBlattSchritt, pdfOeffnen, tagsVon, textDa
 import { LAYOUT_FUER_STUFE, heuteIso, kindWort } from './texte'
 import { aktuellerNutzer } from '../../lib/nutzer'
 
-export type Ansicht = 'start' | 'wissen' | 'ohnekind' | 'gruendlich' | 'schnell' | 'leicht' | 'ergebnis' | 'vorschau' | 'baukasten' | 'gelernt' | 'praxis'
+export type Ansicht = 'start' | 'wissen' | 'ohnekind' | 'gruendlich' | 'schnell' | 'leicht' | 'ergebnis' | 'vorschau' | 'baukasten' | 'gelernt' | 'praxis' | 'kurse'
 
 /** Korrekturen aus „Das weiß ich schon“ (bleiben beim Kind, d.passgenau.kind.korrekturen) */
 export interface Korrekturen {
@@ -66,7 +66,7 @@ type ProfilRoh = hub.ProfilVomHub
 
 // --- Verlauf, Entwurf, Speicherstand --------------------------------------------------------------------------
 
-const ANSICHTEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schnell', 'leicht', 'ergebnis', 'vorschau', 'baukasten', 'gelernt', 'praxis']
+const ANSICHTEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schnell', 'leicht', 'ergebnis', 'vorschau', 'baukasten', 'gelernt', 'praxis', 'kurse']
 
 /** Ansicht aus `#passgenau/<ansicht>`. Der Start-Hash des CDSE-Hubs (`#passgenau=<ref>&weg=…`) enthält ein „=“ und ist hier nie gemeint. */
 export function ansichtAusHash(hash: string): Ansicht | null {
@@ -286,7 +286,8 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
         setAnsichtZustand(a === 'ohnekind' ? 'start' : a)
       } else {
         setRoh(null)
-        setAnsichtZustand('ohnekind')
+        // die Kurs-Bibliothek geht auch ohne Kind (Reiter „Kurse“ der Toolbox: #passgenau/kurse)
+        setAnsichtZustand(ansichtAusHash(window.location.hash) === 'kurse' ? 'kurse' : 'ohnekind')
       }
       setStatus('bereit')
     }
@@ -345,7 +346,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
           setStartZiel(startHash?.ziel ?? null)
           fertig = true
           setStatus('bereit')
-          setAnsichtZustand(startHash?.weg ?? 'start')
+          setAnsichtZustand(startHash?.weg ?? (ansichtAusHash(window.location.hash) === 'kurse' ? 'kurse' : 'start'))
           if ((p.achtung?.length || p.vorsicht.includes('heikel')) && startHash?.weg !== 'leicht') setDlg(null)
         } catch (e) {
           if (aus) return
@@ -661,6 +662,24 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       /* Verlauf gesperrt (z. B. file:// in manchen Browsern): dann gibt es nur keine Einträge */
     }
   }, [aktiv, status, ansicht, mitHubLink])
+  // Reiter „Kurse“ der Toolbox (#passgenau/kurse): beim Wechsel in Passgenau die Ansicht aus der Adresse übernehmen; die
+  // Toolbox erfährt jede Ansicht (für den aktiven Reiter)
+  useEffect(() => {
+    if (!aktiv) return
+    const a = ansichtAusHash(window.location.hash)
+    if (a === 'kurse' && ansichtAktuell.current !== 'kurse') setAnsichtZustand('kurse')
+  }, [aktiv])
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent('passgenau-ansicht', { detail: ansicht }))
+  }, [ansicht])
+  useEffect(() => {
+    const oeffnen = (e: Event) => {
+      const a = (e as CustomEvent<Ansicht>).detail
+      if (ANSICHTEN.includes(a)) setAnsichtZustand(a)
+    }
+    window.addEventListener('passgenau-oeffnen', oeffnen)
+    return () => window.removeEventListener('passgenau-oeffnen', oeffnen)
+  }, [])
   useEffect(() => {
     if (!aktiv) return
     const zurueckVor = (e: PopStateEvent) => {

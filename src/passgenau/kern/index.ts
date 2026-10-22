@@ -43,3 +43,9 @@ export async function pdfFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache
   const m = await loadPdfModule()
   return (await m.passgenauPdf({ folge: daten })).blob
 }
+/** Kurs-Bibliothek (22.10.2026) */
+export { kursListe, kursThema, KURS_THEMEN } from './kurse'
+export type { KursInfo, KursSitzung } from './kurse'
+/** Unterrichtsformen (22.10.2026) */
+export { FORMEN, formVon } from './formen'
+export type { Unterrichtsform, FormId } from './formen'

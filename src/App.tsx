@@ -25,7 +25,7 @@ import { normaliseEldibCode } from './lib/deeplink'
 import { kursFrei } from './lib/nutzer'
 
 type Seite = 'blaetter' | 'kurs' | 'einheiten' | 'team' | 'passgenau'
-type ReiterId = 'passgenau' | 'bibliothek' | 'kurs' | 'team'
+type ReiterId = 'passgenau' | 'kurse' | 'bibliothek' | 'kurs' | 'team'
 
 /** Name der Seite – für Dokumenttitel und Menü */
 const SEITENNAME: Record<Seite, string> = {
@@ -148,6 +148,14 @@ export default function App() {
     return aus
   }, [])
 
+  // welche Ansicht Passgenau zeigt (Reiter „Kurse“ ist Passgenau mit der Ansicht „kurse“)
+  const [pgAnsicht, setPgAnsicht] = useState<string>('')
+  useEffect(() => {
+    const merken = (e: Event) => setPgAnsicht(String((e as CustomEvent<string>).detail))
+    window.addEventListener('passgenau-ansicht', merken)
+    return () => window.removeEventListener('passgenau-ansicht', merken)
+  }, [])
+
   // Links vom Hub (oder zurück/vor im Browser)
   useEffect(() => {
     function onHash(e: HashChangeEvent) {
@@ -247,12 +255,31 @@ export default function App() {
   const kurs = kursFrei()
   const reiter: { id: ReiterId; name: string; zusatz?: string; icon: IconName; n?: number }[] = [
     { id: 'passgenau', name: 'Stunde planen', zusatz: 'Passgenau', icon: 'compass' },
+    // Kurs-Bibliothek (22.10.2026): liegt in Passgenau (#passgenau/kurse), damit „Kurs starten“ das Kind kennt
+    { id: 'kurse', name: 'Kurse', icon: 'layers' },
     { id: 'bibliothek', name: 'Blätter', icon: 'book' },
-    ...(kurs ? [{ id: 'kurs' as const, name: 'Kurs', icon: 'stairs' as const }] : []),
+    // „Skills“ statt „Kurs“: neben dem Reiter „Kurse“ (Kurs-Bibliothek) sonst verwechselbar
+    ...(kurs ? [{ id: 'kurs' as const, name: 'Skills', icon: 'stairs' as const }] : []),
     { id: 'team', name: 'Team', icon: 'folder', n: teamMaterial.length },
   ]
-  const aktivReiter: ReiterId = seite === 'blaetter' || seite === 'einheiten' ? 'bibliothek' : seite
-  const waehle = (id: ReiterId) => wechseln(id === 'bibliothek' ? letzteBib.current : id)
+  const aktivReiter: ReiterId = seite === 'blaetter' || seite === 'einheiten' ? 'bibliothek' : seite === 'passgenau' && pgAnsicht === 'kurse' ? 'kurse' : seite
+  const waehle = (id: ReiterId) => {
+    if (id === 'kurse') {
+      // ohne hashchange: ein neuer Start-Hash würde Passgenau neu starten (und das Kind aus dem Hub verlieren)
+      neuerEintrag('#passgenau/kurse')
+      setSeite('passgenau')
+      setPgStart((alt) => alt ?? startAusHash('#passgenau'))
+      window.dispatchEvent(new CustomEvent('passgenau-oeffnen', { detail: 'kurse' }))
+      window.scrollTo({ top: 0 })
+      setMenue(false)
+      return
+    }
+    if (id === 'passgenau' && seite === 'passgenau' && pgAnsicht === 'kurse') {
+      window.dispatchEvent(new CustomEvent('passgenau-oeffnen', { detail: 'start' }))
+      return
+    }
+    wechseln(id === 'bibliothek' ? letzteBib.current : id)
+  }
   const inBibliothek = seite === 'blaetter' || seite === 'einheiten'
 
   const knoepfe = (mitZusatz: boolean) =>

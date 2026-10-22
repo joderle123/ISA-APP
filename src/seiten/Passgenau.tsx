@@ -22,6 +22,7 @@ import { Alternativen } from '../passgenau/ui/Alternativen'
 import { Nachher } from '../passgenau/ui/Nachher'
 import { Gelernt } from '../passgenau/ui/Gelernt'
 import { Kuratieren, Melden, Praxis, Teilen, Uebernehmen } from '../passgenau/ui/Praxis'
+import { Kurse } from '../passgenau/ui/Kurse'
 
 const PLANEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schnell', 'leicht', 'ergebnis', 'vorschau', 'baukasten']
 
@@ -32,6 +33,7 @@ function Kopfzeile() {
   // Die Vorlieben und die Hilfe brauchst du nie beim Planen: sie liegen unter „Einstellungen“ (das „Mehr“ im Ergebnis ist ein anderes Menü).
   const reiter: [Ansicht, string, string][] = [
     ['start', 'Planen', 'ziel'],
+    ['kurse', 'Kurse', 'buch'],
     ...(pg.schalter.teilen && pg.hubDa ? ([['praxis', 'Aus der Praxis', 'gruppe']] as [Ansicht, string, string][]) : []),
   ]
   const aktiv = (a: Ansicht) => (a === 'start' ? PLANEN.includes(pg.ansicht) : pg.ansicht === a)
@@ -128,7 +130,7 @@ function Inhalt() {
         <p className="pg-lead">Im CDSE-Hub ist Passgenau abgeschaltet (Einstellung der Verwaltung). Alle anderen Bereiche der Toolbox stehen wie gewohnt bereit.</p>
       </div>
     )
-  const a = pg.profil ? pg.ansicht : pg.ansicht === 'praxis' || pg.ansicht === 'gelernt' ? pg.ansicht : 'ohnekind'
+  const a = pg.profil ? pg.ansicht : pg.ansicht === 'praxis' || pg.ansicht === 'gelernt' || pg.ansicht === 'kurse' ? pg.ansicht : 'ohnekind'
   const d = pg.dlg
   return (
     <>
@@ -143,6 +145,7 @@ function Inhalt() {
       {pg.profil && pg.plan && a === 'baukasten' && <Baukasten />}
       {a === 'gelernt' && <Gelernt />}
       {a === 'praxis' && <Praxis />}
+      {a === 'kurse' && <Kurse />}
       {d?.art === 'ersetzen' && pg.plan && pg.profil && <Alternativen ort={d.ort} />}
       {d?.art === 'nachher' && pg.plan && pg.profil && <Nachher nr={d.nr} />}
       {d?.art === 'teilen' && pg.plan && pg.profil && <Teilen />}

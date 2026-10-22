@@ -286,6 +286,8 @@ export interface Auftrag {
   ort?: ('turnhalle' | 'draussen' | 'kueche')[]
   /** Unterrichtsform (Planen nach Aktivität, 22.10.2026; kern/formen.ts): bestimmt Ablauf und Kern der Stunde */
   form?: string
+  /** Einzelkurs aus der Kurs-Bibliothek („kurs-medien-13-16“): die Folge nimmt genau diesen Kurs */
+  kurs?: string
   /** „Worum soll es heute gehen?“ (T-M5, S2): Themen-Schlüssel wie material.js und/oder 'kompetenz:<Feld>' – bei dünnen
    *  Daten statt eines Ziels, sonst als Schwerpunkt für Kern und Blatt */
   thema?: string[]
