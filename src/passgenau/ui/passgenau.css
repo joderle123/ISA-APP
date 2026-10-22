@@ -5062,3 +5062,127 @@ p.pg-kb-tausch {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* ==== Hilfen & Material je Übung (22.10.2026) ==== */
+.pg-hb {
+  margin-top: 10px;
+}
+.pg-hb-haken {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 0 0 8px;
+  padding: 8px 12px;
+  border-radius: var(--r-md);
+  background: #fff6e6;
+  border: 1px solid #f0d7a4;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: #6b4a0c;
+}
+.pg-hb-haken .ic {
+  flex: none;
+  margin-top: 2px;
+}
+.pg-hb-kopf {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 44px;
+  padding: 6px 12px;
+  border: 1px dashed var(--rm, var(--line));
+  border-radius: var(--r-md);
+  background: var(--rz, var(--surface-2));
+  font: inherit;
+  font-size: var(--fs-sm);
+  text-align: left;
+  cursor: pointer;
+  color: var(--ink-2);
+}
+.pg-hb-kopf b {
+  color: var(--rf, var(--ink));
+  white-space: nowrap;
+}
+.pg-hb-kopf span {
+  flex: 1;
+  min-width: 0;
+  color: var(--muted);
+}
+.pg-hb-inhalt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px 18px;
+  margin-top: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.pg-hb-inhalt h4 {
+  margin: 0 0 6px;
+  font-size: var(--fs-xs);
+  font-weight: 750;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--rf, var(--muted));
+}
+.pg-hb-inhalt p,
+.pg-hb-inhalt li,
+.pg-hb-inhalt dd {
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+}
+.pg-hb-inhalt p {
+  margin: 4px 0 0;
+}
+.pg-hb-inhalt ul,
+.pg-hb-inhalt ol {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+}
+.pg-hb-check {
+  list-style: none;
+  padding-left: 0 !important;
+}
+.pg-hb-check label {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  min-height: 32px;
+  cursor: pointer;
+}
+.pg-hb-check input {
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  flex: none;
+  accent-color: #1d6b3a;
+}
+.pg-hb-check label.hab {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+.pg-hb-karten {
+  margin-bottom: 8px;
+}
+.pg-hb-karten b {
+  font-size: var(--fs-sm);
+}
+.pg-hb-dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+  margin: 0;
+}
+.pg-hb-dl dt {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--muted);
+  padding-top: 2px;
+}
+.pg-hb-dl dd {
+  margin: 0;
+}

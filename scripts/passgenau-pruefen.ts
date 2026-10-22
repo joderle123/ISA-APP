@@ -149,7 +149,26 @@ regel(15, 'sprache.fr ohne französischen Text', 'fehler', [
         if (!k.eintraege.has(id)) f.push(`${id}: ergänzter Schritt nicht im Katalog`)
         continue
       }
-      if (!/^(fb|r|pa|j|ki|th):[a-z0-9-]+$/.test(id)) f.push(`${d}: Id „${id}“`)
+      // fo:<paket>:<n> – Form-Stunden (Planen nach Unterrichtsform): Teile eines Pakets halten über quelleEinheit zusammen
+      if (!/^(fb|r|pa|j|ki|th):[a-z0-9-]+$/.test(id) && !/^fo:[a-z0-9-]+:\d+$/.test(id)) f.push(`${d}: Id „${id}“`)
+      // Hilfestellungen (22.10.2026): Form und Längen, nur https-Links
+      const hi = x.hilfen as { de?: Record<string, unknown>; fr?: Record<string, unknown> } | undefined
+      if (hi) {
+        if (!hi.de) f.push(`${id}: hilfen ohne de`)
+        for (const [sp, h] of Object.entries(hi)) {
+          if (!h) continue
+          const liste = (k2: string, max: number, len: number) => {
+            const v = h[k2]
+            if (v === undefined) return
+            if (!Array.isArray(v) || v.length > max || v.some((t) => typeof t !== 'string' || !t.trim() || t.length > len)) f.push(`${id}: hilfen.${sp}.${k2} (höchstens ${max} Punkte, je ≤ ${len} Zeichen)`)
+          }
+          liste('vorbereitung', 6, 120)
+          liste('beobachten', 4, 180)
+          for (const k2 of ['haken', 'aufbau', 'leichter', 'schwerer', 'gruppe', 'warum']) if (h[k2] !== undefined && (typeof h[k2] !== 'string' || (h[k2] as string).length > 400)) f.push(`${id}: hilfen.${sp}.${k2} (Text ≤ 400 Zeichen)`)
+          for (const kt of (h.karten as { titel?: string; karten?: string[] }[] | undefined) ?? []) if (!kt.titel || !Array.isArray(kt.karten) || !kt.karten.length || kt.karten.length > 24 || kt.karten.some((t) => typeof t !== 'string' || t.length > 160)) f.push(`${id}: hilfen.${sp}.karten „${kt.titel ?? '?'}“ (1–24 Karten, je ≤ 160 Zeichen)`)
+          for (const l of (h.links as { titel?: string; url?: string }[] | undefined) ?? []) if (!l.titel || !/^https:\/\/[^\s]+$/.test(l.url ?? '')) f.push(`${id}: hilfen.${sp}.links „${l.titel ?? '?'}“ (nur https)`)
+        }
+      }
       // Themen-Rahmen (th:): genau eine Kompetenz, nur zum Thema, ohne Förderziel
       if (id.startsWith('th:') && (!(x.nurZumThema === true) || !Array.isArray(x.kompetenz) || (x.kompetenz as unknown[]).length !== 1 || x.ohneZiel !== true)) f.push(`${id}: Themen-Rahmen braucht nurZumThema, ohneZiel und genau eine Kompetenz`)
       if (!x.titel || !x.text || !Array.isArray(x.rolle) || !(x.rolle as unknown[]).length) f.push(`${id}: titel/text/rolle fehlt`)

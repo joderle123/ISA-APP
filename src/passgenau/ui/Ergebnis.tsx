@@ -11,7 +11,7 @@ import { BlattAnsicht } from './Vorschau'
 import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
 import { PHASE_NAME, ROLLE_NAME, TF_NAME, datumKurz, kindWort, SOZIALFORM_NAME } from './texte'
 import { ergebnisText } from './Start'
-import { AufEinenBlick, MATERIAL_MOTIV as MATERIAL_MOTIV_UI, SagenBlasen, SchrittBild, StundenLeiste, bildFuer, rolleFarbe, type LeistenTeil, type MaterialPunkt } from './Stundenbild'
+import { AufEinenBlick, MATERIAL_MOTIV as MATERIAL_MOTIV_UI, SagenBlasen, SchrittBild, StundenLeiste, bildFuer, rolleFarbe, type LeistenTeil, type MaterialPunkt, HilfenBlock } from './Stundenbild'
 
 function quelleIcon(e?: KatalogEintrag): string {
   if (!e) return 'info'
@@ -208,6 +208,7 @@ function SchrittKarte({ s, i, nr, d, ab }: { s: PlanSchritt; i: number; nr: numb
         {/* „Ritual – bleibt in der Folge gleich“ steht je Ritual-Karte gleich da: einmal in der Legende links reicht */}
         <Warum texte={warumListe(s.warum, wc).filter((t) => !(ritual && /^Ritual – bleibt in der Folge gleich/.test(t)))} />
         {s.hinweis && !(s.warum ?? []).includes(s.hinweis) && <p className="pg-leise pg-klein pg-m0">{s.hinweis}</p>}
+        {e?.typ === 'schritt' && <HilfenBlock h={(p.sprache.blatt === 'fr' ? e.hilfen?.fr : undefined) ?? e.hilfen?.de} />}
         <Hinweise e={e} ohneMaterial />
       </div>
     </article>

@@ -292,3 +292,127 @@ export function SagenBlasen({ sagen, alle, rolle }: { sagen: string[]; alle: boo
     </span>
   )
 }
+
+/** „Hilfen & Material“ einer Übung (22.10.2026): zu, mit einer Zeile, was drin ist; offen nach Abschnitten */
+export function HilfenBlock({ h }: { h?: import('../typen').HilfenText }) {
+  const [offen, setOffen] = useState(false)
+  const [haken, setHaken] = useState<Record<number, boolean>>({})
+  if (!h) return null
+  const teile = [
+    h.vorbereitung?.length ? `Vorbereitung (${h.vorbereitung.length})` : '',
+    h.karten?.length ? `${h.karten.reduce((s, k) => s + k.karten.length, 0)} Karten zum Ausdrucken` : '',
+    h.leichter || h.schwerer || h.gruppe ? 'leichter / schwerer' : '',
+    h.beobachten?.length ? 'woran man Wirkung sieht' : '',
+    h.warum ? 'warum es wirkt' : '',
+    h.links?.length ? `${h.links.length} ${h.links.length === 1 ? 'Link' : 'Links'}` : '',
+  ].filter(Boolean)
+  if (!teile.length && !h.haken && !h.aufbau) return null
+  return (
+    <div className={'pg-hb' + (offen ? ' offen' : '')}>
+      {h.haken && (
+        <p className="pg-hb-haken">
+          <Ic n="blitz" />
+          <span>{h.haken}</span>
+        </p>
+      )}
+      <button type="button" className="pg-hb-kopf" aria-expanded={offen} onClick={() => setOffen(!offen)}>
+        <Ic n="griff" />
+        <b>Hilfen &amp; Material</b>
+        <span>{teile.join(' · ')}</span>
+        <Ic n={offen ? 'auf' : 'ab'} />
+      </button>
+      {offen && (
+        <div className="pg-hb-inhalt">
+          {(h.vorbereitung?.length || h.aufbau) && (
+            <section>
+              <h4>Vorbereitung</h4>
+              {h.vorbereitung?.length ? (
+                <ul className="pg-hb-check">
+                  {h.vorbereitung.map((v, i) => (
+                    <li key={i}>
+                      <label className={haken[i] ? 'hab' : ''}>
+                        <input type="checkbox" checked={!!haken[i]} onChange={(e) => setHaken({ ...haken, [i]: e.target.checked })} />
+                        {v}
+                      </label>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+              {h.aufbau && <p>{h.aufbau}</p>}
+            </section>
+          )}
+          {h.karten?.length ? (
+            <section>
+              <h4>Zum Ausdrucken</h4>
+              {h.karten.map((k) => (
+                <div key={k.titel} className="pg-hb-karten">
+                  <b>{k.titel}</b>
+                  <ol>
+                    {k.karten.map((x, i) => (
+                      <li key={i}>{x}</li>
+                    ))}
+                  </ol>
+                </div>
+              ))}
+            </section>
+          ) : null}
+          {(h.leichter || h.schwerer || h.gruppe) && (
+            <section>
+              <h4>Anpassen</h4>
+              <dl className="pg-hb-dl">
+                {h.leichter && (
+                  <>
+                    <dt>leichter</dt>
+                    <dd>{h.leichter}</dd>
+                  </>
+                )}
+                {h.schwerer && (
+                  <>
+                    <dt>schwerer</dt>
+                    <dd>{h.schwerer}</dd>
+                  </>
+                )}
+                {h.gruppe && (
+                  <>
+                    <dt>mit Gruppe</dt>
+                    <dd>{h.gruppe}</dd>
+                  </>
+                )}
+              </dl>
+            </section>
+          )}
+          {h.beobachten?.length ? (
+            <section>
+              <h4>Woran du siehst, dass es wirkt</h4>
+              <ul>
+                {h.beobachten.map((b, i) => (
+                  <li key={i}>{b}</li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+          {h.warum && (
+            <section>
+              <h4>Warum das wirkt</h4>
+              <p>{h.warum}</p>
+            </section>
+          )}
+          {h.links?.length ? (
+            <section>
+              <h4>Mehr dazu</h4>
+              <ul>
+                {h.links.map((l) => (
+                  <li key={l.url}>
+                    <a href={l.url} target="_blank" rel="noopener noreferrer">
+                      {l.titel}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+        </div>
+      )}
+    </div>
+  )
+}

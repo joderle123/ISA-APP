@@ -88,6 +88,28 @@ export interface MikroBaustein extends KatalogZusatz {
   ohneZiel?: boolean
 }
 
+/** Hilfestellungen einer Übung (22.10.2026: „ein fertiges Produkt, nicht nur, was man sagen soll“) – je Sprache */
+export interface HilfenText {
+  /** der Haken für Kinder und Jugendliche ohne Lust: womit die Übung sie in der ersten Minute holt (ein Satz) */
+  haken?: string
+  /** Vorbereitung als Checkliste (≤ 6 Punkte, je ≤ 90 Zeichen) */
+  vorbereitung?: string[]
+  /** Aufbau: Raum, Sitzordnung, wo was liegt (1–2 Sätze) */
+  aufbau?: string
+  /** Druckmaterial außer dem Blatt (Karten, Szenen, Spielfelder): je Satz ein Titel und die Karten (je ≤ 120 Zeichen) */
+  karten?: { titel: string; karten: string[] }[]
+  /** Differenzierung: leichter, schwerer, mit einer Gruppe */
+  leichter?: string
+  schwerer?: string
+  gruppe?: string
+  /** woran man sieht, dass es wirkt (2–3 beobachtbare Punkte, nah am ELDiB-Ziel) */
+  beobachten?: string[]
+  /** warum das wirkt: der Mechanismus in einem Satz, mit Kurzquelle (Autor, Jahr) */
+  warum?: string
+  /** geprüfte Seiten zum Thema (Luxemburg zuerst), als Link und später als QR-Code */
+  links?: { titel: string; url: string }[]
+}
+
 /** Alltags-Paket einer Übung: Szenen in Du-Form (kurz: Etikett fürs Blatt), Versuch bis zum nächsten Mal, Probe mit erfundener Figur */
 export interface Transfer { szenen: { kurz: string; text: string }[]; versuch: string; probe: string }
 
@@ -169,6 +191,8 @@ export interface Stundenschritt extends KatalogZusatz {
   tagesform?: Tagesform[]
   /** Unterrichtsformen (kern/formen.ts), zu denen der Schritt gehört – ausdrücklich, wo das Format allein es nicht sagt */
   formen?: string[]
+  /** Hilfestellungen (22.10.2026): Vorbereitung, Druckmaterial, Differenzierung, Beobachten, Warum, Links */
+  hilfen?: { de: HilfenText; fr?: HilfenText }
   /** heikel je Schritt (T-M1): nur mit ausdrücklich freigeschaltetem Thema; familie/koerper nach `vorsicht` */
   sensibel?: 'kinderschutz' | 'akut' | 'familie' | 'koerper'
   qualitaet: 'geprueft' | 'entwurf'
