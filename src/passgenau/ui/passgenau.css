@@ -5356,3 +5356,28 @@ p.pg-kb-tausch {
     height: 54px;
   }
 }
+/* Rahmenplan-Bezug (22.10.2026) */
+.pg-rp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+.pg-rp-l {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: help;
+}
+.pg-rp-feld {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  cursor: help;
+}

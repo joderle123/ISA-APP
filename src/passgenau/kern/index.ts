@@ -49,3 +49,5 @@ export type { KursInfo, KursSitzung } from './kurse'
 /** Unterrichtsformen (22.10.2026) */
 export { FORMEN, formVon, formSlots } from './formen'
 export type { Unterrichtsform, FormId } from './formen'
+/** Rahmenplan (Luxemburg, 22.10.2026) */
+export { FELDER, felderVon, felderStunde } from './rahmenplan'

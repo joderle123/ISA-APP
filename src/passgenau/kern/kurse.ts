@@ -2,7 +2,9 @@
 // Themen, ich habe sie nie gefunden“. Bisher kamen sie nur still über „Gründlich planen“ in eine Folge (planer.ts kursWahl).
 import HINTERGRUND from '../../data/passgenau/kurs-hintergrund.json'
 import type { Katalog } from './katalog'
-import type { Stundenschritt } from '../typen'
+import type { KatalogEintrag, Stundenschritt } from '../typen'
+import { felderStunde } from './rahmenplan'
+import type { FeldId } from './formen'
 
 type Zwei = { de: string; fr: string }
 
@@ -44,6 +46,8 @@ export interface KursInfo {
   material: string[]
   /** Kern-Ids der ersten Sitzung (für „starten“) */
   erste: string[]
+  /** Handlungsfelder des Nationalen Rahmenplans (Luxemburg) */
+  felder: FeldId[]
 }
 
 type Hintergrund = {
@@ -124,6 +128,7 @@ export function kursListe(k: Katalog): KursInfo[] {
       eldib: [...codes.entries()].sort((a, b) => b[1] - a[1]).map(([c]) => c),
       material: [...new Set(schritte.filter((e) => !e.tausch).flatMap((e) => e.material))],
       erste: schritte.filter((e) => e.linie!.nr === nrs[0] && !e.tausch).map((e) => e.id),
+      felder: felderStunde(schritte.filter((e) => !e.tausch) as unknown as KatalogEintrag[], undefined, [...codes.keys()]).slice(0, 3),
     })
   }
   // Reihenfolge der Themen wie in KURS_THEMEN (Gefühle, Wut, Mut … zuerst), unbekannte dahinter

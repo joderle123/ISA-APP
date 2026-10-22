@@ -299,6 +299,21 @@ function KursSeite({ k, zurueck }: { k: K.KursInfo; zurueck: () => void }) {
             </div>
           )}
           <div className="pg-card">
+            {k.felder.length > 0 && (
+              <>
+                <h3>Nationaler Rahmenplan</h3>
+                <div className="pg-rp pg-mb">
+                  {k.felder.map((id) => {
+                    const f = K.FELDER.find((x) => x.id === id)!
+                    return (
+                      <span key={id} className="pg-rp-feld" style={{ background: f.farbe[1], color: f.farbe[0] }} title={`${f.de} · ${f.fr}`}>
+                        {f.kurz}
+                      </span>
+                    )
+                  })}
+                </div>
+              </>
+            )}
             <h3>ELDiB-Ziele</h3>
             <ul className="pg-kb-liste">
               {k.eldib.slice(0, 5).map((c) => (

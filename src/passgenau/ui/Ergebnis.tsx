@@ -422,6 +422,8 @@ export function Ergebnis() {
     el.classList.add('pg-sb-blink')
     window.setTimeout(() => el.classList.remove('pg-sb-blink'), 1400)
   }
+  // Handlungsfelder des Nationalen Rahmenplans (Rituale und Blatt zählen nicht)
+  const felder = pg.katalog ? K.felderStunde(s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss').map((x) => K.eintrag(pg.katalog!, x.ref)), plan.auftrag?.form, plan.ziele) : []
   const gesichert = !pg.ungespeichert ? (pg.gespeichert[plan.id] ? `gespeichert ${pg.gespeichert[plan.id]}` : pg.dateiZeit[plan.id] ? `als Datei gesichert ${pg.dateiZeit[plan.id]}` : null) : null
 
   return (
@@ -444,6 +446,19 @@ export function Ergebnis() {
             {s.status === 'angepasst' && <Pill art="warn">angepasst nach Sitzung {s.nr - 1}</Pill>}
             {gesichert && <Pill art="ok" icon="check">{gesichert}</Pill>}
           </div>
+          {felder.length > 0 && (
+            <div className="pg-rp" aria-label="Nationaler Rahmenplan: Handlungsfelder dieser Stunde">
+              <span className="pg-rp-l" title="Nationaler Rahmenplan zur non-formalen Bildung (Cadre de référence national)">Rahmenplan</span>
+              {felder.slice(0, 3).map((id) => {
+                const f = K.FELDER.find((x) => x.id === id)!
+                return (
+                  <span key={id} className="pg-rp-feld" style={{ background: f.farbe[1], color: f.farbe[0] }} title={`${f.de} · ${f.fr}`}>
+                    {f.kurz}
+                  </span>
+                )
+              })}
+            </div>
+          )}
         </div>
         <div className="pg-aktionen">
           {/* Vorschau und „Blatt anpassen“ braucht man selten: sie liegen unter „Mehr“. */}
