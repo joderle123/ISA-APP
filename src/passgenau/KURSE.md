@@ -338,6 +338,26 @@ Multisensorik · fachliche Richtigkeit und Belege · Kohärenz der Welt · ferti
 Sprache (kindgerecht, DE und FR gleich gut) · Machbarkeit für eine müde Fachkraft (≤ 10 Min. Vorbereitung, Material aus der
 Grundausstattung).
 
+### 9a. Lehren aus dem Pilot „Hinter dem Feed“ (sechs Kritiker, 22.10.2026)
+
+- **Sicherheitsregeln vollständig, nie halb:** Wer „Beweise sichern (Screenshot)“ schreibt, schreibt im selben Satz die Ausnahme
+  (Nackt- oder intime Bilder nie speichern, weiterleiten oder zeigen – sofort Vertrauensperson, Polizei 113/112, BEE SECURE
+  8002 1234; bei Erpressung nicht zahlen, nicht antworten). Keine Karte lässt den verbotenen Fall durchspielen.
+- **Rollenspiel sicher:** Pausen-Signal und Rollenausstieg („Schüttel die Rolle ab, du bist wieder du“); Betroffenen-Rollen
+  nie in Ich-Form als Standard, lieber Figuren, Stimme oder Regie; für Jugendliche immer eine Alternative zum Spielen allein vor
+  einer Erwachsenen.
+- **Betroffene mitdenken:** ein eigener Schutzplan (wen, wann, auch nachts), Sätze für Vertraulichkeit mit Grenzen, Sätze für
+  den Fall, dass Täter oder Mitläufer im Raum sind.
+- **Machbarkeit:** je Sitzung ein Minutenplan „Muss / Kann“, Gruppenregie für 4–6 (hilfen.gruppe), Vorbereitung wirklich
+  ≤ 10 Minuten, Spielregeln und Material im Kern vollständig, ein Plan B.
+- **Geschichte mit Spuren:** Wer einen „Krimi“ erzählt, verteilt echte Hinweise, die die Kinder selbst finden; die Auflösung
+  kommt aus den Spuren, nicht aus dem Erzähltext. Figuren und Schlüsselmomente erzählen, nie voraussetzen.
+- **Fachlich vorsichtig:** Mechanismen (Feed, Likes, Recht) nicht bis zur Fehlaussage vereinfachen; Rechtliches nur belegt.
+- **Luxemburg echt:** Klassen wie 7G, 5C, Regent·in, Lycée; Chats dürfen mehrsprachig sein (LU/FR/PT/DE); Hilfe Luxemburg zuerst.
+- **Französisch:** Schlüsselsätze (Karten, Werkzeug, Merksätze) von Anfang an französisch denken, nie wörtlich übertragen.
+- **Filterwörter:** auch „papa“, „soirée“, „Video“, „Clip“, „Film“, „Bühne“, „Publikum“, „maillot“, „Figur“ (Körper) lösen Filter
+  aus – vor dem Schreiben Abschnitt 6 und `kern/einzel.ts` ansehen.
+
 ## 10. Katalog Welle 3 (neue Themen, Arbeitstitel)
 
 ELDiB-Codes wählt die Kursarchitektur aus `src/data/passgenau/eldib.json` (2 Hauptziele mit Gewicht 1, 1–2 weitere mit 0.5),
