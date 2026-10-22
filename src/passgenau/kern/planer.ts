@@ -1052,6 +1052,8 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   const formate = new Set<string>()
   const benutzt = new Set<string>(o.gesperrt)
   const hinweise: string[] = []
+  const form = c.weg !== 'leicht' ? formVon(c.a.form) : undefined
+  if (form?.vorher) hinweise.push(form.vorher[c.sprache === 'fr' ? 'fr' : 'de'])
   const ergebnis: (PlanSchritt | null)[] = slots.map(() => null)
   const gewaehlt: { b: Bewertet; slot: Slot; i: number }[] = []
   let kern: KatalogEintrag | undefined
@@ -1180,7 +1182,9 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     // roter Faden: Einstieg und Reflexion aus derselben Einheit wie der Kern bevorzugt
     const kernQuelle = kern ? quelleEinheit(kern.id) : null
     const bevorzugt = new Set(o.bevorzugt ?? [])
-    const auftragK: SlotAuftrag = { rolle: slot.rolle, min: slot.min, phase: o.phase, nr: o.nr, salz: `${salz}|${i}`, gesperrt: benutzt, vorher: o.vorher, formate, vorigerKern: o.kernFormate[o.kernFormate.length - 1], kernFormate: o.kernFormate.slice(-2), fokus: slot.rolle === 'kern' || slot.rolle === 'vertiefung' ? undefined : o.fokus, bevorzugt, themaK: kern?.kompetenz }
+    const auftragK: SlotAuftrag = { rolle: slot.rolle, min: slot.min, phase: o.phase, nr: o.nr, salz: `${salz}|${i}`, gesperrt: benutzt, vorher: o.vorher, formate, vorigerKern: o.kernFormate[o.kernFormate.length - 1], kernFormate: o.kernFormate.slice(-2), fokus: slot.rolle === 'kern' || slot.rolle === 'vertiefung' ? undefined : o.fokus, bevorzugt, themaK: kern?.kompetenz,
+      // Unterrichtsform: der Kern (und Station 2) nur aus Schritten der Form, die übrigen Teile mit Vorrang
+      ...(form ? { form, formStreng: slot.rolle === 'kern' || slot.rolle === 'vertiefung' } : {}) }
     // Jugend-Folge: zuerst nur Übungen mit dem Ziel der Sitzung (Blind-Bewertung 7: das erste Ziel kam in einer Folge nie vor,
     // weil andere Übungen in der Phase besser passten); gibt es keine, wie bisher
     let mitZielCode = slot.rolle === 'kern' && o.kernZiel ? kandidaten(c, { ...auftragK, zielCode: o.kernZiel }).filter((w) => kuratiert(c, w.b.e.id) || w.locker < 3) : []
@@ -1194,7 +1198,12 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
           break
         }
       }
-    const liste = mitZielCode.length ? mitZielCode : kandidaten(c, auftragK)
+    let liste = mitZielCode.length ? mitZielCode : kandidaten(c, auftragK)
+    // keine passende Übung in der Form: die beste andere (mit Vorrang für die Form) – und sagen, dass es so ist
+    if (!liste.length && auftragK.formStreng) {
+      liste = kandidaten(c, { ...auftragK, formStreng: false })
+      if (liste.length && form) hinweise.push(`Für „${form.name.de}“ gibt es zu diesem Ziel noch keine fertige Übung – ${slot.rolle === 'kern' ? 'der Kern' : 'ein Teil'} ist in einer anderen Form.`)
+    }
     let auswahl = liste
     // roter Faden der Folge: ein Kern, der Ziel-Code oder Thema mit den Kernen davor teilt, zählt mehr
     if (slot.rolle === 'kern' && (o.fruehereKerne ?? []).length) {
@@ -1464,6 +1473,8 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       } else ergebnis[blattIndex] = null
     }
   }
+  // Unterrichtsform: die Abschnitte heißen wie im Bogen der Form („Forscherfrage“, „Versuch“ …)
+  if (form) slots.forEach((sl, i) => { if (sl.name && ergebnis[i] && sl.rolle !== 'ankommen' && sl.rolle !== 'abschluss') ergebnis[i]!.etikett = sl.name })
   const schritte = ergebnis.filter((x): x is PlanSchritt => !!x)
   // Einzelkurs ohne eigenen Einstieg (Vorschule, Rückblick-Sitzung): der Auftrag vom letzten Blatt steht vor dem Kern
   // (Referenzmessung 16.10.: „der Plan aus Stunde 5 wird in Stunde 6 nicht nachgefragt“)
@@ -1669,6 +1680,9 @@ function planTitel(c: Kontext): string {
   }
   // Gruppe (Aufgabe 151): „Gruppenstunde“ statt „Einzelstunde“
   const gr = (c.a.sozialform ?? 'einzeln') !== 'einzeln'
+  // Unterrichtsform: „Experiment: Gefühle erkennen“
+  const fo = c.weg !== 'leicht' ? formVon(c.a.form) : undefined
+  if (fo) return `${fo.name[c.sprache === 'fr' ? 'fr' : 'de']}: ${planTitelEinzeln(c).replace(/^(Einzelstunde|Séance individuelle)\s*:\s*/, '')}`
   const t0 = planTitelEinzeln(c)
   if (!gr) return t0
   return t0.replace(/^Einzelstunde/, 'Gruppenstunde').replace(/^Séance individuelle/, 'Séance en groupe').replace(/^Beziehungszeit$/, 'Zeit zusammen').replace(/^Temps relationnel$/, 'Temps ensemble')

@@ -127,6 +127,7 @@ function SchrittKarte({ s, i, nr, d, ab }: { s: PlanSchritt; i: number; nr: numb
       <button type="button" className="pg-schritt-haupt" onClick={oeffnen} aria-label={`${RolleLabel(s.rolle)}: ${titel}, ${s.min} Minuten – antippen zum Tauschen`}>
         <span className="zeile1">
           <RolleBadge rolle={s.rolle} />
+          {s.etikett && <span className="pg-fo-etikett">{s.etikett.de}</span>}
           {/* Die Quelle nur, wenn sie etwas Neues sagt: nicht noch einmal die Rolle („Einstieg“) und nicht „Ritual“ (steht als Pille daneben) */}
           {tx?.quelle && tx.quelle !== ROLLE_NAME[s.rolle] && !(ritual && tx.quelle === 'Ritual') && (
             <span className="pg-quelle">
@@ -405,7 +406,7 @@ export function Ergebnis() {
     const e = pg.katalog ? K.eintrag(pg.katalog, x.ref) : undefined
     const bl = istBlattSchritt(x)
     const titel = bl ? `Blatt „${s.blatt?.titel ?? ''}“` : e ? K.textVon(e, p.sprache.blatt).titel : (x.t ?? '')
-    return { rolle: bl ? 'blatt' : x.rolle, min: x.min, titel, bild: bl ? 'motiv:stift' : bildFuer(e, titel, x.rolle) }
+    return { rolle: bl ? 'blatt' : x.rolle, min: x.min, titel, bild: bl ? 'motiv:stift' : bildFuer(e, titel, x.rolle), name: x.etikett?.de }
   })
   const materialPunkte: MaterialPunkt[] = []
   for (const x of s.schritte) {

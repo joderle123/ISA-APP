@@ -6,6 +6,7 @@ import { hash01, layoutAusStufe, norm, stufeAusAlter, stufenAbstand, tageZwische
 import { intern, eldibKurz, eldibStufe, merkmaleVon, type Katalog } from './katalog'
 import { kaltstart, V, vorliebe, type Vorlieben } from './vorlieben'
 import { FORMAT_NAME, INTERESSEN, KOMPETENZ_NAME, TAGESFORM_FORMATE, TAGESFORM_NAME, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
+import { formVon } from './formen'
 
 /** Gewichte der Bewertung (5.3) – Version V1; eine Änderung bekommt eine neue Version. */
 export const GEWICHTE_V1: Record<string, number> = {
@@ -162,6 +163,15 @@ function zugangBeschreibung(p: Profil): string {
 
 /** Material, das nicht jede Einrichtung hat – nur in Weg 1 (5.2, P S11). */
 const NICHT_STANDARD = new Set(['beamer', 'ipad', 'matten', 'schwungtuch', 'kueche', 'lochzange', 'wolle', 'klangschale'])
+const FORM_MATERIAL = new WeakMap<Kontext, Set<string>>()
+function formMaterial(c: Kontext): Set<string> {
+  let m = FORM_MATERIAL.get(c)
+  if (!m) {
+    m = new Set([...(formVon(c.a.form)?.material ?? []), ...((c.a.ort ?? []).includes('kueche') ? ['kueche'] : [])])
+    FORM_MATERIAL.set(c, m)
+  }
+  return m
+}
 
 export interface Pruefung {
   /** 0 streng · 1 Nachbarphase · 2 Ziel ±2 · 3 Sperrfrist halbiert · 4 wie 3 (Gruppenschritte ohne Einzelvariante sind seit der Beschriftung hart ausgeschlossen) */
@@ -249,7 +259,7 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     // Stunde (Kurs-Prüfung 16.10.: „Spielplatz“ und „jeden Tag“ warfen Kurs-Sitzungen aus dem Plan) – Vorsicht gilt weiter
     const kursText = e.typ === 'schritt' && (!!e.linie?.id.startsWith('kurs-') || !!e.kurs)
     if (tm.has('draussen') && !kursText && !(c.a.ort ?? []).includes('draussen')) return 'Ort'
-    if (tm.has('kueche')) return 'Küche'
+    if (tm.has('kueche') && c.a.form !== 'kochen' && !(c.a.ort ?? []).includes('kueche')) return 'Küche'
     if (tm.has('gaeste')) return 'Gäste'
     // (eine Übung mit eigenem Blatt darf darauf verweisen: „Aufgabe 1 und 2 des Blatts gemeinsam“ – Kurs-Pilot 16.10.)
     if (tm.has('blattverweis') && e.typ === 'schritt' && !e.uebungsblatt) return 'Blatt der Quelle'
@@ -348,7 +358,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   if (vo?.eldib?.some((x) => !c.p.erreicht.includes(x) && !c.ziele.some((z) => z.code === x))) return 'Voraussetzung'
   // Ort und Material
   if (e.typ === 'schritt' && e.ort && e.ort !== 'raum' && !(c.a.ort ?? []).includes(e.ort)) return 'Ort'
-  if (c.weg !== 'gruendlich' && e.material.some((x) => NICHT_STANDARD.has(x))) return 'Material'
+  // Unterrichtsform: was die Form mitbringt (Kochen: Küche, Ruhe: Klangschale, Medien: Tablet) ist da
+  if (c.weg !== 'gruendlich' && e.material.some((x) => NICHT_STANDARD.has(x) && !formMaterial(c).has(x))) return 'Material'
   // schon gemacht
   if (!o.ritual) {
     const f = locker >= 3 ? 0.5 : 1

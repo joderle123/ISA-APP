@@ -159,6 +159,8 @@ export interface LeistenTeil {
   min: number
   titel: string
   bild: string
+  /** Name des Abschnitts einer Unterrichtsform („Versuch“) statt des Rollennamens */
+  name?: string
 }
 
 /** Zeitleiste der Stunde: jede Phase so breit wie ihre Minuten, ein Klick springt zur Karte */
@@ -172,7 +174,7 @@ export function StundenLeiste({ teile, onSprung }: { teile: LeistenTeil[]; onSpr
           const start = ab
           ab += t.min
           const f = rolleFarbe(t.rolle)
-          const name = ROLLE_NAME[t.rolle as keyof typeof ROLLE_NAME] ?? (t.rolle === 'blatt' ? 'Blatt' : t.rolle)
+          const name = t.name ?? ROLLE_NAME[t.rolle as keyof typeof ROLLE_NAME] ?? (t.rolle === 'blatt' ? 'Blatt' : t.rolle)
           return (
             <button
               key={i}

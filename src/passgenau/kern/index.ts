@@ -47,5 +47,5 @@ export async function pdfFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache
 export { kursListe, kursThema, KURS_THEMEN } from './kurse'
 export type { KursInfo, KursSitzung } from './kurse'
 /** Unterrichtsformen (22.10.2026) */
-export { FORMEN, formVon } from './formen'
+export { FORMEN, formVon, formSlots } from './formen'
 export type { Unterrichtsform, FormId } from './formen'

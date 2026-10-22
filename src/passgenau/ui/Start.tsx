@@ -181,6 +181,7 @@ export function Start() {
         <Weg titel="Gründlich planen" farbe={['#ECEEFA', '#2E3A9C']} icon="liste" text="Ziele, Anzahl Sitzungen und Dauer – eine aufbauende Folge mit Blättern." punkte={['Bogen: wahrnehmen → üben → übertragen', 'gleiche Rituale, wechselnde Inhalte', 'jede Sitzung mit eigenem Blatt']} onClick={() => pg.setAnsicht('gruendlich')} />
         <Weg titel="Schnell für heute" farbe={['#FDF3E7', '#9A4F0B']} icon="blitz" text="Drei Regler für heute, ein Klick – fertige Stunde mit Blatt." punkte={['Energie, Konzentration, Stimmung', f ? 'nächster Schritt der laufenden Folge' : 'wichtigstes Ziel zuerst', 'sofort als PDF']} onClick={() => pg.setAnsicht('schnell')} />
         <Weg titel="Heute geht nicht viel" farbe={['#EAF2E7', '#3F6E3A']} icon="herz" text="Spiele, Bewegung, Kreatives, Beziehung – bewusst ohne Förderziel." punkte={[`ein Klick: Wie ist ${k.nom} heute?`, 'Wahlkarte statt Befragung', 'Mitmach-Seite zum Drucken']} onClick={() => pg.setAnsicht('leicht')} />
+        <Weg titel="Nach Aktivität" farbe={['#F6E7F0', '#8E3B6E']} icon="stern" text="Experiment, Theater, Kochen, Draußen … – du wählst, was ihr macht." punkte={['16 Formen zum Antippen', 'zum Förderziel oder zu einem Thema', 'Ablauf passend zur Form']} onClick={() => pg.setAnsicht('form')} />
       </div>
       <KursHinweis />
       <div className={'pg-zwei' + (zweiteKarte ? '' : ' eine')}>

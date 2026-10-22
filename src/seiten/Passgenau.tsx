@@ -23,8 +23,9 @@ import { Nachher } from '../passgenau/ui/Nachher'
 import { Gelernt } from '../passgenau/ui/Gelernt'
 import { Kuratieren, Melden, Praxis, Teilen, Uebernehmen } from '../passgenau/ui/Praxis'
 import { Kurse } from '../passgenau/ui/Kurse'
+import { Formen } from '../passgenau/ui/Formen'
 
-const PLANEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schnell', 'leicht', 'ergebnis', 'vorschau', 'baukasten']
+const PLANEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schnell', 'leicht', 'form', 'ergebnis', 'vorschau', 'baukasten']
 
 function Kopfzeile() {
   const pg = usePg()
@@ -140,6 +141,7 @@ function Inhalt() {
       {pg.profil && a === 'gruendlich' && <Gruendlich />}
       {pg.profil && a === 'schnell' && <Schnell />}
       {pg.profil && a === 'leicht' && <Leicht />}
+      {pg.profil && a === 'form' && <Formen />}
       {pg.profil && pg.plan && a === 'ergebnis' && <Ergebnis />}
       {pg.profil && pg.plan && a === 'vorschau' && <Vorschau />}
       {pg.profil && pg.plan && a === 'baukasten' && <Baukasten />}

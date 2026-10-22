@@ -10,7 +10,7 @@ import { altersbandFest, dateiname, istBlattSchritt, pdfOeffnen, tagsVon, textDa
 import { LAYOUT_FUER_STUFE, heuteIso, kindWort } from './texte'
 import { aktuellerNutzer } from '../../lib/nutzer'
 
-export type Ansicht = 'start' | 'wissen' | 'ohnekind' | 'gruendlich' | 'schnell' | 'leicht' | 'ergebnis' | 'vorschau' | 'baukasten' | 'gelernt' | 'praxis' | 'kurse'
+export type Ansicht = 'start' | 'wissen' | 'ohnekind' | 'gruendlich' | 'schnell' | 'leicht' | 'ergebnis' | 'vorschau' | 'baukasten' | 'gelernt' | 'praxis' | 'kurse' | 'form'
 
 /** Korrekturen aus „Das weiß ich schon“ (bleiben beim Kind, d.passgenau.kind.korrekturen) */
 export interface Korrekturen {
@@ -66,7 +66,7 @@ type ProfilRoh = hub.ProfilVomHub
 
 // --- Verlauf, Entwurf, Speicherstand --------------------------------------------------------------------------
 
-const ANSICHTEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schnell', 'leicht', 'ergebnis', 'vorschau', 'baukasten', 'gelernt', 'praxis', 'kurse']
+const ANSICHTEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schnell', 'leicht', 'ergebnis', 'vorschau', 'baukasten', 'gelernt', 'praxis', 'kurse', 'form']
 
 /** Ansicht aus `#passgenau/<ansicht>`. Der Start-Hash des CDSE-Hubs (`#passgenau=<ref>&weg=…`) enthält ein „=“ und ist hier nie gemeint. */
 export function ansichtAusHash(hash: string): Ansicht | null {
