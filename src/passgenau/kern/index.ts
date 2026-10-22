@@ -21,6 +21,9 @@ export { rueckmelden, gelernt, zuruecksetzen } from './vorlieben'
 export { notizText, schrittTitel, BEOBACHTUNG_CHIPS } from './notiz'
 export { fuerTeam, uebernehmen, vorlageZurueckgezogen } from './team'
 export { GEWICHTE_V1 } from './regeln'
+/** Druckdaten einer Sitzung auch für den Bildschirm (Stundenbild, 22.10.2026): dieselben Texte wie im PDF */
+export { druckSitzung }
+export type { DruckSitzung, DruckSchritt } from './druck'
 
 /** PDF einer Sitzung: Planblatt (+ Blatt des Kindes, + Karten). Das PDF-Modul wird erst hier nachgeladen. */
 export async function pdfSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt: { sprache: Sprache; warum: boolean; karten: boolean }): Promise<Blob> {

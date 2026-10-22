@@ -1,7 +1,7 @@
 // Passgenau – Ergebnis (2.6): Folge-Leiste, Ablauf mit Rolle/Minuten/Quelle/Warum, Blatt als Liste und A4,
 // antippen → Alternativen, Daumen, ganze Sitzung tauschen, Speichern/PDF/Vorlage/Baukasten.
 import { planGruende } from './warum'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import type { KatalogEintrag, Plan, PlanSchritt } from '../typen'
 import * as K from './kern'
 import { teilenErlaubt, usePg, useProfil, type Ort } from './zustand'
@@ -11,6 +11,7 @@ import { BlattAnsicht } from './Vorschau'
 import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
 import { PHASE_NAME, ROLLE_NAME, TF_NAME, datumKurz, kindWort, SOZIALFORM_NAME } from './texte'
 import { ergebnisText } from './Start'
+import { AufEinenBlick, MATERIAL_MOTIV as MATERIAL_MOTIV_UI, SagenBlasen, SchrittBild, StundenLeiste, bildFuer, rolleFarbe, type LeistenTeil, type MaterialPunkt } from './Stundenbild'
 
 function quelleIcon(e?: KatalogEintrag): string {
   if (!e) return 'info'
@@ -18,7 +19,7 @@ function quelleIcon(e?: KatalogEintrag): string {
   return e.quelle.art === 'kurs' || e.quelle.art === 'foerderfach' ? 'gruppe' : e.quelle.art === 'ritual' ? 'stern' : e.quelle.art === 'freude' ? 'herz' : 'feder'
 }
 
-function Hinweise({ e }: { e?: KatalogEintrag }) {
+function Hinweise({ e, ohneMaterial }: { e?: KatalogEintrag; ohneMaterial?: boolean }) {
   const pg = usePg()
   const p = useProfil()
   const [offen, setOffen] = useState(false)
@@ -26,7 +27,7 @@ function Hinweise({ e }: { e?: KatalogEintrag }) {
   const x = e as KatalogEintrag & { achtung?: string; vorbereitung?: string; elternbrief?: string }
   const druck = e.typ === 'schritt' ? e.blatt ?? [] : []
   // Der Katalog führt Schlüssel („handpuppe“, „wuerfel“); lesbar wie im PDF
-  const material = e.typ === 'schritt' ? e.material.map((m) => (pg.katalog ? K.materialName(pg.katalog, m, p.sprache.blatt) : m)) : []
+  const material = e.typ === 'schritt' && !ohneMaterial ? e.material.map((m) => (pg.katalog ? K.materialName(pg.katalog, m, p.sprache.blatt) : m)) : []
   if (!x.achtung && !x.vorbereitung && !x.elternbrief && !druck.length && !material.length) return null
   const lang = (x.achtung?.length ?? 0) > 140
   return (
@@ -70,7 +71,7 @@ function Hinweise({ e }: { e?: KatalogEintrag }) {
   )
 }
 
-function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
+function SchrittKarte({ s, i, nr, d, ab }: { s: PlanSchritt; i: number; nr: number; d?: K.DruckSchritt; ab: number }) {
   const pg = usePg()
   const p = useProfil()
   const e = pg.katalog ? K.eintrag(pg.katalog, s.ref) : undefined
@@ -86,6 +87,13 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
   const textRef = useRef<HTMLSpanElement>(null)
   const [textOffen, setTextOffen] = useState(false)
   const gekuerzt = useGekuerzt(textRef, textOffen, tx?.text ?? '')
+  // Stundenbild: Bild, Farbe der Rolle, alle Sätze zum Sagen, „Wenn es kippt“ und das Material als Zeichen
+  const f = rolleFarbe(s.rolle)
+  const farbe = { '--rf': f.tief, '--rm': f.mittel, '--rz': f.zart } as CSSProperties
+  const sagen = d?.sagen?.length ? d.sagen : (tx?.sagen ?? [])
+  const kurz = d?.kurz && tx?.text && !tx.text.trim().startsWith(d.kurz.replace(/…$/, '').trim()) ? d.kurz : undefined
+  const mat = e?.typ === 'schritt' ? e.material.map((m) => ({ k: m, name: pg.katalog ? K.materialName(pg.katalog, m, p.sprache.blatt) : m })) : []
+  const mehrDa = gekuerzt || textOffen || sagen.length > 2
   if (!e)
     return (
       <article className="pg-schritt fehlt">
@@ -109,10 +117,12 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
       </article>
     )
   return (
-    <article className={'pg-schritt' + (s.erkundung ? ' erk' : '') + (textOffen ? ' offen' : '')}>
+    <article id={`pg-sb-k-${i}`} className={'pg-schritt pg-sb' + (s.erkundung ? ' erk' : '') + (textOffen ? ' offen' : '')} style={farbe}>
       <div className="zeit">
         {s.min}
         <small>Min.</small>
+        <SchrittBild id={bildFuer(e, titel, s.rolle)} rolle={s.rolle} />
+        <span className="pg-sb-ab">ab {ab}′</span>
       </div>
       <button type="button" className="pg-schritt-haupt" onClick={oeffnen} aria-label={`${RolleLabel(s.rolle)}: ${titel}, ${s.min} Minuten – antippen zum Tauschen`}>
         <span className="zeile1">
@@ -131,10 +141,11 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
           {ueberarbeitet && <Pill art="warn">überarbeitet</Pill>}
         </span>
         <h3>{titel}</h3>
+        {kurz && <span className="pg-sb-kurz">{kurz}</span>}
         <span ref={textRef} className="text">
           {tx?.text}
         </span>
-        {tx?.sagen?.[0] && <span className="sagen">„{tx.sagen[0]}“</span>}
+        <SagenBlasen sagen={sagen} alle={textOffen} rolle={s.rolle} />
       </button>
       {/* Eine benannte Schaltfläche statt dreier Symbole: „Tauschen“. Die Daumen sind leise und zeigen sich erst beim Darüberfahren
           oder Fokussieren (auf Touch-Geräten immer, aber blass). */}
@@ -146,10 +157,42 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
         <Daumen schluessel={`${pg.plan?.id}:${nr}:s${i}:${s.ref}`} titel={titel} eintrag={e} ort={{ sitzung: nr }} rolle={s.rolle} onErsetzen={oeffnen} erkundung={s.erkundung} />
       </div>
       <div className="unten">
-        {(gekuerzt || textOffen) && (
+        {mehrDa && (
           <button type="button" className="pg-link pg-textmehr" onClick={() => setTextOffen(!textOffen)} aria-expanded={textOffen}>
             {textOffen ? 'Weniger Text' : 'Ganzer Text'}
           </button>
+        )}
+        {(mat.length > 0 || (e.typ === 'schritt' && e.ort && e.ort !== 'raum')) && (
+          <div className="pg-sb-chips" aria-label="Material">
+            {e.typ === 'schritt' && e.ort && e.ort !== 'raum' && (
+              <span className="pg-sb-chip ort">
+                <SchrittBild id={e.ort === 'draussen' ? 'motiv:baum' : 'motiv:turnmatte'} rolle={s.rolle} className="mini" />
+                {e.ort === 'draussen' ? 'draußen' : 'Turnhalle'}
+              </span>
+            )}
+            {mat.map((m) => (
+              <span key={m.k} className="pg-sb-chip">
+                <SchrittBild id={'motiv:' + (MATERIAL_MOTIV_UI[m.k] ?? 'korb')} rolle="abschluss" className="mini" />
+                {m.name}
+              </span>
+            ))}
+          </div>
+        )}
+        {d?.wennEsKippt && (
+          <div className={'pg-sb-kippt' + (textOffen ? ' offen' : '')}>
+            <Ic n="welle" />
+            <span>
+              <b>Wenn es kippt:</b> {d.wennEsKippt}
+            </span>
+          </div>
+        )}
+        {d?.imSpiel && (
+          <div className="pg-sb-imspiel">
+            <Ic n="stern" />
+            <span>
+              <b>Im Spiel üben:</b> {d.imSpiel}
+            </span>
+          </div>
         )}
         {ueberarbeitet && (
           <div className="pg-hinweisbox gelb klein">
@@ -165,7 +208,7 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
         {/* „Ritual – bleibt in der Folge gleich“ steht je Ritual-Karte gleich da: einmal in der Legende links reicht */}
         <Warum texte={warumListe(s.warum, wc).filter((t) => !(ritual && /^Ritual – bleibt in der Folge gleich/.test(t)))} />
         {s.hinweis && !(s.warum ?? []).includes(s.hinweis) && <p className="pg-leise pg-klein pg-m0">{s.hinweis}</p>}
-        <Hinweise e={e} />
+        <Hinweise e={e} ohneMaterial />
       </div>
     </article>
   )
@@ -175,7 +218,7 @@ function RolleLabel(r: string): string {
   return ({ ankommen: 'Ankommen', einstieg: 'Einstieg', kern: 'Kern', uebung: 'Übung', bewegung: 'Bewegung', spiel: 'Spiel', regulation: 'Regulation', reflexion: 'Reflexion', abschluss: 'Abschluss', transfer: 'Transfer' } as Record<string, string>)[r] ?? r
 }
 
-function BlattKarte({ s, nr }: { s: PlanSchritt; nr: number }) {
+function BlattKarte({ s, nr, idx, ab }: { s: PlanSchritt; nr: number; idx?: number; ab?: number }) {
   const pg = usePg()
   const p = useProfil()
   const sitzung = pg.plan!.sitzungen.find((x) => x.nr === nr)!
@@ -185,10 +228,12 @@ function BlattKarte({ s, nr }: { s: PlanSchritt; nr: number }) {
   const quellen = [...new Set(eintraege.map((e) => (e?.typ === 'baustein' ? e.quelle.nr : '')).filter((x) => x && !/^[PWF]-/.test(x)))]
   const arten = bl.bausteine.map((b) => teilText(pg.katalog, b.ref, p.sprache.blatt, b.t).titel)
   return (
-    <article className="pg-schritt blatt">
+    <article id={ab !== undefined ? `pg-sb-k-${idx}` : undefined} className="pg-schritt blatt pg-sb" style={{ '--rf': rolleFarbe('blatt').tief, '--rm': rolleFarbe('blatt').mittel, '--rz': rolleFarbe('blatt').zart } as CSSProperties}>
       <div className="zeit">
         {s.min > 0 ? s.min : '–'}
         <small>{s.min > 0 ? 'Min.' : 'optional'}</small>
+        <SchrittBild id="motiv:stift" rolle="blatt" />
+        {ab !== undefined && s.min > 0 && <span className="pg-sb-ab">ab {ab}′</span>}
       </div>
       <button type="button" className="pg-schritt-haupt" onClick={() => pg.setAnsicht('baukasten')} aria-label={`Blatt „${bl.titel}“ anpassen`}>
         <span className="zeile1">
@@ -311,6 +356,16 @@ export function Ergebnis() {
     const leiste = a?.parentElement
     if (a && leiste && leiste.scrollWidth > leiste.clientWidth + 4) leiste.scrollLeft = a.offsetLeft - leiste.offsetLeft - 8
   }, [pg.si])
+  // Stundenbild: dieselben Druckdaten wie das PDF (Kurzzeile, alle Sätze, „Wenn es kippt“, Ziel, erster Satz, Vorbereitung)
+  const sitzNr = pg.sitzung?.nr
+  const druck = useMemo(() => {
+    if (!plan || !pg.katalog || sitzNr === undefined) return null
+    try {
+      return K.druckSitzung(pg.katalog, p, plan, sitzNr, { sprache: p.sprache.blatt, warum: false })
+    } catch {
+      return null
+    }
+  }, [plan, pg.katalog, sitzNr, p])
   if (!plan || !pg.sitzung) return null
   const s = pg.sitzung
   const leicht = s.phase === 'leicht'
@@ -342,6 +397,29 @@ export function Ergebnis() {
       ? `${plan.titel}${fuer} · Sitzung ${s.nr} von ${plan.n}`
       : `${thema}${fuer} · ${minuten} Min.`
   const eyebrow = leicht ? 'Heute geht nicht viel' : plan.n > 1 ? `Folge · ${PHASE_NAME[s.phase]} · ${minuten} Min.` : `${titelTeile ? titelTeile[1] : 'Stunde'} · ${PHASE_NAME[s.phase]}`
+  // Zeitleiste und Material für „Auf einen Blick“
+  const startMin: number[] = []
+  const leiste: LeistenTeil[] = s.schritte.map((x, i) => {
+    startMin.push(s.schritte.slice(0, i).reduce((a, y) => a + (y.min || 0), 0))
+    const e = pg.katalog ? K.eintrag(pg.katalog, x.ref) : undefined
+    const bl = istBlattSchritt(x)
+    const titel = bl ? `Blatt „${s.blatt?.titel ?? ''}“` : e ? K.textVon(e, p.sprache.blatt).titel : (x.t ?? '')
+    return { rolle: bl ? 'blatt' : x.rolle, min: x.min, titel, bild: bl ? 'motiv:stift' : bildFuer(e, titel, x.rolle) }
+  })
+  const materialPunkte: MaterialPunkt[] = []
+  for (const x of s.schritte) {
+    const e = pg.katalog ? K.eintrag(pg.katalog, x.ref) : undefined
+    if (e?.typ !== 'schritt') continue
+    for (const m of e.material) if (!materialPunkte.some((y) => y.schluessel === m)) materialPunkte.push({ schluessel: m, name: pg.katalog ? K.materialName(pg.katalog, m, p.sprache.blatt) : m })
+  }
+  if (s.blatt && !materialPunkte.some((y) => y.schluessel === 'blatt-druck')) materialPunkte.push({ schluessel: 'blatt-druck', name: `Blatt „${s.blatt.titel}“ ausgedruckt` })
+  const springen = (i: number) => {
+    const el = document.getElementById(`pg-sb-k-${i}`)
+    if (!el) return
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    el.classList.add('pg-sb-blink')
+    window.setTimeout(() => el.classList.remove('pg-sb-blink'), 1400)
+  }
   const gesichert = !pg.ungespeichert ? (pg.gespeichert[plan.id] ? `gespeichert ${pg.gespeichert[plan.id]}` : pg.dateiZeit[plan.id] ? `als Datei gesichert ${pg.dateiZeit[plan.id]}` : null) : null
 
   return (
@@ -417,6 +495,7 @@ export function Ergebnis() {
         </div>
       )}
       <ZugangVorschlag nr={s.nr} />
+      <AufEinenBlick ziel={druck?.ziel} einstieg={druck?.einstieg} werkzeug={druck?.werkzeug} material={materialPunkte} vorbereitung={druck?.vorbereitung ?? []} minuten={minuten} leiste={leiste.length > 1 ? <StundenLeiste teile={leiste} onSprung={springen} /> : undefined} />
       <div className="pg-egrid">
         <nav className="pg-folge" aria-label="Sitzungen">
           {plan.n > 1 ? (
@@ -453,8 +532,8 @@ export function Ergebnis() {
             <span>„Tauschen“ ersetzt einen Schritt.{plan.n > 1 ? ' Rituale bleiben in der Folge gleich.' : ''}</span>
           </div>
         </nav>
-        <section className="pg-ablauf" aria-label="Ablauf der Sitzung">
-          {s.schritte.map((x, i) => (istBlattSchritt(x) ? <BlattKarte key={i} s={x} nr={s.nr} /> : <SchrittKarte key={i + x.ref} s={x} i={i} nr={s.nr} />))}
+        <section className="pg-ablauf pg-sb-ablauf" aria-label="Ablauf der Sitzung">
+          {s.schritte.map((x, i) => (istBlattSchritt(x) ? <BlattKarte key={i} s={x} nr={s.nr} idx={i} ab={startMin[i]} /> : <SchrittKarte key={i + x.ref} s={x} i={i} nr={s.nr} d={druck?.schritte[i]} ab={startMin[i]} />))}
           {!blattSchritt && s.blatt && <BlattKarte s={{ ref: 'blatt', h: '', rolle: 'uebung', min: 0 }} nr={s.nr} />}
           <div className="pg-ablauf-fuss">
             {s.schritte.some((x) => x.erkundung) && <p className="pg-leise pg-klein">„Neu ausprobiert“: bewusst etwas Neues neben dem Bewährten (etwa {Math.round((pg.vor.ich.erkundung ?? 0.2) * 100)} % der Stunde), damit sich nichts festfährt.</p>}
