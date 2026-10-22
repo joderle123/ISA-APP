@@ -248,6 +248,8 @@ export const FORMAT_NAME: Record<string, string> = {
   schreiben: 'Schreibaufgaben', ankreuzen: 'Ankreuzen', malen: 'Malen', basteln: 'Basteln', lesen: 'Lesen', geschichte: 'Geschichten',
   comic: 'Comics', gespraech: 'Gespräch', rollenspiel: 'Rollenspiel', bewegung: 'Bewegung', spiel: 'Spiele', musik: 'Musik', sinne: 'Sinne',
   atmen: 'Atmen & Ruhe', denkmodell: 'Denkmodelle (Ampel, Thermometer)', plan: 'Pläne', karten: 'Bildkarten', digital: 'Digitales',
+  // Unterrichtsformen (22.10.2026)
+  experiment: 'Experimente', philosophieren: 'Philosophieren', projekt: 'Projekte', stationen: 'Stationen', kochen: 'Kochen', bauen: 'Bauen',
 }
 
 export const TAGESFORM_NAME: Record<Tagesform, string> = {

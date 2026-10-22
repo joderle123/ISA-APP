@@ -65,6 +65,11 @@ export const FORMAT_NAME: Record<string, string> = {
   karten: 'Bildkarten',
   digital: 'Digital',
   skala: 'Skalen',
+  experiment: 'Experimente',
+  philosophieren: 'Philosophieren',
+  projekt: 'Projekte',
+  stationen: 'Stationen',
+  kochen: 'Kochen',
 }
 
 export const FORMAT_WUNSCH: [FormatWunsch, string][] = [
