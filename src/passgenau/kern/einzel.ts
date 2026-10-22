@@ -63,7 +63,7 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   // Themen für Ältere (A10): Dating, Party, Alkohol, Drogen
   aelter: /\b(Dating|Date|verliebt\w*|Verliebtsein|Liebeskummer|Korb bekommen|einen Korb|Party|Partys|Alkohol|betrunken|Zigarette\w*|Rauchen|Drogen|Kiffen|Joint|Konsum|Vape\w*)\b|\b(amoureux|amoureuse|soirée|alcool|drogue\w*|cigarette\w*)\b/i,
   // Belastendes direkt bearbeiten (bei Vorsicht Trauma nicht)
-  mobbing: /\b(Mobbing|gemobbt|Diskriminierung|diskriminier\w*|Rassismus|rassistisch\w*|Forumtheater|Ausgrenzung erleben)\b|\b(harcèlement|discrimination|racisme)\b/i,
+  mobbing: /\b((Cyber-?)?Mobbing|gemobbt|Diskriminierung|diskriminier\w*|Rassismus|rassistisch\w*|Forumtheater|Ausgrenzung erleben)\b|\b((cyber-?)?harcèlement|discrimination|racisme)\b/i,
   // Notiz für Erwachsene im Text des Kindes (A3)
   fuerleitung: /\b((Signature|Unterschrift|signé)[^|]{0,40}(enseignant|Lehr|Leitung|parent|Eltern)|Für die Leitung|Für die Lehrkraft|Für Lehrpersonen|Hinweis für (die )?(Leitung|Lehrkraft|Fachkraft)|Lehrperson trägt ein|Eltern unterschreiben)\b|\b(pour l['’]enseignant|pour l['’]animateur|à l['’]attention de l['’]enseignant)\b/i,
   // Sorgen und Kummer hervorholen (in Krisenlage nicht, A12): Sorgen-Box, Sorgen-Stein, Trost-Koffer für traurige Tage

@@ -3932,5 +3932,96 @@
         "nicht": "Évitez ces semaines-ci de juger les opinions ou de couper la parole devant la classe : il s’agit d’argumenter et d’écouter, pas d’avoir raison."
       }
     }
+  },
+  "kurs-socialmedia-13-16": {
+    "name": {
+      "de": "Hinter dem Feed",
+      "fr": "L’envers du feed"
+    },
+    "de": {
+      "warum": "Social Media wirkt nicht bei allen gleich (Valkenburg et al., 2022); Verbote und Warnungen erreichen Jugendliche kaum, selbst prüfen schon. Darum erforschen sie die Mechanismen selbst: einen Rahmen setzen (Selbstdarstellung, Aufwärtsvergleich), selbst der Feed sein (Empfehlung nach Verweildauer und Reaktionen; Gefühlsstarkes verbreitet sich schneller, Brady et al., 2017) und Spuren lesen (Privatsphäre). Cybermobbing kommt über Perspektivwechsel (Betroffene, Zuschauende, Täter; Salmivalli, 2010) und Behavioral Skills Training ins Handeln: erklären, vormachen, im Rollenspiel üben, Rückmeldung, Wenn-dann-Plan (Durlak et al., 2011; Gollwitzer & Sheeran, 2006). Eine durchgehende Geschichte – ein Foto, das die Runde macht – hält die sechs Treffen zusammen und schützt: Geübt wird an Figuren, Eigenes bleibt freiwillig.",
+      "achtung": [
+        "Cybermobbing ernst nehmen: Erzählt der oder die Jugendliche von eigenem Erleben – als betroffene, zuschauende oder beteiligte Person –, ruhig zuhören, nicht nach Einzelheiten fragen, nicht beschämen und mit Einverständnis eine Vertrauensperson der Schule einbeziehen (z. B. SePAS, Régent·e). Hilfe: BEE SECURE Helpline 8002 1234, Kanner-Jugendtelefon 116 111 (anonym, kostenlos); bei Gefahr 112 oder Polizei 113.",
+        "Keine Accounts, Fotos oder Chats zeigen lassen und nichts kontrollieren; eigene Beispiele nur freiwillig – die Figuren tragen. Nicht nach Medienregeln oder Streit in der Familie fragen.",
+        "Zeigt ein Bild jemanden unbekleidet oder geht es um Erpressung mit Bildern: keine Screenshots machen oder weiterleiten – auch nicht als Beweis –, nicht zahlen, sofort den Schutzablauf der Einrichtung, die BEE SECURE Helpline oder die Polizei (113) einschalten.",
+        "Kein Sucht-Etikett, keine Panik: Bei anhaltendem Rückzug, starkem Schlafmangel oder sichtbarer Belastung durch Vergleich oder Online-Erlebnisse beobachten, notieren und Psychologie oder Fachstelle einbeziehen."
+      ]
+    },
+    "fr": {
+      "warum": "Les réseaux sociaux n’agissent pas de la même façon sur tous (Valkenburg et al., 2022) ; les interdits et les mises en garde touchent peu les jeunes, vérifier soi-même beaucoup plus. Ils explorent donc eux-mêmes les mécanismes : poser un cadre (mise en scène de soi, comparaison vers le haut), être soi-même le feed (recommandation selon le temps passé et les réactions ; ce qui est chargé d’émotion circule plus vite, Brady et al., 2017) et lire les traces (vie privée). Le cyberharcèlement passe à l’action par le changement de perspective (personne visée, témoins, auteur ; Salmivalli, 2010) et le Behavioral Skills Training : expliquer, montrer, s’entraîner en jeu de rôle, retour, plan si… alors (Durlak et al., 2011 ; Gollwitzer & Sheeran, 2006). Une histoire continue – une photo qui tourne – relie les six rencontres et protège : on s’exerce sur des personnages, le personnel reste libre.",
+      "achtung": [
+        "Prendre le cyberharcèlement au sérieux : si le ou la jeune parle de son vécu – comme personne visée, témoin ou impliquée –, écouter calmement, ne pas demander de détails, ne pas faire honte et, avec son accord, associer une personne de confiance de l’école (par ex. SePAS, régent·e). Aide : BEE SECURE Helpline 8002 1234, Kanner-Jugendtelefon 116 111 (anonyme, gratuit) ; en cas de danger 112 ou police 113.",
+        "Ne pas se faire montrer de comptes, photos ou chats et ne rien contrôler ; les exemples personnels restent libres – les personnages portent l’histoire. Ne pas poser de questions sur les règles d’écran ou les disputes en famille.",
+        "Si une image montre quelqu’un dévêtu ou s’il s’agit de chantage avec des images : ne pas faire de captures ni transférer – même comme preuve –, ne pas payer, activer tout de suite la procédure de protection de l’institution, la BEE SECURE Helpline ou la police (113).",
+        "Pas d’étiquette de dépendance, pas de panique : en cas de repli durable, de fort manque de sommeil ou de souffrance visible liée à la comparaison ou au vécu en ligne, observer, noter et associer la psychologie ou un service spécialisé."
+      ]
+    },
+    "quellen": [
+      "Salmivalli, C. (2010): Bullying and the peer group: A review. Aggression and Violent Behavior, 15(2), 112–120",
+      "Kowalski, R. M., Giumetti, G. W., Schroeder, A. N. & Lattanner, M. R. (2014): Bullying in the digital age: A critical review and meta-analysis of cyberbullying research among youth. Psychological Bulletin, 140(4), 1073–1137",
+      "Gaffney, H., Farrington, D. P., Espelage, D. L. & Ttofi, M. M. (2019): Are cyberbullying intervention and prevention programs effective? A systematic and meta-analytical review. Aggression and Violent Behavior, 45, 134–153",
+      "Polanin, J. R., Espelage, D. L. & Pigott, T. D. (2012): A meta-analysis of school-based bullying prevention programs’ effects on bystander intervention behavior. School Psychology Review, 41(1), 47–65",
+      "Valkenburg, P. M., Meier, A. & Beyens, I. (2022): Social media use and its impact on adolescent mental health: An umbrella review of the evidence. Current Opinion in Psychology, 44, 58–68",
+      "Vogel, E. A., Rose, J. P., Roberts, L. R. & Eckles, K. (2014): Social comparison, social media, and self-esteem. Psychology of Popular Media Culture, 3(4), 206–222",
+      "Sherman, L. E., Payton, A. A., Hernandez, L. M., Greenfield, P. M. & Dapretto, M. (2016): The power of the like in adolescence: Effects of peer influence on neural and behavioral responses to social media. Psychological Science, 27(7), 1027–1035",
+      "Brady, W. J., Wills, J. A., Jost, J. T., Tucker, J. A. & Van Bavel, J. J. (2017): Emotion shapes the diffusion of moralized content in social networks. PNAS, 114(28), 7313–7318",
+      "Swart, J. (2021): Experiencing algorithms: How young people understand, feel about, and engage with algorithmic news selection on social media. Social Media + Society, 7(2)",
+      "Livingstone, S., Stoilova, M. & Nandagiri, R. (2019): Children’s data and privacy online: Growing up in a digital age. An evidence review. London School of Economics and Political Science",
+      "Verordnung (EU) 2022/2065 über einen Binnenmarkt für digitale Dienste (Digital Services Act), Art. 38: Empfehlungssysteme ohne Profiling bei sehr großen Plattformen",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011): The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432",
+      "Gollwitzer, P. M. & Sheeran, P. (2006): Implementation Intentions and Goal Achievement: A Meta-Analysis of Effects and Processes. Advances in Experimental Social Psychology, 38, 69–119",
+      "Roediger, H. L. & Karpicke, J. D. (2006): Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255",
+      "Ryan, R. M. & Deci, E. L. (2000): Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist, 55(1), 68–78"
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Die oder der Jugendliche lernt, hinter Posts, Likes und Feeds zu schauen, die eigenen Spuren klein zu halten, Cybermobbing zu erkennen und als Zuschauende oder Betroffene konkret zu handeln.",
+        "stichwort": "Online-Schild mit fünf Feldern (Rahmen, Feed, Spur, Mensch, Handeln) – „Ich schaue hinter den Feed – und lasse niemanden allein davor.“",
+        "sitzungen": [
+          "Woche 1: Rahmen – jeder Post ist ein Ausschnitt; Ausschnitt mit Ausschnitt vergleichen. Auftrag: Rahmen-Blick bei zwei Posts.",
+          "Woche 2: Feed – wie ein Feed lernt, was Likes messen, drei Schalter zum Steuern. Auftrag: Feed-Frage bei Posts, ein Schalter.",
+          "Woche 3: Spur – was öffentliche Posts verraten; Spuren-Check vor dem Posten, andere nur mit Ja. Auftrag: Check oder Einstellung.",
+          "Woche 4: Mensch – Spaß-Check und drei Perspektiven (betroffen, zuschauend, beteiligt). Auftrag: zweimal den Spaß-Check.",
+          "Woche 5: Handeln – fünf Finger im Rollenspiel mit Rückmeldung, eigener Wenn-dann-Plan. Auftrag: Melden und Blockieren finden.",
+          "Woche 6: Rückblick – das ganze Schild, eigene Schild-Karte, wer hilft (BEE SECURE 8002 1234, Kanner-Jugendtelefon 116 111)."
+        ],
+        "helfen": [
+          "So erinnern Sie: leise, unter vier Augen – „Online-Schild: Welches Feld passt hier?“ oder „Spaß-Check: Lachen alle?“",
+          "So loben Sie: „Du hast das Foto nicht weitergeleitet und ihr privat geschrieben – genau das verändert etwas.“",
+          "Wenn es nicht klappt: nicht moralisieren; nachfragen, was den Schritt schwer macht, und einen kleineren Finger wählen (z. B. nur nicht weiterleiten)."
+        ],
+        "beobachten": [
+          "leitet beleidigende Bilder oder Sprüche nicht weiter und sagt es, wenn ein Witz kippt",
+          "fragt, bevor es Fotos von anderen postet, und lässt Ort und Uhrzeit aus Posts heraus"
+        ],
+        "nicht": "Keine Fragen zu eigenen Accounts, Chats oder Erlebnissen vor der Klasse, kein Kontrollieren von Handys und kein Sucht-Etikett; bei Cybermobbing ruhig zuhören, nicht nach Einzelheiten fragen und eine Vertrauensperson einbeziehen."
+      },
+      "fr": {
+        "ziel": "Le ou la jeune apprend à regarder derrière les posts, les likes et les feeds, à réduire ses propres traces, à reconnaître le cyberharcèlement et à agir concrètement comme témoin ou comme personne visée.",
+        "stichwort": "Bouclier en ligne à cinq champs (cadre, feed, trace, humain, agir) – « Je regarde l’envers du feed – et je ne laisse personne seul devant. »",
+        "sitzungen": [
+          "Semaine 1 : cadre – chaque post est un extrait ; comparer extrait avec extrait. Mission : regard cadre sur deux posts.",
+          "Semaine 2 : feed – comment un feed apprend, ce que mesurent les likes, trois réglages. Mission : question feed, un réglage.",
+          "Semaine 3 : trace – ce que révèlent les posts publics ; check des traces, les autres seulement avec leur oui. Mission : check ou réglage.",
+          "Semaine 4 : humain – check humour et trois perspectives (visé, témoin, impliqué). Mission : deux fois le check humour.",
+          "Semaine 5 : agir – cinq doigts en jeu de rôle avec retour, plan si… alors personnel. Mission : trouver où signaler et bloquer.",
+          "Semaine 6 : bilan – le bouclier complet, carte bouclier personnelle, qui aide (BEE SECURE 8002 1234, Kanner-Jugendtelefon 116 111)."
+        ],
+        "helfen": [
+          "Pour rappeler : à voix basse, en tête à tête – « Bouclier en ligne : quel champ va ici ? » ou « Check humour : tout le monde rit ? »",
+          "Pour féliciter : « Tu n’as pas transféré la photo et tu lui as écrit en privé – c’est exactement ça qui change quelque chose. »",
+          "Si ça ne marche pas : ne pas faire la morale ; demander ce qui rend le pas difficile et choisir un doigt plus petit (par ex. seulement ne pas transférer)."
+        ],
+        "beobachten": [
+          "ne transfère pas d’images ou de phrases blessantes et le dit quand une blague dérape",
+          "demande avant de poster des photos d’autres personnes et laisse le lieu et l’heure hors de ses posts"
+        ],
+        "nicht": "Évitez toute question sur les comptes, les chats ou le vécu personnel devant la classe, tout contrôle de téléphone et toute étiquette de dépendance ; en cas de cyberharcèlement, écoutez calmement, sans demander de détails, et associez une personne de confiance."
+      }
+    },
+    "welt": {
+      "de": "Esch-sur-Alzette, ein Lycée, eine 5C mit einem Klassenchat, der nie still ist. Inês (Portugiesisch, Luxemburgisch, Französisch) postet gern und zählt Likes, Yusuf (Arabisch, Französisch, Luxemburgisch) postet fast nie, und Chloé (Französisch, Luxemburgisch) zeichnet lieber, als zu schreiben. Dann taucht ein anonymes Konto auf, @esch.ouni.filter, und postet ein Foto vom Schoulfest: Yusuf mitten im Lied, darunter ein Spruch – Chloé schreibt im Klassenchat „haha“ und bereut es bald. Von Treffen zu Treffen wird klarer, wie das Foto so weit kommen konnte, was es über Yusuf verrät, wer dahintersteckt (Ben aus der Parallelklasse) und was jede und jeder tun kann – bis das Konto verschwindet.",
+      "fr": "Esch-sur-Alzette, un lycée, une 5C avec un chat de classe qui ne dort jamais. Inês (portugais, luxembourgeois, français) aime poster et compte ses likes, Yusuf (arabe, français, luxembourgeois) ne poste presque jamais, et Chloé (français, luxembourgeois) préfère dessiner qu’écrire. Puis un compte anonyme apparaît, @esch.ouni.filter, et publie une photo de la fête de l’école : Yusuf en pleine chanson, avec une légende moqueuse – Chloé écrit « haha » dans le chat de classe et le regrette vite. De rencontre en rencontre, on comprend comment la photo a pu aller si loin, ce qu’elle révèle sur Yusuf, qui se cache derrière (Ben, de la classe parallèle) et ce que chacune et chacun peut faire – jusqu’à ce que le compte disparaisse."
+    }
   }
 }
