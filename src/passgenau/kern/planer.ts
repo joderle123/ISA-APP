@@ -1279,6 +1279,8 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       // … und für alle: Einstiege aus Kurs, Förderfach und Klassen-Einheiten nur mit dem Kern ihrer Einheit (Blind-Bewertung 10:
       // „Neues Thema: Selbstwert und Körper“ kündigt „später den Körper“ an, „Vom Körper zur Stimme im Kopf“ vor einem Material-Kern)
       auswahl = auswahl.filter((w) => !/^(k|f|c):/.test(w.b.e.id) || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
+      // Form-Stunden (fo:<paket>:<n>): Einstieg und Auswertung nur zusammen mit ihrem eigenen Kern
+      auswahl = auswahl.filter((w) => !w.b.e.id.startsWith('fo:') || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
       for (const w of auswahl) if (kernQuelle && quelleEinheit(w.b.e.id) === kernQuelle) w.b = { ...w.b, s: w.b.s + 0.25 }
       auswahl.sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
       // letzte Sitzung einer Folge: ein echter Rückblick auf die Kerne der Folge
@@ -1319,7 +1321,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     // … und keine Teile fremder Einheiten (Blind-Bewertung 10: „Wir richten uns gemeinsam auf“ mit Bambus-Blatt und Aufricht-
     // Helfern aus Teil 2 einer Material-Einheit, „Spiegel ohne Anführer“ aus dem Förderfach mit „der dritten Person“)
     if (slot.rolle === 'spiel' || slot.rolle === 'bewegung' || slot.rolle === 'regulation') {
-      const eigen = auswahl.filter((w) => !/^(m|k|f|c):/.test(w.b.e.id) || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
+      const eigen = auswahl.filter((w) => !/^(m|k|f|c|fo):/.test(w.b.e.id) || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
       if (eigen.length) auswahl = eigen
     }
     // zweite Übung (60 Minuten): dasselbe Ziel wie der Kern, aber eine andere Übung – eigene Übungen zuerst, ein anderes Format
