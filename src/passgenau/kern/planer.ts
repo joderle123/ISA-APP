@@ -335,8 +335,9 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
       if (phaseSlot && locker < 1 && e.bogen && s.phase !== 'leicht' && b.f.phase < 0.3 && !(kernArtig && kuratiert(c, e.id))) continue
       // Kern: genau das Ziel (ELDiB-Code des Ziels, primär oder sekundär) – ein Nachbar-Code im selben Bereich erst bei
       // Lockerung (Blind-Bewertung 9.10.: Kerne einer Folge drifteten zu Chat-Ton, Schulden, Gaming bei Ziel „warten“)
-      // auch mit Unterrichtsform: der Kern übt das ELDiB-Ziel (Rückmeldung 22.10.: „die ELDiB-Ziele beibehalten“)
-      if (zielSlot && kernArtig && c.ziele.length) {
+      // Unterrichtsform: entweder zum ELDiB-Ziel (dann übt der Kern genau das Ziel) oder zu einem gewählten Thema (dann reicht
+      // der Bezug zum Thema) – Rückmeldung 22.10.: „entweder oder“
+      if (zielSlot && kernArtig && c.ziele.length && !(s.formStreng && (c.a.thema ?? []).length)) {
         if (!(b.f.ziel >= (locker >= 2 ? 0.25 : 0.4) || (locker >= 3 && b.f.thema > 0))) continue
       } else if (zielSlot && !(b.f.ziel >= (locker >= 2 ? 0.15 : 0.25) || b.f.thema > 0)) continue
       out.push({ b, locker, lockerText: locker >= 3 && e.typ === 'schritt' ? lockerGrund(c, e, locker) : undefined })
