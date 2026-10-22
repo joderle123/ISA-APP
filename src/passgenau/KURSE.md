@@ -358,6 +358,23 @@ Grundausstattung).
 - **Filterwörter:** auch „papa“, „soirée“, „Video“, „Clip“, „Film“, „Bühne“, „Publikum“, „maillot“, „Figur“ (Körper) lösen Filter
   aus – vor dem Schreiben Abschnitt 6 und `kern/einzel.ts` ansehen.
 
+### 9b. Lehren aus der zweiten Kritikrunde
+
+- **Spickzettel je Sitzung:** die ersten Zeilen von `hilfen.aufbau` als „Minute – Schritt – Satz“ (5–7 Zeilen), so dass eine
+  müde Fachkraft die Sitzung in zwei Minuten erfasst; dazu „Muss / Kann“ und „Wird es knapp …“.
+- **Fachkraft-Karten getrennt:** Lösungen, Regieanweisungen und Musterantworten nie auf dem Bogen, der auf den Tisch kommt –
+  eigener Kartensatz mit Titel „Nur für dich“ / « Pour l’adulte ».
+- **Spielmechanik vollständig:** Nachschub, Stapel, Ende der Runde, Plan B, wenn ein Spiel nicht zündet.
+- **Gruppenregie** (hilfen.gruppe): wer sitzt wo, wer hat welche Rolle, was tun die anderen, wie endet es – für 4–6 unruhige
+  Jugendliche, nicht nur „geht auch in der Gruppe“.
+- **Rätsel zum Selberlösen:** Hinweise verteilen, die die Jugendlichen kombinieren; nichts verraten (kein Geständnis im Text);
+  ihr eigenes Wissen (Apps, Spiele, Chats) ab der ersten Sitzung als Expertenrolle nutzen.
+- **Aufträge zwischen den Sitzungen freiwillig und klein** („wenn du magst“), nie wöchentliche Hausaufgaben.
+- **Rollenspiel:** Täter- und Betroffenenseite nie von Gleichaltrigen gespielt – Fachkraft oder Figurenkarte; Ausstieg locker
+  („Rolle aus, Jacke aus“), nicht peinlich.
+- **Französisch zuerst denken:** Titel, Karten, Merksätze, Chats in FR eigenständig formulieren; DE und FR müssen dieselben
+  Filter auslösen (Filterwörter in beiden Sprachen prüfen).
+
 ## 10. Katalog Welle 3 (neue Themen, Arbeitstitel)
 
 ELDiB-Codes wählt die Kursarchitektur aus `src/data/passgenau/eldib.json` (2 Hauptziele mit Gewicht 1, 1–2 weitere mit 0.5),
