@@ -166,5 +166,9 @@
  "mappe": {
   "de": "Mappe",
   "fr": "chemise"
+ },
+ "kueche": {
+  "de": "Küche oder Kochplatte",
+  "fr": "cuisine ou plaque de cuisson"
  }
 }

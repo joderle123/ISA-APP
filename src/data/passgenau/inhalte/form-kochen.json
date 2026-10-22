@@ -1,0 +1,3299 @@
+[
+ {
+  "id": "fo:koch-duo-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Der Spieß mit der Lücke",
+  "text": "Die Fachkraft hält einen fertigen Obstspieß hoch: Banane, Traube, Apfel, Banane, Traube – und dann eine Lücke. Das Kind sagt, welches Stück als Nächstes kommt, und steckt es selbst auf. Danach zeigt die Fachkraft das Rezept, eine Karte mit drei Bildern (Hände waschen, Spieße bauen, zusammen essen), und erklärt: Heute arbeitet eine Spieß-Fabrik, und die läuft nur zu zweit. Beide waschen sich die Hände mit Seife, so lange, wie sie zweimal „Zum Geburtstag viel Glück“ summen. Zum Schluss wählt das Kind, ob es zuerst die Reich-Hand oder die Steck-Hand der Fabrik sein will.",
+  "sagen": [
+   "Schau mal: Banane, Traube, Apfel, Banane, Traube … und hier ist eine Lücke. Was kommt als Nächstes?",
+   "Heute bauen wir eine Spieß-Fabrik. Sie hat zwei Hände – und die gehören zwei verschiedenen Leuten.",
+   "Erst Hände waschen: Wir summen zweimal „Zum Geburtstag viel Glück“, dann sind sie sauber.",
+   "Willst du zuerst die Reich-Hand sein oder die Steck-Hand?"
+  ],
+  "wennEsKippt": "Erkennt das Kind das Muster nicht, zeigt die Fachkraft Stück für Stück und spricht es im Rhythmus: Ba-na-ne, Trau-be, Ap-fel. Mag es keine Rolle wählen, beginnt die Fachkraft als Steck-Hand und zeigt, wie es geht.",
+  "kurz": "Spieß mit Lücke ergänzen · Rezeptkarte · Hände waschen · Rolle wählen",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-18",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 1
+   },
+   {
+    "code": "K-12",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "spiel"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "La brochette avec un trou",
+   "text": "L’adulte montre une brochette de fruits déjà prête : banane, raisin, pomme, banane, raisin – puis un espace vide. L’enfant dit quel morceau vient ensuite et le pique lui-même. Ensuite, l’adulte montre la carte recette en trois images (se laver les mains, faire les brochettes, manger ensemble) et explique : aujourd’hui, une fabrique de brochettes ouvre, et elle ne marche qu’à deux. Tous les deux se lavent les mains au savon, le temps de fredonner deux fois « Joyeux anniversaire ». Pour finir, l’enfant choisit s’il commence comme main qui donne ou comme main qui pique.",
+   "sagen": [
+    "Regarde : banane, raisin, pomme, banane, raisin… et là, il y a un trou. Qu’est-ce qui vient ensuite ?",
+    "Aujourd’hui, on construit une fabrique de brochettes. Elle a deux mains – et elles appartiennent à deux personnes différentes.",
+    "D’abord les mains : on fredonne deux fois « Joyeux anniversaire », et elles sont propres.",
+    "Tu veux commencer comme main qui donne ou comme main qui pique ?"
+   ],
+   "wennEsKippt": "Si l’enfant ne voit pas le motif, l’adulte montre chaque morceau du doigt et le dit en rythme : ba-na-ne, rai-sin, pomme. S’il ne veut pas choisir de rôle, l’adulte commence comme main qui pique et montre comment faire.",
+   "kurz": "Compléter la brochette · carte recette · mains · choisir un rôle"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein fertiger Spieß mit einer Lücke: Das Kind ergänzt das Muster und hat nach zehn Sekunden den ersten Erfolg.",
+    "vorbereitung": [
+     "Allergien und Unverträglichkeiten klären, Zutatenlisten ansehen",
+     "Einen Musterspieß mit Lücke stecken (Banane, Traube, Apfel)",
+     "Rezeptkarte mit drei Bildern malen: Hände – Spieß – essen",
+     "Seife, Handtuch und Haargummi bereitlegen"
+    ],
+    "gruppe": "Mit mehreren Kindern: Je zwei Kinder bilden eine Spieß-Fabrik und wählen ihre Rollen selbst; die Fachkraft hält den Musterspieß für alle hoch."
+   },
+   "fr": {
+    "haken": "Une brochette toute prête avec un trou : l’enfant complète le motif et réussit dès les dix premières secondes.",
+    "vorbereitung": [
+     "Vérifier allergies et intolérances, lire les listes d’ingrédients",
+     "Préparer une brochette modèle avec un trou (banane, raisin, pomme)",
+     "Dessiner la carte recette en trois images : mains – brochette – manger",
+     "Préparer savon, essuie-mains et élastique pour les cheveux"
+    ],
+    "gruppe": "Avec plusieurs enfants : ils forment des fabriques à deux et choisissent eux-mêmes leurs rôles ; l’adulte montre la brochette modèle à tout le groupe."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-duo-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Die Spieß-Fabrik zu zweit",
+  "text": "In der Küche stehen drei Schalen mit vorgeschnittenem Obst und ein Becher mit Spießen. Die Steck-Hand darf kein Obst selbst nehmen, sondern bittet: „Eine Traube, bitte“; die Reich-Hand gibt das Stück mit dem Löffel und sagt „Bitte schön“. So entstehen zwei Spieße nach dem Muster der Rezeptkarte, dann tauschen beide die Rollen. Für den letzten Spieß erfinden beide ein eigenes Muster: Das Kind wählt eine Obstsorte, die Fachkraft eine, und zusammen legen sie die Reihenfolge fest, bevor gesteckt wird. Die Fachkraft sagt laut, was gut klappt: „Du hast gewartet, bis ich gefragt habe.“",
+  "sagen": [
+   "Die Steck-Hand nimmt nichts selbst. Sie fragt: „Eine Traube, bitte.“",
+   "Die Reich-Hand gibt nur, wenn sie gefragt wird – und sagt „Bitte schön“.",
+   "Tauschen! Jetzt bin ich die Steck-Hand. Ein Stück Apfel, bitte.",
+   "Unser eigenes Muster: Du wählst eine Sorte, ich wähle eine. Was kommt zuerst?"
+  ],
+  "wennEsKippt": "Greift das Kind doch selbst zu, sagt die Fachkraft freundlich „Fabrik-Pause“, und beide beginnen den Spieß noch einmal mit Fragen. Wird es zu viel, reicht ein gemeinsamer Spieß; kleine Kinder dürfen zeigen und „bitte“ sagen statt eines ganzen Satzes.",
+  "kurz": "Steck-Hand fragt, Reich-Hand gibt · tauschen · eigenes Muster",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-18",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 1
+   },
+   {
+    "code": "K-12",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "kochen",
+   "spiel"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "loeffel",
+   "becher",
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "La fabrique de brochettes à deux",
+   "text": "Sur la table, il y a trois bols de fruits déjà coupés et un gobelet avec des pics. La main qui pique n’a pas le droit de se servir : elle demande « Un raisin, s’il te plaît » ; la main qui donne tend le morceau avec la cuillère et répond « Voilà ». On fait ainsi deux brochettes selon le modèle de la carte recette, puis on échange les rôles. Pour la dernière brochette, l’adulte et l’enfant inventent leur propre motif : l’enfant choisit un fruit, l’adulte un autre, et ils décident ensemble de l’ordre avant de piquer. L’adulte dit à voix haute ce qui marche bien : « Tu as attendu que je demande. »",
+   "sagen": [
+    "La main qui pique ne prend rien elle-même. Elle demande : « Un raisin, s’il te plaît. »",
+    "La main qui donne donne seulement quand on lui demande – et elle dit « Voilà ».",
+    "On échange ! Maintenant, c’est moi la main qui pique. Un morceau de pomme, s’il te plaît.",
+    "Notre motif à nous : tu choisis un fruit, j’en choisis un. Lequel vient en premier ?"
+   ],
+   "wennEsKippt": "Si l’enfant se sert quand même, l’adulte dit gentiment « Pause à la fabrique », et on recommence la brochette en demandant. Si c’est trop, une seule brochette commune suffit ; les petits peuvent montrer du doigt et dire « s’il te plaît » au lieu d’une phrase entière.",
+   "kurz": "L’un demande, l’autre donne · échanger · inventer un motif"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Steck-Hand darf nichts selbst nehmen – diese eine strenge Fabrik-Regel macht aus Obststecken ein Spiel, in dem man den anderen wirklich braucht.",
+    "vorbereitung": [
+     "Allergien klären; Obst waschen und in Stücke schneiden (Erwachsene)",
+     "Trauben für Kinder unter 5 Jahren längs vierteln (Erstickungsgefahr)",
+     "Holzspieße: Spitze abknipsen oder dicke Trinkhalme nehmen",
+     "Drei Schalen, ein Löffel, ein Becher mit Spießen, Rezeptkarte mit Muster",
+     "Brettchen und feuchtes Tuch zum Abwischen"
+    ],
+    "aufbau": "Kind und Fachkraft sitzen über Eck am Tisch. Die Obstschalen stehen auf der Seite der Reich-Hand, die Spieße bei der Steck-Hand, die Rezeptkarte liegt in der Mitte, sodass beide sie sehen.",
+    "karten": [
+     {
+      "titel": "Musterkarten (Obst malen oder aufkleben)",
+      "karten": [
+       "Banane – Traube – Apfel – Banane – Traube – Apfel",
+       "Apfel – Apfel – Banane – Apfel – Apfel – Banane",
+       "Traube – Banane – Traube – Banane – Traube – Banane",
+       "Unser Muster: ____ – ____ – ____ – ____",
+       "Wie heißt das Obst in deinen Sprachen? Sag es beim Fragen!"
+      ]
+     }
+    ],
+    "leichter": "Für 4- bis 6-Jährige: nur zwei Obstsorten und ein Muster aus zwei Farben. Statt eines Satzes reicht Zeigen und „bitte“; die Fachkraft hält den Spieß fest, das Kind steckt.",
+    "schwerer": "Ab 8 Jahren schneidet das Kind weiche Banane selbst mit einem Tafelmesser ohne Spitze (Krallengriff vormachen). Ab 9 Jahren diktiert das Kind das eigene Muster nur mit Worten, ohne zu zeigen, und die Fachkraft steckt nach Ansage.",
+    "gruppe": "Je zwei Kinder bilden eine Fabrik (Reich-Hand, Steck-Hand), nach zwei Spießen wird getauscht. Bei vier Kindern füllt ein Kind als Lieferant die Schalen nach und ein Kind liest die Musterkarte vor; alle Rollen wechseln reihum.",
+    "beobachten": [
+     "Das Kind fragt mit Worten oder Zeichen, statt selbst zu greifen.",
+     "Es gibt ein Stück erst, wenn es gefragt wird, und wechselt die Rolle ohne Protest.",
+     "Beim eigenen Muster macht es einen Vorschlag und nimmt einen Vorschlag der Fachkraft an."
+    ],
+    "warum": "Ist ein Ziel nur gemeinsam erreichbar (positive Abhängigkeit), üben Kinder Fragen, Warten und Abwechseln von selbst (Johnson & Johnson, 2009); wer beim Zubereiten mithilft, isst zudem mehr Obst und Gemüse (van der Horst et al., 2014).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "La main qui pique n’a pas le droit de se servir : cette seule règle stricte transforme les brochettes en un jeu où l’on a vraiment besoin de l’autre.",
+    "vorbereitung": [
+     "Vérifier les allergies ; laver et couper les fruits (adulte)",
+     "Couper les raisins en quatre dans la longueur avant 5 ans (étouffement)",
+     "Pics en bois : couper la pointe ou prendre de grosses pailles",
+     "Trois bols, une cuillère, un gobelet de pics, la carte recette avec le motif",
+     "Planche et chiffon humide pour essuyer"
+    ],
+    "aufbau": "L’enfant et l’adulte sont assis en angle à la table. Les bols de fruits sont du côté de la main qui donne, les pics du côté de la main qui pique, la carte recette au milieu pour que les deux la voient.",
+    "karten": [
+     {
+      "titel": "Cartes motifs (dessiner ou coller les fruits)",
+      "karten": [
+       "Banane – raisin – pomme – banane – raisin – pomme",
+       "Pomme – pomme – banane – pomme – pomme – banane",
+       "Raisin – banane – raisin – banane – raisin – banane",
+       "Notre motif : ____ – ____ – ____ – ____",
+       "Comment dit-on ce fruit dans tes langues ? Dis-le en demandant !"
+      ]
+     }
+    ],
+    "leichter": "Pour les 4–6 ans : deux fruits seulement et un motif à deux couleurs. Montrer du doigt et dire « s’il te plaît » suffit ; l’adulte tient la brochette, l’enfant pique.",
+    "schwerer": "Dès 8 ans, l’enfant coupe lui-même la banane avec un couteau de table à bout rond (montrer la position en griffe). Dès 9 ans, il dicte son motif seulement avec des mots, sans montrer, et l’adulte pique sur commande.",
+    "gruppe": "Les enfants forment des fabriques à deux (main qui donne, main qui pique) et échangent après deux brochettes. À quatre, un enfant est livreur et remplit les bols, un autre lit la carte motif ; tous les rôles tournent.",
+    "beobachten": [
+     "L’enfant demande avec des mots ou des gestes au lieu de se servir.",
+     "Il ne donne un morceau que quand on le lui demande et change de rôle sans protester.",
+     "Pour le motif commun, il fait une proposition et accepte une proposition de l’adulte."
+    ],
+    "warum": "Quand un but ne s’atteint qu’ensemble (interdépendance positive), les enfants s’exercent d’eux-mêmes à demander, attendre et alterner (Johnson & Johnson, 2009) ; les enfants qui aident à préparer mangent aussi plus de fruits et de légumes (van der Horst et al., 2014).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:koch-duo-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Essen und Danke sagen",
+  "text": "Beide essen ihre Spieße zusammen. Die Fachkraft beginnt mit einem Danke-Satz: „Danke, dass du mir die Traube gegeben hast, als ich gefragt habe.“ Dann sagt das Kind einen Danke-Satz zur Fachkraft. Die Fachkraft fragt, ob der Spieß allein schneller gegangen wäre oder ob es zu zweit besser war, und wo das Kind diese Woche fragen statt nehmen kann: beim Malen, beim Tischdecken, in der Pause. Zum Schluss räumen beide die Küche gemeinsam auf: Das Kind trägt die Schalen zur Spüle, die Fachkraft wischt den Tisch.",
+  "sagen": [
+   "Danke, dass du mir die Traube gegeben hast, als ich gefragt habe. Jetzt du: Wofür sagst du mir Danke?",
+   "Wäre das allein schneller gegangen – oder war es zu zweit besser?",
+   "Wo kannst du diese Woche fragen statt nehmen?"
+  ],
+  "wennEsKippt": "Fällt dem Kind kein Danke-Satz ein, bietet die Fachkraft zwei zur Wahl an: für das Fragen oder für das Geben. Mag es nicht reden, zeigt es auf das Bild der Rezeptkarte, das am besten geklappt hat.",
+  "kurz": "Spieße essen · Danke-Sätze · fragen statt nehmen · aufräumen",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-18",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 1
+   },
+   {
+    "code": "K-12",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Manger et dire merci",
+   "text": "L’adulte et l’enfant mangent leurs brochettes ensemble. L’adulte commence par une phrase merci : « Merci de m’avoir donné le raisin quand je l’ai demandé. » Puis l’enfant dit une phrase merci à l’adulte. L’adulte demande si la brochette aurait été plus rapide à faire seul ou si c’était mieux à deux, et où l’enfant peut demander au lieu de prendre cette semaine : en dessinant, en mettant la table, à la récréation. Pour finir, tous les deux rangent la cuisine : l’enfant porte les bols à l’évier, l’adulte essuie la table.",
+   "sagen": [
+    "Merci de m’avoir donné le raisin quand je l’ai demandé. À toi : pour quoi tu me dis merci ?",
+    "Ça aurait été plus rapide tout seul – ou c’était mieux à deux ?",
+    "Où est-ce que tu peux demander au lieu de prendre cette semaine ?"
+   ],
+   "wennEsKippt": "Si aucune phrase merci ne vient, l’adulte en propose deux au choix : pour avoir demandé ou pour avoir donné. Si l’enfant ne veut pas parler, il montre l’image de la carte recette qui a le mieux marché.",
+   "kurz": "Manger · phrases merci · demander au lieu de prendre · ranger"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Fachkraft macht den ersten Danke-Satz vor – kurz und konkret, ohne Lob-Floskel; so weiß das Kind sofort, wie es geht.",
+    "beobachten": [
+     "Das Kind nennt eine konkrete Hilfe der Fachkraft („du hast mir gegeben“).",
+     "Es findet eine eigene Situation, in der es fragen statt nehmen kann.",
+     "Beim Aufräumen übernimmt es seinen Teil ohne Streit."
+    ],
+    "gruppe": "In der Gruppe sagt jede Fabrik einen Danke-Satz an ihren Partner. Die Fachkraft sammelt zwei, drei Orte, an denen man fragen statt nehmen kann, und hängt sie als Bild auf."
+   },
+   "fr": {
+    "haken": "L’adulte donne l’exemple de la première phrase merci – courte et concrète, sans formule toute faite ; l’enfant voit tout de suite comment faire.",
+    "beobachten": [
+     "L’enfant nomme une aide concrète de l’adulte (« tu m’as donné »).",
+     "Il trouve une situation à lui où il peut demander au lieu de prendre.",
+     "Au rangement, il fait sa part sans dispute."
+    ],
+    "gruppe": "En groupe, chaque fabrique dit une phrase merci à son partenaire. L’adulte recueille deux ou trois endroits où l’on peut demander au lieu de prendre et les affiche en images."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-crew-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "„Gehört!“ – so spricht eine Profiküche",
+  "text": "Die Fachkraft beschreibt in zwei Sätzen eine Restaurantküche am Freitagabend: laut, heiß, Zeitdruck – und trotzdem geht kaum eine Bestellung schief. Sie fragt, wie das gelingt, und verrät dann den Trick: Wer eine Ansage bekommt, wiederholt sie kurz und sagt „Gehört!“. Zum Ausprobieren ruft sie drei schnelle Ansagen („Zwei Gurken in Streifen!“, „Reispapier kommt!“, „Noch zwei Salatblätter!“), und der oder die Jugendliche antwortet jedes Mal mit diesem Rückruf. Dann liest sie das Rezept für Sommerrollen vor, beide waschen sich die Hände, und der oder die Jugendliche wählt einen Posten: Schneiden oder Rollen.",
+  "sagen": [
+   "In einer Profiküche ist es laut und hektisch – trotzdem geht fast nie etwas schief. Was glaubst du, warum?",
+   "Der Trick: Wer eine Ansage hört, wiederholt sie und sagt „Gehört!“. Probieren wir’s: Zwei Gurken in Streifen!",
+   "Du wählst deinen Posten: Schneiden oder Rollen. Nach zwei Rollen wird getauscht."
+  ],
+  "wennEsKippt": "Wirkt der Rückruf albern, reicht ein knappes „Okay, zwei Gurken“ – Hauptsache, die Ansage kommt zurück. Mag der oder die Jugendliche keinen Posten wählen, beginnt er oder sie beim Rollen, weil man dort sofort ein Ergebnis sieht.",
+  "kurz": "Profiküche: Rückruf „Gehört!“ üben · Rezept · Hände · Posten wählen",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "freundschaft",
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-38",
+    "gewicht": 1
+   },
+   {
+    "code": "V-27",
+    "gewicht": 1
+   },
+   {
+    "code": "K-32",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "« Ça marche ! » – le langage d’une cuisine pro",
+   "text": "L’adulte décrit en deux phrases une cuisine de restaurant un vendredi soir de service : bruit, chaleur, urgence – et pourtant presque aucune commande ne rate. Il ou elle demande comment c’est possible, puis révèle le truc : quand on reçoit une annonce, on la répète brièvement et on dit « Ça marche ! ». Pour s’entraîner, l’adulte lance trois annonces rapides (« Deux concombres en bâtonnets ! », « Feuille de riz qui arrive ! », « Encore deux feuilles de salade ! ») et le ou la jeune répond chaque fois par ce rappel. Puis l’adulte lit la recette des rouleaux de printemps, tous les deux se lavent les mains, et le ou la jeune choisit un poste : couper ou rouler.",
+   "sagen": [
+    "Dans une cuisine pro, c’est bruyant et pressé – et pourtant presque rien ne rate. À ton avis, pourquoi ?",
+    "Le truc : quand tu entends une annonce, tu la répètes et tu dis « Ça marche ! ». On essaie : deux concombres en bâtonnets !",
+    "Tu choisis ton poste : couper ou rouler. Après deux rouleaux, on échange."
+   ],
+   "wennEsKippt": "Si le rappel paraît ridicule, un simple « OK, deux concombres » suffit – l’essentiel, c’est que l’annonce revienne. Si le ou la jeune ne veut pas choisir, il ou elle commence à rouler : on y voit tout de suite un résultat.",
+   "kurz": "Cuisine pro : rappel « Ça marche ! » · recette · mains · poste"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Blick hinter die Tür einer Profiküche: Dort spricht man anders – und der oder die Jugendliche probiert es in der ersten Minute selbst aus.",
+    "vorbereitung": [
+     "Allergien klären (Erdnuss, Soja, Sesam, Gluten im Dip)",
+     "Rezept für Sommerrollen ausdrucken oder groß abschreiben",
+     "Drei Ansagen auf Karten schreiben"
+    ],
+    "gruppe": "Mit mehreren Jugendlichen ruft die Fachkraft die Ansagen in die Runde, und wer gemeint ist, antwortet mit Rückruf. Die Posten (Schneiden, Einweichen, Rollen, Anrichten) werden danach verteilt."
+   },
+   "fr": {
+    "haken": "Un coup d’œil derrière la porte d’une cuisine pro : on y parle autrement – et le ou la jeune l’essaie dès la première minute.",
+    "vorbereitung": [
+     "Vérifier les allergies (arachide, soja, sésame, gluten dans la sauce)",
+     "Imprimer ou recopier en grand la recette des rouleaux de printemps",
+     "Écrire trois annonces sur des cartes"
+    ],
+    "gruppe": "Avec plusieurs jeunes, l’adulte lance les annonces au groupe, et la personne visée répond par le rappel. Les postes (couper, tremper, rouler, dresser) sont ensuite répartis."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-crew-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Sommerrollen-Linie: Posten, Ansage, Rückruf",
+  "text": "Die Küche wird zur Linie: Am Posten Schneiden schneidet der oder die Jugendliche Gurke, Karotte und Paprika mit Krallengriff in feine Streifen; am Posten Rollen wird ein Reispapier kurz in lauwarmes Wasser getaucht, belegt und fest eingerollt. Jede Übergabe wird angesagt und zurückgerufen: „Paprika fertig!“ – „Paprika, gehört!“. Nach zwei Rollen tauschen beide die Posten, und der oder die Jugendliche stellt die Füllung der letzten Rolle frei zusammen. Zwischendurch fragt die Fachkraft kurz, wo es hakt, und beide verbessern den Ablauf gemeinsam, etwa durch eine andere Reihenfolge am Brett. Wer sich vertut, sagt es an („Rolle zwei ist gerissen!“), und beide entscheiden, wie es weitergeht.",
+  "sagen": [
+   "Paprika fertig! – Jetzt du: Rückruf, bitte.",
+   "Das Reispapier nur kurz eintauchen – auf dem Brett wird es von selbst weich.",
+   "Posten tauschen! Ab jetzt rollst du, ich schneide.",
+   "Wo hakt es gerade? Was ändern wir an der Linie?"
+  ],
+  "wennEsKippt": "Reißt das Reispapier, war es zu lange im Wasser: Die Fachkraft zeigt eine Rolle ganz langsam, und gerissene Blätter werden einfach doppelt gelegt. Wird es hektisch, ruft die Fachkraft „Linie stopp“, beide atmen einmal tief aus und machen im halben Tempo weiter.",
+  "kurz": "Schneiden und Rollen · jede Übergabe ansagen und rückrufen · tauschen",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "freundschaft",
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-38",
+    "gewicht": 1
+   },
+   {
+    "code": "V-27",
+    "gewicht": 1
+   },
+   {
+    "code": "K-32",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "alltagsdinge",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "La ligne des rouleaux de printemps : poste, annonce, rappel",
+   "text": "La cuisine devient une ligne : au poste « couper », le ou la jeune taille concombre, carotte et poivron en fins bâtonnets, doigts en griffe ; au poste « rouler », on trempe brièvement une feuille de riz dans de l’eau tiède, on la garnit et on la roule bien serrée. Chaque passage est annoncé et rappelé : « Poivron prêt ! » – « Poivron, ça marche ! ». Après deux rouleaux, on échange les postes, et le ou la jeune compose librement la garniture du dernier rouleau. En cours de route, l’adulte demande brièvement où ça coince, et tous les deux améliorent l’organisation, par exemple en changeant l’ordre sur la planche. Si quelqu’un se trompe, il l’annonce (« Le rouleau deux est déchiré ! »), et on décide ensemble de la suite.",
+   "sagen": [
+    "Poivron prêt ! – À toi : le rappel, s’il te plaît.",
+    "Juste un instant dans l’eau – sur la planche, la feuille de riz ramollit toute seule.",
+    "On change de poste ! Maintenant tu roules, je coupe.",
+    "Où est-ce que ça coince ? Qu’est-ce qu’on change sur la ligne ?"
+   ],
+   "wennEsKippt": "Si la feuille de riz se déchire, elle est restée trop longtemps dans l’eau : l’adulte roule un rouleau très lentement, et les feuilles déchirées sont simplement doublées. Si ça devient stressant, l’adulte annonce « Ligne stop », tous les deux expirent longuement une fois et reprennent à mi-vitesse.",
+   "kurz": "Couper et rouler · annoncer et rappeler chaque passage · échanger"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Echte Messer, echte Ansagen und ein Ergebnis, das man fotografieren möchte: Sommerrollen sehen nach Restaurant aus und gelingen ganz ohne Herd.",
+    "vorbereitung": [
+     "Allergien klären; Dip ohne Erdnuss wählen (z. B. Joghurt-Limette)",
+     "Reispapier, Gurke, Karotte, Paprika, Salat, Minze, evtl. Mango",
+     "Zwei Brettchen, ein Gemüsemesser, ein Sparschäler",
+     "Flache Schale mit lauwarmem Leitungswasser, feuchtes Küchentuch",
+     "Ansage-Karten schreiben, Hände waschen, Haare zusammen"
+    ],
+    "aufbau": "Eine Linie auf der Arbeitsfläche: links Gemüse und Brett (Posten Schneiden), in der Mitte die Wasserschale, rechts das feuchte Tuch und der Teller (Posten Rollen). Beide stehen nebeneinander, die Fachkraft auf der Seite des Messers.",
+    "karten": [
+     {
+      "titel": "Ansage-Karten (Rückruf: wiederholen + „Gehört!“)",
+      "karten": [
+       "Gurke fertig!",
+       "Karotte fertig!",
+       "Paprika fertig!",
+       "Reispapier kommt!",
+       "Noch zwei Salatblätter, bitte!",
+       "Rolle drei ist fertig!",
+       "Ich brauche das Brett!",
+       "Linie stopp – kurze Pause!"
+      ]
+     }
+    ],
+    "leichter": "Die Fachkraft schneidet vor, der oder die Jugendliche rollt nur; statt Rückruf genügt „Okay“. Mit weicher Mango und Salat gelingt das Rollen leichter.",
+    "schwerer": "Der oder die Jugendliche plant die Linie selbst (Reihenfolge, wer was wann ansagt) und leitet sie. Ein Bestellzettel mit Sonderwünschen („ohne Paprika, extra Minze“) muss genau so auf dem Teller ankommen.",
+    "gruppe": "Mit drei bis sechs Jugendlichen gibt es mehr Posten: Schneiden, Einweichen, Rollen, Anrichten. Jede Übergabe wird angesagt und zurückgerufen; nach jeder Runde rücken alle einen Posten weiter und verbessern gemeinsam den Ablauf.",
+    "beobachten": [
+     "Der oder die Jugendliche wiederholt Ansagen, ohne erinnert zu werden.",
+     "Er oder sie sagt von sich aus an, wenn etwas fertig ist oder schiefgeht.",
+     "Beim Verbessern der Linie kommt ein eigener Vorschlag, und ein Vorschlag der Fachkraft wird ausprobiert."
+    ],
+    "warum": "Rückruf (closed-loop communication) gilt als Kernmechanismus guter Teamarbeit – in Medizin, Luftfahrt und Profiküchen verhindert das Bestätigen des Gehörten Missverständnisse (Salas et al., 2005).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "De vrais couteaux, de vraies annonces et un résultat qu’on a envie de prendre en photo : les rouleaux de printemps ont un air de restaurant et se font sans plaque de cuisson.",
+    "vorbereitung": [
+     "Vérifier les allergies ; sauce sans arachide (p. ex. yaourt-citron vert)",
+     "Feuilles de riz, concombre, carotte, poivron, salade, menthe, mangue",
+     "Deux planches, un couteau à légumes, un économe",
+     "Plat creux avec de l’eau tiède du robinet, torchon humide",
+     "Écrire les cartes d’annonce, se laver les mains, attacher les cheveux"
+    ],
+    "aufbau": "Une ligne sur le plan de travail : à gauche les légumes et la planche (poste « couper »), au milieu le plat d’eau, à droite le torchon humide et l’assiette (poste « rouler »). Les deux sont côte à côte, l’adulte du côté du couteau.",
+    "karten": [
+     {
+      "titel": "Cartes d’annonce (rappel : répéter + « Ça marche ! »)",
+      "karten": [
+       "Concombre prêt !",
+       "Carotte prête !",
+       "Poivron prêt !",
+       "Feuille de riz qui arrive !",
+       "Encore deux feuilles de salade, s’il te plaît !",
+       "Rouleau trois terminé !",
+       "J’ai besoin de la planche !",
+       "Ligne stop – petite pause !"
+      ]
+     }
+    ],
+    "leichter": "L’adulte coupe à l’avance, le ou la jeune roule seulement ; au lieu du rappel, un « OK » suffit. Avec de la mangue tendre et de la salade, rouler est plus facile.",
+    "schwerer": "Le ou la jeune organise lui-même ou elle-même la ligne (ordre, qui annonce quoi et quand) et la dirige. Un bon de commande avec des demandes spéciales (« sans poivron, menthe en plus ») doit arriver tel quel dans l’assiette.",
+    "gruppe": "De trois à six jeunes, il y a plus de postes : couper, tremper, rouler, dresser. Chaque passage est annoncé et rappelé ; après chaque tour, tout le monde avance d’un poste et améliore ensemble l’organisation.",
+    "beobachten": [
+     "Le ou la jeune répète les annonces sans qu’on le lui rappelle.",
+     "Il ou elle annonce de soi-même quand quelque chose est prêt ou rate.",
+     "En améliorant la ligne, il ou elle propose une idée et essaie une proposition de l’adulte."
+    ],
+    "warum": "Le rappel (communication en boucle fermée) est un mécanisme clé du travail d’équipe – en médecine, en aviation et en cuisine pro, confirmer ce qu’on a entendu évite les malentendus (Salas et al., 2005).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:koch-crew-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Probieren und Beiträge benennen",
+  "text": "Beide probieren die Sommerrollen mit dem Dip. Die Fachkraft nennt einen konkreten Beitrag des oder der Jugendlichen: „Als du ‚Reispapier kommt!‘ gesagt hast, war ich bereit.“ Dann nennt der oder die Jugendliche einen Beitrag der Fachkraft und einen eigenen. Zum Schluss sucht der oder die Jugendliche einen Ort, an dem der Rückruf etwas bringt: im Training, bei einem Schulprojekt, im Praktikum oder bei Absprachen im Chat. Gemeinsam bringen beide die Küche wieder in Ordnung.",
+  "sagen": [
+   "Ein Moment, in dem du mir geholfen hast: Als du „Reispapier kommt!“ gesagt hast, war ich bereit.",
+   "Was war dein bester Beitrag an der Linie – und was meiner?",
+   "Wo könnte dir der Rückruf diese Woche Ärger oder Missverständnisse ersparen?"
+  ],
+  "wennEsKippt": "Fällt die Antwort schwer, legt die Fachkraft drei Ansage-Karten hin, und der oder die Jugendliche wählt die, die am meisten gebracht hat. Wer nicht essen mag, packt eine Rolle ein und nimmt sie mit.",
+  "kurz": "Rollen probieren · Beiträge benennen · Rückruf im Alltag · aufräumen",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "freundschaft",
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-38",
+    "gewicht": 1
+   },
+   {
+    "code": "V-27",
+    "gewicht": 1
+   },
+   {
+    "code": "K-32",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Goûter et nommer les contributions",
+   "text": "Tous les deux goûtent les rouleaux de printemps avec la sauce. L’adulte nomme une contribution concrète du ou de la jeune : « Quand tu as dit “Feuille de riz qui arrive !”, j’étais prêt. » Puis le ou la jeune nomme une contribution de l’adulte et une à lui ou à elle. Pour finir, le ou la jeune cherche un endroit où le rappel serait utile : à l’entraînement, dans un projet de classe, en stage ou pour se mettre d’accord dans un chat. Ensemble, ils remettent la cuisine en ordre.",
+   "sagen": [
+    "Un moment où tu m’as aidé : quand tu as dit « Feuille de riz qui arrive ! », j’étais prêt.",
+    "Quelle a été ta meilleure contribution sur la ligne – et la mienne ?",
+    "Où est-ce que le rappel pourrait t’éviter des malentendus cette semaine ?"
+   ],
+   "wennEsKippt": "Si la réponse est difficile, l’adulte pose trois cartes d’annonce, et le ou la jeune choisit celle qui a le plus aidé. Si le ou la jeune ne veut pas manger, il ou elle emballe un rouleau pour l’emporter.",
+   "kurz": "Goûter · nommer les contributions · rappel au quotidien · ranger"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Fachkraft beginnt mit einem sehr konkreten Beitrag des oder der Jugendlichen – Anerkennung mit Beleg statt „gut gemacht“.",
+    "beobachten": [
+     "Der oder die Jugendliche benennt einen konkreten Beitrag der Fachkraft, nicht nur „war gut“.",
+     "Er oder sie nennt einen eigenen Beitrag, ohne ihn kleinzureden.",
+     "Er oder sie findet einen Ort im Alltag, an dem der Rückruf passt."
+    ],
+    "gruppe": "In der Gruppe nennt jede Person einen Beitrag der Person am Posten davor. Die Fachkraft sammelt Orte, an denen der Rückruf nützt, und die Gruppe wählt einen für die nächste Woche."
+   },
+   "fr": {
+    "haken": "L’adulte commence par une contribution très concrète du ou de la jeune – une reconnaissance avec preuve plutôt qu’un « bien joué ».",
+    "beobachten": [
+     "Le ou la jeune nomme une contribution concrète de l’adulte, pas seulement « c’était bien ».",
+     "Il ou elle nomme sa propre contribution sans la minimiser.",
+     "Il ou elle trouve un endroit du quotidien où le rappel a du sens."
+    ],
+    "gruppe": "En groupe, chaque personne nomme une contribution de la personne du poste précédent. L’adulte recueille des endroits où le rappel est utile, et le groupe en choisit un pour la semaine suivante."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-selbst-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Der Schichten-Becher",
+  "text": "Die Fachkraft stellt ein Glas mit einem fertigen Schichten-Becher auf den Tisch: unten Joghurt, dann Obst, dann Haferflocken, oben wieder Joghurt und eine Beere. Das Kind zählt die Schichten und sagt, was ganz unten liegt. Dann liegen die fünf Bilder des Rezepts durcheinander (Hände waschen, alles holen, schichten, verzieren, aufräumen); das Kind legt sie in die richtige Reihenfolge, und beide lesen sie von links nach rechts. Das Kind wählt seine Sorte: Erdbeer-Banane oder Apfel-Zimt. Nach dem Händewaschen erklärt die Fachkraft ihre neue Rolle: Heute ist sie nur die Küchenhilfe.",
+  "sagen": [
+   "Wie viele Schichten zählst du? Und was liegt ganz unten?",
+   "Die Bilder vom Rezept sind durcheinander. Was macht man zuerst?",
+   "Heute bist du der Chef in der Küche. Ich bin nur die Küchenhilfe – ich mache nur, was du mir sagst."
+  ],
+  "wennEsKippt": "Ist die Reihenfolge zu schwer, legt die Fachkraft das erste und das letzte Bild hin, und das Kind ergänzt die Mitte. Mag das Kind nicht wählen, entscheidet ein Blick in die Obstschale.",
+  "kurz": "Schichten zählen · Rezeptbilder ordnen · Sorte wählen · Hände",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-15",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-31",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "alltag",
+   "ausdauer"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "plan"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "glas",
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Le verre en couches",
+   "text": "L’adulte pose sur la table un verre en couches tout prêt : en bas du yaourt, puis des fruits, puis des flocons d’avoine, en haut encore du yaourt et une baie. L’enfant compte les couches et dit ce qu’il y a tout en bas. Ensuite, les cinq images de la recette sont mélangées (se laver les mains, tout aller chercher, faire les couches, décorer, ranger) ; l’enfant les remet dans le bon ordre, et tous les deux les lisent de gauche à droite. L’enfant choisit sa version : fraise-banane ou pomme-cannelle. Après le lavage des mains, l’adulte explique son nouveau rôle : aujourd’hui, il ou elle n’est que l’aide de cuisine.",
+   "sagen": [
+    "Combien de couches tu comptes ? Et qu’est-ce qu’il y a tout en bas ?",
+    "Les images de la recette sont mélangées. Qu’est-ce qu’on fait en premier ?",
+    "Aujourd’hui, c’est toi le chef en cuisine. Moi, je suis seulement l’aide – je fais seulement ce que tu me dis."
+   ],
+   "wennEsKippt": "Si l’ordre est trop difficile, l’adulte pose la première et la dernière image, et l’enfant complète le milieu. Si l’enfant ne veut pas choisir, un coup d’œil dans la corbeille de fruits décide.",
+   "kurz": "Compter les couches · ranger les images · choisir · mains"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein fertiger Schichten-Becher im durchsichtigen Glas sieht aus wie aus dem Café – und das Kind erfährt sofort, dass es ihn gleich selbst baut.",
+    "vorbereitung": [
+     "Einen Schichten-Becher als Muster im Glas vorbereiten",
+     "Fünf Rezeptbilder malen oder ausdrucken und mischen",
+     "Seife, Handtuch, Haargummi bereitlegen"
+    ],
+    "gruppe": "Mit mehreren Kindern ordnet jedes Kind einen eigenen Satz Rezeptbilder; danach vergleichen die Kinder kurz und einigen sich auf die richtige Reihenfolge."
+   },
+   "fr": {
+    "haken": "Un verre en couches tout prêt, transparent, comme au café – et l’enfant apprend tout de suite qu’il va le faire lui-même.",
+    "vorbereitung": [
+     "Préparer un verre en couches modèle",
+     "Dessiner ou imprimer cinq images de la recette et les mélanger",
+     "Préparer savon, essuie-mains, élastique pour les cheveux"
+    ],
+    "gruppe": "Avec plusieurs enfants, chacun range son propre jeu d’images ; ensuite, les enfants comparent rapidement et se mettent d’accord sur le bon ordre."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-selbst-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Ich bin der Chef: lesen, holen, schichten",
+  "text": "Das Kind liest das Rezept Karte für Karte und holt zuerst alles, was es braucht, auf ein Tablett; die Fachkraft fragt nur: „Hast du alles?“ Dann schichtet das Kind selbst: zwei Löffel Joghurt, eine Handvoll Obst, ein Löffel Haferflocken – und noch einmal von vorn. Nach jedem Bild dreht das Kind die Karte um, so sieht es, was schon geschafft ist. Die Fachkraft hilft nur, wenn das Kind sie mit einem Satz darum bittet („Kannst du mir das Glas halten?“), und hält sich sonst mit Tipps zurück. Zum Schluss verziert das Kind seinen Becher, wischt seinen Platz ab und stellt alles an seinen Ort zurück.",
+  "sagen": [
+   "Schau auf die erste Karte: Was brauchst du? Hol alles auf das Tablett.",
+   "Hast du alles? Dann geht’s los – du bestimmst.",
+   "Fertig mit diesem Bild? Dreh die Karte um.",
+   "Ich helfe gern, wenn du mich fragst. Sag mir einfach, was ich tun soll."
+  ],
+  "wennEsKippt": "Stockt das Kind, zeigt die Fachkraft nur auf die nächste Karte, ohne etwas vorzumachen. Geht etwas daneben, sagt sie „Passiert jedem Koch“ und zeigt, wo das Wischtuch liegt; ist das Kind sehr unsicher, schichten beide abwechselnd, und das Kind beginnt.",
+  "kurz": "Rezept lesen · alles bereitlegen · selbst schichten · Karte umdrehen",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-15",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-31",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "alltag",
+   "ausdauer"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "plan"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "loeffel",
+   "glas",
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "C’est moi le chef : lire, préparer, superposer",
+   "text": "L’enfant lit la recette carte par carte et va d’abord chercher tout ce dont il a besoin sur un plateau ; l’adulte demande seulement : « Tu as tout ? » Puis l’enfant fait lui-même les couches : deux cuillères de yaourt, une poignée de fruits, une cuillère de flocons d’avoine – et on recommence. Après chaque image, l’enfant retourne la carte : il voit ainsi ce qui est déjà fait. L’adulte n’aide que si l’enfant le demande avec une phrase (« Tu peux me tenir le verre ? ») et garde ses conseils pour lui. Pour finir, l’enfant décore son verre, essuie sa place et remet tout à sa place.",
+   "sagen": [
+    "Regarde la première carte : de quoi tu as besoin ? Mets tout sur le plateau.",
+    "Tu as tout ? Alors on y va – c’est toi qui décides.",
+    "Fini avec cette image ? Retourne la carte.",
+    "Je t’aide volontiers si tu me le demandes. Dis-moi simplement ce que je dois faire."
+   ],
+   "wennEsKippt": "Si l’enfant bloque, l’adulte montre seulement la carte suivante, sans faire à sa place. Si quelque chose se renverse, l’adulte dit « Ça arrive à tous les cuisiniers » et montre où est le chiffon ; si l’enfant est très hésitant, on fait les couches l’un après l’autre, et l’enfant commence.",
+   "kurz": "Lire la recette · tout préparer · superposer · retourner la carte"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Fachkraft wird zur Küchenhilfe, die nur auf Ansage arbeitet – für viele Kinder das erste Mal, dass ein Erwachsener in der Küche auf sie hört.",
+    "vorbereitung": [
+     "Allergien klären (Milch, Hafer/Gluten); Ersatz: Soja- oder Haferjoghurt",
+     "Fünf Rezeptkarten: Hände – holen – schichten – verzieren – aufräumen",
+     "Joghurt, Obst (Erdbeeren, Banane oder Apfel), Haferflocken, Zimt",
+     "Obst vorschneiden; Beeren und Trauben für unter 5-Jährige halbieren",
+     "Tablett, Glas, Löffel, Wischtuch"
+    ],
+    "aufbau": "Die Zutaten stehen auf einer Ablage etwas entfernt, das leere Tablett vor dem Kind – so wird das Holen ein echter Planungsschritt. Die Rezeptkarten liegen in einer Reihe oberhalb des Tabletts.",
+    "karten": [
+     {
+      "titel": "Rezeptkarten Schichten-Becher (Bild und ein Wort)",
+      "karten": [
+       "Hände waschen – Seife, zweimal „Zum Geburtstag viel Glück“",
+       "Alles holen – Joghurt, Obst, Haferflocken, Löffel, Glas",
+       "Schichten – Joghurt, Obst, Haferflocken, noch einmal",
+       "Verzieren – eine Beere oder eine Prise Zimt obendrauf",
+       "Aufräumen – Platz abwischen, alles zurück"
+      ]
+     }
+    ],
+    "leichter": "Für 4- bis 6-Jährige: nur drei Karten (holen – schichten – aufräumen) und Zutaten in kleinen Schalen mit je einem Löffel. Die Fachkraft liest die Karte vor, das Kind zeigt und macht.",
+    "schwerer": "Ab 9 Jahren schreibt das Kind die Einkaufsliste selbst, rechnet die Mengen für zwei Becher und schneidet weiches Obst mit einem Tafelmesser (Krallengriff). Zum Schluss erfindet es eine eigene Rezeptkarte für eine dritte Sorte.",
+    "gruppe": "Jedes Kind ist Chef seines eigenen Bechers, die Zutaten stehen auf einer gemeinsamen Ablage. Wer fertig ist, darf einem anderen Kind als Küchenhilfe helfen – aber nur auf Ansage.",
+    "beobachten": [
+     "Das Kind holt alles, bevor es anfängt, und schaut dafür auf die Karte.",
+     "Es arbeitet die Karten nacheinander ab und dreht sie um.",
+     "Es bittet gezielt um Hilfe und räumt seinen Platz ohne Aufforderung auf."
+    ],
+    "warum": "Kinder bleiben dran, wenn sie Selbstbestimmung und Können erleben (Ryan & Deci, 2000); Alltagsaufgaben mit Planen, Merken und Selbstkontrolle stärken die exekutiven Funktionen (Diamond & Lee, 2011).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "L’adulte devient l’aide de cuisine qui n’agit que sur commande – pour beaucoup d’enfants, c’est la première fois qu’un adulte les écoute en cuisine.",
+    "vorbereitung": [
+     "Vérifier les allergies (lait, avoine/gluten) ; yaourt soja ou avoine",
+     "Cinq cartes recette : mains – chercher – couches – décorer – ranger",
+     "Yaourt, fruits (fraises, banane ou pomme), flocons d’avoine, cannelle",
+     "Couper les fruits ; couper baies et raisins en deux avant 5 ans",
+     "Plateau, verre, cuillère, chiffon"
+    ],
+    "aufbau": "Les ingrédients sont posés un peu à l’écart, le plateau vide devant l’enfant – aller chercher devient une vraie étape de planification. Les cartes recette sont alignées au-dessus du plateau.",
+    "karten": [
+     {
+      "titel": "Cartes recette du verre en couches (image et un mot)",
+      "karten": [
+       "Se laver les mains – savon, deux fois « Joyeux anniversaire »",
+       "Tout chercher – yaourt, fruits, flocons d’avoine, cuillère, verre",
+       "Faire les couches – yaourt, fruits, flocons, et encore une fois",
+       "Décorer – une baie ou une pincée de cannelle sur le dessus",
+       "Ranger – essuyer sa place, tout remettre"
+      ]
+     }
+    ],
+    "leichter": "Pour les 4–6 ans : trois cartes seulement (chercher – couches – ranger) et les ingrédients dans de petits bols avec une cuillère chacun. L’adulte lit la carte, l’enfant montre et fait.",
+    "schwerer": "Dès 9 ans, l’enfant écrit lui-même la liste de courses, calcule les quantités pour deux verres et coupe des fruits tendres avec un couteau de table (position en griffe). Pour finir, il invente sa propre carte recette pour une troisième version.",
+    "gruppe": "Chaque enfant est chef de son propre verre, les ingrédients sont sur une table commune. Qui a fini peut servir d’aide de cuisine à un autre enfant – mais seulement sur demande.",
+    "beobachten": [
+     "L’enfant va tout chercher avant de commencer et regarde la carte pour cela.",
+     "Il suit les cartes l’une après l’autre et les retourne.",
+     "Il demande de l’aide de façon ciblée et range sa place sans qu’on le lui dise."
+    ],
+    "warum": "Les enfants persévèrent quand ils se sentent autonomes et compétents (Ryan & Deci, 2000) ; les tâches du quotidien qui demandent de planifier, retenir et se contrôler renforcent les fonctions exécutives (Diamond & Lee, 2011).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:koch-selbst-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Essen und der Fertig-Check",
+  "text": "Das Kind isst seinen Becher, die Fachkraft isst oder trinkt etwas mit. Dann dreht sie die Rezeptkarten wieder um, und das Kind zeigt auf jede: Was davon hast du ganz allein gemacht? Die Fachkraft sagt dazu einen genauen Satz, zum Beispiel: „Du hast alles geholt, bevor du angefangen hast – so machen es Profis in der Küche.“ Zum Schluss wählt das Kind eine kleine Sache, die es diese Woche selbst macht: sein Pausenbrot einpacken, den Tisch decken oder die Trinkflasche füllen.",
+  "sagen": [
+   "Zeig mal: Was davon hast du ganz allein gemacht?",
+   "Du hast alles geholt, bevor du angefangen hast. So machen es Profis in der Küche.",
+   "Was machst du diese Woche selbst – Pausenbrot einpacken, Tisch decken oder Trinkflasche füllen?"
+  ],
+  "wennEsKippt": "Wertet das Kind seine Arbeit ab, zeigt die Fachkraft auf eine Karte und beschreibt nur, was sie gesehen hat. Fällt keine eigene Sache ein, wählt das Kind eine der drei aus.",
+  "kurz": "Becher essen · Karten zeigen: Was allein? · eine Sache für die Woche",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-15",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-31",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "alltag",
+   "ausdauer"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Manger et vérifier : tout fait ?",
+   "text": "L’enfant mange son verre, l’adulte mange ou boit quelque chose aussi. Puis l’adulte retourne de nouveau les cartes recette, et l’enfant les montre une par une : qu’est-ce que tu as fait tout seul ? L’adulte ajoute une phrase précise, par exemple : « Tu es allé tout chercher avant de commencer – c’est comme ça que font les pros en cuisine. » Pour finir, l’enfant choisit une petite chose qu’il fera lui-même cette semaine : emballer son goûter, mettre la table ou remplir sa gourde.",
+   "sagen": [
+    "Montre-moi : qu’est-ce que tu as fait tout seul ?",
+    "Tu es allé tout chercher avant de commencer. C’est comme ça que font les pros en cuisine.",
+    "Qu’est-ce que tu fais toi-même cette semaine – emballer ton goûter, mettre la table ou remplir ta gourde ?"
+   ],
+   "wennEsKippt": "Si l’enfant dévalorise son travail, l’adulte montre une carte et décrit seulement ce qu’il ou elle a vu. Si aucune idée ne vient, l’enfant choisit une des trois.",
+   "kurz": "Manger · montrer les cartes : fait seul ? · une chose pour la semaine"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die umgedrehten Karten sind der Beweis: Das Kind sieht, wie viel es allein geschafft hat.",
+    "beobachten": [
+     "Das Kind nennt mindestens zwei Schritte, die es allein gemacht hat.",
+     "Es nimmt die Anerkennung an, ohne sie abzuwehren.",
+     "Es wählt eine konkrete kleine Aufgabe für die Woche."
+    ],
+    "gruppe": "In der Gruppe zeigt jedes Kind eine Karte, die es allein geschafft hat. Die Fachkraft sammelt die Wochen-Aufgaben auf einem Plakat „Das mache ich selbst“."
+   },
+   "fr": {
+    "haken": "Les cartes retournées sont la preuve : l’enfant voit tout ce qu’il a réussi seul.",
+    "beobachten": [
+     "L’enfant nomme au moins deux étapes qu’il a faites seul.",
+     "Il accepte la reconnaissance sans la repousser.",
+     "Il choisit une petite tâche concrète pour la semaine."
+    ],
+    "gruppe": "En groupe, chaque enfant montre une carte qu’il a réussie seul. L’adulte note les tâches de la semaine sur une affiche « Ça, je le fais moi-même »."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-plan-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Vom Paket bis zum Teller: schätzen",
+  "text": "Die Fachkraft legt eine Packung Nudeln, eine Packung passierte Tomaten und einen Kassenzettel auf den Tisch. Sie fragt: „Wie lange dauert es vom Paket bis zum Teller – und was kostet eine Portion ungefähr?“ Der oder die Jugendliche schätzt beides und notiert die Zahlen auf einem Zettel, der bis zum Essen umgedreht liegen bleibt. Dann liest er oder sie das Rezept für One-Pot-Pasta (alles in einem Topf, kein Abgießen) einmal ganz durch und markiert den Schritt, der am längsten dauert. Nach dem Händewaschen wählt der oder die Jugendliche: Grundrezept oder mit eigenem Extra.",
+  "sagen": [
+   "Vom Paket bis zum Teller: Wie viele Minuten schätzt du? Und was kostet eine Portion?",
+   "Lies das Rezept einmal ganz durch, bevor du irgendetwas anfasst. Was dauert am längsten?",
+   "Grundrezept oder mit Extra – du entscheidest."
+  ],
+  "wennEsKippt": "Mag der oder die Jugendliche nicht schätzen, nennt die Fachkraft zwei Zahlen zur Auswahl. Ist Lesen mühsam, liest die Fachkraft vor, und der oder die Jugendliche zeigt auf die Zeile mit der längsten Zeit.",
+  "kurz": "Zeit und Preis schätzen · Rezept ganz lesen · Extra wählen · Hände",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "selbstwert",
+   "lernen"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-62",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-45",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-32",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "alltag",
+   "ausdauer"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "plan"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "papier",
+   "stifte",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Du paquet à l’assiette : estimer",
+   "text": "L’adulte pose sur la table un paquet de pâtes, une brique de coulis de tomates et un ticket de caisse. Il ou elle demande : « Combien de temps faut-il du paquet à l’assiette – et combien coûte une portion, à peu près ? » Le ou la jeune estime les deux et note les chiffres sur un papier, qui reste retourné jusqu’au repas. Puis il ou elle lit une fois en entier la recette des one-pot pasta (tout dans une seule casserole, sans égoutter) et marque l’étape la plus longue. Après le lavage des mains, le ou la jeune choisit : recette de base ou avec un extra.",
+   "sagen": [
+    "Du paquet à l’assiette : combien de minutes tu estimes ? Et combien coûte une portion ?",
+    "Lis la recette en entier avant de toucher à quoi que ce soit. Qu’est-ce qui prend le plus de temps ?",
+    "Recette de base ou avec un extra – c’est toi qui décides."
+   ],
+   "wennEsKippt": "Si le ou la jeune ne veut pas estimer, l’adulte propose deux chiffres au choix. Si la lecture est pénible, l’adulte lit à voix haute, et le ou la jeune montre la ligne qui prend le plus de temps.",
+   "kurz": "Estimer temps et prix · lire la recette · choisir un extra · mains"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Eine Schätzfrage mit echtem Kassenzettel: Die Zahl auf dem umgedrehten Zettel macht neugierig, ob man richtig lag.",
+    "vorbereitung": [
+     "Kassenzettel vom Einkauf aufheben (Nudeln, passierte Tomaten)",
+     "Rezeptkarte One-Pot-Pasta ausdrucken, Zettel und Stift"
+    ],
+    "gruppe": "In der Gruppe schätzt jede Person für sich; die Schätzungen liegen verdeckt in der Mitte und werden erst beim Essen aufgedeckt."
+   },
+   "fr": {
+    "haken": "Une question d’estimation avec un vrai ticket de caisse : le chiffre sur le papier retourné donne envie de savoir si l’on avait raison.",
+    "vorbereitung": [
+     "Garder le ticket de caisse des courses (pâtes, coulis de tomates)",
+     "Imprimer la carte recette one-pot pasta, papier et stylo"
+    ],
+    "gruppe": "En groupe, chaque personne estime seule ; les estimations restent retournées au milieu et ne sont dévoilées qu’au repas."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-plan-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "One-Pot-Pasta: selbst planen, kochen, aufräumen",
+  "text": "Der oder die Jugendliche schreibt zuerst einen Ablaufplan in drei Zeilen: Was muss zuerst passieren, was kann nebenher laufen, was kommt am Ende? Dann kommen Nudeln, passierte Tomaten, Wasser, eine Prise Salz und das Extra in einen breiten Topf; er oder sie bringt alles zum Kochen und rührt danach bei mittlerer Hitze etwa alle zwei Minuten um, bis die Nudeln weich sind. Die Wartezeit nutzt der oder die Jugendliche zum Aufräumen nebenher: Brett abwaschen, Packungen weg, Tisch decken. Die Fachkraft bleibt in Reichweite, greift aber nur bei Gefahr ein und antwortet auf Fragen – den Plan führt der oder die Jugendliche. Zum Schluss wird abgeschmeckt, angerichtet und der Herd ausgeschaltet.",
+  "sagen": [
+   "Was muss zuerst passieren – und was kann nebenher laufen?",
+   "Du bist am Herd. Ich bin da, aber ich greife nur ein, wenn es gefährlich wird.",
+   "Die Wartezeit ist Aufräumzeit: Was kannst du jetzt schon wegräumen?",
+   "Abschmecken: Braucht es noch Salz, etwas Säure oder etwas Frisches?"
+  ],
+  "wennEsKippt": "Setzt etwas an, Hitze herunterdrehen, Topf von der Platte ziehen, kurz besprechen und weitermachen. Ist der Plan zu viel, schreibt die Fachkraft die drei Zeilen vor, und der oder die Jugendliche ordnet sie nur; bei Unsicherheit am Herd rühren beide abwechselnd.",
+  "kurz": "Ablaufplan · alles in einen Topf · rühren · nebenher aufräumen",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "selbstwert",
+   "lernen"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-62",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-45",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-32",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "alltag",
+   "ausdauer"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "kochen",
+   "plan"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "papier",
+   "stifte",
+   "uhr",
+   "loeffel",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "One-pot pasta : planifier, cuisiner, ranger soi-même",
+   "text": "Le ou la jeune écrit d’abord un plan en trois lignes : qu’est-ce qui doit se faire en premier, qu’est-ce qui peut se faire en parallèle, qu’est-ce qui vient à la fin ? Puis les pâtes, le coulis de tomates, l’eau, une pincée de sel et l’extra vont dans une grande casserole ; il ou elle porte le tout à ébullition, puis remue à feu moyen environ toutes les deux minutes jusqu’à ce que les pâtes soient tendres. Le ou la jeune profite de l’attente pour ranger en parallèle : laver la planche, jeter les emballages, mettre la table. L’adulte reste à portée de main, mais n’intervient qu’en cas de danger et répond aux questions – c’est le ou la jeune qui mène le plan. Pour finir, on goûte, on assaisonne, on sert et on éteint la plaque.",
+   "sagen": [
+    "Qu’est-ce qui doit se faire en premier – et qu’est-ce qui peut se faire en parallèle ?",
+    "C’est toi aux fourneaux. Je suis là, mais je n’interviens que si ça devient dangereux.",
+    "Le temps d’attente, c’est du temps pour ranger : qu’est-ce que tu peux déjà ranger ?",
+    "On goûte : il faut encore du sel, un peu d’acidité ou quelque chose de frais ?"
+   ],
+   "wennEsKippt": "Si ça attache, baisser le feu, retirer la casserole de la plaque, en parler brièvement et continuer. Si le plan est trop lourd, l’adulte écrit les trois lignes et le ou la jeune les met seulement dans l’ordre ; en cas d’hésitation aux fourneaux, on remue en alternance.",
+   "kurz": "Plan en 3 lignes · une seule casserole · remuer · ranger en parallèle"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein warmes Essen in einem einzigen Topf, ganz ohne Abgießen: Wer das einmal allein geschafft hat, kann sich selbst versorgen.",
+    "vorbereitung": [
+     "Allergien klären (Gluten, Milch beim Käse); glutenfreie Nudeln als Ersatz",
+     "250 g kurze Nudeln, 400 ml passierte Tomaten, Salz, Öl, ein Extra",
+     "Breiter Topf, Kochlöffel, Messbecher, Wecker oder Timer",
+     "Rezeptkarte und Zettel für den Ablaufplan",
+     "Topfgriffe nach innen; Fachkraft bleibt in Reichweite des Herds"
+    ],
+    "aufbau": "Die Arbeitsfläche ist frei bis auf Rezept, Plan und Zutaten; der Topf steht auf einer hinteren Platte, die Griffe zeigen nach innen. Die Fachkraft steht seitlich, nicht vor dem Herd – sie sieht alles, ist aber nicht im Weg.",
+    "karten": [
+     {
+      "titel": "Rezeptkarte One-Pot-Pasta (2 Portionen)",
+      "karten": [
+       "250 g kurze Nudeln (z. B. Penne)",
+       "400 ml passierte Tomaten und 400 ml Wasser",
+       "1 Prise Salz, 1 EL Olivenöl, etwas Oregano",
+       "Extra nach Wahl: Paprika, Zucchini, Mais, Feta oder Basilikum",
+       "Alles in den Topf, aufkochen, bei mittlerer Hitze rühren, bis die Nudeln weich sind",
+       "Abschmecken, anrichten – Herd aus!"
+      ]
+     },
+     {
+      "titel": "Ablaufplan in drei Zeilen",
+      "karten": [
+       "Zuerst: …",
+       "Nebenher: …",
+       "Am Ende: …"
+      ]
+     }
+    ],
+    "leichter": "Die Fachkraft liest das Rezept vor und schreibt den Plan nach Ansage; die Zutaten sind schon abgemessen. Der oder die Jugendliche rührt, schmeckt ab und räumt nebenher auf.",
+    "schwerer": "Der oder die Jugendliche rechnet mit dem Kassenzettel den Preis pro Portion aus, plant die Menge für vier Personen und vergleicht am Ende geschätzte und echte Zeit.",
+    "gruppe": "Zu zweit oder zu dritt teilen sich die Jugendlichen die Planzeilen (Zeit, Einkauf, Aufräumen), gekocht wird in einem Topf mit wechselndem Rührdienst. Bei mehr als drei Personen gibt es zwei Töpfe, und jede Gruppe stellt ihren Plan kurz vor.",
+    "beobachten": [
+     "Der oder die Jugendliche liest das Rezept ganz, bevor er oder sie anfängt.",
+     "Er oder sie nutzt Wartezeit von sich aus für Aufräumen oder den nächsten Schritt.",
+     "Er oder sie fragt gezielt nach, statt zu raten oder aufzugeben."
+    ],
+    "warum": "Selbstständigkeit wächst, wenn Jugendliche Planen, Tun und Überprüfen selbst in der Hand haben (Ryan & Deci, 2000); Kochen beansprucht dabei alle exekutiven Funktionen – planen, im Kopf behalten, Impulse steuern (Diamond, 2013).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "Un repas chaud dans une seule casserole, sans rien égoutter : qui l’a réussi une fois seul peut se débrouiller tout seul.",
+    "vorbereitung": [
+     "Vérifier les allergies (gluten, lait du fromage) ; pâtes sans gluten",
+     "250 g de pâtes courtes, 400 ml de coulis de tomates, sel, huile, un extra",
+     "Grande casserole, cuillère en bois, verre doseur, minuteur",
+     "Carte recette et papier pour le plan",
+     "Poignées vers l’intérieur ; l’adulte reste à portée de la cuisinière"
+    ],
+    "aufbau": "Le plan de travail est libre, sauf la recette, le plan et les ingrédients ; la casserole est sur une plaque arrière, poignées vers l’intérieur. L’adulte se tient sur le côté, pas devant la cuisinière – il ou elle voit tout sans gêner.",
+    "karten": [
+     {
+      "titel": "Carte recette one-pot pasta (2 portions)",
+      "karten": [
+       "250 g de pâtes courtes (p. ex. penne)",
+       "400 ml de coulis de tomates et 400 ml d’eau",
+       "1 pincée de sel, 1 c. à soupe d’huile d’olive, un peu d’origan",
+       "Extra au choix : poivron, courgette, maïs, feta ou basilic",
+       "Tout dans la casserole, porter à ébullition, remuer à feu moyen jusqu’à ce que ce soit tendre",
+       "Goûter, servir – plaque éteinte !"
+      ]
+     },
+     {
+      "titel": "Plan en trois lignes",
+      "karten": [
+       "D’abord : …",
+       "En parallèle : …",
+       "À la fin : …"
+      ]
+     }
+    ],
+    "leichter": "L’adulte lit la recette et écrit le plan sous la dictée ; les ingrédients sont déjà mesurés. Le ou la jeune remue, goûte et range en parallèle.",
+    "schwerer": "Le ou la jeune calcule le prix par portion avec le ticket de caisse, prévoit la quantité pour quatre personnes et compare à la fin le temps estimé et le temps réel.",
+    "gruppe": "À deux ou trois, les jeunes se partagent les lignes du plan (temps, courses, rangement) et cuisinent dans une casserole en se relayant pour remuer. À plus de trois, on fait deux casseroles, et chaque groupe présente brièvement son plan.",
+    "beobachten": [
+     "Le ou la jeune lit la recette en entier avant de commencer.",
+     "Il ou elle utilise de soi-même l’attente pour ranger ou préparer la suite.",
+     "Il ou elle pose des questions précises au lieu de deviner ou d’abandonner."
+    ],
+    "warum": "L’autonomie grandit quand les jeunes ont en main la planification, l’action et la vérification (Ryan & Deci, 2000) ; cuisiner sollicite toutes les fonctions exécutives – planifier, garder en tête, contrôler ses impulsions (Diamond, 2013).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:koch-plan-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Geschätzt gegen echt",
+  "text": "Beim Essen dreht der oder die Jugendliche den Zettel mit den Schätzungen um und vergleicht: Wie lange hat es wirklich gedauert, was kostet die Portion ungefähr? Die Fachkraft fragt, welche Zeile des Plans am meisten geholfen hat und was beim nächsten Kochen anders laufen soll. Dann sucht der oder die Jugendliche eine Sache, die er oder sie diese Woche selbst plant und erledigt, etwa ein Frühstück, einen Einkauf oder einen Termin. Zum Schluss wird gemeinsam gespült und die Küche aufgeräumt.",
+  "sagen": [
+   "Deine Schätzung gegen die Wirklichkeit: Wie nah warst du dran?",
+   "Welche Zeile im Plan hat dir am meisten gebracht?",
+   "Was planst und erledigst du diese Woche selbst?"
+  ],
+  "wennEsKippt": "Lag die Schätzung weit daneben, sagt die Fachkraft: „Profis schätzen auch falsch – deshalb machen sie einen Plan.“ Fällt keine Alltagssache ein, bietet sie drei zur Wahl an.",
+  "kurz": "Schätzung gegen echt · was im Plan half · eine Sache selbst planen",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "selbstwert",
+   "lernen"
+  ],
+  "eldib": [
+   {
+    "code": "KOG-62",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-45",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-32",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "alltag",
+   "ausdauer"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "papier",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Estimé contre réel",
+   "text": "Pendant le repas, le ou la jeune retourne le papier avec ses estimations et compare : combien de temps ça a vraiment pris, combien coûte la portion à peu près ? L’adulte demande quelle ligne du plan a le plus aidé et ce qui devrait changer la prochaine fois qu’on cuisine. Puis le ou la jeune cherche une chose qu’il ou elle va planifier et faire seul cette semaine, par exemple un petit-déjeuner, une course ou un rendez-vous. Pour finir, on fait la vaisselle ensemble et on range la cuisine.",
+   "sagen": [
+    "Ton estimation contre la réalité : tu étais loin ?",
+    "Quelle ligne du plan t’a le plus servi ?",
+    "Qu’est-ce que tu planifies et fais toi-même cette semaine ?"
+   ],
+   "wennEsKippt": "Si l’estimation était très loin, l’adulte dit : « Les pros se trompent aussi – c’est pour ça qu’ils font un plan. » Si aucune idée ne vient, l’adulte en propose trois au choix.",
+   "kurz": "Estimé contre réel · ce qui a aidé · une chose à planifier seul"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Der umgedrehte Zettel: Jetzt zeigt sich, wie gut die Schätzung war.",
+    "beobachten": [
+     "Der oder die Jugendliche vergleicht Schätzung und Ergebnis ohne Abwerten.",
+     "Er oder sie benennt einen Teil des Plans, der geholfen hat.",
+     "Er oder sie wählt eine konkrete Erledigung für die Woche (was, wann)."
+    ],
+    "gruppe": "In der Gruppe deckt jede Person ihre Schätzung auf; die Gruppe sammelt, was beim Planen geholfen hat, und jede Person nennt ihre Erledigung für die Woche."
+   },
+   "fr": {
+    "haken": "Le papier retourné : on découvre enfin si l’estimation était bonne.",
+    "beobachten": [
+     "Le ou la jeune compare estimation et résultat sans se dévaloriser.",
+     "Il ou elle nomme une partie du plan qui a aidé.",
+     "Il ou elle choisit une tâche concrète pour la semaine (quoi, quand)."
+    ],
+    "gruppe": "En groupe, chaque personne dévoile son estimation ; le groupe rassemble ce qui a aidé à planifier, et chaque personne dit sa tâche de la semaine."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-sinne-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Augen zu, Mund auf: Was sagt dein Gesicht?",
+  "text": "Die Fachkraft hält ein kleines Stück Zitrone und ein Stück Banane bereit und fragt, ob das Kind mit geschlossenen Augen probieren mag; ein Tuch über den Augen ist freiwillig. Das Kind probiert, und die Fachkraft beschreibt, was sie in seinem Gesicht sieht: „Deine Nase kraust sich, deine Augen kneifen zu.“ Dann probiert die Fachkraft, und das Kind liest ihr Gesicht. Sie verrät das Staun-Wissen dazu: Schon neugeborene Babys machen bei Saurem und Süßem ganz eigene Gesichter. Danach waschen beide die Hände und schauen sich das Rezept für den Kräuterquark an.",
+  "sagen": [
+   "Magst du mit geschlossenen Augen probieren? Das Tuch darfst du nehmen – musst du aber nicht.",
+   "Dein Gesicht hat gerade etwas verraten: Nase kraus, Augen zu. Was meinst du, was es sagt?",
+   "Jetzt probiere ich – und du liest mein Gesicht."
+  ],
+  "wennEsKippt": "Mag das Kind die Augen nicht schließen, probiert es mit offenen Augen, und die Fachkraft schaut weg, bis es „fertig“ sagt. Will es gar nicht probieren, beginnt die Fachkraft, und das Kind ist nur Gesichter-Leser.",
+  "kurz": "Zitrone und Banane blind probieren · Gesichter lesen · Hände",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-21",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-15",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "kochen",
+   "sinne"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "tuch",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Yeux fermés, bouche ouverte : que dit ton visage ?",
+   "text": "L’adulte prépare un petit morceau de citron et un morceau de banane et demande si l’enfant veut goûter les yeux fermés ; un foulard sur les yeux est facultatif. L’enfant goûte, et l’adulte décrit ce qu’il ou elle voit sur son visage : « Ton nez se plisse, tes yeux se ferment fort. » Puis l’adulte goûte, et l’enfant lit son visage. L’adulte ajoute un fait étonnant : déjà les nouveau-nés font des grimaces bien à eux devant l’acide et le sucré. Ensuite, tous les deux se lavent les mains et regardent la recette du fromage blanc aux herbes.",
+   "sagen": [
+    "Tu veux goûter les yeux fermés ? Tu peux prendre le foulard – mais tu n’es pas obligé.",
+    "Ton visage vient de dire quelque chose : nez plissé, yeux fermés. À ton avis, qu’est-ce qu’il dit ?",
+    "Maintenant, c’est moi qui goûte – et toi, tu lis mon visage."
+   ],
+   "wennEsKippt": "Si l’enfant ne veut pas fermer les yeux, il goûte les yeux ouverts, et l’adulte regarde ailleurs jusqu’à ce qu’il dise « fini ». S’il ne veut pas goûter du tout, l’adulte commence, et l’enfant est seulement lecteur de visages.",
+   "kurz": "Citron et banane à l’aveugle · lire les visages · mains"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Stück Zitrone und die Frage „Was sagt dein Gesicht?“ – niemand kann ein Zitronengesicht verhindern, und genau das macht neugierig.",
+    "vorbereitung": [
+     "Allergien und Abneigungen klären; nie zum Probieren drängen",
+     "Zitrone und Banane in kleine Stücke schneiden",
+     "Ein sauberes Tuch als freiwillige Augenbinde"
+    ],
+    "gruppe": "In der Gruppe probieren zwei Kinder gleichzeitig, die anderen lesen die Gesichter und beschreiben, was sie sehen (Nase, Augen, Mund) – ohne Auslachen."
+   },
+   "fr": {
+    "haken": "Un morceau de citron et la question « Que dit ton visage ? » – personne ne peut empêcher une grimace au citron, et c’est justement ce qui intrigue.",
+    "vorbereitung": [
+     "Vérifier allergies et dégoûts ; ne jamais forcer à goûter",
+     "Couper citron et banane en petits morceaux",
+     "Un foulard propre comme bandeau facultatif"
+    ],
+    "gruppe": "En groupe, deux enfants goûtent en même temps, les autres lisent les visages et décrivent ce qu’ils voient (nez, yeux, bouche) – sans se moquer."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-sinne-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Geschmacks-Detektive und das Quark-Gesicht",
+  "text": "In der Küche stehen vier Schälchen mit kleinen Probierhappen: süß (Apfel), sauer (Zitrone), salzig (Salzbrezel), leicht bitter (Chicorée oder Radieschen). Das Kind probiert, beide lesen sich gegenseitig die Gesichter und finden für jeden Happen ein Gefühlswort: froh, überrascht, igitt, neugierig. Dann rührt das Kind den Kräuterquark nach Rezept selbst an: Quark mit etwas Milch glatt rühren, Schnittlauch mit der Kinderschere hineinschneiden, eine Prise Salz, probieren, nachwürzen. Es streicht den Quark auf eine Scheibe Brot und legt mit Gurke, Paprika und Karotte ein Gesicht, das zu einem Gefühl passt. Die Fachkraft sagt, welches Gefühl sie sieht, und das Kind erklärt, woran man es erkennt.",
+  "sagen": [
+   "Probier mal – ich schaue auf dein Gesicht. Welches Wort passt: froh, überrascht, igitt oder neugierig?",
+   "Jetzt du: Was sagt mein Gesicht bei der Zitrone?",
+   "Leg auf dein Brot ein Gesicht. Ich versuche herauszufinden, welches Gefühl es ist.",
+   "Woran hätte ich es erkennen können – am Mund, an den Augen, an den Augenbrauen?"
+  ],
+  "wennEsKippt": "Mag das Kind einen Happen nicht, darf es nur riechen oder ablehnen – „Nein danke“ ist ein gültiges Ergebnis. Fällt kein Gefühlswort ein, hält die Fachkraft drei Wortkarten hin, und das Kind zeigt auf eine.",
+  "kurz": "Vier Geschmäcker probieren · Gesichter lesen · Quark-Gesicht legen",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-21",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-15",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "kochen",
+   "sinne"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "loeffel",
+   "schere",
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Détectives du goût et visage en fromage blanc",
+   "text": "En cuisine, quatre petits bols attendent avec de petites bouchées : sucré (pomme), acide (citron), salé (bretzel), un peu amer (endive ou radis). L’enfant goûte, l’adulte et l’enfant lisent mutuellement leurs visages et trouvent pour chaque bouchée un mot d’émotion : content, surpris, beurk, curieux. Puis l’enfant prépare lui-même le fromage blanc aux herbes selon la recette : lisser le fromage blanc avec un peu de lait, couper la ciboulette dedans avec des ciseaux d’enfant, une pincée de sel, goûter, rectifier. Il tartine une tranche de pain et y pose, avec du concombre, du poivron et de la carotte, un visage qui va avec une émotion. L’adulte dit quelle émotion il ou elle voit, et l’enfant explique à quoi on la reconnaît.",
+   "sagen": [
+    "Goûte – je regarde ton visage. Quel mot va : content, surpris, beurk ou curieux ?",
+    "À toi : que dit mon visage avec le citron ?",
+    "Pose un visage sur ton pain. J’essaie de trouver quelle émotion c’est.",
+    "À quoi j’aurais pu la reconnaître – à la bouche, aux yeux, aux sourcils ?"
+   ],
+   "wennEsKippt": "Si l’enfant n’aime pas une bouchée, il peut seulement la sentir ou refuser – « Non merci » est un résultat valable. Si aucun mot ne vient, l’adulte tend trois cartes-mots, et l’enfant en montre une.",
+   "kurz": "Goûter quatre saveurs · lire les visages · visage sur le pain"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Beim Probieren lügt ein Gesicht selten – darum ist Geschmack ein ideales Labor, um Gefühle in Gesichtern zu lesen.",
+    "vorbereitung": [
+     "Allergien klären (Milch, Gluten); Ersatz: laktosefreier Quark, Reiswaffel",
+     "Probierhappen: Apfel, Zitrone, Salzbrezel, Chicorée oder Radieschen",
+     "250 g Quark, etwas Milch, Schnittlauch, Salz, Brot, Gurke, Paprika, Karotte",
+     "Gemüse fürs Gesicht vorschneiden; Kinderschere, Löffel, Schälchen",
+     "Wortkarten schreiben: froh, überrascht, igitt, neugierig, stolz, ruhig"
+    ],
+    "aufbau": "Kind und Fachkraft sitzen sich gegenüber, damit sie die Gesichter gut sehen. Die vier Schälchen stehen in einer Reihe zwischen ihnen, die Quark-Zutaten auf einem Tablett daneben.",
+    "karten": [
+     {
+      "titel": "Wortkarten Gefühle",
+      "karten": [
+       "froh",
+       "überrascht",
+       "igitt (Ekel)",
+       "neugierig",
+       "stolz",
+       "ruhig"
+      ]
+     },
+     {
+      "titel": "Hinweis-Karten fürs Gesicht",
+      "karten": [
+       "Mund: lacht, ist rund offen, zeigt nach unten",
+       "Augen: weit offen, zugekniffen, schmal",
+       "Augenbrauen: hoch, zusammengezogen, schräg",
+       "Nase: kraus oder glatt"
+      ]
+     }
+    ],
+    "leichter": "Für 4- bis 6-Jährige: nur süß und sauer und zwei Gefühlswörter (froh, igitt) mit Bild. Das Quark-Gesicht darf ein einfaches lachendes oder überraschtes Gesicht sein.",
+    "schwerer": "Ab 9 Jahren beschreibt das Kind Geschmack und Gefühl genauer („säuerlich“, „frisch“, „erleichtert“) und legt zwei Gesichter, die sich nur in einem Detail unterscheiden – die Fachkraft muss das Detail finden.",
+    "gruppe": "Zu zweit lesen sich die Kinder beim Probieren gegenseitig die Gesichter. In der Gruppe legt jedes Kind ein Quark-Gesicht, die anderen nennen das Gefühl, und das Kind verrät seinen wichtigsten Hinweis.",
+    "beobachten": [
+     "Das Kind benennt am Gesicht der Fachkraft ein Merkmal (Mund, Augen, Nase).",
+     "Es findet für einen Geschmack ein passendes Gefühlswort.",
+     "Es erklärt, woran man das Gefühl seines Quark-Gesichts erkennt."
+    ],
+    "warum": "Geschmack löst angeborene Gesichtsausdrücke aus, die schon Neugeborene zeigen (Steiner, 1979); wer Gefühle an Hinweisen wie Mund und Augen erkennen und benennen lernt, versteht andere besser (Domitrovich et al., 2007).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "Quand on goûte, un visage ment rarement – le goût est donc un laboratoire idéal pour lire les émotions sur les visages.",
+    "vorbereitung": [
+     "Vérifier les allergies (lait, gluten) ; fromage blanc sans lactose, galette de riz",
+     "Bouchées : pomme, citron, bretzel, endive ou radis",
+     "250 g de fromage blanc, un peu de lait, ciboulette, sel, pain, légumes",
+     "Couper les légumes du visage ; ciseaux d’enfant, cuillère, petits bols",
+     "Écrire les cartes-mots : content, surpris, beurk, curieux, fier, calme"
+    ],
+    "aufbau": "L’enfant et l’adulte sont assis face à face pour bien voir les visages. Les quatre petits bols sont alignés entre eux, les ingrédients du fromage blanc sur un plateau à côté.",
+    "karten": [
+     {
+      "titel": "Cartes-mots émotions",
+      "karten": [
+       "content",
+       "surpris",
+       "beurk (dégoût)",
+       "curieux",
+       "fier",
+       "calme"
+      ]
+     },
+     {
+      "titel": "Cartes indices pour le visage",
+      "karten": [
+       "Bouche : sourit, ronde et ouverte, vers le bas",
+       "Yeux : grands ouverts, plissés, étroits",
+       "Sourcils : levés, froncés, en biais",
+       "Nez : plissé ou lisse"
+      ]
+     }
+    ],
+    "leichter": "Pour les 4–6 ans : seulement sucré et acide et deux mots d’émotion (content, beurk) avec image. Le visage peut être un simple visage qui rit ou qui est surpris.",
+    "schwerer": "Dès 9 ans, l’enfant décrit goût et émotion plus finement (« acidulé », « frais », « soulagé ») et pose deux visages qui ne diffèrent que par un détail – l’adulte doit trouver le détail.",
+    "gruppe": "À deux, les enfants lisent mutuellement leurs visages en goûtant. En groupe, chaque enfant pose un visage, les autres nomment l’émotion, et l’enfant révèle son indice le plus important.",
+    "beobachten": [
+     "L’enfant nomme un indice sur le visage de l’adulte (bouche, yeux, nez).",
+     "Il trouve un mot d’émotion qui va avec une saveur.",
+     "Il explique à quoi on reconnaît l’émotion de son visage sur le pain."
+    ],
+    "warum": "Le goût déclenche des expressions faciales innées, visibles dès la naissance (Steiner, 1979) ; apprendre à reconnaître et nommer les émotions à partir d’indices comme la bouche et les yeux aide à mieux comprendre les autres (Domitrovich et al., 2007).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:koch-sinne-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Lieblingsessen und Lecker-Erinnerungen",
+  "text": "Beim Essen der Quark-Brote erzählt die Fachkraft zuerst von einem eigenen Lieblingsessen und einem schönen Moment dazu, zum Beispiel: „Pfannkuchen nach dem Schwimmen – da war ich froh und müde.“ Dann darf das Kind erzählen, welches Essen es froh macht und wann es das gegessen hat. Wer nichts Eigenes erzählen mag, erfindet ein Lieblingsessen für Tom oder Amira. Zum Schluss sagt das Kind, welches Quark-Gesicht am leckersten war, und beide räumen die Küche gemeinsam auf.",
+  "sagen": [
+   "Mein Lieblingsessen: Pfannkuchen nach dem Schwimmen. Da war ich froh und müde.",
+   "Welches Essen macht dich froh? Du darfst auch eins für Tom oder Amira erfinden.",
+   "Welches Gesicht war heute am leckersten?"
+  ],
+  "wennEsKippt": "Kommt bei einer Erinnerung Traurigkeit auf, nimmt die Fachkraft das ruhig auf („Manche Erinnerungen sind auch ein bisschen traurig“) und lenkt auf das Essen auf dem Tisch. Mag das Kind nichts erzählen, zeigt es nur auf das Quark-Gesicht, das ihm am besten gefällt.",
+  "kurz": "Quark-Brote essen · Lieblingsessen erzählen (freiwillig) · aufräumen",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-21",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-15",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Plat préféré et souvenirs gourmands",
+   "text": "En mangeant les tartines, l’adulte parle d’abord de son plat préféré et d’un beau moment qui va avec, par exemple : « Des crêpes après la piscine – j’étais content et fatigué. » Puis l’enfant peut raconter quel plat le rend content et quand il l’a mangé. S’il ne veut rien raconter de personnel, il invente un plat préféré pour un personnage comme Tom ou Amira. Pour finir, l’enfant dit quel visage était le plus délicieux, et tous les deux rangent la cuisine ensemble.",
+   "sagen": [
+    "Mon plat préféré : des crêpes après la piscine. J’étais content et fatigué.",
+    "Quel plat te rend content ? Tu peux aussi en inventer un pour Tom ou Amira.",
+    "Quel visage était le plus délicieux aujourd’hui ?"
+   ],
+   "wennEsKippt": "Si un souvenir rend un peu triste, l’adulte l’accueille calmement (« Certains souvenirs sont aussi un peu tristes ») et ramène l’attention sur ce qu’il y a sur la table. Si l’enfant ne veut rien raconter, il montre seulement le visage qu’il préfère.",
+   "kurz": "Manger les tartines · plat préféré (facultatif) · ranger"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Fachkraft erzählt zuerst – kurz, fröhlich und ohne Familie im Mittelpunkt; so weiß das Kind, wie es geht, und muss nichts Privates preisgeben.",
+    "beobachten": [
+     "Das Kind verbindet ein Essen mit einem Gefühlswort („froh“, „gemütlich“).",
+     "Es erzählt freiwillig etwas Eigenes oder erfindet sicher für Tom oder Amira.",
+     "Es hört der Erzählung der Fachkraft zu und fragt nach."
+    ],
+    "gruppe": "In der Gruppe erzählt nur, wer mag; die anderen dürfen ein Lieblingsessen für Tom oder Amira erfinden. Die Fachkraft achtet darauf, dass niemand nach Zuhause oder Familie gefragt wird."
+   },
+   "fr": {
+    "haken": "L’adulte raconte en premier – brièvement, joyeusement et sans mettre la famille au centre ; l’enfant voit comment faire sans devoir livrer de l’intime.",
+    "beobachten": [
+     "L’enfant associe un plat à un mot d’émotion (« content », « bien au chaud »).",
+     "Il raconte librement quelque chose à lui ou invente avec assurance pour un personnage.",
+     "Il écoute le récit de l’adulte et pose une question."
+    ],
+    "gruppe": "En groupe, seuls ceux qui le veulent racontent ; les autres inventent un plat préféré pour un personnage. L’adulte veille à ce que personne ne soit interrogé sur sa famille."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-duft-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Duft-Archiv: Wohin bringt dich dieser Geruch?",
+  "text": "Auf dem Tisch stehen vier Becher, jeweils mit einem Tuch abgedeckt: Zimt, Vanille, Zitronenschale, frische Minze. Der oder die Jugendliche riecht mit geschlossenen Augen, rät und nennt die erste Verbindung, die auftaucht – einen Ort, eine Jahreszeit, ein Wort. Die Fachkraft erklärt dazu kurz: Gerüche haben im Gehirn eine Abkürzung zu den Bereichen für Gefühl und Erinnerung, darum wecken sie oft gefühlvollere Erinnerungen als Bilder. Nach dem Händewaschen liest der oder die Jugendliche das Rezept für Zimt-Äpfel aus der Pfanne.",
+  "sagen": [
+   "Augen zu, riechen, nichts sagen – und dann das erste Wort, das kommt.",
+   "Gerüche haben im Gehirn eine Abkürzung zu Gefühl und Erinnerung. Ein Geruch kann dich in einer Sekunde woanders hinbringen.",
+   "Du musst nichts Persönliches erzählen – ein Ort oder eine Jahreszeit reicht."
+  ],
+  "wennEsKippt": "Löst ein Geruch Unbehagen aus, wird der Becher sofort zugedeckt und weggestellt, ohne Nachfragen. Fällt keine Verbindung ein, reicht der Name des Geruchs.",
+  "kurz": "Vier Düfte blind riechen · erste Verbindung · Rezept · Hände",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-29",
+    "gewicht": 0.5
+   },
+   {
+    "code": "K-15",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-ausdruecken",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "kochen",
+   "sinne"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "becher",
+   "tuch",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Archives des odeurs : où t’emmène ce parfum ?",
+   "text": "Sur la table, quatre gobelets attendent, chaque gobelet couvert d’un foulard : cannelle, vanille, zeste de citron, menthe fraîche. Le ou la jeune sent les yeux fermés, devine et dit le premier lien qui apparaît – un lieu, une saison, un mot. L’adulte explique brièvement : dans le cerveau, les odeurs ont un raccourci vers les zones de l’émotion et de la mémoire, c’est pourquoi elles réveillent souvent des souvenirs plus chargés d’émotion que les images. Après le lavage des mains, le ou la jeune lit la recette des pommes à la cannelle à la poêle.",
+   "sagen": [
+    "Yeux fermés, tu sens, tu ne dis rien – et puis le premier mot qui vient.",
+    "Dans le cerveau, les odeurs prennent un raccourci vers l’émotion et la mémoire. Une odeur peut t’emmener ailleurs en une seconde.",
+    "Tu n’as rien de personnel à raconter – un lieu ou une saison suffit."
+   ],
+   "wennEsKippt": "Si une odeur met mal à l’aise, le gobelet est recouvert et mis de côté tout de suite, sans questions. Si aucun lien ne vient, le nom de l’odeur suffit.",
+   "kurz": "Sentir quatre odeurs à l’aveugle · premier lien · recette · mains"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Vier verdeckte Becher und die Frage „Wohin bringt dich dieser Geruch?“ – ein Rätsel für die Nase, das sofort Bilder im Kopf auslöst.",
+    "vorbereitung": [
+     "Vier Becher: Zimtstange, Vanillezucker, Zitronenschale, Minzblätter",
+     "Jeden Becher mit einem Tuch abdecken",
+     "Allergien klären; Duftbecher ohne Nüsse und ohne Parfüm"
+    ],
+    "gruppe": "In der Gruppe wandert ein Becher nach dem anderen; jede Person sagt ihr erstes Wort, ohne dass jemand kommentiert. Danach wird verglichen, wie verschieden die Bilder sind."
+   },
+   "fr": {
+    "haken": "Quatre gobelets cachés et la question « Où t’emmène ce parfum ? » – une énigme pour le nez qui fait tout de suite naître des images.",
+    "vorbereitung": [
+     "Quatre gobelets : bâton de cannelle, sucre vanillé, zeste de citron, menthe",
+     "Couvrir chaque gobelet d’un foulard",
+     "Vérifier les allergies ; pas de noix, pas de parfum"
+    ],
+    "gruppe": "En groupe, les gobelets circulent l’un après l’autre ; chaque personne dit son premier mot, sans commentaire des autres. Ensuite, on compare à quel point les images diffèrent."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-duft-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Zimt-Äpfel und das genaue Wort",
+  "text": "Nach Rezept schält der oder die Jugendliche zwei Äpfel, schneidet sie mit Krallengriff in Spalten und brät sie bei mittlerer Hitze in wenig Butter, bis sie weich und goldbraun sind; zum Schluss kommen Zimt und ein Teelöffel Zucker dazu. Während die Äpfel brutzeln, beschreiben beide, was sich verändert – Geruch, Geräusch, Farbe – und suchen dafür genauere Wörter als „gut“: karamellig, warm, säuerlich-frisch. Dann überträgt die Fachkraft die Übung auf Gefühle: Statt nur „gut“ oder „schlecht“ gibt es Dutzende genauere Wörter. Der oder die Jugendliche wählt aus der Wortliste zwei, die zur Stimmung der Zimt-Äpfel passen, etwa „geborgen“ oder „zufrieden“. Zum Schluss richtet er oder sie die Äpfel mit Joghurt an, so wie es gefällt.",
+  "sagen": [
+   "Hör mal, wie es in der Pfanne klingt – und riech mal. Beschreib es in einem Wort, aber nicht mit „gut“.",
+   "Für Geschmack gibt es viele genaue Wörter. Für Gefühle auch – und wer sie kennt, versteht sich selbst besser.",
+   "Such dir zwei Wörter aus der Liste, die zu diesen Äpfeln passen."
+  ],
+  "wennEsKippt": "Ist der Herd zu viel, übernimmt die Fachkraft die Pfanne, und der oder die Jugendliche schneidet, würzt und beschreibt. Wirkt die Wortliste zu sehr nach Schule, reicht ein einziges Wort, das wirklich passt.",
+  "kurz": "Zimt-Äpfel braten · Geruch genau beschreiben · zwei Gefühlswörter",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-29",
+    "gewicht": 0.5
+   },
+   {
+    "code": "K-15",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-ausdruecken",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "kochen",
+   "sinne",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "loeffel",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Pommes à la cannelle et le mot juste",
+   "text": "Selon la recette, le ou la jeune épluche deux pommes, les coupe en quartiers, doigts en griffe, et les fait revenir à feu moyen dans un peu de beurre jusqu’à ce qu’elles soient tendres et dorées ; à la fin, on ajoute la cannelle et une cuillère à café de sucre. Pendant que les pommes grésillent, tous les deux décrivent ce qui change – l’odeur, le bruit, la couleur – et cherchent des mots plus précis que « bon » : caramélisé, chaud, acidulé et frais. Puis l’adulte transpose l’exercice aux émotions : au lieu de « bien » ou « pas bien », il existe des dizaines de mots plus précis. Le ou la jeune choisit dans la liste deux mots qui vont avec l’ambiance des pommes à la cannelle, par exemple « à l’abri » ou « satisfait ». Pour finir, il ou elle dresse les pommes avec du yaourt, comme il ou elle l’aime.",
+   "sagen": [
+    "Écoute le bruit dans la poêle – et sens. Décris-le en un mot, mais pas avec « bon ».",
+    "Pour le goût, il y a plein de mots précis. Pour les émotions aussi – et qui les connaît se comprend mieux.",
+    "Choisis dans la liste deux mots qui vont avec ces pommes."
+   ],
+   "wennEsKippt": "Si la cuisinière est trop, l’adulte prend la poêle, et le ou la jeune coupe, assaisonne et décrit. Si la liste de mots fait trop « école », un seul mot qui va vraiment suffit.",
+   "kurz": "Pommes à la cannelle · décrire l’odeur · deux mots d’émotion"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Zimt in der warmen Pfanne riecht nach Wintermarkt – kaum ein Geruch macht so schnell Stimmung, und das macht die Küche zum Labor für Gefühlswörter.",
+    "vorbereitung": [
+     "Allergien klären (Milch in Butter und Joghurt); Ersatz: Pflanzenöl",
+     "2 Äpfel aus der Region, 1 TL Butter, Zimt, 1 TL Zucker, Joghurt",
+     "Brett, Gemüsemesser oder Sparschäler, Pfanne, Pfannenwender",
+     "Wortliste der Gefühle auf eine Karte schreiben",
+     "Pfannenstiel nach innen; Fachkraft bleibt in Reichweite"
+    ],
+    "aufbau": "Brett und Pfanne stehen nebeneinander; die Wortliste liegt gut sichtbar neben dem Herd, nicht auf dem Tisch – so wird beim Kochen gesprochen, nicht erst danach.",
+    "karten": [
+     {
+      "titel": "Genauer als „gut“ und „schlecht“",
+      "karten": [
+       "geborgen",
+       "zufrieden",
+       "nostalgisch",
+       "erleichtert",
+       "entspannt",
+       "neugierig",
+       "gereizt",
+       "angespannt",
+       "enttäuscht",
+       "gelangweilt",
+       "stolz",
+       "aufgeregt"
+      ]
+     },
+     {
+      "titel": "Wörter für Geschmack und Geruch",
+      "karten": [
+       "karamellig",
+       "säuerlich",
+       "würzig",
+       "frisch",
+       "rauchig",
+       "süßlich",
+       "herb",
+       "warm"
+      ]
+     }
+    ],
+    "leichter": "Die Fachkraft brät, der oder die Jugendliche schneidet und würzt; die Wortliste hat nur sechs Wörter, und eines reicht.",
+    "schwerer": "Der oder die Jugendliche ordnet die Gefühlswörter nach Stärke (leicht – mittel – stark) und findet zu einem Wort eine Szene aus einem Song, einer Serie oder einem Spiel.",
+    "gruppe": "In der Gruppe beschreibt jede Person den Geruch mit einem eigenen Wort, ohne zu wiederholen. Danach wählt jede Person zwei Gefühlswörter und sagt in einem Satz, warum sie zu den Äpfeln passen.",
+    "beobachten": [
+     "Der oder die Jugendliche findet für Geruch oder Geschmack ein genaues Wort statt „gut“.",
+     "Er oder sie wählt Gefühlswörter jenseits von „gut“ und „schlecht“.",
+     "Er oder sie begründet kurz, warum ein Wort passt."
+    ],
+    "warum": "Wer Gefühle fein unterscheiden und benennen kann, reguliert sie besser (Kashdan et al., 2015); Geschmack und Geruch sind dafür ein sicherer Einstieg, weil man genaues Beschreiben übt, ohne über sich sprechen zu müssen.",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "La cannelle dans la poêle chaude sent le marché de Noël – peu d’odeurs créent aussi vite une ambiance, et la cuisine devient un laboratoire des mots d’émotion.",
+    "vorbereitung": [
+     "Vérifier les allergies (lait du beurre et du yaourt) ; huile végétale",
+     "2 pommes de la région, 1 c. à café de beurre, cannelle, sucre, yaourt",
+     "Planche, couteau à légumes ou économe, poêle, spatule",
+     "Écrire la liste des mots d’émotion sur une carte",
+     "Manche de la poêle vers l’intérieur ; l’adulte reste à portée"
+    ],
+    "aufbau": "La planche et la poêle sont côte à côte ; la liste de mots est bien visible près de la cuisinière, pas sur la table – on parle pendant qu’on cuisine, pas après.",
+    "karten": [
+     {
+      "titel": "Plus précis que « bien » et « pas bien »",
+      "karten": [
+       "à l’abri",
+       "satisfait",
+       "nostalgique",
+       "soulagé",
+       "détendu",
+       "curieux",
+       "agacé",
+       "tendu",
+       "déçu",
+       "qui s’ennuie",
+       "fier",
+       "excité"
+      ]
+     },
+     {
+      "titel": "Mots pour le goût et l’odeur",
+      "karten": [
+       "caramélisé",
+       "acidulé",
+       "épicé",
+       "frais",
+       "fumé",
+       "sucré",
+       "âpre",
+       "chaud"
+      ]
+     }
+    ],
+    "leichter": "L’adulte fait cuire, le ou la jeune coupe et assaisonne ; la liste n’a que six mots, et un seul suffit.",
+    "schwerer": "Le ou la jeune classe les mots d’émotion par intensité (faible – moyen – fort) et trouve pour un mot une scène tirée d’une chanson, d’une série ou d’un jeu.",
+    "gruppe": "En groupe, chaque personne décrit l’odeur avec son propre mot, sans répéter. Ensuite, chaque personne choisit deux mots d’émotion et dit en une phrase pourquoi ils vont avec les pommes.",
+    "beobachten": [
+     "Le ou la jeune trouve pour l’odeur ou le goût un mot précis au lieu de « bon ».",
+     "Il ou elle choisit des mots d’émotion au-delà de « bien » et « pas bien ».",
+     "Il ou elle explique brièvement pourquoi un mot convient."
+    ],
+    "warum": "Qui sait distinguer et nommer finement ses émotions les régule mieux (Kashdan et al., 2015) ; le goût et l’odorat offrent une entrée sûre, car on s’exerce à décrire précisément sans devoir parler de soi.",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:koch-duft-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Geschmack mit Geschichte",
+  "text": "Beim Essen erzählt die Fachkraft eine kurze Geschichte: „Gromperekichelcher auf der Schueberfouer – das schmeckt für mich nach Sommerende.“ Dann fragt sie nach einem Essen, das für den oder die Jugendliche nach einem guten Moment schmeckt; erzählen ist freiwillig, ein Ort oder eine Jahreszeit reicht. Der oder die Jugendliche wählt ein genaues Gefühlswort für diesen Moment. Zum Schluss überlegen beide, welcher Geruch in einer anstrengenden Woche helfen kann, kurz herunterzukommen – ein Tee, ein Apfel, ein Kaugummi mit Minze –, und räumen die Küche gemeinsam auf.",
+  "sagen": [
+   "Gromperekichelcher auf der Schueberfouer – das schmeckt für mich nach Sommerende. Gibt es ein Essen, das für dich nach einem guten Moment schmeckt?",
+   "Du musst nichts erzählen – ein Ort oder eine Jahreszeit reicht.",
+   "Welcher Geruch könnte dir in einer stressigen Woche kurz eine Pause schenken?"
+  ],
+  "wennEsKippt": "Wird eine Erinnerung schwer, würdigt die Fachkraft das knapp („Danke, dass du das teilst“) und lenkt auf den Geruch, der gerade im Raum ist. Mag der oder die Jugendliche nichts erzählen, wählt er oder sie nur ein Wort aus der Liste für die Zimt-Äpfel.",
+  "kurz": "Essen · Geschmack mit Geschichte (freiwillig) · Duft als Pause",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-29",
+    "gewicht": 0.5
+   },
+   {
+    "code": "K-15",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-ausdruecken",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Un goût qui a une histoire",
+   "text": "Pendant le repas, l’adulte raconte une courte histoire : « Les Gromperekichelcher à la Schueberfouer – pour moi, ça a le goût de la fin de l’été. » Puis l’adulte demande un plat qui, pour le ou la jeune, a le goût d’un bon moment ; raconter est facultatif, un lieu ou une saison suffit. Le ou la jeune choisit un mot d’émotion précis pour ce moment. Pour finir, tous les deux réfléchissent à l’odeur qui pourrait aider à décompresser un peu pendant une semaine chargée – un thé, une pomme, un chewing-gum à la menthe – et rangent la cuisine ensemble.",
+   "sagen": [
+    "Les Gromperekichelcher à la Schueberfouer – pour moi, ça a le goût de la fin de l’été. Il y a un plat qui a pour toi le goût d’un bon moment ?",
+    "Tu n’es pas obligé de raconter – un lieu ou une saison suffit.",
+    "Quelle odeur pourrait t’offrir une petite pause pendant une semaine stressante ?"
+   ],
+   "wennEsKippt": "Si un souvenir devient lourd, l’adulte le reconnaît brièvement (« Merci de le partager ») et ramène l’attention sur l’odeur qui est dans la pièce. Si le ou la jeune ne veut rien raconter, il ou elle choisit seulement un mot de la liste pour les pommes à la cannelle.",
+   "kurz": "Manger · un goût avec une histoire (facultatif) · odeur-pause"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Fachkraft erzählt zuerst eine kleine, luxemburgische Geschmacksgeschichte – das senkt die Schwelle, selbst etwas zu teilen.",
+    "beobachten": [
+     "Der oder die Jugendliche verbindet einen Geschmack mit einem genauen Gefühlswort.",
+     "Er oder sie entscheidet selbst, wie viel er oder sie erzählt.",
+     "Er oder sie nennt eine kleine, alltagstaugliche Duft-Pause."
+    ],
+    "gruppe": "In der Gruppe erzählt nur, wer mag; wer nicht erzählt, nennt nur ein Gefühlswort. Zum Schluss sammelt die Gruppe Duft-Pausen für stressige Tage."
+   },
+   "fr": {
+    "haken": "L’adulte raconte d’abord une petite histoire de goût bien luxembourgeoise – cela rend plus facile de partager à son tour.",
+    "beobachten": [
+     "Le ou la jeune associe un goût à un mot d’émotion précis.",
+     "Il ou elle décide seul de ce qu’il ou elle raconte.",
+     "Il ou elle nomme une petite pause-odeur réaliste au quotidien."
+    ],
+    "gruppe": "En groupe, seuls ceux qui le veulent racontent ; les autres disent seulement un mot d’émotion. Pour finir, le groupe rassemble des pauses-odeurs pour les jours stressants."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-butter-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Was gluckert in diesem Glas?",
+  "text": "Die Fachkraft schüttelt ein verschlossenes Glas mit Sahne, sodass es gluckert, und lässt das Kind raten, was darin ist. Dann verrät sie das Ziel: Aus diesem flüssigen Zeug wird gleich feste Butter – aber nur, wenn man lange genug schüttelt und den Deckel zu lässt. Das Kind lernt die zwei Warte-Regeln der Küche kennen: Beim Schütteln zählen oder singen, und der Deckel geht erst auf, wenn es im Glas klatscht. Danach waschen beide die Hände und schauen sich das Rezept an: Sahne, Glas, schütteln, Butter, Brot.",
+  "sagen": [
+   "Hör mal: Was gluckert da im Glas?",
+   "Daraus machen wir Butter. Das klappt nur, wenn wir lange schütteln – und den Deckel zu lassen.",
+   "Unser Warte-Trick: Wir zählen oder singen beim Schütteln. Und erst wenn es klatscht, gucken wir rein."
+  ],
+  "wennEsKippt": "Will das Kind sofort ins Glas schauen, darf es durch das Glas gucken, aber der Deckel bleibt zu. Mag es nicht raten, verrät die Fachkraft es gleich.",
+  "kurz": "Glas schütteln und raten · Ziel Butter · zwei Warte-Regeln · Hände",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "regeln",
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-10",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "kochen",
+   "sinne"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "glas",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Qu’est-ce qui fait glouglou dans ce bocal ?",
+   "text": "L’adulte secoue un bocal fermé rempli de crème, pour qu’il fasse glouglou, et laisse l’enfant deviner ce qu’il y a dedans. Puis l’adulte révèle le but : ce liquide va devenir du beurre bien ferme – mais seulement si on secoue assez longtemps et si le couvercle reste fermé. L’enfant découvre les deux règles d’attente de la cuisine : en secouant, on compte ou on chante, et le couvercle ne s’ouvre que quand ça claque dans le bocal. Ensuite, tous les deux se lavent les mains et regardent la recette : crème, bocal, secouer, beurre, pain.",
+   "sagen": [
+    "Écoute : qu’est-ce qui fait glouglou dans le bocal ?",
+    "On va en faire du beurre. Ça marche seulement si on secoue longtemps – et si le couvercle reste fermé.",
+    "Notre astuce pour attendre : on compte ou on chante en secouant. Et c’est seulement quand ça claque qu’on regarde dedans."
+   ],
+   "wennEsKippt": "Si l’enfant veut regarder tout de suite, il peut regarder à travers le verre, mais le couvercle reste fermé. S’il ne veut pas deviner, l’adulte le dit tout de suite.",
+   "kurz": "Secouer et deviner · but : du beurre · deux règles · mains"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein gluckerndes Glas und das Versprechen „Daraus wird gleich Butter“ – Kinder glauben es erst, wenn sie es sehen.",
+    "vorbereitung": [
+     "Allergien klären (Milch); bei Milcheiweißallergie ein anderes Paket wählen",
+     "Glas mit 200 ml Sahne fest verschließen",
+     "Rezept mit fünf Bildern: Sahne – Glas – schütteln – Butter – Brot"
+    ],
+    "gruppe": "In der Gruppe darf jedes Kind einmal schütteln und lauschen; geraten wird erst, wenn alle gehört haben."
+   },
+   "fr": {
+    "haken": "Un bocal qui fait glouglou et la promesse « Ça va devenir du beurre » – les enfants n’y croient que quand ils le voient.",
+    "vorbereitung": [
+     "Vérifier les allergies (lait) ; en cas d’allergie aux protéines de lait, autre séance",
+     "Bien fermer un bocal avec 200 ml de crème",
+     "Recette en cinq images : crème – bocal – secouer – beurre – pain"
+    ],
+    "gruppe": "En groupe, chaque enfant secoue une fois et écoute ; on ne devine que quand tout le monde a écouté."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-butter-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Butter schütteln: dranbleiben, auch wenn nichts passiert",
+  "text": "Das Kind und die Fachkraft schütteln das Glas mit Sahne abwechselnd: zwanzigmal schütteln, gezählt oder zu einem Lied, dann wechseln. Nach einigen Minuten wird es im Glas still – die Sahne ist steif geworden, und genau jetzt wollen viele aufhören; die Fachkraft sagt: „Das ist der schwerste Moment – weiter!“ Wenig später klatscht ein gelber Klumpen gegen das Glas: Das ist Butter, und die Flüssigkeit daneben ist Buttermilch. Erst jetzt öffnet das Kind den Deckel, gießt die Buttermilch in einen Becher, spült die Butter in kaltem Wasser ab und knetet mit dem Löffel eine Prise Salz hinein. Zum Schluss streicht es seine Butter in der Küche auf ein Stück Brot und streut Schnittlauch darüber.",
+  "sagen": [
+   "Zwanzigmal schütteln, dann bin ich dran. Zählst du mit?",
+   "Es ist still geworden – das ist der schwerste Moment. Viele hören jetzt auf. Wir nicht!",
+   "Hörst du das Klatschen? Jetzt darfst du den Deckel aufmachen.",
+   "Du hast weitergemacht, obwohl lange nichts passiert ist. Das ist Geduld."
+  ],
+  "wennEsKippt": "Werden die Arme müde, wird öfter gewechselt (zehn statt zwanzig) oder das Glas im Sitzen gerollt. Dauert es sehr lange, war die Sahne zu kalt: das Glas kurz in beiden Händen wärmen und weiterschütteln; wer gar nicht mehr mag, macht Pause, während die Fachkraft schüttelt.",
+  "kurz": "Abwechselnd schütteln · stiller Moment: weiter! · Butter aufs Brot",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "regeln",
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-10",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "kochen",
+   "sinne"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "glas",
+   "becher",
+   "loeffel",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Secouer le beurre : continuer même quand rien ne se passe",
+   "text": "L’enfant et l’adulte secouent le bocal de crème en alternance : vingt secousses, en comptant ou sur une chanson, puis on change. Au bout de quelques minutes, tout devient silencieux dans le bocal – la crème est devenue ferme, et c’est justement là que beaucoup veulent arrêter ; l’adulte dit : « C’est le moment le plus dur – on continue ! » Peu après, une boule jaune claque contre le verre : c’est du beurre, et le liquide à côté, c’est du babeurre. Seulement maintenant, l’enfant ouvre le couvercle, verse le babeurre dans un gobelet, rince le beurre à l’eau froide et y mélange une pincée de sel avec la cuillère. Pour finir, il tartine son beurre en cuisine sur un morceau de pain et parsème de ciboulette.",
+   "sagen": [
+    "Vingt secousses, puis c’est mon tour. Tu comptes avec moi ?",
+    "C’est devenu silencieux – c’est le moment le plus dur. Beaucoup arrêtent maintenant. Pas nous !",
+    "Tu entends le claquement ? Maintenant, tu peux ouvrir le couvercle.",
+    "Tu as continué alors que rien ne se passait pendant longtemps. Ça, c’est de la patience."
+   ],
+   "wennEsKippt": "Si les bras fatiguent, on change plus souvent (dix au lieu de vingt) ou on fait rouler le bocal en position assise. Si c’est très long, la crème était trop froide : réchauffer le bocal quelques instants entre les mains et continuer ; si l’enfant n’en peut plus, il fait une pause pendant que l’adulte secoue.",
+   "kurz": "Secouer en alternance · moment silencieux : on continue ! · tartiner"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Aus flüssiger Sahne wird vor den Augen des Kindes ein Klumpen Butter – ein echtes kleines Wunder, das man sich nur mit Geduld verdient.",
+    "vorbereitung": [
+     "Allergien klären (Milch, Gluten im Brot); Ersatzbrot bereithalten",
+     "200 ml Schlagsahne (mind. 30 % Fett), 20 Min. vorher aus dem Kühlschrank",
+     "Schraubglas oder dichter Kunststoffbecher (500 ml), höchstens halb voll",
+     "Becher für Buttermilch, Schüssel mit kaltem Wasser, Löffel, Salz",
+     "Brot, Schnittlauch, Kinderschere"
+    ],
+    "aufbau": "Kind und Fachkraft sitzen sich gegenüber, das Glas wandert hin und her. Brot, Wasserschüssel und Salz stehen bereit, aber außer Reichweite – so bleibt die Wartezeit eine echte Wartezeit.",
+    "karten": [
+     {
+      "titel": "Warte-Tricks (ziehen, wenn es lang wird)",
+      "karten": [
+       "Zählen: bis zwanzig, dann wechseln",
+       "Ein Lied summen, das du magst",
+       "Im Takt schütteln: langsam – schnell – langsam",
+       "Augen zu und nur hören: Gluckert es noch?",
+       "Beim Schütteln an etwas Schönes denken",
+       "Die Arme ausschütteln, dann weiter"
+      ]
+     }
+    ],
+    "leichter": "Für 4- bis 6-Jährige: 100 ml Sahne in einem leichten Kunststoffbecher, Wechsel nach zehnmal Schütteln; die Fachkraft zählt laut, das Kind schüttelt mit.",
+    "schwerer": "Ab 9 Jahren beobachtet das Kind die Stufen genau (flüssig – Schlagsahne – Butter) und schätzt vorher, wie lange es dauert; am Ende wird die Schätzung mit der Uhr verglichen – ohne Wettbewerb.",
+    "gruppe": "In der Gruppe wandert ein Glas im Sitzen von Hand zu Hand, jedes Kind schüttelt zwanzigmal. Wer nicht dran ist, hilft mit einem Warte-Trick (zählen, summen) – so wird Warten zur gemeinsamen Aufgabe.",
+    "beobachten": [
+     "Das Kind schüttelt weiter, obwohl eine Zeit lang nichts sichtbar passiert.",
+     "Es lässt den Deckel zu, bis das Signal (Klatschen) kommt.",
+     "Es gibt das Glas beim Wechsel ab und wartet, bis es wieder dran ist."
+    ],
+    "warum": "Kinder warten länger, wenn sie eine Strategie haben, die die Wartezeit füllt – zählen, singen, sich beschäftigen (Mischel et al., 1989); das sichtbare Ergebnis am Ende verbindet Geduld mit einem echten Erfolg.",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "Sous les yeux de l’enfant, la crème liquide devient une boule de beurre – un vrai petit miracle qu’on ne gagne qu’avec de la patience.",
+    "vorbereitung": [
+     "Vérifier les allergies (lait, gluten du pain) ; prévoir un autre pain",
+     "200 ml de crème entière (30 % min.), sortie du frigo 20 min avant",
+     "Bocal à vis ou gobelet plastique étanche (500 ml), à moitié plein maximum",
+     "Gobelet pour le babeurre, bol d’eau froide, cuillère, sel",
+     "Pain, ciboulette, ciseaux d’enfant"
+    ],
+    "aufbau": "L’enfant et l’adulte sont assis face à face, le bocal passe de l’un à l’autre. Pain, bol d’eau et sel sont prêts mais hors de portée – l’attente reste une vraie attente.",
+    "karten": [
+     {
+      "titel": "Astuces pour attendre (à tirer quand c’est long)",
+      "karten": [
+       "Compter : jusqu’à vingt, puis changer",
+       "Fredonner une chanson que tu aimes",
+       "Secouer en rythme : lent – vite – lent",
+       "Fermer les yeux et écouter : ça fait encore glouglou ?",
+       "Penser à quelque chose de beau en secouant",
+       "Secouer les bras, puis continuer"
+      ]
+     }
+    ],
+    "leichter": "Pour les 4–6 ans : 100 ml de crème dans un gobelet en plastique léger, on change après dix secousses ; l’adulte compte à voix haute, l’enfant secoue avec.",
+    "schwerer": "Dès 9 ans, l’enfant observe les étapes de près (liquide – chantilly – beurre) et estime avant combien de temps ça va prendre ; à la fin, on compare l’estimation avec la montre – sans compétition.",
+    "gruppe": "En groupe, un bocal passe de main en main en position assise, chaque enfant secoue vingt fois. Ceux qui attendent aident avec une astuce (compter, fredonner) – attendre devient une tâche commune.",
+    "beobachten": [
+     "L’enfant continue à secouer alors que rien de visible ne se passe pendant un moment.",
+     "Il garde le couvercle fermé jusqu’au signal (le claquement).",
+     "Il passe le bocal au moment du changement et attend son tour."
+    ],
+    "warum": "Les enfants attendent plus longtemps quand ils ont une stratégie pour remplir l’attente – compter, chanter, s’occuper (Mischel et al., 1989) ; le résultat visible à la fin relie la patience à une vraie réussite.",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:koch-butter-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Mein bester Warte-Trick",
+  "text": "Beim Butterbrot fragt die Fachkraft, wann es am schwersten war weiterzumachen und was geholfen hat. Das Kind wählt seinen besten Warte-Trick aus den Karten, zum Beispiel zählen, summen oder im Takt schütteln. Dann suchen beide eine Situation in der Woche, in der dieser Trick hilft: in der Schlange in der Kantine, beim Warten auf den Bus, wenn man im Spiel nicht dran ist. Zum Schluss probiert, wer mag, einen Schluck Buttermilch, und beide räumen die Küche zusammen auf.",
+  "sagen": [
+   "Wann war es am schwersten weiterzumachen?",
+   "Welcher Warte-Trick war dein bester?",
+   "Wo musst du diese Woche warten – und welchen Trick nimmst du mit?"
+  ],
+  "wennEsKippt": "Fällt keine Situation ein, nennt die Fachkraft drei zur Auswahl. Mag das Kind keine Buttermilch, ist „Nein danke“ völlig in Ordnung.",
+  "kurz": "Butterbrot essen · bester Warte-Trick · Warten in der Woche",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "regeln",
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-10",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Ma meilleure astuce pour attendre",
+   "text": "Pendant la tartine, l’adulte demande quand c’était le plus dur de continuer et ce qui a aidé. L’enfant choisit sa meilleure astuce parmi les cartes, par exemple compter, fredonner ou secouer en rythme. Puis tous les deux cherchent une situation de la semaine où cette astuce aide : dans la file à la cantine, en attendant le bus, quand ce n’est pas son tour dans un jeu. Pour finir, qui veut goûte une gorgée de babeurre, et tous les deux rangent la cuisine ensemble.",
+   "sagen": [
+    "Quand est-ce que c’était le plus dur de continuer ?",
+    "Quelle astuce pour attendre était la meilleure ?",
+    "Où est-ce que tu dois attendre cette semaine – et quelle astuce tu emportes ?"
+   ],
+   "wennEsKippt": "Si aucune situation ne vient, l’adulte en propose trois au choix. Si l’enfant ne veut pas de babeurre, « Non merci » est une réponse tout à fait valable.",
+   "kurz": "Manger la tartine · meilleure astuce · attendre dans la semaine"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Butter auf dem Brot ist der Beweis, dass sich das Warten gelohnt hat – darüber spricht es sich leicht.",
+    "beobachten": [
+     "Das Kind benennt den schwersten Moment („als es still war“).",
+     "Es wählt einen Warte-Trick, der für es passt.",
+     "Es findet eine eigene Situation, in der es warten muss."
+    ],
+    "gruppe": "In der Gruppe zeigt jedes Kind seinen Lieblings-Trick vor (zählen, summen, im Takt); die Gruppe übt einen davon gemeinsam als „Warte-Trick der Woche“."
+   },
+   "fr": {
+    "haken": "Le beurre sur le pain prouve que l’attente en valait la peine – il est facile d’en parler.",
+    "beobachten": [
+     "L’enfant nomme le moment le plus dur (« quand c’était silencieux »).",
+     "Il choisit une astuce pour attendre qui lui convient.",
+     "Il trouve une situation à lui où il doit attendre."
+    ],
+    "gruppe": "En groupe, chaque enfant montre son astuce préférée (compter, fredonner, en rythme) ; le groupe en choisit une à pratiquer ensemble comme « astuce de la semaine »."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-pfanne-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Zu früh gewendet? Die drei Zeichen",
+  "text": "Die Fachkraft zeigt zwei Fotos oder eine schnelle Skizze von Pfannkuchen: einer goldbraun und rund, einer zerrissen und halb roh. Sie fragt, was beim zweiten schiefgelaufen ist – meist kommt die Antwort: zu früh gewendet. Dann nennt sie die drei Zeichen, auf die Profis warten: Bläschen auf der Oberfläche, ein matter Rand, und der Pfannkuchen rutscht, wenn man die Pfanne leicht bewegt. Der oder die Jugendliche rührt den Teig nach Rezept an (Mehl, Milch, Ei, eine Prise Salz) und lässt ihn kurz stehen, während beide die Hände waschen und die Pfanne vorbereiten.",
+  "sagen": [
+   "Was ist bei diesem Pfannkuchen schiefgelaufen?",
+   "Drei Zeichen, dann wird gewendet: Bläschen, matter Rand, er rutscht in der Pfanne.",
+   "Rühr den Teig an – und dann lassen wir ihn kurz in Ruhe."
+  ],
+  "wennEsKippt": "Hat der oder die Jugendliche keine Idee, zeigt die Fachkraft auf den rohen Rand des zweiten Pfannkuchens. Ist das Anrühren heute zu viel, steht der Teig schon bereit, und es geht gleich um die drei Zeichen.",
+  "kurz": "Gelungen oder zu früh gewendet? · drei Zeichen · Teig anrühren",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "regeln",
+   "wut"
+  ],
+  "eldib": [
+   {
+    "code": "V-21",
+    "gewicht": 1
+   },
+   {
+    "code": "V-10",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-25",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 4,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Retournée trop tôt ? Les trois signes",
+   "text": "L’adulte montre deux photos ou un croquis rapide de crêpes épaisses : l’une dorée et ronde, l’autre déchirée et à moitié crue. Il ou elle demande ce qui a raté avec la deuxième – en général, la réponse est : retournée trop tôt. Puis l’adulte nomme les trois signes qu’attendent les pros : des bulles à la surface, un bord mat, et la crêpe glisse quand on bouge légèrement la poêle. Le ou la jeune prépare la pâte selon la recette (farine, lait, œuf, une pincée de sel) et la laisse reposer un peu pendant que tous les deux se lavent les mains et préparent la poêle.",
+   "sagen": [
+    "Qu’est-ce qui a raté avec cette crêpe ?",
+    "Trois signes, et ensuite on retourne : des bulles, un bord mat, elle glisse dans la poêle.",
+    "Prépare la pâte – et après, on la laisse tranquille un moment."
+   ],
+   "wennEsKippt": "Si le ou la jeune n’a pas d’idée, l’adulte montre le bord cru de la deuxième crêpe. Si préparer la pâte est trop aujourd’hui, elle est déjà prête, et on passe directement aux trois signes.",
+   "kurz": "Réussie ou retournée trop tôt ? · trois signes · préparer la pâte"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein missglückter Pfannkuchen auf dem Foto – jeder kennt das, und die Frage „Was ist da passiert?“ führt direkt zum Thema Impuls.",
+    "vorbereitung": [
+     "Zwei Fotos oder eine Skizze: gelungener und zerrissener Pfannkuchen",
+     "Allergien klären (Ei, Milch, Gluten)",
+     "Karte mit den drei Zeichen schreiben"
+    ],
+    "gruppe": "In der Gruppe sammeln die Jugendlichen zuerst eigene Ideen, warum der Pfannkuchen zerrissen ist; die Fachkraft ergänzt die drei Zeichen."
+   },
+   "fr": {
+    "haken": "Une crêpe ratée en photo – tout le monde connaît ça, et la question « Qu’est-ce qui s’est passé ? » mène directement au thème de l’impulsion.",
+    "vorbereitung": [
+     "Deux photos ou un croquis : crêpe réussie et crêpe déchirée",
+     "Vérifier les allergies (œuf, lait, gluten)",
+     "Écrire la carte des trois signes"
+    ],
+    "gruppe": "En groupe, les jeunes rassemblent d’abord leurs idées sur la crêpe déchirée ; l’adulte complète avec les trois signes."
+   }
+  }
+ },
+ {
+  "id": "fo:koch-pfanne-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Pfannkuchen: Signal abwarten, dann wenden",
+  "text": "Der oder die Jugendliche gibt eine kleine Kelle Teig in die vorgeheizte, leicht gefettete Pfanne (mittlere Hitze) und schwenkt sie, bis sich der Teig verteilt. Vor dem Wenden spricht er oder sie die drei Zeichen laut durch – „Bläschen? Rand? Rutscht er?“ – und wendet erst, wenn alle drei stimmen. Die Wartezeit wird genutzt: Belag bereitstellen (Apfelmus, Zimt-Zucker, Banane), den nächsten Teller hinstellen. Nach jedem Pfannkuchen gibt die Fachkraft eine kurze Rückmeldung („Du hast den Impuls gespürt und trotzdem gewartet“), und der oder die Jugendliche entscheidet, ob die Hitze passt. Drei bis vier Pfannkuchen aus der Küche reichen.",
+  "sagen": [
+   "Bläschen? Rand? Rutscht er? Erst wenn alle drei Ja sagen, wird gewendet.",
+   "Merkst du, dass du jetzt wenden willst? Das ist der Impuls. Einmal checken, dann entscheiden.",
+   "Diesmal hast du gewartet, obwohl es gekribbelt hat – schau dir das Ergebnis an."
+  ],
+  "wennEsKippt": "Reißt ein Pfannkuchen, wird er zum Kaiserschmarrn erklärt und in Stücke gezupft – kein Drama. Wird die Pfanne zu heiß oder kommt Unruhe auf, übernimmt die Fachkraft kurz den Pfannenwender, und der oder die Jugendliche sagt die drei Zeichen an.",
+  "kurz": "Teig in die Pfanne · drei Zeichen laut checken · erst dann wenden",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "regeln",
+   "wut"
+  ],
+  "eldib": [
+   {
+    "code": "V-21",
+    "gewicht": 1
+   },
+   {
+    "code": "V-10",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-25",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 4,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "kochen",
+   "sinne"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "loeffel",
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Crêpes épaisses : attendre le signal, puis retourner",
+   "text": "Le ou la jeune verse une petite louche de pâte dans la poêle préchauffée et légèrement graissée (feu moyen) et la fait tourner jusqu’à ce que la pâte s’étale. Avant de retourner, il ou elle dit les trois signes à voix haute – « Des bulles ? Le bord ? Elle glisse ? » – et ne retourne que quand les trois y sont. L’attente sert à quelque chose : préparer la garniture (compote, sucre-cannelle, banane), poser l’assiette suivante. Après chaque crêpe, l’adulte donne un bref retour (« Tu as senti l’impulsion et tu as quand même attendu »), et le ou la jeune décide si le feu convient. Trois ou quatre crêpes sorties de la cuisine suffisent.",
+   "sagen": [
+    "Des bulles ? Le bord ? Elle glisse ? Seulement quand les trois disent oui, on retourne.",
+    "Tu remarques que tu veux retourner maintenant ? C’est l’impulsion. On vérifie une fois, puis on décide.",
+    "Cette fois, tu as attendu alors que ça te démangeait – regarde le résultat."
+   ],
+   "wennEsKippt": "Si une crêpe se déchire, on la déclare « crêpe brouillée » et on la coupe en morceaux – pas de drame. Si la poêle devient trop chaude ou si l’agitation monte, l’adulte prend un moment la spatule, et le ou la jeune annonce les trois signes.",
+   "kurz": "Pâte dans la poêle · vérifier les trois signes · puis retourner"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Pfanne gibt ehrliche Rückmeldung: Wer zu früh wendet, sieht es sofort – wer das Signal abwartet, wird mit einem goldbraunen Pfannkuchen belohnt.",
+    "vorbereitung": [
+     "Allergien klären (Ei, Milch, Gluten); Ersatz: Pflanzendrink, glutenfreies Mehl",
+     "125 g Mehl, 250 ml Milch, 1 Ei, 1 Prise Salz (4–5 Pfannkuchen)",
+     "Beschichtete Pfanne, Pfannenwender, Kelle, wenig Öl, Küchenpapier",
+     "Belag: Apfelmus, Zimt-Zucker, Banane",
+     "Pfannenstiel nach innen, Topflappen; Fachkraft steht daneben",
+     "Karte mit den drei Zeichen neben den Herd legen"
+    ],
+    "aufbau": "Die Karte mit den drei Zeichen liegt direkt am Herd. Der Belag steht bereit, aber nicht neben der Pfanne; die Fachkraft steht seitlich, mit freiem Blick auf Pfanne und Hände.",
+    "karten": [
+     {
+      "titel": "Drei Zeichen vor dem Wenden",
+      "karten": [
+       "Bläschen: Auf der Oberfläche bilden sich Bläschen, die platzen.",
+       "Rand: Der Rand wird matt und fest.",
+       "Rütteln: Der Pfannkuchen rutscht, wenn man die Pfanne leicht bewegt.",
+       "Alle drei Ja? Dann wenden."
+      ]
+     },
+     {
+      "titel": "Impuls-Check für den Alltag",
+      "karten": [
+       "Ich merke den Impuls: jetzt sofort!",
+       "Ich checke kurz meine Zeichen.",
+       "Ich entscheide: jetzt – oder gleich."
+      ]
+     }
+    ],
+    "leichter": "Die Fachkraft bäckt den ersten Pfannkuchen vor und spricht die Zeichen laut; der oder die Jugendliche übernimmt ab dem zweiten. Kleine Pfannkuchen lassen sich leichter wenden.",
+    "schwerer": "Der oder die Jugendliche verändert die Hitze bewusst und beobachtet, wie sich die Wartezeit ändert, und vergleicht am Ende den ersten mit dem letzten Pfannkuchen.",
+    "gruppe": "Zu zweit: Eine Person steht am Herd, die andere ist Signal-Checker und sagt die drei Zeichen an; nach jedem Pfannkuchen wird getauscht. Bei mehr Jugendlichen braucht es eine zweite Pfanne und eine zweite erwachsene Person am Herd.",
+    "beobachten": [
+     "Der oder die Jugendliche spricht die drei Zeichen vor dem Wenden von sich aus.",
+     "Er oder sie benennt den Impuls („jetzt will ich wenden“) und wartet trotzdem.",
+     "Nach einem missglückten Pfannkuchen bleibt er oder sie ruhig und macht weiter."
+    ],
+    "warum": "Ein fester Wenn-dann-Plan („Wenn ich wenden will, checke ich erst die drei Zeichen“) verlagert die Kontrolle vom Willen auf eine Routine und wirkt nachweislich (Gollwitzer & Sheeran, 2006); die Pfanne gibt dazu sofortige, ehrliche Rückmeldung.",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "La poêle donne un retour honnête : qui retourne trop tôt le voit tout de suite – qui attend le signal est récompensé par une crêpe bien dorée.",
+    "vorbereitung": [
+     "Vérifier les allergies (œuf, lait, gluten) ; boisson végétale, farine sans gluten",
+     "125 g de farine, 250 ml de lait, 1 œuf, 1 pincée de sel (4–5 crêpes)",
+     "Poêle antiadhésive, spatule, louche, un peu d’huile, essuie-tout",
+     "Garniture : compote, sucre-cannelle, banane",
+     "Manche vers l’intérieur, maniques ; l’adulte reste à côté",
+     "Poser la carte des trois signes près de la cuisinière"
+    ],
+    "aufbau": "La carte des trois signes est posée juste à côté de la cuisinière. La garniture est prête, mais pas près de la poêle ; l’adulte se tient sur le côté et voit bien la poêle et les mains.",
+    "karten": [
+     {
+      "titel": "Trois signes avant de retourner",
+      "karten": [
+       "Bulles : des bulles se forment à la surface et éclatent.",
+       "Bord : le bord devient mat et ferme.",
+       "Glisser : la crêpe glisse quand on bouge légèrement la poêle.",
+       "Trois fois oui ? Alors on retourne."
+      ]
+     },
+     {
+      "titel": "Contrôle de l’impulsion au quotidien",
+      "karten": [
+       "Je remarque l’impulsion : tout de suite !",
+       "Je vérifie brièvement mes signes.",
+       "Je décide : maintenant – ou dans un instant."
+      ]
+     }
+    ],
+    "leichter": "L’adulte fait la première crêpe en disant les signes à voix haute ; le ou la jeune prend le relais dès la deuxième. Les petites crêpes se retournent plus facilement.",
+    "schwerer": "Le ou la jeune change volontairement le feu, observe comment l’attente varie et compare à la fin la première et la dernière crêpe.",
+    "gruppe": "À deux : une personne est à la cuisinière, l’autre est contrôleur de signaux et annonce les trois signes ; on échange après chaque crêpe. Avec plus de jeunes, il faut une deuxième poêle et un deuxième adulte à la cuisinière.",
+    "beobachten": [
+     "Le ou la jeune dit les trois signes avant de retourner, de lui-même ou d’elle-même.",
+     "Il ou elle nomme l’impulsion (« là, je veux retourner ») et attend quand même.",
+     "Après une crêpe ratée, il ou elle reste calme et continue."
+    ],
+    "warum": "Un plan si-alors fixe (« Si je veux retourner, je vérifie d’abord les trois signes ») fait passer le contrôle de la volonté à une routine et a fait ses preuves (Gollwitzer & Sheeran, 2006) ; la poêle donne en plus un retour immédiat et honnête.",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:koch-pfanne-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Kochen"
+  },
+  "titel": "Wo lohnt es sich, auf das Signal zu warten?",
+  "text": "Beim Essen vergleichen beide den ersten und den letzten Pfannkuchen: Woran sieht man, dass gewartet wurde? Die Fachkraft fragt, wie sich der Impuls angekündigt hat, kurz bevor gewendet werden sollte – Kribbeln in den Händen, Ungeduld im Kopf? Dann übertragen beide den Drei-Zeichen-Check auf den Alltag: eine Nachricht, die man sofort abschicken will, ein Streit in der Pause, ein Pass im Fußball. Der oder die Jugendliche formuliert einen eigenen Satz nach dem Muster „Wenn ich …, dann checke ich erst …“, bevor beide die Küche aufräumen.",
+  "sagen": [
+   "Erster gegen letzter Pfannkuchen: Woran sieht man, dass du gewartet hast?",
+   "Wie hat sich der Impuls angekündigt – in den Händen, im Kopf?",
+   "Mach daraus einen Satz für deinen Alltag: Wenn ich …, dann checke ich erst …"
+  ],
+  "wennEsKippt": "Fällt keine Alltagssituation ein, legt die Fachkraft drei Karten hin (Chat, Pause, Sport), und der oder die Jugendliche wählt eine. Wirkt der Wenn-dann-Satz zu schulisch, genügt ein Stichwort.",
+  "kurz": "Ersten und letzten vergleichen · Impuls spüren · Wenn-dann-Satz",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "regeln",
+   "wut"
+  ],
+  "eldib": [
+   {
+    "code": "V-21",
+    "gewicht": 1
+   },
+   {
+    "code": "V-10",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-25",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 4,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "kochen",
+   "gespraech"
+  ],
+  "formen": [
+   "kochen"
+  ],
+  "material": [
+   "karten",
+   "kueche"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Où vaut-il la peine d’attendre le signal ?",
+   "text": "Pendant le repas, tous les deux comparent la première et la dernière crêpe : à quoi voit-on qu’on a attendu ? L’adulte demande comment l’impulsion s’est annoncée juste avant de vouloir retourner – des fourmis dans les mains, de l’impatience dans la tête ? Puis tous les deux transposent le contrôle des trois signes au quotidien : un message qu’on veut envoyer tout de suite, une dispute à la récréation, une passe au foot. Le ou la jeune formule sa propre phrase sur le modèle « Si je…, alors je vérifie d’abord… », avant de ranger la cuisine ensemble.",
+   "sagen": [
+    "Première contre dernière crêpe : à quoi on voit que tu as attendu ?",
+    "Comment l’impulsion s’est-elle annoncée – dans les mains, dans la tête ?",
+    "Fais-en une phrase pour ton quotidien : Si je…, alors je vérifie d’abord…"
+   ],
+   "wennEsKippt": "Si aucune situation ne vient, l’adulte pose trois cartes (chat, récréation, sport), et le ou la jeune en choisit une. Si la phrase si-alors fait trop scolaire, un mot-clé suffit.",
+   "kurz": "Comparer première et dernière · sentir l’impulsion · phrase si-alors"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Der Vergleich von erstem und letztem Pfannkuchen macht den eigenen Fortschritt sichtbar – ein Beleg, kein Lob.",
+    "beobachten": [
+     "Der oder die Jugendliche beschreibt, wie sich der Impuls bemerkbar gemacht hat.",
+     "Er oder sie überträgt den Check auf eine echte Alltagssituation.",
+     "Er oder sie formuliert einen eigenen Wenn-dann-Satz."
+    ],
+    "gruppe": "In der Gruppe sammelt jede Person eine Alltagssituation; die Gruppe wählt zwei aus und formuliert dafür gemeinsam Wenn-dann-Sätze."
+   },
+   "fr": {
+    "haken": "Comparer la première et la dernière crêpe rend le progrès visible – une preuve, pas un compliment.",
+    "beobachten": [
+     "Le ou la jeune décrit comment l’impulsion s’est manifestée.",
+     "Il ou elle transpose le contrôle à une vraie situation du quotidien.",
+     "Il ou elle formule sa propre phrase si-alors."
+    ],
+    "gruppe": "En groupe, chaque personne apporte une situation du quotidien ; le groupe en choisit deux et formule ensemble des phrases si-alors."
+   }
+  }
+ }
+]

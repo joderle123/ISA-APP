@@ -1,0 +1,3188 @@
+[
+ {
+  "id": "fo:drauss-mut-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Raus und Regeln: Was ist eigentlich Mut?",
+  "text": "Draußen zeigt die Fachkraft den Treffpunkt (einen auffälligen Baum), die Grenze des Geländes und das Sammel-Signal: zweimal klatschen, und das Kind klatscht zurück und kommt. Dann legt sie vier Stöcke wie die Sprossen einer Leiter auf den Boden und fragt: „Ist mutig, wer gar keine Angst hat?“ Gemeinsam finden beide eine bessere Antwort: Mutig ist, wer ein bisschen Angst hat und es trotzdem in kleinen Stufen probiert – und wer selbst entscheidet, welche Stufe dran ist. Zum Schluss lernt das Kind das Kribbel-Barometer: Mit der Hand zeigt es, wie viel es kribbelt – Hand unten heißt wenig, Hand oben heißt viel.",
+  "sagen": [
+   "Unser Treffpunkt ist dieser dicke Baum. Wenn ich zweimal klatsche, klatschst du zurück und kommst her.",
+   "Ist mutig, wer gar keine Angst hat? Oder eher, wer es trotzdem probiert?",
+   "Zeig mit der Hand, wie viel es kribbelt: unten wenig, oben viel."
+  ],
+  "wennEsKippt": "Ist das Kind schon aufgeregt, bleibt es zuerst am Treffpunkt und schaut sich die Stock-Leiter nur an. Mag es nicht reden, reicht das Zeigen mit der Hand.",
+  "kurz": "Treffpunkt, Grenze, Klatsch-Signal · Was ist Mut? · Kribbel-Hand",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "angst",
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "V-13",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "bewegung",
+   "gespraech"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Dehors et règles : c’est quoi, le courage ?",
+   "text": "Dehors, l’adulte montre le point de rendez-vous (un arbre bien visible), la limite du terrain et le signal de rassemblement : deux claquements de mains, et l’enfant répond en tapant dans ses mains et revient. Puis l’adulte pose quatre bâtons par terre comme les barreaux d’une échelle et demande : « Est-ce qu’on est courageux quand on n’a pas du tout peur ? » Ensemble, ils trouvent une meilleure réponse : est courageux celui qui a un peu peur et essaie quand même, par petites marches – et qui décide lui-même quelle marche est la bonne. Pour finir, l’enfant apprend le baromètre des fourmis : avec la main, il montre combien ça fourmille – main en bas, un peu ; main en haut, beaucoup.",
+   "sagen": [
+    "Notre point de rendez-vous, c’est ce gros arbre. Quand je tape deux fois dans mes mains, tu réponds et tu viens.",
+    "Est-ce qu’on est courageux quand on n’a pas du tout peur ? Ou plutôt quand on essaie quand même ?",
+    "Montre avec la main combien ça fourmille : en bas un peu, en haut beaucoup."
+   ],
+   "wennEsKippt": "Si l’enfant est déjà agité, il reste d’abord au point de rendez-vous et regarde seulement l’échelle de bâtons. S’il ne veut pas parler, montrer avec la main suffit.",
+   "kurz": "Rendez-vous, limite, signal · le courage ? · main-baromètre"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Eine Leiter aus Stöcken am Boden und eine Frage, die überrascht: Ist mutig, wer keine Angst hat? Kinder haben dazu sofort eine Meinung.",
+    "vorbereitung": [
+     "Wetter prüfen; feste Schuhe und Kleidung, die schmutzig werden darf",
+     "Treffpunkt und Grenze vorher festlegen, vier Stöcke bereitlegen",
+     "Telefon und kleines Erste-Hilfe-Set einstecken"
+    ],
+    "gruppe": "In der Gruppe stellen sich die Kinder zur Frage „Ist mutig, wer keine Angst hat?“ an einen von zwei Bäumen (Ja oder Nein) und sagen, wenn sie mögen, warum."
+   },
+   "fr": {
+    "haken": "Une échelle de bâtons par terre et une question qui surprend : est-on courageux quand on n’a pas peur ? Les enfants ont tout de suite un avis.",
+    "vorbereitung": [
+     "Vérifier la météo ; bonnes chaussures et habits qui peuvent se salir",
+     "Fixer avant le point de rendez-vous et la limite, préparer quatre bâtons",
+     "Prendre un téléphone et une petite trousse de secours"
+    ],
+    "gruppe": "En groupe, les enfants se placent près d’un de deux arbres (oui ou non) pour répondre à la question « Est-on courageux quand on n’a pas peur ? » et disent pourquoi s’ils le veulent."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-mut-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Die Mut-Leiter am Baumstamm",
+  "text": "Die Fachkraft hat vier Mut-Stufen vorbereitet: Stufe 1 über ein Seil am Boden balancieren, Stufe 2 über einen liegenden Baumstamm mit einem Stock als Geländer, den die Fachkraft hält, Stufe 3 über den Stamm ohne Halt, Stufe 4 ein paar Schritte auf dem Seil mit geschlossenen Augen. Vor jeder Stufe zeigt das Kind mit der Hand, wie viel es kribbelt, und sagt, was seiner Meinung nach passieren wird; danach zeigt es, wie viel es wirklich gekribbelt hat. Das Kind wählt selbst, ob es eine Stufe wiederholt, die nächste probiert oder aufhört – „Stopp“ ist immer erlaubt. Die Fachkraft beschreibt, was sie sieht: „Vorher war deine Hand oben, jetzt ist sie in der Mitte.“",
+  "sagen": [
+   "Welche Stufe ist heute deine? Du entscheidest.",
+   "Zeig mit der Hand: Wie viel kribbelt es vorher? Was glaubst du, was passiert?",
+   "Und jetzt danach: Wie viel kribbelt es noch?",
+   "Stopp ist immer erlaubt. Mutig ist auch, wer selbst entscheidet."
+  ],
+  "wennEsKippt": "Ist eine Stufe zu groß, baut die Fachkraft eine Zwischenstufe ein: das Seil in eine Kurve legen, den Stock länger halten, die Augen nur halb schließen. Bleibt das Kind unsicher, wiederholt es die letzte gelungene Stufe – auch das ist Mut.",
+  "kurz": "Vier Mut-Stufen · Kribbeln vorher und nachher zeigen · selbst wählen",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "angst",
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "V-13",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 1,
+  "reiz": 1,
+  "format": [
+   "bewegung",
+   "spiel"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "seil"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "L’échelle du courage sur le tronc d’arbre",
+   "text": "L’adulte a préparé quatre marches du courage : marche 1, tenir en équilibre sur une corde posée par terre ; marche 2, passer sur un tronc couché en s’aidant d’un bâton comme rampe, que l’adulte tient ; marche 3, passer sur le tronc sans appui ; marche 4, faire quelques pas sur la corde les yeux fermés. Avant chaque marche, l’enfant montre avec la main combien ça fourmille et dit ce qui, selon lui, va se passer ; après, il montre combien ça a vraiment fourmillé. L’enfant choisit lui-même s’il refait une marche, essaie la suivante ou arrête – « Stop » est toujours permis. L’adulte décrit ce qu’il ou elle voit : « Avant, ta main était en haut, maintenant elle est au milieu. »",
+   "sagen": [
+    "Quelle marche est la tienne aujourd’hui ? C’est toi qui décides.",
+    "Montre avec la main : combien ça fourmille avant ? Qu’est-ce qui va se passer, à ton avis ?",
+    "Et maintenant, après : combien ça fourmille encore ?",
+    "Stop est toujours permis. Être courageux, c’est aussi décider soi-même."
+   ],
+   "wennEsKippt": "Si une marche est trop haute, l’adulte ajoute une marche intermédiaire : poser la corde en courbe, tenir le bâton plus longtemps, fermer les yeux à moitié. Si l’enfant reste hésitant, il refait la dernière marche réussie – c’est aussi du courage.",
+   "kurz": "Quatre marches · fourmis avant et après · choisir soi-même"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Das Kind bestimmt selbst, wie mutig es heute ist – und sieht an der eigenen Hand, dass das Kribbeln nach dem Tun kleiner wird.",
+    "vorbereitung": [
+     "Gelände vorher abgehen: liegender Stamm höchstens kniehoch, weicher Boden",
+     "Seil (3–5 m) und ein langer, stabiler Stock als Geländer",
+     "Wetter prüfen; bei Sturm oder Gewitter nicht in den Wald (Astbruch)",
+     "Telefon und kleines Erste-Hilfe-Set; Treffpunkt in Sichtweite",
+     "Nach dem Wald Kleidung und Haut auf Zecken absuchen (Hinweis an Eltern)"
+    ],
+    "aufbau": "Die vier Stufen liegen nah beieinander, sodass das Kind von einer zur nächsten gehen kann; der Treffpunkt ist in Sichtweite. Die Fachkraft steht immer seitlich neben dem Kind, nie davor.",
+    "karten": [
+     {
+      "titel": "Mut-Stufen (anpassbar)",
+      "karten": [
+       "Stufe 1: auf einem Seil am Boden balancieren",
+       "Stufe 2: über den liegenden Stamm, mit dem Stock als Geländer",
+       "Stufe 3: über den Stamm ohne Halt",
+       "Stufe 4: drei Schritte auf dem Seil mit geschlossenen Augen",
+       "Eigene Stufe: Das Kind erfindet sie selbst"
+      ]
+     },
+     {
+      "titel": "Kribbel-Barometer (mit der Hand)",
+      "karten": [
+       "Hand unten: kaum Kribbeln",
+       "Hand in der Mitte: es kribbelt",
+       "Hand oben: es kribbelt sehr"
+      ]
+     }
+    ],
+    "leichter": "Für 4- bis 6-Jährige: drei Stufen, alle am Boden (Seil gerade, Seil im Zickzack, Seil mit dem Stock als Geländer); die Fachkraft geht auf Wunsch nebenher und zählt die Schritte mit.",
+    "schwerer": "Ab 9 Jahren erfindet das Kind eine eigene fünfte Stufe (rückwärts, mit einem Zapfen auf dem Kopf) und sagt vorher eine genaue Vermutung an, etwa „Nach drei Schritten falle ich herunter“ – danach wird geprüft.",
+    "gruppe": "In der Gruppe wählt jedes Kind seine eigene Stufe; niemand wird angefeuert oder gedrängt, Applaus gibt es für das Wählen, nicht für die höchste Stufe. Ab fünf Kindern: zwei Leitern und eine zweite erwachsene Person.",
+    "beobachten": [
+     "Das Kind wählt selbst eine Stufe und sagt auch einmal „Stopp“ oder „Noch mal“.",
+     "Es merkt, dass das Kribbeln danach oft kleiner ist als vorher.",
+     "Es probiert eine Stufe, die ihm vorher zu schwer schien."
+    ],
+    "warum": "Angst sinkt, wenn man sich in kleinen, selbst gewählten Stufen nähert und erlebt, dass die Befürchtung nicht eintrifft (Craske et al., 2014); kleine Wagnisse im Freien stärken Zutrauen und Angstbewältigung (Sandseter & Kennair, 2011).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "L’enfant décide lui-même à quel point il est courageux aujourd’hui – et voit sur sa propre main que les fourmis diminuent après avoir essayé.",
+    "vorbereitung": [
+     "Repérer le terrain : tronc couché à hauteur de genou maximum, sol souple",
+     "Corde (3–5 m) et un long bâton solide comme rampe",
+     "Vérifier la météo ; pas de forêt par tempête ou orage (chutes de branches)",
+     "Téléphone et petite trousse de secours ; rendez-vous bien visible",
+     "Après la forêt, vérifier vêtements et peau (tiques), prévenir les parents"
+    ],
+    "aufbau": "Les quatre marches sont proches les unes des autres, pour que l’enfant passe facilement de l’une à l’autre ; le point de rendez-vous reste visible. L’adulte se tient toujours sur le côté de l’enfant, jamais devant.",
+    "karten": [
+     {
+      "titel": "Marches du courage (adaptables)",
+      "karten": [
+       "Marche 1 : équilibre sur une corde posée par terre",
+       "Marche 2 : sur le tronc couché, avec le bâton comme rampe",
+       "Marche 3 : sur le tronc sans appui",
+       "Marche 4 : trois pas sur la corde les yeux fermés",
+       "Marche à soi : l’enfant l’invente lui-même"
+      ]
+     },
+     {
+      "titel": "Baromètre des fourmis (avec la main)",
+      "karten": [
+       "Main en bas : presque pas de fourmis",
+       "Main au milieu : ça fourmille",
+       "Main en haut : ça fourmille beaucoup"
+      ]
+     }
+    ],
+    "leichter": "Pour les 4–6 ans : trois marches, toutes au sol (corde droite, corde en zigzag, corde avec le bâton comme rampe) ; l’adulte marche à côté s’il le souhaite et compte les pas avec lui.",
+    "schwerer": "Dès 9 ans, l’enfant invente une cinquième marche (à reculons, avec une pomme de pin sur la tête) et annonce avant une prédiction précise, par exemple « Je vais tomber après trois pas » – puis on vérifie.",
+    "gruppe": "En groupe, chaque enfant choisit sa propre marche ; personne n’est encouragé à grands cris ni poussé, on applaudit le choix, pas la marche la plus haute. À partir de cinq enfants : deux échelles et un deuxième adulte.",
+    "beobachten": [
+     "L’enfant choisit lui-même une marche et dit aussi une fois « Stop » ou « Encore ».",
+     "Il remarque que les fourmis sont souvent plus petites après qu’avant.",
+     "Il essaie une marche qui lui semblait trop difficile avant."
+    ],
+    "warum": "La peur diminue quand on s’approche par petites marches choisies soi-même et qu’on constate que la crainte ne se réalise pas (Craske et al., 2014) ; les petits défis en plein air renforcent la confiance et la gestion de la peur (Sandseter & Kennair, 2011).",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-mut-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Fundstück: mein Mut-Stein",
+  "text": "Zurück am Treffpunkt sucht das Kind einen kleinen Stein, eine Eichel oder einen Zapfen als Mut-Stein für die Hosentasche. Mit dem Mut-Stein in der Hand ergänzt es den Satz: „Ich war mutig, als ich …“ Die Fachkraft sagt dazu, was sie gesehen hat, etwa: „Vorher war deine Hand ganz oben, danach in der Mitte.“ Dann überlegen beide, wo das Kind diese Woche eine kleine Mut-Stufe braucht: in der Pause jemanden ansprechen, sich im Unterricht melden, etwas Neues probieren.",
+  "sagen": [
+   "Such dir einen kleinen Mut-Stein für die Hosentasche.",
+   "Halt ihn fest und sag: Ich war mutig, als ich …",
+   "Wo brauchst du diese Woche eine kleine Mut-Stufe?"
+  ],
+  "wennEsKippt": "Fällt kein Satz ein, bietet die Fachkraft zwei Satzanfänge zur Auswahl an. Ist das Kind enttäuscht über eine Stufe, die nicht geklappt hat, erinnert die Fachkraft: Selbst entscheiden und Stopp sagen ist auch Mut.",
+  "kurz": "Mut-Stein suchen · „Ich war mutig, als …“ · Mut-Stufe für die Woche",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "angst",
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "V-13",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 6,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "sinne"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Trouvaille : ma pierre du courage",
+   "text": "De retour au point de rendez-vous, l’enfant cherche un petit caillou, un gland ou une pomme de pin comme pierre du courage pour sa poche. La pierre dans la main, il complète la phrase : « J’ai été courageux quand j’ai… » L’adulte ajoute ce qu’il ou elle a vu, par exemple : « Avant, ta main était tout en haut, après, au milieu. » Puis tous les deux cherchent où l’enfant aura besoin d’une petite marche du courage cette semaine : aborder quelqu’un à la récréation, lever la main en classe, essayer quelque chose de nouveau.",
+   "sagen": [
+    "Cherche une petite pierre du courage pour ta poche.",
+    "Tiens-la bien et dis : J’ai été courageux quand j’ai…",
+    "Où auras-tu besoin d’une petite marche du courage cette semaine ?"
+   ],
+   "wennEsKippt": "Si aucune phrase ne vient, l’adulte propose deux débuts de phrase au choix. Si l’enfant est déçu d’une marche ratée, l’adulte rappelle : décider soi-même et dire stop, c’est aussi du courage.",
+   "kurz": "Pierre du courage · « J’ai été courageux quand… » · la semaine"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Mut-Stein für die Hosentasche macht die Erfahrung greifbar – das Kind kann ihn in einer schwierigen Situation einfach festhalten.",
+    "beobachten": [
+     "Das Kind nennt eine konkrete Stufe, auf die es stolz ist.",
+     "Es erkennt an, dass auch Stopp-Sagen mutig war.",
+     "Es findet eine kleine Mut-Stufe für die Woche."
+    ],
+    "gruppe": "In der Gruppe zeigt jedes Kind seinen Mut-Stein und sagt einen Satz dazu, wer mag; die anderen hören zu, ohne zu vergleichen."
+   },
+   "fr": {
+    "haken": "Une pierre du courage dans la poche rend l’expérience concrète – l’enfant peut simplement la serrer dans une situation difficile.",
+    "beobachten": [
+     "L’enfant nomme une marche concrète dont il est fier.",
+     "Il reconnaît que dire stop était aussi courageux.",
+     "Il trouve une petite marche du courage pour la semaine."
+    ],
+    "gruppe": "En groupe, chaque enfant qui le veut montre sa pierre du courage et dit une phrase ; les autres écoutent sans comparer."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-mut-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Raus und Regeln: Was macht dein Alarmsystem im Dunkeln?",
+  "text": "Am Waldrand vereinbaren beide Treffpunkt, Grenze und Signal: Ein langer Pfiff heißt „sofort zu mir“, und das Stopp-Wort „Licht!“ beendet jede Übung auf der Stelle. Die Fachkraft fragt: „Warum fühlt sich derselbe Weg im Dunkeln so anders an als am Tag?“ Gemeinsam klären beide: Das Gehirn hat ein Alarmsystem, das bei wenig Information lieber zu oft anspringt – nützlich bei echter Gefahr, übertrieben auf einem bekannten Weg. Dann gehen beide den Pfad einmal mit Licht ab, damit der oder die Jugendliche jede Wurzel kennt.",
+  "sagen": [
+   "Treffpunkt hier, Grenze bis zum Weg da hinten. Wenn du „Licht!“ rufst, ist die Übung sofort vorbei – ohne Diskussion.",
+   "Warum fühlt sich derselbe Weg im Dunkeln so anders an?",
+   "Wir gehen ihn erst einmal mit Licht ab, damit du jede Wurzel kennst."
+  ],
+  "wennEsKippt": "Ist die Anspannung schon jetzt hoch, bleibt es beim Abgehen mit Licht, und die Stufen folgen ein anderes Mal. Wirkt das Thema Angst peinlich, spricht die Fachkraft nur vom „Alarmsystem“, das jeder Mensch hat.",
+  "kurz": "Treffpunkt, Pfiff, Stopp-Wort „Licht!“ · Alarmsystem · Pfad abgehen",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "angst",
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "K-24",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 5,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "bewegung",
+   "gespraech"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Dehors et règles : que fait ton système d’alarme dans le noir ?",
+   "text": "À l’orée de la forêt, tous les deux fixent le point de rendez-vous, la limite et le signal : un long coup de sifflet veut dire « viens tout de suite », et le mot stop « Lumière ! » arrête chaque exercice sur-le-champ. L’adulte demande : « Pourquoi le même chemin semble-t-il si différent dans le noir que de jour ? » Ensemble, ils clarifient : le cerveau a un système d’alarme qui, quand il a peu d’informations, préfère se déclencher trop souvent – utile en cas de vrai danger, exagéré sur un chemin connu. Puis tous les deux parcourent le sentier une fois avec de la lumière, pour que le ou la jeune connaisse chaque racine.",
+   "sagen": [
+    "Rendez-vous ici, limite jusqu’au chemin là-bas. Si tu cries « Lumière ! », l’exercice s’arrête tout de suite – sans discussion.",
+    "Pourquoi le même chemin semble-t-il si différent dans le noir ?",
+    "On le parcourt d’abord avec de la lumière, pour que tu connaisses chaque racine."
+   ],
+   "wennEsKippt": "Si la tension est déjà forte, on s’en tient au parcours avec lumière, et les marches viendront une autre fois. Si parler de peur gêne, l’adulte parle seulement du « système d’alarme » que tout être humain possède.",
+   "kurz": "Rendez-vous, sifflet, mot stop « Lumière ! » · alarme · repérer"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Frage, warum derselbe Weg im Dunkeln anders wirkt, kennt jede und jeder – und das Stopp-Wort „Licht!“ gibt sofort Kontrolle.",
+    "vorbereitung": [
+     "Bekannten, flachen Weg am Rand von Park oder Wald wählen, bei Licht abgehen",
+     "Zwei Taschen- oder Stirnlampen, Pfeife, Telefon, Erste-Hilfe-Set",
+     "Einverständnis der Eltern für eine Übung in der Dämmerung einholen"
+    ],
+    "gruppe": "In der Gruppe sammeln alle zuerst, was sich im Dunkeln anders anfühlt (Geräusche, Schatten, Fantasie); das Stopp-Wort gilt für jede Person einzeln."
+   },
+   "fr": {
+    "haken": "Tout le monde sait que le même chemin paraît autre dans le noir – et le mot stop « Lumière ! » redonne tout de suite le contrôle.",
+    "vorbereitung": [
+     "Choisir un chemin plat et connu en lisière de parc ou de forêt, repéré de jour",
+     "Deux lampes de poche ou frontales, sifflet, téléphone, trousse de secours",
+     "Obtenir l’accord des parents pour un exercice au crépuscule"
+    ],
+    "gruppe": "En groupe, on rassemble d’abord ce qui change dans le noir (bruits, ombres, imagination) ; le mot stop vaut pour chaque personne individuellement."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-mut-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Der Dämmerungspfad in Stufen",
+  "text": "Zwischen Bäumen ist ein Seil in Hüfthöhe gespannt, etwa 20 bis 30 Meter auf einem flachen, bekannten Weg; die Fachkraft steht am Ende mit Lampe und ist immer in Rufweite. Vor jeder Stufe notiert oder sagt der oder die Jugendliche eine Vorhersage – was wird passieren, wie unangenehm wird es: wenig, mittel oder stark? – und prüft sie danach. Stufe 1: mit Lampe am Seil entlang; Stufe 2: Lampe aus, eine Minute stehen und lauschen; Stufe 3: Lampe aus, am Seil entlang zur Stimme der Fachkraft; Stufe 4: dieselbe Strecke, während die Fachkraft schweigt. Nach jeder Stufe entscheidet der oder die Jugendliche selbst: wiederholen, weiter oder Schluss. Am Tag geht der Pfad mit geschlossenen Augen oder einem Tuch über den Augen.",
+  "sagen": [
+   "Deine Vorhersage: Was passiert, und wie unangenehm wird es – wenig, mittel oder stark?",
+   "Und? Was ist wirklich passiert? Wie nah lag dein Alarmsystem an der Wirklichkeit?",
+   "Du entscheidest: noch einmal, nächste Stufe oder Schluss."
+  ],
+  "wennEsKippt": "Ruft der oder die Jugendliche „Licht!“, geht die Lampe sofort an, und die Fachkraft kommt am Seil entlang entgegen; danach wird die letzte gelungene Stufe wiederholt oder Schluss gemacht. Steigt die Anspannung stark, helfen langes Ausatmen und die Hand fest am Seil, bis sie sinkt.",
+  "kurz": "Seil-Pfad im Dunkeln · Vorhersage vor jeder Stufe · danach prüfen",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "angst",
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "K-24",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 5,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 1,
+  "reiz": 1,
+  "format": [
+   "bewegung",
+   "sinne"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "seil",
+   "tuch",
+   "papier",
+   "stifte"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Le sentier du crépuscule, marche par marche",
+   "text": "Entre des arbres, une corde est tendue à hauteur de hanche, sur 20 à 30 mètres d’un chemin plat et connu ; l’adulte se tient au bout avec une lampe et reste toujours à portée de voix. Avant chaque marche, le ou la jeune note ou dit une prédiction – que va-t-il se passer, à quel point ce sera désagréable : un peu, moyennement ou beaucoup ? – puis la vérifie. Marche 1 : avec la lampe, le long de la corde ; marche 2 : lampe éteinte, rester une minute immobile à écouter ; marche 3 : lampe éteinte, le long de la corde jusqu’à la voix de l’adulte ; marche 4 : le même trajet pendant que l’adulte se tait. Après chaque marche, le ou la jeune décide : recommencer, continuer ou arrêter. De jour, le sentier se fait les yeux fermés ou avec un foulard sur les yeux.",
+   "sagen": [
+    "Ta prédiction : que va-t-il se passer, et à quel point ce sera désagréable – un peu, moyennement ou beaucoup ?",
+    "Alors ? Que s’est-il vraiment passé ? Ton système d’alarme était-il proche de la réalité ?",
+    "C’est toi qui décides : encore une fois, marche suivante ou on arrête."
+   ],
+   "wennEsKippt": "Si le ou la jeune crie « Lumière ! », la lampe s’allume tout de suite et l’adulte vient à sa rencontre le long de la corde ; ensuite, on refait la dernière marche réussie ou on arrête. Si la tension monte fort, de longues expirations et la main bien serrée sur la corde aident jusqu’à ce qu’elle redescende.",
+   "kurz": "Sentier de corde dans le noir · prédiction · vérifier après"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Weg, der am Tag harmlos ist, fühlt sich im Dunkeln völlig anders an – genau dieser Unterschied ist die Mutprobe, die der oder die Jugendliche selbst steuert.",
+    "vorbereitung": [
+     "Flachen, bekannten Weg wählen; Wurzeln und Äste vorher wegräumen",
+     "Seil (30 m) zwischen Bäumen in Hüfthöhe spannen, Knoten prüfen",
+     "Zwei Lampen, Pfeife, Telefon, Erste-Hilfe-Set, Zettel und Stift",
+     "Wetter prüfen: kein Sturm, kein Gewitter; warme, helle Kleidung",
+     "Einverständnis der Eltern; Zecken-Check nach dem Wald"
+    ],
+    "aufbau": "Das Seil führt von einem hellen Startpunkt zu einem Endpunkt, an dem die Fachkraft mit Lampe steht; der ganze Weg liegt in Rufweite. Ohne Dämmerung (Sommer, Mittag) wird derselbe Aufbau mit geschlossenen Augen genutzt.",
+    "karten": [
+     {
+      "titel": "Vorhersage-Karte",
+      "karten": [
+       "Stufe: …",
+       "Ich sage voraus, dass … passiert.",
+       "Unangenehm wird es: wenig – mittel – stark",
+       "Was wirklich passiert ist: …",
+       "Unangenehm war es: wenig – mittel – stark",
+       "Was ich daraus mitnehme: …"
+      ]
+     }
+    ],
+    "leichter": "Die Stufen bleiben bei Licht: Augen zu nur für drei Schritte, die Fachkraft spricht die ganze Zeit; oder der Pfad ist nur zehn Meter lang.",
+    "schwerer": "Der oder die Jugendliche plant eigene Stufen (rückwärts gehen, einen Abschnitt nur mit einer Hand am Seil) und schätzt vorher, wie weit die Vorhersage danebenliegen wird.",
+    "gruppe": "In der Gruppe geht immer nur eine Person auf dem Pfad, die anderen warten still mit einer zweiten erwachsenen Person am Start. Vorhersagen bleiben privat; geteilt wird nur, was jemand teilen will.",
+    "beobachten": [
+     "Der oder die Jugendliche macht vor einer Stufe eine Vorhersage und vergleicht sie danach.",
+     "Er oder sie wählt eine Stufe, die herausfordert, aber machbar ist.",
+     "Er oder sie benennt, dass die Anspannung beim Tun gesunken ist."
+    ],
+    "warum": "Angst lässt nach, wenn eine Befürchtung gezielt geprüft und nicht bestätigt wird (Erwartungsverletzung; Craske et al., 2014); selbst gewählte Stufen machen aus Vermeiden ein kontrolliertes Annähern."
+   },
+   "fr": {
+    "haken": "Un chemin anodin de jour paraît tout autre dans le noir – c’est justement cette différence qui devient l’épreuve de courage que le ou la jeune pilote lui-même ou elle-même.",
+    "vorbereitung": [
+     "Choisir un chemin plat et connu ; enlever racines et branches avant",
+     "Tendre une corde (30 m) entre des arbres à hauteur de hanche, vérifier les nœuds",
+     "Deux lampes, sifflet, téléphone, trousse de secours, papier et crayon",
+     "Vérifier la météo : ni tempête ni orage ; habits chauds et clairs",
+     "Accord des parents ; vérifier les tiques après la forêt"
+    ],
+    "aufbau": "La corde va d’un point de départ éclairé à un point d’arrivée où l’adulte attend avec une lampe ; tout le trajet reste à portée de voix. Sans crépuscule (été, midi), le même dispositif se fait les yeux fermés.",
+    "karten": [
+     {
+      "titel": "Carte de prédiction",
+      "karten": [
+       "Marche : …",
+       "Je prédis que… va se passer.",
+       "Ce sera désagréable : un peu – moyennement – beaucoup",
+       "Ce qui s’est vraiment passé : …",
+       "C’était désagréable : un peu – moyennement – beaucoup",
+       "Ce que j’en retiens : …"
+      ]
+     }
+    ],
+    "leichter": "Les marches restent à la lumière : yeux fermés seulement pendant trois pas, l’adulte parle tout le temps ; ou le sentier ne fait que dix mètres.",
+    "schwerer": "Le ou la jeune planifie ses propres marches (marcher à reculons, un tronçon avec une seule main sur la corde) et estime avant de combien la prédiction va se tromper.",
+    "gruppe": "En groupe, une seule personne à la fois est sur le sentier, les autres attendent en silence au départ avec un deuxième adulte. Les prédictions restent privées ; on partage seulement ce qu’on veut.",
+    "beobachten": [
+     "Le ou la jeune fait une prédiction avant une marche et la compare après.",
+     "Il ou elle choisit une marche qui pousse un peu, mais reste faisable.",
+     "Il ou elle remarque que la tension a baissé en agissant."
+    ],
+    "warum": "La peur diminue quand une crainte est vérifiée et ne se confirme pas (violation des attentes ; Craske et al., 2014) ; des marches choisies soi-même transforment l’évitement en approche contrôlée."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-mut-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Fundstück: ein Beweis gegen den Fehlalarm",
+  "text": "Zurück im Hellen sucht der oder die Jugendliche ein Fundstück, das für die stärkste Stufe steht – ein Stück Rinde, ein Blatt, einen kleinen Stein. Mit dem Fundstück in der Hand vergleicht er oder sie Vorhersage und Wirklichkeit in einem Satz: „Ich dachte …, passiert ist …“. Die Fachkraft fragt, wo das Alarmsystem im Alltag auch übertreibt: vor einem Referat, beim ersten Training im neuen Verein, bei einer Nachricht an jemand Neues. Der oder die Jugendliche wählt eine kleine Stufe für diese Woche und formuliert eine Vorhersage dazu.",
+  "sagen": [
+   "Such ein Fundstück, das für deine stärkste Stufe steht.",
+   "Ich dachte … – passiert ist … Wie lautet dein Satz?",
+   "Wo übertreibt dein Alarmsystem sonst noch – und welche kleine Stufe probierst du diese Woche?"
+  ],
+  "wennEsKippt": "Ist der oder die Jugendliche unzufrieden, weil eine Stufe nicht geklappt hat, zeigt die Fachkraft auf die Vorhersagen: Auch eine vorsichtige Entscheidung ist ein Ergebnis. Mag er oder sie keine Alltagsstufe nennen, reicht das Fundstück als Erinnerung.",
+  "kurz": "Fundstück für die stärkste Stufe · Vorhersage gegen echt · Alltag",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "angst",
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-24",
+    "gewicht": 1
+   },
+   {
+    "code": "K-24",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 5,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Trouvaille : une preuve contre la fausse alerte",
+   "text": "De retour à la lumière, le ou la jeune cherche une trouvaille qui représente sa marche la plus forte – un morceau d’écorce, une feuille, un petit caillou. La trouvaille dans la main, il ou elle compare prédiction et réalité en une phrase : « Je pensais que…, ce qui s’est passé, c’est… ». L’adulte demande où le système d’alarme exagère aussi au quotidien : avant un exposé, au premier entraînement dans un nouveau club, en écrivant à quelqu’un de nouveau. Le ou la jeune choisit une petite marche pour cette semaine et formule une prédiction.",
+   "sagen": [
+    "Cherche une trouvaille qui représente ta marche la plus forte.",
+    "Je pensais que… – ce qui s’est passé, c’est… Quelle est ta phrase ?",
+    "Où ton système d’alarme exagère-t-il encore – et quelle petite marche essaies-tu cette semaine ?"
+   ],
+   "wennEsKippt": "Si le ou la jeune est mécontent parce qu’une marche n’a pas marché, l’adulte montre les prédictions : une décision prudente est aussi un résultat. S’il ou elle ne veut pas nommer de marche au quotidien, la trouvaille suffit comme souvenir.",
+   "kurz": "Trouvaille de la marche la plus forte · prédit contre réel · quotidien"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Das Fundstück wird zum Beweisstück: Es erinnert an den Moment, in dem die Vorhersage nicht eingetroffen ist.",
+    "beobachten": [
+     "Der oder die Jugendliche formuliert einen Vergleich von Vorhersage und Ergebnis.",
+     "Er oder sie überträgt die Idee „Fehlalarm prüfen“ auf eine Alltagssituation.",
+     "Er oder sie plant eine kleine, konkrete Stufe für die Woche."
+    ],
+    "gruppe": "In der Gruppe teilt nur, wer mag, seinen „Ich dachte – passiert ist“-Satz; die Fachkraft sammelt Alltagssituationen, in denen das Alarmsystem oft übertreibt."
+   },
+   "fr": {
+    "haken": "La trouvaille devient une pièce à conviction : elle rappelle le moment où la prédiction ne s’est pas réalisée.",
+    "beobachten": [
+     "Le ou la jeune formule une comparaison entre prédiction et résultat.",
+     "Il ou elle transpose l’idée « vérifier la fausse alerte » à une situation du quotidien.",
+     "Il ou elle prévoit une petite marche concrète pour la semaine."
+    ],
+    "gruppe": "En groupe, seuls ceux qui le veulent partagent leur phrase « Je pensais – ce qui s’est passé » ; l’adulte rassemble des situations où le système d’alarme exagère souvent."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-team-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Raus und Regeln: Wetten, das schafft keiner allein?",
+  "text": "Am Treffpunkt zeigt die Fachkraft die Grenze des Geländes und das Signal: ein Eulenruf durch die hohlen Hände, und das Kind ruft zurück und kommt. Dann legt sie einen Zapfen auf ein ausgebreitetes Tuch, hält das Tuch allein an zwei Ecken und versucht, den Zapfen zu einem Baum zu tragen – das Tuch hängt durch, der Zapfen rollt herunter. Das Kind sagt, was fehlt; meist kommt: „Noch zwei Hände!“ Zusammen probieren beide es noch einmal, das Kind hält zwei Ecken, die Fachkraft zwei, und der Zapfen kommt an.",
+  "sagen": [
+   "Wetten, das schaffe ich allein? … Oh nein. Was fehlt?",
+   "Zusammen: Du hältst zwei Ecken, ich zwei. Los geht’s!",
+   "Wenn ich wie eine Eule rufe, rufst du zurück und kommst zum Treffpunkt."
+  ],
+  "wennEsKippt": "Lacht das Kind über das Missgeschick, lacht die Fachkraft mit – das Scheitern ist Absicht. Mag das Kind das Tuch nicht halten, sagt es zuerst nur an, wohin es gehen soll.",
+  "kurz": "Treffpunkt, Grenze, Eulenruf · allein scheitert der Zapfen · zu zweit",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-18",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "spiel",
+   "bewegung"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "tuch"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Dehors et règles : on parie que personne n’y arrive seul ?",
+   "text": "Au point de rendez-vous, l’adulte montre la limite du terrain et le signal : un cri de hibou dans les mains en creux, et l’enfant répond et revient. Puis l’adulte pose une pomme de pin sur un foulard étalé, tient le foulard tout seul par deux coins et essaie de porter la pomme de pin jusqu’à un arbre – le foulard pend, la pomme de pin roule par terre. L’enfant dit ce qu’il faudrait ; souvent, la réponse est : « Deux mains de plus ! » Ensemble, ils réessaient : l’enfant tient deux coins, l’adulte deux, et la pomme de pin arrive.",
+   "sagen": [
+    "On parie que j’y arrive tout seul ? … Oh non. Qu’est-ce qu’il faudrait ?",
+    "Ensemble : tu tiens deux coins, moi deux. C’est parti !",
+    "Quand je fais le hibou, tu me réponds et tu viens au point de rendez-vous."
+   ],
+   "wennEsKippt": "Si l’enfant rit de la maladresse, l’adulte rit avec lui – l’échec est voulu. Si l’enfant ne veut pas tenir le foulard, il annonce d’abord seulement où il faut aller.",
+   "kurz": "Rendez-vous, limite, hibou · seul ça rate · à deux ça marche"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Fachkraft scheitert absichtlich und sichtbar – Kinder lieben das, und die Lösung („Noch zwei Hände!“) finden sie selbst.",
+    "vorbereitung": [
+     "Großes Tuch (Halstuch oder Tischdecke) und einen Zapfen bereitlegen",
+     "Treffpunkt und Grenze festlegen; Eulenruf vorher selbst üben",
+     "Wetter prüfen; Telefon und kleines Erste-Hilfe-Set einstecken"
+    ],
+    "gruppe": "In der Gruppe versucht zuerst ein Kind allein, dann zu zweit, dann zu viert – die Kinder sehen selbst, ab wann es klappt."
+   },
+   "fr": {
+    "haken": "L’adulte rate exprès et de façon bien visible – les enfants adorent, et la solution (« Deux mains de plus ! ») vient d’eux.",
+    "vorbereitung": [
+     "Préparer un grand foulard (ou une nappe) et une pomme de pin",
+     "Fixer rendez-vous et limite ; s’entraîner avant au cri du hibou",
+     "Vérifier la météo ; prendre téléphone et petite trousse de secours"
+    ],
+    "gruppe": "En groupe, un enfant essaie d’abord seul, puis à deux, puis à quatre – les enfants voient eux-mêmes à partir de quand ça marche."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-team-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Der Tuch-Transport",
+  "text": "Das Kind und die Fachkraft sammeln fünf Fundstücke (Zapfen, Kastanie, Stein, Blatt, Stöckchen) und tragen sie einzeln auf dem gespannten Tuch zum „Lager“, einem Korb am Treffpunkt; die Regel lautet: Hände nur an den Ecken. Bei den ersten zwei Fundstücken ist das Kind Kapitän oder Kapitänin, bestimmt Weg und Tempo und sagt Kommandos an („langsam“, „Stopp“, „links um den Baum“), dann übernimmt die Fachkraft. Danach wird es schwieriger: um einen Baum herum, unter einem Ast durch und zum Schluss ganz ohne Worte, nur mit Zeichen, die beide vorher ausmachen. Rollt etwas herunter, beraten beide kurz, was sie ändern, und probieren es noch einmal.",
+  "sagen": [
+   "Du bist Kapitän oder Kapitänin: Sag mir, wohin und wie schnell.",
+   "Hoppla, heruntergerollt! Was machen wir anders?",
+   "Jetzt ohne Worte: Welche Zeichen machen wir aus für „Stopp“ und „weiter“?"
+  ],
+  "wennEsKippt": "Rollt zu oft etwas herunter, nehmen beide flache, schwerere Fundstücke (Stein, Rinde) und gehen langsamer. Streitet das Kind über den Weg, bestimmt es den nächsten Weg allein, und die Fachkraft macht ihren Vorschlag erst danach.",
+  "kurz": "Fundstücke auf dem Tuch tragen · Kapitän wechselt · ohne Worte",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-18",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "spiel",
+   "bewegung"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "tuch",
+   "korb"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Le transport en foulard",
+   "text": "L’enfant et l’adulte ramassent cinq trouvailles (pomme de pin, marron, caillou, feuille, petit bâton) et les portent une à une sur le foulard tendu jusqu’à la « réserve », un panier au point de rendez-vous ; la règle : les mains seulement aux coins. Pour les deux premières trouvailles, l’enfant est capitaine : il décide du chemin et du rythme et donne les ordres (« doucement », « stop », « à gauche autour de l’arbre »), puis l’adulte prend le relais. Ensuite, ça se corse : autour d’un arbre, sous une branche, et pour finir sans aucun mot, seulement avec des signes convenus avant. Si quelque chose roule par terre, tous les deux discutent brièvement de ce qu’ils changent et réessaient.",
+   "sagen": [
+    "C’est toi le capitaine : dis-moi où on va et à quelle vitesse.",
+    "Oups, c’est tombé ! Qu’est-ce qu’on change ?",
+    "Maintenant sans mots : quels signes on choisit pour « stop » et « on continue » ?"
+   ],
+   "wennEsKippt": "Si les trouvailles tombent trop souvent, on prend des objets plats et plus lourds (caillou, écorce) et on marche plus lentement. Si l’enfant se dispute sur le chemin, il décide seul du chemin suivant, et l’adulte fait sa proposition seulement après.",
+   "kurz": "Trouvailles sur le foulard · changer de capitaine · sans mots"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Tuch, vier Ecken, zwei Personen – sobald einer nicht aufpasst, rollt alles herunter. Das Kind spürt sofort, dass es den anderen wirklich braucht.",
+    "vorbereitung": [
+     "Großes Tuch sowie Korb oder Eimer als Lager bereitlegen",
+     "Gelände mit zwei, drei Bäumen und einem tiefen Ast vorher ablaufen",
+     "Treffpunkt, Grenze und Eulenruf festlegen; Wetter prüfen",
+     "Gesammeltes nicht in den Mund nehmen, danach Hände waschen",
+     "Nach dem Wald Zecken-Check (Hinweis an Eltern)"
+    ],
+    "aufbau": "Ein kleines Gelände mit Bäumen und einem tiefen Ast; der Korb steht gut sichtbar am Treffpunkt, die Fundstücke liegen im Umkreis von etwa 20 Metern.",
+    "karten": [
+     {
+      "titel": "Transport-Aufträge (ziehen)",
+      "karten": [
+       "Gerader Weg zum Lager",
+       "Einmal um den Baum herum",
+       "Unter einem Ast durch",
+       "Über eine Wurzel steigen",
+       "Ganz langsam wie eine Schnecke",
+       "Ohne Worte, nur mit Zeichen"
+      ]
+     }
+    ],
+    "leichter": "Für 4- bis 6-Jährige: kurze, gerade Wege und flache Fundstücke; die Fachkraft spricht die Kommandos vor, das Kind wiederholt sie.",
+    "schwerer": "Ab 9 Jahren liegen zwei Fundstücke gleichzeitig auf dem Tuch, der Weg hat drei Hindernisse, und die Zeichen ohne Worte erfindet das Kind allein.",
+    "gruppe": "Mit vier Kindern hält jedes Kind eine Ecke, eines davon ist Kapitän; bei mehr Kindern zwei Tücher. Nach jedem Fundstück wird gewechselt, sodass jedes Kind einmal führt und einmal folgt.",
+    "beobachten": [
+     "Das Kind sagt Kommandos klar an und passt sein Tempo an die Fachkraft an.",
+     "Es nimmt einen Vorschlag der Fachkraft an, wenn etwas heruntergerollt ist.",
+     "Es hält sich an die vereinbarten Zeichen ohne Worte."
+    ],
+    "warum": "Aufgaben, die nur gemeinsam lösbar sind, fördern Absprache und Rücksicht stärker als Wettbewerb (Johnson & Johnson, 2009); draußen verbinden sich Bewegung und Zusammenarbeit dabei ganz natürlich.",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "Un foulard, quatre coins, deux personnes – dès que l’un ne fait pas attention, tout tombe. L’enfant sent tout de suite qu’il a vraiment besoin de l’autre.",
+    "vorbereitung": [
+     "Préparer un grand foulard et un panier comme réserve",
+     "Repérer un terrain avec deux ou trois arbres et une branche basse",
+     "Fixer rendez-vous, limite et cri du hibou ; vérifier la météo",
+     "Ne rien mettre à la bouche ; se laver les mains après",
+     "Après la forêt, vérifier les tiques (prévenir les parents)"
+    ],
+    "aufbau": "Un petit terrain avec des arbres et une branche basse ; le panier est bien visible au point de rendez-vous, les trouvailles se trouvent dans un rayon d’environ 20 mètres.",
+    "karten": [
+     {
+      "titel": "Défis de transport (à tirer)",
+      "karten": [
+       "Chemin tout droit jusqu’à la réserve",
+       "Faire le tour d’un arbre",
+       "Passer sous une branche",
+       "Enjamber une racine",
+       "Très lentement, comme un escargot",
+       "Sans mots, seulement avec des signes"
+      ]
+     }
+    ],
+    "leichter": "Pour les 4–6 ans : chemins courts et droits, trouvailles plates ; l’adulte dit les ordres d’abord, l’enfant les répète.",
+    "schwerer": "Dès 9 ans, deux trouvailles à la fois sur le foulard, un chemin avec trois obstacles, et l’enfant invente seul les signes sans mots.",
+    "gruppe": "À quatre, chaque enfant tient un coin, l’un d’eux est capitaine ; avec plus d’enfants, deux foulards. On change après chaque trouvaille, pour que chaque enfant guide une fois et suive une fois.",
+    "beobachten": [
+     "L’enfant donne des ordres clairs et adapte son rythme à celui de l’adulte.",
+     "Il accepte une proposition de l’adulte quand quelque chose est tombé.",
+     "Il respecte les signes convenus sans mots."
+    ],
+    "warum": "Les tâches qu’on ne peut réussir qu’ensemble favorisent l’entente et l’attention à l’autre plus que la compétition (Johnson & Johnson, 2009) ; dehors, le mouvement et la coopération se combinent tout naturellement.",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-team-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Fundstücke: Was hat uns geholfen?",
+  "text": "Am Lager legt das Kind die fünf Fundstücke in eine Reihe. Für jedes Fundstück überlegt es, was beim Transport geholfen hat: der Zapfen für „langsam gehen“, der Stein für „Stopp sagen“, das Blatt für „auf den anderen schauen“. Die Fachkraft nennt einen Moment, in dem das Kind gut geführt oder gut zugehört hat. Zum Schluss nimmt das Kind ein Fundstück mit, das es an seinen besten Helfer-Satz erinnert, und beide überlegen, wobei es diese Woche mit jemandem zusammen etwas trägt, baut oder spielt.",
+  "sagen": [
+   "Leg die Fundstücke in eine Reihe. Was hat uns bei diesem hier geholfen?",
+   "Mir hat geholfen, dass du „Stopp“ gesagt hast, bevor es heruntergefallen ist.",
+   "Welches Fundstück nimmst du mit – und wobei brauchst du diese Woche einen Partner?"
+  ],
+  "wennEsKippt": "Fällt dem Kind nichts ein, nennt die Fachkraft zwei Ideen zur Auswahl. Mag es nicht reden, legt es nur das Fundstück für den besten Moment in die Mitte.",
+  "kurz": "Fundstücke in eine Reihe · was beim Tragen half · eins mitnehmen",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-18",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "sinne"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "korb"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Trouvailles : qu’est-ce qui nous a aidés ?",
+   "text": "À la réserve, l’enfant aligne les cinq trouvailles. Pour chaque trouvaille, il réfléchit à ce qui a aidé pendant le transport : la pomme de pin pour « marcher doucement », le caillou pour « dire stop », la feuille pour « regarder l’autre ». L’adulte nomme un moment où l’enfant a bien guidé ou bien écouté. Pour finir, l’enfant emporte une trouvaille qui lui rappelle sa meilleure phrase d’entraide, et tous les deux cherchent avec qui il portera, construira ou jouera quelque chose cette semaine.",
+   "sagen": [
+    "Aligne les trouvailles. Qu’est-ce qui nous a aidés pour celle-ci ?",
+    "Ce qui m’a aidé, c’est que tu as dit « stop » avant que ça tombe.",
+    "Quelle trouvaille tu emportes – et pour quoi as-tu besoin d’un partenaire cette semaine ?"
+   ],
+   "wennEsKippt": "Si rien ne vient, l’adulte propose deux idées au choix. Si l’enfant ne veut pas parler, il pose seulement au milieu la trouvaille du meilleur moment.",
+   "kurz": "Aligner les trouvailles · ce qui a aidé · en emporter une"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Jedes Fundstück bekommt eine Bedeutung – so wird aus einer Reihe Zapfen und Steine eine kleine Landkarte guter Zusammenarbeit.",
+    "beobachten": [
+     "Das Kind nennt mindestens eine konkrete Sache, die beim Tragen geholfen hat.",
+     "Es nimmt die Rückmeldung der Fachkraft an.",
+     "Es findet eine Situation in der Woche, in der es mit jemandem zusammenarbeitet."
+    ],
+    "gruppe": "In der Gruppe legt jedes Tuch-Team seine Fundstücke aus; die Kinder sammeln die besten Helfer-Sätze, und jedes Kind nimmt ein Fundstück mit."
+   },
+   "fr": {
+    "haken": "Chaque trouvaille reçoit un sens – une rangée de pommes de pin et de cailloux devient une petite carte de la bonne coopération.",
+    "beobachten": [
+     "L’enfant nomme au moins une chose concrète qui a aidé pendant le transport.",
+     "Il accepte le retour de l’adulte.",
+     "Il trouve une situation de la semaine où il coopère avec quelqu’un."
+    ],
+    "gruppe": "En groupe, chaque équipe de foulard expose ses trouvailles ; les enfants rassemblent les meilleures phrases d’entraide, et chaque enfant emporte une trouvaille."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-lotse-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Raus und Regeln: ein Code für zwei",
+  "text": "Am Treffpunkt legen beide Grenze und Signal fest: ein Pfiff heißt „zurück zum Treffpunkt“. Die Fachkraft erzählt kurz, dass Kranführer, Einweiser auf dem Flughafen und Bergretter mit festen Zeichen arbeiten, weil Worte im Lärm, im Wind oder auf Distanz untergehen. Dann fragt sie: „Könntest du jemanden mit geschlossenen Augen nur mit Klatschen um einen Baum lotsen?“ Gemeinsam erfinden beide in wenigen Minuten einen Code aus Klatschen, Schnipsen oder Pfiffen – etwa einmal klatschen für links, zweimal für rechts, schnelles Doppelklatschen für Stopp. Der oder die Jugendliche schreibt den Code auf eine Karte.",
+  "sagen": [
+   "Kranführer und Bergretter arbeiten mit festen Zeichen, weil Worte im Lärm untergehen.",
+   "Könntest du jemanden mit geschlossenen Augen nur mit Klatschen um einen Baum lotsen?",
+   "Wir erfinden einen Code: Was heißt links, was rechts, was Stopp?"
+  ],
+  "wennEsKippt": "Fällt kein Code ein, schlägt die Fachkraft einen vor, und der oder die Jugendliche ändert mindestens ein Zeichen. Wirkt die Idee albern, beginnt die Fachkraft selbst mit geschlossenen Augen – das nimmt Druck.",
+  "kurz": "Treffpunkt, Grenze, Pfiff · Zeichen wie Profis · eigenen Code erfinden",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "spiel",
+   "gespraech"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "karten",
+   "stifte"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Dehors et règles : un code pour deux",
+   "text": "Au point de rendez-vous, tous les deux fixent la limite et le signal : un coup de sifflet veut dire « retour au point de rendez-vous ». L’adulte raconte brièvement que les grutiers, le personnel de piste à l’aéroport et les secouristes en montagne travaillent avec des signes fixes, parce que les mots se perdent dans le bruit, le vent ou la distance. Puis l’adulte demande : « Tu pourrais guider quelqu’un les yeux fermés autour d’un arbre, rien qu’en tapant dans tes mains ? » Ensemble, ils inventent en quelques minutes un code fait de claquements de mains, de claquements de doigts ou de coups de sifflet – par exemple un clap pour gauche, deux pour droite, un double clap rapide pour stop. Le ou la jeune note le code sur une carte.",
+   "sagen": [
+    "Les grutiers et les secouristes en montagne travaillent avec des signes fixes, parce que les mots se noient dans le bruit.",
+    "Tu pourrais guider quelqu’un les yeux fermés autour d’un arbre, rien qu’en tapant dans tes mains ?",
+    "On invente un code : qu’est-ce qui veut dire gauche, droite, stop ?"
+   ],
+   "wennEsKippt": "Si aucun code ne vient, l’adulte en propose un, et le ou la jeune change au moins un signe. Si l’idée paraît ridicule, l’adulte commence lui-même ou elle-même les yeux fermés – ça enlève la pression.",
+   "kurz": "Rendez-vous, limite, sifflet · signes de pros · inventer un code"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Echte Profis aus Kran, Flughafen und Bergrettung als Vorbild – und eine Frage, die sofort zum Ausprobieren reizt.",
+    "vorbereitung": [
+     "Pfeife, Karte und Stift für den Code",
+     "Treffpunkt und Grenze festlegen; Wetter prüfen",
+     "Flaches Gelände ohne Gräben, Wasser oder Straße wählen"
+    ],
+    "gruppe": "In der Gruppe erfinden Paare je einen eigenen Code und schreiben ihn auf; später können die Paare ihre Codes tauschen."
+   },
+   "fr": {
+    "haken": "De vrais pros de la grue, de l’aéroport et du secours en montagne comme modèles – et une question qui donne tout de suite envie d’essayer.",
+    "vorbereitung": [
+     "Sifflet, carte et crayon pour le code",
+     "Fixer rendez-vous et limite ; vérifier la météo",
+     "Choisir un terrain plat, sans fossé, eau ni route"
+    ],
+    "gruppe": "En groupe, des duos inventent chacun leur code et le notent ; plus tard, ils peuvent échanger leurs codes."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-lotse-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Lotse und Pilot im Gelände",
+  "text": "Der oder die Jugendliche steckt mit Stöcken einen kurzen Parcours ab: zwei Tore, ein Baum zum Umrunden, ein Ziel. Zuerst ist die Fachkraft der Pilot: Sie geht mit geschlossenen Augen langsam los, und der oder die Jugendliche lotst sie nur mit dem vereinbarten Code durch den Parcours. Nach der Runde besprechen beide, wo der Code klar war und wo nicht, und verbessern ihn – ein neues Zeichen, ein langsameres Tempo. Dann wird getauscht, wenn der oder die Jugendliche möchte; sonst lotst er oder sie eine zweite, schwierigere Runde. Sicherheitsregel: Der Lotse bleibt immer höchstens zwei Schritte entfernt und sagt bei Gefahr laut „Stopp“.",
+  "sagen": [
+   "Ich mache die Augen zu und verlasse mich auf deinen Code. Du bist für meinen Weg verantwortlich.",
+   "Wo war der Code klar – und wo hat es gehakt? Was ändern wir?",
+   "Willst du jetzt Pilot sein, oder lotst du noch eine schwierigere Runde?"
+  ],
+  "wennEsKippt": "Gerät der Pilot ins Stolpern, ruft der Lotse „Stopp“, und beide gehen die Stelle einmal mit offenen Augen ab. Mag der oder die Jugendliche nicht blind gehen, bleibt er oder sie Lotse – Verantwortung für jemand anderen ist die eigentliche Übung.",
+  "kurz": "Parcours abstecken · blind lotsen nur mit Code · Code verbessern",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "spiel",
+   "bewegung",
+   "gespraech"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "karten",
+   "tuch"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Pilote et guide sur le terrain",
+   "text": "Le ou la jeune délimite avec des bâtons un petit parcours : deux portes, un arbre à contourner, une arrivée. D’abord, l’adulte est le pilote : il ou elle avance lentement les yeux fermés, et le ou la jeune le guide à travers le parcours uniquement avec le code convenu. Après le tour, tous les deux regardent où le code était clair et où il ne l’était pas, et l’améliorent – un nouveau signe, un rythme plus lent. Puis on échange, si le ou la jeune le souhaite ; sinon, il ou elle guide un deuxième tour plus difficile. Règle de sécurité : le guide reste toujours à deux pas maximum et crie « Stop » en cas de danger.",
+   "sagen": [
+    "Je ferme les yeux et je me fie à ton code. Tu es responsable de mon chemin.",
+    "Où le code était-il clair – et où est-ce que ça a coincé ? Qu’est-ce qu’on change ?",
+    "Tu veux être pilote maintenant, ou tu guides encore un tour plus difficile ?"
+   ],
+   "wennEsKippt": "Si le pilote trébuche, le guide crie « Stop », et tous les deux refont ce passage une fois les yeux ouverts. Si le ou la jeune ne veut pas marcher les yeux fermés, il ou elle reste guide – être responsable de quelqu’un d’autre, c’est le vrai exercice.",
+   "kurz": "Délimiter un parcours · guider à l’aveugle avec le code · l’améliorer"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Fachkraft schließt die Augen und gibt die Kontrolle ab – der oder die Jugendliche hat vom ersten Schritt an echte Verantwortung.",
+    "vorbereitung": [
+     "Flaches Gelände ohne Gräben, Wasser oder Straße; vorher abgehen",
+     "Stöcke für die Tore am Ort sammeln; Code-Karte und Stift",
+     "Tuch als Augenbinde nur auf Wunsch, sonst einfach Augen zu",
+     "Treffpunkt, Grenze, Pfiff; Telefon und Erste-Hilfe-Set dabei",
+     "Wetter prüfen; nach dem Wald Zecken-Check"
+    ],
+    "aufbau": "Der Parcours ist höchstens 20 Meter lang und liegt in Sichtweite des Treffpunkts. Die Tore bestehen aus je zwei Stöcken, etwa einen Meter breit.",
+    "karten": [
+     {
+      "titel": "Code-Karte (selbst ausfüllen)",
+      "karten": [
+       "Links: …",
+       "Rechts: …",
+       "Geradeaus: …",
+       "Langsamer: …",
+       "Stopp: …",
+       "Ziel erreicht: …"
+      ]
+     },
+     {
+      "titel": "Parcours-Bausteine",
+      "karten": [
+       "Tor aus zwei Stöcken",
+       "Baum umrunden",
+       "Unter einem Ast ducken",
+       "Über eine Wurzel steigen",
+       "Einen bestimmten Zapfen aufheben"
+      ]
+     }
+    ],
+    "leichter": "Der Code hat nur drei Zeichen (links, rechts, Stopp), der Parcours ein Tor und ein Ziel; der Pilot darf blinzeln.",
+    "schwerer": "Der Parcours endet mit einer Aufgabe (einen bestimmten Zapfen aufheben), und der Code muss mit höchstens fünf Zeichen auskommen; danach erklärt der oder die Jugendliche den Code so, dass ihn jemand ohne Probe versteht.",
+    "gruppe": "In Paaren lotst immer eine Person die andere; danach tauschen die Paare ihre Codes – klappt es auch mit dem Code der anderen? Eine erwachsene Person behält alle Paare im Blick.",
+    "beobachten": [
+     "Der oder die Jugendliche macht Vorschläge für den Code und greift einen Vorschlag der Fachkraft auf.",
+     "Er oder sie gibt klare, rechtzeitige Zeichen und sagt bei Gefahr „Stopp“.",
+     "Er oder sie verbessert den Code nach der Rückmeldung, ohne zu streiten."
+    ],
+    "warum": "Teams, die ein gemeinsames Verständnis ihrer Aufgabe und Signale aushandeln (geteilte mentale Modelle), koordinieren sich deutlich besser (Mathieu et al., 2000); die Person mit geschlossenen Augen macht jede Unklarheit sofort spürbar.",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxemburg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   },
+   "fr": {
+    "haken": "L’adulte ferme les yeux et lâche le contrôle – le ou la jeune a une vraie responsabilité dès le premier pas.",
+    "vorbereitung": [
+     "Terrain plat, sans fossé, eau ni route ; le repérer avant",
+     "Ramasser sur place des bâtons pour les portes ; carte du code et crayon",
+     "Foulard comme bandeau seulement si souhaité, sinon yeux fermés",
+     "Rendez-vous, limite, sifflet ; téléphone et trousse de secours",
+     "Vérifier la météo ; vérifier les tiques après la forêt"
+    ],
+    "aufbau": "Le parcours fait 20 mètres au maximum et reste visible depuis le point de rendez-vous. Les portes sont faites de deux bâtons, larges d’environ un mètre.",
+    "karten": [
+     {
+      "titel": "Carte du code (à remplir)",
+      "karten": [
+       "Gauche : …",
+       "Droite : …",
+       "Tout droit : …",
+       "Plus lentement : …",
+       "Stop : …",
+       "Arrivé : …"
+      ]
+     },
+     {
+      "titel": "Éléments de parcours",
+      "karten": [
+       "Porte de deux bâtons",
+       "Contourner un arbre",
+       "Se baisser sous une branche",
+       "Enjamber une racine",
+       "Ramasser une pomme de pin précise"
+      ]
+     }
+    ],
+    "leichter": "Le code n’a que trois signes (gauche, droite, stop), le parcours une porte et une arrivée ; le pilote peut entrouvrir les yeux.",
+    "schwerer": "Le parcours se termine par une tâche (ramasser une pomme de pin précise), et le code doit tenir en cinq signes maximum ; ensuite, le ou la jeune explique le code pour qu’on le comprenne sans essai.",
+    "gruppe": "En duos, une personne guide toujours l’autre ; ensuite, les duos échangent leurs codes – est-ce que ça marche aussi avec le code des autres ? Un adulte garde tous les duos à l’œil.",
+    "beobachten": [
+     "Le ou la jeune propose des signes et reprend une proposition de l’adulte.",
+     "Il ou elle donne des signes clairs, à temps, et crie « Stop » en cas de danger.",
+     "Il ou elle améliore le code après le retour, sans se disputer."
+    ],
+    "warum": "Les équipes qui négocient une compréhension commune de leur tâche et de leurs signaux (modèles mentaux partagés) se coordonnent nettement mieux (Mathieu et al., 2000) ; la personne aux yeux fermés rend chaque flou immédiatement sensible.",
+    "links": [
+     {
+      "titel": "GIMB – Gesond iessen, Méi bewegen (Luxembourg)",
+      "url": "https://gimb.public.lu"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-lotse-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Fundstück: Was macht einen guten Lotsen aus?",
+  "text": "Der oder die Jugendliche sucht ein Fundstück, das für das wichtigste Zeichen des Codes steht – zum Beispiel einen Stein für „Stopp“. Die Fachkraft erzählt, wie es war, mit geschlossenen Augen zu gehen, und nennt einen Moment, in dem sie dem Code vertraut hat. Dann überlegen beide, was einen guten Lotsen ausmacht – klar, rechtzeitig, ruhig – und wo es im Alltag hilft, sich vorher auf Zeichen zu einigen: im Fußball, beim gemeinsamen Zocken, bei einem Schulprojekt.",
+  "sagen": [
+   "Such ein Fundstück für das wichtigste Zeichen in unserem Code.",
+   "Mit geschlossenen Augen habe ich dir vertraut, als du so ruhig „Stopp“ gegeben hast.",
+   "Wo würde es dir helfen, dich vorher mit jemandem auf Zeichen zu einigen?"
+  ],
+  "wennEsKippt": "Fällt dem oder der Jugendlichen kein Alltagsbeispiel ein, nennt die Fachkraft drei zur Auswahl. Mag er oder sie nicht über Vertrauen sprechen, bleibt es beim Fundstück und beim Code.",
+  "kurz": "Fundstück für das wichtigste Zeichen · guter Lotse · Zeichen im Alltag",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-34",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   },
+   {
+    "code": "V-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "karten"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Trouvaille : qu’est-ce qui fait un bon guide ?",
+   "text": "Le ou la jeune cherche une trouvaille qui représente le signe le plus important du code – par exemple un caillou pour « stop ». L’adulte raconte comment c’était de marcher les yeux fermés et nomme un moment où il ou elle a fait confiance au code. Puis tous les deux réfléchissent à ce qui fait un bon guide – clair, à temps, calme – et où, au quotidien, il est utile de se mettre d’accord sur des signes avant : au foot, en jouant à un jeu à plusieurs, dans un projet de classe.",
+   "sagen": [
+    "Cherche une trouvaille pour le signe le plus important de notre code.",
+    "Les yeux fermés, je t’ai fait confiance quand tu as donné le « stop » si calmement.",
+    "Où est-ce que ça t’aiderait de te mettre d’accord sur des signes avec quelqu’un avant ?"
+   ],
+   "wennEsKippt": "Si aucun exemple du quotidien ne vient, l’adulte en propose trois au choix. Si le ou la jeune ne veut pas parler de confiance, on s’en tient à la trouvaille et au code.",
+   "kurz": "Trouvaille du signe clé · un bon guide · des signes au quotidien"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Fachkraft gibt zu, wie es sich angefühlt hat, die Kontrolle abzugeben – diese Offenheit macht Vertrauen besprechbar.",
+    "beobachten": [
+     "Der oder die Jugendliche nennt Eigenschaften eines guten Lotsen (klar, rechtzeitig, ruhig).",
+     "Er oder sie nimmt die Rückmeldung der Fachkraft an.",
+     "Er oder sie findet eine Alltagssituation, in der Absprachen vorher helfen."
+    ],
+    "gruppe": "In der Gruppe sammelt jedes Paar die Eigenschaften eines guten Lotsen; die Gruppe einigt sich auf drei und überlegt, wo sie ihr im Alltag helfen."
+   },
+   "fr": {
+    "haken": "L’adulte admet ce que ça fait de lâcher le contrôle – cette franchise permet de parler de confiance.",
+    "beobachten": [
+     "Le ou la jeune nomme les qualités d’un bon guide (clair, à temps, calme).",
+     "Il ou elle accepte le retour de l’adulte.",
+     "Il ou elle trouve une situation du quotidien où se mettre d’accord avant aide."
+    ],
+    "gruppe": "En groupe, chaque duo rassemble les qualités d’un bon guide ; le groupe en retient trois et réfléchit où elles aident au quotidien."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-ruhe-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Raus und Regeln: Reh-Ohren und Fuchsgang",
+  "text": "Am Treffpunkt zeigt die Fachkraft die Grenze und das Signal für heute: ein stilles Handzeichen (Hand hoch), und das Kind hebt auch die Hand und wird leise. Dann zeigt sie einen Trick der Tiere: die Hände hohl hinter die Ohren legen wie ein Reh – plötzlich klingt der Wald lauter. Das Kind probiert es aus, einmal ohne und einmal mit Reh-Ohren, und sagt, was es jetzt hört. Zum Schluss üben beide den Fuchsgang: den Fuß ganz langsam mit dem Ballen aufsetzen, spüren, ob ein Ast darunter liegt, und dann abrollen.",
+  "sagen": [
+   "Wenn ich die Hand hebe, hebst du sie auch und wirst ganz leise.",
+   "Mach Reh-Ohren: Hände hohl hinter die Ohren. Was hörst du jetzt?",
+   "Fuchsgang: Fuß langsam aufsetzen, spüren, dann abrollen – kein Ast soll knacken."
+  ],
+  "wennEsKippt": "Ist das Kind aufgedreht, gehen beide zuerst eine kleine Runde im normalen Tempo, bevor die Reh-Ohren kommen. Mag es nicht leise sein, zählt es zuerst die lautesten Geräusche.",
+  "kurz": "Treffpunkt, Grenze, Handzeichen · Reh-Ohren · Fuchsgang üben",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-11",
+    "gewicht": 1
+   },
+   {
+    "code": "V-12",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "sinne",
+   "bewegung"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Dehors et règles : oreilles de chevreuil et pas de renard",
+   "text": "Au point de rendez-vous, l’adulte montre la limite et le signal du jour : un geste silencieux (main levée), et l’enfant lève aussi la main et devient silencieux. Puis l’adulte montre une astuce des animaux : mettre les mains en creux derrière les oreilles comme un chevreuil – tout à coup, la forêt sonne plus fort. L’enfant essaie, une fois sans et une fois avec les oreilles de chevreuil, et dit ce qu’il entend maintenant. Pour finir, tous les deux s’exercent au pas de renard : poser le pied très lentement sur l’avant, sentir s’il y a une branche dessous, puis dérouler.",
+   "sagen": [
+    "Quand je lève la main, tu lèves aussi la tienne et tu deviens tout silencieux.",
+    "Fais des oreilles de chevreuil : les mains en creux derrière les oreilles. Qu’est-ce que tu entends maintenant ?",
+    "Pas de renard : poser le pied doucement, sentir, puis dérouler – aucune branche ne doit craquer."
+   ],
+   "wennEsKippt": "Si l’enfant est surexcité, tous les deux font d’abord un petit tour à vitesse normale avant les oreilles de chevreuil. S’il n’arrive pas à être silencieux, il compte d’abord les bruits les plus forts.",
+   "kurz": "Rendez-vous, limite, geste · oreilles de chevreuil · pas de renard"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Reh-Ohren wirken wirklich: Hohle Hände hinter den Ohren fangen mehr Schall von vorn ein – das Kind hört den Unterschied sofort.",
+    "vorbereitung": [
+     "Wetter prüfen; warme Kleidung, Sitzunterlage für später",
+     "Treffpunkt und Grenze festlegen; stilles Handzeichen vereinbaren",
+     "Kurze Runde mit drei Stopps vorher ablaufen"
+    ],
+    "gruppe": "In der Gruppe hebt jedes Kind beim Handzeichen die Hand, bis alle leise sind; die Reh-Ohren probieren alle gleichzeitig und flüstern danach ein Geräusch."
+   },
+   "fr": {
+    "haken": "Les oreilles de chevreuil marchent vraiment : les mains en creux derrière les oreilles captent plus de son venant de devant – l’enfant entend la différence tout de suite.",
+    "vorbereitung": [
+     "Vérifier la météo ; habits chauds, coussin pour s’asseoir plus tard",
+     "Fixer rendez-vous et limite ; convenir du geste silencieux",
+     "Repérer avant un petit tour avec trois arrêts"
+    ],
+    "gruppe": "En groupe, chaque enfant lève la main au signal jusqu’à ce que tout le monde soit silencieux ; tous essaient les oreilles de chevreuil en même temps et chuchotent ensuite un bruit."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-ruhe-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Sinnes-Spaziergang zum Sitzplatz",
+  "text": "Im Fuchsgang gehen beide eine kleine Runde mit drei Sinnes-Stopps. Beim Seh-Stopp sucht das Kind in der Natur drei Farben, die zu den Farbstreifen auf einer Karte passen. Beim Fühl-Stopp hält das Kind ein Ende eines Stocks, die Fachkraft das andere, und so führt sie das Kind mit geschlossenen Augen an einen Baum; es ertastet Rinde, Moos und Wurzeln, geht zurück und findet „seinen“ Baum danach mit offenen Augen wieder. Zum Schluss sucht sich das Kind einen Sitzplatz, sitzt zwei Minuten still und klappt bei jedem neuen Geräusch einen Finger aus; die Fachkraft sitzt in Sichtweite und gibt das Ende mit dem Handzeichen an.",
+  "sagen": [
+   "Seh-Stopp: Findest du diese drei Farben im Wald?",
+   "Fühl-Stopp: Augen zu, wenn du magst. Ist die Rinde rau, glatt oder feucht?",
+   "Jetzt such deinen Baum mit offenen Augen. Woran erkennst du ihn?",
+   "Sitzplatz: Bei jedem neuen Geräusch klappst du einen Finger aus."
+  ],
+  "wennEsKippt": "Kann das Kind nicht stillsitzen, sitzt es nur so lange, bis drei Finger ausgeklappt sind, oder es dreht dabei ein Blatt in der Hand. Mag es die Augen nicht schließen, ertastet es den Baum mit offenen Augen und beschreibt nur, wie er sich anfühlt.",
+  "kurz": "Fuchsgang · Farben suchen · Baum ertasten · Sitzplatz: Geräusche",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-11",
+    "gewicht": 1
+   },
+   {
+    "code": "V-12",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "sinne",
+   "bewegung"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "karten",
+   "decke"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Promenade des sens jusqu’au coin tranquille",
+   "text": "Au pas de renard, tous les deux font un petit tour avec trois arrêts des sens. À l’arrêt « voir », l’enfant cherche dans la nature trois couleurs qui correspondent aux bandes de couleur d’une carte. À l’arrêt « toucher », l’enfant tient un bout d’un bâton, l’adulte l’autre, et l’adulte le guide ainsi les yeux fermés jusqu’à un arbre ; l’enfant tâte l’écorce, la mousse et les racines, revient en arrière et retrouve ensuite « son » arbre les yeux ouverts. Pour finir, l’enfant se choisit un coin tranquille, reste assis deux minutes en silence et déplie un doigt à chaque nouveau bruit ; l’adulte est assis à portée de vue et annonce la fin avec le geste de la main.",
+   "sagen": [
+    "Arrêt « voir » : tu trouves ces trois couleurs dans la forêt ?",
+    "Arrêt « toucher » : les yeux fermés, si tu veux. L’écorce est rugueuse, lisse ou humide ?",
+    "Maintenant, cherche ton arbre les yeux ouverts. À quoi tu le reconnais ?",
+    "Coin tranquille : à chaque nouveau bruit, tu déplies un doigt."
+   ],
+   "wennEsKippt": "Si l’enfant n’arrive pas à rester assis, il reste seulement jusqu’à trois doigts dépliés, ou il fait tourner une feuille dans sa main. S’il ne veut pas fermer les yeux, il tâte l’arbre les yeux ouverts et décrit seulement ce qu’il sent sous ses doigts.",
+   "kurz": "Pas de renard · couleurs · toucher un arbre · coin tranquille"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Reh-Ohren und Fuchsgang machen aus Leisesein ein Tierspiel – das Kind wird still, weil es etwas entdecken will, nicht weil es muss.",
+    "vorbereitung": [
+     "Farbkarte malen: drei Streifen (z. B. Gelb, Rotbraun, Dunkelgrün)",
+     "Runde (etwa 100 m) mit drei Stopps vorher ablaufen",
+     "Stock zum Führen; Decke oder Sitzunterlage für den Sitzplatz",
+     "Wetter prüfen; nichts Gesammeltes in den Mund nehmen",
+     "Nach dem Wald Zecken-Check (Hinweis an Eltern)"
+    ],
+    "aufbau": "Die Runde hat drei Stopps: eine offene Stelle für die Farben, einen Baum mit gut fühlbarer Rinde und einen ruhigen Sitzplatz mit Blick zur Fachkraft.",
+    "karten": [
+     {
+      "titel": "Farbkarten (Herbst)",
+      "karten": [
+       "Sonnengelb",
+       "Rotbraun",
+       "Dunkelgrün",
+       "Hellgrau",
+       "Kastanienbraun",
+       "Moosgrün"
+      ]
+     },
+     {
+      "titel": "Fühlwörter",
+      "karten": [
+       "rau",
+       "glatt",
+       "feucht",
+       "weich",
+       "stachelig",
+       "kühl"
+      ]
+     }
+    ],
+    "leichter": "Für 4- bis 6-Jährige: nur zwei Stopps (Farben, Sitzplatz); der Sitzplatz dauert eine Minute, und das Kind sitzt neben der Fachkraft.",
+    "schwerer": "Ab 9 Jahren zeichnet das Kind am Sitzplatz eine Geräusche-Karte: ein Kreuz in der Mitte für sich selbst und jedes Geräusch als kleines Zeichen an der Stelle, aus der es kommt.",
+    "gruppe": "In der Gruppe gehen die Kinder im Fuchsgang hintereinander; beim Fühl-Stopp führen sie sich paarweise mit dem Stock. Jedes Kind hat einen eigenen Sitzplatz in Sichtweite, mit Abstand zu den anderen.",
+    "beobachten": [
+     "Das Kind wird beim Handzeichen leise und bleibt eine Weile bei einem Sinn.",
+     "Es sitzt am Sitzplatz ruhig und zählt mehrere Geräusche.",
+     "Es beschreibt mindestens eine Wahrnehmung genau (Farbe, Rinde, Geräusch)."
+    ],
+    "warum": "Natur zieht die Aufmerksamkeit sanft an und lässt die angestrengte, gerichtete Aufmerksamkeit sich erholen (Kaplan, 1995); kleine Sinnesaufträge nach Joseph Cornell machen Stillwerden für Kinder greifbar (Cornell, 1979)."
+   },
+   "fr": {
+    "haken": "Oreilles de chevreuil et pas de renard transforment le silence en jeu d’animaux – l’enfant se calme parce qu’il veut découvrir quelque chose, pas parce qu’il le doit.",
+    "vorbereitung": [
+     "Dessiner la carte : trois bandes (p. ex. jaune, brun-rouge, vert foncé)",
+     "Repérer le tour (environ 100 m) avec trois arrêts",
+     "Bâton pour guider ; couverture ou coussin pour le coin tranquille",
+     "Vérifier la météo ; ne rien mettre à la bouche",
+     "Après la forêt, vérifier les tiques (prévenir les parents)"
+    ],
+    "aufbau": "Le tour a trois arrêts : un endroit dégagé pour les couleurs, un arbre à l’écorce bien palpable et un coin tranquille d’où l’on voit l’adulte.",
+    "karten": [
+     {
+      "titel": "Cartes couleurs (automne)",
+      "karten": [
+       "Jaune soleil",
+       "Brun-rouge",
+       "Vert foncé",
+       "Gris clair",
+       "Marron",
+       "Vert mousse"
+      ]
+     },
+     {
+      "titel": "Mots du toucher",
+      "karten": [
+       "rugueux",
+       "lisse",
+       "humide",
+       "doux",
+       "piquant",
+       "frais"
+      ]
+     }
+    ],
+    "leichter": "Pour les 4–6 ans : deux arrêts seulement (couleurs, coin tranquille) ; le coin tranquille dure une minute, et l’enfant est assis à côté de l’adulte.",
+    "schwerer": "Dès 9 ans, l’enfant dessine une carte des bruits dans son coin : une croix au milieu pour lui-même et chaque bruit comme un petit signe à l’endroit d’où il vient.",
+    "gruppe": "En groupe, les enfants marchent au pas de renard l’un derrière l’autre ; à l’arrêt « toucher », ils se guident par deux avec le bâton. Chaque enfant a son propre coin à portée de vue, à distance des autres.",
+    "beobachten": [
+     "L’enfant devient silencieux au geste et reste un moment avec un sens.",
+     "Il reste assis calmement dans son coin et compte plusieurs bruits.",
+     "Il décrit au moins une perception avec précision (couleur, écorce, bruit)."
+    ],
+    "warum": "La nature attire l’attention en douceur et permet à l’attention dirigée, fatigante, de récupérer (Kaplan, 1995) ; les petites missions sensorielles inspirées de Joseph Cornell rendent le calme concret pour les enfants (Cornell, 1979)."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-ruhe-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Fundstück: das leiseste Geräusch",
+  "text": "Am Treffpunkt erzählt das Kind, wie viele Finger es am Sitzplatz ausgeklappt hat und was das leiseste Geräusch war. Es sucht ein kleines Fundstück, das es an den ruhigen Moment erinnert: ein glattes Blatt, einen Stein, ein Stück Moos. Die Fachkraft fragt, wann es diese Woche zu laut oder zu wild wird und wann das Kind kurz Reh-Ohren machen könnte. Gemeinsam probieren beide aus, wie die Reh-Ohren auch drinnen gehen: drei Atemzüge lang nur hinhören.",
+  "sagen": [
+   "Wie viele Finger hast du ausgeklappt? Und was war das leiseste Geräusch?",
+   "Such dir ein Fundstück, das dich an den ruhigen Moment erinnert.",
+   "Wann könntest du diese Woche kurz Reh-Ohren machen?"
+  ],
+  "wennEsKippt": "Hat das Kind am Sitzplatz wenig gehört, zählt jedes Geräusch – auch das eigene Atmen. Mag es kein Fundstück, reicht es, die Reh-Ohren noch einmal zu machen.",
+  "kurz": "Geräusche zählen · Fundstück für die Ruhe · Reh-Ohren im Alltag",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-11",
+    "gewicht": 1
+   },
+   {
+    "code": "V-12",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "sinne"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Trouvaille : le bruit le plus léger",
+   "text": "Au point de rendez-vous, l’enfant raconte combien de doigts il a dépliés dans son coin et quel était le bruit le plus léger. Il cherche une petite trouvaille qui lui rappelle le moment calme : une feuille lisse, un caillou, un bout de mousse. L’adulte demande quand ce sera trop bruyant ou trop agité cette semaine et quand l’enfant pourrait faire un instant les oreilles de chevreuil. Ensemble, ils essaient comment les oreilles de chevreuil marchent aussi à l’intérieur : pendant trois respirations, seulement écouter.",
+   "sagen": [
+    "Combien de doigts tu as dépliés ? Et quel était le bruit le plus léger ?",
+    "Cherche une trouvaille qui te rappelle le moment calme.",
+    "Quand pourrais-tu faire un instant les oreilles de chevreuil cette semaine ?"
+   ],
+   "wennEsKippt": "Si l’enfant a peu entendu dans son coin, chaque bruit compte – même sa propre respiration. S’il ne veut pas de trouvaille, refaire les oreilles de chevreuil suffit.",
+   "kurz": "Compter les bruits · trouvaille du calme · oreilles au quotidien"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Frage nach dem leisesten Geräusch lenkt die Erinnerung auf die Ruhe, nicht auf die Leistung.",
+    "beobachten": [
+     "Das Kind erinnert sich an ein leises Geräusch und beschreibt es.",
+     "Es wählt ein Fundstück und verbindet es mit dem ruhigen Moment.",
+     "Es nennt eine Situation, in der es die Reh-Ohren nutzen könnte."
+    ],
+    "gruppe": "In der Gruppe flüstert jedes Kind sein leisestes Geräusch; die Fundstücke werden kurz in die Mitte gelegt und dann wieder mitgenommen."
+   },
+   "fr": {
+    "haken": "La question du bruit le plus léger oriente le souvenir vers le calme, pas vers la performance.",
+    "beobachten": [
+     "L’enfant se souvient d’un bruit léger et le décrit.",
+     "Il choisit une trouvaille et l’associe au moment calme.",
+     "Il nomme une situation où il pourrait utiliser les oreilles de chevreuil."
+    ],
+    "gruppe": "En groupe, chaque enfant chuchote son bruit le plus léger ; les trouvailles sont posées un instant au milieu puis reprises."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-sitzplatz-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Raus und Regeln: Wie viele Geräusche hörst du?",
+  "text": "Am Treffpunkt vereinbaren beide Grenze und Signal: Ein leiser Pfiff heißt „zurück zum Treffpunkt“. Dann ein Mini-Test: Der oder die Jugendliche schätzt, wie viele verschiedene Geräusche hier gerade zu hören sind, schließt 30 Sekunden die Augen und zählt mit den Fingern. Meist sind es deutlich mehr als geschätzt – die Fachkraft erklärt, dass das Gehirn die meisten Geräusche ausfiltert, damit wir uns auf Wichtiges konzentrieren können, und dass man diesen Filter bewusst öffnen kann. Wer mag, legt das Handy für die nächste Viertelstunde stumm in den Rucksack.",
+  "sagen": [
+   "Schätz mal: Wie viele verschiedene Geräusche hört man hier gerade?",
+   "Augen zu, 30 Sekunden, mit den Fingern zählen.",
+   "Dein Gehirn filtert das meiste weg. Heute drehen wir den Filter bewusst auf."
+  ],
+  "wennEsKippt": "Ist es dem oder der Jugendlichen unangenehm, die Augen zu schließen, schaut er oder sie auf einen Punkt am Boden. Bleibt das Handy lieber in der Tasche, ist das in Ordnung – Hauptsache stumm.",
+  "kurz": "Grenze, Pfiff · Geräusche schätzen und zählen · Filter im Kopf",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-29",
+    "gewicht": 1
+   },
+   {
+    "code": "V-11",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "sinne",
+   "gespraech"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Dehors et règles : combien de bruits entends-tu ?",
+   "text": "Au point de rendez-vous, tous les deux fixent la limite et le signal : un léger coup de sifflet veut dire « retour au point de rendez-vous ». Puis un mini-test : le ou la jeune estime combien de bruits différents on entend ici en ce moment, ferme les yeux 30 secondes et compte sur ses doigts. En général, il y en a nettement plus que prévu – l’adulte explique que le cerveau filtre la plupart des bruits pour qu’on puisse se concentrer sur l’essentiel, et qu’on peut ouvrir ce filtre volontairement. Qui veut range son téléphone en silencieux dans son sac pour le quart d’heure suivant.",
+   "sagen": [
+    "Estime : combien de bruits différents on entend ici en ce moment ?",
+    "Yeux fermés, 30 secondes, tu comptes sur tes doigts.",
+    "Ton cerveau filtre presque tout. Aujourd’hui, on ouvre le filtre exprès."
+   ],
+   "wennEsKippt": "Si fermer les yeux met le ou la jeune mal à l’aise, il ou elle fixe un point au sol. Si le téléphone reste plutôt dans la poche, c’est d’accord – l’essentiel, c’est qu’il soit en silencieux.",
+   "kurz": "Limite, sifflet · estimer et compter les bruits · le filtre"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein Schätz-Test, bei dem fast alle danebenliegen – die Überraschung („so viele?“) öffnet für die Übung.",
+    "vorbereitung": [
+     "Ort mit Naturgeräuschen und etwas Abstand zur Straße wählen",
+     "Treffpunkt, Grenze und leises Pfiff-Signal festlegen",
+     "Wetter prüfen; warme Kleidung"
+    ],
+    "gruppe": "In der Gruppe schätzt jede Person still, zählt mit geschlossenen Augen und zeigt danach ihre Zahl mit den Fingern – die Unterschiede sind ein guter Gesprächsanlass."
+   },
+   "fr": {
+    "haken": "Un test d’estimation où presque tout le monde se trompe – la surprise (« autant ? ») ouvre à l’exercice.",
+    "vorbereitung": [
+     "Choisir un lieu avec des bruits de nature, un peu à l’écart de la route",
+     "Fixer rendez-vous, limite et léger signal de sifflet",
+     "Vérifier la météo ; habits chauds"
+    ],
+    "gruppe": "En groupe, chaque personne estime en silence, compte les yeux fermés et montre ensuite son nombre avec les doigts – les différences lancent bien la discussion."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-sitzplatz-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Sitzplatz und Geräusche-Karte",
+  "text": "Der oder die Jugendliche sucht sich selbst einen Sitzplatz in Sichtweite der Fachkraft – an einem Baumstamm, auf einem Stein, auf einer Decke. Dort zeichnet er oder sie eine Geräusche-Karte: ein Kreuz in der Mitte für sich selbst und jedes Geräusch als kleines eigenes Zeichen an der Stelle, aus der es kommt, nah oder fern. Nach etwa fünf Minuten folgt die 5-4-3-2-1-Übung: fünf Dinge sehen, vier hören, drei spüren, zwei riechen, ein langer Atemzug. Die Fachkraft sitzt mit Abstand, macht dieselbe Übung und gibt nach etwa zehn Minuten das leise Signal.",
+  "sagen": [
+   "Such dir einen Platz, an dem es sich gut anfühlt – solange du mich sehen kannst.",
+   "Du bist das Kreuz in der Mitte. Woher kommt jedes Geräusch – nah oder fern?",
+   "Jetzt: fünf Dinge sehen, vier hören, drei spüren, zwei riechen – und ein langer Atemzug."
+  ],
+  "wennEsKippt": "Wird das Stillsitzen unruhig, darf der oder die Jugendliche die Karte im Gehen zeichnen oder den Sitzplatz einmal wechseln. Kommen unangenehme Gedanken, hilft es, die Aufmerksamkeit zum nächsten Geräusch zu lenken; die Übung darf jederzeit mit dem Signal enden.",
+  "kurz": "Eigener Sitzplatz · Geräusche-Karte zeichnen · 5-4-3-2-1",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-29",
+    "gewicht": 1
+   },
+   {
+    "code": "V-11",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "sinne",
+   "atmen"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "papier",
+   "stifte",
+   "decke"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Coin tranquille et carte des bruits",
+   "text": "Le ou la jeune se choisit un coin tranquille à portée de vue de l’adulte – contre un tronc, sur une pierre, sur une couverture. Il ou elle y dessine une carte des bruits : une croix au milieu pour soi-même et chaque bruit comme un petit signe personnel à l’endroit d’où il vient, proche ou lointain. Après environ cinq minutes vient l’exercice « 5-4-3-2-1 » : voir cinq choses, en entendre quatre, en sentir trois sur la peau, en sentir deux avec le nez, une longue respiration. L’adulte est assis à distance, fait le même exercice et donne le léger signal après une dizaine de minutes.",
+   "sagen": [
+    "Choisis un endroit où tu te sens bien – du moment que tu me vois.",
+    "Tu es la croix au milieu. D’où vient chaque bruit – de près ou de loin ?",
+    "Maintenant : cinq choses à voir, quatre à entendre, trois à toucher, deux à sentir – et une longue respiration."
+   ],
+   "wennEsKippt": "Si rester assis devient difficile, le ou la jeune peut dessiner la carte en marchant ou changer une fois de place. Si des pensées désagréables arrivent, ça aide de porter l’attention sur le bruit suivant ; l’exercice peut s’arrêter à tout moment avec le signal.",
+   "kurz": "Coin à soi · dessiner la carte des bruits · 5-4-3-2-1"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Geräusche-Karte ist ein Auftrag mit Stift – kein „Jetzt entspann dich“, sondern eine Aufgabe, bei der Ruhe ganz nebenbei entsteht.",
+    "vorbereitung": [
+     "Papier auf fester Unterlage und Bleistift (geht auch bei Nässe)",
+     "Decke oder Sitzunterlage; warme Kleidung",
+     "Gelände mit ruhigen Plätzen in Sichtweite wählen",
+     "Treffpunkt, Grenze und leises Pfiff-Signal festlegen",
+     "Nach dem Wald Zecken-Check"
+    ],
+    "aufbau": "Die Fachkraft sitzt so, dass sie den Sitzplatz sieht, aber nicht daneben – etwa 15 bis 20 Meter Abstand. Der Sitzplatz liegt abseits vom Weg.",
+    "karten": [
+     {
+      "titel": "5-4-3-2-1 (Taschenkarte)",
+      "karten": [
+       "5 Dinge, die ich sehe",
+       "4 Dinge, die ich höre",
+       "3 Dinge, die ich spüre",
+       "2 Dinge, die ich rieche",
+       "1 langer Atemzug"
+      ]
+     },
+     {
+      "titel": "Zeichen für die Geräusche-Karte (Vorschläge)",
+      "karten": [
+       "Welle = Wind",
+       "Note = Vogel",
+       "Pfeil = Auto oder Straße",
+       "Kreis = Stimme",
+       "Stern = etwas Überraschendes"
+      ]
+     }
+    ],
+    "leichter": "Nur die Geräusche-Karte, ohne 5-4-3-2-1; der Sitzplatz liegt näher bei der Fachkraft, und drei Minuten reichen.",
+    "schwerer": "Der oder die Jugendliche kehrt bei späteren Treffen zum selben Sitzplatz zurück und vergleicht die Karten, oder er oder sie erfindet eine Mini-Version für die Bushaltestelle.",
+    "gruppe": "In der Gruppe hat jede Person einen eigenen Sitzplatz mit Sichtkontakt zur Fachkraft und Abstand zu den anderen; danach legen alle ihre Karten nebeneinander und vergleichen, wer was gehört hat.",
+    "beobachten": [
+     "Der oder die Jugendliche bleibt mehrere Minuten bei der Aufgabe, ohne aufs Handy zu schauen.",
+     "Er oder sie beschreibt eine Veränderung im Körper (z. B. Schultern locker, Atem langsamer).",
+     "Er oder sie benennt eine Alltagssituation für eine Kurzversion."
+    ],
+    "warum": "Achtsamkeitsübungen senken bei Jugendlichen Stress mit kleinen bis mittleren Effekten (Zoogman et al., 2015); die Natur erleichtert das, weil sie die Aufmerksamkeit ohne Anstrengung bindet (Kaplan, 1995)."
+   },
+   "fr": {
+    "haken": "La carte des bruits est une mission avec un crayon – pas un « Maintenant, détends-toi », mais une tâche où le calme vient tout seul.",
+    "vorbereitung": [
+     "Papier sur support rigide et crayon à papier (marche même humide)",
+     "Couverture ou coussin ; habits chauds",
+     "Choisir un terrain avec des coins calmes à portée de vue",
+     "Fixer rendez-vous, limite et léger signal de sifflet",
+     "Après la forêt, vérifier les tiques"
+    ],
+    "aufbau": "L’adulte s’assoit de façon à voir le coin tranquille, mais pas juste à côté – à environ 15 à 20 mètres. Le coin est à l’écart du chemin.",
+    "karten": [
+     {
+      "titel": "5-4-3-2-1 (carte de poche)",
+      "karten": [
+       "5 choses que je vois",
+       "4 choses que j’entends",
+       "3 choses que je sens sur ma peau",
+       "2 choses que je sens avec le nez",
+       "1 longue respiration"
+      ]
+     },
+     {
+      "titel": "Signes pour la carte des bruits (idées)",
+      "karten": [
+       "Vague = vent",
+       "Note = oiseau",
+       "Flèche = voiture ou route",
+       "Cercle = voix",
+       "Étoile = quelque chose de surprenant"
+      ]
+     }
+    ],
+    "leichter": "Seulement la carte des bruits, sans 5-4-3-2-1 ; le coin est plus proche de l’adulte, et trois minutes suffisent.",
+    "schwerer": "Le ou la jeune revient au même coin lors de rencontres ultérieures et compare les cartes, ou invente une mini-version pour l’arrêt de bus.",
+    "gruppe": "En groupe, chaque personne a son propre coin, en contact visuel avec l’adulte et à distance des autres ; ensuite, on pose les cartes côte à côte et on compare qui a entendu quoi.",
+    "beobachten": [
+     "Le ou la jeune reste plusieurs minutes dans la tâche sans regarder son téléphone.",
+     "Il ou elle décrit un changement dans le corps (p. ex. épaules relâchées, respiration plus lente).",
+     "Il ou elle nomme une situation du quotidien pour une version courte."
+    ],
+    "warum": "Les exercices de pleine conscience réduisent le stress chez les jeunes avec des effets faibles à moyens (Zoogman et al., 2015) ; la nature facilite cela, car elle capte l’attention sans effort (Kaplan, 1995)."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-sitzplatz-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Fundstück: Was nehme ich mit?",
+  "text": "Zurück am Treffpunkt legen beide ihre Geräusche-Karten nebeneinander und vergleichen: Was hat nur einer von beiden gehört? Der oder die Jugendliche sucht ein Fundstück, das zur Stimmung am Sitzplatz passt, und beschreibt, was sich im Körper verändert hat – Atem, Schultern, Gedanken. Dann planen beide eine Zwei-Minuten-Version für den Alltag: an der Bushaltestelle, in der Pause, vor dem Einschlafen. Der oder die Jugendliche entscheidet, wann er oder sie sie diese Woche einmal ausprobiert.",
+  "sagen": [
+   "Was hast du gehört, was ich nicht gehört habe?",
+   "Was hat sich im Körper verändert – Atem, Schultern, Kopf?",
+   "Wo könntest du diese Woche eine Zwei-Minuten-Version einbauen?"
+  ],
+  "wennEsKippt": "Hat sich nichts verändert, ist auch das ein Ergebnis; die Fachkraft fragt, was ein anderes Mal helfen könnte (anderer Platz, kürzer, mit Musik im Ohr). Mag der oder die Jugendliche nicht sprechen, reicht es, das Fundstück zu zeigen.",
+  "kurz": "Karten vergleichen · Fundstück zur Stimmung · Zwei-Minuten-Version",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-29",
+    "gewicht": 1
+   },
+   {
+    "code": "V-11",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "sinne"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "papier"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Trouvaille : qu’est-ce que j’emporte ?",
+   "text": "De retour au point de rendez-vous, tous les deux posent leurs cartes des bruits côte à côte et comparent : qu’est-ce qu’un seul des deux a entendu ? Le ou la jeune cherche une trouvaille qui correspond à l’ambiance du coin tranquille et décrit ce qui a changé dans le corps – respiration, épaules, pensées. Puis tous les deux prévoient une version de deux minutes pour le quotidien : à l’arrêt de bus, à la récréation, avant de s’endormir. Le ou la jeune décide quand il ou elle l’essaiera une fois cette semaine.",
+   "sagen": [
+    "Qu’est-ce que tu as entendu que je n’ai pas entendu ?",
+    "Qu’est-ce qui a changé dans le corps – respiration, épaules, tête ?",
+    "Où pourrais-tu glisser une version de deux minutes cette semaine ?"
+   ],
+   "wennEsKippt": "Si rien n’a changé, c’est aussi un résultat ; l’adulte demande ce qui pourrait aider une autre fois (autre endroit, plus court, avec de la musique dans les oreilles). Si le ou la jeune ne veut pas parler, montrer la trouvaille suffit.",
+   "kurz": "Comparer les cartes · trouvaille de l’ambiance · version de 2 minutes"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Der Vergleich der Karten zeigt: Zwei Menschen am selben Ort hören Verschiedenes – Aufmerksamkeit ist lenkbar.",
+    "beobachten": [
+     "Der oder die Jugendliche beschreibt eine Veränderung im Körper oder im Kopf.",
+     "Er oder sie plant eine konkrete Kurzversion (wo, wann).",
+     "Er oder sie bleibt beim Vergleich der Karten neugierig, ohne zu werten."
+    ],
+    "gruppe": "In der Gruppe legen alle ihre Karten in einen Kreis; die Gruppe sucht Geräusche, die nur eine Person gehört hat, und sammelt Orte für Zwei-Minuten-Versionen."
+   },
+   "fr": {
+    "haken": "Comparer les cartes montre que deux personnes au même endroit entendent des choses différentes – l’attention se dirige.",
+    "beobachten": [
+     "Le ou la jeune décrit un changement dans le corps ou dans la tête.",
+     "Il ou elle prévoit une version courte concrète (où, quand).",
+     "Il ou elle reste curieux ou curieuse en comparant les cartes, sans juger."
+    ],
+    "gruppe": "En groupe, on pose toutes les cartes en cercle ; le groupe cherche les bruits qu’une seule personne a entendus et rassemble des lieux pour des versions de deux minutes."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-gefuehl-kinder:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Raus und Regeln: Ein Gesicht aus dem Wald",
+  "text": "Am Treffpunkt zeigt die Fachkraft Grenze und Signal: Sie ruft „Kuckuck“, und das Kind ruft zurück und kommt. Dort liegt schon ein Gesicht aus Naturmaterial: zwei Kastanien als Augen, ein gebogener Stock als Mund, zwei schräge Zweige als Augenbrauen. Das Kind sagt, welches Gefühl das Wald-Gesicht hat und woran es das sieht. Dann darf es ein Teil verändern – zum Beispiel den Mund umdrehen – und sagen, welches Gefühl jetzt daraus geworden ist.",
+  "sagen": [
+   "Wenn ich „Kuckuck“ rufe, rufst du zurück und kommst zum Treffpunkt.",
+   "Schau mal, wer hier liegt! Welches Gefühl hat dieses Wald-Gesicht – und woran siehst du das?",
+   "Dreh den Mund um. Was ist jetzt aus dem Gesicht geworden?"
+  ],
+  "wennEsKippt": "Fällt kein Gefühl ein, nennt die Fachkraft zwei zur Auswahl („froh oder traurig?“). Mag das Kind nichts verändern, verändert die Fachkraft ein Teil, und das Kind sagt, was es sieht.",
+  "kurz": "Treffpunkt, Grenze, Kuckuck · Wald-Gesicht lesen · Mund umdrehen",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-21",
+    "gewicht": 0.5
+   },
+   {
+    "code": "K-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "spiel",
+   "basteln"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Dehors et règles : un visage de la forêt",
+   "text": "Au point de rendez-vous, l’adulte montre la limite et le signal : il ou elle crie « Coucou », et l’enfant répond et revient. Un visage en matériaux naturels attend déjà là : deux marrons pour les yeux, un bâton courbé pour la bouche, deux brindilles en biais pour les sourcils. L’enfant dit quelle émotion a ce visage de la forêt et à quoi il le voit. Puis il peut changer un élément – par exemple retourner la bouche – et dire quelle émotion apparaît maintenant.",
+   "sagen": [
+    "Quand je crie « Coucou », tu réponds et tu viens au point de rendez-vous.",
+    "Regarde qui est là ! Quelle émotion a ce visage de la forêt – et à quoi tu le vois ?",
+    "Retourne la bouche. Qu’est-ce que le visage est devenu ?"
+   ],
+   "wennEsKippt": "Si aucune émotion ne vient, l’adulte en propose deux au choix (« content ou triste ? »). Si l’enfant ne veut rien changer, l’adulte change un élément, et l’enfant dit ce qu’il voit.",
+   "kurz": "Rendez-vous, limite, coucou · lire le visage · retourner la bouche"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein fertiges Wald-Gesicht wartet am Treffpunkt – und mit einem Handgriff wird aus froh plötzlich traurig.",
+    "vorbereitung": [
+     "Ein Wald-Gesicht aus Kastanien, Stöcken und Zweigen vorbereiten",
+     "Treffpunkt und Grenze festlegen; Wetter prüfen",
+     "Telefon und kleines Erste-Hilfe-Set einstecken"
+    ],
+    "gruppe": "In der Gruppe darf reihum je ein Kind ein Teil des Gesichts verändern, die anderen sagen, welches Gefühl daraus wird."
+   },
+   "fr": {
+    "haken": "Un visage de la forêt tout prêt attend au point de rendez-vous – et d’un seul geste, content devient triste.",
+    "vorbereitung": [
+     "Préparer un visage avec des marrons, des bâtons et des brindilles",
+     "Fixer rendez-vous et limite ; vérifier la météo",
+     "Prendre téléphone et petite trousse de secours"
+    ],
+    "gruppe": "En groupe, un enfant à la fois change un élément du visage, les autres disent quelle émotion apparaît."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-gefuehl-kinder:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Gefühle-Fundstücke und Wald-Gesichter",
+  "text": "Das Kind zieht eine von vier Gefühlskarten (froh, traurig, wütend, ängstlich) und sucht mit der Fachkraft Fundstücke, die dazu passen: etwas Weiches oder Helles für froh, etwas Stacheliges für wütend, etwas Dunkles oder Nasses für traurig. Zu jedem Fundstück sagt es, warum es passt – „einfach so“ zählt auch. Dann legt das Kind aus den Fundstücken ein Wald-Gesicht für ein Gefühl seiner Wahl; die Fachkraft sagt, welches Gefühl sie sieht, und das Kind verrät, ob es stimmt und welcher Hinweis am wichtigsten war. Danach tauschen beide: Die Fachkraft legt ein Gesicht, und das Kind liest es. Zum Schluss darf das Kind ein Gesicht für ein Gefühl legen, das es gut kennt; ob es etwas dazu erzählt, entscheidet es selbst.",
+  "sagen": [
+   "Zieh eine Karte. Was im Wald passt zu diesem Gefühl – und warum?",
+   "Leg ein Wald-Gesicht. Ich versuche zu erkennen, welches Gefühl es hat.",
+   "Jetzt lege ich eins für dich. Was siehst du – und woran?",
+   "Du darfst ein Gesicht für ein Gefühl legen, das du gut kennst. Erzählen musst du nichts."
+  ],
+  "wennEsKippt": "Wird ein Gefühl zu groß, wechseln beide zu einem fröhlichen Gesicht und sammeln etwas Weiches. Fällt das Legen schwer, legt die Fachkraft Augen und Nase vor, und das Kind legt nur Mund und Augenbrauen.",
+  "kurz": "Gefühlskarte ziehen · passende Fundstücke · Wald-Gesichter legen",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-21",
+    "gewicht": 0.5
+   },
+   {
+    "code": "K-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "basteln",
+   "sinne",
+   "spiel"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "karten",
+   "korb"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Trouvailles des émotions et visages de la forêt",
+   "text": "L’enfant tire une des quatre cartes émotions (content, triste, en colère, inquiet) et cherche avec l’adulte des trouvailles qui vont avec : quelque chose de doux ou de clair pour content, quelque chose de piquant pour en colère, quelque chose de sombre ou de mouillé pour triste. Pour chaque trouvaille, il dit pourquoi elle va – « comme ça » compte aussi. Puis l’enfant pose avec ses trouvailles un visage de la forêt pour une émotion de son choix ; l’adulte dit quelle émotion il ou elle voit, et l’enfant révèle si c’est juste et quel indice était le plus important. Ensuite, on échange : l’adulte pose un visage, et l’enfant le lit. Pour finir, l’enfant peut poser un visage pour une émotion qu’il connaît bien ; c’est lui qui décide s’il raconte quelque chose.",
+   "sagen": [
+    "Tire une carte. Qu’est-ce qui, dans la forêt, va avec cette émotion – et pourquoi ?",
+    "Pose un visage de la forêt. J’essaie de reconnaître quelle émotion il a.",
+    "Maintenant, j’en pose un pour toi. Qu’est-ce que tu vois – et à quoi ?",
+    "Tu peux poser un visage pour une émotion que tu connais bien. Tu n’as rien à raconter."
+   ],
+   "wennEsKippt": "Si une émotion devient trop forte, tous les deux passent à un visage joyeux et ramassent quelque chose de doux. Si poser le visage est difficile, l’adulte pose les yeux et le nez, et l’enfant pose seulement la bouche et les sourcils.",
+   "kurz": "Tirer une carte · trouvailles assorties · poser des visages"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Gefühle bekommen eine Form, die man anfassen kann: stachelig, weich, nass – und ein Gesicht, das man mit einem Handgriff verändert.",
+    "vorbereitung": [
+     "Vier Gefühlskarten malen: froh, traurig, wütend, ängstlich",
+     "Korb für Fundstücke; Platz mit weichem Boden oder Lichtung suchen",
+     "Nichts Gesammeltes in den Mund nehmen, danach Hände waschen",
+     "Wetter prüfen; nach dem Wald Zecken-Check (Hinweis an Eltern)"
+    ],
+    "aufbau": "Ein Platz, auf dem die Gesichter liegen bleiben können; im Umkreis von etwa 20 Metern finden sich Blätter, Zapfen, Moos, Steine und Stöcke.",
+    "karten": [
+     {
+      "titel": "Gefühlskarten",
+      "karten": [
+       "froh",
+       "traurig",
+       "wütend",
+       "ängstlich",
+       "überrascht",
+       "ruhig"
+      ]
+     },
+     {
+      "titel": "Hinweise im Gesicht",
+      "karten": [
+       "Mund nach oben oder nach unten?",
+       "Augenbrauen gerade, hochgezogen oder zusammengezogen?",
+       "Augen groß oder klein?",
+       "Gesicht glatt oder zerknittert?"
+      ]
+     }
+    ],
+    "leichter": "Für 4- bis 6-Jährige: nur froh und traurig, und das Gesicht besteht nur aus Augen und Mund; die Fachkraft legt vor, das Kind dreht den Mund.",
+    "schwerer": "Ab 9 Jahren legt das Kind ein Gesicht mit gemischten Gefühlen (zum Beispiel froh und aufgeregt zugleich) und erklärt, welches Teil welches Gefühl zeigt.",
+    "gruppe": "In der Gruppe legen Paare je ein Wald-Gesicht; dann gehen alle wie in einer Ausstellung von Gesicht zu Gesicht und nennen das Gefühl, und das Paar verrät seinen wichtigsten Hinweis.",
+    "beobachten": [
+     "Das Kind nennt im Wald-Gesicht einen Hinweis (Mund, Augenbrauen) für ein Gefühl.",
+     "Es ordnet einem Gefühl ein Fundstück zu und begründet das mit einem Wort.",
+     "Es erkennt das Gefühl im Gesicht, das die Fachkraft gelegt hat."
+    ],
+    "warum": "Kinder lernen Gefühle an Hinweisen in Gesicht und Körper zu erkennen und zu benennen, wenn sie sie selbst darstellen und bei anderen lesen (Domitrovich et al., 2007); Gefühle in Worte zu fassen dämpft ihre Wucht messbar (Lieberman et al., 2007)."
+   },
+   "fr": {
+    "haken": "Les émotions prennent une forme qu’on peut toucher : piquante, douce, mouillée – et un visage qu’on change d’un seul geste.",
+    "vorbereitung": [
+     "Dessiner quatre cartes émotions : content, triste, en colère, inquiet",
+     "Panier pour les trouvailles ; trouver un sol souple ou une clairière",
+     "Ne rien mettre à la bouche ; se laver les mains après",
+     "Vérifier la météo ; après la forêt, vérifier les tiques (prévenir les parents)"
+    ],
+    "aufbau": "Un endroit où les visages peuvent rester ; dans un rayon d’environ 20 mètres, on trouve feuilles, pommes de pin, mousse, cailloux et bâtons.",
+    "karten": [
+     {
+      "titel": "Cartes émotions",
+      "karten": [
+       "content",
+       "triste",
+       "en colère",
+       "inquiet",
+       "surpris",
+       "calme"
+      ]
+     },
+     {
+      "titel": "Indices du visage",
+      "karten": [
+       "Bouche vers le haut ou vers le bas ?",
+       "Sourcils droits, levés ou froncés ?",
+       "Yeux grands ou petits ?",
+       "Visage lisse ou plissé ?"
+      ]
+     }
+    ],
+    "leichter": "Pour les 4–6 ans : seulement content et triste, et le visage n’a que des yeux et une bouche ; l’adulte pose d’abord, l’enfant retourne la bouche.",
+    "schwerer": "Dès 9 ans, l’enfant pose un visage aux émotions mélangées (par exemple content et excité à la fois) et explique quel élément montre quelle émotion.",
+    "gruppe": "En groupe, des duos posent chacun un visage de la forêt ; puis tout le monde passe de visage en visage comme dans une exposition et nomme l’émotion, et le duo révèle son indice principal.",
+    "beobachten": [
+     "L’enfant nomme dans le visage un indice (bouche, sourcils) pour une émotion.",
+     "Il associe une trouvaille à une émotion et le justifie d’un mot.",
+     "Il reconnaît l’émotion du visage posé par l’adulte."
+    ],
+    "warum": "Les enfants apprennent à reconnaître et nommer les émotions à partir d’indices du visage et du corps quand ils les représentent eux-mêmes et les lisent chez les autres (Domitrovich et al., 2007) ; mettre des mots sur une émotion en atténue mesurablement la force (Lieberman et al., 2007)."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-gefuehl-kinder:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Fundstück: Was tut gut, wenn …?",
+  "text": "Am Treffpunkt schauen beide noch einmal auf die Wald-Gesichter. Die Fachkraft fragt, was Tom helfen könnte, wenn das stachelige Gefühl kommt, und das Kind sucht ein Fundstück dafür: etwas Weiches zum Festhalten, einen Stein, den man in der Hand drückt, ein Blatt, das man langsam anpustet. Wer mag, nimmt sein Fundstück als Hosentaschen-Helfer mit. Zum Schluss bleiben die Gesichter liegen, damit Wind und Regen sie verändern – so wie Gefühle auch kommen und gehen.",
+  "sagen": [
+   "Was könnte Tom helfen, wenn das stachelige Gefühl kommt? Such ein Fundstück dafür.",
+   "Das darfst du als Hosentaschen-Helfer mitnehmen.",
+   "Die Gesichter bleiben hier. Wind und Regen verändern sie – wie Gefühle, die kommen und gehen."
+  ],
+  "wennEsKippt": "Fällt dem Kind keine Hilfe ein, zeigt die Fachkraft zwei Fundstücke und erklärt, wie sie helfen könnten. Will das Kind sein Gesicht nicht zurücklassen, macht es ein Foto im Kopf: Augen zu und das Gesicht noch einmal vorstellen.",
+  "kurz": "Fundstück, das hilft · Hosentaschen-Helfer · Gesichter liegen lassen",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-26",
+    "gewicht": 1
+   },
+   {
+    "code": "K-21",
+    "gewicht": 0.5
+   },
+   {
+    "code": "K-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 11
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "sinne"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Trouvaille : qu’est-ce qui fait du bien quand… ?",
+   "text": "Au point de rendez-vous, tous les deux regardent encore une fois les visages de la forêt. L’adulte demande ce qui pourrait aider Tom quand l’émotion piquante arrive, et l’enfant cherche une trouvaille pour ça : quelque chose de doux à tenir, un caillou qu’on serre dans la main, une feuille sur laquelle on souffle lentement. Qui veut emporte sa trouvaille comme aide de poche. Pour finir, les visages restent là, pour que le vent et la pluie les transforment – comme les émotions qui viennent et qui passent.",
+   "sagen": [
+    "Qu’est-ce qui pourrait aider Tom quand l’émotion piquante arrive ? Cherche une trouvaille pour ça.",
+    "Tu peux l’emporter comme aide de poche.",
+    "Les visages restent ici. Le vent et la pluie les transforment – comme les émotions qui viennent et qui passent."
+   ],
+   "wennEsKippt": "Si aucune aide ne vient, l’adulte montre deux trouvailles et explique comment elles pourraient aider. Si l’enfant ne veut pas laisser son visage, il en fait une photo dans sa tête : yeux fermés, il l’imagine encore une fois.",
+   "kurz": "Trouvaille qui aide · aide de poche · laisser les visages"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Gesichter bleiben im Wald zurück – ein starkes Bild dafür, dass Gefühle sich verändern dürfen.",
+    "beobachten": [
+     "Das Kind findet eine konkrete Hilfe für ein schwieriges Gefühl (festhalten, pusten, drücken).",
+     "Es verbindet ein Fundstück mit dieser Hilfe.",
+     "Es kann das Gesicht zurücklassen oder findet einen eigenen Abschied (Foto im Kopf)."
+    ],
+    "gruppe": "In der Gruppe legt jedes Kind seinen Hosentaschen-Helfer kurz in die Mitte und sagt, wofür er steht; die Gesichter bleiben gemeinsam liegen."
+   },
+   "fr": {
+    "haken": "Les visages restent dans la forêt – une image forte pour dire que les émotions ont le droit de changer.",
+    "beobachten": [
+     "L’enfant trouve une aide concrète pour une émotion difficile (tenir, souffler, serrer).",
+     "Il associe une trouvaille à cette aide.",
+     "Il arrive à laisser le visage ou trouve sa propre façon de dire au revoir (photo dans la tête)."
+    ],
+    "gruppe": "En groupe, chaque enfant pose un instant son aide de poche au milieu et dit ce qu’elle représente ; les visages restent tous ensemble."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-landart-jugend:1",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Raus und Regeln: Kunst, die der Wind mitnimmt",
+  "text": "Am Treffpunkt vereinbaren beide Grenze und Signal (ein Pfiff: zurück zum Treffpunkt). Die Fachkraft erzählt von Land-Art: Der Künstler Andy Goldsworthy legt Werke aus Blättern, Steinen und Eis, fotografiert sie und lässt sie dann dem Wetter. Sie zeigt auf eine kleine Spirale aus Blättern, die sie vorbereitet hat, und fragt, welche Stimmung diese Spirale hat – unruhig, ruhig, festgefahren? Der oder die Jugendliche nennt die eigene Deutung; eine falsche Antwort gibt es nicht.",
+  "sagen": [
+   "Andy Goldsworthy baut Kunst aus Blättern und Steinen – und überlässt sie dann dem Wetter.",
+   "Welche Stimmung hat diese Spirale für dich?",
+   "Es gibt keine falsche Deutung – nur deine."
+  ],
+  "wennEsKippt": "Wirkt „Kunst“ abschreckend, nennt die Fachkraft es einfach „Bild aus Fundstücken“. Fällt keine Deutung ein, wählt der oder die Jugendliche zwischen zwei Wörtern.",
+  "kurz": "Grenze, Pfiff · Land-Art kennenlernen · Stimmung einer Spirale deuten",
+  "rolle": [
+   "einstieg"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-23",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-ausdruecken",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 2,
+   "typ": 4,
+   "max": 10
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "basteln",
+   "gespraech"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Dehors et règles : de l’art que le vent emporte",
+   "text": "Au point de rendez-vous, tous les deux fixent la limite et le signal (un coup de sifflet : retour au point de rendez-vous). L’adulte parle du land art : l’artiste Andy Goldsworthy crée des œuvres avec des feuilles, des pierres et de la glace, les photographie puis les laisse aux intempéries. L’adulte montre une petite spirale de feuilles préparée à l’avance et demande quelle ambiance a cette spirale – agitée, calme, bloquée ? Le ou la jeune donne sa propre interprétation ; il n’y a pas de mauvaise réponse.",
+   "sagen": [
+    "Andy Goldsworthy fait de l’art avec des feuilles et des pierres – puis il le laisse aux intempéries.",
+    "Quelle ambiance a cette spirale pour toi ?",
+    "Il n’y a pas de mauvaise interprétation – seulement la tienne."
+   ],
+   "wennEsKippt": "Si le mot « art » fait peur, l’adulte parle simplement d’« image en trouvailles ». Si aucune interprétation ne vient, le ou la jeune choisit entre deux mots.",
+   "kurz": "Limite, sifflet · découvrir le land art · interpréter une spirale"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Ein echtes Vorbild aus der Kunstwelt und eine Spirale am Boden: Kunst, die man nicht mitnehmen kann, nimmt den Druck, etwas „Schönes“ machen zu müssen.",
+    "vorbereitung": [
+     "Eine kleine Spirale aus Laub als Beispiel legen",
+     "Treffpunkt und Grenze festlegen; Wetter prüfen",
+     "Gelände mit Laub, Steinen und Stöcken wählen"
+    ],
+    "gruppe": "In der Gruppe nennt jede Person still auf einem Zettel ein Wort zur Spirale; danach werden die Wörter vorgelesen und verglichen."
+   },
+   "fr": {
+    "haken": "Un vrai modèle du monde de l’art et une spirale au sol : un art qu’on ne peut pas emporter enlève la pression de devoir faire quelque chose de « beau ».",
+    "vorbereitung": [
+     "Poser une petite spirale de feuilles comme exemple",
+     "Fixer rendez-vous et limite ; vérifier la météo",
+     "Choisir un terrain avec feuilles, pierres et bâtons"
+    ],
+    "gruppe": "En groupe, chaque personne écrit en silence un mot sur la spirale ; ensuite, on lit les mots et on les compare."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-landart-jugend:2",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Land-Art: eine Stimmung legen",
+  "text": "Der oder die Jugendliche wählt eine Stimmung aus einer Liste oder eine eigene: Stress, Erleichterung, Langeweile, Vorfreude, gemischte Gefühle. Dann gestaltet er oder sie daraus ein Land-Art-Bild am Boden, mit Gegensätzen als Werkzeug: Ordnung oder Chaos, hell oder dunkel, eng oder weit, glatt oder kantig. Die Fachkraft gestaltet daneben ein eigenes Bild zu einer anderen Stimmung. Danach führen beide einander durch ihre Bilder: Wer schaut, beschreibt zuerst nur, was er sieht, und vermutet dann die Stimmung; wer gestaltet hat, löst auf und gibt dem Bild einen Titel. Wer mag, macht ein Foto vom Bild – ohne Personen.",
+  "sagen": [
+   "Such dir eine Stimmung aus – oder nimm eine eigene, die nicht auf der Liste steht.",
+   "Gegensätze helfen: Ordnung oder Chaos, hell oder dunkel, eng oder weit.",
+   "Ich beschreibe erst nur, was ich sehe – dann tippe ich auf die Stimmung. Du löst auf.",
+   "Welchen Titel bekommt dein Bild?"
+  ],
+  "wennEsKippt": "Fällt der Anfang schwer, beginnt der oder die Jugendliche mit einem einzigen Gegensatz, etwa einer Linie aus hellen und einer aus dunklen Blättern. Wird eine Stimmung zu persönlich, darf er oder sie jederzeit wechseln oder die Stimmung einer Songzeile legen.",
+  "kurz": "Stimmung wählen · Bild aus Gegensätzen legen · deuten und betiteln",
+  "rolle": [
+   "kern"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-23",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-ausdruecken",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 30
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 2,
+  "belastung": 1,
+  "reiz": 0,
+  "format": [
+   "basteln",
+   "sinne",
+   "gespraech"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [
+   "karten"
+  ],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Land art : poser une ambiance",
+   "text": "Le ou la jeune choisit une ambiance dans une liste ou une ambiance à lui ou à elle : stress, soulagement, ennui, impatience joyeuse, émotions mélangées. Puis il ou elle en fait une image de land art au sol, avec les contrastes comme outil : ordre ou chaos, clair ou sombre, serré ou large, lisse ou anguleux. À côté, l’adulte crée sa propre image sur une autre ambiance. Ensuite, ils se font visiter leurs images : celui ou celle qui regarde décrit d’abord seulement ce qu’il ou elle voit, puis devine l’ambiance ; celui ou celle qui a créé révèle et donne un titre à l’image. Qui veut prend une photo de l’image – sans personnes.",
+   "sagen": [
+    "Choisis une ambiance – ou prends-en une à toi, qui n’est pas sur la liste.",
+    "Les contrastes aident : ordre ou chaos, clair ou sombre, serré ou large.",
+    "Je décris d’abord seulement ce que je vois – puis je propose une ambiance. Toi, tu révèles.",
+    "Quel titre donnes-tu à ton image ?"
+   ],
+   "wennEsKippt": "Si le début est difficile, le ou la jeune commence avec un seul contraste, par exemple une ligne de feuilles claires et une de feuilles sombres. Si une ambiance devient trop personnelle, il ou elle peut changer à tout moment ou poser l’ambiance d’une phrase de chanson.",
+   "kurz": "Choisir une ambiance · image en contrastes · interpréter, titrer"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Kunst, die der Wind verändert und die niemand bewertet – das macht es leicht, eine Stimmung zu zeigen, ohne darüber reden zu müssen.",
+    "vorbereitung": [
+     "Stimmungsliste auf eine Karte schreiben",
+     "Gelände mit Laub, Steinen, Stöcken und Moos wählen",
+     "Nur Liegendes nehmen, nichts abbrechen; Pilze nicht anfassen",
+     "Wetter prüfen; nach dem Wald Zecken-Check"
+    ],
+    "aufbau": "Zwei Arbeitsplätze mit etwa fünf Metern Abstand, damit beide ungestört gestalten; die Fachkraft beginnt ihr eigenes Bild erst, wenn der oder die Jugendliche angefangen hat.",
+    "karten": [
+     {
+      "titel": "Stimmungen",
+      "karten": [
+       "Stress",
+       "Erleichterung",
+       "Langeweile",
+       "Vorfreude",
+       "Ärger, der abkühlt",
+       "Gemischte Gefühle",
+       "Neuanfang",
+       "Ruhe nach dem Sturm"
+      ]
+     },
+     {
+      "titel": "Gegensätze als Werkzeug",
+      "karten": [
+       "Ordnung – Chaos",
+       "Hell – dunkel",
+       "Eng – weit",
+       "Glatt – kantig",
+       "Rund – spitz",
+       "Viel – wenig"
+      ]
+     }
+    ],
+    "leichter": "Der oder die Jugendliche legt nur einen Gegensatz (zwei Linien, zwei Kreise) und wählt die Stimmung erst danach: Was passt am besten zu dem, was entstanden ist?",
+    "schwerer": "Der oder die Jugendliche legt eine Folge aus drei kleinen Bildern – wie eine Stimmung entsteht, ihren Höhepunkt hat und abklingt – und erklärt, was im echten Leben beim Abklingen hilft.",
+    "gruppe": "In der Gruppe gestalten alle allein oder zu zweit; danach gibt es einen stillen Rundgang wie im Museum: Jede Person legt einen Zettel mit einem Wort zu jedem Bild, erst dann lösen die Gestaltenden auf.",
+    "beobachten": [
+     "Der oder die Jugendliche wählt eine Stimmung und setzt sie bewusst mit Gegensätzen um.",
+     "Er oder sie erklärt am Bild, welches Element welche Seite der Stimmung zeigt.",
+     "Er oder sie findet einen Titel, der die Stimmung genauer benennt als „gut“ oder „schlecht“."
+    ],
+    "warum": "Gefühle gestalterisch auszudrücken und dann in Worte zu fassen hilft, sie zu ordnen – schon das Benennen dämpft die emotionale Reaktion (Lieberman et al., 2007); die Vergänglichkeit der Land-Art macht erlebbar, dass Stimmungen sich wandeln."
+   },
+   "fr": {
+    "haken": "Un art que le vent transforme et que personne ne note – il devient facile de montrer une ambiance sans devoir en parler.",
+    "vorbereitung": [
+     "Écrire la liste des ambiances sur une carte",
+     "Choisir un terrain avec feuilles, pierres, bâtons et mousse",
+     "Ne prendre que ce qui est par terre, ne rien casser ; ne pas toucher aux champignons",
+     "Vérifier la météo ; vérifier les tiques après la forêt"
+    ],
+    "aufbau": "Deux espaces de travail à environ cinq mètres l’un de l’autre, pour créer sans se gêner ; l’adulte commence sa propre image seulement quand le ou la jeune a commencé.",
+    "karten": [
+     {
+      "titel": "Ambiances",
+      "karten": [
+       "Stress",
+       "Soulagement",
+       "Ennui",
+       "Impatience joyeuse",
+       "Agacement qui retombe",
+       "Émotions mélangées",
+       "Nouveau départ",
+       "Calme après la tempête"
+      ]
+     },
+     {
+      "titel": "Les contrastes comme outil",
+      "karten": [
+       "Ordre – chaos",
+       "Clair – sombre",
+       "Serré – large",
+       "Lisse – anguleux",
+       "Rond – pointu",
+       "Beaucoup – peu"
+      ]
+     }
+    ],
+    "leichter": "Le ou la jeune pose un seul contraste (deux lignes, deux cercles) et choisit l’ambiance seulement après : qu’est-ce qui va le mieux avec ce qui est apparu ?",
+    "schwerer": "Le ou la jeune pose une suite de trois petites images – comment une ambiance naît, atteint son sommet et retombe – et explique ce qui aide à la faire retomber dans la vraie vie.",
+    "gruppe": "En groupe, chacun crée seul ou à deux ; ensuite, on fait une visite silencieuse comme au musée : chaque personne dépose un papier avec un mot pour chaque image, puis seulement les créateurs révèlent.",
+    "beobachten": [
+     "Le ou la jeune choisit une ambiance et la traduit consciemment avec des contrastes.",
+     "Il ou elle explique sur l’image quel élément montre quel aspect de l’ambiance.",
+     "Il ou elle trouve un titre qui nomme l’ambiance plus précisément que « bien » ou « pas bien »."
+    ],
+    "warum": "Exprimer ses émotions par la création puis les mettre en mots aide à les mettre en ordre – le simple fait de les nommer atténue la réaction émotionnelle (Lieberman et al., 2007) ; le caractère éphémère du land art fait vivre que les ambiances changent."
+   }
+  }
+ },
+ {
+  "id": "fo:drauss-landart-jugend:3",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Form-Stunde Draußen"
+  },
+  "titel": "Fundstück: Was bleibt, was geht?",
+  "text": "Beide stehen noch einmal vor den Bildern und stellen sich vor, wie sie in einer Woche aussehen: verweht, verregnet, verändert. Die Fachkraft fragt, was das mit echten Stimmungen gemeinsam hat – und was hilft, wenn eine schwere Stimmung länger bleiben will. Der oder die Jugendliche nimmt ein kleines Fundstück aus dem eigenen Bild mit, als Erinnerung daran, dass Stimmungen sich verändern. Zum Schluss nennt er oder sie eine Sache, die bei einer schweren Stimmung diese Woche helfen kann: Musik, Bewegung, mit jemandem reden.",
+  "sagen": [
+   "Stell dir die Bilder in einer Woche vor. Was hat das mit echten Stimmungen gemeinsam?",
+   "Was hilft, wenn eine schwere Stimmung länger bleiben will?",
+   "Nimm ein Fundstück aus deinem Bild mit – als Erinnerung: Stimmungen verändern sich."
+  ],
+  "wennEsKippt": "Wird das Gespräch schwer, bleibt die Fachkraft beim Bild und beim Wetter, nicht bei der eigenen Geschichte. Mag der oder die Jugendliche nichts mitnehmen, reicht ein Foto des Bildes.",
+  "kurz": "Bilder vergehen · Stimmungen wandeln sich · Fundstück mitnehmen",
+  "rolle": [
+   "reflexion"
+  ],
+  "thema": [
+   "gefuehle"
+  ],
+  "eldib": [
+   {
+    "code": "K-23",
+    "gewicht": 1
+   },
+   {
+    "code": "K-26",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "gefuehle-ausdruecken",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 3,
+   "typ": 5,
+   "max": 14
+  },
+  "sozialform": [
+   "einzeln",
+   "zu-zweit",
+   "gruppe"
+  ],
+  "einzeltauglich": "ja",
+  "gruppe": {
+   "min": 2,
+   "max": 8,
+   "differenzierbar": true
+  },
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "sinne"
+  ],
+  "formen": [
+   "draussen"
+  ],
+  "material": [],
+  "ort": "draussen",
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "geprueft",
+  "fr": {
+   "titel": "Trouvaille : qu’est-ce qui reste, qu’est-ce qui passe ?",
+   "text": "Tous les deux se placent encore une fois devant les images et imaginent à quoi elles ressembleront dans une semaine : dispersées, mouillées, transformées. L’adulte demande ce que cela a en commun avec de vraies ambiances – et ce qui aide quand une ambiance lourde veut rester plus longtemps. Le ou la jeune emporte une petite trouvaille de sa propre image, pour se rappeler que les ambiances changent. Pour finir, il ou elle nomme une chose qui peut aider cette semaine en cas d’ambiance lourde : la musique, le mouvement, parler à quelqu’un.",
+   "sagen": [
+    "Imagine les images dans une semaine. Qu’est-ce que ça a en commun avec de vraies ambiances ?",
+    "Qu’est-ce qui aide quand une ambiance lourde veut rester plus longtemps ?",
+    "Prends une trouvaille de ton image – pour te rappeler que les ambiances changent."
+   ],
+   "wennEsKippt": "Si la conversation devient lourde, l’adulte reste sur l’image et la météo, pas sur l’histoire personnelle. Si le ou la jeune ne veut rien emporter, une photo de l’image suffit.",
+   "kurz": "Les images passent · les ambiances changent · emporter une trouvaille"
+  },
+  "hilfen": {
+   "de": {
+    "haken": "Die Vergänglichkeit der Bilder wird zur Botschaft: Auch schwere Stimmungen bleiben nicht für immer.",
+    "beobachten": [
+     "Der oder die Jugendliche verbindet das Vergehen der Bilder mit dem Wandel von Stimmungen.",
+     "Er oder sie nennt eine eigene, alltagstaugliche Hilfe für schwere Stimmungen.",
+     "Er oder sie entscheidet selbst, wie persönlich das Gespräch wird."
+    ],
+    "gruppe": "In der Gruppe sammelt jede Person still auf einem Zettel eine Hilfe für schwere Stimmungen; die Zettel werden gemischt und vorgelesen, ohne Namen."
+   },
+   "fr": {
+    "haken": "Le caractère éphémère des images devient le message : même les ambiances lourdes ne restent pas pour toujours.",
+    "beobachten": [
+     "Le ou la jeune relie la disparition des images au changement des ambiances.",
+     "Il ou elle nomme une aide à soi, réaliste au quotidien, pour les ambiances lourdes.",
+     "Il ou elle décide seul ou seule à quel point la conversation devient personnelle."
+    ],
+    "gruppe": "En groupe, chaque personne écrit en silence une aide pour les ambiances lourdes ; les papiers sont mélangés et lus à voix haute, sans noms."
+   }
+  }
+ }
+]

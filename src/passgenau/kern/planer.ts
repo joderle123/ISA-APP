@@ -1282,6 +1282,11 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       // Form-Stunden (fo:<paket>:<n>): Einstieg und Auswertung nur zusammen mit ihrem eigenen Kern
       auswahl = auswahl.filter((w) => !w.b.e.id.startsWith('fo:') || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
       for (const w of auswahl) if (kernQuelle && quelleEinheit(w.b.e.id) === kernQuelle) w.b = { ...w.b, s: w.b.s + 0.25 }
+      // Form-Stunde (fo:): Einstieg und Auswertung aus dem eigenen Paket gehen vor (auch vor Themen-Rahmen)
+      if (kernQuelle?.startsWith('fo:')) {
+        const paket = auswahl.filter((w) => quelleEinheit(w.b.e.id) === kernQuelle)
+        if (paket.length) auswahl = paket
+      }
       auswahl.sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
       // letzte Sitzung einer Folge: ein echter Rückblick auf die Kerne der Folge
       if (slot.rolle === 'reflexion' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2 && c.weg === 'leicht') {
