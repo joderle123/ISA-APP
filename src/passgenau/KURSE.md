@@ -375,6 +375,17 @@ Grundausstattung).
 - **Französisch zuerst denken:** Titel, Karten, Merksätze, Chats in FR eigenständig formulieren; DE und FR müssen dieselben
   Filter auslösen (Filterwörter in beiden Sprachen prüfen).
 
+### 9c. Machbarkeits-Budget (Nachmessung Pilot, 23.10.2026)
+
+Mehr Material macht einen Kurs nicht besser, sondern schwerer: Nach zwei Überarbeitungen mit vielen Ergänzungen fiel die
+Machbarkeit beim Pilot wieder auf 5. Darum je Sitzung **hart**:
+- **eine** Kernaktivität (nicht drei), dazu höchstens eine kurze Vorübung;
+- höchstens **3 Kartensätze für den Tisch** und **1 Satz „Nur für dich“**;
+- Lesestoff auf dem Tisch höchstens **~120 Wörter** (Paragrafen, Studien, Recht → Hintergrund oder Fachkraft-Karte);
+- in jeder Sitzung **eine körperliche oder bewegte Aktion** (aufstehen, Positionslinie, Karten auf dem Boden, Stimme) statt
+  mehr Text;
+- Vorbereitung realistisch in **≤ 10 Minuten**.
+
 ## 10. Katalog Welle 3 (neue Themen, Arbeitstitel)
 
 ELDiB-Codes wählt die Kursarchitektur aus `src/data/passgenau/eldib.json` (2 Hauptziele mit Gewicht 1, 1–2 weitere mit 0.5),
