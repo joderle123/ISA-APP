@@ -5381,3 +5381,32 @@ p.pg-kb-tausch {
   font-weight: 700;
   cursor: help;
 }
+
+/* Klammer der Folge (kern/klammer.ts): Station und Sätze für Anfang und Schluss */
+.pg-klammer {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: var(--pg-ok-soft);
+  border: 1px solid #c3dfc9;
+  border-left: 4px solid var(--pg-ok);
+  border-radius: var(--r-md);
+  padding: 10px 14px;
+  margin-bottom: 12px;
+}
+.pg-klammer .ic {
+  color: var(--pg-ok);
+  margin-top: 2px;
+  flex: none;
+}
+.pg-klammer b {
+  color: var(--pg-ok);
+  font-size: var(--fs-sm, 14px);
+}
+.pg-klammer p {
+  margin: 3px 0 0;
+}
+.pg-klammer .pg-klammer-schluss {
+  color: var(--ink-2, #4a5263);
+  font-size: var(--fs-sm, 14px);
+}

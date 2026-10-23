@@ -512,6 +512,19 @@ export function Ergebnis() {
         </div>
       )}
       <ZugangVorschlag nr={s.nr} />
+      {/* Klammer der Folge (kern/klammer.ts): dieselbe Reise durch alle Sitzungen – Station, Satz am Anfang, Eintrag am Schluss */}
+      {druck?.klammer && (
+        <div className="pg-klammer" aria-label="Rahmen der Folge">
+          <Ic n={plan.klammer === 'werkzeugkasten' ? 'werkzeug' : 'fahne'} />
+          <div>
+            <b>
+              {druck.klammer.name} · {druck.klammer.kopf}
+            </b>
+            <p>{druck.klammer.start}</p>
+            <p className="pg-klammer-schluss">{druck.klammer.schluss}</p>
+          </div>
+        </div>
+      )}
       <AufEinenBlick ziel={druck?.ziel} einstieg={druck?.einstieg} werkzeug={druck?.werkzeug} material={materialPunkte} vorbereitung={druck?.vorbereitung ?? []} minuten={minuten} leiste={leiste.length > 1 ? <StundenLeiste teile={leiste} onSprung={springen} /> : undefined} />
       <div className="pg-egrid">
         <nav className="pg-folge" aria-label="Sitzungen">

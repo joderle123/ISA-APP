@@ -25,6 +25,8 @@ import type { DruckFolge, DruckSchritt, DruckSitzung } from '../kern/druck'
 const P = palette({ tief: '#2E3A9C', mittel: '#C8CDF0', zart: '#ECEEFA' })
 /** Leise Nebenzeilen (Quelle, Fuß): #6B7486 hat 4,7:1 auf Weiß – NEUTRAL.sehrLeise (#8A93A3) nur 3,1:1 */
 const SCHWACH = '#6B7486'
+/** Klammer der Folge (kern/klammer.ts): eigene Farbe, damit sie sich von Hinweisen und Einstieg abhebt */
+const KLAMMER_FARBE = '#2E7D5B'
 const BREITE = 595.28 - SEITE.rand * 2
 
 /** Schriftgrößen und Abstände des Planblatts. KOMPAKT, wenn das Blatt damit eine Seite weniger braucht oder sonst nur ein
@@ -486,6 +488,14 @@ export function SpickzettelSeite({ d }: { d: DruckSitzung }) {
           ))}
         </View>
       ) : null}
+      {/* Klammer der Folge (kern/klammer.ts): Station, Satz am Anfang, Eintrag am Schluss */}
+      {d.klammer ? (
+        <View wrap={false} style={{ borderLeftWidth: 3, borderLeftColor: KLAMMER_FARBE, backgroundColor: '#EEF6F1', borderRadius: 6, paddingHorizontal: 9, paddingVertical: 7, marginBottom: 10 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: KLAMMER_FARBE, marginBottom: 2 }}>{`${d.klammer.name} · ${d.klammer.kopf}`}</Text>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 10, lineHeight: 1.4, color: NEUTRAL.text }}>{ty(d.klammer.start, sp)}</Text>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, lineHeight: 1.35, color: '#4A5263', marginTop: 2 }}>{ty(d.klammer.schluss, sp)}</Text>
+        </View>
+      ) : null}
       {d.einstieg ? (
         <View style={{ borderLeftWidth: 3, borderLeftColor: P.tief, paddingLeft: 9, marginBottom: 12 }}>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: P.tief, marginBottom: 2 }}>{W.start}</Text>
@@ -601,6 +611,7 @@ export function SitzungSeiten({ d }: { d: DruckSitzung }) {
       <SpickzettelSeite d={d} />
       <PlanSeite d={d} />
       {d.kinderblatt ? <BlattSeiten blatt={d.kinderblatt} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
+      {d.sammelblatt ? <BlattSeiten blatt={d.sammelblatt} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
       {(d.weitereBlaetter ?? []).map((x, i) => (
         <BlattSeiten key={'gb' + i} blatt={x.blatt} opt={{ sprache: x.sprache, lehrer: false }} />
       ))}
@@ -651,6 +662,12 @@ function Deckblatt({ f }: { f: DruckFolge }) {
             </View>
           ))}
           {f.faden ? <View style={{ marginTop: 3 }}><LText klein farbe={NEUTRAL.leise}>{`${sp === 'fr' ? 'Fil rouge : ' : 'Roter Faden: '}${f.faden}`}</LText></View> : null}
+        </View>
+      ) : null}
+      {f.klammer ? (
+        <View style={{ borderLeftWidth: 3, borderLeftColor: KLAMMER_FARBE, backgroundColor: '#EEF6F1', borderRadius: 6, paddingHorizontal: 9, paddingVertical: 6, marginTop: -6, marginBottom: 14 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: KLAMMER_FARBE, marginBottom: 1 }}>{`${sp === 'fr' ? 'Le cadre de la série' : 'Rahmen der Folge'}: ${f.klammer.name}`}</Text>
+          <LText klein>{`${f.klammer.idee} ${sp === 'fr' ? 'La fiche à collectionner est jointe à la séance 1.' : 'Das Sammelblatt liegt bei Sitzung 1.'}`}</LText>
         </View>
       ) : null}
       {/* Übersicht der Folge zum Abhaken: Phase, Kern, Minuten, Blatt, Datum, gehalten */}

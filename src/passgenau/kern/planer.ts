@@ -12,6 +12,7 @@ import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
 import { KOMPETENZ_NAME, NUR_DEUTSCH, THEMA_ALIAS, feldEindeutig, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
 import HINTERGRUND from '../../data/passgenau/kurs-hintergrund.json'
 import { formSlots, formTreffer, formVon, type Unterrichtsform } from './formen'
+import { klammerFuer } from './klammer'
 
 export interface Verlauf {
   plaene: Plan[]
@@ -490,6 +491,10 @@ function kursWahl(c: Kontext): { id: string; ab: number } | null {
       if (c.ziele[0] && e.eldib[0]?.code === c.ziele[0].code && !ALLGEMEINE_ZIELE.has(c.ziele[0].code)) w += 0.25
       // der Kurs aus dem eigenen Altersband vor dem Nachbarband (Prüfstand: ein Dreizehnjähriger bekam den Kurs für 10–12)
       if (c.alter >= e.alter.von && c.alter <= e.alter.bis) w += 0.5
+      // Gleichstand (Welle 3, 23.10.2026: „Echt jetzt?“ verdrängte „Digital klar“ bei KOG-58 nur durch die Reihenfolge der Dateien):
+      // der Kurs, dessen Hauptziele das Kind am vollständigsten hat
+      const hauptZiele = e.eldib.filter((x) => x.gewicht === 1)
+      if (hauptZiele.length) w += 0.05 * hauptZiele.filter((x) => c.ziele.some((z) => z.code === x.code)).length / hauptZiele.length
       if (w <= best) continue
       const id = e.linie.id
       const ab = kursStand(c, id)
@@ -1822,6 +1827,11 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
   const kursF = c.weg === 'gruendlich' && (c.a.sozialform ?? 'einzeln') === 'einzeln' ? kursWahl(c) : null
   const kursName = kursF ? (HINTERGRUND as Record<string, { name?: Record<'de' | 'fr', string> }>)[kursF.id]?.name?.[c.sprache === 'fr' ? 'fr' : 'de'] : undefined
   if (kursName) titel = kursName
+  // Klammer (23.10.2026: „man merkt, dass die 6 Sitzungen nicht zusammengehören“): eine gründliche Folge ohne Einzelkurs
+  // bekommt einen Rahmen je Alter – Stationen, ein Satz am Anfang, ein Sammelblatt am Schluss
+  const kursKerne = sitzungen.flatMap((x) => x.schritte.filter((y) => y.rolle === 'kern').map((y) => c.k.eintraege.get(y.ref))).flatMap((e) => (e?.typ === 'schritt' && e.linie?.id.startsWith('kurs-') ? [e.linie.id] : []))
+  const imKurs = !!kursName || kursKerne.some((l) => kursKerne.filter((x) => x === l).length >= 2)
+  const klammer = c.weg === 'gruendlich' && sitzungen.length >= 3 && !imKurs && !c.a.form ? klammerFuer(c.alter).id : undefined
   if (c.weg === 'schnell' && sitzungen.length === 1) {
     const ke = sitzungen[0].schritte.find((x) => x.rolle === 'kern')
     const e = ke ? c.k.eintraege.get(ke.ref) : undefined
@@ -1851,6 +1861,7 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
     sitzungen,
     variante,
     katalogStand: c.k.stand,
+    ...(klammer ? { klammer } : {}),
   }
 }
 

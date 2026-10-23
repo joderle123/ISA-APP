@@ -395,6 +395,8 @@ export interface Plan {
   variante?: number
   /** Stand des Katalogs, mit dem der Plan entstand (T-M10/M11) */
   katalogStand?: string
+  /** Klammer einer gemischten Folge (kern/klammer.ts): Insel-Reise, Bergtour, Werkzeugkasten */
+  klammer?: string
 }
 
 export interface Rueckmeldung {

@@ -8,9 +8,10 @@ import { bausteinInhalt, eldibKurz, intern, istGruppenText, kindSatz, merkmaleVo
 import { textMerkmale } from './einzel'
 import { kinderblatt, quellenDerUebertragung, werkzeugName } from './blatt'
 import { gruppenRollen, mitgliedProfil } from './gruppe'
-import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME, kompetenzAusCode } from './vokabular'
+import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME, VORB_GRUPPE_RE, kompetenzAusCode } from './vokabular'
 import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter, ohneEigenenNamen } from './hilfen'
 import { BLATT_SYSTEM } from './system'
+import { klammerBlatt, klammerSitzung, klammerVorlage } from './klammer'
 
 export interface DruckSchritt {
   min: number
@@ -67,6 +68,10 @@ export interface DruckSitzung {
   krisentag?: boolean
   /** Karten zum Ausdrucken aus den Hilfen der Schritte (22.10.2026: „fertiges Produkt“) – Fachkraft-Karten getrennt */
   hilfenKarten?: { titel: string; schritt: string; karten: string[]; nurFachkraft: boolean }[]
+  /** Klammer einer gemischten Folge (kern/klammer.ts): Station, Satz am Anfang, Eintrag am Schluss */
+  klammer?: { name: string; kopf: string; start: string; schluss: string }
+  /** Sammelblatt der Klammer – nur in Sitzung 1, es bleibt in der Mappe */
+  sammelblatt?: Blatt | null
 }
 
 export interface DruckFolge {
@@ -83,6 +88,8 @@ export interface DruckFolge {
   /** Einzelkurs: „Brücke in die Klasse“ – eine Seite für die Lehrkraft (17.10.2026: Einzelstunden wirken nur, wenn das Geübte in
    *  die Klasse kommt) */
   klasse?: KlassenKarte
+  /** Klammer einer gemischten Folge: Name und Idee fürs Deckblatt */
+  klammer?: { name: string; idee: string }
   material: string[]
   datei: string
   sprache: Sprache
@@ -527,7 +534,9 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     // Hilfen (22.10.2026): Vorbereitung als Checkliste und Karten zum Ausdrucken – nur aus dem, was in der Stunde wirklich vorkommt
     if (e.typ === 'schritt' && e.hilfen) {
       const h = (sp === 'fr' ? e.hilfen.fr : undefined) ?? e.hilfen.de
-      for (const v of h.vorbereitung ?? []) vorbereitung.add(kuerzen(v, 160)!)
+      // in der Einzelstunde ohne die Teile für eine Gruppe (Stühle, je Gruppe, SePAS-Name …; Test „20 Testkinder“ 23.10.2026)
+      const einzeln = (plan.auftrag?.sozialform ?? 'einzeln') === 'einzeln' && !(p.gruppe?.length ?? 0)
+      for (const v of h.vorbereitung ?? []) if (!einzeln || !VORB_GRUPPE_RE.test(v)) vorbereitung.add(kuerzen(v, 160)!)
       for (const kt of h.karten ?? []) {
         if (!kt.karten.length) continue
         const nurFachkraft = /nur für dich|pour l[’']adulte|fachkraft|spickzettel|anti-sèche|lösung|solution|musterantwort/i.test(kt.titel)
@@ -768,6 +777,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   })
   const ims = imSpielStelle(k, plan, nr)
   if (ims && schritte[ims.i]) schritte[ims.i].imSpiel = name ? mitName(ims.text[sp], name, sp) : ims.text[sp]
+  const klammer = klammerSitzung(k, plan, nr, sp) ?? undefined
   return {
     titel: plan.titel,
     zeile,
@@ -797,6 +807,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     datei: `Passgenau-Sitzung-${nr}${sp === 'fr' ? '_FR' : ''}.pdf`,
     krisentag: plan.weg === 'leicht' || s.phase === 'leicht' || (plan.auftrag?.heute?.stimmung ?? 4) <= 2,
     ...(hilfenKarten.length ? { hilfenKarten } : {}),
+    ...(klammer ? { klammer } : {}),
+    ...(klammer && nr === 1 ? { sammelblatt: klammerBlatt(k, p, plan, sp) } : {}),
   }
 }
 
@@ -953,8 +965,10 @@ export function druckFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache: Sp
   const h = reihe ? (HINTERGRUND as Record<string, KursHintergrund>)[reihe.id] : undefined
   const hintergrund = h?.[opt.sprache]?.warum ? { warum: h[opt.sprache].warum, achtung: h[opt.sprache].achtung ?? [], quellen: h.quellen ?? [] } : undefined
   const klasse = h?.klasse?.[opt.sprache]
+  const kv = klammerVorlage(plan.klammer)
   return {
     titel: plan.titel,
+    ...(kv ? { klammer: { name: kv.name[opt.sprache], idee: kv.idee[opt.sprache] } } : {}),
     ...(faden ? { faden } : {}),
     ...(hintergrund ? { hintergrund } : {}),
     ...(klasse?.ziel ? { klasse } : {}),
