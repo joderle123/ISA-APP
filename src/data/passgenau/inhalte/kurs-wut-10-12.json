@@ -601,6 +601,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft öffnet Werkzeugkiste, zeigt Wut-Thermometer 1 bis 10 – „Wut ist ein Gefühl wie jedes andere.“\n2′ Szene Sami: Fachkraft zeigt Anstieg, Kind rät Zahl\n4′ Drei Situationen: Kind zeigt Zahl mit Fingern, ohne Begründung – „Es gibt keine falsche Zahl.“\n7′ Kind sucht Körperzeichen für mittlere und hohe Zahl\nMuss: Thermometer, drei Situationen. Kann: eigene Beispiele, freiwillig, sonst Figuren. Wird es knapp: ein Körperzeichen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte ouvre la boîte, montre le thermomètre 1 à 10 – « La colère est un sentiment comme les autres. »\n2′ Scène de Sami : le chiffre monte, l’enfant l’estime\n4′ Trois situations : l’enfant montre son chiffre, sans justifier – « Il n’y a pas de mauvais chiffre. »\n7′ L’enfant cherche un signe du corps, moyen et élevé\nIndispensable : thermomètre, trois situations. Option : exemples personnels facultatifs, sinon personnages. Serré : un seul signe du corps."
+      }
     }
   },
   {
@@ -1900,6 +1908,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erklärt Knöpfe: Jeder hat andere – „Jeder hat Knöpfe.“\n1′ Fachkraft liest sechs Situationen, Kind zeigt Zahl\n5′ Beide vergleichen eine Situation: warum 3 und 8?\n6′ Beide benennen Knöpfe: unfair, ausgelacht, ausgeschlossen …\n8′ Kind wählt höchstens zwei Knöpfe, freiwillig, Figur geht auch\nMuss: sechs Situationen, Knöpfe benennen. Kann: Vergleich. Wird es knapp: vier Situationen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte explique les boutons : chacun a les siens – « Tout le monde a des boutons. »\n1′ L’adulte lit six situations, l’enfant montre son chiffre\n5′ Ensemble, comparer une situation : pourquoi 3 et 8 ?\n6′ Ensemble, nommer les boutons : injustice, moqueries, mise à l’écart …\n8′ L’enfant choisit au plus deux boutons, librement\nIndispensable : six situations, nommer les boutons. Option : la comparaison. Serré : quatre situations."
+      }
     }
   },
   {
@@ -3187,6 +3203,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Rempel-Szene ohne Berührung, zweimal; Kind zeigt Zahl\n3′ Kind sortiert sechs Gedanken in heiß und kühl\n5′ Kind formt zwei heiße in glaubhafte kühle um – „Ein kühler Satz muss stimmen können.“\n7′ Fachkraft spielt Rempler nur mit Worten, Kind antwortet – „Stopp, ich bin bei einer 7.“\n9′ Fachkraft steigt ausdrücklich aus der Rolle\nMuss: heiß und kühl sortieren, kühler Satz im Rollenspiel. Kann: zweite Umformung. Wird es knapp: einen Gedanken umformen."
+      },
+      "fr": {
+        "aufbau": "0′ Bousculade sans contact, deux pensées ; l’enfant donne son chiffre\n3′ L’enfant trie six pensées : chaudes ou calmes\n5′ L’enfant transforme deux pensées chaudes en calmes crédibles – « Une phrase qui calme doit pouvoir être vraie. »\n7′ L’adulte joue celui qui bouscule, seulement en mots – « Stop, je suis à 7. »\n9′ L’adulte sort clairement de son rôle\nIndispensable : trier chaud et calme, phrase calme en jeu de rôle. Option : deuxième transformation. Serré : transformer une seule pensée."
+      }
     }
   },
   {
@@ -4453,7 +4477,15 @@
       "schreiben": 2,
       "bild": 1
     },
-    "vorbereitung": "Einen Becher mit kaltem Wasser bereitstellen (oder ein Waschbecken in der Nähe nutzen)."
+    "vorbereitung": "Einen Becher mit kaltem Wasser bereitstellen (oder ein Waschbecken in der Nähe nutzen).",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind stellt sich ausgefallene Pause vor, liest Zahl ab\n1′ Kind wählt drei Abkühl-Tricks aus der Liste\n2′ Beide testen jeden Trick eine Minute, danach Zahl – „Ist die Zahl gesunken?“\n7′ Kind bewertet: hilft, ein bisschen, gar nicht; klassentauglich?\n9′ Kind wählt seinen Trick für die Kiste\nMuss: drei Tricks testen und bewerten; Schlagen oder Schreien gehören nicht dazu. Kann: weiterer Trick auf dem Blatt. Wird es knapp: zwei Tricks."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant imagine la récré annulée, lit son chiffre\n1′ L’enfant choisit trois astuces dans la liste\n2′ Chaque astuce une minute à deux, puis le chiffre – « Le chiffre a-t-il baissé ? »\n7′ L’enfant évalue chaque astuce, en classe ou non\n9′ L’enfant choisit son astuce pour la boîte\nIndispensable : tester et évaluer trois astuces ; frapper ou crier n’en font pas partie. Option : une autre astuce sur la fiche. Serré : deux astuces."
+      }
+    }
   },
   {
     "id": "ki:kurs-wut-10-12-s4-b",
@@ -5662,6 +5694,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt vier Wege, Kind wählt Schild-Satz\n2′ Stopp-Zeichen, Rollen ansagen; Fachkraft reizt dreimal harmlos – „Hand hoch heißt Stopp.“\n4′ Kind antwortet mit Schild-Satz, zeigt Zahl\n7′ Kind plant Situation: wo, Satz, wer hilft; einmal spielen\n9′ Oft oder verletzend: Hilfe holen – „Das ist kein Petzen, das ist Schutz.“\nMuss: Rollenspiel mit Stopp-Zeichen, nur harmlose Sprüche, danach aus der Rolle. Kann: Plan durchspielen. Wird es knapp: zwei Durchgänge."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre quatre façons, l’enfant choisit sa phrase-bouclier\n2′ Signe d’arrêt convenu ; trois piques inoffensives de l’adulte – « Main levée = stop. »\n4′ L’enfant répond avec sa phrase, montre son chiffre\n7′ Plan : où, quelle phrase, qui aide ; joué une fois\n9′ Souvent ou blessant : demander de l’aide – « Ce n’est pas rapporter, c’est se protéger. »\nIndispensable : jeu de rôle avec signe d’arrêt, piques inoffensives, sortir du rôle ensuite. Option : jouer le plan. Serré : deux passages."
+      }
     }
   },
   {
@@ -7436,6 +7476,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Blätter nebeneinander: Kind sagt je Werkzeug einen Satz\n3′ Kind nennt hilfreichstes Werkzeug – „Welches Werkzeug hat dir am meisten geholfen?“\n4′ Letzter Fall im Chat, mit Stopp-Zeichen und Rollenansage\n5′ Kind zeigt: Zahl, Trick, Satz, Weg – „Was machst du zuerst?“\n8′ Kind wählt Helfer, Fachkraft nennt sich als Anlaufstelle\nMuss: letzter Fall mit allen Werkzeugen, Helfer wählen. Kann: Rückblick ausführlich. Wird es knapp: nur hilfreichstes Werkzeug."
+      },
+      "fr": {
+        "aufbau": "0′ Fiches étalées : une phrase par outil\n3′ L’enfant nomme l’outil qui l’a le plus aidé – « Quel outil t’a le plus aidé ? »\n4′ Dernier cas dans le chat, signe d’arrêt et rôles annoncés\n5′ L’enfant montre : chiffre, astuce, phrase, façon de réagir – « Que fais-tu en premier ? »\n8′ L’enfant choisit qui aide ; l’adulte se propose aussi\nIndispensable : dernier cas avec tous les outils, choisir qui aide. Option : bilan détaillé. Serré : seulement l’outil le plus utile."
+      }
     }
   },
   {

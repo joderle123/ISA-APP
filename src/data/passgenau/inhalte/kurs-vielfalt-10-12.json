@@ -537,6 +537,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Perspektiv-Brille mit fünf Gläsern\n1′ Fachkraft stellt Jana mit einem Teil vor – „Was weißt du jetzt von ihr – und was noch nicht?“\n2′ Fünf Teile dazu: Kind ordnet sichtbar oder erst im Gespräch\n5′ Kind nennt eigene Teile, Fachkraft notiert im Kreis – „Ein Teil darfst du für dich behalten.“\n9′ Fachkraft zeigt drei eigene Teile, Kind rät sichtbares\nMuss: Janas Teile ordnen, eigene Teile im Kreis, nichts nachfragen. Kann: Tausch. Wird es knapp: drei Stichworte reichen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre les lunettes aux cinq verres\n1′ L’adulte présente Jana avec une seule facette – « Qu’est-ce que tu sais d’elle maintenant ? »\n2′ Cinq facettes de plus : visible ou découverte en parlant ?\n5′ L’enfant donne ses facettes, notées dans un cercle – « Tu peux garder une facette pour toi. »\n9′ L’adulte montre trois facettes, l’enfant trouve la visible\nIndispensable : classer les facettes de Jana, ses facettes dans le cercle, sans questions. Option : l’échange. Serré : trois mots suffisent."
+      }
     }
   },
   {
@@ -1712,6 +1720,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt drei Wörter, Kind sagt Bild ohne Namen – „Dein Kopf macht blitzschnell Schubladen. Das ist normal.“\n2′ Drei Fälle: Ben, Chloe, Yusuf; Kind nennt schnellen Gedanken\n4′ Kind prüft jeden Gedanken mit drei Fragen\n7′ Kind findet zwei Teile von Chloe außerhalb der Schublade\n9′ Fachkraft hält fest: ungerecht, wenn man nicht mehr nachfragt\nMuss: drei Fälle mit den drei Prüffragen. Kann: Chloes Schublade öffnen. Wird es knapp: zwei Fälle."
+      },
+      "fr": {
+        "aufbau": "0′ Trois mots ; l’enfant dit l’image, sans nom – « Ta tête fait des cases à toute vitesse. C’est normal. »\n2′ Trois cas : Ben, Chloe, Yusuf ; la pensée rapide\n4′ L’enfant vérifie chaque pensée avec trois questions\n7′ L’enfant trouve deux facettes de Chloe hors case\n9′ L’adulte retient : injuste si on ne demande plus\nIndispensable : trois cas avec les trois questions. Option : ouvrir la case de Chloe. Serré : deux cas."
+      }
     }
   },
   {
@@ -2895,7 +2911,15 @@
       "schreiben": 2,
       "bild": 1
     },
-    "vorbereitung": "Drei Papierrahmen in Brillenform vorbereiten und mit Ben, Chloe und Nele beschriften (die Mitte ausschneiden)."
+    "vorbereitung": "Drei Papierrahmen in Brillenform vorbereiten und mit Ben, Chloe und Nele beschriften (die Mitte ausschneiden).",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt Flur-Szene, spielt sie mit Kind nach\n2′ Kind schaut durch drei Papierrahmen: sehe, denke, fühle\n7′ Kind findet zwei Gründe, warum Chloe weiterrannte\n8′ Kind überlegt, wie Ben nachfragen kann statt zu schimpfen – „Du kannst dir Gründe vorstellen – und nachfragen.“\nMuss: drei Rahmen mit sehe, denke, fühle. Kann: Ben fragt nach. Wird es knapp: Szene erzählen, nicht nachspielen."
+      },
+      "fr": {
+        "aufbau": "0′ Scène du couloir racontée, puis rejouée à deux\n2′ L’enfant regarde par trois cadres : vois, pense, ressens\n7′ L’enfant trouve deux raisons pour la course de Chloe\n8′ Comment Ben peut-il demander au lieu de gronder ? – « Tu peux imaginer des raisons – et demander. »\nIndispensable : les trois cadres avec vois, pense, ressens. Option : Ben qui demande. Serré : raconter la scène sans la rejouer."
+      }
+    }
   },
   {
     "id": "ki:kurs-vielfalt-10-12-s3-b",
@@ -4123,6 +4147,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft liest Chat: Lina spottet über Bens Skate-Video\n2′ Kind sagt, wer lacht und was bei Ben ankommt\n3′ Beide prüfen Linas Satz mit drei Wort-Check-Fragen – „Lacht die Person mit?“\n5′ Kind formuliert drei Sätze respektvoll um\n8′ Kind übt ruhigen Antwort-Satz, Fachkraft spielt Lina\nMuss: Wort-Check, Respekt-Versionen. Kann: Antwort an Lina. Wird es knapp: zwei Sätze umformulieren."
+      },
+      "fr": {
+        "aufbau": "0′ Chat lu : Lina se moque du saut de Ben\n2′ L’enfant dit qui rit et ce que Ben ressent\n3′ Ensemble, test des mots en trois questions – « Est-ce que la personne rit aussi ? »\n5′ L’enfant reformule trois phrases avec respect\n8′ Réponse calme à Lina, jouée par l’adulte\nIndispensable : test des mots, versions respectueuses. Option : réponse à Lina. Serré : deux phrases à reformuler."
+      }
     }
   },
   {
@@ -5773,6 +5805,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt Kantinen-Szene: Finn abgewiesen, Jana schweigt\n1′ Kind benennt Rollen: ausgrenzen, ausgegrenzt, zuschauen\n3′ Leiter mit fünf Stufen; Kind wählt Stufe für Jana – „Hilfe holen ist kein Petzen.“\n5′ Kind plant Situation: wer, wann, wo, Stufe, Satz\n7′ Fachkraft grenzt zweimal aus, Kind übt Satz\nMuss: Leiter, eigener Satz im Rollenspiel; bei Stopp sofort aufhören. Kann: echte statt erfundene Situation, nichts erfragen. Wird es knapp: ein Durchgang."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte la cantine : Finn rejeté, Jana se tait\n1′ L’enfant nomme les rôles : qui exclut, exclu, témoin\n3′ Échelle à cinq marches ; l’enfant choisit celle de Jana – « Aller chercher de l’aide, ce n’est pas rapporter. »\n5′ L’enfant prépare : qui, quand, où, marche, phrase\n7′ L’adulte exclut deux fois, l’enfant s’exerce à sa phrase\nIndispensable : l’échelle, sa phrase en jeu de rôle ; à « Stop », on arrête tout de suite. Option : situation vraie, sans questions. Serré : un seul passage."
+      }
     }
   },
   {
@@ -7437,6 +7477,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fünf Blätter: Kind nennt klarstes und beschlagenes Glas\n2′ Kind schaut auf Teile-Kreis, ergänzt freiwillig\n3′ Kind zeigt ein Werkzeug in einer Minute Rollenspiel\n5′ Kind formuliert Versprechen: Glas, Satz, Schritt, wer hilft – „Ein Versprechen muss klein sein, damit es klappt.“\n9′ Kind bekommt Urkunde für die ganze Brille\nMuss: Respekt-Versprechen. Kann: Teile-Kreis ergänzen. Wird es knapp: Rückblick kurz."
+      },
+      "fr": {
+        "aufbau": "0′ Cinq fiches : le verre le plus utile, le plus embué\n2′ L’enfant revoit son cercle, ajoute s’il veut\n3′ L’enfant montre un outil en une minute de jeu\n5′ L’enfant formule sa promesse : verre, phrase, pas, aide – « Une promesse doit être petite pour marcher. »\n9′ L’enfant reçoit le diplôme des lunettes complètes\nIndispensable : la promesse de respect. Option : compléter le cercle. Serré : retour en arrière bref."
+      }
     }
   },
   {

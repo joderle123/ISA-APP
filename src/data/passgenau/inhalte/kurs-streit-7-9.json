@@ -409,6 +409,14 @@
         "Stop, ça ne veut pas dire : j’ai perdu. Stop, ça veut dire : je réfléchis d’abord, ensuite j’agis."
       ],
       "wennEsKippt": "Si respirer est difficile ou paraît ridicule, l’adulte respire bruyamment en premier et l’enfant compte seulement sur ses doigts jusqu’à trois. Si l’enfant ne veut pas jouer la dispute, il reste observateur et montre le signe stop à Tom et Jana sur la fiche. Un signe stop et une respiration suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Friedens-Treppe, sechs Stufen, Tom und Jana – „Heute gehen wir auf Stufe 1: Stopp.“\n2′ Fachkraft spielt wütende Jana mit Theaterstimme\n3′ Kind übt Stopp-Hand, dreimal Bauchatmen, Schultern fallen lassen – „Hand hoch – und jetzt atmen wir: ein … und aus.“\n5′ Rollentausch: Kind spielt Jana, Fachkraft übt Stopp\n7′ Kind zeigt am eigenen Körper, wo Tom Wut spürt\nMuss: Stopp-Hand und Atmen. Kann: Toms Körperzeichen, nur Tom, keine eigenen Streits. Wird es knapp: ohne Rollentausch."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre l’escalier de la paix : Tom et Jana – « Aujourd’hui, on monte sur la marche 1 : Stop. »\n2′ L’adulte joue Jana avec une voix de théâtre\n3′ L’enfant : main stop, trois respirations ventre, épaules relâchées – « Main levée – et maintenant on respire. »\n5′ Rôles inversés : l’enfant joue Jana, l’adulte fait stop\n7′ L’enfant montre sur lui où Tom sent l’explosion venir\nIndispensable : main stop et respiration. Option : signes du corps chez Tom, pas ses propres disputes. Serré : sans échange de rôles."
+      }
     }
   },
   {
@@ -1504,6 +1512,14 @@
         "Maintenant, je le redis avec mes mots : tu as dit … C’est bien ça ?"
       ],
       "wennEsKippt": "Si raconter est difficile pour l’enfant, l’adulte pose des petites questions (« Qui avait le ballon en premier ? » – « Et ensuite ? »). Si l’enfant n’a pas envie d’être Jana ou Tom, il montre l’histoire avec deux stylos. Une phrase entière par personne suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Sprech-Hand und erzählt vom blauen Ball\n2′ Kind erzählt als Jana mit dem Redestift – „Wer den Stift hat, erzählt.“\n4′ Fachkraft als Tom wiederholt in eigenen Worten – „Du hast gesagt … Stimmt das?“\n5′ Rollentausch: Kind erzählt als Tom, Fachkraft wiederholt\n7′ Beide sammeln Ich-habe-Sätze und Du-bist-Sätze\nMuss: Redestift-Runde mit Wiederholen. Kann: Sätze sammeln. Wird es knapp: Rollentausch kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la main qui parle, raconte le ballon bleu\n2′ L’enfant raconte en Jana, avec le bâton de parole – « Celui qui a le stylo raconte. »\n4′ L’adulte, en Tom, répète avec ses mots – « Tu as dit … C’est bien ça ? »\n5′ Rôles inversés : l’enfant raconte en Tom\n7′ Les deux trient phrases qui racontent et qui insultent\nIndispensable : tour avec le bâton de parole et répétition. Option : trier les phrases. Serré : échange de rôles court."
+      }
     }
   },
   {
@@ -2517,6 +2533,14 @@
         "Comment cette phrase t’a-t-elle semblé ? Et à Ben, à ton avis ?"
       ],
       "wennEsKippt": "Si l’enfant ne trouve pas de mot d’émotion, l’adulte pose trois cartes de visages (en colère, triste, déçu) et l’enfant en montre une. Si le souhait est difficile, l’adulte propose deux exemples (« Je voudrais que tu demandes. »). Une phrase avec « Je suis …, parce que … » suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft sagt als Tom Du-Sätze, Kind sagt Wirkung\n2′ Fachkraft zeigt dreiteiligen Ich-Satz, Hand aufs Herz – „Ich bin …, weil … Ich möchte …“\n4′ Kind macht aus Du-Sätzen Ich-Sätze, mit Gefühlskarten\n6′ Stift kaputt: Kind sagt als Mia Ich-Satz, Fachkraft antwortet als Ben\n8′ Rollen tauschen: Kind ist Ben\nMuss: Ich-Satz bauen, Rollenspiel Mia und Ben. Kann: Rollentausch. Wird es knapp: nur zwei Du-Sätze umbauen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte, en Tom, lance des phrases en « tu »\n2′ L’adulte montre la phrase en « je », main au cœur – « Je suis …, parce que … Je voudrais … »\n4′ L’enfant transforme les « tu » en « je », avec les cartes\n6′ Crayon cassé : l’enfant joue Mia, l’adulte Ben\n8′ Rôles inversés : l’enfant joue Ben\nIndispensable : construire la phrase en « je », jeu de rôle Mia et Ben. Option : échange des rôles. Serré : transformer seulement deux phrases."
+      }
     }
   },
   {
@@ -3940,6 +3964,14 @@
         "Cinq idées ! Laquelle est la plus drôle ? Laquelle est complètement différente des autres ?"
       ],
       "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte dessine deux petites images sur des cartes (sablier, dé) et demande : « Qu’est-ce que ça pourrait être ? ». Si l’enfant trouve son idée mauvaise, l’adulte dit : « Elle a le droit d’aller sur la carte – on juge plus tard. » Trois idées suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt Karten bereit, Regel: erst sammeln, nicht bewerten – „Bewertet wird erst später.“\n2′ Abwechselnd Ideen für den Ball, Fachkraft schreibt jede auf Karte\n5′ Fachkraft bewertet absichtlich, Kind ruft: Stopp, erst sammeln!\n8′ Kind wählt lustigste Karte, alle in die Friedens-Mappe\nMuss: mindestens fünf Ideen-Karten. Kann: Bewerten-Stopp-Spiel. Wird es knapp: Ideen schreiben statt zeichnen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte prépare les cartes : d’abord chercher, ne pas juger – « On juge seulement plus tard. »\n2′ Idées à tour de rôle, l’adulte note chacune sur carte\n5′ L’adulte juge exprès, l’enfant crie : stop, d’abord chercher !\n8′ L’enfant choisit la plus drôle, cartes dans la chemise\nIndispensable : au moins cinq cartes d’idées. Option : le jeu du stop au jugement. Serré : écrire sans dessiner."
+      }
     }
   },
   {
@@ -4963,6 +4995,14 @@
         "Maintenant, je suis l’autre enfant. Commence par stop – je joue le jeu."
       ],
       "wennEsKippt": "Si l’enfant n’a pas de situation personnelle ou ne veut pas en donner, il prépare le plan pour Tom et Jana (« Demain, ils rejouent au ballon »). Si le jeu de rôle devient trop difficile ou si le temps manque, l’adulte joue l’autre personne plus gentiment, et ils s’exercent seulement à stop et à la phrase en « je ». Une phrase dans le plan suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt drei Ideen-Karten von Stufe 4 aus\n1′ Kind prüft jede Karte mit dem Daumen – „Ist das gut für Tom? Ist das gut für Jana?“\n3′ Kind wählt faire Karte, besiegelt mit Hand drauf\n4′ Kind plant Situation: wer, wann, wo, Satz, Stopp-Zeichen\n6′ Fachkraft sagt kleines Nein, Kind geht die Treppe durch – „Fang mit Stopp an – ich spiele mit.“\nMuss: Fair-Test, Treppe einmal durch (mindestens Stopp, Ich-Satz, Idee). Kann: eigene Situation, nur was es erzählen mag. Wird es knapp: mit Tom und Jana spielen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale trois cartes d’idées de la marche 4\n1′ L’enfant teste chaque carte avec le pouce – « Est-ce bien pour Tom ? Est-ce bien pour Jana ? »\n3′ L’enfant choisit une carte juste : « Tope là »\n4′ L’enfant prépare : qui, quand, où, phrase, signe de stop\n6′ L’adulte dit un petit non, l’enfant monte l’escalier – « Commence par stop – je joue le jeu. »\nIndispensable : test du pouce, l’escalier une fois (au moins stop, phrase en « je », idée). Option : sa propre situation, seulement ce qu’il veut dire. Serré : jouer avec Tom et Jana."
+      }
     }
   },
   {
@@ -6586,6 +6626,14 @@
         "Quelle marche est la plus facile pour toi, laquelle est encore difficile ? Qui peut t’aider quand la dispute devient trop grande ?"
       ],
       "wennEsKippt": "Si le cas ressemble à un test, l’adulte en fait un jeu à deux (« On guide les deux ensemble ») et donne des mots-clés. Si l’enfant ne trouve pas de personne qui aide, l’adulte donne des exemples (une enseignante, un éducateur de la Maison Relais) et dit qu’il est lui-même une personne vers qui se tourner. Une seule personne suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide blättern Friedens-Mappe durch: liebstes Blatt, hilfreichste Stufe\n2′ Fachkraft lässt Stifte Ben und Amira ums Fenster streiten\n4′ Kind führt als Friedens-Lotse Stufe für Stufe, mit Gesten\n7′ Kind wählt Friedens-Satz, gibt Stiften die Hand\n8′ Fachkraft fragt: Was leicht, was schwer, wer hilft? – „Wer kann dir helfen, wenn der Streit zu groß wird?“\nMuss: Lotsen-Spiel mit allen sechs Stufen. Kann: Mappe durchblättern. Wird es knapp: nur das liebste Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux feuillettent la chemise : fiche préférée, marche utile\n2′ L’adulte joue Ben et Amira avec deux stylos\n4′ L’enfant guide marche après marche, avec les gestes\n7′ L’enfant choisit une phrase de paix\n8′ L’adulte demande : facile, difficile, qui aide ? – « Qui peut t’aider quand la dispute devient trop grande ? »\nIndispensable : le jeu du guide avec les six marches. Option : feuilleter la chemise. Serré : seulement la fiche préférée."
+      }
     }
   },
   {

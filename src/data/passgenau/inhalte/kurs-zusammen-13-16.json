@@ -479,6 +479,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Gruppen-Landkarte, heute Gebiet Rolle – „Jede Gruppe hat Rollen, auch wenn sie niemand verteilt.“\n1′ Fachkraft spielt Referat-Szene, nacheinander zwei Rollen\n3′ Jugendliche/r benennt Rolle: was sie bringt, wo sie bremst\n5′ Tausch: Jugendliche/r spielt eine Rolle eine Minute\n8′ Fachkraft sagt, woran sie die Rolle erkannte\nMuss: zwei Rollen benennen, eine selbst spielen. Kann: eigene Gruppen, nur auf dem Blatt und freiwillig. Wird es knapp: eine Rolle vorspielen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la carte du groupe : la zone rôle – « Chaque groupe a des rôles, même si personne ne les distribue. »\n1′ L’adulte joue la scène de l’exposé, deux rôles\n3′ Le/la jeune nomme le rôle : apport et frein\n5′ On échange : le/la jeune joue un rôle une minute\n8′ L’adulte dit à quoi il a reconnu le rôle\nIndispensable : nommer deux rôles, en jouer un. Option : ses propres groupes, seulement sur la fiche et au choix. Serré : un seul rôle montré."
+      }
     }
   },
   {
@@ -1730,6 +1738,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft fragt nach Zweck von Regeln, mit Beispiel – „Hinter jeder Regel steckt ein Grund.“\n2′ Fachkraft zeigt Fairness-Check mit drei Fragen\n4′ Fachkraft findet Handy-Regel ungerecht, Jugendliche/r fragt sachlich nach\n7′ Tausch: Jugendliche/r beschwert sich, Fachkraft erst abweisend, dann offen\nMuss: Fairness-Check im Regel-Gespräch. Kann: Rollentausch. Wird es knapp: Zweck-Frage kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte demande à quoi servent les règles, avec exemple – « Derrière chaque règle, il y a une raison. »\n2′ L’adulte présente le test d’équité en trois questions\n4′ Règle du portable : le/la jeune questionne l’adulte\n7′ Rôles inversés : l’adulte d’abord fermé, puis ouvert\nIndispensable : le test d’équité dans la discussion. Option : échange des rôles. Serré : question du but brève."
+      }
     }
   },
   {
@@ -2867,6 +2883,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft unterscheidet Schuld und Verantwortung – „Verantwortung heißt nicht Schuld.“\n2′ Fachkraft spielt Rafael mit Ausreden; Jugendliche/r sagt, was nicht trägt\n4′ Fachkraft spielt Rafael mit drei Schritten\n5′ Jugendliche/r spielt Rafael, Fachkraft Jil: enttäuscht, dann offen\n8′ Rollentausch: Jugendliche/r ist Jil\nMuss: drei Schritte, Jugendliche/r spielt Rafael; eigene Fehler nur freiwillig. Kann: Rollentausch. Wird es knapp: Ausreden-Version kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte distingue culpabilité et responsabilité – « Responsabilité ne veut pas dire culpabilité. »\n2′ L’adulte joue Rafael avec prétextes ; le/la jeune réagit\n4′ L’adulte joue Rafael avec les trois étapes\n5′ Le/la jeune joue Rafael ; Jil déçue, puis ouverte\n8′ On échange : le/la jeune joue Jil\nIndispensable : les trois étapes, jouer Rafael ; erreurs personnelles seulement si souhaité. Option : échange des rôles. Serré : version avec prétextes brève."
+      }
     }
   },
   {
@@ -4052,6 +4076,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Werkzeug Stopp, Stand, Satz\n1′ Beide üben zwei Minuten den Stand, dann Satz laut\n3′ Chat-Druck in drei Stufen, Jugendliche/r sagt jeweils Nein – „Ein Nein darf kurz sein.“\n7′ Rollentausch: Jugendliche/r drängt, Fachkraft zeigt Nein\n9′ Beide sagen, was gewirkt hat\nMuss: Stand üben, Nein in drei Stufen; nach jeder Runde aus der Rolle treten. Kann: Rollentausch. Wird es knapp: zwei Druck-Stufen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente l’outil Stop, pieds au sol, phrase\n1′ Deux minutes de posture, puis une phrase à voix haute\n3′ Chat inventé, trois degrés : le/la jeune dit non – « Un non peut être court. »\n7′ Rôles inversés : le/la jeune insiste, l’adulte dit non\n9′ Les deux disent ce qui a marché\nIndispensable : la posture, le non sur trois degrés ; sortir clairement du rôle après chaque tour. Option : échange des rôles. Serré : deux degrés."
+      }
     }
   },
   {
@@ -5697,6 +5729,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Vorschlag in vier Sätzen\n2′ Jugendliche/r wählt Situation dieser Woche, sagt Vorschlag\n4′ Fachkraft reagiert offen, skeptisch, abweisend – „Was müsste sich ändern, damit es geht?“\n7′ Tausch: Jugendliche/r ist die angesprochene Person\n9′ Bleibt es beim Nein: klar gefragt zählt\nMuss: Vorschlag in vier Sätzen, drei Reaktionen. Kann: Rollentausch. Wird es knapp: zwei Reaktionen, Plan am Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la proposition en quatre phrases\n2′ Le/la jeune choisit une situation, dit sa proposition\n4′ L’adulte réagit : ouvert, sceptique, fermé – « Qu’est-ce qui devrait changer pour que ça marche ? »\n7′ On échange : le/la jeune est la personne sollicitée\n9′ Si c’est non : avoir demandé clairement compte\nIndispensable : proposition en quatre phrases, trois réactions. Option : échange des rôles. Serré : deux réactions, plan sur la fiche."
+      }
     }
   },
   {
@@ -6771,6 +6811,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Jugendliche/r ordnet vier Blätter von leicht bis schwer – „Ehrlich mit dir selbst.“\n2′ Zu jedem Blatt: Was habe ich gemerkt?\n4′ Jugendliche/r spielt alte Szene mit einer Änderung\n7′ Fachkraft sagt, was sie konkret gesehen hat\n8′ Fachkraft fragt: Wer hilft, wenn eine Gruppe zu schwierig wird?\nMuss: Szene mit Änderung, Hilfe-Frage. Kann: ausführlicher Rückblick. Wird es knapp: zwei Blätter kommentieren."
+      },
+      "fr": {
+        "aufbau": "0′ Quatre fiches rangées du facile au difficile – « Sois honnête avec toi-même. »\n2′ Pour chacune : ce que j’ai remarqué\n4′ Le/la jeune rejoue une scène en changeant une chose\n7′ L’adulte dit ce qu’il a vu de concret\n8′ Qui aide quand un groupe devient trop difficile ?\nIndispensable : scène rejouée avec un changement, question de l’aide. Option : bilan détaillé. Serré : commenter deux fiches."
+      }
     }
   },
   {

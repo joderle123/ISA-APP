@@ -535,6 +535,14 @@
         "Une solution est bonne quand la balance reste en équilibre – quand elle convient aux deux côtés."
       ],
       "wennEsKippt": "Si l’enfant ne trouve pas de type, l’adulte relit la scène et demande seulement : « Qu’est-ce que chacun veut ? » Si l’enfant ne veut pas citer de conflit personnel, il reste avec les scènes de la fiche ou en invente un avec Mia et Ben – les exemples personnels sont toujours libres. Trois scènes suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Lotsen-Waage: Lösung passt für beide Seiten – „Worum geht es hier?“\n2′ Fachkraft nennt vier Arten: Sache, Regel, Missverständnis, Gefühle\n3′ Fachkraft liest vier Szenen, Kind nennt Art und Hinweis\n7′ Kind bestimmt freiwillig eigenen Konflikt, echt oder erfunden\nMuss: vier Szenen einordnen. Kann: eigener Konflikt, nichts nachfragen. Wird es knapp: zwei Szenen, Rest aufs Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente la balance du pilote – « De quoi s’agit-il ? »\n2′ L’adulte nomme quatre types : partage, règle, malentendu, sentiments\n3′ Quatre scènes lues : l’enfant dit le type et pourquoi\n7′ Au choix : l’enfant classe un conflit vrai ou inventé\nIndispensable : classer les quatre scènes. Option : un conflit à lui, sans questions. Serré : deux scènes, le reste sur la fiche."
+      }
     }
   },
   {
@@ -1743,6 +1751,14 @@
         "Maintenant, on redevient nous-mêmes – dis ton prénom. Les deux souhaits ont leur place sur la balance ? Alors on cherche une solution qui les porte tous les deux."
       ],
       "wennEsKippt": "Si l’autre côté est difficile pour l’enfant, l’adulte joue d’abord le rôle et l’enfant répond à une seule question (De quoi elle a besoin ?) ; l’échange de chaises peut aussi se faire à la table, avec deux stylos comme figurines. Si l’enfant résiste à un côté, il suffit qu’il trouve un souhait pour lui – comprendre n’est pas approuver. Si l’enfant parle d’exclusion, de menaces ou de violence, l’adulte ne change pas de côté : il prend l’enfant au sérieux et cherche avec lui qui peut l’aider."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft schildert Streit: Noah spielt Tischtennis, Lea wartet\n1′ Rollenspiel: Kind ist Noah, Fachkraft ist Lea\n3′ Stühle und Rollen tauschen – „Jetzt tauschen wir die Plätze. Du bist Lea.“\n4′ Kind antwortet als Lea: passiert, denke, fühle, brauche\n7′ Fachkraft zeigt: Beide Wünsche haben Platz auf der Waage – „Verstehen heißt nicht, einverstanden zu sein.“\n9′ Beide legen Rollen ab, sagen eigenen Namen\nMuss: Seitenwechsel mit vier Fragen, Rollen ablegen. Kann: Waage ausführlich. Wird es knapp: erste Rolle kurz."
+      },
+      "fr": {
+        "aufbau": "0′ Ping-pong : Noah joue depuis longtemps, Lea attend\n1′ Jeu de rôle : l’enfant est Noah, l’adulte Lea\n3′ On échange chaises et rôles – « Maintenant, on change de place. Tu es Lea. »\n4′ En Lea, l’enfant répond aux quatre questions\n7′ Balance : les deux souhaits ont leur place – « Comprendre ne veut pas dire être d’accord. »\n9′ Les deux sortent du rôle en disant leur prénom\nIndispensable : changer de côté avec les quatre questions, sortir du rôle. Option : balance en détail. Serré : premier rôle court."
+      }
     }
   },
   {
@@ -2968,6 +2984,14 @@
         "Attention : « Je trouve que tu es pénible » n’est pas un message-je. Il faut que ça parle de toi – de ton émotion et de ton souhait."
       ],
       "wennEsKippt": "Si le mot d’émotion est difficile, l’adulte en propose trois au choix (énervé, déçu, mis de côté). Si la phrase sonne raide, l’enfant peut la dire avec ses propres mots – les trois éléments sont un appui, pas un texte à réciter. Les exemples personnels sont libres ; Noah et Jana sur la fiche suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Vorwurf neben Ich-Botschaft mit drei Bausteinen – „Wenn … – Ich fühle mich … – Ich wünsche mir …“\n2′ Fachkraft spielt Vorwürfe aus Pause, Training, Chat\n3′ Kind übersetzt jeden in eine Ich-Botschaft\n6′ Tausch: Kind sagt Vorwurf an Tom, Fachkraft übersetzt\n8′ Kind prüft mit Faustregel: Geht es um mich?\nMuss: drei Bausteine, Vorwürfe übersetzen. Kann: Tausch mit Vorwurf an Tom. Wird es knapp: zwei Vorwürfe."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre reproche et message-je en trois éléments – « Quand … – Je me sens … – J’aimerais … »\n2′ L’adulte lance des reproches : récré, entraînement, chat\n3′ L’enfant transforme chacun en message-je\n6′ On échange : l’enfant lance un reproche à Tom\n8′ L’enfant vérifie : est-ce que ça parle de moi ?\nIndispensable : les trois éléments, transformer les reproches. Option : échange avec un reproche à Tom. Serré : deux reproches."
+      }
     }
   },
   {
@@ -4202,6 +4226,14 @@
         "Regarde derrière les souhaits : tous les deux veulent un bon exposé. Y a-t-il une idée qui contient les deux ?"
       ],
       "wennEsKippt": "Si l’enfant a peu d’idées, l’adulte donne des pistes (alterner, partager, tirer au sort, trouver une troisième idée, demander à quelqu’un) et l’enfant choisit. Si peser prend trop de temps, tester deux idées suffit. Si l’enfant dit toujours « c’est juste », la contre-question est : qui aurait un désavantage ?"
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt Fall: Tom will Computer, Lea Plakat\n1′ Kind sammelt zwei Minuten Ideen, Fachkraft schreibt mit – „Erst sammeln, dann prüfen.“\n4′ Beide prüfen zwei, drei Ideen mit drei Waage-Fragen\n7′ Kind sucht Idee, die beide Wünsche enthält\nMuss: zwei Minuten sammeln, Waage-Fragen. Kann: Idee mit beiden Wünschen. Wird es knapp: nur zwei Ideen prüfen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente le cas : Tom ordinateur, Lea affiche\n1′ L’enfant cherche deux minutes, l’adulte note – « D’abord chercher, ensuite peser. »\n4′ Ensemble, ils pèsent deux idées avec les trois questions\n7′ L’enfant cherche une idée avec les deux souhaits\nIndispensable : deux minutes d’idées, questions de la balance. Option : l’idée qui réunit les deux souhaits. Serré : peser deux idées seulement."
+      }
     }
   },
   {
@@ -5439,6 +5471,14 @@
         "Choisis une situation de cette semaine. Elle peut être petite – ou inventée. Et réfléchis : quel outil convient ?"
       ],
       "wennEsKippt": "Si la situation choisie touche l’enfant de trop près, il passe à une situation inventée (Ben et Sami, Lea et Jana) – les exemples personnels sont toujours libres et on ne pose pas de questions. Si l’excuse est difficile, l’adulte propose deux débuts de phrase au choix ; si un jeu de rôle devient trop réel, on dit stop tout de suite et on change de rôles. Si l’enfant raconte qu’on l’embête ou le menace sans arrêt, il n’a pas besoin d’un plan d’excuse mais d’aide : l’adulte le prend au sérieux et cherche avec lui qui peut le soutenir."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt vier Teile am Screenshot-Fall von Ben\n2′ Kind hört zwei schlechte Entschuldigungen, sagt, was fehlt\n4′ Kind entschuldigt sich als Ben bei Sami (Fachkraft)\n6′ Rollentausch: Kind hört sie als Sami\n7′ Beide legen Rollen ab, sagen eigenen Namen\n8′ Kind wählt Situation dieser Woche und passendes Werkzeug\nMuss: vier Teile, gute Entschuldigung spielen, Rollen ablegen. Kann: Rollentausch. Wird es knapp: Situation nur benennen, Plan aufs Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre les quatre parties avec Ben et Sami\n2′ L’enfant écoute deux mauvaises excuses, dit ce qui manque\n4′ En Ben, l’enfant fait une bonne excuse à Sami\n6′ Rôles inversés : l’enfant est Sami\n7′ Les deux sortent du rôle en disant leur prénom\n8′ L’enfant choisit une situation et l’outil qui convient\nIndispensable : quatre parties, jouer une bonne excuse, sortir du rôle. Option : échange des rôles. Serré : nommer la situation, le plan sur la fiche."
+      }
     }
   },
   {
@@ -7161,6 +7201,14 @@
         "Un pilote ne résout pas tous les conflits seul. Quand ça chauffe trop, il va chercher de l’aide – ça fait partie du savoir-faire."
       ],
       "wennEsKippt": "Si l’enfant ne trouve aucun outil utile, l’adulte en nomme un qu’il a remarqué (« Tu as d’abord demandé de quoi Ben avait besoin – c’était changer de côté »). Si l’enfant n’a rien essayé, on ne juge pas : le plan commence alors par le plus petit pas. Le jeu de rôle peut être sauté ; l’enfant dit alors seulement sa première phrase."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt fünf Werkzeug-Blätter nebeneinander\n1′ Kind sagt, was half und was noch wackelt\n3′ Kind zeigt ein Werkzeug in einer Minute Rollenspiel\n5′ Kind legt Fahrplan fest: Zeichen, Werkzeug, Satz, Hilfe – „Ein Fahrplan muss klein sein, damit er klappt.“\n8′ Blick auf Skala vom Anfang, Fachkraft übergibt Lotsen-Patent\nMuss: Fahrplan mit Zeichen, Werkzeug, Satz und Hilfe. Kann: Rollenspiel-Minute. Wird es knapp: Rückblick in einem Satz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale les cinq fiches du carnet de bord\n1′ L’enfant dit : outil utile, outil encore fragile\n3′ L’enfant montre un outil en une minute de jeu\n5′ L’enfant fixe son plan : signe, outil, phrase, aide – « Un plan de route doit être petit pour marcher. »\n8′ Regard sur l’échelle du début, remise du brevet\nIndispensable : plan de route avec signe, outil, phrase et aide. Option : la minute de jeu de rôle. Serré : retour en une phrase."
+      }
     }
   },
   {

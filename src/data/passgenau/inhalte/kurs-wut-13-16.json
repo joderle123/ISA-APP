@@ -435,6 +435,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Ärger-Kurve: Anstieg, Gipfel, Abstieg – „Ärger ist ein normales Signal.“\n1′ Fachkraft liest Jana-Szene in vier Schritten\n2′ Jugendliche/r zeigt mit der Hand die Höhe, nennt Zahl – „Tischkante ist null, Kopfhöhe ist zehn.“\n5′ Tausch: Jugendliche/r liest Chat-Szene, Fachkraft zeigt Zahl\n8′ Jugendliche/r trägt Kurve ein; eigene nur freiwillig\nMuss: Kurven-Zeigen in beiden Rollen. Kann: eigene Kurve. Wird es knapp: Chat-Szene kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente la courbe : montée, sommet, descente – « La colère est un signal normal. »\n1′ L’adulte lit la scène de Jana en quatre étapes\n2′ Le/la jeune montre la hauteur et dit le chiffre – « Le bord de la table, c’est zéro ; la tête, c’est dix. »\n5′ Rôles inversés : scène du chat, l’adulte montre\n8′ Le/la jeune reporte la courbe ; la sienne, au choix\nIndispensable : jeu de la courbe dans les deux rôles. Option : une courbe personnelle. Serré : scène du chat brève."
+      }
     }
   },
   {
@@ -1578,6 +1586,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erklärt Auslöser und Körpersignale: Kiefer, Fäuste, Hitze – „Dein Körper meldet sich meistens früher als dein Mund.“\n2′ Fachkraft stichelt harmlos, Jugendliche/r spielt Ben\n3′ Hand hoch beim ersten Zeichen, Zeichen benennen\n6′ Tausch: Jugendliche/r stichelt, Fachkraft nennt Zeichen\n8′ Ärger am Körper anmalen, eigenes Zeichen freiwillig\nMuss: Frühwarn-Radar in beiden Rollen. Kann: eigenes erstes Zeichen. Wird es knapp: zwei Sticheleien."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte explique déclencheur et signes du corps – « Ton corps réagit en général avant ta bouche. »\n2′ L’adulte lance des piques inoffensives, le/la jeune joue Ben\n3′ Main levée au premier signe, le nommer\n6′ Rôles inversés : l’adulte est Ben\n8′ Colorier la colère dans le corps ; son signe, au choix\nIndispensable : radar d’alerte dans les deux rôles. Option : son propre premier signe. Serré : deux piques."
+      }
     }
   },
   {
@@ -2774,6 +2790,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Ben grüßt nicht: Fachkraft zeigt den Gedanken dazwischen – „Zwischen dem, was passiert, und deinem Ärger sitzt ein Gedanke.“\n2′ Fachkraft erklärt drei Denkfallen und drei Prüffragen\n4′ Jugendliche/r sagt als Jana heißen Gedanken, Fachkraft prüft – „Was weiß ich sicher? Was vermute ich nur?“\n7′ Tausch mit neuer Szene: Nachricht unbeantwortet\nMuss: Zwei Stimmen mit drei Prüffragen (ohne Spiel: Fakt oder Vermutung am Blatt). Kann: zweite Szene. Wird es knapp: zwei Denkfallen."
+      },
+      "fr": {
+        "aufbau": "0′ Ben ne salue pas : l’adulte montre la pensée entre – « Entre ce qui se passe et ta colère, il y a une pensée. »\n2′ L’adulte présente trois pièges et trois questions\n4′ Le/la jeune dit en Jana la pensée chaude, l’adulte vérifie\n7′ Rôles inversés, nouvelle scène : message sans réponse\nIndispensable : deux voix avec les trois questions (sans jeu : fait ou supposition sur la fiche). Option : deuxième scène. Serré : deux pièges."
+      }
     }
   },
   {
@@ -4027,6 +4051,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erklärt: Am Gipfel hilft nur Abstand – „Dann hilft nur Abstand.“\n1′ Jugendliche/r stellt sich leichten Ärger vor, nennt Zahl\n2′ Ausatmen, Ortswechsel, Pause testen, je eine Minute\n6′ Fachkraft sagt gereizten Satz, Jugendliche/r antwortet mit Pausen-Satz\n8′ Rollen tauschen\nMuss: drei Wege testen, Pausen-Satz. Kann: Rollentausch. Wird es knapp: Pausen-Satz am Blatt wählen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte explique : au sommet, seule la distance aide – « Seul le recul aide. »\n1′ Le/la jeune imagine une contrariété, donne son chiffre\n2′ Tester expirer, changer d’endroit, pause : une minute chacun\n6′ Phrase irritée de l’adulte, réponse avec phrase de pause\n8′ On inverse les rôles\nIndispensable : tester les trois méthodes, phrase de pause. Option : inverser les rôles. Serré : choisir la phrase de pause sur la fiche."
+      }
     }
   },
   {
@@ -5233,6 +5265,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt 4-Schritte-Satz: Fakten, Ich-Satz, Bitte, Nutzen\n2′ Jugendliche/r wählt Situation, echt oder erfunden: wer, wann, wo – „Du entscheidest, wie nah sie an dir dran ist.“\n4′ Jugendliche/r spricht Satz, Fachkraft freundlich, dann abwehrend\n7′ Tausch: Fachkraft spricht Satz einmal gut, einmal schlecht\n9′ Für Chats: schreiben, Pause, nochmal lesen, dann senden\nMuss: 4-Schritte-Satz im Rollenspiel. Kann: Rollentausch. Wird es knapp: Satz als Entwurf, Fachkraft antwortet als Empfänger."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la phrase en quatre étapes\n2′ Le/la jeune choisit une situation, vraie ou inventée – « Tu décides à quel point elle est proche de toi. »\n4′ Le/la jeune dit sa phrase ; l’adulte aimable, puis défensif\n7′ On inverse : l’adulte dit la phrase bien, puis mal\n9′ En ligne : écrire, pause, relire, puis envoyer\nIndispensable : la phrase en quatre étapes en jeu de rôle. Option : inverser les rôles. Serré : phrase en brouillon, l’adulte répond en destinataire."
+      }
     }
   },
   {
@@ -6962,6 +7002,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Jugendliche/r zeigt je Ausstieg die Stelle auf der Kurve\n3′ Plan: ein Frühwarnzeichen, zwei Ausstiege, ein Satz\n5′ Fachkraft spielt letzten Fall, Jugendliche/r sagt Ausstieg\n7′ Danach Rollen tauschen\n8′ Wer hilft? Ansprech-Satz einmal laut sagen – „Du musst keinen Namen sagen.“\nMuss: Plan für heiße Momente, Ansprech-Satz. Kann: Rollentausch. Wird es knapp: Rückblick auf zwei Ausstiege."
+      },
+      "fr": {
+        "aufbau": "0′ Le/la jeune situe chaque issue sur la courbe\n3′ Plan : un signe, deux issues, une phrase\n5′ Dernier cas : le/la jeune dit où il ou elle sort\n7′ Puis on inverse les rôles\n8′ Qui aide ? Dire une fois la phrase pour aborder – « Tu n’as pas besoin de dire un nom. »\nIndispensable : plan pour les moments chauds, phrase pour aborder. Option : inverser les rôles. Serré : bilan sur deux issues."
+      }
     }
   },
   {

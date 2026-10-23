@@ -494,6 +494,14 @@
         "Pareil, c’est bien. Différent, c’est bien aussi."
       ],
       "wennEsKippt": "Si l’enfant n’aime pas qu’on le regarde ou qu’on le touche, il compare plutôt Zara avec un personnage de la fiche ou deux crayons (long, court ; rouge, bleu) – pareil et différent, ça marche avec tout. Si l’enfant dit quelque chose de blessant (« Tu as des cheveux bizarres »), l’adulte ne le gronde pas mais décrit calmement : « Mes cheveux sont bouclés, les tiens sont lisses – différent. » Si l’enfant parle de lui-même de la couleur de peau, l’adulte la nomme aussi calmement ; deux ou trois trouvailles suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Zebra Zara: jedes Zebra hat eigene Streifen\n1′ Gegenüber sitzen, Fachkraft beginnt Gleich-Spiel, freundlich, ohne Werten\n3′ Kind sucht selbst: Haare, Augen, Größe, Lieblingsspiel – „Gleich ist schön. Anders ist auch schön.“\n6′ Wenn beide mögen: Handflächen aneinander, wessen Hand ist größer?\nMuss: Gleich-und-anders-Spiel, Kind sucht selbst. Kann: Hände vergleichen. Wird es knapp: Kind sucht zwei Dinge."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente Zara : chaque zèbre a ses rayures\n1′ Face à face, l’adulte commence « Pareil ou pas pareil ? »\n3′ L’enfant cherche : cheveux, yeux, taille, jeu préféré – « Pareil, c’est bien. Différent, c’est bien aussi. »\n6′ Si les deux veulent : paume contre paume\nIndispensable : jeu pareil-différent, l’enfant cherche lui-même. Option : comparer les mains. Serré : l’enfant cherche deux choses."
+      }
     }
   },
   {
@@ -1061,6 +1069,14 @@
         "Moi, j’aime le ballon, toi, tu aimes dessiner. Les deux, c’est très bien. Qu’est-ce qu’on fait – d’abord le tien, puis le mien ?"
       ],
       "wennEsKippt": "Si l’enfant ne veut pas sauter, il montre le pouce vers le haut ou sur le côté, ou il montre les images de la fiche. S’il ne trouve rien qu’il aime, l’adulte propose deux choses (ballon ou pâte à modeler ?) et l’enfant choisit. Si l’enfant se moque de ce que l’adulte aime, celui-ci reste aimable : « Moi, j’aime ça, toi, tu aimes autre chose – chacun son goût, et c’est très bien. »"
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt, was sie mag; Kind springt oder hockt – „Magst du Äpfel auch? Dann spring hoch.“\n3′ Fachkraft sagt nach jeder Runde: gleich, anders, beides okay\n4′ Tausch: Kind nennt, Fachkraft springt oder hockt, einmal anders\n6′ Beide finden Lösung: Ball oder Malen? – „Erst deins, dann meins?“\nMuss: Springen oder Hocken in beide Richtungen. Kann: Ball-oder-Malen-Lösung. Wird es knapp: drei Runden je Seite."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte nomme un goût ; l’enfant saute ou s’accroupit – « Tu aimes ça aussi ? Alors saute. »\n3′ Après chaque tour, l’adulte dit pareil ou différent\n4′ On échange : l’enfant nomme, l’adulte saute ou s’accroupit\n6′ Solution ensemble : ballon ou dessin ? – « D’abord le tien, puis le mien ? »\nIndispensable : sauter ou s’accroupir dans les deux sens. Option : la solution ballon-dessin. Serré : trois tours de chaque côté."
+      }
     }
   },
   {
@@ -1627,6 +1643,14 @@
         "Tu connais encore un bonjour ? Alors apporte-le – je le répéterai après toi."
       ],
       "wennEsKippt": "Si l’enfant ne veut rien répéter, il fait seulement coucou à chaque bonjour ou montre l’image – faire coucou, c’est aussi dire bonjour. S’il n’apporte pas de bonjour à lui, c’est tout aussi bien. L’adulte ne demande pas quelles langues l’enfant parle et ne se moque jamais de la prononciation."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft sagt Moien, Bonjour, Hallo, Olá mit Zeichen\n2′ Kind macht Wort und Zeichen nach\n3′ Beide gehen durch den Raum, grüßen sich beim Treffen – „Moien! Wie grüßt du zurück?“\n5′ Tausch: Kind grüßt zuerst, Fachkraft antwortet\n7′ Fachkraft schließt: viele Hallo, viele Sprachen, ein Schatz\nMuss: vier Hallo mit Zeichen, Gruß-Runde. Kann: Kind bringt eigenes Hallo ein. Wird es knapp: ohne Tausch."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte dit Moien, Bonjour, Hallo, Olá avec gestes\n2′ L’enfant répète mot et geste\n3′ Les deux marchent et se saluent en se croisant – « Moien ! Comment réponds-tu ? »\n5′ On échange : l’enfant salue en premier\n7′ L’adulte conclut : plein de bonjours, c’est un trésor\nIndispensable : les quatre bonjours avec gestes, la marche. Option : un autre bonjour de l’enfant. Serré : sans échange."
+      }
     }
   },
   {
@@ -2233,6 +2257,14 @@
         "Des lunettes aident à voir, un fauteuil roulant à rouler, un appareil auditif à entendre. C’est tout à fait normal."
       ],
       "wennEsKippt": "Si l’enfant ne trouve rien qu’il sait faire, l’adulte nomme quelque chose qu’il a vu tout à l’heure (« Tout à l’heure, tu as… ») et l’enfant le montre. S’il ne veut rien montrer, il devine seulement et l’adulte montre tout. Si l’enfant parle de lui ou d’autres qui utilisent une aide, l’adulte écoute calmement et ne demande pas pourquoi."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt ohne Worte, was sie kann; Kind rät\n2′ Kind zeigt etwas, Fachkraft sagt genau, was sie sah – „Du hast ganz hoch gebaut!“\n4′ Zara will zum Ball: Kind probiert einen Weg\n5′ Fachkraft macht jeden Weg mit, Kind erfindet vielleicht neuen\n7′ Fachkraft nennt Hilfen: Brille, Rollstuhl, Hörgerät – „Das ist ganz normal.“\nMuss: Können zeigen und raten, Wege zum Ball. Kann: neuen Weg erfinden. Wird es knapp: ein Weg pro Person."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte mime ce qu’il sait faire, l’enfant devine\n2′ L’enfant montre, l’adulte dit précisément ce qu’il voit – « Tu as construit très haut ! »\n4′ Zara va au ballon : l’enfant essaie un chemin\n5′ L’adulte fait chaque chemin avec lui\n7′ L’adulte nomme lunettes, fauteuil roulant, appareil auditif – « C’est tout à fait normal. »\nIndispensable : montrer et deviner, chemins vers le ballon. Option : inventer un autre chemin. Serré : un chemin chacun."
+      }
     }
   },
   {
@@ -2806,7 +2838,15 @@
       "wennEsKippt": "Si l’enfant ne veut rien préparer de personnel, l’adulte reste avec Amira et Léa – c’est tout aussi efficace, car l’enfant transfère la phrase lui-même ; une phrase suffit. Si l’enfant s’agite quand Tom dit « Tu ne peux pas », Tom change tout de suite d’avis et l’enfant regarde seulement. L’adulte ne demande pas si cela est déjà arrivé à l’enfant ; si l’enfant raconte de lui-même qu’on ne l’a pas laissé jouer, l’adulte écoute (« C’est injuste. Merci de me le dire »), arrête la scène et en parle ensuite avec la personne responsable (direction).",
       "vorbereitung": "Préparer trois figurines, peluches ou marionnettes pour Tom, Léa et Amira (à défaut, trois crayons ou ses propres mains)."
     },
-    "vorbereitung": "Drei Spielfiguren, Stofftiere oder Handpuppen für Tom, Lea und Amira bereitlegen (zur Not drei Stifte oder die eigenen Hände)."
+    "vorbereitung": "Drei Spielfiguren, Stofftiere oder Handpuppen für Tom, Lea und Amira bereitlegen (zur Not drei Stifte oder die eigenen Hände).",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Figuren-Szene: Tom lässt Lea nicht mitspielen, Zara fragt nach\n2′ Kind spielt Amira und lädt Lea ein – „Du bist Amira – was sagst du?“\n3′ Rollentausch: Kind ist Lea und wird eingeladen\n4′ Kind plant Einladung: wen, wann, wo, welcher Satz\n6′ Fachkraft antwortet Ja oder „Jetzt nicht“: anderes Kind fragen\nMuss: Amira lädt ein, eigene Einladung üben (Name oder Figur, nichts nachfragen). Kann: Rollentausch. Wird es knapp: eine Antwort üben. Bei „Du darfst nicht“: Erwachsene holen."
+      },
+      "fr": {
+        "aufbau": "0′ Figurines : Tom refuse Léa, Zara pose des questions\n2′ L’enfant joue Amira et invite Léa – « Tu es Amira – que dis-tu ? »\n3′ On échange : l’enfant est Léa, qu’on invite\n4′ L’enfant prépare : qui, quand, où, quelle phrase\n6′ Oui ou « pas maintenant » : demander à un autre enfant\nIndispensable : Amira invite, s’exercer à sa propre invitation (prénom ou figurine, sans questions). Option : échange des rôles. Serré : une seule réponse. Si « tu ne peux pas jouer » : chercher un adulte."
+      }
+    }
   },
   {
     "id": "ki:kurs-vielfalt-4-6-s5-t1",
@@ -3748,7 +3788,15 @@
       "wennEsKippt": "Si l’enfant ne veut pas présenter, il montre seulement sa fiche préférée et l’adulte fait les gestes. S’il ne trouve pas de phrase pour inviter, il en choisit une parmi les images de la fiche – une phrase suffit. Si l’enfant s’agite devant le zèbre sur le côté, le zèbre est invité tout de suite et l’enfant regarde seulement ; si le temps presse, la fiche préférée et l’invitation suffisent.",
       "vorbereitung": "Garder sous la main les cinq fiches de la chemise du zèbre et une figurine ou une marionnette pour le zèbre sur le côté."
     },
-    "vorbereitung": "Die fünf Blätter aus der Zebra-Mappe und eine Figur oder Handpuppe für das Zebra am Rand bereithalten."
+    "vorbereitung": "Die fünf Blätter aus der Zebra-Mappe und eine Figur oder Handpuppe für das Zebra am Rand bereithalten.",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt fünf Blätter hin, Kind wählt Lieblingsblatt – „Welches magst du am liebsten?“\n2′ Fachkraft zeigt Streifen-Zeichen, Kind führt sie vor\n4′ Fachkraft spielt Zebra, das allein am Rand steht\n5′ Kind lädt es ein, grüßt, zeigt Fest-Zeichen\n7′ Beide fragen: Wer hilft, wenn jemand allein steht?\nMuss: Zeichen vorführen, Zebra am Rand einladen. Kann: Rückblick auf alle Blätter. Wird es knapp: drei Zeichen statt fünf."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose les cinq fiches, l’enfant choisit sa préférée – « Laquelle préfères-tu ? »\n2′ L’adulte montre les gestes, l’enfant les présente\n4′ L’adulte joue un zèbre seul sur le côté\n5′ L’enfant l’invite, le salue, lui montre un geste\n7′ Ensemble : qui aide quand quelqu’un reste seul ?\nIndispensable : présenter les gestes, inviter le zèbre seul. Option : regarder toutes les fiches. Serré : trois gestes au lieu de cinq."
+      }
+    }
   },
   {
     "id": "ki:kurs-vielfalt-4-6-s6-t1",

@@ -468,6 +468,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Regel-Profi-Ausweis mit fünf Stempelfeldern\n1′ Fachkraft spielt Papierball-in-den-Korb ohne Regeln – „Du darfst jederzeit Stopp rufen.“\n3′ Fachkraft nennt drei Gründe mit Gesten: Sicherheit, Fairness, Zusammenleben\n4′ Beide finden drei Regeln, Kind nennt je den Grund\n7′ Zweite Runde mit Regeln, Unterschied spüren\nMuss: Spiel ohne Regeln, drei Regeln mit Grund. Kann: Gesten zu den Gründen. Wird es knapp: zweite Runde kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la carte de pro aux cinq cases\n1′ L’adulte joue à la boule de papier sans règles – « Tu peux dire Stop à tout moment. »\n3′ Trois raisons avec gestes : sécurité, justice, vivre-ensemble\n4′ Trois règles pour le jeu, l’enfant donne la raison\n7′ Deuxième manche avec les règles : sentir la différence\nIndispensable : jeu sans règles, trois règles avec leur raison. Option : gestes des raisons. Serré : deuxième manche brève."
+      }
     }
   },
   {
@@ -1599,6 +1607,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Weil-Ball: Fachkraft nennt Regel, wirft; Kind ergänzt weil – „Du fängst und sagst: …, weil …“\n2′ Nach drei Würfen tauschen\n4′ Fachkraft schimpft als Noah über eine Regel\n5′ Kind findet freundlichen Satz, beide üben im Wechsel\n8′ Kind prüft weitere Regel: Gibt es einen Grund? – „Wer nach dem Grund fragt, ist nicht frech.“\nMuss: Weil-Ball in beide Richtungen, Noah-Szene. Kann: weitere Regel prüfen. Wird es knapp: zwei Würfe je Seite."
+      },
+      "fr": {
+        "aufbau": "0′ Balle du parce que : l’adulte dit une règle, lance – « Tu attrapes et tu dis : …, parce que … »\n2′ Après trois lancers, on échange\n4′ L’adulte râle en Noah contre une règle\n5′ L’enfant trouve une phrase gentille, exercée à deux\n8′ L’enfant vérifie une autre règle : une raison ? – « Celui qui demande la raison n’est pas insolent. »\nIndispensable : balle du parce que dans les deux sens, scène de Noah. Option : vérifier une autre règle. Serré : deux lancers chacun."
+      }
     }
   },
   {
@@ -2701,6 +2717,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Würfelrunde unfair: mogeln, laut jubeln, beleidigt\n3′ Kind sagt, was auffällt, nennt fairen Weg – „Freu dich – aber lach den anderen nicht aus.“\n4′ Zwei kurze Glücksspiele: Würfeln, Karte ziehen, Kind spielt fair\n9′ Kind darf Fachkraft für Fairness loben\nMuss: unfaire Runde erkennen, fair gewinnen und verlieren. Kann: Lob an Fachkraft. Wird es knapp: ein Glücksspiel."
+      },
+      "fr": {
+        "aufbau": "0′ Dés : l’adulte triche, crie sa joie, boude\n3′ L’enfant dit ce qu’il remarque et la bonne façon – « Réjouis-toi – mais ne te moque pas de l’autre. »\n4′ Deux jeux de hasard courts, l’enfant joue fair-play\n9′ L’enfant peut féliciter l’adulte s’il était fair-play\nIndispensable : repérer la manche injuste, gagner et perdre fair-play. Option : féliciter l’adulte. Serré : un seul jeu de hasard."
+      }
     }
   },
   {
@@ -4305,6 +4329,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Rollenspiel: Fachkraft will denselben roten Stift\n1′ Abmachung mit Wer, Was, Bis wann, Sanduhr – „Wer, was, bis wann?“\n4′ Fachkraft vergisst Abmachung, greift nach Stift\n5′ Kind sagt ruhig: Wir haben ausgemacht …\n8′ Echte Abmachung für den Rest der Stunde\nMuss: Abmachung mit drei Teilen, ruhig erinnern. Kann: Sanduhr als Zeitmesser. Wird es knapp: Erinnern einmal üben."
+      },
+      "fr": {
+        "aufbau": "0′ Jeu de rôle : l’adulte veut le seul feutre rouge\n1′ Accord : qui, quoi, jusqu’à quand, avec le sablier – « Qui, quoi, jusqu’à quand ? »\n4′ L’adulte « oublie » l’accord et prend le feutre\n5′ L’enfant dit calmement : on avait dit que …\n8′ Vrai petit accord pour la fin de séance\nIndispensable : accord en trois points, rappeler calmement. Option : le sablier pour mesurer. Serré : rappeler une seule fois."
+      }
     }
   },
   {
@@ -5377,6 +5409,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt drei Mini-Szenen, Kind zeigt Handzeichen – „Petzen heißt: Ich will, dass jemand Ärger bekommt.“\n2′ Hilfe holen: Gefahr, allein nicht weiter, Ärgern hört nicht auf\n3′ Fachkraft drängelt vor, Kind erinnert: Name, Regel, Angebot\n7′ Kind plant Situation: wen, wann, wo, welcher Satz\nMuss: Hilfe holen oder petzen, freundlicher Erinnerungs-Satz. Kann: Figur vom Blatt statt echtem Kind. Wird es knapp: „ein Kind aus meiner Klasse“ genügt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue trois mini-scènes, l’enfant montre le signe – « Rapporter, c’est vouloir que quelqu’un ait des ennuis. »\n2′ Aide : danger, seul impossible, embêté sans arrêt\n3′ L’adulte passe devant, l’enfant rappelle : prénom, règle, proposition\n7′ L’enfant prépare : qui, quand, où, quelle phrase\nIndispensable : aide ou rapporter, phrase de rappel aimable. Option : personnage de la fiche au lieu d’un vrai enfant. Serré : « un enfant de ma classe » suffit."
+      }
     }
   },
   {
@@ -6949,6 +6989,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Neuling, Kind erklärt jeden Stempel – „Erklär mir als Neuling: Was gehört zu jedem Stempel?“\n2′ Kind sagt: leichtester und schwerster Stempel\n4′ Beide legen drei Regeln fest, mit Grund und Erinner-Satz\n8′ Kind überlegt, wer in Schule oder Verein hilft\nMuss: drei Regeln mit Grund und Erinner-Satz. Kann: leichtester und schwerster Stempel. Wird es knapp: zwei Stempel erklären."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue un nouveau, l’enfant explique chaque tampon – « Explique-moi, je suis nouveau : que veut dire chaque tampon ? »\n2′ L’enfant dit : tampon facile, tampon difficile\n4′ Trois règles, avec raison et phrase de rappel\n8′ Qui aide à l’école ou au club ?\nIndispensable : trois règles avec raison et phrase de rappel. Option : tampon facile et difficile. Serré : expliquer deux tampons."
+      }
     }
   },
   {

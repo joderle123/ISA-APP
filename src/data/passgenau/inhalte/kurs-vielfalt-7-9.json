@@ -642,6 +642,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt Wir-Insel vor, heute entsteht der Boden – „Hier ist Platz für alle.“\n1′ Beide suchen drei Dinge, die sie gleich haben\n4′ Dann zwei verschiedene Dinge: sichtbar oder erst erfragt?\n6′ Rollentausch: Kind fragt, Fachkraft antwortet\n8′ Beide überlegen, was für alle Kinder gilt\nMuss: erst Gleiches, dann Verschiedenes, Rollentausch. Kann: Tom und Amira auf dem Blatt. Wird es knapp: gleich zu „Was gilt für alle?“."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente l’île pour tous ; aujourd’hui, le sol – « Il y a de la place pour tout le monde. »\n1′ Les deux cherchent trois choses en commun\n4′ Puis deux différences : visible, ou il faut demander ?\n6′ On échange : l’enfant pose les questions\n8′ Ensemble : qu’est-ce qui vaut pour tous les enfants ?\nIndispensable : d’abord le commun, puis les différences, échange des rôles. Option : Tom et Amira sur la fiche. Serré : passer vite à ce qui vaut pour tous."
+      }
     }
   },
   {
@@ -1972,6 +1980,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt zwei Stühle, erzählt: Samis Ball trifft Lea\n1′ Fachkraft spricht als Lea, Kind sagt: sieht, denkt, fühlt\n4′ Seitenwechsel: Fachkraft als Sami, Kind sagt Samis Sicht\n6′ Kind wechselt selbst die Stühle, spricht beide Rollen – „Zwei Seiten, zwei Sichtweisen. Beide sind echt.“\n9′ Frage: Was sagt Lea, um Sami zu verstehen?\nMuss: beide Stühle, beide Sichten. Kann: Kind wechselt selbst. Wird es knapp: Schlussfrage kurz."
+      },
+      "fr": {
+        "aufbau": "0′ Deux chaises : le ballon de Sami touche Lea\n1′ L’adulte parle en Lea ; l’enfant : voit, pense, ressent\n4′ « Changement de côté ! » : l’adulte parle en Sami\n6′ L’enfant change de chaise et parle pour les deux – « Deux côtés, deux points de vue. Les deux sont vrais. »\n9′ Que pourrait dire Lea pour comprendre Sami ?\nIndispensable : les deux chaises, les deux points de vue. Option : l’enfant change lui-même. Serré : dernière question brève."
+      }
     }
   },
   {
@@ -3252,6 +3268,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Tom: zu spät, Jacke geworfen, kein Gruß\n2′ Kind sagt, was Lea sieht und denkt\n3′ Beide suchen drei Gründe, die Lea nicht sieht\n5′ Fachkraft spielt Tom mit jedem Grund noch einmal\n7′ Erst Fachkraft, dann Kind als Lea üben Nachfrage – „Du bist heute so still. Ist alles okay?“\n9′ Fachkraft hält fest: erst fragen, dann urteilen\nMuss: drei Gründe, Nachfrage üben. Kann: Tom mit jedem Grund nachspielen. Wird es knapp: zwei Gründe nachspielen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue Tom : en retard, veste jetée, pas de bonjour\n2′ L’enfant dit ce que Lea voit et pense\n3′ Les deux cherchent trois raisons invisibles pour Lea\n5′ L’adulte rejoue Tom avec chaque raison\n7′ L’adulte, puis l’enfant en Lea, posent la question – « Tu es bien silencieux aujourd’hui. Ça va ? »\n9′ L’adulte retient : demander d’abord, juger ensuite\nIndispensable : trois raisons, s’exercer à la question. Option : rejouer Tom pour chaque raison. Serré : rejouer deux raisons."
+      }
     }
   },
   {
@@ -4599,6 +4623,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Mia, die unbekanntes Essen auspackt\n2′ Fachkraft lacht als Noah aus, Kind sagt Mias Gefühl\n4′ Fachkraft fragt als Amira neugierig nach – „Was ist das? Erzähl mal!“\n5′ Kind übt drei Neugier-Fragen, Fachkraft antwortet als Mia\n9′ Fachkraft schließt: Neugier baut, Auslachen reißt ein\nMuss: Auslachen und Neugier vergleichen, drei Neugier-Fragen. Kann: Mia sagt einmal „ein anderes Mal“. Wird es knapp: zwei Fragen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue Mia, qui sort un plat inconnu\n2′ Moquerie de Noah : l’enfant dit comment Mia se sent\n4′ L’adulte, en Amira, demande avec curiosité – « C’est quoi ? Raconte ! »\n5′ L’enfant pose trois questions, l’adulte répond en Mia\n9′ L’adulte conclut : la curiosité construit, la moquerie détruit\nIndispensable : comparer moquerie et curiosité, trois questions. Option : Mia répond « une autre fois ». Serré : deux questions."
+      }
     }
   },
   {
@@ -5918,6 +5950,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Pause: Sami steht allein am Rand\n1′ Kind sagt als Amira, was es sieht – „Du bist der Leuchtturm. Was siehst du?“\n2′ Kind übt drei Wege, Fachkraft spielt Sami und Team – „Das ist kein Petzen.“\n6′ Kind plant Situation: wer, wann, wo, welcher Satz\n8′ Kind probt Satz, Fachkraft spielt anderes Kind\nMuss: einladen, anderes vorschlagen, Hilfe holen; Satz proben. Kann: Tausch, Kind ist Sami, wenn es mag. Wird es knapp: einladen und Hilfe holen, dann planen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue la récré : Sami seul sur le côté\n1′ L’enfant, en Amira, dit ce qu’il voit – « Tu es le phare. Qu’est-ce que tu vois ? »\n2′ Trois chemins : inviter, autre chose, chercher de l’aide – « Ce n’est pas moucharder. »\n6′ L’enfant prépare : qui, quand, où, quelle phrase\n8′ L’enfant essaie sa phrase, l’adulte joue l’autre enfant\nIndispensable : les trois chemins, la phrase essayée. Option : échange, l’enfant est Sami s’il veut. Serré : inviter et chercher de l’aide, puis planifier."
+      }
     }
   },
   {
@@ -7684,6 +7724,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft kommt als neue Lea auf die Insel – „Gibt es hier Platz für mich?“\n1′ Kind führt als Inselkapitän an fünf Stellen herum\n2′ Boden: Gleiches suchen; Palme: Pause aus Leas Sicht\n4′ Hütte: Grund für Stille; Steg: Neugier-Frage; Leuchtturm: einladen\n7′ Tausch, wenn Zeit: Fachkraft Kapitänin, Kind neu\n8′ Rückblick: leichtester Teil, Übungsteil, wer hilft\nMuss: Rundgang mit fünf Szenen. Kann: Tausch. Wird es knapp: Rückblick nur „Wer hilft?“."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte arrive sur l’île en Lea – « Est-ce qu’il y a de la place pour moi ici ? »\n1′ L’enfant, capitaine, fait visiter cinq endroits\n2′ Sol : points communs ; palmier : la récré pour Lea\n4′ Cabane : une raison ; ponton : une question ; phare : inviter\n7′ S’il reste du temps, on échange les rôles\n8′ Bilan : élément facile, à travailler, qui aide\nIndispensable : la visite avec les cinq scènes. Option : échange des rôles. Serré : bilan avec « qui aide ? »."
+      }
     }
   },
   {

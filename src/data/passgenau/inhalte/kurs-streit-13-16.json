@@ -516,7 +516,15 @@
       "schreiben": 2,
       "bild": 1
     },
-    "vorbereitung": "Fünf Karten oder Zettel mit den Zahlen 1 bis 5 bereitlegen (sie werden als Stufen auf den Boden gelegt)."
+    "vorbereitung": "Fünf Karten oder Zettel mit den Zahlen 1 bis 5 bereitlegen (sie werden als Stufen auf den Boden gelegt).",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Eisberg: oben Positionen, unten Interessen\n1′ Fachkraft legt fünf Stufen-Karten auf den Boden\n2′ Fachkraft liest Jana-Ben-Szenen, Jugendliche/r steigt je eine Stufe\n4′ Jugendliche/r nennt Hitze-Hinweis und einen Schritt zur Seite – „Auf jeder Stufe gibt es einen Ausstieg.“\n8′ Ab Stufe vier: nicht zu zweit klären, Hilfe holen\nMuss: fünf Szenen mit Ausstieg, ab Stufe vier Hilfe. Kann: eigene Konflikte, nur von sich aus. Wird es knapp: drei Szenen, Rest aufs Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente l’iceberg : positions en haut, intérêts en bas\n1′ L’adulte pose cinq cartes-marches par terre\n2′ L’adulte lit ; le/la jeune monte d’une marche par scène\n4′ Le/la jeune nomme l’indice et un pas de côté – « À chaque degré, il existe une sortie. »\n8′ Dès le degré quatre : pas à deux, chercher de l’aide\nIndispensable : cinq scènes avec une sortie, aide dès le degré quatre. Option : conflits personnels, seulement s’il ou elle les évoque. Serré : trois scènes, le reste sur la fiche."
+      }
+    }
   },
   {
     "id": "ki:kurs-streit-13-16-s1-b",
@@ -1696,6 +1704,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erklärt Position und Interesse am Eisberg – „Oben steht, was jemand verlangt. Unten steht, wozu er oder sie es braucht.“\n2′ Beide suchen bei Jana und Ben: Position, Interesse\n5′ Fachkraft nennt Position, Jugendliche/r stellt Taucherfrage – „Wozu ist dir das wichtig?“\n7′ Rollentausch, dann prüfen: Vermutung oder Wissen?\nMuss: Jana und Ben, Taucherfrage im Rollenspiel. Kann: Rollentausch; eigene Beispiele nur von sich aus. Wird es knapp: ein Durchgang Taucherfrage."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte explique position et intérêt avec l’iceberg\n2′ Les deux plongent dans le cas de Jana et Ben\n5′ L’adulte dit une position, le/la jeune questionne – « Qu’est-ce qui compte pour toi là-dedans ? »\n7′ Rôles inversés, puis vérifier : supposition ou savoir ?\nIndispensable : Jana et Ben, question de plongée en jeu de rôle. Option : échange des rôles ; exemples personnels seulement spontanés. Serré : un seul tour de question."
+      }
     }
   },
   {
@@ -3012,6 +3028,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt schlechtes Zuhören: abwiegeln, Ratschläge, von sich erzählen\n2′ Jugendliche/r ordnet Antworten auf dem Blatt zu\n3′ Eine Minute runterfahren, Stopp-Wort ausmachen\n4′ Fachkraft erzählt erfundenen Ärger, Jugendliche/r spiegelt – „Du meinst also … Stimmt das so?“\n7′ Rollentausch: Fachkraft spiegelt\n9′ Jugendliche/r schätzt ein, was gelungen ist\nMuss: Spiegeln mit Prüffrage, Stopp-Wort. Kann: Rollentausch. Wird es knapp: schlechtes Zuhören nur einmal zeigen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue la mauvaise écoute : minimiser, conseiller, parler de soi\n2′ Le/la jeune associe les réponses sur la fiche\n3′ Une minute pour se poser, choisir un mot d’arrêt\n4′ L’adulte raconte une contrariété inventée, le/la jeune reformule – « Tu veux dire que … C’est bien ça ? »\n7′ Rôles inversés : l’adulte reformule\n9′ Le/la jeune évalue ce qui a marché\nIndispensable : reformuler et vérifier, mot d’arrêt. Option : échange des rôles. Serré : mauvaise écoute montrée une fois."
+      }
     }
   },
   {
@@ -4187,6 +4211,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt vier Schritte: Interessen, Optionen, Kriterien, Abmachung\n2′ Jugendliche/r sammelt drei Minuten Optionen zu Jana und Ben – „Sammle erst, bewerte später.“\n5′ Jugendliche/r wählt zwei faire Kriterien\n6′ Fachkraft spielt Ben, Jugendliche/r verhandelt als Jana\n8′ Abmachung festhalten: wer, was, bis wann, Plan B\nMuss: Rollenspiel mit Abmachung; bei Drohungen nicht verhandeln, Hilfe holen. Kann: Rollentausch. Wird es knapp: Kriterien kurz, gleich ins Rollenspiel."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre les quatre étapes de la négociation\n2′ Trois minutes d’options pour Jana et Ben – « Rassemble d’abord, juge ensuite. »\n5′ Le/la jeune choisit deux critères équitables\n6′ L’adulte joue Ben, le/la jeune négocie en Jana\n8′ Noter l’accord : qui, quoi, pour quand, plan B\nIndispensable : jeu de rôle avec accord ; face à des menaces, pas de négociation, chercher de l’aide. Option : échange des rôles. Serré : critères brefs, vite au jeu de rôle."
+      }
     }
   },
   {
@@ -5388,6 +5420,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Jugendliche/r vergleicht drei Entschuldigungen von Ben an Jana\n2′ Jugendliche/r plant: wer, wann, wo, eigener Teil, Werkzeug, Satz\n5′ Eine Minute runterfahren, Stopp-Wort ausmachen\n6′ Fachkraft spielt Gegenüber erst offen, dann abweisend – „Es geht nur um deinen Teil.“\n9′ Rollentausch, wenn Zeit bleibt\nMuss: Plan mit erstem Satz, zwei Durchgänge. Kann: Rollentausch; Situation echt oder erfunden. Wird es knapp: Vergleich kurz, gleich planen."
+      },
+      "fr": {
+        "aufbau": "0′ Le/la jeune compare trois excuses de Ben à Jana\n2′ Plan : qui, quand, où, sa part, outil, phrase\n5′ Une minute pour se poser, choisir un mot d’arrêt\n6′ L’adulte joue l’autre : d’abord ouvert, puis fermé – « Il s’agit seulement de ta part. »\n9′ Échange des rôles s’il reste du temps\nIndispensable : plan avec première phrase, deux passages. Option : échange des rôles ; situation vraie ou inventée. Serré : comparaison brève, planifier tout de suite."
+      }
     }
   },
   {
@@ -7202,6 +7242,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Jugendliche/r färbt Konflikt-Profil, sagt zu zwei Stücken warum\n2′ Jugendliche/r zeigt ein Werkzeug in einer Minute – „Ich bin die andere Seite, du bestimmst, womit du beginnst.“\n4′ Danach Rollen tauschen\n5′ Kompass-Karte: Warnzeichen, Schritt, Frage, Satz, Hilfe\n8′ Alle Blätter zusammen, Fachkraft nennt Beobachtung mit Beispiel\nMuss: Kompass-Karte mit Hilfe. Kann: Rollentausch. Wird es knapp: Profil zu einem Stück."
+      },
+      "fr": {
+        "aufbau": "0′ Le/la jeune colorie le profil, commente deux parts\n2′ Le/la jeune montre un outil en une minute – « Je suis l’autre côté, tu décides par où tu commences. »\n4′ Puis on échange les rôles\n5′ Carte-boussole : signe d’alerte, pas, question, phrase, aide\n8′ Toutes les fiches réunies, l’adulte cite un exemple observé\nIndispensable : la carte-boussole avec l’aide. Option : échange des rôles. Serré : profil commenté sur une part."
+      }
     }
   },
   {

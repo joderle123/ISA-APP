@@ -352,6 +352,14 @@
         "Une règle nous dit comment on joue. Comme ça, tout le monde s’amuse."
       ],
       "wennEsKippt": "Si l’enfant ne trouve pas de règle, l’adulte montre un exemple (« Je prends tout ! ») et demande : « C’est bien comme ça ? » – un signe de tête suffit. Si l’enfant s’agite parce que l’adulte joue « mal », l’adulte rejoue tout de suite correctement et n’exerce qu’une règle (chacun son tour). Une règle et une manche suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt Klötze, Korb und Turm-Platz hin – „Der erste Stein heißt: Spielregeln.“\n1′ Fachkraft spielt Klötze-in-den-Korb absichtlich ohne Regeln\n2′ Kind ruft Stopp, sobald etwas komisch ist\n3′ Drei Regeln mit Gesten: abwechseln, ein Klotz, Stopp\n5′ Beide spielen eine Runde mit den Regeln\n7′ Kind legt ersten Klotz als Grundstein\nMuss: Spiel ohne Regeln mit Stopp, drei Regeln mit Gesten. Kann: längere Regel-Runde. Wird es knapp: Regel-Runde kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose cubes, panier et place de la tour – « Le premier cube s’appelle : les règles du jeu. »\n1′ L’adulte joue « Des cubes dans le panier » sans règles\n2′ L’enfant dit stop dès que c’est bizarre\n3′ Trois règles avec gestes : chacun son tour, un cube, stop\n5′ Une manche avec les règles\n7′ L’enfant pose le premier cube de la tour\nIndispensable : jeu sans règles avec stop, trois règles avec gestes. Option : manche plus longue. Serré : manche avec règles courte."
+      }
     }
   },
   {
@@ -903,6 +911,14 @@
         "Le sable est écoulé – c’est ton tour ! Tu as gardé les mains bien tranquilles. Celui qui attend finit toujours par jouer."
       ],
       "wennEsKippt": "Si attendre est difficile, on raccourcit : un sablier plus court, ou seulement compter jusqu’à cinq, l’adulte comptant à voix haute avec l’enfant. Si l’enfant attrape le cube, l’adulte reste aimable : « Pas encore – bientôt ! » et repousse calmement le cube du tour, sans reproche. Une manche avec une seule attente suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind setzt ersten Stein, zeigt eine Regel-Geste\n1′ Fachkraft legt Dran-Klotz hin – „Wer ihn hat, ist dran. Und wer nicht, wartet.“\n2′ Abwechselnd Reihe bauen; Wartende: Hände auf Knie, Sanduhr\n3′ Fachkraft wartet zuerst, sagt laut, was hilft\n5′ Kind wartet, Fachkraft sagt, was sie sah\n7′ Kind dreht Sanduhr für Fachkraft, legt zweiten Stein\nMuss: Dran-Klotz mit Sanduhr, Kind wartet. Kann: Kind dreht Sanduhr für Fachkraft. Wird es knapp: je eine Runde."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant pose le premier cube, montre un geste\n1′ L’adulte pose le cube « à toi de jouer » – « Celui qui l’a devant lui, c’est son tour. »\n2′ Rangée à tour de rôle ; attente mains sur les genoux\n3′ L’adulte attend, dit tout haut ce qui l’aide\n5′ L’enfant attend, l’adulte dit ce qu’il a vu\n7′ L’enfant retourne le sablier, pose le deuxième cube\nIndispensable : cube « à toi de jouer » avec sablier, l’enfant attend. Option : l’enfant retourne le sablier pour l’adulte. Serré : un tour chacun."
+      }
     }
   },
   {
@@ -1408,6 +1424,14 @@
         "On l’a construite ensemble. Seul, on ne l’aurait pas faite aussi haute."
       ],
       "wennEsKippt": "Si l’enfant ne veut pas donner de consignes, il montre seulement du doigt et l’adulte dit l’endroit à voix haute. Si la tour tombe, ce n’est qu’un jeu : « Oups – on la reconstruit ! » Même une petite tour de trois cubes compte."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind baut die ersten zwei Steine mit Gesten auf\n1′ Kind sagt als Baumeister, wohin; Fachkraft setzt genau – „Du bist der Baumeister, ich bin dein Helfer.“\n4′ Turm wackelt: beide rufen Halt, halten ihn fest\n5′ Nach fünf Klötzen tauschen: Fachkraft baut, Kind hilft\n7′ Kind legt dritten Stein obenauf\nMuss: Baumeister-Runde, gemeinsam festhalten. Kann: Tausch. Wird es knapp: drei Klötze pro Runde."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant reconstruit les deux cubes avec les gestes\n1′ L’enfant, chef de chantier, dit où ; l’adulte pose – « Tu es le chef de chantier, je suis ton aide. »\n4′ La tour vacille : « Attention ! », on la tient ensemble\n5′ Après cinq cubes, on échange les rôles\n7′ L’enfant pose le troisième cube en haut\nIndispensable : tour du chef de chantier, tenir ensemble. Option : échange. Serré : trois cubes par tour."
+      }
     }
   },
   {
@@ -1954,6 +1978,14 @@
         "Perdu – c’est énervant. On souffle ensemble. Et maintenant : bien joué !"
       ],
       "wennEsKippt": "Si l’enfant s’énerve, l’adulte reste calme et dit seulement ce qu’il voit (« C’est énervant »), souffle une fois avec l’enfant et fait une pause – « Bien joué » n’a pas besoin de venir tout de suite. Si la déception est grande, l’adulte passe à une manche où les deux devinent ensemble et posent les cubes sur la tour. Une manche suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind baut die drei Steine schnell wieder auf\n1′ Kind versteckt Klotz unter Becher, Fachkraft rät\n2′ Fachkraft verliert vor: ausatmen, Gut gespielt, Hand geben – „Puh – schade. Ich atme aus.“\n3′ Kind rät drei bis fünf Runden, verliert mindestens einmal – „Wir atmen zusammen aus. Und jetzt: Gut gespielt!“\n7′ Klötze zählen, Hand geben, vierten Stein legen\nMuss: Verlieren vormachen, Kind verliert einmal mit Gut gespielt. Kann: Klötze zählen. Wird es knapp: drei Runden."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant reconstruit vite les trois cubes\n1′ L’enfant cache un cube, l’adulte devine\n2′ L’adulte perd : souffle, « Bien joué ! », serre la main – « Pfff – dommage. Je souffle. »\n3′ L’enfant devine trois à cinq fois, perd une fois – « On souffle ensemble. Et maintenant : bien joué ! »\n7′ Compter, se serrer la main, poser le quatrième cube\nIndispensable : l’adulte montre comment perdre, l’enfant perd une fois avec « Bien joué ! ». Option : compter les cubes. Serré : trois manches."
+      }
     }
   },
   {
@@ -2872,6 +2904,14 @@
         "Maintenant, je suis l’enfant à qui tout est tombé. Que dis-tu ?"
       ],
       "wennEsKippt": "Si l’enfant ne veut pas dire la phrase, les deux la disent ensemble, ou l’adulte aide d’abord et l’enfant regarde. S’il n’a pas envie de ranger, on en fait un jeu : qui range le plus doucement ? Ranger ensemble suffit – le jeu de rôle peut rester court."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind baut vier Steine schnell wieder auf\n1′ Beide räumen Klötze in den Korb, teilen Arbeit – „Du nimmst die roten Klötze, ich die blauen.“\n3′ Fachkraft lässt Klötze fallen, bittet um Hilfe, dankt – „Hilfst du mir?“\n5′ Tausch: Kind bietet von sich aus Hilfe an\n7′ Kind legt fünften Stein auf den Turm\nMuss: gemeinsam aufräumen, Hilfe anbieten. Kann: Arbeit nach Farben teilen. Wird es knapp: kurz aufräumen, Wochenplan aufs Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant reconstruit vite les quatre cubes\n1′ Les deux rangent au panier, se partagent le travail – « Toi, tu prends les cubes rouges, moi les bleus. »\n3′ L’adulte fait tomber des cubes, demande de l’aide, remercie – « Tu m’aides ? »\n5′ On échange : l’enfant propose son aide de lui-même\n7′ L’enfant pose le cinquième cube sur la tour\nIndispensable : ranger ensemble, proposer son aide. Option : partager par couleurs. Serré : rangement bref, le plan sur la fiche."
+      }
     }
   },
   {
@@ -3423,6 +3463,14 @@
         "Et maintenant : la fête de la tour ! À quel jeu on joue ?"
       ],
       "wennEsKippt": "Si l’enfant ne se souvient plus d’un cube, l’adulte montre le geste et l’enfant l’imite. S’il nomme un cube difficile, l’adulte dit : « Celui-là est parfois difficile pour tout le monde – on continue à le travailler. » Si le temps presse, on ne fête qu’un seul jeu."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind baut als Baumeister den Turm Stein für Stein – „Zeig ihn mir, Stein für Stein.“\n1′ Kind zeigt je Stein Geste, sagt, was es kann\n4′ Kind zeigt leichtesten und schwersten Stein\n5′ Kind wählt Spiel, beide feiern kurze Runde mit allen Regeln – „Und jetzt: unser Wir-Fest!“\n7′ Kind legt größten Klotz als Wir-Stein obenauf\nMuss: Turm mit Gesten erklären, Wir-Stein. Kann: Fest-Spiel. Wird es knapp: Fest-Runde sehr kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant reconstruit la tour, cube après cube – « Montre-la-moi, cube après cube. »\n1′ Pour chaque cube : un geste, ce qu’il sait faire\n4′ L’enfant montre le plus facile et le plus difficile\n5′ L’enfant choisit un jeu : manche courte, toutes les règles – « Et maintenant : la fête de la tour ! »\n7′ L’enfant pose le plus grand cube : le cube « ensemble »\nIndispensable : expliquer la tour avec les gestes, cube « ensemble ». Option : le jeu de fête. Serré : manche de fête très courte."
+      }
     }
   },
   {

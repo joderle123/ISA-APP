@@ -517,6 +517,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Team-Puzzle: heute Teil gemeinsames Ziel\n1′ Runde 1: Turm aus zwölf Bausteinen, ohne Sprechen\n4′ Runde 2: Ziel vorher laut sagen, beim Bauen reden\n7′ Kind vergleicht beide Runden – „Was ist jetzt anders?“\n8′ Beide legen vier Team-Merkmale fest\nMuss: zwei Bau-Runden mit Sanduhr, Vergleich. Kann: Merkmale ausführlich. Wird es knapp: Merkmale kurz aus den Antworten."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le puzzle de l’équipe : le but commun\n1′ Tour 1 : douze cubes, deux minutes, sans parler\n4′ Tour 2 : dire le but, puis parler en construisant\n7′ L’enfant compare les deux tours – « Qu’est-ce qui est différent ? »\n8′ Ensemble : quatre signes d’une équipe forte\nIndispensable : les deux tours avec sablier, comparer. Option : détailler les signes. Serré : signes en bref, à partir des réponses."
+      }
     }
   },
   {
@@ -1739,6 +1747,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt fünf Rollen auf dem Blatt\n1′ Runde 1: Kind sammelt Ausflugs-Ideen, Fachkraft schreibt\n3′ Runde 2: Fachkraft plant, Kind ist Genau-Schauer\n5′ Runde 3: Kind schreibt Packliste, Fachkraft macht Mut\n7′ Kind sagt, welche Rolle leicht, welche ungewohnt war – „Niemand ist für immer nur eine Rolle.“\nMuss: drei Runden mit Rollenwechsel. Kann: Gespräch über Rollen, ohne persönliche Geschichten. Wird es knapp: Packliste kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre les cinq rôles sur la fiche\n1′ Tour 1 : idées de sortie de l’enfant, l’adulte note\n3′ Tour 2 : l’adulte organise, l’enfant en œil de lynx\n5′ Tour 3 : l’enfant écrit la liste, l’adulte motive\n7′ L’enfant dit : rôle facile, rôle inhabituel – « Personne n’est un seul rôle pour toujours. »\nIndispensable : trois tours avec changement de rôle. Option : parler des rôles, sans histoires personnelles. Serré : liste brève."
+      }
     }
   },
   {
@@ -3021,6 +3037,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide sammeln Spielideen mit Ja-und, alles aufschreiben – „Erst alles aufschreiben, nichts schlechtmachen.“\n4′ Auswahl mit drei Fragen: Ziel, machbar, alle dabei?\n6′ Fachkraft schlägt ungeliebte Idee vor\n7′ Kind widerspricht, ohne abzuwerten – „Ich sehe das anders, weil … Wie wäre es, wenn …?“\nMuss: Ja-und-Sammeln, Auswahl mit drei Fragen. Kann: Widerspruch mehrmals üben. Wird es knapp: drei Minuten sammeln."
+      },
+      "fr": {
+        "aufbau": "0′ Idées de jeu pour la veillée, avec « Oui, et … » – « D’abord tout noter, ne rien critiquer. »\n4′ Choisir avec trois questions : but, faisable, tous ?\n6′ L’adulte propose une idée que l’enfant n’aime pas\n7′ L’enfant dit son désaccord sans démolir – « Je vois ça autrement, parce que … Et si on … ? »\nIndispensable : idées avec « Oui, et … », choix avec trois questions. Option : répéter la phrase de désaccord. Serré : collecte en trois minutes."
+      }
     }
   },
   {
@@ -4283,6 +4307,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide planen Pausenturnier, teilen vier Aufgaben auf\n2′ Absprache Wer, Was, Bis wann, mit vier Fragen prüfen\n5′ Jeder führt seinen Teil kurz in Stichworten aus\n6′ Fachkraft sagt rechtzeitig Bescheid, Kind fragt nach Bedarf\n8′ Tausch: Kind übt den Bescheid-Satz – „Ich schaffe … bis … nicht. Ich brauche …“\nMuss: Absprache mit drei Teilen, Bescheid-Satz in beide Richtungen. Kann: Teile ausführen. Wird es knapp: Aufgaben nur benennen."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux organisent un tournoi, partagent quatre tâches\n2′ Accord qui, quoi, pour quand, vérifié en quatre questions\n5′ Chacun exécute brièvement sa part en mots-clés\n6′ L’adulte prévient à temps, l’enfant demande le besoin\n8′ On échange : l’enfant dit la phrase pour prévenir – « Je n’arriverai pas à … pour … J’ai besoin de … »\nIndispensable : accord en trois éléments, phrase pour prévenir dans les deux sens. Option : exécuter les parts. Serré : tâches juste nommées."
+      }
     }
   },
   {
@@ -5508,6 +5540,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Fehler-Plan: Stopp, sagen, was passiert ist, fragen – „Was brauchen wir jetzt?“\n2′ Fachkraft vergaß etwas; Kind: erst Vorwurf, dann Problem-Satz\n4′ Beide spüren, wie sich jede Antwort anfühlt\n5′ Kind plant Situation dieser Woche: wer, wann, wo, Satz\n7′ Zweimal durchspielen: ruhig, dann schwierige Antwort\nMuss: Fehler-Plan, Vorwurf gegen Problem-Satz, Plan zweimal spielen. Kann: echte statt erfundene Situation. Wird es knapp: ein Durchgang mit schwieriger Antwort."
+      },
+      "fr": {
+        "aufbau": "0′ Plan en trois étapes : stop, dire, demander – « De quoi avons-nous besoin maintenant ? »\n2′ L’adulte a oublié ; l’enfant : reproche, puis phrase-problème\n4′ Les deux sentent l’effet de chaque phrase\n5′ L’enfant prépare : qui, quand, où, quelle phrase\n7′ Deux passages : calme, puis réponse difficile\nIndispensable : le plan en trois étapes, reproche contre phrase-problème, jouer deux fois. Option : situation vraie plutôt qu’inventée. Serré : un passage avec la réponse difficile."
+      }
     }
   },
   {
@@ -7290,6 +7330,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Klassenfrühstück planen: Ziel, Rollen, Ja-und-Ideen, Absprachen\n4′ Fachkraft hat ihren Teil vergessen, Kind nutzt Fehler-Plan\n5′ Rückblick: leichtes Teil, Übungsteil, heutiger Beitrag\n7′ Kind und Fachkraft nennen je ein Beispiel – „Was hast du heute eingebracht? Nenn ein Beispiel.“\n9′ Team-Karte mit Ich-Satz und wer hilft\nMuss: Klassenfrühstück mit Fehler-Plan, Beitrag mit Beispiel. Kann: Team-Karte ausführlich. Wird es knapp: Frühstück in drei Minuten."
+      },
+      "fr": {
+        "aufbau": "0′ Petit-déjeuner de classe : but, rôles, idées, accords\n4′ L’adulte a « oublié sa part », l’enfant applique le plan\n5′ Bilan : pièce facile, à travailler, part du jour\n7′ L’enfant et l’adulte donnent chacun un exemple – « Qu’as-tu apporté aujourd’hui ? Donne un exemple. »\n9′ Carte d’équipe : phrase en « je », qui aide\nIndispensable : petit-déjeuner avec le plan, sa part avec un exemple. Option : carte d’équipe détaillée. Serré : petit-déjeuner en trois minutes."
+      }
     }
   },
   {
