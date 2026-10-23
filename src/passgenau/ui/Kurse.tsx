@@ -12,6 +12,7 @@ import { ZeichnungSvg } from '../../blatt/ZeichnungSvg'
 import { bildZeichnung, palette } from '../../blatt/zeichnung'
 import { dauerVorgabe } from './Wege'
 import { HilfenBlock } from './Stundenbild'
+import { pdfOeffnen } from './anzeige'
 
 const BAENDER: [number, number][] = [
   [4, 6],
@@ -173,6 +174,26 @@ function KursSeite({ k, zurueck }: { k: K.KursInfo; zurueck: () => void }) {
     pg.setOhneKind(true)
     setWarte(true)
   }
+  // Kursmappe direkt (23.10.2026: „fertiger Kurs, wo man loslegen kann“): ohne Kind und ohne Planen die ganze Mappe als PDF –
+  // Deckblatt, je Sitzung Startseite, Blatt und Karten, hinten die Zusatzinfo
+  const [druckt, setDruckt] = useState(false)
+  const mappe = async () => {
+    if (!pg.katalog || druckt) return
+    setDruckt(true)
+    pg.hinweisZeigen(sprache === 'fr' ? 'Le dossier du cours est en préparation …' : 'Die Kursmappe wird erstellt …', 'info')
+    try {
+      const profil = K.ohneKindProfil({ alterJahre: Math.round((k.von + k.bis) / 2), sprache, ziele: k.eldib.slice(0, 2) })
+      const plan = K.planen(pg.katalog, profil, auftrag(k.eldib.slice(0, 2), dauerVorgabe(profil)), pg.vor, { plaene: [], ereignisse: [] })
+      const blob = await K.pdfFolge(pg.katalog, profil, plan, { sprache, warum: false })
+      const name = `Kursmappe-${k.id.replace(/^kurs-/, '')}-${sprache}.pdf`
+      const pdf = pdfOeffnen(blob, name)
+      pg.hinweisZeigen(pdf.geoeffnet ? 'Die Kursmappe ist fertig.' : 'Die Kursmappe ist fertig – der Browser hat sie heruntergeladen.', 'ok', { label: 'PDF öffnen', aktion: () => void pdf.nochmal() }, 12000, name)
+    } catch {
+      pg.hinweisZeigen('Die Kursmappe ließ sich nicht erstellen. Bitte noch einmal versuchen.', 'warn')
+    } finally {
+      setDruckt(false)
+    }
+  }
   const sp = sprache
   return (
     <>
@@ -205,6 +226,10 @@ function KursSeite({ k, zurueck }: { k: K.KursInfo; zurueck: () => void }) {
             <button type="button" className="pg-btn primaer gross" onClick={starten}>
               <Ic n="pfeil" />
               {mitKind ? `Kurs mit ${pg.kind.dat} starten` : 'Kurs als Folge planen'}
+            </button>
+            <button type="button" className="pg-btn gross" onClick={() => void mappe()} disabled={druckt} aria-busy={druckt}>
+              <Ic n="datei" />
+              {druckt ? 'Kursmappe wird erstellt …' : 'Kursmappe als PDF'}
             </button>
             <Seg label="Sprache der Blätter" wert={sprache} optionen={[['de', 'Deutsch'], ['fr', 'Français']]} onWahl={setSprache} />
           </div>
