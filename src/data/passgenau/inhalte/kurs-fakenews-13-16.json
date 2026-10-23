@@ -469,7 +469,7 @@
    "de": {
     "haken": "14-mal schnell auf den Tisch tippen: „Klassenchat 5C – 14 neue Nachrichten.“ Dann die Eilmeldung in Alarm-Stimme und die Frage „Weiterleiten, behalten oder löschen?“ – bevor irgendetwas erklärt wird. Die Hand antwortet schneller als der Kopf; genau darum geht es.",
     "vorbereitung": [
-     "Schnellstart (2 Min.): Blatt und Kartenbogen drucken, Satzkarten ausschneiden oder auf dem Bogen zeigen",
+     "Schnellstart (2 Min.): drucken, nur die acht Satzkarten in Streifen schneiden (sie werden geschoben), Rest ungeschnitten",
      "Chat-Karte einmal halblaut lesen (Übersetzungen stehen in Klammern)",
      "Mappe bereitlegen – den Schlüsselbund zeichnet der oder die Jugendliche beim Abschluss selbst"
     ],
@@ -544,7 +544,7 @@
    "fr": {
     "haken": "Tapoter 14 fois vite sur la table : « Chat de la 5C – 14 nouveaux messages. » Puis l’alerte d’une voix pressée et la question « Transférer, garder ou supprimer ? » – avant toute explication. La main répond plus vite que la tête ; c’est justement le sujet.",
     "vorbereitung": [
-     "Démarrage rapide (2 min) : imprimer fiche et planche, découper les cartes-phrases ou les montrer sur la planche",
+     "Démarrage rapide (2 min) : imprimer, découper en bandes les huit cartes-phrases (on les pousse), le reste non découpé",
      "Lire une fois la carte du chat à mi-voix (traductions entre parenthèses)",
      "Préparer le dossier – le ou la jeune y dessine le trousseau pendant le rituel de fin"
     ],
@@ -946,7 +946,7 @@
    "de": {
     "haken": "14-mal schnell auf den Tisch tippen: „Klassenchat 5C – 14 neue Nachrichten.“ Dann die Eilmeldung in Alarm-Stimme und die Frage „Weiterleiten, behalten oder löschen?“ – bevor irgendetwas erklärt wird. Die Hand antwortet schneller als der Kopf; genau darum geht es.",
     "vorbereitung": [
-     "Schnellstart (2 Min.): Blatt und Kartenbogen drucken, Satzkarten ausschneiden oder auf dem Bogen zeigen",
+     "Schnellstart (2 Min.): drucken, nur die acht Satzkarten in Streifen schneiden (sie werden geschoben), Rest ungeschnitten",
      "Chat-Karte einmal halblaut lesen (Übersetzungen stehen in Klammern)",
      "Mappe bereitlegen – den Schlüsselbund zeichnet der oder die Jugendliche beim Abschluss selbst"
     ],
@@ -1021,7 +1021,7 @@
    "fr": {
     "haken": "Tapoter 14 fois vite sur la table : « Chat de la 5C – 14 nouveaux messages. » Puis l’alerte d’une voix pressée et la question « Transférer, garder ou supprimer ? » – avant toute explication. La main répond plus vite que la tête ; c’est justement le sujet.",
     "vorbereitung": [
-     "Démarrage rapide (2 min) : imprimer fiche et planche, découper les cartes-phrases ou les montrer sur la planche",
+     "Démarrage rapide (2 min) : imprimer, découper en bandes les huit cartes-phrases (on les pousse), le reste non découpé",
      "Lire une fois la carte du chat à mi-voix (traductions entre parenthèses)",
      "Préparer le dossier – le ou la jeune y dessine le trousseau pendant le rituel de fin"
     ],
@@ -3418,9 +3418,9 @@
    "de": {
     "haken": "Eine Münze fliegt: „Wer erkennt KI-Gesichter besser – du oder die Münze?“ Die ehrliche Antwort (ungefähr gleich gut) überrascht fast alle. Dann rückwärts gehen, bis das Bild anfängt – wer bei „Belgien, Juni 2019“ stehen bleibt, braucht keine Erklärung mehr.",
     "vorbereitung": [
-     "Schnellstart (2 Min.): Blatt und Kartenbogen drucken, Bild- und Fundstellen-Karten ausschneiden",
+     "Schnellstart (4 Min.): Bild- und Fundstellen-Karten in Streifen schneiden; die Stapel-Felder bleiben auf dem Bogen",
      "Klebeband (ca. 2 m) auf den Boden, Zettel „heute“ und „früher“ an die Enden",
-     "Eine Münze; Stapel-Zettel bereitlegen"
+     "Eine Münze"
     ],
     "aufbau": "Spickzettel: 0′ Münze – „Du oder die Münze?“ · 2′ Beweisstück A – „Welche zwei Spuren stecken im Bild?“ · 4′ Fundstellen legen, rückwärts gehen – „Wo fängt es an?“ · 7′ B und C · 11′ drei Stapel · 12′ Merksatz · 13–20′ Blatt: Akte, Extra-Bild, Spur. Muss: Münze, A und B am Strahl. Kann: C nur erzählen.",
     "karten": [
@@ -3429,19 +3429,21 @@
       "karten": [
        "A – Bagger vor Betonrampe, dahinter Straßenbahn, grüne Kastanien, Männer in T-Shirts. Nele: „Nicht unsere Rampe – unsere hat unten keinen Absatz.“",
        "B – „Bauplan“ mit Gemeinde-Logo: „PARKING 120 PLAZEN“. Eine Straße endet im Fluss, Datum 31.11.",
-       "C – Linas Foto: Bauzaun, Schild „Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen.“ Laub am Boden, Leute in Jacken."
+       "C – Linas Foto: Bauzaun, Schild „Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen.“ Laub, Jacken."
       ]
      },
      {
       "titel": "Fundstellen (gemischt, für den Zeitstrahl)",
       "karten": [
-       "A · belgische Lokalseite · Juni 2019 · „Bauarbeiten am Rampenpark“",
+       "A · belgische Lokalseite · Juni 2019",
        "A · Baustellen-Forum · März 2021",
        "A · @nordstad.news24 · vorgestern 21:12",
-       "B · @nordstad.news24 · gestern 21:40 · „Plan durchgesickert!“",
-       "B · Website der Gemeinde: 0 Treffer",
-       "C · Lina · heute 16:10 · eigenes Foto",
-       "C · Website der Gemeinde · heute · dasselbe Schild"
+       "B · @nordstad.news24 · gestern 21:40",
+       "B · Vereins-Chat · gestern 22:05 · „Stimmt das?!“",
+       "B · Gemeinde-Website · Suche heute: 0 Treffer",
+       "C · Lina · heute 16:10",
+       "C · Klassenchat 5C · heute 16:25",
+       "C · Gemeinde-Website · heute · dasselbe Schild"
       ]
      },
      {
@@ -3493,9 +3495,9 @@
    "fr": {
     "haken": "Une pièce vole : « Qui reconnaît mieux les visages IA – toi ou la pièce ? » La réponse honnête (à peu près pareil) surprend presque tout le monde. Puis on recule jusqu’au début de l’image – qui s’arrête à « Belgique, juin 2019 » n’a plus besoin d’explication.",
     "vorbereitung": [
-     "Démarrage rapide (2 min) : imprimer la fiche et la planche, découper les cartes-images et les traces",
+     "Démarrage rapide (4 min) : découper en bandes cartes-images et traces ; les tas restent sur la planche",
      "Ruban adhésif (env. 2 m) au sol, papiers « aujourd’hui » et « avant » aux deux bouts",
-     "Une pièce ; préparer les papiers des tas"
+     "Une pièce de monnaie"
     ],
     "aufbau": "Antisèche : 0′ la pièce – « Toi ou la pièce ? » · 2′ pièce A – « Quels deux indices dans l’image ? » · 4′ poser les traces, reculer – « Où ça commence ? » · 7′ B et C · 11′ trois tas · 12′ phrase-clé · 13–20′ fiche : dossier, image en plus, piste. Indispensable : pièce, A et B sur la frise. En option : C racontée.",
     "karten": [
@@ -3504,18 +3506,20 @@
       "karten": [
        "A – Pelleteuse devant une rampe ; derrière, un tram, marronniers verts, hommes en t-shirt. Nele : « Pas notre rampe – la nôtre n’a pas de marche en bas. »",
        "B – « Plan » avec le logo de la commune : « PARKING 120 PLAZEN ». Une rue finit dans la rivière, date : 31.11.",
-       "C – Photo de Lina : barrière, panneau « Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen. » Feuilles au sol, gens en veste."
+       "C – Photo de Lina : barrière, panneau « Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen. » Feuilles, vestes."
       ]
      },
      {
       "titel": "Traces trouvées (mélangées, pour la frise)",
       "karten": [
-       "A · site local belge · juin 2019 · « Travaux au parc à rampes »",
+       "A · site local belge · juin 2019",
        "A · forum de chantiers · mars 2021",
        "A · @nordstad.news24 · avant-hier 21:12",
-       "B · @nordstad.news24 · hier 21:40 · « Le plan a fuité ! »",
-       "B · site de la commune : 0 résultat",
-       "C · Lina · aujourd’hui 16:10 · sa photo",
+       "B · @nordstad.news24 · hier 21:40",
+       "B · chat du club · hier 22:05 · « C’est vrai ?! »",
+       "B · site de la commune · recherche aujourd’hui : 0 résultat",
+       "C · Lina · aujourd’hui 16:10",
+       "C · chat de la 5C · aujourd’hui 16:25",
        "C · site de la commune · aujourd’hui · même panneau"
       ]
      },
@@ -3950,9 +3954,9 @@
    "de": {
     "haken": "Eine Münze fliegt: „Wer erkennt KI-Gesichter besser – du oder die Münze?“ Die ehrliche Antwort (ungefähr gleich gut) überrascht fast alle. Dann rückwärts gehen, bis das Bild anfängt – wer bei „Belgien, Juni 2019“ stehen bleibt, braucht keine Erklärung mehr.",
     "vorbereitung": [
-     "Schnellstart (2 Min.): Blatt und Kartenbogen drucken, Bild- und Fundstellen-Karten ausschneiden",
+     "Schnellstart (4 Min.): Bild- und Fundstellen-Karten in Streifen schneiden; die Stapel-Felder bleiben auf dem Bogen",
      "Klebeband (ca. 2 m) auf den Boden, Zettel „heute“ und „früher“ an die Enden",
-     "Eine Münze; Stapel-Zettel bereitlegen"
+     "Eine Münze"
     ],
     "aufbau": "Spickzettel: 0′ Münze – „Du oder die Münze?“ · 2′ Beweisstück A – „Welche zwei Spuren stecken im Bild?“ · 4′ Fundstellen legen, rückwärts gehen – „Wo fängt es an?“ · 7′ B und C · 11′ drei Stapel · 12′ Merksatz · 13–20′ Blatt: Akte, Extra-Bild, Spur. Muss: Münze, A und B am Strahl. Kann: C nur erzählen.",
     "karten": [
@@ -3961,19 +3965,21 @@
       "karten": [
        "A – Bagger vor Betonrampe, dahinter Straßenbahn, grüne Kastanien, Männer in T-Shirts. Nele: „Nicht unsere Rampe – unsere hat unten keinen Absatz.“",
        "B – „Bauplan“ mit Gemeinde-Logo: „PARKING 120 PLAZEN“. Eine Straße endet im Fluss, Datum 31.11.",
-       "C – Linas Foto: Bauzaun, Schild „Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen.“ Laub am Boden, Leute in Jacken."
+       "C – Linas Foto: Bauzaun, Schild „Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen.“ Laub, Jacken."
       ]
      },
      {
       "titel": "Fundstellen (gemischt, für den Zeitstrahl)",
       "karten": [
-       "A · belgische Lokalseite · Juni 2019 · „Bauarbeiten am Rampenpark“",
+       "A · belgische Lokalseite · Juni 2019",
        "A · Baustellen-Forum · März 2021",
        "A · @nordstad.news24 · vorgestern 21:12",
-       "B · @nordstad.news24 · gestern 21:40 · „Plan durchgesickert!“",
-       "B · Website der Gemeinde: 0 Treffer",
-       "C · Lina · heute 16:10 · eigenes Foto",
-       "C · Website der Gemeinde · heute · dasselbe Schild"
+       "B · @nordstad.news24 · gestern 21:40",
+       "B · Vereins-Chat · gestern 22:05 · „Stimmt das?!“",
+       "B · Gemeinde-Website · Suche heute: 0 Treffer",
+       "C · Lina · heute 16:10",
+       "C · Klassenchat 5C · heute 16:25",
+       "C · Gemeinde-Website · heute · dasselbe Schild"
       ]
      },
      {
@@ -4025,9 +4031,9 @@
    "fr": {
     "haken": "Une pièce vole : « Qui reconnaît mieux les visages IA – toi ou la pièce ? » La réponse honnête (à peu près pareil) surprend presque tout le monde. Puis on recule jusqu’au début de l’image – qui s’arrête à « Belgique, juin 2019 » n’a plus besoin d’explication.",
     "vorbereitung": [
-     "Démarrage rapide (2 min) : imprimer la fiche et la planche, découper les cartes-images et les traces",
+     "Démarrage rapide (4 min) : découper en bandes cartes-images et traces ; les tas restent sur la planche",
      "Ruban adhésif (env. 2 m) au sol, papiers « aujourd’hui » et « avant » aux deux bouts",
-     "Une pièce ; préparer les papiers des tas"
+     "Une pièce de monnaie"
     ],
     "aufbau": "Antisèche : 0′ la pièce – « Toi ou la pièce ? » · 2′ pièce A – « Quels deux indices dans l’image ? » · 4′ poser les traces, reculer – « Où ça commence ? » · 7′ B et C · 11′ trois tas · 12′ phrase-clé · 13–20′ fiche : dossier, image en plus, piste. Indispensable : pièce, A et B sur la frise. En option : C racontée.",
     "karten": [
@@ -4036,18 +4042,20 @@
       "karten": [
        "A – Pelleteuse devant une rampe ; derrière, un tram, marronniers verts, hommes en t-shirt. Nele : « Pas notre rampe – la nôtre n’a pas de marche en bas. »",
        "B – « Plan » avec le logo de la commune : « PARKING 120 PLAZEN ». Une rue finit dans la rivière, date : 31.11.",
-       "C – Photo de Lina : barrière, panneau « Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen. » Feuilles au sol, gens en veste."
+       "C – Photo de Lina : barrière, panneau « Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen. » Feuilles, vestes."
       ]
      },
      {
       "titel": "Traces trouvées (mélangées, pour la frise)",
       "karten": [
-       "A · site local belge · juin 2019 · « Travaux au parc à rampes »",
+       "A · site local belge · juin 2019",
        "A · forum de chantiers · mars 2021",
        "A · @nordstad.news24 · avant-hier 21:12",
-       "B · @nordstad.news24 · hier 21:40 · « Le plan a fuité ! »",
-       "B · site de la commune : 0 résultat",
-       "C · Lina · aujourd’hui 16:10 · sa photo",
+       "B · @nordstad.news24 · hier 21:40",
+       "B · chat du club · hier 22:05 · « C’est vrai ?! »",
+       "B · site de la commune · recherche aujourd’hui : 0 résultat",
+       "C · Lina · aujourd’hui 16:10",
+       "C · chat de la 5C · aujourd’hui 16:25",
        "C · site de la commune · aujourd’hui · même panneau"
       ]
      },
@@ -4220,19 +4228,21 @@
       "karten": [
        "A – Bagger vor Betonrampe, dahinter Straßenbahn, grüne Kastanien, Männer in T-Shirts. Nele: „Nicht unsere Rampe – unsere hat unten keinen Absatz.“",
        "B – „Bauplan“ mit Gemeinde-Logo: „PARKING 120 PLAZEN“. Eine Straße endet im Fluss, Datum 31.11.",
-       "C – Linas Foto: Bauzaun, Schild „Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen.“ Laub am Boden, Leute in Jacken."
+       "C – Linas Foto: Bauzaun, Schild „Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen.“ Laub, Jacken."
       ]
      },
      {
       "titel": "Fundstellen (gemischt, für den Zeitstrahl)",
       "karten": [
-       "A · belgische Lokalseite · Juni 2019 · „Bauarbeiten am Rampenpark“",
+       "A · belgische Lokalseite · Juni 2019",
        "A · Baustellen-Forum · März 2021",
        "A · @nordstad.news24 · vorgestern 21:12",
-       "B · @nordstad.news24 · gestern 21:40 · „Plan durchgesickert!“",
-       "B · Website der Gemeinde: 0 Treffer",
-       "C · Lina · heute 16:10 · eigenes Foto",
-       "C · Website der Gemeinde · heute · dasselbe Schild"
+       "B · @nordstad.news24 · gestern 21:40",
+       "B · Vereins-Chat · gestern 22:05 · „Stimmt das?!“",
+       "B · Gemeinde-Website · Suche heute: 0 Treffer",
+       "C · Lina · heute 16:10",
+       "C · Klassenchat 5C · heute 16:25",
+       "C · Gemeinde-Website · heute · dasselbe Schild"
       ]
      },
      {
@@ -4294,18 +4304,20 @@
       "karten": [
        "A – Pelleteuse devant une rampe ; derrière, un tram, marronniers verts, hommes en t-shirt. Nele : « Pas notre rampe – la nôtre n’a pas de marche en bas. »",
        "B – « Plan » avec le logo de la commune : « PARKING 120 PLAZEN ». Une rue finit dans la rivière, date : 31.11.",
-       "C – Photo de Lina : barrière, panneau « Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen. » Feuilles au sol, gens en veste."
+       "C – Photo de Lina : barrière, panneau « Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen. » Feuilles, vestes."
       ]
      },
      {
       "titel": "Traces trouvées (mélangées, pour la frise)",
       "karten": [
-       "A · site local belge · juin 2019 · « Travaux au parc à rampes »",
+       "A · site local belge · juin 2019",
        "A · forum de chantiers · mars 2021",
        "A · @nordstad.news24 · avant-hier 21:12",
-       "B · @nordstad.news24 · hier 21:40 · « Le plan a fuité ! »",
-       "B · site de la commune : 0 résultat",
-       "C · Lina · aujourd’hui 16:10 · sa photo",
+       "B · @nordstad.news24 · hier 21:40",
+       "B · chat du club · hier 22:05 · « C’est vrai ?! »",
+       "B · site de la commune · recherche aujourd’hui : 0 résultat",
+       "C · Lina · aujourd’hui 16:10",
+       "C · chat de la 5C · aujourd’hui 16:25",
        "C · site de la commune · aujourd’hui · même panneau"
       ]
      },
@@ -4484,7 +4496,7 @@
       "karten": [
        "A – Bagger vor Betonrampe, dahinter Straßenbahn, grüne Kastanien, Männer in T-Shirts. Nele: „Nicht unsere Rampe – unsere hat unten keinen Absatz.“",
        "B – „Bauplan“ mit Gemeinde-Logo: „PARKING 120 PLAZEN“. Eine Straße endet im Fluss, Datum 31.11.",
-       "C – Linas Foto: Bauzaun, Schild „Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen.“ Laub am Boden, Leute in Jacken."
+       "C – Linas Foto: Bauzaun, Schild „Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen.“ Laub, Jacken."
       ]
      },
      {
@@ -4555,7 +4567,7 @@
       "karten": [
        "A – Pelleteuse devant une rampe ; derrière, un tram, marronniers verts, hommes en t-shirt. Nele : « Pas notre rampe – la nôtre n’a pas de marche en bas. »",
        "B – « Plan » avec le logo de la commune : « PARKING 120 PLAZEN ». Une rue finit dans la rivière, date : 31.11.",
-       "C – Photo de Lina : barrière, panneau « Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen. » Feuilles au sol, gens en veste."
+       "C – Photo de Lina : barrière, panneau « Skatepark wéinst Aarbechten zou – nei Rampen. 6 Wochen. » Feuilles, vestes."
       ]
      },
      {
@@ -6058,7 +6070,7 @@
    "titel": "Einzelkurs Echt jetzt?"
   },
   "titel": "Chat: Ein Satz, der die Kette bremst",
-  "text": "Die Fachkraft legt den Klassenchat der 5C als Karten untereinander wie auf einem Handy – Diogo auf Lëtzebuergesch: „Lina huet e Stage op der Gemeng gemaach. Déi léit fir déi.“, darunter „hahaha“ und „sérieux ??“ – und fragt: „Was sagst du Finn in zehn Sekunden?“ Dann wird der Chat gespielt: Die Fachkraft liest Diogo und Sara, Lina spielt niemand. Der oder die Jugendliche ist Finn oder Finns Coach und antwortet auf jede Nachricht mit einer der drei Zug-Karten – nicht weiterleiten, privat nachfragen, ein klarer Satz ohne das Gerücht zu wiederholen – und einem Satz dazu. Als Letztes überlegt er oder sie, was Finn Lina privat schreibt. Die Pause-Karte liegt sichtbar, am Ende heißt es „Rolle aus, Jacke aus“. Merksatz: „Ein Satz kann die Kette bremsen: Stimmt das? Woher hast du das?“",
+  "text": "Die Fachkraft legt den Klassenchat der 5C als Karten auf den Boden wie einen Handy-Bildschirm, darunter einen Streifen Klebeband: „Hier stoppt die Kette.“ Oben Diogo auf Lëtzebuergesch: „Lina huet e Stage op der Gemeng gemaach. Déi léit fir déi.“, darunter „hahaha“ und „sérieux ??“. Die Fachkraft liest Diogo und Sara, Lina spielt niemand. Der oder die Jugendliche steht davor als Finn oder Finns Coach, legt bei jeder Nachricht eine der drei Zug-Karten darunter – nicht weiterleiten, privat nachfragen, ein klarer Satz ohne das Gerücht – und spricht den Satz laut wie eine Sprachnachricht. Beim letzten Zug stellt er oder sie die Karte auf die Klebeband-Linie und sagt, was Finn Lina privat schreibt. Pause-Karte sichtbar, am Ende: „Rolle aus, Jacke aus“. Merksatz: „Ein Satz kann die Kette bremsen: Stimmt das? Woher hast du das?“",
   "sagen": [
    "Was sagst du Finn in den nächsten zehn Sekunden?",
    "Ich bin Diogo. Leg eine Zug-Karte und sag Finns Satz – ein Satz reicht. Die Pause-Karte gilt.",
@@ -6115,7 +6127,7 @@
   ],
   "material": [
    "karten",
-   "papier"
+   "klebeband"
   ],
   "ort": "raum",
   "werkzeug": {
@@ -6351,7 +6363,7 @@
   },
   "fr": {
    "titel": "Chat : la phrase qui freine la chaîne",
-   "text": "L’adulte pose le chat de la 5C en cartes l’une sous l’autre, comme sur un téléphone – Diogo en luxembourgeois : « Lina huet e Stage op der Gemeng gemaach. Déi léit fir déi. », en dessous « hahaha » et « sérieux ?? » – et demande : « Que dis-tu à Finn en dix secondes ? » Puis on joue le chat : l’adulte lit Diogo et Sara, personne ne joue Lina. Le ou la jeune est Finn ou le coach de Finn et répond à chaque message avec une des trois cartes-coups – ne pas transférer, demander en privé, une phrase claire sans répéter la rumeur – et une phrase. Pour finir, il ou elle réfléchit à ce que Finn écrit à Lina en privé. La carte pause est bien visible ; à la fin : « Fin du rôle, on tombe la veste. » Phrase-clé : « Une phrase peut freiner la chaîne : C’est vrai ? Tu tiens ça d’où ? »",
+   "text": "L’adulte pose le chat de la 5C en cartes au sol, comme un écran de téléphone, avec en dessous une bande de ruban adhésif : « Ici, la chaîne s’arrête. » En haut, Diogo en luxembourgeois : « Lina huet e Stage op der Gemeng gemaach. Déi léit fir déi. », en dessous « hahaha » et « sérieux ?? ». L’adulte lit Diogo et Sara, personne ne joue Lina. Le ou la jeune se tient devant, en Finn ou en coach, pose sous chaque message une des trois cartes-coups – ne pas transférer, demander en privé, une phrase claire sans la rumeur – et dit la phrase à voix haute comme un vocal. Au dernier coup, il ou elle pose la carte sur la ligne de ruban et dit ce que Finn écrit à Lina en privé. Carte pause visible ; à la fin : « Fin du rôle, on tombe la veste. » Phrase-clé : « Une phrase peut freiner la chaîne : C’est vrai ? Tu tiens ça d’où ? »",
    "sagen": [
     "Que dis-tu à Finn dans les dix prochaines secondes ?",
     "Je suis Diogo. Pose une carte-coup et dis la phrase de Finn – une phrase suffit. La carte pause compte.",
@@ -6370,11 +6382,11 @@
     "haken": "Ein Chat auf dem Tisch, Diogo auf Lëtzebuergesch, Finns Finger über „Weiterleiten“ – und die Frage: „Was sagst du Finn in zehn Sekunden?“ Jetzt geht es um Lina, nicht mehr um einen Skatepark.",
     "vorbereitung": [
      "Schnellstart (2 Min.): Blatt und Kartenbogen drucken, ungeschnitten hinlegen",
-     "Chat-Karten untereinander auf ein Blatt Papier legen (= Handy-Bildschirm)",
+     "Chat-Karten untereinander auf den Boden legen (= Handy-Bildschirm), darunter 50 cm Klebeband",
      "Zug-Karten und Pause-Karte daneben",
      "Die Karte „Nur für dich“ einmal lesen: Regie und „Wenn es ernst wird“"
     ],
-    "aufbau": "Spickzettel: 0′ Chat legen – „Was sagst du Finn in zehn Sekunden?“ · 2′ Chat-Spiel – „Ich bin Diogo. Dein Zug?“ · 8′ – „Was schreibt Finn Lina privat?“ · 10′ Rolle aus, Jacke aus, Alltagsfrage · 11′ Merksatz · 13–20′ Blatt: Plan, Hilfe-Nummern, Spur. Muss: Chat-Spiel und Plan. Kann: Lina-Nachricht.",
+    "aufbau": "Spickzettel: 0′ Chat auf den Boden – „Was sagst du Finn in zehn Sekunden?“ · 2′ Chat-Spiel im Stehen – „Ich bin Diogo. Dein Zug?“ · 8′ – „Was schreibt Finn Lina privat?“ · 10′ Rolle aus, Jacke aus, Alltagsfrage · 11′ Merksatz · 13–20′ Blatt: Plan, Hilfe-Nummern, Spur. Muss: Chat-Spiel und Plan. Kann: Lina-Nachricht.",
     "karten": [
      {
       "titel": "Chat-Karten der 5C (untereinander legen; Übersetzung in Klammern)",
@@ -6437,11 +6449,11 @@
     "haken": "Un chat sur la table, Diogo en luxembourgeois, le doigt de Finn au-dessus de « Transférer » – et la question : « Que dis-tu à Finn en dix secondes ? » Maintenant, il s’agit de Lina, plus d’un skatepark.",
     "vorbereitung": [
      "Démarrage rapide (2 min) : imprimer la fiche et la planche, poser sans découper",
-     "Poser les cartes du chat l’une sous l’autre sur une feuille (= écran de téléphone)",
+     "Poser les cartes du chat l’une sous l’autre au sol (= écran de téléphone), en dessous 50 cm de ruban adhésif",
      "Cartes-coups et carte pause à côté",
      "Lire une fois la carte « Pour l’adulte » : régie et « Si ça devient sérieux »"
     ],
-    "aufbau": "Antisèche : 0′ poser le chat – « Que dis-tu à Finn en dix secondes ? » · 2′ jeu du chat – « Je suis Diogo. Ton coup ? » · 8′ – « Qu’écrit Finn à Lina en privé ? » · 10′ fin du rôle, question du quotidien · 11′ phrase-clé · 13–20′ fiche : plan, numéros d’aide, piste. Indispensable : jeu du chat et plan. En option : message à Lina.",
+    "aufbau": "Antisèche : 0′ le chat au sol – « Que dis-tu à Finn en dix secondes ? » · 2′ jeu du chat, debout – « Je suis Diogo. Ton coup ? » · 8′ – « Qu’écrit Finn à Lina en privé ? » · 10′ fin du rôle, question du quotidien · 11′ phrase-clé · 13–20′ fiche : plan, numéros d’aide, piste. Indispensable : jeu du chat et plan. En option : message à Lina.",
     "karten": [
      {
       "titel": "Cartes du chat de la 5C (l’une sous l’autre ; traduction entre parenthèses)",
@@ -6513,7 +6525,7 @@
    "titel": "Einzelkurs Echt jetzt?"
   },
   "titel": "Chat: Ein Satz, der die Kette bremst",
-  "text": "Die Fachkraft legt den Klassenchat der 5C als Karten untereinander wie auf einem Handy – Diogo auf Lëtzebuergesch: „Lina huet e Stage op der Gemeng gemaach. Déi léit fir déi.“, darunter „hahaha“ und „sérieux ??“ – und fragt: „Was sagst du Finn in zehn Sekunden?“ Dann wird der Chat gespielt: Die Fachkraft liest Diogo und Sara, Lina spielt niemand. Der oder die Jugendliche ist Finn oder Finns Coach und antwortet auf jede Nachricht mit einer der drei Zug-Karten – nicht weiterleiten, privat nachfragen, ein klarer Satz ohne das Gerücht zu wiederholen – und einem Satz dazu. Als Letztes überlegt er oder sie, was Finn Lina privat schreibt. Die Pause-Karte liegt sichtbar, am Ende heißt es „Rolle aus, Jacke aus“. Merksatz: „Ein Satz kann die Kette bremsen: Stimmt das? Woher hast du das?“",
+  "text": "Die Fachkraft legt den Klassenchat der 5C als Karten auf den Boden wie einen Handy-Bildschirm, darunter einen Streifen Klebeband: „Hier stoppt die Kette.“ Oben Diogo auf Lëtzebuergesch: „Lina huet e Stage op der Gemeng gemaach. Déi léit fir déi.“, darunter „hahaha“ und „sérieux ??“. Die Fachkraft liest Diogo und Sara, Lina spielt niemand. Der oder die Jugendliche steht davor als Finn oder Finns Coach, legt bei jeder Nachricht eine der drei Zug-Karten darunter – nicht weiterleiten, privat nachfragen, ein klarer Satz ohne das Gerücht – und spricht den Satz laut wie eine Sprachnachricht. Beim letzten Zug stellt er oder sie die Karte auf die Klebeband-Linie und sagt, was Finn Lina privat schreibt. Pause-Karte sichtbar, am Ende: „Rolle aus, Jacke aus“. Merksatz: „Ein Satz kann die Kette bremsen: Stimmt das? Woher hast du das?“",
   "sagen": [
    "Was sagst du Finn in den nächsten zehn Sekunden?",
    "Ich bin Diogo. Leg eine Zug-Karte und sag Finns Satz – ein Satz reicht. Die Pause-Karte gilt.",
@@ -6570,7 +6582,7 @@
   ],
   "material": [
    "karten",
-   "papier"
+   "klebeband"
   ],
   "ort": "raum",
   "werkzeug": {
@@ -6802,7 +6814,7 @@
   },
   "fr": {
    "titel": "Chat : la phrase qui freine la chaîne",
-   "text": "L’adulte pose le chat de la 5C en cartes l’une sous l’autre, comme sur un téléphone – Diogo en luxembourgeois : « Lina huet e Stage op der Gemeng gemaach. Déi léit fir déi. », en dessous « hahaha » et « sérieux ?? » – et demande : « Que dis-tu à Finn en dix secondes ? » Puis on joue le chat : l’adulte lit Diogo et Sara, personne ne joue Lina. Le ou la jeune est Finn ou le coach de Finn et répond à chaque message avec une des trois cartes-coups – ne pas transférer, demander en privé, une phrase claire sans répéter la rumeur – et une phrase. Pour finir, il ou elle réfléchit à ce que Finn écrit à Lina en privé. La carte pause est bien visible ; à la fin : « Fin du rôle, on tombe la veste. » Phrase-clé : « Une phrase peut freiner la chaîne : C’est vrai ? Tu tiens ça d’où ? »",
+   "text": "L’adulte pose le chat de la 5C en cartes au sol, comme un écran de téléphone, avec en dessous une bande de ruban adhésif : « Ici, la chaîne s’arrête. » En haut, Diogo en luxembourgeois : « Lina huet e Stage op der Gemeng gemaach. Déi léit fir déi. », en dessous « hahaha » et « sérieux ?? ». L’adulte lit Diogo et Sara, personne ne joue Lina. Le ou la jeune se tient devant, en Finn ou en coach, pose sous chaque message une des trois cartes-coups – ne pas transférer, demander en privé, une phrase claire sans la rumeur – et dit la phrase à voix haute comme un vocal. Au dernier coup, il ou elle pose la carte sur la ligne de ruban et dit ce que Finn écrit à Lina en privé. Carte pause visible ; à la fin : « Fin du rôle, on tombe la veste. » Phrase-clé : « Une phrase peut freiner la chaîne : C’est vrai ? Tu tiens ça d’où ? »",
    "sagen": [
     "Que dis-tu à Finn dans les dix prochaines secondes ?",
     "Je suis Diogo. Pose une carte-coup et dis la phrase de Finn – une phrase suffit. La carte pause compte.",
@@ -6821,11 +6833,11 @@
     "haken": "Ein Chat auf dem Tisch, Diogo auf Lëtzebuergesch, Finns Finger über „Weiterleiten“ – und die Frage: „Was sagst du Finn in zehn Sekunden?“ Jetzt geht es um Lina, nicht mehr um einen Skatepark.",
     "vorbereitung": [
      "Schnellstart (2 Min.): Blatt und Kartenbogen drucken, ungeschnitten hinlegen",
-     "Chat-Karten untereinander auf ein Blatt Papier legen (= Handy-Bildschirm)",
+     "Chat-Karten untereinander auf den Boden legen (= Handy-Bildschirm), darunter 50 cm Klebeband",
      "Zug-Karten und Pause-Karte daneben",
      "Die Karte „Nur für dich“ einmal lesen: Regie und „Wenn es ernst wird“"
     ],
-    "aufbau": "Spickzettel: 0′ Chat legen – „Was sagst du Finn in zehn Sekunden?“ · 2′ Chat-Spiel – „Ich bin Diogo. Dein Zug?“ · 8′ – „Was schreibt Finn Lina privat?“ · 10′ Rolle aus, Jacke aus, Alltagsfrage · 11′ Merksatz · 13–20′ Blatt: Plan, Hilfe-Nummern, Spur. Muss: Chat-Spiel und Plan. Kann: Lina-Nachricht.",
+    "aufbau": "Spickzettel: 0′ Chat auf den Boden – „Was sagst du Finn in zehn Sekunden?“ · 2′ Chat-Spiel im Stehen – „Ich bin Diogo. Dein Zug?“ · 8′ – „Was schreibt Finn Lina privat?“ · 10′ Rolle aus, Jacke aus, Alltagsfrage · 11′ Merksatz · 13–20′ Blatt: Plan, Hilfe-Nummern, Spur. Muss: Chat-Spiel und Plan. Kann: Lina-Nachricht.",
     "karten": [
      {
       "titel": "Chat-Karten der 5C (untereinander legen; Übersetzung in Klammern)",
@@ -6888,11 +6900,11 @@
     "haken": "Un chat sur la table, Diogo en luxembourgeois, le doigt de Finn au-dessus de « Transférer » – et la question : « Que dis-tu à Finn en dix secondes ? » Maintenant, il s’agit de Lina, plus d’un skatepark.",
     "vorbereitung": [
      "Démarrage rapide (2 min) : imprimer la fiche et la planche, poser sans découper",
-     "Poser les cartes du chat l’une sous l’autre sur une feuille (= écran de téléphone)",
+     "Poser les cartes du chat l’une sous l’autre au sol (= écran de téléphone), en dessous 50 cm de ruban adhésif",
      "Cartes-coups et carte pause à côté",
      "Lire une fois la carte « Pour l’adulte » : régie et « Si ça devient sérieux »"
     ],
-    "aufbau": "Antisèche : 0′ poser le chat – « Que dis-tu à Finn en dix secondes ? » · 2′ jeu du chat – « Je suis Diogo. Ton coup ? » · 8′ – « Qu’écrit Finn à Lina en privé ? » · 10′ fin du rôle, question du quotidien · 11′ phrase-clé · 13–20′ fiche : plan, numéros d’aide, piste. Indispensable : jeu du chat et plan. En option : message à Lina.",
+    "aufbau": "Antisèche : 0′ le chat au sol – « Que dis-tu à Finn en dix secondes ? » · 2′ jeu du chat, debout – « Je suis Diogo. Ton coup ? » · 8′ – « Qu’écrit Finn à Lina en privé ? » · 10′ fin du rôle, question du quotidien · 11′ phrase-clé · 13–20′ fiche : plan, numéros d’aide, piste. Indispensable : jeu du chat et plan. En option : message à Lina.",
     "karten": [
      {
       "titel": "Cartes du chat de la 5C (l’une sous l’autre ; traduction entre parenthèses)",
@@ -7443,7 +7455,7 @@
    "titel": "Einzelkurs Echt jetzt?"
   },
   "titel": "Alle Schlüssel: Das Gespräch mit Pit",
-  "text": "Die Fachkraft legt fünf Gesprächs-Steine wie eine Brücke zwischen zwei Stühle, Finn und Pit: fragen statt feuern, zuhören, Gemeinsames finden, eine Quelle und ein Angebot, die Tür offen lassen. Zu jedem Stein liegen zwei Satzkarten – eine öffnet, eine schließt. Der oder die Jugendliche ist Finns Coach, wählt für jeden Stein eine Karte oder einen eigenen Satz und spricht ihn als Finn oder lässt die Fachkraft sprechen. Die Fachkraft spielt Pit: Er blockt zuerst ab und wird ab dem zweiten Stein leiser, bei einer schließenden Karte macht er zu. Jeder Stein, der Pit bewegt hat, wandert auf seine Seite – die Brücke wächst sichtbar. Die Pause-Karte liegt sichtbar, nach der Szene steht die Fachkraft auf: „Ich bin wieder ich.“ Merksatz: „Erst fragen, dann ein passender Beleg – und die Tür offen lassen.“",
+  "text": "Die Fachkraft legt fünf Gesprächs-Steine wie eine Brücke zwischen zwei Stühle, Finn und Pit: fragen statt feuern, zuhören, Gemeinsames finden, eine Quelle und ein Angebot, die Tür offen lassen. Zu jedem Stein gibt es zwei Satzkarten – eine öffnet, eine schließt. Der oder die Jugendliche steht als Finns Coach hinter Finns Stuhl, wählt für jeden Stein eine Karte oder einen eigenen Satz und spricht ihn als Finn. Die Fachkraft spielt Pit: Er blockt zuerst ab, wird ab dem zweiten Stein leiser und macht bei einer schließenden Karte zu. Jeden Stein, der Pit bewegt hat, schiebt der oder die Jugendliche selbst auf Pits Seite – die Brücke wächst sichtbar. Pause-Karte sichtbar, danach steht die Fachkraft auf: „Ich bin wieder ich.“ Merksatz: „Erst fragen, dann ein passender Beleg – und die Tür offen lassen.“",
   "sagen": [
    "Du bist Finns Coach. Erster Stein: Welche Karte – oder welcher eigene Satz?",
    "Ich bin jetzt Pit – und ich mach es dir nicht leicht. Pause-Karte gilt.",
@@ -7590,7 +7602,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Jetzt löst du den Fall: Wer steckt hinter @nordstad.news24 – und warum? Denk an den Shop und an „Fast ausverkauft!“.",
+     "text": "Jetzt löst du den Fall: Wer steckt hinter @nordstad.news24 – und warum? Hol deine Blätter aus der Mappe: Die Spuren stehen in den letzten Zeilen.",
      "symbole": [
       "nachdenken",
       "schreiben"
@@ -7612,16 +7624,12 @@
      ]
     },
     {
-     "art": "karten",
-     "spalten": 2,
-     "hoehe": 120,
-     "fuellen": false,
-     "karten": [
-      {
-       "titel": "Fakten-Check-Ausweis",
-       "bild": "motiv:schluesselbund-5",
-       "text": "Behauptung · Puls · Bild · Story · Chat – Mein Schlüssel: ________ · Mein Satz: ______________ · Name: ________ · gültig ab heute"
-      }
+     "art": "vertrag",
+     "titel": "Fakten-Check-Ausweis",
+     "text": "Mein Schlüssel (einkreisen): Behauptung · Puls · Bild · Story · Chat\nMein Satz: ________________",
+     "unterschriften": [
+      "Name",
+      "gültig ab heute"
      ]
     },
     {
@@ -7701,7 +7709,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "À toi de résoudre l’affaire : qui se cache derrière @nordstad.news24 – et pourquoi ? Pense à la boutique et à « Presque épuisé ! ».",
+     "text": "À toi de résoudre l’affaire : qui se cache derrière @nordstad.news24 – et pourquoi ? Ressors tes fiches du dossier : les indices sont dans les dernières lignes.",
      "symbole": [
       "nachdenken",
       "schreiben"
@@ -7723,16 +7731,12 @@
      ]
     },
     {
-     "art": "karten",
-     "spalten": 2,
-     "hoehe": 120,
-     "fuellen": false,
-     "karten": [
-      {
-       "titel": "Ma carte de fact-checker",
-       "bild": "motiv:schluesselbund-5",
-       "text": "Affirmation · Pouls · Image · Récit · Chat – Ma clé : ________ · Ma phrase : ______________ · Nom : ________ · valable dès aujourd’hui"
-      }
+     "art": "vertrag",
+     "titel": "Ma carte de fact-checker",
+     "text": "Ma clé (à entourer) : Affirmation · Pouls · Image · Récit · Chat\nMa phrase : ________________",
+     "unterschriften": [
+      "Nom",
+      "valable dès aujourd’hui"
      ]
     },
     {
@@ -7775,7 +7779,7 @@
   },
   "fr": {
    "titel": "Toutes les clés : parler avec Pit",
-   "text": "L’adulte pose cinq pierres de conversation comme un pont entre deux chaises, Finn et Pit : questionner plutôt que mitrailler, écouter, trouver un terrain commun, une source et une proposition, laisser la porte ouverte. Pour chaque pierre, deux cartes-phrases – l’une ouvre, l’autre ferme. Le ou la jeune est le coach de Finn, choisit pour chaque pierre une carte ou sa propre phrase et la dit en Finn ou la laisse dire à l’adulte. L’adulte joue Pit : il se ferme d’abord, parle plus bas dès la deuxième pierre, et se ferme si la carte choisie ferme. Chaque pierre qui a touché Pit passe de son côté – le pont grandit à vue d’œil. La carte pause est bien visible ; après la scène, l’adulte se lève : « Je redeviens moi. » Phrase-clé : « D’abord questionner, puis une preuve qui répond – et laisser la porte ouverte. »",
+   "text": "L’adulte pose cinq pierres de conversation comme un pont entre deux chaises, Finn et Pit : questionner plutôt que mitrailler, écouter, trouver un terrain commun, une source et une proposition, laisser la porte ouverte. Pour chaque pierre, deux cartes-phrases – l’une ouvre, l’autre ferme. Le ou la jeune se tient debout derrière la chaise de Finn, en coach, choisit pour chaque pierre une carte ou sa propre phrase et la dit en Finn. L’adulte joue Pit : il se ferme d’abord, parle plus bas dès la deuxième pierre et se ferme si la carte choisie ferme. Chaque pierre qui a touché Pit, le ou la jeune la pousse lui-même ou elle-même de son côté – le pont grandit à vue d’œil. Carte pause visible ; après, l’adulte se lève : « Je redeviens moi. » Phrase-clé : « D’abord questionner, puis une preuve qui répond – et laisser la porte ouverte. »",
    "sagen": [
     "Tu es le coach de Finn. Première pierre : quelle carte – ou quelle phrase à toi ?",
     "Maintenant, je suis Pit – et je ne vais pas te faciliter la tâche. La carte pause compte.",
@@ -7793,11 +7797,11 @@
    "de": {
     "haken": "Eine Brücke aus fünf Steinen, auf jedem zwei mögliche Sätze – einer öffnet, einer schließt. Wer die falsche Karte legt, sieht Pit zumachen; wer die richtige legt, sieht die Brücke wachsen. Und danach endlich: Wer steckt hinter @nordstad.news24?",
     "vorbereitung": [
-     "Schnellstart (2 Min.): Blatt und Kartenbogen drucken, Steine und Satzkarten ausschneiden oder auf dem Bogen zeigen",
+     "Schnellstart (3 Min.): nur die sechs Steine ausschneiden (sie wandern); Satzkarten bleiben auf dem Bogen",
      "Zwei Stühle gegenüber, die Steine dazwischen, Pause-Karte sichtbar",
      "Die Karte „Nur für dich“ einmal lesen: Pits Rolle und das Ende"
     ],
-    "aufbau": "Spickzettel: 0′ Steine legen – „Du bist Finns Coach.“ · 2′ Szene mit Pit – „Ich mach es dir nicht leicht.“ · 9′ Rolle ab – „Ich bin wieder ich. Welcher Satz hat Pit bewegt?“ · 11′ Merksatz · 13′ Blatt: Akte – „Wer steckt dahinter?“ · 17′ Ende vorlesen · 19′ Ausweis. Muss: Szene (Stein 1, 2, 5), Akte, Ende. Kann: „Wer hat dich je überzeugt?“",
+    "aufbau": "Spickzettel: 0′ Steine legen – „Du bist Finns Coach. Stell dich hinter Finns Stuhl.“ · 1′ Szene, Stein 1–5 – „Ich mach es dir nicht leicht.“ · 7′ aufstehen, Rolle ab – „Welcher Satz hat Pit bewegt?“ · 9′ Blatt: Akte · 11′ Fall lösen – „Wer steckt dahinter?“ · 13′ Ende vorlesen · 14′ Hilfe-Nummern · 15′ Ausweis · bis 17′. Muss: Stein 1, 2, 5, Fall, Ende. Knapp: Ausweis beim Abschluss-Ritual.",
     "karten": [
      {
       "titel": "Gesprächs-Steine (nur die Namen) und Pause-Karte",
@@ -7830,7 +7834,7 @@
       "karten": [
        "Pit, Stein 1: „Das sieht doch jeder. Erst der Skatepark, dann das Jugendhaus.“ Ab Stein 2 leiser: „… Da bin ich, seit ich zehn bin. Da bin ich wer.“",
        "Stein 3–5: „Und warum glaubst du dann der Gemeinde?“ · „Hm. Vielleicht.“ · „Okay. Aber wenn das gelogen ist …“",
-       "Schließende Karte gewählt: Pit macht zu – „Siehst du? Du glaubst alles, was die Gemeinde sagt.“ Nach der Szene fragen: „Was ist passiert?“",
+       "Schließende Karte: Pit macht zu – „Siehst du? Du glaubst alles, was die Gemeinde sagt.“ Der Stein bleibt liegen, Finn versucht es mit der anderen Karte.",
        "Fakten-Feuer = viele Links und Vorwürfe auf einmal, ohne zu fragen. Ein Beleg zu Pits eigenem Grund („Der Plan hängt im Jugendhaus“) bringt ihn weiter.",
        "Lösung der Akte: ein anonymer Account, der mit Angst Klicks und Hoodies macht. Spuren: drei Wochen alt, Shop-Link, „Fast ausverkauft!“ am Morgen danach.",
        "Ende, gleich danach vorlesen: Sechs Wochen später ist der Skatepark offen. Die neue Bowl hat eine flache Einfahrt – Nele fährt sie als Erste. Pit ist da.",
@@ -7870,11 +7874,11 @@
    "fr": {
     "haken": "Un pont de cinq pierres, sur chacune deux phrases possibles – l’une ouvre, l’autre ferme. Qui pose la mauvaise carte voit Pit se fermer ; qui pose la bonne voit le pont grandir. Et ensuite, enfin : qui se cache derrière @nordstad.news24 ?",
     "vorbereitung": [
-     "Démarrage rapide (2 min) : imprimer fiche et planche, découper pierres et cartes-phrases ou les montrer",
+     "Démarrage rapide (3 min) : découper seulement les six pierres (elles bougent) ; cartes-phrases sur la planche",
      "Deux chaises face à face, les pierres entre les deux, carte pause visible",
      "Lire une fois la carte « Pour l’adulte » : le rôle de Pit et la fin"
     ],
-    "aufbau": "Antisèche : 0′ poser les pierres – « Tu es le coach de Finn. » · 2′ scène avec Pit – « Je ne vais pas te faciliter la tâche. » · 9′ quitter le rôle – « Je redeviens moi. Quelle phrase a touché Pit ? » · 11′ phrase-clé · 13′ fiche : dossier – « Qui se cache derrière ? » · 17′ lire la fin · 19′ carte. Indispensable : scène (pierres 1, 2, 5), dossier, fin.",
+    "aufbau": "Antisèche : 0′ poser les pierres – « Tu es le coach : debout derrière la chaise de Finn. » · 1′ scène, pierres 1–5 · 7′ se lever, quitter le rôle – « Quelle phrase a touché Pit ? » · 9′ fiche : dossier · 11′ résoudre – « Qui est derrière ? » · 13′ lire la fin · 14′ numéros d’aide · 15′ carte · jusqu’à 17′. Indispensable : pierres 1, 2, 5, affaire, fin. Si ça presse : carte au rituel de fin.",
     "karten": [
      {
       "titel": "Pierres de conversation (seulement les noms) et carte pause",
@@ -7907,7 +7911,7 @@
       "karten": [
        "Pit, pierre 1 : « Ça se voit ! D’abord le skatepark, puis la Maison des jeunes. » Pierre 2, plus bas : « J’y vais depuis mes dix ans. Là-bas, je compte. »",
        "Pierres 3 à 5 : « Et pourquoi tu crois la commune, alors ? » · « Hm. Peut-être. » · « D’accord. Mais si c’est un mensonge… »",
-       "Carte qui ferme : Pit se ferme – « Tu vois ? Tu crois tout ce que dit la commune. » Après la scène : « Qu’est-ce qui s’est passé ? »",
+       "Carte qui ferme : Pit se ferme – « Tu vois ? Tu crois tout ce que dit la commune. » La pierre reste là, Finn réessaie avec l’autre carte.",
        "Feu de faits = plein de liens et de reproches d’un coup. Une preuve qui répond à la raison de Pit (« le plan est à la Maison des jeunes ») le fait avancer.",
        "Solution : un compte anonyme qui fait des clics et vend des sweats avec la peur. Indices : trois semaines, lien boutique, « Presque épuisé ! » le lendemain.",
        "Fin, à lire juste après : six semaines plus tard, le skatepark rouvre. Le nouveau bowl a une entrée en pente douce – Nele le descend la première. Pit est là.",
@@ -7953,7 +7957,7 @@
    "titel": "Einzelkurs Echt jetzt?"
   },
   "titel": "Alle Schlüssel: Das Gespräch mit Pit",
-  "text": "Die Fachkraft legt fünf Gesprächs-Steine wie eine Brücke zwischen zwei Stühle, Finn und Pit: fragen statt feuern, zuhören, Gemeinsames finden, eine Quelle und ein Angebot, die Tür offen lassen. Zu jedem Stein liegen zwei Satzkarten – eine öffnet, eine schließt. Der oder die Jugendliche ist Finns Coach, wählt für jeden Stein eine Karte oder einen eigenen Satz und spricht ihn als Finn oder lässt die Fachkraft sprechen. Die Fachkraft spielt Pit: Er blockt zuerst ab und wird ab dem zweiten Stein leiser, bei einer schließenden Karte macht er zu. Jeder Stein, der Pit bewegt hat, wandert auf seine Seite – die Brücke wächst sichtbar. Die Pause-Karte liegt sichtbar, nach der Szene steht die Fachkraft auf: „Ich bin wieder ich.“ Merksatz: „Erst fragen, dann ein passender Beleg – und die Tür offen lassen.“",
+  "text": "Die Fachkraft legt fünf Gesprächs-Steine wie eine Brücke zwischen zwei Stühle, Finn und Pit: fragen statt feuern, zuhören, Gemeinsames finden, eine Quelle und ein Angebot, die Tür offen lassen. Zu jedem Stein gibt es zwei Satzkarten – eine öffnet, eine schließt. Der oder die Jugendliche steht als Finns Coach hinter Finns Stuhl, wählt für jeden Stein eine Karte oder einen eigenen Satz und spricht ihn als Finn. Die Fachkraft spielt Pit: Er blockt zuerst ab, wird ab dem zweiten Stein leiser und macht bei einer schließenden Karte zu. Jeden Stein, der Pit bewegt hat, schiebt der oder die Jugendliche selbst auf Pits Seite – die Brücke wächst sichtbar. Pause-Karte sichtbar, danach steht die Fachkraft auf: „Ich bin wieder ich.“ Merksatz: „Erst fragen, dann ein passender Beleg – und die Tür offen lassen.“",
   "sagen": [
    "Du bist Finns Coach. Erster Stein: Welche Karte – oder welcher eigene Satz?",
    "Ich bin jetzt Pit – und ich mach es dir nicht leicht. Pause-Karte gilt.",
@@ -8100,7 +8104,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Jetzt löst du den Fall: Wer steckt hinter @nordstad.news24 – und warum? Denk an den Shop und an „Fast ausverkauft!“. Kreuz an.",
+     "text": "Jetzt löst du den Fall: Wer steckt hinter @nordstad.news24 – und warum? Hol deine Blätter aus der Mappe: Die Spuren stehen in den letzten Zeilen. Kreuz an.",
      "symbole": [
       "ankreuzen"
      ]
@@ -8111,7 +8115,7 @@
       "jemand von der Gemeinde",
       "jemand, der mit der Angst Hoodies verkauft",
       "ein Bot",
-      "Pit"
+      "eine echte Zeitung"
      ],
      "spalten": 2,
      "frei": 1
@@ -8124,16 +8128,12 @@
      ]
     },
     {
-     "art": "karten",
-     "spalten": 2,
-     "hoehe": 120,
-     "fuellen": false,
-     "karten": [
-      {
-       "titel": "Fakten-Check-Ausweis",
-       "bild": "motiv:schluesselbund-5",
-       "text": "Behauptung · Puls · Bild · Story · Chat – Mein Schlüssel: ________ · Mein Satz: ______________ · Name: ________ · gültig ab heute"
-      }
+     "art": "vertrag",
+     "titel": "Fakten-Check-Ausweis",
+     "text": "Mein Schlüssel (einkreisen): Behauptung · Puls · Bild · Story · Chat\nMein Satz: ________________",
+     "unterschriften": [
+      "Name",
+      "gültig ab heute"
      ]
     },
     {
@@ -8213,7 +8213,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "À toi de résoudre l’affaire : qui se cache derrière @nordstad.news24 – et pourquoi ? Pense à la boutique et à « Presque épuisé ! ». Coche.",
+     "text": "À toi de résoudre l’affaire : qui se cache derrière @nordstad.news24 – et pourquoi ? Ressors tes fiches du dossier : les indices sont dans les dernières lignes. Coche.",
      "symbole": [
       "ankreuzen"
      ]
@@ -8224,7 +8224,7 @@
       "quelqu’un de la commune",
       "quelqu’un qui vend des sweats grâce à la peur",
       "un bot",
-      "Pit"
+      "un vrai journal"
      ],
      "spalten": 2,
      "frei": 1
@@ -8237,16 +8237,12 @@
      ]
     },
     {
-     "art": "karten",
-     "spalten": 2,
-     "hoehe": 120,
-     "fuellen": false,
-     "karten": [
-      {
-       "titel": "Ma carte de fact-checker",
-       "bild": "motiv:schluesselbund-5",
-       "text": "Affirmation · Pouls · Image · Récit · Chat – Ma clé : ________ · Ma phrase : ______________ · Nom : ________ · valable dès aujourd’hui"
-      }
+     "art": "vertrag",
+     "titel": "Ma carte de fact-checker",
+     "text": "Ma clé (à entourer) : Affirmation · Pouls · Image · Récit · Chat\nMa phrase : ________________",
+     "unterschriften": [
+      "Nom",
+      "valable dès aujourd’hui"
      ]
     },
     {
@@ -8289,7 +8285,7 @@
   },
   "fr": {
    "titel": "Toutes les clés : parler avec Pit",
-   "text": "L’adulte pose cinq pierres de conversation comme un pont entre deux chaises, Finn et Pit : questionner plutôt que mitrailler, écouter, trouver un terrain commun, une source et une proposition, laisser la porte ouverte. Pour chaque pierre, deux cartes-phrases – l’une ouvre, l’autre ferme. Le ou la jeune est le coach de Finn, choisit pour chaque pierre une carte ou sa propre phrase et la dit en Finn ou la laisse dire à l’adulte. L’adulte joue Pit : il se ferme d’abord, parle plus bas dès la deuxième pierre, et se ferme si la carte choisie ferme. Chaque pierre qui a touché Pit passe de son côté – le pont grandit à vue d’œil. La carte pause est bien visible ; après la scène, l’adulte se lève : « Je redeviens moi. » Phrase-clé : « D’abord questionner, puis une preuve qui répond – et laisser la porte ouverte. »",
+   "text": "L’adulte pose cinq pierres de conversation comme un pont entre deux chaises, Finn et Pit : questionner plutôt que mitrailler, écouter, trouver un terrain commun, une source et une proposition, laisser la porte ouverte. Pour chaque pierre, deux cartes-phrases – l’une ouvre, l’autre ferme. Le ou la jeune se tient debout derrière la chaise de Finn, en coach, choisit pour chaque pierre une carte ou sa propre phrase et la dit en Finn. L’adulte joue Pit : il se ferme d’abord, parle plus bas dès la deuxième pierre et se ferme si la carte choisie ferme. Chaque pierre qui a touché Pit, le ou la jeune la pousse lui-même ou elle-même de son côté – le pont grandit à vue d’œil. Carte pause visible ; après, l’adulte se lève : « Je redeviens moi. » Phrase-clé : « D’abord questionner, puis une preuve qui répond – et laisser la porte ouverte. »",
    "sagen": [
     "Tu es le coach de Finn. Première pierre : quelle carte – ou quelle phrase à toi ?",
     "Maintenant, je suis Pit – et je ne vais pas te faciliter la tâche. La carte pause compte.",
@@ -8307,11 +8303,11 @@
    "de": {
     "haken": "Eine Brücke aus fünf Steinen, auf jedem zwei mögliche Sätze – einer öffnet, einer schließt. Wer die falsche Karte legt, sieht Pit zumachen; wer die richtige legt, sieht die Brücke wachsen. Und danach endlich: Wer steckt hinter @nordstad.news24?",
     "vorbereitung": [
-     "Schnellstart (2 Min.): Blatt und Kartenbogen drucken, Steine und Satzkarten ausschneiden oder auf dem Bogen zeigen",
+     "Schnellstart (3 Min.): nur die sechs Steine ausschneiden (sie wandern); Satzkarten bleiben auf dem Bogen",
      "Zwei Stühle gegenüber, die Steine dazwischen, Pause-Karte sichtbar",
      "Die Karte „Nur für dich“ einmal lesen: Pits Rolle und das Ende"
     ],
-    "aufbau": "Spickzettel: 0′ Steine legen – „Du bist Finns Coach.“ · 2′ Szene mit Pit – „Ich mach es dir nicht leicht.“ · 9′ Rolle ab – „Ich bin wieder ich. Welcher Satz hat Pit bewegt?“ · 11′ Merksatz · 13′ Blatt: Akte – „Wer steckt dahinter?“ · 17′ Ende vorlesen · 19′ Ausweis. Muss: Szene (Stein 1, 2, 5), Akte, Ende. Kann: „Wer hat dich je überzeugt?“",
+    "aufbau": "Spickzettel: 0′ Steine legen – „Du bist Finns Coach. Stell dich hinter Finns Stuhl.“ · 1′ Szene, Stein 1–5 – „Ich mach es dir nicht leicht.“ · 7′ aufstehen, Rolle ab – „Welcher Satz hat Pit bewegt?“ · 9′ Blatt: Akte · 11′ Fall lösen – „Wer steckt dahinter?“ · 13′ Ende vorlesen · 14′ Hilfe-Nummern · 15′ Ausweis · bis 17′. Muss: Stein 1, 2, 5, Fall, Ende. Knapp: Ausweis beim Abschluss-Ritual.",
     "karten": [
      {
       "titel": "Gesprächs-Steine (nur die Namen) und Pause-Karte",
@@ -8344,7 +8340,7 @@
       "karten": [
        "Pit, Stein 1: „Das sieht doch jeder. Erst der Skatepark, dann das Jugendhaus.“ Ab Stein 2 leiser: „… Da bin ich, seit ich zehn bin. Da bin ich wer.“",
        "Stein 3–5: „Und warum glaubst du dann der Gemeinde?“ · „Hm. Vielleicht.“ · „Okay. Aber wenn das gelogen ist …“",
-       "Schließende Karte gewählt: Pit macht zu – „Siehst du? Du glaubst alles, was die Gemeinde sagt.“ Nach der Szene fragen: „Was ist passiert?“",
+       "Schließende Karte: Pit macht zu – „Siehst du? Du glaubst alles, was die Gemeinde sagt.“ Der Stein bleibt liegen, Finn versucht es mit der anderen Karte.",
        "Fakten-Feuer = viele Links und Vorwürfe auf einmal, ohne zu fragen. Ein Beleg zu Pits eigenem Grund („Der Plan hängt im Jugendhaus“) bringt ihn weiter.",
        "Lösung der Akte: ein anonymer Account, der mit Angst Klicks und Hoodies macht. Spuren: drei Wochen alt, Shop-Link, „Fast ausverkauft!“ am Morgen danach.",
        "Ende, gleich danach vorlesen: Sechs Wochen später ist der Skatepark offen. Die neue Bowl hat eine flache Einfahrt – Nele fährt sie als Erste. Pit ist da.",
@@ -8384,11 +8380,11 @@
    "fr": {
     "haken": "Un pont de cinq pierres, sur chacune deux phrases possibles – l’une ouvre, l’autre ferme. Qui pose la mauvaise carte voit Pit se fermer ; qui pose la bonne voit le pont grandir. Et ensuite, enfin : qui se cache derrière @nordstad.news24 ?",
     "vorbereitung": [
-     "Démarrage rapide (2 min) : imprimer fiche et planche, découper pierres et cartes-phrases ou les montrer",
+     "Démarrage rapide (3 min) : découper seulement les six pierres (elles bougent) ; cartes-phrases sur la planche",
      "Deux chaises face à face, les pierres entre les deux, carte pause visible",
      "Lire une fois la carte « Pour l’adulte » : le rôle de Pit et la fin"
     ],
-    "aufbau": "Antisèche : 0′ poser les pierres – « Tu es le coach de Finn. » · 2′ scène avec Pit – « Je ne vais pas te faciliter la tâche. » · 9′ quitter le rôle – « Je redeviens moi. Quelle phrase a touché Pit ? » · 11′ phrase-clé · 13′ fiche : dossier – « Qui se cache derrière ? » · 17′ lire la fin · 19′ carte. Indispensable : scène (pierres 1, 2, 5), dossier, fin.",
+    "aufbau": "Antisèche : 0′ poser les pierres – « Tu es le coach : debout derrière la chaise de Finn. » · 1′ scène, pierres 1–5 · 7′ se lever, quitter le rôle – « Quelle phrase a touché Pit ? » · 9′ fiche : dossier · 11′ résoudre – « Qui est derrière ? » · 13′ lire la fin · 14′ numéros d’aide · 15′ carte · jusqu’à 17′. Indispensable : pierres 1, 2, 5, affaire, fin. Si ça presse : carte au rituel de fin.",
     "karten": [
      {
       "titel": "Pierres de conversation (seulement les noms) et carte pause",
@@ -8421,7 +8417,7 @@
       "karten": [
        "Pit, pierre 1 : « Ça se voit ! D’abord le skatepark, puis la Maison des jeunes. » Pierre 2, plus bas : « J’y vais depuis mes dix ans. Là-bas, je compte. »",
        "Pierres 3 à 5 : « Et pourquoi tu crois la commune, alors ? » · « Hm. Peut-être. » · « D’accord. Mais si c’est un mensonge… »",
-       "Carte qui ferme : Pit se ferme – « Tu vois ? Tu crois tout ce que dit la commune. » Après la scène : « Qu’est-ce qui s’est passé ? »",
+       "Carte qui ferme : Pit se ferme – « Tu vois ? Tu crois tout ce que dit la commune. » La pierre reste là, Finn réessaie avec l’autre carte.",
        "Feu de faits = plein de liens et de reproches d’un coup. Une preuve qui répond à la raison de Pit (« le plan est à la Maison des jeunes ») le fait avancer.",
        "Solution : un compte anonyme qui fait des clics et vend des sweats avec la peur. Indices : trois semaines, lien boutique, « Presque épuisé ! » le lendemain.",
        "Fin, à lire juste après : six semaines plus tard, le skatepark rouvre. Le nouveau bowl a une entrée en pente douce – Nele le descend la première. Pit est là.",
@@ -8609,7 +8605,7 @@
       "karten": [
        "Pit, Stein 1: „Das sieht doch jeder. Erst der Skatepark, dann das Jugendhaus.“ Ab Stein 2 leiser: „… Da bin ich, seit ich zehn bin. Da bin ich wer.“",
        "Stein 3–5: „Und warum glaubst du dann der Gemeinde?“ · „Hm. Vielleicht.“ · „Okay. Aber wenn das gelogen ist …“",
-       "Schließende Karte gewählt: Pit macht zu – „Siehst du? Du glaubst alles, was die Gemeinde sagt.“ Nach der Szene fragen: „Was ist passiert?“",
+       "Schließende Karte: Pit macht zu – „Siehst du? Du glaubst alles, was die Gemeinde sagt.“ Der Stein bleibt liegen, Finn versucht es mit der anderen Karte.",
        "Fakten-Feuer = viele Links und Vorwürfe auf einmal, ohne zu fragen. Ein Beleg zu Pits eigenem Grund („Der Plan hängt im Jugendhaus“) bringt ihn weiter.",
        "Lösung der Akte: ein anonymer Account, der mit Angst Klicks und Hoodies macht. Spuren: drei Wochen alt, Shop-Link, „Fast ausverkauft!“ am Morgen danach.",
        "Ende, gleich danach vorlesen: Sechs Wochen später ist der Skatepark offen. Die neue Bowl hat eine flache Einfahrt – Nele fährt sie als Erste. Pit ist da.",
@@ -8686,7 +8682,7 @@
       "karten": [
        "Pit, pierre 1 : « Ça se voit ! D’abord le skatepark, puis la Maison des jeunes. » Pierre 2, plus bas : « J’y vais depuis mes dix ans. Là-bas, je compte. »",
        "Pierres 3 à 5 : « Et pourquoi tu crois la commune, alors ? » · « Hm. Peut-être. » · « D’accord. Mais si c’est un mensonge… »",
-       "Carte qui ferme : Pit se ferme – « Tu vois ? Tu crois tout ce que dit la commune. » Après la scène : « Qu’est-ce qui s’est passé ? »",
+       "Carte qui ferme : Pit se ferme – « Tu vois ? Tu crois tout ce que dit la commune. » La pierre reste là, Finn réessaie avec l’autre carte.",
        "Feu de faits = plein de liens et de reproches d’un coup. Une preuve qui répond à la raison de Pit (« le plan est à la Maison des jeunes ») le fait avancer.",
        "Solution : un compte anonyme qui fait des clics et vend des sweats avec la peur. Indices : trois semaines, lien boutique, « Presque épuisé ! » le lendemain.",
        "Fin, à lire juste après : six semaines plus tard, le skatepark rouvre. Le nouveau bowl a une entrée en pente douce – Nele le descend la première. Pit est là.",
@@ -8871,7 +8867,7 @@
       "karten": [
        "Pit, Stein 1: „Das sieht doch jeder. Erst der Skatepark, dann das Jugendhaus.“ Ab Stein 2 leiser: „… Da bin ich, seit ich zehn bin. Da bin ich wer.“",
        "Stein 3–5: „Und warum glaubst du dann der Gemeinde?“ · „Hm. Vielleicht.“ · „Okay. Aber wenn das gelogen ist …“",
-       "Schließende Karte gewählt: Pit macht zu – „Siehst du? Du glaubst alles, was die Gemeinde sagt.“ Nach der Szene fragen: „Was ist passiert?“",
+       "Schließende Karte: Pit macht zu – „Siehst du? Du glaubst alles, was die Gemeinde sagt.“ Der Stein bleibt liegen, Finn versucht es mit der anderen Karte.",
        "Fakten-Feuer = viele Links und Vorwürfe auf einmal, ohne zu fragen. Ein Beleg zu Pits eigenem Grund („Der Plan hängt im Jugendhaus“) bringt ihn weiter.",
        "Lösung der Akte: ein anonymer Account, der mit Angst Klicks und Hoodies macht. Spuren: drei Wochen alt, Shop-Link, „Fast ausverkauft!“ am Morgen danach.",
        "Ende, gleich danach vorlesen: Sechs Wochen später ist der Skatepark offen. Die neue Bowl hat eine flache Einfahrt – Nele fährt sie als Erste. Pit ist da.",
@@ -8947,7 +8943,7 @@
       "karten": [
        "Pit, pierre 1 : « Ça se voit ! D’abord le skatepark, puis la Maison des jeunes. » Pierre 2, plus bas : « J’y vais depuis mes dix ans. Là-bas, je compte. »",
        "Pierres 3 à 5 : « Et pourquoi tu crois la commune, alors ? » · « Hm. Peut-être. » · « D’accord. Mais si c’est un mensonge… »",
-       "Carte qui ferme : Pit se ferme – « Tu vois ? Tu crois tout ce que dit la commune. » Après la scène : « Qu’est-ce qui s’est passé ? »",
+       "Carte qui ferme : Pit se ferme – « Tu vois ? Tu crois tout ce que dit la commune. » La pierre reste là, Finn réessaie avec l’autre carte.",
        "Feu de faits = plein de liens et de reproches d’un coup. Une preuve qui répond à la raison de Pit (« le plan est à la Maison des jeunes ») le fait avancer.",
        "Solution : un compte anonyme qui fait des clics et vend des sweats avec la peur. Indices : trois semaines, lien boutique, « Presque épuisé ! » le lendemain.",
        "Fin, à lire juste après : six semaines plus tard, le skatepark rouvre. Le nouveau bowl a une entrée en pente douce – Nele le descend la première. Pit est là.",
