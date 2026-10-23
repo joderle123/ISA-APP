@@ -8329,5 +8329,103 @@
         "nicht": "Ne pas poser de questions sur l’origine, le passeport, la famille ou la « vraie » langue, n’interdire ni ne dévaloriser aucune langue et ne jamais présenter un enfant comme exemple de « son pays »."
       }
     }
+  },
+  "kurs-selbstfuersorge-10-12": {
+    "name": {
+      "de": "Das Feuer hüten",
+      "fr": "Veiller sur le feu"
+    },
+    "welt": {
+      "de": "Kehlen (Kielen), westlich der Hauptstadt: Hinter der Maison relais neben der Grundschule steht im Garten eine Feuerschale aus Gusseisen. Donnerstags nachmittags – dann ist keine Schule – trifft sich dort der Feierkrees (Feier heißt auf Lëtzebuergesch Feuer) mit Gusty, Erzieher und freiwilliger Feuerwehrmann: Er zündet an, er löscht, die Kinder hüten das Feuer dazwischen. In sechs Wochen ist Feierowend für die ganze Maison relais, und der Feierkrees soll das Feuer den ganzen Nachmittag hüten. Doch bei den dreien brennt selbst gerade wenig: Rafaela (11; Portugiesisch, Lëtzebuergesch, Französisch) fährt Rollstuhl, hilft allen bei allem, sagt zu jeder Bitte Ja und will nie die sein, der geholfen wird – zuletzt hat sie Fränz angefaucht; Fränz (12; Lëtzebuergesch, Deutsch, Französisch) ist Torwart und beschimpft sich nach jedem Fehler selbst, lauter als jeder andere; Hamza (11; Arabisch, Französisch, Lëtzebuergesch) kommt noch, sitzt aber am Rand, macht nichts mehr, was ihm früher Freude gemacht hat, und ist morgens kaum wach. Gusty macht das Kind zum Feuerhüter-Coach: Es lernt Griff für Griff, was ein Feuer braucht – Glut prüfen, Holz nachlegen, Luft lassen, sanft pusten, Windschutz –, probiert jeden Griff zuerst am eigenen Körper aus und findet aus Spuren selbst heraus, warum Hamzas Feuer fast aus ist und warum Rafaela Hilfe ablehnt. Am Feierowend brennt die Schale – nicht perfekt, aber keiner der drei hütet sein Feuer mehr allein.",
+      "fr": "Kehlen (Kielen), à l’ouest de la capitale : derrière la maison relais, à côté de l’école fondamentale, il y a dans le jardin un brasero en fonte. Le jeudi après-midi – il n’y a pas école – s’y retrouve le Feierkrees (en luxembourgeois, Feier veut dire feu) avec Gusty, éducateur et pompier volontaire : il allume, il éteint, et entre les deux, les enfants gardent le feu. Dans six semaines, c’est le Feierowend pour toute la maison relais, et le Feierkrees doit garder le feu tout l’après-midi. Mais les trois ne brûlent plus beaucoup eux-mêmes : Rafaela (11 ans ; portugais, luxembourgeois, français) est en fauteuil roulant, aide tout le monde pour tout, dit oui à chaque demande et ne veut jamais être celle qu’on aide – elle vient d’envoyer promener Fränz ; Fränz (12 ans ; luxembourgeois, allemand, français) est gardien de but et se crie dessus après chaque erreur, plus fort que tous les autres ; Hamza (11 ans ; arabe, français, luxembourgeois) vient encore, mais reste au bord, ne fait plus rien de ce qui lui plaisait et a du mal à se réveiller le matin. Gusty fait de l’enfant le coach des gardiens du feu : geste après geste, il apprend ce dont un feu a besoin – regarder la braise, remettre du bois, laisser de l’air, souffler doucement, mettre les mains autour –, essaie chaque geste d’abord sur lui-même et découvre seul, à partir d’indices, pourquoi le feu de Hamza est presque éteint et pourquoi Rafaela refuse l’aide. Au Feierowend, le brasero brûle – pas parfaitement, mais aucun des trois ne garde plus son feu tout seul."
+    },
+    "de": {
+      "warum": "Die Dramaturgie folgt dem Ziel „merken – auftanken – schützen“ und gibt jedem Griff ein Bild aus echter Feuer-Physik (Holz, Luft, Wärme). Treffen 1: Frühzeichen wahrnehmen; ein Puls-Versuch macht Körpersignale spürbar. Treffen 2: Verhaltensaktivierung kindgerecht – kleine, angenehme, machbare Tätigkeiten planen, statt auf Lust zu warten (Lewinsohn, 1974; bei Kindern und Jugendlichen vielversprechend, aber noch wenig untersucht: Martin & Oliver, 2019); Schlaf als größtes Scheit: 9–12 Stunden für 6- bis 12-Jährige (Paruthi et al., 2016); Bildschirme im Bett gehen mit späterem Einschlafen und kürzerem Schlaf einher (Hale & Guan, 2015) – welcher Grund am meisten zählt, ist offen. Treffen 3: „Nein, danke“ und „Später“ als Fertigkeit nach Behavioral Skills Training – erklären, vormachen, üben, Rückmeldung (Miltenberger, 2008; SAFE-Kriterien, Durlak et al., 2011). Treffen 4: Selbstmitgefühl in drei Teilen – bemerken, „das passiert anderen auch“, freundlich mit sich reden (Neff, 2003); bei Jugendlichen geht mehr Selbstmitgefühl mit weniger Belastung einher (Meta-Analyse aus Querschnittsstudien, r = −0,55; ein Zusammenhang, keine belegte Wirkung: Marsh et al., 2018). Treffen 5: Hilfe annehmen fällt jungen Menschen oft schwer, auch weil sie es allein schaffen wollen (Rickwood et al., 2005); darum bestimmt das Kind selbst, welche Hilfe es will, und plant eine echte Situation dieser Woche. Treffen 6: Rückblick und eigene Feuer-Karte. Gusty gibt dem Kind ab dem ersten Treffen die Coach-Rolle; die Spuren setzt es selbst zusammen.",
+      "achtung": [
+        "Kein echtes Feuer im Raum: Papierflamme, Karten und Hände reichen. In der Geschichte zündet und löscht nur Gusty.",
+        "Nichts ausfragen: nicht, wann das Kind schläft, was es isst oder was zu Hause los ist. Eigene Beispiele nur freiwillig; die Beispiele kommen von Rafaela, Fränz und Hamza.",
+        "Keine Diät-, Gewichts- oder Figur-Themen: Bewegung zählt als Anzündholz und Freude, nie als Leistung oder Kalorien.",
+        "Erschöpfung, Lustlosigkeit oder Traurigkeit über Wochen nie deuten oder benennen: mit Leitung und I-EBS/ESEB sprechen und den Eltern eine Abklärung beim Kinderarzt empfehlen; im Lycée SePAS. Kopf- und Bauchweh sind echt, nie „Ausrede“.",
+        "Nein sagen hat Grenzen: Schule, Sicherheit und Regeln kann man nicht absagen – dann gehen „Kann ich später?“ oder „Hilfst du mir?“. Wird ein Kind gedrängt, bedroht oder angefasst, ist das kein Übungsfall: Nein sagen, weggehen, Hilfe holen.",
+        "Selbstmitgefühl ist kein „positiv denken“ und kein Schönreden: Schwierigkeiten werden ernst genommen. Keine Wirkversprechen.",
+        "Rafaelas Rollstuhl: kein Mitleid, kein Heldentum – „Erst fragen, dann helfen“ gilt für alle. Hört ein Kind harte Sätze oft von anderen, ist das kein Fall zum Pusten: ernst nehmen, Leitung informieren.",
+        "Krise: Sagt ein Kind, es will nicht mehr leben, oder zeigt es Verletzungen: direkt fragen („Denkst du daran, dich umzubringen?“), bleiben, ruhig nachfragen, nicht allein lassen, akute Gefahr 112; heute noch Maison-relais-Leitung, Lehrkraft, Eltern (nicht bei Gewalt zu Hause); danach Schulkomitee, I-EBS/ESEB; im Lycée SePAS. KJT 116 111 (Mo–Sa); nachts und sonntags 112/113 oder SOS Détresse 45 45 45; Gewalt: Helpline 2060 1060 (rund um die Uhr); OKAJU 28 37 36 35.",
+        "Keine Vergleiche, die Armut berühren: Scheite ohne Geld (Ball, Zeichnen, Freunde treffen, früher schlafen) sind immer dabei."
+      ]
+    },
+    "fr": {
+      "warum": "La dramaturgie suit l’objectif « remarquer – recharger – protéger » et donne à chaque geste une image tirée de la vraie physique du feu (bois, air, chaleur). Rencontre 1 : repérer les signes précoces ; un essai du pouls rend les signaux du corps sensibles. Rencontre 2 : activation comportementale adaptée à l’enfant – prévoir de petites activités agréables et faisables au lieu d’attendre l’envie (Lewinsohn, 1974 ; prometteur chez les enfants et les jeunes, mais encore peu étudié : Martin & Oliver, 2019) ; le sommeil comme plus grosse bûche : 9 à 12 heures entre 6 et 12 ans (Paruthi et al., 2016) ; écrans au lit, coucher plus tardif et nuits plus courtes vont ensemble (Hale & Guan, 2015) – quelle raison compte le plus reste ouvert. Rencontre 3 : « Non, merci » et « Plus tard » comme compétence selon le Behavioral Skills Training – expliquer, montrer, s’exercer, retour (Miltenberger, 2008 ; critères SAFE, Durlak et al., 2011). Rencontre 4 : l’autocompassion en trois parties – remarquer, « ça arrive aux autres aussi », se parler gentiment (Neff, 2003) ; chez les jeunes, plus d’autocompassion va avec moins de détresse (méta-analyse d’études transversales, r = −0,55 ; un lien, pas un effet prouvé : Marsh et al., 2018). Rencontre 5 : accepter de l’aide est souvent difficile pour les jeunes, aussi parce qu’ils veulent y arriver seuls (Rickwood et al., 2005) ; l’enfant décide donc lui-même quelle aide il veut et prévoit une vraie situation de la semaine. Rencontre 6 : bilan et carte du feu personnelle. Gusty donne à l’enfant le rôle de coach dès la première rencontre ; les indices, il les assemble lui-même.",
+      "achtung": [
+        "Pas de vrai feu dans la salle : flamme en papier, cartes et mains suffisent. Dans l’histoire, seul Gusty allume et éteint.",
+        "Ne rien demander : ni quand l’enfant dort, ni ce qu’il mange, ni ce qui se passe à la maison. Exemples personnels seulement s’il le veut ; les exemples viennent de Rafaela, Fränz et Hamza.",
+        "Pas de régime, de poids ni de silhouette : le mouvement compte comme petit bois et comme plaisir, jamais comme performance ou calories.",
+        "Épuisement, manque d’envie ou tristesse depuis des semaines : ne jamais interpréter ni nommer ; en parler à la direction et à l’I-EBS/ESEB, conseiller aux parents de consulter le pédiatre ; au lycée, SePAS. Maux de tête et de ventre sont réels, jamais une « excuse ».",
+        "Dire non a des limites : école, sécurité et règles ne se refusent pas – alors « Je peux plus tard ? » ou « Tu m’aides ? ». Un enfant poussé, menacé ou touché : ce n’est pas un exercice – dire non, partir, chercher de l’aide.",
+        "L’autocompassion n’est ni « pensée positive » ni embellissement : les difficultés sont prises au sérieux. Aucune promesse d’effet.",
+        "Le fauteuil de Rafaela : ni pitié ni héroïsme – « D’abord demander, puis aider » vaut pour tous. Si un enfant entend souvent des phrases dures de la part d’autres, ce n’est pas un cas pour souffler : prendre au sérieux, informer la direction.",
+        "Crise : un enfant dit qu’il ne veut plus vivre ou montre des blessures : demander directement (« Tu penses à te tuer ? »), rester, demander calmement, ne pas le laisser seul, danger immédiat 112 ; le jour même direction de la maison relais, enseignant, parents (pas en cas de violence à la maison) ; ensuite comité d’école, I-EBS/ESEB ; au lycée SePAS. KJT 116 111 (lun.–sam.) ; la nuit et le dimanche 112/113 ou SOS Détresse 45 45 45 ; violence : Helpline 2060 1060 (24 h/24) ; OKAJU 28 37 36 35.",
+        "Aucune comparaison qui touche à la pauvreté : des bûches sans argent (ballon, dessin, voir des amis, dormir plus tôt) sont toujours proposées."
+      ]
+    },
+    "quellen": [
+      "Lewinsohn, P. M. (1974): A behavioral approach to depression. In R. J. Friedman & M. M. Katz (Hrsg.), The psychology of depression: Contemporary theory and research (S. 157–178). New York: Wiley",
+      "Martin, F., & Oliver, T. (2019): Behavioral activation for children and adolescents: A systematic review of progress and promise. European Child & Adolescent Psychiatry, 28(4), 427–441",
+      "Paruthi, S., Brooks, L. J., D’Ambrosio, C. et al. (2016): Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786",
+      "Hale, L., & Guan, S. (2015): Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58",
+      "Miltenberger, R. G. (2008): Teaching safety skills to children: Prevention of firearm injury as an exemplar of best practice in assessment, training, and generalization of safety skills. Behavior Analysis in Practice, 1(1), 30–36",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D., & Schellinger, K. B. (2011): The impact of enhancing students’ social and emotional learning. Child Development, 82(1), 405–432",
+      "Neff, K. D. (2003): Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101",
+      "Marsh, I. C., Chan, S. W. Y., & MacBeth, A. (2018): Self-compassion and psychological distress in adolescents – a meta-analysis. Mindfulness, 9(4), 1011–1027",
+      "Rickwood, D., Deane, F. P., Wilson, C. J., & Ciarrochi, J. (2005): Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251",
+      "Kanner-Jugendtelefon 116 111, Elterentelefon 8002 4444 (kjt.lu); Helpline Gewalt 20 60 10 60 (violence.lu, seit 1.5.2026 rund um die Uhr); SOS Détresse 45 45 45 (454545.lu); OKAJU 28 37 36 35 (okaju.lu) – geprüft Oktober 2026"
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Das Kind merkt früh, wenn seine Kraft nachlässt, plant kleine Dinge, die es auftanken (Schlaf, Bewegung, Freunde, Freude), sagt freundlich „Nein, danke“ oder „Später“, wenn es zu viel wird, redet nach Fehlern mit sich wie mit einem guten Freund und nimmt Hilfe an, die es selbst bestimmt.",
+        "stichwort": "Das Feuer hüten: Glut prüfen · Holz nachlegen · Luft lassen · Sanft pusten · Windschutz – „Holz, Luft, ein sanfter Atem – und Hände drum herum.“",
+        "sitzungen": [
+          "Wie brennt es gerade? – Glut prüfen: Frühzeichen in Körper, Laune, Verhalten; Puls-Versuch",
+          "Hamzas Feuer: sieben Spuren – Holz nachlegen: Schlaf (9–12 h), Bewegung, Freunde, Freude; erst tun, dann kommt oft die Lust",
+          "Rafaela sagt immer Ja – Luft lassen: ausatmen, prüfen, Ja / Nein danke / Später",
+          "Kaltes Wasser – Sanft pusten: bemerken, „das passiert anderen auch“, freundlich mit sich reden",
+          "Wind im Garten – Windschutz: Hilfe annehmen, die ich bestimme; Feuer-Plan für diese Woche",
+          "Feierowend in Kielen – das ganze Feuer, Griff-Folge, eigene Feuer-Karte und Urkunde"
+        ],
+        "helfen": [
+          "Kleine Pausen und Bewegung im Alltag erlauben und anbieten, ohne Diskussion – „Brauchst du kurz Luft?“",
+          "„Später“ als gute Antwort gelten lassen und selbst vormachen; Kinder, die immer helfen, auch einmal entlasten.",
+          "Nach Fehlern im Freundes-Ton reagieren („Das passiert jedem“) und Hilfe vorher anbieten statt einfach zu übernehmen: „Soll ich? Wie?“"
+        ],
+        "beobachten": [
+          "nennt früher, wenn es müde oder „leer“ ist, und holt sich eine kleine Pause oder Bewegung",
+          "sagt freundlich „Später“ oder „Nein, danke“, statt alles anzunehmen und dann zu explodieren",
+          "beschimpft sich nach Fehlern seltener und bittet um eine Hilfe, die es selbst benennt"
+        ],
+        "nicht": "Kein Ausfragen über Schlaf, Essen oder Zuhause, keine Bemerkungen zu Körper oder Gewicht – und Erschöpfung oder Traurigkeit nie als „Faulheit“ oder „Laune“ abtun."
+      },
+      "fr": {
+        "ziel": "L’enfant remarque tôt quand ses forces baissent, prévoit de petites choses qui le rechargent (sommeil, mouvement, amis, plaisir), dit gentiment « Non, merci » ou « Plus tard » quand c’est trop, se parle après une erreur comme à un bon ami et accepte une aide qu’il choisit lui-même.",
+        "stichwort": "Veiller sur le feu : regarder la braise · remettre du bois · laisser de l’air · souffler doucement · les mains autour – « Du bois, de l’air, un souffle doux – et des mains autour. »",
+        "sitzungen": [
+          "Ça brûle comment, là ? – regarder la braise : signes précoces dans le corps, l’humeur, le comportement ; essai du pouls",
+          "Le feu de Hamza : sept indices – remettre du bois : sommeil (9–12 h), mouvement, amis, plaisir ; faire d’abord, l’envie vient souvent après",
+          "Rafaela dit toujours oui – laisser de l’air : souffler, vérifier, oui / non merci / plus tard",
+          "De l’eau froide – souffler doucement : remarquer, « ça arrive aux autres aussi », se parler gentiment",
+          "Du vent dans le jardin – les mains autour : accepter une aide qu’on choisit ; plan pour la semaine",
+          "Feierowend à Kielen – le feu entier, suite des gestes, carte du feu personnelle et diplôme"
+        ],
+        "helfen": [
+          "Permettre et proposer de petites pauses et du mouvement au quotidien, sans discuter – « Tu as besoin d’un peu d’air ? »",
+          "Accepter « plus tard » comme une bonne réponse et le montrer soi-même ; décharger aussi les enfants qui aident toujours.",
+          "Après une erreur, réagir sur un ton d’ami (« Ça arrive à tout le monde ») et proposer l’aide avant de prendre la main : « Je peux ? Comment ? »"
+        ],
+        "beobachten": [
+          "dit plus tôt quand il est fatigué ou « vide » et prend une petite pause ou bouge un peu",
+          "dit gentiment « Plus tard » ou « Non, merci » au lieu de tout accepter puis d’exploser",
+          "se crie moins dessus après une erreur et demande une aide qu’il nomme lui-même"
+        ],
+        "nicht": "Pas de questions sur le sommeil, les repas ou la maison, aucune remarque sur le corps ou le poids – et ne jamais réduire l’épuisement ou la tristesse à de la « paresse » ou de la « mauvaise humeur »."
+      }
+    }
   }
 }
