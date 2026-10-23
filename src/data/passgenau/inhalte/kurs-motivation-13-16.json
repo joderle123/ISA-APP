@@ -124,7 +124,7 @@
    "titel": "Einzelkurs Null Bock – und dann?"
   },
   "titel": "Wichtig: Null Bock auf alles?",
-  "text": "Die Fachkraft liest Diogos Sprachnachricht vor: „Moien. Ech hu keen Bock. Op näischt. Seriö.“ (Null Bock. Auf nichts. Ernsthaft.) – „Glaubst du ihm?“ Diogo (15) spielt seit einem Bänderriss kein Futsal mehr im Jugendhaus Differdange; Aylin (14) baut im Rollstuhl am Mischpult Beats, Pol (16) trägt ein Hörgerät und sucht eine Lehrstelle als Mechatroniker. Der oder die Jugendliche reißt die sechs Spuren-Karten aus Diogos Woche ab und legt sie auf dem Boden in zwei Felder: „hier hat er Bock“ und „hier nicht“. An jede Bock-Spur kommt eine Wertekarte: Was ist ihm daran wichtig? Zum Schluss ein Tipp für Diogo in höchstens acht Wörtern; nur wenn nichts kommt, bietet die Fachkraft an: „Null Bock heißt oft: Ich sehe (noch) nicht, wofür.“",
+  "text": "Die Fachkraft liest Diogos Sprachnachricht vor: „Moien. Ech hu kee Bock. Op näischt. Seriö.“ (Null Bock. Auf nichts. Ernsthaft.) – „Glaubst du ihm?“ Diogo (15) spielt seit einem Bänderriss kein Futsal mehr im Jugendhaus Differdange; Aylin (14) baut im Rollstuhl am Mischpult Beats, Pol (16) trägt ein Hörgerät und sucht eine Lehrstelle als Mechatroniker. Der oder die Jugendliche reißt die sechs Spuren-Karten aus Diogos Woche ab und legt sie auf dem Boden in zwei Felder: „hier hat er Bock“ und „hier nicht“. An jede Bock-Spur kommt eine Wertekarte: Was ist ihm daran wichtig? Zum Schluss ein Tipp für Diogo in höchstens acht Wörtern; nur wenn nichts kommt, bietet die Fachkraft an: „Null Bock heißt oft: Ich sehe (noch) nicht, wofür.“",
   "sagen": [
    "Diogo sagt: null Bock auf nichts. Glaubst du ihm?",
    "Beweis es mir: Wo hat er doch Bock – und was ist ihm daran wichtig?",
@@ -277,13 +277,6 @@
      "frei": 1
     },
     {
-     "art": "satzanfaenge",
-     "items": [
-      "Mein Tipp für Diogo (8 Wörter):"
-     ],
-     "linien": 1
-    },
-    {
      "art": "aufgabe",
      "text": "Wenn du magst: Merk dir bis zum nächsten Mal einen Moment, in dem du Energie hast, ohne dass dich jemand antreibt.",
      "symbole": [
@@ -359,13 +352,6 @@
      "frei": 1
     },
     {
-     "art": "satzanfaenge",
-     "items": [
-      "Mon conseil pour Diogo (8 mots) :"
-     ],
-     "linien": 1
-    },
-    {
      "art": "aufgabe",
      "text": "Si tu veux : d’ici la prochaine fois, repère un moment où tu as de l’énergie sans que personne te pousse.",
      "symbole": [
@@ -375,7 +361,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Erst die N.-Akte: Die Fachkraft liest den Zettel wie eine Sprachnachricht vor, der oder die Jugendliche notiert einen ersten Verdacht – „keine Ahnung“ gilt auch. Dann die Wahl: drei Werte für sich oder für Diogo; geschrieben wird nur, was gezeigt werden soll. Den Tipp aus dem Gespräch schreibt er oder sie ab oder diktiert ihn. Der Auftrag ist ein Angebot.",
+     "text": "Erst die N.-Akte: Die Fachkraft liest den Zettel wie eine Sprachnachricht vor, der oder die Jugendliche notiert einen ersten Verdacht – „keine Ahnung“ gilt auch. Dann die Wahl: drei Werte für sich oder für Diogo; geschrieben wird nur, was gezeigt werden soll. Den Tipp schreibt die Fachkraft auf eine Karteikarte; die Karte kommt in die Mappe. Der Auftrag ist ein Angebot.",
      "sagen": [
       "Wer könnte N. sein?",
       "Für dich oder für Diogo?"
@@ -383,7 +369,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht ein Kreuz; die Fachkraft schreibt nach Diktat. Eigene Werte werden nicht vorgelesen."
     },
     "fr": {
-     "text": "D’abord le dossier N. : l’adulte lit le papier comme un message vocal, le ou la jeune note un premier soupçon – « aucune idée » compte aussi. Puis le choix : trois valeurs pour soi ou pour Diogo ; on n’écrit que ce qu’on veut montrer. Le conseil de la discussion, il ou elle le recopie ou le dicte. La proposition pour la prochaine fois reste libre.",
+     "text": "D’abord le dossier N. : l’adulte lit le papier comme un message vocal, le ou la jeune note un premier soupçon – « aucune idée » compte aussi. Puis le choix : trois valeurs pour soi ou pour Diogo ; on n’écrit que ce qu’on veut montrer. L’adulte note le conseil sur une fiche ; la fiche va dans le dossier. La proposition pour la prochaine fois reste libre.",
      "sagen": [
       "Qui pourrait être N. ?",
       "Pour toi ou pour Diogo ?"
@@ -394,7 +380,7 @@
   },
   "fr": {
    "titel": "Ce qui compte : la flemme de tout ?",
-   "text": "L’adulte lit le message vocal de Diogo : « Moien. Ech hu keen Bock. Op näischt. Seriö. » (J’ai la flemme. De tout. Sérieux.) – « Tu le crois ? » Diogo (15 ans) ne joue plus au futsal de la maison des jeunes de Differdange depuis une déchirure des ligaments ; Aylin (14 ans) fait des beats depuis son fauteuil roulant, Pol (16 ans) porte un appareil auditif et cherche un apprentissage de mécatronicien. Le ou la jeune détache les six cartes traces de la semaine de Diogo et les pose au sol dans deux zones : « là, il a envie » et « là, non ». Sur chaque trace « envie », une carte valeur : qu’est-ce qui compte pour lui là-dedans ? Pour finir, un conseil pour Diogo en huit mots au plus ; seulement si rien ne vient, l’adulte propose : « La flemme, souvent, c’est : je ne vois pas (encore) à quoi ça sert. »",
+   "text": "L’adulte lit le message vocal de Diogo : « Moien. Ech hu kee Bock. Op näischt. Seriö. » (J’ai la flemme. De tout. Sérieux.) – « Tu le crois ? » Diogo (15 ans) ne joue plus au futsal de la maison des jeunes de Differdange depuis une déchirure des ligaments ; Aylin (14 ans) fait des beats depuis son fauteuil roulant, Pol (16 ans) porte un appareil auditif et cherche un apprentissage de mécatronicien. Le ou la jeune détache les six cartes traces de la semaine de Diogo et les pose au sol dans deux zones : « là, il a envie » et « là, non ». Sur chaque trace « envie », une carte valeur : qu’est-ce qui compte pour lui là-dedans ? Pour finir, un conseil pour Diogo en huit mots au plus ; seulement si rien ne vient, l’adulte propose : « La flemme, souvent, c’est : je ne vois pas (encore) à quoi ça sert. »",
    "sagen": [
     "Diogo dit : la flemme de tout. Tu le crois ?",
     "Prouve-le-moi : où a-t-il quand même envie – et qu’est-ce qui compte pour lui ?",
@@ -411,10 +397,10 @@
   },
   "hilfen": {
    "de": {
-    "haken": "Diogos Sprachnachricht: „Ech hu keen Bock. Op näischt.“ – und sechs Spuren aus seiner Woche, die etwas anderes erzählen. Der oder die Jugendliche darf einem Gleichaltrigen nachweisen, dass er flunkert.",
+    "haken": "Diogos Sprachnachricht: „Ech hu kee Bock. Op näischt.“ – und sechs Spuren aus seiner Woche, die etwas anderes erzählen. Der oder die Jugendliche darf einem Gleichaltrigen nachweisen, dass er flunkert.",
     "vorbereitung": [
      "Schnellstart (3 Min.): Blatt und Kartenbögen drucken. Nicht schneiden – die Jugendlichen reißen die Karten selbst ab.",
-     "Aussprache ungefähr: „Moi-en. Esch hu kehn Bock. Op näischt. Se-ri-ö.“ Unsicher? Lass es dir vom Profi vorlesen.",
+     "Aussprache ungefähr: „Moi-en. Esch hu keh Bock. Op näischt. Se-ri-ö.“ Unsicher? Lass es dir vom Profi vorlesen.",
      "Zwei Blätter auf den Boden: „Bock“ und „kein Bock“.",
      "Mappe mit der Brücke bereitlegen (einmal zeichnen, siehe Ritual „Ein Brett mehr“)."
     ],
@@ -480,10 +466,10 @@
     ]
    },
    "fr": {
-    "haken": "Le message vocal de Diogo : « Ech hu keen Bock. Op näischt. » – et six traces de sa semaine qui racontent autre chose. Le ou la jeune a le droit de prouver à quelqu’un de son âge qu’il raconte des histoires.",
+    "haken": "Le message vocal de Diogo : « Ech hu kee Bock. Op näischt. » – et six traces de sa semaine qui racontent autre chose. Le ou la jeune a le droit de prouver à quelqu’un de son âge qu’il raconte des histoires.",
     "vorbereitung": [
      "Départ rapide (3 min) : imprimer la fiche et les planches. Ne pas découper – le ou la jeune détache les cartes.",
-     "Prononciation approximative : « Moï-enn. Èch hou kéne bok. Op nèïcht. Sé-ri-eu. » Pas sûr·e ? Fais-le lire par l’expert.",
+     "Prononciation approximative : « Moï-enn. Èch hou ké bok. Op nèïcht. Sé-ri-eu. » Pas sûr·e ? Fais-le lire par l’expert.",
      "Deux feuilles au sol : « envie » et « pas envie ».",
      "Préparer le dossier avec le pont (le dessiner une fois, voir le rituel « Une planche de plus »)."
     ],
@@ -557,7 +543,7 @@
    "titel": "Einzelkurs Null Bock – und dann?"
   },
   "titel": "Wichtig: Null Bock auf alles?",
-  "text": "Die Fachkraft liest Diogos Sprachnachricht vor: „Moien. Ech hu keen Bock. Op näischt. Seriö.“ (Null Bock. Auf nichts. Ernsthaft.) – „Glaubst du ihm?“ Diogo (15) spielt seit einem Bänderriss kein Futsal mehr im Jugendhaus Differdange; Aylin (14) baut im Rollstuhl am Mischpult Beats, Pol (16) trägt ein Hörgerät und sucht eine Lehrstelle als Mechatroniker. Der oder die Jugendliche reißt die sechs Spuren-Karten aus Diogos Woche ab und legt sie auf dem Boden in zwei Felder: „hier hat er Bock“ und „hier nicht“. An jede Bock-Spur kommt eine Wertekarte: Was ist ihm daran wichtig? Zum Schluss ein Tipp für Diogo in höchstens acht Wörtern; nur wenn nichts kommt, bietet die Fachkraft an: „Null Bock heißt oft: Ich sehe (noch) nicht, wofür.“",
+  "text": "Die Fachkraft liest Diogos Sprachnachricht vor: „Moien. Ech hu kee Bock. Op näischt. Seriö.“ (Null Bock. Auf nichts. Ernsthaft.) – „Glaubst du ihm?“ Diogo (15) spielt seit einem Bänderriss kein Futsal mehr im Jugendhaus Differdange; Aylin (14) baut im Rollstuhl am Mischpult Beats, Pol (16) trägt ein Hörgerät und sucht eine Lehrstelle als Mechatroniker. Der oder die Jugendliche reißt die sechs Spuren-Karten aus Diogos Woche ab und legt sie auf dem Boden in zwei Felder: „hier hat er Bock“ und „hier nicht“. An jede Bock-Spur kommt eine Wertekarte: Was ist ihm daran wichtig? Zum Schluss ein Tipp für Diogo in höchstens acht Wörtern; nur wenn nichts kommt, bietet die Fachkraft an: „Null Bock heißt oft: Ich sehe (noch) nicht, wofür.“",
   "sagen": [
    "Diogo sagt: null Bock auf nichts. Glaubst du ihm?",
    "Beweis es mir: Wo hat er doch Bock – und was ist ihm daran wichtig?",
@@ -794,7 +780,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Erst die N.-Akte: Die Fachkraft liest den Zettel wie eine Sprachnachricht vor, der oder die Jugendliche notiert einen ersten Verdacht – „keine Ahnung“ gilt auch. Dann die Wahl: drei Werte für sich oder für Diogo; geschrieben wird nur, was gezeigt werden soll. Den Tipp aus dem Gespräch schreibt er oder sie ab oder diktiert ihn. Der Auftrag ist ein Angebot.",
+     "text": "Erst die N.-Akte: Die Fachkraft liest den Zettel wie eine Sprachnachricht vor, der oder die Jugendliche notiert einen ersten Verdacht – „keine Ahnung“ gilt auch. Dann die Wahl: drei Werte für sich oder für Diogo; geschrieben wird nur, was gezeigt werden soll. Den Tipp schreibt die Fachkraft auf eine Karteikarte; die Karte kommt in die Mappe. Der Auftrag ist ein Angebot.",
      "sagen": [
       "Wer könnte N. sein?",
       "Für dich oder für Diogo?"
@@ -802,7 +788,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht ein Kreuz; die Fachkraft schreibt nach Diktat. Eigene Werte werden nicht vorgelesen."
     },
     "fr": {
-     "text": "D’abord le dossier N. : l’adulte lit le papier comme un message vocal, le ou la jeune note un premier soupçon – « aucune idée » compte aussi. Puis le choix : trois valeurs pour soi ou pour Diogo ; on n’écrit que ce qu’on veut montrer. Le conseil de la discussion, il ou elle le recopie ou le dicte. La proposition pour la prochaine fois reste libre.",
+     "text": "D’abord le dossier N. : l’adulte lit le papier comme un message vocal, le ou la jeune note un premier soupçon – « aucune idée » compte aussi. Puis le choix : trois valeurs pour soi ou pour Diogo ; on n’écrit que ce qu’on veut montrer. L’adulte note le conseil sur une fiche ; la fiche va dans le dossier. La proposition pour la prochaine fois reste libre.",
      "sagen": [
       "Qui pourrait être N. ?",
       "Pour toi ou pour Diogo ?"
@@ -813,7 +799,7 @@
   },
   "fr": {
    "titel": "Ce qui compte : la flemme de tout ?",
-   "text": "L’adulte lit le message vocal de Diogo : « Moien. Ech hu keen Bock. Op näischt. Seriö. » (J’ai la flemme. De tout. Sérieux.) – « Tu le crois ? » Diogo (15 ans) ne joue plus au futsal de la maison des jeunes de Differdange depuis une déchirure des ligaments ; Aylin (14 ans) fait des beats depuis son fauteuil roulant, Pol (16 ans) porte un appareil auditif et cherche un apprentissage de mécatronicien. Le ou la jeune détache les six cartes traces de la semaine de Diogo et les pose au sol dans deux zones : « là, il a envie » et « là, non ». Sur chaque trace « envie », une carte valeur : qu’est-ce qui compte pour lui là-dedans ? Pour finir, un conseil pour Diogo en huit mots au plus ; seulement si rien ne vient, l’adulte propose : « La flemme, souvent, c’est : je ne vois pas (encore) à quoi ça sert. »",
+   "text": "L’adulte lit le message vocal de Diogo : « Moien. Ech hu kee Bock. Op näischt. Seriö. » (J’ai la flemme. De tout. Sérieux.) – « Tu le crois ? » Diogo (15 ans) ne joue plus au futsal de la maison des jeunes de Differdange depuis une déchirure des ligaments ; Aylin (14 ans) fait des beats depuis son fauteuil roulant, Pol (16 ans) porte un appareil auditif et cherche un apprentissage de mécatronicien. Le ou la jeune détache les six cartes traces de la semaine de Diogo et les pose au sol dans deux zones : « là, il a envie » et « là, non ». Sur chaque trace « envie », une carte valeur : qu’est-ce qui compte pour lui là-dedans ? Pour finir, un conseil pour Diogo en huit mots au plus ; seulement si rien ne vient, l’adulte propose : « La flemme, souvent, c’est : je ne vois pas (encore) à quoi ça sert. »",
    "sagen": [
     "Diogo dit : la flemme de tout. Tu le crois ?",
     "Prouve-le-moi : où a-t-il quand même envie – et qu’est-ce qui compte pour lui ?",
@@ -830,10 +816,10 @@
   },
   "hilfen": {
    "de": {
-    "haken": "Diogos Sprachnachricht: „Ech hu keen Bock. Op näischt.“ – und sechs Spuren aus seiner Woche, die etwas anderes erzählen. Der oder die Jugendliche darf einem Gleichaltrigen nachweisen, dass er flunkert.",
+    "haken": "Diogos Sprachnachricht: „Ech hu kee Bock. Op näischt.“ – und sechs Spuren aus seiner Woche, die etwas anderes erzählen. Der oder die Jugendliche darf einem Gleichaltrigen nachweisen, dass er flunkert.",
     "vorbereitung": [
      "Schnellstart (3 Min.): Blatt und Kartenbögen drucken. Nicht schneiden – die Jugendlichen reißen die Karten selbst ab.",
-     "Aussprache ungefähr: „Moi-en. Esch hu kehn Bock. Op näischt. Se-ri-ö.“ Unsicher? Lass es dir vom Profi vorlesen.",
+     "Aussprache ungefähr: „Moi-en. Esch hu keh Bock. Op näischt. Se-ri-ö.“ Unsicher? Lass es dir vom Profi vorlesen.",
      "Zwei Blätter auf den Boden: „Bock“ und „kein Bock“.",
      "Mappe mit der Brücke bereitlegen (einmal zeichnen, siehe Ritual „Ein Brett mehr“)."
     ],
@@ -899,10 +885,10 @@
     ]
    },
    "fr": {
-    "haken": "Le message vocal de Diogo : « Ech hu keen Bock. Op näischt. » – et six traces de sa semaine qui racontent autre chose. Le ou la jeune a le droit de prouver à quelqu’un de son âge qu’il raconte des histoires.",
+    "haken": "Le message vocal de Diogo : « Ech hu kee Bock. Op näischt. » – et six traces de sa semaine qui racontent autre chose. Le ou la jeune a le droit de prouver à quelqu’un de son âge qu’il raconte des histoires.",
     "vorbereitung": [
      "Départ rapide (3 min) : imprimer la fiche et les planches. Ne pas découper – le ou la jeune détache les cartes.",
-     "Prononciation approximative : « Moï-enn. Èch hou kéne bok. Op nèïcht. Sé-ri-eu. » Pas sûr·e ? Fais-le lire par l’expert.",
+     "Prononciation approximative : « Moï-enn. Èch hou ké bok. Op nèïcht. Sé-ri-eu. » Pas sûr·e ? Fais-le lire par l’expert.",
      "Deux feuilles au sol : « envie » et « pas envie ».",
      "Préparer le dossier avec le pont (le dessiner une fois, voir le rituel « Une planche de plus »)."
     ],
@@ -1361,7 +1347,7 @@
    "titel": "Einzelkurs Null Bock – und dann?"
   },
   "titel": "Meins: Was Spiele richtig machen",
-  "text": "Diogo hat Nathalie nur „Vlt.“ geantwortet. Vorübung, die Profi-Frage: „Diogo spielt vier Stunden am Stück, aber nach fünf Minuten Vokabeln ist Schluss. Was macht ein Spiel, dass man nicht aufhören kann?“ – oder der eigene Sport, das Instrument. Der oder die Jugendliche legt jede Idee zu einer der drei Akku-Karten: Wahl, Können, Wir. Dann der Becher-Check, für Diogos Mittwoch oder ein eigenes Ziel: Im Stehen wirft er oder sie für jeden Akku null bis drei Bausteine in den Becher. Die Fachkraft spiegelt kurz, was dagegen spricht, fragt bei dem, was hinzieht, „Was noch?“ und beim leersten Becher: „Warum nicht null?“ Zum Schluss ein Tipp für Diogo in acht Wörtern; nur wenn nichts kommt: „Wahl, Können, Wir – fehlt einer, zieht’s nicht.“",
+  "text": "Diogo hat Nathalie nur „Vlt.“ geantwortet. Vorübung, die Profi-Frage: „Diogo spielt vier Stunden am Stück, aber nach fünf Minuten Vokabeln ist Schluss. Was macht ein Spiel, dass man nicht aufhören kann?“ – oder der eigene Sport, das Instrument. Der oder die Jugendliche legt jede Idee zu einer der drei Akku-Karten: Wahl, Können, Wir. Dann der Becher-Check, für Diogos Mittwoch oder ein eigenes Ziel: Im Stehen wirft er oder sie für jeden Akku null bis drei Bausteine in den Becher. Die Fachkraft spiegelt kurz die Gegenseite. Dann fragt sie: „Was zieht ihn noch hin?“ – und beim leersten Becher: „Warum nicht null?“ Zum Schluss ein Tipp für Diogo in acht Wörtern; nur wenn nichts kommt: „Wahl, Können, Wir – fehlt einer, zieht’s nicht.“",
   "sagen": [
    "Du bist hier der Profi: Was macht ein Spiel, dass man nicht aufhören kann?",
    "Wahl, Können, Wir – wohin gehört deine Idee?",
@@ -1527,13 +1513,6 @@
      "stufen": 5
     },
     {
-     "art": "satzanfaenge",
-     "items": [
-      "Mein Tipp für Diogo (8 Wörter):"
-     ],
-     "linien": 1
-    },
-    {
      "art": "aufgabe",
      "text": "Wenn du magst: Bei einer Sache, die du „musst“ – welcher Akku fehlt?",
      "symbole": [
@@ -1625,13 +1604,6 @@
      "stufen": 5
     },
     {
-     "art": "satzanfaenge",
-     "items": [
-      "Mon conseil pour Diogo (8 mots) :"
-     ],
-     "linien": 1
-    },
-    {
      "art": "aufgabe",
      "text": "Si tu veux : pour une chose que tu « dois » faire – quelle batterie est vide ?",
      "symbole": [
@@ -1650,7 +1622,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Erst die N.-Akte: Die Fachkraft liest Hinweis 2 vor, der oder die Jugendliche notiert den Verdacht, ohne ihn begründen zu müssen. Dann die Wahl: der Meins-Check für ein eigenes Ziel – ein Stichwort reicht – oder für Diogos Mittwoch, die Regler wie die Becher. Den Tipp aus dem Gespräch schreibt er oder sie ab. Der Auftrag ist ein Angebot.",
+     "text": "Erst die N.-Akte: Die Fachkraft liest Hinweis 2 vor, der oder die Jugendliche notiert den Verdacht, ohne ihn begründen zu müssen. Dann die Wahl: der Meins-Check für ein eigenes Ziel – ein Stichwort reicht – oder für Diogos Mittwoch, die Regler wie die Becher. Den Tipp schreibt die Fachkraft auf eine Karteikarte; die Karte kommt in die Mappe. Der Auftrag ist ein Angebot.",
      "sagen": [
       "Wer steht jetzt auf deiner Liste?",
       "Welcher Akku ist am leersten – und warum nicht ganz leer?"
@@ -1658,7 +1630,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reichen die Kreuze. Ein eigenes Ziel wird nie vorgelesen."
     },
     "fr": {
-     "text": "D’abord le dossier N. : l’adulte lit l’indice 2, le ou la jeune note son soupçon sans devoir le justifier. Puis le choix : le test “mon truc” pour un objectif personnel – un mot-clé suffit – ou pour le mercredi de Diogo, les curseurs comme les gobelets. Le conseil de la discussion, il ou elle le recopie. La proposition pour la prochaine fois reste libre.",
+     "text": "D’abord le dossier N. : l’adulte lit l’indice 2, le ou la jeune note son soupçon sans devoir le justifier. Puis le choix : le test “mon truc” pour un objectif personnel – un mot-clé suffit – ou pour le mercredi de Diogo, les curseurs comme les gobelets. L’adulte note le conseil sur une fiche ; la fiche va dans le dossier. La proposition pour la prochaine fois reste libre.",
      "sagen": [
       "Qui est sur ta liste maintenant ?",
       "Quelle batterie est la plus vide – et pourquoi pas complètement vide ?"
@@ -1669,7 +1641,7 @@
   },
   "fr": {
    "titel": "Mon truc : ce que les jeux font bien",
-   "text": "Diogo n’a répondu que « Vlt. » à Nathalie. Échauffement, la question d’expert : « Diogo joue quatre heures d’affilée, mais après cinq minutes de vocabulaire, c’est fini. Qu’est-ce qui fait qu’on n’arrive pas à lâcher un jeu ? » – ou son sport, son instrument. Le ou la jeune pose chaque idée près d’une des trois cartes batteries : choisir, réussir, ensemble. Puis le test des gobelets, pour le mercredi de Diogo ou pour un objectif à soi : debout, il ou elle lance pour chaque batterie de zéro à trois briques dans le gobelet. L’adulte reformule brièvement ce qui retient, demande pour ce qui attire « Quoi d’autre ? » et devant le gobelet le plus vide : « Pourquoi pas zéro ? » Pour finir, un conseil pour Diogo en huit mots ; seulement si rien ne vient : « Choisir, réussir, ensemble – si une batterie est vide, ça n’accroche pas. »",
+   "text": "Diogo n’a répondu que « Vlt. » à Nathalie. Échauffement, la question d’expert : « Diogo joue quatre heures d’affilée, mais après cinq minutes de vocabulaire, c’est fini. Qu’est-ce qui fait qu’on n’arrive pas à lâcher un jeu ? » – ou son sport, son instrument. Le ou la jeune pose chaque idée près d’une des trois cartes batteries : choisir, réussir, ensemble. Puis le test des gobelets, pour le mercredi de Diogo ou pour un objectif à soi : debout, il ou elle lance pour chaque batterie de zéro à trois briques dans le gobelet. L’adulte reformule brièvement ce qui retient. Puis : « Qu’est-ce qui l’attire encore ? » – et devant le gobelet le plus vide : « Pourquoi pas zéro ? » Pour finir, un conseil pour Diogo en huit mots ; seulement si rien ne vient : « Choisir, réussir, ensemble – si une batterie est vide, ça n’accroche pas. »",
    "sagen": [
     "Ici, l’expert, c’est toi : qu’est-ce qui fait qu’on n’arrive pas à lâcher un jeu ?",
     "Choisir, réussir, ensemble – ton idée va où ?",
@@ -1816,7 +1788,7 @@
    "titel": "Einzelkurs Null Bock – und dann?"
   },
   "titel": "Meins: Was Spiele richtig machen",
-  "text": "Diogo hat Nathalie nur „Vlt.“ geantwortet. Vorübung, die Profi-Frage: „Diogo spielt vier Stunden am Stück, aber nach fünf Minuten Vokabeln ist Schluss. Was macht ein Spiel, dass man nicht aufhören kann?“ – oder der eigene Sport, das Instrument. Der oder die Jugendliche legt jede Idee zu einer der drei Akku-Karten: Wahl, Können, Wir. Dann der Becher-Check, für Diogos Mittwoch oder ein eigenes Ziel: Im Stehen wirft er oder sie für jeden Akku null bis drei Bausteine in den Becher. Die Fachkraft spiegelt kurz, was dagegen spricht, fragt bei dem, was hinzieht, „Was noch?“ und beim leersten Becher: „Warum nicht null?“ Zum Schluss ein Tipp für Diogo in acht Wörtern; nur wenn nichts kommt: „Wahl, Können, Wir – fehlt einer, zieht’s nicht.“",
+  "text": "Diogo hat Nathalie nur „Vlt.“ geantwortet. Vorübung, die Profi-Frage: „Diogo spielt vier Stunden am Stück, aber nach fünf Minuten Vokabeln ist Schluss. Was macht ein Spiel, dass man nicht aufhören kann?“ – oder der eigene Sport, das Instrument. Der oder die Jugendliche legt jede Idee zu einer der drei Akku-Karten: Wahl, Können, Wir. Dann der Becher-Check, für Diogos Mittwoch oder ein eigenes Ziel: Im Stehen wirft er oder sie für jeden Akku null bis drei Bausteine in den Becher. Die Fachkraft spiegelt kurz die Gegenseite. Dann fragt sie: „Was zieht ihn noch hin?“ – und beim leersten Becher: „Warum nicht null?“ Zum Schluss ein Tipp für Diogo in acht Wörtern; nur wenn nichts kommt: „Wahl, Können, Wir – fehlt einer, zieht’s nicht.“",
   "sagen": [
    "Du bist hier der Profi: Was macht ein Spiel, dass man nicht aufhören kann?",
    "Wahl, Können, Wir – wohin gehört deine Idee?",
@@ -2093,7 +2065,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Erst die N.-Akte: Die Fachkraft liest Hinweis 2 vor, der oder die Jugendliche notiert den Verdacht, ohne ihn begründen zu müssen. Dann die Wahl: der Meins-Check für ein eigenes Ziel – ein Stichwort reicht – oder für Diogos Mittwoch, die Regler wie die Becher. Den Tipp aus dem Gespräch schreibt er oder sie ab. Der Auftrag ist ein Angebot.",
+     "text": "Erst die N.-Akte: Die Fachkraft liest Hinweis 2 vor, der oder die Jugendliche notiert den Verdacht, ohne ihn begründen zu müssen. Dann die Wahl: der Meins-Check für ein eigenes Ziel – ein Stichwort reicht – oder für Diogos Mittwoch, die Regler wie die Becher. Den Tipp schreibt die Fachkraft auf eine Karteikarte; die Karte kommt in die Mappe. Der Auftrag ist ein Angebot.",
      "sagen": [
       "Wer steht jetzt auf deiner Liste?",
       "Welcher Akku ist am leersten – und warum nicht ganz leer?"
@@ -2101,7 +2073,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reichen die Kreuze. Ein eigenes Ziel wird nie vorgelesen."
     },
     "fr": {
-     "text": "D’abord le dossier N. : l’adulte lit l’indice 2, le ou la jeune note son soupçon sans devoir le justifier. Puis le choix : le test “mon truc” pour un objectif personnel – un mot-clé suffit – ou pour le mercredi de Diogo, les curseurs comme les gobelets. Le conseil de la discussion, il ou elle le recopie. La proposition pour la prochaine fois reste libre.",
+     "text": "D’abord le dossier N. : l’adulte lit l’indice 2, le ou la jeune note son soupçon sans devoir le justifier. Puis le choix : le test “mon truc” pour un objectif personnel – un mot-clé suffit – ou pour le mercredi de Diogo, les curseurs comme les gobelets. L’adulte note le conseil sur une fiche ; la fiche va dans le dossier. La proposition pour la prochaine fois reste libre.",
      "sagen": [
       "Qui est sur ta liste maintenant ?",
       "Quelle batterie est la plus vide – et pourquoi pas complètement vide ?"
@@ -2112,7 +2084,7 @@
   },
   "fr": {
    "titel": "Mon truc : ce que les jeux font bien",
-   "text": "Diogo n’a répondu que « Vlt. » à Nathalie. Échauffement, la question d’expert : « Diogo joue quatre heures d’affilée, mais après cinq minutes de vocabulaire, c’est fini. Qu’est-ce qui fait qu’on n’arrive pas à lâcher un jeu ? » – ou son sport, son instrument. Le ou la jeune pose chaque idée près d’une des trois cartes batteries : choisir, réussir, ensemble. Puis le test des gobelets, pour le mercredi de Diogo ou pour un objectif à soi : debout, il ou elle lance pour chaque batterie de zéro à trois briques dans le gobelet. L’adulte reformule brièvement ce qui retient, demande pour ce qui attire « Quoi d’autre ? » et devant le gobelet le plus vide : « Pourquoi pas zéro ? » Pour finir, un conseil pour Diogo en huit mots ; seulement si rien ne vient : « Choisir, réussir, ensemble – si une batterie est vide, ça n’accroche pas. »",
+   "text": "Diogo n’a répondu que « Vlt. » à Nathalie. Échauffement, la question d’expert : « Diogo joue quatre heures d’affilée, mais après cinq minutes de vocabulaire, c’est fini. Qu’est-ce qui fait qu’on n’arrive pas à lâcher un jeu ? » – ou son sport, son instrument. Le ou la jeune pose chaque idée près d’une des trois cartes batteries : choisir, réussir, ensemble. Puis le test des gobelets, pour le mercredi de Diogo ou pour un objectif à soi : debout, il ou elle lance pour chaque batterie de zéro à trois briques dans le gobelet. L’adulte reformule brièvement ce qui retient. Puis : « Qu’est-ce qui l’attire encore ? » – et devant le gobelet le plus vide : « Pourquoi pas zéro ? » Pour finir, un conseil pour Diogo en huit mots ; seulement si rien ne vient : « Choisir, réussir, ensemble – si une batterie est vide, ça n’accroche pas. »",
    "sagen": [
     "Ici, l’expert, c’est toi : qu’est-ce qui fait qu’on n’arrive pas à lâcher un jeu ?",
     "Choisir, réussir, ensemble – ton idée va où ?",
@@ -2804,13 +2776,6 @@
      ]
     },
     {
-     "art": "satzanfaenge",
-     "items": [
-      "Mein Tipp für Diogo (8 Wörter):"
-     ],
-     "linien": 1
-    },
-    {
      "art": "aufgabe",
      "text": "Wenn du magst: Probier den Plan einmal aus – oder sag ihn dir dreimal leise vor.",
      "symbole": [
@@ -2878,13 +2843,6 @@
      ]
     },
     {
-     "art": "satzanfaenge",
-     "items": [
-      "Mon conseil pour Diogo (8 mots) :"
-     ],
-     "linien": 1
-    },
-    {
      "art": "aufgabe",
      "text": "Si tu veux : essaie le plan une fois – ou répète-le trois fois à voix basse.",
      "symbole": [
@@ -2894,7 +2852,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Erst die N.-Akte: Die Fachkraft liest Nathalies Nachricht vor und legt den Zettel aus der ersten Akte daneben; der oder die Jugendliche vergleicht und notiert den Verdacht. Dann die Wahl: ein Wenn-dann-Plan für sich oder für Pols Probetag; das Beispiel zeigt, dass ein Plan schon am Abend vorher greifen kann. Den Tipp aus dem Gespräch schreibt er oder sie ab. Der Auftrag ist ein Angebot.",
+     "text": "Erst die N.-Akte: Die Fachkraft liest Nathalies Nachricht vor und legt den Zettel aus der ersten Akte daneben; der oder die Jugendliche vergleicht und notiert den Verdacht. Dann die Wahl: ein Wenn-dann-Plan für sich oder für Pols Probetag; das Beispiel zeigt, dass ein Plan schon am Abend vorher greifen kann. Den Tipp schreibt die Fachkraft auf eine Karteikarte; die Karte kommt in die Mappe. Der Auftrag ist ein Angebot.",
      "sagen": [
       "Was fällt dir auf, wenn du beides nebeneinanderlegst?",
       "Was würde man sehen, wenn der Plan klappt?"
@@ -2902,7 +2860,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, diktiert der oder die Jugendliche den Plan. Eigene Hindernisse werden nicht vorgelesen."
     },
     "fr": {
-     "text": "D’abord le dossier N. : l’adulte lit le message de Nathalie et pose à côté le papier du premier indice ; le ou la jeune compare et note son soupçon. Puis le choix : un plan si… alors pour soi ou pour la journée d’essai de Pol ; l’exemple montre qu’un plan peut agir dès la veille. Le conseil de la discussion, il ou elle le recopie. La proposition pour la prochaine fois reste libre.",
+     "text": "D’abord le dossier N. : l’adulte lit le message de Nathalie et pose à côté le papier du premier indice ; le ou la jeune compare et note son soupçon. Puis le choix : un plan si… alors pour soi ou pour la journée d’essai de Pol ; l’exemple montre qu’un plan peut agir dès la veille. L’adulte note le conseil sur une fiche ; la fiche va dans le dossier. La proposition pour la prochaine fois reste libre.",
      "sagen": [
       "Qu’est-ce que tu remarques en les posant côte à côte ?",
       "Qu’est-ce qu’on verrait si le plan marche ?"
@@ -3289,7 +3247,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Erst die N.-Akte: Die Fachkraft liest Nathalies Nachricht vor und legt den Zettel aus der ersten Akte daneben; der oder die Jugendliche vergleicht und notiert den Verdacht. Dann die Wahl: ein Wenn-dann-Plan für sich oder für Pols Probetag; das Beispiel zeigt, dass ein Plan schon am Abend vorher greifen kann. Den Tipp aus dem Gespräch schreibt er oder sie ab. Der Auftrag ist ein Angebot.",
+     "text": "Erst die N.-Akte: Die Fachkraft liest Nathalies Nachricht vor und legt den Zettel aus der ersten Akte daneben; der oder die Jugendliche vergleicht und notiert den Verdacht. Dann die Wahl: ein Wenn-dann-Plan für sich oder für Pols Probetag; das Beispiel zeigt, dass ein Plan schon am Abend vorher greifen kann. Den Tipp schreibt die Fachkraft auf eine Karteikarte; die Karte kommt in die Mappe. Der Auftrag ist ein Angebot.",
      "sagen": [
       "Was fällt dir auf, wenn du beides nebeneinanderlegst?",
       "Was würde man sehen, wenn der Plan klappt?"
@@ -3297,7 +3255,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, diktiert der oder die Jugendliche den Plan. Eigene Hindernisse werden nicht vorgelesen."
     },
     "fr": {
-     "text": "D’abord le dossier N. : l’adulte lit le message de Nathalie et pose à côté le papier du premier indice ; le ou la jeune compare et note son soupçon. Puis le choix : un plan si… alors pour soi ou pour la journée d’essai de Pol ; l’exemple montre qu’un plan peut agir dès la veille. Le conseil de la discussion, il ou elle le recopie. La proposition pour la prochaine fois reste libre.",
+     "text": "D’abord le dossier N. : l’adulte lit le message de Nathalie et pose à côté le papier du premier indice ; le ou la jeune compare et note son soupçon. Puis le choix : un plan si… alors pour soi ou pour la journée d’essai de Pol ; l’exemple montre qu’un plan peut agir dès la veille. L’adulte note le conseil sur une fiche ; la fiche va dans le dossier. La proposition pour la prochaine fois reste libre.",
      "sagen": [
       "Qu’est-ce que tu remarques en les posant côte à côte ?",
       "Qu’est-ce qu’on verrait si le plan marche ?"
@@ -3988,13 +3946,6 @@
      "stufen": 5
     },
     {
-     "art": "satzanfaenge",
-     "items": [
-      "Mein Tipp für Aylin (8 Wörter):"
-     ],
-     "linien": 1
-    },
-    {
      "art": "aufgabe",
      "text": "Wenn du magst: Mach einmal einen 5-Minuten-Start. Danach darfst du aufhören.",
      "symbole": [
@@ -4073,13 +4024,6 @@
      "stufen": 5
     },
     {
-     "art": "satzanfaenge",
-     "items": [
-      "Mon conseil pour Aylin (8 mots) :"
-     ],
-     "linien": 1
-    },
-    {
      "art": "aufgabe",
      "text": "Si tu veux : fais une fois un départ de 5 minutes. Après, tu as le droit d’arrêter.",
      "symbole": [
@@ -4089,7 +4033,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Erst die N.-Akte: Die Fachkraft liest Nunos Chat vor – wer Portugiesisch kann, übersetzt; der oder die Jugendliche legt den Zettel daneben und notiert den Verdacht mit einem Beweis. Dann das Experiment festhalten: Mini-Start und die zwei Regler, vorher und nachher. Den Tipp für Aylin schreibt er oder sie ab. Der Auftrag ist ein Angebot.",
+     "text": "Erst die N.-Akte: Die Fachkraft liest Nunos Chat vor – wer Portugiesisch kann, übersetzt; der oder die Jugendliche legt den Zettel daneben und notiert den Verdacht mit einem Beweis. Dann das Experiment festhalten: Mini-Start und die zwei Regler, vorher und nachher. Den Tipp schreibt die Fachkraft auf eine Karteikarte; die Karte kommt in die Mappe. Der Auftrag ist ein Angebot.",
      "sagen": [
       "Wen streichst du – und warum?",
       "Was hat dich überrascht – vorher oder nachher?"
@@ -4097,7 +4041,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, genügen die zwei Kreuze. Eigene aufgeschobene Dinge werden nicht vorgelesen."
     },
     "fr": {
-     "text": "D’abord le dossier N. : l’adulte lit le chat de Nuno – qui parle portugais traduit ; le ou la jeune pose le papier à côté et note son soupçon avec une preuve. Puis on garde une trace de l’expérience : le mini-début et les deux curseurs, avant et après. Le conseil pour Aylin, il ou elle le recopie. La proposition pour la prochaine fois reste libre.",
+     "text": "D’abord le dossier N. : l’adulte lit le chat de Nuno – qui parle portugais traduit ; le ou la jeune pose le papier à côté et note son soupçon avec une preuve. Puis on garde une trace de l’expérience : le mini-début et les deux curseurs, avant et après. L’adulte note le conseil sur une fiche ; la fiche va dans le dossier. La proposition pour la prochaine fois reste libre.",
      "sagen": [
       "Qui barres-tu – et pourquoi ?",
       "Qu’est-ce qui t’a surpris – avant ou après ?"
@@ -4469,7 +4413,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Erst die N.-Akte: Die Fachkraft liest Nunos Chat vor – wer Portugiesisch kann, übersetzt; der oder die Jugendliche legt den Zettel daneben und notiert den Verdacht mit einem Beweis. Dann das Experiment festhalten: Mini-Start und die zwei Regler, vorher und nachher. Den Tipp für Aylin schreibt er oder sie ab. Der Auftrag ist ein Angebot.",
+     "text": "Erst die N.-Akte: Die Fachkraft liest Nunos Chat vor – wer Portugiesisch kann, übersetzt; der oder die Jugendliche legt den Zettel daneben und notiert den Verdacht mit einem Beweis. Dann das Experiment festhalten: Mini-Start und die zwei Regler, vorher und nachher. Den Tipp schreibt die Fachkraft auf eine Karteikarte; die Karte kommt in die Mappe. Der Auftrag ist ein Angebot.",
      "sagen": [
       "Wen streichst du – und warum?",
       "Was hat dich überrascht – vorher oder nachher?"
@@ -4477,7 +4421,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, genügen die zwei Kreuze. Eigene aufgeschobene Dinge werden nicht vorgelesen."
     },
     "fr": {
-     "text": "D’abord le dossier N. : l’adulte lit le chat de Nuno – qui parle portugais traduit ; le ou la jeune pose le papier à côté et note son soupçon avec une preuve. Puis on garde une trace de l’expérience : le mini-début et les deux curseurs, avant et après. Le conseil pour Aylin, il ou elle le recopie. La proposition pour la prochaine fois reste libre.",
+     "text": "D’abord le dossier N. : l’adulte lit le chat de Nuno – qui parle portugais traduit ; le ou la jeune pose le papier à côté et note son soupçon avec une preuve. Puis on garde une trace de l’expérience : le mini-début et les deux curseurs, avant et après. L’adulte note le conseil sur une fiche ; la fiche va dans le dossier. La proposition pour la prochaine fois reste libre.",
      "sagen": [
       "Qui barres-tu – et pourquoi ?",
       "Qu’est-ce qui t’a surpris – avant ou après ?"
@@ -5082,8 +5026,8 @@
     "fr": "De « la flemme » à un objectif à soi : le pont en cinq parties – ce qui compte, mon truc, plan, départ, rebond – et rendre le chemin visible"
    },
    "bruecke": {
-    "de": "Fünf Minuten anfangen hat geklappt: Am Mittwoch war Diogo in der Halle. Und dann lief es schief. Auch Pol und Aylin hatten einen Fehlstart.",
-    "fr": "Commencer par cinq minutes a marché : mercredi, Diogo était à la salle. Et puis ça a mal tourné. Pol et Aylin aussi ont eu un faux départ."
+    "de": "Fünf Minuten anfangen hat geklappt: Am Mittwoch war Diogo in der Halle. Und dann lief es schief. Auch Pol hat seinen Probetag verschlafen – nachts trägt er das Hörgerät nicht. Und unter Aylins neuem Track steht ein Kommentar: „mid“.",
+    "fr": "Commencer par cinq minutes a marché : mercredi, Diogo était à la salle. Et puis ça a mal tourné. Pol aussi a raté son jour d’essai – la nuit, il ne porte pas son appareil auditif. Et sous le nouveau morceau d’Aylin, un commentaire : « mid »."
    }
   },
   "imSpiel": {
@@ -5304,16 +5248,8 @@
      "Stopp-Karte sichtbar hinlegen; ein Tuch oder eine Jacke für die Rolle.",
      "Rollenkarte (Nur für dich) einmal lesen; Vertrauenspersonen im Haus kennen."
     ],
-    "aufbau": "0′ Sprachnachricht – „30 Sekunden: Was schickst du ihm?“\n2′ Chat-Pingpong, die Erwachsene ist Diogo – „Stopp geht immer.“\n7′ Diogo nimmt eine Mini-Version an\n8′ Rolle aus, Jacke aus\n9′ Frage nach der Stimme im Kopf (freiwillig), Tipp in acht Wörtern\n10′ Blatt: N.-Akte, Weiter-Plan, Hilfe-Kasten\n15′ Ende\nMuss: Antwort, Pingpong, Plan. Wird es knapp: Antwort schriftlich.",
+    "aufbau": "0′ Satz-Karten abreißen, Brücke vorlesen: drei Fehlstarts\n1′ Sprachnachricht – „30 Sekunden: Was schickst du ihm?“\n2′ Chat-Pingpong, die Erwachsene ist Diogo – „Stopp geht immer.“\n7′ Mini-Version, Rolle aus\n8′ Stimme im Kopf (freiwillig), Tipp\n9′ Blatt: N.-Akte\n11′ Weiter-Plan – „Für dich, Pol oder Aylin?“\n14′ Hilfe-Kasten vorlesen\nWird es knapp: Plan ankreuzen wie Blatt b, Tipp weglassen.",
     "karten": [
-     {
-      "titel": "Szenen-Karten: drei Fehlstarts",
-      "karten": [
-       "Diogo, 19:10: Erster Ball vom Schienbein weg, einer hat gelacht, nach 25 Minuten gegangen. „Dat war et. Ni méi.“",
-       "Pol, 9:02: Probetag verschlafen – nachts trägt er das Hörgerät nicht, den Wecker hat er nicht gehört. „Nächsten Dienstag. Peinlich.“",
-       "Aylin, 22:47: Track online, 14 Plays, ein Kommentar: „mid“. „Lösch ich ihn?“"
-      ]
-     },
      {
       "titel": "Satz-Karten für den Kumpel",
       "karten": [
@@ -5344,7 +5280,7 @@
       ]
      }
     ],
-    "leichter": "Nur Pols Szene und drei Satz-Karten; der oder die Jugendliche wählt die, die er oder sie einem Freund schicken würde. Kein Pingpong; der Plan ist für Pol.",
+    "leichter": "Nur Pols Fehlstart (aus der Brücke) und drei Satz-Karten; der oder die Jugendliche wählt die, die er oder sie einem Freund schicken würde. Kein Pingpong; der Plan ist für Pol.",
     "schwerer": "Die harte Stimme aufschreiben und Satz für Satz in die Kumpel-Stimme übersetzen. Wo ist der Unterschied zwischen Schönreden und freundlich sein?",
     "gruppe": "Alle bleiben auf ihren Plätzen; niemand muss nach vorn. Die Fachkraft spricht als Diogo in die Runde, wer mag, antwortet vom Platz mit einer Satz-Karte oder eigenen Worten. Die Stopp-Karte liegt sichtbar, Jugendliche spielen Diogo nie. Dann schreibt jede und jeder still einen Weiter-Plan (eigen oder für Pol oder Aylin); vorgelesen wird nur freiwillig.",
     "beobachten": [
@@ -5375,16 +5311,8 @@
      "Poser la carte stop bien en vue ; un foulard ou une veste pour le rôle.",
      "Lire une fois la carte de rôle (pour l’adulte) ; connaître les personnes de confiance de la structure."
     ],
-    "aufbau": "0′ message vocal – « 30 secondes : tu lui renvoies quoi ? »\n2′ ping-pong, l’adulte est Diogo – « Stop, toujours possible. »\n7′ Diogo accepte une mini-version\n8′ sortir du rôle\n9′ la voix dans ta tête (libre), conseil en huit mots\n10′ fiche : dossier N., plan, encadré d’aide\n15′ fin\nIndispensable : réponse, ping-pong, plan. Si ça presse : réponse écrite.",
+    "aufbau": "0′ détacher les cartes phrases, lire le pont : trois faux départs\n1′ message vocal – « 30 secondes : tu lui renvoies quoi ? »\n2′ ping-pong, l’adulte est Diogo – « Stop, toujours possible. »\n7′ mini-version, sortir du rôle\n8′ la voix dans ta tête (libre), conseil\n9′ fiche : dossier N.\n11′ plan rebond – « Pour toi, Pol ou Aylin ? »\n14′ lire l’encadré d’aide\nSi ça presse : plan à cocher (fiche b).",
     "karten": [
-     {
-      "titel": "Cartes scènes : trois faux départs",
-      "karten": [
-       "Diogo, 19 h 10 : premier ballon parti sur le tibia, quelqu’un a rigolé, parti au bout de 25 minutes. « Dat war et. Ni méi. »",
-       "Pol, 9 h 02 : journée d’essai ratée – la nuit, il enlève son appareil auditif, il n’a pas entendu le réveil. « Mardi prochain. La honte. »",
-       "Aylin, 22 h 47 : morceau en ligne, 14 écoutes, un commentaire : « mid ». « Je le supprime ? »"
-      ]
-     },
      {
       "titel": "Cartes phrases pour le pote",
       "karten": [
@@ -5415,7 +5343,7 @@
       ]
      }
     ],
-    "leichter": "Seulement la scène de Pol et trois cartes phrases ; le ou la jeune choisit celle qu’il ou elle enverrait à un ami. Pas de ping-pong ; le plan est pour Pol.",
+    "leichter": "Seulement le faux départ de Pol (dans le pont) et trois cartes phrases ; le ou la jeune choisit celle qu’il ou elle enverrait à un ami. Pas de ping-pong ; le plan est pour Pol.",
     "schwerer": "Écrire la voix dure et la traduire phrase par phrase en voix de pote. Quelle différence entre enjoliver et être bienveillant ?",
     "gruppe": "Tous restent à leur place ; personne ne vient devant. L’adulte parle en Diogo au groupe, qui veut répond depuis sa place avec une carte phrase ou ses mots. La carte stop est visible, les jeunes ne jouent jamais Diogo. Puis chaque jeune écrit en silence un plan rebond (pour soi, Pol ou Aylin) ; on ne lit que si on veut.",
     "beobachten": [
@@ -5524,8 +5452,8 @@
     "fr": "De « la flemme » à un objectif à soi : le pont en cinq parties – ce qui compte, mon truc, plan, départ, rebond – et rendre le chemin visible"
    },
    "bruecke": {
-    "de": "Fünf Minuten anfangen hat geklappt: Am Mittwoch war Diogo in der Halle. Und dann lief es schief. Auch Pol und Aylin hatten einen Fehlstart.",
-    "fr": "Commencer par cinq minutes a marché : mercredi, Diogo était à la salle. Et puis ça a mal tourné. Pol et Aylin aussi ont eu un faux départ."
+    "de": "Fünf Minuten anfangen hat geklappt: Am Mittwoch war Diogo in der Halle. Und dann lief es schief. Auch Pol hat seinen Probetag verschlafen – nachts trägt er das Hörgerät nicht. Und unter Aylins neuem Track steht ein Kommentar: „mid“.",
+    "fr": "Commencer par cinq minutes a marché : mercredi, Diogo était à la salle. Et puis ça a mal tourné. Pol aussi a raté son jour d’essai – la nuit, il ne porte pas son appareil auditif. Et sous le nouveau morceau d’Aylin, un commentaire : « mid »."
    }
   },
   "imSpiel": {
@@ -5768,16 +5696,8 @@
      "Stopp-Karte sichtbar hinlegen; ein Tuch oder eine Jacke für die Rolle.",
      "Rollenkarte (Nur für dich) einmal lesen; Vertrauenspersonen im Haus kennen."
     ],
-    "aufbau": "0′ Sprachnachricht – „30 Sekunden: Was schickst du ihm?“\n2′ Chat-Pingpong, die Erwachsene ist Diogo – „Stopp geht immer.“\n7′ Diogo nimmt eine Mini-Version an\n8′ Rolle aus, Jacke aus\n9′ Frage nach der Stimme im Kopf (freiwillig), Tipp in acht Wörtern\n10′ Blatt: N.-Akte, Weiter-Plan, Hilfe-Kasten\n15′ Ende\nMuss: Antwort, Pingpong, Plan. Wird es knapp: Antwort schriftlich.",
+    "aufbau": "0′ Satz-Karten abreißen, Brücke vorlesen: drei Fehlstarts\n1′ Sprachnachricht – „30 Sekunden: Was schickst du ihm?“\n2′ Chat-Pingpong, die Erwachsene ist Diogo – „Stopp geht immer.“\n7′ Mini-Version, Rolle aus\n8′ Stimme im Kopf (freiwillig), Tipp\n9′ Blatt: N.-Akte\n11′ Weiter-Plan – „Für dich, Pol oder Aylin?“\n14′ Hilfe-Kasten vorlesen\nWird es knapp: Plan ankreuzen wie Blatt b, Tipp weglassen.",
     "karten": [
-     {
-      "titel": "Szenen-Karten: drei Fehlstarts",
-      "karten": [
-       "Diogo, 19:10: Erster Ball vom Schienbein weg, einer hat gelacht, nach 25 Minuten gegangen. „Dat war et. Ni méi.“",
-       "Pol, 9:02: Probetag verschlafen – nachts trägt er das Hörgerät nicht, den Wecker hat er nicht gehört. „Nächsten Dienstag. Peinlich.“",
-       "Aylin, 22:47: Track online, 14 Plays, ein Kommentar: „mid“. „Lösch ich ihn?“"
-      ]
-     },
      {
       "titel": "Satz-Karten für den Kumpel",
       "karten": [
@@ -5808,7 +5728,7 @@
       ]
      }
     ],
-    "leichter": "Nur Pols Szene und drei Satz-Karten; der oder die Jugendliche wählt die, die er oder sie einem Freund schicken würde. Kein Pingpong; der Plan ist für Pol.",
+    "leichter": "Nur Pols Fehlstart (aus der Brücke) und drei Satz-Karten; der oder die Jugendliche wählt die, die er oder sie einem Freund schicken würde. Kein Pingpong; der Plan ist für Pol.",
     "schwerer": "Die harte Stimme aufschreiben und Satz für Satz in die Kumpel-Stimme übersetzen. Wo ist der Unterschied zwischen Schönreden und freundlich sein?",
     "gruppe": "Alle bleiben auf ihren Plätzen; niemand muss nach vorn. Die Fachkraft spricht als Diogo in die Runde, wer mag, antwortet vom Platz mit einer Satz-Karte oder eigenen Worten. Die Stopp-Karte liegt sichtbar, Jugendliche spielen Diogo nie. Dann schreibt jede und jeder still einen Weiter-Plan (eigen oder für Pol oder Aylin); vorgelesen wird nur freiwillig.",
     "beobachten": [
@@ -5839,16 +5759,8 @@
      "Poser la carte stop bien en vue ; un foulard ou une veste pour le rôle.",
      "Lire une fois la carte de rôle (pour l’adulte) ; connaître les personnes de confiance de la structure."
     ],
-    "aufbau": "0′ message vocal – « 30 secondes : tu lui renvoies quoi ? »\n2′ ping-pong, l’adulte est Diogo – « Stop, toujours possible. »\n7′ Diogo accepte une mini-version\n8′ sortir du rôle\n9′ la voix dans ta tête (libre), conseil en huit mots\n10′ fiche : dossier N., plan, encadré d’aide\n15′ fin\nIndispensable : réponse, ping-pong, plan. Si ça presse : réponse écrite.",
+    "aufbau": "0′ détacher les cartes phrases, lire le pont : trois faux départs\n1′ message vocal – « 30 secondes : tu lui renvoies quoi ? »\n2′ ping-pong, l’adulte est Diogo – « Stop, toujours possible. »\n7′ mini-version, sortir du rôle\n8′ la voix dans ta tête (libre), conseil\n9′ fiche : dossier N.\n11′ plan rebond – « Pour toi, Pol ou Aylin ? »\n14′ lire l’encadré d’aide\nSi ça presse : plan à cocher (fiche b).",
     "karten": [
-     {
-      "titel": "Cartes scènes : trois faux départs",
-      "karten": [
-       "Diogo, 19 h 10 : premier ballon parti sur le tibia, quelqu’un a rigolé, parti au bout de 25 minutes. « Dat war et. Ni méi. »",
-       "Pol, 9 h 02 : journée d’essai ratée – la nuit, il enlève son appareil auditif, il n’a pas entendu le réveil. « Mardi prochain. La honte. »",
-       "Aylin, 22 h 47 : morceau en ligne, 14 écoutes, un commentaire : « mid ». « Je le supprime ? »"
-      ]
-     },
      {
       "titel": "Cartes phrases pour le pote",
       "karten": [
@@ -5879,7 +5791,7 @@
       ]
      }
     ],
-    "leichter": "Seulement la scène de Pol et trois cartes phrases ; le ou la jeune choisit celle qu’il ou elle enverrait à un ami. Pas de ping-pong ; le plan est pour Pol.",
+    "leichter": "Seulement le faux départ de Pol (dans le pont) et trois cartes phrases ; le ou la jeune choisit celle qu’il ou elle enverrait à un ami. Pas de ping-pong ; le plan est pour Pol.",
     "schwerer": "Écrire la voix dure et la traduire phrase par phrase en voix de pote. Quelle différence entre enjoliver et être bienveillant ?",
     "gruppe": "Tous restent à leur place ; personne ne vient devant. L’adulte parle en Diogo au groupe, qui veut répond depuis sa place avec une carte phrase ou ses mots. La carte stop est visible, les jeunes ne jouent jamais Diogo. Puis chaque jeune écrit en silence un plan rebond (pour soi, Pol ou Aylin) ; on ne lit que si on veut.",
     "beobachten": [
@@ -5967,8 +5879,8 @@
     "fr": "De « la flemme » à un objectif à soi : le pont en cinq parties – ce qui compte, mon truc, plan, départ, rebond – et rendre le chemin visible"
    },
    "bruecke": {
-    "de": "Fünf Minuten anfangen hat geklappt: Am Mittwoch war Diogo in der Halle. Und dann lief es schief. Auch Pol und Aylin hatten einen Fehlstart.",
-    "fr": "Commencer par cinq minutes a marché : mercredi, Diogo était à la salle. Et puis ça a mal tourné. Pol et Aylin aussi ont eu un faux départ."
+    "de": "Fünf Minuten anfangen hat geklappt: Am Mittwoch war Diogo in der Halle. Und dann lief es schief. Auch Pol hat seinen Probetag verschlafen – nachts trägt er das Hörgerät nicht. Und unter Aylins neuem Track steht ein Kommentar: „mid“.",
+    "fr": "Commencer par cinq minutes a marché : mercredi, Diogo était à la salle. Et puis ça a mal tourné. Pol aussi a raté son jour d’essai – la nuit, il ne porte pas son appareil auditif. Et sous le nouveau morceau d’Aylin, un commentaire : « mid »."
    }
   },
   "ort": "raum",
@@ -6017,10 +5929,18 @@
     "haken": "Ein Stift als Mikrofon, eine Szene wie aus der Sportsendung – und ein fairer Kommentar, der anders klingt als die Stimme, die man vom Spielfeldrand kennt.",
     "vorbereitung": [
      "Stift als Mikrofon",
-     "Szenen- und Satz-Karten der Sitzung bereitlegen"
+     "Szenen-Karten (unten) und Satz-Karten der Sitzung bereitlegen"
     ],
     "aufbau": "0′ Szene erzählen – Diogo, 25 Minuten\n1′ fragen – „Zwei Sätze schwarzsehend, ja oder nein?“\n2′ fairer Kommentar – „Was war, was ist normal, was kommt?“\n6′ Rollentausch: Szene wählen, Regie geben\n9′ Mini-Version für Diogo\n11′ Blatt der Sitzung\n15′ Ende\nMuss: ein fairer Kommentar, Mini-Version. Wird es knapp: ohne schwarzsehenden Teil.",
     "karten": [
+     {
+      "titel": "Szenen-Karten: drei Fehlstarts",
+      "karten": [
+       "Diogo, 19:10: Erster Ball vom Schienbein weg, einer hat gelacht, nach 25 Minuten gegangen. „Dat war et. Ni méi.“",
+       "Pol, 9:02: Probetag verschlafen – nachts trägt er das Hörgerät nicht, den Wecker hat er nicht gehört. „Nächsten Dienstag. Peinlich.“",
+       "Aylin, 22:47: Track online, 14 Plays, ein Kommentar: „mid“. „Lösch ich ihn?“"
+      ]
+     },
      {
       "titel": "Nur für dich: fair kommentieren",
       "karten": [
@@ -6058,10 +5978,18 @@
     "haken": "Un stylo comme micro, une scène comme à la télé – et un commentaire fair-play qui sonne autrement que la voix qu’on connaît au bord du terrain.",
     "vorbereitung": [
      "Un stylo comme micro",
-     "Préparer les cartes scènes et phrases de la séance"
+     "Préparer les cartes scènes (ci-dessous) et phrases de la séance"
     ],
     "aufbau": "0′ raconter la scène – Diogo, 25 minutes\n1′ demander – « Deux phrases pessimistes, oui ou non ? »\n2′ commentaire fair-play – « Ce qui s’est passé, ce qui est normal, la suite ? »\n6′ rôles inversés : scène et consignes\n9′ mini-version pour Diogo\n11′ fiche de la séance\n15′ fin\nIndispensable : un commentaire fair-play, la mini-version.",
     "karten": [
+     {
+      "titel": "Cartes scènes : trois faux départs",
+      "karten": [
+       "Diogo, 19 h 10 : premier ballon parti sur le tibia, quelqu’un a rigolé, parti au bout de 25 minutes. « Dat war et. Ni méi. »",
+       "Pol, 9 h 02 : journée d’essai ratée – la nuit, il enlève son appareil auditif, il n’a pas entendu le réveil. « Mardi prochain. La honte. »",
+       "Aylin, 22 h 47 : morceau en ligne, 14 écoutes, un commentaire : « mid ». « Je le supprime ? »"
+      ]
+     },
      {
       "titel": "Pour l’adulte : commenter fair-play",
       "karten": [
@@ -6159,8 +6087,8 @@
     "fr": "De « la flemme » à un objectif à soi : le pont en cinq parties – ce qui compte, mon truc, plan, départ, rebond – et rendre le chemin visible"
    },
    "bruecke": {
-    "de": "Fünf Minuten anfangen hat geklappt: Am Mittwoch war Diogo in der Halle. Und dann lief es schief. Auch Pol und Aylin hatten einen Fehlstart.",
-    "fr": "Commencer par cinq minutes a marché : mercredi, Diogo était à la salle. Et puis ça a mal tourné. Pol et Aylin aussi ont eu un faux départ."
+    "de": "Fünf Minuten anfangen hat geklappt: Am Mittwoch war Diogo in der Halle. Und dann lief es schief. Auch Pol hat seinen Probetag verschlafen – nachts trägt er das Hörgerät nicht. Und unter Aylins neuem Track steht ein Kommentar: „mid“.",
+    "fr": "Commencer par cinq minutes a marché : mercredi, Diogo était à la salle. Et puis ça a mal tourné. Pol aussi a raté son jour d’essai – la nuit, il ne porte pas son appareil auditif. Et sous le nouveau morceau d’Aylin, un commentaire : « mid »."
    }
   },
   "ort": "raum",
@@ -6214,6 +6142,14 @@
     "aufbau": "0′ drei Szenen hinlegen\n1′ sortieren – „Weiter oder klein?“\n4′ Respawn-Karte für Diogo\n7′ Rollentausch – „Was fehlt an meiner Karte?“\n9′ Mini-Version\n11′ Blatt der Sitzung\n15′ Ende\nMuss: sortieren, eine Respawn-Karte. Wird es knapp: Karten legen statt schreiben.",
     "karten": [
      {
+      "titel": "Szenen-Karten: drei Fehlstarts",
+      "karten": [
+       "Diogo, 19:10: Erster Ball vom Schienbein weg, einer hat gelacht, nach 25 Minuten gegangen. „Dat war et. Ni méi.“",
+       "Pol, 9:02: Probetag verschlafen – nachts trägt er das Hörgerät nicht, den Wecker hat er nicht gehört. „Nächsten Dienstag. Peinlich.“",
+       "Aylin, 22:47: Track online, 14 Plays, ein Kommentar: „mid“. „Lösch ich ihn?“"
+      ]
+     },
+     {
       "titel": "Harte Sätze (zum Sortieren)",
       "karten": [
        "„Typisch. Wieder verbockt.“",
@@ -6263,6 +6199,14 @@
     ],
     "aufbau": "0′ poser les trois scènes\n1′ trier – « Avancer ou rabaisser ? »\n4′ carte respawn pour Diogo\n7′ rôles inversés – « Qu’est-ce qu’il faut de plus à ma carte ? »\n9′ mini-version\n11′ fiche de la séance\n15′ fin\nIndispensable : trier, une carte respawn. Si ça presse : poser des cartes au lieu d’écrire.",
     "karten": [
+     {
+      "titel": "Cartes scènes : trois faux départs",
+      "karten": [
+       "Diogo, 19 h 10 : premier ballon parti sur le tibia, quelqu’un a rigolé, parti au bout de 25 minutes. « Dat war et. Ni méi. »",
+       "Pol, 9 h 02 : journée d’essai ratée – la nuit, il enlève son appareil auditif, il n’a pas entendu le réveil. « Mardi prochain. La honte. »",
+       "Aylin, 22 h 47 : morceau en ligne, 14 écoutes, un commentaire : « mid ». « Je le supprime ? »"
+      ]
+     },
      {
       "titel": "Phrases dures (à trier)",
       "karten": [
@@ -6314,7 +6258,7 @@
    "titel": "Einzelkurs Null Bock – und dann?"
   },
   "titel": "Die ganze Brücke: Schau, wie weit du bist",
-  "text": "Diogo hat am Donnerstag mit N. Pässe gespielt und war am Mittwoch drauf wieder beim Futsal. Vorübung: „Wer ist N.?“ Der oder die Jugendliche nennt den Namen und zwei Beweise aus der N.-Akte; erst dann liest die Fachkraft Noras Zettel vor. Die Kernaktivität: Die fünf Abschnitts-Karten liegen als Brücke auf dem Boden, und der oder die Jugendliche legt die Ereignis-Karten von Diogo, Aylin und Pol an – was ist passiert, welcher Abschnitt hat geholfen? Auch, was nicht geklappt hat, bekommt einen Platz. Zum Schluss stellt er oder sie sich auf den Abschnitt, der am meisten gebracht hat, und gibt einem Jungen aus der 7G mit „null Bock auf alles“ einen Tipp in acht Wörtern; nur wenn nichts kommt: „Ich gegen mich von früher – nicht gegen die anderen.“",
+  "text": "Diogo hat am Donnerstag mit N. Pässe gespielt und war am Mittwoch drauf wieder beim Futsal. Vorübung: „Wer ist N.?“ Der oder die Jugendliche nennt den Namen und zwei Beweise aus der N.-Akte; erst dann bestätigt die Fachkraft. Die Kernaktivität: Die fünf Abschnitts-Karten liegen als Brücke auf dem Boden, und der oder die Jugendliche legt die Ereignis-Karten von Diogo, Aylin und Pol an – was ist passiert, welcher Abschnitt hat geholfen? Auch, was nicht geklappt hat, bekommt einen Platz. Zum Schluss stellt er oder sie sich auf den Abschnitt, der am meisten gebracht hat, und gibt einem Jungen aus der 7G mit „null Bock auf alles“ einen Tipp in acht Wörtern; nur wenn nichts kommt: „Ich gegen mich von früher – nicht gegen die anderen.“",
   "sagen": [
    "Wer ist N.? Name und zwei Beweise.",
    "Welcher Abschnitt der Brücke hat hier geholfen?",
@@ -6490,7 +6434,7 @@
     },
     {
      "art": "text",
-     "text": "Zum Schluss: Nora hat Diogo noch einen Zettel gegeben – diesmal mit Namen: „Mëttwoch, 18 Auer. Mir huelen dech of. – Nora“ (Mittwoch, 18 Uhr. Wir holen dich ab.)",
+     "text": "Zum Schluss hat N. Diogo noch einen Zettel gegeben – diesmal mit Namen: „Mëttwoch, 18 Auer. Mir huelen dech of. – ________“ (Mittwoch, 18 Uhr. Wir holen dich ab.) Den Namen schreibst du selbst hin.",
      "klein": true
     }
    ],
@@ -6580,13 +6524,13 @@
     },
     {
      "art": "text",
-     "text": "Pour finir : Nora a encore donné un papier à Diogo – cette fois signé : « Mëttwoch, 18 Auer. Mir huelen dech of. – Nora » (Mercredi, 18 h. On passe te chercher.)",
+     "text": "Pour finir, N. a encore donné un papier à Diogo – cette fois signé : « Mëttwoch, 18 Auer. Mir huelen dech of. – ________ » (Mercredi, 18 h. On passe te chercher.) Le nom, c’est toi qui l’écris.",
      "klein": true
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 steht schon fest: Name und zwei Beweise, wie im Gespräch. Aufgabe 2 ist die Brücken-Karte, für sich oder für Diogo; die fünf Kästchen sind für kleine Schritte danach. Die Fachkraft liest die Hilfe-Nummern vor, dann den letzten Zettel. Das Blatt kommt als letztes in die Mappe.",
+     "text": "Aufgabe 1 steht schon fest: Name und zwei Beweise, wie im Gespräch. Aufgabe 2 ist die Brücken-Karte, für sich oder für Diogo; die fünf Kästchen sind für kleine Schritte danach. Die Fachkraft liest die Hilfe-Nummern vor; zum Schluss setzt der oder die Jugendliche den Namen unter den letzten Zettel. Das Blatt kommt als letztes in die Mappe.",
      "sagen": [
       "Welcher Abschnitt hat dir selbst am meisten gebracht?",
       "Wer würde dir helfen, wenn es wieder hakt?"
@@ -6594,7 +6538,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, schreibt die Fachkraft die Brücken-Karte nach Diktat. Fortschritte werden nicht verglichen – nur mit dem früheren Ich."
     },
     "fr": {
-     "text": "L’exercice 1 est déjà réglé : le nom et deux preuves, comme dans la discussion. L’exercice 2 est la carte du pont, pour soi ou pour Diogo ; les cinq cases sont pour les petits pas d’après. L’adulte lit les numéros d’aide, puis le dernier papier. La fiche va en dernier dans le dossier.",
+     "text": "L’exercice 1 est déjà réglé : le nom et deux preuves, comme dans la discussion. L’exercice 2 est la carte du pont, pour soi ou pour Diogo ; les cinq cases sont pour les petits pas d’après. L’adulte lit les numéros d’aide ; pour finir, le ou la jeune écrit le nom sous le dernier papier. La fiche va en dernier dans le dossier.",
      "sagen": [
       "Quelle partie t’a le plus apporté à toi ?",
       "Qui t’aiderait si ça bloque de nouveau ?"
@@ -6605,7 +6549,7 @@
   },
   "fr": {
    "titel": "Le pont entier : regarde le chemin",
-   "text": "Jeudi, Diogo a fait des passes avec N., et le mercredi suivant, il était de nouveau au futsal. Échauffement : « Qui est N. ? » Le ou la jeune donne le nom et deux preuves du dossier N. ; seulement ensuite, l’adulte lit le papier de Nora. L’activité principale : les cinq cartes parties forment un pont au sol, et le ou la jeune y pose les cartes événements de Diogo, d’Aylin et de Pol – que s’est-il passé, quelle partie a aidé ? Ce qui n’a pas marché a aussi sa place. Pour finir, il ou elle se met sur la partie qui a le plus apporté et donne à un garçon de 7G qui a « la flemme de tout » un conseil en huit mots ; seulement si rien ne vient : « Moi contre moi d’avant – pas contre les autres. »",
+   "text": "Jeudi, Diogo a fait des passes avec N., et le mercredi suivant, il était de nouveau au futsal. Échauffement : « Qui est N. ? » Le ou la jeune donne le nom et deux preuves du dossier N. ; seulement ensuite, l’adulte confirme. L’activité principale : les cinq cartes parties forment un pont au sol, et le ou la jeune y pose les cartes événements de Diogo, d’Aylin et de Pol – que s’est-il passé, quelle partie a aidé ? Ce qui n’a pas marché a aussi sa place. Pour finir, il ou elle se met sur la partie qui a le plus apporté et donne à un garçon de 7G qui a « la flemme de tout » un conseil en huit mots ; seulement si rien ne vient : « Moi contre moi d’avant – pas contre les autres. »",
    "sagen": [
     "Qui est N. ? Le nom et deux preuves.",
     "Quelle partie du pont a aidé ici ?",
@@ -6628,7 +6572,7 @@
      "Die Hinweise 2 bis 5 aus der Mappe bereitlegen; Platz auf dem Boden für die Brücke.",
      "Einen beobachteten Fortschritt notieren (konkret, mit Beleg) – falls nichts kommt."
     ],
-    "aufbau": "0′ „Wer ist N.? Name und zwei Beweise.“ Erst danach Noras Zettel vorlesen\n2′ Brücke am Boden – „Welcher Abschnitt hat geholfen?“\n6′ was nicht klappt – „Wohin gehört das?“\n8′ auf den stärksten Abschnitt stellen, Tipp für die 7G\n10′ Blatt: Brücken-Karte, Hilfe\n15′ Ende\nMuss: N., Brücke, Karte. Wird es knapp: Ereignisse mündlich.",
+    "aufbau": "0′ „Wer ist N.? Name und zwei Beweise.“ Bestätigen mit der Karte „Nur für dich“ – der Zettel kommt erst am Ende\n2′ Brücke am Boden – „Welcher Abschnitt hat geholfen?“\n6′ was nicht klappt – „Wohin gehört das?“\n8′ auf den stärksten Abschnitt stellen, Tipp für die 7G\n10′ Blatt: Brücken-Karte, Hilfe\n15′ Ende\nMuss: N., Brücke, Karte. Wird es knapp: Ereignisse mündlich.",
     "karten": [
      {
       "titel": "Abschnitts-Karten",
@@ -6695,7 +6639,7 @@
      "Préparer les indices 2 à 5 du dossier ; de la place au sol pour le pont.",
      "Noter un progrès observé (concret, avec preuve) – au cas où rien ne vient."
     ],
-    "aufbau": "0′ « Qui est N. ? Le nom et deux preuves. » Seulement ensuite le papier de Nora\n2′ le pont au sol – « Quelle partie a aidé ? »\n6′ ce qui coince – « Ça va où ? »\n8′ se mettre sur la partie la plus forte, conseil pour la 7G\n10′ fiche : carte du pont, aide\n15′ fin\nIndispensable : N., pont, carte.",
+    "aufbau": "0′ « Qui est N. ? Le nom et deux preuves. » Confirmer avec la carte « Pour l’adulte » – le papier vient à la fin\n2′ le pont au sol – « Quelle partie a aidé ? »\n6′ ce qui coince – « Ça va où ? »\n8′ se mettre sur la partie la plus forte, conseil pour la 7G\n10′ fiche : carte du pont, aide\n15′ fin\nIndispensable : N., pont, carte.",
     "karten": [
      {
       "titel": "Cartes parties",
@@ -6764,7 +6708,7 @@
    "titel": "Einzelkurs Null Bock – und dann?"
   },
   "titel": "Die ganze Brücke: Schau, wie weit du bist",
-  "text": "Diogo hat am Donnerstag mit N. Pässe gespielt und war am Mittwoch drauf wieder beim Futsal. Vorübung: „Wer ist N.?“ Der oder die Jugendliche nennt den Namen und zwei Beweise aus der N.-Akte; erst dann liest die Fachkraft Noras Zettel vor. Die Kernaktivität: Die fünf Abschnitts-Karten liegen als Brücke auf dem Boden, und der oder die Jugendliche legt die Ereignis-Karten von Diogo, Aylin und Pol an – was ist passiert, welcher Abschnitt hat geholfen? Auch, was nicht geklappt hat, bekommt einen Platz. Zum Schluss stellt er oder sie sich auf den Abschnitt, der am meisten gebracht hat, und gibt einem Jungen aus der 7G mit „null Bock auf alles“ einen Tipp in acht Wörtern; nur wenn nichts kommt: „Ich gegen mich von früher – nicht gegen die anderen.“",
+  "text": "Diogo hat am Donnerstag mit N. Pässe gespielt und war am Mittwoch drauf wieder beim Futsal. Vorübung: „Wer ist N.?“ Der oder die Jugendliche nennt den Namen und zwei Beweise aus der N.-Akte; erst dann bestätigt die Fachkraft. Die Kernaktivität: Die fünf Abschnitts-Karten liegen als Brücke auf dem Boden, und der oder die Jugendliche legt die Ereignis-Karten von Diogo, Aylin und Pol an – was ist passiert, welcher Abschnitt hat geholfen? Auch, was nicht geklappt hat, bekommt einen Platz. Zum Schluss stellt er oder sie sich auf den Abschnitt, der am meisten gebracht hat, und gibt einem Jungen aus der 7G mit „null Bock auf alles“ einen Tipp in acht Wörtern; nur wenn nichts kommt: „Ich gegen mich von früher – nicht gegen die anderen.“",
   "sagen": [
    "Wer ist N.? Name und zwei Beweise.",
    "Welcher Abschnitt der Brücke hat hier geholfen?",
@@ -6938,7 +6882,7 @@
     },
     {
      "art": "text",
-     "text": "Zum Schluss: Nora hat Diogo noch einen Zettel gegeben – diesmal mit Namen: „Mëttwoch, 18 Auer. Mir huelen dech of. – Nora“ (Mittwoch, 18 Uhr. Wir holen dich ab.)",
+     "text": "Zum Schluss hat N. Diogo noch einen Zettel gegeben – diesmal mit Namen: „Mëttwoch, 18 Auer. Mir huelen dech of. – ________“ (Mittwoch, 18 Uhr. Wir holen dich ab.) Den Namen schreibst du selbst hin.",
      "klein": true
     }
    ],
@@ -7026,13 +6970,13 @@
     },
     {
      "art": "text",
-     "text": "Pour finir : Nora a encore donné un papier à Diogo – cette fois signé : « Mëttwoch, 18 Auer. Mir huelen dech of. – Nora » (Mercredi, 18 h. On passe te chercher.)",
+     "text": "Pour finir, N. a encore donné un papier à Diogo – cette fois signé : « Mëttwoch, 18 Auer. Mir huelen dech of. – ________ » (Mercredi, 18 h. On passe te chercher.) Le nom, c’est toi qui l’écris.",
      "klein": true
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 steht schon fest: Name und zwei Beweise, wie im Gespräch. Aufgabe 2 ist die Brücken-Karte, für sich oder für Diogo; die fünf Kästchen sind für kleine Schritte danach. Die Fachkraft liest die Hilfe-Nummern vor, dann den letzten Zettel. Das Blatt kommt als letztes in die Mappe.",
+     "text": "Aufgabe 1 steht schon fest: Name und zwei Beweise, wie im Gespräch. Aufgabe 2 ist die Brücken-Karte, für sich oder für Diogo; die fünf Kästchen sind für kleine Schritte danach. Die Fachkraft liest die Hilfe-Nummern vor; zum Schluss setzt der oder die Jugendliche den Namen unter den letzten Zettel. Das Blatt kommt als letztes in die Mappe.",
      "sagen": [
       "Welcher Abschnitt hat dir selbst am meisten gebracht?",
       "Wer würde dir helfen, wenn es wieder hakt?"
@@ -7040,7 +6984,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, schreibt die Fachkraft die Brücken-Karte nach Diktat. Fortschritte werden nicht verglichen – nur mit dem früheren Ich."
     },
     "fr": {
-     "text": "L’exercice 1 est déjà réglé : le nom et deux preuves, comme dans la discussion. L’exercice 2 est la carte du pont, pour soi ou pour Diogo ; les cinq cases sont pour les petits pas d’après. L’adulte lit les numéros d’aide, puis le dernier papier. La fiche va en dernier dans le dossier.",
+     "text": "L’exercice 1 est déjà réglé : le nom et deux preuves, comme dans la discussion. L’exercice 2 est la carte du pont, pour soi ou pour Diogo ; les cinq cases sont pour les petits pas d’après. L’adulte lit les numéros d’aide ; pour finir, le ou la jeune écrit le nom sous le dernier papier. La fiche va en dernier dans le dossier.",
      "sagen": [
       "Quelle partie t’a le plus apporté à toi ?",
       "Qui t’aiderait si ça bloque de nouveau ?"
@@ -7051,7 +6995,7 @@
   },
   "fr": {
    "titel": "Le pont entier : regarde le chemin",
-   "text": "Jeudi, Diogo a fait des passes avec N., et le mercredi suivant, il était de nouveau au futsal. Échauffement : « Qui est N. ? » Le ou la jeune donne le nom et deux preuves du dossier N. ; seulement ensuite, l’adulte lit le papier de Nora. L’activité principale : les cinq cartes parties forment un pont au sol, et le ou la jeune y pose les cartes événements de Diogo, d’Aylin et de Pol – que s’est-il passé, quelle partie a aidé ? Ce qui n’a pas marché a aussi sa place. Pour finir, il ou elle se met sur la partie qui a le plus apporté et donne à un garçon de 7G qui a « la flemme de tout » un conseil en huit mots ; seulement si rien ne vient : « Moi contre moi d’avant – pas contre les autres. »",
+   "text": "Jeudi, Diogo a fait des passes avec N., et le mercredi suivant, il était de nouveau au futsal. Échauffement : « Qui est N. ? » Le ou la jeune donne le nom et deux preuves du dossier N. ; seulement ensuite, l’adulte confirme. L’activité principale : les cinq cartes parties forment un pont au sol, et le ou la jeune y pose les cartes événements de Diogo, d’Aylin et de Pol – que s’est-il passé, quelle partie a aidé ? Ce qui n’a pas marché a aussi sa place. Pour finir, il ou elle se met sur la partie qui a le plus apporté et donne à un garçon de 7G qui a « la flemme de tout » un conseil en huit mots ; seulement si rien ne vient : « Moi contre moi d’avant – pas contre les autres. »",
    "sagen": [
     "Qui est N. ? Le nom et deux preuves.",
     "Quelle partie du pont a aidé ici ?",
@@ -7074,7 +7018,7 @@
      "Die Hinweise 2 bis 5 aus der Mappe bereitlegen; Platz auf dem Boden für die Brücke.",
      "Einen beobachteten Fortschritt notieren (konkret, mit Beleg) – falls nichts kommt."
     ],
-    "aufbau": "0′ „Wer ist N.? Name und zwei Beweise.“ Erst danach Noras Zettel vorlesen\n2′ Brücke am Boden – „Welcher Abschnitt hat geholfen?“\n6′ was nicht klappt – „Wohin gehört das?“\n8′ auf den stärksten Abschnitt stellen, Tipp für die 7G\n10′ Blatt: Brücken-Karte, Hilfe\n15′ Ende\nMuss: N., Brücke, Karte. Wird es knapp: Ereignisse mündlich.",
+    "aufbau": "0′ „Wer ist N.? Name und zwei Beweise.“ Bestätigen mit der Karte „Nur für dich“ – der Zettel kommt erst am Ende\n2′ Brücke am Boden – „Welcher Abschnitt hat geholfen?“\n6′ was nicht klappt – „Wohin gehört das?“\n8′ auf den stärksten Abschnitt stellen, Tipp für die 7G\n10′ Blatt: Brücken-Karte, Hilfe\n15′ Ende\nMuss: N., Brücke, Karte. Wird es knapp: Ereignisse mündlich.",
     "karten": [
      {
       "titel": "Abschnitts-Karten",
@@ -7141,7 +7085,7 @@
      "Préparer les indices 2 à 5 du dossier ; de la place au sol pour le pont.",
      "Noter un progrès observé (concret, avec preuve) – au cas où rien ne vient."
     ],
-    "aufbau": "0′ « Qui est N. ? Le nom et deux preuves. » Seulement ensuite le papier de Nora\n2′ le pont au sol – « Quelle partie a aidé ? »\n6′ ce qui coince – « Ça va où ? »\n8′ se mettre sur la partie la plus forte, conseil pour la 7G\n10′ fiche : carte du pont, aide\n15′ fin\nIndispensable : N., pont, carte.",
+    "aufbau": "0′ « Qui est N. ? Le nom et deux preuves. » Confirmer avec la carte « Pour l’adulte » – le papier vient à la fin\n2′ le pont au sol – « Quelle partie a aidé ? »\n6′ ce qui coince – « Ça va où ? »\n8′ se mettre sur la partie la plus forte, conseil pour la 7G\n10′ fiche : carte du pont, aide\n15′ fin\nIndispensable : N., pont, carte.",
     "karten": [
      {
       "titel": "Cartes parties",
