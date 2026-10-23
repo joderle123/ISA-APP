@@ -187,7 +187,7 @@
   "ort": "raum",
   "werkzeug": {
    "de": "Ton-Check: immer wieder, gezielt, ungleich stark? Dann ist es Mobbing – auch im Chat.",
-   "fr": "Test du son : répété, ciblé, inégal ? Alors c’est du harcèlement, en ligne aussi."
+   "fr": "Test du son : répété, ciblé, forces inégales ? Alors c’est du harcèlement, en ligne aussi."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -267,7 +267,7 @@
     },
     {
      "art": "linien",
-     "anzahl": 1,
+     "anzahl": 2,
      "fuellen": false
     },
     {
@@ -327,7 +327,7 @@
        "symbol": "wissen",
        "titel": "Curseur 1 : Écouter",
        "punkte": [
-        "Test du son : répété ? ciblé ? inégal ?"
+        "Test du son : répété ? ciblé ? forces inégales ?"
        ]
       }
      ],
@@ -376,7 +376,7 @@
     },
     {
      "art": "linien",
-     "anzahl": 1,
+     "anzahl": 2,
      "fuellen": false
     },
     {
@@ -447,7 +447,7 @@
   },
   "fr": {
    "titel": "Curseur 1 : blague, dispute ou harcèlement ?",
-   "text": "L’adulte rit trois fois « haha » – amical, gêné, moqueur. Puis l’enfant rit une fois, amical ou gêné, la main sur le ventre : où est le rire ? L’adulte dit ce qu’il a entendu. Sur le papier, il n’y a que « haha » – c’était lequel ? Dans un chat, le ton disparaît. L’enveloppe de Filipa : au cycle 4.2 à Bettembourg, le message vocal de Jules est devenu le « Jules-Remix ». L’enfant est l’expert du son à la table de mixage. Il pose les six pistes au sol comme une ligne du temps, la parcourt et vérifie : Encore et encore ? Ciblé contre une personne ? Inégal ? Pour chaque oui, un crayon sur la piste qui le prouve. Puis son verdict – blague, dispute ou harcèlement – avec une raison. Choix : en message vocal à Filipa ou par écrit.",
+   "text": "L’adulte rit trois fois « haha » – amical, gêné, moqueur. Puis l’enfant rit une fois, amical ou gêné, la main sur le ventre : où est le rire ? L’adulte dit ce qu’il a entendu. Sur le papier, il n’y a que « haha » – c’était lequel ? Dans un chat, le ton disparaît. L’enveloppe de Filipa : au cycle 4.2 à Bettembourg, le message vocal de Jules est devenu le « Jules-Remix ». L’enfant est l’expert du son à la table de mixage. Il pose les six pistes au sol comme une ligne du temps, la parcourt et vérifie : ça se répète ? ça vise une seule personne ? les forces sont inégales ? Pour chaque oui, un crayon sur la piste qui le prouve. Puis son verdict – blague, dispute ou harcèlement – avec une raison. Choix : en message vocal à Filipa ou par écrit.",
    "sagen": [
     "Je ris trois fois. Quel rire est une blague ?",
     "Maintenant, il y a juste écrit « haha ». C’était lequel ?",
@@ -538,6 +538,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -567,9 +571,9 @@
      {
       "titel": "Test du son et verdict",
       "karten": [
-       "Encore et encore ?",
-       "Ciblé contre une personne ?",
-       "Inégal ?",
+       "Ça se répète ?",
+       "Ça vise une seule personne ?",
+       "Forces inégales ?",
        "Blague",
        "Dispute",
        "Harcèlement"
@@ -617,6 +621,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -699,7 +707,7 @@
   "ort": "raum",
   "werkzeug": {
    "de": "Ton-Check: immer wieder, gezielt, ungleich stark? Dann ist es Mobbing – auch im Chat.",
-   "fr": "Test du son : répété, ciblé, inégal ? Alors c’est du harcèlement, en ligne aussi."
+   "fr": "Test du son : répété, ciblé, forces inégales ? Alors c’est du harcèlement, en ligne aussi."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -827,7 +835,7 @@
        "symbol": "wissen",
        "titel": "Curseur 1 : Écouter",
        "punkte": [
-        "Test du son : répété ? ciblé ? inégal ?"
+        "Test du son : répété ? ciblé ? forces inégales ?"
        ]
       }
      ],
@@ -935,7 +943,7 @@
   },
   "fr": {
    "titel": "Curseur 1 : blague, dispute ou harcèlement ?",
-   "text": "L’adulte rit trois fois « haha » – amical, gêné, moqueur. Puis l’enfant rit une fois, amical ou gêné, la main sur le ventre : où est le rire ? L’adulte dit ce qu’il a entendu. Sur le papier, il n’y a que « haha » – c’était lequel ? Dans un chat, le ton disparaît. L’enveloppe de Filipa : au cycle 4.2 à Bettembourg, le message vocal de Jules est devenu le « Jules-Remix ». L’enfant est l’expert du son à la table de mixage. Il pose les six pistes au sol comme une ligne du temps, la parcourt et vérifie : Encore et encore ? Ciblé contre une personne ? Inégal ? Pour chaque oui, un crayon sur la piste qui le prouve. Puis son verdict – blague, dispute ou harcèlement – avec une raison. Choix : en message vocal à Filipa ou par écrit.",
+   "text": "L’adulte rit trois fois « haha » – amical, gêné, moqueur. Puis l’enfant rit une fois, amical ou gêné, la main sur le ventre : où est le rire ? L’adulte dit ce qu’il a entendu. Sur le papier, il n’y a que « haha » – c’était lequel ? Dans un chat, le ton disparaît. L’enveloppe de Filipa : au cycle 4.2 à Bettembourg, le message vocal de Jules est devenu le « Jules-Remix ». L’enfant est l’expert du son à la table de mixage. Il pose les six pistes au sol comme une ligne du temps, la parcourt et vérifie : ça se répète ? ça vise une seule personne ? les forces sont inégales ? Pour chaque oui, un crayon sur la piste qui le prouve. Puis son verdict – blague, dispute ou harcèlement – avec une raison. Choix : en message vocal à Filipa ou par écrit.",
    "sagen": [
     "Je ris trois fois. Quel rire est une blague ?",
     "Maintenant, il y a juste écrit « haha ». C’était lequel ?",
@@ -1026,6 +1034,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -1055,9 +1067,9 @@
      {
       "titel": "Test du son et verdict",
       "karten": [
-       "Encore et encore ?",
-       "Ciblé contre une personne ?",
-       "Inégal ?",
+       "Ça se répète ?",
+       "Ça vise une seule personne ?",
+       "Forces inégales ?",
        "Blague",
        "Dispute",
        "Harcèlement"
@@ -1105,6 +1117,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -1164,7 +1180,7 @@
   "bogen": "wahrnehmen",
   "werkzeug": {
    "de": "Ton-Check: immer wieder, gezielt, ungleich stark? Dann ist es Mobbing – auch im Chat.",
-   "fr": "Test du son : répété, ciblé, inégal ? Alors c’est du harcèlement, en ligne aussi."
+   "fr": "Test du son : répété, ciblé, forces inégales ? Alors c’est du harcèlement, en ligne aussi."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -1208,7 +1224,7 @@
   },
   "fr": {
    "titel": "Curseur 1 : l’expérience des rires",
-   "text": "L’adulte et l’enfant rient l’un après l’autre, de trois façons – amical, gêné, moqueur –, l’autre écoute les yeux fermés et dit lequel c’était. Puis tous deux écrivent un « haha » : là, c’est impossible. Ensuite, l’adulte lit les pistes de Jules, du 4.2, comme des messages vocaux, avec la voix et des pauses. Pour chaque question du test, l’enfant se lève dès qu’il entend un oui : Encore et encore ? Ciblé contre une personne ? Inégal ? Debout, il cite la piste. Échange des rôles : l’enfant donne seulement la lettre et l’heure d’une piste (« C, lundi 19 h 40 »). L’adulte la lit et se lève – une fois exprès à tort, l’enfant corrige. Phrase-clé : « Rire avec ne prouve pas que c’est drôle. Encore et encore, ciblé, inégal – alors c’est du harcèlement. »",
+   "text": "L’adulte et l’enfant rient l’un après l’autre, de trois façons – amical, gêné, moqueur –, l’autre écoute les yeux fermés et dit lequel c’était. Puis tous deux écrivent un « haha » : là, c’est impossible. Ensuite, l’adulte lit les pistes de Jules, du 4.2, comme des messages vocaux, avec la voix et des pauses. Pour chaque question du test, l’enfant se lève dès qu’il entend un oui : ça se répète ? ça vise une seule personne ? les forces sont inégales ? Debout, il cite la piste. Échange des rôles : l’enfant donne seulement la lettre et l’heure d’une piste (« C, lundi 19 h 40 »). L’adulte la lit et se lève – une fois exprès à tort, l’enfant corrige. Phrase-clé : « Rire avec ne prouve pas que c’est drôle. Répété, ciblé, avec des forces inégales – alors c’est du harcèlement. »",
    "sagen": [
     "Ferme les yeux. C’était quel rire ?",
     "Maintenant juste écrit : haha. Alors ?",
@@ -1266,6 +1282,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -1318,6 +1338,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -1377,7 +1401,7 @@
   "bogen": "wahrnehmen",
   "werkzeug": {
    "de": "Ton-Check: immer wieder, gezielt, ungleich stark? Dann ist es Mobbing – auch im Chat.",
-   "fr": "Test du son : répété, ciblé, inégal ? Alors c’est du harcèlement, en ligne aussi."
+   "fr": "Test du son : répété, ciblé, forces inégales ? Alors c’est du harcèlement, en ligne aussi."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -1420,7 +1444,7 @@
   },
   "fr": {
    "titel": "Curseur 1 : le chat en BD",
-   "text": "L’adulte lit calmement les pistes de Jules, du 4.2 : le vocal avec la chanson, le « trop bien !! » de Nour, le remix de Kilian, le « haha » et le « Effacez ça » de Jules, le bus du mardi, « Jules-la-souris » le mercredi. L’enfant dessine quatre cases de BD, des bonshommes bâtons et des bulles suffisent. Puis il vérifie chaque case avec trois questions : Encore et encore ? Ciblé contre une personne ? Inégal ? Pour chaque oui, il met un point rouge dans la case. Échange des rôles : l’adulte écrit sous une case « C’était pour rire », l’enfant le réfute avec une piste. Phrase-clé : « Rire avec ne prouve pas que c’est drôle. Encore et encore, ciblé, inégal – alors il faut l’aide des adultes. »",
+   "text": "L’adulte lit calmement les pistes de Jules, du 4.2 : le vocal avec la chanson, le « trop bien !! » de Nour, le remix de Kilian, le « haha » et le « Effacez ça » de Jules, le bus du mardi, « Jules-la-souris » le mercredi. L’enfant dessine quatre cases de BD, des bonshommes bâtons et des bulles suffisent. Puis il vérifie chaque case avec trois questions : ça se répète ? ça vise une seule personne ? les forces sont inégales ? Pour chaque oui, il met un point rouge dans la case. Échange des rôles : l’adulte écrit sous une case « C’était pour rire », l’enfant le réfute avec une piste. Phrase-clé : « Rire avec ne prouve pas que c’est drôle. Répété, ciblé, avec des forces inégales – alors il faut l’aide des adultes. »",
    "sagen": [
     "Je lis, tu dessines. Des bonshommes bâtons suffisent.",
     "Où mets-tu un point rouge ?",
@@ -1477,6 +1501,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -1528,6 +1556,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -1980,6 +2012,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -2066,6 +2102,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -2522,6 +2562,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -2608,6 +2652,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -2771,6 +2819,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -2823,6 +2875,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -2988,6 +3044,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -3039,6 +3099,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -3505,6 +3569,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -3588,6 +3656,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -4060,6 +4132,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -4143,6 +4219,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -4307,6 +4387,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -4358,6 +4442,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -4521,6 +4609,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -4572,6 +4664,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -5037,6 +5133,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -5121,6 +5221,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -5594,6 +5698,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -5678,6 +5786,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -5850,6 +5962,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -5911,6 +6027,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -6089,6 +6209,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -6156,6 +6280,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -6592,6 +6720,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -6670,6 +6802,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -7104,6 +7240,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -7182,6 +7322,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -7346,6 +7490,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -7398,6 +7546,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -7561,6 +7713,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -7612,6 +7768,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -7954,7 +8114,7 @@
   },
   "hilfen": {
    "de": {
-    "haken": "Wie ist es ausgegangen? Wer sechs Treffen mit Jules mitgefiebert hat, will das wissen – und hört, dass Jules selbst entscheidet, ob er wieder singt.",
+    "haken": "Die Fachkraft steht an der Tür, das Kind bei den Reglern am Boden: Es sagt jeden Zug so laut, wie er im echten Moment sein muss – und hört, was an der Tür ankommt.",
     "vorbereitung": [
      "Regler-Karten und Situationskarten (unten) schneiden",
      "Regler-Karten als Reihe auf den Boden legen",
@@ -8027,13 +8187,17 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
     ]
    },
    "fr": {
-    "haken": "Comment ça s’est fini ? Qui a suivi Jules pendant six rencontres veut le savoir – et entend que c’est Jules qui décide s’il chante à nouveau.",
+    "haken": "L’adulte se tient à la porte, l’enfant près des curseurs au sol : il dit chaque geste au volume qu’il faut vraiment – et entend ce qui arrive à la porte.",
     "vorbereitung": [
      "Découper les cartes-curseurs et les cartes-situations (ci-dessous)",
      "Poser les cartes-curseurs en rangée au sol",
@@ -8104,6 +8268,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -8472,7 +8640,7 @@
   },
   "hilfen": {
    "de": {
-    "haken": "Wie ist es ausgegangen? Wer sechs Treffen mit Jules mitgefiebert hat, will das wissen – und hört, dass Jules selbst entscheidet, ob er wieder singt.",
+    "haken": "Die Fachkraft steht an der Tür, das Kind bei den Reglern am Boden: Es sagt jeden Zug so laut, wie er im echten Moment sein muss – und hört, was an der Tür ankommt.",
     "vorbereitung": [
      "Regler-Karten und Situationskarten (unten) schneiden",
      "Regler-Karten als Reihe auf den Boden legen",
@@ -8545,13 +8713,17 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
     ]
    },
    "fr": {
-    "haken": "Comment ça s’est fini ? Qui a suivi Jules pendant six rencontres veut le savoir – et entend que c’est Jules qui décide s’il chante à nouveau.",
+    "haken": "L’adulte se tient à la porte, l’enfant près des curseurs au sol : il dit chaque geste au volume qu’il faut vraiment – et entend ce qui arrive à la porte.",
     "vorbereitung": [
      "Découper les cartes-curseurs et les cartes-situations (ci-dessous)",
      "Poser les cartes-curseurs en rangée au sol",
@@ -8622,6 +8794,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -8796,6 +8972,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -8858,6 +9038,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",
@@ -9021,6 +9205,10 @@
       "url": "https://men.public.lu"
      },
      {
+      "titel": "MENJE – Hilfen in der Grundschule: I-EBS und ESEB der Direction de région, über Titulaire und Schulkomitee (Luxemburg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
+     },
+     {
       "titel": "CePAS – psycho-soziale Dienste im Lycée (SePAS), Luxemburg",
       "url": "https://cepas.public.lu"
      }
@@ -9072,6 +9260,10 @@
      {
       "titel": "MENJE – campagne « Exit Mobbing » avec questions et réponses (Luxembourg)",
       "url": "https://men.public.lu"
+     },
+     {
+      "titel": "MENJE – aides au fondamental : I-EBS et ESEB de la direction de région, via titulaire et comité d’école (Luxembourg)",
+      "url": "https://men.public.lu/fr/systeme-educatif/eleves-besoins-specifiques/enseignement-fondamental.html"
      },
      {
       "titel": "CePAS – services psycho-sociaux au lycée (SePAS), Luxembourg",

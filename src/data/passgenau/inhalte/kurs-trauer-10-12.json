@@ -294,7 +294,7 @@
     },
     {
      "art": "text",
-     "text": "Wenn du magst, bis zum nächsten Mal: Achte darauf, wo du ein Nebel-Wort hörst.",
+     "text": "Wenn du magst: Achte darauf, wo du ein Nebel-Wort hörst.",
      "klein": true
     }
    ],
@@ -375,7 +375,7 @@
     },
     {
      "art": "text",
-     "text": "Si tu veux, d’ici la prochaine fois : remarque où tu entends un mot brouillard.",
+     "text": "Si tu veux : remarque où tu entends un mot brouillard.",
      "klein": true
     }
    ],
@@ -751,7 +751,7 @@
     },
     {
      "art": "text",
-     "text": "Wenn du magst, bis zum nächsten Mal: Achte darauf, wo du ein Nebel-Wort hörst.",
+     "text": "Wenn du magst: Achte darauf, wo du ein Nebel-Wort hörst.",
      "klein": true
     }
    ],
@@ -834,7 +834,7 @@
     },
     {
      "art": "text",
-     "text": "Si tu veux, d’ici la prochaine fois : remarque où tu entends un mot brouillard.",
+     "text": "Si tu veux : remarque où tu entends un mot brouillard.",
      "klein": true
     }
    ],
@@ -1544,7 +1544,7 @@
    "titel": "Einzelkurs Das Mobile"
   },
   "titel": "Regel 2: Wellen – ist Mett Dércio egal?",
-  "text": "Die Fachkraft knüpft an: Am Mobile fehlt noch immer Artas Vogel. Dann erzählt sie von Dércio: Seit Mett gestorben ist, hat er nicht einmal geweint. Er repariert in Metts Werkstatt Fahrräder, macht Witze und sagt „Tá tudo bem“ – alles gut. Jill sagt: „Dem ist Mett egal.“ Das Kind ist Gutachterin oder Gutachter. Die Fachkraft liest einen Satz über Trauer vor; stimmt er, steht das Kind auf, stimmt er nicht, bleibt es sitzen und sagt, warum. Nach sechs Sätzen legt die Fachkraft Dércios Momente als Beweise hin, und das Kind gibt sein Urteil: Ist Dércio Mett egal? Merksatz: „Trauer kommt in Wellen. Jede Welle geht wieder – reden, tun, beides ist okay.“",
+  "text": "Die Fachkraft knüpft an: Am Mobile fehlt noch immer Artas Vogel. Dann erzählt sie von Dércio: Seit Mett gestorben ist, hat er nicht einmal geweint. Er repariert in Metts Werkstatt Fahrräder, macht Witze und sagt auf Portugiesisch „Tá tudo bem“ – alles gut. Jill sagt: „Dem ist Mett egal.“ Das Kind ist Gutachterin oder Gutachter. Die Fachkraft liest einen Satz über Trauer vor; stimmt er, steht das Kind auf, stimmt er nicht, bleibt es sitzen und sagt, warum. Nach sechs Sätzen legt die Fachkraft Dércios Momente als Beweise hin, und das Kind gibt sein Urteil: Ist Dércio Mett egal? Merksatz: „Trauer kommt in Wellen. Jede Welle geht wieder – reden, tun, beides ist okay.“",
   "sagen": [
    "Dércio hat nicht geweint. Ist ihm Mett egal? Du entscheidest – aber erst nach den Beweisen.",
    "Stimmt der Satz? Dann steh auf. Wenn nicht: Bleib sitzen. Warum?",
@@ -1728,7 +1728,7 @@
     },
     {
      "art": "text",
-     "text": "Wenn du magst, bis zum nächsten Mal: Such dir ein Lied, das dir guttut.",
+     "text": "Wenn du magst: Such dir ein Lied, das dir guttut.",
      "klein": true
     }
    ],
@@ -1760,7 +1760,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Dessine la semaine de Dércio comme une vague : en haut = forte vague, en bas = calme.",
+     "text": "Dessine la semaine de Dércio en vague : en haut, forte vague ; en bas, calme.",
      "symbole": [
       "malen"
      ]
@@ -1821,12 +1821,12 @@
     },
     {
      "art": "text",
-     "text": "Indice : le long bâton à crochet que Mett avait fabriqué n’est plus dans son coin.",
+     "text": "Indice : le bâton à crochet de Mett n’est plus dans son coin.",
      "klein": true
     },
     {
      "art": "text",
-     "text": "Si tu veux, d’ici la prochaine fois : trouve une chanson qui te fait du bien.",
+     "text": "Si tu veux : trouve une chanson qui te fait du bien.",
      "klein": true
     }
    ],
@@ -1849,7 +1849,7 @@
   },
   "fr": {
    "titel": "Règle 2 : les vagues – Dércio s’en moque-t-il ?",
-   "text": "L’adulte fait le lien : il manque toujours l’oiseau d’Arta au mobile. Puis l’adulte parle de Dércio : depuis que Mett est mort, il n’a pas pleuré une seule fois. Il répare des vélos dans l’atelier de Mett, fait des blagues et dit « Tá tudo bem » – tout va bien. Jill dit : « Mett, il s’en moque. » L’enfant est l’expert. L’adulte lit une phrase sur le deuil ; si elle est vraie, l’enfant se lève, si elle est fausse, il reste assis et dit pourquoi. Après six phrases, l’adulte pose les moments de Dércio comme preuves, et l’enfant donne son verdict : Mett lui est-il égal ? Phrase-clé : « Le deuil vient par vagues. Chaque vague repart – parler, agir, les deux, ça va. »",
+   "text": "L’adulte fait le lien : il manque toujours l’oiseau d’Arta au mobile. Puis l’adulte parle de Dércio : depuis que Mett est mort, il n’a pas pleuré une seule fois. Il répare des vélos dans l’atelier de Mett, fait des blagues et dit en portugais « Tá tudo bem » – tout va bien. Jill dit : « Mett, il s’en moque. » L’enfant est l’expert. L’adulte lit une phrase sur le deuil ; si elle est vraie, l’enfant se lève, si elle est fausse, il reste assis et dit pourquoi. Après six phrases, l’adulte pose les moments de Dércio comme preuves, et l’enfant donne son verdict : Mett lui est-il égal ? Phrase-clé : « Le deuil vient par vagues. Chaque vague repart – parler, agir, les deux, ça va. »",
    "sagen": [
     "Dércio n’a pas pleuré. Mett lui est égal ? C’est toi qui décides – mais après les preuves.",
     "La phrase est vraie ? Alors lève-toi. Sinon, reste assis. Pourquoi ?",
@@ -2016,7 +2016,7 @@
    "titel": "Einzelkurs Das Mobile"
   },
   "titel": "Regel 2: Wellen – ist Mett Dércio egal?",
-  "text": "Die Fachkraft knüpft an: Am Mobile fehlt noch immer Artas Vogel. Dann erzählt sie von Dércio: Seit Mett gestorben ist, hat er nicht einmal geweint. Er repariert in Metts Werkstatt Fahrräder, macht Witze und sagt „Tá tudo bem“ – alles gut. Jill sagt: „Dem ist Mett egal.“ Das Kind ist Gutachterin oder Gutachter. Die Fachkraft liest einen Satz über Trauer vor; stimmt er, steht das Kind auf, stimmt er nicht, bleibt es sitzen und sagt, warum. Nach sechs Sätzen legt die Fachkraft Dércios Momente als Beweise hin, und das Kind gibt sein Urteil: Ist Dércio Mett egal? Merksatz: „Trauer kommt in Wellen. Jede Welle geht wieder – reden, tun, beides ist okay.“",
+  "text": "Die Fachkraft knüpft an: Am Mobile fehlt noch immer Artas Vogel. Dann erzählt sie von Dércio: Seit Mett gestorben ist, hat er nicht einmal geweint. Er repariert in Metts Werkstatt Fahrräder, macht Witze und sagt auf Portugiesisch „Tá tudo bem“ – alles gut. Jill sagt: „Dem ist Mett egal.“ Das Kind ist Gutachterin oder Gutachter. Die Fachkraft liest einen Satz über Trauer vor; stimmt er, steht das Kind auf, stimmt er nicht, bleibt es sitzen und sagt, warum. Nach sechs Sätzen legt die Fachkraft Dércios Momente als Beweise hin, und das Kind gibt sein Urteil: Ist Dércio Mett egal? Merksatz: „Trauer kommt in Wellen. Jede Welle geht wieder – reden, tun, beides ist okay.“",
   "sagen": [
    "Dércio hat nicht geweint. Ist ihm Mett egal? Du entscheidest – aber erst nach den Beweisen.",
    "Stimmt der Satz? Dann steh auf. Wenn nicht: Bleib sitzen. Warum?",
@@ -2203,7 +2203,7 @@
     },
     {
      "art": "text",
-     "text": "Wenn du magst, bis zum nächsten Mal: Such dir ein Lied, das dir guttut.",
+     "text": "Wenn du magst: Such dir ein Lied, das dir guttut.",
      "klein": true
     }
    ],
@@ -2235,7 +2235,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Dessine la semaine de Dércio comme une vague : en haut = forte vague, en bas = calme.",
+     "text": "Dessine la semaine de Dércio en vague : en haut, forte vague ; en bas, calme.",
      "symbole": [
       "malen"
      ]
@@ -2299,12 +2299,12 @@
     },
     {
      "art": "text",
-     "text": "Indice : le long bâton à crochet que Mett avait fabriqué n’est plus dans son coin.",
+     "text": "Indice : le bâton à crochet de Mett n’est plus dans son coin.",
      "klein": true
     },
     {
      "art": "text",
-     "text": "Si tu veux, d’ici la prochaine fois : trouve une chanson qui te fait du bien.",
+     "text": "Si tu veux : trouve une chanson qui te fait du bien.",
      "klein": true
     }
    ],
@@ -2327,7 +2327,7 @@
   },
   "fr": {
    "titel": "Règle 2 : les vagues – Dércio s’en moque-t-il ?",
-   "text": "L’adulte fait le lien : il manque toujours l’oiseau d’Arta au mobile. Puis l’adulte parle de Dércio : depuis que Mett est mort, il n’a pas pleuré une seule fois. Il répare des vélos dans l’atelier de Mett, fait des blagues et dit « Tá tudo bem » – tout va bien. Jill dit : « Mett, il s’en moque. » L’enfant est l’expert. L’adulte lit une phrase sur le deuil ; si elle est vraie, l’enfant se lève, si elle est fausse, il reste assis et dit pourquoi. Après six phrases, l’adulte pose les moments de Dércio comme preuves, et l’enfant donne son verdict : Mett lui est-il égal ? Phrase-clé : « Le deuil vient par vagues. Chaque vague repart – parler, agir, les deux, ça va. »",
+   "text": "L’adulte fait le lien : il manque toujours l’oiseau d’Arta au mobile. Puis l’adulte parle de Dércio : depuis que Mett est mort, il n’a pas pleuré une seule fois. Il répare des vélos dans l’atelier de Mett, fait des blagues et dit en portugais « Tá tudo bem » – tout va bien. Jill dit : « Mett, il s’en moque. » L’enfant est l’expert. L’adulte lit une phrase sur le deuil ; si elle est vraie, l’enfant se lève, si elle est fausse, il reste assis et dit pourquoi. Après six phrases, l’adulte pose les moments de Dércio comme preuves, et l’enfant donne son verdict : Mett lui est-il égal ? Phrase-clé : « Le deuil vient par vagues. Chaque vague repart – parler, agir, les deux, ça va. »",
    "sagen": [
     "Dércio n’a pas pleuré. Mett lui est égal ? C’est toi qui décides – mais après les preuves.",
     "La phrase est vraie ? Alors lève-toi. Sinon, reste assis. Pourquoi ?",
@@ -3178,7 +3178,7 @@
     },
     {
      "art": "text",
-     "text": "Wenn du magst, bis zum nächsten Mal: Mach einmal bewusst Pause mit etwas, das dir Spaß macht.",
+     "text": "Wenn du magst: Mach einmal bewusst Pause mit etwas, das dir Spaß macht.",
      "klein": true
     }
    ],
@@ -3272,7 +3272,7 @@
     },
     {
      "art": "text",
-     "text": "Si tu veux, d’ici la prochaine fois : fais exprès une pause avec quelque chose qui te plaît.",
+     "text": "Si tu veux : fais exprès une pause avec quelque chose qui te plaît.",
      "klein": true
     }
    ],
@@ -3584,7 +3584,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Jill ist nur auf der Vermissen-Seite. Was bringt sie zur Leben-Seite? Kreuz an.",
+     "text": "Was bringt Jill zur Leben-Seite? Kreuz an.",
      "symbole": [
       "ankreuzen"
      ]
@@ -3600,7 +3600,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Enzo fragt: „Darf ich lachen?“ Was passt? Kreuz an.",
+     "text": "Enzo: „Darf ich lachen?“ Kreuz an, was passt.",
      "symbole": [
       "ankreuzen"
      ]
@@ -3650,7 +3650,7 @@
     },
     {
      "art": "text",
-     "text": "Wenn du magst, bis zum nächsten Mal: Mach einmal bewusst Pause mit etwas, das dir Spaß macht.",
+     "text": "Wenn du magst: Mach einmal bewusst Pause mit etwas, das dir Spaß macht.",
      "klein": true
     }
    ],
@@ -3682,7 +3682,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Jill reste du côté manque. Qu’est-ce qui l’emmène du côté vie ? Coche.",
+     "text": "Qu’est-ce qui emmène Jill du côté vie ? Coche.",
      "symbole": [
       "ankreuzen"
      ]
@@ -3692,13 +3692,13 @@
      "items": [
       "jouer aux cartes avec Dércio et Enzo",
       "chanter fort une chanson",
-      "relire encore les vieux messages d’Arta"
+      "relire les vieux messages d’Arta"
      ],
      "spalten": 1
     },
     {
      "art": "aufgabe",
-     "text": "Enzo demande : « J’ai le droit de rire ? » Qu’est-ce qui va ? Coche.",
+     "text": "Enzo : « J’ai le droit de rire ? » Coche ce qui va.",
      "symbole": [
       "ankreuzen"
      ]
@@ -3748,7 +3748,7 @@
     },
     {
      "art": "text",
-     "text": "Si tu veux, d’ici la prochaine fois : fais exprès une pause avec quelque chose qui te plaît.",
+     "text": "Si tu veux : fais exprès une pause avec quelque chose qui te plaît.",
      "klein": true
     }
    ],
@@ -4410,10 +4410,11 @@
    "titel": "Einzelkurs Das Mobile"
   },
   "titel": "Regel 4: Der Faden – wo ist Artas Vogel?",
-  "text": "Die Fachkraft legt die drei Spuren hin: Das Mobile hängt schief, Metts Haken-Stab ist weg, jemand fragte nach dem Porto ins Ausland. Neu dazu: Mett hat den Haken-Stab für Jill gebaut, damit sie vom Rollstuhl aus ihren Fisch anstupsen kann. Das Kind kombiniert und sagt selbst, wer den Vogel hat – und warum. Dann zeigt die Fachkraft Metts Satz, der auch nach seinem Tod gilt: „Der Faden bleibt, auch wenn ein Teil fehlt.“ Das Kind wählt Jill, Dércio oder Enzo und knotet für diese Person einen Erinnerungs-Faden: drei Knoten für erinnern, erzählen, weitertun; Ideen-Karten helfen. Wer mag, knotet einen Knoten für jemanden, an den es denkt – ohne zu sagen, für wen. Merksatz: „Der Faden bleibt – die Verbindung darf bleiben.“",
+  "text": "Die Fachkraft legt die drei Spuren hin: Das Mobile hängt schief, Metts Haken-Stab ist weg, jemand fragte nach dem Porto ins Ausland. Neu dazu: Mett hat den Haken-Stab für Jill gebaut, damit sie vom Rollstuhl aus ihren Fisch anstupsen kann. Das Kind kombiniert und sagt selbst, wer den Vogel hat – und warum. Dann Metts Satz – auch nach seinem Tod: „Der Faden bleibt, auch wenn ein Teil fehlt.“ Beide halten einen Faden straff; die Fachkraft gibt nach und zieht wieder an – das Kind spürt, dass er hält. Es wählt Jill, Dércio oder Enzo und knotet für sie einen Erinnerungs-Faden: drei Knoten für erinnern, erzählen, weitertun. Wer mag, knotet still einen Knoten für jemanden, an den es denkt. Merksatz: „Der Faden bleibt – die Verbindung darf bleiben.“",
   "sagen": [
    "Hier sind alle Spuren. Wer hat Artas Vogel – und warum?",
    "Hat Jill etwas Falsches gemacht? Was meinst du?",
+   "Halt den Faden straff. Ich gebe nach – was spürst du?",
    "Wähl eine Person. Welche drei Knoten bekommt ihr Faden?",
    "Ein Knoten für jemanden, an den du denkst? Nur wenn du magst – du musst nichts sagen."
   ],
@@ -4580,7 +4581,7 @@
     },
     {
      "art": "text",
-     "text": "Wenn du magst, bis zum nächsten Mal: Heb etwas auf, das dich an einen schönen Moment erinnert.",
+     "text": "Wenn du magst: Heb etwas auf, das dich an einen schönen Moment erinnert.",
      "klein": true
     }
    ],
@@ -4663,7 +4664,7 @@
     },
     {
      "art": "text",
-     "text": "Si tu veux, d’ici la prochaine fois : garde quelque chose qui te rappelle un beau moment.",
+     "text": "Si tu veux : garde quelque chose qui te rappelle un beau moment.",
      "klein": true
     }
    ],
@@ -4686,10 +4687,11 @@
   },
   "fr": {
    "titel": "Règle 4 : le fil – où est l’oiseau d’Arta ?",
-   "text": "L’adulte pose les trois indices sur la table : depuis lundi, le mobile penche, le bâton à crochet de Mett a disparu, quelqu’un a demandé le prix d’une lettre pour l’étranger. S’y ajoute un nouvel indice : Mett avait fabriqué le bâton à crochet pour Jill, pour qu’elle puisse pousser son poisson depuis son fauteuil roulant. L’enfant combine et dit lui-même qui a l’oiseau – et pourquoi. Puis l’adulte montre la phrase de Mett, toujours vraie après sa mort : « Le fil reste, même quand une pièce manque. » L’enfant choisit Jill, Dércio ou Enzo et noue pour cette personne un fil de souvenir : trois nœuds pour se souvenir, raconter, continuer ; des cartes-idées aident. S’il le veut, il fait un nœud pour quelqu’un à qui il pense lui-même – sans dire pour qui. Phrase-clé : « Le fil reste – le lien peut rester. »",
+   "text": "L’adulte pose les trois indices sur la table : depuis lundi, le mobile penche, le bâton à crochet de Mett a disparu, quelqu’un a demandé le prix d’une lettre pour l’étranger. S’y ajoute un nouvel indice : Mett avait fabriqué le bâton à crochet pour Jill, pour qu’elle puisse pousser son poisson depuis son fauteuil roulant. L’enfant combine et dit lui-même qui a l’oiseau – et pourquoi. Puis la phrase de Mett – vraie aussi après sa mort : « Le fil reste, même quand une pièce manque. » Tous deux tiennent un fil bien tendu ; l’adulte relâche, puis tire de nouveau – l’enfant sent qu’il tient. Il choisit Jill, Dércio ou Enzo et noue pour cette personne un fil de souvenir : trois nœuds pour se souvenir, raconter, continuer. S’il le veut, il fait en silence un nœud pour quelqu’un à qui il pense. Phrase-clé : « Le fil reste – le lien peut rester. »",
    "sagen": [
     "Voici tous les indices. Qui a l’oiseau d’Arta – et pourquoi ?",
     "Jill a-t-elle fait quelque chose de mal ? Qu’en penses-tu ?",
+    "Tiens le fil bien tendu. Je relâche – qu’est-ce que tu sens ?",
     "Choisis une personne. Quels trois nœuds pour son fil ?",
     "Un nœud pour quelqu’un à qui tu penses ? Seulement si tu veux – tu n’as rien à dire."
    ],
@@ -4709,7 +4711,7 @@
      "Wollfäden, je etwa 40 cm; Schere",
      "Karte „Nur für dich“ einmal lesen"
     ],
-    "aufbau": "Spickzettel – Kern 12′: 0′ Spur 1–3 hinlegen, Spur 4 dazu – „Wer hat den Vogel – und warum?“ · 3′ das Kind kombiniert und benennt · 5′ „Hat Jill etwas falsch gemacht?“ · 6′ Metts Satz · 7′ Person wählen, drei Knoten · 11′ freiwilliger eigener Knoten, Merksatz. Dann Blatt 5′. Muss: Fall lösen, ein Knoten. Kann: drei Knoten. Wird es knapp: Knoten legen statt knoten.",
+    "aufbau": "Spickzettel – Kern 12′: 0′ Spur 1–3 hinlegen, Spur 4 dazu – „Wer hat den Vogel – und warum?“ · 3′ das Kind kombiniert und benennt · 5′ „Hat Jill etwas falsch gemacht?“ · 6′ Metts Satz, Faden spannen · 8′ Person wählen, drei Knoten · 11′ freiwilliger eigener Knoten, Merksatz. Dann Blatt 5′. Muss: Fall lösen, Faden zu zweit, ein Knoten. Kann: drei Knoten. Wird es knapp: Knoten legen statt knoten.",
     "karten": [
      {
       "titel": "Spuren (4 Karten)",
@@ -4777,7 +4779,7 @@
      "Des fils de laine d’environ 40 cm ; ciseaux",
      "Lire une fois la carte « Pour l’adulte »"
     ],
-    "aufbau": "Aide-mémoire – cœur 12′ : 0′ indices 1–3, puis l’indice 4 – « Qui a l’oiseau – et pourquoi ? » · 3′ l’enfant combine et nomme · 5′ « Jill a-t-elle mal agi ? » · 6′ la phrase de Mett · 7′ choisir une personne, trois nœuds · 11′ nœud personnel libre, phrase-clé. Puis fiche 5′. Indispensable : l’affaire, un nœud. En option : trois nœuds. Temps court : poser au lieu de nouer.",
+    "aufbau": "Aide-mémoire – cœur 12′ : 0′ indices 1–3, puis l’indice 4 – « Qui a l’oiseau – et pourquoi ? » · 3′ l’enfant combine et nomme · 5′ « Jill a-t-elle mal agi ? » · 6′ phrase de Mett, fil tendu · 8′ choisir une personne, trois nœuds · 11′ nœud personnel libre, phrase-clé. Puis fiche 5′. Indispensable : l’affaire, le fil à deux, un nœud. En option : trois nœuds. Temps court : poser au lieu de nouer.",
     "karten": [
      {
       "titel": "Indices (4 cartes)",
@@ -4851,10 +4853,11 @@
    "titel": "Einzelkurs Das Mobile"
   },
   "titel": "Regel 4: Der Faden – wo ist Artas Vogel?",
-  "text": "Die Fachkraft legt die drei Spuren hin: Das Mobile hängt schief, Metts Haken-Stab ist weg, jemand fragte nach dem Porto ins Ausland. Neu dazu: Mett hat den Haken-Stab für Jill gebaut, damit sie vom Rollstuhl aus ihren Fisch anstupsen kann. Das Kind kombiniert und sagt selbst, wer den Vogel hat – und warum. Dann zeigt die Fachkraft Metts Satz, der auch nach seinem Tod gilt: „Der Faden bleibt, auch wenn ein Teil fehlt.“ Das Kind wählt Jill, Dércio oder Enzo und knotet für diese Person einen Erinnerungs-Faden: drei Knoten für erinnern, erzählen, weitertun; Ideen-Karten helfen. Wer mag, knotet einen Knoten für jemanden, an den es denkt – ohne zu sagen, für wen. Merksatz: „Der Faden bleibt – die Verbindung darf bleiben.“",
+  "text": "Die Fachkraft legt die drei Spuren hin: Das Mobile hängt schief, Metts Haken-Stab ist weg, jemand fragte nach dem Porto ins Ausland. Neu dazu: Mett hat den Haken-Stab für Jill gebaut, damit sie vom Rollstuhl aus ihren Fisch anstupsen kann. Das Kind kombiniert und sagt selbst, wer den Vogel hat – und warum. Dann Metts Satz – auch nach seinem Tod: „Der Faden bleibt, auch wenn ein Teil fehlt.“ Beide halten einen Faden straff; die Fachkraft gibt nach und zieht wieder an – das Kind spürt, dass er hält. Es wählt Jill, Dércio oder Enzo und knotet für sie einen Erinnerungs-Faden: drei Knoten für erinnern, erzählen, weitertun. Wer mag, knotet still einen Knoten für jemanden, an den es denkt. Merksatz: „Der Faden bleibt – die Verbindung darf bleiben.“",
   "sagen": [
    "Hier sind alle Spuren. Wer hat Artas Vogel – und warum?",
    "Hat Jill etwas Falsches gemacht? Was meinst du?",
+   "Halt den Faden straff. Ich gebe nach – was spürst du?",
    "Wähl eine Person. Welche drei Knoten bekommt ihr Faden?",
    "Ein Knoten für jemanden, an den du denkst? Nur wenn du magst – du musst nichts sagen."
   ],
@@ -5021,7 +5024,7 @@
     },
     {
      "art": "text",
-     "text": "Wenn du magst, bis zum nächsten Mal: Heb etwas auf, das dich an einen schönen Moment erinnert.",
+     "text": "Wenn du magst: Heb etwas auf, das dich an einen schönen Moment erinnert.",
      "klein": true
     }
    ],
@@ -5104,7 +5107,7 @@
     },
     {
      "art": "text",
-     "text": "Si tu veux, d’ici la prochaine fois : garde quelque chose qui te rappelle un beau moment.",
+     "text": "Si tu veux : garde quelque chose qui te rappelle un beau moment.",
      "klein": true
     }
    ],
@@ -5127,10 +5130,11 @@
   },
   "fr": {
    "titel": "Règle 4 : le fil – où est l’oiseau d’Arta ?",
-   "text": "L’adulte pose les trois indices sur la table : depuis lundi, le mobile penche, le bâton à crochet de Mett a disparu, quelqu’un a demandé le prix d’une lettre pour l’étranger. S’y ajoute un nouvel indice : Mett avait fabriqué le bâton à crochet pour Jill, pour qu’elle puisse pousser son poisson depuis son fauteuil roulant. L’enfant combine et dit lui-même qui a l’oiseau – et pourquoi. Puis l’adulte montre la phrase de Mett, toujours vraie après sa mort : « Le fil reste, même quand une pièce manque. » L’enfant choisit Jill, Dércio ou Enzo et noue pour cette personne un fil de souvenir : trois nœuds pour se souvenir, raconter, continuer ; des cartes-idées aident. S’il le veut, il fait un nœud pour quelqu’un à qui il pense lui-même – sans dire pour qui. Phrase-clé : « Le fil reste – le lien peut rester. »",
+   "text": "L’adulte pose les trois indices sur la table : depuis lundi, le mobile penche, le bâton à crochet de Mett a disparu, quelqu’un a demandé le prix d’une lettre pour l’étranger. S’y ajoute un nouvel indice : Mett avait fabriqué le bâton à crochet pour Jill, pour qu’elle puisse pousser son poisson depuis son fauteuil roulant. L’enfant combine et dit lui-même qui a l’oiseau – et pourquoi. Puis la phrase de Mett – vraie aussi après sa mort : « Le fil reste, même quand une pièce manque. » Tous deux tiennent un fil bien tendu ; l’adulte relâche, puis tire de nouveau – l’enfant sent qu’il tient. Il choisit Jill, Dércio ou Enzo et noue pour cette personne un fil de souvenir : trois nœuds pour se souvenir, raconter, continuer. S’il le veut, il fait en silence un nœud pour quelqu’un à qui il pense. Phrase-clé : « Le fil reste – le lien peut rester. »",
    "sagen": [
     "Voici tous les indices. Qui a l’oiseau d’Arta – et pourquoi ?",
     "Jill a-t-elle fait quelque chose de mal ? Qu’en penses-tu ?",
+    "Tiens le fil bien tendu. Je relâche – qu’est-ce que tu sens ?",
     "Choisis une personne. Quels trois nœuds pour son fil ?",
     "Un nœud pour quelqu’un à qui tu penses ? Seulement si tu veux – tu n’as rien à dire."
    ],
@@ -5150,7 +5154,7 @@
      "Wollfäden, je etwa 40 cm; Schere",
      "Karte „Nur für dich“ einmal lesen"
     ],
-    "aufbau": "Spickzettel – Kern 12′: 0′ Spur 1–3 hinlegen, Spur 4 dazu – „Wer hat den Vogel – und warum?“ · 3′ das Kind kombiniert und benennt · 5′ „Hat Jill etwas falsch gemacht?“ · 6′ Metts Satz · 7′ Person wählen, drei Knoten · 11′ freiwilliger eigener Knoten, Merksatz. Dann Blatt 5′. Muss: Fall lösen, ein Knoten. Kann: drei Knoten. Wird es knapp: Knoten legen statt knoten.",
+    "aufbau": "Spickzettel – Kern 12′: 0′ Spur 1–3 hinlegen, Spur 4 dazu – „Wer hat den Vogel – und warum?“ · 3′ das Kind kombiniert und benennt · 5′ „Hat Jill etwas falsch gemacht?“ · 6′ Metts Satz, Faden spannen · 8′ Person wählen, drei Knoten · 11′ freiwilliger eigener Knoten, Merksatz. Dann Blatt 5′. Muss: Fall lösen, Faden zu zweit, ein Knoten. Kann: drei Knoten. Wird es knapp: Knoten legen statt knoten.",
     "karten": [
      {
       "titel": "Spuren (4 Karten)",
@@ -5218,7 +5222,7 @@
      "Des fils de laine d’environ 40 cm ; ciseaux",
      "Lire une fois la carte « Pour l’adulte »"
     ],
-    "aufbau": "Aide-mémoire – cœur 12′ : 0′ indices 1–3, puis l’indice 4 – « Qui a l’oiseau – et pourquoi ? » · 3′ l’enfant combine et nomme · 5′ « Jill a-t-elle mal agi ? » · 6′ la phrase de Mett · 7′ choisir une personne, trois nœuds · 11′ nœud personnel libre, phrase-clé. Puis fiche 5′. Indispensable : l’affaire, un nœud. En option : trois nœuds. Temps court : poser au lieu de nouer.",
+    "aufbau": "Aide-mémoire – cœur 12′ : 0′ indices 1–3, puis l’indice 4 – « Qui a l’oiseau – et pourquoi ? » · 3′ l’enfant combine et nomme · 5′ « Jill a-t-elle mal agi ? » · 6′ phrase de Mett, fil tendu · 8′ choisir une personne, trois nœuds · 11′ nœud personnel libre, phrase-clé. Puis fiche 5′. Indispensable : l’affaire, le fil à deux, un nœud. En option : trois nœuds. Temps court : poser au lieu de nouer.",
     "karten": [
      {
       "titel": "Indices (4 cartes)",
@@ -5948,7 +5952,7 @@
     },
     {
      "art": "text",
-     "text": "Wenn du magst, bis zum nächsten Mal: Probier einen deiner Sätze aus.",
+     "text": "Wenn du magst: Probier einen deiner Sätze aus.",
      "klein": true
     }
    ],
@@ -6030,7 +6034,7 @@
     },
     {
      "art": "text",
-     "text": "Si tu veux, d’ici la prochaine fois : essaie une de tes phrases.",
+     "text": "Si tu veux : essaie une de tes phrases.",
      "klein": true
     }
    ],
@@ -6404,7 +6408,7 @@
     },
     {
      "art": "text",
-     "text": "Wenn du magst, bis zum nächsten Mal: Probier einen deiner Sätze aus.",
+     "text": "Wenn du magst: Probier einen deiner Sätze aus.",
      "klein": true
     }
    ],
@@ -6501,7 +6505,7 @@
     },
     {
      "art": "text",
-     "text": "Si tu veux, d’ici la prochaine fois : essaie une de tes phrases.",
+     "text": "Si tu veux : essaie une de tes phrases.",
      "klein": true
     }
    ],
@@ -7502,7 +7506,7 @@
      {
       "titel": "Abschieds-Ideen (6 Karten)",
       "karten": [
-       "Eine LED-Kerze anmachen – viele tun das an Allerheiligen (Lëtzebuergesch: Allerhellgen).",
+       "Eine LED-Kerze anmachen – viele tun das an Allerheiligen (Lëtzebuergesch: Allerhellegen).",
        "Einen Stein bemalen und hinlegen.",
        "Eine Blume oder ein Blatt ans Mobile hängen.",
        "Ein Lied anhören, das Mett gepfiffen hat.",
@@ -7579,7 +7583,7 @@
      {
       "titel": "Idées d’adieu (6 cartes)",
       "karten": [
-       "Allumer une bougie LED – beaucoup le font à la Toussaint (en luxembourgeois : Allerhellgen).",
+       "Allumer une bougie LED – beaucoup le font à la Toussaint (en luxembourgeois : Allerhellegen).",
        "Peindre une pierre et la déposer.",
        "Accrocher une fleur ou une feuille au mobile.",
        "Écouter une chanson que Mett sifflait.",
@@ -7967,7 +7971,7 @@
      {
       "titel": "Abschieds-Ideen (6 Karten)",
       "karten": [
-       "Eine LED-Kerze anmachen – viele tun das an Allerheiligen (Lëtzebuergesch: Allerhellgen).",
+       "Eine LED-Kerze anmachen – viele tun das an Allerheiligen (Lëtzebuergesch: Allerhellegen).",
        "Einen Stein bemalen und hinlegen.",
        "Eine Blume oder ein Blatt ans Mobile hängen.",
        "Ein Lied anhören, das Mett gepfiffen hat.",
@@ -8044,7 +8048,7 @@
      {
       "titel": "Idées d’adieu (6 cartes)",
       "karten": [
-       "Allumer une bougie LED – beaucoup le font à la Toussaint (en luxembourgeois : Allerhellgen).",
+       "Allumer une bougie LED – beaucoup le font à la Toussaint (en luxembourgeois : Allerhellegen).",
        "Peindre une pierre et la déposer.",
        "Accrocher une fleur ou une feuille au mobile.",
        "Écouter une chanson que Mett sifflait.",
@@ -8469,7 +8473,7 @@
      {
       "titel": "Abschieds-Ideen (6 Karten)",
       "karten": [
-       "Eine LED-Kerze anmachen – viele tun das an Allerheiligen (Lëtzebuergesch: Allerhellgen).",
+       "Eine LED-Kerze anmachen – viele tun das an Allerheiligen (Lëtzebuergesch: Allerhellegen).",
        "Einen Stein bemalen und hinlegen.",
        "Eine Blume oder ein Blatt ans Mobile hängen.",
        "Ein Lied anhören, das Mett gepfiffen hat.",
@@ -8544,7 +8548,7 @@
      {
       "titel": "Idées d’adieu (6 cartes)",
       "karten": [
-       "Allumer une bougie LED – beaucoup le font à la Toussaint (en luxembourgeois : Allerhellgen).",
+       "Allumer une bougie LED – beaucoup le font à la Toussaint (en luxembourgeois : Allerhellegen).",
        "Peindre une pierre et la déposer.",
        "Accrocher une fleur ou une feuille au mobile.",
        "Écouter une chanson que Mett sifflait.",

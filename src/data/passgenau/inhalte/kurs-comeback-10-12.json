@@ -1152,6 +1152,7 @@
    "schreiben": 0,
    "bild": 2
   },
+  "kurz": "Astronauten-Test · Standbilder: drücken oder ziehen · Tausch",
   "fr": {
    "titel": "Ce qui pèse : repousser ou attirer ?",
    "text": "D’abord la question : « Six mois dans l’espace – qu’est-ce qui est le plus dur après l’atterrissage ? », puis le test de l’astronaute et le message vocal d’Arlind : l’enfant devient sa station au sol. Ensuite, l’adulte lit une carte-phrase, et l’enfant répond avec tout son corps : si la phrase repousse Arlind (alarme), il pousse des deux mains contre une porte invisible ; si elle l’attire ailleurs (aimant), il se penche en arrière comme tiré par une corde. Tenir cinq secondes, sentir la tension, puis nommer la case : corps, regards, « près de quelqu’un » ou chambre. Après quatre cartes, on échange : l’enfant lit, l’adulte fait la statue, l’enfant vérifie. Quelle case n’apparaît jamais chez Arlind ? Phrase-clé : « Lourd ne veut pas dire faible. D’abord voir ce qui pèse – puis trouver l’aide qui va avec. »",
@@ -1160,7 +1161,8 @@
     "Tiens cinq secondes. Tu sens la tension ? Quelle case ?",
     "À toi : lis, et moi je fais la statue."
    ],
-   "wennEsKippt": "Mal de ventre de l’enfant : « C’est réel. » Ne pas questionner ; après la séance, avis médical à voir avec les responsables légaux (le dire d’abord à l’enfant). Si l’enfant ne veut pas se lever, il presse ses paumes, assis (alarme), ou se penche en arrière (aimant). S’il n’aime pas lire, l’adulte lit."
+   "wennEsKippt": "Mal de ventre de l’enfant : « C’est réel. » Ne pas questionner ; après la séance, avis médical à voir avec les responsables légaux (le dire d’abord à l’enfant). Si l’enfant ne veut pas se lever, il presse ses paumes, assis (alarme), ou se penche en arrière (aimant). S’il n’aime pas lire, l’adulte lit.",
+   "kurz": "Test de l’astronaute · statues : repousser ou attirer · échange"
   },
   "hilfen": {
    "de": {
@@ -1381,6 +1383,7 @@
    "schreiben": 0,
    "bild": 1
   },
+  "kurz": "Astronauten-Test im Sitzen · Arlind-Interview · Tausch",
   "fr": {
    "titel": "Ce qui pèse : l’interview de la station au sol",
    "text": "D’abord la question de l’atterrissage et le test de l’astronaute assis : lever les deux pieds, yeux fermés, trois fois. Puis l’adulte parle comme Arlind, et l’enfant est sa station au sol : il tire une carte-question et la pose à Arlind. Arlind répond, et l’adulte pose la carte-phrase qui va avec. L’enfant décide sur quelle case elle va : alarme du corps, alarme des regards, aimant « près de quelqu’un » ou aimant de la chambre. Après quatre questions, on échange : l’adulte demande, l’enfant répond comme Arlind – avec les phrases des cartes ou ses propres mots pour lui. Il ne s’agit que d’Arlind. Phrase-clé : « Lourd ne veut pas dire faible. D’abord voir ce qui pèse – puis trouver l’aide qui va avec. »",
@@ -1389,7 +1392,8 @@
     "Sur quelle case va ma réponse ?",
     "Maintenant, c’est toi Arlind. Tu peux prendre les phrases des cartes."
    ],
-   "wennEsKippt": "Mal de ventre de l’enfant : « C’est réel. » Ne pas questionner ; après la séance, avis médical à voir avec les responsables légaux (le dire d’abord à l’enfant). Si l’enfant ne veut pas poser les questions, l’adulte lit la carte et répond comme Arlind ; l’enfant pose seulement les cartes. Parler pour Arlind est facultatif."
+   "wennEsKippt": "Mal de ventre de l’enfant : « C’est réel. » Ne pas questionner ; après la séance, avis médical à voir avec les responsables légaux (le dire d’abord à l’enfant). Si l’enfant ne veut pas poser les questions, l’adulte lit la carte et répond comme Arlind ; l’enfant pose seulement les cartes. Parler pour Arlind est facultatif.",
+   "kurz": "Test de l’astronaute assis · interview d’Arlind · échange"
   },
   "hilfen": {
    "de": {
@@ -2545,6 +2549,7 @@
    "schreiben": 0,
    "bild": 2
   },
+  "kurz": "Puls-Experiment · Morgen-Kreis am Boden · Fallschirm",
   "fr": {
    "titel": "Parachute : le cercle au sol",
    "text": "D’abord l’expérience du pouls : compter 15 secondes au poignet, 20 sauts en étoile, compter encore – voilà le turbo. Puis l’adulte pose les quatre cartes du matin d’Arlind en grand cercle au sol. L’enfant marche comme Arlind de carte en carte et dit à chacune ce qu’il pense ou ressent ; l’adulte lit si l’enfant n’a pas envie de lire. À la carte 4, il remarque où mène le chemin. Deuxième tour : à la carte 1, l’enfant s’arrête, fait le parachute – pieds bien ancrés, expirer lentement, trois fois – et sort du cercle. Puis on échange : l’adulte marche, l’enfant dit quand sortir. Phrase-clé : « L’alarme est réelle. Rester à l’écart ne la calme qu’un moment. Avec le parachute, je tiens le coup. »",
@@ -2553,7 +2558,8 @@
     "Où es-tu après la carte 4 ?",
     "Cette fois : à la carte 1, parachute – et tu sors du cercle."
    ],
-   "wennEsKippt": "Si la pièce est petite, le cercle est posé sur la table et l’enfant le parcourt avec deux doigts. S’il ne veut pas parler pour Arlind, l’adulte lit les cartes et l’enfant marche seulement."
+   "wennEsKippt": "Si la pièce est petite, le cercle est posé sur la table et l’enfant le parcourt avec deux doigts. S’il ne veut pas parler pour Arlind, l’adulte lit les cartes et l’enfant marche seulement.",
+   "kurz": "Expérience du pouls · cercle du matin au sol · parachute"
   },
   "hilfen": {
    "de": {
@@ -2754,6 +2760,7 @@
    "schreiben": 0,
    "bild": 2
   },
+  "kurz": "Puls im Sitzen · Arlinds Morgen als Comic · Fallschirm",
   "fr": {
    "titel": "Parachute : le matin d’Arlind en BD",
    "text": "D’abord, l’enfant prend son pouls assis, fait tourner vite les bras 20 fois et reprend son pouls : le turbo. L’adulte explique l’alarme du corps en deux phrases et lit ce qu’a dit la médecin d’Arlind. Puis tous deux dessinent le matin d’Arlind en BD de quatre cases – des bonshommes bâtons suffisent : 7 h 10 le ventre se serre, 7 h 20 rester dans la chambre, 7 h 30 plus calme, le matin suivant. L’adulte dessine la première case, l’enfant les autres et décide ce qui va dans les bulles. Où mène la quatrième case ? Puis une cinquième case : Arlind fait le parachute devant la porte – tous deux le font une fois, assis. Il ne s’agit que d’Arlind. Phrase-clé : « L’alarme est réelle. Rester à l’écart ne la calme qu’un moment. Avec le parachute, je tiens le coup. »",
@@ -2762,7 +2769,8 @@
     "Qu’est-ce qu’il y a dans la bulle d’Arlind ?",
     "Et dans la cinquième case : parachute devant la porte. On le fait aussi ?"
    ],
-   "wennEsKippt": "Si l’enfant ne veut pas dessiner, il dicte et l’adulte dessine. Un mot par case suffit."
+   "wennEsKippt": "Si l’enfant ne veut pas dessiner, il dicte et l’adulte dessine. Un mot par case suffit.",
+   "kurz": "Pouls assis · le matin d’Arlind en BD · parachute"
   },
   "hilfen": {
    "de": {
@@ -3111,7 +3119,7 @@
      "spalten": [
       "Étape",
       "Ce qu’il redoute",
-      "Sûr à combien ? (0–100)",
+      "Sûr à quel point ? (0–100)",
       "Ce qui s’est vraiment passé"
      ],
      "zeilen": 0,
@@ -3175,7 +3183,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, sagt das Kind Stichworte, und die Fachkraft schreibt. „Noch nicht“ ist eine gute Antwort."
     },
     "fr": {
-     "text": "L’enfant remplit la première ligne dès le cœur de séance : ce qu’Arlind redoute et « sûr à combien » avant la lecture, le résultat après. Puis le choix : classer trois étapes pour Arlind ou en silence pour soi ; l’adulte ne regarde pas si l’enfant ne montre pas. La mission est facultative ; pour finir, la dernière ligne.",
+     "text": "L’enfant remplit la première ligne dès le cœur de séance : ce qu’Arlind redoute et « à quel point il en est sûr » avant la lecture, le résultat après. Puis le choix : classer trois étapes pour Arlind ou en silence pour soi ; l’adulte ne regarde pas si l’enfant ne montre pas. La mission est facultative ; pour finir, la dernière ligne.",
      "sagen": [
       "Qu’est-ce qu’Arlind redoutait – et que s’est-il passé ?",
       "Pour Arlind ou en silence pour toi – c’est toi qui choisis."
@@ -3273,7 +3281,7 @@
      "15 à 20 cubes",
      "Préparer les cartes à lire « le choix d’Arlind » – lire la deuxième seulement après l’estimation"
     ],
-    "aufbau": "0′ Test des livres – « Facile, faisable, trop dur ? »\n2′ ISS : plus de 40 vols, morceau par morceau\n3′ Cubes sur les cartes-étapes, escalier – « Laquelle d’abord ? »\n7′ Choix d’Arlind, ce qu’il redoute, « sûr à combien ? » – puis le mercredi\n9′ Phrase-clé\nCœur 10′ · fiche 5′\nIndispensable : livres, escalier, vérifier.",
+    "aufbau": "0′ Test des livres – « Facile, faisable, trop dur ? »\n2′ ISS : plus de 40 vols, morceau par morceau\n3′ Cubes sur les cartes-étapes, escalier – « Laquelle d’abord ? »\n7′ Choix d’Arlind, ce qu’il redoute, « Il en est sûr à quel point ? » – puis le mercredi\n9′ Phrase-clé\nCœur 10′ · fiche 5′\nIndispensable : livres, escalier, vérifier.",
     "karten": [
      {
       "titel": "Les cartes-étapes d’Arlind",
@@ -3309,9 +3317,9 @@
       ]
      }
     ],
-    "leichter": "Seulement cinq cartes-étapes et des cubes de 1 à 3. L’adulte lit ce qu’Arlind redoute, l’enfant montre « sûr à combien » avec les mains (écartées = très sûr).",
+    "leichter": "Seulement cinq cartes-étapes et des cubes de 1 à 3. L’adulte lit ce qu’Arlind redoute, l’enfant montre « à quel point il en est sûr » avec les mains (écartées = très sûr).",
     "schwerer": "Entre deux étapes trop éloignées, l’enfant invente une étape intermédiaire. Et : qu’apprend Arlind quand ce qu’il redoutait n’arrive pas ?",
-    "gruppe": "4–6 : deux volontaires font le test des livres, les autres disent « facile, faisable, trop dur ». Chacun reçoit une carte-étape et y pose ses cubes ; ensemble, on aligne l’escalier. Chacun donne l’estimation « sûr à combien » avec les doigts, puis on lit.",
+    "gruppe": "4–6 : deux volontaires font le test des livres, les autres disent « facile, faisable, trop dur ». Chacun reçoit une carte-étape et y pose ses cubes ; ensemble, on aligne l’escalier. Chacun donne l’estimation « à quel point il en est sûr » avec les doigts, puis on lit.",
     "beobachten": [
      "classe des étapes selon leur difficulté et en choisit une première « un peu dure, mais faisable »",
      "compare ce qu’on redoute avec ce qui s’est vraiment passé",
@@ -3575,7 +3583,7 @@
      "spalten": [
       "Étape",
       "Ce qu’il redoute",
-      "Sûr à combien ? (0–100)",
+      "Sûr à quel point ? (0–100)",
       "Ce qui s’est vraiment passé"
      ],
      "zeilen": 0,
@@ -3649,7 +3657,7 @@
      "wennEsKippt": "Liest das Kind nicht gern, liest die Fachkraft die Etappen vor. Ein Kreuz pro Zeile reicht."
     },
     "fr": {
-     "text": "L’adulte remplit la première ligne sous la dictée de l’enfant : ce qu’Arlind redoute et « sûr à combien » avant la lecture, le résultat après. Puis l’enfant coche pour quatre étapes : facile, faisable ou trop dur – pour Arlind ou en silence pour soi. La mission est facultative.",
+     "text": "L’adulte remplit la première ligne sous la dictée de l’enfant : ce qu’Arlind redoute et « à quel point il en est sûr » avant la lecture, le résultat après. Puis l’enfant coche pour quatre étapes : facile, faisable ou trop dur – pour Arlind ou en silence pour soi. La mission est facultative.",
      "sagen": [
       "Qu’est-ce qu’Arlind redoutait – et que s’est-il passé ?",
       "Coche – pour Arlind ou en silence pour toi."
@@ -3747,7 +3755,7 @@
      "15 à 20 cubes",
      "Préparer les cartes à lire « le choix d’Arlind » – lire la deuxième seulement après l’estimation"
     ],
-    "aufbau": "0′ Test des livres – « Facile, faisable, trop dur ? »\n2′ ISS : plus de 40 vols, morceau par morceau\n3′ Cubes sur les cartes-étapes, escalier – « Laquelle d’abord ? »\n7′ Choix d’Arlind, ce qu’il redoute, « sûr à combien ? » – puis le mercredi\n9′ Phrase-clé\nCœur 10′ · fiche 5′\nIndispensable : livres, escalier, vérifier.",
+    "aufbau": "0′ Test des livres – « Facile, faisable, trop dur ? »\n2′ ISS : plus de 40 vols, morceau par morceau\n3′ Cubes sur les cartes-étapes, escalier – « Laquelle d’abord ? »\n7′ Choix d’Arlind, ce qu’il redoute, « Il en est sûr à quel point ? » – puis le mercredi\n9′ Phrase-clé\nCœur 10′ · fiche 5′\nIndispensable : livres, escalier, vérifier.",
     "karten": [
      {
       "titel": "Les cartes-étapes d’Arlind",
@@ -3783,9 +3791,9 @@
       ]
      }
     ],
-    "leichter": "Seulement cinq cartes-étapes et des cubes de 1 à 3. L’adulte lit ce qu’Arlind redoute, l’enfant montre « sûr à combien » avec les mains (écartées = très sûr).",
+    "leichter": "Seulement cinq cartes-étapes et des cubes de 1 à 3. L’adulte lit ce qu’Arlind redoute, l’enfant montre « à quel point il en est sûr » avec les mains (écartées = très sûr).",
     "schwerer": "Entre deux étapes trop éloignées, l’enfant invente une étape intermédiaire. Et : qu’apprend Arlind quand ce qu’il redoutait n’arrive pas ?",
-    "gruppe": "4–6 : deux volontaires font le test des livres, les autres disent « facile, faisable, trop dur ». Chacun reçoit une carte-étape et y pose ses cubes ; ensemble, on aligne l’escalier. Chacun donne l’estimation « sûr à combien » avec les doigts, puis on lit.",
+    "gruppe": "4–6 : deux volontaires font le test des livres, les autres disent « facile, faisable, trop dur ». Chacun reçoit une carte-étape et y pose ses cubes ; ensemble, on aligne l’escalier. Chacun donne l’estimation « à quel point il en est sûr » avec les doigts, puis on lit.",
     "beobachten": [
      "classe des étapes selon leur difficulté et en choisit une première « un peu dure, mais faisable »",
      "compare ce qu’on redoute avec ce qui s’est vraiment passé",
@@ -3903,6 +3911,7 @@
    "schreiben": 0,
    "bild": 2
   },
+  "kurz": "Bücher-Test · Schwere-Linie am Boden · Befürchtung prüfen",
   "fr": {
    "titel": "Étapes : la ligne du plus ou moins dur",
    "text": "D’abord le test des livres : bras tendu, un, deux, trois livres – facile, faisable ou trop dur ? Puis l’adulte colle une ligne au sol : devant « facile », au fond « trop dur ». L’adulte lit une carte-étape d’Arlind ; l’enfant se place à l’endroit qui convient pour Arlind, tient autant de livres que l’étape est dure, cinq secondes, et y pose la carte. Après quatre cartes, on échange : l’enfant lit, l’adulte se place, et l’enfant dit si c’est juste. Quelle carte serait la première étape d’Arlind ? Puis l’enfant entend le choix d’Arlind et ce qu’il redoute, estime à quel point il en est sûr, et seulement ensuite l’adulte lit le mercredi. Phrase-clé : « Je commence par le morceau un peu dur, mais faisable – et je vérifie ensuite ce qui se passe vraiment. »",
@@ -3911,7 +3920,8 @@
     "Tiens autant de livres qu’elle est dure – cinq secondes.",
     "Maintenant, tu lis et je me place. C’est juste ?"
    ],
-   "wennEsKippt": "Si la pièce est petite, la ligne est sur la table et l’enfant fait glisser les cartes. S’il ne veut pas tenir de livres, il montre la difficulté avec les doigts."
+   "wennEsKippt": "Si la pièce est petite, la ligne est sur la table et l’enfant fait glisser les cartes. S’il ne veut pas tenir de livres, il montre la difficulté avec les doigts.",
+   "kurz": "Test des livres · ligne au sol · vérifier ce qu’on redoute"
   },
   "hilfen": {
    "de": {
@@ -3982,7 +3992,7 @@
      "Trois livres légers",
      "Cartes-étapes et cartes à lire « le choix d’Arlind »"
     ],
-    "aufbau": "0′ Test des livres\n2′ Ligne : lire une carte – « Où la placer ? Combien de livres ? »\n6′ Échange : l’enfant lit, l’adulte se place\n7′ Première étape, ce qu’Arlind redoute, « sûr à combien ? » – puis le mercredi\n9′ Phrase-clé\nCœur 10′ · fiche 5′",
+    "aufbau": "0′ Test des livres\n2′ Ligne : lire une carte – « Où la placer ? Combien de livres ? »\n6′ Échange : l’enfant lit, l’adulte se place\n7′ Première étape, ce qu’Arlind redoute, « Il en est sûr à quel point ? » – puis le mercredi\n9′ Phrase-clé\nCœur 10′ · fiche 5′",
     "karten": [
      {
       "titel": "Les cartes-étapes d’Arlind",
@@ -4135,6 +4145,7 @@
    "schreiben": 0,
    "bild": 2
   },
+  "kurz": "Bücher-Test im Sitzen · Arlinds Mittwoch weitererzählen",
   "fr": {
    "titel": "Étapes : raconter la suite du mercredi d’Arlind",
    "text": "D’abord le test des livres assis : un, deux, trois livres sur les paumes – facile, faisable ou trop dur ? Puis l’adulte pose les cartes-étapes d’Arlind à découvert, et l’enfant les fait glisser du doigt de facile à dur. Arlind a choisi mercredi, 16 h 05 – dix minutes avec Joffer Neves. Que redoute-t-il, et à quel point en est-il sûr ? L’adulte commence l’histoire : « Mercredi, 16 h 02. Arlind est devant la porte de l’école. Son ventre … » À chaque moment, l’enfant décide de la suite. Ensuite, l’adulte lit le vrai message d’Arlind du mercredi : qu’est-ce qui était différent de ce qu’il redoutait ? Il ne s’agit que d’Arlind. Phrase-clé : « Je commence par le morceau un peu dur, mais faisable – et je vérifie ensuite ce qui se passe vraiment. »",
@@ -4143,7 +4154,8 @@
     "Que pense Arlind quand il ouvre la porte ?",
     "Maintenant, je lis ce qui s’est vraiment passé."
    ],
-   "wennEsKippt": "Si l’enfant ne veut pas raconter, l’adulte propose deux possibilités et l’enfant en choisit une. Une phrase suffit."
+   "wennEsKippt": "Si l’enfant ne veut pas raconter, l’adulte propose deux possibilités et l’enfant en choisit une. Une phrase suffit.",
+   "kurz": "Test des livres assis · raconter le mercredi d’Arlind"
   },
   "hilfen": {
    "de": {
@@ -4214,7 +4226,7 @@
      "Cartes-étapes",
      "Cartes à lire « le choix d’Arlind » – la deuxième seulement après l’histoire"
     ],
-    "aufbau": "0′ Test des livres assis\n2′ Cartes-étapes de facile à dur\n4′ Ce qu’Arlind redoute, « sûr à combien ? »\n5′ Histoire – « Et ensuite ? »\n8′ Lire le vrai message, comparer\n9′ Phrase-clé\nCœur 10′ · fiche 5′",
+    "aufbau": "0′ Test des livres assis\n2′ Cartes-étapes de facile à dur\n4′ Ce qu’Arlind redoute, « Il en est sûr à quel point ? »\n5′ Histoire – « Et ensuite ? »\n8′ Lire le vrai message, comparer\n9′ Phrase-clé\nCœur 10′ · fiche 5′",
     "karten": [
      {
       "titel": "Les cartes-étapes d’Arlind",
@@ -4398,7 +4410,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Arlinds Bodenteam: Wer hilft wobei? Verbinde.",
+     "text": "Arlinds Bodenteam: Wer könnte wobei helfen? Verbinde – mehrere Linien sind erlaubt.",
      "symbole": [
       "lesen"
      ]
@@ -4485,7 +4497,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "L’équipe au sol d’Arlind : qui aide pour quoi ? Relie.",
+     "text": "L’équipe au sol d’Arlind : qui pourrait l’aider, et pour quoi ? Relie – plusieurs traits sont possibles.",
      "symbole": [
       "lesen"
      ]
@@ -4571,7 +4583,7 @@
     "Casque enlevé – le rôle est fini."
    ],
    "wennEsKippt": "Si l’enfant ne veut pas lancer, la balle roule sur la table. Si aucune réponse ne vient, il prend une phrase de Joy ou l’adulte en propose deux. Si ça devient trop personnel : garder la balle veut dire pause, puis on continue seulement pour Arlind.",
-   "kurz": "Balle-question · la réponse de Joy · dire – stop – virage bien droit"
+   "kurz": "Balle et question · la réponse de Joy · dire – stop – virage, debout bien droit"
   },
   "zugang": {
    "lesen": 2,
@@ -4835,7 +4847,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Arlinds Bodenteam: Wer hilft wobei? Verbinde.",
+     "text": "Arlinds Bodenteam: Wer könnte wobei helfen? Verbinde – mehrere Linien sind erlaubt.",
      "symbole": [
       "lesen"
      ]
@@ -4923,7 +4935,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "L’équipe au sol d’Arlind : qui aide pour quoi ? Relie.",
+     "text": "L’équipe au sol d’Arlind : qui pourrait l’aider, et pour quoi ? Relie – plusieurs traits sont possibles.",
      "symbole": [
       "lesen"
      ]
@@ -5010,7 +5022,7 @@
     "Casque enlevé – le rôle est fini."
    ],
    "wennEsKippt": "Si l’enfant ne veut pas lancer, la balle roule sur la table. Si aucune réponse ne vient, il prend une phrase de Joy ou l’adulte en propose deux. Si ça devient trop personnel : garder la balle veut dire pause, puis on continue seulement pour Arlind.",
-   "kurz": "Balle-question · la réponse de Joy · dire – stop – virage bien droit"
+   "kurz": "Balle et question · la réponse de Joy · dire – stop – virage, debout bien droit"
   },
   "zugang": {
    "lesen": 1,
@@ -5244,6 +5256,7 @@
    "schreiben": 0,
    "bild": 2
   },
+  "kurz": "Ball-Frage · Bodenstation aus Bechern · Bitten laut sagen",
   "fr": {
    "titel": "Équipe au sol : installer la station au sol",
    "text": "D’abord la balle avec la question « T’étais où ? » et la réponse de Joy en trois parties. Puis l’enfant installe la station au sol d’Arlind : une chaise, c’est Arlind, cinq gobelets sont son équipe au sol – Joffer Neves, Här Ternes, Joy, la médecin et qui le réveille le matin. L’enfant pose chaque gobelet là où il aide le mieux Arlind, va vers lui et dit à voix haute la demande d’Arlind, par exemple : « Joffer Neves, vous pouvez ne pas m’interroger à l’improviste la première semaine ? » L’adulte répond comme cette personne. Un sixième gobelet, c’est Raoul : il demande « T’étais où ? », et l’enfant répond bien droit avec dire – stop – virage. Puis on échange, et à la fin : « casque enlevé ». Phrase-clé : « Je n’ai pas à tout expliquer : dire – stop – virage. Et je sais qui est dans mon équipe au sol. »",
@@ -5252,7 +5265,8 @@
     "Va vers elle et dis à voix haute la demande d’Arlind.",
     "Et Raoul demande : « T’étais où ? » – bien droit, pieds ancrés."
    ],
-   "wennEsKippt": "S’il y a peu de place, la station est sur la table et l’enfant montre les gobelets. S’il ne veut rien dire à voix haute, l’adulte dit la demande, et l’enfant acquiesce ou la change."
+   "wennEsKippt": "S’il y a peu de place, la station est sur la table et l’enfant montre les gobelets. S’il ne veut rien dire à voix haute, l’adulte dit la demande, et l’enfant acquiesce ou la change.",
+   "kurz": "Balle et question · station au sol en gobelets · demander à voix haute"
   },
   "hilfen": {
    "de": {
@@ -5468,6 +5482,7 @@
    "schreiben": 0,
    "bild": 1
   },
+  "kurz": "Joys Antwort zerlegen · Klassenchat · neue Antwort",
   "fr": {
    "titel": "Équipe au sol : le chat de la classe",
    "text": "D’abord, l’adulte lit la réponse de Joy en trois parties ; l’enfant dit quelle partie est « dire », « stop » et « virage ». Puis l’adulte pose la carte du chat : Raoul demande dans le chat de la classe « T’étais où ?? 9 semaines !! », et en dessous, il y a le brouillon d’Arlind – long, gêné et avec une excuse inventée. L’enfant est le conseiller d’Arlind : qu’est-ce qui est « dire », qu’est-ce qu’on enlève, où vient le virage ? Il barre au crayon et dit la nouvelle réponse, l’adulte écrit. Puis l’adulte lit le message suivant de Raoul, et l’enfant vérifie si la réponse tient. Pour finir, il cherche dans le chat qui fait partie de l’équipe au sol d’Arlind. Il ne s’agit que d’Arlind. Phrase-clé : « Je n’ai pas à tout expliquer : dire – stop – virage. Et je sais qui est dans mon équipe au sol. »",
@@ -5476,7 +5491,8 @@
     "Où vient le virage ?",
     "Raoul répond – est-ce que la réponse tient ?"
    ],
-   "wennEsKippt": "Si l’enfant ne veut pas barrer, il montre du doigt et l’adulte barre. Une nouvelle réponse en deux parties suffit."
+   "wennEsKippt": "Si l’enfant ne veut pas barrer, il montre du doigt et l’adulte barre. Une nouvelle réponse en deux parties suffit.",
+   "kurz": "La réponse de Joy · le chat de la classe · nouvelle réponse"
   },
   "hilfen": {
    "de": {
@@ -5604,7 +5620,7 @@
    "titel": "Einzelkurs Sanfte Landung – zurück in die Schule"
   },
   "titel": "Ausweichplatz: Wenn der Boden wackelt",
-  "text": "Wackel-Landung: Das Kind steht auf einem Bein auf einem Kissen. Wird es zu wackelig, steigt es auf den Boden daneben – den Ausweichplatz – und gleich wieder hinauf. „Aufgeben oder ausweichen?“ Die Fachkraft erzählt: Ist bei einer Raumkapsel das Wetter am Landeplatz schlecht, landet sie später oder woanders – aber sie landet. Dann plant das Kind Arlinds Freitag: Plan A um 7:55 mit Joy, Ausweichplatz 1 um 10:00 nach der Pause, Ausweichplatz 2 die erste Stunde bei Här Ternes. Die drei liegen als Blätter am Boden. Die Fachkraft zieht Wetter-Karten; das Kind stellt sich auf das passende Blatt und sagt den Wenn-dann-Satz. Danach plant es, wenn es mag, eine eigene Etappe dieser Woche – „noch nicht“ geht auch. Merksatz: „Wackelt Plan A, lande ich später oder woanders – aber ich lande.“",
+  "text": "Wackel-Landung: Das Kind steht auf einem Bein auf einem Kissen. Wird es zu wackelig, steigt es auf den Boden daneben – den Ausweichplatz – und gleich wieder hinauf. „Aufgeben oder ausweichen?“ Die Fachkraft erzählt: Ist bei einer Raumkapsel das Wetter am Landeplatz schlecht, landet sie später oder woanders – aber sie landet. Dann plant das Kind Arlinds Freitag: Plan A um 7:45 mit Joy, Ausweichplatz 1 um 10:00 nach der Pause, Ausweichplatz 2 die erste Stunde bei Här Ternes. Die drei liegen als Blätter am Boden. Die Fachkraft zieht Wetter-Karten; das Kind stellt sich auf das passende Blatt und sagt den Wenn-dann-Satz. Danach plant es, wenn es mag, eine eigene Etappe dieser Woche – „noch nicht“ geht auch. Merksatz: „Wackelt Plan A, lande ich später oder woanders – aber ich lande.“",
   "sagen": [
    "Auf einem Bein aufs Kissen. Wird es zu wackelig: runter auf den Ausweichplatz – und wieder hoch.",
    "Freitag, 7:10: Turbo im Bauch. Wo stellst du Arlind hin – und was ist sein Wenn-dann-Satz?",
@@ -5867,7 +5883,7 @@
      "text": "La fiche garde le plan (5 min) : deux phrases si-alors pour le vendredi d’Arlind à partir des cartes météo que l’enfant a déjà dites au sol. Puis l’étape personnelle – seulement si l’enfant veut et en accord avec l’école ; « pas encore » se coche et n’est pas commenté. Pour finir, la dernière ligne.",
      "sagen": [
       "Quelles deux cartes météo écrit-on pour Arlind ?",
-      "Une étape pour toi – ou « pas encore ». Les deux sont d’accord."
+      "Une étape pour toi – ou « pas encore ». Les deux, c’est bien."
      ],
      "wennEsKippt": "Si écrire est difficile, l’enfant dit les phrases et l’adulte écrit. Un si-alors suffit."
     }
@@ -5875,12 +5891,12 @@
   },
   "fr": {
    "titel": "Piste de secours : quand le sol tangue",
-   "text": "Atterrissage qui tangue : l’enfant tient sur une jambe sur un coussin. Si ça tangue trop, il descend sur le sol à côté – la piste de secours – et remonte tout de suite. « Abandonner ou se dérouter ? » L’adulte raconte : quand la météo est mauvaise au lieu d’atterrissage d’une capsule spatiale, elle atterrit plus tard ou ailleurs – mais elle atterrit. Puis l’enfant planifie le vendredi d’Arlind : plan A à 7 h 55 avec Joy, piste de secours 1 à 10 h après la récré, piste de secours 2 la première heure chez Här Ternes. Les trois sont des feuilles posées au sol. L’adulte tire des cartes météo ; l’enfant se place sur la bonne feuille et dit la phrase si-alors. Ensuite, s’il veut, il planifie une étape à lui pour cette semaine – « pas encore », ça marche aussi. Phrase-clé : « Si le plan A tangue, j’atterris plus tard ou ailleurs – mais j’atterris. »",
+   "text": "Atterrissage qui tangue : l’enfant tient sur une jambe sur un coussin. Si ça tangue trop, il descend sur le sol à côté – la piste de secours – et remonte tout de suite. « Abandonner ou se dérouter ? » L’adulte raconte : quand la météo est mauvaise au lieu d’atterrissage d’une capsule spatiale, elle atterrit plus tard ou ailleurs – mais elle atterrit. Puis l’enfant planifie le vendredi d’Arlind : plan A à 7 h 45 avec Joy, piste de secours 1 à 10 h après la récré, piste de secours 2 la première heure chez Här Ternes. Les trois sont des feuilles posées au sol. L’adulte tire des cartes météo ; l’enfant se place sur la bonne feuille et dit la phrase si-alors. Ensuite, s’il veut, il planifie une étape à lui pour cette semaine – « pas encore », ça marche aussi. Phrase-clé : « Si le plan A tangue, j’atterris plus tard ou ailleurs – mais j’atterris. »",
    "sagen": [
     "Sur une jambe, sur le coussin. Si ça tangue trop : descends sur la piste de secours – et remonte.",
     "Vendredi, 7 h 10 : turbo dans le ventre. Où places-tu Arlind – et quelle est sa phrase si-alors ?",
     "Plus tard ou ailleurs – mais pas « pas du tout ».",
-    "Et toi ? Une étape cette semaine – ou « pas encore ». Les deux sont d’accord."
+    "Et toi ? Une étape cette semaine – ou « pas encore ». Les deux, c’est bien."
    ],
    "wennEsKippt": "Si l’enfant ne veut pas monter sur le coussin, il tient sur une jambe par terre ou le fait assis, un pied sur le coussin. Si la pièce est petite, les trois feuilles sont sur la table et l’enfant y pose un pion. S’il ne veut rien planifier pour lui, il reste avec Arlind.",
    "kurz": "Atterrissage qui tangue · pistes au sol · si-alors"
@@ -5915,7 +5931,7 @@
      {
       "titel": "Boden-Blätter (je ein A4-Blatt): Arlinds Landeplätze",
       "karten": [
-       "Plan A: Freitag 7:55, mit Joy ab der Bushaltestelle",
+       "Plan A: Freitag 7:45, mit Joy ab der Bushaltestelle",
        "Ausweichplatz 1: um 10:00, nach der Pause",
        "Ausweichplatz 2: erste Stunde bei Här Ternes im ruhigen Raum, dann in die Klasse"
       ]
@@ -5978,7 +5994,7 @@
      {
       "titel": "Feuilles au sol (une feuille A4 chacune) : les pistes d’Arlind",
       "karten": [
-       "Plan A : vendredi 7 h 55, avec Joy depuis l’arrêt de bus",
+       "Plan A : vendredi 7 h 45, avec Joy depuis l’arrêt de bus",
        "Piste de secours 1 : à 10 h, après la récré",
        "Piste de secours 2 : première heure chez Här Ternes dans la salle calme, puis en classe"
       ]
@@ -6026,7 +6042,7 @@
    "titel": "Einzelkurs Sanfte Landung – zurück in die Schule"
   },
   "titel": "Ausweichplatz: Wenn der Boden wackelt",
-  "text": "Wackel-Landung: Das Kind steht auf einem Bein auf einem Kissen. Wird es zu wackelig, steigt es auf den Boden daneben – den Ausweichplatz – und gleich wieder hinauf. „Aufgeben oder ausweichen?“ Die Fachkraft erzählt: Ist bei einer Raumkapsel das Wetter am Landeplatz schlecht, landet sie später oder woanders – aber sie landet. Dann plant das Kind Arlinds Freitag: Plan A um 7:55 mit Joy, Ausweichplatz 1 um 10:00 nach der Pause, Ausweichplatz 2 die erste Stunde bei Här Ternes. Die drei liegen als Blätter am Boden. Die Fachkraft zieht Wetter-Karten; das Kind stellt sich auf das passende Blatt und sagt den Wenn-dann-Satz. Danach plant es, wenn es mag, eine eigene Etappe dieser Woche – „noch nicht“ geht auch. Merksatz: „Wackelt Plan A, lande ich später oder woanders – aber ich lande.“",
+  "text": "Wackel-Landung: Das Kind steht auf einem Bein auf einem Kissen. Wird es zu wackelig, steigt es auf den Boden daneben – den Ausweichplatz – und gleich wieder hinauf. „Aufgeben oder ausweichen?“ Die Fachkraft erzählt: Ist bei einer Raumkapsel das Wetter am Landeplatz schlecht, landet sie später oder woanders – aber sie landet. Dann plant das Kind Arlinds Freitag: Plan A um 7:45 mit Joy, Ausweichplatz 1 um 10:00 nach der Pause, Ausweichplatz 2 die erste Stunde bei Här Ternes. Die drei liegen als Blätter am Boden. Die Fachkraft zieht Wetter-Karten; das Kind stellt sich auf das passende Blatt und sagt den Wenn-dann-Satz. Danach plant es, wenn es mag, eine eigene Etappe dieser Woche – „noch nicht“ geht auch. Merksatz: „Wackelt Plan A, lande ich später oder woanders – aber ich lande.“",
   "sagen": [
    "Auf einem Bein aufs Kissen. Wird es zu wackelig: runter auf den Ausweichplatz – und wieder hoch.",
    "Freitag, 7:10: Turbo im Bauch. Wo stellst du Arlind hin – und was ist sein Wenn-dann-Satz?",
@@ -6317,12 +6333,12 @@
   },
   "fr": {
    "titel": "Piste de secours : quand le sol tangue",
-   "text": "Atterrissage qui tangue : l’enfant tient sur une jambe sur un coussin. Si ça tangue trop, il descend sur le sol à côté – la piste de secours – et remonte tout de suite. « Abandonner ou se dérouter ? » L’adulte raconte : quand la météo est mauvaise au lieu d’atterrissage d’une capsule spatiale, elle atterrit plus tard ou ailleurs – mais elle atterrit. Puis l’enfant planifie le vendredi d’Arlind : plan A à 7 h 55 avec Joy, piste de secours 1 à 10 h après la récré, piste de secours 2 la première heure chez Här Ternes. Les trois sont des feuilles posées au sol. L’adulte tire des cartes météo ; l’enfant se place sur la bonne feuille et dit la phrase si-alors. Ensuite, s’il veut, il planifie une étape à lui pour cette semaine – « pas encore », ça marche aussi. Phrase-clé : « Si le plan A tangue, j’atterris plus tard ou ailleurs – mais j’atterris. »",
+   "text": "Atterrissage qui tangue : l’enfant tient sur une jambe sur un coussin. Si ça tangue trop, il descend sur le sol à côté – la piste de secours – et remonte tout de suite. « Abandonner ou se dérouter ? » L’adulte raconte : quand la météo est mauvaise au lieu d’atterrissage d’une capsule spatiale, elle atterrit plus tard ou ailleurs – mais elle atterrit. Puis l’enfant planifie le vendredi d’Arlind : plan A à 7 h 45 avec Joy, piste de secours 1 à 10 h après la récré, piste de secours 2 la première heure chez Här Ternes. Les trois sont des feuilles posées au sol. L’adulte tire des cartes météo ; l’enfant se place sur la bonne feuille et dit la phrase si-alors. Ensuite, s’il veut, il planifie une étape à lui pour cette semaine – « pas encore », ça marche aussi. Phrase-clé : « Si le plan A tangue, j’atterris plus tard ou ailleurs – mais j’atterris. »",
    "sagen": [
     "Sur une jambe, sur le coussin. Si ça tangue trop : descends sur la piste de secours – et remonte.",
     "Vendredi, 7 h 10 : turbo dans le ventre. Où places-tu Arlind – et quelle est sa phrase si-alors ?",
     "Plus tard ou ailleurs – mais pas « pas du tout ».",
-    "Et toi ? Une étape cette semaine – ou « pas encore ». Les deux sont d’accord."
+    "Et toi ? Une étape cette semaine – ou « pas encore ». Les deux, c’est bien."
    ],
    "wennEsKippt": "Si l’enfant ne veut pas monter sur le coussin, il tient sur une jambe par terre ou le fait assis, un pied sur le coussin. Si la pièce est petite, les trois feuilles sont sur la table et l’enfant y pose un pion. S’il ne veut rien planifier pour lui, il reste avec Arlind.",
    "kurz": "Atterrissage qui tangue · pistes au sol · si-alors"
@@ -6357,7 +6373,7 @@
      {
       "titel": "Boden-Blätter (je ein A4-Blatt): Arlinds Landeplätze",
       "karten": [
-       "Plan A: Freitag 7:55, mit Joy ab der Bushaltestelle",
+       "Plan A: Freitag 7:45, mit Joy ab der Bushaltestelle",
        "Ausweichplatz 1: um 10:00, nach der Pause",
        "Ausweichplatz 2: erste Stunde bei Här Ternes im ruhigen Raum, dann in die Klasse"
       ]
@@ -6420,7 +6436,7 @@
      {
       "titel": "Feuilles au sol (une feuille A4 chacune) : les pistes d’Arlind",
       "karten": [
-       "Plan A : vendredi 7 h 55, avec Joy depuis l’arrêt de bus",
+       "Plan A : vendredi 7 h 45, avec Joy depuis l’arrêt de bus",
        "Piste de secours 1 : à 10 h, après la récré",
        "Piste de secours 2 : première heure chez Här Ternes dans la salle calme, puis en classe"
       ]
@@ -6558,6 +6574,7 @@
    "schreiben": 0,
    "bild": 2
   },
+  "kurz": "Wackel-Landung · Wetterbericht · Kind entscheidet für Arlind",
   "fr": {
    "titel": "Piste de secours : le bulletin météo",
    "text": "D’abord l’atterrissage qui tangue sur le coussin : ça tangue trop – on descend sur la piste de secours – on remonte. Puis l’enfant est la station météo du vendredi d’Arlind : il tire une carte météo et l’annonce comme à la radio (« Vendredi, 7 h 10 : turbo dans le ventre ! »). L’adulte est Arlind et décide à voix haute : garder le plan A, piste 1 ou 2 – avec une phrase si-alors. L’enfant vérifie : Arlind atterrit-il – plus tard ou ailleurs, mais pas « pas du tout » ? Après trois cartes, on échange : l’adulte annonce la météo, l’enfant décide pour Arlind. En cas de « tempête », tous deux font le parachute debout. Ensuite, s’il veut, l’enfant planifie une étape à lui pour cette semaine. Phrase-clé : « Si le plan A tangue, j’atterris plus tard ou ailleurs – mais j’atterris. »",
@@ -6566,7 +6583,8 @@
     "Je suis Arlind. Je prends … – est-ce qu’il atterrit ?",
     "Tempête ! Parachute, debout."
    ],
-   "wennEsKippt": "Si l’enfant ne veut pas annoncer, l’adulte lit la carte et l’enfant décide seulement. Sans coussin, l’atterrissage qui tangue se fait sur une jambe, par terre."
+   "wennEsKippt": "Si l’enfant ne veut pas annoncer, l’adulte lit la carte et l’enfant décide seulement. Sans coussin, l’atterrissage qui tangue se fait sur une jambe, par terre.",
+   "kurz": "Atterrissage qui tangue · météo · l’enfant décide pour Arlind"
   },
   "hilfen": {
    "de": {
@@ -6591,7 +6609,7 @@
      {
       "titel": "Boden-Blätter (je ein A4-Blatt): Arlinds Landeplätze",
       "karten": [
-       "Plan A: Freitag 7:55, mit Joy ab der Bushaltestelle",
+       "Plan A: Freitag 7:45, mit Joy ab der Bushaltestelle",
        "Ausweichplatz 1: um 10:00, nach der Pause",
        "Ausweichplatz 2: erste Stunde bei Här Ternes im ruhigen Raum, dann in die Klasse"
       ]
@@ -6650,7 +6668,7 @@
      {
       "titel": "Feuilles au sol (une feuille A4 chacune) : les pistes d’Arlind",
       "karten": [
-       "Plan A : vendredi 7 h 55, avec Joy depuis l’arrêt de bus",
+       "Plan A : vendredi 7 h 45, avec Joy depuis l’arrêt de bus",
        "Piste de secours 1 : à 10 h, après la récré",
        "Piste de secours 2 : première heure chez Här Ternes dans la salle calme, puis en classe"
       ]
@@ -6759,7 +6777,7 @@
   },
   "ort": "raum",
   "titel": "Ausweichplatz: Die Landekarte",
-  "text": "Zuerst die Wackel-Landung im Sitzen: einen Fuß aufs Kissen, Balance halten, beim Wackeln den Fuß auf den Boden und wieder hinauf. Dann zeichnen beide Arlinds Freitag als Landekarte: oben sein Zimmer, unten die Schule, dazwischen drei Wege – Plan A (7:55 mit Joy), Ausweichplatz 1 (10:00 nach der Pause), Ausweichplatz 2 (erste Stunde bei Här Ternes). Die Fachkraft liest Wetter-Karten; das Kind fährt mit dem Finger den passenden Weg und malt ein Wetterzeichen daneben. Kein Weg führt zurück ins Zimmer. Zum Schluss plant das Kind für „jemand wie Arlind“ einen Ausweichplatz an einem anderen Tag. Es geht nur um Arlind. Merksatz: „Wackelt Plan A, lande ich später oder woanders – aber ich lande.“",
+  "text": "Zuerst die Wackel-Landung im Sitzen: einen Fuß aufs Kissen, Balance halten, beim Wackeln den Fuß auf den Boden und wieder hinauf. Dann zeichnen beide Arlinds Freitag als Landekarte: oben sein Zimmer, unten die Schule, dazwischen drei Wege – Plan A (7:45 mit Joy), Ausweichplatz 1 (10:00 nach der Pause), Ausweichplatz 2 (erste Stunde bei Här Ternes). Die Fachkraft liest Wetter-Karten; das Kind fährt mit dem Finger den passenden Weg und malt ein Wetterzeichen daneben. Kein Weg führt zurück ins Zimmer. Zum Schluss plant das Kind für „jemand wie Arlind“ einen Ausweichplatz an einem anderen Tag. Es geht nur um Arlind. Merksatz: „Wackelt Plan A, lande ich später oder woanders – aber ich lande.“",
   "sagen": [
    "Oben Arlinds Zimmer, unten die Schule. Zeichnen wir drei Wege?",
    "Bus verpasst – welchen Weg nimmt Arlind?",
@@ -6788,15 +6806,17 @@
    "schreiben": 0,
    "bild": 2
   },
+  "kurz": "Wackel-Landung im Sitzen · Landekarte mit drei Wegen",
   "fr": {
    "titel": "Piste de secours : la carte d’atterrissage",
-   "text": "D’abord l’atterrissage qui tangue assis : un pied sur le coussin, garder l’équilibre, poser le pied par terre si ça tangue et remonter. Puis tous deux dessinent le vendredi d’Arlind comme une carte d’atterrissage : en haut sa chambre, en bas l’école, entre les deux trois chemins – plan A (7 h 55 avec Joy), piste 1 (10 h après la récré), piste 2 (première heure chez Här Ternes). L’adulte lit des cartes météo ; l’enfant suit du doigt le bon chemin et dessine un signe météo à côté. Aucun chemin ne ramène à la chambre. Pour finir, l’enfant planifie pour « quelqu’un comme Arlind » une piste de secours un autre jour. Il ne s’agit que d’Arlind. Phrase-clé : « Si le plan A tangue, j’atterris plus tard ou ailleurs – mais j’atterris. »",
+   "text": "D’abord l’atterrissage qui tangue assis : un pied sur le coussin, garder l’équilibre, poser le pied par terre si ça tangue et remonter. Puis tous deux dessinent le vendredi d’Arlind comme une carte d’atterrissage : en haut sa chambre, en bas l’école, entre les deux trois chemins – plan A (7 h 45 avec Joy), piste 1 (10 h après la récré), piste 2 (première heure chez Här Ternes). L’adulte lit des cartes météo ; l’enfant suit du doigt le bon chemin et dessine un signe météo à côté. Aucun chemin ne ramène à la chambre. Pour finir, l’enfant planifie pour « quelqu’un comme Arlind » une piste de secours un autre jour. Il ne s’agit que d’Arlind. Phrase-clé : « Si le plan A tangue, j’atterris plus tard ou ailleurs – mais j’atterris. »",
    "sagen": [
     "En haut la chambre d’Arlind, en bas l’école. On dessine trois chemins ?",
     "Bus raté – quel chemin prend Arlind ?",
     "Est-ce qu’un chemin ramène à la chambre ?"
    ],
-   "wennEsKippt": "Si l’enfant ne veut pas dessiner, l’adulte dessine les chemins et l’enfant les suit seulement du doigt. Un signe météo par chemin suffit."
+   "wennEsKippt": "Si l’enfant ne veut pas dessiner, l’adulte dessine les chemins et l’enfant les suit seulement du doigt. Un signe météo par chemin suffit.",
+   "kurz": "Atterrissage assis · carte avec trois chemins"
   },
   "hilfen": {
    "de": {
@@ -6822,7 +6842,7 @@
      {
       "titel": "Boden-Blätter (je ein A4-Blatt): Arlinds Landeplätze",
       "karten": [
-       "Plan A: Freitag 7:55, mit Joy ab der Bushaltestelle",
+       "Plan A: Freitag 7:45, mit Joy ab der Bushaltestelle",
        "Ausweichplatz 1: um 10:00, nach der Pause",
        "Ausweichplatz 2: erste Stunde bei Här Ternes im ruhigen Raum, dann in die Klasse"
       ]
@@ -6881,7 +6901,7 @@
      {
       "titel": "Feuilles au sol (une feuille A4 chacune) : les pistes d’Arlind",
       "karten": [
-       "Plan A : vendredi 7 h 55, avec Joy depuis l’arrêt de bus",
+       "Plan A : vendredi 7 h 45, avec Joy depuis l’arrêt de bus",
        "Piste de secours 1 : à 10 h, après la récré",
        "Piste de secours 2 : première heure chez Här Ternes dans la salle calme, puis en classe"
       ]
@@ -7902,6 +7922,7 @@
    "schreiben": 0,
    "bild": 2
   },
+  "kurz": "Arlinds Dienstag · Pressekonferenz mit Körper-Übungen · Tausch",
   "fr": {
    "titel": "Mon plan d’atterrissage : la conférence de presse",
    "text": "L’adulte lit le message d’Arlind du mardi. Puis l’enfant est le centre de contrôle et donne debout une conférence de presse ; un crayon sert de micro. L’adulte est journaliste et pose cinq questions, une pour chaque partie du plan, par exemple : « Qu’est-ce qui rendait le retour d’Arlind si lourd ? » ou « Que fait-il quand l’alarme arrive ? » Avant chaque réponse, l’enfant fait l’exercice du corps de la partie : tenir sur une jambe, parachute, tenir un livre, se tenir bien droit, sur le coussin et retour. Dernière question : « Arlind est-il revenu à zéro après le mardi ? » Puis on échange : l’enfant pose les questions, l’adulte répond. Pour finir, l’adulte lit le mercredi, et qui veut répond à une question pour soi. Phrase-clé : « Un mauvais jour, c’est la météo, pas un crash : retour à la dernière étape, pas à zéro. »",
@@ -7910,7 +7931,8 @@
     "Avant la réponse : l’exercice du corps.",
     "Dernière question : Arlind est-il revenu à zéro après le mardi ?"
    ],
-   "wennEsKippt": "Si l’enfant ne veut pas rester debout, le centre de contrôle s’assoit à table et les exercices se font assis. Si une réponse ne vient pas, il peut retourner une carte de la piste et la lire."
+   "wennEsKippt": "Si l’enfant ne veut pas rester debout, le centre de contrôle s’assoit à table et les exercices se font assis. Si une réponse ne vient pas, il peut retourner une carte de la piste et la lire.",
+   "kurz": "Le mardi d’Arlind · conférence de presse et exercices · échange"
   },
   "hilfen": {
    "de": {
@@ -8144,6 +8166,7 @@
    "schreiben": 0,
    "bild": 2
   },
+  "kurz": "Arlinds Dienstag · Abzeichen mit fünf Feldern · Rat",
   "fr": {
    "titel": "Mon plan d’atterrissage : l’écusson d’Arlind",
    "text": "L’adulte lit le message d’Arlind du mardi, et l’enfant répond comme station au sol. Puis tous deux créent un écusson rond pour l’atterrissage d’Arlind : cinq cases, une pour chaque partie du plan. L’enfant décide quel signe y va – par exemple une jambe, un parachute, un livre, une bulle, un coussin. Pour chaque case, il fait le petit exercice du corps assis : lever les pieds, expirer lentement, un livre sur la main, s’asseoir bien droit, un pied sur le coussin. Au milieu, on met la phrase d’Arlind pour les mauvais jours. Ensuite, l’adulte lit le mercredi. Pour finir : que conseillerait Arlind à « quelqu’un comme toi » ? Il ne s’agit que d’Arlind. Phrase-clé : « Un mauvais jour, c’est la météo, pas un crash : retour à la dernière étape, pas à zéro. »",
@@ -8152,7 +8175,8 @@
     "Pour chaque case, le petit exercice assis.",
     "Qu’est-ce qu’on met au milieu – la phrase d’Arlind pour les mauvais jours ?"
    ],
-   "wennEsKippt": "Si l’enfant ne veut pas dessiner, il écrit un mot dans chaque case, ou l’adulte dessine sous sa dictée."
+   "wennEsKippt": "Si l’enfant ne veut pas dessiner, il écrit un mot dans chaque case, ou l’adulte dessine sous sa dictée.",
+   "kurz": "Le mardi d’Arlind · écusson à cinq cases · conseil"
   },
   "hilfen": {
    "de": {

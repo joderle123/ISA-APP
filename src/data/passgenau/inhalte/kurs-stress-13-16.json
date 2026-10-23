@@ -242,7 +242,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Such dir einen Wind aus: einen eigenen – oder Afonsos Anruf von der Werkstatt, bei dem er nicht rangeht.",
+     "text": "Such dir einen Wind aus: einen eigenen – oder Afonsos Anruf von der Werkstatt vor dem ersten Stage-Tag – er geht nicht ran.",
      "symbole": [
       "nachdenken"
      ]
@@ -257,7 +257,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Was ist bei dir an Bord? Kreuz an – auch Kleines zählt.",
+     "text": "Was ist bei dir an Bord? Kreuz an, auch Kleines.",
      "symbole": [
       "ankreuzen"
      ]
@@ -285,7 +285,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Wenn du magst, bis zum nächsten Mal: Bemerk einmal einen Wind und frag dich: Was steht wirklich auf dem Spiel?",
+     "text": "Wenn du magst: Bemerk einmal einen Wind – was steht wirklich auf dem Spiel?",
      "symbole": [
       "nachdenken"
      ]
@@ -299,7 +299,7 @@
     },
     {
      "art": "text",
-     "text": "Übrigens: In Moussas Jacke im Bootshaus steckt ein Seilstück mit drei sauberen Palstek-Knoten. Er sagt: „Segelen ass fir Kanner.“ (Segeln ist was für Kinder.) Erste Spur.",
+     "text": "Übrigens: In Moussas Jacke steckt ein Seil mit drei sauberen Palstek-Knoten. Er sagt: „Segelen ass fir Kanner.“ (Segeln ist was für Kinder.) Erste Spur.",
      "klein": true
     }
    ],
@@ -334,7 +334,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Choisis un vent : le tien – ou l’appel du garage auquel Afonso ne répond pas.",
+     "text": "Choisis un vent : le tien – ou l’appel du garage avant son premier jour de stage – Afonso ne répond pas.",
      "symbole": [
       "nachdenken"
      ]
@@ -349,7 +349,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Qu’as-tu à bord ? Coche – même les petites choses comptent.",
+     "text": "Qu’as-tu à bord ? Coche, même les petites choses.",
      "symbole": [
       "ankreuzen"
      ]
@@ -377,7 +377,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Si tu veux, d’ici la prochaine fois : remarque un vent et demande-toi : qu’est-ce qui est vraiment en jeu ?",
+     "text": "Si tu veux : remarque un vent – qu’est-ce qui est vraiment en jeu ?",
      "symbole": [
       "nachdenken"
      ]
@@ -391,7 +391,7 @@
     },
     {
      "art": "text",
-     "text": "Au fait : dans la veste de Moussa, au hangar à bateaux, il y a un bout de corde avec trois nœuds de chaise parfaits. Il dit : « Segelen ass fir Kanner. » (La voile, c’est pour les gamins.) Première trace.",
+     "text": "Au fait : dans la veste de Moussa, il y a un bout de corde avec trois nœuds de chaise parfaits. Il dit : « Segelen ass fir Kanner. » (La voile, c’est pour les gamins.) Premier indice.",
      "klein": true
     }
    ],
@@ -405,7 +405,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht Ankreuzen; die Fachkraft schreibt Stichworte mit. Kreuzt jemand bei „an Bord“ nichts an, nennt die Fachkraft eine Sache, die sie heute gesehen hat („Du hast genau erklärt, warum Lejlas Wind so stark ist.“)."
     },
     "fr": {
-     "text": "L’exercice 1 est un choix : un vent à soi ou l’appel d’Afonso. L’exercice 2 se fait seul et en silence ; c’est l’indispensable. Pour finir, l’adulte lit la première trace et demande : « Qui s’entraîne en cachette aux nœuds quand tout lui est égal ? » – recueillir des idées, ne rien résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour un personnage.",
+     "text": "L’exercice 1 est un choix : un vent à soi ou l’appel d’Afonso. L’exercice 2 se fait seul et en silence ; c’est l’indispensable. Pour finir, l’adulte lit le premier indice et demande : « Qui s’entraîne en cachette aux nœuds quand tout lui est égal ? » – recueillir des idées, ne rien résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour un personnage.",
      "sagen": [
       "Pas de bonne ou de mauvaise réponse – c’est toi qui décides ce qu’il y a ici.",
       "Qu’est-ce que tu as déjà à bord, même si c’est petit ?"
@@ -449,11 +449,11 @@
        "Lejla – auf dem Spiel: „Unter 45 von 60 ist eine Katastrophe.“",
        "Lejla – an Bord: hat zwei Wochen geübt; schläft seit Mittwoch schlecht",
        "Afonso – auf dem Spiel: „Mathe? Wichtiger ist meine Stage in der Werkstatt.“",
-       "Afonso – an Bord: Nachhilfe bei seiner Cousine; wegen Legasthenie mehr Zeit",
+       "Afonso – an Bord: Nachhilfe bei seiner Cousine; Vorlese-App am Handy, wegen Legasthenie mehr Zeit",
        "Moussa – auf dem Spiel: „Ass mer egal.“ (Ist mir egal.)",
        "Moussa – an Bord: ? Er sagt nichts dazu.",
        "Wind (Wahl): Vortrag auf Französisch, vorne an der Tafel",
-       "Wind (Wahl): Die Werkstatt ruft an – Afonso geht nicht ran",
+       "Wind (Wahl): Die Werkstatt ruft vor dem ersten Stage-Tag an – Afonso geht nicht ran",
        "Wind (Wahl): Gaby: „Am Samstag schaue ich bei jedem genau zu.“",
        "Wind (Wahl): im Klassenchat der 4G: „Wer lernt, ist Streber.“"
       ]
@@ -463,7 +463,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Papierstreifen nicht erklären, nur staunen lassen. Der Satz dazu: „Druck kann umwerfen oder tragen.“",
        "Lazarus in einem Satz: Stress entsteht aus der Bewertung – was steht auf dem Spiel, und reicht, was ich habe? Darum fühlt sich derselbe Devoir verschieden an.",
@@ -509,7 +510,7 @@
      "Une corde, une écharpe ou du ruban adhésif au sol : à gauche « calme plat », à droite « tempête »",
      "Un stylo pour la règle de l’ancre ; le dossier avec la carte marine (voir le rituel de fin)"
     ],
-    "aufbau": "0 min Bande de papier – « Souffle. Qu’est-ce qui se passe ? »\n1 min Équipage et traversée finale – « Tu es skipper. »\n3 min Carte-vent, cartes de bord – « Où souffle le vent pour Lejla ? »\n8 min Pourquoi trois fois autrement ? – deux questions\n10 min Fiche, première trace\nTemps : cœur 10 min · fiche 5 min\nIndispensable : bande, corde, une question. Si c’est serré : seulement Lejla et Moussa.",
+    "aufbau": "0 min Bande de papier – « Souffle. Qu’est-ce qui se passe ? »\n1 min Équipage et traversée finale – « Tu es skipper. »\n3 min Carte-vent, cartes de bord – « Où souffle le vent pour Lejla ? »\n8 min Pourquoi trois fois autrement ? – deux questions\n10 min Fiche, premier indice\nTemps : cœur 10 min · fiche 5 min\nIndispensable : bande, corde, une question. Si c’est serré : seulement Lejla et Moussa.",
     "karten": [
      {
       "titel": "Cartes vent et cartes de bord",
@@ -518,11 +519,11 @@
        "Lejla – en jeu : « En dessous de 45 sur 60, c’est la catastrophe. »",
        "Lejla – à bord : s’est entraînée deux semaines ; dort mal depuis mercredi",
        "Afonso – en jeu : « Les maths ? Mon stage au garage compte plus. »",
-       "Afonso – à bord : soutien chez sa cousine ; plus de temps à cause de sa dyslexie",
+       "Afonso – à bord : soutien chez sa cousine ; appli de lecture à voix haute, plus de temps (dyslexie)",
        "Moussa – en jeu : « Ass mer egal. » (Je m’en fiche.)",
        "Moussa – à bord : ? Il ne dit rien.",
        "Vent (au choix) : exposé en français, devant au tableau",
-       "Vent (au choix) : le garage appelle – Afonso ne répond pas",
+       "Vent (au choix) : le garage appelle avant le premier jour de stage – Afonso ne répond pas",
        "Vent (au choix) : Gaby : « Samedi, je regarde chacun de près. »",
        "Vent (au choix) : dans le chat de la 4G : « Ceux qui révisent sont des intellos. »"
       ]
@@ -532,19 +533,20 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Ne pas expliquer la bande de papier, laisser s’étonner. La phrase : « La pression peut renverser ou porter. »",
        "Lazarus en une phrase : le stress naît de l’évaluation – qu’est-ce qui est en jeu, et est-ce que ce que j’ai suffit ? D’où le même devoir vécu autrement.",
        "Moussa tout à gauche ou tout à droite ? Les deux vont. Demander : « Si tout lui est vraiment égal – pourquoi le dit-il si souvent ? » Ne pas résoudre.",
-       "Ne pas interpréter la première trace (les nœuds), seulement recueillir des idées. Les traces ne forment une image qu’à la cinquième manœuvre.",
+       "Ne pas interpréter le premier indice (les nœuds), seulement recueillir des idées. Les indices ne forment une image qu’à la cinquième manœuvre.",
        "Si le ou la jeune parle de notes ou de pression à la maison : remercier, ne pas questionner, rester avec les personnages."
       ]
      }
     ],
     "leichter": "Seulement Lejla et Afonso ; l’adulte lit les cartes de bord, le ou la jeune montre sur la corde. Sur la fiche, l’exercice 2 suffit.",
     "schwerer": "Inventer une quatrième personne pour qui le même devoir est un calme plat – qu’a-t-elle à bord ? Ou : qu’est-ce qui devrait être en jeu pour Lejla pour que le vent faiblisse ?",
-    "gruppe": "Groupe (4–6) : tout le monde souffle en même temps sur sa bande. Puis trois binômes, chacun reçoit un personnage avec ses cartes et le place sur la corde ; les autres peuvent le déplacer d’un pas en justifiant. Fin : on cherche ensemble les deux questions, l’adulte lit la première trace. Les vents personnels restent sur la fiche.",
+    "gruppe": "Groupe (4–6) : tout le monde souffle en même temps sur sa bande. Puis trois binômes, chacun reçoit un personnage avec ses cartes et le place sur la corde ; les autres peuvent le déplacer d’un pas en justifiant. Fin : on cherche ensemble les deux questions, l’adulte lit le premier indice. Les vents personnels restent sur la fiche.",
     "beobachten": [
      "explique pourquoi le même devoir souffle plus ou moins fort pour Lejla, Afonso et Moussa",
      "nomme quelque chose qui est « à bord » (savoir, temps, personnes, trucs)",
@@ -697,7 +699,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Such dir einen Wind aus: einen eigenen – oder Afonsos Anruf von der Werkstatt, bei dem er nicht rangeht.",
+     "text": "Such dir einen Wind aus: einen eigenen – oder Afonsos Anruf von der Werkstatt vor dem ersten Stage-Tag – er geht nicht ran.",
      "symbole": [
       "nachdenken"
      ]
@@ -717,7 +719,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Was ist bei dir an Bord? Kreuz an – auch Kleines zählt.",
+     "text": "Was ist bei dir an Bord? Kreuz an, auch Kleines.",
      "symbole": [
       "ankreuzen"
      ]
@@ -745,7 +747,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Wenn du magst, bis zum nächsten Mal: Bemerk einmal einen Wind und frag dich: Was steht wirklich auf dem Spiel?",
+     "text": "Wenn du magst: Bemerk einmal einen Wind – was steht wirklich auf dem Spiel?",
      "symbole": [
       "nachdenken"
      ]
@@ -759,7 +761,7 @@
     },
     {
      "art": "text",
-     "text": "Übrigens: In Moussas Jacke im Bootshaus steckt ein Seilstück mit drei sauberen Palstek-Knoten. Er sagt: „Segelen ass fir Kanner.“ (Segeln ist was für Kinder.) Erste Spur.",
+     "text": "Übrigens: In Moussas Jacke steckt ein Seil mit drei sauberen Palstek-Knoten. Er sagt: „Segelen ass fir Kanner.“ (Segeln ist was für Kinder.) Erste Spur.",
      "klein": true
     }
    ],
@@ -794,7 +796,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Choisis un vent : le tien – ou l’appel du garage auquel Afonso ne répond pas.",
+     "text": "Choisis un vent : le tien – ou l’appel du garage avant son premier jour de stage – Afonso ne répond pas.",
      "symbole": [
       "nachdenken"
      ]
@@ -814,7 +816,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Qu’as-tu à bord ? Coche – même les petites choses comptent.",
+     "text": "Qu’as-tu à bord ? Coche, même les petites choses.",
      "symbole": [
       "ankreuzen"
      ]
@@ -842,7 +844,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Si tu veux, d’ici la prochaine fois : remarque un vent et demande-toi : qu’est-ce qui est vraiment en jeu ?",
+     "text": "Si tu veux : remarque un vent – qu’est-ce qui est vraiment en jeu ?",
      "symbole": [
       "nachdenken"
      ]
@@ -856,7 +858,7 @@
     },
     {
      "art": "text",
-     "text": "Au fait : dans la veste de Moussa, au hangar à bateaux, il y a un bout de corde avec trois nœuds de chaise parfaits. Il dit : « Segelen ass fir Kanner. » (La voile, c’est pour les gamins.) Première trace.",
+     "text": "Au fait : dans la veste de Moussa, il y a un bout de corde avec trois nœuds de chaise parfaits. Il dit : « Segelen ass fir Kanner. » (La voile, c’est pour les gamins.) Premier indice.",
      "klein": true
     }
    ],
@@ -870,7 +872,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht Ankreuzen; die Fachkraft schreibt Stichworte mit. Kreuzt jemand bei „an Bord“ nichts an, nennt die Fachkraft eine Sache, die sie heute gesehen hat („Du hast genau erklärt, warum Lejlas Wind so stark ist.“)."
     },
     "fr": {
-     "text": "L’exercice 1 est un choix : un vent à soi ou l’appel d’Afonso. L’exercice 2 se fait seul et en silence ; c’est l’indispensable. Pour finir, l’adulte lit la première trace et demande : « Qui s’entraîne en cachette aux nœuds quand tout lui est égal ? » – recueillir des idées, ne rien résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour un personnage.",
+     "text": "L’exercice 1 est un choix : un vent à soi ou l’appel d’Afonso. L’exercice 2 se fait seul et en silence ; c’est l’indispensable. Pour finir, l’adulte lit le premier indice et demande : « Qui s’entraîne en cachette aux nœuds quand tout lui est égal ? » – recueillir des idées, ne rien résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour un personnage.",
      "sagen": [
       "Pas de bonne ou de mauvaise réponse – c’est toi qui décides ce qu’il y a ici.",
       "Qu’est-ce que tu as déjà à bord, même si c’est petit ?"
@@ -914,11 +916,11 @@
        "Lejla – auf dem Spiel: „Unter 45 von 60 ist eine Katastrophe.“",
        "Lejla – an Bord: hat zwei Wochen geübt; schläft seit Mittwoch schlecht",
        "Afonso – auf dem Spiel: „Mathe? Wichtiger ist meine Stage in der Werkstatt.“",
-       "Afonso – an Bord: Nachhilfe bei seiner Cousine; wegen Legasthenie mehr Zeit",
+       "Afonso – an Bord: Nachhilfe bei seiner Cousine; Vorlese-App am Handy, wegen Legasthenie mehr Zeit",
        "Moussa – auf dem Spiel: „Ass mer egal.“ (Ist mir egal.)",
        "Moussa – an Bord: ? Er sagt nichts dazu.",
        "Wind (Wahl): Vortrag auf Französisch, vorne an der Tafel",
-       "Wind (Wahl): Die Werkstatt ruft an – Afonso geht nicht ran",
+       "Wind (Wahl): Die Werkstatt ruft vor dem ersten Stage-Tag an – Afonso geht nicht ran",
        "Wind (Wahl): Gaby: „Am Samstag schaue ich bei jedem genau zu.“",
        "Wind (Wahl): im Klassenchat der 4G: „Wer lernt, ist Streber.“"
       ]
@@ -928,7 +930,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Papierstreifen nicht erklären, nur staunen lassen. Der Satz dazu: „Druck kann umwerfen oder tragen.“",
        "Lazarus in einem Satz: Stress entsteht aus der Bewertung – was steht auf dem Spiel, und reicht, was ich habe? Darum fühlt sich derselbe Devoir verschieden an.",
@@ -974,7 +977,7 @@
      "Une corde, une écharpe ou du ruban adhésif au sol : à gauche « calme plat », à droite « tempête »",
      "Un stylo pour la règle de l’ancre ; le dossier avec la carte marine (voir le rituel de fin)"
     ],
-    "aufbau": "0 min Bande de papier – « Souffle. Qu’est-ce qui se passe ? »\n1 min Équipage et traversée finale – « Tu es skipper. »\n3 min Carte-vent, cartes de bord – « Où souffle le vent pour Lejla ? »\n8 min Pourquoi trois fois autrement ? – deux questions\n10 min Fiche, première trace\nTemps : cœur 10 min · fiche 5 min\nIndispensable : bande, corde, une question. Si c’est serré : seulement Lejla et Moussa.",
+    "aufbau": "0 min Bande de papier – « Souffle. Qu’est-ce qui se passe ? »\n1 min Équipage et traversée finale – « Tu es skipper. »\n3 min Carte-vent, cartes de bord – « Où souffle le vent pour Lejla ? »\n8 min Pourquoi trois fois autrement ? – deux questions\n10 min Fiche, premier indice\nTemps : cœur 10 min · fiche 5 min\nIndispensable : bande, corde, une question. Si c’est serré : seulement Lejla et Moussa.",
     "karten": [
      {
       "titel": "Cartes vent et cartes de bord",
@@ -983,11 +986,11 @@
        "Lejla – en jeu : « En dessous de 45 sur 60, c’est la catastrophe. »",
        "Lejla – à bord : s’est entraînée deux semaines ; dort mal depuis mercredi",
        "Afonso – en jeu : « Les maths ? Mon stage au garage compte plus. »",
-       "Afonso – à bord : soutien chez sa cousine ; plus de temps à cause de sa dyslexie",
+       "Afonso – à bord : soutien chez sa cousine ; appli de lecture à voix haute, plus de temps (dyslexie)",
        "Moussa – en jeu : « Ass mer egal. » (Je m’en fiche.)",
        "Moussa – à bord : ? Il ne dit rien.",
        "Vent (au choix) : exposé en français, devant au tableau",
-       "Vent (au choix) : le garage appelle – Afonso ne répond pas",
+       "Vent (au choix) : le garage appelle avant le premier jour de stage – Afonso ne répond pas",
        "Vent (au choix) : Gaby : « Samedi, je regarde chacun de près. »",
        "Vent (au choix) : dans le chat de la 4G : « Ceux qui révisent sont des intellos. »"
       ]
@@ -997,19 +1000,20 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Ne pas expliquer la bande de papier, laisser s’étonner. La phrase : « La pression peut renverser ou porter. »",
        "Lazarus en une phrase : le stress naît de l’évaluation – qu’est-ce qui est en jeu, et est-ce que ce que j’ai suffit ? D’où le même devoir vécu autrement.",
        "Moussa tout à gauche ou tout à droite ? Les deux vont. Demander : « Si tout lui est vraiment égal – pourquoi le dit-il si souvent ? » Ne pas résoudre.",
-       "Ne pas interpréter la première trace (les nœuds), seulement recueillir des idées. Les traces ne forment une image qu’à la cinquième manœuvre.",
+       "Ne pas interpréter le premier indice (les nœuds), seulement recueillir des idées. Les indices ne forment une image qu’à la cinquième manœuvre.",
        "Si le ou la jeune parle de notes ou de pression à la maison : remercier, ne pas questionner, rester avec les personnages."
       ]
      }
     ],
     "leichter": "Seulement Lejla et Afonso ; l’adulte lit les cartes de bord, le ou la jeune montre sur la corde. Sur la fiche, l’exercice 2 suffit.",
     "schwerer": "Inventer une quatrième personne pour qui le même devoir est un calme plat – qu’a-t-elle à bord ? Ou : qu’est-ce qui devrait être en jeu pour Lejla pour que le vent faiblisse ?",
-    "gruppe": "Groupe (4–6) : tout le monde souffle en même temps sur sa bande. Puis trois binômes, chacun reçoit un personnage avec ses cartes et le place sur la corde ; les autres peuvent le déplacer d’un pas en justifiant. Fin : on cherche ensemble les deux questions, l’adulte lit la première trace. Les vents personnels restent sur la fiche.",
+    "gruppe": "Groupe (4–6) : tout le monde souffle en même temps sur sa bande. Puis trois binômes, chacun reçoit un personnage avec ses cartes et le place sur la corde ; les autres peuvent le déplacer d’un pas en justifiant. Fin : on cherche ensemble les deux questions, l’adulte lit le premier indice. Les vents personnels restent sur la fiche.",
     "beobachten": [
      "explique pourquoi le même devoir souffle plus ou moins fort pour Lejla, Afonso et Moussa",
      "nomme quelque chose qui est « à bord » (savoir, temps, personnes, trucs)",
@@ -1155,7 +1159,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Werfen, nicht schießen. Bei Unruhe: rollen.",
        "Keine Hand-Windstärke ist falsch. Nachfragen: „Was müsste an Bord sein, damit deine Hand ruhiger wird?“",
@@ -1205,7 +1210,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Lancer, pas tirer. Si c’est agité : rouler.",
        "Aucune force du vent n’est fausse. Demander : « Qu’est-ce qu’il faudrait à bord pour que ta main se calme ? »",
@@ -1363,7 +1369,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Die Steine sind Schätzungen, kein Messwert. Unterschiede zwischen den Figuren sind das Ziel.",
        "Bei Moussa bleibt der Boot-Becher vielleicht leer – nicht erklären. Fragen: „Was wäre, wenn er etwas hätte, es aber nicht zeigt?“",
@@ -1414,7 +1421,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Les briques sont des estimations, pas une mesure. Le but, ce sont les différences entre les personnages.",
        "Pour Moussa, le gobelet du bateau reste peut-être vide – ne pas expliquer. Demander : « Et s’il avait quelque chose, mais ne le montrait pas ? »",
@@ -1658,7 +1666,7 @@
       },
       {
        "art": "text",
-       "text": "Avant un moment important, le cœur qui bat, c’est souvent du vent, pas une fuite. Aujourd’hui, tu règles la voile."
+       "text": "Le cœur qui bat avant un moment important, c’est souvent du vent, pas une fuite."
       }
      ],
      "rechts": [
@@ -1715,7 +1723,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Si tu veux, d’ici la prochaine fois : avant un moment important, dis-toi tout bas ta phrase-voile.",
+     "text": "Si tu veux : avant un moment important, dis-toi tout bas ta phrase-voile.",
      "symbole": [
       "nachdenken"
      ]
@@ -1729,7 +1737,7 @@
     },
     {
      "art": "text",
-     "text": "Au fait, Afonso : « Moussa a rendu le devoir de français après douze minutes – ‹ Ass mer egal. › Page 1 : pleine, soignée, corrigée. Après, rien. » Deuxième trace.",
+     "text": "Au fait, Afonso : « Moussa a rendu le devoir de français après douze minutes – ‹ Ass mer egal. › Page 1 : pleine, soignée, corrigée. Après, rien. » Deuxième indice.",
      "klein": true
     }
    ],
@@ -1743,7 +1751,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht Ankreuzen. Kreuzt jemand „Bauchweh“ an, nicht ausfragen; später unter vier Augen einmal: „Kommt das oft? Dann lohnt sich ein Arzttermin.“"
     },
     "fr": {
-     "text": "L’exercice 1 en silence, pour soi ou pour Lejla – sans dire pour qui. L’exercice 2, c’est la phrase-voile ; elle peut être dans n’importe quelle langue. Seule la phrase-voile est indispensable. Pour finir, l’adulte lit la deuxième trace : « Qu’est-ce qui ne colle pas ? » – recueillir, ne pas résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour Lejla.",
+     "text": "L’exercice 1 en silence, pour soi ou pour Lejla – sans dire pour qui. L’exercice 2, c’est la phrase-voile ; elle peut être dans n’importe quelle langue. Seule la phrase-voile est indispensable. Pour finir, l’adulte lit le deuxième indice : « Qu’est-ce qui ne colle pas ? » – recueillir, ne pas résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour Lejla.",
      "sagen": [
       "Dis la phrase une fois à voix haute – est-ce qu’elle sonne comme toi ?",
       "L’encadré du bas est important : le mal de ventre dû à la pression est réel."
@@ -1815,7 +1823,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Herz und Atem schneller: mehr Blut und Sauerstoff für Kopf und Muskeln. Hellwach: Aufmerksamkeit hoch. Feuchte Hände: Kühlung.",
        "Flauer Bauch, trockener Mund: Die Verdauung macht Pause, die Energie geht in die Muskeln. Zittern: Energie ohne Ausgang.",
@@ -1866,7 +1875,7 @@
      "Une montre avec trotteuse pour 20 secondes de course",
      "De la place pour courir 20 secondes sur place (sinon assis)"
     ],
-    "aufbau": "0 min Chat de Lejla – « Que fait son corps ? »\n1 min Corps sans lieu – « Où pourrait-il être ? »\n3 min 20 s de course, pouls – « Qu’est-ce que tu sens ? »\n5 min Ranger les cartes-vent – « À quoi ça sert ? » · cartes-fuite visibles à côté\n9 min Phrase-voile à voix haute\n10 min Fiche, deuxième trace\nTemps : cœur 10 min · fiche 5 min\nIndispensable : pouls, quatre cartes, une phrase-voile.",
+    "aufbau": "0 min Chat de Lejla – « Que fait son corps ? »\n1 min Corps sans lieu – « Où pourrait-il être ? »\n3 min 20 s de course, pouls – « Qu’est-ce que tu sens ? »\n5 min Ranger les cartes-vent – « À quoi ça sert ? » · cartes-fuite visibles à côté\n9 min Phrase-voile à voix haute\n10 min Fiche, deuxième indice\nTemps : cœur 10 min · fiche 5 min\nIndispensable : pouls, quatre cartes, une phrase-voile.",
     "karten": [
      {
       "titel": "Cartes-corps",
@@ -1903,7 +1912,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Cœur et souffle plus rapides : plus de sang et d’oxygène pour la tête et les muscles. Très éveillé·e : attention en alerte. Mains moites : refroidir.",
        "Ventre noué, bouche sèche : la digestion fait une pause, l’énergie va aux muscles. Tremblements : de l’énergie sans sortie.",
@@ -1911,7 +1921,7 @@
        "Alors conseiller un médecin – jamais « c’est une excuse ».",
        "Lejla est allée chez la médecin pour son mal de ventre : rien de grave. La médecin a dit : le mal de ventre dû à la pression est réel – revenir si ça empire.",
        "Honnêtement : lire le cœur qui bat comme de l’énergie aide en moyenne peu (d = 0,23 ; Bosshard & Gomez, 2024). La nervosité reste – elle gêne souvent moins.",
-       "Ne pas interpréter la deuxième trace : « Qu’est-ce qui ne colle pas ? » suffit."
+       "Ne pas interpréter le deuxième indice : « Qu’est-ce qui ne colle pas ? » suffit."
       ]
      }
     ],
@@ -2158,7 +2168,7 @@
       },
       {
        "art": "text",
-       "text": "Avant un moment important, le cœur qui bat, c’est souvent du vent, pas une fuite. Aujourd’hui, tu règles la voile."
+       "text": "Le cœur qui bat avant un moment important, c’est souvent du vent, pas une fuite."
       }
      ],
      "rechts": [
@@ -2218,7 +2228,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Si tu veux, d’ici la prochaine fois : avant un moment important, dis-toi tout bas ta phrase-voile.",
+     "text": "Si tu veux : avant un moment important, dis-toi tout bas ta phrase-voile.",
      "symbole": [
       "nachdenken"
      ]
@@ -2232,7 +2242,7 @@
     },
     {
      "art": "text",
-     "text": "Au fait, Afonso : « Moussa a rendu le devoir de français après douze minutes – ‹ Ass mer egal. › Page 1 : pleine, soignée, corrigée. Après, rien. » Deuxième trace.",
+     "text": "Au fait, Afonso : « Moussa a rendu le devoir de français après douze minutes – ‹ Ass mer egal. › Page 1 : pleine, soignée, corrigée. Après, rien. » Deuxième indice.",
      "klein": true
     }
    ],
@@ -2246,7 +2256,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht Ankreuzen. Kreuzt jemand „Bauchweh“ an, nicht ausfragen; später unter vier Augen einmal: „Kommt das oft? Dann lohnt sich ein Arzttermin.“"
     },
     "fr": {
-     "text": "L’exercice 1 en silence, pour soi ou pour Lejla – sans dire pour qui. L’exercice 2, c’est la phrase-voile ; elle peut être dans n’importe quelle langue. Seule la phrase-voile est indispensable. Pour finir, l’adulte lit la deuxième trace : « Qu’est-ce qui ne colle pas ? » – recueillir, ne pas résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour Lejla.",
+     "text": "L’exercice 1 en silence, pour soi ou pour Lejla – sans dire pour qui. L’exercice 2, c’est la phrase-voile ; elle peut être dans n’importe quelle langue. Seule la phrase-voile est indispensable. Pour finir, l’adulte lit le deuxième indice : « Qu’est-ce qui ne colle pas ? » – recueillir, ne pas résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour Lejla.",
      "sagen": [
       "Dis la phrase une fois à voix haute – est-ce qu’elle sonne comme toi ?",
       "L’encadré du bas est important : le mal de ventre dû à la pression est réel."
@@ -2318,7 +2328,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Herz und Atem schneller: mehr Blut und Sauerstoff für Kopf und Muskeln. Hellwach: Aufmerksamkeit hoch. Feuchte Hände: Kühlung.",
        "Flauer Bauch, trockener Mund: Die Verdauung macht Pause, die Energie geht in die Muskeln. Zittern: Energie ohne Ausgang.",
@@ -2369,7 +2380,7 @@
      "Une montre avec trotteuse pour 20 secondes de course",
      "De la place pour courir 20 secondes sur place (sinon assis)"
     ],
-    "aufbau": "0 min Chat de Lejla – « Que fait son corps ? »\n1 min Corps sans lieu – « Où pourrait-il être ? »\n3 min 20 s de course, pouls – « Qu’est-ce que tu sens ? »\n5 min Ranger les cartes-vent – « À quoi ça sert ? » · cartes-fuite visibles à côté\n9 min Phrase-voile à voix haute\n10 min Fiche, deuxième trace\nTemps : cœur 10 min · fiche 5 min\nIndispensable : pouls, quatre cartes, une phrase-voile.",
+    "aufbau": "0 min Chat de Lejla – « Que fait son corps ? »\n1 min Corps sans lieu – « Où pourrait-il être ? »\n3 min 20 s de course, pouls – « Qu’est-ce que tu sens ? »\n5 min Ranger les cartes-vent – « À quoi ça sert ? » · cartes-fuite visibles à côté\n9 min Phrase-voile à voix haute\n10 min Fiche, deuxième indice\nTemps : cœur 10 min · fiche 5 min\nIndispensable : pouls, quatre cartes, une phrase-voile.",
     "karten": [
      {
       "titel": "Cartes-corps",
@@ -2406,7 +2417,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Cœur et souffle plus rapides : plus de sang et d’oxygène pour la tête et les muscles. Très éveillé·e : attention en alerte. Mains moites : refroidir.",
        "Ventre noué, bouche sèche : la digestion fait une pause, l’énergie va aux muscles. Tremblements : de l’énergie sans sortie.",
@@ -2414,7 +2426,7 @@
        "Alors conseiller un médecin – jamais « c’est une excuse ».",
        "Lejla est allée chez la médecin pour son mal de ventre : rien de grave. La médecin a dit : le mal de ventre dû à la pression est réel – revenir si ça empire.",
        "Honnêtement : lire le cœur qui bat comme de l’énergie aide en moyenne peu (d = 0,23 ; Bosshard & Gomez, 2024). La nervosité reste – elle gêne souvent moins.",
-       "Ne pas interpréter la deuxième trace : « Qu’est-ce qui ne colle pas ? » suffit."
+       "Ne pas interpréter le deuxième indice : « Qu’est-ce qui ne colle pas ? » suffit."
       ]
      }
     ],
@@ -2572,7 +2584,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Herz: Faust auf die Brust klopfen. Hände: zittern lassen. Atem: kurz und hoch. Bauch: Hand drauf, Gesicht verziehen.",
        "Es gibt keinen falschen Ort. Die Pointe: Derselbe Körper passt zu Achterbahn und Devoir.",
@@ -2626,7 +2639,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Cœur : taper du poing sur la poitrine. Mains : les faire trembler. Souffle : court et haut. Ventre : main dessus, grimace.",
        "Il n’y a pas de lieu faux. L’idée : le même corps va avec les montagnes russes et le devoir.",
@@ -2787,7 +2801,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Nur über Lejla sprechen; eigene Beschwerden nicht abfragen.",
        "Funktionen siehe Karte der Variante („Wozu der Körper das macht“). Kein Abfragen, gemeinsam überlegen."
@@ -2839,7 +2854,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Parler seulement de Lejla ; ne pas questionner sur ses propres maux.",
        "Pour les fonctions, voir la carte de la variante (« à quoi ça sert »). Pas d’interrogation, réfléchir ensemble."
@@ -3172,7 +3188,7 @@
     },
     {
      "art": "text",
-     "text": "Au fait : chat d’équipage, 23 h 10, supprimé aussitôt – Moussa : « Samedi, tout le monde regarde quand on chavire ? » Troisième trace.",
+     "text": "Au fait : chat d’équipage, 23 h 10, supprimé aussitôt – Moussa : « Samedi, tout le monde regarde quand on chavire ? » Troisième indice.",
      "klein": true
     }
    ],
@@ -3186,7 +3202,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht Ankreuzen. Hat kein Griff gewirkt: nicht überreden; „Dann testen wir nächstes Mal einen anderen“ – oder den Griff wählen, der am wenigsten gestört hat."
     },
     "fr": {
-     "text": "L’exercice 1 note le résultat, juste après le labo ; l’exercice 2 est un choix de lieux. L’exercice 1 est indispensable. Qui veut écrit son geste en trois temps. Pour finir, l’adulte lit la troisième trace : « Pourquoi il l’efface, à ton avis ? » – recueillir, ne pas résoudre.",
+     "text": "L’exercice 1 note le résultat, juste après le labo ; l’exercice 2 est un choix de lieux. L’exercice 1 est indispensable. Qui veut écrit son geste en trois temps. Pour finir, l’adulte lit le troisième indice : « Pourquoi il l’efface, à ton avis ? » – recueillir, ne pas résoudre.",
      "sagen": [
       "« Rien », c’est aussi un résultat – alors ce geste n’est pas le tien.",
       "Quel geste passerait pendant le devoir sans que personne ne le remarque ?"
@@ -3245,7 +3261,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Atmen: nie Luft anhalten; bei Schwindel normal weiteratmen.",
        "Atemübungen senken selbstberichteten Stress im Mittel klein bis mittel (g = −0,35; Fincham et al., 2023), Studien mit Schwächen.",
@@ -3295,7 +3312,7 @@
      "Une montre avec trotteuse ; un cahier ou un papier avec un exercice de maths pour « un bout »",
      "Une chaise avec de la place pour les pieds ; l’adulte se tient debout à côté pour le regard du chef"
     ],
-    "aufbau": "0 min Tête vide de Lejla, lundi d’Afonso – « Que faire dans la rafale ? »\n1 min Souffle long – 1 min, carte\n3 min Pieds-ancre – 1 min, carte\n5 min Un bout – 1 min, carte\n7 min Regard du chef – « Je vois quelque chose ? »\n9 min Trois temps\n10 min Fiche, troisième trace\nTemps : cœur 10 min · fiche 5 min\nIndispensable : deux gestes, regard du chef.",
+    "aufbau": "0 min Tête vide de Lejla, lundi d’Afonso – « Que faire dans la rafale ? »\n1 min Souffle long – 1 min, carte\n3 min Pieds-ancre – 1 min, carte\n5 min Un bout – 1 min, carte\n7 min Regard du chef – « Je vois quelque chose ? »\n9 min Trois temps\n10 min Fiche, troisième indice\nTemps : cœur 10 min · fiche 5 min\nIndispensable : deux gestes, regard du chef.",
     "karten": [
      {
       "titel": "Cartes-résultat",
@@ -3320,14 +3337,15 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Respirer : ne jamais bloquer l’air ; en cas de vertige, respirer normalement.",
        "La respiration réduit en moyenne un peu à modérément le stress déclaré (g = −0,35 ; Fincham et al., 2023), études fragiles.",
        "Aucun geste n’est obligatoire. « Rien » est un bon résultat – on gagne du temps pour le geste qui convient.",
        "Regard du chef : regarder de façon aimable et neutre, sans commentaire. Ensuite : « Fin du rôle. » Question : « Est-ce que j’ai vu quelque chose ? »",
        "« Un bout » agit par l’attention : avec la peur, la rafale tire l’attention ailleurs, le plus petit bout suivant la ramène.",
-       "Ne pas interpréter la troisième trace. Seulement : « Pourquoi il l’efface, à ton avis ? »"
+       "Ne pas interpréter le troisième indice. Seulement : « Pourquoi il l’efface, à ton avis ? »"
       ]
      }
     ],
@@ -3639,7 +3657,7 @@
     },
     {
      "art": "text",
-     "text": "Au fait : chat d’équipage, 23 h 10, supprimé aussitôt – Moussa : « Samedi, tout le monde regarde quand on chavire ? » Troisième trace.",
+     "text": "Au fait : chat d’équipage, 23 h 10, supprimé aussitôt – Moussa : « Samedi, tout le monde regarde quand on chavire ? » Troisième indice.",
      "klein": true
     }
    ],
@@ -3653,7 +3671,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht Ankreuzen. Hat kein Griff gewirkt: nicht überreden; „Dann testen wir nächstes Mal einen anderen“ – oder den Griff wählen, der am wenigsten gestört hat."
     },
     "fr": {
-     "text": "L’exercice 1 note le résultat, juste après le labo ; l’exercice 2 est un choix de lieux. L’exercice 1 est indispensable. Qui veut écrit son geste en trois temps. Pour finir, l’adulte lit la troisième trace : « Pourquoi il l’efface, à ton avis ? » – recueillir, ne pas résoudre.",
+     "text": "L’exercice 1 note le résultat, juste après le labo ; l’exercice 2 est un choix de lieux. L’exercice 1 est indispensable. Qui veut écrit son geste en trois temps. Pour finir, l’adulte lit le troisième indice : « Pourquoi il l’efface, à ton avis ? » – recueillir, ne pas résoudre.",
      "sagen": [
       "« Rien », c’est aussi un résultat – alors ce geste n’est pas le tien.",
       "Quel geste passerait pendant le devoir sans que personne ne le remarque ?"
@@ -3712,7 +3730,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Atmen: nie Luft anhalten; bei Schwindel normal weiteratmen.",
        "Atemübungen senken selbstberichteten Stress im Mittel klein bis mittel (g = −0,35; Fincham et al., 2023), Studien mit Schwächen.",
@@ -3762,7 +3781,7 @@
      "Une montre avec trotteuse ; un cahier ou un papier avec un exercice de maths pour « un bout »",
      "Une chaise avec de la place pour les pieds ; l’adulte se tient debout à côté pour le regard du chef"
     ],
-    "aufbau": "0 min Tête vide de Lejla, lundi d’Afonso – « Que faire dans la rafale ? »\n1 min Souffle long – 1 min, carte\n3 min Pieds-ancre – 1 min, carte\n5 min Un bout – 1 min, carte\n7 min Regard du chef – « Je vois quelque chose ? »\n9 min Trois temps\n10 min Fiche, troisième trace\nTemps : cœur 10 min · fiche 5 min\nIndispensable : deux gestes, regard du chef.",
+    "aufbau": "0 min Tête vide de Lejla, lundi d’Afonso – « Que faire dans la rafale ? »\n1 min Souffle long – 1 min, carte\n3 min Pieds-ancre – 1 min, carte\n5 min Un bout – 1 min, carte\n7 min Regard du chef – « Je vois quelque chose ? »\n9 min Trois temps\n10 min Fiche, troisième indice\nTemps : cœur 10 min · fiche 5 min\nIndispensable : deux gestes, regard du chef.",
     "karten": [
      {
       "titel": "Cartes-résultat",
@@ -3787,14 +3806,15 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Respirer : ne jamais bloquer l’air ; en cas de vertige, respirer normalement.",
        "La respiration réduit en moyenne un peu à modérément le stress déclaré (g = −0,35 ; Fincham et al., 2023), études fragiles.",
        "Aucun geste n’est obligatoire. « Rien » est un bon résultat – on gagne du temps pour le geste qui convient.",
        "Regard du chef : regarder de façon aimable et neutre, sans commentaire. Ensuite : « Fin du rôle. » Question : « Est-ce que j’ai vu quelque chose ? »",
        "« Un bout » agit par l’attention : avec la peur, la rafale tire l’attention ailleurs, le plus petit bout suivant la ramène.",
-       "Ne pas interpréter la troisième trace. Seulement : « Pourquoi il l’efface, à ton avis ? »"
+       "Ne pas interpréter le troisième indice. Seulement : « Pourquoi il l’efface, à ton avis ? »"
       ]
      }
     ],
@@ -3951,7 +3971,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Devoir-Tisch: „Die zweite Aufgabe ist leer.“ · „Noch zehn Minuten.“",
        "Werkstatt: „Lies mal den Auftrag vor.“ · „Ich schau dir kurz zu.“",
@@ -4005,7 +4026,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Table du devoir : « Le deuxième exercice est vide. » · « Encore dix minutes. »",
        "Garage : « Lis-moi l’ordre de réparation. » · « Je te regarde un moment. »",
@@ -4169,7 +4191,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Alles bleibt bei Lejla – eine eigene Karte nur, wenn der oder die Jugendliche das will.",
        "Atmen nie anhalten; bei Schwindel normal weiteratmen."
@@ -4222,7 +4245,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Tout reste chez Lejla – une carte à soi seulement si le ou la jeune le veut.",
        "Ne jamais bloquer l’air ; en cas de vertige, respirer normalement."
@@ -4376,7 +4400,7 @@
       },
       {
        "art": "text",
-       "text": "Sätze von anderen sind Wind. Heute lernst du, Kurs zu halten."
+       "text": "Heute lernst du, Kurs zu halten."
       }
      ],
      "rechts": [
@@ -4428,7 +4452,7 @@
      "art": "info",
      "symbol": "merke",
      "titel": "Kurs halten",
-     "text": "Ein Satz von anderen ist Wind, kein Urteil. Prüf: Info oder Drohung? Was steht wirklich auf dem Spiel? Was ist mein nächster Handgriff?"
+     "text": "Ein Satz von anderen ist Wind, kein Urteil. Prüf: Info oder Drohung? Was steht auf dem Spiel? Mein nächster Handgriff?"
     },
     {
      "art": "aufgabe",
@@ -4460,7 +4484,7 @@
       },
       {
        "art": "text",
-       "text": "Les phrases des autres, c’est du vent. Aujourd’hui, tu apprends à garder le cap."
+       "text": "Aujourd’hui, tu apprends à garder le cap."
       }
      ],
      "rechts": [
@@ -4512,7 +4536,7 @@
      "art": "info",
      "symbol": "merke",
      "titel": "Garder le cap",
-     "text": "Une phrase des autres, c’est du vent, pas un verdict. Vérifie : info ou menace ? Qu’est-ce qui est vraiment en jeu ? Quel est mon prochain geste ?"
+     "text": "Une phrase des autres, c’est du vent, pas un verdict. Vérifie : info ou menace ? Qu’est-ce qui est en jeu ? Mon prochain geste ?"
     },
     {
      "art": "aufgabe",
@@ -4523,7 +4547,7 @@
     },
     {
      "art": "text",
-     "text": "Au fait, Afonso : en 5G, Moussa a révisé une semaine pour un devoir – 18 sur 60. Copies rendues par ordre de points, la meilleure d’abord, la sienne en dernier. Certains ont ri. Quatrième trace.",
+     "text": "Au fait, Afonso : en 5G, Moussa a révisé une semaine pour un devoir – 18 sur 60. Copies rendues par ordre de points, la meilleure d’abord, la sienne en dernier. Certains ont ri. Quatrième indice.",
      "klein": true
     }
    ],
@@ -4537,7 +4561,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht Ankreuzen. Erzählt jemand von Druck daheim: danken, zuhören, nicht nachfragen; bei Hinweisen auf Gewalt den Schutzablauf der Einrichtung starten."
     },
     "fr": {
-     "text": "L’exercice 1 en silence. L’exercice 2 est un choix : une phrase-cap pour un personnage ou pour soi. Une phrase-cap est indispensable. Pour finir, l’adulte lit la quatrième trace et pose les quatre traces côte à côte : « La prochaine fois, tu les assembles. » Ne pas résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour un personnage.",
+     "text": "L’exercice 1 en silence. L’exercice 2 est un choix : une phrase-cap pour un personnage ou pour soi. Une phrase-cap est indispensable. Pour finir, l’adulte lit le quatrième indice et pose les quatre indices côte à côte : « La prochaine fois, tu les assembles. » Ne pas résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour un personnage.",
      "sagen": [
       "Pour qui construis-tu la phrase-cap ?",
       "Est-ce que la phrase sonne comme toi – ou comme un poster ?"
@@ -4608,7 +4632,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Drohsätze (fear appeals) erhöhen Prüfungsangst, wenn sie als Bedrohung erlebt werden (Putwain & Symes, 2011).",
        "Als Herausforderung erlebt, motivieren sie eher (Putwain & Remedios, 2014).",
@@ -4656,9 +4681,9 @@
     "vorbereitung": [
      "Démarrage rapide (3 min) : imprimer la fiche et la planche de cartes, détacher les cartes",
      "De la place pour se tenir debout, par sécurité près d’une table ou d’un mur",
-     "Préparer les quatre traces des dernières rencontres (de la fiche ou sur des papiers)"
+     "Préparer les quatre indices des dernières rencontres (de la fiche ou sur des papiers)"
     ],
-    "aufbau": "0 min Les phrases pleuvent – « Laquelle renverse ? »\n1 min Bateau : pieds écartés\n2 min Lire une rafale, se pencher – « Jusqu’où ? »\n3 min Trois questions-cap, phrase-cap, se redresser\n7 min Échange après quatre rafales\n9 min Phrase-clé\n10 min Fiche, quatrième trace\nTemps : cœur 10 min · fiche 5 min\nIndispensable : trois rafales, une phrase-cap à soi.",
+    "aufbau": "0 min Les phrases pleuvent – « Laquelle renverse ? »\n1 min Bateau : pieds écartés\n2 min Lire une rafale, se pencher – « Jusqu’où ? »\n3 min Trois questions-cap, phrase-cap, se redresser\n7 min Échange après quatre rafales\n9 min Phrase-clé\n10 min Fiche, quatrième indice\nTemps : cœur 10 min · fiche 5 min\nIndispensable : trois rafales, une phrase-cap à soi.",
     "karten": [
      {
       "titel": "Cartes-rafales",
@@ -4695,14 +4720,15 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Les phrases-menaces (fear appeals) augmentent l’anxiété quand elles sont vécues comme une menace (Putwain & Symes, 2011).",
        "Vécues comme un défi, elles motivent plutôt (Putwain & Remedios, 2014).",
        "Le message sur le portable n’a pas d’expéditeur – ne pas demander de qui. S’il touche de trop près : le retirer, sans commentaire.",
        "Une bonne phrase-cap est courte, crédible, pas « penser positif ». Une phrase qui sonne comme un poster, on la retravaille.",
        "Moqueries dans le chat de classe qui vont au-delà de la blague : impliquer le SePAS ; en ligne aussi la Helpline BEE SECURE 8002 1234.",
-       "Ne pas interpréter la quatrième trace. Garder les quatre traces pour la prochaine rencontre."
+       "Ne pas interpréter le quatrième indice. Garder les quatre indices pour la prochaine rencontre."
       ]
      }
     ],
@@ -4853,7 +4879,7 @@
       },
       {
        "art": "text",
-       "text": "Sätze von anderen sind Wind. Heute lernst du, Kurs zu halten."
+       "text": "Heute lernst du, Kurs zu halten."
       }
      ],
      "rechts": [
@@ -4907,7 +4933,7 @@
      "art": "info",
      "symbol": "merke",
      "titel": "Kurs halten",
-     "text": "Ein Satz von anderen ist Wind, kein Urteil. Prüf: Info oder Drohung? Was steht wirklich auf dem Spiel? Was ist mein nächster Handgriff?"
+     "text": "Ein Satz von anderen ist Wind, kein Urteil. Prüf: Info oder Drohung? Was steht auf dem Spiel? Mein nächster Handgriff?"
     },
     {
      "art": "aufgabe",
@@ -4939,7 +4965,7 @@
       },
       {
        "art": "text",
-       "text": "Les phrases des autres, c’est du vent. Aujourd’hui, tu apprends à garder le cap."
+       "text": "Aujourd’hui, tu apprends à garder le cap."
       }
      ],
      "rechts": [
@@ -4993,7 +5019,7 @@
      "art": "info",
      "symbol": "merke",
      "titel": "Garder le cap",
-     "text": "Une phrase des autres, c’est du vent, pas un verdict. Vérifie : info ou menace ? Qu’est-ce qui est vraiment en jeu ? Quel est mon prochain geste ?"
+     "text": "Une phrase des autres, c’est du vent, pas un verdict. Vérifie : info ou menace ? Qu’est-ce qui est en jeu ? Mon prochain geste ?"
     },
     {
      "art": "aufgabe",
@@ -5004,7 +5030,7 @@
     },
     {
      "art": "text",
-     "text": "Au fait, Afonso : en 5G, Moussa a révisé une semaine pour un devoir – 18 sur 60. Copies rendues par ordre de points, la meilleure d’abord, la sienne en dernier. Certains ont ri. Quatrième trace.",
+     "text": "Au fait, Afonso : en 5G, Moussa a révisé une semaine pour un devoir – 18 sur 60. Copies rendues par ordre de points, la meilleure d’abord, la sienne en dernier. Certains ont ri. Quatrième indice.",
      "klein": true
     }
    ],
@@ -5018,7 +5044,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht Ankreuzen. Erzählt jemand von Druck daheim: danken, zuhören, nicht nachfragen; bei Hinweisen auf Gewalt den Schutzablauf der Einrichtung starten."
     },
     "fr": {
-     "text": "L’exercice 1 en silence. L’exercice 2 est un choix : une phrase-cap pour un personnage ou pour soi. Une phrase-cap est indispensable. Pour finir, l’adulte lit la quatrième trace et pose les quatre traces côte à côte : « La prochaine fois, tu les assembles. » Ne pas résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour un personnage.",
+     "text": "L’exercice 1 en silence. L’exercice 2 est un choix : une phrase-cap pour un personnage ou pour soi. Une phrase-cap est indispensable. Pour finir, l’adulte lit le quatrième indice et pose les quatre indices côte à côte : « La prochaine fois, tu les assembles. » Ne pas résoudre. Si la fiche demande quelque chose sur le ou la jeune, il ou elle peut répondre pour un personnage.",
      "sagen": [
       "Pour qui construis-tu la phrase-cap ?",
       "Est-ce que la phrase sonne comme toi – ou comme un poster ?"
@@ -5089,7 +5115,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Drohsätze (fear appeals) erhöhen Prüfungsangst, wenn sie als Bedrohung erlebt werden (Putwain & Symes, 2011).",
        "Als Herausforderung erlebt, motivieren sie eher (Putwain & Remedios, 2014).",
@@ -5137,9 +5164,9 @@
     "vorbereitung": [
      "Démarrage rapide (3 min) : imprimer la fiche et la planche de cartes, détacher les cartes",
      "De la place pour se tenir debout, par sécurité près d’une table ou d’un mur",
-     "Préparer les quatre traces des dernières rencontres (de la fiche ou sur des papiers)"
+     "Préparer les quatre indices des dernières rencontres (de la fiche ou sur des papiers)"
     ],
-    "aufbau": "0 min Les phrases pleuvent – « Laquelle renverse ? »\n1 min Bateau : pieds écartés\n2 min Lire une rafale, se pencher – « Jusqu’où ? »\n3 min Trois questions-cap, phrase-cap, se redresser\n7 min Échange après quatre rafales\n9 min Phrase-clé\n10 min Fiche, quatrième trace\nTemps : cœur 10 min · fiche 5 min\nIndispensable : trois rafales, une phrase-cap à soi.",
+    "aufbau": "0 min Les phrases pleuvent – « Laquelle renverse ? »\n1 min Bateau : pieds écartés\n2 min Lire une rafale, se pencher – « Jusqu’où ? »\n3 min Trois questions-cap, phrase-cap, se redresser\n7 min Échange après quatre rafales\n9 min Phrase-clé\n10 min Fiche, quatrième indice\nTemps : cœur 10 min · fiche 5 min\nIndispensable : trois rafales, une phrase-cap à soi.",
     "karten": [
      {
       "titel": "Cartes-rafales",
@@ -5176,14 +5203,15 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Les phrases-menaces (fear appeals) augmentent l’anxiété quand elles sont vécues comme une menace (Putwain & Symes, 2011).",
        "Vécues comme un défi, elles motivent plutôt (Putwain & Remedios, 2014).",
        "Le message sur le portable n’a pas d’expéditeur – ne pas demander de qui. S’il touche de trop près : le retirer, sans commentaire.",
        "Une bonne phrase-cap est courte, crédible, pas « penser positif ». Une phrase qui sonne comme un poster, on la retravaille.",
        "Moqueries dans le chat de classe qui vont au-delà de la blague : impliquer le SePAS ; en ligne aussi la Helpline BEE SECURE 8002 1234.",
-       "Ne pas interpréter la quatrième trace. Garder les quatre traces pour la prochaine rencontre."
+       "Ne pas interpréter le quatrième indice. Garder les quatre indices pour la prochaine rencontre."
       ]
      }
     ],
@@ -5353,7 +5381,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Kurs halten heißt: nicht zurückschlagen, nicht verstecken.",
        "Beispiele: „Jo, eine Stunde – danach zock ich mit.“ · „Lieber Professor als nochmal 5G.“ (nur, wenn es nicht verletzt)",
@@ -5418,7 +5447,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Garder le cap, ce n’est ni riposter ni se cacher.",
        "Exemples : « Ouais, une heure – après je joue avec vous. » · « Plutôt prof que refaire la 5G. » (si ça ne blesse pas)",
@@ -5580,7 +5610,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Nur Böen von Lehrerin, Werkstatt, Gaby und Trainer – keine Handy-Nachricht, kein Klassenchat, nichts Eigenes.",
        "Beispiel Umbau: „Wer das verhaut, kann das Jahr vergessen“ → „Das zählt viel. Wer Fragen hat, kommt in der Pause.“"
@@ -5632,7 +5663,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Seulement les rafales de la prof, du garage, de Gaby et de l’entraîneur – pas de message sur le portable, pas de chat de classe, rien de personnel.",
        "Exemple : « Celui qui rate ça peut oublier l’année » → « Ça compte beaucoup. Qui a des questions vient à la récré. »"
@@ -5758,7 +5790,7 @@
    },
    "bruecke": {
     "de": "Letztes Mal hast du Kurs-Sätze gebaut. Jetzt liegen vier Spuren zu Moussa auf dem Tisch – und am Samstag ist die Kenterprobe. Moussa schreibt: „Samschdeg? Ech kommen net.“ Heute setzt du die Spuren zusammen und planst eine echte Situation dieser Woche.",
-    "fr": "La dernière fois, tu as construit des phrases-cap. Maintenant, quatre traces sur Moussa sont sur la table – et samedi, c’est l’épreuve de chavirage. Moussa écrit : « Samschdeg? Ech kommen net. » (Samedi ? Je ne viens pas.) Aujourd’hui, tu assembles les traces et tu prépares une vraie situation de cette semaine."
+    "fr": "La dernière fois, tu as construit des phrases-cap. Maintenant, quatre indices sur Moussa sont sur la table – et samedi, c’est l’épreuve de chavirage. Moussa écrit : « Samschdeg? Ech kommen net. » (Samedi ? Je ne viens pas.) Aujourd’hui, tu assembles les indices et tu prépares une vraie situation de cette semaine."
    }
   },
   "imSpiel": {
@@ -5950,15 +5982,15 @@
   },
   "fr": {
    "titel": "Manœuvre 5 : l’exercice de chavirage",
-   "text": "Moussa écrit : « Samschdeg? Ech kommen net. » Échauffement : le ou la jeune pose les quatre traces côte à côte et dit lui-même ou elle-même pourquoi Moussa décroche. Puis l’exercice de chavirage : les marins chavirent exprès quand l’eau est calme – ensuite, le vrai vent fait moins peur. Décrocher apporte un peu de calme, mais le vent suivant devient plus fort. Le ou la jeune choisit une vraie situation de cette semaine : l’épreuve de Moussa, l’appel d’Afonso au garage ou une situation à soi. Pour elle, il ou elle remplit sur la fiche au moins la situation et le plus petit pas ; geste, phrase-cap et équipage sont en option. Le plus petit pas, les deux le jouent debout – souvent un appel ou une première phrase ; l’adulte est l’autre côté. Phrase-clé : « S’approcher au lieu de décrocher – un pas suffit. »",
+   "text": "Moussa écrit : « Samschdeg? Ech kommen net. » Échauffement : le ou la jeune pose les quatre indices côte à côte et dit lui-même ou elle-même pourquoi Moussa décroche. Puis l’exercice de chavirage : les marins chavirent exprès quand l’eau est calme – ensuite, le vrai vent fait moins peur. Décrocher apporte un peu de calme, mais le vent suivant devient plus fort. Le ou la jeune choisit une vraie situation de cette semaine : l’épreuve de Moussa, l’appel d’Afonso au garage ou une situation à soi. Pour elle, il ou elle remplit sur la fiche au moins la situation et le plus petit pas ; geste, phrase-cap et équipage sont en option. Le plus petit pas, les deux le jouent debout – souvent un appel ou une première phrase ; l’adulte est l’autre côté. Phrase-clé : « S’approcher au lieu de décrocher – un pas suffit. »",
    "sagen": [
-    "Quatre traces. Qu’ont-elles en commun ? Pourquoi Moussa décroche-t-il ?",
+    "Quatre indices. Qu’ont-ils en commun ? Pourquoi Moussa décroche-t-il ?",
     "Qu’est-ce que décrocher lui apporte – et qu’est-ce que ça lui coûte ?",
     "Quelle situation de cette semaine tu prends : Moussa, Afonso ou une à toi ?",
     "Je suis le garage. Ça sonne. – « Garage, gudden Dag ? »"
    ],
-   "wennEsKippt": "Si le ou la jeune ne trouve pas d’explication, l’adulte découvre les traces une à une et demande seulement : « Qu’est-ce qui ne colle pas ? » S’il ou elle ne veut pas jouer, il ou elle dit seulement la première phrase, ou l’adulte joue Afonso et le ou la jeune fait la mise en scène. Un pas planifié suffit.",
-   "kurz": "Quatre traces · plan de chavirage · jouer le petit pas"
+   "wennEsKippt": "Si le ou la jeune ne trouve pas d’explication, l’adulte découvre les indices une à une et demande seulement : « Qu’est-ce qui ne colle pas ? » S’il ou elle ne veut pas jouer, il ou elle dit seulement la première phrase, ou l’adulte joue Afonso et le ou la jeune fait la mise en scène. Un pas planifié suffit.",
+   "kurz": "Quatre indices · plan de chavirage · jouer le petit pas"
   },
   "zugang": {
    "lesen": 2,
@@ -6002,7 +6034,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Nur bestätigen, nie vorsagen. Sagt der oder die Jugendliche es selbst, passt etwa:",
        "Moussa schaltet ab, damit niemand sieht, dass er sich anstrengt und trotzdem scheitern könnte – das schützt vor „Ich bin dumm“ (Covington, 1992).",
@@ -6051,22 +6084,22 @@
     ]
    },
    "fr": {
-    "haken": "Moussa ne veut pas venir samedi – et quatre traces sont sur la table. Qui les assemble comprend le décrochage de l’intérieur, sans devoir parler de soi.",
+    "haken": "Moussa ne veut pas venir samedi – et quatre indices sont sur la table. Qui les assemble comprend le décrochage de l’intérieur, sans devoir parler de soi.",
     "vorbereitung": [
      "Démarrage rapide (3 min) : imprimer la fiche et la planche de cartes, détacher les cartes",
-     "Préparer les quatre traces (des fiches ou des cartes-traces)",
+     "Préparer les quatre indices (des fiches ou des cartes-indices)",
      "Un portable ou une trousse comme téléphone pour le jeu",
      "De la place pour se tenir debout"
     ],
-    "aufbau": "0 min « Samschdeg? Ech kommen net. »\n1 min Poser les quatre traces – « Pourquoi décroche-t-il ? »\n4 min Exercice de chavirage – « Que coûte le décrochage ? »\n5 min Fiche : situation + plus petit pas (reste en option)\n8 min Jouer le plus petit pas debout\n11 min Message de Moussa sur la fiche\nTemps : cœur 12 min · fiche 3 min incluse\nIndispensable : traces, un pas joué. Serré : sans échange.",
+    "aufbau": "0 min « Samschdeg? Ech kommen net. »\n1 min Poser les quatre indices – « Pourquoi décroche-t-il ? »\n4 min Exercice de chavirage – « Que coûte le décrochage ? »\n5 min Fiche : situation + plus petit pas (reste en option)\n8 min Jouer le plus petit pas debout\n11 min Message de Moussa sur la fiche\nTemps : cœur 12 min · fiche 3 min incluse\nIndispensable : indices, un pas joué. Serré : sans échange.",
     "karten": [
      {
-      "titel": "Cartes-traces",
+      "titel": "Cartes-indices",
       "karten": [
-       "Trace 1 : dans la veste de Moussa, une corde avec trois nœuds de chaise parfaits. Il dit : « Segelen ass fir Kanner. »",
-       "Trace 2 : devoir de français : Moussa rend sa copie après douze minutes – « Ass mer egal. » La première page était pleine, soignée, corrigée.",
-       "Trace 3 : chat d’équipage, 23 h 10, supprimé : « Samedi, tout le monde regarde quand on chavire ? »",
-       "Trace 4 : en 5G, une semaine de révisions – 18 sur 60. Copies rendues par ordre de points, la sienne en dernier, certains ont ri."
+       "Indice 1 : dans la veste de Moussa, une corde avec trois nœuds de chaise parfaits. Il dit : « Segelen ass fir Kanner. »",
+       "Indice 2 : devoir de français : Moussa rend sa copie après douze minutes – « Ass mer egal. » La première page était pleine, soignée, corrigée.",
+       "Indice 3 : chat d’équipage, 23 h 10, supprimé : « Samedi, tout le monde regarde quand on chavire ? »",
+       "Indice 4 : en 5G, une semaine de révisions – 18 sur 60. Copies rendues par ordre de points, la sienne en dernier, certains ont ri."
       ]
      },
      {
@@ -6086,7 +6119,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Seulement confirmer, jamais souffler. Si le ou la jeune le dit lui-même, ça peut être :",
        "Moussa décroche pour que personne ne voie qu’il fait des efforts et pourrait échouer quand même – ça protège du « je suis bête » (Covington, 1992).",
@@ -6098,9 +6132,9 @@
       ]
      }
     ],
-    "leichter": "Découvrir les traces ensemble ; plan seulement pour Afonso avec une première phrase donnée ; l’adulte joue Afonso, le ou la jeune fait la mise en scène.",
+    "leichter": "Découvrir les indices ensemble ; plan seulement pour Afonso avec une première phrase donnée ; l’adulte joue Afonso, le ou la jeune fait la mise en scène.",
     "schwerer": "Ajouter un plan B (le garage ne répond pas, Gaby n’est pas là) et jouer les deux versions.",
-    "gruppe": "Groupe (4–6) : les quatre traces sont au milieu, deux personnes en reçoivent une chacune et disent ce qu’elle montre ; tout le monde assemble. Puis, par deux, on choisit une situation, on planifie et on joue le plus petit pas avec l’adulte en face. Les plans personnels restent sur la fiche.",
+    "gruppe": "Groupe (4–6) : les quatre indices sont au milieu, deux personnes en reçoivent une chacune et disent ce qu’elle montre ; tout le monde assemble. Puis, par deux, on choisit une situation, on planifie et on joue le plus petit pas avec l’adulte en face. Les plans personnels restent sur la fiche.",
     "beobachten": [
      "explique avec ses mots ce que décrocher apporte sur le moment et ce que ça coûte",
      "planifie pour une vraie situation un petit pas concret avec l’heure et le lieu",
@@ -6221,7 +6255,7 @@
    },
    "bruecke": {
     "de": "Letztes Mal hast du Kurs-Sätze gebaut. Jetzt liegen vier Spuren zu Moussa auf dem Tisch – und am Samstag ist die Kenterprobe. Moussa schreibt: „Samschdeg? Ech kommen net.“ Heute setzt du die Spuren zusammen und planst eine echte Situation dieser Woche.",
-    "fr": "La dernière fois, tu as construit des phrases-cap. Maintenant, quatre traces sur Moussa sont sur la table – et samedi, c’est l’épreuve de chavirage. Moussa écrit : « Samschdeg? Ech kommen net. » (Samedi ? Je ne viens pas.) Aujourd’hui, tu assembles les traces et tu prépares une vraie situation de cette semaine."
+    "fr": "La dernière fois, tu as construit des phrases-cap. Maintenant, quatre indices sur Moussa sont sur la table – et samedi, c’est l’épreuve de chavirage. Moussa écrit : « Samschdeg? Ech kommen net. » (Samedi ? Je ne viens pas.) Aujourd’hui, tu assembles les indices et tu prépares une vraie situation de cette semaine."
    }
   },
   "imSpiel": {
@@ -6435,15 +6469,15 @@
   },
   "fr": {
    "titel": "Manœuvre 5 : l’exercice de chavirage",
-   "text": "Moussa écrit : « Samschdeg? Ech kommen net. » Échauffement : le ou la jeune pose les quatre traces côte à côte et dit lui-même ou elle-même pourquoi Moussa décroche. Puis l’exercice de chavirage : les marins chavirent exprès quand l’eau est calme – ensuite, le vrai vent fait moins peur. Décrocher apporte un peu de calme, mais le vent suivant devient plus fort. Le ou la jeune choisit une vraie situation de cette semaine : l’épreuve de Moussa, l’appel d’Afonso au garage ou une situation à soi. Pour elle, il ou elle remplit sur la fiche au moins la situation et le plus petit pas ; geste, phrase-cap et équipage sont en option. Le plus petit pas, les deux le jouent debout – souvent un appel ou une première phrase ; l’adulte est l’autre côté. Phrase-clé : « S’approcher au lieu de décrocher – un pas suffit. »",
+   "text": "Moussa écrit : « Samschdeg? Ech kommen net. » Échauffement : le ou la jeune pose les quatre indices côte à côte et dit lui-même ou elle-même pourquoi Moussa décroche. Puis l’exercice de chavirage : les marins chavirent exprès quand l’eau est calme – ensuite, le vrai vent fait moins peur. Décrocher apporte un peu de calme, mais le vent suivant devient plus fort. Le ou la jeune choisit une vraie situation de cette semaine : l’épreuve de Moussa, l’appel d’Afonso au garage ou une situation à soi. Pour elle, il ou elle remplit sur la fiche au moins la situation et le plus petit pas ; geste, phrase-cap et équipage sont en option. Le plus petit pas, les deux le jouent debout – souvent un appel ou une première phrase ; l’adulte est l’autre côté. Phrase-clé : « S’approcher au lieu de décrocher – un pas suffit. »",
    "sagen": [
-    "Quatre traces. Qu’ont-elles en commun ? Pourquoi Moussa décroche-t-il ?",
+    "Quatre indices. Qu’ont-ils en commun ? Pourquoi Moussa décroche-t-il ?",
     "Qu’est-ce que décrocher lui apporte – et qu’est-ce que ça lui coûte ?",
     "Quelle situation de cette semaine tu prends : Moussa, Afonso ou une à toi ?",
     "Je suis le garage. Ça sonne. – « Garage, gudden Dag ? »"
    ],
-   "wennEsKippt": "Si le ou la jeune ne trouve pas d’explication, l’adulte découvre les traces une à une et demande seulement : « Qu’est-ce qui ne colle pas ? » S’il ou elle ne veut pas jouer, il ou elle dit seulement la première phrase, ou l’adulte joue Afonso et le ou la jeune fait la mise en scène. Un pas planifié suffit.",
-   "kurz": "Quatre traces · plan de chavirage · jouer le petit pas"
+   "wennEsKippt": "Si le ou la jeune ne trouve pas d’explication, l’adulte découvre les indices une à une et demande seulement : « Qu’est-ce qui ne colle pas ? » S’il ou elle ne veut pas jouer, il ou elle dit seulement la première phrase, ou l’adulte joue Afonso et le ou la jeune fait la mise en scène. Un pas planifié suffit.",
+   "kurz": "Quatre indices · plan de chavirage · jouer le petit pas"
   },
   "zugang": {
    "lesen": 1,
@@ -6487,7 +6521,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Nur bestätigen, nie vorsagen. Sagt der oder die Jugendliche es selbst, passt etwa:",
        "Moussa schaltet ab, damit niemand sieht, dass er sich anstrengt und trotzdem scheitern könnte – das schützt vor „Ich bin dumm“ (Covington, 1992).",
@@ -6536,22 +6571,22 @@
     ]
    },
    "fr": {
-    "haken": "Moussa ne veut pas venir samedi – et quatre traces sont sur la table. Qui les assemble comprend le décrochage de l’intérieur, sans devoir parler de soi.",
+    "haken": "Moussa ne veut pas venir samedi – et quatre indices sont sur la table. Qui les assemble comprend le décrochage de l’intérieur, sans devoir parler de soi.",
     "vorbereitung": [
      "Démarrage rapide (3 min) : imprimer la fiche et la planche de cartes, détacher les cartes",
-     "Préparer les quatre traces (des fiches ou des cartes-traces)",
+     "Préparer les quatre indices (des fiches ou des cartes-indices)",
      "Un portable ou une trousse comme téléphone pour le jeu",
      "De la place pour se tenir debout"
     ],
-    "aufbau": "0 min « Samschdeg? Ech kommen net. »\n1 min Poser les quatre traces – « Pourquoi décroche-t-il ? »\n4 min Exercice de chavirage – « Que coûte le décrochage ? »\n5 min Fiche : situation + plus petit pas (reste en option)\n8 min Jouer le plus petit pas debout\n11 min Message de Moussa sur la fiche\nTemps : cœur 12 min · fiche 3 min incluse\nIndispensable : traces, un pas joué. Serré : sans échange.",
+    "aufbau": "0 min « Samschdeg? Ech kommen net. »\n1 min Poser les quatre indices – « Pourquoi décroche-t-il ? »\n4 min Exercice de chavirage – « Que coûte le décrochage ? »\n5 min Fiche : situation + plus petit pas (reste en option)\n8 min Jouer le plus petit pas debout\n11 min Message de Moussa sur la fiche\nTemps : cœur 12 min · fiche 3 min incluse\nIndispensable : indices, un pas joué. Serré : sans échange.",
     "karten": [
      {
-      "titel": "Cartes-traces",
+      "titel": "Cartes-indices",
       "karten": [
-       "Trace 1 : dans la veste de Moussa, une corde avec trois nœuds de chaise parfaits. Il dit : « Segelen ass fir Kanner. »",
-       "Trace 2 : devoir de français : Moussa rend sa copie après douze minutes – « Ass mer egal. » La première page était pleine, soignée, corrigée.",
-       "Trace 3 : chat d’équipage, 23 h 10, supprimé : « Samedi, tout le monde regarde quand on chavire ? »",
-       "Trace 4 : en 5G, une semaine de révisions – 18 sur 60. Copies rendues par ordre de points, la sienne en dernier, certains ont ri."
+       "Indice 1 : dans la veste de Moussa, une corde avec trois nœuds de chaise parfaits. Il dit : « Segelen ass fir Kanner. »",
+       "Indice 2 : devoir de français : Moussa rend sa copie après douze minutes – « Ass mer egal. » La première page était pleine, soignée, corrigée.",
+       "Indice 3 : chat d’équipage, 23 h 10, supprimé : « Samedi, tout le monde regarde quand on chavire ? »",
+       "Indice 4 : en 5G, une semaine de révisions – 18 sur 60. Copies rendues par ordre de points, la sienne en dernier, certains ont ri."
       ]
      },
      {
@@ -6571,7 +6606,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Seulement confirmer, jamais souffler. Si le ou la jeune le dit lui-même, ça peut être :",
        "Moussa décroche pour que personne ne voie qu’il fait des efforts et pourrait échouer quand même – ça protège du « je suis bête » (Covington, 1992).",
@@ -6583,9 +6619,9 @@
       ]
      }
     ],
-    "leichter": "Découvrir les traces ensemble ; plan seulement pour Afonso avec une première phrase donnée ; l’adulte joue Afonso, le ou la jeune fait la mise en scène.",
+    "leichter": "Découvrir les indices ensemble ; plan seulement pour Afonso avec une première phrase donnée ; l’adulte joue Afonso, le ou la jeune fait la mise en scène.",
     "schwerer": "Ajouter un plan B (le garage ne répond pas, Gaby n’est pas là) et jouer les deux versions.",
-    "gruppe": "Groupe (4–6) : les quatre traces sont au milieu, deux personnes en reçoivent une chacune et disent ce qu’elle montre ; tout le monde assemble. Puis, par deux, on choisit une situation, on planifie et on joue le plus petit pas avec l’adulte en face. Les plans personnels restent sur la fiche.",
+    "gruppe": "Groupe (4–6) : les quatre indices sont au milieu, deux personnes en reçoivent une chacune et disent ce qu’elle montre ; tout le monde assemble. Puis, par deux, on choisit une situation, on planifie et on joue le plus petit pas avec l’adulte en face. Les plans personnels restent sur la fiche.",
     "beobachten": [
      "explique avec ses mots ce que décrocher apporte sur le moment et ce que ça coûte",
      "planifie pour une vraie situation un petit pas concret avec l’heure et le lieu",
@@ -6685,7 +6721,7 @@
    },
    "bruecke": {
     "de": "Letztes Mal hast du Kurs-Sätze gebaut. Jetzt liegen vier Spuren zu Moussa auf dem Tisch – und am Samstag ist die Kenterprobe. Moussa schreibt: „Samschdeg? Ech kommen net.“ Heute setzt du die Spuren zusammen und planst eine echte Situation dieser Woche.",
-    "fr": "La dernière fois, tu as construit des phrases-cap. Maintenant, quatre traces sur Moussa sont sur la table – et samedi, c’est l’épreuve de chavirage. Moussa écrit : « Samschdeg? Ech kommen net. » (Samedi ? Je ne viens pas.) Aujourd’hui, tu assembles les traces et tu prépares une vraie situation de cette semaine."
+    "fr": "La dernière fois, tu as construit des phrases-cap. Maintenant, quatre indices sur Moussa sont sur la table – et samedi, c’est l’épreuve de chavirage. Moussa écrit : « Samschdeg? Ech kommen net. » (Samedi ? Je ne viens pas.) Aujourd’hui, tu assembles les indices et tu prépares une vraie situation de cette semaine."
    }
   },
   "ort": "raum",
@@ -6720,9 +6756,9 @@
   },
   "fr": {
    "titel": "Manœuvre 5 : le plan au sol",
-   "text": "Moussa écrit : « Samschdeg? Ech kommen net. » D’abord, le ou la jeune pose les quatre traces côte à côte et dit lui-même ou elle-même pourquoi Moussa décroche. Puis cinq cartes forment un chemin au sol : situation, plus petit pas, geste, phrase-cap, équipage. Pour une situation de cette semaine – Moussa, Afonso ou une à soi – il ou elle avance pas à pas et dit à chaque carte ce qui s’y passe. L’adulte est l’équipage : à deux cartes, il ou elle lance une rafale (« Le garage ne répond pas »), et le ou la jeune cherche un plan B. Puis on échange. La même phrase-clé que dans la variante : « S’approcher au lieu de décrocher – un pas suffit. »",
+   "text": "Moussa écrit : « Samschdeg? Ech kommen net. » D’abord, le ou la jeune pose les quatre indices côte à côte et dit lui-même ou elle-même pourquoi Moussa décroche. Puis cinq cartes forment un chemin au sol : situation, plus petit pas, geste, phrase-cap, équipage. Pour une situation de cette semaine – Moussa, Afonso ou une à soi – il ou elle avance pas à pas et dit à chaque carte ce qui s’y passe. L’adulte est l’équipage : à deux cartes, il ou elle lance une rafale (« Le garage ne répond pas »), et le ou la jeune cherche un plan B. Puis on échange. La même phrase-clé que dans la variante : « S’approcher au lieu de décrocher – un pas suffit. »",
    "sagen": [
-    "Pourquoi Moussa décroche-t-il – que disent les quatre traces ?",
+    "Pourquoi Moussa décroche-t-il – que disent les quatre indices ?",
     "Tu es au plus petit pas. Qu’est-ce que tu fais, concrètement ?",
     "Rafale : le garage ne répond pas. Plan B ?"
    ],
@@ -6743,7 +6779,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "„Die Werkstatt geht nicht ran.“ · „Gaby ist krank, jemand anderes schaut zu.“",
        "„Im Bus sitzt die halbe 4G.“ · „Der Devoir fängt mit der schwersten Aufgabe an.“",
@@ -6791,21 +6828,22 @@
     "haken": "Un plan sur lequel on se tient debout : qui le parcourt remarque où il vacille – et construit tout de suite le plan B.",
     "vorbereitung": [
      "Cinq papiers : situation · plus petit pas · geste · phrase-cap · équipage",
-     "Les quatre traces",
+     "Les quatre indices",
      "De la place pour un chemin au sol"
     ],
-    "aufbau": "0 min Message de Moussa\n1 min Quatre traces – « Pourquoi décroche-t-il ? »\n4 min Choisir une situation\n5 min Parcourir le chemin, une phrase par carte\n8 min Deux rafales, plan B\n10 min Échange, phrase-clé\n12 min Fin\nIndispensable : traces, chemin parcouru une fois.",
+    "aufbau": "0 min Message de Moussa\n1 min Quatre indices – « Pourquoi décroche-t-il ? »\n4 min Choisir une situation\n5 min Parcourir le chemin, une phrase par carte\n8 min Deux rafales, plan B\n10 min Échange, phrase-clé\n12 min Fin\nIndispensable : indices, chemin parcouru une fois.",
     "karten": [
      {
       "titel": "Pour l’adulte : rafales pour le chemin",
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "« Le garage ne répond pas. » · « Gaby est malade, quelqu’un d’autre regarde. »",
        "« La moitié de la 4G est dans le bus. » · « Le devoir commence par l’exercice le plus dur. »",
-       "Solution des traces : seulement confirmer, jamais souffler (voir la carte de la variante)."
+       "Solution des indices : seulement confirmer, jamais souffler (voir la carte de la variante)."
       ]
      }
     ],
@@ -6911,7 +6949,7 @@
    },
    "bruecke": {
     "de": "Letztes Mal hast du Kurs-Sätze gebaut. Jetzt liegen vier Spuren zu Moussa auf dem Tisch – und am Samstag ist die Kenterprobe. Moussa schreibt: „Samschdeg? Ech kommen net.“ Heute setzt du die Spuren zusammen und planst eine echte Situation dieser Woche.",
-    "fr": "La dernière fois, tu as construit des phrases-cap. Maintenant, quatre traces sur Moussa sont sur la table – et samedi, c’est l’épreuve de chavirage. Moussa écrit : « Samschdeg? Ech kommen net. » (Samedi ? Je ne viens pas.) Aujourd’hui, tu assembles les traces et tu prépares une vraie situation de cette semaine."
+    "fr": "La dernière fois, tu as construit des phrases-cap. Maintenant, quatre indices sur Moussa sont sur la table – et samedi, c’est l’épreuve de chavirage. Moussa écrit : « Samschdeg? Ech kommen net. » (Samedi ? Je ne viens pas.) Aujourd’hui, tu assembles les indices et tu prépares une vraie situation de cette semaine."
    }
   },
   "ort": "raum",
@@ -6944,7 +6982,7 @@
   },
   "fr": {
    "titel": "Manœuvre 5 : l’appel d’Afonso",
-   "text": "Le garage a appelé Afonso deux fois, et il n’a pas répondu ; lundi, c’est son premier jour de stage. D’abord, le ou la jeune pose les quatre traces sur Moussa côte à côte et dit ce qu’Afonso et Moussa ont en commun. Puis l’adulte raconte le jeudi d’Afonso comme une histoire. À trois moments, il ou elle s’arrête – le portable sonne, la messagerie bipe, le bus passe devant le garage –, et le ou la jeune décide comment Afonso s’approche : plus petit pas, geste, phrase-cap, équipage. À la fin, il ou elle raconte la fin. Tout reste chez Afonso. La même phrase-clé que dans la variante : « S’approcher au lieu de décrocher – un pas suffit. »",
+   "text": "Le garage a appelé Afonso deux fois, et il n’a pas répondu ; lundi, c’est son premier jour de stage. D’abord, le ou la jeune pose les quatre indices sur Moussa côte à côte et dit ce qu’Afonso et Moussa ont en commun. Puis l’adulte raconte le jeudi d’Afonso comme une histoire. À trois moments, il ou elle s’arrête – le portable sonne, la messagerie bipe, le bus passe devant le garage –, et le ou la jeune décide comment Afonso s’approche : plus petit pas, geste, phrase-cap, équipage. À la fin, il ou elle raconte la fin. Tout reste chez Afonso. La même phrase-clé que dans la variante : « S’approcher au lieu de décrocher – un pas suffit. »",
    "sagen": [
     "Le portable sonne. Que fait Afonso maintenant – et quel serait le plus petit pas ?",
     "Quelle phrase-cap l’aide ici ?",
@@ -6966,7 +7004,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Halt 1, 16:10: Das Handy klingelt, „Garage“. Afonso legt es mit dem Display nach unten. – Was jetzt?",
        "Halt 2, 16:12: Die Mailbox piept: „Bitte zurückrufen.“ Afonso schreibt den ersten Satz auf: „Moien, hei ass den Afonso …“ – Was dann?",
@@ -7014,17 +7053,18 @@
    "fr": {
     "haken": "Une histoire qui s’arrête au moment le plus tendu – et le ou la jeune décide si Afonso décroche ou répond.",
     "vorbereitung": [
-     "Les quatre traces",
+     "Les quatre indices",
      "Lire une fois l’histoire ci-dessous"
     ],
-    "aufbau": "0 min Appels manqués d’Afonso\n1 min Quatre traces – « Qu’ont-ils en commun ? »\n4 min Histoire, arrêt 1 : le portable sonne\n7 min Arrêt 2 : messagerie · arrêt 3 : bus\n10 min Raconter la fin, phrase-clé\n12 min Fin\nIndispensable : deux arrêts.",
+    "aufbau": "0 min Appels manqués d’Afonso\n1 min Quatre indices – « Qu’ont-ils en commun ? »\n4 min Histoire, arrêt 1 : le portable sonne\n7 min Arrêt 2 : messagerie · arrêt 3 : bus\n10 min Raconter la fin, phrase-clé\n12 min Fin\nIndispensable : deux arrêts.",
     "karten": [
      {
       "titel": "Pour l’adulte : le jeudi d’Afonso",
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Arrêt 1, 16 h 10 : le portable sonne, « Garage ». Afonso le pose écran vers le bas. – Et maintenant ?",
        "Arrêt 2, 16 h 12 : la messagerie bipe : « Merci de rappeler. » Afonso écrit la première phrase : « Moien, hei ass den Afonso… » – Et ensuite ?",
@@ -7155,7 +7195,7 @@
    },
    "bruecke": {
     "de": "Letztes Mal hast du Moussas Spuren zusammengesetzt und einen Kenter-Plan gebaut. Am Samstag war die Kenterprobe am Stausee, am Montag Afonsos erster Stage-Tag. Heute liest du die Logbücher der drei – und schreibst dein eigenes.",
-    "fr": "La dernière fois, tu as assemblé les traces de Moussa et construit un plan de chavirage. Samedi, c’était l’épreuve au lac ; lundi, le premier jour de stage d’Afonso. Aujourd’hui, tu lis les journaux de bord des trois – et tu écris le tien."
+    "fr": "La dernière fois, tu as assemblé les indices de Moussa et construit un plan de chavirage. Samedi, c’était l’épreuve au lac ; lundi, le premier jour de stage d’Afonso. Aujourd’hui, tu lis les journaux de bord des trois – et tu écris le tien."
    }
   },
   "imSpiel": {
@@ -7440,7 +7480,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Logbücher: Lejla fiert, Afonso übt Kentern und hält Kurs („Kënnt Dir mir et weisen?“ = Können Sie es mir zeigen?), Moussa übt Kentern. Mehrere Antworten passen.",
        "Die Noten der drei bleiben offen – mit Absicht. Gewonnen hat, wer drin geblieben ist.",
@@ -7521,7 +7562,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Journaux : Lejla choque, Afonso chavire exprès et garde le cap (« Kënnt Dir mir et weisen ? » = Vous pouvez me montrer ?), Moussa chavire. Plusieurs réponses.",
        "Les notes des trois restent ouvertes – exprès. A gagné qui est resté à bord.",
@@ -7656,7 +7698,7 @@
    },
    "bruecke": {
     "de": "Letztes Mal hast du Moussas Spuren zusammengesetzt und einen Kenter-Plan gebaut. Am Samstag war die Kenterprobe am Stausee, am Montag Afonsos erster Stage-Tag. Heute liest du die Logbücher der drei – und schreibst dein eigenes.",
-    "fr": "La dernière fois, tu as assemblé les traces de Moussa et construit un plan de chavirage. Samedi, c’était l’épreuve au lac ; lundi, le premier jour de stage d’Afonso. Aujourd’hui, tu lis les journaux de bord des trois – et tu écris le tien."
+    "fr": "La dernière fois, tu as assemblé les indices de Moussa et construit un plan de chavirage. Samedi, c’était l’épreuve au lac ; lundi, le premier jour de stage d’Afonso. Aujourd’hui, tu lis les journaux de bord des trois – et tu écris le tien."
    }
   },
   "imSpiel": {
@@ -7933,7 +7975,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Logbücher: Lejla fiert, Afonso übt Kentern und hält Kurs („Kënnt Dir mir et weisen?“ = Können Sie es mir zeigen?), Moussa übt Kentern. Mehrere Antworten passen.",
        "Die Noten der drei bleiben offen – mit Absicht. Gewonnen hat, wer drin geblieben ist.",
@@ -8014,7 +8057,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Journaux : Lejla choque, Afonso chavire exprès et garde le cap (« Kënnt Dir mir et weisen ? » = Vous pouvez me montrer ?), Moussa chavire. Plusieurs réponses.",
        "Les notes des trois restent ouvertes – exprès. A gagné qui est resté à bord.",
@@ -8129,7 +8173,7 @@
    },
    "bruecke": {
     "de": "Letztes Mal hast du Moussas Spuren zusammengesetzt und einen Kenter-Plan gebaut. Am Samstag war die Kenterprobe am Stausee, am Montag Afonsos erster Stage-Tag. Heute liest du die Logbücher der drei – und schreibst dein eigenes.",
-    "fr": "La dernière fois, tu as assemblé les traces de Moussa et construit un plan de chavirage. Samedi, c’était l’épreuve au lac ; lundi, le premier jour de stage d’Afonso. Aujourd’hui, tu lis les journaux de bord des trois – et tu écris le tien."
+    "fr": "La dernière fois, tu as assemblé les indices de Moussa et construit un plan de chavirage. Samedi, c’était l’épreuve au lac ; lundi, le premier jour de stage d’Afonso. Aujourd’hui, tu lis les journaux de bord des trois – et tu écris le tien."
    }
   },
   "ort": "raum",
@@ -8185,7 +8229,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Wind lesen: „Warum macht derselbe Devoir manchen mehr Druck als anderen?“",
        "Segel stellen: „Mein Herz rast vor dem Devoir. Ist das schlimm?“ · Fieren: „Was mache ich, wenn der Kopf leer wird?“",
@@ -8246,7 +8291,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Lire le vent : « Pourquoi le même devoir met-il plus de pression à certains qu’à d’autres ? »",
        "Régler la voile : « Mon cœur s’emballe avant le devoir. C’est grave ? » · Choquer : « Que faire quand la tête se vide ? »",
@@ -8360,7 +8406,7 @@
    },
    "bruecke": {
     "de": "Letztes Mal hast du Moussas Spuren zusammengesetzt und einen Kenter-Plan gebaut. Am Samstag war die Kenterprobe am Stausee, am Montag Afonsos erster Stage-Tag. Heute liest du die Logbücher der drei – und schreibst dein eigenes.",
-    "fr": "La dernière fois, tu as assemblé les traces de Moussa et construit un plan de chavirage. Samedi, c’était l’épreuve au lac ; lundi, le premier jour de stage d’Afonso. Aujourd’hui, tu lis les journaux de bord des trois – et tu écris le tien."
+    "fr": "La dernière fois, tu as assemblé les indices de Moussa et construit un plan de chavirage. Samedi, c’était l’épreuve au lac ; lundi, le premier jour de stage d’Afonso. Aujourd’hui, tu lis les journaux de bord des trois – et tu écris le tien."
    }
   },
   "ort": "raum",
@@ -8418,7 +8464,8 @@
       "karten": [
        "Wenn es echt wird: ruhig bleiben, zuhören. Bei „Dann ist eh alles vorbei“ direkt fragen: „Denkst du daran, nicht mehr leben zu wollen?“",
        "Bei Ja: bleiben, ruhig nachfragen (seit wann? ein Plan?), nicht allein lassen, heute noch SePAS oder Leitung. Akute Gefahr: 112.",
-       "Danach: notieren, was gesagt wurde; Leitung und SePAS heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Danach: notieren, was gesagt wurde; Leitung heute informieren; nichts Geheimes versprechen; sagen, wer jetzt hilft.",
+       "Eltern bzw. Sorgeberechtigte heute einbeziehen – außer, das macht es unsicherer. Die SePAS spätestens am nächsten Schultag.",
        "Nummern mitgeben: KJT 116 111 (Mo–Sa), SOS Détresse 45 45 45, nachts und sonntags 112 oder 113. Beschwerden über Wochen: ärztlich abklären.",
        "Alles über die Figuren oder als Tipp für andere – Eigenes nur, wenn der oder die Jugendliche will.",
        "Mit Einverständnis die Tipp-Karten für eine nächste Gruppe aufheben (ohne Namen)."
@@ -8479,7 +8526,8 @@
       "karten": [
        "Si ça devient sérieux : rester calme, écouter. Face à « De toute façon, tout est fini », demander : « Tu penses à ne plus vouloir vivre ? »",
        "Si oui : rester, demander calmement (depuis quand ? un plan ?), ne pas laisser seul·e, SePAS ou direction aujourd’hui. Danger : 112.",
-       "Après : noter ce qui a été dit ; informer direction et SePAS aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Après : noter ce qui a été dit ; informer la direction aujourd’hui ; ne rien promettre de secret ; dire qui aide maintenant.",
+       "Associer les parents ou responsables aujourd’hui – sauf si cela rend la situation moins sûre. Le SePAS au plus tard le jour d’école suivant.",
        "Donner les numéros : KJT 116 111 (lun.–sam.), SOS Détresse 45 45 45, nuit et dimanche 112 ou 113. Maux depuis des semaines : voir un médecin.",
        "Tout passe par les personnages ou par un conseil aux autres – le personnel seulement si le ou la jeune veut.",
        "Avec son accord, garder les cartes-conseils pour un prochain groupe (sans prénom)."

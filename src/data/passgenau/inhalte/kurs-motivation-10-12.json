@@ -113,7 +113,7 @@
     "Tu veux te dire une phrase à toi aussi ?"
    ],
    "wennEsKippt": "Si l’enfant ne veut pas colorier, l’adulte colorie selon ses indications. Personne n’est obligé de se dire une phrase ; « je passe » compte.",
-   "vorbereitung": "Une seule fois : écrire « dossard 7 » sur la couverture du dossier."
+   "vorbereitung": "Une seule fois : écrire « numéro 7 » sur la couverture du dossier."
   }
  },
  {
@@ -340,14 +340,14 @@
        "art": "bild",
        "bild": "motiv:rad",
        "groesse": "m",
-       "text": "Dossard 7",
+       "text": "Numéro 7",
        "ausrichtung": "mitte"
       }
      ]
     },
     {
      "art": "info",
-     "titel": "Rapport de panne · trace 1",
+     "titel": "Rapport de panne · indice 1",
      "text": "Essai du samedi : Aarav conduit. Au deuxième virage, la caisse tire à gauche – droit dans la paille. C’est Emir qui avait monté les roues."
     },
     {
@@ -442,7 +442,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, schreibt die Fachkraft nach Diktat, oder das Kind kreuzt nur an. Eigene Ziele werden nicht vorgelesen."
     },
     "fr": {
-     "text": "Ensemble : l’adulte lit la trace 1, l’enfant coche son soupçon – « aucune idée » compte aussi. Seul·e : la phrase « parce que » pour Aarav et, s’il ou elle veut, son propre objectif ; le secret est permis, un signe suffit. Pour finir, l’enfant colorie le volant dans la chaîne. La proposition reste libre.",
+     "text": "Ensemble : l’adulte lit l’indice 1, l’enfant coche son soupçon – « aucune idée » compte aussi. Seul·e : la phrase « parce que » pour Aarav et, s’il ou elle veut, son propre objectif ; le secret est permis, un signe suffit. Pour finir, l’enfant colorie le volant dans la chaîne. La proposition reste libre.",
      "sagen": [
       "À ton avis – pourquoi la caisse a fini dans la paille ?",
       "Ton objectif peut rester complètement secret."
@@ -453,7 +453,7 @@
   },
   "fr": {
    "titel": "Le volant : qui conduit, au juste ?",
-   "text": "Sans préambule, l’enfant guide l’adulte comme un robot jusqu’à une carte (« deux pas, à gauche, stop »), puis c’est l’inverse ; ensuite l’enfant choisit seul·e la carte et le chemin. « Qu’est-ce qui change ? » Puis l’histoire : dans un garage à Remich attend une caisse à savon, dossard 7. Une caisse à savon, c’est une caisse en bois sur quatre roues, avec volant et frein, sans moteur. À l’essai, elle a fini dans la paille. Depuis, Emir ne vient plus : « Dat bréngt näischt. » Dans cinq semaines, c’est la course, et l’équipe a besoin d’un ou d’une chef d’équipe – l’enfant. Avec une assiette en carton comme volant, il ou elle conduit chaque carte objectif vers la chaise « Je conduis » ou « Les autres conduisent ». Pour deux cartes « Les autres conduisent », il ou elle cherche une raison à soi : « Je le fais parce que… ». Phrase à retenir : « Quand c’est moi qui conduis, ça tient plus longtemps. » Pour finir, la trace 1.",
+   "text": "Sans préambule, l’enfant guide l’adulte comme un robot jusqu’à une carte (« deux pas, à gauche, stop »), puis c’est l’inverse ; ensuite l’enfant choisit seul·e la carte et le chemin. « Qu’est-ce qui change ? » Puis l’histoire : dans un garage à Remich attend une caisse à savon, numéro 7. Une caisse à savon, c’est une caisse en bois sur quatre roues, avec volant et frein, sans moteur. À l’essai, elle a fini dans la paille. Depuis, Emir ne vient plus : « Dat bréngt näischt. » Dans cinq semaines, c’est la course, et l’équipe a besoin d’un ou d’une chef d’équipe – l’enfant. Avec une assiette en carton comme volant, il ou elle conduit chaque carte objectif vers la chaise « Je conduis » ou « Les autres conduisent ». Pour deux cartes « Les autres conduisent », il ou elle cherche une raison à soi : « Je le fais parce que… ». Phrase à retenir : « Quand c’est moi qui conduis, ça tient plus longtemps. » Pour finir, l’indice 1.",
    "sagen": [
     "C’est toi la télécommande : guide-moi jusqu’à une carte. … Maintenant, je te guide. Deux pas en avant… stop. Et maintenant toi : choisis toi-même une carte.",
     "Qu’est-ce qui change – être guidé ou conduire soi-même ?",
@@ -461,7 +461,7 @@
     "Tu trouves une raison qui en fait l’objectif d’Aarav à lui ? « Je le fais parce que… »"
    ],
    "wennEsKippt": "Si l’enfant ne veut pas se lever, il ou elle tourne le volant à gauche ou à droite, assis·e. S’il ou elle dit « Je m’en fiche », c’est une réponse honnête : « D’accord – aujourd’hui, tu es juste chef d’équipe pour les trois. » Quatre cartes suffisent.",
-   "kurz": "Guidé ou aux commandes ? · test du volant · trace 1"
+   "kurz": "Guidé ou aux commandes ? · test du volant · indice 1"
   },
   "zugang": {
    "lesen": 2,
@@ -537,9 +537,9 @@
      "Départ rapide (3 min) : imprimer la fiche et la planche ; l’enfant détache lui-même les cartes objectifs.",
      "Deux chaises avec un panneau : « Je conduis » et « Les autres conduisent ».",
      "Une assiette en carton ou un couvercle comme volant.",
-     "Dossier : l’enfant écrit « dossard 7 » sur la couverture et colorie chaque semaine la nouvelle pièce de la fiche."
+     "Dossier : l’enfant écrit « numéro 7 » sur la couverture et colorie chaque semaine la nouvelle pièce de la fiche."
     ],
-    "aufbau": "0′ l’enfant te guide, puis toi, puis il ou elle choisit : « Qu’est-ce qui change ? »\n2′ garage, accident, Emir parti : « Dat bréngt näischt. » – « Tu es chef d’équipe. »\n3′ test du volant : cartes vers les chaises – « Qui conduit ? »\n8′ reprendre deux cartes – « Je le fais parce que… »\n11′ trace 1\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : guider, quatre cartes, un « parce que ».",
+    "aufbau": "0′ l’enfant te guide, puis toi, puis il ou elle choisit : « Qu’est-ce qui change ? »\n2′ garage, accident, Emir parti : « Dat bréngt näischt. » – « Tu es chef d’équipe. »\n3′ test du volant : cartes vers les chaises – « Qui conduit ? »\n8′ reprendre deux cartes – « Je le fais parce que… »\n11′ indice 1\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : guider, quatre cartes, un « parce que ».",
     "karten": [
      {
       "titel": "Cartes objectifs",
@@ -575,7 +575,7 @@
     ],
     "leichter": "Seulement quatre cartes ; l’adulte lit, l’enfant tourne le volant à gauche ou à droite. La phrase « parce que » peut être choisie parmi deux propositions.",
     "schwerer": "La carte « Je veux avoir l’air cool, pour que personne ne se moque » : qui conduit vraiment – et à quoi ressemblerait ce même objectif si on conduisait soi-même ?",
-    "gruppe": "Par deux : l’un guide seulement avec des mots, sans toucher, l’autre est guidé, puis on échange. Ensuite, chacun à son tour conduit une carte objectif vers une chaise ; qui n’est pas d’accord dit « Moi, je tournerais, parce que… ». L’adulte note les « parce que » au tableau ; les objectifs personnels restent sur la fiche. Fin : tous écoutent la trace 1 et votent du doigt.",
+    "gruppe": "Par deux : l’un guide seulement avec des mots, sans toucher, l’autre est guidé, puis on échange. Ensuite, chacun à son tour conduit une carte objectif vers une chaise ; qui n’est pas d’accord dit « Moi, je tournerais, parce que… ». L’adulte note les « parce que » au tableau ; les objectifs personnels restent sur la fiche. Fin : tous écoutent l’indice 1 et votent du doigt.",
     "beobachten": [
      "distingue de lui-même ou d’elle-même si quelqu’un conduit son objectif ou est conduit",
      "trouve pour un objectif imposé une raison à soi (« Je le fais parce que… »)",
@@ -824,14 +824,14 @@
        "art": "bild",
        "bild": "motiv:rad",
        "groesse": "m",
-       "text": "Dossard 7",
+       "text": "Numéro 7",
        "ausrichtung": "mitte"
       }
      ]
     },
     {
      "art": "info",
-     "titel": "Rapport de panne · trace 1",
+     "titel": "Rapport de panne · indice 1",
      "text": "Essai du samedi : Aarav conduit. Au deuxième virage, la caisse tire à gauche – droit dans la paille. C’est Emir qui avait monté les roues."
     },
     {
@@ -931,7 +931,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, schreibt die Fachkraft nach Diktat, oder das Kind kreuzt nur an. Eigene Ziele werden nicht vorgelesen."
     },
     "fr": {
-     "text": "Ensemble : l’adulte lit la trace 1, l’enfant coche son soupçon – « aucune idée » compte aussi. Seul·e : la phrase « parce que » pour Aarav et, s’il ou elle veut, son propre objectif ; le secret est permis, un signe suffit. Pour finir, l’enfant colorie le volant dans la chaîne. La proposition reste libre.",
+     "text": "Ensemble : l’adulte lit l’indice 1, l’enfant coche son soupçon – « aucune idée » compte aussi. Seul·e : la phrase « parce que » pour Aarav et, s’il ou elle veut, son propre objectif ; le secret est permis, un signe suffit. Pour finir, l’enfant colorie le volant dans la chaîne. La proposition reste libre.",
      "sagen": [
       "À ton avis – pourquoi la caisse a fini dans la paille ?",
       "Ton objectif peut rester complètement secret."
@@ -942,7 +942,7 @@
   },
   "fr": {
    "titel": "Le volant : qui conduit, au juste ?",
-   "text": "Sans préambule, l’enfant guide l’adulte comme un robot jusqu’à une carte (« deux pas, à gauche, stop »), puis c’est l’inverse ; ensuite l’enfant choisit seul·e la carte et le chemin. « Qu’est-ce qui change ? » Puis l’histoire : dans un garage à Remich attend une caisse à savon, dossard 7. Une caisse à savon, c’est une caisse en bois sur quatre roues, avec volant et frein, sans moteur. À l’essai, elle a fini dans la paille. Depuis, Emir ne vient plus : « Dat bréngt näischt. » Dans cinq semaines, c’est la course, et l’équipe a besoin d’un ou d’une chef d’équipe – l’enfant. Avec une assiette en carton comme volant, il ou elle conduit chaque carte objectif vers la chaise « Je conduis » ou « Les autres conduisent ». Pour deux cartes « Les autres conduisent », il ou elle cherche une raison à soi : « Je le fais parce que… ». Phrase à retenir : « Quand c’est moi qui conduis, ça tient plus longtemps. » Pour finir, la trace 1.",
+   "text": "Sans préambule, l’enfant guide l’adulte comme un robot jusqu’à une carte (« deux pas, à gauche, stop »), puis c’est l’inverse ; ensuite l’enfant choisit seul·e la carte et le chemin. « Qu’est-ce qui change ? » Puis l’histoire : dans un garage à Remich attend une caisse à savon, numéro 7. Une caisse à savon, c’est une caisse en bois sur quatre roues, avec volant et frein, sans moteur. À l’essai, elle a fini dans la paille. Depuis, Emir ne vient plus : « Dat bréngt näischt. » Dans cinq semaines, c’est la course, et l’équipe a besoin d’un ou d’une chef d’équipe – l’enfant. Avec une assiette en carton comme volant, il ou elle conduit chaque carte objectif vers la chaise « Je conduis » ou « Les autres conduisent ». Pour deux cartes « Les autres conduisent », il ou elle cherche une raison à soi : « Je le fais parce que… ». Phrase à retenir : « Quand c’est moi qui conduis, ça tient plus longtemps. » Pour finir, l’indice 1.",
    "sagen": [
     "C’est toi la télécommande : guide-moi jusqu’à une carte. … Maintenant, je te guide. Deux pas en avant… stop. Et maintenant toi : choisis toi-même une carte.",
     "Qu’est-ce qui change – être guidé ou conduire soi-même ?",
@@ -950,7 +950,7 @@
     "Tu trouves une raison qui en fait l’objectif d’Aarav à lui ? « Je le fais parce que… »"
    ],
    "wennEsKippt": "Si l’enfant ne veut pas se lever, il ou elle tourne le volant à gauche ou à droite, assis·e. S’il ou elle dit « Je m’en fiche », c’est une réponse honnête : « D’accord – aujourd’hui, tu es juste chef d’équipe pour les trois. » Quatre cartes suffisent.",
-   "kurz": "Guidé ou aux commandes ? · test du volant · trace 1"
+   "kurz": "Guidé ou aux commandes ? · test du volant · indice 1"
   },
   "zugang": {
    "lesen": 1,
@@ -1026,9 +1026,9 @@
      "Départ rapide (3 min) : imprimer la fiche et la planche ; l’enfant détache lui-même les cartes objectifs.",
      "Deux chaises avec un panneau : « Je conduis » et « Les autres conduisent ».",
      "Une assiette en carton ou un couvercle comme volant.",
-     "Dossier : l’enfant écrit « dossard 7 » sur la couverture et colorie chaque semaine la nouvelle pièce de la fiche."
+     "Dossier : l’enfant écrit « numéro 7 » sur la couverture et colorie chaque semaine la nouvelle pièce de la fiche."
     ],
-    "aufbau": "0′ l’enfant te guide, puis toi, puis il ou elle choisit : « Qu’est-ce qui change ? »\n2′ garage, accident, Emir parti : « Dat bréngt näischt. » – « Tu es chef d’équipe. »\n3′ test du volant : cartes vers les chaises – « Qui conduit ? »\n8′ reprendre deux cartes – « Je le fais parce que… »\n11′ trace 1\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : guider, quatre cartes, un « parce que ».",
+    "aufbau": "0′ l’enfant te guide, puis toi, puis il ou elle choisit : « Qu’est-ce qui change ? »\n2′ garage, accident, Emir parti : « Dat bréngt näischt. » – « Tu es chef d’équipe. »\n3′ test du volant : cartes vers les chaises – « Qui conduit ? »\n8′ reprendre deux cartes – « Je le fais parce que… »\n11′ indice 1\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : guider, quatre cartes, un « parce que ».",
     "karten": [
      {
       "titel": "Cartes objectifs",
@@ -1064,7 +1064,7 @@
     ],
     "leichter": "Seulement quatre cartes ; l’adulte lit, l’enfant tourne le volant à gauche ou à droite. La phrase « parce que » peut être choisie parmi deux propositions.",
     "schwerer": "La carte « Je veux avoir l’air cool, pour que personne ne se moque » : qui conduit vraiment – et à quoi ressemblerait ce même objectif si on conduisait soi-même ?",
-    "gruppe": "Par deux : l’un guide seulement avec des mots, sans toucher, l’autre est guidé, puis on échange. Ensuite, chacun à son tour conduit une carte objectif vers une chaise ; qui n’est pas d’accord dit « Moi, je tournerais, parce que… ». L’adulte note les « parce que » au tableau ; les objectifs personnels restent sur la fiche. Fin : tous écoutent la trace 1 et votent du doigt.",
+    "gruppe": "Par deux : l’un guide seulement avec des mots, sans toucher, l’autre est guidé, puis on échange. Ensuite, chacun à son tour conduit une carte objectif vers une chaise ; qui n’est pas d’accord dit « Moi, je tournerais, parce que… ». L’adulte note les « parce que » au tableau ; les objectifs personnels restent sur la fiche. Fin : tous écoutent l’indice 1 et votent du doigt.",
     "beobachten": [
      "distingue de lui-même ou d’elle-même si quelqu’un conduit son objectif ou est conduit",
      "trouve pour un objectif imposé une raison à soi (« Je le fais parce que… »)",
@@ -1177,7 +1177,7 @@
   },
   "fr": {
    "titel": "Le volant : le ballon des objectifs",
-   "text": "L’adulte raconte en deux mots la caisse à savon sans moteur de Remich et Aarav, Daryna et Emir, qui ont besoin d’un ou d’une chef d’équipe. Puis on se lance un ballon : qui lance lit une carte objectif ; qui attrape crie « Je conduis » ou « Les autres conduisent » et ajoute une phrase. Pour « Les autres conduisent », celui ou celle qui attrape cherche une raison qui rend l’objectif sien : « Je le fais parce que… ». Après cinq lancers, on échange : l’enfant lit. Phrase à retenir : « Quand c’est moi qui conduis, ça tient plus longtemps. » Pour finir, la trace 1 : pourquoi la caisse a-t-elle fini dans la paille ?",
+   "text": "L’adulte raconte en deux mots la caisse à savon sans moteur de Remich et Aarav, Daryna et Emir, qui ont besoin d’un ou d’une chef d’équipe. Puis on se lance un ballon : qui lance lit une carte objectif ; qui attrape crie « Je conduis » ou « Les autres conduisent » et ajoute une phrase. Pour « Les autres conduisent », celui ou celle qui attrape cherche une raison qui rend l’objectif sien : « Je le fais parce que… ». Après cinq lancers, on échange : l’enfant lit. Phrase à retenir : « Quand c’est moi qui conduis, ça tient plus longtemps. » Pour finir, l’indice 1 : pourquoi la caisse a-t-elle fini dans la paille ?",
    "sagen": [
     "Je lance et je lis – tu attrapes et tu cries : je conduis ou les autres conduisent ?",
     "Une phrase : à quoi tu le vois ?",
@@ -1228,7 +1228,7 @@
      "Une balle souple ou une boule de papier",
      "Détacher les cartes objectifs de la séance"
     ],
-    "aufbau": "0′ raconter la caisse et l’équipe – « Tu es chef d’équipe. »\n2′ lancer, lire, crier – « Je conduis ou les autres ? »\n6′ échange – « À toi de lire. »\n9′ deux « parce que »\n11′ trace 1, fiche de la séance\nIndispensable : cinq lancers, un « parce que ». Si ça presse : trois cartes.",
+    "aufbau": "0′ raconter la caisse et l’équipe – « Tu es chef d’équipe. »\n2′ lancer, lire, crier – « Je conduis ou les autres ? »\n6′ échange – « À toi de lire. »\n9′ deux « parce que »\n11′ indice 1, fiche de la séance\nIndispensable : cinq lancers, un « parce que ». Si ça presse : trois cartes.",
     "karten": [
      {
       "titel": "Pour l’adulte : rester calme",
@@ -1354,7 +1354,7 @@
   },
   "fr": {
    "titel": "Le volant : dessiner mon volant",
-   "text": "L’adulte raconte en deux mots la caisse à savon sans moteur de Remich et les trois qui ont besoin d’un ou d’une chef d’équipe. L’enfant dessine un grand volant à quatre branches. L’adulte lit des cartes objectifs ; l’enfant pose chacune sur le volant (« Je conduis ») ou à côté (« Les autres conduisent »). Pour une carte posée à côté, il ou elle dessine ou écrit sur une branche une raison qui rend l’objectif sien : « Je le fais parce que… ». On inverse : l’adulte pose à côté une carte qui irait sur le volant, l’enfant corrige. Phrase à retenir : « Quand c’est moi qui conduis, ça tient plus longtemps. » Pour finir, la trace 1.",
+   "text": "L’adulte raconte en deux mots la caisse à savon sans moteur de Remich et les trois qui ont besoin d’un ou d’une chef d’équipe. L’enfant dessine un grand volant à quatre branches. L’adulte lit des cartes objectifs ; l’enfant pose chacune sur le volant (« Je conduis ») ou à côté (« Les autres conduisent »). Pour une carte posée à côté, il ou elle dessine ou écrit sur une branche une raison qui rend l’objectif sien : « Je le fais parce que… ». On inverse : l’adulte pose à côté une carte qui irait sur le volant, l’enfant corrige. Phrase à retenir : « Quand c’est moi qui conduis, ça tient plus longtemps. » Pour finir, l’indice 1.",
    "sagen": [
     "Dessine un grand volant. Cet objectif – sur le volant ou à côté ?",
     "Quelle raison va sur la branche ?",
@@ -1405,7 +1405,7 @@
      "Papier A4, crayons de couleur",
      "Détacher les cartes objectifs de la séance"
     ],
-    "aufbau": "0′ raconter la caisse et l’équipe\n2′ dessiner le volant – « Grand, à quatre branches. »\n4′ poser les cartes – « Sur le volant ou à côté ? »\n8′ des raisons sur les branches\n10′ rôles inversés, trace 1\n12′ fiche de la séance\nIndispensable : le volant, une raison. Si ça presse : l’assiette au lieu du dessin.",
+    "aufbau": "0′ raconter la caisse et l’équipe\n2′ dessiner le volant – « Grand, à quatre branches. »\n4′ poser les cartes – « Sur le volant ou à côté ? »\n8′ des raisons sur les branches\n10′ rôles inversés, indice 1\n12′ fiche de la séance\nIndispensable : le volant, une raison. Si ça presse : l’assiette au lieu du dessin.",
     "karten": [
      {
       "titel": "Pour l’adulte : dessiner sans pression",
@@ -1681,7 +1681,7 @@
     },
     {
      "art": "info",
-     "titel": "Rapport de panne · trace 2",
+     "titel": "Rapport de panne · indice 2",
      "text": "Mardi : Jemp pousse la caisse vide tout droit sur le sol lisse du garage. Elle tire encore à gauche."
     },
     {
@@ -1785,7 +1785,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, zeigt das Kind auf eine Mess-Idee, die Fachkraft schreibt. Zeiten werden nicht mit anderen verglichen."
     },
     "fr": {
-     "text": "L’enfant colorie les barres pendant les tours. Ensuite, ensemble : trace 2 – l’adulte lit, l’enfant barre lui-même. Seul·e : le mesureur de progrès pour son objectif ou pour Emir, puis la chaîne. La proposition reste libre.",
+     "text": "L’enfant colorie les barres pendant les tours. Ensuite, ensemble : indice 2 – l’adulte lit, l’enfant barre lui-même. Seul·e : le mesureur de progrès pour son objectif ou pour Emir, puis la chaîne. La proposition reste libre.",
      "sagen": [
       "Tu barres quoi maintenant – et pourquoi ?",
       "Tu mesures quoi – pour toi ou pour Emir ?"
@@ -1796,7 +1796,7 @@
   },
   "fr": {
    "titel": "Les roues : le test du stand",
-   "text": "Emir écrit : « Ech kann dat net. » L’adulte pose six gobelets : « Arrêt au stand ! Les équipes pros changent des roues en quelques secondes – parce qu’elles se sont entraînées très souvent. » Debout, l’enfant monte une pyramide (3 – 2 – 1) puis la remet en pile ; l’adulte chronomètre. Quatre tours ; avant chacun, l’enfant choisit une astuce de stand, puis reporte son temps en barre sur la fiche – sa courbe apparaît. « Qu’est-ce que tu dis à Emir maintenant ? » Puis il ou elle cherche pour son objectif un mesureur de progrès : que pourrait-on compter ou chronométrer ? Phrase à retenir : « Pour voir qu’on progresse, il faut mesurer. » Pour finir, la trace 2.",
+   "text": "Emir écrit : « Ech kann dat net. » L’adulte pose six gobelets : « Arrêt au stand ! Les équipes pros changent des roues en quelques secondes – parce qu’elles se sont entraînées très souvent. » Debout, l’enfant monte une pyramide (3 – 2 – 1) puis la remet en pile ; l’adulte chronomètre. Quatre tours ; avant chacun, l’enfant choisit une astuce de stand, puis reporte son temps en barre sur la fiche – sa courbe apparaît. « Qu’est-ce que tu dis à Emir maintenant ? » Puis il ou elle cherche pour son objectif un mesureur de progrès : que pourrait-on compter ou chronométrer ? Phrase à retenir : « Pour voir qu’on progresse, il faut mesurer. » Pour finir, l’indice 2.",
    "sagen": [
     "Six gobelets, une pyramide, et on remet en pile. Go – je chronomètre.",
     "Quelle astuce tu prends pour le prochain tour ?",
@@ -1804,7 +1804,7 @@
     "Que pourrais-tu compter ou chronométrer pour ton objectif ?"
    ],
    "wennEsKippt": "Si ça ne va pas plus vite, l’adulte compte autre chose : moins de gobelets tombés, des mains plus calmes – « Les courbes font des zigzags, même chez les pros. » Si l’enfant ne veut pas rester debout, il ou elle construit assis·e ; trois tours suffisent.",
-   "kurz": "Arrêt au stand avec six gobelets · ma courbe · trace 2"
+   "kurz": "Arrêt au stand avec six gobelets · ma courbe · indice 2"
   },
   "zugang": {
    "lesen": 2,
@@ -1881,7 +1881,7 @@
      "Imprimer la fiche et la planche (astuces, idées de mesure).",
      "Dégager la table ; l’enfant est debout."
     ],
-    "aufbau": "0′ poser les gobelets – « Arrêt au stand ! Tu es rapide comment ? »\n1′ tour 1, colorier la barre – « Go, je chronomètre. »\n3′ tours 2–4 avec une astuce – « Quelle astuce ? »\n8′ regarder la courbe – « Tu dis quoi à Emir ? »\n9′ idées de mesure pour son objectif\n11′ trace 2\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : trois tours, la courbe, un mesureur. Si ça presse : trois tours.",
+    "aufbau": "0′ poser les gobelets – « Arrêt au stand ! Tu es rapide comment ? »\n1′ tour 1, colorier la barre – « Go, je chronomètre. »\n3′ tours 2–4 avec une astuce – « Quelle astuce ? »\n8′ regarder la courbe – « Tu dis quoi à Emir ? »\n9′ idées de mesure pour son objectif\n11′ indice 2\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : trois tours, la courbe, un mesureur. Si ça presse : trois tours.",
     "karten": [
      {
       "titel": "Astuces de stand",
@@ -1912,7 +1912,7 @@
        "Si un tour est plus lent : ne pas consoler, regarder – « Qu’est-ce qui a changé ? » Les reculs vont aussi sur la courbe.",
        "Féliciter le chemin, pas la personne : « Avec l’astuce, tu as gagné 3 secondes » plutôt que « Tu es génial ».",
        "Pas de récompense pour les temps – la courbe elle-même est le retour.",
-       "La trace 2 écarte deux suspects. Ne rien dire : l’enfant barre lui-même."
+       "L’indice 2 écarte deux suspects. Ne rien dire : l’enfant barre lui-même."
       ]
      }
     ],
@@ -2187,7 +2187,7 @@
     },
     {
      "art": "info",
-     "titel": "Rapport de panne · trace 2",
+     "titel": "Rapport de panne · indice 2",
      "text": "Mardi : Jemp pousse la caisse vide tout droit sur le sol lisse du garage. Elle tire encore à gauche."
     },
     {
@@ -2296,7 +2296,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, zeigt das Kind auf eine Mess-Idee, die Fachkraft schreibt. Zeiten werden nicht mit anderen verglichen."
     },
     "fr": {
-     "text": "L’enfant colorie les barres pendant les tours. Ensuite, ensemble : trace 2 – l’adulte lit, l’enfant barre lui-même. Seul·e : le mesureur de progrès pour son objectif ou pour Emir, puis la chaîne. La proposition reste libre.",
+     "text": "L’enfant colorie les barres pendant les tours. Ensuite, ensemble : indice 2 – l’adulte lit, l’enfant barre lui-même. Seul·e : le mesureur de progrès pour son objectif ou pour Emir, puis la chaîne. La proposition reste libre.",
      "sagen": [
       "Tu barres quoi maintenant – et pourquoi ?",
       "Tu mesures quoi – pour toi ou pour Emir ?"
@@ -2307,7 +2307,7 @@
   },
   "fr": {
    "titel": "Les roues : le test du stand",
-   "text": "Emir écrit : « Ech kann dat net. » L’adulte pose six gobelets : « Arrêt au stand ! Les équipes pros changent des roues en quelques secondes – parce qu’elles se sont entraînées très souvent. » Debout, l’enfant monte une pyramide (3 – 2 – 1) puis la remet en pile ; l’adulte chronomètre. Quatre tours ; avant chacun, l’enfant choisit une astuce de stand, puis reporte son temps en barre sur la fiche – sa courbe apparaît. « Qu’est-ce que tu dis à Emir maintenant ? » Puis il ou elle cherche pour son objectif un mesureur de progrès : que pourrait-on compter ou chronométrer ? Phrase à retenir : « Pour voir qu’on progresse, il faut mesurer. » Pour finir, la trace 2.",
+   "text": "Emir écrit : « Ech kann dat net. » L’adulte pose six gobelets : « Arrêt au stand ! Les équipes pros changent des roues en quelques secondes – parce qu’elles se sont entraînées très souvent. » Debout, l’enfant monte une pyramide (3 – 2 – 1) puis la remet en pile ; l’adulte chronomètre. Quatre tours ; avant chacun, l’enfant choisit une astuce de stand, puis reporte son temps en barre sur la fiche – sa courbe apparaît. « Qu’est-ce que tu dis à Emir maintenant ? » Puis il ou elle cherche pour son objectif un mesureur de progrès : que pourrait-on compter ou chronométrer ? Phrase à retenir : « Pour voir qu’on progresse, il faut mesurer. » Pour finir, l’indice 2.",
    "sagen": [
     "Six gobelets, une pyramide, et on remet en pile. Go – je chronomètre.",
     "Quelle astuce tu prends pour le prochain tour ?",
@@ -2315,7 +2315,7 @@
     "Que pourrais-tu compter ou chronométrer pour ton objectif ?"
    ],
    "wennEsKippt": "Si ça ne va pas plus vite, l’adulte compte autre chose : moins de gobelets tombés, des mains plus calmes – « Les courbes font des zigzags, même chez les pros. » Si l’enfant ne veut pas rester debout, il ou elle construit assis·e ; trois tours suffisent.",
-   "kurz": "Arrêt au stand avec six gobelets · ma courbe · trace 2"
+   "kurz": "Arrêt au stand avec six gobelets · ma courbe · indice 2"
   },
   "zugang": {
    "lesen": 1,
@@ -2392,7 +2392,7 @@
      "Imprimer la fiche et la planche (astuces, idées de mesure).",
      "Dégager la table ; l’enfant est debout."
     ],
-    "aufbau": "0′ poser les gobelets – « Arrêt au stand ! Tu es rapide comment ? »\n1′ tour 1, colorier la barre – « Go, je chronomètre. »\n3′ tours 2–4 avec une astuce – « Quelle astuce ? »\n8′ regarder la courbe – « Tu dis quoi à Emir ? »\n9′ idées de mesure pour son objectif\n11′ trace 2\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : trois tours, la courbe, un mesureur. Si ça presse : trois tours.",
+    "aufbau": "0′ poser les gobelets – « Arrêt au stand ! Tu es rapide comment ? »\n1′ tour 1, colorier la barre – « Go, je chronomètre. »\n3′ tours 2–4 avec une astuce – « Quelle astuce ? »\n8′ regarder la courbe – « Tu dis quoi à Emir ? »\n9′ idées de mesure pour son objectif\n11′ indice 2\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : trois tours, la courbe, un mesureur. Si ça presse : trois tours.",
     "karten": [
      {
       "titel": "Astuces de stand",
@@ -2423,7 +2423,7 @@
        "Si un tour est plus lent : ne pas consoler, regarder – « Qu’est-ce qui a changé ? » Les reculs vont aussi sur la courbe.",
        "Féliciter le chemin, pas la personne : « Avec l’astuce, tu as gagné 3 secondes » plutôt que « Tu es génial ».",
        "Pas de récompense pour les temps – la courbe elle-même est le retour.",
-       "La trace 2 écarte deux suspects. Ne rien dire : l’enfant barre lui-même."
+       "L’indice 2 écarte deux suspects. Ne rien dire : l’enfant barre lui-même."
       ]
      }
     ],
@@ -2546,7 +2546,7 @@
   },
   "fr": {
    "titel": "Les roues : la corbeille à boulettes",
-   "text": "Emir a écrit : « Ech kann dat net. » L’adulte pose une corbeille à deux grands pas, l’enfant froisse cinq boulettes de papier. Quatre tours de cinq lancers ; après chaque tour, l’enfant trace sur une feuille autant de bâtons que de paniers – une liste de bâtons comme une courbe. Avant chaque tour, il ou elle choisit une astuce, par exemple « D’abord regarder, puis go ». On inverse : l’adulte lance, l’enfant compte et lui donne une astuce. Puis il ou elle cherche pour son objectif un mesureur de progrès. Phrase à retenir : « Pour voir qu’on progresse, il faut mesurer. » Pour finir, la trace 2.",
+   "text": "Emir a écrit : « Ech kann dat net. » L’adulte pose une corbeille à deux grands pas, l’enfant froisse cinq boulettes de papier. Quatre tours de cinq lancers ; après chaque tour, l’enfant trace sur une feuille autant de bâtons que de paniers – une liste de bâtons comme une courbe. Avant chaque tour, il ou elle choisit une astuce, par exemple « D’abord regarder, puis go ». On inverse : l’adulte lance, l’enfant compte et lui donne une astuce. Puis il ou elle cherche pour son objectif un mesureur de progrès. Phrase à retenir : « Pour voir qu’on progresse, il faut mesurer. » Pour finir, l’indice 2.",
    "sagen": [
     "Cinq lancers – je compte. Quelle astuce tu prends ?",
     "Trace tes bâtons. Tu vois quoi ?",
@@ -2597,7 +2597,7 @@
      "Une corbeille ou un carton, cinq feuilles de brouillon",
      "Préparer les astuces de la séance"
     ],
-    "aufbau": "0′ la phrase d’Emir – « Ech kann dat net. »\n1′ froisser, tour 1 – « Cinq lancers. »\n3′ tours 2–4 avec une astuce, tracer les bâtons\n8′ rôles inversés\n10′ son mesureur, trace 2\n12′ fiche de la séance\nIndispensable : trois tours, les bâtons. Si ça presse : trois tours.",
+    "aufbau": "0′ la phrase d’Emir – « Ech kann dat net. »\n1′ froisser, tour 1 – « Cinq lancers. »\n3′ tours 2–4 avec une astuce, tracer les bâtons\n8′ rôles inversés\n10′ son mesureur, indice 2\n12′ fiche de la séance\nIndispensable : trois tours, les bâtons. Si ça presse : trois tours.",
     "karten": [
      {
       "titel": "Pour l’adulte : si ça ne progresse pas",
@@ -2727,7 +2727,7 @@
   },
   "fr": {
    "titel": "Les roues : l’interview du progrès",
-   "text": "Emir a écrit : « Ech kann dat net. » L’enfant interviewe l’adulte comme un reporter, avec quatre questions : « Qu’est-ce que tu ne savais pas faire du tout ? Comment était le premier essai ? Qu’est-ce qui a aidé ? À quoi as-tu vu que tu progressais ? » En même temps, il ou elle dessine sa courbe d’apprentissage sur une feuille – avec des creux quand l’adulte raconte des reculs. On inverse si l’enfant veut : l’adulte l’interroge sur quelque chose qu’il ou elle a appris (le vélo, un niveau, une figure). Puis l’enfant cherche pour son objectif un mesureur de progrès. Phrase à retenir : « Pour voir qu’on progresse, il faut mesurer. » Pour finir, la trace 2.",
+   "text": "Emir a écrit : « Ech kann dat net. » L’enfant interviewe l’adulte comme un reporter, avec quatre questions : « Qu’est-ce que tu ne savais pas faire du tout ? Comment était le premier essai ? Qu’est-ce qui a aidé ? À quoi as-tu vu que tu progressais ? » En même temps, il ou elle dessine sa courbe d’apprentissage sur une feuille – avec des creux quand l’adulte raconte des reculs. On inverse si l’enfant veut : l’adulte l’interroge sur quelque chose qu’il ou elle a appris (le vélo, un niveau, une figure). Puis l’enfant cherche pour son objectif un mesureur de progrès. Phrase à retenir : « Pour voir qu’on progresse, il faut mesurer. » Pour finir, l’indice 2.",
    "sagen": [
     "Tu es reporter. Pose-moi tes quatre questions.",
     "Dessine en même temps : où ça monte, où ça descend ?",
@@ -2787,7 +2787,7 @@
      "Papier et crayon",
      "Préparer une petite histoire d’apprentissage à soi (avec un recul)"
     ],
-    "aufbau": "0′ la phrase d’Emir\n1′ interview, dessiner la courbe – « Qu’est-ce que tu ne savais pas faire ? »\n6′ rôles inversés (libre)\n9′ son mesureur, trace 2\n12′ fiche de la séance\nIndispensable : interview, courbe. Si ça presse : sans inverser.",
+    "aufbau": "0′ la phrase d’Emir\n1′ interview, dessiner la courbe – « Qu’est-ce que tu ne savais pas faire ? »\n6′ rôles inversés (libre)\n9′ son mesureur, indice 2\n12′ fiche de la séance\nIndispensable : interview, courbe. Si ça presse : sans inverser.",
     "karten": [
      {
       "titel": "Questions d’interview",
@@ -2835,9 +2835,9 @@
    "titel": "Einzelkurs Ohne Motor ins Ziel"
   },
   "titel": "Kurven-Plan: Ziel sehen, Kurve finden",
-  "text": "Aarav träumt vom Sieg, Bremsen übt er nie. Augen zu: Das Kind stellt sich den eigenen Zieleinlauf vor. „Hilft Träumen allein?“ Forschende sagen: Nur träumen macht eher träge; Ziel sehen und dann die Kurve finden hilft mehr. Aus Aaravs Sätzen findet das Kind seine Kurve – das Hindernis in ihm – und baut einen Plan: „Wenn …, dann …“. Dann der Kurven-Reflex im Stehen: Die Fachkraft ruft gemischt Alltagssätze und das „Wenn“; nur beim „Wenn“ geht das Kind in Kurvenlage und ruft sein „Dann“. Es wird schneller, dann Rollentausch. Wer mag, macht zum Schluss einen eigenen Plan. Merksatz: „Ziel sehen, Kurve finden, Plan machen.“ Dann Spur 3.",
+  "text": "Aarav träumt vom Sieg, Bremsen übt er nie. Augen zu oder Blick auf einen Punkt am Boden: Das Kind stellt sich den eigenen Zieleinlauf vor. „Hilft Träumen allein?“ Forschende sagen: Nur träumen macht eher träge; Ziel sehen und dann die Kurve finden hilft mehr. Aus Aaravs Sätzen findet das Kind seine Kurve – das Hindernis in ihm – und baut einen Plan: „Wenn …, dann …“. Dann der Kurven-Reflex im Stehen: Die Fachkraft ruft gemischt Alltagssätze und das „Wenn“; nur beim „Wenn“ geht das Kind in Kurvenlage und ruft sein „Dann“. Es wird schneller, dann Rollentausch. Wer mag, macht zum Schluss einen eigenen Plan. Merksatz: „Ziel sehen, Kurve finden, Plan machen.“ Dann Spur 3.",
   "sagen": [
-   "Augen zu. Du fährst über die Ziellinie. Wie fühlt sich das an?",
+   "Augen zu – oder schau auf einen Punkt am Boden. Du fährst über die Ziellinie. Wie fühlt sich das an?",
    "Hilft Träumen allein? Wo ist Aaravs Kurve – in seinen Sätzen?",
    "Bau ihm einen Plan: Wenn …, dann …",
    "Ich rufe – nur beim Wenn gehst du in die Kurve. Bereit?"
@@ -3053,7 +3053,7 @@
     },
     {
      "art": "info",
-     "titel": "Rapport de panne · trace 3",
+     "titel": "Rapport de panne · indice 3",
      "text": "Daryna fait tourner chaque roue et la secoue : les quatre tournent rond, les écrous sont serrés. Puis elle met le volant droit : les deux roues avant pointent bien tout droit."
     },
     {
@@ -3139,7 +3139,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, sagt das Kind den Plan, die Fachkraft schreibt. Eigene Pläne werden nicht vorgelesen."
     },
     "fr": {
-     "text": "Ensemble : trace 3 – l’adulte lit, l’enfant barre lui-même. Seul·e : le plan du virage, pour soi ou pour Aarav ; un objectif personnel peut rester secret. Puis la chaîne. La proposition reste libre.",
+     "text": "Ensemble : indice 3 – l’adulte lit, l’enfant barre lui-même. Seul·e : le plan du virage, pour soi ou pour Aarav ; un objectif personnel peut rester secret. Puis la chaîne. La proposition reste libre.",
      "sagen": [
       "Tu barres quoi maintenant ?",
       "Pour toi ou pour Aarav – c’est toi qui décides."
@@ -3150,15 +3150,15 @@
   },
   "fr": {
    "titel": "Plan du virage : voir l’arrivée, repérer le virage",
-   "text": "Aarav rêve de victoire, mais ne s’entraîne jamais à freiner. Yeux fermés : l’enfant imagine sa propre arrivée. « Rêver, ça suffit ? » Les chercheurs disent : rêver seulement rend plutôt mou ; voir l’arrivée puis repérer le virage aide davantage. Avec les phrases d’Aarav, l’enfant trouve son virage – l’obstacle en lui – et construit un plan : « Si…, alors… ». Puis le réflexe virage, debout : l’adulte crie, mélangés, des phrases du quotidien et le « si » ; seulement au « si », l’enfant se penche comme dans un virage et crie son « alors ». On accélère, puis on inverse les rôles. Qui veut fait pour finir son propre plan. Phrase à retenir : « Voir l’arrivée, repérer le virage, faire un plan. » Puis la trace 3.",
+   "text": "Aarav rêve de victoire, mais ne s’entraîne jamais à freiner. Yeux fermés : l’enfant imagine sa propre arrivée. « Rêver, ça suffit ? » Les chercheurs disent : rêver seulement rend plutôt mou ; voir l’arrivée puis repérer le virage aide davantage. Avec les phrases d’Aarav, l’enfant trouve son virage – l’obstacle en lui – et construit un plan : « Si…, alors… ». Puis le réflexe virage, debout : l’adulte crie, mélangés, des phrases du quotidien et le « si » ; seulement au « si », l’enfant se penche comme dans un virage et crie son « alors ». On accélère, puis on inverse les rôles. Qui veut fait pour finir son propre plan. Phrase à retenir : « Voir l’arrivée, repérer le virage, faire un plan. » Puis l’indice 3.",
    "sagen": [
-    "Ferme les yeux. Tu passes la ligne d’arrivée. Ça fait quoi ?",
+    "Ferme les yeux – ou regarde un point au sol. Tu passes la ligne d’arrivée. Ça fait quoi ?",
     "Rêver, ça suffit ? Où est le virage d’Aarav – dans ses phrases ?",
     "Construis-lui un plan : si…, alors…",
     "Je crie – seulement au « si », tu prends le virage. Prêt·e ?"
    ],
    "wennEsKippt": "Si l’enfant ne veut pas se lever, il ou elle pose la main à plat sur la table au « si » et se penche. S’il ou elle ne trouve pas de virage, les cartes virage sont prêtes ; un plan pour Aarav suffit.",
-   "kurz": "Le rêve d’Aarav · réflexe virage · si… alors · trace 3"
+   "kurz": "Le rêve d’Aarav · réflexe virage · si… alors · indice 3"
   },
   "zugang": {
    "lesen": 2,
@@ -3173,7 +3173,7 @@
      "Platz zum Stehen, ein Stuhl zum Festhalten.",
      "Rufe für den Reflex bereitlegen (Karte „Nur für dich“)."
     ],
-    "aufbau": "0′ Augen zu – „Du fährst über die Ziellinie …“\n1′ „Hilft Träumen allein?“ – Ziel sehen, dann Kurve\n2′ Aaravs Sätze – „Wo ist seine Kurve?“\n5′ Plan bauen – „Wenn …, dann …“\n7′ Kurven-Reflex im Stehen, dann Tausch – „Nur beim Wenn!“\n10′ eigener Plan (freiwillig)\n11′ Spur 3\n12′ Blatt\nZeit: Kern 12′ · Blatt 5′\nMuss: Kurve finden, ein Plan, Reflex. Kann: eigener Plan. Wird es knapp: Reflex kürzer.",
+    "aufbau": "0′ Augen zu oder Blick zum Boden – „Du fährst über die Ziellinie …“\n1′ „Hilft Träumen allein?“ – Ziel sehen, dann Kurve\n2′ Aaravs Sätze – „Wo ist seine Kurve?“\n5′ Plan bauen – „Wenn …, dann …“\n7′ Kurven-Reflex im Stehen, dann Tausch – „Nur beim Wenn!“\n10′ eigener Plan (freiwillig)\n11′ Spur 3\n12′ Blatt\nZeit: Kern 12′ · Blatt 5′\nMuss: Kurve finden, ein Plan, Reflex. Wird es knapp: Reflex kürzer.",
     "karten": [
      {
       "titel": "Aaravs Sätze",
@@ -3236,7 +3236,7 @@
      "De la place pour être debout, une chaise pour se tenir.",
      "Préparer les phrases du réflexe (carte « Pour l’adulte »)."
     ],
-    "aufbau": "0′ yeux fermés – « Tu passes la ligne d’arrivée… »\n1′ « Rêver, ça suffit ? » – voir l’arrivée, puis le virage\n2′ phrases d’Aarav – « Où est son virage ? »\n5′ construire le plan – « Si…, alors… »\n7′ réflexe virage debout, puis on inverse – « Seulement au si ! »\n10′ plan personnel (libre)\n11′ trace 3\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : le virage, un plan, le réflexe.",
+    "aufbau": "0′ yeux fermés ou regard au sol – « Tu passes la ligne d’arrivée… »\n1′ « Rêver, ça suffit ? » – voir l’arrivée, puis le virage\n2′ phrases d’Aarav – « Où est son virage ? »\n5′ construire le plan – « Si…, alors… »\n7′ réflexe virage debout, puis on inverse – « Seulement au si ! »\n10′ plan personnel (libre)\n11′ indice 3\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : le virage, un plan, le réflexe.",
     "karten": [
      {
       "titel": "Les phrases d’Aarav",
@@ -3268,7 +3268,7 @@
        "Plan modèle : « Si Jemp crie “Entraînement freinage !” et que je pense “ennuyeux”, alors je mets mon casque et je dis : les pros freinent. »",
        "Le virage est un obstacle EN moi (émotion, pensée, habitude) – pas « la maîtresse » ni « la météo ».",
        "À crier : Daryna va chercher la peinture · Il pleut · Emir écrit · Le bus arrive · Jemp crie : Entraînement freinage ! (trois fois sur dix)",
-       "La trace 3 écarte deux suspects. Ne rien dire."
+       "L’indice 3 écarte deux suspects. Ne rien dire."
       ]
      }
     ],
@@ -3301,9 +3301,9 @@
    "titel": "Einzelkurs Ohne Motor ins Ziel"
   },
   "titel": "Kurven-Plan: Ziel sehen, Kurve finden",
-  "text": "Aarav träumt vom Sieg, Bremsen übt er nie. Augen zu: Das Kind stellt sich den eigenen Zieleinlauf vor. „Hilft Träumen allein?“ Forschende sagen: Nur träumen macht eher träge; Ziel sehen und dann die Kurve finden hilft mehr. Aus Aaravs Sätzen findet das Kind seine Kurve – das Hindernis in ihm – und baut einen Plan: „Wenn …, dann …“. Dann der Kurven-Reflex im Stehen: Die Fachkraft ruft gemischt Alltagssätze und das „Wenn“; nur beim „Wenn“ geht das Kind in Kurvenlage und ruft sein „Dann“. Es wird schneller, dann Rollentausch. Wer mag, macht zum Schluss einen eigenen Plan. Merksatz: „Ziel sehen, Kurve finden, Plan machen.“ Dann Spur 3.",
+  "text": "Aarav träumt vom Sieg, Bremsen übt er nie. Augen zu oder Blick auf einen Punkt am Boden: Das Kind stellt sich den eigenen Zieleinlauf vor. „Hilft Träumen allein?“ Forschende sagen: Nur träumen macht eher träge; Ziel sehen und dann die Kurve finden hilft mehr. Aus Aaravs Sätzen findet das Kind seine Kurve – das Hindernis in ihm – und baut einen Plan: „Wenn …, dann …“. Dann der Kurven-Reflex im Stehen: Die Fachkraft ruft gemischt Alltagssätze und das „Wenn“; nur beim „Wenn“ geht das Kind in Kurvenlage und ruft sein „Dann“. Es wird schneller, dann Rollentausch. Wer mag, macht zum Schluss einen eigenen Plan. Merksatz: „Ziel sehen, Kurve finden, Plan machen.“ Dann Spur 3.",
   "sagen": [
-   "Augen zu. Du fährst über die Ziellinie. Wie fühlt sich das an?",
+   "Augen zu – oder schau auf einen Punkt am Boden. Du fährst über die Ziellinie. Wie fühlt sich das an?",
    "Hilft Träumen allein? Wo ist Aaravs Kurve – in seinen Sätzen?",
    "Bau ihm einen Plan: Wenn …, dann …",
    "Ich rufe – nur beim Wenn gehst du in die Kurve. Bereit?"
@@ -3525,7 +3525,7 @@
     },
     {
      "art": "info",
-     "titel": "Rapport de panne · trace 3",
+     "titel": "Rapport de panne · indice 3",
      "text": "Daryna fait tourner chaque roue et la secoue : les quatre tournent rond, les écrous sont serrés. Puis elle met le volant droit : les deux roues avant pointent bien tout droit."
     },
     {
@@ -3617,7 +3617,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, sagt das Kind den Plan, die Fachkraft schreibt. Eigene Pläne werden nicht vorgelesen."
     },
     "fr": {
-     "text": "Ensemble : trace 3 – l’adulte lit, l’enfant barre lui-même. Seul·e : le plan du virage, pour soi ou pour Aarav ; un objectif personnel peut rester secret. Puis la chaîne. La proposition reste libre.",
+     "text": "Ensemble : indice 3 – l’adulte lit, l’enfant barre lui-même. Seul·e : le plan du virage, pour soi ou pour Aarav ; un objectif personnel peut rester secret. Puis la chaîne. La proposition reste libre.",
      "sagen": [
       "Tu barres quoi maintenant ?",
       "Pour toi ou pour Aarav – c’est toi qui décides."
@@ -3628,15 +3628,15 @@
   },
   "fr": {
    "titel": "Plan du virage : voir l’arrivée, repérer le virage",
-   "text": "Aarav rêve de victoire, mais ne s’entraîne jamais à freiner. Yeux fermés : l’enfant imagine sa propre arrivée. « Rêver, ça suffit ? » Les chercheurs disent : rêver seulement rend plutôt mou ; voir l’arrivée puis repérer le virage aide davantage. Avec les phrases d’Aarav, l’enfant trouve son virage – l’obstacle en lui – et construit un plan : « Si…, alors… ». Puis le réflexe virage, debout : l’adulte crie, mélangés, des phrases du quotidien et le « si » ; seulement au « si », l’enfant se penche comme dans un virage et crie son « alors ». On accélère, puis on inverse les rôles. Qui veut fait pour finir son propre plan. Phrase à retenir : « Voir l’arrivée, repérer le virage, faire un plan. » Puis la trace 3.",
+   "text": "Aarav rêve de victoire, mais ne s’entraîne jamais à freiner. Yeux fermés : l’enfant imagine sa propre arrivée. « Rêver, ça suffit ? » Les chercheurs disent : rêver seulement rend plutôt mou ; voir l’arrivée puis repérer le virage aide davantage. Avec les phrases d’Aarav, l’enfant trouve son virage – l’obstacle en lui – et construit un plan : « Si…, alors… ». Puis le réflexe virage, debout : l’adulte crie, mélangés, des phrases du quotidien et le « si » ; seulement au « si », l’enfant se penche comme dans un virage et crie son « alors ». On accélère, puis on inverse les rôles. Qui veut fait pour finir son propre plan. Phrase à retenir : « Voir l’arrivée, repérer le virage, faire un plan. » Puis l’indice 3.",
    "sagen": [
-    "Ferme les yeux. Tu passes la ligne d’arrivée. Ça fait quoi ?",
+    "Ferme les yeux – ou regarde un point au sol. Tu passes la ligne d’arrivée. Ça fait quoi ?",
     "Rêver, ça suffit ? Où est le virage d’Aarav – dans ses phrases ?",
     "Construis-lui un plan : si…, alors…",
     "Je crie – seulement au « si », tu prends le virage. Prêt·e ?"
    ],
    "wennEsKippt": "Si l’enfant ne veut pas se lever, il ou elle pose la main à plat sur la table au « si » et se penche. S’il ou elle ne trouve pas de virage, les cartes virage sont prêtes ; un plan pour Aarav suffit.",
-   "kurz": "Le rêve d’Aarav · réflexe virage · si… alors · trace 3"
+   "kurz": "Le rêve d’Aarav · réflexe virage · si… alors · indice 3"
   },
   "zugang": {
    "lesen": 1,
@@ -3651,7 +3651,7 @@
      "Platz zum Stehen, ein Stuhl zum Festhalten.",
      "Rufe für den Reflex bereitlegen (Karte „Nur für dich“)."
     ],
-    "aufbau": "0′ Augen zu – „Du fährst über die Ziellinie …“\n1′ „Hilft Träumen allein?“ – Ziel sehen, dann Kurve\n2′ Aaravs Sätze – „Wo ist seine Kurve?“\n5′ Plan bauen – „Wenn …, dann …“\n7′ Kurven-Reflex im Stehen, dann Tausch – „Nur beim Wenn!“\n10′ eigener Plan (freiwillig)\n11′ Spur 3\n12′ Blatt\nZeit: Kern 12′ · Blatt 5′\nMuss: Kurve finden, ein Plan, Reflex. Kann: eigener Plan. Wird es knapp: Reflex kürzer.",
+    "aufbau": "0′ Augen zu oder Blick zum Boden – „Du fährst über die Ziellinie …“\n1′ „Hilft Träumen allein?“ – Ziel sehen, dann Kurve\n2′ Aaravs Sätze – „Wo ist seine Kurve?“\n5′ Plan bauen – „Wenn …, dann …“\n7′ Kurven-Reflex im Stehen, dann Tausch – „Nur beim Wenn!“\n10′ eigener Plan (freiwillig)\n11′ Spur 3\n12′ Blatt\nZeit: Kern 12′ · Blatt 5′\nMuss: Kurve finden, ein Plan, Reflex. Wird es knapp: Reflex kürzer.",
     "karten": [
      {
       "titel": "Aaravs Sätze",
@@ -3714,7 +3714,7 @@
      "De la place pour être debout, une chaise pour se tenir.",
      "Préparer les phrases du réflexe (carte « Pour l’adulte »)."
     ],
-    "aufbau": "0′ yeux fermés – « Tu passes la ligne d’arrivée… »\n1′ « Rêver, ça suffit ? » – voir l’arrivée, puis le virage\n2′ phrases d’Aarav – « Où est son virage ? »\n5′ construire le plan – « Si…, alors… »\n7′ réflexe virage debout, puis on inverse – « Seulement au si ! »\n10′ plan personnel (libre)\n11′ trace 3\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : le virage, un plan, le réflexe.",
+    "aufbau": "0′ yeux fermés ou regard au sol – « Tu passes la ligne d’arrivée… »\n1′ « Rêver, ça suffit ? » – voir l’arrivée, puis le virage\n2′ phrases d’Aarav – « Où est son virage ? »\n5′ construire le plan – « Si…, alors… »\n7′ réflexe virage debout, puis on inverse – « Seulement au si ! »\n10′ plan personnel (libre)\n11′ indice 3\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : le virage, un plan, le réflexe.",
     "karten": [
      {
       "titel": "Les phrases d’Aarav",
@@ -3746,7 +3746,7 @@
        "Plan modèle : « Si Jemp crie “Entraînement freinage !” et que je pense “ennuyeux”, alors je mets mon casque et je dis : les pros freinent. »",
        "Le virage est un obstacle EN moi (émotion, pensée, habitude) – pas « la maîtresse » ni « la météo ».",
        "À crier : Daryna va chercher la peinture · Il pleut · Emir écrit · Le bus arrive · Jemp crie : Entraînement freinage ! (trois fois sur dix)",
-       "La trace 3 écarte deux suspects. Ne rien dire."
+       "L’indice 3 écarte deux suspects. Ne rien dire."
       ]
      }
     ],
@@ -3868,7 +3868,7 @@
   },
   "fr": {
    "titel": "Plan du virage : les statues du virage",
-   "text": "Aarav rêve de victoire, mais ne s’entraîne jamais à freiner. L’adulte lit ses phrases ; l’enfant trouve son virage – l’obstacle en lui. Puis le plan devient deux statues : l’adulte fait la statue « si » (Jemp crie, Aarav lève les yeux au ciel), l’enfant répond avec sa statue « alors » (casque sur la tête, poing en avant) et dit la phrase. Trois tours avec de nouvelles cartes virage, puis on inverse : l’enfant fait le « si », l’adulte trouve le « alors ». Qui veut construit pour finir une statue pour un plan à soi. Phrase à retenir : « Voir l’arrivée, repérer le virage, faire un plan. » Pour finir, la trace 3.",
+   "text": "Aarav rêve de victoire, mais ne s’entraîne jamais à freiner. L’adulte lit ses phrases ; l’enfant trouve son virage – l’obstacle en lui. Puis le plan devient deux statues : l’adulte fait la statue « si » (Jemp crie, Aarav lève les yeux au ciel), l’enfant répond avec sa statue « alors » (casque sur la tête, poing en avant) et dit la phrase. Trois tours avec de nouvelles cartes virage, puis on inverse : l’enfant fait le « si », l’adulte trouve le « alors ». Qui veut construit pour finir une statue pour un plan à soi. Phrase à retenir : « Voir l’arrivée, repérer le virage, faire un plan. » Pour finir, l’indice 3.",
    "sagen": [
     "Voici ma statue « si ». Quelle est ta statue « alors » ?",
     "Dis la phrase : si…, alors…",
@@ -3919,7 +3919,7 @@
      "De la place pour être debout",
      "Les phrases d’Aarav et les cartes virage de la séance"
     ],
-    "aufbau": "0′ phrases d’Aarav – « Où est son virage ? »\n3′ statue « si » / statue « alors » – « Dis la phrase. »\n7′ trois tours avec les cartes virage\n9′ rôles inversés\n11′ trace 3, fiche de la séance\nIndispensable : un virage, deux paires de statues. Si ça presse : sans inverser.",
+    "aufbau": "0′ phrases d’Aarav – « Où est son virage ? »\n3′ statue « si » / statue « alors » – « Dis la phrase. »\n7′ trois tours avec les cartes virage\n9′ rôles inversés\n11′ indice 3, fiche de la séance\nIndispensable : un virage, deux paires de statues. Si ça presse : sans inverser.",
     "karten": [
      {
       "titel": "Pour l’adulte : statues",
@@ -4049,7 +4049,7 @@
   },
   "fr": {
    "titel": "Plan du virage : le puzzle si… alors",
-   "text": "Aarav rêve de victoire, mais ne s’entraîne jamais à freiner. L’enfant lit ses phrases et trouve son virage. Puis six moitiés « si » et six moitiés « alors » sont mélangées sur la table ; l’enfant assemble des paires qui vont à Aarav, Daryna ou Emir, et lit chaque paire comme une phrase : « Si…, alors… ». On inverse : l’adulte pose une paire qui ne va pas, l’enfant trouve l’erreur. Pour finir, il ou elle dessine ou écrit sur deux moitiés vides un plan pour Aarav – ou pour soi. Phrase à retenir : « Voir l’arrivée, repérer le virage, faire un plan. » Puis la trace 3.",
+   "text": "Aarav rêve de victoire, mais ne s’entraîne jamais à freiner. L’enfant lit ses phrases et trouve son virage. Puis six moitiés « si » et six moitiés « alors » sont mélangées sur la table ; l’enfant assemble des paires qui vont à Aarav, Daryna ou Emir, et lit chaque paire comme une phrase : « Si…, alors… ». On inverse : l’adulte pose une paire qui ne va pas, l’enfant trouve l’erreur. Pour finir, il ou elle dessine ou écrit sur deux moitiés vides un plan pour Aarav – ou pour soi. Phrase à retenir : « Voir l’arrivée, repérer le virage, faire un plan. » Puis l’indice 3.",
    "sagen": [
     "Quelles moitiés vont ensemble ? Lis la phrase.",
     "Je pose une paire – ça va ?",
@@ -4121,7 +4121,7 @@
      "Imprimer la planche et la couper en moitiés (ou l’enfant déchire)",
      "Deux moitiés vides"
     ],
-    "aufbau": "0′ phrases d’Aarav – « Où est son virage ? »\n3′ assembler les paires, lire\n7′ trouver la paire fausse\n9′ son plan sur les moitiés vides\n11′ trace 3, fiche de la séance\nIndispensable : trois paires, un plan. Si ça presse : sans paire fausse.",
+    "aufbau": "0′ phrases d’Aarav – « Où est son virage ? »\n3′ assembler les paires, lire\n7′ trouver la paire fausse\n9′ son plan sur les moitiés vides\n11′ indice 3, fiche de la séance\nIndispensable : trois paires, un plan. Si ça presse : sans paire fausse.",
     "karten": [
      {
       "titel": "Moitiés « si »",
@@ -4404,7 +4404,7 @@
     },
     {
      "art": "info",
-     "titel": "Rapport de panne · trace 4",
+     "titel": "Rapport de panne · indice 4",
      "text": "En peignant les jantes, Daryna appuie sur les pneus : devant à gauche, il s’enfonce ; les trois autres sont durs."
     },
     {
@@ -4495,7 +4495,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, sagt das Kind den ersten Meter, die Fachkraft schreibt. Eigene Aufgaben werden nicht vorgelesen."
     },
     "fr": {
-     "text": "Ensemble : trace 4 – l’adulte lit, l’enfant change son soupçon. Seul·e : le premier mètre pour soi ou pour Daryna et une phrase de départ. Puis la chaîne. La proposition reste libre.",
+     "text": "Ensemble : indice 4 – l’adulte lit, l’enfant change son soupçon. Seul·e : le premier mètre pour soi ou pour Daryna et une phrase de départ. Puis la chaîne. La proposition reste libre.",
      "sagen": [
       "Tu penses quoi maintenant de l’accident ?",
       "Il est petit comment, ton premier mètre – tu le fais en dix secondes ?"
@@ -4506,7 +4506,7 @@
   },
   "fr": {
    "titel": "Premier mètre : cinq mardis, pas un coup de pinceau",
-   "text": "Daryna a quinze projets, la caisse est grise. L’enfant aligne les cinq cartes des mardis et enquête : que fait Daryna au lieu de commencer – et que ressent-elle sans doute juste avant ? Ce qu’il ou elle découvre, il ou elle le dit lui-même. Puis le départ du premier mètre : derrière une ligne de ruban adhésif, l’enfant écoute une carte tâche (« devoir de maths »), nomme le plus petit premier geste (« ouvrir le cahier ») et se met en position de départ ; l’adulte compte « 3 – 2 – 1 – partez ! », l’enfant mime le geste en dix secondes et saute par-dessus la ligne. Si ça prend plus longtemps, le geste devient plus petit. Puis on inverse, enfin le premier mètre de Daryna et, s’il ou elle veut, le sien. Phrase à retenir : « On peut démarrer sans envie – un mètre suffit. » Trace 4.",
+   "text": "Daryna a quinze projets, la caisse est grise. L’enfant aligne les cinq cartes des mardis et enquête : que fait Daryna au lieu de commencer – et que ressent-elle sans doute juste avant ? Ce qu’il ou elle découvre, il ou elle le dit lui-même. Puis le départ du premier mètre : derrière une ligne de ruban adhésif, l’enfant écoute une carte tâche (« devoir de maths »), nomme le plus petit premier geste (« ouvrir le cahier ») et se met en position de départ ; l’adulte compte « 3 – 2 – 1 – partez ! », l’enfant mime le geste en dix secondes et saute par-dessus la ligne. Si ça prend plus longtemps, le geste devient plus petit. Puis on inverse, enfin le premier mètre de Daryna et, s’il ou elle veut, le sien. Phrase à retenir : « On peut démarrer sans envie – un mètre suffit. » Indice 4.",
    "sagen": [
     "Cinq mardis, pas un trait. Que fait Daryna à la place ?",
     "Que ressent-elle sans doute juste avant de commencer ?",
@@ -4514,7 +4514,7 @@
     "Trop long ? Alors rends-le plus petit."
    ],
    "wennEsKippt": "Si l’enfant ne veut pas sauter, il ou elle fait passer un pion ou son doigt par-dessus une ligne sur la table. S’il ou elle ne trouve pas le ressenti, « quelque chose est désagréable » suffit ; trois cartes tâches suffisent.",
-   "kurz": "Les mardis de Daryna · départ du premier mètre · trace 4"
+   "kurz": "Les mardis de Daryna · départ du premier mètre · indice 4"
   },
   "zugang": {
    "lesen": 2,
@@ -4593,7 +4593,7 @@
      "Une ligne de ruban adhésif ou une corde au sol, un mètre de place devant.",
      "Le chrono du téléphone ou compter à voix haute."
     ],
-    "aufbau": "0′ aligner les cartes des mardis – « Que fait Daryna à la place ? »\n3′ « Que ressent-elle juste avant ? » – l’enfant le nomme\n5′ départ du premier mètre : carte, plus petit geste, « 3 – 2 – 1 – partez ! »\n9′ rôles inversés – « Trop long ? Plus petit ! »\n10′ le premier mètre de Daryna et le sien\n11′ trace 4\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : trouver le schéma, trois départs.",
+    "aufbau": "0′ aligner les cartes des mardis – « Que fait Daryna à la place ? »\n3′ « Que ressent-elle juste avant ? » – l’enfant le nomme\n5′ départ du premier mètre : carte, plus petit geste, « 3 – 2 – 1 – partez ! »\n9′ rôles inversés – « Trop long ? Plus petit ! »\n10′ le premier mètre de Daryna et le sien\n11′ indice 4\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : trouver le schéma, trois départs.",
     "karten": [
      {
       "titel": "Les mardis de Daryna",
@@ -4626,7 +4626,7 @@
        "Remettre à plus tard, c’est souvent esquiver un ressenti désagréable, pas de la paresse (Sirois & Pychyl, 2013). Ne pas souffler – l’enfant le nomme lui-même.",
        "Premier mètre de Daryna, par ex. : ouvrir le pot, un trait d’essai derrière, là où personne ne regarde. Ensuite, elle peut arrêter.",
        "« Le droit d’arrêter » est sérieux, pas un piège. Continuer reste un choix.",
-       "La trace 4 change le soupçon. Ne pas commenter – l’enfant tire la conclusion lui-même."
+       "L’indice 4 change le soupçon. Ne pas commenter – l’enfant tire la conclusion lui-même."
       ]
      }
     ],
@@ -4885,7 +4885,7 @@
     },
     {
      "art": "info",
-     "titel": "Rapport de panne · trace 4",
+     "titel": "Rapport de panne · indice 4",
      "text": "En peignant les jantes, Daryna appuie sur les pneus : devant à gauche, il s’enfonce ; les trois autres sont durs."
     },
     {
@@ -4979,7 +4979,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, sagt das Kind den ersten Meter, die Fachkraft schreibt. Eigene Aufgaben werden nicht vorgelesen."
     },
     "fr": {
-     "text": "Ensemble : trace 4 – l’adulte lit, l’enfant change son soupçon. Seul·e : le premier mètre pour soi ou pour Daryna et une phrase de départ. Puis la chaîne. La proposition reste libre.",
+     "text": "Ensemble : indice 4 – l’adulte lit, l’enfant change son soupçon. Seul·e : le premier mètre pour soi ou pour Daryna et une phrase de départ. Puis la chaîne. La proposition reste libre.",
      "sagen": [
       "Tu penses quoi maintenant de l’accident ?",
       "Il est petit comment, ton premier mètre – tu le fais en dix secondes ?"
@@ -4990,7 +4990,7 @@
   },
   "fr": {
    "titel": "Premier mètre : cinq mardis, pas un coup de pinceau",
-   "text": "Daryna a quinze projets, la caisse est grise. L’enfant aligne les cinq cartes des mardis et enquête : que fait Daryna au lieu de commencer – et que ressent-elle sans doute juste avant ? Ce qu’il ou elle découvre, il ou elle le dit lui-même. Puis le départ du premier mètre : derrière une ligne de ruban adhésif, l’enfant écoute une carte tâche (« devoir de maths »), nomme le plus petit premier geste (« ouvrir le cahier ») et se met en position de départ ; l’adulte compte « 3 – 2 – 1 – partez ! », l’enfant mime le geste en dix secondes et saute par-dessus la ligne. Si ça prend plus longtemps, le geste devient plus petit. Puis on inverse, enfin le premier mètre de Daryna et, s’il ou elle veut, le sien. Phrase à retenir : « On peut démarrer sans envie – un mètre suffit. » Trace 4.",
+   "text": "Daryna a quinze projets, la caisse est grise. L’enfant aligne les cinq cartes des mardis et enquête : que fait Daryna au lieu de commencer – et que ressent-elle sans doute juste avant ? Ce qu’il ou elle découvre, il ou elle le dit lui-même. Puis le départ du premier mètre : derrière une ligne de ruban adhésif, l’enfant écoute une carte tâche (« devoir de maths »), nomme le plus petit premier geste (« ouvrir le cahier ») et se met en position de départ ; l’adulte compte « 3 – 2 – 1 – partez ! », l’enfant mime le geste en dix secondes et saute par-dessus la ligne. Si ça prend plus longtemps, le geste devient plus petit. Puis on inverse, enfin le premier mètre de Daryna et, s’il ou elle veut, le sien. Phrase à retenir : « On peut démarrer sans envie – un mètre suffit. » Indice 4.",
    "sagen": [
     "Cinq mardis, pas un trait. Que fait Daryna à la place ?",
     "Que ressent-elle sans doute juste avant de commencer ?",
@@ -4998,7 +4998,7 @@
     "Trop long ? Alors rends-le plus petit."
    ],
    "wennEsKippt": "Si l’enfant ne veut pas sauter, il ou elle fait passer un pion ou son doigt par-dessus une ligne sur la table. S’il ou elle ne trouve pas le ressenti, « quelque chose est désagréable » suffit ; trois cartes tâches suffisent.",
-   "kurz": "Les mardis de Daryna · départ du premier mètre · trace 4"
+   "kurz": "Les mardis de Daryna · départ du premier mètre · indice 4"
   },
   "zugang": {
    "lesen": 1,
@@ -5077,7 +5077,7 @@
      "Une ligne de ruban adhésif ou une corde au sol, un mètre de place devant.",
      "Le chrono du téléphone ou compter à voix haute."
     ],
-    "aufbau": "0′ aligner les cartes des mardis – « Que fait Daryna à la place ? »\n3′ « Que ressent-elle juste avant ? » – l’enfant le nomme\n5′ départ du premier mètre : carte, plus petit geste, « 3 – 2 – 1 – partez ! »\n9′ rôles inversés – « Trop long ? Plus petit ! »\n10′ le premier mètre de Daryna et le sien\n11′ trace 4\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : trouver le schéma, trois départs.",
+    "aufbau": "0′ aligner les cartes des mardis – « Que fait Daryna à la place ? »\n3′ « Que ressent-elle juste avant ? » – l’enfant le nomme\n5′ départ du premier mètre : carte, plus petit geste, « 3 – 2 – 1 – partez ! »\n9′ rôles inversés – « Trop long ? Plus petit ! »\n10′ le premier mètre de Daryna et le sien\n11′ indice 4\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : trouver le schéma, trois départs.",
     "karten": [
      {
       "titel": "Les mardis de Daryna",
@@ -5110,7 +5110,7 @@
        "Remettre à plus tard, c’est souvent esquiver un ressenti désagréable, pas de la paresse (Sirois & Pychyl, 2013). Ne pas souffler – l’enfant le nomme lui-même.",
        "Premier mètre de Daryna, par ex. : ouvrir le pot, un trait d’essai derrière, là où personne ne regarde. Ensuite, elle peut arrêter.",
        "« Le droit d’arrêter » est sérieux, pas un piège. Continuer reste un choix.",
-       "La trace 4 change le soupçon. Ne pas commenter – l’enfant tire la conclusion lui-même."
+       "L’indice 4 change le soupçon. Ne pas commenter – l’enfant tire la conclusion lui-même."
       ]
      }
     ],
@@ -5234,7 +5234,7 @@
   },
   "fr": {
    "titel": "Premier mètre : la caisse en pâte à modeler",
-   "text": "Daryna a quinze projets, mais la caisse est grise. L’adulte lit les cinq cartes des mardis ; l’enfant découvre ce que fait Daryna au lieu de commencer et ce qu’elle ressent sans doute juste avant. Puis l’enfant construit une caisse en pâte à modeler – mais seulement par mini-départs : l’adulte compte dix secondes ou retourne le sablier, l’enfant fait un seul premier geste (rouler une boule, presser une roue) et peut ensuite arrêter ou continuer. On inverse : l’adulte construit, l’enfant lui dicte le prochain premier mètre. Pour finir, il ou elle cherche le premier mètre de Daryna – ou le sien. Phrase à retenir : « On peut démarrer sans envie – un mètre suffit. » Puis la trace 4.",
+   "text": "Daryna a quinze projets, mais la caisse est grise. L’adulte lit les cinq cartes des mardis ; l’enfant découvre ce que fait Daryna au lieu de commencer et ce qu’elle ressent sans doute juste avant. Puis l’enfant construit une caisse en pâte à modeler – mais seulement par mini-départs : l’adulte compte dix secondes ou retourne le sablier, l’enfant fait un seul premier geste (rouler une boule, presser une roue) et peut ensuite arrêter ou continuer. On inverse : l’adulte construit, l’enfant lui dicte le prochain premier mètre. Pour finir, il ou elle cherche le premier mètre de Daryna – ou le sien. Phrase à retenir : « On peut démarrer sans envie – un mètre suffit. » Puis l’indice 4.",
    "sagen": [
     "Dix secondes, un geste. Go !",
     "Arrêter ou continuer – c’est toi qui décides.",
@@ -5285,7 +5285,7 @@
      "Pâte à modeler (ou briques), sablier ou téléphone",
      "Les cartes des mardis de Daryna"
     ],
-    "aufbau": "0′ lire les mardis – « Que fait Daryna à la place ? »\n3′ mini-départs en pâte à modeler – « Dix secondes, un geste. »\n8′ rôles inversés\n10′ premier mètre pour Daryna ou pour soi, trace 4\n12′ fiche de la séance\nIndispensable : le schéma, trois mini-départs. Si ça presse : sans inverser.",
+    "aufbau": "0′ lire les mardis – « Que fait Daryna à la place ? »\n3′ mini-départs en pâte à modeler – « Dix secondes, un geste. »\n8′ rôles inversés\n10′ premier mètre pour Daryna ou pour soi, indice 4\n12′ fiche de la séance\nIndispensable : le schéma, trois mini-départs. Si ça presse : sans inverser.",
     "karten": [
      {
       "titel": "Pour l’adulte : mini-départs",
@@ -5413,7 +5413,7 @@
   },
   "fr": {
    "titel": "Premier mètre : raconter la suite du mardi de Daryna",
-   "text": "Daryna a quinze projets, mais la caisse est grise. L’adulte raconte un mardi au garage : Daryna arrive, voit le pot de peinture, et sa tête dit : « Et si le premier trait est de travers ? » À trois moments, l’adulte s’arrête ; l’enfant décide de la suite – esquiver ou faire le premier mètre –, et l’adulte raconte ce qui en découle. Ensuite, l’enfant raconte et l’adulte décide. Ensemble, ils trouvent ce que Daryna ressent juste avant de commencer, et le plus petit premier geste pour elle. Phrase à retenir : « On peut démarrer sans envie – un mètre suffit. » Pour finir, la trace 4.",
+   "text": "Daryna a quinze projets, mais la caisse est grise. L’adulte raconte un mardi au garage : Daryna arrive, voit le pot de peinture, et sa tête dit : « Et si le premier trait est de travers ? » À trois moments, l’adulte s’arrête ; l’enfant décide de la suite – esquiver ou faire le premier mètre –, et l’adulte raconte ce qui en découle. Ensuite, l’enfant raconte et l’adulte décide. Ensemble, ils trouvent ce que Daryna ressent juste avant de commencer, et le plus petit premier geste pour elle. Phrase à retenir : « On peut démarrer sans envie – un mètre suffit. » Pour finir, l’indice 4.",
    "sagen": [
     "Stop – que fait Daryna maintenant : esquiver ou le premier mètre ?",
     "Maintenant c’est toi qui racontes, je décide.",
@@ -5471,7 +5471,7 @@
      "Deux cartes : « esquiver » / « premier mètre »",
      "Les cartes des mardis comme aide-mémoire"
     ],
-    "aufbau": "0′ commencer l’histoire – « Daryna voit le pot de peinture… »\n2′ trois arrêts – « Esquiver ou premier mètre ? »\n6′ échanger les rôles\n9′ trouver le ressenti et le premier geste, trace 4\n12′ fiche de la séance\nIndispensable : trois arrêts, un premier mètre. Si ça presse : sans échange.",
+    "aufbau": "0′ commencer l’histoire – « Daryna voit le pot de peinture… »\n2′ trois arrêts – « Esquiver ou premier mètre ? »\n6′ échanger les rôles\n9′ trouver le ressenti et le premier geste, indice 4\n12′ fiche de la séance\nIndispensable : trois arrêts, un premier mètre. Si ça presse : sans échange.",
     "karten": [
      {
       "titel": "Cartes de choix",
@@ -5524,7 +5524,7 @@
    "Was sagst du Emir? Nur gesprochen – nichts wird aufgenommen.",
    "Und bei deinem Ziel: Wo könnte eine Panne kommen – wer schiebt mit?"
   ],
-  "wennEsKippt": "Will das Kind nichts Eigenes planen, plant es für Emir oder eine von drei ausgedachten Schul-Situationen. Erzählt es von eigenen Misserfolgen: danken, nicht ausfragen. Statt des Stuhls geht auch ein Stapel Bücher auf dem Tisch. Klingt es nach mehr als Frust („Am besten wär ich weg“): Krisenkarte aus Sitzung 1 – bleiben, ruhig fragen, ob es manchmal nicht mehr leben will; bei Ja heute noch Leitung bzw. I-EBS, akute Gefahr 112.",
+  "wennEsKippt": "Will das Kind nichts Eigenes planen, plant es für Emir oder eine von drei ausgedachten Schul-Situationen. Erzählt es von eigenen Misserfolgen: danken, nicht ausfragen. Statt des Stuhls geht auch ein Stapel Bücher auf dem Tisch. Klingt es nach mehr als Frust: Karte „Nur für dich – wenn es echt wird“.",
   "rolle": [
    "kern"
   ],
@@ -5732,7 +5732,7 @@
     },
     {
      "art": "info",
-     "titel": "Rapport de panne · trace 5",
+     "titel": "Rapport de panne · indice 5",
      "text": "Samedi, Jemp regonfle le pneu avant gauche. Mardi, il est de nouveau mou. De l’eau savonneuse sur la valve : ça fait des bulles."
     },
     {
@@ -5824,16 +5824,16 @@
    }
   },
   "fr": {
-   "titel": "La poussée : la dernière trace",
-   "text": "La course a lieu samedi prochain, et Emir n’est pas là. L’adulte lit la trace 5 ; l’enfant pose toutes les traces côte à côte et résout l’affaire : qu’est-ce qui a causé l’accident – et était-ce Emir ? Puis le test de la poussée : l’enfant pousse seul·e sur le sol une chaise avec un sac lourd, puis à deux. « Tu sens la différence ? » Avec le check panne, il ou elle construit la poussée pour Emir et lui dit un message vocal – seulement à voix haute, rien n’est enregistré. Si l’enfant veut, il ou elle reprend la même phrase pour son propre objectif : qui pourrait pousser avec ? Phrase à retenir : « Une panne, ce n’est pas la fin : trouver la cause, demander une poussée. »",
+   "titel": "La poussée : le dernier indice",
+   "text": "La course a lieu samedi prochain, et Emir n’est pas là. L’adulte lit l’indice 5 ; l’enfant pose tous les indices côte à côte et résout l’affaire : qu’est-ce qui a causé l’accident – et était-ce Emir ? Puis le test de la poussée : l’enfant pousse seul·e sur le sol une chaise avec un sac lourd, puis à deux. « Tu sens la différence ? » Avec le check panne, il ou elle construit la poussée pour Emir et lui dit un message vocal – seulement à voix haute, rien n’est enregistré. Si l’enfant veut, il ou elle reprend la même phrase pour son propre objectif : qui pourrait pousser avec ? Phrase à retenir : « Une panne, ce n’est pas la fin : trouver la cause, demander une poussée. »",
    "sagen": [
-    "Pose toutes les traces côte à côte. C’était quoi – et c’était Emir ?",
+    "Pose tous les indices côte à côte. C’était quoi – et c’était Emir ?",
     "Pousse la chaise seul·e… et maintenant à deux. Tu sens la différence ?",
     "Qu’est-ce que tu dis à Emir ? Seulement à voix haute – rien n’est enregistré.",
     "Et pour ton objectif : où une panne pourrait arriver – qui pousse avec toi ?"
    ],
-   "wennEsKippt": "Si l’enfant ne veut rien planifier pour soi, il ou elle planifie pour Emir ou pour une de trois situations scolaires inventées. S’il ou elle parle de ses échecs : remercier, ne pas questionner. À la place de la chaise, une pile de livres sur la table convient aussi. Si cela sonne comme plus que de la frustration (« Ce serait mieux si je n’étais pas là ») : carte de crise de la séance 1 – rester, demander calmement s’il lui arrive de penser qu’il ne veut plus vivre ; si oui, prévenir aujourd’hui la direction ou l’I-EBS ; danger aigu : 112.",
-   "kurz": "Dernière trace · résoudre l’affaire · une poussée pour Emir et moi"
+   "wennEsKippt": "Si l’enfant ne veut rien planifier pour soi, il ou elle planifie pour Emir ou pour une de trois situations scolaires inventées. S’il ou elle parle de ses échecs : remercier, ne pas questionner. À la place de la chaise, une pile de livres sur la table convient aussi. Si cela sonne comme plus que de la frustration : carte « Pour l’adulte – si ça devient sérieux ».",
+   "kurz": "Dernier indice · résoudre l’affaire · une poussée pour Emir et moi"
   },
   "zugang": {
    "lesen": 2,
@@ -5878,6 +5878,15 @@
        "Rollenspiel: Die Fachkraft spielt die helfende Person (Lehrerin, Trainer, Freundin). „Rolle aus“ beendet es jederzeit.",
        "Anschub-Personen aus Schule, Verein oder Maison relais. Wer niemanden nennt: die Fachkraft selbst oder die Lehrkraft."
       ]
+     },
+     {
+      "titel": "Nur für dich – wenn es echt wird",
+      "karten": [
+       "Im Moment: Mehr als Frust über eine Aufgabe („Wär ich doch nicht mehr da“)? Bleib da, frag ruhig: „Denkst du manchmal daran, nicht mehr leben zu wollen?“",
+       "Bei Ja: danken, nicht ausfragen, nicht allein lassen. Heute noch Leitung bzw. I-EBS (Lycée: SePAS) einschalten. Akute Gefahr: 112.",
+       "Danach: Wörtlich notieren, was das Kind gesagt hat. Mit Einverständnis eine Vertrauensperson einbeziehen; nichts versprechen, was du nicht halten kannst.",
+       "Danach: KJT 116 111 telefonisch Mo–Sa, Chat dienstags 18–21 Uhr; nachts und sonntags 112/113 oder SOS Détresse 45 45 45."
+      ]
      }
     ],
     "leichter": "Die Fachkraft legt die Spuren in eine Reihe und fragt nur: „Wer war es nicht?“ Für die eigene Situation wählt das Kind einen fertigen Anschub-Satz.",
@@ -5901,13 +5910,13 @@
     ]
    },
    "fr": {
-    "haken": "La dernière trace : de l’eau savonneuse, une valve, des bulles – et l’enfant découvre lui-même pourquoi la caisse a fini dans la paille.",
+    "haken": "Le dernier indice : de l’eau savonneuse, une valve, des bulles – et l’enfant découvre lui-même pourquoi la caisse a fini dans la paille.",
     "vorbereitung": [
      "Imprimer la fiche et la planche (check panne, phrases de poussée).",
-     "Sortir du dossier les fiches avec les traces 1 à 4.",
+     "Sortir du dossier les fiches avec les indices 1 à 4.",
      "Préparer une chaise et un sac lourd (ou des livres)."
     ],
-    "aufbau": "0′ trace 5, toutes les traces côte à côte\n2′ résoudre – « C’était quoi – et c’était Emir ? »\n4′ poussée : chaise seul·e, puis à deux\n6′ message vocal à Emir – « Quelle phrase de poussée ? »\n9′ au choix : même phrase pour son objectif\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : l’affaire, la poussée, une phrase à Emir. Possible : son objectif. Si ça presse : choisir la phrase.",
+    "aufbau": "0′ indice 5, tous les indices côte à côte\n2′ résoudre – « C’était quoi – et c’était Emir ? »\n4′ poussée : chaise seul·e, puis à deux\n6′ message vocal à Emir – « Quelle phrase de poussée ? »\n9′ au choix : même phrase pour son objectif\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : l’affaire, la poussée, une phrase à Emir. Possible : son objectif. Si ça presse : choisir la phrase.",
     "karten": [
      {
       "titel": "Check panne",
@@ -5932,16 +5941,25 @@
       "titel": "Pour l’adulte : solution et conduite de l’échange",
       "karten": [
        "Solution (ne pas la dire) : la valve avant gauche fuit. Le pneu perd de l’air, la caisse tire à gauche.",
-       "Pas Emir, pas la direction (trace 3 : roues serrées et droites). Pas Aarav, pas la piste (trace 2 : tire à vide au garage). À changer : valve, regonfler.",
+       "Pas Emir, pas la direction (indice 3 : roues serrées et droites). Pas Aarav, pas la piste (indice 2 : tire à vide au garage). À changer : valve, regonfler.",
        "Même si c’était l’erreur d’Emir : une erreur est une panne qu’on peut réparer. « Je suis nul » sonne comme une cause qui ne change jamais.",
        "Jeu de rôle : l’adulte joue la personne qui aide (maîtresse, entraîneur, amie). « Fin du rôle » l’arrête à tout moment.",
        "Personnes de l’école, du club ou de la maison relais. Si personne : l’adulte lui-même ou l’enseignant·e."
       ]
+     },
+     {
+      "titel": "Pour l’adulte – si ça devient sérieux",
+      "karten": [
+       "Sur le moment : plus qu’un ras-le-bol (« J’aimerais mieux ne plus être là ») ? Reste et demande : « Il t’arrive de penser à ne plus vouloir vivre ? »",
+       "Si oui : remercier, ne pas questionner, ne pas laisser seul·e. Prévenir aujourd’hui la direction ou l’I-EBS (lycée : SePAS). Danger aigu : 112.",
+       "Après : noter mot pour mot ce que l’enfant a dit. Avec son accord, associer une personne de confiance ; ne rien promettre d’impossible.",
+       "Après : KJT 116 111 par téléphone du lundi au samedi, chat le mardi 18–21 h ; la nuit et le dimanche, 112/113 ou SOS Détresse 45 45 45."
+      ]
      }
     ],
-    "leichter": "L’adulte aligne les traces et demande seulement : « Qui ce n’était pas ? » Pour sa situation, l’enfant choisit une phrase de poussée toute faite.",
+    "leichter": "L’adulte aligne les indices et demande seulement : « Qui ce n’était pas ? » Pour sa situation, l’enfant choisit une phrase de poussée toute faite.",
     "schwerer": "Pour sa situation, prévoir deux pannes et construire pour chacune un plan si… alors avec une personne qui pousse.",
-    "gruppe": "Par deux, on résout l’affaire avec toutes les traces et on présente sa solution avec une preuve. Tout le monde fait le test de la poussée : seul·e, puis à deux. Les enfants planifient leur situation en silence sur la fiche ; des volontaires essaient leur phrase avec l’adulte.",
+    "gruppe": "Par deux, on résout l’affaire avec tous les indices et on présente sa solution avec une preuve. Tout le monde fait le test de la poussée : seul·e, puis à deux. Les enfants planifient leur situation en silence sur la fiche ; des volontaires essaient leur phrase avec l’adulte.",
     "beobachten": [
      "distingue une cause qu’on peut changer de « je n’y arrive pas, c’est tout »",
      "nomme une personne qui pousse et une phrase concrète pour une vraie situation",
@@ -5975,7 +5993,7 @@
    "Was sagst du Emir? Nur gesprochen – nichts wird aufgenommen.",
    "Und bei deinem Ziel: Wo könnte eine Panne kommen – wer schiebt mit?"
   ],
-  "wennEsKippt": "Will das Kind nichts Eigenes planen, plant es für Emir oder eine von drei ausgedachten Schul-Situationen. Erzählt es von eigenen Misserfolgen: danken, nicht ausfragen. Statt des Stuhls geht auch ein Stapel Bücher auf dem Tisch. Klingt es nach mehr als Frust („Am besten wär ich weg“): Krisenkarte aus Sitzung 1 – bleiben, ruhig fragen, ob es manchmal nicht mehr leben will; bei Ja heute noch Leitung bzw. I-EBS, akute Gefahr 112.",
+  "wennEsKippt": "Will das Kind nichts Eigenes planen, plant es für Emir oder eine von drei ausgedachten Schul-Situationen. Erzählt es von eigenen Misserfolgen: danken, nicht ausfragen. Statt des Stuhls geht auch ein Stapel Bücher auf dem Tisch. Klingt es nach mehr als Frust: Karte „Nur für dich – wenn es echt wird“.",
   "rolle": [
    "kern"
   ],
@@ -6194,7 +6212,7 @@
     },
     {
      "art": "info",
-     "titel": "Rapport de panne · trace 5",
+     "titel": "Rapport de panne · indice 5",
      "text": "Samedi, Jemp regonfle le pneu avant gauche. Mardi, il est de nouveau mou. De l’eau savonneuse sur la valve : ça fait des bulles."
     },
     {
@@ -6297,16 +6315,16 @@
    }
   },
   "fr": {
-   "titel": "La poussée : la dernière trace",
-   "text": "La course a lieu samedi prochain, et Emir n’est pas là. L’adulte lit la trace 5 ; l’enfant pose toutes les traces côte à côte et résout l’affaire : qu’est-ce qui a causé l’accident – et était-ce Emir ? Puis le test de la poussée : l’enfant pousse seul·e sur le sol une chaise avec un sac lourd, puis à deux. « Tu sens la différence ? » Avec le check panne, il ou elle construit la poussée pour Emir et lui dit un message vocal – seulement à voix haute, rien n’est enregistré. Si l’enfant veut, il ou elle reprend la même phrase pour son propre objectif : qui pourrait pousser avec ? Phrase à retenir : « Une panne, ce n’est pas la fin : trouver la cause, demander une poussée. »",
+   "titel": "La poussée : le dernier indice",
+   "text": "La course a lieu samedi prochain, et Emir n’est pas là. L’adulte lit l’indice 5 ; l’enfant pose tous les indices côte à côte et résout l’affaire : qu’est-ce qui a causé l’accident – et était-ce Emir ? Puis le test de la poussée : l’enfant pousse seul·e sur le sol une chaise avec un sac lourd, puis à deux. « Tu sens la différence ? » Avec le check panne, il ou elle construit la poussée pour Emir et lui dit un message vocal – seulement à voix haute, rien n’est enregistré. Si l’enfant veut, il ou elle reprend la même phrase pour son propre objectif : qui pourrait pousser avec ? Phrase à retenir : « Une panne, ce n’est pas la fin : trouver la cause, demander une poussée. »",
    "sagen": [
-    "Pose toutes les traces côte à côte. C’était quoi – et c’était Emir ?",
+    "Pose tous les indices côte à côte. C’était quoi – et c’était Emir ?",
     "Pousse la chaise seul·e… et maintenant à deux. Tu sens la différence ?",
     "Qu’est-ce que tu dis à Emir ? Seulement à voix haute – rien n’est enregistré.",
     "Et pour ton objectif : où une panne pourrait arriver – qui pousse avec toi ?"
    ],
-   "wennEsKippt": "Si l’enfant ne veut rien planifier pour soi, il ou elle planifie pour Emir ou pour une de trois situations scolaires inventées. S’il ou elle parle de ses échecs : remercier, ne pas questionner. À la place de la chaise, une pile de livres sur la table convient aussi. Si cela sonne comme plus que de la frustration (« Ce serait mieux si je n’étais pas là ») : carte de crise de la séance 1 – rester, demander calmement s’il lui arrive de penser qu’il ne veut plus vivre ; si oui, prévenir aujourd’hui la direction ou l’I-EBS ; danger aigu : 112.",
-   "kurz": "Dernière trace · résoudre l’affaire · une poussée pour Emir et moi"
+   "wennEsKippt": "Si l’enfant ne veut rien planifier pour soi, il ou elle planifie pour Emir ou pour une de trois situations scolaires inventées. S’il ou elle parle de ses échecs : remercier, ne pas questionner. À la place de la chaise, une pile de livres sur la table convient aussi. Si cela sonne comme plus que de la frustration : carte « Pour l’adulte – si ça devient sérieux ».",
+   "kurz": "Dernier indice · résoudre l’affaire · une poussée pour Emir et moi"
   },
   "zugang": {
    "lesen": 1,
@@ -6351,6 +6369,15 @@
        "Rollenspiel: Die Fachkraft spielt die helfende Person (Lehrerin, Trainer, Freundin). „Rolle aus“ beendet es jederzeit.",
        "Anschub-Personen aus Schule, Verein oder Maison relais. Wer niemanden nennt: die Fachkraft selbst oder die Lehrkraft."
       ]
+     },
+     {
+      "titel": "Nur für dich – wenn es echt wird",
+      "karten": [
+       "Im Moment: Mehr als Frust über eine Aufgabe („Wär ich doch nicht mehr da“)? Bleib da, frag ruhig: „Denkst du manchmal daran, nicht mehr leben zu wollen?“",
+       "Bei Ja: danken, nicht ausfragen, nicht allein lassen. Heute noch Leitung bzw. I-EBS (Lycée: SePAS) einschalten. Akute Gefahr: 112.",
+       "Danach: Wörtlich notieren, was das Kind gesagt hat. Mit Einverständnis eine Vertrauensperson einbeziehen; nichts versprechen, was du nicht halten kannst.",
+       "Danach: KJT 116 111 telefonisch Mo–Sa, Chat dienstags 18–21 Uhr; nachts und sonntags 112/113 oder SOS Détresse 45 45 45."
+      ]
      }
     ],
     "leichter": "Die Fachkraft legt die Spuren in eine Reihe und fragt nur: „Wer war es nicht?“ Für die eigene Situation wählt das Kind einen fertigen Anschub-Satz.",
@@ -6374,13 +6401,13 @@
     ]
    },
    "fr": {
-    "haken": "La dernière trace : de l’eau savonneuse, une valve, des bulles – et l’enfant découvre lui-même pourquoi la caisse a fini dans la paille.",
+    "haken": "Le dernier indice : de l’eau savonneuse, une valve, des bulles – et l’enfant découvre lui-même pourquoi la caisse a fini dans la paille.",
     "vorbereitung": [
      "Imprimer la fiche et la planche (check panne, phrases de poussée).",
-     "Sortir du dossier les fiches avec les traces 1 à 4.",
+     "Sortir du dossier les fiches avec les indices 1 à 4.",
      "Préparer une chaise et un sac lourd (ou des livres)."
     ],
-    "aufbau": "0′ trace 5, toutes les traces côte à côte\n2′ résoudre – « C’était quoi – et c’était Emir ? »\n4′ poussée : chaise seul·e, puis à deux\n6′ message vocal à Emir – « Quelle phrase de poussée ? »\n9′ au choix : même phrase pour son objectif\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : l’affaire, la poussée, une phrase à Emir. Possible : son objectif. Si ça presse : choisir la phrase.",
+    "aufbau": "0′ indice 5, tous les indices côte à côte\n2′ résoudre – « C’était quoi – et c’était Emir ? »\n4′ poussée : chaise seul·e, puis à deux\n6′ message vocal à Emir – « Quelle phrase de poussée ? »\n9′ au choix : même phrase pour son objectif\n12′ fiche\nTemps : cœur 12′ · fiche 5′\nIndispensable : l’affaire, la poussée, une phrase à Emir. Possible : son objectif. Si ça presse : choisir la phrase.",
     "karten": [
      {
       "titel": "Check panne",
@@ -6405,16 +6432,25 @@
       "titel": "Pour l’adulte : solution et conduite de l’échange",
       "karten": [
        "Solution (ne pas la dire) : la valve avant gauche fuit. Le pneu perd de l’air, la caisse tire à gauche.",
-       "Pas Emir, pas la direction (trace 3 : roues serrées et droites). Pas Aarav, pas la piste (trace 2 : tire à vide au garage). À changer : valve, regonfler.",
+       "Pas Emir, pas la direction (indice 3 : roues serrées et droites). Pas Aarav, pas la piste (indice 2 : tire à vide au garage). À changer : valve, regonfler.",
        "Même si c’était l’erreur d’Emir : une erreur est une panne qu’on peut réparer. « Je suis nul » sonne comme une cause qui ne change jamais.",
        "Jeu de rôle : l’adulte joue la personne qui aide (maîtresse, entraîneur, amie). « Fin du rôle » l’arrête à tout moment.",
        "Personnes de l’école, du club ou de la maison relais. Si personne : l’adulte lui-même ou l’enseignant·e."
       ]
+     },
+     {
+      "titel": "Pour l’adulte – si ça devient sérieux",
+      "karten": [
+       "Sur le moment : plus qu’un ras-le-bol (« J’aimerais mieux ne plus être là ») ? Reste et demande : « Il t’arrive de penser à ne plus vouloir vivre ? »",
+       "Si oui : remercier, ne pas questionner, ne pas laisser seul·e. Prévenir aujourd’hui la direction ou l’I-EBS (lycée : SePAS). Danger aigu : 112.",
+       "Après : noter mot pour mot ce que l’enfant a dit. Avec son accord, associer une personne de confiance ; ne rien promettre d’impossible.",
+       "Après : KJT 116 111 par téléphone du lundi au samedi, chat le mardi 18–21 h ; la nuit et le dimanche, 112/113 ou SOS Détresse 45 45 45."
+      ]
      }
     ],
-    "leichter": "L’adulte aligne les traces et demande seulement : « Qui ce n’était pas ? » Pour sa situation, l’enfant choisit une phrase de poussée toute faite.",
+    "leichter": "L’adulte aligne les indices et demande seulement : « Qui ce n’était pas ? » Pour sa situation, l’enfant choisit une phrase de poussée toute faite.",
     "schwerer": "Pour sa situation, prévoir deux pannes et construire pour chacune un plan si… alors avec une personne qui pousse.",
-    "gruppe": "Par deux, on résout l’affaire avec toutes les traces et on présente sa solution avec une preuve. Tout le monde fait le test de la poussée : seul·e, puis à deux. Les enfants planifient leur situation en silence sur la fiche ; des volontaires essaient leur phrase avec l’adulte.",
+    "gruppe": "Par deux, on résout l’affaire avec tous les indices et on présente sa solution avec une preuve. Tout le monde fait le test de la poussée : seul·e, puis à deux. Les enfants planifient leur situation en silence sur la fiche ; des volontaires essaient leur phrase avec l’adulte.",
     "beobachten": [
      "distingue une cause qu’on peut changer de « je n’y arrive pas, c’est tout »",
      "nomme une personne qui pousse et une phrase concrète pour une vraie situation",
@@ -6531,7 +6567,7 @@
   },
   "fr": {
    "titel": "La poussée : le dé des pannes",
-   "text": "La course a lieu samedi prochain, et Emir n’est pas là. L’adulte lit la trace 5, l’enfant pose toutes les traces côte à côte et résout l’affaire. Puis le dé des pannes : qui lance écoute la panne de ce numéro (par exemple « Daryna fait baver la bande rouge »), passe le check panne – quoi au juste ? changeable ? qui pousse ? – et choisit une phrase de poussée. L’enfant et l’adulte lancent à tour de rôle ; au six (« De ton côté, quelque chose rate »), l’enfant peut parler de lui ou d’elle ou prendre une panne inventée. Pour finir, il ou elle planifie une vraie situation de cette semaine. Phrase à retenir : « Une panne, ce n’est pas la fin : trouver la cause, demander une poussée. »",
+   "text": "La course a lieu samedi prochain, et Emir n’est pas là. L’adulte lit l’indice 5, l’enfant pose tous les indices côte à côte et résout l’affaire. Puis le dé des pannes : qui lance écoute la panne de ce numéro (par exemple « Daryna fait baver la bande rouge »), passe le check panne – quoi au juste ? changeable ? qui pousse ? – et choisit une phrase de poussée. L’enfant et l’adulte lancent à tour de rôle ; au six (« De ton côté, quelque chose rate »), l’enfant peut parler de lui ou d’elle ou prendre une panne inventée. Pour finir, il ou elle planifie une vraie situation de cette semaine. Phrase à retenir : « Une panne, ce n’est pas la fin : trouver la cause, demander une poussée. »",
    "sagen": [
     "Lance ! C’est quoi, la panne – et que s’est-il vraiment passé ?",
     "Peut-on le changer ? Qui pousse ?",
@@ -6593,9 +6629,9 @@
     "vorbereitung": [
      "Un dé",
      "Les cartes pannes (ci-dessous) et les phrases de poussée",
-     "Les traces 1 à 4 du dossier"
+     "Les indices 1 à 4 du dossier"
     ],
-    "aufbau": "0′ trace 5, résoudre l’affaire\n4′ lancer, check panne – « Quoi ? Changeable ? Qui pousse ? »\n9′ sa situation de cette semaine\n11′ fiche de la séance\nIndispensable : l’affaire, trois lancers, une situation. Si ça presse : deux lancers.",
+    "aufbau": "0′ indice 5, résoudre l’affaire\n4′ lancer, check panne – « Quoi ? Changeable ? Qui pousse ? »\n9′ sa situation de cette semaine\n11′ fiche de la séance\nIndispensable : l’affaire, trois lancers, une situation. Si ça presse : deux lancers.",
     "karten": [
      {
       "titel": "Cartes pannes",
@@ -6736,7 +6772,7 @@
   },
   "fr": {
    "titel": "La poussée : une BD pour Emir",
-   "text": "La course a lieu samedi prochain, et Emir n’est pas là. L’adulte lit la trace 5 ; l’enfant pose les traces côte à côte et résout l’affaire. Puis il ou elle dessine pour Emir une BD en trois cases : la panne (ce qui s’est vraiment passé) – la cause (peut-on la changer ?) – la poussée (qui va le chercher, avec quelle phrase). Des bonshommes suffisent. On inverse : l’adulte joue Emir, qui lit la BD et dit « Dat bréngt näischt » ; l’enfant répond avec une phrase de la BD. Qui veut choisit pour finir une de trois situations scolaires inventées et planifie pour Aarav qui pousse avec lui. Phrase à retenir : « Une panne, ce n’est pas la fin : trouver la cause, demander une poussée. »",
+   "text": "La course a lieu samedi prochain, et Emir n’est pas là. L’adulte lit l’indice 5 ; l’enfant pose les indices côte à côte et résout l’affaire. Puis il ou elle dessine pour Emir une BD en trois cases : la panne (ce qui s’est vraiment passé) – la cause (peut-on la changer ?) – la poussée (qui va le chercher, avec quelle phrase). Des bonshommes suffisent. On inverse : l’adulte joue Emir, qui lit la BD et dit « Dat bréngt näischt » ; l’enfant répond avec une phrase de la BD. Qui veut choisit pour finir une de trois situations scolaires inventées et planifie pour Aarav qui pousse avec lui. Phrase à retenir : « Une panne, ce n’est pas la fin : trouver la cause, demander une poussée. »",
    "sagen": [
     "Trois cases : panne, cause, poussée. Des bonshommes suffisent.",
     "Je suis Emir : « Dat bréngt näischt. » Tu réponds quoi ?",
@@ -6793,9 +6829,9 @@
     "haken": "Une BD qui doit ramener un garçon au garage – dessinée par l’enfant qui a résolu l’affaire.",
     "vorbereitung": [
      "Une feuille pliée en trois cases, des crayons",
-     "Les traces 1 à 4 du dossier"
+     "Les indices 1 à 4 du dossier"
     ],
-    "aufbau": "0′ trace 5, résoudre l’affaire\n4′ BD en trois cases\n8′ rôles inversés : Emir lit\n10′ situation inventée pour Aarav (libre)\n11′ fiche de la séance\nIndispensable : l’affaire, la BD, une réponse à Emir. Si ça presse : une case.",
+    "aufbau": "0′ indice 5, résoudre l’affaire\n4′ BD en trois cases\n8′ rôles inversés : Emir lit\n10′ situation inventée pour Aarav (libre)\n11′ fiche de la séance\nIndispensable : l’affaire, la BD, une réponse à Emir. Si ça presse : une case.",
     "karten": [
      {
       "titel": "Situations scolaires inventées",
@@ -7018,38 +7054,6 @@
        "nummer": "112 · 113"
       }
      ]
-    },
-    {
-     "art": "aufgabe",
-     "text": "Mal aus, was heute dazukommt.",
-     "symbole": [
-      "malen"
-     ]
-    },
-    {
-     "art": "schritte",
-     "stil": "kette",
-     "items": [
-      {
-       "titel": "Lenkrad"
-      },
-      {
-       "titel": "Räder"
-      },
-      {
-       "titel": "Kurven-Plan"
-      },
-      {
-       "titel": "Erster Meter"
-      },
-      {
-       "titel": "Anschub"
-      },
-      {
-       "titel": "Ziel",
-       "heute": true
-      }
-     ]
     }
    ],
    "fr": [
@@ -7134,38 +7138,6 @@
       {
        "name": "Urgences · police",
        "nummer": "112 · 113"
-      }
-     ]
-    },
-    {
-     "art": "aufgabe",
-     "text": "Colorie ce qui s’ajoute aujourd’hui.",
-     "symbole": [
-      "malen"
-     ]
-    },
-    {
-     "art": "schritte",
-     "stil": "kette",
-     "items": [
-      {
-       "titel": "Volant"
-      },
-      {
-       "titel": "Roues"
-      },
-      {
-       "titel": "Plan du virage"
-      },
-      {
-       "titel": "Premier mètre"
-      },
-      {
-       "titel": "Poussée"
-      },
-      {
-       "titel": "Arrivée",
-       "heute": true
       }
      ]
     }
@@ -7315,7 +7287,7 @@
      {
       "titel": "Pour l’adulte : résultat et au revoir",
       "karten": [
-       "À lire : « Le dossard 7 franchit l’arrivée – 9e sur 14. Emir pousse au départ, Aarav freine au deuxième virage, la bande rouge brille. Pas d’accident. »",
+       "À lire : « Le numéro 7 franchit l’arrivée – 9e sur 14. Emir pousse au départ, Aarav freine au deuxième virage, la bande rouge brille. Pas d’accident. »",
        "Quelle que soit la grille choisie : le résultat reste ; Jemp dit : « Gutt gemaach, chef d’équipe ! »",
        "Le « Gutt gemaach ! » nomme une action, pas une qualité : « … parce que tu as continué après la panne. »",
        "Rendre l’aide concrète : qui est là pour toi à l’école (enseignant·e, I-EBS, ESEB, maison relais ; au lycée, SePAS) ?",
@@ -7530,38 +7502,6 @@
        "nummer": "112 · 113"
       }
      ]
-    },
-    {
-     "art": "aufgabe",
-     "text": "Mal aus, was heute dazukommt.",
-     "symbole": [
-      "malen"
-     ]
-    },
-    {
-     "art": "schritte",
-     "stil": "kette",
-     "items": [
-      {
-       "titel": "Lenkrad"
-      },
-      {
-       "titel": "Räder"
-      },
-      {
-       "titel": "Kurven-Plan"
-      },
-      {
-       "titel": "Erster Meter"
-      },
-      {
-       "titel": "Anschub"
-      },
-      {
-       "titel": "Ziel",
-       "heute": true
-      }
-     ]
     }
    ],
    "fr": [
@@ -7640,38 +7580,6 @@
       {
        "name": "Urgences · police",
        "nummer": "112 · 113"
-      }
-     ]
-    },
-    {
-     "art": "aufgabe",
-     "text": "Colorie ce qui s’ajoute aujourd’hui.",
-     "symbole": [
-      "malen"
-     ]
-    },
-    {
-     "art": "schritte",
-     "stil": "kette",
-     "items": [
-      {
-       "titel": "Volant"
-      },
-      {
-       "titel": "Roues"
-      },
-      {
-       "titel": "Plan du virage"
-      },
-      {
-       "titel": "Premier mètre"
-      },
-      {
-       "titel": "Poussée"
-      },
-      {
-       "titel": "Arrivée",
-       "heute": true
       }
      ]
     }
@@ -7821,7 +7729,7 @@
      {
       "titel": "Pour l’adulte : résultat et au revoir",
       "karten": [
-       "À lire : « Le dossard 7 franchit l’arrivée – 9e sur 14. Emir pousse au départ, Aarav freine au deuxième virage, la bande rouge brille. Pas d’accident. »",
+       "À lire : « Le numéro 7 franchit l’arrivée – 9e sur 14. Emir pousse au départ, Aarav freine au deuxième virage, la bande rouge brille. Pas d’accident. »",
        "Quelle que soit la grille choisie : le résultat reste ; Jemp dit : « Gutt gemaach, chef d’équipe ! »",
        "Le « Gutt gemaach ! » nomme une action, pas une qualité : « … parce que tu as continué après la panne. »",
        "Rendre l’aide concrète : qui est là pour toi à l’école (enseignant·e, I-EBS, ESEB, maison relais ; au lycée, SePAS) ?",

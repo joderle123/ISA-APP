@@ -260,9 +260,11 @@
      "frei": 1
     },
     {
-     "art": "text",
-     "text": "Spur: Leandro ist sicher: Absicht. Timéo hat sich weggedreht und gelacht.",
-     "klein": true
+     "art": "aufgabe",
+     "text": "Lies die Ball-Spur: Leandro ist sicher, es war Absicht. Timéo hat sich weggedreht und gelacht. Was vermutest du?",
+     "symbole": [
+      "lesen"
+     ]
     },
     {
      "art": "satzanfaenge",
@@ -369,9 +371,11 @@
      "frei": 1
     },
     {
-     "art": "text",
-     "text": "Piste : Leandro est sûr : exprès. Timéo s’est retourné en rigolant.",
-     "klein": true
+     "art": "aufgabe",
+     "text": "Lis la piste du ballon : Leandro en est sûr, c’était exprès. Timéo s’est retourné en rigolant. Qu’en penses-tu ?",
+     "symbole": [
+      "lesen"
+     ]
     },
     {
      "art": "satzanfaenge",
@@ -535,7 +539,7 @@
     "warum": "Was ein Kind in einer Situation wahrnimmt, steuert, wie es handelt (Crick & Dodge, 1994). Frühe Zeichen in Körper und Gruppe zu bemerken gehört zu Ärger-Programmen wie Coping Power (Lochman & Wells, 2004); je früher der Ausstieg, desto leichter (Glasl, 2013).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -615,7 +619,7 @@
     "warum": "Ce qu’un enfant perçoit dans une situation oriente ce qu’il fait (Crick & Dodge, 1994). Repérer tôt les signes du corps et du groupe fait partie des programmes sur la colère comme Coping Power (Lochman & Wells, 2004) ; plus on sort tôt, plus c’est facile (Glasl, 2013).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -769,9 +773,11 @@
      "spalten": 2
     },
     {
-     "art": "text",
-     "text": "Spur: Leandro ist sicher: Absicht. Timéo hat sich weggedreht und gelacht.",
-     "klein": true
+     "art": "aufgabe",
+     "text": "Lies die Ball-Spur: Leandro ist sicher, es war Absicht. Timéo hat sich weggedreht und gelacht. Was vermutest du?",
+     "symbole": [
+      "lesen"
+     ]
     },
     {
      "art": "ankreuzen",
@@ -880,9 +886,11 @@
      "spalten": 2
     },
     {
-     "art": "text",
-     "text": "Piste : Leandro est sûr : exprès. Timéo s’est retourné en rigolant.",
-     "klein": true
+     "art": "aufgabe",
+     "text": "Lis la piste du ballon : Leandro en est sûr, c’était exprès. Timéo s’est retourné en rigolant. Qu’en penses-tu ?",
+     "symbole": [
+      "lesen"
+     ]
     },
     {
      "art": "ankreuzen",
@@ -1049,7 +1057,7 @@
     "warum": "Was ein Kind in einer Situation wahrnimmt, steuert, wie es handelt (Crick & Dodge, 1994). Frühe Zeichen in Körper und Gruppe zu bemerken gehört zu Ärger-Programmen wie Coping Power (Lochman & Wells, 2004); je früher der Ausstieg, desto leichter (Glasl, 2013).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1129,7 +1137,7 @@
     "warum": "Ce qu’un enfant perçoit dans une situation oriente ce qu’il fait (Crick & Dodge, 1994). Repérer tôt les signes du corps et du groupe fait partie des programmes sur la colère comme Coping Power (Lochman & Wells, 2004) ; plus on sort tôt, plus c’est facile (Glasl, 2013).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1291,7 +1299,7 @@
     "warum": "Was ein Kind in einer Situation wahrnimmt, steuert, wie es handelt (Crick & Dodge, 1994). Frühe Zeichen in Körper und Gruppe zu bemerken gehört zu Ärger-Programmen wie Coping Power (Lochman & Wells, 2004); je früher der Ausstieg, desto leichter (Glasl, 2013).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1349,7 +1357,7 @@
     "warum": "Ce qu’un enfant perçoit dans une situation oriente ce qu’il fait (Crick & Dodge, 1994). Repérer tôt les signes du corps et du groupe fait partie des programmes sur la colère comme Coping Power (Lochman & Wells, 2004) ; plus on sort tôt, plus c’est facile (Glasl, 2013).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1503,7 +1511,7 @@
     "warum": "Was ein Kind in einer Situation wahrnimmt, steuert, wie es handelt (Crick & Dodge, 1994). Frühe Zeichen in Körper und Gruppe zu bemerken gehört zu Ärger-Programmen wie Coping Power (Lochman & Wells, 2004); je früher der Ausstieg, desto leichter (Glasl, 2013).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1552,7 +1560,7 @@
     "warum": "Ce qu’un enfant perçoit dans une situation oriente ce qu’il fait (Crick & Dodge, 1994). Repérer tôt les signes du corps et du groupe fait partie des programmes sur la colère comme Coping Power (Lochman & Wells, 2004) ; plus on sort tôt, plus c’est facile (Glasl, 2013).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1985,7 +1993,7 @@
     "warum": "Kinder, die anderen schnell böse Absicht unterstellen, reagieren häufiger aggressiv (Orobio de Castro et al., 2002). Wer lernt, Hinweise genau zu lesen und bei Unklarheit nicht vom Schlimmsten auszugehen, unterstellt seltener Absicht (Hudley & Graham, 1993).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2057,7 +2065,7 @@
     "warum": "Les enfants qui prêtent vite de mauvaises intentions aux autres réagissent plus souvent de façon agressive (Orobio de Castro et al., 2002). Apprendre à lire les indices et, en cas de doute, à ne pas supposer le pire réduit ces attributions hostiles (Hudley & Graham, 1993).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2478,7 +2486,7 @@
     "warum": "Kinder, die anderen schnell böse Absicht unterstellen, reagieren häufiger aggressiv (Orobio de Castro et al., 2002). Wer lernt, Hinweise genau zu lesen und bei Unklarheit nicht vom Schlimmsten auszugehen, unterstellt seltener Absicht (Hudley & Graham, 1993).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2550,7 +2558,7 @@
     "warum": "Les enfants qui prêtent vite de mauvaises intentions aux autres réagissent plus souvent de façon agressive (Orobio de Castro et al., 2002). Apprendre à lire les indices et, en cas de doute, à ne pas supposer le pire réduit ces attributions hostiles (Hudley & Graham, 1993).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2707,7 +2715,7 @@
     "warum": "Kinder, die anderen schnell böse Absicht unterstellen, reagieren häufiger aggressiv (Orobio de Castro et al., 2002). Wer lernt, Hinweise genau zu lesen und bei Unklarheit nicht vom Schlimmsten auszugehen, unterstellt seltener Absicht (Hudley & Graham, 1993).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2756,7 +2764,7 @@
     "warum": "Les enfants qui prêtent vite de mauvaises intentions aux autres réagissent plus souvent de façon agressive (Orobio de Castro et al., 2002). Apprendre à lire les indices et, en cas de doute, à ne pas supposer le pire réduit ces attributions hostiles (Hudley & Graham, 1993).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2926,7 +2934,7 @@
     "warum": "Kinder, die anderen schnell böse Absicht unterstellen, reagieren häufiger aggressiv (Orobio de Castro et al., 2002). Wer lernt, Hinweise genau zu lesen und bei Unklarheit nicht vom Schlimmsten auszugehen, unterstellt seltener Absicht (Hudley & Graham, 1993).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2988,7 +2996,7 @@
     "warum": "Les enfants qui prêtent vite de mauvaises intentions aux autres réagissent plus souvent de façon agressive (Orobio de Castro et al., 2002). Apprendre à lire les indices et, en cas de doute, à ne pas supposer le pire réduit ces attributions hostiles (Hudley & Graham, 1993).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -3006,7 +3014,7 @@
    "titel": "Einzelkurs Raus aus dem Sog"
   },
   "titel": "Seitlich raus: cool aussteigen",
-  "text": "Die Fachkraft liest Dylans Satz im Bus vor. Zuerst der Wand-Test: Das Kind drückt zehn Sekunden mit beiden Händen gegen die Wand – so fühlt sich Schwimmen gegen den Sog an –, dann lässt es los und macht einen großen Schritt zur Seite. Die Bademeisterin der Schwämm sagt: „Seitlich raus.“ Das Kind wählt drei Ausstiegs-Sätze. Die Fachkraft macht zwei Ausstiege vor, einen mit letztem Spruch; das Kind findet den Unterschied. Dann die Probe: Die Fachkraft spricht sitzend hinter einem Stuhl Dylans Sätze, das Kind antwortet als Leandro, steht auf, tritt seitlich weg und geht drei Schritte nach vorn zum Fahrer. Rückmeldung: Wurde es ruhiger? Sah Leandro stark aus? Merksatz: „Seitlich raus ist nicht feige, sondern schlau.“ Offen bleibt: Dylan flüstert: „Heute Nachmittag.“",
+  "text": "Die Fachkraft liest Dylans Satz im Bus vor. Zuerst der Wand-Test: Das Kind drückt zehn Sekunden mit beiden Händen gegen die Wand – so fühlt sich Schwimmen gegen den Sog an –, dann lässt es los und macht einen großen Schritt zur Seite. Die Bademeisterin der Schwämm sagt: „Seitlich raus.“ Das Kind wählt drei Ausstiegs-Sätze. Die Fachkraft macht zwei Ausstiege vor, einen mit letztem Spruch; das Kind findet den Unterschied. Dann die Probe: Die Fachkraft spricht sitzend hinter einem Stuhl Dylans Sätze, das Kind antwortet als Leandro, steht auf, tritt seitlich weg und geht drei Schritte nach vorn zur Lehrkraft. Rückmeldung: Wurde es ruhiger? Sah Leandro stark aus? Merksatz: „Seitlich raus ist nicht feige, sondern schlau.“ Offen bleibt: Dylan flüstert: „Heute Nachmittag.“",
   "sagen": [
    "Drück zehn Sekunden gegen die Wand. Spürst du die Kraft? Jetzt los – und ein Schritt zur Seite.",
    "Welche drei Sätze sind cool – und machen es nicht schlimmer?",
@@ -3069,8 +3077,8 @@
   ],
   "ort": "raum",
   "werkzeug": {
-   "de": "Seitlich raus: kurzer Satz ohne Spott, Blick weg, gehen – kein letzter Spruch",
-   "fr": "Sortir par le côté : phrase courte sans moquerie, regard ailleurs, partir"
+   "de": "Seitlich raus: Schritt zur Seite, ruhiger Satz, hin zu Erwachsenen – nicht zurückdrehen",
+   "fr": "Sortir par le côté : un pas de côté, une phrase calme, aller vers un adulte"
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -3138,7 +3146,7 @@
       "Lass gut sein.",
       "Ich hab Besseres zu tun.",
       "Später. Jetzt nicht.",
-      "Loss et! (Lass es!)",
+      "Looss et! (Lass es!)",
       "Laisse tomber. (Lass gut sein.)"
      ],
      "spalten": 2,
@@ -3253,7 +3261,7 @@
       "Laisse tomber.",
       "J’ai mieux à faire.",
       "Plus tard. Pas maintenant.",
-      "Loss et ! (Laisse !)",
+      "Looss et ! (Laisse !)",
       "Lass gut sein. (Laisse tomber.)"
      ],
      "spalten": 2,
@@ -3347,7 +3355,7 @@
   },
   "fr": {
    "titel": "Sortir par le côté : partir en restant cool",
-   "text": "L’adulte lit la phrase de Dylan dans le bus. D’abord le test du mur : l’enfant pousse dix secondes des deux mains contre le mur – c’est ça, nager contre le courant –, puis lâche et fait un grand pas de côté. La maître-nageuse de la Schwämm dit : « Sors par le côté. » L’enfant choisit trois phrases pour sortir. L’adulte montre deux sorties, l’une avec une dernière pique ; l’enfant trouve la différence. Puis l’essai : l’adulte, assis·e derrière une chaise, dit les phrases de Dylan, l’enfant répond en Leandro, se lève, fait un pas de côté et va trois pas plus loin, vers le chauffeur. Retour : est-ce que c’est devenu plus calme ? Leandro avait-il l’air fort ? Phrase-clé : « Sortir par le côté, ce n’est pas lâche, c’est malin. » Reste ouvert : Dylan chuchote : « Cet après-midi. »",
+   "text": "L’adulte lit la phrase de Dylan dans le bus. D’abord le test du mur : l’enfant pousse dix secondes des deux mains contre le mur – c’est ça, nager contre le courant –, puis lâche et fait un grand pas de côté. La maître-nageuse de la Schwämm dit : « Sors par le côté. » L’enfant choisit trois phrases pour sortir. L’adulte montre deux sorties, l’une avec une dernière pique ; l’enfant trouve la différence. Puis l’essai : l’adulte, assis·e derrière une chaise, dit les phrases de Dylan, l’enfant répond en Leandro, se lève, fait un pas de côté et va trois pas plus loin, vers l’enseignant·e. Retour : est-ce que c’est devenu plus calme ? Leandro avait-il l’air fort ? Phrase-clé : « Sortir par le côté, ce n’est pas lâche, c’est malin. » Reste ouvert : Dylan chuchote : « Cet après-midi. »",
    "sagen": [
     "Pousse dix secondes contre le mur. Tu sens la force que ça prend ? Lâche – et un pas de côté.",
     "Quelles trois phrases sont cool – sans empirer les choses ?",
@@ -3367,9 +3375,9 @@
     "haken": "Zehn Sekunden gegen die Wand drücken – und plötzlich loslassen: Das Kind spürt im eigenen Körper, warum die Bademeisterin sagt „Seitlich raus“. Dann zeigt es im Bus, dass Gehen stark aussehen kann.",
     "vorbereitung": [
      "Schnellstart (3 Min.): Kartenbogen drucken; Ausstiegs-Sätze offen hinlegen.",
-     "Ein Stuhl für Dylans Stimme, zwei Meter weiter ein Stuhl als Fahrer-Platz.",
+     "Ein Stuhl für Dylans Stimme, zwei Meter weiter ein Stuhl als Platz der Lehrkraft.",
      "Eine freie Wandstelle für den Wand-Test.",
-     "Aussprache: „Elo oder ni“ ≈ elo oder ni · „Loss et“ ≈ loss ett"
+     "Aussprache: „Elo oder ni“ ≈ elo oder ni · „Looss et“ ≈ lohs ett"
     ],
     "aufbau": "0′ Dylans Satz, Wand-Test – „Spürst du die Kraft?“\n3′ Drei Ausstiegs-Sätze wählen\n5′ Vormachen A und B – „Was ist anders?“\n7′ Probe als Leandro, zwei Durchgänge\n10′ Rückmeldung, Merksatz, „Rolle aus“\n12′ Blatt: Satz und Weg\n17′ Ende\nMuss: Wand-Test, eine Probe, Rückmeldung. Knapp? Ohne Vormachen B.\nKern 12′ + Blatt 5′.",
     "karten": [
@@ -3392,7 +3400,7 @@
        "Lass gut sein.",
        "Ich hab Besseres zu tun.",
        "Später. Jetzt nicht.",
-       "Loss et! (Lass es!)",
+       "Looss et! (Lass es!)",
        "Laisse tomber. (Lass gut sein.)",
        "Deixa lá. (Lass gut sein.)",
        "Ich setz mich nach vorn."
@@ -3432,12 +3440,16 @@
     "warum": "Viele Schlägereien entstehen, wenn jemand vor anderen nicht schwach dastehen will (Felson, 1982). Darum übt das Kind einen Ausstieg, der das Gesicht wahrt: vormachen, üben, Rückmeldung – aktive Übungsformen gehören zu wirksamen sozial-emotionalen Programmen (Durlak et al., 2011). Wut an Gegenständen auszulassen senkt Aggression nicht, eher im Gegenteil (Bushman, 2002).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
       "titel": "violence.lu – Helpline Gewalt 2060 1060, rund um die Uhr, auch für Zeuginnen und Zeugen (Luxemburg)",
       "url": "https://violence.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, wenn im Chat Bilder oder Drohungen kreisen (Luxemburg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    },
@@ -3445,9 +3457,9 @@
     "haken": "Pousser dix secondes contre le mur – et lâcher d’un coup : l’enfant sent dans son propre corps pourquoi la maître-nageuse dit « Sors par le côté ». Puis il ou elle montre dans le bus que partir peut avoir l’air fort.",
     "vorbereitung": [
      "Démarrage rapide (3 min) : imprimer la planche ; poser les phrases pour sortir.",
-     "Une chaise pour la voix de Dylan, deux mètres plus loin une chaise pour la place du chauffeur.",
+     "Une chaise pour la voix de Dylan, deux mètres plus loin une chaise pour la place de l’enseignant·e.",
      "Un bout de mur libre pour le test du mur.",
-     "Prononcer : « Elo oder ni » ≈ élo oder ni · « Loss et » ≈ loss ètt"
+     "Prononcer : « Elo oder ni » ≈ élo oder ni · « Looss et » ≈ lôss ètt"
     ],
     "aufbau": "0′ phrase de Dylan, test du mur – « Tu sens la force ? »\n3′ choisir trois phrases\n5′ montrer A et B – « Qu’est-ce qui change ? »\n7′ essai en Leandro, deux passages\n10′ retour, phrase-clé, « fin du rôle »\n12′ fiche : phrase et chemin\n17′ fin\nIndispensable : test du mur, un essai, retour. Si ça presse : sans B.\nKern 12′ + Blatt 5′ (cœur + fiche).",
     "karten": [
@@ -3470,7 +3482,7 @@
        "Laisse tomber.",
        "J’ai mieux à faire.",
        "Plus tard. Pas maintenant.",
-       "Loss et ! (Laisse !)",
+       "Looss et ! (Laisse !)",
        "Lass gut sein. (Laisse tomber.)",
        "Deixa lá. (Laisse tomber.)",
        "Je vais m’asseoir devant."
@@ -3510,12 +3522,16 @@
     "warum": "Beaucoup de bagarres naissent quand quelqu’un ne veut pas passer pour faible devant les autres (Felson, 1982). L’enfant s’entraîne donc à une sortie qui sauve la face : montrer, s’entraîner, retour – les exercices actifs font partie des programmes socio-émotionnels efficaces (Durlak et al., 2011). Passer sa colère sur des objets ne fait pas baisser l’agressivité (Bushman, 2002).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
       "titel": "violence.lu – helpline violence 2060 1060, 24 h/24, aussi pour les témoins (Luxembourg)",
       "url": "https://violence.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, quand des images ou des menaces circulent dans un chat (Luxembourg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    }
@@ -3528,7 +3544,7 @@
    "titel": "Einzelkurs Raus aus dem Sog"
   },
   "titel": "Seitlich raus: cool aussteigen",
-  "text": "Die Fachkraft liest Dylans Satz im Bus vor. Zuerst der Wand-Test: Das Kind drückt zehn Sekunden mit beiden Händen gegen die Wand – so fühlt sich Schwimmen gegen den Sog an –, dann lässt es los und macht einen großen Schritt zur Seite. Die Bademeisterin der Schwämm sagt: „Seitlich raus.“ Das Kind wählt drei Ausstiegs-Sätze. Die Fachkraft macht zwei Ausstiege vor, einen mit letztem Spruch; das Kind findet den Unterschied. Dann die Probe: Die Fachkraft spricht sitzend hinter einem Stuhl Dylans Sätze, das Kind antwortet als Leandro, steht auf, tritt seitlich weg und geht drei Schritte nach vorn zum Fahrer. Rückmeldung: Wurde es ruhiger? Sah Leandro stark aus? Merksatz: „Seitlich raus ist nicht feige, sondern schlau.“ Offen bleibt: Dylan flüstert: „Heute Nachmittag.“",
+  "text": "Die Fachkraft liest Dylans Satz im Bus vor. Zuerst der Wand-Test: Das Kind drückt zehn Sekunden mit beiden Händen gegen die Wand – so fühlt sich Schwimmen gegen den Sog an –, dann lässt es los und macht einen großen Schritt zur Seite. Die Bademeisterin der Schwämm sagt: „Seitlich raus.“ Das Kind wählt drei Ausstiegs-Sätze. Die Fachkraft macht zwei Ausstiege vor, einen mit letztem Spruch; das Kind findet den Unterschied. Dann die Probe: Die Fachkraft spricht sitzend hinter einem Stuhl Dylans Sätze, das Kind antwortet als Leandro, steht auf, tritt seitlich weg und geht drei Schritte nach vorn zur Lehrkraft. Rückmeldung: Wurde es ruhiger? Sah Leandro stark aus? Merksatz: „Seitlich raus ist nicht feige, sondern schlau.“ Offen bleibt: Dylan flüstert: „Heute Nachmittag.“",
   "sagen": [
    "Drück zehn Sekunden gegen die Wand. Spürst du die Kraft? Jetzt los – und ein Schritt zur Seite.",
    "Welche drei Sätze sind cool – und machen es nicht schlimmer?",
@@ -3591,8 +3607,8 @@
   ],
   "ort": "raum",
   "werkzeug": {
-   "de": "Seitlich raus: kurzer Satz ohne Spott, Blick weg, gehen – kein letzter Spruch",
-   "fr": "Sortir par le côté : phrase courte sans moquerie, regard ailleurs, partir"
+   "de": "Seitlich raus: Schritt zur Seite, ruhiger Satz, hin zu Erwachsenen – nicht zurückdrehen",
+   "fr": "Sortir par le côté : un pas de côté, une phrase calme, aller vers un adulte"
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -3660,7 +3676,7 @@
       "Lass gut sein.",
       "Ich hab Besseres zu tun.",
       "Später. Jetzt nicht.",
-      "Loss et! (Lass es!)",
+      "Looss et! (Lass es!)",
       "Laisse tomber. (Lass gut sein.)"
      ],
      "spalten": 2
@@ -3675,9 +3691,9 @@
     {
      "art": "ankreuzen",
      "items": [
-      "zum Fahrer",
+      "zur Lehrkraft",
       "zu Freunden",
-      "zu Erwachsenen",
+      "zu anderen Erwachsenen",
       "Chat stumm"
      ],
      "spalten": 2
@@ -3776,7 +3792,7 @@
       "Laisse tomber.",
       "J’ai mieux à faire.",
       "Plus tard. Pas maintenant.",
-      "Loss et ! (Laisse !)",
+      "Looss et ! (Laisse !)",
       "Lass gut sein. (Laisse tomber.)"
      ],
      "spalten": 2
@@ -3791,9 +3807,9 @@
     {
      "art": "ankreuzen",
      "items": [
-      "vers le chauffeur",
+      "vers l’enseignant·e",
       "vers des copains",
-      "vers un adulte",
+      "vers un autre adulte",
       "chat en sourdine"
      ],
      "spalten": 2
@@ -3871,7 +3887,7 @@
   },
   "fr": {
    "titel": "Sortir par le côté : partir en restant cool",
-   "text": "L’adulte lit la phrase de Dylan dans le bus. D’abord le test du mur : l’enfant pousse dix secondes des deux mains contre le mur – c’est ça, nager contre le courant –, puis lâche et fait un grand pas de côté. La maître-nageuse de la Schwämm dit : « Sors par le côté. » L’enfant choisit trois phrases pour sortir. L’adulte montre deux sorties, l’une avec une dernière pique ; l’enfant trouve la différence. Puis l’essai : l’adulte, assis·e derrière une chaise, dit les phrases de Dylan, l’enfant répond en Leandro, se lève, fait un pas de côté et va trois pas plus loin, vers le chauffeur. Retour : est-ce que c’est devenu plus calme ? Leandro avait-il l’air fort ? Phrase-clé : « Sortir par le côté, ce n’est pas lâche, c’est malin. » Reste ouvert : Dylan chuchote : « Cet après-midi. »",
+   "text": "L’adulte lit la phrase de Dylan dans le bus. D’abord le test du mur : l’enfant pousse dix secondes des deux mains contre le mur – c’est ça, nager contre le courant –, puis lâche et fait un grand pas de côté. La maître-nageuse de la Schwämm dit : « Sors par le côté. » L’enfant choisit trois phrases pour sortir. L’adulte montre deux sorties, l’une avec une dernière pique ; l’enfant trouve la différence. Puis l’essai : l’adulte, assis·e derrière une chaise, dit les phrases de Dylan, l’enfant répond en Leandro, se lève, fait un pas de côté et va trois pas plus loin, vers l’enseignant·e. Retour : est-ce que c’est devenu plus calme ? Leandro avait-il l’air fort ? Phrase-clé : « Sortir par le côté, ce n’est pas lâche, c’est malin. » Reste ouvert : Dylan chuchote : « Cet après-midi. »",
    "sagen": [
     "Pousse dix secondes contre le mur. Tu sens la force que ça prend ? Lâche – et un pas de côté.",
     "Quelles trois phrases sont cool – sans empirer les choses ?",
@@ -3891,9 +3907,9 @@
     "haken": "Zehn Sekunden gegen die Wand drücken – und plötzlich loslassen: Das Kind spürt im eigenen Körper, warum die Bademeisterin sagt „Seitlich raus“. Dann zeigt es im Bus, dass Gehen stark aussehen kann.",
     "vorbereitung": [
      "Schnellstart (3 Min.): Kartenbogen drucken; Ausstiegs-Sätze offen hinlegen.",
-     "Ein Stuhl für Dylans Stimme, zwei Meter weiter ein Stuhl als Fahrer-Platz.",
+     "Ein Stuhl für Dylans Stimme, zwei Meter weiter ein Stuhl als Platz der Lehrkraft.",
      "Eine freie Wandstelle für den Wand-Test.",
-     "Aussprache: „Elo oder ni“ ≈ elo oder ni · „Loss et“ ≈ loss ett"
+     "Aussprache: „Elo oder ni“ ≈ elo oder ni · „Looss et“ ≈ lohs ett"
     ],
     "aufbau": "0′ Dylans Satz, Wand-Test – „Spürst du die Kraft?“\n3′ Drei Ausstiegs-Sätze wählen\n5′ Vormachen A und B – „Was ist anders?“\n7′ Probe als Leandro, zwei Durchgänge\n10′ Rückmeldung, Merksatz, „Rolle aus“\n12′ Blatt: Satz und Weg\n17′ Ende\nMuss: Wand-Test, eine Probe, Rückmeldung. Knapp? Ohne Vormachen B.\nKern 12′ + Blatt 5′.",
     "karten": [
@@ -3916,7 +3932,7 @@
        "Lass gut sein.",
        "Ich hab Besseres zu tun.",
        "Später. Jetzt nicht.",
-       "Loss et! (Lass es!)",
+       "Looss et! (Lass es!)",
        "Laisse tomber. (Lass gut sein.)",
        "Deixa lá. (Lass gut sein.)",
        "Ich setz mich nach vorn."
@@ -3956,12 +3972,16 @@
     "warum": "Viele Schlägereien entstehen, wenn jemand vor anderen nicht schwach dastehen will (Felson, 1982). Darum übt das Kind einen Ausstieg, der das Gesicht wahrt: vormachen, üben, Rückmeldung – aktive Übungsformen gehören zu wirksamen sozial-emotionalen Programmen (Durlak et al., 2011). Wut an Gegenständen auszulassen senkt Aggression nicht, eher im Gegenteil (Bushman, 2002).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
       "titel": "violence.lu – Helpline Gewalt 2060 1060, rund um die Uhr, auch für Zeuginnen und Zeugen (Luxemburg)",
       "url": "https://violence.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, wenn im Chat Bilder oder Drohungen kreisen (Luxemburg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    },
@@ -3969,9 +3989,9 @@
     "haken": "Pousser dix secondes contre le mur – et lâcher d’un coup : l’enfant sent dans son propre corps pourquoi la maître-nageuse dit « Sors par le côté ». Puis il ou elle montre dans le bus que partir peut avoir l’air fort.",
     "vorbereitung": [
      "Démarrage rapide (3 min) : imprimer la planche ; poser les phrases pour sortir.",
-     "Une chaise pour la voix de Dylan, deux mètres plus loin une chaise pour la place du chauffeur.",
+     "Une chaise pour la voix de Dylan, deux mètres plus loin une chaise pour la place de l’enseignant·e.",
      "Un bout de mur libre pour le test du mur.",
-     "Prononcer : « Elo oder ni » ≈ élo oder ni · « Loss et » ≈ loss ètt"
+     "Prononcer : « Elo oder ni » ≈ élo oder ni · « Looss et » ≈ lôss ètt"
     ],
     "aufbau": "0′ phrase de Dylan, test du mur – « Tu sens la force ? »\n3′ choisir trois phrases\n5′ montrer A et B – « Qu’est-ce qui change ? »\n7′ essai en Leandro, deux passages\n10′ retour, phrase-clé, « fin du rôle »\n12′ fiche : phrase et chemin\n17′ fin\nIndispensable : test du mur, un essai, retour. Si ça presse : sans B.\nKern 12′ + Blatt 5′ (cœur + fiche).",
     "karten": [
@@ -3994,7 +4014,7 @@
        "Laisse tomber.",
        "J’ai mieux à faire.",
        "Plus tard. Pas maintenant.",
-       "Loss et ! (Laisse !)",
+       "Looss et ! (Laisse !)",
        "Lass gut sein. (Laisse tomber.)",
        "Deixa lá. (Laisse tomber.)",
        "Je vais m’asseoir devant."
@@ -4034,12 +4054,16 @@
     "warum": "Beaucoup de bagarres naissent quand quelqu’un ne veut pas passer pour faible devant les autres (Felson, 1982). L’enfant s’entraîne donc à une sortie qui sauve la face : montrer, s’entraîner, retour – les exercices actifs font partie des programmes socio-émotionnels efficaces (Durlak et al., 2011). Passer sa colère sur des objets ne fait pas baisser l’agressivité (Bushman, 2002).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
       "titel": "violence.lu – helpline violence 2060 1060, 24 h/24, aussi pour les témoins (Luxembourg)",
       "url": "https://violence.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, quand des images ou des menaces circulent dans un chat (Luxembourg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    }
@@ -4095,8 +4119,8 @@
   ],
   "einzeltauglich": "ja",
   "werkzeug": {
-   "de": "Seitlich raus: kurzer Satz ohne Spott, Blick weg, gehen – kein letzter Spruch",
-   "fr": "Sortir par le côté : phrase courte sans moquerie, regard ailleurs, partir"
+   "de": "Seitlich raus: Schritt zur Seite, ruhiger Satz, hin zu Erwachsenen – nicht zurückdrehen",
+   "fr": "Sortir par le côté : un pas de côté, une phrase calme, aller vers un adulte"
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -4193,12 +4217,16 @@
     "warum": "Viele Schlägereien entstehen, wenn jemand vor anderen nicht schwach dastehen will (Felson, 1982). Darum übt das Kind einen Ausstieg, der das Gesicht wahrt: vormachen, üben, Rückmeldung – aktive Übungsformen gehören zu wirksamen sozial-emotionalen Programmen (Durlak et al., 2011). Wut an Gegenständen auszulassen senkt Aggression nicht, eher im Gegenteil (Bushman, 2002).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
       "titel": "violence.lu – Helpline Gewalt 2060 1060, rund um die Uhr, auch für Zeuginnen und Zeugen (Luxemburg)",
       "url": "https://violence.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, wenn im Chat Bilder oder Drohungen kreisen (Luxemburg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    },
@@ -4243,12 +4271,16 @@
     "warum": "Beaucoup de bagarres naissent quand quelqu’un ne veut pas passer pour faible devant les autres (Felson, 1982). L’enfant s’entraîne donc à une sortie qui sauve la face : montrer, s’entraîner, retour – les exercices actifs font partie des programmes socio-émotionnels efficaces (Durlak et al., 2011). Passer sa colère sur des objets ne fait pas baisser l’agressivité (Bushman, 2002).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
       "titel": "violence.lu – helpline violence 2060 1060, 24 h/24, aussi pour les témoins (Luxembourg)",
       "url": "https://violence.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, quand des images ou des menaces circulent dans un chat (Luxembourg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    }
@@ -4304,8 +4336,8 @@
   ],
   "einzeltauglich": "ja",
   "werkzeug": {
-   "de": "Seitlich raus: kurzer Satz ohne Spott, Blick weg, gehen – kein letzter Spruch",
-   "fr": "Sortir par le côté : phrase courte sans moquerie, regard ailleurs, partir"
+   "de": "Seitlich raus: Schritt zur Seite, ruhiger Satz, hin zu Erwachsenen – nicht zurückdrehen",
+   "fr": "Sortir par le côté : un pas de côté, une phrase calme, aller vers un adulte"
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -4401,12 +4433,16 @@
     "warum": "Viele Schlägereien entstehen, wenn jemand vor anderen nicht schwach dastehen will (Felson, 1982). Darum übt das Kind einen Ausstieg, der das Gesicht wahrt: vormachen, üben, Rückmeldung – aktive Übungsformen gehören zu wirksamen sozial-emotionalen Programmen (Durlak et al., 2011). Wut an Gegenständen auszulassen senkt Aggression nicht, eher im Gegenteil (Bushman, 2002).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
       "titel": "violence.lu – Helpline Gewalt 2060 1060, rund um die Uhr, auch für Zeuginnen und Zeugen (Luxemburg)",
       "url": "https://violence.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, wenn im Chat Bilder oder Drohungen kreisen (Luxemburg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    },
@@ -4450,12 +4486,16 @@
     "warum": "Beaucoup de bagarres naissent quand quelqu’un ne veut pas passer pour faible devant les autres (Felson, 1982). L’enfant s’entraîne donc à une sortie qui sauve la face : montrer, s’entraîner, retour – les exercices actifs font partie des programmes socio-émotionnels efficaces (Durlak et al., 2011). Passer sa colère sur des objets ne fait pas baisser l’agressivité (Bushman, 2002).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
       "titel": "violence.lu – helpline violence 2060 1060, 24 h/24, aussi pour les témoins (Luxembourg)",
       "url": "https://violence.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, quand des images ou des menaces circulent dans un chat (Luxembourg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    }
@@ -4892,6 +4932,10 @@
      {
       "titel": "Police grand-ducale – Notruf 113 und Tipps für Zeuginnen und Zeugen (Luxemburg)",
       "url": "https://police.public.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, wenn im Chat Bilder oder Drohungen kreisen (Luxemburg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    },
@@ -4968,6 +5012,10 @@
      {
       "titel": "Police grand-ducale – urgence 113 et conseils aux témoins (Luxembourg)",
       "url": "https://police.public.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, quand des images ou des menaces circulent dans un chat (Luxembourg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    }
@@ -5410,6 +5458,10 @@
      {
       "titel": "Police grand-ducale – Notruf 113 und Tipps für Zeuginnen und Zeugen (Luxemburg)",
       "url": "https://police.public.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, wenn im Chat Bilder oder Drohungen kreisen (Luxemburg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    },
@@ -5486,6 +5538,10 @@
      {
       "titel": "Police grand-ducale – urgence 113 et conseils aux témoins (Luxembourg)",
       "url": "https://police.public.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, quand des images ou des menaces circulent dans un chat (Luxembourg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    }
@@ -5588,7 +5644,7 @@
   },
   "fr": {
    "titel": "Ne pas suivre : conseiller d’Ayla au téléphone",
-   "text": "L’adulte lit la scène devant la maison relais. Puis il ou elle joue Ayla, qui envoie des messages vocaux : « Ech weess net, wat ech maache soll. » (Je ne sais pas quoi faire.) L’enfant est son conseiller ou sa conseillère et répond par messages vocaux – une gomme sert de portable, et il ou elle marche de long en large en parlant, comme au téléphone. Ayla fait des objections : « Alors tout le monde va croire que je suis lâche », « Leandro, c’est mon ami », « Dylan va se moquer de moi ». L’enfant lui donne trois chemins – ne pas suivre, sortir Leandro de là, chercher de l’aide – et lui souffle une phrase pour un ami. On inverse : l’enfant est Ayla et envoie un message, l’adulte conseille et fait une erreur que l’enfant trouve. Phrase-clé : « Chaque personne qui ne pousse pas affaiblit le courant. » Reste ouvert : le soir, le portable d’Ayla vibre.",
+   "text": "L’adulte lit la scène devant la maison relais, puis joue Ayla, qui envoie des messages vocaux : « Ech weess net, wat ech maache soll. » (Je ne sais pas quoi faire.) L’enfant la conseille par messages vocaux – une gomme sert de portable, et il ou elle fait les cent pas en parlant. Ayla objecte : « Tout le monde va me trouver lâche », « Leandro, c’est mon ami », « Dylan va se moquer de moi ». L’enfant lui donne trois chemins – ne pas suivre, sortir Leandro de là, chercher de l’aide – et une phrase pour un ami. On inverse : l’enfant est Ayla, l’adulte conseille et fait une erreur que l’enfant trouve. Phrase-clé : « Chaque personne qui ne pousse pas affaiblit le courant. » Reste ouvert : le soir, le portable d’Ayla vibre.",
    "sagen": [
     "Je suis Ayla : « Ech weess net, wat ech maache soll. » Tu me conseilles quoi ?",
     "Et si tout le monde pense que je suis lâche ?",
@@ -5643,6 +5699,10 @@
      {
       "titel": "Police grand-ducale – Notruf 113 und Tipps für Zeuginnen und Zeugen (Luxemburg)",
       "url": "https://police.public.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, wenn im Chat Bilder oder Drohungen kreisen (Luxemburg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    },
@@ -5692,6 +5752,10 @@
      {
       "titel": "Police grand-ducale – urgence 113 et conseils aux témoins (Luxembourg)",
       "url": "https://police.public.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, quand des images ou des menaces circulent dans un chat (Luxembourg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    }
@@ -5848,6 +5912,10 @@
      {
       "titel": "Police grand-ducale – Notruf 113 und Tipps für Zeuginnen und Zeugen (Luxemburg)",
       "url": "https://police.public.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, wenn im Chat Bilder oder Drohungen kreisen (Luxemburg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    },
@@ -5896,6 +5964,10 @@
      {
       "titel": "Police grand-ducale – urgence 113 et conseils aux témoins (Luxembourg)",
       "url": "https://police.public.lu"
+     },
+     {
+      "titel": "BEE SECURE Helpline – 8002 1234, quand des images ou des menaces circulent dans un chat (Luxembourg)",
+      "url": "https://www.bee-secure.lu"
      }
     ]
    }
@@ -5985,8 +6057,8 @@
     "fr": "Sortir du courant quand ça éclate : sentir le courant, bien regarder, sortir par le côté, ne pas suivre, lancer la bouée – sans violence et sans perdre la face"
    },
    "bruecke": {
-    "de": "Letztes Mal hast du Ayla aus dem Kreis geholfen. Mittwoch, 19:00, im Chat: „Donneschdeg, 14 Auer. Leandro géint Timéo. Wien kënnt?“ (Donnerstag, 14 Uhr. Leandro gegen Timéo. Wer kommt?) Gemeint ist: hinter der Sporthalle.",
-    "fr": "La dernière fois, tu as aidé Ayla à sortir du cercle. Mercredi, 19 h, dans le chat : « Donneschdeg, 14 Auer. Leandro géint Timéo. Wien kënnt ? » (Jeudi, 14 h. Leandro contre Timéo. Qui vient ?) Sous-entendu : derrière la salle de sport."
+    "de": "Letztes Mal hast du Ayla aus dem Kreis geholfen. Mittwoch, 19:00, im Chat: „Donneschdeg, 14 Auer. Leandro géint Timéo. Wie kënnt?“ (Donnerstag, 14 Uhr. Leandro gegen Timéo. Wer kommt?) Gemeint ist: hinter der Sporthalle.",
+    "fr": "La dernière fois, tu as aidé Ayla à sortir du cercle. Mercredi, 19 h, dans le chat : « Donneschdeg, 14 Auer. Leandro géint Timéo. Wie kënnt ? » (Jeudi, 14 h. Leandro contre Timéo. Qui vient ?) Sous-entendu : derrière la salle de sport."
    }
   },
   "imSpiel": {
@@ -6263,12 +6335,12 @@
   },
   "hilfen": {
    "de": {
-    "haken": "„Donneschdeg, 14 Auer. Wien kënnt?“ – der Streit ist verabredet. Das Kind springt zwischen Petzen und Hilfe holen, wirft dann vom Rand aus den Ring und baut mit Ayla einen Plan, der sie nicht zur Verräterin macht.",
+    "haken": "„Donneschdeg, 14 Auer. Wie kënnt?“ – der Streit ist verabredet. Das Kind springt zwischen Petzen und Hilfe holen, wirft dann vom Rand aus den Ring und baut mit Ayla einen Plan, der sie nicht zur Verräterin macht.",
     "vorbereitung": [
      "Schnellstart (3 Min.): Kartenbogen drucken; Plan-Karten nach Wer/Wann/Wo/Satz in vier Reihen.",
      "Ein Tuch als Ziel, zwei Meter davor eine Linie (Schal).",
      "Ein zusammengerollter Socken oder ein weicher Ball als Ring.",
-     "Aussprache: „Donneschdeg, 14 Auer“ ≈ donneschdeg, véierzéng auer · „Wien kënnt?“ ≈ wien kennt"
+     "Aussprache: „Donneschdeg, 14 Auer“ ≈ donneschdeg, véierzéng auer · „Wie kënnt?“ ≈ wie kennt"
     ],
     "aufbau": "0′ Chat – „Was jetzt?“\n2′ Petzen oder Hilfe? – springen\n4′ Ring-Plan für Ayla, je Karte ein Wurf\n8′ Hilfe-Satz an Marisa proben\n10′ Plan für die eigene Woche oder jemand wie Ayla, Merksatz\n12′ Blatt: mein Plan, Notfall-Box\n17′ Ende\nMuss: Plan, Satz, Notfall-Box. Knapp? Vorübung mit drei Situationen.\nKern 12′ + Blatt 5′.",
     "karten": [
@@ -6344,7 +6416,7 @@
       "url": "https://police.public.lu"
      },
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -6354,12 +6426,12 @@
     ]
    },
    "fr": {
-    "haken": "« Donneschdeg, 14 Auer. Wien kënnt ? » – la bagarre est prévue. L’enfant saute entre cafter et chercher de l’aide, lance la bouée depuis le bord et construit avec Ayla un plan qui ne fait pas d’elle une traîtresse.",
+    "haken": "« Donneschdeg, 14 Auer. Wie kënnt ? » – la bagarre est prévue. L’enfant saute entre cafter et chercher de l’aide, lance la bouée depuis le bord et construit avec Ayla un plan qui ne fait pas d’elle une traîtresse.",
     "vorbereitung": [
      "Démarrage rapide (3 min) : imprimer la planche ; cartes plan en quatre rangées Qui/Quand/Où/Phrase.",
      "Un foulard comme cible, une ligne deux mètres devant (écharpe).",
      "Une chaussette roulée ou une balle souple comme bouée.",
-     "Prononcer : « Donneschdeg, 14 Auer » ≈ donnèchdègue, véierzéng aouer · « Wien kënnt ? » ≈ vine kènnt"
+     "Prononcer : « Donneschdeg, 14 Auer » ≈ donnèchdègue, véierzéng aouer · « Wie kënnt ? » ≈ vie kènnt"
     ],
     "aufbau": "0′ chat – « Et maintenant ? »\n2′ cafter ou aider ? – sauter\n4′ plan bouée pour Ayla, un lancer par carte\n8′ essayer la phrase sur Marisa\n10′ plan pour sa semaine ou pour quelqu’un comme Ayla, phrase-clé\n12′ fiche : mon plan, cadre d’urgence\n17′ fin\nIndispensable : plan, phrase, cadre d’urgence. Si ça presse : trois situations.\nKern 12′ + Blatt 5′ (cœur + fiche).",
     "karten": [
@@ -6436,7 +6508,7 @@
       "url": "https://police.public.lu"
      },
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -6531,8 +6603,8 @@
     "fr": "Sortir du courant quand ça éclate : sentir le courant, bien regarder, sortir par le côté, ne pas suivre, lancer la bouée – sans violence et sans perdre la face"
    },
    "bruecke": {
-    "de": "Letztes Mal hast du Ayla aus dem Kreis geholfen. Mittwoch, 19:00, im Chat: „Donneschdeg, 14 Auer. Leandro géint Timéo. Wien kënnt?“ (Donnerstag, 14 Uhr. Leandro gegen Timéo. Wer kommt?) Gemeint ist: hinter der Sporthalle.",
-    "fr": "La dernière fois, tu as aidé Ayla à sortir du cercle. Mercredi, 19 h, dans le chat : « Donneschdeg, 14 Auer. Leandro géint Timéo. Wien kënnt ? » (Jeudi, 14 h. Leandro contre Timéo. Qui vient ?) Sous-entendu : derrière la salle de sport."
+    "de": "Letztes Mal hast du Ayla aus dem Kreis geholfen. Mittwoch, 19:00, im Chat: „Donneschdeg, 14 Auer. Leandro géint Timéo. Wie kënnt?“ (Donnerstag, 14 Uhr. Leandro gegen Timéo. Wer kommt?) Gemeint ist: hinter der Sporthalle.",
+    "fr": "La dernière fois, tu as aidé Ayla à sortir du cercle. Mercredi, 19 h, dans le chat : « Donneschdeg, 14 Auer. Leandro géint Timéo. Wie kënnt ? » (Jeudi, 14 h. Leandro contre Timéo. Qui vient ?) Sous-entendu : derrière la salle de sport."
    }
   },
   "imSpiel": {
@@ -6829,12 +6901,12 @@
   },
   "hilfen": {
    "de": {
-    "haken": "„Donneschdeg, 14 Auer. Wien kënnt?“ – der Streit ist verabredet. Das Kind springt zwischen Petzen und Hilfe holen, wirft dann vom Rand aus den Ring und baut mit Ayla einen Plan, der sie nicht zur Verräterin macht.",
+    "haken": "„Donneschdeg, 14 Auer. Wie kënnt?“ – der Streit ist verabredet. Das Kind springt zwischen Petzen und Hilfe holen, wirft dann vom Rand aus den Ring und baut mit Ayla einen Plan, der sie nicht zur Verräterin macht.",
     "vorbereitung": [
      "Schnellstart (3 Min.): Kartenbogen drucken; Plan-Karten nach Wer/Wann/Wo/Satz in vier Reihen.",
      "Ein Tuch als Ziel, zwei Meter davor eine Linie (Schal).",
      "Ein zusammengerollter Socken oder ein weicher Ball als Ring.",
-     "Aussprache: „Donneschdeg, 14 Auer“ ≈ donneschdeg, véierzéng auer · „Wien kënnt?“ ≈ wien kennt"
+     "Aussprache: „Donneschdeg, 14 Auer“ ≈ donneschdeg, véierzéng auer · „Wie kënnt?“ ≈ wie kennt"
     ],
     "aufbau": "0′ Chat – „Was jetzt?“\n2′ Petzen oder Hilfe? – springen\n4′ Ring-Plan für Ayla, je Karte ein Wurf\n8′ Hilfe-Satz an Marisa proben\n10′ Plan für die eigene Woche oder jemand wie Ayla, Merksatz\n12′ Blatt: mein Plan, Notfall-Box\n17′ Ende\nMuss: Plan, Satz, Notfall-Box. Knapp? Vorübung mit drei Situationen.\nKern 12′ + Blatt 5′.",
     "karten": [
@@ -6910,7 +6982,7 @@
       "url": "https://police.public.lu"
      },
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -6920,12 +6992,12 @@
     ]
    },
    "fr": {
-    "haken": "« Donneschdeg, 14 Auer. Wien kënnt ? » – la bagarre est prévue. L’enfant saute entre cafter et chercher de l’aide, lance la bouée depuis le bord et construit avec Ayla un plan qui ne fait pas d’elle une traîtresse.",
+    "haken": "« Donneschdeg, 14 Auer. Wie kënnt ? » – la bagarre est prévue. L’enfant saute entre cafter et chercher de l’aide, lance la bouée depuis le bord et construit avec Ayla un plan qui ne fait pas d’elle une traîtresse.",
     "vorbereitung": [
      "Démarrage rapide (3 min) : imprimer la planche ; cartes plan en quatre rangées Qui/Quand/Où/Phrase.",
      "Un foulard comme cible, une ligne deux mètres devant (écharpe).",
      "Une chaussette roulée ou une balle souple comme bouée.",
-     "Prononcer : « Donneschdeg, 14 Auer » ≈ donnèchdègue, véierzéng aouer · « Wien kënnt ? » ≈ vine kènnt"
+     "Prononcer : « Donneschdeg, 14 Auer » ≈ donnèchdègue, véierzéng aouer · « Wie kënnt ? » ≈ vie kènnt"
     ],
     "aufbau": "0′ chat – « Et maintenant ? »\n2′ cafter ou aider ? – sauter\n4′ plan bouée pour Ayla, un lancer par carte\n8′ essayer la phrase sur Marisa\n10′ plan pour sa semaine ou pour quelqu’un comme Ayla, phrase-clé\n12′ fiche : mon plan, cadre d’urgence\n17′ fin\nIndispensable : plan, phrase, cadre d’urgence. Si ça presse : trois situations.\nKern 12′ + Blatt 5′ (cœur + fiche).",
     "karten": [
@@ -7002,7 +7074,7 @@
       "url": "https://police.public.lu"
      },
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7076,8 +7148,8 @@
     "fr": "Sortir du courant quand ça éclate : sentir le courant, bien regarder, sortir par le côté, ne pas suivre, lancer la bouée – sans violence et sans perdre la face"
    },
    "bruecke": {
-    "de": "Letztes Mal hast du Ayla aus dem Kreis geholfen. Mittwoch, 19:00, im Chat: „Donneschdeg, 14 Auer. Leandro géint Timéo. Wien kënnt?“ (Donnerstag, 14 Uhr. Leandro gegen Timéo. Wer kommt?) Gemeint ist: hinter der Sporthalle.",
-    "fr": "La dernière fois, tu as aidé Ayla à sortir du cercle. Mercredi, 19 h, dans le chat : « Donneschdeg, 14 Auer. Leandro géint Timéo. Wien kënnt ? » (Jeudi, 14 h. Leandro contre Timéo. Qui vient ?) Sous-entendu : derrière la salle de sport."
+    "de": "Letztes Mal hast du Ayla aus dem Kreis geholfen. Mittwoch, 19:00, im Chat: „Donneschdeg, 14 Auer. Leandro géint Timéo. Wie kënnt?“ (Donnerstag, 14 Uhr. Leandro gegen Timéo. Wer kommt?) Gemeint ist: hinter der Sporthalle.",
+    "fr": "La dernière fois, tu as aidé Ayla à sortir du cercle. Mercredi, 19 h, dans le chat : « Donneschdeg, 14 Auer. Leandro géint Timéo. Wie kënnt ? » (Jeudi, 14 h. Leandro contre Timéo. Qui vient ?) Sous-entendu : derrière la salle de sport."
    }
   },
   "ort": "raum",
@@ -7173,7 +7245,7 @@
       "url": "https://police.public.lu"
      },
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7234,7 +7306,7 @@
       "url": "https://police.public.lu"
      },
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7308,8 +7380,8 @@
     "fr": "Sortir du courant quand ça éclate : sentir le courant, bien regarder, sortir par le côté, ne pas suivre, lancer la bouée – sans violence et sans perdre la face"
    },
    "bruecke": {
-    "de": "Letztes Mal hast du Ayla aus dem Kreis geholfen. Mittwoch, 19:00, im Chat: „Donneschdeg, 14 Auer. Leandro géint Timéo. Wien kënnt?“ (Donnerstag, 14 Uhr. Leandro gegen Timéo. Wer kommt?) Gemeint ist: hinter der Sporthalle.",
-    "fr": "La dernière fois, tu as aidé Ayla à sortir du cercle. Mercredi, 19 h, dans le chat : « Donneschdeg, 14 Auer. Leandro géint Timéo. Wien kënnt ? » (Jeudi, 14 h. Leandro contre Timéo. Qui vient ?) Sous-entendu : derrière la salle de sport."
+    "de": "Letztes Mal hast du Ayla aus dem Kreis geholfen. Mittwoch, 19:00, im Chat: „Donneschdeg, 14 Auer. Leandro géint Timéo. Wie kënnt?“ (Donnerstag, 14 Uhr. Leandro gegen Timéo. Wer kommt?) Gemeint ist: hinter der Sporthalle.",
+    "fr": "La dernière fois, tu as aidé Ayla à sortir du cercle. Mercredi, 19 h, dans le chat : « Donneschdeg, 14 Auer. Leandro géint Timéo. Wie kënnt ? » (Jeudi, 14 h. Leandro contre Timéo. Qui vient ?) Sous-entendu : derrière la salle de sport."
    }
   },
   "ort": "raum",
@@ -7400,7 +7472,7 @@
       "url": "https://police.public.lu"
      },
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7457,7 +7529,7 @@
       "url": "https://police.public.lu"
      },
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7888,7 +7960,7 @@
     "warum": "Ein Wenn-dann-Plan mit Hilfe-Person macht wahrscheinlicher, dass das Kind ihn im Alltag nutzt (Gollwitzer & Sheeran, 2006). Ärger-Trainings für Kinder wirken vor allem, wenn Fertigkeiten geübt und nicht nur besprochen werden (Sukhodolsky et al., 2004) – darum läuft das Kind seinen Ring mit allen Bewegungen ab.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7966,7 +8038,7 @@
     "warum": "Un plan si… alors avec une personne d’aide rend plus probable que l’enfant l’utilise au quotidien (Gollwitzer & Sheeran, 2006). Les entraînements à la colère pour enfants agissent surtout quand on s’exerce au lieu d’en parler seulement (Sukhodolsky et al., 2004) – d’où le tour de la bouée avec tous les gestes.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -8429,7 +8501,7 @@
     "warum": "Ein Wenn-dann-Plan mit Hilfe-Person macht wahrscheinlicher, dass das Kind ihn im Alltag nutzt (Gollwitzer & Sheeran, 2006). Ärger-Trainings für Kinder wirken vor allem, wenn Fertigkeiten geübt und nicht nur besprochen werden (Sukhodolsky et al., 2004) – darum läuft das Kind seinen Ring mit allen Bewegungen ab.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -8507,7 +8579,7 @@
     "warum": "Un plan si… alors avec une personne d’aide rend plus probable que l’enfant l’utilise au quotidien (Gollwitzer & Sheeran, 2006). Les entraînements à la colère pour enfants agissent surtout quand on s’exerce au lieu d’en parler seulement (Sukhodolsky et al., 2004) – d’où le tour de la bouée avec tous les gestes.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -8671,7 +8743,7 @@
     "warum": "Ein Wenn-dann-Plan mit Hilfe-Person macht wahrscheinlicher, dass das Kind ihn im Alltag nutzt (Gollwitzer & Sheeran, 2006). Ärger-Trainings für Kinder wirken vor allem, wenn Fertigkeiten geübt und nicht nur besprochen werden (Sukhodolsky et al., 2004) – darum läuft das Kind seinen Ring mit allen Bewegungen ab.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -8725,7 +8797,7 @@
     "warum": "Un plan si… alors avec une personne d’aide rend plus probable que l’enfant l’utilise au quotidien (Gollwitzer & Sheeran, 2006). Les entraînements à la colère pour enfants agissent surtout quand on s’exerce au lieu d’en parler seulement (Sukhodolsky et al., 2004) – d’où le tour de la bouée avec tous les gestes.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -8888,7 +8960,7 @@
     "warum": "Ein Wenn-dann-Plan mit Hilfe-Person macht wahrscheinlicher, dass das Kind ihn im Alltag nutzt (Gollwitzer & Sheeran, 2006). Ärger-Trainings für Kinder wirken vor allem, wenn Fertigkeiten geübt und nicht nur besprochen werden (Sukhodolsky et al., 2004) – darum läuft das Kind seinen Ring mit allen Bewegungen ab.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr (Luxemburg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonym und kostenlos; Telefon Mo–Sa, Chat dienstags 18–21 Uhr · Elterentelefon 8002 4444 (Luxemburg)",
       "url": "https://www.kjt.lu"
      },
      {
@@ -8941,7 +9013,7 @@
     "warum": "Un plan si… alors avec une personne d’aide rend plus probable que l’enfant l’utilise au quotidien (Gollwitzer & Sheeran, 2006). Les entraînements à la colère pour enfants agissent surtout quand on s’exerce au lieu d’en parler seulement (Sukhodolsky et al., 2004) – d’où le tour de la bouée avec tous les gestes.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h (Luxembourg)",
+      "titel": "Kanner-Jugendtelefon KJT – 116 111, anonyme et gratuit ; téléphone du lundi au samedi, chat le mardi de 18 h à 21 h · Elterentelefon 8002 4444 (Luxembourg)",
       "url": "https://www.kjt.lu"
      },
      {
