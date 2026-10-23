@@ -9332,5 +9332,108 @@
         "nicht": "Aucun jugement sur le corps, la nourriture ou le poids – même en compliment –, pas de pesée ni de mesure devant les autres et aucune supposition de trouble alimentaire devant la classe."
       }
     }
+  },
+  "kurs-achtsamkeit-13-16": {
+    "name": {
+      "de": "Kapp fräi",
+      "fr": "Kapp fräi – la tête libre"
+    },
+    "welt": {
+      "de": "Contern: Im Jugendhaus trainiert der Erzieher Serge dienstags drei Jugendliche im 3x3-Basketball – er spielt Rollstuhlbasketball, trainiert aus dem Rollstuhl, trifft im Sitzen von der Freiwurflinie fast immer und macht vor jedem Wurf dieselbe kleine Routine. In fünf Wochen ist das Turnier der Jugendhäuser. Hiba (15, 4G; Arabisch, Französisch, Lëtzebuergesch, Deutsch) trifft im Training fast alles, im Spiel an der Linie kaum noch etwas, seit Sven nach dem Testspiel gesagt hat: „Mit dir gewinnen wir nie.“ Sven (16, 3G; Lëtzebuergesch, Deutsch, Französisch) bereut den Satz und dreht ihn nachts im Kopf, bis um 1:47 Uhr; Jun (14, 5C; Mandarin, Lëtzebuergesch, Französisch, Englisch) führt die Wurf-Notizen im Handy, hat 63 ungelesene Nachrichten und findet Meditation „peinlech“. Der oder die Jugendliche wird Mental-Trainer·in der drei: probiert jedes Werkzeug zuerst selbst aus – Giraffen-Test und Papierkorb-Linie, Navi-Stimme, Warum-Kreisel, Pling-Selbstversuch, Zehn-Sekunden-Routine –, berät jede Figur und setzt aus fünf Spuren zusammen, was Serge vor jedem Freiwurf leise sagt. Am Turniertag ist nicht alles gelöst – aber Hiba geht an die Linie, obwohl ihr Kopf redet.",
+      "fr": "Contern : à la maison des jeunes, l’éducateur Serge entraîne le mardi trois jeunes au basket 3x3 – joueur de basket en fauteuil, il entraîne depuis son fauteuil et réussit, assis, presque tous ses lancers francs et fait avant chaque tir la même petite routine. Dans cinq semaines a lieu le tournoi des maisons des jeunes. Hiba (15 ans, 4G ; arabe, français, luxembourgeois, allemand) met presque tout à l’entraînement, mais en match, sur la ligne, plus grand-chose depuis que Sven lui a lancé après le match amical : « Avec toi, on ne gagnera jamais. » Sven (16 ans, 3G ; luxembourgeois, allemand, français) regrette sa phrase et la retourne dans sa tête la nuit, jusqu’à 1 h 47 ; Jun (14 ans, 5C ; mandarin, luxembourgeois, français, anglais) tient les notes de tirs sur son téléphone, a 63 messages non lus et trouve la méditation « peinlech ». Le ou la jeune devient le coach mental des trois : il ou elle essaie chaque outil d’abord sur soi – test de la girafe et ligne de la corbeille, voix de GPS, tourner en rond, expérience du pling, routine de dix secondes –, conseille chaque personnage et reconstitue à partir de cinq indices ce que Serge dit tout bas avant chaque lancer franc. Le jour du tournoi, tout n’est pas réglé – mais Hiba va sur la ligne, même si sa tête parle."
+    },
+    "de": {
+      "warum": "Der Kurs folgt dem Weg der Akzeptanz- und Commitment-Therapie (ACT) für Jugendliche: erst erleben, dann benennen, dann wählen – jedes Werkzeug wird als Selbstversuch ausprobiert, nicht erklärt oder verordnet (Hayes et al., 2012; Livheim et al., 2015). Sitzung 1 zeigt im Experiment, dass Wegdrücken kaum klappt (Wegner et al., 1987), und übt das Bemerken mit einem äußeren Anker. Sitzung 2 übt Defusion: Gedanken als Sätze erkennen statt ihnen zu folgen (Masuda et al., 2004). Sitzung 3 trennt Grübeln (abstraktes Warum) von Problemlösen (konkretes Wie) und übt das Parken (Watkins & Moulds, 2005; McGowan & Behar, 2013). Sitzung 4 übt das Zurückkehren trotz Handy-Reiz (Stothart et al., 2015). Sitzung 5 überträgt in Sport, Schule und Einschlafen – als Wenn-dann-Plan mit Probelauf (Gollwitzer & Sheeran, 2006; Cotterill, 2010; Scullin et al., 2018). Sitzung 6 schaut zurück und lässt auswählen, was bleibt. Die Figuren tragen alle Beispiele, damit niemand Eigenes zeigen muss; Basketball, Handy und die Expertenrolle holen Jugendliche ab, denen „Meditation peinlich“ ist. Ehrlich: Achtsamkeitsprogramme zeigen bei Jugendlichen kleine, gemischte Effekte und waren in der großen MYRIAD-Studie nicht besser als die üblichen Schulangebote (Dunning et al., 2019; Kuyken et al., 2022) – darum Werkzeuge zum Ausprobieren, keine Versprechen.",
+      "achtung": [
+        "Keine Wirkversprechen: Sagen Sie „Probier’s aus – du entscheidest, was taugt.“ Schulische Achtsamkeit wirkte im Schnitt klein (Dunning et al., 2019) und in MYRIAD nicht besser als üblicher Unterricht (Kuyken et al., 2022).",
+        "Vorsicht bei beginnenden Beschwerden: In MYRIAD gab es Hinweise, dass Jugendliche mit beginnenden psychischen Problemen eher nicht profitierten oder es ihnen schlechter ging (Montero-Marin et al., 2022). Wirkt jemand anhaltend niedergeschlagen, ängstlich oder schlaflos: nicht weiter üben, sondern SePAS bzw. CePAS einbeziehen.",
+        "Freiwillig, Augen offen, kurz: Keine Übung verlangt geschlossene Augen oder lange Stille. Anker zuerst außen (Füße, Ball, Punkt im Raum); Atem nur als Angebot, nie anhalten. Das folgt Treleaven (2018) – einer Praxisempfehlung für traumasensible Achtsamkeit, keinem Wirkbeleg.",
+        "Kein religiöser oder esoterischer Rahmen: keine Klangschale, keine „Energie“, kein „Loslassen“. Es geht um Aufmerksamkeit und Gedanken – wie im Sport.",
+        "Eigene Beispiele nur freiwillig; Grübel-Themen nie ausfragen (Familie, Schlimmes, Schlaf zu Hause). Die Figuren tragen alles.",
+        "Sven hat Hiba verletzt; die Verantwortung liegt bei ihm. Hiba bekommt keine Tipps, „nicht so empfindlich“ zu sein; ihre Werkzeuge sind für ihren Kopf, nicht gegen Svens Satz.",
+        "Kein „Handysucht“-Etikett, keine Verbote; wer kein eigenes Handy hat, berät Jun. Treffer an der Papierkorb-Linie werden nie gezählt oder verglichen – es zählt das Merken.",
+        "Wenn es echt wird (anhaltende Schlaflosigkeit, Hoffnungslosigkeit, „Ich will nicht mehr“): Krisenkarte nutzen, direkt nach Suizidgedanken fragen, heute SePAS (national CePAS 247 75 910); akute Gefahr 112."
+      ]
+    },
+    "fr": {
+      "warum": "Le parcours suit la logique de la thérapie d’acceptation et d’engagement (ACT) pour adolescents : d’abord vivre, puis nommer, puis choisir – chaque outil est testé sur soi, pas expliqué ni imposé (Hayes et al., 2012 ; Livheim et al., 2015). La rencontre 1 montre par l’expérience que chasser une pensée marche mal (Wegner et al., 1987) et entraîne à remarquer avec une ancre extérieure. La rencontre 2 entraîne la défusion : reconnaître les pensées comme des phrases au lieu de les suivre (Masuda et al., 2004). La rencontre 3 distingue la rumination (« pourquoi » abstrait) de la résolution de problèmes (« comment » concret) et entraîne à garer une pensée (Watkins & Moulds, 2005 ; McGowan & Behar, 2013). La rencontre 4 entraîne à revenir malgré le téléphone (Stothart et al., 2015). La rencontre 5 transfère au sport, à l’école et à l’endormissement – en plan « si… alors » avec essai (Gollwitzer & Sheeran, 2006 ; Cotterill, 2010 ; Scullin et al., 2018). La rencontre 6 fait le bilan et laisse choisir ce qui reste. Les personnages portent tous les exemples, pour que personne n’ait à se dévoiler ; basket, téléphone et rôle d’expert accrochent les jeunes pour qui « la méditation, c’est la honte ». Honnêtement : chez les adolescents, la pleine conscience a des effets faibles et mitigés, et dans la grande étude MYRIAD, elle n’a pas fait mieux que l’offre scolaire habituelle (Dunning et al., 2019 ; Kuyken et al., 2022) – d’où des outils à essayer, sans promesse.",
+      "achtung": [
+        "Aucune promesse d’effet : dites « Essaie – c’est toi qui décides ce qui marche. » À l’école, la pleine conscience a eu en moyenne de petits effets (Dunning et al., 2019) et, dans MYRIAD, pas mieux que l’enseignement habituel (Kuyken et al., 2022).",
+        "Prudence en cas de difficultés naissantes : MYRIAD donne des indices que les jeunes ayant déjà des difficultés psychiques n’en profitaient pas, voire allaient moins bien (Montero-Marin et al., 2022). Si quelqu’un semble durablement abattu, anxieux ou sans sommeil : ne pas continuer, impliquer le SePAS ou le CePAS.",
+        "Libre, yeux ouverts, court : aucun exercice n’exige de fermer les yeux ni un long silence. Ancres d’abord à l’extérieur (pieds, balle, point de la pièce) ; le souffle seulement comme offre, jamais retenu. Cela suit Treleaven (2018) – une recommandation de pratique sensible au trauma, pas une preuve d’efficacité.",
+        "Aucun cadre religieux ou ésotérique : pas de bol chantant, pas d’« énergie », pas de « lâcher-prise ». Il s’agit d’attention et de pensées – comme en sport.",
+        "Exemples personnels seulement si le ou la jeune le veut ; ne jamais questionner sur les ruminations (famille, choses graves, sommeil à la maison). Les personnages portent tout.",
+        "Sven a blessé Hiba ; la responsabilité est la sienne. Hiba ne reçoit pas de conseil pour être « moins sensible » ; ses outils sont pour sa tête, pas contre la phrase de Sven.",
+        "Pas d’étiquette « accro au portable », pas d’interdit ; qui n’a pas de téléphone conseille Jun. Les paniers à la corbeille ne sont jamais comptés ni comparés – ce qui compte, c’est de remarquer.",
+        "Si ça devient sérieux (insomnie durable, désespoir, « J’en peux plus ») : carte de crise, demander directement s’il y a des pensées suicidaires, SePAS aujourd’hui (au national CePAS 247 75 910) ; danger aigu 112."
+      ]
+    },
+    "quellen": [
+      "Cotterill, S. (2010): Pre-performance routines in sport: Current understanding and future directions. International Review of Sport and Exercise Psychology, 3(2), 132–153.",
+      "Dunning, D. L., Griffiths, K., Kuyken, W., Crane, C., Foulkes, L., Parker, J. & Dalgleish, T. (2019): Research Review: The effects of mindfulness-based interventions on cognition and mental health in children and adolescents – a meta-analysis of randomized controlled trials. Journal of Child Psychology and Psychiatry, 60(3), 244–258.",
+      "Gollwitzer, P. M. & Sheeran, P. (2006): Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119.",
+      "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012): Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+      "Kuyken, W., Ball, S., Crane, C., Ganguli, P., Jones, B., Montero-Marin, J. et al. (2022): Effectiveness and cost-effectiveness of universal school-based mindfulness training compared with normal school provision in reducing risk of mental health problems and promoting well-being in adolescence: the MYRIAD cluster randomised controlled trial. Evidence-Based Mental Health, 25(3), 99–109.",
+      "Livheim, F., Hayes, L., Ghaderi, A., Magnusdottir, T., Högfeldt, A., Rowse, J., Turner, S., Hayes, S. C. & Tengström, A. (2015): The effectiveness of Acceptance and Commitment Therapy for adolescent mental health: Swedish and Australian pilot outcomes. Journal of Child and Family Studies, 24, 1016–1030.",
+      "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004): Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485.",
+      "McGowan, S. K. & Behar, E. (2013): A preliminary investigation of stimulus control training for worry: Effects on anxiety and insomnia. Behavior Modification, 37(1), 90–112.",
+      "Montero-Marin, J., Allwood, M., Ball, S., Crane, C., De Wilde, K., Hinze, V. et al. (2022): School-based mindfulness training in early adolescence: what works, for whom and how in the MYRIAD trial? Evidence-Based Mental Health, 25(3), 117–124.",
+      "Nolen-Hoeksema, S., Wisco, B. E. & Lyubomirsky, S. (2008): Rethinking rumination. Perspectives on Psychological Science, 3(5), 400–424.",
+      "Ryan, R. M. & Deci, E. L. (2000): Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist, 55(1), 68–78.",
+      "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018): The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146.",
+      "Stothart, C., Mitchum, A. & Yehnert, C. (2015): The attentional cost of receiving a cell phone notification. Journal of Experimental Psychology: Human Perception and Performance, 41(4), 893–897.",
+      "Treleaven, D. A. (2018): Trauma-Sensitive Mindfulness: Practices for Safe and Transformative Healing. New York: W. W. Norton.",
+      "Watkins, E. R. (2008): Constructive and unconstructive repetitive thought. Psychological Bulletin, 134(2), 163–206.",
+      "Watkins, E. & Moulds, M. (2005): Distinct modes of ruminative self-focus: Impact of abstract versus concrete rumination on problem solving in depression. Emotion, 5(3), 319–328.",
+      "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987): Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13."
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Der oder die Jugendliche lernt, abschweifende Gedanken zu bemerken, sie als Gedanken zu benennen statt ihnen zu folgen, Grübeln von einem nächsten Schritt zu unterscheiden und die Aufmerksamkeit trotz Handy und Kopfkino zurückzuholen – mit kurzen Routinen für Schule, Sport und Einschlafen.",
+        "stichwort": "Kapp fräi: Merken – Nennen – Wählen – Zurück. „Push?“",
+        "sitzungen": [
+          "Woche 1: Die Giraffe auf dem Korb – Wegdrücken klappt nicht; an der Papierkorb-Linie Abschweifen merken und zum Anker zurück.",
+          "Woche 2: Der Satz, der klebt – Gedanken mit „Ich habe den Gedanken, dass …“ und Navi-Stimme auf Abstand bringen.",
+          "Woche 3: Kreisel um 1:47 Uhr – Warum dreht sich, Wie geht weiter; „Kann ich jetzt was tun?“, sonst parken.",
+          "Woche 4: Pling – und wer entscheidet? Selbstversuch mit Ablenkung, Juns Handy-Plan.",
+          "Woche 5: Zehn Sekunden – eine eigene Routine für Linie, Devoir oder Bett bauen und proben.",
+          "Woche 6: Turniertag in Contern – Werkzeuge wählen, fünf Spuren kombinieren, eigene Kopf-frei-Karte."
+        ],
+        "helfen": [
+          "So erinnern Sie: leise und ohne Zuschauer – „Push?“; er oder sie nickt, tippt kurz auf den Tisch und macht weiter.",
+          "So loben Sie das Zurückkommen, nicht das Stillsein: „Du warst kurz weg und bist von selbst zurück.“",
+          "Erlauben Sie vor einem Test oder Wurf zehn Sekunden für die eigene Routine, und vereinbaren Sie Handy-Regeln gemeinsam statt Verbote."
+        ],
+        "beobachten": [
+          "bemerkt Abschweifen und kehrt ohne Ermahnung zur Aufgabe zurück",
+          "spricht über einen Gedanken mit Abstand („Mein Kopf sagt gerade …“)",
+          "unterscheidet Grübeln von einem nächsten Schritt und nutzt eine kurze Routine"
+        ],
+        "nicht": "Nicht „Konzentrier dich!“ oder „Denk nicht dran!“ sagen, keine Achtsamkeitsübung verordnen oder vor anderen vorführen lassen – und nichts versprechen."
+      },
+      "fr": {
+        "ziel": "Le ou la jeune apprend à remarquer quand ses pensées s’égarent, à les nommer comme des pensées au lieu de les suivre, à distinguer la rumination d’un prochain pas et à ramener son attention malgré le téléphone et le cinéma intérieur – avec de courtes routines pour l’école, le sport et l’endormissement.",
+        "stichwort": "Kapp fräi : remarquer – nommer – choisir – revenir. « Notif ? »",
+        "sitzungen": [
+          "Semaine 1 : la girafe sur le panier – chasser ne marche pas ; sur la ligne de la corbeille, remarquer que l’esprit s’égare et revenir à l’ancre.",
+          "Semaine 2 : la phrase qui colle – mettre les pensées à distance avec « J’ai la pensée que… » et la voix de GPS.",
+          "Semaine 3 : tourner en rond à 1 h 47 – le pourquoi tourne, le comment avance ; « Je peux agir, là ? », sinon garer.",
+          "Semaine 4 : pling – et qui décide ? Expérience avec distraction, plan téléphone de Jun.",
+          "Semaine 5 : dix secondes – construire et répéter sa routine pour la ligne, le devoir ou le lit.",
+          "Semaine 6 : jour de tournoi à Contern – choisir des outils, combiner cinq indices, sa carte tête libre."
+        ],
+        "helfen": [
+          "Pour rappeler : discrètement, sans témoins – « Notif ? » ; le ou la jeune hoche la tête, tapote la table et continue.",
+          "Félicitez le retour, pas l’immobilité : « Tu es parti·e un moment et tu es revenu·e tout·e seul·e. »",
+          "Accordez avant un test ou un tir dix secondes pour sa routine, et convenez ensemble de règles pour le téléphone plutôt que d’interdire."
+        ],
+        "beobachten": [
+          "remarque quand il ou elle décroche et revient à la tâche sans rappel",
+          "parle d’une pensée avec distance (« Ma tête me dit là… »)",
+          "distingue rumination et prochain pas, et utilise une courte routine"
+        ],
+        "nicht": "Ne pas dire « Concentre-toi ! » ou « N’y pense pas ! », ne pas imposer d’exercice de pleine conscience ni le faire montrer devant les autres – et ne rien promettre."
+      }
+    }
   }
 }
