@@ -523,6 +523,15 @@ const KURS_BILD: Record<string, string> = {
   'comeback-10-12': 'motiv:fallschirm', 'deeskalation-10-12': 'motiv:rettungsring', 'stress-13-16': 'motiv:schiff', 'trauer-10-12': 'motiv:vogel',
   // Welle 4 (23.10.2026)
   'koerper-4-6': 'motiv:koerper', 'trauer-4-6': 'motiv:nest', 'stress-7-9': 'motiv:gedanken-kopf', 'gaming-7-9': 'motiv:karussell', 'comeback-7-9': 'motiv:schnecke', 'familie-4-6': 'motiv:schneckenhaus',
+  // Wellen 5–9 (23.10.2026; ohne Eintrag stand bei Medien-Kursen das Handy oben, auch wenn der Kurs kein Gerät voraussetzt)
+  'deeskalation-7-9': 'motiv:haendedruck', 'familie-10-12': 'motiv:zug', 'socialmedia-10-12': 'motiv:sprechblase', 'koerper-10-12': 'motiv:kran',
+  'motivation-7-9': 'motiv:bauklotz', 'trauer-13-16': 'motiv:kamera', 'identitaet-13-16': 'motiv:tisch', 'mobbing-4-6': 'motiv:frosch',
+  'stress-4-6': 'motiv:gluehwuermchen', 'zukunft-10-12': 'motiv:rucksack', 'gaming-13-16': 'motiv:controller', 'achtsamkeit-10-12': 'motiv:ohr',
+  'mitbestimmen-10-12': 'motiv:palette', 'mitbestimmen-13-16': 'motiv:megafon', 'achtsamkeit-7-9': 'motiv:blatt', 'fakenews-10-12': 'motiv:krokodil',
+  'selbstfuersorge-10-12': 'motiv:feuer', 'identitaet-7-9': 'motiv:baum', 'koerper-13-16': 'motiv:laufen', 'achtsamkeit-13-16': 'motiv:basketball',
+  'deeskalation-4-6': 'motiv:feuerwehrauto', 'selbstfuersorge-7-9': 'motiv:pfote', 'geld-13-16': 'motiv:einkaufstasche', 'medien-7-9': 'motiv:fernseher',
+  'fakenews-7-9': 'motiv:schiff', 'geld-7-9': 'motiv:waage', 'zukunft-7-9': 'motiv:werkzeug', 'zukunft-4-6': 'motiv:marienkaefer',
+  'medien-4-6': 'motiv:lamm', 'mitbestimmen-4-6': 'motiv:paket',
 }
 
 const KERNBLATT_BEREICH: Record<string, Bereich> = {
