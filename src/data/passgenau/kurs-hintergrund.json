@@ -8827,5 +8827,107 @@
         "nicht": "Pas de « Tu dois bien avoir un avis » devant les autres, pas de fausses consultations dont le résultat est déjà fixé, et pas de vote à la majorité sur les besoins fondamentaux d’un enfant."
       }
     }
+  },
+  "kurs-medien-7-9": {
+    "name": {
+      "de": "Ich drück selbst",
+      "fr": "C’est moi qui appuie"
+    },
+    "welt": {
+      "de": "Beckerich im Westen Luxemburgs: In der Maison relais neben der Grundschule soll im Ruheraum ein großer Bildschirm an die Wand. Der Erzieher Jeannot, der selbst bei Angel-Videos schwer aufhören kann, sagt: Vorher bauen wir für die Kleinen aus dem Zyklus 1 eine Fernbedienung aus Karton – jede Taste kann etwas, das man über Bildschirme wissen muss. Liz (8, Zyklus 3.1; Lëtzebuergesch, Deutsch, Französisch) ruft bei jedem Katzenvideo „Nach eent!“ (noch eins), Elio (9, Zyklus 3.2; Italienisch, Französisch, Lëtzebuergesch) spielt Rollstuhl-Basketball und träumt von einem eigenen Kanal, Iara (7, Zyklus 2.2; Portugiesisch, Lëtzebuergesch, Französisch) hat kein Handy und ist Profi fürs Nichtstun. Von Treffen zu Treffen passiert den dreien etwas – ein Countdown, der nie aufhört, Gratis-Handschuhe, ein Geheimnis, ein verräterisches Foto, ein Stromausfall –, und das Kind findet als Fernbedienungs-Profi jedes Mal selbst heraus, welche Taste hilft, bis es am Ende den Kleinen die ganze Fernbedienung erklärt.",
+      "fr": "Beckerich, dans l’ouest du Luxembourg : dans la maison relais à côté de l’école fondamentale, un grand écran doit être accroché au mur de la salle calme. L’éducateur Jeannot, qui a lui-même du mal à arrêter les vidéos de pêche, dit : avant, on fabrique pour les petits du cycle 1 une télécommande en carton – chaque touche sait faire quelque chose qu’il faut savoir sur les écrans. Liz (8 ans, cycle 3.1 ; luxembourgeois, allemand, français) crie « Nach eent ! » (encore une) à chaque vidéo de chats, Elio (9 ans, cycle 3.2 ; italien, français, luxembourgeois) joue au basket en fauteuil roulant et rêve de sa propre chaîne, Iara (7 ans, cycle 2.2 ; portugais, luxembourgeois, français) n’a pas de téléphone et est la pro du « ne rien faire ». De rencontre en rencontre, il arrive quelque chose aux trois – un compte à rebours sans fin, des gants gratuits, un secret, une photo qui en dit trop, une panne de courant –, et l’enfant, pro de la télécommande, trouve chaque fois lui-même la touche qui aide, jusqu’à expliquer toute la télécommande aux petits."
+    },
+    "de": {
+      "warum": "Forschendes Lernen statt Verbote: Das Kind erlebt jeden Mechanismus zuerst am eigenen Körper (Countdown-Weg, Trick-Jagd, Foto-Detektiv, Langeweile-Minute) und benennt ihn selbst; erst dann bekommt er eine Taste mit Satz und Bewegung. Kinder von 7 bis 9 erkennen Werbung oft am Aussehen, die Verkaufsabsicht aber noch nicht sicher (John, 1999); Wissen über Werbung schützt nur, wenn ein fester Auslöser es im Moment abruft (Rozendaal et al., 2011) – darum „Lupe: Wer will was von mir?“. Bei Vorschulkindern machte automatisches Weiterspielen eigenes Aufhören seltener (Hiniker et al., 2018); in Apps für kleine Kinder fanden Forschende häufig solche Gestaltungstricks (Radesky et al., 2022). Die Hilfe-Fertigkeit „Stopp – einem Großen sagen“ wird nach Behavioral Skills Training geübt: erklären, vormachen, üben, Rückmeldung (Miltenberger, 2008). Langeweile gilt als Signal der Aufmerksamkeit, nicht als Notfall (Westgate & Wilson, 2018; Modell aus Erwachsenenstudien); ein Wenn-dann-Satz hilft beim Umsetzen (Gollwitzer & Sheeran, 2006). Sitzung 5 überträgt in den Alltag, Sitzung 6 schaut zurück, indem das Kind den Kleinen alles erklärt (Fiorella & Mayer, 2013).",
+      "achtung": [
+        "Kein Gerät vorausgesetzt: Alle Übungen sind analog. Ob das Kind ein Handy hat, wird nicht gefragt; Eigenes nur freiwillig („bei dir oder bei anderen“). Kinder ohne Gerät sind Profis fürs Zuschauen und für die Aus-Taste – wie Iara.",
+        "Medien nicht verteufeln: Videos und Apps sind nicht schlecht; kein „Handysucht“-Etikett, keine Angstbilder übers Gehirn. Die Frage ist immer: Wer drückt – das Kind oder die App?",
+        "Bildschirmzeit ehrlich: Für Schulkinder gibt es keine Zahl, die für alle stimmt. Kinderärzte raten zu gemeinsam vereinbarten, festen Grenzen und dazu, dass Bildschirme Schlaf, Bewegung und Begegnung nicht verdrängen (AAP, 2016). Zusammenhänge zwischen Bildschirmzeit und Wohlbefinden sind im Schnitt klein (Orben & Przybylski, 2019). Keine Fragen nach Regeln, Zeiten oder Geräten zu Hause.",
+        "Gruseliges oder Komisches: nie Inhalte zeigen, beschreiben oder ansehen lassen. Erzählt ein Kind etwas: nicht hinschauen (sagen reicht), ruhig bleiben, danken, nicht ausfragen, kein Gerät als Strafe wegnehmen – sonst erzählt es beim nächsten Mal nichts. „Du bist nicht schuld“ gilt immer.",
+        "Fremde online und Bilder: Erzählt ein Kind von Fremden, die schreiben, Fotos wollen oder ein Treffen vorschlagen, oder von Nackt- oder Gewaltbildern: zuhören, danken; Bilder nicht ansehen, nicht speichern, nicht weiterleiten; heute noch Leitung. BEE SECURE Helpline 8002 1234 (berät auch Fachkräfte und Eltern); bei Erpressung, einem geplanten Treffen oder Gefahr Polizei 113. Illegale Inhalte anonym melden: BEE SECURE Stopline.",
+        "Privatsphäre ohne Angst: Das Kind sagt seine eigenen Daten nie laut; es zeigt nur, was zu wäre. Fotos von anderen nur mit deren Ja. Ob ein Kind einen Kanal haben darf, entscheiden seine Erziehungsberechtigten, nicht der Kurs. Elios Rollstuhl ist kein „Verräter“, den man verstecken muss.",
+        "Armut und Vergleiche: nicht fragen, was das Kind besitzt oder sich wünscht (Schuhe, Handy). Ideen für „Bildschirm aus“ nur aus Körper, Stimme, Papier und Menschen.",
+        "Rollenspiel: Die Fachkraft spricht Liz und alle Großen; das Kind spielt nie ein Kind, dem etwas passiert ist, sondern höchstens den helfenden Großen. Ausstieg: „Rolle aus, Jacke aus.“ Wird ein Kind still oder erschrocken: etwas Konkretes tun (malen), „Wenn du magst, erzählst du es mir später“ anbieten, nicht nachbohren.",
+        "Krise (4–9 Jahre): Sagt ein Kind etwa „Ich will tot sein“, ruhig fragen „Wie meinst du das? Willst du dir wehtun?“, zuhören; klingt es ernst oder bleibt es unklar, ruhig nachfragen und nicht allein lassen; heute noch Maison-relais-Leitung bzw. Präsident·in, Lehrkraft und I-EBS, die Eltern über die Leitung (bei Gewalt zu Hause: Leitung und ESEB; Helpline Gewalt 20 60 10 60, rund um die Uhr). Akute Gefahr 112 oder 113. Kind: Kanner-Jugendtelefon 116 111 (Mo–Sa); nachts und sonntags 112/113; für Erwachsene SOS Détresse 45 45 45 (11–23 h); Elterentelefon 8002 4444."
+      ]
+    },
+    "fr": {
+      "warum": "Apprendre en cherchant plutôt qu’interdire : l’enfant vit chaque mécanisme d’abord dans son corps (chemin du compte à rebours, chasse aux astuces, détective photo, minute d’ennui) et le nomme lui-même ; ensuite seulement, il reçoit une touche avec une phrase et un geste. Entre 7 et 9 ans, les enfants reconnaissent souvent la pub à son allure, mais pas encore sûrement l’intention de vendre (John, 1999) ; savoir ce qu’est la pub ne protège que si un déclencheur fixe le rappelle sur le moment (Rozendaal et al., 2011) – d’où « Loupe : qui veut quoi de moi ? ». Chez des enfants d’âge préscolaire, la lecture automatique rendait plus rare l’arrêt spontané (Hiniker et al., 2018) ; dans les applis utilisées par de jeunes enfants, des chercheurs ont souvent trouvé de telles astuces de conception (Radesky et al., 2022). La compétence d’aide « Stop – le dire à un adulte » s’entraîne selon le Behavioral Skills Training : expliquer, montrer, s’exercer, retour (Miltenberger, 2008). L’ennui est un signal de l’attention, pas une urgence (Westgate & Wilson, 2018 ; modèle issu d’études sur des adultes) ; une phrase si-alors aide à passer à l’acte (Gollwitzer & Sheeran, 2006). La séance 5 transfère au quotidien, la séance 6 fait le bilan : l’enfant explique tout aux petits (Fiorella & Mayer, 2013).",
+      "achtung": [
+        "Aucun appareil supposé : tous les exercices sont sans écran. On ne demande pas si l’enfant a un téléphone ; le vécu perso reste libre (« chez toi ou chez d’autres »). Les enfants sans appareil sont les pros de l’observation et de la touche éteindre – comme Iara.",
+        "Ne pas diaboliser : vidéos et applis ne sont pas mauvaises ; pas d’étiquette « accro aux écrans », pas d’images qui font peur sur le cerveau. La question est toujours : qui appuie – l’enfant ou l’appli ?",
+        "Temps d’écran, honnêtement : pour les écoliers, aucun chiffre ne vaut pour tous. Les pédiatres conseillent des limites fixes décidées ensemble, et que les écrans ne prennent pas la place du sommeil, du mouvement et des rencontres (AAP, 2016). Les liens entre temps d’écran et bien-être sont en moyenne faibles (Orben & Przybylski, 2019). Aucune question sur les règles, les horaires ou les appareils à la maison.",
+        "Contenus qui font peur ou bizarres : ne jamais montrer, décrire ni faire regarder de contenus. Si un enfant raconte quelque chose : ne pas regarder (le dire suffit), rester calme, remercier, ne pas questionner, ne pas confisquer d’appareil pour punir – sinon il ne dira plus rien. « Ce n’est pas ta faute » vaut toujours.",
+        "Inconnus en ligne et images : si un enfant parle d’inconnus qui écrivent, veulent des photos ou proposent un rendez-vous, ou d’images nues ou violentes : écouter, remercier ; ne pas regarder, ne pas garder, ne pas transférer les images ; prévenir la direction aujourd’hui. Helpline BEE SECURE 8002 1234 (conseille aussi les professionnels et les parents) ; chantage, rendez-vous prévu ou danger : police 113. Signaler anonymement des contenus illégaux : BEE SECURE Stopline.",
+        "Vie privée sans peur : l’enfant ne dit jamais ses propres données à voix haute ; il montre seulement ce qui serait fermé. Les photos des autres seulement avec leur oui. Si un enfant peut avoir une chaîne, ce sont ses responsables légaux qui décident, pas le cours. Le fauteuil d’Elio n’est pas un « traître » à cacher.",
+        "Pauvreté et comparaisons : ne pas demander ce que l’enfant possède ou désire (baskets, téléphone). Les idées « écran éteint » viennent seulement du corps, de la voix, du papier et des autres.",
+        "Jeu de rôle : l’adulte fait la voix de Liz et de tous les adultes ; l’enfant ne joue jamais un enfant à qui il est arrivé quelque chose, au plus l’adulte qui aide. Sortie : « Je sors du rôle. » Si un enfant devient silencieux ou effrayé : faire quelque chose de concret (dessiner), proposer « Si tu veux, tu me raconteras plus tard », ne pas insister.",
+        "Crise (4–9 ans) : si un enfant dit par exemple « Je veux être mort », demander calmement « Tu veux dire quoi ? Tu veux te faire mal ? », écouter ; si c’est sérieux ou flou, redemander calmement et ne pas le laisser seul ; aujourd’hui même direction de la maison relais ou président·e, titulaire et I-EBS, les parents via la direction (violence à la maison : direction et ESEB ; Helpline violence 20 60 10 60, 24 h/24). Danger aigu 112 ou 113. Enfant : Kanner-Jugendtelefon 116 111 (lu–sa) ; la nuit et le dimanche 112/113 ; pour les adultes SOS Détresse 45 45 45 (11–23 h) ; Elterentelefon 8002 4444."
+      ]
+    },
+    "quellen": [
+      "Hiniker, A., Heung, S. S., Hong, S. & Kientz, J. A. (2018): Coco’s Videos: An empirical investigation of video-player design features and children’s media use. Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems. New York: ACM.",
+      "Radesky, J., Hiniker, A., McLaren, C., Akgun, E., Schaller, A., Weeks, H. M., Campbell, S. & Gearhardt, A. N. (2022): Prevalence and characteristics of manipulative design in mobile applications used by children. JAMA Network Open, 5(6), e2217641.",
+      "John, D. R. (1999): Consumer socialization of children: A retrospective look at twenty-five years of research. Journal of Consumer Research, 26(3), 183–213.",
+      "Rozendaal, E., Lapierre, M. A., van Reijmersdal, E. A. & Buijzen, M. (2011): Reconsidering advertising literacy as a defense against advertising effects. Media Psychology, 14(4), 333–354.",
+      "Miltenberger, R. G. (2008): Teaching safety skills to children: Prevention of firearm injury as an exemplar of best practice in assessment, training, and generalization of safety skills. Behavior Analysis in Practice, 1(1), 30–36.",
+      "Livingstone, S., Stoilova, M. & Nandagiri, R. (2019): Children’s data and privacy online: Growing up in a digital age. An evidence review. London: London School of Economics and Political Science.",
+      "American Academy of Pediatrics, Council on Communications and Media (2016): Media use in school-aged children and adolescents. Pediatrics, 138(5), e20162592.",
+      "Orben, A. & Przybylski, A. K. (2019): The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3, 173–182.",
+      "Westgate, E. C. & Wilson, T. D. (2018): Boring thoughts and bored minds: The MAC model of boredom and cognitive engagement. Psychological Review, 125(5), 689–713.",
+      "Gollwitzer, P. M. & Sheeran, P. (2006): Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119.",
+      "Diamond, A. & Lee, K. (2011): Interventions shown to aid executive function development in children 4 to 12 years old. Science, 333(6045), 959–964.",
+      "Fiorella, L. & Mayer, R. E. (2013): The relative benefits of learning by teaching and teaching expectancy. Contemporary Educational Psychology, 38(4), 281–288.",
+      "BEE SECURE (Safer Internet Centre Luxemburg): https://www.bee-secure.lu (Helpline 8002 1234; Stopline https://stopline.bee-secure.lu).",
+      "Kanner-Jugendtelefon: https://www.kjt.lu (116 111 für Kinder und Jugendliche; Elterentelefon 8002 4444)."
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Das Kind erkennt, was Videos und Apps mit ihm machen (Countdown, Werbung, „noch eins“), hält selbst an und fragt „Wer will was von mir?“, zeigt Gruseliges oder Komisches einem Erwachsenen, ohne sich schuldig zu fühlen, behält Name, Schule und Fotos für sich und hält Langeweile kurz aus, bis eine eigene Idee kommt.",
+        "stichwort": "Die Fernbedienung: Pause – Lupe – Stopp – Schloss – Aus. „Ich drück selbst.“",
+        "sitzungen": [
+          "Woche 1: Weiter in 3 … 2 … 1 – Countdown-Weg am Boden, den Sog spüren, die Pause-Taste erfinden; das Kind spielt die App.",
+          "Woche 2: Gratis-Handschuhe für Elio? – Trick-Jagd mit der Lupe in der Werbung eines Stars; „Wer will was von mir?“",
+          "Woche 3: Liz ist so still – Spuren deuten; den Stopp-Weg (umdrehen, weggehen, einem Großen sagen) vormachen und üben; „Du bist nicht schuld.“",
+          "Woche 4: Elio macht ein Foto – Foto-Detektiv: Name, Ort und Zeit als Verräter; Schloss-Griff; Fotos von anderen nur mit Ja.",
+          "Woche 5: Alles aus! – Langeweile-Minute, erste Idee sofort ausprobieren, eigener Wenn-dann-Satz für den Alltag.",
+          "Woche 6: Die Fernbedienung für die Kleinen – Fragen von Kleinen mit den fünf Tasten beantworten, Fernbedienungs-Pass."
+        ],
+        "helfen": [
+          "So erinnern Sie: mit der Bewegung statt mit vielen Worten – Hände flach nach vorn heißt „Pause“, Hände vors Auge „Lupe“; entscheiden darf das Kind selbst.",
+          "Erzählt ein Kind von etwas Komischem auf einem Bildschirm: ruhig danken („Gut, dass du’s mir sagst. Du bist nicht schuld.“), nicht ausfragen, kein Gerät als Strafe wegnehmen, die Leitung informieren.",
+          "Lassen Sie kurze Langeweile zu, statt sofort Beschäftigung anzubieten; fragen Sie „Aus – und dann?“ und warten Sie auf die Idee des Kindes."
+        ],
+        "beobachten": [
+          "sagt bei Werbung oder Countdown von sich aus „Pause“ oder „Wer will was?“",
+          "kommt zu einem Erwachsenen, wenn etwas komisch ist, und sagt es",
+          "nennt Name, Schule oder Fotos als „bleibt bei mir“"
+        ],
+        "nicht": "Keine Verbote oder Angstbilder über Bildschirme, keine festen Zahlen als Wahrheit, keine Fragen nach Geräten oder Regeln zu Hause – und ein Kind, das etwas erzählt, nie bestrafen."
+      },
+      "fr": {
+        "ziel": "L’enfant reconnaît ce que les vidéos et les applis lui font (compte à rebours, pub, « encore une »), s’arrête de lui-même et demande « Qui veut quoi de moi ? », montre à un adulte ce qui fait peur ou semble bizarre sans se sentir coupable, garde pour lui son nom, son école et ses photos, et supporte un peu l’ennui jusqu’à ce qu’une idée à lui arrive.",
+        "stichwort": "La télécommande : pause – loupe – stop – cadenas – éteindre. « C’est moi qui appuie. »",
+        "sitzungen": [
+          "Semaine 1 : Suivante dans 3… 2… 1… – chemin du compte à rebours au sol, sentir l’attraction, inventer la touche pause ; l’enfant joue l’appli.",
+          "Semaine 2 : Des gants gratuits pour Elio ? – chasse aux astuces à la loupe dans la pub d’une star ; « Qui veut quoi de moi ? »",
+          "Semaine 3 : Liz est si silencieuse – lire des indices ; montrer et entraîner le chemin stop (retourner, s’éloigner, le dire à un adulte) ; « Ce n’est pas ta faute. »",
+          "Semaine 4 : Elio prend une photo – détective photo : nom, lieu et heure comme traîtres ; cadenas des doigts ; photos des autres seulement avec leur oui.",
+          "Semaine 5 : Tout s’éteint ! – minute d’ennui, essayer tout de suite la première idée, sa phrase si-alors pour le quotidien.",
+          "Semaine 6 : La télécommande pour les petits – répondre aux questions des petits avec les cinq touches, passeport de la télécommande."
+        ],
+        "helfen": [
+          "Pour rappeler : avec le geste plutôt qu’avec beaucoup de mots – mains à plat devant soi pour « pause », mains devant l’œil pour « loupe » ; c’est l’enfant qui décide.",
+          "Si un enfant parle d’un truc bizarre vu sur un écran : remercier calmement (« C’est bien que tu me le dises. Ce n’est pas ta faute. »), ne pas questionner, ne pas confisquer d’appareil pour punir, prévenir la direction.",
+          "Laissez un peu d’ennui au lieu d’offrir tout de suite une occupation ; demandez « Éteint – et après ? » et attendez l’idée de l’enfant."
+        ],
+        "beobachten": [
+          "dit de lui-même « Pause » ou « Qui veut quoi ? » devant une pub ou un compte à rebours",
+          "vient voir un adulte quand quelque chose est bizarre, et le dit",
+          "cite son nom, son école ou ses photos comme « ça reste à moi »"
+        ],
+        "nicht": "Pas d’interdits ni d’images qui font peur sur les écrans, pas de chiffres fixes présentés comme vérité, pas de questions sur les appareils ou les règles à la maison – et ne jamais punir un enfant qui raconte quelque chose."
+      }
+    }
   }
 }
