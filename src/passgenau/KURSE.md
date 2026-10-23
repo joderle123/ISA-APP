@@ -422,6 +422,20 @@ Machbarkeit beim Pilot wieder auf 5. Darum je Sitzung **hart**:
   - Die Hauptziele (ELDiB, Gewicht 1) sind nie identisch mit denen eines Kurses im selben Altersband.
 - **Armut und Familie:** Keine Vergleiche (Taschengeld, Urlaub, Handy). Es gibt Sätze für „Ich kann nicht“ / „Wir haben das nicht“.
 
+### 9e. Lehren aus Welle 3b (8 Kurse, 24 Kritiken, 23.10.2026)
+
+- **Abwechslung:** Nicht zweimal dieselbe Kernform (z. B. „Notizen vorlesen und zuordnen“). Jede Sitzung hat eine eigene Spielform; die besten Formen gehören in die Varianten, nicht nur in die Tausch-Übungen.
+- **Echter Körper:** Bewegung ist ein „Muss“ und eine echte Erfahrung (Puls, Spannung, Atem, Gleichgewicht), nicht „Zettel tragen“.
+- **Titel und Brücke verraten nichts:** Wenn das Kind etwas herausfinden soll, nennt der Sitzungstitel die Lösung nicht.
+- **Krisenkarte kurz:** „Nur für dich – wenn es echt wird“ hat höchstens ~60 Wörter für den Moment (das Wichtigste zuerst, auch die Suizid-Frage), dazu eine Karte „Danach“ (~45 Wörter). Lösungen, Studien und Kultur-Fakten stehen nicht darunter.
+- **Nach einem „Ja“:** Wo nach Suizidgedanken gefragt wird, steht der fertige Ablauf: bleiben, ruhig nachfragen, nicht allein lassen, heute noch SePAS bzw. I-EBS/Leitung, bei akuter Gefahr 112.
+- **Figuren einmalig:** Figurennamen und -profile kommen in keinem anderen Kurs vor (grep in `kurs-hintergrund.json`). Die Bilder `figur:…` dürfen mehrfach vorkommen.
+- **Ort und Regeln echt:** Lokale Regeln vorher prüfen (z. B. Klettern an den Felsen von Berdorf nur für Mitglieder eines Kletterverbands; Sichern erklären Erwachsene). Fondamental: dienstags und donnerstags nachmittags keine Schule.
+- **Zahlen und Zeiten:** Kanner-Jugendtelefon 116 111 telefonisch Mo–Sa, Chat nur dienstags 18–21 Uhr; für Nacht und Sonntag 112/113 und SOS Détresse 45 45 45 nennen.
+- **Körper und Essen:** Keine Figur- oder Ess-Moral, keine Fragen nach Essen oder Schlaf zu Hause. Satt-Signal, Klo, Schmerz, Übelkeit gehören zu den Körpersignalen. Für „Ich habe Hunger und nichts dabei“ hat die Fachkraft eine Antwort, auch wenn die Einrichtung nichts anbietet.
+- **Test-Formate:** In Kursen zu Angst und Stress keine Quiz- oder Richtig/Falsch-Formate; Körperbeschwerden sind echt (ärztliche Abklärung), nie „Ausrede“.
+- **Vor der Kritik:** `python3 <scratchpad>/welle/kurs-auszug.py <linie>` erzeugt einen Auszug mit Budget-Tabelle (Kerntext, Blatt-Wörter, Kartensätze, Blattzeit). Rote Flags vorher beheben.
+
 ## 10. Katalog Welle 3 (neue Themen, Arbeitstitel)
 
 ELDiB-Codes wählt die Kursarchitektur aus `src/data/passgenau/eldib.json` (2 Hauptziele mit Gewicht 1, 1–2 weitere mit 0.5),
