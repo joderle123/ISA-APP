@@ -9139,5 +9139,96 @@
       "de": "Strassen, Herbst: Drei aus einem Lycée treffen sich nach der Schule an ihrer Bushaltestelle – der Bus ist in Luxemburg gratis, fast alles andere nicht. Tarik (16, 3G; Bosnisch, Lëtzebuergesch, Deutsch, Französisch) hat im Juli 40 Stunden in einer Gärtnerei gearbeitet und zum ersten Mal eigenes Geld: 400 €; er spart für den Führerschein und kann schlecht Nein sagen. Gina (15, 4G; Lëtzebuergesch, Italienisch, Französisch) liebt Sneaker und folgt der Influencerin @mel.kicks; als ein Drop kommt, bestellt Ruben (18) aus ihrem Basketballverein die Schuhe für sie mit „Kauf jetzt, zahl später“, und Gina zahlt ihm drei Raten. Nayara (15, 4G; Portugiesisch, Lëtzebuergesch, Französisch) bemalt alte Sneaker selbst; wegen ihrer Legasthenie lässt sie sich Kleingedrucktes vom Handy vorlesen und hört so Haken, die andere überlesen – und vergisst trotzdem ein Gratis-Abo. Von Treffen zu Treffen wird aus einem Paar Schuhe eine Kette: Rate geplatzt, Geld geliehen, Freundschaft auf der Kippe, bis nachts zwei Nachrichten kommen, eine davon mit „Konto leihen, 300 €“; die oder der Jugendliche ist die zweite Meinung der drei – ihr oder sein Wissen über Preise, Apps und Marken zählt ab dem ersten Treffen, über das eigene Geld spricht niemand.",
       "fr": "Strassen, en automne : trois élèves d’un lycée se retrouvent après les cours à leur arrêt de bus – au Luxembourg, le bus est gratuit, presque tout le reste non. Tarik (16 ans, 3G ; bosnien, luxembourgeois, allemand, français) a travaillé 40 heures en juillet dans une jardinerie et a pour la première fois son propre argent : 400 € ; il épargne pour le permis et a du mal à dire non. Gina (15 ans, 4G ; luxembourgeois, italien, français) adore les baskets et suit l’influenceuse @mel.kicks ; quand un drop arrive, Ruben (18 ans), de son club de basket, commande les chaussures pour elle en « achète maintenant, paie plus tard », et Gina lui paie trois échéances. Nayara (15 ans, 4G ; portugais, luxembourgeois, français) peint elle-même de vieilles baskets ; dyslexique, elle fait lire les petits caractères par son portable et entend ainsi les pièges que d’autres survolent – et oublie quand même un abonnement gratuit. De rencontre en rencontre, une paire de chaussures devient une chaîne : échéance ratée, argent prêté, amitié qui vacille, jusqu’à ce que deux messages arrivent la nuit, dont un avec « prête ton compte, 300 € » ; le ou la jeune est le deuxième avis des trois – son savoir sur les prix, les applis et les marques compte dès la première rencontre, et personne ne parle de son propre argent."
     }
+  },
+  "kurs-deeskalation-4-6": {
+    "name": {
+      "de": "Funken in der Feuerwache",
+      "fr": "Des étincelles à la caserne"
+    },
+    "welt": {
+      "de": "Im Spielzimmer der Maison relais in Lintgen an der Alzette steht eine kleine Spiel-Feuerwache. Dort wohnen Welpe Pipoca (Portugiesisch und Lëtzebuergesch; Pipoca heißt Popcorn, weil er immer gleich lossaust) und Kätzchen Pistache (Französisch; klein, flink und mutig), dazu Feuerwehrfrau Liette (Lëtzebuergesch und Deutsch), die Große der Feuerwache. Pipoca und Pistache wollen zum Feuerwehr-Fest, aber ständig wird es heiß: um den roten Helm, das warme Körbchen, die Rutschstange – und am Tor wird geschubst. Von Treffen zu Treffen hilft das Kind als Expertin oder Experte, liest Spuren, ruft „Funken!“ und findet die Sprossen der Feuerwehr-Leiter: Funken! – Zurück! – Tatü! (Große holen) – Frieden!. Am Ende fahren Pipoca und Pistache zusammen im roten Auto zum Fest, und das Kind hat seinen eigenen Feuerwehr-Plan.",
+      "fr": "Dans la salle de jeux de la maison relais de Lintgen, au bord de l’Alzette, il y a une petite caserne de pompiers en jouet. Là vivent Pipoca le chiot (portugais et luxembourgeois ; Pipoca veut dire pop-corn, parce qu’il démarre toujours d’un bond) et Pistache la chatonne (français ; petite, vive et courageuse), avec Liette la pompière (luxembourgeois et allemand), l’adulte de la caserne. Pipoca et Pistache veulent aller à la fête des pompiers, mais ça chauffe sans arrêt : pour le casque rouge, le petit panier chaud, la barre des pompiers – et à la porte, on se pousse. De rencontre en rencontre, l’enfant aide en expert, lit les traces, crie « Étincelles ! » et découvre les barreaux de l’échelle des pompiers : Étincelles ! – Recule ! – Pin-pon ! (chercher un adulte) – La paix !. À la fin, Pipoca et Pistache partent ensemble à la fête dans le camion rouge, et l’enfant a son propre plan de pompier."
+    },
+    "de": {
+      "warum": "Streit unter Vier- bis Sechsjährigen ist häufig und meist kurz; heikel wird er, wenn er hochkocht. Dann helfen frühe Zeichen, Abstand und eine Erwachsene, die begleitet statt entscheidet. Der Kurs folgt dem Aufbau für Fertigkeiten: erklären, vormachen, üben, rückmelden, übertragen (Behavioral Skills Training, Miltenberger, 2012; SAFE-Kriterien nach Durlak et al., 2011). Die Schritte stammen aus der Problemlöse-Arbeit mit Vorschulkindern (Shure, 1992; Webster-Stratton & Reid, 2004) und aus den sechs HighScope-Konfliktschritten (Evans, 2002): ruhig dazukommen und stoppen, was weh tut, Gefühle benennen, nachfragen, das Problem sagen, mit den Kindern Ideen sammeln und eine wählen, später nachschauen. Wiedergutmachen statt erzwungener Entschuldigung: Bei Sechs- und Siebenjährigen half Wiedergutmachen gegen schlechte Gefühle mehr als eine Entschuldigung; diese half vor allem beim Verzeihen (Drell & Jaswal, 2016). Die Papier-Tiere schaffen Abstand: Gestritten wird nur zwischen ihnen, gespielt von der Fachkraft.",
+      "achtung": [
+        "Den Streit spielt nur die Fachkraft, mit den Papier-Tieren und mit Abstand. Das Kind führt nur Hilfe-Schritte vor; kein Kind spielt Pipoca beim Schubsen. Eigene Erlebnisse werden nie erfragt und nie nachgespielt.",
+        "Körperregeln: Niemand wird festgehalten, auch nicht im Spiel. Beim Tuch-Ziehen hält die Fachkraft nur locker und zieht nie. Schubsen ist nur ein „Bums“ der Papier-Tiere.",
+        "Hilfe holen ist kein Petzen: Petzen will Ärger machen, Hilfe holen will, dass keiner weh tut. Kommt ein Kind mit dem Tatü-Satz zu Ihnen: danken und sofort mitgehen – sonst lernt es das Gegenteil.",
+        "Keine erzwungene Entschuldigung und kein Zwangs-Händeschütteln. Wiedergutmachen (kühlen, aufbauen, fragen) wird angeboten; ein „Sorry“ darf freiwillig kommen.",
+        "Drei Schritte weg und der ruhige Platz (im Raum, in Sichtweite) sind Abstand, keine Strafe – nie als Auszeit verwenden.",
+        "Erzählt ein Kind von Schlägen oder Gewalt zu Hause oder sagt es „Ich will tot sein“: Krisenkarte – ruhig „Wie meinst du das?“, nicht allein lassen, heute Leitung (und Eltern, außer bei Verdacht gegen die Familie: Kinderschutz-Weg).",
+        "Feuer ist hier ein Bild: Die 112 ist für echtes Feuer und echte Not; bei Streit holt man eine Erwachsene im Raum. Bei Kindern mit Angst vor Feuer oder Sirenen leise spielen, Alarm ohne Ton."
+      ]
+    },
+    "fr": {
+      "warum": "Entre quatre et six ans, les disputes sont fréquentes et souvent courtes ; elles deviennent délicates quand elles s’enflamment. Ce qui aide alors : voir les premiers signes, prendre de la distance et un adulte qui accompagne au lieu de trancher. Le parcours suit la démarche des compétences : expliquer, montrer, s’exercer, donner un retour, transférer (Behavioral Skills Training, Miltenberger, 2012 ; critères SAFE selon Durlak et al., 2011). Les étapes viennent du travail de résolution de problèmes avec les petits (Shure, 1992 ; Webster-Stratton & Reid, 2004) et des six étapes HighScope de résolution des conflits (Evans, 2002) : s’approcher calmement et arrêter ce qui fait mal, nommer les émotions, se renseigner, reformuler le problème, chercher des idées avec les enfants et en choisir une, revenir voir plus tard. Réparer plutôt qu’une excuse forcée : chez des enfants de six et sept ans, réparer a davantage soulagé la peine qu’une excuse ; l’excuse aidait surtout à pardonner (Drell & Jaswal, 2016). Les animaux en papier créent de la distance : la dispute n’a lieu qu’entre eux, jouée par l’adulte.",
+      "achtung": [
+        "Seul l’adulte joue la dispute, avec les animaux en papier et à distance. L’enfant ne montre que les gestes d’aide ; aucun enfant ne joue Pipoca qui pousse. Le vécu de l’enfant n’est jamais questionné ni rejoué.",
+        "Règles du corps : personne n’est retenu, même pas en jeu. Quand on tire sur le tissu, l’adulte tient mollement et ne tire jamais. Pousser, c’est seulement un « boum » des animaux en papier.",
+        "Chercher un adulte, ce n’est pas rapporter : rapporter, c’est pour faire gronder ; chercher de l’aide, c’est pour que personne n’ait mal. Si un enfant vient vous voir avec la phrase pin-pon : remerciez et venez tout de suite – sinon il apprend le contraire.",
+        "Pas d’excuse forcée, pas de poignée de main obligée. On propose de réparer (rafraîchir, reconstruire, demander) ; un « pardon » peut venir librement.",
+        "Les trois pas en arrière et l’endroit calme sont de la distance, pas une punition – jamais comme « coin » ou temps mort.",
+        "Si un enfant parle de coups ou de violence à la maison, ou dit « Je veux mourir » : carte de crise – calmement « Qu’est-ce que tu veux dire ? », ne pas le laisser seul, direction aujourd’hui (et parents, sauf soupçon sur la famille : procédure de protection).",
+        "Le feu est ici une image : le 112, c’est pour un vrai feu et une vraie urgence ; pour une dispute, on va chercher un adulte présent. Avec un enfant qui a peur du feu ou des sirènes, jouer doucement, alarme sans bruit."
+      ]
+    },
+    "quellen": [
+      "Evans, B. (2002): You Can’t Come to My Birthday Party! Conflict Resolution with Young Children. Ypsilanti, MI: HighScope Press.",
+      "Shure, M. B. (1992): I Can Problem Solve (ICPS): An Interpersonal Cognitive Problem-Solving Program – Preschool. Champaign, IL: Research Press.",
+      "Webster-Stratton, C. & Reid, M. J. (2004): Strengthening social and emotional competence in young children – the foundation for early school readiness and success: Incredible Years Classroom Social Skills and Problem-Solving Curriculum. Infants & Young Children, 17(2), 96–113.",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011): The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+      "Drell, M. B. & Jaswal, V. K. (2016): Making amends: Children’s expectations about and responses to apologies. Social Development, 25(4), 742–758.",
+      "Miltenberger, R. G. (2012): Behavior Modification: Principles and Procedures (5th ed.). Belmont, CA: Wadsworth.",
+      "Ryan, R. M. & Deci, E. L. (2000): Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist, 55(1), 68–78."
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Das Kind lernt zu merken, wenn ein Streit zwischen zwei Kindern heiß wird, loszulassen und Abstand zu nehmen, eine Erwachsene zu holen und mit ihr Frieden zu machen – mit Ideen und Wiedergutmachen statt erzwungener Entschuldigung.",
+        "stichwort": "Pipoca und Pistache in der Spiel-Feuerwache in Lintgen: die Feuerwehr-Leiter – Funken! · Zurück! · Tatü! · Frieden! „Wen holst du?“",
+        "sitzungen": [
+          "Woche 1: Was war los in der Feuerwache? Spuren lesen, den Morgen in vier Bildern, aufspringen bei „Funken!“. Auftrag: freiwillig beim Spielen Funken merken.",
+          "Woche 2: Wer schläft im warmen Körbchen? Am Tuch ziehen, loslassen, umdrehen, drei Schritte weg. Auftrag: einmal loslassen und weggehen.",
+          "Woche 3: Wer rutscht zuerst? Liette suchen, Tatü-Satz, „Hilfe holen ist kein Petzen“. Auftrag: der eigenen Großen Moien sagen.",
+          "Woche 4: Wie wird wieder Frieden? Mit Liette Ideen-Tropfen auf die Flamme, kühles Tuch: wieder gut machen. Auftrag (freiwillig): merken, wie jemand etwas wieder gut macht – oder mithelfen, wenn etwas umfällt.",
+          "Woche 5: Die große Feuerwehr-Übung – mein Plan mit ruhigem Platz und meiner Großen im Alltag. Auftrag: der Großen den Plan zeigen.",
+          "Woche 6: Das Feuerwehr-Fest – das Kind erzählt mit seinem kleinen Buch und zeigt die Leiter mit dem ganzen Körper."
+        ],
+        "helfen": [
+          "So erinnern Sie: leise, mit einem Leiter-Wort und der Geste – „Funken?“, „Zurück?“ –, nie vor anderen und nie als Vorwurf.",
+          "So antworten Sie: Kommt das Kind mit „Komm, es wird heiß!“, danken Sie sofort und gehen mit; dann begleiten Sie: ruhig dazukommen, stoppen, was weh tut, fragen, mit beiden Ideen sammeln.",
+          "So loben Sie: konkret – „Du hast losgelassen und mich geholt. Danke!“ oder „Du hast ihm das kühle Tuch gebracht.“"
+        ],
+        "beobachten": [
+          "merkt früh, wenn ein Streit heiß wird, und lässt los oder geht zurück",
+          "holt eine Erwachsene, statt zu schubsen oder mitzumachen",
+          "bringt eine Idee oder eine Wiedergutmachung ein"
+        ],
+        "nicht": "Keine Entschuldigung erzwingen, und das Kind, das Hilfe holt, nie „Petze“ nennen oder wegschicken."
+      },
+      "fr": {
+        "ziel": "L’enfant apprend à remarquer quand une dispute entre deux enfants s’enflamme, à lâcher et prendre de la distance, à aller chercher un adulte et à faire la paix avec lui – avec des idées et une réparation plutôt qu’une excuse forcée.",
+        "stichwort": "Pipoca et Pistache à la caserne-jouet de Lintgen : l’échelle des pompiers – Étincelles ! · Recule ! · Pin-pon ! · La paix ! « Qui vas-tu chercher ? »",
+        "sitzungen": [
+          "Semaine 1 : que s’est-il passé à la caserne ? Lire les traces, le matin en quatre images, sauter à « Étincelles ! ». Défi : s’il veut, repérer les étincelles en jouant.",
+          "Semaine 2 : qui dort dans le panier chaud ? Tirer sur le tissu, lâcher, se retourner, trois pas. Défi : lâcher et s’éloigner une fois.",
+          "Semaine 3 : qui glisse le premier ? Chercher Liette, phrase pin-pon, « chercher un adulte, ce n’est pas rapporter ». Défi : dire Moien à son adulte.",
+          "Semaine 4 : comment revient la paix ? Avec Liette, des gouttes d’idées sur la flamme, un tissu frais : réparer. Défi (si l’enfant veut) : remarquer quand quelqu’un répare – ou aider quand quelque chose tombe.",
+          "Semaine 5 : le grand exercice des pompiers – mon plan avec endroit calme et mon adulte du quotidien. Défi : montrer le plan à son adulte.",
+          "Semaine 6 : la fête des pompiers – l’enfant raconte avec son petit livre et montre l’échelle avec tout son corps."
+        ],
+        "helfen": [
+          "Pour rappeler : discrètement, avec un mot de l’échelle et le geste – « Étincelles ? », « Recule ? » –, jamais devant les autres ni comme un reproche.",
+          "Pour répondre : si l’enfant vient avec « Viens, ça chauffe ! », remerciez tout de suite et venez ; puis accompagnez : s’approcher calmement, arrêter ce qui fait mal, demander, chercher des idées avec les deux.",
+          "Pour féliciter : concrètement – « Tu as lâché et tu es venu me chercher. Merci ! » ou « Tu lui as apporté le tissu frais. »"
+        ],
+        "beobachten": [
+          "remarque tôt quand une dispute chauffe, lâche ou recule",
+          "va chercher un adulte au lieu de pousser ou de s’en mêler",
+          "propose une idée ou une réparation"
+        ],
+        "nicht": "Ne jamais forcer une excuse, ni traiter de « rapporteur » ou renvoyer l’enfant qui vient chercher de l’aide."
+      }
+    }
   }
 }
