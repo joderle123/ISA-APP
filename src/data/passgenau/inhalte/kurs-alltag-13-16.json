@@ -561,6 +561,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Landkarte: Termine, Geld, Energie, Hilfe, Erledigen\n1′ Fachkraft klärt: selbstständig heißt nicht alles allein\n2′ Jugendliche/r legt Alltagskarten auf Orte, sagt: selbst/mit Hilfe/noch nicht\n7′ Jugendliche/r sucht Orte für Janas Arzttermin\nMuss: Kartenspiel. Kann: Jana-Szene. Wird es knapp: vier Karten statt acht. Eigene Beispiele nur freiwillig."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la carte : rendez-vous, argent, énergie, aide, démarches\n1′ L’adulte précise : autonome ne veut pas dire tout seul\n2′ Le ou la jeune pose les cartes sur les lieux : seul, avec aide, pas encore\n7′ Le ou la jeune cherche les lieux pour le rendez-vous médical de Jana\nIndispensable : jeu de cartes. Option : scène de Jana. Serré : quatre cartes au lieu de huit. Exemples personnels seulement si envie."
+      }
     }
   },
   {
@@ -1698,6 +1706,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt Skript: vorstellen, Anliegen, Wunsch, wiederholen\n1′ Runde 1: Jugendliche/r ruft Praxis an, Rücken an Rücken – „Ich bin die Praxis, du rufst an.“\n4′ Runde 2: Wunschtermin besetzt, Name buchstabieren\n6′ Runde 3: Fachkraft ruft an, lässt einen Schritt aus\n8′ Dieselben vier Schritte als E-Mail aufs Blatt\nMuss: Runden 1 und 2; nach jeder Runde zuerst Gelungenes. Kann: Runde 3, E-Mail. Wird es knapp: E-Mail weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente la trame : se présenter, dire pourquoi, proposer une date, répéter\n1′ Tour 1 : le ou la jeune appelle le cabinet, dos à dos – « Je suis le cabinet, tu appelles. »\n4′ Tour 2 : date pas libre, épeler le nom\n6′ Tour 3 : l’adulte appelle et saute un temps\n8′ Les quatre temps pour un e-mail sur la fiche\nIndispensable : tours 1 et 2 ; après chaque tour, d’abord ce qui a réussi. Option : tour 3, e-mail. Serré : sauter l’e-mail."
+      }
     }
   },
   {
@@ -2950,6 +2966,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Bens 45 Euro: Karten auf fest, Freizeit, Sparen, Reserve\n4′ Fachkraft nennt Drei-Fragen-Check: Kosten, Laufzeit, Ausstieg\n5′ Beide prüfen Gratis-Abo, 24-Monats-Vertrag, Spiel-Paket mit Zeitdruck\n7′ Jugendliche/r rechnet Abo aufs Jahr: rund 120 Euro\n9′ Fachkraft hält fest: Wer vorher fragt, sagt gelassen Nein\nMuss: Budget, Drei-Fragen-Check. Kann: Jahresrechnung. Wird es knapp: ein Angebot statt drei. Eigene Verträge nur freiwillig, kein Familiengeld."
+      },
+      "fr": {
+        "aufbau": "0′ Les 45 euros de Ben : cartes sur fixe, loisirs, épargne, réserve\n4′ L’adulte donne les trois questions anti-pièges\n5′ Examen : abonnement gratuit, forfait 24 mois, pack de jeu sous pression\n7′ Le ou la jeune calcule l’abonnement sur un an : environ 120 euros\n9′ L’adulte retient : qui questionne d’abord refuse sereinement\nIndispensable : budget, trois questions. Option : calcul annuel. Serré : une offre au lieu de trois. Contrats personnels seulement si envie, pas l’argent de la famille."
+      }
     }
   },
   {
@@ -4048,6 +4072,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Akku: was lädt, was entlädt\n2′ Fachkraft nennt 8 bis 10 Stunden Schlaf, innere Uhr später\n3′ Jugendliche/r zeichnet Chloes Energiekurve, markiert Tiefpunkt\n6′ Beide bauen Chloe einen Wenn-dann-Plan – „Wenn ich im Bett liege, dann bleibt das Handy im Flur.“\n8′ Freiwillig: eigener Plan, klein und genau\nMuss: Energiekurve, Plan für Chloe. Kann: eigener Plan. Wird es knapp: Akku ganz kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la batterie : ce qui recharge, ce qui vide\n2′ L’adulte dit : 8 à 10 heures de sommeil, horloge interne décalée\n3′ Le ou la jeune dessine la courbe d’énergie de Chloe, marque le creux\n6′ Ensemble : un plan « si… alors… » pour Chloe\n8′ Si envie : plan personnel, petit et précis\nIndispensable : courbe d’énergie, plan pour Chloe. Option : plan personnel. Serré : batterie en bref."
+      }
     }
   },
   {
@@ -5231,6 +5263,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Jugendliche/r wählt Erledigung dieser Woche, auch erfunden\n2′ Beide gehen Karte durch: Ziel, Zeit, Kraft, Kosten, Hilfe\n4′ Fachkraft legt Hilfe-Karten vor: SePAS, Jugendhaus, 116 111\n5′ Erster Satz nach Skript, dazu Plan B\n7′ Fachkraft spielt das Gegenüber, ruhig und nicht gemein – „Du kannst jederzeit Stopp sagen.“\n9′ Fachkraft nennt zuerst Gelungenes, Jugendliche/r sagt Änderung\nMuss: Erledigung planen, erster Satz, Rollenspiel. Kann: zweiter Durchgang. Wird es knapp: Plan B in einem Satz."
+      },
+      "fr": {
+        "aufbau": "0′ Le ou la jeune choisit une démarche de la semaine, inventée possible\n2′ On parcourt la carte : but, temps, énergie, coût, aide\n4′ L’adulte présente les cartes d’aide : SePAS, maison des jeunes, 116 111\n5′ Première phrase d’après la trame, puis plan B\n7′ L’adulte joue l’interlocuteur, calme et sans méchanceté\n9′ L’adulte nomme d’abord ce qui a réussi, puis le ou la jeune\nIndispensable : démarche, première phrase, jeu de rôle. Option : deuxième essai. Serré : plan B en une phrase."
+      }
     }
   },
   {
@@ -6260,6 +6300,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide legen die fünf Blätter und das erste Profil aus\n2′ Jugendliche/r zeigt hilfreichstes und schwächstes Blatt – „Woran merkst du das?“\n4′ Jugendliche/r färbt Profil neu, vergleicht mit dem ersten\n6′ Fachkraft erklärt kurz: Karte übt Handeln, nicht Wissen\n7′ Beide klären, wer hilft: SePAS, Jugendhaus, 116 111\n8′ Jugendliche/r plant ersten Schritt mit Datum\nMuss: Profil neu färben, erster Schritt. Kann: Erklärung zur Karte. Wird es knapp: nur ein Blatt besprechen."
+      },
+      "fr": {
+        "aufbau": "0′ On étale les cinq fiches et le premier profil\n2′ Le ou la jeune montre la fiche la plus utile et la moins utile\n4′ Le ou la jeune recolorie le profil et compare\n6′ L’adulte explique : la carte entraîne l’action, pas le savoir\n7′ Qui aide : SePAS, maison des jeunes, 116 111\n8′ Le ou la jeune fixe un premier pas avec une date\nIndispensable : nouveau profil, premier pas. Option : explication de la carte. Serré : parler d’une seule fiche."
+      }
     }
   },
   {

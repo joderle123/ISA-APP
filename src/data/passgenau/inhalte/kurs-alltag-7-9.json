@@ -583,6 +583,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Tages-Uhr, Feld 1: Reihenfolge\n1′ Fachkraft spielt Leas Ankommen durcheinander, Kind ruft Stopp\n4′ Kind ordnet Zettel Wecker, Frühstück, Schule, Bett; erzählt Mias Tag\n7′ Tausch: Kind spielt Ablauf mit Fehler, Fachkraft sucht\n9′ Beide sagen: Jeder Tag hat eine Reihenfolge\nMuss: Stopp-Spiel, Zettel ordnen. Kann: Tausch mit Fehler. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre l’horloge de la journée, case 1 : l’ordre\n1′ L’adulte joue l’arrivée de Lea dans le désordre, l’enfant crie stop\n4′ L’enfant ordonne réveil, petit-déjeuner, école, lit ; raconte la journée de Mia\n7′ On échange : l’enfant joue un déroulement avec une erreur\n9′ Tous les deux : chaque journée a un ordre\nIndispensable : jeu du stop, ordonner les papiers. Option : échange avec erreur. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -1845,6 +1853,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind schätzt: Namen dreimal schreiben, wie lange? – „Schätz zuerst.“\n2′ Beide messen mit Uhr oder Sanduhr, vergleichen\n4′ Dasselbe mit Schuhe zubinden\n6′ Kind liest Lesezeit 9 bis 9:30 auf gezeichneten Uhren ab, zählt in Fünferschritten\n9′ Fachkraft hält fest: schätzen, messen, vergleichen\nMuss: schätzen und messen. Kann: Uhren ablesen. Wird es knapp: nur eine Tätigkeit messen."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant estime : écrire trois fois son prénom, combien de temps ? – « Estime d’abord. »\n2′ On mesure au sablier ou à l’horloge, on compare\n4′ Pareil avec nouer ses lacets\n6′ L’enfant lit 9 h et 9 h 30 sur deux horloges dessinées, compte de cinq en cinq\n9′ L’adulte conclut : estimer, mesurer, comparer\nIndispensable : estimer et mesurer. Option : lire les horloges. Serré : mesurer une seule activité."
+      }
     }
   },
   {
@@ -3097,6 +3113,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt fünf Bildzettel von Samis Morgen hin\n1′ Kind spielt Samis Morgen in Zeitlupe, hakt ab\n4′ Bus fährt zehn Minuten früher: Kind plant Bereitlegen oder Kürzen\n7′ Tausch: Fachkraft lässt Punkt aus, Kind prüft mit Liste\n9′ Fachkraft hält fest: Checkliste bleibt immer gleich\nMuss: Zeitlupe mit Abhaken, Bus-Stolperstein. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose cinq papiers du matin de Sami\n1′ L’enfant joue le matin au ralenti et coche\n4′ Le bus part dix minutes plus tôt : préparer la veille ou raccourcir\n7′ On échange : l’adulte oublie un point, l’enfant vérifie avec la liste\n9′ L’adulte conclut : la liste reste toujours pareille\nIndispensable : matin au ralenti, obstacle du bus. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -4162,6 +4186,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt Stundenplan Mathe, Sport, Deutsch und Dinge hin\n1′ Kind packt nur, was der Stundenplan braucht\n4′ Fachkraft spielt Tom, der nicht anfangen kann\n5′ Kind gibt Tom drei Tipps: wo, wann, erster Mini-Schritt\n8′ Kind sagt eigenen Start, Fachkraft zählt drei, zwei, eins, los\nMuss: Tasche packen, Tipps für Tom. Kann: eigener Start. Wird es knapp: weniger Dinge zum Packen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose l’emploi du temps maths, sport, allemand et des objets\n1′ L’enfant met juste le nécessaire dans le cartable\n4′ L’adulte joue Tom, qui n’arrive pas à commencer\n5′ L’enfant donne trois conseils : où, quand, premier petit pas\n8′ L’enfant dit son démarrage, l’adulte compte trois, deux, un\nIndispensable : cartable, conseils pour Tom. Option : son propre démarrage. Serré : moins d’objets à trier."
+      }
     }
   },
   {
@@ -5264,6 +5296,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind wählt Situation dieser Woche, auch ausgedacht\n1′ Beide klären: wer, wann, wo, welcher Satz\n3′ Kind macht daraus einen Wenn-dann-Satz\n5′ Durchspielen: Fachkraft erinnert oder hilft, Kind sagt Satz\n8′ Kind überlegt Plan B, falls etwas fehlt\nMuss: vier Fragen, Wenn-dann-Satz. Kann: Plan B. Wird es knapp: Plan B in einem Satz."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant choisit une situation de la semaine, inventée possible\n1′ Ensemble : qui, quand, où, quelle phrase\n3′ L’enfant en fait une phrase « si … alors … »\n5′ On joue : l’adulte rappelle ou aide, l’enfant dit sa phrase\n8′ L’enfant prévoit un plan B en cas d’oubli\nIndispensable : quatre questions, phrase « si … alors … ». Option : plan B. Serré : plan B en une phrase."
+      }
     }
   },
   {
@@ -6409,6 +6449,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt die fünf Feld-Zettel hin\n1′ Kind zeigt zu jedem Feld sein Werkzeug als Geste\n4′ Fachkraft spielt Samis Chaostag, Kind nennt helfendes Feld – „Welches Feld der Uhr hilft mir jetzt?“\n8′ Kind wählt nächstes Übungsfeld und einen Helfer\nMuss: Chaostag mit Feldern. Kann: Gesten. Wird es knapp: Gesten weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose les cinq papiers des cases\n1′ Pour chaque case, l’enfant montre son outil par un geste\n4′ L’adulte joue la journée ratée de Sami, l’enfant nomme la case – « Quelle case de l’horloge m’aide maintenant ? »\n8′ L’enfant choisit la case à travailler et qui l’aide\nIndispensable : journée ratée de Sami. Option : gestes. Serré : sauter les gestes."
+      }
     }
   },
   {

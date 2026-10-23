@@ -563,6 +563,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Fokus-Fernglas, Teil 1: scharf stellen\n1′ Beide formen aus den Händen ein Fernglas\n2′ Kind zählt laut alles Blaue im Raum – „Alles andere darf verschwommen bleiben.“\n5′ Tausch: Kind stellt Suchaufgabe, Fachkraft lässt sich ablenken\n8′ Kind sagt, wie scharf und wie springend sich anfühlt\nMuss: Suchaufgabe mit Fernglas. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente les jumelles, partie 1 : mise au point\n1′ Les deux forment des jumelles avec les mains\n2′ L’enfant compte à voix haute tout ce qui est bleu – « Le reste a le droit de devenir flou. »\n5′ On échange : l’enfant donne la consigne, l’adulte se laisse distraire\n8′ L’enfant dit comment ça fait, net ou quand le regard saute\nIndispensable : recherche avec les jumelles. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -1868,6 +1876,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind schreibt sechs Wörter ab, Fachkraft stört harmlos\n1′ Bei jeder Ablenkung ruft Kind Staub und nennt sie\n4′ Tausch: Kind stört, Fachkraft ruft Staub\n7′ Kind sortiert Ablenkungen: von außen, von innen – „Kommt der Staub von außen oder von innen, aus dem Kopf?“\n9′ Beide suchen je ein Wegräum-Mittel\nMuss: Abschreiben mit Stören, sortieren. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant recopie six mots, l’adulte le dérange gentiment\n1′ À chaque distraction, l’enfant crie poussière et la nomme\n4′ On échange : l’enfant dérange, l’adulte crie poussière\n7′ L’enfant trie : de l’extérieur, de l’intérieur\n9′ Ensemble, un moyen de l’écarter pour chacune\nIndispensable : recopier avec dérangements, trier. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -3056,6 +3072,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft denkt Baum-Auftrag laut vor: Was tun, wie, fertig?\n2′ Runde 1: Kind malt Boot, sagt Fragen laut mit\n5′ Runde 2: Haus malen, Fragen flüstern\n7′ Runde 3: Blume malen, Fragen nur im Kopf\nMuss: Vordenken, Runden 1 und 2, bei Frage drei mit dem Finger prüfen. Kann: Runde 3. Wird es knapp: ganz kleine Bilder."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte réfléchit à voix haute devant l’arbre : quoi, comment, fini ?\n2′ Tour 1 : l’enfant dessine le bateau, dit les questions avec l’adulte\n5′ Tour 2 : une maison, questions chuchotées\n7′ Tour 3 : une fleur, questions dans la tête\nIndispensable : démonstration, tours 1 et 2, vérifier avec le doigt. Option : tour 3. Serré : dessins tout petits."
+      }
     }
   },
   {
@@ -4171,6 +4195,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind schätzt Dauer, teilt zwölf Abschreibwörter in drei Etappen\n2′ Etappe 1: Sanduhr läuft, Kind schreibt ab, hakt ab – „Geschafft! Mach deinen Haken.“\n5′ Etappen 2 und 3, je mit Haken und Atempause\n9′ Kind zählt Haken, sagt, was geholfen hat\nMuss: drei Etappen mit Haken. Kann: Rückblick. Wird es knapp: Etappen von einer Minute."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant estime sa durée, partage douze mots en trois étapes\n2′ Étape 1 : sablier lancé, l’enfant recopie, coche – « Fini ! Fais ta coche. »\n5′ Étapes 2 et 3, avec coche et pause pour respirer\n9′ L’enfant compte ses coches, dit ce qui a aidé\nIndispensable : trois étapes avec coche. Option : bilan. Serré : étapes d’une minute."
+      }
     }
   },
   {
@@ -5358,6 +5390,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Timer für Mini-Pause: strecken, trinken, fünf Atemzüge\n1′ Kind sagt Pause vorbei, stellt sich die drei Fragen\n2′ Kind wählt Situation dieser Woche, auch erfunden\n3′ Kind plant: wer, wann, wo, welcher Satz\n6′ Fachkraft spielt Ablenker, Kind sagt Satz, macht ersten Schritt – „Was machst du?“\n8′ Tausch: Fachkraft sagt sich den Satz selbst\nMuss: Situation planen, Ablenker-Rollenspiel. Kann: Tausch. Wird es knapp: Pause-Spiel kurz."
+      },
+      "fr": {
+        "aufbau": "0′ Minuterie pour une courte pause : s’étirer, boire, cinq respirations\n1′ L’enfant dit pause finie, se pose les trois questions\n2′ L’enfant choisit une situation de la semaine, réelle ou inventée\n3′ L’enfant prépare : qui, quand, où, quelle phrase\n6′ L’adulte distrait, l’enfant dit sa phrase et fait le premier pas\n8′ On échange : l’adulte se dit la phrase lui-même\nIndispensable : préparer la situation, jeu de la distraction. Option : échange. Serré : pause très brève."
+      }
     }
   },
   {
@@ -6482,6 +6522,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide blättern durchs Fokus-Heft – „Welches Teil hat bei dir am besten geklappt?“\n2′ Parcours: Kind schreibt acht Wörter ab, nutzt alle Teile\n7′ Kind schreibt Plan auf die Karte, bekommt Urkunde\n9′ Kind nennt, wer erinnert, wenn der Fokus wackelt\nMuss: Parcours ohne Durchfallen, Plan auf Karte. Kann: Rückblick im Heft. Wird es knapp: eine Etappe statt zwei."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux feuillettent le carnet – « Quelle partie a le mieux marché pour toi ? »\n2′ Parcours : l’enfant recopie huit mots avec toutes les parties\n7′ L’enfant écrit son plan sur la carte, reçoit le diplôme\n9′ L’enfant dit qui l’aide quand sa concentration vacille\nIndispensable : parcours sans échec possible, plan sur la carte. Option : retour sur le carnet. Serré : une étape au lieu de deux."
+      }
     }
   },
   {

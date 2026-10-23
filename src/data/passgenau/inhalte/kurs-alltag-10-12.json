@@ -555,6 +555,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Cockpit: Zeit, Ordnung, Geld, Wege, Hilfe\n1′ Fachkraft erzählt von Jana, Kind ordnet Anzeigen zu\n3′ Kind ordnet sechs Alltagssätze: selbst, mit Hilfe, noch nicht – „Mit Hilfe ist kein Mangel.“\n8′ Kind wählt eine nächste Sache, Fachkraft notiert sie\nMuss: sechs Sätze einordnen. Kann: Jana-Beispiel. Wird es knapp: Jana weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le tableau de bord : temps, rangement, argent, trajets, aide\n1′ L’adulte parle de Jana, l’enfant nomme les cadrans\n3′ Six phrases : l’enfant dit seul, avec de l’aide, pas encore – « Avec de l’aide, ce n’est pas un défaut. »\n8′ L’enfant choisit une chose, l’adulte la note pour le dossier\nIndispensable : les six phrases. Option : exemple de Jana. Serré : sauter Jana."
+      }
     }
   },
   {
@@ -1790,6 +1798,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeichnet Woche, trägt Bens feste Termine ein\n2′ Kind verteilt Hausaufgaben und Vokabeln – „Was passt danach noch hinein?“\n5′ Fachkraft zeigt: Training länger, ganzer Nachmittag rutscht\n7′ Kind zeichnet Puffer von 20 bis 30 Minuten ein\n9′ Kind sagt: Termine, dann Aufgaben, dazwischen Puffer\nMuss: feste Termine, Puffer. Kann: in eigenen Worten sagen. Wird es knapp: nur Hausaufgaben eintragen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte dessine la semaine, note les rendez-vous fixes de Ben\n2′ L’enfant place devoirs et vocabulaire – « Qu’est-ce qui rentre encore après ? »\n5′ L’adulte montre : l’entraînement dure plus, l’après-midi glisse\n7′ L’enfant dessine une marge de vingt à trente minutes\n9′ L’enfant redit : rendez-vous fixes, tâches, marge\nIndispensable : rendez-vous fixes, marge. Option : redire avec ses mots. Serré : seulement les devoirs."
+      }
     }
   },
   {
@@ -2960,6 +2976,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind sucht Schlüssel im durcheinandergeworfenen Karton – „Such mal den Schlüssel.“\n2′ Kind legt feste Plätze fest, Fachkraft notiert sie\n4′ Sanduhr läuft, Kind bringt jede Sache an ihren Platz\n7′ Kind sucht den Schlüssel noch einmal\n8′ Kind formuliert einen Wenn-dann-Satz\nMuss: feste Plätze, Aufräumen mit Uhr. Kann: Wenn-dann-Satz. Wird es knapp: zweite Suche weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant cherche les clés dans le carton en désordre – « Cherche les clés. »\n2′ L’enfant choisit une place fixe par chose, l’adulte la note\n4′ Le sablier tourne, l’enfant range chaque chose à sa place\n7′ L’enfant cherche à nouveau les clés\n8′ L’enfant formule une phrase « si … alors … »\nIndispensable : places fixes, rangement chronométré. Option : phrase « si … alors … ». Serré : sauter la deuxième recherche."
+      }
     }
   },
   {
@@ -4132,6 +4156,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind sortiert sechs Wunschkarten: brauche ich, wünsche ich, dazwischen\n3′ Fachkraft fragt einmal nach dem Bedürfnis hinter einem Wunsch – „Was würde dir dieser Wunsch bringen?“\n5′ Kind rechnet Bens Sparziel: 40 Euro, 5 pro Woche\n7′ Kind wählt eigenes Sparziel, auch erfunden, rechnet Wochen\nMuss: sortieren, Bens Rechnung. Kann: eigenes Sparziel. Wird es knapp: Bedürfnisfrage weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant trie six cartes : besoin, envie, entre les deux\n3′ Pour une envie, l’adulte cherche le besoin – « Qu’est-ce que cette envie t’apporterait ? »\n5′ L’enfant calcule pour Ben : 40 euros, 5 par semaine\n7′ L’enfant choisit son objectif, inventé possible, et calcule les semaines\nIndispensable : tri, calcul pour Ben. Option : objectif personnel. Serré : sauter la question du besoin."
+      }
     }
   },
   {
@@ -5338,6 +5370,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Linas Wegeplan: wohin, wann, wie, Plan B\n2′ Kind plant eigenen Weg, auch erfunden, mit denselben Fragen\n5′ Kind formuliert seinen Satz, wenn etwas schiefgeht\n6′ Fachkraft spielt Trainerin am Telefon, erst freundlich, dann eilig – „Ich bin jetzt die Person am Telefon.“\n9′ Kind nennt Person zum Anrufen; im Ernstfall 112\nMuss: Wegeplan mit Plan B, Satz am Telefon. Kann: eiliger Durchgang. Wird es knapp: nur freundlicher Durchgang."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le plan de trajet de Lina : où, quand, comment, plan B\n2′ L’enfant planifie son trajet, inventé possible, avec les mêmes questions\n5′ L’enfant prépare sa phrase quand ça tourne mal\n6′ L’adulte joue l’entraîneuse au téléphone, aimable puis pressée\n9′ L’enfant dit qui il appelle ; si c’est grave, le 112\nIndispensable : plan de trajet avec plan B, phrase au téléphone. Option : tour pressé. Serré : seulement le tour aimable."
+      }
     }
   },
   {
@@ -6526,6 +6566,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt fünf Blätter aus, Kind nennt stärkste und flackernde Anzeige\n2′ Kind vergleicht mit dem Selbst-Check vom ersten Mal\n3′ Kind zeigt ein Werkzeug im Rollenspiel, eine Minute\n5′ Beide schreiben Plan: Wenn-dann-Satz, erster Schritt, Helfer\n9′ Kind bekommt die Cockpit-Urkunde – „Wer fragt, bleibt am Steuer.“\nMuss: Werkzeug zeigen, Selbstständig-Plan. Kann: Selbst-Check vergleichen. Wird es knapp: Rückblick auf eine Anzeige."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale les cinq fiches, l’enfant nomme le cadran le plus utile et celui qui clignote\n2′ L’enfant compare avec le bilan de la première rencontre\n3′ Jeu de rôle d’une minute : l’enfant montre un outil\n5′ Ensemble : phrase « si … alors … », premier pas, personne qui aide\n9′ L’enfant reçoit le diplôme du tableau de bord\nIndispensable : outil en jeu de rôle, plan d’autonomie. Option : comparer avec le bilan. Serré : un seul cadran en retour."
+      }
     }
   },
   {

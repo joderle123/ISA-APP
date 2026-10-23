@@ -477,6 +477,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Freundschafts-Brücke, heute Planke 1\n1′ Fachkraft legt Blätter Planke und Wasser auf den Boden\n2′ Kind springt je Szene auf Planke oder Wasser, begründet\n5′ Beide sammeln, was gute Freunde tun; Kind wählt drei\n8′ Tausch: Kind erfindet Szene, Fachkraft springt\nMuss: Szenen springen, drei wichtigste wählen. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le pont de l’amitié, aujourd’hui la planche 1\n1′ L’adulte pose par terre deux feuilles : planche et eau\n2′ Pour chaque scène, l’enfant saute sur la planche ou dans l’eau et dit pourquoi\n5′ Ensemble : ce que font les bons amis ; l’enfant en choisit trois\n8′ On échange : l’enfant invente une scène, l’adulte saute\nIndispensable : sauter aux scènes, choisir les trois. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -1690,6 +1698,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind kreuzt Brücken-Auftrag an, nichts gesehen zählt auch\n1′ Fachkraft baut Turm, Kind möchte mitbauen\n2′ Kind übt: schauen, näher kommen, fragen – „Wie fragst du, damit sie gern Ja sagen?“\n5′ Fachkraft sagt einmal freundlich Nein, Kind bleibt ruhig – „Du kannst später noch einmal fragen.“\n7′ Tausch: Fachkraft fragt erst unhöflich, dann richtig\nMuss: drei Schritte, ruhig bei Nein. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant coche le défi du pont, ne rien avoir vu compte aussi\n1′ L’adulte construit une tour, l’enfant veut construire avec lui\n2′ L’enfant s’exerce : regarder, s’approcher, demander\n5′ L’adulte dit une fois non gentiment, l’enfant reste calme – « Tu peux redemander plus tard. »\n7′ On échange : l’adulte demande d’abord impoliment, puis bien\nIndispensable : trois étapes, rester calme au non. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -2838,6 +2854,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind kreuzt Brücken-Auftrag an\n1′ Ball zuwerfen: Wer ihn hat, fragt, der andere antwortet\n3′ Fachkraft zeigt Nachfragen – „Wirklich? Und dann?“\n4′ Fachkraft hört schlecht zu, Kind ruft Stopp\n6′ Kind zeigt gutes Zuhören: anschauen, nicken, ausreden lassen\n8′ Drei Runden mit allen Zuhör-Zeichen\nMuss: Ball-Fragen mit Nachfragen, gutes Zuhören. Kann: drei Übungsrunden. Wird es knapp: eine Runde."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant coche le défi du pont\n1′ On se lance la balle : qui l’a pose une question\n3′ L’adulte montre la relance – « Vraiment ? Et alors ? »\n4′ L’adulte écoute mal, l’enfant dit stop\n6′ L’enfant montre la bonne écoute : regarder, hocher la tête, laisser finir\n8′ Trois tours avec tous les signes de bonne écoute\nIndispensable : questions à la balle avec relance, bonne écoute. Option : trois tours. Serré : un seul tour."
+      }
     }
   },
   {
@@ -4021,6 +4045,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind kreuzt Brücken-Auftrag an\n1′ Fachkraft baut, Kind lobt echt – „Ich finde …, weil …“\n3′ Turm kippt: Kind fragt, ob es helfen soll\n5′ Fachkraft sagt Ja, dann Nein danke; Kind antwortet freundlich – „Okay, sag Bescheid, wenn du Hilfe brauchst.“\n7′ Tausch: Kind baut, Fachkraft lobt und bietet Hilfe an\nMuss: echtes Lob, Hilfe anbieten. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant coche le défi du pont\n1′ L’adulte construit, l’enfant fait un vrai compliment – « J’aime …, parce que … »\n3′ La tour tombe : l’enfant propose son aide\n5′ L’adulte dit oui, puis non merci ; l’enfant répond gentiment – « D’accord, dis-moi si tu as besoin d’aide. »\n7′ On échange : l’enfant construit, l’adulte complimente et propose son aide\nIndispensable : vrai compliment, proposer son aide. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -5247,6 +5279,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind kreuzt Brücken-Auftrag an\n1′ Kind als Tom: sagen, Entschuldigung, fragen, neu aufbauen – „Wie kann ich es wieder gut machen?“\n4′ Fachkraft sagt halbes Sorry, Kind merkt den Unterschied\n5′ Kind wählt Planke für diese Woche, eigenes Beispiel freiwillig\n7′ Fachkraft spielt die andere Person, Kind sagt Satz einmal\n9′ Kind schreibt oder malt Plan: wer, wann, wo\nMuss: Toms Schritte, eigener Satz, Plan. Kann: halbes Sorry. Wird es knapp: halbes Sorry weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant coche le défi du pont\n1′ L’enfant joue Tom : dire, s’excuser, demander, reconstruire – « Comment je peux réparer ? »\n4′ L’adulte dit un pardon qui ne compte pas, l’enfant voit la différence\n5′ L’enfant choisit la planche de la semaine, exemple vécu facultatif\n7′ L’adulte joue l’autre personne, l’enfant dit sa phrase\n9′ L’enfant écrit ou dessine son plan : qui, quand, où\nIndispensable : étapes de Tom, sa phrase, son plan. Option : faux pardon. Serré : sauter le faux pardon."
+      }
     }
   },
   {
@@ -6957,6 +6997,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind kreuzt Plan-Ergebnis an, Fachkraft bewertet nichts\n1′ Fachkraft legt fünf Stichwort-Blätter als Planken aus\n2′ Auf jeder Planke sagt Kind Können oder Satz\n5′ Bei einer Planke spielt Fachkraft eine Szene mit\n7′ Kind nennt leichte Planke, Übungsplanke und Helfer – „Wer kann dir helfen?“\n9′ Fachkraft sagt: Auch an sie kann man sich wenden\nMuss: Brückengang ohne Durchfallen, Helfer nennen. Kann: Szene. Wird es knapp: Szene weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant coche comment s’est passé son plan, l’adulte ne juge pas\n1′ L’adulte pose cinq feuilles-planches avec un mot chacune\n2′ Sur chaque planche, l’enfant dit ce qu’il sait ou sa phrase\n5′ Sur une planche, l’adulte joue une petite scène avec lui\n7′ L’enfant nomme la planche facile, celle à travailler et qui aide\n9′ L’adulte dit qu’on peut aussi s’adresser à lui\nIndispensable : traverser sans échec, nommer qui aide. Option : petite scène. Serré : sauter la scène."
+      }
     }
   },
   {

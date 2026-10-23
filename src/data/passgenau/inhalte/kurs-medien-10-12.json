@@ -644,6 +644,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Handy-Führerschein mit fünf Feldern, heute Zeit\n1′ Fachkraft erzählt Janas Tag in drei Etappen\n2′ Kind sagt je Etappe, wie Jana sich danach fühlt – „Woran merkst du den Unterschied?“\n5′ Fachkraft nennt drei Tricks: Streaks, weiterlaufende Folgen, Ping-Töne\n7′ Kind sucht die Tricks in Janas Abend\n9′ Freiwillig: Blick auf eigenen Tag, ein Wort genügt\nMuss: Janas Etappen, Tricks finden. Kann: eigener Tag, auch erfunden. Wird es knapp: eigenen Tag weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le permis de portable à cinq cases, aujourd’hui le temps\n1′ L’adulte raconte la journée de Jana en trois moments\n2′ Pour chaque moment, l’enfant dit comment Jana se sent après\n5′ L’adulte nomme trois astuces : séries de jours, épisodes enchaînés, sons\n7′ L’enfant cherche les astuces dans la soirée de Jana\n9′ S’il veut : un regard sur sa journée, un mot suffit\nIndispensable : moments de Jana, trouver les astuces. Option : sa journée, inventée possible. Serré : sauter sa journée."
+      }
     }
   },
   {
@@ -1849,6 +1857,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft liest „ok.“ in drei Tönen vor, Kind rät\n2′ Fachkraft zeigt nur die Karte: Stimme und Gesicht fehlen\n3′ Fachkraft liest Linas und Bens Chat, Kind deutet Bens ok\n5′ Fachkraft zeigt Chat-Check: lesen, prüfen, nachfragen\n7′ Knappe Nachricht, Kind fragt freundlich nach, dann umgekehrt – „Meinst du das so?“\nMuss: Töne raten, Linas und Bens Chat, Chat-Check. Kann: umgekehrte Runde. Wird es knapp: nur eine Rollenspielrunde."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte lit « ok. » sur trois tons, l’enfant devine\n2′ L’adulte montre seulement la carte : ni voix ni visage\n3′ L’adulte lit le chat de Lina et Ben, l’enfant interprète le ok de Ben\n5′ L’adulte montre le check du chat : lire, vérifier, demander\n7′ Message sec, l’enfant demande gentiment, puis inversement – « Tu veux dire ça ? »\nIndispensable : deviner les tons, chat de Lina et Ben, check du chat. Option : tour inversé. Serré : un seul tour de jeu."
+      }
     }
   },
   {
@@ -3076,6 +3092,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Privat-Ampel – „Rot bleibt bei mir: Passwort, Adresse, Standort.“\n2′ Fachkraft will Passwort, Kind sagt Nein, bietet anderes an\n4′ Fachkraft will lustiges Foto posten, Kind fordert: erst fragen\n6′ Tausch: Kind drängt, Fachkraft sagt Nein\n9′ Kind nennt den Satz, den es sich merkt\nMuss: Ampel, zwei Szenen; Kind darf eine Figur spielen. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le feu de la vie privée – « Le rouge reste à moi : mot de passe, adresse, position. »\n2′ L’adulte veut le mot de passe, l’enfant dit non et propose autre chose\n4′ L’adulte veut poster une photo drôle, l’enfant exige qu’on demande\n6′ On échange : l’enfant insiste, l’adulte dit non\n9′ L’enfant dit la phrase qu’il veut retenir\nIndispensable : feu, deux scènes ; l’enfant peut jouer un personnage. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -4285,6 +4309,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Hilfe-Weg: Stopp, Bildschirmfoto, zeigen, blockieren und melden\n1′ Fachkraft sagt: Gemeines ist nie Schuld des Kindes\n2′ Fachkraft liest erfundene Nachricht, spielt erwachsene Person\n3′ Kind übt Zeigen mit seinem Satz, Fachkraft reagiert ruhig – „Ich muss dir etwas zeigen.“\n6′ Tausch: Kind ist erwachsene Person, Fachkraft zeigt andere Nachricht\n9′ Beide sammeln, woran Kind merkt: Hilfe holen\nMuss: Hilfe-Weg, Zeigen üben; ruhig, ohne Vorwurf. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le chemin de l’aide : stop, capture, montrer, bloquer et signaler\n1′ L’adulte dit : ce n’est jamais la faute de l’enfant\n2′ L’adulte lit un message inventé, joue la personne adulte\n3′ L’enfant s’exerce à montrer avec sa phrase, l’adulte reste calme – « Je dois te montrer quelque chose. »\n6′ On échange : l’enfant est l’adulte, l’adulte montre un autre message\n9′ Ensemble : à quoi l’enfant voit qu’il faut chercher quelqu’un\nIndispensable : chemin de l’aide, montrer ; calme, sans reproche. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -5918,6 +5950,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Wenn-dann-Plan an Bens Beispiel\n1′ Kind wählt Situation, in der Weglegen schwerfällt; auch erfunden\n3′ Kind legt fest: wer, wann, wo, stattdessen, welcher Satz\n5′ Durchgang 1: Fachkraft drängt freundlich, Kind sagt Satz\n7′ Durchgang 2: Fachkraft drängt hartnäckig\nMuss: Plan mündlich, zwei Durchgänge; nichts erfragen; danach erst das Kind, dann ein Plus, höchstens ein Tipp. Kann: Plan aufs Blatt. Wird es knapp: ein Durchgang."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le plan si–alors avec l’exemple de Ben\n1′ L’enfant choisit une situation où poser le portable est dur, inventée possible\n3′ L’enfant décide : qui, quand, où, quoi à la place, quelle phrase\n5′ Tour 1 : l’adulte insiste gentiment, l’enfant dit sa phrase\n7′ Tour 2 : l’adulte insiste avec obstination\nIndispensable : plan à l’oral, deux tours ; rien n’est demandé ; l’enfant parle d’abord, puis un plus. Option : plan sur la fiche. Serré : un seul tour."
+      }
     }
   },
   {
@@ -7013,6 +7053,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt die fünf Blätter nebeneinander\n1′ Kind nennt Ausprobiertes, hilfreichstes und wackelndes Feld\n4′ Kind zeigt ein Feld eine Minute im Rollenspiel\n6′ Beide halten fest: ein Feld, eine Regel, wer hilft\n9′ Kind füllt die Urkunde aus\nMuss: Feld zeigen, eine Regel für zwei Wochen; nichts muss geklappt haben. Kann: ausführlicher Rückblick. Wird es knapp: Rückblick auf ein Feld."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose les cinq fiches côte à côte\n1′ L’enfant dit ce qu’il a essayé, la case la plus utile, la plus fragile\n4′ L’enfant montre une case en une minute de jeu de rôle\n6′ Ensemble : une case, une règle, qui aide\n9′ L’enfant remplit son diplôme\nIndispensable : montrer une case, une règle pour deux semaines ; rien n’a besoin d’avoir marché. Option : retour détaillé. Serré : retour sur une seule case."
+      }
     }
   },
   {

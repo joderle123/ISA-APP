@@ -535,7 +535,15 @@
       "schreiben": 2,
       "bild": 1
     },
-    "vorbereitung": "Eine Karte mit sechs erfundenen Wortpaaren vorbereiten, z. B. Blimo = Brücke, Tarfu = Mütze, Nuvi = Fenster, Sorka = Wolke, Pelm = Löffel, Dinto = Schlüssel."
+    "vorbereitung": "Eine Karte mit sechs erfundenen Wortpaaren vorbereiten, z. B. Blimo = Brücke, Tarfu = Mütze, Nuvi = Fenster, Sorka = Wolke, Pelm = Löffel, Dinto = Schlüssel.",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Werkzeugkiste, heute den Zollstock\n1′ Kind prägt sich eine Minute sechs Fantasiewörter ein\n2′ Karte umgedreht: Kind schätzt, Fachkraft fragt ab\n4′ Kind trägt Schätzung und Ergebnis ein, beide vergleichen ohne Werten – „Lesen fühlt sich sicherer an, als es ist.“\n6′ Beide lesen den Comic von Tom und Amira\n8′ Kind ordnet Lernwege: fühlt sich gut an, wirkt wirklich\nMuss: Fantasiewörter schätzen und messen. Kann: Comic. Wird es knapp: Comic weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la boîte à outils, aujourd’hui le mètre pliant\n1′ L’enfant retient six mots inventés en une minute\n2′ Carte retournée : l’enfant estime, l’adulte interroge\n4′ L’enfant note estimation et résultat, on compare sans juger\n6′ Les deux lisent la BD de Tom et Amira\n8′ L’enfant classe : fait du bien ou marche vraiment\nIndispensable : mots inventés, estimer puis mesurer. Option : BD. Serré : sauter la BD."
+      }
+    }
   },
   {
     "id": "ki:kurs-fokus-10-12-s1-b",
@@ -1767,6 +1775,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind zählt 30 Sekunden in Dreierschritten rückwärts von 50\n1′ Zweite Runde, Fachkraft stört: Brummen, Fragen, Klopfen\n2′ Beide vergleichen ohne Werten – „Jedes Umschalten kostet Zeit und Kraft.“\n3′ Kind sortiert Ablenkungen: von außen, von innen\n5′ Kind schreibt zu jeder Ablenkung einen Gegenzug\n8′ Beide gehen den Platz-Check am Blattende durch\nMuss: Zählversuch, Gegenzüge, Platz-Check als Auftrag. Kann: nach außen und innen sortieren. Wird es knapp: Gegenzüge mündlich."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant compte à rebours de 3 en 3 depuis 50, 30 secondes\n1′ Deuxième tour, l’adulte dérange : vibration, question, stylo\n2′ On compare sans juger – « Chaque changement d’attention coûte du temps et de l’énergie. »\n3′ L’enfant trie : de l’extérieur, de l’intérieur\n5′ L’enfant écrit une parade pour chaque distraction\n8′ Les deux passent en revue la liste de contrôle\nIndispensable : comptage, parades, liste de contrôle comme mission. Option : trier. Serré : parades à l’oral."
+      }
     }
   },
   {
@@ -2938,6 +2954,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Tom mit riesigem Referat – „Hilfst du ihm?“\n1′ Kind sägt die Aufgabe in 15-Minuten-Stücke mit Ende\n5′ Kind verteilt Stücke auf Tage, nennt Toms Stück für heute\n7′ Kind schreibt die Stücke in die Tabelle\n8′ Erst jetzt: eigene große Aufgabe, sonst erfundene\nMuss: Stücke sägen, auf Tage verteilen. Kann: eigene Aufgabe. Wird es knapp: Tabelle später."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue Tom et son énorme exposé – « Tu l’aides ? »\n1′ L’enfant découpe la tâche en morceaux de 15 minutes, avec une fin\n5′ L’enfant répartit sur les jours, dit le morceau de Tom pour aujourd’hui\n7′ L’enfant écrit les morceaux dans le tableau\n8′ Ensuite seulement : une grosse tâche à lui, ou inventée\nIndispensable : découper, répartir sur les jours. Option : tâche personnelle. Serré : tableau plus tard."
+      }
     }
   },
   {
@@ -4042,6 +4066,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind liest eine Minute den Text zum Wasserkreislauf\n1′ Text zugedeckt: Kind erklärt, Fachkraft notiert still – „Lücken sind erlaubt.“\n3′ Beide markieren Lücken, Kind schreibt drei Fragekarten\n5′ Kind schätzt mit dem Zollstock, Fachkraft fragt ab\n7′ Beide legen zwei Wiederholungstage fest\n9′ Wenn Zeit bleibt: Fachkraft irrt sich einmal absichtlich\nMuss: zudecken und erklären, Fragekarten, zwei Tage. Kann: absichtlicher Fehler. Wird es knapp: Fehler weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant lit une minute le texte sur le cycle de l’eau\n1′ Texte caché : l’enfant explique, l’adulte note en silence – « Les trous sont permis. »\n3′ On marque les trous, l’enfant écrit trois cartes-questions\n5′ L’enfant estime avec le mètre pliant, l’adulte interroge\n7′ Les deux fixent deux jours pour retaper les cartes\n9′ S’il reste du temps : l’adulte se trompe exprès\nIndispensable : cacher et expliquer, cartes-questions, deux jours. Option : erreur exprès. Serré : sauter l’erreur."
+      }
     }
   },
   {
@@ -5201,6 +5233,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Amira mit Testfehlern – „Ich bin einfach schlecht in Mathe.“\n1′ Kind prüft mit Fehler-Lupe: was falsch, woran, was ändern\n4′ Kind wählt Situation dieser Woche, freiwillig oder erfunden\n5′ Kind plant: wer, wann, wo, welcher Satz\n7′ Fachkraft spielt die Person dazu, Kind sagt Satz laut\n9′ Kind schreibt Plan in die Satzanfänge\nMuss: Fehler-Lupe, Plan mit Satz. Kann: Satz danach ändern. Wird es knapp: Tabelle mündlich."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue Amira et son contrôle raté – « Je suis nulle en maths. »\n1′ L’enfant regarde à la loupe : quoi, pourquoi, que changer\n4′ L’enfant choisit une situation de la semaine, librement ou inventée\n5′ L’enfant planifie : qui, quand, où, quelle phrase\n7′ L’adulte joue la personne, l’enfant dit sa phrase à voix haute\n9′ L’enfant écrit son plan dans les débuts de phrases\nIndispensable : loupe des erreurs, plan avec phrase. Option : modifier la phrase. Serré : tableau à l’oral."
+      }
     }
   },
   {
@@ -6438,6 +6478,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Rückblick auf den letzten Auftrag mit der Fehler-Lupe\n1′ Fachkraft spielt Mitschülerin vor Test, Kind berät mit Kasten\n4′ Kind baut eigenen Lernplan: zwei, drei Werkzeuge, wann\n7′ Kind schreibt Plan und Lernsatz auf\n8′ Beide blättern zurück, Kind füllt Urkunde aus – „Und wer hilft dir, wenn es schwierig wird?“\nMuss: Beratung, eigener Lernplan. Kann: Mappen-Rückblick. Wird es knapp: Urkunde ohne Rückblick."
+      },
+      "fr": {
+        "aufbau": "0′ Retour sur la dernière mission avec la loupe des erreurs\n1′ L’adulte joue une camarade avant un contrôle, l’enfant la conseille\n4′ L’enfant construit son plan : deux ou trois outils, quand\n7′ L’enfant écrit son plan et sa phrase d’apprentissage\n8′ Retour sur la chemise, l’enfant remplit le diplôme – « Et qui t’aide quand c’est difficile ? »\nIndispensable : conseil, plan personnel. Option : retour sur la chemise. Serré : diplôme sans retour."
+      }
     }
   },
   {

@@ -639,6 +639,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Digital-Check, heute das Feld Zeit\n1′ Fachkraft erzählt Janas Dienstag in vier Etappen\n2′ Jugendliche/r sagt je Etappe: gewählt oder nebenbei, danach gut, egal oder leer\n6′ Beide legen fest, was Jana lässt und was sie bewusster macht\nMuss: Janas vier Etappen. Kann: eigene Zeiten, nur freiwillig. Wird es knapp: zwei Etappen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le check-up numérique, aujourd’hui le temps\n1′ L’adulte raconte le mardi de Jana en quatre étapes\n2′ Pour chaque étape : choisi ou machinal, puis bien, bof ou vide\n6′ Ensemble : ce que Jana garde, ce qu’elle vivrait plus consciemment\nIndispensable : les quatre étapes de Jana. Option : son temps d’écran, seulement s’il ou elle veut. Serré : deux étapes."
+      }
     }
   },
   {
@@ -1871,6 +1879,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt App-Tricks: endloser Feed, Streak, roter Punkt\n2′ Fachkraft spielt App, schickt drei Nachrichten – „Deine Serie läuft in zwei Stunden ab!“\n3′ Jugendliche/r nennt Trick, antwortet mit Gegenzug\n6′ Auf dem Blatt: Trick, Wirkung, eigener Gegenzug\n8′ Fachkraft zeigt: Feeds sind berechnet, jeder sieht anderes\nMuss: App-Nachrichten mit Gegenzug. Kann: Feed-Blick. Wird es knapp: Blatt danach."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte nomme les astuces : défilement infini, série, pastille rouge\n2′ L’adulte joue l’appli et envoie trois messages – « Ta série expire dans deux heures ! »\n3′ Le ou la jeune nomme l’astuce et répond par une parade\n6′ Sur la fiche : astuce, effet, sa propre parade\n8′ L’adulte montre : le fil est calculé, chacun voit autre chose\nIndispensable : messages de l’appli avec parade. Option : regard sur le fil. Serré : fiche ensuite."
+      }
     }
   },
   {
@@ -3071,7 +3087,15 @@
       "schreiben": 2,
       "bild": 1
     },
-    "vorbereitung": "Das Wels-Foto bereithalten (ein Zettel „Riesiger Wels im Baggersee!“ genügt) und die Fundstellen notieren: (1) Wels – dasselbe Foto steht seit drei Jahren in einem Angelblog aus einem anderen Land, der Account postet nur Riesenfisch-Fotos; (2) Schulausfall-Nachricht (Blatt) – die Schule meldet nichts, der Absender ist unbekannt; (3) KI-Studie des „Instituts für Schlafforschung“ (Blatt) – das Institut gibt es nicht, die Zahl steht nirgends sonst."
+    "vorbereitung": "Das Wels-Foto bereithalten (ein Zettel „Riesiger Wels im Baggersee!“ genügt) und die Fundstellen notieren: (1) Wels – dasselbe Foto steht seit drei Jahren in einem Angelblog aus einem anderen Land, der Account postet nur Riesenfisch-Fotos; (2) Schulausfall-Nachricht (Blatt) – die Schule meldet nichts, der Absender ist unbekannt; (3) KI-Studie des „Instituts für Schlafforschung“ (Blatt) – das Institut gibt es nicht, die Zahl steht nirgends sonst.",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt SIFT: innehalten, Quelle prüfen, andere Berichte, Ursprung\n2′ Jugendliche/r prüft das Wels-Foto, Fachkraft antwortet als Quelle – „Was suchst du als Nächstes?“\n6′ Fachkraft: KI-Texte und -Bilder über die Quelle prüfen\n7′ Am Blatt: Schulausfall, Fakt oder Meinung, KI-Antwort\nMuss: SIFT am Wels-Foto. Kann: alle drei Blatt-Übungen. Wird es knapp: eine Blatt-Übung."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre SIFT : s’arrêter, source, autres recherches, origine\n2′ Le ou la jeune vérifie la photo du silure, l’adulte répond comme la source – « Que cherches-tu ensuite ? »\n6′ L’adulte : textes et images d’IA se vérifient par la source\n7′ Sur la fiche : école fermée, fait ou opinion, réponse d’IA\nIndispensable : SIFT sur la photo du silure. Option : les trois exercices. Serré : un seul exercice."
+      }
+    }
   },
   {
     "id": "ki:kurs-medien-13-16-s3-b",
@@ -4331,6 +4355,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Sende-Check mit drei Fragen – „Wer sieht es noch?“\n2′ Fachkraft liest Gruppenchat der 9b mit Noors Foto\n3′ Jugendliche/r überlegt: mitlachen, schweigen, klarer Satz\n4′ Jugendliche/r schreibt und sagt klaren Satz – „Lösch das bitte. Noor wurde nicht gefragt.“\n6′ Fachkraft spielt Gruppe, reagiert ruhig auf jede Antwort\n8′ Fachkraft zeigt: sichern, nicht zurückschreiben, zeigen, Helpline 8002 1234\nMuss: klarer Satz, Weg mit Helpline. Kann: alle drei Antworten durchspielen. Wird es knapp: Sende-Check kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le contrôle avant l’envoi en trois questions\n2′ L’adulte lit le chat de la 9b avec la photo de Noor\n3′ Le ou la jeune imagine : rire, se taire, phrase claire\n4′ Le ou la jeune écrit et dit sa phrase claire – « Supprime ça, s’il te plaît. »\n6′ L’adulte joue le groupe, réagit calmement à chaque réponse\n8′ L’adulte montre : capture, ne pas riposter, montrer, Helpline 8002 1234\nIndispensable : phrase claire, chemin avec la Helpline. Option : jouer les trois réponses. Serré : contrôle bref."
+      }
     }
   },
   {
@@ -6056,6 +6088,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Jugendliche/r wählt ein Feld und eine kleine, machbare Änderung\n2′ Vermutung, Messwert, Plan: wer, wann, wo, Satz\n5′ Fachkraft spielt Freundin, erst freundlich, dann nachfragend – „Warum antwortest du nicht mehr?“\n8′ Jugendliche/r legt einen Wenn-dann-Plan B fest\nMuss: Änderung, Plan mit Satz, zwei Durchgänge; Fachkraft nennt zuerst Gelungenes. Kann: Messwert. Wird es knapp: Plan B in einem Satz."
+      },
+      "fr": {
+        "aufbau": "0′ Le ou la jeune choisit un champ et un petit changement réalisable\n2′ Hypothèse, mesure, plan : qui, quand, où, quelle phrase\n5′ L’adulte joue l’amie, aimable puis insistante – « Pourquoi tu ne réponds plus ? »\n8′ Le ou la jeune fixe un plan B « si… alors »\nIndispensable : changement, plan avec phrase, deux tours ; l’adulte dit d’abord ce qui a réussi. Option : mesure. Serré : plan B en une phrase."
+      }
     }
   },
   {
@@ -7129,6 +7169,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide legen die fünf Blätter nebeneinander\n1′ Jugendliche/r zeigt bestes und schwächstes Blatt – „Woran merkst du das?“\n3′ Jugendliche/r schätzt die fünf Felder ein, wertet Experiment aus\n6′ Fachkraft erklärt kurz: Check verbietet nichts, macht Entscheidungen sichtbar\n8′ Wer hilft: Freunde, Vertrauensperson, Helpline 8002 1234\nMuss: Felder einschätzen, Helfer klären. Kann: Experiment auswerten. Wird es knapp: ein Blatt besprechen."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux étalent les cinq fiches\n1′ Le ou la jeune montre la fiche la plus utile et la moins utile – « À quoi tu le remarques ? »\n3′ Le ou la jeune évalue les cinq champs, fait le bilan de l’expérience\n6′ L’adulte explique : le check n’interdit rien, il rend visible\n8′ Qui aide : amis, adulte de confiance, Helpline 8002 1234\nIndispensable : évaluer les champs, savoir qui aide. Option : bilan de l’expérience. Serré : parler d’une seule fiche."
+      }
     }
   },
   {

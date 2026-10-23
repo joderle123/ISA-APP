@@ -367,6 +367,14 @@
         "Tu l’as fait tout seul. Tu as fait des efforts, je l’ai vu."
       ],
       "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose deux gestes au choix (« gobelet ou veste ? »). Si un geste est encore trop difficile, l’adulte dit : « Pas encore – Kiki s’entraîne aussi. », et l’enfant montre autre chose qu’il sait faire (taper dans les mains compte). Deux gestes suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Kiki im Ei – „Ich kann das schon!“\n1′ Kind macht Kikis Picken, Flattern, Trinken mit\n3′ Fachkraft mimt Alltagsgriffe, Kind sagt: schon oder noch nicht – „Kannst du das schon?“\n5′ Tausch: Kind mimt, Fachkraft rät\n7′ Fachkraft zeigt erste Sprosse der Ich-kann-das-Leiter\nMuss: Kiki nachmachen, Alltagsgriffe. Kann: Tausch. Wird es knapp: gleich zur Leiter."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente Kiki dans l’œuf – « Je sais déjà le faire ! »\n1′ L’enfant picore, bat des ailes, boit comme Kiki\n3′ L’adulte mime des gestes du quotidien, l’enfant répond : déjà ou pas encore\n5′ On échange : l’enfant mime, l’adulte devine\n7′ L’adulte montre le premier barreau de l’échelle\nIndispensable : imiter Kiki, gestes du quotidien. Option : échange des rôles. Serré : passer directement à l’échelle."
+      }
     }
   },
   {
@@ -867,6 +875,14 @@
         "Tu as fait beaucoup d’efforts et tu l’as réussi tout seul. Ce n’était pas facile !"
       ],
       "wennEsKippt": "Si l’enfant ne veut pas habiller la poupée, il reste le conseiller de Kiki : il montre l’image suivante et l’adulte habille la poupée. S’il s’impatiente devant une fermeture, l’adulte aide tout de suite un petit bout (« Je tiens, tu tires ») – aider est permis. Deux tours suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt vier Anzieh-Bilder, legt Puppenkleider bereit\n1′ Fachkraft zieht Puppe an, sagt jeden Schritt – „Was kommt zuerst?“\n3′ Kind setzt allein die Mütze auf\n4′ Kind macht die letzten zwei, dann alle vier Schritte\n6′ Wer mag: Kind zieht eigenen Reißverschluss hoch\nMuss: Vormachen, rückwärts bis alle vier; Anstrengung loben. Kann: eigene Jacke. Wird es knapp: eigene Jacke weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre les quatre images, prépare les habits de poupée\n1′ L’adulte habille la poupée en disant chaque étape – « Qu’est-ce qui vient en premier ? »\n3′ L’enfant met seul le bonnet\n4′ L’enfant fait les deux dernières étapes, puis les quatre\n6′ S’il veut : l’enfant remonte sa propre fermeture éclair\nIndispensable : démonstration, en partant de la fin jusqu’aux quatre ; féliciter l’effort. Option : sa propre veste. Serré : sauter la veste."
+      }
     }
   },
   {
@@ -1444,6 +1460,14 @@
         "Tu as fait toutes les étapes tout seul et tu as fait des efforts."
       ],
       "wennEsKippt": "Si l’enfant ne veut pas mimer, il montre seulement du doigt les images et l’adulte joue les étapes. S’il ne veut pas brosser en l’air, la série des mains suffit ; l’adulte ne montre les dents que sur la fiche. Un tour suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt acht Bilder, alles als Pantomime ohne Wasser\n1′ Hände, Runde 1: Kind trocknet allein ab, sagt es laut\n2′ Hände, Runden 2 und 3: Kind macht zwei, dann alle Schritte\n5′ Zähne in der Luft: Kind macht die letzten zwei allein\n7′ Kind reibt Seife, Fachkraft zählt bis zwanzig\nMuss: Hände in drei Runden, Zähne. Kann: Seife bis zwanzig. Wird es knapp: Zählen weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre les huit images, tout en mime, sans eau\n1′ Mains, tour 1 : l’enfant essuie seul et le dit – « Essuyer ! »\n2′ Mains, tours 2 et 3 : deux dernières étapes, puis les quatre\n5′ Dents en l’air : l’enfant fait seul les deux dernières étapes\n7′ L’enfant frotte le savon, l’adulte compte jusqu’à vingt\nIndispensable : mains en trois tours, dents. Option : savon jusqu’à vingt. Serré : sauter le comptage."
+      }
     }
   },
   {
@@ -2001,6 +2025,14 @@
         "Un, deux, trois … déjà trois choses à leur place. Tu t’es donné de la peine, et maintenant tout est rangé."
       ],
       "wennEsKippt": "Si ranger est trop, l’enfant ne range qu’un contenant (les cubes) et l’adulte le reste – une place suffit. Si le tourbillon devient trop fou, il ne jette que trois choses, et tout atterrit sur un foulard. Deux tours suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt Korb, Becher, Schuhkarton mit Beispielen hin\n1′ Fachkraft als Wirbelwind kippt alles aus – „Oje, der Wirbelwind war da!“\n2′ Runde 1: Kind räumt die letzten zwei Dinge ein\n3′ Kind räumt die Hälfte, dann alles; Fachkraft zählt laut\n6′ Tausch: Kind ist Wirbelwind, Fachkraft räumt langsam – „Wohin gehört der Stift?“\nMuss: drei Runden Einräumen. Kann: Tausch. Wird es knapp: nach Runde 3 aufhören."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose panier, pot, boîte à chaussures, chacun avec un exemple\n1′ L’adulte fait le tourbillon et renverse tout – « Oh là là, le tourbillon est passé ! »\n2′ Tour 1 : l’enfant range les deux dernières choses\n3′ L’enfant range la moitié, puis tout ; l’adulte compte\n6′ On échange : l’enfant fait le tourbillon, l’adulte range lentement – « Où va le crayon ? »\nIndispensable : trois tours de rangement. Option : échange des rôles. Serré : arrêter après le tour 3."
+      }
     }
   },
   {
@@ -2540,6 +2572,14 @@
         "À qui demandes-tu ? Quand ? Où ? Et quelle phrase dis-tu ?"
       ],
       "wennEsKippt": "Si l’enfant n’ose pas demander, l’adulte fait d’abord la demande et l’enfant est celui qui aide – puis on échange. Si aucune situation ne vient, l’adulte en propose deux de la vie de l’école et l’enfant choisit. L’adulte ne pose pas de questions ; si l’enfant raconte de lui-même quelque chose qui lui fait peur ou lui fait mal, l’adulte arrête le jeu, écoute et en parle ensuite avec la direction (la personne responsable)."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Kiki, Reißverschluss klemmt – „Kannst du mir helfen?“\n1′ Kind ist Kiki mit klemmender Jacke, fragt\n2′ Fachkraft ist beschäftigt: Kind fragt nochmal oder jemand anderen\n3′ Echte Situation dieser Woche: wen, wann, wo, welcher Satz\n6′ Fachkraft spielt diese Person, Kind fragt laut\nMuss: echte Situation mit Satz. Kann: Beschäftigt-Runde. Wird es knapp: Vorspiel ganz kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue Kiki, la fermeture éclair coince – « Tu peux m’aider ? »\n1′ L’enfant est Kiki avec une veste qui coince, il demande\n2′ L’adulte est occupé : l’enfant redemande ou choisit quelqu’un d’autre\n3′ Vraie situation de la semaine : à qui, quand, où, quelle phrase\n6′ L’adulte joue cette personne, l’enfant demande à voix haute\nIndispensable : vraie situation avec sa phrase. Option : tour « adulte occupé ». Serré : scène d’ouverture très courte."
+      }
     }
   },
   {
@@ -2964,6 +3004,14 @@
         "Tu as appris plein de choses et tu as fait de gros efforts. Je l’ai vu."
       ],
       "wennEsKippt": "Si l’enfant ne veut pas jouer, il montre seulement les fiches et l’adulte joue les barreaux pour les amis de Kiki. S’il ne choisit pas de fiche préférée, l’adulte montre la sienne. Une partie de la fête suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt fünf Mappenblätter aus, Kind wählt Lieblingsblatt\n2′ Gelb Eingekreistes jetzt geschafft? Kind übermalt es grün\n3′ Kind als Kiki zeigt Freunden zwei Sprossen, Applaus\n6′ Zuletzt immer die Sprosse Fragen – „Kannst du mir helfen?“\n7′ Fachkraft nennt Lehrerin, Freund; Kind wählt Helfer\nMuss: zwei Sprossen plus Fragen. Kann: Rückblick, grün übermalen. Wird es knapp: Rückblick nur ein Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale les cinq fiches, l’enfant choisit sa préférée\n2′ Rond jaune réussi maintenant ? L’enfant le repasse en vert\n3′ L’enfant, en Kiki, montre deux barreaux aux amis ; applaudissements\n6′ En dernier, toujours le barreau demander – « Tu peux m’aider ? »\n7′ L’adulte propose maîtresse, copain ; l’enfant choisit qui aide\nIndispensable : deux barreaux et demander. Option : retour en arrière, rond vert. Serré : une seule fiche en retour."
+      }
     }
   },
   {

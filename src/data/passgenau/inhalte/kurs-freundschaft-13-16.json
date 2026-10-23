@@ -557,6 +557,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Beziehungs-Kompass, heute die Mitte: Netzwerk\n1′ Fachkraft beschreibt fünf Menschen um Inês, Jugendliche/r ordnet Kreisen zu\n5′ Tausch: Jugendliche/r beschreibt Person, Fachkraft ordnet ein\n8′ Eigenes Netzwerk nur als Zahlen pro Kreis – „Du musst keine Namen nennen.“\nMuss: Inês’ Menschen mit Begründung zuordnen. Kann: Tausch. Wird es knapp: drei Menschen statt fünf."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la boussole, aujourd’hui le centre : le réseau\n1′ L’adulte décrit cinq personnes autour d’Inês, le ou la jeune les place\n5′ Échange : le ou la jeune décrit une personne, l’adulte la place\n8′ Son propre réseau, seulement en chiffres par cercle – « Tu n’as pas besoin de dire de noms. »\nIndispensable : placer les personnes d’Inês avec une raison. Option : échange. Serré : trois personnes au lieu de cinq."
+      }
     }
   },
   {
@@ -1772,6 +1780,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt Einstieg, offene Frage, eigene Info\n1′ Fachkraft spielt versandeten Anfang, Jugendliche/r sagt, was fehlt\n2′ Beobachtete Anfänge an den drei Teilen prüfen\n3′ Vor dem Ansprechen: ausatmen, Schultern sinken lassen\n4′ Szene: Fachkraft freundlich, dann knapp; ruhiger Ausstieg\n8′ Tausch: Fachkraft macht Einstieg, Jugendliche/r antwortet\nMuss: drei Teile, Szene in zwei Runden. Kann: beobachtete Anfänge. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte nomme accroche, question ouverte, petite info sur soi\n1′ L’adulte joue un début qui retombe, le ou la jeune dit ce qui manque\n2′ Tester les débuts observés avec les trois temps\n3′ Avant d’aborder : expirer, relâcher les épaules\n4′ Scène : l’adulte aimable, puis sec ; sortie tranquille\n8′ Échange : l’adulte lance une accroche, le ou la jeune répond\nIndispensable : trois temps, scène en deux tours. Option : débuts observés. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -3023,6 +3039,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft hört absichtlich schlecht zu, Jugendliche/r benennt Störendes\n2′ Fachkraft erzählt eine Minute vom gewonnenen Spiel\n3′ Jugendliche/r übt: zuhören, zusammenfassen, offen nachfragen – „Wie war das für dich?“\n6′ Tausch: Jugendliche/r erzählt frei Gewähltes, Fachkraft fragt nach\n9′ Jugendliche/r sagt, woran Zuhören zu merken war\nMuss: drei Bausteine üben. Kann: Tausch. Wird es knapp: Tausch kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte écoute mal exprès, le ou la jeune dit ce qui dérange\n2′ L’adulte raconte une minute le match gagné\n3′ Le ou la jeune s’exerce : écouter, reformuler, relancer – « Comment c’était pour toi ? »\n6′ Échange : le ou la jeune raconte un sujet libre, l’adulte relance\n9′ Le ou la jeune dit à quoi il ou elle a senti l’écoute\nIndispensable : les trois éléments. Option : échange. Serré : échange bref."
+      }
     }
   },
   {
@@ -4193,6 +4217,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt zwei Regeln: kurzes Nein, Privates nicht weiterleiten\n1′ Jugendliche/r steht fest, atmet aus, sagt klar Nein\n3′ Drei Szenen: abschreiben, Foto weiterschicken, Passwort; Jugendliche/r sagt Nein – „Ein Nein darf kurz sein.“\n7′ Tausch: Jugendliche/r bittet, Fachkraft sagt Nein – „Okay, kein Problem.“\nMuss: Regeln, drei Szenen; nur leicht drängen, bei Anspannung sofort beenden. Kann: Tausch, auch im Sitzen. Wird es knapp: eine Szene weniger."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte donne deux règles : un non bref, le privé ne se transfère pas\n1′ Debout, pieds ancrés, le ou la jeune expire et dit clairement non\n3′ Trois scènes : copier, photo privée, mot de passe ; le ou la jeune dit non – « Un non peut être court. »\n7′ Échange : le ou la jeune demande, l’adulte dit non\nIndispensable : règles, trois scènes ; insister à peine, arrêter dès qu’il y a tension. Option : échange, aussi assis. Serré : une scène de moins."
+      }
     }
   },
   {
@@ -5719,6 +5751,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Pflegen und Reparieren: eigener Teil, Entschuldigung ohne aber\n2′ Jugendliche/r wählt eigene Situation oder Zoé und Tiago\n4′ Jugendliche/r sagt den ersten Satz laut\n5′ Fachkraft spielt Gegenüber erst offen, dann zurückhaltend\n8′ Wenn Zeit bleibt: Rollentausch\nMuss: Situation, erster Satz, zwei Runden; echte Situation freiwillig. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre entretenir et réparer : sa part, excuses sans « mais »\n2′ Le ou la jeune choisit une situation réelle ou celle de Zoé et Tiago\n4′ Le ou la jeune dit la première phrase à voix haute\n5′ L’adulte joue l’autre, ouvert puis réservé\n8′ S’il reste du temps : échange des rôles\nIndispensable : situation, première phrase, deux tours ; situation réelle facultative. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -7347,6 +7387,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Jugendliche/r nennt starke Kompass-Richtungen – „Woran merkst du das?“\n2′ Jugendliche/r geht zur Situation in die Kompass-Ecke, sagt Satz\n5′ Zweite Runde mit Rollentausch\n6′ Rückblick: nützlich, überraschend, was bleibt\n8′ Jugendliche/r füllt Kompass-Karte, nennt Helfer\nMuss: Ecken-Runde, Kompass-Karte. Kann: Tausch. Wird es knapp: Rückblick kurz."
+      },
+      "fr": {
+        "aufbau": "0′ Le ou la jeune nomme ses directions fortes – « À quoi tu le remarques ? »\n2′ Le ou la jeune va au coin de la boussole qui convient, dit la première phrase\n5′ Second tour en échangeant les rôles\n6′ Retour : le plus utile, ce qui a surpris, ce qui reste\n8′ Le ou la jeune remplit sa carte, dit qui peut aider\nIndispensable : coins, carte de la boussole. Option : échange. Serré : retour bref."
+      }
     }
   },
   {

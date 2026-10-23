@@ -484,6 +484,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Werkstatt: Freundschaft baut man mit Werkzeugen\n1′ Fachkraft zeichnet vier Kreise, trägt Mias Beispiel ein\n4′ Fachkraft liest zwei Aussagen, Kind nennt Kreis und Grund – „Ein Kreis ist keine Rangliste.“\n8′ Freiwillig: Kind sagt, wo Gesprächsanfang leicht oder schwer fällt\n10′ Überleitung: eigene Kreise aufs Blatt, nichts wird vorgelesen\nMuss: Mias Kreise, zwei Aussagen zuordnen. Kann: Frage zum Gesprächsanfang. Wird es knapp: eine Aussage."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre l’atelier : l’amitié se construit avec des outils\n1′ L’adulte dessine quatre cercles, y place l’exemple de Mia\n4′ L’adulte lit deux phrases, l’enfant dit le cercle et pourquoi – « Un cercle n’est pas un classement. »\n8′ S’il veut : l’enfant dit quand une conversation est facile ou dure à lancer\n10′ Vers la fiche : ses propres cercles, rien n’est lu à voix haute\nIndispensable : cercles de Mia, classer deux phrases. Option : question sur les débuts. Serré : une seule phrase."
+      }
     }
   },
   {
@@ -1672,6 +1680,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Pausenszene zweimal: Verhör, dann Gespräch\n2′ Kind sagt, was beim zweiten Mal anders war\n3′ Beide zählen die Kette ab: anknüpfen, fragen, Gemeinsames, nachfragen\n5′ Runde 1: Kind übt, Fachkraft antwortet offen\n7′ Runde 2: Fachkraft antwortet knapp\n9′ Runde 3: Fachkraft abgelenkt, Kind steigt freundlich aus\nMuss: Vergleich, Kette, Runden 1 und 2; nach jeder Runde erst das Kind, dann ein Plus. Bei Stopp sofort aufhören. Kann: Runde 3. Wird es knapp: nur ein Plus, kein Tipp."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue deux fois la scène de récré : interrogatoire, puis conversation\n2′ L’enfant dit ce qui a changé la deuxième fois\n3′ On compte la chaîne : rebondir, questionner, point commun, relancer\n5′ Tour 1 : l’enfant s’exerce, l’adulte répond ouvertement\n7′ Tour 2 : l’adulte répond brièvement\n9′ Tour 3 : l’adulte distrait, l’enfant finit gentiment\nIndispensable : comparaison, chaîne, tours 1 et 2 ; à « Stop », on arrête. Option : tour 3. Serré : un point positif, pas de conseil."
+      }
     }
   },
   {
@@ -2939,7 +2955,15 @@
       "schreiben": 2,
       "bild": 1
     },
-    "vorbereitung": "Drei Karten mit den Fragen beschriften: „Wie hast du das gemacht?“ · „Was gefällt dir daran am meisten?“ · „Was war das Schwierigste dabei?“ Außerdem eine kleine Zeichnung (ein paar Striche genügen) bereithalten."
+    "vorbereitung": "Drei Karten mit den Fragen beschriften: „Wie hast du das gemacht?“ · „Was gefällt dir daran am meisten?“ · „Was war das Schwierigste dabei?“ Außerdem eine kleine Zeichnung (ein paar Striche genügen) bereithalten.",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt flache, dann gute Frage und Kompliment\n2′ Fachkraft legt Zeichnung hin, Kind stellt zwei Wie-Was-Wo-Fragen\n4′ Kind zeigt Zuhören: Blick, Nicken, kurz zurückgeben\n6′ Kind sagt Kompliment mit Grund – „Mir gefällt, wie du den Himmel gemalt hast.“\n7′ Fachkraft macht Kompliment, Kind antwortet Danke\n9′ Kind wählt Frage und Kompliment für diese Woche\nMuss: zwei offene Fragen, Kompliment mit Grund; nach jedem Schritt erst das Kind, dann ein Plus. Kann: Fragekarten. Wird es knapp: Beispiele ganz kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre une question fermée, puis une bonne question et un compliment\n2′ L’adulte pose un dessin, l’enfant pose deux questions comment, quoi, où\n4′ L’enfant montre qu’il écoute : regard, hochement, brève reprise\n6′ L’enfant fait un compliment avec une raison\n7′ L’adulte lui fait un compliment, l’enfant répond merci\n9′ L’enfant choisit sa question et son compliment de la semaine\nIndispensable : deux questions ouvertes, compliment avec raison ; l’enfant parle d’abord. Option : cartes de questions. Serré : exemples très courts."
+      }
+    }
   },
   {
     "id": "ki:kurs-freundschaft-10-12-s3-b",
@@ -4221,6 +4245,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Einladungs-Plan: wen, was, wann, wo, Plan B\n2′ Kind lädt Fachkraft ein, sie fragt nach einem Detail\n4′ Fachkraft sagt zweimal Nein, Kind antwortet mit Gegenvorschlag – „Okay, schade. Vielleicht ein andermal.“\n5′ Kind findet einen Nein-Grund, der nicht an ihm liegt\n7′ Kind tröstet traurige Fachkraft – „Das ist doof. Soll ich bei dir bleiben?“\n9′ Kind bittet um Hilfe; nimmt Hilfe an oder lehnt ab\nMuss: Einladung, Nein aushalten, Trösten. Kann: Hilfe-Szenen. Wird es knapp: nur ein Nein."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le plan d’invitation : qui, quoi, quand, où, plan B\n2′ L’enfant invite l’adulte, qui demande un détail\n4′ L’adulte dit deux fois non, l’enfant répond avec une contre-proposition\n5′ L’enfant trouve une raison de non qui ne vient pas de lui\n7′ L’enfant console l’adulte triste – « C’est nul. Je reste avec toi ? »\n9′ L’enfant demande de l’aide ; accepte ou refuse l’aide gentiment\nIndispensable : invitation, supporter un non, consoler. Option : scènes d’aide. Serré : un seul non."
+      }
     }
   },
   {
@@ -5410,6 +5442,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Leiter: ruhig sagen, Vorschlag, Nein oder weggehen, Hilfe\n3′ Kind wählt Situation dieser Woche, gern leicht oder erfunden\n5′ Kind formuliert klaren Satz in eigenen Worten – „Ich ärgere mich, weil … Ich möchte …“\n7′ Rollenspiel: Fachkraft freundlich, hartnäckig, dann drängend\n12′ Kind sagt, wer helfen könnte\nMuss: Leiter, eigener Satz, Rollenspiel; nichts erfragen, bei Stopp sofort aufhören. Kann: drängender Durchgang. Wird es knapp: zwei Durchgänge."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre l’échelle : dire calmement, proposer, non ou s’éloigner, aide\n3′ L’enfant choisit une situation de la semaine, facile ou inventée\n5′ L’enfant formule sa phrase claire avec ses mots – « Ça m’énerve quand … Je voudrais … »\n7′ Jeu de rôle : l’adulte aimable, tenace, puis pressant\n12′ L’enfant dit qui pourrait l’aider\nIndispensable : échelle, sa phrase, jeu de rôle ; aucune question, à « Stop » on arrête. Option : tour pressant. Serré : deux tours."
+      }
     }
   },
   {
@@ -6950,6 +6990,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt die fünf Werkzeug-Blätter nebeneinander\n1′ Kind nennt hilfreichstes und wackelndes Werkzeug\n3′ Kind schaut auf Anfangskreise, ergänzt freiwillig\n4′ Kind zeigt ein Werkzeug eine Minute im Rollenspiel\n7′ Kind formuliert Plan: Werkzeug, Person oder Ort, erster Schritt, Helfer\n11′ Kind bekommt den Werkstatt-Brief\nMuss: Werkzeug zeigen, Freundschaftsplan. Kann: Kreise ergänzen. Wird es knapp: Rückblick auf ein Werkzeug."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale les cinq fiches outils\n1′ L’enfant nomme l’outil le plus utile et celui pas encore en main\n3′ L’enfant regarde ses cercles du début, complète s’il veut\n4′ L’enfant montre un outil en une minute de jeu de rôle\n7′ Plan : un outil, une personne ou un lieu, un premier pas, qui aide\n11′ L’enfant reçoit la lettre de l’atelier\nIndispensable : montrer un outil, plan d’amitié. Option : compléter les cercles. Serré : retour sur un seul outil."
+      }
     }
   },
   {

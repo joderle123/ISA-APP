@@ -319,6 +319,14 @@
         "Tu as regardé avec beaucoup d’attention. C’était du vrai travail de renard !"
       ],
       "wennEsKippt": "Si l’enfant a du mal à retenir, trois objets suffisent, ou l’adulte laisse tout en place et demande seulement : « Montre-moi quelque chose de rond. » Si l’enfant n’aime pas se tromper, l’adulte devine d’abord et se trompe – alors se tromper, c’est normal. Deux tours suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Fino, den Fuchs mit scharfen Augen\n1′ Fachkraft legt fünf Dinge hin, Kind schaut mit Fuchs-Augen – „Was siehst du alles?“\n3′ Kind sagt, was unter dem Tuch fehlt\n5′ Tausch: Kind nimmt weg, Fachkraft irrt sich einmal\n7′ Fachkraft sagt, woran sie genaues Hinschauen gemerkt hat\nMuss: Fuchs-Augen, zwei Runden Was-fehlt. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente Fino, le renard aux yeux perçants\n1′ L’adulte pose cinq objets, l’enfant regarde avec ses yeux de renard – « Qu’est-ce que tu vois ? »\n3′ L’enfant dit quel objet a disparu sous le foulard\n5′ On échange : l’enfant retire, l’adulte se trompe une fois\n7′ L’adulte dit à quoi il a vu que l’enfant a bien regardé\nIndispensable : yeux de renard, deux tours de l’objet disparu. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -823,6 +831,14 @@
         "Tu as remarqué ? Quand on est tout calme, les oreilles entendent beaucoup mieux."
       ],
       "wennEsKippt": "Si l’enfant ne devine pas un bruit, l’adulte le refait plus lentement ou montre l’objet et le laisse essayer. Si retenir deux parties est difficile, une seule suffit. S’il est difficile de rester immobile pendant l’expérience, les deux comptent seulement jusqu’à trois."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft macht Geräusche hinter dem Tuch, Kind rät mit Fuchs-Ohren – „Was hörst du?“\n3′ Tausch: Kind macht Geräusch, Fachkraft rät\n4′ Fachkraft flüstert Auftrag mit zwei Teilen, Kind macht ihn – „Erst tippst du auf den Tisch, dann auf deine Nase.“\n6′ Fachkraft reibt leise Finger, Kind summt, dann beide still\nMuss: drei Geräusche, Flüsterauftrag. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte fait des bruits derrière le foulard, l’enfant devine avec ses oreilles de renard – « Qu’est-ce que tu entends ? »\n3′ On échange : l’enfant fait un bruit, l’adulte devine\n4′ L’adulte chuchote une consigne en deux parties, l’enfant l’exécute\n6′ L’adulte frotte doucement ses doigts, l’enfant fredonne, puis silence\nIndispensable : trois bruits, consigne chuchotée. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -1322,6 +1338,14 @@
         "Maintenant, c’est toi qui décides : quand est-ce que je deviens une statue ?"
       ],
       "wennEsKippt": "Si rester immobile est difficile, l’adulte compte seulement jusqu’à trois ou laisse l’enfant poser les mains sur les genoux. Si le jeu devient trop agité, Fino se faufile au ralenti – qui est le plus lent ? Trois tours suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft klatscht Rhythmus, Kind schleicht wie ein Fuchs\n1′ Fachkraft stoppt, Kind erstarrt als Statue bis fünf – „Still wie eine Statue!“\n4′ Tausch: Kind gibt Rhythmus, Fachkraft wackelt einmal\n7′ Beide schleichen in Zeitlupe zum Tisch\nMuss: drei Statue-Runden. Kann: Tausch. Wird es knapp: Zeitlupe weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte tape un rythme, l’enfant se faufile comme un renard\n1′ L’adulte s’arrête, l’enfant devient statue jusqu’à cinq – « Immobile comme une statue ! »\n4′ On échange : l’enfant donne le rythme, l’adulte bouge une fois\n7′ Les deux vont au ralenti jusqu’à la table\nIndispensable : trois tours de statue. Option : échange. Serré : sauter le ralenti."
+      }
     }
   },
   {
@@ -1788,6 +1812,14 @@
         "Tu as attendu que l’étape soit finie. C’est difficile – bravo !"
       ],
       "wennEsKippt": "Si l’enfant oublie la deuxième étape, l’adulte montre le deuxième doigt au lieu de la nommer. Si trois étapes sont trop difficiles, on reste à deux. Si ça devient trop agité, les deux jouent au ralenti."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft gibt Auftrag mit zwei Schritten, Kind zeigt Finger – „Wie viele sind es?“\n2′ Kind führt Schritte der Reihe nach aus, dann drei\n4′ Tausch: Kind gibt Auftrag, Fachkraft vertauscht zwei Schritte – „Stopp, Fino! Eins nach dem anderen.“\n7′ Beide erzählen: erst, dann, zuletzt\nMuss: Aufträge mit zwei und drei Schritten. Kann: Tausch. Wird es knapp: Erzählen weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte donne une mission en deux étapes, l’enfant montre les doigts – « Combien y en a-t-il ? »\n2′ L’enfant exécute dans l’ordre, puis une mission en trois étapes\n4′ On échange : l’enfant donne la mission, l’adulte mélange deux étapes – « Stop, Fino ! Une chose après l’autre. »\n7′ Les deux racontent : d’abord, ensuite, enfin\nIndispensable : missions en deux et trois étapes. Option : échange. Serré : sauter le récit."
+      }
     }
   },
   {
@@ -2278,6 +2310,14 @@
         "Quelle phrase dit Fino là-bas ? Dis-la-moi une fois à voix haute – je suis la distraction."
       ],
       "wennEsKippt": "Si l’enfant ne trouve pas de situation, l’adulte n’en montre que deux (par exemple ranger et attendre) ; une seule suffit. S’il ne veut rien jouer, l’adulte joue Fino et l’enfant lui dit comment faire. L’adulte ne pose pas de questions ; si l’enfant raconte de lui-même quelque chose qui lui fait peur ou lui fait mal, l’adulte arrête le jeu, écoute, puis en parle avec la personne responsable."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind schleicht Seilweg zum Fuchsbau, Fachkraft lenkt zweimal ab\n2′ Fachkraft mimt fünf Situationen, Kind wählt eine dieser Woche\n4′ Beide klären: wann, wo, wer, welcher Trick, welcher Satz\n6′ Fachkraft ist Ablenkung, Kind sagt Satz und macht weiter\nMuss: Fuchsweg, eigene Situation durchspielen. Kann: alle fünf Situationen vormachen. Wird es knapp: Kind nennt Situation direkt."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant suit la corde jusqu’au terrier, l’adulte le distrait deux fois\n2′ L’adulte mime cinq situations, l’enfant en choisit une de la semaine\n4′ Ensemble : quand, où, qui, quelle astuce, quelle phrase\n6′ L’adulte joue la distraction, l’enfant dit sa phrase et continue\nIndispensable : chemin du renard, jouer sa situation. Option : mimer les cinq situations. Serré : l’enfant nomme sa situation directement."
+      }
     }
   },
   {
@@ -2766,6 +2806,14 @@
         "Tu reçois le diplôme de renard parce que tu as fait de ton mieux pour chaque astuce."
       ],
       "wennEsKippt": "Si l’enfant est fatigué, il ne joue que trois stations (celles qu’il préfère), la fiche fait le reste. S’il ne veut pas nommer de préférée, il montre l’image où il est resté le plus longtemps. Le diplôme est toujours remis – il montre ce que l’enfant a fait, pas à quel point c’était parfait."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide blättern durch die Fuchs-Mappe\n1′ Kind spielt Was-fehlt, Geräusch-Raten und Statue\n4′ Kind macht Drei-Schritte-Auftrag, baut Fünf-Steine-Turm fertig\n6′ Kind nennt liebsten Trick und wer daran erinnert\n7′ Kind bekommt Diplom und die Fuchs-Mappe\nMuss: fünf Stationen, danach sagt Fachkraft je, was sie gesehen hat. Kann: Mappe durchblättern. Wird es knapp: Mappe nur kurz."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux feuillettent la chemise du renard\n1′ L’enfant joue objet disparu, bruit à deviner, statue\n4′ L’enfant fait une mission en trois étapes, finit une tour de cinq pierres\n6′ L’enfant dit son astuce préférée et qui la lui rappelle\n7′ L’enfant reçoit le diplôme et la chemise\nIndispensable : cinq stations ; après chacune, l’adulte dit ce qu’il a vu. Option : feuilleter la chemise. Serré : chemise très brève."
+      }
     }
   },
   {

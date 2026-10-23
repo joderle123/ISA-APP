@@ -369,6 +369,14 @@
         "Tu as dit ton prénom et tu as fait un signe : c’était un joli bonjour !"
       ],
       "wennEsKippt": "Si l’enfant est timide, seul Hoppel dit bonjour, en chuchotant ; l’enfant répond par un signe – cela suffit. Le regard peut aller vers le nez ou le menton, et le prénom peut n’être que murmuré. Une seule rencontre suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt Hoppel vor, erstes Blütenblatt: Hallo\n1′ Fachkraft macht vor: schauen, Namen sagen, winken – „Hallo, ich bin …“\n2′ Beide gehen durch den Raum, begrüßen sich beim Begegnen\n4′ Kind begrüßt Hoppel, Hoppel antwortet mit seinem Namen\n6′ Tausch: Kind führt Hoppel, Fachkraft sagt Hallo\nMuss: Hallo in drei Schritten; nach jeder Runde sagt Fachkraft genau, was gelungen ist. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente Hoppel, premier pétale : bonjour\n1′ L’adulte montre : regarder, dire son prénom, faire signe – « Bonjour, je m’appelle … »\n2′ Les deux marchent dans la pièce, se saluent en se croisant\n4′ L’enfant salue Hoppel, Hoppel répond avec son prénom\n6′ On échange : l’enfant guide Hoppel, l’adulte dit bonjour\nIndispensable : bonjour en trois temps ; après chaque tour, l’adulte dit ce qui a réussi. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -928,6 +936,14 @@
         "Tu as d’abord regardé, puis tu as demandé – comme Hoppel."
       ],
       "wennEsKippt": "Si l’enfant ne veut pas demander, seul Hoppel demande (l’adulte chuchote pour lui) et l’enfant dit oui. S’il ne veut pas guider Hoppel, il montre jusqu’où Hoppel doit aller. Demander sans Hoppel est facultatif. Un seul tour suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Kind, das einen Bausteinturm baut\n1′ Kind führt Hoppel: zuschauen, näher kommen, fragen – „Darf ich mitspielen?“\n3′ Fachkraft sagt Ja, reicht Hoppel einen Baustein\n4′ Tausch: Kind baut, Hoppel fragt, Kind sagt Ja\n7′ Kind fragt einmal selbst, ohne Hoppel\nMuss: Hoppels drei Schritte. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue un enfant qui construit une tour\n1′ L’enfant guide Hoppel : regarder, s’approcher, demander – « Je peux jouer avec toi ? »\n3′ L’adulte dit oui, tend une brique à Hoppel\n4′ On échange : l’enfant construit, Hoppel demande, l’enfant dit oui\n7′ L’enfant demande une fois lui-même, sans Hoppel\nIndispensable : les trois pas de Hoppel. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -1483,6 +1499,14 @@
         "Tu as attendu ton tour, c’était difficile – bravo !"
       ],
       "wennEsKippt": "Si attendre est difficile, l’attente est courte : l’adulte rejoue tout de suite et la pause ne s’allonge que petit à petit. Si l’enfant ne veut pas passer la balle, Hoppel joue « au ralenti » et l’enfant garde la balle un tour de plus ; ensuite, c’est à l’adulte. Même trois échanges comptent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide rollen Ball, sagen: ich, du, ich, du\n2′ Abwechselnd Turm bauen, Hoppel zeigt, wer dran ist\n4′ Wartehilfe: Kind hält Hoppels Pfote oder zählt bis drei\n6′ Fachkraft vergisst absichtlich, Kind sagt: Ich bin dran\nMuss: Ball, Turm abwechselnd. Kann: Vergessen-Spiel. Wird es knapp: Ball ganz kurz."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux se font rouler la balle : moi, toi, moi, toi\n2′ Une brique chacun son tour, Hoppel montre à qui c’est\n4′ Pour attendre : tenir la patte de Hoppel ou compter jusqu’à trois\n6′ L’adulte oublie exprès, l’enfant dit : c’est à moi\nIndispensable : balle, tour chacun son tour. Option : l’oubli exprès. Serré : balle très brève."
+      }
     }
   },
   {
@@ -2044,6 +2068,14 @@
         "Si un enfant te renvoie tout le temps, dis-le à un adulte. Il t’aidera."
       ],
       "wennEsKippt": "Si l’enfant devient triste ou en colère, Hoppel s’arrête un instant : il pose la patte sur son cœur et respire à fond avec l’enfant ; l’adulte dit : « C’est dommage. Tu as le droit d’être triste. » Si l’enfant ne veut pas jouer le non, c’est Hoppel qui dit non à l’adulte et l’enfant regarde. Une seule idée suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt drei Dinge: tief atmen, Okay sagen, anderes probieren\n1′ Fachkraft kündigt an: Das Nein ist nur gespielt\n2′ Kind fragt mit Hoppel, Fachkraft sagt Nein – „Nein, jetzt nicht.“\n4′ Kind wählt: später, anderes Kind, anderes Spiel – und spielt es\n7′ Wenn Zeit bleibt: Kind übt ein freundliches Nein\nMuss: ankündigen, drei Wege; wer immer weggeschickt wird, sagt es einem Erwachsenen. Kann: freundliches Nein. Wird es knapp: freundliches Nein weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte nomme trois choses : respirer à fond, dire d’accord, essayer autre chose\n1′ L’adulte prévient : le non est pour de faux\n2′ L’enfant demande avec Hoppel, l’adulte dit non – « Non, pas maintenant. »\n4′ L’enfant choisit : plus tard, autre enfant, autre jeu, et le joue\n7′ S’il reste du temps : l’enfant dit lui-même un non gentil\nIndispensable : prévenir, trois idées ; si on le renvoie tout le temps, le dire à un adulte. Option : non gentil. Serré : sauter le non gentil."
+      }
     }
   },
   {
@@ -2656,6 +2688,14 @@
         "Quel pétale aimerais-tu essayer cette semaine ? Et que dis-tu alors ?"
       ],
       "wennEsKippt": "Si l’enfant ne trouve pas de vraie situation, il prépare le plan pour Hoppel : à qui Hoppel s’adresse-t-il, où, quand, avec quelle phrase ? Cela suffit aussi. S’il ne veut nommer personne, il prend l’adulte ou une figurine comme partenaire. Si consoler rend l’enfant lui-même triste, l’adulte l’écoute un instant et passe à Hoppel."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Kind, dem der Turm umgefallen ist\n1′ Kind führt Hoppel: hingehen, fragen, aufheben, Ich bin da – „Soll ich dir helfen?“\n3′ Kind wählt Blütenblatt für ein echtes Kind diese Woche\n4′ Beide planen: wer, wann, wo, welcher Satz\n6′ Fachkraft spielt dieses Kind, Kind sagt Satz laut\nMuss: helfen und trösten, Plan mit Satz. Kann: Plan für Hoppel, wenn nichts einfällt. Wird es knapp: Trösten kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue un enfant triste, sa tour s’est écroulée\n1′ L’enfant guide Hoppel : s’approcher, demander, ramasser, je suis là – « Je peux t’aider ? »\n3′ L’enfant choisit un pétale à essayer avec un vrai enfant\n4′ Ensemble : qui, quand, où, quelle phrase\n6′ L’adulte joue cet enfant, l’enfant dit sa phrase tout haut\nIndispensable : aider et consoler, plan avec phrase. Option : plan pour Hoppel si rien ne vient. Serré : consolation brève."
+      }
     }
   },
   {
@@ -3202,6 +3242,14 @@
         "Au début, Hoppel ne savait pas comment commencer. Que sait-il faire maintenant ?"
       ],
       "wennEsKippt": "Si l’enfant ne retrouve pas un signe, l’adulte montre l’image de la fleur et l’enfant le mime. S’il ne veut rien montrer, l’adulte joue Hoppel et l’enfant lui dit ce qu’il doit faire ensuite. La fête a lieu dans tous les cas – l’enfant n’a rien à réussir."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind zeigt zu fünf Blütenblättern je ein Zeichen\n2′ Fachkraft fragt: Was kann Hoppel jetzt?\n3′ Fachkraft spielt neues Kind am Rand, Hoppel probiert drei Blütenblätter\n6′ Kind nennt Lieblingsblatt und wer hilft\n7′ Beide feiern mit Hüpftanz wie Hoppel\nMuss: Zeichen, drei Blütenblätter beim neuen Kind. Kann: Hüpftanz. Wird es knapp: Zeichen nur kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant fait un signe pour chacun des cinq pétales\n2′ L’adulte demande : que sait faire Hoppel maintenant ?\n3′ L’adulte joue un nouvel enfant au bord, Hoppel essaie trois pétales\n6′ L’enfant dit son pétale préféré et qui l’aide\n7′ Danse sautillante comme Hoppel\nIndispensable : signes, trois pétales avec le nouvel enfant. Option : danse. Serré : signes très brefs."
+      }
     }
   },
   {

@@ -481,6 +481,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Mein System: Fokus, Planen, Lernen, Durchhalten\n1′ Runde 1: Jugendliche/r zählt 1–10, dann A–J, mit Stoppuhr\n3′ Runde 2 im Wechsel 1-A-2-B, Fehler zählen\n5′ Beide tragen Zeit und Fehler ein, vergleichen\n6′ Tausch: Fachkraft spielt Runde 2, Jugendliche/r stoppt\n8′ Fachkraft: Aufmerksamkeit ist ein Scheinwerfer – „Das liegt nicht an dir.“\nMuss: beide Runden mit Stoppuhr, vergleichen. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre Mon système : se concentrer, planifier, apprendre, tenir bon\n1′ Tour 1 : le ou la jeune dit 1 à 10, puis A à J, chronométré\n3′ Tour 2 en alternance 1-A-2-B, compter les erreurs\n5′ On note temps et erreurs, on compare\n6′ Échange : l’adulte fait le tour 2, le ou la jeune chronomètre\n8′ L’adulte : l’attention est un projecteur – « Ça ne vient pas de toi. »\nIndispensable : deux tours chronométrés, comparer. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -1679,6 +1687,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft: Benachrichtigungen sind gebaut, um Aufmerksamkeit zu ziehen\n1′ Runde 1: Jugendliche/r rechnet, Fachkraft pingt alle 20 Sekunden\n3′ Runde 2: neuer Zettel, Handy außer Sicht, Stille\n5′ Beide zählen Aufgaben, Jugendliche/r beschreibt beide Runden\n6′ Tausch: Fachkraft rechnet, Jugendliche/r pingt\n8′ Beide üben: ausatmen, Schultern fallen lassen, Wo war ich?\nMuss: beide Runden, vergleichen, Rückweg. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte : les notifications sont faites pour attirer l’attention\n1′ Tour 1 : le ou la jeune calcule, l’adulte fait ping toutes les 20 secondes\n3′ Tour 2 : nouvelle feuille, portable hors de vue, silence\n5′ On compte les calculs, le ou la jeune décrit chaque tour\n6′ Échange : l’adulte calcule, le ou la jeune fait le ping\n8′ Ensemble : expirer, relâcher les épaules, j’en étais où ?\nIndispensable : deux tours, comparer, chemin du retour. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -2938,6 +2954,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Pol: Referat am Freitag, Start am Vorabend\n1′ Jugendliche/r plant mit Pol rückwärts, Pol widerspricht\n4′ Tausch: Fachkraft berät, Jugendliche/r ist Pol\n7′ Beide sortieren fünf Aufgabenkarten: wichtig, dringend, zuerst\nMuss: Rückwärtsplan mit Puffertag. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue Pol : exposé vendredi, il s’y met la veille\n1′ Le ou la jeune planifie à rebours avec Pol, qui objecte\n4′ Échange : l’adulte conseille, le ou la jeune est Pol\n7′ Tri des cinq cartes-tâches : important, urgent, en premier\nIndispensable : plan à rebours avec un jour de marge. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -4061,6 +4085,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Jugendliche/r liest eine Minute zehn Vokabelkarten, schätzt\n2′ Bewegungspause: aufstehen, Schultern kreisen, rückwärts zählen\n3′ Fachkraft deckt ab, fragt ab; vergleichen, eintragen\n5′ Fehlende Karten anschauen, gleich nochmal abfragen\n6′ Tausch: Jugendliche/r fragt ab, Fachkraft macht typische Fehler\n8′ Fachkraft: nach einem und drei Tagen kurz wiederholen\nMuss: schätzen, abfragen, vergleichen. Kann: Tausch. Wird es knapp: fünf Karten statt zehn."
+      },
+      "fr": {
+        "aufbau": "0′ Le ou la jeune lit dix cartes une minute, estime\n2′ Pause en mouvement : se lever, épaules, compter à rebours\n3′ L’adulte cache et interroge ; comparer, noter\n5′ Revoir les cartes manquées, les redemander aussitôt\n6′ Échange : le ou la jeune interroge, l’adulte fait des erreurs typiques\n8′ L’adulte : réviser brièvement après un jour et trois jours\nIndispensable : estimer, se tester, comparer. Option : échange. Serré : cinq cartes au lieu de dix."
+      }
     }
   },
   {
@@ -5264,6 +5296,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt 5-Minuten-Start und Wenn-Dann-Plan gegen Aufschieben\n1′ Jugendliche/r wählt eigene Aufgabe oder plant für Tiago\n3′ Festlegen: wer, wann, wo, welcher Satz, welcher Systemteil\n5′ Im Stehen dreimal 4 Sekunden ein-, 6 ausatmen\n6′ Fachkraft als Ach-später-Stimme, Jugendliche/r antwortet, startet Timer – „Was antwortest du?“\n8′ Zweite Runde mit Rollentausch\nMuss: Wenn-Dann-Satz, Rollenspiel. Kann: wirklich eine Minute anfangen, Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente démarrer 5 minutes et le plan « si… alors… »\n1′ Le ou la jeune choisit sa tâche repoussée ou planifie pour Tiago\n3′ Fixer : qui, quand, où, quelle phrase, quelle partie du système\n5′ Debout, trois fois inspirer 4 secondes, expirer 6\n6′ L’adulte joue la voix Bof, plus tard ; le ou la jeune répond, lance le minuteur\n8′ Deuxième tour en échangeant les rôles\nIndispensable : phrase « si… alors… », jeu de rôle. Option : vraiment commencer une minute, échange. Serré : sauter l’échange."
+      }
     }
   },
   {
@@ -6402,6 +6442,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft fächert Blätter auf, legt vier Teil-Karten dazu\n1′ Jugendliche/r wählt je Teil ein Werkzeug, ein Satz dazu\n4′ Jugendliche/r erklärt Mathis das System in vier Sätzen – „Ich verliere ständig den Überblick.“\n6′ Tausch: Fachkraft erklärt System mit Lücke, Jugendliche/r findet sie\n8′ Beide halten fest, was bleibt und wer hilft; Urkunde unterschreiben\nMuss: Werkzeuge wählen, Mathis erklären. Kann: Tausch. Wird es knapp: Tausch weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale les fiches et pose quatre cartes des parties\n1′ Pour chaque partie, le ou la jeune choisit un outil, une phrase\n4′ Le ou la jeune explique son système à Mathis en quatre phrases – « Je perds sans cesse le fil. »\n6′ Échange : l’adulte explique un système incomplet, le ou la jeune trouve le manque\n8′ Sur la fiche : ce qui reste, qui aide ; signer le diplôme\nIndispensable : choisir les outils, expliquer à Mathis. Option : échange. Serré : sauter l’échange."
+      }
     }
   },
   {
