@@ -518,6 +518,9 @@ const KURS_BILD: Record<string, string> = {
   'geld-10-12': 'motiv:muenzen', 'achtsamkeit-4-6': 'motiv:eichhoernchen', 'koerper-7-9': 'motiv:radio', 'familie-7-9': 'motiv:haus',
   'trauer-7-9': 'motiv:led-kerze', 'identitaet-10-12': 'motiv:kopfhoerer', 'stress-10-12': 'motiv:thermometer',
   'deeskalation-13-16': 'motiv:vulkan', 'selbstfuersorge-13-16': 'motiv:berg',
+  // Welle 3c (23.10.2026)
+  'mobbing-10-12': 'motiv:noten', 'mobbing-13-16': 'motiv:gruppe', 'familie-13-16': 'motiv:stuhl', 'motivation-10-12': 'motiv:rad',
+  'comeback-10-12': 'motiv:fallschirm', 'deeskalation-10-12': 'motiv:rettungsring', 'stress-13-16': 'motiv:schiff', 'trauer-10-12': 'motiv:vogel',
 }
 
 const KERNBLATT_BEREICH: Record<string, Bereich> = {
