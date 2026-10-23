@@ -7,7 +7,7 @@
 
 import type { Form, Zeichnung } from './zeichnung'
 import { tube } from './figuren'
-import { DUNKEL, GELB, GRUEN_D, ROSA, ROT, WANGE, glanz, linie, silhouette, z } from './motive-dinge'
+import { DUNKEL, GELB, GRUEN, GRUEN_D, ROSA, ROT, WANGE, glanz, linie, silhouette, z } from './motive-dinge'
 import { T, auge, boden, drehen, el, kr, pf, poly, punkt, rr } from './motive-neu-helfer'
 
 const WEISS = 'papier'
@@ -266,6 +266,54 @@ function lerche(): Zeichnung {
   ])
 }
 
+/** Eisvogel auf einem Ast über dem Wasser: großer Kopf, langer spitzer Schnabel, kurzer Schwanz, Rücken blau, Bauch orange,
+ *  weiße Kehle und weißer Fleck am Hals (kein `vogel`: der ist rund, mit kurzem Schnabel und gelbem Bauch). */
+function eisvogel(): Zeichnung {
+  const blau = '#2E8BCB'
+  const blauD = '#1F5F94'
+  const tuerkis = '#79D0EE'
+  const orange = '#F5A45C'
+  const schnabel = '#2B303C'
+  const ast = '#8A6440'
+  const teile: Form[] = [
+    drehen(18, 64, 70, [{ t: 'ellipse', cx: 64, cy: 70, rx: 21, ry: 27 }]),
+    { t: 'circle', cx: 84, cy: 38, r: 21 },
+  ]
+  return z([0, 2, 152, 116], [
+    // Wasser
+    linie('M8 112 Q16 108 24 112 T40 112 M104 113 Q112 109 120 113 T136 113', 2, '#7FA6C4'),
+    // Ast mit Zweig und Blatt
+    ...tube('M2 98 Q40 91 80 94 Q118 97 150 89', ast, 7),
+    ...tube('M114 95 Q122 84 132 80', ast, 3.2),
+    pf('M132 80 Q140 68 148 72 Q146 84 132 80 Z', GRUEN, 1.8),
+    linie('M134 79 Q140 75 145 73', 1.2, GRUEN_D),
+    // kurzer Schwanz
+    poly([[52, 80], [34, 100], [45, 105], [62, 88]], blauD, 2.2),
+    // Körper und Kopf
+    ...silhouette(teile, blau, 5),
+    // Bauch orange
+    pf('M98 50 Q101 66 90 82 Q78 96 58 94 Q68 84 73 70 Q78 56 98 50 Z', orange, 0),
+    linie('M98 50 Q101 66 90 82 Q78 96 58 94', 1.6, '#D9712A'),
+    // Füße greifen den Ast (vor dem Ast)
+    linie('M68 91 Q67 96 63 97 M68 91 Q69 96 72 97 M78 89 Q77 94 74 95 M78 89 Q80 94 83 95', 2.4, '#E2603A'),
+    // Flügel mit hellen Tupfen
+    pf('M62 50 Q46 60 46 80 Q48 92 56 92 Q68 78 74 60 Q70 50 62 50 Z', blauD, 2.2),
+    ...[[58, 60], [54, 70], [62, 70], [52, 80], [60, 80]].map(([x, y]) => punkt(x, y, 1.9, tuerkis)),
+    linie('M62 52 Q56 64 52 78', 2.4, tuerkis),
+    // Kopf: Streifen auf dem Scheitel, oranger Wangenstreif, weiße Kehle und weißer Halsfleck
+    linie('M74 22 L77 26 M82 19 L84 24 M90 20 L90 25 M97 24 L95 28', 1.8, tuerkis),
+    pf('M101 36 Q92 41 80 40 Q70 38 65 32 Q68 46 80 47 Q94 48 102 43 Z', orange, 1.6),
+    pf('M64 38 Q62 46 68 50 Q74 50 75 46 Q68 45 64 38 Z', 'papier', 1.6),
+    pf('M102 45 Q100 54 90 56 Q86 55 85 52 Q96 51 102 45 Z', 'papier', 1.6),
+    ...auge(88, 34, 3.6),
+    // langer, spitzer Schnabel
+    pf('M99 30 L146 40 L100 41 Z', schnabel, 1.8),
+    pf('M100 41 L144 41 L100 47 Z', '#454B59', 1.8),
+    glanz('M104 33 L124 37', 1.6, 0.6),
+    glanz('M70 26 Q76 20 84 19', 2.6, 0.6),
+  ])
+}
+
 export const NEU_TIERE: Record<string, () => Zeichnung> = {
   kalb,
   lamm,
@@ -275,4 +323,5 @@ export const NEU_TIERE: Record<string, () => Zeichnung> = {
   kaninchen,
   teddy,
   lerche,
+  eisvogel,
 }

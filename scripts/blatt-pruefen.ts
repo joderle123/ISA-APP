@@ -595,7 +595,7 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         break
       }
       case 'anziehpuppe':
-        if (b.figur && (!FIGUREN[b.figur] || FIGUREN[b.figur].alter !== 'kind')) melde('F', w, 'Anziehpuppe: figur mia, noah, lea, sami, amira oder tom')
+        if (b.figur && (!FIGUREN[b.figur] || FIGUREN[b.figur].alter !== 'kind' || FIGUREN[b.figur].rollstuhl)) melde('F', w, 'Anziehpuppe: figur mia, noah, lea, sami, amira oder tom')
         if (!b.kleider?.length || b.kleider.length < 2 || b.kleider.length > 8) melde('F', w, 'Anziehpuppe: 2–8 Kleidungsstücke')
         for (const k of b.kleider ?? []) if (!KLEIDER.includes(k)) melde('F', w, `Kleidungsstück „${k}“ gibt es nicht (${KLEIDER.join(', ')})`)
         if (new Set(b.kleider ?? []).size !== (b.kleider ?? []).length) melde('F', w, 'Anziehpuppe: ein Kleidungsstück doppelt')

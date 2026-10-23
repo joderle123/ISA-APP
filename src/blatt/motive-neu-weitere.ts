@@ -12,7 +12,7 @@ import { tube } from './figuren'
 import { NEU_DINGE } from './motive-neu-dinge'
 import {
   BLAU, CREME, DUNKEL, GELB, GELB_D, GLAS, GRAU, GRUEN, GRUEN_D, H2, HOLZ, HOLZ_D, METALL, ORANGE, ROSA, ROT, ROT_D,
-  aufKopf, figur, g, glanz, kind, linie, schuh, silhouette, sternPfad, z, zuege,
+  aufKopf, figur, g, glanz, kind, linie, schuh, silhouette, sternPfad, tropfen, z, zuege,
 } from './motive-dinge'
 import { T, boden, drehen, el, kr, pf, poly, punkt, ringPfad, rr } from './motive-neu-helfer'
 
@@ -576,6 +576,48 @@ function toilette(): Zeichnung {
   ])
 }
 
+/** Händetrockner an der gefliesten Wand: Gerät mit Gitter und Sensor, Düse unten, warme Luft strömt nach unten auf zwei Hände
+ *  (ohne Schrift, ohne Marke). */
+function haendetrockner(): Zeichnung {
+  const fliese = '#D3DDE8'
+  const gehaeuse = '#F1F4F8'
+  const luft = '#5E9BD0'
+  /** Hand mit Ärmel von der Seite (s = 1: von links, −1: von rechts), Finger zeigen zur Mitte. */
+  const hand = (s: 1 | -1): Form[] => {
+    const x = (v: number) => 65 + s * v
+    return [
+      pf(`M${x(-36)} 101 L${x(-12)} 101 Q${x(-2)} 101 ${x(-2)} 106.5 Q${x(-2)} 112 ${x(-12)} 112 L${x(-36)} 112 Z`, H2, 2.2),
+      linie(`M${x(-11)} 106.5 L${x(-5)} 106.5`, 1.2),
+      pf(`M${x(-25)} 101 Q${x(-23)} 93 ${x(-16)} 94 Q${x(-12)} 95 ${x(-15)} 101`, H2, 2),
+      pf(`M${x(-61)} 98 L${x(-33)} 98 Q${x(-30)} 98 ${x(-30)} 101 L${x(-30)} 112 Q${x(-30)} 115 ${x(-33)} 115 L${x(-61)} 115 Z`, ORANGE, 2.2),
+      linie(`M${x(-35)} 99.5 L${x(-35)} 113.5`, 1.4, '#C97B35'),
+    ]
+  }
+  return z([0, 0, 130, 124], [
+    // Wand mit Fliesen
+    { t: 'rect', x: 4, y: 2, b: 122, h: 88, rx: 5, f: '#EEF3F8', s: 'none' },
+    linie('M4 30 L126 30 M4 60 L126 60 M34 2 L34 90 M96 2 L96 90 M65 2 L65 14', 1.4, fliese),
+    // Gerät
+    rr(26, 12, 78, 54, gehaeuse, 15, 2.6),
+    { t: 'path', d: 'M28 50 Q28 64 42 64 L88 64 Q102 64 102 50 Q65 58 28 50 Z', f: '#DCE3EC', s: 'none' },
+    rr(26, 12, 78, 54, 'none', 15, 2.6),
+    rr(40, 22, 50, 6, BLAU, 3, 1.8),
+    linie('M44 36 L86 36 M44 43 L86 43', 2.6, GRAU),
+    kr(65, 54, 3.6, DUNKEL, 1.6),
+    punkt(66.2, 52.8, 1.1, 'papier'),
+    glanz('M34 22 Q34 16 42 15', 2.6, 0.9),
+    // Düse
+    pf('M54 65 L76 65 L72 75 L58 75 Z', METALL, 2.2),
+    // Luftstrom nach unten
+    linie('M58 80 Q53 85 56 90 Q59 95 54 99 M65 80 Q61 85 65 90 Q69 95 65 99 M72 80 Q77 85 74 90 Q71 95 76 99', 2.6, luft),
+    // zwei Hände darunter
+    ...hand(1),
+    ...hand(-1),
+    tropfen(24, 92, 0.55),
+    tropfen(106, 92, 0.55),
+  ])
+}
+
 function gedankenKopf(): Zeichnung {
   const wolke: Form[] = [{ t: 'circle', cx: 92, cy: 26, r: 14 }, { t: 'circle', cx: 110, cy: 16, r: 15 }, { t: 'circle', cx: 128, cy: 26, r: 13 }, { t: 'circle', cx: 110, cy: 36, r: 13 }]
   return z([0, -4, 144, 136], [
@@ -635,6 +677,7 @@ export const NEU_WEITERE: Record<string, () => Zeichnung> = {
   radio,
   richterhammer,
   toilette,
+  haendetrockner,
   'gedanken-kopf': gedankenKopf,
   herzklopfen,
 }

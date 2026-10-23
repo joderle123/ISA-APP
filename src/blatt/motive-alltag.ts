@@ -569,31 +569,50 @@ function spinne(): Zeichnung {
   ])
 }
 
+/** Glühwürmchen (Leuchtkäfer): schmaler, dunkler Käferkörper ohne Streifen, schmale Flügel, das Ende des Hinterleibs leuchtet
+ *  als heller Punkt mit Lichtschein und Strahlen – keine Biene (kein runder gelb-schwarzer Körper, kein Stachel). */
 function gluehwuermchen(): Zeichnung {
-  const braun = '#6E4A32'
-  const dunkel = '#4B3427'
-  return z([0, 0, 134, 108], [
-    { t: 'circle', cx: 98, cy: 68, r: 46, f: LICHT, s: 'none', o: 0.2 },
-    { t: 'circle', cx: 98, cy: 68, r: 33, f: LICHT, s: 'none', o: 0.28 },
-    linie('M40 78 L36 92 M54 80 L52 96 M66 78 L68 94', 2.6, dunkel),
-    // Flügel
-    el(66, 34, 28, 11, '#E3EEF9', 1.8, -26),
-    el(76, 38, 24, 9, '#D3E4F4', 1.8, -12),
-    // Körper
-    el(62, 56, 26, 15, braun, 2.6, -6),
-    el(98, 68, 21, 14, '#FFE766', 2.6, 14),
-    linie('M86 62 Q88 70 90 78 M98 58 Q100 68 102 78', 1.6, '#E3B52C'),
-    glanz('M88 58 Q94 54 102 56', 3, 0.85),
-    // Kopf
-    kr(34, 52, 14, dunkel, 2.4),
-    linie('M30 40 Q24 28 15 26 M38 39 Q38 26 32 18', 2.2),
-    kr(15, 26, 2.6, dunkel, 1.4), kr(32, 18, 2.6, dunkel, 1.4),
-    ...augeHell(30, 51, 4.4),
-    linie('M32 60 Q36 64 41 60', 1.8, 'papier'),
-    funke(116, 22, 0.9, GELB),
-    funke(122, 98, 0.7, GELB),
-    funke(14, 86, 0.6, GELB),
-    funke(78, 98, 0.55, 'papier'),
+  const koerper = '#6B4E3A'
+  const dunkel = '#3E2E24'
+  const gesicht = '#F2B872'
+  const glut = '#FFE04A'
+  const lx = 100
+  const ly = 70
+  const strahlen: Form[] = [-70, -35, 0, 35, 70, 105, 140].map((w) => {
+    const a = (w * Math.PI) / 180
+    const p = (r: number) => `${(lx + Math.cos(a) * r).toFixed(1)} ${(ly + Math.sin(a) * r).toFixed(1)}`
+    return linie(`M${p(24)} L${p(32)}`, 2.8, GELB_D)
+  })
+  return z([0, 0, 140, 110], [
+    // Lichtschein um den leuchtenden Hinterleib
+    { t: 'circle', cx: lx, cy: ly, r: 34, f: LICHT, s: 'none', o: 0.2 },
+    { t: 'circle', cx: lx, cy: ly, r: 22, f: LICHT, s: 'none', o: 0.38 },
+    ...strahlen,
+    // kurze Beine
+    linie('M52 62 L48 73 M60 65 L59 76 M68 67 L70 77', 2.4, dunkel),
+    // schmale Flügel (hinter dem Körper)
+    el(60, 40, 22, 6.5, '#E3EEF9', 1.8, -18),
+    el(71, 43, 20, 6, '#D3E4F4', 1.8, -5),
+    // schlanker Körper, Deckflügel mit Mittelnaht (keine Querstreifen)
+    el(70, 59, 27, 11, koerper, 2.6, 22),
+    linie('M50 51 Q66 58 84 66', 1.4, '#9A7A62'),
+    glanz('M52 52 Q60 54 66 58', 2.4, 0.35),
+    // leuchtendes Ende des Hinterleibs
+    el(lx - 3, ly - 2, 12, 9.5, glut, 2.4, 22),
+    el(lx - 2, ly - 2.5, 6, 4.2, '#FFF8C8', 0, 22),
+    // Kopf mit freundlichem Gesicht (warm wie das Halsschild der Leuchtkäfer)
+    linie('M28 30 Q22 18 14 15 M38 28 Q40 16 34 9', 2.2, dunkel),
+    kr(14, 15, 3, dunkel, 1.2),
+    kr(34, 9, 3, dunkel, 1.2),
+    kr(34, 44, 15, gesicht, 2.6),
+    ...augeHell(28, 42, 4.4),
+    ...augeHell(40, 41, 4.4),
+    { t: 'ellipse', cx: 24, cy: 50, rx: 3.4, ry: 2.2, f: WANGE, s: 'none', o: 0.9 },
+    { t: 'ellipse', cx: 44, cy: 49, rx: 3.4, ry: 2.2, f: WANGE, s: 'none', o: 0.9 },
+    linie('M30 51 Q34 55 38 51', 1.8),
+    funke(128, 22, 0.85, GELB),
+    funke(14, 84, 0.6, GELB),
+    funke(66, 100, 0.55, GELB),
   ])
 }
 

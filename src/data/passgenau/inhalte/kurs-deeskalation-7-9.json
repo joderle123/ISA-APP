@@ -3088,7 +3088,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:ruhig:stopp",
        "groesse": "m",
        "text": "Lio"
       }
@@ -3176,7 +3176,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:ruhig:stopp",
        "groesse": "m",
        "text": "Lio"
       }
@@ -3560,7 +3560,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:ruhig:stopp",
        "groesse": "m",
        "text": "Lio"
       }
@@ -3648,7 +3648,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:ruhig:stopp",
        "groesse": "m",
        "text": "Lio"
       }
@@ -6053,7 +6053,7 @@
        "text": "Knie"
       },
       {
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:enttaeuscht",
        "text": "Lio wartet"
       }
      ],
@@ -6140,7 +6140,7 @@
        "text": "genou"
       },
       {
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:enttaeuscht",
        "text": "Lio attend"
       }
      ],
@@ -6531,7 +6531,7 @@
        "text": "Knie"
       },
       {
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:enttaeuscht",
        "text": "Lio wartet"
       }
      ],
@@ -6618,7 +6618,7 @@
        "text": "genou"
       },
       {
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:enttaeuscht",
        "text": "Lio attend"
       }
      ],
@@ -7467,7 +7467,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:froh:jubeln",
        "groesse": "m",
        "text": "Lio"
       }
@@ -7550,7 +7550,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:froh:jubeln",
        "groesse": "m",
        "text": "Lio"
       }
@@ -7947,7 +7947,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:froh:jubeln",
        "groesse": "m",
        "text": "Lio"
       }
@@ -8030,7 +8030,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:rollstuhl",
+       "bild": "figur:lio:froh:jubeln",
        "groesse": "m",
        "text": "Lio"
       }

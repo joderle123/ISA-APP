@@ -225,9 +225,9 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:vogel",
+       "bild": "motiv:eisvogel",
        "groesse": "m",
-       "text": "Vogel"
+       "text": "Eisvogel"
       }
      ]
     },
@@ -330,9 +330,9 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:vogel",
+       "bild": "motiv:eisvogel",
        "groesse": "m",
-       "text": "oiseau"
+       "text": "martin-pêcheur"
       }
      ]
     },
@@ -734,9 +734,9 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:vogel",
+       "bild": "motiv:eisvogel",
        "groesse": "m",
-       "text": "Vogel"
+       "text": "Eisvogel"
       }
      ]
     },
@@ -839,9 +839,9 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:vogel",
+       "bild": "motiv:eisvogel",
        "groesse": "m",
-       "text": "oiseau"
+       "text": "martin-pêcheur"
       }
      ]
     },
@@ -7693,7 +7693,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:vogel",
+       "bild": "motiv:eisvogel",
        "groesse": "m",
        "text": ""
       }
@@ -7775,7 +7775,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:vogel",
+       "bild": "motiv:eisvogel",
        "groesse": "m",
        "text": ""
       }
@@ -8153,7 +8153,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:vogel",
+       "bild": "motiv:eisvogel",
        "groesse": "m",
        "text": ""
       }
@@ -8250,7 +8250,7 @@
      "rechts": [
       {
        "art": "bild",
-       "bild": "motiv:vogel",
+       "bild": "motiv:eisvogel",
        "groesse": "m",
        "text": ""
       }

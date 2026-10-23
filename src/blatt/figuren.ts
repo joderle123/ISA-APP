@@ -60,6 +60,8 @@ export const FIGUREN: Record<string, Typ> = {
   sami: { haar: 'locken', haarFarbe: '#231E1C', haut: '#9C6A48', shirt: '#D8899A', hose: '#3E4A60', alter: 'kind' },
   amira: { haar: 'tuch', haarFarbe: '#5C6FA8', haut: '#D6A57F', shirt: '#9B87C8', hose: '#4A4F66', alter: 'kind' },
   tom: { haar: 'kappe', haarFarbe: '#7A5236', haut: '#F0CDAD', shirt: '#DDBF55', hose: '#4F6D99', alter: 'kind', extra: '#C2554A' },
+  // Kind (um 8) im Rollstuhl – Gegenstück zu nele für junge Stufen; sitzt in jeder Haltung
+  lio: { haar: 'kurzlocken', haarFarbe: '#3B2A21', haut: '#E2B48F', shirt: '#4E9E86', hose: '#3E4A60', alter: 'kind', rollstuhl: true, schuh: '#D9574A' },
   // Jugendliche (um 14): größer, schlanker, kleinerer Kopf, Kleidung statt Kinderhemd
   jana: { haar: 'glatt', haarFarbe: '#6B4630', haut: '#C58C66', shirt: '#5E9F9C', hose: '#36405A', alter: 'jugend', ober: 'hoodie', schuh: '#F4F6F9' },
   ben: { haar: 'tolle', haarFarbe: '#8A6440', haut: '#F2D3BA', shirt: '#7C8698', hose: '#36405A', alter: 'jugend', ober: 'pulli', ober2: '#DCE2EC', schuh: '#2B3550' },
@@ -301,7 +303,7 @@ export function figurZeichnung(typName: string, gefuehl?: string, pose?: string)
   if (!t) return { vb: [0, 0, 100, 160], formen: [] }
   const g: Gefuehl = gefuehl && istGefuehl(gefuehl) ? gefuehl : 'neutral'
   const p: Pose = (POSEN as string[]).includes(pose ?? '') ? (pose as Pose) : 'stehen'
-  if (t.alter !== 'kind' || NEUE_POSEN.includes(p)) return { vb: [0, 0, 100, 160], formen: figurGross(t, g, p), w: 2.4 }
+  if (t.alter !== 'kind' || t.rollstuhl || NEUE_POSEN.includes(p)) return { vb: [0, 0, 100, 160], formen: figurGross(t, g, p), w: 2.4 }
   const m = masse(t.alter)
   const { kx, ky, kr, schulterY, shirtUnten, fussY, breite } = m
   const formen: Form[] = []
@@ -635,7 +637,8 @@ function sitzUnten(t: Typ, b: Bau): Sitz {
     hinten.push({ t: 'rect', x: rueck - 2, y: ys, b: kn - rueck + 7, h: 5.4, rx: 2.2, f: holz, s: T, w: 1.8 })
     hinten.push(...tube(`M${kn + 2} ${ys + 4} L${kn + 3} ${fussY + 1}`, holz, 3.4))
   } else {
-    const rd = 18.5 * (fussY - 5 - hueft) / 53
+    // Kinder haben kurze Beine: das Rad nicht mit der Beinlänge schrumpfen lassen, sonst ist der Rollstuhl klein kaum zu erkennen
+    const rd = t.alter === 'kind' ? 17 : 18.5 * (fussY - 5 - hueft) / 53
     hinten.push(...tube(`M${rueck} ${ys + 2} L${rueck} ${yh - 33} L${rueck - 8} ${yh - 33}`, metall, 3))
     hinten.push({ t: 'circle', cx: kn - 5, cy: fussY - 3.5, r: 4.6, f: 'hellgrau', s: T, w: 1.8 })
     hinten.push(...tube(`M${kn - 5} ${fussY - 8} L${kn - 4} ${ys + 3}`, metall, 2.6))
