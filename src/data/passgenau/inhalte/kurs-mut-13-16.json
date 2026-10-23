@@ -461,6 +461,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt den Stress-Plan vor, heute: das Signal\n1′ Jugendliche/r zeichnet Leistung bei steigender Anspannung ein\n3′ Fachkraft zeigt die echte Stress-Kurve, beide vergleichen – „Ein bisschen Anspannung hilft, bei zu viel kippt es.“\n5′ Beide ordnen vier Situationen auf der Kurve ein\n7′ Beide sammeln Alarm-Zeichen im Körper\n8′ Kurven-Check: Jugendliche/r zeigt mit dem Finger, dann Tausch\nMuss: Kurve zeichnen und vergleichen, vier Situationen. Kann: Kurven-Check; Eigenes nur freiwillig. Wird es knapp: Körper-Zeichen kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente le plan anti-stress, aujourd’hui : le signal\n1′ Le ou la jeune dessine le travail quand la tension monte\n3′ L’adulte montre la vraie courbe, ils comparent – « Un peu de tension aide ; avec trop, ça bascule. »\n5′ Ensemble, ils placent quatre situations sur la courbe\n7′ Ensemble, signes de l’alarme dans le corps\n8′ Jeu de la courbe : le ou la jeune montre du doigt, puis on inverse\nIndispensable : dessiner et comparer la courbe, quatre situations. Option : jeu de la courbe ; vécu personnel seulement si souhaité. Serré : signes du corps en bref."
+      }
     }
   },
   {
@@ -1585,6 +1593,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erklärt in zwei Sätzen, warum Runterfahren wirkt\n1′ Jugendliche/r schätzt die Anspannung vorher\n2′ Beide atmen: vier ein, sechs aus, fünf Runden – „Das Ausatmen ist der wichtige Teil.“\n4′ Beide machen Erdung 5-4-3-2-1\n7′ Jugendliche/r schätzt nachher, wählt die bessere Übung\n8′ Jugendliche/r leitet die Fachkraft durch eine Übung\nMuss: beide Übungen mit Vorher und Nachher; Mitmachen freiwillig, sonst zuschauen und Rückmeldung geben. Kann: Anleiten. Wird es knapp: Erklärung in einem Satz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte explique en deux phrases pourquoi ça marche\n1′ Le ou la jeune estime sa tension avant\n2′ Ensemble : inspirer sur quatre, expirer sur six, cinq fois – « C’est l’expiration qui compte. »\n4′ Ensemble, ancrage 5-4-3-2-1\n7′ Le ou la jeune estime après, choisit ce qui marche mieux\n8′ Le ou la jeune guide l’adulte dans un exercice\nIndispensable : deux exercices avec avant et après ; participation libre, sinon observer et donner son avis. Option : guider l’adulte. Serré : explication en une phrase."
+      }
     }
   },
   {
@@ -2762,6 +2778,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erklärt: Ein Gedanke ist Vermutung, keine Tatsache\n1′ Beide lesen Aylins Gedanken im Comic, benennen die Denkfalle\n3′ Beide prüfen mit drei Fragen: wahrscheinlich, dagegen, nächster Schritt\n5′ Fachkraft spielt Aylins Katastrophen-Stimme, nie verletzend\n6′ Jugendliche/r antwortet mit den drei Fragen – „Prüfen heißt nicht schönreden.“\n8′ Jugendliche/r formuliert einen Satz, der stimmt und hilft\nMuss: drei Fragen, Rollenspiel. Kann: zweite Runde mit Tausch. Wird es knapp: Comic nur kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte explique : une pensée est une supposition, pas un fait\n1′ Ensemble, lire la pensée d’Aylin dans la BD, nommer le piège\n3′ Ensemble, vérifier : probabilité, contraire, prochaine étape\n5′ L’adulte joue la voix catastrophe d’Aylin, jamais blessante\n6′ Le ou la jeune répond avec les trois questions – « Vérifier, ce n’est pas dorer la pilule. »\n8′ Le ou la jeune formule une phrase juste et utile\nIndispensable : trois questions, jeu de rôle. Option : deuxième tour inversé. Serré : BD en bref."
+      }
     }
   },
   {
@@ -3939,6 +3963,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt den Kreislauf der Vermeidung – „Ausweichen beruhigt kurz.“\n2′ Jugendliche/r baut für Tiago eine Stufen-Treppe, schätzt 0–10\n5′ Fachkraft nennt die Regel: leicht beginnen, bleiben, bis es nachlässt\n6′ Rollenspiel: Fachkraft ist Lehrerin, Jugendliche/r ist Tiago\n9′ Beide tauschen die Rollen\nMuss: Treppe für Tiago, Rollenspiel einer mittleren Stufe; keine echte Konfrontation in der Stunde. Kann: eigene Stufe, nur freiwillig. Wird es knapp: ohne Rollentausch."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le cercle vicieux de l’évitement – « Éviter t’apaise un instant. »\n2′ Le ou la jeune construit l’escalier de Tiago, note 0–10\n5′ L’adulte donne la règle : commencer facile, rester jusqu’à ce que ça baisse\n6′ Jeu de rôle : l’adulte est l’enseignante, le ou la jeune Tiago\n9′ On échange les rôles\nIndispensable : escalier de Tiago, jeu de rôle d’une marche du milieu ; pas de vraie confrontation pendant la séance. Option : marche personnelle, seulement si souhaité. Serré : sans échange."
+      }
     }
   },
   {
@@ -5537,6 +5569,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt drei Kontroll-Kreise: innen, Mitte, außen\n2′ Jugendliche/r ordnet Noras fünf Druck-Quellen ein – „Deine Energie gehört in den inneren Kreis.“\n4′ Jugendliche/r plant Situation der Woche, auch erfunden\n6′ Fachkraft spielt Gegenüber, Jugendliche/r spricht ersten Satz\n8′ Tausch: Jugendliche/r sagt, wie der Satz ankam\nMuss: Kreise mit Nora, Plan mit erstem Satz. Kann: Rollentausch. Wird es knapp: Satz einmal laut, dann aufs Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre trois cercles : intérieur, milieu, extérieur\n2′ Le ou la jeune range cinq pressions de Nora – « Ton énergie va dans le cercle intérieur. »\n4′ Le ou la jeune planifie une situation de la semaine, inventée possible\n6′ L’adulte joue l’autre, le ou la jeune dit la première phrase\n8′ On échange : le ou la jeune dit comment la phrase est arrivée\nIndispensable : cercles avec Nora, plan avec première phrase. Option : échanger les rôles. Serré : phrase dite une fois, notée sur la fiche."
+      }
     }
   },
   {
@@ -6638,6 +6678,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide legen die Blätter der fünf Stunden nebeneinander\n1′ Jugendliche/r schätzt ein, was am meisten half\n3′ Jugendliche/r füllt die Plan-Karte, unterschreibt die Urkunde\n6′ Fachkraft nennt überraschende Szene, Jugendliche/r geht Karte laut durch – „Das Referat wird auf morgen vorgezogen.“\n8′ Jugendliche/r stellt eine Szene, Fachkraft denkt laut\nMuss: Plan-Karte, Probe mit Szene. Kann: zweite Runde; ohne Spiel nur Karte besprechen. Wird es knapp: Rückblick kurz."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux étalent les fiches des cinq séances\n1′ Le ou la jeune estime ce qui a le plus aidé\n3′ Le ou la jeune remplit la carte-plan, signe le certificat\n6′ L’adulte donne une scène inattendue, le ou la jeune parcourt sa carte – « L’exposé est avancé à demain. »\n8′ Le ou la jeune propose une scène, l’adulte réfléchit à voix haute\nIndispensable : carte-plan, répétition avec la scène. Option : deuxième tour ; sans jeu, parler seulement de la carte. Serré : bilan en bref."
+      }
     }
   },
   {

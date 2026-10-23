@@ -517,6 +517,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt das Grenzen-Profil, heute Feld 1: Meine Grenzen\n1′ Fachkraft liest Szenen aus fünf Bereichen vor\n2′ Jugendliche/r ordnet jede auf der Ampel ein\n4′ Jugendliche/r sagt, woran: Körper, Gedanke, Impuls wegzugehen\n7′ Tausch: Fachkraft nennt zwei eigene, harmlose Grenzen\n8′ Jugendliche/r sagt, ob es bei ihm/ihr gleich wäre – „Deine Grenze gehört dir.“\nMuss: Szenen auf der Ampel, woran man es merkt. Kann: Fachkraft-Grenzen; Eigenes nur von sich aus. Wird es knapp: drei Bereiche statt fünf."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le profil, aujourd’hui le champ 1 : mes limites\n1′ L’adulte lit des scènes de cinq domaines\n2′ Le ou la jeune classe chacune sur le feu tricolore\n4′ Le ou la jeune dit à quoi : corps, pensée, envie de partir\n7′ On échange : l’adulte cite deux limites à lui, sans gravité\n8′ Le ou la jeune dit si ce serait pareil – « Ta limite t’appartient. »\nIndispensable : scènes sur le feu, à quoi on le remarque. Option : limites de l’adulte ; vécu personnel seulement s’il vient du ou de la jeune. Serré : trois domaines."
+      }
     }
   },
   {
@@ -1618,6 +1626,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Linas drei Antworten an Ben: passiv, aggressiv, selbstsicher\n2′ Jugendliche/r sagt, was danach jeweils passiert\n3′ Fachkraft baut klaren Satz: beschreiben, Ich-Gefühl, Wunsch, Nutzen\n5′ Jugendliche/r sagt eigenen Satz für Ben laut\n6′ Fachkraft spielt Ben, erst einsichtig, dann ausweichend – „Donnerstag schaff ich nicht.“\n7′ Jugendliche/r verhandelt anderen Termin, ruhig, ohne einzuknicken\nMuss: drei Antworten, eigener Satz, Ben ausweichend. Kann: Ben erst einsichtig. Wird es knapp: Satz-Teile nur nennen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre trois réponses de Lina à Ben : passive, agressive, affirmée\n2′ Le ou la jeune dit ce qui se passe ensuite\n3′ L’adulte construit la phrase : décrire, ressenti, souhait, apport\n5′ Le ou la jeune dit sa phrase pour Ben à voix haute\n6′ L’adulte joue Ben, compréhensif puis évasif – « Jeudi, je ne peux pas. »\n7′ Le ou la jeune négocie un autre jour, calme, sans céder\nIndispensable : les trois réponses, sa phrase, Ben évasif. Option : Ben d’abord compréhensif. Serré : parties de la phrase juste nommées."
+      }
     }
   },
   {
@@ -2815,6 +2831,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt drei Warnzeichen vor – „Ein Warnzeichen reicht für ein Nein.“\n2′ Beide prüfen das Beispiel Baustellenzaun\n3′ Beide sammeln drei Ausstiegssätze: klar, Humor oder Grund, Alternative\n5′ Fachkraft spielt Max, Druck in drei Stufen, nie gemein\n6′ Jugendliche/r bleibt bei seinem Satz oder holt Verbündeten\nMuss: Warnzeichen-Check, Rollenspiel mit Max; Stopp jederzeit möglich. Kann: Verbündeten holen. Wird es knapp: weitere Beispiele am Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente les trois signaux d’alerte – « Un seul signal suffit pour dire non. »\n2′ Ensemble, vérifier l’exemple de la clôture du chantier\n3′ Ensemble, trois phrases de sortie : claire, humour ou raison, autre proposition\n5′ L’adulte joue Max, pression en trois temps, jamais méchant\n6′ Le ou la jeune tient sa phrase ou cherche un allié\nIndispensable : signaux d’alerte, jeu de rôle avec Max ; stop à tout moment. Option : chercher un allié. Serré : autres exemples sur la fiche."
+      }
     }
   },
   {
@@ -4490,6 +4514,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt Einwilligungsregeln und Stopp-Check vor dem Senden\n3′ Fachkraft liest als Tessa und Max: Foto von Finn\n4′ Jugendliche/r antwortet laut, ruhig, ohne mitzumachen\n6′ Tessa drängt privat nach Foto, Jugendliche/r sagt klar Nein\n8′ Jugendliche/r wählt: stummschalten, aussteigen oder blockieren\n9′ Fachkraft: Ein Nein gilt im Chat wie im Gespräch\nMuss: Stopp-Check, beide Chat-Durchgänge. Kann: Antwort am Blatt aufschreiben. Wird es knapp: Regeln nur nennen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte donne les règles du consentement et le contrôle avant d’envoyer\n3′ L’adulte lit les messages de Tessa et Max : la photo de Finn\n4′ Le ou la jeune répond à voix haute, calme, sans suivre\n6′ Tessa insiste en privé pour une photo : non clair\n8′ Le ou la jeune choisit : couper le son, quitter, bloquer\n9′ L’adulte : un non vaut aussi dans un chat\nIndispensable : contrôle avant d’envoyer, les deux tours de chat. Option : réponse écrite sur la fiche. Serré : règles juste nommées."
+      }
     }
   },
   {
@@ -5703,6 +5735,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt Flur-Beispiel Finn, zeigt fünf Bystander-Schritte\n2′ Jugendliche/r sagt, wo die Vorbeigehenden hängen bleiben\n3′ Fachkraft nennt vier Wege zu helfen; Sicherheit geht vor\n5′ Jugendliche/r plant Situation der Woche: wer, wann, wo, Satz\n7′ Fachkraft spielt Gegenüber; erst Gelungenes, dann Änderung\n9′ Fachkraft nennt 116 111 und BEE SECURE Helpline 8002 1234\nMuss: Bystander-Schritte, Plan mit Rollenspiel, beide Nummern. Kann: echte statt erfundener Situation. Wird es knapp: Wege zu helfen nur nennen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte le couloir avec Finn, montre les cinq étapes du témoin\n2′ Le ou la jeune dit où ceux qui passent restent bloqués\n3′ L’adulte nomme quatre façons d’aider ; sa sécurité d’abord\n5′ Le ou la jeune prépare une situation : qui, quand, où, phrase\n7′ L’adulte joue l’autre ; d’abord ce qui a réussi, puis les changements\n9′ L’adulte donne le 116 111 et la BEE SECURE Helpline 8002 1234\nIndispensable : étapes du témoin, plan avec jeu de rôle, les deux numéros. Option : situation vraie. Serré : façons d’aider juste nommées."
+      }
     }
   },
   {
@@ -7345,6 +7385,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide blättern die Grenzen-Mappe durch\n1′ Jugendliche/r zeigt hilfreichstes und schwächstes Blatt, sagt woran\n3′ Fachkraft ergänzt ein Beispiel, etwa den Ausstiegssatz\n4′ Jugendliche/r färbt das Profil ehrlich ein – „Ein kleiner Ring ist ein Startpunkt.“\n6′ Fachkraft erklärt in zwei Sätzen: früh bemerken hilft\n8′ Jugendliche/r nennt Hilfen, macht Grenzen-Karte und Vereinbarung\nMuss: Profil einfärben, Hilfen mit 116 111 und 8002 1234. Kann: Erklärung zum Profil. Wird es knapp: Mappe nur kurz."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux feuillettent le dossier des limites\n1′ Le ou la jeune montre la fiche la plus utile et la moins utile\n3′ L’adulte ajoute un exemple, comme la phrase de sortie\n4′ Le ou la jeune colorie le profil honnêtement – « Un petit anneau est un point de départ. »\n6′ L’adulte explique en deux phrases : remarquer tôt aide\n8′ Le ou la jeune nomme des aides, fait sa carte et son engagement\nIndispensable : colorier le profil, les aides avec 116 111 et 8002 1234. Option : l’explication du profil. Serré : dossier en bref."
+      }
     }
   },
   {

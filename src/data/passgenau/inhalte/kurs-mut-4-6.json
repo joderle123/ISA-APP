@@ -357,6 +357,14 @@
         "On a le droit de montrer sa peur. Toi aussi. Tu peux la montrer, la dire ou la garder pour toi."
       ],
       "wennEsKippt": "Si l’enfant ne veut pas se faire petit, il montre du doigt le visage apeuré de Léo sur l’image (« Là, Léo a peur ? »). Si les rugissements deviennent trop agités, Léo ne rugit plus qu’en chuchotant – qui est le plus doux ? Si l’enfant raconte une vraie peur, l’adulte écoute un instant, dit « Merci de me le dire » et revient à Léo, sans poser de questions. Deux ou trois exemples dans le jeu suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt Löwe Leo vor, beide brüllen einmal – „Brüllst du mit?“\n1′ Fachkraft zeigt Leo mit Angst: Augen weit, Schultern hoch\n2′ Kind macht den ängstlichen Leo nach\n3′ Fachkraft nennt Dinge, Kind macht sich klein oder brüllt – „Gewitter – macht das Leo Angst?“\n7′ Fachkraft sagt: Angst darf man zeigen\nMuss: Leo nachmachen, Spiel „Groß und klein“. Kann: Angst zeigen, sagen oder für sich behalten. Wird es knapp: zwei Dinge statt vier."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente Léo le lion, ils rugissent ensemble – « Tu rugis avec lui ? »\n1′ L’adulte montre Léo qui a peur : yeux grands, épaules hautes\n2′ L’enfant imite Léo qui a peur\n3′ L’adulte nomme des choses, l’enfant se fait petit ou rugit – « Un orage – est-ce que ça fait peur à Léo ? »\n7′ L’adulte dit : on a le droit de montrer sa peur\nIndispensable : imiter Léo, le jeu « Grand et petit ». Option : montrer, dire ou garder sa peur pour soi. Serré : deux choses au lieu de quatre."
+      }
     }
   },
   {
@@ -1285,6 +1293,14 @@
         "Quand c’est vraiment dangereux, Léo écoute sa peur. Alors il va chercher un adulte."
       ],
       "wennEsKippt": "Si l’enfant ne veut pas passer sur le foulard, seule la patte de Léo (un doigt ou la marionnette) traverse le ruisseau, et l’enfant regarde. Si l’enfant hésite, l’adulte rend la question plus petite : « Tu veux seulement regarder ? » Regarder, c’est déjà un pas ; il n’en faut pas plus aujourd’hui."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt blaues Tuch als Bach auf den Boden\n1′ Fachkraft spricht Leos Angst aus – „Brr, nass!“\n2′ Leo macht winzige Schritte: schauen, Pfote, Fuß aufs Tuch\n4′ Kind probiert den Weg, so klein es mag\n7′ Fachkraft: trotzdem probieren; bei echter Gefahr Erwachsenen holen\nMuss: Leos Schritte, Kind probiert selbst, jeder Schritt zählt. Kann: weitere Schritte, wenn das Kind mag. Wird es knapp: Gefahr-Satz trotzdem sagen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose un foulard bleu comme ruisseau\n1′ L’adulte dit la peur de Léo – « Brr, c’est mouillé ! »\n2′ Léo fait de tout petits pas : regarder, patte, pied\n4′ L’enfant essaie le chemin, aussi petit qu’il veut\n7′ L’adulte : essayer quand même ; vrai danger, chercher un adulte\nIndispensable : les pas de Léo, l’enfant essaie, chaque pas compte. Option : d’autres pas si l’enfant veut. Serré : garder la phrase sur le danger."
+      }
     }
   },
   {
@@ -1834,6 +1850,14 @@
         "D’abord respirer, puis la phrase, puis le petit pas – c’est le chemin du courage de Léo."
       ],
       "wennEsKippt": "Si respirer est difficile, l’enfant souffle seulement sur la paume de sa main – l’important, c’est d’expirer. S’il ne veut pas dire la phrase, il la chuchote à l’oreille de Léo, ou l’adulte la dit et l’enfant hoche la tête. Une seule respiration et la phrase, sans le pont, suffisent aussi."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide atmen dreimal: Arme hoch, mit „Haaa“ runter\n2′ Beide sagen den Mut-Satz: flüsternd, dann mit Löwenstimme – „Ich probiere es trotzdem.“\n4′ Fachkraft legt Seil als wackelige Brücke\n5′ Fachkraft zeigt: atmen, Satz, ein Stück gehen\n6′ Kind geht so weit, wie es mag\nMuss: Mut-Atmen, Mut-Satz, Brücke. Kann: die ganze Brücke. Wird es knapp: Fachkraft zeigt nur kurz vor."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux respirent trois fois : bras en haut, « haaa » en bas\n2′ Les deux disent la phrase : chuchotée, puis voix de lion – « J’essaie quand même. »\n4′ L’adulte pose une corde comme pont branlant\n5′ L’adulte montre : respirer, phrase, avancer un peu\n6′ L’enfant va aussi loin qu’il veut\nIndispensable : respiration, phrase de courage, pont. Option : tout le pont. Serré : démonstration courte."
+      }
     }
   },
   {
@@ -2393,7 +2417,15 @@
       "wennEsKippt": "Si l’ordre est difficile, l’adulte pose la première carte et l’enfant ajoute seulement la suivante. Si le changement ne plaît pas à l’enfant, Léo a le droit de dire « Je trouve ça nul » ; l’adulte le prend au sérieux, et ils cherchent ensemble ce qui reste pareil (l’arrivée, le coin jeux). Deux cartes suffisent.",
       "vorbereitung": "Préparer quatre fiches cartonnées avec chacune une image simple : arrivée (maison ou porte), cour (arbre, soleil), coin jeux (caisse de jouets) et salle de sport (tapis)."
     },
-    "vorbereitung": "Vier Karteikarten mit je einem einfachen Bild bereitlegen: Ankommen (Haus oder Tür), Hof (Baum, Sonne), Spielecke (Spielzeugkiste) und Turnhalle (Matte)."
+    "vorbereitung": "Vier Karteikarten mit je einem einfachen Bild bereitlegen: Ankommen (Haus oder Tür), Hof (Baum, Sonne), Spielecke (Spielzeugkiste) und Turnhalle (Matte).",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt: Es regnet, Leo kann nicht auf den Hof\n1′ Kind legt drei Bildkarten als Leos Plan aus\n2′ Kind geht den Plan Karte für Karte ab\n4′ Fachkraft tauscht „Hof“ gegen „Turnhalle“\n5′ Kind sagt „Es ändert sich etwas“, atmet, Mut-Satz\n6′ Kind geht den neuen Plan ab\nMuss: Plan legen, Karte tauschen, Mut-Weg. Kann: festhalten, dass manches gleich bleibt. Wird es knapp: Plan nur einmal abgehen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte : il pleut, Léo ne peut pas aller dans la cour\n1′ L’enfant pose trois cartes en images comme plan de Léo\n2′ L’enfant parcourt le plan de carte en carte\n4′ L’adulte remplace « cour » par « salle de sport »\n5′ L’enfant dit « Il y a un changement », respire, phrase de courage\n6′ L’enfant parcourt le nouveau plan\nIndispensable : poser le plan, changer la carte, le chemin du courage. Option : retenir que beaucoup reste pareil. Serré : parcourir le plan une fois."
+      }
+    }
   },
   {
     "id": "ki:kurs-mut-4-6-s4-t1",
@@ -2994,6 +3026,14 @@
         "On le joue une fois : moi, je suis l’autre enfant, et toi, tu es courageux comme Léo."
       ],
       "wennEsKippt": "Si l’enfant ne trouve rien, il choisit une image parmi celles proposées, ou Léo « choisit » pour lui ; l’adulte rend le pas encore plus petit (juste aller vers, juste regarder). Si l’enfant ne veut rien préparer de vrai, il prépare avec Léo un pas courageux seulement pour jouer. Pour les lieux et les personnes, l’adulte ne pose de questions que sur le groupe, la récréation et la cour – jamais sur la famille."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft macht kleine Möglichkeiten vor, z. B. „Spielst du mit?“\n2′ Kind wählt etwas Kleines oder Eigenes\n3′ Beide planen den ersten Schritt: wer, wann, wo, Satz\n5′ Kind spielt: atmen, Mut-Satz, erster Schritt\n6′ Fachkraft spielt das andere Kind – „Ja, komm!“\nMuss: kleine Sache wählen, ersten Schritt planen und spielen; wo Sicherheit zählt, ist ein Erwachsener dabei. Kann: Helfer informieren, wenn das Kind einverstanden ist. Wird es knapp: nur wer und welcher Satz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte mime de petites possibilités, comme « Tu veux jouer avec moi ? »\n2′ L’enfant choisit une petite chose ou la sienne\n3′ Ensemble, préparer le premier pas : qui, quand, où, phrase\n5′ L’enfant joue : respirer, phrase de courage, premier pas\n6′ L’adulte joue l’autre enfant – « Oui, viens ! »\nIndispensable : choisir, préparer et jouer le premier pas ; si ça doit être sûr, un adulte est là. Option : prévenir la personne qui aide, si l’enfant est d’accord. Serré : qui et quelle phrase."
+      }
     }
   },
   {
@@ -3899,6 +3939,14 @@
         "J’ai vu que tu as osé – c’était courageux. Voilà ta médaille du courage."
       ],
       "wennEsKippt": "Si l’enfant a du mal à se rappeler, l’adulte montre une fiche après l’autre et l’enfant cherche l’aide qui va avec sur le chemin de Léo. S’il ne veut rien expliquer à Léo, l’adulte fait les pas de Léo et l’enfant dit seulement « oui » ou « non ». Si le temps presse, la médaille et la phrase de courage suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt die Blätter der Löwen-Mappe der Reihe nach aus\n1′ Kind zeigt oder spielt Leos Mut-Helfer vor\n3′ Kind wählt seinen liebsten Mut-Helfer\n4′ Tausch: Fachkraft ist ängstlicher Leo, Kind erklärt, was hilft\n6′ Kind bekommt Mut-Medaille; Fachkraft nennt echten Mut-Moment\n7′ Kind sagt, was es mitnimmt und wer hilft\nMuss: Leo erklären, was hilft; Medaille mit wirklich gesehenem Moment. Kann: Lieblings-Helfer. Wird es knapp: Mappe nur kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale les fiches de la chemise du lion dans l’ordre\n1′ L’enfant montre ou mime les aides de Léo\n3′ L’enfant choisit son aide préférée\n4′ On échange : l’adulte est Léo qui a peur, l’enfant explique ce qui aide\n6′ Médaille ; l’adulte nomme un moment vraiment vu\n7′ L’enfant dit ce qu’il emporte et qui l’aide\nIndispensable : expliquer à Léo ce qui aide, médaille avec un vrai moment. Option : aide préférée. Serré : fiches en bref."
+      }
     }
   },
   {

@@ -559,6 +559,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt den Gefühls-Kompass, heute Richtung 1: Wort\n1′ Kind sagt spontan zu drei Situationen ein Gefühl\n3′ Kind sucht im Gefühlsrad erst Mitte, dann genaueres Wort\n6′ Fachkraft sucht ihr eigenes Wort für zwei Situationen – „Bei dir darf es anders sein.“\n8′ Kind wählt Wort für eine Blatt-Figur, sagt, woran man es merkt\nMuss: Gefühlsrad von innen nach außen. Kann: Fachkraft-Wort zum Vergleich. Wird es knapp: zwei statt drei Situationen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente la boussole, aujourd’hui direction 1 : le mot\n1′ L’enfant dit spontanément ce qu’il ressent dans trois situations\n3′ Dans la roue, l’enfant cherche le centre, puis le mot précis\n6′ L’adulte cherche son propre mot pour deux situations – « Pour toi, ça peut être différent. »\n8′ L’enfant choisit un mot pour un personnage de la fiche\nIndispensable : la roue, du centre vers l’extérieur. Option : le mot de l’adulte pour comparer. Serré : deux situations au lieu de trois."
+      }
     }
   },
   {
@@ -1808,6 +1816,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt von Lea am Elfmeterpunkt\n1′ Kind zeigt am Körperumriss, wo Lea etwas spürt\n3′ Drei Ärger-Situationen: Kind zeigt Stärke 0 bis 10 mit Fingern\n6′ Beide halten fest: Herzklopfen passt zu vielen Gefühlen – „Der Körper sagt: Hier ist etwas wichtig.“\n8′ Tausch: Kind nennt Gefühl und Stärke, Fachkraft zeigt Körper\nMuss: Lea am Körperumriss, Stärke am Thermometer. Kann: Rollentausch. Wird es knapp: zwei Ärger-Situationen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte Léa au point de penalty\n1′ L’enfant montre sur le contour du corps où Léa sent quelque chose\n3′ Trois situations qui énervent : intensité de 0 à 10 aux doigts\n6′ Ensemble : le cœur qui bat va avec plusieurs émotions – « Le corps dit : ici, quelque chose est important. »\n8′ On échange : l’enfant nomme émotion et intensité, l’adulte montre le corps\nIndispensable : Léa sur le contour, intensité au thermomètre. Option : échanger les rôles. Serré : deux situations qui énervent."
+      }
     }
   },
   {
@@ -3000,6 +3016,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt die Szene: Mia winkt, Jana geht weiter\n2′ Fachkraft spielt zwei Mias: gekränkt, dann gelassen\n4′ Kind trägt Gedanke, Gefühl, Handlung in die Tabelle ein\n6′ Gedanken-Check: sicher, nur angenommen, was noch sein könnte – „Ein Gedanke ist keine Tatsache.“\n8′ Chat-Szene: Kind denkt laut und prüft seinen Gedanken\nMuss: zwei Mias mit Tabelle, Gedanken-Check. Kann: Chat-Szene. Wird es knapp: Tabelle mündlich füllen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la scène : Mia fait signe, Jana passe\n2′ L’adulte joue deux Mia : vexée, puis détendue\n4′ L’enfant note pensée, émotion, action dans le tableau\n6′ Vérifier la pensée : sûr, supposé, possible – « Une pensée n’est pas un fait. »\n8′ Scène du chat : l’enfant pense à voix haute et vérifie\nIndispensable : les deux Mia avec le tableau, la vérification. Option : la scène du chat. Serré : remplir le tableau à l’oral."
+      }
     }
   },
   {
@@ -4205,6 +4229,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Noah: „Ist schon okay“, Schultern hängen\n2′ Kind sammelt Hinweise: Gesicht, Körper, Stimme, Situation\n4′ Kind vermutet zwei Gefühle, fragt nach – „Du wirkst auf mich … Stimmt das?“\n5′ Fachkraft antwortet einmal „Ja“, einmal „Nein, nur müde“\n7′ Tausch: Kind zeigt Gefühl, Fachkraft rät und fragt\n9′ Kind wählt seinen Satz, plant Antwort auf „Nein“ – „Okay. Ich bin da, wenn du magst.“\nMuss: Noah lesen, nachfragen ohne Behauptung. Kann: Rollentausch. Wird es knapp: Tausch kurz halten."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue Noah : « Ça va, c’est bon », épaules tombantes\n2′ L’enfant rassemble les indices : visage, corps, voix, situation\n4′ L’enfant imagine deux émotions, demande – « Tu as l’air… C’est bien ça ? »\n5′ L’adulte répond « Oui », puis « Non, juste fatigué »\n7′ On échange : l’enfant montre, l’adulte devine et demande\n9′ L’enfant choisit sa phrase et sa réponse à un « non »\nIndispensable : lire Noah, une question qui n’affirme rien. Option : échanger les rôles. Serré : échange bref."
+      }
     }
   },
   {
@@ -5402,6 +5434,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Ich-Satz am Beispiel Tom – „Wenn …, fühle ich mich …, und ich wünsche mir …“\n2′ Kind vergleicht Vorwurf und Ich-Satz\n3′ Kind plant Situation der Woche: wer, wann, wo, Satz\n6′ Fachkraft spielt die andere Person, erst freundlich\n8′ Fachkraft wehrt ab, Kind wiederholt ruhig seinen Satz\n9′ Ein Plus, höchstens ein Tipp; Kind legt Helfer fest\nMuss: Ich-Satz planen und einmal spielen. Kann: abwehrender Durchgang. Wird es knapp: ein freundlicher Durchgang."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la phrase en « je » avec Tom – « Quand…, je me sens…, et je voudrais… »\n2′ L’enfant compare reproche et phrase en « je »\n3′ L’enfant prépare sa situation : qui, quand, où, quelle phrase\n6′ L’adulte joue l’autre personne, d’abord aimable\n8′ L’adulte se défend, l’enfant répète calmement sa phrase\n9′ Un point positif, au plus un conseil ; l’enfant choisit qui l’aide\nIndispensable : préparer la phrase et la jouer une fois. Option : le tour sur la défensive. Serré : un seul tour, aimable."
+      }
     }
   },
   {
@@ -7236,6 +7276,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt die Kompass-Blätter nebeneinander\n1′ Kind nennt je Richtung ein gelungenes Beispiel\n3′ Fachkraft spielt Tom im Chat: „Ach, egal.“\n4′ Kind geht den Kompass durch: Wort, Körper, Gedanke, Sagen\n7′ Tausch: Kind spielt einen Fall, Fachkraft geht durch\n8′ Leicht, schwer, Helfer; Kind wählt Karte, unterschreibt Urkunde\nMuss: Tom-Fall durch alle vier Richtungen, Urkunde. Kann: Rollentausch. Wird es knapp: Blätter-Rückblick kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale les fiches de la boussole côte à côte\n1′ L’enfant donne un exemple réussi par direction\n3′ L’adulte joue Tom dans le chat : « Bof, laisse tomber. »\n4′ L’enfant parcourt la boussole : mot, corps, pensée, dire\n7′ On échange : l’enfant joue un cas, l’adulte parcourt\n8′ Facile, difficile, qui aide ; l’enfant choisit sa carte, signe le certificat\nIndispensable : le cas de Tom avec les quatre directions, le certificat. Option : échanger les rôles. Serré : retour sur les fiches en bref."
+      }
     }
   },
   {

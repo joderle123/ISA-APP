@@ -457,6 +457,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt das Schutzschild, heute Feld 1: Bauchgefühl\n1′ Fachkraft nennt kleine Situationen, z. B. Drängeln beim Anstehen\n2′ Kind zeigt mit dem Körper: Ja, Nein oder Hm?\n5′ Kind zeigt, wo es ein Nein spürt\n7′ Tausch: Kind erfindet Situation, Fachkraft zeigt Signal – „Stimmt das?“\n9′ Beide sagen den Merksatz: Bauchgefühl ist ein Signal – „Du darfst ihm glauben.“\nMuss: drei Situationen mit Körper-Signal, Merksatz. Kann: Rollentausch. Wird es knapp: zwei Situationen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le bouclier, aujourd’hui partie 1 : le signal du ventre\n1′ L’adulte nomme de petites situations, comme la file\n2′ L’enfant montre avec le corps : oui, non ou hum ?\n5′ L’enfant montre où il sent un non\n7′ On échange : l’enfant invente, l’adulte montre son signal – « C’est bien ça ? »\n9′ Ensemble, la phrase à retenir : j’ai le droit de croire mon ventre\nIndispensable : trois situations avec le signal du corps, la phrase à retenir. Option : échanger les rôles. Serré : deux situations."
+      }
     }
   },
   {
@@ -1666,6 +1674,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt Feld 2 vor: die unsichtbare Grenze\n1′ Kind legt Seil-Kreis um sich, sagt, was innen ihm gehört\n3′ Kind geht auf Fachkraft zu, stoppt, wo es passt\n5′ Fachkraft zeigt: Ihre Grenze liegt woanders\n7′ Fachkraft sagt „Stopp“, Kind tritt zurück, sagt „Okay“\n9′ Merksatz: Grenzen dürfen sich ändern; „Darf ich?“ fragen\nMuss: Seil-Kreis, Abstands-Spiel, Stopp mit „Okay“. Kann: Spielfigur statt Kind im Kreis. Wird es knapp: Merksatz kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente la partie 2 : la limite invisible\n1′ L’enfant pose une corde en cercle, dit ce qui est à lui\n3′ L’enfant avance vers l’adulte, s’arrête où c’est bien\n5′ L’adulte montre : sa limite à lui est ailleurs\n7′ L’adulte dit « Stop », l’enfant recule, dit « D’accord »\n9′ Phrase à retenir : une limite peut changer ; demander « Je peux ? »\nIndispensable : cercle de corde, jeu de la distance, stop avec « D’accord ». Option : figurine dans le cercle. Serré : phrase à retenir brève."
+      }
     }
   },
   {
@@ -2920,6 +2936,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Nein dreimal: leise, gemein, klar – „Welches kommt an?“\n2′ Kind sagt, welches ankommt, macht alle drei nach\n4′ Fachkraft will Radiergummi, Kind sagt klares Nein, drei Runden – „Stopp, das will ich nicht!“\n7′ Tausch: Fachkraft sagt Nein, Kind antwortet „Okay“\n9′ Merksatz: klares Nein, sonst Hilfe holen\nMuss: klares Nein mit Stimme, Haltung, Blick, Worten; jede Rolle beenden („Die Rolle ist aus“). Kann: Rollentausch. Wird es knapp: zwei statt drei Runden."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre trois non : tout bas, méchant, clair – « Lequel est bien entendu ? »\n2′ L’enfant dit lequel passe, imite les trois\n4′ L’adulte veut la gomme, l’enfant dit un non clair, trois tours – « Stop, je ne veux pas ça ! »\n7′ On échange : l’adulte dit non, l’enfant répond « D’accord »\n9′ Phrase à retenir : non clair, sinon chercher de l’aide\nIndispensable : non clair avec voix, corps, regard, mots ; finir chaque rôle (« Le rôle est fini »). Option : échanger les rôles. Serré : deux tours au lieu de trois."
+      }
     }
   },
   {
@@ -4574,6 +4598,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt drei Geheimnis-Geschichten: Lea und Mia, Noah, Amira\n1′ Kind sortiert: gut oder schlecht, Freude oder Bauchweh\n4′ Regel: Schlechte Geheimnisse darf ich immer erzählen\n6′ Fachkraft nennt zwei Tom-Sätze, Kind findet das Hilfe-Holen\n8′ Kind übt den Satz: „Ich muss dir etwas erzählen.“\nMuss: Geschichten sortieren, Geheimnis-Regel, Satz üben. Kann: Petzen oder Hilfe holen mit Tom. Wird es knapp: zwei Geschichten (Lea und Mia, Noah)."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte trois histoires : Léa et Mia, Noah, Amira\n1′ L’enfant trie : bon ou mauvais secret, joie ou mal au ventre\n4′ Règle : un mauvais secret, j’ai toujours le droit de le dire\n6′ L’adulte dit deux phrases de Tom, l’enfant trouve l’aide\n8′ L’enfant s’entraîne : « Je dois te raconter quelque chose. »\nIndispensable : trier les histoires, règle des secrets, la phrase. Option : cafter ou demander de l’aide avec Tom. Serré : deux histoires (Léa et Mia, Noah)."
+      }
     }
   },
   {
@@ -6244,6 +6276,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind wählt fünf Helfer, auch 116 111; Rolle reicht\n3′ Kind sagt den Hilfe-Satz in drei Teilen – „Ich brauche Hilfe.“\n5′ Kind plant Situation der Woche: wer, wann, wo, Satz\n6′ Fachkraft hört nicht zu, Kind geht zur nächsten Person\n9′ Kind sagt Satz laut, Fachkraft beendet Rolle, hört zu\nMuss: Hilfe-Hand, Hilfe-Satz, nächste Person fragen. Kann: echte statt erfundene Situation. Wird es knapp: Plan nur mündlich."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant choisit cinq personnes, aussi le 116 111 ; un rôle suffit\n3′ L’enfant dit la phrase d’aide en trois parties – « J’ai besoin d’aide. »\n5′ L’enfant prépare une situation de la semaine : qui, quand, où, phrase\n6′ L’adulte n’écoute pas, l’enfant va voir la personne suivante\n9′ L’enfant dit sa phrase ; l’adulte finit le rôle et écoute\nIndispensable : main d’aide, phrase d’aide, demander à la suivante. Option : situation vraie. Serré : plan à l’oral."
+      }
     }
   },
   {
@@ -8071,6 +8111,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind legt fünf Felder in Reihe, erklärt jedes kurz\n3′ Fachkraft spielt größeres Kind, das Noahs Ball fordert – „Und sag keinem was!“\n4′ Kind nutzt als Noah oder Berater alle Felder\n8′ Fachkraft beendet die Rolle; wenn Zeit, tauschen\n9′ Rückblick: leicht, noch üben, wer hilft\nMuss: Abschlussfall mit allen fünf Feldern, Rolle beenden. Durchfallen gibt es nicht. Kann: Rollentausch. Wird es knapp: Felder-Reihe in zwei Minuten."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant pose les cinq parties en rangée, explique chacune\n3′ L’adulte joue un plus grand qui veut le ballon de Noah – « Et ne le dis à personne ! »\n4′ L’enfant, en Noah ou conseiller, utilise toutes les parties\n8′ L’adulte finit le rôle ; s’il reste du temps, on échange\n9′ Bilan : facile, à entraîner, qui aide\nIndispensable : cas final avec les cinq parties, finir le rôle. Pas d’échec possible. Option : échanger les rôles. Serré : rangée en deux minutes."
+      }
     }
   },
   {

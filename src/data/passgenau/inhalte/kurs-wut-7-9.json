@@ -491,6 +491,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Vulkan und Ampel auf dem Blatt – „Wut darf sein, Hauen nicht.“\n2′ Spiel „Okay – nicht okay“: Fachkraft nennt Toms Taten, Kind zeigt Daumen\n4′ Fachkraft: Wut ist okay, hauen und kaputt machen nicht\n5′ Vulkan: Ärger unten, Warnzeichen Mitte, Ausbruch oben\n8′ Kind sammelt Wörter für Wut\nMuss: Daumen-Spiel, Vulkan. Kann: eigene Situation. Wird es knapp: Wörter aufs Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le volcan et le feu sur la fiche – « La colère, c’est OK – taper, non. »\n2′ Jeu « OK – pas OK » : l’adulte dit ce que fait Tom, l’enfant montre le pouce\n4′ L’adulte : la colère est OK, taper et casser non\n5′ Volcan : contrariété en bas, signes d’alerte au milieu, éruption en haut\n8′ L’enfant cherche des mots pour la colère\nIndispensable : jeu du pouce, volcan. Option : une situation à lui. Serré : les mots sur la fiche."
+      }
     }
   },
   {
@@ -2258,6 +2266,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt wachsenden Vulkan: Faust, Kiefer, Atem, Stimme\n1′ Kind hebt die Hand, sagt Stopp beim ersten Zeichen – „Je früher, desto leichter ist Stopp.“\n4′ Tausch: Kind spielt Vulkan in Zeitlupe, ohne Schlagen oder Stampfen\n7′ Kind zeigt am Körperumriss Toms erstes Zeichen\nMuss: Stopp beim ersten Zeichen, Körperumriss. Kann: eigene Stelle, wenn es mag. Wird es knapp: Tausch kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue un volcan qui monte : poings, mâchoire, souffle, voix\n1′ L’enfant lève la main et dit stop au premier signe – « Plus c’est tôt, plus c’est facile. »\n4′ On échange : l’enfant fait le volcan au ralenti, sans frapper ni taper des pieds\n7′ L’enfant montre sur le contour où Tom sent d’abord la colère\nIndispensable : stop au premier signe, contour du corps. Option : chez lui, s’il le veut. Serré : échange bref."
+      }
     }
   },
   {
@@ -3832,6 +3848,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Stopp-Hand und vier Abkühl-Ideen\n1′ Kind probiert jede Idee: Kerze, zählen, weggehen, Hände drücken – „Ist es noch so heiß oder kühler?“\n5′ Kind wählt seine zwei liebsten\n6′ Kind spielt Tom: Turm fällt, Zeichen, Hand hoch, abkühlen\n8′ Tausch: Kind erzählt, Fachkraft spielt Tom\nMuss: vier Ideen probieren, Toms Folge spielen. Kann: Rollentausch. Wird es knapp: zwei Ideen probieren."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la main stop et quatre idées pour se calmer\n1′ L’enfant essaie chaque idée : bougie, compter, s’éloigner, serrer les mains – « C’est encore aussi chaud ? »\n5′ L’enfant choisit ses deux préférées\n6′ L’enfant joue Tom : la tour tombe, signe, main levée, se calmer\n8′ On échange : l’enfant raconte, l’adulte joue Tom\nIndispensable : essayer les quatre idées, jouer la suite de Tom. Option : échanger les rôles. Serré : essayer deux idées."
+      }
     }
   },
   {
@@ -5041,6 +5065,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt den Fall: Noah nimmt Tom den Ball\n1′ Fachkraft spielt Tom, Kind findet drei Ideen\n3′ Kind prüft: Tut sie weh? Hilft sie mir? – „Und was passiert dann?“\n6′ Kind wählt mit Tom die beste Idee\n7′ Zweiter Fall: Kind spielt Mia, nennt zwei Ideen, wählt eine\nMuss: drei Ideen prüfen, beste wählen. Kann: zweiter Fall mit Mia. Wird es knapp: zwei Ideen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte le cas : Noah prend le ballon de Tom\n1′ L’adulte joue Tom, l’enfant trouve trois idées\n3′ L’enfant vérifie : fait-elle mal ? m’aide-t-elle ? – « Et ensuite, que se passe-t-il ? »\n6′ L’enfant choisit avec Tom la meilleure idée\n7′ Deuxième cas : l’enfant joue Mia, deux idées, en choisit une\nIndispensable : vérifier trois idées, choisir la meilleure. Option : le cas de Mia. Serré : deux idées."
+      }
     }
   },
   {
@@ -6300,6 +6332,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Grün mit Tom und Noah: tun, prüfen\n1′ Fachkraft nennt drei Wege, wenn es nicht klappt\n3′ Kind plant Situation der Woche: wer, wann, wo, Satz\n5′ Fachkraft spielt Gegenüber, Kind geht Rot, Gelb, Grün\n8′ Beide üben den Hilfe-Satz, Kind nennt Helfer – „Ich bin sehr wütend. Ich brauche Hilfe.“\nMuss: Plan und ein Durchgang, Hilfe-Satz. Kann: zweiter Durchgang etwas schwieriger, nie gemein. Wird es knapp: ein freundlicher Durchgang."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le vert avec Tom et Noah : faire, vérifier\n1′ L’adulte nomme trois chemins si ça ne marche pas\n3′ L’enfant prépare une situation de la semaine : qui, quand, où, phrase\n5′ L’adulte joue l’autre, l’enfant passe rouge, jaune, vert\n8′ Ensemble, la phrase d’aide ; l’enfant dit vers qui aller – « Je suis très en colère. J’ai besoin d’aide. »\nIndispensable : plan et un tour, phrase d’aide. Option : deuxième tour un peu plus difficile, jamais méchant. Serré : un tour aimable."
+      }
     }
   },
   {
@@ -8156,6 +8196,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Fall: Jemand drängelt sich vor Tom – „Durchfallen gibt es nicht.“\n1′ Kind führt Tom durch Frühwarnzeichen, Rot, Gelb, Grün\n4′ Tausch: Fachkraft geht die Ampel durch\n6′ Kind wählt Abkühl-Werkzeug und Satz für die Ampel-Karte\n8′ Kind nennt Helfer, bekommt die Ampel-Urkunde\nMuss: ganze Ampel mit Tom, Ampel-Karte. Kann: Rollentausch. Wird es knapp: Karte nur mündlich."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue le cas : quelqu’un passe devant Tom – « On ne peut pas échouer. »\n1′ L’enfant guide Tom : signes d’alerte, rouge, jaune, vert\n4′ On échange : l’adulte parcourt le feu\n6′ L’enfant choisit son outil pour se calmer et sa phrase pour la carte\n8′ L’enfant dit qui l’aide, reçoit le diplôme\nIndispensable : tout le feu avec Tom, la carte du feu. Option : échanger les rôles. Serré : carte à l’oral."
+      }
     }
   },
   {

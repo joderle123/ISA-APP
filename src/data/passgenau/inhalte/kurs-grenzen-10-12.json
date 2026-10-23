@@ -612,6 +612,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt drei Arten: Schnecke, Drache, klar\n1′ Fachkraft spielt Vordrängeln dreimal: Schnecke, Drache, klar – „Ich war zuerst da. Stell dich bitte hinten an.“\n4′ Kind nennt je: Haltung, Stimme oder Blick\n6′ Tausch: Kind spielt eine Art, Fachkraft rät mit Hinweisen\n8′ Kind spielt alle drei, Fachkraft drängelt\nMuss: drei Arten am Klar-Check erkennen. Kann: alle drei hintereinander. Wird es knapp: Tausch mit einer Art."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre trois façons : escargot, dragon, clair\n1′ L’adulte joue trois fois la cantine : escargot, dragon, clair – « J’étais là avant. Mets-toi derrière, s’il te plaît. »\n4′ L’enfant dit à quoi il l’a vu : posture, voix, regard\n6′ On échange : l’enfant joue une façon, l’adulte devine\n8′ L’enfant joue les trois, l’adulte passe devant\nIndispensable : reconnaître les trois façons avec le check clair. Option : les trois à la suite. Serré : échange avec une seule façon."
+      }
     }
   },
   {
@@ -1902,6 +1910,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft liest drei Situationen: Jana, Ben, Yusuf\n1′ Kind gibt je Grün, Gelb oder Rot – „Deine Ampel gehört nur dir.“\n4′ Beide sammeln Körper-Signale für Gelb und Rot\n6′ Kind baut Ich-Satz: „Ich mag nicht, wenn … Ich möchte, dass …“\n7′ Fachkraft geht zweimal zu weit, Kind bleibt klar\n9′ Kind nennt Gelungenes, Fachkraft ein Plus, höchstens ein Tipp\nMuss: Ampel, Ich-Satz im Rollenspiel. Kann: zweite Runde. Wird es knapp: Körper-Signal kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte lit trois situations : Jana, Ben, Yusuf\n1′ L’enfant donne vert, jaune ou rouge – « Ton feu n’appartient qu’à toi. »\n4′ Ensemble, signaux du corps pour jaune et rouge\n6′ L’enfant construit : « Je n’aime pas quand … Je voudrais que … »\n7′ L’adulte va deux fois trop loin, l’enfant reste clair\n9′ L’enfant dit ce qui a réussi, l’adulte un plus, au plus un conseil\nIndispensable : le feu, la phrase en « je » en jeu de rôle. Option : deuxième tour. Serré : signal du corps en bref."
+      }
     }
   },
   {
@@ -3760,6 +3776,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft bittet um Hausaufgabe, antwortet als Schnecke, Drache, klar\n2′ Kind sagt, bei welchem Nein der andere aufgibt\n3′ Beide bauen den Schallplatten-Satz: Verständnis, dann Nein – „Ich weiß, dass du Stress hast. Trotzdem: Nein.“\n5′ Fachkraft drängt in drei Runden: freundlich, quengelnd, drängend\n6′ Kind wiederholt seinen Satz ruhig, mindestens dreimal\n9′ Kind nennt Gelungenes, Fachkraft ein Plus, ein Tipp\nMuss: Satz bauen und wiederholen; bei „Stopp“ sofort aufhören. Kann: drängende dritte Runde. Wird es knapp: zwei Runden."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte demande les devoirs, répond en escargot, dragon, clair\n2′ L’enfant dit à quel non l’autre renonce\n3′ Ensemble, la phrase du disque rayé : comprendre, puis non – « Je sais que tu as du stress. Mais non. »\n5′ L’adulte insiste en trois tours : gentil, insistant, pressant\n6′ L’enfant répète sa phrase calmement, au moins trois fois\n9′ L’enfant dit ce qui a réussi, l’adulte un plus, un conseil\nIndispensable : construire et répéter la phrase ; à « Stop », arrêt immédiat. Option : le tour pressant. Serré : deux tours."
+      }
     }
   },
   {
@@ -5065,6 +5089,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft liest vier Druck-Sätze, Kind sagt, was jeder will – „Alle machen das.“\n2′ Beide sammeln Ausstiegssätze, Kind wählt einen – „Ich bin raus.“\n4′ Fachkraft spielt die Gruppe mit zwei Stimmen – „Schick das Foto von Ben in den Klassenchat!“\n5′ Kind steigt aus: Satz, aufrecht, Schritt weg\n9′ Kind nennt Gelungenes, Fachkraft ein Plus, ein Tipp\nMuss: Ausstiegssatz gegen die Gruppe; bei „Stopp“ sofort aufhören. Kann: Angebot an eine andere Person. Wird es knapp: zwei Druck-Sätze."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte lit quatre phrases de pression, l’enfant dit ce qu’elles veulent – « Tout le monde le fait. »\n2′ Ensemble, phrases de sortie ; l’enfant en choisit une – « Je passe. »\n4′ L’adulte joue le groupe à deux voix – « Envoie la photo de Ben dans le chat ! »\n5′ L’enfant sort : phrase, posture droite, pas de côté\n9′ L’enfant dit ce qui a réussi, l’adulte un plus, un conseil\nIndispensable : phrase de sortie face au groupe ; à « Stop », arrêt immédiat. Option : proposer à quelqu’un de venir. Serré : deux phrases de pression."
+      }
     }
   },
   {
@@ -6807,6 +6839,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind prüft am Fall Lina drei Mobbing-Merkmale\n2′ Beide gehen vier Zuschauer-Wege durch\n3′ Kind sagt, was Lina am meisten hilft – „Hilfe holen will jemanden schützen.“\n5′ Kind plant kleine oder erfundene Situation: wer, wann, wo\n7′ Fachkraft spielt die angesprochene Person, zwei Durchgänge\n9′ Kind nennt Gelungenes, Fachkraft ein Plus, ein Tipp\nMuss: Mobbing-Merkmale, Plan mit Rollenspiel; nichts erfragen. Kann: zweiter Durchgang. Wird es knapp: Zuschauer-Wege kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant vérifie trois critères du harcèlement sur le cas de Lina\n2′ Ensemble, quatre possibilités pour les témoins\n3′ L’enfant dit ce qui aiderait le plus Lina – « Chercher de l’aide, c’est vouloir protéger quelqu’un. »\n5′ L’enfant prépare une petite situation, même inventée : qui, quand, où\n7′ L’adulte joue la personne abordée, deux passages\n9′ L’enfant dit ce qui a réussi, l’adulte un plus, un conseil\nIndispensable : critères, plan avec jeu de rôle ; rien n’est demandé. Option : deuxième passage. Serré : témoins en bref."
+      }
     }
   },
   {
@@ -8637,6 +8677,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt die fünf Blätter nebeneinander\n1′ Kind nennt hilfreichstes und wackeliges Werkzeug, schätzt neu ein\n4′ Kind zeigt ein Werkzeug eine Minute im Rollenspiel\n7′ Kind plant: ein Werkzeug, eine Situation, ein Schritt, ein Helfer\n9′ Kind bekommt die Klar-Urkunde\nMuss: Rollenspiel-Minute, Klar-Plan. Kann: Skala neu einschätzen. Wird es knapp: Rückblick auf zwei Blätter."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose les cinq fiches côte à côte\n1′ L’enfant nomme l’outil le plus utile et le plus fragile, réévalue l’échelle\n4′ L’enfant montre un outil en une minute de jeu de rôle\n7′ L’enfant planifie : un outil, une situation, un pas, qui aide\n9′ L’enfant reçoit le diplôme clair\nIndispensable : la minute de jeu de rôle, le plan clair. Option : réévaluer l’échelle. Serré : bilan sur deux fiches."
+      }
     }
   },
   {

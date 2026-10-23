@@ -521,6 +521,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt das Emotions-Radar, heute Feld Signal – „Hier ist gerade etwas wichtig.“\n2′ Fachkraft liest die Szene: Lehrerin lobt Noors Referat\n3′ Jugendliche/r nennt ein Gefühlswort und was es meldet\n5′ Dieselbe Szene mit zweitem Gefühl, z. B. verlegen\n7′ Zwei weitere Szenen: verlorenes Spiel, Nachricht ohne Antwort\nMuss: Noor mit zwei Gefühlen. Kann: weitere Szenen; Eigenes nur, wenn es von selbst kommt. Wird es knapp: eine weitere Szene."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le radar, aujourd’hui le champ signal – « Ici, quelque chose compte en ce moment. »\n2′ L’adulte lit la scène : la prof félicite Noor\n3′ Le ou la jeune nomme une émotion et ce qu’elle signale\n5′ Même scène, deuxième émotion, par exemple la gêne\n7′ Deux autres scènes : match perdu, message sans réponse\nIndispensable : Noor avec deux émotions. Option : autres scènes ; vécu personnel seulement s’il vient du ou de la jeune. Serré : une seule autre scène."
+      }
     }
   },
   {
@@ -1725,6 +1733,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erklärt in zwei Sätzen: Der Körper meldet früh\n2′ Beide spüren eine halbe Minute nach, Augen offen\n3′ Fachkraft liest Szene: an der Startlinie\n4′ Jugendliche/r nennt Körperstelle und Zahl von 0 bis 10\n6′ Zweite Szene: nach einem Streit im Chat\n8′ Beide vergleichen die höhere Zahl: Körper, Stimme, Gedanken\nMuss: Körper-Check, zwei Szenen mit Zahl. Kann: Vergleich. Wird es knapp: Erklärung in einem Satz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte explique en deux phrases : le corps prévient tôt\n2′ Les deux écoutent le corps une demi-minute, yeux ouverts\n3′ L’adulte lit la scène : la ligne de départ\n4′ Le ou la jeune dit où il ou elle le sent, chiffre de 0 à 10\n6′ Deuxième scène : après une dispute dans le groupe\n8′ On compare le chiffre le plus haut : corps, voix, pensées\nIndispensable : écoute du corps, deux scènes avec chiffre. Option : la comparaison. Serré : explication en une phrase."
+      }
     }
   },
   {
@@ -2967,6 +2983,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt ABC: Auslöser, Bewertung, Folge\n2′ Beispiel Elias: keine Antwort, zwei Bewertungen, zwei Folgen – „Sein Akku ist leer.“\n5′ Kamera-Spiel: Fachkraft nennt fünf Aussagen zum Referat\n6′ Jugendliche/r sagt je „Kamera“ oder „Gedanke“\n9′ Fachkraft prüft eine Deutung laut mit drei Fragen – „Prüfen heißt nicht wegreden.“\nMuss: Elias, Kamera-Spiel. Kann: eigene Situation, nur wenn gewünscht. Wird es knapp: drei statt fünf Aussagen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente l’ABC : déclencheur, interprétation, conséquence\n2′ Exemple d’Elias : pas de réponse, deux interprétations, deux suites – « Sa batterie est vide. »\n5′ Jeu de la caméra : l’adulte énonce cinq phrases sur l’exposé\n6′ Le ou la jeune répond « caméra » ou « pensée »\n9′ L’adulte vérifie une interprétation avec trois questions\nIndispensable : Elias, jeu de la caméra. Option : situation personnelle, seulement si souhaitée. Serré : trois phrases au lieu de cinq."
+      }
     }
   },
   {
@@ -4086,6 +4110,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt: Noa bekommt Hauptrolle, beste Freundin kleine Rolle\n2′ Jugendliche/r verteilt zehn Punkte auf Noas Gefühle – „Man kann zwei Gefühle gleichzeitig haben.“\n5′ Fachkraft spielt Luca: sehr laut oder ganz still\n6′ Jugendliche/r nennt drei Möglichkeiten, was darunterliegt\n8′ Jugendliche/r fragt Luca einladend statt anklagend\n10′ Luca antwortet ehrlich, aber knapp\nMuss: zehn Punkte für Noa, Rollenspiel Luca. Kann: Luca laut und still. Wird es knapp: Punkte mündlich verteilen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte : Noa a le rôle principal, son amie un petit rôle\n2′ Le ou la jeune répartit dix points entre les émotions de Noa\n5′ L’adulte joue Luca : blagues bruyantes ou tout silencieux\n6′ Le ou la jeune nomme trois pistes sur ce qui se cache dessous\n8′ Le ou la jeune pose à Luca une question qui invite\n10′ Luca répond franchement, en peu de mots\nIndispensable : dix points pour Noa, jeu de rôle avec Luca. Option : Luca bruyant et silencieux. Serré : points à l’oral."
+      }
     }
   },
   {
@@ -5244,6 +5276,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Jugendliche/r wählt eine Situation dieser Woche, auch erfunden\n2′ Gemeinsam durchs Radar: Gefühl, Stärke, Bewertung\n4′ Satz in drei Teilen bauen und laut sprechen – „Direkt heißt nicht hart.“\n6′ Ort, Zeitpunkt, persönlich oder Chat festlegen\n8′ Fachkraft spielt Gegenüber ruhig; Stopp jederzeit möglich\n11′ Fachkraft nennt Gelungenes, Jugendliche/r sagt Änderung\nMuss: Satz in drei Teilen, ein Durchgang. Kann: Weg und Ort genau planen. Wird es knapp: Radar kurz."
+      },
+      "fr": {
+        "aufbau": "0′ Le ou la jeune choisit une situation de la semaine, inventée possible\n2′ Ensemble, parcourir le radar : émotion, intensité, interprétation\n4′ Construire la phrase en trois parties, la dire – « Être direct ne veut pas dire être dur. »\n6′ Choisir lieu, moment, en personne ou par message\n8′ L’adulte joue l’autre calmement ; stop possible à tout moment\n11′ L’adulte dit ce qui a réussi, le ou la jeune ce qu’il changerait\nIndispensable : phrase en trois parties, un tour. Option : lieu et moyen en détail. Serré : radar en bref."
+      }
     }
   },
   {
@@ -6859,6 +6899,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide legen die Blätter der fünf Stunden nebeneinander\n2′ Jugendliche/r zeigt hilfreichstes und schwächstes Blatt, sagt woran\n5′ Fachkraft ergänzt ein Beispiel, etwa Elias aus Stunde 3\n7′ Fachkraft erklärt in zwei Sätzen: früh ansetzen hilft\n9′ Jugendliche/r nennt Hilfen: Freunde, Vertrauensperson, Beratungsstellen\nMuss: Blätter-Rückblick, Hilfen nennen. Kann: Erklärung nach Gross. Wird es knapp: Erklärung in einem Satz."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux posent les fiches des cinq séances côte à côte\n2′ Le ou la jeune montre la fiche la plus utile et la moins utile\n5′ L’adulte ajoute un exemple, comme Elias à la 3e séance\n7′ L’adulte explique en deux phrases : agir tôt aide\n9′ Le ou la jeune nomme des aides : amis, adulte de confiance, lignes d’écoute\nIndispensable : retour sur les fiches, les aides. Option : le modèle de Gross. Serré : explication en une phrase."
+      }
     }
   },
   {

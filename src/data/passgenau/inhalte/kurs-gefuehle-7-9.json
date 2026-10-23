@@ -461,6 +461,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Eule Oli und ihre Lupe mit drei Spuren\n2′ Fachkraft macht ohne Worte ein frohes Gesicht\n3′ Kind beschreibt Augen, Mund, Augenbrauen, dann das Gefühl – „Oli rät nie sofort.“\n5′ Dasselbe mit „wütend“ und „überrascht“\n7′ Tausch: Kind macht Gesicht, Fachkraft beschreibt und rät\nMuss: erst Hinweise, dann Gefühl. Kann: Rollentausch. Wird es knapp: nur froh und wütend."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente Oli la chouette et sa loupe à trois pistes\n2′ L’adulte fait un visage content sans parler\n3′ L’enfant décrit yeux, bouche, sourcils, puis l’émotion – « Oli ne devine jamais tout de suite. »\n5′ Même chose avec « en colère » et « surpris »\n7′ On échange : l’enfant fait un visage, l’adulte décrit et devine\nIndispensable : d’abord les indices, ensuite l’émotion. Option : échanger les rôles. Serré : seulement content et en colère."
+      }
     }
   },
   {
@@ -1557,6 +1565,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft fragt nach dem Detektiv-Auftrag, „nichts“ zählt auch\n1′ Fachkraft verdeckt Gesicht mit Blatt, zeigt Gefühl mit Körper\n2′ Kind beschreibt Schultern, Hände, Beine, Tempo und vermutet – „Stimmt das?“\n5′ Nach drei Gefühlen tauschen: Fachkraft beschreibt und rät\n7′ Kind zeigt, wo Noah vor dem Vorlesen etwas spürt\n9′ Fachkraft: Herzklopfen gibt es bei Angst und Freude\nMuss: Körper-Spur mit drei Gefühlen, Noah. Kann: Rollentausch. Wird es knapp: Auftrag nur kurz abfragen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte demande la mission de détective ; « rien » compte aussi\n1′ L’adulte, visage caché, montre une émotion avec le corps\n2′ L’enfant décrit épaules, mains, jambes, rythme et devine – « C’est bien ça ? »\n5′ Après trois émotions, on échange : l’adulte décrit et devine\n7′ L’enfant montre où Noah le sent avant de lire\n9′ L’adulte : le cœur bat vite de peur comme de joie\nIndispensable : la piste du corps avec trois émotions, Noah. Option : échanger les rôles. Serré : mission en une phrase."
+      }
     }
   },
   {
@@ -2686,6 +2702,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft fragt nach dem Detektiv-Auftrag\n1′ Fachkraft erzählt einen Fall in zwei Sätzen – „Tom hat sein Eis fallen lassen.“\n2′ Kind nennt Gefühl, zeigt Gesicht und Körper dazu\n5′ Spiel fällt aus: Tom enttäuscht, Mia froh\n7′ Fachkraft: Ereignis ist ein Hinweis, Detektive fragen nach\n8′ Kind erfindet einen Fall, Fachkraft sucht drei Spuren\nMuss: drei Fälle, Fall Tom und Mia. Kann: eigener Fall. Wird es knapp: zwei Fälle vor Tom und Mia."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte demande la mission de détective\n1′ L’adulte raconte un cas en deux phrases – « Tom a laissé tomber sa glace. »\n2′ L’enfant nomme une émotion, montre visage et corps\n5′ Match annulé : Tom déçu, Mia contente\n7′ L’adulte : l’événement est un indice, les détectives demandent\n8′ L’enfant invente un cas, l’adulte cherche les trois pistes\nIndispensable : trois cas, le cas Tom et Mia. Option : le cas inventé. Serré : deux cas avant Tom et Mia."
+      }
     }
   },
   {
@@ -3868,6 +3892,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft fragt nach dem gefundenen Fall\n1′ Kind zeigt mit der Hand: genervt, sauer, wütend, stinksauer\n3′ Beide ordnen die Wörter auf dem Blatt\n5′ Dasselbe mit zufrieden, froh, begeistert, überglücklich\n7′ Fachkraft liest Fälle, Kind wählt Wort und Stärke – „Mia verliert ein Spiel.“\nMuss: beide Wortfamilien ordnen, ein Fall. Kann: weitere Fälle. Wird es knapp: zweite Wortfamilie nur mündlich."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte demande quel cas l’enfant a trouvé\n1′ L’enfant montre avec la main : agacé, fâché, en colère, furieux\n3′ Ensemble, ils rangent les mots sur la fiche\n5′ Même chose : satisfait, content, ravi, comblé\n7′ L’adulte lit des cas, l’enfant choisit mot et intensité – « Mia perd un jeu. »\nIndispensable : ranger les deux séries, un cas. Option : d’autres cas. Serré : deuxième série à l’oral."
+      }
     }
   },
   {
@@ -4960,6 +4992,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft fragt nach dem genauen Wort der Woche\n1′ Fachkraft spielt Sami mit verschränkten Armen, Kind fragt nach – „Bist du sauer? Stimmt das?“\n3′ Sami antwortet einmal „Ja“, einmal „Nein, nur müde“\n4′ Tausch: Kind zeigt Gefühl, antwortet „Ja“, „Nein“ oder „Weiß nicht“\n6′ Kind sagt „Ich bin …, weil …“, erst für eine Blatt-Figur\n8′ Kind plant Situation der Woche, spricht Satz laut\nMuss: Nachfragen mit Sami, Ich-Satz. Kann: eigenes Gefühl, auch erfunden. Wird es knapp: Plan nur mündlich."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte demande le mot juste de la semaine\n1′ L’adulte joue Sami, bras croisés ; l’enfant demande – « Tu es fâché ? C’est bien ça ? »\n3′ Sami répond « Oui », puis « Non, juste fatigué »\n4′ On échange : l’enfant montre, répond oui, non ou je ne sais pas\n6′ L’enfant dit « Je suis…, parce que… », d’abord pour un personnage\n8′ L’enfant prépare sa situation de la semaine, dit sa phrase\nIndispensable : demander avec Sami, phrase en « je ». Option : sa propre émotion, inventée permise. Serré : plan à l’oral."
+      }
     }
   },
   {
@@ -6717,6 +6757,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft fragt nach dem Satz: ausprobiert, geübt, noch nicht?\n1′ Fachkraft spielt Abschlussfall: enttäuscht, Ball über den Zaun – „Durchfallen gibt es nicht.“\n3′ Kind sammelt Spuren, nennt Wort und Stärke, fragt nach\n5′ Tausch: Kind spielt einen Fall, Fachkraft sucht Spuren\n7′ Rückblick mit dem Detektiv-Heft: leicht, noch üben, wichtig\n9′ Kind nennt, wer bei unklaren Gefühlen hilft\nMuss: Abschlussfall mit Nachfragen, Helfer nennen. Kann: Rollentausch. Wird es knapp: Rückblick mit einer Frage."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte demande des nouvelles de la phrase : essayée, répétée, pas encore ?\n1′ L’adulte joue le cas final : déçu, ballon par-dessus la clôture – « On ne peut pas échouer. »\n3′ L’enfant rassemble les pistes, nomme mot et intensité, demande\n5′ On échange : l’enfant joue un cas, l’adulte cherche\n7′ Bilan avec le carnet : facile, à travailler, le plus important\n9′ L’enfant dit qui peut l’aider\nIndispensable : cas final avec la question, qui peut aider. Option : échanger les rôles. Serré : bilan en une question."
+      }
     }
   },
   {

@@ -459,6 +459,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt den leeren Mut-Rucksack, heute: Rauchmelder\n1′ Fachkraft erklärt: Rauchmelder piept bei Feuer und bei Toast – „Angst ist wie ein Rauchmelder im Körper.“\n3′ Fachkraft liest Situationen; Kind: Arme hoch oder Hände wedeln\n6′ Tausch: Kind erfindet Situation, Fachkraft ordnet ein\n8′ Fachkraft: Auch Toast-Alarm piept laut – „Danke, Rauchmelder, ich schaue nach.“\nMuss: vier Situationen sortieren, Dank-Satz. Kann: Rollentausch. Wird es knapp: drei Situationen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le sac à dos vide, aujourd’hui : le détecteur\n1′ L’adulte explique : il sonne pour le feu et pour le toast – « La peur, c’est comme un détecteur de fumée. »\n3′ L’adulte lit des situations ; l’enfant : bras en l’air ou mains qui se balancent\n6′ On échange : l’enfant invente, l’adulte classe\n8′ L’adulte : même la fausse alarme sonne fort – « Merci, détecteur, je vais regarder. »\nIndispensable : classer quatre situations, la phrase de merci. Option : échanger les rôles. Serré : trois situations."
+      }
     }
   },
   {
@@ -1522,6 +1530,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt: Noah soll gleich vorlesen\n1′ Kind zeigt an sich, wo Noahs Alarm sitzt\n3′ Beide üben stehend den Atem-Ballon, drei bis fünf Züge – „Durch die Nase ein – der Bauch wird rund.“\n6′ Fachkraft piept, Kind atmet allein den Ballon\n7′ Fachkraft fragt: Was hat sich im Körper verändert?\n8′ Tausch: Kind piept, Fachkraft atmet\nMuss: Noahs Alarm zeigen, Atem-Ballon. Kann: Rollentausch. Wird es knapp: drei Atemzüge."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte : Noah doit bientôt lire devant la classe\n1′ L’enfant montre sur lui où Noah sent l’alarme\n3′ Debout, les deux font le ballon de respiration, trois à cinq fois – « Inspire par le nez – le ventre devient rond. »\n6′ L’adulte fait « bip ! », l’enfant respire seul\n7′ L’adulte demande : qu’est-ce qui a changé dans le corps ?\n8′ On échange : l’enfant fait bip, l’adulte respire\nIndispensable : alarme de Noah, ballon de respiration. Option : échanger les rôles. Serré : trois respirations."
+      }
     }
   },
   {
@@ -2598,6 +2614,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt an Noah die Alarm-Stimme im Kopf\n1′ Fachkraft spricht Alarm-Stimme, Kind antwortet als Mut-Stimme – „Ich kann das nicht!“\n3′ Fachkraft nennt vier kurze, wahre Mut-Sätze\n5′ Kind wählt einen oder erfindet einen eigenen\n6′ Kind übt: Atem-Ballon ein, aus, Satz\n8′ Tausch: Fachkraft ist Noah, Kind Mut-Stimme\nMuss: Mut-Satz wählen und mit Atem-Ballon sagen. Kann: Rollentausch. Wird es knapp: zwei Beispiel-Sätze."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre avec Noah la voix d’alarme dans la tête\n1′ L’adulte fait la voix d’alarme, l’enfant la voix du courage – « Je n’y arriverai pas ! »\n3′ L’adulte donne quatre phrases de courage courtes et vraies\n5′ L’enfant en choisit une ou invente la sienne\n6′ L’enfant essaie : inspirer, expirer, phrase\n8′ On échange : l’adulte est Noah, l’enfant sa voix du courage\nIndispensable : choisir la phrase et la dire avec le ballon. Option : échanger les rôles. Serré : deux phrases d’exemple."
+      }
     }
   },
   {
@@ -4191,6 +4215,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt von Tom am Beckenrand – „Wegbleiben macht die Angst größer.“\n1′ Fachkraft legt fünf Stufen-Zettel 1 bis 5 aus\n2′ Kind steigt Toms Stufen: Atem-Ballon, Mut-Satz, Schritt\n6′ Kind baut freiwillig eigene Treppe auf dem Blatt\n8′ Kind probiert die erste Stufe kurz im Raum\nMuss: Toms Treppe mit Atem-Ballon und Mut-Satz; je Stufe, was Tom spürt. Kann: eigene Treppe, nicht das Schwerste, sonst Amiras. Wird es knapp: eigene Treppe nur mit erster Stufe."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte Tom au bord de la piscine – « Rester à l’écart rend la peur plus grande. »\n1′ L’adulte pose cinq feuilles numérotées de 1 à 5\n2′ L’enfant monte les marches de Tom : ballon, phrase, pas\n6′ S’il veut, l’enfant construit son escalier sur la fiche\n8′ L’enfant essaie sa première marche dans la pièce\nIndispensable : l’escalier de Tom avec ballon et phrase ; à chaque marche, ce que Tom ressent. Option : son escalier, pas le plus dur, sinon celui d’Amira. Serré : seulement la première marche."
+      }
     }
   },
   {
@@ -5777,6 +5809,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft ruft im Spiel „Plan-Wechsel!“, ändert eine Regel\n1′ Kind sagt: Piep, Atem-Ballon, Mut-Satz, Plan B\n2′ Kind wählt freiwillig eine Situation der Woche, sonst Mia\n4′ Beide planen am Blatt: wer, wann, wo, Satz, Plan B\n7′ Rollenspiel: Fachkraft ruft „Plan-Wechsel!“, Kind nimmt Plan B\n9′ Fachkraft fragt: Wie war das? Was hat geholfen?\nMuss: Plan mit Plan B, Rollenspiel mit Plan-Wechsel. Kann: eigene statt Mias Situation. Wird es knapp: Fachkraft schreibt mit."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte crie « Changement de plan ! » et change une règle\n1′ L’enfant dit : bip, ballon, phrase, plan B\n2′ L’enfant choisit, s’il veut, une situation de la semaine ; sinon Mia\n4′ Ensemble sur la fiche : qui, quand, où, phrase, plan B\n7′ Jeu de rôle : « Changement de plan ! », l’enfant prend son plan B\n9′ L’adulte demande : c’était comment ? Qu’est-ce qui a aidé ?\nIndispensable : plan avec plan B, jeu de rôle avec changement. Option : sa situation au lieu de Mia. Serré : l’adulte écrit."
+      }
     }
   },
   {
@@ -7477,6 +7517,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft packt mit dem Kind den Rucksack aus\n1′ Kind zeigt jede Mut-Sache mit Geste: Piep, Bauch, Herz, Schritt, Karte\n4′ Kind wählt Lieblingssache, erzählt freiwillig\n6′ Kind macht eigene Mut-Karte: Mut-Satz, erste Stufe, Plan B\n8′ Fachkraft nennt Helfer, auch sich selbst – „Es ist stark, Hilfe zu holen.“\nMuss: Rucksack mit Gesten auspacken, Mut-Karte. Kann: Lieblingssache erzählen. Wird es knapp: Schreiben in die Hand danach."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte déballe le sac à dos avec l’enfant\n1′ L’enfant montre chaque objet par un geste : bip, ventre, cœur, pas, carte\n4′ L’enfant choisit son objet préféré, raconte s’il veut\n6′ L’enfant fait sa carte du courage : phrase, première marche, plan B\n8′ L’adulte nomme des aides, lui-même aussi – « Demander de l’aide, c’est courageux. »\nIndispensable : déballer avec les gestes, la carte du courage. Option : raconter son objet préféré. Serré : écrire sur la main plus tard."
+      }
     }
   },
   {

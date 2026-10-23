@@ -441,6 +441,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt die Mut-Leiter, heute Sprosse 1\n1′ Fachkraft erklärt Alarmanlage: schützt, schlägt manchmal Fehlalarm\n3′ Fachkraft piept und liest drei Situationen vor\n4′ Kind als Techniker: echt, Fehlalarm oder beides – „Und woran merkst du das?“\n8′ Fachkraft: unangenehm, nicht gefährlich, wird von allein leiser\nMuss: drei Situationen als Techniker. Kann: Herz-Frage „Wozu ist das gut?“. Wird es knapp: Körperumriss danach am Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente l’échelle du courage, aujourd’hui échelon 1\n1′ L’adulte explique l’alarme : elle protège, parfois pour rien\n3′ L’adulte fait « bip ! » et lit trois situations\n4′ L’enfant technicien : vraie alerte, fausse alerte ou les deux – « Et à quoi tu le vois ? »\n8′ L’adulte : désagréable, pas dangereux, ça se calme seul\nIndispensable : trois situations en technicien. Option : la question du cœur qui bat. Serré : contour du corps ensuite sur la fiche."
+      }
     }
   },
   {
@@ -2076,6 +2084,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt an Jana: Ein Gedanke ist keine Tatsache\n2′ Fachkraft nennt drei Prüf-Fragen: dafür und dagegen, wahrscheinlich, Freund\n4′ Fachkraft spielt Sorgen-Stimme, Kind prüft mit Fragen – „Alle lassen dich links liegen.“\n6′ Tausch: Kind ist Sorgen-Stimme, Fachkraft prüft\n8′ Kind formuliert ehrlichen Prüf-Gedanken, nicht schöngeredet\nMuss: drei Fragen im Rollenspiel, Prüf-Gedanke. Kann: Rollentausch. Wird es knapp: zwei Fragen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre avec Jana : une pensée n’est pas un fait\n2′ L’adulte donne trois questions : pour et contre, probabilité, ami\n4′ L’adulte joue la voix inquiète, l’enfant vérifie – « Tout le monde te laisse tomber. »\n6′ On échange : l’enfant est la voix, l’adulte vérifie\n8′ L’enfant formule une pensée vérifiée honnête, pas enjolivée\nIndispensable : trois questions en jeu de rôle, pensée vérifiée. Option : échanger les rôles. Serré : deux questions."
+      }
     }
   },
   {
@@ -3646,6 +3662,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erklärt kurz: langes Ausatmen heißt Entwarnung\n1′ Kind nennt Alarm-Stärke von 0 bis 10\n2′ Kind fährt Quadrat mit dem Finger nach, Fachkraft zählt – „Vier ein, vier halten, vier aus, vier halten.“\n6′ Kind nennt Alarm-Stärke danach\n7′ Fachkraft spielt „Gleich bist du dran“, Kind nutzt Quadrat\nMuss: drei Runden Quadrat, vorher und nachher 0–10. Kann: Einsatz mitten in der Situation. Wird es knapp: fünf Sinne danach am Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte explique : expirer longuement dit « fin d’alerte »\n1′ L’enfant dit la force de son alarme, de 0 à 10\n2′ L’enfant suit le carré du doigt, l’adulte compte – « Quatre pour inspirer, quatre pour retenir… »\n6′ L’enfant redit la force de l’alarme\n7′ L’adulte joue « C’est bientôt à toi », l’enfant utilise le carré\nIndispensable : trois tours de carré, avant et après de 0 à 10. Option : le carré en situation. Serré : les cinq sens ensuite sur la fiche."
+      }
     }
   },
   {
@@ -4682,6 +4706,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt an Jana: Basketball-Ziel in vier Stufen\n2′ Fachkraft: erste Stufe fast sicher machbar\n3′ Kind schätzt Janas Alarm für zwei Stufen, 0 bis 10 – „Ist sie über 6, machen wir sie kleiner.“\n5′ Fachkraft spielt Kind vom Platz, Kind spricht als Jana – „Darf ich mal mitspielen?“\n7′ Kind nutzt ein Werkzeug von Sprosse 2 oder 3\nMuss: Janas Stufen mit Alarm-Zahl, Rollenspiel. Kann: Werkzeug im Rollenspiel. Wird es knapp: eigene Leiter danach am Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre avec Jana : le basket en quatre étapes\n2′ L’adulte : la première étape marche presque à coup sûr\n3′ L’enfant estime l’alarme de Jana pour deux étapes, de 0 à 10 – « Si c’est plus de 6, on la rend plus petite. »\n5′ L’adulte joue un enfant du terrain, l’enfant parle pour Jana – « Je peux jouer ? »\n7′ L’enfant utilise un outil de l’échelon 2 ou 3\nIndispensable : étapes de Jana avec chiffre, jeu de rôle. Option : outil pendant le jeu. Serré : sa propre échelle ensuite sur la fiche."
+      }
     }
   },
   {
@@ -6271,6 +6303,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt an Ben: Was bleibt gleich, was ist neu?\n2′ Kind wählt eine Situation der Woche, auch erfunden\n3′ Beide planen mündlich: wer, wann, wo, Satz, Plan B\n6′ Fachkraft spielt Gegenüber, Kind sagt Satz mit Werkzeug\n8′ Beide spielen einen zweiten Versuch\nMuss: Plan mit Plan B, ein Durchgang. Kann: zweiter Versuch. Wird es knapp: Plan danach am Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre avec Ben : qu’est-ce qui reste, qu’est-ce qui est nouveau ?\n2′ L’enfant choisit une situation de la semaine, inventée possible\n3′ Ensemble à l’oral : qui, quand, où, phrase, plan B\n6′ L’adulte joue l’autre, l’enfant dit sa phrase avec un outil\n8′ Ils jouent un deuxième essai\nIndispensable : plan avec plan B, un passage. Option : deuxième essai. Serré : plan noté ensuite sur la fiche."
+      }
     }
   },
   {
@@ -7876,6 +7916,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt fünf Blätter aus, Kind schaut sie durch\n1′ Kind nennt hilfreichste und wackelige Sprosse\n3′ Kind erklärt in einer Minute die Alarmanlage – „Ich tue so, als wüsste ich nichts.“\n5′ Beide spielen „Gleich bist du dran“, Kind zeigt Werkzeug\n8′ Fachkraft nennt, was sie wirklich gesehen hat\nMuss: Erklär-Minute, Werkzeug zeigen, konkreter Beleg; kein Test. Kann: Plan, Urkunde und Karte danach am Blatt. Wird es knapp: Rückblick kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose les cinq fiches, l’enfant les passe en revue\n1′ L’enfant nomme l’échelon le plus utile et le plus fragile\n3′ L’enfant explique l’alarme en une minute – « Je fais comme si je ne savais rien. »\n5′ Ils jouent « C’est bientôt à toi », l’enfant montre un outil\n8′ L’adulte dit ce qu’elle a vraiment observé\nIndispensable : minute d’explication, outil, un fait précis ; ce n’est pas un test. Option : plan, diplôme et carte ensuite sur la fiche. Serré : bilan bref."
+      }
     }
   },
   {

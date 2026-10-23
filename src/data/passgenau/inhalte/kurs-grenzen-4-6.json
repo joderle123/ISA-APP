@@ -440,7 +440,15 @@
       "schreiben": 0,
       "bild": 3
     },
-    "vorbereitung": "Zwei Zettel bemalen: einen weiten Bauch (großer Kreis, Arme offen) und einen engen Bauch (kleiner Kreis, Arme verschränkt)."
+    "vorbereitung": "Zwei Zettel bemalen: einen weiten Bauch (großer Kreis, Arme offen) und einen engen Bauch (kleiner Kreis, Arme verschränkt).",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt Pinguin Pia vor, als Handpuppe oder Blatt-Bild – „Ihr Bauch sagt ihr etwas: Ja oder Nein.“\n1′ Fachkraft zeigt Ja-Bauch weit, Nein-Bauch eng\n2′ Fachkraft legt Ja-Zettel und Nein-Zettel auf den Boden\n3′ Fachkraft erzählt Pia-Szenen, Kind watschelt zum passenden Zettel – „Tom nimmt Pia den Ball weg.“\n6′ Kind erfindet eine Szene, Fachkraft watschelt\nMuss: vier Pia-Szenen mit Zetteln. Kann: eigene Szene vom Kind. Wird es knapp: zwei Szenen, ein Ja und ein Nein."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente Pia la pingouine, marionnette ou image – « Son ventre lui dit : oui ou non. »\n1′ L’adulte montre le ventre ouvert (oui) et serré (non)\n2′ L’adulte pose par terre la feuille OUI et la feuille NON\n3′ Scènes de Pia : l’enfant se dandine vers la bonne feuille – « Tom prend le ballon de Pia. »\n6′ L’enfant invente une scène, l’adulte se dandine\nIndispensable : quatre scènes avec les feuilles. Option : la scène de l’enfant. Serré : deux scènes, un oui et un non."
+      }
+    }
   },
   {
     "id": "ki:kurs-grenzen-4-6-s1-t1",
@@ -996,6 +1004,14 @@
       "lesen": 0,
       "schreiben": 0,
       "bild": 3
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Pia fragt nach dem Ball, Kind sagt Ja oder Nein\n1′ Pia sagt immer „Okay!“; bei Nein bleibt der Ball\n3′ Kind wählt Pias Begrüßung; „drücken“ nur mit der Puppe\n5′ Kind legt Hand auf Bauch, Füße, Arme – „Das gehört mir.“\n6′ Tausch: Kind fragt zweimal „Darf ich?“, sagt „Okay!“\nMuss: Ball-Frage mit „Okay!“, Begrüßung wählen. Die Fachkraft umarmt nie. Kann: Rollentausch. Wird es knapp: Tausch mit nur einer Frage."
+      },
+      "fr": {
+        "aufbau": "0′ Pia demande le ballon, l’enfant répond oui ou non\n1′ Pia dit toujours « D’accord ! » ; après un non, le ballon reste\n3′ L’enfant choisit le salut ; « câlin » seulement avec la marionnette\n5′ L’enfant touche ventre, pieds, bras – « C’est à moi. »\n6′ On échange : l’enfant demande deux fois « Je peux ? », dit « D’accord ! »\nIndispensable : le ballon avec « D’accord ! », choisir le salut. L’adulte ne prend jamais l’enfant dans ses bras. Option : échanger les rôles. Serré : échange avec une seule question."
+      }
     }
   },
   {
@@ -1553,6 +1569,14 @@
       "lesen": 0,
       "schreiben": 0,
       "bild": 3
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Stopp mit Stimme, Hand und Blick\n1′ Beide stehen fest wie Pinguine, Füße auseinander\n2′ Fachkraft spielt Tom, will den Ball, Kind sagt Stopp – „Stopp! Das mag ich nicht!“\n4′ Tom steht näher, eine Armlänge, ohne Berührung\n6′ Fachkraft als Pia stoppt zu leise, Kind hilft\nMuss: Stopp mit Stimme, Hand, Blick gegen Tom; Tom hört sofort auf. Kann: zu leises Stopp verbessern. Wird es knapp: nur eine Tom-Runde."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le stop : voix, main, regard\n1′ Tous deux se tiennent droits comme des pingouins\n2′ L’adulte joue Tom qui veut le ballon, l’enfant dit stop – « Stop ! Je n’aime pas ça ! »\n4′ Tom plus près, à une longueur de bras, sans toucher\n6′ L’adulte joue Pia au stop trop faible, l’enfant aide\nIndispensable : stop avec voix, main, regard face à Tom ; Tom s’arrête tout de suite. Option : améliorer le stop trop faible. Serré : un seul tour avec Tom."
+      }
     }
   },
   {
@@ -2065,6 +2089,14 @@
       "lesen": 0,
       "schreiben": 0,
       "bild": 3
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt vier Schritte: aufhören, Hände weg, zurück, „Okay“\n2′ Kind kitzelt die Puppe, sie lacht, dann „Stopp!“\n3′ Kind macht die vier Schritte\n4′ Als Tom greift Kind nach dem Ball, Pia: „Stopp!“\n6′ Kind sagt Stopp, Fachkraft hört auf – „Das gilt für alle, auch für mich.“\nMuss: vier Schritte in beiden Szenen, jedes Mal danken. Kann: Kind sagt selbst Stopp. Wird es knapp: Schluss-Stopp nur kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre quatre étapes : arrêter, pas touche, reculer, « d’accord »\n2′ L’enfant chatouille la marionnette, qui rit puis dit « Stop ! »\n3′ L’enfant fait les quatre étapes\n4′ L’enfant joue Tom et prend le ballon, Pia dit « Stop ! »\n6′ L’enfant dit stop, l’adulte s’arrête – « Ça vaut pour tout le monde, même pour moi. »\nIndispensable : quatre étapes dans les deux scènes, remercier chaque fois. Option : l’enfant dit lui-même stop. Serré : stop final en bref."
+      }
     }
   },
   {
@@ -2535,6 +2567,14 @@
       "lesen": 0,
       "schreiben": 0,
       "bild": 3
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erklärt: Hilfe holen ist kein Petzen – „Hilfe holen heißt: Es soll aufhören.“\n1′ Mit Handpuppe: Tom hört nicht auf Pias Stopp\n2′ Pia geht weg, sagt der Fachkraft den Hilfe-Satz – „Ich brauche Hilfe. Das mag ich nicht.“\n4′ Kind plant für Pia: wer, wo, wann hilft\n6′ Kind spielt Plan; keine Zeit, dann zum nächsten Erwachsenen\nMuss: Hilfe-Satz, Plan für Pia. Kann: Plan auch fürs Kind selbst. Wird es knapp: Plan nur mündlich."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte explique : chercher de l’aide n’est pas rapporter – « C’est vouloir que ça s’arrête. »\n1′ Avec la marionnette : Tom n’écoute pas le stop de Pia\n2′ Pia s’éloigne, dit la phrase d’aide à l’adulte – « J’ai besoin d’aide. Je n’aime pas ça. »\n4′ L’enfant prépare pour Pia : qui, où, quand\n6′ L’enfant joue le plan ; pas de temps, adulte suivant\nIndispensable : phrase d’aide, plan pour Pia. Option : le plan vaut aussi pour l’enfant. Serré : plan à l’oral."
+      }
     }
   },
   {
@@ -3036,7 +3076,15 @@
       "schreiben": 0,
       "bild": 3
     },
-    "vorbereitung": "Eine Papier-Medaille basteln (Kartonkreis mit Band) und die fünf Blätter aus der Pinguin-Mappe bereitlegen."
+    "vorbereitung": "Eine Papier-Medaille basteln (Kartonkreis mit Band) und die fünf Blätter aus der Pinguin-Mappe bereitlegen.",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt die fünf Blätter der Pinguin-Mappe aus\n1′ Kind wählt Lieblingsblatt, sagt, was Pia dort macht\n3′ Fachkraft spielt Puppe, der jemand den Ball nahm\n4′ Kind zeigt Stopp-Hand Finger für Finger mit Geste\n7′ Kind bekommt Medaille, beide sagen Pias Sätze – „Stopp! Das mag ich nicht!“\nMuss: Stopp-Hand mit allen fünf Fingern, Medaille. Kann: Lieblingsblatt. Wird es knapp: Rückblick nur kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale les cinq fiches de la chemise du pingouin\n1′ L’enfant choisit sa fiche préférée, dit ce que Pia y fait\n3′ L’adulte joue une marionnette à qui on a pris le ballon\n4′ L’enfant montre la main stop doigt par doigt, avec le geste\n7′ Médaille pour l’enfant, phrases de Pia ensemble – « Stop ! Je n’aime pas ça ! »\nIndispensable : la main stop avec les cinq doigts, la médaille. Option : fiche préférée. Serré : bilan des fiches en bref."
+      }
+    }
   },
   {
     "id": "ki:kurs-grenzen-4-6-s6-t1",
