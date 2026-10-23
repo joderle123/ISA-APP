@@ -516,7 +516,8 @@ const KURS_BILD: Record<string, string> = {
   'socialmedia-13-16': 'motiv:handy-chat', 'fakenews-13-16': 'motiv:lupe', 'gaming-10-12': 'motiv:controller', 'comeback-13-16': 'motiv:bruecke',
   'motivation-13-16': 'motiv:fussball', 'zukunft-13-16': 'motiv:bushaltestelle', 'mitbestimmen-7-9': 'motiv:biene', 'mobbing-7-9': 'motiv:stopp-hand',
   'geld-10-12': 'motiv:muenzen', 'achtsamkeit-4-6': 'motiv:eichhoernchen', 'koerper-7-9': 'motiv:koerper', 'familie-7-9': 'motiv:haus',
-  'trauer-7-9': 'motiv:led-kerze',
+  'trauer-7-9': 'motiv:led-kerze', 'identitaet-10-12': 'motiv:kopfhoerer', 'stress-10-12': 'motiv:thermometer',
+  'deeskalation-13-16': 'motiv:vulkan', 'selbstfuersorge-13-16': 'motiv:berg',
 }
 
 const KERNBLATT_BEREICH: Record<string, Bereich> = {
