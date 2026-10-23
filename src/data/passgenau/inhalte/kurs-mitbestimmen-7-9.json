@@ -280,7 +280,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bos Blume wächst: Mal das Teil von heute aus.",
+     "text": "Mal das Teil von heute aus.",
      "symbole": [
       "malen"
      ]
@@ -411,7 +411,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "La fleur de Bo grandit : colorie la partie d’aujourd’hui.",
+     "text": "Colorie la partie d’aujourd’hui.",
      "symbole": [
       "malen"
      ]
@@ -808,7 +808,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bos Blume wächst: Mal das Teil von heute aus.",
+     "text": "Mal das Teil von heute aus.",
      "symbole": [
       "malen"
      ]
@@ -932,7 +932,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "La fleur de Bo grandit : colorie la partie d’aujourd’hui.",
+     "text": "Colorie la partie d’aujourd’hui.",
      "symbole": [
       "malen"
      ]
@@ -1757,7 +1757,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bos Blume wächst: Mal das Teil von heute aus.",
+     "text": "Mal das Teil von heute aus.",
      "symbole": [
       "malen"
      ]
@@ -1873,7 +1873,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "La fleur de Bo grandit : colorie la partie d’aujourd’hui.",
+     "text": "Colorie la partie d’aujourd’hui.",
      "symbole": [
       "malen"
      ]
@@ -2242,7 +2242,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bos Blume wächst: Mal das Teil von heute aus.",
+     "text": "Mal das Teil von heute aus.",
      "symbole": [
       "malen"
      ]
@@ -2366,7 +2366,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "La fleur de Bo grandit : colorie la partie d’aujourd’hui.",
+     "text": "Colorie la partie d’aujourd’hui.",
      "symbole": [
       "malen"
      ]
@@ -3016,12 +3016,12 @@
    "titel": "Einzelkurs Der Bienen-Rat"
   },
   "titel": "Aushandeln: Toms Schild",
-  "text": "Toms Schild hängt an der Ecke der Beien: „Wer früher da ist, darf bleiben, so lange er will!“ Bo erzählt: „Findet eine Kundschafterin einen anderen Platz besser, stupst sie eine Tänzerin mit dem Kopf an und piepst – ein Stopp-Signal. Einen Grund sagen können Bienen nicht. Wir schon.“ Das Kind stupst Toms Schild mit zwei Fingern an („bzz!“) und sagt den Stopp-Grund: „Das passt für … nicht, weil …“; was Amira und Lea wollen, liegt auf zwei Karten daneben. Dann macht es die Regel besser – „Wie wäre es, wenn …?“ – oder wählt eine Wie-wäre-es-Karte. Die Fachkraft spricht nur Tom: Er sagt Ja oder handelt nach. Bei Ja setzt das Kind den ersten Stein auf den Regel-Turm, und beide spielen den Wechsel mit der Sanduhr vor. Merksatz: „Eine Regel ist fair, wenn sie für alle passt.“",
+  "text": "Toms Schild hängt an der Ecke der Beien: „Wer früher da ist, darf bleiben, so lange er will!“ Bo erzählt vom Stopp-Signal: Eine Kundschafterin stupst eine Tänzerin für einen anderen Platz mit dem Kopf an und piepst – ohne Grund. „Wir sagen den Grund.“ Das Kind stupst Toms Schild mit zwei Fingern an („bzz!“) und sagt: „Das passt für … nicht, weil …“; was Amira und Lea wollen, liegt auf zwei Karten daneben. Dann macht es die Regel besser: „Wie wäre es, wenn …?“ Die Fachkraft spricht nur Tom; er sagt Ja oder handelt nach. Bei Ja kommt der erste Stein auf den Regel-Turm, und beide spielen die Regel: Das Kind sitzt als Tom auf einem Kissen in der „Ecke“, die Fachkraft dreht die Sanduhr; ist sie durch, ruft das Kind „Wechsel!“, steht auf und lässt Amira hinein. Merksatz: „Eine Regel ist fair, wenn sie für alle passt.“",
   "sagen": [
    "Stups Toms Schild an – bzz! Für wen passt es nicht, und warum?",
    "Jetzt mach es besser: „Wie wäre es, wenn …?“",
    "Ich bin Tom: „Zehn Minuten? Zu kurz!“ Was schlägst du jetzt vor?",
-   "Tom sagt Ja – der erste Stein kommt auf den Turm."
+   "Tom sagt Ja – Stein auf den Turm. Jetzt spielen wir es: Du sitzt in der Ecke, bis die Sanduhr durch ist. Dann ruf „Wechsel!“."
   ],
   "wennEsKippt": "Fällt dem Kind kein Vorschlag ein, wählt es eine Wie-wäre-es-Karte. Fällt der Turm um, ist das Bienenwind: neu bauen, die Regel bleibt. Mag es nicht stupsen, zeigt es „Stopp“ mit der flachen Hand.",
   "rolle": [
@@ -3076,7 +3076,8 @@
   "material": [
    "bausteine",
    "karten",
-   "sanduhr"
+   "sanduhr",
+   "kissen"
   ],
   "ort": "raum",
   "werkzeug": {
@@ -3120,7 +3121,7 @@
       },
       {
        "art": "text",
-       "text": "Bienen geben ein Stopp-Signal – ohne Grund. Wir sagen den Grund dazu."
+       "text": "Bienen sagen Stopp, ohne Grund. Wir sagen, warum."
       }
      ],
      "rechts": [
@@ -3157,7 +3158,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bos Blume wächst: Mal das Teil von heute aus.",
+     "text": "Mal das Teil von heute aus.",
      "symbole": [
       "malen"
      ]
@@ -3216,7 +3217,7 @@
       },
       {
        "art": "text",
-       "text": "Les abeilles donnent un signal stop – sans raison. Nous, on dit la raison."
+       "text": "Les abeilles disent stop, sans raison. Nous, on dit pourquoi."
       }
      ],
      "rechts": [
@@ -3253,7 +3254,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "La fleur de Bo grandit : colorie la partie d’aujourd’hui.",
+     "text": "Colorie la partie d’aujourd’hui.",
      "symbole": [
       "malen"
      ]
@@ -3318,12 +3319,12 @@
   },
   "fr": {
    "titel": "Négocier : la pancarte de Tom",
-   "text": "La pancarte de Tom est accrochée au coin des Beien : « Le premier arrivé peut rester aussi longtemps qu’il veut ! » Bo raconte : « Quand une éclaireuse préfère un autre endroit, elle donne un petit coup de tête à une danseuse et fait bip – un signal stop. Les abeilles ne peuvent pas dire pourquoi. Nous, si. » L’enfant touche la pancarte de deux doigts (« bzz ! ») et dit son stop-parce-que : « Stop ! Ça ne va pas pour…, parce que… » ; ce que veulent Amira et Lea est sur deux cartes à côté. Puis il améliore la règle – « Et si on… ? » – ou choisit une carte « Et si on… ? ». L’adulte ne fait parler que Tom : il dit oui ou négocie encore. Au oui, l’enfant pose le premier cube sur la tour des règles, et les deux jouent le relais avec le sablier. Phrase-clé : « Une règle est juste quand elle va pour tout le monde. »",
+   "text": "La pancarte de Tom est accrochée au coin des Beien : « Le premier arrivé peut rester aussi longtemps qu’il veut ! » Bo raconte le signal stop : une éclaireuse donne un coup de tête à une danseuse d’un autre endroit et fait bip – sans raison. « Nous, on dit la raison. » L’enfant touche la pancarte de deux doigts (« bzz ! ») et dit : « Stop ! Ça ne va pas pour…, parce que… » ; ce que veulent Amira et Lea est sur deux cartes à côté. Puis il améliore la règle : « Et si on… ? » L’adulte ne fait parler que Tom ; il dit oui ou négocie. Au oui, le premier cube monte sur la tour des règles, et on joue la règle : assis sur un coussin dans le « coin », l’enfant est Tom, l’adulte retourne le sablier ; quand il est vide, l’enfant crie « On change ! », se lève et laisse entrer Amira. Phrase-clé : « Une règle est juste quand elle va pour tout le monde. »",
    "sagen": [
     "Touche la pancarte de Tom – bzz ! Pour qui ça ne va pas, et pourquoi ?",
     "Maintenant, améliore-la : « Et si on… ? »",
     "Je suis Tom : « Dix minutes ? Trop court ! » Qu’est-ce que tu proposes maintenant ?",
-    "Tom dit oui – le premier cube monte sur la tour."
+    "Tom dit oui – un cube sur la tour. On le joue : tu restes dans le coin jusqu’à ce que le sablier soit vide. Puis tu cries « On change ! »."
    ],
    "wennEsKippt": "Si aucune proposition ne vient, l’enfant choisit une carte « Et si on… ? ». Si la tour tombe, c’est le vent des abeilles : on reconstruit, la règle reste. S’il ne veut pas toucher la pancarte, il fait « stop » avec la main.",
    "kurz": "Toucher la pancarte de Tom · stop-parce-que · « Et si on… ? » · tour des règles"
@@ -3338,9 +3339,9 @@
     "haken": "Toms Schild liegt auf dem Tisch: „Wer früher da ist, darf bleiben!“ Ist das fair? Das Kind darf es anstupsen wie eine Biene mit Stopp-Signal – und dann besser machen.",
     "vorbereitung": [
      "Kartenbogen (unten) drucken: Toms Schild und Wünsche, Wie-wäre-es-Karten, Aushandel-Weg",
-     "Toms Aufsteller aus der Mappe; fünf Bausteine für den Regel-Turm; eine Sanduhr"
+     "Toms Aufsteller; ein Kissen als „Ecke“; drei Bausteine für den Regel-Turm; eine Sanduhr"
     ],
-    "aufbau": "Spickzettel – Kern 12′: 0′ Toms Schild – „Ist das fair?“ · 1′ Bo: Stopp-Signal · 2′ Kind stupst – „Für wen passt das nicht?“ · 4′ „Wie wäre es, wenn …?“ – Tom handelt nach · 8′ Ja: Stein auf den Turm, Wechsel vorspielen · 10′ Kann: Rollentausch. Dann Blatt 8′. Muss: Toms Regel ganz. Wird es knapp: Wie-wäre-es-Karte wählen.",
+    "aufbau": "Spickzettel – Kern 12′: 0′ Toms Schild – „Ist das fair?“ · 1′ Bo: Stopp-Signal · 2′ Kind stupst – „Für wen passt das nicht?“ · 4′ „Wie wäre es, wenn …?“ – Tom handelt nach · 8′ Ja: Stein auf den Turm · 9′ Kissen-Ecke: Sanduhr, „Wechsel!“, aufstehen · 11′ Kann: Rollentausch. Dann Blatt 8′. Muss: Toms Regel ganz. Wird es knapp: Wie-wäre-es-Karte wählen.",
     "karten": [
      {
       "titel": "Toms Schild und die Wünsche",
@@ -3372,6 +3373,7 @@
        "Bienen: Eine Kundschafterin für Platz A stupst Tänzerinnen für Platz B mit dem Kopf an und piepst – die tanzen dann weniger (Seeley et al., 2012).",
        "Das verhindert ein Patt. Einen Grund geben Bienen nicht – genau den üben wir: Stopp-Grund.",
        "Tom antwortet: auf „10 Minuten“ – „Zu kurz!“ Bietet das Kind 15 oder eine Warteliste an – „Okay, abgemacht.“",
+       "Auf „höchstens drei Kinder“: „Und wenn ich mit zwei Freunden den ganzen Tag drin bin?“ – das Kind bessert nach (Wechsel oder Warteliste).",
        "Fällt der Turm um, ist das Bienenwind: neu bauen – die abgemachten Regeln bleiben.",
        "Die Sanduhr läuft nur kurz; ihr spielt den Wechsel vor („Wir tun so, als wären es zehn Minuten“).",
        "Für das Übrigens: Amira und Lea haben auch Regeln abgemacht – leise reden, Musik nur mit Kopfhörern."
@@ -3402,9 +3404,9 @@
     "haken": "La pancarte de Tom est sur la table : « Le premier arrivé peut rester ! » C’est juste ? L’enfant peut la toucher comme une abeille avec un signal stop – puis l’améliorer.",
     "vorbereitung": [
      "Imprimer la planche (ci-dessous) : pancarte et souhaits, cartes « Et si on… ? », chemin pour négocier",
-     "Figurine de Tom dans le dossier ; cinq petits cubes pour la tour ; un sablier"
+     "Figurine de Tom ; un coussin comme « coin » ; trois petits cubes pour la tour ; un sablier"
     ],
-    "aufbau": "Aide-mémoire – cœur 12′ : 0′ pancarte de Tom – « C’est juste ? » · 1′ Bo : signal stop · 2′ l’enfant touche – « Pour qui ça ne va pas ? » · 4′ « Et si on… ? » – Tom négocie · 8′ oui : cube sur la tour, jouer le relais · 10′ en option : échange des rôles. Puis fiche 8′. Indispensable : la règle de Tom en entier. Temps court : choisir une carte.",
+    "aufbau": "Aide-mémoire – cœur 12′ : 0′ pancarte de Tom – « C’est juste ? » · 1′ Bo : signal stop · 2′ l’enfant touche – « Pour qui ça ne va pas ? » · 4′ « Et si on… ? » – Tom négocie · 8′ oui : cube sur la tour · 9′ coin-coussin : sablier, « On change ! », se lever · 11′ option : échange. Puis fiche 8′. Indispensable : la règle de Tom en entier. Temps court : choisir une carte.",
     "karten": [
      {
       "titel": "La pancarte de Tom et les souhaits",
@@ -3436,6 +3438,7 @@
        "Abeilles : une éclaireuse de l’endroit A donne un coup de tête aux danseuses de l’endroit B et fait bip – elles dansent alors moins (Seeley et al., 2012).",
        "Cela évite l’égalité. Les abeilles ne donnent pas de raison – c’est justement ce qu’on entraîne : le stop-parce-que.",
        "Tom répond : à « 10 minutes » – « Trop court ! » Si l’enfant propose 15 ou une liste d’attente – « D’accord, marché conclu. »",
+       "À « trois enfants au maximum » : « Et si je reste toute la journée avec deux copains ? » – l’enfant améliore (relais ou liste d’attente).",
        "Si la tour tombe, c’est le vent des abeilles : on reconstruit – les règles décidées restent.",
        "Le sablier tourne peu de temps ; vous jouez le relais (« On fait comme si c’étaient dix minutes »).",
        "Pour le « Au fait » : Amira et Lea ont aussi décidé des règles – parler doucement, la musique seulement au casque."
@@ -3471,12 +3474,12 @@
    "titel": "Einzelkurs Der Bienen-Rat"
   },
   "titel": "Aushandeln: Toms Schild",
-  "text": "Toms Schild hängt an der Ecke der Beien: „Wer früher da ist, darf bleiben, so lange er will!“ Bo erzählt: „Findet eine Kundschafterin einen anderen Platz besser, stupst sie eine Tänzerin mit dem Kopf an und piepst – ein Stopp-Signal. Einen Grund sagen können Bienen nicht. Wir schon.“ Das Kind stupst Toms Schild mit zwei Fingern an („bzz!“) und sagt den Stopp-Grund: „Das passt für … nicht, weil …“; was Amira und Lea wollen, liegt auf zwei Karten daneben. Dann macht es die Regel besser – „Wie wäre es, wenn …?“ – oder wählt eine Wie-wäre-es-Karte. Die Fachkraft spricht nur Tom: Er sagt Ja oder handelt nach. Bei Ja setzt das Kind den ersten Stein auf den Regel-Turm, und beide spielen den Wechsel mit der Sanduhr vor. Merksatz: „Eine Regel ist fair, wenn sie für alle passt.“",
+  "text": "Toms Schild hängt an der Ecke der Beien: „Wer früher da ist, darf bleiben, so lange er will!“ Bo erzählt vom Stopp-Signal: Eine Kundschafterin stupst eine Tänzerin für einen anderen Platz mit dem Kopf an und piepst – ohne Grund. „Wir sagen den Grund.“ Das Kind stupst Toms Schild mit zwei Fingern an („bzz!“) und sagt: „Das passt für … nicht, weil …“; was Amira und Lea wollen, liegt auf zwei Karten daneben. Dann macht es die Regel besser: „Wie wäre es, wenn …?“ Die Fachkraft spricht nur Tom; er sagt Ja oder handelt nach. Bei Ja kommt der erste Stein auf den Regel-Turm, und beide spielen die Regel: Das Kind sitzt als Tom auf einem Kissen in der „Ecke“, die Fachkraft dreht die Sanduhr; ist sie durch, ruft das Kind „Wechsel!“, steht auf und lässt Amira hinein. Merksatz: „Eine Regel ist fair, wenn sie für alle passt.“",
   "sagen": [
    "Stups Toms Schild an – bzz! Für wen passt es nicht, und warum?",
    "Jetzt mach es besser: „Wie wäre es, wenn …?“",
    "Ich bin Tom: „Zehn Minuten? Zu kurz!“ Was schlägst du jetzt vor?",
-   "Tom sagt Ja – der erste Stein kommt auf den Turm."
+   "Tom sagt Ja – Stein auf den Turm. Jetzt spielen wir es: Du sitzt in der Ecke, bis die Sanduhr durch ist. Dann ruf „Wechsel!“."
   ],
   "wennEsKippt": "Fällt dem Kind kein Vorschlag ein, wählt es eine Wie-wäre-es-Karte. Fällt der Turm um, ist das Bienenwind: neu bauen, die Regel bleibt. Mag es nicht stupsen, zeigt es „Stopp“ mit der flachen Hand.",
   "rolle": [
@@ -3531,7 +3534,8 @@
   "material": [
    "bausteine",
    "karten",
-   "sanduhr"
+   "sanduhr",
+   "kissen"
   ],
   "ort": "raum",
   "werkzeug": {
@@ -3575,7 +3579,7 @@
       },
       {
        "art": "text",
-       "text": "Bienen geben ein Stopp-Signal – ohne Grund. Wir sagen den Grund dazu."
+       "text": "Bienen sagen Stopp, ohne Grund. Wir sagen, warum."
       }
      ],
      "rechts": [
@@ -3624,7 +3628,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bos Blume wächst: Mal das Teil von heute aus.",
+     "text": "Mal das Teil von heute aus.",
      "symbole": [
       "malen"
      ]
@@ -3683,7 +3687,7 @@
       },
       {
        "art": "text",
-       "text": "Les abeilles donnent un signal stop – sans raison. Nous, on dit la raison."
+       "text": "Les abeilles disent stop, sans raison. Nous, on dit pourquoi."
       }
      ],
      "rechts": [
@@ -3732,7 +3736,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "La fleur de Bo grandit : colorie la partie d’aujourd’hui.",
+     "text": "Colorie la partie d’aujourd’hui.",
      "symbole": [
       "malen"
      ]
@@ -3797,12 +3801,12 @@
   },
   "fr": {
    "titel": "Négocier : la pancarte de Tom",
-   "text": "La pancarte de Tom est accrochée au coin des Beien : « Le premier arrivé peut rester aussi longtemps qu’il veut ! » Bo raconte : « Quand une éclaireuse préfère un autre endroit, elle donne un petit coup de tête à une danseuse et fait bip – un signal stop. Les abeilles ne peuvent pas dire pourquoi. Nous, si. » L’enfant touche la pancarte de deux doigts (« bzz ! ») et dit son stop-parce-que : « Stop ! Ça ne va pas pour…, parce que… » ; ce que veulent Amira et Lea est sur deux cartes à côté. Puis il améliore la règle – « Et si on… ? » – ou choisit une carte « Et si on… ? ». L’adulte ne fait parler que Tom : il dit oui ou négocie encore. Au oui, l’enfant pose le premier cube sur la tour des règles, et les deux jouent le relais avec le sablier. Phrase-clé : « Une règle est juste quand elle va pour tout le monde. »",
+   "text": "La pancarte de Tom est accrochée au coin des Beien : « Le premier arrivé peut rester aussi longtemps qu’il veut ! » Bo raconte le signal stop : une éclaireuse donne un coup de tête à une danseuse d’un autre endroit et fait bip – sans raison. « Nous, on dit la raison. » L’enfant touche la pancarte de deux doigts (« bzz ! ») et dit : « Stop ! Ça ne va pas pour…, parce que… » ; ce que veulent Amira et Lea est sur deux cartes à côté. Puis il améliore la règle : « Et si on… ? » L’adulte ne fait parler que Tom ; il dit oui ou négocie. Au oui, le premier cube monte sur la tour des règles, et on joue la règle : assis sur un coussin dans le « coin », l’enfant est Tom, l’adulte retourne le sablier ; quand il est vide, l’enfant crie « On change ! », se lève et laisse entrer Amira. Phrase-clé : « Une règle est juste quand elle va pour tout le monde. »",
    "sagen": [
     "Touche la pancarte de Tom – bzz ! Pour qui ça ne va pas, et pourquoi ?",
     "Maintenant, améliore-la : « Et si on… ? »",
     "Je suis Tom : « Dix minutes ? Trop court ! » Qu’est-ce que tu proposes maintenant ?",
-    "Tom dit oui – le premier cube monte sur la tour."
+    "Tom dit oui – un cube sur la tour. On le joue : tu restes dans le coin jusqu’à ce que le sablier soit vide. Puis tu cries « On change ! »."
    ],
    "wennEsKippt": "Si aucune proposition ne vient, l’enfant choisit une carte « Et si on… ? ». Si la tour tombe, c’est le vent des abeilles : on reconstruit, la règle reste. S’il ne veut pas toucher la pancarte, il fait « stop » avec la main.",
    "kurz": "Toucher la pancarte de Tom · stop-parce-que · « Et si on… ? » · tour des règles"
@@ -3817,9 +3821,9 @@
     "haken": "Toms Schild liegt auf dem Tisch: „Wer früher da ist, darf bleiben!“ Ist das fair? Das Kind darf es anstupsen wie eine Biene mit Stopp-Signal – und dann besser machen.",
     "vorbereitung": [
      "Kartenbogen (unten) drucken: Toms Schild und Wünsche, Wie-wäre-es-Karten, Aushandel-Weg",
-     "Toms Aufsteller aus der Mappe; fünf Bausteine für den Regel-Turm; eine Sanduhr"
+     "Toms Aufsteller; ein Kissen als „Ecke“; drei Bausteine für den Regel-Turm; eine Sanduhr"
     ],
-    "aufbau": "Spickzettel – Kern 12′: 0′ Toms Schild – „Ist das fair?“ · 1′ Bo: Stopp-Signal · 2′ Kind stupst – „Für wen passt das nicht?“ · 4′ „Wie wäre es, wenn …?“ – Tom handelt nach · 8′ Ja: Stein auf den Turm, Wechsel vorspielen · 10′ Kann: Rollentausch. Dann Blatt 8′. Muss: Toms Regel ganz. Wird es knapp: Wie-wäre-es-Karte wählen.",
+    "aufbau": "Spickzettel – Kern 12′: 0′ Toms Schild – „Ist das fair?“ · 1′ Bo: Stopp-Signal · 2′ Kind stupst – „Für wen passt das nicht?“ · 4′ „Wie wäre es, wenn …?“ – Tom handelt nach · 8′ Ja: Stein auf den Turm · 9′ Kissen-Ecke: Sanduhr, „Wechsel!“, aufstehen · 11′ Kann: Rollentausch. Dann Blatt 8′. Muss: Toms Regel ganz. Wird es knapp: Wie-wäre-es-Karte wählen.",
     "karten": [
      {
       "titel": "Toms Schild und die Wünsche",
@@ -3851,6 +3855,7 @@
        "Bienen: Eine Kundschafterin für Platz A stupst Tänzerinnen für Platz B mit dem Kopf an und piepst – die tanzen dann weniger (Seeley et al., 2012).",
        "Das verhindert ein Patt. Einen Grund geben Bienen nicht – genau den üben wir: Stopp-Grund.",
        "Tom antwortet: auf „10 Minuten“ – „Zu kurz!“ Bietet das Kind 15 oder eine Warteliste an – „Okay, abgemacht.“",
+       "Auf „höchstens drei Kinder“: „Und wenn ich mit zwei Freunden den ganzen Tag drin bin?“ – das Kind bessert nach (Wechsel oder Warteliste).",
        "Fällt der Turm um, ist das Bienenwind: neu bauen – die abgemachten Regeln bleiben.",
        "Die Sanduhr läuft nur kurz; ihr spielt den Wechsel vor („Wir tun so, als wären es zehn Minuten“).",
        "Für das Übrigens: Amira und Lea haben auch Regeln abgemacht – leise reden, Musik nur mit Kopfhörern."
@@ -3881,9 +3886,9 @@
     "haken": "La pancarte de Tom est sur la table : « Le premier arrivé peut rester ! » C’est juste ? L’enfant peut la toucher comme une abeille avec un signal stop – puis l’améliorer.",
     "vorbereitung": [
      "Imprimer la planche (ci-dessous) : pancarte et souhaits, cartes « Et si on… ? », chemin pour négocier",
-     "Figurine de Tom dans le dossier ; cinq petits cubes pour la tour ; un sablier"
+     "Figurine de Tom ; un coussin comme « coin » ; trois petits cubes pour la tour ; un sablier"
     ],
-    "aufbau": "Aide-mémoire – cœur 12′ : 0′ pancarte de Tom – « C’est juste ? » · 1′ Bo : signal stop · 2′ l’enfant touche – « Pour qui ça ne va pas ? » · 4′ « Et si on… ? » – Tom négocie · 8′ oui : cube sur la tour, jouer le relais · 10′ en option : échange des rôles. Puis fiche 8′. Indispensable : la règle de Tom en entier. Temps court : choisir une carte.",
+    "aufbau": "Aide-mémoire – cœur 12′ : 0′ pancarte de Tom – « C’est juste ? » · 1′ Bo : signal stop · 2′ l’enfant touche – « Pour qui ça ne va pas ? » · 4′ « Et si on… ? » – Tom négocie · 8′ oui : cube sur la tour · 9′ coin-coussin : sablier, « On change ! », se lever · 11′ option : échange. Puis fiche 8′. Indispensable : la règle de Tom en entier. Temps court : choisir une carte.",
     "karten": [
      {
       "titel": "La pancarte de Tom et les souhaits",
@@ -3915,6 +3920,7 @@
        "Abeilles : une éclaireuse de l’endroit A donne un coup de tête aux danseuses de l’endroit B et fait bip – elles dansent alors moins (Seeley et al., 2012).",
        "Cela évite l’égalité. Les abeilles ne donnent pas de raison – c’est justement ce qu’on entraîne : le stop-parce-que.",
        "Tom répond : à « 10 minutes » – « Trop court ! » Si l’enfant propose 15 ou une liste d’attente – « D’accord, marché conclu. »",
+       "À « trois enfants au maximum » : « Et si je reste toute la journée avec deux copains ? » – l’enfant améliore (relais ou liste d’attente).",
        "Si la tour tombe, c’est le vent des abeilles : on reconstruit – les règles décidées restent.",
        "Le sablier tourne peu de temps ; vous jouez le relais (« On fait comme si c’étaient dix minutes »).",
        "Pour le « Au fait » : Amira et Lea ont aussi décidé des règles – parler doucement, la musique seulement au casque."
@@ -4081,7 +4087,7 @@
       "titel": "Nur für dich: Toms Antworten",
       "karten": [
        "Tom antwortet: auf „10 Minuten“ – „Zu kurz!“ Bietet das Kind 15 oder eine Warteliste an – „Okay, abgemacht.“",
-       "Fällt der Turm um, ist das Bienenwind: neu bauen – die abgemachten Regeln bleiben."
+       "Auf „höchstens drei Kinder“: „Und wenn ich mit zwei Freunden den ganzen Tag drin bin?“ – das Kind bessert nach (Wechsel oder Warteliste)."
       ]
      }
     ],
@@ -4132,7 +4138,7 @@
       "titel": "Pour l’adulte : réponses de Tom",
       "karten": [
        "Tom répond : à « 10 minutes » – « Trop court ! » Si l’enfant propose 15 ou une liste d’attente – « D’accord, marché conclu. »",
-       "Si la tour tombe, c’est le vent des abeilles : on reconstruit – les règles décidées restent."
+       "À « trois enfants au maximum » : « Et si je reste toute la journée avec deux copains ? » – l’enfant améliore (relais ou liste d’attente)."
       ]
      }
     ],
@@ -4480,7 +4486,7 @@
       },
       {
        "art": "text",
-       "text": "Bei den Bienen fliegt der ganze Schwarm mit – auch die, die für einen anderen Platz getanzt haben."
+       "text": "Am Ende fliegt der ganze Schwarm mit – alle zusammen."
       }
      ],
      "rechts": [
@@ -4502,7 +4508,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Wenn deine Idee nicht gewinnt: Welcher Satz hilft dir? Kreuz an – oder schreib deinen eigenen.",
+     "text": "Deine Idee gewinnt nicht. Was hilft dir? Kreuz an.",
      "symbole": [
       "ankreuzen",
       "schreiben"
@@ -4521,7 +4527,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bos Blume wächst: Mal das Teil von heute aus.",
+     "text": "Mal das Teil von heute aus.",
      "symbole": [
       "malen"
      ]
@@ -4594,7 +4600,7 @@
       },
       {
        "art": "text",
-       "text": "Chez les abeilles, tout l’essaim s’envole – même celles qui ont dansé pour un autre endroit."
+       "text": "À la fin, tout l’essaim s’envole – toutes ensemble."
       }
      ],
      "rechts": [
@@ -4616,7 +4622,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Quand ton idée ne gagne pas : quelle phrase t’aide ? Coche – ou écris la tienne.",
+     "text": "Ton idée ne gagne pas. Qu’est-ce qui t’aide ? Coche.",
      "symbole": [
       "ankreuzen",
       "schreiben"
@@ -4635,7 +4641,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "La fleur de Bo grandit : colorie la partie d’aujourd’hui.",
+     "text": "Colorie la partie d’aujourd’hui.",
      "symbole": [
       "malen"
      ]
@@ -4983,7 +4989,7 @@
       },
       {
        "art": "text",
-       "text": "Bei den Bienen fliegt der ganze Schwarm mit – auch die, die für einen anderen Platz getanzt haben."
+       "text": "Am Ende fliegt der ganze Schwarm mit – alle zusammen."
       }
      ],
      "rechts": [
@@ -5035,7 +5041,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bos Blume wächst: Mal das Teil von heute aus.",
+     "text": "Mal das Teil von heute aus.",
      "symbole": [
       "malen"
      ]
@@ -5108,7 +5114,7 @@
       },
       {
        "art": "text",
-       "text": "Chez les abeilles, tout l’essaim s’envole – même celles qui ont dansé pour un autre endroit."
+       "text": "À la fin, tout l’essaim s’envole – toutes ensemble."
       }
      ],
      "rechts": [
@@ -5160,7 +5166,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "La fleur de Bo grandit : colorie la partie d’aujourd’hui.",
+     "text": "Colorie la partie d’aujourd’hui.",
      "symbole": [
       "malen"
      ]
@@ -5840,12 +5846,12 @@
    "titel": "Einzelkurs Der Bienen-Rat"
   },
   "titel": "Mein Recht: Ich darf mitreden",
-  "text": "Lea bringt ein Plakat mit – „Kinder haben Rechte“ –, und Tom ruft: „Dann darf ich ja alles bestimmen!“ Die Fachkraft sagt Artikel 12 in einem Satz (Karte „Nur für dich“). Als kurze Vorübung legt das Kind drei Situations-Karten in drei Becher – „Ich allein“, „Wir zusammen“, „Erwachsene – sie hören zu und erklären“ – und prüft so Toms Satz. Dann der Kern: Das Kind plant einen echten Vorschlag, für sich (Schule, Maison relais, Verein, Gruppe) oder für die Beien: Wunsch, Weil, an wen. Es wählt, wie es ihn einbringt – sagen, malen und abgeben, jemanden mitnehmen oder jemanden für sich sprechen lassen. „Du darfst, du musst aber nicht.“ Zum Schluss sagt die Fachkraft zu, wer bis zum nächsten Treffen antwortet. Merksatz: „Ich darf mitreden – auf meine Art.“",
+  "text": "Lea bringt ein Plakat mit – „Kinder haben Rechte“ –, und Tom ruft: „Dann darf ich ja alles bestimmen!“ Die Fachkraft sagt Artikel 12 in einem Satz. Vorübung: Drei Becher stehen in drei Ecken – „Ich allein“, „Wir zusammen“, „Erwachsene – sie hören zu und erklären“; das Kind fliegt mit jeder Situations-Karte wie eine Kundschafterbiene zum passenden Becher. Kern: Das Kind plant einen kleinen echten Vorschlag für die Maison relais oder für die Stunde hier – etwas, worauf bis zum nächsten Treffen eine Antwort kommen kann – oder für die Beien. Wunsch, Weil und an wen trägt es gleich ins Blatt ein und kreuzt seinen Weg an („Du darfst, du musst nicht“). Dann steht es auf und sagt ihn einmal laut oder zeigt sein Bild; die Fachkraft sagt zu, wer antwortet. Merksatz: „Ich darf mitreden – auf meine Art.“",
   "sagen": [
    "Tom sagt: „Dann darf ich ja alles bestimmen!“ Stimmt das? Leg die Karten in die Becher.",
    "Dein Vorschlag darf klein sein: ein Spiel, eine Regel, ein Name.",
    "Du darfst ihn sagen, malen oder jemanden für dich sprechen lassen. Du musst aber nicht.",
-   "Ich kümmere mich darum, dass du bis zum nächsten Mal eine Antwort bekommst."
+   "Bis zum nächsten Mal bekommst du eine Antwort – von mir oder von der Person, die wir eben ausgesucht haben."
   ],
   "wennEsKippt": "Fällt dem Kind kein eigener Vorschlag ein, plant es den der Beien (freitags Kicker im Flur). Mag es gar keinen Weg wählen, ist das in Ordnung: Die Fachkraft fragt beim nächsten Mal noch einmal. Erzählt es, dass ihm niemand zuhört: danken, nicht nachbohren, gemeinsam überlegen, wer helfen kann.",
   "rolle": [
@@ -5882,15 +5888,15 @@
    "bis": 9
   },
   "dauer": {
-   "min": 8,
-   "typ": 12,
+   "min": 10,
+   "typ": 14,
    "max": 14
   },
   "sozialform": [
    "einzeln"
   ],
   "einzeltauglich": "ja",
-  "energie": 1,
+  "energie": 2,
   "belastung": 1,
   "reiz": 0,
   "format": [
@@ -5941,10 +5947,6 @@
        "symbol": "wissen",
        "titel": "Heute: Mein Recht",
        "text": "„Ich darf mitreden.“"
-      },
-      {
-       "art": "text",
-       "text": "Kinderrecht Nummer 12: Wenn es um dich geht, darfst du mitreden. Du musst aber nicht."
       }
      ],
      "rechts": [
@@ -5999,11 +6001,12 @@
     },
     {
      "art": "text",
-     "text": "Niemand hört zu bei etwas Wichtigem? Eine Person, der du vertraust · Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35"
+     "text": "Niemand hört zu bei etwas Wichtigem? Eine Person, der du vertraust · Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35",
+     "klein": true
     },
     {
      "art": "aufgabe",
-     "text": "Bos Blume wächst: Mal das Teil von heute aus.",
+     "text": "Mal das Teil von heute aus.",
      "symbole": [
       "malen"
      ]
@@ -6032,7 +6035,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Diese Woche, wenn du magst: Bring deinen Vorschlag ein – auf deinem Weg.",
+     "text": "Wenn du magst: Bring ihn ein.",
      "symbole": [
       "sprechen"
      ]
@@ -6053,10 +6056,6 @@
        "symbol": "wissen",
        "titel": "Aujourd’hui : Mon droit",
        "text": "« J’ai mon mot à dire. »"
-      },
-      {
-       "art": "text",
-       "text": "Droit de l’enfant numéro 12 : quand une chose te concerne, tu peux donner ton avis. Mais tu n’es pas obligé."
       }
      ],
      "rechts": [
@@ -6111,11 +6110,12 @@
     },
     {
      "art": "text",
-     "text": "Personne n’écoute pour une chose importante ? Une personne de confiance · Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35"
+     "text": "Personne n’écoute pour une chose importante ? Une personne de confiance · Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35",
+     "klein": true
     },
     {
      "art": "aufgabe",
-     "text": "La fleur de Bo grandit : colorie la partie d’aujourd’hui.",
+     "text": "Colorie la partie d’aujourd’hui.",
      "symbole": [
       "malen"
      ]
@@ -6144,7 +6144,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Cette semaine, si tu veux : apporte ta proposition – à ta façon.",
+     "text": "Si tu veux : présente-la.",
      "symbole": [
       "sprechen"
      ]
@@ -6157,7 +6157,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 hält den Plan aus der Stunde fest: Wunsch, Weil und an wen – für das Kind selbst oder für die Beien. Aufgabe 2: Das Kind kreuzt seinen Weg an; jeder Weg zählt, auch „jemand sagt es für mich“. Die Hilfezeile liest die Fachkraft ruhig vor, ohne nachzufragen. Aufgabe 3 malt das Kind aus, den Auftrag nimmt es mit.",
+     "text": "Das Blatt liegt ab Minute 5 auf dem Tisch: Aufgabe 1 füllt das Kind im Kern (Wunsch, Weil, an wen – die Fachkraft schreibt mit, wenn es das möchte), Aufgabe 2 kreuzt es bei Minute 9 an; jeder Weg zählt, auch „jemand sagt es für mich“. Nach dem Kern nur noch Aufgabe 3 und der Auftrag. Die Hilfezeile liest die Fachkraft ruhig vor, ohne nachzufragen.",
      "sagen": [
       "Jeder Weg ist ein guter Weg.",
       "Ich sage dir beim nächsten Mal, was aus deinem Vorschlag geworden ist."
@@ -6165,7 +6165,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, schreibt die Fachkraft mit, und das Kind sagt nur die Wörter."
     },
     "fr": {
-     "text": "L’exercice 1 garde le plan de la séance : souhait, raison et à qui – pour l’enfant ou pour les Beien. Exercice 2 : l’enfant coche sa façon ; chaque façon compte, même « quelqu’un le dit pour moi ». L’adulte lit calmement la ligne d’aide, sans poser de questions. L’enfant colorie l’exercice 3 et emporte la mission.",
+     "text": "La feuille est sur la table dès la minute 5 : l’enfant remplit l’exercice 1 pendant l’activité (souhait, parce que, à qui – l’adulte écrit s’il le souhaite) et coche l’exercice 2 à la minute 9 ; chaque façon compte, même « quelqu’un le dit pour moi ». Après l’activité, seulement l’exercice 3 et la mission. L’adulte lit calmement la ligne d’aide, sans poser de questions.",
      "sagen": [
       "Chaque façon est une bonne façon.",
       "La prochaine fois, je te dis ce qu’est devenue ta proposition."
@@ -6176,12 +6176,12 @@
   },
   "fr": {
    "titel": "Mon droit : j’ai mon mot à dire",
-   "text": "Lea apporte une affiche – « Les droits de l’enfant » –, et Tom crie : « Alors je peux tout décider ! » L’adulte dit l’article 12 en une phrase (carte « Pour l’adulte »). En petit échauffement, l’enfant pose trois cartes-situations dans trois gobelets – « Moi seul », « Nous ensemble », « Les adultes – ils écoutent et expliquent » – et vérifie ainsi la phrase de Tom. Puis le cœur : l’enfant prépare une vraie proposition, pour lui (école, maison relais, club, groupe) ou pour les Beien : souhait, raison, à qui. Il choisit comment l’apporter – la dire, la dessiner et la donner, se faire accompagner ou la faire dire par quelqu’un. « Tu peux, mais tu n’es pas obligé. » Pour finir, l’adulte s’engage : qui répondra d’ici la prochaine rencontre. Phrase-clé : « J’ai mon mot à dire – à ma façon. »",
+   "text": "Lea apporte une affiche – « Les droits de l’enfant » –, et Tom crie : « Alors je peux tout décider ! » L’adulte dit l’article 12 en une phrase. Échauffement : trois gobelets dans trois coins – « Moi seul », « Nous ensemble », « Les adultes – ils écoutent et expliquent » ; comme une abeille éclaireuse, l’enfant vole avec chaque carte-situation jusqu’au bon gobelet. Cœur : l’enfant prépare une vraie petite proposition pour la maison relais ou pour la séance – quelque chose qui peut recevoir une réponse d’ici la prochaine fois – ou pour les Beien. Il écrit tout de suite sur la feuille son souhait, son parce que et à qui, et coche sa façon (« Tu peux, tu n’es pas obligé »). Puis il se lève et la dit une fois ou montre son dessin ; l’adulte s’engage : qui répondra. Phrase-clé : « J’ai mon mot à dire – à ma façon. »",
    "sagen": [
     "Tom dit : « Alors je peux tout décider ! » C’est vrai ? Mets les cartes dans les gobelets.",
     "Ta proposition peut être petite : un jeu, une règle, un nom.",
     "Tu peux la dire, la dessiner ou la faire dire par quelqu’un. Mais tu n’es pas obligé.",
-    "Je m’occupe que tu aies une réponse d’ici la prochaine fois."
+    "D’ici la prochaine fois, tu auras une réponse – de moi ou de la personne qu’on vient de choisir."
    ],
    "wennEsKippt": "Si aucune proposition personnelle ne vient, l’enfant prépare celle des Beien (baby-foot le vendredi dans le couloir). S’il ne veut choisir aucune façon, c’est d’accord : l’adulte redemandera la prochaine fois. S’il raconte que personne ne l’écoute : remercier, ne pas creuser, chercher ensemble qui peut aider.",
    "kurz": "Qui décide quoi ? · vraie proposition : souhait, raison, à qui · ma façon"
@@ -6195,12 +6195,12 @@
    "de": {
     "haken": "Tom ruft: „Kinder haben Rechte – dann darf ich ja alles bestimmen!“ Stimmt das? Das Kind prüft es selbst mit drei Karten und drei Bechern – und plant danach einen echten Vorschlag.",
     "vorbereitung": [
-     "Situations-Karten und Wege-Karten (unten) drucken – Artikel 12 liest du von „Nur für dich“ vor",
-     "Drei Becher mit Zetteln: Ich allein · Wir zusammen · Erwachsene",
+     "Situations-Karten (unten) drucken – Artikel 12 liest du von „Nur für dich“ vor. Das Blatt liegt ab Minute 5 bereit.",
+     "Drei Becher mit Zetteln (Ich allein · Wir zusammen · Erwachsene) in drei Ecken stellen",
      "Klären und zusagen: Wer antwortet dem Kind bis zum sechsten Treffen? Sonst bist du es.",
      "Hilfenummern bereit: KJT 116 111, OKAJU 28 37 36 35"
     ],
-    "aufbau": "Spickzettel – Kern 12′: 0′ Toms Satz – „Stimmt das?“ · 1′ Artikel 12 in einem Satz · 2′ drei Karten in drei Becher · 5′ Vorschlag: Wunsch, Weil, an wen · 9′ Weg wählen – „Du darfst, du musst nicht.“ · 11′ zusagen, wer antwortet. Dann Blatt 8′. Muss: Wunsch, Weil, an wen. Kann: aufstehen und einmal sagen. Wird es knapp: Vorschlag der Beien.",
+    "aufbau": "Spickzettel – Kern 14′, das Blatt ist Werkzeug: 0′ Toms Satz – „Stimmt das?“ · 1′ Artikel 12 · 2′ zu den Bechern in den Ecken fliegen · 5′ Blatt: Wunsch, Weil (du schreibst mit) · 8′ „Wem sagst du es?“ · 9′ Weg ankreuzen – „Du darfst, du musst nicht.“ · 11′ aufstehen, sagen oder zeigen · 13′ zusagen, wer antwortet. Dann Blatt 4′: Blume, Auftrag. Muss: Wunsch, Weil, an wen. Knapp: Beien-Vorschlag.",
     "karten": [
      {
       "titel": "Situations-Karten: Wer entscheidet?",
@@ -6208,15 +6208,6 @@
        "Welche Farbe ich male",
        "Die Regeln für die Ecke",
        "Was bei Feueralarm passiert"
-      ]
-     },
-     {
-      "titel": "Wege-Karten: So bringe ich meinen Vorschlag ein",
-      "karten": [
-       "sagen",
-       "malen und abgeben",
-       "jemand kommt mit",
-       "jemand sagt es für mich – nur, was ich erlaube"
       ]
      },
      {
@@ -6258,12 +6249,12 @@
    "fr": {
     "haken": "Tom crie : « On a des droits – alors je peux tout décider ! » C’est vrai ? L’enfant le vérifie lui-même avec trois cartes et trois gobelets – puis prépare une vraie proposition.",
     "vorbereitung": [
-     "Imprimer les cartes-situations et les cartes-façons (ci-dessous) – l’article 12 se lit sur « Pour l’adulte »",
-     "Trois gobelets avec des papiers : Moi seul · Nous ensemble · Les adultes",
+     "Imprimer les cartes-situations (ci-dessous) – l’article 12 se lit sur « Pour l’adulte ». Fiche prête dès la minute 5.",
+     "Trois gobelets avec des papiers (Moi seul · Nous ensemble · Les adultes) dans trois coins",
      "Clarifier et s’engager : qui répond à l’enfant d’ici la sixième rencontre ? Sinon, c’est toi.",
      "Numéros d’aide prêts : KJT 116 111, OKAJU 28 37 36 35"
     ],
-    "aufbau": "Aide-mémoire – cœur 12′ : 0′ phrase de Tom – « C’est vrai ? » · 1′ article 12 en une phrase · 2′ trois cartes dans trois gobelets · 5′ proposition : souhait, raison, à qui · 9′ choisir sa façon – « Tu peux, tu n’es pas obligé. » · 11′ s’engager : qui répond. Puis fiche 8′. Indispensable : souhait, raison, à qui. En option : se lever et le dire. Si court : proposition des Beien.",
+    "aufbau": "Aide-mémoire – cœur 14′, la fiche est ton outil : 0′ phrase de Tom – « C’est vrai ? » · 1′ article 12 · 2′ voler vers les gobelets des coins · 5′ fiche : souhait, parce que (tu écris) · 8′ « À qui ? » · 9′ cocher la façon – « Tu peux, tu n’es pas obligé. » · 11′ se lever, dire ou montrer · 13′ qui répond. Puis fiche 4′ : fleur, mission. Indispensable : souhait, parce que, à qui.",
     "karten": [
      {
       "titel": "Cartes-situations : qui décide ?",
@@ -6271,15 +6262,6 @@
        "Quelle couleur je prends",
        "Les règles du coin",
        "Ce qui se passe en cas d’alarme incendie"
-      ]
-     },
-     {
-      "titel": "Cartes-façons : comment j’apporte ma proposition",
-      "karten": [
-       "le dire",
-       "le dessiner et le donner",
-       "quelqu’un vient avec moi",
-       "quelqu’un le dit pour moi – seulement ce que j’accepte"
       ]
      },
      {
@@ -6327,12 +6309,12 @@
    "titel": "Einzelkurs Der Bienen-Rat"
   },
   "titel": "Mein Recht: Ich darf mitreden",
-  "text": "Lea bringt ein Plakat mit – „Kinder haben Rechte“ –, und Tom ruft: „Dann darf ich ja alles bestimmen!“ Die Fachkraft sagt Artikel 12 in einem Satz (Karte „Nur für dich“). Als kurze Vorübung legt das Kind drei Situations-Karten in drei Becher – „Ich allein“, „Wir zusammen“, „Erwachsene – sie hören zu und erklären“ – und prüft so Toms Satz. Dann der Kern: Das Kind plant einen echten Vorschlag, für sich (Schule, Maison relais, Verein, Gruppe) oder für die Beien: Wunsch, Weil, an wen. Es wählt, wie es ihn einbringt – sagen, malen und abgeben, jemanden mitnehmen oder jemanden für sich sprechen lassen. „Du darfst, du musst aber nicht.“ Zum Schluss sagt die Fachkraft zu, wer bis zum nächsten Treffen antwortet. Merksatz: „Ich darf mitreden – auf meine Art.“",
+  "text": "Lea bringt ein Plakat mit – „Kinder haben Rechte“ –, und Tom ruft: „Dann darf ich ja alles bestimmen!“ Die Fachkraft sagt Artikel 12 in einem Satz. Vorübung: Drei Becher stehen in drei Ecken – „Ich allein“, „Wir zusammen“, „Erwachsene – sie hören zu und erklären“; das Kind fliegt mit jeder Situations-Karte wie eine Kundschafterbiene zum passenden Becher. Kern: Das Kind plant einen kleinen echten Vorschlag für die Maison relais oder für die Stunde hier – etwas, worauf bis zum nächsten Treffen eine Antwort kommen kann – oder für die Beien. Wunsch, Weil und an wen trägt es gleich ins Blatt ein und kreuzt seinen Weg an („Du darfst, du musst nicht“). Dann steht es auf und sagt ihn einmal laut oder zeigt sein Bild; die Fachkraft sagt zu, wer antwortet. Merksatz: „Ich darf mitreden – auf meine Art.“",
   "sagen": [
    "Tom sagt: „Dann darf ich ja alles bestimmen!“ Stimmt das? Leg die Karten in die Becher.",
    "Dein Vorschlag darf klein sein: ein Spiel, eine Regel, ein Name.",
    "Du darfst ihn sagen, malen oder jemanden für dich sprechen lassen. Du musst aber nicht.",
-   "Ich kümmere mich darum, dass du bis zum nächsten Mal eine Antwort bekommst."
+   "Bis zum nächsten Mal bekommst du eine Antwort – von mir oder von der Person, die wir eben ausgesucht haben."
   ],
   "wennEsKippt": "Fällt dem Kind kein eigener Vorschlag ein, plant es den der Beien (freitags Kicker im Flur). Mag es gar keinen Weg wählen, ist das in Ordnung: Die Fachkraft fragt beim nächsten Mal noch einmal. Erzählt es, dass ihm niemand zuhört: danken, nicht nachbohren, gemeinsam überlegen, wer helfen kann.",
   "rolle": [
@@ -6369,15 +6351,15 @@
    "bis": 9
   },
   "dauer": {
-   "min": 8,
-   "typ": 12,
+   "min": 10,
+   "typ": 14,
    "max": 14
   },
   "sozialform": [
    "einzeln"
   ],
   "einzeltauglich": "ja",
-  "energie": 1,
+  "energie": 2,
   "belastung": 1,
   "reiz": 0,
   "format": [
@@ -6428,10 +6410,6 @@
        "symbol": "wissen",
        "titel": "Heute: Mein Recht",
        "text": "„Ich darf mitreden.“"
-      },
-      {
-       "art": "text",
-       "text": "Kinderrecht Nummer 12: Wenn es um dich geht, darfst du mitreden. Du musst aber nicht."
       }
      ],
      "rechts": [
@@ -6497,11 +6475,12 @@
     },
     {
      "art": "text",
-     "text": "Niemand hört zu bei etwas Wichtigem? Eine Person, der du vertraust · Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35"
+     "text": "Niemand hört zu bei etwas Wichtigem? Eine Person, der du vertraust · Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35",
+     "klein": true
     },
     {
      "art": "aufgabe",
-     "text": "Bos Blume wächst: Mal das Teil von heute aus.",
+     "text": "Mal das Teil von heute aus.",
      "symbole": [
       "malen"
      ]
@@ -6530,7 +6509,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Diese Woche, wenn du magst: Bring deinen Vorschlag ein – auf deinem Weg.",
+     "text": "Wenn du magst: Bring ihn ein.",
      "symbole": [
       "sprechen"
      ]
@@ -6551,10 +6530,6 @@
        "symbol": "wissen",
        "titel": "Aujourd’hui : Mon droit",
        "text": "« J’ai mon mot à dire. »"
-      },
-      {
-       "art": "text",
-       "text": "Droit de l’enfant numéro 12 : quand une chose te concerne, tu peux donner ton avis. Mais tu n’es pas obligé."
       }
      ],
      "rechts": [
@@ -6620,11 +6595,12 @@
     },
     {
      "art": "text",
-     "text": "Personne n’écoute pour une chose importante ? Une personne de confiance · Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35"
+     "text": "Personne n’écoute pour une chose importante ? Une personne de confiance · Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35",
+     "klein": true
     },
     {
      "art": "aufgabe",
-     "text": "La fleur de Bo grandit : colorie la partie d’aujourd’hui.",
+     "text": "Colorie la partie d’aujourd’hui.",
      "symbole": [
       "malen"
      ]
@@ -6653,7 +6629,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Cette semaine, si tu veux : apporte ta proposition – à ta façon.",
+     "text": "Si tu veux : présente-la.",
      "symbole": [
       "sprechen"
      ]
@@ -6666,14 +6642,14 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Die Fachkraft liest die Aufträge vor. Aufgabe 1: Das Kind malt seinen Wunsch – für sich oder für die Beien. Aufgabe 2: Es kreist seinen Weg ein; jeder Weg zählt. Die Hilfezeile liest die Fachkraft ruhig vor. Aufgabe 3 malt das Kind aus, den Auftrag nimmt es mit.",
+     "text": "Das Blatt liegt ab Minute 5 auf dem Tisch, die Fachkraft liest die Aufträge vor: Aufgabe 1 malt das Kind im Kern (sein Wunsch – für die Maison relais, die Stunde oder die Beien), Aufgabe 2 kreist es bei Minute 9 ein; jeder Weg zählt. Nach dem Kern nur noch Aufgabe 3 und der Auftrag. Die Hilfezeile liest die Fachkraft ruhig vor.",
      "sagen": [
       "Malen ist auch eine Stimme."
      ],
      "wennEsKippt": "Mag das Kind nicht malen, zeigt es auf eine Karte, und die Fachkraft malt ein Zeichen."
     },
     "fr": {
-     "text": "L’adulte lit les consignes. Exercice 1 : l’enfant dessine son souhait – pour lui ou pour les Beien. Exercice 2 : il entoure sa façon ; chaque façon compte. L’adulte lit calmement la ligne d’aide. L’enfant colorie l’exercice 3 et emporte la mission.",
+     "text": "La feuille est sur la table dès la minute 5, l’adulte lit les consignes : l’enfant dessine l’exercice 1 pendant l’activité (son souhait – pour la maison relais, la séance ou les Beien) et entoure l’exercice 2 à la minute 9 ; chaque façon compte. Après l’activité, seulement l’exercice 3 et la mission. L’adulte lit calmement la ligne d’aide.",
      "sagen": [
       "Dessiner, c’est aussi une voix."
      ],
@@ -6683,12 +6659,12 @@
   },
   "fr": {
    "titel": "Mon droit : j’ai mon mot à dire",
-   "text": "Lea apporte une affiche – « Les droits de l’enfant » –, et Tom crie : « Alors je peux tout décider ! » L’adulte dit l’article 12 en une phrase (carte « Pour l’adulte »). En petit échauffement, l’enfant pose trois cartes-situations dans trois gobelets – « Moi seul », « Nous ensemble », « Les adultes – ils écoutent et expliquent » – et vérifie ainsi la phrase de Tom. Puis le cœur : l’enfant prépare une vraie proposition, pour lui (école, maison relais, club, groupe) ou pour les Beien : souhait, raison, à qui. Il choisit comment l’apporter – la dire, la dessiner et la donner, se faire accompagner ou la faire dire par quelqu’un. « Tu peux, mais tu n’es pas obligé. » Pour finir, l’adulte s’engage : qui répondra d’ici la prochaine rencontre. Phrase-clé : « J’ai mon mot à dire – à ma façon. »",
+   "text": "Lea apporte une affiche – « Les droits de l’enfant » –, et Tom crie : « Alors je peux tout décider ! » L’adulte dit l’article 12 en une phrase. Échauffement : trois gobelets dans trois coins – « Moi seul », « Nous ensemble », « Les adultes – ils écoutent et expliquent » ; comme une abeille éclaireuse, l’enfant vole avec chaque carte-situation jusqu’au bon gobelet. Cœur : l’enfant prépare une vraie petite proposition pour la maison relais ou pour la séance – quelque chose qui peut recevoir une réponse d’ici la prochaine fois – ou pour les Beien. Il écrit tout de suite sur la feuille son souhait, son parce que et à qui, et coche sa façon (« Tu peux, tu n’es pas obligé »). Puis il se lève et la dit une fois ou montre son dessin ; l’adulte s’engage : qui répondra. Phrase-clé : « J’ai mon mot à dire – à ma façon. »",
    "sagen": [
     "Tom dit : « Alors je peux tout décider ! » C’est vrai ? Mets les cartes dans les gobelets.",
     "Ta proposition peut être petite : un jeu, une règle, un nom.",
     "Tu peux la dire, la dessiner ou la faire dire par quelqu’un. Mais tu n’es pas obligé.",
-    "Je m’occupe que tu aies une réponse d’ici la prochaine fois."
+    "D’ici la prochaine fois, tu auras une réponse – de moi ou de la personne qu’on vient de choisir."
    ],
    "wennEsKippt": "Si aucune proposition personnelle ne vient, l’enfant prépare celle des Beien (baby-foot le vendredi dans le couloir). S’il ne veut choisir aucune façon, c’est d’accord : l’adulte redemandera la prochaine fois. S’il raconte que personne ne l’écoute : remercier, ne pas creuser, chercher ensemble qui peut aider.",
    "kurz": "Qui décide quoi ? · vraie proposition : souhait, raison, à qui · ma façon"
@@ -6702,12 +6678,12 @@
    "de": {
     "haken": "Tom ruft: „Kinder haben Rechte – dann darf ich ja alles bestimmen!“ Stimmt das? Das Kind prüft es selbst mit drei Karten und drei Bechern – und plant danach einen echten Vorschlag.",
     "vorbereitung": [
-     "Situations-Karten und Wege-Karten (unten) drucken – Artikel 12 liest du von „Nur für dich“ vor",
-     "Drei Becher mit Zetteln: Ich allein · Wir zusammen · Erwachsene",
+     "Situations-Karten (unten) drucken – Artikel 12 liest du von „Nur für dich“ vor. Das Blatt liegt ab Minute 5 bereit.",
+     "Drei Becher mit Zetteln (Ich allein · Wir zusammen · Erwachsene) in drei Ecken stellen",
      "Klären und zusagen: Wer antwortet dem Kind bis zum sechsten Treffen? Sonst bist du es.",
      "Hilfenummern bereit: KJT 116 111, OKAJU 28 37 36 35"
     ],
-    "aufbau": "Spickzettel – Kern 12′: 0′ Toms Satz – „Stimmt das?“ · 1′ Artikel 12 in einem Satz · 2′ drei Karten in drei Becher · 5′ Vorschlag: Wunsch, Weil, an wen · 9′ Weg wählen – „Du darfst, du musst nicht.“ · 11′ zusagen, wer antwortet. Dann Blatt 8′. Muss: Wunsch, Weil, an wen. Kann: aufstehen und einmal sagen. Wird es knapp: Vorschlag der Beien.",
+    "aufbau": "Spickzettel – Kern 14′, das Blatt ist Werkzeug: 0′ Toms Satz – „Stimmt das?“ · 1′ Artikel 12 · 2′ zu den Bechern in den Ecken fliegen · 5′ Blatt: Wunsch, Weil (du schreibst mit) · 8′ „Wem sagst du es?“ · 9′ Weg ankreuzen – „Du darfst, du musst nicht.“ · 11′ aufstehen, sagen oder zeigen · 13′ zusagen, wer antwortet. Dann Blatt 4′: Blume, Auftrag. Muss: Wunsch, Weil, an wen. Knapp: Beien-Vorschlag.",
     "karten": [
      {
       "titel": "Situations-Karten: Wer entscheidet?",
@@ -6715,15 +6691,6 @@
        "Welche Farbe ich male",
        "Die Regeln für die Ecke",
        "Was bei Feueralarm passiert"
-      ]
-     },
-     {
-      "titel": "Wege-Karten: So bringe ich meinen Vorschlag ein",
-      "karten": [
-       "sagen",
-       "malen und abgeben",
-       "jemand kommt mit",
-       "jemand sagt es für mich – nur, was ich erlaube"
       ]
      },
      {
@@ -6765,12 +6732,12 @@
    "fr": {
     "haken": "Tom crie : « On a des droits – alors je peux tout décider ! » C’est vrai ? L’enfant le vérifie lui-même avec trois cartes et trois gobelets – puis prépare une vraie proposition.",
     "vorbereitung": [
-     "Imprimer les cartes-situations et les cartes-façons (ci-dessous) – l’article 12 se lit sur « Pour l’adulte »",
-     "Trois gobelets avec des papiers : Moi seul · Nous ensemble · Les adultes",
+     "Imprimer les cartes-situations (ci-dessous) – l’article 12 se lit sur « Pour l’adulte ». Fiche prête dès la minute 5.",
+     "Trois gobelets avec des papiers (Moi seul · Nous ensemble · Les adultes) dans trois coins",
      "Clarifier et s’engager : qui répond à l’enfant d’ici la sixième rencontre ? Sinon, c’est toi.",
      "Numéros d’aide prêts : KJT 116 111, OKAJU 28 37 36 35"
     ],
-    "aufbau": "Aide-mémoire – cœur 12′ : 0′ phrase de Tom – « C’est vrai ? » · 1′ article 12 en une phrase · 2′ trois cartes dans trois gobelets · 5′ proposition : souhait, raison, à qui · 9′ choisir sa façon – « Tu peux, tu n’es pas obligé. » · 11′ s’engager : qui répond. Puis fiche 8′. Indispensable : souhait, raison, à qui. En option : se lever et le dire. Si court : proposition des Beien.",
+    "aufbau": "Aide-mémoire – cœur 14′, la fiche est ton outil : 0′ phrase de Tom – « C’est vrai ? » · 1′ article 12 · 2′ voler vers les gobelets des coins · 5′ fiche : souhait, parce que (tu écris) · 8′ « À qui ? » · 9′ cocher la façon – « Tu peux, tu n’es pas obligé. » · 11′ se lever, dire ou montrer · 13′ qui répond. Puis fiche 4′ : fleur, mission. Indispensable : souhait, parce que, à qui.",
     "karten": [
      {
       "titel": "Cartes-situations : qui décide ?",
@@ -6778,15 +6745,6 @@
        "Quelle couleur je prends",
        "Les règles du coin",
        "Ce qui se passe en cas d’alarme incendie"
-      ]
-     },
-     {
-      "titel": "Cartes-façons : comment j’apporte ma proposition",
-      "karten": [
-       "le dire",
-       "le dessiner et le donner",
-       "quelqu’un vient avec moi",
-       "quelqu’un le dit pour moi – seulement ce que j’accepte"
       ]
      },
      {
@@ -6868,8 +6826,8 @@
    "bis": 9
   },
   "dauer": {
-   "min": 8,
-   "typ": 12,
+   "min": 10,
+   "typ": 14,
    "max": 14
   },
   "sozialform": [
@@ -7081,8 +7039,8 @@
    "bis": 9
   },
   "dauer": {
-   "min": 8,
-   "typ": 12,
+   "min": 10,
+   "typ": 14,
    "max": 14
   },
   "sozialform": [
@@ -7359,7 +7317,7 @@
       },
       {
        "art": "text",
-       "text": "Bos Schwarm ist umgezogen – in den hohlen Baum, den alle zusammen gewählt haben."
+       "text": "Bos Schwarm wohnt jetzt im hohlen Baum – zusammen gewählt."
       }
      ],
      "rechts": [
@@ -7442,11 +7400,12 @@
     },
     {
      "art": "text",
-     "text": "Niemand hört zu bei etwas Wichtigem? Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35"
+     "text": "Niemand hört zu bei etwas Wichtigem? Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35",
+     "klein": true
     },
     {
      "art": "text",
-     "text": "Und so ging es aus: Die Lese-Höhle heißt jetzt „Bicherhiel“ (Bücherhöhle) – ein Name von Amira. Drinnen hängen Kopfhörer für Lea. Der Kicker steht freitags im Flur. Und Tom liest sein Fußballbuch.",
+     "text": "So ging es aus: Die Höhle heißt jetzt „Bicherhiel“. Lea hat Kopfhörer. Der Kicker steht freitags im Flur. Tom liest ein Fußballbuch.",
      "klein": true
     }
    ],
@@ -7463,7 +7422,7 @@
       },
       {
        "art": "text",
-       "text": "L’essaim de Bo a déménagé – dans l’arbre creux que toutes ont choisi ensemble."
+       "text": "L’essaim de Bo vit dans l’arbre creux – choisi ensemble."
       }
      ],
      "rechts": [
@@ -7546,11 +7505,12 @@
     },
     {
      "art": "text",
-     "text": "Personne n’écoute pour une chose importante ? Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35"
+     "text": "Personne n’écoute pour une chose importante ? Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35",
+     "klein": true
     },
     {
      "art": "text",
-     "text": "Et voilà la fin : la cabane s’appelle maintenant « Bicherhiel » (la grotte aux livres) – un nom d’Amira. Dedans, il y a des casques pour Lea. Le baby-foot est dans le couloir le vendredi. Et Tom lit son livre de foot.",
+     "text": "Et voilà : la grotte s’appelle maintenant « Bicherhiel ». Lea a un casque. Le baby-foot est dans le couloir le vendredi. Tom lit un livre de foot.",
      "klein": true
     }
    ],
@@ -7848,7 +7808,7 @@
       },
       {
        "art": "text",
-       "text": "Bos Schwarm ist umgezogen – in den hohlen Baum, den alle zusammen gewählt haben."
+       "text": "Bos Schwarm wohnt jetzt im hohlen Baum – zusammen gewählt."
       }
      ],
      "rechts": [
@@ -7934,11 +7894,12 @@
     },
     {
      "art": "text",
-     "text": "Niemand hört zu bei etwas Wichtigem? Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35"
+     "text": "Niemand hört zu bei etwas Wichtigem? Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35",
+     "klein": true
     },
     {
      "art": "text",
-     "text": "Und so ging es aus: Die Lese-Höhle heißt „Bicherhiel“. Lea hat Kopfhörer. Tom liest sein Fußballbuch.",
+     "text": "So ging es aus: Die Höhle heißt jetzt „Bicherhiel“. Lea hat Kopfhörer. Der Kicker steht freitags im Flur. Tom liest ein Fußballbuch.",
      "klein": true
     }
    ],
@@ -7955,7 +7916,7 @@
       },
       {
        "art": "text",
-       "text": "L’essaim de Bo a déménagé – dans l’arbre creux que toutes ont choisi ensemble."
+       "text": "L’essaim de Bo vit dans l’arbre creux – choisi ensemble."
       }
      ],
      "rechts": [
@@ -8041,11 +8002,12 @@
     },
     {
      "art": "text",
-     "text": "Personne n’écoute pour une chose importante ? Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35"
+     "text": "Personne n’écoute pour une chose importante ? Kanner-Jugendtelefon 116 111 · OKAJU 28 37 36 35",
+     "klein": true
     },
     {
      "art": "text",
-     "text": "Et voilà la fin : la cabane s’appelle « Bicherhiel ». Lea a des casques. Tom lit son livre de foot.",
+     "text": "Et voilà : la grotte s’appelle maintenant « Bicherhiel ». Lea a un casque. Le baby-foot est dans le couloir le vendredi. Tom lit un livre de foot.",
      "klein": true
     }
    ],
