@@ -8527,5 +8527,104 @@
         "nicht": "Ne pas utiliser le calme comme punition ni exiger « Reste tranquille ! » ; ne jamais faire s’exercer l’enfant devant les autres ni exiger qu’il ferme les yeux."
       }
     }
+  },
+  "kurs-fakenews-10-12": {
+    "name": {
+      "de": "Das Krokodil von Schengen – stimmt das wirklich?",
+      "fr": "Le crocodile de Schengen – c’est vraiment vrai ?"
+    },
+    "welt": {
+      "de": "Schengen an der Mosel, wo Luxemburg, Frankreich und Deutschland aneinanderstoßen und eine Brücke nach Perl führt: In der Cycle 4 und nachmittags in der Maison relais bei Zoran wird Lëtzebuergesch, Portugiesisch, Arabisch, Französisch und Deutsch gesprochen. Martim (11; Portugiesisch, Lëtzebuergesch, Französisch) kennt jeden Fisch in der Mosel und hat kein Handy; Rania (11; Arabisch, Französisch, Lëtzebuergesch) sieht sehr schlecht, lässt sich Bilder beschreiben, fragt immer „Was genau?“ und sagt „shway shway“ (langsam, langsam), wenn alle durcheinanderrufen; Lynn (12; Lëtzebuergesch, Deutsch, Französisch) gestaltet die Infowand der Maison relais und entscheidet, was dort hängen darf. Am Mittwoch sieht Martims Cousine Bia (6) etwas Großes, Braunes mit langem Schwanz in der Mosel; zwei Tage später heißt es im ganzen Dorf „Krokodil!“, mit Foto, und das Bootsrennen der Maison relais soll ausfallen. Von Treffen zu Treffen kommen neue Spuren dazu – eine Panikmeldung, ein KI-Bild, Werbung, die wie ein Tipp aussieht, ein Zettel gegen Martim –, und das Kind prüft als Spurenprüfer jede auf der Spurenwaage, ob es ein Handy hat oder nicht, bis es den Fall am Ende selbst löst.",
+      "fr": "Schengen, sur la Moselle, là où le Luxembourg, la France et l’Allemagne se touchent et où un pont mène à Perl : au cycle 4 et l’après-midi à la maison relais chez Zoran, on parle luxembourgeois, portugais, arabe, français et allemand. Martim (11 ans ; portugais, luxembourgeois, français) connaît chaque poisson de la Moselle et n’a pas de portable ; Rania (11 ans ; arabe, français, luxembourgeois) voit très mal, se fait décrire les images, demande toujours « Quoi exactement ? » et dit « shway shway » (doucement, doucement) quand tout part dans tous les sens ; Lynn (12 ans ; luxembourgeois, allemand, français) s’occupe du mur d’infos de la maison relais et décide de ce qui peut y être affiché. Mercredi, Bia (6 ans), la cousine de Martim, voit quelque chose de grand et brun avec une longue queue dans la Moselle ; deux jours plus tard, tout le village crie « Crocodile ! », photo à l’appui, et la course de bateaux de la maison relais doit être annulée. De rencontre en rencontre arrivent de nouveaux indices – une alerte panique, une image IA, une pub déguisée en conseil, une feuille contre Martim –, et l’enfant, qu’il ait un portable ou non, pèse chacun sur la balance à indices jusqu’à résoudre lui-même l’affaire."
+    },
+    "de": {
+      "warum": "Der Kurs setzt nicht auf Verbote oder Warnungen, sondern auf forschendes Lernen: Das Kind prüft echte Spuren selbst und urteilt mit Weil – auch „weiß ich noch nicht“. Fachleute im Faktenprüfen verlassen eine Quelle und lesen seitwärts, was andere über sie sagen; Schülerinnen und Schüler tun das selten von sich aus (Wineburg & McGrew, 2019; Breakstone et al., 2021). Dazu kommt Vorab-Impfung (Prebunking): Wer Manipulationstricks vorher in harmloser Form kennenlernt, stuft manipulative Meldungen danach als weniger glaubwürdig ein – gezeigt mit den Spielen „Bad News“ und „Go Viral!“ bei Jugendlichen und Erwachsenen (Roozenbeek & van der Linden, 2019; Basol et al., 2021); der Kurs nutzt nur das Prinzip, nicht die Spiele. Weil Gefühle Falschmeldungen glaubwürdiger machen (Martel et al., 2020) und schon Zehnjährige Wiederholtes eher für wahr halten (Fazio & Sherry, 2020), übt das Kind zuerst Luft holen und Nicht-Weitergeben. Der Bogen folgt dem Ziel: wahrnehmen, wie ein Gerücht wächst (Allport & Postman, 1947), Alarm verstehen, Seitenblick und Türsteher-Frage üben, einen Bremsplan nach dem Behavioral Skills Training übertragen (Miltenberger, 2016) und am Ende den Fall selbst lösen. Weil manche Übungen gegen Falschmeldungen auch gegen Wahres misstrauisch machen (Modirrousta-Galian & Higham, 2023), gibt es in jeder Sitzung ruhige, wahre Meldungen. Jede Sitzung hat eine körperliche Erfahrung: Gleichgewicht, Spannung, Blickfeld, fester Stand, eine fallende Kette, eine Urteils-Linie.",
+      "achtung": [
+        "Nicht voraussetzen, dass das Kind ein Handy hat, und nie danach fragen. Martim hat keins – Gerüchte laufen auch durch Pause, Bus und Infowand. Keine Vergleiche von Geräten oder Gekauftem.",
+        "Keine Angstmache: Krokodil, Warnungen und Bilder sind erfunden, in der Geschichte wird niemand verletzt. Wird ein Kind ängstlich: Atem, „Wir prüfen gerade“, die ruhigere Tausch-Übung.",
+        "Kein Zynismus: Ziel ist Prüfen, nicht alles anzweifeln. Ruhige, belegte Meldungen (Zoran, Zeitung, Försterin) darf man glauben; „weiß ich noch nicht“ ist ein gutes Urteil. KI-Bilder lassen sich an Bildfehlern nicht verlässlich erkennen – darum zählt der Seitenblick mehr als das Pixelsuchen.",
+        "Gerüchte über Personen: Das Kind spielt nie Martim oder den Zettelschreiber; wer den Zettel schrieb, bleibt offen. Eigene Beispiele nur freiwillig, nie über echte Mitschüler·innen sprechen lassen. Läuft ein Gerücht über das Kind selbst: danken, nicht ausfragen, kein Schweigen versprechen – Schutz ist Aufgabe der Erwachsenen.",
+        "Erzählt ein Kind von Gerüchten, Ausschluss oder Drohungen, klären drei Fragen, ob es eilt: Passiert es noch? Droht dir jemand? Denkst du daran, dich umzubringen? Online-Opfererfahrung hängt mit Suizidgedanken zusammen (van Geel et al., 2014); direkt zu fragen erhöht das Risiko nicht (Dazzi et al., 2014). Nach einem Ja: bleiben, ruhig nachfragen, nicht allein lassen, heute noch Leitung und I-EBS bzw. SePAS, bei akuter Gefahr 112. KJT 116 111 (Mo–Sa); nachts und sonntags 112/113 oder SOS Détresse 45 45 45; bei Gewalt Helpline 2060 1060 (rund um die Uhr); BEE SECURE Helpline 8002 1234.",
+        "Zeigt ein Kind intime Bilder oder Erpressung: nie öffnen, speichern, weiterleiten oder zeigen – auch nicht als Beweis; nicht zahlen, nicht antworten; Polizei 113, BEE SECURE 8002 1234.",
+        "Meldewege: Grundschule – Titulaire, Präsident·in des Schulkomitees, I-EBS, über die Direction de région die ESEB; Maison relais – Leitung. Lycée (ab 7e) – Regent·in und SePAS, national CePAS. Dem Kind immer sagen, wer was erfährt."
+      ]
+    },
+    "fr": {
+      "warum": "Le cours ne mise ni sur les interdits ni sur les mises en garde, mais sur l’apprentissage par enquête : l’enfant vérifie lui-même de vrais indices et juge avec un parce que – y compris « je ne sais pas encore ». Les pros de la vérification quittent une source et lisent en parallèle ce que d’autres en disent ; les élèves le font rarement d’eux-mêmes (Wineburg & McGrew, 2019 ; Breakstone et al., 2021). S’y ajoute la pré-vaccination (prebunking) : qui découvre d’avance les ruses de manipulation sous une forme inoffensive juge ensuite les messages manipulateurs moins crédibles – montré avec les jeux « Bad News » et « Go Viral! » chez des adolescents et des adultes (Roozenbeek & van der Linden, 2019 ; Basol et al., 2021) ; le cours n’en reprend que le principe, pas les jeux. Comme l’émotion rend les fausses infos plus crédibles (Martel et al., 2020) et que, dès 10 ans, on croit plus ce qui est répété (Fazio & Sherry, 2020), l’enfant s’exerce d’abord à respirer et à ne pas transmettre. L’arc suit le but : percevoir comment une rumeur grandit (Allport & Postman, 1947), comprendre l’alarme, s’exercer au regard de côté et à la question du videur, transférer un plan-frein selon le Behavioral Skills Training (Miltenberger, 2016) et résoudre enfin l’affaire soi-même. Comme certains exercices contre les fausses infos rendent aussi méfiant envers le vrai (Modirrousta-Galian & Higham, 2023), chaque séance contient des messages calmes et vrais. Chaque séance a une expérience corporelle : équilibre, tension, champ de vision, posture stable, une chaîne qui tombe, une ligne du jugement.",
+      "achtung": [
+        "Ne pas supposer que l’enfant a un portable et ne jamais le demander. Martim n’en a pas – les rumeurs passent aussi par la récré, le bus et le mur d’infos. Pas de comparaison d’appareils ou d’achats.",
+        "Pas de peur : le crocodile, les alertes et les images sont inventés, personne n’est blessé dans l’histoire. Si un enfant a peur : respirer, « On vérifie », l’exercice d’échange plus calme.",
+        "Pas de cynisme : le but est de vérifier, pas de douter de tout. On peut croire les messages calmes et appuyés (Zoran, journal, garde forestière) ; « je ne sais pas encore » est un bon jugement. On ne reconnaît pas les images IA de façon fiable à leurs défauts – le regard de côté compte plus que la chasse aux pixels.",
+        "Rumeurs sur des personnes : l’enfant ne joue jamais Martim ni l’auteur de la feuille ; qui l’a écrite reste ouvert. Exemples personnels seulement volontaires, jamais sur de vrais camarades. Si une rumeur vise l’enfant : remercier, ne pas interroger, ne pas promettre le secret – protéger est l’affaire des adultes.",
+        "Si un enfant parle de rumeurs, d’exclusion ou de menaces, trois questions disent si c’est urgent : Ça continue ? Quelqu’un te menace ? Tu penses à te tuer ? Être victime en ligne est lié aux idées suicidaires (van Geel et al., 2014) ; poser la question directement n’augmente pas le risque (Dazzi et al., 2014). Après un oui : rester, questionner calmement, ne pas laisser seul, aujourd’hui même direction et I-EBS ou SePAS, en cas de danger aigu 112. KJT 116 111 (lun.–sam.) ; la nuit et le dimanche 112/113 ou SOS Détresse 45 45 45 ; violence : Helpline 2060 1060 (24 h/24) ; BEE SECURE Helpline 8002 1234.",
+        "Si un enfant montre des images intimes ou du chantage : ne jamais les ouvrir, garder, transférer ou montrer – pas même comme preuve ; ne pas payer, ne pas répondre ; police 113, BEE SECURE 8002 1234.",
+        "Signalement : fondamental – titulaire, président·e du comité d’école, I-EBS, ESEB via la direction de région ; maison relais – direction. Lycée (dès la 7e) – régent·e et SePAS, au niveau national CePAS. Toujours dire à l’enfant qui sera informé."
+      ]
+    },
+    "quellen": [
+      "Allport, G. W. & Postman, L. (1947): The psychology of rumor. New York: Henry Holt",
+      "Basol, M., Roozenbeek, J., Berriche, M., Uenal, F., McClanahan, W. P. & van der Linden, S. (2021): Towards psychological herd immunity: Cross-cultural evidence for two prebunking interventions against COVID-19 misinformation. Big Data & Society, 8(1)",
+      "Breakstone, J., Smith, M., Wineburg, S., Rapaport, A., Carle, J., Garland, M. & Saavedra, A. (2021): Students’ civic online reasoning: A national portrait. Educational Researcher, 50(8), 505–515",
+      "Dazzi, T., Gribble, R., Wessely, S. & Fear, N. T. (2014): Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361–3363",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011): The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432",
+      "Europäisches Parlament und Rat (2005): Richtlinie 2005/29/EG über unlautere Geschäftspraktiken, Anhang I Nr. 11 (als Information getarnte, bezahlte Werbung). Amtsblatt der EU, L 149",
+      "Fazio, L. K. & Sherry, C. L. (2020): The effect of repetition on truth judgments across development. Psychological Science, 31(9), 1150–1160",
+      "Martel, C., Pennycook, G. & Rand, D. G. (2020): Reliance on emotion promotes belief in fake news. Cognitive Research: Principles and Implications, 5, 47",
+      "Miltenberger, R. G. (2016): Behavior modification: Principles and procedures (6. Aufl.). Boston: Cengage Learning",
+      "Modirrousta-Galian, A. & Higham, P. A. (2023): Gamified inoculation interventions do not improve discrimination between true and fake news: Reanalyzing existing research with receiver operating characteristic analysis. Journal of Experimental Psychology: General, 152(9)",
+      "Musée national d’histoire naturelle Luxembourg, neobiota.lu: Myocastor coypus (Nutria) – Status und Funde in Luxemburg; Administration de la nature et des forêts (2019): Myocastor coypus – Steckbrief (neobiota.lu); Administration de la nature et des forêts & MNHN (2022): Der Europäische Biber (environnement.public.lu)",
+      "Roozenbeek, J. & van der Linden, S. (2019): Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65",
+      "Rozendaal, E., Lapierre, M. A., van Reijmersdal, E. A. & Buijzen, M. (2011): Reconsidering advertising literacy as a defense against advertising effects. Media Psychology, 14(4), 333–354",
+      "van Geel, M., Vedder, P. & Tanilon, J. (2014): Relationship between peer victimization, cyberbullying, and suicide in children and adolescents: A meta-analysis. JAMA Pediatrics, 168(5), 435–442",
+      "Wineburg, S. & McGrew, S. (2019): Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40"
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Das Kind lernt, Gerüchte bis zur ersten Beobachtung zurückzuverfolgen, Alarm-Tricks in Meldungen zu erkennen und erst Luft zu holen, Bilder durch den Seitenblick zu prüfen, Werbung hinter Tipps zu entdecken, Gerüchte über Menschen nicht weiterzugeben und ein eigenes Urteil mit Begründung zu sagen – auch „weiß ich noch nicht“ –, ob es ein Handy hat oder nicht.",
+        "stichwort": "Die Spurenwaage mit fünf Fragen: Wer hat es gesehen? · Schrillt mein Alarm? · Was sagen andere? · Wer verdient daran? · Wen trifft es? „Erst prüfen, dann glauben – oder sagen: Weiß ich noch nicht.“",
+        "sitzungen": [
+          "Woche 1: Wer hat es gesehen? – den Weg des Krokodil-Gerüchts rückwärts gehen bis zu Bias ersten Worten; erstes Urteil auf der Spurenwaage. Auftrag: hinhören, wenn jemand „Ich hab gehört …“ sagt.",
+          "Woche 2: Schrillt mein Alarm? – Körper-Regler, Alarm-Knöpfe benennen und eine Panikmeldung entschärfen; erst Luft holen. Auftrag: Alarm-Knöpfe auf einem Plakat suchen.",
+          "Woche 3: Was sagen andere? – zwei Bilder (echt, aber falscher Ort; mit KI gemacht) durch Hinschauen und Seitenblick prüfen. Auftrag: fragen, wie man herausfindet, woher ein Bild kommt.",
+          "Woche 4: Wer verdient daran? – als Türsteher Infos, verkleidete Werbung und Datenfallen trennen; Etikett setzen. Auftrag: eine Werbung finden, die wie ein Tipp aussieht.",
+          "Woche 5: Wen trifft es? – ein Gerücht über Martim und ein Kettenbrief; Bremssatz üben, eigener Bremsplan mit Person. Auftrag: den Bremssatz merken.",
+          "Woche 6: Alle fünf Fragen – den Fall selbst lösen, Urteils-Linie, ehrliche Meldung für die Infowand. Auftrag: die fünf Fragen mitnehmen."
+        ],
+        "helfen": [
+          "So erinnern Sie: leise und kurz – „Wer hat es selbst gesehen?“ oder „Erst Luft, dann prüfen.“",
+          "So loben Sie: „Du hast nachgefragt, statt es weiterzusagen – das war die Spurenwaage.“ Auch „weiß ich noch nicht“ ausdrücklich anerkennen.",
+          "Wenn ein Gerücht über ein Kind läuft: nicht weitergeben, das betroffene Kind schützen, nicht ausfragen, handeln (Titulaire bzw. Regent·in, I-EBS bzw. SePAS) und dem Kind sagen, was als Nächstes passiert."
+        ],
+        "beobachten": [
+          "fragt bei Neuigkeiten „Wer hat es gesehen?“ oder „Woher weißt du das?“",
+          "gibt Gerüchte über andere nicht weiter und sagt einen Bremssatz",
+          "begründet ein Urteil und sagt auch „weiß ich noch nicht“"
+        ],
+        "nicht": "Nicht über Kinder lachen, die etwas Falsches geglaubt oder weitergeleitet haben – das passiert allen; und nicht jede Meldung als Lüge abtun, sonst lernt das Kind Misstrauen statt Prüfen."
+      },
+      "fr": {
+        "ziel": "L’enfant apprend à remonter une rumeur jusqu’à la première observation, à repérer les ruses d’alarme dans les messages et à respirer d’abord, à vérifier les images par le regard de côté, à découvrir la pub derrière les conseils, à ne pas transmettre de rumeurs sur des personnes et à donner un jugement personnel justifié – même « je ne sais pas encore » –, qu’il ait un portable ou non.",
+        "stichwort": "La balance à indices et ses cinq questions : Qui l’a vu ? · Mon alarme sonne ? · Que disent les autres ? · Qui y gagne ? · À qui ça fait du mal ? « D’abord vérifier, puis croire – ou dire : je ne sais pas encore. »",
+        "sitzungen": [
+          "Semaine 1 : Qui l’a vu ? – remonter à reculons la rumeur du crocodile jusqu’aux premiers mots de Bia ; premier jugement sur la balance. Petite idée : écouter quand quelqu’un dit « J’ai entendu … ».",
+          "Semaine 2 : Mon alarme sonne ? – curseur vivant, nommer les boutons d’alarme et désamorcer une alerte ; respirer d’abord. Petite idée : chercher les boutons d’alarme sur une affiche.",
+          "Semaine 3 : Que disent les autres ? – vérifier deux images (vraie mais mauvais lieu ; faite avec l’IA) en regardant de près et de côté. Petite idée : demander comment savoir d’où vient une image.",
+          "Semaine 4 : Qui y gagne ? – en videur, trier infos, pubs déguisées et pièges à données ; poser une étiquette. Petite idée : trouver une pub qui ressemble à un conseil.",
+          "Semaine 5 : À qui ça fait du mal ? – une rumeur sur Martim et une chaîne ; s’exercer à une phrase-frein, plan-frein avec une personne. Petite idée : retenir sa phrase-frein.",
+          "Semaine 6 : Les cinq questions – résoudre l’affaire soi-même, ligne du jugement, message honnête pour le mur d’infos. Petite idée : emporter les cinq questions."
+        ],
+        "helfen": [
+          "Pour rappeler : doucement et brièvement – « Qui l’a vu lui-même ? » ou « D’abord respirer, puis vérifier. »",
+          "Pour féliciter : « Tu as demandé au lieu de répéter – c’était la balance à indices. » Reconnaître aussi explicitement « je ne sais pas encore ».",
+          "Si une rumeur vise un enfant : ne pas la transmettre, protéger l’enfant visé, ne pas l’interroger, agir (titulaire ou régent·e, I-EBS ou SePAS) et lui dire ce qui va se passer."
+        ],
+        "beobachten": [
+          "demande face à une nouvelle « Qui l’a vu ? » ou « Comment tu le sais ? »",
+          "ne transmet pas de rumeurs sur d’autres et dit une phrase-frein",
+          "justifie un jugement et dit aussi « je ne sais pas encore »"
+        ],
+        "nicht": "Ne pas se moquer d’enfants qui ont cru ou transmis quelque chose de faux – ça arrive à tout le monde ; et ne pas traiter chaque message de mensonge, sinon l’enfant apprend la méfiance au lieu de la vérification."
+      }
+    }
   }
 }
