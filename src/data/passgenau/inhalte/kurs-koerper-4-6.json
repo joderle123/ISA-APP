@@ -722,7 +722,7 @@
    }
   },
   "ort": "raum",
-  "titel": "Nilo bleibt stehen – kalt und warm am Tisch",
+  "titel": "Nilo bleibt stehen – Spür-Spiel am Tisch",
   "text": "Nilo, der Esel von Bäuerin Josée, bleibt auf dem Weg stehen und zittert – sein Körper sagt etwas. Ganz ruhig am Tisch probiert das Kind aus, was kalt und warm ist: einen Metall-Löffel an den Handrücken halten, dann die eigene Wange; auf die Hand hauchen („Haaa“) und pusten („Fffff“); die Hände schnell reiben und auf die Augen legen. Jedes Mal zeigt es mit einem Zeichen: kalt (Finger zittern) oder warm (Hand flach). Dann zeigt das Kind mit Nilo, wohin er gehen soll: in den Stall (die Mappe) oder in den Schatten. Merksatz: „Mein Körper sagt Bescheid: spüren, zeigen, sagen.“",
   "sagen": [
    "Nilo zittert. Wir probieren aus, was kalt ist und was warm.",
@@ -752,7 +752,7 @@
    "bild": 2
   },
   "fr": {
-   "titel": "Nilo ne bouge plus – froid et chaud à table",
+   "titel": "Nilo ne bouge plus – jeu des sensations à table",
    "text": "Nilo, l’âne de Josée la fermière, s’arrête sur le chemin et tremble – son corps lui fait signe. Tout calmement à table, l’enfant essaie ce qui est froid et chaud : poser une cuillère en métal sur le dos de la main, puis sur sa joue ; souffler sur sa main bouche ouverte (« Haaa ») et lèvres serrées (« Fffff ») ; se frotter vite les mains et les poser sur ses yeux. À chaque fois, il montre par un signe : froid (doigts qui tremblent) ou chaud (main à plat). Puis l’enfant montre avec Nilo où il doit aller : à l’écurie (la farde) ou à l’ombre. Phrase-clé : « Mon corps me fait signe : je sens, je montre, je dis. »",
    "sagen": [
     "Nilo tremble. On essaie ce qui est froid et ce qui est chaud.",
@@ -1495,7 +1495,7 @@
    }
   },
   "ort": "raum",
-  "titel": "Nilo schiebt das Heu weg – nur der Trog",
+  "titel": "Nilo schiebt das Heu weg – eine Spur",
   "text": "Nilo schiebt sein Heu weg – er hat eben gefressen. Aber er bleibt stehen. Spuren: Die Sonne brennt, und Nilos Trog (ein umgedrehter Becher) ist leer. Das Kind trabt 20 Sekunden wie Nilo auf der Stelle und spürt: Wie ist mein Mund? Dann trinkt es einen Schluck aus seinem Becher oder schluckt nur und fährt mit dem Finger nach, wohin es läuft: Mund, Hals, Bauch. Das Kind sagt, was Nilo braucht, füllt den Trog mit einem Spritzer Wasser und lässt Nilo trinken. Zum Schluss zeigt es das Zeichen für Durst (Hand als Becher am Mund) und sagt, wenn es mag: „Ich habe Durst.“ Merksatz: „Mein Körper sagt Bescheid: spüren, zeigen, sagen.“",
   "sagen": [
    "Nilo hat eben gefressen. Aber er bleibt stehen. Schau mal in seinen Trog.",
@@ -1518,14 +1518,14 @@
    "de": "Nach dem Traben: „Mund trocken oder nass?“",
    "fr": "Après le trot : « Bouche sèche ou mouillée ? »"
   },
-  "kurz": "nur Durst · traben, Mund spüren · trinken oder schlucken · Nilo trinkt",
+  "kurz": "eine Spur: der leere Trog · traben, Mund spüren · was braucht Nilo?",
   "zugang": {
    "lesen": 0,
    "schreiben": 0,
    "bild": 2
   },
   "fr": {
-   "titel": "Nilo repousse le foin – seulement l’abreuvoir",
+   "titel": "Nilo repousse le foin – une seule trace",
    "text": "Nilo repousse son foin – il vient de manger. Mais il ne bouge plus. Les traces : le soleil tape, et l’abreuvoir de Nilo (un gobelet retourné) est vide. L’enfant trotte 20 secondes sur place comme Nilo et sent : comment est ma bouche ? Puis il boit une gorgée dans son gobelet, ou avale seulement sa salive, et suit du doigt le chemin : bouche, gorge, ventre. L’enfant dit ce qu’il faut à Nilo, verse un peu d’eau dans l’abreuvoir et fait boire Nilo. Pour finir, il fait le signe de la soif (main en gobelet devant la bouche) et dit, s’il veut : « J’ai soif. » Phrase-clé : « Mon corps me fait signe : je sens, je montre, je dis. »",
    "sagen": [
     "Nilo vient de manger. Mais il ne bouge plus. Regarde dans son abreuvoir.",
@@ -1533,7 +1533,7 @@
     "De quoi Nilo a besoin ? Donne-le-lui."
    ],
    "wennEsKippt": "Si l’enfant ne veut pas trotter, il tape les sabots de Nilo sur la table. Boire est libre ; avaler et sentir suffit.",
-   "kurz": "seulement la soif · trotter, sentir sa bouche · boire ou avaler · Nilo boit"
+   "kurz": "une seule trace : l’abreuvoir vide · trotter, sentir sa bouche · de quoi Nilo a besoin ?"
   },
   "hilfen": {
    "de": {
@@ -2037,7 +2037,7 @@
    }
   },
   "ort": "raum",
-  "titel": "Nilo stampft – der Hufe-Trommel-Galopp",
+  "titel": "Nilo stampft – die Hufe-Trommel",
   "text": "Nilo bleibt auf dem Weg stehen und stampft – sein Körper sagt etwas. Die Fachkraft trommelt Nilos Hufe auf den Tisch: schnell heißt galoppieren, langsam heißt gehen, Stille heißt ins Stroh legen (Kissen). Das Kind ist Nilo und folgt der Trommel. Im Stroh spürt es nach: Gesicht warm? Mund trocken? Wie geht der Atem? Dann trommelt das Kind, und die Fachkraft ist Nilo und sagt laut, was sie spürt. Zum Schluss entscheidet das Kind: Was braucht Nilo nach drei Tagen im Stall – und was braucht Bruna nach dem Rennen? Merksatz: „Mal sagt mein Körper: bewegen! Mal: Pause!“",
   "sagen": [
    "Hör auf Nilos Hufe: schnell – galoppieren! Langsam – gehen! Still – ins Stroh!",
@@ -2066,7 +2066,7 @@
    "bild": 2
   },
   "fr": {
-   "titel": "Nilo tape du sabot – le galop au tambour",
+   "titel": "Nilo tape du sabot – le tambour des sabots",
    "text": "Nilo s’arrête sur le chemin et tape du sabot – son corps lui fait signe. L’adulte tambourine les sabots de Nilo sur la table : vite, c’est galoper ; lentement, c’est marcher ; le silence, c’est se coucher dans la paille (le coussin). L’enfant est Nilo et suit le tambour. Dans la paille, il sent : visage chaud ? bouche sèche ? comment va le souffle ? Puis l’enfant tambourine, et l’adulte est Nilo et dit à voix haute ce qu’il sent. Pour finir, l’enfant décide : de quoi Nilo a besoin après trois jours à l’écurie – et Bruna après avoir couru ? Phrase-clé : « Parfois mon corps dit : bouge ! Parfois : pause ! »",
    "sagen": [
     "Écoute les sabots de Nilo : vite – galope ! Lentement – marche ! Silence – dans la paille !",
@@ -2229,7 +2229,7 @@
    }
   },
   "ort": "raum",
-  "titel": "Nilo stampft – Galopp unter dem Tisch",
+  "titel": "Nilo stampft – Hufe unter dem Tisch",
   "text": "Nilo bleibt auf dem Weg stehen und stampft – sein Körper sagt etwas. Ganz ruhig im Sitzen: Das Kind stampft mit den Füßen unter dem Tisch wie Nilo, erst langsam, dann schnell, 20 Sekunden – dazu galoppieren die Hände auf dem Tisch. Dann: Sind deine Beine warm? Wie geht dein Atem? Danach legt das Kind den Kopf auf die Arme wie Nilo im Stroh und atmet dreimal lang aus – und spürt noch einmal. Mit der Nilo-Karte zeigt das Kind, wohin Nilo jetzt will: auf die Weide oder ins Stroh. Merksatz: „Mal sagt mein Körper: bewegen! Mal: Pause!“",
   "sagen": [
    "Stampf unter dem Tisch wie Nilo – langsam … schneller … ganz schnell!",
@@ -2258,7 +2258,7 @@
    "bild": 2
   },
   "fr": {
-   "titel": "Nilo tape du sabot – galop sous la table",
+   "titel": "Nilo tape du sabot – les sabots sous la table",
    "text": "Nilo s’arrête sur le chemin et tape du sabot – son corps lui fait signe. Tout calmement, assis : l’enfant tape des pieds sous la table comme Nilo, d’abord lentement, puis vite, 20 secondes – et ses mains galopent sur la table. Puis : tes jambes sont chaudes ? Comment va ton souffle ? Ensuite, l’enfant pose la tête sur ses bras comme Nilo dans la paille et souffle longuement trois fois – et sent encore. Avec la carte de Nilo, l’enfant montre où Nilo veut aller maintenant : au pré ou dans la paille. Phrase-clé : « Parfois mon corps dit : bouge ! Parfois : pause ! »",
    "sagen": [
     "Tape des pieds sous la table comme Nilo – lentement… plus vite… très vite !",
@@ -2762,7 +2762,7 @@
    }
   },
   "ort": "raum",
-  "titel": "Nilos Ohren hängen – ein Ruhe-Nest bauen",
+  "titel": "Nilos Ohren hängen – Spuren nachmachen",
   "text": "Nilo bleibt stehen, die Ohren hängen, er gähnt – sein Körper sagt etwas. Das Kind macht Nilos Spuren nach (gähnen, Augen halb zu, ein Bein locker) und sagt, was Nilo braucht. Dann baut es Nilo ein Ruhe-Nest: Es sucht im Raum zwei, drei weiche oder ruhige Dinge (Kissen, Tuch, Jacke) und legt sie auf den Boden oder an den Tisch. Nilo legt sich hinein. Dann probiert das Kind selbst: Kopf aufs Kissen oder auf die Arme, Augen zu oder offen, zehn Sekunden – was wird ruhig? Zum Schluss zeigt das Kind seine Karte „müde“ und sagt, wenn es mag: „Ich bin müde.“ Merksatz: „Mein Körper sagt Bescheid – auch wenn er müde ist.“",
   "sagen": [
    "Nilo gähnt. Mach mal nach. Was braucht er?",
@@ -2793,7 +2793,7 @@
    "bild": 2
   },
   "fr": {
-   "titel": "Les oreilles de Nilo tombent – un nid de repos",
+   "titel": "Les oreilles de Nilo tombent – imiter les traces",
    "text": "Nilo s’arrête, les oreilles tombantes, il bâille – son corps lui fait signe. L’enfant imite les traces de Nilo (bâiller, yeux mi-clos, une jambe molle) et dit ce qu’il faut à Nilo. Puis il lui construit un nid de repos : il cherche dans la pièce deux ou trois choses douces ou calmes (coussin, foulard, veste) et les pose par terre ou sur la table. Nilo s’y couche. Puis l’enfant essaie lui-même : tête sur le coussin ou sur les bras, yeux fermés ou ouverts, dix secondes – qu’est-ce qui se calme ? Pour finir, l’enfant montre sa carte « fatigué » et dit, s’il veut : « Je suis fatigué. » Phrase-clé : « Mon corps me fait signe – même quand il est fatigué. »",
    "sagen": [
     "Nilo bâille. Imite-le. De quoi il a besoin ?",

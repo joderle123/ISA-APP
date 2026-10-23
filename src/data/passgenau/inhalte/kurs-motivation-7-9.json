@@ -250,6 +250,13 @@
      "linien": 1
     },
     {
+     "art": "aufgabe",
+     "text": "Mal den neuen Stein an.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -323,6 +330,13 @@
       "Mon mini-domino :"
      ],
      "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Colorie le nouveau domino.",
+     "symbole": [
+      "malen"
+     ]
     },
     {
      "art": "schritte",
@@ -485,7 +499,7 @@
     ]
    },
    "fr": {
-    "haken": "Dix dominos sont alignés : « Je parie qu’un doigt suffit ? » L’enfant pousse, tout tombe. Mettre debout, ça prend du temps – commencer, ça se fait avec un doigt.",
+    "haken": "Dix dominos sont alignés : « On parie qu’un seul doigt suffit ? » L’enfant pousse, tout tombe. Les remettre debout prend du temps – mais pour commencer, un doigt suffit.",
     "vorbereitung": [
      "Dix blocs plats en bois debout, en rangée (Kapla ou dominos ; des cubes ne tombent pas), espacés d’une demi-hauteur",
      "Pousser une fois pour tester, remettre debout · plan B : cartes à jouer pliées en tentes",
@@ -689,7 +703,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Welcher Stein ist so klein, dass Nein nicht geht? Kreis ein.",
+     "text": "So klein, dass Nein nicht geht: Welcher Stein? Kreis ein.",
      "symbole": [
       "einkreisen"
      ]
@@ -712,6 +726,13 @@
      ],
      "spalten": 3,
      "modus": "einkreisen"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mal den neuen Stein an.",
+     "symbole": [
+      "malen"
+     ]
     },
     {
      "art": "schritte",
@@ -797,6 +818,13 @@
      ],
      "spalten": 3,
      "modus": "einkreisen"
+    },
+    {
+     "art": "aufgabe",
+     "text": "Colorie le nouveau domino.",
+     "symbole": [
+      "malen"
+     ]
     },
     {
      "art": "schritte",
@@ -959,7 +987,7 @@
     ]
    },
    "fr": {
-    "haken": "Dix dominos sont alignés : « Je parie qu’un doigt suffit ? » L’enfant pousse, tout tombe. Mettre debout, ça prend du temps – commencer, ça se fait avec un doigt.",
+    "haken": "Dix dominos sont alignés : « On parie qu’un seul doigt suffit ? » L’enfant pousse, tout tombe. Les remettre debout prend du temps – mais pour commencer, un doigt suffit.",
     "vorbereitung": [
      "Dix blocs plats en bois debout, en rangée (Kapla ou dominos ; des cubes ne tombent pas), espacés d’une demi-hauteur",
      "Pousser une fois pour tester, remettre debout · plan B : cartes à jouer pliées en tentes",
@@ -1691,6 +1719,13 @@
      "linien": 1
     },
     {
+     "art": "aufgabe",
+     "text": "Mal den neuen Stein an.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -1718,7 +1753,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Wenn Keng Loscht kommt: Frag dich leise „Warum?“",
+     "text": "Keng Loscht? Frag leise: „Warum?“",
      "kaestchen": 1,
      "titel": "Wenn du magst"
     },
@@ -1726,7 +1761,7 @@
      "art": "info",
      "symbol": "wissen",
      "titel": "Spur 2 von 4",
-     "text": "Gonçalo ist dienstags und donnerstags von 13:45 bis 14:45 in der Musikschule."
+     "text": "Gonçalo ist dienstags und donnerstags 13:45–14:45 in der Musikschule."
     }
    ],
    "fr": [
@@ -1770,6 +1805,13 @@
      "linien": 1
     },
     {
+     "art": "aufgabe",
+     "text": "Colorie le nouveau domino.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -1797,7 +1839,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Quand le pas-envie arrive : demande-toi tout bas « Pourquoi ? »",
+     "text": "Pas envie ? Demande-toi tout bas : « Pourquoi ? »",
      "kaestchen": 1,
      "titel": "Si tu veux"
     },
@@ -1805,7 +1847,7 @@
      "art": "info",
      "symbol": "wissen",
      "titel": "Indice 2 sur 4",
-     "text": "Gonçalo est à l’école de musique le mardi et le jeudi, de 13 h 45 à 14 h 45."
+     "text": "Gonçalo est à l’école de musique le mardi et le jeudi, 13 h 45–14 h 45."
     }
    ],
    "anleitung": {
@@ -2168,6 +2210,13 @@
      "modus": "einkreisen"
     },
     {
+     "art": "aufgabe",
+     "text": "Mal den neuen Stein an.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -2195,7 +2244,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Wenn Keng Loscht kommt: Frag dich leise „Warum?“",
+     "text": "Keng Loscht? Frag leise: „Warum?“",
      "kaestchen": 1,
      "titel": "Wenn du magst"
     },
@@ -2203,7 +2252,7 @@
      "art": "info",
      "symbol": "wissen",
      "titel": "Spur 2 von 4",
-     "text": "Gonçalo ist dienstags und donnerstags von 13:45 bis 14:45 in der Musikschule."
+     "text": "Gonçalo ist dienstags und donnerstags 13:45–14:45 in der Musikschule."
     }
    ],
    "fr": [
@@ -2261,6 +2310,13 @@
      "modus": "einkreisen"
     },
     {
+     "art": "aufgabe",
+     "text": "Colorie le nouveau domino.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -2288,7 +2344,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Quand le pas-envie arrive : demande-toi tout bas « Pourquoi ? »",
+     "text": "Pas envie ? Demande-toi tout bas : « Pourquoi ? »",
      "kaestchen": 1,
      "titel": "Si tu veux"
     },
@@ -2296,7 +2352,7 @@
      "art": "info",
      "symbol": "wissen",
      "titel": "Indice 2 sur 4",
-     "text": "Gonçalo est à l’école de musique le mardi et le jeudi, de 13 h 45 à 14 h 45."
+     "text": "Gonçalo est à l’école de musique le mardi et le jeudi, 13 h 45–14 h 45."
     }
    ],
    "anleitung": {
@@ -3156,7 +3212,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Bau ein Wahl-Menü für Luka oder dich: zwei Wege. Schreib, mal oder sag es – jemand schreibt mit.",
+     "text": "Wahl-Menü für Luka oder dich: Schreib, mal oder sag es – jemand schreibt mit.",
      "symbole": [
       "schreiben",
       "malen"
@@ -3170,6 +3226,13 @@
       "Weg 2:"
      ],
      "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mal den neuen Stein an.",
+     "symbole": [
+      "malen"
+     ]
     },
     {
      "art": "schritte",
@@ -3199,7 +3262,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Bei einem Muss: Wähl selbst das Wie.",
+     "text": "Beim Muss: Wähl selbst das Wie.",
      "kaestchen": 1,
      "titel": "Wenn du magst"
     },
@@ -3232,7 +3295,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Fais un menu des choix pour Luka ou pour toi : deux chemins. Écris, dessine ou dis-le – quelqu’un écrit pour toi.",
+     "text": "Menu des choix pour Luka ou toi : Écris, dessine ou dis-le – quelqu’un écrit pour toi.",
      "symbole": [
       "schreiben",
       "malen"
@@ -3246,6 +3309,13 @@
       "Chemin 2 :"
      ],
      "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Colorie le nouveau domino.",
+     "symbole": [
+      "malen"
+     ]
     },
     {
      "art": "schritte",
@@ -3275,7 +3345,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Pour un « il faut », choisis toi-même le comment.",
+     "text": "Pour un « il faut », choisis le comment.",
      "kaestchen": 1,
      "titel": "Si tu veux"
     },
@@ -3637,6 +3707,13 @@
      "modus": "einkreisen"
     },
     {
+     "art": "aufgabe",
+     "text": "Mal den neuen Stein an.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -3664,7 +3741,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Bei einem Muss: Wähl selbst das Wie.",
+     "text": "Beim Muss: Wähl selbst das Wie.",
      "kaestchen": 1,
      "titel": "Wenn du magst"
     },
@@ -3722,6 +3799,13 @@
      "modus": "einkreisen"
     },
     {
+     "art": "aufgabe",
+     "text": "Colorie le nouveau domino.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -3749,7 +3833,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Pour un « il faut », choisis toi-même le comment.",
+     "text": "Pour un « il faut », choisis le comment.",
      "kaestchen": 1,
      "titel": "Si tu veux"
     },
@@ -4598,7 +4682,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Für Gonçalo oder für dich: Was steht schon? Schreib, mal oder sag es – jemand schreibt mit.",
+     "text": "Gonçalo oder du: Was steht schon? Schreib, mal oder sag es – jemand schreibt mit.",
      "symbole": [
       "schreiben",
       "malen"
@@ -4611,6 +4695,13 @@
       "Jetzt schon:"
      ],
      "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Mal den neuen Stein an.",
+     "symbole": [
+      "malen"
+     ]
     },
     {
      "art": "schritte",
@@ -4640,7 +4731,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Mach einen Strich für jeden Mini-Stein, den du schaffst.",
+     "text": "Ein Strich für jeden geschafften Mini-Stein.",
      "kaestchen": 1,
      "titel": "Wenn du magst"
     },
@@ -4673,7 +4764,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Pour Gonçalo ou pour toi : qu’est-ce qui tient déjà ? Écris, dessine ou dis-le – quelqu’un écrit pour toi.",
+     "text": "Gonçalo ou toi : qu’est-ce qui tient déjà ? Écris, dessine ou dis-le – quelqu’un écrit pour toi.",
      "symbole": [
       "schreiben",
       "malen"
@@ -4686,6 +4777,13 @@
       "Maintenant, oui :"
      ],
      "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Colorie le nouveau domino.",
+     "symbole": [
+      "malen"
+     ]
     },
     {
      "art": "schritte",
@@ -4715,7 +4813,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Fais un trait pour chaque mini-domino que tu réussis.",
+     "text": "Un trait par mini-domino réussi.",
      "kaestchen": 1,
      "titel": "Si tu veux"
     },
@@ -5070,6 +5168,13 @@
      "oben": "das ganze Lied"
     },
     {
+     "art": "aufgabe",
+     "text": "Mal den neuen Stein an.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -5097,7 +5202,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Mach einen Strich für jeden Mini-Stein, den du schaffst.",
+     "text": "Ein Strich für jeden geschafften Mini-Stein.",
      "kaestchen": 1,
      "titel": "Wenn du magst"
     },
@@ -5142,6 +5247,13 @@
      "oben": "tout le morceau"
     },
     {
+     "art": "aufgabe",
+     "text": "Colorie le nouveau domino.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -5169,7 +5281,7 @@
     },
     {
      "art": "zielkarte",
-     "text": "Fais un trait pour chaque mini-domino que tu réussis.",
+     "text": "Un trait par mini-domino réussi.",
      "kaestchen": 1,
      "titel": "Si tu veux"
     },
@@ -6059,6 +6171,13 @@
      "zeilen": 1
     },
     {
+     "art": "aufgabe",
+     "text": "Mal den neuen Stein an.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -6127,6 +6246,13 @@
     {
      "art": "wennDann",
      "zeilen": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Colorie le nouveau domino.",
+     "symbole": [
+      "malen"
+     ]
     },
     {
      "art": "schritte",
@@ -6239,7 +6365,7 @@
       "titel": "Nur für dich: der Wenn-dann-Stein",
       "karten": [
        "Lösung, nur für dich: Luka. Gonçalo ist in der Musikschule, Imane bis 14:30 oben; die Rechen-Seite passt zu Luka. Das Kind sagt den Namen selbst.",
-       "Zettel von Luka, erst nach dem Namen: „Ja, ich war’s. Wenn ich Keng Loscht denke, dann mache ich nur fünf. Fünf ist so wenig, da sagt mein Kopf nicht Nein.“",
+       "Lukas Zettel, nach dem Namen: „Ja, ich war’s. Wenn ich Keng Loscht denke, dann mache ich nur fünf Rechnungen. So wenig – da sagt mein Kopf nicht Nein.“",
        "Nennt das Kind jemand anderen: Spuren gemeinsam noch einmal ansehen – wer war zwischen 13:55 und 14:15 wo? Nicht verraten.",
        "Gute Pläne sind konkret: wann, wo, welcher Mini-Stein. Laut sagen hilft. Für sich planen ist freiwillig; „ein Kind wie du“ geht immer.",
        "Nicht versprechen, dass Keng Loscht verschwindet. Der Plan hilft beim Anfangen – nicht immer."
@@ -6264,7 +6390,7 @@
      "sagt, wann und wo es den Plan ausprobieren will",
      "fängt im Alltag mit dem Mini-Stein an (Rückmeldung aus Schule oder Maison relais)"
     ],
-    "warum": "Wenn-dann-Pläne verbinden einen Moment mit einer Handlung; in einer Metaanalyse halfen sie deutlich beim Umsetzen von Zielen, meist bei Erwachsenen (Gollwitzer & Sheeran, 2006). In einer Studie halfen sie auch Schulkindern, Ablenkungen zu widerstehen (Wieber et al., 2011).",
+    "warum": "Wenn-dann-Pläne verbinden einen Moment mit einer Handlung; in einer Metaanalyse halfen sie deutlich beim Umsetzen von Zielen, meist bei Erwachsenen (Gollwitzer & Sheeran, 2006). In einer Studie halfen sie auch Schulkindern, Ablenkungen zu widerstehen (Wieber et al., 2011); auch bei Kindern mit ADHS zeigten sich in Laboraufgaben Vorteile (Gawrilow, Gollwitzer & Oettingen, 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon – für Kinder 116 111 (kostenlos, anonym; telefonisch Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
@@ -6331,7 +6457,7 @@
       "titel": "Pour l’adulte : le domino si-alors",
       "karten": [
        "Solution, pour toi : Luka. Gonçalo est à l’école de musique, Imane en haut jusqu’à 14 h 30 ; la page de calculs va avec Luka. L’enfant dit le nom.",
-       "Mot de Luka, après le nom : « Oui, c’est moi. Quand je pense Keng Loscht, alors j’en fais juste cinq. Cinq, c’est si peu que ma tête ne dit pas non. »",
+       "Mot de Luka, après le nom : « Oui, c’est moi. Quand je pense Keng Loscht, je fais juste cinq calculs. Si peu – ma tête ne dit pas non. »",
        "Si l’enfant nomme quelqu’un d’autre : revoir les indices ensemble – qui était où entre 13 h 55 et 14 h 15 ? Ne rien dévoiler.",
        "Un bon plan est concret : quand, où, quel mini-domino. Le dire à voix haute aide. Pour soi, c’est libre ; « un enfant comme toi » marche toujours.",
        "Ne pas promettre que le pas-envie va disparaître. Le plan aide à commencer – pas toujours."
@@ -6356,7 +6482,7 @@
      "dit quand et où il veut essayer son plan",
      "commence au quotidien par le mini-domino (retour de l’école ou de la maison relais)"
     ],
-    "warum": "Les plans si-alors relient un moment à une action ; dans une méta-analyse, ils aidaient nettement à réaliser des buts, surtout chez des adultes (Gollwitzer & Sheeran, 2006). Dans une étude, ils ont aussi aidé des écoliers à résister aux distractions (Wieber et al., 2011).",
+    "warum": "Les plans si-alors relient un moment à une action ; dans une méta-analyse, ils aidaient nettement à réaliser des buts, surtout chez des adultes (Gollwitzer & Sheeran, 2006). Dans une étude, ils ont aussi aidé des écoliers à résister aux distractions (Wieber et al., 2011) ; chez des enfants avec TDAH aussi, des tâches de laboratoire ont montré des avantages (Gawrilow, Gollwitzer & Oettingen, 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon – pour les enfants 116 111 (gratuit, anonyme ; par téléphone du lundi au samedi, chat le mardi de 18 h à 21 h) · Elterentelefon 8002 4444",
@@ -6549,6 +6675,13 @@
      "zeichnen": true
     },
     {
+     "art": "aufgabe",
+     "text": "Mal den neuen Stein an.",
+     "symbole": [
+      "malen"
+     ]
+    },
+    {
      "art": "schritte",
      "stil": "kette",
      "items": [
@@ -6647,6 +6780,13 @@
      "art": "feld",
      "hoehe": 30,
      "zeichnen": true
+    },
+    {
+     "art": "aufgabe",
+     "text": "Colorie le nouveau domino.",
+     "symbole": [
+      "malen"
+     ]
     },
     {
      "art": "schritte",
@@ -6759,7 +6899,7 @@
       "titel": "Nur für dich: der Wenn-dann-Stein",
       "karten": [
        "Lösung, nur für dich: Luka. Gonçalo ist in der Musikschule, Imane bis 14:30 oben; die Rechen-Seite passt zu Luka. Das Kind sagt den Namen selbst.",
-       "Zettel von Luka, erst nach dem Namen: „Ja, ich war’s. Wenn ich Keng Loscht denke, dann mache ich nur fünf. Fünf ist so wenig, da sagt mein Kopf nicht Nein.“",
+       "Lukas Zettel, nach dem Namen: „Ja, ich war’s. Wenn ich Keng Loscht denke, dann mache ich nur fünf Rechnungen. So wenig – da sagt mein Kopf nicht Nein.“",
        "Nennt das Kind jemand anderen: Spuren gemeinsam noch einmal ansehen – wer war zwischen 13:55 und 14:15 wo? Nicht verraten.",
        "Gute Pläne sind konkret: wann, wo, welcher Mini-Stein. Laut sagen hilft. Für sich planen ist freiwillig; „ein Kind wie du“ geht immer.",
        "Nicht versprechen, dass Keng Loscht verschwindet. Der Plan hilft beim Anfangen – nicht immer."
@@ -6784,7 +6924,7 @@
      "sagt, wann und wo es den Plan ausprobieren will",
      "fängt im Alltag mit dem Mini-Stein an (Rückmeldung aus Schule oder Maison relais)"
     ],
-    "warum": "Wenn-dann-Pläne verbinden einen Moment mit einer Handlung; in einer Metaanalyse halfen sie deutlich beim Umsetzen von Zielen, meist bei Erwachsenen (Gollwitzer & Sheeran, 2006). In einer Studie halfen sie auch Schulkindern, Ablenkungen zu widerstehen (Wieber et al., 2011).",
+    "warum": "Wenn-dann-Pläne verbinden einen Moment mit einer Handlung; in einer Metaanalyse halfen sie deutlich beim Umsetzen von Zielen, meist bei Erwachsenen (Gollwitzer & Sheeran, 2006). In einer Studie halfen sie auch Schulkindern, Ablenkungen zu widerstehen (Wieber et al., 2011); auch bei Kindern mit ADHS zeigten sich in Laboraufgaben Vorteile (Gawrilow, Gollwitzer & Oettingen, 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon – für Kinder 116 111 (kostenlos, anonym; telefonisch Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
@@ -6851,7 +6991,7 @@
       "titel": "Pour l’adulte : le domino si-alors",
       "karten": [
        "Solution, pour toi : Luka. Gonçalo est à l’école de musique, Imane en haut jusqu’à 14 h 30 ; la page de calculs va avec Luka. L’enfant dit le nom.",
-       "Mot de Luka, après le nom : « Oui, c’est moi. Quand je pense Keng Loscht, alors j’en fais juste cinq. Cinq, c’est si peu que ma tête ne dit pas non. »",
+       "Mot de Luka, après le nom : « Oui, c’est moi. Quand je pense Keng Loscht, je fais juste cinq calculs. Si peu – ma tête ne dit pas non. »",
        "Si l’enfant nomme quelqu’un d’autre : revoir les indices ensemble – qui était où entre 13 h 55 et 14 h 15 ? Ne rien dévoiler.",
        "Un bon plan est concret : quand, où, quel mini-domino. Le dire à voix haute aide. Pour soi, c’est libre ; « un enfant comme toi » marche toujours.",
        "Ne pas promettre que le pas-envie va disparaître. Le plan aide à commencer – pas toujours."
@@ -6876,7 +7016,7 @@
      "dit quand et où il veut essayer son plan",
      "commence au quotidien par le mini-domino (retour de l’école ou de la maison relais)"
     ],
-    "warum": "Les plans si-alors relient un moment à une action ; dans une méta-analyse, ils aidaient nettement à réaliser des buts, surtout chez des adultes (Gollwitzer & Sheeran, 2006). Dans une étude, ils ont aussi aidé des écoliers à résister aux distractions (Wieber et al., 2011).",
+    "warum": "Les plans si-alors relient un moment à une action ; dans une méta-analyse, ils aidaient nettement à réaliser des buts, surtout chez des adultes (Gollwitzer & Sheeran, 2006). Dans une étude, ils ont aussi aidé des écoliers à résister aux distractions (Wieber et al., 2011) ; chez des enfants avec TDAH aussi, des tâches de laboratoire ont montré des avantages (Gawrilow, Gollwitzer & Oettingen, 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon – pour les enfants 116 111 (gratuit, anonyme ; par téléphone du lundi au samedi, chat le mardi de 18 h à 21 h) · Elterentelefon 8002 4444",
@@ -7042,7 +7182,7 @@
       "titel": "Nur für dich",
       "karten": [
        "Lösung, nur für dich: Luka. Gonçalo ist in der Musikschule, Imane bis 14:30 oben; die Rechen-Seite passt zu Luka. Das Kind sagt den Namen selbst.",
-       "Zettel von Luka, erst nach dem Namen: „Ja, ich war’s. Wenn ich Keng Loscht denke, dann mache ich nur fünf. Fünf ist so wenig, da sagt mein Kopf nicht Nein.“",
+       "Lukas Zettel, nach dem Namen: „Ja, ich war’s. Wenn ich Keng Loscht denke, dann mache ich nur fünf Rechnungen. So wenig – da sagt mein Kopf nicht Nein.“",
        "Die Stimme bleibt freundlich-maulig, nie gemein. Ausstieg: „Stimme aus! Du bist wieder du.“"
       ]
      },
@@ -7120,7 +7260,7 @@
       "titel": "Pour l’adulte",
       "karten": [
        "Solution, pour toi : Luka. Gonçalo est à l’école de musique, Imane en haut jusqu’à 14 h 30 ; la page de calculs va avec Luka. L’enfant dit le nom.",
-       "Mot de Luka, après le nom : « Oui, c’est moi. Quand je pense Keng Loscht, alors j’en fais juste cinq. Cinq, c’est si peu que ma tête ne dit pas non. »",
+       "Mot de Luka, après le nom : « Oui, c’est moi. Quand je pense Keng Loscht, je fais juste cinq calculs. Si peu – ma tête ne dit pas non. »",
        "La voix reste râleuse mais gentille, jamais méchante. Pour quitter le rôle : « Voix coupée ! Tu redeviens toi. »"
       ]
      },
@@ -7311,7 +7451,7 @@
       "titel": "Nur für dich",
       "karten": [
        "Lösung, nur für dich: Luka. Gonçalo ist in der Musikschule, Imane bis 14:30 oben; die Rechen-Seite passt zu Luka. Das Kind sagt den Namen selbst.",
-       "Zettel von Luka, erst nach dem Namen: „Ja, ich war’s. Wenn ich Keng Loscht denke, dann mache ich nur fünf. Fünf ist so wenig, da sagt mein Kopf nicht Nein.“",
+       "Lukas Zettel, nach dem Namen: „Ja, ich war’s. Wenn ich Keng Loscht denke, dann mache ich nur fünf Rechnungen. So wenig – da sagt mein Kopf nicht Nein.“",
        "Schonende Fassung: nur Pläne für die Figuren, nichts Eigenes."
       ]
      },
@@ -7390,7 +7530,7 @@
       "titel": "Pour l’adulte",
       "karten": [
        "Solution, pour toi : Luka. Gonçalo est à l’école de musique, Imane en haut jusqu’à 14 h 30 ; la page de calculs va avec Luka. L’enfant dit le nom.",
-       "Mot de Luka, après le nom : « Oui, c’est moi. Quand je pense Keng Loscht, alors j’en fais juste cinq. Cinq, c’est si peu que ma tête ne dit pas non. »",
+       "Mot de Luka, après le nom : « Oui, c’est moi. Quand je pense Keng Loscht, je fais juste cinq calculs. Si peu – ma tête ne dit pas non. »",
        "Version douce : seulement des plans pour les personnages, rien de personnel."
       ]
      },

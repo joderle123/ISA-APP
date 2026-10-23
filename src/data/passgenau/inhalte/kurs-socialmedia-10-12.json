@@ -258,7 +258,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Schreib Rita einen Später-Satz für den Chat:",
+     "text": "Ein Freund hat morgen Schule und um 22 Uhr 30 neue Pings. Dein Später-Tipp für ihn:",
      "symbole": [
       "schreiben"
      ]
@@ -357,7 +357,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Écris à Rita une phrase Plus tard pour le chat :",
+     "text": "Un ami a école demain et, à 22 h, 30 nouveaux pings. Ton conseil Plus tard pour lui :",
      "symbole": [
       "schreiben"
      ]
@@ -411,7 +411,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Die drei Nachrichten kreuzt das Kind allein an; die Fachkraft fragt bei der dritten nach: „Wer hilft da – der Chat oder Marco?“ Den Später-Satz schreibt es in eigenen Worten, gern mit Emoji. Zum Schluss liest die Fachkraft Ritas Nachricht unten wie eine Sprachnachricht vor.",
+     "text": "Die drei Nachrichten kreuzt das Kind allein an; die Fachkraft fragt bei der dritten nach: „Wer hilft da – der Chat oder Marco?“ Den Später-Tipp für den Freund schreibt es in eigenen Worten, gern mit Emoji. Zum Schluss liest die Fachkraft Ritas Nachricht unten wie eine Sprachnachricht vor.",
      "sagen": [
       "Bei welcher Nachricht muss wirklich jemand sofort helfen?",
       "Wie würdest du Rita schreiben, dass sie später antwortet?"
@@ -419,7 +419,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, sagt das Kind den Satz und die Fachkraft schreibt mit. Fragt das Blatt nach dem Kind selbst, darf es für Rita antworten."
     },
     "fr": {
-     "text": "L’enfant coche seul les trois messages ; pour le troisième, l’adulte demande : « Qui aide là – le chat ou Marco ? » Il écrit la phrase Plus tard avec ses mots, un émoji est bienvenu. Pour finir, l’adulte lit le message de Rita en bas comme un vocal.",
+     "text": "L’enfant coche seul les trois messages ; pour le troisième, l’adulte demande : « Qui aide là – le chat ou Marco ? » Il écrit le conseil Plus tard pour l’ami avec ses mots, un émoji est bienvenu. Pour finir, l’adulte lit le message de Rita en bas comme un vocal.",
      "sagen": [
       "Pour quel message faut-il vraiment aider tout de suite ?",
       "Comment écrirais-tu à Rita qu’elle répondra plus tard ?"
@@ -505,7 +505,7 @@
      "benennt Druck-Macher (Lesebestätigung, Drohung, Kettenbrief) selbst",
      "formuliert einen eigenen Satz, um später zu antworten"
     ],
-    "warum": "Die Angst, etwas zu verpassen, hängt mit häufigerem Griff zum Handy zusammen (Przybylski et al., 2013); wer Druck-Macher erkennt und eine eigene Antwortregel hat, entscheidet nach eigenen Werten statt nach dem Ping.",
+    "warum": "Bei Erwachsenen hing die Angst, etwas zu verpassen, mit stärkerer Social-Media-Nutzung zusammen (Przybylski et al., 2013); wer Druck-Macher erkennt und eine eigene Antwortregel hat, entscheidet nach eigenen Werten statt nach dem Ping.",
     "links": [
      {
       "titel": "BEE SECURE – sicher im Netz, Helpline 8002 1234 (Mo–Mi und Fr 9–12, Do 15–18 Uhr; aus dem luxemburgischen Netz) – Luxemburg",
@@ -585,7 +585,7 @@
      "nomme lui-même les fabricants de pression (accusé de lecture, menace, chaîne)",
      "formule sa propre phrase pour répondre plus tard"
     ],
-    "warum": "La peur de rater quelque chose est liée au fait de prendre plus souvent son portable (Przybylski et al., 2013) ; reconnaître les fabricants de pression et avoir sa propre règle de réponse permet de décider selon ses valeurs plutôt que selon le ping.",
+    "warum": "Chez des adultes, la peur de rater quelque chose allait de pair avec un usage plus intense des réseaux sociaux (Przybylski et al., 2013) ; reconnaître les fabricants de pression et avoir sa propre règle de réponse permet de décider selon ses valeurs plutôt que selon le ping.",
     "links": [
      {
       "titel": "BEE SECURE – sécurité en ligne, Helpline 8002 1234 (lun.–mer. et ven. 9–12 h, jeu. 15–18 h ; depuis un réseau luxembourgeois) – Luxembourg",
@@ -1005,7 +1005,7 @@
      "benennt Druck-Macher (Lesebestätigung, Drohung, Kettenbrief) selbst",
      "formuliert einen eigenen Satz, um später zu antworten"
     ],
-    "warum": "Die Angst, etwas zu verpassen, hängt mit häufigerem Griff zum Handy zusammen (Przybylski et al., 2013); wer Druck-Macher erkennt und eine eigene Antwortregel hat, entscheidet nach eigenen Werten statt nach dem Ping.",
+    "warum": "Bei Erwachsenen hing die Angst, etwas zu verpassen, mit stärkerer Social-Media-Nutzung zusammen (Przybylski et al., 2013); wer Druck-Macher erkennt und eine eigene Antwortregel hat, entscheidet nach eigenen Werten statt nach dem Ping.",
     "links": [
      {
       "titel": "BEE SECURE – sicher im Netz, Helpline 8002 1234 (Mo–Mi und Fr 9–12, Do 15–18 Uhr; aus dem luxemburgischen Netz) – Luxemburg",
@@ -1085,7 +1085,7 @@
      "nomme lui-même les fabricants de pression (accusé de lecture, menace, chaîne)",
      "formule sa propre phrase pour répondre plus tard"
     ],
-    "warum": "La peur de rater quelque chose est liée au fait de prendre plus souvent son portable (Przybylski et al., 2013) ; reconnaître les fabricants de pression et avoir sa propre règle de réponse permet de décider selon ses valeurs plutôt que selon le ping.",
+    "warum": "Chez des adultes, la peur de rater quelque chose allait de pair avec un usage plus intense des réseaux sociaux (Przybylski et al., 2013) ; reconnaître les fabricants de pression et avoir sa propre règle de réponse permet de décider selon ses valeurs plutôt que selon le ping.",
     "links": [
      {
       "titel": "BEE SECURE – sécurité en ligne, Helpline 8002 1234 (lun.–mer. et ven. 9–12 h, jeu. 15–18 h ; depuis un réseau luxembourgeois) – Luxembourg",
@@ -3349,7 +3349,7 @@
      "schreibt einen verletzenden Entwurf in eine faire Nachricht um",
      "nennt für Betroffene: nicht zurückschießen, sichern, blockieren und melden, zeigen"
     ],
-    "warum": "Im Chat fehlen Stimme und Gesicht, und jede Nachricht lässt sich kopieren; wer vor dem Senden laut prüft und eine Alternative übt, ersetzt den ersten Impuls – Üben mit Rückmeldung nach dem Behavioral Skills Training (Miltenberger, 2016).",
+    "warum": "Im Chat fehlen Stimme und Gesicht, und jede Nachricht lässt sich kopieren; wer vor dem Senden laut prüft und eine Alternative übt, hat eher eine Antwort statt nur des ersten Impulses – Üben mit Rückmeldung nach dem Behavioral Skills Training (Miltenberger, 2016).",
     "links": [
      {
       "titel": "BEE SECURE – sicher im Netz, Helpline 8002 1234 (Mo–Mi und Fr 9–12, Do 15–18 Uhr; aus dem luxemburgischen Netz) – Luxemburg",
@@ -3427,7 +3427,7 @@
      "réécrit un brouillon blessant en message correct",
      "cite pour la personne visée : ne pas riposter, garder, bloquer et signaler, montrer"
     ],
-    "warum": "Dans un chat, la voix et le visage manquent, et chaque message peut être copié ; tester à voix haute avant d’envoyer et s’exercer à une autre réponse remplace la première impulsion – exercice avec retour selon le Behavioral Skills Training (Miltenberger, 2016).",
+    "warum": "Dans un chat, la voix et le visage manquent, et chaque message peut être copié ; tester à voix haute avant d’envoyer et s’exercer à une autre réponse donne une option en plus de la première impulsion – exercice avec retour selon le Behavioral Skills Training (Miltenberger, 2016).",
     "links": [
      {
       "titel": "BEE SECURE – sécurité en ligne, Helpline 8002 1234 (lun.–mer. et ven. 9–12 h, jeu. 15–18 h ; depuis un réseau luxembourgeois) – Luxembourg",
@@ -3845,7 +3845,7 @@
      "schreibt einen verletzenden Entwurf in eine faire Nachricht um",
      "nennt für Betroffene: nicht zurückschießen, sichern, blockieren und melden, zeigen"
     ],
-    "warum": "Im Chat fehlen Stimme und Gesicht, und jede Nachricht lässt sich kopieren; wer vor dem Senden laut prüft und eine Alternative übt, ersetzt den ersten Impuls – Üben mit Rückmeldung nach dem Behavioral Skills Training (Miltenberger, 2016).",
+    "warum": "Im Chat fehlen Stimme und Gesicht, und jede Nachricht lässt sich kopieren; wer vor dem Senden laut prüft und eine Alternative übt, hat eher eine Antwort statt nur des ersten Impulses – Üben mit Rückmeldung nach dem Behavioral Skills Training (Miltenberger, 2016).",
     "links": [
      {
       "titel": "BEE SECURE – sicher im Netz, Helpline 8002 1234 (Mo–Mi und Fr 9–12, Do 15–18 Uhr; aus dem luxemburgischen Netz) – Luxemburg",
@@ -3923,7 +3923,7 @@
      "réécrit un brouillon blessant en message correct",
      "cite pour la personne visée : ne pas riposter, garder, bloquer et signaler, montrer"
     ],
-    "warum": "Dans un chat, la voix et le visage manquent, et chaque message peut être copié ; tester à voix haute avant d’envoyer et s’exercer à une autre réponse remplace la première impulsion – exercice avec retour selon le Behavioral Skills Training (Miltenberger, 2016).",
+    "warum": "Dans un chat, la voix et le visage manquent, et chaque message peut être copié ; tester à voix haute avant d’envoyer et s’exercer à une autre réponse donne une option en plus de la première impulsion – exercice avec retour selon le Behavioral Skills Training (Miltenberger, 2016).",
     "links": [
      {
       "titel": "BEE SECURE – sécurité en ligne, Helpline 8002 1234 (lun.–mer. et ven. 9–12 h, jeu. 15–18 h ; depuis un réseau luxembourgeois) – Luxembourg",
@@ -4087,7 +4087,7 @@
      "erklärt, warum Kopien nicht zurückzuholen sind",
      "prüft Entwürfe mit dem Laut-Test"
     ],
-    "warum": "Ein greifbares Experiment macht unsichtbare Weiterleitungen erfahrbar; das Verständnis der Folgen hilft, vor dem Senden eine andere Möglichkeit zu wählen (Durlak et al., 2011).",
+    "warum": "Ein greifbares Experiment macht unsichtbare Weiterleitungen erfahrbar; aktives, erfahrungsnahes Lernen kennzeichnet wirksame Programme (Durlak et al., 2011).",
     "links": [
      {
       "titel": "BEE SECURE – sicher im Netz, Helpline 8002 1234 (Mo–Mi und Fr 9–12, Do 15–18 Uhr; aus dem luxemburgischen Netz) – Luxemburg",
@@ -4141,7 +4141,7 @@
      "explique pourquoi on ne peut pas récupérer des copies",
      "vérifie des brouillons avec le test à voix haute"
     ],
-    "warum": "Une expérience concrète rend visibles les transferts invisibles ; comprendre les conséquences aide à choisir une autre réponse avant d’envoyer (Durlak et al., 2011).",
+    "warum": "Une expérience concrète rend visibles les transferts invisibles ; un apprentissage actif et concret caractérise les programmes efficaces (Durlak et al., 2011).",
     "links": [
      {
       "titel": "BEE SECURE – sécurité en ligne, Helpline 8002 1234 (lun.–mer. et ven. 9–12 h, jeu. 15–18 h ; depuis un réseau luxembourgeois) – Luxembourg",
@@ -5954,7 +5954,7 @@
     {
      "art": "info",
      "symbol": "hilfe",
-     "text": "Unbekannte wollen Fotos, Geld oder drohen? Nicht antworten, nichts schicken, nicht zahlen, nichts löschen. Erst Erwachsenen zeigen, dann blockieren. Schon etwas geschickt? Du bist nicht schuld. BEE SECURE 8002 1234 (Mo–Mi, Fr 9–12, Do 15–18) · 116 111 (Mo–Sa) · Sonntag, nachts, Gefahr: 112/113."
+     "text": "Unbekannte wollen Fotos, Geld oder drohen? Nicht antworten, nichts schicken, nicht zahlen, nichts löschen. Erst Erwachsenen zeigen, dann blockieren. Schon geschickt? Du bist nicht schuld. BEE SECURE 8002 1234 (Zeiten: bee-secure.lu) · 116 111 (Mo–Sa) · Sonntag, nachts, Gefahr: 112/113."
     },
     {
      "art": "aufgabe",
@@ -6042,7 +6042,7 @@
     {
      "art": "info",
      "symbol": "hilfe",
-     "text": "Un inconnu veut des photos, de l’argent ou menace ? Ne réponds pas, n’envoie rien, ne paie pas, n’efface rien. Montre d’abord à un adulte, puis bloque. Déjà envoyé quelque chose ? Ce n’est pas ta faute. BEE SECURE 8002 1234 (lu–me, ve 9–12 h, je 15–18 h) · 116 111 (lu–sa) · Dimanche, nuit, danger : 112/113."
+     "text": "Un inconnu veut des photos, de l’argent ou menace ? Ne réponds pas, n’envoie rien, ne paie pas, n’efface rien. Montre d’abord à un adulte, puis bloque. Déjà envoyé ? Ce n’est pas ta faute. BEE SECURE 8002 1234 (horaires : bee-secure.lu) · 116 111 (lu–sa) · Dimanche, nuit, danger : 112/113."
     },
     {
      "art": "aufgabe",
@@ -6083,7 +6083,7 @@
     {
      "art": "text",
      "klein": true,
-     "text": "Joé : « La 4.2 écrit de nouvelles règles pour le chat. Tu m’aides ? »"
+     "text": "Joé : « La 4.2 refait les règles du chat. Tu m’aides ? »"
     }
    ],
    "anleitung": {
@@ -6107,7 +6107,7 @@
   },
   "fr": {
    "titel": "Interrupteur 5 : quand est-ce trop lourd ?",
-   "text": "Dimanche, Rita a reçu des messages de quelqu’un qu’elle ne connaît pas. L’enfant tend un bras devant lui, paume vers le haut. L’adulte lit des moments de Rita sur des cartes et pose pour chacun un livre sur le bras, trois au plus. L’enfant décide : si Rita le porte seule, le livre reste. Si un adulte doit aider à porter, l’adulte prend la carte et le livre : « On porte à deux. » Quand le bras tremble-t-il – et quand devient-il léger ? Avec les cartes données, l’enfant trouve lui-même les signes qui veulent dire : on appelle un adulte. Puis il dit ce que Rita fait avec la personne inconnue. Pour finir, il prépare un plan pour Rita – ou, s’il veut, pour lui : quel adulte, quand, où, quelle phrase ?",
+   "text": "Dimanche, Rita a reçu des messages de quelqu’un qu’elle ne connaît pas. L’enfant tend un bras devant lui, paume vers le haut. L’adulte lit des moments de Rita sur des cartes et pose un livre sur le bras pour chaque moment, trois au plus. L’enfant décide : si Rita le porte seule, le livre reste. Si un adulte doit aider à porter, l’adulte prend la carte et le livre : « On porte à deux. » Quand le bras tremble-t-il – et quand devient-il léger ? Avec les cartes données, l’enfant trouve lui-même les signes qui veulent dire : on appelle un adulte. Puis il dit ce que Rita fait avec la personne inconnue. Pour finir, il prépare un plan pour Rita – ou, s’il veut, pour lui : quel adulte, quand, où, quelle phrase ?",
    "sagen": [
     "Porter seul ou donner ? Ton bras te dit si c’est lourd.",
     "Qu’ont en commun les cartes que tu m’as données ?",
@@ -6228,7 +6228,7 @@
        "Qui ?",
        "Quand et où ?",
        "Ma phrase",
-       "« J’ai besoin d’aide pour un truc dans le chat. Je peux te montrer ? »",
+       "« J’ai besoin d’aide pour le chat. Je peux te montrer ? »",
        "« Ça ne s’arrête pas. Je ne sais plus quoi faire. »"
       ]
      },
@@ -6255,7 +6255,7 @@
     ],
     "leichter": "Seulement les cartes 1, 3, 5 et 6 ; le plan comme choix : montrer une personne (enseignante, éducateur, 116 111), phrase de la carte.",
     "schwerer": "L’enfant s’entraîne à la discussion de Rita avec l’adulte dans le rôle de Madame Reuter : montrer la capture, dire la phrase d’aide – sans détails.",
-    "gruppe": "Groupe (4–6) : un enfant porte, les autres décident par un signe de la main si un livre s’ajoute ou si la carte est donnée ; après trois cartes, on change de bras. Le groupe rassemble les signes ensemble. Chaque enfant fait son plan en silence, pour lui ou pour Rita, personne ne lit à voix haute. Fin : tous disent à mi-voix « J’ai besoin d’aide pour un truc dans le chat ».",
+    "gruppe": "Groupe (4–6) : un enfant porte, les autres décident par un signe de la main si un livre s’ajoute ou si la carte est donnée ; après trois cartes, on change de bras. Le groupe rassemble les signes ensemble. Chaque enfant fait son plan en silence, pour lui ou pour Rita, personne ne lit à voix haute. Fin : tous disent à mi-voix « J’ai besoin d’aide pour le chat ».",
     "beobachten": [
      "distingue ce qu’on règle seul et ce qui revient aux adultes",
      "cite des signes comme peur, ça ne s’arrête pas, photos, menace, inconnu",
@@ -6437,7 +6437,7 @@
     {
      "art": "info",
      "symbol": "hilfe",
-     "text": "Unbekannte wollen Fotos, Geld oder drohen? Nicht antworten, nichts schicken, nicht zahlen, nichts löschen. Erst Erwachsenen zeigen, dann blockieren. Schon etwas geschickt? Du bist nicht schuld. BEE SECURE 8002 1234 (Mo–Mi, Fr 9–12, Do 15–18) · 116 111 (Mo–Sa) · Sonntag, nachts, Gefahr: 112/113."
+     "text": "Unbekannte wollen Fotos, Geld oder drohen? Nicht antworten, nichts schicken, nicht zahlen, nichts löschen. Erst Erwachsenen zeigen, dann blockieren. Schon geschickt? Du bist nicht schuld. BEE SECURE 8002 1234 (Zeiten: bee-secure.lu) · 116 111 (Mo–Sa) · Sonntag, nachts, Gefahr: 112/113."
     },
     {
      "art": "aufgabe",
@@ -6520,15 +6520,15 @@
      "art": "ankreuzen",
      "titel": "Ma phrase",
      "items": [
-      "« J’ai besoin d’aide pour un truc dans le chat. »",
-      "« Je peux te montrer quelque chose ? »"
+      "« J’ai besoin d’aide pour le chat. »",
+      "« Je peux te montrer un truc ? »"
      ],
      "spalten": 1
     },
     {
      "art": "info",
      "symbol": "hilfe",
-     "text": "Un inconnu veut des photos, de l’argent ou menace ? Ne réponds pas, n’envoie rien, ne paie pas, n’efface rien. Montre d’abord à un adulte, puis bloque. Déjà envoyé quelque chose ? Ce n’est pas ta faute. BEE SECURE 8002 1234 (lu–me, ve 9–12 h, je 15–18 h) · 116 111 (lu–sa) · Dimanche, nuit, danger : 112/113."
+     "text": "Un inconnu veut des photos, de l’argent ou menace ? Ne réponds pas, n’envoie rien, ne paie pas, n’efface rien. Montre d’abord à un adulte, puis bloque. Déjà envoyé ? Ce n’est pas ta faute. BEE SECURE 8002 1234 (horaires : bee-secure.lu) · 116 111 (lu–sa) · Dimanche, nuit, danger : 112/113."
     },
     {
      "art": "aufgabe",
@@ -6562,7 +6562,7 @@
     {
      "art": "text",
      "klein": true,
-     "text": "Joé : « La 4.2 écrit de nouvelles règles pour le chat. Tu m’aides ? »"
+     "text": "Joé : « La 4.2 refait les règles du chat. Tu m’aides ? »"
     }
    ],
    "anleitung": {
@@ -6586,7 +6586,7 @@
   },
   "fr": {
    "titel": "Interrupteur 5 : quand est-ce trop lourd ?",
-   "text": "Dimanche, Rita a reçu des messages de quelqu’un qu’elle ne connaît pas. L’enfant tend un bras devant lui, paume vers le haut. L’adulte lit des moments de Rita sur des cartes et pose pour chacun un livre sur le bras, trois au plus. L’enfant décide : si Rita le porte seule, le livre reste. Si un adulte doit aider à porter, l’adulte prend la carte et le livre : « On porte à deux. » Quand le bras tremble-t-il – et quand devient-il léger ? Avec les cartes données, l’enfant trouve lui-même les signes qui veulent dire : on appelle un adulte. Puis il dit ce que Rita fait avec la personne inconnue. Pour finir, il prépare un plan pour Rita – ou, s’il veut, pour lui : quel adulte, quand, où, quelle phrase ?",
+   "text": "Dimanche, Rita a reçu des messages de quelqu’un qu’elle ne connaît pas. L’enfant tend un bras devant lui, paume vers le haut. L’adulte lit des moments de Rita sur des cartes et pose un livre sur le bras pour chaque moment, trois au plus. L’enfant décide : si Rita le porte seule, le livre reste. Si un adulte doit aider à porter, l’adulte prend la carte et le livre : « On porte à deux. » Quand le bras tremble-t-il – et quand devient-il léger ? Avec les cartes données, l’enfant trouve lui-même les signes qui veulent dire : on appelle un adulte. Puis il dit ce que Rita fait avec la personne inconnue. Pour finir, il prépare un plan pour Rita – ou, s’il veut, pour lui : quel adulte, quand, où, quelle phrase ?",
    "sagen": [
     "Porter seul ou donner ? Ton bras te dit si c’est lourd.",
     "Qu’ont en commun les cartes que tu m’as données ?",
@@ -6707,7 +6707,7 @@
        "Qui ?",
        "Quand et où ?",
        "Ma phrase",
-       "« J’ai besoin d’aide pour un truc dans le chat. Je peux te montrer ? »",
+       "« J’ai besoin d’aide pour le chat. Je peux te montrer ? »",
        "« Ça ne s’arrête pas. Je ne sais plus quoi faire. »"
       ]
      },
@@ -6734,7 +6734,7 @@
     ],
     "leichter": "Seulement les cartes 1, 3, 5 et 6 ; le plan comme choix : montrer une personne (enseignante, éducateur, 116 111), phrase de la carte.",
     "schwerer": "L’enfant s’entraîne à la discussion de Rita avec l’adulte dans le rôle de Madame Reuter : montrer la capture, dire la phrase d’aide – sans détails.",
-    "gruppe": "Groupe (4–6) : un enfant porte, les autres décident par un signe de la main si un livre s’ajoute ou si la carte est donnée ; après trois cartes, on change de bras. Le groupe rassemble les signes ensemble. Chaque enfant fait son plan en silence, pour lui ou pour Rita, personne ne lit à voix haute. Fin : tous disent à mi-voix « J’ai besoin d’aide pour un truc dans le chat ».",
+    "gruppe": "Groupe (4–6) : un enfant porte, les autres décident par un signe de la main si un livre s’ajoute ou si la carte est donnée ; après trois cartes, on change de bras. Le groupe rassemble les signes ensemble. Chaque enfant fait son plan en silence, pour lui ou pour Rita, personne ne lit à voix haute. Fin : tous disent à mi-voix « J’ai besoin d’aide pour le chat ».",
     "beobachten": [
      "distingue ce qu’on règle seul et ce qui revient aux adultes",
      "cite des signes comme peur, ça ne s’arrête pas, photos, menace, inconnu",
@@ -6863,7 +6863,7 @@
   },
   "fr": {
    "titel": "Interrupteur 5 : la ligne à porter",
-   "text": "Rita a reçu des messages de quelqu’un qu’elle ne connaît pas. Au sol, une corde : à un bout « Je porte seul », à l’autre un interrupteur en papier « Adulte ». L’adulte lit des moments de Rita ; pour chaque moment, l’enfant prend un livre dans les bras et se place au bon endroit de la ligne. Plus on est près de l’interrupteur, plus la pile est lourde. À l’interrupteur, il pose tout, appuie et dit tout haut : « J’ai besoin d’aide pour un truc dans le chat. » Échange des rôles : l’adulte se place une fois au mauvais endroit, l’enfant l’amène à l’interrupteur. Phrase-clé : « Trop lourd pour une seule personne ? J’appelle un adulte. »",
+   "text": "Rita a reçu des messages de quelqu’un qu’elle ne connaît pas. Au sol, une corde : à un bout « Je porte seul », à l’autre un interrupteur en papier « Adulte ». L’adulte lit des moments de Rita ; pour chaque moment, l’enfant prend un livre dans les bras et se place au bon endroit de la ligne. Plus on est près de l’interrupteur, plus la pile est lourde. À l’interrupteur, il pose tout, appuie et dit tout haut : « J’ai besoin d’aide pour le chat. » Échange des rôles : l’adulte se place une fois au mauvais endroit, l’enfant l’amène à l’interrupteur. Phrase-clé : « Trop lourd pour une seule personne ? J’appelle un adulte. »",
    "sagen": [
     "Où te places-tu sur la ligne pour ce moment ?",
     "Ta pile est lourde comment, maintenant ?",
@@ -7540,7 +7540,7 @@
       "karten": [
        "Abstimmen: Jede Haltung gilt, wenn das Kind einen Grund sagt. Nicht korrigieren, nachfragen.",
        "Haken, nicht vorsagen: A macht Druck. E verbietet Beweise, die Erwachsene brauchen. H gibt Admins Macht ohne Regel.",
-       "Zuordnung frei, wenn begründet: B, F Später · D Schaufenster oder Screenshot · G Screenshot · C Erst fragen · I Erwachsene.",
+       "Zuordnung frei, wenn begründet: Karten B und F → Später · D → Schaufenster oder Screenshot · G → Screenshot · C → Erst fragen · I → Erwachsene.",
        "F und G stammen von Amar und Joé: Amar hat kein Handy, Joé hört Sprachnachrichten mit Hörgerät schlecht.",
        "Eigene Einstellungen: Kein Kind muss ein Handy haben. „Die Schalter gelten auch beim Zuschauen, beim Spielen und später.“"
       ]
@@ -7622,7 +7622,7 @@
       "karten": [
        "Vote : toute position compte si l’enfant donne une raison. Ne pas corriger, questionner.",
        "Pièges, sans souffler : A met la pression. E interdit des preuves dont les adultes ont besoin. H donne aux admins un pouvoir sans règle.",
-       "Association libre si justifiée : B, F Plus tard · D Vitrine ou Capture · G Capture · C Demander · I Adulte.",
+       "Association libre si justifiée : cartes B et F → Plus tard · D → Vitrine ou Capture · G → Capture · C → Demander · I → Adulte.",
        "F et G viennent d’Amar et Joé : Amar n’a pas de portable, Joé entend mal les vocaux avec son appareil auditif.",
        "Réglages : aucun enfant n’a besoin d’un portable. « Les interrupteurs comptent aussi quand on regarde, quand on joue et plus tard. »"
       ]
@@ -7894,8 +7894,8 @@
     {
      "art": "ankreuzen",
      "items": [
-      "« J’ai besoin d’aide pour un truc dans le chat. »",
-      "« Je peux te montrer quelque chose ? »"
+      "« J’ai besoin d’aide pour le chat. »",
+      "« Je peux te montrer un truc ? »"
      ],
      "spalten": 1
     },
@@ -8005,7 +8005,7 @@
       "karten": [
        "Abstimmen: Jede Haltung gilt, wenn das Kind einen Grund sagt. Nicht korrigieren, nachfragen.",
        "Haken, nicht vorsagen: A macht Druck. E verbietet Beweise, die Erwachsene brauchen. H gibt Admins Macht ohne Regel.",
-       "Zuordnung frei, wenn begründet: B, F Später · D Schaufenster oder Screenshot · G Screenshot · C Erst fragen · I Erwachsene.",
+       "Zuordnung frei, wenn begründet: Karten B und F → Später · D → Schaufenster oder Screenshot · G → Screenshot · C → Erst fragen · I → Erwachsene.",
        "F und G stammen von Amar und Joé: Amar hat kein Handy, Joé hört Sprachnachrichten mit Hörgerät schlecht.",
        "Eigene Einstellungen: Kein Kind muss ein Handy haben. „Die Schalter gelten auch beim Zuschauen, beim Spielen und später.“"
       ]
@@ -8087,7 +8087,7 @@
       "karten": [
        "Vote : toute position compte si l’enfant donne une raison. Ne pas corriger, questionner.",
        "Pièges, sans souffler : A met la pression. E interdit des preuves dont les adultes ont besoin. H donne aux admins un pouvoir sans règle.",
-       "Association libre si justifiée : B, F Plus tard · D Vitrine ou Capture · G Capture · C Demander · I Adulte.",
+       "Association libre si justifiée : cartes B et F → Plus tard · D → Vitrine ou Capture · G → Capture · C → Demander · I → Adulte.",
        "F et G viennent d’Amar et Joé : Amar n’a pas de portable, Joé entend mal les vocaux avec son appareil auditif.",
        "Réglages : aucun enfant n’a besoin d’un portable. « Les interrupteurs comptent aussi quand on regarde, quand on joue et plus tard. »"
       ]
