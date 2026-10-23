@@ -33,6 +33,8 @@ export interface DruckSchritt {
   /** der Slot „Übung/Blatt“ */
   blatt?: boolean
   erkundung?: boolean
+  /** der Kern der Stunde (Startseite: Minutenplan oder nummerierte Handlungen) */
+  kern?: boolean
   /** Kern mit Spickzettel (hilfen.aufbau): Minutenplan ohne wörtliche Sätze, für die Startseite der Sitzung (Rückmeldung
    *  23.10.2026: „zu viele Erklärungen, man weiß nicht, wo anfangen – es sind geschulte Fachkräfte“) */
   ablauf?: { min: string; was: string }[]
@@ -419,6 +421,7 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     hinweis: !x.hinweis || NUR_OBERFLAECHE.test(x.hinweis) ? undefined : sprache === 'fr' ? hinweisFr(x.hinweis) : x.hinweis,
     blatt: x.ref === 'pg:blatt',
     erkundung: x.erkundung,
+    ...(x.rolle === 'kern' ? { kern: true } : {}),
   }
   // Grundgerüst: jeder Kern endet damit, dass das Werkzeug einen Namen bekommt – Übertragen, Blatt und Rückblick nennen ihn
   // später (Blind-Bewertung 13: „Anderes-Ende-Trick“ stand im Übertragen und auf dem Blatt, das Kind hatte ihn nie gehört)

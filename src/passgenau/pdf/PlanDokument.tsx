@@ -530,6 +530,17 @@ export function SpickzettelSeite({ d, anhang = false }: { d: DruckSitzung; anhan
                   ))}
                   {x.ablaufRest ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, lineHeight: 1.35, color: '#4A5263', marginTop: 2 }}>{ty(x.ablaufRest, sp)}</Text> : null}
                 </View>
+              ) : x.text && x.kern && !x.blatt ? (
+                // ohne Spickzettel (ältere Kurse, Übungen außerhalb der Kurse): die Handlungen des Kerns, nummeriert – die Anleitung
+                // gehört auf die Startseite, nicht in die Zusatzinfo
+                <View style={{ marginTop: 3 }}>
+                  {handlungen(x.text).teile.map((t, k, alle) => (
+                    <View key={k} style={{ flexDirection: 'row', marginBottom: 1.6 }}>
+                      {alle.length > 1 ? <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 8.4, color: P.tief, width: 14 }}>{`${k + 1}`}</Text> : null}
+                      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9, lineHeight: 1.35, color: NEUTRAL.text, flex: 1 }}>{ty(t, sp)}</Text>
+                    </View>
+                  ))}
+                </View>
               ) : x.kurz ? (
                 <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, lineHeight: 1.35, color: '#4A5263', marginTop: 1 }}>{ty(x.kurz, sp)}</Text>
               ) : null}
