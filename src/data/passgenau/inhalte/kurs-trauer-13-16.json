@@ -191,7 +191,7 @@
   "ort": "raum",
   "werkzeug": {
    "de": "Belichtung: Trauer kommt in Schüben – grell, dann wird es wieder sichtbar.",
-   "fr": "Exposition : le deuil arrive par à-coups – aveuglant, puis on revoit."
+   "fr": "Exposition : le deuil arrive par vagues – ça éblouit, puis on revoit."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -320,7 +320,7 @@
        "art": "info",
        "symbol": "wissen",
        "titel": "Aujourd’hui : réglage 1 – Exposition",
-       "text": "« Le deuil arrive par à-coups. Ça éblouit – puis je revois. »"
+       "text": "« Le deuil arrive par vagues. Ça éblouit – puis je revois. »"
       },
       {
        "art": "text",
@@ -428,7 +428,7 @@
   },
   "fr": {
    "titel": "Exposition : quand le deuil éblouit d’un coup",
-   "text": "Test des yeux : le ou la jeune pose les mains sur ses yeux fermés pendant 20 secondes, puis les retire et regarde vers la fenêtre – ça éblouit, et après quelques secondes on revoit tout. L’adulte raconte : c’est ainsi que Kenza (15 ans), du club photo de Belval, décrit ses journées depuis que son cousin Nassim est mort en février, à 19 ans, dans un accident de voiture. Huit cartes moments du mercredi de Kenza forment une ligne au sol. Le ou la jeune la parcourt et pose des pièces comme flashs là où le deuil éblouit d’un coup. Puis il ou elle choisit pour deux flashs un pare-soleil – en expert de la vie au lycée. Phrase-clé : « Le deuil arrive par à-coups. Ça éblouit – puis je revois. »",
+   "text": "Test des yeux : le ou la jeune pose les mains sur ses yeux fermés pendant 20 secondes, puis les retire et regarde vers la fenêtre – ça éblouit, et après quelques secondes on revoit tout. L’adulte raconte : c’est ainsi que Kenza (15 ans), du club photo de Belval, décrit ses journées depuis que son cousin Nassim est mort en février, à 19 ans, dans un accident de voiture. Huit cartes moments du mercredi de Kenza forment une ligne au sol. Le ou la jeune la parcourt et pose des pièces comme flashs là où le deuil éblouit d’un coup. Puis il ou elle choisit pour deux flashs un pare-soleil – en expert·e de la vie au lycée. Phrase-clé : « Le deuil arrive par vagues. Ça éblouit – puis je revois. »",
    "sagen": [
     "Les mains sur les yeux. 20 secondes… on enlève. Ça éblouit ? Et maintenant ?",
     "Nassim est mort en février dans un accident de voiture. Kenza dit : « C’est tout à fait ça. En plein cours de maths – aveuglant. »",
@@ -496,7 +496,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -559,7 +558,7 @@
      {
       "titel": "Pare-soleil (8 cartes)",
       "karten": [
-       "Sortir un moment : convenir avant d’un signe avec le prof.",
+       "Sortir un moment : convenir d’un signe à l’avance avec le prof.",
        "5 – 4 – 3 : voir cinq choses, en entendre quatre, en sentir trois.",
        "Expirer lentement trois fois – l’expiration plus longue que l’inspiration.",
        "Boire de l’eau, passer les mains sous l’eau froide.",
@@ -585,7 +584,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -697,7 +695,7 @@
   "ort": "raum",
   "werkzeug": {
    "de": "Belichtung: Trauer kommt in Schüben – grell, dann wird es wieder sichtbar.",
-   "fr": "Exposition : le deuil arrive par à-coups – aveuglant, puis on revoit."
+   "fr": "Exposition : le deuil arrive par vagues – ça éblouit, puis on revoit."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -829,7 +827,7 @@
        "art": "info",
        "symbol": "wissen",
        "titel": "Aujourd’hui : réglage 1 – Exposition",
-       "text": "« Le deuil arrive par à-coups. Ça éblouit – puis je revois. »"
+       "text": "« Le deuil arrive par vagues. Ça éblouit – puis je revois. »"
       },
       {
        "art": "text",
@@ -940,7 +938,7 @@
   },
   "fr": {
    "titel": "Exposition : quand le deuil éblouit d’un coup",
-   "text": "Test des yeux : le ou la jeune pose les mains sur ses yeux fermés pendant 20 secondes, puis les retire et regarde vers la fenêtre – ça éblouit, et après quelques secondes on revoit tout. L’adulte raconte : c’est ainsi que Kenza (15 ans), du club photo de Belval, décrit ses journées depuis que son cousin Nassim est mort en février, à 19 ans, dans un accident de voiture. Huit cartes moments du mercredi de Kenza forment une ligne au sol. Le ou la jeune la parcourt et pose des pièces comme flashs là où le deuil éblouit d’un coup. Puis il ou elle choisit pour deux flashs un pare-soleil – en expert de la vie au lycée. Phrase-clé : « Le deuil arrive par à-coups. Ça éblouit – puis je revois. »",
+   "text": "Test des yeux : le ou la jeune pose les mains sur ses yeux fermés pendant 20 secondes, puis les retire et regarde vers la fenêtre – ça éblouit, et après quelques secondes on revoit tout. L’adulte raconte : c’est ainsi que Kenza (15 ans), du club photo de Belval, décrit ses journées depuis que son cousin Nassim est mort en février, à 19 ans, dans un accident de voiture. Huit cartes moments du mercredi de Kenza forment une ligne au sol. Le ou la jeune la parcourt et pose des pièces comme flashs là où le deuil éblouit d’un coup. Puis il ou elle choisit pour deux flashs un pare-soleil – en expert·e de la vie au lycée. Phrase-clé : « Le deuil arrive par vagues. Ça éblouit – puis je revois. »",
    "sagen": [
     "Les mains sur les yeux. 20 secondes… on enlève. Ça éblouit ? Et maintenant ?",
     "Nassim est mort en février dans un accident de voiture. Kenza dit : « C’est tout à fait ça. En plein cours de maths – aveuglant. »",
@@ -1008,7 +1006,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -1071,7 +1068,7 @@
      {
       "titel": "Pare-soleil (8 cartes)",
       "karten": [
-       "Sortir un moment : convenir avant d’un signe avec le prof.",
+       "Sortir un moment : convenir d’un signe à l’avance avec le prof.",
        "5 – 4 – 3 : voir cinq choses, en entendre quatre, en sentir trois.",
        "Expirer lentement trois fois – l’expiration plus longue que l’inspiration.",
        "Boire de l’eau, passer les mains sous l’eau froide.",
@@ -1097,7 +1094,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -1187,7 +1183,7 @@
   "einzeltauglich": "ja",
   "werkzeug": {
    "de": "Belichtung: Trauer kommt in Schüben – grell, dann wird es wieder sichtbar.",
-   "fr": "Exposition : le deuil arrive par à-coups – aveuglant, puis on revoit."
+   "fr": "Exposition : le deuil arrive par vagues – ça éblouit, puis on revoit."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -1230,7 +1226,7 @@
   },
   "fr": {
    "titel": "Exposition : le mercredi de Kenza à écouter",
-   "text": "Test des yeux comme dans la variante : les mains sur les yeux, puis on regarde la lumière. L’adulte raconte brièvement en mots clairs : Nassim, le cousin de Kenza, est mort en février dans un accident de voiture. Puis l’adulte lit le mercredi de Kenza comme une pièce sonore, moment après moment, avec un petit « clic » entre chaque. Chaque fois que le deuil éblouit Kenza, le ou la jeune ouvre vite les deux mains comme un flash. Ensuite, il ou elle devient le coach de Kenza : l’adulte joue Kenza dans le bus (« Ça sent comme lui, je ne supporte pas »), le ou la jeune lui souffle un pare-soleil, Kenza l’essaie. Sortie du rôle : « Appareil éteint – tu redeviens toi. » Phrase-clé : « Le deuil arrive par à-coups. Ça éblouit – puis je revois. »",
+   "text": "Test des yeux comme dans la variante : les mains sur les yeux, puis on regarde la lumière. L’adulte raconte brièvement en mots clairs : Nassim, le cousin de Kenza, est mort en février dans un accident de voiture. Puis l’adulte lit le mercredi de Kenza comme une pièce sonore, moment après moment, avec un petit « clic » entre chaque. Chaque fois que le deuil éblouit Kenza, le ou la jeune ouvre vite les deux mains comme un flash. Ensuite, il ou elle devient le coach de Kenza : l’adulte joue Kenza dans le bus (« Ça sent comme lui, je ne supporte pas »), le ou la jeune lui souffle un pare-soleil, Kenza l’essaie. Sortie du rôle : « Appareil éteint – tu redeviens toi. » Phrase-clé : « Le deuil arrive par vagues. Ça éblouit – puis je revois. »",
    "sagen": [
     "Écoute. Clic… 7 h 10, dans le bus. Flash ou pas ?",
     "Maintenant, je suis Kenza. Tu me souffles quoi ?",
@@ -1290,7 +1286,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -1350,7 +1345,7 @@
      {
       "titel": "Pare-soleil (8 cartes)",
       "karten": [
-       "Sortir un moment : convenir avant d’un signe avec le prof.",
+       "Sortir un moment : convenir d’un signe à l’avance avec le prof.",
        "5 – 4 – 3 : voir cinq choses, en entendre quatre, en sentir trois.",
        "Expirer lentement trois fois – l’expiration plus longue que l’inspiration.",
        "Boire de l’eau, passer les mains sous l’eau froide.",
@@ -1376,7 +1371,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -1465,7 +1459,7 @@
   "einzeltauglich": "ja",
   "werkzeug": {
    "de": "Belichtung: Trauer kommt in Schüben – grell, dann wird es wieder sichtbar.",
-   "fr": "Exposition : le deuil arrive par à-coups – aveuglant, puis on revoit."
+   "fr": "Exposition : le deuil arrive par vagues – ça éblouit, puis on revoit."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -1510,7 +1504,7 @@
   },
   "fr": {
    "titel": "Exposition : dessiner une courbe au calme",
-   "text": "À table, sans se lever. L’adulte raconte calmement : Kenza (15 ans) pense à son cousin Nassim, mort en février ; parfois, le deuil l’éblouit en pleine journée. L’adulte lit quatre moments du mercredi de Kenza. Le ou la jeune trace une ligne sur une feuille blanche : en haut quand ça éblouit Kenza, à plat quand c’est calme – sans explication, juste avec le crayon. Puis l’adulte pose quatre cartes pare-soleil ; le ou la jeune en pousse deux vers Kenza. Il s’agit seulement de Kenza et de son histoire. Phrase-clé : « Le deuil arrive par à-coups. Ça éblouit – puis je revois. »",
+   "text": "À table, sans se lever. L’adulte raconte calmement : Kenza (15 ans) pense à son cousin Nassim, mort en février ; parfois, le deuil l’éblouit en pleine journée. L’adulte lit quatre moments du mercredi de Kenza. Le ou la jeune trace une ligne sur une feuille blanche : en haut quand ça éblouit Kenza, à plat quand c’est calme – sans explication, juste avec le crayon. Puis l’adulte pose quatre cartes pare-soleil ; le ou la jeune en pousse deux vers Kenza. Il s’agit seulement de Kenza et de son histoire. Phrase-clé : « Le deuil arrive par vagues. Ça éblouit – puis je revois. »",
    "sagen": [
     "Je lis, tu dessines. En haut ou à plat ?",
     "Quelles deux cartes tu pousses vers Kenza ?",
@@ -1561,7 +1555,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -1617,7 +1610,7 @@
      {
       "titel": "Pare-soleil (4 cartes)",
       "karten": [
-       "Sortir un moment : convenir avant d’un signe avec le prof.",
+       "Sortir un moment : convenir d’un signe à l’avance avec le prof.",
        "5 – 4 – 3 : voir cinq choses, en entendre quatre, en sentir trois.",
        "Expirer lentement trois fois – l’expiration plus longue que l’inspiration.",
        "Boire de l’eau, passer les mains sous l’eau froide."
@@ -1638,7 +1631,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -2032,7 +2024,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -2116,7 +2107,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -2487,7 +2477,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -2571,7 +2560,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -2754,7 +2742,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -2826,7 +2813,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -3009,7 +2995,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -3081,7 +3066,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -3498,7 +3482,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -3511,7 +3494,7 @@
      "plant für eine Figur Zeit zum Erinnern und Zeit für Alltag",
      "nimmt Kontaktabbruch und Umzug als echten Verlust ernst"
     ],
-    "warum": "Nach dem Dualen Prozessmodell (Stroebe & Schut, 1999, 2010) pendeln Trauernde zwischen verlustorientiertem Erleben und Alltag; Dauer-Grübeln wie Dauer-Vermeiden erschweren die Anpassung. Kontaktabbruch ist ein uneindeutiger Verlust (Boss, 1999).",
+    "warum": "Nach dem Dualen Prozessmodell (Stroebe & Schut, 1999, 2010) pendeln Trauernde zwischen dem Verlust (Vermissen, Erinnern) und der Wiederherstellung (Neues anpacken, neue Rollen übernehmen, Pausen von der Trauer); Dauer-Grübeln wie Dauer-Vermeiden erschweren die Anpassung. Kontaktabbruch ist ein uneindeutiger Verlust (Boss, 1999).",
     "links": [
      {
       "titel": "Omega 90 – Trauerberatung für Kinder, Jugendliche und Bezugspersonen, einzeln oder in Gruppen; Tel. 26 00 37-1 (Mo–Fr 8–17 Uhr)",
@@ -3585,7 +3568,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -3598,7 +3580,7 @@
      "prévoit pour une figure du temps pour se souvenir et du temps pour le quotidien",
      "prend au sérieux la rupture de contact et le déménagement comme de vraies pertes"
     ],
-    "warum": "Selon le modèle du double processus (Stroebe & Schut, 1999, 2010), les endeuillés oscillent entre la perte et le quotidien ; ruminer sans cesse comme éviter sans cesse freine l’adaptation. La rupture de contact est une perte ambiguë (Boss, 1999).",
+    "warum": "Selon le modèle du double processus (Stroebe & Schut, 1999, 2010), les endeuillés oscillent entre la perte (manque, souvenirs) et la reconstruction (faire du neuf, prendre de nouveaux rôles, faire des pauses dans le deuil) ; ruminer sans cesse comme éviter sans cesse freine l’adaptation. La rupture de contact est une perte ambiguë (Boss, 1999).",
     "links": [
      {
       "titel": "Omega 90 – consultation de deuil pour enfants, adolescents et proches, seul ou en groupe ; tél. 26 00 37-1 (lun.–ven. 8–17 h)",
@@ -4025,7 +4007,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -4038,7 +4019,7 @@
      "plant für eine Figur Zeit zum Erinnern und Zeit für Alltag",
      "nimmt Kontaktabbruch und Umzug als echten Verlust ernst"
     ],
-    "warum": "Nach dem Dualen Prozessmodell (Stroebe & Schut, 1999, 2010) pendeln Trauernde zwischen verlustorientiertem Erleben und Alltag; Dauer-Grübeln wie Dauer-Vermeiden erschweren die Anpassung. Kontaktabbruch ist ein uneindeutiger Verlust (Boss, 1999).",
+    "warum": "Nach dem Dualen Prozessmodell (Stroebe & Schut, 1999, 2010) pendeln Trauernde zwischen dem Verlust (Vermissen, Erinnern) und der Wiederherstellung (Neues anpacken, neue Rollen übernehmen, Pausen von der Trauer); Dauer-Grübeln wie Dauer-Vermeiden erschweren die Anpassung. Kontaktabbruch ist ein uneindeutiger Verlust (Boss, 1999).",
     "links": [
      {
       "titel": "Omega 90 – Trauerberatung für Kinder, Jugendliche und Bezugspersonen, einzeln oder in Gruppen; Tel. 26 00 37-1 (Mo–Fr 8–17 Uhr)",
@@ -4112,7 +4093,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -4125,7 +4105,7 @@
      "prévoit pour une figure du temps pour se souvenir et du temps pour le quotidien",
      "prend au sérieux la rupture de contact et le déménagement comme de vraies pertes"
     ],
-    "warum": "Selon le modèle du double processus (Stroebe & Schut, 1999, 2010), les endeuillés oscillent entre la perte et le quotidien ; ruminer sans cesse comme éviter sans cesse freine l’adaptation. La rupture de contact est une perte ambiguë (Boss, 1999).",
+    "warum": "Selon le modèle du double processus (Stroebe & Schut, 1999, 2010), les endeuillés oscillent entre la perte (manque, souvenirs) et la reconstruction (faire du neuf, prendre de nouveaux rôles, faire des pauses dans le deuil) ; ruminer sans cesse comme éviter sans cesse freine l’adaptation. La rupture de contact est une perte ambiguë (Boss, 1999).",
     "links": [
      {
       "titel": "Omega 90 – consultation de deuil pour enfants, adolescents et proches, seul ou en groupe ; tél. 26 00 37-1 (lun.–ven. 8–17 h)",
@@ -4299,7 +4279,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -4373,7 +4352,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -4563,7 +4541,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -4641,7 +4618,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -5026,7 +5002,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -5121,7 +5096,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -5519,7 +5493,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -5614,7 +5587,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -5799,7 +5771,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -5869,7 +5840,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -6066,7 +6036,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -6151,7 +6120,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -6563,7 +6531,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -6649,7 +6616,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -7066,7 +7032,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -7152,7 +7117,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -7348,7 +7312,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -7431,7 +7394,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -7618,7 +7580,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -7693,7 +7654,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -8076,7 +8036,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -8114,7 +8073,7 @@
     ]
    },
    "fr": {
-    "haken": "Inversion des rôles : le ou la jeune montre à l’adulte les cinq réglages avec le corps – expert de tout un cours, en une minute.",
+    "haken": "Inversion des rôles : le ou la jeune montre à l’adulte les cinq réglages avec le corps – expert·e de tout un cours, en une minute.",
     "vorbereitung": [
      "Imprimer et découper les cartes réglages (5) et photos (6) ; poser la photo 24 retournée",
      "Repasser une fois les cinq gestes",
@@ -8149,7 +8108,7 @@
       "karten": [
        "Ni juste ni faux : toute mise en scène qui laisse le choix à Kenza et la soutient, porte.",
        "Lire la photo 24 seulement à la fin. Ensuite, supporter le silence, ne rien interpréter.",
-       "Clôture : reconnaître ce que le ou la jeune a apporté comme expert – concrètement, avec un exemple.",
+       "Clôture : reconnaître ce que le ou la jeune a apporté comme expert·e – concrètement, avec un exemple.",
        "Deuil du ou de la jeune inchangé et paralysant après de longs mois : avec la personne de référence, impliquer SePAS, CePAS ou Omega 90 – pas de diagnostic."
       ]
      },
@@ -8160,7 +8119,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -8558,7 +8516,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -8596,7 +8553,7 @@
     ]
    },
    "fr": {
-    "haken": "Inversion des rôles : le ou la jeune montre à l’adulte les cinq réglages avec le corps – expert de tout un cours, en une minute.",
+    "haken": "Inversion des rôles : le ou la jeune montre à l’adulte les cinq réglages avec le corps – expert·e de tout un cours, en une minute.",
     "vorbereitung": [
      "Imprimer et découper les cartes réglages (5) et photos (6) ; poser la photo 24 retournée",
      "Repasser une fois les cinq gestes",
@@ -8631,7 +8588,7 @@
       "karten": [
        "Ni juste ni faux : toute mise en scène qui laisse le choix à Kenza et la soutient, porte.",
        "Lire la photo 24 seulement à la fin. Ensuite, supporter le silence, ne rien interpréter.",
-       "Clôture : reconnaître ce que le ou la jeune a apporté comme expert – concrètement, avec un exemple.",
+       "Clôture : reconnaître ce que le ou la jeune a apporté comme expert·e – concrètement, avec un exemple.",
        "Deuil du ou de la jeune inchangé et paralysant après de longs mois : avec la personne de référence, impliquer SePAS, CePAS ou Omega 90 – pas de diagnostic."
       ]
      },
@@ -8642,7 +8599,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -8826,7 +8782,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -8886,7 +8841,7 @@
       "karten": [
        "Ni juste ni faux : toute mise en scène qui laisse le choix à Kenza et la soutient, porte.",
        "Lire la photo 24 seulement à la fin. Ensuite, supporter le silence, ne rien interpréter.",
-       "Clôture : reconnaître ce que le ou la jeune a apporté comme expert – concrètement, avec un exemple.",
+       "Clôture : reconnaître ce que le ou la jeune a apporté comme expert·e – concrètement, avec un exemple.",
        "Deuil du ou de la jeune inchangé et paralysant après de longs mois : avec la personne de référence, impliquer SePAS, CePAS ou Omega 90 – pas de diagnostic."
       ]
      },
@@ -8897,7 +8852,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }
@@ -9087,7 +9041,6 @@
        "Bei „will nicht mehr aufwachen“ oder „will zu ihm“ direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Fragen schadet nicht.",
        "Bei Ja: bleiben, ruhig nachfragen (Plan? Wann?), nicht allein lassen, heute noch SePAS und Leitung. Akute Gefahr: 112.",
        "Danach: Bezugsperson heute informieren, die oder der Jugendliche weiß es vorher. Notiz an Leitung; Gefahr von zu Hause: Leitung entscheidet.",
-       "Suizid als Todesursache: Klartext ohne Wie. Schuldgefühle ernst nehmen; Omega 90: 26 00 37-1.",
        "Nachts: Erwachsene zu Hause wecken, in Gefahr 112, SOS Détresse 45 45 45. Für dich: Supervision."
       ]
      }
@@ -9153,7 +9106,7 @@
       "karten": [
        "Ni juste ni faux : toute mise en scène qui laisse le choix à Kenza et la soutient, porte.",
        "Lire la photo 24 seulement à la fin. Ensuite, supporter le silence, ne rien interpréter.",
-       "Clôture : reconnaître ce que le ou la jeune a apporté comme expert – concrètement, avec un exemple.",
+       "Clôture : reconnaître ce que le ou la jeune a apporté comme expert·e – concrètement, avec un exemple.",
        "Deuil du ou de la jeune inchangé et paralysant après de longs mois : avec la personne de référence, impliquer SePAS, CePAS ou Omega 90 – pas de diagnostic."
       ]
      },
@@ -9164,7 +9117,6 @@
        "Si « je ne veux plus me réveiller » ou « je veux le rejoindre » : demander directement : « Tu penses à mettre fin à ta vie ? » Demander ne fait pas de mal.",
        "Si oui : rester, demander calmement (un plan ? quand ?), ne pas laisser seul, le jour même SePAS et direction. Danger immédiat : 112.",
        "Après : informer la personne de référence le jour même, le ou la jeune le sait avant. Note à la direction ; danger à la maison : elle décide.",
-       "Suicide comme cause de décès : mots clairs, sans le comment. Prendre la culpabilité au sérieux ; Omega 90 : 26 00 37-1.",
        "La nuit : réveiller un adulte à la maison, en danger 112, SOS Détresse 45 45 45. Pour toi : supervision."
       ]
      }

@@ -203,7 +203,7 @@
    "nr": 1,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    }
   },
   "imSpiel": {
@@ -375,7 +375,7 @@
        "titel": "Pieds-valeurs"
       },
       {
-       "titel": "Cris du bord"
+       "titel": "Cris de la galerie"
       },
       {
        "titel": "Chaise d’essai"
@@ -415,7 +415,7 @@
   },
   "fr": {
    "titel": "Cartes de table : qui est qui ?",
-   "text": "L’adulte lit une carte : « Admin, 22 h 10 : “Rule 3: no insults.” 300 personnes lisent. » Qui est-ce ? L’équipe média d’un lycée de Bonnevoie prépare la série de portraits « Qui est à ta table ? » sur Yonas (15 ans), Kika (16 ans) et Mil (13 ans) – et a mélangé ses notes. Trois cartes de personnes et neuf cartes de table sont posées. Le ou la jeune les attribue – chaque personne a exactement trois cartes – et nomme l’indice. Puis il ou elle essaie deux postures assises : comme Yonas en cours de français – et en admin devant 300 personnes. Qu’est-ce qui change dans les épaules, le souffle, la voix ? Pour finir, en expert, il ou elle ajoute une facette que l’équipe média a oubliée. Phrase-clé : « J’ai plein de facettes – chacune a sa place à ma table. »",
+   "text": "L’adulte lit une carte : « Admin, 22 h 10 : “Rule 3: no insults.” 300 personnes lisent. » Qui est-ce ? L’équipe média d’un lycée de Bonnevoie prépare la série de portraits « Qui est à ta table ? » sur Yonas (15 ans), Kika (16 ans) et Mil (13 ans) – et a mélangé ses notes. Trois cartes de personnes et neuf cartes de table sont posées. Le ou la jeune les attribue – chaque personne a exactement trois cartes – et nomme l’indice. Puis il ou elle essaie deux postures assises : comme Yonas en cours de français – et en admin devant 300 personnes. Qu’est-ce qui change dans les épaules, le souffle, la voix ? Pour finir, en expert·e, il ou elle ajoute une facette que l’équipe média a oubliée. Phrase-clé : « J’ai plein de facettes – chacune a sa place à ma table. »",
    "sagen": [
     "Écoute : « Admin, 22 h 10 : Rule 3: no insults. 300 personnes lisent. » Qui ça pourrait être ?",
     "L’équipe média a mélangé neuf notes, trois par personne. Tu tries – et tu me dis quel indice te rend sûr.",
@@ -689,7 +689,7 @@
    "nr": 1,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    }
   },
   "imSpiel": {
@@ -855,7 +855,7 @@
        "titel": "Pieds-valeurs"
       },
       {
-       "titel": "Cris du bord"
+       "titel": "Cris de la galerie"
       },
       {
        "titel": "Chaise d’essai"
@@ -895,7 +895,7 @@
   },
   "fr": {
    "titel": "Cartes de table : qui est qui ?",
-   "text": "L’adulte lit une carte : « Admin, 22 h 10 : “Rule 3: no insults.” 300 personnes lisent. » Qui est-ce ? L’équipe média d’un lycée de Bonnevoie prépare la série de portraits « Qui est à ta table ? » sur Yonas (15 ans), Kika (16 ans) et Mil (13 ans) – et a mélangé ses notes. Trois cartes de personnes et neuf cartes de table sont posées. Le ou la jeune les attribue – chaque personne a exactement trois cartes – et nomme l’indice. Puis il ou elle essaie deux postures assises : comme Yonas en cours de français – et en admin devant 300 personnes. Qu’est-ce qui change dans les épaules, le souffle, la voix ? Pour finir, en expert, il ou elle ajoute une facette que l’équipe média a oubliée. Phrase-clé : « J’ai plein de facettes – chacune a sa place à ma table. »",
+   "text": "L’adulte lit une carte : « Admin, 22 h 10 : “Rule 3: no insults.” 300 personnes lisent. » Qui est-ce ? L’équipe média d’un lycée de Bonnevoie prépare la série de portraits « Qui est à ta table ? » sur Yonas (15 ans), Kika (16 ans) et Mil (13 ans) – et a mélangé ses notes. Trois cartes de personnes et neuf cartes de table sont posées. Le ou la jeune les attribue – chaque personne a exactement trois cartes – et nomme l’indice. Puis il ou elle essaie deux postures assises : comme Yonas en cours de français – et en admin devant 300 personnes. Qu’est-ce qui change dans les épaules, le souffle, la voix ? Pour finir, en expert·e, il ou elle ajoute une facette que l’équipe média a oubliée. Phrase-clé : « J’ai plein de facettes – chacune a sa place à ma table. »",
    "sagen": [
     "Écoute : « Admin, 22 h 10 : Rule 3: no insults. 300 personnes lisent. » Qui ça pourrait être ?",
     "L’équipe média a mélangé neuf notes, trois par personne. Tu tries – et tu me dis quel indice te rend sûr.",
@@ -1146,7 +1146,7 @@
    "nr": 1,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    }
   },
   "ort": "raum",
@@ -1420,7 +1420,7 @@
    "nr": 1,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    }
   },
   "ort": "raum",
@@ -1702,7 +1702,7 @@
    "nr": 2,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Mil schreibt der Clique, er habe mit den Scouts aufgehört – und zeigt freitags doch Knoten. Das bleibt noch offen. Heute erzählt Kika dem Medienteam: „Ich sitze immer zwischen zwei Stühlen.“",
@@ -1880,7 +1880,7 @@
        "titel": "Pieds-valeurs"
       },
       {
-       "titel": "Cris du bord"
+       "titel": "Cris de la galerie"
       },
       {
        "titel": "Chaise d’essai"
@@ -2190,7 +2190,7 @@
    "nr": 2,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Mil schreibt der Clique, er habe mit den Scouts aufgehört – und zeigt freitags doch Knoten. Das bleibt noch offen. Heute erzählt Kika dem Medienteam: „Ich sitze immer zwischen zwei Stühlen.“",
@@ -2374,7 +2374,7 @@
        "titel": "Pieds-valeurs"
       },
       {
-       "titel": "Cris du bord"
+       "titel": "Cris de la galerie"
       },
       {
        "titel": "Chaise d’essai"
@@ -2661,7 +2661,7 @@
    "nr": 2,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Mil schreibt der Clique, er habe mit den Scouts aufgehört – und zeigt freitags doch Knoten. Das bleibt noch offen. Heute erzählt Kika dem Medienteam: „Ich sitze immer zwischen zwei Stühlen.“",
@@ -2936,7 +2936,7 @@
    "nr": 2,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Mil schreibt der Clique, er habe mit den Scouts aufgehört – und zeigt freitags doch Knoten. Das bleibt noch offen. Heute erzählt Kika dem Medienteam: „Ich sitze immer zwischen zwei Stühlen.“",
@@ -3208,7 +3208,7 @@
    "nr": 3,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Kika kann jetzt Stühle zusammenschieben. Und Mil? Er hat dem Medienteam abgesagt – und die Nachricht nach drei Minuten gelöscht. Heute geht es darum, was ihn trägt.",
@@ -3386,7 +3386,7 @@
        "heute": true
       },
       {
-       "titel": "Cris du bord"
+       "titel": "Cris de la galerie"
       },
       {
        "titel": "Chaise d’essai"
@@ -3708,7 +3708,7 @@
    "nr": 3,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Kika kann jetzt Stühle zusammenschieben. Und Mil? Er hat dem Medienteam abgesagt – und die Nachricht nach drei Minuten gelöscht. Heute geht es darum, was ihn trägt.",
@@ -3884,7 +3884,7 @@
        "heute": true
       },
       {
-       "titel": "Cris du bord"
+       "titel": "Cris de la galerie"
       },
       {
        "titel": "Chaise d’essai"
@@ -4183,7 +4183,7 @@
    "nr": 3,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Kika kann jetzt Stühle zusammenschieben. Und Mil? Er hat dem Medienteam abgesagt – und die Nachricht nach drei Minuten gelöscht. Heute geht es darum, was ihn trägt.",
@@ -4471,7 +4471,7 @@
    "nr": 3,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Kika kann jetzt Stühle zusammenschieben. Und Mil? Er hat dem Medienteam abgesagt – und die Nachricht nach drei Minuten gelöscht. Heute geht es darum, was ihn trägt.",
@@ -4700,9 +4700,9 @@
    "titel": "Einzelkurs Wer sitzt an deinem Tisch?"
   },
   "titel": "Zwischenruf: Wenn die Clique Druck macht",
-  "text": "Die oder der Jugendliche steht, Füße hüftbreit. Die Fachkraft liest drei Sätze der Clique, immer lauter und schneller: Wo landet der Druck – Schultern, Kiefer, Atem? Dann einmal lang ausatmen, länger aus als ein. Sechs Chatkarten von Freitag, 17:30, und fünf Trick-Karten liegen auf dem Tisch. Die oder der Jugendliche findet heraus, welcher Trick in welcher Nachricht steckt, und benennt ihn selbst. Dann die Regie: Die Fachkraft steht hinter einem leeren Stuhl und spricht die Clique; die oder der Jugendliche gibt Mil einen Satz – als Regie oder selbst als Mil, mit Ausstieg: „Rolle aus, Jacke aus.“ Drei Schritte: merken, fragen „Wer sitzt an meinem Tisch?“, antworten oder gehen. Merksatz: „Wer nur dazwischenruft, entscheidet nicht mit.“",
+  "text": "Die oder der Jugendliche steht, Füße hüftbreit. Die Fachkraft steht hinter einem leeren Stuhl und liest von dort drei Sätze der Clique, immer lauter und schneller: Wo landet der Druck – Schultern, Kiefer, Atem? Dann einmal lang ausatmen, länger aus als ein. Sechs Chatkarten von Freitag, 17:30, und fünf Trick-Karten liegen auf dem Tisch. Die oder der Jugendliche findet heraus, welcher Trick in welcher Nachricht steckt, und benennt ihn selbst. Dann die Regie: Die Fachkraft spricht weiter vom Stuhl aus die Clique; die oder der Jugendliche gibt Mil einen Satz – als Regie oder selbst als Mil, mit Ausstieg: „Rolle aus, Jacke aus.“ Drei Schritte: merken, fragen „Wer sitzt an meinem Tisch?“, antworten oder gehen. Merksatz: „Wer nur reinruft, sitzt nicht an meinem Tisch.“",
   "sagen": [
-   "Bleib stehen. Ich lese drei Sätze – immer lauter. Wo merkst du es?",
+   "Bleib stehen. Hinter dem Stuhl lese ich drei Sätze – immer lauter. Wo merkst du es?",
    "Einmal lang ausatmen. Länger aus als ein.",
    "Welcher Trick steckt in dieser Nachricht? Du gibst ihm den Namen.",
    "Ich bin die Clique, hinter dem Stuhl. Was sagt Mil?"
@@ -4767,7 +4767,7 @@
   "ort": "raum",
   "werkzeug": {
    "de": "Zwischenruf: merken – fragen „Wer sitzt an meinem Tisch?“ – antworten oder gehen.",
-   "fr": "Cris du bord : remarquer – demander « Qui est à ma table ? » – répondre ou partir."
+   "fr": "Cris de la galerie : remarquer – demander « Qui est à ma table ? » – répondre ou partir."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -4776,7 +4776,7 @@
    "nr": 4,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Mils Tisch steht – ein Bein zieht zur Clique. Freitag, 17:30, kommt die Nachricht: „Wer nicht kommt, ist raus.“ Um 18 Uhr beginnen die Scouts.",
@@ -4791,7 +4791,7 @@
   "uebungsblatt": {
    "titel": {
     "de": "Zwischenruf",
-    "fr": "Cris du bord"
+    "fr": "Cris de la galerie"
    },
    "de": [
     {
@@ -4802,7 +4802,7 @@
        "art": "info",
        "symbol": "wissen",
        "titel": "Heute: Zwischenruf",
-       "text": "„Wer nur dazwischenruft, entscheidet nicht mit.“"
+       "text": "„Wer nur reinruft, sitzt nicht an meinem Tisch.“"
       },
       {
        "art": "text",
@@ -4899,8 +4899,8 @@
       {
        "art": "info",
        "symbol": "wissen",
-       "titel": "Aujourd’hui : Cris du bord",
-       "text": "« Qui crie du bord ne décide pas avec moi. »"
+       "titel": "Aujourd’hui : Cris de la galerie",
+       "text": "« Qui crie depuis la galerie n’est pas à ma table. »"
       },
       {
        "art": "text",
@@ -4941,7 +4941,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Une phrase pour toi, quand quelqu’un crie du bord – si tu veux :",
+     "text": "Une phrase pour toi, quand quelqu’un crie depuis la galerie – si tu veux :",
      "symbole": [
       "schreiben"
      ]
@@ -4967,7 +4967,7 @@
        "titel": "Pieds-valeurs"
       },
       {
-       "titel": "Cris du bord",
+       "titel": "Cris de la galerie",
        "heute": true
       },
       {
@@ -5007,10 +5007,10 @@
    }
   },
   "fr": {
-   "titel": "Cris du bord : quand la bande met la pression",
-   "text": "Le ou la jeune est debout, pieds écartés. L’adulte lit trois phrases de la bande, de plus en plus fort : où la pression arrive-t-elle – épaules, mâchoire, souffle ? Puis une longue expiration. Six cartes de chat du vendredi, 17 h 30, et cinq cartes pièges sont sur la table. Le ou la jeune trouve quel piège se cache dans quel message et le nomme lui-même. Puis la mise en scène : l’adulte se tient derrière une chaise vide et joue la bande ; le ou la jeune donne une phrase à Mil – en metteur en scène ou en jouant Mil, avec une sortie : « Rôle fini, veste enlevée. » Trois étapes : remarquer, demander « Qui est à ma table ? », répondre ou partir. Phrase-clé : « Qui crie du bord ne décide pas avec moi. »",
+   "titel": "Cris de la galerie : quand la bande met la pression",
+   "text": "Le ou la jeune est debout, pieds écartés. Derrière une chaise vide, l’adulte lit trois phrases de la bande, de plus en plus fort : où la pression arrive-t-elle – épaules, mâchoire, souffle ? Puis une longue expiration. Six cartes de chat du vendredi, 17 h 30, et cinq cartes pièges sont sur la table. Le ou la jeune trouve quel piège se cache dans quel message et le nomme lui-même. Puis la mise en scène : depuis la chaise, l’adulte continue de jouer la bande ; le ou la jeune donne une phrase à Mil – en metteur en scène ou en jouant Mil, avec une sortie : « Rôle fini, veste enlevée. » Trois étapes : remarquer, demander « Qui est à ma table ? », répondre ou partir. Phrase-clé : « Qui crie depuis la galerie n’est pas à ma table. »",
    "sagen": [
-    "Reste debout. Je lis trois phrases – de plus en plus fort. Où tu le sens ?",
+    "Reste debout. Derrière la chaise, je lis trois phrases – de plus en plus fort. Où tu le sens ?",
     "Une longue expiration. Plus longue que l’inspiration.",
     "Quel piège se cache dans ce message ? C’est toi qui lui donnes un nom.",
     "Je suis la bande, derrière la chaise. Que dit Mil ?"
@@ -5032,7 +5032,7 @@
      "Für den Einstieg drei Clique-Sätze wählen: „Alle kommen“, „Babys“, „Wer nicht kommt, ist raus“",
      "Kartensatz „Nur für dich – wenn es echt wird“ einmal lesen"
     ],
-    "aufbau": "0′ Stehen, drei Clique-Sätze immer lauter – „Wo merkst du es?“\n2′ Lang ausatmen – „Länger aus als ein.“\n3′ Tricks im Chat finden und benennen – „Welcher Trick steckt da?“\n7′ Fachkraft spricht die Clique, Mil antwortet – „Was sagt Mil?“\n10′ Aufstehen, Arme ausschütteln, Merksatz – „Rolle aus, Jacke aus.“\nKern 12′ · Blatt 5′: Mils Antwort im Chat\nMuss: Körper, Tricks, eine Antwort. Kann: zweite Runde. Wird es knapp: drei Chatkarten.",
+    "aufbau": "0′ Fachkraft hinter leerem Stuhl, drei Clique-Sätze immer lauter – „Wo merkst du es?“\n2′ Lang ausatmen – „Länger aus als ein.“\n3′ Tricks im Chat finden und benennen – „Welcher Trick steckt da?“\n7′ Fachkraft spricht die Clique, Mil antwortet – „Was sagt Mil?“\n10′ Aufstehen, Arme ausschütteln, Merksatz – „Rolle aus, Jacke aus.“\nKern 12′ · Blatt 5′: Mils Antwort im Chat\nMuss: Körper, Tricks, eine Antwort. Kann: zweite Runde. Wird es knapp: drei Chatkarten.",
     "karten": [
      {
       "titel": "Chat von Freitag, 17:30 (6 Karten)",
@@ -5128,7 +5128,7 @@
      "Pour le début, choisir trois phrases : « Tout le monde vient », « bébés », « plus des nôtres »",
      "Lire une fois les cartes « Pour l’adulte – quand ça devient réel »"
     ],
-    "aufbau": "0′ Debout, trois phrases de la bande, de plus en plus fort – « Où tu le sens ? »\n2′ Longue expiration – « Plus longue que l’inspiration. »\n3′ Trouver et nommer les pièges – « Quel piège ? »\n7′ L’adulte joue la bande, Mil répond – « Que dit Mil ? »\n10′ Se lever, secouer les bras, phrase-clé – « Rôle fini, veste enlevée. »\nCœur 12′ · fiche 5′ : la réponse de Mil dans le chat\nIndispensable : corps, pièges, une réponse. En option : deuxième tour. Si c’est court : trois cartes chat.",
+    "aufbau": "0′ Adulte derrière la chaise vide, trois phrases de la bande, de plus en plus fort – « Où tu le sens ? »\n2′ Longue expiration – « Plus longue que l’inspiration. »\n3′ Trouver et nommer les pièges – « Quel piège ? »\n7′ L’adulte joue la bande, Mil répond – « Que dit Mil ? »\n10′ Se lever, secouer les bras, phrase-clé – « Rôle fini, veste enlevée. »\nCœur 12′ · fiche 5′ : la réponse de Mil dans le chat\nIndispensable : corps, pièges, une réponse. En option : deuxième tour. Si c’est court : trois cartes chat.",
     "karten": [
      {
       "titel": "Chat du vendredi, 17 h 30 (6 cartes)",
@@ -5225,9 +5225,9 @@
    "titel": "Einzelkurs Wer sitzt an deinem Tisch?"
   },
   "titel": "Zwischenruf: Wenn die Clique Druck macht",
-  "text": "Die oder der Jugendliche steht, Füße hüftbreit. Die Fachkraft liest drei Sätze der Clique, immer lauter und schneller: Wo landet der Druck – Schultern, Kiefer, Atem? Dann einmal lang ausatmen, länger aus als ein. Sechs Chatkarten von Freitag, 17:30, und fünf Trick-Karten liegen auf dem Tisch. Die oder der Jugendliche findet heraus, welcher Trick in welcher Nachricht steckt, und benennt ihn selbst. Dann die Regie: Die Fachkraft steht hinter einem leeren Stuhl und spricht die Clique; die oder der Jugendliche gibt Mil einen Satz – als Regie oder selbst als Mil, mit Ausstieg: „Rolle aus, Jacke aus.“ Drei Schritte: merken, fragen „Wer sitzt an meinem Tisch?“, antworten oder gehen. Merksatz: „Wer nur dazwischenruft, entscheidet nicht mit.“",
+  "text": "Die oder der Jugendliche steht, Füße hüftbreit. Die Fachkraft steht hinter einem leeren Stuhl und liest von dort drei Sätze der Clique, immer lauter und schneller: Wo landet der Druck – Schultern, Kiefer, Atem? Dann einmal lang ausatmen, länger aus als ein. Sechs Chatkarten von Freitag, 17:30, und fünf Trick-Karten liegen auf dem Tisch. Die oder der Jugendliche findet heraus, welcher Trick in welcher Nachricht steckt, und benennt ihn selbst. Dann die Regie: Die Fachkraft spricht weiter vom Stuhl aus die Clique; die oder der Jugendliche gibt Mil einen Satz – als Regie oder selbst als Mil, mit Ausstieg: „Rolle aus, Jacke aus.“ Drei Schritte: merken, fragen „Wer sitzt an meinem Tisch?“, antworten oder gehen. Merksatz: „Wer nur reinruft, sitzt nicht an meinem Tisch.“",
   "sagen": [
-   "Bleib stehen. Ich lese drei Sätze – immer lauter. Wo merkst du es?",
+   "Bleib stehen. Hinter dem Stuhl lese ich drei Sätze – immer lauter. Wo merkst du es?",
    "Einmal lang ausatmen. Länger aus als ein.",
    "Welcher Trick steckt in dieser Nachricht? Du gibst ihm den Namen.",
    "Ich bin die Clique, hinter dem Stuhl. Was sagt Mil?"
@@ -5292,7 +5292,7 @@
   "ort": "raum",
   "werkzeug": {
    "de": "Zwischenruf: merken – fragen „Wer sitzt an meinem Tisch?“ – antworten oder gehen.",
-   "fr": "Cris du bord : remarquer – demander « Qui est à ma table ? » – répondre ou partir."
+   "fr": "Cris de la galerie : remarquer – demander « Qui est à ma table ? » – répondre ou partir."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -5301,7 +5301,7 @@
    "nr": 4,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Mils Tisch steht – ein Bein zieht zur Clique. Freitag, 17:30, kommt die Nachricht: „Wer nicht kommt, ist raus.“ Um 18 Uhr beginnen die Scouts.",
@@ -5316,7 +5316,7 @@
   "uebungsblatt": {
    "titel": {
     "de": "Zwischenruf",
-    "fr": "Cris du bord"
+    "fr": "Cris de la galerie"
    },
    "de": [
     {
@@ -5327,7 +5327,7 @@
        "art": "info",
        "symbol": "wissen",
        "titel": "Heute: Zwischenruf",
-       "text": "„Wer nur dazwischenruft, entscheidet nicht mit.“"
+       "text": "„Wer nur reinruft, sitzt nicht an meinem Tisch.“"
       },
       {
        "art": "text",
@@ -5438,8 +5438,8 @@
       {
        "art": "info",
        "symbol": "wissen",
-       "titel": "Aujourd’hui : Cris du bord",
-       "text": "« Qui crie du bord ne décide pas avec moi. »"
+       "titel": "Aujourd’hui : Cris de la galerie",
+       "text": "« Qui crie depuis la galerie n’est pas à ma table. »"
       },
       {
        "art": "text",
@@ -5520,7 +5520,7 @@
        "titel": "Pieds-valeurs"
       },
       {
-       "titel": "Cris du bord",
+       "titel": "Cris de la galerie",
        "heute": true
       },
       {
@@ -5560,10 +5560,10 @@
    }
   },
   "fr": {
-   "titel": "Cris du bord : quand la bande met la pression",
-   "text": "Le ou la jeune est debout, pieds écartés. L’adulte lit trois phrases de la bande, de plus en plus fort : où la pression arrive-t-elle – épaules, mâchoire, souffle ? Puis une longue expiration. Six cartes de chat du vendredi, 17 h 30, et cinq cartes pièges sont sur la table. Le ou la jeune trouve quel piège se cache dans quel message et le nomme lui-même. Puis la mise en scène : l’adulte se tient derrière une chaise vide et joue la bande ; le ou la jeune donne une phrase à Mil – en metteur en scène ou en jouant Mil, avec une sortie : « Rôle fini, veste enlevée. » Trois étapes : remarquer, demander « Qui est à ma table ? », répondre ou partir. Phrase-clé : « Qui crie du bord ne décide pas avec moi. »",
+   "titel": "Cris de la galerie : quand la bande met la pression",
+   "text": "Le ou la jeune est debout, pieds écartés. Derrière une chaise vide, l’adulte lit trois phrases de la bande, de plus en plus fort : où la pression arrive-t-elle – épaules, mâchoire, souffle ? Puis une longue expiration. Six cartes de chat du vendredi, 17 h 30, et cinq cartes pièges sont sur la table. Le ou la jeune trouve quel piège se cache dans quel message et le nomme lui-même. Puis la mise en scène : depuis la chaise, l’adulte continue de jouer la bande ; le ou la jeune donne une phrase à Mil – en metteur en scène ou en jouant Mil, avec une sortie : « Rôle fini, veste enlevée. » Trois étapes : remarquer, demander « Qui est à ma table ? », répondre ou partir. Phrase-clé : « Qui crie depuis la galerie n’est pas à ma table. »",
    "sagen": [
-    "Reste debout. Je lis trois phrases – de plus en plus fort. Où tu le sens ?",
+    "Reste debout. Derrière la chaise, je lis trois phrases – de plus en plus fort. Où tu le sens ?",
     "Une longue expiration. Plus longue que l’inspiration.",
     "Quel piège se cache dans ce message ? C’est toi qui lui donnes un nom.",
     "Je suis la bande, derrière la chaise. Que dit Mil ?"
@@ -5585,7 +5585,7 @@
      "Für den Einstieg drei Clique-Sätze wählen: „Alle kommen“, „Babys“, „Wer nicht kommt, ist raus“",
      "Kartensatz „Nur für dich – wenn es echt wird“ einmal lesen"
     ],
-    "aufbau": "0′ Stehen, drei Clique-Sätze immer lauter – „Wo merkst du es?“\n2′ Lang ausatmen – „Länger aus als ein.“\n3′ Tricks im Chat finden und benennen – „Welcher Trick steckt da?“\n7′ Fachkraft spricht die Clique, Mil antwortet – „Was sagt Mil?“\n10′ Aufstehen, Arme ausschütteln, Merksatz – „Rolle aus, Jacke aus.“\nKern 12′ · Blatt 5′: Mils Antwort im Chat\nMuss: Körper, Tricks, eine Antwort. Kann: zweite Runde. Wird es knapp: drei Chatkarten.",
+    "aufbau": "0′ Fachkraft hinter leerem Stuhl, drei Clique-Sätze immer lauter – „Wo merkst du es?“\n2′ Lang ausatmen – „Länger aus als ein.“\n3′ Tricks im Chat finden und benennen – „Welcher Trick steckt da?“\n7′ Fachkraft spricht die Clique, Mil antwortet – „Was sagt Mil?“\n10′ Aufstehen, Arme ausschütteln, Merksatz – „Rolle aus, Jacke aus.“\nKern 12′ · Blatt 5′: Mils Antwort im Chat\nMuss: Körper, Tricks, eine Antwort. Kann: zweite Runde. Wird es knapp: drei Chatkarten.",
     "karten": [
      {
       "titel": "Chat von Freitag, 17:30 (6 Karten)",
@@ -5681,7 +5681,7 @@
      "Pour le début, choisir trois phrases : « Tout le monde vient », « bébés », « plus des nôtres »",
      "Lire une fois les cartes « Pour l’adulte – quand ça devient réel »"
     ],
-    "aufbau": "0′ Debout, trois phrases de la bande, de plus en plus fort – « Où tu le sens ? »\n2′ Longue expiration – « Plus longue que l’inspiration. »\n3′ Trouver et nommer les pièges – « Quel piège ? »\n7′ L’adulte joue la bande, Mil répond – « Que dit Mil ? »\n10′ Se lever, secouer les bras, phrase-clé – « Rôle fini, veste enlevée. »\nCœur 12′ · fiche 5′ : la réponse de Mil dans le chat\nIndispensable : corps, pièges, une réponse. En option : deuxième tour. Si c’est court : trois cartes chat.",
+    "aufbau": "0′ Adulte derrière la chaise vide, trois phrases de la bande, de plus en plus fort – « Où tu le sens ? »\n2′ Longue expiration – « Plus longue que l’inspiration. »\n3′ Trouver et nommer les pièges – « Quel piège ? »\n7′ L’adulte joue la bande, Mil répond – « Que dit Mil ? »\n10′ Se lever, secouer les bras, phrase-clé – « Rôle fini, veste enlevée. »\nCœur 12′ · fiche 5′ : la réponse de Mil dans le chat\nIndispensable : corps, pièges, une réponse. En option : deuxième tour. Si c’est court : trois cartes chat.",
     "karten": [
      {
       "titel": "Chat du vendredi, 17 h 30 (6 cartes)",
@@ -5823,7 +5823,7 @@
   "einzeltauglich": "ja",
   "werkzeug": {
    "de": "Zwischenruf: merken – fragen „Wer sitzt an meinem Tisch?“ – antworten oder gehen.",
-   "fr": "Cris du bord : remarquer – demander « Qui est à ma table ? » – répondre ou partir."
+   "fr": "Cris de la galerie : remarquer – demander « Qui est à ma table ? » – répondre ou partir."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -5832,7 +5832,7 @@
    "nr": 4,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Mils Tisch steht – ein Bein zieht zur Clique. Freitag, 17:30, kommt die Nachricht: „Wer nicht kommt, ist raus.“ Um 18 Uhr beginnen die Scouts.",
@@ -5841,7 +5841,7 @@
   },
   "ort": "raum",
   "titel": "Zwischenruf: Der Balance-Gang",
-  "text": "Die Fachkraft klebt eine Linie von drei Metern auf den Boden. Die oder der Jugendliche geht sie langsam ab, Ferse an Zehe, und hält das Gleichgewicht. Die Fachkraft liest die Chatkarten der Clique von Freitag, 17:30, immer eine, wenn ein Schritt gemacht ist. Bei jeder Nachricht bleibt die oder der Jugendliche auf der Linie stehen, atmet einmal lang aus, nennt den Druck-Trick und gibt Mil einen kurzen Satz – dann geht es weiter. Wer von der Linie tritt, steigt einfach wieder auf. Danach Rollentausch: Die Fachkraft geht, die oder der Jugendliche liest eine Nachricht, und die Fachkraft antwortet als Mil. Zum Schluss: drei Schritte – merken, fragen „Wer sitzt an meinem Tisch?“, antworten oder gehen. Merksatz: „Wer nur dazwischenruft, entscheidet nicht mit.“",
+  "text": "Die Fachkraft klebt eine Linie von drei Metern auf den Boden. Die oder der Jugendliche geht sie langsam ab, Ferse an Zehe, und hält das Gleichgewicht. Die Fachkraft liest die Chatkarten der Clique von Freitag, 17:30, immer eine, wenn ein Schritt gemacht ist. Bei jeder Nachricht bleibt die oder der Jugendliche auf der Linie stehen, atmet einmal lang aus, nennt den Druck-Trick und gibt Mil einen kurzen Satz – dann geht es weiter. Wer von der Linie tritt, steigt einfach wieder auf. Danach Rollentausch: Die Fachkraft geht, die oder der Jugendliche liest eine Nachricht, und die Fachkraft antwortet als Mil. Zum Schluss: drei Schritte – merken, fragen „Wer sitzt an meinem Tisch?“, antworten oder gehen. Merksatz: „Wer nur reinruft, sitzt nicht an meinem Tisch.“",
   "sagen": [
    "Ferse an Zehe. Ich lese, du bleibst stehen.",
    "Ausatmen. Welcher Trick? Und was sagt Mil?",
@@ -5871,8 +5871,8 @@
    "bild": 2
   },
   "fr": {
-   "titel": "Cris du bord : la marche d’équilibre",
-   "text": "L’adulte colle une ligne de trois mètres au sol. Le ou la jeune la parcourt lentement, talon contre orteils, en gardant l’équilibre. L’adulte lit les cartes chat de la bande du vendredi, 17 h 30, une après chaque pas. À chaque message, le ou la jeune s’arrête sur la ligne, expire longuement, nomme le piège et donne une courte phrase à Mil – puis continue. Qui sort de la ligne remonte simplement dessus. Ensuite, on échange : l’adulte marche, le ou la jeune lit un message, et l’adulte répond en Mil. Pour finir : trois étapes – remarquer, demander « Qui est à ma table ? », répondre ou partir. Phrase-clé : « Qui crie du bord ne décide pas avec moi. »",
+   "titel": "Cris de la galerie : la marche d’équilibre",
+   "text": "L’adulte colle une ligne de trois mètres au sol. Le ou la jeune la parcourt lentement, talon contre orteils, en gardant l’équilibre. L’adulte lit les cartes chat de la bande du vendredi, 17 h 30, une après chaque pas. À chaque message, le ou la jeune s’arrête sur la ligne, expire longuement, nomme le piège et donne une courte phrase à Mil – puis continue. Qui sort de la ligne remonte simplement dessus. Ensuite, on échange : l’adulte marche, le ou la jeune lit un message, et l’adulte répond en Mil. Pour finir : trois étapes – remarquer, demander « Qui est à ma table ? », répondre ou partir. Phrase-clé : « Qui crie depuis la galerie n’est pas à ma table. »",
    "sagen": [
     "Talon contre orteils. Je lis, tu t’arrêtes.",
     "Expire. Quel piège ? Et que dit Mil ?",
@@ -6100,7 +6100,7 @@
   "einzeltauglich": "ja",
   "werkzeug": {
    "de": "Zwischenruf: merken – fragen „Wer sitzt an meinem Tisch?“ – antworten oder gehen.",
-   "fr": "Cris du bord : remarquer – demander « Qui est à ma table ? » – répondre ou partir."
+   "fr": "Cris de la galerie : remarquer – demander « Qui est à ma table ? » – répondre ou partir."
   },
   "uebertragbar": true,
   "qualitaet": "geprueft",
@@ -6109,7 +6109,7 @@
    "nr": 4,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Mils Tisch steht – ein Bein zieht zur Clique. Freitag, 17:30, kommt die Nachricht: „Wer nicht kommt, ist raus.“ Um 18 Uhr beginnen die Scouts.",
@@ -6118,7 +6118,7 @@
   },
   "ort": "raum",
   "titel": "Zwischenruf: Den Chat umschreiben",
-  "text": "Am Tisch, in Ruhe. Die Chatkarten der Clique von Freitag, 17:30, liegen offen; niemand liest sie laut oder spielt sie. Die oder der Jugendliche liest still und legt zu jeder Nachricht eine Trick-Karte. Dann wählt sie oder er für Mil zwei Antwort-Karten oder schreibt eine eigene Zeile auf einen Zettel und legt sie unter den Chat – so, als hätte Mil geantwortet. Zum Schluss legt sie oder er die drei Schritte in die richtige Reihenfolge: merken, fragen „Wer sitzt an meinem Tisch?“, antworten oder gehen. Es geht nur um Mil. Merksatz: „Wer nur dazwischenruft, entscheidet nicht mit.“",
+  "text": "Am Tisch, in Ruhe. Die Chatkarten der Clique von Freitag, 17:30, liegen offen; niemand liest sie laut oder spielt sie. Die oder der Jugendliche liest still und legt zu jeder Nachricht eine Trick-Karte. Dann wählt sie oder er für Mil zwei Antwort-Karten oder schreibt eine eigene Zeile auf einen Zettel und legt sie unter den Chat – so, als hätte Mil geantwortet. Zum Schluss legt sie oder er die drei Schritte in die richtige Reihenfolge: merken, fragen „Wer sitzt an meinem Tisch?“, antworten oder gehen. Es geht nur um Mil. Merksatz: „Wer nur reinruft, sitzt nicht an meinem Tisch.“",
   "sagen": [
    "Lies still. Niemand spielt hier die Clique.",
    "Welche Antwort passt zu Mil?",
@@ -6148,8 +6148,8 @@
    "bild": 1
   },
   "fr": {
-   "titel": "Cris du bord : réécrire le chat",
-   "text": "À table, au calme. Les cartes chat de la bande du vendredi, 17 h 30, sont posées ; personne ne les lit à voix haute ni ne les joue. Le ou la jeune les lit en silence et pose une carte piège près de chaque message. Puis il ou elle choisit pour Mil deux cartes réponses ou écrit sa propre ligne sur un papier et la pose sous le chat – comme si Mil avait répondu. Pour finir, il ou elle met les trois étapes dans l’ordre : remarquer, demander « Qui est à ma table ? », répondre ou partir. Il s’agit seulement de Mil. Phrase-clé : « Qui crie du bord ne décide pas avec moi. »",
+   "titel": "Cris de la galerie : réécrire le chat",
+   "text": "À table, au calme. Les cartes chat de la bande du vendredi, 17 h 30, sont posées ; personne ne les lit à voix haute ni ne les joue. Le ou la jeune les lit en silence et pose une carte piège près de chaque message. Puis il ou elle choisit pour Mil deux cartes réponses ou écrit sa propre ligne sur un papier et la pose sous le chat – comme si Mil avait répondu. Pour finir, il ou elle met les trois étapes dans l’ordre : remarquer, demander « Qui est à ma table ? », répondre ou partir. Il s’agit seulement de Mil. Phrase-clé : « Qui crie depuis la galerie n’est pas à ma table. »",
    "sagen": [
     "Lis en silence. Ici, personne ne joue la bande.",
     "Quelle réponse va avec Mil ?",
@@ -6427,7 +6427,7 @@
    "nr": 5,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Um 17:42 hat Mil der Clique einen Satz geschickt – so ähnlich wie deinen. Eine Antwort kam noch nicht. Und Yonas? Der Direktor hat ihn fürs Lycée-Fest schon angekündigt – mit einem Thema, das Yonas nicht ausgesucht hat. Er will etwas anderes zeigen.",
@@ -6600,7 +6600,7 @@
        "titel": "Pieds-valeurs"
       },
       {
-       "titel": "Cris du bord"
+       "titel": "Cris de la galerie"
       },
       {
        "titel": "Chaise d’essai",
@@ -6927,7 +6927,7 @@
    "nr": 5,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Um 17:42 hat Mil der Clique einen Satz geschickt – so ähnlich wie deinen. Eine Antwort kam noch nicht. Und Yonas? Der Direktor hat ihn fürs Lycée-Fest schon angekündigt – mit einem Thema, das Yonas nicht ausgesucht hat. Er will etwas anderes zeigen.",
@@ -7124,7 +7124,7 @@
        "titel": "Pieds-valeurs"
       },
       {
-       "titel": "Cris du bord"
+       "titel": "Cris de la galerie"
       },
       {
        "titel": "Chaise d’essai",
@@ -7428,7 +7428,7 @@
    "nr": 5,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Um 17:42 hat Mil der Clique einen Satz geschickt – so ähnlich wie deinen. Eine Antwort kam noch nicht. Und Yonas? Der Direktor hat ihn fürs Lycée-Fest schon angekündigt – mit einem Thema, das Yonas nicht ausgesucht hat. Er will etwas anderes zeigen.",
@@ -7702,7 +7702,7 @@
    "nr": 5,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Um 17:42 hat Mil der Clique einen Satz geschickt – so ähnlich wie deinen. Eine Antwort kam noch nicht. Und Yonas? Der Direktor hat ihn fürs Lycée-Fest schon angekündigt – mit einem Thema, das Yonas nicht ausgesucht hat. Er will etwas anderes zeigen.",
@@ -7996,7 +7996,7 @@
    "nr": 6,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Dienstag, 12:15: Die Vorsitzende fragt „Noch Punkte?“ – und Yonas sitzt in der dritten Reihe. Heute geht die Porträt-Serie online. Für jedes Porträt fehlt noch das Schlusszitat.",
@@ -8162,7 +8162,7 @@
       "Cartes : mes facettes",
       "Deux chaises : ce que je relie",
       "Pieds-valeurs : ce qui me porte",
-      "Cris du bord : ma phrase",
+      "Cris de la galerie : ma phrase",
       "Essai : ce que je tente"
      ]
     },
@@ -8212,7 +8212,7 @@
        "heute": true
       },
       {
-       "titel": "Cris du bord",
+       "titel": "Cris de la galerie",
        "heute": true
       },
       {
@@ -8296,7 +8296,7 @@
        "Tischkarten: „Ich habe viele Seiten – jede hat einen Platz an meinem Tisch.“",
        "Zwei Stühle: „Ich darf wechseln – und ich darf die Stühle zusammenschieben.“",
        "Wertebeine: „Was ich tue, zeigt, was mir wichtig ist – das trägt meinen Tisch.“",
-       "Zwischenruf: „Wer nur dazwischenruft, entscheidet nicht mit.“",
+       "Zwischenruf: „Wer nur reinruft, sitzt nicht an meinem Tisch.“",
        "Probestuhl: „Neues ausprobieren: klein, sicher – und es darf wieder gehen.“",
        "Vorsitz: „Viele Seiten, ein Vorsitz: ich.“"
       ]
@@ -8385,7 +8385,7 @@
        "Cartes de table : « J’ai plein de facettes – chacune a sa place à ma table. »",
        "Deux chaises : « Je peux passer de l’une à l’autre – et je peux les rapprocher. »",
        "Pieds-valeurs : « Ce que je fais montre ce qui compte pour moi – c’est ça qui porte ma table. »",
-       "Cris du bord : « Qui crie du bord ne décide pas avec moi. »",
+       "Cris de la galerie : « Qui crie depuis la galerie n’est pas à ma table. »",
        "Chaise d’essai : « Essayer du nouveau : petit, sûr – et ça peut repartir. »",
        "Présidence : « Beaucoup de facettes, une seule présidence : moi. »"
       ]
@@ -8530,7 +8530,7 @@
    "nr": 6,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Dienstag, 12:15: Die Vorsitzende fragt „Noch Punkte?“ – und Yonas sitzt in der dritten Reihe. Heute geht die Porträt-Serie online. Für jedes Porträt fehlt noch das Schlusszitat.",
@@ -8700,7 +8700,7 @@
       "Cartes de table",
       "Deux chaises",
       "Pieds-valeurs",
-      "Cris du bord",
+      "Cris de la galerie",
       "Chaise d’essai",
       "Présidence"
      ],
@@ -8756,7 +8756,7 @@
        "heute": true
       },
       {
-       "titel": "Cris du bord",
+       "titel": "Cris de la galerie",
        "heute": true
       },
       {
@@ -8840,7 +8840,7 @@
        "Tischkarten: „Ich habe viele Seiten – jede hat einen Platz an meinem Tisch.“",
        "Zwei Stühle: „Ich darf wechseln – und ich darf die Stühle zusammenschieben.“",
        "Wertebeine: „Was ich tue, zeigt, was mir wichtig ist – das trägt meinen Tisch.“",
-       "Zwischenruf: „Wer nur dazwischenruft, entscheidet nicht mit.“",
+       "Zwischenruf: „Wer nur reinruft, sitzt nicht an meinem Tisch.“",
        "Probestuhl: „Neues ausprobieren: klein, sicher – und es darf wieder gehen.“",
        "Vorsitz: „Viele Seiten, ein Vorsitz: ich.“"
       ]
@@ -8929,7 +8929,7 @@
        "Cartes de table : « J’ai plein de facettes – chacune a sa place à ma table. »",
        "Deux chaises : « Je peux passer de l’une à l’autre – et je peux les rapprocher. »",
        "Pieds-valeurs : « Ce que je fais montre ce qui compte pour moi – c’est ça qui porte ma table. »",
-       "Cris du bord : « Qui crie du bord ne décide pas avec moi. »",
+       "Cris de la galerie : « Qui crie depuis la galerie n’est pas à ma table. »",
        "Chaise d’essai : « Essayer du nouveau : petit, sûr – et ça peut repartir. »",
        "Présidence : « Beaucoup de facettes, une seule présidence : moi. »"
       ]
@@ -9051,7 +9051,7 @@
    "nr": 6,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Dienstag, 12:15: Die Vorsitzende fragt „Noch Punkte?“ – und Yonas sitzt in der dritten Reihe. Heute geht die Porträt-Serie online. Für jedes Porträt fehlt noch das Schlusszitat.",
@@ -9116,7 +9116,7 @@
        "Tischkarten: „Ich habe viele Seiten – jede hat einen Platz an meinem Tisch.“",
        "Zwei Stühle: „Ich darf wechseln – und ich darf die Stühle zusammenschieben.“",
        "Wertebeine: „Was ich tue, zeigt, was mir wichtig ist – das trägt meinen Tisch.“",
-       "Zwischenruf: „Wer nur dazwischenruft, entscheidet nicht mit.“",
+       "Zwischenruf: „Wer nur reinruft, sitzt nicht an meinem Tisch.“",
        "Probestuhl: „Neues ausprobieren: klein, sicher – und es darf wieder gehen.“",
        "Vorsitz: „Viele Seiten, ein Vorsitz: ich.“"
       ]
@@ -9199,7 +9199,7 @@
        "Cartes de table : « J’ai plein de facettes – chacune a sa place à ma table. »",
        "Deux chaises : « Je peux passer de l’une à l’autre – et je peux les rapprocher. »",
        "Pieds-valeurs : « Ce que je fais montre ce qui compte pour moi – c’est ça qui porte ma table. »",
-       "Cris du bord : « Qui crie du bord ne décide pas avec moi. »",
+       "Cris de la galerie : « Qui crie depuis la galerie n’est pas à ma table. »",
        "Chaise d’essai : « Essayer du nouveau : petit, sûr – et ça peut repartir. »",
        "Présidence : « Beaucoup de facettes, une seule présidence : moi. »"
       ]
@@ -9331,7 +9331,7 @@
    "nr": 6,
    "faden": {
     "de": "Wer sitzt an deinem Tisch? Bonnevoie: Yonas, Kika und Mil für die Porträt-Serie – Tischkarten, zwei Stühle, Wertebeine, Zwischenruf, Probestuhl, Vorsitz",
-    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris du bord, chaise d’essai, présidence"
+    "fr": "Qui est à ta table ? Bonnevoie : Yonas, Kika et Mil pour la série de portraits – cartes de table, deux chaises, pieds-valeurs, cris de la galerie, chaise d’essai, présidence"
    },
    "bruecke": {
     "de": "Dienstag, 12:15: Die Vorsitzende fragt „Noch Punkte?“ – und Yonas sitzt in der dritten Reihe. Heute geht die Porträt-Serie online. Für jedes Porträt fehlt noch das Schlusszitat.",

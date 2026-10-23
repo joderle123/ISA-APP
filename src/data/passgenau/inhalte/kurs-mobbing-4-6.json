@@ -2057,7 +2057,7 @@
      {
       "titel": "Nur für dich: vier Momente und Gaston",
       "karten": [
-       "Moment 1: Plitsch hat Matsch an der Nase. Zélie will es Gaston sagen, damit alle lachen.",
+       "Moment 1: Plitsch hat aus Versehen einen Schilfhalm umgeknickt. Zélie will es Gaston sagen, damit Plitsch Ärger bekommt.",
        "Moment 2: Ilda sitzt allein am Ufer. Plitsch ruft wieder: „Du nicht!“ Zélie sieht es.",
        "Moment 3: Plitsch und Zélie wollen beide zuerst hüpfen.",
        "Moment 4: Plitsch schubst Ilda ins Schilf. Sie hat sich wehgetan.",
@@ -2125,7 +2125,7 @@
      {
       "titel": "Pour l’adulte : quatre moments et Gaston",
       "karten": [
-       "Moment 1 : Plitsch a de la boue sur le nez. Zélie veut le dire à Gaston pour qu’on se moque de lui.",
+       "Moment 1 : Plitsch a cassé un roseau sans faire exprès. Zélie veut le dire à Gaston pour qu’il se fasse gronder.",
        "Moment 2 : Ilda est seule sur la rive. Plitsch crie encore : « Pas toi ! » Zélie le voit.",
        "Moment 3 : Plitsch et Zélie veulent tous les deux sauter en premier.",
        "Moment 4 : Plitsch pousse Ilda dans les roseaux. Elle s’est fait mal.",
@@ -2252,7 +2252,7 @@
   },
   "ort": "raum",
   "titel": "Petzen oder Hilfe holen? – Eulen-Post",
-  "text": "Zélie will Eule Gaston sagen, dass Plitsch Ilda immer wieder nicht mitspielen lässt – aber ist das Petzen? Heute bringt das Kind Eulen-Post. Die Fachkraft legt drei Bildkarten hin: Wer? (Ilda), Was? (Plitsch sagt „Du nicht!“), Wie oft? (ganz oft – alle Finger). Das Kind legt die Karten nacheinander auf ein Blatt Papier, faltet es zum Brief und fliegt damit zu Gaston auf der Stuhllehne. Dort klappt es den Brief auf und sagt zu jeder Karte ein Stück vom Hilfe-Satz. Gaston dankt und kümmert sich. Dann bringt das Kind einen zweiten Brief: Plitsch hat Matsch an der Nase. Gaston fragt: „Braucht da jemand Hilfe?“ – das Kind entscheidet. Merksatz: „Petzen will Ärger machen. Hilfe holen hilft. Das darf ich immer.“",
+  "text": "Zélie will Eule Gaston sagen, dass Plitsch Ilda immer wieder nicht mitspielen lässt – aber ist das Petzen? Heute bringt das Kind Eulen-Post. Die Fachkraft legt drei Bildkarten hin: Wer? (Ilda), Was? (Plitsch sagt „Du nicht!“), Wie oft? (ganz oft – alle Finger). Das Kind legt die Karten nacheinander auf ein Blatt Papier, faltet es zum Brief und fliegt damit zu Gaston auf der Stuhllehne. Dort klappt es den Brief auf und sagt zu jeder Karte ein Stück vom Hilfe-Satz. Gaston dankt und kümmert sich. Dann bringt das Kind einen zweiten Brief: Plitsch hat aus Versehen einen Schilfhalm umgeknickt. Gaston fragt: „Braucht da jemand Hilfe?“ – das Kind entscheidet. Merksatz: „Petzen will Ärger machen. Hilfe holen hilft. Das darf ich immer.“",
   "sagen": [
    "Wer? Was? Wie oft? Leg die Karten in den Brief.",
    "Flieg zu Gaston und lies ihm deinen Brief vor.",
@@ -2284,7 +2284,7 @@
   },
   "fr": {
    "titel": "Rapporter ou chercher de l’aide ? – La poste du hibou",
-   "text": "Zélie veut dire au hibou Gaston que Plitsch empêche encore et encore Ilda de jouer – mais est-ce rapporter ? Aujourd’hui, l’enfant porte le courrier du hibou. L’adulte pose trois cartes-images : Qui ? (Ilda), Quoi ? (Plitsch dit « Pas toi ! »), Combien de fois ? (plein de fois – tous les doigts). L’enfant pose les cartes dans l’ordre sur une feuille, la plie en lettre et vole avec jusqu’à Gaston sur la chaise. Là, il ouvre la lettre et dit pour chaque carte un morceau de la phrase d’aide. Gaston remercie et s’en occupe. Puis l’enfant apporte une deuxième lettre : Plitsch a de la boue sur le nez. Gaston demande : « Quelqu’un a besoin d’aide ? » – l’enfant décide. Phrase-clé : « Rapporter, c’est vouloir faire gronder quelqu’un. Chercher de l’aide, ça aide. J’ai toujours le droit. »",
+   "text": "Zélie veut dire au hibou Gaston que Plitsch empêche encore et encore Ilda de jouer – mais est-ce rapporter ? Aujourd’hui, l’enfant porte le courrier du hibou. L’adulte pose trois cartes-images : Qui ? (Ilda), Quoi ? (Plitsch dit « Pas toi ! »), Combien de fois ? (plein de fois – tous les doigts). L’enfant pose les cartes dans l’ordre sur une feuille, la plie en lettre et vole avec jusqu’à Gaston sur la chaise. Là, il ouvre la lettre et dit pour chaque carte un morceau de la phrase d’aide. Gaston remercie et s’en occupe. Puis l’enfant apporte une deuxième lettre : Plitsch a cassé un roseau sans faire exprès. Gaston demande : « Quelqu’un a besoin d’aide ? » – l’enfant décide. Phrase-clé : « Rapporter, c’est vouloir faire gronder quelqu’un. Chercher de l’aide, ça aide. J’ai toujours le droit. »",
    "sagen": [
     "Qui ? Quoi ? Combien de fois ? Mets les cartes dans la lettre.",
     "Vole jusqu’à Gaston et lis-lui ta lettre.",
@@ -2302,12 +2302,12 @@
      "Ein Blatt Papier zum Falten",
      "Karte „Nur für dich“ lesen"
     ],
-    "aufbau": "Spickzettel – Kern 7′ + Blatt 3′:\n0′ Brief bei Gaston zeigen – „Heute bist du die Post!“\n1′ Kind legt drei Karten: wer, was, wie oft – „In welche Reihe?“\n3′ Kind fliegt mit dem Brief, sagt den Hilfe-Satz – „Gaston, Ilda braucht Hilfe.“\n5′ zweiter Brief: Matsch an der Nase – „Petzen oder Hilfe?“\n7′ Blatt: Eule malen, Seerose anmalen – „Mal deine Eule.“\nMuss: ein Brief mit Hilfe-Satz. Kann: zweiter Brief. Wird es knapp: Gaston sagt den Satz mit.",
+    "aufbau": "Spickzettel – Kern 7′ + Blatt 3′:\n0′ Brief bei Gaston zeigen – „Heute bist du die Post!“\n1′ Kind legt drei Karten: wer, was, wie oft – „In welche Reihe?“\n3′ Kind fliegt mit dem Brief, sagt den Hilfe-Satz – „Gaston, Ilda braucht Hilfe.“\n5′ zweiter Brief: umgeknickter Schilfhalm – „Petzen oder Hilfe?“\n7′ Blatt: Eule malen, Seerose anmalen – „Mal deine Eule.“\nMuss: ein Brief mit Hilfe-Satz. Kann: zweiter Brief. Wird es knapp: Gaston sagt den Satz mit.",
     "karten": [
      {
       "titel": "Nur für dich: Eulen-Post",
       "karten": [
-       "Gaston antwortet immer: „Danke, dass du es mir sagst. Ich kümmere mich.“ Beim Matsch-Brief fragt er nur nach – das Kind entscheidet.",
+       "Gaston antwortet immer: „Danke, dass du es mir sagst. Ich kümmere mich.“ Beim Schilf-Brief fragt er nur nach – das Kind entscheidet.",
        "Der Hilfe-Satz: wer – was – wie oft. Das „wie oft“ zeigt Erwachsenen: Das ist mehr als Streit.",
        "Pause: Legt das Kind den Ruhe-Kiesel in den Weiher, ist Pause – ohne Frage. Eigenes nie erfragen und nie nachspielen lassen.",
        "Plitsch spricht nur die Fachkraft. Das Kind spielt nie den, der ärgert, und nie Ilda. Danach: „Tier hinlegen – du bist wieder du.“",
@@ -2363,12 +2363,12 @@
      "Une feuille à plier",
      "Lire la carte « Pour l’adulte »"
     ],
-    "aufbau": "Antisèche – cœur 7′ + fiche 3′ :\n0′ montrer la lettre près de Gaston – « Aujourd’hui, c’est toi le facteur ! »\n1′ l’enfant pose trois cartes : qui, quoi, combien – « Dans quel ordre ? »\n3′ l’enfant vole avec la lettre, dit la phrase d’aide – « Gaston, Ilda a besoin d’aide. »\n5′ deuxième lettre : la boue sur le nez – « Rapporter ou aide ? »\n7′ fiche : dessiner le hibou, colorier le nénuphar – « Dessine ton hibou. »\nIndispensable : une lettre avec la phrase. En option : deuxième lettre. Temps court : Gaston dit la phrase avec lui.",
+    "aufbau": "Antisèche – cœur 7′ + fiche 3′ :\n0′ montrer la lettre près de Gaston – « Aujourd’hui, c’est toi le facteur ! »\n1′ l’enfant pose trois cartes : qui, quoi, combien – « Dans quel ordre ? »\n3′ l’enfant vole avec la lettre, dit la phrase d’aide – « Gaston, Ilda a besoin d’aide. »\n5′ deuxième lettre : le roseau cassé – « Rapporter ou aide ? »\n7′ fiche : dessiner le hibou, colorier le nénuphar – « Dessine ton hibou. »\nIndispensable : une lettre avec la phrase. En option : deuxième lettre. Temps court : Gaston dit la phrase avec lui.",
     "karten": [
      {
       "titel": "Pour l’adulte : courrier du hibou",
       "karten": [
-       "Gaston répond toujours : « Merci de me le dire. Je m’en occupe. » Pour la lettre de la boue, il demande seulement – l’enfant décide.",
+       "Gaston répond toujours : « Merci de me le dire. Je m’en occupe. » Pour la lettre du roseau, il demande seulement – l’enfant décide.",
        "La phrase d’aide : qui – quoi – combien de fois. Le « combien » montre aux adultes : c’est plus qu’une dispute.",
        "Pause : si l’enfant pose le caillou du calme dans l’étang, c’est la pause – sans question. Ne jamais questionner ni faire rejouer son vécu.",
        "Seul l’adulte fait parler Plitsch. L’enfant ne joue jamais celui qui embête, ni Ilda. Après : « On pose l’animal – tu redeviens toi. »",

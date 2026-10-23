@@ -515,11 +515,11 @@
     "haken": "Ein Lineal fällt ohne Vorwarnung – die oder der Jugendliche fängt es und liest die eigene Reaktion in Zentimetern ab. Genau das geben Spiele: sofort Rückmeldung, man wird sichtbar besser. Der Kurs beginnt mit Anerkennung, nicht mit einer Warnung.",
     "vorbereitung": [
      "Lineal (30 cm) bereitlegen",
-     "Neun Sätze, vier Zonen und acht Quellen drucken und schneiden",
+     "Neun Sätze und vier Zonen drucken und schneiden (acht Quellen-Karten optional)",
      "Platz am Boden für vier Zonen (etwa 2 × 2 m)",
      "Kartensatz „Nur für dich – wenn es echt wird“ einmal lesen"
     ],
-    "aufbau": "0′ Lineal fallen lassen, dreimal fangen – „Fang!“\n2′ Jugendhaus, Cup und Steves Bedingung erzählen – „Du bist ihr Balance-Coach.“\n4′ Neun Sätze der drei in vier Bodenzonen legen – „Wohin gehört das?“\n9′ Für eine Zone eine Quelle ohne Bildschirm wählen – „Wo kriegt man das noch?“\n11′ Merksatz – „Ich weiß, was ein Spiel gibt – und wo man das noch kriegt.“\nKern 12′ · Blatt 5′: Core Loop, Regler, Quelle\nMuss: Lineal, Zonen, eine Quelle. Kann: alle neun Sätze. Wird es knapp: fünf Sätze.",
+    "aufbau": "0′ Lineal fallen lassen, dreimal fangen – „Fang!“\n2′ Jugendhaus, Cup und Steves Bedingung erzählen – „Du bist ihr Balance-Coach.“\n4′ Neun Sätze der drei in vier Bodenzonen legen – „Wohin gehört das?“\n9′ Für eine Zone eine Quelle ohne Bildschirm wählen – „Wo kriegt man das noch?“\n11′ Merksatz – „Ich weiß, was ein Spiel gibt – und wo man das noch kriegt.“\nKern 12′ · Blatt 5′: Core Loop, Regler, Quelle\nMuss: Lineal, Zonen, eine Quelle (frei genannt). Kann: alle neun Sätze, Quellen-Karten. Wird es knapp: fünf Sätze.",
     "karten": [
      {
       "titel": "Neun Sätze der drei (auf den Boden)",
@@ -545,7 +545,7 @@
       ]
      },
      {
-      "titel": "Quellen ohne Bildschirm (8)",
+      "titel": "Quellen ohne Bildschirm (optional, falls Ideen fehlen)",
       "karten": [
        "Verein",
        "Musik machen",
@@ -601,6 +601,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -614,11 +618,11 @@
     "haken": "Une règle tombe sans prévenir – le ou la jeune la rattrape et lit sa propre réaction en centimètres. C’est exactement ce que donnent les jeux : un retour immédiat, on progresse à vue d’œil. Le cours commence par la reconnaissance, pas par un avertissement.",
     "vorbereitung": [
      "Préparer une règle (30 cm)",
-     "Imprimer et découper neuf phrases, quatre zones et huit sources",
+     "Imprimer et découper neuf phrases et quatre zones (huit cartes sources en option)",
      "De la place au sol pour quatre zones (environ 2 × 2 m)",
      "Lire une fois les cartes « Pour l’adulte – quand c’est sérieux »"
     ],
-    "aufbau": "0′ Lâcher la règle, la rattraper trois fois – « Attrape ! »\n2′ Raconter la maison des jeunes, la coupe, la condition de Steve – « Tu es leur coach. »\n4′ Poser neuf phrases des trois dans quatre zones au sol – « Ça va où ? »\n9′ Choisir pour une zone une source sans écran – « On trouve ça où aussi ? »\n11′ Phrase-clé – « Je sais ce qu’un jeu apporte – et où on le trouve aussi. »\nCœur 12′ · fiche 5′ : boucle, curseurs, source\nIndispensable : règle, zones, une source. En option : les neuf phrases. Si le temps manque : cinq phrases.",
+    "aufbau": "0′ Lâcher la règle, la rattraper trois fois – « Attrape ! »\n2′ Raconter la maison des jeunes, la coupe, la condition de Steve – « Tu es leur coach. »\n4′ Poser neuf phrases des trois dans quatre zones au sol – « Ça va où ? »\n9′ Choisir pour une zone une source sans écran – « On trouve ça où aussi ? »\n11′ Phrase-clé – « Je sais ce qu’un jeu apporte – et où on le trouve aussi. »\nCœur 12′ · fiche 5′ : boucle, curseurs, source\nIndispensable : règle, zones, une source (dite librement). En option : les neuf phrases, les cartes sources. Si le temps manque : cinq phrases.",
     "karten": [
      {
       "titel": "Neuf phrases des trois (au sol)",
@@ -644,7 +648,7 @@
       ]
      },
      {
-      "titel": "Sources sans écran (8)",
+      "titel": "Sources sans écran (en option, si les idées manquent)",
       "karten": [
        "Club de sport",
        "Faire de la musique",
@@ -698,6 +702,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -1084,11 +1092,11 @@
     "haken": "Ein Lineal fällt ohne Vorwarnung – die oder der Jugendliche fängt es und liest die eigene Reaktion in Zentimetern ab. Genau das geben Spiele: sofort Rückmeldung, man wird sichtbar besser. Der Kurs beginnt mit Anerkennung, nicht mit einer Warnung.",
     "vorbereitung": [
      "Lineal (30 cm) bereitlegen",
-     "Neun Sätze, vier Zonen und acht Quellen drucken und schneiden",
+     "Neun Sätze und vier Zonen drucken und schneiden (acht Quellen-Karten optional)",
      "Platz am Boden für vier Zonen (etwa 2 × 2 m)",
      "Kartensatz „Nur für dich – wenn es echt wird“ einmal lesen"
     ],
-    "aufbau": "0′ Lineal fallen lassen, dreimal fangen – „Fang!“\n2′ Jugendhaus, Cup und Steves Bedingung erzählen – „Du bist ihr Balance-Coach.“\n4′ Neun Sätze der drei in vier Bodenzonen legen – „Wohin gehört das?“\n9′ Für eine Zone eine Quelle ohne Bildschirm wählen – „Wo kriegt man das noch?“\n11′ Merksatz – „Ich weiß, was ein Spiel gibt – und wo man das noch kriegt.“\nKern 12′ · Blatt 5′: Core Loop, Regler, Quelle\nMuss: Lineal, Zonen, eine Quelle. Kann: alle neun Sätze. Wird es knapp: fünf Sätze.",
+    "aufbau": "0′ Lineal fallen lassen, dreimal fangen – „Fang!“\n2′ Jugendhaus, Cup und Steves Bedingung erzählen – „Du bist ihr Balance-Coach.“\n4′ Neun Sätze der drei in vier Bodenzonen legen – „Wohin gehört das?“\n9′ Für eine Zone eine Quelle ohne Bildschirm wählen – „Wo kriegt man das noch?“\n11′ Merksatz – „Ich weiß, was ein Spiel gibt – und wo man das noch kriegt.“\nKern 12′ · Blatt 5′: Core Loop, Regler, Quelle\nMuss: Lineal, Zonen, eine Quelle (frei genannt). Kann: alle neun Sätze, Quellen-Karten. Wird es knapp: fünf Sätze.",
     "karten": [
      {
       "titel": "Neun Sätze der drei (auf den Boden)",
@@ -1114,7 +1122,7 @@
       ]
      },
      {
-      "titel": "Quellen ohne Bildschirm (8)",
+      "titel": "Quellen ohne Bildschirm (optional, falls Ideen fehlen)",
       "karten": [
        "Verein",
        "Musik machen",
@@ -1170,6 +1178,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -1183,11 +1195,11 @@
     "haken": "Une règle tombe sans prévenir – le ou la jeune la rattrape et lit sa propre réaction en centimètres. C’est exactement ce que donnent les jeux : un retour immédiat, on progresse à vue d’œil. Le cours commence par la reconnaissance, pas par un avertissement.",
     "vorbereitung": [
      "Préparer une règle (30 cm)",
-     "Imprimer et découper neuf phrases, quatre zones et huit sources",
+     "Imprimer et découper neuf phrases et quatre zones (huit cartes sources en option)",
      "De la place au sol pour quatre zones (environ 2 × 2 m)",
      "Lire une fois les cartes « Pour l’adulte – quand c’est sérieux »"
     ],
-    "aufbau": "0′ Lâcher la règle, la rattraper trois fois – « Attrape ! »\n2′ Raconter la maison des jeunes, la coupe, la condition de Steve – « Tu es leur coach. »\n4′ Poser neuf phrases des trois dans quatre zones au sol – « Ça va où ? »\n9′ Choisir pour une zone une source sans écran – « On trouve ça où aussi ? »\n11′ Phrase-clé – « Je sais ce qu’un jeu apporte – et où on le trouve aussi. »\nCœur 12′ · fiche 5′ : boucle, curseurs, source\nIndispensable : règle, zones, une source. En option : les neuf phrases. Si le temps manque : cinq phrases.",
+    "aufbau": "0′ Lâcher la règle, la rattraper trois fois – « Attrape ! »\n2′ Raconter la maison des jeunes, la coupe, la condition de Steve – « Tu es leur coach. »\n4′ Poser neuf phrases des trois dans quatre zones au sol – « Ça va où ? »\n9′ Choisir pour une zone une source sans écran – « On trouve ça où aussi ? »\n11′ Phrase-clé – « Je sais ce qu’un jeu apporte – et où on le trouve aussi. »\nCœur 12′ · fiche 5′ : boucle, curseurs, source\nIndispensable : règle, zones, une source (dite librement). En option : les neuf phrases, les cartes sources. Si le temps manque : cinq phrases.",
     "karten": [
      {
       "titel": "Neuf phrases des trois (au sol)",
@@ -1213,7 +1225,7 @@
       ]
      },
      {
-      "titel": "Sources sans écran (8)",
+      "titel": "Sources sans écran (en option, si les idées manquent)",
       "karten": [
        "Club de sport",
        "Faire de la musique",
@@ -1267,6 +1279,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -1460,6 +1476,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -1541,6 +1561,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -1734,6 +1758,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -1815,6 +1843,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -2220,7 +2252,8 @@
        "Muster, nicht vorsagen: Kauf nach Fast-Treffer (Tag 2, 20), Countdown (Tag 9), Niederlage mit Vergleich (Tag 13); drei von vier nach 22 Uhr.",
        "Kein Kauf nach Gratis-Pack und nach Sieg. Wer das selbst findet, hat das Wichtigste verstanden.",
        "Würfel: Im Schnitt bringt A sechs Marken, B fünf. Wer A will: „Dich ködert man schwer.“",
-       "Kein Geld fürs Spielen? „Dann greift der Trick bei dir nicht.“ Nie Beträge vergleichen, nie fragen, woher Geld kommt."
+       "Kein Geld fürs Spielen? „Dann greift der Trick bei dir nicht.“ Nie Beträge vergleichen, nie fragen, woher Geld kommt.",
+       "Skins werden auf Drittseiten auch gegen echtes Geld gehandelt oder verwettet: glücksspielnah, Betrugsrisiko. Kommt es zur Sprache: nachfragen, nicht vertiefen."
       ]
      },
      {
@@ -2256,6 +2289,10 @@
      {
       "titel": "Nachts und sonntags: Notruf 112, Polizei 113; SOS Détresse 45 45 45 (täglich 11–23 Uhr, Fr und Sa bis 3 Uhr)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
@@ -2313,7 +2350,8 @@
        "Motif, sans le souffler : achat après un presque (j. 2, 20), un compte à rebours (j. 9), une défaite avec comparaison (j. 13) ; 3 sur 4 après 22 h.",
        "Pas d’achat après le pack gratuit ni après une victoire. Qui le trouve seul a compris l’essentiel.",
        "Dé : en moyenne, A donne six jetons, B cinq. Qui préfère A : « Toi, on ne t’appâte pas facilement. »",
-       "Pas d’argent pour jouer ? « Alors le truc ne marche pas sur toi. » Jamais comparer des montants, jamais demander d’où vient l’argent."
+       "Pas d’argent pour jouer ? « Alors le truc ne marche pas sur toi. » Jamais comparer des montants, jamais demander d’où vient l’argent.",
+       "Sur des sites tiers, les skins se vendent ou se parient contre de l’argent réel : proche du jeu d’argent, arnaques. Si ça vient : demander, sans creuser."
       ]
      },
      {
@@ -2349,6 +2387,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -2772,7 +2814,8 @@
        "Muster, nicht vorsagen: Kauf nach Fast-Treffer (Tag 2, 20), Countdown (Tag 9), Niederlage mit Vergleich (Tag 13); drei von vier nach 22 Uhr.",
        "Kein Kauf nach Gratis-Pack und nach Sieg. Wer das selbst findet, hat das Wichtigste verstanden.",
        "Würfel: Im Schnitt bringt A sechs Marken, B fünf. Wer A will: „Dich ködert man schwer.“",
-       "Kein Geld fürs Spielen? „Dann greift der Trick bei dir nicht.“ Nie Beträge vergleichen, nie fragen, woher Geld kommt."
+       "Kein Geld fürs Spielen? „Dann greift der Trick bei dir nicht.“ Nie Beträge vergleichen, nie fragen, woher Geld kommt.",
+       "Skins werden auf Drittseiten auch gegen echtes Geld gehandelt oder verwettet: glücksspielnah, Betrugsrisiko. Kommt es zur Sprache: nachfragen, nicht vertiefen."
       ]
      },
      {
@@ -2808,6 +2851,10 @@
      {
       "titel": "Nachts und sonntags: Notruf 112, Polizei 113; SOS Détresse 45 45 45 (täglich 11–23 Uhr, Fr und Sa bis 3 Uhr)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
@@ -2865,7 +2912,8 @@
        "Motif, sans le souffler : achat après un presque (j. 2, 20), un compte à rebours (j. 9), une défaite avec comparaison (j. 13) ; 3 sur 4 après 22 h.",
        "Pas d’achat après le pack gratuit ni après une victoire. Qui le trouve seul a compris l’essentiel.",
        "Dé : en moyenne, A donne six jetons, B cinq. Qui préfère A : « Toi, on ne t’appâte pas facilement. »",
-       "Pas d’argent pour jouer ? « Alors le truc ne marche pas sur toi. » Jamais comparer des montants, jamais demander d’où vient l’argent."
+       "Pas d’argent pour jouer ? « Alors le truc ne marche pas sur toi. » Jamais comparer des montants, jamais demander d’où vient l’argent.",
+       "Sur des sites tiers, les skins se vendent ou se parient contre de l’argent réel : proche du jeu d’argent, arnaques. Si ça vient : demander, sans creuser."
       ]
      },
      {
@@ -2901,6 +2949,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -3069,7 +3121,8 @@
        "Muster, nicht vorsagen: Kauf nach Fast-Treffer (Tag 2, 20), Countdown (Tag 9), Niederlage mit Vergleich (Tag 13); drei von vier nach 22 Uhr.",
        "Kein Kauf nach Gratis-Pack und nach Sieg. Wer das selbst findet, hat das Wichtigste verstanden.",
        "Würfel: Im Schnitt bringt A sechs Marken, B fünf. Wer A will: „Dich ködert man schwer.“",
-       "Kein Geld fürs Spielen? „Dann greift der Trick bei dir nicht.“ Nie Beträge vergleichen, nie fragen, woher Geld kommt."
+       "Kein Geld fürs Spielen? „Dann greift der Trick bei dir nicht.“ Nie Beträge vergleichen, nie fragen, woher Geld kommt.",
+       "Skins werden auf Drittseiten auch gegen echtes Geld gehandelt oder verwettet: glücksspielnah, Betrugsrisiko. Kommt es zur Sprache: nachfragen, nicht vertiefen."
       ]
      },
      {
@@ -3104,6 +3157,10 @@
      {
       "titel": "Nachts und sonntags: Notruf 112, Polizei 113; SOS Détresse 45 45 45 (täglich 11–23 Uhr, Fr und Sa bis 3 Uhr)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
@@ -3160,7 +3217,8 @@
        "Motif, sans le souffler : achat après un presque (j. 2, 20), un compte à rebours (j. 9), une défaite avec comparaison (j. 13) ; 3 sur 4 après 22 h.",
        "Pas d’achat après le pack gratuit ni après une victoire. Qui le trouve seul a compris l’essentiel.",
        "Dé : en moyenne, A donne six jetons, B cinq. Qui préfère A : « Toi, on ne t’appâte pas facilement. »",
-       "Pas d’argent pour jouer ? « Alors le truc ne marche pas sur toi. » Jamais comparer des montants, jamais demander d’où vient l’argent."
+       "Pas d’argent pour jouer ? « Alors le truc ne marche pas sur toi. » Jamais comparer des montants, jamais demander d’où vient l’argent.",
+       "Sur des sites tiers, les skins se vendent ou se parient contre de l’argent réel : proche du jeu d’argent, arnaques. Si ça vient : demander, sans creuser."
       ]
      },
      {
@@ -3195,6 +3253,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -3363,7 +3425,8 @@
        "Muster, nicht vorsagen: Kauf nach Fast-Treffer (Tag 2, 20), Countdown (Tag 9), Niederlage mit Vergleich (Tag 13); drei von vier nach 22 Uhr.",
        "Kein Kauf nach Gratis-Pack und nach Sieg. Wer das selbst findet, hat das Wichtigste verstanden.",
        "Würfel: Im Schnitt bringt A sechs Marken, B fünf. Wer A will: „Dich ködert man schwer.“",
-       "Kein Geld fürs Spielen? „Dann greift der Trick bei dir nicht.“ Nie Beträge vergleichen, nie fragen, woher Geld kommt."
+       "Kein Geld fürs Spielen? „Dann greift der Trick bei dir nicht.“ Nie Beträge vergleichen, nie fragen, woher Geld kommt.",
+       "Skins werden auf Drittseiten auch gegen echtes Geld gehandelt oder verwettet: glücksspielnah, Betrugsrisiko. Kommt es zur Sprache: nachfragen, nicht vertiefen."
       ]
      },
      {
@@ -3398,6 +3461,10 @@
      {
       "titel": "Nachts und sonntags: Notruf 112, Polizei 113; SOS Détresse 45 45 45 (täglich 11–23 Uhr, Fr und Sa bis 3 Uhr)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
@@ -3454,7 +3521,8 @@
        "Motif, sans le souffler : achat après un presque (j. 2, 20), un compte à rebours (j. 9), une défaite avec comparaison (j. 13) ; 3 sur 4 après 22 h.",
        "Pas d’achat après le pack gratuit ni après une victoire. Qui le trouve seul a compris l’essentiel.",
        "Dé : en moyenne, A donne six jetons, B cinq. Qui préfère A : « Toi, on ne t’appâte pas facilement. »",
-       "Pas d’argent pour jouer ? « Alors le truc ne marche pas sur toi. » Jamais comparer des montants, jamais demander d’où vient l’argent."
+       "Pas d’argent pour jouer ? « Alors le truc ne marche pas sur toi. » Jamais comparer des montants, jamais demander d’où vient l’argent.",
+       "Sur des sites tiers, les skins se vendent ou se parient contre de l’argent réel : proche du jeu d’argent, arnaques. Si ça vient : demander, sans creuser."
       ]
      },
      {
@@ -3489,6 +3557,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -3944,6 +4016,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -4037,6 +4113,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -4478,6 +4558,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -4571,6 +4655,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -4767,6 +4855,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -4848,6 +4940,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -5045,6 +5141,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -5126,6 +5226,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -5368,7 +5472,7 @@
        "art": "info",
        "symbol": "wissen",
        "titel": "Aujourd’hui : partie 4 – Reset du tilt",
-       "text": "« D’abord couper le son et souffler, puis signaler – pas renvoyer le flame. »"
+       "text": "« D’abord couper le son et souffler, puis signaler – sans répondre au flame. »"
       },
       {
        "art": "text",
@@ -5499,7 +5603,7 @@
   },
   "fr": {
    "titel": "Reset du tilt : les qualifs, 11-13",
-   "text": "Dmytro a maintenant un cooldown – et les qualifs ont eu lieu. Le flipper : si on le secoue trop fort, il affiche « TILT » et tout s’arrête – juste quand on en veut le plus. Test de tension : poings, épaules et mâchoire serrés cinq secondes, puis relâcher et expirer longuement. Puis l’adulte lit les qualifs en pièce sonore : la squad de Tessy perd 11-13, un adversaire flame Tessy avec des propos sexistes, Nando l’insulte en retour, Tessy s’en prend à Dmytro – et Dmytro suit tout seulement dans les sous-titres. À trois pauses, le ou la jeune coache en quatrième voix du vocal : il ou elle pose une carte reset et dit la phrase. Pour quitter le rôle : « Casque enlevé – tu redeviens toi. » Phrase-clé : « D’abord couper le son et souffler, puis signaler – pas renvoyer le flame. »",
+   "text": "Dmytro a maintenant un cooldown – et les qualifs ont eu lieu. Le flipper : si on le secoue trop fort, il affiche « TILT » et tout s’arrête – juste quand on en veut le plus. Test de tension : poings, épaules et mâchoire serrés cinq secondes, puis relâcher et expirer longuement. Puis l’adulte lit les qualifs en pièce sonore : la squad de Tessy perd 11-13, un adversaire flame Tessy avec des propos sexistes, Nando l’insulte en retour, Tessy s’en prend à Dmytro – et Dmytro suit tout seulement dans les sous-titres. À trois pauses, le ou la jeune coache en quatrième voix du vocal : il ou elle pose une carte reset et dit la phrase. Pour quitter le rôle : « Casque enlevé – tu redeviens toi. » Phrase-clé : « D’abord couper le son et souffler, puis signaler – sans répondre au flame. »",
    "sagen": [
     "Poings serrés, épaules hautes, mâchoire fermée – cinq secondes… et on relâche. Longue expiration.",
     "Pause ! Tu es dans le chat vocal. Quelle carte tu poses – et tu dis quoi ?",
@@ -5592,6 +5696,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -5608,7 +5716,7 @@
      "Lire une fois à voix haute la pièce sonore (Pour l’adulte), marquer les pauses",
      "Lire une fois les cartes « Pour l’adulte – quand c’est sérieux »"
     ],
-    "aufbau": "0′ Raconter le flipper : secoué trop fort, TILT – « Ça veut dire quoi ? »\n2′ Poings, épaules, mâchoire serrés, relâcher, expirer – « Tu sens la différence ? »\n4′ Lire les qualifs jusqu’à la pause 1 – « Tu fais quoi pour Tessy ? »\n7′ Pauses 2 et 3 : carte reset, phrase – « Et pour Nando ? »\n10′ Casque enlevé, phrase-clé – « D’abord couper le son et souffler, puis signaler – pas renvoyer le flame. »\nCœur 12′ · fiche 5′ : signes, chat, reset\nIndispensable : test, deux pauses. En option : pause 3. Si le temps manque : pause 1.",
+    "aufbau": "0′ Raconter le flipper : secoué trop fort, TILT – « Ça veut dire quoi ? »\n2′ Poings, épaules, mâchoire serrés, relâcher, expirer – « Tu sens la différence ? »\n4′ Lire les qualifs jusqu’à la pause 1 – « Tu fais quoi pour Tessy ? »\n7′ Pauses 2 et 3 : carte reset, phrase – « Et pour Nando ? »\n10′ Casque enlevé, phrase-clé – « D’abord couper le son et souffler, puis signaler – sans répondre au flame. »\nCœur 12′ · fiche 5′ : signes, chat, reset\nIndispensable : test, deux pauses. En option : pause 3. Si le temps manque : pause 1.",
     "karten": [
      {
       "titel": "Cartes reset (6)",
@@ -5656,7 +5764,7 @@
      }
     ],
     "leichter": "Seulement la pause 1 ; l’adulte lève deux cartes reset au choix. Test de tension avec les mains seulement.",
-    "schwerer": "Le ou la jeune explique pourquoi renvoyer le flame nuit à la squad (avertissement) et comment signaler sans nourrir l’adversaire : l’heure, une capture, le report.",
+    "schwerer": "Le ou la jeune explique pourquoi répondre au flame nuit à la squad (avertissement) et comment signaler sans nourrir l’adversaire : l’heure, une capture, le report.",
     "gruppe": "Règle d’abord : « On parle de Tessy, Dmytro et Nando. Qui joue raconte seulement ce qu’il veut – personne ne doit dire combien. » L’adulte lit, personne ne joue l’adversaire ni Tessy. À chaque pause, une autre personne pose une carte reset et dit la phrase ; les autres montrent du pouce s’ils veulent compléter. Fin : tous serrent les poings, relâchent, expirent.",
     "beobachten": [
      "sent les signes du tilt dans le corps (mains, mâchoire, voix)",
@@ -5676,6 +5784,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -5904,7 +6016,7 @@
        "art": "info",
        "symbol": "wissen",
        "titel": "Aujourd’hui : partie 4 – Reset du tilt",
-       "text": "« D’abord couper le son et souffler, puis signaler – pas renvoyer le flame. »"
+       "text": "« D’abord couper le son et souffler, puis signaler – sans répondre au flame. »"
       },
       {
        "art": "text",
@@ -6021,7 +6133,7 @@
   },
   "fr": {
    "titel": "Reset du tilt : les qualifs, 11-13",
-   "text": "Dmytro a maintenant un cooldown – et les qualifs ont eu lieu. Le flipper : si on le secoue trop fort, il affiche « TILT » et tout s’arrête – juste quand on en veut le plus. Test de tension : poings, épaules et mâchoire serrés cinq secondes, puis relâcher et expirer longuement. Puis l’adulte lit les qualifs en pièce sonore : la squad de Tessy perd 11-13, un adversaire flame Tessy avec des propos sexistes, Nando l’insulte en retour, Tessy s’en prend à Dmytro – et Dmytro suit tout seulement dans les sous-titres. À trois pauses, le ou la jeune coache en quatrième voix du vocal : il ou elle pose une carte reset et dit la phrase. Pour quitter le rôle : « Casque enlevé – tu redeviens toi. » Phrase-clé : « D’abord couper le son et souffler, puis signaler – pas renvoyer le flame. »",
+   "text": "Dmytro a maintenant un cooldown – et les qualifs ont eu lieu. Le flipper : si on le secoue trop fort, il affiche « TILT » et tout s’arrête – juste quand on en veut le plus. Test de tension : poings, épaules et mâchoire serrés cinq secondes, puis relâcher et expirer longuement. Puis l’adulte lit les qualifs en pièce sonore : la squad de Tessy perd 11-13, un adversaire flame Tessy avec des propos sexistes, Nando l’insulte en retour, Tessy s’en prend à Dmytro – et Dmytro suit tout seulement dans les sous-titres. À trois pauses, le ou la jeune coache en quatrième voix du vocal : il ou elle pose une carte reset et dit la phrase. Pour quitter le rôle : « Casque enlevé – tu redeviens toi. » Phrase-clé : « D’abord couper le son et souffler, puis signaler – sans répondre au flame. »",
    "sagen": [
     "Poings serrés, épaules hautes, mâchoire fermée – cinq secondes… et on relâche. Longue expiration.",
     "Pause ! Tu es dans le chat vocal. Quelle carte tu poses – et tu dis quoi ?",
@@ -6114,6 +6226,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -6130,7 +6246,7 @@
      "Lire une fois à voix haute la pièce sonore (Pour l’adulte), marquer les pauses",
      "Lire une fois les cartes « Pour l’adulte – quand c’est sérieux »"
     ],
-    "aufbau": "0′ Raconter le flipper : secoué trop fort, TILT – « Ça veut dire quoi ? »\n2′ Poings, épaules, mâchoire serrés, relâcher, expirer – « Tu sens la différence ? »\n4′ Lire les qualifs jusqu’à la pause 1 – « Tu fais quoi pour Tessy ? »\n7′ Pauses 2 et 3 : carte reset, phrase – « Et pour Nando ? »\n10′ Casque enlevé, phrase-clé – « D’abord couper le son et souffler, puis signaler – pas renvoyer le flame. »\nCœur 12′ · fiche 5′ : signes, chat, reset\nIndispensable : test, deux pauses. En option : pause 3. Si le temps manque : pause 1.",
+    "aufbau": "0′ Raconter le flipper : secoué trop fort, TILT – « Ça veut dire quoi ? »\n2′ Poings, épaules, mâchoire serrés, relâcher, expirer – « Tu sens la différence ? »\n4′ Lire les qualifs jusqu’à la pause 1 – « Tu fais quoi pour Tessy ? »\n7′ Pauses 2 et 3 : carte reset, phrase – « Et pour Nando ? »\n10′ Casque enlevé, phrase-clé – « D’abord couper le son et souffler, puis signaler – sans répondre au flame. »\nCœur 12′ · fiche 5′ : signes, chat, reset\nIndispensable : test, deux pauses. En option : pause 3. Si le temps manque : pause 1.",
     "karten": [
      {
       "titel": "Cartes reset (6)",
@@ -6178,7 +6294,7 @@
      }
     ],
     "leichter": "Seulement la pause 1 ; l’adulte lève deux cartes reset au choix. Test de tension avec les mains seulement.",
-    "schwerer": "Le ou la jeune explique pourquoi renvoyer le flame nuit à la squad (avertissement) et comment signaler sans nourrir l’adversaire : l’heure, une capture, le report.",
+    "schwerer": "Le ou la jeune explique pourquoi répondre au flame nuit à la squad (avertissement) et comment signaler sans nourrir l’adversaire : l’heure, une capture, le report.",
     "gruppe": "Règle d’abord : « On parle de Tessy, Dmytro et Nando. Qui joue raconte seulement ce qu’il veut – personne ne doit dire combien. » L’adulte lit, personne ne joue l’adversaire ni Tessy. À chaque pause, une autre personne pose une carte reset et dit la phrase ; les autres montrent du pouce s’ils veulent compléter. Fin : tous serrent les poings, relâchent, expirent.",
     "beobachten": [
      "sent les signes du tilt dans le corps (mains, mâchoire, voix)",
@@ -6198,6 +6314,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -6309,7 +6429,7 @@
   },
   "fr": {
    "titel": "Reset du tilt : la ligne du tilt au sol",
-   "text": "Dmytro a maintenant un cooldown – et les qualifs ont eu lieu. Test de tension comme dans la variante : serrer, relâcher, expirer longuement. Puis quatre cartes forment une ligne au sol : frais, tiède, chaud, TILT. L’adulte raconte les qualifs en quatre moments. Après chaque moment, le ou la jeune se place là où Tessy ou Nando se trouve maintenant et le montre avec le corps – poings, épaules, souffle. Puis il ou elle choisit une carte reset, la fait vraiment – expirer, détendre les mains – et recule d’autant de pas que le reset agit. Pour finir : quel reset ramène le plus loin ? Phrase-clé : « D’abord couper le son et souffler, puis signaler – pas renvoyer le flame. »",
+   "text": "Dmytro a maintenant un cooldown – et les qualifs ont eu lieu. Test de tension comme dans la variante : serrer, relâcher, expirer longuement. Puis quatre cartes forment une ligne au sol : frais, tiède, chaud, TILT. L’adulte raconte les qualifs en quatre moments. Après chaque moment, le ou la jeune se place là où Tessy ou Nando se trouve maintenant et le montre avec le corps – poings, épaules, souffle. Puis il ou elle choisit une carte reset, la fait vraiment – expirer, détendre les mains – et recule d’autant de pas que le reset agit. Pour finir : quel reset ramène le plus loin ? Phrase-clé : « D’abord couper le son et souffler, puis signaler – sans répondre au flame. »",
    "sagen": [
     "Tessy est où maintenant ? Place-toi – et montre-le avec le corps.",
     "Quel reset ? Fais-le vraiment.",
@@ -6392,6 +6512,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -6407,7 +6531,7 @@
      "Quatre cartes : frais, tiède, chaud, TILT",
      "Imprimer cartes reset (6) ; de la place pour une ligne d’environ 3 m"
     ],
-    "aufbau": "0′ Test de tension – « Serrer… et relâcher. »\n2′ Poser la ligne – « De frais à TILT. »\n3′ Raconter quatre moments, se placer – « Tessy est où ? »\n7′ Faire le reset, reculer – « Combien de pas ? »\n10′ Le reset le plus fort, phrase-clé – « D’abord couper le son et souffler, puis signaler – pas renvoyer le flame. »\nCœur 12′ · fiche 5′ comme pour la variante\nIndispensable : deux moments avec reset. En option : quatre. Si le temps manque : seulement Tessy.",
+    "aufbau": "0′ Test de tension – « Serrer… et relâcher. »\n2′ Poser la ligne – « De frais à TILT. »\n3′ Raconter quatre moments, se placer – « Tessy est où ? »\n7′ Faire le reset, reculer – « Combien de pas ? »\n10′ Le reset le plus fort, phrase-clé – « D’abord couper le son et souffler, puis signaler – sans répondre au flame. »\nCœur 12′ · fiche 5′ comme pour la variante\nIndispensable : deux moments avec reset. En option : quatre. Si le temps manque : seulement Tessy.",
     "karten": [
      {
       "titel": "Ligne du tilt (4 cartes au sol)",
@@ -6472,6 +6596,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -6585,7 +6713,7 @@
   },
   "fr": {
    "titel": "Reset du tilt : réécrire le chat au calme",
-   "text": "Dmytro a maintenant un cooldown – et les qualifs ont eu lieu. À table, sans pièce sonore. L’adulte raconte calmement : la squad de Tessy est éliminée de peu, puis le chat dérape ; Nando et Tessy écrivent des choses qu’ils regrettent ensuite. L’adulte pose quatre lignes de chat de Nando et de Tessy. Le ou la jeune réécrit chaque ligne pour qu’elle aide : muet, signaler, soutenir ou pause. En plus, assis : mains serrées, relâcher, une longue expiration. Il s’agit seulement des deux. Phrase-clé : « D’abord couper le son et souffler, puis signaler – pas renvoyer le flame. »",
+   "text": "Dmytro a maintenant un cooldown – et les qualifs ont eu lieu. À table, sans pièce sonore. L’adulte raconte calmement : la squad de Tessy est éliminée de peu, puis le chat dérape ; Nando et Tessy écrivent des choses qu’ils regrettent ensuite. L’adulte pose quatre lignes de chat de Nando et de Tessy. Le ou la jeune réécrit chaque ligne pour qu’elle aide : muet, signaler, soutenir ou pause. En plus, assis : mains serrées, relâcher, une longue expiration. Il s’agit seulement des deux. Phrase-clé : « D’abord couper le son et souffler, puis signaler – sans répondre au flame. »",
    "sagen": [
     "Voici la ligne de Nando. Elle sonne comment si elle aide ?",
     "Et la ligne de Tessy – qu’est-ce qu’elle pourrait écrire à la place ?",
@@ -6664,6 +6792,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -6679,7 +6811,7 @@
      "Imprimer lignes de chat (4) et cartes reset (6)",
      "Papier, crayon"
     ],
-    "aufbau": "0′ Raconter calmement : éliminés de peu, le chat dérape – « Ils le regrettent ensuite. »\n2′ Mains serrées, relâcher, expirer – « Une longue fois. »\n3′ Réécrire quatre lignes – « Elle sonne comment si elle aide ? »\n10′ Phrase-clé – « D’abord couper le son et souffler, puis signaler – pas renvoyer le flame. »\nCœur 12′ · fiche 5′ comme pour la variante\nIndispensable : deux lignes. En option : quatre. Si le temps manque : cartes au lieu d’écrire.",
+    "aufbau": "0′ Raconter calmement : éliminés de peu, le chat dérape – « Ils le regrettent ensuite. »\n2′ Mains serrées, relâcher, expirer – « Une longue fois. »\n3′ Réécrire quatre lignes – « Elle sonne comment si elle aide ? »\n10′ Phrase-clé – « D’abord couper le son et souffler, puis signaler – sans répondre au flame. »\nCœur 12′ · fiche 5′ comme pour la variante\nIndispensable : deux lignes. En option : quatre. Si le temps manque : cartes au lieu d’écrire.",
     "karten": [
      {
       "titel": "Lignes de chat de Nando et Tessy (4)",
@@ -6740,6 +6872,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -7208,6 +7344,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -7298,6 +7438,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -7748,6 +7892,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -7838,6 +7986,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -8045,6 +8197,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -8137,6 +8293,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -8331,6 +8491,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -8409,6 +8573,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -8777,19 +8945,20 @@
       ]
      },
      {
-      "titel": "Hilfe-Karten (4)",
+      "titel": "Hilfe-Karten (5)",
       "karten": [
        "Eine Person, der ich traue",
        "SePAS im Lycée",
        "KJT 116 111 (Mo–Sa, anonym, kostenlos)",
-       "BEE SECURE 8002 1234 (Probleme im Netz)"
+       "BEE SECURE 8002 1234 (Probleme im Netz)",
+       "ZEV: Beratung, wenn Spielen zu viel wird (zev.lu, kostenlos, anonym)"
       ]
      },
      {
       "titel": "Nur für dich: Regie",
       "karten": [
        "Mehr als Balance? Über Monate: Kontrolle weg, Spielen vor allem anderen, weiter trotz klarer Folgen für Schule, Schlaf, Freunde.",
-       "Dann kein Etikett: ruhig ansprechen, SePAS bzw. CePAS, Ärztin oder Arzt. Gaming Disorder (ICD-11) stellt nur Fachpersonal fest.",
+       "Dann kein Etikett: ruhig ansprechen, SePAS bzw. CePAS, Ärztin oder Arzt, ZEV (zev.lu). Gaming Disorder (ICD-11) stellt nur Fachpersonal fest.",
        "Das Ergebnis ist kein Lohn: Auch mit Patchnotes kann man ein Spiel verlieren. Gelobt wird das Steuern, nicht der Sieg.",
        "Urkunde: Name nur, wenn die oder der Jugendliche will – ein Spielername geht auch."
       ]
@@ -8829,6 +8998,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -8866,19 +9039,20 @@
       ]
      },
      {
-      "titel": "Cartes aide (4)",
+      "titel": "Cartes aide (5)",
       "karten": [
        "Une personne de confiance",
        "Le SePAS du lycée",
        "KJT 116 111 (lun.–sam., anonyme, gratuit)",
-       "BEE SECURE 8002 1234 (problèmes en ligne)"
+       "BEE SECURE 8002 1234 (problèmes en ligne)",
+       "ZEV : conseil quand le jeu prend trop de place (zev.lu, gratuit, anonyme)"
       ]
      },
      {
       "titel": "Pour l’adulte : mise en scène",
       "karten": [
        "Plus qu’un problème d’équilibre ? Sur des mois : contrôle perdu, le jeu avant tout, on continue malgré des effets nets sur école, sommeil, amis.",
-       "Alors pas d’étiquette : en parler calmement, SePAS ou CePAS, médecin. Le trouble du jeu vidéo (CIM-11) n’est posé que par des professionnels.",
+       "Alors pas d’étiquette : en parler calmement ; SePAS ou CePAS, médecin, ZEV (zev.lu). Le trouble du jeu vidéo (CIM-11) : diagnostic par des pros.",
        "Le résultat n’est pas une récompense : on peut perdre un match même avec des notes de patch. On félicite le pilotage, pas la victoire.",
        "Diplôme : le nom seulement si le ou la jeune le veut – un pseudo de joueur marche aussi."
       ]
@@ -8916,6 +9090,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -9110,7 +9288,8 @@
       "Eine Person, der ich traue",
       "SePAS im Lycée",
       "KJT 116 111 (Mo–Sa, anonym, kostenlos)",
-      "BEE SECURE 8002 1234 (Probleme im Netz)"
+      "BEE SECURE 8002 1234 (Probleme im Netz)",
+      "ZEV: Beratung, wenn Spielen zu viel wird (zev.lu, kostenlos, anonym)"
      ],
      "spalten": 2
     },
@@ -9203,7 +9382,8 @@
       "Une personne de confiance",
       "Le SePAS du lycée",
       "KJT 116 111 (lun.–sam., anonyme, gratuit)",
-      "BEE SECURE 8002 1234 (problèmes en ligne)"
+      "BEE SECURE 8002 1234 (problèmes en ligne)",
+      "ZEV : conseil quand le jeu prend trop de place (zev.lu, gratuit, anonyme)"
      ],
      "spalten": 2
     },
@@ -9280,19 +9460,20 @@
       ]
      },
      {
-      "titel": "Hilfe-Karten (4)",
+      "titel": "Hilfe-Karten (5)",
       "karten": [
        "Eine Person, der ich traue",
        "SePAS im Lycée",
        "KJT 116 111 (Mo–Sa, anonym, kostenlos)",
-       "BEE SECURE 8002 1234 (Probleme im Netz)"
+       "BEE SECURE 8002 1234 (Probleme im Netz)",
+       "ZEV: Beratung, wenn Spielen zu viel wird (zev.lu, kostenlos, anonym)"
       ]
      },
      {
       "titel": "Nur für dich: Regie",
       "karten": [
        "Mehr als Balance? Über Monate: Kontrolle weg, Spielen vor allem anderen, weiter trotz klarer Folgen für Schule, Schlaf, Freunde.",
-       "Dann kein Etikett: ruhig ansprechen, SePAS bzw. CePAS, Ärztin oder Arzt. Gaming Disorder (ICD-11) stellt nur Fachpersonal fest.",
+       "Dann kein Etikett: ruhig ansprechen, SePAS bzw. CePAS, Ärztin oder Arzt, ZEV (zev.lu). Gaming Disorder (ICD-11) stellt nur Fachpersonal fest.",
        "Das Ergebnis ist kein Lohn: Auch mit Patchnotes kann man ein Spiel verlieren. Gelobt wird das Steuern, nicht der Sieg.",
        "Urkunde: Name nur, wenn die oder der Jugendliche will – ein Spielername geht auch."
       ]
@@ -9332,6 +9513,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -9369,19 +9554,20 @@
       ]
      },
      {
-      "titel": "Cartes aide (4)",
+      "titel": "Cartes aide (5)",
       "karten": [
        "Une personne de confiance",
        "Le SePAS du lycée",
        "KJT 116 111 (lun.–sam., anonyme, gratuit)",
-       "BEE SECURE 8002 1234 (problèmes en ligne)"
+       "BEE SECURE 8002 1234 (problèmes en ligne)",
+       "ZEV : conseil quand le jeu prend trop de place (zev.lu, gratuit, anonyme)"
       ]
      },
      {
       "titel": "Pour l’adulte : mise en scène",
       "karten": [
        "Plus qu’un problème d’équilibre ? Sur des mois : contrôle perdu, le jeu avant tout, on continue malgré des effets nets sur école, sommeil, amis.",
-       "Alors pas d’étiquette : en parler calmement, SePAS ou CePAS, médecin. Le trouble du jeu vidéo (CIM-11) n’est posé que par des professionnels.",
+       "Alors pas d’étiquette : en parler calmement ; SePAS ou CePAS, médecin, ZEV (zev.lu). Le trouble du jeu vidéo (CIM-11) : diagnostic par des pros.",
        "Le résultat n’est pas une récompense : on peut perdre un match même avec des notes de patch. On félicite le pilotage, pas la victoire.",
        "Diplôme : le nom seulement si le ou la jeune le veut – un pseudo de joueur marche aussi."
       ]
@@ -9419,6 +9605,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -9570,19 +9760,20 @@
       ]
      },
      {
-      "titel": "Hilfe-Karten (4)",
+      "titel": "Hilfe-Karten (5)",
       "karten": [
        "Eine Person, der ich traue",
        "SePAS im Lycée",
        "KJT 116 111 (Mo–Sa, anonym, kostenlos)",
-       "BEE SECURE 8002 1234 (Probleme im Netz)"
+       "BEE SECURE 8002 1234 (Probleme im Netz)",
+       "ZEV: Beratung, wenn Spielen zu viel wird (zev.lu, kostenlos, anonym)"
       ]
      },
      {
       "titel": "Nur für dich: Regie",
       "karten": [
        "Mehr als Balance? Über Monate: Kontrolle weg, Spielen vor allem anderen, weiter trotz klarer Folgen für Schule, Schlaf, Freunde.",
-       "Dann kein Etikett: ruhig ansprechen, SePAS bzw. CePAS, Ärztin oder Arzt. Gaming Disorder (ICD-11) stellt nur Fachpersonal fest.",
+       "Dann kein Etikett: ruhig ansprechen, SePAS bzw. CePAS, Ärztin oder Arzt, ZEV (zev.lu). Gaming Disorder (ICD-11) stellt nur Fachpersonal fest.",
        "Das Ergebnis ist kein Lohn: Auch mit Patchnotes kann man ein Spiel verlieren. Gelobt wird das Steuern, nicht der Sieg.",
        "Urkunde: Name nur, wenn die oder der Jugendliche will – ein Spielername geht auch."
       ]
@@ -9621,6 +9812,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -9657,19 +9852,20 @@
       ]
      },
      {
-      "titel": "Cartes aide (4)",
+      "titel": "Cartes aide (5)",
       "karten": [
        "Une personne de confiance",
        "Le SePAS du lycée",
        "KJT 116 111 (lun.–sam., anonyme, gratuit)",
-       "BEE SECURE 8002 1234 (problèmes en ligne)"
+       "BEE SECURE 8002 1234 (problèmes en ligne)",
+       "ZEV : conseil quand le jeu prend trop de place (zev.lu, gratuit, anonyme)"
       ]
      },
      {
       "titel": "Pour l’adulte : mise en scène",
       "karten": [
        "Plus qu’un problème d’équilibre ? Sur des mois : contrôle perdu, le jeu avant tout, on continue malgré des effets nets sur école, sommeil, amis.",
-       "Alors pas d’étiquette : en parler calmement, SePAS ou CePAS, médecin. Le trouble du jeu vidéo (CIM-11) n’est posé que par des professionnels.",
+       "Alors pas d’étiquette : en parler calmement ; SePAS ou CePAS, médecin, ZEV (zev.lu). Le trouble du jeu vidéo (CIM-11) : diagnostic par des pros.",
        "Le résultat n’est pas une récompense : on peut perdre un match même avec des notes de patch. On félicite le pilotage, pas la victoire.",
        "Diplôme : le nom seulement si le ou la jeune le veut – un pseudo de joueur marche aussi."
       ]
@@ -9706,6 +9902,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",
@@ -9855,19 +10055,20 @@
       ]
      },
      {
-      "titel": "Hilfe-Karten (4)",
+      "titel": "Hilfe-Karten (5)",
       "karten": [
        "Eine Person, der ich traue",
        "SePAS im Lycée",
        "KJT 116 111 (Mo–Sa, anonym, kostenlos)",
-       "BEE SECURE 8002 1234 (Probleme im Netz)"
+       "BEE SECURE 8002 1234 (Probleme im Netz)",
+       "ZEV: Beratung, wenn Spielen zu viel wird (zev.lu, kostenlos, anonym)"
       ]
      },
      {
       "titel": "Nur für dich: Regie",
       "karten": [
        "Mehr als Balance? Über Monate: Kontrolle weg, Spielen vor allem anderen, weiter trotz klarer Folgen für Schule, Schlaf, Freunde.",
-       "Dann kein Etikett: ruhig ansprechen, SePAS bzw. CePAS, Ärztin oder Arzt. Gaming Disorder (ICD-11) stellt nur Fachpersonal fest.",
+       "Dann kein Etikett: ruhig ansprechen, SePAS bzw. CePAS, Ärztin oder Arzt, ZEV (zev.lu). Gaming Disorder (ICD-11) stellt nur Fachpersonal fest.",
        "Das Ergebnis ist kein Lohn: Auch mit Patchnotes kann man ein Spiel verlieren. Gelobt wird das Steuern, nicht der Sieg.",
        "Urkunde: Name nur, wenn die oder der Jugendliche will – ein Spielername geht auch."
       ]
@@ -9906,6 +10107,10 @@
       "url": "https://454545.lu"
      },
      {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht: kostenlose, anonyme Beratung bei Mediensucht (auch Computerspiele), auch für Familien",
+      "url": "https://www.zev.lu"
+     },
+     {
       "titel": "Für Fachkräfte: CNAPA – Centre national de prévention des addictions (Prävention, Fortbildung, Anlaufstellen); Tel. 49 77 77-1",
       "url": "https://www.cnapa.lu"
      },
@@ -9941,19 +10146,20 @@
       ]
      },
      {
-      "titel": "Cartes aide (4)",
+      "titel": "Cartes aide (5)",
       "karten": [
        "Une personne de confiance",
        "Le SePAS du lycée",
        "KJT 116 111 (lun.–sam., anonyme, gratuit)",
-       "BEE SECURE 8002 1234 (problèmes en ligne)"
+       "BEE SECURE 8002 1234 (problèmes en ligne)",
+       "ZEV : conseil quand le jeu prend trop de place (zev.lu, gratuit, anonyme)"
       ]
      },
      {
       "titel": "Pour l’adulte : mise en scène",
       "karten": [
        "Plus qu’un problème d’équilibre ? Sur des mois : contrôle perdu, le jeu avant tout, on continue malgré des effets nets sur école, sommeil, amis.",
-       "Alors pas d’étiquette : en parler calmement, SePAS ou CePAS, médecin. Le trouble du jeu vidéo (CIM-11) n’est posé que par des professionnels.",
+       "Alors pas d’étiquette : en parler calmement ; SePAS ou CePAS, médecin, ZEV (zev.lu). Le trouble du jeu vidéo (CIM-11) : diagnostic par des pros.",
        "Le résultat n’est pas une récompense : on peut perdre un match même avec des notes de patch. On félicite le pilotage, pas la victoire.",
        "Diplôme : le nom seulement si le ou la jeune le veut – un pseudo de joueur marche aussi."
       ]
@@ -9990,6 +10196,10 @@
      {
       "titel": "La nuit et le dimanche : urgences 112, police 113 ; SOS Détresse 45 45 45 (tous les jours 11–23 h, ven. et sam. jusqu’à 3 h)",
       "url": "https://454545.lu"
+     },
+     {
+      "titel": "ZEV – Zenter fir exzessiivt Verhalen a Verhalenssucht : consultation gratuite et anonyme en cas d’usage excessif des médias (jeux vidéo compris), aussi pour les familles",
+      "url": "https://www.zev.lu"
      },
      {
       "titel": "Pour les professionnels : CNAPA – Centre national de prévention des addictions (prévention, formation, adresses utiles) ; tél. 49 77 77-1",

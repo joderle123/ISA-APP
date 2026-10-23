@@ -415,7 +415,7 @@
   },
   "fr": {
    "titel": "En direct ou en rediffusion ?",
-   "text": "L’adulte lit le message d’Odile : à la répétition de Radio Ouer, la radio des enfants de Kayl, il y a eu trois ratés, et Odile dit : « Personne n’était en direct. » À partir d’aujourd’hui, l’enfant est la régie et découvre ce que veut dire « en direct ». Au sol, une ligne de trois mètres. L’enfant la parcourt très lentement, talon contre orteils, pendant que l’adulte parle sans arrêt, comme une radio. Ensuite, il dit où sa tête est partie. Au deuxième tour, il crie « retour ! » chaque fois qu’il remarque que sa tête était ailleurs, et sent de nouveau son pied. Pour finir, debout, il apprend le check en direct : appuyer les pieds, voir trois choses dans la pièce, écouter un son.",
+   "text": "L’adulte lit le message d’Odile : à la répétition de Radio Ouer, la radio des enfants de Kayl, il y a eu trois ratés, et Odile dit : « Personne n’était en direct. » À partir d’aujourd’hui, l’enfant est la régie et découvre ce que veut dire « en direct ». Au sol, une ligne de trois mètres. L’enfant la parcourt très lentement, un pied juste devant l’autre, pendant que l’adulte parle sans arrêt, comme une radio. Ensuite, il dit où sa tête est partie. Au deuxième tour, il crie « retour ! » chaque fois qu’il remarque que sa tête était ailleurs, et sent de nouveau son pied. Pour finir, debout, il apprend le check en direct : appuyer les pieds, voir trois choses dans la pièce, écouter un son.",
    "sagen": [
     "Trois ratés à la répétition. Odile dit : personne n’était en direct. Qu’est-ce qu’elle veut dire ?",
     "Marche sur la ligne, tout doucement. Moi, je continue à parler – toi, tu marches.",
@@ -484,7 +484,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -499,7 +499,7 @@
     "warum": "Schon Erwachsene sind in fast der Hälfte der Momente mit den Gedanken woanders (Killingsworth & Gilbert, 2010) – Abschweifen ist normal, kein Fehler. Geübt wird das Merken und Zurückkehren, nicht das Nicht-Wandern; das Gehen auf der Linie macht es für unruhige Kinder spürbar.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -507,7 +507,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -577,7 +577,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -592,7 +592,7 @@
     "warum": "Même les adultes ont l’esprit ailleurs presque une fois sur deux (Killingsworth & Gilbert, 2010) – s’égarer est normal, ce n’est pas une faute. On entraîne le fait de remarquer et de revenir, pas de ne jamais s’égarer ; marcher sur la ligne rend cela concret pour les enfants agités.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -600,7 +600,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -924,7 +924,7 @@
   },
   "fr": {
    "titel": "En direct ou en rediffusion ?",
-   "text": "L’adulte lit le message d’Odile : à la répétition de Radio Ouer, la radio des enfants de Kayl, il y a eu trois ratés, et Odile dit : « Personne n’était en direct. » À partir d’aujourd’hui, l’enfant est la régie et découvre ce que veut dire « en direct ». Au sol, une ligne de trois mètres. L’enfant la parcourt très lentement, talon contre orteils, pendant que l’adulte parle sans arrêt, comme une radio. Ensuite, il dit où sa tête est partie. Au deuxième tour, il crie « retour ! » chaque fois qu’il remarque que sa tête était ailleurs, et sent de nouveau son pied. Pour finir, debout, il apprend le check en direct : appuyer les pieds, voir trois choses dans la pièce, écouter un son.",
+   "text": "L’adulte lit le message d’Odile : à la répétition de Radio Ouer, la radio des enfants de Kayl, il y a eu trois ratés, et Odile dit : « Personne n’était en direct. » À partir d’aujourd’hui, l’enfant est la régie et découvre ce que veut dire « en direct ». Au sol, une ligne de trois mètres. L’enfant la parcourt très lentement, un pied juste devant l’autre, pendant que l’adulte parle sans arrêt, comme une radio. Ensuite, il dit où sa tête est partie. Au deuxième tour, il crie « retour ! » chaque fois qu’il remarque que sa tête était ailleurs, et sent de nouveau son pied. Pour finir, debout, il apprend le check en direct : appuyer les pieds, voir trois choses dans la pièce, écouter un son.",
    "sagen": [
     "Trois ratés à la répétition. Odile dit : personne n’était en direct. Qu’est-ce qu’elle veut dire ?",
     "Marche sur la ligne, tout doucement. Moi, je continue à parler – toi, tu marches.",
@@ -993,7 +993,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -1008,7 +1008,7 @@
     "warum": "Schon Erwachsene sind in fast der Hälfte der Momente mit den Gedanken woanders (Killingsworth & Gilbert, 2010) – Abschweifen ist normal, kein Fehler. Geübt wird das Merken und Zurückkehren, nicht das Nicht-Wandern; das Gehen auf der Linie macht es für unruhige Kinder spürbar.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1016,7 +1016,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -1086,7 +1086,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -1101,7 +1101,7 @@
     "warum": "Même les adultes ont l’esprit ailleurs presque une fois sur deux (Killingsworth & Gilbert, 2010) – s’égarer est normal, ce n’est pas une faute. On entraîne le fait de remarquer et de revenir, pas de ne jamais s’égarer ; marcher sur la ligne rend cela concret pour les enfants agités.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1109,7 +1109,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -1278,7 +1278,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -1292,7 +1292,7 @@
     "warum": "Ein Spiel mit Ball bindet die Aufmerksamkeit an den Moment und macht das Abschweifen spürbar, ohne Stillsitzen (Bewegung als Anker; Treleaven, 2018).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1300,7 +1300,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -1361,7 +1361,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -1375,7 +1375,7 @@
     "warum": "Un jeu de balle attache l’attention au moment et rend l’égarement sensible, sans rester assis (le mouvement comme ancre ; Treleaven, 2018).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1383,7 +1383,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -1542,7 +1542,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -1556,7 +1556,7 @@
     "warum": "Langsames, genaues Hinschauen ist eine Form achtsamer Aufmerksamkeit mit offenem Blick nach außen – Treleaven (2018) empfiehlt solche Anker für den Anfang.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1564,7 +1564,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -1614,7 +1614,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -1628,7 +1628,7 @@
     "warum": "Regarder lentement et en détail est une forme d’attention en pleine conscience, le regard ouvert vers l’extérieur – Treleaven (2018) recommande de telles ancres pour commencer.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -1636,7 +1636,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -1981,7 +1981,7 @@
       "karten": [
        "Ajla: „Es ist immer da. Man hört es nur, wenn alle still sind.“",
        "Ajla: „Es summt hoch und fein, ganz gleichmäßig.“",
-       "Ajla: „Es hört sofort auf, wenn Odile auf den Schalter neben der Tür drückt.“"
+       "Ajla: „Es kommt von oben, nicht aus den Lautsprechern. Bevor Odile kommt, ist es still.“"
       ]
      },
      {
@@ -2008,7 +2008,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -2022,7 +2022,7 @@
     "warum": "Achtsamkeitsübungen unterscheiden ein enges Fokussieren auf ein Objekt und ein weites, offenes Wahrnehmen (Lutz et al., 2008); hier wird beides mit Klängen erprobt. Treleaven (2018) empfiehlt Anker außerhalb des Körpers, etwa Klänge im Raum, weil Körper- und Atemfokus manche Menschen belastet.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2030,7 +2030,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -2062,7 +2062,7 @@
       "karten": [
        "Ajla : « C’est toujours là. On ne l’entend que quand tout le monde se tait. »",
        "Ajla : « Ça bourdonne, aigu et fin, toujours pareil. »",
-       "Ajla : « Ça s’arrête d’un coup quand Odile appuie sur l’interrupteur près de la porte. »"
+       "Ajla : « Ça vient d’en haut, pas des haut-parleurs. Avant l’arrivée d’Odile, c’est silencieux. »"
       ]
      },
      {
@@ -2089,7 +2089,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -2103,7 +2103,7 @@
     "warum": "Les exercices de pleine conscience distinguent l’attention focalisée sur un objet et une perception large et ouverte (Lutz et al., 2008) ; ici, on essaie les deux avec des sons. Treleaven (2018) recommande des ancres hors du corps, comme les sons de la pièce, car l’attention au corps et au souffle pèse sur certaines personnes.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2111,7 +2111,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -2500,7 +2500,7 @@
       "karten": [
        "Ajla: „Es ist immer da. Man hört es nur, wenn alle still sind.“",
        "Ajla: „Es summt hoch und fein, ganz gleichmäßig.“",
-       "Ajla: „Es hört sofort auf, wenn Odile auf den Schalter neben der Tür drückt.“"
+       "Ajla: „Es kommt von oben, nicht aus den Lautsprechern. Bevor Odile kommt, ist es still.“"
       ]
      },
      {
@@ -2527,7 +2527,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -2541,7 +2541,7 @@
     "warum": "Achtsamkeitsübungen unterscheiden ein enges Fokussieren auf ein Objekt und ein weites, offenes Wahrnehmen (Lutz et al., 2008); hier wird beides mit Klängen erprobt. Treleaven (2018) empfiehlt Anker außerhalb des Körpers, etwa Klänge im Raum, weil Körper- und Atemfokus manche Menschen belastet.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2549,7 +2549,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -2581,7 +2581,7 @@
       "karten": [
        "Ajla : « C’est toujours là. On ne l’entend que quand tout le monde se tait. »",
        "Ajla : « Ça bourdonne, aigu et fin, toujours pareil. »",
-       "Ajla : « Ça s’arrête d’un coup quand Odile appuie sur l’interrupteur près de la porte. »"
+       "Ajla : « Ça vient d’en haut, pas des haut-parleurs. Avant l’arrivée d’Odile, c’est silencieux. »"
       ]
      },
      {
@@ -2608,7 +2608,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -2622,7 +2622,7 @@
     "warum": "Les exercices de pleine conscience distinguent l’attention focalisée sur un objet et une perception large et ouverte (Lutz et al., 2008) ; ici, on essaie les deux avec des sons. Treleaven (2018) recommande des ancres hors du corps, comme les sons de la pièce, car l’attention au corps et au souffle pèse sur certaines personnes.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2630,7 +2630,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -2773,7 +2773,7 @@
       "karten": [
        "Ajla: „Es ist immer da. Man hört es nur, wenn alle still sind.“",
        "Ajla: „Es summt hoch und fein, ganz gleichmäßig.“",
-       "Ajla: „Es hört sofort auf, wenn Odile auf den Schalter neben der Tür drückt.“"
+       "Ajla: „Es kommt von oben, nicht aus den Lautsprechern. Bevor Odile kommt, ist es still.“"
       ]
      },
      {
@@ -2793,7 +2793,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -2807,7 +2807,7 @@
     "warum": "Gerichtetes Hören übt fokussierte Aufmerksamkeit (Lutz et al., 2008), mit offenen Augen und in Bewegung, wie Treleaven (2018) es empfiehlt.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2815,7 +2815,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -2846,7 +2846,7 @@
       "karten": [
        "Ajla : « C’est toujours là. On ne l’entend que quand tout le monde se tait. »",
        "Ajla : « Ça bourdonne, aigu et fin, toujours pareil. »",
-       "Ajla : « Ça s’arrête d’un coup quand Odile appuie sur l’interrupteur près de la porte. »"
+       "Ajla : « Ça vient d’en haut, pas des haut-parleurs. Avant l’arrivée d’Odile, c’est silencieux. »"
       ]
      },
      {
@@ -2866,7 +2866,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -2880,7 +2880,7 @@
     "warum": "L’écoute orientée entraîne l’attention focalisée (Lutz et al., 2008), les yeux ouverts et en mouvement, comme le recommande Treleaven (2018).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -2888,7 +2888,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -3034,7 +3034,7 @@
       "karten": [
        "Ajla: „Es ist immer da. Man hört es nur, wenn alle still sind.“",
        "Ajla: „Es summt hoch und fein, ganz gleichmäßig.“",
-       "Ajla: „Es hört sofort auf, wenn Odile auf den Schalter neben der Tür drückt.“"
+       "Ajla: „Es kommt von oben, nicht aus den Lautsprechern. Bevor Odile kommt, ist es still.“"
       ]
      },
      {
@@ -3054,7 +3054,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -3068,7 +3068,7 @@
     "warum": "Einem Klang mit dem Stift folgen übt fokussierte Aufmerksamkeit auf ein Objekt (Lutz et al., 2008) und verbindet Hören mit Sehen.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -3076,7 +3076,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -3107,7 +3107,7 @@
       "karten": [
        "Ajla : « C’est toujours là. On ne l’entend que quand tout le monde se tait. »",
        "Ajla : « Ça bourdonne, aigu et fin, toujours pareil. »",
-       "Ajla : « Ça s’arrête d’un coup quand Odile appuie sur l’interrupteur près de la porte. »"
+       "Ajla : « Ça vient d’en haut, pas des haut-parleurs. Avant l’arrivée d’Odile, c’est silencieux. »"
       ]
      },
      {
@@ -3127,7 +3127,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -3141,7 +3141,7 @@
     "warum": "Suivre un son avec le crayon entraîne l’attention focalisée sur un objet (Lutz et al., 2008) et relie l’ouïe à la vue.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -3149,7 +3149,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -3300,7 +3300,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Schreib Carolina einen Satz für diesen Sender. Er darf leise weiterlaufen – tiho.",
+     "text": "Schreib Carolina einen Satz für diesen Sender. Er darf weiterlaufen, nur leiser.",
      "symbole": [
       "schreiben"
      ]
@@ -3311,6 +3311,18 @@
       "„Aha, Radio …"
      ],
      "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Ajlas Jingle-Wort: tiho. Was meint sie wohl?",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "linien",
+     "anzahl": 1,
+     "label": "tiho ="
     },
     {
      "art": "aufgabe",
@@ -3391,7 +3403,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Écris une phrase à Carolina pour cette station. Elle peut continuer tout bas – tiho.",
+     "text": "Écris une phrase à Carolina pour cette station. Elle peut continuer, juste moins fort.",
      "symbole": [
       "schreiben"
      ]
@@ -3402,6 +3414,18 @@
       "« Tiens, Radio …"
      ],
      "linien": 1
+    },
+    {
+     "art": "aufgabe",
+     "text": "Le mot d’Ajla pour le jingle : tiho. À ton avis ?",
+     "symbole": [
+      "schreiben"
+     ]
+    },
+    {
+     "art": "linien",
+     "anzahl": 1,
+     "label": "tiho ="
     },
     {
      "art": "aufgabe",
@@ -3516,7 +3540,7 @@
       "titel": "Ajlas Jingle-Wort",
       "karten": [
        "tiho",
-       "Ajla: „Bosnisch. Das sage ich zu einem lauten Sender in meinem Kopf. Was heißt es wohl?“"
+       "Ajla: „Tiho! Das ist Bosnisch. Das sage ich zu einem lauten Sender in meinem Kopf. Was heißt es wohl?“"
       ]
      },
      {
@@ -3536,7 +3560,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -3551,7 +3575,7 @@
     "warum": "Wer Gedanken unterdrücken will, denkt sie öfter (Wegner et al., 1987). Merken und Benennen schafft Abstand zum Gedanken (Defusion; Hayes et al., 2012).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -3559,7 +3583,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -3610,7 +3634,7 @@
       "titel": "Le mot d’Ajla pour le jingle",
       "karten": [
        "tiho",
-       "Ajla : « En bosnien. Je le dis à une station trop forte dans ma tête. À ton avis ? »"
+       "Ajla : « Tiho ! C’est du bosnien. Je le dis à une station trop forte dans ma tête. À ton avis ? »"
       ]
      },
      {
@@ -3630,7 +3654,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -3645,7 +3669,7 @@
     "warum": "Qui veut chasser une pensée y pense plus souvent (Wegner et al., 1987). Remarquer et nommer crée de la distance avec la pensée (défusion ; Hayes et al., 2012).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -3653,7 +3677,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -3818,7 +3842,7 @@
      "art": "regler",
      "paare": [
       [
-       "tiho – ganz leise",
+       "ganz leise",
        "laut"
       ]
      ],
@@ -3923,7 +3947,7 @@
      "art": "regler",
      "paare": [
       [
-       "tiho – tout bas",
+       "tout bas",
        "fort"
       ]
      ],
@@ -4048,7 +4072,7 @@
       "titel": "Ajlas Jingle-Wort",
       "karten": [
        "tiho",
-       "Ajla: „Bosnisch. Das sage ich zu einem lauten Sender in meinem Kopf. Was heißt es wohl?“"
+       "Ajla: „Tiho! Das ist Bosnisch. Das sage ich zu einem lauten Sender in meinem Kopf. Was heißt es wohl?“"
       ]
      },
      {
@@ -4068,7 +4092,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -4083,7 +4107,7 @@
     "warum": "Wer Gedanken unterdrücken will, denkt sie öfter (Wegner et al., 1987). Merken und Benennen schafft Abstand zum Gedanken (Defusion; Hayes et al., 2012).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -4091,7 +4115,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -4142,7 +4166,7 @@
       "titel": "Le mot d’Ajla pour le jingle",
       "karten": [
        "tiho",
-       "Ajla : « En bosnien. Je le dis à une station trop forte dans ma tête. À ton avis ? »"
+       "Ajla : « Tiho ! C’est du bosnien. Je le dis à une station trop forte dans ma tête. À ton avis ? »"
       ]
      },
      {
@@ -4162,7 +4186,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -4177,7 +4201,7 @@
     "warum": "Qui veut chasser une pensée y pense plus souvent (Wegner et al., 1987). Remarquer et nommer crée de la distance avec la pensée (défusion ; Hayes et al., 2012).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -4185,7 +4209,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -4352,7 +4376,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -4366,7 +4390,7 @@
     "warum": "Den Gedanken als Gestalt sichtbar machen schafft Abstand: Er ist da, aber er bestimmt nicht (Defusion; Hayes et al., 2012).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -4374,7 +4398,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -4430,7 +4454,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -4444,7 +4468,7 @@
     "warum": "Rendre la pensée visible comme une forme crée de la distance : elle est là, mais ne décide pas (défusion ; Hayes et al., 2012).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -4452,7 +4476,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -4626,7 +4650,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -4640,7 +4664,7 @@
     "warum": "Gedanken als Karten vor sich zu haben, schafft Abstand, ohne über sich selbst sprechen zu müssen – schonend und trotzdem Defusion (Hayes et al., 2012).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -4648,7 +4672,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -4712,7 +4736,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -4726,7 +4750,7 @@
     "warum": "Avoir les pensées devant soi sur des cartes crée de la distance, sans devoir parler de soi – en douceur et pourtant de la défusion (Hayes et al., 2012).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -4734,7 +4758,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -5131,7 +5155,7 @@
       "titel": "Odiles Jingle-Wort",
       "karten": [
        "Buedem",
-       "Odile: „Lëtzebuergesch. Das sage ich, wenn Tommaso mal wieder abhebt. Was meine ich wohl?“"
+       "Odile: „Buedem! Das ist Lëtzebuergesch. Das sage ich, wenn Tommaso mal wieder abhebt. Was meine ich wohl?“"
       ]
      },
      {
@@ -5151,7 +5175,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -5166,7 +5190,7 @@
     "warum": "Treleaven (2018) empfiehlt Wahl, offene Augen und Anker außerhalb des Atems, damit das Üben im Toleranzfenster bleibt. Erst bewegen, dann bemerken passt zu unruhigen Kindern.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -5174,7 +5198,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -5222,7 +5246,7 @@
       "titel": "Le mot d’Odile pour le jingle",
       "karten": [
        "Buedem",
-       "Odile : « En luxembourgeois. Je le dis quand Tommaso s’envole encore. À ton avis ? »"
+       "Odile : « Buedem ! C’est du luxembourgeois. Je le dis quand Tommaso s’envole encore. À ton avis ? »"
       ]
      },
      {
@@ -5242,7 +5266,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -5257,7 +5281,7 @@
     "warum": "Treleaven (2018) recommande le choix, les yeux ouverts et des ancres hors du souffle, pour que l’exercice reste dans la fenêtre de tolérance. Bouger d’abord, remarquer ensuite convient aux enfants agités.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -5265,7 +5289,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -5682,7 +5706,7 @@
       "titel": "Odiles Jingle-Wort",
       "karten": [
        "Buedem",
-       "Odile: „Lëtzebuergesch. Das sage ich, wenn Tommaso mal wieder abhebt. Was meine ich wohl?“"
+       "Odile: „Buedem! Das ist Lëtzebuergesch. Das sage ich, wenn Tommaso mal wieder abhebt. Was meine ich wohl?“"
       ]
      },
      {
@@ -5702,7 +5726,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -5717,7 +5741,7 @@
     "warum": "Treleaven (2018) empfiehlt Wahl, offene Augen und Anker außerhalb des Atems, damit das Üben im Toleranzfenster bleibt. Erst bewegen, dann bemerken passt zu unruhigen Kindern.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -5725,7 +5749,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -5773,7 +5797,7 @@
       "titel": "Le mot d’Odile pour le jingle",
       "karten": [
        "Buedem",
-       "Odile : « En luxembourgeois. Je le dis quand Tommaso s’envole encore. À ton avis ? »"
+       "Odile : « Buedem ! C’est du luxembourgeois. Je le dis quand Tommaso s’envole encore. À ton avis ? »"
       ]
      },
      {
@@ -5793,7 +5817,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -5808,7 +5832,7 @@
     "warum": "Treleaven (2018) recommande le choix, les yeux ouverts et des ancres hors du souffle, pour que l’exercice reste dans la fenêtre de tolérance. Bouger d’abord, remarquer ensuite convient aux enfants agités.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -5816,7 +5840,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -5986,7 +6010,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -6000,7 +6024,7 @@
     "warum": "Gleichgewicht macht Aufmerksamkeit körperlich spürbar; Anker im Stehen und in Bewegung passen zu unruhigen Kindern (Treleaven, 2018).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -6008,7 +6032,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -6067,7 +6091,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -6081,7 +6105,7 @@
     "warum": "L’équilibre rend l’attention sensible dans le corps ; des ancres debout et en mouvement conviennent aux enfants agités (Treleaven, 2018).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -6089,7 +6113,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -6259,7 +6283,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -6273,7 +6297,7 @@
     "warum": "Treleaven (2018) empfiehlt äußere Anker mit offenen Augen, etwa einen Gegenstand in der Hand; die Wahl bleibt beim Kind.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -6281,7 +6305,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -6340,7 +6364,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -6354,7 +6378,7 @@
     "warum": "Treleaven (2018) recommande des ancres extérieures, les yeux ouverts, comme un objet dans la main ; le choix reste à l’enfant.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -6362,7 +6386,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -6741,7 +6765,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -6756,7 +6780,7 @@
     "warum": "STOP ist eine kurze Alltagsübung aus dem MBSR-Arbeitsbuch (Stahl & Goldstein, 2010). Wenn-dann-Pläne erhöhen in Studien die Chance, einen Vorsatz umzusetzen (Gollwitzer, 1999). Das gespielte Chaos ist eine Probe für den echten Moment, keine Garantie.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -6764,7 +6788,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -6836,7 +6860,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -6851,7 +6875,7 @@
     "warum": "STOP est un court exercice du quotidien tiré du cahier MBSR (Stahl & Goldstein, 2010). Dans les études, les plans si-alors augmentent les chances de réaliser une intention (Gollwitzer, 1999). Le chaos joué est une répétition pour le vrai moment, pas une garantie.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -6859,7 +6883,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -7344,7 +7368,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -7359,7 +7383,7 @@
     "warum": "STOP ist eine kurze Alltagsübung aus dem MBSR-Arbeitsbuch (Stahl & Goldstein, 2010). Wenn-dann-Pläne erhöhen in Studien die Chance, einen Vorsatz umzusetzen (Gollwitzer, 1999). Das gespielte Chaos ist eine Probe für den echten Moment, keine Garantie.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7367,7 +7391,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -7439,7 +7463,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -7454,7 +7478,7 @@
     "warum": "STOP est un court exercice du quotidien tiré du cahier MBSR (Stahl & Goldstein, 2010). Dans les études, les plans si-alors augmentent les chances de réaliser une intention (Gollwitzer, 1999). Le chaos joué est une répétition pour le vrai moment, pas une garantie.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7462,7 +7486,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -7631,7 +7655,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -7645,7 +7669,7 @@
     "warum": "STOP ist eine kurze Alltagsübung (Stahl & Goldstein, 2010); hier wird sie in wechselnden Momenten geprobt. Der Wechsel von Bewegung und Stopp passt zu unruhigen Kindern.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7653,7 +7677,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -7710,7 +7734,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -7724,7 +7748,7 @@
     "warum": "STOP est un court exercice du quotidien (Stahl & Goldstein, 2010) ; ici, on le répète dans des moments variés. L’alternance mouvement-stop convient aux enfants agités.",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7732,7 +7756,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -7903,7 +7927,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -7917,7 +7941,7 @@
     "warum": "Für andere zu planen überträgt das Werkzeug, ohne über sich sprechen zu müssen – schonend und trotzdem konkret (Gollwitzer, 1999).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -7925,7 +7949,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -7984,7 +8008,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -7998,7 +8022,7 @@
     "warum": "Planifier pour d’autres transpose l’outil sans devoir parler de soi – en douceur et pourtant concret (Gollwitzer, 1999).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -8006,7 +8030,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -8384,9 +8408,9 @@
      {
       "titel": "Odiles Bericht (vorlesen)",
       "karten": [
-       "Odile: „Freitag, 12:30, live. Tommaso stand die ganze Sendung, die Füße fest am Boden. Kein Mikro ist umgefallen.“",
-       "„Carolina hat einmal ihren Einsatz verpasst. Dann hat sie kurz gestockt, ‚Aha‘ geflüstert – und war wieder da.“",
-       "„Ajla hat sich in der lauten Kantine die Uhr über der Tür ausgesucht und ihr zugehört. Dann kam ihre Ansage.“",
+       "Odile: „Freitag, 12:30, live. Tommaso stand die ganze Sendung. Vor seinem Teil schaute er kurz auf seine Schuhe und wurde ganz ruhig.“",
+       "„Carolina hat einmal ihren Einsatz verpasst. Sie hat kurz gestockt, leise etwas zu sich gesagt – und war wieder da.“",
+       "„Ajla hat in der lauten Kantine den Kopf schräg gelegt und zur Uhr über der Tür geschaut. Dann kam ihre Ansage.“",
        "„Perfekt war es nicht. Aber alle drei sind zurückgekommen. Danke, Regie!“"
       ]
      },
@@ -8416,7 +8440,7 @@
       "karten": [
        "Für dich: Tommaso – Antenne Füße; Carolina – Sender erkennen und zurück; Ajla – ein Geräusch wählen (Ton-Karte). Andere Begründungen gelten.",
        "„Was hat dir nichts gebracht?“ ist eine gute Frage. Nichts muss bleiben; ehrliche Antworten würdigen.",
-       "Wer hilft? Lehrkraft, Erzieher·in, I-EBS; ab der 7e SePAS; Kanner-Jugendtelefon 116 111 (Mo–Sa).",
+       "Wer hilft? Lehrkraft, Erzieher·in, I-EBS; ab der 7e SePAS; Kanner-Jugendtelefon 116 111 (Mo–Sa; Chat Di 18–21 Uhr).",
        "Ehrlich bleiben: Achtsamkeit hilft manchen ein wenig, nicht allen. Nichts versprechen – ausprobieren und das Kind entscheiden lassen."
       ]
      },
@@ -8428,7 +8452,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -8443,7 +8467,7 @@
     "warum": "Wer eine Übung selbst anleitet, ruft sie ab und festigt sie; der ehrliche Rückblick folgt der Studienlage: kleine Effekte, nicht für alle gleich (Dunning et al., 2019; Kuyken et al., 2022).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -8451,7 +8475,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -8481,9 +8505,9 @@
      {
       "titel": "Compte rendu d’Odile (à lire)",
       "karten": [
-       "Odile : « Vendredi, 12 h 30, en direct. Tommaso est resté debout toute l’émission, les pieds bien au sol. Aucun micro n’est tombé. »",
-       "« Carolina a raté une fois son tour. Puis elle s’est arrêtée, a chuchoté “Tiens” – et elle était de retour. »",
-       "« Dans la cantine bruyante, Ajla a choisi l’horloge au-dessus de la porte et l’a écoutée. Puis elle a fait son annonce. »",
+       "Odile : « Vendredi, 12 h 30, en direct. Tommaso est resté debout toute l’émission. Avant son tour, il a fixé ses chaussures et s’est calmé. »",
+       "« Carolina a raté une fois son tour. Elle s’est arrêtée, s’est dit quelque chose tout bas – et elle était de retour. »",
+       "« Dans la cantine bruyante, Ajla a penché la tête et regardé l’horloge au-dessus de la porte. Puis elle a fait son annonce. »",
        "« Ce n’était pas parfait. Mais tous les trois sont revenus. Merci, la régie ! »"
       ]
      },
@@ -8513,7 +8537,7 @@
       "karten": [
        "Pour toi : Tommaso – antenne pieds ; Carolina – nommer la station et revenir ; Ajla – choisir un son (carte des sons). D’autres raisons comptent.",
        "« Qu’est-ce qui ne t’a rien apporté ? » est une bonne question. Rien n’est obligatoire ; saluer les réponses honnêtes.",
-       "Qui aide ? Enseignant·e, éducateur·rice, I-EBS ; dès la 7e le SePAS ; Kanner-Jugendtelefon 116 111 (lun.–sam.).",
+       "Qui aide ? Enseignant·e, éducateur·rice, I-EBS ; dès la 7e le SePAS ; Kanner-Jugendtelefon 116 111 (lun.–sam. ; chat mar. 18–21 h).",
        "Rester honnête : la pleine conscience aide un peu certains, pas tous. Ne rien promettre – essayer, et laisser l’enfant décider."
       ]
      },
@@ -8525,7 +8549,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -8540,7 +8564,7 @@
     "warum": "Guider soi-même un exercice, c’est le rappeler et le consolider ; le bilan honnête suit la recherche : effets modestes, pas les mêmes pour tous (Dunning et al., 2019 ; Kuyken et al., 2022).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -8548,7 +8572,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -8968,9 +8992,9 @@
      {
       "titel": "Odiles Bericht (vorlesen)",
       "karten": [
-       "Odile: „Freitag, 12:30, live. Tommaso stand die ganze Sendung, die Füße fest am Boden. Kein Mikro ist umgefallen.“",
-       "„Carolina hat einmal ihren Einsatz verpasst. Dann hat sie kurz gestockt, ‚Aha‘ geflüstert – und war wieder da.“",
-       "„Ajla hat sich in der lauten Kantine die Uhr über der Tür ausgesucht und ihr zugehört. Dann kam ihre Ansage.“",
+       "Odile: „Freitag, 12:30, live. Tommaso stand die ganze Sendung. Vor seinem Teil schaute er kurz auf seine Schuhe und wurde ganz ruhig.“",
+       "„Carolina hat einmal ihren Einsatz verpasst. Sie hat kurz gestockt, leise etwas zu sich gesagt – und war wieder da.“",
+       "„Ajla hat in der lauten Kantine den Kopf schräg gelegt und zur Uhr über der Tür geschaut. Dann kam ihre Ansage.“",
        "„Perfekt war es nicht. Aber alle drei sind zurückgekommen. Danke, Regie!“"
       ]
      },
@@ -9000,7 +9024,7 @@
       "karten": [
        "Für dich: Tommaso – Antenne Füße; Carolina – Sender erkennen und zurück; Ajla – ein Geräusch wählen (Ton-Karte). Andere Begründungen gelten.",
        "„Was hat dir nichts gebracht?“ ist eine gute Frage. Nichts muss bleiben; ehrliche Antworten würdigen.",
-       "Wer hilft? Lehrkraft, Erzieher·in, I-EBS; ab der 7e SePAS; Kanner-Jugendtelefon 116 111 (Mo–Sa).",
+       "Wer hilft? Lehrkraft, Erzieher·in, I-EBS; ab der 7e SePAS; Kanner-Jugendtelefon 116 111 (Mo–Sa; Chat Di 18–21 Uhr).",
        "Ehrlich bleiben: Achtsamkeit hilft manchen ein wenig, nicht allen. Nichts versprechen – ausprobieren und das Kind entscheiden lassen."
       ]
      },
@@ -9012,7 +9036,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -9027,7 +9051,7 @@
     "warum": "Wer eine Übung selbst anleitet, ruft sie ab und festigt sie; der ehrliche Rückblick folgt der Studienlage: kleine Effekte, nicht für alle gleich (Dunning et al., 2019; Kuyken et al., 2022).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -9035,7 +9059,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -9065,9 +9089,9 @@
      {
       "titel": "Compte rendu d’Odile (à lire)",
       "karten": [
-       "Odile : « Vendredi, 12 h 30, en direct. Tommaso est resté debout toute l’émission, les pieds bien au sol. Aucun micro n’est tombé. »",
-       "« Carolina a raté une fois son tour. Puis elle s’est arrêtée, a chuchoté “Tiens” – et elle était de retour. »",
-       "« Dans la cantine bruyante, Ajla a choisi l’horloge au-dessus de la porte et l’a écoutée. Puis elle a fait son annonce. »",
+       "Odile : « Vendredi, 12 h 30, en direct. Tommaso est resté debout toute l’émission. Avant son tour, il a fixé ses chaussures et s’est calmé. »",
+       "« Carolina a raté une fois son tour. Elle s’est arrêtée, s’est dit quelque chose tout bas – et elle était de retour. »",
+       "« Dans la cantine bruyante, Ajla a penché la tête et regardé l’horloge au-dessus de la porte. Puis elle a fait son annonce. »",
        "« Ce n’était pas parfait. Mais tous les trois sont revenus. Merci, la régie ! »"
       ]
      },
@@ -9097,7 +9121,7 @@
       "karten": [
        "Pour toi : Tommaso – antenne pieds ; Carolina – nommer la station et revenir ; Ajla – choisir un son (carte des sons). D’autres raisons comptent.",
        "« Qu’est-ce qui ne t’a rien apporté ? » est une bonne question. Rien n’est obligatoire ; saluer les réponses honnêtes.",
-       "Qui aide ? Enseignant·e, éducateur·rice, I-EBS ; dès la 7e le SePAS ; Kanner-Jugendtelefon 116 111 (lun.–sam.).",
+       "Qui aide ? Enseignant·e, éducateur·rice, I-EBS ; dès la 7e le SePAS ; Kanner-Jugendtelefon 116 111 (lun.–sam. ; chat mar. 18–21 h).",
        "Rester honnête : la pleine conscience aide un peu certains, pas tous. Ne rien promettre – essayer, et laisser l’enfant décider."
       ]
      },
@@ -9109,7 +9133,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -9124,7 +9148,7 @@
     "warum": "Guider soi-même un exercice, c’est le rappeler et le consolider ; le bilan honnête suit la recherche : effets modestes, pas les mêmes pour tous (Dunning et al., 2019 ; Kuyken et al., 2022).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -9132,7 +9156,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -9273,9 +9297,9 @@
      {
       "titel": "Odiles Bericht (vorlesen)",
       "karten": [
-       "Odile: „Freitag, 12:30, live. Tommaso stand die ganze Sendung, die Füße fest am Boden. Kein Mikro ist umgefallen.“",
-       "„Carolina hat einmal ihren Einsatz verpasst. Dann hat sie kurz gestockt, ‚Aha‘ geflüstert – und war wieder da.“",
-       "„Ajla hat sich in der lauten Kantine die Uhr über der Tür ausgesucht und ihr zugehört. Dann kam ihre Ansage.“",
+       "Odile: „Freitag, 12:30, live. Tommaso stand die ganze Sendung. Vor seinem Teil schaute er kurz auf seine Schuhe und wurde ganz ruhig.“",
+       "„Carolina hat einmal ihren Einsatz verpasst. Sie hat kurz gestockt, leise etwas zu sich gesagt – und war wieder da.“",
+       "„Ajla hat in der lauten Kantine den Kopf schräg gelegt und zur Uhr über der Tür geschaut. Dann kam ihre Ansage.“",
        "„Perfekt war es nicht. Aber alle drei sind zurückgekommen. Danke, Regie!“"
       ]
      },
@@ -9295,7 +9319,7 @@
       "karten": [
        "Für dich: Tommaso – Antenne Füße; Carolina – Sender erkennen und zurück; Ajla – ein Geräusch wählen (Ton-Karte). Andere Begründungen gelten.",
        "„Was hat dir nichts gebracht?“ ist eine gute Frage. Nichts muss bleiben; ehrliche Antworten würdigen.",
-       "Wer hilft? Lehrkraft, Erzieher·in, I-EBS; ab der 7e SePAS; Kanner-Jugendtelefon 116 111 (Mo–Sa).",
+       "Wer hilft? Lehrkraft, Erzieher·in, I-EBS; ab der 7e SePAS; Kanner-Jugendtelefon 116 111 (Mo–Sa; Chat Di 18–21 Uhr).",
        "Ehrlich bleiben: Achtsamkeit hilft manchen ein wenig, nicht allen. Nichts versprechen – ausprobieren und das Kind entscheiden lassen."
       ]
      },
@@ -9307,7 +9331,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -9321,7 +9345,7 @@
     "warum": "Erklären und Vormachen für andere festigt das Gelernte; der Rollentausch macht das Kind zur Fachperson (Expertenrolle; Dunning et al., 2019).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -9329,7 +9353,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -9358,9 +9382,9 @@
      {
       "titel": "Compte rendu d’Odile (à lire)",
       "karten": [
-       "Odile : « Vendredi, 12 h 30, en direct. Tommaso est resté debout toute l’émission, les pieds bien au sol. Aucun micro n’est tombé. »",
-       "« Carolina a raté une fois son tour. Puis elle s’est arrêtée, a chuchoté “Tiens” – et elle était de retour. »",
-       "« Dans la cantine bruyante, Ajla a choisi l’horloge au-dessus de la porte et l’a écoutée. Puis elle a fait son annonce. »",
+       "Odile : « Vendredi, 12 h 30, en direct. Tommaso est resté debout toute l’émission. Avant son tour, il a fixé ses chaussures et s’est calmé. »",
+       "« Carolina a raté une fois son tour. Elle s’est arrêtée, s’est dit quelque chose tout bas – et elle était de retour. »",
+       "« Dans la cantine bruyante, Ajla a penché la tête et regardé l’horloge au-dessus de la porte. Puis elle a fait son annonce. »",
        "« Ce n’était pas parfait. Mais tous les trois sont revenus. Merci, la régie ! »"
       ]
      },
@@ -9380,7 +9404,7 @@
       "karten": [
        "Pour toi : Tommaso – antenne pieds ; Carolina – nommer la station et revenir ; Ajla – choisir un son (carte des sons). D’autres raisons comptent.",
        "« Qu’est-ce qui ne t’a rien apporté ? » est une bonne question. Rien n’est obligatoire ; saluer les réponses honnêtes.",
-       "Qui aide ? Enseignant·e, éducateur·rice, I-EBS ; dès la 7e le SePAS ; Kanner-Jugendtelefon 116 111 (lun.–sam.).",
+       "Qui aide ? Enseignant·e, éducateur·rice, I-EBS ; dès la 7e le SePAS ; Kanner-Jugendtelefon 116 111 (lun.–sam. ; chat mar. 18–21 h).",
        "Rester honnête : la pleine conscience aide un peu certains, pas tous. Ne rien promettre – essayer, et laisser l’enfant décider."
       ]
      },
@@ -9392,7 +9416,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -9406,7 +9430,7 @@
     "warum": "Expliquer et montrer à d’autres consolide ce qu’on a appris ; l’échange de rôles fait de l’enfant l’expert (rôle d’expert ; Dunning et al., 2019).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -9414,7 +9438,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
@@ -9555,9 +9579,9 @@
      {
       "titel": "Odiles Bericht (vorlesen)",
       "karten": [
-       "Odile: „Freitag, 12:30, live. Tommaso stand die ganze Sendung, die Füße fest am Boden. Kein Mikro ist umgefallen.“",
-       "„Carolina hat einmal ihren Einsatz verpasst. Dann hat sie kurz gestockt, ‚Aha‘ geflüstert – und war wieder da.“",
-       "„Ajla hat sich in der lauten Kantine die Uhr über der Tür ausgesucht und ihr zugehört. Dann kam ihre Ansage.“",
+       "Odile: „Freitag, 12:30, live. Tommaso stand die ganze Sendung. Vor seinem Teil schaute er kurz auf seine Schuhe und wurde ganz ruhig.“",
+       "„Carolina hat einmal ihren Einsatz verpasst. Sie hat kurz gestockt, leise etwas zu sich gesagt – und war wieder da.“",
+       "„Ajla hat in der lauten Kantine den Kopf schräg gelegt und zur Uhr über der Tür geschaut. Dann kam ihre Ansage.“",
        "„Perfekt war es nicht. Aber alle drei sind zurückgekommen. Danke, Regie!“"
       ]
      },
@@ -9588,7 +9612,7 @@
       "karten": [
        "Schonende Fassung: ruhig, am Tisch, nichts Persönliches nötig. Der Knopf „zur Seite“ ist eine gute, ehrliche Antwort.",
        "Für dich: Tommaso – Antenne Füße; Carolina – Sender erkennen und zurück; Ajla – ein Geräusch wählen (Ton-Karte). Andere Begründungen gelten.",
-       "Wer hilft? Lehrkraft, Erzieher·in, I-EBS; ab der 7e SePAS; Kanner-Jugendtelefon 116 111 (Mo–Sa)."
+       "Wer hilft? Lehrkraft, Erzieher·in, I-EBS; ab der 7e SePAS; Kanner-Jugendtelefon 116 111 (Mo–Sa; Chat Di 18–21 Uhr)."
       ]
      },
      {
@@ -9599,7 +9623,7 @@
        "Bei Ja: bleiben, ruhig nachfragen („Hast du einen Plan?“), nicht allein lassen. Heute noch: Maison-relais-Leitung, I-EBS/ESEB. Akut: 112.",
        "Erzählt es von Gewalt: glauben, nichts Geheimes versprechen, nicht nachbohren. Heute noch: Maison-relais-Leitung, I-EBS/ESEB.",
        "Danach: Worte wörtlich mit Datum notieren. Lehrkraft und Schulkomitee über die Leitung einbeziehen. Dem Kind sagen, wer hilft und wann. Übung nicht nachholen.",
-       "Hilfe: KJT 116 111 (Mo–Sa) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Hilfe: KJT 116 111 (Mo–Sa, Chat Di 18–21) · nachts und sonntags: 112, Polizei 113, SOS Détresse 45 45 45 · Gewalt 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -9613,7 +9637,7 @@
     "warum": "Ein ruhiger, ehrlicher Rückblick mit eigener Auswahl stärkt Wahl und Kompetenzerleben (Ryan & Deci, 2000) und verspricht nichts, was die Studien nicht halten (Kuyken et al., 2022).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym, Mo–Sa) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -9621,7 +9645,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline Gewalt 20 60 10 60 – rund um die Uhr, auch für Kinder und Zeugen",
+      "titel": "Helpline Gewalt 2060 1060 – rund um die Uhr, auch für Kinder und Zeugen",
       "url": "https://violence.lu"
      },
      {
@@ -9650,9 +9674,9 @@
      {
       "titel": "Compte rendu d’Odile (à lire)",
       "karten": [
-       "Odile : « Vendredi, 12 h 30, en direct. Tommaso est resté debout toute l’émission, les pieds bien au sol. Aucun micro n’est tombé. »",
-       "« Carolina a raté une fois son tour. Puis elle s’est arrêtée, a chuchoté “Tiens” – et elle était de retour. »",
-       "« Dans la cantine bruyante, Ajla a choisi l’horloge au-dessus de la porte et l’a écoutée. Puis elle a fait son annonce. »",
+       "Odile : « Vendredi, 12 h 30, en direct. Tommaso est resté debout toute l’émission. Avant son tour, il a fixé ses chaussures et s’est calmé. »",
+       "« Carolina a raté une fois son tour. Elle s’est arrêtée, s’est dit quelque chose tout bas – et elle était de retour. »",
+       "« Dans la cantine bruyante, Ajla a penché la tête et regardé l’horloge au-dessus de la porte. Puis elle a fait son annonce. »",
        "« Ce n’était pas parfait. Mais tous les trois sont revenus. Merci, la régie ! »"
       ]
      },
@@ -9683,7 +9707,7 @@
       "karten": [
        "Version douce : calme, à table, rien de personnel n’est nécessaire. Le bouton « sur le côté » est une bonne réponse, honnête.",
        "Pour toi : Tommaso – antenne pieds ; Carolina – nommer la station et revenir ; Ajla – choisir un son (carte des sons). D’autres raisons comptent.",
-       "Qui aide ? Enseignant·e, éducateur·rice, I-EBS ; dès la 7e le SePAS ; Kanner-Jugendtelefon 116 111 (lun.–sam.)."
+       "Qui aide ? Enseignant·e, éducateur·rice, I-EBS ; dès la 7e le SePAS ; Kanner-Jugendtelefon 116 111 (lun.–sam. ; chat mar. 18–21 h)."
       ]
      },
      {
@@ -9694,7 +9718,7 @@
        "Si oui : rester, demander calmement (« Tu as un plan ? »), ne pas le laisser seul. Le jour même : direction de la maison relais, I-EBS/ESEB. Danger : 112.",
        "Il parle de violence : le croire, ne rien promettre de secret, ne pas insister. Le jour même : direction de la maison relais, I-EBS/ESEB.",
        "Après : noter ses mots exacts et la date. Via la direction, informer enseignant et comité d’école. Lui dire qui l’aide, quand. Ne pas reprendre l’exercice.",
-       "Aide : KJT 116 111 (lun.–sam.) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
+       "Aide : KJT 116 111 (lun.–sam., chat mar. 18–21 h) · nuit et dimanche : 112, police 113, SOS Détresse 45 45 45 · violence 2060 1060 (24/7) · OKAJU 28 37 36 35"
       ]
      }
     ],
@@ -9708,7 +9732,7 @@
     "warum": "Un bilan calme et honnête, avec son propre choix, renforce l’autonomie et le sentiment de compétence (Ryan & Deci, 2000) et ne promet rien que les études ne tiennent pas (Kuyken et al., 2022).",
     "links": [
      {
-      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme, lun.–sam.) · Elterentelefon 8002 4444",
+      "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) · Elterentelefon 8002 4444",
       "url": "https://www.kjt.lu"
      },
      {
@@ -9716,7 +9740,7 @@
       "url": "https://454545.lu"
      },
      {
-      "titel": "Helpline violence 20 60 10 60 – 24 h/24, aussi pour les enfants et les témoins",
+      "titel": "Helpline violence 2060 1060 – 24 h/24, aussi pour les enfants et les témoins",
       "url": "https://violence.lu"
      },
      {
