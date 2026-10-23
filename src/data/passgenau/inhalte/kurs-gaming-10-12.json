@@ -165,9 +165,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -253,19 +253,6 @@
       "Es gibt mir vor allem:",
       "Danach bin ich meistens:"
      ]
-    },
-    {
-     "art": "aufgabe",
-     "symbole": [
-      "schreiben"
-     ],
-     "text": "Spielen kann Energie geben – oder kosten. Je ein Beispiel."
-    },
-    {
-     "art": "batterie",
-     "laden": "Gibt Energie",
-     "leeren": "Kostet Energie",
-     "linien": 2
     },
     {
      "art": "aufgabe",
@@ -378,19 +365,6 @@
     {
      "art": "aufgabe",
      "symbole": [
-      "schreiben"
-     ],
-     "text": "Jouer peut donner de l’énergie – ou en coûter. Un exemple de chaque."
-    },
-    {
-     "art": "batterie",
-     "laden": "Donne de l’énergie",
-     "leeren": "Coûte de l’énergie",
-     "linien": 2
-    },
-    {
-     "art": "aufgabe",
-     "symbole": [
       "malen"
      ],
      "text": "Colorie le bouton d’aujourd’hui."
@@ -453,7 +427,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 ist eine echte Wahl: eigenes Spiel oder eines der drei – geschrieben wird nur, was das Kind zeigen will. Die Batterie füllt es allein oder diktiert. Dann den Knopf ausmalen. Zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor: Noahs Streak ist die Spur zum nächsten Knopf.",
+     "text": "Aufgabe 1 ist eine echte Wahl: eigenes Spiel oder eines der drei – geschrieben wird nur, was das Kind zeigen will. Dann den Knopf ausmalen. Zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor: Noahs Streak ist die Spur zum nächsten Knopf.",
      "sagen": [
       "Was gibt dir dein Spiel – und was kostet es manchmal?",
       "Ein Wort reicht."
@@ -461,7 +435,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, sagt das Kind Stichworte, und die Fachkraft schreibt mit. Wie lange oder wann das Kind spielt, wird nicht gefragt."
     },
     "fr": {
-     "text": "L’exercice 1 est un vrai choix : son jeu ou celui d’un des trois – on n’écrit que ce que l’enfant veut montrer. L’enfant remplit la batterie seul·e ou dicte. Puis colorier le bouton. Pour finir, l’adulte lit la dernière ligne comme un message vocal : le streak de Noah est l’indice du prochain bouton.",
+     "text": "L’exercice 1 est un vrai choix : son jeu ou celui d’un des trois – on n’écrit que ce que l’enfant veut montrer. Puis colorier le bouton. Pour finir, l’adulte lit la dernière ligne comme un message vocal : le streak de Noah est l’indice du prochain bouton.",
      "sagen": [
       "Qu’est-ce que ton jeu t’apporte – et qu’est-ce qu’il te coûte parfois ?",
       "Un mot suffit."
@@ -497,7 +471,7 @@
      "Karte „Nur für dich“ neben dich legen, nicht auf den Tisch",
      "Mappe und Buntstifte für das Abschluss-Ritual"
     ],
-    "aufbau": "0′ Noob-Bitte – „Erklär mir dein Spiel in 60 Sekunden.“\n2′ Auftrag – „Sami, Lea, Noah brauchen einen Profi.“\n3′ Zitate – „Stell dich auf den Grund. Welche Spur?“\n8′ Spieler-Check – „Dein Spiel oder eins der drei?“\n10′ Merksatz\n11′ Blatt (6 Min.): Aufgabe 1–2, Rest freiwillig\nMuss: Noob, Zitate, Wahl. Wird es knapp: 4 Zitate.",
+    "aufbau": "0′ Noob-Bitte – „Erklär mir dein Spiel in 60 Sekunden.“\n2′ Auftrag – „Sami, Lea, Noah brauchen einen Profi.“\n3′ Zitate – „Stell dich auf den Grund. Welche Spur?“\n8′ Spieler-Check – „Dein Spiel oder eins der drei?“\n10′ Merksatz\n11′ Blatt (4 Min.): Aufgabe 1 + Knopf, Rest ist Bonus-Level\n15′ Ende\nMuss: Noob, Zitate, Wahl. Wird es knapp: 4 Zitate.",
     "karten": [
      {
       "titel": "Spieler-Karten: Sami, Lea, Noah – und Carla",
@@ -570,7 +544,7 @@
      "Garder la carte « Pour l’adulte » à côté de soi, pas sur la table",
      "Dossier et crayons de couleur pour le rituel de fin"
     ],
-    "aufbau": "0′ Défi noob – « Explique-moi ton jeu en 60 secondes. »\n2′ Le défi – « Sami, Lea, Noah ont besoin d’un pro. »\n3′ Citations – « Place-toi sur la raison. Quel indice ? »\n8′ Check joueur – « Ton jeu ou un des trois ? »\n10′ Phrase-clé\n11′ Fiche (6 min) : exercices 1–2, le reste en option\nIndispensable : noob, citations, choix. Si le temps manque : 4 citations.",
+    "aufbau": "0′ Défi noob – « Explique-moi ton jeu en 60 secondes. »\n2′ Le défi – « Sami, Lea, Noah ont besoin d’un pro. »\n3′ Citations – « Place-toi sur la raison. Quel indice ? »\n8′ Check joueur – « Ton jeu ou un des trois ? »\n10′ Phrase-clé\n11′ Fiche (4 min) : exercice 1 + bouton, reste en bonus\n15′ Fin\nIndispensable : noob, citations, choix. Si le temps manque : 4 citations.",
     "karten": [
      {
       "titel": "Cartes joueurs : Sami, Lea, Noah – et Carla",
@@ -684,9 +658,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -782,30 +756,6 @@
        "danach geladen",
        "danach leer"
       ]
-     ]
-    },
-    {
-     "art": "aufgabe",
-     "symbole": [
-      "ankreuzen"
-     ],
-     "text": "Gibt das Energie – oder kostet es Energie?"
-    },
-    {
-     "art": "einschaetzung",
-     "kopffarben": [
-      "gruen",
-      "rot"
-     ],
-     "optionen": [
-      "gibt",
-      "kostet"
-     ],
-     "items": [
-      "Mit Freunden lachen",
-      "Viel länger spielen als geplant",
-      "Streit im Chat",
-      "Etwas Eigenes bauen"
      ]
     },
     {
@@ -925,30 +875,6 @@
     {
      "art": "aufgabe",
      "symbole": [
-      "ankreuzen"
-     ],
-     "text": "Ça donne de l’énergie – ou ça en coûte ?"
-    },
-    {
-     "art": "einschaetzung",
-     "kopffarben": [
-      "gruen",
-      "rot"
-     ],
-     "optionen": [
-      "donne",
-      "coûte"
-     ],
-     "items": [
-      "Rire avec des amis",
-      "Jouer bien plus longtemps que prévu",
-      "Une dispute dans le chat",
-      "Construire un truc à moi"
-     ]
-    },
-    {
-     "art": "aufgabe",
-     "symbole": [
       "malen"
      ],
      "text": "Colorie le bouton d’aujourd’hui."
@@ -1006,7 +932,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 ist eine echte Wahl: eigenes Spiel oder eines der drei; das Kind kreuzt an und schiebt den Regler. Bei Aufgabe 2 kreuzt es an, was Energie gibt oder kostet. Dann den Knopf ausmalen. Zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor.",
+     "text": "Aufgabe 1 ist eine echte Wahl: eigenes Spiel oder eines der drei; das Kind kreuzt an und schiebt den Regler. Dann den Knopf ausmalen. Zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor.",
      "sagen": [
       "Was gibt dir dein Spiel – und was kostet es manchmal?",
       "Zwei Kreuze reichen."
@@ -1014,7 +940,7 @@
      "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alles vor, und das Kind zeigt. Wie lange oder wann das Kind spielt, wird nicht gefragt."
     },
     "fr": {
-     "text": "L’exercice 1 est un vrai choix : son jeu ou celui d’un des trois ; l’enfant coche et place le curseur. À l’exercice 2, il ou elle coche ce qui donne ou coûte de l’énergie. Puis colorier le bouton. Pour finir, l’adulte lit la dernière ligne comme un message vocal.",
+     "text": "L’exercice 1 est un vrai choix : son jeu ou celui d’un des trois ; l’enfant coche et place le curseur. Puis colorier le bouton. Pour finir, l’adulte lit la dernière ligne comme un message vocal.",
      "sagen": [
       "Qu’est-ce que ton jeu t’apporte – et qu’est-ce qu’il te coûte parfois ?",
       "Deux croix suffisent."
@@ -1050,7 +976,7 @@
      "Karte „Nur für dich“ neben dich legen, nicht auf den Tisch",
      "Mappe und Buntstifte für das Abschluss-Ritual"
     ],
-    "aufbau": "0′ Noob-Bitte – „Erklär mir dein Spiel in 60 Sekunden.“\n2′ Auftrag – „Sami, Lea, Noah brauchen einen Profi.“\n3′ Zitate – „Stell dich auf den Grund. Welche Spur?“\n8′ Spieler-Check – „Dein Spiel oder eins der drei?“\n10′ Merksatz\n11′ Blatt (6 Min.): Aufgabe 1–2, Rest freiwillig\nMuss: Noob, Zitate, Wahl. Wird es knapp: 4 Zitate.",
+    "aufbau": "0′ Noob-Bitte – „Erklär mir dein Spiel in 60 Sekunden.“\n2′ Auftrag – „Sami, Lea, Noah brauchen einen Profi.“\n3′ Zitate – „Stell dich auf den Grund. Welche Spur?“\n8′ Spieler-Check – „Dein Spiel oder eins der drei?“\n10′ Merksatz\n11′ Blatt (4 Min.): Aufgabe 1 + Knopf, Rest ist Bonus-Level\n15′ Ende\nMuss: Noob, Zitate, Wahl. Wird es knapp: 4 Zitate.",
     "karten": [
      {
       "titel": "Spieler-Karten: Sami, Lea, Noah – und Carla",
@@ -1123,7 +1049,7 @@
      "Garder la carte « Pour l’adulte » à côté de soi, pas sur la table",
      "Dossier et crayons de couleur pour le rituel de fin"
     ],
-    "aufbau": "0′ Défi noob – « Explique-moi ton jeu en 60 secondes. »\n2′ Le défi – « Sami, Lea, Noah ont besoin d’un pro. »\n3′ Citations – « Place-toi sur la raison. Quel indice ? »\n8′ Check joueur – « Ton jeu ou un des trois ? »\n10′ Phrase-clé\n11′ Fiche (6 min) : exercices 1–2, le reste en option\nIndispensable : noob, citations, choix. Si le temps manque : 4 citations.",
+    "aufbau": "0′ Défi noob – « Explique-moi ton jeu en 60 secondes. »\n2′ Le défi – « Sami, Lea, Noah ont besoin d’un pro. »\n3′ Citations – « Place-toi sur la raison. Quel indice ? »\n8′ Check joueur – « Ton jeu ou un des trois ? »\n10′ Phrase-clé\n11′ Fiche (4 min) : exercice 1 + bouton, reste en bonus\n15′ Fin\nIndispensable : noob, citations, choix. Si le temps manque : 4 citations.",
     "karten": [
      {
       "titel": "Cartes joueurs : Sami, Lea, Noah – et Carla",
@@ -1229,9 +1155,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -1296,7 +1222,7 @@
      "Zitate und Spieler-Karten auf dem Bogen bereitlegen",
      "Etwas Platz zum Aufstehen"
     ],
-    "aufbau": "0′ Noob-Bitte – „Erklär mir dein Spiel.“\n2′ Auftrag – „Sami, Lea, Noah brauchen einen Profi.“\n3′ Posen erfinden – „Wie sieht Können aus?“\n5′ Zitate – „Nur mit der Pose antworten!“\n9′ Rollentausch\n11′ Merksatz, dann Blatt (6 Min.)\nMuss: Posen, Zitate. Kann: Rollentausch. Wird es knapp: 4 Zitate.",
+    "aufbau": "0′ Noob-Bitte – „Erklär mir dein Spiel.“\n2′ Auftrag – „Sami, Lea, Noah brauchen einen Profi.“\n3′ Posen erfinden – „Wie sieht Können aus?“\n5′ Zitate – „Nur mit der Pose antworten!“\n9′ Rollentausch\n11′ Merksatz, dann Blatt (4 Min.)\n15′ Ende\nMuss: Posen, Zitate. Kann: Rollentausch. Wird es knapp: 4 Zitate.",
     "karten": [
      {
       "titel": "Zitate (zum Vorlesen – wer ist es?)",
@@ -1358,7 +1284,7 @@
      "Préparer les citations et les cartes joueurs sur la planche",
      "Un peu de place pour se lever"
     ],
-    "aufbau": "0′ Défi noob – « Explique-moi ton jeu. »\n2′ Le défi – « Sami, Lea, Noah ont besoin d’un pro. »\n3′ Inventer les poses – « Réussir, ça ressemble à quoi ? »\n5′ Citations – « Réponds seulement avec la pose ! »\n9′ On échange\n11′ Phrase-clé, puis fiche (6 min)\nIndispensable : poses, citations. En option : échange. Si le temps manque : 4 citations.",
+    "aufbau": "0′ Défi noob – « Explique-moi ton jeu. »\n2′ Le défi – « Sami, Lea, Noah ont besoin d’un pro. »\n3′ Inventer les poses – « Réussir, ça ressemble à quoi ? »\n5′ Citations – « Réponds seulement avec la pose ! »\n9′ On échange\n11′ Phrase-clé, puis fiche (4 min)\n15′ Fin\nIndispensable : poses, citations. En option : échange. Si le temps manque : 4 citations.",
     "karten": [
      {
       "titel": "Citations (à lire – c’est qui ?)",
@@ -1456,9 +1382,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -1526,7 +1452,7 @@
      "Zwei Blätter quer, Buntstifte",
      "Samis Karte vorher grob skizzieren (1 Min.)"
     ],
-    "aufbau": "0′ Noob-Bitte – „Erklär mir dein Spiel.“\n2′ Auftrag – „Der Gaming-Mëttwoch wackelt.“\n3′ Zitate – „Sami, Lea oder Noah?“\n6′ Spieler-Karte malen – „Wie hoch ist der Balken?“\n10′ Akku und Vergleich, Merksatz\n11′ Blatt (6 Min.)\nMuss: Karte malen. Kann: Vergleich. Wird es knapp: nur zwei Balken.",
+    "aufbau": "0′ Noob-Bitte – „Erklär mir dein Spiel.“\n2′ Auftrag – „Der Gaming-Mëttwoch wackelt.“\n3′ Zitate – „Sami, Lea oder Noah?“\n6′ Spieler-Karte malen – „Wie hoch ist der Balken?“\n10′ Akku und Vergleich, Merksatz\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: Karte malen. Kann: Vergleich. Wird es knapp: nur zwei Balken.",
     "karten": [
      {
       "titel": "Zitate (zum Vorlesen – wer ist es?)",
@@ -1588,7 +1514,7 @@
      "Deux feuilles à l’horizontale, crayons de couleur",
      "Esquisser vite la carte de Sami (1 min)"
     ],
-    "aufbau": "0′ Défi noob – « Explique-moi ton jeu. »\n2′ Le défi – « Le Gaming-Mëttwoch est menacé. »\n3′ Citations – « Sami, Lea ou Noah ? »\n6′ Carte joueur – « La barre monte jusqu’où ? »\n10′ Batterie et comparaison, phrase-clé\n11′ Fiche (6 min)\nIndispensable : la carte. En option : comparer. Si le temps manque : deux barres.",
+    "aufbau": "0′ Défi noob – « Explique-moi ton jeu. »\n2′ Le défi – « Le Gaming-Mëttwoch est menacé. »\n3′ Citations – « Sami, Lea ou Noah ? »\n6′ Carte joueur – « La barre monte jusqu’où ? »\n10′ Batterie et comparaison, phrase-clé\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : la carte. En option : comparer. Si le temps manque : deux barres.",
     "karten": [
      {
       "titel": "Citations (à lire – c’est qui ?)",
@@ -1694,9 +1620,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -1787,17 +1713,11 @@
      ]
     },
     {
-     "art": "info",
-     "symbol": "wissen",
-     "titel": "PEGI",
-     "text": "PEGI zeigt das Alter, ab dem ein Spiel passt – nicht, wie schwer es ist. Seit Juni 2026 neu bewertete Spiele mit bezahlten Lootboxen bekommen meist PEGI 16; ältere tragen oft ihr altes Zeichen."
-    },
-    {
      "art": "aufgabe",
      "symbole": [
       "schreiben"
      ],
-     "text": "Deine Wahl: Welcher Trick ist am fiesesten – und welche Bremse hilft Noah vor dem nächsten Kauf?"
+     "text": "Deine Wahl: Welche Bremse hilft Noah vor dem nächsten Kauf?"
     },
     {
      "art": "satzanfaenge",
@@ -1857,7 +1777,7 @@
      "symbole": [
       "nachdenken"
      ],
-     "text": "Wenn du magst, bis zum nächsten Mal: Such in einem Spiel einen Trick."
+     "text": "Bonus-Level: Such in einem Spiel einen Trick."
     },
     {
      "art": "text",
@@ -1910,17 +1830,11 @@
      ]
     },
     {
-     "art": "info",
-     "symbol": "wissen",
-     "titel": "PEGI",
-     "text": "PEGI indique l’âge à partir duquel un jeu convient – pas s’il est difficile. Classés depuis juin 2026, les jeux à loot boxes payantes reçoivent en général PEGI 16 ; les anciens gardent souvent leur logo."
-    },
-    {
      "art": "aufgabe",
      "symbole": [
       "schreiben"
      ],
-     "text": "À toi de choisir : quel piège est le plus sournois – et quel frein aide Noah avant le prochain achat ?"
+     "text": "À toi de choisir : quel frein aide Noah avant le prochain achat ?"
     },
     {
      "art": "satzanfaenge",
@@ -1980,7 +1894,7 @@
      "symbole": [
       "nachdenken"
      ],
-     "text": "Si tu veux, d’ici la prochaine fois : cherche un piège dans un jeu."
+     "text": "Niveau bonus : cherche un piège dans un jeu."
     },
     {
      "art": "text",
@@ -1990,7 +1904,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 rechnet das Kind allein oder laut mit der Fachkraft. Den PEGI-Kasten liest die Fachkraft vor und fragt, was das Kind schon wusste. Aufgabe 2 ist eine echte Wahl: der fieseste Trick und eine Bremse für Noah. Dann den Knopf ausmalen; zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor.",
+     "text": "Aufgabe 1 rechnet das Kind allein oder laut mit der Fachkraft. PEGI erklärt die Fachkraft mündlich (Karte „Nur für dich“) und fragt, was das Kind schon wusste. Aufgabe 2 ist eine echte Wahl: der fieseste Trick und eine Bremse für Noah. Dann den Knopf ausmalen; zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor.",
      "sagen": [
       "Was wusstest du über PEGI schon – und was ist neu?",
       "Welche Bremse würdest du Noah empfehlen?"
@@ -1998,7 +1912,7 @@
      "wennEsKippt": "Fällt die Rechnung schwer, rechnet die Fachkraft laut mit („2 mal 1.200 …“). Ein Stichwort reicht. Wie viel das Kind selbst ausgibt, wird nicht gefragt."
     },
     "fr": {
-     "text": "L’enfant fait l’exercice 1 seul·e ou à voix haute avec l’adulte. L’adulte lit l’encadré PEGI et demande ce que l’enfant savait déjà. L’exercice 2 est un vrai choix : le piège le plus sournois et un frein pour Noah. Puis colorier le bouton ; pour finir, l’adulte lit la dernière ligne comme un message vocal.",
+     "text": "L’enfant fait l’exercice 1 seul·e ou à voix haute avec l’adulte. L’adulte explique PEGI à l’oral (carte « Pour l’adulte ») et demande ce que l’enfant savait déjà. L’exercice 2 est un vrai choix : le piège le plus sournois et un frein pour Noah. Puis colorier le bouton ; pour finir, l’adulte lit la dernière ligne comme un message vocal.",
      "sagen": [
       "Que savais-tu déjà sur PEGI – et qu’est-ce qui est nouveau ?",
       "Quel frein conseillerais-tu à Noah ?"
@@ -2032,7 +1946,7 @@
      "Zwei Würfel und zehn Chips (Papierschnipsel oder Büroklammern)",
      "Karte „Nur für dich“ (Regel, Lösungen, PEGI) neben dich legen"
     ],
-    "aufbau": "0′ Truhen-Würfeln – „Zehn Chips. Öffnest du eine?“\n3′ Auflösen – „Zwei Sechsen? 1 von 36.“\n5′ Trick-Detektiv – „Welcher Trick steckt hier drin?“\n9′ Profi-Runde – „Welche Tricks kennst du noch?“\n10′ Wahl: fiesester Trick und Bremse, Merksatz\n11′ Blatt (6 Min.): Aufgabe 1–2, Rest freiwillig\nMuss: Würfeln, Tricks, Bremse. Wird es knapp: 4 Tricks.",
+    "aufbau": "0′ Truhen-Würfeln – „Zehn Chips. Öffnest du eine?“\n3′ Auflösen – „Zwei Sechsen? 1 von 36.“\n5′ Trick-Detektiv – „Welcher Trick steckt hier drin?“\n9′ Profi-Runde – „Welche Tricks kennst du noch?“\n10′ Wahl: fiesester Trick und Bremse, Merksatz\n11′ Blatt (4 Min.): Aufgabe 1 + Knopf, Rest ist Bonus-Level\n15′ Ende\nMuss: Würfeln, Tricks, Bremse. Wird es knapp: 4 Tricks.",
     "karten": [
      {
       "titel": "Bildschirm-Karten: Kristall-Kingdom",
@@ -2101,7 +2015,7 @@
      "Deux dés et dix jetons (bouts de papier ou trombones)",
      "Garder la carte « Pour l’adulte » (règle, solutions, PEGI) à côté de soi"
     ],
-    "aufbau": "0′ Lancer de coffres – « Dix jetons. Tu en ouvres un ? »\n3′ On regarde – « Double six ? 1 sur 36. »\n5′ Détective – « Quel piège se cache ici ? »\n9′ Tour du pro – « Tu connais d’autres pièges ? »\n10′ Choix : piège le plus sournois et frein, phrase-clé\n11′ Fiche (6 min) : exercices 1–2, le reste en option\nIndispensable : dés, pièges, frein. Si le temps manque : 4 pièges.",
+    "aufbau": "0′ Lancer de coffres – « Dix jetons. Tu en ouvres un ? »\n3′ On regarde – « Double six ? 1 sur 36. »\n5′ Détective – « Quel piège se cache ici ? »\n9′ Tour du pro – « Tu connais d’autres pièges ? »\n10′ Choix : piège le plus sournois et frein, phrase-clé\n11′ Fiche (4 min) : exercice 1 + bouton, reste en bonus\n15′ Fin\nIndispensable : dés, pièges, frein. Si le temps manque : 4 pièges.",
     "karten": [
      {
       "titel": "Cartes écran : Kristall-Kingdom",
@@ -2217,9 +2131,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -2311,17 +2225,11 @@
      ]
     },
     {
-     "art": "info",
-     "symbol": "wissen",
-     "titel": "PEGI",
-     "text": "PEGI zeigt das Alter, ab dem ein Spiel passt – nicht, wie schwer es ist. Seit Juni 2026 neu bewertete Spiele mit bezahlten Lootboxen bekommen meist PEGI 16; ältere tragen oft ihr altes Zeichen."
-    },
-    {
      "art": "aufgabe",
      "symbole": [
       "ankreuzen"
      ],
-     "text": "Deine Wahl: Welcher Trick ist am fiesesten – und welche Bremse hilft Noah vor dem nächsten Kauf?"
+     "text": "Deine Wahl: Welche Bremse hilft Noah vor dem nächsten Kauf?"
     },
     {
      "art": "ankreuzen",
@@ -2383,7 +2291,7 @@
      "symbole": [
       "nachdenken"
      ],
-     "text": "Wenn du magst, bis zum nächsten Mal: Such in einem Spiel einen Trick."
+     "text": "Bonus-Level: Such in einem Spiel einen Trick."
     },
     {
      "art": "text",
@@ -2437,17 +2345,11 @@
      ]
     },
     {
-     "art": "info",
-     "symbol": "wissen",
-     "titel": "PEGI",
-     "text": "PEGI indique l’âge à partir duquel un jeu convient – pas s’il est difficile. Classés depuis juin 2026, les jeux à loot boxes payantes reçoivent en général PEGI 16 ; les anciens gardent souvent leur logo."
-    },
-    {
      "art": "aufgabe",
      "symbole": [
       "ankreuzen"
      ],
-     "text": "À toi de choisir : quel piège est le plus sournois – et quel frein aide Noah avant le prochain achat ?"
+     "text": "À toi de choisir : quel frein aide Noah avant le prochain achat ?"
     },
     {
      "art": "ankreuzen",
@@ -2509,7 +2411,7 @@
      "symbole": [
       "nachdenken"
      ],
-     "text": "Si tu veux, d’ici la prochaine fois : cherche un piège dans un jeu."
+     "text": "Niveau bonus : cherche un piège dans un jeu."
     },
     {
      "art": "text",
@@ -2519,7 +2421,7 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Bei Aufgabe 1 legt die Fachkraft Chips oder Striche hin, das Kind zählt und kreuzt an. Den PEGI-Kasten liest die Fachkraft vor. Aufgabe 2 ist eine echte Wahl: den fiesesten Trick nennen und eine Bremse ankreuzen. Dann den Knopf ausmalen; zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor.",
+     "text": "Bei Aufgabe 1 legt die Fachkraft Chips oder Striche hin, das Kind zählt und kreuzt an. PEGI erklärt die Fachkraft mündlich (Karte „Nur für dich“). Aufgabe 2 ist eine echte Wahl: den fiesesten Trick nennen und eine Bremse ankreuzen. Dann den Knopf ausmalen; zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor.",
      "sagen": [
       "Was wusstest du über PEGI schon – und was ist neu?",
       "Welche Bremse würdest du Noah empfehlen?"
@@ -2527,7 +2429,7 @@
      "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alles vor, und das Kind zeigt. Wie viel das Kind selbst ausgibt, wird nicht gefragt."
     },
     "fr": {
-     "text": "Pour l’exercice 1, l’adulte pose des jetons ou des traits, l’enfant compte et coche. L’adulte lit l’encadré PEGI. L’exercice 2 est un vrai choix : dire le piège le plus sournois et cocher un frein. Puis colorier le bouton ; pour finir, l’adulte lit la dernière ligne comme un message vocal.",
+     "text": "Pour l’exercice 1, l’adulte pose des jetons ou des traits, l’enfant compte et coche. L’adulte explique PEGI à l’oral (carte « Pour l’adulte »). L’exercice 2 est un vrai choix : dire le piège le plus sournois et cocher un frein. Puis colorier le bouton ; pour finir, l’adulte lit la dernière ligne comme un message vocal.",
      "sagen": [
       "Que savais-tu déjà sur PEGI – et qu’est-ce qui est nouveau ?",
       "Quel frein conseillerais-tu à Noah ?"
@@ -2561,7 +2463,7 @@
      "Zwei Würfel und zehn Chips (Papierschnipsel oder Büroklammern)",
      "Karte „Nur für dich“ (Regel, Lösungen, PEGI) neben dich legen"
     ],
-    "aufbau": "0′ Truhen-Würfeln – „Zehn Chips. Öffnest du eine?“\n3′ Auflösen – „Zwei Sechsen? 1 von 36.“\n5′ Trick-Detektiv – „Welcher Trick steckt hier drin?“\n9′ Profi-Runde – „Welche Tricks kennst du noch?“\n10′ Wahl: fiesester Trick und Bremse, Merksatz\n11′ Blatt (6 Min.): Aufgabe 1–2, Rest freiwillig\nMuss: Würfeln, Tricks, Bremse. Wird es knapp: 4 Tricks.",
+    "aufbau": "0′ Truhen-Würfeln – „Zehn Chips. Öffnest du eine?“\n3′ Auflösen – „Zwei Sechsen? 1 von 36.“\n5′ Trick-Detektiv – „Welcher Trick steckt hier drin?“\n9′ Profi-Runde – „Welche Tricks kennst du noch?“\n10′ Wahl: fiesester Trick und Bremse, Merksatz\n11′ Blatt (4 Min.): Aufgabe 1 + Knopf, Rest ist Bonus-Level\n15′ Ende\nMuss: Würfeln, Tricks, Bremse. Wird es knapp: 4 Tricks.",
     "karten": [
      {
       "titel": "Bildschirm-Karten: Kristall-Kingdom",
@@ -2630,7 +2532,7 @@
      "Deux dés et dix jetons (bouts de papier ou trombones)",
      "Garder la carte « Pour l’adulte » (règle, solutions, PEGI) à côté de soi"
     ],
-    "aufbau": "0′ Lancer de coffres – « Dix jetons. Tu en ouvres un ? »\n3′ On regarde – « Double six ? 1 sur 36. »\n5′ Détective – « Quel piège se cache ici ? »\n9′ Tour du pro – « Tu connais d’autres pièges ? »\n10′ Choix : piège le plus sournois et frein, phrase-clé\n11′ Fiche (6 min) : exercices 1–2, le reste en option\nIndispensable : dés, pièges, frein. Si le temps manque : 4 pièges.",
+    "aufbau": "0′ Lancer de coffres – « Dix jetons. Tu en ouvres un ? »\n3′ On regarde – « Double six ? 1 sur 36. »\n5′ Détective – « Quel piège se cache ici ? »\n9′ Tour du pro – « Tu connais d’autres pièges ? »\n10′ Choix : piège le plus sournois et frein, phrase-clé\n11′ Fiche (4 min) : exercice 1 + bouton, reste en bonus\n15′ Fin\nIndispensable : dés, pièges, frein. Si le temps manque : 4 pièges.",
     "karten": [
      {
       "titel": "Cartes écran : Kristall-Kingdom",
@@ -2738,9 +2640,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -2809,7 +2711,7 @@
      "Behauptungen (10) auf dem Bogen zum Vorlesen",
      "Lösungen auf der Karte „Nur für dich“"
     ],
-    "aufbau": "0′ Noahs Karte – „20 €, drei Tage, fast leer.“\n2′ Behauptungen – „Stimmt’s? Aufstehen!“\n6′ Erklären – „Welche Karte passt?“\n8′ Rollentausch – „Jetzt erfindest du.“\n10′ Bremse für Noah, Merksatz\n11′ Blatt (6 Min.)\nMuss: Behauptungen, Rollentausch. Wird es knapp: 5 Behauptungen.",
+    "aufbau": "0′ Noahs Karte – „20 €, drei Tage, fast leer.“\n2′ Behauptungen – „Stimmt’s? Aufstehen!“\n6′ Erklären – „Welche Karte passt?“\n8′ Rollentausch – „Jetzt erfindest du.“\n10′ Bremse für Noah, Merksatz\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: Behauptungen, Rollentausch. Wird es knapp: 5 Behauptungen.",
     "karten": [
      {
       "titel": "Behauptungen (zum Vorlesen)",
@@ -2876,7 +2778,7 @@
      "Affirmations (10) sur la planche, à lire à voix haute",
      "Solutions sur la carte « Pour l’adulte »"
     ],
-    "aufbau": "0′ La carte de Noah – « 20 €, trois jours, presque vide. »\n2′ Affirmations – « Vrai ? Debout ! »\n6′ Expliquer – « Quelle carte va avec ? »\n8′ On échange – « À toi d’inventer. »\n10′ Frein pour Noah, phrase-clé\n11′ Fiche (6 min)\nIndispensable : affirmations, échange. Si le temps manque : 5 affirmations.",
+    "aufbau": "0′ La carte de Noah – « 20 €, trois jours, presque vide. »\n2′ Affirmations – « Vrai ? Debout ! »\n6′ Expliquer – « Quelle carte va avec ? »\n8′ On échange – « À toi d’inventer. »\n10′ Frein pour Noah, phrase-clé\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : affirmations, échange. Si le temps manque : 5 affirmations.",
     "karten": [
      {
       "titel": "Affirmations (à lire à voix haute)",
@@ -2983,9 +2885,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -3057,7 +2959,7 @@
      "Zwei Blätter, Buntstifte",
      "Lösungen auf der Karte „Nur für dich“"
     ],
-    "aufbau": "0′ Noahs Karte – „20 €, drei Tage, fast leer.“\n2′ Tricks zuordnen – „Was erkennst du schon?“\n4′ Designer – „Bau einen Shop mit drei Tricks.“\n8′ Ich bin Noah – „Welcher Trick wirkt gerade?“\n10′ Faire Fassung, Bremse, Merksatz\n11′ Blatt (6 Min.)\nMuss: Shop, Noah-Runde. Kann: faire Fassung. Wird es knapp: zwei Tricks.",
+    "aufbau": "0′ Noahs Karte – „20 €, drei Tage, fast leer.“\n2′ Tricks zuordnen – „Was erkennst du schon?“\n4′ Designer – „Bau einen Shop mit drei Tricks.“\n8′ Ich bin Noah – „Welcher Trick wirkt gerade?“\n10′ Faire Fassung, Bremse, Merksatz\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: Shop, Noah-Runde. Kann: faire Fassung. Wird es knapp: zwei Tricks.",
     "karten": [
      {
       "titel": "Bildschirm-Karten: Kristall-Kingdom",
@@ -3126,7 +3028,7 @@
      "Deux feuilles, crayons de couleur",
      "Solutions sur la carte « Pour l’adulte »"
     ],
-    "aufbau": "0′ La carte de Noah – « 20 €, trois jours, presque vide. »\n2′ Associer – « Que reconnais-tu déjà ? »\n4′ Designer – « Une boutique avec trois pièges. »\n8′ Je suis Noah – « Quel piège agit, là ? »\n10′ Version honnête, frein, phrase-clé\n11′ Fiche (6 min)\nIndispensable : boutique, tour de Noah. En option : version honnête. Si le temps manque : deux pièges.",
+    "aufbau": "0′ La carte de Noah – « 20 €, trois jours, presque vide. »\n2′ Associer – « Que reconnais-tu déjà ? »\n4′ Designer – « Une boutique avec trois pièges. »\n8′ Je suis Noah – « Quel piège agit, là ? »\n10′ Version honnête, frein, phrase-clé\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : boutique, tour de Noah. En option : version honnête. Si le temps manque : deux pièges.",
     "karten": [
      {
       "titel": "Cartes écran : Kristall-Kingdom",
@@ -3243,9 +3145,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -3361,24 +3263,6 @@
     {
      "art": "aufgabe",
      "symbole": [
-      "einkreisen"
-     ],
-     "text": "Welches Signal würde bei dir wirklich klappen? Kreuz an oder schreib ein eigenes."
-    },
-    {
-     "art": "ankreuzen",
-     "spalten": 2,
-     "frei": 1,
-     "items": [
-      "Wecker vorher",
-      "Sanduhr",
-      "Jemand sagt Bescheid",
-      "Ende des Matches"
-     ]
-    },
-    {
-     "art": "aufgabe",
-     "symbole": [
       "malen"
      ],
      "text": "Mal den Knopf von heute aus."
@@ -3426,12 +3310,12 @@
      "symbole": [
       "nachdenken"
      ],
-     "text": "Wenn du magst, bis zum nächsten Mal: Probier einen Stopp-Plan einmal aus. Halb geklappt zählt auch."
+     "text": "Bonus-Level: Probier einen Stopp-Plan einmal aus. Halb geklappt zählt auch."
     },
     {
      "art": "text",
      "klein": true,
-     "text": "Übrigens: Beim Training am Mittwoch verliert Lea dreimal hintereinander. Im Chat steht „uninstall, noob“ – dann knallt ihr Controller auf den Tisch."
+     "text": "Übrigens: Lea verliert dreimal hintereinander. Im Chat: „uninstall, noob“ – ihr Controller knallt auf den Tisch."
     }
    ],
    "fr": [
@@ -3504,24 +3388,6 @@
     {
      "art": "aufgabe",
      "symbole": [
-      "einkreisen"
-     ],
-     "text": "Quel signal marcherait vraiment pour toi ? Coche ou écris le tien."
-    },
-    {
-     "art": "ankreuzen",
-     "spalten": 2,
-     "frei": 1,
-     "items": [
-      "Réveil avant",
-      "Sablier",
-      "Quelqu’un prévient",
-      "Fin du match"
-     ]
-    },
-    {
-     "art": "aufgabe",
-     "symbole": [
       "malen"
      ],
      "text": "Colorie le bouton d’aujourd’hui."
@@ -3569,17 +3435,17 @@
      "symbole": [
       "nachdenken"
      ],
-     "text": "Si tu veux, d’ici la prochaine fois : essaie une fois un plan stop. À moitié, ça compte aussi."
+     "text": "Niveau bonus : essaie une fois un plan stop. À moitié, ça compte aussi."
     },
     {
      "art": "text",
      "klein": true,
-     "text": "Au fait : à l’entraînement de mercredi, Lea perd trois fois de suite. Dans le chat, on lit « uninstall, noob » – puis sa manette claque sur la table."
+     "text": "Au fait : Lea perd trois fois de suite. Dans le chat : « uninstall, noob » – sa manette claque sur la table."
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1 ist eine echte Wahl: Samis Plan oder ein eigener – die Beispielzeile zeigt, wie es geht. Bei Aufgabe 2 sucht das Kind ein Signal aus, das wirklich zu ihm passt. Dann den Knopf ausmalen; den Auftrag liest die Fachkraft vor („Halb geklappt zählt auch“), zum Schluss die letzte Zeile wie eine Sprachnachricht.",
+     "text": "Aufgabe 1 ist eine echte Wahl: Samis Plan oder ein eigener – die Beispielzeile zeigt, wie es geht. Dann den Knopf ausmalen; den Auftrag liest die Fachkraft vor („Halb geklappt zählt auch“), zum Schluss die letzte Zeile wie eine Sprachnachricht.",
      "sagen": [
       "Welches Signal würde bei dir wirklich funktionieren – oder bei Sami?",
       "Und was kommt danach, worauf man sich freut?"
@@ -3587,7 +3453,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, sagt das Kind den Plan, und die Fachkraft schreibt ab. Ein Plan für Sami reicht. Wann und wie lange das Kind spielt, wird nicht gefragt."
     },
     "fr": {
-     "text": "L’exercice 1 est un vrai choix : le plan de Sami ou le sien – la ligne d’exemple montre comment faire. À l’exercice 2, l’enfant choisit un signal qui lui va vraiment. Puis colorier le bouton ; l’adulte lit la mission (« À moitié, ça compte aussi »), pour finir la dernière ligne comme un message vocal.",
+     "text": "L’exercice 1 est un vrai choix : le plan de Sami ou le sien – la ligne d’exemple montre comment faire. Puis colorier le bouton ; l’adulte lit la mission (« À moitié, ça compte aussi »), pour finir la dernière ligne comme un message vocal.",
      "sagen": [
       "Quel signal marcherait vraiment pour toi – ou pour Sami ?",
       "Et qu’est-ce qui vient après, qui fait plaisir ?"
@@ -3622,7 +3488,7 @@
      "Uhr oder Handy-Wecker für das Signal",
      "Karte „Nur für dich“ neben dich legen"
     ],
-    "aufbau": "0′ Samis Abend – „20:30 geplant, 23:12 noch dran.“\n1′ Turm, Runde 1 – „Stopp, alles liegen lassen!“\n3′ Turm, Runde 2 – „Noch zwei Minuten … Speicherpunkt.“\n5′ Profi-Frage – „Wo speicherst du? Und online?“\n7′ Samis Stopp-Plan – „Wenn …, dann …“\n10′ Wahl, Merksatz\n11′ Blatt (6 Min.): Aufgabe 1–2, Rest freiwillig\nMuss: beide Runden, Plan. Wird es knapp: Runde 2 kürzer.",
+    "aufbau": "0′ Samis Abend – „20:30 geplant, 23:12 noch dran.“\n1′ Turm, Runde 1 – „Stopp, alles liegen lassen!“\n3′ Turm, Runde 2 – „Noch zwei Minuten … Speicherpunkt.“\n5′ Profi-Frage – „Wo speicherst du? Und online?“\n7′ Samis Stopp-Plan – „Wenn …, dann …“\n10′ Wahl, Merksatz\n11′ Blatt (4 Min.): Aufgabe 1 + Knopf, Rest ist Bonus-Level\n15′ Ende\nMuss: beide Runden, Plan. Wird es knapp: Runde 2 kürzer.",
     "karten": [
      {
       "titel": "Samis Abend (zum Vorlesen)",
@@ -3690,7 +3556,7 @@
      "Montre ou réveil du portable pour le signal",
      "Garder la carte « Pour l’adulte » à côté de soi"
     ],
-    "aufbau": "0′ Le soir de Sami – « Prévu 20 h 30, à 23 h 12 il joue encore. »\n1′ Tour 1 – « Stop, on laisse tout ! »\n3′ Tour 2 – « Encore deux minutes… »\n5′ Question au pro – « Où sauvegardes-tu ? Et en ligne ? »\n7′ Plan stop de Sami – « Si…, alors… »\n10′ Choix, phrase-clé\n11′ Fiche (6 min) : exercices 1–2, le reste en option\nIndispensable : deux tours, plan. Si le temps manque : tour 2 plus court.",
+    "aufbau": "0′ Le soir de Sami – « Prévu 20 h 30, à 23 h 12 il joue encore. »\n1′ Tour 1 – « Stop, on laisse tout ! »\n3′ Tour 2 – « Encore deux minutes… »\n5′ Question au pro – « Où sauvegardes-tu ? Et en ligne ? »\n7′ Plan stop de Sami – « Si…, alors… »\n10′ Choix, phrase-clé\n11′ Fiche (4 min) : exercice 1 + bouton, reste en bonus\n15′ Fin\nIndispensable : deux tours, plan. Si le temps manque : tour 2 plus court.",
     "karten": [
      {
       "titel": "Le soir de Sami (à lire à voix haute)",
@@ -3800,9 +3666,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -3926,24 +3792,6 @@
     {
      "art": "aufgabe",
      "symbole": [
-      "einkreisen"
-     ],
-     "text": "Welches Signal würde bei dir wirklich klappen? Kreuz an oder schreib ein eigenes."
-    },
-    {
-     "art": "ankreuzen",
-     "spalten": 2,
-     "frei": 0,
-     "items": [
-      "Wecker vorher",
-      "Sanduhr",
-      "Jemand sagt Bescheid",
-      "Ende des Matches"
-     ]
-    },
-    {
-     "art": "aufgabe",
-     "symbole": [
       "malen"
      ],
      "text": "Mal den Knopf von heute aus."
@@ -3991,12 +3839,12 @@
      "symbole": [
       "nachdenken"
      ],
-     "text": "Wenn du magst, bis zum nächsten Mal: Probier einen Stopp-Plan einmal aus. Halb geklappt zählt auch."
+     "text": "Bonus-Level: Probier einen Stopp-Plan einmal aus. Halb geklappt zählt auch."
     },
     {
      "art": "text",
      "klein": true,
-     "text": "Übrigens: Beim Training am Mittwoch verliert Lea dreimal hintereinander. Im Chat steht „uninstall, noob“ – dann knallt ihr Controller auf den Tisch."
+     "text": "Übrigens: Lea verliert dreimal hintereinander. Im Chat: „uninstall, noob“ – ihr Controller knallt auf den Tisch."
     }
    ],
    "fr": [
@@ -4077,24 +3925,6 @@
     {
      "art": "aufgabe",
      "symbole": [
-      "einkreisen"
-     ],
-     "text": "Quel signal marcherait vraiment pour toi ? Coche ou écris le tien."
-    },
-    {
-     "art": "ankreuzen",
-     "spalten": 2,
-     "frei": 0,
-     "items": [
-      "Réveil avant",
-      "Sablier",
-      "Quelqu’un prévient",
-      "Fin du match"
-     ]
-    },
-    {
-     "art": "aufgabe",
-     "symbole": [
       "malen"
      ],
      "text": "Colorie le bouton d’aujourd’hui."
@@ -4142,17 +3972,17 @@
      "symbole": [
       "nachdenken"
      ],
-     "text": "Si tu veux, d’ici la prochaine fois : essaie une fois un plan stop. À moitié, ça compte aussi."
+     "text": "Niveau bonus : essaie une fois un plan stop. À moitié, ça compte aussi."
     },
     {
      "art": "text",
      "klein": true,
-     "text": "Au fait : à l’entraînement de mercredi, Lea perd trois fois de suite. Dans le chat, on lit « uninstall, noob » – puis sa manette claque sur la table."
+     "text": "Au fait : Lea perd trois fois de suite. Dans le chat : « uninstall, noob » – sa manette claque sur la table."
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Bei Aufgabe 1 kreuzt das Kind Samis Speicherpunkt und Satz an und sagt den Plan einmal laut als Wenn-dann-Satz. Bei Aufgabe 2 kreuzt es ein Signal an, das zu ihm passt. Dann den Knopf ausmalen; zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor.",
+     "text": "Bei Aufgabe 1 kreuzt das Kind Samis Speicherpunkt und Satz an und sagt den Plan einmal laut als Wenn-dann-Satz. Dann den Knopf ausmalen; zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor.",
      "sagen": [
       "Sag den ganzen Plan einmal: Wenn …, dann …",
       "Welches Signal würde bei dir klappen?"
@@ -4160,7 +3990,7 @@
      "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alles vor, und das Kind zeigt. Wann und wie lange das Kind spielt, wird nicht gefragt."
     },
     "fr": {
-     "text": "À l’exercice 1, l’enfant coche le point de sauvegarde et la phrase de Sami, puis dit le plan une fois à voix haute en si… alors. À l’exercice 2, il ou elle coche un signal qui lui va. Puis colorier le bouton ; pour finir, l’adulte lit la dernière ligne comme un message vocal.",
+     "text": "À l’exercice 1, l’enfant coche le point de sauvegarde et la phrase de Sami, puis dit le plan une fois à voix haute en si… alors. Puis colorier le bouton ; pour finir, l’adulte lit la dernière ligne comme un message vocal.",
      "sagen": [
       "Dis tout le plan une fois : si…, alors…",
       "Quel signal marcherait pour toi ?"
@@ -4195,7 +4025,7 @@
      "Uhr oder Handy-Wecker für das Signal",
      "Karte „Nur für dich“ neben dich legen"
     ],
-    "aufbau": "0′ Samis Abend – „20:30 geplant, 23:12 noch dran.“\n1′ Turm, Runde 1 – „Stopp, alles liegen lassen!“\n3′ Turm, Runde 2 – „Noch zwei Minuten … Speicherpunkt.“\n5′ Profi-Frage – „Wo speicherst du? Und online?“\n7′ Samis Stopp-Plan – „Wenn …, dann …“\n10′ Wahl, Merksatz\n11′ Blatt (6 Min.): Aufgabe 1–2, Rest freiwillig\nMuss: beide Runden, Plan. Wird es knapp: Runde 2 kürzer.",
+    "aufbau": "0′ Samis Abend – „20:30 geplant, 23:12 noch dran.“\n1′ Turm, Runde 1 – „Stopp, alles liegen lassen!“\n3′ Turm, Runde 2 – „Noch zwei Minuten … Speicherpunkt.“\n5′ Profi-Frage – „Wo speicherst du? Und online?“\n7′ Samis Stopp-Plan – „Wenn …, dann …“\n10′ Wahl, Merksatz\n11′ Blatt (4 Min.): Aufgabe 1 + Knopf, Rest ist Bonus-Level\n15′ Ende\nMuss: beide Runden, Plan. Wird es knapp: Runde 2 kürzer.",
     "karten": [
      {
       "titel": "Samis Abend (zum Vorlesen)",
@@ -4263,7 +4093,7 @@
      "Montre ou réveil du portable pour le signal",
      "Garder la carte « Pour l’adulte » à côté de soi"
     ],
-    "aufbau": "0′ Le soir de Sami – « Prévu 20 h 30, à 23 h 12 il joue encore. »\n1′ Tour 1 – « Stop, on laisse tout ! »\n3′ Tour 2 – « Encore deux minutes… »\n5′ Question au pro – « Où sauvegardes-tu ? Et en ligne ? »\n7′ Plan stop de Sami – « Si…, alors… »\n10′ Choix, phrase-clé\n11′ Fiche (6 min) : exercices 1–2, le reste en option\nIndispensable : deux tours, plan. Si le temps manque : tour 2 plus court.",
+    "aufbau": "0′ Le soir de Sami – « Prévu 20 h 30, à 23 h 12 il joue encore. »\n1′ Tour 1 – « Stop, on laisse tout ! »\n3′ Tour 2 – « Encore deux minutes… »\n5′ Question au pro – « Où sauvegardes-tu ? Et en ligne ? »\n7′ Plan stop de Sami – « Si…, alors… »\n10′ Choix, phrase-clé\n11′ Fiche (4 min) : exercice 1 + bouton, reste en bonus\n15′ Fin\nIndispensable : deux tours, plan. Si le temps manque : tour 2 plus court.",
     "karten": [
      {
       "titel": "Le soir de Sami (à lire à voix haute)",
@@ -4365,9 +4195,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -4438,7 +4268,7 @@
      "Ein weicher Ball (oder ein Papierknäuel)",
      "Etwas Platz; im kleinen Raum über den Tisch rollen"
     ],
-    "aufbau": "0′ Samis Abend – „20:30 geplant, 23:12 noch dran.“\n1′ Runde 1 – „Stopp!“ mitten im Ballwechsel\n3′ Runde 2 – „Noch fünf Würfe.“\n5′ Vergleich, Profi-Frage – „Und online?“\n7′ Plan mit dem Ball – „Signal … Speicherpunkt …“\n10′ Rollentausch, Merksatz\n11′ Blatt (6 Min.)\nMuss: beide Runden, Plan. Wird es knapp: Runde 2 mit drei Würfen.",
+    "aufbau": "0′ Samis Abend – „20:30 geplant, 23:12 noch dran.“\n1′ Runde 1 – „Stopp!“ mitten im Ballwechsel\n3′ Runde 2 – „Noch fünf Würfe.“\n5′ Vergleich, Profi-Frage – „Und online?“\n7′ Plan mit dem Ball – „Signal … Speicherpunkt …“\n10′ Rollentausch, Merksatz\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: beide Runden, Plan. Wird es knapp: Runde 2 mit drei Würfen.",
     "karten": [
      {
       "titel": "Samis Abend (zum Vorlesen)",
@@ -4505,7 +4335,7 @@
      "Un ballon mou (ou une boule de papier)",
      "Un peu de place ; dans une petite pièce, faire rouler sur la table"
     ],
-    "aufbau": "0′ Le soir de Sami – « Prévu 20 h 30, à 23 h 12 il joue encore. »\n1′ Tour 1 – « Stop ! » en pleine série\n3′ Tour 2 – « Encore cinq passes. »\n5′ Comparer, question au pro – « Et en ligne ? »\n7′ Plan avec le ballon – « Signal… sauvegarde… »\n10′ On échange, phrase-clé\n11′ Fiche (6 min)\nIndispensable : deux tours, plan. Si le temps manque : tour 2 en trois passes.",
+    "aufbau": "0′ Le soir de Sami – « Prévu 20 h 30, à 23 h 12 il joue encore. »\n1′ Tour 1 – « Stop ! » en pleine série\n3′ Tour 2 – « Encore cinq passes. »\n5′ Comparer, question au pro – « Et en ligne ? »\n7′ Plan avec le ballon – « Signal… sauvegarde… »\n10′ On échange, phrase-clé\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : deux tours, plan. Si le temps manque : tour 2 en trois passes.",
     "karten": [
      {
       "titel": "Le soir de Sami (à lire à voix haute)",
@@ -4608,9 +4438,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -4682,7 +4512,7 @@
      "Ein Blatt zweimal falten (vier Felder), Buntstifte",
      "Karte „Nur für dich“ neben dich legen"
     ],
-    "aufbau": "0′ Samis Abend vorlesen\n2′ Wo kippt es? – „Hier hätte ein Signal geholfen.“\n4′ Profi-Frage – „Wo speicherst du? Und online?“\n6′ Comic – „Signal, Speicherpunkt, Satz, danach.“\n10′ Regie-Tausch, Merksatz\n11′ Blatt (6 Min.)\nMuss: Comic. Kann: Regie-Tausch. Wird es knapp: zwei Felder.",
+    "aufbau": "0′ Samis Abend vorlesen\n2′ Wo kippt es? – „Hier hätte ein Signal geholfen.“\n4′ Profi-Frage – „Wo speicherst du? Und online?“\n6′ Comic – „Signal, Speicherpunkt, Satz, danach.“\n10′ Regie-Tausch, Merksatz\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: Comic. Kann: Regie-Tausch. Wird es knapp: zwei Felder.",
     "karten": [
      {
       "titel": "Samis Abend (zum Vorlesen)",
@@ -4749,7 +4579,7 @@
      "Plier une feuille deux fois (quatre cases), crayons de couleur",
      "Garder la carte « Pour l’adulte » à côté de soi"
     ],
-    "aufbau": "0′ Lire le soir de Sami\n2′ Où ça déraille ? – « Ici, un signal aurait aidé. »\n4′ Question au pro – « Où sauvegardes-tu ? Et en ligne ? »\n6′ BD – « Signal, sauvegarde, phrase, après. »\n10′ On échange la mise en scène, phrase-clé\n11′ Fiche (6 min)\nIndispensable : BD. En option : échange. Si le temps manque : deux cases.",
+    "aufbau": "0′ Lire le soir de Sami\n2′ Où ça déraille ? – « Ici, un signal aurait aidé. »\n4′ Question au pro – « Où sauvegardes-tu ? Et en ligne ? »\n6′ BD – « Signal, sauvegarde, phrase, après. »\n10′ On échange la mise en scène, phrase-clé\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : BD. En option : échange. Si le temps manque : deux cases.",
     "karten": [
      {
       "titel": "Le soir de Sami (à lire à voix haute)",
@@ -4819,12 +4649,12 @@
    "titel": "Einzelkurs Das Pause-Menü"
   },
   "titel": "Knopf 4: Respawn – fair bleiben, wenn es heiß wird",
-  "text": "Drei Niederlagen hintereinander – Leas Controller knallte auf den Tisch. Die Fachkraft fragt den Profi: „Was heißt ‚tilt‘ – und was machen Profis dagegen?“ Sie liest Leas vier Sprachnachrichten vor; das Kind hebt die Hand wie ein Thermometer (chill, genervt, tilt, Rage) und nennt ein Zeichen. Dann zeigt sie den Reset, den auch E-Sport-Teams kennen: Hände weg, dreimal langsam ausatmen, eine Ansage – „GG“ oder „Ich mach kurz Pause“. Als Coach passt das Kind ihn an. Vor der Szene zeigt sie kurz die rote Karte: Drohung, Fotos oder ein netter Fremder mit Geschenk und Geheimnis – dann kein Reset, sondern Hilfe. Dann eine Szene mit Pause-Karte: Die Fachkraft liest „uninstall, noob“, das Kind antwortet als Lea oder Teamkollegin; danach „Stark war …“. Merksatz: „Respawn statt Rage: erst runterkommen, dann weiterspielen.“",
+  "text": "Drei Niederlagen hintereinander – Leas Controller knallte auf den Tisch. Die Fachkraft fragt den Profi: „Was heißt ‚tilt‘ – und was machen Profis dagegen?“ Sie liest Leas vier Sprachnachrichten vor; das Kind stellt sich auf das Tilt-Meter am Boden (chill, genervt, tilt, Rage) und nennt ein Zeichen. Dann zeigt sie den Reset, den auch E-Sport-Teams kennen: Hände weg, dreimal langsam ausatmen, eine Ansage – „GG“ oder „Ich mach kurz Pause“. Als Coach passt das Kind ihn an. Vor der Szene zeigt sie kurz die rote Karte: Drohung, Fotos oder ein netter Fremder mit Geschenk und Geheimnis – dann kein Reset, sondern Hilfe. Dann eine Szene mit Pause-Karte: Die Fachkraft liest „uninstall, noob“, das Kind antwortet als Lea oder Teamkollegin; danach „Stark war …“. Merksatz: „Respawn statt Rage: erst runterkommen, dann weiterspielen.“",
   "sagen": [
    "Was heißt ‚tilt‘ – und was machen Profis dagegen?",
-   "Vier Sprachnachrichten von Lea. Heb die Hand so hoch, wie heiß es gerade ist: chill, genervt, tilt oder Rage?",
+   "Vier Sprachnachrichten von Lea. Stell dich auf die Stufe, auf der sie gerade ist – und sag mir ein Zeichen.",
    "Reset, ich mach’s einmal vor: Hände weg. Ausatmen, ausatmen, ausatmen. „GG – ich mach kurz Pause.“ Was würdest du als Coach ändern?",
-   "Ich lese den gemeinen Satz, du antwortest als Lea oder als ihre Teamkollegin. Tipp auf die Pause-Karte, und wir stoppen. Danach: Rolle aus, Jacke aus."
+   "Ich lese den gemeinen Satz, du antwortest als Lea oder als ihre Teamkollegin. Tipp auf die Pause-Karte, und wir stoppen. Danach Hände ausschütteln: Rolle aus, du bist wieder du."
   ],
   "wennEsKippt": "Wird es zu heiß, liegt die Pause-Karte bereit: antippen, Rolle ablegen, kurz etwas anderes. Statt zu sprechen, kann das Kind auf eine Ansage auf dem Bogen zeigen; eine Szene reicht. Kommt eigener Ärger beim Spielen zur Sprache, bleibt die Fachkraft beim Werkzeug („Das kennen fast alle Gamer. Was hätte da geholfen?“) und fragt nicht nach Einzelheiten.",
   "rolle": [
@@ -4860,9 +4690,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -4939,28 +4769,9 @@
     {
      "art": "aufgabe",
      "symbole": [
-      "schreiben",
-      "atmen"
+      "schreiben"
      ],
-     "text": "Leas Thermometer: Schreib zu jeder Stufe ein Zeichen. Darunter: der Reset."
-    },
-    {
-     "art": "thermometer",
-     "linien": 1,
-     "stufen": [
-      {
-       "titel": "Chill"
-      },
-      {
-       "titel": "Genervt"
-      },
-      {
-       "titel": "Tilt"
-      },
-      {
-       "titel": "Rage"
-      }
-     ]
+     "text": "Dein Reset: Was hast du als Coach geändert? Schreib es in den passenden Schritt."
     },
     {
      "art": "schritte",
@@ -4983,7 +4794,7 @@
      "symbole": [
       "schreiben"
      ],
-     "text": "Deine Ansage nach einer Niederlage – für Lea oder für dich. Wenn du magst, probier sie bis zum nächsten Mal aus."
+     "text": "Deine Ansage nach einer Niederlage – für Lea oder für dich."
     },
     {
      "art": "satzanfaenge",
@@ -4996,7 +4807,7 @@
      "art": "info",
      "symbol": "achtung",
      "titel": "Rote Karte: sofort Hilfe holen",
-     "text": "Drohung, jemand will Fotos – oder ein netter Fremder schenkt dir etwas und will einen geheimen Chat? Das ist rot. Nicht antworten, nichts schicken, nichts zahlen. Bildschirmfoto nur vom Chat – Nacktbilder nie speichern oder weiterleiten. Sofort einer Vertrauensperson zeigen. BEE SECURE 8002 1234 (tagsüber) · Kanner-Jugendtelefon (KJT) 116 111 (auch abends) · Gefahr: 113, 112."
+     "text": "Drohung, jemand will Fotos, ein Fremder schenkt dir etwas und will ein Geheimnis? Das ist rot: nicht antworten, nichts schicken. Bildschirmfoto nur vom Chat, nie von Bildern. Sofort einer Vertrauensperson zeigen. BEE SECURE 8002 1234 · KJT 116 111 · Gefahr: 113, 112."
     },
     {
      "art": "aufgabe",
@@ -5046,7 +4857,7 @@
     {
      "art": "text",
      "klein": true,
-     "text": "Übrigens: Bei Sami gilt jetzt eine neue Regel – Konsole nur noch am Wochenende. Und Carla will für den Gaming-Mëttwoch eine Abmachung."
+     "text": "Übrigens: Carla will für den Gaming-Mëttwoch eine Abmachung."
     }
    ],
    "fr": [
@@ -5080,28 +4891,9 @@
     {
      "art": "aufgabe",
      "symbole": [
-      "schreiben",
-      "atmen"
+      "schreiben"
      ],
-     "text": "Le thermomètre de Lea : note un signe pour chaque niveau. En dessous : le reset."
-    },
-    {
-     "art": "thermometer",
-     "linien": 1,
-     "stufen": [
-      {
-       "titel": "Chill"
-      },
-      {
-       "titel": "Énervée"
-      },
-      {
-       "titel": "Tilt"
-      },
-      {
-       "titel": "Rage"
-      }
-     ]
+     "text": "Ton reset : qu’est-ce que tu as changé en coach ? Écris-le dans la bonne étape."
     },
     {
      "art": "schritte",
@@ -5124,7 +4916,7 @@
      "symbole": [
       "schreiben"
      ],
-     "text": "Ton annonce après une défaite – pour Lea ou pour toi. Si tu veux, essaie-la d’ici la prochaine fois."
+     "text": "Ton annonce après une défaite – pour Lea ou pour toi."
     },
     {
      "art": "satzanfaenge",
@@ -5137,7 +4929,7 @@
      "art": "info",
      "symbol": "achtung",
      "titel": "Carton rouge : chercher de l’aide tout de suite",
-     "text": "Une menace, quelqu’un veut des photos – ou un inconnu gentil t’offre un cadeau et veut un chat secret ? C’est rouge. Ne réponds pas, n’envoie rien, ne paie rien. Capture d’écran du chat seulement – photos dénudées jamais gardées ni transférées. Montre-le tout de suite à un adulte de confiance. BEE SECURE 8002 1234 (en journée) · Kanner-Jugendtelefon (KJT) 116 111 (aussi le soir) · danger : 113, 112."
+     "text": "Menace, quelqu’un veut des photos, un inconnu t’offre un cadeau et veut un secret ? C’est rouge : ne réponds pas, n’envoie rien. Capture d’écran du chat seulement, jamais d’images. Montre-le tout de suite à un adulte de confiance. BEE SECURE 8002 1234 · KJT 116 111 · danger : 113, 112."
     },
     {
      "art": "aufgabe",
@@ -5187,36 +4979,38 @@
     {
      "art": "text",
      "klein": true,
-     "text": "Au fait : chez Sami, nouvelle règle – console seulement le week-end. Et Carla veut un accord pour le Gaming-Mëttwoch."
+     "text": "Au fait : Carla veut un accord pour le Gaming-Mëttwoch."
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1: Das Kind schreibt zu jeder Stufe ein Zeichen; den Reset darunter machen beide einmal mit den Händen. Aufgabe 2 ist eine echte Wahl: eine Ansage für Lea oder für sich. Die rote Karte liest die Fachkraft immer vor. Fragt das Blatt nach dem Kind selbst, darf es für Lea antworten. Zum Schluss den Knopf ausmalen und die letzte Zeile wie eine Sprachnachricht vorlesen.",
+     "text": "Aufgabe 1: Das Kind schreibt in die Schrittkette, was es als Coach am Reset geändert hat – ein Wort reicht. Aufgabe 2 ist eine echte Wahl: eine Ansage für Lea oder für sich. Die rote Karte liest die Fachkraft vor. Fragt das Blatt nach dem Kind selbst, darf es für Lea antworten. Zum Schluss den Knopf ausmalen und die letzte Zeile wie eine Sprachnachricht vorlesen.",
      "sagen": [
-      "Ab welcher Stufe braucht Lea den Reset?",
-      "Was machst du, wenn dir ein Fremder Kristalle schenkt und privat schreiben will?"
+      "Was hast du als Coach am Reset geändert?",
+      "Was machst du, wenn dir ein Fremder Kristalle schenkt und privat schreiben will?",
+      "Wenn du magst, probier deine Ansage bis zum nächsten Mal aus."
      ],
-     "wennEsKippt": "Fällt Schreiben schwer, reicht je Stufe ein Wort. Nach eigenen Erlebnissen im Chat wird nicht gefragt; wer davon erzählt, bekommt die Sätze der Karte „Nur für dich“."
+     "wennEsKippt": "Fällt Schreiben schwer, reicht ein Wort, oder die Fachkraft schreibt mit. Nach eigenen Erlebnissen im Chat wird nicht gefragt; wer davon erzählt, bekommt die Sätze der Karte „Nur für dich“."
     },
     "fr": {
-     "text": "Exercice 1 : l’enfant note un signe pour chaque niveau ; le reset en dessous se fait une fois avec les mains, à deux. L’exercice 2 est un vrai choix : une annonce pour Lea ou pour soi. L’adulte lit toujours le carton rouge. Si la fiche demande quelque chose sur l’enfant, il ou elle peut répondre pour Lea. Pour finir, colorier le bouton et lire la dernière ligne comme un message vocal.",
+     "text": "Exercice 1 : l’enfant écrit dans la chaîne ce qu’il ou elle a changé au reset en coach – un mot suffit. L’exercice 2 est un vrai choix : une annonce pour Lea ou pour soi. L’adulte lit le carton rouge. Si la fiche demande quelque chose sur l’enfant, il ou elle peut répondre pour Lea. Pour finir, colorier le bouton et lire la dernière ligne comme un message vocal.",
      "sagen": [
-      "À partir de quel niveau Lea a-t-elle besoin du reset ?",
-      "Que fais-tu si un inconnu t’offre des cristaux et veut t’écrire en privé ?"
+      "Qu’as-tu changé au reset, en coach ?",
+      "Que fais-tu si un inconnu t’offre des cristaux et veut t’écrire en privé ?",
+      "Si tu veux, essaie ton annonce d’ici la prochaine fois."
      ],
-     "wennEsKippt": "Si écrire est difficile, un mot par niveau suffit. On ne demande rien sur le vécu de l’enfant dans les chats ; s’il ou elle en parle, l’adulte utilise les phrases de la carte « Pour l’adulte »."
+     "wennEsKippt": "Si écrire est difficile, un mot suffit, ou l’adulte écrit. On ne demande rien sur le vécu de l’enfant dans les chats ; s’il ou elle en parle, l’adulte utilise les phrases de la carte « Pour l’adulte »."
     }
    }
   },
   "fr": {
    "titel": "Bouton 4 : respawn – rester fair-play quand ça chauffe",
-   "text": "Trois défaites de suite – la manette de Lea a claqué sur la table. L’adulte demande au pro : « Tilt, ça veut dire quoi – et que font les pros contre ça ? » L’adulte lit les quatre messages vocaux de Lea ; l’enfant lève la main comme un thermomètre (chill, énervée, tilt, rage) et nomme un signe. Puis l’adulte montre le reset que connaissent aussi les équipes d’e-sport : lâcher la manette, souffler trois fois lentement, une annonce – « GG » ou « Je fais une petite pause ». L’enfant est le coach et adapte le reset. Avant la scène, l’adulte montre vite le carton rouge : menace, photos ou inconnu gentil avec cadeau et secret – alors pas de reset, mais de l’aide. Puis une scène avec carte pause : l’adulte lit « uninstall, noob », l’enfant répond comme Lea ou sa coéquipière ; ensuite « C’était fort, ce… ». Phrase-clé : « Respawn plutôt que rage : d’abord redescendre, puis rejouer. »",
+   "text": "Trois défaites de suite – la manette de Lea a claqué sur la table. L’adulte demande au pro : « Tilt, ça veut dire quoi – et que font les pros contre ça ? » L’adulte lit les quatre messages vocaux de Lea ; l’enfant se place sur le thermomètre posé au sol (chill, énervée, tilt, rage) et nomme un signe. Puis l’adulte montre le reset que connaissent aussi les équipes d’e-sport : lâcher la manette, souffler trois fois lentement, une annonce – « GG » ou « Je fais une petite pause ». L’enfant est le coach et adapte le reset. Avant la scène, l’adulte montre vite le carton rouge : menace, photos ou inconnu gentil avec cadeau et secret – alors pas de reset, mais de l’aide. Puis une scène avec carte pause : l’adulte lit « uninstall, noob », l’enfant répond comme Lea ou sa coéquipière ; ensuite « C’était fort, ce… ». Phrase-clé : « Respawn plutôt que rage : d’abord redescendre, puis rejouer. »",
    "sagen": [
     "Tilt, ça veut dire quoi – et que font les pros contre ça ?",
-    "Quatre messages vocaux de Lea. Lève la main aussi haut que ça chauffe : chill, énervée, tilt ou rage ?",
+    "Quatre messages vocaux de Lea. Place-toi sur le niveau où elle en est – et dis-moi un signe.",
     "Reset, je te montre une fois : je lâche la manette. Je souffle, je souffle, je souffle. « GG – je fais une petite pause. » Qu’est-ce que tu changerais, en coach ?",
-    "Je lis la phrase méchante, tu réponds comme Lea ou comme sa coéquipière. Touche la carte pause, et on arrête. Après : on enlève le rôle comme une veste."
+    "Je lis la phrase méchante, tu réponds comme Lea ou comme sa coéquipière. Touche la carte pause, et on arrête. Après, on secoue les mains : rôle enlevé, tu redeviens toi."
    ],
    "wennEsKippt": "Si ça chauffe trop, la carte pause est prête : la toucher, enlever le rôle, faire autre chose un instant. Au lieu de parler, l’enfant peut montrer une annonce sur la planche ; une scène suffit. Si l’enfant parle de ses propres coups de rage, l’adulte revient à l’outil (« Presque tous les gamers connaissent ça. Qu’est-ce qui aurait aidé ? ») sans demander de détails.",
    "kurz": "Thermomètre de Lea · reset en coach · une scène avec carte pause"
@@ -5228,14 +5022,15 @@
   },
   "hilfen": {
    "de": {
-    "haken": "„Weißt du, was ‚tilt‘ heißt – und was Profis dagegen machen?“ Fast jedes Kind weiß es und erklärt es der Fachkraft. Dann vier Sprachnachrichten von Lea: Die Hand geht hoch wie ein Thermometer.",
+    "haken": "„Weißt du, was ‚tilt‘ heißt – und was Profis dagegen machen?“ Fast jedes Kind weiß es und erklärt es der Fachkraft. Dann vier Sprachnachrichten von Lea – und das Kind stellt sich auf das Tilt-Meter am Boden.",
     "vorbereitung": [
      "Schnellstart (2 Min.): Blatt drucken. Karten nicht schneiden – sie bleiben auf dem Bogen, du zeigst mit dem Finger.",
+     "Bodenkarten: je ein A4-Blatt mit dickem Stift – Chill · Genervt · Tilt · Rage – als Reihe auf den Boden",
      "Pause-Karte (ein Blatt mit dem Pause-Zeichen) und rote Karte (rotes Blatt) sichtbar hinlegen",
      "Karte „Nur für dich“ lesen: Sicherheit, Wenn Eigenes kommt",
      "Einen Namen notieren: Wer im Haus ist heute für Schutz ansprechbar?"
     ],
-    "aufbau": "0′ Profi-Frage – „Was heißt ‚tilt‘?“\n1′ Leas Nachrichten – „Hand hoch: chill … Rage?“\n4′ Reset vormachen – „Hände weg. Ausatmen ×3. ‚GG.‘ Was änderst du?“\n6′ Rote Karte (30 Sek.) – „Drohung, Foto, Geschenk + Geheimnis: Hilfe.“\n7′ Szene mit Pause-Karte – „Du bist Lea.“\n10′ „Stark war …“, Rolle aus, Merksatz\n11′ Blatt (6 Min.)\nMuss: Reset, rote Karte, Szene.",
+    "aufbau": "0′ Profi-Frage – „Was heißt ‚tilt‘?“\n1′ Tilt-Meter am Boden – „Stell dich auf Leas Stufe.“\n4′ Reset – „Hände weg. Ausatmen ×3. ‚GG.‘ Was änderst du als Coach?“\n6′ Rote Karte (1 Min.) – „Das ist rot: kein Reset, Hilfe.“\n7′ Szene, Pause-Karte – „Du bist Lea.“\n10′ „Stark war …“, Hände ausschütteln\n11′ Blatt (4 Min.): Aufgabe 1 + Knopf, Rest ist Bonus-Level\n15′ Ende\nMuss: Reset, rote Karte, Szene.",
     "karten": [
      {
       "titel": "Leas Sprachnachrichten (zum Vorlesen, eine heißer als die andere)",
@@ -5274,7 +5069,7 @@
       "titel": "Nur für dich: Sicherheit und Regie",
       "karten": [
        "Die gemeinen Sätze liest nur die Fachkraft – nie das Kind. Die rote Karte kommt nie ins Rollenspiel, nur in der dritten Person: „Jemand schreibt Lea: …“",
-       "Pause-Karte sichtbar; nach der Szene: „Rolle aus, Jacke aus – du bist wieder du.“",
+       "Pause-Karte sichtbar; nach der Szene Hände ausschütteln: „Rolle aus, du bist wieder du.“",
        "Rage ist Frust über blockiertes Können, kein schlechter Charakter. Keine Katharsis-Übungen: runter geht es über Abstand und Atmen.",
        "Zeichen zum Nachfragen: Stimme lauter, Hand drückt fest, schneller atmen, „Das Spiel ist schuld“, sofort noch eine Runde.",
        "Wenn Eigenes kommt: danken, keine Einzelheiten. Kurz klären: Passiert es gerade noch? Bedroht, nach Fotos gefragt, Geschenke von Fremden?",
@@ -5286,7 +5081,7 @@
     ],
     "leichter": "Nur Nachricht 1 und 3; das Kind zeigt auf eine Ansage, statt zu sprechen. Den Reset macht die Fachkraft mit, Zug für Zug.",
     "schwerer": "Teamkollegin-Rolle: Das Kind hilft Lea im Chat, ohne selbst gemein zu werden. Dazu: Was ist bei „gg ez“ anders als bei „uninstall“ – und wann wird Trash-Talk toxisch?",
-    "gruppe": "4–6 im Halbkreis, Pause-Karte und rote Karte in der Mitte. Bei Leas Nachrichten heben alle die Hand; eine Person nennt ein Zeichen. Den Reset machen alle gleichzeitig. Szene: Die Fachkraft liest den Chat-Satz, zwei Freiwillige antworten als Lea und Teamkollegin, die anderen sind Coaches. Niemand spielt den Absender. Danach Hände ausschütteln: „Rolle aus.“",
+    "gruppe": "4–6, Tilt-Meter am Boden, Pause- und rote Karte in der Mitte. Bei Leas Nachrichten stellen sich alle auf ihre Stufe, eine Person nennt ein Zeichen. Reset alle gleichzeitig. Szene: Die Fachkraft liest, zwei Freiwillige antworten als Lea und Teamkollegin. Die Coaches stellen sich danach auf Leas neue Stufe – ist sie runtergekommen, war es ein guter Reset. Danach Hände ausschütteln: „Rolle aus.“",
     "beobachten": [
      "erkennt an Leas Sätzen, ab wann es kippt, und nennt ein Zeichen",
      "macht den Reset vor oder nennt alle drei Züge",
@@ -5309,14 +5104,15 @@
     ]
    },
    "fr": {
-    "haken": "« Tu sais ce que veut dire “tilt” – et ce que font les pros contre ça ? » Presque chaque enfant le sait et l’explique à l’adulte. Puis quatre messages vocaux de Lea : la main monte comme un thermomètre.",
+    "haken": "« Tu sais ce que veut dire “tilt” – et ce que font les pros contre ça ? » Presque chaque enfant le sait et l’explique à l’adulte. Puis quatre messages vocaux de Lea – et l’enfant se place sur le thermomètre au sol.",
     "vorbereitung": [
      "Départ rapide (2 min) : imprimer la fiche. Ne pas découper – les cartes restent sur la planche, tu montres du doigt.",
+     "Cartes du sol : une feuille A4 au gros feutre – chill · énervée · tilt · rage – en ligne au sol",
      "Carte pause (une feuille avec le symbole pause) et carton rouge (feuille rouge) bien visibles",
      "Lire la carte « Pour l’adulte » : sécurité, si du vécu arrive",
      "Noter un nom : qui dans la structure est joignable aujourd’hui pour la protection ?"
     ],
-    "aufbau": "0′ Question au pro – « Tilt, c’est quoi ? »\n1′ Messages de Lea – « Main levée : chill… rage ? »\n4′ Reset – « Je lâche. Je souffle ×3. GG. Tu changes quoi ? »\n6′ Carton rouge (30 s) – « Menace, photo, cadeau + secret : aide. »\n7′ Scène, carte pause – « Tu es Lea. »\n10′ « C’était fort… », rôle enlevé, phrase-clé\n11′ Fiche (6 min)\nIndispensable : reset, carton rouge, scène.",
+    "aufbau": "0′ Question au pro – « Tilt, c’est quoi ? »\n1′ Thermomètre au sol – « Où est Lea ? »\n4′ Reset – « Je lâche, souffle ×3, GG. Tu changes quoi ? »\n6′ Carton rouge (1 min) – « Rouge : pas de reset, de l’aide. »\n7′ Scène, carte pause – « Tu es Lea. »\n10′ « C’était fort… », secouer les mains\n11′ Fiche (4 min) : exercice 1 + bouton, reste en bonus\n15′ Fin\nIndispensable : reset, carton rouge, scène.",
     "karten": [
      {
       "titel": "Les messages vocaux de Lea (à lire, de plus en plus chauds)",
@@ -5355,7 +5151,7 @@
       "titel": "Pour l’adulte : sécurité et mise en scène",
       "karten": [
        "Seul l’adulte lit les phrases méchantes. Le carton rouge n’entre jamais dans le jeu de rôle, seulement à la 3e personne : « Quelqu’un écrit à Lea : … »",
-       "Carte pause visible ; après la scène : « On enlève le rôle comme une veste – tu redeviens toi. »",
+       "Carte pause visible ; après la scène, secouer les mains : « Rôle enlevé, tu redeviens toi. »",
        "La rage, c’est la frustration d’être bloqué dans sa réussite, pas un mauvais caractère. Pas de catharsis : on redescend par la distance et le souffle.",
        "Signes à demander : la voix monte, la main serre fort, on respire vite, « c’est la faute du jeu », encore une partie tout de suite.",
        "Si du vécu arrive : remercier, pas de détails. Vérifier vite : ça se passe encore ? Menacé·e, on t’a demandé des photos, des cadeaux d’inconnus ?",
@@ -5367,7 +5163,7 @@
     ],
     "leichter": "Seulement les messages 1 et 3 ; l’enfant montre une annonce au lieu de parler. L’adulte fait le reset avec l’enfant, coup par coup.",
     "schwerer": "Rôle de coéquipière : l’enfant aide Lea dans le chat sans devenir méchant. Puis : qu’est-ce qui change entre « gg ez » et « uninstall » – et quand le trash-talk devient-il toxique ?",
-    "gruppe": "4 à 6 en demi-cercle, carte pause et carton rouge au milieu. Aux messages de Lea, tout le monde lève la main ; une personne nomme un signe. Tout le monde fait le reset en même temps. Scène : l’adulte lit la phrase du chat, deux volontaires répondent comme Lea et coéquipière, les autres sont coachs. Personne ne joue l’auteur. Après : secouer les mains, « rôle enlevé ».",
+    "gruppe": "4 à 6, thermomètre au sol, carte pause et carton rouge au milieu. Aux messages de Lea, chacun se place sur son niveau ; une personne dit un signe. Reset tous ensemble. Scène : l’adulte lit, deux volontaires répondent comme Lea et coéquipière. Les coachs se placent ensuite sur le nouveau niveau de Lea – si elle est redescendue, c’était un bon reset. Après : secouer les mains.",
     "beobachten": [
      "repère dans les phrases de Lea à partir de quand ça bascule et nomme un signe",
      "montre le reset ou cite ses trois coups",
@@ -5398,12 +5194,12 @@
    "titel": "Einzelkurs Das Pause-Menü"
   },
   "titel": "Knopf 4: Respawn – fair bleiben, wenn es heiß wird",
-  "text": "Drei Niederlagen hintereinander – Leas Controller knallte auf den Tisch. Die Fachkraft fragt den Profi: „Was heißt ‚tilt‘ – und was machen Profis dagegen?“ Sie liest Leas vier Sprachnachrichten vor; das Kind hebt die Hand wie ein Thermometer (chill, genervt, tilt, Rage) und nennt ein Zeichen. Dann zeigt sie den Reset, den auch E-Sport-Teams kennen: Hände weg, dreimal langsam ausatmen, eine Ansage – „GG“ oder „Ich mach kurz Pause“. Als Coach passt das Kind ihn an. Vor der Szene zeigt sie kurz die rote Karte: Drohung, Fotos oder ein netter Fremder mit Geschenk und Geheimnis – dann kein Reset, sondern Hilfe. Dann eine Szene mit Pause-Karte: Die Fachkraft liest „uninstall, noob“, das Kind antwortet als Lea oder Teamkollegin oder zeigt auf eine Ansage; danach „Stark war …“. Merksatz: „Respawn statt Rage: erst runterkommen, dann weiterspielen.“",
+  "text": "Drei Niederlagen hintereinander – Leas Controller knallte auf den Tisch. Die Fachkraft fragt den Profi: „Was heißt ‚tilt‘ – und was machen Profis dagegen?“ Sie liest Leas vier Sprachnachrichten vor; das Kind stellt sich auf das Tilt-Meter am Boden (chill, genervt, tilt, Rage) und nennt ein Zeichen. Dann zeigt sie den Reset, den auch E-Sport-Teams kennen: Hände weg, dreimal langsam ausatmen, eine Ansage – „GG“ oder „Ich mach kurz Pause“. Als Coach passt das Kind ihn an. Vor der Szene zeigt sie kurz die rote Karte: Drohung, Fotos oder ein netter Fremder mit Geschenk und Geheimnis – dann kein Reset, sondern Hilfe. Dann eine Szene mit Pause-Karte: Die Fachkraft liest „uninstall, noob“, das Kind antwortet als Lea oder Teamkollegin oder zeigt auf eine Ansage; danach „Stark war …“. Merksatz: „Respawn statt Rage: erst runterkommen, dann weiterspielen.“",
   "sagen": [
    "Was heißt ‚tilt‘ – und was machen Profis dagegen?",
-   "Vier Sprachnachrichten von Lea. Heb die Hand so hoch, wie heiß es gerade ist: chill, genervt, tilt oder Rage?",
+   "Vier Sprachnachrichten von Lea. Stell dich auf die Stufe, auf der sie gerade ist – und sag mir ein Zeichen.",
    "Reset, ich mach’s einmal vor: Hände weg. Ausatmen, ausatmen, ausatmen. „GG – ich mach kurz Pause.“ Was würdest du als Coach ändern?",
-   "Ich lese den gemeinen Satz, du antwortest als Lea oder als ihre Teamkollegin. Tipp auf die Pause-Karte, und wir stoppen. Danach: Rolle aus, Jacke aus."
+   "Ich lese den gemeinen Satz, du antwortest als Lea oder als ihre Teamkollegin. Tipp auf die Pause-Karte, und wir stoppen. Danach Hände ausschütteln: Rolle aus, du bist wieder du."
   ],
   "wennEsKippt": "Wird es zu heiß, liegt die Pause-Karte bereit: antippen, Rolle ablegen, kurz etwas anderes. Statt zu sprechen, kann das Kind auf eine Ansage auf dem Bogen zeigen; eine Szene reicht. Kommt eigener Ärger beim Spielen zur Sprache, bleibt die Fachkraft beim Werkzeug („Das kennen fast alle Gamer. Was hätte da geholfen?“) und fragt nicht nach Einzelheiten.",
   "rolle": [
@@ -5439,9 +5235,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -5518,28 +5314,9 @@
     {
      "art": "aufgabe",
      "symbole": [
-      "einkreisen",
-      "atmen"
+      "einkreisen"
      ],
-     "text": "Leas Thermometer: Kreis die Stufe ein, ab der Lea den Reset braucht. Darunter: der Reset."
-    },
-    {
-     "art": "thermometer",
-     "linien": 0,
-     "stufen": [
-      {
-       "titel": "Chill"
-      },
-      {
-       "titel": "Genervt"
-      },
-      {
-       "titel": "Tilt"
-      },
-      {
-       "titel": "Rage"
-      }
-     ]
+     "text": "Dein Reset: Welcher Schritt hilft dir am meisten? Kreis ihn ein."
     },
     {
      "art": "schritte",
@@ -5562,7 +5339,7 @@
      "symbole": [
       "ankreuzen"
      ],
-     "text": "Deine Ansage nach einer Niederlage – für Lea oder für dich. Wenn du magst, probier sie bis zum nächsten Mal aus."
+     "text": "Deine Ansage nach einer Niederlage – für Lea oder für dich."
     },
     {
      "art": "ankreuzen",
@@ -5578,7 +5355,7 @@
      "art": "info",
      "symbol": "achtung",
      "titel": "Rote Karte: sofort Hilfe holen",
-     "text": "Drohung, jemand will Fotos – oder ein netter Fremder schenkt dir etwas und will einen geheimen Chat? Das ist rot. Nicht antworten, nichts schicken, nichts zahlen. Bildschirmfoto nur vom Chat – Nacktbilder nie speichern oder weiterleiten. Sofort einer Vertrauensperson zeigen. BEE SECURE 8002 1234 (tagsüber) · Kanner-Jugendtelefon (KJT) 116 111 (auch abends) · Gefahr: 113, 112."
+     "text": "Drohung, jemand will Fotos, ein Fremder schenkt dir etwas und will ein Geheimnis? Das ist rot: nicht antworten, nichts schicken. Bildschirmfoto nur vom Chat, nie von Bildern. Sofort einer Vertrauensperson zeigen. BEE SECURE 8002 1234 · KJT 116 111 · Gefahr: 113, 112."
     },
     {
      "art": "aufgabe",
@@ -5628,7 +5405,7 @@
     {
      "art": "text",
      "klein": true,
-     "text": "Übrigens: Bei Sami gilt jetzt eine neue Regel – Konsole nur noch am Wochenende. Und Carla will für den Gaming-Mëttwoch eine Abmachung."
+     "text": "Übrigens: Carla will für den Gaming-Mëttwoch eine Abmachung."
     }
    ],
    "fr": [
@@ -5662,28 +5439,9 @@
     {
      "art": "aufgabe",
      "symbole": [
-      "einkreisen",
-      "atmen"
+      "einkreisen"
      ],
-     "text": "Le thermomètre de Lea : entoure le niveau à partir duquel Lea a besoin du reset. En dessous : le reset."
-    },
-    {
-     "art": "thermometer",
-     "linien": 0,
-     "stufen": [
-      {
-       "titel": "Chill"
-      },
-      {
-       "titel": "Énervée"
-      },
-      {
-       "titel": "Tilt"
-      },
-      {
-       "titel": "Rage"
-      }
-     ]
+     "text": "Ton reset : quelle étape t’aide le plus ? Entoure-la."
     },
     {
      "art": "schritte",
@@ -5706,7 +5464,7 @@
      "symbole": [
       "ankreuzen"
      ],
-     "text": "Ton annonce après une défaite – pour Lea ou pour toi. Si tu veux, essaie-la d’ici la prochaine fois."
+     "text": "Ton annonce après une défaite – pour Lea ou pour toi."
     },
     {
      "art": "ankreuzen",
@@ -5722,7 +5480,7 @@
      "art": "info",
      "symbol": "achtung",
      "titel": "Carton rouge : chercher de l’aide tout de suite",
-     "text": "Une menace, quelqu’un veut des photos – ou un inconnu gentil t’offre un cadeau et veut un chat secret ? C’est rouge. Ne réponds pas, n’envoie rien, ne paie rien. Capture d’écran du chat seulement – photos dénudées jamais gardées ni transférées. Montre-le tout de suite à un adulte de confiance. BEE SECURE 8002 1234 (en journée) · Kanner-Jugendtelefon (KJT) 116 111 (aussi le soir) · danger : 113, 112."
+     "text": "Menace, quelqu’un veut des photos, un inconnu t’offre un cadeau et veut un secret ? C’est rouge : ne réponds pas, n’envoie rien. Capture d’écran du chat seulement, jamais d’images. Montre-le tout de suite à un adulte de confiance. BEE SECURE 8002 1234 · KJT 116 111 · danger : 113, 112."
     },
     {
      "art": "aufgabe",
@@ -5772,23 +5530,25 @@
     {
      "art": "text",
      "klein": true,
-     "text": "Au fait : chez Sami, nouvelle règle – console seulement le week-end. Et Carla veut un accord pour le Gaming-Mëttwoch."
+     "text": "Au fait : Carla veut un accord pour le Gaming-Mëttwoch."
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1: Das Kind kreist die Stufe ein, ab der Lea den Reset braucht; den Reset darunter machen beide einmal mit den Händen. Bei Aufgabe 2 kreuzt es eine Ansage an – für Lea oder für sich. Die rote Karte liest die Fachkraft immer vor. Fragt das Blatt nach dem Kind selbst, darf es für Lea antworten. Zum Schluss den Knopf ausmalen und die letzte Zeile vorlesen.",
+     "text": "Aufgabe 1: Das Kind kreist den Schritt des Resets ein, der ihm am meisten hilft. Bei Aufgabe 2 kreuzt es eine Ansage an – für Lea oder für sich. Die rote Karte liest die Fachkraft vor. Fragt das Blatt nach dem Kind selbst, darf es für Lea antworten. Zum Schluss den Knopf ausmalen und die letzte Zeile vorlesen.",
      "sagen": [
-      "Ab welcher Stufe braucht Lea den Reset?",
-      "Was machst du, wenn dir ein Fremder Kristalle schenkt und privat schreiben will?"
+      "Welcher Schritt hilft dir am meisten?",
+      "Was machst du, wenn dir ein Fremder Kristalle schenkt und privat schreiben will?",
+      "Wenn du magst, probier deine Ansage bis zum nächsten Mal aus."
      ],
      "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alles vor, und das Kind zeigt. Nach eigenen Erlebnissen im Chat wird nicht gefragt."
     },
     "fr": {
-     "text": "Exercice 1 : l’enfant entoure le niveau à partir duquel Lea a besoin du reset ; le reset en dessous se fait une fois avec les mains, à deux. À l’exercice 2, il ou elle coche une annonce – pour Lea ou pour soi. L’adulte lit toujours le carton rouge. Si la fiche demande quelque chose sur l’enfant, il ou elle peut répondre pour Lea. Pour finir, colorier le bouton et lire la dernière ligne.",
+     "text": "Exercice 1 : l’enfant entoure l’étape du reset qui l’aide le plus. À l’exercice 2, il ou elle coche une annonce – pour Lea ou pour soi. L’adulte lit le carton rouge. Si la fiche demande quelque chose sur l’enfant, il ou elle peut répondre pour Lea. Pour finir, colorier le bouton et lire la dernière ligne.",
      "sagen": [
-      "À partir de quel niveau Lea a-t-elle besoin du reset ?",
-      "Que fais-tu si un inconnu t’offre des cristaux et veut t’écrire en privé ?"
+      "Quelle étape t’aide le plus ?",
+      "Que fais-tu si un inconnu t’offre des cristaux et veut t’écrire en privé ?",
+      "Si tu veux, essaie ton annonce d’ici la prochaine fois."
      ],
      "wennEsKippt": "Si lire est difficile, l’adulte lit tout et l’enfant montre. On ne demande rien sur le vécu de l’enfant dans les chats."
     }
@@ -5796,12 +5556,12 @@
   },
   "fr": {
    "titel": "Bouton 4 : respawn – rester fair-play quand ça chauffe",
-   "text": "Trois défaites de suite – la manette de Lea a claqué sur la table. L’adulte demande au pro : « Tilt, ça veut dire quoi – et que font les pros contre ça ? » L’adulte lit les quatre messages vocaux de Lea ; l’enfant lève la main comme un thermomètre (chill, énervée, tilt, rage) et nomme un signe. Puis l’adulte montre le reset que connaissent aussi les équipes d’e-sport : lâcher la manette, souffler trois fois lentement, une annonce – « GG » ou « Je fais une petite pause ». L’enfant est le coach et adapte le reset. Avant la scène, l’adulte montre vite le carton rouge : menace, photos ou inconnu gentil avec cadeau et secret – alors pas de reset, mais de l’aide. Puis une scène avec carte pause : l’adulte lit « uninstall, noob », l’enfant répond comme Lea ou sa coéquipière, ou montre une annonce ; ensuite « C’était fort, ce… ». Phrase-clé : « Respawn plutôt que rage : d’abord redescendre, puis rejouer. »",
+   "text": "Trois défaites de suite – la manette de Lea a claqué sur la table. L’adulte demande au pro : « Tilt, ça veut dire quoi – et que font les pros contre ça ? » L’adulte lit les quatre messages vocaux de Lea ; l’enfant se place sur le thermomètre posé au sol (chill, énervée, tilt, rage) et nomme un signe. Puis l’adulte montre le reset que connaissent aussi les équipes d’e-sport : lâcher la manette, souffler trois fois lentement, une annonce – « GG » ou « Je fais une petite pause ». L’enfant est le coach et adapte le reset. Avant la scène, l’adulte montre vite le carton rouge : menace, photos ou inconnu gentil avec cadeau et secret – alors pas de reset, mais de l’aide. Puis une scène avec carte pause : l’adulte lit « uninstall, noob », l’enfant répond comme Lea ou sa coéquipière, ou montre une annonce ; ensuite « C’était fort, ce… ». Phrase-clé : « Respawn plutôt que rage : d’abord redescendre, puis rejouer. »",
    "sagen": [
     "Tilt, ça veut dire quoi – et que font les pros contre ça ?",
-    "Quatre messages vocaux de Lea. Lève la main aussi haut que ça chauffe : chill, énervée, tilt ou rage ?",
+    "Quatre messages vocaux de Lea. Place-toi sur le niveau où elle en est – et dis-moi un signe.",
     "Reset, je te montre une fois : je lâche la manette. Je souffle, je souffle, je souffle. « GG – je fais une petite pause. » Qu’est-ce que tu changerais, en coach ?",
-    "Je lis la phrase méchante, tu réponds comme Lea ou comme sa coéquipière. Touche la carte pause, et on arrête. Après : on enlève le rôle comme une veste."
+    "Je lis la phrase méchante, tu réponds comme Lea ou comme sa coéquipière. Touche la carte pause, et on arrête. Après, on secoue les mains : rôle enlevé, tu redeviens toi."
    ],
    "wennEsKippt": "Si ça chauffe trop, la carte pause est prête : la toucher, enlever le rôle, faire autre chose un instant. Au lieu de parler, l’enfant peut montrer une annonce sur la planche ; une scène suffit. Si l’enfant parle de ses propres coups de rage, l’adulte revient à l’outil (« Presque tous les gamers connaissent ça. Qu’est-ce qui aurait aidé ? ») sans demander de détails.",
    "kurz": "Thermomètre de Lea · reset en coach · une scène avec carte pause"
@@ -5813,14 +5573,15 @@
   },
   "hilfen": {
    "de": {
-    "haken": "„Weißt du, was ‚tilt‘ heißt – und was Profis dagegen machen?“ Fast jedes Kind weiß es und erklärt es der Fachkraft. Dann vier Sprachnachrichten von Lea: Die Hand geht hoch wie ein Thermometer.",
+    "haken": "„Weißt du, was ‚tilt‘ heißt – und was Profis dagegen machen?“ Fast jedes Kind weiß es und erklärt es der Fachkraft. Dann vier Sprachnachrichten von Lea – und das Kind stellt sich auf das Tilt-Meter am Boden.",
     "vorbereitung": [
      "Schnellstart (2 Min.): Blatt drucken. Karten nicht schneiden – sie bleiben auf dem Bogen, du zeigst mit dem Finger.",
+     "Bodenkarten: je ein A4-Blatt mit dickem Stift – Chill · Genervt · Tilt · Rage – als Reihe auf den Boden",
      "Pause-Karte (ein Blatt mit dem Pause-Zeichen) und rote Karte (rotes Blatt) sichtbar hinlegen",
      "Karte „Nur für dich“ lesen: Sicherheit, Wenn Eigenes kommt",
      "Einen Namen notieren: Wer im Haus ist heute für Schutz ansprechbar?"
     ],
-    "aufbau": "0′ Profi-Frage – „Was heißt ‚tilt‘?“\n1′ Leas Nachrichten – „Hand hoch: chill … Rage?“\n4′ Reset vormachen – „Hände weg. Ausatmen ×3. ‚GG.‘ Was änderst du?“\n6′ Rote Karte (30 Sek.) – „Drohung, Foto, Geschenk + Geheimnis: Hilfe.“\n7′ Szene mit Pause-Karte – „Du bist Lea.“\n10′ „Stark war …“, Rolle aus, Merksatz\n11′ Blatt (6 Min.)\nMuss: Reset, rote Karte, Szene.",
+    "aufbau": "0′ Profi-Frage – „Was heißt ‚tilt‘?“\n1′ Tilt-Meter am Boden – „Stell dich auf Leas Stufe.“\n4′ Reset – „Hände weg. Ausatmen ×3. ‚GG.‘ Was änderst du als Coach?“\n6′ Rote Karte (1 Min.) – „Das ist rot: kein Reset, Hilfe.“\n7′ Szene, Pause-Karte – „Du bist Lea.“\n10′ „Stark war …“, Hände ausschütteln\n11′ Blatt (4 Min.): Aufgabe 1 + Knopf, Rest ist Bonus-Level\n15′ Ende\nMuss: Reset, rote Karte, Szene.",
     "karten": [
      {
       "titel": "Leas Sprachnachrichten (zum Vorlesen, eine heißer als die andere)",
@@ -5859,7 +5620,7 @@
       "titel": "Nur für dich: Sicherheit und Regie",
       "karten": [
        "Die gemeinen Sätze liest nur die Fachkraft – nie das Kind. Die rote Karte kommt nie ins Rollenspiel, nur in der dritten Person: „Jemand schreibt Lea: …“",
-       "Pause-Karte sichtbar; nach der Szene: „Rolle aus, Jacke aus – du bist wieder du.“",
+       "Pause-Karte sichtbar; nach der Szene Hände ausschütteln: „Rolle aus, du bist wieder du.“",
        "Rage ist Frust über blockiertes Können, kein schlechter Charakter. Keine Katharsis-Übungen: runter geht es über Abstand und Atmen.",
        "Zeichen zum Nachfragen: Stimme lauter, Hand drückt fest, schneller atmen, „Das Spiel ist schuld“, sofort noch eine Runde.",
        "Wenn Eigenes kommt: danken, keine Einzelheiten. Kurz klären: Passiert es gerade noch? Bedroht, nach Fotos gefragt, Geschenke von Fremden?",
@@ -5871,7 +5632,7 @@
     ],
     "leichter": "Nur Nachricht 1 und 3; das Kind zeigt auf eine Ansage, statt zu sprechen. Den Reset macht die Fachkraft mit, Zug für Zug.",
     "schwerer": "Teamkollegin-Rolle: Das Kind hilft Lea im Chat, ohne selbst gemein zu werden. Dazu: Was ist bei „gg ez“ anders als bei „uninstall“ – und wann wird Trash-Talk toxisch?",
-    "gruppe": "4–6 im Halbkreis, Pause-Karte und rote Karte in der Mitte. Bei Leas Nachrichten heben alle die Hand; eine Person nennt ein Zeichen. Den Reset machen alle gleichzeitig. Szene: Die Fachkraft liest den Chat-Satz, zwei Freiwillige antworten als Lea und Teamkollegin, die anderen sind Coaches. Niemand spielt den Absender. Danach Hände ausschütteln: „Rolle aus.“",
+    "gruppe": "4–6, Tilt-Meter am Boden, Pause- und rote Karte in der Mitte. Bei Leas Nachrichten stellen sich alle auf ihre Stufe, eine Person nennt ein Zeichen. Reset alle gleichzeitig. Szene: Die Fachkraft liest, zwei Freiwillige antworten als Lea und Teamkollegin. Die Coaches stellen sich danach auf Leas neue Stufe – ist sie runtergekommen, war es ein guter Reset. Danach Hände ausschütteln: „Rolle aus.“",
     "beobachten": [
      "erkennt an Leas Sätzen, ab wann es kippt, und nennt ein Zeichen",
      "macht den Reset vor oder nennt alle drei Züge",
@@ -5894,14 +5655,15 @@
     ]
    },
    "fr": {
-    "haken": "« Tu sais ce que veut dire “tilt” – et ce que font les pros contre ça ? » Presque chaque enfant le sait et l’explique à l’adulte. Puis quatre messages vocaux de Lea : la main monte comme un thermomètre.",
+    "haken": "« Tu sais ce que veut dire “tilt” – et ce que font les pros contre ça ? » Presque chaque enfant le sait et l’explique à l’adulte. Puis quatre messages vocaux de Lea – et l’enfant se place sur le thermomètre au sol.",
     "vorbereitung": [
      "Départ rapide (2 min) : imprimer la fiche. Ne pas découper – les cartes restent sur la planche, tu montres du doigt.",
+     "Cartes du sol : une feuille A4 au gros feutre – chill · énervée · tilt · rage – en ligne au sol",
      "Carte pause (une feuille avec le symbole pause) et carton rouge (feuille rouge) bien visibles",
      "Lire la carte « Pour l’adulte » : sécurité, si du vécu arrive",
      "Noter un nom : qui dans la structure est joignable aujourd’hui pour la protection ?"
     ],
-    "aufbau": "0′ Question au pro – « Tilt, c’est quoi ? »\n1′ Messages de Lea – « Main levée : chill… rage ? »\n4′ Reset – « Je lâche. Je souffle ×3. GG. Tu changes quoi ? »\n6′ Carton rouge (30 s) – « Menace, photo, cadeau + secret : aide. »\n7′ Scène, carte pause – « Tu es Lea. »\n10′ « C’était fort… », rôle enlevé, phrase-clé\n11′ Fiche (6 min)\nIndispensable : reset, carton rouge, scène.",
+    "aufbau": "0′ Question au pro – « Tilt, c’est quoi ? »\n1′ Thermomètre au sol – « Où est Lea ? »\n4′ Reset – « Je lâche, souffle ×3, GG. Tu changes quoi ? »\n6′ Carton rouge (1 min) – « Rouge : pas de reset, de l’aide. »\n7′ Scène, carte pause – « Tu es Lea. »\n10′ « C’était fort… », secouer les mains\n11′ Fiche (4 min) : exercice 1 + bouton, reste en bonus\n15′ Fin\nIndispensable : reset, carton rouge, scène.",
     "karten": [
      {
       "titel": "Les messages vocaux de Lea (à lire, de plus en plus chauds)",
@@ -5940,7 +5702,7 @@
       "titel": "Pour l’adulte : sécurité et mise en scène",
       "karten": [
        "Seul l’adulte lit les phrases méchantes. Le carton rouge n’entre jamais dans le jeu de rôle, seulement à la 3e personne : « Quelqu’un écrit à Lea : … »",
-       "Carte pause visible ; après la scène : « On enlève le rôle comme une veste – tu redeviens toi. »",
+       "Carte pause visible ; après la scène, secouer les mains : « Rôle enlevé, tu redeviens toi. »",
        "La rage, c’est la frustration d’être bloqué dans sa réussite, pas un mauvais caractère. Pas de catharsis : on redescend par la distance et le souffle.",
        "Signes à demander : la voix monte, la main serre fort, on respire vite, « c’est la faute du jeu », encore une partie tout de suite.",
        "Si du vécu arrive : remercier, pas de détails. Vérifier vite : ça se passe encore ? Menacé·e, on t’a demandé des photos, des cadeaux d’inconnus ?",
@@ -5952,7 +5714,7 @@
     ],
     "leichter": "Seulement les messages 1 et 3 ; l’enfant montre une annonce au lieu de parler. L’adulte fait le reset avec l’enfant, coup par coup.",
     "schwerer": "Rôle de coéquipière : l’enfant aide Lea dans le chat sans devenir méchant. Puis : qu’est-ce qui change entre « gg ez » et « uninstall » – et quand le trash-talk devient-il toxique ?",
-    "gruppe": "4 à 6 en demi-cercle, carte pause et carton rouge au milieu. Aux messages de Lea, tout le monde lève la main ; une personne nomme un signe. Tout le monde fait le reset en même temps. Scène : l’adulte lit la phrase du chat, deux volontaires répondent comme Lea et coéquipière, les autres sont coachs. Personne ne joue l’auteur. Après : secouer les mains, « rôle enlevé ».",
+    "gruppe": "4 à 6, thermomètre au sol, carte pause et carton rouge au milieu. Aux messages de Lea, chacun se place sur son niveau ; une personne dit un signe. Reset tous ensemble. Scène : l’adulte lit, deux volontaires répondent comme Lea et coéquipière. Les coachs se placent ensuite sur le nouveau niveau de Lea – si elle est redescendue, c’était un bon reset. Après : secouer les mains.",
     "beobachten": [
      "repère dans les phrases de Lea à partir de quand ça bascule et nomme un signe",
      "montre le reset ou cite ses trois coups",
@@ -6016,9 +5778,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -6089,7 +5851,7 @@
      "Bodenkarten: je ein A4-Blatt mit dickem Stift – chill · genervt · tilt · Rage",
      "Ein Gegenstand als Controller (Mäppchen, Buch); rote Karte sichtbar"
     ],
-    "aufbau": "0′ Profi-Frage – „Was heißt ‚tilt‘?“\n1′ Blätter legen – „chill, genervt, tilt, Rage.“\n2′ Leas Nachrichten – „Geh dahin, wo sie ist.“\n6′ Reset mit dem Körper – „Ablegen, ausatmen ×3, Ansage.“\n8′ Rollentausch – „Du liest, ich gehe.“\n10′ Rote Karte, Merksatz\n11′ Blatt (6 Min.)\nMuss: Nachrichten, Reset, rote Karte.",
+    "aufbau": "0′ Profi-Frage – „Was heißt ‚tilt‘?“\n1′ Blätter legen – „chill, genervt, tilt, Rage.“\n2′ Leas Nachrichten – „Geh dahin, wo sie ist.“\n6′ Reset mit dem Körper – „Ablegen, ausatmen ×3, Ansage.“\n8′ Rollentausch – „Du liest, ich gehe.“\n10′ Rote Karte, Merksatz\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: Nachrichten, Reset, rote Karte.",
     "karten": [
      {
       "titel": "Leas Sprachnachrichten (zum Vorlesen, eine heißer als die andere)",
@@ -6128,7 +5890,7 @@
       "titel": "Nur für dich: Sicherheit und Regie",
       "karten": [
        "Die gemeinen Sätze liest nur die Fachkraft – nie das Kind. Die rote Karte kommt nie ins Rollenspiel, nur in der dritten Person: „Jemand schreibt Lea: …“",
-       "Pause-Karte sichtbar; nach der Szene: „Rolle aus, Jacke aus – du bist wieder du.“",
+       "Pause-Karte sichtbar; nach der Szene Hände ausschütteln: „Rolle aus, du bist wieder du.“",
        "Rage ist Frust über blockiertes Können, kein schlechter Charakter. Keine Katharsis-Übungen: runter geht es über Abstand und Atmen.",
        "Zeichen zum Nachfragen: Stimme lauter, Hand drückt fest, schneller atmen, „Das Spiel ist schuld“, sofort noch eine Runde.",
        "Wenn Eigenes kommt: danken, keine Einzelheiten. Kurz klären: Passiert es gerade noch? Bedroht, nach Fotos gefragt, Geschenke von Fremden?",
@@ -6169,7 +5931,7 @@
      "Cartes du sol : une feuille A4 au gros feutre – chill · énervée · tilt · rage",
      "Un objet comme manette (trousse, livre) ; carton rouge visible"
     ],
-    "aufbau": "0′ Question au pro – « Tilt, c’est quoi ? »\n1′ Poser les feuilles – « chill, énervée, tilt, rage. »\n2′ Messages de Lea – « Va là où elle en est. »\n6′ Reset avec le corps – « Poser, souffler ×3, annonce. »\n8′ On échange – « Tu lis, je me déplace. »\n10′ Carton rouge, phrase-clé\n11′ Fiche (6 min)\nIndispensable : messages, reset, carton rouge.",
+    "aufbau": "0′ Question au pro – « Tilt, c’est quoi ? »\n1′ Poser les feuilles – « chill, énervée, tilt, rage. »\n2′ Messages de Lea – « Va là où elle en est. »\n6′ Reset avec le corps – « Poser, souffler ×3, annonce. »\n8′ On échange – « Tu lis, je me déplace. »\n10′ Carton rouge, phrase-clé\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : messages, reset, carton rouge.",
     "karten": [
      {
       "titel": "Les messages vocaux de Lea (à lire, de plus en plus chauds)",
@@ -6208,7 +5970,7 @@
       "titel": "Pour l’adulte : sécurité et mise en scène",
       "karten": [
        "Seul l’adulte lit les phrases méchantes. Le carton rouge n’entre jamais dans le jeu de rôle, seulement à la 3e personne : « Quelqu’un écrit à Lea : … »",
-       "Carte pause visible ; après la scène : « On enlève le rôle comme une veste – tu redeviens toi. »",
+       "Carte pause visible ; après la scène, secouer les mains : « Rôle enlevé, tu redeviens toi. »",
        "La rage, c’est la frustration d’être bloqué dans sa réussite, pas un mauvais caractère. Pas de catharsis : on redescend par la distance et le souffle.",
        "Signes à demander : la voix monte, la main serre fort, on respire vite, « c’est la faute du jeu », encore une partie tout de suite.",
        "Si du vécu arrive : remercier, pas de détails. Vérifier vite : ça se passe encore ? Menacé·e, on t’a demandé des photos, des cadeaux d’inconnus ?",
@@ -6285,9 +6047,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -6358,7 +6120,7 @@
      "Drei Papiere als Ampel: grün · gelb · rot",
      "Karte „Nur für dich“ lesen"
     ],
-    "aufbau": "0′ Profi-Frage – „Was ist fair im Chat?“\n2′ Leas Nachrichten ordnen – „Wo braucht sie den Reset?“\n5′ Chat-Ampel – „Fair, grenzwertig, toxisch?“\n8′ Reparieren – „Welche Ansage? Was bei Rot?“\n10′ Falsch sortiert? Merksatz\n11′ Blatt (6 Min.)\nMuss: Ampel, rote Karte. Wird es knapp: vier Chat-Sätze.",
+    "aufbau": "0′ Profi-Frage – „Was ist fair im Chat?“\n2′ Leas Nachrichten ordnen – „Wo braucht sie den Reset?“\n5′ Chat-Ampel – „Fair, grenzwertig, toxisch?“\n8′ Reparieren – „Welche Ansage? Was bei Rot?“\n10′ Falsch sortiert? Merksatz\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: Ampel, rote Karte. Wird es knapp: vier Chat-Sätze.",
     "karten": [
      {
       "titel": "Leas Sprachnachrichten (zum Vorlesen, eine heißer als die andere)",
@@ -6397,7 +6159,7 @@
       "titel": "Nur für dich: Sicherheit und Regie",
       "karten": [
        "Die gemeinen Sätze liest nur die Fachkraft – nie das Kind. Die rote Karte kommt nie ins Rollenspiel, nur in der dritten Person: „Jemand schreibt Lea: …“",
-       "Pause-Karte sichtbar; nach der Szene: „Rolle aus, Jacke aus – du bist wieder du.“",
+       "Pause-Karte sichtbar; nach der Szene Hände ausschütteln: „Rolle aus, du bist wieder du.“",
        "Rage ist Frust über blockiertes Können, kein schlechter Charakter. Keine Katharsis-Übungen: runter geht es über Abstand und Atmen.",
        "Zeichen zum Nachfragen: Stimme lauter, Hand drückt fest, schneller atmen, „Das Spiel ist schuld“, sofort noch eine Runde.",
        "Wenn Eigenes kommt: danken, keine Einzelheiten. Kurz klären: Passiert es gerade noch? Bedroht, nach Fotos gefragt, Geschenke von Fremden?",
@@ -6438,7 +6200,7 @@
      "Trois feuilles en feu tricolore : vert · orange · rouge",
      "Lire la carte « Pour l’adulte »"
     ],
-    "aufbau": "0′ Question au pro – « Fair-play dans un chat, c’est quoi ? »\n2′ Ranger les messages – « Où faut-il le reset ? »\n5′ Feu du chat – « Fair-play, limite, toxique ? »\n8′ Réparer – « Quelle annonce ? Et le rouge ? »\n10′ Mal trié ? Phrase-clé\n11′ Fiche (6 min)\nIndispensable : feu, carton rouge. Si le temps manque : quatre phrases.",
+    "aufbau": "0′ Question au pro – « Fair-play dans un chat, c’est quoi ? »\n2′ Ranger les messages – « Où faut-il le reset ? »\n5′ Feu du chat – « Fair-play, limite, toxique ? »\n8′ Réparer – « Quelle annonce ? Et le rouge ? »\n10′ Mal trié ? Phrase-clé\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : feu, carton rouge. Si le temps manque : quatre phrases.",
     "karten": [
      {
       "titel": "Les messages vocaux de Lea (à lire, de plus en plus chauds)",
@@ -6477,7 +6239,7 @@
       "titel": "Pour l’adulte : sécurité et mise en scène",
       "karten": [
        "Seul l’adulte lit les phrases méchantes. Le carton rouge n’entre jamais dans le jeu de rôle, seulement à la 3e personne : « Quelqu’un écrit à Lea : … »",
-       "Carte pause visible ; après la scène : « On enlève le rôle comme une veste – tu redeviens toi. »",
+       "Carte pause visible ; après la scène, secouer les mains : « Rôle enlevé, tu redeviens toi. »",
        "La rage, c’est la frustration d’être bloqué dans sa réussite, pas un mauvais caractère. Pas de catharsis : on redescend par la distance et le souffle.",
        "Signes à demander : la voix monte, la main serre fort, on respire vite, « c’est la faute du jeu », encore une partie tout de suite.",
        "Si du vécu arrive : remercier, pas de détails. Vérifier vite : ça se passe encore ? Menacé·e, on t’a demandé des photos, des cadeaux d’inconnus ?",
@@ -6562,9 +6324,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -6653,7 +6415,7 @@
       "schreiben",
       "nachdenken"
      ],
-     "text": "Dein Deal – oder einer für Sami oder das Team. Mit wem, wann, welches Angebot? Schreib nur, was du zeigen willst."
+     "text": "Dein Deal – oder einer für Sami. Schreib nur, was du zeigen willst."
     },
     {
      "art": "tabelle",
@@ -6672,7 +6434,7 @@
      "beispiel": [
       "Team mit Carla",
       "Dienstag nach dem Essen, in Ruhe",
-      "45 Min. = 3 Matches à 15 Min., jeder eins; beim Signal speichern"
+      "45 Min. = 3 Matches à 15 Min., jeder eins; nach dem Signal kein neues Match"
      ]
     },
     {
@@ -6728,16 +6490,9 @@
      ]
     },
     {
-     "art": "aufgabe",
-     "symbole": [
-      "sprechen"
-     ],
-     "text": "Wenn du magst: Probier deinen Deal in einem ruhigen Moment – nur, wenn es sich gut und sicher anfühlt. Ein Nein ist kein Verlieren."
-    },
-    {
      "art": "text",
      "klein": true,
-     "text": "Übrigens: Carla sagt Ja zum Test – zwei Mittwoche mit dem Deal des Teams. „Danach zeigt ihr mir euer ganzes Pause-Menü.“"
+     "text": "Übrigens: Carla sagt Ja zum Test – zwei Mittwoche mit dem Deal. „Danach zeigt ihr mir euer Pause-Menü.“"
     }
    ],
    "fr": [
@@ -6783,7 +6538,7 @@
       "schreiben",
       "nachdenken"
      ],
-     "text": "Ton deal – ou un deal pour Sami ou l’équipe. Avec qui, quand, quelle offre ? N’écris que ce que tu veux montrer."
+     "text": "Ton deal – ou un deal pour Sami. N’écris que ce que tu veux montrer."
     },
     {
      "art": "tabelle",
@@ -6802,7 +6557,7 @@
      "beispiel": [
       "L’équipe avec Carla",
       "Mardi après le repas, au calme",
-      "45 min = 3 matchs de 15 min, un chacun ; au signal, on sauvegarde"
+      "45 min = 3 matchs de 15 min, un chacun ; après le signal, pas de nouveau match"
      ]
     },
     {
@@ -6858,32 +6613,27 @@
      ]
     },
     {
-     "art": "aufgabe",
-     "symbole": [
-      "sprechen"
-     ],
-     "text": "Si tu veux : essaie ton deal à un moment calme – seulement si tu te sens bien et en sécurité. Un non, ce n’est pas perdre."
-    },
-    {
      "art": "text",
      "klein": true,
-     "text": "Au fait : Carla dit oui au test – deux mercredis avec le deal de l’équipe. « Après, vous me montrez tout votre menu pause. »"
+     "text": "Au fait : Carla dit oui au test – deux mercredis avec le deal. « Après, vous me montrez votre menu pause. »"
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Den Kasten liest die Fachkraft vor. Aufgabe 1 ist eine echte Wahl: ein eigener Deal oder einer für Sami oder das Team – die Beispielzeile zeigt, wie die Rechnung aufgeht. Fragt das Blatt nach dem Kind selbst, darf es für Sami oder das Team antworten. Dann den Knopf ausmalen; den Auftrag liest die Fachkraft vor, zum Schluss die letzte Zeile wie eine Sprachnachricht.",
+     "text": "Den Kasten liest die Fachkraft vor. Aufgabe 1 ist eine echte Wahl: ein eigener Deal oder einer für Sami oder das Team – die Beispielzeile zeigt, wie die Rechnung aufgeht. Fragt das Blatt nach dem Kind selbst, darf es für Sami oder das Team antworten. Dann den Knopf ausmalen; zum Schluss die letzte Zeile wie eine Sprachnachricht.",
      "sagen": [
       "Wann wäre ein ruhiger Moment für so einen Deal?",
-      "Mit wem du verhandelst, musst du nicht sagen."
+      "Mit wem du verhandelst, musst du nicht sagen.",
+      "Wenn du magst: Probier deinen Deal in einem ruhigen Moment – nur, wenn es sich gut und sicher anfühlt. Ein Nein ist kein Verlieren."
      ],
      "wennEsKippt": "Fällt Schreiben schwer, legt das Kind Samis Karten in die Tabelle, und die Fachkraft schreibt ab. Mit wem das Kind verhandelt, muss es nicht sagen; „jemand, der Regeln macht“ reicht."
     },
     "fr": {
-     "text": "L’adulte lit l’encadré. L’exercice 1 est un vrai choix : son propre deal ou un deal pour Sami ou l’équipe – la ligne d’exemple montre comment le calcul tombe juste. Si la fiche demande quelque chose sur l’enfant, il ou elle peut répondre pour Sami ou l’équipe. Puis colorier le bouton ; l’adulte lit la mission, pour finir la dernière ligne comme un message vocal.",
+     "text": "L’adulte lit l’encadré. L’exercice 1 est un vrai choix : son propre deal ou un deal pour Sami ou l’équipe – la ligne d’exemple montre comment le calcul tombe juste. Si la fiche demande quelque chose sur l’enfant, il ou elle peut répondre pour Sami ou l’équipe. Puis colorier le bouton ; pour finir, la dernière ligne comme un message vocal.",
      "sagen": [
       "Quand y aurait-il un moment calme pour un tel deal ?",
-      "Avec qui tu négocies, tu n’as pas à le dire."
+      "Avec qui tu négocies, tu n’as pas à le dire.",
+      "Si tu veux : essaie ton deal à un moment calme – seulement si tu te sens bien et en sécurité. Un non, ce n’est pas perdre."
      ],
      "wennEsKippt": "Si écrire est difficile, l’enfant pose les cartes de Sami dans le tableau, et l’adulte recopie. Avec qui l’enfant négocie, il ou elle n’a pas à le dire ; « quelqu’un qui fixe les règles » suffit."
     }
@@ -6912,10 +6662,11 @@
     "vorbereitung": [
      "Schnellstart (2 Min.): Blatt drucken. Karten nicht schneiden – sie bleiben auf dem Bogen, du zeigst mit dem Finger.",
      "Bodenkarten: je ein A4-Blatt mit dickem Stift – Zug 1 Wunsch · Zug 2 Fragen · Zug 3 Angebot · Zug 4 Testen",
+     "Vier Zettel mit den Wünschen des Erwachsenen (Karte „Was der Erwachsene will“), umgedreht neben Zug 2",
      "Eine Jacke oder ein Schlüsselbund als Rollenzeichen; Pause-Karte sichtbar",
      "Karte „Nur für dich“ (Rolle, Ausstieg, Haltung) lesen"
     ],
-    "aufbau": "0′ Profi-Frage – „Wie lange dauert ein Match? Online pausieren?“\n2′ Zug-Weg legen – „Wunsch, fragen, Angebot, testen.“\n3′ Rolle wählen – „Wen soll ich spielen?“\n4′ Jacke an: Deal – „Leg los, Sami.“\n8′ Jacke aus, „Stark war …“\n9′ Ehrliches Nein, Merksatz (Kann: zweite Runde)\n11′ Blatt (6 Min.): Deal-Tabelle\nMuss: Rolle wählen, ein Deal, Jacke aus.",
+    "aufbau": "0′ Profi-Frage – „Wie lange dauert ein Match? Online pausieren?“\n2′ Zug-Weg legen – „Wunsch, fragen, Angebot, testen.“\n3′ Rolle wählen – „Wen soll ich spielen?“\n4′ Jacke an: Deal – „Leg los, Sami.“\n8′ Jacke aus, „Stark war …“\n9′ Ehrliches Nein, Merksatz (Kann: zweite Runde)\n11′ Blatt (4 Min.): Deal-Tabelle\n15′ Ende\nMuss: Rolle wählen, ein Deal, Jacke aus.",
     "karten": [
      {
       "titel": "Samis Karten (was Sami will)",
@@ -6936,10 +6687,20 @@
       ]
      },
      {
+      "titel": "Was der Erwachsene will (Zettel, umgedreht neben Zug 2 – je ehrliche Frage einen aufdecken)",
+      "karten": [
+       "Genug Schlaf – kein Bildschirm in der Stunde vor dem Schlafen.",
+       "Hausaufgaben zuerst.",
+       "Kein Streit beim Aufhören.",
+       "Zeit zusammen."
+      ]
+     },
+     {
       "titel": "Nur für dich: Rolle, Ausstieg, Haltung",
       "karten": [
        "Rolle (das Kind wählt: Vater, Tante, Betreuer im Foyer oder Carla): müde, freundlich, nie laut. Start: „Nur noch am Wochenende. Punkt.“",
-       "Verdeckte Wünsche, je ehrliche Frage einer: Schlaf (kein Bildschirm in der Stunde davor) · Hausaufgaben zuerst · kein Streit beim Aufhören · Zeit zusammen.",
+       "Die vier Zettel neben Zug 2 sind deine verdeckten Wünsche: Fragt Sami ehrlich („Was ist dir wichtig?“), dreh einen um.",
+       "Als Carla startest du mit „Ohne Abmachung kein Gaming-Mëttwoch.“; als Tante oder Betreuer wie der Vater.",
        "Wird weicher, wenn Sami fragt und ein Angebot mit Stopp-Plan macht (eine Sami-Karte + ein aufgedeckter Wunsch). Ende: „Okay, eine Woche testen.“",
        "Rolle an und aus: Jacke oder Schlüsselbund als Zeichen, Pause-Karte sichtbar. Zuckt das Kind bei einer Rolle zusammen: Pause, Jacke aus, mit Carla weiter.",
        "Haltung: Regeln legen die Erwachsenen fest, bei denen das Kind lebt; geübt wird Verhandeln, nicht Überstimmen. Nie fragen, wer zu Hause Regeln macht.",
@@ -6949,7 +6710,7 @@
     ],
     "leichter": "Nur Zug 2 und 3: einmal fragen, ein Angebot aus einer Sami-Karte und einem aufgedeckten Wunsch. Der Erwachsene sagt schnell Ja zum Test.",
     "schwerer": "Der Erwachsene sagt erst Nein. Das Kind fragt: „Was bräuchtest du für ein Ja?“ und baut ein besseres Angebot. Dazu: Was tun, wenn der Test schiefgeht?",
-    "gruppe": "4–6, Fishbowl: Zug-Weg in der Mitte. Eine Person ist Sami (zwei dürfen sich die Rolle teilen), die Fachkraft spielt mit Jacke die gewählte Rolle. Die anderen sind Coaches mit je einer Zug-Karte: hochhalten, wenn „ihr“ Zug kommt, sonst „Time-out“ und einen Satz flüstern. Nach drei Minuten Jacke aus, neuer Sami – höchstens drei Runden.",
+    "gruppe": "4–6, Fishbowl: Zug-Weg in der Mitte. Eine Person ist Sami (zwei dürfen teilen), die Fachkraft spielt mit Jacke die gewählte Rolle. Die anderen stehen als Coaches je neben einem Zug-Blatt: Kommt ihr Zug, tippen sie mit dem Fuß darauf; fehlt er, rufen sie „Time-out“ und flüstern einen Satz. Nach drei Minuten „Stark war …“, Jacke aus, neuer Sami – höchstens drei Runden.",
     "beobachten": [
      "fragt im Rollenspiel nach, was dem anderen wichtig ist",
      "macht ein Angebot mit konkretem Stopp-Plan (Matches, Signal, Speicherpunkt)",
@@ -6972,10 +6733,11 @@
     "vorbereitung": [
      "Départ rapide (2 min) : imprimer la fiche. Ne pas découper – les cartes restent sur la planche, tu montres du doigt.",
      "Cartes du sol : une feuille A4 au gros feutre – coup 1 envie · coup 2 demander · coup 3 offre · coup 4 tester",
+     "Quatre papiers avec les envies de l’adulte, retournés à côté du coup 2",
      "Une veste ou un trousseau comme signe du rôle ; carte pause visible",
      "Lire la carte « Pour l’adulte » (rôle, sortie, posture)"
     ],
-    "aufbau": "0′ Question au pro – « Un match dure combien ? Pause en ligne ? »\n2′ Poser le chemin – « Envie, demander, offre, tester. »\n3′ Choisir le rôle – « Qui je joue ? »\n4′ Veste mise : deal – « Vas-y, Sami. »\n8′ Veste enlevée, « C’était fort… »\n9′ Un non honnête, phrase-clé (option : 2e tour)\n11′ Fiche (6 min) : tableau du deal\nIndispensable : rôle, un deal, veste enlevée.",
+    "aufbau": "0′ Question au pro – « Un match dure combien ? Pause en ligne ? »\n2′ Poser le chemin – « Envie, demander, offre, tester. »\n3′ Choisir le rôle – « Qui je joue ? »\n4′ Veste mise : deal – « Vas-y, Sami. »\n8′ Veste enlevée, « C’était fort… »\n9′ Un non honnête, phrase-clé (option : 2e tour)\n11′ Fiche (4 min) : tableau du deal\n15′ Fin\nIndispensable : rôle, un deal, veste enlevée.",
     "karten": [
      {
       "titel": "Les cartes de Sami (ce que Sami veut)",
@@ -6996,10 +6758,20 @@
       ]
      },
      {
+      "titel": "Ce que l’adulte veut (papiers retournés à côté du coup 2 – un par vraie question)",
+      "karten": [
+       "Assez de sommeil – pas d’écran l’heure avant de dormir.",
+       "Les devoirs d’abord.",
+       "Pas de dispute pour arrêter.",
+       "Du temps ensemble."
+      ]
+     },
+     {
       "titel": "Pour l’adulte : rôle, sortie, posture",
       "karten": [
        "Rôle (l’enfant choisit : père, tante, éducateur du foyer ou Carla) : fatigué, aimable, jamais fort. Départ : « Seulement le week-end. Point. »",
-       "Envies cachées – une par vraie question : assez de sommeil (pas d’écran l’heure avant) · devoirs d’abord · pas de dispute pour arrêter · du temps ensemble.",
+       "Les quatre papiers à côté du coup 2 sont tes envies cachées : si Sami demande vraiment (« Qu’est-ce qui compte pour toi ? »), retournes-en un.",
+       "En Carla, tu commences par « Sans accord, pas de Gaming-Mëttwoch. » ; en tante ou éducateur, comme le père.",
        "S’adoucit si Sami demande et fait une offre avec plan stop (une carte de Sami + une envie dévoilée). Fin : « D’accord, on teste une semaine. »",
        "Rôle mis et enlevé : une veste comme signe, carte pause visible. Si l’enfant sursaute à un rôle : pause, veste enlevée, on continue avec Carla.",
        "Posture : les adultes avec qui l’enfant vit fixent les règles ; on s’entraîne à négocier, pas à passer outre. Ne jamais demander qui fixe les règles.",
@@ -7009,7 +6781,7 @@
     ],
     "leichter": "Seulement les coups 2 et 3 : demander une fois, une offre avec une carte de Sami et une envie dévoilée. L’adulte dit vite oui au test.",
     "schwerer": "L’adulte dit d’abord non. L’enfant demande : « Qu’est-ce qu’il te faudrait pour dire oui ? » et construit une meilleure offre. Puis : que faire si le test rate ?",
-    "gruppe": "4 à 6, en aquarium : le chemin des coups au milieu. Une personne est Sami (deux peuvent se partager le rôle), l’adulte joue le rôle choisi avec la veste. Les autres sont coachs avec une carte coup chacun : la lever quand « leur » coup arrive, sinon « temps mort » et souffler une phrase. Après trois minutes, veste enlevée, nouveau Sami – trois tours au plus.",
+    "gruppe": "4 à 6, en aquarium : chemin des coups au milieu. Une personne est Sami (deux peuvent partager), l’adulte joue le rôle choisi avec la veste. Les autres sont coachs, chacun debout à côté d’une feuille : quand leur coup arrive, ils la touchent du pied ; s’il manque, « temps mort » et une phrase soufflée. Après trois minutes, « C’était fort… », veste enlevée, nouveau Sami – trois tours au plus.",
     "beobachten": [
      "demande dans le jeu de rôle ce qui compte pour l’autre",
      "fait une offre avec un plan stop concret (matchs, signal, sauvegarde)",
@@ -7077,9 +6849,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -7168,7 +6940,7 @@
       "ankreuzen",
       "nachdenken"
      ],
-     "text": "Dein Deal – oder einer für Sami oder das Team. Kreuz an."
+     "text": "Dein Deal – oder einer für Sami. Kreuz an."
     },
     {
      "art": "ankreuzen",
@@ -7237,16 +7009,9 @@
      ]
     },
     {
-     "art": "aufgabe",
-     "symbole": [
-      "sprechen"
-     ],
-     "text": "Wenn du magst: Probier deinen Deal in einem ruhigen Moment – nur, wenn es sich gut und sicher anfühlt. Ein Nein ist kein Verlieren."
-    },
-    {
      "art": "text",
      "klein": true,
-     "text": "Übrigens: Carla sagt Ja zum Test – zwei Mittwoche mit dem Deal des Teams. „Danach zeigt ihr mir euer ganzes Pause-Menü.“"
+     "text": "Übrigens: Carla sagt Ja zum Test – zwei Mittwoche mit dem Deal. „Danach zeigt ihr mir euer Pause-Menü.“"
     }
    ],
    "fr": [
@@ -7292,7 +7057,7 @@
       "ankreuzen",
       "nachdenken"
      ],
-     "text": "Ton deal – ou un deal pour Sami ou l’équipe. Coche."
+     "text": "Ton deal – ou un deal pour Sami. Coche."
     },
     {
      "art": "ankreuzen",
@@ -7361,16 +7126,9 @@
      ]
     },
     {
-     "art": "aufgabe",
-     "symbole": [
-      "sprechen"
-     ],
-     "text": "Si tu veux : essaie ton deal à un moment calme – seulement si tu te sens bien et en sécurité. Un non, ce n’est pas perdre."
-    },
-    {
      "art": "text",
      "klein": true,
-     "text": "Au fait : Carla dit oui au test – deux mercredis avec le deal de l’équipe. « Après, vous me montrez tout votre menu pause. »"
+     "text": "Au fait : Carla dit oui au test – deux mercredis avec le deal. « Après, vous me montrez votre menu pause. »"
     }
    ],
    "anleitung": {
@@ -7378,7 +7136,8 @@
      "text": "Den Kasten liest die Fachkraft vor. Bei Aufgabe 1 kreuzt das Kind an, wann es fragt und welches Angebot es macht – für sich, für Sami oder das Team. Fragt das Blatt nach dem Kind selbst, darf es für Sami oder das Team antworten. Dann den Knopf ausmalen; zum Schluss liest die Fachkraft die letzte Zeile wie eine Sprachnachricht vor.",
      "sagen": [
       "Wann wäre ein ruhiger Moment für so einen Deal?",
-      "Mit wem du verhandelst, musst du nicht sagen."
+      "Mit wem du verhandelst, musst du nicht sagen.",
+      "Wenn du magst: Probier deinen Deal in einem ruhigen Moment – nur, wenn es sich gut und sicher anfühlt. Ein Nein ist kein Verlieren."
      ],
      "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alles vor, und das Kind zeigt. Mit wem das Kind verhandelt, muss es nicht sagen."
     },
@@ -7386,7 +7145,8 @@
      "text": "L’adulte lit l’encadré. À l’exercice 1, l’enfant coche quand il ou elle demande et quelle offre il ou elle fait – pour soi, pour Sami ou pour l’équipe. Si la fiche demande quelque chose sur l’enfant, il ou elle peut répondre pour Sami ou l’équipe. Puis colorier le bouton ; pour finir, l’adulte lit la dernière ligne comme un message vocal.",
      "sagen": [
       "Quand y aurait-il un moment calme pour un tel deal ?",
-      "Avec qui tu négocies, tu n’as pas à le dire."
+      "Avec qui tu négocies, tu n’as pas à le dire.",
+      "Si tu veux : essaie ton deal à un moment calme – seulement si tu te sens bien et en sécurité. Un non, ce n’est pas perdre."
      ],
      "wennEsKippt": "Si lire est difficile, l’adulte lit tout et l’enfant montre. Avec qui l’enfant négocie, il ou elle n’a pas à le dire."
     }
@@ -7415,10 +7175,11 @@
     "vorbereitung": [
      "Schnellstart (2 Min.): Blatt drucken. Karten nicht schneiden – sie bleiben auf dem Bogen, du zeigst mit dem Finger.",
      "Bodenkarten: je ein A4-Blatt mit dickem Stift – Zug 1 Wunsch · Zug 2 Fragen · Zug 3 Angebot · Zug 4 Testen",
+     "Vier Zettel mit den Wünschen des Erwachsenen (Karte „Was der Erwachsene will“), umgedreht neben Zug 2",
      "Eine Jacke oder ein Schlüsselbund als Rollenzeichen; Pause-Karte sichtbar",
      "Karte „Nur für dich“ (Rolle, Ausstieg, Haltung) lesen"
     ],
-    "aufbau": "0′ Profi-Frage – „Wie lange dauert ein Match? Online pausieren?“\n2′ Zug-Weg legen – „Wunsch, fragen, Angebot, testen.“\n3′ Rolle wählen – „Wen soll ich spielen?“\n4′ Jacke an: Deal – „Leg los, Sami.“\n8′ Jacke aus, „Stark war …“\n9′ Ehrliches Nein, Merksatz (Kann: zweite Runde)\n11′ Blatt (6 Min.): Deal-Tabelle\nMuss: Rolle wählen, ein Deal, Jacke aus.",
+    "aufbau": "0′ Profi-Frage – „Wie lange dauert ein Match? Online pausieren?“\n2′ Zug-Weg legen – „Wunsch, fragen, Angebot, testen.“\n3′ Rolle wählen – „Wen soll ich spielen?“\n4′ Jacke an: Deal – „Leg los, Sami.“\n8′ Jacke aus, „Stark war …“\n9′ Ehrliches Nein, Merksatz (Kann: zweite Runde)\n11′ Blatt (4 Min.): Deal-Tabelle\n15′ Ende\nMuss: Rolle wählen, ein Deal, Jacke aus.",
     "karten": [
      {
       "titel": "Samis Karten (was Sami will)",
@@ -7439,10 +7200,20 @@
       ]
      },
      {
+      "titel": "Was der Erwachsene will (Zettel, umgedreht neben Zug 2 – je ehrliche Frage einen aufdecken)",
+      "karten": [
+       "Genug Schlaf – kein Bildschirm in der Stunde vor dem Schlafen.",
+       "Hausaufgaben zuerst.",
+       "Kein Streit beim Aufhören.",
+       "Zeit zusammen."
+      ]
+     },
+     {
       "titel": "Nur für dich: Rolle, Ausstieg, Haltung",
       "karten": [
        "Rolle (das Kind wählt: Vater, Tante, Betreuer im Foyer oder Carla): müde, freundlich, nie laut. Start: „Nur noch am Wochenende. Punkt.“",
-       "Verdeckte Wünsche, je ehrliche Frage einer: Schlaf (kein Bildschirm in der Stunde davor) · Hausaufgaben zuerst · kein Streit beim Aufhören · Zeit zusammen.",
+       "Die vier Zettel neben Zug 2 sind deine verdeckten Wünsche: Fragt Sami ehrlich („Was ist dir wichtig?“), dreh einen um.",
+       "Als Carla startest du mit „Ohne Abmachung kein Gaming-Mëttwoch.“; als Tante oder Betreuer wie der Vater.",
        "Wird weicher, wenn Sami fragt und ein Angebot mit Stopp-Plan macht (eine Sami-Karte + ein aufgedeckter Wunsch). Ende: „Okay, eine Woche testen.“",
        "Rolle an und aus: Jacke oder Schlüsselbund als Zeichen, Pause-Karte sichtbar. Zuckt das Kind bei einer Rolle zusammen: Pause, Jacke aus, mit Carla weiter.",
        "Haltung: Regeln legen die Erwachsenen fest, bei denen das Kind lebt; geübt wird Verhandeln, nicht Überstimmen. Nie fragen, wer zu Hause Regeln macht.",
@@ -7452,7 +7223,7 @@
     ],
     "leichter": "Nur Zug 2 und 3: einmal fragen, ein Angebot aus einer Sami-Karte und einem aufgedeckten Wunsch. Der Erwachsene sagt schnell Ja zum Test.",
     "schwerer": "Der Erwachsene sagt erst Nein. Das Kind fragt: „Was bräuchtest du für ein Ja?“ und baut ein besseres Angebot. Dazu: Was tun, wenn der Test schiefgeht?",
-    "gruppe": "4–6, Fishbowl: Zug-Weg in der Mitte. Eine Person ist Sami (zwei dürfen sich die Rolle teilen), die Fachkraft spielt mit Jacke die gewählte Rolle. Die anderen sind Coaches mit je einer Zug-Karte: hochhalten, wenn „ihr“ Zug kommt, sonst „Time-out“ und einen Satz flüstern. Nach drei Minuten Jacke aus, neuer Sami – höchstens drei Runden.",
+    "gruppe": "4–6, Fishbowl: Zug-Weg in der Mitte. Eine Person ist Sami (zwei dürfen teilen), die Fachkraft spielt mit Jacke die gewählte Rolle. Die anderen stehen als Coaches je neben einem Zug-Blatt: Kommt ihr Zug, tippen sie mit dem Fuß darauf; fehlt er, rufen sie „Time-out“ und flüstern einen Satz. Nach drei Minuten „Stark war …“, Jacke aus, neuer Sami – höchstens drei Runden.",
     "beobachten": [
      "fragt im Rollenspiel nach, was dem anderen wichtig ist",
      "macht ein Angebot mit konkretem Stopp-Plan (Matches, Signal, Speicherpunkt)",
@@ -7475,10 +7246,11 @@
     "vorbereitung": [
      "Départ rapide (2 min) : imprimer la fiche. Ne pas découper – les cartes restent sur la planche, tu montres du doigt.",
      "Cartes du sol : une feuille A4 au gros feutre – coup 1 envie · coup 2 demander · coup 3 offre · coup 4 tester",
+     "Quatre papiers avec les envies de l’adulte, retournés à côté du coup 2",
      "Une veste ou un trousseau comme signe du rôle ; carte pause visible",
      "Lire la carte « Pour l’adulte » (rôle, sortie, posture)"
     ],
-    "aufbau": "0′ Question au pro – « Un match dure combien ? Pause en ligne ? »\n2′ Poser le chemin – « Envie, demander, offre, tester. »\n3′ Choisir le rôle – « Qui je joue ? »\n4′ Veste mise : deal – « Vas-y, Sami. »\n8′ Veste enlevée, « C’était fort… »\n9′ Un non honnête, phrase-clé (option : 2e tour)\n11′ Fiche (6 min) : tableau du deal\nIndispensable : rôle, un deal, veste enlevée.",
+    "aufbau": "0′ Question au pro – « Un match dure combien ? Pause en ligne ? »\n2′ Poser le chemin – « Envie, demander, offre, tester. »\n3′ Choisir le rôle – « Qui je joue ? »\n4′ Veste mise : deal – « Vas-y, Sami. »\n8′ Veste enlevée, « C’était fort… »\n9′ Un non honnête, phrase-clé (option : 2e tour)\n11′ Fiche (4 min) : tableau du deal\n15′ Fin\nIndispensable : rôle, un deal, veste enlevée.",
     "karten": [
      {
       "titel": "Les cartes de Sami (ce que Sami veut)",
@@ -7499,10 +7271,20 @@
       ]
      },
      {
+      "titel": "Ce que l’adulte veut (papiers retournés à côté du coup 2 – un par vraie question)",
+      "karten": [
+       "Assez de sommeil – pas d’écran l’heure avant de dormir.",
+       "Les devoirs d’abord.",
+       "Pas de dispute pour arrêter.",
+       "Du temps ensemble."
+      ]
+     },
+     {
       "titel": "Pour l’adulte : rôle, sortie, posture",
       "karten": [
        "Rôle (l’enfant choisit : père, tante, éducateur du foyer ou Carla) : fatigué, aimable, jamais fort. Départ : « Seulement le week-end. Point. »",
-       "Envies cachées – une par vraie question : assez de sommeil (pas d’écran l’heure avant) · devoirs d’abord · pas de dispute pour arrêter · du temps ensemble.",
+       "Les quatre papiers à côté du coup 2 sont tes envies cachées : si Sami demande vraiment (« Qu’est-ce qui compte pour toi ? »), retournes-en un.",
+       "En Carla, tu commences par « Sans accord, pas de Gaming-Mëttwoch. » ; en tante ou éducateur, comme le père.",
        "S’adoucit si Sami demande et fait une offre avec plan stop (une carte de Sami + une envie dévoilée). Fin : « D’accord, on teste une semaine. »",
        "Rôle mis et enlevé : une veste comme signe, carte pause visible. Si l’enfant sursaute à un rôle : pause, veste enlevée, on continue avec Carla.",
        "Posture : les adultes avec qui l’enfant vit fixent les règles ; on s’entraîne à négocier, pas à passer outre. Ne jamais demander qui fixe les règles.",
@@ -7512,7 +7294,7 @@
     ],
     "leichter": "Seulement les coups 2 et 3 : demander une fois, une offre avec une carte de Sami et une envie dévoilée. L’adulte dit vite oui au test.",
     "schwerer": "L’adulte dit d’abord non. L’enfant demande : « Qu’est-ce qu’il te faudrait pour dire oui ? » et construit une meilleure offre. Puis : que faire si le test rate ?",
-    "gruppe": "4 à 6, en aquarium : le chemin des coups au milieu. Une personne est Sami (deux peuvent se partager le rôle), l’adulte joue le rôle choisi avec la veste. Les autres sont coachs avec une carte coup chacun : la lever quand « leur » coup arrive, sinon « temps mort » et souffler une phrase. Après trois minutes, veste enlevée, nouveau Sami – trois tours au plus.",
+    "gruppe": "4 à 6, en aquarium : chemin des coups au milieu. Une personne est Sami (deux peuvent partager), l’adulte joue le rôle choisi avec la veste. Les autres sont coachs, chacun debout à côté d’une feuille : quand leur coup arrive, ils la touchent du pied ; s’il manque, « temps mort » et une phrase soufflée. Après trois minutes, « C’était fort… », veste enlevée, nouveau Sami – trois tours au plus.",
     "beobachten": [
      "demande dans le jeu de rôle ce qui compte pour l’autre",
      "fait une offre avec un plan stop concret (matchs, signal, sauvegarde)",
@@ -7572,9 +7354,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -7646,7 +7428,7 @@
      "Vier Zettel und ein Stift",
      "Jacke oder Schlüsselbund als Rollenzeichen; Pause-Karte sichtbar"
     ],
-    "aufbau": "0′ Samis neue Regel – „Nur noch am Wochenende.“\n1′ Rolle wählen, Zettel schreiben\n3′ Zug 1 – „Was will Sami und warum?“\n4′ Fragen und aufdecken – „Was ist dir wichtig?“\n7′ Angebot – „Passt das zu beiden?“\n9′ Deal mit Test, Rollentausch, Jacke aus\n11′ Blatt (6 Min.)\nMuss: aufdecken, ein Deal, Jacke aus.",
+    "aufbau": "0′ Samis neue Regel – „Nur noch am Wochenende.“\n1′ Rolle wählen, Zettel schreiben\n3′ Zug 1 – „Was will Sami und warum?“\n4′ Fragen und aufdecken – „Was ist dir wichtig?“\n7′ Angebot – „Passt das zu beiden?“\n9′ Deal mit Test, Rollentausch, Jacke aus\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: aufdecken, ein Deal, Jacke aus.",
     "karten": [
      {
       "titel": "Samis Karten (was Sami will)",
@@ -7667,10 +7449,20 @@
       ]
      },
      {
+      "titel": "Was der Erwachsene will (Zettel, umgedreht neben Zug 2 – je ehrliche Frage einen aufdecken)",
+      "karten": [
+       "Genug Schlaf – kein Bildschirm in der Stunde vor dem Schlafen.",
+       "Hausaufgaben zuerst.",
+       "Kein Streit beim Aufhören.",
+       "Zeit zusammen."
+      ]
+     },
+     {
       "titel": "Nur für dich: Rolle, Ausstieg, Haltung",
       "karten": [
        "Rolle (das Kind wählt: Vater, Tante, Betreuer im Foyer oder Carla): müde, freundlich, nie laut. Start: „Nur noch am Wochenende. Punkt.“",
-       "Verdeckte Wünsche, je ehrliche Frage einer: Schlaf (kein Bildschirm in der Stunde davor) · Hausaufgaben zuerst · kein Streit beim Aufhören · Zeit zusammen.",
+       "Die vier Zettel neben Zug 2 sind deine verdeckten Wünsche: Fragt Sami ehrlich („Was ist dir wichtig?“), dreh einen um.",
+       "Als Carla startest du mit „Ohne Abmachung kein Gaming-Mëttwoch.“; als Tante oder Betreuer wie der Vater.",
        "Wird weicher, wenn Sami fragt und ein Angebot mit Stopp-Plan macht (eine Sami-Karte + ein aufgedeckter Wunsch). Ende: „Okay, eine Woche testen.“",
        "Rolle an und aus: Jacke oder Schlüsselbund als Zeichen, Pause-Karte sichtbar. Zuckt das Kind bei einer Rolle zusammen: Pause, Jacke aus, mit Carla weiter.",
        "Haltung: Regeln legen die Erwachsenen fest, bei denen das Kind lebt; geübt wird Verhandeln, nicht Überstimmen. Nie fragen, wer zu Hause Regeln macht.",
@@ -7705,7 +7497,7 @@
      "Quatre papiers et un stylo",
      "Une veste ou un trousseau comme signe du rôle ; carte pause visible"
     ],
-    "aufbau": "0′ Nouvelle règle de Sami – « Seulement le week-end. »\n1′ Choisir le rôle, écrire les papiers\n3′ Coup 1 – « Que veut Sami et pourquoi ? »\n4′ Demander, retourner – « Qu’est-ce qui compte pour toi ? »\n7′ Offre – « Ça va pour les deux ? »\n9′ Deal avec test, échange, veste enlevée\n11′ Fiche (6 min)\nIndispensable : retourner, un deal, veste enlevée.",
+    "aufbau": "0′ Nouvelle règle de Sami – « Seulement le week-end. »\n1′ Choisir le rôle, écrire les papiers\n3′ Coup 1 – « Que veut Sami et pourquoi ? »\n4′ Demander, retourner – « Qu’est-ce qui compte pour toi ? »\n7′ Offre – « Ça va pour les deux ? »\n9′ Deal avec test, échange, veste enlevée\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : retourner, un deal, veste enlevée.",
     "karten": [
      {
       "titel": "Les cartes de Sami (ce que Sami veut)",
@@ -7726,10 +7518,20 @@
       ]
      },
      {
+      "titel": "Ce que l’adulte veut (papiers retournés à côté du coup 2 – un par vraie question)",
+      "karten": [
+       "Assez de sommeil – pas d’écran l’heure avant de dormir.",
+       "Les devoirs d’abord.",
+       "Pas de dispute pour arrêter.",
+       "Du temps ensemble."
+      ]
+     },
+     {
       "titel": "Pour l’adulte : rôle, sortie, posture",
       "karten": [
        "Rôle (l’enfant choisit : père, tante, éducateur du foyer ou Carla) : fatigué, aimable, jamais fort. Départ : « Seulement le week-end. Point. »",
-       "Envies cachées – une par vraie question : assez de sommeil (pas d’écran l’heure avant) · devoirs d’abord · pas de dispute pour arrêter · du temps ensemble.",
+       "Les quatre papiers à côté du coup 2 sont tes envies cachées : si Sami demande vraiment (« Qu’est-ce qui compte pour toi ? »), retournes-en un.",
+       "En Carla, tu commences par « Sans accord, pas de Gaming-Mëttwoch. » ; en tante ou éducateur, comme le père.",
        "S’adoucit si Sami demande et fait une offre avec plan stop (une carte de Sami + une envie dévoilée). Fin : « D’accord, on teste une semaine. »",
        "Rôle mis et enlevé : une veste comme signe, carte pause visible. Si l’enfant sursaute à un rôle : pause, veste enlevée, on continue avec Carla.",
        "Posture : les adultes avec qui l’enfant vit fixent les règles ; on s’entraîne à négocier, pas à passer outre. Ne jamais demander qui fixe les règles.",
@@ -7800,9 +7602,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -7871,7 +7673,7 @@
      "Ein Stift als Mikro",
      "Rollenkarte Carla lesen (Nur für dich)"
     ],
-    "aufbau": "0′ Carlas Satz – „Nur noch 30 Minuten.“\n1′ Interview – „Was ist dir wichtig?“\n5′ Profi-Frage – „Wie lange dauert ein Match?“\n6′ Angebot bauen – „Mit Stopp-Plan, Rechnung geht auf.“\n9′ Deal – „Hm, noch nicht.“ – zweite Fassung\n10′ Rollentausch, Merksatz\n11′ Blatt (6 Min.)\nMuss: Interview, Angebot.",
+    "aufbau": "0′ Carlas Satz – „Nur noch 30 Minuten.“\n1′ Interview – „Was ist dir wichtig?“\n5′ Profi-Frage – „Wie lange dauert ein Match?“\n6′ Angebot bauen – „Mit Stopp-Plan, Rechnung geht auf.“\n9′ Deal – „Hm, noch nicht.“ – zweite Fassung\n10′ Rollentausch, Merksatz\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: Interview, Angebot.",
     "karten": [
      {
       "titel": "Fragekarten für das Interview mit Carla",
@@ -7928,7 +7730,7 @@
      "Un stylo comme micro",
      "Lire la carte rôle de Carla (Pour l’adulte)"
     ],
-    "aufbau": "0′ La phrase de Carla – « Seulement 30 minutes. »\n1′ Interview – « Qu’est-ce qui compte pour toi ? »\n5′ Question au pro – « Un match dure combien ? »\n6′ Construire l’offre – « Plan stop, calcul juste. »\n9′ Deal – « Hum, pas encore. » – 2e version\n10′ On échange, phrase-clé\n11′ Fiche (6 min)\nIndispensable : interview, offre.",
+    "aufbau": "0′ La phrase de Carla – « Seulement 30 minutes. »\n1′ Interview – « Qu’est-ce qui compte pour toi ? »\n5′ Question au pro – « Un match dure combien ? »\n6′ Construire l’offre – « Plan stop, calcul juste. »\n9′ Deal – « Hum, pas encore. » – 2e version\n10′ On échange, phrase-clé\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : interview, offre.",
     "karten": [
      {
       "titel": "Cartes questions pour l’interview de Carla",
@@ -8029,9 +7831,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -8079,48 +7881,23 @@
    },
    "de": [
     {
-     "art": "spalten",
-     "verhaeltnis": "2:1",
-     "links": [
-      {
-       "art": "info",
-       "symbol": "wissen",
-       "titel": "Dein Pause-Menü",
-       "punkte": [
-        "Profil",
-        "Tricks",
-        "Speichern",
-        "Respawn",
-        "Deal"
-       ]
-      }
-     ],
-     "rechts": [
-      {
-       "art": "bild",
-       "bild": "motiv:controller",
-       "groesse": "m",
-       "text": "Alle fünf Knöpfe",
-       "ausrichtung": "mitte"
-      }
-     ]
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Urkunde: Profi für mein Spiel",
+     "text": "______________ hat alle fünf Knöpfe freigeschaltet: Ich spiele – und ich steuere."
     },
     {
      "art": "aufgabe",
      "symbole": [
       "schreiben"
      ],
-     "text": "Dein Pause-Menü: ein Satz pro Knopf, der dir hilft."
+     "text": "Welcher Knopf hilft dir am meisten? Schreib ihn auf – mit einem Satz."
     },
     {
      "art": "satzanfaenge",
-     "linien": 1,
+     "linien": 2,
      "items": [
-      "Profil:",
-      "Tricks:",
-      "Speichern:",
-      "Respawn:",
-      "Deal:"
+      "Mein Knopf:"
      ]
     },
     {
@@ -8144,7 +7921,7 @@
      "symbole": [
       "malen"
      ],
-     "text": "Dein Pause-Menü ist komplett: Mal alles aus."
+     "text": "Mal alle Knöpfe aus."
     },
     {
      "art": "bilder",
@@ -8195,61 +7972,30 @@
      ]
     },
     {
-     "art": "info",
-     "symbol": "merke",
-     "titel": "Urkunde: Profi für mein Spiel",
-     "text": "______________ hat alle fünf Knöpfe freigeschaltet: Ich spiele – und ich steuere."
-    },
-    {
      "art": "text",
      "klein": true,
-     "text": "Und Noah? Im Gruppenchat: „Meng Serie ass fort. Egal – d’Këscht hunn ech net kaaft.“ Lea: „Bora! Turnéier e Mëttwoch?“ (= Meine Serie ist weg. Egal – die Truhe habe ich nicht gekauft · Turnier am Mittwoch?)"
+     "text": "Und Noah? Im Chat: „D’Këscht hunn ech net kaaft.“ (= Die Truhe habe ich nicht gekauft.)"
     }
    ],
    "fr": [
     {
-     "art": "spalten",
-     "verhaeltnis": "2:1",
-     "links": [
-      {
-       "art": "info",
-       "symbol": "wissen",
-       "titel": "Ton menu pause",
-       "punkte": [
-        "Profil",
-        "Pièges",
-        "Sauvegarder",
-        "Respawn",
-        "Deal"
-       ]
-      }
-     ],
-     "rechts": [
-      {
-       "art": "bild",
-       "bild": "motiv:controller",
-       "groesse": "m",
-       "text": "Les cinq boutons",
-       "ausrichtung": "mitte"
-      }
-     ]
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Diplôme : pro de mon jeu",
+     "text": "______________ a débloqué les cinq boutons : je joue – et je pilote."
     },
     {
      "art": "aufgabe",
      "symbole": [
       "schreiben"
      ],
-     "text": "Ton menu pause : une phrase par bouton, qui t’aide."
+     "text": "Quel bouton t’aide le plus ? Écris-le – avec une phrase."
     },
     {
      "art": "satzanfaenge",
-     "linien": 1,
+     "linien": 2,
      "items": [
-      "Profil :",
-      "Pièges :",
-      "Sauvegarder :",
-      "Respawn :",
-      "Deal :"
+      "Mon bouton :"
      ]
     },
     {
@@ -8273,7 +8019,7 @@
      "symbole": [
       "malen"
      ],
-     "text": "Ton menu pause est complet : colorie tout."
+     "text": "Colorie tous les boutons."
     },
     {
      "art": "bilder",
@@ -8324,20 +8070,14 @@
      ]
     },
     {
-     "art": "info",
-     "symbol": "merke",
-     "titel": "Diplôme : pro de mon jeu",
-     "text": "______________ a débloqué les cinq boutons : je joue – et je pilote."
-    },
-    {
      "art": "text",
      "klein": true,
-     "text": "Et Noah ? Dans le groupe : « Meng Serie ass fort. Egal – d’Këscht hunn ech net kaaft. » Lea : « Bora ! Turnéier e Mëttwoch ? » (= Ma série a disparu. Pas grave – le coffre, je ne l’ai pas acheté · Tournoi mercredi ?)"
+     "text": "Et Noah ? Dans le chat : « D’Këscht hunn ech net kaaft. » (= Le coffre, je ne l’ai pas acheté.)"
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1: ein Satz pro Knopf – die Merksätze in der Mappe helfen. Aufgabe 2: Das Kind schreibt die zwei Regeln für Erwachsene, die Fachkraft unterschreibt als Carla. Dann das ganze Menü ausmalen. Den Kasten „Wer hilft“ liest die Fachkraft vor; die Urkunde ergänzt sie mit einem konkreten Satz zu einer Beobachtung. Zum Schluss die letzte Zeile wie eine Sprachnachricht vorlesen.",
+     "text": "Aufgabe 1: der Knopf, der am meisten hilft – mit einem Satz; die Merksätze in der Mappe helfen. Aufgabe 2: Das Kind schreibt die zwei Regeln für Erwachsene, die Fachkraft unterschreibt als Carla. Dann das ganze Menü ausmalen. Den Kasten „Wer hilft“ liest die Fachkraft vor; die Urkunde ergänzt sie mit einem konkreten Satz zu einer Beobachtung. Zum Schluss die letzte Zeile wie eine Sprachnachricht vorlesen.",
      "sagen": [
       "Welcher Satz soll in deinem Menü ganz oben stehen?",
       "Ich unterschreibe – versprochen."
@@ -8345,7 +8085,7 @@
      "wennEsKippt": "Fällt Schreiben schwer, reicht ein Wort pro Knopf, oder das Kind diktiert. Was „noch schwer“ ist, wird nicht bewertet."
     },
     "fr": {
-     "text": "Exercice 1 : une phrase par bouton – les phrases-clés du dossier aident. Exercice 2 : l’enfant écrit les deux règles pour les adultes, l’adulte signe en tant que Carla. Puis colorier tout le menu. L’adulte lit l’encadré « Qui aide » et complète le diplôme avec une phrase concrète sur une observation. Pour finir, lire la dernière ligne comme un message vocal.",
+     "text": "Exercice 1 : le bouton qui aide le plus – avec une phrase ; les phrases-clés du dossier aident. Exercice 2 : l’enfant écrit les deux règles pour les adultes, l’adulte signe en tant que Carla. Puis colorier tout le menu. L’adulte lit l’encadré « Qui aide » et complète le diplôme avec une phrase concrète sur une observation. Pour finir, lire la dernière ligne comme un message vocal.",
      "sagen": [
       "Quelle phrase doit être tout en haut de ton menu ?",
       "Je signe – promis."
@@ -8380,7 +8120,7 @@
      "Einen konkreten Satz für die Urkunde überlegen (eine Beobachtung aus den Treffen)",
      "Karte „Nur für dich“ neben dich legen"
     ],
-    "aufbau": "0′ Im Stehen – „Ich bin Carla, Gaming-Noob. Erklär mir euer Menü!“\n2′ Carlas Fragen – „Welcher Knopf hilft hier?“\n6′ Rückblick – „Was hat geholfen, was ist noch schwer?“\n8′ Zwei Regeln für Erwachsene – Carla unterschreibt\n10′ Wer hilft, Merksatz\n11′ Blatt (6 Min.): eigenes Menü\nMuss: Fragen, Regeln, wer hilft. Wird es knapp: 4 Fragen.",
+    "aufbau": "0′ Im Stehen – „Ich bin Carla, Gaming-Noob. Erklär mir euer Menü!“\n2′ Carlas Fragen – „Welcher Knopf hilft hier?“\n6′ Rückblick – „Was hat geholfen, was ist noch schwer?“\n8′ Zwei Regeln für Erwachsene – Carla unterschreibt\n10′ Wer hilft, Merksatz\n11′ Blatt (4 Min.): eigenes Menü\n15′ Ende\nMuss: Fragen, Regeln, wer hilft. Wird es knapp: 4 Fragen.",
     "karten": [
      {
       "titel": "Carlas Fragen (zum Vorlesen)",
@@ -8440,7 +8180,7 @@
      "Penser à une phrase concrète pour le diplôme (une observation des rencontres)",
      "Garder la carte « Pour l’adulte » à côté de soi"
     ],
-    "aufbau": "0′ Debout – « Je suis Carla, noob en jeux. Explique-moi votre menu ! »\n2′ Questions de Carla – « Quel bouton aide ici ? »\n6′ Bilan – « Le plus utile ? Encore difficile ? »\n8′ Deux règles pour les adultes – Carla signe\n10′ Qui aide, phrase-clé\n11′ Fiche (6 min) : son menu\nIndispensable : questions, règles, qui aide. Si le temps manque : 4 questions.",
+    "aufbau": "0′ Debout – « Je suis Carla, noob en jeux. Explique-moi votre menu ! »\n2′ Questions de Carla – « Quel bouton aide ici ? »\n6′ Bilan – « Le plus utile ? Encore difficile ? »\n8′ Deux règles pour les adultes – Carla signe\n10′ Qui aide, phrase-clé\n11′ Fiche (4 min) : son menu\n15′ Fin\nIndispensable : questions, règles, qui aide. Si le temps manque : 4 questions.",
     "karten": [
      {
       "titel": "Les questions de Carla (à lire)",
@@ -8546,9 +8286,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -8596,49 +8336,21 @@
    },
    "de": [
     {
-     "art": "spalten",
-     "verhaeltnis": "2:1",
-     "links": [
-      {
-       "art": "info",
-       "symbol": "wissen",
-       "titel": "Dein Pause-Menü",
-       "punkte": [
-        "Profil",
-        "Tricks",
-        "Speichern",
-        "Respawn",
-        "Deal"
-       ]
-      }
-     ],
-     "rechts": [
-      {
-       "art": "bild",
-       "bild": "motiv:controller",
-       "groesse": "m",
-       "text": "Alle fünf Knöpfe",
-       "ausrichtung": "mitte"
-      }
-     ]
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Urkunde: Profi für mein Spiel",
+     "text": "______________ hat alle fünf Knöpfe freigeschaltet: Ich spiele – und ich steuere."
     },
     {
      "art": "aufgabe",
      "symbole": [
       "ankreuzen"
      ],
-     "text": "Dein Pause-Menü: Hilft dir der Knopf schon – oder übst du noch?"
+     "text": "Welcher Knopf hilft dir am meisten? Kreuz ihn an."
     },
     {
-     "art": "einschaetzung",
-     "kopffarben": [
-      "gruen",
-      "gelb"
-     ],
-     "optionen": [
-      "hilft schon",
-      "übe ich noch"
-     ],
+     "art": "ankreuzen",
+     "spalten": 3,
      "items": [
       "Profil",
       "Tricks",
@@ -8669,7 +8381,7 @@
      "symbole": [
       "malen"
      ],
-     "text": "Dein Pause-Menü ist komplett: Mal alles aus."
+     "text": "Mal alle Knöpfe aus."
     },
     {
      "art": "bilder",
@@ -8720,62 +8432,28 @@
      ]
     },
     {
-     "art": "info",
-     "symbol": "merke",
-     "titel": "Urkunde: Profi für mein Spiel",
-     "text": "______________ hat alle fünf Knöpfe freigeschaltet: Ich spiele – und ich steuere."
-    },
-    {
      "art": "text",
      "klein": true,
-     "text": "Und Noah? Im Gruppenchat: „Meng Serie ass fort. Egal – d’Këscht hunn ech net kaaft.“ Lea: „Bora! Turnéier e Mëttwoch?“ (= Meine Serie ist weg. Egal – die Truhe habe ich nicht gekauft · Turnier am Mittwoch?)"
+     "text": "Und Noah? Im Chat: „D’Këscht hunn ech net kaaft.“ (= Die Truhe habe ich nicht gekauft.)"
     }
    ],
    "fr": [
     {
-     "art": "spalten",
-     "verhaeltnis": "2:1",
-     "links": [
-      {
-       "art": "info",
-       "symbol": "wissen",
-       "titel": "Ton menu pause",
-       "punkte": [
-        "Profil",
-        "Pièges",
-        "Sauvegarder",
-        "Respawn",
-        "Deal"
-       ]
-      }
-     ],
-     "rechts": [
-      {
-       "art": "bild",
-       "bild": "motiv:controller",
-       "groesse": "m",
-       "text": "Les cinq boutons",
-       "ausrichtung": "mitte"
-      }
-     ]
+     "art": "info",
+     "symbol": "merke",
+     "titel": "Diplôme : pro de mon jeu",
+     "text": "______________ a débloqué les cinq boutons : je joue – et je pilote."
     },
     {
      "art": "aufgabe",
      "symbole": [
       "ankreuzen"
      ],
-     "text": "Ton menu pause : le bouton t’aide déjà – ou tu t’entraînes encore ?"
+     "text": "Quel bouton t’aide le plus ? Coche-le."
     },
     {
-     "art": "einschaetzung",
-     "kopffarben": [
-      "gruen",
-      "gelb"
-     ],
-     "optionen": [
-      "aide déjà",
-      "je m’entraîne"
-     ],
+     "art": "ankreuzen",
+     "spalten": 3,
      "items": [
       "Profil",
       "Pièges",
@@ -8806,7 +8484,7 @@
      "symbole": [
       "malen"
      ],
-     "text": "Ton menu pause est complet : colorie tout."
+     "text": "Colorie tous les boutons."
     },
     {
      "art": "bilder",
@@ -8857,20 +8535,14 @@
      ]
     },
     {
-     "art": "info",
-     "symbol": "merke",
-     "titel": "Diplôme : pro de mon jeu",
-     "text": "______________ a débloqué les cinq boutons : je joue – et je pilote."
-    },
-    {
      "art": "text",
      "klein": true,
-     "text": "Et Noah ? Dans le groupe : « Meng Serie ass fort. Egal – d’Këscht hunn ech net kaaft. » Lea : « Bora ! Turnéier e Mëttwoch ? » (= Ma série a disparu. Pas grave – le coffre, je ne l’ai pas acheté · Tournoi mercredi ?)"
+     "text": "Et Noah ? Dans le chat : « D’Këscht hunn ech net kaaft. » (= Le coffre, je ne l’ai pas acheté.)"
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Aufgabe 1: Das Kind kreuzt für jeden Knopf an, ob er schon hilft; die Fachkraft liest die Knöpfe vor. Aufgabe 2: Es kreuzt zwei Regeln für Erwachsene an, die Fachkraft unterschreibt als Carla. Dann das ganze Menü ausmalen. Den Kasten „Wer hilft“ liest die Fachkraft vor, die Urkunde ergänzt sie mit einem konkreten Satz.",
+     "text": "Aufgabe 1: Das Kind kreuzt den Knopf an, der am meisten hilft; die Fachkraft liest die Knöpfe vor. Aufgabe 2: Es kreuzt zwei Regeln für Erwachsene an, die Fachkraft unterschreibt als Carla. Dann das ganze Menü ausmalen. Den Kasten „Wer hilft“ liest die Fachkraft vor, die Urkunde ergänzt sie mit einem konkreten Satz.",
      "sagen": [
       "Welcher Knopf hilft dir schon?",
       "Ich unterschreibe – versprochen."
@@ -8878,7 +8550,7 @@
      "wennEsKippt": "Fällt Lesen schwer, liest die Fachkraft alles vor, und das Kind zeigt."
     },
     "fr": {
-     "text": "Exercice 1 : pour chaque bouton, l’enfant coche s’il aide déjà ; l’adulte lit les boutons. Exercice 2 : il ou elle coche deux règles pour les adultes, l’adulte signe en tant que Carla. Puis colorier tout le menu. L’adulte lit l’encadré « Qui aide » et complète le diplôme avec une phrase concrète.",
+     "text": "Exercice 1 : l’enfant coche le bouton qui aide le plus ; l’adulte lit les boutons. Exercice 2 : il ou elle coche deux règles pour les adultes, l’adulte signe en tant que Carla. Puis colorier tout le menu. L’adulte lit l’encadré « Qui aide » et complète le diplôme avec une phrase concrète.",
      "sagen": [
       "Quel bouton t’aide déjà ?",
       "Je signe – promis."
@@ -8913,7 +8585,7 @@
      "Einen konkreten Satz für die Urkunde überlegen (eine Beobachtung aus den Treffen)",
      "Karte „Nur für dich“ neben dich legen"
     ],
-    "aufbau": "0′ Im Stehen – „Ich bin Carla, Gaming-Noob. Erklär mir euer Menü!“\n2′ Carlas Fragen – „Welcher Knopf hilft hier?“\n6′ Rückblick – „Was hat geholfen, was ist noch schwer?“\n8′ Zwei Regeln für Erwachsene – Carla unterschreibt\n10′ Wer hilft, Merksatz\n11′ Blatt (6 Min.): eigenes Menü\nMuss: Fragen, Regeln, wer hilft. Wird es knapp: 4 Fragen.",
+    "aufbau": "0′ Im Stehen – „Ich bin Carla, Gaming-Noob. Erklär mir euer Menü!“\n2′ Carlas Fragen – „Welcher Knopf hilft hier?“\n6′ Rückblick – „Was hat geholfen, was ist noch schwer?“\n8′ Zwei Regeln für Erwachsene – Carla unterschreibt\n10′ Wer hilft, Merksatz\n11′ Blatt (4 Min.): eigenes Menü\n15′ Ende\nMuss: Fragen, Regeln, wer hilft. Wird es knapp: 4 Fragen.",
     "karten": [
      {
       "titel": "Carlas Fragen (zum Vorlesen)",
@@ -8973,7 +8645,7 @@
      "Penser à une phrase concrète pour le diplôme (une observation des rencontres)",
      "Garder la carte « Pour l’adulte » à côté de soi"
     ],
-    "aufbau": "0′ Debout – « Je suis Carla, noob en jeux. Explique-moi votre menu ! »\n2′ Questions de Carla – « Quel bouton aide ici ? »\n6′ Bilan – « Le plus utile ? Encore difficile ? »\n8′ Deux règles pour les adultes – Carla signe\n10′ Qui aide, phrase-clé\n11′ Fiche (6 min) : son menu\nIndispensable : questions, règles, qui aide. Si le temps manque : 4 questions.",
+    "aufbau": "0′ Debout – « Je suis Carla, noob en jeux. Explique-moi votre menu ! »\n2′ Questions de Carla – « Quel bouton aide ici ? »\n6′ Bilan – « Le plus utile ? Encore difficile ? »\n8′ Deux règles pour les adultes – Carla signe\n10′ Qui aide, phrase-clé\n11′ Fiche (4 min) : son menu\n15′ Fin\nIndispensable : questions, règles, qui aide. Si le temps manque : 4 questions.",
     "karten": [
      {
       "titel": "Les questions de Carla (à lire)",
@@ -9071,9 +8743,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -9144,7 +8816,7 @@
      "Zwei Würfel (der zweite für „schwerer“)",
      "Carlas Fragen auf dem Bogen"
     ],
-    "aufbau": "0′ Carla will lernen – „Erklärt mir das Menü.“\n1′ Würfeln – „1 Profil … 6 Joker.“\n3′ Antworten oder zeigen – „Zeig mir Respawn.“\n7′ Fachkraft als Lea – „Stimmt das, Profi?“\n9′ Zwei Regeln für Erwachsene, wer hilft, Merksatz\n11′ Blatt (6 Min.)\nMuss: jeder Knopf einmal, Regeln. Wird es knapp: ohne Fachkraft-Runde.",
+    "aufbau": "0′ Carla will lernen – „Erklärt mir das Menü.“\n1′ Würfeln – „1 Profil … 6 Joker.“\n3′ Antworten oder zeigen – „Zeig mir Respawn.“\n7′ Fachkraft als Lea – „Stimmt das, Profi?“\n9′ Zwei Regeln für Erwachsene, wer hilft, Merksatz\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: jeder Knopf einmal, Regeln. Wird es knapp: ohne Fachkraft-Runde.",
     "karten": [
      {
       "titel": "Carlas Fragen (zum Vorlesen)",
@@ -9203,7 +8875,7 @@
      "Deux dés (le deuxième pour « plus difficile »)",
      "Les questions de Carla sur la planche"
     ],
-    "aufbau": "0′ Carla veut apprendre – « Expliquez-moi le menu. »\n1′ Le dé – « 1 profil… 6 joker. »\n3′ Répondre ou montrer – « Montre-moi le respawn. »\n7′ L’adulte joue Lea – « C’est juste, le pro ? »\n9′ Deux règles pour les adultes, qui aide, phrase-clé\n11′ Fiche (6 min)\nIndispensable : chaque bouton une fois, règles. Si le temps manque : sans le tour de l’adulte.",
+    "aufbau": "0′ Carla veut apprendre – « Expliquez-moi le menu. »\n1′ Le dé – « 1 profil… 6 joker. »\n3′ Répondre ou montrer – « Montre-moi le respawn. »\n7′ L’adulte joue Lea – « C’est juste, le pro ? »\n9′ Deux règles pour les adultes, qui aide, phrase-clé\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : chaque bouton une fois, règles. Si le temps manque : sans le tour de l’adulte.",
     "karten": [
      {
       "titel": "Les questions de Carla (à lire)",
@@ -9302,9 +8974,9 @@
    "bis": 12
   },
   "dauer": {
-   "min": 10,
-   "typ": 12,
-   "max": 15
+   "min": 12,
+   "typ": 15,
+   "max": 17
   },
   "sozialform": [
    "einzeln"
@@ -9376,7 +9048,7 @@
      "Knete (oder Papier und Buntstifte), ein paar Zettel",
      "Carlas Fragen auf dem Bogen"
     ],
-    "aufbau": "0′ Carla will lernen – „Zeigt mir das Menü.“\n1′ Controller formen – „Fünf Knöpfe.“\n5′ Sätze – „Einer pro Knopf.“\n7′ Carla drückt – „Respawn! Was jetzt?“\n9′ Rollentausch\n10′ Regel für Erwachsene, wer hilft, Merksatz\n11′ Blatt (6 Min.)\nMuss: Controller, Carla drückt. Wird es knapp: drei Knöpfe.",
+    "aufbau": "0′ Carla will lernen – „Zeigt mir das Menü.“\n1′ Controller formen – „Fünf Knöpfe.“\n5′ Sätze – „Einer pro Knopf.“\n7′ Carla drückt – „Respawn! Was jetzt?“\n9′ Rollentausch\n10′ Regel für Erwachsene, wer hilft, Merksatz\n11′ Blatt (4 Min.)\n15′ Ende\nMuss: Controller, Carla drückt. Wird es knapp: drei Knöpfe.",
     "karten": [
      {
       "titel": "Carlas Fragen (zum Vorlesen)",
@@ -9435,7 +9107,7 @@
      "Pâte à modeler (ou papier et crayons de couleur), quelques papiers",
      "Les questions de Carla sur la planche"
     ],
-    "aufbau": "0′ Carla veut apprendre – « Montrez-moi le menu. »\n1′ Modeler la manette – « Cinq boutons. »\n5′ Phrases – « Une par bouton. »\n7′ Carla appuie – « Respawn ! Et maintenant ? »\n9′ On échange\n10′ Règle pour les adultes, qui aide, phrase-clé\n11′ Fiche (6 min)\nIndispensable : manette, Carla appuie. Si le temps manque : trois boutons.",
+    "aufbau": "0′ Carla veut apprendre – « Montrez-moi le menu. »\n1′ Modeler la manette – « Cinq boutons. »\n5′ Phrases – « Une par bouton. »\n7′ Carla appuie – « Respawn ! Et maintenant ? »\n9′ On échange\n10′ Règle pour les adultes, qui aide, phrase-clé\n11′ Fiche (4 min)\n15′ Fin\nIndispensable : manette, Carla appuie. Si le temps manque : trois boutons.",
     "karten": [
      {
       "titel": "Les questions de Carla (à lire)",
